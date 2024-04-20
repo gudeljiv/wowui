@@ -5,6 +5,6102 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 0,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 29,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 48.008252,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 48.008252,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Young Scavenger"] = true,
+							},
+							["targets"] = {
+								["Young Scavenger"] = 48,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713627042,
+							["totalabsorbed"] = 0.008252,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 48,
+										},
+										["n_total"] = 48,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713627040,
+							["damage_taken"] = 2.008252,
+							["start_time"] = 1713627035,
+							["delay"] = 0,
+							["last_dps"] = 7.407537725659886,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.008906,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = true,
+							["total"] = 6.008906,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DF0B",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 2,
+								["Rat"] = 4,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["fight_component"] = true,
+							["aID"] = "1508",
+							["totalabsorbed"] = 0.008906,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 2,
+											["Rat"] = 4,
+										},
+										["n_total"] = 6,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713627307,
+							["damage_taken"] = 48.008906,
+							["start_time"] = 1713627039,
+							["delay"] = 1713627307,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 29,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 29,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 29,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 21,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713627042,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 29,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713627035,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					54, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:30:42",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164790.486,
+				["CombatEndedAt"] = 164790.486,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:30:35",
+				["end_time"] = 164790.486,
+				["mapId"] = 0,
+				["combat_id"] = 29,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 56,
+				["totals_grupo"] = {
+					48, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 48.008252,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164784.005,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 45.0056,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 45.0056,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Young Scavenger"] = 45,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626987,
+							["totalabsorbed"] = 0.0056,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626986,
+							["damage_taken"] = 0.0056,
+							["start_time"] = 1713626984,
+							["delay"] = 0,
+							["last_dps"] = 14.96196808509828,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002929,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002929,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DF3A",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626987,
+							["totalabsorbed"] = 0.002929,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 45.002929,
+							["start_time"] = 1713626987,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626987,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["CombatStartedAt"] = 164784.005,
+				["tempo_start"] = 1713626984,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					104, -- [1]
+					0, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:29:48",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 2.347999999998137,
+				["CombatEndedAt"] = 164757.659,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:29:45",
+				["end_time"] = 164736.153,
+				["mapId"] = 0,
+				["combat_id"] = 28,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 55,
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 45.0056,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164733.145,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 27,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 45.007865,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 45.007865,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Wretched Zombie"] = 45,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626974,
+							["totalabsorbed"] = 0.007865,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626972,
+							["damage_taken"] = 0.007865,
+							["start_time"] = 1713626971,
+							["delay"] = 0,
+							["last_dps"] = 14.85898481342296,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.006024,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.006024,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1502-000023DE06",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1502",
+							["fight_component"] = true,
+							["end_time"] = 1713626974,
+							["totalabsorbed"] = 0.006024,
+							["nome"] = "Wretched Zombie",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 45.006024,
+							["start_time"] = 1713626974,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 27,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 27,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 27,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626974,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 27,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["CombatStartedAt"] = 164732.478,
+				["tempo_start"] = 1713626971,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:29:34",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wretched Zombie",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164722.407,
+				["CombatEndedAt"] = 164722.407,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:29:31",
+				["end_time"] = 164722.407,
+				["mapId"] = 0,
+				["combat_id"] = 27,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 54,
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 45.007865,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164719.378,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 26,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 52.005059,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 52.005059,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskbat"] = 52,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626965,
+							["totalabsorbed"] = 0.005059,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 52,
+										},
+										["n_total"] = 52,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 52,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626964,
+							["damage_taken"] = 0.005059,
+							["start_time"] = 1713626961,
+							["delay"] = 0,
+							["last_dps"] = 11.25650627706762,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002348,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002348,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-0000A3DED7",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626965,
+							["totalabsorbed"] = 0.002348,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 52.002348,
+							["start_time"] = 1713626965,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 26,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 26,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 26,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 12,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626965,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 26,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164718.843,
+				["tempo_start"] = 1713626961,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					52, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:29:26",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 4.619999999995343,
+				["CombatEndedAt"] = 164714.245,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:29:21",
+				["end_time"] = 164714.245,
+				["mapId"] = 0,
+				["combat_id"] = 26,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 53,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 52.005059,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					52, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164709.625,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 25,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 48.001685,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 48.001685,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Young Scavenger"] = 48,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626954,
+							["totalabsorbed"] = 0.001685,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 30,
+										["c_max"] = 0,
+										["spellschool"] = 2,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626953,
+							["damage_taken"] = 0.001685,
+							["start_time"] = 1713626951,
+							["delay"] = 0,
+							["last_dps"] = 15.08538183532038,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.008584,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.008584,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DEB7",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626954,
+							["totalabsorbed"] = 0.008584,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 48.008584,
+							["start_time"] = 1713626954,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 25,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 25,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 25,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626954,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 25,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626951,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					48, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 3,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:29:14",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164702.95,
+				["CombatEndedAt"] = 164702.95,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:29:11",
+				["end_time"] = 164702.95,
+				["mapId"] = 0,
+				["combat_id"] = 25,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 52,
+				["totals_grupo"] = {
+					48, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 48.001685,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164699.768,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 24,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 50.007383,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 50.007383,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskbat"] = 50,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626934,
+							["totalabsorbed"] = 0.007383,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 27,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 27,
+										["c_max"] = 27,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 27,
+										["successful_casted"] = 0,
+										["c_total"] = 27,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 23,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 23,
+										["c_max"] = 23,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 23,
+										["successful_casted"] = 0,
+										["c_total"] = 23,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626933,
+							["damage_taken"] = 0.007383,
+							["start_time"] = 1713626933,
+							["delay"] = 0,
+							["last_dps"] = 34.29861659845201,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.00475,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.00475,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-000023DF1B",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626934,
+							["totalabsorbed"] = 0.00475,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 50.00475,
+							["start_time"] = 1713626934,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 24,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 24,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 24,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 3,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626934,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 24,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164699.768,
+				["tempo_start"] = 1713626933,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					50, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:28:54",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 1.353999999992084,
+				["CombatEndedAt"] = 164682.75,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:28:53",
+				["end_time"] = 164682.75,
+				["mapId"] = 0,
+				["combat_id"] = 24,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 51,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 50.007383,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					50, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164681.292,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 23,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 66.003995,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 66.003995,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Duskbat"] = true,
+							},
+							["targets"] = {
+								["Duskbat"] = 66,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626923,
+							["totalabsorbed"] = 0.003995,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 7,
+										},
+										["n_total"] = 7,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 7,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 4,
+										["r_amt"] = 0,
+									}, -- [1]
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 14,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626922,
+							["damage_taken"] = 6.003995,
+							["start_time"] = 1713626915,
+							["delay"] = 0,
+							["last_dps"] = 8.032614701225063,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.005122,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 6.005122,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-000023DF0B",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 6,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626923,
+							["totalabsorbed"] = 0.005122,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 6,
+										},
+										["n_total"] = 6,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626921,
+							["damage_taken"] = 66.005122,
+							["start_time"] = 1713626917,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 23,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 23,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 23,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 24,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626923,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 23,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626915,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					72, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 3,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:28:44",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164672.199,
+				["CombatEndedAt"] = 164672.199,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:28:35",
+				["end_time"] = 164672.199,
+				["mapId"] = 0,
+				["combat_id"] = 23,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 50,
+				["totals_grupo"] = {
+					66, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 66.003995,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164663.982,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 22,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 48.004956,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 48.004956,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskbat"] = 48,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626910,
+							["totalabsorbed"] = 0.004956,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 48,
+										},
+										["n_total"] = 48,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626910,
+							["damage_taken"] = 0.004956,
+							["start_time"] = 1713626907,
+							["delay"] = 0,
+							["last_dps"] = 15.0580163110547,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002672,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002672,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-000023DEFB",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626910,
+							["totalabsorbed"] = 0.002672,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 48.002672,
+							["start_time"] = 1713626910,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 22,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 22,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 22,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626910,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 22,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164663.982,
+				["tempo_start"] = 1713626907,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					48, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:28:30",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.188000000023749,
+				["CombatEndedAt"] = 164658.765,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:28:27",
+				["end_time"] = 164658.765,
+				["mapId"] = 0,
+				["combat_id"] = 22,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 49,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 48.004956,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					48, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164655.577,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [8]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 46.002284,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 46.002284,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Young Scavenger"] = 46,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626896,
+							["totalabsorbed"] = 0.002284,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626895,
+							["damage_taken"] = 0.002284,
+							["start_time"] = 1713626893,
+							["delay"] = 0,
+							["last_dps"] = 16.27247400076375,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.008503,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.008503,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DEA8",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626896,
+							["totalabsorbed"] = 0.008503,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 46.00850300000001,
+							["start_time"] = 1713626896,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626896,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626893,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					46, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:28:16",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164644.275,
+				["CombatEndedAt"] = 164644.275,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:28:13",
+				["end_time"] = 164644.275,
+				["mapId"] = 0,
+				["combat_id"] = 21,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 48,
+				["totals_grupo"] = {
+					46, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 46.002284,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164641.448,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 47.006015,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 47.006015,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Young Scavenger"] = true,
+							},
+							["targets"] = {
+								["Young Scavenger"] = 47,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626888,
+							["totalabsorbed"] = 0.006015,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 47,
+										},
+										["n_total"] = 47,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 47,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626887,
+							["damage_taken"] = 1.006015,
+							["start_time"] = 1713626883,
+							["delay"] = 0,
+							["last_dps"] = 9.707975010317908,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 2.00791,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 2.00791,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-0000A3DEF6",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 1,
+								["Rat"] = 1,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626893,
+							["totalabsorbed"] = 0.00791,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 1,
+											["Rat"] = 1,
+										},
+										["n_total"] = 2,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626891,
+							["damage_taken"] = 47.00791,
+							["start_time"] = 1713626885,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 15,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626888,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["CombatStartedAt"] = 164641.448,
+				["tempo_start"] = 1713626883,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					49, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:28:08",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164636.551,
+				["CombatEndedAt"] = 164636.551,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:28:03",
+				["end_time"] = 164636.551,
+				["mapId"] = 0,
+				["combat_id"] = 20,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 47,
+				["totals_grupo"] = {
+					47, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 47.006015,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164631.709,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [10]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 63.00151200000001,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 63.00151200000001,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Duskbat"] = 63,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626878,
+							["totalabsorbed"] = 0.001512,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626877,
+							["damage_taken"] = 0.001512,
+							["start_time"] = 1713626875,
+							["delay"] = 0,
+							["last_dps"] = 18.7783940386895,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.007653,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.007653,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-000023DE7E",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626878,
+							["totalabsorbed"] = 0.007653,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 63.00765300000001,
+							["start_time"] = 1713626878,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626878,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164631.709,
+				["tempo_start"] = 1713626875,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					63, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:27:58",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.355000000010477,
+				["CombatEndedAt"] = 164626.868,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:27:55",
+				["end_time"] = 164626.868,
+				["mapId"] = 0,
+				["combat_id"] = 19,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 46,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 63.00151200000001,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					63, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164623.513,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [11]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 42.008458,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 42.008458,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Young Scavenger"] = 42,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626868,
+							["totalabsorbed"] = 0.008458,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 42,
+										},
+										["n_total"] = 42,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 14,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626868,
+							["damage_taken"] = 0.008458,
+							["start_time"] = 1713626865,
+							["delay"] = 0,
+							["last_dps"] = 11.81008096710479,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.006897,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.006897,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DE74",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626868,
+							["totalabsorbed"] = 0.006897,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 42.006897,
+							["start_time"] = 1713626868,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626868,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164613.615,
+				["tempo_start"] = 1713626865,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					42, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:27:48",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.445000000006985,
+				["CombatEndedAt"] = 164617.06,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:27:45",
+				["end_time"] = 164617.06,
+				["mapId"] = 0,
+				["combat_id"] = 18,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 45,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 42.008458,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					42, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164613.503,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [12]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 62.006112,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 62.006112,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Wretched Zombie"] = 62,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626861,
+							["totalabsorbed"] = 0.006112,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626860,
+							["damage_taken"] = 0.006112,
+							["start_time"] = 1713626858,
+							["delay"] = 0,
+							["last_dps"] = 21.25680905027887,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.008699,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.008699,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1502-000023DEE6",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1502",
+							["fight_component"] = true,
+							["end_time"] = 1713626861,
+							["totalabsorbed"] = 0.008699,
+							["nome"] = "Wretched Zombie",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 62.008699,
+							["start_time"] = 1713626861,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626861,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626858,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:27:41",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wretched Zombie",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164609.863,
+				["CombatEndedAt"] = 164609.863,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:27:38",
+				["end_time"] = 164609.863,
+				["mapId"] = 0,
+				["combat_id"] = 17,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 44,
+				["totals_grupo"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 62.006112,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164606.946,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+			}, -- [13]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 56.00117,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 56.00117,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Wretched Zombie"] = 56,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626842,
+							["totalabsorbed"] = 0.00117,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 38,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 38,
+										["c_max"] = 23,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 23,
+										["successful_casted"] = 0,
+										["c_total"] = 23,
+										["n_amt"] = 1,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626841,
+							["damage_taken"] = 0.00117,
+							["start_time"] = 1713626839,
+							["delay"] = 0,
+							["last_dps"] = 17.07873437033669,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002168,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002168,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1502-000023DE30",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1502",
+							["fight_component"] = true,
+							["end_time"] = 1713626842,
+							["totalabsorbed"] = 0.002168,
+							["nome"] = "Wretched Zombie",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 56.002168,
+							["start_time"] = 1713626842,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 9,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626842,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164606.946,
+				["tempo_start"] = 1713626839,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					56, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:27:22",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wretched Zombie",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.278999999980442,
+				["CombatEndedAt"] = 164590.81,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:27:19",
+				["end_time"] = 164590.81,
+				["mapId"] = 0,
+				["combat_id"] = 16,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 43,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 56.00117,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					56, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164587.531,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+			}, -- [14]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 62.007645,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 62.007645,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Wretched Zombie"] = true,
+							},
+							["targets"] = {
+								["Wretched Zombie"] = 62,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626834,
+							["totalabsorbed"] = 0.007645,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 30,
+										["c_max"] = 0,
+										["spellschool"] = 2,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									},
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626834,
+							["damage_taken"] = 2.007645,
+							["start_time"] = 1713626828,
+							["delay"] = 0,
+							["last_dps"] = 9.485642496584068,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 2.006959,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 2.006959,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1502-0000A3DE93",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1502",
+							["fight_component"] = true,
+							["end_time"] = 1713626834,
+							["totalabsorbed"] = 0.006959,
+							["nome"] = "Wretched Zombie",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626832,
+							["damage_taken"] = 62.006959,
+							["start_time"] = 1713626832,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 18,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626834,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626828,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					64, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Penance"] = 2,
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:27:14",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wretched Zombie",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164582.718,
+				["CombatEndedAt"] = 164582.718,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:27:08",
+				["end_time"] = 164582.718,
+				["mapId"] = 0,
+				["combat_id"] = 15,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 42,
+				["totals_grupo"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 62.007645,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164576.181,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 45.006478,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 45.006478,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Young Scavenger"] = true,
+							},
+							["targets"] = {
+								["Young Scavenger"] = 45,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626687,
+							["totalabsorbed"] = 0.006478,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 14,
+										},
+										["n_total"] = 9,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 14,
+										["c_max"] = 5,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 5,
+										["successful_casted"] = 0,
+										["c_total"] = 5,
+										["n_amt"] = 3,
+										["n_max"] = 4,
+										["r_amt"] = 0,
+									}, -- [1]
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Young Scavenger"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626687,
+							["damage_taken"] = 5.006478,
+							["start_time"] = 1713626676,
+							["delay"] = 0,
+							["last_dps"] = 3.912926273688918,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 5.004042999999999,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 5.004042999999999,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1508-000023DCF0",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 5,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1508",
+							["fight_component"] = true,
+							["end_time"] = 1713626687,
+							["totalabsorbed"] = 0.004043,
+							["nome"] = "Young Scavenger",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 5,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626686,
+							["damage_taken"] = 45.004043,
+							["start_time"] = 1713626679,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 22,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626687,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 164575.778,
+				["tempo_start"] = 1713626676,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					982, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:24:48",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Young Scavenger",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 11.50200000000768,
+				["CombatEndedAt"] = 164436.985,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:24:37",
+				["end_time"] = 164436.985,
+				["mapId"] = 0,
+				["combat_id"] = 14,
+				["playing_solo"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 41,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 45.006478,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["start_time"] = 164425.483,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 43.00744,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 43.00744,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Wretched Zombie"] = true,
+							},
+							["targets"] = {
+								["Wretched Zombie"] = 43,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626671,
+							["totalabsorbed"] = 0.00744,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 11,
+										},
+										["n_total"] = 11,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 11,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 4,
+										["r_amt"] = 0,
+									}, -- [1]
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Wretched Zombie"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626670,
+							["damage_taken"] = 4.00744,
+							["start_time"] = 1713626662,
+							["delay"] = 0,
+							["last_dps"] = 5.146893250359168,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 4.003419,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 4.003419,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1502-000023DD1A",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 4,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1502",
+							["fight_component"] = true,
+							["end_time"] = 1713626671,
+							["totalabsorbed"] = 0.003419,
+							["nome"] = "Wretched Zombie",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626668,
+							["damage_taken"] = 43.003419,
+							["start_time"] = 1713626666,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 16,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626671,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["tempo_start"] = 1713626662,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					47, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:24:32",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wretched Zombie",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164420.377,
+				["CombatEndedAt"] = 164420.377,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:24:23",
+				["end_time"] = 164420.377,
+				["mapId"] = 0,
+				["combat_id"] = 13,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 40,
+				["totals_grupo"] = {
+					43, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 43.00744,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164412.021,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 53.001391,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 53.001391,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-02754E6B",
+							["damage_from"] = {
+								["Duskbat"] = true,
+							},
+							["targets"] = {
+								["Duskbat"] = 53,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1713626657,
+							["totalabsorbed"] = 0.001391,
+							["aID"] = "5826-02754E6B",
+							["nome"] = "Dopenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 10,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 10,
+										["c_max"] = 8,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 8,
+										["successful_casted"] = 0,
+										["c_total"] = 8,
+										["n_amt"] = 1,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+									[585] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Duskbat"] = 43,
+										},
+										["n_total"] = 43,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = 585,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626657,
+							["damage_taken"] = 4.001391,
+							["start_time"] = 1713626647,
+							["delay"] = 0,
+							["last_dps"] = 5.660727437779714,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 4.001206,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 4.001206,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5252-0-23499-1512-000023DAC9",
+							["damage_from"] = {
+								["Dopenac"] = true,
+							},
+							["targets"] = {
+								["Dopenac"] = 4,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "1512",
+							["fight_component"] = true,
+							["end_time"] = 1713626657,
+							["totalabsorbed"] = 0.001206,
+							["nome"] = "Duskbat",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopenac"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 4,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1713626655,
+							["damage_taken"] = 53.001206,
+							["start_time"] = 1713626651,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-02754E6B",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[436412] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 436412,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Dopenac",
+							["grupo"] = true,
+							["buff_uptime"] = 20,
+							["tipo"] = 4,
+							["classe"] = "PRIEST",
+							["serial"] = "Player-5826-02754E6B",
+							["last_event"] = 1713626657,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopenac"] = "Player-5826-02754E6B",
+				},
+				["CombatStartedAt"] = 164412.021,
+				["tempo_start"] = 1713626647,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					57, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopenac"] = {
+						["Smite"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "17:24:18",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Duskbat",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 164406.213,
+				["CombatEndedAt"] = 164406.213,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:24:08",
+				["end_time"] = 164406.213,
+				["mapId"] = 0,
+				["combat_id"] = 12,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 39,
+				["totals_grupo"] = {
+					53, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopenac"] = 53.001391,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 164396.85,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
@@ -201,24 +6297,26 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["ignore_nicktag"] = false,
+	["combat_counter"] = 56,
 	["mythic_plus_log"] = {
 	},
-	["combat_counter"] = 20,
+	["data_harvested_for_charts"] = {
+	},
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["data_harvested_for_charts"] = {
-	},
 	["on_death_menu"] = false,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1714898394,
+		["last_version"] = 16,
+	},
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
 	},
 	["last_realversion"] = 156,
 	["last_instance_time"] = 0,
-	["combat_id"] = 0,
+	["combat_id"] = 29,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -239,7 +6337,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -407,13 +6505,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -455,7 +6553,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -471,14 +6569,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
@@ -497,15 +6592,18 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -656,7 +6754,7 @@ _detalhes_database = {
 	},
 	["last_day"] = "20",
 	["character_data"] = {
-		["logons"] = 10,
+		["logons"] = 16,
 	},
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -683,6 +6781,44 @@ _detalhes_database = {
 		{
 			["tipo"] = 9,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1047,
+					["pets"] = {
+					},
+					["nome"] = "Dopenac",
+					["classe"] = "PRIEST",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[418459] = {
+								["id"] = 418459,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[1243] = {
+								["id"] = 1243,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[436412] = {
+								["id"] = 436412,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["buff_uptime"] = 0,
+					["last_event"] = 0,
+					["aID"] = "5826-02754E6B",
+					["serial"] = "Player-5826-02754E6B",
+					["tipo"] = 4,
+				}, -- [1]
 			},
 		}, -- [4]
 		{
@@ -692,31 +6828,10 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["tempo_start"] = 141610.693,
+		["tempo_start"] = 1713626423,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
-		},
-		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
-				["dispell"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
 		},
 		["bossTimers"] = {
 		},
@@ -737,30 +6852,54 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
 				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
 		},
-		["player_last_events"] = {
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
 		},
 		["frags_need_refresh"] = false,
 		["aura_timeline"] = {
 		},
+		["overall_refreshed"] = true,
 		["data_inicio"] = 0,
 		["amountCasts"] = {
 		},
 		["mapId"] = 0,
+		["player_last_events"] = {
+		},
+		["zoneName"] = "Eastern Kingdoms",
 		["cleu_events"] = {
 			["n"] = 1,
 		},
-		["zoneName"] = "Eastern Kingdoms",
 		["boss_hp"] = 1,
+		["segments_added"] = {
+		},
 		["frags"] = {
 		},
 		["data_fim"] = 0,
@@ -773,11 +6912,11 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
+			["damage_section"] = {
+			},
 			["heal_section"] = {
 			},
 			["heal"] = {
-			},
-			["damage_section"] = {
 			},
 			["damage"] = {
 			},
@@ -785,7 +6924,7 @@ _detalhes_database = {
 		["start_time"] = 0,
 		["TimeData"] = {
 		},
-		["combat_counter"] = 19,
+		["combat_counter"] = 27,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -824,11 +6963,11 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
-			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -836,29 +6975,14 @@ _detalhes_database = {
 			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["author"] = "Details! Team",
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["font_size"] = 10,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["use_spark"] = false,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -870,7 +6994,22 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["author"] = "Details! Team",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["font_size"] = 10,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -885,12 +7024,10 @@ _detalhes_database = {
 			["scale"] = 1,
 		},
 	},
-	["SoloTablesSaved"] = {
-		["Mode"] = 1,
-	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1714898394,
-		["last_version"] = 16,
+	["ignore_nicktag"] = false,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

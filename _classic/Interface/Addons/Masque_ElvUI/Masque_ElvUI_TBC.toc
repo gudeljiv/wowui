@@ -1,0 +1,8 @@
+## Interface: 20504
+## Title: Masque: ElvUI
+## Notes: ElvUI Skin for Masque
+## Version: 1.7
+## Author: Lorade
+## Dependencies: Masque
+
+Masque_ElvUI.lua

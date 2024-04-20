@@ -52,9 +52,9 @@ ChocolateBarDB = {
 		["Moolatz - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
-		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Tukac - Genesis"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -79,8 +79,8 @@ ChocolateBarDB = {
 		["Tadibey - Golemagg"] = "Default",
 		["Dopestab - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
-		["Tukac - Genesis"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
+		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -877,9 +877,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 37992,
-		["timeAtThisLevel"] = 12196,
-		["timeStamp"] = 139905.052,
+		["total"] = 38299,
+		["timeAtThisLevel"] = 12503,
+		["timeStamp"] = 163874.554,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -918,9 +918,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Dopenac-LoneWolf"] = {
-		["total"] = 1495,
-		["timeAtThisLevel"] = 1495,
-		["timeStamp"] = 141832.367,
+		["total"] = 2769,
+		["timeAtThisLevel"] = 698,
+		["timeStamp"] = 165255.255,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
@@ -1010,9 +1010,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 137800,
-		["timeAtThisLevel"] = 2068,
-		["timeStamp"] = 3111.877,
+		["total"] = 137839,
+		["timeAtThisLevel"] = 2107,
+		["timeStamp"] = 163623.285,
 	},
 	["Augustin-"] = {
 		["total"] = 425995,
@@ -1021,9 +1021,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 273963,
-		["timeStamp"] = 142267.712,
-		["timeAtThisLevel"] = 26305,
+		["total"] = 276238,
+		["timeStamp"] = 163372.64,
+		["timeAtThisLevel"] = 28580,
 	},
 	["Dopebolt-LoneWolf"] = {
 		["total"] = 1080,

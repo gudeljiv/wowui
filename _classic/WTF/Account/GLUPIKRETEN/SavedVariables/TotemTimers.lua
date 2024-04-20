@@ -310,8 +310,8 @@ TotemTimers_Profiles = {
 		["Warnings"] = {
 			["TotemWarning"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Totem Expiring",
 				["sound"] = "",
@@ -319,8 +319,8 @@ TotemTimers_Profiles = {
 			},
 			["PowerSurge"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Power Surge",
 				["sound"] = "",
@@ -328,8 +328,8 @@ TotemTimers_Profiles = {
 			},
 			["TotemDestroyed"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Totem Destroyed",
 				["sound"] = "",
@@ -337,8 +337,8 @@ TotemTimers_Profiles = {
 			},
 			["TotemExpiration"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Totem Expired",
 				["sound"] = "",
@@ -346,8 +346,8 @@ TotemTimers_Profiles = {
 			},
 			["Shield"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
@@ -355,8 +355,8 @@ TotemTimers_Profiles = {
 			},
 			["EarthShield"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
@@ -364,8 +364,8 @@ TotemTimers_Profiles = {
 			},
 			["Maelstrom"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Maelstrom",
 				["sound"] = "",
@@ -373,8 +373,8 @@ TotemTimers_Profiles = {
 			},
 			["Weapon"] = {
 				["a"] = 1,
-				["r"] = 1,
 				["b"] = 0,
+				["r"] = 1,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
@@ -420,11 +420,7 @@ TotemTimers_Profiles = {
 		["TrackerTimeHeight"] = 12,
 		["TotemTimerBarWidth"] = 36,
 		["EarthShieldRightButton"] = "target",
-		["EnhanceCDsFlameShockDuration_Specialization"] = {
-			true, -- [1]
-			false, -- [2]
-			true, -- [3]
-		},
+		["Tooltips"] = true,
 		["ShieldButton4"] = 408514,
 		["TimerTimePos"] = "BOTTOM",
 		["EnhanceCDsFlameShockDuration"] = true,
@@ -480,10 +476,14 @@ TotemTimers_Profiles = {
 		["TotemMenuSpacing"] = 0,
 		["OpenOnRightclick"] = false,
 		["OverlayGlow"] = true,
-		["Tooltips"] = true,
+		["EnhanceCDsFlameShockDuration_Specialization"] = {
+			true, -- [1]
+			false, -- [2]
+			true, -- [3]
+		},
 		["CDTimersOnButtons"] = true,
 		["LastTotems"] = {
-			10437, -- [1]
+			10478, -- [1]
 			10427, -- [2]
 			10462, -- [3]
 			10600, -- [4]

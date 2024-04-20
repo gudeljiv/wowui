@@ -156,3 +156,8 @@ ElvUI: disabled
 ElvUI_Libraries: disabled
 LibHealComm-4.0: enabled
 Tukui: enabled
+AceGUI-3.0-SharedMediaWidgets: enabled
+LibSpellRange-1.0: enabled
+LibClassicDurations: enabled
+Clique: enabled
+LibClassicCasterino: enabled

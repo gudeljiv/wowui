@@ -239,16 +239,6 @@ xVerminSavedData = {
 			"Chain Lightning", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Sandfury Shadowcaster"] = {
-			"Earthbind", -- [1]
-		},
-		["Mutanus the Devourer"] = {
-			"Shadow Word: Pain", -- [1]
-		},
-		["Mordresh Fire Eye"] = {
-			"Rend", -- [1]
-			"Deep Wound", -- [2]
-		},
 		["Evolving Ectoplasm"] = {
 			"Attack", -- [1]
 			"Chilled", -- [2]
@@ -267,12 +257,23 @@ xVerminSavedData = {
 		["Jade Sludge"] = {
 			"Concussive Shot", -- [1]
 		},
+		["Mordresh Fire Eye"] = {
+			"Rend", -- [1]
+			"Deep Wound", -- [2]
+		},
+		["Sandfury Shadowcaster"] = {
+			"Earthbind", -- [1]
+		},
+		["Mutanus the Devourer"] = {
+			"Shadow Word: Pain", -- [1]
+		},
 		["Dianastalion"] = {
 			"Stormstrike", -- [1]
 			"Mutilate", -- [2]
 		},
-		["Ironspine"] = {
-			"Rend", -- [1]
+		["Entropic Horror"] = {
+			"Lava Lash", -- [1]
+			"Flame Shock", -- [2]
 		},
 		["Ruuzlu"] = {
 			"Charge Stun", -- [1]
@@ -319,9 +320,9 @@ xVerminSavedData = {
 			"Lightning Bolt", -- [4]
 			"Serpent Sting", -- [5]
 		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
@@ -369,9 +370,9 @@ xVerminSavedData = {
 			"Blackout", -- [1]
 			"Impact", -- [2]
 		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
 		},
 		["Sea Elemental"] = {
 			"Frost Shock", -- [1]
@@ -391,9 +392,8 @@ xVerminSavedData = {
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
 		},
-		["Entropic Horror"] = {
-			"Lava Lash", -- [1]
-			"Flame Shock", -- [2]
+		["Ironspine"] = {
+			"Rend", -- [1]
 		},
 		["Unfettered Spirit"] = {
 			"Deep Wound", -- [1]
