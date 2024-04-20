@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 12412,
+	["session"] = 12416,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3731,5 +3731,13 @@ BugGrabberDB = {
 			["time"] = "2024/04/20 17:32:12",
 			["counter"] = 3,
 		}, -- [480]
+		{
+			["message"] = "Lua error in aura 'nanShield:Timer': Trigger 1\nWeakAuras Version: 5.12.8\nAura Version: 1.0.3\n[string \"return \"]:3: attempt to call method 'on_nan_shield' (a nil value)",
+			["time"] = "2024/04/20 21:29:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <table> {\n id = \"nanShield:Timer\"\n config = <table> {\n }\n region = Frame {\n }\n}\n(*temporary) = \"WA_NAN_SHIELD\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"attempt to call method 'on_nan_shield' (a nil value)\"\n",
+			["stack"] = "[string \"return \"]:3: in function <[string \"return \"]:2>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:719: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:628>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:880: in function `ScanEventsInternal'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:826: in function `ScanEvents'\n[string \"return function() -- Package common/logging\"]:319: in function `UpdateValues'\n[string \"return function() -- Package common/logging\"]:293: in function `ResetValues'\n[string \"return function() -- Package common/logging\"]:352: in function `on_cleu'\n[string \"return function(...)\"]:2: in function <[string \"return function(...)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:719: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:628>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1078: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1413: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:2000: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1784: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1624>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1977: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2673: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:183: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
+			["session"] = 12413,
+			["counter"] = 6,
+		}, -- [481]
 	},
 }

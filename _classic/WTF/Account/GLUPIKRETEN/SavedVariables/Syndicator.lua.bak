@@ -19,12 +19,36 @@ SYNDICATOR_DATA = {
 			["containerInfo"] = {
 				["bags"] = {
 					{
+						["itemCount"] = 1,
+						["itemID"] = 10050,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:10050::::::::14:::::::::|h[Mageweave Bag]|h|r",
+						["iconTexture"] = 133640,
 					}, -- [1]
 					{
+						["itemCount"] = 1,
+						["itemID"] = 10050,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:10050::::::::14:::::::::|h[Mageweave Bag]|h|r",
+						["iconTexture"] = 133640,
 					}, -- [2]
 					{
+						["itemCount"] = 1,
+						["itemID"] = 10050,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:10050::::::::14:::::::::|h[Mageweave Bag]|h|r",
+						["iconTexture"] = 133640,
 					}, -- [3]
 					{
+						["itemCount"] = 1,
+						["itemID"] = 10050,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:10050::::::::14:::::::::|h[Mageweave Bag]|h|r",
+						["iconTexture"] = 133640,
 					}, -- [4]
 				},
 			},
@@ -43,148 +67,52 @@ SYNDICATOR_DATA = {
 			["bags"] = {
 				{
 					{
-						["itemCount"] = 5,
-						["itemID"] = 4604,
-						["isBound"] = false,
+						["itemCount"] = 1,
+						["itemID"] = 4942,
+						["isBound"] = true,
 						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:4604::::::::3:::::::::|h[Forest Mushroom Cap]|h|r",
-						["iconTexture"] = 134534,
+						["itemLink"] = "|cffffffff|Hitem:4942::::::::15:::::::::|h[Tiger Hide Boots]|h|r",
+						["iconTexture"] = 132542,
 					}, -- [1]
 					{
-						["itemCount"] = 3,
-						["itemID"] = 159,
-						["isBound"] = false,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:159::::::::3:::::::::|h[Refreshing Spring Water]|h|r",
-						["iconTexture"] = 132794,
 					}, -- [2]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 6948,
-						["isBound"] = true,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:6948::::::::3:::::::::|h[Hearthstone]|h|r",
-						["iconTexture"] = 134414,
 					}, -- [3]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1367,
+						["itemCount"] = 2,
+						["itemID"] = 2589,
 						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1367::::::::3:::::::::|h[Ragged Leather Boots]|h|r",
-						["iconTexture"] = 132540,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[Linen Cloth]|h|r",
+						["iconTexture"] = 132889,
 					}, -- [4]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1376,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1376::::::::3:::::::::|h[Frayed Cloak]|h|r",
-						["iconTexture"] = 133762,
 					}, -- [5]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1376,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1376::::::::3:::::::::|h[Frayed Cloak]|h|r",
-						["iconTexture"] = 133762,
 					}, -- [6]
 					{
-						["itemCount"] = 5,
-						["itemID"] = 4865,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:4865::::::::3:::::::::|h[Ruined Pelt]|h|r",
-						["iconTexture"] = 134371,
 					}, -- [7]
 					{
-						["itemCount"] = 5,
-						["itemID"] = 7074,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:7074::::::::3:::::::::|h[Chipped Claw]|h|r",
-						["iconTexture"] = 133723,
 					}, -- [8]
 					{
-						["itemCount"] = 6,
-						["itemID"] = 3264,
-						["isBound"] = true,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:3264::::::::3:::::::::|h[Duskbat Wing]|h|r",
-						["iconTexture"] = 134360,
 					}, -- [9]
 					{
-						["itemCount"] = 5,
-						["itemID"] = 7073,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:7073::::::::3:::::::::|h[Broken Fang]|h|r",
-						["iconTexture"] = 133725,
 					}, -- [10]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1374,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1374::::::::3:::::::::|h[Frayed Shoes]|h|r",
-						["iconTexture"] = 132543,
 					}, -- [11]
 					{
-						["itemCount"] = 6,
-						["itemID"] = 3265,
-						["isBound"] = true,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:3265::::::::3:::::::::|h[Scavenger Paw]|h|r",
-						["iconTexture"] = 134297,
 					}, -- [12]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 3365,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:3365::::::::3:::::::::|h[Frayed Bracers]|h|r",
-						["iconTexture"] = 132609,
 					}, -- [13]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1376,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1376::::::::3:::::::::|h[Frayed Cloak]|h|r",
-						["iconTexture"] = 133762,
 					}, -- [14]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 3365,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:3365::::::::3:::::::::|h[Frayed Bracers]|h|r",
-						["iconTexture"] = 132609,
 					}, -- [15]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 1380,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:1380::::::::3:::::::::|h[Frayed Robe]|h|r",
-						["iconTexture"] = 132662,
 					}, -- [16]
 					{
-						["itemCount"] = 2,
-						["itemID"] = 4865,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:4865::::::::3:::::::::|h[Ruined Pelt]|h|r",
-						["iconTexture"] = 134371,
 					}, -- [17]
 					{
-						["itemCount"] = 1,
-						["itemID"] = 7073,
-						["isBound"] = false,
-						["quality"] = 0,
-						["itemLink"] = "|cff9d9d9d|Hitem:7073::::::::3:::::::::|h[Broken Fang]|h|r",
-						["iconTexture"] = 133725,
 					}, -- [18]
 					{
 					}, -- [19]
@@ -192,12 +120,132 @@ SYNDICATOR_DATA = {
 					}, -- [20]
 				}, -- [1]
 				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+					}, -- [9]
+					{
+					}, -- [10]
+					{
+					}, -- [11]
+					{
+					}, -- [12]
 				}, -- [2]
 				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+					}, -- [9]
+					{
+					}, -- [10]
+					{
+					}, -- [11]
+					{
+					}, -- [12]
 				}, -- [3]
 				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+					}, -- [9]
+					{
+					}, -- [10]
+					{
+					}, -- [11]
+					{
+					}, -- [12]
 				}, -- [4]
 				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+						["itemCount"] = 2,
+						["itemID"] = 3382,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:3382::::::::15:::::::::|h[Weak Troll's Blood Potion]|h|r",
+						["iconTexture"] = 134857,
+					}, -- [9]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 118,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:118::::::::15:::::::::|h[Minor Healing Potion]|h|r",
+						["iconTexture"] = 134829,
+					}, -- [10]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 118,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:118::::::::15:::::::::|h[Minor Healing Potion]|h|r",
+						["iconTexture"] = 134829,
+					}, -- [11]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6948,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:6948::::::::15:::::::::|h[Hearthstone]|h|r",
+						["iconTexture"] = 134414,
+					}, -- [12]
 				}, -- [5]
 				{
 					{
@@ -267,67 +315,27 @@ SYNDICATOR_DATA = {
 				}, -- [6]
 			},
 			["auctions"] = {
-			},
-			["currencies"] = {
-			},
-			["money"] = 26,
-			["mail"] = {
 				{
 					["itemCount"] = 1,
-					["itemID"] = 11288,
+					["itemID"] = 6540,
+					["isBound"] = false,
 					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:11288::::::::12:::::::::|h[Greater Magic Wand]|h|r",
-					["iconTexture"] = 135144,
+					["itemLink"] = "|cff1eff00|Hitem:6540::::::845:114173952:14:::::::::|h[Willow Pants of the Eagle]|h|r",
+					["iconTexture"] = 134590,
 				}, -- [1]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 3291,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:3291::::::::12:::::::::|h[Ancestral Woollies]|h|r",
-					["iconTexture"] = 134706,
+					["itemID"] = 211787,
+					["isBound"] = false,
+					["quality"] = 1,
+					["itemLink"] = "|cffffffff|Hitem:211787::::::::14:::::::::|h[Scroll: LOWER PING WHOMEVER]|h|r",
+					["iconTexture"] = 237446,
 				}, -- [2]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 4309,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:4309::::::::12:::::::::|h[Handstitched Linen Britches]|h|r",
-					["iconTexture"] = 134587,
-				}, -- [3]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 11287,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:11287::::::::12:::::::::|h[Lesser Magic Wand]|h|r",
-					["iconTexture"] = 135139,
-				}, -- [4]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 10050,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:10050::::::::12:::::::::|h[Mageweave Bag]|h|r",
-					["iconTexture"] = 133640,
-				}, -- [5]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 10050,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:10050::::::::12:::::::::|h[Mageweave Bag]|h|r",
-					["iconTexture"] = 133640,
-				}, -- [6]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 10050,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:10050::::::::12:::::::::|h[Mageweave Bag]|h|r",
-					["iconTexture"] = 133640,
-				}, -- [7]
-				{
-					["itemCount"] = 1,
-					["itemID"] = 10050,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:10050::::::::12:::::::::|h[Mageweave Bag]|h|r",
-					["iconTexture"] = 133640,
-				}, -- [8]
+			},
+			["currencies"] = {
+			},
+			["money"] = 29954,
+			["mail"] = {
 			},
 			["void"] = {
 			},
@@ -341,47 +349,53 @@ SYNDICATOR_DATA = {
 				{
 				}, -- [4]
 				{
-					["itemCount"] = 1,
-					["itemID"] = 53,
-					["isBound"] = false,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:53::::::::3:::::::::|h[Neophyte's Shirt]|h|r",
-					["iconTexture"] = 135005,
 				}, -- [5]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 6144,
-					["isBound"] = false,
-					["quality"] = 0,
-					["itemLink"] = "|cff9d9d9d|Hitem:6144::::::::3:::::::::|h[Neophyte's Robe]|h|r",
-					["iconTexture"] = 132654,
+					["itemID"] = 16607,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:16607::::::::11:::::::::|h[Acolyte's Sacrificial Robes]|h|r",
+					["iconTexture"] = 132660,
 				}, -- [6]
 				{
+					["itemCount"] = 1,
+					["itemID"] = 11848,
+					["isBound"] = true,
+					["quality"] = 1,
+					["itemLink"] = "|cffffffff|Hitem:11848::::::::9:::::::::|h[Flax Belt]|h|r",
+					["iconTexture"] = 132492,
 				}, -- [7]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 52,
-					["isBound"] = false,
-					["quality"] = 0,
-					["itemLink"] = "|cff9d9d9d|Hitem:52::::::::3:::::::::|h[Neophyte's Pants]|h|r",
+					["itemID"] = 14370,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:14370::::::::14:::::::::|h[Mystic's Woolies]|h|r",
 					["iconTexture"] = 134582,
 				}, -- [8]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 51,
+					["itemID"] = 1427,
 					["isBound"] = false,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:51::::::::3:::::::::|h[Neophyte's Boots]|h|r",
-					["iconTexture"] = 132538,
+					["quality"] = 0,
+					["itemLink"] = "|cff9d9d9d|Hitem:1427::::::::10:::::::::|h[Patchwork Shoes]|h|r",
+					["iconTexture"] = 132543,
 				}, -- [9]
 				{
+					["itemCount"] = 1,
+					["itemID"] = 3323,
+					["isBound"] = false,
+					["quality"] = 1,
+					["itemLink"] = "|cffffffff|Hitem:3323::::::::10:::::::::|h[Ghostly Bracers]|h|r",
+					["iconTexture"] = 132606,
 				}, -- [10]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 711,
 					["isBound"] = true,
 					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:711::::::::3:::::::::|h[Tattered Cloth Gloves]|h|r",
+					["itemLink"] = "|cffffffff|Hitem:711::::::::9:::::::::|h[Tattered Cloth Gloves]|h|r",
 					["iconTexture"] = 132961,
 				}, -- [11]
 				{
@@ -393,18 +407,30 @@ SYNDICATOR_DATA = {
 				{
 				}, -- [15]
 				{
+					["itemCount"] = 1,
+					["itemID"] = 15508,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:15508::::::96:1812803072:14:::::::::|h[Grunt's Cape of Stamina]|h|r",
+					["iconTexture"] = 133766,
 				}, -- [16]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 36,
-					["isBound"] = false,
+					["itemID"] = 4938,
+					["isBound"] = true,
 					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:36::::::::3:::::::::|h[Worn Mace]|h|r",
-					["iconTexture"] = 133478,
+					["itemLink"] = "|cffffffff|Hitem:4938::::::::14:::::::::|h[Blemished Wooden Staff]|h|r",
+					["iconTexture"] = 135158,
 				}, -- [17]
 				{
 				}, -- [18]
 				{
+					["itemCount"] = 1,
+					["itemID"] = 11288,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:11288::::::::13:::::::::|h[Greater Magic Wand]|h|r",
+					["iconTexture"] = 135144,
 				}, -- [19]
 				{
 				}, -- [20]
@@ -4200,33 +4226,33 @@ SYNDICATOR_DATA = {
 						["itemCount"] = 1,
 						["itemID"] = 4240,
 						["isBound"] = false,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
 						["iconTexture"] = 133639,
+						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
+						["quality"] = 1,
 					}, -- [1]
 					{
 						["itemCount"] = 1,
 						["itemID"] = 4240,
 						["isBound"] = false,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
 						["iconTexture"] = 133639,
+						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
+						["quality"] = 1,
 					}, -- [2]
 					{
 						["itemCount"] = 1,
 						["itemID"] = 4240,
 						["isBound"] = false,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
 						["iconTexture"] = 133639,
+						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
+						["quality"] = 1,
 					}, -- [3]
 					{
 						["itemCount"] = 1,
 						["itemID"] = 4240,
 						["isBound"] = false,
-						["quality"] = 1,
-						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
 						["iconTexture"] = 133639,
+						["itemLink"] = "|cffffffff|Hitem:4240::::::::12:::::::::|h[Woolen Bag]|h|r",
+						["quality"] = 1,
 					}, -- [4]
 				},
 			},
@@ -4245,6 +4271,12 @@ SYNDICATOR_DATA = {
 			["bags"] = {
 				{
 					{
+						["itemCount"] = 4,
+						["itemID"] = 3577,
+						["isBound"] = false,
+						["iconTexture"] = 133217,
+						["itemLink"] = "|cff1eff00|Hitem:3577::::::::12:::::::::|h[Gold Bar]|h|r",
+						["quality"] = 2,
 					}, -- [1]
 					{
 					}, -- [2]
@@ -4427,44 +4459,36 @@ SYNDICATOR_DATA = {
 			["auctions"] = {
 				{
 					["itemCount"] = 1,
-					["itemID"] = 8199,
+					["itemID"] = 14956,
 					["isBound"] = false,
+					["iconTexture"] = 132608,
+					["itemLink"] = "|cff1eff00|Hitem:14956::::::1195:125061888:12:::::::::|h[Bloodforged Bindings of the Bear]|h|r",
 					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:8199::::::312:1193354112:12:::::::::|h[Battlefield Destroyer of Strength]|h|r",
-					["iconTexture"] = 135327,
 				}, -- [1]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 14244,
 					["isBound"] = false,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:14244::::::875:1020841984:12:::::::::|h[Darkmist Wraps of the Eagle]|h|r",
 					["iconTexture"] = 132677,
+					["itemLink"] = "|cff1eff00|Hitem:14244::::::875:1020841984:12:::::::::|h[Darkmist Wraps of the Eagle]|h|r",
+					["quality"] = 2,
 				}, -- [2]
 				{
 					["itemCount"] = 1,
-					["itemID"] = 14956,
+					["itemID"] = 8199,
 					["isBound"] = false,
+					["iconTexture"] = 135327,
+					["itemLink"] = "|cff1eff00|Hitem:8199::::::312:1193354112:12:::::::::|h[Battlefield Destroyer of Strength]|h|r",
 					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:14956::::::1195:125061888:12:::::::::|h[Bloodforged Bindings of the Bear]|h|r",
-					["iconTexture"] = 132608,
 				}, -- [3]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 15641,
 					["isBound"] = false,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:15641::::::527:1861156864:12:::::::::|h[Ironhide Belt of the Wolf]|h|r",
 					["iconTexture"] = 132492,
-				}, -- [4]
-				{
-					["itemCount"] = 4,
-					["itemID"] = 3577,
-					["isBound"] = false,
+					["itemLink"] = "|cff1eff00|Hitem:15641::::::527:1861156864:12:::::::::|h[Ironhide Belt of the Wolf]|h|r",
 					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:3577::::::::12:::::::::|h[Gold Bar]|h|r",
-					["iconTexture"] = 133217,
-				}, -- [5]
+				}, -- [4]
 			},
 			["currencies"] = {
 			},
@@ -4472,7 +4496,7 @@ SYNDICATOR_DATA = {
 			},
 			["void"] = {
 			},
-			["money"] = 3611051,
+			["money"] = 3602611,
 			["equipped"] = {
 				{
 				}, -- [1]
@@ -4488,9 +4512,9 @@ SYNDICATOR_DATA = {
 					["itemCount"] = 1,
 					["itemID"] = 16606,
 					["isBound"] = true,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:16606::::::::12:::::::::|h[Juju Hex Robes]|h|r",
 					["iconTexture"] = 132645,
+					["itemLink"] = "|cff1eff00|Hitem:16606::::::::12:::::::::|h[Juju Hex Robes]|h|r",
+					["quality"] = 2,
 				}, -- [6]
 				{
 				}, -- [7]
@@ -4498,33 +4522,33 @@ SYNDICATOR_DATA = {
 					["itemCount"] = 1,
 					["itemID"] = 14090,
 					["isBound"] = true,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:14090::::::839:870827776:12:::::::::|h[Beaded Britches of the Eagle]|h|r",
 					["iconTexture"] = 134582,
+					["itemLink"] = "|cff1eff00|Hitem:14090::::::839:870827776:12:::::::::|h[Beaded Britches of the Eagle]|h|r",
+					["quality"] = 2,
 				}, -- [8]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 4936,
 					["isBound"] = true,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:4936::::::::12:::::::::|h[Dirt-trodden Boots]|h|r",
 					["iconTexture"] = 132542,
+					["itemLink"] = "|cffffffff|Hitem:4936::::::::12:::::::::|h[Dirt-trodden Boots]|h|r",
+					["quality"] = 1,
 				}, -- [9]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 6062,
 					["isBound"] = true,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:6062::::::::12:::::::::|h[Heavy Cord Bracers]|h|r",
 					["iconTexture"] = 132606,
+					["itemLink"] = "|cffffffff|Hitem:6062::::::::12:::::::::|h[Heavy Cord Bracers]|h|r",
+					["quality"] = 1,
 				}, -- [10]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 711,
 					["isBound"] = true,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:711::::::::12:::::::::|h[Tattered Cloth Gloves]|h|r",
 					["iconTexture"] = 132961,
+					["itemLink"] = "|cffffffff|Hitem:711::::::::12:::::::::|h[Tattered Cloth Gloves]|h|r",
+					["quality"] = 1,
 				}, -- [11]
 				{
 				}, -- [12]
@@ -4538,17 +4562,17 @@ SYNDICATOR_DATA = {
 					["itemCount"] = 1,
 					["itemID"] = 15299,
 					["isBound"] = false,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:15299::::::::12:::::::::|h[Grizzly Cape]|h|r",
 					["iconTexture"] = 133762,
+					["itemLink"] = "|cffffffff|Hitem:15299::::::::12:::::::::|h[Grizzly Cape]|h|r",
+					["quality"] = 1,
 				}, -- [16]
 				{
 					["itemCount"] = 1,
 					["itemID"] = 4938,
 					["isBound"] = true,
-					["quality"] = 1,
-					["itemLink"] = "|cffffffff|Hitem:4938::::::::12:::::::::|h[Blemished Wooden Staff]|h|r",
 					["iconTexture"] = 135158,
+					["itemLink"] = "|cffffffff|Hitem:4938::::::::12:::::::::|h[Blemished Wooden Staff]|h|r",
+					["quality"] = 1,
 				}, -- [17]
 				{
 				}, -- [18]
@@ -4556,9 +4580,9 @@ SYNDICATOR_DATA = {
 					["itemCount"] = 1,
 					["itemID"] = 11287,
 					["isBound"] = true,
-					["quality"] = 2,
-					["itemLink"] = "|cff1eff00|Hitem:11287::::::::12:::::::::|h[Lesser Magic Wand]|h|r",
 					["iconTexture"] = 135139,
+					["itemLink"] = "|cff1eff00|Hitem:11287::::::::12:::::::::|h[Lesser Magic Wand]|h|r",
+					["quality"] = 2,
 				}, -- [19]
 				{
 				}, -- [20]
@@ -5928,9 +5952,9 @@ SYNDICATOR_SUMMARIES = {
 					},
 					["item:8199"] = {
 						["mail"] = 0,
-						["bags"] = 0,
+						["bags"] = 1,
 						["void"] = 0,
-						["auctions"] = 1,
+						["auctions"] = 0,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
@@ -5960,26 +5984,26 @@ SYNDICATOR_SUMMARIES = {
 					},
 					["item:3577"] = {
 						["mail"] = 0,
-						["bags"] = 0,
+						["bags"] = 4,
 						["void"] = 0,
-						["auctions"] = 4,
+						["auctions"] = 0,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
 					["item:14244"] = {
 						["mail"] = 0,
-						["bags"] = 0,
+						["bags"] = 1,
 						["void"] = 0,
-						["auctions"] = 1,
+						["auctions"] = 0,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
-					["item:14956"] = {
+					["item:4496"] = {
 						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
-						["auctions"] = 1,
-						["equipped"] = 0,
+						["auctions"] = 0,
+						["equipped"] = 1,
 						["bank"] = 0,
 					},
 					["item:5500"] = {
@@ -5990,12 +6014,12 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 0,
 						["bank"] = 3,
 					},
-					["item:4496"] = {
+					["item:14956"] = {
 						["mail"] = 0,
-						["bags"] = 0,
+						["bags"] = 1,
 						["void"] = 0,
 						["auctions"] = 0,
-						["equipped"] = 1,
+						["equipped"] = 0,
 						["bank"] = 0,
 					},
 					["item:4240"] = {
@@ -6040,92 +6064,60 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:3264"] = {
-						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:6144"] = {
+					["item:3323"] = {
 						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
 						["auctions"] = 0,
 						["equipped"] = 1,
-						["bank"] = 0,
-					},
-					["item:36"] = {
-						["mail"] = 0,
-						["bags"] = 0,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 1,
-						["bank"] = 0,
-					},
-					["item:1374"] = {
-						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
 						["bank"] = 0,
 					},
 					["item:11288"] = {
-						["mail"] = 1,
+						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
 						["auctions"] = 0,
-						["equipped"] = 0,
+						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:11287"] = {
-						["mail"] = 1,
+					["item:15508"] = {
+						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
 						["auctions"] = 0,
-						["equipped"] = 0,
+						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:159"] = {
+					["item:4938"] = {
 						["mail"] = 0,
-						["bags"] = 3,
+						["bags"] = 0,
+						["void"] = 0,
+						["auctions"] = 0,
+						["equipped"] = 1,
+						["bank"] = 0,
+					},
+					["item:3382"] = {
+						["mail"] = 0,
+						["bags"] = 2,
 						["void"] = 0,
 						["auctions"] = 0,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
-					["item:3265"] = {
+					["item:211787"] = {
 						["mail"] = 0,
-						["bags"] = 1,
+						["bags"] = 0,
 						["void"] = 0,
-						["auctions"] = 0,
+						["auctions"] = 1,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
 					["item:10050"] = {
-						["mail"] = 4,
-						["bags"] = 0,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:1376"] = {
 						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:3291"] = {
-						["mail"] = 1,
 						["bags"] = 0,
 						["void"] = 0,
 						["auctions"] = 0,
-						["equipped"] = 0,
+						["equipped"] = 4,
 						["bank"] = 0,
 					},
 					["item:6948"] = {
@@ -6136,7 +6128,7 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
-					["item:53"] = {
+					["item:11848"] = {
 						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
@@ -6144,7 +6136,23 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:51"] = {
+					["item:6540"] = {
+						["mail"] = 0,
+						["bags"] = 0,
+						["void"] = 0,
+						["auctions"] = 1,
+						["equipped"] = 0,
+						["bank"] = 0,
+					},
+					["item:118"] = {
+						["mail"] = 0,
+						["bags"] = 10,
+						["void"] = 0,
+						["auctions"] = 0,
+						["equipped"] = 0,
+						["bank"] = 0,
+					},
+					["item:16607"] = {
 						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
@@ -6152,39 +6160,15 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:4604"] = {
+					["item:2589"] = {
 						["mail"] = 0,
-						["bags"] = 5,
+						["bags"] = 2,
 						["void"] = 0,
 						["auctions"] = 0,
 						["equipped"] = 0,
 						["bank"] = 0,
 					},
-					["item:1367"] = {
-						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:4865"] = {
-						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:7073"] = {
-						["mail"] = 0,
-						["bags"] = 1,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:52"] = {
+					["item:14370"] = {
 						["mail"] = 0,
 						["bags"] = 0,
 						["void"] = 0,
@@ -6192,20 +6176,20 @@ SYNDICATOR_SUMMARIES = {
 						["equipped"] = 1,
 						["bank"] = 0,
 					},
-					["item:4309"] = {
-						["mail"] = 1,
-						["bags"] = 0,
-						["void"] = 0,
-						["auctions"] = 0,
-						["equipped"] = 0,
-						["bank"] = 0,
-					},
-					["item:7074"] = {
+					["item:4942"] = {
 						["mail"] = 0,
 						["bags"] = 1,
 						["void"] = 0,
 						["auctions"] = 0,
 						["equipped"] = 0,
+						["bank"] = 0,
+					},
+					["item:1427"] = {
+						["mail"] = 0,
+						["bags"] = 0,
+						["void"] = 0,
+						["auctions"] = 0,
+						["equipped"] = 1,
 						["bank"] = 0,
 					},
 				},
@@ -7508,7 +7492,8 @@ SYNDICATOR_SUMMARIES = {
 			},
 		},
 		["Pending"] = {
-			["Dopenac-LoneWolf"] = true,
+			["Jutarnjedrvo-LoneWolf"] = true,
+			["Dopemend-LoneWolf"] = true,
 		},
 	},
 	["Guilds"] = {

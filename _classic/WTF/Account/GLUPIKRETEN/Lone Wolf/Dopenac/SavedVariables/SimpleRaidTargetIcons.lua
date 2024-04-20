@@ -15,6 +15,7 @@ SRTIExternalUF = {
 	["shadowedunitframes"] = {
 		"SUFUnittarget", -- [1]
 		"SUFHeaderpartyUnitButton1", -- [2]
+		"SUFHeaderpartyUnitButton2", -- [3]
 	},
 	["elvui"] = {
 		"ElvUF_Target", -- [1]

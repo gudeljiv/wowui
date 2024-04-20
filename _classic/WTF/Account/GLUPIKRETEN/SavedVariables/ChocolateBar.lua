@@ -823,9 +823,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 777611.208,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 401793,
-		["timeStamp"] = 98139.709,
-		["timeAtThisLevel"] = 2053,
+		["total"] = 402526,
+		["timeStamp"] = 184113.043,
+		["timeAtThisLevel"] = 2786,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -877,9 +877,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 38299,
-		["timeAtThisLevel"] = 12503,
-		["timeStamp"] = 163874.554,
+		["total"] = 38503,
+		["timeAtThisLevel"] = 12707,
+		["timeStamp"] = 184042.623,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -918,9 +918,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Dopenac-LoneWolf"] = {
-		["total"] = 2769,
-		["timeAtThisLevel"] = 698,
-		["timeStamp"] = 165255.255,
+		["total"] = 7692,
+		["timeAtThisLevel"] = 1469,
+		["timeStamp"] = 174661.891,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
@@ -1021,9 +1021,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 276238,
-		["timeStamp"] = 163372.64,
-		["timeAtThisLevel"] = 28580,
+		["total"] = 276316,
+		["timeStamp"] = 184099.618,
+		["timeAtThisLevel"] = 28658,
 	},
 	["Dopebolt-LoneWolf"] = {
 		["total"] = 1080,

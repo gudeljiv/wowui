@@ -1,20 +1,8 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
 	["spellCacheAchievements"] = true,
-	["spellCacheStrings"] = true,
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.12.8",
-	["lockPositions"] = false,
-	["spellCacheAchivements"] = true,
-	["frame"] = {
-		["xOffset"] = 1044.400573730469,
-		["width"] = 1112.285522460938,
-		["height"] = 1150.8271484375,
-		["yOffset"] = 1335.257568359375,
+	["savedSnippets"] = {
 	},
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
@@ -252,7 +240,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "13879=135817,13880=135817,23378=135817,23379=135817",
 		},
 		["Feet Rune Ability"] = {
-			["spells"] = "415450=132203",
+			["spells"] = "415450=134419",
 		},
 		["Drakonid Spawner"] = {
 			["spells"] = "22652=136235,22653=136235,368831=136235",
@@ -1566,7 +1554,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "6516=132223",
 		},
 		["Chest Rune Ability"] = {
-			["spells"] = "399954=132148",
+			["spells"] = "399954=134419",
 		},
 		["Warrior's Lament"] = {
 			["spells"] = "437147=134503",
@@ -6120,7 +6108,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "8384=135864",
 		},
 		["Waist Rune Ability"] = {
-			["spells"] = "415449=237584",
+			["spells"] = "415449=134419",
 		},
 		["Sniper Training"] = {
 			["spells"] = "415399=236187,415401=236187,415818=236187",
@@ -7050,7 +7038,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "399986=132330,400032=132330",
 		},
 		["Hands Rune Ability"] = {
-			["spells"] = "399967=236289",
+			["spells"] = "399967=237545",
 		},
 		["MHTest03"] = {
 			["spells"] = "19362=135913",
@@ -16425,7 +16413,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "21356=136235",
 		},
 		["Helm Rune Ability"] = {
-			["spells"] = "417345=136055",
+			["spells"] = "417345=134419",
 		},
 		["Nefarian Tunnel Selection (R2)"] = {
 			["spells"] = "23350=136235",
@@ -23802,7 +23790,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "7068=136160,17820=136160,22687=136160,23224=136160,24674=136160,28440=136160",
 		},
 		["Attack"] = {
-			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=132398,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825,446358=135825",
+			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=133478,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825,446358=135825",
 		},
 		["Swift Frostsaber"] = {
 			["spells"] = "23221=132267",
@@ -27963,7 +27951,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "28881=135814,28882=135880",
 		},
 		["Bracer Rune Ability"] = {
-			["spells"] = "417346=135782",
+			["spells"] = "417346=134419",
 		},
 		["Greater Dreamless Sleep"] = {
 			["spells"] = "24360=136090",
@@ -28533,7 +28521,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "5206=136235",
 		},
 		["Legs Rune Ability"] = {
-			["spells"] = "399966=136088",
+			["spells"] = "399966=134419",
 		},
 		["Scourge Strike"] = {
 			["spells"] = "28265=135990",
@@ -36249,5 +36237,17 @@ WeakAurasOptionsSaved = {
 			["spells"] = "413429=134918",
 		},
 	},
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.12.8",
+	["lockPositions"] = false,
+	["frame"] = {
+		["xOffset"] = 1101.543518066406,
+		["yOffset"] = 1330.17822265625,
+		["height"] = 1150.8271484375,
+		["width"] = 1112.285522460938,
+	},
+	["spellCacheStrings"] = true,
+	["spellCacheAchivements"] = true,
 	["build"] = "54262",
 }

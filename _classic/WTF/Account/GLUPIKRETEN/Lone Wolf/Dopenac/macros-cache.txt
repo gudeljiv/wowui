@@ -14,12 +14,17 @@ VER 3 0000000001000004 "lesser" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,help][] Lesser Heal
 END
+VER 3 000000000100000B "mb" "134400"
+#showtooltip
+/startattack
+/use mind blast
+END
 VER 3 0000000001000005 "mending" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,help][] Prayer of Mending
 END
 VER 3 000000000100000A "penance" "134400"
-#showtooltip
+#showtooltip Penance
 /cast [@mouseover,exists,help][] Penance
 END
 VER 3 0000000001000006 "renew" "INV_Misc_QuestionMark"

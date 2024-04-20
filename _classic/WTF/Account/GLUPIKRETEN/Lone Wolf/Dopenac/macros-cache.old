@@ -18,6 +18,11 @@ VER 3 0000000001000005 "mending" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,help][] Prayer of Mending
 END
+VER 3 000000000100000A "penance" "134400"
+#showtooltip Penance
+/cast !Shoot
+/cast [@mouseover,exists,help][] Penance
+END
 VER 3 0000000001000006 "renew" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,help][] Renew

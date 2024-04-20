@@ -22,15 +22,15 @@ TomTomDB = {
 		["Lonac - Stitches"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Dopebolt - Lone Wolf"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Dopestab - Lone Wolf"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopesick - Stitches"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
@@ -117,15 +117,15 @@ TomTomWaypointsM = {
 		["Lonac - Stitches"] = "Lonac - Stitches",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
@@ -197,9 +197,9 @@ TomTomWaypointsM = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
-		},
 		["Doperage - Lone Wolf"] = {
+		},
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Dopebolt - Lone Wolf"] = {
 		},
@@ -213,7 +213,7 @@ TomTomWaypointsM = {
 		},
 		["Dopestab - Lone Wolf"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
+		["Dopetrap - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
