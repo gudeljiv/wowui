@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 12372,
+	["session"] = 12394,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3695,5 +3695,21 @@ BugGrabberDB = {
 			["session"] = 12366,
 			["counter"] = 4,
 		}, -- [475]
+		{
+			["message"] = "Interface/AddOns/ShadowedUF_Options/config.lua:4748: Usage: LibDualSpec:EnhanceOptions(optionTable, target): EnhanceDatabase should be called before EnhanceOptions(optionTable, target).",
+			["time"] = "2024/04/20 10:40:08",
+			["locals"] = "(*temporary) = \"Usage: LibDualSpec:EnhanceOptions(optionTable, target): EnhanceDatabase should be called before EnhanceOptions(optionTable, target).\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/RangeDisplay/libs/LibDualSpec-1.0-22/LibDualSpec-1.0.lua\"]:396: in function `?'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:4748: in function <Interface/AddOns/ShadowedUF_Options/config.lua:1632>\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:7565: in function <Interface/AddOns/ShadowedUF_Options/config.lua:7557>\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:7596: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4971: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4634: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4670: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 12386,
+			["counter"] = 4,
+		}, -- [476]
+		{
+			["message"] = "...nfig-3.0/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua:184: attempt to index local 'option' (a nil value)",
+			["time"] = "2024/04/20 11:21:49",
+			["locals"] = "membername = \"name\"\noption = nil\noptions = <table> {\n childGroups = \"ElvUI_HiddenTree\"\n type = \"group\"\n name = \"Version: |cff99ff3313.61|r\"\n args = <table> {\n }\n}\npath = <table> {\n 1 = \"tagGroup\"\n 2 = \"raidRoleIcons\"\n}\nappName = \"ElvUI\"\ninherits = nil\nmember = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'option' (a nil value)\"\nisInherited = <table> {\n confirm = true\n disabled = true\n set = true\n hidden = true\n validate = true\n func = true\n get = true\n}\nGetSubOption = <function> defined @Interface/AddOns/ElvUI_Libraries/Core/Ace3/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:116\nallIsLiteral = <table> {\n descStyle = true\n type = true\n imageWidth = true\n imageHeight = true\n}\ntype = <function> defined =[C]:-1\nstringIsLiteral = <table> {\n tooltipHyperlink = true\n image = true\n name = true\n fontSize = true\n width = true\n usage = true\n icon = true\n desc = true\n}\nnew = <function> defined @Interface/AddOns/ElvUI_Libraries/Core/Ace3/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:74\nMAJOR = \"AceConfigDialog-3.0-ElvUI\"\nerror = <function> defined =[C]:-1\nformat = <function> defined =[C]:-1\ndel = <function> defined @Interface/AddOns/ElvUI_Libraries/Core/Ace3/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:92\n",
+			["stack"] = "[string \"@Interface/AddOns/ElvUI_Libraries/Core/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:184: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:164>\n[string \"@Interface/AddOns/ElvUI_Libraries/Core/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1609: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1588>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:202: in function <...ibs/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua:200>",
+			["session"] = 12394,
+			["counter"] = 1,
+		}, -- [477]
 	},
 }

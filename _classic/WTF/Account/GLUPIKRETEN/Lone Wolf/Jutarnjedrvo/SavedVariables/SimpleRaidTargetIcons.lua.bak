@@ -22,4 +22,11 @@ SRTIExternalUF = {
 		"SUFHeaderpartyUnitButton3", -- [7]
 		"SUFHeaderpartyUnitButton4", -- [8]
 	},
+	["elvui"] = {
+		"ElvUF_Target", -- [1]
+		"ElvUF_PartyGroup1UnitButton1", -- [2]
+		"ElvUF_PartyGroup1UnitButton2", -- [3]
+		"ElvUF_PartyGroup1UnitButton3", -- [4]
+		"ElvUF_PartyGroup1UnitButton4", -- [5]
+	},
 }

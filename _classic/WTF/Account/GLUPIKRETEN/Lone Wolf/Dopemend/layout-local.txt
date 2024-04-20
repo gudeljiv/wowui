@@ -230,13 +230,6 @@ X: -368
 Y: -93
 W: 36
 H: 36
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -131
-Y: -139
-W: 616
-H: 529
 Frame: TotemTimersFrame
 FrameLevel: 0
 Anchor: CENTER
@@ -286,3 +279,10 @@ X: 16
 Y: -116
 W: 336
 H: 444
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -342
+Y: -177
+W: 616
+H: 529
