@@ -121,6 +121,7 @@ local function UpdateButtons()
 					else
 						button:SetPoint("LEFT", buttons[currentButton - 1], "RIGHT");
 					end
+					
 					button:Show();
 
 					-- button:SetScript('OnEnter', function() 

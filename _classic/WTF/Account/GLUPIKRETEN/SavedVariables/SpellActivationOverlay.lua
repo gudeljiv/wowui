@@ -104,17 +104,17 @@ SpellActivationOverlayDB = {
 					[403] = false,
 					[51514] = false,
 					[8004] = false,
-					[421] = false,
-					[331] = false,
 					[1064] = false,
+					[331] = false,
+					[421] = false,
 				},
 				[408505] = {
 					[403] = true,
 					[408490] = true,
 					[8004] = true,
-					[1064] = true,
-					[331] = true,
 					[421] = true,
+					[331] = true,
+					[1064] = true,
 				},
 				[425339] = {
 					[425339] = true,
@@ -131,8 +131,8 @@ SpellActivationOverlayDB = {
 				[400589] = {
 					[0] = true,
 				},
-				[48108] = {
-					[0] = true,
+				[96215] = {
+					[0] = false,
 				},
 				[64343] = {
 					[0] = true,
@@ -149,13 +149,13 @@ SpellActivationOverlayDB = {
 				[5276] = {
 					[0] = false,
 				},
-				[96215] = {
-					[0] = false,
+				[48108] = {
+					[0] = true,
 				},
 				[57761] = {
 					[0] = true,
 				},
-				[400730] = {
+				[400670] = {
 					[0] = true,
 				},
 				[400625] = {
@@ -171,7 +171,7 @@ SpellActivationOverlayDB = {
 				[74396] = {
 					[0] = true,
 				},
-				[400670] = {
+				[400730] = {
 					[0] = true,
 				},
 			},
@@ -185,10 +185,10 @@ SpellActivationOverlayDB = {
 				[44401] = {
 					[5143] = true,
 				},
-				[5276] = {
-					[30455] = true,
-					[44572] = true,
-					[400640] = true,
+				[400730] = {
+					[412532] = true,
+					[133] = true,
+					[401502] = true,
 				},
 				[48108] = {
 					[11366] = true,
@@ -197,8 +197,10 @@ SpellActivationOverlayDB = {
 					[133] = true,
 					[44614] = true,
 				},
-				[400625] = {
-					[11366] = true,
+				[5276] = {
+					[30455] = true,
+					[44572] = true,
+					[400640] = true,
 				},
 				[54741] = {
 					[2120] = true,
@@ -214,10 +216,8 @@ SpellActivationOverlayDB = {
 					[30455] = true,
 					[44572] = true,
 				},
-				[400730] = {
-					[412532] = true,
-					[133] = true,
-					[401502] = true,
+				[400625] = {
+					[11366] = true,
 				},
 			},
 		},
@@ -253,8 +253,8 @@ SpellActivationOverlayDB = {
 				[413247] = {
 					[596] = true,
 					[2050] = true,
-					[2060] = true,
 					[2054] = true,
+					[2060] = true,
 				},
 				[431666] = {
 					[585] = true,
@@ -383,10 +383,10 @@ SpellActivationOverlayDB = {
 					[50464] = false,
 					[20484] = false,
 					[2637] = false,
-					[5176] = false,
+					[8936] = true,
 					[5185] = true,
 					[33786] = true,
-					[8936] = true,
+					[5176] = false,
 				},
 				[46833] = {
 					[2912] = true,

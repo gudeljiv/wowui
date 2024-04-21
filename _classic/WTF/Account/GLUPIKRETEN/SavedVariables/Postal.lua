@@ -12,7 +12,7 @@ Postal3DB = {
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [7]
 				"Dopedot|Lone Wolf|Horde|25|WARLOCK", -- [8]
 				"Dopemend|Lone Wolf|Horde|12|PRIEST", -- [9]
-				"Dopenac|Lone Wolf|Horde|9|PRIEST", -- [10]
+				"Dopenac|Lone Wolf|Horde|15|PRIEST", -- [10]
 				"Doperage|Lone Wolf|Horde|33|WARRIOR", -- [11]
 				"Dopesick|Stitches|Horde|3|WARRIOR", -- [12]
 				"Dopesnare|Lone Wolf|Horde|48|HUNTER", -- [13]
@@ -117,14 +117,14 @@ Postal3DB = {
 		},
 		["Dopesnare - Lone Wolf"] = {
 			["BlackBook"] = {
-				["contacts"] = {
-					"Dopemend", -- [1]
-				},
 				["recent"] = {
 					"Dopemend|Lone Wolf|Horde", -- [1]
 					"Dopestab|Lone Wolf|Horde", -- [2]
 					"Sulfuraddict|Lone Wolf|Horde", -- [3]
 					"Dopedot|Lone Wolf|Horde", -- [4]
+				},
+				["contacts"] = {
+					"Dopemend", -- [1]
 				},
 			},
 		},
