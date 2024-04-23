@@ -3,6 +3,7 @@ local Module = "rune"
 
 -- Optimize frequent calls
 local GetSpellInfo = GetSpellInfo
+local InCombatLockdown = InCombatLockdown
 
 -- Map between spell ID and rune ID
 local runeMapping = { initialized = false }; -- Use arbitraty spell ID 'initialized' to know if table was init
@@ -26,6 +27,7 @@ local function initRuneMapping()
             foundRune = true;
         end
     end
+    SAO:Trace(Module, "initRuneMapping foundRune == "..tostring(foundRune));
     runeMapping.initialized = foundRune;
 end
 
@@ -37,13 +39,6 @@ function SAO.GetRuneFromSpell(self, spellID)
     end
 
     return runeMapping[spellID];
-end
-
-function SAO.IsRuneSpellLearned(self, spellID)
-    local runeID = self:GetRuneFromSpell(spellID);
-    if runeID then
-        return C_Engraving.IsRuneEquipped(runeID);
-    end
 end
 
 -- Track rune updates

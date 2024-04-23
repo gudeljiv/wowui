@@ -4,12 +4,16 @@ local AddonName, SAO = ...
 
 -- Optimize frequent calls
 local GetActionInfo = GetActionInfo
+local GetMacroSpell = GetMacroSpell
+local GetNumSpellTabs = GetNumSpellTabs
 local GetNumTalents = GetNumTalents
 local GetNumTalentTabs = GetNumTalentTabs
 local GetSpellBookItemName = GetSpellBookItemName
+local GetSpellCooldown = GetSpellCooldown
 local GetSpellInfo = GetSpellInfo
 local GetSpellTabInfo = GetSpellTabInfo
 local GetTalentInfo = GetTalentInfo
+local GetTime = GetTime
 local UnitAura = UnitAura
 
 function SAO.Debug(self, prefix, msg, ...)
@@ -48,6 +52,16 @@ function SAO.GetGCD(self)
         -- Returning 0 should not be an issue; who needs to compare ability CD with GCD when the player is not on GCD?
         return gcdDuration;
     end
+end
+
+-- Utility function to write a formatted 'number of stacks' text, translated with the client's locale
+-- SAO:NbStacks(4) -- "4 Stacks"
+-- SAO:NbStacks(7,9) -- "7-9 Stacks"
+function SAO.NbStacks(self, minStacks, maxStacks)
+    if maxStacks then
+        return string.format(CALENDAR_TOOLTIP_DATE_RANGE, tostring(minStacks), string.format(STACKS, maxStacks));
+    end
+    return string.format(STACKS, minStacks);
 end
 
 -- Utility function to assume times are identical or almost identical

@@ -1,5 +1,46 @@
 ## SpellActivationOverlay Changelog
 
+#### v1.3.1 (2024-04-22)
+
+Shout-out to fellow developers Amanthuul and steijner. Thanks!
+
+Options:
+- New option to play a sound effect when triggering a spell alert
+- The option is enabled by default for Cataclysm, which had this sound
+- The option is disabled by default for Classic Era and Wrath
+- It would be confusing to add sounds overnight to Era and Wrath players
+- To enable or disable it, please open the options panel by entering /sao
+
+New effects for Wrath Classic:
+- New GAB: Paladin's Divine Storm, as combat-only counter
+
+New runes for Season of Discovery:
+- New SAO: Shaman's Rolling Thunder with 7-9 Lightning Shield stacks
+- New SAO: Shaman's Tidal Waves
+- New SAO: Priest's Mind Spike
+- New GAB: Mage's Deep Freeze, during Fingers of Frost
+- New GAB: Mage's Deep Freeze, when the target is Frozen
+- New GAB: Paladin's Divine Storm, as combat-only counter
+- New GAB: Priest's Mind Blast, during Mind Spike at 3 stacks
+- New GAB: Shaman's Earth Shock, with 7-9 Lightning Shield stacks
+- New GAB: Shaman's Healing Wave, during Tidal Waves
+- New GAB: Shaman's Lesser Healing Wave, during Tidal Waves
+
+Introducing Cataclysm flavor!
+- The addon is in very early stage, currently in alpha
+- Support for Mage's Arcane Missiles
+- Support for Mage's Arcane Potency
+- Support for Mage's Brain Freeze
+- Support for Mage's Clearcasting
+- Support for Mage's Deep Freeze
+- Support for Mage's Fingers of Frost
+- Support for Mage's Frozen debuff
+- Support for Mage's Heating Up and Hot Streak
+- Support for Mage's Impact
+
+Bug Fixes
+- Spell Alerts of counters are instantly hidden when the counter is un-learned
+
 #### v1.3.0 (2024-04-17)
 
 Bump in TOC file for Season of Discovery update (Classic Era)

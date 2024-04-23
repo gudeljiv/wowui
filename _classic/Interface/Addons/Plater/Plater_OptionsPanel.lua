@@ -88,6 +88,7 @@ local UNITREACTION_NEUTRAL = 4
 local UNITREACTION_FRIENDLY = 5
 
 local lower = string.lower
+local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
 
 --db upvalues
 local DB_CAPTURED_SPELLS
@@ -1760,6 +1761,9 @@ local debuff_options = {
 		end,
 		name = "OPTIONS_ENABLED",
 		desc = "OPTIONS_ENABLED",
+		childrenids = {"auras_general_tooltip", "auras_general_alpha", "auras_general_iconspacing", "auras_general_icon_row_spacing", "auras_general_stack_similar_aura", "auras_general_stack_auratime"},
+		children_follow_enabled = true,
+		--children_follow_reverse = true, --if the children should be enabled when the toogle is disabled, for cases like "do this automatically" if not, set manually
 	},
 	
 	{
@@ -1772,6 +1776,7 @@ local debuff_options = {
 		end,
 		name = "OPTIONS_SHOWTOOLTIP",
 		desc = "OPTIONS_SHOWTOOLTIP_DESC",
+		id = "auras_general_tooltip",
 	},
 	
 	{
@@ -1788,6 +1793,7 @@ local debuff_options = {
 		thumbscale = 1.8,
 		name = "OPTIONS_ALPHA",
 		desc = "OPTIONS_ALPHA",
+		id = "auras_general_alpha",
 	},
 	
 	{
@@ -1804,6 +1810,7 @@ local debuff_options = {
 		thumbscale = 1.8,
 		name = "OPTIONS_ICONSPACING",
 		desc = "OPTIONS_ICONSPACING",
+		id = "auras_general_iconspacing",
 	},
 	
 	{
@@ -1820,6 +1827,7 @@ local debuff_options = {
 		thumbscale = 1.8,
 		name = "OPTIONS_ICONROWSPACING",
 		desc = "OPTIONS_ICONROWSPACING",
+		id = "auras_general_icon_row_spacing",
 	},
 	
 	{
@@ -1832,6 +1840,7 @@ local debuff_options = {
 		end,
 		name = "OPTIONS_STACK_SIMILAR_AURAS",
 		desc = "OPTIONS_STACK_SIMILAR_AURAS_DESC",
+		id = "auras_general_stack_similar_aura",
 	},
 	{
 		type = "toggle",
@@ -1843,6 +1852,7 @@ local debuff_options = {
 		end,
 		name = "OPTIONS_STACK_AURATIME",
 		desc = "OPTIONS_STACK_AURATIME_DESC",
+		id = "auras_general_stack_auratime",
 	},
 	
 	{type = "blank"},
@@ -2669,15 +2679,15 @@ _G.C_Timer.After(0.850, function() --~delay
 	debuff_options.align_as_pairs = true
 	debuff_options.align_as_pairs_string_space = 181
 	debuff_options.widget_width = 150
-	debuff_options.slider_buttons_to_left = true
 
-    local canvasFrame = DF:CreateCanvasScrollBox(auraOptionsFrame)
+    local canvasFrame = DF:CreateCanvasScrollBox(auraOptionsFrame, nil, "PlaterOptionsPanelCanvasAuraSettings")
     canvasFrame:SetPoint("topleft", auraOptionsFrame, "topleft", 0, platerInternal.optionsYStart)
     canvasFrame:SetPoint("bottomright", auraOptionsFrame, "bottomright", -26, 25)
 	auraOptionsFrame.canvasFrame = canvasFrame
 
 	debuff_options.use_scrollframe = true
 
+	--when passing a canvas frame for BuildMenu, it automatically get its childscroll and use as parent for the widgets
 	DF:BuildMenu(canvasFrame, debuff_options, startX, 0, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template, globalCallback)
 
 	--DF:DebugVisibility(canvasFrame:GetScrollChild())

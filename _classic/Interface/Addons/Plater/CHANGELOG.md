@@ -1,4 +1,5 @@
 @cont1nuity:
+- Ensuring Gladiator Stance is not considered tanking in SoD.
 - Adding option to automatically translate NPC names on the 'NPC Colors and Names' tab.
 - Maintenance on libraries.
 - Adding support for Cataclysm classic.
@@ -6,9 +7,9 @@
 - Fixing an issue with aura updates in classic era.
 - Fixing an issue with Ghost Auras on performance units.
 
-@Thunderz:
-- Adding tank states for Rogues on SoD.
-
 @Terciob:
 - Maintenance on libraries.
+
+@Thunderz:
+- Adding tank states for Rogues on SoD.
 
