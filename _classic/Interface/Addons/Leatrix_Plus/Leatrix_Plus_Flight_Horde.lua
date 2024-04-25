@@ -131,6 +131,7 @@
 				["0.67:0.30:0.44:0.19"] = 284, -- Revantusk Village, Undercity
 				["0.67:0.30:0.49:0.27:0.38:0.24"] = 257, -- Revantusk Village, Tarren Mill, The Sepulcher
 				["0.67:0.30:0.44:0.19:0.55:0.57"] = 697, -- Revantusk Village, Undercity, Kargath
+				["0.67:0.30:0.62:0.31:0.55:0.57:0.43:0.93"] = 768, -- Revantusk Village, Hammerfall, Kargath, Booty Bay
 
 				-- Horde: Stonard (Swamp of Sorrows)
 				["0.61:0.75:0.43:0.93"] = 260, -- Stonard, Booty Bay
@@ -195,6 +196,7 @@
 				["0.51:0.57:0.55:0.57:0.61:0.75"] = 351, -- Thorium Point, Kargath, Stonard
 				["0.51:0.57:0.55:0.57:0.44:0.19:0.70:0.16"] = 755, -- Thorium Point, Kargath, Undercity, Light's Hope Chapel
 				["0.51:0.57:0.55:0.57:0.44:0.19:0.49:0.27"] = 633, -- Thorium Point, Kargath, Undercity, Tarren Mill
+				["0.51:0.57:0.55:0.57:0.44:0.19:0.67:0.30"] = 775, -- Thorium Point, Kargath, Undercity, Revantusk Village
 
 				-- Horde: Undercity (Tirisfal Glades)
 				["0.44:0.19:0.55:0.57:0.45:0.84:0.43:0.93"] = 880, -- Undercity, Kargath, Grom'gol, Booty Bay
@@ -483,6 +485,7 @@
 				["0.54:0.21:0.64:0.23:0.63:0.36:0.56:0.53:0.61:0.55"] = 499, -- Moonglade, Everlook, Valormok, Crossroads, Ratchet
 				["0.54:0.21:0.64:0.23:0.63:0.44:0.55:0.42"] = 535, -- Moonglade, Everlook, Orgrimmar, Splintertree Post
 				["0.54:0.21:0.64:0.23:0.63:0.44:0.56:0.53:0.41:0.47"] = 705, -- Moonglade, Everlook, Orgrimmar, Crossroads, Sun Rock Retreat
+				["0.54:0.21:0.64:0.23:0.63:0.36:0.56:0.53:0.55:0.73"] = 632, -- Moonglade, Everlook, Valormok, Crossroads, Freewind Post
 
 				-- Horde: Orgrimmar (Durotar)
 				["0.63:0.44:0.61:0.80"] = 417, -- Orgrimmar, Gadgetzan (Pavel Pavlov reported 436)
@@ -514,7 +517,7 @@
 				["0.63:0.44:0.45:0.56:0.44:0.69:0.42:0.79"] = 607, -- Orgrimmar, Thunder Bluff, Camp Mojache, Cenarion Hold
 				["0.63:0.44:0.64:0.23:0.54:0.21"] = 454, -- Orgrimmar, Everlook, Moonglade
 
- 				-- Horde: Ratchet (The Barrens)
+				-- Horde: Ratchet (The Barrens)
 				["0.61:0.55:0.56:0.53:0.55:0.73:0.61:0.80"] = 345, -- Ratchet, Crossroads, Freewind Post, Gadgetzan
 				["0.61:0.55:0.56:0.53:0.55:0.73"] = 252, -- Ratchet, Crossroads, Freewind Post
 				["0.61:0.55:0.56:0.53:0.55:0.73:0.61:0.80:0.50:0.76"] = 452, -- Ratchet, Crossroads, Freewind Post, Gadgetzan, Marshal's Refuge
