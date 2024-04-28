@@ -225,6 +225,11 @@ local xpStrings = {
 
 --Only mobs that gave xp.
 function NIT:addLevelLogMobCount(text)
+	if (LOCALE_koKR) then
+		--LevelLog.lua:230: invalid capture index
+		--Disabled in kr until I work out what the issue is.
+		return;
+	end
 	local found;
 	for k, v in pairs(xpStrings) do
 		if (strmatch(text, string.gsub(string.gsub(_G[k], "%%s", "(.+)"), "%%d", "(%%d+)"))) then

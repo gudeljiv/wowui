@@ -415,7 +415,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			lastWidget = data.widgetID;
 		end
 	elseif (event == "CHAT_MSG_BG_SYSTEM_NEUTRAL") then
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (zone == 1440) then
 			local msg = ...;
 			if (strmatch(msg, L["ashenvaleHordeVictoryMsg"])) then
@@ -437,7 +437,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "PLAYER_ENTERING_WORLD") then
 		local isLogon, isReload = ...;
 		if (isLogon or isReload) then
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (zone == 1440) then
 				--If we logon in the zone and it's already about to start don't announce to guild, someone probably already did.
 				logonStartDelay = GetServerTime();
@@ -497,7 +497,7 @@ function NWB:isAshenvaleRunning()
 	if (isRunning) then
 		return true;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone == 1440) then
 		local children = {UIWidgetTopCenterContainerFrame:GetChildren()};
 		for k, v in pairs(children) do

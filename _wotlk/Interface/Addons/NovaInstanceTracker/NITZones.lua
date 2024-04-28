@@ -423,3 +423,335 @@ if (NIT.expansionNum > 2) then
 		noLockout = true,
 	};
 end
+
+if (NIT.expansionNum > 3) then
+	--Cata.
+	NIT.zones[568] = {
+		name = L["Zul'Aman"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[643] = {
+		name = L["Throne of the Tides"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[644] = {
+		name = L["Halls of Origination"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[645] = {
+		name = L[" Blackrock Caverns"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[657] = {
+		name = L["The Vortex Pinnacle"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[670] = {
+		name = L["Grim Batol"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[725] = {
+		name = L["The Stonecore"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[755] = {
+		name = L["Lost City of the Tol'vir"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[859] = {
+		name = L["Zul'Gurub"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[938] = {
+		name = L["End Time"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[939] = {
+		name = L["Well of Eternity"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	NIT.zones[940] = {
+		name = L["Hour of Twilight"],
+		type = "dungeon",
+		expansion = "cata",
+	};
+	
+	NIT.zones[249] = {
+		name = L["Onyxia's Lair"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[669] = {
+		name = L["Blackwing Descent"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[671] = {
+		name = L["The Bastion of Twilight"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[720] = {
+		name = L["Firelands"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[754] = {
+		name = L["Throne of the Four Winds"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[757] = {
+		name = L["Baradin Hold"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+	NIT.zones[967] = {
+		name = L["Dragon Soul"],
+		type = "raid",
+		expansion = "cata",
+		noLockout = true,
+	};
+end
+
+if (NIT.expansionNum > 4) then
+	--MoP.
+	NIT.zones[959] = {
+		name = L["Shado-pan Monastery"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[960] = {
+		name = L["Temple of the Jade Serpent"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[961] = {
+		name = L["Stormstout Brewery"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[962] = {
+		name = L["Gate of the Setting Sun"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[944] = {
+		name = L["Mogu'Shan Palace"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[1011] = {
+		name = L["Siege of Niuzao Temple"],
+		type = "dungeon",
+		expansion = "mop",
+	};
+	NIT.zones[996] = {
+		name = L["Terrace of Endless Spring"],
+		type = "raid",
+		expansion = "mop",
+		noLockout = true,
+	};
+	NIT.zones[1008] = {
+		name = L["Mogu'shan Vaults"],
+		type = "raid",
+		expansion = "mop",
+		noLockout = true,
+	};
+	NIT.zones[1009] = {
+		name = L["Heart of Fear"],
+		type = "raid",
+		expansion = "mop",
+		noLockout = true,
+	};
+	NIT.zones[1098] = {
+		name = L["Throne of Thunder"],
+		type = "raid",
+		expansion = "mop",
+		noLockout = true,
+	};
+	NIT.zones[1136] = {
+		name = L["Siege of Orgrimmar"],
+		type = "raid",
+		expansion = "mop",
+		noLockout = true,
+	};
+end
+
+if (NIT.expansionNum > 5) then
+	--WoD.
+	NIT.zones[1182] = {
+		name = L["Auchindoun"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1175] = {
+		name = L["Bloodmaul Slag Mines"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1176] = {
+		name = L["Shadowmoon Burial Grounds"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1195] = {
+		name = L["Iron Docks"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1208] = {
+		name = L["Grimrail Depot"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1209] = {
+		name = L["Skyreach"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1279] = {
+		name = L["The Everbloom"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1358] = {
+		name = L["Upper Blackrock Spire"],
+		type = "dungeon",
+		expansion = "wod",
+	};
+	NIT.zones[1205] = {
+		name = L["Blackrock Foundry"],
+		type = "raid",
+		expansion = "wod",
+		noLockout = true,
+	};
+	NIT.zones[1228] = {
+		name = L["Highmaul"],
+		type = "raid",
+		expansion = "wod",
+		noLockout = true,
+	};
+	NIT.zones[1448] = {
+		name = L["Hellfire Citadel"],
+		type = "raid",
+		expansion = "wod",
+		noLockout = true,
+	};
+end
+
+if (NIT.expansionNum > 6) then	
+	--Legion.
+	NIT.zones[1456] = {
+		name = L["Eye of Azshara"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1458] = {
+		name = L["Neltharion's Lair"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1466] = {
+		name = L["Darkheart Thicket"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1477] = {
+		name = L["Halls of Valor"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1492] = {
+		name = L["Maw of Souls"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1493] = {
+		name = L["Vault of the Wardens"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1501] = {
+		name = L["Black Rook Hold"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1516] = {
+		name = L["The Arcway"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1544] = {
+		name = L["Violet Hold"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1571] = {
+		name = L["Court of Stars"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1651] = {
+		name = L["Return to Karazhan"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1677] = {
+		name = L["Cathedral of Eternal Night"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1753] = {
+		name = L["Seat of the Triumvirate"],
+		type = "dungeon",
+		expansion = "legion",
+	};
+	NIT.zones[1520] = {
+		name = L["The Emerald Nightmare"],
+		type = "raid",
+		expansion = "legion",
+		noLockout = true,
+	};
+	NIT.zones[1530] = {
+		name = L["The Nighthold"],
+		type = "raid",
+		expansion = "legion",
+		noLockout = true,
+	};
+	NIT.zones[1648] = {
+		name = L["Trial of Valor"],
+		type = "raid",
+		expansion = "legion",
+		noLockout = true,
+	};
+	NIT.zones[1676] = {
+		name = L["Tomb of Sargeras"],
+		type = "raid",
+		expansion = "legion",
+		noLockout = true,
+	};
+	NIT.zones[1712] = {
+		name = L["Antorus, the Burning Throne"],
+		type = "raid",
+		expansion = "legion",
+		noLockout = true,
+	};
+end

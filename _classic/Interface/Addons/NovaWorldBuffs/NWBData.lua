@@ -212,7 +212,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:sendLayerBuffs();
 		end
 	end
-	if (tonumber(remoteVersion) < 2.45) then
+	if (tonumber(remoteVersion) < 2.75) then
 		if (cmd == "requestData" and distribution == "GUILD") then
 			if (not NWB:getGuildDataStatus()) then
 				NWB:sendSettings("GUILD");
@@ -3621,7 +3621,7 @@ f:RegisterEvent("AREA_POIS_UPDATED");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_ENTERING_WORLD" ) then
 		lastPew = GetServerTime();
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (zone == 1952) then
 			--Make a NPC retarget be required when entering terok to record timers.
 			NWB.lastTerokNPCID = nil;
@@ -3652,7 +3652,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			end
 		end]]
 	elseif (event == "AREA_POIS_UPDATED") then
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (lastZone ~= 1952 and zone == 1952) then
 			--Make a NPC retarget be required when entering terok to record timers.
 			NWB.lastTerokNPCID = nil;
@@ -3666,7 +3666,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		if (lastZone == 1952 and zone == 1955) then
 			C_Timer.After(14, function()
 			
-				local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+				local _, _, zone = NWB:GetPlayerZonePosition();
 				if (zone == 1955 and GetServerTime() - lastZoneSend > 120) then
 					NWB:sendData("YELL", nil, nil, true, true, "terokkar");
 					lastZoneSend = GetServerTime();
@@ -5127,7 +5127,7 @@ end)]]
 --[[local f = CreateFrame("Frame");
 f:RegisterEvent("UPDATE_BATTLEFIELD_SCORE");
 f:SetScript('OnEvent', function(self, event, ...)
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (C_Map.GetBestMapForUnit("player") == 2104) then
 		if (GetBattlefieldWinner()) then
 			--WG ended, stuff added here later.

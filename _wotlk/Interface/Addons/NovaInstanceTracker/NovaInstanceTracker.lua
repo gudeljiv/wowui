@@ -8,18 +8,24 @@ local _, _, _, tocVersion = GetBuildInfo();
 NIT.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NIT.isClassic = true;
-elseif (tocVersion > 30000 and tocVersion < 40000) then
-	NIT.isWrath = true;
-	NIT.expansionNum = 3;
-	if (GetRealmName() ~= "Classic Beta PvE" and GetServerTime() < 1664200800) then --Mon Sep 26 2022 14:00:00 GMT+0000;
-		NIT.isPrepatch = true;
-	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	NIT.isTBC = true;
 	NIT.expansionNum = 2;
---elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
---	NIT.isWrath = true;
---	NIT.expansionNum = 3;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
+	NIT.isWrath = true;
+	NIT.expansionNum = 3;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC) then
+	NIT.isCata = true;
+	NIT.expansionNum = 4;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC) then
+	NIT.isMOP = true; --Later expansion project id's will likely need updating once Blizzard decides on the names.
+	NIT.expansionNum = 5;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_WARLORDS_CLASSIC) then
+	NIT.isWOD = true;
+	NIT.expansionNum = 6;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_LEGION_CLASSIC) then
+	NIT.isLegion = true;
+	NIT.expansionNum = 7;
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NIT.isRetail = true;
 	NIT.expansionNum = 10;

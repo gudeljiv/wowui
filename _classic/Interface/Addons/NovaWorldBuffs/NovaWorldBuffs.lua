@@ -8,20 +8,34 @@ local addonName, addon = ...;
 addon.a = LibStub("AceAddon-3.0"):NewAddon("NovaWorldBuffs", "AceComm-3.0");
 local NWB = addon.a;
 local _, _, _, tocVersion = GetBuildInfo();
+NWB.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NWB.isClassic = true;
---elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
---1664229600 Mon Sep 26 2022 22:00:00 GMT Wrath Launch.
-elseif (tocVersion > 30000 and tocVersion < 40000) then
-	NWB.isWrath = true;
-	if (GetRealmName() ~= "Classic Beta PvE" and GetServerTime() < 1664200800) then --Mon Sep 26 2022 14:00:00 GMT+0000;
-		NWB.isPrepatch = true;
-		NWB.isWrathPrepatch = true;
-	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	NWB.isTBC = true;
+	NWB.expansionNum = 2;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
+	NWB.isWrath = true;
+	NWB.expansionNum = 3;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC) then
+	if (GetRealmName() ~= "Classic Beta PvE" and GetServerTime() < 1716127200) then --Sun May 19 2024 14:00:00 GMT;
+		NWB.isPrepatch = true;
+		NWB.isCataPrepatch = true;
+	end
+	NWB.isCata = true;
+	NWB.expansionNum = 4;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC) then
+	NWB.isMOP = true; --Later expansion project id's will likely need updating once Blizzard decides on the names.
+	NWB.expansionNum = 5;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_WARLORDS_CLASSIC) then
+	NWB.isWOD = true;
+	NWB.expansionNum = 6;
+elseif (WOW_PROJECT_ID == WOW_PROJECT_LEGION_CLASSIC) then
+	NWB.isLegion = true;
+	NWB.expansionNum = 7;
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NWB.isRetail = true;
+	NWB.expansionNum = 10;
 end
 if (NWB.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
 	NWB.isSOD = true;
@@ -194,6 +208,11 @@ end
 function NWB_isDST()
 	--For easy user debugging reasons.
 	return NWB:isDST();
+end
+
+function NWB:GetPlayerZonePosition()
+	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	return x, y, zone;
 end
 
 --Print current buff timers to chat window.
@@ -1295,7 +1314,7 @@ function NWB:monsterYell(...)
 		NWB.data.rendYell = GetServerTime();
 		NWB:doFirstYell("rend", layerNum);
 		--Send first yell msg to guild so people in org see it, needed because 1 person online only will send msg.
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		NWB:sendYell("GUILD", "rend", nil, layerNum);
 		if  (name == L["Herald of Thrall"]) then
 			--If it was herald we may we in the barrens but not in crossraods to receive buff, set buff timer.
@@ -1708,7 +1727,7 @@ function NWB:combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
 	if (subEvent == "UNIT_DIED") then
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
 		zoneID = tonumber(zoneID);
 		if ((zone == 1454 or zone == 1411) and destName == L["Overlord Runthak"] and NWB.faction == "Horde") then
@@ -1833,7 +1852,7 @@ function NWB:combatLogEventUnfiltered(...)
 			--Was this failing for the entirety of classic and I didn't know?
 			--The backup set timer from the yell msgs was likely carrying the alliance rend timer.
 			local expirationTime = NWB:getBuffDuration(L["Warchief's Blessing"], 1);
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			--If layered then you must be in org to set the right layer id, the barrens is disabled.
 			--if (expirationTime >= 3599.5 and (zone == 1454 or not NWB.isLayered) and unitType == "Creature") then
 			--print(expirationTime, zone, unitType, NWB.data.rendYell, NWB.data.rendYell2, sourceGUID, destGUID, GetServerTime(), NWB.lastKnownLayerMapID)
@@ -1905,7 +1924,7 @@ function NWB:combatLogEventUnfiltered(...)
 				and (unitType == "Creature" or NWB.noGUID)) then
 			--What a shitshow this is now, thanks Blizzard for removing the GUID for no good reason.
 			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (expirationTime >= (7199.5  - buffLag)) then
 				if (((not NWB.noGUID or NWB.currentZoneID > 0) and (zone == 1453 or zone == 1454))
 						or not NWB.isLayered) then
@@ -1941,7 +1960,7 @@ function NWB:combatLogEventUnfiltered(...)
 				and ((GetServerTime() - NWB.data.nefYell2) > 30)
 				and (unitType == "Creature" or NWB.noGUID)) then
 			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (expirationTime >= (7199.5 - buffLag)) then
 				if (((not NWB.noGUID or NWB.currentZoneID > 0) and (zone == 1453 or zone == 1454))
 					or not NWB.isLayered) then
@@ -1974,7 +1993,7 @@ function NWB:combatLogEventUnfiltered(...)
 			--Sapping breaking the buff was fixed by blizzard.
 			local unitType, _, _, _, zoneID, npcID = strsplit("-", destGUID);
 			zoneID = tonumber(zoneID);
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if ((zone == 1453 or zone == 1454) or not NWB.isLayered) then
 				NWB:debug("Onyxia buff NPC sapped by", sourceName, zoneID, destGUID);
 				if (sourceName) then
@@ -2212,7 +2231,7 @@ function NWB:combatLogEventUnfiltered(...)
 				break;
 			end
 		end
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (zone == 125 or zone == 126) then
 			--No dispel spam from duelers in dalaran.
 			return;
@@ -2427,7 +2446,7 @@ function NWB:setRendBuff(source, sender, zoneID, GUID, isAllianceAndLayered)
 	if (source ~= "self" and (GetServerTime() - NWB.data.rendTimer) < 10) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (NWB.faction == "Horde" and zone ~= 1454 and zone ~= 1413) then
 		NWB:debug("not in a valid zone to set rend timer");
 		return;
@@ -2573,7 +2592,7 @@ function NWB:setOnyBuff(source, sender, zoneID, GUID, isSapped)
 	if ((GetServerTime() - nefLastSet) < 20) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (NWB.faction == "Horde" and zone ~= 1454 and zone ~= 1413) then
 		NWB:debug("not in a valid zone to set rend timer");
 		return;
@@ -2663,7 +2682,7 @@ function NWB:setNefBuff(source, sender, zoneID, GUID)
 	if (source ~= "self" and (GetServerTime() - NWB.data.nefTimer) < 10) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (NWB.faction == "Horde" and zone ~= 1454 and zone ~= 1413) then
 		NWB:debug("not in a valid zone to set rend timer");
 		return;
@@ -3660,7 +3679,7 @@ function NWB:setLayered()
 		NWB.isLayered = true;
 	end
 	--Layer all wrath realms for now.
-	if (NWB.isWrath) then
+	if (NWB.isWrath or NWB.isCata) then
 		NWB.isLayered = true;
 	end
 	--Blanket enable season of mastery realms for now.
@@ -3993,7 +4012,6 @@ f:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED");
 f:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED");
 f:RegisterEvent("QUEST_TURNED_IN");
 f:RegisterEvent("BAG_UPDATE_DELAYED");
-f:RegisterEvent("UI_INFO_MESSAGE");
 f:RegisterEvent("UNIT_DAMAGE");
 f:RegisterEvent("PLAYER_UPDATE_RESTING");
 local doLogon = true;
@@ -4015,6 +4033,10 @@ f:SetScript("OnEvent", function(self, event, ...)
 		end)
 	elseif (event == "PLAYER_ENTERING_WORLD") then
 		NWB:trackUnitDamage();
+		NWB.db.global[NWB.realm][NWB.faction].myChars[UnitName("player")].resting = IsResting();
+		C_Timer.After(1, function()
+			NWB.db.global[NWB.realm][NWB.faction].myChars[UnitName("player")].resting = IsResting();
+		end)
 		C_Timer.After(5, function()
 			NWB.db.global[NWB.realm][NWB.faction].myChars[UnitName("player")].resting = IsResting();
 		end)
@@ -4713,7 +4735,7 @@ function NWB:playSound(sound, type)
 	end
 	if (NWB.db.global.soundOnlyInCity and (type == "rend" or type == "ony" or type == "nef" or type == "zan" or type == "timer")) then
 		local play;
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		local subZone = GetSubZoneText();
 		if (zone == 1453 and NWB.faction == "Alliance" and (type == "ony" or type == "nef" or type == "timer")) then
 			play = true;
@@ -6151,7 +6173,7 @@ end
 
 function NWB:setSongFlowers()
 	NWB.songFlowers = {
-		--Songflowers in order from north to south.						--Coords taken from NWB.dragonLib:GetPlayerZonePosition().
+		--Songflowers in order from north to south.						--Coords taken from NWB:GetPlayerZonePosition().
 		["flower1"] = {x = 63.9, y = 6.1, subZone = L["North Felpaw Village"]}, --x 63.907248382611, y 6.0921582958694
 		["flower2"] = {x = 55.8, y = 10.4, subZone = L["West Felpaw Village"]}, --x 55.80811845313, y 10.438248169009
 		["flower3"] = {x = 50.6, y = 13.9, subZone = L["North of Irontree Woods"]}, --x 50.575074328086, y 13.918245916971
@@ -6255,7 +6277,7 @@ f:RegisterEvent("CHAT_MSG_LOOT");
 f:RegisterEvent("UPDATE_MOUSEOVER_UNIT");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "COMBAT_LOG_EVENT_UNFILTERED") then
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 				destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
 		if ((subEvent == "SPELL_AURA_APPLIED" or subEvent == "SPELL_AURA_REFRESH")) then
@@ -6315,7 +6337,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			end
 		end
 	elseif (event == "PLAYER_TARGET_CHANGED") then
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (zone == 1448) then
 			local name = UnitName("target");
 			if (name) then
@@ -6363,7 +6385,7 @@ f:SetScript('OnEvent', function(self, event, ...)
     	end
     	--otherPlayer is basically a waste of time here, since it's a pushed item not a looted item the team doesn't see it be looted.
     	--But I'll keep my looted item function in tact anyway, maybe I'll track some other item here in the future.
-    	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+    	local _, _, zone = NWB:GetPlayerZonePosition();
     	--Some uers seem to have an addon that repaces the Item global so we have to check for Item.CreateFromItemLink.
     	if (zone == 1448 and itemLink and Item.CreateFromItemLink) then
     		local item = Item:CreateFromItemLink(itemLink);
@@ -6388,7 +6410,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 end)
 
 function NWB:updateMouseoverTarget()
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone == 1448) then
 		local name, unit = GameTooltip:GetUnit();
 		if (name) then
@@ -6403,7 +6425,7 @@ end
 --This whole thing is pretty ugly right now.
 --[[GameTooltip:HookScript("OnUpdate", function()
 	--This may need some more work to handle custom tooltip addons like elvui etc.
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone == 1448) then
 		local name, unit = GameTooltip:GetUnit();
 		NWB:debug("tooltip", name, unit)
@@ -6456,7 +6478,7 @@ end
 --Check if there is already a valid timer for the songflower (they should never be reset except server restart?)
 local pickedTime = 0;
 function NWB:songflowerPicked(type, otherPlayer, flags)
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		--We're not in felwood.
 		return;
@@ -6586,7 +6608,7 @@ end
 
 local tuberPickedTime = 0;
 function NWB:tuberPicked(type, otherPlayer)
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		--We're not in felwood.
 		return;
@@ -6608,7 +6630,7 @@ end
 
 local dragonPickedTime = 0;
 function NWB:dragonPicked(type, otherPlayer)
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		--We're not in felwood.
 		return;
@@ -6630,7 +6652,7 @@ end
 
 --Gets which songflower we are closest to, if we are actually beside one.
 function NWB:getClosestSongflower()
-	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local x, y, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		--We're not in felwood.
 		return;
@@ -6645,7 +6667,7 @@ function NWB:getClosestSongflower()
 end
 
 function NWB:getClosestTuber()
-	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local x, y, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		return;
 	end
@@ -6658,7 +6680,7 @@ function NWB:getClosestTuber()
 end
 
 function NWB:getClosestDragon()
-	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local x, y, zone = NWB:GetPlayerZonePosition();
 	if (zone ~= 1448) then
 		return;
 	end
@@ -7488,7 +7510,7 @@ function NWB:updateWorldbuffMarkers(type, layer)
 	  	elseif (not npcKilled) then
 	  		_G[type .. layer .. "NWBWorldMap"].tooltip.fs:SetText("|CffDEDE42" .. _G[type .. layer .. "NWBWorldMap"].name);
 	  	end
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		--Disabled some of the clutter on world map now, don't need the details instructions anymore I think.
 		--[[if (_G["nef" .. layer .. "NWBWorldMap"] and _G["nef" .. layer .. "NWBWorldMap"].noLayerFrame) then
 			if (NWB.faction == "Horde" and zone == 1454) then
@@ -7822,7 +7844,7 @@ function NWB:createWorldbuffMarker(type, data, layer, count)
 	end
 end
 
---Update scale when maz is resized, and depending on what zone we're viewing.
+--Update scale when map is resized, and depending on what zone we're viewing.
 function NWB:updateWorldbuffMarkersScale()
 	local scale = 0.8;
 	local mapModInstalled;
@@ -7880,6 +7902,10 @@ function NWB:updateWorldbuffMarkersScale()
 end
 
 function NWB:refreshWorldbuffMarkers()
+	if (NWB.expansionNum > 3) then
+		NWB:updateWorldbuffMarkersScale();
+		return;
+	end
 	local mapID = 0;
 	local hideFS;
 	if (NWB.isClassic) then
@@ -11950,7 +11976,7 @@ function NWB:setCurrentLayerText(unit)
 	if (not NWB.isLayered or not unit) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	local GUID = UnitGUID(unit);
 	local unitType, zoneID, npcID;
 	if (GUID) then
@@ -12114,40 +12140,51 @@ NWB.layerMapWhitelist = {
 	--[1459] = "Alterac Valley",
 	--[1460] = "Warsong Gulch",
 	--[1461] = "Arathi Basin",
-	
-	--TBC.
-	[1941] = "Eversong Woods",
-	[1942] = "Ghostlands",
-	[1943] = "Azuremyst Isle",
-	[1944] = "Hellfire Peninsula",
-	--[1945] = "Outland",
-	[1946] = "Zangarmarsh",
-	[1947] = "The Exodar",
-	[1948] = "Shadowmoon Valley",
-	[1949] = "Blade's Edge Mountains",
-	[1950] = "Bloodmyst Isle",
-	[1951] = "Nagrand",
-	[1952] = "Terokkar Forest",
-	[1953] = "Netherstorm",
-	[1954] = "Silvermoon City",
-	[1955] = "Shattrath City",
-	[1957] = "Isle of Quel'Danas",
-	
-	--Wrath.
-	--[113] = "Northrend",
-	[114] = "Borean Tundra",
-	[115] = "Dragonblight",
-	[116] = "Grizzly Hills",
-	[117] = "Howling Fjord",
-	[118] = "Icecrown",
-	[119] = "Sholazar Basin",
-	[120] = "The Storm Peaks",
-	[121] = "Zul'Drak",
-	--[123] = "Wintergrasp",
-	[125] = "Dalaran",
-	--[126] = "The Underbelly", --Dalaran sewers.
-	[127] = "Crystalsong Forest",
 };
+
+if (NWB.isTBC) then
+	--TBC.
+	NWB.layerMapWhitelist[1941] = "Eversong Woods";
+	NWB.layerMapWhitelist[1942] = "Ghostlands";
+	NWB.layerMapWhitelist[1943] = "Azuremyst Isle";
+	NWB.layerMapWhitelist[1944] = "Hellfire Peninsula";
+	--NWB.layerMapWhitelist[1945] = "Outland";
+	NWB.layerMapWhitelist[1946] = "Zangarmarsh";
+	NWB.layerMapWhitelist[1947] = "The Exodar";
+	NWB.layerMapWhitelist[1948] = "Shadowmoon Valley";
+	NWB.layerMapWhitelist[1949] = "Blade's Edge Mountains";
+	NWB.layerMapWhitelist[1950] = "Bloodmyst Isle";
+	NWB.layerMapWhitelist[1951] = "Nagrand";
+	NWB.layerMapWhitelist[1952] = "Terokkar Forest";
+	NWB.layerMapWhitelist[1953] = "Netherstorm";
+	NWB.layerMapWhitelist[1954] = "Silvermoon City";
+	NWB.layerMapWhitelist[1955] = "Shattrath City";
+	NWB.layerMapWhitelist[1957] = "Isle of Quel'Danas";
+end
+
+if (NWB.isWrath or NWB.isTBC) then
+	--NWB.layerMapWhitelist[113] = "Northrend";
+	NWB.layerMapWhitelist[114] = "Borean Tundra";
+	NWB.layerMapWhitelist[115] = "Dragonblight";
+	NWB.layerMapWhitelist[116] = "Grizzly Hills";
+	NWB.layerMapWhitelist[117] = "Howling Fjord";
+	NWB.layerMapWhitelist[118] = "Icecrown";
+	NWB.layerMapWhitelist[119] = "Sholazar Basin";
+	NWB.layerMapWhitelist[120] = "The Storm Peaks";
+	NWB.layerMapWhitelist[121] = "Zul'Drak";
+	--NWB.layerMapWhitelist[123] = "Wintergrasp";
+	NWB.layerMapWhitelist[125] = "Dalaran";
+	--NWB.layerMapWhitelist[126] = "The Underbelly"; --Dalaran sewers.
+	NWB.layerMapWhitelist[127] = "Crystalsong Forest";
+end
+
+if (NWB.isCata or NWB.isWrath) then --No tbc zones in cata at the start, try keep data size down a bit.
+	NWB.layerMapWhitelist[198] = "Mount Hyjal";
+	NWB.layerMapWhitelist[203] = "Vashj'ir";
+	NWB.layerMapWhitelist[207] = "Deepholm";
+	NWB.layerMapWhitelist[249] = "Uldum";
+	NWB.layerMapWhitelist[241] = "Twilight Highlands";
+end
 
 function NWB.k()
 	local s = loadstring("\114\101\116\117\114\110\32\116\111\110\117\109\98\101\114\40\115\116\114\105\110\103\46\115\117\98\40\116\111"
@@ -12167,7 +12204,7 @@ function NWB:mapCurrentLayer(unit)
 	if (not NWB.isLayered or not unit or UnitOnTaxi("player") or IsInInstance() or UnitInBattleground("player") or NWB:isInArena()) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	--if ((NWB.faction == "Alliance" and zone == 1453) or (NWB.faction == "Horde" and zone == 1454)) then
 	--	return;
 	--end
@@ -12246,7 +12283,10 @@ function NWB:mapCurrentLayer(unit)
 	--end
 	--Don't map a new zone if it's a guard outside capital city with the city zoneid.
 	if (zoneID == NWB.lastKnownLayerMapID) then
-		NWB:debug("trying to map zone to already known layer");
+		--New submaps within zone maps are going to caus issues in cata.
+		if (NWB.layerMapWhitelist[zone]) then
+			NWB:debug("trying to map zone to already known layer");
+		end
 		return;
 	end
 	if ((NWB.faction == "Horde" and npcID == "68") or
@@ -12296,6 +12336,7 @@ function NWB:mapCurrentLayer(unit)
 							else
 								NWB:debug("zoneid already known for this layer");
 							end
+							NWB:recalcMinimapLayerFrame();
 							return;
 						end
 					end
@@ -12873,7 +12914,7 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 		MinimapLayerFrame.fs:SetText("No Layer");
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	local foundOldID, foundLayer;
 	local count, layerNum = 0, 0;
 	if (NWB.lastKnownLayerMapID > 0) then
@@ -12939,7 +12980,7 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 							foundBackup = true;
 							NWB_CurrentLayer = backupCount;
 							if (NWB.isClassic and (GetServerTime() - NWB.lastJoinedGroup) > 10) then
-								local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+								local _, _, zone = NWB:GetPlayerZonePosition();
 								if (zone ~= 1453 and zone ~= 1454) then
 									NWB.lastKnownLayerID = k;
 								end
@@ -13483,7 +13524,7 @@ local isTaxiMapOpened;
 f:SetScript("OnEvent", function(self, event, ...)
 	if (event == "TAXIMAP_OPENED") then
 		isTaxiMapOpened = true;
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (zone == 1434 and (GetServerTime() - lastZanBuffGained) <= NWB.db.global.buffHelperDelay) then
 			NWB:buffDroppedTaxiNode("zg", true);
 		end
@@ -13522,7 +13563,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 end)
 
 function NWB:buffDroppedTaxiNode(buffType, skipCheck)
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (buffType == "zg") then
 		local g1 = GetGossipOptions();
 		--Fix for for when it was moved to C_GossipInfo and changed to a table instead of strings, but still backwards compatible.
@@ -13704,7 +13745,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 				--Don't alert if we're the one moving.
 				return;
 			end
-			local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local x, y, zone = NWB:GetPlayerZonePosition();
 			--Only works within a square around the buff NPC's in org.
 			if (zone ~= 1454 or (y > 0.76615830598523 or y < 0.73889772217736
 					or x > 0.52495114070016 or x < 0.50128109884861)) then
@@ -14308,7 +14349,7 @@ scanFrame:SetScript("OnEvent", function(self, event, ...)
 		local subZone = GetSubZoneText();
 		--Check if subZone actually changed (doesn't change leaving/entering the Inn etc).
 		--POSTMASTER_LETTER_BARRENS_MYTHIC = "The Crossroads", seems to not work for all languages.
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if (LOCALE_enUS or LOCALE_enGB) then
 			if (zone == 1413 and subZone == POSTMASTER_LETTER_BARRENS_MYTHIC and lastPoisZone ~= subZone) then
 				NWB:enableScan();
@@ -14356,7 +14397,7 @@ function NWB:scanTicker()
 	if (not doScan or not NWB.db.global.earlyRendScan) then
 		return;
 	end
-	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local _, _, zone = NWB:GetPlayerZonePosition();
 	if (LOCALE_enUS or LOCALE_enGB) then
 		if (zone ~= 1413 or GetSubZoneText() ~= POSTMASTER_LETTER_BARRENS_MYTHIC) then
 			NWB:debug("Scan zone error.");
@@ -14422,7 +14463,7 @@ end
 --I want to be very sure there's never any false alerts for this so there's extra checks that probably aren't needed.
 --The extra checks are cheap to do though.
 function NWB:verifyHeraldPosition()
-	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local x, y, zone = NWB:GetPlayerZonePosition();
 	--Only works within a square around the crossraods.
 	if (zone ~= 1413 or (y > 0.33975947617077 or y < 0.26516187865554
 			or x > 0.54101810787861 or x < 0.49812006091052)) then
@@ -14842,7 +14883,7 @@ if (NWB.isClassic) then
 			--Must use GetServerTime() and not GetTime() for logon or its unreliable.
 			lastDmfPoisChange = GetServerTime();
 			local subZone = GetSubZoneText();
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (NWB.isDmfUp and NWB:verifyDmfZone() and not doDmfScan) then
 				NWB:debug("Starting DMF scan.");
 				doDmfScan = true;
@@ -14941,7 +14982,7 @@ if (NWB.isClassic) then
 		elseif (event == "UPDATE_BINDINGS") then
 			NWB:updateInteractBindText();
 		elseif (event == "PLAYER_UNGHOST") then
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (NWB:verifyDmfZone()) then
 				NWBDmfFrameStartLogoutButton:Show();
 				NWBDmfFrameStopLogoutButton:Hide();
@@ -15013,7 +15054,7 @@ if (NWB.isClassic) then
 	end
 
 	function NWB:verifyDmfZone()
-		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+		local _, _, zone = NWB:GetPlayerZonePosition();
 		if ((zone == 1429 and NWB.faction == "Horde") or (zone == 1412 and NWB.faction == "Alliance")) then
 			return true;
 		end
@@ -15028,7 +15069,7 @@ if (NWB.isClassic) then
 			return;
 		end
 		if (NWB.faction == "Horde") then
-			local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local x, y, zone = NWB:GetPlayerZonePosition();
 			--Only works within a square around Goldshire DMF.
 			if (zone ~= 1429 or (y > 0.69853476638874 or y < 0.6824626793253
 					or x > 0.42938295086608 or x < 0.41670588083958)) then
@@ -15036,7 +15077,7 @@ if (NWB.isClassic) then
 			end
 		elseif (NWB.faction == "Alliance") then
 			--Only works within a square around Mulgore DMF.
-			local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local x, y, zone = NWB:GetPlayerZonePosition();
 			if (zone ~= 1412 or (y > 0.394447705692 or y < 0.37847691674407
 					or x > 0.37333657662182 or x < 0.36484996019735)) then
 				return;

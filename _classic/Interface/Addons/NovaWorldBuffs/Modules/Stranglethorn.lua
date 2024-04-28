@@ -451,7 +451,7 @@ local function addBossMarker(x, y)
 		lastSeenBoss = GetServerTime();
 		if (GetServerTime() - lastBossMsg  > 3600) then
 			lastBossMsg = GetServerTime(); --This is also set in mouseover so no msg if we see it ourself.
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (zone == 1434) then
 				NWB:print(L["stvBossSpotted"]);
 				local colorTable = {r = NWB.db.global.middleColorR, g = NWB.db.global.middleColorG, b = NWB.db.global.middleColorB, id = 41, sticky = 0};
@@ -479,7 +479,7 @@ local function getStvPos(zoneID)
 	if (not NWB.stvRunning) then
 		return;
 	end
-	local x, y, zone = NWB.dragonLib:GetPlayerZonePosition();
+	local x, y, zone = NWB:GetPlayerZonePosition();
 	if (validateStv(zoneID) and zoneID and x and y and zone == 1434) then
 		NWB:updateStvBoss(zoneID, x, y);
 		return zoneID, x, y;
@@ -654,7 +654,7 @@ local function parseGUID(unit)
 	if (NWB.stvRunning) then
 		local guid = UnitGUID(unit);
 		if (guid) then
-			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (zone == 1434) then
 				local unitType, _, _, _, zoneID, npcID = strsplit("-", guid);
 				if (unitType == "Creature" and npcID) then

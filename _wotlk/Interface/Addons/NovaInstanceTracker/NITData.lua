@@ -2023,16 +2023,17 @@ if (NIT.isWrath) then
 	recordQuests[24579] = "Sartharion Must Die!";
 	recordQuests[24588] = "XT-002 Deconstructor Must Die!";
 end
-if (NIT.isSOD) then
-	recordQuests[79098] = "Clear the Forest!";
-	recordQuests[79090] = "Repelling Invaders";
-end
 
 --Dailys.
 local recordDailyQuests = {};
 if (NIT.isWrath) then
 	recordDailyQuests[78752] = L["Proof of Demise: Titan Rune Protocol Gamma"];
 	recordDailyQuests[78753] = L["Proof of Demise: Threats to Azeroth"];
+end
+
+if (NIT.isSOD) then
+	recordDailyQuests[79098] = "Clear the Forest!";
+	recordDailyQuests[79090] = "Repelling Invaders";
 end
 
 function NIT:recordQuests()
