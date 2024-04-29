@@ -7,15 +7,6 @@ local lastIsFolded
 local requestNil={dungeon="NIL",start=0,last=0,name=""}
 
 local function requestSort_TOP_TOTAL (a,b)
-	--a=a or requestNil
-	--b=b or requestNil
-	if GBB.dungeonSort[a.dungeon] == nil then
-		a = requestNil
-	end
-	if GBB.dungeonSort[b.dungeon] == nil then
-		b = requestNil
-	end
-
 	if GBB.dungeonSort[a.dungeon] < GBB.dungeonSort[b.dungeon] then
 		return true
 	elseif GBB.dungeonSort[a.dungeon] == GBB.dungeonSort[b.dungeon]then
@@ -28,15 +19,6 @@ local function requestSort_TOP_TOTAL (a,b)
 	return false
 end
 local function requestSort_TOP_nTOTAL (a,b)
-	--a=a or requestNil
-	--b=b or requestNil
-	if GBB.dungeonSort[a.dungeon] == nil then
-		a = requestNil
-	end
-	if GBB.dungeonSort[b.dungeon] == nil then
-		b = requestNil
-	end
-
 	if GBB.dungeonSort[a.dungeon] < GBB.dungeonSort[b.dungeon] then
 		return true
 	elseif GBB.dungeonSort[a.dungeon] == GBB.dungeonSort[b.dungeon] then
@@ -49,15 +31,6 @@ local function requestSort_TOP_nTOTAL (a,b)
 	return false
 end
 local function requestSort_nTOP_TOTAL (a,b)
-	--a=a or requestNil
-	--b=b or requestNil
-	if GBB.dungeonSort[a.dungeon] == nil then
-		a = requestNil
-	end
-	if GBB.dungeonSort[b.dungeon] == nil then
-		b = requestNil
-	end
-
 	if GBB.dungeonSort[a.dungeon] < GBB.dungeonSort[b.dungeon] then
 		return true
 	elseif GBB.dungeonSort[a.dungeon] == GBB.dungeonSort[b.dungeon] then
@@ -69,16 +42,7 @@ local function requestSort_nTOP_TOTAL (a,b)
 	end
 	return false
 end
-local function requestSort_nTOP_nTOTAL (a,b)
-	--a=a or requestNil
-	--b=b or requestNil
-	if GBB.dungeonSort[a.dungeon] == nil then
-		a = requestNil
-	end
-	if GBB.dungeonSort[b.dungeon] == nil then
-		b = requestNil
-	end
-	
+local function requestSort_nTOP_nTOTAL (a,b)	
 	if GBB.dungeonSort[a.dungeon] < GBB.dungeonSort[b.dungeon] then
 		return true
 	elseif GBB.dungeonSort[a.dungeon] == GBB.dungeonSort[b.dungeon] then
@@ -90,8 +54,10 @@ local function requestSort_nTOP_nTOTAL (a,b)
 	end
 	return false
 end
-
-local function CreateHeader(yy,dungeon)
+---@param yy integer The current bottom pos from the top of the scroll frame
+---@param dungeon string The dungeons "key" ie DM|MC|BWL|etc
+---@return integer yy The updated bottom pos of the scroll frame after adding the header
+local function CreateHeader(yy, dungeon)
 	local AnchorTop="GroupBulletinBoardFrame_ScrollChildFrame"
 	local AnchorRight="GroupBulletinBoardFrame_ScrollChildFrame"
 	local ItemFrameName="GBB.Dungeon_"..dungeon
@@ -533,6 +499,8 @@ end
 
 function GBB.GetDungeons(msg,name)
 	if msg==nil then return {} end
+	---Maps dungeonKey to boolean, `true` if the dungeon is asociated with message
+	---@type table<string, boolean?> 
 	local dungeons={}
 
 	local isBad=false
@@ -582,21 +550,21 @@ function GBB.GetDungeons(msg,name)
 		end
 		wordcount = string.len(msg)
 	else
-		local parts =GBB.SplitNoNb(msg)
-		for ip, p in pairs(parts) do
-			if p=="run" or p=="runs" then
+		local parts = GBB.GetMessageWordList(msg)
+		for _, word in pairs(parts) do
+			if word == "run" or word=="runs" then
 				hasrun=true
 			end
 
-			local x=GBB.tagList[p]
+			local x = GBB.tagList[word]
 
-			if GBB.HeroicKeywords[p] ~= nil then
+			if GBB.HeroicKeywords[word] ~= nil then
 				isHeroic = true
 			end
 
 			if x==nil then
-				if GBB.tagList[p.."run"]~=nil then
-					runDungeon=GBB.tagList[p.."run"]
+				if GBB.tagList[word.."run"]~=nil then
+					runDungeon=GBB.tagList[word.."run"]
 					runrequired=true
 				end
 			elseif x==GBB.TAGBAD then
@@ -630,7 +598,12 @@ function GBB.GetDungeons(msg,name)
 		end
 	end
 
-	if dungeons["DEADMINES"] and not dungeons["DMW"] and not dungeons["DME"] and not dungeons["DME"] and name~=nil then
+	if dungeons["DEADMINES"] 
+		and not dungeons["DMW"] 
+		and not dungeons["DME"] 
+		and not dungeons["DME"] 
+		and name ~= nil 
+	then
 		if nameLevel>0 and nameLevel<40 then
 			dungeons["DM"]=true
 			dungeons["DM2"]=false
@@ -643,22 +616,24 @@ function GBB.GetDungeons(msg,name)
 	if isBad then
 		--dungeons={}
 	elseif isGood then
-		for ip,p in pairs(GBB.dungeonSecondTags) do
-			local ok=false
-			if dungeons[ip]== true then
-				for it,t in ipairs(p) do
-					if string.sub(t,1,1)=="-" then
-						if dungeons[string.sub(t,2)]== true then
-							ok=true
-						end
-					elseif dungeons[t]== true then
-						ok=true
+		for parentKey, secondKeys in pairs(GBB.dungeonSecondTags) do
+			local anySecondaryFound = false
+			if dungeons[parentKey] == true then
+				for _, altKey in ipairs(secondKeys) do
+					-- check if altKey is negative & get base dungeon key
+					if altKey:sub(1,1) == "-" then
+						altKey = altKey:sub(2) 
+					end
+
+					if dungeons[altKey] == true then
+						anySecondaryFound=true
 					end
 				end
-				if ok==false then
-					for it,t in ipairs(p) do
-						if string.sub(t,1,1)~="-" then
-							dungeons[t]= true
+				if not anySecondaryFound then
+					for _, altKey in ipairs(secondKeys) do
+						if altKey:sub(1, 1) ~= "-" then
+							-- force enable all alt keys if none were found in message
+							dungeons[altKey]= true
 						end
 					end
 				end
@@ -672,20 +647,23 @@ function GBB.GetDungeons(msg,name)
 		isGood=true
 	end
 
-	-- remove all secondtags-dungeons
-	for ip,p in pairs(GBB.dungeonSecondTags) do
-		if dungeons[ip]== true then
-			dungeons[ip]=nil
+	-- remove all primary dungeon keys
+	for dungeonKey, _ in pairs(GBB.dungeonSecondTags) do
+		if dungeons[dungeonKey] == true then
+			-- this removes "DEADMINES" and keeps either DM or DM2
+			dungeons[dungeonKey] = nil
 		end
 	end
 
 	if GBB.DB.CombineSubDungeons then
-		for ip,p in pairs(GBB.dungeonSecondTags) do
-			if ip~="DEATHMINES" then
-				for is,subDungeon in pairs(p) do
-					if dungeons[subDungeon] then
-						dungeons[ip]=true
-						dungeons[subDungeon]=nil
+		for parentKey, secondaryKeys in pairs(GBB.dungeonSecondTags) do
+			-- ignore DEADMINES
+			-- its doesnt actually have sub dungeons
+			if parentKey ~= "DEADMINES" then
+				for _, altKey in pairs(secondaryKeys) do
+					if dungeons[altKey] then
+						dungeons[parentKey] = true
+						dungeons[altKey] = nil
 					end
 				end
 			end

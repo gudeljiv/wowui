@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("BrawlersGeneral", "DBM-Brawlers")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220324235238")
+mod:SetRevision("20240426174649")
 --mod:SetCreatureID(60491)
 --mod:SetModelID(41448)
 mod:SetZone(DBM_DISABLE_ZONE_DETECTION)
@@ -244,7 +244,7 @@ function mod:OnSync(msg)
 end
 
 do
-	local QueuedBuff = DBM:GetSpellInfo(132639)
+	local QueuedBuff = DBM:GetSpellName(132639)
 	function mod:UNIT_AURA()
 		local currentQueueRank = select(16, DBM:UnitBuff("player", QueuedBuff))
 		if currentQueueRank and currentQueueRank ~= lastRank then

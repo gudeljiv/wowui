@@ -4,11 +4,10 @@ local private = select(2, ...)
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 
 ---@class DevToolsModule: DBMModule
-local module = private:NewModule("DevTools")
+local module = private:NewModule("DevToolsModule")
 
 ---@class DBM
-local DBM = private.DBM or {}
-private.DBM = DBM
+local DBM = private:GetPrototype("DBM")
 
 function module:OnModuleLoad()
 	self:OnDebugToggle()
@@ -27,7 +26,7 @@ do
 	end
 
 	function module:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-		local spellName = DBM:GetSpellInfo(spellId)
+		local spellName = DBM:GetSpellName(spellId)
 		DBM:Debug("UNIT_SPELLCAST_SUCCEEDED fired: "..UnitName(uId).."'s "..spellName.."("..spellId..")", 3)
 	end
 
