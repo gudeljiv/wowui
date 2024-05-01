@@ -19,7 +19,7 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.2.4" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.2.5" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -97,6 +97,7 @@ local TMW = _G.TMW
 local tocVersion = select(4, GetBuildInfo());
 TMW.isClassic = tocVersion <= 19999
 TMW.isWrath = tocVersion >= 30400 and tocVersion <= 30499
+TMW.isCata = tocVersion >= 40400 and tocVersion <= 40499
 TMW.isRetail = tocVersion >= 90000
 
 

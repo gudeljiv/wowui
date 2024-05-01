@@ -1,4 +1,25 @@
-﻿3.0.191 - 19th April 2004
+﻿4.0.02 - 29th April 2024
+- For 'Enhance dressup' ('Interface'), added ranged button layout.
+- For 'Automate gossip' ('Automation'), added Stormwind and Orgrimmar auctioneers to skip gossip automatically.
+
+4.0.01 - 27th April 2004
+- The 'Show cooldowns' option ('Interface') now supports dual spec.  Cooldown icons are saved to your class and specialisation (mirroring retail).
+- The 'Show Wowhead links' option ('Interface') now shows Cataclysm links.
+- The 'Mute game sounds' > 'Login' option now mutes the Cataclysm login screen music.
+- The web link feature now shows Cataclysm links.
+- Updated deprecated functions.
+- Fixed a Lua error with the /ltp con command (developer console).
+
+4.0.00 - 24th April 2004
+- Welcome to Cataclysm Classic.
+- Added a new option called 'Queue from friends' ('Social').  If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is a friend.
+- For 'Enhance dressup' ('Interface'), added new options to make the transmogrify window wider and to show a transmogrify model animation slider.  The zoom speed now affects the mount journal and the pet journal in addition to the character frame model.
+- For 'Show ready timer' ('Interface'), the timer will now show for the dungeon ready frame as well as the PvP encounter ready frame.
+- For 'Media', added Cataclysm movies and music tracks.  All music tracks in the entire library (except Various Cinematics) now use sound kits as opposed to sound files (mirroring retail).
+- The 'Show flight times' option has been removed.  There are a lot more flight points in Cataclysm Classic and you will be flying on your own mounts a lot of the time.
+- This release and future releases will only work with Cataclysm Classic (not Wrath of the Lich King Classic).
+
+3.0.191 - 19th April 2004
 - In preparation for Cataclysm Classic, the 'Show flight times' option ('Interface') has been removed.  There are a lot more flight points in Cataclysm Classic and you will be flying on your own mounts a lot of the time.
 - Cataclysm Classic Beta: For 'Enhance dressup' ('Interface'), added new options to make the transmogrify window wider and to show a transmogrify model animation slider.  The zoom speed now affects the mount journal and the pet journal in addition to the character frame model.
 - Cataclysm Classic Beta: For 'Show ready timer' ('Interface'), the timer will now show for the dungeon ready frame as well as the PvP encounter ready frame.

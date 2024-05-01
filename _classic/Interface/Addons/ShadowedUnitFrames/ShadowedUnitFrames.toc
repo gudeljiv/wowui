@@ -1,11 +1,10 @@
-## Interface: 30401
+## Interface: 40400
 ## Title: Shadowed Unit Frames
 ## Notes: Moooooooooooooooooo
 ## Author: Shadowed
-## Version: v4.3.4-classic
+## Version: v4.3.5-classic
 ## SavedVariables: ShadowedUFDB
 ## X-Website: https://www.wowace.com/addons/shadowed-unit-frames/
-## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibSpellRange-1.0, Clique
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibSpellRange-1.0, LibClassicDurations, Clique, LibClassicCasterino
 ## X-Curse-Project-ID: 19268
 ## X-WoWI-ID: 13494
@@ -56,3 +55,5 @@ modules\range.lua
 modules\empty.lua
 modules\druid.lua
 modules\runes.lua
+modules\holypower.lua
+modules\soulshards.lua

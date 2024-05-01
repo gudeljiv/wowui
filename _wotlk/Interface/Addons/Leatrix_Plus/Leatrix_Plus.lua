@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.191 (19th April 2024)
+-- 	Leatrix Plus 4.0.02 (29th April 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.191"
+	LeaPlusLC["AddonVer"] = "4.0.02"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -28,8 +28,8 @@
 	-- Check Wow version is valid
 	do
 		local gameversion, gamebuild, gamedate, gametocversion = GetBuildInfo()
-		if gametocversion and gametocversion < 30000 or gametocversion > 49999 then
-			-- Game client is not Wow Classic
+		if gametocversion and gametocversion < 40000 or gametocversion > 49999 then
+			-- Game client is not Cataclysm Classic
 			C_Timer.After(2, function()
 				print(L["LEATRIX PLUS: WRONG VERSION INSTALLED!"])
 			end)
@@ -41,11 +41,11 @@
 	end
 
 	-- Check for addons
-	if IsAddOnLoaded("ElvUI") then LeaPlusLC.ElvUI = unpack(ElvUI) end
-	if IsAddOnLoaded("Glass") then LeaPlusLC.Glass = true end
-	if IsAddOnLoaded("CharacterStatsWRATH") then LeaPlusLC.CharacterStatsWRATH = true end
-	if IsAddOnLoaded("totalRP3") then LeaPlusLC.totalRP3 = true end
-	if IsAddOnLoaded("TitanClassic") then LeaPlusLC.TitanClassic = true end
+	if C_AddOns.IsAddOnLoaded("ElvUI") then LeaPlusLC.ElvUI = unpack(ElvUI) end
+	if C_AddOns.IsAddOnLoaded("Glass") then LeaPlusLC.Glass = true end
+	if C_AddOns.IsAddOnLoaded("CharacterStatsWRATH") then LeaPlusLC.CharacterStatsWRATH = true end
+	if C_AddOns.IsAddOnLoaded("totalRP3") then LeaPlusLC.totalRP3 = true end
+	if C_AddOns.IsAddOnLoaded("TitanClassic") then LeaPlusLC.TitanClassic = true end
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -340,16 +340,16 @@
 
 	-- Toggle Zygor addon
 	function LeaPlusLC:ZygorToggle()
-		if select(2, GetAddOnInfo("ZygorGuidesViewerClassicTBC")) then
-			if not IsAddOnLoaded("ZygorGuidesViewerClassicTBC") then
+		if select(2, C_AddOns.GetAddOnInfo("ZygorGuidesViewerClassicTBC")) then
+			if not C_AddOns.IsAddOnLoaded("ZygorGuidesViewerClassicTBC") then
 				if LeaPlusLC:PlayerInCombat() then
 					return
 				else
-					EnableAddOn("ZygorGuidesViewerClassicTBC")
+					C_AddOns.EnableAddOn("ZygorGuidesViewerClassicTBC")
 					ReloadUI();
 				end
 			else
-				DisableAddOn("ZygorGuidesViewerClassicTBC")
+				C_AddOns.DisableAddOn("ZygorGuidesViewerClassicTBC")
 				ReloadUI();
 			end
 		else
@@ -677,6 +677,28 @@
 			LpEvt:RegisterEvent("DUEL_REQUESTED");
 		else
 			LpEvt:UnregisterEvent("DUEL_REQUESTED");
+		end
+
+		----------------------------------------------------------------------
+		--	Automatically accept Dungeon Finder queue requests
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["AutoConfirmRole"] == "On" then
+			LFDRoleCheckPopupAcceptButton:SetScript("OnShow", function()
+				local leader, leaderGUID  = "", ""
+				for i = 1, GetNumSubgroupMembers() do
+					if UnitIsGroupLeader("party" .. i) then
+						leader = UnitName("party" .. i)
+						leaderGUID = UnitGUID("party" .. i)
+						break
+					end
+				end
+				if LeaPlusLC:FriendCheck(leader, leaderGUID) then
+					LFDRoleCheckPopupAcceptButton:Click()
+				end
+			end)
+		else
+			LFDRoleCheckPopupAcceptButton:SetScript("OnShow", nil)
 		end
 
 		----------------------------------------------------------------------
@@ -1033,7 +1055,7 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteEvents", "Events", 16, -112, false, "If checked, holiday event sounds will be muted.|n|nThis applies to Headless Horseman.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteFizzle", "Fizzle", 16, -132, false, "If checked, the spell fizzle sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteInterface", "Interface", 16, -152, false, "If checked, the interface button sound, the chat frame tab click sound and the game menu toggle sound will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteLogin", "Login", 16, -172, false, "If checked, login screen sounds will be muted when you logout of the game.|n|nNote that login screen sounds will not be muted when you initially launch the game.|n|nThey will only be muted when you logout of the game.  This includes manually logging out as well as being forcefully logged out by the game server for reasons such as being away for an extended period of time.|n|nNo more dragons roaring when you fall asleep while the game is running!")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteLogin", "Login", 16, -172, false, "If checked, the login screen music will be muted when you logout of the game.|n|nNote that the login screen music will not be muted when you initially launch the game.|n|nIt will only be muted when you logout of the game.  This includes manually logging out as well as being forcefully logged out by the game server for reasons such as being away for an extended period of time.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -192, false, "If checked, the ready check sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -212, false, "If checked, train sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -232, false, "If checked, the mechanical guild vault idle sound will be muted.")
@@ -1149,14 +1171,8 @@
 			-- Create soundtable for PLAYER_LOGOUT (these sounds are only muted or unmuted when logging out
 			local muteLogoutTable = {
 
-				-- Ambiance (sound/ambience/gluescreen/gluescreenlogin.ogg)
-				"538968",
-
-				-- Dragon roaring sounds (sound/ambience/gluescreen/wrath_login_)
-				"538970", "538969", "538971", "538972",
-
-				-- Game music (sound/music/gluescreenmusic/wotlk_main_title.mp3)
-				"53222",
+				-- Game music (sound/music/cataclysm/mus_shattering_uu01.mp3)
+				"441737",
 
 			}
 
@@ -1290,17 +1306,17 @@
 
 			-- Get localised Wowhead URL
 			local wowheadLoc
-			if 	   GameLocale == "deDE" then wowheadLoc = "wowhead.com/wotlk/de"
-			elseif GameLocale == "esMX" then wowheadLoc = "wowhead.com/wotlk/es"
-			elseif GameLocale == "esES" then wowheadLoc = "wowhead.com/wotlk/es"
-			elseif GameLocale == "frFR" then wowheadLoc = "wowhead.com/wotlk/fr"
-			elseif GameLocale == "itIT" then wowheadLoc = "wowhead.com/wotlk/it"
-			elseif GameLocale == "ptBR" then wowheadLoc = "wowhead.com/wotlk/pt"
-			elseif GameLocale == "ruRU" then wowheadLoc = "wowhead.com/wotlk/ru"
-			elseif GameLocale == "koKR" then wowheadLoc = "wowhead.com/wotlk/ko"
-			elseif GameLocale == "zhCN" then wowheadLoc = "wowhead.com/wotlk/cn"
-			elseif GameLocale == "zhTW" then wowheadLoc = "wowhead.com/wotlk/cn"
-			else							 wowheadLoc = "wowhead.com/wotlk"
+			if 	   GameLocale == "deDE" then wowheadLoc = "wowhead.com/cata/de"
+			elseif GameLocale == "esMX" then wowheadLoc = "wowhead.com/cata/es"
+			elseif GameLocale == "esES" then wowheadLoc = "wowhead.com/cata/es"
+			elseif GameLocale == "frFR" then wowheadLoc = "wowhead.com/cata/fr"
+			elseif GameLocale == "itIT" then wowheadLoc = "wowhead.com/cata/it"
+			elseif GameLocale == "ptBR" then wowheadLoc = "wowhead.com/cata/pt"
+			elseif GameLocale == "ruRU" then wowheadLoc = "wowhead.com/cata/ru"
+			elseif GameLocale == "koKR" then wowheadLoc = "wowhead.com/cata/ko"
+			elseif GameLocale == "zhCN" then wowheadLoc = "wowhead.com/cata/cn"
+			elseif GameLocale == "zhTW" then wowheadLoc = "wowhead.com/cata/cn"
+			else							 wowheadLoc = "wowhead.com/cata"
 			end
 
 			----------------------------------------------------------------------
@@ -1385,7 +1401,7 @@
 			end
 
 			-- Run function when achievement UI is loaded
-			if IsAddOnLoaded("Blizzard_AchievementUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_AchievementUI") then
 				DoWowheadAchievementFunc()
 			else
 				local waitAchievementsFrame = CreateFrame("FRAME")
@@ -1555,7 +1571,11 @@
 				30431, 32538, 32287, 32540, 32533, 31238, 29529, 28997, 32172, 31580, 27730, 28995, 28701, 32763, 32565, 28992, 29636, 8137, 31579, 29523, 32514, 31582, 18960, 32216, 28721, 35507, 32564, 28718, 7947, 18484, 29537, 12781, 20096, 18988, 32515, 340, 19186, 18987, 31863, 19296, 29535, 31581, 31031, 18911, 4561, 2664, 8139, 28722, 16585, 35508, 20097, 25206, 8145, 19663, 35498, 31910, 32773, 19373, 32380, 20028, 12022, 2810, 18011, 28715, 12793, 2821, 29547, 21655, 4229, 18015, 31032, 32385, 18773, 2803, 2806, 16583, 18753, 19004, 31916, 5494, 8125, 32509, 29493, 19213, 28742, 66, 29744, 32774, 18756, 18774, 16786, 12919, 15174, 33026, 18993, 29532, 20916, 1448, 18990, 30472, 16826, 29527, 3556, 19383, 18751, 34252, 28951, 28714, 29587, 25977, 5940, 19038, 31911, 1465, 29478, 18382, 3027, 14846, 2685, 31865, 31864, 21113, 28776, 12944, 16253, 19662, 3482, 16588, 16657, 3323, 14753, 5594, 19837, 24539, 30885, 12783, 18005, 18991, 4877, 19074, 12246, 10618, 7564, 12245, 26484, 12788, 28040, 1275, 18957, 32834, 12778, 19575, 14754, 20980, 21432, 17904, 18525, 13219, 35496, 23489, 32594, 19042, 12796, 18802, 8678, 16782, 29528, 16624, 3489, 4574, 5162, 32832, 18775, 5817, 6548, 11189, 29628, 26941, 17512, 28687, 2393, 1286, 20080, 14847, 32383, 35497, 9499, 19227, 20240, 3954, 8666, 12043, 1148, 19661, 11185, 28692, 27037, 25046, 19617, 29715, 29491, 11187, 16823, 28589, 3348, 13217, 3313, 30006, 18749, 6367, 3497, 21643, 22212, 5483, 16860, 28038, 30825, 7775, 15419, 4305, 11557, 33638, 29049, 3546, 22208, 4879, 3333, 32631, 27012, 4897, 1257, 19331, 15127, 26977, 25314, 18772, 2663, 6779, 13218, 23732, 28990, 14860, 26110, 14624, 1285, 1263, 14322, 33027, 15126, 18897, 35099, 3335, 2381, 23007, 14921, 18752, 16262, 5519, 1684, 3029, 21019, 32356, 35500, 29495, 18771, 29497, 32337, 17657, 12033, 27011, 32381, 3881, 26938, 27668, 2480, 734, 13216, 5188, 17585, 23381, 17246, 233, 4307, 32382, 20377, 21474, 20241, 8665, 19772, 4453, 3346, 35132, 13476, 9179, 20242, 27722, 22213, 8401, 28685, 19196, 24780, 1301, 5193, 33679, 12795, 6746, 27039, 16635, 277, 4731, 5942, 24291, 29716, 19694, 15179, 26995, 3960, 19521, 20981, 16602, 19232, 3550, 23802, 25032, 1303, 35101, 30723, 29548, 19540, 27721, 3362, 989, 24341, 1460, 28991, 12943, 28993, 1347, 31781, 2848, 23367, 29496, 13433, 1318, 8679, 4200, 4217, 18672, 18018, 23604, 11056, 21485, 16631, 26352, 5101, 5151, 2832, 16528, 4553, 19182, 5611, 483, 29688, 18427, 7854, 21906, 5049, 24357, 167, 3614, 12794, 25976, 12384, 29499, 2805, 32641, 32334, 16015, 1307, 10667, 19538, 35131, 3495, 32639, 8161, 12942, 27142, 8681, 3413, 30730, 27063, 29203, 11057, 19197, 3133, 32413, 4226, 20278, 3400, 14637, 15351, 18754, 5514, 152, 29702, 15006, 5160, 31776, 5175, 15350, 789, 5815, 28723, 11278, 3334, 3366, 1261, 3081, 2670, 1302, 12957, 26600, 19053, 843, 1325, 5565, 25195, 21183, 27267, 28691, 8361, 3342, 27134, 829, 19539, 384, 1299, 222, 945, 29703, 12096, 3562, 4981, 836, 981, 3490, 22491, 9636, 2383, 227, 5753, 19857, 226, 2626, 12785, 3023, 6777, 26596, 2118, 20510, 17553, 16376, 16638, 24396, 29291, 980, 3685, 15165, 1311, 19015, 10118, 13420, 19321, 16264, 23521, 844, 8158, 2838, 1304, 28726, 956, 25178, 8176, 11555, 6740, 258, 793, 1237, 74, 23748, 4730, 791, 3351, 4577, 28725, 24188, 5178, 984, 982, 31557, 16442, 28994, 15293, 17222, 11038, 2672, 15197, 958, 20092, 28727, 1328, 16268, 19678, 3358, 4575, 29538, 9501, 372, 19342, 32354, 15471, 12784, 1313, 7955, 959, 27144, 4265, 4225, 19773, 4221, 17584, 26898, 896, 8404, 15400, 25196, 2481, 3364, 4165, 2687, 1213, 29905, 18907, 5111, 6929, 15291, 29510, 3135, 28716, 29908, 16224, 30438, 21905, 18266, 2482, 26945, 1321, 27138, 32355, 27030, 19536, 1298, 14437, 23437, 14740, 30735, 12792, 5848, 32412, 2380, 31804, 12799, 27195, 3488, 1146, 12956, 5173, 9087, 4602, 5128, 21112, 32477, 1669, 17101, 1250, 1314, 27935, 14337, 10216, 29962, 6741, 8150, 1305, 4590, 1287, 33019, 4878, 17930, 13018, 23159, 1308, 3955, 23208, 27711, 14522, 27146, 15011, 26599, 27031, 3481, 1291, 20986, 16708, 28728, 11188, 3369, 3493, 960, 1289, 23484, 19879, 11116, 1471, 12941, 4083, 1454, 3536, 3015, 4173, 8157, 16829, 12024, 32642, 27052, 18954, 16191, 20808, 16649, 1149, 4228, 25278, 16611, 3537, 28989, 29512, 1294, 24054, 27071, 5163, 27148, 16709, 16722, 3168, 4184, 3018, 23731, 17630, 6807, 8403, 23428, 6574, 3359, 8178, 4085, 24468, 7852, 11536, 23145, 7945, 10367, 27019, 2622, 1690, 5158, 29907, 7952, 2135, 4604, 7683, 4610, 14480, 19932, 1312, 25274, 11183, 24033, 23263, 26936, 2697, 3578, 20494, 12019, 29288, 26934, 18898, 4585, 3367, 12097, 3085, 29014, 4885, 16444, 2265, 16766, 3410, 19574, 16641, 19011, 26868, 1645, 27489, 22225, 20807, 1407, 3935, 2819, 16636, 3409, 23896, 1316, 16705, 3350, 20616, 228, 21488, 5110, 21084, 27817, 16553, 18906, 4894, 6374, 12021, 3577, 2668, 3180, 29277, 30434, 6300, 4170, 5100, 4556, 8508, 3962, 6731, 1247, 33018, 4892, 12023, 28046, 3134, 3958, 4558, 5758, 27140, 3658, 12959, 27186, 3551, 19718, 16678, 29122, 18017, 27055, 32478, 32416, 3178, 18019, 15864, 16612, 6568, 18542, 26569, 28707, 27667, 28796, 24333, 18267, 20081, 16367, 1351, 16739, 29922, 54, 29205, 4220, 19371, 2397, 26968, 15292, 23862, 21110, 2682, 32638, 3316, 28760, 3956, 2264, 7733, 6747, 19495, 2388, 7736, 6730, 5512, 3322, 19474, 3937, 1691, 27185, 27053, 28812, 27478, 19330, 19047, 26707, 1694, 11874, 19836, 2134, 8878, 12026, 4241, 12029, 2364, 1323, 3539, 19450, 16677, 19473, 8177, 14581, 14371, 30439, 1326, 5189, 4259, 27938, 19013, 19245, 3534, 2679, 8117, 16443, 18664, 26474, 27137, 27149, 8131, 6576, 31024, 12777, 12782, 20378, 20249, 7940, 24148, 19533, 19534, 27950, 24510, 4891, 23064, 4555, 19518, 4223, 6567, 12958, 4256, 23511, 24408, 5112, 16748, 26908, 18564, 2352, 5688, 6790, 6791, 3610, 19195, 13435, 30241, 17489, 19560, 13434, 24975, 32421, 19020, 30724, 3533, 3076, 4183, 2814, 16767, 8160, 30572, 19479, 16632, 18810, 16263, 16718, 18009, 3528, 3532, 27181, 491, 31115, 7879, 2699, 2684, 2688, 27057, 28871, 15199, 14737, 5520, 23606, 7976, 4562, 24342, 5169, 4899, 15176, 2842, 22099, 20082, 26568, 16664, 25248, 3952, 23244, 8359, 18581, 28807, 2816, 20463, 18255, 2113, 10856, 23522, 16713, 4893, 5620, 3097, 7978, 5570, 3096, 28827, 4182, 4266, 16683, 26398, 2137, 4587, 16670, 2845, 3091, 3298, 4600, 2698, 5820, 4232, 1692, 16716, 19561, 2839, 2844, 30731, 18905, 1464, 6930, 28682, 3491, 25245, 2483, 15012, 2401, 1697, 3589, 3588, 4231, 5748, 8305, 5411, 5870, 8362, 29511, 19520, 27147, 27143, 1297, 5129, 19239, 18010, 2394, 4888, 28791, 16620, 2357,
 
 				-- Battlemaster and Arenamaster
-				12197, 29318, 15006, 26007, 857, 907, 35007, 19859, 3890, 7029, 35023, 15008, 34999, 15972, 34955, 7885, 34991, 19905, 14981, 14982, 19907, 347, 7427, 7410, 20271, 19855, 29568, 19858, 2302, 14942, 17506, 15007, 34983, 5238, 29234, 32332, 1037, 10360, 2804, 30578, 20388, 30171, 5118, 18439, 32333, 20120, 19908, 30581, 20118, 14879, 16711, 20381, 35024, 22516, 25991, 20200, 7314, 20269, 34895, 35027, 30583, 18895, 20272, 30584, 35017, 19811, 20386, 34971, 20273, 34972, 19915, 20274, 30587, 20390, 19923, 20497, 34976, 12198, 19925, 16695, 20362, 35022, 20499, 14623, 16696, 20374, 21235, 19909, 40413, 20382, 32330, 20119, 30579, 35000, 34985, 30580, 35001, 35025, 35002, 17507, 20383, 34437, 35026, 20384, 19910, 35008, 20385, 19912, 29533, 30586, 35019, 34993, 35020, 16694, 30231, 19906, 34986, 34987, 19911, 34989, 30590, 35021, 30610, 30582, 34988, 20276, 34978, 34973, 34997, 34998
+				12197, 29318, 15006, 26007, 857, 907, 35007, 19859, 3890, 7029, 35023, 15008, 34999, 15972, 34955, 7885, 34991, 19905, 14981, 14982, 19907, 347, 7427, 7410, 20271, 19855, 29568, 19858, 2302, 14942, 17506, 15007, 34983, 5238, 29234, 32332, 1037, 10360, 2804, 30578, 20388, 30171, 5118, 18439, 32333, 20120, 19908, 30581, 20118, 14879, 16711, 20381, 35024, 22516, 25991, 20200, 7314, 20269, 34895, 35027, 30583, 18895, 20272, 30584, 35017, 19811, 20386, 34971, 20273, 34972, 19915, 20274, 30587, 20390, 19923, 20497, 34976, 12198, 19925, 16695, 20362, 35022, 20499, 14623, 16696, 20374, 21235, 19909, 40413, 20382, 32330, 20119, 30579, 35000, 34985, 30580, 35001, 35025, 35002, 17507, 20383, 34437, 35026, 20384, 19910, 35008, 20385, 19912, 29533, 30586, 35019, 34993, 35020, 16694, 30231, 19906, 34986, 34987, 19911, 34989, 30590, 35021, 30610, 30582, 34988, 20276, 34978, 34973, 34997, 34998,
+
+				-- Auctioneers
+				44866, -- Added manually (Orgrimmar)
+				8719, -- Added manually (Stormwind)
 
 			}
 
@@ -1902,7 +1922,7 @@
 						if progItem.objectType == "item" then
 							local name, texture, numItems = GetQuestItemInfo("required", i)
 							if name then
-								local itemID = GetItemInfoInstant(name)
+								local itemID = C_Item.GetItemInfoInstant(name)
 								if itemID then
 									if itemID == 9999999999 then -- Reserved for future use
 										return true
@@ -1931,141 +1951,141 @@
 					-- Battlemasters
 					elseif title == L["Concerted Efforts"] or title == L["For Great Honor"] then
 						-- Requires 3 Alterac Valley Mark of Honor, 3 Arathi Basin Mark of Honor, 3 Warsong Gulch Mark of Honor (must be before other Mark of Honor quests)
-						if GetItemCount(20560) >= 3 and GetItemCount(20559) >= 3 and GetItemCount(20558) >= 3 then return true end
+						if C_Item.GetItemCount(20560) >= 3 and C_Item.GetItemCount(20559) >= 3 and C_Item.GetItemCount(20558) >= 3 then return true end
 					elseif title == L["Remember Alterac Valley!"] or title == L["Invaders of Alterac Valley"] then
 						-- Requires 3 Alterac Valley Mark of Honor
-						if GetItemCount(20560) >= 3 then return true end
+						if C_Item.GetItemCount(20560) >= 3 then return true end
 					elseif title == L["Claiming Arathi Basin"] or title == L["Conquering Arathi Basin"] then
 						-- Requires 3 Arathi Basin Mark of Honor
-						if GetItemCount(20559) >= 3 then return true end
+						if C_Item.GetItemCount(20559) >= 3 then return true end
 					elseif title == L["Fight for Warsong Gulch"] or title == L["Battle of Warsong Gulch"] then
 						-- Requires 3 Warsong Gulch Mark of Honor
-						if GetItemCount(20558) >= 3 then return true end
+						if C_Item.GetItemCount(20558) >= 3 then return true end
 
 					-- Cloth quartermasters
 					elseif title == L["A Donation of Wool"] then
 						-- Requires 60 Wool Cloth
-						if GetItemCount(2592) >= 60 then return true end
+						if C_Item.GetItemCount(2592) >= 60 then return true end
 					elseif title == L["A Donation of Silk"] then
 						-- Requires 60 Silk Cloth
-						if GetItemCount(4306) >= 60 then return true end
+						if C_Item.GetItemCount(4306) >= 60 then return true end
 					elseif title == L["A Donation of Mageweave"] then
 						-- Requires 60 Mageweave
-						if GetItemCount(4338) >= 60 then return true end
+						if C_Item.GetItemCount(4338) >= 60 then return true end
 					elseif title == L["A Donation of Runecloth"] then
 						-- Requires 60 Runecloth
-						if GetItemCount(14047) >= 60 then return true end
+						if C_Item.GetItemCount(14047) >= 60 then return true end
 					elseif title == L["Additional Runecloth"] then
 						-- Requires 20 Runecloth
-						if GetItemCount(14047) >= 20 then return true end
+						if C_Item.GetItemCount(14047) >= 20 then return true end
 					elseif title == L["Gurubashi, Vilebranch, and Witherbark Coins"] then
 						-- Requires 1 Gurubashi Coin, 1 Vilebranch Coin, 1 Witherbark Coin
-						if GetItemCount(19701) >= 1 and GetItemCount(19702) >= 1 and GetItemCount(19703) >= 1 then return true end
+						if C_Item.GetItemCount(19701) >= 1 and C_Item.GetItemCount(19702) >= 1 and C_Item.GetItemCount(19703) >= 1 then return true end
 					elseif title == L["Sandfury, Skullsplitter, and Bloodscalp Coins"] then
 						-- Requires 1 Sandfury Coin, 1 Skullsplitter Coin, 1 Bloodscalp Coin
-						if GetItemCount(19704) >= 1 and GetItemCount(19705) >= 1 and GetItemCount(19706) >= 1 then return true end
+						if C_Item.GetItemCount(19704) >= 1 and C_Item.GetItemCount(19705) >= 1 and C_Item.GetItemCount(19706) >= 1 then return true end
 					elseif title == L["Zulian, Razzashi, and Hakkari Coins"] then
 						-- Requires 1 Zulian Coin, 1 Razzashi Coin, 1 Hakkari Coin
-						if GetItemCount(19698) >= 1 and GetItemCount(19699) >= 1 and GetItemCount(19700) >= 1 then return true end
+						if C_Item.GetItemCount(19698) >= 1 and C_Item.GetItemCount(19699) >= 1 and C_Item.GetItemCount(19700) >= 1 then return true end
 					elseif title == L["Frostsaber E'ko"] then
 						-- Requires 3 Frostsaber E'ko
-						if GetItemCount(12430) >= 3 then return true end
+						if C_Item.GetItemCount(12430) >= 3 then return true end
 					elseif title == L["Winterfall E'ko"] then
 						-- Requires 3 Winterfall E'ko
-						if GetItemCount(12431) >= 3 then return true end
+						if C_Item.GetItemCount(12431) >= 3 then return true end
 					elseif title == L["Shardtooth E'ko"] then
 						-- Requires 3 Shardtooth E'ko
-						if GetItemCount(12432) >= 3 then return true end
+						if C_Item.GetItemCount(12432) >= 3 then return true end
 					elseif title == L["Wildkin E'ko"] then
 						-- Requires 3 Wildkin E'ko
-						if GetItemCount(12433) >= 3 then return true end
+						if C_Item.GetItemCount(12433) >= 3 then return true end
 					elseif title == L["Chillwind E'ko"] then
 						-- Requires 3 Chillwind E'ko
-						if GetItemCount(12434) >= 3 then return true end
+						if C_Item.GetItemCount(12434) >= 3 then return true end
 					elseif title == L["Ice Thistle E'ko"] then
 						-- Requires 3 Ice Thistle E'ko
-						if GetItemCount(12435) >= 3 then return true end
+						if C_Item.GetItemCount(12435) >= 3 then return true end
 					elseif title == L["Frostmaul E'ko"] then
 						-- Requires 3 Ice Thistle E'ko
-						if GetItemCount(12436) >= 3 then return true end
+						if C_Item.GetItemCount(12436) >= 3 then return true end
 					elseif title == L["Marks of Kil'jaeden"] or title == L["More Marks of Kil'jaeden"] then
 						-- Requires 10 More Marks of Kil'jaeden
-						if GetItemCount(29425) >= 10 then return true end
+						if C_Item.GetItemCount(29425) >= 10 then return true end
 					elseif title == L["Single Mark of Sargeras"] then
 						-- Requires 1 Marks of Sargeras (if more than 10, leave for More Marks of Sargeras)
-						if GetItemCount(30809) >= 1 and GetItemCount(30809) < 10 then return true end
+						if C_Item.GetItemCount(30809) >= 1 and C_Item.GetItemCount(30809) < 10 then return true end
 					elseif title == L["More Marks of Sargeras"] then
 						-- Requires 10 Marks of Sargeras
-						if GetItemCount(30809) >= 10 then return true end
+						if C_Item.GetItemCount(30809) >= 10 then return true end
 					elseif title == L["Firewing Signets"] or title == L["More Firewing Signets"] then
 						-- Requires 10 Firewing Signets
-						if GetItemCount(29426) >= 10 then return true end
+						if C_Item.GetItemCount(29426) >= 10 then return true end
 					elseif title == L["Single Sunfury Signet"] then
 						-- Requires 1 Sunfury Signet (if more than 10, leave for More Sunfury Signets)
-						if GetItemCount(30810) >= 1 and GetItemCount(30810) < 10 then return true end
+						if C_Item.GetItemCount(30810) >= 1 and C_Item.GetItemCount(30810) < 10 then return true end
 					elseif title == L["More Sunfury Signets"] then
 						-- Requires 10 Sunfury Signets
-						if GetItemCount(30810) >= 10 then return true end
+						if C_Item.GetItemCount(30810) >= 10 then return true end
 
 					-- Darkmoon Faire (Rinling)
 					elseif title == L["Copper Modulator"] then
-						if GetItemCount(4363) >= 5 then return true end
+						if C_Item.GetItemCount(4363) >= 5 then return true end
 					elseif title == L["Whirring Bronze Gizmo"] then
-						if GetItemCount(4375) >= 7 then return true end
+						if C_Item.GetItemCount(4375) >= 7 then return true end
 					elseif title == L["Green Fireworks"] then
-						if GetItemCount(9313) >= 36 then return true end
+						if C_Item.GetItemCount(9313) >= 36 then return true end
 					elseif title == L["Mechanical Repair Kits"] then
-						if GetItemCount(11590) >= 6 then return true end
+						if C_Item.GetItemCount(11590) >= 6 then return true end
 					elseif title == L["Thorium Widget"] then
-						if GetItemCount(15994) >= 6 then return true end
+						if C_Item.GetItemCount(15994) >= 6 then return true end
 					elseif title == L["More Thorium Widgets"] then
-						if GetItemCount(15994) >= 6 then return true end
+						if C_Item.GetItemCount(15994) >= 6 then return true end
 
 					-- Darkmoon Faire (Yebb Neblegear)
 					elseif title == L["Small Furry Paws"] then
-						if GetItemCount(5134) >= 5 then return true end
+						if C_Item.GetItemCount(5134) >= 5 then return true end
 					elseif title == L["Evil Bat Eyes"] then
-						if GetItemCount(11404) >= 10 then return true end
+						if C_Item.GetItemCount(11404) >= 10 then return true end
 					elseif title == L["Glowing Scorpid Blood"] then
-						if GetItemCount(19933) >= 10 then return true end
+						if C_Item.GetItemCount(19933) >= 10 then return true end
 					elseif title == L["More Bat Eyes"] then
-						if GetItemCount(11404) >= 10 then return true end
+						if C_Item.GetItemCount(11404) >= 10 then return true end
 					elseif title == L["More Glowing Scorpid Blood"] then
-						if GetItemCount(19933) >= 10 then return true end
+						if C_Item.GetItemCount(19933) >= 10 then return true end
 					elseif title == L["Soft Bushy Tails"] then
-						if GetItemCount(4582) >= 5 then return true end
+						if C_Item.GetItemCount(4582) >= 5 then return true end
 					elseif title == L["Torn Bear Pelts"] then
-						if GetItemCount(11407) >= 5 then return true end
+						if C_Item.GetItemCount(11407) >= 5 then return true end
 					elseif title == L["Vibrant Plumes"] then
-						if GetItemCount(5117) >= 5 then return true end
+						if C_Item.GetItemCount(5117) >= 5 then return true end
 
 					-- Darkmoon Faire (Chronos)
 					elseif title == L["Armor Kits"] then
-						if GetItemCount(15564) >= 8 then return true end
+						if C_Item.GetItemCount(15564) >= 8 then return true end
 					elseif title == L["Carnival Boots"] then
-						if GetItemCount(2309) >= 3 then return true end
+						if C_Item.GetItemCount(2309) >= 3 then return true end
 					elseif title == L["Carnival Jerkins"] then
-						if GetItemCount(2314) >= 3 then return true end
+						if C_Item.GetItemCount(2314) >= 3 then return true end
 					elseif title == L["Crocolisk Boy and the Bearded Murloc"] then
-						if GetItemCount(8185) >= 1 then return true end
+						if C_Item.GetItemCount(8185) >= 1 then return true end
 					elseif title == L["More Armor Kits"] then
-						if GetItemCount(15564) >= 8 then return true end
+						if C_Item.GetItemCount(15564) >= 8 then return true end
 					elseif title == L["The World's Largest Gnome!"] then
-						if GetItemCount(5739) >= 3 then return true end
+						if C_Item.GetItemCount(5739) >= 3 then return true end
 
 					-- Darkmoon Faire (Kerri Hicks)
 					elseif title == L["Big Black Mace"] then
-						if GetItemCount(7945) >= 1 then return true end
+						if C_Item.GetItemCount(7945) >= 1 then return true end
 					elseif title == L["Coarse Weightstone"] then
-						if GetItemCount(3240) >= 10 then return true end
+						if C_Item.GetItemCount(3240) >= 10 then return true end
 					elseif title == L["Green Iron Bracers"] then
-						if GetItemCount(3835) >= 3 then return true end
+						if C_Item.GetItemCount(3835) >= 3 then return true end
 					elseif title == L["Heavy Grinding Stone"] then
-						if GetItemCount(3486) >= 7 then return true end
+						if C_Item.GetItemCount(3486) >= 7 then return true end
 					elseif title == L["More Dense Grinding Stones"] then
-						if GetItemCount(12644) >= 8 then return true end
+						if C_Item.GetItemCount(12644) >= 8 then return true end
 					elseif title == L["Rituals of Strength"] then
-						if GetItemCount(12644) >= 8 then return true end
+						if C_Item.GetItemCount(12644) >= 8 then return true end
 
 					else return true
 					end
@@ -2461,7 +2481,7 @@
 						if tipList[i] then
 							tipList[i] = tonumber(tipList[i])
 							if tipList[i] and tipList[i] > 0 and tipList[i] < 999999999 then
-								local void, tLink, Rarity, void, void, void, void, void, void, void, ItemPrice = GetItemInfo(tipList[i])
+								local void, tLink, Rarity, void, void, void, void, void, void, void, ItemPrice = C_Item.GetItemInfo(tipList[i])
 								if tLink and tLink ~= "" then
 									local linkCol = string.sub(tLink, 1, 10)
 									if linkCol then
@@ -2573,7 +2593,7 @@
 					for BagSlot = 1, C_Container.GetContainerNumSlots(BagID) do
 						CurrentItemLink = C_Container.GetContainerItemLink(BagID, BagSlot)
 						if CurrentItemLink then
-							void, void, Rarity, void, void, void, void, void, void, void, ItemPrice = GetItemInfo(CurrentItemLink)
+							void, void, Rarity, void, void, void, void, void, void, void, ItemPrice = C_Item.GetItemInfo(CurrentItemLink)
 							-- Don't sell whitelisted items
 							local itemID = GetItemInfoFromHyperlink(CurrentItemLink)
 							if itemID and whiteList[itemID] then
@@ -2614,7 +2634,7 @@
 				if SoldCount == 0 or SellJunkTicker and SellJunkTicker._remainingIterations == 1 then
 					StopSelling()
 					if totalPrice > 0 and LeaPlusLC["AutoSellShowSummary"] == "On" then
-						LeaPlusLC:Print(L["Sold junk for"] .. " " .. GetCoinText(totalPrice) .. ".")
+						LeaPlusLC:Print(L["Sold junk for"] .. " " .. C_CurrencyInfo.GetCoinText(totalPrice) .. ".")
 					end
 				end
 
@@ -2695,7 +2715,7 @@
 						end
 						-- Show cost summary
 						if LeaPlusLC["AutoRepairShowSummary"] == "On" then
-							LeaPlusLC:Print(L["Repaired for"] .. " " .. GetCoinText(RepairCost) .. ".")
+							LeaPlusLC:Print(L["Repaired for"] .. " " .. C_CurrencyInfo.GetCoinText(RepairCost) .. ".")
 						end
 					end
 				end
@@ -3207,11 +3227,9 @@
 			cButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
 			cButton:SetSize(32, 32)
 
-			-- For Cataclysm Classic, there is an expand button
-			if LeaPlusLC.NewPatch then
-				cButton:Hide()
-				cButton = CharacterFrameExpandButton
-			end
+			-- Hide expand button
+			cButton:Hide()
+			cButton = CharacterFrameExpandButton
 
 			-- Create durability tables
 			local Slots = {"HeadSlot", "ShoulderSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "MainHandSlot", "SecondaryHandSlot", "RangedSlot"}
@@ -4233,10 +4251,10 @@
 				-- Function to make tooltip string with list of addons
 				local function MakeAddonString()
 					local msg = ""
-					local numAddons = GetNumAddOns()
+					local numAddons = C_AddOns.GetNumAddOns()
 					for i = 1, numAddons do
-						if IsAddOnLoaded(i) then
-							local name = GetAddOnInfo(i)
+						if C_AddOns.IsAddOnLoaded(i) then
+							local name = C_AddOns.GetAddOnInfo(i)
 							if name and _G["LibDBIcon10_" .. name] then -- Only list LibDBIcon buttons
 								msg = msg .. name .. ", "
 							end
@@ -5071,7 +5089,7 @@
 
 			-- Function to style and position the clock
 			local function SetMiniClock(firstRun)
-				if IsAddOnLoaded("Blizzard_TimeManager") then
+				if C_AddOns.IsAddOnLoaded("Blizzard_TimeManager") then
 					if LeaPlusLC["SquareMinimap"] == "On" and firstRun == true then
 						local regions = {TimeManagerClockButton:GetRegions()}
 						regions[1]:Hide()
@@ -5089,7 +5107,7 @@
 			end
 
 			-- Run function when Blizzard addon is loaded
-			if IsAddOnLoaded("Blizzard_TimeManager") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_TimeManager") then
 				SetMiniClock(true)
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -5749,69 +5767,65 @@
 
 		if LeaPlusLC["ShowReadyTimer"] == "On" then
 
-			if LeaPlusLC.NewPatch then
+			-- Dungeons and Raids
+			do
 
-				-- Dungeons and Raids
-				do
+				-- Declare variables
+				local duration, barTime = 40, -1
+				local t = duration
 
-					-- Declare variables
-					local duration, barTime = 40, -1
-					local t = duration
+				-- Create status bar below dungeon ready popup
+				local bar = CreateFrame("StatusBar", nil, LFGDungeonReadyPopup)
+				bar:SetPoint("TOPLEFT", LFGDungeonReadyPopup, "BOTTOMLEFT", 0, -5)
+				bar:SetPoint("TOPRIGHT", LFGDungeonReadyPopup, "BOTTOMRIGHT", 0, -5)
+				bar:SetHeight(5)
+				bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
+				bar:SetStatusBarColor(1.0, 0.85, 0.0)
+				bar:SetMinMaxValues(0, duration)
 
-					-- Create status bar below dungeon ready popup
-					local bar = CreateFrame("StatusBar", nil, LFGDungeonReadyPopup)
-					bar:SetPoint("TOPLEFT", LFGDungeonReadyPopup, "BOTTOMLEFT", 0, -5)
-					bar:SetPoint("TOPRIGHT", LFGDungeonReadyPopup, "BOTTOMRIGHT", 0, -5)
-					bar:SetHeight(5)
-					bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-					bar:SetStatusBarColor(1.0, 0.85, 0.0)
-					bar:SetMinMaxValues(0, duration)
+				-- Create status bar text
+				local text = bar:CreateFontString(nil, "ARTWORK")
+				text:SetFontObject("GameFontNormalLarge")
+				text:SetTextColor(1.0, 0.85, 0.0)
+				text:SetPoint("TOP", 0, -10)
 
-					-- Create status bar text
-					local text = bar:CreateFontString(nil, "ARTWORK")
-					text:SetFontObject("GameFontNormalLarge")
-					text:SetTextColor(1.0, 0.85, 0.0)
-					text:SetPoint("TOP", 0, -10)
+				-- Update bar as timer counts down
+				bar:SetScript("OnUpdate", function(self, elapsed)
+					t = t - elapsed
+					if barTime >= 1 or barTime == -1 then
+						self:SetValue(t)
+						text:SetText(SecondsToTime(floor(t + 0.5)))
+						barTime = 0
+					end
+					barTime = barTime + elapsed
+				end)
 
-					-- Update bar as timer counts down
-					bar:SetScript("OnUpdate", function(self, elapsed)
-						t = t - elapsed
-						if barTime >= 1 or barTime == -1 then
-							self:SetValue(t)
-							text:SetText(SecondsToTime(floor(t + 0.5)))
-							barTime = 0
-						end
-						barTime = barTime + elapsed
-					end)
-
-					-- Show frame when dungeon ready frame shows
-					local frame = CreateFrame("FRAME")
-					frame:RegisterEvent("LFG_PROPOSAL_SHOW")
-					frame:RegisterEvent("LFG_PROPOSAL_FAILED")
-					frame:RegisterEvent("LFG_PROPOSAL_SUCCEEDED")
-					frame:SetScript("OnEvent", function(self, event)
-						if event == "LFG_PROPOSAL_SHOW" then
-							t = duration
-							barTime = -1
-							bar:Show()
-							-- Hide existing timer bars (such as BigWigs)
-							local children = {LFGDungeonReadyPopup:GetChildren()}
-							if children then
-								for i, child in ipairs(children) do
-									if child ~= bar then
-										local objType = child:GetObjectType()
-										if objType and objType == "StatusBar" then
-											child:Hide()
-										end
+				-- Show frame when dungeon ready frame shows
+				local frame = CreateFrame("FRAME")
+				frame:RegisterEvent("LFG_PROPOSAL_SHOW")
+				frame:RegisterEvent("LFG_PROPOSAL_FAILED")
+				frame:RegisterEvent("LFG_PROPOSAL_SUCCEEDED")
+				frame:SetScript("OnEvent", function(self, event)
+					if event == "LFG_PROPOSAL_SHOW" then
+						t = duration
+						barTime = -1
+						bar:Show()
+						-- Hide existing timer bars (such as BigWigs)
+						local children = {LFGDungeonReadyPopup:GetChildren()}
+						if children then
+							for i, child in ipairs(children) do
+								if child ~= bar then
+									local objType = child:GetObjectType()
+									if objType and objType == "StatusBar" then
+										child:Hide()
 									end
 								end
 							end
-						else
-							bar:Hide()
 						end
-					end)
-
-				end
+					else
+						bar:Hide()
+					end
+				end)
 
 			end
 
@@ -6220,14 +6234,8 @@
 				if LeaPlusLC["VanityAltLayout"] == "On" then
 					-- Alternative layout
 					LeaPlusCB["ShowHelm"].f:SetText(L["H"])
-
-					if LeaPlusLC.NewPatch then
-						LeaPlusCB["ShowHelm"]:ClearAllPoints()
-						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 264, -348)
-					else
-						LeaPlusCB["ShowHelm"]:ClearAllPoints()
-						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 275, -224)
-					end
+					LeaPlusCB["ShowHelm"]:ClearAllPoints()
+					LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 264, -348)
 					LeaPlusCB["ShowHelm"]:SetHitRectInsets(-LeaPlusCB["ShowHelm"].f:GetStringWidth() + 4, 3, 0, 0)
 					LeaPlusCB["ShowHelm"].f:ClearAllPoints()
 					LeaPlusCB["ShowHelm"].f:SetPoint("RIGHT", LeaPlusCB["ShowHelm"], "LEFT", 4, 0)
@@ -6240,28 +6248,15 @@
 					LeaPlusCB["ShowCloak"]:SetHitRectInsets(-LeaPlusCB["ShowCloak"].f:GetStringWidth() + 4, 3, 0, 0)
 				else
 					-- Default layout
-					if LeaPlusLC.NewPatch then
-						LeaPlusCB["ShowHelm"].f:SetText(L["H"])
-						LeaPlusCB["ShowHelm"]:ClearAllPoints()
-						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 52, -366)
-					else
-						LeaPlusCB["ShowHelm"].f:SetText(L["Helm"])
-						LeaPlusCB["ShowHelm"]:ClearAllPoints()
-						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 65, -246)
-					end
+					LeaPlusCB["ShowHelm"].f:SetText(L["H"])
+					LeaPlusCB["ShowHelm"]:ClearAllPoints()
+					LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 52, -366)
 					LeaPlusCB["ShowHelm"]:SetHitRectInsets(3, -LeaPlusCB["ShowHelm"].f:GetStringWidth(), 0, 0)
 					LeaPlusCB["ShowHelm"].f:ClearAllPoints()
 					LeaPlusCB["ShowHelm"].f:SetPoint("LEFT", LeaPlusCB["ShowHelm"], "RIGHT", 0, 0)
-
-					if LeaPlusLC.NewPatch then
-						LeaPlusCB["ShowCloak"].f:SetText(L["C"])
-						LeaPlusCB["ShowCloak"]:ClearAllPoints()
-						LeaPlusCB["ShowCloak"]:SetPoint("LEFT", LeaPlusCB["ShowHelm"].f, "RIGHT", 10, 0)
-					else
-						LeaPlusCB["ShowCloak"].f:SetText(L["Cloak"])
-						LeaPlusCB["ShowCloak"]:ClearAllPoints()
-						LeaPlusCB["ShowCloak"]:SetPoint("TOPLEFT", 275, -246)
-					end
+					LeaPlusCB["ShowCloak"].f:SetText(L["C"])
+					LeaPlusCB["ShowCloak"]:ClearAllPoints()
+					LeaPlusCB["ShowCloak"]:SetPoint("LEFT", LeaPlusCB["ShowHelm"].f, "RIGHT", 10, 0)
 					LeaPlusCB["ShowCloak"]:SetHitRectInsets(-LeaPlusCB["ShowCloak"].f:GetStringWidth(), 3, 0, 0)
 					LeaPlusCB["ShowCloak"].f:ClearAllPoints()
 					LeaPlusCB["ShowCloak"].f:SetPoint("RIGHT", LeaPlusCB["ShowCloak"], "LEFT", 0, 0)
@@ -6369,22 +6364,14 @@
 				LeaPlusCB["DressupFasterZoom"].f:SetFormattedText("%.0f%%", LeaPlusLC["DressupFasterZoom"] * 100)
 			end)
 
-			-- Hide options if not Cataclysm Classic
-			if not LeaPlusLC.NewPatch then
-				LeaPlusCB["DressupFasterZoom"]:Hide()
-				LeaPlusCB["DressupWiderPreview"]:Hide()
-			end
-
 			-- Set zoom speed when character frame model is zoomed
-			if LeaPlusLC.NewPatch then
-				CharacterModelScene:SetScript("OnMouseWheel", function(self, delta)
-					for i = 1, LeaPlusLC["DressupFasterZoom"] do
-						if CharacterModelScene.activeCamera then
-							CharacterModelScene.activeCamera:OnMouseWheel(delta)
-						end
+			CharacterModelScene:SetScript("OnMouseWheel", function(self, delta)
+				for i = 1, LeaPlusLC["DressupFasterZoom"] do
+					if CharacterModelScene.activeCamera then
+						CharacterModelScene.activeCamera:OnMouseWheel(delta)
 					end
-				end)
-			end
+				end
+			end)
 
 			-- Help button hidden
 			DressupPanel.h:Hide()
@@ -6748,301 +6735,171 @@
 			-- Controls
 			----------------------------------------------------------------------
 
-			-- Hide model rotation controls
-			if LeaPlusLC.NewPatch then
-				-- Hide character frame controls
-				CharacterModelScene.ControlFrame:HookScript("OnShow", function()
-					CharacterModelScene.ControlFrame:Hide()
-				end)
-				-- Hide controls for dressing room
-				DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
-				DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
-				SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
-			else
-				CharacterModelFrameRotateLeftButton:HookScript("OnShow", CharacterModelFrameRotateLeftButton.Hide)
-				CharacterModelFrameRotateRightButton:HookScript("OnShow", CharacterModelFrameRotateRightButton.Hide)
-				DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
-				DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
-				SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
-			end
+			-- Hide character frame controls
+			CharacterModelScene.ControlFrame:HookScript("OnShow", function()
+				CharacterModelScene.ControlFrame:Hide()
+			end)
+			-- Hide controls for dressing room
+			DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
+			DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
+			SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
 
 			----------------------------------------------------------------------
 			-- Wardrobe and inspect system
 			----------------------------------------------------------------------
 
-			if LeaPlusLC.NewPatch then
-
-				-- Wardrobe (used by transmogrifier NPC) and mount journal
-				local function DoBlizzardCollectionsFunc()
-					-- Hide positioning controls for mount journal
-					MountJournal.MountDisplay.ModelScene.RotateLeftButton:Hide()
-					MountJournal.MountDisplay.ModelScene.RotateRightButton:Hide()
-					-- Hide positioning controls for pet journal
-					PetJournalPetCard.modelScene.RotateLeftButton:Hide()
-					PetJournalPetCard.modelScene.RotateRightButton:Hide()
-					-- Hide positioning controls for wardrobe
-					WardrobeTransmogFrameControlFrame:HookScript("OnShow", WardrobeTransmogFrameControlFrame.Hide)
-					-- Set zoom speed for mount journal
-					MountJournal.MountDisplay.ModelScene:SetScript("OnMouseWheel", function(self, delta)
-						for i = 1, LeaPlusLC["DressupFasterZoom"] do
-							if MountJournal.MountDisplay.ModelScene.activeCamera then
-								MountJournal.MountDisplay.ModelScene.activeCamera:OnMouseWheel(delta)
-							end
+			-- Wardrobe (used by transmogrifier NPC) and mount journal
+			local function DoBlizzardCollectionsFunc()
+				-- Hide positioning controls for mount journal
+				MountJournal.MountDisplay.ModelScene.RotateLeftButton:Hide()
+				MountJournal.MountDisplay.ModelScene.RotateRightButton:Hide()
+				-- Hide positioning controls for pet journal
+				PetJournalPetCard.modelScene.RotateLeftButton:Hide()
+				PetJournalPetCard.modelScene.RotateRightButton:Hide()
+				-- Hide positioning controls for wardrobe
+				WardrobeTransmogFrameControlFrame:HookScript("OnShow", WardrobeTransmogFrameControlFrame.Hide)
+				-- Set zoom speed for mount journal
+				MountJournal.MountDisplay.ModelScene:SetScript("OnMouseWheel", function(self, delta)
+					for i = 1, LeaPlusLC["DressupFasterZoom"] do
+						if MountJournal.MountDisplay.ModelScene.activeCamera then
+							MountJournal.MountDisplay.ModelScene.activeCamera:OnMouseWheel(delta)
 						end
-					end)
-					-- Set zoom speed for pet journal
-					PetJournalPetCard.modelScene:SetScript("OnMouseWheel", function(self, delta)
-						for i = 1, LeaPlusLC["DressupFasterZoom"] do
-							if PetJournalPetCard.modelScene.activeCamera then
-								PetJournalPetCard.modelScene.activeCamera:OnMouseWheel(delta)
-							end
-						end
-					end)
-					-- Wider transmogrifier character preview
-					if LeaPlusLC["DressupWiderPreview"] == "On" then
-
-						local width = 1200 -- Default is 965
-						WardrobeFrame:SetWidth(width)
-						WardrobeTransmogFrame:SetWidth(width - 665)
-						WardrobeTransmogFrame.Inset.BG:SetWidth(width - 671)
-						WardrobeTransmogFrame.Model:SetWidth(width - 671)
-
-						-- Left slots column
-						WardrobeTransmogFrame.HeadButton:ClearAllPoints()
-						WardrobeTransmogFrame.HeadButton:SetPoint("TOPLEFT", 15, -40)
-
-						-- Right slots column
-						WardrobeTransmogFrame.HandsButton:ClearAllPoints()
-						WardrobeTransmogFrame.HandsButton:SetPoint("TOPRIGHT", -15, -60)
-
-						-- Weapons
-						WardrobeTransmogFrame.SecondaryHandButton:ClearAllPoints()
-						WardrobeTransmogFrame.SecondaryHandButton:SetPoint("TOP", WardrobeTransmogFrame.FeetButton, "BOTTOM", 0, -96)
-						WardrobeTransmogFrame.MainHandButton:ClearAllPoints()
-						WardrobeTransmogFrame.MainHandButton:SetPoint("BOTTOM", WardrobeTransmogFrame.SecondaryHandButton, "TOP", 0, 30)
-
-					else
-
-						-- Wider character preview is disabled so move the right column up
-						WardrobeTransmogFrame.HandsButton:ClearAllPoints()
-						WardrobeTransmogFrame.HandsButton:SetPoint("TOPRIGHT", -6, -60)
-
-						-- Show weapons in the right column
-						WardrobeTransmogFrame.SecondaryHandButton:ClearAllPoints()
-						WardrobeTransmogFrame.SecondaryHandButton:SetPoint("TOP", WardrobeTransmogFrame.FeetButton, "BOTTOM", 0, -96)
-						WardrobeTransmogFrame.MainHandButton:ClearAllPoints()
-						WardrobeTransmogFrame.MainHandButton:SetPoint("BOTTOM", WardrobeTransmogFrame.SecondaryHandButton, "TOP", 0, 30)
-
 					end
-
-					----------------------------------------------------------------------
-					-- Transmogrify animation slider
-					----------------------------------------------------------------------
-
-					do
-
-						local transmogAnimTable = {0, 4, 5, 143, 119, 26, 25, 27, 28, 108, 120, 51, 124, 52, 125, 126, 62, 63, 41, 42, 43, 44, 132, 38, 14, 115, 193, 48, 110, 109, 134, 197, 0}
-						local transmogLastSetting
-
-						LeaPlusLC["TransmogAnim"] = 0 -- Defined here since the setting is not saved
-						LeaPlusLC:MakeSL(WardrobeTransmogFrame, "TransmogAnim", "", 1, #transmogAnimTable - 1, 1, 356, -92, "%.0f")
-						LeaPlusCB["TransmogAnim"]:ClearAllPoints()
-						LeaPlusCB["TransmogAnim"]:SetPoint("BOTTOM", 0, 6)
-						if LeaPlusLC["DressupWiderPreview"] == "On" then
-							LeaPlusCB["TransmogAnim"]:SetWidth(240)
-						else
-							LeaPlusCB["TransmogAnim"]:SetWidth(216)
+				end)
+				-- Set zoom speed for pet journal
+				PetJournalPetCard.modelScene:SetScript("OnMouseWheel", function(self, delta)
+					for i = 1, LeaPlusLC["DressupFasterZoom"] do
+						if PetJournalPetCard.modelScene.activeCamera then
+							PetJournalPetCard.modelScene.activeCamera:OnMouseWheel(delta)
 						end
-						LeaPlusCB["TransmogAnim"]:SetFrameLevel(5)
-						LeaPlusCB["TransmogAnim"]:HookScript("OnValueChanged", function(self, setting)
-							local playerActor = WardrobeTransmogFrame.Model
-							setting = math.floor(setting + 0.5)
-							if playerActor and setting ~= lastSetting then
-								lastSetting = setting
-								playerActor:SetAnimation(transmogAnimTable[setting], 0, 1, 1)
-							end
-						end)
-
-						-- Function to show animation control
-						local function SetAnimationSlider()
-							if LeaPlusLC["DressupTransmogAnim"] == "On" then
-								LeaPlusCB["TransmogAnim"]:Show()
-							else
-								LeaPlusCB["TransmogAnim"]:Hide()
-							end
-							LeaPlusCB["TransmogAnim"]:SetValue(1)
-						end
-
-						-- Set animation control with option, startup, preset and reset
-						LeaPlusCB["DressupTransmogAnim"]:HookScript("OnClick", SetAnimationSlider)
-						SetAnimationSlider()
-						LeaPlusCB["EnhanceDressupBtn"]:HookScript("OnClick", function()
-							if IsShiftKeyDown() and IsControlKeyDown() then
-								LeaPlusLC["DressupTransmogAnim"] = "On"
-								SetAnimationSlider()
-							end
-						end)
-						DressupPanel.r:HookScript("OnClick", function()
-							LeaPlusLC["DressupTransmogAnim"] = "Off"
-							SetAnimationSlider()
-							DressupPanel:Hide(); DressupPanel:Show()
-						end)
-
-						-- Reset animation when slider is shown
-						LeaPlusCB["TransmogAnim"]:HookScript("OnShow", SetAnimationSlider)
-
-						-- Skin slider for ElvUI
-						if LeaPlusLC.ElvUI then
-							_G.LeaPlusGlobalTransmogAnim = LeaPlusCB["TransmogAnim"]
-							LeaPlusLC.ElvUI:GetModule("Skins"):HandleSliderFrame(_G.LeaPlusGlobalTransmogAnim, false)
-						end
-
 					end
+				end)
+				-- Wider transmogrifier character preview
+				if LeaPlusLC["DressupWiderPreview"] == "On" then
+
+					local width = 1200 -- Default is 965
+					WardrobeFrame:SetWidth(width)
+					WardrobeTransmogFrame:SetWidth(width - 665)
+					WardrobeTransmogFrame.Inset.BG:SetWidth(width - 671)
+					WardrobeTransmogFrame.Model:SetWidth(width - 671)
+
+					-- Left slots column
+					WardrobeTransmogFrame.HeadButton:ClearAllPoints()
+					WardrobeTransmogFrame.HeadButton:SetPoint("TOPLEFT", 15, -40)
+
+					-- Right slots column
+					WardrobeTransmogFrame.HandsButton:ClearAllPoints()
+					WardrobeTransmogFrame.HandsButton:SetPoint("TOPRIGHT", -15, -40)
+
+					-- Weapons
+					WardrobeTransmogFrame.MainHandButton:ClearAllPoints()
+					WardrobeTransmogFrame.MainHandButton:SetPoint("TOP", WardrobeTransmogFrame.FeetButton, "BOTTOM", 0, -10)
+					WardrobeTransmogFrame.SecondaryHandButton:ClearAllPoints()
+					WardrobeTransmogFrame.SecondaryHandButton:SetPoint("TOP", WardrobeTransmogFrame.MainHandButton, "BOTTOM", 0, -10)
+					WardrobeTransmogFrame.RangedButton:ClearAllPoints()
+					WardrobeTransmogFrame.RangedButton:SetPoint("TOP", WardrobeTransmogFrame.SecondaryHandButton, "BOTTOM", 0, -10)
+
+				else
+
+					-- Wider character preview is disabled so move the right column up
+					WardrobeTransmogFrame.HandsButton:ClearAllPoints()
+					WardrobeTransmogFrame.HandsButton:SetPoint("TOPRIGHT", -6, -40)
+
+					-- Show weapons in the right column
+					WardrobeTransmogFrame.MainHandButton:ClearAllPoints()
+					WardrobeTransmogFrame.MainHandButton:SetPoint("TOP", WardrobeTransmogFrame.FeetButton, "BOTTOM", 0, -10)
+					WardrobeTransmogFrame.SecondaryHandButton:ClearAllPoints()
+					WardrobeTransmogFrame.SecondaryHandButton:SetPoint("TOP", WardrobeTransmogFrame.MainHandButton, "BOTTOM", 0, -10)
+					WardrobeTransmogFrame.RangedButton:ClearAllPoints()
+					WardrobeTransmogFrame.RangedButton:SetPoint("TOP", WardrobeTransmogFrame.SecondaryHandButton, "BOTTOM", 0, -10)
 
 				end
 
-				if C_AddOns.IsAddOnLoaded("Blizzard_Collections") then
-					DoBlizzardCollectionsFunc()
-				else
-					local waitFrame = CreateFrame("FRAME")
-					waitFrame:RegisterEvent("ADDON_LOADED")
-					waitFrame:SetScript("OnEvent", function(self, event, arg1)
-						if arg1 == "Blizzard_Collections" then
-							DoBlizzardCollectionsFunc()
-							waitFrame:UnregisterAllEvents()
+				----------------------------------------------------------------------
+				-- Transmogrify animation slider
+				----------------------------------------------------------------------
+
+				do
+
+					local transmogAnimTable = {0, 4, 5, 143, 119, 26, 25, 27, 28, 108, 120, 51, 124, 52, 125, 126, 62, 63, 41, 42, 43, 44, 132, 38, 14, 115, 193, 48, 110, 109, 134, 197, 0}
+					local transmogLastSetting
+
+					LeaPlusLC["TransmogAnim"] = 0 -- Defined here since the setting is not saved
+					LeaPlusLC:MakeSL(WardrobeTransmogFrame, "TransmogAnim", "", 1, #transmogAnimTable - 1, 1, 356, -92, "%.0f")
+					LeaPlusCB["TransmogAnim"]:ClearAllPoints()
+					LeaPlusCB["TransmogAnim"]:SetPoint("BOTTOM", 0, 6)
+					if LeaPlusLC["DressupWiderPreview"] == "On" then
+						LeaPlusCB["TransmogAnim"]:SetWidth(240)
+					else
+						LeaPlusCB["TransmogAnim"]:SetWidth(216)
+					end
+					LeaPlusCB["TransmogAnim"]:SetFrameLevel(5)
+					LeaPlusCB["TransmogAnim"]:HookScript("OnValueChanged", function(self, setting)
+						local playerActor = WardrobeTransmogFrame.Model
+						setting = math.floor(setting + 0.5)
+						if playerActor and setting ~= lastSetting then
+							lastSetting = setting
+							playerActor:SetAnimation(transmogAnimTable[setting], 0, 1, 1)
 						end
 					end)
+
+					-- Function to show animation control
+					local function SetAnimationSlider()
+						if LeaPlusLC["DressupTransmogAnim"] == "On" then
+							LeaPlusCB["TransmogAnim"]:Show()
+						else
+							LeaPlusCB["TransmogAnim"]:Hide()
+						end
+						LeaPlusCB["TransmogAnim"]:SetValue(1)
+					end
+
+					-- Set animation control with option, startup, preset and reset
+					LeaPlusCB["DressupTransmogAnim"]:HookScript("OnClick", SetAnimationSlider)
+					SetAnimationSlider()
+					LeaPlusCB["EnhanceDressupBtn"]:HookScript("OnClick", function()
+						if IsShiftKeyDown() and IsControlKeyDown() then
+							LeaPlusLC["DressupTransmogAnim"] = "On"
+							SetAnimationSlider()
+						end
+					end)
+					DressupPanel.r:HookScript("OnClick", function()
+						LeaPlusLC["DressupTransmogAnim"] = "Off"
+						SetAnimationSlider()
+						DressupPanel:Hide(); DressupPanel:Show()
+					end)
+
+					-- Reset animation when slider is shown
+					LeaPlusCB["TransmogAnim"]:HookScript("OnShow", SetAnimationSlider)
+
+					-- Skin slider for ElvUI
+					if LeaPlusLC.ElvUI then
+						_G.LeaPlusGlobalTransmogAnim = LeaPlusCB["TransmogAnim"]
+						LeaPlusLC.ElvUI:GetModule("Skins"):HandleSliderFrame(_G.LeaPlusGlobalTransmogAnim, false)
+					end
+
 				end
 
 			end
 
-			----------------------------------------------------------------------
-			-- Hide dressup stats button
-			----------------------------------------------------------------------
-
-			if LeaPlusLC.NewPatch then
+			if C_AddOns.IsAddOnLoaded("Blizzard_Collections") then
+				DoBlizzardCollectionsFunc()
 			else
-
-				local function ToggleStats(startup)
-
-					-- ElvUI_WrathArmory: Make character model full size
-					if LeaPlusLC.ElvUI then
-						local E = LeaPlusLC.ElvUI:GetModule("ElvUI_WrathArmory", true)
-						if E then
-							CharacterModelFrame:ClearAllPoints()
-							CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-							CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-							return
-						end
-					end
-
-					-- Toggle dressup stats
-					if LeaPlusLC["HideDressupStats"] == "On" then
-						CharacterResistanceFrame:Hide()
-						if CSC_HideStatsPanel then
-							-- CharacterStatsWRATH is installed
-							RunScript('CSC_HideStatsPanel()')
-							if startup then
-								C_Timer.After(0.1, function()
-									CharacterModelFrame:ClearAllPoints()
-									CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-									CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-								end)
-							end
-						else
-							-- CharacterStatsWRATH is not installed
-							CharacterAttributesFrame:Hide()
-						end
-						CharacterModelFrame:ClearAllPoints()
-						CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-						CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-						if LeaPlusLC["ShowVanityControls"] == "On" then
-							LeaPlusCB["ShowHelm"]:Hide()
-							LeaPlusCB["ShowCloak"]:Hide()
-						end
-
-					else
-
-						CharacterResistanceFrame:Show()
-						if CSC_ShowStatsPanel then
-							-- CharacterStatsWRATH is installed
-							RunScript('CSC_ShowStatsPanel()')
-							if startup then
-								C_Timer.After(0.1, function()
-									CharacterModelFrame:ClearAllPoints()
-									CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-									CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
-								end)
-							end
-						else
-							-- CharacterStatsWRATH is not installed
-							CharacterAttributesFrame:Show()
-						end
-						CharacterModelFrame:ClearAllPoints()
-						CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-						CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
-						if LeaPlusLC["ShowVanityControls"] == "On" then
-							LeaPlusCB["ShowHelm"]:Show()
-							LeaPlusCB["ShowCloak"]:Show()
-						end
-					end
-
-				end
-
-				-- Toggle stats with middle mouse button
-				CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
-					if btn == "MiddleButton" then
-						if LeaPlusLC["HideDressupStats"] == "On" then LeaPlusLC["HideDressupStats"] = "Off" else LeaPlusLC["HideDressupStats"] = "On" end
-						ToggleStats()
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "Blizzard_Collections" then
+						DoBlizzardCollectionsFunc()
+						waitFrame:UnregisterAllEvents()
 					end
 				end)
-				ToggleStats(true)
-
-				-- Create toggle stats button
-				local toggleButton = CreateFrame("Button", nil, PaperDollFrame)
-				toggleButton:SetSize(36, 36)
-				toggleButton:SetPoint("TOPLEFT", PaperDollFrame, "TOPLEFT", 64, -45)
-				toggleButton:SetNormalTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-				toggleButton:SetHighlightTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-				toggleButton:SetPushedTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-				toggleButton:SetScript("OnEnter", function()
-					GameTooltip:SetOwner(toggleButton, "ANCHOR_NONE")
-					GameTooltip:SetPoint("BOTTOMLEFT", toggleButton, "BOTTOMRIGHT", 0, 0)
-					GameTooltip:SetText(L["Toggle character stats"], nil, nil, nil, nil, true)
-					GameTooltip:Show()
-				end)
-				toggleButton:SetScript("OnLeave", GameTooltip_Hide)
-				toggleButton:SetScript("OnClick", function()
-					if LeaPlusLC["HideDressupStats"] == "On" then LeaPlusLC["HideDressupStats"] = "Off" else LeaPlusLC["HideDressupStats"] = "On" end
-					ToggleStats()
-				end)
-
 			end
 
 			----------------------------------------------------------------------
 			-- Enable zooming and panning
 			----------------------------------------------------------------------
 
-			-- Enable zooming for character frame and dressup frame
-			if LeaPlusLC.NewPatch then
-			else
-				CharacterModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
-			end
+			-- Enable zooming for dressup frame
 			DressUpModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
-
-			-- Enable panning for character frame
-			if LeaPlusLC.NewPatch then
-			else
-				CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
-					if btn == "RightButton" then
-						Model_StartPanning(self)
-					end
-				end)
-
-				CharacterModelFrame:HookScript("OnMouseUp", function(self, btn)
-					Model_StopPanning(self)
-				end)
-			end
 
 			-- Enable panning for dressup frame
 			DressUpModelFrame:HookScript("OnMouseDown", function(self, btn)
@@ -7106,7 +6963,7 @@
 
 			end
 
-			if IsAddOnLoaded("Blizzard_InspectUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_InspectUI") then
 				DoInspectSystemFunc()
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -7402,9 +7259,9 @@
 						GameTooltip:SetOwner(self, "ANCHOR_TOP", 0, 4)
 						GameTooltip:ClearLines()
 						if count > 1 then
-							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skills for"] .. " " .. GetCoinTextureString(cost))
+							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skills for"] .. " " .. C_CurrencyInfo.GetCoinTextureString(cost))
 						else
-							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skill for"] .. " " .. GetCoinTextureString(cost))
+							GameTooltip:AddLine(L["Train"] .. " " .. count .. " " .. L["skill for"] .. " " .. C_CurrencyInfo.GetCoinTextureString(cost))
 						end
 						GameTooltip:Show()
 					end
@@ -7482,7 +7339,7 @@
 			end
 
 			-- Run function when Trainer UI has loaded
-			if IsAddOnLoaded("Blizzard_TrainerUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_TrainerUI") then
 				TrainerFunc()
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -7748,7 +7605,7 @@
 			end
 
 			-- Run function when TradeSkill UI has loaded
-			if IsAddOnLoaded("Blizzard_TradeSkillUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_TradeSkillUI") then
 				TradeSkillFunc("TradeSkill")
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -7958,7 +7815,7 @@
 			end
 
 			-- Run search event function when Blizzard addon is loaded
-			if IsAddOnLoaded("Blizzard_GuildBankUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_GuildBankUI") then
 				SetGuildBankFunc()
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -8014,7 +7871,7 @@
 				-- Get item
 				local itemName, itemlink = tooltipObject:GetItem()
 				if not itemlink then return end
-				local void, void, void, void, void, void, void, void, void, void, sellPrice, classID = GetItemInfo(itemlink)
+				local void, void, void, void, void, void, void, void, void, void, sellPrice, classID = C_Item.GetItemInfo(itemlink)
 				if sellPrice and sellPrice > 0 then
 					local count = container and type(container.count) == "number" and container.count or 1
 					if sellPrice and count > 0 then
@@ -8318,7 +8175,7 @@
 						return
 					end
 
-					-- Control key does nothing (no minimap target tracking in Wrath)
+					-- Control key does nothing (no minimap target tracking in Cataclysm)
 					if IsControlKeyDown() and not IsShiftKeyDown() and not IsAltKeyDown() then
 						return
 					end
@@ -8619,7 +8476,7 @@
 			end
 
 			-- Run function when Blizzard addon is loaded
-			if IsAddOnLoaded("Blizzard_AuctionUI") then
+			if C_AddOns.IsAddOnLoaded("Blizzard_AuctionUI") then
 				AuctionFunc()
 			else
 				local waitFrame = CreateFrame("FRAME")
@@ -8652,11 +8509,7 @@
 
 			-- Create slider control
 			LeaPlusLC["LeaPlusMaxVol"] = tonumber(GetCVar("Sound_MasterVolume"))
-			if LeaPlusLC.NewPatch then
-				LeaPlusLC:MakeSL(CharacterModelScene, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
-			else
-				LeaPlusLC:MakeSL(CharacterModelFrame, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
-			end
+			LeaPlusLC:MakeSL(CharacterModelScene, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
 			LeaPlusCB["LeaPlusMaxVol"]:SetWidth(64)
 			LeaPlusCB["LeaPlusMaxVol"].f:ClearAllPoints()
 			LeaPlusCB["LeaPlusMaxVol"].f:SetPoint("LEFT", LeaPlusCB["LeaPlusMaxVol"], "RIGHT", 6, 0)
@@ -9704,20 +9557,12 @@
 			local function HideButtons(chtfrm)
 				_G[chtfrm .. "ButtonFrameUpButton"]:SetParent(tframe)
 				_G[chtfrm .. "ButtonFrameDownButton"]:SetParent(tframe)
-				if not LeaPlusLC.NewPatch then
-					_G[chtfrm .. "ButtonFrameMinimizeButton"]:SetParent(tframe)
-				end
 				_G[chtfrm .. "ButtonFrameUpButton"]:Hide()
 				_G[chtfrm .. "ButtonFrameDownButton"]:Hide()
-				if not LeaPlusLC.NewPatch then
-					_G[chtfrm .. "ButtonFrameMinimizeButton"]:Hide()
-				end
 				_G[chtfrm .. "ButtonFrame"]:SetSize(0.1,0.1)
 			end
 
-			if LeaPlusLC.NewPatch and FriendsMicroButton then
-				FriendsMicroButton:Hide()
-			end
+			FriendsMicroButton:Hide()
 
 			-- Function to highlight chat tabs and click to scroll to bottom
 			local function HighlightTabs(chtfrm)
@@ -10036,16 +9881,16 @@
 			end
 
 			-- Create class tables if they don't exist
-			local classList = {"WARRIOR", "PALADIN", "HUNTER", "SHAMAN", "ROGUE", "DRUID", "MAGE", "WARLOCK", "PRIEST", "DEATHKNIGHT"}
-			for index = 1, #classList do
-				if LeaPlusDB["Cooldowns"][classList[index]] == nil then
-					LeaPlusDB["Cooldowns"][classList[index]] = {}
+			for index = 1, GetNumClasses() do
+				local classDisplayName, classTag, classID = GetClassInfo(index)
+				if LeaPlusDB["Cooldowns"][classTag] == nil then
+					LeaPlusDB["Cooldowns"][classTag] = {}
 				end
 			end
 
-			-- Get current class
+			-- Get current class and spec
 			local PlayerClass = select(2, UnitClass("player"))
-			local activeSpec = 1 -- Fixed to 1 for Classic
+			local activeSpec = GetActiveTalentGroup() or 1
 
 			-- Create local tables to store cooldown frames and editboxes
 			local icon = {} -- Used to store cooldown frames
@@ -10288,7 +10133,7 @@
 			LeaPlusCB["CooldownsOnPlayer"]:HookScript("OnClick", SavePanelControls)
 
 			-- Help button tooltip
-			CooldownPanel.h.tiptext = L["Enter the spell IDs for the cooldown icons that you want to see.|n|nIf a cooldown icon normally appears under the pet frame, check the pet checkbox.|n|nCooldown icons are saved to your class."]
+			CooldownPanel.h.tiptext = L["Enter the spell IDs for the cooldown icons that you want to see.|n|nIf a cooldown icon normally appears under the pet frame, check the pet checkbox.|n|nCooldown icons are saved to your class and specialisation."]
 
 			-- Back button handler
 			CooldownPanel.b:SetScript("OnClick", function()
@@ -10340,19 +10185,43 @@
 				end
 			end)
 
-			-- Create class tag banner fontstring
-			local classTagBanner = CooldownPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
-			local myClassName = UnitClass("player")
-			classTagBanner:SetPoint("TOPLEFT", 384, -72)
-			classTagBanner:SetText(myClassName)
+			-- Create spec tag banner fontstring
+			local specTagSpecID = GetActiveTalentGroup()
+			local specTagBanner = CooldownPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
+			specTagBanner:SetPoint("TOPLEFT", 384, -72)
+			if specTagSpecID == 1 then specTagBanner:SetText(L["Primary Talents"]) else specTagBanner:SetText(L["Secondary Talents"]) end
+
+            -- Set controls when spec changes
+            local swapFrame = CreateFrame("FRAME")
+            swapFrame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
+            swapFrame:SetScript("OnEvent", function()
+				-- Store new spec
+				activeSpec = GetActiveTalentGroup()
+				-- Update controls for new spec
+				for i = 1, iCount do
+					SpellEB[i]:SetText(LeaPlusDB["Cooldowns"][PlayerClass]["S" .. activeSpec .. "R" .. i .. "Idn"] or "")
+					LeaPlusCB["Spell" .. i .. "Pet"]:SetChecked(LeaPlusDB["Cooldowns"][PlayerClass]["S" .. activeSpec .. "R" .. i .. "Pet"] or false)
+				end
+				-- Update spec tag banner with new spec
+				if activeSpec == 1 then specTagBanner:SetText(L["Primary Talents"]) else specTagBanner:SetText(L["Secondary Talents"]) end
+				-- Refresh configuration panel
+				if CooldownPanel:IsShown() then
+					CooldownPanel:Hide(); CooldownPanel:Show()
+				end
+				-- Save settings
+				SavePanelControls()
+            end)
 
 			-- Function to show spell ID in tooltips
 			local function CooldownIDFunc(unit, target, index, auratype)
 				if LeaPlusLC["ShowCooldownID"] == "On" and auratype ~= "HARMFUL" then
-					local spellid = select(10, UnitAura(target, index))
-					if spellid then
-						GameTooltip:AddLine(L["Spell ID"] .. ": " .. spellid)
-						GameTooltip:Show()
+					local AuraData = C_UnitAuras.GetAuraDataByIndex(target, index)
+					if AuraData then
+						local spellid = AuraData.spellId
+						if spellid then
+							GameTooltip:AddLine(L["Spell ID"] .. ": " .. spellid)
+							GameTooltip:Show()
+						end
 					end
 				end
 			end
@@ -11364,7 +11233,7 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
-			local expTitle = LeaPlusLC:MakeTx(interPanel, "Wrath Classic & Cataclysm Classic", 0, 0)
+			local expTitle = LeaPlusLC:MakeTx(interPanel, "Cataclysm Classic", 0, 0)
 			expTitle:SetFont(expTitle:GetFont(), 32)
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
@@ -12531,6 +12400,7 @@
 				LeaPlusLC:LoadVarChk("NoSharedQuests", "Off")				-- Block shared quests
 
 				LeaPlusLC:LoadVarChk("AcceptPartyFriends", "Off")			-- Party from friends
+				LeaPlusLC:LoadVarChk("AutoConfirmRole", "Off")				-- Queue from friends
 				LeaPlusLC:LoadVarChk("InviteFromWhisper", "Off")			-- Invite from whispers
 				LeaPlusLC:LoadVarChk("InviteFriendsOnly", "Off")			-- Restrict invites to friends
 				LeaPlusLC["InvKey"]	= LeaPlusDB["InvKey"] or "inv"			-- Invite from whisper keyword
@@ -12869,7 +12739,7 @@
 
 						end
 
-						EnableAddOn("Leatrix_Plus")
+						C_AddOns.EnableAddOn("Leatrix_Plus")
 					end
 
 				end
@@ -12930,6 +12800,7 @@
 			LeaPlusDB["NoSharedQuests"]			= LeaPlusLC["NoSharedQuests"]
 
 			LeaPlusDB["AcceptPartyFriends"]		= LeaPlusLC["AcceptPartyFriends"]
+			LeaPlusDB["AutoConfirmRole"]		= LeaPlusLC["AutoConfirmRole"]
 			LeaPlusDB["InviteFromWhisper"]		= LeaPlusLC["InviteFromWhisper"]
 			LeaPlusDB["InviteFriendsOnly"]		= LeaPlusLC["InviteFriendsOnly"]
 			LeaPlusDB["InvKey"]					= LeaPlusLC["InvKey"]
@@ -13823,7 +13694,7 @@
 		PageF.v:SetPoint('TOPLEFT', PageF.mt, 'BOTTOMLEFT', 0, -8);
 		PageF.v:SetPoint('RIGHT', PageF, -32, 0)
 		PageF.v:SetJustifyH('LEFT'); PageF.v:SetJustifyV('TOP');
-		PageF.v:SetNonSpaceWrap(true); PageF.v:SetText(L["WC"] .. " " .. LeaPlusLC["AddonVer"])
+		PageF.v:SetNonSpaceWrap(true); PageF.v:SetText(L["CC"] .. " " .. LeaPlusLC["AddonVer"])
 
 		-- Add reload UI Button
 		local reloadb = LeaPlusLC:CreateButton("ReloadUIButton", PageF, "Reload", "BOTTOMRIGHT", -16, 10, 0, 25, true, "Your UI needs to be reloaded for some of the changes to take effect.|n|nYou don't have to click the reload button immediately but you do need to click it when you are done making changes and you want the changes to take effect.")
@@ -13989,17 +13860,17 @@
 				-- Show web link
 				if not LeaPlusLC.WowheadLock then
 					-- Set Wowhead link prefix
-						if GameLocale == "deDE" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/de"
-					elseif GameLocale == "esMX" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/es"
-					elseif GameLocale == "esES" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/es"
-					elseif GameLocale == "frFR" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/fr"
-					elseif GameLocale == "itIT" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/it"
-					elseif GameLocale == "ptBR" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/pt"
-					elseif GameLocale == "ruRU" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/ru"
-					elseif GameLocale == "koKR" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/ko"
-					elseif GameLocale == "zhCN" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/cn"
-					elseif GameLocale == "zhTW" then LeaPlusLC.WowheadLock = "wowhead.com/wotlk/cn"
-					else							 LeaPlusLC.WowheadLock = "wowhead.com/wotlk"
+						if GameLocale == "deDE" then LeaPlusLC.WowheadLock = "wowhead.com/cata/de"
+					elseif GameLocale == "esMX" then LeaPlusLC.WowheadLock = "wowhead.com/cata/es"
+					elseif GameLocale == "esES" then LeaPlusLC.WowheadLock = "wowhead.com/cata/es"
+					elseif GameLocale == "frFR" then LeaPlusLC.WowheadLock = "wowhead.com/cata/fr"
+					elseif GameLocale == "itIT" then LeaPlusLC.WowheadLock = "wowhead.com/cata/it"
+					elseif GameLocale == "ptBR" then LeaPlusLC.WowheadLock = "wowhead.com/cata/pt"
+					elseif GameLocale == "ruRU" then LeaPlusLC.WowheadLock = "wowhead.com/cata/ru"
+					elseif GameLocale == "koKR" then LeaPlusLC.WowheadLock = "wowhead.com/cata/ko"
+					elseif GameLocale == "zhCN" then LeaPlusLC.WowheadLock = "wowhead.com/cata/cn"
+					elseif GameLocale == "zhTW" then LeaPlusLC.WowheadLock = "wowhead.com/cata/cn"
+					else							 LeaPlusLC.WowheadLock = "wowhead.com/cata"
 					end
 				end
 				-- Store frame under mouse
@@ -14256,7 +14127,7 @@
 				return
 			elseif str == "con" then
 				-- Show the developer console
-				C_Console.SetFontHeight(28)
+				DeveloperConsole:SetFontHeight(28)
 				DeveloperConsole:Toggle(true)
 				return
 			elseif str == "movie" then
@@ -14287,7 +14158,7 @@
 				return
 			elseif str == "skit" then
 				-- Play a test sound kit
-				PlaySound("1020", "Master", false, true)
+				PlaySound(1020, "Master", false, true)
 				return
 			elseif str == "marker" then
 				-- Prevent showing raid target markers on self
@@ -15081,6 +14952,7 @@
 				LeaPlusDB["NoSharedQuests"] = "Off"				-- Block shared quests
 
 				LeaPlusDB["AcceptPartyFriends"] = "On"			-- Party from friends
+				LeaPlusDB["AutoConfirmRole"] = "On"				-- Queue from friends
 				LeaPlusDB["InviteFromWhisper"] = "On"			-- Invite from whispers
 				LeaPlusDB["InviteFriendsOnly"] = "On"			-- Restrict invites to friends
 				LeaPlusDB["FriendlyGuild"] = "On"				-- Friendly guild
@@ -15493,7 +15365,8 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends will be automatically accepted unless you are queued for a battleground.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -112,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant and not queued for a battleground.|n|nFriends who message the keyword using Battle.net will not be sent a group invite if they are appearing offline.  They need to either change their online status or use character whispers."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -112, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is a friend.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant and not queued for a battleground.|n|nFriends who message the keyword using Battle.net will not be sent a group invite if they are appearing offline.  They need to either change their online status or use character whispers."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
 
 	LeaPlusLC:MakeFT(LeaPlusLC[pg], "For all of the social options above, you can treat guild members as friends too.", 146, 380)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FriendlyGuild"				, 	"Guild"							, 	146, -282, 	false,	"If checked, members of your guild will be treated as friends for all of the options on this page.")

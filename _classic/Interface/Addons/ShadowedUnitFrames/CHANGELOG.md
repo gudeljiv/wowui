@@ -1,9 +1,13 @@
 # Shadowed Unit Frames
 
-## [v4.3.4-classic](https://github.com/Nevcairiel/ShadowedUnitFrames/tree/v4.3.4-classic) (2023-02-12)
-[Full Changelog](https://github.com/Nevcairiel/ShadowedUnitFrames/compare/v4.3.3-classic...v4.3.4-classic) [Previous Releases](https://github.com/Nevcairiel/ShadowedUnitFrames/releases)
+## [v4.3.5-classic](https://github.com/Nevcairiel/ShadowedUnitFrames/tree/v4.3.5-classic) (2024-05-01)
+[Full Changelog](https://github.com/Nevcairiel/ShadowedUnitFrames/compare/v4.3.4-classic...v4.3.5-classic) [Previous Releases](https://github.com/Nevcairiel/ShadowedUnitFrames/releases)
 
-- Update TOC for 3.4.1  
-- Check for expired fade before trying to set alpha  
-    This prevents an out of bound alpha value  
-- Add Threat API to emulation during moving  
+- Add missing colors  
+    Based on patches from PR #32  
+- Bug fix: Fixed a bug where if there was an invalid aura added to the aura list, that the disabled auras by class would display blank check boxes/give errors due to a nil value being sent to ace widgets  
+- Bug fix: Fixed a bug in the disabled auras by class tab that would occur if the player is in classic and a retail class is in the class table.  
+- Fixed a bug where we were grabbing retail based characters for class colors  
+- Fix default value for global background color  
+- Add Soul Shards and Holy Power  
+- Update TOC for Cataclysm Classic  

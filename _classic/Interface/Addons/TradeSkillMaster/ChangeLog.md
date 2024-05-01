@@ -1,5 +1,5 @@
-## v4.13.21 Changes
+## v4.13.24 Changes
 
-* [Wrath] Fixed issue related to the gold cap being increased
+* [Cata] Fixed more issues with professions
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -27,6 +27,23 @@ local CDSpells = TotemTimers.CombatCooldownSpells
 local FlameShockDuration = null
 local Maelstrom, MaelstromButton, MaelstromIcon
 
+local CenterProcAnchor = CreateFrame("Frame", "CenterProcAnchor", UIParent)
+TotemTimers.EnhanceCDsCenterProcAnchor = CenterProcAnchor
+CenterProcAnchor:Hide()
+CenterProcAnchor:SetSize(130,65)
+CenterProcAnchor:Show()
+
+local LeftProcAnchor = CreateFrame("Frame", "LeftProcAnchor", UIParent)
+TotemTimers.EnhanceCDsLeftProcAnchor = LeftProcAnchor
+LeftProcAnchor:Hide()
+LeftProcAnchor:SetSize(65, 130)
+
+
+
+local RightProcAnchor = CreateFrame("Frame", nil, UIParent)
+TotemTimers.EnhanceCDsRightProcAnchor = RightProcAnchor
+RightProcAnchor:Hide()
+RightProcAnchor:SetSize(65, 130)
 
 
 local function ChangeCDOrder(self, _, _, spell)
@@ -107,6 +124,7 @@ function TotemTimers.CreateEnhanceCDs()
         cds[i].button.ChangeCDOrder = ChangeCDOrder
     end
 
+
     if WOW_PROJECT_ID > WOW_PROJECT_BURNING_CRUSADE_CLASSIC or C_Seasons.GetActiveSeason() == 2 then
         Maelstrom = XiTimers:new(1)
         TotemTimers.Maelstrom = Maelstrom
@@ -171,7 +189,7 @@ function TotemTimers.CreateEnhanceCDs()
         MaelstromButton:SetAttribute("spell2", SpellIDs.ChainLightning)
         MaelstromButton.icon = TotemTimers_MaelstromBarButtonIcon
 
-        MaelstromIcon = CreateFrame("Frame", "TotemTimers_MaelstromIcon")
+        MaelstromIcon = CreateFrame("Frame", "TotemTimers_MaelstromIcon", UIParent)
         TotemTimers.MaelstromIcon = MaelstromIcon
         Maelstrom.ChainOOCAlpha = TotemTimers.MaelstromIcon
 
@@ -390,6 +408,21 @@ function TotemTimers.LayoutEnhanceCDs()
 
     FlameShockDuration.button:SetPoint(fspoint, TotemTimers_EnhanceCDsFrame, "CENTER", -width / 2, fsy)
 
+    local cprocy = 18 + spacing + activeCDs[1]:GetBorder("TOP")
+
+    if FlameShockDuration.active and TotemTimers.ActiveProfile.FlameShockDurationOnTop then
+        cprocy = cprocy + spacing + height
+    end
+
+    CenterProcAnchor:ClearAllPoints()
+    CenterProcAnchor:SetPoint("CENTER", TotemTimers_EnhanceCDsFrame, "CENTER", 0, cprocy + 12)
+
+    LeftProcAnchor:ClearAllPoints()
+    RightProcAnchor:ClearAllPoints()
+    if bottomRow == 0 then
+        LeftProcAnchor:SetPoint("RIGHT", activeCDs[1].button, "LEFT", LeftProcAnchor:GetWidth() / 3 * LeftProcAnchor:GetScale(), 0)
+        RightProcAnchor:SetPoint("LEFT", activeCDs[numActiveCDs].button, "RIGHT", -RightProcAnchor:GetWidth() / 3 * RightProcAnchor:GetScale(), 0)
+    end
 
     if Maelstrom then
         local msWidth, msHeight = SizeToWidthHeight(Maelstrom.size)
@@ -407,7 +440,7 @@ function TotemTimers.LayoutEnhanceCDs()
         end
 
         Maelstrom.button:SetPoint("BOTTOMLEFT", TotemTimers_EnhanceCDsFrame, "CENTER", -msWidth / 2, msy)
-        MaelstromIcon:SetPoint("CENTER", TotemTimers_EnhanceCDsFrame, "CENTER", 0, msy + 6)
+        MaelstromIcon:SetPoint("CENTER", TotemTimers_EnhanceCDsFrame, "CENTER", 0, msy + 12)
 
     end
 end

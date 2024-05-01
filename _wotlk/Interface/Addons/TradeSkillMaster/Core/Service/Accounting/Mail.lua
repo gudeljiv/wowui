@@ -87,7 +87,7 @@ function private.CanLootMailIndex(index, copper)
 	local moneyCap = nil
 	if Environment.IsRetail() then
 		moneyCap = MAXIMUM_BID_PRICE
-	elseif Environment.IsWrathClassic() then
+	elseif Environment.IsWrathClassic() or Environment.IsCataClassic() then
 		moneyCap = 9999999999
 	else
 		moneyCap = 2147483647

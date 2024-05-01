@@ -12,12 +12,12 @@ TomTomDB = {
 		["Wells - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
-		["Dopedot - Lone Wolf"] = "Default",
-		["Dopecoil - Lone Wolf"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
+		["Koloman - Golemagg"] = "Default",
+		["Dopedot - Lone Wolf"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
-		["Koloman - Golemagg"] = "Default",
+		["Dopecoil - Lone Wolf"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Lonac - Stitches"] = "Default",
 		["Antun - Golemagg"] = "Default",
@@ -107,12 +107,12 @@ TomTomWaypointsM = {
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
-		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Koloman - Golemagg"] = "Koloman - Golemagg",
+		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Koloman - Golemagg"] = "Koloman - Golemagg",
+		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Lonac - Stitches"] = "Lonac - Stitches",
 		["Antun - Golemagg"] = "Antun - Golemagg",
@@ -177,7 +177,15 @@ TomTomWaypointsM = {
 		},
 		["Konac - Dreadnaught"] = {
 		},
+		["Tudum - Ashbringer"] = {
+		},
+		["Koloman - Golemagg"] = {
+		},
 		["Dopedot - Lone Wolf"] = {
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Moolatz - Golemagg"] = {
 		},
 		["Dopecoil - Lone Wolf"] = {
 			[1412] = {
@@ -205,14 +213,6 @@ TomTomWaypointsM = {
 					["world"] = true,
 				},
 			},
-		},
-		["Tudum - Ashbringer"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Moolatz - Golemagg"] = {
-		},
-		["Koloman - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 		},

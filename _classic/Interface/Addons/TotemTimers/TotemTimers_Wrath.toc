@@ -1,7 +1,7 @@
 ## Interface: 30403
 ## Title: TotemTimers
 ## Author:  Xianghar
-## Version: 3.2.17
+## Version: 4.0.0
 ## SavedVariables: TotemTimers_GlobalSettings, TotemTimers_Profiles
 ## OptionalDeps: Masque
 ## LoadManagers: AddonLoader
@@ -50,6 +50,7 @@ EarthShield.lua
 Weapon.lua
 EnhanceCDs.lua
 LongCooldowns.lua
+# Procs.lua
 Warnings.lua
 Masque.lua
 

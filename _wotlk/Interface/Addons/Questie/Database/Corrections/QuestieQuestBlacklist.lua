@@ -1491,7 +1491,12 @@ function QuestieQuestBlacklist:Load()
         [7492] = true, -- Removed with cata
         [14474] = true, -- Duplicate of 14001
         [24503] = true, -- Duplicate of 28414
+        [25474] = true, -- Duplicate of 27729
         [29476] = true, -- Duplicate of 29477
+        [27608] = true, -- Duplicate of 27500
+        [27609] = true, -- Duplicate of 27501
+        [27861] = true, -- Duplicate of 27863
+        [27862] = true, -- Duplicate of 27863
 
         -- ICC weekly quests
         [24869] = true, -- Removed with cata
@@ -1534,6 +1539,20 @@ function QuestieQuestBlacklist:Load()
         [27207] = true, -- This Blows
         [27209] = true, -- This Blows
 
+        -- Phase 2 - Rise of the Zandalari
+
+        [29153] = true, -- Booty Bay's Interests
+        [29157] = true, -- The Zandalari Menace
+        [29172] = true, -- The Beasts Within
+        [29173] = true, -- Secondary Targets
+        [29175] = true, -- Break Their Spirits
+        [29241] = true, -- Break the Godbreaker
+        [29242] = true, -- Putting a Price on Priceless
+        [29251] = true, -- Booty Bay's Interests
+        [29208] = true, -- An Old Friend
+        [29229] = true, -- Follow That Cat
+        [29252] = true, -- Booty Bay's Interests
+
         -- Phase 3 - Rage of the Firelands
 
         [29129] = true, -- A Legendary Engagement
@@ -1543,6 +1562,8 @@ function QuestieQuestBlacklist:Load()
         [29389] = true, --Guardians of Hyjal: Firelands Invasion!
         [29390] = true, --Guardians of Hyjal: Call of the Ancients
         [29391] = true, --Guardians of Hyjal: Call of the Ancients
+        [29439] = true, -- The Call of the World-Shaman
+        [29440] = true, -- The Call of the World-Shaman
         [29452] = true, -- Your Time Has Come
         [29453] = true, -- Your Time Has Come
         [30094] = true, -- The End Time
