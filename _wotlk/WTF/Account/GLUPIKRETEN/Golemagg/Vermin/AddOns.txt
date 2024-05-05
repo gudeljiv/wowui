@@ -55,7 +55,7 @@ ClassicSpellActivations: disabled
 Dejunk: enabled
 Details: enabled
 Details_TinyThreat: enabled
-ExtendedCharacterStats: enabled
+ExtendedCharacterStats: disabled
 FollowMePls: enabled
 GatherMate2: enabled
 GatherMate2_Data: enabled
@@ -228,3 +228,8 @@ BootyBayGazette: enabled
 AuctionDB: enabled
 unitscan: disabled
 Drift: disabled
+LibRangeCheck-3.0: enabled
+LibDualSpec-1.0: enabled
+LibDetours-1.0: enabled
+LibClassicInspector: enabled
+LibClassicGearScore: enabled

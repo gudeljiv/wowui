@@ -37,6 +37,7 @@ LeaMapsDB = {
 	["tintRed"] = 0.6000000000000001,
 	["BattleMaxZoom"] = 1,
 	["ShowTravelPoints"] = "On",
+	["ShowDigsites"] = "On",
 	["ShowCoords"] = "On",
 	["EnhanceBattleMap"] = "On",
 	["IncreaseZoomMax"] = 2,

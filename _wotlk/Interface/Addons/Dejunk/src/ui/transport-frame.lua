@@ -1,8 +1,8 @@
 local ADDON_NAME, Addon = ...
-local Colors = Addon:GetModule("Colors")
-local L = Addon:GetModule("Locale")
+local Colors = Addon:GetModule("Colors") ---@type Colors
+local L = Addon:GetModule("Locale") ---@type Locale
 local TransportFrame = Addon:GetModule("TransportFrame")
-local Widgets = Addon:GetModule("Widgets")
+local Widgets = Addon:GetModule("Widgets") ---@type Widgets
 
 -- ============================================================================
 -- TransportFrame
@@ -58,7 +58,7 @@ TransportFrame.frame = (function()
     onClick = function(self)
       -- Import ids.
       local editBox = frame.textFrame.editBox
-      for itemId in editBox:GetText():gmatch('([^;]+)') do
+      for itemId in editBox:GetText():gmatch("%d+") do
         itemId = tonumber(itemId)
         if itemId and itemId > 0 and itemId <= 2147483647 then
           frame.list:Add(itemId)
@@ -87,7 +87,7 @@ TransportFrame.frame = (function()
       for _, item in pairs(frame.list:GetItems()) do
         itemIds[#itemIds + 1] = item.id
       end
-      editBox:SetText(table.concat(itemIds, ";"))
+      editBox:SetText(table.concat(itemIds, ","))
       -- Select all.
       local numLetters = editBox:GetNumLetters()
       editBox:SetFocus()

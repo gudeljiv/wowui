@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.9.0] - 2024-05-04
+
+### Added
+
+- Added a `Search Lists` button to the options frame which enables searching lists by item name ([#198](https://github.com/moody/Dejunk/issues/198))
+
+### Changed
+
+- Modified some icons
+
+## [1.8.1] - 2024-05-03
+
+### Changed
+
+- Refactored UI to display all lists together
+- Updated dependencies
+
+### Removed
+
+- Switch view functionality for list frames
+
+## [1.8.0] - 2024-04-30
+
+### Changed
+
+- Allow any delimiter when importing ([#197](https://github.com/moody/Dejunk/issues/197))
+- Refactored SavedVariables code
+- Updated for Cataclysm Classic
+
 ## [1.7.3] - 2024-02-09
 
 - Bump TOC versions

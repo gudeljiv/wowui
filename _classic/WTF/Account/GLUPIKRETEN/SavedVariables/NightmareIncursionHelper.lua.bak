@@ -8,7 +8,7 @@ NIHdatabase = {
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Dopestab - Lone Wolf"] = "Default",
 		["Dopemend - Lone Wolf"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 	},
 }

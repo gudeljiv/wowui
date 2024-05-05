@@ -498,6 +498,7 @@ function QuestieQuestBlacklist:Load()
         [11955] = true,
         [11972] = true,
         [11975] = true,
+        [11976] = true,
         [11964] = true,
         [11966] = true,
         [11970] = true,
@@ -600,6 +601,7 @@ function QuestieQuestBlacklist:Load()
         [12409] = true,
         [12420] = true,
         [12421] = true,
+        [13158] = QuestieCorrections.CATA_ONLY, -- replaced in Cata with 29829
         ----------------
         --- Wotlk event quests
         --- Noblegarden
@@ -1060,7 +1062,7 @@ function QuestieQuestBlacklist:Load()
         [64144] = true, -- Horde pala mount quest chain
         [64145] = true, -- Horde pala mount quest chain
         [64217] = true, -- Boosted character quest
-        [64845] = QuestieCorrections.TBC_AND_WOTLK, -- Alliance War Effort
+        [64845] = QuestieCorrections.TBC_AND_WOTLK_AND_CATA, -- Alliance War Effort
         [70395] = true, -- First quest for boosted characters. Blocked to not show for others
         [70396] = true, -- First quest for boosted characters. Blocked to not show for others
         [70397] = true, -- Boosted character quest
@@ -1205,13 +1207,13 @@ function QuestieQuestBlacklist:Load()
         [6823] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [6824] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [7486] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
-        [5634] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5635] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5636] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5637] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5638] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5639] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
-        [5640] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5634] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5635] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5636] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5637] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5638] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5639] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
+        [5640] = QuestieCorrections.WOTLK_AND_CATA, -- removed since wotlk
         [12881] = true, -- Not in the game
         [14351] = true, -- Not in the game
         [14353] = true, -- Not in the game
@@ -1488,10 +1490,13 @@ function QuestieQuestBlacklist:Load()
         ----- Cata ------------- starting here -------------- Cata -----
 
         [1431] = true, -- Removed with cata
+        [5121] = true, -- Replaced by 28470
+        [5123] = true, -- Replaced by 28471
         [7492] = true, -- Removed with cata
         [14474] = true, -- Duplicate of 14001
         [24503] = true, -- Duplicate of 28414
         [25474] = true, -- Duplicate of 27729
+        [26565] = true, -- Duplicate of 26588
         [29476] = true, -- Duplicate of 29477
         [27608] = true, -- Duplicate of 27500
         [27609] = true, -- Duplicate of 27501
@@ -1541,11 +1546,13 @@ function QuestieQuestBlacklist:Load()
 
         -- Phase 2 - Rise of the Zandalari
 
+        [29158] = true, -- The Zandalar Representative
         [29153] = true, -- Booty Bay's Interests
         [29157] = true, -- The Zandalari Menace
         [29172] = true, -- The Beasts Within
         [29173] = true, -- Secondary Targets
         [29175] = true, -- Break Their Spirits
+        [29177] = true, -- Vigilance on Wings
         [29241] = true, -- Break the Godbreaker
         [29242] = true, -- Putting a Price on Priceless
         [29251] = true, -- Booty Bay's Interests
@@ -1557,11 +1564,13 @@ function QuestieQuestBlacklist:Load()
 
         [29129] = true, -- A Legendary Engagement
         [29132] = true, -- A Legendary Engagement
-        [29387] = true, --Guardians of Hyjal: Firelands Invasion!
-        [29388] = true, --Guardians of Hyjal: Firelands Invasion!
-        [29389] = true, --Guardians of Hyjal: Firelands Invasion!
-        [29390] = true, --Guardians of Hyjal: Call of the Ancients
-        [29391] = true, --Guardians of Hyjal: Call of the Ancients
+        [29326] = true, -- The Nordrassil Summit
+        [29387] = true, -- Guardians of Hyjal: Firelands Invasion!
+        [29388] = true, -- Guardians of Hyjal: Firelands Invasion!
+        [29389] = true, -- Guardians of Hyjal: Firelands Invasion!
+        [29390] = true, -- Guardians of Hyjal: Call of the Ancients
+        [29391] = true, -- Guardians of Hyjal: Call of the Ancients
+        [29437] = true, -- The Fallen Guardian
         [29439] = true, -- The Call of the World-Shaman
         [29440] = true, -- The Call of the World-Shaman
         [29452] = true, -- Your Time Has Come
@@ -1609,6 +1618,7 @@ function QuestieQuestBlacklist:Load()
 
         -- Love is in the Air
         [14483] = true, -- Something is in the Air (and it Ain't Love)
+        [24745] = true, -- Something is in the Air (and it Ain't Love)
         [28935] = true, -- Crushing the Crown
 
         -- Day of the Dead

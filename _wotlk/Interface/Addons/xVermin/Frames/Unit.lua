@@ -3,26 +3,26 @@ local _, xVermin = ...
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
-if xVermin.Class == 'HUNTER' then
-	local ac = CreateFrame('Frame', 'CustomContainer_AmmoCount', CustomContainer_Combat)
-	ac:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
-	ac:SetWidth(1)
-	ac:SetHeight(1)
-	ac.text = ac:CreateFontString(nil, 'ARTWORK')
-	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
-	ac.text:SetText('')
+-- if xVermin.Class == 'HUNTER' then
+-- 	local ac = CreateFrame('Frame', 'CustomContainer_AmmoCount', CustomContainer_Combat)
+-- 	ac:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+-- 	ac:SetWidth(1)
+-- 	ac:SetHeight(1)
+-- 	ac.text = ac:CreateFontString(nil, 'ARTWORK')
+-- 	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+-- 	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+-- 	ac.text:SetText('')
 
-	CharacterAmmoSlotCount:Hide()
+-- 	CharacterAmmoSlotCount:Hide()
 
-	UIParent:HookScript(
-		'OnUpdate',
-		function()
-			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
-			ac.text:SetText(ammoCount)
-		end
-	)
-end
+-- 	UIParent:HookScript(
+-- 		'OnUpdate',
+-- 		function()
+-- 			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
+-- 			ac.text:SetText(ammoCount)
+-- 		end
+-- 	)
+-- end
 
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) reagent count

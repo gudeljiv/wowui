@@ -1,6 +1,6 @@
-## Interface: 30401
+## Interface: 40400
 ## Title: ItemRack - Classic
-## Version: 2.75
+## Version: 4.00
 ## Author: Gello - Updated for Classic by Rottenbeer,Roadblock
 ## SavedVariables: ItemRackSettings, ItemRackItems, ItemRackEvents
 ## SavedVariablesPerCharacter: ItemRackUser

@@ -9,6 +9,21 @@ function CataItemFixes.Load()
     local itemClasses = QuestieDB.itemClasses
 
     return {
+        [18597] = { -- Orcish Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [18598] = { -- Human Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [21145] = { -- Essence of Xandivious
+            [itemKeys.npcDrops] = {},
+        },
+        [31880] = { -- Blood Elf Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [31881] = { -- Draenei Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
         [44911] = { -- Foul Bear Carcass Sample
             [itemKeys.npcDrops] = {32975},
         },
@@ -28,6 +43,12 @@ function CataItemFixes.Load()
             [itemKeys.npcDrops] = {33978},
         },
         [46392] = { -- Venison Steak
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [46396] = { -- Wolvar Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [46397] = { -- Oracle Orphan Whistle
             [itemKeys.class] = itemClasses.QUEST,
         },
         [46702] = { -- Ancient Device Fragment
@@ -171,7 +192,14 @@ function CataItemFixes.Load()
         [52828] = { -- Orb of Ascension
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [52973] = { -- Sunken Cargo
+            [itemKeys.npcDrops] = {},
+        },
+        [52975] = { -- Coilshell Sifter
+            [itemKeys.npcDrops] = {39422},
+        },
         [53009] = { -- Juniper Berries
+            [itemKeys.npcDrops] = {},
             [itemKeys.class] = itemClasses.QUEST,
         },
         [53107] = { -- Flameseer's Staff
@@ -182,6 +210,9 @@ function CataItemFixes.Load()
         },
         [54463] = { -- Flameseer's Staff
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [54745] = { -- Nemesis Shell Fragment
+            [itemKeys.npcDrops] = {40340},
         },
         [54788] = { -- Twilight Pick
             [itemKeys.class] = itemClasses.QUEST,
@@ -231,6 +262,15 @@ function CataItemFixes.Load()
         [56820] = { -- Hammerhead Oil
             [itemKeys.npcDrops] = {42113},
         },
+        [57175] = { -- Canal Crab
+            [itemKeys.npcDrops] = {42339},
+        },
+        [57765] = { -- Muddy Crawfish
+            [itemKeys.npcDrops] = {42548},
+        },
+        [57766] = { -- Prickly Pear Fruit
+            [itemKeys.npcDrops] = {},
+        },
         [58167] = { -- Spirit Totem
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -242,6 +282,9 @@ function CataItemFixes.Load()
         },
         [58950] = { -- Messner's Cage Key
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [58951] = { -- Giant Furious Pike
+            [itemKeys.npcDrops] = {}
         },
         [58969] = { -- Jorgensen's Cage Key
             [itemKeys.class] = itemClasses.QUEST,
@@ -316,6 +359,15 @@ function CataItemFixes.Load()
             [itemKeys.npcDrops] = {},
         },
         [65734] = { -- Twilight Documents
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [68890] = { -- Dragon Kite 2-Pack
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [69027] = { -- Cone of Cold
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [69233] = { -- Cone of Cold
             [itemKeys.class] = itemClasses.QUEST,
         },
         [69815] = { -- Seething Cinder

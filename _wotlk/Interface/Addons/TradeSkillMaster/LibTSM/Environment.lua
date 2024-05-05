@@ -59,7 +59,7 @@ Environment:OnModuleLoad(function()
 		[Environment.FEATURES.REAGENT_BAG] = Environment.IsRetail(),
 		[Environment.FEATURES.CONNECTED_FACTION_AH] = Environment.IsRetail(),
 		[Environment.FEATURES.HONOR_POINTS] = Environment.IsWrathClassic() or Environment.IsCataClassic(),
-		[Environment.FEATURES.MULTIPLE_ENCHANTING_VELLUMS] = Environment.IsWrathClassic() or Environment.IsCataClassic(),
+		[Environment.FEATURES.MULTIPLE_ENCHANTING_VELLUMS] = Environment.IsWrathClassic(),
 		[Environment.FEATURES.SUB_PROFESSION_NAMES] = not Environment.IsRetail(),
 		[Environment.FEATURES.AH_COPPER] = not Environment.IsRetail(),
 		[Environment.FEATURES.AH_STACKS] = not Environment.IsRetail(),

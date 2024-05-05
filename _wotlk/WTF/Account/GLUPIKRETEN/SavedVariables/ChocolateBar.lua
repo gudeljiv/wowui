@@ -750,9 +750,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1182045,
-		["timeStamp"] = 435953.614,
-		["timeAtThisLevel"] = 151025,
+		["total"] = 1202248,
+		["timeStamp"] = 1101891.735,
+		["timeAtThisLevel"] = 171228,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,
@@ -779,9 +779,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1990361,
-		["timeStamp"] = 690123.853,
-		["timeAtThisLevel"] = 897814,
+		["total"] = 2133383,
+		["timeStamp"] = 1101636.772,
+		["timeAtThisLevel"] = 1040836,
 	},
 	["Koloman-"] = {
 		["total"] = 129,

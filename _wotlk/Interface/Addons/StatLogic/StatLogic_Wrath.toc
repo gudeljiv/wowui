@@ -1,0 +1,21 @@
+## Interface: 30403
+## Title: StatLogic
+## Author: Whitetooth, raethkcj
+## X-License: GPL v2
+
+libs\LibStub\LibStub.lua
+libs\AceComm-3.0\AceComm-3.0.xml
+libs\LibSerialize\lib.xml
+libs\LibDeflate\lib.xml
+
+libs\UTF8\utf8data.lua
+libs\UTF8\utf8.lua
+
+Init.lua
+Stats.lua
+
+locales\locales.xml
+
+StatLogic.lua
+Wrath_Logic.lua
+Global_Logic.lua

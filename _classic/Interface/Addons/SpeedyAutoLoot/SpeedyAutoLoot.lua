@@ -196,20 +196,17 @@ function AutoLoot:ShowLootFrame(delayed)
   if internal.ElvUI then
     internal.ShowElvUILootFrame();
   elseif LootFrame:IsEventRegistered("LOOT_OPENED") then
-    --if LE_EXPANSION_LEVEL_CURRENT < internal.Dragonflight then
       LootFrame:SetParent(UIParent);
       LootFrame:SetFrameStrata("HIGH");
       self:AnchorLootFrame();
       if delayed then
         self:AnchorLootFrame();
       end
-    --end
   end
 end
 
 function AutoLoot:ResetLootFrame()
   if not internal.ElvUI and LootFrame:IsEventRegistered("LOOT_OPENED") then
-    --if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then return end
     LootFrame:SetParent(internal._frame);
   end
 end

@@ -1,8 +1,9 @@
 # TomTom
 
-## [v3.6.0-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.0-release) (2024-04-22)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.0-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v3.6.1-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.1-release) (2024-05-02)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.1-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Update TOC for Cataclysm Classic  
 - Support 11.0 by removing some broken functionality  
 - Update TOC for 10.2.6  
 - Update toc for 10.2.5 and 1.15.0  
@@ -694,4 +695,3 @@
 - * Fix for the crazy arrow  
 - .toc update  
 - * Updated to Dongle-1.1  
-- * Added a compat version of TomTom:AddZWaypoint(c,z,x,y,desc) that works with other zones  

@@ -6,7 +6,7 @@ TotemTimers_GlobalSettings = {
 	},
 	["Version"] = 11.3,
 	["Profiles"] = {
-		["Dopecoil"] = {
+		["Jutarnjedrvo"] = {
 			{
 				["party"] = "default",
 				["scenario"] = "default",
@@ -32,7 +32,7 @@ TotemTimers_GlobalSettings = {
 				["none"] = "default",
 			}, -- [3]
 		},
-		["Jutarnjedrvo"] = {
+		["Dopecoil"] = {
 			{
 				["party"] = "default",
 				["scenario"] = "default",
@@ -98,9 +98,9 @@ TotemTimers_Profiles = {
 		["TimerBarTexture"] = "xVerminClean",
 		["TimerBarColor"] = {
 			["a"] = 1,
-			["b"] = 1,
-			["g"] = 0.5,
 			["r"] = 0.5,
+			["g"] = 0.5,
+			["b"] = 1,
 		},
 		["WindfuryDownrank"] = false,
 		["TimerSize"] = 36,
@@ -113,9 +113,9 @@ TotemTimers_Profiles = {
 		["EarthShieldLeftButton"] = "recast",
 		["TimeColor"] = {
 			["a"] = 1,
-			["b"] = 1,
-			["g"] = 1,
 			["r"] = 1,
+			["g"] = 1,
+			["b"] = 1,
 		},
 		["FlameShockDurationStopPulse"] = false,
 		["Arrange"] = "horizontal",
@@ -310,75 +310,75 @@ TotemTimers_Profiles = {
 		["Warnings"] = {
 			["TotemWarning"] = {
 				["a"] = 1,
-				["enabled"] = true,
-				["r"] = 1,
-				["sound"] = "",
-				["text"] = "Totem Expiring",
-				["g"] = 0,
 				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Totem Expiring",
+				["sound"] = "",
+				["enabled"] = true,
 			},
 			["PowerSurge"] = {
 				["a"] = 1,
-				["enabled"] = false,
+				["b"] = 0,
 				["r"] = 1,
-				["sound"] = "",
+				["g"] = 0,
 				["text"] = "Power Surge",
-				["g"] = 0,
-				["b"] = 0,
-			},
-			["Shield"] = {
-				["a"] = 1,
-				["enabled"] = false,
-				["r"] = 1,
 				["sound"] = "",
-				["text"] = "Shield removed",
-				["g"] = 0,
-				["b"] = 0,
-			},
-			["Maelstrom"] = {
-				["a"] = 1,
 				["enabled"] = false,
-				["r"] = 1,
-				["sound"] = "",
-				["text"] = "Maelstrom",
-				["g"] = 0,
-				["b"] = 0,
 			},
 			["TotemDestroyed"] = {
 				["a"] = 1,
-				["enabled"] = true,
+				["b"] = 0,
 				["r"] = 1,
-				["sound"] = "",
+				["g"] = 0,
 				["text"] = "Totem Destroyed",
-				["g"] = 0,
-				["b"] = 0,
-			},
-			["EarthShield"] = {
-				["a"] = 1,
-				["enabled"] = false,
-				["r"] = 1,
 				["sound"] = "",
-				["text"] = "Shield removed",
-				["g"] = 0,
-				["b"] = 0,
+				["enabled"] = true,
 			},
 			["TotemExpiration"] = {
 				["a"] = 1,
-				["enabled"] = true,
-				["r"] = 1,
-				["sound"] = "",
-				["text"] = "Totem Expired",
-				["g"] = 0,
 				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Totem Expired",
+				["sound"] = "",
+				["enabled"] = true,
+			},
+			["Shield"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Shield removed",
+				["sound"] = "",
+				["enabled"] = false,
+			},
+			["EarthShield"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Shield removed",
+				["sound"] = "",
+				["enabled"] = false,
+			},
+			["Maelstrom"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Maelstrom",
+				["sound"] = "",
+				["enabled"] = false,
 			},
 			["Weapon"] = {
 				["a"] = 1,
-				["enabled"] = false,
-				["r"] = 1,
-				["sound"] = "",
-				["text"] = "Shield removed",
-				["g"] = 0,
 				["b"] = 0,
+				["r"] = 1,
+				["g"] = 0,
+				["text"] = "Shield removed",
+				["sound"] = "",
+				["enabled"] = false,
 			},
 		},
 		["EarthShieldTargetName"] = true,
@@ -411,24 +411,20 @@ TotemTimers_Profiles = {
 		["EnhanceCDsTimeHeight"] = 12,
 		["CooldownSpacing"] = 5,
 		["CastBarDirection"] = "up",
-		["TrackerTimeSpacing"] = 0,
-		["EnhanceCDsSize"] = 30,
+		["WeaponWarningStopPulse"] = false,
+		["TwistingTimer"] = false,
 		["TrackerTimePos"] = "BOTTOM",
 		["CrowdControlBindElemental"] = true,
-		["TrackerSize"] = 30,
+		["EnhanceCDsOOCAlpha"] = 0.4,
 		["EnhanceCDsClickthrough"] = false,
 		["TrackerTimeHeight"] = 12,
+		["TotemTimerBarWidth"] = 36,
+		["EarthShieldRightButton"] = "target",
 		["Tooltips"] = true,
-		["OverlayGlow"] = true,
-		["EnhanceCDsFlameShockDuration_Specialization"] = {
-			true, -- [1]
-			false, -- [2]
-			true, -- [3]
-		},
 		["ShieldButton4"] = 408514,
-		["OpenOnRightclick"] = false,
+		["TimerTimePos"] = "BOTTOM",
 		["EnhanceCDsFlameShockDuration"] = true,
-		["TotemMenuSpacing"] = 0,
+		["MaelstromStopPulse"] = false,
 		["TotemSets"] = {
 			{
 				3599, -- [1]
@@ -438,8 +434,12 @@ TotemTimers_Profiles = {
 				["name"] = "MAIN",
 			}, -- [1]
 		},
-		["WeaponTracker"] = false,
-		["CheckPlayerRange"] = true,
+		["FulminationGlow"] = true,
+		["ShieldChargesOnly"] = false,
+		["StopPulse"] = false,
+		["LongCooldownSpells"] = {
+		},
+		["WeaponBarDirection"] = "auto",
 		["TimerPositions"] = {
 			{
 				"CENTER", -- [1]
@@ -470,17 +470,17 @@ TotemTimers_Profiles = {
 				40, -- [5]
 			}, -- [4]
 		},
-		["LongCooldownSpells"] = {
-		},
-		["WeaponBarDirection"] = "auto",
-		["StopPulse"] = false,
-		["ShieldChargesOnly"] = false,
-		["FulminationGlow"] = true,
+		["CheckPlayerRange"] = true,
+		["WeaponTracker"] = false,
 		["TimeStyle"] = "mm:ss",
-		["MaelstromStopPulse"] = false,
-		["TimerTimePos"] = "BOTTOM",
-		["EarthShieldRightButton"] = "target",
-		["TotemTimerBarWidth"] = 36,
+		["TotemMenuSpacing"] = 0,
+		["OpenOnRightclick"] = false,
+		["OverlayGlow"] = true,
+		["EnhanceCDsFlameShockDuration_Specialization"] = {
+			true, -- [1]
+			false, -- [2]
+			true, -- [3]
+		},
 		["CDTimersOnButtons"] = true,
 		["LastTotems"] = {
 			10478, -- [1]
@@ -488,9 +488,9 @@ TotemTimers_Profiles = {
 			10462, -- [3]
 			10600, -- [4]
 		},
-		["EnhanceCDsOOCAlpha"] = 0.4,
-		["TwistingTimer"] = false,
-		["WeaponWarningStopPulse"] = false,
+		["TrackerSize"] = 30,
+		["EnhanceCDsSize"] = 30,
+		["TrackerTimeSpacing"] = 0,
 		["Timer_Clickthrough"] = false,
 		["TotemOrder"] = {
 			{

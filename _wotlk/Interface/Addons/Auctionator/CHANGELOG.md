@@ -1,6 +1,7 @@
 # Auctionator
 
-## [10.2.36](https://github.com/Auctionator/Auctionator/tree/10.2.36) (2024-04-28)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.35...10.2.36) 
+## [10.2.37](https://github.com/Auctionator/Auctionator/tree/10.2.37) (2024-05-03)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.36...10.2.37) 
 
-- Patch so that Auctionator passes checks for Cataclysm on Curseforge  
+- Selling: Remove unused GetItemStats call  
+- The War Within: Use C\_Item namespace for item info APIs  

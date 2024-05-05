@@ -1,4 +1,4 @@
-## Interface: 30403
+## Interface: 40400
 ## Notes: Instance lockout tracking with mob count/xp/gold/trade logs, battleground/arena logs, and much more.
 ## Title: Nova Instance Tracker
 ## Author: Novaspark-Arugal OCE

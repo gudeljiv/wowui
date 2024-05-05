@@ -447,17 +447,11 @@ _detalhes_global = {
 	},
 	["userCustomSpells"] = {
 	},
-	["last_changelog_size"] = 21984,
+	["last_changelog_size"] = 21405,
 	["immersion_unit_special_icons"] = true,
 	["lastUpdateWarning"] = 1701859652,
 	["npcid_pool"] = {
-		[31010] = "Azure Mage Slayer",
-		[205999] = "Mirror Image <Azure Binder>",
-		[205998] = "Mirror Image <Azure Invader>",
-		[31007] = "Azure Binder",
-		[31008] = "Azure Invader",
-		[31009] = "Azure Spellbreaker",
-		[205997] = "Mirror Image <Azure Invader>",
+		[31233] = "Sinewy Wolf",
 	},
 	["death_recap"] = {
 		["enabled"] = true,
@@ -478,101 +472,29 @@ _detalhes_global = {
 		["font_outline"] = "NONE",
 		["bar_texture"] = "Skyline",
 	},
-	["frame_background_color"] = {
-		0.1215, -- [1]
-		0.1176, -- [2]
-		0.1294, -- [3]
-		0.8, -- [4]
-	},
-	["spell_pool"] = {
-		2, -- [1]
-		[26017] = 2,
-		[65014] = 4,
-		[60196] = 2,
-		[55767] = 5,
-		[53739] = 2,
-		[52985] = 5,
-		[20467] = 2,
-		[57319] = 2,
-		[57970] = 4,
-		[48068] = 5,
-		[31786] = 2,
-		[14181] = 4,
-		[424407] = 2,
-		[33110] = 5,
-		[41635] = 5,
-		[47755] = 5,
-		[48664] = 4,
-		[586] = 5,
-		[48168] = 5,
-		[15473] = 5,
-		[33198] = 5,
-		[48827] = 2,
-		[53022] = 5,
-		[51637] = 4,
-		[25899] = 2,
-		[20186] = 2,
-		[48125] = 5,
-		[25780] = 2,
-		[67703] = 4,
-		[54499] = 2,
-		[48665] = 4,
-		[63655] = 4,
-		[48300] = 5,
-		[63675] = 5,
-		[48066] = 5,
-		[53023] = 5,
-		[48074] = 5,
-		[59889] = 5,
-		[424455] = 2,
-		[75999] = 5,
-		[69403] = 2,
-		[20375] = 2,
-		[57822] = 5,
-		[47753] = 5,
-		[48162] = 5,
-		[63654] = 5,
-		[67713] = 5,
-		[15258] = 5,
-		[20268] = 2,
-		[6788] = 5,
-		[63529] = 2,
-		[348704] = 2,
-		[48170] = 5,
-		[15286] = 5,
-		[54043] = 2,
-		[53742] = 2,
-		[57965] = 4,
-		[68055] = 2,
-		[63944] = 5,
-		[67696] = 5,
-		[15290] = 5,
-		[56160] = 5,
-		[67714] = 5,
-		[57993] = 4,
-		[72221] = 2,
-	},
 	["encounter_journal_cache"] = {
 	},
+	["spell_pool"] = {
+	},
 	["deathlog_line_height"] = 16,
+	["merge_pet_abilities"] = false,
 	["shield_spellid_cache"] = {
 	},
-	["latest_encounter_spell_pool_access"] = 1710334114,
-	["merge_pet_abilities"] = false,
-	["auto_open_news_window"] = false,
+	["latest_encounter_spell_pool_access"] = 1714552349,
 	["spell_category_latest_sent"] = 0,
-	["got_first_run"] = true,
-	["parser_options"] = {
-		["energy_overflow"] = false,
-		["shield_overheal"] = false,
-	},
+	["auto_open_news_window"] = false,
 	["damage_scroll_position"] = {
 		["y"] = -184.4008178710938,
 		["x"] = -66.318603515625,
 		["point"] = "RIGHT",
 		["scale"] = 1,
 	},
+	["got_first_run"] = true,
 	["spell_category_savedtable"] = {
+	},
+	["parser_options"] = {
+		["energy_overflow"] = false,
+		["shield_overheal"] = false,
 	},
 	["savedCustomSpells"] = {
 		{
@@ -616,12 +538,19 @@ _detalhes_global = {
 			"Interface\\ICONS\\Ability_Creature_Poison_02", -- [3]
 		}, -- [8]
 	},
-	["report_where"] = "GUILD",
+	["merge_player_abilities"] = false,
+	["spell_category_latest_query"] = 0,
 	["all_switch_config"] = {
 		["scale"] = 1,
 		["font_size"] = 10,
 	},
-	["merge_player_abilities"] = false,
+	["boss_mods_timers"] = {
+		["encounter_timers_bw"] = {
+		},
+		["latest_boss_mods_access"] = 1714552349,
+		["encounter_timers_dbm"] = {
+		},
+	},
 	["__profiles"] = {
 		["xVermin"] = {
 			["show_arena_role_icon"] = false,
@@ -665,6 +594,7 @@ _detalhes_global = {
 			["time_type"] = 2,
 			["data_cleanup_logout"] = false,
 			["instances_no_libwindow"] = false,
+			["grouping_horizontal_gap"] = 0,
 			["overall_clear_newtorghast"] = true,
 			["deadlog_limit"] = 12,
 			["trash_concatenate"] = false,
@@ -705,6 +635,7 @@ _detalhes_global = {
 					0.196078431372549, -- [3]
 					0.8, -- [4]
 				},
+				["rounded_corner"] = true,
 				["divisor_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -982,7 +913,7 @@ _detalhes_global = {
 							1, -- [3]
 						},
 					},
-					["fontstrings_text3_anchor"] = 35,
+					["fullborder_shown"] = false,
 					["switch_healer"] = {
 						1, -- [1]
 						1, -- [2]
@@ -1199,7 +1130,12 @@ _detalhes_global = {
 							["upper_enabled"] = false,
 						},
 						["percent_type"] = 1,
-						["textL_offset"] = 0,
+						["textL_outline_small_color"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
 						["textL_translit_text"] = false,
 						["height"] = 19,
 						["texture_file"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
@@ -1260,12 +1196,7 @@ _detalhes_global = {
 						["icon_file"] = "",
 						["font_face"] = "Arial Narrow",
 						["texture_class_colors"] = true,
-						["textL_outline_small_color"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
+						["textL_offset"] = 0,
 						["fast_ps_update"] = false,
 						["textR_separator"] = "NONE",
 						["font_size"] = 11,
@@ -1279,7 +1210,11 @@ _detalhes_global = {
 						["n_enemies"] = 3,
 					},
 					["clickthrough_window"] = false,
-					["fullborder_shown"] = false,
+					["switch_damager_in_combat"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
 					["hide_in_combat"] = false,
 					["posicao"] = {
 						["normal"] = {
@@ -1295,11 +1230,7 @@ _detalhes_global = {
 							["h"] = 200,
 						},
 					},
-					["switch_damager_in_combat"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
+					["fontstrings_text3_anchor"] = 35,
 					["fontstrings_text_limit_offset"] = -10,
 					["wallpaper"] = {
 						["enabled"] = false,
@@ -1514,7 +1445,7 @@ _detalhes_global = {
 							1, -- [3]
 						},
 					},
-					["fontstrings_text3_anchor"] = 35,
+					["fullborder_shown"] = false,
 					["switch_healer"] = {
 						2, -- [1]
 						1, -- [2]
@@ -1728,7 +1659,7 @@ _detalhes_global = {
 						},
 						["font_size"] = 11,
 						["textL_enable_custom_text"] = false,
-						["textL_offset"] = 0,
+						["start_after_icon"] = true,
 						["textL_translit_text"] = false,
 						["texture_custom_file"] = "Interface\\",
 						["texture_file"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
@@ -1789,7 +1720,7 @@ _detalhes_global = {
 						["arena_role_icon_size_offset"] = -10,
 						["font_face"] = "Arial Narrow",
 						["texture_class_colors"] = true,
-						["start_after_icon"] = true,
+						["textL_offset"] = 0,
 						["fast_ps_update"] = false,
 						["textR_separator"] = "NONE",
 						["models"] = {
@@ -1810,7 +1741,11 @@ _detalhes_global = {
 						["n_enemies"] = 3,
 					},
 					["clickthrough_window"] = false,
-					["fullborder_shown"] = false,
+					["switch_damager_in_combat"] = {
+						2, -- [1]
+						1, -- [2]
+						9, -- [3]
+					},
 					["hide_in_combat"] = false,
 					["posicao"] = {
 						["normal"] = {
@@ -1826,11 +1761,7 @@ _detalhes_global = {
 							["h"] = 200,
 						},
 					},
-					["switch_damager_in_combat"] = {
-						2, -- [1]
-						1, -- [2]
-						9, -- [3]
-					},
+					["fontstrings_text3_anchor"] = 35,
 					["fontstrings_text_limit_offset"] = -10,
 					["wallpaper"] = {
 						["enabled"] = false,
@@ -3752,7 +3683,10 @@ _detalhes_global = {
 			},
 			["deny_score_messages"] = false,
 			["disable_alldisplays_window"] = false,
-			["total_abbreviation"] = 2,
+			["trash_auto_remove"] = false,
+			["hotcorner_topleft"] = {
+				["hide"] = false,
+			},
 			["class_colors"] = {
 				["HUNTER"] = {
 					0.67, -- [1]
@@ -3862,12 +3796,9 @@ _detalhes_global = {
 					0.89019, -- [3]
 				},
 			},
-			["hotcorner_topleft"] = {
-				["hide"] = false,
-			},
 			["segments_amount_to_save"] = 40,
 			["clear_graphic"] = true,
-			["trash_auto_remove"] = false,
+			["total_abbreviation"] = 2,
 			["animation_speed_triggertravel"] = 5,
 			["options_group_edit"] = true,
 			["broadcaster_enabled"] = false,
@@ -3915,23 +3846,23 @@ _detalhes_global = {
 		},
 	},
 	["immersion_special_units"] = true,
-	["spell_category_latest_query"] = 0,
-	["boss_mods_timers"] = {
-		["encounter_timers_bw"] = {
-		},
-		["latest_boss_mods_access"] = 1710334114,
-		["encounter_timers_dbm"] = {
-		},
-	},
 	["disable_talent_feature"] = true,
+	["titletext_showtimer_always"] = false,
+	["check_stuttering"] = false,
 	["mobs_data"] = {
 	},
 	["played_class_time"] = true,
-	["check_stuttering"] = false,
+	["aura_tracker_frame"] = {
+		["scaletable"] = {
+			["scale"] = 1,
+		},
+		["position"] = {
+		},
+	},
 	["class_time_played"] = {
 		["DEATHKNIGHT"] = 98672.07699999926,
 		["WARRIOR"] = 139393.0519999992,
-		["SHAMAN"] = 3456.419999999926,
+		["PALADIN"] = 11614.79399999999,
 		[2] = {
 			["DEATHKNIGHT"] = 833634.1060000029,
 			["WARRIOR"] = 1070102.484000003,
@@ -3946,17 +3877,52 @@ _detalhes_global = {
 		},
 		["PRIEST"] = 34157.58199999982,
 		["HUNTER"] = 113146.7320000007,
+		[3] = {
+			["DEATHKNIGHT"] = 112.9400000000605,
+			["WARRIOR"] = 1283.267999999924,
+			["HUNTER"] = 228.5570000000298,
+		},
 		["DRUID"] = 108555.0839999999,
 		["ROGUE"] = 301.7260000000006,
-		["PALADIN"] = 11614.79399999999,
+		["SHAMAN"] = 3456.419999999926,
 	},
-	["slash_me_used"] = false,
-	["aura_tracker_frame"] = {
-		["scaletable"] = {
-			["scale"] = 1,
+	["tutorial"] = {
+		["unlock_button"] = 4,
+		["main_help_button"] = 11580,
+		["ATTRIBUTE_SELECT_TUTORIAL1"] = true,
+		["logons"] = 11580,
+		["STREAMER_FEATURES_POPUP1"] = true,
+		["ctrl_click_close_tutorial"] = false,
+		["STREAMER_PLUGIN_FIRSTRUN"] = true,
+		["ENCOUNTER_BREAKDOWN_PHASES"] = true,
+		["ENCOUNTER_BREAKDOWN_CHART"] = true,
+		["FULL_DELETE_WINDOW"] = true,
+		["DETAILS_INFO_TUTORIAL1"] = true,
+		["FORGE_TUTORIAL"] = true,
+		["ENCOUNTER_BREAKDOWN_SPELLAURAS"] = true,
+		["alert_frames"] = {
+			false, -- [1]
+			false, -- [2]
+			false, -- [3]
+			false, -- [4]
+			false, -- [5]
+			false, -- [6]
 		},
-		["position"] = {
-		},
+		["WINDOW_LOCK_UNLOCK1"] = true,
+		["WINDOW_GROUP_MAKING1"] = true,
+		["OVERALLDATA_WARNING1"] = 22,
+		["version_announce"] = 0,
+		["OPTIONS_PANEL_OPENED"] = true,
+		["HISTORYPANEL_TUTORIAL"] = true,
+		["bookmark_tutorial"] = false,
+		["DETAILS_INFO_TUTORIAL2"] = 10,
+		["MIN_COMBAT_TIME"] = true,
+	},
+	["frame_background_color"] = {
+		0.1215, -- [1]
+		0.1176, -- [2]
+		0.1294, -- [3]
+		0.8, -- [4]
 	},
 	["damage_scroll_auto_open"] = true,
 	["switchSaved"] = {
@@ -4015,6 +3981,38 @@ _detalhes_global = {
 		},
 	},
 	["spell_category_latest_save"] = 0,
+	["run_code"] = {
+		["on_specchanged"] = "\n-- run when the player changes its spec",
+		["on_zonechanged"] = "\n-- when the player changes zone, this code will run",
+		["on_init"] = "\n-- code to run when Details! initializes, put here code which only will run once\n-- this also will run then the profile is changed\n\n--size of the death log tooltip in the Deaths display (default 350)\nDetails.death_tooltip_width = 350;\n\n--when in arena or battleground, details! silently switch to activity time (goes back to the old setting on leaving, default true)\nDetails.force_activity_time_pvp = true;\n\n--speed of the bar animations (default 33)\nDetails.animation_speed = 33;\n\n--threshold to trigger slow or fast speed (default 0.45)\nDetails.animation_speed_mintravel = 0.45;\n\n--call to update animations\nDetails:RefreshAnimationFunctions();\n\n--max window size, does require a /reload to work (default 480 x 450)\nDetails.max_window_size.width = 480;\nDetails.max_window_size.height = 450;\n\n--use the arena team color as the class color (default true)\nDetails.color_by_arena_team = true;\n\n--use the role icon in the player bar when inside an arena (default false)\nDetails.show_arena_role_icon = false;\n\n--how much time the update warning is shown (default 10)\nDetails.update_warning_timeout = 10;",
+		["on_groupchange"] = "\n-- this code runs when the player enter or leave a group",
+		["on_leavecombat"] = "\n-- this code runs when the player leave combat",
+		["on_entercombat"] = "\n-- this code runs when the player enters in combat",
+	},
+	["realm_sync"] = true,
+	["latest_npcid_pool_access"] = 1714552349,
+	["item_level_pool"] = {
+	},
+	["spellid_ignored"] = {
+	},
+	["createauraframe"] = {
+		["y"] = 771.4669189453125,
+		["x"] = 1144.169128417969,
+		["point"] = "TOPRIGHT",
+		["scale"] = 1,
+	},
+	["data_wipes_exp"] = {
+		["9"] = true,
+		["14"] = false,
+		["13"] = false,
+		["12"] = false,
+		["11"] = false,
+		["10"] = false,
+	},
+	["mobs_data_compiled"] = {
+	},
+	["exit_errors"] = {
+	},
 	["mythic_plus"] = {
 		["always_in_combat"] = false,
 		["make_overall_boss_only"] = false,
@@ -4037,51 +4035,8 @@ _detalhes_global = {
 		["last_mythicrun_chart"] = {
 		},
 	},
-	["realm_sync"] = true,
-	["latest_npcid_pool_access"] = 1710334114,
-	["item_level_pool"] = {
-		["Player-4465-02BB4683"] = {
-			["time"] = 1710610724,
-			["name"] = "Vermina",
-			["ilvl"] = 221,
-		},
-		["Player-4477-0525AB6C"] = {
-			["time"] = 1710610722,
-			["name"] = "Tripletwo-Venoxis",
-			["ilvl"] = 258,
-		},
-		["Player-4476-05403F22"] = {
-			["time"] = 1710610722,
-			["name"] = "Ayamcamani-Gehennas",
-			["ilvl"] = 254,
-		},
-		["Player-4476-05401707"] = {
-			["time"] = 1710610727,
-			["name"] = "Panpoziomek-Gehennas",
-			["ilvl"] = 254,
-		},
-		["Player-4455-03D2FBF7"] = {
-			["time"] = 1710610641,
-			["name"] = "Junkbox-Razorfen",
-			["ilvl"] = 221,
-		},
-	},
-	["spellid_ignored"] = {
-	},
-	["createauraframe"] = {
-		["y"] = 771.4669189453125,
-		["x"] = 1144.169128417969,
-		["point"] = "TOPRIGHT",
-		["scale"] = 1,
-	},
-	["data_wipes_exp"] = {
-		["9"] = true,
-		["14"] = false,
-		["13"] = false,
-		["12"] = false,
-		["11"] = false,
-		["10"] = false,
-	},
+	["show_warning_id1"] = true,
+	["slash_me_used"] = false,
 	["global_plugin_database"] = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["encounter_timers_bw"] = {
@@ -4089,51 +4044,6 @@ _detalhes_global = {
 			["encounter_timers_dbm"] = {
 			},
 		},
-	},
-	["run_code"] = {
-		["on_specchanged"] = "\n-- run when the player changes its spec",
-		["on_zonechanged"] = "\n-- when the player changes zone, this code will run",
-		["on_init"] = "\n-- code to run when Details! initializes, put here code which only will run once\n-- this also will run then the profile is changed\n\n--size of the death log tooltip in the Deaths display (default 350)\nDetails.death_tooltip_width = 350;\n\n--when in arena or battleground, details! silently switch to activity time (goes back to the old setting on leaving, default true)\nDetails.force_activity_time_pvp = true;\n\n--speed of the bar animations (default 33)\nDetails.animation_speed = 33;\n\n--threshold to trigger slow or fast speed (default 0.45)\nDetails.animation_speed_mintravel = 0.45;\n\n--call to update animations\nDetails:RefreshAnimationFunctions();\n\n--max window size, does require a /reload to work (default 480 x 450)\nDetails.max_window_size.width = 480;\nDetails.max_window_size.height = 450;\n\n--use the arena team color as the class color (default true)\nDetails.color_by_arena_team = true;\n\n--use the role icon in the player bar when inside an arena (default false)\nDetails.show_arena_role_icon = false;\n\n--how much time the update warning is shown (default 10)\nDetails.update_warning_timeout = 10;",
-		["on_groupchange"] = "\n-- this code runs when the player enter or leave a group",
-		["on_leavecombat"] = "\n-- this code runs when the player leave combat",
-		["on_entercombat"] = "\n-- this code runs when the player enters in combat",
-	},
-	["mobs_data_compiled"] = {
-	},
-	["exit_errors"] = {
-	},
-	["show_warning_id1"] = true,
-	["tutorial"] = {
-		["unlock_button"] = 4,
-		["main_help_button"] = 11568,
-		["ATTRIBUTE_SELECT_TUTORIAL1"] = true,
-		["logons"] = 11568,
-		["STREAMER_FEATURES_POPUP1"] = true,
-		["ctrl_click_close_tutorial"] = false,
-		["STREAMER_PLUGIN_FIRSTRUN"] = true,
-		["ENCOUNTER_BREAKDOWN_PHASES"] = true,
-		["ENCOUNTER_BREAKDOWN_CHART"] = true,
-		["FULL_DELETE_WINDOW"] = true,
-		["DETAILS_INFO_TUTORIAL1"] = true,
-		["FORGE_TUTORIAL"] = true,
-		["ENCOUNTER_BREAKDOWN_SPELLAURAS"] = true,
-		["alert_frames"] = {
-			false, -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-		},
-		["WINDOW_LOCK_UNLOCK1"] = true,
-		["WINDOW_GROUP_MAKING1"] = true,
-		["OVERALLDATA_WARNING1"] = 22,
-		["version_announce"] = 0,
-		["OPTIONS_PANEL_OPENED"] = true,
-		["HISTORYPANEL_TUTORIAL"] = true,
-		["bookmark_tutorial"] = false,
-		["DETAILS_INFO_TUTORIAL2"] = 10,
-		["MIN_COMBAT_TIME"] = true,
 	},
 	["data_sync"] = false,
 	["savedStyles"] = {
@@ -4577,10 +4487,10 @@ _detalhes_global = {
 	},
 	["details_auras"] = {
 	},
-	["titletext_showtimer_always"] = false,
+	["report_where"] = "GUILD",
 	["savedTimeCaptures"] = {
 	},
-	["latest_news_saw"] = "3.4.3 12553",
+	["latest_news_saw"] = "4.4.0 12651",
 	["custom"] = {
 		{
 			["source"] = false,
@@ -4833,7 +4743,7 @@ _detalhes_global = {
 		"8 - Saving nicktag cache.", -- [8]
 		"9 - Saving Auto Run Code.", -- [9]
 	},
-	["latest_spell_pool_access"] = 1710334114,
+	["latest_spell_pool_access"] = 1714552349,
 	["show_aug_predicted_spell_damage"] = false,
 	["breakdown_spell_tab"] = {
 		["blockspell_padding"] = 5,

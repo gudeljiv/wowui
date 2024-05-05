@@ -239,24 +239,18 @@ f:SetScript(
 		xVermin.CheckIfLoadedWithTimer(
 			'PetFrame',
 			function()
-				PetFrameHealthBarText:Hide()
-				PetFrameHealthBarTextLeft:Hide()
-				PetFrameHealthBarTextRight:Hide()
-				PetFrameHealthBarText.Show = function()
-				end
-				PetFrameHealthBarTextLeft.Show = function()
-				end
-				PetFrameHealthBarTextRight.Show = function()
-				end
-				PetFrameManaBarText:Hide()
-				PetFrameManaBarTextLeft:Hide()
-				PetFrameManaBarTextRight:Hide()
-				PetFrameManaBarText.Show = function()
-				end
-				PetFrameManaBarTextLeft.Show = function()
-				end
-				PetFrameManaBarTextRight.Show = function()
-				end
+				-- PetFrameHealthBarText:Hide()
+				-- PetFrameHealthBarTextLeft:Hide()
+				-- PetFrameHealthBarTextRight:Hide()
+				-- PetFrameHealthBarText.Show = function()end
+				-- PetFrameHealthBarTextLeft.Show = function()end
+				-- PetFrameHealthBarTextRight.Show = function()end
+				-- PetFrameManaBarText:Hide()
+				-- PetFrameManaBarTextLeft:Hide()
+				-- PetFrameManaBarTextRight:Hide()
+				-- PetFrameManaBarText.Show = function()end
+				-- PetFrameManaBarTextLeft.Show = function()end
+				-- PetFrameManaBarTextRight.Show = function()end
 			end
 		)
 

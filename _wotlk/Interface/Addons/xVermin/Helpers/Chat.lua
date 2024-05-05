@@ -292,7 +292,7 @@ local function SetChat()
 		local BottomButton = _G[v:GetName() .. 'ButtonFrameBottomButton']
 		local UpButton = _G[v:GetName() .. 'ButtonFrameUpButton']
 		local DownButton = _G[v:GetName() .. 'ButtonFrameDownButton']
-		local MinimizeButton = _G[v:GetName() .. 'ButtonFrameMinimizeButton']
+		local MinimizeButton = _G[v:GetName() .. 'MinimizeButton']
 
 		UpButton:Hide()
 		UpButton.Show = function()
@@ -303,7 +303,7 @@ local function SetChat()
 		end
 
 		MinimizeButton:Hide()
-		DownButton.Show = function()
+		MinimizeButton.Show = function()
 		end
 
 		BottomButton:ClearAllPoints()

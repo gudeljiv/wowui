@@ -5,17 +5,19 @@ Translated by:
 - Orsana \ StingerSoft \ Swix
 ]]
 
+local _, addon = ...
+
+---@type RatingBusterLocale
 local L = LibStub("AceLocale-3.0"):NewLocale("RatingBuster", "ruRU")
 if not L then return end
+addon.S = {}
+local S = addon.S
+local StatLogic = LibStub("StatLogic")
 -- This file is coded in UTF-8
--- If you don't have a editor that can save in UTF-8, I recommend NotePad++ or Ultraedit
 ----
 -- To translate AceLocale strings, replace true with the translation string
--- Before: L["Show Item ID"] = "Показать ID предмета",
+-- Before: L["Show Item ID"] = true,
 -- After:  L["Show Item ID"] = "Показывать ID",
----------------
--- Waterfall --
----------------
 L["RatingBuster Options"] = "Окно настроек"
 L["Enabled"] = "Включён"
 L["Suspend/resume this addon"] = "Отключить/Запустить аддон"
@@ -32,45 +34,35 @@ L["Profiles"] = "Профили"
 -- /rb win
 L["Options Window"] = "Окно настроек"
 L["Shows the Options Window"] = "Показать окно настроек"
--- /rb hidebzcomp
-L["Hide Blizzard Item Comparisons"] = "Скрыть сравнение от Blizzardа"
-L["Disable Blizzard stat change summary when using the built-in comparison tooltip"] = "Отключить сравнение предметов Blizzard, если используется метод сравнения RatingBusterа"
 -- /rb statmod
 L["Enable Stat Mods"] = "Включить модуль статистики"
 L["Enable support for Stat Mods"] = "Включает поддержку модуля статистики"
--- /rb subtract_equip
---L["Enable Subtract Equipped Stats"] = ""
---L["Enable for more accurate calculation of Mana Regen from Intellect and Spirit, and diminishing stats like Dodge, Parry, Resilience"] = ""
-
--- /rb enable_reforge_ui
-L["Enable integration with Blizzard Reforging UI"] = "Включить интеграцию с интерфейсом перековки Blizzard."
-L["Add rating information to the Blizzard Reforging UI"] = "Добавить рейтинг инфо в Blizzard интерфейс перековки (Катаклизм)"
-
+-- /rb avoidancedr
+L["Enable Avoidance Diminishing Returns"] = "Включить убывания уклонений от удара"
+L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Значения уклонения, парирования, уклонений от удара при расчетах будет использоваться формула убывания (deminishing return) уклонений от удара по вашим текущим данным"
+-- /rb itemid
+L["Show ItemID"] = "ID предмета"
+L["Show the ItemID in tooltips"] = "Показывать ID предмета в описании"
+-- /rb itemlevel
+L["Show ItemLevel"] = "Уровень предмета"
+L["Show the ItemLevel in tooltips"] = "Показывать уровень предмета в описании"
 -- /rb usereqlv
-L["Use Required Level"] = "Использовать необходимый уровень"
+L["Use required level"] = "Рассчет для мин. уровня"
 L["Calculate using the required level if you are below the required level"] = "Рассчитывать статы исходя из минимально необходимого для надевания предмета уровня, если вы ниже этого уровня"
 -- /rb level
-L["Set Level"] = "Задать уровень"
+L["Set level"] = "Задать уровень"
 L["Set the level used in calculations (0 = your level)"] = "Задать уровень используемый в расчетах (0 - ваш уровень)"
--- /rb ilvlid
---L["Item Level and ID"] = "Уровень предмета(iLvl) и ID"
---L["Settings for Item Level and Item ID"] = "Настройки уровня предмета(iLvl) и ID предмета"
--- /rb ilvlid coloritemlevel
---L["Colorize Item Level"] = "Добавить цвета уровня предмета (iLvl)"
---L["Customize the color of the Item Level text"] = ""
--- /rb ilvlid itemlevelall
---L["Show Item Level on all items"] = "Показать уровень предмета (iLvl) на всех предметах"
---L["Display the Item Level on all items instead of just on equippable items"] = "Отображать уровень предмета на всех предметах, а не только на экипируемых предмета"
--- /rb ilvlid itemid
---L["Show Item ID"] = "Показать ID предмета"
---L["Display the Item ID on all items"] = "Отображение ID предмета на всех предметах"
----------------------------------------------------------------------------
+-- /rb color
+L["Change text color"] = "Изменить цвет текста"
+L["Changes the color of added text"] = "Изменить цвет добавляемого текста"
+L["Change number color"] = "Изменить цвет значений"
 -- /rb rating
 L["Rating"] = "Рейтинги"
 L["Options for Rating display"] = "Настройки отображения рейтингов"
 -- /rb rating show
-L["Show Rating Conversions"] = "Конвертация рейтингов"
-L["Select when to show rating conversions in tooltips. Modifier keys needs to be pressed before showing the tooltips."] = "Выберите когда показывать конвертацию рейтингов в подсказке. Модификатор клавиш должен быть нажатым перед показом подсказки."
+L["Show Rating conversions"] = "Конвертация рейтингов"
+L["Show Rating conversions in tooltips"] = "Выберите когда показывать конвертацию рейтингов в подсказке"
+L["Enable integration with Blizzard Reforging UI"] = "Enable integration with Blizzard Reforging UI"
 -- /rb rating spell
 L["Show Spell Hit/Haste"] = "Меткость/скорость заклинаний"
 L["Show Spell Hit/Haste from Hit/Haste Rating"] = "Показывать меткость/скорость заклинаний из рейтинга меткости/скорость"
@@ -78,446 +70,170 @@ L["Show Spell Hit/Haste from Hit/Haste Rating"] = "Показывать метк
 L["Show Physical Hit/Haste"] = "Меткость/скорость физических атак"
 L["Show Physical Hit/Haste from Hit/Haste Rating"] = "Показывать меткость/скорость физических атак из рейтинга меткости"
 -- /rb rating detail
-L["Show Detailed Conversions Text"] = "Детальная конвертация рейтингов"
+L["Show detailed conversions text"] = "Детальная конвертация рейтингов"
 L["Show detailed text for Resilience and Expertise conversions"] = "Показывать детальную конвертацию рейтингов мастерства и устойчивости"
 -- /rb rating exp
-L["Expertise Breakdown"] = "Разбивать уровень мастерства"
-L["Convert Expertise into Dodge Neglect and Parry Neglect"] = "Разбивать уровень мастерства на игнорирование уклонения и парирования"
----------------------------------------------------------------------------
--- /rb rating color
-L["Change Text Color"] = "Изменить цвет текста"
-L["Changes the color of added text"] = "Изменить цвет добавляемого текста"
--- /rb rating color pick
-L["Pick Color"] = "Выбрать цвет"
-L["Pick a color"] = "Выбрать цвет"
--- /rb rating color enable
-L["Enable Color"] = "Включить цвет текста"
-L["Enable colored text"] = "Включить цвет текста"
+L["Expertise breakdown"] = "Разбивать уровень мастерства"
+L["Convert Expertise into Dodge Reduction and Parry Reduction"] = "Разбивать уровень мастерства на игнорирование уклонения и парирования"
 ---------------------------------------------------------------------------
 -- /rb stat
-L["Stat Breakdown"] = "Настройки статов"
-L["Changes the display of base stats"] = "Показывать изменения базовых статов"
+L["Stat Breakdown"] = "Конвертация статов"
+L["Changes the display of base stats"] = "Показывать расчет базовых характеристик"
 -- /rb stat show
-L["Show Base Stat Conversions"] = "Показывать изменение базовых статов"
+L["Show base stat conversions"] = "Базовые характеристики"
 L["Select when to show base stat conversions in tooltips. Modifier keys needs to be pressed before showing the tooltips."] = "Выберите когда показывать изменение базовых статов в подсказке. Модификатор клавиш должен быть нажатым перед показом подсказки."
----------------------------------------------------------------------------
--- /rb stat str
-L["Strength"] = "Сила"
-L["Changes the display of Strength"] = "Показывать изменение силы"
--- /rb stat str ap
-L["Show Attack Power"] = "Сила атаки"
-L["Show Attack Power from Strength"] = "Показывать изменение силы атаки от силы"
--- /rb stat str block
-L["Show Block Value"] = "Блокирование"
-L["Show Block Value from Strength"] = "Показывать изменение показателя блок. щитa от силы"
--- /rb stat str dmg
-L["Show Spell Damage"] = "Урон от заклинаний"
-L["Show Spell Damage from Strength"] = "Показывать изменение урона заклинаниями от силы"
--- /rb stat str heal
-L["Show Healing"] = "Исцеление"
-L["Show Healing from Strength"] = "Показывать изменение исцеления от силы"
--- /rb stat str parryrating
-L["Show Parry Rating"] = "Рейтинг парирования"
-L["Show Parry Rating from Strength"] = "Показывать изменение рейтинга парирования от силы"
--- /rb stat str parry
-L["Show Parry"] = "Парирование"
-L["Show Parry from Strength"] = "Показывать изменения парирования от силы"
----------------------------------------------------------------------------
--- /rb stat agi
-L["Agility"] = "Ловкость"
-L["Changes the display of Agility"] = "Показывать изменения ловкости"
--- /rb stat agi crit
-L["Show Crit"] = "Крит. удар"
-L["Show Crit chance from Agility"] = "Показывать изменение крит. удара от ловкости"
--- /rb stat agi dodge
-L["Show Dodge"] = "Уклонение"
-L["Show Dodge chance from Agility"] = "Показывать изменение уклонения от ловкости"
--- /rb stat agi ap
-L["Show Attack Power"] = "Сила атаки"
-L["Show Attack Power from Agility"] = "Показывать изменение силы атаки от ловкости"
--- /rb stat agi rap
-L["Show Ranged Attack Power"] = "Сила атаки дальнего боя"
-L["Show Ranged Attack Power from Agility"] = "Показывать изменение силы атаки дальнего боя от ловкости"
--- /rb stat agi dmg
-L["Show Spell Damage"] = "Магический урон"
-L["Show Spell Damage from Agility"] = "Показывать изменение магического урона от ловкости"
--- /rb stat agi heal
-L["Show Healing"] = "Исцеление"
-L["Show Healing from Agility"] = "Показывать изменение исцеления от ловкости"
----------------------------------------------------------------------------
--- /rb stat sta
-L["Stamina"] = "Выносливость"
-L["Changes the display of Stamina"] = "Показывать изменение выносливости"
--- /rb stat sta hp
-L["Show Health"] = "Здоровье"
-L["Show Health from Stamina"] = "Показывать изменение здоровья от выносливости"
--- /rb stat sta dmg
-L["Show Spell Damage"] = "Урон от заклинаний"
-L["Show Spell Damage from Stamina"] = "Показывать изменение урона заклинаниями от выносливости"
--- /rb stat sta heal
-L["Show Healing"] = "Исцеление"
-L["Show Healing from Stamina"] = "Показывать изменение исцеления от выносливости"
--- /rb stat sta ap
-L["Show Attack Power"] = "Силы атаки"
-L["Show Attack Power from Stamina"] = "Показывать изменение силы атаки от выносливости"
----------------------------------------------------------------------------
--- /rb stat int
-L["Intellect"] = "Интеллект"
-L["Changes the display of Intellect"] = "Показывать изменение интеллекта"
--- /rb stat int spellcrit
-L["Show Spell Crit"] = "Крит. удар от заклинаний"
-L["Show Spell Crit chance from Intellect"] = "Показывать изменение крит. удара заклинаний от интеллекта"
--- /rb stat int mp
-L["Show Mana"] = "Мана"
-L["Show Mana from Intellect"] = "Показывать изменение маны от интеллекта"
--- /rb stat int dmg
-L["Show Spell Damage"] = "Урон от заклинаний"
-L["Show Spell Damage from Intellect"] = "Показывать изменение урона заклинаний от интеллекта"
--- /rb stat int heal
-L["Show Healing"] = "Исцеление"
-L["Show Healing from Intellect"] = "Показывать изменение исцеления от интеллекта"
--- /rb stat int mp5
-L["Show Combat Mana Regen"] = "Восполнение маны в бою"
-L["Show Mana Regen while in combat from Intellect"] = "Показывать изменение восполнения маны от интеллекта (в бою)"
--- /rb stat int mp5oc
-L["Show Normal Mana Regen"] = "Восполнения маны вне боя"
-L["Show Mana Regen while not in combat from Intellect"] = "Показывать изменение восполнения маны от интеллекта (вне боя)"
--- /rb stat int rap
-L["Show Ranged Attack Power"] = "Сила атаки дальнего боя"
-L["Show Ranged Attack Power from Intellect"] = "Показывать изменение силы атаки дальнего боя от интеллекта"
--- /rb stat int ap
-L["Show Attack Power"] = "Силы атаки"
-L["Show Attack Power from Intellect"] = "Показывать изменение силы атаки от интеллекта"
----------------------------------------------------------------------------
--- /rb stat spi
-L["Spirit"] = "Дух"
-L["Changes the display of Spirit"] = "Показывать изменение духа"
--- /rb stat spi mp5
-L["Show Combat Mana Regen"] = "Восполнение маны в бою"
-L["Show Mana Regen while in combat from Spirit"] = "Показывать изменение восполнения маны от духа (в бою)"
--- /rb stat spi mp5oc
-L["Show Normal Mana Regen"] = "Восполнения маны вне боя"
-L["Show Mana Regen while not in combat from Spirit"] = "Показывать изменение восполнения маны от духа (вне боя)"
--- /rb stat spi hp5
-L["Show Normal Health Regen"] = "Восполнение здаровья вне боя"
-L["Show Health Regen while not in combat from Spirit"] = "Показывать изменение восполнения здоровья от духа (вне боя)"
--- /rb stat spi dmg
-L["Show Spell Damage"] = "Урон от заклинаний"
-L["Show Spell Damage from Spirit"] = "Показывать изменение урона заклинаний от духа"
--- /rb stat spi heal
-L["Show Healing"] = "Исцеление"
-L["Show Healing from Spirit"] = "Показывать изменение исцеления от духа"
--- /rb stat spi spellcrit
-L["Show Spell Crit"] = "Крит. удар заклинаний"
-L["Show Spell Crit chance from Spirit"] = "Показывать изменение вероятности критического удара заклинаниями от духа"
--- /rb stat spi spellhitrating
-L["Show Spell Hit Rating"] = "Рейтинг меткости заклинания"
-L["Show Spell Hit Rating from Spirit"] = "Показывать изменение рейтинга меткости заклинания от духа"
--- /rb stat spi spellhit
-L["Show Spell Hit"] = "Меткость заклинания"
-L["Show Spell Hit from Spirit"] = "Показывать изменение меткости заклинания от духа"
----------------------------------------------------------------------------
--- /rb stat armor
-L["Armor"] = "Броня"
-L["Changes the display of Armor"] = "Показывать изменение брони"
--- /rb stat armor ap
-L["Show Attack Power"] = "Силы атаки"
-L["Show Attack Power from Armor"] = "Показывать изменение силы атаки от брони"
+L["Changes the display of %s"] = "Изменить отображение %s"
 ---------------------------------------------------------------------------
 -- /rb sum
-L["Stat Summary"] = "Настройки итогов"
+L["Stat Summary"] = "Итого:"
 L["Options for stat summary"] = "Итоги по статам"
+L["Sum %s"] = "Сумма %s"
 -- /rb sum show
-L["Show Stat Summary"] = "Показывать суммарные изменения"
-L["Select when to show stat summary in tooltips. Modifier keys needs to be pressed before showing the tooltips."] = "Выберите когда показывать суммарные изменения в подсказке. Модификатор клавиш должен быть нажатым перед показом подсказки."
+L["Show stat summary"] = "Показывать суммарные изменения"
+L["Show stat summary in tooltips"] = "Выберите когда показывать суммарные изменения в подсказке"
 -- /rb sum ignore
-L["Ignore Settings"] = "Настройки игнорирования"
-L["Ignore stuff when calculating the stat summary"] = "	Настройка игнорирования при расчете итога"
+L["Ignore settings"] = "Настройки игнорирования"
+L["Ignore stuff when calculating the stat summary"] = "Настройка игнорирования при расчете итога"
 -- /rb sum ignore unused
-L["Ignore Undesirable Items"] = "Игнорирование неподходящих предметов"
-L["Hide stat summary for undesirable items"] = "Скрыть итоги по статам для неподходящих предметов"
--- /rb sum ignore quality
-L["Minimum Item Quality"] = "Мин. качество предмета"
-L["Show stat summary only for selected quality items and up"] = "Показывать итоги по статам только для выбранного качества предметов и выше"
--- /rb sum ignore armor
-L["Armor Types"] = "Тип брони"
-L["Select armor types you want to ignore"] = "Выберите тип брони, который будет игнорироваться"
--- /rb sum ignore armor cloth
-L["Ignore Cloth"] = "Игнорировать ткань"
-L["Hide stat summary for all cloth armor"] = "Скрыть итоги по статам для всех доспехов из ткани"
--- /rb sum ignore armor leather
-L["Ignore Leather"] = "Игнорированть кожу"
-L["Hide stat summary for all leather armor"] = "Скрыть итоги по статам для всех доспехов из кожы"
--- /rb sum ignore armor mail
-L["Ignore Mail"] = "Игнорированть кальчугу"
-L["Hide stat summary for all mail armor"] = "Скрыть итоги по статам для всех доспехов из кальчуги"
--- /rb sum ignore armor plate
-L["Ignore Plate"] = "Игнорированть латы"
-L["Hide stat summary for all plate armor"] = "Скрыть итоги по статам для всех доспехов из лат"
+L["Ignore unused item types"] = "Игнорирование неподходящих предметов"
+L["Show stat summary only for highest level armor type and items you can use with uncommon quality and up"] = "Скрыть итоги по статам для неподходящих предметов"
 -- /rb sum ignore equipped
-L["Ignore Equipped Items"] = "Не показывать для надетых вещей"
+L["Ignore equipped items"] = "Не показывать для надетых вещей"
 L["Hide stat summary for equipped items"] = "Не показывать для надетых вещей"
 -- /rb sum ignore enchant
-L["Ignore Enchants"] = "Игнорировать чары"
+L["Ignore enchants"] = "Игнорировать чары"
 L["Ignore enchants on items when calculating the stat summary"] = "Игнорировать чары при расчете итога"
 -- /rb sum ignore gem
-L["Ignore Gems"] = "Игнорировать самоцветы"
+L["Ignore gems"] = "Игнорировать самоцветы"
 L["Ignore gems on items when calculating the stat summary"] = "Игнорировать самоцветы при расчете итога"
--- /rb sum ignore prismaticSocket
-L["Ignore Prismatic Sockets"] = "Игнорировать радужные гнёзда"
-L["Ignore gems in prismatic sockets when calculating the stat summary"] = "Игнорировать гнезда для радужного самоцвета при расчете итога"
+L["Ignore extra sockets"] = "Ignore extra sockets"
+L["Ignore sockets from professions or consumable items when calculating the stat summary"] = "Ignore sockets from professions or consumable items when calculating the stat summary"
 -- /rb sum diffstyle
-L["Display Style For Diff Value"] = "Стиль отображения отличия значений"
+L["Display Style For diff value"] = "Стиль отображения отличия значений"
 L["Display diff values in the main tooltip or only in compare tooltips"] = "Отображения различных значений в главной подсказке или только в сравнительных подсказках"
+L["Hide Blizzard Item Comparisons"] = "Скрыть сравнение от Blizzard"
+L["Disable Blizzard stat change summary when using the built-in comparison tooltip"] = "Отключить сравнение предметов Blizzard, если используется метод сравнения RatingBuster"
 -- /rb sum space
-L["Add Empty Line"] = "Добавить пустую линию"
+L["Add empty line"] = "Добавить пустую линию"
 L["Add a empty line before or after stat summary"] = "Добавить пустую линию перед или после итогов"
 -- /rb sum space before
-L["Add Before Summary"] = "Добавить линию до итога"
+L["Add before summary"] = "Линия до итога"
 L["Add a empty line before stat summary"] = "Добавить линию до итога"
 -- /rb sum space after
-L["Add After Summary"] = "Добавить линию после итога"
+L["Add after summary"] = "Линия после итога"
 L["Add a empty line after stat summary"] = "Добавить линию после итога"
 -- /rb sum icon
-L["Show Icon"] = "Добавить иконку"
-L["Show the sigma icon before summary listing"] = "Добавит иконку до списка итога"
+L["Show icon"] = "Показать иконку"
+L["Show the sigma icon before summary listing"] = "Показать знак суммы перед итогом"
 -- /rb sum title
-L["Show Title Text"] = "Показывать заголовок"
-L["Show the title text before summary listing"] = "Показывать заголовок до списка итога"
+L["Show title text"] = "Показать заголовок"
+L["Show the title text before summary listing"] = "Показать заголовок до списка итога"
 -- /rb sum showzerostat
-L["Show Zero Value Stats"] = "Показывать нулевые статы"
+L["Show zero value stats"] = "Показывать нулевые статы"
 L["Show zero value stats in summary for consistancy"] = "Показывать нулевые статы"
 -- /rb sum calcsum
-L["Calculate Stat Sum"] = "Рассчитать сумму стат"
+L["Calculate stat sum"] = "Рассчитать сумму характеристик"
 L["Calculate the total stats for the item"] = "Рассчитать все статы для предмета"
 -- /rb sum calcdiff
-L["Calculate Stat Diff"] = "Рассчитывать разницу в статах"
+L["Calculate stat diff"] = "Рассчитывать разницу в статах"
 L["Calculate the stat difference for the item and equipped items"] = "Рассчитывать разницу в статах с надетой вещью"
 -- /rb sum sort
-L["Sort StatSummary Alphabetically"] = "Сортировать статы в алфавитном порядке"
+L["Sort StatSummary alphabetically"] = "Сортировать статы в алфавитном порядке"
 L["Enable to sort StatSummary alphabetically, disable to sort according to stat type(basic, physical, spell, tank)"] = "Если включено - то по алфавиту, если выключено, то по смыслу (базовые, физические, заклинания, танковые)"
 -- /rb sum avoidhasblock
-L["Include Block Chance In Avoidance Summary"] = "Включать вероятность блока в сумму избегания"
-L["Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss"] = "Включать вероятность блока в итог избегания, отключение только для уклона, парирования, промаха"
-
-L["Enable Avoidance Diminishing Returns"] = "Включить расчёт формулы закона убывающей полезности (диминишинга) избегания (эвойденса)"
-L["Dodge, Parry, Miss Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Значения уклонения, парирования и шанса промаха будут рассчитаны с использованием формулы закона убывающей полезности (диминишинга) избегания (эвойденса) в соответствии с вашими текущими характеристиками."
-L["Dodge, Parry, Hit Avoidance values will be calculated using the avoidance deminishing return formula with your current stats"] = "Значения уклонения, парирования и шанса промаха будут рассчитаны с использованием формулы закона убывающей полезности (диминишинга) избегания (эвойденса) в соответствии с вашими текущими характеристиками."
-
+L["Include block chance In Avoidance summary"] = "Включать вероятность блока в итоге избежаний"
+L["Enable to include block chance in Avoidance summary, Disable for only dodge, parry, miss"] = "Включать вероятность блока в итоге избежаний, отключение только для уклона, парирования, промоха"
 ---------------------------------------------------------------------------
 -- /rb sum basic
 L["Stat - Basic"] = "Статы - базовые"
 L["Choose basic stats for summary"] = "Выбор базовых статов для подсчета"
 -- /rb sum basic hp
-L["Sum Health"] = "Сумма здоровья"
-L["Health <- Health, Stamina"] = "Здоровье <- Здоровье, Выносливость"
+L["Health <- Health, Stamina"] = "Здоровье, выносливость -> Здоровье"
 -- /rb sum basic mp
-L["Sum Mana"] = "Сумма маны"
-L["Mana <- Mana, Intellect"] = "Мана <- Мана, Интеллект"
+L["Mana <- Mana, Intellect"] = "Мана, интеллект -> Мана"
 -- /rb sum basic mp5
-L["Sum Combat Mana Regen"] = "Сумма восст. маны в бою"
-L["Combat Mana Regen <- Mana Regen, Spirit"] = "Восстановление маны в бою <- Восстановления маны, Дух"
+L["Combat Mana Regen <- Mana Regen, Spirit"] = "Восстановление маны, дух -> Восстановление маны в бою"
 -- /rb sum basic mp5oc
-L["Sum Normal Mana Regen"] = "Сумма восст. маны вне боя"
-L["Normal Mana Regen <- Spirit"] = "Сумма восстановления маны вне боя <- Дух"
+L["Normal Mana Regen <- Spirit"] = "Дух -> Сумма восстановления маны вне боя"
 -- /rb sum basic hp5
-L["Sum Combat Health Regen"] = "Сумма восст. здоровья в бою"
-L["Combat Health Regen <- Health Regen"] = "Восстановление здоровья в бою <- Восстановление здоровья"
+L["Combat Health Regen <- Health Regen"] = "Восстановление здоровья -> Восстановление здоровья в бою"
 -- /rb sum basic hp5oc
-L["Sum Normal Health Regen"] = "Сумма восст. здоровья вне боя"
-L["Normal Health Regen <- Spirit"] = "Сумма восстановления здоровья вне боя <- Дух"
--- /rb sum basic str
-L["Sum Strength"] = "Сумма силы"
-L["Strength Summary"] = "Суммировать силу"
--- /rb sum basic agi
-L["Sum Agility"] = "Сумма ловкости"
-L["Agility Summary"] = "Суммировать ловкость"
--- /rb sum basic sta
-L["Sum Stamina"] = "Сумма выносливости"
-L["Stamina Summary"] = "Суммировать выносливость"
--- /rb sum basic int
-L["Sum Intellect"] = "Сумма интеллекта"
-L["Intellect Summary"] = "Суммировать интеллект"
--- /rb sum basic spi
-L["Sum Spirit"] = "Сумма духа"
-L["Spirit Summary"] = "Суммировать дух"
+L["Normal Health Regen <- Spirit"] = "Дух -> Сумма восстановления здоровья вне боя"
 -- /rb sum basic mastery
-L["Sum Mastery"] = "Сумма искусности"
 L["Mastery Summary"] = "Суммировать искусность"
 -- /rb sum basic masteryrating
-L["Sum Mastery Rating"] = "Сумма рейтинга искусности"
-L["Mastery Rating Summary"] = "Суммировать рейтинг искусности"
 ---------------------------------------------------------------------------
 -- /rb sum physical
 L["Stat - Physical"] = "Статы - физические"
 L["Choose physical damage stats for summary"] = "Выбор статов физического урона для подсчета"
 -- /rb sum physical ap
-L["Sum Attack Power"] = "Сумма силы атаки"
-L["Attack Power <- Attack Power, Strength, Agility"] = "Сила атаки <- Сила атаки, Сила, Ловкость"
+L["Attack Power <- Attack Power, Strength, Agility"] = "Сила атаки, сила, ловкость -> Сила атаки"
 -- /rb sum physical rap
-L["Sum Ranged Attack Power"] = "Сумма силы атаки дальнего боя"
-L["Ranged Attack Power <- Ranged Attack Power, Intellect, Attack Power, Strength, Agility"] = "Сила атаки дальнего боя <- Сила атаки дальнего боя, Интеллект, Сила атаки, Сила, Ловкость"
+L["Ranged Attack Power <- Ranged Attack Power, Intellect, Attack Power, Strength, Agility"] = "Сила атаки дальнего боя, интеллект, сила атаки, сила, ловкость -> Сила атаки дальнего боя"
 -- /rb sum physical hit
-L["Sum Hit Chance"] = "Сумма вероятности поподания"
-L["Hit Chance <- Hit Rating"] = "Вероятности поподания <- Рейтинг меткости"
--- /rb sum physical hitrating
-L["Sum Hit Rating"] = "Сумма рейтинга меткости"
-L["Hit Rating Summary"] = "Сумма рейтинга меткости"
+L["Hit Chance <- Hit Rating"] = "Рейтинг меткости -> Вероятность поподания"
 -- /rb sum physical crit
-L["Sum Crit Chance"] = "Сумма вероятности крит удара"
-L["Crit Chance <- Crit Rating, Agility"] = "Вероятности крит удара <- Рейтинг крит удара, Ловкость"
--- /rb sum physical critrating
-L["Sum Crit Rating"] = "Сумма рейтинга крита"
-L["Crit Rating Summary"] = "Суммировать рейтинг крит удара"
+L["Crit Chance <- Crit Rating, Agility"] = "Рейтинг крит. удара, ловкость -> Вероятность крит. удара"
 -- /rb sum physical haste
-L["Sum Haste"] = "Сумма скорости"
-L["Haste <- Haste Rating"] = "Скорость <- Рейтинг скорости"
--- /rb sum physical hasterating
-L["Sum Haste Rating"] = "Сумма рейтинга скорости"
-L["Haste Rating Summary"] = "Суммировать рейтинг скорости"
+L["Haste <- Haste Rating"] = "Рейтинг скорости -> Скорость"
 -- /rb sum physical rangedhit
-L["Sum Ranged Hit Chance"] = "Сумма вероятности поподания в дальнем бою"
-L["Ranged Hit Chance <- Hit Rating, Ranged Hit Rating"] = "Вероятность поподания в дальнем бою <- Рейтинг меткости, Рейтинг меткости дальнего боя"
--- /rb sum physical rangedhitrating
-L["Sum Ranged Hit Rating"] = "Сумма рейтинга меткости дальнего боя"
-L["Ranged Hit Rating Summary"] = "Суммировать рейтинг меткости дальнего боя"
+L["Ranged Hit Chance <- Hit Rating, Ranged Hit Rating"] = "Рейтинг меткости, рейтинг меткости дальнего боя -> Вероятность поподания в дальнем бою"
 -- /rb sum physical rangedcrit
-L["Sum Ranged Crit Chance"] = "Сумма вероятности крита в дальнем бою"
-L["Ranged Crit Chance <- Crit Rating, Agility, Ranged Crit Rating"] = "Вероятность крита в дальнем бою <- Рейтинг крита, Ловкость, Рейтинга крит удара дальнего боя"
--- /rb sum physical rangedcritrating
-L["Sum Ranged Crit Rating"] = "Сумма рейтинга крит удара дальнего боя"
-L["Ranged Crit Rating Summary"] = "Суммировать рейтинг критического удара в дальнем бою"
+L["Ranged Crit Chance <- Crit Rating, Agility, Ranged Crit Rating"] = "Рейтинг крита, ловкость, рейтинг крит. удара дальнего боя -> Вероятность крит. удара в дальнем бою"
 -- /rb sum physical rangedhaste
-L["Sum Ranged Haste"] = "Сумма скорости дальнего боя"
-L["Ranged Haste <- Haste Rating, Ranged Haste Rating"] = "Скорости дальнего боя <- Рейтинг скорости, Рейтинг скорости дальнего боя"
--- /rb sum physical rangedhasterating
-L["Sum Ranged Haste Rating"] = "Сумма рейтинга скорости дальнего боя"
-L["Ranged Haste Rating Summary"] = "Суммировать рейтинг скорости дальнего боя"
--- /rb sum physical maxdamage
-L["Sum Weapon Max Damage"] = "Сумма макс урона оружия"
-L["Weapon Max Damage Summary"] = "Суммировать макс урон уружия"
--- /rb sum physical weapondps
-L["Sum Weapon DPS"] = "Суммировать УВС(DPS) оружия"
---L["Weapon DPS Summary"] = "Суммировать урон в секунду от оружия"
+L["Ranged Haste <- Haste Rating, Ranged Haste Rating"] = "Рейтинг скорости, рейтинг скорости дальнего боя -> Скорость дальнего боя"
 -- /rb sum physical wpn
-L["Sum Weapon Skill"] = "Сумма оружейного навык"
-L["Weapon Skill <- Weapon Skill Rating"] = "Оружейный навык <- Рейтинг владения оружием"
+L["Weapon Skill <- Weapon Skill Rating"] = "Рейтинг владения оружием -> Оружейный навык"
 -- /rb sum physical exp
-L["Sum Expertise"] = "Сумма мастерства"
-L["Expertise <- Expertise Rating"] = "Мастерство <- рейтинг мастерства"
+L["Expertise <- Expertise Rating"] = "Рейтинг мастерства -> Мастерство"
 -- /rb sum physical exprating
-L["Sum Expertise Rating"] = "Сумма рейтинга мастерства"
-L["Expertise Rating Summary"] = "Суммировать рейтинг мастерства"
 ---------------------------------------------------------------------------
 -- /rb sum spell
 L["Stat - Spell"] = "Статы - заклинания"
-L["Choose spell damage and healing stats for summary"] = "Выбор статов исцеления и урона заклинаниями для посчета"
+L["Choose spell damage and healing stats for summary"] = "Выбор магических статов для подсчета"
 -- /rb sum spell power
-L["Sum Spell Power"] = "Сумма силы заклинаний"
-L["Spell Power <- Spell Power, Intellect, Agility, Strength"] = "Сила заклинаний <- Силы заклинаний, Интеллект, Ловкость, Сила"
+L["Spell Power <- Spell Power, Intellect, Agility, Strength"] = "Сила заклинаний, интеллект, ловкость, сила -> Сила заклинаний"
 -- /rb sum spell dmg
-L["Sum Spell Damage"] = "Сумма урона заклинаниями"
-L["Spell Damage <- Spell Damage, Intellect, Spirit, Stamina"] = "Урон заклинаниями <- Урон заклинаниями, Интеллект, Дух, Выносливость"
+L["Spell Damage <- Spell Damage, Intellect, Spirit, Stamina"] = "Сила заклинаний, интеллект, дух, выносливость -> Сила заклинаний" -- Changed from Damage to Power
 -- /rb sum spell dmgholy
-L["Sum Holy Spell Damage"] = "Сумма урона светлой магией"
-L["Holy Spell Damage <- Holy Spell Damage, Spell Damage, Intellect, Spirit"] = "Урон светлой магии <- Урон светлой магией, Урон заклинаниями, Интеллект, Дух"
+L["Holy Spell Damage <- Holy Spell Damage, Spell Damage, Intellect, Spirit"] = "Урон от светлой магии, сила заклинаний, интеллект, дух -> Урон от светлой магии"
 -- /rb sum spell dmgarcane
-L["Sum Arcane Spell Damage"] = "Сумма урона тайной магией"
-L["Arcane Spell Damage <- Arcane Spell Damage, Spell Damage, Intellect"] = "Урон тайной магией <- Урон тайной магией, Урон заклинаниями, Интеллект"
+L["Arcane Spell Damage <- Arcane Spell Damage, Spell Damage, Intellect"] = "Урон от тайной магии, сила заклинаний, интеллект -> Урон от тайной магии"
 -- /rb sum spell dmgfire
-L["Sum Fire Spell Damage"] = "Сумма урона магией огня"
-L["Fire Spell Damage <- Fire Spell Damage, Spell Damage, Intellect, Stamina"] = "Урон магией огня <- Урон магией огня, Урон заклинаниями, Интеллект, Выносливость"
+L["Fire Spell Damage <- Fire Spell Damage, Spell Damage, Intellect, Stamina"] = "Урон от огня, сила заклинаний, интеллект, выносливость -> Урон от огня"
 -- /rb sum spell dmgnature
-L["Sum Nature Spell Damage"] = "Сумма урона силами природы"
-L["Nature Spell Damage <- Nature Spell Damage, Spell Damage, Intellect"] = "Урон силами природы <- Урон силами природы, Урон заклинаниями, Интеллект"
+L["Nature Spell Damage <- Nature Spell Damage, Spell Damage, Intellect"] = "Урон от сил природы, сила заклинаний, интеллект -> Урон от сил природы"
 -- /rb sum spell dmgfrost
-L["Sum Frost Spell Damage"] = "Сумма урона магией льда"
-L["Frost Spell Damage <- Frost Spell Damage, Spell Damage, Intellect"] = "Урон магией льда <- Урон магией льда, Урон заклинаниями, Интеллект"
+L["Frost Spell Damage <- Frost Spell Damage, Spell Damage, Intellect"] = "Урон от магии льда, сила заклинаний, интеллект -> Урон от магии льда"
 -- /rb sum spell dmgshadow
-L["Sum Shadow Spell Damage"] = "Сумма урона темной магией"
-L["Shadow Spell Damage <- Shadow Spell Damage, Spell Damage, Intellect, Spirit, Stamina"] = "Урон темной магией <- Урон темной магией, Урон заклинаниями, Интеллект, Дух, Выносливость"
+L["Shadow Spell Damage <- Shadow Spell Damage, Spell Damage, Intellect, Spirit, Stamina"] = "Урон от темной магии, сила заклинаний, интеллект, дух, выносливость -> Урон от темной магии"
 -- /rb sum spell heal
-L["Sum Healing"] = "Сумма исцеления"
-L["Healing <- Healing, Intellect, Spirit, Agility, Strength"] = "Исцеление <- Исцеление, Интеллект, Дух, Ловкость, Сила"
+L["Healing <- Healing, Intellect, Spirit, Agility, Strength"] = "Исцеление, интеллект, дух, ловкость, сила -> Исцеление"
 -- /rb sum spell crit
-L["Sum Spell Crit Chance"] = "Сумма вероятности крита заклинания"
-L["Spell Crit Chance <- Spell Crit Rating, Intellect"] = "Вероятность крита заклинания <- Рейтинг крита удара заклинаниями, Интеллект"
+L["Spell Crit Chance <- Spell Crit Rating, Intellect"] = "Рейтинг крит. удара заклинаниями, интеллект -> Вероятность крит. удара заклинаниями"
 -- /rb sum spell hit
-L["Sum Spell Hit Chance"] = "Сумма вероятности поподания заклинаний"
-L["Spell Hit Chance <- Spell Hit Rating"] = "Вероятность поподания заклинаний <- Рйтинг меткости заклинаний"
+L["Spell Hit Chance <- Spell Hit Rating"] = "Рейтинг меткости заклинаний -> Вероятность поподания заклинаниями"
 -- /rb sum spell haste
-L["Sum Spell Haste"] = "Сумма скорости заклинаний"
-L["Spell Haste <- Spell Haste Rating"] = "Скорость заклинаний <- Рейтинг скорости заклинаний"
--- /rb sum spell pen
-L["Sum Penetration"] = "Сумма проникающей способности"
-L["Spell Penetration Summary"] = "Суммировать проникающую способность заклинаний"
--- /rb sum spell hitrating
-L["Sum Spell Hit Rating"] = "Сумма рейтинга меткости заклинаний"
-L["Spell Hit Rating Summary"] = "Суммировать рейтинг меткости заклинаний"
--- /rb sum spell critrating
-L["Sum Spell Crit Rating"] = "Сумма рейтинга крит удара заклинаниями"
-L["Spell Crit Rating Summary"] = "Суммировать рейтинг крит удара заклинаниями"
+L["Spell Haste <- Spell Haste Rating"] = "Рейтинг скорости заклинаний -> Скорость заклинаний"
 -- /rb sum spell hasterating
-L["Sum Spell Haste Rating"] = "Сумма рейтинга скорости заклинаний"
-L["Spell Haste Rating Summary"] = "Суммировать рейтинг скорости заклинаний"
 ---------------------------------------------------------------------------
 -- /rb sum tank
-L["Stat - Tank"] = "Статы - танкования"
-L["Choose tank stats for summary"] = "Выбор статов танкования для подсчета"
+L["Stat - Tank"] = "Статы - танк"
+L["Choose tank stats for summary"] = "Выбор танковских статов для подсчета"
 -- /rb sum tank armor
-L["Sum Armor"] = "Сумма брони"
-L["Armor <- Armor from items and bonuses"] = "Броня <- Броня с одежды и бонусов"
+L["Armor <- Armor from items and bonuses"] = "Броня с одежды и бонусов -> Броня"
 -- /rb sum tank dodge
-L["Sum Dodge Chance"] = "Сумма вероятности уклонения"
-L["Dodge Chance <- Dodge Rating, Agility"] = "Вероятность уклонения <- рейтинг уклонения, ловкость"
+L["Dodge Chance <- Dodge Rating, Agility"] = "Рейтинг уклонения, ловкость -> Вероятность уклонения"
 -- /rb sum tank parry
-L["Sum Parry Chance"] = "Сумма вероятности парирования"
-L["Parry Chance <- Parry Rating"] = "Вероятность парирования <- рейтинг парирования"
+L["Parry Chance <- Parry Rating"] = "Рейтинг парирования -> Вероятность парирования"
 -- /rb sum tank block
-L["Sum Block Chance"] = "Сумма вероятности блокирования"
-L["Block Chance <- Block Rating"] = "Вероятность блокирования <- рейтинг блокирования"
--- /rb sum tank neglectdodge
-L["Sum Dodge Neglect"] = "Сумма игнорирования уклонения"
-L["Dodge Neglect <- Expertise"] = "Игнорирование уклонения <- Мастерство"
--- /rb sum tank neglectparry
-L["Sum Parry Neglect"] = "Сумма игнорирования парирования"
-L["Parry Neglect <- Expertise"] = "Игнорирование парирования <- Мастерство"
--- /rb sum tank resarcane
-L["Sum Arcane Resistance"] = "Сумма защиты от тайной магии"
-L["Arcane Resistance Summary"] = "Суммировать сопротивление тайной магии"
--- /rb sum tank resfire
-L["Sum Fire Resistance"] = "Сумма защиты от огня"
-L["Fire Resistance Summary"] = "Суммировать сопротивление огню"
--- /rb sum tank resnature
-L["Sum Nature Resistance"] = "Сумма защиты от магии природы"
-L["Nature Resistance Summary"] = "Суммировать сопротивление силам природы"
--- /rb sum tank resfrost
-L["Sum Frost Resistance"] = "Сумма защиты от магии льда"
-L["Frost Resistance Summary"] = "Суммировать сопротивление магии льда"
--- /rb sum tank resshadow
-L["Sum Shadow Resistance"] = "Сумма защиты от темной магии"
-L["Shadow Resistance Summary"] = "Суммировать сопротивление темной магии"
--- /rb sum tank dodgerating
-L["Sum Dodge Rating"] = "Сумма рейтинга уклонения"
-L["Dodge Rating Summary"] = "Суммировать рейтинг уклонения"
--- /rb sum tank parryrating
-L["Sum Parry Rating"] = "Сумма рейтинга парирования"
-L["Parry Rating Summary"] = "Суммировать рейтинг парирования"
--- /rb sum tank blockrating
-L["Sum Block Rating"] = "Сумма рейтинга блока"
-L["Block Rating Summary"] = "Суммировать рейтинг блока"
--- /rb sum tank res
-L["Sum Resilience"] = "Сумма устойчивости"
-L["Resilience Summary"] = "Суммировать устойчивость"
--- /rb sum tank tp
-L["Sum TankPoints"] = "Самма TankPoints"
-L["TankPoints <- Health, Total Reduction"] ="TankPoints <- Здоровье, Общее Cнижение"
--- /rb sum tank tr
-L["Sum Total Reduction"] = "Самма общего снижения"
-L["Total Reduction <- Armor, Dodge, Parry, Block, MobMiss, MobCrit, MobCrush, DamageTakenMods"] = "Общее снижение <- Броня, Уклонение, Парирование, Блок, ПромахСущества, КритСущества, MobCrush, DamageTakenMods"
+L["Block Chance <- Block Rating"] = "Рейтинг блокирования -> Вероятность блокирования"
+-- /rb sum tank Reductiondodge
+L["Dodge Reduction <- Expertise"] = "Игнорирование уклонения <- Мастерство"
+-- /rb sum tank Reductionparry
+L["Parry Reduction <- Expertise"] = "Игнорирование парирования <- Мастерство"
 -- /rb sum tank avoid
-L["Sum Avoidance"] = "Сумма избегания"
-L["Avoidance <- Dodge, Parry, MobMiss, Block(Optional)"] = "Избегание <- Уклонение, Парирование, ПромахСущества, шанс блока(опционально)"
+L["Avoidance <- Dodge, Parry, MobMiss, Block(Optional)"] = "Уклонение от удара <- Уклонение, Парирование, ПромахСущества, Блок(дополнительный)"
 ---------------------------------------------------------------------------
 -- /rb sum gemset
 L["Gem Set"] = "Набор самоцветов"
@@ -528,18 +244,11 @@ L["Default Gem Set 3"] = "Набор по умолчанию 3"
 -- /rb sum gem
 L["Auto fill empty gem slots"] = "Автозаполнение пустых слотов"
 -- /rb sum gem red
-L["Red Socket"] = EMPTY_SOCKET_RED
 L["ItemID or Link of the gem you would like to auto fill"] = "ID предмета или ссылка на самоцвет, кторым вы хотите автозаполнять слоты"
 L["<ItemID|Link>"] = "<ItemID|Link>"
 L["|cffffff7f%s|r is now set to |cffffff7f[%s]|r"] = "|cffffff7f%s|r в настоящее время установлена на |cffffff7f[%s]|r"
 L["Invalid input: %s. ItemID or ItemLink required."] = "Ошибочный ввод: %s. Требуется ID предмета либо ссылка."
 L["Queried server for Gem: %s. Try again in 5 secs."] = "Запрос у сервера самоцвета: %s. Повторная попытка через 5 сек."
--- /rb sum gem yellow
-L["Yellow Socket"] = EMPTY_SOCKET_YELLOW
--- /rb sum gem blue
-L["Blue Socket"] = EMPTY_SOCKET_BLUE
--- /rb sum gem meta
-L["Meta Socket"] = EMPTY_SOCKET_META
 -- /rb sum gem2
 L["Second set of default gems which can be toggled with a modifier key"] = "Второй набор самоцветов по умолчанию который может быть переключен с помощью клавиш"
 L["Can't use the same modifier as Gem Set 3"] = "Нельзя использовать теже клавиши что и у набора самоцветов 3"
@@ -555,6 +264,17 @@ L["Can't use the same modifier as Gem Set 2"] = "Нельзя использов
 -----------------------
 L["ItemLevel: "] = "Уровень предмета: "
 L["ItemID: "] = "ID предмета: "
+
+-------------------
+-- Always Buffed --
+-------------------
+L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"] = "Enables RatingBuster to calculate selected buff effects even if you don't really have them"
+L["$class Self Buffs"] = "$class Self Buffs" -- $class will be replaced with localized player class
+L["Raid Buffs"] = "Raid Buffs"
+L["Stat Multiplier"] = "Stat Multiplier"
+L["Attack Power Multiplier"] = "Attack Power Multiplier"
+L["Reduced Physical Damage Taken"] = "Reduced Physical Damage Taken"
+
 -----------------------
 -- Matching Patterns --
 -----------------------
@@ -593,9 +313,9 @@ L["ItemID: "] = "ID предмета: "
 --
 -- IMPORTANT: there may not exist a one-to-one correspondence, meaning you can't just translate this file,
 -- but will need to go in game and find out what needs to be put in here.
--- For example, in english I found 3 different strings that maps to CR_CRIT_MELEE: "critical strike", "critical hit" and "crit".
--- You will need to find out every string that represents CR_CRIT_MELEE, and so on.
--- In other languages there may be 5 different strings that should all map to CR_CRIT_MELEE.
+-- For example, in english I found 3 different strings that maps to StatLogic.Stats.MeleeCritRating: "critical strike", "critical hit" and "crit".
+-- You will need to find out every string that represents StatLogic.Stats.MeleeCritRating, and so on.
+-- In other languages there may be 5 different strings that should all map to StatLogic.Stats.MeleeCritRating.
 -- so please check in game that you have all strings, and not translate directly off this table.
 --
 -- Tip1: When doing localizations, I recommend you set debugging to true in RatingBuster.lua
@@ -604,51 +324,27 @@ L["ItemID: "] = "ID предмета: "
 --
 -- Tip2: The strings are passed into string.find, so you should escape the magic characters ^$()%.[]*+-? with a %
 L["numberPatterns"] = {
-	{pattern = " на (%d+)", addInfo = "AfterNumber", space = " ", },
-	{pattern = "([%+%-]%d+)", addInfo = "AfterNumber", space = " ", },
-	{pattern = " увеличена на (%d+)", addInfo = "AfterNumber", space = " ", },
-	{pattern = "(%d+) к ", addInfo = "AfterNumber", space = " ", }, -- тест
-	{pattern = "увеличение (%d+)", addInfo = "AfterNumber", space = " ", }, -- for "grant you xx stat" type pattern, ex: Quel'Serrar, Assassination Armor set
-	{pattern = "дополнительно (%d+)", addInfo = "AfterNumber", space = " ", }, -- for "add xx stat" type pattern, ex: Adamantite Sharpening Stone
+	{pattern = " на (%d+)%f[^%d%%]", addInfo = "AfterNumber"},
+	{pattern = "([%+%-]%d+)%f[^%d%%] к", addInfo = "AfterStat",},
+	{pattern = " увеличена на (%d+)", addInfo = "AfterNumber"},
+	{pattern = "(%d+) к ", addInfo = "AfterNumber"}, -- тест
+	{pattern = "увеличение (%d+)", addInfo = "AfterNumber"}, -- for "grant you xx stat" type pattern, ex: Quel'Serrar, Assassination Armor set
+	{pattern = "дополнительно (%d+)", addInfo = "AfterNumber"}, -- for "add xx stat" type pattern, ex: Adamantite Sharpening Stone
 	-- Added [^%%] so that it doesn't match strings like "Increases healing by up to 10% of your total Intellect." [Whitemend Pants] ID: 24261
 	-- Added [^|] so that it doesn't match enchant strings (JewelTips)
-	{pattern = "на (%d+)([^%d%%|]+)", addInfo = "AfterNumber", space = " ", }, -- [發光的暗影卓奈石] +6法術傷害及5耐力
-	{pattern = string.lower(ATTACK_POWER), id = ATTACK_POWER_TOOLTIP},
-	
+	{pattern = "(%d+)%f[^%d%%|]", addInfo = "AfterNumber"}, -- [發光的暗影卓奈石] +6法術傷害及5耐力
+}
+-- Exclusions are used to ignore instances of separators that should not get separated
+L["exclusions"] = {
 }
 L["separators"] = {
-	"/", " и ", "%. ", " для ", "&", ":",
+	"/", " и ", ",", "%. ", " для ", "&", ": %f[^%d]", "\n",
 	-- Fix for [Mirror of Truth]
 	-- Equip: Chance on melee and ranged critical strike to increase your attack power by 1000 for 10 secs.
 	-- 1000 was falsely detected detected as ranged critical strike
 	"повысить вашу",
 }
---[[ Rating ID
-CR_WEAPON_SKILL = 1;
-CR_DEFENSE_SKILL = 2;
-CR_DODGE = 3;
-CR_PARRY = 4;
-CR_BLOCK = 5;
-CR_HIT_MELEE = 6;
-CR_HIT_RANGED = 7;
-CR_HIT_SPELL = 8;
-CR_CRIT_MELEE = 9;
-CR_CRIT_RANGED = 10;
-CR_CRIT_SPELL = 11;
-CR_HIT_TAKEN_MELEE = 12;
-CR_HIT_TAKEN_RANGED = 13;
-CR_HIT_TAKEN_SPELL = 14;
-COMBAT_RATING_RESILIENCE_CRIT_TAKEN = 15;
-COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN = 16;
-CR_CRIT_TAKEN_SPELL = 17;
-CR_HASTE_MELEE = 18;
-CR_HASTE_RANGED = 19;
-CR_HASTE_SPELL = 20;
-CR_WEAPON_SKILL_MAINHAND = 21;
-CR_WEAPON_SKILL_OFFHAND = 22;
-CR_WEAPON_SKILL_RANGED = 23;
-CR_EXPERTISE = 24;
---
+--[[
 SPELL_STAT1_NAME = "Strength"
 SPELL_STAT2_NAME = "Agility"
 SPELL_STAT3_NAME = "Stamina"
@@ -659,155 +355,251 @@ SPELL_STAT5_NAME = "Spirit"
 	-- рейтингу) т.к. иначе распознавание не работает.
 --
 
+L["statList"] = {
+	{"ослабление брони противника", false}, -- Annihilator
 
+	{"сила атаки", StatLogic.Stats.AttackPower},
+	{"силу атаки", StatLogic.Stats.AttackPower},
+	{"силы атаки", StatLogic.Stats.AttackPower},
+	{"силы вашей атаки", StatLogic.Stats.AttackPower},
+	{"к силе атаки", StatLogic.Stats.AttackPower},
+
+	-- Resistance and Spell Damage aren't used for breakdowns,
+	-- but are needed to prevent false matches of other stats
+	{"силам природы", NATURE_RES},
+	{"сила заклинаний", SPELL_DMG},
+	{"сила ваших заклинаний", SPELL_DMG},
+	{"силу заклинаний", SPELL_DMG},
+	{"силы заклинаний", SPELL_DMG},
+	{"к силе заклинаний", SPELL_DMG},
+
+	{"рейтинг пробивания брони", StatLogic.Stats.ArmorPenetrationRating},
+	{"рейтингу пробивания брони", StatLogic.Stats.ArmorPenetrationRating},
+	{"рейтинга пробивания брони", StatLogic.Stats.ArmorPenetrationRating},
+	{"эффективность брони противника", StatLogic.Stats.ArmorPenetrationRating},
+	{"броня", StatLogic.Stats.Armor},
+	{"брони", StatLogic.Stats.Armor},
+	{"броню", StatLogic.Stats.Armor},
+	{"броне", StatLogic.Stats.Armor},
+	{"сила", StatLogic.Stats.Strength}, -- Strength
+	{"силу", StatLogic.Stats.Strength}, -- Strength
+	{"силе", StatLogic.Stats.Strength}, -- Strength
+	{"силы", StatLogic.Stats.Strength}, -- Strength
+	{"ловкость", StatLogic.Stats.Agility}, -- Agility
+	{"ловкости", StatLogic.Stats.Agility}, -- Agility
+	{"выносливость", StatLogic.Stats.Stamina}, -- Stamina
+	{"выносливости", StatLogic.Stats.Stamina}, -- Stamina
+	{"интеллекту", StatLogic.Stats.Intellect}, -- Intellect
+	{"интеллект", StatLogic.Stats.Intellect}, -- Intellect
+	{"духу", StatLogic.Stats.Spirit}, -- Spirit
+	{"дух", StatLogic.Stats.Spirit}, -- Spirit
+
+	{"рейтинг защиты", StatLogic.Stats.DefenseRating},
+	{"рейтингу защиты", StatLogic.Stats.DefenseRating},
+	{"рейтинга защиты", StatLogic.Stats.DefenseRating},
+	{"к защите", StatLogic.Stats.DefenseRating},
+	{DEFENSE:lower(), StatLogic.Stats.Defense},
+	{"рейтинг уклонения", StatLogic.Stats.DodgeRating},
+	{"рейтингу уклонения", StatLogic.Stats.DodgeRating},
+	{"рейтинга уклонения", StatLogic.Stats.DodgeRating},
+	{"эффективность уклонения", StatLogic.Stats.DodgeRating},
+	{"рейтинг блокирования щитом", StatLogic.Stats.BlockRating}, -- block enchant: "+10 Shield Block Rating"
+	{"рейтинга блокирования щитом", StatLogic.Stats.BlockRating},
+	{"рейтингу блокирования щитом", StatLogic.Stats.BlockRating},
+	{"увеличение рейтинга блокирования щита на", StatLogic.Stats.BlockRating},
+	{"рейтинг блока", StatLogic.Stats.BlockRating},
+	{"рейтинга блока", StatLogic.Stats.BlockRating},
+	{"рейтингу блока", StatLogic.Stats.BlockRating},
+	{"рейтинг парирования", StatLogic.Stats.ParryRating},
+	{"рейтинга парирования", StatLogic.Stats.ParryRating},
+	{"рейтингу парирования", StatLogic.Stats.ParryRating},
+
+	{"рейтинг критического удара %(заклинания%)", StatLogic.Stats.SpellCritRating},
+	{"рейтингу критического удара %(заклинания%)", StatLogic.Stats.SpellCritRating},
+	{"рейтинга критического удара %(заклинания%)", StatLogic.Stats.SpellCritRating},
+	{"рейтинга критического удара заклинаниями", StatLogic.Stats.SpellCritRating},
+	{"рейтингу критического удара заклинаниями", StatLogic.Stats.SpellCritRating},
+	{"рейтинг критического удара заклинаниями", StatLogic.Stats.SpellCritRating},
+	{"критический удар %(заклинания%)", StatLogic.Stats.SpellCritRating},
+	{"меткость %(заклинания%)", StatLogic.Stats.SpellHitRating},
+	{"к критическому удару в дальнем бою", StatLogic.Stats.RangedCritRating}, -- [Heartseeker Scope]
+	{"рейтинг критического удара", StatLogic.Stats.CritRating},
+	{"к рейтингу критического эффекта", StatLogic.Stats.CritRating},
+	{"рейтингу критического удара", StatLogic.Stats.CritRating},
+	{"рейтинга критического удара", StatLogic.Stats.CritRating},
+	{"рейтинг крит. удара оруж. ближнего боя", StatLogic.Stats.MeleeCritRating},
+
+	{"рейтинг меткости %(заклинания%)", StatLogic.Stats.SpellHitRating},
+	{"рейтингу меткости %(заклинания%)", StatLogic.Stats.SpellHitRating},
+	{"рейтинга меткости %(заклинания%)", StatLogic.Stats.SpellHitRating},
+	{"рейтинга меткости заклинаний", StatLogic.Stats.SpellHitRating},
+	{"рейтингу меткости заклинаний", StatLogic.Stats.SpellHitRating},
+	{"Рейтинг меткости (оруж. дальн. боя)", StatLogic.Stats.RangedHitRating},
+	{"рейтинга нанесения удара ближнего боя", StatLogic.Stats.MeleeHitRating},
+	{"рейтинг меткости", StatLogic.Stats.HitRating},
+	{"рейтинга меткости", StatLogic.Stats.HitRating},
+	{"рейтингу меткости", StatLogic.Stats.HitRating},
+
+	{"рейтинг устойчивости", StatLogic.Stats.ResilienceRating}, -- resilience is implicitly a rating
+	{"рейтингу устойчивости", StatLogic.Stats.ResilienceRating},
+	{"рейтинга устойчивости", StatLogic.Stats.ResilienceRating},
+
+	{"рейтинг скорости %(заклинания%)", StatLogic.Stats.SpellHasteRating},
+	{"рейтингу скорости %(заклинания%)", StatLogic.Stats.SpellHasteRating},
+	{"рейтинга скорости %(заклинания%)", StatLogic.Stats.SpellHasteRating},
+	{"скорости наложения заклинаний", StatLogic.Stats.SpellHasteRating},
+	{"скорость наложения заклинаний", StatLogic.Stats.SpellHasteRating},
+	{"рейтинг скорости дальнего боя", StatLogic.Stats.RangedHasteRating},
+	{"рейтингу скорости дальнего боя", StatLogic.Stats.RangedHasteRating},
+	{"рейтинга скорости дальнего боя", StatLogic.Stats.RangedHasteRating},
+	{"рейтинг скорости", StatLogic.Stats.HasteRating},
+	{"рейтингу скорости", StatLogic.Stats.HasteRating},
+	{"рейтинга скорости", StatLogic.Stats.HasteRating},
+
+	{"мастерства", StatLogic.Stats.ExpertiseRating},
+
+	{SPELL_STATALL:lower(), StatLogic.Stats.AllStats},
+
+	{"искусност", StatLogic.Stats.MasteryRating},
+}
 -------------------------
 -- Added info patterns --
 -------------------------
--- $value will be replaced with the number
--- EX: "$value% Crit" -> "+1.34% Crit"
--- EX: "Crit $value%" -> "Crit +1.34%"
-L["$value% Crit"] = "$value% крит"
-L["$value% Spell Crit"] = "$value% крит закл"
-L["$value% Dodge"] = "$value% уклонение"
-L["$value HP"] = "$value Здор"
-L["$value MP"] = "$value Мана"
-L["$value AP"] = "$value Сила атаки"
-L["$value RAP"] = "$value САДБ"
-L["$value Pwr"] = "$value урона"
-L["$value Heal"] = "$value Исцеления"
-L["$value Armor"] = "$value Броня"
-L["$value Block"] = "$value% Блок"
-L["$value MP5"] = "$value МП5сек"
-L["$value MP5(OC)"] = "$value МП 5сек НК"
-L["$value HP5"] = "$value Здор 5сек"
-L["$value to be Dodged/Parried"] = "$value% уклон/парир"
-L["$value to be Crit"] = "$value% крит"
-L["$value Crit Dmg Taken"] = "$value крит урон"
-L["$value DOT Dmg Taken"] = "$value сила дотов"
-L["$value Parry"] = "$value парирование"
+-- Controls the order of values and stats in stat breakdowns
+-- "%s %s"     -> "+1.34% Crit"
+-- "%2$s $1$s" -> "Crit +1.34%"
+L["StatBreakdownOrder"] = "%s %s"
+L["Show %s"] = SHOW.." %s"
 -- for hit rating showing both physical and spell conversions
 -- (+1.21%, S+0.98%)
 -- (+1.21%, +0.98% S)
-L["$value Spell"] = "$value закл."
-L["$value Spell Hit"] = "$value метк. закл."
+L["Spell"] = "для заклинаний"
 
-------------------
--- Stat Summary --
-------------------
-L["Stat Summary"] = "Итог по статам"
-L["statList"] = {
-	--{pattern = "score de critique", id = CR_CRIT_MELEE}, --Crit
-	--{pattern = "score de coup critique", id = CR_CRIT_MELEE}, --Crit
-	
---Stats
+-- Basic Attributes
+L[StatLogic.Stats.Strength] = "Сила"
+L[StatLogic.Stats.Agility] = "Ловкость"
+L[StatLogic.Stats.Stamina] = "Выносливость"
+L[StatLogic.Stats.Intellect] = "Интеллект"
+L[StatLogic.Stats.Spirit] = "Дух"
+L[StatLogic.Stats.Mastery] = "Искусность"
+L[StatLogic.Stats.MasteryEffect] = SPELL_LASTING_EFFECT:format("Искусность")
+L[StatLogic.Stats.MasteryRating] = "Рейтинг искусности"
 
-	{pattern = string.lower(SPELL_STAT1_NAME), id = SPELL_STAT1_NAME}, -- Strength
-	{pattern = string.lower(SPELL_STAT2_NAME), id = SPELL_STAT2_NAME}, -- Agility
-	{pattern = string.lower(SPELL_STAT3_NAME), id = SPELL_STAT3_NAME}, -- Stamina
-	{pattern = string.lower(SPELL_STAT4_NAME), id = SPELL_STAT4_NAME}, -- Intellect
-	{pattern = string.lower(SPELL_STAT5_NAME), id = SPELL_STAT5_NAME}, -- Spirit
+-- Resources
+L[StatLogic.Stats.Health] = "Здоровье"
+S[StatLogic.Stats.Health] = "к здоровью"
+L[StatLogic.Stats.Mana] = "Мана"
+S[StatLogic.Stats.Mana] = "к мане"
+L[StatLogic.Stats.ManaRegen] = "Восполнение маны"
+S[StatLogic.Stats.ManaRegen] = "маны раз в 5 сек."
 
-	{pattern = string.lower(ITEM_MOD_STRENGTH_SHORT), id = SPELL_STAT1_NAME}, -- Strength
-	{pattern = string.lower(ITEM_MOD_AGILITY_SHORT), id = SPELL_STAT2_NAME}, -- Agility
-	{pattern = string.lower(ITEM_MOD_STAMINA_SHORT), id = SPELL_STAT3_NAME}, -- Stamina
-	{pattern = string.lower(ITEM_MOD_INTELLECT_SHORT), id = SPELL_STAT4_NAME}, -- Intellect
-	{pattern = string.lower(ITEM_MOD_SPIRIT_SHORT), id = SPELL_STAT5_NAME}, -- Spirit
---Dodge
-	{pattern = string.lower(STAT_DODGE), id = CR_DODGE},
-	{pattern = string.lower(ITEM_MOD_DODGE_RATING_SHORT), id = CR_DODGE},
-	{pattern = string.lower(gsub(ITEM_MOD_DODGE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_DODGE}, 
---Parry
-	{pattern = string.lower(STAT_PARRY), id = CR_PARRY},
-	{pattern = string.lower(ITEM_MOD_PARRY_RATING_SHORT), id = CR_PARRY},
-	{pattern = string.lower(gsub(ITEM_MOD_PARRY_RATING,"%s[%+%-]?%%.%.?","")), id = CR_PARRY},
---Block
-	{pattern = string.lower(STAT_BLOCK), id = CR_BLOCK}, -- block enchant: "+10 Shield Block"
-	{pattern = string.lower(ITEM_MOD_BLOCK_VALUE_SHORT), id = CR_BLOCK}, -- block enchant: "+10 Shield Block"
-	{pattern = string.lower(gsub(ITEM_MOD_BLOCK_VALUE,"%s[%+%-]?%%.%.?","")), id = CR_BLOCK}, 
---Defense
-	{pattern = string.lower("рейтинг защиты"), id = CR_DEFENSE_SKILL},
-	{pattern = string.lower("рейтингу защиты"), id = CR_DEFENSE_SKILL},
-	{pattern = string.lower("рейтинга защиты"), id = CR_DEFENSE_SKILL},
-	{pattern = string.lower("повышает рейтинг защиты на"), id = CR_DEFENSE_SKILL},
-	{pattern = string.lower(gsub(ITEM_MOD_DEFENSE_SKILL_RATING,"%s[%+%-]?%%.%.?","")), id = CR_DEFENSE_SKILL},
-	
+local ManaRegenOutOfCombat = "Восполнения маны (вне боя)"
+L[StatLogic.Stats.ManaRegenOutOfCombat] = ManaRegenOutOfCombat
+if addon.tocversion < 40000 then
+	L[StatLogic.Stats.ManaRegenNotCasting] = "Восполнения маны (пока не применяете заклинания)"
+else
+	L[StatLogic.Stats.ManaRegenNotCasting] = ManaRegenOutOfCombat
+end
+S[StatLogic.Stats.ManaRegenNotCasting] = "маны раз в 5 сек. (вне каста)"
 
---Hit
-	{pattern = string.lower(ITEM_MOD_HIT_RATING_SHORT), id = CR_HIT_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_MELEE}, 
-	
-	{pattern = string.lower(ITEM_MOD_HIT_MELEE_RATING_SHORT), id = CR_HIT_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_MELEE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_MELEE}, 
-	
-	{pattern = string.lower(ITEM_MOD_HIT_RANGED_RATING_SHORT), id = CR_HIT_RANGED},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_RANGED_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_RANGED}, 
-	
-	{pattern = string.lower(ITEM_MOD_HIT_SPELL_RATING_SHORT), id = CR_HIT_SPELL},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_SPELL_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_SPELL}, 
---Crit
-	{pattern = string.lower(ITEM_MOD_CRIT_RATING_SHORT), id = CR_CRIT_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_CRIT_RATING,"%s[%+%-]?%%.%.?","")), id = CR_CRIT_MELEE},
-	
-	{pattern = string.lower(ITEM_MOD_CRIT_MELEE_RATING_SHORT), id = CR_CRIT_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_CRIT_MELEE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_CRIT_MELEE},
-	
-	{pattern = string.lower(ITEM_MOD_CRIT_RANGED_RATING_SHORT), id = CR_CRIT_RANGED},
-	{pattern = string.lower(gsub(ITEM_MOD_CRIT_RANGED_RATING,"%s[%+%-]?%%.%.?","")), id = CR_CRIT_RANGED},
-	
-	{pattern = string.lower(ITEM_MOD_CRIT_SPELL_RATING_SHORT), id = CR_CRIT_SPELL},
-	{pattern = string.lower(gsub(ITEM_MOD_CRIT_SPELL_RATING,"%s[%+%-]?%%.%.?","")), id = CR_CRIT_SPELL},
---Haste
-	{pattern = string.lower(ITEM_MOD_HASTE_RATING_SHORT), id = CR_HASTE_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HASTE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HASTE_MELEE},
+L[StatLogic.Stats.HealthRegen] = "Восстановление здоровья"
+S[StatLogic.Stats.HealthRegen] = "здоровья раз в 5 сек."
+L[StatLogic.Stats.HealthRegenOutOfCombat] = "Восполнение здаровья (вне боя)"
+S[StatLogic.Stats.HealthRegenOutOfCombat] = "ХП5 (вне боя)"
 
-	{pattern = string.lower(ITEM_MOD_HASTE_MELEE_RATING_SHORT), id = CR_HASTE_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HASTE_MELEE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HASTE_MELEE},
-	
-	{pattern = string.lower(ITEM_MOD_HASTE_RANGED_RATING_SHORT), id = CR_HASTE_RANGED},
-	{pattern = string.lower(gsub(ITEM_MOD_HASTE_RANGED_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HASTE_RANGED},
-	
-	{pattern = string.lower(ITEM_MOD_HASTE_SPELL_RATING_SHORT), id = CR_HASTE_SPELL},
-	{pattern = string.lower(gsub(ITEM_MOD_HASTE_SPELL_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HASTE_SPELL}, 
---Expertise
-	{pattern = string.lower(ITEM_MOD_EXPERTISE_RATING_SHORT), id = CR_EXPERTISE},
-	{pattern = string.lower(gsub(ITEM_MOD_EXPERTISE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_EXPERTISE},
---Armor penetration
-	{pattern = string.lower(ITEM_MOD_ARMOR_PENETRATION_RATING_SHORT), id = CR_ARMOR_PENETRATION},
-	{pattern = string.lower(gsub(ITEM_MOD_ARMOR_PENETRATION_RATING,"%s[%+%-]?%%.%.?","")), id = CR_ARMOR_PENETRATION},
-	{pattern = "score de pénétration d'armure", id = CR_ARMOR_PENETRATION},
-	{pattern = "augmente de %s la pénétration d'armure.", id = CR_ARMOR_PENETRATION},
---Mastery
-	{pattern = string.lower(ITEM_MOD_MASTERY_RATING_SHORT), id = CR_MASTERY},
-	{pattern = string.lower(gsub(ITEM_MOD_MASTERY_RATING,"%s[%+%-]?%%.%.?","")), id = CR_MASTERY},
---Spell Power
-	{pattern = string.lower(ITEM_MOD_SPELL_POWER_SHORT), id = SPELL_POWER},
-	{pattern = string.lower(gsub(ITEM_MOD_SPELL_POWER,"%s[%+%-]?%%.%.?","")), id = SPELL_POWER}, 
+-- Physical Stats
+L[StatLogic.Stats.AttackPower] = "Сила атаки"
+S[StatLogic.Stats.AttackPower] = "к силе атаки"
+L[StatLogic.Stats.FeralAttackPower] = "Сила атаки в облике зверя"
+L[StatLogic.Stats.IgnoreArmor] = "Игнорирование брони"
+L[StatLogic.Stats.ArmorPenetration] = "Пробивание брони"
+L[StatLogic.Stats.ArmorPenetrationRating] = "Рейтинг пробивания брони"
 
-	{pattern = string.lower(ITEM_MOD_SPELL_DAMAGE_DONE_SHORT), id = SPELL_DMG},
-	{pattern = string.lower(gsub(ITEM_MOD_SPELL_DAMAGE_DONE,"%s[%+%-]?%%.%.?","")), id = SPELL_DMG}, 
---PVP Power
-	{pattern = string.lower(ITEM_MOD_PVP_POWER_SHORT), id = CR_PVP_POWER}, 
-	{pattern = string.lower(gsub(ITEM_MOD_PVP_POWER,"%s[%+%-]?%%.%.?","")), id = CR_PVP_POWER},
---PVP Resil
-	{pattern = string.lower(ITEM_MOD_RESILIENCE_RATING_SHORT), id = COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN},
-	{pattern = string.lower(gsub(ITEM_MOD_RESILIENCE_RATING,"%s[%+%-]?%%.%.?","")), id = COMBAT_RATING_RESILIENCE_PLAYER_DAMAGE_TAKEN},
---Hit Taken
-	{pattern = string.lower(ITEM_MOD_HIT_TAKEN_RATING_SHORT), id = CR_HIT_TAKEN_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_TAKEN_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_TAKEN_MELEE},
-	
-	{pattern = string.lower(ITEM_MOD_HIT_TAKEN_MELEE_RATING_SHORT), id = CR_HIT_TAKEN_MELEE},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_TAKEN_MELEE_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_TAKEN_MELEE},
-	
-	{pattern = string.lower(ITEM_MOD_HIT_TAKEN_RANGED_RATING_SHORT), id = CR_HIT_TAKEN_RANGED},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_TAKEN_RANGED_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_TAKEN_RANGED},
-	
-	{pattern = string.lower(ITEM_MOD_HIT_TAKEN_SPELL_RATING_SHORT), id = CR_HIT_TAKEN_SPELL},
-	{pattern = string.lower(gsub(ITEM_MOD_HIT_TAKEN_SPELL_RATING,"%s[%+%-]?%%.%.?","")), id = CR_HIT_TAKEN_SPELL},
---Misc
-	{pattern = string.lower(STAT_CATEGORY_DEFENSE), id = CR_DEFENSE_SKILL},
-	{pattern = string.lower(SKILL), id = CR_WEAPON_SKILL},
-	{pattern = string.lower(ITEM_MOD_ARMOR_PENETRATION_RATING_SHORT), id = CR_ARMOR_PENETRATION},
-	{pattern = string.lower(ARMOR), id = ARMOR},
-	{pattern = string.lower(ATTACK_POWER), id = ATTACK_POWER_TOOLTIP},
-	--{pattern = string.lower(ATTACK_POWER_TOOLTIP), id = ATTACK_POWER},
-}
+-- Weapon Stats
+L[StatLogic.Stats.AverageWeaponDamage] = "Average Damage"
+L[StatLogic.Stats.WeaponDPS] = "Урон в секунду"
+
+-- Melee Stats
+L[StatLogic.Stats.MeleeHit] = "Вероятность попадания"
+L[StatLogic.Stats.MeleeHitRating] = "Рейтинг меткости"
+L[StatLogic.Stats.MeleeCrit] = "Вероятность крит. удара"
+S[StatLogic.Stats.MeleeCrit] = "к крит. удару"
+L[StatLogic.Stats.MeleeCritRating] = "Рейтинг крит. удара"
+L[StatLogic.Stats.MeleeHaste] = "Скорость"
+L[StatLogic.Stats.MeleeHasteRating] = "Рейтинг скорости"
+
+L[StatLogic.Stats.WeaponSkill] = "Оружейный навык"
+L[StatLogic.Stats.Expertise] = "Мастерство"
+L[StatLogic.Stats.ExpertiseRating] = "Рейтинг мастерства"
+L[StatLogic.Stats.DodgeReduction] = "игнорирования уклонения"
+S[StatLogic.Stats.DodgeReduction] = "уклонения" -- Target's dodges/parrys against your attacks
+L[StatLogic.Stats.ParryReduction] = "игнорирования парирования"
+S[StatLogic.Stats.ParryReduction] = "парирования" -- Target's dodges/parrys against your attacks
+
+-- Ranged Stats
+L[StatLogic.Stats.RangedAttackPower] = "Сила атаки дальнего боя"
+S[StatLogic.Stats.RangedAttackPower] = "к силе атаки дальнего боя"
+L[StatLogic.Stats.RangedHit] = "Вероятность поподания в дальнем бою"
+L[StatLogic.Stats.RangedHitRating] = "Рейтинга меткости дальнего боя"
+L[StatLogic.Stats.RangedCrit] = "Вероятность крит. удара в дальнем бою"
+L[StatLogic.Stats.RangedCritRating] = "Рейтинг крит. удара дальнего боя"
+L[StatLogic.Stats.RangedHaste] = "Скорость дальнего боя"
+L[StatLogic.Stats.RangedHasteRating] = "Рейтинг скорости дальнего боя"
+
+-- Spell Stats
+L[StatLogic.Stats.SpellPower] = "Сила заклинаний"
+L[StatLogic.Stats.SpellDamage] = "Сила заклинаний" -- Changed from Damage to Power
+S[StatLogic.Stats.SpellDamage] = "к силе заклинаний"
+L[StatLogic.Stats.HealingPower] = "Исцеление"
+S[StatLogic.Stats.HealingPower] = "к силе заклинаний"
+L[StatLogic.Stats.SpellPenetration] = "Проникающая способность"
+
+L[StatLogic.Stats.HolyDamage] = "Урон от светлой магии"
+L[StatLogic.Stats.FireDamage] = "Урон от огня"
+L[StatLogic.Stats.NatureDamage] = "Урон от сил природы"
+L[StatLogic.Stats.FrostDamage] = "Урон от магии льда"
+L[StatLogic.Stats.ShadowDamage] = "Урон от темной магии"
+L[StatLogic.Stats.ArcaneDamage] = "Урон от тайной магии"
+
+L[StatLogic.Stats.SpellHit] = "Вероятность поподания заклинаниями"
+S[StatLogic.Stats.SpellHit] = "метк. закл."
+L[StatLogic.Stats.SpellHitRating] = "Рейтинг меткости заклинаний"
+L[StatLogic.Stats.SpellCrit] = "Вероятность крит. удара заклинаниями"
+S[StatLogic.Stats.SpellCrit] = "к крит. удару"
+L[StatLogic.Stats.SpellCritRating] = "Рейтинг крит. удара заклинаниями"
+L[StatLogic.Stats.SpellHaste] = "Скорость заклинаний"
+L[StatLogic.Stats.SpellHasteRating] = "Рейтинг скорости заклинаний"
+
+-- Tank Stats
+L[StatLogic.Stats.Armor] = "Броня"
+S[StatLogic.Stats.Armor] = "к броне"
+
+L[StatLogic.Stats.Avoidance] = "уклонения от удара"
+L[StatLogic.Stats.Dodge] = "Вероятность уклонения"
+S[StatLogic.Stats.Dodge] = "к уклонению"
+L[StatLogic.Stats.DodgeRating] = "Рейтинг уклонения"
+L[StatLogic.Stats.Parry] = "Вероятность парирования"
+S[StatLogic.Stats.Parry] = "к парированию"
+L[StatLogic.Stats.ParryRating] = "Рейтинг парирования"
+L[StatLogic.Stats.BlockChance] = "Вероятность блокирования"
+L[StatLogic.Stats.BlockRating] = "Рейтинг блокирования"
+L[StatLogic.Stats.BlockValue] = "Показатель блокирования"
+S[StatLogic.Stats.BlockValue] = "к показателю блокирования" -- Block value
+L[StatLogic.Stats.Miss] = "Miss"
+
+L[StatLogic.Stats.Defense] = "Защита"
+L[StatLogic.Stats.DefenseRating] = "Рейтинг защиты"
+L[StatLogic.Stats.CritAvoidance] = "Crit Avoidance"
+S[StatLogic.Stats.CritAvoidance] = "к получению крит. удара" -- Your chance to get critical hit from target
+
+L[StatLogic.Stats.Resilience] = COMBAT_RATING_NAME15
+L[StatLogic.Stats.ResilienceRating] = "устойчивости"
+L[StatLogic.Stats.CritDamageReduction] = "Понижение входящего урона от крит. ударов"
+S[StatLogic.Stats.CritDamageReduction] = "к получению крит. урона"
+L[StatLogic.Stats.PvPDamageReduction] = "PvP Damage Taken"
+
+L[StatLogic.Stats.FireResistance] = "Сопротивление огню"
+L[StatLogic.Stats.NatureResistance] = "Сопротивление силам природы"
+L[StatLogic.Stats.FrostResistance] = "Сопротивление магии льда"
+L[StatLogic.Stats.ShadowResistance] = "Сопротивление темной магии"
+L[StatLogic.Stats.ArcaneResistance] = "Сопротивление тайной магии"

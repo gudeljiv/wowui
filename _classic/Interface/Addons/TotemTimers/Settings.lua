@@ -184,7 +184,9 @@ SettingsFunctions = {
 
     WeaponTracker = function(value, Timers)
         Timers[8].ActiveWhileHidden = TotemTimers.ActiveProfile.ActivateHiddenTimers and not value
-        if (value or TotemTimers.ActiveProfile.ActivateHiddenTimers) and AvailableSpells[SpellIDs.RockbiterWeapon] then
+        if (value or TotemTimers.ActiveProfile.ActivateHiddenTimers) and
+                (AvailableSpells[SpellIDs.RockbiterWeapon] or AvailableSpells[SpellIDs.FlametongueWeapon] or AvailableSpells[SpellIDs.WindfuryWeapon])
+        then
             Timers[8]:Activate()
         else
             Timers[8]:Deactivate()
@@ -219,8 +221,14 @@ SettingsFunctions = {
             -- update rank and set macro from attribute because of ft-1/ft-button
             TotemTimers.UpdateRank(button)
         else
-            if not GetSpellInfo(value) then
-                value = SpellIDs.RockbiterWeapon
+            if not GetSpellInfo(value) or not AvailableSpells[value] then
+                if AvailableSpells[SpellIDs.RockbiterWeapon] then
+                    value = SpellIDs.RockbiterWeapon
+                elseif AvailableSpells[SpellIDs.FlametongueWeapon] then
+                    value = SpellIDs.FlametongueWeapon
+                else
+                    value = SpellIDs.RockbiterWeapon
+                end
             end
             button:SetAttribute("type1", "spell")
             button:SetAttribute("spell1", value)
@@ -322,12 +330,13 @@ SettingsFunctions = {
 
     Show = function(value, Timers)
         if value then
-            for i = 1, 4 do
-                if (Timers[i].nr == FIRE_TOTEM_SLOT and AvailableSpells[SpellIDs.Searing])
-                        or (Timers[i].nr == EARTH_TOTEM_SLOT and (AvailableSpells[SpellIDs.Stoneskin] or AvailableSpells[SpellIDs.Earthbind] or AvailableSpells[SpellIDs.StoneBulwark]))
-                        or (Timers[i].nr == WATER_TOTEM_SLOT and (AvailableSpells[SpellIDs.HealingStream] or AvailableSpells[SpellIDs.ManaSpring]))
-                        or (Timers[i].nr == AIR_TOTEM_SLOT and (AvailableSpells[SpellIDs.Grounding] or AvailableSpells[SpellIDs.NatureResistance] or AvailableSpells[SpellIDs.Windfury])) then
-                    Timers[i]:Activate()
+            local activeTotems = {}
+            for spell, data in pairs(TotemData) do
+                if TotemTimers.AvailableSpells[spell] then activeTotems[data.element] = true end
+            end
+            for e = 1,4 do
+                if activeTotems[Timers[e].nr] then
+                    Timers[e]:Activate()
                 end
             end
             --TotemTimersFrame:Show()

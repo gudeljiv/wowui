@@ -79,6 +79,8 @@ TotemTimers.SpellIDs = {
     HealingWave = 331,
     LesserHealingWave = 8004,
     ChainHeal = 1064,
+    GreaterHealingWave = 77472,
+
 
     ClearCasting = 16246,
 
@@ -362,6 +364,7 @@ TotemTimers.CombatCooldownSpells = {
         SpellIDs.LightningBolt,
         SpellIDs.LavaBurst,
         SpellIDs.UnleashElements,
+        SpellIDs.FireNova,
         SpellIDs.EarthQuake,
         SpellIDs.WindShear,
 
@@ -455,6 +458,7 @@ TotemTimers.ProcData = {
             SpellIDs.ChainLightning,
             SpellIDs.HealingWave,
             SpellIDs.LesserHealingWave,
+            SpellIDs.GreaterHealingWave,
             SpellIDs.ChainHeal,
             SpellIDs.Hex,
         },
