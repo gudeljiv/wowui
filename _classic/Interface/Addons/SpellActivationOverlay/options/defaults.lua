@@ -21,7 +21,7 @@ SAO.defaults = {
                 },
             },
             glow = {
-                [56815] = { -- Rune Strike
+                [56815] = { -- Rune Strike (Wrath)
                     [56815] = true, -- Rune Strike
                 },
                 [59052] = { -- Rime
@@ -50,10 +50,10 @@ SAO.defaults = {
                 [16870] = { -- Omen of Clarity
                     [0] = true,
                 },
-                [48518] = { -- Eclipse (Lunar)
+                [48518] = { -- Eclipse (Lunar) (Wrath+)
                     [0] = true,
                 },
-                [48517] = { -- Eclipse (Solar)
+                [48517] = { -- Eclipse (Solar) (Wrath+)
                     [0] = true,
                 },
                 [408255] = { -- Eclipse (Lunar, Season of Discovery)
@@ -68,39 +68,42 @@ SAO.defaults = {
                 [16886] = { -- Nature's Grace (Era - Wrath)
                     [0] = false,
                 },
-                [46833] = { -- Wrath of Elune
+                [46833] = { -- Wrath of Elune (Wrath)
                     [0] = false,
                 },
-                [64823] = { -- Elune's Wrath
+                [64823] = { -- Elune's Wrath (Wrath)
                     [0] = false,
                 },
-                [69369] = { -- Predatory Strikes
+                [69369] = { -- Predatory Strikes (Wrath+)
                     [0] = true,
                 },
-                [60512] = { -- Healing Trance / Soul Preserver
+                [60512] = { -- Healing Trance / Soul Preserver (Wrath)
                     [0] = false,
+                },
+                [81093] = { -- Fury of Stormrage (Cataclysm)
+                    [0] = true,
                 },
                 [414800]= { -- Fury of Stormrage (Season of Discovery)
                     [0] = true,
                 },
             },
             glow = {
-                [2912] = { -- Starfire
+                [2912] = { -- Starfire (Season of Discovery, Wrath+)
                     [2912] = true, -- Starfire
                 },
-                [5176] = { -- Wrath
+                [5176] = { -- Wrath (Season of Discovery, Wrath+)
                     [5176] = true, -- Wrath
                 },
                 [93400] = { -- Shooting Stars (Cataclysm)
                     [78674] = true, -- Starsurge
                 },
-                [46833] = { -- Wrath of Elune
+                [46833] = { -- Wrath of Elune (Wrath)
                     [2912] = true, -- Starfire
                 },
-                [64823] = { -- Elune's Wrath
+                [64823] = { -- Elune's Wrath (Wrath)
                     [2912] = true, -- Starfire
                 },
-                [69369] = { -- Predatory Strikes
+                [69369] = { -- Predatory Strikes (Wrath+)
                     [8936]  = false, -- Regrowth
                     [5185]  = true,  -- Healing Touch
                     [50464] = false, -- Nourish
@@ -110,6 +113,9 @@ SAO.defaults = {
                     [33786] = true,  -- Cyclone
                     [2637]  = false, -- Hibernate
                 },
+                [81093] = { -- Fury of Stormrage (Cataclysm)
+                    [2912] = true, -- Starfire
+                },
                 [414800]= { -- Fury of Stormrage (Season of Discovery)
                     [5185] = true, -- Healing Touch
                 },
@@ -117,11 +123,14 @@ SAO.defaults = {
         },
         ["HUNTER"] = {
             alert = {
-                [53220] = { -- Improved Steady Shot (Wrath+)
+                [53220] = { -- Improved Steady Shot (Wrath)
                     [0] = true,
                 },
                 [56453] = { -- Lock and Load (Wrath+)
                     [0] = true, -- any stacks
+                },
+                [82926] = { -- Master Marksman (Cataclysm)
+                    [0] = true,
                 },
                 [415414]= { -- Lock and Load (Season of Discovery)
                     [0] = true, -- any stacks
@@ -146,8 +155,11 @@ SAO.defaults = {
                     [53209] = true, --  Chimera Shot
                 },
                 [56453] = { -- Lock and Load (Wrath+)
-                    [3044]  = true, --  Arcane Shot
+                    [3044]  = true, --  Arcane Shot (not for Cata)
                     [53301] = true, --  Explosive Shot
+                },
+                [82926] = { -- Master Marksman (Cataclysm)
+                    [82928] = true, -- Aimed Shot!
                 },
                 [1495] = { -- Mongoose Bite (Era, TBC)
                     [1495]  = true, -- Mongoose Bite
@@ -326,6 +338,10 @@ SAO.defaults = {
                     [3] = true,  -- 3 stacks
                     [0] = false, -- any stacks but 3
                 },
+                [63735] = { -- Serendipity (Cataclysm)
+                    [1] = nil, -- set to nil to simplify DB migration, from Serendipity at 0 stacks
+                    [2] = nil, -- set to nil to simplify DB migration, from Serendipity at 3 stacks
+                },
                 [60514] = { -- Healing Trance / Soul Preserver (Wrath)
                     [0] = false,
                 },
@@ -347,11 +363,15 @@ SAO.defaults = {
                     [2061] = true, -- Flash Heal (not for TBC)
                 },
                 [88688] = { -- Surge of Light (Cataclysm)
-                    [2061] = true, -- Flash Heal
+                    [2061] = true, -- Flash Heal, also 101062: must use name
                 },
                 [63734] = { -- Serendipity 3/3 (Wrath)
                     [2060] = true, -- Greater Heal
                     [596]  = true, -- Prayer of Healing
+                },
+                [63735] = { -- Serendipity 2/2 (Cataclysm)
+                    [2060] = nil, -- Greater Heal, set to nil to simplify DB migration
+                    [596]  = nil, -- Prayer of Healing, set to nil to simplify DB migration
                 },
                 [413247]= { -- Serendipity 3/3 (Season of Discovery)
                     [2050] = true, -- Lesser Heal
@@ -370,12 +390,12 @@ SAO.defaults = {
         },
         ["ROGUE"] = {
             alert = {
-                [14251] = { -- Riposte
+                [14251] = { -- Riposte (Era - Wrath)
                     [0] = "cd:off",
                 },
             },
             glow = {
-                [14251] = { -- Riposte
+                [14251] = { -- Riposte (Era - Wrath)
                     [14251] = "cd:off", -- Riposte
                 },
             },
@@ -386,6 +406,9 @@ SAO.defaults = {
                     [0] = true,
                 },
                 [415105] = {  -- Power Surge (Season of Discovery)
+                    [0] = true,
+                },
+                [51505] = {  -- Lava Burst, for Lava Surge (Cataclysm)
                     [0] = true,
                 },
                 [53817] = { -- Maelstrom Weapon
@@ -405,7 +428,8 @@ SAO.defaults = {
                 [425339]= { -- Molten Blast (Season of Discovery)
                     [0] = true,
                 },
-                [324]= { -- Rolling Thunder (Season of Discovery)
+                [324]= { -- Lightning Shield, for Rolling Thunder (Season of Discovery) / Fulmination (Cataclysm)
+                    [6] = false,
                     [7] = false,
                     [8] = false,
                     [9] = true,
@@ -418,10 +442,12 @@ SAO.defaults = {
                 [53817] = { -- Maelstrom Weapon
                     [403]   = false, -- Lightning Bolt
                     [421]   = false, -- Chain Lightning
-                    [8004]  = false, -- Lesser Healing Wave
+                    [8004]  = false, -- Lesser Healing Wave / Healing Surge (Cataclysm)
                     [331]   = false, -- Healing Wave
                     [1064]  = false, -- Chain Heal
                     [51514] = false, -- Hex
+                    [77472] = false, -- Greater Healing Wave (Cataclysm)
+                    [73920] = false, -- Healing Rain (Cataclysm)
                 },
                 [408505] = { -- Maelstrom Weapon (Season of Discovery)
                     [403]   = false, -- Lightning Bolt
@@ -436,15 +462,19 @@ SAO.defaults = {
                     [1064]  = false, -- Chain Heal
                     [408490] = false, -- Lava Burst (Season of Discovery)
                 },
+                [51505] = {  -- Lava Burst, for Lava Surge (Cataclysm)
+                    [51505] = true,
+                },
                 [53390] = { -- Tidal Waves
-                    [8004] = false, -- Lesser Healing Wave
+                    [8004] = false, -- Lesser Healing Wave / Healing Surge (Cataclysm)
                     [331]  = false, -- Healing Wave
+                    [77472] = false, -- Greater Healing Wave (Cataclysm)
                 },
                 [425339]= { -- Molten Blast (Season of Discovery)
                     [425339] = true, -- Molten Blast (Season of Discovery)
                 },
-                [432056]= { -- Rolling Thunder (Season of Discovery)
-                    [8042] = true, -- Rolling Thunder (Season of Discovery)
+                [324]= {  -- Lightning Shield, for Rolling Thunder (Season of Discovery) / Fulmination (Cataclysm)
+                    [8042] = true, -- Earth Shock, for for Rolling Thunder (Season of Discovery) / Fulmination (Cataclysm)
                 },
                 [432041] = { -- Tidal Waves (Season of Discovery)
                     [8004] = false, -- Lesser Healing Wave
@@ -457,36 +487,44 @@ SAO.defaults = {
                 [17941] = { -- Nightfall
                     [0] = true,
                 },
-                [34936] = { -- Backlash
+                [34936] = { -- Backlash (TBC+)
                     [0] = true,
                 },
-                [71165] = { -- Molten Core
+                [71165] = { -- Molten Core (Wrath+)
                     [0] = true, -- any stacks
                 },
-                [63167] = { -- Decimation
+                [63167] = { -- Decimation (Wrath+)
                     [0] = true,
                 },
-                [47283] = { -- Empowered Imp
+                [47283] = { -- Empowered Imp (Wrath+)
                     [0] = true,
                 },
             },
             glow = {
+                [1120] = { -- Drain Soul (Wrath+)
+                    [1120] = "spec:1", -- Drain Soul
+                },
                 [17941] = { -- Nightfall
                     [686] = true, -- Shadow Bolt
                 },
-                [34936] = { -- Backlash
+                [71165] = { -- Molten Core (Wrath+)
+                    [29722] = true, -- Incinerate
+                    [6353]  = true, -- Soul Fire (not for Cata)
+                },
+                [63167] = { -- Decimation (Wrath+)
+                    [6353] = true, -- Soul Fire
+                },
+                [54277] = { -- Backdraft (Cataclysm)
+                    [686]   = false, -- Shadow Bolt
+                    [29722] = false, -- Incinerate
+                    [50796] = false, -- Chaos Bolt
+                },
+                [34936] = { -- Backlash (TBC+)
                     [686]   = true, -- Shadow Bolt
                     [29722] = true, -- Incinerate
                 },
-                [71165] = { -- Molten Core
-                    [29722] = true, -- Incinerate
+                [47283] = { -- Empowered Imp (Cataclysm)
                     [6353]  = true, -- Soul Fire
-                },
-                [63167] = { -- Decimation
-                    [6353] = true, -- Soul Fire
-                },
-                [1120] = { -- Drain Soul
-                    [1120] = "spec:1", -- Drain Soul
                 },
             },
         },
@@ -494,6 +532,9 @@ SAO.defaults = {
             alert = {
                 [52437] = { -- Sudden Death (Wrath+)
                     [0] = true, -- any stacks (up to 2 stacks with tier 10)
+                },
+                [46924] = { -- Bladestorm (Wrath+)
+                    [0] = true,
                 },
                 [46916] = { -- Bloodsurge (Wrath+)
                     [0] = true, -- any stacks (up to 2 stacks with tier 10)

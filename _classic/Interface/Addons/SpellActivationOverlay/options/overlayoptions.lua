@@ -1,5 +1,7 @@
 local AddonName, SAO = ...
 
+local Module = "option"
+
 -- Add a checkbox for an overlay
 -- talentID is the spell ID of the associated talent
 -- auraID is the spell ID that triggers the overlay; it must match a spell ID of an aura registered with RegisterAura
@@ -8,8 +10,16 @@ local AddonName, SAO = ...
 -- variants optional variant object that tells which are sub-options and how to use them
 -- testStacks if defined, forces the number of stacks for the test function
 -- testAuraID optional spell ID used to test the aura in lieu of auraID
+-- @note Options must be linked asap, not during loadOptions() which would be loaded only when the options panel is opened
+-- By linking options as soon as possible, before their respective RegisterAura() calls, options can be used by initial triggers, if any
 function SAO.AddOverlayOption(self, talentID, auraID, count, talentSubText, variants, testStacks, testAuraID)
     if not GetSpellInfo(talentID) or (not self:IsFakeSpell(auraID) and not GetSpellInfo(auraID)) then
+        if not GetSpellInfo(talentID) then
+            self:Debug(Module, "Skipping overlay option of talentID "..tostring(talentID).." because the spell does not exist");
+        end
+        if not self:IsFakeSpell(auraID) and not GetSpellInfo(auraID) then
+            self:Debug(Module, "Skipping overlay option of auraID "..tostring(auraID).." because the spell does not exist (and is not a fake spell)");
+        end
         return;
     end
 
@@ -75,10 +85,12 @@ function SAO.AddOverlayOption(self, talentID, auraID, count, talentSubText, vari
             end
 
             for _, aura in ipairs(auras[stacks]) do
+                local texture, positions, scale, r, g, b, autoPulse, _, endTime, combatOnly = select(4,unpack(aura));
+                local forcePulse = autoPulse;
                 if (type(variants) == 'table' and type(variants.transformer) == 'function') then
-                    self:ActivateOverlay(stacks, fakeOffset+(testAuraID or auraID), variants.transformer(cb, sb, select(4,unpack(aura))));
+                    self:ActivateOverlay(stacks, fakeOffset+(testAuraID or auraID), variants.transformer(cb, sb, texture, positions, scale, r, g, b, autoPulse, forcePulse, endTime, combatOnly));
                 else
-                    self:ActivateOverlay(stacks, fakeOffset+(testAuraID or auraID), select(4,unpack(aura)));
+                    self:ActivateOverlay(stacks, fakeOffset+(testAuraID or auraID), texture, positions, scale, r, g, b, autoPulse, forcePulse, endTime, combatOnly);
                 end
                 fakeOffset = fakeOffset + 1000000; -- Add offset so that different sub-auras may share the same 'location' for testing purposes
             end

@@ -40,8 +40,10 @@ local function AddTooltipInfo(tooltip, itemID)
             threshold = 18
         elseif standingID < 7 then
             threshold = 28
-        elseif standingID < 8 then
-            threshold = 41
+			elseif standingID < 8 then
+                threshold = 41
+            elseif standingID == 8 then
+                threshold = 999
         end
 
         local canGainReputation = questLevel >= threshold -- Using threshold instead of reputationNeeded

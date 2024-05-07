@@ -1,5 +1,81 @@
 ## SpellActivationOverlay Changelog
 
+#### v1.4.0 (2024-05-06)
+
+Shout-out to fellow developers Amanthuul and espionn. Thanks!
+
+New effects:
+- New SAO: Druid's Fury of Stormrage (Cataclysm)
+- New SAO: Hunter's Master Marksman (Cataclysm)
+- New SAO: Priest's Serendipity (Cataclysm)
+- New SAO: Shaman's Fulmination, with 6-9 Lightning Shield stacks (Cataclysm)
+- New SAO: Shaman's Maelstrom Weapon (Cataclysm)
+- New SAO: Shaman's Tidal Waves (Cataclysm)
+- New SAO: Warrior's Bladestorm (Wrath, Cataclysm)
+- New GAB: Druid's Starfire, during Fury of Stormrage (Cataclysm)
+- New GAB: Hunter's Aimed Shot!, during Master Marksman (Cataclysm)
+- New GAB: Warlock's Drain Soul, when the enemy has low HP (Cataclysm)
+- New GAB: Priest's Greater Heal, during Serendipity (Cataclysm)
+- New GAB: Priest's Prayer of Healing, during Serendipity (Cataclysm)
+- New GAB: Shaman's Lava Burst, with Lava Surge talent (Cataclysm)
+- New GAB: Shaman's Earth Shock, with 6-9 Lightning Shield stacks (Cataclysm)
+- New GAB: Shaman's Chain Heal, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Chain Lightning, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Greater Healing Wave, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Healing Rain, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Healing Surge, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Healing Wave, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Hex, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Lightning Bolt, during Maelstrom Weapon (Cataclysm)
+- New GAB: Shaman's Healing Surge, during Tidal Waves (Cataclysm)
+- New GAB: Shaman's Healing Wave, during Tidal Waves (Cataclysm)
+- New GAB: Shaman's Greater Healing Wave, during Tidal Waves (Cataclysm)
+- New GAB: Warlock's Chaos Bolt, during Backdraft (Cataclysm)
+- New GAB: Warlock's Incinerate, during Backdraft (Cataclysm)
+- New GAB: Warlock's Shadow Bolt, during Backdraft (Cataclysm)
+- New GAB: Warlock's Soul Fire, during Empowered Imp (Cataclysm)
+
+Updated Effects:
+- Shaman's Elemental Focus spell alert uses a more discreet texture (Cataclysm)
+
+Removed effects:
+- Death Knight's Rune Strike no longer glows (Cataclysm)
+- Druid's Nature's Grace has been removed (Cataclysm)
+- Hunter's Arcane Shot no longer glows during Lock and Load (Cataclysm)
+- Hunter's Improved Steady Shot has been removed (Cataclysm)
+- Rogue's Riposte has been removed (Cataclysm)
+- Warlock's Soul Fire no longer glows during Molten Core (Cataclysm)
+
+Sounds are no longer played for minor alerts, including:
+- Mage's Clearcasting
+- Mage's Frozen debuff
+- Mage's Heating Up (Season of Discovery, Wrath, Cataclysm)
+- Mage's Arcane Blast at 1-3 stacks (Season of Discovery)
+- Paladin's The Art of War with only 1 talent point (Wrath)
+- Priest's Serendipity at 1-2 stacks (Season of Discovery, TBC, Wrath)
+- Priest's Mind Spike at 1-2 stacks (Season of Discovery)
+- Shaman's Elemental Focus
+- Shaman's Maelstrom Weapon at 1-4 stacks (Season of Discovery, Wrath)
+- Shaman's Rolling Thunder at 7-9 Lightning Shield stacks (Season of Discovery)
+
+UI Improvements
+- Classes with no Spell Alerts now have a "None" text in their options panel
+- Classes with no Glowing Buttons now have a "None" text in their options panel
+
+Bug Fixes
+- Spell Alerts could sometimes not pulse when previewing in the options panel
+- Spell Alert during Toggle Test had incorrect texture orientation (Cataclysm)
+- Mage's Fringers of Frost had incorrect texture orientation (Cataclysm)
+- Mage's Frozen debuff had incorrect texture orientation (Cataclysm)
+- Mage's Brain Freeze had incorrect texture orientation (Cataclysm)
+- Mage's Pyroblast! is no longer counted for triggering Heating Up (Cataclysm)
+- Warlock's Drain Soul spec names in options displayed numbers (Cataclysm)
+
+Known issues
+- Some classes have too many options to fit in the options panel
+- Spell Alerts with distinct stack effects may display a short visual timer
+- Bladestorm textures may flip horizontally after changing race or body type
+
 #### v1.3.2 (2024-04-30)
 
 The Death Knight class experiments the upcoming rework for Cataclysm.

@@ -53,7 +53,10 @@ if (NIT.expansionNum < 4) then
 	NIT.classic = true;
 end
 NIT.latestRemoteVersion = version;
-if (NIT.isWrath) then
+if (NIT.isCata) then
+	NIT.hourlyLimit = 5;
+	NIT.dailyLimit = 999;
+elseif (NIT.isWrath) then
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 999;  --No limit in prepatch, but maybe a limit later?
 	--if (NIT.isPrepatch) then
@@ -4625,7 +4628,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			NIT:selectGossipOption(1);
 			return;
 		end
-		if (NIT.isWrath) then
+		if (NIT.isWrath or NIT.isCata) then
 			if ((npcID == "211299" or npcID == "211297") and NIT.db.global.autoGammaBuff and isInstance) then
 				local buffType, buffName, role = NIT:getGammaBuffType();
 				if (buffType) then
@@ -4973,11 +4976,18 @@ end
 function NIT:getActiveSpec()
 	local name, icon, talentCount, specType, role, fileName = nil, nil, 0;
 	for tab = 1, GetNumTalentTabs() do
-		local specName, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
+		local _, specName, specIcon, pointsSpent, file;
+		if (NIT.isCata) then
+			_, specName, _, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
+		else
+			specName, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
+		end
 		if (pointsSpent and pointsSpent > talentCount) then
 			name, icon, talentCount, fileName = specName, specIcon, pointsSpent, file;
 		end
 	end
+	--Why do different expansions use different capitalization in file names?
+	fileName = string.lower(fileName);
 	if (name) then
 		local _, class = UnitClass("player");
 		if (class == "ROGUE") then
@@ -4991,7 +5001,7 @@ function NIT:getActiveSpec()
 		else
 			--Multi role classes.
 			if (class == "DRUID") then
-				if (fileName == "DruidFeralCombat") then
+				if (fileName == "druidferalcombat") then
 					--Both feral tank and melee dps go down the feral tree, so we use role as backup.
 					--The role system in classic is scuffed but there's no better way I know of to tell the different.
 					--Hopefully feral tanks have thier role properly set.
@@ -5008,7 +5018,7 @@ function NIT:getActiveSpec()
 						specType = "melee";
 						role = "dps";
 					end
-				elseif (fileName == "DruidRestoration") then
+				elseif (fileName == "druidrestoration") then
 					specType = "healer";
 					role = "healer";
 				else
@@ -5016,7 +5026,7 @@ function NIT:getActiveSpec()
 					role = "dps";
 				end
 			elseif (class == "DEATHKNIGHT") then
-				if (fileName == "DeathKnightBlood") then
+				if (fileName == "deathknightblood") then
 					specType = "tank";
 					role = "tank";
 				else
@@ -5024,10 +5034,10 @@ function NIT:getActiveSpec()
 					role = "dps";
 				end
 			elseif (class == "PALADIN") then
-				if (fileName == "PaladinProtection") then
+				if (fileName == "paladinprotection") then
 					specType = "tank";
 					role = "tank";
-				elseif (fileName == "PaladinHoly") then
+				elseif (fileName == "paladinholy") then
 					specType = "healer";
 					role = "healer";
 				else
@@ -5035,7 +5045,7 @@ function NIT:getActiveSpec()
 					role = "dps";
 				end
 			elseif (class == "PRIEST") then
-				if (fileName == "PriestShadow") then
+				if (fileName == "priestshadow") then
 					specType = "ranged";
 					role = "dps";
 				else
@@ -5043,10 +5053,10 @@ function NIT:getActiveSpec()
 					role = "healer";
 				end
 			elseif (class == "SHAMAN") then
-				if (fileName == "ShamanElementalCombat") then
+				if (fileName == "shamanelementalcombat") then
 					specType = "ranged";
 					role = "dps";
-				elseif (fileName == "ShamanRestoration") then
+				elseif (fileName == "shamanrestoration") then
 					specType = "healer";
 					role = "healer";
 				else
@@ -5054,7 +5064,7 @@ function NIT:getActiveSpec()
 					role = "dps";
 				end
 			elseif (class == "WARRIOR") then
-				if (fileName == "WarriorProtection") then
+				if (fileName == "warriorprotection") then
 					specType = "tank";
 					role = "tank";
 				else

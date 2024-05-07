@@ -733,6 +733,7 @@ NWB.companionCreatures = {
 	[15368] = "Tonk Mine",
 	[11859] = "Doomguard",
 	[14337] = "Field Repair Bot 74A",
+	[7863] = "Dream Vision",
 	[32638] = "Hakmud of Argus",
 	[32639] = "Gnimo",
 	--Wrath.

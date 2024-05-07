@@ -9,35 +9,52 @@ local Module = "effect"
     name = "my_effect", -- Mandatory
     project = SAO.WRATH + SAO.CATA, -- Mandatory
     spellID = 12345, -- Mandatory; usually a buff to track, for counters this is the counter ability
-    talent = 49188, -- Talent or rune or nil (for counters)
-
+    talent = 49188, -- Talent or rune or nil (for counters that don't rely on other talent)
     counter = false, -- Default is false
     combatOnly = false, -- Default is false
 
     overlays = {{
+        stacks = 0, -- Default is 0
+        spellID = nil, -- Default is spellID from effect
         texture = "genericarc_05", -- Mandatory
         position = "Top", -- Mandatory
         scale = 1, -- Default is 1
         color = {255, 255, 255}, -- Default is {255, 255, 255}
         pulse = true, -- Default is true
-        option = true, -- Default is true
+        option = { -- Default is true
+            setupStacks = 0, -- Default is number of stacks from overlay
+            testStacks = 0, -- Default is nil, which defaults to setupStacks
+            subText = "no stacks", -- Default is nil
+            variants = nil, -- Default is nil
+        },
     }}, -- Although rare, multiple overlays are possible
 
     buttons = {{
         project = SAO.WRATH, -- Default is project from effect
         spellID = 1111, -- Default is spellID from effect
         useName = true, -- Default is false from Era to Wrath, default is true starting from Cataclysm
-        option = true, -- Default is true
+        stacks = 0, -- Default is nil to apply to all overlays (if any); may target one of the stacks from overlays
+        option = { -- Default is true
+            talentSubText = "no stacks", -- Default is nil; if option is not set at all, try to guess a good stack count for SAO:NbStacks
+            spellSubText = nil, -- Default is nil
+            variants = nil, -- Default is nil
+        },
     }, { -- Multiple buttons if needed
         project = SAO.CATA,
         spellID = 2222,
         useName = true,
-        option = true,
     }},
 }
 
 ]]
 local allEffects = {}
+
+-- List of effects waiting to be added to allEffects
+-- Cannot add them immediately to allEffects because the game is in need of other initialization, such as talent tree
+local pendingEffects = {}
+
+-- Flag to know when the player has logged in, detected by PLAYER_LOGIN event
+local hasPlayerLoggedIn = false;
 
 local function doesUseName(useNameProp)
     if useNameProp == nil then
@@ -47,32 +64,103 @@ local function doesUseName(useNameProp)
     end
 end
 
-local function createCounter(effect, props)
-    effect.counter = true;
-
-    effect.buttons = {{
-        useName = doesUseName(props.useName),
-    }}
-
-    return effect;
+-- Copy option's value, deep-copy if option is a table
+local function copyOption(option)
+    if type(option) == 'table' then
+        local optionCopy = {}; -- Copy table to avoid issues when re-using options between effects
+        for k, v in pairs(option) do
+            optionCopy[k] = v; -- Copy one depth level only
+            -- optionCopy[k] = copyOption(v); -- Use this code for a full deep copy
+        end
+        return optionCopy;
+    else
+        return option;
+    end
 end
 
-local function addAuraOverlay(overlays, overlayConfig, project)
-    if type(overlayConfig.texture) ~= 'string' then
-        SAO:Error(Module, "Adding Overlay with invalid texture "..tostring(overlayConfig.texture));
-    end
-    if type(overlayConfig.position) ~= 'string' then
-        SAO:Error(Module, "Adding Overlay with invalid position "..tostring(overlayConfig.position));
+-- Merge option1 and option2, with priority to option2
+local function mergeOption(option1, option2)
+    if option2 == nil then -- nil means "unspecified"
+        return copyOption(option1);
     end
 
+    if option2 == false then -- false means "no options, please"
+        return false;
+    end
+
+    if option2 == true then -- true means "I specify that yes I want an option, but not specifying which params exactly"
+        if type(option1) == 'table' then
+            return copyOption(option1);
+        end
+        return true;
+    end
+
+    -- At this point, option2 should be a table
+    if type(option2) ~= 'table' then
+        SAO:Error(Module, "Merging options with invalid values "..tostring(option1).." vs. "..tostring(option2));
+        return copyOption(option2);
+    end
+
+    if type(option1) ~= 'table' then
+        return copyOption(option2);
+    end
+
+    -- Merge both tables, with priority to option2
+    local combined = {}
+    for k, v in pairs(option1) do
+        combined[k] = v; -- write option1 first
+    end
+    for k, v in pairs(option2) do
+        combined[k] = v; -- option2 overwrites option1, if sharing same keys
+    end
+    return combined;
+end
+
+local function getValueOrDefault(value, default)
+    if value ~= nil then
+        return value;
+    else
+        return default;
+    end
+end
+
+local function addOneOverlay(overlays, overlayConfig, project, default)
+    if not default then
+        default = {}
+    end
+
+    local stacks = overlayConfig.stacks or default.stacks;
+    if type(stacks) ~= 'nil' and (type(stacks) ~= 'number' or stacks < 0) then
+        SAO:Error(Module, "Adding Overlay with invalid number of stacks "..tostring(stacks));
+    end
+
+    local texture = overlayConfig.texture or default.texture;
+    if type(texture) ~= 'string' then
+        SAO:Error(Module, "Adding Overlay with invalid texture "..tostring(texture));
+    end
+
+    local position = overlayConfig.position or default.position;
+    if type(position) ~= 'string' then
+        SAO:Error(Module, "Adding Overlay with invalid position "..tostring(position));
+    end
+
+    local option = overlayConfig.option;
+    if option == nil then option = default.option; end
+    if option ~= nil and type(option) ~= 'boolean' and type(option) ~= 'table' then
+        SAO:Error(Module, "Adding Overlay with invalid option "..tostring(option));
+    end
+
+    local color = overlayConfig.color or default.color;
+
     local overlay = {
-        project = project or overlayConfig.project;
-        texture = overlayConfig.texture;
-        position = overlayConfig.position;
-        scale = overlayConfig.scale;
-        color = overlayConfig.color and { overlayConfig.color[1], overlayConfig.color[2], overlayConfig.color[3] } or nil,
-        pulse = overlayConfig.pulse,
-        option = overlayConfig.pulse,
+        project = overlayConfig.project or project, -- Note: cannot have a 'default.project'
+        stacks = stacks,
+        texture = texture,
+        position = position,
+        scale = overlayConfig.scale or default.scale,
+        color = color and { color[1], color[2], color[3] } or nil,
+        pulse = getValueOrDefault(overlayConfig.pulse, default.pulse),
+        option = mergeOption(default.option, overlayConfig.option),
     }
 
     if type(overlay.project) == 'number' and not SAO.IsProject(overlay.project) then
@@ -82,23 +170,37 @@ local function addAuraOverlay(overlays, overlayConfig, project)
     table.insert(overlays, overlay);
 end
 
-local function addAuraButton(buttons, buttonConfig, project)
+local function addOneButton(buttons, buttonConfig, project, default)
+    if not default then
+        default = {}
+    end
+
     if type(buttonConfig) == 'table' then
-        if buttonConfig.spellID ~= nil and type(buttonConfig.spellID) ~= 'number' then
-            SAO:Error(Module, "Adding Button with invalid spellID "..tostring(buttonConfig.spellID));
+        local spellID = buttonConfig.spellID or default.spellID;
+        if spellID ~= nil and type(spellID) ~= 'number' then
+            SAO:Error(Module, "Adding Button with invalid spellID "..tostring(spellID));
+        end
+        local option = buttonConfig.option;
+        if option == nil then option = default.option; end
+        if option ~= nil and type(option) ~= 'boolean' and type(option) ~= 'table' then
+            SAO:Error(Module, "Adding Button with invalid option "..tostring(option));
         end
     end
 
-    local button = {}
+    local button = {};
 
     if type(buttonConfig) == 'number' then
-        button.project = project;
+        button.project = project; -- Note: cannot have a 'default.project'
         button.spellID = buttonConfig;
+        button.useName = default.useName;
+        button.stacks = default.stacks;
+        button.option = copyOption(default.option);
     elseif type(buttonConfig) == 'table' then
-        button.project = project or buttonConfig.project;
-        button.spellID = buttonConfig.spellID;
-        button.useName = buttonConfig.useName;
-        button.option = buttonConfig.useName;
+        button.project = buttonConfig.project or project; -- Note: cannot have a 'default.project'
+        button.spellID = buttonConfig.spellID or default.spellID;
+        button.useName = getValueOrDefault(buttonConfig.useName, default.useName);
+        button.stacks = buttonConfig.stacks or default.stacks;
+        button.option = mergeOption(default.option, buttonConfig.option);
     else
         SAO:Error(Module, "Adding Button with invalid value "..tostring(buttonConfig));
     end
@@ -110,45 +212,94 @@ local function addAuraButton(buttons, buttonConfig, project)
     table.insert(buttons, button);
 end
 
-local function createAura(effect, props)
-    effect.talent = props.talent;
-    effect.combatOnly = effect.combatOnly;
-
+local function importOverlays(effect, props)
     effect.overlays = {}
     if props.overlay then
-        addAuraOverlay(effect.overlays, props.overlay);
+        addOneOverlay(effect.overlays, props.overlay);
     end
+    local default = props.overlays and props.overlays.default or nil;
     for key, overlayConfig in pairs(props.overlays or {}) do
-        if type(key) == 'number' and key >= SAO.ERA then
-            if type(overlayConfig) == 'table' and overlayConfig[1] then
-                for _, subOverlayConfig in ipairs(overlayConfig) do
-                    addAuraOverlay(effect.overlays, subOverlayConfig, key);
+        if key ~= "default" then
+            if type(key) == 'number' and key >= SAO.ERA then
+                if type(overlayConfig) == 'table' and overlayConfig[1] then
+                    for _, subOverlayConfig in ipairs(overlayConfig) do
+                        addOneOverlay(effect.overlays, subOverlayConfig, key, overlayConfig.default or default);
+                    end
+                else
+                    addOneOverlay(effect.overlays, overlayConfig, key, default);
                 end
             else
-                addAuraOverlay(effect.overlays, overlayConfig, key);
+                addOneOverlay(effect.overlays, overlayConfig, nil, default);
             end
-        else
-            addAuraOverlay(effect.overlays, overlayConfig);
         end
     end
+end
 
+local function importButtons(effect, props)
     effect.buttons = {}
     if props.button then
-        addAuraButton(effect.buttons, props.button);
+        addOneButton(effect.buttons, props.button);
     end
+    local default = props.buttons and props.buttons.default or nil;
     for key, buttonConfig in pairs(props.buttons or {}) do
-        if type(key) == 'number' and key >= SAO.ERA then
-            if type(buttonConfig) == 'table' and buttonConfig[1] then
-                for _, subButtonConfig in ipairs(buttonConfig) do
-                    addAuraButton(effect.buttons, subButtonConfig, key);
+        if key ~= "default" then
+            if type(key) == 'number' and key >= SAO.ERA then
+                if type(buttonConfig) == 'table' and buttonConfig[1] then
+                    for _, subButtonConfig in ipairs(buttonConfig) do
+                        addOneButton(effect.buttons, subButtonConfig, key, buttonConfig.default or default);
+                    end
+                else
+                    addOneButton(effect.buttons, buttonConfig, key, default);
                 end
             else
-                addAuraButton(effect.buttons, buttonConfig, key);
+                addOneButton(effect.buttons, buttonConfig, nil, default);
             end
-        else
-            addAuraButton(effect.buttons, buttonConfig);
         end
     end
+end
+
+local function createCounter(effect, props)
+    effect.counter = true;
+
+    if type(props) == 'table' then
+        effect.combatOnly = props.combatOnly;
+        effect.buttons = {{
+            useName = doesUseName(props.useName),
+        }}
+    else
+        effect.buttons = {{
+            useName = doesUseName(),
+        }}
+    end
+
+    return effect;
+end
+
+local function createAura(effect, props)
+    if type(props) == 'table' then
+        effect.talent = props.talent or effect.spellID;
+        effect.combatOnly = props.combatOnly;
+    else
+        SAO:Error(Module, "Creating an aura for "..tostring(effect.name).." requires a 'props' table");
+    end
+
+    importOverlays(effect, props);
+
+    importButtons(effect, props);
+
+    return effect;
+end
+
+local function createCounterWithOverlay(effect, props)
+    if type(props) ~= 'table' or (not props.overlay and not props.overlays) then
+        SAO:Error(Module, "Creating a counter with overlay for "..tostring(effect.name).." requires a 'props' table that contains either 'overlay' or 'overlays' or both");
+    end
+
+    effect.talent = props.talent or effect.spellID;
+
+    createCounter(effect, props);
+
+    importOverlays(effect, props);
 
     return effect;
 end
@@ -200,6 +351,10 @@ local function checkEffect(effect)
             SAO:Error(Module, "Registering effect "..effect.name.." for overlay "..i.." with invalid spellID "..tostring(overlay.spellID));
             return false;
         end
+        if type(overlay.stacks) ~= 'nil' and (type(overlay.stacks) ~= 'number' or overlay.stacks < 0) then
+            SAO:Error(Module, "Registering effect "..effect.name.." for overlay "..i.." with invalid number of stacks "..tostring(overlay.stacks));
+            return false;
+        end
         if type(overlay.texture) ~= 'string' then -- @todo check the texture even exists
             SAO:Error(Module, "Registering effect "..effect.name.." for overlay "..i.." with invalid texture name "..tostring(overlay.texture));
             return false;
@@ -232,31 +387,70 @@ local function checkEffect(effect)
     return true;
 end
 
-function SAO:RegisterEffect(effect)
-    if not checkEffect(effect) then
-        return;
-    end
-
-    if not self.IsProject(effect.project) then
-        return;
-    end
-
-    local glowIDs = nil
+local function registerEffectNow(self, effect)
+    -- Buckets of glow IDs, sorted by their number of stacks
+    -- Key = Nb of stacks, Value = List of glow IDs
+    -- Stack index is guided by available overlays; if there are no overlays, index from button stacks instead
+    -- A button that has not defined its stacks will be added to all buckets
+    -- Please note, having no stacks defined is not the same as having stacks == 0
+    local glowIDsByStack = {};
     if type(effect.buttons) == 'table' then
-        glowIDs = {}
+        -- First, identify the list of stacks claimed by overlays
+        local hasExplicitStacks = false
+        for _, overlay in ipairs(effect.overlays or {}) do
+            local stacks = overlay.stacks or 0; -- Overlays with no stacks set is equivalent to explicitly having stacks == 0
+            glowIDsByStack[stacks] = {};
+            hasExplicitStacks = true;
+        end
+        -- If there are no overlays, look for buttons instead
+        if not hasExplicitStacks then
+            for _, button in ipairs(effect.buttons) do
+                local stacks = button.stacks;
+                if stacks then -- Unlike overlays, buttons with no stacks set are *not* equivalent to explicitly having stacks
+                    glowIDsByStack[stacks] = {};
+                    hasExplicitStacks = true;
+                end
+            end
+            if not hasExplicitStacks then
+                -- If there are no explicit stacks in buttons either, the implicit value is 0
+                glowIDsByStack[0] = {};
+            end
+        end
+
+        -- Then for each button, add them to their corresponding stack bucket
         for i, button in ipairs(effect.buttons) do
             if not button.project or self.IsProject(button.project) then
                 local spellID = button.spellID or effect.spellID;
                 local useName = doesUseName(button.useName);
+                local spellToAdd;
                 if useName then
                     local spellName = GetSpellInfo(spellID);
                     if not spellName then
                         SAO:Error(Module, "Registering effect "..effect.name.." for button "..i.." with unknown spellID "..tostring(spellID));
                         return false;
                     end
-                    table.insert(glowIDs, spellName);
+                    spellToAdd = spellName;
                 else
-                    table.insert(glowIDs, spellID);
+                    spellToAdd = spellID;
+                end
+
+                local stacks = button.stacks;
+                if stacks == 0 and not glowIDsByStack[0] then
+                    -- Button with stacks explicitly set to 0, but with no overlays at stacks == 0, will go to every bucket
+                    for _, glowBucket in pairs(glowIDsByStack) do
+                        table.insert(glowBucket, spellToAdd);
+                    end
+                elseif stacks then
+                    -- An explicit number of stacks will go directly to the target bucket
+                    if not glowIDsByStack[stacks] then
+                        SAO:Error(Module, "A button of "..tostring(effect.name).." has a 'stacks' number unbeknownst to overlays");
+                    end
+                    table.insert(glowIDsByStack[stacks], spellToAdd);
+                else
+                    -- A button without explicit number of stacks will go to every bucket
+                    for _, glowBucket in pairs(glowIDsByStack) do
+                        table.insert(glowBucket, spellToAdd);
+                    end
                 end
             end
         end
@@ -266,6 +460,9 @@ function SAO:RegisterEffect(effect)
         if not overlay.project or self.IsProject(overlay.project) then
             local name = effect.name;
             local stacks = overlay.stacks or 0;
+            if stacks > 0 then
+                name = name.." "..stacks;
+            end
             local spellID = overlay.spellID or effect.spellID;
             local texture = overlay.texture;
             local position = overlay.position;
@@ -274,30 +471,91 @@ function SAO:RegisterEffect(effect)
             if overlay.color then r, g, b = overlay.color[1], overlay.color[2], overlay.color[3] end
             local autoPulse = overlay.pulse ~= false;
             local combatOnly = overlay.combatOnly == true or effect.combatOnly == true;
-            self:RegisterAura(name, stacks, spellID, texture, position, scale, r, g, b, autoPulse, glowIDs, combatOnly);
-            glowIDs = nil; -- Immediately clear the glow ID list to avoid re-registering the same list on next overlay
+            self:RegisterAura(name, stacks, spellID, texture, position, scale, r, g, b, autoPulse, glowIDsByStack[stacks], combatOnly);
+            glowIDsByStack[stacks] = nil; -- Immediately clear the glow ID list to avoid re-registering the same list on next overlay with same number of stacks
         end
     end
 
-    if not effect.overlays and effect.counter == true then
-        self:RegisterAura(effect.name, 0, effect.spellID, nil, "", 0, 0, 0, 0, false, glowIDs);
+    if not effect.overlays or #effect.overlays == 0 then
+        -- If there are no overlays, assume each button expects to have a trigger for their number of stacks
+        local combatOnly = effect.combatOnly == true;
+        for stacks, glowBucket in pairs(glowIDsByStack) do
+            self:RegisterAura(effect.name, stacks, effect.spellID, nil, "", 0, 0, 0, 0, false, glowBucket, combatOnly);
+        end
+        glowIDsByStack = {};
+    end
+
+    for stacks, glowBucket in pairs(glowIDsByStack) do
+        SAO:Error(Module, "Effect "..tostring(effect.name).." has defined "..#glowBucket.." button(s) for stacks == "..tostring(stacks)..", but these buttons are unused");
     end
 
     if effect.counter == true then
-        self:RegisterCounter(effect.name);
+        local talent;
+        if effect.talent then
+            local _, _, tab, index = self:GetTalentByName(GetSpellInfo(effect.talent));
+            if type(tab) == 'number' and type(index) == 'number' then
+                talent = { tab, index };
+            end
+        end
+        self:RegisterCounter(effect.name, talent);
     end
 
     table.insert(allEffects, effect);
+end
+
+function SAO:RegisterEffect(effect)
+    if not checkEffect(effect) then
+        return;
+    end
+
+    if not self.IsProject(effect.project) then
+        return;
+    end
+
+    if hasPlayerLoggedIn then
+        registerEffectNow(self, effect);
+    else
+        table.insert(pendingEffects, effect);
+    end
+end
+
+function SAO:RegisterPendingEffectsAfterPlayerLoggedIn()
+    if hasPlayerLoggedIn then
+        self:Debug(Module, "Received PLAYER_LOGIN twice in the same session");
+    end
+    hasPlayerLoggedIn = true;
+
+    for _, effect in ipairs(pendingEffects) do
+        registerEffectNow(self, effect);
+    end
+    pendingEffects = {};
 end
 
 function SAO:AddEffectOptions()
     for _, effect in ipairs(allEffects) do
         local talent = effect.talent;
 
+        local uniqueOverlayStack = { latest = nil, unique = true };
         for _, overlay in ipairs(effect.overlays or {}) do
             if overlay.option ~= false and (not overlay.project or self.IsProject(overlay.project)) then
                 local buff = overlay.spellID or effect.spellID;
-                self:AddOverlayOption(talent, buff);
+                if type(overlay.option) == 'table' then
+                    local setupStacks = type(overlay.option.setupStacks) == 'number' and overlay.option.setupStacks or overlay.stacks;
+                    local testStacks = type(overlay.option.testStacks) == 'number' and overlay.option.testStacks or setupStacks;
+                    local subText = overlay.option.subText;
+                    local variants = overlay.option.variants;
+                    self:AddOverlayOption(talent, buff, setupStacks, subText, variants, testStacks);
+                else
+                    local setupStacks = overlay.stacks;
+                    self:AddOverlayOption(talent, buff, setupStacks);
+                end
+
+                -- Bonus: detect if all overlays are based on a unique stack count; it will help write sub-text for glowing option
+                local stacks = overlay.stacks or 0;
+                if uniqueOverlayStack.latest and uniqueOverlayStack.latest ~= stacks and uniqueOverlayStack.unique then
+                    uniqueOverlayStack.unique = false;
+                end
+                uniqueOverlayStack.latest = stacks;
             end
         end
 
@@ -305,7 +563,16 @@ function SAO:AddEffectOptions()
             if button.option ~= false and (not button.project or self.IsProject(button.project)) then
                 local buff = effect.spellID;
                 local spellID = button.spellID or effect.spellID;
-                self:AddGlowingOption(talent, buff, spellID);
+                if type(button.option) == 'table' then
+                    local talentSubText = button.option.talentSubText;
+                    local spellSubText = button.option.spellSubText;
+                    local variants = button.option.variants;
+                    self:AddGlowingOption(talent, buff, spellID, talentSubText, spellSubText, variants);
+                else
+                    local stacks = button.stacks or (uniqueOverlayStack.unique and uniqueOverlayStack.latest) or nil;
+                    local talentSubText = stacks and stacks > 0 and self:NbStacks(stacks) or nil;
+                    self:AddGlowingOption(talent, buff, spellID, talentSubText);
+                end
             end
         end
     end
@@ -317,7 +584,7 @@ end
     @param project Project flags where the effect is used e.g. SAO.WRATH+SAO.CATA
     @param class Class name e.g., "counter"
     @param props (optional) Properties to initialize the effect
-    @param register (optional) Register the effect immediately after creation; default is true
+    @param register (optional) Register the effect automatically after creation; default is true
 ]]
 function SAO:CreateEffect(name, project, spellID, class, props, register)
     if type(name) ~= 'string' or name == '' then
@@ -341,6 +608,10 @@ function SAO:CreateEffect(name, project, spellID, class, props, register)
         return nil;
     end
 
+    if not self.IsProject(project) then
+        return;
+    end
+
     local effect = {
         name = name,
         project = project,
@@ -351,6 +622,8 @@ function SAO:CreateEffect(name, project, spellID, class, props, register)
         createCounter(effect, props);
     elseif strlower(class) == "aura" then
         createAura(effect, props);
+    elseif strlower(class) == "counter_with_overlay" then
+        createCounterWithOverlay(effect, props);
     else
         self:Error(Module, "Creating effect "..name.." with unknown class "..tostring(class));
         return nil;

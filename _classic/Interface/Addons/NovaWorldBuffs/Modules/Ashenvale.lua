@@ -6,6 +6,7 @@ local addonName, addon = ...;
 local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local calcStart, lastSendGuild, lastSendPersonal = 0, 0, 0;
+local isRunning;
 
 SLASH_NWBASHVCMD1 = '/ashenvale';
 function SlashCmdList.NWBASHVCMD(msg, editBox)
@@ -15,7 +16,7 @@ end
 
 --These times are adjusted if DST is active in the getTimeLeft() func.
 local isUS;
-local region = GetCurrentRegion();
+local region = NWB:GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707264000; --Date and time (GMT): Wednesday, February 7, 2024 12:00:00 AM
@@ -36,7 +37,9 @@ elseif (region == 5) then
 	--China.
 	calcStart = 1707260400; --CN same as OCE/US.
 end
-
+--Trying to fix some issues with the timer not being exact, why is GetServerTime() not accurate?
+calcStart = calcStart + 30;
+--/dump date("%c", GetServerTime())
 _G["calcStart"] = calcStart;
 
 local function getTimeLeft()
@@ -359,10 +362,70 @@ function NWB:loadAshenvale()
 	createAshenvaleMarkers();
 end
 
-
-
-
-
+if (NWB.isSOD) then
+	local f = CreateFrame("Frame");
+	local barRunning;
+	f:RegisterEvent("PLAYER_ENTERING_WORLD");
+	f:RegisterEvent("AREA_POIS_UPDATED");
+	f:RegisterEvent("UPDATE_UI_WIDGET");
+	f:SetScript("OnEvent", function(self, event, ...)
+		if (event == "PLAYER_ENTERING_WORLD" or event == "AREA_POIS_UPDATED") then
+			local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+			if (zone == 1440) then
+				if (event == "PLAYER_ENTERING_WORLD") then
+					--Set running state if we logon in the zone, no widget update event will be fired they're loaded before the addon.
+					local isLogon, isReload = ...;
+					if (isLogon or isReload) then
+						local widgetData = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5366);
+						if (widgetData and widgetData.state == 1) then
+							isRunning = nil;
+							--NWB:debug("Ashenvale not running.");
+						end
+						local widgetData = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5367);
+						if (widgetData and widgetData.state == 1) then
+							isRunning = true;
+							--NWB:debug("Ashenvale running.");
+						end
+						local widgetData = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5368);
+						if (widgetData and widgetData.state == 1) then
+							isRunning = true;
+							--NWB:debug("Ashenvale running.");
+						end
+					end
+				end
+				local timeLeft, type, timestamp = getTimeLeft();
+				--Ashenvale has no static end time, but just show the timer if less than 2h50m left, most ashnevale games take less than 10mins now.
+				if (timeLeft < 10200 and not isRunning and not barRunning) then
+					barRunning = NWB:startCapping(timeLeft, "[NWB] " .. L["Ashenvale"], 132484, 10800);
+				end
+			elseif (barRunning) then
+				barRunning = false;
+				NWB:stopCapping("[NWB] " .. L["Ashenvale"]);
+			end
+		elseif (event == "UPDATE_UI_WIDGET") then
+			local data = ...;
+			if (data.widgetID == 5378) then --Progress stage, timer widget.
+				--The widget that fires the event isn't the same as displayed.
+				local widgetData = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5366);
+				if (widgetData and widgetData.state == 1) then
+					if (isRunning and not barRunning) then
+						--Start timer bar when the event ends.
+						local timeLeft, type, timestamp = getTimeLeft();
+						barRunning = NWB:startCapping(timeLeft, "[NWB] " .. L["Ashenvale"], 132484, 10800);
+					end
+					isRunning = nil;
+					--NWB:debug("Ashenvale not running.");
+				end
+			elseif (data.widgetID == 5367 or data.widgetID == 5368) then --Event is running, horde/alliance boss widgets.
+				local widgetData = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(data.widgetID);
+				if (widgetData and widgetData.state == 1) then
+					isRunning = true;
+					--NWB:debug("Ashenvale running.");
+				end
+			end
+		end
+	end)
+end
 
 
 -----------------------------------------------

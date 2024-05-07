@@ -36,6 +36,7 @@ local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNum
 local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
 local GetContainerItemLink = GetContainerItemLink or C_Container.GetContainerItemLink;
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
+NIT.currentInstanceID = 0;
 
 --Some of this addon comm stuff is copied from my other addon NovaWorldBuffs and is left here incase of future stuff being added.
 function NIT:OnCommReceived(commPrefix, string, distribution, sender)
@@ -312,7 +313,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:combatLogEventUnfiltered(...);
 	elseif (event == "UNIT_TARGET" or event == "PLAYER_TARGET_CHANGED") then
 		NIT:parseGUID("target", nil, "target");
-		if (NIT.inInstance and NIT.isWrath) then
+		if (NIT.inInstance and (NIT.isWrath or NIT.isCata)) then
 			NIT:scanDungeonSubDifficulty();
 		end
 	elseif (event == "UPDATE_MOUSEOVER_UNIT") then
@@ -1001,7 +1002,7 @@ function NIT:scanDungeonSubDifficulty()
 	end
 end
 
-function test()
+--[[function test()
 	local npcType;
 	if (NIT.faction == "Horde") then
 		npcType = L["Sunreaver Warden"];
@@ -1011,7 +1012,7 @@ function test()
 	NIT:print("|cFF00FF00" .. string.format(L["autoGammaBuffReminder"], npcType), nil, "[NIT Reminder]");
 	local colorTable = {r = 1, g = 0.96, b = 0.41, id = 41, sticky = 0};
 	RaidNotice_AddMessage(RaidWarningFrame, NIT.prefixColor .. "[NIT Reminder]:|r |cFF00FF00" .. string.format(L["autoGammaBuffReminder"], npcType), colorTable, 6);
-end
+end]]
 
 local isGhost = false;
 NIT.lastInstanceName = "(Unknown Instance)";
@@ -1178,6 +1179,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 			end)
 			--NIT.lastInstanceID = #NIT.data.instances + 1;
 			--NIT.data.instances[NIT.lastInstanceID] = t;
+			NIT.currentInstanceID = instanceID;
 			isGhost = false;
 			NIT:trimDatabase();
 			NIT:addInstanceCount(instanceID);
@@ -1218,6 +1220,7 @@ function NIT:leftInstance()
 		NIT:recordKeystoneData();
 	end)
 	NIT.inInstance = nil;
+	NIT.currentInstanceID = 0;
 	NIT.lastNpcID = 999999999;
 	NIT.lastInstanceName = "(Unknown Instance)";
 	if (NITAUTORESET) then

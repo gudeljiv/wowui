@@ -1704,6 +1704,14 @@ function NWB:loadSpecificOptions()
 			fontSize = "medium",
 			order = 35,
 		};
+		NWB.options.args.cappingSupport = {
+			type = "toggle",
+			name = L["cappingSupportTitle"],
+			desc = L["cappingSupportDesc"],
+			order = 138,
+			get = "getCappingSupport",
+			set = "setCappingSupport",
+		};
 	end
 end
 
@@ -1861,6 +1869,7 @@ NWB.optionDefaults = {
 		showNaxxWorldmapMarkers = true,
 		showNaxxMinimapMarkers = true,
 		bigWigsSupport = true,
+		cappingSupport = true,
 		earlyRendScan = true,
 		dmfFrame = true,
 		dmfAutoRes = false,
@@ -2228,7 +2237,7 @@ function NWB:checkNewVersion()
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isSOD) then
 				--Only show this update notes on US realms where they need a DST timer fix.
-				--if (GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
+				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					loadNewVersionFrame();
 				--end
 			end
@@ -3845,6 +3854,7 @@ end
 function NWB:getHideMinimapBuffTimers(info)
 	return self.db.global.hideMinimapBuffTimers;
 end
+
 --Bigwigs support.
 function NWB:setBigWigsSupport(info, value)
 	self.db.global.bigWigsSupport = value;
@@ -3852,6 +3862,15 @@ end
 
 function NWB:getBigWigsSupport(info)
 	return self.db.global.bigWigsSupport;
+end
+
+--Capping support.
+function NWB:setCappingSupport(info, value)
+	self.db.global.cappingSupport = value;
+end
+
+function NWB:getCappingSupport(info)
+	return self.db.global.cappingSupport;
 end
 
 --NPC walking sound.

@@ -66,6 +66,7 @@ function SpellActivationOverlay_OnLoad(self)
 	self:RegisterEvent("SPELLS_CHANGED");
 	self:RegisterEvent("LEARNED_SPELL_IN_TAB");
 	self:RegisterEvent("LOADING_SCREEN_DISABLED");
+	self:RegisterEvent("PLAYER_LOGIN");
 end
 
 function SpellActivationOverlay_OnChangeGeometry(self)
@@ -127,6 +128,9 @@ function SpellActivationOverlay_OnChangeSoundToggle(self)
 				-- Play generic sound if at least one effect is displayed
 				-- No need to spam players with several effects, because currently there is only one type of sound effect
 				overlayList[1].soundHandle = SAO:PlaySpellAlertSound();
+				-- Please note, we might play a sound for a non-pulsing alert (which should not play sounds),
+				-- but that's a minor issue, and we might even argue that it's for the better,
+				-- because it gives feedback that the player actually changed the sound option
 				break;
 			end
 		end
@@ -210,11 +214,23 @@ local complexLocationTable = {
 	["LEFT (CCW)"] = {
 		LEFT = { cw = -1 },
 	},
+	["LEFT (180)"] = {
+		LEFT = { hFlip = true, vFlip = true },
+	},
+	["LEFT (VFLIPPED)"] = {
+		LEFT = { vFlip = true },
+	},
 	["RIGHT (CW)"] = {
 		RIGHT = { cw = 1 },
 	},
 	["RIGHT (CCW)"] = {
 		RIGHT = { cw = -1 },
+	},
+	["RIGHT (180)"] = {
+		RIGHT = { hFlip = true, vFlip = true },
+	},
+	["RIGHT (VFLIPPED)"] = {
+		RIGHT = { vFlip = true },
 	},
 	["TOP (CW)"] = {
 		TOP = { cw = 1 },
@@ -222,11 +238,23 @@ local complexLocationTable = {
 	["TOP (CCW)"] = {
 		TOP = { cw = -1 },
 	},
+	["TOP (180)"] = {
+		TOP = { hFlip = true, vFlip = true },
+	},
+	["TOP (HFLIPPED)"] = {
+		TOP = { hFlip = true },
+	},
 	["BOTTOM (CW)"] = {
 		BOTTOM = { cw = 1 },
 	},
 	["BOTTOM (CCW)"] = {
 		BOTTOM = { cw = -1 },
+	},
+	["BOTTOM (180)"] = {
+		BOTTOM = { hFlip = true, vFlip = true },
+	},
+	["BOTTOM (HFLIPPED)"] = {
+		BOTTOM = { hFlip = true },
 	},
 }
 
@@ -321,7 +349,7 @@ function SpellActivationOverlay_ShowOverlay(self, spellID, texturePath, position
 	overlay.texture:SetVertexColor(r / 255, g / 255, b / 255);
 	
 	overlay.animOut:Stop();	--In case we're in the process of animating this out.
-	if useSound then
+	if useSound and (autoPulse or forcePulsePlay) then
 		overlay.soundHandle = SAO:PlaySpellAlertSound();
 	end
 	overlay:Show();

@@ -156,6 +156,17 @@ function NWB:OnInitialize()
 	--self:refreshOverlay();
 end
 
+function NWB:GetCurrentRegion()
+	local data = C_BattleNet.GetGameAccountInfoByGUID(UnitGUID("player"));
+	if (data) then
+		local region = data.regionID;
+		if (region) then
+			return region;
+		end
+	end
+	return GetCurrentRegion();
+end
+
 --Set font used in fontstrings on frames.
 NWB.regionFont = "Fonts\\ARIALN.ttf";
 function NWB:setRegionFont()
@@ -177,7 +188,7 @@ NWB.LSM:Register("font", "NWB Default", NWB.regionFont);
 --Could easily be adjusted for all realms later with a list of server timezone offsets.
 --But for now we only need to adjust SoD timers with this, this is only called in SoD related funcs.
 function NWB:isDST()
-	local region = GetCurrentRegion();
+	local region = NWB:GetCurrentRegion();
 	local standardOffset;
 	if (region == 1 and string.match(NWB.realm, "(AU)")) then
 		--OCE UTC +10 (AEST).
@@ -3077,6 +3088,7 @@ local spellTypes = {
 	[438536] = "sparkOfInspiration", --Why is there 2 the same? Horde and Alliance perhaps?
 	[438537] = "sparkOfInspiration",
 	[446695] = "fervorTempleExplorer",
+	[446698] = "fervorTempleExplorer",
 }; 
 		
 local buffTable = {
@@ -4615,7 +4627,7 @@ end
 --Date 24h string format based on region, won't be 100% accurate but better than %x returning US format for every region like it does now.
 function NWB:getRegionTimeFormat()
 	local dateFormat = "%x";
-	local region = GetCurrentRegion();
+	local region = NWB:GetCurrentRegion();
 	if (NWB.realm == "Arugal" or NWB.realm == "Felstriker" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
 		--OCE
 		dateFormat = "%d/%m/%y";
@@ -6164,6 +6176,19 @@ function NWB:sendBigWigs(time, msg)
 		elseif (SlashCmdList["/LOCALBAR"]) then --BigWigs exists but is not yet fully loaded.
 			SlashCmdList["/LOCALBAR"](time .. " " .. msg);
 		end
+	end
+end
+
+function NWB:startCapping(time, name, icon, maxTime)
+	if (CappingAPI and NWB.db.global.cappingSupport and NWB.isClassic and not DBM) then
+		CappingAPI:StartBar(name, time, icon, "colorOther", nil, maxTime);
+		return true;
+	end
+end
+
+function NWB:stopCapping(name)
+	if (CappingAPI) then
+		CappingAPI:StopBar(name);
 	end
 end
 
@@ -8337,7 +8362,7 @@ end
 --(Bug: US player reported it showing 1 day late DMF end time while on OCE realm, think this whole thing needs rewriting tbh).
 function NWB:getDmfStartEnd(month, nextYear, recalc)
 	if (NWB.isSOD) then
-		local region = GetCurrentRegion();
+		local region = NWB:GetCurrentRegion();
 		local calcStart;
 		--Elywwn Forest start times in the past to calc from.
 		--Using normal classic spawn times for now, but maybe it just spawns at midnight on all SoD servers?
@@ -8394,7 +8419,7 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 	else
 		local startOffset, endOffset, validRegion, isDst;
 		local  minOffset, hourOffset, dayOffset = 0, 0, 0;
-		local region = GetCurrentRegion();
+		local region = NWB:GetCurrentRegion();
 		--I may change this to realm names later instead, region may be unreliable with US client on EU region if that issue still exists.
 		if (NWB.realm == "Arugal" or NWB.realm == "Felstriker" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
 			--OCE Sunday 12pm UTC reset time (4am monday server time).
@@ -14481,14 +14506,6 @@ function NWB:heraldYell()
 		if (_G["DBM"] and _G["DBM"].CreatePizzaTimer and NWB.isClassic) then
 			_G["DBM"]:CreatePizzaTimer(time, timerMsg);
 		end
-		--[[if (IsAddOnLoaded("BigWigs") and NWB.db.global.bigWigsSupport) then
-			if (not SlashCmdList.BIGWIGSLOCALBAR) then
-				LoadAddOn("BigWigs_Plugins");
-			end
-			if (SlashCmdList.BIGWIGSLOCALBAR) then
-				SlashCmdList.BIGWIGSLOCALBAR(time .. " " .. timerMsg);
-			end
-		end]]
 		NWB:sendBigWigs(time, timerMsg);
 	end
 	lastHeraldYell = GetServerTime();

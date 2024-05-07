@@ -695,7 +695,7 @@ L["showNaxxMinimapMarkersTitle"] = "Naxxramas Minimap";
 L["showNaxxMinimapMarkersDesc"] = "Show Naxxramas marker on the mini map? This will also show you the direction back to naxx when you are a ghost and died inside raid.";
 
 L["bigWigsSupportTitle"] = "BigWigs Support";
-L["bigWigsSupportDesc"] = "Start a timer bar for buff drops if BigWigs is installed? The same type of timer bar DBM does.";
+L["bigWigsSupportDesc"] = "Start a timer bar for buff drops if BigWigs is installed?";
 
 L["soundsNpcWalkingTitle"] = "NPC Walking";
 L["soundsNpcWalkingDesc"] = "Sound to play when a buff NPC starts walking in Orgrimmar?";
@@ -1008,3 +1008,6 @@ L["Fervor of the Temple Explorer"] = "Fervor of the Temple Explorer";
 L["No guild"] = "No guild";
 
 L["Temple of Atal'Hakkar"] = "Temple of Atal'Hakkar"; --Not necessarily the dungeon name, need to match what Zandalarian Emissary shouts calls it for sunken temple buff in SoD.
+
+L["cappingSupportTitle"] = "Capping Support";
+L["cappingSupportDesc"] = "Start a timer bar for Ashenvale/STV if capping is installed?";

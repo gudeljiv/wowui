@@ -127,8 +127,10 @@ local function Add_Waylaid_Supplies_Tooltip(tooltip, itemID)
                 threshold = 24
             elseif standingID < 7 then
                 threshold = 29
-            elseif standingID < 8 then
+			elseif standingID < 8 then
                 threshold = 41
+            elseif standingID == 8 then
+                threshold = 999
             end
 
             local reputationAmounts = waylaidCrates[itemID]
@@ -333,10 +335,10 @@ local function OnTooltipSetItem(tooltip)
 	end	
 end
 
-print("\124cFFFFA500WST: Welcome to Waylaid Supplies Tooltip v1.5")
-print("\124cFFFFA500WST: Added: New Feature - Auctionator and TSM pricing integration")
-print("\124cFFFFA500WST: Changed: Item table values from text to Item IDs allowing partial localization.")
-print("\124cFFFFA500WST: Coming Soon: Better language localization")
+print("\124cFFFFA500WST: Welcome to Waylaid Supplies Tooltip v1.5.1")
+print("\124cFFFFA500WST: Fixed: Exalted Rep")
+--print("\124cFFFFA500WST: Changed: Item table values from text to Item IDs allowing partial localization.")
+--print("\124cFFFFA500WST: Coming Soon: Better language localization")
 
 -- Hook the function to tooltip events
 GameTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)

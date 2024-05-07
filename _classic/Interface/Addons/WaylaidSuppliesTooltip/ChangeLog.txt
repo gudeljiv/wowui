@@ -152,3 +152,6 @@ v1.4.9 Release - 11 APR 2024
 v1.5 Release - 12 APR 2024
 	Added:
 		New Feature - Auctionator pricing integration
+		
+v1.5.1 Release - 5 MAY 2024
+	Fixed: Exalted Rep.
