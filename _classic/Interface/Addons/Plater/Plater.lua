@@ -597,7 +597,7 @@ Plater.AnchorNamesByPhraseId = {
 				if (class == "PRIEST") then
 					-- SW:D is available to all priest specs
 					if IsPlayerSpell(32379) then
-						lowExecute = 0.2
+						lowExecute = 0.25
 					end
 					
 				elseif (class == "MAGE") then
@@ -689,15 +689,22 @@ Plater.AnchorNamesByPhraseId = {
 					if GetSpellInfo(GetSpellInfo(53351)) then
 						lowExecute = 0.2
 					end
-				elseif (class == "PRIEST") and IS_WOW_PROJECT_CLASSIC_WRATH then
-					for i = 1, 6 do
-						local enabled, _, glyphSpellID = GetGlyphSocketInfo(i)
-						if enabled and glyphSpellID then
-							if glyphSpellID == 55682 then --Glyph of Shadow Word: Death
-								lowExecute = 0.35
-								break
+				elseif (class == "PRIEST") then
+					if IS_WOW_PROJECT_CLASSIC_WRATH then -- why wrath again?... can't remember
+						for i = 1, 6 do
+							local enabled, _, glyphSpellID = GetGlyphSocketInfo(i)
+							if enabled and glyphSpellID then
+								if glyphSpellID == 55682 then --Glyph of Shadow Word: Death
+									lowExecute = 0.35
+									break
+								end
 							end
 						end
+					end
+					
+					-- SW:D is available to all priest specs
+					if IsPlayerSpell(32379) then
+						lowExecute = 0.25
 					end
 				end
 			end
@@ -1115,7 +1122,8 @@ Plater.AnchorNamesByPhraseId = {
 					local stance = GetShapeshiftFormID() --18 is def, 24 is glad
 					playerIsTank = stance == 18 or ((not stance == 24) and IsEquippedItemType("Shields")) -- Defensive Stance or shield (and not glad)
 				elseif playerClass == "DRUID" then
-					playerIsTank = GetShapeshiftFormID() == 5 -- Bear Form
+					local formId = GetShapeshiftFormID()
+					playerIsTank = (formId == 5) or (formId == 8) -- Bear Form or Dire Bear Form...
 				elseif playerClass == "PALADIN" then
 					for i=1,40 do
 					  local spellId = select(10, UnitBuff("player",i))

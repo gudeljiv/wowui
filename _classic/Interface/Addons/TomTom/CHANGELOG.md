@@ -1,8 +1,9 @@
 # TomTom
 
-## [v3.6.1-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.1-release) (2024-05-02)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.1-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v3.6.2-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.2-release) (2024-05-08)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.2-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Update TOC for 10.2.7  
 - Update TOC for Cataclysm Classic  
 - Support 11.0 by removing some broken functionality  
 - Update TOC for 10.2.6  
@@ -694,4 +695,3 @@
 - * Fix for the crazy arrow  
 - * Fix for the crazy arrow  
 - .toc update  
-- * Updated to Dongle-1.1  

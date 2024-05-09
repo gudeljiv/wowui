@@ -607,7 +607,7 @@ NIT.options = {
 };
 
 function NIT:loadSpecificOptions()
-	if (NIT.isWrath) then
+	if (NIT.expansionNum > 2) then
 		NIT.options.args["autoGammaBuffHeader"] = {
 			type = "header",
 			name = L["autoGammaBuffDesc"],

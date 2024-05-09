@@ -428,7 +428,7 @@ L["No trade logs found."] = "Aucun journal des échanges trouvé.";
 L["Today"] = "Aujourd'hui";
 L["Yesterday"] = "Hier";
 
-L["Level Log"] = "Journal";
+L["Level Log"] = "Journal de niveau";
 L["Mouseover log entry for more info"] = "Survolez l'entrée du journal pour plus d'informations";
 L["Current Level"] = "Niveau actuel";
 L["Leveling history for"] = "Historique de niveau pour";

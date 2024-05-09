@@ -34,7 +34,11 @@ local phases = {
     GILNEAS_CHAPTER_11 = 188,
     GILNEAS_CHAPTER_12 = 189,
 
-    HYJAL_CHAPTER_1 = 194, -- This seems to be the default phase for Hyjal, which changes once you completed some quests
+    -- You start with these phases available in Hyjal, which changes once you completed specific quests
+    HYJAL_TWILIGHT_CHAPTER = 170,
+    HYJAL_DAILY = 191,
+    HYJAL_CHAPTER_1 = 194,
+    HYJAL_CHAPTER_2 = 195,
 
     -- Horde starting area in Twilight Highlands
     DRAGONMAW_PORT_CHAPTER_1 = 229,
@@ -77,8 +81,9 @@ function Phasing.IsSpawnVisible(phase)
         return true
     end
 
-    if phase == phases.CUSTOM_EVENT_3 then
-        return _Phasing.CheckQuestLog()
+    local questLog = QuestLogCache.questLog_DO_NOT_MODIFY
+    if phase == phases.CUSTOM_EVENT_3 or phase == phases.HYJAL_DAILY then
+        return _Phasing.CheckQuestLog(questLog)
     end
 
     local complete = Questie.db.char.complete
@@ -87,6 +92,12 @@ function Phasing.IsSpawnVisible(phase)
 
     if (phase >= phases.LOST_ISLES_CHAPTER_1 and phase <= phases.LOST_ISLES_CHAPTER_3) or
         (phase >= phases.LOST_ISLES_CHAPTER_4 and phase <= phases.GILNEAS_CHAPTER_12) then
+
+        if phase == phases.HYJAL_TWILIGHT_CHAPTER and (questLog[25274] or complete[25274]) and (not complete[25531]) then
+            -- Blizzard re-used the phase ID for the Hyjal quest line about the Twilight's Hammer
+            return true
+        end
+
         if playerFaction == "Horde" then
             return _Phasing.LostIsles(phase, complete) or false
         else
@@ -96,6 +107,10 @@ function Phasing.IsSpawnVisible(phase)
 
     if phase == phases.HYJAL_CHAPTER_1 then
         return (not complete[25520])
+    end
+
+    if phase == phases.HYJAL_CHAPTER_2 then
+        return (not complete[25272]) and (not complete[25273])
     end
 
     if phase >= phases.DRAGONMAW_PORT_CHAPTER_1 and phase <= phases.DRAGONMAW_PORT_CHAPTER_3 then
@@ -141,8 +156,7 @@ function Phasing.IsSpawnVisible(phase)
     return false
 end
 
-_Phasing.CheckQuestLog = function()
-    local questLog = QuestLogCache.questLog_DO_NOT_MODIFY
+_Phasing.CheckQuestLog = function(questLog)
     return (
         questLog[13847] or
         questLog[13851] or
@@ -157,7 +171,8 @@ _Phasing.CheckQuestLog = function()
         questLog[13861] or
         questLog[13862] or
         questLog[13863] or
-        questLog[13864]
+        questLog[13864] or
+        questLog[25560]
     ) and true or false
 end
 

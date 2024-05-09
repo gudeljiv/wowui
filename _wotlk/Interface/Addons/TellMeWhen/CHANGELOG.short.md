@@ -1,6 +1,6 @@
 
-## v10.2.5
-* Support for Cata Classic.
+## v10.2.6
+* Additional updates for Cataclysm Classic, including handling for new player resource types.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/3d0b98f8196b82a78c605a54b13cd327efcca35d/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/52c8e5708ffbb8f90e5f4c2fab48f1172f0c0498/CHANGELOG.md)

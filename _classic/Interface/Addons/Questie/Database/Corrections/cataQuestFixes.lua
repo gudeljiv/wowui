@@ -119,6 +119,13 @@ function CataQuestFixes.Load()
         [9813] = { -- Meeting the Warchief
             [questKeys.finishedBy] = {{39605}},
         },
+        [9871] = { -- Murkblood Invaders
+            [questKeys.startedBy] = {{18238},nil,{24559}},
+        },
+        [9872] = { -- Murkblood Invaders
+            [questKeys.startedBy] = {{18238},nil,{24558}},
+            [questKeys.requiredRaces] = raceKeys.ALL_HORDE,
+        },
         [10068] = { -- Frost Nova
             [questKeys.objectives] = {{{44937}},nil,nil,nil,nil,{{5143}}},
         },
@@ -194,7 +201,6 @@ function CataQuestFixes.Load()
         },
         [10968] = { -- Call on the Farseer
             [questKeys.zoneOrSort] = -378,
-            [questKeys.preQuestSingle] = {},
         },
         [11272] = { -- A Score to Settle
             [questKeys.exclusiveTo] = {30112},
@@ -531,11 +537,17 @@ function CataQuestFixes.Load()
         [14366] = { -- Holding Steady
             [questKeys.preQuestGroup] = {14347,14348},
         },
+        [14368] = { -- Save the Children!
+            [questKeys.objectives] = {{{36287,nil,Questie.ICON_TYPE_INTERACT},{36288,nil,Questie.ICON_TYPE_INTERACT},{36289,nil,Questie.ICON_TYPE_INTERACT}}},
+        },
         [14369] = { -- Unleash the Beast
             [questKeys.objectives] = {nil,nil,nil,nil,{{{36236,36396,36810},36236}}},
         },
         [14382] = { -- Two By Sea
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Use the catapult to board the ship"), 0, {{"monster", 36283}}}},
+            [questKeys.extraObjectives] = {
+                {nil, Questie.ICON_TYPE_INTERACT, l10n("Use the catapult to board the ship"), 0, {{"monster", 36283}}},
+                {nil, Questie.ICON_TYPE_SLAY, l10n("Take out the Forsaken Machinist"), 0, {{"monster", 36292}}},
+            },
         },
         [14386] = { -- Leader of the Pack
             [questKeys.preQuestGroup] = {14368,14369,14382},
@@ -566,7 +578,8 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {14403},
         },
         [14416] = { -- The Hungry Ettin
-            [questKeys.objectives] = {{{36540, nil, Questie.ICON_TYPE_INTERACT}}},
+            [questKeys.objectives] = {{{36540, nil, Questie.ICON_TYPE_MOUNT_UP}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Bring the horses to Lorna Crowley"), 0, {{"monster", 36457}}}},
         },
         [14463] = { -- Horses for Duskhaven
             [questKeys.preQuestSingle] = {},
@@ -588,11 +601,18 @@ function CataQuestFixes.Load()
         [14482] = { -- Call of Duty
             [questKeys.extraObjectives] = {{{[zoneIDs.STORMWIND_CITY]={{18.3,25.5}}}, Questie.ICON_TYPE_EVENT, l10n("Wait for the Mercenary Ship to arrive")}},
         },
+        [24429] = { -- A Most Puzzling Circumstance
+            [questKeys.requiredRaces] = raceKeys.ALL_HORDE,
+        },
         [24438] = { -- Exodus
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Board the carriage"), 0, {{"monster", 44928}}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Board the carriage"), 0, {{"monster", 38755},{"monster", 44928}}}},
         },
         [24452] = { -- Profitability Scouting
             [questKeys.triggerEnd] = {"Heart of Arkkoroc identified", {[zoneIDs.AZSHARA]={{32.4,50.4}}}},
+        },
+        [24468] = { -- Stranded at the Marsh
+            [questKeys.objectives] = {{{37067,"Crash Survivor rescued",Questie.ICON_TYPE_INTERACT}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_SLAY, l10n("Rescue the Crash Survivor"), 0, {{"monster", 37078}}}},
         },
         [24502] = { -- Necessary Roughness
             [questKeys.objectives] = {{{48526},{37114}}},
@@ -617,6 +637,8 @@ function CataQuestFixes.Load()
         },
         [24575] = { -- Liberation Day
             [questKeys.requiredSourceItems] = {49881},
+            [questKeys.objectives] = {{{37694,"Enslaved Gilnean freed",Questie.ICON_TYPE_INTERACT}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Unlock the Ball and Chain"), 0, {{"object", 205098}}}},
         },
         [24612] = { -- A Gift for the Emissary of Orgrimmar
             [questKeys.finishedBy] = {{39605}},
@@ -837,6 +859,12 @@ function CataQuestFixes.Load()
         [25220] = { -- Slippery Threat
             [questKeys.preQuestSingle] = {25222},
         },
+        [25233] = { -- End of the Supply Line
+            [questKeys.preQuestSingle] = {25584},
+        },
+        [25234] = { -- In the Rear With the Gear
+            [questKeys.preQuestSingle] = {25584},
+        },
         [25243] = { -- She Loves Me, She Loves Me NOT!
             [questKeys.exclusiveTo] = {25202},
         },
@@ -855,11 +883,28 @@ function CataQuestFixes.Load()
         [25275] = { -- Report to the Labor Captain
             [questKeys.startedBy] = {{39605}},
         },
+        [25291] = { -- Twilight Training
+            [questKeys.preQuestSingle] = {25330},
+        },
+        [25294] = { -- Walking the Dog
+            [questKeys.objectives] = {{{40427}}},
+            [questKeys.preQuestSingle] = {25291},
+            [questKeys.requiredSourceItems] = {52708},
+        },
+        [25296] = { -- Gather the Intelligence
+            [questKeys.preQuestSingle] = {25291},
+        },
         [25297] = { -- From the Mouth of Madness
-            [questKeys.preQuestSingle] = {25270,25271},
+            [questKeys.preQuestSingle] = {25272},
         },
         [25300] = { -- The Eye of Twilight
-            [questKeys.preQuestSingle] = {25270,25271},
+            [questKeys.preQuestSingle] = {25272},
+        },
+        [25310] = { -- The Greater of Two Evils
+            [questKeys.preQuestSingle] = {25496},
+        },
+        [25311] = { -- Twilight Territory
+            [questKeys.preQuestSingle] = {25496},
         },
         [25316] = { -- As Hyjal Burns
             [questKeys.preQuestSingle] = {},
@@ -875,8 +920,15 @@ function CataQuestFixes.Load()
         [25325] = { -- Through the Dream
             [questKeys.triggerEnd] = {"Arch Druid Fandral Staghelm delivered", {[zoneIDs.MOUNT_HYJAL]={{55,28.9}}}},
         },
+        [25330] = { -- Waste of Flesh
+            [questKeys.objectives] = {{{39453}}},
+        },
+        [25332] = { -- Get Me Outta Here!
+            [questKeys.preQuestSingle] = {25328},
+        },
         [25354] = { -- Sweeping the Shelf
             [questKeys.requiredRaces] = raceKeys.ALL_HORDE,
+            [questKeys.preQuestSingle] = {25277},
         },
         [25370] = { -- Inciting the Elements
             [questKeys.requiredSourceItems] = {53009},
@@ -884,6 +936,18 @@ function CataQuestFixes.Load()
         },
         [25371] = { -- The Abyssal Ride
             [questKeys.objectives] = {{{39996}},{{202766}}},
+        },
+        [25382] = { -- Disrupting the Rituals
+            [questKeys.preQuestSingle] = {25584},
+        },
+        [25385] = { -- Save the Wee Animals
+            [questKeys.preQuestSingle] = {25584},
+        },
+        [25392] = { -- Oh, Deer!
+            [questKeys.objectives] = {{{39999}}},
+        },
+        [25411] = { -- A New Master
+            [questKeys.objectives] = {{{39974}}},
         },
         [25412] = { -- The Name Never Spoken
             [questKeys.preQuestSingle] = {25411},
@@ -901,11 +965,17 @@ function CataQuestFixes.Load()
             [questKeys.startedBy] = {{40510},nil,{54614}},
             [questKeys.exclusiveTo] = {25890},
         },
+        [25443] = { -- The Name Never Spoken
+            [questKeys.preQuestSingle] = {25411},
+        },
         [25459] = { -- Ophidophobia
             [questKeys.preQuestSingle] = {25602},
         },
         [25464] = { -- The Return of Baron Geddon
             [questKeys.objectives] = {{{40147}}},
+        },
+        [25499] = { -- Agility Training: Run Like Hell!
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Run away from the Blazing Trainer"),0,{{"monster",40434}}}},
         },
         [25473] = { -- Kaja'Cola
             [questKeys.startedBy] = {{34872}},
@@ -915,7 +985,26 @@ function CataQuestFixes.Load()
         [25477] = { -- Better Late Than Dead
             [questKeys.objectives] = {{{40223}}},
         },
+        [25496] = { -- Grudge Match
+            [questKeys.preQuestSingle] = {25494},
+        },
+        [25523] = { -- Flight in the Firelands
+            [questKeys.requiredSourceItems] = {52716},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_MOUNT_UP, l10n("Mount up"),0,{{"monster",40720}}}},
+        },
+        [25525] = { -- Wave One
+            [questKeys.requiredSourceItems] = {52716},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_MOUNT_UP, l10n("Mount up"),0,{{"monster",40720}}}},
+        },
+        [25544] = { -- Wave Two
+            [questKeys.requiredSourceItems] = {52716},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_MOUNT_UP, l10n("Mount up"),0,{{"monster",40720}}}},
+        },
+        [25575] = { -- Forged of Shadow and Flame
+            [questKeys.objectives] = {nil,{{203066}}},
+        },
         [25577] = { -- Crushing the Cores
+            [questKeys.objectives] = {nil,{{203067}}},
             [questKeys.requiredSourceItems] = {55123},
         },
         [25587] = { -- Gimme Shelter!
@@ -927,6 +1016,9 @@ function CataQuestFixes.Load()
         [25593] = { -- Shelled Salvation
             [questKeys.objectives] = {nil,nil,nil,nil,{{{39729,41203,41219,42404},39729,"Shell Survivors rescued"}}},
             [questKeys.requiredSourceItems] = {55141},
+        },
+        [25599] = { -- Cindermaul, the Portal Master
+            [questKeys.preQuestGroup] = {25575,25576,25577},
         },
         [25602] = { -- Can't Start a Fire Without a Spark
             [questKeys.preQuestSingle] = {25598},
@@ -954,6 +1046,9 @@ function CataQuestFixes.Load()
         [25657] = { -- Dah, Nunt... Dah, Nunt...
             [questKeys.objectives] = {nil,{{203137,"Explosive Grub fed to Gnaws",Questie.ICON_TYPE_EVENT}}},
         },
+        [25663] = { -- An Offering for Aviana
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Sacred Nectar"), 0, {{"object", 203147}}}},
+        },
         [25670] = { -- DUN-dun-DUN-dun-DUN-dun
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Budd's Chain"), 0, {{"object", 203137}}}},
         },
@@ -963,9 +1058,16 @@ function CataQuestFixes.Load()
         [25715] = { -- A Closer Look
             [questKeys.triggerEnd] = {"Scout the ships on the Shattershore", {[zoneIDs.BLASTED_LANDS]={{69,32.7}}}},
         },
+        [25807] = { -- An Ancient Reborn
+            [questKeys.objectives] = {{{41300}}},
+        },
         [25830] = { -- The Last Living Lorekeeper
             [questKeys.preQuestSingle] = {},
-            [questKeys.preQuestGroup] = {25520,25611,25807},
+            [questKeys.preQuestGroup] = {25520,25807},
+        },
+        [25881] = { -- Lost Wardens
+            [questKeys.preQuestSingle] = {25372},
+            [questKeys.objectives] = {{{41499}}},
         },
         [25883] = { -- How Disarming
             [questKeys.preQuestSingle] = {25887},
@@ -979,18 +1081,30 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {25440},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Take the Swift Seahorse to Nespirah."), 0, {{"monster", 40851}}}},
         },
+        [25899] = { -- Breakthrough
+            [questKeys.preQuestSingle] = {25372},
+        },
         [25900] = { -- Making Contact
             [questKeys.objectives] = {{{41531}}},
+        },
+        [25901] = { -- Hyjal Recycling Program
+            [questKeys.preQuestSingle] = {25372},
         },
         [25909] = { -- Capture the Crab
             [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {25907,25908},
+        },
+        [25915] = { -- The Strength of Tortolla
+            [questKeys.preQuestSingle] = {25906},
         },
         [25924] = { -- Call of Duty
             [questKeys.extraObjectives] = {{{[zoneIDs.DUROTAR]={{57.8,10.4}}}, Questie.ICON_TYPE_EVENT, l10n("Wait for the Mercenary Ship to arrive")}},
         },
         [25930] = { -- Ascending the Vale
             [questKeys.triggerEnd] = {"Ascend the Charred Vale", {[zoneIDs.STONETALON_MOUNTAINS]={{31.3,73.2}}}},
+        },
+        [25940] = { -- Last Stand at Whistling Grove
+            [questKeys.preQuestSingle] = {25428},
         },
         [25942] = { -- Buy Us Some Time
             [questKeys.preQuestSingle] = {25941},
@@ -1159,6 +1273,21 @@ function CataQuestFixes.Load()
         [26337] = { -- Beating the Market
             [questKeys.objectives] = {{{42777}}},
         },
+        [26353] = { -- Captain Sanders' Hidden Treasure
+            [questKeys.finishedBy] = {nil,{35}},
+        },
+        [26354] = { -- Captain Sanders' Hidden Treasure
+            [questKeys.startedBy] = {{35}},
+            [questKeys.finishedBy] = {nil,{36}},
+        },
+        [26355] = { -- Captain Sanders' Hidden Treasure
+            [questKeys.startedBy] = {{36}},
+            [questKeys.finishedBy] = {nil,{34}},
+        },
+        [26356] = { -- Captain Sanders' Hidden Treasure
+            [questKeys.startedBy] = {{34}},
+            [questKeys.finishedBy] = {nil,{33}},
+        },
         [26358] = { -- Ready the Air Force
             [questKeys.preQuestSingle] = {26324},
         },
@@ -1197,6 +1326,10 @@ function CataQuestFixes.Load()
         },
         [26488] = { -- Big Gulp
             [questKeys.exclusiveTo] = {29325,29321,29323,29324,29342,29343,29344,29347,29350,29359,26414,26420,26442,26536},
+            [questKeys.extraObjectives] = {
+               {{[zoneIDs.STORMWIND_CITY]={{69.12,88.51},{73.31,83.29}}}, Questie.ICON_TYPE_NODE_FISH, l10n("Fish for Royal Monkfish")},
+            },
+            [questKeys.requiredSourceItems] = {58856},
         },
         [26512] = { -- Tuning the Gnomecorder
             [questKeys.triggerEnd] = {"Test the Gnomecorder at the Lakeshire Graveyard", {[zoneIDs.REDRIDGE_MOUNTAINS]={{32.3,39.5}}}},
@@ -1607,6 +1740,9 @@ function CataQuestFixes.Load()
         [27868] = { -- The Crucible of Carnage: The Twilight Terror!
             [questKeys.objectives] = {{{46949}}},
         },
+        [27874] = { -- Aviana's Legacy
+            [questKeys.preQuestSingle] = {25612},
+        },
         [27922] = { -- Traitors!
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Hide behind Neferset Frond"), 0, {{"object", 206579}}}},
         },
@@ -1914,6 +2050,9 @@ function CataQuestFixes.Load()
             [questKeys.triggerEnd] = {"Take Your Orphan to Visit Red Rocks", {[zoneIDs.MULGORE]={{60.7,23.0}}}},
             [questKeys.preQuestSingle] = {172},
         },
+        [29177] = { -- Vigilance on Wings
+            [questKeys.preQuestSingle] = {25832},
+        },
         [29190] = { -- Let's Go Fly a Kite
             [questKeys.triggerEnd] = {"Fly Dragon Kites with your orphan", {[zoneIDs.ORGRIMMAR]={{58.5,58.3}}}},
             [questKeys.preQuestGroup] = {29146,29167,29176},
@@ -1932,6 +2071,7 @@ function CataQuestFixes.Load()
         },
         [29318] = { -- Ribs for the Sentinels
             [questKeys.objectives] = {{{4262,"Feed Ribs to Sentinels",Questie.ICON_TYPE_INTERACT}}},
+            [questKeys.requiredSourceItems] = {69906},
         },
         [29319] = { -- Tadpole Terror
             [questKeys.exclusiveTo] = {26557,26543,26556,26588,26572,29349,29354,29346,29348,29345,29317,29320,29361,29322},
@@ -2007,8 +2147,8 @@ function CataQuestFixes.Load()
         },
         [29347] = { -- Live Bait
             [questKeys.exclusiveTo] = {29325,29321,29323,29324,29342,29343,29344,29350,29359,26414,26420,26442,26488,26536},
-            [questKeys.extraObjectives] = {{{[zoneIDs.DUN_MOROGH]={{83.97,51.69}}}, Questie.ICON_TYPE_EVENT, l10n("Use Grimnur's Bait on yourself"),1}},
-            [questKeys.objectives] = {{{53540,"Catch Cold Water Crayfish"},{1355,"Take Crayfish to Cook Ghilm",Questie.ICON_TYPE_INTERACT}}},
+            [questKeys.extraObjectives] = {{{[zoneIDs.DUN_MOROGH]={{83.97,51.65}}}, Questie.ICON_TYPE_EVENT, l10n("Use Grimnur's Bait on yourself"),1}},
+            [questKeys.objectives] = {{{53540,"Catch Cold Water Crayfish",Questie.ICON_TYPE_NODE_FISH},{1355,"Take Crayfish to Cook Ghilm",Questie.ICON_TYPE_INTERACT}}},
         },
         [29348] = { -- The Race to Restock
             [questKeys.exclusiveTo] = {26572,26557,26543,26556,26588,29349,29345,29354,29346,29317,29320,29361,29319,29322},
@@ -2077,7 +2217,7 @@ function CataQuestFixes.Load()
         [29539] = { -- Heart of Rage
             [questKeys.triggerEnd] = {"Fully Investigate The Blood Furnace", {[zoneIDs.THE_BLOOD_FURNACE]={{64.9,41.5}}}},
         },
-        [29851] = {
+        [29851] = { -- Champion of the Tournament
             [questKeys.objectives] = {{{35451}}},
         },
         [30112] = { -- A Score to Settle

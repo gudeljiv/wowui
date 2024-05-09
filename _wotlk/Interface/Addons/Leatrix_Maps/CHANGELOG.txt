@@ -1,4 +1,8 @@
-﻿4.0.04 - 29th April 2024
+﻿4.0.05 - 8th May 2024
+- Updated dungeon icons.
+- Added ability to toggle the main panel by clicking the slash command logo in the interface options panel.
+
+4.0.04 - 29th April 2024
 - Updated deprecated functions.
 
 4.0.03 - 27th April 2024

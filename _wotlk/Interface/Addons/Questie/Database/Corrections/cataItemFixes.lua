@@ -42,6 +42,12 @@ function CataItemFixes.Load()
         [45885] = { -- Thistle Bear Fur
             [itemKeys.npcDrops] = {33978},
         },
+        [46354] = { -- Seed of the Earth
+            [itemKeys.npcDrops] = {33072},
+        },
+        [46355] = { -- Seed of the Sky
+            [itemKeys.npcDrops] = {34306},
+        },
         [46392] = { -- Venison Steak
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -177,6 +183,12 @@ function CataItemFixes.Load()
         [52514] = { -- Thonk's Spyglass
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [52537] = { -- Flame Blossom
+            [itemKeys.npcDrops] = {},
+        },
+        [52716] = { -- Twilight Firelance
+            [itemKeys.objectDrops] = {202967},
+        },
         [52717] = { -- Fiery Leash
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -211,6 +223,9 @@ function CataItemFixes.Load()
         [54463] = { -- Flameseer's Staff
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [54574] = { -- Hyjal Seedling
+            [itemKeys.npcDrops] = {},
+        },
         [54745] = { -- Nemesis Shell Fragment
             [itemKeys.npcDrops] = {40340},
         },
@@ -237,6 +252,9 @@ function CataItemFixes.Load()
         },
         [55179] = { -- Drums of the Turtle God
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [55189] = { -- Hyjal Egg
+            [itemKeys.npcDrops] = {},
         },
         [55200] = { -- Horde Cage Key
             [itemKeys.class] = itemClasses.QUEST,
@@ -372,6 +390,21 @@ function CataItemFixes.Load()
         },
         [69815] = { -- Seething Cinder
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [69915] = { -- Baby Octopus
+            [itemKeys.npcDrops] = {53522},
+        },
+        [70000] = { -- Succulent Sweet Potatoes
+            [itemKeys.objectDrops] = {208887},
+        },
+        [70001] = { -- Savory Spices
+            [itemKeys.objectDrops] = {208888},
+        },
+        [70002] = { -- Fresh-Caught Fish
+            [itemKeys.objectDrops] = {208889},
+        },
+        [70003] = { -- Fresh-Hunted Fowl
+            [itemKeys.objectDrops] = {208890},
         },
         [70928] = { -- Gift Receipt
             [itemKeys.class] = itemClasses.QUEST,

@@ -429,7 +429,7 @@ L["No trade logs found."] = "Nenhum registro de negócio encontrado.";
 L["Today"] = "Hoje";
 L["Yesterday"] = "Ontem";
 
-L["Level Log"] = "Registro";
+L["Level Log"] = "Registro de nível";
 L["Mouseover log entry for more info"] = "Passe o mouse sobre a entrada do registro para obter mais informações";
 L["Current Level"] = "Nível atual";
 L["Leveling history for"] = "Histórico de nivelamento para";

@@ -11,6 +11,13 @@ local CreateFrame = CreateFrame
 local PixelUtil = PixelUtil
 local _
 
+---@class df_menu : frame
+---@field RefreshOptions fun()
+---@field widget_list table
+---@field widget_list_by_type table
+---@field widgetids table
+---@field GetWidgetById fun(optionsFrame: df_menu, id: string): table this should return a widget from the widgetids table
+
 ---@class df_menu_table : table
 ---@field text_template table
 ---@field id string an unique string or number to identify the button, from parent.widgetids[id], parent is the first argument of BuildMenu and BuildMenuVolatile
@@ -103,6 +110,14 @@ local onWidgetSetInUse = function(widget, widgetTable)
         widget.childrenids = widgetTable.childrenids
     end
     widget.children_follow_enabled = widgetTable.children_follow_enabled
+
+    if (widgetTable.disabled) then
+        widget:Disable()
+    else
+        if (widget.IsEnabled and not widget:IsEnabled()) then
+            widget:Enable()
+        end
+    end
 end
 
 local setWidgetId = function(parent, widgetTable, widgetObject)
@@ -367,15 +382,18 @@ local setRangeProperties = function(parent, widget, widgetTable, currentXOffset,
 
     widget.bAttachButtonsToLeft = bAttachSliderButtonsToLeft
 
+    local currentValue = widgetTable.get()
+
     if (bIsDecimals) then
         widget.slider:SetValueStep(0.01)
     else
         widget.slider:SetValueStep(widgetTable.step or 1)
+        currentValue = math.floor(currentValue)
     end
     widget.useDecimals = bIsDecimals
 
     widget.slider:SetMinMaxValues(widgetTable.min, widgetTable.max)
-    widget.slider:SetValue(widgetTable.get() or 0)
+    widget.slider:SetValue(currentValue or 0)
     widget.ivalue = widget.slider:GetValue()
 
     if (widgetWidth) then

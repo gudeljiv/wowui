@@ -155,3 +155,6 @@ v1.5 Release - 12 APR 2024
 		
 v1.5.1 Release - 5 MAY 2024
 	Fixed: Exalted Rep.
+	
+v1.5.2 Release - 6 May 2024
+	Added: Rep cut off line.

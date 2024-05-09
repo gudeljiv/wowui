@@ -74,15 +74,15 @@ end
 ---@class DBM
 local DBM = private:GetPrototype("DBM")
 _G.DBM = DBM
-DBM.Revision = parseCurseDate("20240507052714")
+DBM.Revision = parseCurseDate("20240508013455")
 
 local fakeBWVersion, fakeBWHash = 326, "ec8db89"--326.1
 local bwVersionResponseString = "V^%d^%s"
 local PForceDisable
 -- The string that is shown as version
-DBM.DisplayVersion = "10.2.38"--Core version
+DBM.DisplayVersion = "10.2.39"--Core version
 DBM.classicSubVersion = 0
-DBM.ReleaseRevision = releaseDate(2024, 5, 6) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+DBM.ReleaseRevision = releaseDate(2024, 5, 7) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 PForceDisable = 10--When this is incremented, trigger force disable regardless of major patch
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -8538,7 +8538,7 @@ function DBM:GroupInCombat()
 	end
 	return combatFound
 end
-bossModPrototype.bossModPrototype = DBM.GroupInCombat
+bossModPrototype.GroupInCombat = DBM.GroupInCombat
 
 function bossModPrototype:IsAlive()
 	return not UnitIsDeadOrGhost("player")
