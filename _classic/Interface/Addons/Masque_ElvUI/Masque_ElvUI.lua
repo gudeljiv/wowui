@@ -3,8 +3,8 @@ if not Masque then return end
 
 Masque:AddSkin("ElvUI", {
 	Author = "Lorade",
-	Version = "10.2.5",
-	Masque_Version = 100105,
+	Version = "10.2.7",
+	Masque_Version = 100207,
 	Shape = "Square",
 	Backdrop = {
 		Width = 38,
