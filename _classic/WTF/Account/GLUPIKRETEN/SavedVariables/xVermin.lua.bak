@@ -281,18 +281,30 @@ xVerminSavedData = {
 			"Rend", -- [1]
 			"Deep Wound", -- [2]
 		},
-		["Sandfury Shadowcaster"] = {
-			"Earthbind", -- [1]
+		["Evolving Ectoplasm"] = {
+			"Attack", -- [1]
+			"Chilled", -- [2]
+			"Earth Shock", -- [3]
+			"Earthbind", -- [4]
+			"Firebolt", -- [5]
+			"Flametongue Attack", -- [6]
+			"Frost Shock", -- [7]
+			"Frostbolt", -- [8]
+			"Incinerate", -- [9]
+			"Lava Lash", -- [10]
+			"Lightning Shield", -- [11]
+			"Living Bomb", -- [12]
+			"Molten Blast", -- [13]
 		},
-		["Mutanus the Devourer"] = {
-			"Shadow Word: Pain", -- [1]
+		["Jade Sludge"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Ironspine"] = {
+			"Rend", -- [1]
 		},
 		["Entropic Horror"] = {
 			"Lava Lash", -- [1]
 			"Flame Shock", -- [2]
-		},
-		["Ironspine"] = {
-			"Rend", -- [1]
 		},
 		["Ruuzlu"] = {
 			"Charge Stun", -- [1]
@@ -329,13 +341,13 @@ xVerminSavedData = {
 		["Razorlash"] = {
 			"Blackout", -- [1]
 		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
-		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
 			"Entrapment", -- [2]
+		},
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
 		["Lord Vyletongue"] = {
 			"Blackout", -- [1]
@@ -415,23 +427,11 @@ xVerminSavedData = {
 			"Stormstrike", -- [1]
 			"Mutilate", -- [2]
 		},
-		["Jade Sludge"] = {
-			"Concussive Shot", -- [1]
+		["Mutanus the Devourer"] = {
+			"Shadow Word: Pain", -- [1]
 		},
-		["Evolving Ectoplasm"] = {
-			"Attack", -- [1]
-			"Chilled", -- [2]
-			"Earth Shock", -- [3]
-			"Earthbind", -- [4]
-			"Firebolt", -- [5]
-			"Flametongue Attack", -- [6]
-			"Frost Shock", -- [7]
-			"Frostbolt", -- [8]
-			"Incinerate", -- [9]
-			"Lava Lash", -- [10]
-			"Lightning Shield", -- [11]
-			"Living Bomb", -- [12]
-			"Molten Blast", -- [13]
+		["Sandfury Shadowcaster"] = {
+			"Earthbind", -- [1]
 		},
 		["Theradrim Shardling"] = {
 			"Chain Lightning", -- [1]

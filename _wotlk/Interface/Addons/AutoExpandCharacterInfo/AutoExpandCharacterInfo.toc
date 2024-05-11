@@ -1,0 +1,8 @@
+## Interface: 40400  
+## Title: Auto Expand Character Info
+## Notes: Automatically expands character info when opening the character pane.
+## Author: GlitchV0
+## Version: 1.0.9
+
+AutoExpandCharacterInfo.lua
+FixScroll.lua

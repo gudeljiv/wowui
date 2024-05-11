@@ -155,6 +155,10 @@ local function Add_Waylaid_Supplies_Tooltip(tooltip, itemID)
                 -- Checks the player's faction to display the Supply Crate faction
                 local factionName = (UnitFactionGroup("player") == "Horde") and "Durotar Supply and Logistics" or "Azeroth Commerce Authority"
                 
+				-- Reputation line insertion
+				local playerRep = GetText("FACTION_STANDING_LABEL" .. standingID, true)
+				local repLine = "Current standing: " .. "|cFF00FF00" .. playerRep .. "|r" 
+				
                 --Tooltip text
                 if itemLevel <= threshold then --Tooltip if the item doesn't give rep
                     local reputationText1 =	"REP: " .. modifiedReputation1 .. "                " .. "Base XP: " .. questXP
@@ -163,7 +167,7 @@ local function Add_Waylaid_Supplies_Tooltip(tooltip, itemID)
 					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
 					tooltip:AddDoubleLine(" ", " ")
                     tooltip:AddLine(reputationStatus .. factionName)
-					tooltip:AddLine("Rep cut off at " .. "|cFF00FF00" .. repThreshold .. "|r")
+					tooltip:AddDoubleLine("Reputation cut off: " .. "|cFF00FF00" .. repThreshold .. "|r", repLine)
 					tooltip:AddDoubleLine(reputationText1, reputationText2)
                     tooltip:AddDoubleLine(reputationText3, reputationText4)
                 else --Tooltip if the item does give rep
@@ -173,7 +177,7 @@ local function Add_Waylaid_Supplies_Tooltip(tooltip, itemID)
 					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
 					tooltip:AddDoubleLine(" ", " ")
                     tooltip:AddLine(reputationStatus .. factionName)
-					tooltip:AddLine("Rep cut off at " .. "|cFFFF0000" .. repThreshold .. "|r")
+					tooltip:AddDoubleLine("Reputation cut off: " .. "|cFFFF0000" .. repThreshold .. "|r", repLine)
                     tooltip:AddDoubleLine(reputationText1, reputationText2)
                     tooltip:AddDoubleLine(reputationText3, reputationText4)
                     return
@@ -253,6 +257,7 @@ local function GetMinBuyout(itemLink)
     end
 end
 
+-- -- This function only works for the professions and recipes known to the character. It's a vanilla api thing, can't be easily changed/implemented.
 -- -- Function to get crafting cost for an item
 -- local function GetCraftingCost(itemLink)
     -- -- Check if TSM addon is loaded
@@ -319,7 +324,6 @@ local function DisplayAssociatedItemTooltip(tooltip, fillItem, waylaidCrates)
                 tooltip:AddLine("\124cFFFFD700No auction data available. Please do a full scan.")
             end
         end
-
         tooltip:Show()
     end
 end
@@ -338,9 +342,9 @@ local function OnTooltipSetItem(tooltip)
 	end	
 end
 
-print("\124cFFFFA500WST: Welcome to Waylaid Supplies Tooltip v1.5.2")
+print("\124cFFFFA500WST: Welcome to Waylaid Supplies Tooltip v1.5.3")
 print("\124cFFFFA500WST: Fixed: Exalted Rep")
-print("\124cFFFFA500WST: Added: Reputation cutoff line.")
+print("\124cFFFFA500WST: Added: Rep cutoff and current standing line.")
 --print("\124cFFFFA500WST: Coming Soon: Better language localization")
 
 -- Hook the function to tooltip events

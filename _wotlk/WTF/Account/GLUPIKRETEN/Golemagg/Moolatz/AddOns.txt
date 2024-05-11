@@ -11,7 +11,7 @@ Grid2Options: disabled
 Grid2RaidDebuffs: disabled
 Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
-Blizzard_CompactRaidFrames: disabled
+Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: disabled
 TownsfolkTracker: disabled
 MonkeyBuddy: enabled

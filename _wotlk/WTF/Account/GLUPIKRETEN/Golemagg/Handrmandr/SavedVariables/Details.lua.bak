@@ -5,6 +5,7353 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 0,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 41.005504,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 41.005504,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 41,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419260,
+							["totalabsorbed"] = 0.005504,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 25,
+										},
+										["n_total"] = 25,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 25,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 25,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419259,
+							["damage_taken"] = 2.005504,
+							["start_time"] = 1715419258,
+							["delay"] = 0,
+							["last_dps"] = 16.3564036697392,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 33.007551,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 33.007551,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003ED579",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+								["Fledgling Brave"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 2,
+								["Fledgling Brave"] = 31,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["dps_started"] = true,
+							["fight_component"] = true,
+							["totalabsorbed"] = 0.007551,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 26,
+										},
+										["n_total"] = 26,
+										["DODGE"] = 21,
+										["a_amt"] = 0,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 129,
+										["c_max"] = 0,
+										["total"] = 26,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 17,
+										["a_dmg"] = 0,
+										["PARRY"] = 47,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 7,
+										["n_max"] = 4,
+										["MISS"] = 37,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 2,
+											["Fledgling Brave"] = 4,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 380,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 380,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 1,
+										},
+										["n_total"] = 1,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 5,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["c_max"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 1,
+										["total"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419330,
+							["damage_taken"] = 51.007551,
+							["start_time"] = 1715419258,
+							["delay"] = 1715419330,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005014,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.005014,
+							["total"] = 0.005014,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.005014,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.005014,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.005014,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419259,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 20,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68388.667,
+				["tempo_start"] = 1715419258,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 55,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					84, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:21:01",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 2.506999999997788,
+				["CombatEndedAt"] = 68391.174,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:20:58",
+				["end_time"] = 68391.174,
+				["mapId"] = 1,
+				["combat_id"] = 20,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					41, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 41.005504,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68388.667,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 75.00125299999999,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 75.00125299999999,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 75,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419255,
+							["totalabsorbed"] = 0.001253,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 44,
+										},
+										["n_total"] = 44,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 23,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419254,
+							["damage_taken"] = 6.001253,
+							["start_time"] = 1715419249,
+							["delay"] = 0,
+							["last_dps"] = 12.3276221235977,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.001071,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 6.001071,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003EAF75",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 6,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.001071,
+							["fight_component"] = true,
+							["end_time"] = 1715419258,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["DODGE"] = 6,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["MISS"] = 3,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 22,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["c_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 5,
+										["a_dmg"] = 0,
+										["PARRY"] = 8,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["c_max"] = 0,
+										["n_max"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 6,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 53,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 53,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 4,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419258,
+							["damage_taken"] = 75.001071,
+							["start_time"] = 1715419249,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.004181,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.004181,
+							["total"] = 0.004181,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.004181,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.004181,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.004181,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419254,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003EAF7B",
+							["aID"] = "36943",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68380.16,
+				["tempo_start"] = 1715419249,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 54,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					81, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 2,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 4,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:20:56",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 6.084000000002561,
+				["CombatEndedAt"] = 68386.244,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:20:50",
+				["end_time"] = 68386.244,
+				["mapId"] = 1,
+				["combat_id"] = 19,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 75.00125299999999,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68380.16,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 57.004925,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 57.004925,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 57,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419244,
+							["totalabsorbed"] = 0.004925,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 33,
+										},
+										["n_total"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 24,
+										},
+										["n_total"] = 24,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 24,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419244,
+							["damage_taken"] = 6.004925,
+							["start_time"] = 1715419241,
+							["delay"] = 0,
+							["last_dps"] = 17.46474417894524,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 8.003539,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 8.003539,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2779",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+								["Sinnegro"] = true,
+							},
+							["targets"] = {
+								["Sinnegro"] = 2,
+								["Handrmandr"] = 6,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.003539,
+							["fight_component"] = true,
+							["end_time"] = 1715419249,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["DODGE"] = 4,
+										["MISS"] = 7,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 2,
+										["a_dmg"] = 0,
+										["PARRY"] = 8,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Sinnegro"] = 2,
+											["Handrmandr"] = 6,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 8,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 59,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 59,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419249,
+							["damage_taken"] = 86.003539,
+							["start_time"] = 1715419241,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.008416,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.008416,
+							["total"] = 0.008416,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.008416,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.008416,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.008416,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419242,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2779",
+							["aID"] = "36943",
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 18,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68372.10800000001,
+				["tempo_start"] = 1715419241,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 53,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					94, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:20:45",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.263999999995576,
+				["CombatEndedAt"] = 68375.372,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:20:42",
+				["end_time"] = 68375.372,
+				["mapId"] = 1,
+				["combat_id"] = 18,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					57, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 57.004925,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68372.10800000001,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 59.005768,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 59.005768,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 59,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419238,
+							["totalabsorbed"] = 0.005768,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 15,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 44,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 44,
+										["c_max"] = 44,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 44,
+										["successful_casted"] = 0,
+										["c_total"] = 44,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419238,
+							["damage_taken"] = 4.005768,
+							["start_time"] = 1715419237,
+							["delay"] = 0,
+							["last_dps"] = 93.36355696235208,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.008099,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 6.008099,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F273B",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+								["Sinnegro"] = true,
+							},
+							["targets"] = {
+								["Sinnegro"] = 2,
+								["Handrmandr"] = 4,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.008099,
+							["fight_component"] = true,
+							["end_time"] = 1715419241,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 8,
+										["DODGE"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["MISS"] = 4,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Sinnegro"] = 2,
+											["Handrmandr"] = 4,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 32,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419241,
+							["damage_taken"] = 88.008099,
+							["start_time"] = 1715419237,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.00554,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.00554,
+							["total"] = 0.00554,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.00554,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.00554,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.00554,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419238,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 17,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68368.253,
+				["tempo_start"] = 1715419237,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 52,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					94, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:20:38",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 0.6319999999977881,
+				["CombatEndedAt"] = 68368.885,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:20:38",
+				["end_time"] = 68368.885,
+				["mapId"] = 1,
+				["combat_id"] = 17,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					59, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 59.005768,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68368.253,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 74.001862,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 74.001862,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invaders"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invaders"] = 74,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419217,
+							["totalabsorbed"] = 0.001862,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invaders"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invaders"] = 42,
+										},
+										["n_total"] = 42,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419216,
+							["damage_taken"] = 19.001862,
+							["start_time"] = 1715419211,
+							["delay"] = 0,
+							["last_dps"] = 14.00224446549761,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 19.003353,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 19.003353,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-2952-00003E5EB8",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 19,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["aID"] = "2952",
+							["fight_component"] = true,
+							["end_time"] = 1715419217,
+							["totalabsorbed"] = 0.003353,
+							["nome"] = "Bristleback Invaders",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 5,
+										["r_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419216,
+							["damage_taken"] = 74.003353,
+							["start_time"] = 1715419211,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005382,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.005382,
+							["total"] = 0.005382,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.005382,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.005382,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.005382,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419216,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 16,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["tempo_start"] = 1715419211,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					188, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:20:17",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invaders",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 68347.544,
+				["CombatEndedAt"] = 68347.544,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:20:12",
+				["end_time"] = 68347.544,
+				["mapId"] = 1,
+				["combat_id"] = 16,
+				["boss_hp"] = 1,
+				["spells_cast_timeline"] = {
+				},
+				["playerTalents"] = {
+				},
+				["combat_counter"] = 51,
+				["totals_grupo"] = {
+					74, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 74.001862,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68342.259,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invaders"] = 1,
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 40.002413,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 40.002413,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 40,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419195,
+							["totalabsorbed"] = 0.002413,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 22,
+										},
+										["n_total"] = 22,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 22,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419194,
+							["damage_taken"] = 4.002413000000001,
+							["start_time"] = 1715419194,
+							["delay"] = 0,
+							["last_dps"] = 25.01714383986898,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 15.003036,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 15.003036,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2794",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+								["Sinnegro"] = true,
+							},
+							["targets"] = {
+								["Sinnegro"] = 11,
+								["Handrmandr"] = 4,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.003036,
+							["fight_component"] = true,
+							["end_time"] = 1715419211,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["DODGE"] = 9,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["a_amt"] = 0,
+										["n_min"] = 0,
+										["MISS"] = 16,
+										["counter"] = 48,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["c_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 3,
+										["a_dmg"] = 0,
+										["PARRY"] = 20,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["c_max"] = 0,
+										["n_max"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Sinnegro"] = 11,
+											["Handrmandr"] = 4,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 15,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 148,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 148,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419211,
+							["damage_taken"] = 148.003036,
+							["start_time"] = 1715419194,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 2.002374,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.002374,
+							["total"] = 0.002374,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.002374,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.002374,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.002374,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419211,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003ED579",
+							["aID"] = "36943",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 15,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68342.259,
+				["tempo_start"] = 1715419194,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 50,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					163, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:19:56",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 1.599000000001979,
+				["CombatEndedAt"] = 68326.478,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:19:54",
+				["end_time"] = 68326.478,
+				["mapId"] = 1,
+				["combat_id"] = 15,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					40, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 40.002413,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68324.879,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 39.007664,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 39.007664,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 39,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419187,
+							["totalabsorbed"] = 0.007664,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419186,
+							["damage_taken"] = 2.007664,
+							["start_time"] = 1715419185,
+							["delay"] = 0,
+							["last_dps"] = 17.49222600900057,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 17.002511,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 17.002511,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00013F2715",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Sinnegro"] = true,
+								["Handrmandr"] = true,
+								["Fledgling Brave"] = true,
+							},
+							["targets"] = {
+								["Sinnegro"] = 6,
+								["Handrmandr"] = 2,
+								["Fledgling Brave"] = 9,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002511,
+							["fight_component"] = true,
+							["end_time"] = 1715419194,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 8,
+										},
+										["n_total"] = 8,
+										["DODGE"] = 9,
+										["MISS"] = 12,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 35,
+										["c_max"] = 0,
+										["total"] = 8,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 3,
+										["a_dmg"] = 0,
+										["PARRY"] = 9,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 4,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Sinnegro"] = 6,
+											["Handrmandr"] = 2,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 8,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 94,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 94,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 1,
+										},
+										["n_total"] = 1,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419194,
+							["damage_taken"] = 84.002511,
+							["start_time"] = 1715419185,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.003729,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.003729,
+							["total"] = 0.003729,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.003729,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.003729,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.003729,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419186,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F382F",
+							["aID"] = "36943",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 14,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68316.114,
+				["tempo_start"] = 1715419185,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 49,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					101, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+					["Bristleback Invader"] = {
+						["Bristleback"] = 1,
+						["Rend"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:19:48",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 2.229999999995926,
+				["CombatEndedAt"] = 68318.344,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:19:46",
+				["end_time"] = 68318.344,
+				["mapId"] = 1,
+				["combat_id"] = 14,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					39, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 39.007664,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68316.114,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 51.006937,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 51.006937,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 51,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419057,
+							["totalabsorbed"] = 0.006937,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 35,
+										},
+										["n_total"] = 35,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 35,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 12,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419057,
+							["damage_taken"] = 4.006937,
+							["start_time"] = 1715419051,
+							["delay"] = 0,
+							["last_dps"] = 8.433686673266788,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 69.001825,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 69.001825,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2715",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Sinnegro"] = true,
+								["Handrmandr"] = true,
+								["Fledgling Brave"] = true,
+							},
+							["targets"] = {
+								["Sinnegro"] = 7,
+								["Handrmandr"] = 4,
+								["Fledgling Brave"] = 58,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.001825,
+							["fight_component"] = true,
+							["end_time"] = 1715419185,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["b_dmg"] = 3,
+										["targets"] = {
+											["Fledgling Brave"] = 51,
+										},
+										["n_total"] = 51,
+										["DODGE"] = 59,
+										["g_dmg"] = 0,
+										["n_min"] = 3,
+										["a_amt"] = 0,
+										["counter"] = 310,
+										["c_max"] = 0,
+										["total"] = 51,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 39,
+										["a_dmg"] = 0,
+										["PARRY"] = 104,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 11,
+										["n_max"] = 5,
+										["MISS"] = 97,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Sinnegro"] = 7,
+											["Handrmandr"] = 4,
+											["Fledgling Brave"] = 7,
+										},
+										["n_total"] = 18,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1021,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1021,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["MISS"] = 3,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 3,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419185,
+							["damage_taken"] = 155.001825,
+							["start_time"] = 1715419051,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.007872,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.007872,
+							["total"] = 0.007872,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.007872,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.007872,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.007872,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419056,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-0000BEAFEE",
+							["aID"] = "36943",
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 13,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68182.207,
+				["tempo_start"] = 1715419051,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 48,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					294, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 5,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:17:38",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 6.048000000009779,
+				["CombatEndedAt"] = 68188.255,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:17:32",
+				["end_time"] = 68188.255,
+				["mapId"] = 1,
+				["combat_id"] = 13,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					51, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 51.006937,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68182.207,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [8]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 41.001824,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 41.001824,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 41,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419045,
+							["totalabsorbed"] = 0.001824,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 23,
+										},
+										["n_total"] = 23,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 12,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 18,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419051,
+							["damage_taken"] = 6.001824,
+							["start_time"] = 1715419041,
+							["delay"] = 0,
+							["last_dps"] = 9.059174547065384,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.001837,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 6.001837,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F276A",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 6,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.001837,
+							["fight_component"] = true,
+							["end_time"] = 1715419051,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["DODGE"] = 8,
+										["n_min"] = 0,
+										["MISS"] = 11,
+										["counter"] = 46,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 9,
+										["a_dmg"] = 0,
+										["PARRY"] = 18,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 6,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 126,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 126,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["a_amt"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419051,
+							["damage_taken"] = 41.001837,
+							["start_time"] = 1715419041,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2827",
+							["aID"] = "36943",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 12,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["tempo_start"] = 1715419041,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 47,
+				["playing_solo"] = true,
+				["totals"] = {
+					47, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Bristleback Invader"] = {
+						["Rend"] = 5,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:17:26",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 68176.455,
+				["CombatEndedAt"] = 68176.455,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:17:21",
+				["end_time"] = 68176.455,
+				["mapId"] = 1,
+				["combat_id"] = 12,
+				["boss_hp"] = 1,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals_grupo"] = {
+					41, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 41.001824,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 68171.929,
+				["contra"] = "Bristleback Invader",
+				["playerTalents"] = {
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 41.004344,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 41.004344,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 41,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419036,
+							["totalabsorbed"] = 0.004344,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 24,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 24,
+										["c_max"] = 24,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 24,
+										["successful_casted"] = 0,
+										["c_total"] = 24,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419035,
+							["damage_taken"] = 2.004344,
+							["start_time"] = 1715419035,
+							["delay"] = 0,
+							["last_dps"] = 54.23855026394057,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 2.001836,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 2.001836,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F26D3",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 2,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.001836,
+							["fight_component"] = true,
+							["end_time"] = 1715419041,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["DODGE"] = 1,
+										["MISS"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 1,
+										["a_dmg"] = 0,
+										["PARRY"] = 9,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 2,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 2,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 61,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 61,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419041,
+							["damage_taken"] = 41.001836,
+							["start_time"] = 1715419036,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.008874,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.008874,
+							["total"] = 0.008874,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.008874,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.008874,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.008874,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419041,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68171.929,
+				["tempo_start"] = 1715419035,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 46,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					43, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:17:17",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 0.7560000000084983,
+				["CombatEndedAt"] = 68167.611,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:17:16",
+				["end_time"] = 68167.611,
+				["mapId"] = 1,
+				["combat_id"] = 11,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					41, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 41.004344,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68166.855,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [10]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 44.004668,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 44.004668,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 44,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419031,
+							["totalabsorbed"] = 0.004668,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 10,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 34,
+										},
+										["n_total"] = 34,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 18,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419030,
+							["damage_taken"] = 6.004668000000001,
+							["start_time"] = 1715419026,
+							["delay"] = 0,
+							["last_dps"] = 8.37864965726116,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.006632,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 6.006632,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2A9C",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 6,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006632,
+							["fight_component"] = true,
+							["end_time"] = 1715419035,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["DODGE"] = 3,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["MISS"] = 10,
+										["counter"] = 29,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 2,
+										["a_dmg"] = 0,
+										["PARRY"] = 14,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 6,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 110,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 110,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419035,
+							["damage_taken"] = 44.006632,
+							["start_time"] = 1715419026,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.008641,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.008641,
+							["total"] = 0.008641,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.008641,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.008641,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.008641,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419030,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68157.101,
+				["tempo_start"] = 1715419026,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 45,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					50, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:17:12",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 5.252000000007683,
+				["CombatEndedAt"] = 68162.353,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:17:07",
+				["end_time"] = 68162.353,
+				["mapId"] = 1,
+				["combat_id"] = 10,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					44, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 44.004668,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68157.101,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [11]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 39.005959,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 39.005959,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 39,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419024,
+							["totalabsorbed"] = 0.005959,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 22,
+										},
+										["n_total"] = 22,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 11,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419024,
+							["damage_taken"] = 3.005959,
+							["start_time"] = 1715419021,
+							["delay"] = 0,
+							["last_dps"] = 13.0367510026809,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 3.007576,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 3.007576,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2B11",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 3,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.007576,
+							["fight_component"] = true,
+							["end_time"] = 1715419026,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["DODGE"] = 1,
+										["MISS"] = 5,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 1,
+										["a_dmg"] = 0,
+										["PARRY"] = 8,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 3,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 3,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 38,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 38,
+										["n_max"] = 1,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419025,
+							["damage_taken"] = 39.007576,
+							["start_time"] = 1715419021,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 9,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.007852,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.007852,
+							["total"] = 0.007852,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.007852,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.007852,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.007852,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419026,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003E81D3",
+							["aID"] = "36943",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 9,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68152.508,
+				["tempo_start"] = 1715419021,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 44,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					42, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:17:05",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 2.99199999999837,
+				["CombatEndedAt"] = 68155.5,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:17:02",
+				["end_time"] = 68155.5,
+				["mapId"] = 1,
+				["combat_id"] = 9,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					39, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 39.005959,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68152.508,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [12]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 54.005939,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 54.005939,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 54,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715419017,
+							["totalabsorbed"] = 0.005939,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 21,
+										},
+										["n_total"] = 10,
+										["n_min"] = 10,
+										["g_dmg"] = 11,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 10,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 33,
+										},
+										["n_total"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 17,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419016,
+							["damage_taken"] = 8.005939,
+							["start_time"] = 1715419010,
+							["delay"] = 0,
+							["last_dps"] = 7.600047706164054,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 8.001614,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 8.001614,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F2ADC",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 8,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.001614,
+							["fight_component"] = true,
+							["end_time"] = 1715419021,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["DODGE"] = 6,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["MISS"] = 8,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 23,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["c_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 4,
+										["a_dmg"] = 0,
+										["PARRY"] = 5,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["c_max"] = 0,
+										["n_max"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 8,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 8,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 105,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 105,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715419021,
+							["damage_taken"] = 54.001614,
+							["start_time"] = 1715419010,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 2.00101,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["totalover"] = 0.00101,
+							["total"] = 0.00101,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.00101,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.00101,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.00101,
+							["tipo"] = 3,
+							["resource_type"] = 9,
+							["last_event"] = 1715419016,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003ED511",
+							["aID"] = "36943",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 8,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 68141.505,
+				["tempo_start"] = 1715419010,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 43,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 2,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 5,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:16:58",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 7.105999999999767,
+				["CombatEndedAt"] = 68148.611,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:16:51",
+				["end_time"] = 68148.611,
+				["mapId"] = 1,
+				["combat_id"] = 8,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					54, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 54.005939,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 68141.505,
+				["contra"] = "Bristleback Invader",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [13]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 55.003928,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 55.003928,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 55,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715418924,
+							["totalabsorbed"] = 0.003928,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Plainstrider"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Plainstrider"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418923,
+							["damage_taken"] = 15.003928,
+							["start_time"] = 1715418914,
+							["delay"] = 0,
+							["last_dps"] = 5.477387771359589,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["aID"] = "2955",
+							["total_without_pet"] = 15.007898,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 15.007898,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-2955-00003D5D52",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 15,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["end_time"] = 1715418924,
+							["totalabsorbed"] = 0.007898,
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Handrmandr"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 15,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418922,
+							["damage_taken"] = 55.007898,
+							["start_time"] = 1715418914,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.005826,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.005826,
+							["total"] = 0.005826,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.005826,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.005826,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.005826,
+							["last_event"] = 1715418918,
+							["resource_type"] = 9,
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 68044.63,
+				["tempo_start"] = 1715418914,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 42,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					70, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:15:24",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10.04200000000128,
+				["CombatEndedAt"] = 68054.672,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:15:14",
+				["end_time"] = 68054.672,
+				["mapId"] = 1,
+				["combat_id"] = 7,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 55.003928,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["boss_hp"] = 1,
+				["start_time"] = 68044.63,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [14]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 37.008985,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 37.008985,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 37,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715418873,
+							["totalabsorbed"] = 0.008985,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Bristleback Invader"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Bristleback Invader"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418871,
+							["damage_taken"] = 3.008985,
+							["start_time"] = 1715418868,
+							["delay"] = 0,
+							["last_dps"] = 6.801871898540347,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 3.002569,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 3.002569,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F280D",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 3,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002569,
+							["fight_component"] = true,
+							["end_time"] = 1715418914,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["DODGE"] = 5,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["MISS"] = 14,
+										["counter"] = 33,
+										["b_dmg"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 4,
+										["a_dmg"] = 0,
+										["PARRY"] = 10,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Handrmandr"] = 3,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 3,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 84,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 84,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["DODGE"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418913,
+							["damage_taken"] = 37.002569,
+							["start_time"] = 1715418868,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 6,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["tempo_start"] = 1715418868,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					40, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:14:33",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 68003.698,
+				["CombatEndedAt"] = 68003.698,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:14:28",
+				["end_time"] = 68003.698,
+				["mapId"] = 1,
+				["combat_id"] = 6,
+				["boss_hp"] = 1,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["combat_counter"] = 41,
+				["totals_grupo"] = {
+					37, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 37.008985,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 67998.257,
+				["contra"] = "Bristleback Invader",
+				["playing_solo"] = true,
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 46.002126,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 46.002126,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 46,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715418867,
+							["totalabsorbed"] = 0.002126,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Bristleback Invader"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Bristleback Invader"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418866,
+							["damage_taken"] = 4.002126000000001,
+							["start_time"] = 1715418860,
+							["delay"] = 0,
+							["last_dps"] = 6.825241246285497,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 4.002667,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 4.002667,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F27C9",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 4,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002667,
+							["fight_component"] = true,
+							["end_time"] = 1715418868,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["MISS"] = 2,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["total"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Handrmandr"] = 4,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 4,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 19,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418867,
+							["damage_taken"] = 46.002667,
+							["start_time"] = 1715418860,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 2.007099,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.007099,
+							["total"] = 0.007099,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.007099,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.007099,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.007099,
+							["last_event"] = 1715418868,
+							["resource_type"] = 9,
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 5,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 67998.257,
+				["tempo_start"] = 1715418860,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					50, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:14:27",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 6.740000000005239,
+				["CombatEndedAt"] = 67997.269,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:14:20",
+				["end_time"] = 67997.269,
+				["mapId"] = 1,
+				["combat_id"] = 5,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+				["combat_counter"] = 40,
+				["totals_grupo"] = {
+					46, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["boss_hp"] = 1,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 46.002126,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 67990.529,
+				["contra"] = "Bristleback Invader",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 4,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 103.006922,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 103.006922,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 103,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715418810,
+							["totalabsorbed"] = 0.006922,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Bristleback Invader"] = 59,
+										},
+										["n_total"] = 59,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Bristleback Invader"] = 44,
+										},
+										["n_total"] = 44,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418808,
+							["damage_taken"] = 13.006922,
+							["start_time"] = 1715418793,
+							["delay"] = 0,
+							["last_dps"] = 6.165125807996642,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 13.002369,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 13.002369,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F27BE",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 13,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002369,
+							["fight_component"] = true,
+							["end_time"] = 1715418860,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["g_dmg"] = 0,
+										["MISS"] = 16,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 65,
+										["c_max"] = 0,
+										["total"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 11,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 12,
+										["a_dmg"] = 0,
+										["PARRY"] = 26,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Handrmandr"] = 13,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 13,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 185,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 185,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418860,
+							["damage_taken"] = 103.002369,
+							["start_time"] = 1715418793,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 4,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 4,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 3.002242,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.002242,
+							["total"] = 0.002242,
+							["serial"] = "Player-4465-048D3FC8",
+							["received"] = 0.002242,
+							["targets"] = {
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.002242,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.002242,
+							["last_event"] = 1715418808,
+							["resource_type"] = 9,
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 4,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["nome"] = "Handrmandr",
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["nome"] = "Bristleback Invader",
+							["monster"] = true,
+							["tipo"] = 4,
+							["aID"] = "36943",
+							["serial"] = "Creature-0-4479-1-3686-36943-0000BF27BE",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 4,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 67923.641,
+				["tempo_start"] = 1715418793,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					116, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 3,
+					},
+					["Bristleback Invader"] = {
+						["Rend"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:13:30",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 16.70799999999872,
+				["CombatEndedAt"] = 67940.349,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:13:13",
+				["end_time"] = 67940.349,
+				["mapId"] = 1,
+				["combat_id"] = 4,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bristleback Invader"] = 2,
+				},
+				["combat_counter"] = 39,
+				["totals_grupo"] = {
+					103, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["boss_hp"] = 1,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 103.006922,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 67923.641,
+				["contra"] = "Bristleback Invader",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 35.004782,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 35.004782,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Bristleback Invader"] = true,
+							},
+							["targets"] = {
+								["Bristleback Invader"] = 35,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715418691,
+							["totalabsorbed"] = 0.004782,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 11,
+										["r_amt"] = 0,
+									}, -- [1]
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Bristleback Invader"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 14,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418690,
+							["damage_taken"] = 6.004782000000001,
+							["start_time"] = 1715418686,
+							["delay"] = 0,
+							["last_dps"] = 8.228674659142758,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.005773,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 6.005773,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-0000BEA91F",
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 6,
+								["Fledgling Brave"] = 0,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.005773,
+							["fight_component"] = true,
+							["end_time"] = 1715418793,
+							["aID"] = "36943",
+							["nome"] = "Bristleback Invader",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["DODGE"] = 25,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["MISS"] = 36,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 133,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["BLOCK"] = 21,
+										["a_dmg"] = 0,
+										["PARRY"] = 51,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["n_max"] = 0,
+									}, -- [1]
+									[81653] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 6,
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 375,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 81653,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 375,
+										["n_max"] = 2,
+										["r_amt"] = 0,
+									},
+									[11977] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Fledgling Brave"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 11977,
+										["r_dmg"] = 0,
+										["MISS"] = 3,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1715418793,
+							["damage_taken"] = 35.005773,
+							["start_time"] = 1715418686,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["aID"] = "36943",
+							["monster"] = true,
+							["nome"] = "Bristleback Invader",
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Creature-0-4479-1-3686-36943-00003F27F8",
+							["classe"] = "UNKNOW",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["boss_hp"] = 1,
+				["CombatStartedAt"] = 67816.882,
+				["tempo_start"] = 1715418686,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["combat_counter"] = 38,
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					41, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Bristleback Invader"] = {
+						["Rend"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "11:11:31",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Invader",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 4.254000000000815,
+				["CombatEndedAt"] = 67821.136,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:11:26",
+				["end_time"] = 67821.136,
+				["mapId"] = 1,
+				["combat_id"] = 3,
+				["playing_solo"] = true,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals_grupo"] = {
+					35, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 35.004782,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 67816.882,
+				["contra"] = "Bristleback Invader",
+				["frags"] = {
+					["Bristleback Invader"] = 1,
+				},
+			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
@@ -13,8 +7360,15 @@ _detalhes_database = {
 		},
 		["pos"] = {
 		},
+		["lines_per_column"] = 12,
 		["group_frames"] = true,
-		["height"] = 18,
+		["own_frame"] = {
+			["defensive-raid"] = false,
+			["ofensive"] = false,
+			["defensive-target"] = false,
+			["utility"] = false,
+			["defensive-personal"] = false,
+		},
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -30,18 +7384,13 @@ _detalhes_database = {
 			},
 		},
 		["show_options"] = false,
-		["own_frame"] = {
-			["defensive-raid"] = false,
-			["ofensive"] = false,
-			["defensive-target"] = false,
-			["utility"] = false,
-			["defensive-personal"] = false,
+		["ignored_cooldowns"] = {
 		},
-		["lines_per_column"] = 12,
+		["framme_locked"] = false,
+		["width"] = 120,
 		["cooldowns"] = {
 		},
-		["width"] = 120,
-		["framme_locked"] = false,
+		["height"] = 18,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
@@ -55,7 +7404,7 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 	},
-	["last_version"] = "3.4.3 11914",
+	["last_version"] = "4.4.0 12717",
 	["player_stats"] = {
 	},
 	["SoloTablesSaved"] = {
@@ -103,25 +7452,23 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["active_profile"] = "xVermin",
-	["last_realversion"] = 155,
+	["last_realversion"] = 156,
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
 	["combat_log"] = {
-		["inverse_deathlog_overalldata"] = false,
-		["track_hunter_frenzy"] = false,
-		["evoker_calc_damage"] = false,
-		["inverse_deathlog_raid"] = false,
-		["merge_critical_heals"] = false,
 		["merge_gemstones_1007"] = false,
+		["inverse_deathlog_raid"] = false,
+		["calc_evoker_damage"] = true,
+		["inverse_deathlog_overalldata"] = false,
+		["evoker_calc_damage"] = false,
+		["merge_critical_heals"] = false,
+		["track_hunter_frenzy"] = false,
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
+	["last_instance_time"] = 0,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -143,6 +7490,36 @@ _detalhes_database = {
 			["playSoundFile"] = "Details Threat Warning Volume 3",
 			["playSound"] = false,
 		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+			["max_compares"] = 4,
+			["compare_type"] = 1,
+		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["tank_block_size_height"] = 50,
+			["show_power_bar"] = false,
+			["first_run"] = false,
+			["aura_timer_text_size"] = 14,
+			["tank_block_castbar_size_height"] = 16,
+			["show_health_bar"] = true,
+			["aura_offset_y"] = 0,
+			["enabled"] = true,
+			["show_cast_bar"] = false,
+			["author"] = "Terciob",
+			["tank_block_size"] = 150,
+			["bar_height"] = 24,
+			["tank_block_texture"] = "Details Serenity",
+			["tank_block_color"] = {
+				0.074509, -- [1]
+				0.035294, -- [2]
+				0.035294, -- [3]
+				0.832845, -- [4]
+			},
+			["tank_block_height"] = 40,
+			["tank_block_powerbar_size_height"] = 10,
+			["show_inc_bars"] = true,
+		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["encounter_timers_bw"] = {
@@ -156,10 +7533,6 @@ _detalhes_database = {
 			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["use_square_mode"] = false,
@@ -193,7 +7566,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -208,6 +7581,7 @@ _detalhes_database = {
 				0.480826139450073, -- [4]
 			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = false,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -219,11 +7593,10 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = -183.107162475586,
+			["font_size"] = 10,
 			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {
@@ -232,22 +7605,129 @@ _detalhes_database = {
 			},
 		},
 	},
-	["data_harvested_for_charts"] = {
+	["mythic_plus_log"] = {
 	},
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_instance_time"] = 0,
-	["mythic_plus_log"] = {
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 602.4732055664062,
+					["x"] = -1100.646636962891,
+					["w"] = 232.9926300048828,
+					["h"] = 126.4822006225586,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 602.4732055664062,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 126.4822006225586,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["snap"] = {
+			},
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -522.0564422607422,
+					["x"] = 420.474365234375,
+					["w"] = 179.9997863769531,
+					["h"] = 178.3075408935547,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [3]
 	},
-	["last_day"] = "17",
+	["last_day"] = "11",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["force_font_outline"] = "",
 	["nick_tag_cache"] = {
-		["nextreset"] = 1698848157,
-		["last_version"] = 15,
+		["nextreset"] = 1716711253,
+		["last_version"] = 16,
 	},
-	["combat_id"] = 0,
+	["combat_id"] = 20,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -268,7 +7748,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -448,13 +7928,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["version"] = 3,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -477,7 +7957,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -493,11 +7973,15 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
-			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -514,13 +7998,9 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
+			["bars_grow_direction"] = 1,
 			["auto_current"] = true,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -633,7 +8113,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -684,9 +8164,9 @@ _detalhes_database = {
 		}, -- [1]
 	},
 	["character_data"] = {
-		["logons"] = 6,
+		["logons"] = 18,
 	},
-	["combat_counter"] = 16,
+	["combat_counter"] = 55,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -707,11 +8187,63 @@ _detalhes_database = {
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["resource"] = 25.137194,
+					["pets"] = {
+					},
+					["classe"] = "PALADIN",
+					["totalover"] = 0.008587,
+					["total"] = 0.008587,
+					["serial"] = "Player-4465-048D3FC8",
+					["received"] = 0.008587,
+					["targets"] = {
+					},
+					["powertype"] = 0,
+					["alternatepower"] = 0.008587,
+					["nome"] = "Handrmandr",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 7,
+					},
+					["grupo"] = true,
+					["aID"] = "4465-048D3FC8",
+					["passiveover"] = 0.008587,
+					["last_event"] = 0,
+					["resource_type"] = 9,
+					["tipo"] = 3,
+				}, -- [1]
 			},
 		}, -- [3]
 		{
 			["tipo"] = 9,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 2632,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Bristleback Invader",
+					["monster"] = true,
+					["last_event"] = 0,
+					["aID"] = "36943",
+					["serial"] = "Creature-0-4479-1-3686-36943-00003F27F8",
+					["tipo"] = 4,
+				}, -- [1]
+				{
+					["flag_original"] = 1297,
+					["pets"] = {
+					},
+					["aID"] = "4465-048D3FC8",
+					["nome"] = "Handrmandr",
+					["grupo"] = true,
+					["classe"] = "PALADIN",
+					["tipo"] = 4,
+					["serial"] = "Player-4465-048D3FC8",
+					["last_event"] = 0,
+				}, -- [2]
 			},
 		}, -- [4]
 		{
@@ -721,9 +8253,7 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["raid_roster_indexed"] = {
-		},
-		["tempo_start"] = 245715.594,
+		["tempo_start"] = 1715418676,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
@@ -731,6 +8261,8 @@ _detalhes_database = {
 		["bossTimers"] = {
 		},
 		["trinketProcs"] = {
+		},
+		["playerTalents"] = {
 		},
 		["totals"] = {
 			0, -- [1]
@@ -745,36 +8277,15 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
 				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-			["damage"] = {
-			},
-		},
-		["amountCasts"] = {
 		},
 		["totals_grupo"] = {
 			0, -- [1]
@@ -789,31 +8300,62 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
 				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 		},
-		["data_inicio"] = 0,
-		["frags"] = {
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
 		},
-		["data_fim"] = 0,
+		["overall_refreshed"] = true,
+		["data_inicio"] = 0,
+		["amountCasts"] = {
+		},
+		["mapId"] = 1,
+		["player_last_events"] = {
+		},
+		["zoneName"] = "Kalimdor",
 		["cleu_events"] = {
 			["n"] = 1,
 		},
+		["boss_hp"] = 1,
+		["segments_added"] = {
+		},
+		["frags"] = {
+		},
+		["data_fim"] = 0,
 		["cleu_timeline"] = {
 		},
 		["spells_cast_timeline"] = {
 		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
+		},
 		["start_time"] = 0,
 		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
 		},
-		["combat_counter"] = 15,
+		["combat_counter"] = 35,
 	},
 	["ignore_nicktag"] = false,
+	["data_harvested_for_charts"] = {
+	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -824,112 +8366,6 @@ _detalhes_database = {
 		["level"] = 0,
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
-	},
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["snap"] = {
-			},
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = -522.0564422607422,
-					["x"] = 420.474365234375,
-					["w"] = 179.9997863769531,
-					["h"] = 178.3075408935547,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [3]
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

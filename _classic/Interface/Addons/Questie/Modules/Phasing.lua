@@ -67,6 +67,11 @@ local phases = {
     KEZAN_CHAPTER_5 = 382,
     KEZAN_CHAPTER_6 = 383,
     KEZAN_CHAPTER_7 = 384,
+
+    -- Fake phases - looks like Blizzard is using the same phase ID for different areas - this is a nightmare...
+    HYJAL_IAN_AND_TARIK_NOT_IN_CAGE = 1000,
+    HYJAL_HAMUUL_RUNETOTEM_AT_SANCTUARY = 1001,
+    HYJAL_HAMUUL_RUNETOTEM_AT_GROVE = 1002,
 }
 Phasing.phases = phases
 
@@ -106,11 +111,15 @@ function Phasing.IsSpawnVisible(phase)
     end
 
     if phase == phases.HYJAL_CHAPTER_1 then
-        return (not complete[25520])
+        return (not complete[25372])
     end
 
     if phase == phases.HYJAL_CHAPTER_2 then
         return (not complete[25272]) and (not complete[25273])
+    end
+
+    if phase == phases.HYJAL_IAN_AND_TARIK_NOT_IN_CAGE then
+        return complete[25272] or complete[25273] or false
     end
 
     if phase >= phases.DRAGONMAW_PORT_CHAPTER_1 and phase <= phases.DRAGONMAW_PORT_CHAPTER_3 then
@@ -151,6 +160,14 @@ function Phasing.IsSpawnVisible(phase)
 
     if phase >= phases.KEZAN_CHAPTER_1 and phase <= phases.KEZAN_CHAPTER_7 then
         return _Phasing.Kezan(phase, complete) or false
+    end
+
+    if phase == phases.HYJAL_HAMUUL_RUNETOTEM_AT_SANCTUARY then
+        return (not (complete[25520] and complete[25502]))
+    end
+
+    if phase == phases.HYJAL_HAMUUL_RUNETOTEM_AT_GROVE then
+        return complete[25520] and complete[25502] or false
     end
 
     return false

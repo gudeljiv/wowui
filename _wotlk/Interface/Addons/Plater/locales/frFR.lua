@@ -5,11 +5,23 @@ do
 
 ------------------------------------------------------------
 --[[Translation missing --]]
+L["EXPORT"] = "Export"
+--[[Translation missing --]]
+L["EXPORT_CAST_COLORS"] = "Share Colors"
+--[[Translation missing --]]
+L["EXPORT_CAST_SOUNDS"] = "Share Sounds"
+--[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER"] = "Hover Over Highlight"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_ALPHA"] = "Hover Over Highlight Alpha"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_DESC"] = "Highlight effect when the mouse is over the nameplate."
+--[[Translation missing --]]
+L["IMPORT"] = "Import"
+--[[Translation missing --]]
+L["IMPORT_CAST_COLORS"] = "Import Colors"
+--[[Translation missing --]]
+L["IMPORT_CAST_SOUNDS"] = "Import Sounds"
 L["OPTIONS_ALPHA"] = "Alpha"
 --[[Translation missing --]]
 L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Transparency multiplier."
@@ -103,6 +115,12 @@ L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[Tank] Don't Show Your Name"
 --[[Translation missing --]]
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "If you are a tank don't show the target name if the cast is on you."
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_APPEARANCE"] = "Cast Bar Appearance"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_BLIZZCASTBAR"] = "Blizzard Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_COLORS"] = "Cast Bar Colors"
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "Enable Fade Animations"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "Enable fade animations when the cast starts and stop."
@@ -131,17 +149,27 @@ L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "No Spell Name Length Limitation"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "Spell name text won't be cut to fit within the cast bar width."
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE"] = "Quick Hide Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE_DESC"] = "After the cast finishes, immediately hide the cast bar."
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HALF"] = "Half Spark"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "Show only half of the spark texture."
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "Hide Spark On Interrupt"
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPARK_SETTINGS"] = "Spark Settings"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPELLICON"] = "Spell Icon"
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "Toggle Cast Bar Test"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "Start cast bar test, press again to stop."
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_WIDTH"] = "Width of the cast bar."
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLECOLORS"] = "Disable All Colors"
 --[[Translation missing --]]
 L["OPTIONS_CLICK_SPACE_HEIGHT"] = "The height of the are area which accepts mouse clicks to select the target"
 --[[Translation missing --]]
@@ -314,6 +342,8 @@ L["OPTIONS_NOESSENTIAL_NAME"] = "Disable non-essential script updates during Pla
 L["OPTIONS_NOESSENTIAL_SKIP_ALERT"] = "Skipped non-essential patch:"
 --[[Translation missing --]]
 L["OPTIONS_NOESSENTIAL_TITLE"] = "Skip Non Essential Script Patches"
+--[[Translation missing --]]
+L["OPTIONS_NOTHING_TO_EXPORT"] = "There's nothing to export."
 L["OPTIONS_OKAY"] = "OK"
 L["OPTIONS_OUTLINE"] = "Contour"
 --[[Translation missing --]]
@@ -383,6 +413,10 @@ L["OPTIONS_SHIELD_BAR"] = "Shield Bar"
 L["OPTIONS_SHOW_CASTBAR"] = "Show cast bar"
 --[[Translation missing --]]
 L["OPTIONS_SHOW_POWERBAR"] = "Show power bar"
+--[[Translation missing --]]
+L["OPTIONS_SHOWOPTIONS"] = "Show Options"
+--[[Translation missing --]]
+L["OPTIONS_SHOWSCRIPTS"] = "Show Scripts"
 --[[Translation missing --]]
 L["OPTIONS_SHOWTOOLTIP"] = "Show Tooltip"
 --[[Translation missing --]]

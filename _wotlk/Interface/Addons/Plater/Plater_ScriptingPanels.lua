@@ -8,6 +8,7 @@ local unpack = _G.unpack
 local tremove = _G.tremove
 local CreateFrame = _G.CreateFrame
 local tinsert = _G.tinsert
+local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
 
 --sort scripts
 function Plater.SortScripts (t1, t2)
@@ -2513,7 +2514,7 @@ function Plater.CreateHookingPanel()
 		--add the hook to the script object
 		if (not scriptObject.Hooks [hookName]) then
 			local defaultScript
-			if (hookName == "Load Screen" or hookName == "Player Logon" or hookName == "Initialization" or hookName == "Deinitialization") then
+			if (hookName == "Load Screen" or hookName == "Player Logon" or hookName == "Initialization" or hookName == "Deinitialization" or hookName == "Option Changed") then
 				defaultScript = hookFrame.DefaultScriptNoNameplate
 
 			elseif (hookName == "Player Power Update") then
@@ -3121,8 +3122,6 @@ function Plater.CreateScriptingPanel()
 	
 	--store all spells from the game in a hash table and also on the index table
 	--these are loaded on demand and cleared when the scripting frame is hided
-	scriptingFrame.SpellHashTable = {}
-	scriptingFrame.SpellIndexTable = {}
 	scriptingFrame.SearchString = ""
 	
 	scriptingFrame:SetScript ("OnShow", function()
@@ -3147,6 +3146,8 @@ function Plater.CreateScriptingPanel()
 				tremove (Plater.db.profile.script_data_trash, i)
 			end
 		end
+
+		DF:LoadSpellCache(Plater.SpellHashTable, Plater.SpellIndexTable, Plater.SpellSameNameTable)
 	end)
 	
 	scriptingFrame:SetScript ("OnHide", function()
@@ -3155,11 +3156,8 @@ function Plater.CreateScriptingPanel()
 		if (scriptObject) then
 			scriptingFrame.SaveScript()
 		end
-		
-		--clean the spell hash table
-		wipe (scriptingFrame.SpellHashTable)
-		wipe (scriptingFrame.SpellIndexTable)
-		collectgarbage()
+
+		DF:UnloadSpellCache()
 	end)
 	
 	-- scriptingFrame.ScriptNameTextEntry --name of the script (text entry)
@@ -3255,14 +3253,6 @@ function Plater.CreateScriptingPanel()
 		end
 
 		return currentEditingScript
-	end
-	
-	function scriptingFrame.LoadGameSpells()
-		if (not next (scriptingFrame.SpellHashTable)) then
-			--load all spells in the game
-			DF:LoadAllSpells (scriptingFrame.SpellHashTable, scriptingFrame.SpellIndexTable)
-			return true
-		end
 	end
 	
 	--restore the values on the text fields and scroll boxes to the values on the object
@@ -3744,11 +3734,8 @@ function Plater.CreateScriptingPanel()
 			--cast the string to number
 			local spellId = tonumber (text)
 			if (not spellId or not GetSpellInfo (spellId)) then
-				--load spell hash table
-				scriptingFrame.LoadGameSpells()
-				
 				--attempt to get the spellId from the hash table
-				spellId = scriptingFrame.SpellHashTable [string.lower (text)]
+				spellId = Plater.SpellHashTable [string.lower (text)]
 				--if still fail, stop here
 				if (not spellId) then
 					Plater:Msg ("Trigger requires a valid spell name or an ID of a spell")
@@ -3953,10 +3940,9 @@ function Plater.CreateScriptingPanel()
 			add_trigger_textentry:SetHook ("OnEditFocusGained", function (self, capsule)
 				--if ithe script is for aura or castbar and if the textentry box doesnt have an auto complete table yet
 				local scriptObject = scriptingFrame.GetCurrentScriptObject()
-				if ((scriptObject.ScriptType == 1 or scriptObject.ScriptType == 2) and (not add_trigger_textentry.SpellAutoCompleteList or not scriptingFrame.SpellIndexTable[1])) then
+				if ((scriptObject.ScriptType == 1 or scriptObject.ScriptType == 2) and (not add_trigger_textentry.SpellAutoCompleteList or not Plater.SpellIndexTable[1])) then
 					--load spell hash table
-					scriptingFrame.LoadGameSpells()
-					add_trigger_textentry.SpellAutoCompleteList = scriptingFrame.SpellIndexTable
+					add_trigger_textentry.SpellAutoCompleteList = Plater.SpellIndexTable
 					add_trigger_textentry:SetAsAutoComplete ("SpellAutoCompleteList", nil, true)
 				end
 			end)

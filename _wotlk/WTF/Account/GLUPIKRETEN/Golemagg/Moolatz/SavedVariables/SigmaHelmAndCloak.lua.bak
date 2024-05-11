@@ -3,6 +3,7 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:40403:983:::::::80:::::::::|h[]|h|r"] = "Off",
 	["|cffa335ee|Hitem:40403:3294:::::::80:::::::::|h[Drape of the Deadly Foe]|h|r"] = "Off",
 	["|cffffffff|Hitem:40473::41398:39905:::::80:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:40403:3294:::::::80:::::::::|h[]|h|r"] = "Off",
 	["|cffa335ee|Hitem:45356::::::::80:::::::::|h[Valorous Nightsong Headguard]|h|r"] = "Off",
 	["|cffa335ee|Hitem:40473::41398:39905:::::80:::::::::|h[Valorous Dreamwalker Headguard]|h|r"] = "Off",
 	["|cffffffff|Hitem:45356:3818:41380:40034:::::80:::::::::|h[]|h|r"] = "Off",

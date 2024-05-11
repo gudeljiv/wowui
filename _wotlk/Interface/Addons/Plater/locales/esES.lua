@@ -5,10 +5,22 @@ do
 
 ------------------------------------------------------------
 --[[Translation missing --]]
+L["EXPORT"] = "Export"
+--[[Translation missing --]]
+L["EXPORT_CAST_COLORS"] = "Share Colors"
+--[[Translation missing --]]
+L["EXPORT_CAST_SOUNDS"] = "Share Sounds"
+--[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER"] = "Hover Over Highlight"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_ALPHA"] = "Hover Over Highlight Alpha"
 L["HIGHLIGHT_HOVEROVER_DESC"] = "Efecto de resaltado cuando el ratón está sobre la placa."
+--[[Translation missing --]]
+L["IMPORT"] = "Import"
+--[[Translation missing --]]
+L["IMPORT_CAST_COLORS"] = "Import Colors"
+--[[Translation missing --]]
+L["IMPORT_CAST_SOUNDS"] = "Import Sounds"
 L["OPTIONS_ALPHA"] = "Alfa"
 L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Multiplicador de transparencia."
 L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "Transparencia por defecto"
@@ -64,6 +76,12 @@ L["OPTIONS_CAST_SHOW_TARGETNAME"] = "Mostrar nombre del objetivo"
 L["OPTIONS_CAST_SHOW_TARGETNAME_DESC"] = "Muestra quién es el objetivo del lanzamiento actual (si el objetivo existe)"
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[Tanque] No muestres tu nombre"
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "Si eres un tanque no muestres el nombre del objetivo si el lanzamiento es sobre ti."
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_APPEARANCE"] = "Cast Bar Appearance"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_BLIZZCASTBAR"] = "Blizzard Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_COLORS"] = "Cast Bar Colors"
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "Activar animaciones de fundido"
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "Activa las animaciones de fundido cuando el lanzamiento se inicia y se detiene."
 L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END"] = "Al parar"
@@ -78,12 +96,22 @@ L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "Activar la personalización de iconos
 L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE_DESC"] = "Si esta opción está desactivada, Plater no modificará el icono del hechizo, dejando que lo hagan los scripts."
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "Sin límite de longitud del nombre del hechizo"
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "El texto del nombre del hechizo no se cortará para que quepa en el ancho de la barra de lanzamiento."
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE"] = "Quick Hide Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE_DESC"] = "After the cast finishes, immediately hide the cast bar."
 L["OPTIONS_CASTBAR_SPARK_HALF"] = "Media chispa"
 L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "Muestra solo la mitad de la textura de la chispa."
 L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "Ocultar chispa al interrumpir"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPARK_SETTINGS"] = "Spark Settings"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPELLICON"] = "Spell Icon"
 L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "Activar la barra de lanzamiento de prueba"
 L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "Inicia la prueba de la barra de lanzamiento, pulsa de nuevo para detenerla."
 L["OPTIONS_CASTBAR_WIDTH"] = "Anchura de la barra de lanzamiento."
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLECOLORS"] = "Disable All Colors"
 L["OPTIONS_CLICK_SPACE_HEIGHT"] = "La altura del área que acepta clics del ratón para seleccionar al objetivo"
 L["OPTIONS_CLICK_SPACE_WIDTH"] = "La anchura del área que acepta clics del ratón para seleccionar al objetivo"
 L["OPTIONS_COLOR"] = "Color"
@@ -241,6 +269,8 @@ L["OPTIONS_NOESSENTIAL_NAME"] = "Disable non-essential script updates during Pla
 L["OPTIONS_NOESSENTIAL_SKIP_ALERT"] = "Skipped non-essential patch:"
 --[[Translation missing --]]
 L["OPTIONS_NOESSENTIAL_TITLE"] = "Skip Non Essential Script Patches"
+--[[Translation missing --]]
+L["OPTIONS_NOTHING_TO_EXPORT"] = "There's nothing to export."
 L["OPTIONS_OKAY"] = "Okay"
 L["OPTIONS_OUTLINE"] = "Contorno"
 --[[Translation missing --]]
@@ -310,6 +340,10 @@ L["OPTIONS_SHIELD_BAR"] = "Shield Bar"
 L["OPTIONS_SHOW_CASTBAR"] = "Show cast bar"
 --[[Translation missing --]]
 L["OPTIONS_SHOW_POWERBAR"] = "Show power bar"
+--[[Translation missing --]]
+L["OPTIONS_SHOWOPTIONS"] = "Show Options"
+--[[Translation missing --]]
+L["OPTIONS_SHOWSCRIPTS"] = "Show Scripts"
 --[[Translation missing --]]
 L["OPTIONS_SHOWTOOLTIP"] = "Show Tooltip"
 --[[Translation missing --]]

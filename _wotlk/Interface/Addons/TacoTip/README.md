@@ -1,4 +1,4 @@
-## TacoTip: Better player tooltips - for Classic / TBC / WoTLK
+## TacoTip: Better player tooltips - for Cataclysm Classic
 
 **Compatible with Classic & TBC & WOTLK**
 

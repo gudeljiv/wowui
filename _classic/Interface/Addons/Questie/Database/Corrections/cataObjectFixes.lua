@@ -35,9 +35,51 @@ function CataObjectFixes.Load()
         [204281] = { -- Worm Mound
             [objectKeys.spawns] = {[1519]={{49.24,18.03},{52.53,14.86},{64.01,16.59},{63.39,5.73},{64.93,8.47},{56.45,22.58},{55.73,16.51},{53.73,19.56},{60.51,6.85},{58.05,10.49},{62.12,17.65},{59.07,20.64}}},
         },
+        [204360] = { -- Monstrous Clam
+            [objectKeys.spawns] = {[14]={{59.03,14.08},{59.42,9.93},{59.37,12.45},{58.24,11.4},{58.08,13.54},{57.51,10.09},{56.24,9.64},{58.2,3.99},{58.96,5.17},{58.49,6.23},{56.88,6.68},{58.26,8.28}}},
+        },
         [206585] = { -- Totem of Ruumbo
             [objectKeys.questStarts] = {27989,27994,27995},
-            [objectKeys.questStarts] = {27989,27994,28100},
+            [objectKeys.questEnds] = {27989,27994,28100},
+        },
+        [206111] = { -- Hero's Call Board -- Stormwind AH
+            [objectKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{62.86,71.49}}},
+            [objectKeys.zoneID] = zoneIDs.STORMWIND_CITY,
+            [objectKeys.questStarts] = {27724,27726,27727,28551,28552,28558,28562,28563,28564,28576,28578,28579,28582,28666,28673,28675,28699,28702,28708,28709,28716,28825,29156,29387,29391},
+        },
+        [206294] = { -- Hero's Call Board -- Stormwind North
+            [objectKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{62.23,29.86}}},
+            [objectKeys.zoneID] = zoneIDs.STORMWIND_CITY,
+            [objectKeys.questStarts] = {27724,27726,27727,28551,28552,28558,28562,28563,28564,28576,28578,28579,28582,28666,28673,28675,28699,28702,28708,28709,28716,29156,29387,29391},
+        },
+        [207320] = { -- Hero's Call Board -- Ironforge
+            [objectKeys.spawns] = {[zoneIDs.IRONFORGE] = {{25.46,69.78}}},
+            [objectKeys.zoneID] = zoneIDs.IRONFORGE,
+            [objectKeys.questStarts] = {26542,27724,27726,27727,28558,28565,28567,28573,28576,28578,28579,28582,28666,28673,28675,28708,28709,28716},
+        },
+        [207321] = { -- Hero's Call Board -- Darnassus
+            [objectKeys.spawns] = {[zoneIDs.DARNASSUS] = {{44.88,49.95}}},
+            [objectKeys.zoneID] = zoneIDs.DARNASSUS,
+            [objectKeys.questStarts] = {27724,27726,27727,28490,28492,28503,28507,28511,28525,28528,28531,28539,28543,28544,28550,28552,28558,28708,28709,28716,29156,29387,29391},
+        },
+        [207322] = { -- Hero's Call Board -- Exodar
+            [objectKeys.spawns] = {[zoneIDs.THE_EXODAR] = {{55.36,47.23}}},
+            [objectKeys.zoneID] = zoneIDs.THE_EXODAR,
+            [objectKeys.questStarts] = {27724,27726,27727,28492,28503,28507,28511,28525,28528,28531,28539,28543,28544,28550,28552,28558,28559,28708},
+        },
+        [208316] = { -- Hero's Call Board -- Dalaran
+            [objectKeys.spawns] = {[zoneIDs.DALARAN] = {{37.41,63.21}}},
+            [objectKeys.zoneID] = zoneIDs.DALARAN,
+            [objectKeys.questStarts] = {29071},
+            [objectKeys.questEnds] = {29071},
+        },
+        [278575] = { -- Hero's Call Board -- Twilight Highlands
+            [objectKeys.spawns] = {[4922] = {{49.32,30.05,169}}},
+            [objectKeys.zoneID] = 4922,
+        },
+        [281339] = { -- Hero's Call Board -- Deepholm
+            [objectKeys.spawns] = {[5042] = {{48.82,53.06,169}}},
+            [objectKeys.zoneID] = 5042,
         },
 
         --- fake object IDs

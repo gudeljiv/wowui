@@ -34,11 +34,15 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
 			["border"] = "None",
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
+			["display"] = {
+				["offsetX"] = -100,
+				["offsetY"] = -110.0000076293945,
+			},
 			["enable"] = true,
 			["minimap"] = {
 				["show"] = false,

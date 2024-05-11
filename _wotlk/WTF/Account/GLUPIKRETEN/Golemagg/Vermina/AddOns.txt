@@ -193,7 +193,12 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled
+LibStub: enabled
+CallbackHandler-1.0: enabled
+LibDetours-1.0: enabled
+LibClassicInspector: enabled
+LibClassicGearScore: enabled

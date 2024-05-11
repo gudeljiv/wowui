@@ -14,83 +14,6 @@ local defaultBorderColorTable = {0.1, 0.1, 0.1, 1}
 ---@type edgenames[]
 local cornerNames = {"TopLeft", "TopRight", "BottomLeft", "BottomRight"}
 
----@class blz_backdrop : table
----@field TopLeftCorner texture
----@field TopRightCorner texture
----@field BottomLeftCorner texture
----@field BottomRightCorner texture
----@field TopEdge texture
----@field BottomEdge texture
----@field LeftEdge texture
----@field RightEdge texture
----@field Center texture
-
----@class cornertextures : table
----@field TopLeft texture
----@field TopRight texture
----@field BottomLeft texture
----@field BottomRight texture
-
----@class edgetextures : table
----@field Top texture
----@field Bottom texture
----@field Left texture
----@field Right texture
-
----@class df_roundedpanel_preset : table
----@field border_color any
----@field color any
----@field roundness number
-
----@class df_roundedpanel_options : table
----@field width number
----@field height number
----@field use_titlebar boolean
----@field use_scalebar boolean
----@field title string
----@field scale number
----@field roundness number
----@field color any
----@field border_color any
----@field corner_texture texturepath|textureid
-
----@class df_roundedcornermixin : table
----@field RoundedCornerConstructor fun(self:df_roundedpanel) --called from CreateRoundedPanel
----@field SetColor fun(self:df_roundedpanel, red: any, green: number|nil, blue: number|nil, alpha: number|nil)
----@field SetBorderCornerColor fun(self:df_roundedpanel, red: any, green: number|nil, blue: number|nil, alpha: number|nil)
----@field SetRoundness fun(self:df_roundedpanel, slope: number)
----@field GetCornerSize fun(self:df_roundedpanel) : width, height
----@field OnSizeChanged fun(self:df_roundedpanel) --called when the frame size changes
----@field CreateBorder fun(self:df_roundedpanel) --called from SetBorderCornerColor if the border is not created yet
----@field CalculateBorderEdgeSize fun(self:df_roundedpanel, alignment: "vertical"|"horizontal"): number --calculate the size of the border edge texture
----@field SetTitleBarColor fun(self:df_roundedpanel, red: any, green: number|nil, blue: number|nil, alpha: number|nil)
-
----@class df_roundedpanel : frame, df_roundedcornermixin, df_optionsmixin, df_titlebar
----@field bHasBorder boolean
----@field bHasTitleBar boolean
----@field options df_roundedpanel_options
----@field cornerRoundness number
----@field CornerTextures cornertextures
----@field CenterTextures texture[]
----@field BorderCornerTextures cornertextures
----@field BorderEdgeTextures edgetextures
----@field TitleBar df_roundedpanel
----@field TopLeft texture corner texture
----@field TopRight texture corner texture
----@field BottomLeft texture corner texture
----@field BottomRight texture corner texture
----@field TopEdgeBorder texture border edge
----@field BottomEdgeBorder texture border edge
----@field LeftEdgeBorder texture border edge
----@field RightEdgeBorder texture border edge
----@field TopLeftBorder texture border corner
----@field TopRightBorder texture border corner
----@field BottomLeftBorder texture border corner
----@field BottomRightBorder texture border corner
----@field TopHorizontalEdge texture texture connecting the top corners
----@field BottomHorizontalEdge texture texture connecting the bottom corners
----@field CenterBlock texture texture connecting the bottom left of the topleft corner with the top right of the bottom right corner
-
 ---@param self df_roundedpanel
 ---@param textures cornertextures
 ---@param width number|nil
@@ -211,6 +134,54 @@ detailsFramework.RoundedCornerPanelMixin = {
         setCornerPoints(self, self.CornerTextures)
     end,
 
+    ---get the highest frame level of the rounded panel and its children
+    ---@param self df_roundedpanel
+    ---@return framelevel
+    GetMaxFrameLevel = function(self)
+        ---@type framelevel
+        local maxFrameLevel = 0
+        local children = {self:GetChildren()}
+
+        for i = 1, #children do
+            local thisChild = children[i]
+            ---@cast thisChild frame
+            if (thisChild:GetFrameLevel() > maxFrameLevel) then
+                maxFrameLevel = thisChild:GetFrameLevel()
+            end
+        end
+
+        return maxFrameLevel
+    end,
+
+    ---create a frame placed at the top side of the rounded panel, this frame has a member called 'Text' which is a fontstring for the title
+    ---@param self df_roundedpanel
+    ---@return df_roundedpanel
+    CreateTitleBar = function(self)
+        ---@type df_roundedpanel
+        local titleBar = detailsFramework:CreateRoundedPanel(self, "$parentTitleBar", {width = self.options.width - 6, height = 16})
+        titleBar:SetPoint("top", self, "top", 0, -4)
+        titleBar:SetRoundness(5)
+        titleBar:SetFrameLevel(9500)
+        titleBar.bIsTitleBar = true
+        self.TitleBar = titleBar
+        self.bHasTitleBar = true
+
+        local textFontString = titleBar:CreateFontString("$parentText", "overlay", "GameFontNormal")
+        textFontString:SetPoint("center", titleBar, "center", 0, 0)
+        titleBar.Text = textFontString
+
+        local closeButton = detailsFramework:CreateCloseButton(titleBar, "$parentCloseButton")
+        closeButton:SetPoint("right", titleBar, "right", -3, 0)
+		closeButton:SetSize(10, 10)
+		closeButton:SetAlpha(0.3)
+        closeButton:SetScript("OnClick", function(self)
+            self:GetParent():GetParent():Hide()
+        end)
+        detailsFramework:SetButtonTexture(closeButton, "common-search-clearbutton")
+
+        return titleBar
+    end,
+
     ---return the width and height of the corner textures
     ---@param self df_roundedpanel
     ---@return number, number
@@ -243,13 +214,13 @@ detailsFramework.RoundedCornerPanelMixin = {
 
             --set the new size of the corners on all corner textures
             for _, thisTexture in pairs(self.CornerTextures) do
-                thisTexture:SetSize(newCornerSize-self.cornerRoundness, newCornerSize)
+                thisTexture:SetSize(newCornerSize - (self.cornerRoundness - 2), newCornerSize)
             end
 
             --check if the frame has border and set the size of the border corners as well
             if (self.bHasBorder) then
                 for _, thisTexture in pairs(self.BorderCornerTextures) do
-                    thisTexture:SetSize(newCornerSize, newCornerSize)
+                    thisTexture:SetSize(newCornerSize-2, newCornerSize+2)
                 end
 
                 --hide the left and right edges as the corner textures already is enough to fill the frame
@@ -257,8 +228,8 @@ detailsFramework.RoundedCornerPanelMixin = {
                 self.BorderEdgeTextures["Right"]:Hide()
 
                 local horizontalEdgesNewSize = self:CalculateBorderEdgeSize("horizontal")
-                self.BorderEdgeTextures["Top"]:SetSize(horizontalEdgesNewSize, 1)
-                self.BorderEdgeTextures["Bottom"]:SetSize(horizontalEdgesNewSize, 1)
+                self.BorderEdgeTextures["Top"]:SetSize(horizontalEdgesNewSize + (self.options.horizontal_border_size_offset or 0), 1)
+                self.BorderEdgeTextures["Bottom"]:SetSize(horizontalEdgesNewSize + (self.options.horizontal_border_size_offset or 0), 1)
             end
 
             self.CenterBlock:Hide()
@@ -518,11 +489,15 @@ local applyPreset = function(frame, preset)
     else
         frame:SetRoundness(1)
     end
+
+    if (preset.use_titlebar) then
+        frame:CreateTitleBar()
+    end
 end
 
 ---set a frame to have rounded corners following the settings passed by the preset table
 ---@param frame frame
----@param preset df_roundedpanel_preset|nil
+---@param preset df_roundedpanel_preset?
 function detailsFramework:AddRoundedCornersToFrame(frame, preset)
     frame = frame and frame.widget or frame
     assert(frame and frame.GetObjectType and frame.SetPoint, "AddRoundedCornersToFrame(frame): frame must be a frame object.")
@@ -559,6 +534,7 @@ function detailsFramework:AddRoundedCornersToFrame(frame, preset)
 
     --handle preset
     if (preset and type(preset) == "table") then
+        frame.options.horizontal_border_size_offset = preset.horizontal_border_size_offset
         applyPreset(frame, preset)
     else
         applyPreset(frame, defaultPreset)
@@ -566,7 +542,10 @@ function detailsFramework:AddRoundedCornersToFrame(frame, preset)
 end
 
 ---test case:
-C_Timer.After(1, function() if true then return end
+C_Timer.After(1, function()
+
+    if true then return end
+
     local DF = DetailsFramework
 
     local parent = UIParent

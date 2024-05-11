@@ -1,13 +1,17 @@
 local _, xVermin = ...
 
 local frames = {
-	SettingsPanel
+	SettingsPanel,
+	CommunitiesFrame
 }
 
 
 for index, frame in pairs(frames) do
 
-	if not frame then return end
+	if not frame then 
+		print(frame) 
+		return 
+	end
 
 	frame:SetMovable(true)
 	frame:EnableMouse(true)

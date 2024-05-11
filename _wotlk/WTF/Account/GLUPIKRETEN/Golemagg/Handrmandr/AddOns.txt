@@ -114,7 +114,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Plater: enabled
 NovaInstanceTracker: enabled
-PallyPower: enabled
+PallyPower: disabled
 TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
@@ -179,8 +179,10 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled
+Immersion: enabled
+ConsolePort: enabled

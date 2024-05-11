@@ -16,7 +16,8 @@ for i, v in pairs(
 		GossipFrame,
 		MerchantFrame,
 		PVPParentFrame,
-		PVEFrame
+		PVEFrame,
+		CommunitiesFrame
 	}
 ) do
 	if v then

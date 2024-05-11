@@ -2,7 +2,7 @@
 LBISSettings = {
 	["SelectedZoneNumber"] = "All",
 	["SelectedZone"] = "All",
-	["SelectedSlot"] = "All",
+	["ShowPriority"] = true,
 	["OpenTab"] = "ItemList",
 	["Tooltip"] = {
 		["BloodDeath Knight"] = true,
@@ -49,12 +49,12 @@ LBISSettings = {
 		["Phase 3"] = true,
 		["Phase 4"] = true,
 	},
-	["ShowPriority"] = true,
+	["PriorityList"] = {
+	},
 	["SelectedRank"] = "All",
 	["HideObsolete"] = false,
 	["SelectedSourceType"] = "All",
-	["PriorityList"] = {
-	},
 	["ShowCustom"] = false,
+	["SelectedSlot"] = "All",
 	["SelectedPhase"] = "All",
 }

@@ -24,20 +24,32 @@ function CataItemFixes.Load()
         [31881] = { -- Draenei Orphan Whistle
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [39684] = { -- Hair Trigger
+            [itemKeys.npcDrops] = {},
+        },
+        [44830] = { -- Highborne Relic
+            [itemKeys.npcDrops] = {},
+        },
         [44911] = { -- Foul Bear Carcass Sample
             [itemKeys.npcDrops] = {32975},
         },
         [44925] = { -- Corruptor's Master Key
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [44966] = { -- Foul Ichor
+            [itemKeys.npcDrops] = {33020,33021,33022},
+        },
         [44969] = { -- Moonstalker Whisker
-            [itemKeys.npcDrops] = {33127}
+            [itemKeys.npcDrops] = {33127},
+        },
+        [44976] = { -- Fuming Toadstool
+            [itemKeys.npcDrops] = {},
         },
         [44979] = { -- Overseer's Orders
-            [itemKeys.npcDrops] = {32863}
+            [itemKeys.npcDrops] = {32863},
         },
         [45027] = { -- Tuft of Mottled Doe Hair
-            [itemKeys.npcDrops] = {33311},
+            [itemKeys.npcDrops] = {33313},
         },
         [45885] = { -- Thistle Bear Fur
             [itemKeys.npcDrops] = {33978},
@@ -283,6 +295,9 @@ function CataItemFixes.Load()
         [57175] = { -- Canal Crab
             [itemKeys.npcDrops] = {42339},
         },
+        [57197] = { -- Juicy Apple
+            [itemKeys.npcDrops] = {},
+        },
         [57765] = { -- Muddy Crawfish
             [itemKeys.npcDrops] = {42548},
         },
@@ -298,11 +313,26 @@ function CataItemFixes.Load()
         [58365] = { -- Horn of the Ancients
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [58809] = { -- Rock Lobster
+            [itemKeys.npcDrops] = {},
+        },
+        [58864] = { -- Precious Locket
+            [itemKeys.itemDrops] = {58856},
+        },
+        [58899] = { -- Violet Perch
+            [itemKeys.npcDrops] = {},
+        },
+        [58945] = { -- Toxic Puddlefish
+            [itemKeys.npcDrops] = {}
+        },
         [58950] = { -- Messner's Cage Key
             [itemKeys.class] = itemClasses.QUEST,
         },
         [58951] = { -- Giant Furious Pike
             [itemKeys.npcDrops] = {}
+        },
+        [58958] = { -- Drowned Thunder Lizard Tail
+            [itemKeys.npcDrops] = {39464},
         },
         [58969] = { -- Jorgensen's Cage Key
             [itemKeys.class] = itemClasses.QUEST,
@@ -333,6 +363,9 @@ function CataItemFixes.Load()
         },
         [60835] = { -- Depleted Totem
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [60879] = { -- Commander's Holy Symbol
+            [itemKeys.npcDrops] = {4278},
         },
         [61317] = { -- Vermillion Egg
             [itemKeys.npcDrops] = {45506,45508,45651,45682},
@@ -391,8 +424,38 @@ function CataItemFixes.Load()
         [69815] = { -- Seething Cinder
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [69905] = { -- Giant Flesh-Eating Tadpole
+            [itemKeys.npcDrops] = {},
+        },
+        [69911] = { -- Squirming Slime Mold
+            [itemKeys.npcDrops] = {53517},
+        },
+        [69913] = { -- Aquinne's Moon Pendant
+            [itemKeys.itemDrops] = {69914},
+        },
+        [69914] = { -- Giant Catfish
+            [itemKeys.npcDrops] = {},
+        },
         [69915] = { -- Baby Octopus
             [itemKeys.npcDrops] = {53522},
+        },
+        [69918] = { -- Brightwater Snail
+            [itemKeys.npcDrops] = {53526},
+        },
+        [69931] = { -- Arctic Char
+            [itemKeys.npcDrops] = {},
+        },
+        [69935] = { -- Poshken's Ring
+            [itemKeys.itemDrops] = {69956},
+        },
+        [69977] = { -- Stonebull Crayfish
+            [itemKeys.npcDrops] = {53561},
+        },
+        [69982] = { -- Dun Morogh Chicken
+            [itemKeys.npcDrops] = {53568},
+        },
+        [69984] = { -- Bag o' Sheep Innards
+            [itemKeys.vendors] = {5124},
         },
         [70000] = { -- Succulent Sweet Potatoes
             [itemKeys.objectDrops] = {208887},

@@ -106,7 +106,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: disabled
-Blizzard_CompactRaidFrames: disabled
+Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: disabled
 AuctionFaster: disabled
 aux-addon: disabled

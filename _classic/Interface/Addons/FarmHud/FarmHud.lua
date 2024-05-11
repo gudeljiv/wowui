@@ -1,7 +1,7 @@
 
 local addon,ns=...;
 local L=ns.L;
-ns.debugMode = "9.2.9-release"=="@".."project-version".."@";
+ns.debugMode = "9.2.10-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH");
 
 local ACD = LibStub("AceConfigDialog-3.0");
@@ -755,8 +755,10 @@ function FarmHudMixin:OnShow()
 	MinimapMT.EnableMouseWheel(Minimap,false);
 
 	for modName,mod in pairs(ns.modules)do
-		if mod.OnShow then
+		if type(mod.OnShow)=="function" then
 			mod.OnShow();
+		elseif type(mod.OnShow)=="table" and type(mod.OnShow.fnc)=="string" and FarmHud[mod.OnShow.fnc] then
+			FarmHud[mod.OnShow.fnc](unpack(mod.OnShow.args));
 		end
 	end
 end
@@ -860,8 +862,10 @@ function FarmHudMixin:OnHide()
 	wipe(mps);
 
 	for modName,mod in pairs(ns.modules)do
-		if mod.OnHide then
+		if type(mod.OnHide)=="function" then
 			mod.OnHide();
+		elseif type(mod.OnHide)=="table" and type(mod.OnHide.fnc)=="string" and FarmHud[mod.OnHide.fnc] then
+			FarmHud[mod.OnHide.fnc](unpack(mod.OnHide.args));
 		end
 	end
 
@@ -964,7 +968,7 @@ function FarmHudMixin:ToggleOptions()
 		ACD:Close(addon);
 	else
 		ACD:Open(addon);
-		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.9-release");
+		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.10-release");
 	end
 end
 
