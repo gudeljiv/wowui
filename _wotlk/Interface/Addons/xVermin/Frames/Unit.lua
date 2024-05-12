@@ -27,24 +27,24 @@ local _, xVermin = ...
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) reagent count
 -----------------------------------------------------------------------------------------------------------------------------
-if xVermin.Class == 'PALADIN' then
-	local rc = CreateFrame('Frame', 'CustomContainer_ReagentCount', CustomContainer_Combat)
-	rc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
-	rc:SetWidth(1)
-	rc:SetHeight(1)
-	rc.text = rc:CreateFontString(nil, 'ARTWORK')
-	rc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-	rc.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
-	rc.text:SetText('')
+-- if xVermin.Class == 'PALADIN' then
+-- 	local rc = CreateFrame('Frame', 'CustomContainer_ReagentCount', CustomContainer_Combat)
+-- 	rc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+-- 	rc:SetWidth(1)
+-- 	rc:SetHeight(1)
+-- 	rc.text = rc:CreateFontString(nil, 'ARTWORK')
+-- 	rc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+-- 	rc.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+-- 	rc.text:SetText('')
 
-	UIParent:HookScript(
-		'OnUpdate',
-		function()
-			local reagentCount = GetItemCount(21177)
-			rc.text:SetText(reagentCount)
-		end
-	)
-end
+-- 	UIParent:HookScript(
+-- 		'OnUpdate',
+-- 		function()
+-- 			local reagentCount = GetItemCount(21177)
+-- 			rc.text:SetText(reagentCount)
+-- 		end
+-- 	)
+-- end
 
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) speed

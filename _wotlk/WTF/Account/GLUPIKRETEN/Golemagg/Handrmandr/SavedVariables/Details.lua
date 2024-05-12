@@ -7,26 +7,26 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 113,
+					["combatId"] = 172,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004245,
+							["totalabsorbed"] = 0.005869,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 122.004245,
+							["total_without_pet"] = 133.005869,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 122.004245,
+							["total"] = 133.005869,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Wiry Swoop"] = 122,
+								["Swoop"] = 133,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -34,7 +34,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504365,
+							["end_time"] = 1715528299,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -43,15 +43,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 35,
+										["n_max"] = 38,
 										["targets"] = {
-											["Wiry Swoop"] = 35,
+											["Swoop"] = 38,
 										},
-										["n_total"] = 35,
-										["n_min"] = 35,
+										["n_total"] = 38,
+										["n_min"] = 38,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 35,
+										["total"] = 38,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -71,14 +71,14 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Wiry Swoop"] = 5,
+											["Swoop"] = 5,
 										},
 										["n_total"] = 5,
-										["n_min"] = 2,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
-										["counter"] = 2,
+										["counter"] = 1,
 										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 25742,
@@ -91,27 +91,27 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[35395] = {
+									[31935] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 42,
+										["n_max"] = 90,
 										["targets"] = {
-											["Wiry Swoop"] = 42,
+											["Swoop"] = 90,
 										},
-										["n_total"] = 42,
-										["n_min"] = 42,
+										["n_total"] = 90,
+										["n_min"] = 90,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 42,
+										["total"] = 90,
 										["c_max"] = 0,
-										["id"] = 35395,
+										["id"] = 31935,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -123,60 +123,32 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[20187] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Wiry Swoop"] = 40,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40,
-										["c_max"] = 40,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 40,
-										["successful_casted"] = 0,
-										["c_total"] = 40,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 38.89201306996203,
+							["last_dps"] = 94.26354996504632,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004245,
-							["start_time"] = 1715504362,
+							["damage_taken"] = 0.005869,
+							["start_time"] = 1715528298,
 							["delay"] = 0,
-							["last_event"] = 1715504364,
+							["last_event"] = 1715528298,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001207,
+							["totalabsorbed"] = 0.007613,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.001207,
+							["total_without_pet"] = 0.007613,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 0.001207,
+							["total"] = 0.007613,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2969-00024041A3",
-							["aID"] = "2969",
+							["serial"] = "Creature-0-5563-1-22710-2970-0001C041A1",
+							["aID"] = "2970",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
@@ -187,40 +159,11 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504365,
-							["nome"] = "Wiry Swoop",
+							["end_time"] = 1715528299,
+							["nome"] = "Swoop",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Handrmandr"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -228,15 +171,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 122.001207,
-							["start_time"] = 1715504365,
+							["damage_taken"] = 133.007613,
+							["start_time"] = 1715528299,
 							["delay"] = 0,
-							["last_event"] = 1715504363,
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 113,
+					["combatId"] = 172,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -245,31 +188,31 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 11.00158,
-							["total_without_pet"] = 0.00158,
-							["total"] = 0.00158,
+							["totalover"] = 14.002854,
+							["total_without_pet"] = 0.002854,
+							["total"] = 0.002854,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.00158,
+							["totalabsorb"] = 0.002854,
 							["last_hps"] = 0,
 							["targets"] = {
 							},
 							["aID"] = "4465-048D3FC8",
 							["healing_from"] = {
 							},
-							["totalover_without_pet"] = 0.00158,
+							["totalover_without_pet"] = 0.002854,
 							["serial"] = "Player-4465-048D3FC8",
-							["healing_taken"] = 0.00158,
+							["healing_taken"] = 0.002854,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504365,
+							["end_time"] = 1715528299,
 							["targets_overheal"] = {
-								["Handrmandr"] = 11,
+								["Handrmandr"] = 14,
 							},
-							["start_time"] = 1715504364,
+							["start_time"] = 1715528298,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -278,7 +221,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Handrmandr"] = 11,
+											["Handrmandr"] = 14,
 										},
 										["n_max"] = 0,
 										["targets"] = {
@@ -287,7 +230,7 @@ _detalhes_database = {
 										["n_total"] = 0,
 										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 11,
+										["overheal"] = 14,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 59913,
@@ -303,78 +246,79 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504364,
-							["totaldenied"] = 0.00158,
+							["last_event"] = 1715528298,
+							["totaldenied"] = 0.002854,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 113,
+					["combatId"] = 172,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.001575,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.001575,
-							["alternatepower"] = 0.001575,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["received"] = 0.001575,
-							["aID"] = "4465-048D3FC8",
-							["resource_type"] = 9,
-							["last_event"] = 1715504363,
-							["totalover"] = 0.001575,
-							["total"] = 0.001575,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 113,
+					["combatId"] = 172,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["buff_uptime_spells"] = {
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
+									[31935] = {
+										["activedamt"] = 0,
+										["id"] = 31935,
 										["targets"] = {
 										},
-										["uptime"] = 3,
+										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
+								},
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[31935] = {
+										["id"] = 31935,
+										["targets"] = {
+											["Swoop"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["classe"] = "PALADIN",
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
 									[465] = {
 										["activedamt"] = 1,
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 3,
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 1,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -382,17 +326,24 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 6,
+							["buff_uptime"] = 2,
 							["grupo"] = true,
+							["debuff_uptime"] = 0,
 							["aID"] = "4465-048D3FC8",
+							["cc_done"] = 1.002806,
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504365,
+							["buff_uptime_targets"] = {
+							},
+							["cc_done_targets"] = {
+								["Swoop"] = 1,
+							},
+							["last_event"] = 1715528299,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 113,
+					["combatId"] = 172,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -400,7 +351,7 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["tempo_start"] = 1715504362,
+				["tempo_start"] = 1715528298,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -413,7 +364,7 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					122, -- [1]
+					133, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -440,34 +391,34 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
+						["Avenger's Shield"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:59:26",
+				["data_fim"] = "17:38:20",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Wiry Swoop",
+				["enemy"] = "Swoop",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153496.24,
-				["CombatEndedAt"] = 153496.24,
+				["TotalElapsedCombatTime"] = 177430.419,
+				["CombatEndedAt"] = 177430.419,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:59:23",
-				["end_time"] = 153496.24,
+				["data_inicio"] = "17:38:19",
+				["end_time"] = 177430.419,
 				["mapId"] = 1,
-				["combat_id"] = 113,
+				["combat_id"] = 172,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Wiry Swoop"] = 1,
+					["Swoop"] = 1,
 				},
-				["combat_counter"] = 148,
+				["combat_counter"] = 207,
 				["totals_grupo"] = {
-					122, -- [1]
+					133, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -496,47 +447,47 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 0.00158,
+							["Handrmandr"] = 0.002854,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 122.004245,
+							["Handrmandr"] = 133.005869,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153493.103,
+				["start_time"] = 177429.008,
 				["TimeData"] = {
 				},
-				["contra"] = "Wiry Swoop",
+				["contra"] = "Swoop",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 112,
+					["combatId"] = 171,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003311,
+							["totalabsorbed"] = 0.004136,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 165.003311,
+							["total_without_pet"] = 126.004136,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 165.003311,
+							["total"] = 126.004136,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Prairie Stalker"] = true,
+								["Adult Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Prairie Stalker"] = 165,
+								["Adult Plainstrider"] = 126,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -544,7 +495,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504324,
+							["end_time"] = 1715528273,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -553,17 +504,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 37,
 										["targets"] = {
-											["Prairie Stalker"] = 60,
+											["Adult Plainstrider"] = 37,
 										},
-										["n_total"] = 60,
-										["n_min"] = 30,
+										["n_total"] = 37,
+										["n_min"] = 37,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 60,
+										["counter"] = 1,
+										["total"] = 37,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -574,7 +524,556 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Adult Plainstrider"] = 13,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 13,
+										["c_max"] = 9,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 9,
+										["successful_casted"] = 0,
+										["c_total"] = 9,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Adult Plainstrider"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 45,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Adult Plainstrider"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 20187,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 37.65813986860714,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 5.004136,
+							["start_time"] = 1715528270,
+							["delay"] = 0,
+							["last_event"] = 1715528272,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007879,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 5.007879,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 5.007879,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2956-0017C041A8",
+							["aID"] = "2956",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 5,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528273,
+							["nome"] = "Adult Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Handrmandr"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 126.007879,
+							["start_time"] = 1715528270,
+							["delay"] = 0,
+							["last_event"] = 1715528270,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 171,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 10.004337,
+							["total_without_pet"] = 5.004337,
+							["total"] = 5.004337,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.004337,
+							["last_hps"] = 1.495617752544614,
+							["aID"] = "4465-048D3FC8",
+							["fight_component"] = true,
+							["targets"] = {
+								["Handrmandr"] = 5,
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.004337,
+							["healing_from"] = {
+								["Handrmandr"] = true,
+							},
+							["healing_taken"] = 5.004337,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528273,
+							["targets_overheal"] = {
+								["Handrmandr"] = 10,
+							},
+							["start_time"] = 1715528272,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 10,
+										},
+										["n_max"] = 5,
+										["targets"] = {
+											["Handrmandr"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 10,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528272,
+							["totaldenied"] = 0.004337,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 171,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.004529,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.004529,
+							["total"] = 22.004529,
+							["received"] = 22.004529,
+							["targets"] = {
+								["Handrmandr"] = 22,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.004529,
+							["fight_component"] = true,
+							["resource_type"] = 9,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 22,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 22,
+										},
+										["counter"] = 4,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1715528273,
+							["totalover"] = 0.004529,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 171,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["fight_component"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 12,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528273,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 171,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177428.808,
+				["tempo_start"] = 1715528270,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					131, -- [1]
+					5, -- [2]
+					{
+						0, -- [1]
+						[0] = 22,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Judgement"] = 1,
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:37:54",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Adult Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 3.345999999990454,
+				["CombatEndedAt"] = 177404.188,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:37:50",
+				["end_time"] = 177404.188,
+				["mapId"] = 1,
+				["combat_id"] = 171,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Adult Plainstrider"] = 1,
+				},
+				["boss_hp"] = 1,
+				["combat_counter"] = 206,
+				["totals_grupo"] = {
+					126, -- [1]
+					5, -- [2]
+					{
+						0, -- [1]
+						[0] = 22,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 5.004337,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 126.004136,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 177400.842,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 170,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008483,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 123.008483,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 123.008483,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Prairie Wolf"] = true,
+							},
+							["targets"] = {
+								["Prairie Wolf"] = 123,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528266,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Prairie Wolf"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -582,14 +1081,14 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Prairie Stalker"] = 9,
+											["Prairie Wolf"] = 9,
 										},
 										["n_total"] = 9,
-										["n_min"] = 3,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 2,
 										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = 25742,
@@ -602,34 +1101,6 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 42,
-										["targets"] = {
-											["Prairie Stalker"] = 76,
-										},
-										["n_total"] = 76,
-										["n_min"] = 34,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 76,
-										["c_max"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
 										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
@@ -638,15 +1109,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 31,
 										["targets"] = {
-											["Prairie Stalker"] = 20,
+											["Prairie Wolf"] = 31,
 										},
-										["n_total"] = 20,
-										["n_min"] = 20,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 20,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -662,45 +1133,73 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 52,
+										["targets"] = {
+											["Prairie Wolf"] = 52,
+										},
+										["n_total"] = 52,
+										["n_min"] = 52,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 52,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 19.31444586216355,
+							["last_dps"] = 40.51662812921358,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 35.003311,
-							["start_time"] = 1715504316,
+							["damage_taken"] = 5.008483,
+							["start_time"] = 1715528263,
 							["delay"] = 0,
-							["last_event"] = 1715504323,
+							["last_event"] = 1715528265,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007877,
+							["totalabsorbed"] = 0.007706,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 35.007877,
+							["total_without_pet"] = 5.007706,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 35.007877,
+							["total"] = 5.007706,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-00004084B0",
-							["aID"] = "2959",
+							["serial"] = "Creature-0-5563-1-22710-2958-0002C041A8",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 35,
+								["Handrmandr"] = 5,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504324,
-							["nome"] = "Prairie Stalker",
+							["end_time"] = 1715528266,
+							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -708,15 +1207,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 5,
 										["targets"] = {
-											["Handrmandr"] = 35,
+											["Handrmandr"] = 5,
 										},
-										["n_total"] = 35,
-										["n_min"] = 6,
+										["n_total"] = 5,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 35,
+										["counter"] = 1,
+										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -728,7 +1227,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -739,15 +1238,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 165.007877,
-							["start_time"] = 1715504317,
+							["damage_taken"] = 123.007706,
+							["start_time"] = 1715528265,
 							["delay"] = 0,
-							["last_event"] = 1715504323,
+							["last_event"] = 1715528265,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 112,
+					["combatId"] = 170,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -756,34 +1255,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.008799,
-							["total_without_pet"] = 10.008799,
-							["total"] = 10.008799,
+							["totalover"] = 9.004577,
+							["total_without_pet"] = 5.004577,
+							["total"] = 5.004577,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.008799,
-							["last_hps"] = 1.171578953532494,
+							["totalabsorb"] = 0.004577,
+							["last_hps"] = 1.648411396578359,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 10,
+								["Handrmandr"] = 5,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.008799,
+							["totalover_without_pet"] = 0.004577,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 10.008799,
+							["healing_taken"] = 5.004577,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504324,
+							["end_time"] = 1715528266,
 							["targets_overheal"] = {
+								["Handrmandr"] = 9,
 							},
-							["start_time"] = 1715504323,
+							["start_time"] = 1715528265,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -792,16 +1292,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 9,
 										},
 										["n_max"] = 5,
 										["targets"] = {
-											["Handrmandr"] = 10,
+											["Handrmandr"] = 5,
 										},
-										["n_total"] = 10,
-										["n_min"] = 5,
+										["n_total"] = 5,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
+										["overheal"] = 9,
+										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -816,49 +1317,59 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504323,
-							["totaldenied"] = 0.008799,
+							["last_event"] = 1715528265,
+							["totaldenied"] = 0.004577,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 112,
+					["combatId"] = 170,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 1.007614,
+							["resource"] = 0.00636,
 							["pets"] = {
 							},
 							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.007614,
-							["total"] = 0.007614,
-							["received"] = 0.007614,
+							["passiveover"] = 0.00636,
+							["total"] = 18.00636,
+							["received"] = 18.00636,
 							["targets"] = {
+								["Handrmandr"] = 18,
 							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.007614,
+							["alternatepower"] = 0.00636,
 							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 18,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 18,
+										},
+										["counter"] = 3,
+									},
 								},
 							},
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["last_event"] = 1715504323,
-							["totalover"] = 0.007614,
+							["last_event"] = 1715528266,
+							["totalover"] = 0.00636,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 112,
+					["combatId"] = 170,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -873,12 +1384,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[76691] = {
+										["activedamt"] = 0,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -889,7 +1422,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -897,17 +1430,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 16,
+							["buff_uptime"] = 9,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504324,
+							["last_event"] = 1715528266,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 112,
+					["combatId"] = 170,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -915,8 +1448,7 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153491.374,
-				["tempo_start"] = 1715504316,
+				["tempo_start"] = 1715528263,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -929,11 +1461,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					200, -- [1]
-					10, -- [2]
+					128, -- [1]
+					5, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 18,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -957,38 +1489,37 @@ _detalhes_database = {
 				["amountCasts"] = {
 					["Handrmandr"] = {
 						["Crusader Strike"] = 1,
-						["Judgement"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:58:45",
+				["data_fim"] = "17:37:47",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Prairie Wolf",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153455.789,
-				["CombatEndedAt"] = 153455.789,
+				["TotalElapsedCombatTime"] = 177397.307,
+				["CombatEndedAt"] = 177397.307,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:58:37",
-				["end_time"] = 153455.789,
+				["data_inicio"] = "17:37:44",
+				["end_time"] = 177397.307,
 				["mapId"] = 1,
-				["combat_id"] = 112,
+				["combat_id"] = 170,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Prairie Wolf"] = 1,
 				},
-				["combat_counter"] = 147,
+				["combat_counter"] = 205,
 				["totals_grupo"] = {
-					165, -- [1]
-					10, -- [2]
+					123, -- [1]
+					5, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 18,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -1013,47 +1544,47 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 10.008799,
+							["Handrmandr"] = 5.004577,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 165.003311,
+							["Handrmandr"] = 123.008483,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153447.246,
+				["start_time"] = 177394.271,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Stalker",
-			}, -- [2]
+				["contra"] = "Prairie Wolf",
+			}, -- [3]
 			{
 				{
-					["combatId"] = 111,
+					["combatId"] = 169,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007462,
+							["totalabsorbed"] = 0.007314,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 176.007462,
+							["total_without_pet"] = 125.007314,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 176.007462,
+							["total"] = 125.007314,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Prairie Wolf"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 176,
+								["Prairie Wolf"] = 125,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -1061,140 +1592,108 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504278,
+							["end_time"] = 1715528252,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Prairie Wolf"] = 36,
+										},
+										["n_total"] = 36,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Prairie Wolf"] = 18,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 18,
+										["c_max"] = 9,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 9,
+										["successful_casted"] = 0,
+										["c_total"] = 18,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Prairie Wolf"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 31,
 										["targets"] = {
-											["Flatland Cougar"] = 55,
-											["Prairie Stalker"] = 0,
+											["Prairie Wolf"] = 31,
 										},
-										["n_total"] = 55,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["EVADE"] = 1,
-										["total"] = 55,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 11,
-										},
-										["n_total"] = 5,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 11,
-										["c_max"] = 6,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 6,
-										["successful_casted"] = 0,
-										["c_total"] = 6,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 45,
-										["targets"] = {
-											["Flatland Cougar"] = 90,
-										},
-										["n_total"] = 90,
-										["n_min"] = 45,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 90,
-										["c_max"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20271] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Prairie Stalker"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["EVADE"] = 1,
-										["id"] = 20271,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Flatland Cougar"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -1214,226 +1713,210 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 23.30915931662596,
+							["last_dps"] = 42.20368467252521,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 24.007462,
-							["start_time"] = 1715504271,
+							["damage_taken"] = 4.007314,
+							["start_time"] = 1715528249,
 							["delay"] = 0,
-							["last_event"] = 1715504313,
+							["last_event"] = 1715528250,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002768,
+							["totalabsorbed"] = 0.003418,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 24.002768,
+							["total_without_pet"] = 4.003418,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 24.002768,
+							["total"] = 4.003418,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-000040700D",
-							["aID"] = "3035",
+							["serial"] = "Creature-0-5563-1-22710-2958-0002C041A7",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
+							["targets"] = {
+								["Handrmandr"] = 4,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528252,
+							["nome"] = "Prairie Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Handrmandr"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 125.003418,
+							["start_time"] = 1715528249,
+							["delay"] = 0,
+							["last_event"] = 1715528249,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 169,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 10.001874,
+							["total_without_pet"] = 4.001874,
+							["total"] = 4.001874,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.001874,
+							["last_hps"] = 1.351071573261522,
+							["aID"] = "4465-048D3FC8",
+							["fight_component"] = true,
+							["targets"] = {
+								["Handrmandr"] = 4,
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.001874,
+							["healing_from"] = {
+								["Handrmandr"] = true,
+							},
+							["healing_taken"] = 4.001874,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528252,
+							["targets_overheal"] = {
+								["Handrmandr"] = 10,
+							},
+							["start_time"] = 1715528250,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 10,
+										},
+										["n_max"] = 4,
+										["targets"] = {
+											["Handrmandr"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 10,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528250,
+							["totaldenied"] = 0.001874,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 169,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005653,
 							["targets"] = {
 								["Handrmandr"] = 24,
 							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["pets"] = {
 							},
-							["end_time"] = 1715504278,
-							["nome"] = "Flatland Cougar",
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.005653,
+							["fight_component"] = true,
+							["alternatepower"] = 0.005653,
+							["nome"] = "Handrmandr",
 							["spells"] = {
-								["tipo"] = 2,
+								["tipo"] = 7,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
+									[31930] = {
+										["total"] = 24,
+										["id"] = 31930,
+										["totalover"] = 0,
 										["targets"] = {
 											["Handrmandr"] = 24,
 										},
-										["n_total"] = 24,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 176.002768,
-							["start_time"] = 1715504272,
-							["delay"] = 0,
-							["last_event"] = 1715504276,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 111,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 62.007655,
-							["total_without_pet"] = 18.007655,
-							["total"] = 18.007655,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.007655,
-							["last_hps"] = 2.384803999468137,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 18,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.007655,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 18.007655,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715504278,
-							["targets_overheal"] = {
-								["Handrmandr"] = 62,
-							},
-							["start_time"] = 1715504272,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[439] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Handrmandr"] = 62,
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Handrmandr"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 8,
-										["counter"] = 1,
-										["overheal"] = 62,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 439,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
+										["counter"] = 5,
 									},
 								},
 							},
-							["custom"] = 0,
-							["last_event"] = 1715504277,
-							["totaldenied"] = 0.007655,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 111,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.00464,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.00464,
-							["total"] = 0.00464,
-							["received"] = 0.00464,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.00464,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715504316,
-							["totalover"] = 0.00464,
+							["received"] = 24.005653,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 1715528253,
+							["total"] = 24.005653,
+							["totalover"] = 0.005653,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 111,
+					["combatId"] = 169,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1448,12 +1931,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 7,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1464,525 +1969,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 14,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715504278,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 111,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 153444.602,
-				["tempo_start"] = 1715504271,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					214, -- [1]
-					18, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Healing Potion"] = 1,
-						["Crusader Strike"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:57:59",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 153409.595,
-				["CombatEndedAt"] = 153409.595,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:57:52",
-				["end_time"] = 153409.595,
-				["mapId"] = 1,
-				["combat_id"] = 111,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 146,
-				["totals_grupo"] = {
-					176, -- [1]
-					18, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 18.007655,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 176.007462,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 153402.044,
-				["TimeData"] = {
-				},
-				["contra"] = "Flatland Cougar",
-			}, -- [3]
-			{
-				{
-					["combatId"] = 110,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003379,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 170.003379,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 170.003379,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 170,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715504261,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Prairie Stalker"] = 57,
-										},
-										["n_total"] = 57,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 57,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Prairie Stalker"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Prairie Stalker"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Prairie Stalker"] = 85,
-										},
-										["n_total"] = 85,
-										["n_min"] = 42,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 85,
-										["c_max"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 27.40663856194807,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 18.003379,
-							["start_time"] = 1715504255,
-							["delay"] = 0,
-							["last_event"] = 1715504261,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005451,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 18.005451,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 18.005451,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-0000404815",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 18,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715504261,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Handrmandr"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 18,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 170.005451,
-							["start_time"] = 1715504256,
-							["delay"] = 0,
-							["last_event"] = 1715504261,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 110,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.0042,
-							["total_without_pet"] = 10.0042,
-							["total"] = 10.0042,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.0042,
-							["last_hps"] = 1.612800257937467,
-							["aID"] = "4465-048D3FC8",
-							["colocacao"] = 1,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["fight_component"] = true,
-							["totalover_without_pet"] = 0.0042,
-							["serial"] = "Player-4465-048D3FC8",
-							["healing_taken"] = 10.0042,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715504261,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715504261,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715504261,
-							["totaldenied"] = 0.0042,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 110,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.007036,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.007036,
-							["total"] = 0.007036,
-							["received"] = 0.007036,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.007036,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715504261,
-							["totalover"] = 0.007036,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 110,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 6,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1994,13 +1981,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504261,
+							["last_event"] = 1715528252,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 110,
+					["combatId"] = 169,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2008,8 +1995,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153401.514,
-				["tempo_start"] = 1715504255,
+				["CombatStartedAt"] = 177394.07,
+				["tempo_start"] = 1715528249,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -2022,11 +2009,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					188, -- [1]
-					10, -- [2]
+					129, -- [1]
+					4, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 24,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2049,38 +2036,38 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Handrmandr"] = {
-						["Crusader Strike"] = 2,
+						["Judgement"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:57:42",
+				["data_fim"] = "17:37:32",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Prairie Wolf",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153392.185,
-				["CombatEndedAt"] = 153392.185,
+				["TotalElapsedCombatTime"] = 177382.728,
+				["CombatEndedAt"] = 177382.728,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:57:35",
-				["end_time"] = 153392.185,
+				["data_inicio"] = "17:37:29",
+				["end_time"] = 177382.728,
 				["mapId"] = 1,
-				["combat_id"] = 110,
+				["combat_id"] = 169,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Prairie Wolf"] = 1,
 				},
-				["combat_counter"] = 145,
+				["combat_counter"] = 204,
 				["totals_grupo"] = {
-					170, -- [1]
-					10, -- [2]
+					125, -- [1]
+					4, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 24,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2105,47 +2092,46 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 10.0042,
+							["Handrmandr"] = 4.001874,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 170.003379,
+							["Handrmandr"] = 125.007314,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153385.982,
+				["start_time"] = 177379.766,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Stalker",
+				["contra"] = "Prairie Wolf",
 			}, -- [4]
 			{
 				{
-					["combatId"] = 109,
+					["combatId"] = 168,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002439,
+							["totalabsorbed"] = 0.007805,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 137.002439,
+							["total_without_pet"] = 122.007805,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 137.002439,
+							["total"] = 122.007805,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Prairie Stalker"] = true,
 							},
 							["targets"] = {
-								["Prairie Stalker"] = 137,
+								["Prairie Wolf"] = 122,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -2153,7 +2139,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504247,
+							["end_time"] = 1715528244,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -2162,17 +2148,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 36,
 										["targets"] = {
-											["Prairie Stalker"] = 56,
+											["Prairie Wolf"] = 36,
 										},
-										["n_total"] = 56,
-										["n_min"] = 26,
+										["n_total"] = 36,
+										["n_min"] = 36,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 56,
+										["counter"] = 1,
+										["total"] = 36,
 										["c_max"] = 0,
-										["DODGE"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2183,7 +2168,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -2191,15 +2176,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Prairie Stalker"] = 8,
+											["Prairie Wolf"] = 9,
 										},
-										["n_total"] = 8,
-										["n_min"] = 2,
+										["n_total"] = 9,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 8,
+										["counter"] = 2,
+										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -2211,7 +2196,35 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Prairie Wolf"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 20187,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -2219,15 +2232,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 33,
+										["n_max"] = 45,
 										["targets"] = {
-											["Prairie Stalker"] = 33,
+											["Prairie Wolf"] = 45,
 										},
-										["n_total"] = 33,
-										["n_min"] = 33,
+										["n_total"] = 45,
+										["n_min"] = 45,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 33,
+										["total"] = 45,
 										["c_max"] = 0,
 										["id"] = 35395,
 										["r_dmg"] = 0,
@@ -2243,102 +2256,74 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[20187] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Prairie Stalker"] = 40,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40,
-										["c_max"] = 40,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 40,
-										["successful_casted"] = 0,
-										["c_total"] = 40,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 29.27402542739412,
+							["last_dps"] = 40.13414638185559,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 10.002439,
-							["start_time"] = 1715504243,
+							["damage_taken"] = 0.007805,
+							["start_time"] = 1715528241,
 							["delay"] = 0,
-							["last_event"] = 1715504247,
+							["last_event"] = 1715528242,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007867,
+							["totalabsorbed"] = 0.005234,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 10.007867,
+							["total_without_pet"] = 0.005234,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 10.007867,
+							["total"] = 0.005234,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-00084041A8",
-							["aID"] = "2959",
+							["serial"] = "Creature-0-5563-1-22710-2958-0000C041AE",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 10,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504247,
-							["nome"] = "Prairie Stalker",
+							["end_time"] = 1715528244,
+							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
-										["b_amt"] = 1,
+										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 10,
+											["Handrmandr"] = 0,
 										},
-										["n_total"] = 10,
-										["n_min"] = 4,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 10,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 4,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
@@ -2348,15 +2333,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 137.007867,
-							["start_time"] = 1715504244,
+							["damage_taken"] = 122.005234,
+							["start_time"] = 1715528244,
 							["delay"] = 0,
-							["last_event"] = 1715504245,
+							["last_event"] = 1715528242,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 109,
+					["combatId"] = 168,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -2365,34 +2350,31 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002466,
-							["total_without_pet"] = 11.002466,
-							["total"] = 11.002466,
+							["totalover"] = 14.003118,
+							["total_without_pet"] = 0.003118,
+							["total"] = 0.003118,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.002466,
-							["last_hps"] = 2.350954273507782,
+							["totalabsorb"] = 0.003118,
+							["last_hps"] = 0,
 							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 11,
 							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.002466,
 							["healing_from"] = {
-								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 11.002466,
+							["totalover_without_pet"] = 0.003118,
+							["serial"] = "Player-4465-048D3FC8",
+							["healing_taken"] = 0.003118,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504247,
+							["end_time"] = 1715528244,
 							["targets_overheal"] = {
+								["Handrmandr"] = 14,
 							},
-							["start_time"] = 1715504247,
+							["start_time"] = 1715528242,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -2401,16 +2383,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 14,
 										},
-										["n_max"] = 6,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 11,
+											["Handrmandr"] = 0,
 										},
-										["n_total"] = 11,
-										["n_min"] = 5,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 11,
+										["overheal"] = 14,
+										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -2425,69 +2408,99 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504247,
-							["totaldenied"] = 0.002466,
+							["last_event"] = 1715528242,
+							["totaldenied"] = 0.003118,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 109,
+					["combatId"] = 168,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 1.001008,
+							["resource"] = 0.008998,
+							["targets"] = {
+								["Handrmandr"] = 22,
+							},
 							["pets"] = {
 							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.001008,
-							["total"] = 0.001008,
-							["received"] = 0.001008,
-							["targets"] = {
-							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.001008,
-							["fight_component"] = true,
-							["resource_type"] = 9,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.008998,
+							["alternatepower"] = 0.008998,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 22,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 22,
+										},
+										["counter"] = 4,
+									},
 								},
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715504244,
-							["totalover"] = 0.001008,
+							["received"] = 22.008998,
+							["aID"] = "4465-048D3FC8",
+							["resource_type"] = 9,
+							["last_event"] = 1715528249,
+							["totalover"] = 0.008998,
+							["total"] = 22.008998,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 109,
+					["combatId"] = 168,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
 							["pets"] = {
 							},
+							["serial"] = "Player-4465-048D3FC8",
 							["buff_uptime_targets"] = {
 							},
 							["classe"] = "PALADIN",
-							["fight_component"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 4,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2498,7 +2511,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 4,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2506,17 +2519,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 8,
+							["buff_uptime"] = 12,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504247,
+							["last_event"] = 1715528244,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 109,
+					["combatId"] = 168,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2524,8 +2537,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153385.745,
-				["tempo_start"] = 1715504243,
+				["CombatStartedAt"] = 177379.508,
+				["tempo_start"] = 1715528241,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -2538,11 +2551,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					147, -- [1]
-					11, -- [2]
+					122, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2570,30 +2583,337 @@ _detalhes_database = {
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:57:28",
+				["data_fim"] = "17:37:24",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Prairie Wolf",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153378.464,
-				["CombatEndedAt"] = 153378.464,
+				["TotalElapsedCombatTime"] = 177374.626,
+				["CombatEndedAt"] = 177374.626,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:57:23",
-				["end_time"] = 153378.464,
+				["data_inicio"] = "17:37:21",
+				["end_time"] = 177374.626,
 				["mapId"] = 1,
-				["combat_id"] = 109,
+				["combat_id"] = 168,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Prairie Wolf"] = 1,
 				},
-				["combat_counter"] = 144,
+				["combat_counter"] = 203,
 				["totals_grupo"] = {
-					137, -- [1]
-					11, -- [2]
+					122, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 22,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 0.003118,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 122.007805,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 177371.586,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Wolf",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 167,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003834,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 0.003834,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.003834,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Swoop"] = true,
+							},
+							["targets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528235,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 10.003834,
+							["start_time"] = 1715528235,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007073,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 10.007073,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 10.007073,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2970-000040D9E9",
+							["aID"] = "2970",
+							["fight_component"] = true,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Handrmandr"] = 10,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528235,
+							["nome"] = "Swoop",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Handrmandr"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007073,
+							["start_time"] = 1715528226,
+							["delay"] = 0,
+							["last_event"] = 1715528228,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 167,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 167,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 167,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 27,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528235,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 167,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177371.403,
+				["tempo_start"] = 1715528226,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					10, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["amountCasts"] = {
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:37:15",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Swoop",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 177365.749,
+				["CombatEndedAt"] = 177365.749,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:37:06",
+				["end_time"] = 177365.749,
+				["mapId"] = 1,
+				["combat_id"] = 167,
+				["boss_hp"] = 1,
+				["playing_solo"] = true,
+				["frags"] = {
+				},
+				["combat_counter"] = 202,
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2621,47 +2941,46 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 11.002466,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 137.002439,
+							["Handrmandr"] = 0.003834,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153373.784,
+				["start_time"] = 177356.448,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Stalker",
-			}, -- [5]
+				["contra"] = "Swoop",
+			}, -- [6]
 			{
 				{
-					["combatId"] = 108,
+					["combatId"] = 166,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004121,
+							["totalabsorbed"] = 0.004821,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 172.004121,
+							["total_without_pet"] = 135.004821,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 172.004121,
+							["total"] = 135.004821,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Prairie Stalker"] = true,
+								["Swoop"] = true,
 							},
 							["targets"] = {
-								["Prairie Stalker"] = 172,
+								["Prairie Wolf"] = 135,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -2669,7 +2988,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504213,
+							["end_time"] = 1715528214,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -2677,29 +2996,28 @@ _detalhes_database = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 26,
+										["g_amt"] = 0,
+										["n_max"] = 33,
 										["targets"] = {
-											["Prairie Stalker"] = 72,
+											["Prairie Wolf"] = 33,
 										},
-										["n_total"] = 49,
-										["n_min"] = 23,
-										["g_dmg"] = 23,
-										["counter"] = 4,
-										["total"] = 72,
+										["n_total"] = 33,
+										["n_min"] = 33,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 33,
 										["c_max"] = 0,
-										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -2707,45 +3025,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 4,
 										["targets"] = {
-											["Prairie Stalker"] = 11,
+											["Prairie Wolf"] = 4,
 										},
-										["n_total"] = 11,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Prairie Stalker"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 20,
+										["n_total"] = 4,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 20,
+										["total"] = 4,
 										["c_max"] = 0,
-										["id"] = 20187,
+										["id"] = 25742,
 										["r_dmg"] = 0,
 										["spellschool"] = 2,
 										["extra"] = {
@@ -2760,19 +3050,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 									[35395] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 38,
+										["n_max"] = 0,
 										["targets"] = {
-											["Prairie Stalker"] = 69,
+											["Prairie Wolf"] = 98,
 										},
-										["n_total"] = 69,
-										["n_min"] = 31,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 69,
-										["c_max"] = 0,
+										["counter"] = 1,
+										["total"] = 98,
+										["c_max"] = 98,
 										["id"] = 35395,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2780,10 +3070,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 98,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
+										["c_total"] = 98,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -2791,72 +3081,43 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 22.260142487343,
+							["last_dps"] = 132.8787608301517,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 32.004121,
-							["start_time"] = 1715504206,
+							["damage_taken"] = 4.004821,
+							["start_time"] = 1715528213,
 							["delay"] = 0,
-							["last_event"] = 1715504212,
+							["last_event"] = 1715528213,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003501,
+							["totalabsorbed"] = 0.006064,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 32.003501,
+							["total_without_pet"] = 0.006064,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 32.003501,
+							["total"] = 0.006064,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-00004083AD",
-							["aID"] = "2959",
+							["serial"] = "Creature-0-5563-1-22710-2958-000040E0F8",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 32,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504243,
-							["nome"] = "Prairie Stalker",
+							["end_time"] = 1715528214,
+							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Handrmandr"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -2864,15 +3125,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 172.003501,
-							["start_time"] = 1715504207,
+							["damage_taken"] = 135.006064,
+							["start_time"] = 1715528214,
 							["delay"] = 0,
-							["last_event"] = 1715504242,
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 108,
+					["combatId"] = 166,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -2881,34 +3142,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.001274,
-							["total_without_pet"] = 11.001274,
-							["total"] = 11.001274,
+							["totalover"] = 10.001703,
+							["total_without_pet"] = 5.001703,
+							["total"] = 5.001703,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.001274,
-							["last_hps"] = 1.42374453215747,
+							["totalabsorb"] = 0.001703,
+							["last_hps"] = 4.922936023747273,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 11,
+								["Handrmandr"] = 5,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.001274,
+							["totalover_without_pet"] = 0.001703,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 11.001274,
+							["healing_taken"] = 5.001703,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504213,
+							["end_time"] = 1715528214,
 							["targets_overheal"] = {
+								["Handrmandr"] = 10,
 							},
-							["start_time"] = 1715504212,
+							["start_time"] = 1715528213,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -2917,16 +3179,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 10,
 										},
-										["n_max"] = 6,
+										["n_max"] = 5,
 										["targets"] = {
-											["Handrmandr"] = 11,
+											["Handrmandr"] = 5,
 										},
-										["n_total"] = 11,
-										["n_min"] = 5,
+										["n_total"] = 5,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 11,
+										["overheal"] = 10,
+										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -2941,49 +3204,21 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504212,
-							["totaldenied"] = 0.001274,
+							["last_event"] = 1715528213,
+							["totaldenied"] = 0.001703,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 108,
+					["combatId"] = 166,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.007797,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.007797,
-							["total"] = 0.007797,
-							["received"] = 0.007797,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.007797,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715504212,
-							["totalover"] = 0.007797,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 108,
+					["combatId"] = 166,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3003,7 +3238,18 @@ _detalhes_database = {
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 7,
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 1,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3014,7 +3260,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 7,
+										["uptime"] = 1,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3022,17 +3268,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 14,
+							["buff_uptime"] = 3,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504213,
+							["last_event"] = 1715528214,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 108,
+					["combatId"] = 166,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3040,8 +3286,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153373.58,
-				["tempo_start"] = 1715504206,
+				["CombatStartedAt"] = 177354.444,
+				["tempo_start"] = 1715528213,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3054,8 +3300,8 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					204, -- [1]
-					11, -- [2]
+					139, -- [1]
+					5, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3081,10 +3327,531 @@ _detalhes_database = {
 						{
 							true, -- [1]
 							1, -- [2]
-							6, -- [3]
-							1715504243.384, -- [4]
-							267, -- [5]
-							"Prairie Stalker", -- [6]
+							4, -- [3]
+							1715528224.138, -- [4]
+							366, -- [5]
+							"Swoop", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:36:55",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 177345.134,
+				["CombatEndedAt"] = 177345.134,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:36:54",
+				["end_time"] = 177345.134,
+				["mapId"] = 1,
+				["combat_id"] = 166,
+				["boss_hp"] = 1,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Prairie Wolf"] = 1,
+				},
+				["combat_counter"] = 201,
+				["totals_grupo"] = {
+					135, -- [1]
+					5, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 5.001703,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 135.004821,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 177344.118,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Wolf",
+			}, -- [7]
+			{
+				{
+					["combatId"] = 165,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00797,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 148.00797,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 148.00797,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Prairie Wolf"] = true,
+							},
+							["targets"] = {
+								["Adult Plainstrider"] = 148,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528210,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[31935] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 96,
+										["targets"] = {
+											["Adult Plainstrider"] = 96,
+										},
+										["n_total"] = 96,
+										["n_min"] = 96,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 96,
+										["c_max"] = 0,
+										["id"] = 31935,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 52,
+										["targets"] = {
+											["Adult Plainstrider"] = 52,
+										},
+										["n_total"] = 52,
+										["n_min"] = 52,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 52,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 52.04218354408651,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 5.00797,
+							["start_time"] = 1715528207,
+							["delay"] = 0,
+							["last_event"] = 1715528209,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004647,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.004647,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.004647,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2956-0001C041A7",
+							["aID"] = "2956",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528210,
+							["nome"] = "Adult Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 148.004647,
+							["start_time"] = 1715528210,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 165,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 16.008298,
+							["total_without_pet"] = 0.008298,
+							["total"] = 0.008298,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.008298,
+							["last_hps"] = 0,
+							["aID"] = "4465-048D3FC8",
+							["targets"] = {
+							},
+							["healing_from"] = {
+							},
+							["totalover_without_pet"] = 0.008298,
+							["serial"] = "Player-4465-048D3FC8",
+							["healing_taken"] = 0.008298,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528210,
+							["targets_overheal"] = {
+								["Handrmandr"] = 16,
+							},
+							["start_time"] = 1715528209,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 16,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 16,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528209,
+							["totaldenied"] = 0.008298,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 165,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005045,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.005045,
+							["alternatepower"] = 0.005045,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["received"] = 0.005045,
+							["aID"] = "4465-048D3FC8",
+							["resource_type"] = 9,
+							["last_event"] = 1715528213,
+							["totalover"] = 0.005045,
+							["total"] = 0.005045,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 165,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[31935] = {
+										["activedamt"] = -1,
+										["id"] = 31935,
+										["targets"] = {
+										},
+										["actived_at"] = 1715528209,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 6,
+							["debuff_uptime"] = 0,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528210,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 165,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177343.918,
+				["tempo_start"] = 1715528207,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					153, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Handrmandr"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							5, -- [3]
+							1715528213.612, -- [4]
+							366, -- [5]
+							"Prairie Wolf", -- [6]
 							nil, -- [7]
 							1, -- [8]
 							false, -- [9]
@@ -3160,35 +3927,36 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Handrmandr"] = {
-						["Crusader Strike"] = 2,
+						["Crusader Strike"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:56:54",
+				["data_fim"] = "17:36:50",
+				["pvp"] = true,
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Adult Plainstrider",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153344.461,
-				["CombatEndedAt"] = 153344.461,
+				["TotalElapsedCombatTime"] = 177340.689,
+				["CombatEndedAt"] = 177340.689,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:56:46",
-				["end_time"] = 153344.461,
+				["data_inicio"] = "17:36:47",
+				["end_time"] = 177340.689,
 				["mapId"] = 1,
-				["combat_id"] = 108,
+				["combat_id"] = 165,
 				["boss_hp"] = 1,
-				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Adult Plainstrider"] = 1,
 				},
-				["combat_counter"] = 143,
+				["playing_solo"] = true,
+				["combat_counter"] = 200,
 				["totals_grupo"] = {
-					172, -- [1]
-					11, -- [2]
+					148, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3216,47 +3984,46 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 11.001274,
+							["Handrmandr"] = 0.008298,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 172.004121,
+							["Handrmandr"] = 148.00797,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 153336.734,
+				["start_time"] = 177337.845,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Stalker",
-			}, -- [6]
+				["spells_cast_timeline"] = {
+				},
+			}, -- [8]
 			{
 				{
-					["combatId"] = 107,
+					["combatId"] = 164,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00464,
+							["totalabsorbed"] = 0.008033,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 330.00464,
+							["total_without_pet"] = 122.008033,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 330.00464,
+							["total"] = 122.008033,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Prairie Wolf"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 330,
+								["Prairie Wolf"] = 122,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -3264,25 +4031,25 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504191,
+							["end_time"] = 1715528194,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
+										["c_amt"] = 0,
+										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["n_max"] = 30,
 										["targets"] = {
-											["Flatland Cougar"] = 179,
+											["Prairie Wolf"] = 30,
 										},
-										["n_total"] = 125,
-										["n_min"] = 31,
+										["n_total"] = 30,
+										["n_min"] = 30,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 179,
-										["c_max"] = 54,
+										["counter"] = 1,
+										["total"] = 30,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -3290,27 +4057,27 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 54,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 54,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 30,
 										["r_amt"] = 0,
 									}, -- [1]
 									[25742] = {
-										["c_amt"] = 2,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2,
+										["n_max"] = 5,
 										["targets"] = {
-											["Flatland Cougar"] = 16,
+											["Prairie Wolf"] = 5,
 										},
-										["n_total"] = 6,
-										["n_min"] = 2,
+										["n_total"] = 5,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 16,
-										["c_max"] = 5,
+										["counter"] = 1,
+										["total"] = 5,
+										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
 										["spellschool"] = 2,
@@ -3318,10 +4085,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 5,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 10,
-										["n_amt"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3329,15 +4096,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 31,
 										["targets"] = {
-											["Flatland Cougar"] = 60,
+											["Prairie Wolf"] = 31,
 										},
-										["n_total"] = 60,
-										["n_min"] = 20,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 60,
+										["counter"] = 1,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -3349,7 +4116,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3357,15 +4124,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 41,
+										["n_max"] = 56,
 										["targets"] = {
-											["Flatland Cougar"] = 75,
+											["Prairie Wolf"] = 56,
 										},
-										["n_total"] = 75,
-										["n_min"] = 34,
+										["n_total"] = 56,
+										["n_min"] = 56,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 75,
+										["counter"] = 1,
+										["total"] = 56,
 										["c_max"] = 0,
 										["id"] = 35395,
 										["r_dmg"] = 0,
@@ -3377,7 +4144,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3385,41 +4152,41 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 16.5060091031963,
+							["last_dps"] = 52.02901194027268,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 63.00464,
-							["start_time"] = 1715504171,
+							["damage_taken"] = 3.008033,
+							["start_time"] = 1715528192,
 							["delay"] = 0,
-							["last_event"] = 1715504190,
+							["last_event"] = 1715528193,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001435,
+							["totalabsorbed"] = 0.005408,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 63.001435,
+							["total_without_pet"] = 3.005408,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 63.001435,
+							["total"] = 3.005408,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-00034041A4",
-							["aID"] = "3035",
+							["serial"] = "Creature-0-5563-1-22710-2958-000040E0D4",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 63,
+								["Handrmandr"] = 3,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504191,
-							["nome"] = "Flatland Cougar",
+							["end_time"] = 1715528194,
+							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -3427,15 +4194,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 3,
 										["targets"] = {
-											["Handrmandr"] = 63,
+											["Handrmandr"] = 3,
 										},
-										["n_total"] = 63,
-										["n_min"] = 6,
+										["n_total"] = 3,
+										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 63,
+										["counter"] = 1,
+										["total"] = 3,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3447,8 +4214,8 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 6,
+										["n_amt"] = 1,
+										["b_dmg"] = 3,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
@@ -3458,15 +4225,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 330.001435,
-							["start_time"] = 1715504173,
+							["damage_taken"] = 122.005408,
+							["start_time"] = 1715528193,
 							["delay"] = 0,
-							["last_event"] = 1715504190,
+							["last_event"] = 1715528193,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 107,
+					["combatId"] = 164,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -3475,34 +4242,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002275,
-							["total_without_pet"] = 20.002275,
-							["total"] = 20.002275,
+							["totalover"] = 13.003009,
+							["total_without_pet"] = 3.003009,
+							["total"] = 3.003009,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.002275,
-							["last_hps"] = 1.000463912369947,
+							["totalabsorb"] = 0.003009,
+							["last_hps"] = 1.280600852877829,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 20,
+								["Handrmandr"] = 3,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.002275,
+							["totalover_without_pet"] = 0.003009,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 20.002275,
+							["healing_taken"] = 3.003009,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504191,
+							["end_time"] = 1715528194,
 							["targets_overheal"] = {
+								["Handrmandr"] = 13,
 							},
-							["start_time"] = 1715504186,
+							["start_time"] = 1715528193,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -3511,16 +4279,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 13,
 										},
-										["n_max"] = 5,
+										["n_max"] = 3,
 										["targets"] = {
-											["Handrmandr"] = 20,
+											["Handrmandr"] = 3,
 										},
-										["n_total"] = 20,
-										["n_min"] = 5,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 20,
+										["n_total"] = 3,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 13,
+										["total"] = 3,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -3529,55 +4298,65 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504190,
-							["totaldenied"] = 0.002275,
+							["last_event"] = 1715528193,
+							["totaldenied"] = 0.003009,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 107,
+					["combatId"] = 164,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 2.008394,
+							["resource"] = 0.008659,
 							["pets"] = {
 							},
 							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.008394,
-							["total"] = 0.008394,
-							["received"] = 0.008394,
+							["passiveover"] = 0.008659,
+							["total"] = 12.008659,
+							["received"] = 12.008659,
 							["targets"] = {
+								["Handrmandr"] = 12,
 							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.008394,
+							["alternatepower"] = 0.008659,
 							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 12,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 12,
+										},
+										["counter"] = 3,
+									},
 								},
 							},
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["last_event"] = 1715504190,
-							["totalover"] = 0.008394,
+							["last_event"] = 1715528194,
+							["totalover"] = 0.008659,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 107,
+					["combatId"] = 164,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3592,12 +4371,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 20,
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3608,7 +4409,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 20,
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3616,17 +4417,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 40,
+							["buff_uptime"] = 8,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504191,
+							["last_event"] = 1715528194,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 107,
+					["combatId"] = 164,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3634,8 +4435,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153336.373,
-				["tempo_start"] = 1715504171,
+				["CombatStartedAt"] = 177336.93,
+				["tempo_start"] = 1715528192,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3648,11 +4449,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					393, -- [1]
-					20, -- [2]
+					125, -- [1]
+					3, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 12,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3675,39 +4476,38 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Handrmandr"] = {
-						["Crusader Strike"] = 3,
-						["Judgement"] = 2,
+						["Crusader Strike"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:56:32",
+				["data_fim"] = "17:36:34",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Cougar",
+				["enemy"] = "Prairie Wolf",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153322.234,
-				["CombatEndedAt"] = 153322.234,
+				["TotalElapsedCombatTime"] = 177324.916,
+				["CombatEndedAt"] = 177324.916,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:56:12",
-				["end_time"] = 153322.234,
+				["data_inicio"] = "17:36:32",
+				["end_time"] = 177324.916,
 				["mapId"] = 1,
-				["combat_id"] = 107,
+				["combat_id"] = 164,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Flatland Cougar"] = 2,
+					["Prairie Wolf"] = 1,
 				},
-				["combat_counter"] = 142,
+				["combat_counter"] = 199,
 				["totals_grupo"] = {
-					330, -- [1]
-					20, -- [2]
+					122, -- [1]
+					3, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 12,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3732,47 +4532,49 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 20.002275,
+							["Handrmandr"] = 3.003009,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 330.00464,
+							["Handrmandr"] = 122.008033,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153302.241,
+				["start_time"] = 177322.571,
 				["TimeData"] = {
 				},
-				["contra"] = "Flatland Cougar",
-			}, -- [7]
+				["contra"] = "Prairie Wolf",
+			}, -- [9]
 			{
 				{
-					["combatId"] = 106,
+					["combatId"] = 163,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006221,
+							["totalabsorbed"] = 0.002548,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 155.006221,
+							["total_without_pet"] = 273.002548,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 155.006221,
+							["total"] = 273.002548,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Adult Plainstrider"] = true,
+								["Prairie Wolf"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 155,
+								["Adult Plainstrider"] = 146,
+								["Prairie Wolf"] = 127,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -3780,26 +4582,26 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504160,
+							["end_time"] = 1715528183,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
+										["c_amt"] = 0,
+										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 31,
+										["n_max"] = 35,
 										["targets"] = {
-											["Flatland Cougar"] = 84,
+											["Adult Plainstrider"] = 54,
+											["Prairie Wolf"] = 35,
 										},
-										["n_total"] = 31,
-										["n_min"] = 31,
+										["n_total"] = 89,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 84,
-										["c_max"] = 53,
-										["MISS"] = 1,
+										["total"] = 89,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -3807,10 +4609,647 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 53,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 53,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 22,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Adult Plainstrider"] = 9,
+											["Prairie Wolf"] = 5,
+										},
+										["n_total"] = 14,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Adult Plainstrider"] = 32,
+											["Prairie Wolf"] = 31,
+										},
+										["n_total"] = 63,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = 20187,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 56,
+										["targets"] = {
+											["Adult Plainstrider"] = 51,
+											["Prairie Wolf"] = 56,
+										},
+										["n_total"] = 107,
+										["n_min"] = 51,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 107,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 28.06646941499136,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 19.002548,
+							["start_time"] = 1715528173,
+							["delay"] = 0,
+							["last_event"] = 1715528182,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008329,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 14.008329,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 14.008329,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2956-0010C041A8",
+							["aID"] = "2956",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 14,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528183,
+							["nome"] = "Adult Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Handrmandr"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 146.008329,
+							["start_time"] = 1715528178,
+							["delay"] = 0,
+							["last_event"] = 1715528180,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003631,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 5.003631,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 5.003631,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2958-000040E13C",
+							["aID"] = "2958",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 5,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528183,
+							["nome"] = "Prairie Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Handrmandr"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
 										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 127.003631,
+							["start_time"] = 1715528174,
+							["delay"] = 0,
+							["last_event"] = 1715528174,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 163,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 12.006613,
+							["total_without_pet"] = 19.006613,
+							["total"] = 19.006613,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.006613,
+							["last_hps"] = 1.954005654361428,
+							["aID"] = "4465-048D3FC8",
+							["fight_component"] = true,
+							["targets"] = {
+								["Handrmandr"] = 19,
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.006613,
+							["healing_from"] = {
+								["Handrmandr"] = true,
+							},
+							["healing_taken"] = 19.006613,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528183,
+							["targets_overheal"] = {
+								["Handrmandr"] = 12,
+							},
+							["start_time"] = 1715528175,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 12,
+										},
+										["n_max"] = 8,
+										["targets"] = {
+											["Handrmandr"] = 19,
+										},
+										["n_total"] = 19,
+										["n_min"] = 6,
+										["counter"] = 4,
+										["overheal"] = 12,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528182,
+							["totaldenied"] = 0.006613,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 163,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.002304,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.002304,
+							["total"] = 47.002304,
+							["received"] = 47.002304,
+							["targets"] = {
+								["Handrmandr"] = 47,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.002304,
+							["fight_component"] = true,
+							["resource_type"] = 9,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 47,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 47,
+										},
+										["counter"] = 9,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1715528183,
+							["totalover"] = 0.002304,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 163,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["fight_component"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[76691] = {
+										["activedamt"] = 0,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 30,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528183,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-1-22710-2956-0010C041A8",
+							["fight_component"] = true,
+							["aID"] = "2956",
+							["nome"] = "Adult Plainstrider",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 163,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177321.674,
+				["tempo_start"] = 1715528173,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					292, -- [1]
+					19, -- [2]
+					{
+						0, -- [1]
+						[0] = 47,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Judgement"] = 1,
+						["Crusader Strike"] = 2,
+					},
+					["Adult Plainstrider"] = {
+						["Sprint"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:36:23",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Adult Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 177313.599,
+				["CombatEndedAt"] = 177313.599,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:36:13",
+				["end_time"] = 177313.599,
+				["mapId"] = 1,
+				["combat_id"] = 163,
+				["boss_hp"] = 1,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Adult Plainstrider"] = 1,
+					["Prairie Wolf"] = 1,
+				},
+				["combat_counter"] = 198,
+				["totals_grupo"] = {
+					273, -- [1]
+					19, -- [2]
+					{
+						0, -- [1]
+						[0] = 47,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 19.006613,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 273.002548,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 177303.872,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Wolf",
+			}, -- [10]
+			{
+				{
+					["combatId"] = 162,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007132,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 156.007132,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 156.007132,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Agitated Earth Spirit"] = 156,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528144,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Agitated Earth Spirit"] = 70,
+										},
+										["n_total"] = 70,
+										["n_min"] = 33,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 70,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -3818,15 +5257,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Flatland Cougar"] = 6,
+											["Agitated Earth Spirit"] = 10,
 										},
-										["n_total"] = 6,
-										["n_min"] = 3,
+										["n_total"] = 10,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 6,
+										["total"] = 10,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -3846,15 +5285,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 31,
 										["targets"] = {
-											["Flatland Cougar"] = 20,
+											["Agitated Earth Spirit"] = 31,
 										},
-										["n_total"] = 20,
-										["n_min"] = 20,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 20,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -3876,7 +5315,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 45,
 										["targets"] = {
-											["Flatland Cougar"] = 45,
+											["Agitated Earth Spirit"] = 45,
 										},
 										["n_total"] = 45,
 										["n_min"] = 45,
@@ -3902,41 +5341,40 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 24.64327837834645,
+							["last_dps"] = 53.40880931184118,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 9.006221,
-							["start_time"] = 1715504154,
+							["damage_taken"] = 0.007132,
+							["start_time"] = 1715528141,
 							["delay"] = 0,
-							["last_event"] = 1715504160,
+							["last_event"] = 1715528143,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006082,
+							["totalabsorbed"] = 0.002872,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 9.006082,
+							["total_without_pet"] = 0.002872,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 9.006082,
+							["total"] = 0.002872,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-0004C041A7",
-							["aID"] = "3035",
+							["serial"] = "Creature-0-5563-1-22710-36845-000040E147",
+							["aID"] = "36845",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 9,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504160,
-							["nome"] = "Flatland Cougar",
+							["end_time"] = 1715528144,
+							["nome"] = "Agitated Earth Spirit",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -3944,28 +5382,28 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 9,
+											["Handrmandr"] = 0,
 										},
-										["n_total"] = 9,
-										["n_min"] = 9,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 9,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
-										["DODGE"] = 2,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -3976,15 +5414,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 155.006082,
-							["start_time"] = 1715504158,
+							["damage_taken"] = 156.002872,
+							["start_time"] = 1715528144,
 							["delay"] = 0,
-							["last_event"] = 1715504160,
+							["last_event"] = 1715528141,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 106,
+					["combatId"] = 162,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -3993,35 +5431,31 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 2.006459,
-							["total_without_pet"] = 9.006459,
-							["total"] = 9.006459,
+							["totalover"] = 15.004999,
+							["total_without_pet"] = 0.004999,
+							["total"] = 0.004999,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.006459,
-							["last_hps"] = 1.431869475355855,
+							["totalabsorb"] = 0.004999,
+							["last_hps"] = 0,
 							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 9,
 							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.006459,
 							["healing_from"] = {
-								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 9.006459,
+							["totalover_without_pet"] = 0.004999,
+							["serial"] = "Player-4465-048D3FC8",
+							["healing_taken"] = 0.004999,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504160,
+							["end_time"] = 1715528144,
 							["targets_overheal"] = {
-								["Handrmandr"] = 2,
+								["Handrmandr"] = 15,
 							},
-							["start_time"] = 1715504160,
+							["start_time"] = 1715528143,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -4030,17 +5464,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Handrmandr"] = 2,
+											["Handrmandr"] = 15,
 										},
-										["n_max"] = 5,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 9,
+											["Handrmandr"] = 0,
 										},
-										["n_total"] = 9,
-										["n_min"] = 4,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 2,
-										["total"] = 9,
+										["overheal"] = 15,
+										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -4055,69 +5489,99 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504160,
-							["totaldenied"] = 0.006459,
+							["last_event"] = 1715528143,
+							["totaldenied"] = 0.004999,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 106,
+					["combatId"] = 162,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 1.008541,
+							["resource"] = 1.005626,
+							["targets"] = {
+								["Handrmandr"] = 22,
+							},
 							["pets"] = {
 							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.008541,
-							["total"] = 0.008541,
-							["received"] = 0.008541,
-							["targets"] = {
-							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.008541,
-							["fight_component"] = true,
-							["resource_type"] = 9,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.005626,
+							["alternatepower"] = 0.005626,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 22,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 22,
+										},
+										["counter"] = 4,
+									},
 								},
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715504155,
-							["totalover"] = 0.008541,
+							["received"] = 22.005626,
+							["aID"] = "4465-048D3FC8",
+							["resource_type"] = 9,
+							["last_event"] = 1715528145,
+							["totalover"] = 0.005626,
+							["total"] = 22.005626,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 106,
+					["combatId"] = 162,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
 							["pets"] = {
 							},
+							["serial"] = "Player-4465-048D3FC8",
 							["buff_uptime_targets"] = {
 							},
 							["classe"] = "PALADIN",
-							["fight_component"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 6,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4128,7 +5592,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 6,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4140,13 +5604,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504160,
+							["last_event"] = 1715528144,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 106,
+					["combatId"] = 162,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4154,8 +5618,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153302.006,
-				["tempo_start"] = 1715504154,
+				["CombatStartedAt"] = 177299.008,
+				["tempo_start"] = 1715528141,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -4168,11 +5632,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					164, -- [1]
-					9, -- [2]
+					156, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -4200,33 +5664,33 @@ _detalhes_database = {
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:56:01",
+				["data_fim"] = "17:35:44",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Cougar",
+				["enemy"] = "Agitated Earth Spirit",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153291.072,
-				["CombatEndedAt"] = 153291.072,
+				["TotalElapsedCombatTime"] = 177274.75,
+				["CombatEndedAt"] = 177274.75,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:55:54",
-				["end_time"] = 153291.072,
+				["data_inicio"] = "17:35:41",
+				["end_time"] = 177274.75,
 				["mapId"] = 1,
-				["combat_id"] = 106,
+				["combat_id"] = 162,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Flatland Cougar"] = 1,
+					["Agitated Earth Spirit"] = 1,
 				},
-				["combat_counter"] = 141,
+				["combat_counter"] = 197,
 				["totals_grupo"] = {
-					155, -- [1]
-					9, -- [2]
+					156, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -4251,47 +5715,46 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 9.006459,
+							["Handrmandr"] = 0.004999,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 155.006221,
+							["Handrmandr"] = 156.007132,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153284.782,
+				["start_time"] = 177271.829,
 				["TimeData"] = {
 				},
-				["contra"] = "Flatland Cougar",
-			}, -- [8]
+				["contra"] = "Agitated Earth Spirit",
+			}, -- [11]
 			{
 				{
-					["combatId"] = 105,
+					["combatId"] = 161,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002165,
+							["totalabsorbed"] = 0.001504,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 123.002165,
+							["total_without_pet"] = 128.001504,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 123.002165,
+							["total"] = 128.001504,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Prairie Wolf"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf"] = 123,
+								["Agitated Earth Spirit"] = 128,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -4299,7 +5762,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504100,
+							["end_time"] = 1715528137,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -4308,15 +5771,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 38,
 										["targets"] = {
-											["Prairie Wolf"] = 57,
+											["Agitated Earth Spirit"] = 72,
 										},
-										["n_total"] = 57,
-										["n_min"] = 28,
+										["n_total"] = 72,
+										["n_min"] = 34,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 57,
+										["total"] = 72,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -4336,15 +5799,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Prairie Wolf"] = 6,
+											["Agitated Earth Spirit"] = 9,
 										},
-										["n_total"] = 6,
-										["n_min"] = 3,
+										["n_total"] = 9,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 6,
+										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -4360,47 +5823,19 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Prairie Wolf"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[35395] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 40,
+										["n_max"] = 47,
 										["targets"] = {
-											["Prairie Wolf"] = 40,
+											["Agitated Earth Spirit"] = 47,
 										},
-										["n_total"] = 40,
-										["n_min"] = 40,
+										["n_total"] = 47,
+										["n_min"] = 47,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 40,
+										["total"] = 47,
 										["c_max"] = 0,
 										["id"] = 35395,
 										["r_dmg"] = 0,
@@ -4420,70 +5855,70 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 38.02230757323789,
+							["last_dps"] = 61.15695365523111,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 7.002165,
-							["start_time"] = 1715504097,
+							["damage_taken"] = 0.001504,
+							["start_time"] = 1715528135,
 							["delay"] = 0,
-							["last_event"] = 1715504099,
+							["last_event"] = 1715528136,
 						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004867,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003047,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 7.004867,
+							["total_without_pet"] = 0.003047,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 7.004867,
+							["total"] = 0.003047,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2958-0000404820",
-							["aID"] = "2958",
+							["serial"] = "Creature-0-5563-1-22710-36845-000040E08F",
+							["aID"] = "36845",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 7,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715504100,
-							["nome"] = "Prairie Wolf",
+							["end_time"] = 1715528137,
+							["nome"] = "Agitated Earth Spirit",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
-										["b_amt"] = 1,
+										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 7,
+											["Handrmandr"] = 0,
 										},
-										["n_total"] = 7,
-										["n_min"] = 3,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 7,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 3,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
@@ -4493,15 +5928,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 123.004867,
-							["start_time"] = 1715504097,
+							["damage_taken"] = 128.003047,
+							["start_time"] = 1715528137,
 							["delay"] = 0,
-							["last_event"] = 1715504099,
+							["last_event"] = 1715528136,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 105,
+					["combatId"] = 161,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -4510,35 +5945,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 4.00562,
-							["total_without_pet"] = 7.00562,
-							["total"] = 7.00562,
+							["totalover"] = 10.00778,
+							["total_without_pet"] = 6.00778,
+							["total"] = 6.00778,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.00562,
-							["last_hps"] = 2.16557032456483,
+							["totalabsorb"] = 0.00778,
+							["last_hps"] = 2.870415671294178,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 7,
+								["Handrmandr"] = 6,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.00562,
+							["totalover_without_pet"] = 0.00778,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 7.00562,
+							["healing_taken"] = 6.00778,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715504100,
+							["end_time"] = 1715528137,
 							["targets_overheal"] = {
-								["Handrmandr"] = 4,
+								["Handrmandr"] = 10,
 							},
-							["start_time"] = 1715504099,
+							["start_time"] = 1715528136,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -4547,17 +5982,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Handrmandr"] = 4,
+											["Handrmandr"] = 10,
 										},
 										["n_max"] = 6,
 										["targets"] = {
-											["Handrmandr"] = 7,
+											["Handrmandr"] = 6,
 										},
-										["n_total"] = 7,
-										["n_min"] = 1,
+										["n_total"] = 6,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 4,
-										["total"] = 7,
+										["overheal"] = 10,
+										["total"] = 6,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -4572,30 +6007,30 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715504099,
-							["totaldenied"] = 0.00562,
+							["last_event"] = 1715528136,
+							["totaldenied"] = 0.00778,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 105,
+					["combatId"] = 161,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 1.002705,
+							["resource"] = 1.007215,
 							["pets"] = {
 							},
 							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.002705,
-							["total"] = 0.002705,
-							["received"] = 0.002705,
+							["passiveover"] = 0.007215,
+							["total"] = 0.007215,
+							["received"] = 0.007215,
 							["targets"] = {
 							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.002705,
+							["alternatepower"] = 0.007215,
 							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Handrmandr",
@@ -4606,19 +6041,19 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["last_event"] = 1715504099,
-							["totalover"] = 0.002705,
+							["last_event"] = 1715528135,
+							["totalover"] = 0.007215,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 105,
+					["combatId"] = 161,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
+							["flag_original"] = 1297,
 							["serial"] = "Player-4465-048D3FC8",
 							["pets"] = {
 							},
@@ -4634,7 +6069,18 @@ _detalhes_database = {
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 3,
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4645,7 +6091,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 3,
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4657,13 +6103,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715504100,
+							["last_event"] = 1715528137,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 105,
+					["combatId"] = 161,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4671,8 +6117,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 153284.545,
-				["tempo_start"] = 1715504097,
+				["CombatStartedAt"] = 177271.51,
+				["tempo_start"] = 1715528135,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -4685,8 +6131,8 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					130, -- [1]
-					7, -- [2]
+					128, -- [1]
+					6, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4713,35 +6159,34 @@ _detalhes_database = {
 				["amountCasts"] = {
 					["Handrmandr"] = {
 						["Crusader Strike"] = 1,
-						["Judgement"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:55:01",
+				["data_fim"] = "17:35:37",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Wolf",
+				["enemy"] = "Agitated Earth Spirit",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 153231.149,
-				["CombatEndedAt"] = 153231.149,
+				["TotalElapsedCombatTime"] = 177267.856,
+				["CombatEndedAt"] = 177267.856,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:54:57",
-				["end_time"] = 153231.149,
+				["data_inicio"] = "17:35:35",
+				["end_time"] = 177267.856,
 				["mapId"] = 1,
-				["combat_id"] = 105,
+				["combat_id"] = 161,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Wolf"] = 1,
+					["Agitated Earth Spirit"] = 1,
 				},
-				["combat_counter"] = 140,
+				["combat_counter"] = 196,
 				["totals_grupo"] = {
-					123, -- [1]
-					7, -- [2]
+					128, -- [1]
+					6, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4769,47 +6214,47 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 7.00562,
+							["Handrmandr"] = 6.00778,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 123.002165,
+							["Handrmandr"] = 128.001504,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 153227.914,
+				["start_time"] = 177265.763,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Wolf",
-			}, -- [9]
+				["contra"] = "Agitated Earth Spirit",
+			}, -- [12]
 			{
 				{
-					["combatId"] = 104,
+					["combatId"] = 160,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006047,
+							["totalabsorbed"] = 0.004505,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 131.006047,
+							["total_without_pet"] = 270.004505,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 131.006047,
+							["total"] = 270.004505,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Grimtotem Straggler"] = true,
+								["Agitated Earth Spirit"] = true,
 							},
 							["targets"] = {
-								["Grimtotem Straggler"] = 131,
+								["Agitated Earth Spirit"] = 270,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -4817,25 +6262,25 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503826,
+							["end_time"] = 1715528103,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31,
+										["n_max"] = 43,
 										["targets"] = {
-											["Grimtotem Straggler"] = 61,
+											["Agitated Earth Spirit"] = 172,
 										},
-										["n_total"] = 61,
-										["n_min"] = 30,
+										["n_total"] = 111,
+										["n_min"] = 34,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 61,
-										["c_max"] = 0,
+										["counter"] = 4,
+										["total"] = 172,
+										["c_max"] = 61,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -4843,10 +6288,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 61,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
+										["c_total"] = 61,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -4854,15 +6299,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Grimtotem Straggler"] = 6,
+											["Agitated Earth Spirit"] = 14,
 										},
-										["n_total"] = 6,
-										["n_min"] = 3,
+										["n_total"] = 14,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 6,
+										["counter"] = 3,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -4874,7 +6319,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -4882,15 +6327,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 31,
 										["targets"] = {
-											["Grimtotem Straggler"] = 18,
+											["Agitated Earth Spirit"] = 31,
 										},
-										["n_total"] = 18,
-										["n_min"] = 18,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 18,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -4910,9 +6355,611 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Agitated Earth Spirit"] = 53,
+										},
+										["n_total"] = 53,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 34.3823385967024,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 27.004505,
+							["start_time"] = 1715528095,
+							["delay"] = 0,
+							["last_event"] = 1715528102,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007202,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 27.007202,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 27.007202,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-36845-000040E094",
+							["aID"] = "36845",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 27,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528135,
+							["nome"] = "Agitated Earth Spirit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Handrmandr"] = 27,
+										},
+										["n_total"] = 27,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["a_amt"] = 0,
+										["total"] = 27,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 4,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 270.007202,
+							["start_time"] = 1715528095,
+							["delay"] = 0,
+							["last_event"] = 1715528134,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 160,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 8.001797,
+							["total_without_pet"] = 21.001797,
+							["total"] = 21.001797,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.001797,
+							["last_hps"] = 2.674366102125624,
+							["aID"] = "4465-048D3FC8",
+							["fight_component"] = true,
+							["targets"] = {
+								["Handrmandr"] = 21,
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.001797,
+							["healing_from"] = {
+								["Handrmandr"] = true,
+							},
+							["healing_taken"] = 21.001797,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528103,
+							["targets_overheal"] = {
+								["Handrmandr"] = 8,
+							},
+							["start_time"] = 1715528101,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 8,
+										},
+										["n_max"] = 7,
+										["targets"] = {
+											["Handrmandr"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 8,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528102,
+							["totaldenied"] = 0.001797,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 160,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.006619,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.006619,
+							["total"] = 14.006619,
+							["received"] = 14.006619,
+							["targets"] = {
+								["Handrmandr"] = 14,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.006619,
+							["fight_component"] = true,
+							["resource_type"] = 9,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 14,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 14,
+										},
+										["counter"] = 4,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1715528103,
+							["totalover"] = 0.006619,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 160,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["fight_component"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[31930] = {
+										["activedamt"] = 2,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 32,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528103,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 160,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177264.624,
+				["tempo_start"] = 1715528095,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					297, -- [1]
+					21, -- [2]
+					{
+						0, -- [1]
+						[0] = 14,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Handrmandr"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							6, -- [3]
+							1715528134.318, -- [4]
+							366, -- [5]
+							"Agitated Earth Spirit", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+						["Judgement"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:35:03",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Agitated Earth Spirit",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 177233.063,
+				["CombatEndedAt"] = 177233.063,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:34:55",
+				["end_time"] = 177233.063,
+				["mapId"] = 1,
+				["combat_id"] = 160,
+				["boss_hp"] = 1,
+				["frags"] = {
+					["Agitated Earth Spirit"] = 2,
+				},
+				["playing_solo"] = true,
+				["combat_counter"] = 195,
+				["totals_grupo"] = {
+					270, -- [1]
+					21, -- [2]
+					{
+						0, -- [1]
+						[0] = 14,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 21.001797,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 270.004505,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 177225.21,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [13]
+			{
+				{
+					["combatId"] = 159,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006966,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 153.006966,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 153.006966,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Agitated Earth Spirit"] = true,
+							},
+							["targets"] = {
+								["Agitated Earth Spirit"] = 153,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528070,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Agitated Earth Spirit"] = 35,
+										},
+										["n_total"] = 35,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 35,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Agitated Earth Spirit"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["n_max"] = 46,
 										["targets"] = {
-											["Grimtotem Straggler"] = 46,
+											["Agitated Earth Spirit"] = 46,
 										},
 										["n_total"] = 46,
 										["n_min"] = 46,
@@ -4934,479 +6981,20 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 32.24367388633341,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 10.006047,
-							["start_time"] = 1715503822,
-							["delay"] = 0,
-							["last_event"] = 1715503825,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008283,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 10.008283,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 10.008283,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-36825-0000407F16",
-							["aID"] = "36825",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503826,
-							["nome"] = "Grimtotem Straggler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 4,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 131.008283,
-							["start_time"] = 1715503823,
-							["delay"] = 0,
-							["last_event"] = 1715503825,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 104,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.008079,
-							["total_without_pet"] = 10.008079,
-							["total"] = 10.008079,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.008079,
-							["last_hps"] = 2.463223972437409,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.008079,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 10.008079,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503826,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715503825,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503825,
-							["totaldenied"] = 0.008079,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 104,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.003216,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.003216,
-							["total"] = 0.003216,
-							["received"] = 0.003216,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.003216,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715503824,
-							["totalover"] = 0.003216,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 104,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 8,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503826,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 104,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 153226.306,
-				["tempo_start"] = 1715503822,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					141, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:50:27",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Grimtotem Straggler",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152957.141,
-				["CombatEndedAt"] = 152957.141,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:50:23",
-				["end_time"] = 152957.141,
-				["mapId"] = 1,
-				["combat_id"] = 104,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Grimtotem Straggler"] = 1,
-				},
-				["combat_counter"] = 139,
-				["totals_grupo"] = {
-					131, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 10.008079,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 131.006047,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152953.078,
-				["TimeData"] = {
-				},
-				["contra"] = "Grimtotem Straggler",
-			}, -- [10]
-			{
-				{
-					["combatId"] = 103,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001755,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 121.001755,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 121.001755,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Prairie Wolf"] = true,
-							},
-							["targets"] = {
-								["Prairie Wolf"] = 121,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503796,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Prairie Wolf"] = 97,
-										},
-										["n_total"] = 97,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 97,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Prairie Wolf"] = 5,
-										},
-										["n_total"] = 5,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[20187] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 0,
 										["targets"] = {
-											["Prairie Wolf"] = 19,
+											["Agitated Earth Spirit"] = 62,
 										},
-										["n_total"] = 19,
-										["n_min"] = 19,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 0,
+										["total"] = 62,
+										["c_max"] = 62,
 										["id"] = 20187,
 										["r_dmg"] = 0,
 										["spellschool"] = 2,
@@ -5414,38 +7002,9 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 62,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Prairie Wolf"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
+										["c_total"] = 62,
 										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
@@ -5454,41 +7013,40 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 22.50358099308668,
+							["last_dps"] = 75.97168123154721,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 5.001755,
-							["start_time"] = 1715503791,
+							["damage_taken"] = 6.006966,
+							["start_time"] = 1715528068,
 							["delay"] = 0,
-							["last_event"] = 1715503795,
+							["last_event"] = 1715528070,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002228,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006366,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 5.002228,
+							["total_without_pet"] = 6.006366,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 5.002228,
+							["total"] = 6.006366,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2958-0000408121",
-							["aID"] = "2958",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5563-1-22710-36845-000040E0AA",
+							["aID"] = "36845",
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 5,
+								["Handrmandr"] = 6,
 							},
-							["monster"] = true,
+							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503796,
-							["nome"] = "Prairie Wolf",
+							["end_time"] = 1715528070,
+							["nome"] = "Agitated Earth Spirit",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -5496,2542 +7054,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 5,
+										["n_max"] = 6,
 										["targets"] = {
-											["Handrmandr"] = 5,
+											["Handrmandr"] = 6,
 										},
-										["n_total"] = 5,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 5,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 121.002228,
-							["start_time"] = 1715503792,
-							["delay"] = 0,
-							["last_event"] = 1715503795,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 103,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 5.002459,
-							["total_without_pet"] = 5.002459,
-							["total"] = 5.002459,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.002459,
-							["last_hps"] = 0.9303438720462808,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 5,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.002459,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 5.002459,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503796,
-							["targets_overheal"] = {
-								["Handrmandr"] = 5,
-							},
-							["start_time"] = 1715503795,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Handrmandr"] = 5,
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 5,
-										},
-										["n_total"] = 5,
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 5,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503795,
-							["totaldenied"] = 0.002459,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 103,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 103,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 10,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503796,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 103,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 152952.258,
-				["tempo_start"] = 1715503791,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					126, -- [1]
-					5, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
-						["Judgement"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:49:57",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152927.53,
-				["CombatEndedAt"] = 152927.53,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:49:52",
-				["end_time"] = 152927.53,
-				["mapId"] = 1,
-				["combat_id"] = 103,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Prairie Wolf"] = 1,
-				},
-				["combat_counter"] = 138,
-				["totals_grupo"] = {
-					121, -- [1]
-					5, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 5.002459,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 121.001755,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152922.153,
-				["TimeData"] = {
-				},
-				["contra"] = "Prairie Wolf",
-			}, -- [11]
-			{
-				{
-					["combatId"] = 102,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.0073,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 141.0073,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 141.0073,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 141,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503660,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Prairie Stalker"] = 83,
-										},
-										["n_total"] = 83,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 83,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Prairie Stalker"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Prairie Stalker"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Prairie Stalker"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 26.87388984179886,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 26.0073,
-							["start_time"] = 1715503654,
-							["delay"] = 0,
-							["last_event"] = 1715503660,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003789,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 26.003789,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 26.003789,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-0007C041A8",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 26,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503660,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Handrmandr"] = 26,
-										},
-										["n_total"] = 26,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 141.003789,
-							["start_time"] = 1715503655,
-							["delay"] = 0,
-							["last_event"] = 1715503659,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 102,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.007671,
-							["total_without_pet"] = 10.007671,
-							["total"] = 10.007671,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.007671,
-							["last_hps"] = 1.907312940726935,
-							["aID"] = "4465-048D3FC8",
-							["colocacao"] = 1,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["fight_component"] = true,
-							["totalover_without_pet"] = 0.007671,
-							["serial"] = "Player-4465-048D3FC8",
-							["healing_taken"] = 10.007671,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503660,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715503660,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503660,
-							["totaldenied"] = 0.007671,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 102,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.007382,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.007382,
-							["total"] = 0.007382,
-							["received"] = 0.007382,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.007382,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715503656,
-							["totalover"] = 0.007382,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 102,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 10,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503660,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 102,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 152921.04,
-				["tempo_start"] = 1715503654,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					180, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:47:40",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Stalker",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152790.541,
-				["CombatEndedAt"] = 152790.541,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:47:35",
-				["end_time"] = 152790.541,
-				["mapId"] = 1,
-				["combat_id"] = 102,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Prairie Stalker"] = 1,
-				},
-				["combat_counter"] = 137,
-				["totals_grupo"] = {
-					141, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 10.007671,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 141.0073,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152785.294,
-				["TimeData"] = {
-				},
-				["contra"] = "Prairie Stalker",
-			}, -- [12]
-			{
-				{
-					["combatId"] = 101,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006772,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 174.006772,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 174.006772,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 174,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503629,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Flatland Cougar"] = 109,
-										},
-										["n_total"] = 54,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 109,
-										["c_max"] = 55,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 55,
-										["successful_casted"] = 0,
-										["c_total"] = 55,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Flatland Cougar"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 39,
-										["targets"] = {
-											["Flatland Cougar"] = 39,
-										},
-										["n_total"] = 39,
-										["n_min"] = 39,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 39,
-										["c_max"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 29.27928184418988,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 16.006772,
-							["start_time"] = 1715503623,
-							["delay"] = 0,
-							["last_event"] = 1715503628,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008275,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 16.008275,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.008275,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-00024041A0",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 16,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503629,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Handrmandr"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 174.008275,
-							["start_time"] = 1715503625,
-							["delay"] = 0,
-							["last_event"] = 1715503627,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 101,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002807,
-							["total_without_pet"] = 10.002807,
-							["total"] = 10.002807,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.002807,
-							["last_hps"] = 1.683124179707417,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.002807,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 10.002807,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503629,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715503628,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503628,
-							["totaldenied"] = 0.002807,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 101,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.003257,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.003257,
-							["total"] = 0.003257,
-							["received"] = 0.003257,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.003257,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715503625,
-							["totalover"] = 0.003257,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 101,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503629,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 101,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 152784.082,
-				["tempo_start"] = 1715503623,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					190, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:47:09",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152759.742,
-				["CombatEndedAt"] = 152759.742,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:47:03",
-				["end_time"] = 152759.742,
-				["mapId"] = 1,
-				["combat_id"] = 101,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 136,
-				["totals_grupo"] = {
-					174, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 10.002807,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 174.006772,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152753.799,
-				["TimeData"] = {
-				},
-				["contra"] = "Flatland Cougar",
-			}, -- [13]
-			{
-				{
-					["combatId"] = 100,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002537,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 171.002537,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 171.002537,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 171,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503620,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Flatland Cougar"] = 106,
-										},
-										["n_total"] = 106,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 106,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 9,
-										},
-										["n_total"] = 9,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 9,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Flatland Cougar"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Flatland Cougar"] = 37,
-										},
-										["n_total"] = 37,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 37,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 17.86487014210801,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 27.002537,
-							["start_time"] = 1715503610,
-							["delay"] = 0,
-							["last_event"] = 1715503617,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005713,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 27.005713,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 27.005713,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-0000406535",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 27,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503620,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Handrmandr"] = 27,
-										},
-										["n_total"] = 27,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 171.005713,
-							["start_time"] = 1715503612,
-							["delay"] = 0,
-							["last_event"] = 1715503616,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 100,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005589,
-							["total_without_pet"] = 10.005589,
-							["total"] = 10.005589,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.005589,
-							["last_hps"] = 1.045297638948505,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.005589,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 10.005589,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503620,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715503617,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503617,
-							["totaldenied"] = 0.005589,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 100,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.003411,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.003411,
-							["total"] = 0.003411,
-							["received"] = 0.003411,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.003411,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715503616,
-							["totalover"] = 0.003411,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 100,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 20,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503620,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 100,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 152753.318,
-				["tempo_start"] = 1715503610,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					198, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:47:00",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152750.509,
-				["CombatEndedAt"] = 152750.509,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:46:50",
-				["end_time"] = 152750.509,
-				["mapId"] = 1,
-				["combat_id"] = 100,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 135,
-				["totals_grupo"] = {
-					171, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 10.005589,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 171.002537,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152740.937,
-				["TimeData"] = {
-				},
-				["contra"] = "Flatland Cougar",
-			}, -- [14]
-			{
-				{
-					["combatId"] = 99,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003745,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 157.003745,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 157.003745,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 157,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503592,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 29,
-										["targets"] = {
-											["Flatland Cougar"] = 84,
-										},
-										["n_total"] = 56,
-										["n_min"] = 27,
-										["g_dmg"] = 28,
-										["counter"] = 4,
-										["total"] = 84,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[25742] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 13,
-										},
-										["n_total"] = 8,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 13,
-										["c_max"] = 5,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 5,
-										["successful_casted"] = 0,
-										["c_total"] = 5,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Flatland Cougar"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 41,
-										["targets"] = {
-											["Flatland Cougar"] = 41,
-										},
-										["n_total"] = 41,
-										["n_min"] = 41,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 41,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = 35395,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 17.54623882431052,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 28.003745,
-							["start_time"] = 1715503583,
-							["delay"] = 0,
-							["last_event"] = 1715503590,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003951,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 28.003951,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 28.003951,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-3035-0002C041A7",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 28,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503592,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Handrmandr"] = 28,
-										},
-										["n_total"] = 28,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 28,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 157.003951,
-							["start_time"] = 1715503584,
-							["delay"] = 0,
-							["last_event"] = 1715503590,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 99,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.007143,
-							["total_without_pet"] = 10.007143,
-							["total"] = 10.007143,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.007143,
-							["last_hps"] = 1.118366450602992,
-							["aID"] = "4465-048D3FC8",
-							["fight_component"] = true,
-							["targets"] = {
-								["Handrmandr"] = 10,
-							},
-							["serial"] = "Player-4465-048D3FC8",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.007143,
-							["healing_from"] = {
-								["Handrmandr"] = true,
-							},
-							["healing_taken"] = 10.007143,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1715503592,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1715503590,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[59913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Handrmandr"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 59913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 1,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1715503590,
-							["totaldenied"] = 0.007143,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 99,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 1.006602,
-							["pets"] = {
-							},
-							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.006602,
-							["total"] = 0.006602,
-							["received"] = 0.006602,
-							["targets"] = {
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.006602,
-							["fight_component"] = true,
-							["resource_type"] = 9,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1715503589,
-							["totalover"] = 0.006602,
-							["serial"] = "Player-4465-048D3FC8",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 99,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-4465-048D3FC8",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 18,
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
-							["nome"] = "Handrmandr",
-							["last_event"] = 1715503592,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 99,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Handrmandr"] = "Player-4465-048D3FC8",
-				},
-				["CombatStartedAt"] = 152740.752,
-				["tempo_start"] = 1715503583,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playerTalents"] = {
-				},
-				["totals"] = {
-					185, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Handrmandr"] = {
-						["Crusader Strike"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:46:32",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 152722.527,
-				["CombatEndedAt"] = 152722.527,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:46:23",
-				["end_time"] = 152722.527,
-				["mapId"] = 1,
-				["combat_id"] = 99,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 134,
-				["totals_grupo"] = {
-					157, -- [1]
-					10, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Handrmandr"] = 10.007143,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Handrmandr"] = 157.003745,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152713.579,
-				["TimeData"] = {
-				},
-				["contra"] = "Flatland Cougar",
-			}, -- [15]
-			{
-				{
-					["combatId"] = 98,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004395,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["total_without_pet"] = 140.004395,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 140.004395,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-4465-048D3FC8",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 140,
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-048D3FC8",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503572,
-							["nome"] = "Handrmandr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Prairie Stalker"] = 118,
-										},
-										["n_total"] = 58,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 118,
-										["c_max"] = 60,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 60,
-										["successful_casted"] = 0,
-										["c_total"] = 60,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[20187] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Prairie Stalker"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[25742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Prairie Stalker"] = 4,
-										},
-										["n_total"] = 4,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = 25742,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 23.88745862490864,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 19.004395,
-							["start_time"] = 1715503567,
-							["delay"] = 0,
-							["last_event"] = 1715503572,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007286,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 19.007286,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.007286,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2959-0009C041A8",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Handrmandr"] = true,
-							},
-							["targets"] = {
-								["Handrmandr"] = 19,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1715503572,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Handrmandr"] = 19,
-										},
-										["n_total"] = 19,
+										["n_total"] = 6,
 										["n_min"] = 6,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 19,
+										["counter"] = 1,
+										["total"] = 6,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8043,7 +7074,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -8054,15 +7085,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 140.007286,
-							["start_time"] = 1715503568,
+							["damage_taken"] = 153.006366,
+							["start_time"] = 1715528068,
 							["delay"] = 0,
-							["last_event"] = 1715503571,
+							["last_event"] = 1715528068,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 98,
+					["combatId"] = 159,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -8071,34 +7102,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.001862,
-							["total_without_pet"] = 10.001862,
-							["total"] = 10.001862,
+							["totalover"] = 8.001415,
+							["total_without_pet"] = 6.001415,
+							["total"] = 6.001415,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.001862,
-							["last_hps"] = 1.706511175574495,
+							["totalabsorb"] = 0.001415,
+							["last_hps"] = 2.979848560085989,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 10,
+								["Handrmandr"] = 6,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.001862,
+							["totalover_without_pet"] = 0.001415,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 10.001862,
+							["healing_taken"] = 6.001415,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715503572,
+							["end_time"] = 1715528070,
 							["targets_overheal"] = {
+								["Handrmandr"] = 8,
 							},
-							["start_time"] = 1715503572,
+							["start_time"] = 1715528070,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -8107,16 +7139,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 8,
 										},
-										["n_max"] = 5,
+										["n_max"] = 6,
 										["targets"] = {
-											["Handrmandr"] = 10,
+											["Handrmandr"] = 6,
 										},
-										["n_total"] = 10,
-										["n_min"] = 5,
+										["n_total"] = 6,
+										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
+										["overheal"] = 8,
+										["total"] = 6,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -8131,21 +7164,59 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715503572,
-							["totaldenied"] = 0.001862,
+							["last_event"] = 1715528070,
+							["totaldenied"] = 0.001415,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 98,
+					["combatId"] = 159,
 					["tipo"] = 7,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 1.006978,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.006978,
+							["total"] = 12.006978,
+							["received"] = 12.006978,
+							["targets"] = {
+								["Handrmandr"] = 12,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.006978,
+							["fight_component"] = true,
+							["resource_type"] = 9,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 12,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 12,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1715528072,
+							["totalover"] = 0.006978,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 98,
+					["combatId"] = 159,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -8160,12 +7231,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8176,7 +7269,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8184,17 +7277,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 10,
+							["buff_uptime"] = 6,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715503572,
+							["last_event"] = 1715528070,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 98,
+					["combatId"] = 159,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -8202,8 +7295,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 152712.862,
-				["tempo_start"] = 1715503567,
+				["CombatStartedAt"] = 177225.011,
+				["tempo_start"] = 1715528068,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -8217,10 +7310,10 @@ _detalhes_database = {
 				},
 				["totals"] = {
 					159, -- [1]
-					10, -- [2]
+					6, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 12,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8242,36 +7335,41 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Judgement"] = 1,
+						["Crusader Strike"] = 1,
+					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:46:13",
+				["data_fim"] = "17:34:31",
+				["pvp"] = true,
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Agitated Earth Spirit",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 152703.096,
-				["CombatEndedAt"] = 152703.096,
+				["TotalElapsedCombatTime"] = 2.013999999995576,
+				["CombatEndedAt"] = 177201.926,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:46:07",
-				["end_time"] = 152703.096,
+				["data_inicio"] = "17:34:29",
+				["end_time"] = 177201.926,
 				["mapId"] = 1,
-				["combat_id"] = 98,
-				["boss_hp"] = 1,
+				["combat_id"] = 159,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Agitated Earth Spirit"] = 1,
 				},
-				["combat_counter"] = 133,
+				["boss_hp"] = 1,
+				["combat_counter"] = 194,
 				["totals_grupo"] = {
-					140, -- [1]
-					10, -- [2]
+					153, -- [1]
+					6, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 12,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8296,47 +7394,47 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 10.001862,
+							["Handrmandr"] = 6.001415,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 140.004395,
+							["Handrmandr"] = 153.006966,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152697.235,
+				["start_time"] = 177199.912,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Stalker",
-			}, -- [16]
+				["spells_cast_timeline"] = {
+				},
+			}, -- [14]
 			{
 				{
-					["combatId"] = 97,
+					["combatId"] = 158,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001502,
+							["totalabsorbed"] = 0.002538,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 136.001502,
+							["total_without_pet"] = 244.002538,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 136.001502,
+							["total"] = 244.002538,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Prairie Wolf"] = true,
+								["Adult Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf"] = 136,
+								["Swoop"] = 103,
+								["Adult Plainstrider"] = 141,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -8344,7 +7442,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503545,
+							["end_time"] = 1715528047,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -8353,15 +7451,15 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["n_max"] = 41,
 										["targets"] = {
-											["Prairie Wolf"] = 96,
+											["Adult Plainstrider"] = 105,
 										},
-										["n_total"] = 32,
-										["n_min"] = 32,
+										["n_total"] = 41,
+										["n_min"] = 41,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 96,
+										["total"] = 105,
 										["c_max"] = 64,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8381,15 +7479,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 5,
 										["targets"] = {
-											["Prairie Wolf"] = 3,
+											["Adult Plainstrider"] = 5,
 										},
-										["n_total"] = 3,
-										["n_min"] = 3,
+										["n_total"] = 5,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 3,
+										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -8405,49 +7503,20 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[20187] = {
+									[35395] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Prairie Wolf"] = 37,
+											["Swoop"] = 103,
 										},
 										["n_total"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 37,
-										["c_max"] = 37,
-										["id"] = 20187,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 37,
-										["successful_casted"] = 0,
-										["c_total"] = 37,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[35395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Prairie Wolf"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
+										["total"] = 103,
+										["c_max"] = 103,
 										["id"] = 35395,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -8455,10 +7524,38 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
+										["c_min"] = 103,
+										["successful_casted"] = 0,
+										["c_total"] = 103,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Adult Plainstrider"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 20187,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -8466,41 +7563,40 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 16.83603639512936,
+							["last_dps"] = 52.99794483067323,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 25.001502,
-							["start_time"] = 1715503539,
+							["damage_taken"] = 14.002538,
+							["start_time"] = 1715528043,
 							["delay"] = 0,
-							["last_event"] = 1715503543,
+							["last_event"] = 1715528046,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003775,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008922,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 25.003775,
+							["total_without_pet"] = 14.008922,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 25.003775,
+							["total"] = 14.008922,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2958-00034041AD",
-							["aID"] = "2958",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5563-1-22710-2956-000040D40A",
+							["aID"] = "2956",
 							["damage_from"] = {
 								["Handrmandr"] = true,
 							},
 							["targets"] = {
-								["Handrmandr"] = 25,
+								["Handrmandr"] = 14,
 							},
-							["monster"] = true,
+							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503545,
-							["nome"] = "Prairie Wolf",
+							["end_time"] = 1715528047,
+							["nome"] = "Adult Plainstrider",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -8508,15 +7604,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 7,
 										["targets"] = {
-											["Handrmandr"] = 25,
+											["Handrmandr"] = 14,
 										},
-										["n_total"] = 25,
-										["n_min"] = 4,
+										["n_total"] = 14,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 25,
+										["counter"] = 2,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8528,7 +7624,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -8539,15 +7635,56 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 136.003775,
-							["start_time"] = 1715503537,
+							["damage_taken"] = 141.008922,
+							["start_time"] = 1715528044,
 							["delay"] = 0,
-							["last_event"] = 1715503543,
+							["last_event"] = 1715528046,
 						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004557,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.004557,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.004557,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2970-000040D38B",
+							["aID"] = "2970",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528047,
+							["nome"] = "Swoop",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 103.004557,
+							["start_time"] = 1715528047,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 97,
+					["combatId"] = 158,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -8556,34 +7693,35 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.007944,
-							["total_without_pet"] = 10.007944,
-							["total"] = 10.007944,
+							["totalover"] = 17.008864,
+							["total_without_pet"] = 14.008864,
+							["total"] = 14.008864,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.007944,
-							["last_hps"] = 1.238913592472063,
+							["totalabsorb"] = 0.008864,
+							["last_hps"] = 3.042759339709837,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
-								["Handrmandr"] = 10,
+								["Handrmandr"] = 14,
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.007944,
+							["totalover_without_pet"] = 0.008864,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 10.007944,
+							["healing_taken"] = 14.008864,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715503545,
+							["end_time"] = 1715528047,
 							["targets_overheal"] = {
+								["Handrmandr"] = 17,
 							},
-							["start_time"] = 1715503543,
+							["start_time"] = 1715528043,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -8592,16 +7730,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Handrmandr"] = 17,
 										},
-										["n_max"] = 5,
+										["n_max"] = 7,
 										["targets"] = {
-											["Handrmandr"] = 10,
+											["Handrmandr"] = 14,
 										},
-										["n_total"] = 10,
-										["n_min"] = 5,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 10,
+										["n_total"] = 14,
+										["n_min"] = 7,
+										["counter"] = 4,
+										["overheal"] = 17,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = 59913,
 										["targets_absorbs"] = {
@@ -8610,27 +7749,64 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 4,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715503543,
-							["totaldenied"] = 0.007944,
+							["last_event"] = 1715528046,
+							["totaldenied"] = 0.008864,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 97,
+					["combatId"] = 158,
 					["tipo"] = 7,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.001324,
+							["targets"] = {
+								["Handrmandr"] = 24,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.001324,
+							["fight_component"] = true,
+							["alternatepower"] = 0.001324,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 24,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 24,
+										},
+										["counter"] = 5,
+									},
+								},
+							},
+							["grupo"] = true,
+							["received"] = 24.001324,
+							["aID"] = "4465-048D3FC8",
+							["last_event"] = 1715528047,
+							["total"] = 24.001324,
+							["totalover"] = 0.001324,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 97,
+					["combatId"] = 158,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -8645,12 +7821,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8661,7 +7859,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8673,13 +7871,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715503545,
+							["last_event"] = 1715528047,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-1-22710-2956-000040D40A",
+							["fight_component"] = true,
+							["aID"] = "2956",
+							["nome"] = "Adult Plainstrider",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 97,
+					["combatId"] = 158,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -8687,8 +7897,7 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 152696.602,
-				["tempo_start"] = 1715503537,
+				["tempo_start"] = 1715528043,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -8701,11 +7910,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					161, -- [1]
-					10, -- [2]
+					258, -- [1]
+					14, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 24,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8728,39 +7937,42 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Handrmandr"] = {
-						["Crusader Strike"] = 1,
 						["Judgement"] = 1,
+					},
+					["Adult Plainstrider"] = {
+						["Sprint"] = 1,
 					},
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:45:45",
+				["data_fim"] = "17:34:08",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Wolf",
+				["enemy"] = "Adult Plainstrider",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 152675.168,
-				["CombatEndedAt"] = 152675.168,
+				["TotalElapsedCombatTime"] = 177178.927,
+				["CombatEndedAt"] = 177178.927,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:45:37",
-				["end_time"] = 152675.168,
+				["data_inicio"] = "17:34:04",
+				["end_time"] = 177178.927,
 				["mapId"] = 1,
-				["combat_id"] = 97,
+				["combat_id"] = 158,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Prairie Wolf"] = 1,
+					["Swoop"] = 1,
+					["Adult Plainstrider"] = 1,
 				},
-				["combat_counter"] = 132,
+				["combat_counter"] = 193,
 				["totals_grupo"] = {
-					136, -- [1]
-					10, -- [2]
+					244, -- [1]
+					14, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 24,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8785,47 +7997,47 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 10.007944,
+							["Handrmandr"] = 14.008864,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 136.001502,
+							["Handrmandr"] = 244.002538,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152667.09,
+				["start_time"] = 177174.323,
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Wolf",
-			}, -- [17]
+				["contra"] = "Swoop",
+			}, -- [15]
 			{
 				{
-					["combatId"] = 96,
+					["combatId"] = 157,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001742,
+							["totalabsorbed"] = 0.00575,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
-							["total_without_pet"] = 130.001742,
+							["total_without_pet"] = 126.00575,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 130.001742,
+							["total"] = 126.00575,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-048D3FC8",
 							["damage_from"] = {
-								["Swoop"] = true,
+								["Adult Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Swoop"] = 130,
+								["Adult Plainstrider"] = 126,
 							},
 							["colocacao"] = 1,
 							["aID"] = "4465-048D3FC8",
@@ -8833,7 +8045,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503519,
+							["end_time"] = 1715528039,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 2,
@@ -8842,15 +8054,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 34,
+										["n_max"] = 33,
 										["targets"] = {
-											["Swoop"] = 61,
+											["Adult Plainstrider"] = 33,
 										},
-										["n_total"] = 61,
-										["n_min"] = 27,
+										["n_total"] = 33,
+										["n_min"] = 33,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 61,
+										["counter"] = 1,
+										["total"] = 33,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8862,7 +8074,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -8870,15 +8082,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2,
+										["n_max"] = 5,
 										["targets"] = {
-											["Swoop"] = 4,
+											["Adult Plainstrider"] = 9,
 										},
-										["n_total"] = 4,
-										["n_min"] = 2,
+										["n_total"] = 9,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 4,
+										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = 25742,
 										["r_dmg"] = 0,
@@ -8894,19 +8106,1052 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[35395] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Adult Plainstrider"] = 53,
+										},
+										["n_total"] = 53,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[20187] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 31,
 										["targets"] = {
-											["Swoop"] = 19,
+											["Adult Plainstrider"] = 31,
 										},
-										["n_total"] = 19,
-										["n_min"] = 19,
+										["n_total"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 19,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 20187,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 42.99070283163069,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 6.00575,
+							["start_time"] = 1715528036,
+							["delay"] = 0,
+							["last_event"] = 1715528037,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006324,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 6.006324,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 6.006324,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2956-000040E0E9",
+							["aID"] = "2956",
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+								["Handrmandr"] = 6,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528039,
+							["nome"] = "Adult Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Handrmandr"] = 6,
+										},
+										["n_total"] = 6,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 126.006324,
+							["start_time"] = 1715528036,
+							["delay"] = 0,
+							["last_event"] = 1715528036,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 157,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 9.002590999999999,
+							["total_without_pet"] = 6.002591,
+							["total"] = 6.002591,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.002591,
+							["last_hps"] = 2.047966905485034,
+							["aID"] = "4465-048D3FC8",
+							["fight_component"] = true,
+							["targets"] = {
+								["Handrmandr"] = 6,
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.002591,
+							["healing_from"] = {
+								["Handrmandr"] = true,
+							},
+							["healing_taken"] = 6.002591,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528039,
+							["targets_overheal"] = {
+								["Handrmandr"] = 9,
+							},
+							["start_time"] = 1715528037,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 9,
+										},
+										["n_max"] = 6,
+										["targets"] = {
+											["Handrmandr"] = 6,
+										},
+										["n_total"] = 6,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 9,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528037,
+							["totaldenied"] = 0.002591,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 157,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.003028,
+							["pets"] = {
+							},
+							["aID"] = "4465-048D3FC8",
+							["passiveover"] = 0.003028,
+							["total"] = 11.003028,
+							["received"] = 11.003028,
+							["targets"] = {
+								["Handrmandr"] = 11,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.003028,
+							["fight_component"] = true,
+							["resource_type"] = 9,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 11,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 11,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1715528043,
+							["totalover"] = 0.003028,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 157,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["fight_component"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 11,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528039,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 157,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["CombatStartedAt"] = 177174.066,
+				["tempo_start"] = 1715528036,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					132, -- [1]
+					6, -- [2]
+					{
+						0, -- [1]
+						[0] = 11,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Judgement"] = 1,
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:34:00",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Adult Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 2.931000000011409,
+				["CombatEndedAt"] = 177170.037,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:33:57",
+				["end_time"] = 177170.037,
+				["mapId"] = 1,
+				["combat_id"] = 157,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Adult Plainstrider"] = 1,
+				},
+				["boss_hp"] = 1,
+				["combat_counter"] = 192,
+				["totals_grupo"] = {
+					126, -- [1]
+					6, -- [2]
+					{
+						0, -- [1]
+						[0] = 11,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 6.002591,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 126.00575,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 177167.106,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [16]
+			{
+				{
+					["combatId"] = 156,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003463,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 147.003463,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 147.003463,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Prairie Wolf"] = 147,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528032,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Prairie Wolf"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Prairie Wolf"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[35395] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Prairie Wolf"] = 112,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 112,
+										["c_max"] = 112,
+										["id"] = 35395,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 112,
+										["successful_casted"] = 0,
+										["c_total"] = 112,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 118.6468627924409,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003463,
+							["start_time"] = 1715528031,
+							["delay"] = 0,
+							["last_event"] = 1715528031,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001162,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.001162,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.001162,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5563-1-22710-2958-000040BCA7",
+							["aID"] = "2958",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Handrmandr"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528032,
+							["nome"] = "Prairie Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 147.001162,
+							["start_time"] = 1715528032,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 156,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 15.003174,
+							["total_without_pet"] = 0.003174,
+							["total"] = 0.003174,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 0.003174,
+							["last_hps"] = 0,
+							["aID"] = "4465-048D3FC8",
+							["targets"] = {
+							},
+							["healing_from"] = {
+							},
+							["totalover_without_pet"] = 0.003174,
+							["serial"] = "Player-4465-048D3FC8",
+							["healing_taken"] = 0.003174,
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["end_time"] = 1715528032,
+							["targets_overheal"] = {
+								["Handrmandr"] = 15,
+							},
+							["start_time"] = 1715528031,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Handrmandr"] = 15,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 15,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1715528031,
+							["totaldenied"] = 0.003174,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 156,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.008802,
+							["targets"] = {
+								["Handrmandr"] = 12,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.008802,
+							["alternatepower"] = 0.008802,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 12,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 12,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["received"] = 12.008802,
+							["aID"] = "4465-048D3FC8",
+							["resource_type"] = 9,
+							["last_event"] = 1715528032,
+							["totalover"] = 0.008802,
+							["total"] = 12.008802,
+							["serial"] = "Player-4465-048D3FC8",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 156,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-048D3FC8",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
+										["activedamt"] = 1,
+										["id"] = 20154,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[465] = {
+										["activedamt"] = 1,
+										["id"] = 465,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 4,
+							["grupo"] = true,
+							["aID"] = "4465-048D3FC8",
+							["nome"] = "Handrmandr",
+							["last_event"] = 1715528032,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 156,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Handrmandr"] = "Player-4465-048D3FC8",
+				},
+				["tempo_start"] = 1715528031,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
+				["totals"] = {
+					147, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 12,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Handrmandr"] = {
+						["Crusader Strike"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Kalimdor",
+				["data_fim"] = "17:33:53",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 177163.175,
+				["CombatEndedAt"] = 177163.175,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:33:51",
+				["end_time"] = 177163.175,
+				["mapId"] = 1,
+				["combat_id"] = 156,
+				["boss_hp"] = 1,
+				["playing_solo"] = true,
+				["frags"] = {
+					["Prairie Wolf"] = 1,
+				},
+				["combat_counter"] = 191,
+				["totals_grupo"] = {
+					147, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 12,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Handrmandr"] = 0.003174,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Handrmandr"] = 147.003463,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 177161.936,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Wolf",
+			}, -- [17]
+			{
+				{
+					["combatId"] = 155,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001687,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["total_without_pet"] = 122.001687,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 122.001687,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-4465-048D3FC8",
+							["damage_from"] = {
+								["Prairie Wolf"] = true,
+							},
+							["targets"] = {
+								["Prairie Wolf"] = 122,
+							},
+							["colocacao"] = 1,
+							["aID"] = "4465-048D3FC8",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1715528027,
+							["nome"] = "Handrmandr",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Prairie Wolf"] = 41,
+										},
+										["n_total"] = 41,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[25742] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Prairie Wolf"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 25742,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20187] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Prairie Wolf"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 20187,
 										["r_dmg"] = 0,
@@ -8928,7 +9173,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 46,
 										["targets"] = {
-											["Swoop"] = 46,
+											["Prairie Wolf"] = 46,
 										},
 										["n_total"] = 46,
 										["n_min"] = 46,
@@ -8954,28 +9199,28 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 29.87858928985201,
+							["last_dps"] = 39.30466720370849,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 5.001742,
-							["start_time"] = 1715503514,
+							["damage_taken"] = 5.001687,
+							["start_time"] = 1715528024,
 							["delay"] = 0,
-							["last_event"] = 1715503517,
+							["last_event"] = 1715528025,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008567,
+							["totalabsorbed"] = 0.008354,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 5.008567,
+							["total_without_pet"] = 5.008354,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 5.008567,
+							["total"] = 5.008354,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5563-1-22710-2970-00034041AA",
-							["aID"] = "2970",
+							["serial"] = "Creature-0-5563-1-22710-2958-000040BC52",
+							["aID"] = "2958",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Handrmandr"] = true,
@@ -8987,8 +9232,8 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1715503519,
-							["nome"] = "Swoop",
+							["end_time"] = 1715528027,
+							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -9027,15 +9272,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 130.008567,
-							["start_time"] = 1715503516,
+							["damage_taken"] = 122.008354,
+							["start_time"] = 1715528025,
 							["delay"] = 0,
-							["last_event"] = 1715503516,
+							["last_event"] = 1715528025,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 96,
+					["combatId"] = 155,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -9044,16 +9289,16 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 5.006741,
-							["total_without_pet"] = 5.006741,
-							["total"] = 5.006741,
+							["totalover"] = 11.004297,
+							["total_without_pet"] = 5.004297,
+							["total"] = 5.004297,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 0.006741,
-							["last_hps"] = 1.150710411400971,
+							["totalabsorb"] = 0.004297,
+							["last_hps"] = 1.612209085055658,
 							["aID"] = "4465-048D3FC8",
 							["fight_component"] = true,
 							["targets"] = {
@@ -9061,18 +9306,18 @@ _detalhes_database = {
 							},
 							["serial"] = "Player-4465-048D3FC8",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.006741,
+							["totalover_without_pet"] = 0.004297,
 							["healing_from"] = {
 								["Handrmandr"] = true,
 							},
-							["healing_taken"] = 5.006741,
+							["healing_taken"] = 5.004297,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["end_time"] = 1715503519,
+							["end_time"] = 1715528027,
 							["targets_overheal"] = {
-								["Handrmandr"] = 5,
+								["Handrmandr"] = 11,
 							},
-							["start_time"] = 1715503517,
+							["start_time"] = 1715528025,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 3,
@@ -9081,7 +9326,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Handrmandr"] = 5,
+											["Handrmandr"] = 11,
 										},
 										["n_max"] = 5,
 										["targets"] = {
@@ -9090,7 +9335,7 @@ _detalhes_database = {
 										["n_total"] = 5,
 										["n_min"] = 0,
 										["counter"] = 2,
-										["overheal"] = 5,
+										["overheal"] = 11,
 										["total"] = 5,
 										["c_max"] = 0,
 										["id"] = 59913,
@@ -9106,49 +9351,59 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1715503517,
-							["totaldenied"] = 0.006741,
+							["last_event"] = 1715528025,
+							["totaldenied"] = 0.004297,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 96,
+					["combatId"] = 155,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 0.001039,
+							["resource"] = 0.002818,
 							["pets"] = {
 							},
 							["aID"] = "4465-048D3FC8",
-							["passiveover"] = 0.001039,
-							["total"] = 0.001039,
-							["received"] = 0.001039,
+							["passiveover"] = 0.002818,
+							["total"] = 23.002818,
+							["received"] = 23.002818,
 							["targets"] = {
+								["Handrmandr"] = 23,
 							},
 							["powertype"] = 0,
-							["alternatepower"] = 0.001039,
+							["alternatepower"] = 0.002818,
 							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Handrmandr",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[31930] = {
+										["total"] = 23,
+										["id"] = 31930,
+										["totalover"] = 0,
+										["targets"] = {
+											["Handrmandr"] = 23,
+										},
+										["counter"] = 4,
+									},
 								},
 							},
 							["grupo"] = true,
 							["classe"] = "PALADIN",
-							["last_event"] = 1715503516,
-							["totalover"] = 0.001039,
+							["last_event"] = 1715528027,
+							["totalover"] = 0.002818,
 							["serial"] = "Player-4465-048D3FC8",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 96,
+					["combatId"] = 155,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -9163,12 +9418,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[31930] = {
+										["activedamt"] = 1,
+										["id"] = 31930,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[20154] = {
 										["activedamt"] = 1,
 										["id"] = 20154,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
+										["activedamt"] = 1,
+										["id"] = 76691,
+										["targets"] = {
+										},
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -9179,7 +9456,7 @@ _detalhes_database = {
 										["id"] = 465,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -9187,17 +9464,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 10,
+							["buff_uptime"] = 12,
 							["grupo"] = true,
 							["aID"] = "4465-048D3FC8",
 							["nome"] = "Handrmandr",
-							["last_event"] = 1715503519,
+							["last_event"] = 1715528027,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 96,
+					["combatId"] = 155,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -9205,8 +9482,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 				},
-				["CombatStartedAt"] = 152665.471,
-				["tempo_start"] = 1715503514,
+				["CombatStartedAt"] = 177161.54,
+				["tempo_start"] = 1715528024,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -9219,11 +9496,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					135, -- [1]
+					127, -- [1]
 					5, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 23,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -9251,33 +9528,33 @@ _detalhes_database = {
 				},
 				["instance_type"] = "none",
 				["zoneName"] = "Kalimdor",
-				["data_fim"] = "10:45:19",
+				["data_fim"] = "17:33:48",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Swoop",
+				["enemy"] = "Prairie Wolf",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 152649.286,
-				["CombatEndedAt"] = 152649.286,
+				["TotalElapsedCombatTime"] = 177158.299,
+				["CombatEndedAt"] = 177158.299,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:45:14",
-				["end_time"] = 152649.286,
+				["data_inicio"] = "17:33:45",
+				["end_time"] = 177158.299,
 				["mapId"] = 1,
-				["combat_id"] = 96,
+				["combat_id"] = 155,
 				["boss_hp"] = 1,
 				["playing_solo"] = true,
 				["frags"] = {
-					["Swoop"] = 1,
+					["Prairie Wolf"] = 1,
 				},
-				["combat_counter"] = 131,
+				["combat_counter"] = 190,
 				["totals_grupo"] = {
-					130, -- [1]
+					122, -- [1]
 					5, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 23,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -9302,23 +9579,23 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Handrmandr"] = 5.006741,
+							["Handrmandr"] = 5.004297,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Handrmandr"] = 130.001742,
+							["Handrmandr"] = 122.001687,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152644.935,
+				["start_time"] = 177155.195,
 				["TimeData"] = {
 				},
-				["contra"] = "Swoop",
+				["contra"] = "Prairie Wolf",
 			}, -- [18]
 		},
 	},
@@ -9328,8 +9605,8 @@ _detalhes_database = {
 		},
 		["pos"] = {
 		},
-		["lines_per_column"] = 12,
 		["group_frames"] = true,
+		["lines_per_column"] = 12,
 		["own_frame"] = {
 			["defensive-raid"] = false,
 			["ofensive"] = false,
@@ -9393,10 +9670,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["name"] = "Damage of Each Individual Player",
-				["playerOnly"] = true,
 				["playerKey"] = "total",
 				["combatObjectContainer"] = 1,
+				["name"] = "Damage of Each Individual Player",
+				["playerOnly"] = true,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -9436,9 +9713,27 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
+	["last_day"] = "12",
+	["mythic_plus_log"] = {
+	},
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["cached_roles"] = {
+	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+	},
+	["data_harvested_for_charts"] = {
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -9453,13 +9748,13 @@ _detalhes_database = {
 			},
 			["usefocus"] = false,
 			["updatespeed"] = 1,
-			["disable_gouge"] = false,
+			["playSound"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["absolute_mode"] = false,
 			["useclasscolors"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["playSound"] = false,
+			["disable_gouge"] = false,
 		},
 		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 			["enabled"] = true,
@@ -9481,15 +9776,15 @@ _detalhes_database = {
 			["tank_block_size"] = 150,
 			["bar_height"] = 24,
 			["tank_block_texture"] = "Details Serenity",
+			["show_inc_bars"] = true,
+			["tank_block_powerbar_size_height"] = 10,
+			["tank_block_height"] = 40,
 			["tank_block_color"] = {
 				0.074509, -- [1]
 				0.035294, -- [2]
 				0.035294, -- [3]
 				0.832845, -- [4]
 			},
-			["tank_block_height"] = 40,
-			["tank_block_powerbar_size_height"] = 10,
-			["show_inc_bars"] = true,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -9499,11 +9794,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Terciob",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["use_square_mode"] = false,
@@ -9515,7 +9810,7 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["scale"] = 1,
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -9525,32 +9820,22 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["row_height"] = 18,
+			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.480826139450073, -- [4]
 			},
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["point"] = "RIGHT",
-			["main_frame_strata"] = "LOW",
+			["use_spark"] = false,
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
-				["attribute_type"] = 1,
-			},
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -9558,40 +9843,40 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -183.107162475586,
 			["font_size"] = 10,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = false,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
+			["point"] = "RIGHT",
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
 				1, -- [3]
-				0.480826139450073, -- [4]
+				1, -- [4]
 			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
 	},
-	["data_harvested_for_charts"] = {
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_instance_time"] = 0,
-	["mythic_plus_log"] = {
-	},
-	["last_day"] = "12",
-	["force_font_outline"] = "",
+	["ignore_nicktag"] = false,
 	["nick_tag_cache"] = {
 		["nextreset"] = 1716711253,
 		["last_version"] = 16,
 	},
-	["combat_id"] = 113,
+	["combat_id"] = 172,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -10028,9 +10313,9 @@ _detalhes_database = {
 		}, -- [1]
 	},
 	["character_data"] = {
-		["logons"] = 20,
+		["logons"] = 29,
 	},
-	["combat_counter"] = 148,
+	["combat_counter"] = 207,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -10053,11 +10338,11 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["resource"] = 41.30975700000001,
+					["resource"] = 103.9797970000001,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
-					["totalover"] = 0.008587,
+					["aID"] = "4465-048D3FC8",
+					["passiveover"] = 0.008587,
 					["total"] = 0.008587,
 					["serial"] = "Player-4465-048D3FC8",
 					["received"] = 0.008587,
@@ -10072,11 +10357,11 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["aID"] = "4465-048D3FC8",
-					["passiveover"] = 0.008587,
-					["last_event"] = 0,
-					["resource_type"] = 9,
+					["classe"] = "PALADIN",
+					["totalover"] = 0.008587,
 					["tipo"] = 3,
+					["resource_type"] = 9,
+					["last_event"] = 0,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -10087,51 +10372,123 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "36943",
-					["fight_component"] = true,
-					["nome"] = "Bristleback Invader",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-1-3686-36943-00003F27F8",
+					["monster"] = true,
+					["nome"] = "Bristleback Invader",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-4479-1-3686-36943-00003F27F8",
+					["aID"] = "36943",
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
+					["buff_uptime"] = 0,
+					["nome"] = "Handrmandr",
+					["aID"] = "4465-048D3FC8",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[20154] = {
+								["id"] = 20154,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[465] = {
+								["id"] = 465,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
+					},
+					["grupo"] = true,
 					["pets"] = {
 					},
-					["aID"] = "4465-048D3FC8",
-					["nome"] = "Handrmandr",
-					["grupo"] = true,
-					["classe"] = "PALADIN",
+					["last_event"] = 0,
 					["tipo"] = 4,
 					["serial"] = "Player-4465-048D3FC8",
-					["last_event"] = 0,
+					["classe"] = "PALADIN",
 				}, -- [2]
 				{
 					["flag_original"] = 2600,
-					["tipo"] = 4,
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-1-3686-36708-00003F38D6",
-					["aID"] = "36708",
+					["fight_component"] = true,
 					["nome"] = "Bristleback Gun Thief",
+					["aID"] = "36708",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4479-1-3686-36708-00003F38D6",
 					["last_event"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 68136,
-					["tipo"] = 4,
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-1-3686-36697-00003EA8E4",
-					["aID"] = "36697",
+					["fight_component"] = true,
 					["nome"] = "Bristleback Thorncaller",
+					["aID"] = "36697",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4479-1-3686-36697-00003EA8E4",
 					["last_event"] = 0,
 				}, -- [4]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Venture Co. Worker",
+					["monster"] = true,
+					["last_event"] = 0,
+					["aID"] = "2978",
+					["serial"] = "Creature-0-5563-1-22710-2978-000040CBB8",
+					["tipo"] = 4,
+				}, -- [5]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Supervisor Fizsprocket",
+					["monster"] = true,
+					["last_event"] = 0,
+					["aID"] = "3051",
+					["serial"] = "Creature-0-5563-1-22710-3051-000040D9E9",
+					["tipo"] = 4,
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Venture Co. Supervisor",
+					["monster"] = true,
+					["last_event"] = 0,
+					["aID"] = "2979",
+					["serial"] = "Creature-0-5563-1-22710-2979-00004041A3",
+					["tipo"] = 4,
+				}, -- [7]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Enforcer Emilgund",
+					["monster"] = true,
+					["last_event"] = 0,
+					["aID"] = "5787",
+					["serial"] = "Creature-0-5563-1-22710-5787-000040D323",
+					["tipo"] = 4,
+				}, -- [8]
 			},
 		}, -- [4]
 		{
@@ -10211,9 +10568,9 @@ _detalhes_database = {
 			["n"] = 1,
 		},
 		["boss_hp"] = 1,
-		["segments_added"] = {
-		},
 		["frags"] = {
+		},
+		["segments_added"] = {
 		},
 		["data_fim"] = 0,
 		["cleu_timeline"] = {
@@ -10241,18 +10598,7 @@ _detalhes_database = {
 		},
 		["combat_counter"] = 35,
 	},
-	["ignore_nicktag"] = false,
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
+	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["modo"] = 2,
@@ -10359,10 +10705,11 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
+	["last_instance_time"] = 0,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -10370,7 +10717,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
 	},

@@ -1,20 +1,8 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
 	["spellCacheAchievements"] = true,
-	["spellCacheStrings"] = true,
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.13.1",
-	["lockPositions"] = false,
-	["spellCacheAchivements"] = true,
-	["frame"] = {
-		["xOffset"] = 1215.343872070313,
-		["width"] = 1032.91845703125,
-		["height"] = 1043.524291992188,
-		["yOffset"] = 1240.373413085938,
+	["savedSnippets"] = {
 	},
 	["spellCache"] = {
 		["Spotted"] = {
@@ -74142,5 +74130,17 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.13.1",
+	["lockPositions"] = false,
+	["frame"] = {
+		["xOffset"] = 1215.343872070313,
+		["yOffset"] = 1240.373413085938,
+		["height"] = 1043.524291992188,
+		["width"] = 1032.91845703125,
+	},
+	["spellCacheStrings"] = true,
+	["spellCacheAchivements"] = true,
 	["build"] = "54647",
 }

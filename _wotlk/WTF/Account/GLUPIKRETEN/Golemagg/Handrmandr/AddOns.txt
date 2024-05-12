@@ -186,3 +186,4 @@ unitscan: disabled
 Drift: disabled
 Immersion: enabled
 ConsolePort: enabled
+ACP: enabled
