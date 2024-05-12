@@ -1,6 +1,7 @@
-VER 3 0000000001000014 " " "134400"
+VER 3 0000000001000015 " " "134400"
 #showtooltip 
-/cast [@focus, help, nodead][] Beacon of Light
+/startattack
+/cast [@mouseover, harm, nodead][] Avenger's Shield
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -64,8 +65,7 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Holy Shock
 /cast [@mouseover, help, nodead][] Holy Shock
 END
-VER 3 0000000001000015 " " "134400"
+VER 3 0000000001000014 " " "134400"
 #showtooltip 
-/startattack
-/cast [@mouseover, harm, nodead][] Avenger's Shield
+/cast [@focus, help, nodead][] Beacon of Light
 END

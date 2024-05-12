@@ -1,5 +1,6 @@
-## v4.13.25 Changes
+## v4.13.26 Changes
 
-* [Cata] Ink conversion and enchanting vellum updates
+* [Retail] Updated Bonus IDs
+* [Retail] Updated for 10.2.7
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

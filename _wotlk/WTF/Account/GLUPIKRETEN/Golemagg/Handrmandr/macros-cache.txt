@@ -6,7 +6,7 @@ END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip 
 /startattack
-/cast Judgement of Wisdom
+/cast Judgement
 END
 VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
 #showtooltip Flash of Light

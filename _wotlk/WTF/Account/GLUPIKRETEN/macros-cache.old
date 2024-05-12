@@ -37,20 +37,20 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 /cancelaura [form:5] Flight Form;[form:3] Cat Form
 /cast [noform:3]Cat Form
 END
-VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
-#showtooltip
-/use [nocombat]item:1205
-/castsequence [combat] reset=combat item:3385
-END
 VER 3 000000000000002C "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat item:13443,item:6149
+/castsequence [combat] reset=combat 
+END
+VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
+#showtooltip
+/use [nocombat]item:33444
+/castsequence [combat] reset=combat item:33448
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:33454
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -62,13 +62,13 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:0
 END
-VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
-#showtooltip
-/use item:929
-END
 VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
+END
+VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
+#showtooltip
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl

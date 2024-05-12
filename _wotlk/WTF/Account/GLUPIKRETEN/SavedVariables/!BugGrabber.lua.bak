@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 10276,
 	["lastSanitation"] = 3,
+	["session"] = 10279,
 	["errors"] = {
 		{
 			["message"] = "...\\LibClassicSwingTimerAPI\\LibClassicSwingTimerAPI-8.lua:153: attempt to index field 'mainTimer' (a nil value)",
@@ -1176,8 +1176,8 @@ BugGrabberDB = {
 		}, -- [149]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 7138,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 205,
 		}, -- [150]
 		{
@@ -1190,20 +1190,20 @@ BugGrabberDB = {
 		}, -- [151]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["session"] = 7145,
 			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
 			["counter"] = 1,
 		}, -- [152]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["session"] = 7145,
 			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
 			["counter"] = 1,
 		}, -- [153]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["session"] = 7145,
 			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
 			["counter"] = 1,
 		}, -- [154]
 		{
@@ -1216,44 +1216,44 @@ BugGrabberDB = {
 		}, -- [155]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [156]
 		{
 			["message"] = "Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [157]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [158]
 		{
 			["message"] = "Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [159]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [160]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["time"] = "2022/10/27 16:37:20",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:20",
 			["counter"] = 2,
 		}, -- [161]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:55",
+			["session"] = 7185,
 			["counter"] = 1,
 		}, -- [162]
 		{
@@ -2193,20 +2193,20 @@ BugGrabberDB = {
 		}, -- [282]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["time"] = "2022/10/31 21:00:28",
 			["session"] = 7585,
+			["time"] = "2022/10/31 21:00:28",
 			["counter"] = 28,
 		}, -- [283]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["time"] = "2022/10/31 21:00:28",
 			["session"] = 7585,
+			["time"] = "2022/10/31 21:00:28",
 			["counter"] = 28,
 		}, -- [284]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["time"] = "2022/10/31 21:00:28",
 			["session"] = 7585,
+			["time"] = "2022/10/31 21:00:28",
 			["counter"] = 28,
 		}, -- [285]
 		{
@@ -2662,14 +2662,14 @@ BugGrabberDB = {
 		}, -- [344]
 		{
 			["message"] = "Interface\\AddOns\\ShadowedUnitFrames\\libs\\LibSpellRange-1.0\\lib.xml:1 Interface\\AddOns\\ShadowedUnitFrames\\localization\\enUS-English (US).lua:836: unexpected symbol near '='",
-			["time"] = "2022/12/19 11:55:36",
 			["session"] = 8039,
+			["time"] = "2022/12/19 11:55:36",
 			["counter"] = 2,
 		}, -- [345]
 		{
 			["message"] = "Interface\\AddOns\\ShadowedUnitFrames\\ShadowedUnitFrames.xml:1 (null)",
-			["time"] = "2022/12/19 11:55:36",
 			["session"] = 8039,
+			["time"] = "2022/12/19 11:55:36",
 			["counter"] = 18,
 		}, -- [346]
 		{
@@ -3132,14 +3132,14 @@ BugGrabberDB = {
 		}, -- [405]
 		{
 			["message"] = "Interface/AddOns/MikScrollingBattleText/MSBTCooldowns.lua:1 (null)",
-			["session"] = 8463,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8463,
 			["counter"] = 1,
 		}, -- [406]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/MikScrollingBattleText/MSBTCooldowns.lua:1 (null)",
-			["session"] = 8463,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8463,
 			["counter"] = 1,
 		}, -- [407]
 		{
@@ -3152,14 +3152,14 @@ BugGrabberDB = {
 		}, -- [408]
 		{
 			["message"] = "Interface/AddOns/Questie/Modules/Quest/GossipFrameDailyMarker.lua:1 (null)",
-			["session"] = 8464,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8464,
 			["counter"] = 2,
 		}, -- [409]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/Questie/Modules/Quest/GossipFrameDailyMarker.lua:1 (null)",
-			["session"] = 8464,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8464,
 			["counter"] = 2,
 		}, -- [410]
 		{
@@ -3188,38 +3188,38 @@ BugGrabberDB = {
 		}, -- [413]
 		{
 			["message"] = "Interface/AddOns/nMinimap/tab.lua:1 Interface/AddOns/nMinimap/tab.lua:408: unexpected symbol near 'local'",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [414]
 		{
 			["message"] = "Interface/AddOns/nMinimap/tab.xml:183 Frame nMinimapTab: Unknown function nMinimapTab_OnLoad in element OnLoad",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [415]
 		{
 			["message"] = "Interface/AddOns/nMinimap/tab.xml:184 Frame nMinimapTab: Unknown function nMinimapTab_OnUpdate in element OnUpdate",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [416]
 		{
 			["message"] = "Interface/AddOns/nMinimap/tab.xml:75 Frame nMinimapTabCenter: Unknown function nMinimapTab_Friends_OnEvent in element OnEvent",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [417]
 		{
 			["message"] = "Interface/AddOns/nMinimap/tab.xml:120 Frame nMinimapTabLeft: Unknown function nMinimapTab_Guild_OnEvent in element OnEvent",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [418]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMinimap/tab.lua:1 Interface/AddOns/nMinimap/tab.lua:408: unexpected symbol near 'local'",
-			["session"] = 8467,
 			["time"] = "2023/01/18 09:03:37",
+			["session"] = 8467,
 			["counter"] = 1,
 		}, -- [419]
 		{
@@ -3311,14 +3311,14 @@ BugGrabberDB = {
 		}, -- [430]
 		{
 			["message"] = "Interface/AddOns/xVermin/Rotation/AOE.lua:1 (null)",
-			["session"] = 8474,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8474,
 			["counter"] = 10,
 		}, -- [431]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Rotation/AOE.lua:1 (null)",
-			["session"] = 8474,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8474,
 			["counter"] = 9,
 		}, -- [432]
 		{
@@ -3339,14 +3339,14 @@ BugGrabberDB = {
 		}, -- [434]
 		{
 			["message"] = "Interface/AddOns/nTooltip/core.lua:1 (null)",
-			["session"] = 8477,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8477,
 			["counter"] = 13,
 		}, -- [435]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/nTooltip/core.lua:1 (null)",
-			["session"] = 8477,
 			["time"] = "2023/01/18 08:54:54",
+			["session"] = 8477,
 			["counter"] = 12,
 		}, -- [436]
 		{
@@ -3419,14 +3419,14 @@ BugGrabberDB = {
 		}, -- [445]
 		{
 			["message"] = "Interface/AddOns/GDKPd/GDKPd.lua:1 (null)",
-			["time"] = "2023/01/18 16:18:33",
 			["session"] = 8485,
+			["time"] = "2023/01/18 16:18:33",
 			["counter"] = 2,
 		}, -- [446]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/GDKPd/GDKPd.lua:1 (null)",
-			["time"] = "2023/01/18 16:18:33",
 			["session"] = 8485,
+			["time"] = "2023/01/18 16:18:33",
 			["counter"] = 2,
 		}, -- [447]
 		{
@@ -3674,14 +3674,14 @@ BugGrabberDB = {
 		}, -- [478]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/ItemID.lua:1 Interface/AddOns/xVermin/Helpers/ItemID.lua:18: unexpected symbol near ')'",
-			["time"] = "2023/01/21 18:44:07",
 			["session"] = 8554,
+			["time"] = "2023/01/21 18:44:07",
 			["counter"] = 1,
 		}, -- [479]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/ItemID.lua:1 Interface/AddOns/xVermin/Helpers/ItemID.lua:18: unexpected symbol near ')'",
-			["time"] = "2023/01/21 18:44:07",
 			["session"] = 8554,
+			["time"] = "2023/01/21 18:44:07",
 			["counter"] = 1,
 		}, -- [480]
 		{
@@ -3742,14 +3742,14 @@ BugGrabberDB = {
 		}, -- [487]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/ItemID.lua:1 (null)",
-			["time"] = "2023/01/21 18:34:33",
 			["session"] = 8567,
+			["time"] = "2023/01/21 18:34:33",
 			["counter"] = 8,
 		}, -- [488]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/ItemID.lua:1 (null)",
-			["time"] = "2023/01/21 18:34:33",
 			["session"] = 8567,
+			["time"] = "2023/01/21 18:34:33",
 			["counter"] = 8,
 		}, -- [489]
 		{
@@ -3825,14 +3825,14 @@ BugGrabberDB = {
 		}, -- [498]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltipStatusBar.lua:1 (null)",
-			["time"] = "2023/01/23 08:43:04",
 			["session"] = 8600,
+			["time"] = "2023/01/23 08:43:04",
 			["counter"] = 1,
 		}, -- [499]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltipStatusBar.lua:1 (null)",
-			["time"] = "2023/01/23 08:43:04",
 			["session"] = 8600,
+			["time"] = "2023/01/23 08:43:04",
 			["counter"] = 1,
 		}, -- [500]
 		{
@@ -4120,14 +4120,14 @@ BugGrabberDB = {
 		}, -- [536]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:78 Error loading Interface/AddOns/xVermin/Helpers/Tooltip.lua",
-			["session"] = 8771,
 			["time"] = "2023/01/29 13:09:23",
+			["session"] = 8771,
 			["counter"] = 1,
 		}, -- [537]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:78 Error loading Interface/AddOns/xVermin/Helpers/Tooltip.lua",
-			["session"] = 8771,
 			["time"] = "2023/01/29 13:09:23",
+			["session"] = 8771,
 			["counter"] = 1,
 		}, -- [538]
 		{
@@ -4396,14 +4396,14 @@ BugGrabberDB = {
 		}, -- [571]
 		{
 			["message"] = "Interface/AddOns/gmSpecs/core.lua:1 (null)",
-			["session"] = 8785,
 			["time"] = "2023/01/29 14:27:58",
+			["session"] = 8785,
 			["counter"] = 1,
 		}, -- [572]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/gmSpecs/core.lua:1 (null)",
-			["session"] = 8785,
 			["time"] = "2023/01/29 14:27:58",
+			["session"] = 8785,
 			["counter"] = 1,
 		}, -- [573]
 		{
@@ -4606,50 +4606,50 @@ BugGrabberDB = {
 		}, -- [598]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Init.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [599]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Core/Functions.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [600]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Core/Config.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [601]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Modules/BonusRoll.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [602]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Modules/Calling.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [603]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Modules/Currency.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [604]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Modules/MythicPlus.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [605]
 		{
 			["message"] = "Interface/AddOns/SavedInstances/Modules/Progress.lua:1 (null)",
-			["time"] = "2023/01/30 14:06:42",
 			["session"] = 8832,
+			["time"] = "2023/01/30 14:06:42",
 			["counter"] = 2,
 		}, -- [606]
 		{
@@ -4693,14 +4693,14 @@ BugGrabberDB = {
 		}, -- [611]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 8837,
 			["time"] = "2023/01/23 14:01:23",
+			["session"] = 8837,
 			["counter"] = 6,
 		}, -- [612]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 8837,
 			["time"] = "2023/01/23 14:01:23",
+			["session"] = 8837,
 			["counter"] = 6,
 		}, -- [613]
 		{
@@ -5535,14 +5535,14 @@ BugGrabberDB = {
 		}, -- [719]
 		{
 			["message"] = "Interface/AddOns/xVermin/Rotation/SwingTimer.lua:1 (null)",
-			["session"] = 9425,
 			["time"] = "2023/02/28 14:23:27",
+			["session"] = 9425,
 			["counter"] = 1,
 		}, -- [720]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Rotation/SwingTimer.lua:1 (null)",
-			["session"] = 9425,
 			["time"] = "2023/02/28 14:23:27",
+			["session"] = 9425,
 			["counter"] = 1,
 		}, -- [721]
 		{
@@ -5895,56 +5895,56 @@ BugGrabberDB = {
 		}, -- [767]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:64 Error loading Interface/AddOns/Details/core/timemachine.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [768]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:66 Error loading Interface/AddOns/Details/frames/anime.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [769]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:67 Couldn't open Interface/AddOns/Details/frames/anime.xml",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [770]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:68 Error loading Interface/AddOns/Details/frames/fw_mods.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [771]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:69 Couldn't open Interface/AddOns/Details/frames/toolbar_button.xml",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [772]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:71 Error loading Interface/AddOns/Details/frames/window_copy.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [773]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:73 Error loading Interface/AddOns/Details/frames/window_options2_sections.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [774]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:74 Error loading Interface/AddOns/Details/frames/window_api.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [775]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:75 Error loading Interface/AddOns/Details/frames/window_cdtracker.lua",
-			["time"] = "2023/03/09 09:54:59",
 			["session"] = 9576,
+			["time"] = "2023/03/09 09:54:59",
 			["counter"] = 1,
 		}, -- [776]
 		{
@@ -6053,14 +6053,14 @@ BugGrabberDB = {
 		}, -- [790]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:45 Error loading Interface/AddOns/xVermin/Addons/MultiCastActionBarFrame.lua",
-			["session"] = 9671,
 			["time"] = "2023/03/13 12:24:59",
+			["session"] = 9671,
 			["counter"] = 1,
 		}, -- [791]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:45 Error loading Interface/AddOns/xVermin/Addons/MultiCastActionBarFrame.lua",
-			["session"] = 9671,
 			["time"] = "2023/03/13 12:24:59",
+			["session"] = 9671,
 			["counter"] = 1,
 		}, -- [792]
 		{
@@ -6381,14 +6381,14 @@ BugGrabberDB = {
 		}, -- [833]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/Bagnon.lua:1 (null)",
-			["session"] = 9825,
 			["time"] = "2023/10/18 08:59:38",
+			["session"] = 9825,
 			["counter"] = 1,
 		}, -- [834]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Addons/Bagnon.lua:1 (null)",
-			["session"] = 9825,
 			["time"] = "2023/10/18 08:59:38",
+			["session"] = 9825,
 			["counter"] = 1,
 		}, -- [835]
 		{
@@ -6489,14 +6489,14 @@ BugGrabberDB = {
 		}, -- [847]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/Questie.lua:1 (null)",
-			["session"] = 9913,
 			["time"] = "2023/10/27 08:29:49",
+			["session"] = 9913,
 			["counter"] = 1,
 		}, -- [848]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Addons/Questie.lua:1 (null)",
-			["session"] = 9913,
 			["time"] = "2023/10/27 08:29:49",
+			["session"] = 9913,
 			["counter"] = 1,
 		}, -- [849]
 		{
@@ -6573,14 +6573,14 @@ BugGrabberDB = {
 		}, -- [858]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:81 Error loading Interface/AddOns/xVermin/Helpers/TimeToDie.lua",
-			["time"] = "2023/11/09 14:42:03",
 			["session"] = 9977,
+			["time"] = "2023/11/09 14:42:03",
 			["counter"] = 2,
 		}, -- [859]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:81 Error loading Interface/AddOns/xVermin/Helpers/TimeToDie.lua",
-			["time"] = "2023/11/09 14:42:03",
 			["session"] = 9977,
+			["time"] = "2023/11/09 14:42:03",
 			["counter"] = 2,
 		}, -- [860]
 		{
@@ -6857,14 +6857,14 @@ BugGrabberDB = {
 		}, -- [894]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:1 Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:3: ')' expected near 'rollID'",
-			["session"] = 10077,
 			["time"] = "2023/11/13 14:50:43",
+			["session"] = 10077,
 			["counter"] = 1,
 		}, -- [895]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:1 Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:3: ')' expected near 'rollID'",
-			["session"] = 10077,
 			["time"] = "2023/11/13 14:50:43",
+			["session"] = 10077,
 			["counter"] = 1,
 		}, -- [896]
 		{
@@ -6877,14 +6877,14 @@ BugGrabberDB = {
 		}, -- [897]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:1 (null)",
-			["time"] = "2023/11/13 14:51:22",
 			["session"] = 10078,
+			["time"] = "2023/11/13 14:51:22",
 			["counter"] = 1,
 		}, -- [898]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GroopLootFrame.lua:1 (null)",
-			["time"] = "2023/11/13 14:51:22",
 			["session"] = 10078,
+			["time"] = "2023/11/13 14:51:22",
 			["counter"] = 1,
 		}, -- [899]
 		{
@@ -6993,56 +6993,56 @@ BugGrabberDB = {
 		}, -- [912]
 		{
 			["message"] = "Interface/AddOns/xVermin/_Core.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 7,
 		}, -- [913]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/_Misc_Frames.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 7,
 		}, -- [914]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 7,
 		}, -- [915]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/KillCount.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 7,
 		}, -- [916]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/BISTooltip.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 7,
 		}, -- [917]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/ChocolateBar.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 6,
 		}, -- [918]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/ECS.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 6,
 		}, -- [919]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/GDKP.lua:1 (null)",
-			["session"] = 10081,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10081,
 			["counter"] = 6,
 		}, -- [920]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/ItemRack.lua:1 (null)",
-			["time"] = "2023/11/11 11:03:33",
 			["session"] = 10081,
+			["time"] = "2023/11/11 11:03:33",
 			["counter"] = 5,
 		}, -- [921]
 		{
@@ -7190,14 +7190,14 @@ BugGrabberDB = {
 		}, -- [939]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/Unit.lua:1 (null)",
-			["session"] = 10125,
 			["time"] = "2023/11/11 11:03:14",
+			["session"] = 10125,
 			["counter"] = 8,
 		}, -- [940]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/Unit.lua:1 (null)",
-			["session"] = 10125,
 			["time"] = "2023/11/19 16:06:55",
+			["session"] = 10125,
 			["counter"] = 1,
 		}, -- [941]
 		{
@@ -7631,21 +7631,13 @@ BugGrabberDB = {
 			["counter"] = 148,
 		}, -- [995]
 		{
-			["message"] = "Interface/AddOns/PallyPower/PallyPower.lua:649: attempt to index field '?' (a nil value)",
-			["time"] = "2024/05/11 11:15:56",
-			["locals"] = "self = PallyPowerBlessingsFrameTitle {\n 0 = <userdata>\n}\nelapsed = 0.004000\nnumPallys = 0\nnumMaxClass = 1\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"Handrmandr\"\n}\n(for control) = 1\ni = 1\nname = \"Handrmandr\"\nfname = \"PallyPowerBlessingsFramePlayer1\"\nSkillInfo = <table> {\n symbols = 0\n AuraInfo = <table> {\n }\n subgroup = 1\n CooldownInfo = <table> {\n }\n}\nBuffInfo = nil\nNormalBuffInfo = nil\n(for index) = 5\n(for limit) = 6\n(for step) = 1\nid = 5\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"Icon\"\n(*temporary) = \"5\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\ninitialized = true\nclasses = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n}\nclasslist = <table> {\n 1 = 0\n 2 = 0\n 3 = 0\n 4 = 0\n 5 = 1\n 6 = 0\n 7 = 0\n 8 = 0\n 9 = 0\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/PallyPower/PallyPower.lua\"]:649: in function `PallyPowerBlessingsGrid_Update'\n[string \"*PallyPower_Wrath.xml:1537_OnUpdate\"]:1: in function <[string \"*PallyPower_Wrath.xml:1537_OnUpdate\"]:1>",
-			["session"] = 10270,
-			["counter"] = 106,
-		}, -- [996]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
 			["time"] = "2024/05/11 11:13:14",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:100: in function `?'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:21: in function `FullUpdate'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:342: in function <...nterface/AddOns/ShadowedUnitFrames/modules/units.lua:342>",
 			["session"] = 10271,
 			["counter"] = 2,
-		}, -- [997]
+		}, -- [996]
 		{
 			["message"] = "Interface/AddOns/QuestReward/main.lua:161: attempt to index local 'btn' (a nil value)",
 			["time"] = "2024/05/11 11:27:22",
@@ -7653,7 +7645,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/QuestReward/main.lua\"]:161: in function `QuestReward_SelectItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:156: in function `QuestReward_ChooseItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:81: in function <Interface/AddOns/QuestReward/main.lua:76>",
 			["session"] = 10273,
 			["counter"] = 3,
-		}, -- [998]
+		}, -- [997]
 		{
 			["message"] = "Interface/AddOns/PallyPower/PallyPower.lua:1269: table index is nil",
 			["time"] = "2024/05/11 11:33:26",
@@ -7661,12 +7653,20 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/PallyPower/PallyPower.lua\"]:1269: in function `ScanTalents'\n[string \"@Interface/AddOns/PallyPower/PallyPower.lua\"]:195: in function <Interface/AddOns/PallyPower/PallyPower.lua:191>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:523: in function `EnableAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:626: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
 			["session"] = 10276,
 			["counter"] = 1,
-		}, -- [999]
+		}, -- [998]
 		{
 			["message"] = "Interface/AddOns/RangeDisplay/RangeDisplay_Cata.toc:30 Duplicate File Load Detected. [Interface/AddOns/RangeDisplay/libs/LibDataBroker-1.1-4/LibDataBroker-1.1.lua] first loaded at [Interface/AddOns/RangeDisplay/RangeDisplay_Cata.toc:28]",
+			["session"] = 10279,
 			["time"] = "2024/05/01 10:32:33",
-			["session"] = 10276,
-			["counter"] = 72,
+			["counter"] = 78,
+		}, -- [999]
+		{
+			["message"] = "Interface/AddOns/PallyPower/PallyPower.lua:649: attempt to index field '?' (a nil value)",
+			["time"] = "2024/05/11 11:15:56",
+			["locals"] = "self = PallyPowerBlessingsFrameTitle {\n 0 = <userdata>\n}\nelapsed = 0.004000\nnumPallys = 0\nnumMaxClass = 1\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"Handrmandr\"\n}\n(for control) = 1\ni = 1\nname = \"Handrmandr\"\nfname = \"PallyPowerBlessingsFramePlayer1\"\nSkillInfo = <table> {\n symbols = 0\n AuraInfo = <table> {\n }\n subgroup = 1\n CooldownInfo = <table> {\n }\n}\nBuffInfo = nil\nNormalBuffInfo = nil\n(for index) = 5\n(for limit) = 6\n(for step) = 1\nid = 5\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"Icon\"\n(*temporary) = \"5\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\ninitialized = true\nclasses = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n}\nclasslist = <table> {\n 1 = 0\n 2 = 0\n 3 = 0\n 4 = 0\n 5 = 1\n 6 = 0\n 7 = 0\n 8 = 0\n 9 = 0\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/PallyPower/PallyPower.lua\"]:649: in function `PallyPowerBlessingsGrid_Update'\n[string \"*PallyPower_Wrath.xml:1537_OnUpdate\"]:1: in function <[string \"*PallyPower_Wrath.xml:1537_OnUpdate\"]:1>",
+			["session"] = 10279,
+			["counter"] = 261,
 		}, -- [1000]
 	},
 }

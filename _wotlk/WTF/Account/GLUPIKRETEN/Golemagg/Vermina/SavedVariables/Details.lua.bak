@@ -1094,7 +1094,7 @@ _detalhes_database = {
 										["MISS"] = 2,
 										["counter"] = 46,
 										["a_amt"] = 1,
-										["total"] = 36915,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["c_amt"] = 0,
 										["id"] = 1,
@@ -1108,7 +1108,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 39,
-										["r_amt"] = 0,
+										["total"] = 36915,
 										["n_max"] = 1463,
 									}, -- [1]
 									[59248] = {
@@ -1364,14 +1364,14 @@ _detalhes_database = {
 											["Ayamcamani-Gehennas"] = 2743,
 										},
 										["n_total"] = 14949,
-										["g_dmg"] = 0,
-										["MISS"] = 1,
-										["n_min"] = 369,
 										["a_amt"] = 0,
+										["g_dmg"] = 0,
+										["n_min"] = 369,
+										["MISS"] = 1,
 										["counter"] = 23,
 										["r_amt"] = 0,
 										["total"] = 14949,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["c_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1384,7 +1384,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 17,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["n_max"] = 1696,
 									}, -- [1]
 									[59256] = {
@@ -1507,14 +1507,14 @@ _detalhes_database = {
 											["Violet Hold Guard"] = 22631,
 										},
 										["n_total"] = 25876,
-										["MISS"] = 2,
-										["a_amt"] = 0,
-										["n_min"] = 268,
 										["g_dmg"] = 0,
+										["MISS"] = 2,
+										["n_min"] = 268,
+										["a_amt"] = 0,
 										["counter"] = 49,
 										["r_amt"] = 0,
 										["total"] = 27580,
-										["spellschool"] = 1,
+										["c_max"] = 1704,
 										["c_amt"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1527,7 +1527,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 1704,
 										["n_amt"] = 37,
-										["c_max"] = 1704,
+										["spellschool"] = 1,
 										["n_max"] = 1261,
 									}, -- [1]
 									[58469] = {
@@ -2083,7 +2083,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4477-0525AB6C",
+							["classe"] = "PRIEST",
 							["totalover"] = 13787.001364,
 							["total_without_pet"] = 78550.001364,
 							["total"] = 78550.001364,
@@ -2111,8 +2111,8 @@ _detalhes_database = {
 							["healing_taken"] = 19108.001364,
 							["fight_component"] = true,
 							["end_time"] = 1710610716,
-							["classe"] = "PRIEST",
 							["heal_enemy_amt"] = 0,
+							["aID"] = "4477-0525AB6C",
 							["nome"] = "Tripletwo-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2309,7 +2309,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-05401707",
+							["classe"] = "PRIEST",
 							["totalover"] = 418.008177,
 							["total_without_pet"] = 12198.008177,
 							["total"] = 12198.008177,
@@ -2333,8 +2333,8 @@ _detalhes_database = {
 							["healing_taken"] = 27776.008177,
 							["fight_component"] = true,
 							["end_time"] = 1710610716,
-							["classe"] = "PRIEST",
 							["heal_enemy_amt"] = 0,
+							["aID"] = "4476-05401707",
 							["nome"] = "Panpoziomek-Gehennas",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2491,7 +2491,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-05403F22",
+							["classe"] = "ROGUE",
 							["totalover"] = 0.005307,
 							["total_without_pet"] = 0.005307,
 							["total"] = 0.005307,
@@ -2511,8 +2511,8 @@ _detalhes_database = {
 							["healing_taken"] = 30228.005307,
 							["fight_component"] = true,
 							["end_time"] = 1710610716,
-							["classe"] = "ROGUE",
 							["heal_enemy_amt"] = 0,
+							["aID"] = "4476-05403F22",
 							["nome"] = "Ayamcamani-Gehennas",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2539,7 +2539,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = true,
-							["aID"] = "4465-02BB4683",
+							["classe"] = "PALADIN",
 							["totalover"] = 4035.002711,
 							["total_without_pet"] = 0.002711,
 							["total"] = 0.002711,
@@ -2559,8 +2559,8 @@ _detalhes_database = {
 							["last_event"] = 1715416154,
 							["healing_taken"] = 13636.002711,
 							["fight_component"] = true,
-							["classe"] = "PALADIN",
 							["heal_enemy_amt"] = 0,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2789,14 +2789,14 @@ _detalhes_database = {
 							["flag_original"] = 1297,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[20186] = {
-										["appliedamt"] = 1,
+									[26017] = {
+										["appliedamt"] = 6,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 20,
-										["id"] = 20186,
-										["refreshamt"] = 0,
+										["activedamt"] = 4,
+										["uptime"] = 32,
+										["id"] = 26017,
+										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -2833,13 +2833,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[48827] = {
-										["appliedamt"] = 3,
+									[20186] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["activedamt"] = 3,
-										["uptime"] = 6,
-										["id"] = 48827,
+										["activedamt"] = 0,
+										["uptime"] = 20,
+										["id"] = 20186,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2855,14 +2855,14 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[26017] = {
-										["appliedamt"] = 6,
+									[48827] = {
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
-										["activedamt"] = 4,
-										["uptime"] = 32,
-										["id"] = 26017,
-										["refreshamt"] = 1,
+										["activedamt"] = 3,
+										["uptime"] = 6,
+										["id"] = 48827,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -3139,18 +3139,18 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 28,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["spec"] = 256,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4477-0525AB6C",
-							["tipo"] = 4,
 							["last_event"] = 1710610710,
+							["tipo"] = 4,
 							["nome"] = "Tripletwo-Venoxis",
 							["serial"] = "Player-4477-0525AB6C",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [2]
 						{
@@ -3175,16 +3175,15 @@ _detalhes_database = {
 							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
+									[67703] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["actived_at"] = 1710610671,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 67703,
 										["refreshamt"] = 0,
-										["actived"] = true,
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[65014] = {
@@ -3198,6 +3197,18 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[72221] = {
+										["activedamt"] = 1,
+										["id"] = 72221,
+										["targets"] = {
+										},
+										["actived_at"] = 1710610671,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
 									[57993] = {
 										["appliedamt"] = 2,
 										["targets"] = {
@@ -3209,34 +3220,23 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[67703] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 15,
-										["id"] = 67703,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 31,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["spec"] = 259,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4476-05403F22",
-							["tipo"] = 4,
 							["last_event"] = 1710610709,
+							["tipo"] = 4,
 							["nome"] = "Ayamcamani-Gehennas",
 							["serial"] = "Player-4476-05403F22",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [3]
 						{
@@ -3528,28 +3528,28 @@ _detalhes_database = {
 							["pets"] = {
 								"Mirror Image <Azure Invader>", -- [1]
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "31008",
 							["monster"] = true,
 							["nome"] = "Azure Invader",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4458-608-27166-31008-000075D8D2",
-							["aID"] = "31008",
+							["classe"] = "UNKNOW",
 						}, -- [7]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 								"Mirror Image <Azure Binder>", -- [1]
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "31007",
 							["monster"] = true,
 							["nome"] = "Azure Binder",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4458-608-27166-31007-000075D8BF",
-							["aID"] = "31007",
+							["classe"] = "UNKNOW",
 						}, -- [8]
 						{
 							["flag_original"] = 8776,
@@ -3559,8 +3559,8 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["ownerName"] = "Azure Invader",
 							["nome"] = "Mirror Image <Azure Invader>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4458-608-27166-205998-000075D8F7",
 							["aID"] = "205998",
 						}, -- [9]
@@ -3642,8 +3642,8 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["ownerName"] = "Azure Binder",
 							["nome"] = "Mirror Image <Azure Binder>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4458-608-27166-205999-000075D90E",
 							["aID"] = "205999",
 						}, -- [12]
@@ -6606,11 +6606,11 @@ _detalhes_database = {
 					},
 				},
 				["totals"] = {
-					549044, -- [1]
-					98800, -- [2]
+					572583, -- [1]
+					100218, -- [2]
 					{
-						10, -- [1]
-						[0] = 3971,
+						20, -- [1]
+						[0] = 6232,
 						["alternatepower"] = 0,
 						[3] = 116,
 						[6] = 40,
@@ -6655,6 +6655,10 @@ _detalhes_database = {
 						["Charge"] = 1,
 						["Arcane Missiles"] = 2,
 					},
+					["Mirror Image <Azure Mage Slayer>"] = {
+						["Charge"] = 1,
+						["Arcane Missiles"] = 1,
+					},
 					["Tripletwo-Venoxis"] = {
 						["Psychic Scream"] = 1,
 						["Power Word: Shield"] = 6,
@@ -6663,18 +6667,14 @@ _detalhes_database = {
 						["Penance"] = 3,
 						["Fade"] = 1,
 					},
-					["Mirror Image <Azure Mage Slayer>"] = {
-						["Charge"] = 1,
-						["Arcane Missiles"] = 1,
-					},
-					["Mirror Image"] = {
-						["Holy Nova"] = 3,
-						["Arcane Missiles"] = 23,
-					},
 					["Vermina"] = {
 						["Seal of Command"] = 15,
 						["Avenger's Shield"] = 1,
 						["Judgement of Wisdom"] = 1,
+					},
+					["Mirror Image"] = {
+						["Holy Nova"] = 3,
+						["Arcane Missiles"] = 23,
 					},
 					["Panpoziomek-Gehennas"] = {
 						["Mind Sear"] = 3,
@@ -7034,7 +7034,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1710610638,
 	["active_profile"] = "xVermin",
-	["last_day"] = "11",
+	["last_day"] = "12",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -7050,28 +7050,744 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["character_data"] = {
-		["logons"] = 2339,
-	},
-	["mythic_plus_log"] = {
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 13914,
-	["force_font_outline"] = "",
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["hide_on_combat"] = false,
+			["opened"] = 0,
+			["author"] = "Details! Team",
+			["show_icon"] = 5,
+			["encounter_timers_dbm"] = {
+			},
+			["window_scale"] = 1,
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["point"] = "RIGHT",
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["row_height"] = 18,
+			["arrow_anchor_x"] = 0,
+			["scale"] = 1,
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["font_size"] = 10,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["use_square_mode"] = false,
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
+			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["realm_lastamt"] = 0,
+			["realm_history"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["tank_block_size_height"] = 50,
+			["show_power_bar"] = false,
+			["first_run"] = false,
+			["aura_timer_text_size"] = 14,
+			["tank_block_castbar_size_height"] = 16,
+			["show_health_bar"] = true,
+			["aura_offset_y"] = 0,
+			["enabled"] = true,
+			["show_cast_bar"] = false,
+			["author"] = "Details! Team",
+			["tank_block_size"] = 150,
+			["bar_height"] = 24,
+			["tank_block_texture"] = "Details Serenity",
+			["tank_block_color"] = {
+				0.074509, -- [1]
+				0.035294, -- [2]
+				0.035294, -- [3]
+				0.832845, -- [4]
+			},
+			["tank_block_height"] = 40,
+			["tank_block_powerbar_size_height"] = 10,
+			["show_inc_bars"] = true,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
+		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["animate"] = true,
+			["hide_pull_bar"] = false,
+			["useclasscolors"] = true,
+			["usefocus"] = false,
+			["disable_gouge"] = false,
+			["showamount"] = false,
+			["absolute_mode"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["openedfromcommand"] = false,
+			["updatespeed"] = 0.2,
+			["dividebyhundred"] = true,
+			["alwaysshowme"] = true,
+			["useplayercolor"] = true,
+			["playSound"] = false,
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+			["max_compares"] = 4,
+			["compare_type"] = 1,
+		},
+	},
+	["mythic_plus_log"] = {
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["character_data"] = {
+		["logons"] = 2341,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["force_font_outline"] = "",
 	["on_death_menu"] = false,
 	["cached_talents"] = {
+		["Player-4465-02BB4683"] = {
+			{
+				135921, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [1]
+			{
+				135917, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [2]
+			{
+				135903, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [3]
+			{
+				236251, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [4]
+			{
+				135872, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [5]
+			{
+				135876, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [6]
+			{
+				236261, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [7]
+			{
+				236256, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [8]
+			{
+				236254, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [9]
+			{
+				236247, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [10]
+			{
+				236394, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [11]
+			{
+				135895, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [12]
+			{
+				461859, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [13]
+			{
+				461857, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [14]
+			{
+				460953, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [15]
+			{
+				134909, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [16]
+			{
+				460689, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [17]
+			{
+				135920, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [18]
+			{
+				135875, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [19]
+			{
+				460690, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [20]
+			{
+				133526, -- [1]
+				2, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [21]
+			{
+				135892, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [22]
+			{
+				253400, -- [1]
+				1, -- [2]
+				5, -- [3]
+				4, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [23]
+			{
+				135963, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [24]
+			{
+				236264, -- [1]
+				3, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [25]
+			{
+				135926, -- [1]
+				2, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [26]
+			{
+				136051, -- [1]
+				3, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [27]
+			{
+				135870, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [28]
+			{
+				135880, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [29]
+			{
+				133039, -- [1]
+				2, -- [2]
+				6, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [30]
+			{
+				236259, -- [1]
+				2, -- [2]
+				2, -- [3]
+				1, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [31]
+			{
+				236253, -- [1]
+				1, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [32]
+			{
+				135985, -- [1]
+				1, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [33]
+			{
+				133562, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [34]
+			{
+				135882, -- [1]
+				1, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [35]
+			{
+				133176, -- [1]
+				2, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [36]
+			{
+				236252, -- [1]
+				2, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [37]
+			{
+				236265, -- [1]
+				1, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [38]
+			{
+				135433, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [39]
+			{
+				135883, -- [1]
+				3, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [40]
+			{
+				135897, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [41]
+			{
+				132347, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [42]
+			{
+				135904, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [43]
+			{
+				135889, -- [1]
+				3, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [44]
+			{
+				236246, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [45]
+			{
+				135942, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [46]
+			{
+				236257, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [47]
+			{
+				236262, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [48]
+			{
+				236260, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [49]
+			{
+				236250, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [50]
+			{
+				236249, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [51]
+			{
+				236248, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [52]
+			{
+				237547, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [53]
+			{
+				134916, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				3, -- [7]
+			}, -- [54]
+			{
+				252269, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [55]
+			{
+				237486, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				1, -- [7]
+			}, -- [56]
+			{
+				236258, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [57]
+			{
+				135937, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [58]
+			{
+				236255, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [59]
+			{
+				135964, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				nil, -- [6]
+				2, -- [7]
+			}, -- [60]
+		},
 	},
 	["combat_id"] = 1,
 	["savedStyles"] = {
@@ -7543,7 +8259,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.028855,
+					["resource"] = 0.037535,
 					["pets"] = {
 					},
 					["aID"] = "4476-05403F22",
@@ -7599,7 +8315,7 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.033429,
+					["resource"] = 0.043709,
 					["pets"] = {
 					},
 					["classe"] = "PALADIN",
@@ -7656,7 +8372,7 @@ _detalhes_database = {
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.027799,
+					["resource"] = 0.037893,
 					["pets"] = {
 					},
 					["aID"] = "4477-0525AB6C",
@@ -7719,8 +8435,8 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[26017] = {
-								["id"] = 26017,
+							[48827] = {
+								["id"] = 48827,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7743,8 +8459,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[20186] = {
-								["id"] = 20186,
+							[26017] = {
+								["id"] = 26017,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7755,8 +8471,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[48827] = {
-								["id"] = 48827,
+							[20186] = {
+								["id"] = 20186,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7925,18 +8641,18 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["nome"] = "Tripletwo-Venoxis",
+					["buff_uptime_targets"] = {
+					},
 					["spec"] = 256,
 					["grupo"] = true,
 					["buff_uptime"] = 0,
 					["classe"] = "PRIEST",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["debuff_uptime_targets"] = {
 					},
 					["serial"] = "Player-4477-0525AB6C",
-					["buff_uptime_targets"] = {
-					},
+					["nome"] = "Tripletwo-Venoxis",
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
@@ -7956,8 +8672,8 @@ _detalhes_database = {
 					["aID"] = "4476-05403F22",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[67703] = {
-								["id"] = 67703,
+							[57993] = {
+								["id"] = 57993,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7968,14 +8684,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[72221] = {
-								["id"] = 72221,
+							[67703] = {
+								["id"] = 67703,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[57993] = {
-								["id"] = 57993,
+							[72221] = {
+								["id"] = 72221,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7985,18 +8701,18 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["nome"] = "Ayamcamani-Gehennas",
+					["buff_uptime_targets"] = {
+					},
 					["spec"] = 259,
 					["grupo"] = true,
 					["buff_uptime"] = 0,
 					["classe"] = "ROGUE",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["debuff_uptime_targets"] = {
 					},
 					["serial"] = "Player-4476-05403F22",
-					["buff_uptime_targets"] = {
-					},
+					["nome"] = "Ayamcamani-Gehennas",
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
@@ -8192,27 +8908,27 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "31008",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Azure Invader",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4458-608-27166-31008-000075D8D2",
 					["last_event"] = 0,
+					["aID"] = "31008",
+					["serial"] = "Creature-0-4458-608-27166-31008-000075D8D2",
+					["tipo"] = 4,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "31007",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Azure Binder",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4458-608-27166-31007-000075D8BF",
 					["last_event"] = 0,
+					["aID"] = "31007",
+					["serial"] = "Creature-0-4458-608-27166-31007-000075D8BF",
+					["tipo"] = 4,
 				}, -- [8]
 				{
 					["flag_original"] = 8776,
@@ -8412,183 +9128,9 @@ _detalhes_database = {
 		["combat_counter"] = 13913,
 	},
 	["last_realversion"] = 156,
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
-			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["hide_on_combat"] = false,
-			["opened"] = 0,
-			["author"] = "Details! Team",
-			["show_icon"] = 5,
-			["encounter_timers_dbm"] = {
-			},
-			["window_scale"] = 1,
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["point"] = "RIGHT",
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["row_height"] = 18,
-			["arrow_anchor_x"] = 0,
-			["scale"] = 1,
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
-				["attribute_type"] = 1,
-			},
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["y"] = -183.107162475586,
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = true,
-			["use_square_mode"] = false,
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
-			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
-			["realm_history"] = {
-			},
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_VANGUARD"] = {
-			["tank_block_size_height"] = 50,
-			["show_power_bar"] = false,
-			["first_run"] = false,
-			["aura_timer_text_size"] = 14,
-			["tank_block_castbar_size_height"] = 16,
-			["show_health_bar"] = true,
-			["aura_offset_y"] = 0,
-			["enabled"] = true,
-			["show_cast_bar"] = false,
-			["author"] = "Details! Team",
-			["tank_block_size"] = 150,
-			["bar_height"] = 24,
-			["tank_block_texture"] = "Details Serenity",
-			["tank_block_color"] = {
-				0.074509, -- [1]
-				0.035294, -- [2]
-				0.035294, -- [3]
-				0.832845, -- [4]
-			},
-			["tank_block_height"] = 40,
-			["tank_block_powerbar_size_height"] = 10,
-			["show_inc_bars"] = true,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["animate"] = true,
-			["hide_pull_bar"] = false,
-			["useclasscolors"] = true,
-			["usefocus"] = false,
-			["disable_gouge"] = false,
-			["showamount"] = false,
-			["absolute_mode"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["openedfromcommand"] = false,
-			["updatespeed"] = 0.2,
-			["dividebyhundred"] = true,
-			["alwaysshowme"] = true,
-			["useplayercolor"] = true,
-			["playSound"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-			["max_compares"] = 4,
-			["compare_type"] = 1,
-		},
-	},
 	["data_harvested_for_charts"] = {
 	},
+	["combat_counter"] = 13914,
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {
@@ -8615,10 +9157,10 @@ _detalhes_database = {
 		["Player-4701-03B4D18D"] = "DAMAGER",
 		["Player-4477-044F067E"] = "DAMAGER",
 		["Player-4477-052734D8"] = "DAMAGER",
-		["Player-4465-041B61AD"] = "DAMAGER",
-		["Player-4701-0343CABB"] = "DAMAGER",
+		["Player-4465-045A5CEF"] = "DAMAGER",
+		["Player-4701-0444022E"] = "HEALER",
 		["Player-4465-0415CCF0"] = "TANK",
-		["Player-4476-04DD7A19"] = "DAMAGER",
+		["Player-4477-04AADBFE"] = "DAMAGER",
 		["Player-4465-04181C69"] = "DAMAGER",
 		["Player-4476-051E8988"] = "DAMAGER",
 		["Player-4465-0375957E"] = "DAMAGER",
@@ -8628,7 +9170,7 @@ _detalhes_database = {
 		["Player-4477-0505BCAC"] = "DAMAGER",
 		["Player-4813-04AE098B"] = "DAMAGER",
 		["Player-4477-045E2D24"] = "DAMAGER",
-		["Player-4465-04552866"] = "DAMAGER",
+		["Player-4477-044E195F"] = "DAMAGER",
 		["Player-4465-041C3C9A"] = "DAMAGER",
 		["Player-4476-0515A3CE"] = "DAMAGER",
 		["Player-4465-044BF9AA"] = "DAMAGER",
@@ -8640,7 +9182,7 @@ _detalhes_database = {
 		["Player-4465-04167AB6"] = "DAMAGER",
 		["Player-4477-044F0EE5"] = "HEALER",
 		["Player-4455-052B55CF"] = "DAMAGER",
-		["Player-4476-0529D318"] = "HEALER",
+		["Player-4477-051E53A9"] = "DAMAGER",
 		["Player-4813-04CB8B0A"] = "DAMAGER",
 		["Player-4477-0525AB6C"] = "HEALER",
 		["Player-4465-04565178"] = "DAMAGER",
@@ -8652,14 +9194,14 @@ _detalhes_database = {
 		["Player-4476-051BE3CC"] = "HEALER",
 		["Player-4465-045D7B11"] = "DAMAGER",
 		["Player-4465-041563CC"] = "DAMAGER",
-		["Player-4454-0469C59E"] = "TANK",
+		["Player-4454-051F3F57"] = "DAMAGER",
 		["Player-4465-02843DCA"] = "HEALER",
-		["Player-4465-045D488F"] = "DAMAGER",
+		["Player-4465-0323603A"] = "DAMAGER",
 		["Player-4465-0416CEC7"] = "HEALER",
 		["Player-4476-051B6977"] = "DAMAGER",
 		["Player-4813-01ED33EA"] = "DAMAGER",
 		["Player-4465-027A4F1E"] = "DAMAGER",
-		["Player-4465-0385AADB"] = "DAMAGER",
+		["Player-4453-03B2FCB2"] = "DAMAGER",
 		["Player-4477-0449F01C"] = "HEALER",
 		["Player-4476-051AB1FC"] = "DAMAGER",
 		["Player-4465-0417A121"] = "DAMAGER",
@@ -8747,7 +9289,7 @@ _detalhes_database = {
 		["Player-4465-0394651C"] = "DAMAGER",
 		["Player-4464-045B7033"] = "DAMAGER",
 		["Player-4465-03047852"] = "DAMAGER",
-		["Player-4456-05256276"] = "DAMAGER",
+		["Player-4465-045CDD95"] = "HEALER",
 		["Player-4476-05281BE6"] = "DAMAGER",
 		["Player-4476-04E04996"] = "DAMAGER",
 		["Player-4441-02464036"] = "HEALER",
@@ -8759,7 +9301,7 @@ _detalhes_database = {
 		["Player-4464-045EA14C"] = "DAMAGER",
 		["Player-4465-0272E0C9"] = "DAMAGER",
 		["Player-4455-04F899D3"] = "HEALER",
-		["Player-4465-02BB4683"] = "TANK",
+		["Player-4455-05273629"] = "DAMAGER",
 		["Player-4465-03BA4BD4"] = "DAMAGER",
 		["Player-4441-0389A1A3"] = "DAMAGER",
 		["Player-4465-03A9B48B"] = "DAMAGER",
@@ -8773,31 +9315,31 @@ _detalhes_database = {
 		["Player-4476-050EC70F"] = "HEALER",
 		["Player-4456-014F666C"] = "DAMAGER",
 		["Player-4477-052A2904"] = "DAMAGER",
-		["Player-4476-051D1816"] = "DAMAGER",
+		["Player-4465-0108DC36"] = "DAMAGER",
 		["Player-4464-0193BE5A"] = "DAMAGER",
 		["Player-4476-0514B757"] = "DAMAGER",
-		["Player-4465-00209801"] = "DAMAGER",
+		["Player-4477-04F42090"] = "DAMAGER",
 		["Player-4477-04EA7D87"] = "HEALER",
-		["Player-4453-051EBDF1"] = "DAMAGER",
+		["Player-4465-04598357"] = "DAMAGER",
 		["Player-4456-05247FA8"] = "HEALER",
 		["Player-4477-039306B7"] = "DAMAGER",
 		["Player-4456-05258AEB"] = "HEALER",
 		["Player-4465-04192DCC"] = "DAMAGER",
-		["Player-4476-03B1871D"] = "DAMAGER",
+		["Player-4465-0400DA6F"] = "DAMAGER",
 		["Player-4465-02FE3529"] = "DAMAGER",
-		["Player-4453-03B2FCB2"] = "DAMAGER",
+		["Player-4476-03B1871D"] = "DAMAGER",
 		["Player-4477-052C09E5"] = "DAMAGER",
 		["Player-4465-0419BFF9"] = "DAMAGER",
 		["Player-4465-04184F12"] = "DAMAGER",
 		["Player-4701-041C367F"] = "DAMAGER",
-		["Player-4454-051F3F57"] = "DAMAGER",
+		["Player-4465-03FB544A"] = "HEALER",
 		["Player-4477-052A9286"] = "DAMAGER",
 		["Player-4454-0528E8AA"] = "DAMAGER",
 		["Player-4465-042169FF"] = "DAMAGER",
 		["Player-4465-0434A9F1"] = "HEALER",
 		["Player-4455-0450F48A"] = "HEALER",
 		["Player-4477-04D95E9A"] = "DAMAGER",
-		["Player-4477-051E53A9"] = "DAMAGER",
+		["Player-4465-0446DE3C"] = "DAMAGER",
 		["Player-4813-05280E98"] = "DAMAGER",
 		["Player-4465-024B8106"] = "DAMAGER",
 		["Player-4441-04577924"] = "DAMAGER",
@@ -8805,51 +9347,51 @@ _detalhes_database = {
 		["Player-4465-041DF57A"] = "DAMAGER",
 		["Player-4701-034FB775"] = "DAMAGER",
 		["Player-4465-02F58B56"] = "HEALER",
-		["Player-4465-03D4760B"] = "DAMAGER",
-		["Player-4465-04506D61"] = "HEALER",
+		["Player-4455-033237CC"] = "DAMAGER",
+		["Player-4476-05255BEF"] = "DAMAGER",
 		["Player-4476-05274441"] = "HEALER",
-		["Player-4465-03FB544A"] = "HEALER",
+		["Player-4465-04506D61"] = "HEALER",
 		["Player-4453-050FCC31"] = "DAMAGER",
 		["Player-4455-0522E8F7"] = "DAMAGER",
-		["Player-4465-04598357"] = "DAMAGER",
-		["Player-4465-0433EDC0"] = "DAMAGER",
-		["Player-4455-011D1B6E"] = "DAMAGER",
-		["Player-4813-037CBC76"] = "DAMAGER",
 		["Player-4442-04557765"] = "DAMAGER",
-		["Player-4465-045A7EFE"] = "DAMAGER",
+		["Player-4465-0433EDC0"] = "DAMAGER",
+		["Player-4465-04552866"] = "DAMAGER",
+		["Player-4813-037CBC76"] = "DAMAGER",
+		["Player-4455-011D1B6E"] = "DAMAGER",
+		["Player-4701-0343CABB"] = "DAMAGER",
 		["Player-4701-0429F7D3"] = "HEALER",
 		["Player-4465-017A918E"] = "DAMAGER",
 		["Player-4476-04C23A7F"] = "DAMAGER",
 		["Player-4454-04BDB82C"] = "HEALER",
-		["Player-4701-0441BE2F"] = "DAMAGER",
+		["Player-4476-0529D318"] = "HEALER",
 		["Player-4465-0420AA5C"] = "DAMAGER",
-		["Player-4465-02C34E5A"] = "DAMAGER",
-		["Player-4476-05229702"] = "DAMAGER",
+		["Player-4465-04169280"] = "DAMAGER",
+		["Player-4476-053365F6"] = "DAMAGER",
 		["Player-4476-05401707"] = "DAMAGER",
 		["Player-4476-05403F22"] = "DAMAGER",
-		["Player-4477-05258005"] = "DAMAGER",
-		["Player-4465-037C8B65"] = "DAMAGER",
+		["Player-4476-05229702"] = "DAMAGER",
+		["Player-4476-052895F1"] = "DAMAGER",
 		["Player-4465-041CEC38"] = "DAMAGER",
 		["Player-4476-038F2C91"] = "HEALER",
-		["Player-4465-0418616B"] = "DAMAGER",
-		["Player-4476-053365F6"] = "DAMAGER",
+		["Player-4476-04DD7A19"] = "DAMAGER",
+		["Player-4465-03D4760B"] = "DAMAGER",
 		["Player-4456-050A6CD2"] = "HEALER",
 		["Player-4465-04338D09"] = "DAMAGER",
 		["Player-4477-05229B0E"] = "DAMAGER",
 		["Player-4465-04156195"] = "TANK",
 		["Player-4465-03B6F0C8"] = "DAMAGER",
-		["Player-4701-0444022E"] = "HEALER",
+		["Player-4456-0399FDA0"] = "HEALER",
 		["Player-4454-051CE4AE"] = "DAMAGER",
-		["Player-4465-045A5CEF"] = "DAMAGER",
+		["Player-4465-0418616B"] = "DAMAGER",
 		["Player-4476-036AFEF4"] = "DAMAGER",
 		["Player-4476-051E25F1"] = "DAMAGER",
-		["Player-4456-0492500F"] = "DAMAGER",
-		["Player-4465-01487BDF"] = "DAMAGER",
+		["Player-4465-041B61AD"] = "DAMAGER",
+		["Player-4454-0469C59E"] = "TANK",
 		["Player-4477-04789D02"] = "DAMAGER",
 		["Player-4465-0347473D"] = "DAMAGER",
-		["Player-4465-0445A457"] = "DAMAGER",
+		["Player-4465-02C34E5A"] = "DAMAGER",
 		["Player-4813-043D0093"] = "HEALER",
-		["Player-4476-05255BEF"] = "DAMAGER",
+		["Player-4465-01487BDF"] = "DAMAGER",
 		["Player-4477-05270EA0"] = "DAMAGER",
 		["Player-4465-04157D5F"] = "DAMAGER",
 		["Player-4465-03076084"] = "HEALER",
@@ -8868,7 +9410,7 @@ _detalhes_database = {
 		["Player-4476-0525229B"] = "DAMAGER",
 		["Player-4465-02C30FDE"] = "DAMAGER",
 		["Player-4465-041490F2"] = "DAMAGER",
-		["Player-4465-0170B386"] = "DAMAGER",
+		["Player-4476-0535A8A1"] = "HEALER",
 		["Player-4465-04222B07"] = "HEALER",
 		["Player-4701-045498E2"] = "DAMAGER",
 		["Player-4701-04526AB2"] = "DAMAGER",
@@ -8881,54 +9423,54 @@ _detalhes_database = {
 		["Player-4476-05033284"] = "DAMAGER",
 		["Player-4476-0510A6E9"] = "DAMAGER",
 		["Player-4465-03F83A13"] = "DAMAGER",
-		["Player-4476-0535A8A1"] = "HEALER",
 		["Player-4465-04353CB6"] = "DAMAGER",
+		["Player-4465-0170B386"] = "DAMAGER",
 		["Player-4453-052777C8"] = "DAMAGER",
 		["Player-4465-045888C5"] = "HEALER",
 		["Player-4477-04DEE508"] = "DAMAGER",
 		["Player-4476-053260EE"] = "DAMAGER",
 		["Player-4465-0434999B"] = "DAMAGER",
-		["Player-4465-0027FD3A"] = "DAMAGER",
+		["Player-4465-0385AADB"] = "DAMAGER",
 		["Player-4465-041ADE53"] = "DAMAGER",
 		["Player-4465-02F97F97"] = "HEALER",
 		["Player-4465-03F619CD"] = "DAMAGER",
 		["Player-4465-0417F0B2"] = "TANK",
 		["Player-4465-011E44D6"] = "HEALER",
-		["Player-4465-0323603A"] = "DAMAGER",
-		["Player-4465-041B7FBB"] = "DAMAGER",
-		["Player-4477-04AADBFE"] = "DAMAGER",
 		["Player-4465-02C980D0"] = "DAMAGER",
+		["Player-4465-037C8B65"] = "DAMAGER",
+		["Player-4465-0445A457"] = "DAMAGER",
+		["Player-4701-0441BE2F"] = "DAMAGER",
 		["Player-4456-04DCC303"] = "DAMAGER",
 		["Player-4440-0196E3E0"] = "DAMAGER",
 		["Player-4477-051B1E68"] = "DAMAGER",
 		["Player-4467-045BD2F5"] = "DAMAGER",
-		["Player-4477-044E195F"] = "DAMAGER",
-		["Player-4465-014E69A8"] = "DAMAGER",
-		["Player-4465-045CDD95"] = "HEALER",
 		["Player-4701-043E3251"] = "DAMAGER",
+		["Player-4465-0027FD3A"] = "DAMAGER",
+		["Player-4465-02BB4683"] = "NONE",
+		["Player-4465-045A7EFE"] = "DAMAGER",
 		["Player-4476-043D9443"] = "HEALER",
 		["Player-4476-051B0296"] = "DAMAGER",
-		["Player-4455-05273629"] = "DAMAGER",
-		["Player-4455-033237CC"] = "DAMAGER",
-		["Player-4476-052895F1"] = "DAMAGER",
+		["Player-4465-041B7FBB"] = "DAMAGER",
+		["Player-4465-014E69A8"] = "DAMAGER",
+		["Player-4453-051EBDF1"] = "DAMAGER",
 		["Player-4476-05240986"] = "DAMAGER",
-		["Player-4465-0446DE3C"] = "DAMAGER",
-		["Player-4465-04169280"] = "DAMAGER",
-		["Player-4477-0522AB2E"] = "DAMAGER",
 		["Player-4701-03A1A8A7"] = "HEALER",
-		["Player-4456-0399FDA0"] = "HEALER",
+		["Player-4465-045D488F"] = "DAMAGER",
+		["Player-4477-0522AB2E"] = "DAMAGER",
+		["Player-4456-05256276"] = "DAMAGER",
+		["Player-4456-0492500F"] = "DAMAGER",
 		["Player-4476-05255D53"] = "DAMAGER",
 		["Player-4456-051F7F85"] = "DAMAGER",
 		["Player-4456-04D8E2E3"] = "DAMAGER",
 		["Player-4465-041D7552"] = "TANK",
-		["Player-4465-0400DA6F"] = "DAMAGER",
+		["Player-4465-00209801"] = "DAMAGER",
 		["Player-4440-00035182"] = "DAMAGER",
-		["Player-4477-04F42090"] = "DAMAGER",
+		["Player-4477-05258005"] = "DAMAGER",
 		["Player-4477-052BD829"] = "DAMAGER",
-		["Player-4465-0108DC36"] = "DAMAGER",
 		["Player-4701-04601B30"] = "DAMAGER",
-		["Player-4455-04D60D0D"] = "HEALER",
+		["Player-4476-051D1816"] = "DAMAGER",
 		["Player-4441-029BD82C"] = "DAMAGER",
+		["Player-4455-04D60D0D"] = "HEALER",
 		["Player-4476-05272CC6"] = "DAMAGER",
 		["Player-4477-04D7DC4B"] = "DAMAGER",
 		["Player-4465-0290D6BC"] = "DAMAGER",

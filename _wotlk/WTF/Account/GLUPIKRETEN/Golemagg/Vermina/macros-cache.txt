@@ -6,7 +6,7 @@ END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /startattack
-/cast Judgement of Wisdom
+/cast Judgement
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Flash of Light
@@ -42,11 +42,6 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Cleanse
 END
-VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Judgement of Light
-END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Hand of Freedom
@@ -57,15 +52,7 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 /cast Divine Illumination
 /cast [@mouseover, help, nodead][] Holy Light
 END
-VER 3 0000000001000013 " " "134400"
-#showtooltip 
-/cast [@mouseover, help, nodead][] Beacon of Light
-END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Holy Shock
-/cast [@mouseover, help, nodead][] Holy Shock
-END
-VER 3 0000000001000014 " " "134400"
-#showtooltip 
-/cast [@focus, help, nodead][] Beacon of Light
+#showtooltip Word Of Glory
+/cast [@mouseover, help, nodead][] Word Of Glory
 END

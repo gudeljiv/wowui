@@ -69,3 +69,8 @@ VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@focus, help, nodead][] Beacon of Light
 END
+VER 3 0000000001000011 " " "134400"
+#showtooltip 
+/startattack
+/cast Crusader Strike
+END
