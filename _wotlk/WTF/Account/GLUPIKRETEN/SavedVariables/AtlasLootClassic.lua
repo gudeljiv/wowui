@@ -39,9 +39,9 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Battlearm - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -1684,31 +1684,8 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["ContentPhase"] = {
-				["enableOnItems"] = true,
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["classFilter"] = true,
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-188.4920501708984, -- [4]
-					190.5237579345703, -- [5]
-				},
 				["selected"] = {
 					nil, -- [1]
 					"NaxxramasWrath", -- [2]
@@ -1716,8 +1693,31 @@ AtlasLootClassicDB = {
 					9, -- [4]
 					0, -- [5]
 				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-188.4920501708984, -- [4]
+					190.5237579345703, -- [5]
+				},
+			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
 			},
 			["showItemLvlInTT"] = false,
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
+			["ContentPhase"] = {
+				["enableOnItems"] = true,
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Ozrencic - Golemagg"] = {
 		},
@@ -1844,22 +1844,9 @@ AtlasLootClassicDB = {
 		["Kaonac - Jin'do"] = {
 		},
 		["Default"] = {
-			["GUI"] = {
-				["classFilter"] = true,
-				["selected"] = {
-					nil, -- [1]
-					"HallsofStone", -- [2]
-					4, -- [3]
-					12, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-42.63478851318359, -- [4]
-					82.1428451538086, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -1875,11 +1862,24 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["classFilter"] = true,
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-42.63478851318359, -- [4]
+					82.1428451538086, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"HallsofStone", -- [2]
+					4, -- [3]
+					12, -- [4]
+					0, -- [5]
+				},
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {

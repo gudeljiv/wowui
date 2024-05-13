@@ -1,4 +1,4 @@
-## Interface: 20504
+## Interface: 40400
 ## Title: ClassicCastbars
 ## Notes: Adds customizable castbars to various unitframes.
 ## IconTexture: Interface\Icons\spell_holy_heal02
