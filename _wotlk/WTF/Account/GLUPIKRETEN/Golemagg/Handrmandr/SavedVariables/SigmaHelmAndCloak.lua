@@ -2,6 +2,9 @@
 SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:15007::::::::11:::::::::|h[Primal Cape]|h|r"] = "Off",
 	["|cffffffff|Hitem:15007::::::::13:::::::::|h[Primal Cape]|h|r"] = "Off",
-	["|cffffffff|Hitem:15007::::::::12:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:15007::::::::12:::::::::|h[Primal Cape]|h|r"] = "Off",
+	["|cffffffff|Hitem:15007::::::::12:::::::::|h[]|h|r"] = "Off",
+	["|cff00ccff|Hitem:69892::::::::14:::::::::|h[Ripped Sandstorm Cloak]|h|r"] = "Off",
+	["|cffffffff|Hitem:69892::::::::13:::::::::|h[]|h|r"] = "Off",
+	["|cff00ccff|Hitem:69892::::::::13:::::::::|h[Ripped Sandstorm Cloak]|h|r"] = "Off",
 }
