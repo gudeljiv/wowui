@@ -26,7 +26,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast [nostance:2/3,spec:2]Berserker Stance
-/cast [spec:1]Mortal Strike;[spec:2]Bloodthirst
+/cast [spec:2]Mortal Strike;[spec:1]Bloodthirst
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -47,8 +47,10 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /use 10
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Vigilance
-/cast [@focus,exists] Vigilance
+#showtooltip
+/startattack
+/cast [nostance:1]Battle Stance
+/cast Rend
 END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
@@ -85,4 +87,16 @@ VER 3 000000000100001F " " "134400"
 /cast Death Wish
 /use 10
 /use Blood Fury
+END
+VER 3 0000000001000020 " " "134400"
+#showtooltip
+/startattack
+/cast [nostance:1]Battle Stance
+/cast Overpower
+END
+VER 3 0000000001000021 " " "134400"
+#showtooltip
+/startattack
+/cast [nostance:2/3,spec:2]Berserker Stance
+/cast Slam
 END

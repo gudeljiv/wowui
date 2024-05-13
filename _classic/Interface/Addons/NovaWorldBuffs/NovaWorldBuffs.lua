@@ -6180,7 +6180,7 @@ function NWB:sendBigWigs(time, msg)
 end
 
 function NWB:startCapping(time, name, icon, maxTime)
-	if (CappingAPI and NWB.db.global.cappingSupport and NWB.isClassic and not DBM) then
+	if (CappingAPI and NWB.db.global.cappingSupport and NWB.isClassic) then
 		CappingAPI:StartBar(name, time, icon, "colorOther", nil, maxTime);
 		return true;
 	end
@@ -12338,7 +12338,7 @@ function NWB:mapCurrentLayer(unit)
 		--If we join a group then we must cross a zone border before we can record layer data.
 		--If we have a zoneID recorded for this zone and it suddenly changes then assume we got pushed off the layer without a group join.
 		--Simulate a group join.
-		NWB:debug("Phase changed detected?", NWB.phaseCheck, zoneID);
+		NWB:debug("Phase changed detected?", NWB.phaseCheck, zoneID, "NPC:", npcID);
 		NWB:joinedGroupLayer();
 		return;
 	end

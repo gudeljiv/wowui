@@ -2,7 +2,7 @@
 ## Notes: World buff timers and much more.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.77
+## Version: 2.78
 ## SavedVariables: NWBdatabase
 
 embeds.xml

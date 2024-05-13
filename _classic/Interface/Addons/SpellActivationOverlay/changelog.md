@@ -1,11 +1,33 @@
 ## SpellActivationOverlay Changelog
 
-#### v1.4.2 (2024-05-11)
+#### v1.4.3 (2024-05-12)
+
+New Spell Alerts:
+- New GAB: Priest's Mind Blast, with 2 stacks of Mind Melt (Cataclysm)
+- New GAB: Hunter's Kill Command, during Killing Streak (Cataclysm)
+- New GAB: Warrior's Cleave, during Battle Trance (Cataclysm)
+- New GAB: Warrior's Heroic Strike, during Battle Trance (Cataclysm)
+
+Bug Fixes
+- Spell Alerts should no longer display a visual timer shorter than intended
+- Combat-only Spell Alerts should no longer flicker when entering combat
+- Glowing button settings are more visible when there are more than 12 buttons
+- Mage's Frozen debuff had incorrect texture orientation (Cataclysm)
+- Mage's Improved Cone of Cold did not trigger Frozen debuff (Cataclysm)
+- Mage's Ring of Frost did not trigger Frozen debuff (Cataclysm)
+- Mage's Arcane Potency at 1 stack did not fade out after combat (Cataclysm)
+- Warlock's Backdraft was not triggered correctly (Cataclysm)
+
+Known Issues
+- Mage's Pyroblast! glow is not previewed when hovering the mouse in options
+- Priest's Flash Heal glow is not previewed when hovering the mouse in options
+
+#### v1.4.2 (2024-05-10)
 
 Bug Fixes
 - Unnecessary information was written to the game chat
 
-#### v1.4.1 (2024-05-10)
+#### v1.4.1 (2024-05-09)
 
 New effects:
 - New SAO: Paladin's Daybreak (Cataclysm)

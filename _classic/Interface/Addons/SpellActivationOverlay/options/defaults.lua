@@ -164,6 +164,9 @@ SAO.defaults = {
                 [1495] = { -- Mongoose Bite (Era, TBC)
                     [1495]  = true, -- Mongoose Bite
                 },
+                [94007] = { -- Killing Streak (2/2) (Cataclysm)
+                    [34026] = true, -- Kill Command
+                },
                 [415320]= { -- Flanking Strike (Season of Discovery)
                     [415320]= true, -- Flanking Strike (Season of Discovery)
                 },
@@ -387,7 +390,7 @@ SAO.defaults = {
                     [2061] = true, -- Flash Heal (not for TBC)
                 },
                 [88688] = { -- Surge of Light (Cataclysm)
-                    [2061] = true, -- Flash Heal, also 101062: must use name
+                    [101062] = nil, -- Flash Heal (no mana), set to nil to simplify DB migration
                 },
                 [63734] = { -- Serendipity 3/3 (Wrath)
                     [2060] = true, -- Greater Heal
@@ -396,6 +399,9 @@ SAO.defaults = {
                 [63735] = { -- Serendipity 2/2 (Cataclysm)
                     [2060] = nil, -- Greater Heal, set to nil to simplify DB migration
                     [596]  = nil, -- Prayer of Healing, set to nil to simplify DB migration
+                },
+                [87160] = {  -- Mind Melt (Cataclysm)
+                    [8092] = true, -- Mind Blast
                 },
                 [413247]= { -- Serendipity 3/3 (Season of Discovery)
                     [2050] = true, -- Lesser Heal
@@ -409,7 +415,7 @@ SAO.defaults = {
                 },
                 [431655] = {  -- Mind Spike (Season of Discovery)
                     [8092] = true, -- Mind Blast
-                }
+                },
             },
         },
         ["ROGUE"] = {
@@ -594,6 +600,10 @@ SAO.defaults = {
                 },
                 [402911]= { -- Raging Blow (Season of Discovery)
                     [402911]= true, -- Raging Blow (Season of Discovery)
+                },
+                [12964] = { -- Battle Trance (Cataclysm)
+                    [78]  = true, -- Heroic Strike
+                    [845] = true, -- Cleave
                 },
                 [52437] = { -- Sudden Death (Wrath+)
                     [5308] = true, -- Execute (not for Cata)

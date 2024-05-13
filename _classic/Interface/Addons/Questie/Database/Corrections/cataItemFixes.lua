@@ -39,6 +39,9 @@ function CataItemFixes.Load()
         [44966] = { -- Foul Ichor
             [itemKeys.npcDrops] = {33020,33021,33022},
         },
+        [44968] = { -- Twilight Plans
+            [itemKeys.npcDrops] = {},
+        },
         [44969] = { -- Moonstalker Whisker
             [itemKeys.npcDrops] = {33127},
         },
@@ -198,6 +201,9 @@ function CataItemFixes.Load()
         [52537] = { -- Flame Blossom
             [itemKeys.npcDrops] = {},
         },
+        [52568] = { -- Twilight Supplies
+            [itemKeys.npcDrops] = {},
+        },
         [52716] = { -- Twilight Firelance
             [itemKeys.objectDrops] = {202967},
         },
@@ -209,6 +215,9 @@ function CataItemFixes.Load()
         },
         [52725] = { -- Hyjal Battleplans
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [52789] = { -- Rusted Skull Key
+            [itemKeys.npcDrops] = {},
         },
         [52819] = { -- Frostgale Crystal
             [itemKeys.class] = itemClasses.QUEST,
@@ -226,11 +235,17 @@ function CataItemFixes.Load()
             [itemKeys.npcDrops] = {},
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [53060] = { -- Frightened Animal
+            [itemKeys.npcDrops] = {39997,39998},
+        },
         [53107] = { -- Flameseer's Staff
             [itemKeys.class] = itemClasses.QUEST,
         },
         [53139] = { -- Twilight Overseer's Key
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [54461] = { -- Charred Staff Fragment
+            [itemKeys.npcDrops] = {},
         },
         [54463] = { -- Flameseer's Staff
             [itemKeys.class] = itemClasses.QUEST,
@@ -276,6 +291,9 @@ function CataItemFixes.Load()
         },
         [55238] = { -- Concentrated Solvent
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [55809] = { -- Twilight Armor Plate
+            [itemKeys.npcDrops] = {},
         },
         [56012] = { -- Stone Knife of Sealing
             [itemKeys.class] = itemClasses.QUEST,
@@ -343,6 +361,9 @@ function CataItemFixes.Load()
         [59261] = { -- Blackrock Holding Pen Key
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [59361] = { -- A Torn Journal
+            [itemKeys.objectDrops] = {204464},
+        },
         [59522] = { -- Key of Ilgalar
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -402,6 +423,18 @@ function CataItemFixes.Load()
         },
         [63027] = { -- Brazier Torch
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [63333] = { -- Obsidian Piston
+            [itemKeys.npcDrops] = {7039},
+        },
+        [63334] = { -- Stone Power Core
+            [itemKeys.npcDrops] = {7039},
+        },
+        [63335] = { -- Thorium Gearshaft
+            [itemKeys.npcDrops] = {7039},
+        },
+        [63336] = { -- Flux Exhaust Sieve
+            [itemKeys.npcDrops] = {7039},
         },
         [63351] = { -- Tahret Dynasty Mallet
             [itemKeys.class] = itemClasses.QUEST,
