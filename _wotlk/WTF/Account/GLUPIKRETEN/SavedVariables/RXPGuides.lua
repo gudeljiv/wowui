@@ -49,21 +49,79 @@ RXPSettings = {
 	},
 	["profiles"] = {
 		["Handrmandr - Golemagg"] = {
-			["enableTracker"] = false,
-			["enableCollectStepAnnouncements"] = false,
-			["enableFPAutomation"] = false,
 			["hardcore"] = false,
-			["enableFlyStepAnnouncements"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
-			["migrated"] = true,
-			["enableLevelUpAnnounceSolo"] = false,
-			["northrendLM"] = true,
-			["checkVersions"] = false,
-			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.0000152587891,
-			["enableMinimapButton"] = false,
-			["enableBindAutomation"] = false,
 			["activeItemsScale"] = 1.2,
+			["migrated"] = true,
+			["checkVersions"] = false,
+			["enableTracker"] = false,
+			["enableBindAutomation"] = false,
+			["xprate"] = 1.1,
+			["alwaysSendBranded"] = false,
+			["frameSizes"] = {
+				["activeTargetFrame"] = {
+					85.2649154663086, -- [1]
+					40.00004959106445, -- [2]
+				},
+				["RXPFrame"] = {
+					235.0001068115234, -- [1]
+					125.0000228881836, -- [2]
+				},
+				["activeItemFrame"] = {
+					73.43936157226562, -- [1]
+					39.99997329711914, -- [2]
+				},
+				["arrowFrame"] = {
+					32.00003814697266, -- [1]
+					31.99995613098145, -- [2]
+				},
+			},
+			["northrendLM"] = true,
+			["enableFPAutomation"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["enableMinimapButton"] = false,
+			["frameHeight"] = 125.0000152587891,
+			["macroAnnounced"] = true,
+			["enableLevelUpAnnounceSolo"] = false,
+			["enableCollectStepAnnouncements"] = false,
+			["framePositions"] = {
+				["activeTargetFrame"] = {
+					{
+						"CENTER", -- [1]
+						nil, -- [2]
+						"CENTER", -- [3]
+						-226.5710906982422, -- [4]
+						-187.7778015136719, -- [5]
+					}, -- [1]
+				},
+				["RXPFrame"] = {
+					{
+						"BOTTOMRIGHT", -- [1]
+						"ChatFrame3", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						-10, -- [5]
+					}, -- [1]
+				},
+				["activeItemFrame"] = {
+					{
+						"CENTER", -- [1]
+						nil, -- [2]
+						"CENTER", -- [3]
+						381.4826965332031, -- [4]
+						-66.13756561279297, -- [5]
+					}, -- [1]
+				},
+				["arrowFrame"] = {
+					{
+						"CENTER", -- [1]
+						nil, -- [2]
+						"CENTER", -- [3]
+						-149.0000305175781, -- [4]
+						-179, -- [5]
+					}, -- [1]
+				},
+			},
 		},
 	},
 }

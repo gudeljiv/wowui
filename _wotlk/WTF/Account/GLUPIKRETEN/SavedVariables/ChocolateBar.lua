@@ -823,9 +823,9 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Handrmandr-Golemagg"] = {
-		["total"] = 12100,
-		["timeStamp"] = 280015.756,
-		["timeAtThisLevel"] = 0,
+		["total"] = 21519,
+		["timeStamp"] = 363011.723,
+		["timeAtThisLevel"] = 802,
 	},
 	["Poklopac-MirageRaceway"] = {
 		["total"] = 333,

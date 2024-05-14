@@ -44,13 +44,13 @@ VER 3 0000000000000030 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
-VER 3 0000000000000031 "Drink" "INV_Misc_QuestionMark"
+VER 3 0000000000000031 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000002C "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -92,8 +92,12 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Talrendis Saboteur
-/targetexact Greystone Basilisk
+/targetexact Spitelash Enchantress
+/targetexact Spitelash Battlemaster
+/targetlasttarget [dead]
+END
+VER 3 0000000000000032 "RXPTargeting" "132150"
+/targetexact Ag'tor Bloodfist
 /targetlasttarget [dead]
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
@@ -101,8 +105,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run GroupLootFrame1.ItemLevelText:ClearAllPoints()
-/run GroupLootFrame1.ItemLevelText:SetPoint('TOPLEFT', GroupLootFrame1.IconFrame, 'TOPLEFT', 0, 0)
+/run ChatFrame3ButtonFrameBottomButton:ClearAllPoints()
+/run ChatFrame3ButtonFrameBottomButton:SetPoint('BOTTOMLEFT', ChatFrame3, 'BOTTOMLEFT', 0, 0)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

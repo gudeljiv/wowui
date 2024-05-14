@@ -9281,11 +9281,7 @@ TellMeWhenDB = {
 									["Checked"] = true,
 									["Name"] = "Righteous Fury",
 								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								["n"] = 2,
+								["n"] = 1,
 							},
 							["GUID"] = "TMW:icon:1ZmhO7mqKue=",
 							["States"] = {
@@ -10707,12 +10703,12 @@ TellMeWhenDB = {
 								"TMW:icon:1Z6tL7hZeq4n", -- [6]
 								"TMW:icon:1ZwdlWxY789W", -- [7]
 								"TMW:icon:1Z6tL7hbgPqi", -- [8]
-								"TMW:icon:1ZkmyyWZapS_", -- [9]
-								"TMW:icon:1ZkmyyWUmDSs", -- [10]
-								"TMW:icon:1bMBP=Ir0TOf", -- [11]
-								"TMW:icon:1YawP4LcafCX", -- [12]
-								"TMW:icon:1ZkmyyWS_emA", -- [13]
-								"TMW:icon:1ZkmyyWWPpGC", -- [14]
+								"TMW:icon:1ZkmyyWWPpGC", -- [9]
+								"TMW:icon:1ZkmyyWZapS_", -- [10]
+								"TMW:icon:1ZkmyyWUmDSs", -- [11]
+								"TMW:icon:1bMBP=Ir0TOf", -- [12]
+								"TMW:icon:1YawP4LcafCX", -- [13]
+								"TMW:icon:1ZkmyyWS_emA", -- [14]
 								"TMW:icon:1bMBoWa6os4j", -- [15]
 								"TMW:icon:1Z6tL7hfkyqu", -- [16]
 								"TMW:icon:1ZkmyyWX_u4d", -- [17]
@@ -10796,11 +10792,11 @@ TellMeWhenDB = {
 								"TMW:icon:1ZkmyyWZapS_", -- [7]
 								"TMW:icon:1ZwdlWxY789W", -- [8]
 								"TMW:icon:1Z6tL7hbgPqi", -- [9]
-								"TMW:icon:1ZkmyyWUmDSs", -- [10]
-								"TMW:icon:1bMBP=Ir0TOf", -- [11]
-								"TMW:icon:1YawP4LcafCX", -- [12]
-								"TMW:icon:1ZkmyyWS_emA", -- [13]
-								"TMW:icon:1ZkmyyWWPpGC", -- [14]
+								"TMW:icon:1ZkmyyWWPpGC", -- [10]
+								"TMW:icon:1ZkmyyWUmDSs", -- [11]
+								"TMW:icon:1bMBP=Ir0TOf", -- [12]
+								"TMW:icon:1YawP4LcafCX", -- [13]
+								"TMW:icon:1ZkmyyWS_emA", -- [14]
 								"TMW:icon:1bMBoWa6os4j", -- [15]
 								"TMW:icon:1Z6tL7hfkyqu", -- [16]
 								"TMW:icon:1ZkmyyWX_u4d", -- [17]

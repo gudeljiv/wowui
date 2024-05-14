@@ -34,7 +34,7 @@ Postal3DB = {
 				"Battlearm|Golemagg|Horde|80|DEATHKNIGHT", -- [4]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [5]
 				"Battledog|Gehennas|Horde|1|WARRIOR", -- [6]
-				"Handrmandr|Golemagg|Horde|13|PALADIN", -- [7]
+				"Handrmandr|Golemagg|Horde|19|PALADIN", -- [7]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [8]
 				"Miqa|Golemagg|Horde|23|PRIEST", -- [9]
 				"Moolatz|Golemagg|Horde|80|DRUID", -- [10]
