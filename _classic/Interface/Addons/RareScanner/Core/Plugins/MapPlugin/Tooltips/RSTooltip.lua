@@ -266,8 +266,13 @@ local function AddLootTooltip(tooltip, pin)
 					
 			local line = tooltip:AddLine()		
 
+			local maxItems = 60
 			local j
 			for i, itemInfo in ipairs(itemsIDsFiltered) do
+				if (maxItems == 0) then
+					break
+				end
+				
 				local itemLink, itemRarity, itemEquipLoc, iconFileDataID, itemClassID, itemSubClassID = RSGeneralDB.GetItemInfo(itemInfo[1])
 			
 				j = (i - floor(i/10) * 10)
@@ -284,6 +289,8 @@ local function AddLootTooltip(tooltip, pin)
 				if (floor(j%10) == 0) then
 					line = tooltip:AddLine()
 				end
+				
+				maxItems = maxItems - 1
 			end
 
 			-- fill with white spaces
@@ -350,6 +357,42 @@ local function AddOverlayTooltip(tooltip, pin, addSeparator)
 		
 		local line = tooltip:AddLine()	
 		tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:96:128|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_SHOW_OVERLAY"], "FFF5EE"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
+		return true
+	end
+	
+	return false
+end
+
+local function AddFilterStateTooltip(tooltip, pin, addSeparator)
+	if (not RSConfigDB.IsShowingTooltipsFilterState()) then
+		return false
+	end
+	
+	local filterType = nil
+	if (pin.POI.isNpc) then
+		filterType = RSConfigDB.GetNpcFiltered(pin.POI.entityID)
+	elseif (pin.POI.isContainer) then
+		filterType = RSConfigDB.GetContainerFiltered(pin.POI.entityID)
+	elseif (pin.POI.isEvent) then
+		filterType = RSConfigDB.GetEventFiltered(pin.POI.entityID)
+	end
+
+	if (filterType) then
+		if (addSeparator) then
+			tooltip:AddSeparator(1)
+		end
+		
+		local filterText
+		if (filterType == RSConstants.ENTITY_FILTER_WORLDMAP) then
+			filterText = AL["MAP_TOOLTIPS_FILTER_STATE_WORLDMAP"]
+		elseif (filterType == RSConstants.ENTITY_FILTER_ALERTS) then
+			filterText = AL["MAP_TOOLTIPS_FILTER_STATE_ALERTS"]
+		else
+			filterText = AL["MAP_TOOLTIPS_FILTER_STATE_ALL"]
+		end
+		
+		local line = tooltip:AddLine()
+		tooltip:SetCell(line, 1, "|A:gmchat-icon-alert:16:16::::|a "..RSUtils.TextColor(filterText, "FFA500"), nil, "RIGHT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
 		return true
 	end
 	
@@ -488,7 +531,10 @@ function RSTooltip.ShowSimpleTooltip(pin, parentTooltip)
 	local guideAdded = AddGuideTooltip(tooltip, pin, not filterAdded and not waypointAdded)
 
 	-- Overlay
-	AddOverlayTooltip(tooltip, pin, not filterAdded and not waypointAdded and not guideAdded)
+	local overlayAdded = AddOverlayTooltip(tooltip, pin, not filterAdded and not waypointAdded and not guideAdded)
+
+	-- Filtered state
+	AddFilterStateTooltip(tooltip, pin, true)
 	
 	tooltip:SmartAnchorTo(pin)
 	tooltip:Show()

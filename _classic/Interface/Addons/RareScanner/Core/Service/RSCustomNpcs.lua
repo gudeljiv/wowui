@@ -106,6 +106,8 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 					AddLineError(npcErrorLines, s, AL["CUSTOM_NPC_ERROR1_NPCID"])
 				elseif (tonumber(npcID) == nil) then
 					AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR2_NPCID"], npcID))
+				elseif (not RSNpcDB.GetCustomNpcInfo(tonumber(npcID)) and RSNpcDB.GetInternalNpcInfo(tonumber(npcID))) then
+					AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR4_NPCID"], npcID))
 				else
 					npcIDcorrect = true
 				end
@@ -235,12 +237,20 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 				
 				-- Check if NPC exists
 				if (npcIDcorrect) then
+					local imported = false
 					RSTooltipScanners.ScanNpcName(npcID, function(npcName)
+						-- In Classic this callback is summoned twice
+						if (imported) then
+							return
+						end
+						
 						if (not npcName) then
 							AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR3_NPCID"], npcID))
 						elseif (RSUtils.GetTableLength(npcErrorLines) == 0) then
 							-- Deletes just in case it already exists
-							RSCustomNpcs.DeleteCustomNpc(npcID, options)
+							if (options) then
+								RSCustomNpcs.DeleteCustomNpc(npcID, options)
+							end
 							
 							-- If the group doesn't exist, create it first
 							if (not newNpcInfo.group and not RSNpcDB.GetCustomNpcGroupByValue(groupName)) then
@@ -254,6 +264,7 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 								RSNpcDB.SetCustomNpcLoot(npcID, newNpcInfo.items)
 							end
 						
+							imported = true
 							tinsert(output, string.format("# |A:common-icon-checkmark:10:10::::|a %s", string.format(AL["CUSTOM_NPC_IMPORT_OK"], s)))
 						else
 							for _, string in pairs(npcErrorLines) do

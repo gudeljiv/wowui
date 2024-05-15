@@ -153,6 +153,7 @@ RSConstants.PROFILE_DEFAULTS = {
 			tooltipsNotes = true,
 			tooltipsSeen = true,
 			tooltipsCommands = true,
+			tooltipsFilterState = true,
 			lootAchievTooltipsScale = 0.7,
 			lootAchievementsPosition = "ANCHOR_LEFT",
 			overlayMaxColours = 10,
@@ -221,6 +222,7 @@ RSConstants.CMD_TOGGLE_TREASURES = "tt"
 RSConstants.CMD_TOGGLE_TREASURES_ALERTS = "tta"
 RSConstants.CMD_TOMTOM_WAYPOINT = "waypoint"
 RSConstants.CMD_RECENTLY_SEEN = "rseen"
+RSConstants.CMD_IMPORT = "import"
 
 ---============================================================================
 -- AtlasNames

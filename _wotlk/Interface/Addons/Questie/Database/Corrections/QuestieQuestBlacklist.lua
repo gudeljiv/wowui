@@ -1490,6 +1490,8 @@ function QuestieQuestBlacklist:Load()
         ----- Cata -------------- Cata quests --------------- Cata -----
         ----- Cata ------------- starting here -------------- Cata -----
 
+        [764] = true, -- Replaced by 26179
+        [765] = true, -- Replaced by 26180
         [1431] = true, -- Removed with cata
         [5121] = true, -- Replaced by 28470
         [5123] = true, -- Replaced by 28471
@@ -1498,6 +1500,7 @@ function QuestieQuestBlacklist:Load()
         [24503] = true, -- Duplicate of 28414
         [25474] = true, -- Duplicate of 27729
         [26565] = true, -- Duplicate of 26588
+        [26951] = true, -- Seems to not be available
         [29476] = true, -- Duplicate of 29477
         [27608] = true, -- Duplicate of 27500
         [27609] = true, -- Duplicate of 27501

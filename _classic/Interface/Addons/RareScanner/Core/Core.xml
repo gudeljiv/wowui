@@ -38,12 +38,12 @@
 	<Include file="Service\RSMinimap.lua"/>
 	<Include file="Service\RSLoot.lua"/>
 	<Include file="Service\RSLootTooltip.lua"/>
-	<Include file="Service\RSCommandLine.lua"/>
 	<Include file="Service\RSAudioAlerts.lua"/>
 	<Include file="Service\RSEventHandler.lua"/>
 	<Include file="Service\RSButtonHandler.lua"/>
 	<Include file="Service\RSTargetUnitTracker.lua"/>
 	<Include file="Service\RSCustomNpcs.lua"/>
+	<Include file="Service\RSCommandLine.lua"/>
 	
 	<!-- Tooltips -->
 	<Include file="Plugins\MapPlugin\Tooltips\RSNotes.lua"/>

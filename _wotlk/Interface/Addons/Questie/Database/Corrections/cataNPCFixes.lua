@@ -14,6 +14,10 @@ function CataNpcFixes.Load()
     local phases = Phasing.phases
 
     return {
+        [2079] = { -- Ilthalaine
+            [npcKeys.spawns] = {[zoneIDs.TELDRASSIL] = {{57.97,39.2}}},
+            [npcKeys.waypoints] = {},
+        },
         [2151] = { -- Moon Priestess Amara
             [npcKeys.spawns] = {[zoneIDs.TELDRASSIL] = {{49.35,44.67}}},
             [npcKeys.waypoints] = {},
@@ -21,6 +25,7 @@ function CataNpcFixes.Load()
         [2988] = { -- Morin Cloudstalker
             [npcKeys.questStarts] = {749,26179,26180},
             [npcKeys.questEnds] = {749,24459,26179,26180},
+            [npcKeys.waypoints] = {},
         },
         [3594] = { -- Frahun Shadewhisper
             [npcKeys.spawns] = {[zoneIDs.TELDRASSIL] = {{58.8,33.8}}},
@@ -47,6 +52,9 @@ function CataNpcFixes.Load()
         },
         [22819] = { -- Orphan Matron Mercy
             [npcKeys.spawns] = {[zoneIDs.SHATTRATH_CITY]={{75.07,47.88}}},
+        },
+        [23616] = { -- Kyle the Frenzied
+            [npcKeys.spawns] = {[zoneIDs.MULGORE]={{48.48,61.57}}},
         },
         [28092] = { -- The Etymidian
             [npcKeys.spawns] = {[zoneIDs.UN_GORO_CRATER]={{47.38,9.21}}},
