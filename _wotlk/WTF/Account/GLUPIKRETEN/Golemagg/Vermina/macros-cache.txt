@@ -56,3 +56,9 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Word Of Glory
 /cast [@mouseover, help, nodead][] Word Of Glory
 END
+VER 3 0000000001000016 " " "134400"
+#showtooltip Divine Light
+/cast Divine Favor
+/cast Divine Illumination
+/cast [@mouseover, help, nodead][] Divine Light
+END
