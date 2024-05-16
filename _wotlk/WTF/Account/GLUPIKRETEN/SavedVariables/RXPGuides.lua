@@ -28,15 +28,15 @@ RXPDB = {
 		["Asjrdfsad - Golemagg"] = "global",
 		["Battlearm - Gehennas"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Pitchwise - Ashbringer"] = "global",
+		["Tudum - Jin'do"] = "global",
 		["Provokator - Jin'do"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
 		["Miqa - Golemagg"] = "global",
-		["Tudum - Jin'do"] = "global",
-		["Tudum - Ashbringer"] = "global",
 		["Moolatz - Golemagg"] = "global",
+		["Tudum - Ashbringer"] = "global",
+		["Pitchwise - Ashbringer"] = "global",
 		["Wells - Jin'do"] = "global",
 	},
 	["profiles"] = {
@@ -153,6 +153,8 @@ RXPSettings = {
 			["activeItemsScale"] = 1.2,
 		},
 		["Default"] = {
+			["xprate"] = 1.1,
+			["frameHeight"] = 125.0000152587891,
 			["hardcore"] = false,
 			["framePositions"] = {
 				["activeTargetFrame"] = {
@@ -192,7 +194,7 @@ RXPSettings = {
 					}, -- [1]
 				},
 			},
-			["xprate"] = 1.1,
+			["enableMinimapButton"] = false,
 			["frameSizes"] = {
 				["activeTargetFrame"] = {
 					85.2649154663086, -- [1]
@@ -211,8 +213,6 @@ RXPSettings = {
 					32.00003814697266, -- [2]
 				},
 			},
-			["enableMinimapButton"] = false,
-			["frameHeight"] = 125.0000152587891,
 		},
 		["Miqa - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,
@@ -297,12 +297,15 @@ RXPSettings = {
 		},
 		["Battlearm - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,
+			["hardcore"] = false,
+			["disableItemWindow"] = false,
+			["activeItemsScale"] = 1.2,
 			["migrated"] = true,
-			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
-			["enableTargetMacro"] = false,
+			["xprate"] = 1.1,
+			["alwaysSendBranded"] = false,
 			["frameSizes"] = {
 				["arrowFrame"] = {
 					32.00003814697266, -- [1]
@@ -321,12 +324,17 @@ RXPSettings = {
 					40, -- [2]
 				},
 			},
+			["hideInRaid"] = true,
+			["northrendLM"] = true,
 			["enableFPAutomation"] = false,
-			["enableTracker"] = false,
-			["hideGuideWindow"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableMinimapButton"] = false,
+			["enableTargetAutomation"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["macroAnnounced"] = true,
-			["hardcore"] = false,
+			["unitscanReset"] = true,
+			["enableLevelUpAnnounceSolo"] = false,
+			["hideGuideWindow"] = false,
 			["framePositions"] = {
 				["arrowFrame"] = {
 					{
@@ -365,26 +373,18 @@ RXPSettings = {
 					}, -- [1]
 				},
 			},
-			["unitscanReset"] = true,
-			["xprate"] = 1.1,
-			["enableLevelUpAnnounceSolo"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
-			["disableItemWindow"] = false,
-			["alwaysSendBranded"] = false,
+			["enableTargetMacro"] = false,
 			["frameHeight"] = 125.0000534057617,
-			["enableMinimapButton"] = false,
-			["hideInRaid"] = true,
-			["activeItemsScale"] = 1.2,
 		},
 		["Vermin - Golemagg"] = {
 			["hideCompletedSteps"] = true,
 			["migrated"] = true,
-			["enableTargetAutomation"] = false,
+			["enableTrainerAutomation"] = false,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTrainerAutomation"] = false,
-			["enableTracker"] = false,
 			["enableTargetMacro"] = false,
+			["enableTracker"] = false,
+			["enableTargetAutomation"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,

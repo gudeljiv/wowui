@@ -7,7 +7,7 @@ SigmaHelmAndCloak = {
 	["|cffa335ee|Hitem:40328::41380:40086:::::80:::::::::|h[Helm of Vital Protection]|h|r"] = "Off",
 	["|cffa335ee|Hitem:46014::::::::80:::::::::|h[Saronite Animus Cloak]|h|r"] = "Off",
 	["|cffffffff|Hitem:45873::::::::80:::::::::|h[]|h|r"] = "Off",
-	["|cffa335ee|Hitem:45873::::::::80:::::::::|h[Winter's Frigid Embrace]|h|r"] = "Off",
 	["|cffffffff|Hitem:46014::::::::80:::::::::|h[]|h|r"] = "Off",
+	["|cffa335ee|Hitem:45873::::::::80:::::::::|h[Winter's Frigid Embrace]|h|r"] = "Off",
 	["|cffffffff|Hitem:40328::41380:40086:::::80:::::::::|h[]|h|r"] = "Off",
 }
