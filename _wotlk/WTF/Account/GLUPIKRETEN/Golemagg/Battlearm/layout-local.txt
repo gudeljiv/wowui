@@ -62,6 +62,13 @@ X: -48
 Y: -196
 W: 210
 H: 339
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: SpellBookFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -188,13 +195,6 @@ X: -4
 Y: -161
 W: 330
 H: 113
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

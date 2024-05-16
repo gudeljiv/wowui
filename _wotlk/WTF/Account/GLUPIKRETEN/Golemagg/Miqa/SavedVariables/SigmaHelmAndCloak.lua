@@ -1,5 +1,8 @@
 
 SigmaHelmAndCloak = {
-	["|cffffffff|Hitem:6629::::::::23:::::::::|h[]|h|r"] = "Off",
 	["|cff0070dd|Hitem:6629::::::::23:::::::::|h[Sporid Cape]|h|r"] = "Off",
+	["|cff00ccff|Hitem:62040::::::::23:::::::::|h[Ancient Bloodmoon Cloak]|h|r"] = "Off",
+	["|cff00ccff|Hitem:62040::::::::25:::::::::|h[Ancient Bloodmoon Cloak]|h|r"] = "Off",
+	["|cffffffff|Hitem:6629::::::::23:::::::::|h[]|h|r"] = "Off",
+	["|cff00ccff|Hitem:62040::::::::24:::::::::|h[Ancient Bloodmoon Cloak]|h|r"] = "Off",
 }

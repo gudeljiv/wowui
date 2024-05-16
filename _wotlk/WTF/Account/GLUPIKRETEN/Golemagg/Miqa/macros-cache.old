@@ -1,8 +1,6 @@
-VER 3 0000000001000007 " " "134400"
-#showtooltip
-/startattack
-/cast Mind Blast
-/cast Berserking
+VER 3 000000000100000B " " "134400"
+#showtooltip Mind Flay
+/use [nochanneling:Mind Flay] Mind Flay
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -42,7 +40,9 @@ VER 3 000000000100000A " " "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Flash Heal
 END
-VER 3 000000000100000B " " "134400"
-#showtooltip Mind Flay
-/use [nochanneling:Mind Flay] Mind Flay
+VER 3 0000000001000007 " " "134400"
+#showtooltip
+/startattack
+/cast Mind Blast
+/cast Berserking
 END

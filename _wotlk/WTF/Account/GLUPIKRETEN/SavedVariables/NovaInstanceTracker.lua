@@ -11,18 +11,19 @@ NITdatabase = {
 		["Battledog - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
+		["Asjrdfsad - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 	},
 	["global"] = {
@@ -74,15 +75,15 @@ NITdatabase = {
 					},
 					["realm"] = "Mirage Raceway",
 					["ammo"] = 195,
-					["playerName"] = "Poklopac",
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["isPetDead"] = false,
+					["playerName"] = "Poklopac",
 					["classEnglish"] = "HUNTER",
 					["currentXP"] = 102,
+					["cookingSkillMax"] = 0,
 					["fishingSkillMax"] = 0,
 					["ammoType"] = 2512,
-					["isPetDead"] = false,
 					["firstaidSkillMax"] = 0,
 					["petLevel"] = 0,
 					["cooldowns"] = {
@@ -134,10 +135,10 @@ NITdatabase = {
 					["guildRankName"] = "No guild rank",
 					["realm"] = "Jin'do",
 					["currentXP"] = 44,
-					["playerName"] = "Battlearm",
-					["raceLocalized"] = "Orc",
-					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Battlearm",
 					["classEnglish"] = "SHAMAN",
 					["race"] = "Orc",
 					["profSkill2"] = 0,
@@ -151,7 +152,7 @@ NITdatabase = {
 					},
 					[17030] = 0,
 					["profSkillMax2"] = 0,
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["cooldowns"] = {
 					},
 					["guild"] = "No guild",
@@ -234,10 +235,10 @@ NITdatabase = {
 					["resting"] = false,
 					["realm"] = "Jin'do",
 					["firstaidSkillMax"] = 0,
-					["playerName"] = "Tandaram",
-					["raceLocalized"] = "Tauren",
-					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Tandaram",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["currentXP"] = 0,
@@ -255,7 +256,7 @@ NITdatabase = {
 					},
 					["cooldowns"] = {
 					},
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["classLocalized"] = "Warrior",
 					["profSkill2"] = 0,
 				},
@@ -284,10 +285,10 @@ NITdatabase = {
 					["resting"] = false,
 					["realm"] = "Jin'do",
 					["firstaidSkillMax"] = 0,
-					["playerName"] = "Tudum",
-					["raceLocalized"] = "Tauren",
-					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Tudum",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["currentXP"] = 0,
@@ -305,7 +306,7 @@ NITdatabase = {
 					},
 					["cooldowns"] = {
 					},
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["classLocalized"] = "Warrior",
 					["profSkill2"] = 0,
 				},
@@ -346,17 +347,17 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["realm"] = "Jin'do",
 					["currentXP"] = 1074,
-					["playerName"] = "Wells",
-					["raceLocalized"] = "Tauren",
-					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Wells",
 					["classEnglish"] = "DRUID",
 					["level"] = 8,
 					["guild"] = "No guild",
 					["race"] = "Tauren",
 					["fishingSkill"] = 0,
 					[44614] = 0,
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["cooldowns"] = {
 					},
 					["firstaidSkillMax"] = 0,
@@ -391,12 +392,12 @@ NITdatabase = {
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 0,
 					["profSkill2"] = 0,
+					["resting"] = false,
 					["race"] = "Orc",
 					["currency"] = {
 					},
-					["resting"] = false,
 					["time"] = 1665607013,
-					["gold"] = 3123,
+					["petLevel"] = 10,
 					["profSkillMax2"] = 0,
 					["petLoyaltyRate"] = 20,
 					["playerName"] = "Provokator",
@@ -404,11 +405,11 @@ NITdatabase = {
 					["fishingSkillMax"] = 0,
 					["isPetDead"] = false,
 					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 0,
+					["ammoType"] = 2515,
 					["firstaidSkill"] = 0,
 					["classEnglish"] = "HUNTER",
-					["ammoType"] = 2515,
-					["petLevel"] = 10,
+					["cookingSkillMax"] = 0,
+					["gold"] = 3123,
 					["ammo"] = 1286,
 					["marks"] = {
 						[20559] = 0,
@@ -463,10 +464,10 @@ NITdatabase = {
 					["resting"] = false,
 					["realm"] = "Ashbringer",
 					["firstaidSkillMax"] = 0,
-					["playerName"] = "Tudum",
-					["raceLocalized"] = "Orc",
-					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Tudum",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["currentXP"] = 25,
@@ -484,7 +485,7 @@ NITdatabase = {
 					},
 					["cooldowns"] = {
 					},
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["classLocalized"] = "Warrior",
 					["profSkill2"] = 0,
 				},
@@ -517,10 +518,10 @@ NITdatabase = {
 					["guild"] = "No guild",
 					["realm"] = "Ashbringer",
 					["race"] = "Orc",
-					["playerName"] = "Pitchwise",
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Pitchwise",
 					["classEnglish"] = "SHAMAN",
 					["currentXP"] = 169,
 					["profSkillMax2"] = 0,
@@ -534,7 +535,7 @@ NITdatabase = {
 						[47395] = 0,
 					},
 					["profSkill2"] = 0,
-					["fishingSkillMax"] = 0,
+					["cookingSkillMax"] = 0,
 					["cooldowns"] = {
 					},
 					["guildRankName"] = "No guild rank",
@@ -623,10 +624,10 @@ NITdatabase = {
 					["level"] = 1,
 					["realm"] = "Gehennas",
 					["firstaidSkillMax"] = 0,
-					["playerName"] = "Battledog",
+					["firstaidSkill"] = 0,
 					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Battledog",
 					["classEnglish"] = "WARRIOR",
 					["cookingSkillMax"] = 0,
 					["guild"] = "No guild",
@@ -657,8 +658,8 @@ NITdatabase = {
 				{
 					["targetMoney"] = 500000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Kodoein",
 					["tradeWhoClass"] = "DEATHKNIGHT",
+					["tradeWho"] = "Kodoein",
 					["where"] = "Tempest Keep: The Botanica",
 					["time"] = 1697536277,
 				}, -- [1]
@@ -666,23 +667,23 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 600000000,
 					["time"] = 1695414116,
-					["tradeWho"] = "Ixltradetwo",
-					["where"] = "Orgrimmar",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Orgrimmar",
+					["tradeWho"] = "Ixltradetwo",
 				}, -- [2]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWho"] = "Mokasin",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Mokasin",
 					["where"] = "Orgrimmar",
 					["time"] = 1680345871,
 				}, -- [3]
 				{
 					["targetMoney"] = 24750000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Smor",
 					["tradeWhoClass"] = "DEATHKNIGHT",
+					["tradeWho"] = "Smor",
 					["where"] = "Borean Tundra",
 					["time"] = 1678548613,
 				}, -- [4]
@@ -690,63 +691,63 @@ NITdatabase = {
 					["targetMoney"] = 15610000,
 					["playerMoney"] = 0,
 					["time"] = 1677608754,
-					["tradeWho"] = "Lillhuntern",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Lillhuntern",
 				}, -- [5]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1677605973,
-					["tradeWho"] = "Lillhuntern",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Lillhuntern",
 				}, -- [6]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1677605840,
-					["tradeWho"] = "Lillhuntern",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Lillhuntern",
 				}, -- [7]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 17000000,
 					["time"] = 1677605679,
-					["tradeWho"] = "Lillhuntern",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Lillhuntern",
 				}, -- [8]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1677605374,
-					["tradeWho"] = "Lillhuntern",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Lillhuntern",
 				}, -- [9]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000000,
 					["time"] = 1677150252,
-					["tradeWho"] = "Maximizer",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Maximizer",
 				}, -- [10]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
 					["time"] = 1676889443,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Orgrimmar",
 					["tradeWho"] = "Lememage",
+					["where"] = "Orgrimmar",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [11]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Whisperzz",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1676813294,
 				}, -- [12]
@@ -754,39 +755,39 @@ NITdatabase = {
 					["targetMoney"] = 20480000,
 					["playerMoney"] = 0,
 					["time"] = 1676657977,
-					["tradeWho"] = "Thelichlight",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Thelichlight",
 				}, -- [13]
 				{
 					["targetMoney"] = 32550000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "SHAMAN",
 					["tradeWho"] = "Happens",
+					["tradeWhoClass"] = "SHAMAN",
 					["where"] = "Borean Tundra",
 					["time"] = 1676640463,
 				}, -- [14]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
-					["tradeWhoClass"] = "SHAMAN",
 					["tradeWho"] = "Happens",
+					["tradeWhoClass"] = "SHAMAN",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1676639371,
 				}, -- [15]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 6000000,
-					["tradeWho"] = "Happens",
 					["tradeWhoClass"] = "SHAMAN",
+					["tradeWho"] = "Happens",
 					["where"] = "Naxxramas",
 					["time"] = 1676633503,
 				}, -- [16]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 300000,
-					["tradeWho"] = "Trollun",
 					["tradeWhoClass"] = "HUNTER",
+					["tradeWho"] = "Trollun",
 					["where"] = "Naxxramas",
 					["time"] = 1676630477,
 				}, -- [17]
@@ -794,111 +795,111 @@ NITdatabase = {
 					["targetMoney"] = 17000000,
 					["playerMoney"] = 0,
 					["time"] = 1676142234,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Miute",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [18]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1676142092,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Miute",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [19]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 200000,
 					["time"] = 1676132992,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Rankwar",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [20]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1676037219,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Dalaran",
 					["tradeWho"] = "Lythp",
+					["where"] = "Dalaran",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [21]
 				{
 					["targetMoney"] = 17600000,
 					["playerMoney"] = 0,
 					["time"] = 1676034106,
-					["tradeWho"] = "Thelichlight",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Thelichlight",
 				}, -- [22]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
 					["time"] = 1676033841,
-					["tradeWho"] = "Thelichlight",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Thelichlight",
 				}, -- [23]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1676029272,
-					["tradeWho"] = "Thelichlight",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Thelichlight",
 				}, -- [24]
 				{
 					["targetMoney"] = 23300000,
 					["playerMoney"] = 0,
 					["time"] = 1675960425,
-					["tradeWhoClass"] = "SHAMAN",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWho"] = "Gemoo",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWhoClass"] = "SHAMAN",
 				}, -- [25]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
 					["time"] = 1675960050,
-					["tradeWhoClass"] = "SHAMAN",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWho"] = "Gemoo",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWhoClass"] = "SHAMAN",
 				}, -- [26]
 				{
 					["targetMoney"] = 18880000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675861118,
 				}, -- [27]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675860946,
 				}, -- [28]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675860742,
 				}, -- [29]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675860206,
 				}, -- [30]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1675857760,
 				}, -- [31]
@@ -906,63 +907,63 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1675855279,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Recobe",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [32]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1675854703,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Recobe",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [33]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1675853715,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Recobe",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [34]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
 					["time"] = 1675769358,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Dalaran",
 					["tradeWho"] = "Morthalin",
+					["where"] = "Dalaran",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [35]
 				{
 					["targetMoney"] = 21000000,
 					["playerMoney"] = 0,
 					["time"] = 1675014045,
-					["tradeWhoClass"] = "PRIEST",
-					["where"] = "The Eye of Eternity",
 					["tradeWho"] = "Dinamur",
+					["where"] = "The Eye of Eternity",
+					["tradeWhoClass"] = "PRIEST",
 				}, -- [36]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1675013420,
-					["tradeWho"] = "Dinamur",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Dinamur",
 				}, -- [37]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Dinamur",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "Naxxramas",
 					["time"] = 1675012900,
 				}, -- [38]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Dinamur",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "Naxxramas",
 					["time"] = 1675011552,
 				}, -- [39]
@@ -970,135 +971,135 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1674555024,
-					["tradeWho"] = "Hotsonyou",
-					["where"] = "Orgrimmar",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Orgrimmar",
+					["tradeWho"] = "Hotsonyou",
 				}, -- [40]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
 					["time"] = 1674142988,
-					["tradeWho"] = "Obsidian",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Obsidian",
 				}, -- [41]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1674141834,
-					["tradeWho"] = "Obsidian",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Obsidian",
 				}, -- [42]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2000000,
 					["time"] = 1674141772,
-					["tradeWho"] = "Obsidian",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Obsidian",
 				}, -- [43]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
 					["time"] = 1674140261,
-					["tradeWho"] = "Obsidian",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Obsidian",
 				}, -- [44]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1674139981,
-					["tradeWho"] = "Obsidian",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Obsidian",
 				}, -- [45]
 				{
 					["targetMoney"] = 36000000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Eternalpala",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1673549474,
 				}, -- [46]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7500000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Eternalpala",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1673541807,
 				}, -- [47]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 9500000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Eternalpala",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1673541652,
 				}, -- [48]
 				{
 					["targetMoney"] = 22270000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Borean Tundra",
 					["time"] = 1673033265,
 				}, -- [49]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1673032250,
 				}, -- [50]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1673032176,
 				}, -- [51]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1673031944,
 				}, -- [52]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1673031710,
 				}, -- [53]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1673031271,
 				}, -- [54]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Naxxramas",
 					["time"] = 1673030569,
 				}, -- [55]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Angrywarrior",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Naxxramas",
 					["time"] = 1673029385,
 				}, -- [56]
@@ -1106,63 +1107,63 @@ NITdatabase = {
 					["targetMoney"] = 57040000,
 					["playerMoney"] = 0,
 					["time"] = 1672933116,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWho"] = "Monikà",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [57]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1672929356,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Monikà",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [58]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 31000000,
 					["time"] = 1672929272,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Monikà",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [59]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
 					["time"] = 1672928148,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Monikà",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [60]
 				{
 					["targetMoney"] = 62170000,
 					["playerMoney"] = 0,
 					["time"] = 1672853736,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Orgrimmar",
 					["tradeWho"] = "Arachad",
+					["where"] = "Orgrimmar",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [61]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 11000000,
 					["time"] = 1672852572,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Orgrimmar",
 					["tradeWho"] = "Arachad",
+					["where"] = "Orgrimmar",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [62]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 40000000,
 					["time"] = 1672849904,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWho"] = "Arachad",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [63]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 500000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Ùgah",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Icecrown",
 					["time"] = 1672219615,
 				}, -- [64]
@@ -1170,79 +1171,79 @@ NITdatabase = {
 					["targetMoney"] = 37610000,
 					["playerMoney"] = 0,
 					["time"] = 1672080227,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Borean Tundra",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Borean Tundra",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [65]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 9000000,
 					["time"] = 1672079374,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Borean Tundra",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Borean Tundra",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [66]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1672079223,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Borean Tundra",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Borean Tundra",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [67]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1672078709,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Borean Tundra",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Borean Tundra",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [68]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1672076892,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [69]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1672074597,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [70]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1672073623,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [71]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1672071491,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Stopndie",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [72]
 				{
 					["targetMoney"] = 44660000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "DRUID",
 					["tradeWho"] = "Gibevenedele",
+					["tradeWhoClass"] = "DRUID",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671817709,
 				}, -- [73]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 16000000,
-					["tradeWhoClass"] = "DRUID",
 					["tradeWho"] = "Gibevenedele",
+					["tradeWhoClass"] = "DRUID",
 					["where"] = "Naxxramas",
 					["time"] = 1671815259,
 				}, -- [74]
@@ -1250,55 +1251,55 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1671814333,
-					["tradeWhoClass"] = "DRUID",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Gibevenedele",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DRUID",
 				}, -- [75]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 26000000,
 					["time"] = 1671814031,
-					["tradeWhoClass"] = "DRUID",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Gibevenedele",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DRUID",
 				}, -- [76]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1671813511,
-					["tradeWhoClass"] = "DRUID",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Gibevenedele",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DRUID",
 				}, -- [77]
 				{
 					["targetMoney"] = 32750000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Arapally",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671644941,
 				}, -- [78]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Arapally",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671644682,
 				}, -- [79]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Arapally",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671643855,
 				}, -- [80]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Arapally",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671643780,
 				}, -- [81]
@@ -1306,191 +1307,191 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1671638361,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Arapally",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [82]
 				{
 					["targetMoney"] = 32660000,
 					["playerMoney"] = 0,
 					["time"] = 1671557064,
-					["tradeWho"] = "Lastdps",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "HUNTER",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Lastdps",
 				}, -- [83]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
 					["time"] = 1671555539,
-					["tradeWho"] = "Lastdps",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "HUNTER",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Lastdps",
 				}, -- [84]
 				{
 					["targetMoney"] = 30360000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Bentebenlås",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1671210449,
 				}, -- [85]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Bentebenlås",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "Naxxramas",
 					["time"] = 1671206586,
 				}, -- [86]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Bentebenlås",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "Naxxramas",
 					["time"] = 1671206146,
 				}, -- [87]
 				{
 					["targetMoney"] = 23220000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Borean Tundra",
 					["time"] = 1669928750,
 				}, -- [88]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWho"] = "Ethêrnity",
 					["tradeWhoClass"] = "DEATHKNIGHT",
+					["tradeWho"] = "Ethêrnity",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1669927517,
 				}, -- [89]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3500000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669925422,
 				}, -- [90]
 				{
 					["targetMoney"] = 5000000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Ethêrnity",
 					["tradeWhoClass"] = "DEATHKNIGHT",
+					["tradeWho"] = "Ethêrnity",
 					["where"] = "Naxxramas",
 					["time"] = 1669924934,
 				}, -- [91]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 13000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669924657,
 				}, -- [92]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669924573,
 				}, -- [93]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669924360,
 				}, -- [94]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669924263,
 				}, -- [95]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 8000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669924112,
 				}, -- [96]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669922510,
 				}, -- [97]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Angrywarrior",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Angrywarrior",
 					["where"] = "Naxxramas",
 					["time"] = 1669922475,
 				}, -- [98]
 				{
 					["targetMoney"] = 40160000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668970783,
 				}, -- [99]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668970099,
 				}, -- [100]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668969806,
 				}, -- [101]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668969758,
 				}, -- [102]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668969289,
 				}, -- [103]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Cashmeout",
 					["tradeWhoClass"] = "WARRIOR",
+					["tradeWho"] = "Cashmeout",
 					["where"] = "Naxxramas",
 					["time"] = 1668968458,
 				}, -- [104]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWho"] = "Söpö",
 					["tradeWhoClass"] = "DEATHKNIGHT",
+					["tradeWho"] = "Söpö",
 					["where"] = "Dalaran",
 					["time"] = 1668881504,
 				}, -- [105]
@@ -1498,39 +1499,39 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
 					["time"] = 1665493410,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Orgrimmar",
 					["tradeWho"] = "Yalih",
+					["where"] = "Orgrimmar",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [106]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Lithilea",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1663687924,
 				}, -- [107]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Eugon",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Thunder Bluff",
 					["time"] = 1662916003,
 				}, -- [108]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
-					["tradeWho"] = "Bamshal",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Bamshal",
 					["where"] = "Undercity",
 					["time"] = 1662134406,
 				}, -- [109]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 200000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Axxos",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653920243,
 				}, -- [110]
@@ -1538,15 +1539,15 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 700000,
 					["time"] = 1653914568,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Scarlet Monastery",
 					["tradeWho"] = "Kawakii",
+					["where"] = "Scarlet Monastery",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [111]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 650000,
-					["tradeWho"] = "Kawakii",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Kawakii",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653909786,
 				}, -- [112]
@@ -1554,23 +1555,23 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 150000,
 					["time"] = 1653907528,
-					["tradeWho"] = "Extod",
-					["where"] = "Scarlet Monastery",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Scarlet Monastery",
+					["tradeWho"] = "Extod",
 				}, -- [113]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000,
-					["tradeWho"] = "Portalguy",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Portalguy",
 					["where"] = "Orgrimmar",
 					["time"] = 1653144185,
 				}, -- [114]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Moggogo",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1652953584,
 				}, -- [115]
@@ -1578,36 +1579,36 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 100000,
 					["time"] = 1648463137,
-					["tradeWho"] = "Prtibeegee",
-					["where"] = "Silvermoon City",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Silvermoon City",
+					["tradeWho"] = "Prtibeegee",
 				}, -- [116]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
 					["time"] = 1648059903,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Stratholme",
 					["tradeWho"] = "Zazadin",
+					["where"] = "Stratholme",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [117]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
 					["time"] = 1648055465,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Stratholme",
 					["tradeWho"] = "Zazadin",
+					["where"] = "Stratholme",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [118]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
-					["tradeWho"] = "Zazadin",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Zazadin",
 					["where"] = "Stratholme",
 					["time"] = 1648050788,
 				}, -- [119]
 			},
-			["weeklyResetTime"] = 1716350400,
+			["weeklyResetTime"] = 1716350399,
 			["gammaBuffSettings"] = {
 			},
 			["myChars"] = {
@@ -1671,8 +1672,8 @@ NITdatabase = {
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 450,
 					["resting"] = true,
-					["time"] = 1715799660,
-					["gold"] = 213400894,
+					["time"] = 1715846744,
+					["gold"] = 14267331,
 					["currency"] = {
 						[237547] = {
 							["max"] = 0,
@@ -1821,7 +1822,7 @@ NITdatabase = {
 					["petCurrentXP"] = 596,
 					["restedXP"] = 0,
 					["totalBagSlots"] = 88,
-					["freeBagSlots"] = 69,
+					["shadowLabAttune"] = true,
 					["questsDaily"] = {
 					},
 					["arenaPoints"] = 0,
@@ -1829,7 +1830,7 @@ NITdatabase = {
 					["petFamily"] = "Wolf",
 					["hasPet"] = true,
 					["profSkillMax1"] = 450,
-					["guild"] = "CUBE",
+					["guildRankName"] = "Alt",
 					["classEnglish"] = "HUNTER",
 					["raceEnglish"] = "Orc",
 					["ammo"] = 7832,
@@ -1862,15 +1863,15 @@ NITdatabase = {
 							["name"] = "Emblem of Heroism",
 							["count"] = 0,
 						},
-						[135885] = {
-							["max"] = 0,
-							["name"] = "Emblem of Conquest",
-							["count"] = 0,
-						},
 						[237273] = {
 							["max"] = 0,
 							["name"] = "Defiler's Scourgestone",
 							["count"] = 24,
+						},
+						[135885] = {
+							["max"] = 0,
+							["name"] = "Emblem of Conquest",
+							["count"] = 0,
 						},
 					},
 					["time"] = 1714819530,
@@ -1897,10 +1898,10 @@ NITdatabase = {
 					["firstaidSkill"] = 0,
 					["petLoyaltyRate"] = 20,
 					["hellfireCitadelAttune"] = true,
-					["guildRankName"] = "Alt",
 					["currentXP"] = 0,
+					["guild"] = "CUBE",
 					["profSkillMax2"] = 450,
-					["shadowLabAttune"] = true,
+					["freeBagSlots"] = 69,
 					["level"] = 80,
 					["cooldowns"] = {
 						["Smelt Titansteel"] = {
@@ -1924,7 +1925,7 @@ NITdatabase = {
 					["cookingSkill"] = 0,
 					[17029] = 0,
 					["profSkill1"] = 60,
-					["durabilityAverage"] = 58.75,
+					["durabilityAverage"] = 100,
 					["prof2"] = "none",
 					["savedInstances"] = {
 					},
@@ -1943,8 +1944,9 @@ NITdatabase = {
 					["raceEnglish"] = "Scourge",
 					["profSkillMax1"] = 75,
 					[44615] = 0,
-					["resting"] = true,
-					["time"] = 1715418000,
+					["currency"] = {
+					},
+					["time"] = 1715848114,
 					["gold"] = 341145,
 					["quests"] = {
 					},
@@ -1963,17 +1965,17 @@ NITdatabase = {
 					["level"] = 5,
 					["realm"] = "Golemagg",
 					["firstaidSkillMax"] = 0,
-					["cookingSkillMax"] = 0,
-					["raceLocalized"] = "Undead",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Undead",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Mxyz",
 					["classEnglish"] = "PRIEST",
 					["profSkill2"] = 0,
 					["currentXP"] = 36,
 					["race"] = "Undead",
 					["guild"] = "Trouble",
 					["profSkillMax2"] = 0,
-					["playerName"] = "Mxyz",
+					["firstaidSkill"] = 0,
 					["cooldowns"] = {
 					},
 					["marks"] = {
@@ -1985,8 +1987,59 @@ NITdatabase = {
 						[47395] = 0,
 					},
 					["classLocalized"] = "Priest",
+					["resting"] = true,
+				},
+				["Asjrdfsad"] = {
+					[17029] = 0,
+					["realm"] = "Golemagg",
+					["raceEnglish"] = "BloodElf",
+					["classLocalized"] = "Priest",
+					["marks"] = {
+						[20558] = 0,
+						[20559] = 0,
+						[20560] = 0,
+					},
+					["levelLog"] = {
+						{
+							["y"] = 0.118850103304596,
+							["x"] = 0.5367166615091408,
+							["subzoneName"] = "Sunstrider Isle",
+							["zone"] = 1415,
+							["zoneName"] = "Eversong Woods",
+							["timestamp"] = 1715848198,
+							["gold"] = 0,
+							["played"] = 1,
+						}, -- [1]
+					},
+					["durabilityAverage"] = 100,
 					["currency"] = {
 					},
+					["time"] = 1715848370,
+					["gold"] = 0,
+					["cooldowns"] = {
+					},
+					["level"] = 1,
+					["resting"] = false,
+					["savedInstances"] = {
+					},
+					["classEnglish"] = "PRIEST",
+					[17056] = 0,
+					["raceLocalized"] = "Blood Elf",
+					["honor"] = 0,
+					["maxXP"] = 400,
+					["gender"] = "Female",
+					["guild"] = "No guild",
+					["race"] = "Blood Elf",
+					["currentXP"] = 0,
+					["restedXP"] = 0,
+					["totalBagSlots"] = 20,
+					["freeBagSlots"] = 19,
+					["questsDaily"] = {
+					},
+					["arenaPoints"] = 0,
+					["quests"] = {
+					},
+					["guildRankName"] = "No guild rank",
 				},
 				["Mxyzptlk"] = {
 					["fishingSkill"] = 0,
@@ -2022,10 +2075,10 @@ NITdatabase = {
 					},
 					["realm"] = "Golemagg",
 					["firstaidSkillMax"] = 75,
-					["firstaidSkill"] = 1,
+					["playerName"] = "Mxyzptlk",
 					["raceLocalized"] = "Undead",
 					["fishingSkillMax"] = 0,
-					["playerName"] = "Mxyzptlk",
+					["firstaidSkill"] = 1,
 					["classEnglish"] = "WARLOCK",
 					[6265] = 6,
 					["prof2"] = "none",
@@ -2074,8 +2127,8 @@ NITdatabase = {
 					["guild"] = "CUBE",
 					["raceEnglish"] = "Tauren",
 					["profSkillMax1"] = 0,
-					["race"] = "Tauren",
 					["resting"] = true,
+					["race"] = "Tauren",
 					["time"] = 1715796103,
 					["gold"] = 1941307,
 					["quests"] = {
@@ -2374,10 +2427,10 @@ NITdatabase = {
 					["level"] = 26,
 					["realm"] = "Golemagg",
 					["guildRankName"] = "Alt",
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
-					["playerName"] = "Handrmandr",
+					["raceLocalized"] = "Tauren",
+					["fishingSkillMax"] = 0,
+					["firstaidSkill"] = 0,
 					["classEnglish"] = "PALADIN",
 					["currentXP"] = 7243,
 					["currency"] = {
@@ -2392,56 +2445,67 @@ NITdatabase = {
 						[47395] = 0,
 					},
 					[21177] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Handrmandr",
 					["cooldowns"] = {
 					},
 					["firstaidSkillMax"] = 0,
 					["classLocalized"] = "Paladin",
 					["profSkill2"] = 0,
 				},
-				["Augustin"] = {
+				["Tadibey"] = {
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
-					["profSkill1"] = 9,
+					["profSkill1"] = 0,
 					["instances"] = {
-						[543] = 4,
-						[70] = 1,
-						[556] = 1,
-						[558] = 1,
+						[33] = 1,
 						[43] = 1,
-						[209] = 7,
-						[576] = 1,
-						[542] = 4,
-						[553] = 1,
-						[189] = 22,
-						[557] = 1,
-						[574] = 2,
-						[546] = 4,
-						[547] = 4,
 					},
-					["durabilityAverage"] = 71.21212121212122,
-					[17033] = 0,
-					["prof2"] = "Tailoring",
+					["durabilityAverage"] = 38.64406779661017,
+					["level"] = 25,
 					["savedInstances"] = {
 					},
 					["honor"] = 0,
-					["maxXP"] = 142500,
+					["maxXP"] = 23100,
 					["gender"] = "Male",
-					["prof1"] = "Enchanting",
-					["restedXP"] = 213750,
+					["prof1"] = "none",
+					["restedXP"] = 34650,
 					["totalBagSlots"] = 76,
-					["freeBagSlots"] = 69,
+					["freeBagSlots"] = 66,
 					["questsDaily"] = {
 					},
 					["arenaPoints"] = 0,
-					["shadowLabAttune"] = true,
-					[17056] = 4,
-					["classLocalized"] = "Mage",
-					["currentXP"] = 18698,
+					[17057] = 0,
+					[17058] = 0,
+					["raceEnglish"] = "Orc",
+					["profSkillMax1"] = 0,
+					["resting"] = true,
+					["classLocalized"] = "Shaman",
+					["currency"] = {
+					},
+					["time"] = 1715419986,
+					["gold"] = 3000,
+					["profSkillMax2"] = 0,
+					["levelLog"] = {
+						[25] = {
+							["y"] = 0.4868703067633979,
+							["x"] = 0.4824986525332375,
+							["subzoneName"] = "Valley of Wisdom",
+							["zone"] = 1454,
+							["zoneName"] = "Orgrimmar",
+							["timestamp"] = 1715419983,
+							["gold"] = 3000,
+							["played"] = 73677,
+						},
+					},
 					["guildRankName"] = "No guild rank",
-					["raceEnglish"] = "Scourge",
-					["profSkillMax1"] = 75,
-					["profSkill2"] = 150,
+					["realm"] = "Golemagg",
+					["profSkill2"] = 0,
+					["cookingSkillMax"] = 0,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Tadibey",
+					["classEnglish"] = "SHAMAN",
+					[17030] = 0,
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -2450,49 +2514,16 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					["currency"] = {
-						[134375] = {
-							["max"] = 0,
-							["name"] = "Stone Keeper's Shard",
-							["count"] = 6,
-						},
-					},
-					["resting"] = true,
-					["time"] = 1715420010,
-					["gold"] = 6713,
-					["firstaidSkillMax"] = 300,
-					["levelLog"] = {
-						[54] = {
-							["y"] = 0.7730074653858997,
-							["x"] = 0.4969867274523895,
-							["subzoneName"] = "Valley of Strength",
-							["zone"] = 1454,
-							["zoneName"] = "Orgrimmar",
-							["timestamp"] = 1715420007,
-							["played"] = 435530,
-							["gold"] = 6713,
-						},
-					},
-					["guild"] = "No guild",
-					["realm"] = "Golemagg",
-					["race"] = "Undead",
-					["playerName"] = "Vermina",
-					["raceLocalized"] = "Undead",
-					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 300,
-					["classEnglish"] = "MAGE",
-					["hellfireCitadelAttune"] = true,
-					["fishingSkillMax"] = 0,
-					["profSkillMax2"] = 225,
-					["level"] = 54,
-					[21177] = 251,
-					[17020] = 0,
+					["prof2"] = "none",
+					["race"] = "Orc",
+					["firstaidSkill"] = 0,
+					["currentXP"] = 21254,
 					["cooldowns"] = {
 					},
-					[17031] = 6,
+					["guild"] = "No guild",
 					["quests"] = {
 					},
-					[17032] = 7,
+					["firstaidSkillMax"] = 0,
 				},
 				["Moolatz"] = {
 					[17026] = 0,
@@ -2558,7 +2589,6 @@ NITdatabase = {
 					["profSkillMax1"] = 465,
 					["shadowLabAttune"] = true,
 					["classLocalized"] = "Druid",
-					["resting"] = true,
 					["currency"] = {
 						[237547] = {
 							["max"] = 0,
@@ -2575,20 +2605,20 @@ NITdatabase = {
 							["name"] = "Emblem of Triumph",
 							["count"] = 0,
 						},
-						[135885] = {
+						[237273] = {
 							["max"] = 0,
-							["name"] = "Emblem of Conquest",
-							["count"] = 0,
+							["name"] = "Defiler's Scourgestone",
+							["count"] = 15,
 						},
 						[135947] = {
 							["max"] = 0,
 							["name"] = "Emblem of Heroism",
 							["count"] = 0,
 						},
-						[237273] = {
+						[135885] = {
 							["max"] = 0,
-							["name"] = "Defiler's Scourgestone",
-							["count"] = 15,
+							["name"] = "Emblem of Conquest",
+							["count"] = 0,
 						},
 						[334365] = {
 							["max"] = 0,
@@ -2596,6 +2626,7 @@ NITdatabase = {
 							["count"] = 0,
 						},
 					},
+					["resting"] = true,
 					["time"] = 1715418520,
 					["gold"] = 10649893,
 					["marks"] = {
@@ -2621,15 +2652,15 @@ NITdatabase = {
 					["profSkillMax2"] = 450,
 					["realm"] = "Golemagg",
 					["firstaidSkillMax"] = 0,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Moolatz",
 					["classEnglish"] = "DRUID",
 					["guild"] = "No guild",
 					["race"] = "Tauren",
 					["fishingSkill"] = 0,
-					["playerName"] = "Moolatz",
+					["firstaidSkill"] = 0,
 					[44614] = 0,
 					["level"] = 80,
 					["cooldowns"] = {
@@ -2639,256 +2670,49 @@ NITdatabase = {
 					},
 					["profSkill2"] = 450,
 				},
-				["Tadibey"] = {
+				["Augustin"] = {
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
-					["profSkill1"] = 0,
+					["profSkill1"] = 9,
 					["instances"] = {
-						[33] = 1,
+						[558] = 1,
+						[70] = 1,
+						[556] = 1,
+						[543] = 4,
 						[43] = 1,
-					},
-					["durabilityAverage"] = 38.64406779661017,
-					["level"] = 25,
-					["savedInstances"] = {
-					},
-					["honor"] = 0,
-					["maxXP"] = 23100,
-					["gender"] = "Male",
-					["prof1"] = "none",
-					["restedXP"] = 34650,
-					["totalBagSlots"] = 76,
-					["freeBagSlots"] = 66,
-					["questsDaily"] = {
-					},
-					["arenaPoints"] = 0,
-					[17057] = 0,
-					[17058] = 0,
-					["raceEnglish"] = "Orc",
-					["profSkillMax1"] = 0,
-					["currency"] = {
-					},
-					["classLocalized"] = "Shaman",
-					["resting"] = true,
-					["time"] = 1715419986,
-					["gold"] = 3000,
-					["profSkillMax2"] = 0,
-					["levelLog"] = {
-						[25] = {
-							["y"] = 0.4868703067633979,
-							["x"] = 0.4824986525332375,
-							["subzoneName"] = "Valley of Wisdom",
-							["zone"] = 1454,
-							["zoneName"] = "Orgrimmar",
-							["timestamp"] = 1715419983,
-							["gold"] = 3000,
-							["played"] = 73677,
-						},
-					},
-					["guildRankName"] = "No guild rank",
-					["realm"] = "Golemagg",
-					["profSkill2"] = 0,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
-					["classEnglish"] = "SHAMAN",
-					[17030] = 0,
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["prof2"] = "none",
-					["race"] = "Orc",
-					["playerName"] = "Tadibey",
-					["currentXP"] = 21254,
-					["cooldowns"] = {
-					},
-					["guild"] = "No guild",
-					["quests"] = {
-					},
-					["firstaidSkillMax"] = 0,
-				},
-				["Vermina"] = {
-					["fishingSkill"] = 0,
-					["cookingSkill"] = 0,
-					["profSkill1"] = 138,
-					["instances"] = {
-						[409] = 2,
-						[632] = 14,
-						[602] = 2,
-						[619] = 10,
-						[604] = 6,
-						[574] = 5,
-						[575] = 2,
-						[576] = 7,
-						[608] = 4,
-						[578] = 4,
-						[595] = 2,
-						[658] = 4,
-						[601] = 7,
-						[564] = 1,
-						[668] = 4,
-						[599] = 4,
+						[547] = 4,
+						[576] = 1,
+						[189] = 22,
 						[553] = 1,
-						[600] = 5,
-						[230] = 1,
+						[557] = 1,
+						[542] = 4,
+						[574] = 2,
+						[546] = 4,
+						[209] = 7,
 					},
-					["durabilityAverage"] = 63.36842105263158,
+					["durabilityAverage"] = 71.21212121212122,
 					[17033] = 0,
-					["prof2"] = "Skinning",
-					["savedInstances"] = {
-						[294465154] = {
-							["locked"] = true,
-							["name"] = "Molten Core",
-							["resetTime"] = 1716350605,
-							["difficultyName"] = "40 Player",
-						},
-					},
-					["honor"] = 806,
-					["maxXP"] = 1686300,
-					["gender"] = "Female",
-					["prof1"] = "Leatherworking",
-					["mcAttune"] = true,
-					["restedXP"] = 0,
-					["totalBagSlots"] = 88,
-					["shadowLabAttune"] = true,
-					["questsDaily"] = {
-					},
-					["arenaPoints"] = 0,
-					["guildRankName"] = "Alt",
-					["raceEnglish"] = "BloodElf",
-					["profSkillMax1"] = 225,
-					["resting"] = true,
-					["classLocalized"] = "Paladin",
-					["currency"] = {
-						[334365] = {
-							["max"] = 0,
-							["name"] = "Emblem of Frost",
-							["count"] = 0,
-						},
-						[134375] = {
-							["max"] = 0,
-							["name"] = "Stone Keeper's Shard",
-							["count"] = 4,
-						},
-						[135979] = {
-							["max"] = 0,
-							["name"] = "Emblem of Triumph",
-							["count"] = 0,
-						},
-						[135947] = {
-							["max"] = 0,
-							["name"] = "Emblem of Heroism",
-							["count"] = 0,
-						},
-						[237273] = {
-							["max"] = 0,
-							["name"] = "Defiler's Scourgestone",
-							["count"] = 57,
-						},
-					},
-					["time"] = 1715799597,
-					["gold"] = 7786984,
-					["profSkillMax2"] = 450,
-					["levelLog"] = {
-						[80] = {
-							["played"] = 489509,
-							["subzoneName"] = "Dalaran",
-							["zone"] = 125,
-							["zoneName"] = "Dalaran",
-							["y"] = 0.4053024954996294,
-							["x"] = 0.5495201620476146,
-							["gold"] = 12158484,
-							["timestamp"] = 1715416122,
-							["questCount"] = 35,
-						},
-					},
-					["freeBagSlots"] = 54,
-					["realm"] = "Golemagg",
-					["level"] = 80,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Blood Elf",
-					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 150,
-					["classEnglish"] = "PALADIN",
-					["hellfireCitadelAttune"] = true,
-					["guild"] = "CUBE",
-					["currentXP"] = 0,
-					["profSkill2"] = 450,
-					[21177] = 0,
-					["firstaidSkillMax"] = 150,
-					["cooldowns"] = {
-					},
-					["race"] = "Blood Elf",
-					["quests"] = {
-					},
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-				},
-				["Miqa"] = {
-					["fishingSkill"] = 0,
-					["cookingSkill"] = 0,
-					[17029] = 0,
-					["profSkill1"] = 0,
-					["instances"] = {
-						[43] = 1,
-					},
-					["durabilityAverage"] = 60,
-					["level"] = 23,
+					["prof2"] = "Tailoring",
 					["savedInstances"] = {
 					},
 					["honor"] = 0,
-					["maxXP"] = 20400,
+					["maxXP"] = 142500,
 					["gender"] = "Male",
-					["prof1"] = "none",
-					["restedXP"] = 30600,
+					["prof1"] = "Enchanting",
+					["restedXP"] = 213750,
 					["totalBagSlots"] = 76,
 					["freeBagSlots"] = 69,
 					["questsDaily"] = {
 					},
 					["arenaPoints"] = 0,
-					[17056] = 0,
+					["shadowLabAttune"] = true,
+					[17056] = 4,
+					["classLocalized"] = "Mage",
+					["currentXP"] = 18698,
 					["guildRankName"] = "No guild rank",
-					["raceEnglish"] = "Troll",
-					["profSkillMax1"] = 0,
-					["currency"] = {
-					},
-					["race"] = "Troll",
-					["time"] = 1715420136,
-					["gold"] = 5373,
-					["classLocalized"] = "Priest",
-					["levelLog"] = {
-						[23] = {
-							["y"] = 0.7363563745906544,
-							["x"] = 0.5371159719726913,
-							["subzoneName"] = "Valley of Strength",
-							["zone"] = 1454,
-							["zoneName"] = "Orgrimmar",
-							["timestamp"] = 1715417862,
-							["gold"] = 5373,
-							["played"] = 69352,
-						},
-					},
-					["firstaidSkillMax"] = 0,
-					["realm"] = "Golemagg",
-					["guild"] = "No guild",
-					["playerName"] = "Miqa",
-					["raceLocalized"] = "Troll",
-					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
-					["classEnglish"] = "PRIEST",
-					["currentXP"] = 4576,
-					["profSkillMax2"] = 0,
+					["raceEnglish"] = "Scourge",
+					["profSkillMax1"] = 75,
+					["profSkill2"] = 150,
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -2897,15 +2721,49 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					["profSkill2"] = 0,
-					["cookingSkillMax"] = 0,
-					["prof2"] = "none",
-					["cooldowns"] = {
+					["currency"] = {
+						[134375] = {
+							["max"] = 0,
+							["name"] = "Stone Keeper's Shard",
+							["count"] = 6,
+						},
 					},
 					["resting"] = true,
+					["time"] = 1715420010,
+					["gold"] = 6713,
+					["firstaidSkillMax"] = 300,
+					["levelLog"] = {
+						[54] = {
+							["y"] = 0.7730074653858997,
+							["x"] = 0.4969867274523895,
+							["subzoneName"] = "Valley of Strength",
+							["zone"] = 1454,
+							["zoneName"] = "Orgrimmar",
+							["timestamp"] = 1715420007,
+							["played"] = 435530,
+							["gold"] = 6713,
+						},
+					},
+					["guild"] = "No guild",
+					["realm"] = "Golemagg",
+					["race"] = "Undead",
+					["playerName"] = "Vermina",
+					["raceLocalized"] = "Undead",
+					["fishingSkillMax"] = 0,
+					["firstaidSkill"] = 300,
+					["classEnglish"] = "MAGE",
+					["hellfireCitadelAttune"] = true,
+					["cookingSkillMax"] = 0,
+					["profSkillMax2"] = 225,
+					["level"] = 54,
+					[21177] = 251,
+					[17020] = 0,
+					["cooldowns"] = {
+					},
+					[17031] = 6,
 					["quests"] = {
 					},
-					[44615] = 0,
+					[17032] = 7,
 				},
 				["Battitude"] = {
 					["fishingSkill"] = 0,
@@ -2961,6 +2819,221 @@ NITdatabase = {
 					["currency"] = {
 					},
 				},
+				["Miqa"] = {
+					["fishingSkill"] = 0,
+					["cookingSkill"] = 0,
+					[17029] = 0,
+					["profSkill1"] = 0,
+					["instances"] = {
+						[43] = 2,
+						[34] = 1,
+					},
+					["durabilityAverage"] = 66.85714285714286,
+					["level"] = 25,
+					["savedInstances"] = {
+					},
+					["honor"] = 0,
+					["maxXP"] = 23100,
+					["gender"] = "Male",
+					["prof1"] = "none",
+					["restedXP"] = 2,
+					["totalBagSlots"] = 76,
+					["freeBagSlots"] = 69,
+					["questsDaily"] = {
+					},
+					["arenaPoints"] = 0,
+					[17056] = 0,
+					["guildRankName"] = "No guild rank",
+					["raceEnglish"] = "Troll",
+					["profSkillMax1"] = 0,
+					["race"] = "Troll",
+					["currency"] = {
+					},
+					["time"] = 1715855481,
+					["gold"] = 36886,
+					["classLocalized"] = "Priest",
+					["levelLog"] = {
+						[24] = {
+							["played"] = 76601,
+							["subzoneName"] = "Screaming Gully",
+							["gold"] = 14349,
+							["zoneName"] = "The Wailing Caverns",
+							["timestamp"] = 1715854174,
+							["mobCount"] = 90,
+							["questCount"] = 1,
+						},
+						[25] = {
+							["played"] = 77614,
+							["subzoneName"] = "",
+							["gold"] = 20175,
+							["zoneName"] = "The Wailing Caverns",
+							["timestamp"] = 1715855187,
+							["mobCount"] = 21,
+							["questCount"] = 2,
+						},
+						[23] = {
+							["played"] = 69352,
+							["subzoneName"] = "Valley of Strength",
+							["zone"] = 1454,
+							["zoneName"] = "Orgrimmar",
+							["y"] = 0.7363563745906544,
+							["x"] = 0.5371159719726913,
+							["gold"] = 5373,
+							["timestamp"] = 1715417862,
+							["mobCount"] = 60,
+						},
+					},
+					["firstaidSkillMax"] = 0,
+					["realm"] = "Golemagg",
+					["guild"] = "No guild",
+					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Troll",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Miqa",
+					["classEnglish"] = "PRIEST",
+					["currentXP"] = 7904,
+					["profSkillMax2"] = 0,
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
+					["profSkill2"] = 0,
+					["cookingSkillMax"] = 0,
+					["prof2"] = "none",
+					["cooldowns"] = {
+					},
+					["resting"] = true,
+					["quests"] = {
+					},
+					[44615] = 0,
+				},
+				["Vermina"] = {
+					["fishingSkill"] = 0,
+					["cookingSkill"] = 0,
+					["profSkill1"] = 138,
+					["instances"] = {
+						[409] = 2,
+						[632] = 14,
+						[602] = 2,
+						[619] = 10,
+						[604] = 6,
+						[574] = 5,
+						[575] = 2,
+						[576] = 7,
+						[608] = 4,
+						[578] = 4,
+						[595] = 2,
+						[658] = 4,
+						[601] = 7,
+						[564] = 1,
+						[668] = 4,
+						[599] = 4,
+						[553] = 1,
+						[600] = 5,
+						[230] = 1,
+					},
+					["durabilityAverage"] = 63.36842105263158,
+					[17033] = 0,
+					["prof2"] = "Skinning",
+					["savedInstances"] = {
+						[294465154] = {
+							["locked"] = true,
+							["resetTime"] = 1716350451,
+							["name"] = "Molten Core",
+							["difficultyName"] = "40 Player",
+						},
+					},
+					["honor"] = 806,
+					["maxXP"] = 1686300,
+					["gender"] = "Female",
+					["prof1"] = "Leatherworking",
+					["mcAttune"] = true,
+					["restedXP"] = 0,
+					["totalBagSlots"] = 88,
+					["shadowLabAttune"] = true,
+					["questsDaily"] = {
+					},
+					["arenaPoints"] = 0,
+					["guildRankName"] = "Alt",
+					["raceEnglish"] = "BloodElf",
+					["profSkillMax1"] = 225,
+					["currency"] = {
+						[334365] = {
+							["max"] = 0,
+							["name"] = "Emblem of Frost",
+							["count"] = 0,
+						},
+						[134375] = {
+							["max"] = 0,
+							["name"] = "Stone Keeper's Shard",
+							["count"] = 4,
+						},
+						[135979] = {
+							["max"] = 0,
+							["name"] = "Emblem of Triumph",
+							["count"] = 0,
+						},
+						[135947] = {
+							["max"] = 0,
+							["name"] = "Emblem of Heroism",
+							["count"] = 0,
+						},
+						[237273] = {
+							["max"] = 0,
+							["name"] = "Defiler's Scourgestone",
+							["count"] = 57,
+						},
+					},
+					["classLocalized"] = "Paladin",
+					["resting"] = true,
+					["time"] = 1715846828,
+					["gold"] = 197474430,
+					["profSkillMax2"] = 450,
+					["levelLog"] = {
+						[80] = {
+							["played"] = 489509,
+							["subzoneName"] = "Dalaran",
+							["zone"] = 125,
+							["zoneName"] = "Dalaran",
+							["y"] = 0.4053024954996294,
+							["x"] = 0.5495201620476146,
+							["gold"] = 12158484,
+							["timestamp"] = 1715416122,
+							["questCount"] = 35,
+						},
+					},
+					["freeBagSlots"] = 54,
+					["realm"] = "Golemagg",
+					["level"] = 80,
+					["fishingSkillMax"] = 0,
+					["raceLocalized"] = "Blood Elf",
+					["cookingSkillMax"] = 0,
+					["firstaidSkill"] = 150,
+					["classEnglish"] = "PALADIN",
+					["hellfireCitadelAttune"] = true,
+					["guild"] = "CUBE",
+					["currentXP"] = 0,
+					["profSkill2"] = 450,
+					[21177] = 0,
+					["firstaidSkillMax"] = 150,
+					["cooldowns"] = {
+					},
+					["race"] = "Blood Elf",
+					["quests"] = {
+					},
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
+				},
 				["Vermin"] = {
 					["fishingSkill"] = 25,
 					["cookingSkill"] = 165,
@@ -2990,29 +3063,29 @@ NITdatabase = {
 						[585] = 4,
 						[329] = 24,
 						[309] = 29,
-						[43] = 9,
 						[269] = 1,
-						[532] = 19,
+						[43] = 9,
+						[658] = 4,
 						[489] = 22,
 						[599] = 12,
 						[601] = 10,
 						[540] = 3,
-						[542] = 5,
+						[668] = 1,
 						[607] = 11,
 						[546] = 5,
 						[545] = 1,
-						[619] = 11,
-						[552] = 3,
-						[554] = 3,
 						[556] = 9,
+						[615] = 8,
+						[554] = 3,
+						[619] = 11,
 						[616] = 14,
 						[560] = 1,
 						[30] = 61,
-						[615] = 8,
+						[552] = 3,
 						[566] = 60,
-						[668] = 1,
-						[658] = 4,
+						[542] = 5,
 						[595] = 15,
+						[532] = 19,
 					},
 					["firstaidSkillMax"] = 450,
 					["profSkill2"] = 450,
@@ -3037,6 +3110,42 @@ NITdatabase = {
 					["karaAttune"] = true,
 					["level"] = 80,
 					["blackMorassAttune"] = true,
+					["race"] = "Orc",
+					["time"] = 1715848149,
+					["gold"] = 38311808,
+					["guild"] = "CUBE",
+					["levelLog"] = {
+						[80] = {
+							["y"] = 0.3961199321147064,
+							["x"] = 0.4768100494999182,
+							["subzoneName"] = "Like Clockwork",
+							["zone"] = 113,
+							["zoneName"] = "Dalaran",
+							["timestamp"] = 1714817010,
+							["gold"] = 34388475,
+							["played"] = 2132111,
+						},
+					},
+					["guildRankName"] = "Member",
+					["realm"] = "Golemagg",
+					["durabilityAverage"] = 99.76470588235294,
+					["cookingSkillMax"] = 225,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 75,
+					["firstaidSkill"] = 447,
+					["classEnglish"] = "WARRIOR",
+					["hellfireCitadelAttune"] = true,
+					["playerName"] = "Vermin",
+					["resting"] = true,
+					["prof2"] = "Engineering",
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
 					["currency"] = {
 						[237547] = {
 							["max"] = 0,
@@ -3084,42 +3193,6 @@ NITdatabase = {
 							["count"] = 0,
 						},
 					},
-					["time"] = 1715594506,
-					["gold"] = 38311808,
-					["guild"] = "CUBE",
-					["levelLog"] = {
-						[80] = {
-							["y"] = 0.3961199321147064,
-							["x"] = 0.4768100494999182,
-							["subzoneName"] = "Like Clockwork",
-							["zone"] = 113,
-							["zoneName"] = "Dalaran",
-							["timestamp"] = 1714817010,
-							["gold"] = 34388475,
-							["played"] = 2132111,
-						},
-					},
-					["guildRankName"] = "Member",
-					["realm"] = "Golemagg",
-					["durabilityAverage"] = 99.76470588235294,
-					["fishingSkillMax"] = 75,
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 225,
-					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
-					["hellfireCitadelAttune"] = true,
-					["firstaidSkill"] = 447,
-					["resting"] = true,
-					["prof2"] = "Engineering",
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["race"] = "Orc",
 					["cooldowns"] = {
 					},
 					["questsDaily"] = {
@@ -3129,6 +3202,115 @@ NITdatabase = {
 				},
 			},
 			["instances"] = {
+				{
+					["GUID"] = "Creature-0-4457-43-15574-3678-000045DAE4",
+					["leftMoney"] = 31693,
+					["group"] = {
+						["Bazûcá"] = {
+							["level"] = 22,
+							["classEnglish"] = "HUNTER",
+							["class"] = "Hunter",
+						},
+						["Enore-Everlook"] = {
+							["level"] = 24,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
+						["Miqa"] = {
+							["level"] = 25,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Mikestera-Gehennas"] = {
+							["level"] = 21,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Tyloù-Auberdine"] = {
+							["level"] = 20,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+						},
+					},
+					["class"] = "Priest",
+					["leftTime"] = 1715855456,
+					["groupAverage"] = 22,
+					["enteredXP"] = 18121,
+					["xpFromChat"] = 31983,
+					["zoneID"] = 15574,
+					["mobCountFromKill"] = 123,
+					["leftXP"] = 7904,
+					["GUIDSource"] = "mouseover",
+					["playerName"] = "Miqa",
+					["classEnglish"] = "PRIEST",
+					["rep"] = {
+					},
+					["enteredTime"] = 1715854062,
+					["instanceID"] = 43,
+					["difficultyID"] = 1,
+					["leftLevel"] = 25,
+					["rawMoneyCount"] = 544,
+					["instanceName"] = "Wailing Caverns",
+					["enteredMoney"] = 14349,
+					["mobCount"] = 120,
+					["enteredLevel"] = 23,
+				}, -- [1]
+				{
+					["GUID"] = "Creature-0-5563-34-11521-46254-000045C19E",
+					["leftMoney"] = 9954,
+					["group"] = {
+						["Swaghildina-MirageRaceway"] = {
+							["class"] = "Mage",
+							["level"] = 31,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Deliverance",
+						},
+						["Acidicus"] = {
+							["level"] = 30,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Miqa"] = {
+							["level"] = 23,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Knyfus"] = {
+							["class"] = "Rogue",
+							["level"] = 31,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Nostalgiaa",
+						},
+						["Agnax"] = {
+							["class"] = "Warrior",
+							["level"] = 29,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "KBZ",
+						},
+					},
+					["class"] = "Priest",
+					["leftTime"] = 1715847973,
+					["groupAverage"] = 26.5,
+					["enteredXP"] = 4576,
+					["xpFromChat"] = 13545,
+					["zoneID"] = 11521,
+					["mobCountFromKill"] = 50,
+					["leftXP"] = 18121,
+					["GUIDSource"] = "mouseover",
+					["playerName"] = "Miqa",
+					["classEnglish"] = "PRIEST",
+					["rep"] = {
+					},
+					["enteredTime"] = 1715847621,
+					["instanceID"] = 34,
+					["difficultyID"] = 1,
+					["leftLevel"] = 23,
+					["rawMoneyCount"] = 1081,
+					["instanceName"] = "Stormwind Stockade",
+					["enteredMoney"] = 5373,
+					["mobCount"] = 51,
+					["enteredLevel"] = 23,
+				}, -- [2]
 				{
 					["leftMoney"] = 5333504,
 					["group"] = {
@@ -3182,7 +3364,7 @@ NITdatabase = {
 					["enteredMoney"] = 5333504,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [1]
+				}, -- [3]
 				{
 					["leftMoney"] = 5333504,
 					["group"] = {
@@ -3206,7 +3388,7 @@ NITdatabase = {
 					["enteredMoney"] = 5333504,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [2]
+				}, -- [4]
 				{
 					["GUID"] = "Creature-0-4460-409-6702-12056-00004500B7",
 					["leftMoney"] = 5327804,
@@ -3234,7 +3416,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [3]
+				}, -- [5]
 				{
 					["GUID"] = "Creature-0-4459-230-13220-8911-0009C4FF37",
 					["leftMoney"] = 5327804,
@@ -3268,7 +3450,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [4]
+				}, -- [6]
 				{
 					["GUID"] = "Creature-0-5563-564-6600-22873-000044FCB1",
 					["leftMoney"] = 5327804,
@@ -3295,7 +3477,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [5]
+				}, -- [7]
 				{
 					["GUID"] = "Creature-0-4460-33-5713-47293-000044F1D8",
 					["leftMoney"] = 1938975,
@@ -3359,7 +3541,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2748,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 25,
-				}, -- [6]
+				}, -- [8]
 				{
 					["GUID"] = "Creature-0-4448-34-6357-46249-000344EC65",
 					["leftMoney"] = 1922727,
@@ -3435,16 +3617,16 @@ NITdatabase = {
 					["rawMoneyCount"] = 2282,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 24,
-				}, -- [7]
+				}, -- [9]
 				{
 					["GUID"] = "Creature-0-4459-48-3469-44375-00004491BB",
 					["leftMoney"] = 1903967,
 					["group"] = {
-						["Lancisity-Gehennas"] = {
-							["class"] = "Warrior",
+						["Akacho-Venoxis"] = {
+							["class"] = "Priest",
 							["level"] = 25,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Disqualified",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "unanklickbar",
 						},
 						["Lorradir-Venoxis"] = {
 							["class"] = "Hunter",
@@ -3452,17 +3634,17 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "unanklickbar",
 						},
-						["Akacho-Venoxis"] = {
-							["class"] = "Priest",
-							["level"] = 25,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "unanklickbar",
-						},
 						["Handrmandr"] = {
 							["class"] = "Paladin",
 							["level"] = 24,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
+						},
+						["Lancisity-Gehennas"] = {
+							["class"] = "Warrior",
+							["level"] = 25,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Disqualified",
 						},
 						["Mudádin-MirageRaceway"] = {
 							["class"] = "Shaman",
@@ -3497,7 +3679,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-48-3469-44375-00004491BB",
 					["mobCount"] = 122,
 					["enteredLevel"] = 24,
-				}, -- [8]
+				}, -- [10]
 				{
 					["GUID"] = "Creature-0-4480-33-1636-47143-0000C48C4D",
 					["leftMoney"] = 1853180,
@@ -3519,16 +3701,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
+						["Szamanosi"] = {
+							["level"] = 19,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
+						},
 						["Coldpalmer-Gehennas"] = {
 							["class"] = "Mage",
 							["level"] = 22,
 							["classEnglish"] = "MAGE",
 							["guildName"] = "K E K B A B",
-						},
-						["Szamanosi"] = {
-							["level"] = 19,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
 						},
 					},
 					["class"] = "Paladin",
@@ -3557,7 +3739,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4480-33-1636-47131-0001C48C4D",
 					["mobCount"] = 99,
 					["enteredLevel"] = 21,
-				}, -- [9]
+				}, -- [11]
 				{
 					["GUID"] = "Creature-0-4460-43-1924-5762-0000C48991",
 					["leftMoney"] = 3028962,
@@ -3612,7 +3794,7 @@ NITdatabase = {
 					["enteredMoney"] = 3025013,
 					["mobCount"] = 96,
 					["enteredLevel"] = 20,
-				}, -- [10]
+				}, -- [12]
 				{
 					["GUID"] = "Creature-0-4459-43-12954-5768-0000432991",
 					["leftMoney"] = 3019695,
@@ -3629,15 +3811,15 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Steakhouse Donnerfels",
 						},
+						["Breana"] = {
+							["level"] = 23,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
+						},
 						["Leblondi-Venoxis"] = {
 							["level"] = 18,
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
-						},
-						["Rectha-Venoxis"] = {
-							["level"] = 21,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
 						},
 						["Handrmandr"] = {
 							["class"] = "Paladin",
@@ -3645,10 +3827,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Breana"] = {
-							["level"] = 23,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+						["Rectha-Venoxis"] = {
+							["level"] = 21,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 					},
 					["class"] = "Paladin",
@@ -3674,7 +3856,7 @@ NITdatabase = {
 					["enteredMoney"] = 3005775,
 					["mobCount"] = 96,
 					["enteredLevel"] = 17,
-				}, -- [11]
+				}, -- [13]
 				{
 					["GUID"] = "Creature-0-5571-600-16154-26639-0001420C1E",
 					["leftMoney"] = 13019475,
@@ -3725,22 +3907,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 141,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["enteredMoney"] = 12514941,
-					["playerName"] = "Vermina",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermina",
+					["enteredMoney"] = 12514941,
 					["rep"] = {
 						["Horde Expedition: +"] = -2128,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1715604526,
 					["instanceID"] = 600,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 17934,
 					["instanceName"] = "Drak'Tharon Keep",
-					["enteredTime"] = 1715604526,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [12]
+				}, -- [14]
 				{
 					["GUID"] = "Creature-0-4445-574-13574-23954-0000408F6A",
 					["leftMoney"] = 9495204,
@@ -3799,7 +3981,7 @@ NITdatabase = {
 					["enteredMoney"] = 8971023,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [13]
+				}, -- [15]
 				{
 					["GUID"] = "Creature-0-4458-608-27166-31010-000075D8E2",
 					["leftMoney"] = 12158484,
@@ -3842,21 +4024,21 @@ NITdatabase = {
 					["mobCountFromKill"] = 26,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["enteredMoney"] = 12158484,
-					["playerName"] = "Vermina",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermina",
+					["enteredMoney"] = 12158484,
 					["rep"] = {
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1710610639,
 					["instanceID"] = 608,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 0,
 					["instanceName"] = "Violet Hold",
-					["enteredTime"] = 1710610639,
+					["leftXP"] = 0,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 80,
-				}, -- [14]
+				}, -- [16]
 				{
 					["GUID"] = "Creature-0-4479-632-2641-36564-000070536A",
 					["leftMoney"] = 207623254,
@@ -3915,7 +4097,7 @@ NITdatabase = {
 					["enteredMoney"] = 207617875,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [15]
+				}, -- [17]
 				{
 					["GUID"] = "Creature-0-4445-632-2928-38161-00007052E2",
 					["leftMoney"] = 33415275,
@@ -3972,7 +4154,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 19891,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [16]
+				}, -- [18]
 				{
 					["GUID"] = "Creature-0-4457-599-25055-28070-00006F83C4",
 					["leftMoney"] = 13729543,
@@ -4017,23 +4199,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 184,
 					["rawMoneyCount"] = 27707,
-					["enteredMoney"] = 12978264,
-					["leftXP"] = 0,
+					["classEnglish"] = "DRUID",
+					["enteredTime"] = 1701805353,
 					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1806,
 					},
-					["enteredTime"] = 1701805353,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "DRUID",
+					["enteredMoney"] = 12978264,
 					["instanceName"] = "Halls of Stone",
 					["mergeGUID"] = "Creature-0-4457-599-25055-211299-00006F7D2D",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [17]
+				}, -- [19]
 				{
 					["GUID"] = "Creature-0-4460-602-8215-28923-00006F715B",
 					["leftMoney"] = 12834419,
@@ -4075,24 +4257,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 8215,
 					["mobCountFromKill"] = 69,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 12614450,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701803793,
 					["playerName"] = "Moolatz",
 					["classEnglish"] = "DRUID",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1450,
 					},
-					["enteredTime"] = 1701803793,
+					["leftXP"] = 0,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 13669,
 					["instanceName"] = "Halls of Lightning",
-					["enteredMoney"] = 12614450,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [18]
+				}, -- [20]
 				{
 					["GUID"] = "Creature-0-4459-658-4245-37578-00006F7657",
 					["leftMoney"] = 12614450,
@@ -4149,7 +4331,7 @@ NITdatabase = {
 					["enteredMoney"] = 12374603,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [19]
+				}, -- [21]
 				{
 					["GUID"] = "Creature-0-5563-604-10568-29836-00006F5E05",
 					["leftMoney"] = 12462439,
@@ -4201,22 +4383,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 193,
 					["rawMoneyCount"] = 21762,
 					["subDifficulty"] = "gamma",
-					["classEnglish"] = "DRUID",
-					["playerName"] = "Moolatz",
 					["enteredMoney"] = 12246391,
+					["playerName"] = "Moolatz",
+					["classEnglish"] = "DRUID",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1972,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701797404,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1701797404,
+					["leftXP"] = 0,
 					["instanceName"] = "Gundrak",
 					["mergeGUID"] = "Creature-0-5563-604-10568-211299-0000EF6004",
 					["GUIDSource"] = "nameplate1",
 					["mergeSource"] = "mouseover",
-				}, -- [20]
+				}, -- [22]
 				{
 					["GUID"] = "Creature-0-5563-574-9923-211299-00006F5181",
 					["leftMoney"] = 13011819,
@@ -4259,22 +4441,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 94,
 					["classEnglish"] = "DRUID",
 					["mobCount"] = 0,
-					["enteredMoney"] = 12758175,
-					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Moolatz",
+					["enteredMoney"] = 12758175,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1881,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701794168,
 					["instanceID"] = 574,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 47344,
 					["instanceName"] = "Utgarde Keep",
-					["enteredTime"] = 1701794168,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [21]
+				}, -- [23]
 				{
 					["GUID"] = "Creature-0-4460-575-6671-26861-00006F4582",
 					["leftMoney"] = 12753175,
@@ -4325,22 +4507,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 104,
 					["rawMoneyCount"] = 23117,
 					["subDifficulty"] = "gamma",
-					["classEnglish"] = "DRUID",
-					["playerName"] = "Moolatz",
 					["enteredMoney"] = 12531219,
+					["playerName"] = "Moolatz",
+					["classEnglish"] = "DRUID",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1388,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701792000,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1701792000,
+					["leftXP"] = 0,
 					["instanceName"] = "Utgarde Pinnacle",
 					["mergeGUID"] = "Creature-0-4460-575-6671-30871-00006F4582",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [22]
+				}, -- [24]
 				{
 					["GUID"] = "Creature-0-4447-595-9806-26499-00006F470F",
 					["leftMoney"] = 12372732,
@@ -4382,23 +4564,23 @@ NITdatabase = {
 					["mobCountFromKill"] = 343,
 					["classEnglish"] = "DRUID",
 					["mobCount"] = 0,
-					["enteredMoney"] = 11854762,
-					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Moolatz",
+					["enteredMoney"] = 11854762,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -535,
 						["Horde Expedition: +"] = -712,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701790644,
 					["instanceID"] = 595,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 31370,
 					["instanceName"] = "The Culling of Stratholme",
-					["enteredTime"] = 1701790644,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [23]
+				}, -- [25]
 				{
 					["GUID"] = "Creature-0-4469-632-7648-36502-00006EE696",
 					["leftMoney"] = 10353767,
@@ -4455,7 +4637,7 @@ NITdatabase = {
 					["enteredMoney"] = 10332765,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [24]
+				}, -- [26]
 				{
 					["GUID"] = "Creature-0-4447-632-6458-37584-00036EE639",
 					["leftMoney"] = 11185284,
@@ -4514,7 +4696,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29020,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [25]
+				}, -- [27]
 				{
 					["GUID"] = "Creature-0-4447-632-6405-36502-00006EE29A",
 					["leftMoney"] = 206644675,
@@ -4573,7 +4755,7 @@ NITdatabase = {
 					["enteredMoney"] = 206622175,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [26]
+				}, -- [28]
 				{
 					["GUID"] = "Creature-0-4458-632-9891-37584-00046EE262",
 					["leftMoney"] = 38900958,
@@ -4631,7 +4813,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31424,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [27]
+				}, -- [29]
 				{
 					["GUID"] = "Creature-0-4447-578-886-27656-00006E43E0",
 					["leftMoney"] = 10628873,
@@ -4693,23 +4875,23 @@ NITdatabase = {
 					["GUIDSource"] = "target",
 					["mobCountFromKill"] = 292,
 					["rawMoneyCount"] = 30423,
-					["classEnglish"] = "DRUID",
-					["enteredTime"] = 1701723245,
+					["enteredMoney"] = 10139873,
+					["leftXP"] = 0,
 					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1725,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701723245,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredMoney"] = 10139873,
+					["classEnglish"] = "DRUID",
 					["instanceName"] = "The Oculus",
 					["mergeGUID"] = "Creature-0-4447-578-886-28276-00016E4329",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [28]
+				}, -- [30]
 				{
 					["GUID"] = "Creature-0-4468-632-2544-37584-0003EDB6B2",
 					["leftMoney"] = 9138650,
@@ -4771,7 +4953,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 24258,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [29]
+				}, -- [31]
 				{
 					["GUID"] = "Creature-0-4468-632-2447-36502-00006DB27B",
 					["leftMoney"] = 10183064,
@@ -4828,7 +5010,7 @@ NITdatabase = {
 					["enteredMoney"] = 10162834,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [30]
+				}, -- [32]
 				{
 					["GUID"] = "Creature-0-4468-632-2363-37588-00026DB246",
 					["leftMoney"] = 205648975,
@@ -4887,7 +5069,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23829,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [31]
+				}, -- [33]
 				{
 					["GUID"] = "Creature-0-4458-632-12229-37584-0000EDB034",
 					["leftMoney"] = 37896334,
@@ -4944,7 +5126,7 @@ NITdatabase = {
 					["enteredMoney"] = 37867833,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [32]
+				}, -- [34]
 				{
 					["GUID"] = "Creature-0-4448-658-23159-36877-0000EC98CC",
 					["leftMoney"] = 8186486,
@@ -5004,7 +5186,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-658-23159-2110-00006C93FA",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [33]
+				}, -- [35]
 				{
 					["GUID"] = "Creature-0-4479-632-3173-37584-00026C9267",
 					["leftMoney"] = 6543110,
@@ -5062,7 +5244,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23613,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [34]
+				}, -- [36]
 				{
 					["GUID"] = "Creature-0-4459-632-30091-15438-00006C902A",
 					["leftMoney"] = 9189634,
@@ -5121,7 +5303,7 @@ NITdatabase = {
 					["enteredMoney"] = 9171904,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [35]
+				}, -- [37]
 				{
 					["GUID"] = "Creature-0-4479-632-3019-24207-00006C8E1B",
 					["leftMoney"] = 204651946,
@@ -5178,7 +5360,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25115,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [36]
+				}, -- [38]
 				{
 					["GUID"] = "Creature-0-5563-632-24943-36502-00006C89E1",
 					["leftMoney"] = 36894633,
@@ -5235,7 +5417,7 @@ NITdatabase = {
 					["enteredMoney"] = 36873550,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [37]
+				}, -- [39]
 				{
 					["GUID"] = "Creature-0-4469-668-7846-30824-00006BA2BB",
 					["leftMoney"] = 6519497,
@@ -5291,7 +5473,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33855,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [38]
+				}, -- [40]
 				{
 					["GUID"] = "Creature-0-4458-658-3149-36877-00006B9D47",
 					["leftMoney"] = 5873042,
@@ -5348,7 +5530,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33502,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [39]
+				}, -- [41]
 				{
 					["GUID"] = "Creature-0-4457-632-14706-37588-0002EB8501",
 					["leftMoney"] = 4780340,
@@ -5405,7 +5587,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [40]
+				}, -- [42]
 				{
 					["GUID"] = "Creature-0-4445-632-16008-37596-00006B8212",
 					["leftMoney"] = 4194359,
@@ -5432,7 +5614,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [41]
+				}, -- [43]
 				{
 					["leftMoney"] = 4194359,
 					["group"] = {
@@ -5456,7 +5638,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [42]
+				}, -- [44]
 				{
 					["GUID"] = "Creature-0-5571-575-23987-15447-00006B6C6B",
 					["leftMoney"] = 4194359,
@@ -5482,16 +5664,16 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Dawntime",
 						},
+						["Desnit"] = {
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
+						},
 						["Xurio-Razorfen"] = {
 							["class"] = "Paladin",
 							["level"] = 80,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Iron Horde",
-						},
-						["Desnit"] = {
-							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
 						},
 					},
 					["class"] = "Druid",
@@ -5501,24 +5683,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 23987,
 					["mobCountFromKill"] = 12,
-					["enteredMoney"] = 4185006,
+					["subDifficulty"] = "gamma",
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1701538691,
+					["leftXP"] = 0,
 					["playerName"] = "Moolatz",
 					["classEnglish"] = "DRUID",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -171,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701538691,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 9353,
 					["instanceName"] = "Utgarde Pinnacle",
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 4185006,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [43]
+				}, -- [45]
 				{
 					["GUID"] = "Creature-0-4469-608-5131-29316-00006B664A",
 					["leftMoney"] = 4266663,
@@ -5546,16 +5728,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Jinxed",
 						},
-						["Esenyurt-Gehennas"] = {
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
 						["Roopy"] = {
 							["class"] = "Druid",
 							["level"] = 80,
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Dawntime",
+						},
+						["Esenyurt-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
 						},
 						["Moolatz"] = {
 							["level"] = 80,
@@ -5579,23 +5761,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 256,
 					["rawMoneyCount"] = 41262,
-					["classEnglish"] = "DRUID",
-					["enteredTime"] = 1701536867,
+					["enteredMoney"] = 4027604,
+					["leftXP"] = 0,
 					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1530,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701536867,
 					["instanceID"] = 608,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredMoney"] = 4027604,
+					["classEnglish"] = "DRUID",
 					["instanceName"] = "Violet Hold",
 					["mergeGUID"] = "Creature-0-4469-608-5131-30667-00006B6509",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [44]
+				}, -- [46]
 				{
 					["GUID"] = "Creature-0-4457-578-10581-28276-0001EB603F",
 					["leftMoney"] = 4822690,
@@ -5636,22 +5818,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 282,
 					["classEnglish"] = "DRUID",
 					["mobCount"] = 0,
-					["enteredMoney"] = 4303481,
-					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Moolatz",
+					["enteredMoney"] = 4303481,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1729,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701534696,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 32609,
 					["instanceName"] = "The Oculus",
-					["enteredTime"] = 1701534696,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [45]
+				}, -- [47]
 				{
 					["GUID"] = "Creature-0-4458-389-28691-11322-00016B521F",
 					["leftMoney"] = 95416,
@@ -5706,7 +5888,7 @@ NITdatabase = {
 					["enteredMoney"] = 93122,
 					["mobCount"] = 80,
 					["enteredLevel"] = 16,
-				}, -- [46]
+				}, -- [48]
 				{
 					["leftMoney"] = 4142341,
 					["group"] = {
@@ -5730,7 +5912,7 @@ NITdatabase = {
 					["enteredMoney"] = 4142341,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [47]
+				}, -- [49]
 				{
 					["GUID"] = "Creature-0-4468-575-9225-26550-00016B4086",
 					["leftMoney"] = 4142341,
@@ -5775,22 +5957,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 10,
 					["rawMoneyCount"] = 6201,
 					["subDifficulty"] = "gamma",
-					["classEnglish"] = "DRUID",
-					["playerName"] = "Moolatz",
 					["enteredMoney"] = 4136140,
+					["playerName"] = "Moolatz",
+					["classEnglish"] = "DRUID",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -100,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701527693,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1701527693,
+					["leftXP"] = 0,
 					["instanceName"] = "Utgarde Pinnacle",
 					["mergeGUID"] = "Creature-0-4468-575-9225-211299-00006B4090",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [48]
+				}, -- [50]
 				{
 					["GUID"] = "Creature-0-4459-632-1275-38161-00006B4016",
 					["leftMoney"] = 3162940,
@@ -5846,7 +6028,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 27910,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [49]
+				}, -- [51]
 				{
 					["GUID"] = "Creature-0-4480-632-13373-36478-0000E85288",
 					["leftMoney"] = 8271991,
@@ -5905,7 +6087,7 @@ NITdatabase = {
 					["enteredMoney"] = 8257547,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [50]
+				}, -- [52]
 				{
 					["GUID"] = "Creature-0-5563-632-18830-36502-0000684FD9",
 					["leftMoney"] = 205807088,
@@ -5963,7 +6145,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 20249,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [51]
+				}, -- [53]
 				{
 					["GUID"] = "Creature-0-4469-632-17102-37584-0002E84C8D",
 					["leftMoney"] = 87406852,
@@ -6022,7 +6204,7 @@ NITdatabase = {
 					["enteredMoney"] = 87390143,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [52]
+				}, -- [54]
 				{
 					["GUID"] = "Creature-0-4459-575-9160-26553-0000672055",
 					["leftMoney"] = 9382548,
@@ -6067,22 +6249,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 93,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["subDifficulty"] = "gamma",
-					["playerName"] = "Vermina",
 					["enteredMoney"] = 9130741,
+					["playerName"] = "Vermina",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -1895,
 					},
-					["enteredTime"] = 1701257564,
+					["leftXP"] = 0,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 45507,
 					["instanceName"] = "Utgarde Pinnacle",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701257564,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [53]
+				}, -- [55]
 				{
 					["GUID"] = "Creature-0-4445-576-3683-26723-0000671A1A",
 					["leftMoney"] = 8572673,
@@ -6131,22 +6313,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 414,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["subDifficulty"] = "gamma",
-					["playerName"] = "Vermina",
 					["enteredMoney"] = 8327427,
+					["playerName"] = "Vermina",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -2025,
 					},
-					["enteredTime"] = 1701256044,
+					["leftXP"] = 0,
 					["instanceID"] = 576,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 38946,
 					["instanceName"] = "The Nexus",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701256044,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [54]
+				}, -- [56]
 				{
 					["GUID"] = "Creature-0-4480-604-2417-13321-0006E715B0",
 					["leftMoney"] = 8369877,
@@ -6197,22 +6379,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 158,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["subDifficulty"] = "gamma",
-					["playerName"] = "Vermina",
 					["enteredMoney"] = 8144658,
+					["playerName"] = "Vermina",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -2002,
 					},
-					["enteredTime"] = 1701254591,
+					["leftXP"] = 0,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 18919,
 					["instanceName"] = "Gundrak",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701254591,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [55]
+				}, -- [57]
 				{
 					["GUID"] = "Creature-0-5563-602-2276-28920-000066FE9A",
 					["leftMoney"] = 8173251,
@@ -6264,23 +6446,23 @@ NITdatabase = {
 					["mobCountFromKill"] = 96,
 					["rawMoneyCount"] = 22220,
 					["subDifficulty"] = "gamma",
-					["classEnglish"] = "PALADIN",
-					["playerName"] = "Vermina",
 					["enteredMoney"] = 7664431,
+					["playerName"] = "Vermina",
+					["classEnglish"] = "PALADIN",
 					["rep"] = {
 						["The Taunka: +"] = -12,
 						["Horde Expedition: +"] = -2075,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701249079,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1701249079,
+					["leftXP"] = 0,
 					["instanceName"] = "Halls of Lightning",
 					["mergeGUID"] = "Creature-0-5563-602-2276-28578-0002E6FE9A",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "target",
-				}, -- [56]
+				}, -- [58]
 				{
 					["GUID"] = "Creature-0-4459-632-5744-37587-0000E6FFBA",
 					["leftMoney"] = 6556360,
@@ -6344,7 +6526,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25724,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [57]
+				}, -- [59]
 				{
 					["GUID"] = "Creature-0-4468-632-1961-36502-000066FB52",
 					["leftMoney"] = 204842993,
@@ -6401,7 +6583,7 @@ NITdatabase = {
 					["enteredMoney"] = 204828912,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [58]
+				}, -- [60]
 				{
 					["GUID"] = "Creature-0-4479-632-1571-36502-000066F878",
 					["leftMoney"] = 85085428,
@@ -6460,7 +6642,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 9005,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [59]
+				}, -- [61]
 				{
 					["GUID"] = "Creature-0-4460-600-12552-26632-00006611A5",
 					["leftMoney"] = 6274731,
@@ -6477,16 +6659,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Tomsks-Gehennas"] = {
-							["level"] = 80,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
 						["Kerrigän-Razorfen"] = {
 							["class"] = "Priest",
 							["level"] = 80,
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Blood Angels",
+						},
+						["Tomsks-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
 						},
 						["Shinesen-Gehennas"] = {
 							["class"] = "Paladin",
@@ -6502,24 +6684,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 12552,
 					["mobCountFromKill"] = 153,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 6011525,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701188100,
 					["playerName"] = "Vermina",
 					["classEnglish"] = "PALADIN",
 					["rep"] = {
 						["Horde Expedition: +"] = -1898,
 					},
-					["enteredTime"] = 1701188100,
+					["leftXP"] = 0,
 					["instanceID"] = 600,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 56906,
 					["instanceName"] = "Drak'Tharon Keep",
-					["enteredMoney"] = 6011525,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [60]
+				}, -- [62]
 				{
 					["GUID"] = "Creature-0-4459-619-27336-29311-0000660214",
 					["leftMoney"] = 6011525,
@@ -6571,23 +6753,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 168,
 					["rawMoneyCount"] = 9049,
-					["enteredMoney"] = 5803794,
-					["leftXP"] = 0,
+					["classEnglish"] = "PALADIN",
+					["enteredTime"] = 1701186028,
 					["playerName"] = "Vermina",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -710,
 					},
-					["enteredTime"] = 1701186028,
+					["leftXP"] = 0,
 					["instanceID"] = 619,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "PALADIN",
+					["enteredMoney"] = 5803794,
 					["instanceName"] = "Ahn'kahet: The Old Kingdom",
 					["mergeGUID"] = "Creature-0-4459-619-27336-211299-0000660F67",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [61]
+				}, -- [63]
 				{
 					["GUID"] = "Creature-0-4447-578-10394-27656-000065AD24",
 					["leftMoney"] = 4528038,
@@ -6630,23 +6812,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 307,
 					["rawMoneyCount"] = 20247,
-					["classEnglish"] = "PALADIN",
-					["enteredTime"] = 1701160780,
+					["enteredMoney"] = 4040533,
+					["leftXP"] = 0,
 					["playerName"] = "Vermina",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -1723,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1701160780,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredMoney"] = 4040533,
+					["classEnglish"] = "PALADIN",
 					["instanceName"] = "The Oculus",
 					["mergeGUID"] = "Creature-0-4447-578-10394-27656-000065AD24",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [62]
+				}, -- [64]
 				{
 					["GUID"] = "Creature-0-4468-632-13257-37584-0001E5A5D0",
 					["leftMoney"] = 203751543,
@@ -6704,7 +6886,7 @@ NITdatabase = {
 					["enteredMoney"] = 203724187,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [63]
+				}, -- [65]
 				{
 					["GUID"] = "Creature-0-4457-632-27197-36502-000065A161",
 					["leftMoney"] = 84097464,
@@ -6762,7 +6944,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 6235,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [64]
+				}, -- [66]
 				{
 					["GUID"] = "Creature-0-5563-599-28531-28070-000064ECB2",
 					["leftMoney"] = 1447271,
@@ -6812,22 +6994,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 202,
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 0,
-					["subDifficulty"] = "gamma",
-					["playerName"] = "Vermina",
 					["enteredMoney"] = 936068,
+					["playerName"] = "Vermina",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Horde Expedition: +"] = -1820,
 					},
-					["enteredTime"] = 1701111367,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 24603,
 					["instanceName"] = "Halls of Stone",
-					["leftXP"] = 0,
+					["enteredTime"] = 1701111367,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [65]
+				}, -- [67]
 				{
 					["GUID"] = "Creature-0-5563-632-28304-37587-0000E4E54D",
 					["leftMoney"] = 936068,
@@ -6884,7 +7066,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 24017,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [66]
+				}, -- [68]
 				{
 					["GUID"] = "Creature-0-4480-658-11179-36658-000064E05D",
 					["leftMoney"] = 912051,
@@ -6942,7 +7124,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23443,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [67]
+				}, -- [69]
 				{
 					["GUID"] = "Creature-0-4460-619-2521-29311-000064D574",
 					["leftMoney"] = 888608,
@@ -7002,7 +7184,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-619-2521-31104-000064D574",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [68]
+				}, -- [70]
 				{
 					["GUID"] = "Creature-0-5563-668-26881-30824-000064D3E9",
 					["leftMoney"] = 638052,
@@ -7061,7 +7243,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 43334,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [69]
+				}, -- [71]
 				{
 					["GUID"] = "Creature-0-5571-632-2146-36502-000064CD95",
 					["leftMoney"] = 383855,
@@ -7119,7 +7301,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 34760,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [70]
+				}, -- [72]
 				{
 					["GUID"] = "Creature-0-4445-632-13554-36502-0000649230",
 					["leftMoney"] = 4013385,
@@ -7178,7 +7360,7 @@ NITdatabase = {
 					["enteredMoney"] = 3987110,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [71]
+				}, -- [73]
 				{
 					["GUID"] = "Creature-0-4468-632-30787-37584-0003648DA1",
 					["leftMoney"] = 2586078,
@@ -7235,7 +7417,7 @@ NITdatabase = {
 					["enteredMoney"] = 2559352,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [72]
+				}, -- [74]
 				{
 					["GUID"] = "Creature-0-4446-668-25863-37554-000064887D",
 					["leftMoney"] = 2348225,
@@ -7294,7 +7476,7 @@ NITdatabase = {
 					["enteredMoney"] = 1713774,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [73]
+				}, -- [75]
 				{
 					["GUID"] = "Creature-0-4469-632-11234-37094-00006483E3",
 					["leftMoney"] = 1713774,
@@ -7349,7 +7531,7 @@ NITdatabase = {
 					["enteredMoney"] = 1687380,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [74]
+				}, -- [76]
 				{
 					["GUID"] = "Creature-0-4457-632-27077-37584-0004646701",
 					["leftMoney"] = 242532695,
@@ -7408,7 +7590,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 17616,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [75]
+				}, -- [77]
 				{
 					["GUID"] = "Creature-0-4458-632-21922-37584-000064643A",
 					["leftMoney"] = 85470423,
@@ -7467,7 +7649,7 @@ NITdatabase = {
 					["enteredMoney"] = 85454846,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [76]
+				}, -- [78]
 				{
 					["leftMoney"] = 5588001,
 					["group"] = {
@@ -7521,7 +7703,7 @@ NITdatabase = {
 					["enteredMoney"] = 5588001,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [77]
+				}, -- [79]
 				{
 					["GUID"] = "Creature-0-4448-668-11954-36954-00006396FB",
 					["leftMoney"] = 5588001,
@@ -7579,7 +7761,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 40470,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [78]
+				}, -- [80]
 				{
 					["GUID"] = "Creature-0-4447-658-16613-37578-00006391B5",
 					["leftMoney"] = 4923996,
@@ -7638,7 +7820,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29937,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [79]
+				}, -- [81]
 				{
 					["GUID"] = "Creature-0-4469-632-2120-36502-0000638B33",
 					["leftMoney"] = 3698716,
@@ -7696,7 +7878,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 34764,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [80]
+				}, -- [82]
 				{
 					["GUID"] = "Creature-0-4459-632-21776-36502-000063884A",
 					["leftMoney"] = 3663952,
@@ -7752,7 +7934,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25455,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [81]
+				}, -- [83]
 				{
 					["GUID"] = "Creature-0-4458-658-28375-36877-00006386DF",
 					["leftMoney"] = 4420497,
@@ -7763,10 +7945,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "OG Bürgergeldstelle",
 						},
-						["Dibbsz-Mograine"] = {
+						["Knuttz-MirageRaceway"] = {
 							["level"] = 80,
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
+							["guildName"] = "Nomads",
 						},
 						["Vermina"] = {
 							["level"] = 80,
@@ -7774,22 +7957,21 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Laydee"] = {
+						["Dibbsz-Mograine"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "New Beginning",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Darthknives-Mandokir"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Knuttz-MirageRaceway"] = {
+						["Laydee"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Nomads",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "New Beginning",
 						},
 					},
 					["class"] = "Paladin",
@@ -7815,7 +7997,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 46520,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [82]
+				}, -- [84]
 				{
 					["GUID"] = "Creature-0-4459-658-19827-37577-00036381ED",
 					["leftMoney"] = 4321977,
@@ -7880,7 +8062,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-658-19827-37578-0000E37F6C",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [83]
+				}, -- [85]
 				{
 					["GUID"] = "Creature-0-4457-632-3810-37583-0000637AD0",
 					["leftMoney"] = 4273877,
@@ -7938,7 +8120,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31591,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [84]
+				}, -- [86]
 				{
 					["GUID"] = "Creature-0-4458-632-25952-36497-00006375F8",
 					["leftMoney"] = 3631661,
@@ -7996,7 +8178,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 26247,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [85]
+				}, -- [87]
 				{
 					["GUID"] = "Creature-0-4468-604-15889-29836-0001636950",
 					["leftMoney"] = 12754098,
@@ -8052,7 +8234,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 28861,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [86]
+				}, -- [88]
 				{
 					["GUID"] = "Creature-0-4457-574-695-23954-0000636545",
 					["leftMoney"] = 12375808,
@@ -8069,17 +8251,17 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Fergaan-Gehennas"] = {
-							["level"] = 69,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Evil Eye",
-						},
 						["Dødsbo-Gehennas"] = {
 							["level"] = 69,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Hard to Swallow",
+						},
+						["Fergaan-Gehennas"] = {
+							["level"] = 69,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Evil Eye",
 						},
 						["Trogloditu-Gehennas"] = {
 							["level"] = 71,
@@ -8110,7 +8292,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 32733,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [87]
+				}, -- [89]
 				{
 					["GUID"] = "Creature-0-4460-619-21638-29311-000063618A",
 					["leftMoney"] = 11840022,
@@ -8167,7 +8349,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 36466,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [88]
+				}, -- [90]
 				{
 					["GUID"] = "Creature-0-5563-602-8323-28923-0000635C67",
 					["leftMoney"] = 11655556,
@@ -8226,7 +8408,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 73681,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [89]
+				}, -- [91]
 				{
 					["GUID"] = "Creature-0-4457-601-31555-29120-0000635A5F",
 					["leftMoney"] = 11433875,
@@ -8290,7 +8472,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 7830,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [90]
+				}, -- [92]
 				{
 					["GUID"] = "Creature-0-4459-619-13205-30278-0001E35294",
 					["leftMoney"] = 10292458,
@@ -8346,7 +8528,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 4318,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [91]
+				}, -- [93]
 				{
 					["GUID"] = "Creature-0-5563-571-7983-25861-0000634EEC",
 					["leftMoney"] = 10212985,
@@ -8403,7 +8585,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31740,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [92]
+				}, -- [94]
 				{
 					["GUID"] = "Creature-0-4458-632-19002-36502-0000634B2D",
 					["leftMoney"] = 241508100,
@@ -8461,7 +8643,7 @@ NITdatabase = {
 					["enteredMoney"] = 241478824,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [93]
+				}, -- [95]
 				{
 					["GUID"] = "Creature-0-4446-632-9326-37584-000063454F",
 					["leftMoney"] = 81924079,
@@ -8520,7 +8702,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 22632,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [94]
+				}, -- [96]
 				{
 					["GUID"] = "Creature-0-4457-578-25941-27656-00006209EC",
 					["leftMoney"] = 9392899,
@@ -8543,11 +8725,11 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "lass abbrechen",
 						},
-						["Vermina"] = {
-							["class"] = "Paladin",
-							["level"] = 79,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
+						["Shunaka-PyrewoodVillage"] = {
+							["class"] = "Warrior",
+							["level"] = 78,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Honor Above All",
 						},
 						["Rottamestari-Gehennas"] = {
 							["class"] = "Paladin",
@@ -8555,11 +8737,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Prätkä Rotat Savosta",
 						},
-						["Shunaka-PyrewoodVillage"] = {
-							["class"] = "Warrior",
-							["level"] = 78,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Honor Above All",
+						["Vermina"] = {
+							["class"] = "Paladin",
+							["level"] = 79,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
 						},
 						["Tihku"] = {
 							["class"] = "Priest",
@@ -8591,7 +8773,7 @@ NITdatabase = {
 					["enteredMoney"] = 9206959,
 					["mobCount"] = 96,
 					["enteredLevel"] = 79,
-				}, -- [95]
+				}, -- [97]
 				{
 					["GUID"] = "Creature-0-4460-575-7984-30871-000061FD4A",
 					["leftMoney"] = 9852206,
@@ -8654,7 +8836,7 @@ NITdatabase = {
 					["enteredMoney"] = 9077529,
 					["mobCount"] = 86,
 					["enteredLevel"] = 78,
-				}, -- [96]
+				}, -- [98]
 				{
 					["GUID"] = "Creature-0-4458-601-7201-28734-000061F340",
 					["leftMoney"] = 9077529,
@@ -8710,7 +8892,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [97]
+				}, -- [99]
 				{
 					["GUID"] = "Creature-0-4457-599-22816-27978-000061ED5F",
 					["leftMoney"] = 9077529,
@@ -8727,17 +8909,17 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Redtube Rangers",
 						},
-						["Mozaika-Gehennas"] = {
-							["level"] = 78,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Hares Squad",
-						},
 						["Shamuey-Venoxis"] = {
 							["level"] = 77,
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "lass abbrechen",
+						},
+						["Mozaika-Gehennas"] = {
+							["level"] = 78,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Hares Squad",
 						},
 						["Vermina"] = {
 							["level"] = 78,
@@ -8768,7 +8950,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39195,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [98]
+				}, -- [100]
 				{
 					["GUID"] = "Creature-0-4457-595-21447-30997-000061ED06",
 					["leftMoney"] = 8890334,
@@ -8826,7 +9008,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-595-21447-26527-000061E481",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [99]
+				}, -- [101]
 				{
 					["GUID"] = "Creature-0-4448-632-20965-36502-000061E1C5",
 					["leftMoney"] = 240427358,
@@ -8885,7 +9067,7 @@ NITdatabase = {
 					["enteredMoney"] = 240397132,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [100]
+				}, -- [102]
 				{
 					["GUID"] = "Creature-0-4468-632-25919-36502-000061DE14",
 					["leftMoney"] = 82201784,
@@ -8944,7 +9126,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 17299,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [101]
+				}, -- [103]
 				{
 					["GUID"] = "Creature-0-4469-604-16474-29836-0000DF1BFC",
 					["leftMoney"] = 8621044,
@@ -9000,7 +9182,7 @@ NITdatabase = {
 					["enteredMoney"] = 8447453,
 					["mobCount"] = 69,
 					["enteredLevel"] = 78,
-				}, -- [102]
+				}, -- [104]
 				{
 					["GUID"] = "Creature-0-4457-632-8019-36502-00005F19C2",
 					["leftMoney"] = 239531300,
@@ -9059,7 +9241,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 20704,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [103]
+				}, -- [105]
 				{
 					["GUID"] = "Creature-0-4457-632-7759-36502-00005F16FC",
 					["leftMoney"] = 81236198,
@@ -9117,7 +9299,7 @@ NITdatabase = {
 					["enteredMoney"] = 81215310,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [104]
+				}, -- [106]
 				{
 					["GUID"] = "Creature-0-4458-595-24320-26527-00005E5573",
 					["leftMoney"] = 8186684,
@@ -9173,7 +9355,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [105]
+				}, -- [107]
 				{
 					["GUID"] = "Creature-0-4469-578-8399-27656-00005E4B59",
 					["leftMoney"] = 8766895,
@@ -9232,7 +9414,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 16951,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 78,
-				}, -- [106]
+				}, -- [108]
 				{
 					["GUID"] = "Creature-0-4447-574-9017-510-00005E4759",
 					["leftMoney"] = 8601944,
@@ -9290,7 +9472,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 513,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [107]
+				}, -- [109]
 				{
 					["GUID"] = "Creature-0-4457-576-19400-26722-0000DE40BF",
 					["leftMoney"] = 8567122,
@@ -9347,7 +9529,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 46491,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [108]
+				}, -- [110]
 				{
 					["GUID"] = "Creature-0-4460-599-1046-27978-00005DBAA5",
 					["leftMoney"] = 7517166,
@@ -9403,7 +9585,7 @@ NITdatabase = {
 					["enteredMoney"] = 7328586,
 					["mobCount"] = 154,
 					["enteredLevel"] = 77,
-				}, -- [109]
+				}, -- [111]
 				{
 					["GUID"] = "Creature-0-4459-632-4519-37584-00035DBA60",
 					["leftMoney"] = 238537396,
@@ -9462,7 +9644,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33196,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [110]
+				}, -- [112]
 				{
 					["GUID"] = "Creature-0-4459-632-4283-36502-00005DB537",
 					["leftMoney"] = 69967334,
@@ -9520,7 +9702,7 @@ NITdatabase = {
 					["enteredMoney"] = 69941318,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [111]
+				}, -- [113]
 				{
 					["GUID"] = "Creature-0-4468-601-4810-29120-00005CDB8C",
 					["leftMoney"] = 6666052,
@@ -9536,11 +9718,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "von der Horde",
 						},
-						["Darkshadoww-Venoxis"] = {
-							["level"] = 73,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Gummíbärenbande",
+						["Varaxa-Venoxis"] = {
+							["level"] = 74,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Das Bollwerk",
 						},
 						["Huìbu-Razorfen"] = {
 							["level"] = 73,
@@ -9553,11 +9735,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Varaxa-Venoxis"] = {
-							["level"] = 74,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Das Bollwerk",
+						["Darkshadoww-Venoxis"] = {
+							["level"] = 73,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Gummíbärenbande",
 						},
 					},
 					["class"] = "Paladin",
@@ -9582,7 +9764,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5157,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [112]
+				}, -- [114]
 				{
 					["GUID"] = "Creature-0-4479-604-4185-29836-00005CD614",
 					["leftMoney"] = 6512895,
@@ -9639,7 +9821,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 16434,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [113]
+				}, -- [115]
 				{
 					["GUID"] = "Creature-0-4480-632-640-36502-00005C7EE9",
 					["leftMoney"] = 237531000,
@@ -9698,7 +9880,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 27469,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [114]
+				}, -- [116]
 				{
 					["GUID"] = "Creature-0-4458-632-20934-36502-00005C7C73",
 					["leftMoney"] = 68968118,
@@ -9757,7 +9939,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 12782,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [115]
+				}, -- [117]
 				{
 					["GUID"] = "Creature-0-4479-576-5577-26723-00005A31CA",
 					["leftMoney"] = 6707187,
@@ -9815,7 +9997,7 @@ NITdatabase = {
 					["enteredMoney"] = 6519863,
 					["mobCount"] = 106,
 					["enteredLevel"] = 76,
-				}, -- [116]
+				}, -- [118]
 				{
 					["GUID"] = "Creature-0-4480-600-5980-26632-00005A2E05",
 					["leftMoney"] = 6519863,
@@ -9897,7 +10079,7 @@ NITdatabase = {
 					["enteredMoney"] = 6340133,
 					["mobCount"] = 108,
 					["enteredLevel"] = 76,
-				}, -- [117]
+				}, -- [119]
 				{
 					["GUID"] = "Creature-0-4479-619-5087-29311-00005A2A45",
 					["leftMoney"] = 5971608,
@@ -9920,16 +10102,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
+						["Modrop-Venoxis"] = {
+							["level"] = 78,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
 						["Jedida"] = {
 							["class"] = "Mage",
 							["level"] = 72,
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Motion",
-						},
-						["Modrop-Venoxis"] = {
-							["level"] = 78,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
 						},
 					},
 					["class"] = "Paladin",
@@ -9954,7 +10136,7 @@ NITdatabase = {
 					["enteredMoney"] = 5791688,
 					["mobCount"] = 122,
 					["enteredLevel"] = 76,
-				}, -- [118]
+				}, -- [120]
 				{
 					["GUID"] = "Creature-0-4460-599-10387-28070-00005A2942",
 					["leftMoney"] = 5418901,
@@ -10009,7 +10191,7 @@ NITdatabase = {
 					["enteredMoney"] = 4936703,
 					["mobCount"] = 148,
 					["enteredLevel"] = 76,
-				}, -- [119]
+				}, -- [121]
 				{
 					["GUID"] = "Creature-0-4459-601-14656-29120-00005A1D6B",
 					["leftMoney"] = 4936703,
@@ -10066,7 +10248,7 @@ NITdatabase = {
 					["enteredMoney"] = 4780140,
 					["mobCount"] = 41,
 					["enteredLevel"] = 76,
-				}, -- [120]
+				}, -- [122]
 				{
 					["GUID"] = "Creature-0-5571-604-17267-29836-000059E96D",
 					["leftMoney"] = 4180567,
@@ -10122,7 +10304,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 37581,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 76,
-				}, -- [121]
+				}, -- [123]
 				{
 					["GUID"] = "Creature-0-4469-608-4375-29314-000059E440",
 					["leftMoney"] = 3994986,
@@ -10177,7 +10359,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 48408,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 76,
-				}, -- [122]
+				}, -- [124]
 				{
 					["GUID"] = "Creature-0-4457-576-3301-26723-000059D7ED",
 					["leftMoney"] = 3798578,
@@ -10233,7 +10415,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1106,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 76,
-				}, -- [123]
+				}, -- [125]
 				{
 					["GUID"] = "Creature-0-5563-632-11886-37584-0001D9E317",
 					["leftMoney"] = 236305664,
@@ -10292,7 +10474,7 @@ NITdatabase = {
 					["enteredMoney"] = 236279575,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [124]
+				}, -- [126]
 				{
 					["GUID"] = "Creature-0-4457-632-4444-36502-000059DD60",
 					["leftMoney"] = 67182876,
@@ -10351,7 +10533,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 30161,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [125]
+				}, -- [127]
 				{
 					["GUID"] = "Creature-0-4459-619-23636-29311-0000592811",
 					["leftMoney"] = 3901049,
@@ -10405,7 +10587,7 @@ NITdatabase = {
 					["enteredMoney"] = 3713178,
 					["mobCount"] = 123,
 					["enteredLevel"] = 75,
-				}, -- [126]
+				}, -- [128]
 				{
 					["GUID"] = "Creature-0-4480-601-25724-29120-00005921EA",
 					["leftMoney"] = 13084952,
@@ -10462,7 +10644,7 @@ NITdatabase = {
 					["enteredMoney"] = 12934194,
 					["mobCount"] = 42,
 					["enteredLevel"] = 75,
-				}, -- [127]
+				}, -- [129]
 				{
 					["GUID"] = "Creature-0-4448-574-22374-23954-0000592101",
 					["leftMoney"] = 12934194,
@@ -10519,7 +10701,7 @@ NITdatabase = {
 					["enteredMoney"] = 12785711,
 					["mobCount"] = 2,
 					["enteredLevel"] = 75,
-				}, -- [128]
+				}, -- [130]
 				{
 					["GUID"] = "Creature-0-4457-576-9898-26723-00005912AE",
 					["leftMoney"] = 12487986,
@@ -10574,7 +10756,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25966,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [129]
+				}, -- [131]
 				{
 					["GUID"] = "Creature-0-4447-619-3141-29311-0000590F8E",
 					["leftMoney"] = 12314020,
@@ -10632,7 +10814,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 45679,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [130]
+				}, -- [132]
 				{
 					["GUID"] = "Creature-0-4446-608-9080-31134-0000590F22",
 					["leftMoney"] = 12120341,
@@ -10690,7 +10872,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39075,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [131]
+				}, -- [133]
 				{
 					["GUID"] = "Creature-0-4458-601-7878-29120-0000590895",
 					["leftMoney"] = 11933266,
@@ -10747,7 +10929,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 8713,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [132]
+				}, -- [134]
 				{
 					["GUID"] = "Creature-0-4480-600-23843-26632-0000590381",
 					["leftMoney"] = 11776553,
@@ -10804,7 +10986,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31861,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [133]
+				}, -- [135]
 				{
 					["GUID"] = "Creature-0-4457-574-30384-23954-000058D113",
 					["leftMoney"] = 10921692,
@@ -10861,7 +11043,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39631,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [134]
+				}, -- [136]
 				{
 					["GUID"] = "Creature-0-5563-619-28278-29311-000058CAC9",
 					["leftMoney"] = 11013061,
@@ -10917,7 +11099,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31539,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [135]
+				}, -- [137]
 				{
 					["GUID"] = "Creature-0-5563-576-27805-26723-000058C3F3",
 					["leftMoney"] = 10390869,
@@ -10973,7 +11155,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 30376,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [136]
+				}, -- [138]
 				{
 					["GUID"] = "Creature-0-4468-601-18826-29120-000058C1A5",
 					["leftMoney"] = 10212493,
@@ -11037,7 +11219,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5958,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [137]
+				}, -- [139]
 				{
 					["GUID"] = "Creature-0-4457-608-25576-31134-000058BAA0",
 					["leftMoney"] = 9621726,
@@ -11093,7 +11275,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39101,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [138]
+				}, -- [140]
 				{
 					["GUID"] = "Creature-0-4459-619-5700-30329-000058AA12",
 					["leftMoney"] = 9944625,
@@ -11149,7 +11331,7 @@ NITdatabase = {
 					["enteredMoney"] = 9915785,
 					["mobCount"] = 76,
 					["enteredLevel"] = 73,
-				}, -- [139]
+				}, -- [141]
 				{
 					["GUID"] = "Creature-0-4457-600-22246-26632-000058A3F0",
 					["leftMoney"] = 10429686,
@@ -11205,7 +11387,7 @@ NITdatabase = {
 					["enteredMoney"] = 10249521,
 					["mobCount"] = 103,
 					["enteredLevel"] = 73,
-				}, -- [140]
+				}, -- [142]
 				{
 					["GUID"] = "Creature-0-4460-576-21256-26723-0000589EF0",
 					["leftMoney"] = 10249521,
@@ -11286,7 +11468,7 @@ NITdatabase = {
 					["enteredMoney"] = 10055046,
 					["mobCount"] = 106,
 					["enteredLevel"] = 73,
-				}, -- [141]
+				}, -- [143]
 				{
 					["GUID"] = "Creature-0-4457-553-21072-17993-0008D89DF8",
 					["leftMoney"] = 10055046,
@@ -11341,7 +11523,7 @@ NITdatabase = {
 					["enteredMoney"] = 10028125,
 					["mobCount"] = 8,
 					["enteredLevel"] = 73,
-				}, -- [142]
+				}, -- [144]
 				{
 					["GUID"] = "Creature-0-5563-619-24496-30319-00025896E4",
 					["leftMoney"] = 10036649,
@@ -11399,7 +11581,7 @@ NITdatabase = {
 					["enteredMoney"] = 10007303,
 					["mobCount"] = 72,
 					["enteredLevel"] = 73,
-				}, -- [143]
+				}, -- [145]
 				{
 					["GUID"] = "Creature-0-4480-632-17000-36502-00005894AF",
 					["leftMoney"] = 235306375,
@@ -11458,7 +11640,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 15085,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [144]
+				}, -- [146]
 				{
 					["GUID"] = "Creature-0-4457-632-18791-36502-00005890C2",
 					["leftMoney"] = 63699301,
@@ -11515,7 +11697,7 @@ NITdatabase = {
 					["enteredMoney"] = 63667907,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [145]
+				}, -- [147]
 				{
 					["GUID"] = "Creature-0-4447-599-8104-32258-000057425E",
 					["leftMoney"] = 245030639,
@@ -11570,22 +11752,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 90,
 					["rawMoneyCount"] = 14284,
 					["subDifficulty"] = "gamma",
-					["enteredMoney"] = 245029343,
-					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 245029343,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1252,
 					},
-					["enteredTime"] = 1700216900,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1700216900,
 					["instanceName"] = "Halls of Stone",
 					["mergeGUID"] = "Creature-0-4447-599-8104-211299-0000574055",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [146]
+				}, -- [148]
 				{
 					["GUID"] = "Creature-0-4448-632-31196-37584-0000D73D75",
 					["leftMoney"] = 244534711,
@@ -11602,16 +11784,16 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Snakes of Honour",
 						},
+						["Kâry-Venoxis"] = {
+							["level"] = 80,
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+						},
 						["Coowmoflage-NethergardeKeep"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Dreamwalkers",
-						},
-						["Kâry-Venoxis"] = {
-							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
 						},
 						["Battlearm"] = {
 							["level"] = 80,
@@ -11643,7 +11825,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33965,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [147]
+				}, -- [149]
 				{
 					["GUID"] = "Creature-0-5571-604-7487-15438-00005720D9",
 					["leftMoney"] = 60133582,
@@ -11688,22 +11870,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 149,
 					["rawMoneyCount"] = 18745,
 					["mobCount"] = 0,
-					["leftXP"] = 0,
+					["enteredTime"] = 1700207998,
 					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1989,
 					},
-					["enteredTime"] = 1700207998,
+					["leftXP"] = 0,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["enteredMoney"] = 59908537,
 					["instanceName"] = "Gundrak",
-					["subDifficulty"] = "gamma",
+					["classEnglish"] = "WARRIOR",
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [148]
+				}, -- [150]
 				{
 					["GUID"] = "Creature-0-4480-632-31741-36502-00005717AB",
 					["leftMoney"] = 58935337,
@@ -11760,7 +11942,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33931,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [149]
+				}, -- [151]
 				{
 					["GUID"] = "Creature-0-4469-585-18562-24848-000055E947",
 					["leftMoney"] = 243144559,
@@ -11790,7 +11972,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4469-585-18562-24848-000055E947",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [150]
+				}, -- [152]
 				{
 					["GUID"] = "Creature-0-4445-632-19499-36502-000055E255",
 					["leftMoney"] = 242951485,
@@ -11850,7 +12032,7 @@ NITdatabase = {
 					["enteredMoney"] = 242924069,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [151]
+				}, -- [153]
 				{
 					["GUID"] = "Creature-0-5571-574-21615-23954-000055DBA2",
 					["leftMoney"] = 55355664,
@@ -11895,22 +12077,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 79,
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
-					["enteredMoney"] = 54841925,
-					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermin",
+					["enteredMoney"] = 54841925,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1812,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1700125607,
 					["instanceID"] = 574,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 27139,
 					["instanceName"] = "Utgarde Keep",
-					["enteredTime"] = 1700125607,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [152]
+				}, -- [154]
 				{
 					["GUID"] = "Creature-0-4460-632-6937-36502-000054EB48",
 					["leftMoney"] = 9657309,
@@ -11969,7 +12151,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29330,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [153]
+				}, -- [155]
 				{
 					["GUID"] = "Creature-0-4447-533-7721-15975-0002D4E97A",
 					["leftMoney"] = 9150379,
@@ -12057,7 +12239,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 164630,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [154]
+				}, -- [156]
 				{
 					["GUID"] = "Creature-0-4460-632-6536-36502-000054E4DB",
 					["leftMoney"] = 241889881,
@@ -12116,7 +12298,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25734,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [155]
+				}, -- [157]
 				{
 					["GUID"] = "Creature-0-4448-533-5069-15956-000054E39C",
 					["leftMoney"] = 241081547,
@@ -12203,7 +12385,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 162880,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [156]
+				}, -- [158]
 				{
 					["GUID"] = "Creature-0-5571-533-7556-16030-000154E354",
 					["leftMoney"] = 240918667,
@@ -12288,7 +12470,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "combatLog",
 					["enteredLevel"] = 80,
-				}, -- [157]
+				}, -- [159]
 				{
 					["GUID"] = "Creature-0-4445-578-5737-27656-000054E059",
 					["leftMoney"] = 52549769,
@@ -12329,24 +12511,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 5737,
 					["mobCountFromKill"] = 243,
-					["enteredMoney"] = 52033613,
+					["subDifficulty"] = "gamma",
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1700060275,
+					["leftXP"] = 0,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1723,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1700060275,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 29556,
 					["instanceName"] = "The Oculus",
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 52033613,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [158]
+				}, -- [160]
 				{
 					["GUID"] = "Creature-0-4447-533-6751-14881-0000D4DAEC",
 					["leftMoney"] = 51737613,
@@ -12433,7 +12615,7 @@ NITdatabase = {
 					["enteredMoney"] = 51562268,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [159]
+				}, -- [161]
 				{
 					["leftMoney"] = 51562268,
 					["group"] = {
@@ -12457,7 +12639,7 @@ NITdatabase = {
 					["enteredMoney"] = 51562268,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [160]
+				}, -- [162]
 				{
 					["GUID"] = "Creature-0-4469-602-24380-206038-0000539364",
 					["leftMoney"] = 51562268,
@@ -12502,21 +12684,21 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
-					["subDifficulty"] = "gamma",
-					["playerName"] = "Vermin",
 					["enteredMoney"] = 51562268,
+					["playerName"] = "Vermin",
+					["subDifficulty"] = "gamma",
 					["rep"] = {
 					},
-					["enteredTime"] = 1699976061,
+					["leftXP"] = 0,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 0,
 					["instanceName"] = "Halls of Lightning",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699976061,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [161]
+				}, -- [163]
 				{
 					["GUID"] = "Creature-0-4448-608-26522-30667-000053924C",
 					["leftMoney"] = 51353312,
@@ -12561,22 +12743,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 69,
 					["rawMoneyCount"] = 22545,
 					["subDifficulty"] = "alpha",
-					["enteredMoney"] = 51353312,
-					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
+					["playerName"] = "Vermin",
+					["enteredMoney"] = 51353312,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -950,
 					},
-					["enteredTime"] = 1699974648,
+					["leftXP"] = 0,
 					["instanceID"] = 608,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699974648,
 					["instanceName"] = "Violet Hold",
 					["mergeGUID"] = "Creature-0-4448-608-26522-30658-0000538E2E",
 					["GUIDSource"] = "nameplate1",
 					["mergeSource"] = "mouseover",
-				}, -- [162]
+				}, -- [164]
 				{
 					["GUID"] = "Creature-0-4457-578-10763-27656-000053876F",
 					["leftMoney"] = 240926667,
@@ -12618,24 +12800,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 10763,
 					["mobCountFromKill"] = 242,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 240408794,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699972033,
 					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["rep"] = {
 						["Knights of the Ebon Blade: +"] = -1727,
 					},
-					["enteredTime"] = 1699972033,
+					["leftXP"] = 0,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 31273,
 					["instanceName"] = "The Oculus",
-					["enteredMoney"] = 240408794,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [163]
+				}, -- [165]
 				{
 					["GUID"] = "Creature-0-4457-632-5280-37584-00005357D2",
 					["leftMoney"] = 239435594,
@@ -12696,7 +12878,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-632-5280-36497-00005351F2",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [164]
+				}, -- [166]
 				{
 					["GUID"] = "Creature-0-4458-599-5362-27970-0000534D71",
 					["leftMoney"] = 239358913,
@@ -12707,17 +12889,17 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "TRAUMA",
 						},
-						["Elsanto"] = {
-							["level"] = 80,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Raging Hordon",
-						},
 						["Ragingdeath"] = {
 							["level"] = 80,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Top Tier",
+						},
+						["Elsanto"] = {
+							["level"] = 80,
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Raging Hordon",
 						},
 						["Dopamane"] = {
 							["level"] = 80,
@@ -12754,22 +12936,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 29,
 					["rawMoneyCount"] = 14192,
 					["subDifficulty"] = "gamma",
-					["classEnglish"] = "DEATHKNIGHT",
-					["playerName"] = "Battlearm",
 					["enteredMoney"] = 239358913,
+					["playerName"] = "Battlearm",
+					["classEnglish"] = "DEATHKNIGHT",
 					["rep"] = {
 						["Knights of the Ebon Blade: +"] = -361,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699958136,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1699958136,
+					["leftXP"] = 0,
 					["instanceName"] = "Halls of Stone",
 					["mergeGUID"] = "Creature-0-4458-599-5362-27960-0003D34D71",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [165]
+				}, -- [167]
 				{
 					["GUID"] = "Creature-0-4468-632-17732-37584-0002D34B88",
 					["leftMoney"] = 49600021,
@@ -12828,7 +13010,7 @@ NITdatabase = {
 					["enteredMoney"] = 49093967,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [166]
+				}, -- [168]
 				{
 					["GUID"] = "Creature-0-4458-595-32702-27745-0001D241C6",
 					["leftMoney"] = 8995279,
@@ -12887,7 +13069,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2090,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [167]
+				}, -- [169]
 				{
 					["GUID"] = "Creature-0-4460-33-27004-3863-00035239E9",
 					["leftMoney"] = 112247,
@@ -12925,7 +13107,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5548,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [168]
+				}, -- [170]
 				{
 					["GUID"] = "Creature-0-4479-33-18732-5058-00005235E6",
 					["leftMoney"] = 106699,
@@ -12963,7 +13145,7 @@ NITdatabase = {
 					["enteredMoney"] = 96073,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [169]
+				}, -- [171]
 				{
 					["GUID"] = "Creature-0-4459-632-1389-37587-000152273E",
 					["leftMoney"] = 237459941,
@@ -13020,7 +13202,7 @@ NITdatabase = {
 					["enteredMoney"] = 237427642,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [170]
+				}, -- [172]
 				{
 					["GUID"] = "Creature-0-4459-575-32579-26861-0000521A47",
 					["leftMoney"] = 46705667,
@@ -13066,23 +13248,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 121,
 					["rawMoneyCount"] = 46652,
-					["enteredMoney"] = 46192170,
-					["leftXP"] = 0,
+					["classEnglish"] = "WARRIOR",
+					["enteredTime"] = 1699879512,
 					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1343,
 					},
-					["enteredTime"] = 1699879512,
+					["leftXP"] = 0,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "WARRIOR",
+					["enteredMoney"] = 46192170,
 					["instanceName"] = "Utgarde Pinnacle",
 					["mergeGUID"] = "Creature-0-4459-575-32579-211299-0000521A83",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [171]
+				}, -- [173]
 				{
 					["GUID"] = "Creature-0-4448-576-4852-26723-000052130D",
 					["leftMoney"] = 236300730,
@@ -13123,24 +13305,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 4852,
 					["mobCountFromKill"] = 339,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 235793379,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699877679,
 					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["rep"] = {
 						["Knights of the Ebon Blade: +"] = -2085,
 					},
-					["enteredTime"] = 1699877679,
+					["leftXP"] = 0,
 					["instanceID"] = 576,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 20751,
 					["instanceName"] = "The Nexus",
-					["enteredMoney"] = 235793379,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [172]
+				}, -- [174]
 				{
 					["GUID"] = "Creature-0-4459-43-31386-5056-0002D0FF6B",
 					["leftMoney"] = 221284844,
@@ -13179,7 +13361,7 @@ NITdatabase = {
 					["enteredMoney"] = 221278474,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [173]
+				}, -- [175]
 				{
 					["GUID"] = "Creature-0-4445-632-19054-36502-000050F923",
 					["leftMoney"] = 221278573,
@@ -13238,7 +13420,7 @@ NITdatabase = {
 					["enteredMoney"] = 220767020,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [174]
+				}, -- [176]
 				{
 					["GUID"] = "Creature-0-4458-599-26548-27978-00004E971E",
 					["leftMoney"] = 227078917,
@@ -13280,25 +13462,25 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 26548,
 					["mobCountFromKill"] = 171,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 226858377,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699649335,
 					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["rep"] = {
 						["Knights of the Ebon Blade: +"] = -1462,
 						["Horde Expedition: +"] = -344,
 					},
-					["enteredTime"] = 1699649335,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 14240,
 					["instanceName"] = "Halls of Stone",
-					["enteredMoney"] = 226858377,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [175]
+				}, -- [177]
 				{
 					["GUID"] = "Creature-0-4480-576-30711-26723-00004E8ABD",
 					["leftMoney"] = 226480390,
@@ -13350,22 +13532,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 175,
 					["classEnglish"] = "DEATHKNIGHT",
 					["mobCount"] = 0,
-					["enteredMoney"] = 226254061,
-					["playerName"] = "Battlearm",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 226254061,
 					["rep"] = {
 						["Kirin Tor: +"] = -395,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699647478,
 					["instanceID"] = 576,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 20029,
 					["instanceName"] = "The Nexus",
-					["enteredTime"] = 1699647478,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [176]
+				}, -- [178]
 				{
 					["leftMoney"] = 8581158,
 					["group"] = {
@@ -13396,7 +13578,7 @@ NITdatabase = {
 					["enteredMoney"] = 8581158,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [177]
+				}, -- [179]
 				{
 					["GUID"] = "Creature-0-4457-601-8516-28619-00004E81CC",
 					["leftMoney"] = 8581158,
@@ -13446,23 +13628,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 46,
 					["rawMoneyCount"] = 0,
-					["enteredMoney"] = 8581158,
-					["leftXP"] = 0,
+					["classEnglish"] = "HUNTER",
+					["enteredTime"] = 1699643500,
 					["playerName"] = "Mxzq",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["Argent Crusade: +"] = -45,
 					},
-					["enteredTime"] = 1699643500,
+					["leftXP"] = 0,
 					["instanceID"] = 601,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "HUNTER",
+					["enteredMoney"] = 8581158,
 					["instanceName"] = "Azjol-Nerub",
 					["mergeGUID"] = "Creature-0-4457-601-8516-211299-00004E7F0C",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [178]
+				}, -- [180]
 				{
 					["GUID"] = "Creature-0-4458-604-20887-13321-0001CE7A70",
 					["leftMoney"] = 35403122,
@@ -13507,22 +13689,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 163,
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
-					["enteredMoney"] = 35172911,
-					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermin",
+					["enteredMoney"] = 35172911,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -2002,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699641995,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 23911,
 					["instanceName"] = "Gundrak",
-					["enteredTime"] = 1699641995,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [179]
+				}, -- [181]
 				{
 					["leftMoney"] = 34891152,
 					["group"] = {
@@ -13553,7 +13735,7 @@ NITdatabase = {
 					["enteredMoney"] = 34891152,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [180]
+				}, -- [182]
 				{
 					["GUID"] = "Creature-0-4458-604-18772-29304-00004E6F69",
 					["leftMoney"] = 34891152,
@@ -13600,22 +13782,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 193,
 					["rawMoneyCount"] = 8057,
 					["enteredMoney"] = 34891152,
-					["classEnglish"] = "WARRIOR",
-					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -952,
 					},
-					["enteredTime"] = 1699639238,
+					["leftXP"] = 0,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699639238,
 					["instanceName"] = "Gundrak",
 					["mergeGUID"] = "Creature-0-4458-604-18772-211299-00004E732B",
 					["GUIDSource"] = "nameplate1",
 					["mergeSource"] = "mouseover",
-				}, -- [181]
+				}, -- [183]
 				{
 					["GUID"] = "Creature-0-4469-576-14308-26723-00004E65C2",
 					["leftMoney"] = 31104820,
@@ -13658,24 +13840,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 14308,
 					["mobCountFromKill"] = 97,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 30880681,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699638000,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -815,
 					},
-					["enteredTime"] = 1699638000,
+					["leftXP"] = 0,
 					["instanceID"] = 576,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 17839,
 					["instanceName"] = "The Nexus",
-					["enteredMoney"] = 30880681,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [182]
+				}, -- [184]
 				{
 					["GUID"] = "Creature-0-4458-33-6431-2529-00014E2375",
 					["leftMoney"] = 30849343,
@@ -13714,7 +13896,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 14426,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [183]
+				}, -- [185]
 				{
 					["GUID"] = "Creature-0-4479-43-32417-3637-0005CE18FD",
 					["leftMoney"] = 31320739,
@@ -13753,7 +13935,7 @@ NITdatabase = {
 					["enteredMoney"] = 31318200,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [184]
+				}, -- [186]
 				{
 					["GUID"] = "Creature-0-5563-604-8650-29836-00014E0CF4",
 					["leftMoney"] = 229370730,
@@ -13797,22 +13979,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 126,
 					["classEnglish"] = "DEATHKNIGHT",
 					["mobCount"] = 0,
-					["enteredMoney"] = 229140210,
-					["playerName"] = "Battlearm",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 229140210,
 					["rep"] = {
 						["Kirin Tor: +"] = -1897,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699613956,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 24220,
 					["instanceName"] = "Gundrak",
-					["enteredTime"] = 1699613956,
+					["leftXP"] = 0,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [185]
+				}, -- [187]
 				{
 					["GUID"] = "Creature-0-4459-574-27631-23954-00004E05F9",
 					["leftMoney"] = 229183161,
@@ -13865,22 +14047,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 97,
 					["rawMoneyCount"] = 21504,
 					["classEnglish"] = "DEATHKNIGHT",
-					["enteredMoney"] = 228962478,
-					["playerName"] = "Battlearm",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 228962478,
 					["rep"] = {
 						["Kirin Tor: +"] = -1752,
 					},
-					["enteredTime"] = 1699612177,
+					["leftXP"] = 0,
 					["instanceID"] = 574,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699612177,
 					["instanceName"] = "Utgarde Keep",
 					["mergeGUID"] = "Creature-0-4459-574-27631-211299-00004E08DE",
 					["mobCount"] = 0,
 					["mergeSource"] = "mouseover",
-				}, -- [186]
+				}, -- [188]
 				{
 					["GUID"] = "Creature-0-4458-632-1476-36502-00004DFF6B",
 					["leftMoney"] = 227473070,
@@ -13939,7 +14121,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 19153,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [187]
+				}, -- [189]
 				{
 					["GUID"] = "Creature-0-4469-632-7697-37588-00024DFEC7",
 					["leftMoney"] = 30345099,
@@ -13998,7 +14180,7 @@ NITdatabase = {
 					["enteredMoney"] = 29840680,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [188]
+				}, -- [190]
 				{
 					["GUID"] = "Creature-0-5563-658-27096-36879-00004D0200",
 					["leftMoney"] = 36555246,
@@ -14063,7 +14245,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-658-27096-36788-00004D0200",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [189]
+				}, -- [191]
 				{
 					["GUID"] = "Creature-0-4457-595-23288-30997-00004D0239",
 					["leftMoney"] = 36553835,
@@ -14137,22 +14319,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 550,
 					["rawMoneyCount"] = 39995,
 					["subDifficulty"] = "gamma",
-					["enteredMoney"] = 36316231,
-					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
+					["playerName"] = "Vermin",
+					["enteredMoney"] = 36316231,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1435,
 					},
-					["enteredTime"] = 1699543184,
+					["leftXP"] = 0,
 					["instanceID"] = 595,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699543184,
 					["instanceName"] = "The Culling of Stratholme",
 					["mergeGUID"] = "Creature-0-4457-595-23288-26527-00004CF87D",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [190]
+				}, -- [192]
 				{
 					["GUID"] = "Creature-0-4457-575-15034-26861-00004CB8A4",
 					["leftMoney"] = 32972842,
@@ -14196,23 +14378,23 @@ NITdatabase = {
 					["mobCount"] = 0,
 					["mobCountFromKill"] = 99,
 					["rawMoneyCount"] = 41440,
-					["classEnglish"] = "WARRIOR",
-					["enteredTime"] = 1699526840,
+					["subDifficulty"] = "gamma",
+					["leftXP"] = 0,
 					["playerName"] = "Vermin",
 					["enteredMoney"] = 32760188,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1861,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699526840,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["subDifficulty"] = "gamma",
+					["classEnglish"] = "WARRIOR",
 					["instanceName"] = "Utgarde Pinnacle",
 					["mergeGUID"] = "Creature-0-4457-575-15034-30871-00004CB8A4",
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [191]
+				}, -- [193]
 				{
 					["GUID"] = "Creature-0-4459-575-15603-30871-00004CAA4E",
 					["leftMoney"] = 7354232,
@@ -14239,7 +14421,7 @@ NITdatabase = {
 					["enteredMoney"] = 6793632,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [192]
+				}, -- [194]
 				{
 					["GUID"] = "Creature-0-4446-575-17423-26555-00034CA1A7",
 					["leftMoney"] = 6793632,
@@ -14284,22 +14466,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 120,
 					["rawMoneyCount"] = 41935,
 					["subDifficulty"] = "gamma",
-					["enteredMoney"] = 5729319,
-					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
+					["playerName"] = "Mxzq",
+					["enteredMoney"] = 5729319,
 					["rep"] = {
 						["Argent Crusade: +"] = -1873,
 					},
-					["enteredTime"] = 1699520962,
+					["leftXP"] = 0,
 					["instanceID"] = 575,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699520962,
 					["instanceName"] = "Utgarde Pinnacle",
 					["mergeGUID"] = "Creature-0-4446-575-17423-30871-00004CA1A7",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [193]
+				}, -- [195]
 				{
 					["GUID"] = "Creature-0-4445-602-20842-28923-00004C99C0",
 					["leftMoney"] = 225857649,
@@ -14310,17 +14492,18 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "CUBE",
 						},
-						["Etaya-Gehennas"] = {
+						["Mianas"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Simplexity",
 						},
 						["Palasios"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Aklyvin-Gehennas"] = {
+						["Etaya-Gehennas"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
@@ -14331,11 +14514,10 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Vicarious",
 						},
-						["Mianas"] = {
-							["class"] = "Priest",
+						["Aklyvin-Gehennas"] = {
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Simplexity",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 					},
 					["class"] = "Death Knight",
@@ -14345,24 +14527,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 20842,
 					["mobCountFromKill"] = 95,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 225331293,
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1699518949,
+					["leftXP"] = 0,
 					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["rep"] = {
 						["Kirin Tor: +"] = -2030,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699518949,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 39756,
 					["instanceName"] = "Halls of Lightning",
-					["enteredMoney"] = 225331293,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [194]
+				}, -- [196]
 				{
 					["GUID"] = "Creature-0-4448-632-19099-37584-0003CC97D2",
 					["leftMoney"] = 32124325,
@@ -14421,7 +14603,7 @@ NITdatabase = {
 					["enteredMoney"] = 31616760,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [195]
+				}, -- [197]
 				{
 					["GUID"] = "Creature-0-5571-599-5792-27978-00004BABC6",
 					["leftMoney"] = 3945482,
@@ -14464,24 +14646,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 5792,
 					["mobCountFromKill"] = 174,
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 2923889,
 					["GUIDSource"] = "mouseover",
-					["leftXP"] = 0,
+					["enteredTime"] = 1699458015,
 					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
 					["rep"] = {
 						["Argent Crusade: +"] = -1761,
 					},
-					["enteredTime"] = 1699458015,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 3793,
 					["instanceName"] = "Halls of Stone",
-					["enteredMoney"] = 2923889,
+					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [196]
+				}, -- [198]
 				{
 					["GUID"] = "Creature-0-4445-595-7983-27912-00004BA7CA",
 					["leftMoney"] = 2548289,
@@ -14549,7 +14731,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [197]
+				}, -- [199]
 				{
 					["GUID"] = "Creature-0-4457-533-14220-1964-00014BA687",
 					["leftMoney"] = 2548289,
@@ -14607,16 +14789,17 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "CN Descendants",
 						},
-						["Umrath"] = {
+						["Lexio"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "The Finalboss",
 						},
-						["Fiktinacz"] = {
+						["Pecus"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "Decomposers",
+							["guildName"] = "The Legacy",
 						},
 						["Mxzq"] = {
 							["level"] = 80,
@@ -14624,11 +14807,11 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "CUBE",
 						},
-						["Pecus"] = {
+						["Fiktinacz"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "The Legacy",
+							["guildName"] = "Decomposers",
 						},
 						["Dragulz"] = {
 							["level"] = 80,
@@ -14689,11 +14872,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Exiled",
 						},
-						["Lexio"] = {
+						["Umrath"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "The Finalboss",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Csököttagyar"] = {
 							["level"] = 80,
@@ -14724,7 +14906,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 65385,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [198]
+				}, -- [200]
 				{
 					["GUID"] = "Creature-0-5563-599-7295-27978-00004BA346",
 					["leftMoney"] = 224229048,
@@ -14770,23 +14952,23 @@ NITdatabase = {
 					["mobCount"] = 0,
 					["mobCountFromKill"] = 199,
 					["rawMoneyCount"] = 45554,
-					["subDifficulty"] = "gamma",
-					["leftXP"] = 0,
+					["classEnglish"] = "DEATHKNIGHT",
+					["enteredTime"] = 1699453798,
 					["playerName"] = "Battlearm",
 					["enteredMoney"] = 223741057,
 					["rep"] = {
 						["Kirin Tor: +"] = -1808,
 					},
-					["enteredTime"] = 1699453798,
+					["leftXP"] = 0,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "DEATHKNIGHT",
+					["subDifficulty"] = "gamma",
 					["instanceName"] = "Halls of Stone",
 					["mergeGUID"] = "Creature-0-5563-599-7295-211299-00004BA33E",
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [199]
+				}, -- [201]
 				{
 					["GUID"] = "Creature-0-4458-533-17724-15956-00004B99C6",
 					["leftMoney"] = 223400894,
@@ -14872,7 +15054,7 @@ NITdatabase = {
 					["enteredMoney"] = 223231941,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [200]
+				}, -- [202]
 				{
 					["GUID"] = "Creature-0-4480-578-3849-28276-0003CB96AE",
 					["leftMoney"] = 25958926,
@@ -14915,24 +15097,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 3849,
 					["mobCountFromKill"] = 244,
-					["enteredMoney"] = 25452287,
+					["subDifficulty"] = "gamma",
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1699451584,
+					["leftXP"] = 0,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1721,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699451584,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 20039,
 					["instanceName"] = "The Oculus",
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 25452287,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [201]
+				}, -- [203]
 				{
 					["GUID"] = "Creature-0-4460-533-5030-15956-00004B90B1",
 					["leftMoney"] = 25156287,
@@ -15020,7 +15202,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 175376,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [202]
+				}, -- [204]
 				{
 					["GUID"] = "Creature-0-4458-602-21742-28923-00004AA8CC",
 					["leftMoney"] = 1755657,
@@ -15031,11 +15213,11 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "CUBE",
 						},
-						["Sqter-NethergardeKeep"] = {
-							["class"] = "Druid",
+						["Selfita"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Quéstology",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Sequence",
 						},
 						["Simmex"] = {
 							["class"] = "Warrior",
@@ -15043,11 +15225,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Theorycraft",
 						},
-						["Selavie"] = {
-							["class"] = "Mage",
+						["Sqter-NethergardeKeep"] = {
+							["class"] = "Druid",
 							["level"] = 80,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Theorycraft",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Quéstology",
 						},
 						["Variola"] = {
 							["class"] = "Death Knight",
@@ -15055,11 +15237,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Theorycraft",
 						},
-						["Selfita"] = {
-							["class"] = "Paladin",
+						["Selavie"] = {
+							["class"] = "Mage",
 							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Sequence",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Theorycraft",
 						},
 					},
 					["class"] = "Hunter",
@@ -15069,24 +15251,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 21742,
 					["mobCountFromKill"] = 103,
-					["enteredMoney"] = 1531199,
+					["subDifficulty"] = "gamma",
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1699391691,
+					["leftXP"] = 0,
 					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
 					["rep"] = {
 						["Argent Crusade: +"] = -2045,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699391691,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 18158,
 					["instanceName"] = "Halls of Lightning",
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 1531199,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [203]
+				}, -- [205]
 				{
 					["GUID"] = "Creature-0-4469-604-26678-31133-00004AA7B2",
 					["leftMoney"] = 1849281,
@@ -15129,24 +15311,24 @@ NITdatabase = {
 					["xpFromChat"] = 0,
 					["zoneID"] = 26678,
 					["mobCountFromKill"] = 159,
-					["enteredMoney"] = 1624270,
+					["subDifficulty"] = "gamma",
 					["GUIDSource"] = "mouseover",
-					["enteredTime"] = 1699390432,
+					["leftXP"] = 0,
 					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
 					["rep"] = {
 						["Argent Crusade: +"] = -2017,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699390432,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 18711,
 					["instanceName"] = "Gundrak",
-					["subDifficulty"] = "gamma",
+					["enteredMoney"] = 1624270,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [204]
+				}, -- [206]
 				{
 					["GUID"] = "Creature-0-4458-619-7555-29311-00004A5E36",
 					["leftMoney"] = 907420,
@@ -15167,10 +15349,11 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "CUBE",
 						},
-						["Testokari"] = {
+						["Kasam"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Decomposers",
 						},
 						["Clena-Gehennas"] = {
 							["level"] = 0,
@@ -15189,11 +15372,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "The Under Wares",
 						},
-						["Kasam"] = {
+						["Testokari"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Decomposers",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
 						},
 					},
 					["class"] = "Hunter",
@@ -15207,22 +15389,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 253,
 					["rawMoneyCount"] = 63478,
 					["subDifficulty"] = "gamma",
-					["enteredMoney"] = 381853,
-					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
+					["playerName"] = "Mxzq",
+					["enteredMoney"] = 381853,
 					["rep"] = {
 						["Argent Crusade: +"] = -1880,
 					},
-					["enteredTime"] = 1699372598,
+					["leftXP"] = 0,
 					["instanceID"] = 619,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["leftXP"] = 0,
+					["enteredTime"] = 1699372598,
 					["instanceName"] = "Ahn'kahet: The Old Kingdom",
 					["mergeGUID"] = "Creature-0-4458-619-7555-211299-00004A6186",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [205]
+				}, -- [207]
 				{
 					["GUID"] = "Creature-0-4447-619-12195-211299-00004A563E",
 					["leftMoney"] = 151403,
@@ -15243,17 +15425,17 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
 						},
-						["Heildewitzda-Razorfen"] = {
-							["class"] = "Shaman",
-							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Exalted",
-						},
 						["Eyecco"] = {
 							["class"] = "Warrior",
 							["level"] = 80,
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "The Finalboss",
+						},
+						["Heildewitzda-Razorfen"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Exalted",
 						},
 					},
 					["class"] = "Druid",
@@ -15266,23 +15448,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 190,
 					["rawMoneyCount"] = 38385,
-					["classEnglish"] = "DRUID",
-					["enteredTime"] = 1699369657,
+					["enteredMoney"] = 151403,
+					["leftXP"] = 0,
 					["playerName"] = "Moolatz",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1028,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699369657,
 					["instanceID"] = 619,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredMoney"] = 151403,
+					["classEnglish"] = "DRUID",
 					["instanceName"] = "Ahn'kahet: The Old Kingdom",
 					["mergeGUID"] = "Creature-0-4447-619-12195-211299-00004A563E",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [206]
+				}, -- [208]
 				{
 					["GUID"] = "Creature-0-5563-578-16188-27656-00004A24F3",
 					["leftMoney"] = 222920138,
@@ -15326,22 +15508,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 240,
 					["classEnglish"] = "DEATHKNIGHT",
 					["mobCount"] = 0,
-					["enteredMoney"] = 222694859,
-					["playerName"] = "Battlearm",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 222694859,
 					["rep"] = {
 						["Kirin Tor: +"] = -1725,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699356997,
 					["instanceID"] = 578,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 18979,
 					["instanceName"] = "The Oculus",
-					["enteredTime"] = 1699356997,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [207]
+				}, -- [209]
 				{
 					["GUID"] = "Creature-0-4469-602-16874-28923-00004A1BCB",
 					["leftMoney"] = 222634322,
@@ -15386,22 +15568,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 89,
 					["classEnglish"] = "DEATHKNIGHT",
 					["mobCount"] = 0,
-					["enteredMoney"] = 222408685,
-					["playerName"] = "Battlearm",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Battlearm",
+					["enteredMoney"] = 222408685,
 					["rep"] = {
 						["Kirin Tor: +"] = -1985,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699355596,
 					["instanceID"] = 602,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 19337,
 					["instanceName"] = "Halls of Lightning",
-					["enteredTime"] = 1699355596,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [208]
+				}, -- [210]
 				{
 					["GUID"] = "Creature-0-4459-632-24403-36502-00004A18FB",
 					["leftMoney"] = 221435485,
@@ -15461,7 +15643,7 @@ NITdatabase = {
 					["enteredMoney"] = 220360284,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [209]
+				}, -- [211]
 				{
 					["GUID"] = "Creature-0-4458-604-29439-211299-00004A1552",
 					["leftMoney"] = 15318460,
@@ -15474,16 +15656,16 @@ NITdatabase = {
 							["level"] = 80,
 						},
 						["Dubeldee"] = {
-							["classEnglish"] = "PALADIN",
-							["level"] = 80,
-							["name"] = "Dubeldee",
 							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["name"] = "Dubeldee",
+							["level"] = 80,
 						},
 						["Kanecvenec"] = {
-							["classEnglish"] = "WARLOCK",
-							["level"] = 80,
-							["name"] = "Kanecvenec",
 							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["name"] = "Kanecvenec",
+							["level"] = 80,
 						},
 						["Pxies-Sulfuron"] = {
 							["name"] = "Pxies-Sulfuron",
@@ -15510,23 +15692,23 @@ NITdatabase = {
 					["GUIDSource"] = "mouseover",
 					["mobCountFromKill"] = 180,
 					["rawMoneyCount"] = 17675,
-					["enteredMoney"] = 14826026,
-					["leftXP"] = 0,
+					["classEnglish"] = "WARRIOR",
+					["enteredTime"] = 1699352338,
 					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1927,
 					},
-					["enteredTime"] = 1699352338,
+					["leftXP"] = 0,
 					["instanceID"] = 604,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["classEnglish"] = "WARRIOR",
+					["enteredMoney"] = 14826026,
 					["instanceName"] = "Gundrak",
 					["mergeGUID"] = "Creature-0-4458-604-29439-211299-00004A0F11",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [210]
+				}, -- [212]
 				{
 					["GUID"] = "Creature-0-4445-574-6291-23954-000048B234",
 					["leftMoney"] = 12846363,
@@ -15581,23 +15763,23 @@ NITdatabase = {
 					["mobCountFromKill"] = 87,
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
-					["enteredMoney"] = 12302217,
-					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermin",
+					["enteredMoney"] = 12302217,
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1739,
 						["The Sunreavers: +"] = -30,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699263029,
 					["instanceID"] = 574,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
 					["rawMoneyCount"] = 57546,
 					["instanceName"] = "Utgarde Keep",
-					["enteredTime"] = 1699263029,
+					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [211]
+				}, -- [213]
 				{
 					["GUID"] = "Creature-0-4460-599-8285-28070-0000451579",
 					["leftMoney"] = 11299877,
@@ -15644,22 +15826,22 @@ NITdatabase = {
 					["mobCountFromKill"] = 185,
 					["rawMoneyCount"] = 23748,
 					["enteredMoney"] = 11087286,
-					["classEnglish"] = "WARRIOR",
-					["playerName"] = "Vermin",
 					["subDifficulty"] = "gamma",
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
 					["rep"] = {
 						["The Wyrmrest Accord: +"] = -1808,
 					},
-					["leftXP"] = 0,
+					["enteredTime"] = 1699024728,
 					["instanceID"] = 599,
 					["difficultyID"] = 2,
 					["leftLevel"] = 80,
-					["enteredTime"] = 1699024728,
+					["leftXP"] = 0,
 					["instanceName"] = "Halls of Stone",
 					["mergeGUID"] = "Creature-0-4460-599-8285-211299-0000451258",
 					["mobCount"] = 0,
 					["mergeSource"] = "mouseover",
-				}, -- [212]
+				}, -- [214]
 				{
 					["GUID"] = "Creature-0-4468-533-11079-16194-0001450CB4",
 					["leftMoney"] = 10773829,
@@ -15746,7 +15928,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 182903,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [213]
+				}, -- [215]
 				{
 					["GUID"] = "Creature-0-4479-632-1552-36502-000044F5A7",
 					["leftMoney"] = 9657589,
@@ -15805,7 +15987,7 @@ NITdatabase = {
 					["enteredMoney"] = 9156450,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [214]
+				}, -- [216]
 				{
 					["GUID"] = "Creature-0-4446-668-26345-37223-00004397D4",
 					["leftMoney"] = 8053583,
@@ -15844,7 +16026,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [215]
+				}, -- [217]
 				{
 					["GUID"] = "Creature-0-4459-658-26100-37579-0000439690",
 					["leftMoney"] = 8001583,
@@ -15904,7 +16086,7 @@ NITdatabase = {
 					["enteredMoney"] = 6795285,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [216]
+				}, -- [218]
 				{
 					["GUID"] = "Creature-0-4448-632-19456-36502-0000414258",
 					["leftMoney"] = 4421967,
@@ -15962,7 +16144,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29147,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [217]
+				}, -- [219]
 				{
 					["GUID"] = "Creature-0-4445-658-28159-36788-0000414235",
 					["leftMoney"] = 4392820,
@@ -15989,7 +16171,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [218]
+				}, -- [220]
 				{
 					["GUID"] = "Creature-0-4457-632-15066-36502-0000413EF9",
 					["leftMoney"] = 4392820,
@@ -16047,7 +16229,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 37824,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [219]
+				}, -- [221]
 				{
 					["GUID"] = "Creature-0-4457-632-14062-38161-0000413C64",
 					["leftMoney"] = 53378697,
@@ -16106,7 +16288,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 35377,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [220]
+				}, -- [222]
 				{
 					["GUID"] = "Creature-0-4459-632-31444-36478-0000BBF2FD",
 					["leftMoney"] = 25587960,
@@ -16134,7 +16316,7 @@ NITdatabase = {
 					["enteredMoney"] = 25575865,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [221]
+				}, -- [223]
 				{
 					["GUID"] = "Creature-0-4457-553-3803-19608-0000312DE8",
 					["leftMoney"] = 8270008,
@@ -16161,7 +16343,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 391856,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [222]
+				}, -- [224]
 				{
 					["GUID"] = "Creature-0-4459-552-23960-20870-000030E6A9",
 					["leftMoney"] = 7869513,
@@ -16188,7 +16370,7 @@ NITdatabase = {
 					["enteredMoney"] = 7844066,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [223]
+				}, -- [225]
 				{
 					["GUID"] = "Creature-0-4468-554-23602-19220-000030E615",
 					["leftMoney"] = 7844066,
@@ -16215,7 +16397,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 304945,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [224]
+				}, -- [226]
 				{
 					["GUID"] = "Creature-0-5571-189-17426-23904-000030DF53",
 					["leftMoney"] = 178926618,
@@ -16273,7 +16455,7 @@ NITdatabase = {
 					["enteredMoney"] = 178569629,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [225]
+				}, -- [227]
 				{
 					["GUID"] = "Creature-0-4448-553-11715-17977-0000301651",
 					["leftMoney"] = 9910800,
@@ -16300,7 +16482,7 @@ NITdatabase = {
 					["enteredMoney"] = 9530471,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [226]
+				}, -- [228]
 				{
 					["GUID"] = "Creature-0-4457-553-13670-17980-00002FC8D7",
 					["leftMoney"] = 9268371,
@@ -16327,7 +16509,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 386630,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [227]
+				}, -- [229]
 				{
 					["GUID"] = "Creature-0-4469-189-5544-23682-00002FC76D",
 					["leftMoney"] = 193591869,
@@ -16385,7 +16567,7 @@ NITdatabase = {
 					["enteredMoney"] = 193579898,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [228]
+				}, -- [230]
 				{
 					["GUID"] = "Creature-0-4457-189-13300-23694-00002FC6EB",
 					["leftMoney"] = 193579898,
@@ -16442,7 +16624,7 @@ NITdatabase = {
 					["enteredMoney"] = 193568000,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [229]
+				}, -- [231]
 				{
 					["GUID"] = "Creature-0-4446-189-5518-23904-00002FC5F5",
 					["leftMoney"] = 193568000,
@@ -16499,7 +16681,7 @@ NITdatabase = {
 					["enteredMoney"] = 193556822,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [230]
+				}, -- [232]
 				{
 					["GUID"] = "Creature-0-4468-189-5677-23694-0000AFC4F2",
 					["leftMoney"] = 193556822,
@@ -16556,7 +16738,7 @@ NITdatabase = {
 					["enteredMoney"] = 193546627,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [231]
+				}, -- [233]
 				{
 					["GUID"] = "Creature-0-4459-189-12913-15447-00002FC3F8",
 					["leftMoney"] = 193546627,
@@ -16613,7 +16795,7 @@ NITdatabase = {
 					["enteredMoney"] = 193535897,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [232]
+				}, -- [234]
 				{
 					["GUID"] = "Creature-0-4480-189-2049-23682-00002F91A9",
 					["leftMoney"] = 357608,
@@ -16668,7 +16850,7 @@ NITdatabase = {
 					["enteredMoney"] = 202,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [233]
+				}, -- [235]
 				{
 					["GUID"] = "Creature-0-4457-189-5241-23694-00002F909A",
 					["leftMoney"] = 357342,
@@ -16726,7 +16908,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 10412,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [234]
+				}, -- [236]
 				{
 					["GUID"] = "Creature-0-4479-189-1821-23682-00002F8F6A",
 					["leftMoney"] = 8806125,
@@ -16784,7 +16966,7 @@ NITdatabase = {
 					["enteredMoney"] = 8448365,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [235]
+				}, -- [237]
 				{
 					["GUID"] = "Creature-0-4459-189-5414-23904-00002F8E86",
 					["leftMoney"] = 191859893,
@@ -16842,7 +17024,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 10856,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [236]
+				}, -- [238]
 				{
 					["GUID"] = "Creature-0-4448-553-2013-17977-00002F88CE",
 					["leftMoney"] = 8168832,
@@ -16869,7 +17051,7 @@ NITdatabase = {
 					["enteredMoney"] = 7763675,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [237]
+				}, -- [239]
 				{
 					["GUID"] = "Creature-0-5563-553-22703-17977-00002EBEAE",
 					["leftMoney"] = 7515842,
@@ -16898,7 +17080,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-553-22703-17976-00002EBEAE",
 					["mobCount"] = 0,
 					["mergeSource"] = "mouseover",
-				}, -- [238]
+				}, -- [240]
 				{
 					["GUID"] = "Creature-0-4457-553-2907-18405-0000AEB41E",
 					["leftMoney"] = 0,
@@ -16927,7 +17109,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-553-2907-18405-0000AEB41E",
 					["mobCount"] = 0,
 					["mergeSource"] = "mouseover",
-				}, -- [239]
+				}, -- [241]
 				{
 					["GUID"] = "Creature-0-4458-553-11662-17977-00002E5B63",
 					["leftMoney"] = 1193736,
@@ -16954,7 +17136,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 371525,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [240]
+				}, -- [242]
 				{
 					["GUID"] = "Creature-0-4459-553-28655-17977-00002E5658",
 					["leftMoney"] = 822211,
@@ -16995,7 +17177,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-553-28655-18404-00012E5658",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [241]
+				}, -- [243]
 				{
 					["GUID"] = "Creature-0-4458-553-7393-17977-00002E3E89",
 					["leftMoney"] = 399637,
@@ -17022,7 +17204,7 @@ NITdatabase = {
 					["enteredMoney"] = 829,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [242]
+				}, -- [244]
 				{
 					["GUID"] = "Creature-0-5571-43-19686-3654-000026E319",
 					["leftMoney"] = 6659783,
@@ -17079,7 +17261,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 924,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 18,
-				}, -- [243]
+				}, -- [245]
 				{
 					["GUID"] = "Creature-0-4458-533-29596-1964-000126CA92",
 					["leftMoney"] = 127100390,
@@ -17101,11 +17283,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
 						},
-						["Imbuedle"] = {
-							["class"] = "Priest",
+						["Judomann"] = {
+							["class"] = "Druid",
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Evil Muffins",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "The Finalboss",
 						},
 						["Loadedlux"] = {
 							["class"] = "Warrior",
@@ -17123,11 +17305,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Judomann"] = {
-							["class"] = "Druid",
+						["Imbuedle"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "The Finalboss",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Evil Muffins",
 						},
 						["Sotalahna"] = {
 							["level"] = 80,
@@ -17186,7 +17368,7 @@ NITdatabase = {
 					["enteredMoney"] = 126767837,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [244]
+				}, -- [246]
 				{
 					["GUID"] = "Creature-0-4446-532-10684-16152-0000245E8A",
 					["leftMoney"] = 356562803,
@@ -17214,7 +17396,7 @@ NITdatabase = {
 					["enteredMoney"] = 356138309,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [245]
+				}, -- [247]
 				{
 					["GUID"] = "Creature-0-4460-532-2878-16152-00001EDA2D",
 					["leftMoney"] = 355780532,
@@ -17242,7 +17424,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 423267,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [246]
+				}, -- [248]
 				{
 					["GUID"] = "Creature-0-4458-532-13554-15548-00001ED612",
 					["leftMoney"] = 355357265,
@@ -17270,7 +17452,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 20532,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [247]
+				}, -- [249]
 				{
 					["GUID"] = "Creature-0-4446-309-16097-14509-00001D7947",
 					["leftMoney"] = 144075976,
@@ -17297,7 +17479,7 @@ NITdatabase = {
 					["enteredMoney"] = 143637114,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [248]
+				}, -- [250]
 				{
 					["GUID"] = "Creature-0-4458-532-3321-16169-00001D7491",
 					["leftMoney"] = 143536099,
@@ -17325,7 +17507,7 @@ NITdatabase = {
 					["enteredMoney"] = 143147302,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [249]
+				}, -- [251]
 				{
 					["GUID"] = "Creature-0-4460-309-9828-166359-0000183C56",
 					["leftMoney"] = 142863531,
@@ -17352,7 +17534,7 @@ NITdatabase = {
 					["enteredMoney"] = 142380697,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [250]
+				}, -- [252]
 				{
 					["GUID"] = "Creature-0-4457-309-29230-11356-000115A15A",
 					["leftMoney"] = 0,
@@ -17379,7 +17561,7 @@ NITdatabase = {
 					["enteredMoney"] = 142361588,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [251]
+				}, -- [253]
 				{
 					["GUID"] = "Creature-0-5563-532-19014-16407-00029599F9",
 					["leftMoney"] = 142234197,
@@ -17407,7 +17589,7 @@ NITdatabase = {
 					["enteredMoney"] = 141837847,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [252]
+				}, -- [254]
 				{
 					["GUID"] = "Creature-0-4457-533-2749-1964-0000148A78",
 					["leftMoney"] = 127935061,
@@ -17476,11 +17658,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Crimson Dawn",
 						},
-						["Mxzq"] = {
-							["class"] = "Hunter",
+						["Goathy"] = {
+							["class"] = "Warrior",
 							["level"] = 80,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "CUBE",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Leger Des Heils",
 						},
 						["Maraudot"] = {
 							["level"] = 80,
@@ -17545,11 +17727,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Goathy"] = {
-							["class"] = "Warrior",
+						["Mxzq"] = {
+							["class"] = "Hunter",
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Leger Des Heils",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "CUBE",
 						},
 						["Sipzasipem"] = {
 							["class"] = "Hunter",
@@ -17580,7 +17762,7 @@ NITdatabase = {
 					["enteredMoney"] = 127799121,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [253]
+				}, -- [255]
 				{
 					["GUID"] = "Creature-0-4460-533-4349-15990-0000147F72",
 					["leftMoney"] = 127799121,
@@ -17666,7 +17848,7 @@ NITdatabase = {
 					["enteredMoney"] = 127472946,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [254]
+				}, -- [256]
 				{
 					["GUID"] = "Creature-0-4446-70-29636-24830-000193453B",
 					["leftMoney"] = 324559988,
@@ -17693,7 +17875,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 11976,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 80,
-				}, -- [255]
+				}, -- [257]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17767,7 +17949,7 @@ NITdatabase = {
 					["instanceName"] = "Dalaran Sewers",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [256]
+				}, -- [258]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17841,7 +18023,7 @@ NITdatabase = {
 					["instanceName"] = "Nagrand Arena",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [257]
+				}, -- [259]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17915,7 +18097,7 @@ NITdatabase = {
 					["instanceName"] = "Nagrand Arena",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [258]
+				}, -- [260]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17989,7 +18171,7 @@ NITdatabase = {
 					["instanceName"] = "Ruins of Lordaeron",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [259]
+				}, -- [261]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18063,7 +18245,7 @@ NITdatabase = {
 					["instanceName"] = "Nagrand Arena",
 					["winningFaction"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [260]
+				}, -- [262]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18137,7 +18319,7 @@ NITdatabase = {
 					["instanceName"] = "Blade's Edge Arena",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [261]
+				}, -- [263]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18211,7 +18393,7 @@ NITdatabase = {
 					["instanceName"] = "Dalaran Sewers",
 					["winningFaction"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [262]
+				}, -- [264]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18285,7 +18467,7 @@ NITdatabase = {
 					["instanceName"] = "Nagrand Arena",
 					["winningFaction"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [263]
+				}, -- [265]
 				{
 					["GUID"] = "Creature-0-4447-43-10040-2914-000011D55A",
 					["leftMoney"] = 728149,
@@ -18342,7 +18524,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1803,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 24,
-				}, -- [264]
+				}, -- [266]
 				{
 					["GUID"] = "Creature-0-4459-624-7062-33993-000011CA04",
 					["leftMoney"] = 127477731,
@@ -18429,7 +18611,7 @@ NITdatabase = {
 					["enteredMoney"] = 127118900,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [265]
+				}, -- [267]
 				{
 					["GUID"] = "Creature-0-4445-624-8774-33998-000191C5BD",
 					["leftMoney"] = 128943397,
@@ -18582,7 +18764,7 @@ NITdatabase = {
 					["enteredMoney"] = 128824310,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [266]
+				}, -- [268]
 				{
 					["GUID"] = "Creature-0-5563-33-11064-5058-00000E1FE3",
 					["leftMoney"] = 466615,
@@ -18637,7 +18819,7 @@ NITdatabase = {
 					["enteredMoney"] = 464724,
 					["mobCount"] = 120,
 					["enteredLevel"] = 18,
-				}, -- [267]
+				}, -- [269]
 				{
 					["GUID"] = "Creature-0-4458-616-6693-28859-00000C94A9",
 					["leftMoney"] = 105107439,
@@ -18812,7 +18994,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 104235,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [268]
+				}, -- [270]
 				{
 					["GUID"] = "Creature-0-4460-615-27590-30453-00010C91C1",
 					["leftMoney"] = 105021254,
@@ -18989,7 +19171,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-615-27590-30453-00020C91C1",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [269]
+				}, -- [271]
 				{
 					["GUID"] = "Creature-0-4457-533-24591-15990-00000C78F0",
 					["leftMoney"] = 104962611,
@@ -19164,7 +19346,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 985875,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [270]
+				}, -- [272]
 				{
 					["GUID"] = "Creature-0-4459-309-1198-11356-000189D6AC",
 					["leftMoney"] = 144312513,
@@ -19191,7 +19373,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 452736,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [271]
+				}, -- [273]
 				{
 					["GUID"] = "Creature-0-4447-532-630-16407-000509C757",
 					["leftMoney"] = 143707074,
@@ -19219,7 +19401,7 @@ NITdatabase = {
 					["enteredMoney"] = 143218818,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [272]
+				}, -- [274]
 				{
 					["GUID"] = "Creature-0-4446-309-28445-166359-000005FC6D",
 					["leftMoney"] = 273676485,
@@ -19249,7 +19431,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4446-309-28445-11356-000105FC6E",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "target",
-				}, -- [273]
+				}, -- [275]
 				{
 					["GUID"] = "Creature-0-5571-309-23830-15068-000085F7ED",
 					["leftMoney"] = 132301394,
@@ -19276,7 +19458,7 @@ NITdatabase = {
 					["enteredMoney"] = 131766855,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [274]
+				}, -- [276]
 				{
 					["GUID"] = "Creature-0-5571-624-18840-32353-000084ADFD",
 					["leftMoney"] = 309924563,
@@ -19292,11 +19474,11 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Jakelina"] = {
+						["Tillander"] = {
 							["level"] = 80,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Gud Förbannat",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Nonnih",
 						},
 						["Lunaboom"] = {
 							["level"] = 80,
@@ -19304,11 +19486,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Zoo",
 						},
-						["Tillander"] = {
+						["Jakelina"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Nonnih",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Gud Förbannat",
 						},
 						["Zattak"] = {
 							["level"] = 80,
@@ -19334,16 +19516,16 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Lumos",
 						},
+						["Esx"] = {
+							["level"] = 80,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+						},
 						["Clowns"] = {
 							["level"] = 80,
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "yep",
-						},
-						["Esx"] = {
-							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
 						},
 						["Getfe"] = {
 							["level"] = 80,
@@ -19394,7 +19576,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5571-624-18840-33998-000104B0E6",
 					["GUIDSource"] = "nameplate1",
 					["mergeSource"] = "mouseover",
-				}, -- [275]
+				}, -- [277]
 				{
 					["GUID"] = "Creature-0-4460-604-19426-26125-0000037DEB",
 					["leftMoney"] = 245642291,
@@ -19452,7 +19634,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23828,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [276]
+				}, -- [278]
 				{
 					["GUID"] = "Creature-0-5571-608-10216-30659-0000034C2C",
 					["leftMoney"] = 130974944,
@@ -19508,7 +19690,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 430213,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [277]
+				}, -- [279]
 				{
 					["leftMoney"] = 127213159,
 					["group"] = {
@@ -19690,7 +19872,7 @@ NITdatabase = {
 					["enteredMoney"] = 127213159,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [278]
+				}, -- [280]
 				{
 					["GUID"] = "Creature-0-4457-533-2771-15990-000001FD39",
 					["leftMoney"] = 104364426,
@@ -19777,7 +19959,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 316292,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [279]
+				}, -- [281]
 				{
 					["GUID"] = "Creature-0-4446-624-22905-33993-00007F54FD",
 					["leftMoney"] = 206981378,
@@ -19865,7 +20047,7 @@ NITdatabase = {
 					["enteredMoney"] = 206805588,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [280]
+				}, -- [282]
 				{
 					["GUID"] = "Creature-0-4447-624-10825-33993-00007F2AE8",
 					["leftMoney"] = 123794708,
@@ -19953,7 +20135,7 @@ NITdatabase = {
 					["enteredMoney"] = 123611752,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [281]
+				}, -- [283]
 				{
 					["GUID"] = "Creature-0-5563-624-1640-33993-00007F2412",
 					["leftMoney"] = 123611752,
@@ -20065,7 +20247,7 @@ NITdatabase = {
 					["enteredMoney"] = 123434782,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [282]
+				}, -- [284]
 				{
 					["GUID"] = "Creature-0-4469-615-29767-28860-00007E430B",
 					["leftMoney"] = 184492858,
@@ -20121,17 +20303,17 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Oil",
 						},
+						["Nikø"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "skill issue",
+						},
 						["Dragenslayer"] = {
 							["class"] = "Druid",
 							["level"] = 80,
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Epiphany",
-						},
-						["Kokostanezu"] = {
-							["class"] = "Hunter",
-							["level"] = 80,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "MadTossers",
 						},
 						["Dogfighterd"] = {
 							["class"] = "Druid",
@@ -20197,11 +20379,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["class"] = "Mage",
 						},
-						["Nikø"] = {
-							["class"] = "Warlock",
+						["Kokostanezu"] = {
+							["class"] = "Hunter",
 							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "skill issue",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "MadTossers",
 						},
 						["Aranu"] = {
 							["class"] = "Paladin",
@@ -20234,7 +20416,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4469-615-29767-30680-00007E4154",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [283]
+				}, -- [285]
 				{
 					["GUID"] = "Creature-0-4458-616-21507-28859-00007E3A2C",
 					["leftMoney"] = 168824781,
@@ -20401,7 +20583,7 @@ NITdatabase = {
 					["enteredMoney"] = 193711911,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [284]
+				}, -- [286]
 				{
 					["GUID"] = "Creature-0-4469-533-26930-35646-00007E3ADF",
 					["leftMoney"] = 193711911,
@@ -20462,17 +20644,17 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Oil",
 						},
+						["Nikø"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "skill issue",
+						},
 						["Ryxe"] = {
 							["class"] = "Hunter",
 							["level"] = 80,
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Sunced",
-						},
-						["Dragenslayer"] = {
-							["class"] = "Druid",
-							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Epiphany",
 						},
 						["Dogfighterd"] = {
 							["class"] = "Druid",
@@ -20539,11 +20721,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["class"] = "Mage",
 						},
-						["Nikø"] = {
-							["class"] = "Warlock",
+						["Dragenslayer"] = {
+							["class"] = "Druid",
 							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "skill issue",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Epiphany",
 						},
 						["Aranu"] = {
 							["class"] = "Paladin",
@@ -20574,7 +20756,7 @@ NITdatabase = {
 					["enteredMoney"] = 202856862,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [285]
+				}, -- [287]
 				{
 					["GUID"] = "Creature-0-4479-533-28673-16998-00007E1BFC",
 					["leftMoney"] = 202856862,
@@ -20719,7 +20901,7 @@ NITdatabase = {
 					["enteredMoney"] = 202856862,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [286]
+				}, -- [288]
 				{
 					["GUID"] = "Creature-0-4446-533-28555-16441-00007E10D8",
 					["leftMoney"] = 96767243,
@@ -20752,12 +20934,6 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Mckalapal"] = {
-							["class"] = "Paladin",
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Simplexity",
-						},
 						["Cursten"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
@@ -20769,6 +20945,12 @@ NITdatabase = {
 							["level"] = 80,
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Spirit Healers",
+						},
+						["Mckalapal"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Simplexity",
 						},
 						["Shakzz"] = {
 							["class"] = "Warrior",
@@ -20807,7 +20989,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4446-533-28555-15989-00007E0D04",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [287]
+				}, -- [289]
 				{
 					["GUID"] = "Creature-0-4447-599-12493-27978-00007E048E",
 					["leftMoney"] = 122922124,
@@ -20866,7 +21048,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 461102,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [288]
+				}, -- [290]
 				{
 					["GUID"] = "Creature-0-4445-576-15669-26723-00007DDD45",
 					["leftMoney"] = 56979971,
@@ -20923,22 +21105,22 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-576-15669-26736-0001FDDD45",
 					["mobCount"] = 124,
 					["enteredLevel"] = 71,
-				}, -- [289]
+				}, -- [291]
 				{
 					["GUID"] = "Creature-0-4447-574-2329-23954-00007CAD32",
 					["leftMoney"] = 56890322,
 					["group"] = {
+						["Houtu"] = {
+							["level"] = 70,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Crime Club",
+						},
 						["Telna"] = {
 							["level"] = 71,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Menace",
-						},
-						["Vermina"] = {
-							["level"] = 71,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
 						},
 						["Amygdalo"] = {
 							["level"] = 70,
@@ -20950,11 +21132,11 @@ NITdatabase = {
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
 						},
-						["Houtu"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Crime Club",
+						["Vermina"] = {
+							["level"] = 71,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
 						},
 					},
 					["class"] = "Paladin",
@@ -20979,7 +21161,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 35676,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 71,
-				}, -- [290]
+				}, -- [292]
 				{
 					["GUID"] = "Creature-0-4469-309-6923-14509-00007C9F6B",
 					["leftMoney"] = 122274199,
@@ -21006,7 +21188,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 455672,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [291]
+				}, -- [293]
 				{
 					["GUID"] = "Creature-0-5571-309-6912-14821-0005FC85C7",
 					["leftMoney"] = 188573318,
@@ -21034,7 +21216,7 @@ NITdatabase = {
 					["enteredMoney"] = 188096633,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [292]
+				}, -- [294]
 				{
 					["GUID"] = "Creature-0-4457-601-1695-29120-000078F8AB",
 					["leftMoney"] = 111743977,
@@ -21095,7 +21277,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-601-1695-29335-0000F8F8AB",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [293]
+				}, -- [295]
 				{
 					["GUID"] = "Creature-0-4445-601-10610-29120-000078F3D2",
 					["leftMoney"] = 182697943,
@@ -21154,7 +21336,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 346074,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [294]
+				}, -- [296]
 				{
 					["GUID"] = "Creature-0-4457-574-29934-23954-000078DC72",
 					["leftMoney"] = 55238444,
@@ -21210,7 +21392,7 @@ NITdatabase = {
 					["enteredMoney"] = 55200179,
 					["mobCount"] = 111,
 					["enteredLevel"] = 70,
-				}, -- [295]
+				}, -- [297]
 				{
 					["GUID"] = "Creature-0-4445-329-27199-10812-000078A0A0",
 					["leftMoney"] = 109343164,
@@ -21238,7 +21420,7 @@ NITdatabase = {
 					["enteredMoney"] = 108903773,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [296]
+				}, -- [298]
 				{
 					["GUID"] = "Creature-0-4446-599-11882-28070-00007885D0",
 					["leftMoney"] = 108489664,
@@ -21267,7 +21449,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4446-599-11882-27969-00017885D0",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [297]
+				}, -- [299]
 				{
 					["GUID"] = "Creature-0-4459-309-26765-14509-0000787F1E",
 					["leftMoney"] = 182373310,
@@ -21293,97 +21475,6 @@ NITdatabase = {
 					["rawMoneyCount"] = 463084,
 					["instanceName"] = "Zul'Gurub",
 					["enteredMoney"] = 181910226,
-					["mobCount"] = 0,
-					["enteredLevel"] = 80,
-				}, -- [298]
-				{
-					["GUID"] = "Creature-0-4447-309-18461-14509-0000787553",
-					["leftMoney"] = 107462410,
-					["group"] = {
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1677228737,
-					["enteredXP"] = 0,
-					["xpFromChat"] = 0,
-					["zoneID"] = 18461,
-					["enteredLevel"] = 80,
-					["mobCountFromKill"] = 84,
-					["GUIDSource"] = "mouseover",
-					["rawMoneyCount"] = 518595,
-					["leftXP"] = 0,
-					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
-					["rep"] = {
-					},
-					["enteredTime"] = 1677227347,
-					["instanceID"] = 309,
-					["difficultyID"] = 148,
-					["leftLevel"] = 80,
-					["enteredMoney"] = 106943815,
-					["instanceName"] = "Zul'Gurub",
-					["mergeGUID"] = "Creature-0-4447-309-18461-14821-000C787553",
-					["mobCount"] = 0,
-					["mergeSource"] = "nameplate",
-				}, -- [299]
-				{
-					["GUID"] = "Creature-0-4459-595-32143-30997-00007791C0",
-					["leftMoney"] = 165520205,
-					["group"] = {
-						["Battlearm"] = {
-							["class"] = "Death Knight",
-							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "CUBE",
-						},
-						["Hoolyberry"] = {
-							["class"] = "Priest",
-							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Flat Azeroth Corp",
-						},
-						["Lolicosta"] = {
-							["class"] = "Warrior",
-							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Flat Azeroth Corp",
-						},
-						["Slapuaround"] = {
-							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
-						},
-						["Damagestrong"] = {
-							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Volke"] = {
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-					},
-					["class"] = "Death Knight",
-					["leftTime"] = 1677169118,
-					["groupAverage"] = 80,
-					["enteredXP"] = 0,
-					["xpFromChat"] = 0,
-					["zoneID"] = 32143,
-					["mobCountFromKill"] = 444,
-					["leftXP"] = 0,
-					["GUIDSource"] = "mouseover",
-					["playerName"] = "Battlearm",
-					["classEnglish"] = "DEATHKNIGHT",
-					["rep"] = {
-						["Kirin Tor: +"] = -1685,
-					},
-					["enteredTime"] = 1677167326,
-					["instanceID"] = 595,
-					["difficultyID"] = 2,
-					["leftLevel"] = 80,
-					["rawMoneyCount"] = 452830,
-					["instanceName"] = "The Culling of Stratholme",
-					["enteredMoney"] = 165067375,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
 				}, -- [300]

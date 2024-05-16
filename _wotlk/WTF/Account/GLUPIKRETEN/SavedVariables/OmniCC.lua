@@ -10,18 +10,19 @@ OmniCCDB = {
 		["Wells - Jin'do"] = "Default",
 		["Battledog - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Asjrdfsad - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 	},
@@ -141,7 +142,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -152,7 +152,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.1.1",
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -202,14 +202,14 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["minEffectDuration"] = 30,
-			["yOff"] = 0,
 			["minDuration"] = 2,
+			["scaleText"] = true,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -252,13 +252,13 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["minDuration"] = 3,
+			["scaleText"] = true,
 			["effect"] = "pulse",
-			["yOff"] = 0,
+			["minDuration"] = 3,
 			["minEffectDuration"] = 30,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -268,4 +268,5 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
+	["version"] = "8.1.1",
 }
