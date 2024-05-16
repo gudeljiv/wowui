@@ -40,11 +40,11 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1205
-/castsequence [combat] reset=combat item:2455
+/castsequence [combat] reset=combat item:3385,item:2455
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4538
+/use [nocombat]item:4606
 /castsequence [combat] reset=combat item:118
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
