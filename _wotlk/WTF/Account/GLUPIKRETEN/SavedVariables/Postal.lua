@@ -9,13 +9,13 @@ Postal3DB = {
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Asjrdfsad - Golemagg"] = "Asjrdfsad - Golemagg",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -36,9 +36,9 @@ Postal3DB = {
 				"Battlearm|Golemagg|Horde|80|DEATHKNIGHT", -- [5]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [6]
 				"Battledog|Gehennas|Horde|1|WARRIOR", -- [7]
-				"Handrmandr|Golemagg|Horde|24|PALADIN", -- [8]
+				"Handrmandr|Golemagg|Horde|26|PALADIN", -- [8]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [9]
-				"Miqa|Golemagg|Horde|26|PRIEST", -- [10]
+				"Miqa|Golemagg|Horde|27|PRIEST", -- [10]
 				"Moolatz|Golemagg|Horde|80|DRUID", -- [11]
 				"Mxyzptlk|Golemagg|Horde|17|WARLOCK", -- [12]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [13]
@@ -69,8 +69,8 @@ Postal3DB = {
 		["Vermina - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Handrmandr|Golemagg|Horde", -- [1]
-					"Miqa|Golemagg|Horde", -- [2]
+					"Miqa|Golemagg|Horde", -- [1]
+					"Handrmandr|Golemagg|Horde", -- [2]
 				},
 			},
 		},
@@ -83,6 +83,9 @@ Postal3DB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
+			["OpenAll"] = {
+				["KeepFreeSpace"] = 2,
+			},
 			["BlackBook"] = {
 				["recent"] = {
 					"Vermina|Golemagg|Horde", -- [1]
@@ -94,9 +97,6 @@ Postal3DB = {
 					"Miqa|Golemagg|Horde", -- [7]
 					"Obsidian|Golemagg|Horde", -- [8]
 				},
-			},
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -147,6 +147,11 @@ Postal3DB = {
 			},
 		},
 		["Handrmandr - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Vermina|Golemagg|Horde", -- [1]
+				},
+			},
 		},
 		["Tadibey - Golemagg"] = {
 		},

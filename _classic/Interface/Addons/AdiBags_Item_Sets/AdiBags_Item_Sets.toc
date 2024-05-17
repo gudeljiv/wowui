@@ -1,0 +1,19 @@
+## Interface: 30403
+
+## Title: AdiBags - Item Sets
+## Notes: Adds item sets filters to AdiBags.
+
+## Version: v1.0.0
+## Author: Kimorokai
+
+## DefaultState: Enabled
+## Dependencies: AdiBags
+
+## X-Curse-Project-ID: 981618
+## X-Category: Bags & Inventory
+## X-License: MIT
+
+## X-Github: https://github.com/jshould/adibags-item-sets
+
+Database.lua
+AdiBags_Item_Sets.lua

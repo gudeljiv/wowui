@@ -209,6 +209,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
+				["BetterBags_Backpack"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
+				},
 				["WeakAuras_mYjCEmzJHiz"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
@@ -957,6 +961,10 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
+				},
+				["BetterBags"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_mSgOECeVftO"] = {
 					["Upgraded"] = true,
@@ -2949,6 +2957,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
+				["BetterBags_Bank"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
+				},
 				["ItemRack_On screen menus"] = {
 					["Disabled"] = true,
 					["Inherit"] = false,
@@ -4033,17 +4045,12 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_CIAP4LuOuQX"] = {
+				["WeakAuras_uKZNjVqB3bZ"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
 				},
 				["WeakAuras_iqTWPjGaF1P"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
-					["Inherit"] = false,
-				},
-				["WeakAuras_uKZNjVqB3bZ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
@@ -4052,6 +4059,11 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
+				},
+				["WeakAuras_CIAP4LuOuQX"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_gxCVBAwll6B"] = {
 					["Upgraded"] = true,
@@ -4289,15 +4301,15 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
+				["WeakAuras_1LhUG)CNwWU"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
+				},
 				["AdiBags"] = {
 					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
-				},
-				["WeakAuras_t6iVMaddGDD"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
-					["Inherit"] = false,
 				},
 				["WeakAuras_DQO6NNjeupK"] = {
 					["Upgraded"] = true,
@@ -4558,7 +4570,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_1LhUG)CNwWU"] = {
+				["WeakAuras_t6iVMaddGDD"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,

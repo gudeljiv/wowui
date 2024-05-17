@@ -2,7 +2,9 @@
 __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 	["includeUnsuitableEquipment"] = false,
 	["autoSell"] = false,
-	["itemIcons"] = false,
+	["exclusions"] = {
+	},
+	["excludeEquipmentSets"] = true,
 	["autoRepair"] = false,
 	["inclusions"] = {
 		["5470"] = true,
@@ -12,17 +14,11 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 		["5093"] = true,
 	},
 	["safeMode"] = false,
-	["itemTooltips"] = true,
-	["includeArtifactRelics"] = false,
-	["chatMessages"] = true,
-	["characterSpecificSettings"] = false,
-	["excludeUnboundEquipment"] = false,
-	["exclusions"] = {
-	},
-	["excludeEquipmentSets"] = true,
-	["includePoorItems"] = true,
 	["autoJunkFrame"] = false,
-	["merchantButton"] = true,
+	["includeArtifactRelics"] = false,
+	["includePoorItems"] = true,
+	["excludeUnboundEquipment"] = false,
+	["characterSpecificSettings"] = false,
 	["includeBelowItemLevel"] = {
 		["enabled"] = false,
 		["value"] = 0,

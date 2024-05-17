@@ -1,0 +1,46 @@
+tag fb5a4250ac3d11d539a2a4482e7548a0f6db3bb5 v1.2.5
+Author:	skyler-code <skylerh15@github.com>
+Date:	Wed May 15 21:04:23 2024 -0500
+
+commit d3098cc49194f5b857c0c14fad2928e4c76e8c19
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 15 21:03:41 2024 -0500
+
+    fixed highlight texture for preset dropdown button
+
+commit 93f316e9a8cb984f41d709fbc21073cd01206be6
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 15 21:00:52 2024 -0500
+
+    updated gitignore
+
+commit 07ce99dfb8c22792031911ce2a226e35043bf87e
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 8 02:19:28 2024 -0500
+
+    GetItemInfo is now in C_Item namespace
+
+commit 8db833a12b26a02a2dc8c32b2f669d60d45b8d56
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 8 01:24:58 2024 -0500
+
+    function that actually documents whats happening instead of hardcoded table
+
+commit cf1d0b3b4a8d940c0157227faff57385d432a488
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 8 01:10:58 2024 -0500
+
+    move clearreforge function
+
+commit ef7aefa56e8b5d6abeb253fdc38853370ab32093
+Author: EK <eke00372@gmail.com>
+Date:   Tue May 7 16:10:58 2024 +0800
+
+    Update zhTW/zhCN
+
+commit ef7aefa56e8b5d6abeb253fdc38853370ab32093
+Author: EK <eke00372@gmail.com>
+Date:   Tue May 7 16:10:58 2024 +0800
+
+    Update zhTW/zhCN
+

@@ -24,10 +24,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "Troll",
 			["length"] = 30186,
-			["version"] = 1,
 			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Darkspear Isle",
-			["menuIndex"] = 2,
 			["name"] = "01-06 Darkspear Isle",
+			["menuIndex"] = 2,
+			["version"] = 1,
 			["subweight"] = "10000",
 			["submenuIndex"] = 1,
 			["displayname"] = "1-6 Darkspear Isle",
@@ -70,12 +70,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
+			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["length"] = 65074,
-			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 		},
 		["+RestedXP Northrend Daily Quests||The Kalu'ak Daily Quests"] = {
@@ -98,12 +98,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
+			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "3.1 - Collectable Items",
 			["length"] = 33724,
-			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "3.1 - Collectable Items",
 		},
 		["RXP Cataclysm 1-80 (H)||6-10 Durotar"] = {
@@ -115,10 +115,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "Orc/Troll",
 			["length"] = 49823,
-			["version"] = 1,
 			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Durotar",
-			["menuIndex"] = 2,
 			["name"] = "06-10 Durotar",
+			["menuIndex"] = 2,
+			["version"] = 1,
 			["subweight"] = "10000",
 			["submenuIndex"] = 2,
 			["displayname"] = "6-10 Durotar",
@@ -180,18 +180,18 @@ RXPCData = {
 			["wotlk"] = "",
 			["displayname"] = "The Sons of Hodir Daily Quests Route",
 		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
-			["guideId"] = 3722581794,
+		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
+			["guideId"] = 2576357947,
 			["subgroup"] = "Faction Daily Quests",
 			["group"] = "+RestedXP Northrend Daily Quests",
 			["cata"] = "",
 			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Daily Quests Route",
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Icecrown Gunship Unlock Daily Quests",
 			["farm"] = true,
-			["name"] = "Ebon Blade Daily Quests Route",
-			["length"] = 5934,
+			["name"] = "Icecrown Gunship Unlock Daily Quests",
+			["length"] = 51510,
 			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Daily Quests Route",
+			["displayname"] = "Icecrown Gunship Unlock Daily Quests",
 		},
 		["RestedXP Cataclysm Preparation||4.1 - 25 Questlog prep - Dungeons and Raids"] = {
 			["guideId"] = 4042332726,
@@ -199,15 +199,13 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
+			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 			["length"] = 11950,
-			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
-		},
-		["enableGroupQuests"] = {
 		},
 		["+RestedXP Northrend Daily Quests||Fishing"] = {
 			["guideId"] = 976752519,
@@ -246,20 +244,7 @@ RXPCData = {
 			["Alliance"] = {
 			},
 		},
-		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
-			["guideId"] = 3206093888,
-			["subgroup"] = "Preparation guide",
-			["next"] = "2.3 - 25 Questlog prep - Icecrown",
-			["group"] = "RestedXP Cataclysm Preparation",
-			["cata"] = "",
-			["include"] = "QuestDB",
-			["version"] = 7,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["wotlk"] = "",
-			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["length"] = 65478,
-			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+		["enableGroupQuests"] = {
 		},
 		["RestedXP Cataclysm Preparation||1.2 - Instant quest turn ins - Icecrown & Sholazar Basin"] = {
 			["guideId"] = 2187468624,
@@ -268,26 +253,26 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
+			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["length"] = 40743,
-			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 		},
-		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
-			["guideId"] = 2576357947,
+		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
+			["guideId"] = 4116256639,
 			["subgroup"] = "Faction Daily Quests",
 			["group"] = "+RestedXP Northrend Daily Quests",
 			["cata"] = "",
 			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Icecrown Gunship Unlock Daily Quests",
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
 			["farm"] = true,
-			["name"] = "Icecrown Gunship Unlock Daily Quests",
-			["length"] = 51510,
+			["name"] = "Ebon Blade Unlock Daily Quests",
+			["length"] = 16412,
 			["wotlk"] = "",
-			["displayname"] = "Icecrown Gunship Unlock Daily Quests",
+			["displayname"] = "Ebon Blade Unlock Daily Quests",
 		},
 		["+RestedXP Northrend Daily Quests||Jewelcrafting"] = {
 			["guideId"] = 2685800964,
@@ -309,26 +294,13 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
+			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.3 - 25 Questlog prep - Icecrown",
 			["length"] = 180148,
-			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
-		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
-			["guideId"] = 4116256639,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
-			["cata"] = "",
-			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
-			["farm"] = true,
-			["name"] = "Ebon Blade Unlock Daily Quests",
-			["length"] = 16412,
-			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Unlock Daily Quests",
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Mulgore"] = {
 			["guideId"] = 3243117282,
@@ -368,6 +340,34 @@ RXPCData = {
 		},
 		["dungeonGuides"] = {
 		},
+		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
+			["guideId"] = 3722581794,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
+			["cata"] = "",
+			["version"] = 1,
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Daily Quests Route",
+			["farm"] = true,
+			["name"] = "Ebon Blade Daily Quests Route",
+			["length"] = 5934,
+			["wotlk"] = "",
+			["displayname"] = "Ebon Blade Daily Quests Route",
+		},
+		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
+			["guideId"] = 3206093888,
+			["subgroup"] = "Preparation guide",
+			["next"] = "2.3 - 25 Questlog prep - Icecrown",
+			["group"] = "RestedXP Cataclysm Preparation",
+			["cata"] = "",
+			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["wotlk"] = "",
+			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["length"] = 65478,
+			["version"] = 7,
+			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+		},
 		["RXP Cataclysm 1-80 (H)||6-10 Eversong Woods"] = {
 			["guideId"] = 572198316,
 			["defaultfor"] = "BloodElf/Undead",
@@ -393,12 +393,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 			["length"] = 35938,
-			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Tirisfal Glades"] = {
@@ -679,8 +679,8 @@ RXPCData = {
 		10445, -- [230]
 		12314, -- [231]
 		[245] = 13349,
-		[257] = 4684,
 		[246] = 13283,
+		[257] = 4684,
 		[250] = 12954,
 		[247] = 13361,
 		[244] = 12889,
@@ -715,6 +715,30 @@ RXPCTrackingData = {
 					["quests"] = {
 					},
 				}, -- [1]
+				[27] = {
+					["groupExperience"] = 9521,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Stormwind Stockade"] = {
+							["xp"] = 9521,
+							["count"] = 30,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 17,
+							["day"] = 0,
+							["month"] = 5,
+							["minute"] = 38,
+							["year"] = 2024,
+							["hour"] = 9,
+							["weekday"] = 6,
+						},
+						["started"] = 82800,
+					},
+					["quests"] = {
+					},
+				},
 				[24] = {
 					["groupExperience"] = 24327,
 					["deaths"] = 0,
@@ -799,6 +823,47 @@ RXPCTrackingData = {
 						},
 					},
 				},
+				[26] = {
+					["groupExperience"] = 25051,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Shadowfang Keep"] = {
+							["xp"] = 10745,
+							["count"] = 34,
+						},
+						["Stormwind Stockade"] = {
+							["xp"] = 12619,
+							["count"] = 57,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 16,
+							["day"] = 0,
+							["month"] = 5,
+							["weekday"] = 5,
+							["year"] = 2024,
+							["hour"] = 14,
+							["minute"] = 20,
+						},
+						["finished"] = 82799,
+						["dateFinished"] = {
+							["monthDay"] = 17,
+							["day"] = 0,
+							["month"] = 5,
+							["minute"] = 38,
+							["year"] = 2024,
+							["hour"] = 9,
+							["weekday"] = 6,
+						},
+						["started"] = 79473,
+					},
+					["quests"] = {
+						["Shadowfang Keep"] = {
+							[27998] = 1687,
+						},
+					},
+				},
 				[23] = {
 					["groupExperience"] = 15839,
 					["deaths"] = 0,
@@ -828,37 +893,6 @@ RXPCTrackingData = {
 					["quests"] = {
 					},
 				},
-				[26] = {
-					["groupExperience"] = 24529,
-					["deaths"] = 0,
-					["mobs"] = {
-						["Shadowfang Keep"] = {
-							["xp"] = 10745,
-							["count"] = 34,
-						},
-						["Stormwind Stockade"] = {
-							["xp"] = 12097,
-							["count"] = 47,
-						},
-					},
-					["timestamp"] = {
-						["dateStarted"] = {
-							["monthDay"] = 16,
-							["day"] = 0,
-							["month"] = 5,
-							["weekday"] = 5,
-							["year"] = 2024,
-							["hour"] = 14,
-							["minute"] = 20,
-						},
-						["started"] = 79473,
-					},
-					["quests"] = {
-						["Shadowfang Keep"] = {
-							[27998] = 1687,
-						},
-					},
-				},
 			},
 			["trackedGuid"] = "Player-4465-03BD78C7",
 		},
@@ -871,14 +905,6 @@ RXPCComms = {
 	["profiles"] = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
-				["Luschi"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 966050.568,
-					["xpPercentage"] = 78,
-					["level"] = 15,
-					["timePlayed"] = 28.38699999998789,
-					["class"] = "WARRIOR",
-				},
 				["Berant"] = {
 					["timePlayed"] = 1341.186999999976,
 					["class"] = "PALADIN",
@@ -890,32 +916,17 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
-					["class"] = "MAGE",
 					["level"] = 9,
+					["class"] = "MAGE",
 					["lastSeen"] = 783331.454,
-					["xpPercentage"] = 65,
+					["timePlayed"] = 86.10600000002887,
 					["isRxp"] = true,
 					["xp"] = 54,
-					["timePlayed"] = 86.10600000002887,
+					["xpPercentage"] = 65,
 				},
-				["Vánátor"] = {
-					["timePlayed"] = 829.6849999999395,
-					["class"] = "HUNTER",
-					["xp"] = 910,
-				},
-				["Agnax"] = {
-					["timePlayed"] = 311.1930000000284,
-					["class"] = "WARRIOR",
-					["xp"] = 28,
-				},
-				["Dulnak"] = {
-					["timePlayed"] = 829.6849999999395,
-					["class"] = "HUNTER",
-					["xp"] = 910,
-				},
-				["Iloveschoki"] = {
+				["Onkelabdi"] = {
 					["timePlayed"] = 242.9139999999898,
-					["class"] = "WARRIOR",
+					["class"] = "PALADIN",
 					["xp"] = 48,
 				},
 				["Yaytokgil"] = {
@@ -923,50 +934,20 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["xp"] = 14,
 				},
-				["Passable"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "WARLOCK",
-					["xp"] = 170,
-				},
 				["Yaytokgill"] = {
 					["timePlayed"] = 460.3209999999963,
 					["class"] = "SHAMAN",
 					["xp"] = 14,
-				},
-				["Knyfus"] = {
-					["timePlayed"] = 311.1930000000284,
-					["class"] = "ROGUE",
-					["xp"] = 28,
 				},
 				["Calren"] = {
 					["timePlayed"] = 829.6849999999395,
 					["class"] = "PALADIN",
 					["xp"] = 910,
 				},
-				["Stormbrake"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "SHAMAN",
-					["xp"] = 170,
-				},
-				["Qedqeda"] = {
-					["timePlayed"] = 1341.186999999976,
-					["class"] = "DRUID",
-					["xp"] = 14,
-				},
-				["Onkelabdi"] = {
-					["timePlayed"] = 242.9139999999898,
-					["class"] = "PALADIN",
-					["xp"] = 48,
-				},
-				["Bazûcá"] = {
-					["timePlayed"] = 1338.930999999982,
-					["class"] = "HUNTER",
-					["xp"] = 252,
-				},
-				["Bananatree"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "DRUID",
-					["xp"] = 170,
+				["Alriem"] = {
+					["timePlayed"] = 725.1289999999572,
+					["class"] = "WARLOCK",
+					["xp"] = 23,
 				},
 				["Dexteriu"] = {
 					["timePlayed"] = 429.8269999999902,
@@ -978,39 +959,112 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 43,
 				},
-				["Enore"] = {
+				["Imaginename"] = {
+					["timePlayed"] = 429.8269999999902,
+					["class"] = "HUNTER",
+					["xp"] = 48,
+				},
+				["Swaghildina"] = {
+					["timePlayed"] = 311.1930000000284,
+					["class"] = "MAGE",
+					["xp"] = 28,
+				},
+				["Tyloù"] = {
 					["timePlayed"] = 1338.930999999982,
-					["class"] = "PALADIN",
+					["class"] = "MAGE",
 					["xp"] = 252,
 				},
-				["Acidicus"] = {
-					["timePlayed"] = 311.1930000000284,
-					["class"] = "PRIEST",
-					["xp"] = 28,
+				["Luschi"] = {
+					["level"] = 15,
+					["lastSeen"] = 966050.568,
+					["xpPercentage"] = 78,
+					["class"] = "WARRIOR",
+					["timePlayed"] = 28.38699999998789,
+					["isRxp"] = true,
+				},
+				["Satänäs"] = {
+					["timePlayed"] = 186.2849999999162,
+					["class"] = "WARLOCK",
+					["xp"] = 32,
 				},
 				["Mikestera"] = {
 					["timePlayed"] = 1338.930999999982,
 					["class"] = "PRIEST",
 					["xp"] = 252,
 				},
-				["Imaginename"] = {
-					["timePlayed"] = 429.8269999999902,
+				["Vánátor"] = {
+					["timePlayed"] = 829.6849999999395,
 					["class"] = "HUNTER",
+					["xp"] = 910,
+				},
+				["Qedqeda"] = {
+					["timePlayed"] = 1341.186999999976,
+					["class"] = "DRUID",
+					["xp"] = 14,
+				},
+				["Stormbrake"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "SHAMAN",
+					["xp"] = 170,
+				},
+				["Zlima"] = {
+					["timePlayed"] = 186.2849999999162,
+					["class"] = "PALADIN",
+					["xp"] = 32,
+				},
+				["Bazûcá"] = {
+					["timePlayed"] = 1338.930999999982,
+					["class"] = "HUNTER",
+					["xp"] = 252,
+				},
+				["Iloveschoki"] = {
+					["timePlayed"] = 242.9139999999898,
+					["class"] = "WARRIOR",
 					["xp"] = 48,
+				},
+				["Enore"] = {
+					["timePlayed"] = 1338.930999999982,
+					["class"] = "PALADIN",
+					["xp"] = 252,
+				},
+				["Pomdel"] = {
+					["timePlayed"] = 186.2849999999162,
+					["class"] = "WARRIOR",
+					["xp"] = 32,
+				},
+				["Passable"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "WARLOCK",
+					["xp"] = 170,
+				},
+				["Acidicus"] = {
+					["timePlayed"] = 311.1930000000284,
+					["class"] = "PRIEST",
+					["xp"] = 28,
+				},
+				["Agnax"] = {
+					["timePlayed"] = 311.1930000000284,
+					["class"] = "WARRIOR",
+					["xp"] = 28,
+				},
+				["Dulnak"] = {
+					["timePlayed"] = 829.6849999999395,
+					["class"] = "HUNTER",
+					["xp"] = 910,
 				},
 				["Biio"] = {
 					["timePlayed"] = 829.6849999999395,
 					["class"] = "SHAMAN",
 					["xp"] = 910,
 				},
-				["Alriem"] = {
-					["timePlayed"] = 725.1289999999572,
-					["class"] = "WARLOCK",
-					["xp"] = 23,
+				["Bananatree"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "DRUID",
+					["xp"] = 170,
 				},
-				["Swaghildina"] = {
+				["Knyfus"] = {
 					["timePlayed"] = 311.1930000000284,
-					["class"] = "MAGE",
+					["class"] = "ROGUE",
 					["xp"] = 28,
 				},
 				["Phatkhan"] = {
@@ -1018,10 +1072,10 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 53,
 				},
-				["Tyloù"] = {
-					["timePlayed"] = 1338.930999999982,
-					["class"] = "MAGE",
-					["xp"] = 252,
+				["Thalah"] = {
+					["timePlayed"] = 186.2849999999162,
+					["class"] = "WARRIOR",
+					["xp"] = 32,
 				},
 				["Nerfholy"] = {
 					["timePlayed"] = 3177.739999999991,

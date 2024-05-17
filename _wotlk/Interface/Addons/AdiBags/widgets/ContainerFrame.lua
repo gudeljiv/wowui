@@ -99,7 +99,7 @@ local SimpleLayeredRegion = addon:GetClass("SimpleLayeredRegion")
 local bagSlots = {}
 
 function containerProto:OnCreate(name, isBank, bagObject)
-	
+
 	self:CreateBeautyBorder(8)
 
 	self:SetParent(UIParent)

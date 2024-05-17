@@ -1239,8 +1239,6 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 			end
 
 		end
-
-
 		if showButtonMenu then
 			table.remove(ItemRack.Menu)
 		else

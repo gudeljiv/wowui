@@ -35,7 +35,7 @@ local HandleUnit = function(unit)
 
 		-- PALADIN INTERRUPT
 		if (xVermin.Class == 'PALADIN') then
-			if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
+			if select(2, GetSpellCooldown('Rebuke')) == 0 and CheckInteractDistance(unit, 3) then
 				HandleRotationFrame(true)
 			end
 		end

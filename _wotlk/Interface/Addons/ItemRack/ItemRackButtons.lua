@@ -113,21 +113,21 @@ end
 
 function ItemRack.AddButton(id)
 	ItemRackUser.Buttons[id] = {}
-	local button = _G["ItemRackButton"..id]
+	local button = _G['ItemRackButton' .. id]
 	button:ClearAllPoints()
 	if ItemRack.NewAnchor and ItemRackUser.Buttons[ItemRack.NewAnchor] then
-		ItemRackUser.Buttons[id].Side = "LEFT"
+		ItemRackUser.Buttons[id].Side = 'LEFT'
 		ItemRackUser.Buttons[id].DockTo = ItemRack.NewAnchor
 		local dockinfo = ItemRack.DockInfo[ItemRackUser.Buttons[id].Side]
-		button:SetPoint("LEFT","ItemRackButton"..ItemRack.NewAnchor,"RIGHT",dockinfo.xoff*(ItemRackUser.ButtonSpacing or 4),dockinfo.yoff*(ItemRackUser.ButtonSpacing or 4))
+		button:SetPoint('LEFT', 'ItemRackButton' .. ItemRack.NewAnchor, 'RIGHT', dockinfo.xoff * (ItemRackUser.ButtonSpacing or 4), dockinfo.yoff * (ItemRackUser.ButtonSpacing or 4))
 	else
-		button:SetPoint("CENTER",UIParent,"CENTER")
+		button:SetPoint('CENTER', UIParent, 'CENTER')
 	end
 	ItemRack.NewAnchor = id
-	_G["ItemRackButton"..id.."Icon"]:SetTexture(ItemRack.GetTextureBySlot(id))
+	_G['ItemRackButton' .. id .. 'Icon']:SetTexture(ItemRack.GetTextureBySlot(id))
 	button:Show()
 	ItemRack.UpdateButtonCooldowns()
-	if id==20 then
+	if id == 20 then
 		ItemRack.UpdateCurrentSet()
 		if ItemRack.ReflectEventsRunning then
 			ItemRack.ReflectEventsRunning()
@@ -170,8 +170,6 @@ function ItemRack.AddButton(id)
 			button:SetBeautyBorderColor(1, 1, 1)
 		end
 	end
-
-
 end
 
 function ItemRack.RemoveButton(id)
@@ -399,16 +397,16 @@ end
 -- updates icons for equipment slots by grabbing the texture directly from the player's worn items
 function ItemRack.UpdateButtons()
 	for i in pairs(ItemRackUser.Buttons) do
-		if i<20 then
-			_G["ItemRackButton"..i.."Icon"]:SetTexture(ItemRack.GetTextureBySlot(i))
+		if i < 20 then
+			_G['ItemRackButton' .. i .. 'Icon']:SetTexture(ItemRack.GetTextureBySlot(i))
 		end
 		--ranged ammo is now infinite, so the below ammo count updater has been commented out
-		if i==0 then --ranged "ammo" slot
-			local baseID = ItemRack.GetIRString(ItemRack.GetID(0),true) --get the ItemRack-style ID for the ammo item in inventory slot 0 (ranged ammo) and convert it to just its baseID
-			if baseID~=0 then -- verify that we properly have the ammo item's baseID
+		if i == 0 then --ranged "ammo" slot
+			local baseID = ItemRack.GetIRString(ItemRack.GetID(0), true) --get the ItemRack-style ID for the ammo item in inventory slot 0 (ranged ammo) and convert it to just its baseID
+			if baseID ~= 0 then -- verify that we properly have the ammo item's baseID
 				ItemRackButton0Count:SetText(GetItemCount(baseID)) -- write the ammo count on top of the slot
 			else
-				ItemRackButton0Count:SetText("") -- clear the ammo count since there is no ammo in the slot
+				ItemRackButton0Count:SetText('') -- clear the ammo count since there is no ammo in the slot
 			end
 		end
 
@@ -446,8 +444,6 @@ function ItemRack.UpdateButtons()
 			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
 			button:SetBeautyBorderColor(1, 1, 1)
 		end
-
-		
 	end
 	ItemRack.UpdateCurrentSet()
 	ItemRack.UpdateButtonCooldowns()
