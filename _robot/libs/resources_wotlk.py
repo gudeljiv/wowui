@@ -215,10 +215,19 @@ data = {
     },
     "priest": {
         "main": [
+            # disc
             {"name": "cure disease", "type": "GetSpellTexture", "id": 528, "key": "t"},
             {"name": "dispel magic", "type": "GetSpellTexture", "id": 527, "key": "t", "modifier": "lshift"},
             {"name": "smite", "type": "GetSpellTexture", "id": 585, "key": "8"},
             {"name": "holy fire", "type": "GetSpellTexture", "id": 14914, "key": "7"},
+            {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
+            # shadow
+            {"name": "shadow word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
+            {"name": "shadow word death", "type": "GetSpellTexture", "id": 32379, "key": "8"},
+            {"name": "devouring plague", "type": "GetSpellTexture", "id": 2944, "key": "9"},
+            {"name": "vampiric touch", "type": "GetSpellTexture", "id": 34914, "key": "3"},
+            {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},
+            {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
             # ne treba za sada
             # {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             # {"name": "renew", "type": "GetSpellTexture", "id": 139, "key": "g"},
@@ -228,12 +237,7 @@ data = {
             # {"name": "flash heal", "type": "GetSpellTexture", "id": 2061, "key": "2", "modifier": "lshift"},
             # rest
             # {"name": "shoot", "type": "GetSpellTexture", "id": 74178, "key": "1"},
-            # {"name": "power word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
-            # {"name": "devouring plague", "type": "GetSpellTexture", "id": 2944, "key": "9"},
             # {"name": "power word pain mouseover", "type": "GetSpellTexture", "id": 47948, "key": "1", "modifier": "lshift"},
-            # {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},
-            # {"name": "heal", "type": "GetSpellTexture", "id": 2054, "key": "e"},
-            # {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
             # {"name": "holy nova", "type": "GetSpellTexture", "id": 15237, "key": "8"},
         ],
         "secondary": [],

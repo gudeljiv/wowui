@@ -40,12 +40,12 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1708
-/castsequence [combat] reset=combat 
+/castsequence [combat] reset=combat item:3385
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3771
-/castsequence [combat] reset=combat item:1710
+/castsequence [combat] reset=combat item:929
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -54,7 +54,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:929
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -63,7 +63,10 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Bloodscalp Witch Doctor
+/targetexact Bloodscalp Headhunter
+/targetexact Bloodscalp Berserker
+/targetlasttarget [dead]
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip

@@ -1,4 +1,3 @@
-AppKit
 mss
 numpy
 opencv_python

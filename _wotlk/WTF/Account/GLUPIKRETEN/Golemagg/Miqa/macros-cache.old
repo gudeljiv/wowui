@@ -18,6 +18,11 @@ VER 3 0000000001000004 "heal" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Heal
 END
+VER 3 000000000100000D "hfire" "134400"
+#showtooltip Holy Fire
+/cast Holy Fire
+/cast Berserking
+END
 VER 3 0000000001000007 "mb" "134400"
 #showtooltip
 /startattack
@@ -37,8 +42,7 @@ VER 3 0000000001000005 "renew" "134400"
 /cast [@mouseover,exists,help][@target,exists,help][] Renew
 END
 VER 3 0000000001000001 "smite" "134400"
-#showtooltip
-/startattack
+#showtooltip Smite
 /cast Smite
 /cast Berserking
 END
