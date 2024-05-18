@@ -63,9 +63,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Bloodscalp Witch Doctor
-/targetexact Bloodscalp Headhunter
-/targetexact Bloodscalp Berserker
+/targetexact Jungle Stalker
 /targetlasttarget [dead]
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"

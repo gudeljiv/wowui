@@ -161,8 +161,6 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
-			["buffs"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -172,6 +170,8 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
+			},
+			["buffs"] = {
 			},
 			["itemsLocked"] = {
 				[8] = false,

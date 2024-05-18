@@ -223,7 +223,7 @@ data = {
             {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             # shadow
             {"name": "shadow word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
-            {"name": "shadow word death", "type": "GetSpellTexture", "id": 32379, "key": "8"},
+            {"name": "shadow word death", "type": "GetSpellTexture", "id": 32379, "key": "e"},
             {"name": "devouring plague", "type": "GetSpellTexture", "id": 2944, "key": "9"},
             {"name": "vampiric touch", "type": "GetSpellTexture", "id": 34914, "key": "3"},
             {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},

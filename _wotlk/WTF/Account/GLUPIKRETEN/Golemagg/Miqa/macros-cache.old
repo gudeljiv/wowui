@@ -12,6 +12,7 @@ VER 3 000000000100000A "flash" "134400"
 END
 VER 3 000000000100000B "flay" "134400"
 #showtooltip Mind Flay
+/startattack
 /use [nochanneling:Mind Flay] Mind Flay
 END
 VER 3 0000000001000004 "heal" "134400"
@@ -21,13 +22,11 @@ END
 VER 3 000000000100000D "hfire" "134400"
 #showtooltip Holy Fire
 /cast Holy Fire
-/cast Berserking
 END
 VER 3 0000000001000007 "mb" "134400"
 #showtooltip
 /startattack
 /cast Mind Blast
-/cast Berserking
 END
 VER 3 000000000100000C "penance" "134400"
 #showtooltip
@@ -44,7 +43,6 @@ END
 VER 3 0000000001000001 "smite" "134400"
 #showtooltip Smite
 /cast Smite
-/cast Berserking
 END
 VER 3 0000000001000006 "swp" "134400"
 #showtooltip
