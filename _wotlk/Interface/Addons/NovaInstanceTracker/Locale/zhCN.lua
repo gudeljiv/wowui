@@ -301,3 +301,18 @@ L["instanceStatsOutputRunsPerLevelDesc"] = "Show how many runs it will take per 
 
 L["instanceStatsOutputRunsNextLevelTitle"] = "Runs Until Next Level";
 L["instanceStatsOutputRunsNextLevelDesc"] = "Show how many more runs you need until your next level?";
+
+L["Blacksmithing"] = "锻造";
+L["Leatherworking"] = "制皮";
+L["Alchemy"] = "炼金术";
+L["Herbalism"] = "草药学";
+L["Cooking"] = "烹饪";
+L["Mining"] = "采矿";
+L["Tailoring"] = "裁缝";
+L["Engineering"] = "工程学";
+L["Enchanting"] = "附魔";
+L["Fishing"] = "钓鱼";
+L["Skinning"] = "剥皮";
+L["Jewelcrafting"] = "珠宝加工";
+L["Inscription"] = "铭文";
+L["First Aid"] = "急救";

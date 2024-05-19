@@ -527,3 +527,25 @@ L["Sep"] = "Sep";
 L["Oct"] = "Oct";
 L["Nov"] = "Nov";
 L["Dec"] = "Dec";
+
+L["Blacksmithing"] = "Blacksmithing";
+L["Leatherworking"] = "Leatherworking";
+L["Alchemy"] = "Alchemy";
+L["Herbalism"] = "Herbalism";
+L["Cooking"] = "Cooking";
+L["Mining"] = "Mining";
+L["Tailoring"] = "Tailoring";
+L["Engineering"] = "Engineering";
+L["Enchanting"] = "Enchanting";
+L["Fishing"] = "Fishing";
+L["Skinning"] = "Skinning";
+L["Jewelcrafting"] = "Jewelcrafting";
+L["Inscription"] = "Inscription";
+L["First Aid"] = "First Aid"
+
+L["Wrath Cooking Daily"] = "Wrath Cooking Daily";
+L["Wrath Fishing Daily"] = "Wrath Fishing Daily";
+L["Wrath Jewelcrafting Daily"] = "Wrath Jewelcrafting Daily";
+L["Cata Cooking Daily"] = "Cata Cooking Daily";
+L["Cata Fishing Daily"] = "Cata Fishing Daily";
+L["Cata Jewelcrafting Daily"] = "Cata Jewelcrafting Daily";

@@ -272,7 +272,7 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.finishedBy] = {{11056}},
         },
         [5531] = {
-            [questKeys.nextQuestInChain] = nil,
+            [questKeys.nextQuestInChain] = 0,
         },
         [5721] = {
             [questKeys.extraObjectives] = {{{[zoneIDs.EASTERN_PLAGUELANDS]={{35.01,84.05}}}, Questie.ICON_TYPE_EVENT, l10n("Place the Relic Bundle in the Town Square."),}},
@@ -1941,6 +1941,9 @@ function QuestieWotlkQuestFixes:Load()
         },
         [12506] = {
             [questKeys.triggerEnd] = {"Main building at the Altar of Sseratus investigated.",{[zoneIDs.ZUL_DRAK]={{40.32,39.46,},},},},
+        },
+        [12507] = { -- Strange Mojo
+            [questKeys.startedBy] = {{28034,28035,28036},nil,{38321}},
         },
         [12509] = {
             [questKeys.parentQuest] = 12501,

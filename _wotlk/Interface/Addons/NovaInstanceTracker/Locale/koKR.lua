@@ -374,3 +374,18 @@ L["All Instance log data has been deleted."] = "모든 인스턴스 로그 데�
 
 L["resetAllInstancesTitle"] = "인스턴스 데이터 초기화";
 L["resetAllInstancesDesc"] = "모든 인스턴스 데이터가 초기화되고 로그에서 모든 것이 제거됩니다. 거래 기록을 초기화하지 않습니다.";
+
+L["Blacksmithing"] = "대장기술";
+L["Leatherworking"] = "가죽세공";
+L["Alchemy"] = "연금술";
+L["Herbalism"] = "약초채집";
+L["Cooking"] = "요리";
+L["Mining"] = "채광";
+L["Tailoring"] = "재봉술";
+L["Engineering"] = "기계공학";
+L["Enchanting"] = "마법부여";
+L["Fishing"] = "낚시";
+L["Skinning"] = "무두질";
+L["Jewelcrafting"] = "보석세공";
+L["Inscription"] = "주문각인";
+L["First Aid"] = "응급치료";

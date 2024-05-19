@@ -301,3 +301,18 @@ L["instanceStatsOutputRunsPerLevelDesc"] = "Show how many runs it will take per 
 
 L["instanceStatsOutputRunsNextLevelTitle"] = "Runs Until Next Level";
 L["instanceStatsOutputRunsNextLevelDesc"] = "Show how many more runs you need until your next level?";
+
+L["Blacksmithing"] = "Кузнечное дело";
+L["Leatherworking"] = "Кожевничество";
+L["Alchemy"] = "Алхимия";
+L["Herbalism"] = "Травничество";
+L["Cooking"] = "Кулинария";
+L["Mining"] = "Горное дело";
+L["Tailoring"] = "Портняжное дело";
+L["Engineering"] = "Инженерное дело";
+L["Enchanting"] = "Наложение чар";
+L["Fishing"] = "Рыбная ловля";
+L["Skinning"] = "Снятие шкур";
+L["Jewelcrafting"] = "Ювелирное дело";
+L["Inscription"] = "Начертание";
+L["First Aid"] = "Первая помощь";

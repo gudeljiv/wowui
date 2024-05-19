@@ -1,0 +1,10 @@
+lightweight tag 5b86bd61d9fb05aeafd8c0325f0f6ac1b6a959be v4.0.1
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Mon May 6 08:56:41 2024 +0200
+
+commit 5b86bd61d9fb05aeafd8c0325f0f6ac1b6a959be
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Mon May 6 08:55:42 2024 +0200
+
+    cata interface version
+

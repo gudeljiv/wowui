@@ -49,7 +49,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NIT.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
-if (NIT.expansionNum < 4) then
+if (NIT.expansionNum < 10) then
 	NIT.classic = true;
 end
 NIT.latestRemoteVersion = version;
@@ -96,7 +96,7 @@ function NIT:OnInitialize()
 	self:RegisterComm(self.commPrefix);
 	self:buildDatabase();
 	self:doOnceAfterWeeklyReset();
-	self:resetWeeklyData();
+	self:resetWeeklyAndDailyData();
 	self:updateWeeklyResetTime();
 	self.chatColor = "|cff" .. self:RGBToHex(self.db.global.chatColorR, self.db.global.chatColorG, self.db.global.chatColorB);
 	self.mergeColor = "|cff" .. self:RGBToHex(self.db.global.mergeColorR, self.db.global.mergeColorG, self.db.global.mergeColorB);
@@ -1658,7 +1658,7 @@ function NIT:openInstanceLogFrame()
 		NITInstanceFrame:Hide();
 	else
 		NIT:doOnceAfterWeeklyReset();
-		NIT:resetWeeklyData();
+		NIT:resetWeeklyAndDailyData();
 		NIT:updateWeeklyResetTime();
 		if (not _G["titleNITInstanceLine"]) then
 			NIT:createTitleInstanceLineFrame();
@@ -4070,7 +4070,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 								or data.classEnglish == "HUNTER") then
 					local foundItems;
 					local itemString = "\n\n|cFFFFFF00" .. L["items"] .. "|r";
-					if (data.classEnglish == "HUNTER" and data.ammo and not NIT.isRetail) then
+					if (data.classEnglish == "HUNTER" and data.ammo and NIT.expansionNum < 4) then
 						local ammoTypeString = "";
 						if (data.ammoType) then
 							local itemName, _, itemRarity, _, _, _, _, _, _, itemTexture = GetItemInfo(data.ammoType);
@@ -4184,9 +4184,35 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					foundprofs = true;
 				end
 			else
+				local short = {
+					["Transmutation Master"] = "Transmutation",
+					--["Elixir Master"] = "Elixir",
+					--["Potion Master"] = "Potion",
+					["Goblin Engineer"] = "Goblin",
+					["Gnomish Engineer"] = "Gnomish",
+					["Mooncloth Tailoring"] = "Mooncloth",
+					["Spellfire Tailoring"] = "Spellfire",
+					["Shadoweave Tailoring"] = "Shadowweave",
+					--["Armorsmith"] = "",
+					--["Weaponsmith"] = "",
+					["Master Swordsmith"] = "Swordsmith",
+					["Master Hammersmith"] = "Hammersmith",
+					["Master Axesmith"] = "Axesmith",
+					["Dragonscale Leatherworking"] = "Dragonscale",
+					["Elemental Leatherworking"] = "Elemental",
+					["Tribal Leatherworking"] = "Tribal",
+				};
 				if (data.prof1 and data.prof1 ~= "none") then
+					local specString = "";
+					if (data.prof1SpecName) then
+						local shortName;
+						if (short[data.prof1SpecName]) then
+							shortName = short[data.prof1SpecName];
+						end
+						specString = " |cFFFFFF00(" .. (shortName or data.prof1SpecName) .. ")|r";
+					end
 					text = text .. "\n  " .. color1 .. data.prof1 .. ":|r " .. color2 .. (data.profSkill1 or "") .. "|r"
-							.. color1 .. "/|r" .. color2 .. (data.profSkillMax1 or "") .. "|r";
+							.. color1 .. "/|r" .. color2 .. (data.profSkillMax1 or "") .. "|r" .. specString;
 					foundprofs = true;
 					--[[for k, v in pairs(cooldowns) do
 						if (v.prof == data.prof11) then
@@ -4196,8 +4222,16 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					end]]
 				end
 				if (data.prof2 and data.prof2 ~= "none") then
+					local specString = "";
+					if (data.prof2SpecName) then
+						local shortName;
+						if (short[data.prof1SpecName]) then
+							shortName = short[data.prof2SpecName];
+						end
+						specString = " |cFFFFFF00(" .. (shortName or data.prof2SpecName) .. ")|r";
+					end
 					text = text .. "\n  " .. color1 .. data.prof2 .. ":|r " .. color2 .. (data.profSkill2  or "") .. "|r"
-							.. color1 .. "/|r" .. color2 .. (data.profSkillMax2 or "") .. "|r";
+							.. color1 .. "/|r" .. color2 .. (data.profSkillMax2 or "") .. "|r" .. specString;
 					foundprofs = true;
 					--[[for k, v in pairs(cooldowns) do
 						if (v.prof == data.prof2) then
@@ -4252,6 +4286,10 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					texture = "|TInterface\\TargetingFrame\\UI-PVP-Alliance:12:12:0:0:64:64:7:36:1:36|t";
 				end
 				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Honor"] .. ":|r " .. color2 .. NIT:commaValue(data.honor) .. "|r";
+			end
+			if (data.conq and data.conq > 0) then
+				local texture = "|TInterface\\Icons\\Pvpcurrency-conquest-horde:12:12:-1:0:64:64:7:36:1:36|t"
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Conquest Points"] .. ":|r " .. color2 .. NIT:commaValue(data.conq) .. "|r";
 			end
 			if (data.arenaPoints and data.arenaPoints > 0) then
 				local texture = "|T4006481:12:12|t";
@@ -4385,13 +4423,19 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				end
 			end
 			
-			if (data.quests and next(data.quests)) then
+			if ((data.quests and next(data.quests)) or (data.dungWeeklies and next(data.dungWeeklies))) then
 				local header = "\n\n|cFFFFFF00" .. L["weeklyQuests"] .. "|r";
 				local foundQuests;
 				local questString = "";
 				for k, v in NIT:pairsByKeys(data.quests) do
 					if (v > GetServerTime()) then
 						questString = questString .. "\n  " .. color1 .. k .. "|r " .. color2 .. "completed.|r";
+						foundQuests = true;
+					end
+				end
+				for k, v in NIT:pairsByKeys(data.dungWeeklies) do
+					if (v > GetServerTime()) then
+						questString = questString .. "\n  " .. color1 .. k .. "|r";
 						foundQuests = true;
 					end
 				end

@@ -1,10 +1,10 @@
-lightweight tag b51d821f015db2444bfb373cf8de06ac8fed4459 v1.3.3
+lightweight tag 795ec0123f7fcf05b2137cbfe7056dfaeec8857f v1.3.4
 Author:	Simon Hirsig <simon.hirsig@gmail.com>
-Date:	Wed Mar 27 18:53:51 2024 +0100
+Date:	Sat May 18 08:38:39 2024 +0200
 
-commit b51d821f015db2444bfb373cf8de06ac8fed4459
+commit 795ec0123f7fcf05b2137cbfe7056dfaeec8857f
 Author: Simon Hirsig <simon.hirsig@gmail.com>
-Date:   Wed Mar 27 18:53:51 2024 +0100
+Date:   Sat May 18 08:38:39 2024 +0200
 
-    adding some SoD items
+    client version bump
 

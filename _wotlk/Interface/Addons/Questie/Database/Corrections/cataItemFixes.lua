@@ -9,6 +9,16 @@ function CataItemFixes.Load()
     local itemClasses = QuestieDB.itemClasses
 
     return {
+        [5169] = { -- Timberling Sprout
+            [itemKeys.objectDrops] = {4608}
+        },
+        [5508] = { -- Fallen Moonstone
+            [itemKeys.npcDrops] = {3758,3759,3762,3763},
+        },
+        [5519] = { -- Iron Pommel
+            [itemKeys.npcDrops] = {},
+            [itemKeys.objectDrops] = {195111},
+        },
         [10458] = { -- Prayer to Elune
             [itemKeys.npcDrops] = {}
         },
@@ -57,6 +67,18 @@ function CataItemFixes.Load()
         [45027] = { -- Tuft of Mottled Doe Hair
             [itemKeys.npcDrops] = {33313},
         },
+        [45042] = { -- Feero's Holy Hammer
+            [itemKeys.npcDrops] = {33348},
+        },
+        [45043] = { -- The Purifier's Prayer Book
+            [itemKeys.npcDrops] = {33347},
+        },
+        [45066] = { -- Bathed Concoction
+            [itemKeys.objectDrops] = {194651},
+        },
+        [45573] = { -- The Forest HEart
+            [itemKeys.npcDrops] = {},
+        },
         [45885] = { -- Thistle Bear Fur
             [itemKeys.npcDrops] = {33978},
         },
@@ -73,6 +95,12 @@ function CataItemFixes.Load()
             [itemKeys.class] = itemClasses.QUEST,
         },
         [46397] = { -- Oracle Orphan Whistle
+            [itemKeys.class] = itemClasses.QUEST,
+        },
+        [46543] = { -- Laughing Sister's Corpse
+            [itemKeys.npcDrops] = {34426},
+        },
+        [46696] = { -- Panther Figurine
             [itemKeys.class] = itemClasses.QUEST,
         },
         [46702] = { -- Ancient Device Fragment
@@ -93,6 +121,9 @@ function CataItemFixes.Load()
         [47047] = { -- Cool Shades
             [itemKeys.vendors] = {35130},
         },
+        [47050] = { -- The Captain's Logs
+            [itemKeys.objectDrops] = {195361},
+        },
         [48707] = { -- Gilnean Mastiff Collar
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -107,6 +138,9 @@ function CataItemFixes.Load()
         },
         [49533] = { -- Ironwrought Key
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [49599] = { -- Military Supplies
+            [itemKeys.npcDrops] = {36756,36987},
         },
         [49743] = { -- Sten's First Aid Kit
             [itemKeys.class] = itemClasses.QUEST,
@@ -363,6 +397,9 @@ function CataItemFixes.Load()
         },
         [59033] = { -- Blackrock Lever Key
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [59146] = { -- Head of Fleet Master Seahorn
+            [itemKeys.npcDrops] = {2487},
         },
         [59261] = { -- Blackrock Holding Pen Key
             [itemKeys.class] = itemClasses.QUEST,

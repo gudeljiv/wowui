@@ -1783,6 +1783,11 @@ function NIT:getInstanceLockoutInfo(char)
 	return hourCount, hourCount24, hourTimestamp, hourTimestamp24;
 end
 
+--/dump LFGRewardsFrame_EstimateRemainingCompletions(302) throne normal
+--/dump LFGRewardsFrame_EstimateRemainingCompletions(324) throne heroic
+--/dump LFGRewardsFrame_EstimateRemainingCompletions(300) random normal
+--/dump LFGRewardsFrame_EstimateRemainingCompletions(301) random heroic
+--https://warcraft.wiki.gg/wiki/LfgDungeonID
 function NIT:recordCharacterData()
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
@@ -1836,98 +1841,7 @@ function NIT:recordCharacterData()
 	--Durability.
 	local durabilityAverage = NIT.getAverageDurability();
 	NIT.data.myChars[char].durabilityAverage = durabilityAverage;
-	--Professions
-	local prof1, prof2, fishing, cooking, firstaid = "none", "none", "none", "none", "none";
-	local profSkill1, profSkill2, fishingSkill, cookingSkill, firstaidSkill = 0, 0, 0, 0, 0;
-	local profSkillMax1, profSkillMax2, fishingSkillMax, cookingSkillMax, firstaidSkillMax = 0, 0, 0, 0, 0;
-	if (NIT.isRetail) then
-		local prof1, prof2, archaeology, fishing, cooking = GetProfessions();
-		if (prof1) then
-			local prof1Name = GetProfessionInfo(prof1);
-			NIT.data.myChars[char].prof1 = prof1Name;
-		end
-		if (prof2) then
-			local prof2Name = GetProfessionInfo(prof2);
-			NIT.data.myChars[char].prof2 = prof2Name;
-		end
-	elseif (NIT.classic) then
-		--Skill list is always in same order, so we can get primary/secondary/weapon by checking the section headers.
-		local section, primaryCount, secondaryCount, weaponCount = 0, 0, 0, 0;
-		for i = 1, GetNumSkillLines() do
-			local skillName, isHeader, _, skillRank, _, _, skillMaxRank = GetSkillLineInfo(i)
-			--[[if (isHeader and skillName == "Professions") then
-				section = 2;
-			elseif (isHeader and skillName == "Secondary Skills") then
-				section = 3;
-			elseif (isHeader and skillName == "Weapon Skills") then
-				section = 4;
-			elseif (isHeader and skillName == "Armor Proficiencies") then
-				section = 5;
-			elseif (isHeader and skillName == "Languages") then
-				section = 6;
-			end]]
-			if (isHeader and skillName == TRADE_SKILLS) then
-				section = 2;
-			elseif (isHeader and skillName == string.gsub(SECONDARY_SKILLS, ":", "")) then
-				section = 3;
-			elseif (isHeader and string.find(skillName, COMBAT_RATING_NAME1)) then
-				section = 4;
-			elseif (isHeader and string.find(skillName, string.gsub(PROFICIENCIES, ":", ""))) then
-				--Global string PROFICIENCIES has a colon so strip it and use that as a close enough.
-				--Couldn't find a "Armor Proficiencies" global string.
-				section = 5;
-			elseif (isHeader and skillName == LANGUAGES_LABEL) then
-				section = 6;
-			end
-			if (not isHeader and section == 2) then
-				--Primary professions.
-				primaryCount = primaryCount + 1;
-				if (primaryCount == 1) then
-					prof1 = skillName;
-					profSkill1 = skillRank;
-					profSkillMax1 = skillMaxRank;
-				elseif (primaryCount == 2) then
-					prof2 = skillName;
-					profSkill2 = skillRank;
-					profSkillMax2 = skillMaxRank;
-				end
-			elseif (not isHeader and (section == 3 or section == 2)) then
-				--Secondary professions.
-				secondaryCount = secondaryCount + 1;
-				if (skillName == PROFESSIONS_FISHING) then
-					fishing = skillName;
-					fishingSkill = skillRank;
-					fishingSkillMax = skillMaxRank;
-				elseif (skillName == PROFESSIONS_COOKING) then
-					cooking = skillName;
-					cookingSkill = skillRank;
-					cookingSkillMax = skillMaxRank;
-				elseif (skillName == PROFESSIONS_FIRST_AID) then
-					firstaid = skillName;
-					firstaidSkill = skillRank;
-					firstaidSkillMax = skillMaxRank;
-				end
-			elseif (not isHeader and section == 4) then
-				--Weapon skills.
-				weaponCount = weaponCount + 1;
-			end
-		end
-		NIT.data.myChars[char].prof1 = prof1;
-		NIT.data.myChars[char].profSkill1 = profSkill1;
-		NIT.data.myChars[char].profSkillMax1 = profSkillMax1;
-		NIT.data.myChars[char].prof2 = prof2;
-		NIT.data.myChars[char].profSkill2 = profSkill2;
-		NIT.data.myChars[char].profSkillMax2 = profSkillMax2;
-		--NIT.data.myChars[char].fishing = fishing;
-		NIT.data.myChars[char].fishingSkill = fishingSkill;
-		NIT.data.myChars[char].fishingSkillMax = fishingSkillMax;
-		--NIT.data.myChars[char].cooking = cooking;
-		NIT.data.myChars[char].cookingSkill = cookingSkill;
-		NIT.data.myChars[char].cookingSkillMax = cookingSkillMax;
-		--NIT.data.myChars[char].firstaid = firstaid;
-		NIT.data.myChars[char].firstaidSkill = firstaidSkill;
-		NIT.data.myChars[char].firstaidSkillMax = firstaidSkillMax;
-	end
+	NIT:recordProfessions();
 	if (IsQuestFlaggedCompleted(7848) or IsQuestFlaggedCompleted(7487)) then
 		NIT.data.myChars[char].mcAttune = true;
 	end
@@ -1998,45 +1912,142 @@ function NIT:recordGuildInfo()
 end
 
 --Weeklys.
-local recordQuests = {};
+local weeklyQuests = {};
 if (NIT.isRetail) then
-	recordQuests[70893] = L["Feast Weekly"];
-	recordQuests[70866] = L["Siege on Dragonbane Keep"];
-	recordQuests[70906] = L["Grand Hunt (1st Time)"];
-	recordQuests[71136] = L["Grand Hunt (2nd Time)"];
-	recordQuests[71137] = L["Grand Hunt (3rd Time)"];
-	recordQuests[71995] = L["Trial of Elements"];
-	recordQuests[71033] = L["Trial of Flood"];
-	recordQuests[69927] = L["World Boss (Bazual)"];
-	recordQuests[69928] = L["World Boss (Liskanoth)"];
-	recordQuests[69929] = L["World Boss (Strunraan)"];
-	recordQuests[69930] = L["World Boss (Basrikron)"];
+	weeklyQuests[70893] = {name = L["Feast Weekly"]};
+	weeklyQuests[70866] = {name = L["Siege on Dragonbane Keep"]};
+	weeklyQuests[70906] = {name = L["Grand Hunt (1st Time)"]};
+	weeklyQuests[71136] = {name = L["Grand Hunt (2nd Time)"]};
+	weeklyQuests[71137] = {name = L["Grand Hunt (3rd Time)"]};
+	weeklyQuests[71995] = {name = L["Trial of Elements"]};
+	weeklyQuests[71033] = {name = L["Trial of Flood"]};
+	weeklyQuests[69927] = {name = L["World Boss (Bazual)"]};
+	weeklyQuests[69928] = {name = L["World Boss (Liskanoth)"]};
+	weeklyQuests[69929] = {name = L["World Boss (Strunraan)"]};
+	weeklyQuests[69930] = {name = L["World Boss (Basrikron)"]};
 end
 if (NIT.isWrath) then
-	recordQuests[24590] = "Lord Marrowgar Must Die!";
-	recordQuests[24580] = "Anub'Rekhan Must Die!";
-	recordQuests[24585] = "Flame Leviathan Must Die!";
-	recordQuests[24587] = "Ignis the Furnace Master Must Die!";
-	recordQuests[24582] = "Instructor Razuvious Must Die!";
-	recordQuests[24589] = "Lord Jaraxxus Must Die!";
-	recordQuests[24584] = "Malygos Must Die!";
-	recordQuests[24581] = "Noth the Plaguebringer Must Die!";
-	recordQuests[24583] = "Patchwerk Must Die!";
-	recordQuests[24586] = "Razorscale Must Die!";
-	recordQuests[24579] = "Sartharion Must Die!";
-	recordQuests[24588] = "XT-002 Deconstructor Must Die!";
+	weeklyQuests[24590] = {name = "Lord Marrowgar Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24580] = {name = "Anub'Rekhan Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24585] = {name = "Flame Leviathan Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24587] = {name = "Ignis the Furnace Master Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24582] = {name = "Instructor Razuvious Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24589] = {name = "Lord Jaraxxus Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24584] = {name = "Malygos Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24581] = {name = "Noth the Plaguebringer Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24583] = {name = "Patchwerk Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24586] = {name = "Razorscale Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24579] = {name = "Sartharion Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
+	weeklyQuests[24588] = {name = "XT-002 Deconstructor Must Die!", sharedCooldown = L["Wrath Raid Boss Weekly"]};
 end
 
 --Dailys.
-local recordDailyQuests = {};
+local dailyQuests = {};
 if (NIT.isWrath) then
-	recordDailyQuests[78752] = L["Proof of Demise: Titan Rune Protocol Gamma"];
-	recordDailyQuests[78753] = L["Proof of Demise: Threats to Azeroth"];
+	dailyQuests[78752] = {name = L["Proof of Demise: Titan Rune Protocol Gamma"]};
+	dailyQuests[78753] = {name = L["Proof of Demise: Threats to Azeroth"]};
+	dailyQuests[13102] = {name = "Sewer Stew", sharedCooldown = L["Wrath Cooking Daily"]};
+	dailyQuests[13103] = {name = "Cheese for Glowergold", sharedCooldown = L["Wrath Cooking Daily"]};
+	dailyQuests[13101] = {name = "Convention at the Legerdemain", sharedCooldown = L["Wrath Cooking Daily"]};
+	dailyQuests[13100] = {name = "Infused Mushroom Meatloaf", sharedCooldown = L["Wrath Cooking Daily"]};
+	dailyQuests[13107] = {name = "Mustard Dogs!", sharedCooldown = L["Wrath Cooking Daily"]};
+	dailyQuests[13830] = {name = "The Ghostfish", sharedCooldown = L["Wrath Fishing Daily"]};
+	dailyQuests[13832] = {name = "Jewel Of The Sewers", sharedCooldown = L["Wrath Fishing Daily"]};
+	dailyQuests[13834] = {name = "Dangerously Delicious", sharedCooldown = L["Wrath Fishing Daily"]};
+	dailyQuests[13836] = {name = "Disarmed!", sharedCooldown = L["Wrath Fishing Daily"]};
+	dailyQuests[13833] = {name = "Blood Is Thicker", sharedCooldown = L["Wrath Fishing Daily"]};
+	dailyQuests[12958] = {name = "Shipment: Blood Jade Amulet", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
+	dailyQuests[12962] = {name = "Shipment: Bright Armor Relic", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
+	dailyQuests[12959] = {name = "Shipment: Glowing Ivory Figurine", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
+	dailyQuests[12961] = {name = "Shipment: Intricate Bone Figurine", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
+	dailyQuests[12963] = {name = "Shipment: Shifting Sun Curio", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
+	dailyQuests[12960] = {name = "Shipment: Wicked Sun Brooch", sharedCooldown = L["Wrath Jewelcrafting Daily"]};
 end
 
 if (NIT.isSOD) then
-	recordDailyQuests[79098] = "Clear the Forest!";
-	recordDailyQuests[79090] = "Repelling Invaders";
+	dailyQuests[79098] = {name = "Clear the Forest!"};
+	dailyQuests[79090] = {name = "Repelling Invaders"};
+end
+
+if (NIT.isCata) then
+	--Alliance cooking dailies.
+	dailyQuests[29316] = {name = "Back to Basics", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29314] = {name = "Remembering the Ancestors", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29318] = {name = "Ribs for the Sentinels", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29357] = {name = "Spice Bread Aplenty", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29313] = {name = "The Secret to Perfect Kimchi", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29352] = {name = "A Fowl Shortage", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29351] = {name = "A Round for the Guards", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29355] = {name = "Can't Get Enough Spice Bread", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29356] = {name = "I Need to Cask a Favor", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29353] = {name = "Keepin' the Haggis Flowin'", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26190] = {name = "A Fisherman's Feast", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26177] = {name = "Feeling Crabby?", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26192] = {name = "Orphans Like Cookies Too!", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26153] = {name = "Penny's Pumpkin Pancakes", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26183] = {name = "The King's Cider", sharedCooldown = L["Cata Cooking Daily"]};
+	--Horde cooking dailies.
+	dailyQuests[26227] = {name = "Careful, This Fruit Bites Back", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26226] = {name = "Crawfish Creole", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26235] = {name = "Even Thieves Get Hungry", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26220] = {name = "Everything Is Better with Bacon", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[26233] = {name = "Stealing From Our Own", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29362] = {name = "Magic Mushrooms", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29364] = {name = "Corn Mash", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29363] = {name = "Mulgore Spice Bread", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29365] = {name = "Perfectly Picked Portions", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29358] = {name = "Pining for Nuts", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29333] = {name = "Escargot A Go-Go", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29315] = {name = "Fungus Among Us", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29332] = {name = "Lily, Oh Lily", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29334] = {name = "Roach Coach", sharedCooldown = L["Cata Cooking Daily"]};
+	dailyQuests[29360] = {name = "Would You Like Some Flies With That?", sharedCooldown = L["Cata Cooking Daily"]};
+	--Alliance fishing dailies.
+	dailyQuests[29342] = {name = "Cold Water Fishing", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29344] = {name = "Fish fer Squrky", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29347] = {name = "Live Bait", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29343] = {name = "One fer the Ages", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29350] = {name = "The Gnomish Bait-o-Matic", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29325] = {name = "A Slippery Snack", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29359] = {name = "An Old Favorite", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29321] = {name = "Happy as a Clam Digger", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29323] = {name = "Stocking Up", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29324] = {name = "The Sister's Pendant", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26488] = {name = "Big Gulp", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26420] = {name = "Diggin' For Worms", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26414] = {name = "Hitting a Walleye", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26442] = {name = "Rock Lobster", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26536] = {name = "Thunder Falls", sharedCooldown = L["Cata Fishing Daily"]};
+	--Horde fishing dailies.
+	dailyQuests[26588] = {name = "A Furious Catch", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26572] = {name = "A Golden Opportunity", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26557] = {name = "A Staggering Effort", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26543] = {name = "Clammy Hands", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[26556] = {name = "No Dumping Allowed", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29349] = {name = "Craving Crayfish", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29345] = {name = "Pond Predators", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29354] = {name = "Shiny Baubles", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29348] = {name = "The Race to Restock", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29346] = {name = "The Ring's the Thing", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29317] = {name = "Fish Head", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29320] = {name = "Like Pike?", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29361] = {name = "Moat Monster!", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29319] = {name = "Tadpole Terror", sharedCooldown = L["Cata Fishing Daily"]};
+	dailyQuests[29322] = {name = "Time for Slime", sharedCooldown = L["Cata Fishing Daily"]};
+	--Jewelcrafting dailies.
+	dailyQuests[25154] = {name = "A Present for Lila", sharedCooldown = L["Cata Jewelcrafting Daily"]};
+	dailyQuests[25156] = {name = "Elemental Goo", sharedCooldown = L["Cata Jewelcrafting Daily"]};
+	dailyQuests[25105] = {name = "Nibbler! No!", sharedCooldown = L["Cata Jewelcrafting Daily"]};
+	dailyQuests[25155] = {name = "Ogrezonians in the Mood", sharedCooldown = L["Cata Jewelcrafting Daily"]};
+	dailyQuests[25157] = {name = "The Latest Fashion!", sharedCooldown = L["Cata Jewelcrafting Daily"]};
+end
+
+--Cache all quest names.
+for k, v in pairs(weeklyQuests) do
+	C_QuestLog.GetQuestInfo(k);
+end
+for k, v in pairs(dailyQuests) do
+	C_QuestLog.GetQuestInfo(k);
 end
 
 function NIT:recordQuests()
@@ -2050,45 +2061,77 @@ function NIT:recordQuests()
 	if (not NIT.data.myChars[char].quests) then
 		NIT.data.myChars[char].quests = {};
 	end
-	--All wrath weeklies are flagged as complete when 1 is so just record 1 and not all.
-	local wrathWeeklyComplete;
-	local wrathWeeklies = {
-		[24590] = "Lord Marrowgar Must Die!";
-		[24580] = "Anub'Rekhan Must Die!";
-		[24585] = "Flame Leviathan Must Die!";
-		[24587] = "Ignis the Furnace Master Must Die!";
-		[24582] = "Instructor Razuvious Must Die!";
-		[24589] = "Lord Jaraxxus Must Die!";
-		[24584] = "Malygos Must Die!";
-		[24581] = "Noth the Plaguebringer Must Die!";
-		[24583] = "Patchwerk Must Die!";
-		[24586] = "Razorscale Must Die!";
-		[24579] = "Sartharion Must Die!";
-		[24588] = "XT-002 Deconstructor Must Die!";
-	};
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilWeeklyReset();
-	for k, v in pairs(recordQuests) do
+	for k, v in pairs(weeklyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
-			--There's bugs with this that need more testing before release.
-			if (wrathWeeklies[k]) then
-				if (not wrathWeeklyComplete) then
-					wrathWeeklyComplete = true;
-					NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = resetTime;
-					--Wrath raid weekly isn't resetting at normal server time, it's resetting later on in the day so it's still recording as complete until the following week.
-					--Watching this and see if they fix the reset time, maybe they had to manual reset first week due to a bug?
+			local questName = v.name;
+			local localizedName = C_QuestLog.GetQuestInfo(k);
+			local skip;
+			if (v.sharedCooldown) then
+				--If shared cooldown type like cata cooking dailies diff quests are up but you can only do one.
+				--It flags all as complete but we only want to record one.
+				if (sharedQuests[v.sharedCooldown]) then
+					skip = true;
+				else
+					sharedQuests[v.sharedCooldown] = true;
+					questName = v.sharedCooldown;
 				end
-			else
-				NIT.data.myChars[char].quests[v] = resetTime;
+			elseif (localizedName and localizedName ~= "") then
+				questName = localizedName;
+			end
+			if (not skip) then
+				NIT.data.myChars[char].quests[questName] = resetTime;
 			end
 		end
 	end
-	if (not NIT.data.myChars[char].questsDaily) then
-		NIT.data.myChars[char].questsDaily = {};
+	--Record cata 7 per week dungeon quests.
+	if (NIT.isCata) then
+		if (not NIT.data.myChars[char].dungWeeklies) then
+			NIT.data.myChars[char].dungWeeklies = {};
+		end
+		--Normal.
+		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(300); --https://warcraft.wiki.gg/wiki/LfgDungeonID
+		--currencyQuantity is 0 if we don't qualify for this type of queue due totoo low level or whatever (I think).
+		if (currencyQuantity ~= 0) then
+			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(300);
+			--Only record if we've used some slots this week.
+			if (remaining < overallLimit) then
+				local desc = "|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weekly left: |cFF9CD6DE" .. remaining .. "|r";
+				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
+			end
+		end
+		--Heroic.
+		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(301);
+		if (currencyQuantity ~= 0) then
+			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
+			if (remaining < overallLimit) then
+				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r Dungeon weekly left: |cFF9CD6DE" .. remaining .. "|r";
+				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
+			end
+		end
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-	for k, v in pairs(recordDailyQuests) do
+	local sharedQuests = {};
+	for k, v in pairs(dailyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
-			NIT.data.myChars[char].questsDaily[v] = resetTime;
+			local questName = v.name;
+			local localizedName = C_QuestLog.GetQuestInfo(k);
+			local skip;
+			if (v.sharedCooldown) then
+				--If shared cooldown type like cata cooking dailies diff quests are up but you can only do one.
+				--It flags all as complete but we only want to record one.
+				if (sharedQuests[v.sharedCooldown]) then
+					skip = true;
+				else
+					sharedQuests[v.sharedCooldown] = true;
+					questName = v.sharedCooldown;
+				end
+			elseif (localizedName and localizedName ~= "") then
+				questName = localizedName;
+			end
+			if (not skip) then
+				NIT.data.myChars[char].questsDaily[questName] = resetTime;
+			end
 		end
 	end
 end
@@ -2170,13 +2213,14 @@ function NIT:recordHonorData()
 	if (NIT.isClassic) then
 		return;
 	end
-	local data = C_CurrencyInfo.GetCurrencyInfo(1901);
+	local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
 	end
-	if (data and data.quantity and data.quantity > 0) then
-		NIT.data.myChars[char].honor = data.quantity;
+	
+	if (honor and honor.quantity and honor.quantity > 0) then
+		NIT.data.myChars[char].honor = honor.quantity;
 	else
 		NIT.data.myChars[char].honor = 0;
 	end
@@ -2241,8 +2285,10 @@ function NIT:recordMarksData()
 	if (not NIT.data.myChars[char].marks) then
 		NIT.data.myChars[char].marks = {};
 	end
-	for k, v in pairs(NIT.bgMarks) do
-		NIT.data.myChars[char].marks[k] = (GetItemCount(k, true) or 0);
+	if (NIT.expansionNum < 4) then
+		for k, v in pairs(NIT.bgMarks) do
+			NIT.data.myChars[char].marks[k] = (GetItemCount(k, true) or 0);
+		end
 	end
 end
 
@@ -2389,7 +2435,19 @@ function NIT:checkRewards()
 	end
 end
 
-function NIT:resetWeeklyData()
+local f = CreateFrame("Frame")
+f:RegisterEvent("CHAT_MSG_SYSTEM")
+f:SetScript('OnEvent', function(self, event, msg)
+	if (string.match(msg, DAILY_QUESTS_RESET)) then
+		C_Timer.After(10, function()
+			NIT:resetWeeklyAndDailyData();
+			NIT:updateWeeklyResetTime();
+		end)
+	end
+end)
+
+--Weekly and daily data.
+function NIT:resetWeeklyAndDailyData()
 	for realm, realmData in pairs(NIT.db.global) do
 		if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "data") then
 			if (realmData.myChars) then
@@ -2399,6 +2457,13 @@ function NIT:resetWeeklyData()
 						for k, v in pairs(charData.quests) do
 							if (v < GetServerTime()) then
 								NIT.db.global[realm].myChars[char].quests[k] = nil;
+							end
+						end
+					end
+					if (charData.dungWeeklies) then
+						for k, v in pairs(charData.dungWeeklies) do
+							if (v < GetServerTime()) then
+								NIT.db.global[realm].myChars[char].dungWeeklies[k] = nil;
 							end
 						end
 					end
@@ -2644,6 +2709,7 @@ function NIT:recordInventoryData()
 	NIT:recordCurrency();
 end
 
+--[icon] = "name",
 local currencyItems = {
 	--TBC.
 	[135884] = "Badge of Justice",
@@ -2658,9 +2724,20 @@ local currencyItems = {
 	[237235] = "Sidereal Essence",
 	[236246] = "Champion's Seal",
 	[237273] = "Defiler's Scourgestone",
+	--Cata
+    [463446] = "Justice Points",
+    [463447] = "Valor Points",
+    [236571] = "Chef's Award",
+    [136192] = "Mote of Darkness",
+    [132851] = "Essence of Corrupted Deathwing",
 	--Profession tokens.
-	[134411] = "Epicurean's Award",
-	[134138] = "Dalaran Jewelcrafter's Token",
+    [134411] = "Epicurean's Award",
+    [236571] = "Chef's Award",
+    [134138] = "Dalaran Jewelcrafter's Token",
+    [134501] = "Illustrious Jewelcrafter's Token",
+    --Misc
+    [134481] = "Darkmoon Prize Ticket",
+    [409548] = "Tol Barad Commendation",
 };
 
 function NIT:recordCurrency()
@@ -2671,9 +2748,10 @@ function NIT:recordCurrency()
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
 	end
-	if (not NIT.data.myChars[char].currency) then
+	--Wipe old data for things like currencies disappearing for new expansions etc.
+	--if (not NIT.data.myChars[char].currency) then
 		NIT.data.myChars[char].currency = {};
-	end
+	--end
 	for i = 1, GetCurrencyListSize() do
 		local name, isHeader, _, _, _, count, icon, max = GetCurrencyListInfo(i);
 		if (icon and currencyItems[icon]) then
@@ -2683,6 +2761,13 @@ function NIT:recordCurrency()
 				max = max,
 			};
 		end
+	end
+	
+	local conq = C_CurrencyInfo.GetCurrencyInfo(390);
+	if (conq and conq.quantity and conq.quantity > 0) then
+		NIT.data.myChars[char].conq = conq.quantity;
+	else
+		NIT.data.myChars[char].conq = 0;
 	end
 end
 
@@ -2707,19 +2792,131 @@ function NIT:recordPlayerLevelData()
 	NIT.data.myChars[char].time = GetServerTime();
 end
 
-function NIT:recordSkillUpData(...)
+--Thanks for Stpain and GuildBook addon for spec detection help.
+--spellID -> professionID.
+--https://warcraft.wiki.gg/wiki/TradeSkillLineID.
+--Alchemy:
+--[[[28672] = 171,
+[28677] = 171,
+[28675] = 171,
+--Engineering:
+[20222] = 202,
+[20219] = 202,
+--Tailoring:
+[26798] = 197,
+[26797] = 197,
+[26801] = 197,
+--Blacksmithing:
+[9788] = 164,
+[17039] = 164,
+[17040] = 164,
+[17041] = 164,
+[9787] = 164,
+--Leatherworking:
+[10656] = 165,
+[10658] = 165,
+[10660] = 165,]]
+local tradeskillSpecs = {
+    --Alchemy:
+    [28672] = L["Alchemy"], --Transmutation Master.
+    [28677] = L["Alchemy"], --Elixir Master.
+    [28675] = L["Alchemy"], --Potion Master.
+    --Engineering:
+    [20222] = L["Engineering"], --Goblin Engineer.
+    [20219] = L["Engineering"], --Gnomish Engineer.
+    --Tailoring:
+    [26798] = L["Tailoring"], --Mooncloth Tailoring.
+    [26797] = L["Tailoring"], --Spellfire Tailoring.
+    [26801] = L["Tailoring"], --Shadoweave Tailoring.
+    --Blacksmithing:
+    [9788] = L["Blacksmithing"], --Armorsmith.
+    [17039] = L["Blacksmithing"], --Master Swordsmith.
+    [17040] = L["Blacksmithing"], --Master Hammersmith.
+    [17041] = L["Blacksmithing"], --Master Axesmith.
+    [9787] = L["Blacksmithing"], --Weaponsmith.
+    --Leatherworking:
+    [10656] = L["Leatherworking"], --Dragonscale Leatherworking.
+    [10658] = L["Leatherworking"], --Elemental Leatherworking.
+    [10660] = L["Leatherworking"], --Tribal Leatherworking.
+}
+--Cache all prof spec spell names.
+for k, v in pairs(tradeskillSpecs) do
+	GetSpellInfo(k);
+end
+
+--By tab index.
+local function getProfessionSpec(spellTabIndex)
+	if (not spellTabIndex) then
+		return;
+	end
+	local specName;
+    local name, _, offset, numSlots = GetSpellTabInfo(spellTabIndex);
+    for j = offset + 1, offset + numSlots do
+        local _, spellID = GetSpellBookItemInfo(j, BOOKTYPE_SPELL);
+        if (spellID and tradeskillSpecs[spellID]) then
+            specName = GetSpellInfo(spellID);
+            return specName;
+        end
+    end
+end
+
+--By profession name.
+local function getProfessionSpecClassic(profName)
+	if (not profName) then
+		return;
+	end
+    local specName;
+    for i = 1, GetNumSpellTabs() do
+    	local found;
+        local _, _, offset, numSlots = GetSpellTabInfo(i);
+        for j = offset + 1, offset + numSlots do
+           local _, spellID = GetSpellBookItemInfo(j, BOOKTYPE_SPELL);
+           if (spellID and tradeskillSpecs[spellID] and tradeskillSpecs[spellID] == profName) then
+	            specName = GetSpellInfo(spellID);
+	            return specName
+	        end
+        end
+    end
+end
+
+function NIT:recordProfessions()
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
 	end
-	local prof1, prof2, fishing, cooking, firstaid = "none", "none", "none", "none", "none";
+	local data = NIT.data.myChars[char];
+	local prof1Name, prof2Name, fishing, cooking, firstaid = "none", "none", "none", "none", "none";
 	local profSkill1, profSkill2, fishingSkill, cookingSkill, firstaidSkill = 0, 0, 0, 0, 0;
 	local profSkillMax1, profSkillMax2, fishingSkillMax, cookingSkillMax, firstaidSkillMax = 0, 0, 0, 0, 0;
-	if (NIT.classic) then
+	if (NIT.isRetail) then
+		--This way would work for cata too now I guess, but skillLines also still works so leaving it for now.
+		local prof1, prof2, archaeology, fishing, cooking = GetProfessions();
+		if (prof1) then
+			local prof1Name = GetProfessionInfo(prof1);
+			data.prof1 = prof1Name;
+			--data.prof1SpecName = getProfessionSpec(prof1);
+		end
+		if (prof2) then
+			local prof2Name = GetProfessionInfo(prof2);
+			data.prof2 = prof2Name;
+			--data.prof2SpecName = getProfessionSpec(prof2);
+		end
+	elseif (NIT.classic) then
 		--Skill list is always in same order, so we can get primary/secondary/weapon by checking the section headers.
 		local section, primaryCount, secondaryCount, weaponCount = 0, 0, 0, 0;
 		for i = 1, GetNumSkillLines() do
 			local skillName, isHeader, _, skillRank, _, _, skillMaxRank = GetSkillLineInfo(i)
+			--[[if (isHeader and skillName == "Professions") then
+				section = 2;
+			elseif (isHeader and skillName == "Secondary Skills") then
+				section = 3;
+			elseif (isHeader and skillName == "Weapon Skills") then
+				section = 4;
+			elseif (isHeader and skillName == "Armor Proficiencies") then
+				section = 5;
+			elseif (isHeader and skillName == "Languages") then
+				section = 6;
+			end]]
 			if (isHeader and skillName == TRADE_SKILLS) then
 				section = 2;
 			elseif (isHeader and skillName == string.gsub(SECONDARY_SKILLS, ":", "")) then
@@ -2737,26 +2934,26 @@ function NIT:recordSkillUpData(...)
 				--Primary professions.
 				primaryCount = primaryCount + 1;
 				if (primaryCount == 1) then
-					prof1 = skillName;
+					prof1Name = skillName;
 					profSkill1 = skillRank;
 					profSkillMax1 = skillMaxRank;
 				elseif (primaryCount == 2) then
-					prof2 = skillName;
+					prof2Name = skillName;
 					profSkill2 = skillRank;
 					profSkillMax2 = skillMaxRank;
 				end
-			elseif (not isHeader and section == 3) then
+			elseif (not isHeader and (section == 3 or section == 2)) then
 				--Secondary professions.
 				secondaryCount = secondaryCount + 1;
-				if (skillName == L["Fishing"]) then
+				if (skillName == PROFESSIONS_FISHING) then
 					fishing = skillName;
 					fishingSkill = skillRank;
 					fishingSkillMax = skillMaxRank;
-				elseif (skillName == L["Cooking"]) then
+				elseif (skillName == PROFESSIONS_COOKING) then
 					cooking = skillName;
 					cookingSkill = skillRank;
 					cookingSkillMax = skillMaxRank;
-				elseif (skillName == L["firstAid"]) then
+				elseif (skillName == PROFESSIONS_FIRST_AID) then
 					firstaid = skillName;
 					firstaidSkill = skillRank;
 					firstaidSkillMax = skillMaxRank;
@@ -2766,22 +2963,39 @@ function NIT:recordSkillUpData(...)
 				weaponCount = weaponCount + 1;
 			end
 		end
-		NIT.data.myChars[char].prof1 = prof1;
-		NIT.data.myChars[char].profSkill1 = profSkill1;
-		NIT.data.myChars[char].profSkillMax1 = profSkillMax1;
-		NIT.data.myChars[char].prof2 = prof2;
-		NIT.data.myChars[char].profSkill2 = profSkill2;
-		NIT.data.myChars[char].profSkillMax2 = profSkillMax2;
-		--NIT.data.myChars[char].fishing = fishing;
-		NIT.data.myChars[char].fishingSkill = fishingSkill;
-		NIT.data.myChars[char].fishingSkillMax = fishingSkillMax;
-		--NIT.data.myChars[char].cooking = cooking;
-		NIT.data.myChars[char].cookingSkill = cookingSkill;
-		NIT.data.myChars[char].cookingSkillMax = cookingSkillMax;
-		--NIT.data.myChars[char].firstaid = firstaid;
-		NIT.data.myChars[char].firstaidSkill = firstaidSkill;
-		NIT.data.myChars[char].firstaidSkillMax = firstaidSkillMax;
+		data.prof1 = prof1Name;
+		data.profSkill1 = profSkill1;
+		data.profSkillMax1 = profSkillMax1;
+		data.prof2 = prof2Name;
+		data.profSkill2 = profSkill2;
+		data.profSkillMax2 = profSkillMax2;
+		--data.fishing = fishing;
+		data.fishingSkill = fishingSkill;
+		data.fishingSkillMax = fishingSkillMax;
+		--data.cooking = cooking;
+		data.cookingSkill = cookingSkill;
+		data.cookingSkillMax = cookingSkillMax;
+		--data.firstaid = firstaid;
+		data.firstaidSkill = firstaidSkill;
+		data.firstaidSkillMax = firstaidSkillMax;
+		--print(prof1, profSkill1, profSkillMax1);
+		--print(prof2, profSkill2, profSkillMax2);
+		--print(fishingSkill, cookingSkill, firstaidSkill);
+		if (GetProfessions) then
+			--Cata.
+			local prof1SpellTabIndex, prof2SpellTabIndex = GetProfessions();
+			data.prof1SpecName = getProfessionSpec(prof1SpellTabIndex);
+			data.prof2SpecName = getProfessionSpec(prof2SpellTabIndex);
+		elseif (GetNumPrimaryProfessions) then
+			--Era.
+			data.prof1SpecName = getProfessionSpecClassic(prof1Name);
+			data.prof2SpecName = getProfessionSpecClassic(prof2Name);
+		end
 	end
+end
+
+function NIT:recordSkillUpData(...)
+	NIT:recordProfessions();
 end
 
 --Update certain data like XP etc when combat ends instead of every mob.
@@ -2790,7 +3004,6 @@ function NIT:recordCombatEndedData()
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
 	end
-	
 	if (UnitXP("player") > 0) then
 		NIT.data.myChars[char].currentXP = UnitXP("player");
 	end
@@ -3053,6 +3266,9 @@ function NIT.getAverageDurability()
 end
 
 function NIT.getAmmoCount()
+	if (NIT.expansionNum > 3) then
+		return 0
+	end
 	local slotID = GetInventorySlotInfo("AmmoSlot");
 	if (slotID) then
 		local itemID = GetInventoryItemID("player", slotID);

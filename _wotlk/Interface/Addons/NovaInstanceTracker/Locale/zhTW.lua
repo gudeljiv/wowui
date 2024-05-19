@@ -363,3 +363,18 @@ L["Arena Points"] = "競技場點數";
 
 L["stillInArena"] = "正在競技場中";
 L["stillInBattleground"] = "正在戰場中";
+
+L["Blacksmithing"] = "鍛造";
+L["Leatherworking"] = "製皮";
+L["Alchemy"] = "鍊金術";
+L["Herbalism"] = "草藥學";
+L["Cooking"] = "烹飪";
+L["Mining"] = "採礦";
+L["Tailoring"] = "裁縫";
+L["Engineering"] = "工程學";
+L["Enchanting"] = "附魔";
+L["Fishing"] = "釣魚";
+L["Skinning"] = "剝皮";
+L["Jewelcrafting"] = "珠寶設計";
+L["Inscription"] = "銘文學";
+L["First Aid"] = "急救";
