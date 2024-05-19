@@ -53,3 +53,4 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
+TomTom: disabled

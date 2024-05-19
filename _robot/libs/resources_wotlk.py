@@ -228,11 +228,13 @@ data = {
             {"name": "vampiric touch", "type": "GetSpellTexture", "id": 34914, "key": "3"},
             {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},
             {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
+            # buffs
+            {"name": "archangel", "type": "GetSpellTexture", "id": 87151, "key": "4", "modifier": "lshift"},
+            {"name": "power word fortitude", "type": "GetSpellTexture", "id": 21562, "key": "f1"},
+            {"name": "inner fire", "type": "GetSpellTexture", "id": 588, "key": "f2"},
             # ne treba za sada
             # {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             # {"name": "renew", "type": "GetSpellTexture", "id": 139, "key": "g"},
-            # {"name": "power word fortitude", "type": "GetSpellTexture", "id": 21562, "key": "f1"},
-            # {"name": "inner fire", "type": "GetSpellTexture", "id": 588, "key": "f2"},
             # {"name": "penance", "type": "GetSpellTexture", "id": 47540, "key": "2"},
             # {"name": "flash heal", "type": "GetSpellTexture", "id": 2061, "key": "2", "modifier": "lshift"},
             # rest
