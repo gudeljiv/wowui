@@ -1,18 +1,3 @@
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
-END
-VER 3 000000000000000E " " "136106"
-/inspect
-END
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
-END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000029 " " "132152"
 #showtooltip
 /dismount
@@ -27,6 +12,18 @@ VER 3 000000000000002A " " "132328"
 /petfollow
 /petpassive
 END
+VER 3 000000000000000E " " "136106"
+/inspect
+/run SortBags()
+END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 000000000000002B "bear" "132276"
 #showtooltip Dire Bear Form
 /cancelaura [form:5] Flight Form;[form:1] Dire Bear Form
@@ -39,22 +36,22 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
-/castsequence [combat] reset=combat item:3385
+/use [nocombat]item:33445
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat] reset=combat item:1710,item:929
+/use [nocombat]item:35953
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:35953
 /cast feed pet
-/use item:0
+/use item:35953
 END
 VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -63,16 +60,16 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Carrion Grub
-/targetexact Carrion Devourer
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run InviteUnit("a");C_Timer.After(1,function() ConvertToRaid() end)
+/run print(IsSpellInRange(14, "pet"))
+/run print(IsSpellInRange("Growl", "target"))
+/run print(IsSpellInRange("Arcane Shot", "target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

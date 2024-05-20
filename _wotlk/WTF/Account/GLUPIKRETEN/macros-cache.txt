@@ -1,6 +1,8 @@
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
 END
 VER 3 000000000000000E " " "136106"
 /inspect
@@ -22,12 +24,6 @@ VER 3 0000000000000029 " " "132152"
 /petattack [@mouseover,exists,harm][]
 /petdefensive
 END
-VER 3 000000000000002A " " "132328"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-END
 VER 3 000000000000002B "bear" "132276"
 #showtooltip Dire Bear Form
 /cancelaura [form:5] Flight Form;[form:1] Dire Bear Form
@@ -45,13 +41,13 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
+/use [nocombat]item:4599
 /castsequence [combat] reset=combat item:1710
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:35953
 /cast feed pet
-/use item:0
+/use item:35953
 END
 VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
 #showtooltip
@@ -72,7 +68,9 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run InviteUnit("a");C_Timer.After(1,function() ConvertToRaid() end)
+/run print(IsSpellInRange(14, "pet"))
+/run print(IsSpellInRange("Growl", "target"))
+/run print(IsSpellInRange("Arcane Shot", "target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy
