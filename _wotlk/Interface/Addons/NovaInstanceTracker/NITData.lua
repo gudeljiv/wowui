@@ -36,6 +36,7 @@ local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNum
 local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
 local GetContainerItemLink = GetContainerItemLink or C_Container.GetContainerItemLink;
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
+local GetQuestInfo = C_QuestLog.GetQuestInfo or C_QuestLog.GetTitleForQuestID;
 NIT.currentInstanceID = 0;
 
 --Some of this addon comm stuff is copied from my other addon NovaWorldBuffs and is left here incase of future stuff being added.
@@ -2044,10 +2045,10 @@ end
 
 --Cache all quest names.
 for k, v in pairs(weeklyQuests) do
-	C_QuestLog.GetQuestInfo(k);
+	GetQuestInfo(k);
 end
 for k, v in pairs(dailyQuests) do
-	C_QuestLog.GetQuestInfo(k);
+	GetQuestInfo(k);
 end
 
 function NIT:recordQuests()
@@ -2065,7 +2066,7 @@ function NIT:recordQuests()
 	for k, v in pairs(weeklyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
 			local questName = v.name;
-			local localizedName = C_QuestLog.GetQuestInfo(k);
+			local localizedName = GetQuestInfo(k);
 			local skip;
 			if (v.sharedCooldown) then
 				--If shared cooldown type like cata cooking dailies diff quests are up but you can only do one.
@@ -2086,36 +2087,48 @@ function NIT:recordQuests()
 	end
 	--Record cata 7 per week dungeon quests.
 	if (NIT.isCata) then
-		if (not NIT.data.myChars[char].dungWeeklies) then
-			NIT.data.myChars[char].dungWeeklies = {};
-		end
+		--Always reset the data so new remaining can overwrite old.
+		NIT.data.myChars[char].dungWeeklies = {};
 		--Normal.
 		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(300); --https://warcraft.wiki.gg/wiki/LfgDungeonID
 		--currencyQuantity is 0 if we don't qualify for this type of queue due totoo low level or whatever (I think).
 		if (currencyQuantity ~= 0) then
 			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(300);
 			--Only record if we've used some slots this week.
-			if (remaining < overallLimit) then
-				local desc = "|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weekly left: |cFF9CD6DE" .. remaining .. "|r";
+			--Changed to just show it even if 7 left.
+			--if (remaining < overallLimit) then
+				local remainingText = "|cFF00FF00" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				if (remaining == 0) then
+					remainingText = "|cFFFF0000" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				elseif (remaining < overallLimit) then
+					remainingText = "|cFFFFFF00" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				end
+				local desc = "|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: " .. remainingText;
 				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
-			end
+			--end
 		end
 		--Heroic.
 		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(301);
-		if (currencyQuantity ~= 0) then
+		--if (currencyQuantity ~= 0) then
 			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
-			if (remaining < overallLimit) then
-				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r Dungeon weekly left: |cFF9CD6DE" .. remaining .. "|r";
+			--if (remaining < overallLimit) then
+				local remainingText = "|cFF00FF00" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				if (remaining == 0) then
+					remainingText = "|cFFFF0000" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				elseif (remaining < overallLimit) then
+					remainingText = "|cFFFFFF00" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
+				end
+				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r Dungeon weeklies remaining: " .. remainingText;
 				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
-			end
-		end
+			--end
+		--end
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 	local sharedQuests = {};
 	for k, v in pairs(dailyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
 			local questName = v.name;
-			local localizedName = C_QuestLog.GetQuestInfo(k);
+			local localizedName = GetQuestInfo(k);
 			local skip;
 			if (v.sharedCooldown) then
 				--If shared cooldown type like cata cooking dailies diff quests are up but you can only do one.

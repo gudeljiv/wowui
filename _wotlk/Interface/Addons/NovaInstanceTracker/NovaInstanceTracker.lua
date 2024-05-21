@@ -4435,7 +4435,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				end
 				for k, v in NIT:pairsByKeys(data.dungWeeklies) do
 					if (v > GetServerTime()) then
-						questString = questString .. "\n  " .. color1 .. k .. "|r";
+						questString = questString .. "\n  " .. k;
 						foundQuests = true;
 					end
 				end
