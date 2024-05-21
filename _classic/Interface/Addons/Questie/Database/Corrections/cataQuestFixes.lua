@@ -2192,6 +2192,18 @@ function CataQuestFixes.Load()
             [questKeys.requiredSourceItems] = {58955,58958},
             [questKeys.exclusiveTo] = {26557,26543,26556,26588,29349,29345,29354,29346,29348,29317,29320,29361,29319,29322},
         },
+        [26578] = { -- Doomshrooms
+            [questKeys.preQuestSingle] = {26577},
+        },
+        [26579] = { -- Gone Soft
+            [questKeys.preQuestSingle] = {26577},
+        },
+        [26580] = { -- Familiar Intruders
+            [questKeys.preQuestSingle] = {26577},
+        },
+        [26585] = { -- Corruption Destruction
+            [questKeys.preQuestGroup] = {26578,26579,26582},
+        },
         [26588] = { -- A Furious Catch
             [questKeys.exclusiveTo] = {26572,26557,26543,26556,29349,29345,29354,29346,29348,29317,29320,29361,29319,29322},
             [questKeys.extraObjectives] = {{{[zoneIDs.THE_BARRENS]={{71.1,7.9}}}, Questie.ICON_TYPE_NODE_FISH, l10n("Fish for Giant Furious Pike")}},
@@ -2490,6 +2502,9 @@ function CataQuestFixes.Load()
             [questKeys.requiredRaces] = raceKeys.ALL_ALLIANCE,
             [questKeys.triggerEnd] = {"Anduin Escorted to Farmer Wollerton", {[zoneIDs.STORMWIND_CITY]={{52.1,6.5}}}},
         },
+        [27059] = { -- The Wrong Sequence
+            [questKeys.preQuestSingle] = {27041},
+        },
         [27062] = { -- Looming Threat
             [questKeys.finishedBy] = {{44837}},
         },
@@ -2623,6 +2638,9 @@ function CataQuestFixes.Load()
         [27517] = { -- Be Prepared
             [questKeys.objectives] = {nil,nil,{{61321}}},
         },
+        [27519] = { -- Under the Choking Sands
+            [questKeys.preQuestSingle] = {28135},
+        },
         [27583] = { -- The Northern Flank
             [questKeys.preQuestSingle] = {26840},
         },
@@ -2639,6 +2657,9 @@ function CataQuestFixes.Load()
             [questKeys.objectives] = {},
             [questKeys.preQuestSingle] = {27495},
         },
+        [27595] = { -- The Prophet Hadassi
+            [questKeys.preQuestSingle] = {28135},
+        },
         [27606] = { -- Blast Him!
             [questKeys.preQuestGroup] = {27584,27586},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Heth'Jatari Conch"), 0, {{"object", 205831}}}},
@@ -2649,6 +2670,12 @@ function CataQuestFixes.Load()
         [27622] = { -- Mo' Better Shredder
             [questKeys.objectives] = {{{46100},{46098}}},
             [questKeys.preQuestSingle] = {27611},
+        },
+        [27629] = { -- The Vizier's Vote
+            [questKeys.preQuestSingle] = {27628},
+        },
+        [27631] = { -- The High Commander's Vote
+            [questKeys.preQuestSingle] = {27628},
         },
         [27668] = { -- Pay Attention!
             [questKeys.preQuestSingle] = {25944},
@@ -2861,8 +2888,12 @@ function CataQuestFixes.Load()
         [28134] = { -- Impending Retribution
             [questKeys.objectives] = {{{46603},{47715},{47930}}}
         },
+        [28141] = { -- Relics of the Sun King
+            [questKeys.preQuestSingle] = {28112},
+        },
         [28145] = { -- Venomblood Antidote
             [questKeys.objectives] = {{{45859}}},
+            [questKeys.preQuestSingle] = {28112},
         },
         [28170] = { -- Night Terrors
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Talk to Uchek"), 0, {{"monster", 47826}}}},
@@ -3115,6 +3146,12 @@ function CataQuestFixes.Load()
             [questKeys.startedBy] = {},
             [questKeys.preQuestSingle] = {25428},
         },
+        [29067] = { -- Potion Master
+            [questKeys.name] = "Potion Master",
+            [questKeys.objectivesText] = {"Bring a large supply of potions to an alchemy trainer in any capital city."},
+            [questKeys.objectives] = {nil,nil,{{57191},{57192},{58488}}},
+            [questKeys.requiredSkill] = {profKeys.ALCHEMY,475},
+        },
         [29071] = { -- Make Haste to Stormwind!
             [questKeys.exclusiveTo] = {25316,27724,27726},
         },
@@ -3356,9 +3393,13 @@ function CataQuestFixes.Load()
         },
         [29481] = { -- Elixir Master
             [questKeys.requiredSkill] = {profKeys.ALCHEMY,475},
+            [questKeys.requiredLevel] = 75,
+            [questKeys.objectives] = {nil,nil,{{58086},{58087},{58085},{58088}}},
         },
         [29482] = { -- Transmutation Master
             [questKeys.requiredSkill] = {profKeys.ALCHEMY,475},
+            [questKeys.requiredLevel] = 75,
+            [questKeys.objectives] = {nil,nil,{{58480}}},
         },
         [29507] = { -- Fun for the Little Ones
             [questKeys.objectives] = {nil,{{460001}}},

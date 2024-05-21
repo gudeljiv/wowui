@@ -404,6 +404,9 @@ function CataItemFixes.Load()
         [59033] = { -- Blackrock Lever Key
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [59123] = { -- Verlok Miracle-Grow
+            [itemKeys.npcDrops] = {},
+        },
         [59146] = { -- Head of Fleet Master Seahorn
             [itemKeys.npcDrops] = {2487},
         },
@@ -430,6 +433,9 @@ function CataItemFixes.Load()
         },
         [60739] = { -- Twilight Slaver's Key
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [60791] = { -- Painite Mote
+            [itemKeys.npcDrops] = {},
         },
         [60835] = { -- Depleted Totem
             [itemKeys.class] = itemClasses.QUEST,
