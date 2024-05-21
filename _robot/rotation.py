@@ -356,6 +356,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
                 behind = sct.grab(p_behind).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
                 clss = sct.grab(p_clss).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
+                hex = "#%02x%02x%02x" % clss
 
                 if debug:
                     mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
@@ -364,6 +365,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                 # matching closest class color to define in colors
                 found_class, wow_class = get_class(clss, color_distance)
                 if not found_class:
+                    if hex != "#000000":
+                        print(found_class, wow_class, hex)
                     continue
 
                 # loading skills for a class if changed

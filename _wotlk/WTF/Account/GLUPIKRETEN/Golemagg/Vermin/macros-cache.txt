@@ -3,12 +3,6 @@ VER 3 000000000100001E " " "134400"
 /startattack
 /cast [@mouseover,exists][]Heroic Throw
 END
-VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
-#showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
-/startattack
-/cast [@focus,exists][][stance:1/2]Shield Bash
-/cast [@focus,exists][][stance:3]Pummel
-END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Blood Fury
@@ -21,12 +15,14 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Shield Slam
 /cast Shield Block
+/cast Inner Rage
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast [nostance:2/3,spec:2]Berserker Stance
 /cast [spec:2]Mortal Strike;[spec:1]Bloodthirst
+/cast Inner Rage
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -58,8 +54,8 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 /cast [nocombat] Charge; [combat] Intercept
 END
 VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 8
-/use 8
+#showtooltip 6
+/use 6
 END
 VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -93,6 +89,7 @@ VER 3 0000000001000020 " " "134400"
 /startattack
 /cast [nostance:1]Battle Stance
 /cast Overpower
+/cast Inner Rage
 END
 VER 3 0000000001000021 " " "134400"
 #showtooltip

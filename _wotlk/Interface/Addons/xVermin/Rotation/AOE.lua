@@ -38,7 +38,7 @@ xVermin.AOE = function(range, casting)
 							local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 							local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 							if defensive or (battle and IsEquippedItemType('Shields')) then
-								if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
+								if IsSpellInRange('Pummel', 'target') == 0 or select(2, GetSpellCooldown('Pummel')) > 0 then
 									rangecasting = rangecasting + 1
 								end
 							end

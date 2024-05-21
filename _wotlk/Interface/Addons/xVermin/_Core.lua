@@ -298,3 +298,22 @@ xVermin.Enraged = function(unit)
 	return enraged > 0 and true or false
 end
 xEnraged = xVermin.Enraged
+
+
+xVermin.GetSpellBookId  = function(sname, bkt)
+	if not sname then return nil; end
+	if not bkt then return nil; end
+	for i = 1, MAX_SKILLLINE_TABS do
+		local name, texture, offset, numSpells = GetSpellTabInfo(i);
+		if not name then break; end
+		for s = offset + 1, offset + numSpells do
+			if (sname == GetSpellBookItemName(s,bkt)) then
+				return s;
+			end
+		end
+	end
+	return 0;
+end
+xGetSpellBookId = xVermin.GetSpellBookId
+
+

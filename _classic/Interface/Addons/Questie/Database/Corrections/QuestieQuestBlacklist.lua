@@ -1526,6 +1526,7 @@ function QuestieQuestBlacklist:Load()
         [14183] = QuestieCorrections.CATA_HIDE, -- Removed with cata
         [14184] = QuestieCorrections.CATA_HIDE, -- Removed with cata
         [14474] = QuestieCorrections.CATA_HIDE, -- Duplicate of 14001
+        [14446] = QuestieCorrections.CATA_HIDE, -- Duplicate of 28826
         [24216] = QuestieCorrections.CATA_HIDE, -- Removed with cata
         [24217] = QuestieCorrections.CATA_HIDE, -- Removed with cata
         [24218] = QuestieCorrections.CATA_HIDE, -- Removed with cata
@@ -1542,6 +1543,7 @@ function QuestieQuestBlacklist:Load()
         [24427] = QuestieCorrections.CATA_HIDE, -- Removed with cata
         [24503] = QuestieCorrections.CATA_HIDE, -- Duplicate of 28414
         [25474] = QuestieCorrections.CATA_HIDE, -- Duplicate of 27729
+        [26125] = QuestieCorrections.CATA_HIDE, -- Duplicate of 26124
         [26565] = QuestieCorrections.CATA_HIDE, -- Duplicate of 26588
         [26825] = QuestieCorrections.CATA_HIDE, -- Duplicate of 26826
         [26951] = QuestieCorrections.CATA_HIDE, -- Seems to not be available
@@ -1652,12 +1654,14 @@ function QuestieQuestBlacklist:Load()
         [29458] = true, -- The Captured Journal
         [29463] = true, -- It's Hammer Time
         [29464] = true, -- Tools of Divination
+        [29473] = true, -- Putting the Carnies Back Together Again
         [29506] = true, -- A Fizzy Fusion
         [29507] = true, -- Fun for the Little Ones
         [29508] = true, -- Baby Needs Two Pair of Shoes
         [29509] = true, -- Putting the Crunch in the Frog
         [29510] = true, -- Putting Trash to Good Use
         [29511] = true, -- Talkin' Tonks
+        [29512] = true, -- Putting the Carnies Back Together Again
         [29513] = true, -- Spoilin' for Salty Sea Dogs
         [29514] = true, -- Herbs for Healing
         [29515] = true, -- Writing the Future

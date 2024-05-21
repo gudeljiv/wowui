@@ -16,21 +16,24 @@ local HandleUnit = function(unit)
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-			if defensive then
-				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
-				end
+			if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
+				HandleRotationFrame(true)
 			end
-			if berserker then
-				if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
-					HandleRotationFrame(true)
-				end
-			end
-			if battle and IsEquippedItemType('Shields') then
-				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
-				end
-			end
+			-- if defensive then
+			-- 	if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+			-- 		HandleRotationFrame(true)
+			-- 	end
+			-- end
+			-- if berserker then
+			-- 	if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
+			-- 		HandleRotationFrame(true)
+			-- 	end
+			-- end
+			-- if battle and IsEquippedItemType('Shields') then
+			-- 	if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+			-- 		HandleRotationFrame(true)
+			-- 	end
+			-- end
 		end
 
 		-- PALADIN INTERRUPT
