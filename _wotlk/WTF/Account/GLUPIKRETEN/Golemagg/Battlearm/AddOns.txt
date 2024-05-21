@@ -241,3 +241,5 @@ LibDataBroker-1.1: enabled
 Bagnon_Garbage: disabled
 Bagnon_ItemLevel_Vermin: disabled
 Drift: disabled
+Immersion: disabled
+Immersion_ExtraFade: disabled

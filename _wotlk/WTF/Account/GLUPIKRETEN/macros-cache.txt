@@ -1,3 +1,13 @@
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+/run SortBags()
+END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Headless Horseman's Mount
@@ -14,16 +24,6 @@ VER 3 0000000000000029 " " "132152"
 /petattack [@mouseover,exists,harm][]
 /petdefensive
 END
-VER 3 000000000000002A " " "132328"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-END
-VER 3 000000000000000E " " "136106"
-/inspect
-/run SortBags()
-END
 VER 3 000000000000002B "bear" "132276"
 #showtooltip Dire Bear Form
 /cancelaura [form:5] Flight Form;[form:1] Dire Bear Form
@@ -36,13 +36,13 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1645
-/castsequence [combat] reset=combat item:3385
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000002D "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4599
-/castsequence [combat] reset=combat item:3928,item:1710
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -51,7 +51,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:3928
+/use item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl

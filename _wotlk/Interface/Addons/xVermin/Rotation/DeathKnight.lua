@@ -20,7 +20,7 @@ xVermin.PestilenceAOE = function(number_of_nameplates)
 		return false
 	end
 
-	if xAOE(10) < 1 then
+	if xAOE(8) < 1 then
 		return false
 	end
 
