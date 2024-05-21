@@ -69,6 +69,13 @@ X: 16
 Y: -116
 W: 338
 H: 424
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: BOTTOMLEFT
@@ -181,13 +188,6 @@ X: 158
 Y: -132
 W: 920
 H: 600
-Frame: SpellBookFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 550
-H: 525
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOP

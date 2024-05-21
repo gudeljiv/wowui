@@ -2,107 +2,8 @@
 EncounterDetailsDB = {
 	["chartData"] = {
 		[9685] = {
-			["Raid Damage Done"] = {
-				1589, -- [1]
-				1391, -- [2]
-				2160, -- [3]
-				3742, -- [4]
-				2405, -- [5]
-				1436, -- [6]
-				754, -- [7]
-				514, -- [8]
-				187, -- [9]
-				2805, -- [10]
-				460, -- [11]
-				1440, -- [12]
-				775, -- [13]
-				3057, -- [14]
-				166, -- [15]
-				412, -- [16]
-				3442, -- [17]
-				2114, -- [18]
-				491, -- [19]
-				5809, -- [20]
-				0, -- [21]
-				899, -- [22]
-				546, -- [23]
-				301, -- [24]
-				1203, -- [25]
-				494, -- [26]
-				0, -- [27]
-				285, -- [28]
-				356, -- [29]
-				0, -- [30]
-				586, -- [31]
-				357, -- [32]
-				0, -- [33]
-				["max_value"] = 5809,
-				["__time"] = 1715931066,
-			},
 		},
 		[9686] = {
-			["Raid Damage Done"] = {
-				1426, -- [1]
-				138, -- [2]
-				516, -- [3]
-				3340, -- [4]
-				251, -- [5]
-				704, -- [6]
-				426, -- [7]
-				280, -- [8]
-				343, -- [9]
-				1131, -- [10]
-				193, -- [11]
-				1373, -- [12]
-				620, -- [13]
-				318, -- [14]
-				1829, -- [15]
-				718, -- [16]
-				132, -- [17]
-				1290, -- [18]
-				729, -- [19]
-				1461, -- [20]
-				1249, -- [21]
-				2013, -- [22]
-				244, -- [23]
-				731, -- [24]
-				1374, -- [25]
-				149, -- [26]
-				956, -- [27]
-				878, -- [28]
-				0, -- [29]
-				1202, -- [30]
-				1130, -- [31]
-				161, -- [32]
-				1862, -- [33]
-				878, -- [34]
-				198, -- [35]
-				471, -- [36]
-				2995, -- [37]
-				1204, -- [38]
-				491, -- [39]
-				676, -- [40]
-				234, -- [41]
-				1667, -- [42]
-				1841, -- [43]
-				147, -- [44]
-				853, -- [45]
-				1049, -- [46]
-				2024, -- [47]
-				1341, -- [48]
-				1479, -- [49]
-				1121, -- [50]
-				349, -- [51]
-				327, -- [52]
-				584, -- [53]
-				350, -- [54]
-				327, -- [55]
-				0, -- [56]
-				350, -- [57]
-				327, -- [58]
-				["max_value"] = 3340,
-				["__time"] = 1715931273,
-			},
 		},
 	},
 	["encounter_spells"] = {
@@ -6733,12 +6634,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhenne",
 		},
-		[29318] = {
-			["school"] = 16,
+		[44291] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Sapphiron",
+			["source"] = "Priestess Delrissa",
 		},
 		[48193] = {
 			["school"] = 1,
@@ -6768,14 +6671,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Erekem Guard",
 		},
-		[44291] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[29318] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Priestess Delrissa",
+			["source"] = "Sapphiron",
 		},
 		[50496] = {
 			["school"] = 64,
@@ -7112,6 +7013,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ormorok the Tree-Shaper",
 		},
+		[49026] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Bloodthirsty Tundra Wolf",
+		},
 		[59261] = {
 			["school"] = 16,
 			["type"] = "DEBUFF",
@@ -7121,15 +7031,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Phantasmal Naga",
-		},
-		[49026] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Bloodthirsty Tundra Wolf",
 		},
 		[42897] = {
 			["school"] = 64,
@@ -7463,13 +7364,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Attumen the Huntsman",
 		},
-		[61693] = {
-			["school"] = 64,
+		[57599] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Malygos",
+			["source"] = "Twisted Visage",
 		},
 		[57066] = {
 			["school"] = 1,
@@ -7603,14 +7504,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Volkhan",
 		},
-		[54529] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[44294] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Stalagg",
+			["source"] = "Selin Fireheart",
 		},
 		[34123] = {
 			["school"] = 1,
@@ -8017,6 +7918,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scarlaa",
 		},
+		[29832] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Attumen the Huntsman",
+		},
 		[57601] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -8025,14 +7934,6 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Twisted Visage",
-		},
-		[29832] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Attumen the Huntsman",
 		},
 		[54043] = {
 			["school"] = 2,
@@ -8751,13 +8652,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Plagued Champion",
 		},
-		[50759] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Unstable Sphere",
-		},
 		[16280] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -8765,6 +8659,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Siiuh",
+		},
+		[50759] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Unstable Sphere",
 		},
 		[53463] = {
 			["school"] = 32,
@@ -8825,14 +8726,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hudôr",
 		},
-		[61570] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Twilight Apostle",
-		},
 		[47241] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -8841,6 +8734,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Greedyöne",
+		},
+		[61570] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Twilight Apostle",
 		},
 		[51399] = {
 			["school"] = 1,
@@ -10226,14 +10127,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "General Bjarngrim",
 		},
-		[44294] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[54529] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Selin Fireheart",
+			["source"] = "Stalagg",
 		},
 		[53733] = {
 			["school"] = 2,
@@ -10311,13 +10212,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Babychica",
 		},
-		[57599] = {
-			["school"] = 1,
+		[61693] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Malygos",
 		},
 		[59742] = {
 			["school"] = 1,
