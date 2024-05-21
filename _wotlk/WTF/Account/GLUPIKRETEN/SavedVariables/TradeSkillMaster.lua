@@ -6314,8 +6314,8 @@ TradeSkillMasterDB = {
 	["f@Horde - Golemagg@internalData@characterGuilds"] = {
 		["Battlearm"] = "CUBE",
 		["Mxzq"] = "CUBE",
-		["Mxyz"] = "Trouble",
 		["Vermina"] = "CUBE",
+		["Mxyz"] = "Trouble",
 		["Handrmandr"] = "CUBE",
 		["Vermin"] = "CUBE",
 	},
@@ -8228,6 +8228,8 @@ TradeSkillMasterDB = {
 				["maxRestock"] = "30",
 				["ignorePlayer"] = {
 				},
+				["maxRestock"] = "30",
+				["minProfit"] = "1s",
 			},
 		},
 		["Shopping"] = {
@@ -10009,7 +10011,7 @@ TradeSkillMasterDB = {
 		},
 		["i:36923"] = {
 		},
-		["i:24478"] = {
+		["i:3577"] = {
 		},
 		["i:10561"] = {
 		},
@@ -10029,7 +10031,7 @@ TradeSkillMasterDB = {
 		},
 		["i:23447"] = {
 		},
-		["i:818"] = {
+		["i:34054"] = {
 		},
 		["i:43103"] = {
 		},
@@ -10079,11 +10081,11 @@ TradeSkillMasterDB = {
 		},
 		["i:12808"] = {
 		},
-		["i:43116"] = {
+		["i:12804"] = {
 		},
 		["i:6037"] = {
 		},
-		["i:43102"] = {
+		["i:36919"] = {
 		},
 		["i:12361"] = {
 		},
@@ -10125,7 +10127,7 @@ TradeSkillMasterDB = {
 		},
 		["i:23437"] = {
 		},
-		["i:11083"] = {
+		["i:12361"] = {
 		},
 		["i:7910"] = {
 		},
@@ -10401,7 +10403,7 @@ TradeSkillMasterDB = {
 		},
 		["i:10577"] = {
 		},
-		["i:43126"] = {
+		["i:3864"] = {
 		},
 	},
 	["r@Hydraxian Waterlords@internalData@csvExpired"] = "itemString,stackSize,quantity,player,time",
@@ -16675,6 +16677,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Crystal Chalcedony Amulet",
+			["numResult"] = 1,
 		},
 		["c:6241905"] = {
 			["mats"] = {
@@ -16704,6 +16708,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Ring of Twilight Shadows",
+			["numResult"] = 1,
 		},
 		["c:1957410"] = {
 			["mats"] = {
@@ -16717,6 +16723,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Deft Huge Citrine",
+			["numResult"] = 1,
 		},
 		["c:12663141"] = {
 			["mats"] = {
@@ -16743,6 +16751,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Sapphire Signet",
+			["numResult"] = 1,
 		},
 		["c:7194028"] = {
 			["mats"] = {
@@ -16756,6 +16766,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Brilliant Cardinal Ruby",
+			["numResult"] = 1,
 		},
 		["c:9214670"] = {
 			["mats"] = {
@@ -16874,6 +16886,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Ruby Pendant of Fire",
+			["numResult"] = 1,
 		},
 		["c:8389779"] = {
 			["mats"] = {
@@ -16916,6 +16930,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Delicate Copper Wire",
+			["numResult"] = 1,
 		},
 		["c:11858057"] = {
 			["mats"] = {
@@ -17061,6 +17077,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Deft Monarch Topaz",
+			["numResult"] = 1,
 		},
 		["c:3387264"] = {
 			["mats"] = {
@@ -17074,6 +17092,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Prismatic Black Diamond",
+			["numResult"] = 1,
 		},
 		["c:579740"] = {
 			["mats"] = {
@@ -17100,6 +17120,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Emerald Lion Ring",
+			["numResult"] = 1,
 		},
 		["c:3596566"] = {
 			["mats"] = {
@@ -17154,6 +17176,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Shifting Twilight Opal",
+			["numResult"] = 1,
 		},
 		["c:2944482"] = {
 			["mats"] = {
@@ -17194,6 +17218,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Diamond Focus Ring",
+			["numResult"] = 1,
 		},
 		["c:13557813"] = {
 			["mats"] = {
@@ -17248,6 +17274,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Living Emerald Pendant",
+			["numResult"] = 1,
 		},
 		["c:14019317"] = {
 			["mats"] = {
@@ -17324,6 +17352,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Heavy Jade Ring",
+			["numResult"] = 1,
 		},
 		["c:6188414"] = {
 			["mats"] = {
@@ -17392,6 +17422,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Scarlet Signet",
+			["numResult"] = 1,
 		},
 		["c:16411419"] = {
 			["mats"] = {
@@ -17405,6 +17437,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Misty Dark Jade",
+			["numResult"] = 1,
 		},
 		["c:177891"] = {
 			["mats"] = {
@@ -17456,6 +17490,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Necklace of the Deep",
+			["numResult"] = 1,
 		},
 		["c:4086548"] = {
 			["mats"] = {
@@ -18069,7 +18105,7 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:10333748"] = {
+		["c:993505"] = {
 			["mats"] = {
 				["i:35624"] = 1,
 				["i:36929"] = 2,
@@ -18085,7 +18121,8 @@ TradeSkillMasterDB = {
 		},
 		["c:14529006"] = {
 			["mats"] = {
-				["i:36930"] = 1,
+				["i:43124"] = 3,
+				["i:39501"] = 1,
 			},
 			["itemString"] = "i:40041",
 			["profession"] = "Jewelcrafting",
@@ -18159,6 +18196,19 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Rough Boomstick",
 			["numResult"] = 1,
+		},
+		["c:9459100"] = {
+			["mats"] = {
+				["i:43120"] = 3,
+				["i:39501"] = 1,
+			},
+			["itemString"] = "i:42744",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Ice Block",
+			["players"] = {
+				["Battlearm"] = true,
+			},
 		},
 		["c:2720072"] = {
 			["mats"] = {
@@ -18284,6 +18334,134 @@ TradeSkillMasterDB = {
 			["name"] = "Ornate Tigerseye Necklace",
 			["numResult"] = 1,
 		},
+		["c:12393811"] = {
+			["mats"] = {
+				["i:43122"] = 3,
+				["i:39501"] = 1,
+			},
+			["itemString"] = "i:43541",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Death Grip",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:8448650"] = {
+			["mats"] = {
+				["i:39774"] = 3,
+				["i:39354"] = 1,
+			},
+			["itemString"] = "i:41531",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Flame Shock",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:11723392"] = {
+			["mats"] = {
+				["i:43124"] = 3,
+				["i:39501"] = 1,
+			},
+			["itemString"] = "i:42963",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Feint",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:14971088"] = {
+			["mats"] = {
+				["i:43116"] = 3,
+				["i:10648"] = 1,
+			},
+			["itemString"] = "i:41108",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Divinity",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:4791349"] = {
+			["mats"] = {
+				["i:43124"] = 3,
+				["i:39502"] = 1,
+			},
+			["itemString"] = "i:42471",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Seduction",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:16379134"] = {
+			["mats"] = {
+				["i:36927"] = 1,
+			},
+			["itemString"] = "i:40032",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Defender's Twilight Opal",
+			["numResult"] = 1,
+		},
+		["c:15710994"] = {
+			["mats"] = {
+				["i:10648"] = 1,
+				["i:43118"] = 3,
+			},
+			["itemString"] = "i:41104",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Cleansing",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:13161647"] = {
+			["mats"] = {
+				["i:36927"] = 1,
+			},
+			["itemString"] = "i:40025",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Timeless Twilight Opal",
+			["numResult"] = 1,
+		},
+		["c:1543497"] = {
+			["mats"] = {
+				["i:43122"] = 3,
+				["i:39501"] = 1,
+			},
+			["itemString"] = "i:45768",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Mutilate",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:1964008"] = {
+			["mats"] = {
+				["i:43124"] = 3,
+				["i:39502"] = 1,
+			},
+			["itemString"] = "i:43432",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Raging Blow",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
 		["c:4441366"] = {
 			["mats"] = {
 				["i:23117"] = 3,
@@ -18314,10 +18492,12 @@ TradeSkillMasterDB = {
 			["name"] = "Citrine Ring of Rapid Healing",
 			["numResult"] = 1,
 		},
-		["c:15710994"] = {
+		["c:16445564"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43118"] = 3,
+				["i:11137"] = 4,
+				["i:20963"] = 4,
+				["i:6037"] = 2,
+				["i:1529"] = 4,
 			},
 			["itemString"] = "i:41104",
 			["profession"] = "Inscription",
@@ -18326,6 +18506,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Precise Bloodstone",
+			["numResult"] = 1,
 		},
 		["c:3107197"] = {
 			["mats"] = {
@@ -18458,11 +18640,11 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:14414086"] = {
+		["c:16466112"] = {
 			["mats"] = {
-				["i:36927"] = 1,
+				["i:36917"] = 1,
 			},
-			["itemString"] = "i:40044",
+			["itemString"] = "i:39908",
 			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
@@ -18561,6 +18743,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Delicate Blood Garnet",
+			["numResult"] = 1,
 		},
 		["c:11194805"] = {
 			["mats"] = {
@@ -19476,10 +19660,10 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:15195160"] = {
+		["c:12868299"] = {
 			["mats"] = {
-				["i:35624"] = 1,
-				["i:36932"] = 2,
+				["i:39774"] = 3,
+				["i:39354"] = 1,
 			},
 			["itemString"] = "i:43247",
 			["profession"] = "Jewelcrafting",
@@ -20038,9 +20222,10 @@ TradeSkillMasterDB = {
 		},
 		["c:8578643"] = {
 			["mats"] = {
-				["i:43108"] = 1,
+				["i:10648"] = 1,
+				["i:43118"] = 3,
 			},
-			["itemString"] = "i:43125",
+			["itemString"] = "i:40909",
 			["profession"] = "Inscription",
 			["numResult"] = 1,
 			["name"] = "Darkflame Ink",
@@ -20117,12 +20302,12 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:11309901"] = {
+		["c:6576019"] = {
 			["mats"] = {
-				["i:43124"] = 1,
-				["i:39501"] = 2,
+				["i:43120"] = 3,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:33462",
+			["itemString"] = "i:40916",
 			["profession"] = "Inscription",
 			["numResult"] = 2,
 			["name"] = "Scroll of Strength VI",
@@ -22211,7 +22396,7 @@ TradeSkillMasterDB = {
 				["i:43124"] = 3,
 				["i:39502"] = 1,
 			},
-			["itemString"] = "i:43827",
+			["itemString"] = "i:43553",
 			["profession"] = "Inscription",
 			["numResult"] = 1,
 			["name"] = "Glyph of Death Strike",
@@ -22995,6 +23180,10 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Box of Bombs",
 			["numResult"] = 1,
+			["name"] = "Glyph of Misdirection",
+			["players"] = {
+				["Battlearm"] = true,
+			},
 		},
 		["c:7575672"] = {
 			["mats"] = {
@@ -23302,6 +23491,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Dark Jade Focusing Lens",
+			["numResult"] = 1,
 		},
 		["c:14913052"] = {
 			["mats"] = {

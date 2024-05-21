@@ -478,6 +478,12 @@ PlaterDB = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 3977,
 		},
+		[22572] = {
+			["isChanneled"] = false,
+			["source"] = "Gordok Brute",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 11441,
+		},
 		[9256] = {
 			["isChanneled"] = false,
 			["source"] = "High Inquisitor Whitemane",
@@ -616,6 +622,12 @@ PlaterDB = {
 			["isChanneled"] = false,
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 36940,
+		},
+		[57645] = {
+			["type"] = "DEBUFF",
+			["source"] = "Twisted Visage",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 30623,
 		},
 		[38240] = {
 			["isChanneled"] = false,
@@ -2934,12 +2946,17 @@ PlaterDB = {
 			["source"] = "Shadowmage",
 			["npcID"] = 8550,
 		},
-		[69900] = {
-			["encounterName"] = "Escaped from Arthas",
-			["source"] = "Spiritual Reflection",
+		[7057] = {
+			["isChanneled"] = false,
+			["source"] = "Haunted Servitor",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 3875,
+		},
+		[13444] = {
 			["isChanneled"] = false,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 37068,
+			["source"] = "Skeletal Highborne",
+			["npcID"] = 11476,
 		},
 		[3234] = {
 			["isChanneled"] = false,
@@ -4802,7 +4819,7 @@ PlaterDB = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 26641,
 		},
-		[13445] = {
+		[13748] = {
 			["isChanneled"] = false,
 			["source"] = "Jungle Stalker",
 			["event"] = "SPELL_CAST_SUCCESS",
@@ -4984,6 +5001,7 @@ PlaterDB = {
 		},
 		[13005] = {
 			["isChanneled"] = false,
+			["source"] = "Scarlet Sorcerer",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Green Paladin",
 			["npcID"] = 32342,
@@ -17050,7 +17068,7 @@ PlaterDB = {
 				["nameplateMotionSpeed"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateGlobalScale"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateShowEnemyMinions"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/xVermin/Frames/CustomContainers.lua\"]:49: in function <Interface/AddOns/xVermin/Frames/CustomContainers.lua:35>\n",
-				["nameplateShowEnemyPets"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:8410: in function `RefreshAutoToggle'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2301: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3909: in function `EventHandler'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3920: in function `RunFunctionForEvent'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2317: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3909: in function <Interface/AddOns/Plater/Plater.lua:3905>\n",
+				["nameplateShowEnemyPets"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:8410: in function `RefreshAutoToggle'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2301: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3909: in function <Interface/AddOns/Plater/Plater.lua:3905>\n",
 				["nameplateShowFriendlyNPCs"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateSelectedScale"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateMinAlphaDistance"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
@@ -19333,6 +19351,11 @@ PlaterDB = {
 					"Molten Core", -- [2]
 					"enUS", -- [3]
 				},
+				[11667] = {
+					"Flameguard", -- [1]
+					"Molten Core", -- [2]
+					"enUS", -- [3]
+				},
 				[16145] = {
 					"Death Knight Captain", -- [1]
 					"Naxxramas", -- [2]
@@ -19398,8 +19421,8 @@ PlaterDB = {
 					"Dire Maul", -- [2]
 					"enUS", -- [3]
 				},
-				[14370] = {
-					"Cadaverous Worm", -- [1]
+				[11475] = {
+					"Eldreth Phantasm", -- [1]
 					"Dire Maul", -- [2]
 					"enUS", -- [3]
 				},
@@ -19822,9 +19845,9 @@ PlaterDB = {
 					"Portal Guardian", -- [1]
 					"Violet Hold", -- [2]
 				},
-				[11348] = {
-					"Zealot Zath", -- [1]
-					"Zul'Gurub", -- [2]
+				[17942] = {
+					"Quagmirran", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
 				},
 				[135258] = {
 					"Irontide Marauder", -- [1]
@@ -19943,6 +19966,19 @@ PlaterDB = {
 				[11043] = {
 					"Crimson Monk", -- [1]
 					"Stratholme", -- [2]
+				},
+				[16290] = {
+					"Fallout Slime", -- [1]
+					"Naxxramas", -- [2]
+				},
+				[8911] = {
+					"Fireguard Destroyer", -- [1]
+					"Blackrock Depths", -- [2]
+					"enUS", -- [3]
+				},
+				[18556] = {
+					"Phasing Soldier", -- [1]
+					"Auchindoun: Auchenai Crypts", -- [2]
 				},
 				[30621] = {
 					"Plin", -- [1]
@@ -20073,6 +20109,54 @@ PlaterDB = {
 				[36535] = {
 					"Corrupted Soul Fragment", -- [1]
 					"The Forge of Souls", -- [2]
+					"enUS", -- [3]
+				},
+				[29214] = {
+					"Anub'ar Assassin", -- [1]
+					"Azjol-Nerub", -- [2]
+				},
+				[27981] = {
+					"Malformed Ooze", -- [1]
+					"Halls of Stone", -- [2]
+				},
+				[29819] = {
+					"Drakkari Lancer", -- [1]
+					"Gundrak", -- [2]
+				},
+				[29310] = {
+					"Jedoga Shadowseeker", -- [1]
+					"Ahn'kahet: The Old Kingdom", -- [2]
+				},
+				[16406] = {
+					"Phantom Attendant", -- [1]
+					"Karazhan", -- [2]
+				},
+				[51660] = {
+					"Scarlet Chaplain", -- [1]
+					"Scarlet Monastery", -- [2]
+					"enUS", -- [3]
+				},
+				[10876] = {
+					"Undead Scarab", -- [1]
+					"Stratholme", -- [2]
+				},
+				[4293] = {
+					"Scarlet Scryer", -- [1]
+					"Scarlet Monastery", -- [2]
+					"enUS", -- [3]
+				},
+				[4301] = {
+					"Scarlet Centurion", -- [1]
+					"Scarlet Monastery", -- [2]
+					"enUS", -- [3]
+				},
+				[16803] = {
+					"Death Knight Understudy", -- [1]
+					"Naxxramas", -- [2]
+				},
+				[21346] = {
+					"Sightless Eye", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
 					"enUS", -- [3]
 				},
 				[128435] = {
@@ -20309,6 +20393,44 @@ PlaterDB = {
 				[17400] = {
 					"Felguard Annihilator", -- [1]
 					"Hellfire Citadel: The Blood Furnace", -- [2]
+				},
+				[20865] = {
+					"Protean Horror", -- [1]
+					"Tempest Keep: The Arcatraz", -- [2]
+				},
+				[137830] = {
+					"Pallid Gorger", -- [1]
+					"Waycrest Manor", -- [2]
+				},
+				[130485] = {
+					"Mechanized Peacekeeper", -- [1]
+					"The MOTHERLODE!!", -- [2]
+				},
+				[11477] = {
+					"Rotting Highborne", -- [1]
+					"Dire Maul", -- [2]
+					"enUS", -- [3]
+				},
+				[29119] = {
+					"Anub'ar Necromancer", -- [1]
+					"Azjol-Nerub", -- [2]
+				},
+				[7345] = {
+					"Splinterbone Captain", -- [1]
+					"Razorfen Downs", -- [2]
+				},
+				[205997] = {
+					"Mirror Image", -- [1]
+					"The Oculus", -- [2]
+					"enUS", -- [3]
+				},
+				[7271] = {
+					"Witch Doctor Zum'rah", -- [1]
+					"Zul'Farrak", -- [2]
+				},
+				[16486] = {
+					"Web Wrap", -- [1]
+					"Naxxramas", -- [2]
 				},
 				[46260] = {
 					"Searing Destroyer", -- [1]
@@ -20588,10 +20710,6 @@ PlaterDB = {
 					"Toothslobber", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[5277] = {
-					"Nightmare Scalebane", -- [1]
-					"Sunken Temple", -- [2]
-				},
 				[7332] = {
 					"Withered Spearhide", -- [1]
 					"Razorfen Downs", -- [2]
@@ -20616,9 +20734,10 @@ PlaterDB = {
 					"Slad'ran Viper", -- [1]
 					"Gundrak", -- [2]
 				},
-				[27649] = {
-					"Phantasmal Murloc", -- [1]
-					"The Oculus", -- [2]
+				[37713] = {
+					"Deathwhisper Torturer", -- [1]
+					"Pit of Saron", -- [2]
+					"enUS", -- [3]
 				},
 				[37713] = {
 					"Deathwhisper Torturer", -- [1]
@@ -20630,9 +20749,9 @@ PlaterDB = {
 					"Uldaman", -- [2]
 					"enUS", -- [3]
 				},
-				[17478] = {
-					"Bleeding Hollow Scryer", -- [1]
-					"Hellfire Citadel: Ramparts", -- [2]
+				[27281] = {
+					"Ritual Channeler", -- [1]
+					"Utgarde Pinnacle", -- [2]
 				},
 				[134514] = {
 					"Abyssal Cultist", -- [1]
@@ -20642,17 +20761,17 @@ PlaterDB = {
 					"Avian Darkhawk", -- [1]
 					"Auchindoun: Sethekk Halls", -- [2]
 				},
-				[17414] = {
-					"Shadowmoon Technician", -- [1]
-					"Hellfire Citadel: The Blood Furnace", -- [2]
+				[27649] = {
+					"Phantasmal Murloc", -- [1]
+					"The Oculus", -- [2]
 				},
 				[16057] = {
 					"Rotting Maggot", -- [1]
 					"Naxxramas", -- [2]
 				},
-				[14884] = {
-					"Parasitic Serpent", -- [1]
-					"Zul'Gurub", -- [2]
+				[17478] = {
+					"Bleeding Hollow Scryer", -- [1]
+					"Hellfire Citadel: Ramparts", -- [2]
 				},
 				[19557] = {
 					"Greater Frayer", -- [1]
@@ -20688,9 +20807,9 @@ PlaterDB = {
 					"Underbog Lord", -- [1]
 					"Coilfang: The Underbog", -- [2]
 				},
-				[17862] = {
-					"Captain Skarloc", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[14532] = {
+					"Razzashi Venombrood", -- [1]
+					"Zul'Gurub", -- [2]
 				},
 				[8903] = {
 					"Anvilrage Captain", -- [1]
@@ -20700,9 +20819,9 @@ PlaterDB = {
 					"Coilfang Defender", -- [1]
 					"Coilfang: The Slave Pens", -- [2]
 				},
-				[32191] = {
-					"Azure Stalker", -- [1]
-					"Violet Hold", -- [2]
+				[17862] = {
+					"Captain Skarloc", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[30176] = {
 					"Ahn'kahar Guardian", -- [1]
@@ -20997,6 +21116,30 @@ PlaterDB = {
 					"Sethekk Oracle", -- [1]
 					"Auchindoun: Sethekk Halls", -- [2]
 				},
+				[134139] = {
+					"Shrine Templar", -- [1]
+					"Shrine of the Storm", -- [2]
+				},
+				[6021] = {
+					"Boar Spirit", -- [1]
+					"Razorfen Kraul", -- [2]
+				},
+				[17959] = {
+					"Coilfang Slavehandler", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
+				},
+				[17991] = {
+					"Rokmar the Crackler", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
+				},
+				[9156] = {
+					"Ambassador Flamelash", -- [1]
+					"Blackrock Depths", -- [2]
+				},
+				[27971] = {
+					"Unrelenting Construct", -- [1]
+					"Halls of Stone", -- [2]
+				},
 				[129600] = {
 					"Bilge Rat Brinescale", -- [1]
 					"Freehold", -- [2]
@@ -21027,10 +21170,9 @@ PlaterDB = {
 					"Servant of Antu'sul", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[26499] = {
-					"Arthas", -- [1]
-					"The Culling of Stratholme", -- [2]
-					"enUS", -- [3]
+				[18311] = {
+					"Ethereal Crypt Raider", -- [1]
+					"Auchindoun: Mana-Tombs", -- [2]
 				},
 				[28578] = {
 					"Hardened Steel Reaver", -- [1]
@@ -21081,10 +21223,6 @@ PlaterDB = {
 				[122984] = {
 					"Dazar'ai Colossus", -- [1]
 					"Atal'Dazar", -- [2]
-				},
-				[31009] = {
-					"Azure Spellbreaker", -- [1]
-					"Violet Hold", -- [2]
 				},
 				[10407] = {
 					"Fleshflayer Ghoul", -- [1]
@@ -21372,6 +21510,22 @@ PlaterDB = {
 					"Meathook", -- [1]
 					"The Culling of Stratholme", -- [2]
 				},
+				[31010] = {
+					"Azure Mage Slayer", -- [1]
+					"Violet Hold", -- [2]
+				},
+				[16037] = {
+					"Plagued Bat", -- [1]
+					"Naxxramas", -- [2]
+				},
+				[18493] = {
+					"Auchenai Soulpriest", -- [1]
+					"Auchindoun: Auchenai Crypts", -- [2]
+				},
+				[134284] = {
+					"Fallen Deathspeaker", -- [1]
+					"The Underrot", -- [2]
+				},
 				[16809] = {
 					"Warbringer O'mrogg", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
@@ -21414,19 +21568,47 @@ PlaterDB = {
 					"Utgarde Keep", -- [2]
 					"enUS", -- [3]
 				},
+				[126919] = {
+					"Irontide Stormcaller", -- [1]
+					"Freehold", -- [2]
+				},
+				[5713] = {
+					"Gasher", -- [1]
+					"Sunken Temple", -- [2]
+				},
+				[19016] = {
+					"Hellfire Familiar", -- [1]
+					"Hellfire Citadel: The Blood Furnace", -- [2]
+				},
+				[26529] = {
+					"Meathook", -- [1]
+					"The Culling of Stratholme", -- [2]
+				},
+				[21127] = {
+					"Coilfang Tempest", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
+				},
+				[4812] = {
+					"Twilight Loreseeker", -- [1]
+					"Blackfathom Deeps", -- [2]
+					"enUS", -- [3]
+				},
+				[21126] = {
+					"Coilfang Scale-Healer", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
+				},
 				[4798] = {
 					"Fallenroot Shadowstalker", -- [1]
 					"Blackfathom Deeps", -- [2]
 					"enUS", -- [3]
 				},
+				[5259] = {
+					"Atal'ai Witch Doctor", -- [1]
+					"Sunken Temple", -- [2]
+				},
 				[2408] = {
 					"Snapjaw", -- [1]
 					"The Escape From Durnholde", -- [2]
-				},
-				[4814] = {
-					"Twilight Elementalist", -- [1]
-					"Blackfathom Deeps", -- [2]
-					"enUS", -- [3]
 				},
 				[4822] = {
 					"Snapping Crustacean", -- [1]
@@ -21451,9 +21633,9 @@ PlaterDB = {
 					"Uldaman", -- [2]
 					"enUS", -- [3]
 				},
-				[128967] = {
-					"Ashvane Sniper", -- [1]
-					"Siege of Boralus", -- [2]
+				[21128] = {
+					"Coilfang Ray", -- [1]
+					"Coilfang: The Slave Pens", -- [2]
 				},
 				[11783] = {
 					"Theradrim Shardling", -- [1]
@@ -21506,9 +21688,9 @@ PlaterDB = {
 					"Shadowfang Keep", -- [2]
 					"enUS", -- [3]
 				},
-				[17801] = {
-					"Coilfang Siren", -- [1]
-					"Coilfang: The Steamvault", -- [2]
+				[30083] = {
+					"Marauding Geist", -- [1]
+					"Naxxramas", -- [2]
 				},
 				[134284] = {
 					"Fallen Deathspeaker", -- [1]
@@ -21575,9 +21757,9 @@ PlaterDB = {
 					"Ethereal Sorcerer", -- [1]
 					"Auchindoun: Mana-Tombs", -- [2]
 				},
-				[28580] = {
-					"Hardened Steel Skycaller", -- [1]
-					"Halls of Lightning", -- [2]
+				[28249] = {
+					"Devouring Ghoul", -- [1]
+					"The Culling of Stratholme", -- [2]
 				},
 				[11520] = {
 					"Taragaman the Hungerer", -- [1]
@@ -21649,9 +21831,9 @@ PlaterDB = {
 					"Omor the Unscarred", -- [1]
 					"Hellfire Citadel: Ramparts", -- [2]
 				},
-				[7333] = {
-					"Withered Battle Boar", -- [1]
-					"Razorfen Downs", -- [2]
+				[29117] = {
+					"Anub'ar Champion", -- [1]
+					"Azjol-Nerub", -- [2]
 				},
 				[137103] = {
 					"Blood Visage", -- [1]
@@ -21924,13 +22106,9 @@ PlaterDB = {
 					"Prince Taldaram", -- [1]
 					"Ahn'kahet: The Old Kingdom", -- [2]
 				},
-				[13022] = {
-					"Whip Lasher", -- [1]
-					"Dire Maul", -- [2]
-				},
-				[21104] = {
-					"Rift Keeper", -- [1]
-					"Opening of the Dark Portal", -- [2]
+				[3100] = {
+					"Hakkekød", -- [1]
+					"Razorfen Kraul", -- [2]
 				},
 				[9545] = {
 					"Grim Patron", -- [1]
@@ -21955,6 +22133,11 @@ PlaterDB = {
 				[131685] = {
 					"Runic Disciple", -- [1]
 					"Waycrest Manor", -- [2]
+				},
+				[37069] = {
+					"Lumbering Abomination", -- [1]
+					"Halls of Reflection", -- [2]
+					"enUS", -- [3]
 				},
 				[19306] = {
 					"Mana Leech", -- [1]
@@ -22061,10 +22244,6 @@ PlaterDB = {
 					"Razorfen Kraul", -- [2]
 					"enUS", -- [3]
 				},
-				[30245] = {
-					"Nexus Lord", -- [1]
-					"The Eye of Eternity", -- [2]
-				},
 				[30277] = {
 					"Ahn'kahar Slasher", -- [1]
 					"Ahn'kahet: The Old Kingdom", -- [2]
@@ -22141,9 +22320,9 @@ PlaterDB = {
 					"Mage Hunter Ascendant", -- [1]
 					"The Nexus", -- [2]
 				},
-				[16807] = {
-					"Grand Warlock Nethekurse", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
+				[11321] = {
+					"Molten Elemental", -- [1]
+					"Ragefire Chasm", -- [2]
 				},
 				[28838] = {
 					"Titanium Vanguard", -- [1]
@@ -22194,6 +22373,11 @@ PlaterDB = {
 				[36551] = {
 					"Spiteful Apparition", -- [1]
 					"The Forge of Souls", -- [2]
+					"enUS", -- [3]
+				},
+				[4805] = {
+					"Blackfathom Sea Witch", -- [1]
+					"Blackfathom Deeps", -- [2]
 					"enUS", -- [3]
 				},
 				[139422] = {
@@ -22315,9 +22499,9 @@ PlaterDB = {
 					"Bloodhound Mastiff", -- [1]
 					"Blackrock Depths", -- [2]
 				},
-				[26536] = {
-					"Mindless Servant", -- [1]
-					"Utgarde Pinnacle", -- [2]
+				[16593] = {
+					"Shattered Hand Brawler", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
 				[28583] = {
 					"Blistering Steamrager", -- [1]
@@ -22461,10 +22645,6 @@ PlaterDB = {
 					"Razorfen Kraul", -- [2]
 					"enUS", -- [3]
 				},
-				[17357] = {
-					"Creeping Oozeling", -- [1]
-					"Hellfire Citadel: The Shattered Halls", -- [2]
-				},
 				[122969] = {
 					"Zanchuli Witch-Doctor", -- [1]
 					"Atal'Dazar", -- [2]
@@ -22486,9 +22666,9 @@ PlaterDB = {
 					"The Culling of Stratholme", -- [2]
 					"enUS", -- [3]
 				},
-				[27656] = {
-					"Ley-Guardian Eregos", -- [1]
-					"The Oculus", -- [2]
+				[23562] = {
+					"Unstoppable Abomination", -- [1]
+					"Naxxramas", -- [2]
 				},
 				[4799] = {
 					"Fallenroot Hellcaller", -- [1]
@@ -22524,8 +22704,12 @@ PlaterDB = {
 					"Uldaman", -- [2]
 					"enUS", -- [3]
 				},
-				[4855] = {
-					"Stonevault Brawler", -- [1]
+				[17357] = {
+					"Creeping Oozeling", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
+				[4863] = {
+					"Jadespine Basilisk", -- [1]
 					"Uldaman", -- [2]
 					"enUS", -- [3]
 				},
@@ -22592,6 +22776,10 @@ PlaterDB = {
 					"Midnight", -- [1]
 					"Karazhan", -- [2]
 				},
+				[122971] = {
+					"Dazar'ai Juggernaut", -- [1]
+					"Atal'Dazar", -- [2]
+				},
 				[7022] = {
 					"Venomlash Scorpid", -- [1]
 					"Uldaman", -- [2]
@@ -22651,9 +22839,10 @@ PlaterDB = {
 					"Uldaman", -- [2]
 					"enUS", -- [3]
 				},
-				[32582] = {
-					"Ethereal Sphere ", -- [1]
-					"Violet Hold", -- [2]
+				[12201] = {
+					"Princess Theradras", -- [1]
+					"Maraudon", -- [2]
+					"enUS", -- [3]
 				},
 				[10426] = {
 					"Crimson Inquisitor", -- [1]
@@ -22731,10 +22920,9 @@ PlaterDB = {
 					"Anub'ar Necromancer", -- [1]
 					"Azjol-Nerub", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
-					"enUS", -- [3]
+				[29096] = {
+					"Anub'ar Champion", -- [1]
+					"Azjol-Nerub", -- [2]
 				},
 				[7286] = {
 					"Zul'Farrak Zombie", -- [1]
@@ -23438,6 +23626,18 @@ PlaterDB = {
 					"Razorfen Kraul", -- [2]
 					"enUS", -- [3]
 				},
+				[17381] = {
+					"The Maker", -- [1]
+					"Hellfire Citadel: The Blood Furnace", -- [2]
+				},
+				[16808] = {
+					"Warchief Kargath Bladefist", -- [1]
+					"Hellfire Citadel: The Shattered Halls", -- [2]
+				},
+				[30338] = {
+					"Ahn'kahar Swarmer", -- [1]
+					"Ahn'kahet: The Old Kingdom", -- [2]
+				},
 				[4512] = {
 					"Rotting Agam'ar", -- [1]
 					"Razorfen Kraul", -- [2]
@@ -23934,10 +24134,9 @@ PlaterDB = {
 					"Baron Rafe Dreuger", -- [1]
 					"Karazhan", -- [2]
 				},
-				[51660] = {
-					"Scarlet Chaplain", -- [1]
-					"Scarlet Monastery", -- [2]
-					"enUS", -- [3]
+				[29932] = {
+					"Eck the Ferocious", -- [1]
+					"Gundrak", -- [2]
 				},
 				[14986] = {
 					"Shade of Jin'do", -- [1]

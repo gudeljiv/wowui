@@ -52,9 +52,9 @@ _detalhes_global = {
 			1926, -- [1]
 			"Sunseeker Geomancer", -- [2]
 		},
-		[46163] = {
-			1894, -- [1]
-			"[*] Flame Strike", -- [2]
+		[7057] = {
+			1070, -- [1]
+			"Haunted Servitor", -- [2]
 		},
 		[32911] = {
 			1895, -- [1]
@@ -564,9 +564,9 @@ _detalhes_global = {
 			668, -- [1]
 			"Baron Geddon", -- [2]
 		},
-		[7057] = {
-			1070, -- [1]
-			"Haunted Servitor", -- [2]
+		[413265] = {
+			369, -- [1]
+			"Scourge Reanimator", -- [2]
 		},
 		[59422] = {
 			373, -- [1]
@@ -1085,7 +1085,7 @@ _detalhes_global = {
 	},
 	["last_changelog_size"] = 22625,
 	["immersion_unit_special_icons"] = true,
-	["lastUpdateWarning"] = 1701859652,
+	["lastUpdateWarning"] = 1716221877,
 	["npcid_pool"] = {
 		[0] = "[*] Shadow Word: Death",
 		[19261] = "Infernal Warbringer",
@@ -1771,6 +1771,7 @@ _detalhes_global = {
 		[8814] = "Bloodmage Thalnos",
 		[49617] = 2,
 		[19891] = 2,
+		[408] = 4,
 		[46035] = "Sunblade Magister",
 		[8990] = "Scarlet Commander Mograine",
 		[40086] = "Dragon Turtle",
@@ -1886,11 +1887,14 @@ _detalhes_global = {
 		[83098] = 8,
 		[69409] = "The Lich King",
 		[71584] = 5,
+		[18072] = "Gordok Brute",
 		[30482] = 8,
 		[28499] = 7,
 		[34785] = "Tempest-Forge Peacekeeper",
 		[9232] = "High Inquisitor Whitemane",
 		[6673] = 1,
+		[11327] = 4,
+		[22678] = "High Inquisitor Fairbanks",
 		[6713] = "Murkshallow Snapclaw",
 		[55767] = 5,
 		[15501] = "Razorfen Earthbreaker",
@@ -2098,6 +2102,7 @@ _detalhes_global = {
 		[8050] = 7,
 		[32216] = 1,
 		[16128] = "Immol'thar",
+		[14177] = 4,
 		[8122] = 5,
 		[34351] = "Mutate Fleshlasher",
 		[1022] = 2,
@@ -2276,7 +2281,7 @@ _detalhes_global = {
 		[70483] = 8,
 		[44533] = "Wretched Skulker",
 		[424455] = 2,
-		[34490] = 3,
+		[17253] = "Drachenfalke <Sportlich-MirageRaceway>",
 		[13812] = 3,
 		[19492] = "Garr",
 		[424457] = 11,
@@ -2341,6 +2346,7 @@ _detalhes_global = {
 		[122] = 8,
 		[7812] = "Hathjuk <Fearnando-Gehennas>",
 		[36093] = "Risen Drakkari Warrior",
+		[15716] = "Gordok Brute",
 		[15732] = "Firesworn",
 		[70747] = 8,
 		[79063] = 2,
@@ -2857,7 +2863,7 @@ _detalhes_global = {
 		[48266] = 6,
 		[84626] = 2,
 		[70145] = "Risen Witch Doctor",
-		[56646] = "Enraged Fire Elemental",
+		[1133] = 8,
 		[1135] = 2,
 		[22899] = "Immol'thar",
 		[15241] = "Blazing Fireguard",
@@ -6467,7 +6473,7 @@ _detalhes_global = {
 			["MAGE"] = 5.895000000004075,
 			["DRUID"] = 479.2090000000026,
 			["DEATHKNIGHT"] = 4873.034000000102,
-			["PRIEST"] = 48832.15699999977,
+			["PRIEST"] = 49598.63899999976,
 		},
 		["DRUID"] = 108555.0839999999,
 		["ROGUE"] = 301.7260000000006,
@@ -7774,6 +7780,11 @@ __details_backup = {
 		"2024-05-19 18:00:08 | actor removed Rippah (ungrouped)", -- [29]
 	},
 	["_instance_backup"] = {
+	},
+	["_instance_backup"] = {
+	},
+	["_exit_error"] = {
+		"2023-10-24 18:50:18 | Saving Play Time: Interface/AddOns/Details/core/gears.lua:3108: attempt to call field 'GetStartupTime' (a nil value)", -- [1]
 	},
 }
 __details_debug = {

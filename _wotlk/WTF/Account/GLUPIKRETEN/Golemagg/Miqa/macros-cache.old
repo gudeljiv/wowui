@@ -7,12 +7,12 @@ VER 3 0000000001000008 "dispel" "134400"
 /cast [@mouseover,exists,help][@target,exists,help][] Dispel Magic
 END
 VER 3 000000000100000A "flash" "134400"
-#showtooltip
+#showtooltip Flash Heal
+/cast Inner Focus
 /cast [@mouseover,exists,help][@target,exists,help][] Flash Heal
 END
 VER 3 000000000100000B "flay" "134400"
 #showtooltip Mind Flay
-/startattack
 /use [nochanneling:Mind Flay] Mind Flay
 END
 VER 3 0000000001000004 "heal" "134400"

@@ -1,82 +1,81 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
-	["height"] = 300,
 	["messageHistory"] = {
 		{
-			"Level: 0d 0h 0m 0s", -- [1]
+			"Level: 0d 0h 38m 18s", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
-			"World transfer pending...", -- [1]
+			"Skill 613 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [2]
 		{
-			"Got new connection 3", -- [1]
+			"Skill 733 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [3]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Skill 183 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [4]
 		{
-			"Time played:", -- [1]
+			"Skill 56 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"Total: 1d 5h 49m 30s", -- [1]
+			"Skill 228 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"Level: 0d 0h 6m 54s", -- [1]
+			"Skill 78 increased from 180 to 185", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"World transfer pending...", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 1d 5h 19m 8s", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 0d 0h 0m 0s", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"Time set to 5/19/2024 (Sun) 14:02", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [11]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [12]
 		{
-			"Total: 1d 5h 52m 29s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [13]
 		{
-			"Level: 0d 0h 9m 53s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [14]
 		{
-			"Time set to 5/19/2024 (Sun) 14:02", -- [1]
+			"Total: 1d 5h 23m 40s", -- [1]
 			0, -- [2]
 		}, -- [15]
 		{
-			"World transfer pending...", -- [1]
+			"Level: 0d 0h 4m 32s", -- [1]
 			0, -- [2]
 		}, -- [16]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [17]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [18]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
@@ -84,75 +83,75 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [20]
 		{
-			"Level: 0d 0h 16m 36s", -- [1]
+			"Total: 1d 5h 23m 44s", -- [1]
 			0, -- [2]
 		}, -- [21]
 		{
-			"Skill 810 increased from 7 to 8", -- [1]
+			"Level: 0d 0h 4m 36s", -- [1]
 			0, -- [2]
 		}, -- [22]
 		{
-			"Skill 810 increased from 8 to 9", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [23]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [24]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [25]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [26]
 		{
-			"Time set to 5/19/2024 (Sun) 14:14", -- [1]
+			"Total: 1d 5h 24m 13s", -- [1]
 			0, -- [2]
 		}, -- [27]
 		{
-			"Time played:", -- [1]
+			"Level: 0d 0h 5m 5s", -- [1]
 			0, -- [2]
 		}, -- [28]
 		{
-			"Total: 1d 6h 5m 1s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [29]
 		{
-			"Level: 0d 0h 22m 25s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [30]
 		{
-			"Skill 613 increased from 190 to 195", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [31]
 		{
-			"Skill 733 increased from 190 to 195", -- [1]
+			"Time set to 5/18/2024 (Sat) 21:41", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"Skill 183 increased from 190 to 195", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
-			"Skill 56 increased from 190 to 195", -- [1]
+			"Total: 1d 5h 25m 34s", -- [1]
 			0, -- [2]
 		}, -- [34]
 		{
-			"Skill 228 increased from 190 to 195", -- [1]
+			"Level: 0d 0h 6m 26s", -- [1]
 			0, -- [2]
 		}, -- [35]
 		{
-			"Skill 78 increased from 190 to 195", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [36]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [37]
 		{
-			"Total: 1d 6h 17m 38s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [38]
 		{
@@ -160,419 +159,419 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [39]
 		{
-			"SSAO type set to 2", -- [1]
+			"Total: 1d 5h 31m 40s", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"SSAO type set to 0", -- [1]
+			"Level: 0d 0h 12m 32s", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"Resample quality changed to 2", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"SSAO type set to 1", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"set pending gxRestart", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"World transfer pending...", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [46]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"Time played:", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"Total: 1d 6h 26m 51s", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"Level: 0d 0h 9m 13s", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"World transfer pending...", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"Time played:", -- [1]
+			"Multithreaded volumetric fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"Total: 1d 6h 26m 55s", -- [1]
+			"Multithreaded Refraction Pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"Level: 0d 0h 9m 17s", -- [1]
+			"Multithreaded miscellaneous passes enabled.", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"World transfer pending...", -- [1]
+			"Multithreaded decal passes disabled.", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded outline passes disabled.", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
+			"Use trigger on BeginDrawComplete enabled.", -- [1]
+			4, -- [2]
 		}, -- [59]
 		{
-			"Time played:", -- [1]
+			"Multithreaded alpha pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"Total: 1d 6h 27m 13s", -- [1]
+			"Multithreaded daynight update enabled.", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"Level: 0d 0h 9m 35s", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"set pending gxRestart", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"SSAO type set to 2", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"Resample quality changed to 3", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"World transfer pending...", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"Got new connection 3", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"Weather changed to 2, intensity 0.250000\n", -- [1]
+			"Spell Clutter disabled", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"Weather changed to 2, intensity 0.250000\n", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"Time played:", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"Total: 1d 6h 41m 4s", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"Level: 0d 0h 23m 26s", -- [1]
+			"Shadow cascade blending changed to 0", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"Skill 613 increased from 195 to 200", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"Skill 733 increased from 195 to 200", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"Skill 183 increased from 195 to 200", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"Skill 56 increased from 195 to 200", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"Skill 228 increased from 195 to 200", -- [1]
+			"SSAO type set to 1", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"Skill 78 increased from 195 to 200", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"Time played:", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"Total: 1d 6h 45m 43s", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"Level: 0d 0h 0m 0s", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"World transfer pending...", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"Got new connection 3", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"Time played:", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"Total: 1d 6h 48m 23s", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"Level: 0d 0h 2m 40s", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"Skill 762 increased from 75 to 150", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"[IBN_BackInterface] [F] Session with Battle.net destroyed.", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"[GlueLogin] [F] Disconnected from WoW previouslyConnected=\"1\"", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"[GlueLogin] [F] Resetting", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"[IBN_Login] [F] Destroying isInitialized=\"1\"", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"[IBN_Login] [F] Initializing", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"[GlueLogin] [F] Logon complete.", -- [1]
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1716123832\" expirationTime=\"1716138232\"", -- [1]
+			"[GlueLogin] [F] Resetting", -- [1]
 			0, -- [2]
 		}, -- [102]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			"[IBN_Login] [F] Initializing", -- [1]
 			0, -- [2]
 		}, -- [103]
 		{
-			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [104]
 		{
-			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [105]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [106]
 		{
-			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [107]
 		{
-			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			"[GlueLogin] [F] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [108]
 		{
-			"[GlueLogin] [F] Realm list ready.", -- [1]
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1716119010\" expirationTime=\"1716133410\"", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"[IBN_Login] [F] Joining realm subRegion=\"43-4-89\" realmAddress=\"43-4-8\"", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"[IBN_Login] [F] Front disconnecting connectionId=\"2\"", -- [1]
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
-			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [115]
 		{
-			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
+			"[GlueLogin] [F] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [116]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
+			"[IBN_Login] [F] Joining realm subRegion=\"43-4-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [117]
 		{
-			"Got new connection 2", -- [1]
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [118]
 		{
-			"[IBN_Login] [F] Front disconnected connectionId=\"2\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [119]
 		{
-			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [120]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [121]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [122]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [123]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [124]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [125]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [127]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"Proficiency in item class 2 set to 0x0000084410", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"Proficiency in item class 2 set to 0x000008c410", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"Proficiency in item class 2 set to 0x000008c410", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Time set to 5/19/2024 (Sun) 15:03", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Proficiency in item class 2 set to 0x0000084410", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"Total: 1d 6h 53m 29s", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"Level: 0d 0h 7m 46s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Total: 1d 6h 53m 29s", -- [1]
+			"Time set to 5/19/2024 (Sun) 13:43", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"Level: 0d 0h 7m 46s", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
@@ -580,75 +579,75 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [144]
 		{
-			"Total: 1d 6h 53m 33s", -- [1]
+			"Total: 1d 5h 33m 32s", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Level: 0d 0h 7m 50s", -- [1]
+			"Level: 0d 0h 14m 24s", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"SSAO type set to 1", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"SSAO type set to 0", -- [1]
+			"Total: 1d 5h 33m 32s", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"Resample quality changed to 2", -- [1]
+			"Level: 0d 0h 14m 24s", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"Resample quality changed to 1", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Total: 1d 5h 33m 36s", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"Resample quality changed to 2", -- [1]
+			"Level: 0d 0h 14m 28s", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"set pending gxRestart", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [155]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [156]
 		{
-			"Time played:", -- [1]
+			"Total: 1d 5h 39m 30s", -- [1]
 			0, -- [2]
 		}, -- [157]
 		{
-			"Total: 1d 6h 55m 59s", -- [1]
+			"Level: 0d 0h 20m 22s", -- [1]
 			0, -- [2]
 		}, -- [158]
 		{
-			"Level: 0d 0h 10m 16s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [159]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [160]
 		{
-			"Total: 1d 6h 55m 59s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [161]
 		{
-			"Level: 0d 0h 10m 16s", -- [1]
+			"Time set to 5/19/2024 (Sun) 13:50", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
@@ -656,179 +655,507 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [163]
 		{
-			"Total: 1d 6h 56m 0s", -- [1]
+			"Total: 1d 5h 40m 27s", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"Level: 0d 0h 10m 17s", -- [1]
+			"Level: 0d 0h 21m 19s", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"World transfer pending...", -- [1]
+			"Time set to 5/19/2024 (Sun) 13:50", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"Got new connection 3", -- [1]
+			"Time set to 5/19/2024 (Sun) 13:50", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Skill 613 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"Time played:", -- [1]
+			"Skill 733 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"Total: 1d 7h 40m 0s", -- [1]
+			"Skill 183 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"Level: 0d 0h 54m 17s", -- [1]
+			"Skill 56 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"set pending gxRestart", -- [1]
+			"Skill 228 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"set pending gxRestart", -- [1]
+			"Skill 78 increased from 185 to 190", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
-			"Shadow RT mode changed to 0 (Disabled)", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [174]
 		{
-			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
+			"Total: 1d 5h 42m 36s", -- [1]
 			0, -- [2]
 		}, -- [175]
 		{
-			"Projected textures disabled.", -- [1]
+			"Level: 0d 0h 0m 0s", -- [1]
 			0, -- [2]
 		}, -- [176]
 		{
-			"Sunshafts quality changed to 0", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [177]
 		{
-			"SSAO mode set to 0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [178]
 		{
-			"Terrain mip level changed to 1.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [179]
 		{
-			"Water detail changed to 0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [180]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Total: 1d 5h 49m 30s", -- [1]
 			0, -- [2]
 		}, -- [181]
 		{
-			"Ripple detail changed to 0", -- [1]
+			"Level: 0d 0h 6m 54s", -- [1]
 			0, -- [2]
 		}, -- [182]
 		{
-			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [183]
 		{
-			"Shadow texture size changed to 1024.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [184]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [185]
 		{
-			"Shadow cascade blending changed to 0", -- [1]
+			"Time set to 5/19/2024 (Sun) 14:02", -- [1]
 			0, -- [2]
 		}, -- [186]
 		{
-			"SSAO type set to 1", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [187]
 		{
-			"Resample quality changed to 1", -- [1]
+			"Total: 1d 5h 52m 29s", -- [1]
 			0, -- [2]
 		}, -- [188]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Level: 0d 0h 9m 53s", -- [1]
 			0, -- [2]
 		}, -- [189]
 		{
-			"Projected textures enabled.", -- [1]
+			"Time set to 5/19/2024 (Sun) 14:02", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"SSAO mode set to 4", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"Water detail changed to 3", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [193]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [194]
 		{
-			"set pending gxRestart", -- [1]
+			"Total: 1d 5h 59m 12s", -- [1]
 			0, -- [2]
 		}, -- [195]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			"Level: 0d 0h 16m 36s", -- [1]
 			0, -- [2]
 		}, -- [196]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Skill 810 increased from 7 to 8", -- [1]
 			0, -- [2]
 		}, -- [197]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Skill 810 increased from 8 to 9", -- [1]
 			0, -- [2]
 		}, -- [198]
 		{
-			"Shadow cascade blending changed to 1", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [199]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [200]
 		{
-			"set pending gxRestart", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [201]
 		{
-			"SSAO type set to 2", -- [1]
+			"Time set to 5/19/2024 (Sun) 14:14", -- [1]
 			0, -- [2]
 		}, -- [202]
 		{
-			"Resample quality changed to 3", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [203]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 1d 6h 5m 1s", -- [1]
 			0, -- [2]
 		}, -- [204]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 0d 0h 22m 25s", -- [1]
 			0, -- [2]
 		}, -- [205]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Skill 613 increased from 190 to 195", -- [1]
 			0, -- [2]
 		}, -- [206]
 		{
+			"Skill 733 increased from 190 to 195", -- [1]
+			0, -- [2]
+		}, -- [207]
+		{
+			"Skill 183 increased from 190 to 195", -- [1]
+			0, -- [2]
+		}, -- [208]
+		{
+			"Skill 56 increased from 190 to 195", -- [1]
+			0, -- [2]
+		}, -- [209]
+		{
+			"Skill 228 increased from 190 to 195", -- [1]
+			0, -- [2]
+		}, -- [210]
+		{
+			"Skill 78 increased from 190 to 195", -- [1]
+			0, -- [2]
+		}, -- [211]
+		{
 			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [212]
+		{
+			"Total: 1d 6h 17m 38s", -- [1]
+			0, -- [2]
+		}, -- [213]
+		{
+			"Level: 0d 0h 0m 0s", -- [1]
+			0, -- [2]
+		}, -- [214]
+		{
+			"SSAO type set to 2", -- [1]
+			0, -- [2]
+		}, -- [215]
+		{
+			"SSAO type set to 0", -- [1]
+			0, -- [2]
+		}, -- [216]
+		{
+			"Resample quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [217]
+		{
+			"SSAO type set to 1", -- [1]
+			0, -- [2]
+		}, -- [218]
+		{
+			"set pending gxRestart", -- [1]
+			0, -- [2]
+		}, -- [219]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [220]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [221]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [222]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [223]
+		{
+			"Total: 1d 6h 26m 51s", -- [1]
+			0, -- [2]
+		}, -- [224]
+		{
+			"Level: 0d 0h 9m 13s", -- [1]
+			0, -- [2]
+		}, -- [225]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [226]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [227]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [228]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [229]
+		{
+			"Total: 1d 6h 26m 55s", -- [1]
+			0, -- [2]
+		}, -- [230]
+		{
+			"Level: 0d 0h 9m 17s", -- [1]
+			0, -- [2]
+		}, -- [231]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [232]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [233]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [234]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [235]
+		{
+			"Total: 1d 6h 27m 13s", -- [1]
+			0, -- [2]
+		}, -- [236]
+		{
+			"Level: 0d 0h 9m 35s", -- [1]
+			0, -- [2]
+		}, -- [237]
+		{
+			"set pending gxRestart", -- [1]
+			0, -- [2]
+		}, -- [238]
+		{
+			"SSAO type set to 2", -- [1]
+			0, -- [2]
+		}, -- [239]
+		{
+			"Resample quality changed to 3", -- [1]
+			0, -- [2]
+		}, -- [240]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [241]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [242]
+		{
+			"Weather changed to 2, intensity 0.250000\n", -- [1]
+			0, -- [2]
+		}, -- [243]
+		{
+			"Weather changed to 2, intensity 0.250000\n", -- [1]
+			0, -- [2]
+		}, -- [244]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [245]
+		{
+			"Total: 1d 6h 41m 4s", -- [1]
+			0, -- [2]
+		}, -- [246]
+		{
+			"Level: 0d 0h 23m 26s", -- [1]
+			0, -- [2]
+		}, -- [247]
+		{
+			"Skill 613 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [248]
+		{
+			"Skill 733 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [249]
+		{
+			"Skill 183 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [250]
+		{
+			"Skill 56 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [251]
+		{
+			"Skill 228 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [252]
+		{
+			"Skill 78 increased from 195 to 200", -- [1]
+			0, -- [2]
+		}, -- [253]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [254]
+		{
+			"Total: 1d 6h 45m 43s", -- [1]
+			0, -- [2]
+		}, -- [255]
+		{
+			"Level: 0d 0h 0m 0s", -- [1]
+			0, -- [2]
+		}, -- [256]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [257]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [258]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [259]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [260]
+		{
+			"Total: 1d 6h 48m 23s", -- [1]
+			0, -- [2]
+		}, -- [261]
+		{
+			"Level: 0d 0h 2m 40s", -- [1]
+			0, -- [2]
+		}, -- [262]
+		{
+			"Skill 762 increased from 75 to 150", -- [1]
+			0, -- [2]
+		}, -- [263]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [264]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [265]
+		{
+			"[IBN_BackInterface] [F] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [266]
+		{
+			"[GlueLogin] [F] Disconnected from WoW previouslyConnected=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [267]
+		{
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [268]
+		{
+			"[GlueLogin] [F] Resetting", -- [1]
+			0, -- [2]
+		}, -- [269]
+		{
+			"[IBN_Login] [F] Destroying isInitialized=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [270]
+		{
+			"[IBN_Login] [F] Initializing", -- [1]
+			0, -- [2]
+		}, -- [271]
+		{
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [272]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [273]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [274]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [275]
+		{
+			"[GlueLogin] [F] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [276]
+		{
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1716123832\" expirationTime=\"1716138232\"", -- [1]
+			0, -- [2]
+		}, -- [277]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [278]
+		{
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [279]
+		{
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [280]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [281]
+		{
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [282]
+		{
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [283]
+		{
+			"[GlueLogin] [F] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [284]
+		{
+			"[IBN_Login] [F] Joining realm subRegion=\"43-4-89\" realmAddress=\"43-4-8\"", -- [1]
+			0, -- [2]
+		}, -- [285]
+		{
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [286]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [287]
+		{
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [288]
+		{
+			"[IBN_Login] [F] Front disconnecting connectionId=\"2\"", -- [1]
 			0, -- [2]
 		}, -- [207]
 		{
@@ -1160,119 +1487,119 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [289]
 		{
-			"Skill 228 increased from 210 to 215", -- [1]
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [290]
 		{
-			"Skill 78 increased from 210 to 215", -- [1]
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [291]
 		{
-			"Time played:", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [292]
 		{
-			"Total: 1d 9h 9m 51s", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [293]
 		{
-			"Level: 0d 0h 0m 0s", -- [1]
+			"[IBN_Login] [F] Front disconnected connectionId=\"2\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [294]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [295]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [296]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [297]
 		{
-			"Time played:", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [298]
 		{
-			"Total: 1d 9h 10m 26s", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [299]
 		{
-			"Level: 0d 0h 0m 35s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [300]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [301]
 		{
-			"Total: 1d 9h 10m 26s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [302]
 		{
-			"Level: 0d 0h 0m 35s", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [303]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [304]
 		{
-			"Total: 1d 9h 10m 26s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [305]
 		{
-			"Level: 0d 0h 0m 35s", -- [1]
+			"Proficiency in item class 2 set to 0x0000084410", -- [1]
 			0, -- [2]
 		}, -- [306]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [307]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [308]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [309]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [310]
 		{
-			"Total: 1d 9h 18m 37s", -- [1]
+			"Time set to 5/19/2024 (Sun) 15:03", -- [1]
 			0, -- [2]
 		}, -- [311]
 		{
-			"Level: 0d 0h 8m 46s", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
-			"Time set to 5/19/2024 (Sun) 17:28", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [313]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 53m 29s", -- [1]
 			0, -- [2]
 		}, -- [314]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 7m 46s", -- [1]
 			0, -- [2]
 		}, -- [315]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [316]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 53m 29s", -- [1]
 			0, -- [2]
 		}, -- [317]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 7m 46s", -- [1]
 			0, -- [2]
 		}, -- [318]
 		{
@@ -1280,51 +1607,51 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [319]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 53m 33s", -- [1]
 			0, -- [2]
 		}, -- [320]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 7m 50s", -- [1]
 			0, -- [2]
 		}, -- [321]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO type set to 1", -- [1]
 			0, -- [2]
 		}, -- [322]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO type set to 0", -- [1]
 			0, -- [2]
 		}, -- [323]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [324]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [325]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [326]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [327]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [328]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [329]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [330]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [331]
 		{
@@ -1332,503 +1659,503 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [332]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 55m 59s", -- [1]
 			0, -- [2]
 		}, -- [333]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 10m 16s", -- [1]
 			0, -- [2]
 		}, -- [334]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [335]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 55m 59s", -- [1]
 			0, -- [2]
 		}, -- [336]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 10m 16s", -- [1]
 			0, -- [2]
 		}, -- [337]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [338]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 6h 56m 0s", -- [1]
 			0, -- [2]
 		}, -- [339]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 10m 17s", -- [1]
 			0, -- [2]
 		}, -- [340]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [341]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [342]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [343]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [344]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 40m 0s", -- [1]
 			0, -- [2]
 		}, -- [345]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 54m 17s", -- [1]
 			0, -- [2]
 		}, -- [346]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [347]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [348]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow RT mode changed to 0 (Disabled)", -- [1]
 			0, -- [2]
 		}, -- [349]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [350]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Projected textures disabled.", -- [1]
 			0, -- [2]
 		}, -- [351]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Sunshafts quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [352]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO mode set to 0", -- [1]
 			0, -- [2]
 		}, -- [353]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Terrain mip level changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [354]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Water detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [355]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [356]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Ripple detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [357]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
 			0, -- [2]
 		}, -- [358]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow texture size changed to 1024.", -- [1]
 			0, -- [2]
 		}, -- [359]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [360]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow cascade blending changed to 0", -- [1]
 			0, -- [2]
 		}, -- [361]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO type set to 1", -- [1]
 			0, -- [2]
 		}, -- [362]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [363]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [364]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [365]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [366]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [367]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [368]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [369]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [370]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [371]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [372]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Shadow cascade blending changed to 1", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"SSAO type set to 2", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [382]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 45m 59s", -- [1]
 			0, -- [2]
 		}, -- [383]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 0m 16s", -- [1]
 			0, -- [2]
 		}, -- [384]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [385]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [386]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [387]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [388]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 49m 38s", -- [1]
 			0, -- [2]
 		}, -- [389]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 3m 55s", -- [1]
 			0, -- [2]
 		}, -- [390]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [391]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [392]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [393]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [396]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 50m 48s", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 5m 5s", -- [1]
 			0, -- [2]
 		}, -- [400]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [401]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 50m 48s", -- [1]
 			0, -- [2]
 		}, -- [402]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 5m 5s", -- [1]
 			0, -- [2]
 		}, -- [403]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [404]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 50m 48s", -- [1]
 			0, -- [2]
 		}, -- [405]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 5m 5s", -- [1]
 			0, -- [2]
 		}, -- [406]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [407]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [408]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [409]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [410]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [411]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [412]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [413]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [414]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [415]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [416]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [417]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [418]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 53m 51s", -- [1]
 			0, -- [2]
 		}, -- [419]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 8m 8s", -- [1]
 			0, -- [2]
 		}, -- [420]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [421]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 53m 51s", -- [1]
 			0, -- [2]
 		}, -- [422]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 8m 8s", -- [1]
 			0, -- [2]
 		}, -- [423]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [424]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 7h 53m 51s", -- [1]
 			0, -- [2]
 		}, -- [425]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 1h 8m 8s", -- [1]
 			0, -- [2]
 		}, -- [426]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [427]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [428]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [429]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [430]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 613 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [431]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 733 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [432]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 183 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [433]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 56 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [434]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 228 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 78 increased from 200 to 205", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 8h 23m 14s", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 0s", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 613 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 733 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 183 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [442]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 56 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [443]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 228 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [444]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 78 increased from 205 to 210", -- [1]
 			0, -- [2]
 		}, -- [445]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [446]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 8h 42m 34s", -- [1]
 			0, -- [2]
 		}, -- [447]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 1s", -- [1]
 			0, -- [2]
 		}, -- [448]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [449]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [450]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [451]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [452]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 8h 47m 8s", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 4m 35s", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 8h 47m 8s", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 4m 35s", -- [1]
 			0, -- [2]
 		}, -- [457]
 		{
@@ -1836,123 +2163,123 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [458]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 8h 47m 9s", -- [1]
 			0, -- [2]
 		}, -- [459]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 4m 36s", -- [1]
 			0, -- [2]
 		}, -- [460]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 613 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [461]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 733 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [462]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 183 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [463]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 56 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [464]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 228 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [465]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Skill 78 increased from 210 to 215", -- [1]
 			0, -- [2]
 		}, -- [466]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [467]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 9h 9m 51s", -- [1]
 			0, -- [2]
 		}, -- [468]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 0s", -- [1]
 			0, -- [2]
 		}, -- [469]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [470]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [471]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [472]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [473]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 9h 10m 26s", -- [1]
 			0, -- [2]
 		}, -- [474]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 35s", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 9h 10m 26s", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 35s", -- [1]
 			0, -- [2]
 		}, -- [478]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [479]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 9h 10m 26s", -- [1]
 			0, -- [2]
 		}, -- [480]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 0m 35s", -- [1]
 			0, -- [2]
 		}, -- [481]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [482]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [483]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [484]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [485]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Total: 1d 9h 18m 37s", -- [1]
 			0, -- [2]
 		}, -- [486]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Level: 0d 0h 8m 46s", -- [1]
 			0, -- [2]
 		}, -- [487]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21347, effect aura: 161, which is wrong", -- [1]
+			"Time set to 5/19/2024 (Sun) 17:28", -- [1]
 			0, -- [2]
 		}, -- [488]
 		{
@@ -3260,51 +3587,51 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [814]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Time played:", -- [1]
+			"Total: 1d 9h 36m 4s", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"Total: 24d 18h 12m 28s", -- [1]
+			"Level: 0d 0h 26m 13s", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"Level: 12d 2h 43m 21s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"Skill 810 increased from 5 to 6", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"Skill 810 increased from 6 to 7", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"Skill 810 increased from 7 to 8", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Skill 810 increased from 8 to 9", -- [1]
+			"Total: 1d 9h 36m 7s", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"Skill 810 increased from 9 to 10", -- [1]
+			"Level: 0d 0h 26m 16s", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
@@ -3328,43 +3655,43 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [831]
 		{
-			"Time played:", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [832]
 		{
-			"Total: 24d 18h 33m 13s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [833]
 		{
-			"Level: 12d 3h 4m 6s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [834]
 		{
-			"World transfer pending...", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [835]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 1d 9h 39m 31s", -- [1]
 			0, -- [2]
 		}, -- [836]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 0d 0h 29m 40s", -- [1]
 			0, -- [2]
 		}, -- [837]
 		{
-			"Time played:", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"Total: 24d 18h 34m 9s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Level: 12d 3h 5m 2s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Weather changed to 2, intensity 0.300000\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
@@ -3372,19 +3699,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [842]
 		{
-			"Weather changed to 2, intensity 0.300000\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"Weather changed to 2, intensity 0.300000\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
@@ -3400,447 +3727,447 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [849]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"World transfer pending...", -- [1]
+			"Total: 1d 9h 46m 48s", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"Got new connection 3", -- [1]
+			"Level: 0d 0h 36m 57s", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Time played:", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Total: 24d 18h 41m 22s", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Level: 12d 3h 12m 15s", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Time played:", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Total: 24d 19h 1m 32s", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Level: 12d 3h 32m 25s", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Time played:", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Total: 24d 19h 1m 32s", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"Level: 12d 3h 32m 25s", -- [1]
+			"Multithreaded volumetric fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Time played:", -- [1]
+			"Multithreaded Refraction Pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Total: 24d 19h 1m 32s", -- [1]
+			"Multithreaded miscellaneous passes enabled.", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Level: 12d 3h 32m 25s", -- [1]
+			"Multithreaded decal passes disabled.", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Multithreaded outline passes disabled.", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
+			"Use trigger on BeginDrawComplete enabled.", -- [1]
+			4, -- [2]
 		}, -- [873]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Multithreaded alpha pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"Time played:", -- [1]
+			"Multithreaded daynight update enabled.", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Total: 24d 19h 12m 17s", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Level: 12d 3h 43m 10s", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Time played:", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Total: 24d 19h 12m 17s", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Level: 12d 3h 43m 10s", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Time played:", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Total: 24d 19h 12m 18s", -- [1]
+			"Spell Clutter disabled", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Level: 12d 3h 43m 11s", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"World transfer pending...", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Got new connection 3", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Shadow cascade blending changed to 1", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Time played:", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"Total: 24d 19h 27m 34s", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Level: 12d 3h 58m 27s", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"World transfer pending...", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Got new connection 3", -- [1]
+			"SSAO type set to 2", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Time played:", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Total: 24d 19h 29m 50s", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"Level: 12d 4h 0m 43s", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"World transfer pending...", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"Got new connection 3", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
-			"Time played:", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [899]
 		{
-			"Total: 24d 19h 30m 0s", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"Level: 12d 4h 0m 53s", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"Time set to 5/20/2024 (Mon) 12:04", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"Time set to 5/20/2024 (Mon) 12:04", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"World transfer pending...", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"Got new connection 3", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"Time played:", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"Total: 24d 19h 36m 35s", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"Level: 12d 4h 7m 28s", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"World transfer pending...", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"Got new connection 3", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [912]
 		{
-			"Time played:", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"Total: 24d 19h 40m 17s", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"Level: 12d 4h 11m 10s", -- [1]
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] [F] Resetting", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] [F] Initializing", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[GlueLogin] [F] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"Proficiency in item class 2 set to 0x0000004000", -- [1]
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1716221296\" expirationTime=\"1716235696\"", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"Proficiency in item class 2 set to 0x0000006000", -- [1]
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
-			"Proficiency in item class 2 set to 0x0000006004", -- [1]
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [926]
 		{
-			"Proficiency in item class 2 set to 0x0000006044", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"Proficiency in item class 2 set to 0x000000604c", -- [1]
+			"[GlueLogin] [F] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"Proficiency in item class 2 set to 0x00000060cc", -- [1]
+			"[IBN_Login] [F] Joining realm subRegion=\"43-4-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"Proficiency in item class 2 set to 0x00000061cc", -- [1]
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"Proficiency in item class 2 set to 0x00000061cd", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"Proficiency in item class 2 set to 0x00000065cd", -- [1]
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"Proficiency in item class 2 set to 0x00000065cf", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"Proficiency in item class 2 set to 0x000000e5cf", -- [1]
+			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"Time set to 5/20/2024 (Mon) 12:39", -- [1]
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Time played:", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Total: 13d 21h 59m 51s", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"Level: 1d 23h 36m 11s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"Total: 13d 21h 59m 51s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"Level: 1d 23h 36m 11s", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"Total: 13d 21h 59m 55s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"Level: 1d 23h 36m 15s", -- [1]
+			"Proficiency in item class 2 set to 0x0000084410", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"Skill 810 increased from 1 to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"Skill 810 increased from 2 to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"Skill 810 increased from 3 to 4", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
-			"Skill 810 increased from 4 to 5", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"Skill 810 increased from 5 to 6", -- [1]
+			"Time set to 5/20/2024 (Mon) 18:08", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"Skill 810 increased from 6 to 7", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"World transfer pending...", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 1d 9h 49m 38s", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 0d 0h 39m 47s", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
@@ -3848,71 +4175,71 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [961]
 		{
-			"Total: 13d 22h 47m 17s", -- [1]
+			"Total: 1d 9h 49m 38s", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"Level: 2d 0h 23m 37s", -- [1]
+			"Level: 0d 0h 39m 47s", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"World transfer pending...", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 1d 9h 49m 45s", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Level: 0d 0h 39m 54s", -- [1]
 			0, -- [2]
 		}, -- [966]
 		{
-			"Time played:", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [967]
 		{
-			"Total: 13d 22h 48m 46s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"Level: 2d 0h 25m 6s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Total: 1d 9h 51m 12s", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Level: 0d 0h 41m 21s", -- [1]
 			0, -- [2]
 		}, -- [972]
 		{
-			"Time played:", -- [1]
+			"Skill 613 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [973]
 		{
-			"Total: 13d 23h 0m 23s", -- [1]
+			"Skill 733 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [974]
 		{
-			"Level: 2d 0h 36m 43s", -- [1]
+			"Skill 183 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [975]
 		{
-			"Time played:", -- [1]
+			"Skill 56 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [976]
 		{
-			"Total: 13d 23h 0m 23s", -- [1]
+			"Skill 228 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [977]
 		{
-			"Level: 2d 0h 36m 43s", -- [1]
+			"Skill 78 increased from 215 to 220", -- [1]
 			0, -- [2]
 		}, -- [978]
 		{
@@ -3920,11 +4247,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [979]
 		{
-			"Total: 13d 23h 0m 23s", -- [1]
+			"Total: 1d 9h 55m 55s", -- [1]
 			0, -- [2]
 		}, -- [980]
 		{
-			"Level: 2d 0h 36m 43s", -- [1]
+			"Level: 0d 0h 0m 0s", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
@@ -3940,19 +4267,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [984]
 		{
-			"Time set to 5/20/2024 (Mon) 13:50", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"Time played:", -- [1]
+			"Total: 1d 9h 57m 50s", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"Total: 13d 23h 12m 34s", -- [1]
+			"Level: 0d 0h 1m 55s", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
-			"Level: 2d 0h 48m 54s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [988]
 		{
@@ -3964,19 +4291,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [990]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"Time played:", -- [1]
+			"Total: 1d 9h 58m 24s", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
-			"Total: 13d 23h 29m 50s", -- [1]
+			"Level: 0d 0h 2m 29s", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
-			"Level: 2d 1h 6m 10s", -- [1]
+			"Time set to 5/20/2024 (Mon) 18:17", -- [1]
 			0, -- [2]
 		}, -- [994]
 		{
@@ -3996,11 +4323,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [998]
 		{
-			"Total: 13d 23h 30m 11s", -- [1]
+			"Total: 1d 10h 2m 14s", -- [1]
 			0, -- [2]
 		}, -- [999]
 		{
-			"Level: 2d 1h 6m 31s", -- [1]
+			"Level: 0d 0h 6m 19s", -- [1]
 			0, -- [2]
 		}, -- [1000]
 		{
@@ -4008,8 +4335,9 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1001]
 	},
-	["isShown"] = false,
+	["height"] = 300,
 	["fontHeight"] = 14,
+	["isShown"] = false,
 	["commandHistory"] = {
 	},
 }

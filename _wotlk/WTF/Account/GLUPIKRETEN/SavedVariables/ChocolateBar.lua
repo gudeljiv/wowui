@@ -21,7 +21,7 @@ ChocolateBarDB = {
 		["Asjrdfsad - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -765,8 +765,20 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 97,
 		["timeStamp"] = 59401.909,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
+	["Mxzq-Golemagg"] = {
+		["total"] = 1202248,
+		["timeAtThisLevel"] = 171228,
+		["timeStamp"] = 1101891.735,
+	},
+	["Tandaram-Jin'do"] = {
+		["total"] = 97,
+		["timeAtThisLevel"] = 97,
+		["timeStamp"] = 59401.909,
+	},
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeAtThisLevel"] = 316,
+		["timeStamp"] = 60887.198,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -779,8 +791,10 @@ CB_PlayedTime = {
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
-	["Koloman-"] = {
-		["total"] = 129,
+	["Wells-Jin'do"] = {
+		["total"] = 11721,
+		["timeAtThisLevel"] = 4960,
+		["timeStamp"] = 774953.806,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

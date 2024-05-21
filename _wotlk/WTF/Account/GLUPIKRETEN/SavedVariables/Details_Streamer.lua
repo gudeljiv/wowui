@@ -59,7 +59,7 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
 			["main_frame_strata"] = "LOW",
 			["row_texture"] = "xVerminClean",
