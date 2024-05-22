@@ -4,6 +4,7 @@ VER 3 000000000000000E " " "136106"
 END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
+/cast Abyssal Seahorse
 /cast Headless Horseman's Mount
 /cast Swift Zulian Tiger
 END
@@ -24,6 +25,10 @@ VER 3 000000000000002A " " "132328"
 /petfollow
 /petpassive
 END
+VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:34722
+END
 VER 3 000000000000002B "bear" "132276"
 #showtooltip Dire Bear Form
 /cancelaura [form:5] Flight Form;[form:1] Dire Bear Form
@@ -34,24 +39,25 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 /cancelaura [form:5] Flight Form;[form:3] Cat Form
 /cast [noform:3]Cat Form
 END
-VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
+VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/cast item:0
 END
-VER 3 000000000000002D "Food" "Inv_misc_questionmark"
+VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/use [nocombat]item:33454
-/castsequence [combat] reset=combat item:33447
+/cast item:58262
 END
-VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
-/cast feed pet
-/use item:0
-END
-VER 3 000000000000002E "Potion" "Inv_misc_questionmark"
+VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/use item:33447
+/cast item:33447
+END
+VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:0
+END
+VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
+#showtooltip
+/cast item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -60,13 +66,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Slickskin Eel
-/targetexact Slitherfin Eel
-/targetlasttarget [dead]
-END
-VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
-#showtooltip
-/use item:0
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000021 "TEST" "132089"
 /run print(IsSpellInRange(14, "pet"))

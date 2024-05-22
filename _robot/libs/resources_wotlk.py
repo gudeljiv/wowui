@@ -200,9 +200,11 @@ data = {
             # {"name": "seal of wisdom", "type": "GetSpellTexture", "id": 20166, "key": "f1"},
             {"name": "seal of truth", "type": "GetSpellTexture", "id": 31801, "key": "1", "modifier": "lshift"},
             {"name": "word of glory", "type": "GetSpellTexture", "id": 85673, "key": "2", "modifier": "lalt"},
+            {"name": "divine shield", "type": "GetSpellTexture", "id": 642, "key": "t", "modifier": "lshift"},
         ],
         "secondary": [
             {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "lalt"},
+            {"name": "ardent defender", "type": "GetSpellTexture", "id": 31850, "key": "e", "modifier": "lshift"},
         ],
     },
     "warlock": {

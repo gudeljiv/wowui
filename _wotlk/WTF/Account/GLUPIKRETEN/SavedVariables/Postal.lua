@@ -24,7 +24,7 @@ Postal3DB = {
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [19]
 				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [20]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [21]
-				"Vermina|Golemagg|Horde|80|PALADIN", -- [22]
+				"Vermina|Golemagg|Horde|81|PALADIN", -- [22]
 				"Vermin|Golemagg|Horde|80|WARRIOR", -- [23]
 				"Wells|Jin'do|Horde|8|DRUID", -- [24]
 			},
@@ -41,17 +41,17 @@ Postal3DB = {
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-		["Asjrdfsad - Golemagg"] = "Asjrdfsad - Golemagg",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
+		["Asjrdfsad - Golemagg"] = "Asjrdfsad - Golemagg",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
@@ -83,9 +83,6 @@ Postal3DB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
-			},
 			["BlackBook"] = {
 				["recent"] = {
 					"Vermina|Golemagg|Horde", -- [1]
@@ -97,6 +94,9 @@ Postal3DB = {
 					"Miqa|Golemagg|Horde", -- [7]
 					"Obsidian|Golemagg|Horde", -- [8]
 				},
+			},
+			["OpenAll"] = {
+				["KeepFreeSpace"] = 2,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -118,13 +118,17 @@ Postal3DB = {
 		},
 		["Asjrdfsad - Golemagg"] = {
 		},
-		["Battlearm - Gehennas"] = {
+		["Tudum - Ashbringer"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Tudum - Jin'do"] = {
-		},
-		["Mxyzptlk - Golemagg"] = {
+		["Moolatz - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Handrmandr|Golemagg|Horde", -- [1]
+					"Vermin|Golemagg|Horde", -- [2]
+				},
+			},
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -137,23 +141,19 @@ Postal3DB = {
 				},
 			},
 		},
+		["Mxyzptlk - Golemagg"] = {
+		},
 		["Battlearm - Jin'do"] = {
 		},
 		["Poklopac - Mirage Raceway"] = {
 		},
-		["Miqa - Golemagg"] = {
-		},
 		["Provokator - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Handrmandr|Golemagg|Horde", -- [1]
-					"Vermin|Golemagg|Horde", -- [2]
-				},
-			},
+		["Miqa - Golemagg"] = {
 		},
-		["Tudum - Ashbringer"] = {
+		["Tudum - Jin'do"] = {
+		},
+		["Battlearm - Gehennas"] = {
 		},
 		["Wells - Jin'do"] = {
 		},

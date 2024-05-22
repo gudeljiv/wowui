@@ -1,0 +1,607 @@
+### 110
+
++ Added German translation for Toxic Potion (thanks to Spegeli)
+
+
+### 109
+
+* Retail TOC Update
+
+
+### 108
+
+* Released 107_Beta
+* Classic TOC Update
+
+
+### 107_Beta
+
++ Added support for Cataclysm
+* Updated some code to latest wow API
+
+
+### 106
+
+* Fixed some pvp items restrictions
+
+
+### 105
+
++ Added proper support for Toxic Health Potion (Retail; enUS/frFR)
++ Added list of available items in custom macro, sorted by value decreasing, see the GitHub wiki page for more info
+
+
+### 104
+
++ Added support for Potion of Withering Dreams (Retail/enUS)
+
+
+### 103
+
+* Fix typo on various Const files affecting some PvP items (thanks to yannlugrin)
+
+
+### 102
+
+* Updated tocs to latest
+
+
+### 101
+
+* Fix issue #64: Percent items were not detected properly on both Classic
+
+
+### 100
+
+* Fix issue #64: Some items were not detected properly on Classic WotLK
+* Updated some code to latest wow API
+
+
+### 99
+
+* Fix issue #63: Some items were not detected properly on Classic Era
+
+
+### 98
+
++ Added option to turn off version message on loading
+* Updated some code to latest wow api
+
+
+### 97
+
+* Fixed bug with conjured item in Classic
++ Added IconTexture in TOCs
+
+
+### 96
+
+* Missing changelog ;)
+* Retail toc update
+
+
+### 95
+
+* Handled incoming API changes (3.4.1)
+* Updated LibBabble-SubZone
+- Removed old AddonLoader code
+
+
+### 94
+
++ Added Korean localization (provided by coderhyme)
+* Handled incoming API changes
+* Small fix in config panel
+* Updated LibBabble-SubZone to version r252
+* Update README
+
+
+### 93
+
+* Fix issue #56: Error when closing option menu
+
+
+### 92
+
+* Moved from Beta to Release
+* Added missing command info in /buffet help
+* Ready for Dragonflight (v10.0.0)
+
+
+### 91_Beta
+
+* Added feature #52: user-defined ignore list
+
+
+### 90_Beta
+
+* Fix issue #51: Black jelly not being considered
+
+
+### 89_Beta
+
+* Fix issue #50: Handle engineer bonus for runic injector
+
+
+### 88_Beta
+
+* Fix issue #49 (and #45 properly): Mana gem not properly recognized
+
+
+### 87_Beta
+
+* Fix issue #47: Harvest festival items not working on WLK
+* Changed versioning scheme: git tags will now only contain an incremental version number, with an optional _Beta suffix
+
+
+### 9.2.7.86_Beta
+
+* Mana Gem not recognized on Wrath
+
+
+### 9.2.7.85_Beta
+
+* Fix issue with CurseForge packaging
+
+
+### 9.2.7.84_Beta
+
+* Added missing project versions
+* Disabled debug mode
+* Cleaned up few things
+
+
+### 9.2.7.83_Beta
+
+* Added support for Wrath (untested)
+* Added support for multi-toc
+* Added lib to repo and removed from curse auto-build
+
+
+### 9.2.0.82
+
+* Few fixes
+* Code cleanup & refactoring
+
+
+### 9.1.0.80_Beta
+
+* Fix tooltip scanning no longer working due to new tooltip format for most items
+
+
+### 2.5.1.79_Beta
+
+* Fix issue with "Skullfish Soup"
+* Made restricted items have priority over other items of same value
+* Code refactoring
+
+
+### 2.5.1.78
+
+* Fix issue with mana gem
+* Fix some regex issues with French pattern
+* Code refactoring
+
+
+### 1.13.7.77 / 2.5.1.77
+
+* Fix more recipes sometime showing up as potions or food
+* Preparation for TBC and pre-patch
+* Code cleanup
+
+
+### 1.13.7.76
+
+* Fix Alchemy recipes sometime showing up as potions
+
+
+### 9.0.2.75 / 1.13.6.75
+
++ New feature: custom macro, using lua scripting language
+* Add option to also consider "well-fed" food items in macros
+* Reworks and improvements of the restriction system
+* Various other fixes and improvements
+
+
+### 9.0.2.74-Beta / 1.13.6.74-Beta
+
+* Fix issue with output status
+* Improve pvp restriction check
+
+
+### 9.0.2.73-Beta / 1.13.6.73-Beta
+
+* Really Fix #18 (Third wind potion restriction)
+
+
+### 9.0.2.72-Beta / 1.13.6.72-Beta
+
+* Reworks the Restriction system
+* Fix #18 (Third wind potion restriction)
+
+
+### 9.0.2.71-Beta / 1.13.6.71-Beta
+
+* Add option to also consider "well-fed" items in macros
+
+
+### 9.0.2.70-Beta / 1.13.6.70-Beta
+
+* Made well-fed items available to custom macro
+* Made item cache available to custom macro
+* Few UI tweaks
+* Cleanup
+
+
+### 9.0.2.69-Beta / 1.13.6.69-Beta
+
++ New feature: custom macro
+
+
+### 9.0.2.68-Beta / 1.13.6.68-Beta
+
++ Add potion modifiers
++ Add option to default to hearthstone (or not)
+* Allow empty modifiers to disable them
+* Small UI adjustments
+* Typos here and there
+
+
+### 9.0.2.67
+
+* Fix issue with some items tooltip parsing
+
+
+### 9.0.2.66
+
+* Fix issue with edible cooking items not recognized as such
+* Improved item min level check
++ Add "Is restricted" to info and debug output (the value is contextual, mostly zone limited)
+
+
+### 1.13.5.65
+
+* Update for Shadowlands API changes (backdrop)
+* Fix detection for food with health and mana
+* Better filter of some buff food
+
+
+### 9.0.1.64
+
+* Update for Shadowlands API changes (backdrop)
+* Small fixes around dark and demonic rune
+
+
+### 8.3.7.63 / 1.13.5.63
+
+* Release
+
+
+### 8.3.7.62-Beta / 1.13.5.62-Beta
+
+* Add ignored item cache (session only) to improve performances
+* Add command "ignored" to list items in this cache
+* Prioritize demonic rune over dark rune
+* Fix issue with health stone on frFR client
+* Few other fixes & Improvements
+
+
+### 8.3.0.61-Beta / 1.13.5.61-Beta
+
++ Add support for dark and demonic runes
++ Add 4 new macros for food/drink only and consumables only
++ Add configuration panel in interface options
+* Fix bug with mana items on classic
+
+
+### 8.3.0.60-Beta / 1.13.3.60-Beta
+
+* Complete code rewrite
++ Classic: Add support for Healthstone and Mana gems
++ zhCN localization for Retail and Classic (beta, need testing)
+
+
+### 8.2.5.59-Beta
+
+* Enable zone restrictions for Classic
++ Add battleground items into restrictions (thanks to nSimonFR)
+
+
+### 8.2.5.58
+
+* Release
+
+
+### 8.2.5.57-Beta
+
+* Fix issue with tooltip scanning
+* Few small optimizations
+
+
+### 8.2.5.56
+
+* Fix issue with item cache
+* Add slash command to disable combat mode macro
+
+
+### 8.2.5.55
+
+* Release
+
+
+### 8.2.5.54-Beta
+
+* Fix potion for classic
+* Fix FR localization for retail
+* Various other fixes and improvements
+
+
+### 8.2.0.53-Beta
+
+* Add Classic support
+* Few fixes here and there
+
+
+### 8.2.0.52-Beta
+
+* Improved consecutive scan request logic
+* Add (some) zone restricted items
+* New slash commands
+* Code reformatted and cleaned up
+
+
+### 8.1.5.51-Beta
+
+* Even more improvements!
+* Item cache is now saved to disk (per account) reducing the time spent in tooltip and bags scanning
+* New slash commands
+
+
+### 8.1.5.50-Beta
+
+* Bug fix: some items can have less than 3 lines tooltip. logic rewritten
+
+
+### 8.1.5.49-Beta
+
+* Lots of improvements
+* More Localizations
+* Slash command: /buffet
+
+
+### 8.1.5.48-Beta
+
+* Make bag scan dynamic
+
+
+### 7.1.0.47-Beta
+
+* Some of the food values in legion were increased
+* Add rank 2 Nomi failures
+
+
+### 7.0.0.46-Beta
+
+* Legion database update (thanks @Grimsbain)
+* Listen to BAG_UPDATE_DELAYED instead of BAG_UPDATE (thanks @Adirelle)
+
+
+### 6.0.0.45-Beta
+
+* That item isn't a food ><
+
+### 6.0.0.44-Beta
+
+* Missed a rejuv potion
+
+### 6.0.0.43-Beta
+
+* New wod consumables
+* Adjust HP/MP values
+* Remove items that are no longer obtainable
+* Healthstones now share health potion CD
+* Mage-conjured foods are 100% restore now
+
+### 5.2.0.42-Beta
+
+* Add Winter Veil Eggnog
+
+### 5.1.0.41-Beta
+
+* Fix macro generator
+
+### 5.1.0.40-Beta
+
+* Panda pots
+
+### 5.0.1.39-Beta
+
+* Update database
+* Herbalism HP and MP pots (thanks leks0d)
+* New bandages (thanks freebaser)
+
+### 5.0.1.38-Beta
+
+* Add a few missing MoP food/water items (thanks StephenClouse)
+
+### 5.0.1.37-Beta
+
+* Updates for 5.0, may not be all the new foods (thanks rubenvincenten)
+
+### 4.3.0.36-Beta
+
+* Fixed for 4.3 macro icon change. (Thanks Adirelle)
+* Add support for AddonLoader's LoadOn-InterfaceOptions thingy
+
+### 4.1.0.35-Beta
+
+* Add rogue pot
+* Fix conj. mana cake.
+
+### 4.1.0.34-Release
+
+* Tagging stable version
+
+### 4.0.0.33-Beta
+
+* Missed a food
+* Move data strings off to their own file for easier management and merging
+
+### 4.0.0.32-Beta
+
+* Cat food (and water and pots and bandaids and...)
+
+### 4.0.0.31-Release
+
+* New 4.0 items
+
+### 3.2.0.30-Release
+
+* Harvest Nectards
+
+### 3.1.0.29-Release
+
+* Fix runic mana's value
+
+### 3.1.0.28-Beta
+
+* GET IN MAH JELLY!
+* Wait... fuck that made no sense
+
+### 3.0.9.27-Beta
+
+* YOU CRAZY!
+
+### 3.0.3.26-Beta
+
+* Updated food and water lists, should include all non-buff food and water currently on wowhead
+
+### 3.0.3.25-Beta
+
+* Injizzectors
+* New food
+* Add "endless" potions
+
+### 3.0.3.24-Beta
+
+* More conjables
+* PIE!
+* Apple juice!
+* New health stones
+
+### 3.0.3.23-Beta
+
+* Those argent guys are a bunch of potheads
+* Embed update
+* Remove 2.4.3 compat
+
+### 3.0.2.22-Beta
+
+* Don't make macros char-specific (3.0 broke this)
+* Update for wrath build 8962 config panel breakage
+* Embed update
+
+### 3.0.1.21-Beta
+
+* STRUDEL!
+
+### 3.0.1.20-Beta
+
+* Seems we get more global macros in Wrath
+* Buttons now pickup the macro after creating it, or just pick up if it exists
+
+### 3.0.1.19-Beta
+
+* Embed update
+
+### 3.0.1.18-Beta
+
+* Update tekKonfig to live+beta version
+* DKs don't get cheese anymore it seems...
+
+### 3.0.1.17-Beta
+
+* Embed update, whee!
+
+### 3.0.1.16-Beta
+
+* Wrath pots
+* Wrath bandaids
+* Wrath food and water
+* Add [Noth's Special Brew]
+* Tweak launcher declaration to match the updated spec
+
+### 2.4.2.15-Beta
+
+* Fix LDB embed
+
+### 2.4.2.14-Beta
+
+* Add LDB quicklaunch button
+* Make addon loaded check case-insensative
+
+### 2.4.2.13-Beta
+
+* Make HP and MP macros use different custom texts
+* Add special case for multi-use mage gem
+* [Underspore Pod] should be considered conjured
+* Add [Enriched Terocone Juice]
+* Add ability to customize macro text on a per-char basis
+
+### 2.4.2.12-Beta
+
+* Rescan on level up, there may be new items usable
+* Fix required level not being tested
+* Add more mana/heal items that are on shared cooldown with the stones
+
+### 2.4.2.11-Beta
+
+* Add [Black Coffee]
+
+### 2.4.1.10-Beta
+
+* Add [Star's Tears] to water
+* Add demonic rune to mana stones
+
+### 2.4.1.9-Beta
+
+* Fix stone+pot castsequence macro
+
+### 2.4.1.8-Beta
+
+* Reset castsequence when leaving combat
+* Fix typo with Naaru Rations
+
+### 2.4.1.7-Beta
+
+* Added Naaru Rations and Hot Buttered Trout
+* Self-cast them bandaids
+
+### 2.4.1.6-Beta
+
+* Add config and about panels, TOC metadata
+
+### 2.4.0.5-Beta
+
+* Add crystal potions (Ogri'la vendor items)
+* Add Holy Spring Water... a crappy potion, but a potion nonetheless
+
+### 2.3.3.4-Beta
+
+* Shorten macro a tad, make sure sequence doesn't fire when using a bandaid
+
+### 2.3.3.3-Beta
+
+* Add /castsequence for stone then pot if player has both
+* Added [Mad Alchemist's Potion]
+
+### 2.3.3.2-Alpha
+
+* Change how the macro is constructed so it will never use more than one item per click
+* Conjured Manna Biscuit was missing... the fuck?
+
+### 2.3.3.1-Alpha
+
+* Add missing water
+* Use the correct value when comparing items
+* Initial commit

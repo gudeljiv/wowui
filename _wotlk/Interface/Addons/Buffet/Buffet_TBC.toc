@@ -1,0 +1,36 @@
+## Interface: 20504
+## Title: Buffet
+## Notes: Food/water macro generator
+## Author: Tekkub Stoutwrithe, mZHg
+## Version: 2.5.4.109
+## X-Icon: Interface\Icons\INV_Misc_Food_DimSum
+## SavedVariables: BuffetItemDB
+## SavedVariablesPerCharacter: BuffetDB
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibBabble-SubZone-3.0\lib.xml
+
+Libs\tekKonfigAboutPanel.lua
+Libs\tekKonfigHeading.lua
+Libs\tekKonfigButton.lua
+
+Utility.lua
+Const.lua
+
+TBC\Localization.enUS.lua
+TBC\Localization.deDE.lua
+TBC\Localization.esES.lua
+TBC\Localization.esMX.lua
+TBC\Localization.frFR.lua
+TBC\Localization.zhCN.lua
+
+TBC\ConstTBC.lua
+TBC\TBC.lua
+
+Engine.lua
+
+Buffet.lua
+
+Config.lua

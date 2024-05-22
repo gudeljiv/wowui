@@ -8,8 +8,8 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 	["autoRepair"] = false,
 	["inclusions"] = {
 		["44750"] = true,
-		["17057"] = true,
 		["33449"] = true,
+		["17057"] = true,
 		["8959"] = true,
 	},
 	["safeMode"] = false,
