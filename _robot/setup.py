@@ -287,7 +287,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     t = skill["type"] == "GetSpellTexture" and 1 or 2
                     s = skill["id"]
                     time.sleep(time1)
-                    pyperclip.copy("/run xRTF(2," + str(t) + "," + str(s) + ")")
+                    pyperclip.copy("/run xRTF(1," + str(t) + "," + str(s) + ")")
                     if os.name == "posix":
                         pyautogui.hotkey("command", "v")
                     else:

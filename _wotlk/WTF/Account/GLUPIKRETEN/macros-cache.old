@@ -41,11 +41,11 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:59029
+/cast item:58256
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:58266
+/cast item:58268
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -66,7 +66,8 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Jin'thala
+/targetlasttarget [dead]
 END
 VER 3 0000000000000021 "TEST" "132089"
 /run print(IsSpellInRange(14, "pet"))

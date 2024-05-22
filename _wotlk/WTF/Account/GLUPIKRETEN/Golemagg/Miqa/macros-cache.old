@@ -3,6 +3,11 @@ VER 3 000000000100000E " " "134400"
 /cast Inner Focus
 /cast [@mouseover,exists,help][@target,exists,help][] Greater Heal
 END
+VER 3 000000000100000F " " "134400"
+#showtooltip Prayer of Healing
+/cast Inner Focus
+/cast Prayer of Healing
+END
 VER 3 0000000001000009 "cure" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Cure Disease

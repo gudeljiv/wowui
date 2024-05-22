@@ -596,8 +596,11 @@ ChocolateBarDB = {
 				["Buffet"] = {
 					["align"] = "right",
 					["isNew"] = false,
-					["showText"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "B",
 				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
@@ -723,9 +726,9 @@ CB_PlayedTime = {
 		["total"] = 53,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 2149509,
-		["timeAtThisLevel"] = 1056962,
-		["timeStamp"] = 931485.3570000001,
+		["total"] = 2150425,
+		["timeAtThisLevel"] = 1057878,
+		["timeStamp"] = 1033940.046,
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 17339,
@@ -739,9 +742,9 @@ CB_PlayedTime = {
 		["total"] = 3014,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 1115226,
-		["timeStamp"] = 1020296.727,
-		["timeAtThisLevel"] = 785551,
+		["total"] = 1115446,
+		["timeStamp"] = 1031146.184,
+		["timeAtThisLevel"] = 785771,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,
@@ -755,9 +758,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1202248,
-		["timeAtThisLevel"] = 171228,
-		["timeStamp"] = 1101891.735,
+		["total"] = 1208578,
+		["timeAtThisLevel"] = 177558,
+		["timeStamp"] = 1034520.088,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -859,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 127162,
-		["timeStamp"] = 938878.729,
-		["timeAtThisLevel"] = 329,
+		["total"] = 128239,
+		["timeStamp"] = 1032995.836,
+		["timeAtThisLevel"] = 1406,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -894,9 +897,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 521746,
-		["timeAtThisLevel"] = 976,
-		["timeStamp"] = 1030394.185,
+		["total"] = 531584,
+		["timeAtThisLevel"] = 10814,
+		["timeStamp"] = 1045216.026,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,

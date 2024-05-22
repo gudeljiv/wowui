@@ -12,7 +12,9 @@ data = {
         "warlock": {"#a8a6fd"},
         "priest": {"#ffffff"},
     },
-    "globals": [],
+    "globals": [
+        {"name": "kalythas haunted locket", "type": "GetItemIcon", "id": 53076, "key": "7", "modifier": "lalt"},
+    ],
     "healing": [
         {"name": "healthstone", "type": "GetSpellTexture", "id": 6262, "key": "4", "modifier": "lalt"},
         {"name": "healing potion", "type": "GetSpellTexture", "id": 28491, "key": "5", "modifier": "lalt"},

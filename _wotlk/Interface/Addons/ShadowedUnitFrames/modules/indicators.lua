@@ -65,18 +65,39 @@ end
 function Indicators:UpdateRole(frame, event)
 	if( not frame.indicators.role or not frame.indicators.role.enabled ) then return end
 
+	print(frame.unit, frame.indicators.role.enabled, UnitGroupRolesAssigned(frame.unit), UnitInRaid(frame.unit), UnitInParty(frame.unit), UnitGroupRolesAssigned("TANK", frame.unit), UnitGroupRolesAssigned("HEALER", frame.unit), UnitGroupRolesAssigned("DAMAGER", frame.unit))
+
 	if( not UnitInRaid(frame.unit) and not UnitInParty(frame.unit) ) then
 		frame.indicators.role:Hide()
-	elseif( GetPartyAssignment("MAINTANK", frame.unit) ) then
-		frame.indicators.role:SetTexture("Interface\\GroupFrame\\UI-Group-MainTankIcon")
+	elseif( UnitGroupRolesAssigned(frame.unit) == "TANK" ) then
+		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\Tank.tga")
 		frame.indicators.role:Show()
-	elseif( GetPartyAssignment("MAINASSIST", frame.unit) ) then
-		frame.indicators.role:SetTexture("Interface\\GroupFrame\\UI-Group-MainAssistIcon")
+	elseif( UnitGroupRolesAssigned(frame.unit) == "HEALER" ) then
+		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\Healer.tga")
+		frame.indicators.role:Show()
+	elseif( UnitGroupRolesAssigned(frame.unit) == "DAMAGER" ) then
+		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\DPS.tga")
 		frame.indicators.role:Show()
 	else
-		frame.indicators.role:Hide()
+		-- frame.indicators.role:Hide()
 	end
 end
+
+-- function Indicators:UpdateRole(frame, event)
+-- 	if( not frame.indicators.role or not frame.indicators.role.enabled ) then return end
+
+-- 	if( not UnitInRaid(frame.unit) and not UnitInParty(frame.unit) ) then
+-- 		frame.indicators.role:Hide()
+-- 	elseif( GetPartyAssignment("MAINTANK", frame.unit) ) then
+-- 		frame.indicators.role:SetTexture("Interface\\GroupFrame\\UI-Group-MainTankIcon")
+-- 		frame.indicators.role:Show()
+-- 	elseif( GetPartyAssignment("MAINASSIST", frame.unit) ) then
+-- 		frame.indicators.role:SetTexture("Interface\\GroupFrame\\UI-Group-MainAssistIcon")
+-- 		frame.indicators.role:Show()
+-- 	else
+-- 		frame.indicators.role:Hide()
+-- 	end
+-- end
 
 function Indicators:UpdateLeader(frame)
 	if( not frame.indicators.leader or not frame.indicators.leader.enabled ) then return end

@@ -28,15 +28,15 @@ RXPDB = {
 		["Asjrdfsad - Golemagg"] = "global",
 		["Battlearm - Gehennas"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Tudum - Jin'do"] = "global",
+		["Moolatz - Golemagg"] = "global",
 		["Provokator - Jin'do"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
 		["Miqa - Golemagg"] = "global",
-		["Moolatz - Golemagg"] = "global",
-		["Tudum - Ashbringer"] = "global",
 		["Pitchwise - Ashbringer"] = "global",
+		["Tudum - Ashbringer"] = "global",
+		["Tudum - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
 	},
 	["profiles"] = {
@@ -227,14 +227,14 @@ RXPSettings = {
 			["migrated"] = true,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableBindAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableFPAutomation"] = false,
 			["enableTargetAutomation"] = false,
 			["enableMinimapButton"] = false,
-			["enableTargetMacro"] = false,
+			["enableFlyStepAnnouncements"] = false,
 			["enableTracker"] = false,
 			["hideGuideWindow"] = false,
-			["frameHeight"] = 125.0000534057617,
+			["enableBindAutomation"] = false,
 			["macroAnnounced"] = true,
 			["hardcore"] = false,
 			["framePositions"] = {
@@ -281,7 +281,7 @@ RXPSettings = {
 			["disableItemWindow"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["alwaysSendBranded"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0000534057617,
 			["frameSizes"] = {
 				["arrowFrame"] = {
 					32.00003814697266, -- [1]
@@ -306,12 +306,12 @@ RXPSettings = {
 		["Vermin - Golemagg"] = {
 			["hideCompletedSteps"] = true,
 			["migrated"] = true,
-			["enableTrainerAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
-			["enableTracker"] = false,
 			["enableTargetAutomation"] = false,
+			["enableTracker"] = false,
+			["enableTrainerAutomation"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,
@@ -379,7 +379,7 @@ RXPSettings = {
 				},
 				["RXPFrame"] = {
 					235.0001068115234, -- [1]
-					125.0000228881836, -- [2]
+					27.99999809265137, -- [2]
 				},
 				["activeItemFrame"] = {
 					72.69862365722656, -- [1]
