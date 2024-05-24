@@ -344,6 +344,7 @@ function ShadowUF:LoadDefaultLayout(useMerge)
 			soulShards = {anchorTo = "$parent", order = 60, height = 0.40, anchorPoint = "BR", x = -8, y = 6, size = 12, spacing = -2, growth = "LEFT", isBar = true, showAlways = true},
 			holyPower = {anchorTo = "$parent", order = 60, height = 0.40, anchorPoint = "BR", x = -3, y = 6, size = 14, spacing = -4, growth = "LEFT", isBar = true, showAlways = true},
 			indicators = {
+				lfdRole = {enabled = true},
                 resurrect = {enabled = true, anchorPoint = "LC", size = 28, x = 37, y = -1, anchorTo = "$parent"},
 			},
 			auras = {
@@ -372,6 +373,7 @@ function ShadowUF:LoadDefaultLayout(useMerge)
 			castBar = {order = 60},
 			offset = 23,
 			indicators = {
+				lfdRole = {enabled = true},
                 resurrect = {enabled = true, anchorPoint = "LC", size = 28, x = 37, y = -1, anchorTo = "$parent"},
                 phase = {enabled = true, anchorPoint = "RC", size = 14, x = -11, y = 0, anchorTo = "$parent"}
 			},

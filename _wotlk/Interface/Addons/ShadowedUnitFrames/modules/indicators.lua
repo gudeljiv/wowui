@@ -65,22 +65,30 @@ end
 function Indicators:UpdateRole(frame, event)
 	if( not frame.indicators.role or not frame.indicators.role.enabled ) then return end
 
-	print(frame.unit, frame.indicators.role.enabled, UnitGroupRolesAssigned(frame.unit), UnitInRaid(frame.unit), UnitInParty(frame.unit), UnitGroupRolesAssigned("TANK", frame.unit), UnitGroupRolesAssigned("HEALER", frame.unit), UnitGroupRolesAssigned("DAMAGER", frame.unit))
+	-- print(frame.unit, frame.indicators.role.enabled, UnitGroupRolesAssigned(frame.unit), UnitInRaid(frame.unit), UnitInParty(frame.unit), UnitGroupRolesAssigned("TANK", frame.unit), UnitGroupRolesAssigned("HEALER", frame.unit), UnitGroupRolesAssigned("DAMAGER", frame.unit))
 
+	-- print("0")
 	if( not UnitInRaid(frame.unit) and not UnitInParty(frame.unit) ) then
+		-- print("1")
 		frame.indicators.role:Hide()
 	elseif( UnitGroupRolesAssigned(frame.unit) == "TANK" ) then
-		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\Tank.tga")
+		-- print("2")
+		frame.indicators.role:SetTexture("Interface\\AddOns\\xVermin\\Media\\tank")
+		-- frame.indicators.role:SetTexture("Interface\\GroupFrame\\UI-Group-MainTankIcon")
 		frame.indicators.role:Show()
 	elseif( UnitGroupRolesAssigned(frame.unit) == "HEALER" ) then
-		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\Healer.tga")
+		-- print("3")
+		frame.indicators.role:SetTexture("Interface\\AddOns\\xVermin\\Media\\healer")
 		frame.indicators.role:Show()
 	elseif( UnitGroupRolesAssigned(frame.unit) == "DAMAGER" ) then
-		frame.indicators.role:SetTexture("Interface\\AddOns\\ShadowedUnitFrames\\media\\textures\\DPS.tga")
+		-- print("4")
+		frame.indicators.role:SetTexture("Interface\\AddOns\\xVermin\\Media\\dps")
 		frame.indicators.role:Show()
 	else
-		-- frame.indicators.role:Hide()
+		-- print("5")
+		frame.indicators.role:Hide()
 	end
+	-- print("6")
 end
 
 -- function Indicators:UpdateRole(frame, event)

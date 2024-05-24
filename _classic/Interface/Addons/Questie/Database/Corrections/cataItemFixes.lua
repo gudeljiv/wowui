@@ -365,6 +365,9 @@ function CataItemFixes.Load()
         [57766] = { -- Prickly Pear Fruit
             [itemKeys.npcDrops] = {},
         },
+        [58141] = { -- Twilight Highlands Coastal Chart
+            [itemKeys.npcDrops] = {42638},
+        },
         [58167] = { -- Spirit Totem
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -447,6 +450,9 @@ function CataItemFixes.Load()
             [itemKeys.npcDrops] = {45506,45508,45651,45682},
         },
         [62324] = { -- Wildhammer Food Store
+            [itemKeys.npcDrops] = {},
+        },
+        [61376] = { -- Suspended Starlight
             [itemKeys.npcDrops] = {},
         },
         [62534] = { -- Horn of Ramkahen

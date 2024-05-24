@@ -57,7 +57,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead][] Growl
+/cast [@mouseover,harm,nodead][] Growl
 END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -73,12 +73,8 @@ VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 /cast [@mouseover,help,nodead][] Lifebloom
 END
 VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Thorns
-/cast [@focus,help,nodead] Thorns
-END
-VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead][] Wild Growth
+/cast [@mouseover,harm,nodead][] Faerie Fire (Feral)
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -15,6 +15,7 @@ local l10n = QuestieLoader:ImportModule("l10n")
 QuestieCorrections.objectObjectiveFirst[24817] = true
 QuestieCorrections.objectObjectiveFirst[25371] = true
 QuestieCorrections.objectObjectiveFirst[25731] = true
+QuestieCorrections.objectObjectiveFirst[26659] = true
 QuestieCorrections.objectObjectiveFirst[26809] = true
 QuestieCorrections.killCreditObjectiveFirst[52] = true
 QuestieCorrections.killCreditObjectiveFirst[26621] = true
@@ -1196,7 +1197,8 @@ function CataQuestFixes.Load()
             [questKeys.triggerEnd] = {"Battlescar Flag Scouted",{[zoneIDs.THE_BARRENS] = {{45.2,69.4}}}},
         },
         [25105] = { -- Nibbler!  No!
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25154,25155,25156,25157},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25122] = { -- Morale Boost
             [questKeys.requiredSourceItems] = {52484},
@@ -1233,31 +1235,42 @@ function CataQuestFixes.Load()
             [questKeys.objectives] = {{{44820}},nil,nil,nil,nil,{{5143}}},
         },
         [25154] = { -- A Present for Lila
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25105,25155,25156,25157},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25155] = { -- Ogrezonians in the Mood
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25105,25154,25156,25157},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25156] = { -- Elemental Goo
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25105,25154,25155,25157},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25157] = { -- The Latest Fashion!
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25105,25154,25155,25156},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
+            [questKeys.extraObjectives] = {{{[zoneIDs.STORMWIND_CITY] = {{63.8,60.8}}},Questie.ICON_TYPE_EVENT,l10n("Use Stardust No. 2 on ten Humanoids")}},
         },
         [25158] = { -- Nibbler!  No!
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25159,25160,25161,25162},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25159] = { -- The Latest Fashion!
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25158,25160,25161,25162},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
+            [questKeys.extraObjectives] = {{{[zoneIDs.ORGRIMMAR] = {{72.5,36.2}}},Questie.ICON_TYPE_EVENT,l10n("Use Stardust No. 2 on ten Humanoids")}},
         },
         [25160] = { -- A Present for Lila
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25158,25159,25161,25162},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25161] = { -- Ogrezonians in the Mood
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25158,25159,25160,25162},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25162] = { -- Elemental Goo
-            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475}
+            [questKeys.exclusiveTo] = {25158,25159,25160,25161},
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25164] = { -- Backed Into a Corner
             [questKeys.objectives] = {{{39397},{40161}}},
@@ -1957,6 +1970,9 @@ function CataQuestFixes.Load()
         [26133] = { -- Fiends from the Netherworld
             [questKeys.preQuestSingle] = {26111},
         },
+        [26135] = { -- Visions of the Past: Rise from the Deep
+            [questKeys.preQuestSingle] = {25973},
+        },
         [26150] = { -- A Visit With Maybell
             [questKeys.exclusiveTo] = {106},
             [questKeys.nextQuestInChain] = 106,
@@ -1990,6 +2006,9 @@ function CataQuestFixes.Load()
         },
         [26207] = { -- The Arts of a Rogue
             [questKeys.objectives] = {{{44171}},nil,nil,nil,nil,{{2098}}},
+        },
+        [26221] = { -- Full Circle
+            [questKeys.preQuestSingle] = {26006},
         },
         [26228] = { -- Livin' the Life
             [questKeys.triggerEnd] = {"Livin' the Life!", {[zoneIDs.WESTFALL]={{61,25}}}},
@@ -2039,12 +2058,18 @@ function CataQuestFixes.Load()
         },
         [26314] = { -- On Even Ground
             [questKeys.preQuestSingle] = {26326},
+            [questKeys.objectives] = {{{42479}}},
+        },
+        [26315] = { -- Imposing Confrontation
+            [questKeys.preQuestGroup] = {26312,26313,26314},
+            [questKeys.objectives] = {{{42471}}},
         },
         [26320] = { -- A Vision of the Past
             [questKeys.triggerEnd] = {"Vision of the Past uncovered", {[zoneIDs.THE_DEADMINES]={{-1,-1}}}},
         },
         [26324] = { -- Where Is My Warfleet?
             [questKeys.startedBy] = {{39605}},
+            [questKeys.preQuestGroup] = {26294,26311},
         },
         [26326] = { -- The Very Earth Beneath Our Feet
             [questKeys.preQuestSingle] = {27938},
@@ -2056,6 +2081,7 @@ function CataQuestFixes.Load()
             [questKeys.objectives] = {{{42777}}},
         },
         [26353] = { -- Captain Sanders' Hidden Treasure
+            [questKeys.startedBy] = {{513,515,126,171,456,127,517,458,391},nil,{1357}},
             [questKeys.finishedBy] = {nil,{35}},
         },
         [26354] = { -- Captain Sanders' Hidden Treasure
@@ -2076,8 +2102,18 @@ function CataQuestFixes.Load()
         [26374] = { -- Ready the Ground Troops
             [questKeys.objectives] = {{{42646}}},
         },
+        [26375] = { -- Loose Stones
+            [questKeys.preQuestSingle] = {26328},
+        },
+        [26376] = { -- Hatred Runs Deep
+            [questKeys.preQuestSingle] = {26328},
+        },
         [26377] = { -- Unsolid Ground
             [questKeys.requiredSourceItems] = {58500,58783},
+            [questKeys.preQuestSingle] = {26328},
+        },
+        [26388] = { -- Twilight Skies
+            [questKeys.extraObjectives] = {{{[zoneIDs.AZSHARA]={{50.7,73.9}}}, Questie.ICON_TYPE_EVENT, l10n("Wait for the Zeppelin")}},
         },
         [26391] = { -- Extinguishing Hope
             [questKeys.preQuestSingle] = {28817,28818,28819,28820,28821,28822,28823,29083},
@@ -2099,6 +2135,9 @@ function CataQuestFixes.Load()
         [26409] = { -- Where's Goldmine?
             [questKeys.preQuestSingle] = {},
         },
+        [26410] = { -- Explosive Bonding Compound
+            [questKeys.preQuestSingle] = {26409},
+        },
         [26411] = { -- Apply and Flash Dry
             [questKeys.preQuestSingle] = {27135},
         },
@@ -2116,6 +2155,13 @@ function CataQuestFixes.Load()
         [26440] = { -- Clingy
             [questKeys.triggerEnd] = {"Pebble brought to crystal formation",{[zoneIDs.DEEPHOLM]={{29,45}}}},
             [questKeys.objectives] = {},
+            [questKeys.preQuestSingle] = {26439},
+        },
+        [26437] = { -- Making Things Crystal Clear
+            [questKeys.preQuestSingle] = {26436},
+        },
+        [26438] = { -- Intervention
+            [questKeys.preQuestSingle] = {26436},
         },
         [26442] = { -- Rock Lobster
             [questKeys.exclusiveTo] = {29325,29321,29323,29324,29342,29343,29344,29347,29350,29359,26414,26420,26488,26536},
@@ -2160,6 +2206,9 @@ function CataQuestFixes.Load()
         [26500] = { -- We're Surrounded
             [questKeys.preQuestSingle] = {27935},
         },
+        [26507] = { -- Petrified Delicacies
+            [questKeys.preQuestSingle] = {26441},
+        },
         [26512] = { -- Tuning the Gnomecorder
             [questKeys.triggerEnd] = {"Test the Gnomecorder at the Lakeshire Graveyard", {[zoneIDs.REDRIDGE_MOUNTAINS]={{32.3,39.5}}}},
         },
@@ -2191,6 +2240,15 @@ function CataQuestFixes.Load()
         [26572] = { -- A Golden Opportunity
             [questKeys.requiredSourceItems] = {58955,58958},
             [questKeys.exclusiveTo] = {26557,26543,26556,26588,29349,29345,29354,29346,29348,29317,29320,29361,29319,29322},
+        },
+        [26575] = { -- Rock Bottom
+            [questKeys.preQuestSingle] = {26441},
+        },
+        [26576] = { -- Steady Hand
+            [questKeys.preQuestSingle] = {26575},
+        },
+        [26577] = { -- Rocky Upheaval
+            [questKeys.preQuestSingle] = {26575},
         },
         [26578] = { -- Doomshrooms
             [questKeys.preQuestSingle] = {26577},
@@ -2227,6 +2285,9 @@ function CataQuestFixes.Load()
         },
         [26614] = { -- Keep An Eye Out
             [questKeys.preQuestSingle] = {26611},
+        },
+        [26619] = { -- You Say You Want a Revolution
+            [questKeys.preQuestGroup] = {26540,26608},
         },
         [26621] = { -- Insurrection
             [questKeys.objectives] = {{{43575},{43394}},nil,nil,nil,{{{43577,43578},43577,"Dragonmaw Civilian Armed"}}},
@@ -2267,6 +2328,15 @@ function CataQuestFixes.Load()
         [26656] = { -- Don't. Stop. Moving.
             [questKeys.triggerEnd] = {"Opalescent Guardians Escorted to safety", {[zoneIDs.DEEPHOLM]={{51,14.8}}}},
             [questKeys.objectives] = {{{42466},{43597}},nil,nil,nil,},
+        },
+        [26657] = { -- Hard Falls
+            [questKeys.preQuestSingle] = {26656},
+        },
+        [26658] = { -- Fragile Values
+            [questKeys.preQuestSingle] = {26656},
+        },
+        [26659] = { -- Resonating Blow
+            [questKeys.objectives] = {{{43641}},{{204837}}},
         },
         [26662] = { -- The Brashtide Crew
             [questKeys.preQuestSingle] = {26650},
@@ -2330,6 +2400,9 @@ function CataQuestFixes.Load()
         [26785] = { -- Part of the Pack
             [questKeys.preQuestSingle] = {26674},
             [questKeys.exclusiveTo] = {26717},
+        },
+        [26788] = { -- Cementing Our Victory
+            [questKeys.preQuestSingle] = {26622},
         },
         [26798] = { -- The Warchief Will Be Pleased
             [questKeys.finishedBy] = {{39605}},
@@ -2535,6 +2608,9 @@ function CataQuestFixes.Load()
         [27126] = { -- Rush Delivery
             [questKeys.preQuestSingle] = {26625},
         },
+        [27135] = { -- Something that Burns
+            [questKeys.preQuestSingle] = {26409},
+        },
         [27139] = { -- Hobart Needs You
             [questKeys.exclusiveTo] = {24671},
         },
@@ -2546,6 +2622,9 @@ function CataQuestFixes.Load()
         },
         [27176] = { -- A Strange Disc
             [questKeys.requiredSourceItems] = {60865},
+        },
+        [27196] = { -- On to Something
+            [questKeys.preQuestSingle] = {27176},
         },
         [27203] = { -- The Maelstrom
             [questKeys.preQuestSingle] = {},
@@ -2572,7 +2651,7 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {},
         },
         [27301] = { -- Unbroken
-            [questKeys.preQuestSingle] = {27300},
+            [questKeys.preQuestSingle] = {27299},
         },
         [27302] = { -- Simple Solutions
             [questKeys.preQuestSingle] = {27299},
@@ -2605,22 +2684,26 @@ function CataQuestFixes.Load()
         [27381] = { -- Traveling Companions
             [questKeys.objectives] = {{{45451}}},
         },
+        [27394] = { -- The Call of the Blade
+            [questKeys.preQuestSingle] = {25953},
+        },
         [27398] = { -- The Battle Is Won, The War Goes On
             [questKeys.preQuestSingle] = {25551},
-            [questKeys.exclusiveTo] = {27203,27443,27727},
+            [questKeys.exclusiveTo] = {27203,27443},
         },
         [27399] = { -- The Battle Is Won, The War Goes On
             [questKeys.preQuestSingle] = {25551},
-            [questKeys.exclusiveTo] = {27203,27442,27722},
+            [questKeys.exclusiveTo] = {27203,27442},
         },
         [27404] = { -- The Circle's Future
             [questKeys.preQuestSingle] = {},
         },
         [27442] = { -- The War Has Many Fronts
-            [questKeys.exclusiveTo] = {27203,27399,27722},
+            [questKeys.preQuestSingle] = {26006},
+            [questKeys.exclusiveTo] = {27203,27399},
         },
         [27443] = { -- The War Has Many Fronts
-            [questKeys.exclusiveTo] = {27203,27398,27727},
+            [questKeys.exclusiveTo] = {27203,27398},
         },
         [27490] = { -- SI:7 Drop
             [questKeys.objectives] = {{{45904},{45877}}},
@@ -2697,6 +2780,7 @@ function CataQuestFixes.Load()
         },
         [27690] = { -- Narkrall, the Drake-Tamer
             [questKeys.preQuestSingle] = {27606},
+            [questKeys.exclusiveTo] = {27947},
         },
         [27696] = { -- The Elementium Axe
             [questKeys.preQuestSingle] = {27689},
@@ -2729,7 +2813,7 @@ function CataQuestFixes.Load()
             [questKeys.exclusiveTo] = {25316},
         },
         [27722] = { -- Warchief's Command: Deepholm!
-            [questKeys.exclusiveTo] = {27203,27399,27442},
+            [questKeys.exclusiveTo] = {27203},
         },
         [27724] = { -- Hero's Call: Vashj'ir!
             [questKeys.startedBy] = {nil,{206111,206294,207320,207321,207322,281339}},
@@ -2741,21 +2825,23 @@ function CataQuestFixes.Load()
         },
         [27727] = { -- Hero's Call: Deepholm!
             [questKeys.startedBy] = {nil,{206111,206294,207320,207321,207322,281339}},
-            [questKeys.exclusiveTo] = {27203,27398,27443},
+            [questKeys.exclusiveTo] = {27203},
         },
         [27729] = { -- Once More, With Eeling
             [questKeys.preQuestSingle] = {14482,25924},
             [questKeys.finishedBy] = {{100004}},
         },
         [27742] = { -- A Little on the Side
+            [questKeys.exclusiveTo] = {},
             [questKeys.preQuestSingle] = {28885},
         },
         [27743] = { -- While We're Here
+            [questKeys.exclusiveTo] = {},
             [questKeys.preQuestSingle] = {28885},
         },
         [27744] = { -- Rune Ruination
             [questKeys.exclusiveTo] = {},
-            [questKeys.preQuestSingle] = {27711,27712},
+            [questKeys.preQuestSingle] = {28885},
         },
         [27745] = { -- A Fiery Reunion
             [questKeys.objectives] = {nil,{{301087}},{{62394}}},
@@ -2821,15 +2907,23 @@ function CataQuestFixes.Load()
         },
         [27932] = { -- The Axe of Earthly Sundering
             [questKeys.preQuestSingle] = {27931},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Sunder the Emerald Colossus"), 0, {{"monster", 44218}}}},
         },
         [27933] = { -- Elemental Ore
             [questKeys.preQuestSingle] = {27931},
         },
+        [27935] = { -- Bring Down the Avalanche
+            [questKeys.preQuestSingle] = {27934},
+        },
+        [27936] = { -- Bring Down the Avalanche
+            [questKeys.startedBy] = {},
+            [questKeys.preQuestSingle] = {27934},
+        },
         [27945] = { -- Paint it Black
-            [questKeys.preQuestSingle] = {27690},
+            [questKeys.preQuestSingle] = {27751,27929},
         },
         [27947] = { -- A Vision of Twilight
-            [questKeys.preQuestSingle] = {27690},
+            [questKeys.preQuestSingle] = {27751,27929},
         },
         [27950] = { -- Gobbles!
             [questKeys.objectives] = {{{47191}}},
@@ -3024,6 +3118,9 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {28467},
             [questKeys.reputationReward] = {{factionIDs.TIMBERMAW_HOLD, 10}},
         },
+        [28533] = { -- The High Council's Decision
+            [questKeys.preQuestGroup] = {27738,27838,28277},
+        },
         [28544] = { -- Hero's Call: Winterspring!
             [questKeys.exclusiveTo] = {28524,28545,28460,28768},
         },
@@ -3039,11 +3136,15 @@ function CataQuestFixes.Load()
         [28558] = { -- Hero's Call: Uldum!
             [questKeys.startedBy] = {nil,{206111,206294,207320,207321,207322,281339}},
         },
+        [28561] = { -- Nahom Must Hold
+            [questKeys.preQuestSingle] = {28533},
+        },
         [28571] = { -- Warchief's Command: Hillsbrad Foothills!
             [questKeys.exclusiveTo] = {28096},
         },
         [28584] = { -- Quality Construction
             [questKeys.preQuestSingle] = {28583},
+            [questKeys.objectives] = {nil,{{207298}}},
         },
         [28586] = { -- Pool Pony Rescue
             [questKeys.preQuestSingle] = {28583},
@@ -3119,6 +3220,10 @@ function CataQuestFixes.Load()
         [28849] = { -- Twilight Skies
             [questKeys.preQuestGroup] = {26337,26372,26374},
         },
+        [28869] = { -- Pebble
+            [questKeys.exclusiveTo] = {26440},
+            [questKeys.preQuestGroup] = {26437,26438,26439},
+        },
         [28870] = { -- Return to the Lost City
             [questKeys.preQuestSingle] = {28520},
         },
@@ -3127,6 +3232,7 @@ function CataQuestFixes.Load()
         },
         [28872] = { -- Total War
             [questKeys.objectives] = {nil,{{206195}}},
+            [questKeys.preQuestSingle] = {28133},
         },
         [28873] = { -- Another Maw to Feed
             [questKeys.preQuestSingle] = {28133},
