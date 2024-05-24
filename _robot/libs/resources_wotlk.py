@@ -107,6 +107,8 @@ data = {
     },
     "death knight": {
         "main": [
+            {"name": "outbreak", "type": "GetSpellTexture", "id": 77575, "key": "9"},
+            {"name": "dancing rune weapon", "type": "GetSpellTexture", "id": 49028, "key": "1", "modifier": "lshift"},
             {"name": "heart strike", "type": "GetSpellTexture", "id": 55050, "key": "6"},
             {"name": "death strike", "type": "GetSpellTexture", "id": 49998, "key": "5"},
             {"name": "raise dead", "type": "GetSpellTexture", "id": 46584, "key": "f", "modifier": "lalt"},

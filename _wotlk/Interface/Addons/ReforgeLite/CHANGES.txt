@@ -1,30 +1,10 @@
-tag 01b196ab956fa7abad4b52158fe544e8e4cb28cf v1.2.6
+tag 1810b6921d291831fc42042fa7fdbc1c818bb104 v1.2.7
 Author:	skyler-code <skylerh15@github.com>
-Date:	Fri May 24 10:41:22 2024 -0500
+Date:	Fri May 24 14:05:35 2024 -0500
 
-commit f6022184f3b94aeeee5908adabda0351e5daed02
+commit 943ae78a32b006492140ecaac6fc4f2968528c8c
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 24 10:40:14 2024 -0500
+Date:   Fri May 24 14:04:38 2024 -0500
 
-    Apply Expertise bonus if player is paladin, has glyph, has no seal active
-
-commit 9e9cb424615f5704d2886b3e2d5a13b990a0a3dd
-Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 24 10:39:08 2024 -0500
-
-    fixed NightElf check for miss chance
-
-commit 386a792cefb9b1635876d482a95451d138a55d76
-Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 24 10:33:49 2024 -0500
-
-    Enabled tanking stats panel for druids
-    
-    Various other cleanup
-
-commit c5cd5bd9ad95d82843bad697ab9c01fcb2e3e572
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 16 01:30:46 2024 -0500
-
-    math.pow is deprecated
+    Somehow Spirit to Hit got removed for priest/druid/shaman
 

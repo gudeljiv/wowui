@@ -1,0 +1,12 @@
+lightweight tag 462d178b202b2771d804414a2d17c5a482815593 4.04.1
+Author:	lancetre <c.knoepffler@free.fr>
+Date:	Fri May 24 18:54:16 2024 +0200
+
+commit 462d178b202b2771d804414a2d17c5a482815593
+Author: lancetre <c.knoepffler@free.fr>
+Date:   Fri May 24 18:54:16 2024 +0200
+
+    Update LibStatLogic-1.2-cata.lua
+    
+    mastery
+
