@@ -54,6 +54,7 @@ Addons/ShadowedUnitFrames.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/RXPGuide.lua
+Addons/SpellActivationOverlay.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua
 
