@@ -21,11 +21,7 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Abolish Poison
-END
-VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Remove Curse
+/cast [@mouseover,exists,nodead][help][] Remove Corruption
 END
 VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip Dash
@@ -47,12 +43,10 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [form:1] Mangle (Bear)
-/cast [form:3] Mangle (Cat)
-/cast Innervate
+/cast [form:1] Mangle(bear form); [form:3] Mangle(cat form)
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtoltip
+#showtoltip [stealth] Pounce; [form:1] Maul; [form:3] Claw; Regrowth
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"

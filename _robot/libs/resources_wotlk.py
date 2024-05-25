@@ -4,7 +4,7 @@ data = {
     "colors": {
         "shaman": {"#0092f1", "#4090ea"},
         "warrior": {"#dfb990", "#e7c49b"},
-        "druid": {"#ff9f13"},
+        "druid": {"#ff9f13", "#ffa91e"},
         "death knight": {"#dd365a", "#e44266"},
         "hunter": {"#c8e795", "#d0f1a0"},
         "rogue": {"#ffff8b"},
@@ -86,7 +86,7 @@ data = {
             {"name": "savage roar", "type": "GetSpellTexture", "id": 52610, "key": "e", "modifier": "lshift"},
             {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "lalt"},
             {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "lalt"},
-            {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
+            {"name": "swipe", "type": "GetSpellTexture", "id": 62078, "key": "2"},
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
             {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
             {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
@@ -101,8 +101,8 @@ data = {
             {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
         ],
         "secondary": [
-            {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
+            {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
         ],
     },
     "death knight": {

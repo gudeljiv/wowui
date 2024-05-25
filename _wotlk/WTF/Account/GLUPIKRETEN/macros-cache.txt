@@ -41,11 +41,11 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:33445
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:58262
+/cast item:35953
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -57,7 +57,7 @@ VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:33448
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -70,8 +70,9 @@ VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
 /targetlasttarget [dead]
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run SpellActivationOverlayContainerFrame:ClearAllPoints()
-/run SpellActivationOverlayContainerFrame:SetPoint("CENTER", UIParent, "CENTER", 0, 100)
+/run print(C_ToyBox.GetToyInfo(68806))
+/run print(IsUsableAction(55))
+/run print(IsUsableSpell(68806))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy
