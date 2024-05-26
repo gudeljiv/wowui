@@ -14,11 +14,11 @@ ChocolateBarDB = {
 		["Tandaram - Jin'do"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
 		["Wells - Jin'do"] = "Default",
-		["Verminz - Genesis"] = "Default",
-		["Poklopac - Dreadnaught"] = "Default",
-		["Konac - Dreadnaught"] = "Default",
-		["Provokator - Jin'do"] = "Default",
 		["Asjrdfsad - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
@@ -51,8 +51,8 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -60,7 +60,7 @@ ChocolateBarDB = {
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Battledog - Gehennas"] = "Default",
 	},
@@ -91,12 +91,21 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["iconSize"] = 0.7000000000000001,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -671,16 +680,7 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["iconSize"] = 0.7000000000000001,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -727,9 +727,9 @@ CB_PlayedTime = {
 		["total"] = 53,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 2156168,
-		["timeAtThisLevel"] = 1063621,
-		["timeStamp"] = 673282.616,
+		["total"] = 2156210,
+		["timeAtThisLevel"] = 1063663,
+		["timeStamp"] = 1363305.912,
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 17339,
@@ -743,9 +743,9 @@ CB_PlayedTime = {
 		["total"] = 3014,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 1129999,
-		["timeStamp"] = 673339.37,
-		["timeAtThisLevel"] = 7016,
+		["total"] = 1132621,
+		["timeStamp"] = 1365837.799,
+		["timeAtThisLevel"] = 9638,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,
@@ -759,9 +759,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1209719,
-		["timeAtThisLevel"] = 178699,
-		["timeStamp"] = 660508.774,
+		["total"] = 1210118,
+		["timeAtThisLevel"] = 179098,
+		["timeStamp"] = 1366323.488,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -898,9 +898,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 538134,
-		["timeAtThisLevel"] = 5048,
-		["timeStamp"] = 1233206.584,
+		["total"] = 538174,
+		["timeAtThisLevel"] = 5088,
+		["timeStamp"] = 1366296.176,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,

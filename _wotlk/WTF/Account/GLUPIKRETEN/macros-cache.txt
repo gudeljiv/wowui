@@ -27,7 +27,7 @@ VER 3 000000000000002A " " "132328"
 END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:34722
+/cast item:0
 END
 VER 3 000000000000002B "bear" "132276"
 #showtooltip Bear Form
@@ -57,7 +57,7 @@ VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33448
+/cast item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl

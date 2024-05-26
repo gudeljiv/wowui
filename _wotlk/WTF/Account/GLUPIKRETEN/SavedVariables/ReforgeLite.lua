@@ -4,7 +4,7 @@ ReforgeLiteDB = {
 	["updateTooltip"] = true,
 	["windowY"] = 1215.333129882813,
 	["reforgeCheat"] = 3.991333246231079,
-	["openOnReforge"] = true,
+	["methodWindowY"] = 945.0794677734375,
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
 			["caps"] = {
@@ -455,6 +455,11 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
+			["buffs"] = {
+			},
+			["itemsLocked"] = {
+				[8] = false,
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -464,11 +469,6 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
-			},
-			["itemsLocked"] = {
-				[8] = false,
-			},
-			["buffs"] = {
 			},
 		},
 		["Handrmandr - Golemagg"] = {
@@ -619,22 +619,22 @@ ReforgeLiteDB = {
 					}, -- [17]
 				},
 				["stats"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					["parry"] = 0,
-					["dodge"] = 0,
+					62, -- [1]
+					358, -- [2]
+					782, -- [3]
+					301, -- [4]
+					345, -- [5]
+					119, -- [6]
+					502, -- [7]
+					614, -- [8]
+					["parry"] = 16.37985038757324,
+					["dodge"] = 10.75029850006104,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
-					[3] = 0,
-					[2] = 0,
-					[8] = 0,
+					[3] = 782,
+					[2] = 358,
+					[8] = 614,
 				},
 			},
 			["targetLevel"] = 3,
@@ -720,22 +720,22 @@ ReforgeLiteDB = {
 					}, -- [17]
 				},
 				["stats"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					["parry"] = 0,
-					["dodge"] = 0,
+					62, -- [1]
+					358, -- [2]
+					782, -- [3]
+					301, -- [4]
+					345, -- [5]
+					119, -- [6]
+					502, -- [7]
+					614, -- [8]
+					["parry"] = 16.37985038757324,
+					["dodge"] = 10.75029850006104,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
-					[3] = 0,
-					[2] = 0,
-					[8] = 0,
+					[3] = 782,
+					[2] = 358,
+					[8] = 614,
 				},
 			},
 			["buffs"] = {
@@ -893,6 +893,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -902,8 +904,6 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -983,7 +983,7 @@ ReforgeLiteDB = {
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["windowX"] = 1029.206420898438,
 	["customPresets"] = {
