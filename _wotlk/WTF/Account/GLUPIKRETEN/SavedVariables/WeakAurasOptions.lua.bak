@@ -1,20 +1,8 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
 	["spellCacheAchievements"] = true,
-	["spellCacheAchivements"] = true,
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.13.1",
-	["lockPositions"] = false,
-	["spellCacheStrings"] = true,
-	["frame"] = {
-		["xOffset"] = 608.9951171875,
-		["width"] = 1032.918212890625,
-		["height"] = 1043.524291992188,
-		["yOffset"] = 1226.406005859375,
+	["savedSnippets"] = {
 	},
 	["spellCache"] = {
 		["Spotted"] = {
@@ -4110,7 +4098,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "603=136122,18662=136122,43439=136122",
 		},
 		["Defend Wyrmrest"] = {
-			["spells"] = "107576=134158,110763=133495",
+			["spells"] = "107576=134158,110763=132143",
 		},
 		["Earth-Warder"] = {
 			["spells"] = "107455=236554",
@@ -4938,7 +4926,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "103952=236213,103954=236213",
 		},
 		["Attack Wyrmrest"] = {
-			["spells"] = "107577=134154,110768=133495",
+			["spells"] = "107577=134154,110768=132143",
 		},
 		["Strike Fear"] = {
 			["spells"] = "103913=236295",
@@ -4983,7 +4971,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "103762=136223",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=133495",
+			["spells"] = "35673=132143",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -15315,7 +15303,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "77794=462651,77795=462651,77796=462651,77800=462651,96300=462651",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=133495",
+			["spells"] = "6603=132143",
 		},
 		["Ground Slash"] = {
 			["spells"] = "86079=132368",
@@ -29469,7 +29457,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "78406=136247",
 		},
 		["Clayton's Test Spell"] = {
-			["spells"] = "64755=133495",
+			["spells"] = "64755=132143",
 		},
 		["Summon Murky"] = {
 			["spells"] = "24939=134169",
@@ -50297,6 +50285,9 @@ WeakAurasOptionsSaved = {
 		["Spread Shot"] = {
 			["spells"] = "37790=132330",
 		},
+		["Death Touch"] = {
+			["spells"] = "5=133730",
+		},
 		["Sunblessed Gauntlets"] = {
 			["spells"] = "46140=136241",
 		},
@@ -51469,9 +51460,6 @@ WeakAurasOptionsSaved = {
 		},
 		["Mysticism"] = {
 			["spells"] = "89745=135977",
-		},
-		["Death Touch"] = {
-			["spells"] = "5=133730",
 		},
 		["Quick Bloodlust"] = {
 			["spells"] = "3229=136012",
@@ -53890,6 +53878,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Blessing of Nordrassil"] = {
 			["spells"] = "23108=135972",
+		},
+		["Suicide"] = {
+			["spells"] = "7=136168,8329=136168,27965=136168,28012=136168,35301=136168,38763=136168,45254=136168,46751=136168,47769=136168,67375=136168,87255=135732,99270=136168,99590=136168",
 		},
 		["Stampede"] = {
 			["spells"] = "45876=136112,45901=136112,55218=132368,55220=132368,57386=237572,59823=132368,78892=304501,78893=304501,81016=304501,81017=304501,81021=304501,81022=304501",
@@ -58130,9 +58121,6 @@ WeakAurasOptionsSaved = {
 		["Ritual of Bloodletting"] = {
 			["spells"] = "82753=132334,93587=132334",
 		},
-		["Suicide"] = {
-			["spells"] = "7=136168,8329=136168,27965=136168,28012=136168,35301=136168,38763=136168,45254=136168,46751=136168,47769=136168,67375=136168,87255=135732,99270=136168,99590=136168",
-		},
 		["Stout Heart"] = {
 			["spells"] = "21958=135995",
 		},
@@ -59587,9 +59575,6 @@ WeakAurasOptionsSaved = {
 		},
 		["Icy Boulder"] = {
 			["spells"] = "102198=132387,102480=132387,105432=132387,105433=132387,107848=132387",
-		},
-		["Frostbolt of Ages"] = {
-			["spells"] = "11=135846",
 		},
 		["Summon Blood Parrot"] = {
 			["spells"] = "17567=133168",
@@ -62362,6 +62347,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Gossip NPC Appearance - Draenei Male, Lunar Festival"] = {
 			["spells"] = "33431=135849",
+		},
+		["Frostbolt of Ages"] = {
+			["spells"] = "11=135846",
 		},
 		["Disgusting Oozeling"] = {
 			["spells"] = "25162=132107",
@@ -74142,5 +74130,17 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.13.1",
+	["lockPositions"] = false,
+	["frame"] = {
+		["xOffset"] = 1640.740966796875,
+		["yOffset"] = 1261.326171875,
+		["height"] = 1043.524291992188,
+		["width"] = 1032.91845703125,
+	},
+	["spellCacheStrings"] = true,
+	["spellCacheAchivements"] = true,
 	["build"] = "54737",
 }
