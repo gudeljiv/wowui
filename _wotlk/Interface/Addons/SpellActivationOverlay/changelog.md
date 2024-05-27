@@ -1,5 +1,25 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.0.0 (2024-05-27)
+
+This release marks a major overhaul of the effect system
+
+New effects:
+- New SAO: Paladin's charges of Holy Power (Cataclysm)
+- New GAB: Death Knight's Bone Shield, when the buff is missing (Cataclysm)
+- New GAB: Paladin's Inquisition, at 3 charges of Holy Power (Cataclysm)
+- New GAB: Paladin's Light of Dawn, at 3 Holy Power (Cataclysm)
+- New GAB: Paladin's Templar's Verdict, at 3 Holy Power (Cataclysm)
+- New GAB: Paladin's Shield of the Righteous, at 3 Holy Power (Cataclysm)
+- New GAB: Paladin's Word of Glory, at 3 Holy Power (Cataclysm)
+
+Bug Fixes
+- Buffs should now be detected a bit more efficiently (Season of Discovery)
+- Checking a checkbox in options panel refreshes their effects immediately
+
+Known Issues
+- Rare effects still do not refresh immediately after changing their option
+
 #### v1.4.4 (2024-05-20)
 
 Shout-out to fellow developer stako. Thanks!
@@ -10,7 +30,7 @@ Bug Fixes
 
 #### v1.4.3 (2024-05-12)
 
-New Spell Alerts:
+New Glowing Buttons:
 - New GAB: Priest's Mind Blast, with 2 stacks of Mind Melt (Cataclysm)
 - New GAB: Hunter's Kill Command, during Killing Streak (Cataclysm)
 - New GAB: Warrior's Cleave, during Battle Trance (Cataclysm)

@@ -97,8 +97,10 @@ data = {
             {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
             {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
-            {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
+            {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "4"},
             {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
+            {"name": "pulverize", "type": "GetSpellTexture", "id": 80313, "key": "5"},
+            {"name": "thrash", "type": "GetSpellTexture", "id": 77758, "key": "3"},
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},

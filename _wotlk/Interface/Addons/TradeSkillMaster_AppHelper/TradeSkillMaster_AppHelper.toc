@@ -1,9 +1,9 @@
-## Interface: 30403
+## Interface: 40400
 ## Title: |cff00ff00TradeSkillMaster_AppHelper|r
 ## IconTexture: Interface\Addons\TradeSkillMaster\Media\Logo
 ## Notes: Acts as a connection between the TSM addon and app.
 ## Author: TSM Team
-## Version: v4.13.1
+## Version: v4.13.2
 ## SavedVariables: TradeSkillMaster_AppHelperDB
 ## Dependency: TradeSkillMaster
 

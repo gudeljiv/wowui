@@ -1,17 +1,8 @@
 
 __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 	["includeUnsuitableEquipment"] = false,
-	["merchantButton"] = true,
-	["autoJunkFrame"] = false,
 	["autoSell"] = true,
-	["exclusions"] = {
-		["19699"] = true,
-		["19702"] = true,
-		["19705"] = true,
-		["19706"] = true,
-		["19700"] = true,
-	},
-	["excludeEquipmentSets"] = false,
+	["itemIcons"] = false,
 	["autoRepair"] = false,
 	["inclusions"] = {
 		["19716"] = true,
@@ -23,13 +14,23 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 	},
 	["safeMode"] = false,
 	["itemTooltips"] = true,
-	["excludeUnboundEquipment"] = false,
 	["includeArtifactRelics"] = false,
-	["includePoorItems"] = true,
 	["chatMessages"] = true,
 	["minimapIcon"] = {
 		["hide"] = true,
 	},
+	["exclusions"] = {
+		["19705"] = true,
+		["19702"] = true,
+		["19699"] = true,
+		["19706"] = true,
+		["19700"] = true,
+	},
+	["excludeEquipmentSets"] = false,
+	["autoJunkFrame"] = false,
+	["includePoorItems"] = true,
+	["merchantButton"] = true,
+	["excludeUnboundEquipment"] = false,
 	["includeBelowItemLevel"] = {
 		["value"] = 10,
 	},

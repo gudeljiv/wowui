@@ -5,7 +5,7 @@
 ## SavedVariablesPerCharacter: PlaterDBChr
 ## IconTexture-blank: 982414
 ## IconTexture: Interface\AddOns\Plater\images\cast_bar
-## Version: Plater-v579-Retail
+## Version: Plater-v580-Retail
 ## X-Curse-Project-ID: 100547
 ## X-Wago-ID: kRNLep6o
 
@@ -37,6 +37,9 @@ Plater_Logs.lua
 Plater_PerformanceUnits.lua
 Plater_Util.lua
 Plater.lua
+Plater_ColorFrame.lua
+Plater_SlashCMD.lua
+Plater_ImportExport.lua
 Plater_Comms.lua
 Plater_Auras.lua
 Plater_Resources.lua

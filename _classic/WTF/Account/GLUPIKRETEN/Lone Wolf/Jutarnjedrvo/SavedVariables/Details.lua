@@ -240,8 +240,8 @@ _detalhes_database = {
 							},
 							["nome"] = "Jutarnjedrvo",
 							["grupo"] = true,
-							["tipo"] = 4,
 							["last_event"] = 1713625521,
+							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-0235A66A",
@@ -271,7 +271,7 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					282, -- [1]
+					5196, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -732,7 +732,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 3310.007792,
 							["total_without_pet"] = 0.007792,
 							["total"] = 0.007792,
@@ -814,12 +814,12 @@ _detalhes_database = {
 							["grupo"] = true,
 							["healing_from"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-0235A66A",
 							["custom"] = 0,
 							["last_event"] = 1713623878,
 							["totaldenied"] = 0.007792,
 							["delay"] = 1713379855,
-							["aID"] = "5826-0235A66A",
+							["classe"] = "SHAMAN",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -956,8 +956,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1713379789,
 							["tipo"] = 4,
+							["last_event"] = 1713379789,
 							["serial"] = "Player-5826-0235A66A",
 							["aID"] = "5826-0235A66A",
 						}, -- [1]
@@ -1699,8 +1699,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1713379751,
 							["tipo"] = 4,
+							["last_event"] = 1713379751,
 							["serial"] = "Player-5826-0235A66A",
 							["aID"] = "5826-0235A66A",
 						}, -- [1]
@@ -2339,8 +2339,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1713379715,
 							["tipo"] = 4,
+							["last_event"] = 1713379715,
 							["serial"] = "Player-5826-0235A66A",
 							["aID"] = "5826-0235A66A",
 						}, -- [1]
@@ -3321,7 +3321,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 3226,
 							},
 							["totalover_without_pet"] = 0.005579,
-							["tipo"] = 2,
+							["last_event"] = 1713367467,
 							["healing_taken"] = 3226.005579,
 							["fight_component"] = true,
 							["end_time"] = 1713367475,
@@ -3364,7 +3364,7 @@ _detalhes_database = {
 							["start_time"] = 1713367460,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713367467,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005579,
 							["delay"] = 1713367443,
 							["aID"] = "5826-0235A66A",
@@ -3547,14 +3547,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 77,
 							["buff_uptime"] = 167,
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367475,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -4638,7 +4638,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 74,
 										["MISS"] = 3,
-										["total"] = 6081,
+										["r_amt"] = 0,
 										["c_max"] = 210,
 										["DODGE"] = 5,
 										["id"] = 1,
@@ -4653,7 +4653,7 @@ _detalhes_database = {
 										["c_total"] = 732,
 										["n_amt"] = 61,
 										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 6081,
 									}, -- [1]
 								},
 								["tipo"] = 2,
@@ -4698,7 +4698,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 5987,
 							},
 							["totalover_without_pet"] = 0.008738,
-							["tipo"] = 2,
+							["last_event"] = 1713367391,
 							["healing_taken"] = 5987.008738,
 							["fight_component"] = true,
 							["end_time"] = 1713367394,
@@ -4741,7 +4741,7 @@ _detalhes_database = {
 							["start_time"] = 1713367366,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713367391,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008738,
 							["delay"] = 1713367356,
 							["aID"] = "5826-0235A66A",
@@ -4924,14 +4924,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 97,
 							["buff_uptime"] = 213,
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367394,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -5108,9 +5108,9 @@ _detalhes_database = {
 											["Surf Glider"] = 1074,
 										},
 										["n_total"] = 540,
-										["a_amt"] = 0,
+										["g_dmg"] = 216,
 										["n_min"] = 53,
-										["MISS"] = 1,
+										["a_amt"] = 0,
 										["counter"] = 15,
 										["DODGE"] = 1,
 										["total"] = 1074,
@@ -5128,7 +5128,7 @@ _detalhes_database = {
 										["c_total"] = 318,
 										["n_amt"] = 7,
 										["r_amt"] = 0,
-										["g_dmg"] = 216,
+										["MISS"] = 1,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 0,
@@ -5654,8 +5654,8 @@ _detalhes_database = {
 							},
 							["nome"] = "Jutarnjedrvo",
 							["grupo"] = true,
-							["tipo"] = 4,
 							["last_event"] = 1713367273,
+							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-0235A66A",
@@ -5834,12 +5834,12 @@ _detalhes_database = {
 										},
 										["n_total"] = 2272,
 										["DODGE"] = 6,
-										["a_amt"] = 0,
+										["g_dmg"] = 107,
 										["n_min"] = 46,
-										["MISS"] = 6,
+										["a_amt"] = 0,
 										["counter"] = 51,
 										["b_dmg"] = 0,
-										["total"] = 3320,
+										["r_amt"] = 0,
 										["c_max"] = 194,
 										["EVADE"] = 1,
 										["id"] = 1,
@@ -5853,8 +5853,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 941,
 										["n_amt"] = 28,
-										["r_amt"] = 0,
-										["g_dmg"] = 107,
+										["total"] = 3320,
+										["MISS"] = 6,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 0,
@@ -6333,7 +6333,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 5703,
 							},
 							["totalover_without_pet"] = 0.004766,
-							["tipo"] = 2,
+							["last_event"] = 1713367218,
 							["healing_taken"] = 5703.004766,
 							["fight_component"] = true,
 							["end_time"] = 1713367222,
@@ -6376,7 +6376,7 @@ _detalhes_database = {
 							["start_time"] = 1713367197,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713367218,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004766,
 							["delay"] = 1713367199,
 							["aID"] = "5826-0235A66A",
@@ -6570,14 +6570,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 112,
 							["buff_uptime"] = 242,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367222,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -7147,7 +7147,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 1010,
 							},
 							["totalover_without_pet"] = 0.001377,
-							["tipo"] = 2,
+							["last_event"] = 1713367140,
 							["healing_taken"] = 1010.001377,
 							["fight_component"] = true,
 							["end_time"] = 1713367146,
@@ -7190,7 +7190,7 @@ _detalhes_database = {
 							["start_time"] = 1713367140,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713367140,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001377,
 							["delay"] = 0,
 							["aID"] = "5826-0235A66A",
@@ -7362,14 +7362,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 34,
 							["buff_uptime"] = 102,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367146,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -7628,7 +7628,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 33,
 										["MISS"] = 5,
-										["total"] = 1897,
+										["r_amt"] = 0,
 										["c_max"] = 229,
 										["DODGE"] = 2,
 										["id"] = 1,
@@ -7643,7 +7643,7 @@ _detalhes_database = {
 										["c_total"] = 340,
 										["n_amt"] = 20,
 										["b_dmg"] = 174,
-										["r_amt"] = 0,
+										["total"] = 1897,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 0,
@@ -7959,7 +7959,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 53,
 										["a_amt"] = 0,
-										["total"] = 3889,
+										["r_amt"] = 0,
 										["c_max"] = 206,
 										["DODGE"] = 6,
 										["id"] = 1,
@@ -7974,7 +7974,7 @@ _detalhes_database = {
 										["c_total"] = 803,
 										["n_amt"] = 37,
 										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 3889,
 									}, -- [1]
 								},
 								["tipo"] = 2,
@@ -8019,7 +8019,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 3963,
 							},
 							["totalover_without_pet"] = 0.002542,
-							["tipo"] = 2,
+							["last_event"] = 1713367080,
 							["healing_taken"] = 3963.002542,
 							["fight_component"] = true,
 							["end_time"] = 1713367083,
@@ -8062,7 +8062,7 @@ _detalhes_database = {
 							["start_time"] = 1713367056,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713367080,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002542,
 							["delay"] = 0,
 							["aID"] = "5826-0235A66A",
@@ -8245,14 +8245,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 67,
 							["buff_uptime"] = 167,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367083,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -8428,9 +8428,9 @@ _detalhes_database = {
 											["Surf Glider"] = 1850,
 										},
 										["n_total"] = 1155,
-										["a_amt"] = 0,
+										["g_dmg"] = 46,
 										["n_min"] = 46,
-										["MISS"] = 5,
+										["a_amt"] = 0,
 										["counter"] = 32,
 										["DODGE"] = 2,
 										["total"] = 1850,
@@ -8448,7 +8448,7 @@ _detalhes_database = {
 										["c_total"] = 649,
 										["n_amt"] = 17,
 										["r_amt"] = 0,
-										["g_dmg"] = 46,
+										["MISS"] = 5,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 0,
@@ -8849,7 +8849,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 2197,
 							},
 							["totalover_without_pet"] = 0.004706,
-							["tipo"] = 2,
+							["last_event"] = 1713366994,
 							["healing_taken"] = 2197.004706,
 							["fight_component"] = true,
 							["end_time"] = 1713367002,
@@ -8892,7 +8892,7 @@ _detalhes_database = {
 							["start_time"] = 1713366987,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366994,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004706,
 							["delay"] = 0,
 							["aID"] = "5826-0235A66A",
@@ -9064,14 +9064,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 37,
 							["buff_uptime"] = 140,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713367002,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -9672,7 +9672,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 7302,
 							},
 							["totalover_without_pet"] = 0.00107,
-							["tipo"] = 2,
+							["last_event"] = 1713366903,
 							["healing_taken"] = 7302.00107,
 							["fight_component"] = true,
 							["end_time"] = 1713366909,
@@ -9715,7 +9715,7 @@ _detalhes_database = {
 							["start_time"] = 1713366866,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366903,
+							["tipo"] = 2,
 							["totaldenied"] = 0.00107,
 							["delay"] = 1713366871,
 							["aID"] = "5826-0235A66A",
@@ -9898,14 +9898,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 96,
 							["buff_uptime"] = 251,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713366909,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -10086,7 +10086,7 @@ _detalhes_database = {
 										["g_dmg"] = 132,
 										["counter"] = 32,
 										["MISS"] = 2,
-										["total"] = 2306,
+										["r_amt"] = 0,
 										["c_max"] = 225,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -10101,7 +10101,7 @@ _detalhes_database = {
 										["c_total"] = 842,
 										["n_amt"] = 17,
 										["b_dmg"] = 162,
-										["r_amt"] = 0,
+										["total"] = 2306,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 1,
@@ -10533,7 +10533,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 3140,
 							},
 							["totalover_without_pet"] = 0.002851,
-							["tipo"] = 2,
+							["last_event"] = 1713366807,
 							["healing_taken"] = 3140.002851,
 							["fight_component"] = true,
 							["end_time"] = 1713366811,
@@ -10576,7 +10576,7 @@ _detalhes_database = {
 							["start_time"] = 1713366800,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366807,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002851,
 							["delay"] = 1713366795,
 							["aID"] = "5826-0235A66A",
@@ -10759,14 +10759,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 61,
 							["buff_uptime"] = 161,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713366811,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -10948,7 +10948,7 @@ _detalhes_database = {
 										["g_dmg"] = 667,
 										["counter"] = 42,
 										["MISS"] = 2,
-										["total"] = 2698,
+										["r_amt"] = 0,
 										["c_max"] = 221,
 										["DODGE"] = 3,
 										["id"] = 1,
@@ -10963,7 +10963,7 @@ _detalhes_database = {
 										["c_total"] = 426,
 										["n_amt"] = 23,
 										["b_dmg"] = 140,
-										["r_amt"] = 0,
+										["total"] = 2698,
 									}, -- [1]
 									[10472] = {
 										["c_amt"] = 0,
@@ -11366,7 +11366,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 5916,
 							},
 							["totalover_without_pet"] = 0.007883,
-							["tipo"] = 2,
+							["last_event"] = 1713366734,
 							["healing_taken"] = 5916.007883,
 							["fight_component"] = true,
 							["end_time"] = 1713366735,
@@ -11409,7 +11409,7 @@ _detalhes_database = {
 							["start_time"] = 1713366712,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366734,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007883,
 							["delay"] = 1713366711,
 							["aID"] = "5826-0235A66A",
@@ -11592,14 +11592,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 93,
 							["buff_uptime"] = 220,
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["last_event"] = 1713366735,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -12425,7 +12425,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 1794,
 							},
 							["totalover_without_pet"] = 0.003161,
-							["tipo"] = 2,
+							["last_event"] = 1713366602,
 							["healing_taken"] = 1794.003161,
 							["fight_component"] = true,
 							["end_time"] = 1713366606,
@@ -12468,7 +12468,7 @@ _detalhes_database = {
 							["start_time"] = 1713366602,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366602,
+							["tipo"] = 2,
 							["totaldenied"] = 0.003161,
 							["delay"] = 1713366587,
 							["aID"] = "5826-0235A66A",
@@ -12582,14 +12582,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 29,
 							["buff_uptime"] = 101,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["last_event"] = 1713366606,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -13122,9 +13122,9 @@ _detalhes_database = {
 											["Jutarnjedrvo"] = 2344,
 										},
 										["n_total"] = 1987,
-										["a_amt"] = 0,
+										["g_dmg"] = 0,
 										["n_min"] = 66,
-										["MISS"] = 1,
+										["a_amt"] = 0,
 										["counter"] = 32,
 										["DODGE"] = 5,
 										["total"] = 2344,
@@ -13142,7 +13142,7 @@ _detalhes_database = {
 										["c_total"] = 357,
 										["n_amt"] = 23,
 										["r_amt"] = 0,
-										["g_dmg"] = 0,
+										["MISS"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
@@ -13187,7 +13187,7 @@ _detalhes_database = {
 								["Jutarnjedrvo"] = 1840,
 							},
 							["totalover_without_pet"] = 0.007597,
-							["tipo"] = 2,
+							["last_event"] = 1713366501,
 							["healing_taken"] = 1840.007597,
 							["fight_component"] = true,
 							["end_time"] = 1713366513,
@@ -13230,7 +13230,7 @@ _detalhes_database = {
 							["start_time"] = 1713366512,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1713366501,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007597,
 							["delay"] = 1713366501,
 							["aID"] = "5826-0235A66A",
@@ -13414,14 +13414,14 @@ _detalhes_database = {
 							["debuff_uptime"] = 70,
 							["buff_uptime"] = 157,
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["last_event"] = 1713366513,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -13606,7 +13606,7 @@ _detalhes_database = {
 			["utility"] = false,
 		},
 	},
-	["last_version"] = "1.15.2 12700",
+	["last_version"] = "1.15.2 12755",
 	["player_stats"] = {
 	},
 	["SoloTablesSaved"] = {
@@ -13786,7 +13786,7 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_overalldata"] = false,
 	},
-	["combat_counter"] = 5327,
+	["force_font_outline"] = "",
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -13839,7 +13839,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -13860,7 +13863,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -13868,13 +13871,13 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -13886,20 +13889,20 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["y"] = -183.107162475586,
-			["author"] = "Details! Team",
-			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
 			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["last_realversion"] = 156,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["cached_roles"] = {
 		["Player-4465-04243C1F"] = "DAMAGER",
 		["Player-4465-030F80BE"] = "DAMAGER",
@@ -13911,13 +13914,10 @@ _detalhes_database = {
 		["Player-4465-042617A5"] = "TANK",
 		["Player-4465-045F44E8"] = "HEALER",
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1716360442,
-		["last_version"] = 16,
-	},
+	["combat_counter"] = 5327,
+	["last_realversion"] = 156,
 	["last_instance_time"] = 1713121055,
-	["force_font_outline"] = "",
-	["last_day"] = "07",
+	["last_day"] = "27",
 	["on_death_menu"] = false,
 	["combat_id"] = 222,
 	["savedStyles"] = {
@@ -13940,7 +13940,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -14120,13 +14120,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -14149,7 +14149,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -14165,12 +14165,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -14187,12 +14186,13 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
 			},
 			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -14305,7 +14305,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -14966,7 +14966,7 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["counter"] = 32,
 								["MISS"] = 1,
-								["total"] = 3827,
+								["r_amt"] = 0,
 								["c_max"] = 256,
 								["c_amt"] = 1,
 								["id"] = 1,
@@ -14980,7 +14980,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 256,
 								["n_amt"] = 27,
-								["r_amt"] = 0,
+								["total"] = 3827,
 								["n_max"] = 167,
 							}, -- [1]
 							[12531] = {
@@ -15119,7 +15119,7 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["counter"] = 75,
 								["MISS"] = 8,
-								["total"] = 5875,
+								["r_amt"] = 0,
 								["c_max"] = 225,
 								["c_amt"] = 2,
 								["id"] = 1,
@@ -15133,7 +15133,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 400,
 								["n_amt"] = 55,
-								["r_amt"] = 0,
+								["total"] = 5875,
 								["n_max"] = 134,
 							}, -- [1]
 							[11427] = {
@@ -16586,7 +16586,7 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["counter"] = 102,
 								["MISS"] = 10,
-								["total"] = 5805,
+								["r_amt"] = 0,
 								["c_max"] = 159,
 								["c_amt"] = 2,
 								["id"] = 1,
@@ -16600,7 +16600,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 303,
 								["n_amt"] = 74,
-								["r_amt"] = 0,
+								["total"] = 5805,
 								["n_max"] = 109,
 							}, -- [1]
 							[8078] = {
@@ -17558,7 +17558,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "5826-0246C10B",
+					["classe"] = "MAGE",
 					["totalover"] = 26297.031395,
 					["total_without_pet"] = 16528.031395,
 					["total"] = 16528.031395,
@@ -17655,12 +17655,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1713121028,
-					["classe"] = "MAGE",
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.031395,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5826-0246C10B",
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
@@ -17671,7 +17671,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "5826-020DD308",
+					["classe"] = "SHAMAN",
 					["totalover"] = 815.026023,
 					["total_without_pet"] = 388.026023,
 					["total"] = 388.026023,
@@ -17728,12 +17728,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1713121114,
-					["classe"] = "SHAMAN",
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.026023,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5826-020DD308",
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
@@ -17743,7 +17743,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "5826-025E2DDD",
+					["classe"] = "ROGUE",
 					["totalover"] = 0.011118,
 					["total_without_pet"] = 0.011118,
 					["total"] = 0.011118,
@@ -17772,12 +17772,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1713121115,
-					["classe"] = "ROGUE",
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.011118,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5826-025E2DDD",
 				}, -- [3]
 				{
 					["flag_original"] = 1300,
@@ -17787,7 +17787,7 @@ _detalhes_database = {
 						"BrokenDoggo <Berzbeast>", -- [1]
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "HUNTER",
 					["totalover"] = 0.002993,
 					["total_without_pet"] = 0.002993,
 					["total"] = 0.002993,
@@ -17815,12 +17815,12 @@ _detalhes_database = {
 					["grupo"] = true,
 					["healing_from"] = {
 					},
-					["classe"] = "HUNTER",
+					["aID"] = "5826-020E2254",
 					["custom"] = 0,
 					["tipo"] = 2,
 					["start_time"] = 1713121115,
 					["delay"] = 0,
-					["aID"] = "5826-020E2254",
+					["heal_enemy_amt"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 4370,
@@ -17829,7 +17829,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PET",
 					["totalover"] = 0.012605,
 					["total_without_pet"] = 0.012605,
 					["total"] = 0.012605,
@@ -17859,12 +17859,12 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["start_time"] = 1713121115,
-					["classe"] = "PET",
+					["aID"] = "Pet-0-5253-1-25445-2850-0100A1A66F",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.012605,
 					["delay"] = 0,
-					["aID"] = "Pet-0-5253-1-25445-2850-0100A1A66F",
+					["heal_enemy_amt"] = 0,
 				}, -- [5]
 				{
 					["flag_original"] = 1297,
@@ -17875,7 +17875,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "5826-0235A66A",
+					["classe"] = "SHAMAN",
 					["totalover"] = 3391.024847,
 					["total_without_pet"] = 7770.024847,
 					["total"] = 7770.024847,
@@ -17932,12 +17932,12 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1713121128,
-					["classe"] = "SHAMAN",
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["totaldenied"] = 0.024847,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "5826-0235A66A",
 				}, -- [6]
 			},
 		}, -- [2]
@@ -18069,7 +18069,7 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 1.389397999999999,
+					["resource"] = 1.493357999999999,
 					["pets"] = {
 					},
 					["aID"] = "5826-0235A66A",
@@ -18193,7 +18193,7 @@ _detalhes_database = {
 				}, -- [6]
 				{
 					["flag_original"] = 1352,
-					["resource"] = 0.125795,
+					["resource"] = 0.137775,
 					["pets"] = {
 					},
 					["aID"] = "5826-0207AB13",
@@ -18440,7 +18440,7 @@ _detalhes_database = {
 					},
 					["debuff_uptime"] = 250,
 					["cc_done"] = 2.005999,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["cc_done_targets"] = {
@@ -18452,9 +18452,9 @@ _detalhes_database = {
 					},
 					["classe"] = "HUNTER",
 					["tipo"] = 4,
-					["nome"] = "Berzbeast",
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
+					["nome"] = "Berzbeast",
 					["serial"] = "Player-5826-020E2254",
 					["last_event"] = 0,
 				}, -- [1]
@@ -18535,14 +18535,14 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["tipo"] = 4,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
 					["nome"] = "Dagl",
+					["grupo"] = true,
+					["debuff_uptime_targets"] = {
+					},
 					["last_event"] = 0,
 					["classe"] = "MAGE",
 					["serial"] = "Player-5826-0246C10B",
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 				}, -- [2]
 				{
@@ -18824,15 +18824,15 @@ _detalhes_database = {
 					["debuff_uptime"] = 207,
 					["buff_uptime"] = 1316,
 					["last_event"] = 0,
-					["nome"] = "Elucitas",
-					["grupo"] = true,
 					["buff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["debuff_uptime_targets"] = {
 					},
 					["tipo"] = 4,
 					["classe"] = "SHAMAN",
 					["serial"] = "Player-5826-020DD308",
-					["debuff_uptime_targets"] = {
-					},
+					["nome"] = "Elucitas",
 				}, -- [4]
 				{
 					["flag_original"] = 1047,
@@ -19111,118 +19111,118 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7342",
 					["fight_component"] = true,
 					["nome"] = "Skeletal Summoner",
 					["monster"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5252-129-13725-7342-00011C2714",
-					["aID"] = "7342",
+					["classe"] = "UNKNOW",
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7353",
 					["monster"] = true,
 					["nome"] = "Freezing Spirit",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-129-13725-7353-00031C2714",
-					["aID"] = "7353",
+					["classe"] = "UNKNOW",
 				}, -- [8]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7347",
 					["monster"] = true,
 					["nome"] = "Boneflayer Ghoul",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-129-13725-7347-00039C2714",
-					["aID"] = "7347",
+					["classe"] = "UNKNOW",
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7345",
 					["fight_component"] = true,
 					["nome"] = "Splinterbone Captain",
 					["monster"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5252-129-13725-7345-00009C2714",
-					["aID"] = "7345",
+					["classe"] = "UNKNOW",
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7346",
 					["monster"] = true,
 					["nome"] = "Splinterbone Centurion",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-129-13725-7346-00079C2714",
-					["aID"] = "7346",
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7341",
 					["monster"] = true,
 					["nome"] = "Skeletal Frostweaver",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-129-13725-7341-00019C2714",
-					["aID"] = "7341",
+					["classe"] = "UNKNOW",
 				}, -- [12]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7348",
 					["fight_component"] = true,
 					["nome"] = "Thorn Eater Ghoul",
 					["monster"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5252-129-13725-7348-00019C2714",
-					["aID"] = "7348",
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7352",
 					["monster"] = true,
 					["nome"] = "Frozen Soul",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-129-13725-7352-00001C2715",
-					["aID"] = "7352",
+					["classe"] = "UNKNOW",
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7344",
 					["fight_component"] = true,
 					["nome"] = "Splinterbone Warrior",
 					["monster"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5252-129-13725-7344-00001C2714",
-					["aID"] = "7344",
+					["classe"] = "UNKNOW",
 				}, -- [15]
 				{
 					["flag_original"] = 68168,
@@ -19278,14 +19278,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "7358",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Amnennar the Coldbringer",
-					["last_event"] = 0,
-					["aID"] = "7358",
-					["serial"] = "Creature-0-5252-129-13725-7358-00001C2714",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-129-13725-7358-00001C2714",
+					["last_event"] = 0,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -19399,157 +19399,157 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "7115",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Jaedenar Adept",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5253-1-25439-7115-00001C3031",
-					["classe"] = "UNKNOW",
+					["aID"] = "7115",
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "7125",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Jaedenar Hound",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5253-1-25439-7125-00001C2FF2",
-					["classe"] = "UNKNOW",
+					["aID"] = "7125",
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "7113",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Jaedenar Guardian",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5253-1-25439-7113-00001C2F94",
-					["classe"] = "UNKNOW",
+					["aID"] = "7113",
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "9878",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Entropic Beast",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5253-1-25439-9878-00001C2F99",
-					["classe"] = "UNKNOW",
+					["aID"] = "9878",
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "7132",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Toxic Horror",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5253-1-25439-7132-00001C2BA9",
-					["classe"] = "UNKNOW",
+					["aID"] = "7132",
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "4109",
 					["monster"] = true,
 					["nome"] = "Highperch Consort",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5253-1-25442-4109-00001D3502",
-					["aID"] = "4109",
+					["classe"] = "UNKNOW",
 				}, -- [28]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "4107",
 					["monster"] = true,
 					["nome"] = "Highperch Wyvern",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5253-1-25442-4107-00001D33ED",
-					["aID"] = "4107",
+					["classe"] = "UNKNOW",
 				}, -- [29]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "4151",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Saltstone Crystalhide",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-1-32484-4151-00001D484D",
 					["last_event"] = 0,
+					["aID"] = "4151",
+					["serial"] = "Creature-0-5211-1-32484-4151-00001D484D",
+					["tipo"] = 4,
 				}, -- [30]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "5424",
 					["fight_component"] = true,
 					["nome"] = "Scorpid Dunestalker",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "5424",
-					["serial"] = "Creature-0-5252-1-878-5424-00001FA98D",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-878-5424-00001FA98D",
+					["last_event"] = 0,
 				}, -- [31]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "5420",
 					["fight_component"] = true,
 					["nome"] = "Glasshide Gazer",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "5420",
-					["serial"] = "Creature-0-5252-1-878-5420-00001FA6E7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-878-5420-00001FA6E7",
+					["last_event"] = 0,
 				}, -- [32]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "5423",
 					["fight_component"] = true,
 					["nome"] = "Scorpid Tail Lasher",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "5423",
-					["serial"] = "Creature-0-5252-1-878-5423-00071F7193",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-878-5423-00071F7193",
+					["last_event"] = 0,
 				}, -- [33]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "5429",
 					["fight_component"] = true,
 					["nome"] = "Fire Roc",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "5429",
-					["serial"] = "Creature-0-5252-1-878-5429-00009F7192",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-878-5429-00009F7192",
+					["last_event"] = 0,
 				}, -- [34]
 				{
 					["flag_original"] = 1352,
@@ -19765,12 +19765,12 @@ _detalhes_database = {
 			},
 			["Jutarnjedrvo"] = {
 				["Healing Wave"] = 9,
+				["Windfury Totem"] = 2,
 				["Frost Shock"] = 18,
-				["Lava Lash"] = 22,
 				["Flame Shock"] = 1,
 				["Shamanistic Rage"] = 3,
 				["Totemic Projection"] = 2,
-				["Windfury Totem"] = 2,
+				["Lava Lash"] = 22,
 				["Windfury Weapon"] = 2,
 				["Stormstrike"] = 26,
 				["Strength of Earth Totem"] = 2,
@@ -19801,11 +19801,11 @@ _detalhes_database = {
 			["Berzbeast"] = {
 				["Raptor Strike"] = 3,
 				["Bestial Wrath"] = 2,
-				["Serpent Sting"] = 4,
+				["Intimidation"] = 2,
 				["Auto Shot"] = 33,
 				["Kill Command"] = 7,
 				["Wing Clip"] = 1,
-				["Arcane Shot"] = 8,
+				["Serpent Sting"] = 4,
 				["Aspect of the Cheetah"] = 1,
 				["Frost Trap"] = 8,
 				["Hunter's Mark"] = 1,
@@ -19813,18 +19813,18 @@ _detalhes_database = {
 				["Explosive Trap"] = 9,
 				["Aspect of the Hawk"] = 2,
 				["Multi-Shot"] = 17,
-				["Intimidation"] = 2,
+				["Arcane Shot"] = 8,
 			},
 		},
 	},
 	["character_data"] = {
-		["logons"] = 357,
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+		["logons"] = 359,
 	},
 	["mythic_plus_log"] = {
+	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1718088579,
+		["last_version"] = 16,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,

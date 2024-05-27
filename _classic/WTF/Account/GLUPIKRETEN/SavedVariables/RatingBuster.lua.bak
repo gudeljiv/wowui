@@ -1,0 +1,25 @@
+
+RatingBusterDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+		["ConversionData"] = {
+		},
+		["AlwaysBuffed"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Dopesnare - Lone Wolf"] = "HUNTER",
+		["Dopemend - Lone Wolf"] = "PRIEST",
+		["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+		["Dopetrap - Lone Wolf"] = "HUNTER",
+	},
+	["profiles"] = {
+		["HUNTER"] = {
+		},
+		["PRIEST"] = {
+		},
+		["SHAMAN"] = {
+		},
+	},
+}

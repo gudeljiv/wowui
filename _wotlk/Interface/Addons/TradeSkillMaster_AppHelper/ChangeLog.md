@@ -1,7 +1,6 @@
-## v4.13.1 Changes
+## v4.13.2 Changes
 
-* [Retail] Updated for 10.2.5
-* [Wrath Classic] Updated for 3.4.3
-* [Classic] Updated for 1.15.0
+* [Retail] Updated for 10.2.6
+* [Classic] Updated for 1.15.2
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)
