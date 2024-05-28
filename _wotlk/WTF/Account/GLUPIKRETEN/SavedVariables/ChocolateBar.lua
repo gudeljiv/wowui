@@ -13,13 +13,13 @@ ChocolateBarDB = {
 		["Mulatz - Genesis"] = "Default",
 		["Battledog - Gehennas"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
-		["Konac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Asjrdfsad - Golemagg"] = "Default",
+		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
@@ -43,8 +43,8 @@ ChocolateBarDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Vermin - Golemagg"] = "Default",
@@ -60,7 +60,7 @@ ChocolateBarDB = {
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Verminz - Genesis"] = "Default",
+		["Asjrdfsad - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
@@ -91,7 +91,6 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["iconSize"] = 0.7000000000000001,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -102,10 +101,8 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["iconSize"] = 0.7000000000000001,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -680,7 +677,10 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -698,9 +698,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 807590,
-		["timeAtThisLevel"] = 1847,
-		["timeStamp"] = 1478658.018,
+		["total"] = 811353,
+		["timeAtThisLevel"] = 5610,
+		["timeStamp"] = 1559626.756,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -754,14 +754,14 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 2821,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 538193,
-		["timeStamp"] = 1530557.238,
-		["timeAtThisLevel"] = 5107,
+		["total"] = 540365,
+		["timeStamp"] = 1557803.642,
+		["timeAtThisLevel"] = 7279,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1210621,
-		["timeStamp"] = 1442934.622,
-		["timeAtThisLevel"] = 179601,
+		["total"] = 1211492,
+		["timeStamp"] = 1559644.932,
+		["timeAtThisLevel"] = 180472,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -828,9 +828,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 214163.326,
 	},
 	["Handrmandr-Golemagg"] = {
-		["total"] = 31276,
-		["timeAtThisLevel"] = 1913,
-		["timeStamp"] = 661038.935,
+		["total"] = 31425,
+		["timeAtThisLevel"] = 2062,
+		["timeStamp"] = 1577300.517,
 	},
 	["Poklopac-MirageRaceway"] = {
 		["total"] = 333,
@@ -857,9 +857,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 69117.998,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 146652,
-		["timeAtThisLevel"] = 1611,
-		["timeStamp"] = 673462.404,
+		["total"] = 147791,
+		["timeAtThisLevel"] = 2750,
+		["timeStamp"] = 1557701.043,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -901,13 +901,13 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 1137493,
-		["timeAtThisLevel"] = 14510,
-		["timeStamp"] = 1525983.415,
+		["total"] = 1142230,
+		["timeAtThisLevel"] = 19247,
+		["timeStamp"] = 1577150.314,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 2156210,
-		["timeStamp"] = 1363305.912,
-		["timeAtThisLevel"] = 1063663,
+		["total"] = 2162399,
+		["timeStamp"] = 1576783.671,
+		["timeAtThisLevel"] = 4041,
 	},
 }

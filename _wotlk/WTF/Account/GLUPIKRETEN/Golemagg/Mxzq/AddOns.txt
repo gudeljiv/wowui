@@ -1,6 +1,6 @@
 nPower: disabled
 nHealth: disabled
-Immersion: disabled
+Immersion: enabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled
@@ -210,3 +210,4 @@ SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
 Drift: disabled
+Immersion_ExtraFade: enabled

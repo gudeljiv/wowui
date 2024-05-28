@@ -54,3 +54,5 @@ unitscan: disabled
 BugSack: enabled
 Drift: disabled
 TomTom: disabled
+Immersion: enabled
+Immersion_ExtraFade: enabled

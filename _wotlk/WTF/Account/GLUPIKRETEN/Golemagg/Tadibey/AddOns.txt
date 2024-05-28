@@ -49,3 +49,5 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
+Immersion: enabled
+Immersion_ExtraFade: enabled

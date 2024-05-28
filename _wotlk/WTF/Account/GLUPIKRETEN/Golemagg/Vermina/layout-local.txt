@@ -69,6 +69,13 @@ X: 2
 Y: 54
 W: 210
 H: 292
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -236
+Y: -116
+W: 338
+H: 424
 Frame: SpellBookFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -209,13 +216,6 @@ X: -402
 Y: -198
 W: 325
 H: 375
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOP

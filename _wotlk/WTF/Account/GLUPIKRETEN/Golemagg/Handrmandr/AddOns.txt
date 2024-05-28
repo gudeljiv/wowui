@@ -187,3 +187,4 @@ Drift: disabled
 Immersion: enabled
 ConsolePort: enabled
 ACP: enabled
+Immersion_ExtraFade: enabled

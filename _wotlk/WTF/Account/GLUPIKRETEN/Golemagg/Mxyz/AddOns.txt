@@ -2,7 +2,7 @@ nPower: disabled
 nHealth: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-Immersion: disabled
+Immersion: enabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled
@@ -202,3 +202,4 @@ Myslot: disabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled
+Immersion_ExtraFade: enabled

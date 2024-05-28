@@ -71,8 +71,8 @@ VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
 END
 VER 3 0000000000000021 "TEST" "132089"
 /run print(C_ToyBox.GetToyInfo(68806))
-/run print(IsUsableAction(55))
-/run print(IsUsableSpell(68806))
+/run print(select(1,C_Container.GetItemCooldown(68806)))
+/run print(select(1,C_Container.GetItemCooldown(68806)) == 0)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

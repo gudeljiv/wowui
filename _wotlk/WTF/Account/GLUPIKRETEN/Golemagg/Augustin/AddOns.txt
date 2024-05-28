@@ -2,7 +2,7 @@ nPower: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nHealth: disabled
-Immersion: disabled
+Immersion: enabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled
@@ -197,3 +197,4 @@ Blizzard_CompactRaidFrames: enabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled
+Immersion_ExtraFade: enabled

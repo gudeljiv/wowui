@@ -202,3 +202,4 @@ CallbackHandler-1.0: enabled
 LibDetours-1.0: enabled
 LibClassicInspector: enabled
 LibClassicGearScore: enabled
+Immersion_ExtraFade: enabled

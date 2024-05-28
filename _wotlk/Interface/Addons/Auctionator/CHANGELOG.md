@@ -1,6 +1,6 @@
 # Auctionator
 
-## [10.2.43](https://github.com/Auctionator/Auctionator/tree/10.2.43) (2024-05-24)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.42...10.2.43) 
+## [10.2.45](https://github.com/Auctionator/Auctionator/tree/10.2.45) (2024-05-28)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.44...10.2.45) 
 
-- Fix enchant profit calcuations for Cataclysm  
+- Vanilla: Selling: Fix constant name so that keys in keyring show in bag view  
