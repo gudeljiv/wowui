@@ -4139,31 +4139,33 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				if (data.petFamily) then
 					text = text .. "\n" .. color1 .. "  " .. L["family"] .. ":|r " .. color2 .. data.petFamily .. "|r";
 				end
-				if (data.petHappiness) then
-					text = text .. "\n" .. color1 .. "  " .. L["happiness"] .. ":|r " .. happinessTexture .. "|r";
-				end
-				if (data.petLoyaltyRate) then
-					text = text .. "\n" .. color1 .. "  " .. L["loyaltyRate"] .. ":|r " .. color2 .. data.petLoyaltyRate .. "|r";
-				end
-				if (data.loyaltyString) then
-					text = text .. "\n  " .. color1 .. data.loyaltyString;
-				end
-				if (data.petCurrentXP and data.petMaxXP) then
-					local percentXP;
-					if (data.petCurrentXP == 0 and data.petMaxXP == 0) then
-						percentXP = 0;
-					else
-						percentXP = (data.petCurrentXP / data.petMaxXP) * 100;
+				if (NIT.expansionNum < 4) then
+					if (data.petHappiness) then
+						text = text .. "\n" .. color1 .. "  " .. L["happiness"] .. ":|r " .. happinessTexture .. "|r";
 					end
-					text = text .. "\n" .. color1 .. "  " .. L["petExperience"] .. ":|r " .. color2 .. data.petCurrentXP .. "|r"
-							.. color1 .. "/|r" .. color2 .. data.petMaxXP .. " (" .. NIT:round(percentXP) .. "%)|r";
-				end
-				if (data.totalPetPoints and data.spentPetPoints) then
-					local unspentPetPoints = data.totalPetPoints - data.spentPetPoints;
-					if (unspentPetPoints < 0) then
-						unspentPetPoints = 0;
+					if (data.petLoyaltyRate) then
+						text = text .. "\n" .. color1 .. "  " .. L["loyaltyRate"] .. ":|r " .. color2 .. data.petLoyaltyRate .. "|r";
 					end
-					text = text .. "\n" .. color1 .. "  " .. L["unspentTrainingPoints"] .. ":|r " .. color2 .. unspentPetPoints .. "|r";
+					if (data.loyaltyString) then
+						text = text .. "\n  " .. color1 .. data.loyaltyString;
+					end
+					if (data.petCurrentXP and data.petMaxXP) then
+						local percentXP;
+						if (data.petCurrentXP == 0 and data.petMaxXP == 0) then
+							percentXP = 0;
+						else
+							percentXP = (data.petCurrentXP / data.petMaxXP) * 100;
+						end
+						text = text .. "\n" .. color1 .. "  " .. L["petExperience"] .. ":|r " .. color2 .. data.petCurrentXP .. "|r"
+								.. color1 .. "/|r" .. color2 .. data.petMaxXP .. " (" .. NIT:round(percentXP) .. "%)|r";
+					end
+					if (data.totalPetPoints and data.spentPetPoints) then
+						local unspentPetPoints = data.totalPetPoints - data.spentPetPoints;
+						if (unspentPetPoints < 0) then
+							unspentPetPoints = 0;
+						end
+						text = text .. "\n" .. color1 .. "  " .. L["unspentTrainingPoints"] .. ":|r " .. color2 .. unspentPetPoints .. "|r";
+					end
 				end
 			end
 			text = text .. "\n\n|cFFFFFF00" .. L["professions"] .. "|r";

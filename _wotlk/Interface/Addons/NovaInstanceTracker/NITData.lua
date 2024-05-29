@@ -209,7 +209,6 @@ f:RegisterEvent("PLAYER_REGEN_ENABLED");
 f:RegisterEvent("GROUP_ROSTER_UPDATE");
 f:RegisterEvent("CHAT_MSG_MONEY");
 f:RegisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE");
-f:RegisterEvent("CHAT_MSG_COMBAT_HONOR_GAIN");
 f:RegisterEvent("PLAYER_UPDATE_RESTING");
 f:RegisterEvent("PLAYER_XP_UPDATE");
 f:RegisterEvent("PLAYER_LEVEL_UP");
@@ -225,6 +224,10 @@ f:RegisterEvent("PLAYER_LOGOUT");
 if (NIT.expansionNum < 4) then
 	f:RegisterEvent("UNIT_PET_TRAINING_POINTS");
 	f:RegisterEvent("TRADE_SKILL_UPDATE");
+	f:RegisterEvent("CHAT_MSG_COMBAT_HONOR_GAIN");
+end
+if (NIT.expansionNum > 3) then
+	f:RegisterEvent("CHAT_MSG_CURRENCY");
 end
 f:RegisterEvent("GROUP_JOINED");
 f:RegisterEvent("GROUP_FORMED");
@@ -339,7 +342,12 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "CHAT_MSG_COMBAT_FACTION_CHANGE") then
 		NIT:chatMsgCombatFactionChange(...);
 	elseif (event == "CHAT_MSG_COMBAT_HONOR_GAIN") then
+		--Pre cata.
 		NIT:chatMsgCombatHonorGain(...);
+		NIT:recordHonorData();
+	elseif (event == "CHAT_MSG_CURRENCY") then
+		--Post cata honor recording.
+		NIT:chatMsgCurrency(...);
 		NIT:recordHonorData();
 	elseif (event == "PLAYER_REGEN_ENABLED") then
 		NIT:recordCombatEndedData(...);
@@ -679,6 +687,7 @@ function NIT:chatMsgCombatFactionChange(...)
 	end
 end
 
+--Pre cata honor recording.
 function NIT:chatMsgCombatHonorGain(...)
 	if (not NIT.inInstance or NIT.data.instances[1].type ~= "bg") then
 		return;
@@ -693,6 +702,25 @@ function NIT:chatMsgCombatHonorGain(...)
 		return;
 	end
 	NIT.data.instances[1].honor = NIT.data.instances[1].honor + honorGained;
+end
+
+--Cata and onwards honor recording, new event added.
+function NIT:chatMsgCurrency(...)
+	if (not NIT.inInstance or NIT.data.instances[1].type ~= "bg") then
+		return;
+	end
+	if (not NIT.data.instances[1].honor) then
+		NIT.data.instances[1].honor = 0;
+	end
+	local text = ...;
+	if (strmatch(text, "currency:1901")) then
+		local honorGained = strmatch(text, "currency:.+\]|h|r %D*(%d+)")
+		if (not honorGained) then
+			NIT:debug("Honor error:", text);
+			return;
+		end
+		NIT.data.instances[1].honor = NIT.data.instances[1].honor + honorGained;
+	end
 end
 
 function NIT:playerEnteringWorld(...)
@@ -2110,6 +2138,7 @@ function NIT:recordQuests()
 		--Heroic.
 		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(301);
 		--if (currencyQuantity ~= 0) then
+		if (UnitLevel("player") == 85) then
 			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
 			--if (remaining < overallLimit) then
 				local remainingText = "|cFF00FF00" .. remaining .. "|r|cFF00FF00/" .. overallLimit .. "|r";
@@ -2121,7 +2150,7 @@ function NIT:recordQuests()
 				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r Dungeon weeklies remaining: " .. remainingText;
 				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
 			--end
-		--end
+		end
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 	local sharedQuests = {};
@@ -2152,6 +2181,9 @@ end
 function NIT:recordAttunementKeys()
 	if (NIT.expansionNum > 3) then
 		return;
+	end
+	if (not KeyRingButtonIDToInvSlotID) then
+		return; --This was patched out a month after cata release instead of during beta?
 	end
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then

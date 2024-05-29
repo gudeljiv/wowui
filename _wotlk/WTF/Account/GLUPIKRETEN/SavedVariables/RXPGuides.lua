@@ -23,18 +23,18 @@ RXPDB = {
 		["Tandaram - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
 		["Tudum - Jin'do"] = "global",
-		["Tudum - Ashbringer"] = "global",
+		["Battlearm - Gehennas"] = "global",
 		["Pitchwise - Ashbringer"] = "global",
 		["Asjrdfsad - Golemagg"] = "global",
-		["Battlearm - Gehennas"] = "global",
+		["Tudum - Ashbringer"] = "global",
 		["Augustin - Golemagg"] = "global",
 		["Moolatz - Golemagg"] = "global",
 		["Miqa - Golemagg"] = "global",
-		["Mxyzptlk - Golemagg"] = "global",
+		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
 		["Provokator - Jin'do"] = "global",
-		["Vermin - Golemagg"] = "global",
+		["Mxyzptlk - Golemagg"] = "global",
 		["Handrmandr - Golemagg"] = "global",
 		["Tadibey - Golemagg"] = "global",
 		["Battledog - Gehennas"] = "global",
@@ -64,7 +64,7 @@ RXPSettings = {
 			["checkVersions"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
-			["xprate"] = 1.1,
+			["xprate"] = 1.35,
 			["alwaysSendBranded"] = false,
 			["frameSizes"] = {
 				["arrowFrame"] = {
@@ -229,10 +229,27 @@ RXPSettings = {
 			["northrendLM"] = true,
 			["checkVersions"] = false,
 			["enableTargetAutomation"] = false,
-			["frameHeight"] = 125.0000534057617,
+			["enableFPAutomation"] = false,
 			["enableTargetMacro"] = false,
-			["unitscanReset"] = true,
-			["enableLevelUpAnnounceSolo"] = false,
+			["frameSizes"] = {
+				["activeTargetFrame"] = {
+					0, -- [1]
+					40, -- [2]
+				},
+				["RXPFrame"] = {
+					235.0001068115234, -- [1]
+					27.99999809265137, -- [2]
+				},
+				["activeItemFrame"] = {
+					73.4390869140625, -- [1]
+					40.00000762939453, -- [2]
+				},
+				["arrowFrame"] = {
+					32.00003814697266, -- [1]
+					32.00003814697266, -- [2]
+				},
+			},
+			["frameHeight"] = 125.0000534057617,
 			["enableTracker"] = false,
 			["hideGuideWindow"] = false,
 			["enableBindAutomation"] = false,
@@ -276,31 +293,14 @@ RXPSettings = {
 					}, -- [1]
 				},
 			},
-			["disableItemWindow"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["unitscanReset"] = true,
 			["xprate"] = 1.1,
-			["enableMinimapButton"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
+			["disableItemWindow"] = false,
 			["alwaysSendBranded"] = false,
-			["enableFPAutomation"] = false,
-			["frameSizes"] = {
-				["activeTargetFrame"] = {
-					0, -- [1]
-					40, -- [2]
-				},
-				["RXPFrame"] = {
-					235.0001068115234, -- [1]
-					27.99999809265137, -- [2]
-				},
-				["activeItemFrame"] = {
-					73.4390869140625, -- [1]
-					40.00000762939453, -- [2]
-				},
-				["arrowFrame"] = {
-					32.00003814697266, -- [1]
-					32.00003814697266, -- [2]
-				},
-			},
+			["enableFlyStepAnnouncements"] = false,
+			["enableMinimapButton"] = false,
 			["hideInRaid"] = true,
 			["activeItemsScale"] = 1.2,
 		},
@@ -337,11 +337,11 @@ RXPSettings = {
 			["enableTrainerAutomation"] = false,
 			["arrowText"] = 10,
 			["enableTargetMacro"] = false,
-			["frameHeight"] = 10,
+			["enableFPAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
-			["enableFPAutomation"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 10,
+			["enableBindAutomation"] = false,
 			["macroAnnounced"] = true,
 			["hardcore"] = false,
 			["hideMiniMapPins"] = true,
@@ -351,7 +351,7 @@ RXPSettings = {
 			["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 			["notifyOnTargetUpdates"] = false,
 			["alwaysSendBranded"] = false,
-			["enableBindAutomation"] = false,
+			["enableFlyStepAnnouncements"] = false,
 			["enableMinimapButton"] = false,
 			["hideInRaid"] = true,
 			["activeItemsScale"] = 1.2,
@@ -399,6 +399,7 @@ RXPSettings = {
 					}, -- [1]
 				},
 			},
+			["enableMinimapButton"] = false,
 			["frameSizes"] = {
 				["arrowFrame"] = {
 					32.00003814697266, -- [1]
@@ -417,7 +418,6 @@ RXPSettings = {
 					67.99996185302734, -- [2]
 				},
 			},
-			["enableMinimapButton"] = false,
 		},
 		["Miqa - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,

@@ -1,41 +1,31 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
-		[632] = {
-		},
-		[633] = {
-		},
-		[634] = {
-		},
-		[635] = {
-		},
-		[636] = {
-		},
-		[621] = {
-		},
-		[637] = {
-		},
-		[622] = {
-		},
-		[638] = {
-		},
-		[623] = {
-		},
-		[624] = {
-		},
-		[625] = {
-		},
-		[626] = {
-		},
-		[627] = {
-		},
-		[628] = {
-		},
-		[629] = {
-		},
-		[630] = {
-		},
-		[631] = {
+		[697] = {
+			["Raid Damage Done"] = {
+				226, -- [1]
+				402, -- [2]
+				195, -- [3]
+				23, -- [4]
+				229, -- [5]
+				1760, -- [6]
+				620, -- [7]
+				311, -- [8]
+				194, -- [9]
+				615, -- [10]
+				1231, -- [11]
+				298, -- [12]
+				1589, -- [13]
+				357, -- [14]
+				234, -- [15]
+				1528, -- [16]
+				363, -- [17]
+				337, -- [18]
+				114, -- [19]
+				0, -- [20]
+				["max_value"] = 1760,
+				["__time"] = 1716977274,
+			},
 		},
 	},
 	["encounter_spells"] = {
@@ -73,12 +63,20 @@ EncounterDetailsDB = {
 		[93697] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Lord Walden",
+		},
+		[12739] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Shadowy Attendant",
 		},
 		[93581] = {
 			["school"] = 32,
@@ -111,6 +109,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Godfrey",
 		},
+		[93505] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lord Walden",
+		},
 		[93527] = {
 			["school"] = 16,
 			["type"] = "BUFF",
@@ -120,14 +127,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Walden",
 		},
-		[91088] = {
-			["school"] = 1,
+		[91677] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Corpse Eater",
+			["source"] = "Pustulant Monstrosity",
 		},
 		[93686] = {
 			["school"] = 1,
@@ -151,21 +160,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Walden",
 		},
-		[91677] = {
-			["school"] = 8,
+		[91088] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Pustulant Monstrosity",
+			["source"] = "Corpse Eater",
 		},
-		[93505] = {
-			["school"] = 16,
+		[93520] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lord Walden",
+			["source"] = "Lord Godfrey",
 		},
 		[93423] = {
 			["school"] = 32,
@@ -176,15 +188,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Baron Ashbury",
 		},
-		[23224] = {
+		[7054] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Baron Silverlaine",
+			["source"] = "Tormented Officer",
 		},
 		[91561] = {
 			["school"] = 8,
@@ -202,15 +212,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Baron Silverlaine",
 		},
-		[93520] = {
+		[23224] = {
 			["school"] = 32,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Lord Godfrey",
+			["source"] = "Baron Silverlaine",
 		},
 		[93675] = {
 			["school"] = 1,
@@ -261,14 +271,5 @@ EncounterDetailsDB = {
 		},
 	},
 	["emotes"] = {
-		{
-			["boss"] = "Lord Godfrey",
-		}, -- [1]
-		{
-			["boss"] = "Lord Walden",
-		}, -- [2]
-		{
-			["boss"] = "Commander Springvale",
-		}, -- [3]
 	},
 }

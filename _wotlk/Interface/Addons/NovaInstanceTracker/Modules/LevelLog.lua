@@ -227,7 +227,7 @@ local xpStrings = {
 function NIT:addLevelLogMobCount(text)
 	if (LOCALE_koKR) then
 		--LevelLog.lua:230: invalid capture index
-		--Disabled in kr until I work out what the issue is.
+		--Disabled in korea until I work out how to capture for all.
 		return;
 	end
 	local found;

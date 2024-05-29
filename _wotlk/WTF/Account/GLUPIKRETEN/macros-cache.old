@@ -66,8 +66,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Jin'thala
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000021 "TEST" "132089"
 /run print(C_ToyBox.GetToyInfo(68806))

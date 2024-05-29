@@ -74,7 +74,3 @@ VER 3 0000000001000011 " " "134400"
 /startattack
 /cast Crusader Strike
 END
-VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
-#showtooltip Word Of Glory
-/cast [@mouseover, help, nodead][] Word Of Glory
-END

@@ -365,6 +365,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                 # matching closest class color to define in colors
                 found_class, wow_class = get_class(clss, color_distance)
                 if not found_class:
+                    time.sleep(0.5)
+                    pyautogui.hotkey(pause and "end" or "home")
                     if hex != "#000000":
                         print(found_class, wow_class, hex)
                     continue

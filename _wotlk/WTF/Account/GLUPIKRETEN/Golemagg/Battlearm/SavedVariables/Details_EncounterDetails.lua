@@ -1,38 +1,96 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
-		[9843] = {
+		[9854] = {
 			["Raid Damage Done"] = {
-				8514, -- [1]
-				20567, -- [2]
-				31351, -- [3]
-				26333, -- [4]
-				37092, -- [5]
-				17561, -- [6]
-				19579, -- [7]
-				20437, -- [8]
-				33209, -- [9]
-				29009, -- [10]
-				43104, -- [11]
-				53132, -- [12]
-				20087, -- [13]
-				47161, -- [14]
-				16239, -- [15]
-				32527, -- [16]
-				64532, -- [17]
-				15595, -- [18]
-				43209, -- [19]
-				21243, -- [20]
-				45106, -- [21]
-				15190, -- [22]
-				46647, -- [23]
-				43880, -- [24]
-				57486, -- [25]
-				51667, -- [26]
-				72198, -- [27]
-				61072, -- [28]
-				["max_value"] = 72198,
-				["__time"] = 1716880823,
+				823, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1323, -- [4]
+				12278, -- [5]
+				0, -- [6]
+				9806, -- [7]
+				1082, -- [8]
+				0, -- [9]
+				2350, -- [10]
+				1081, -- [11]
+				0, -- [12]
+				16300, -- [13]
+				1626, -- [14]
+				3946, -- [15]
+				9557, -- [16]
+				1081, -- [17]
+				0, -- [18]
+				1400, -- [19]
+				1082, -- [20]
+				0, -- [21]
+				1398, -- [22]
+				2089, -- [23]
+				0, -- [24]
+				5358, -- [25]
+				1082, -- [26]
+				0, -- [27]
+				1399, -- [28]
+				1082, -- [29]
+				["max_value"] = 16300,
+				["__time"] = 1716978499,
+			},
+		},
+		[9855] = {
+			["Raid Damage Done"] = {
+				2790, -- [1]
+				1401, -- [2]
+				0, -- [3]
+				1257, -- [4]
+				3223, -- [5]
+				0, -- [6]
+				5893, -- [7]
+				5765, -- [8]
+				0, -- [9]
+				1932, -- [10]
+				584, -- [11]
+				833, -- [12]
+				2707, -- [13]
+				3216, -- [14]
+				5210, -- [15]
+				3128, -- [16]
+				3342, -- [17]
+				1035, -- [18]
+				6676, -- [19]
+				6663, -- [20]
+				2895, -- [21]
+				5426, -- [22]
+				8921, -- [23]
+				2402, -- [24]
+				2966, -- [25]
+				3588, -- [26]
+				1888, -- [27]
+				1527, -- [28]
+				2116, -- [29]
+				545, -- [30]
+				631, -- [31]
+				1798, -- [32]
+				1090, -- [33]
+				["max_value"] = 8921,
+				["__time"] = 1716978541,
+			},
+		},
+		[9852] = {
+			["Raid Damage Done"] = {
+				9881, -- [1]
+				0, -- [2]
+				0, -- [3]
+				5831, -- [4]
+				5002, -- [5]
+				3734, -- [6]
+				0, -- [7]
+				947, -- [8]
+				0, -- [9]
+				0, -- [10]
+				945, -- [11]
+				0, -- [12]
+				["max_value"] = 9881,
+				["__time"] = 1716978280,
 			},
 		},
 		[9842] = {
@@ -130,61 +188,11 @@ EncounterDetailsDB = {
 				["__time"] = 1716880771,
 			},
 		},
-		[9847] = {
+		[9853] = {
 			["Raid Damage Done"] = {
-				495, -- [1]
-				2304, -- [2]
-				25540, -- [3]
-				16137, -- [4]
-				25509, -- [5]
-				13336, -- [6]
-				11121, -- [7]
-				17130, -- [8]
-				55301, -- [9]
-				43754, -- [10]
-				29441, -- [11]
-				63799, -- [12]
-				62229, -- [13]
-				79956, -- [14]
-				30148, -- [15]
-				38521, -- [16]
-				41142, -- [17]
-				20057, -- [18]
-				31426, -- [19]
-				13458, -- [20]
-				24133, -- [21]
-				70319, -- [22]
-				21904, -- [23]
-				77440, -- [24]
-				33951, -- [25]
-				15317, -- [26]
-				15373, -- [27]
-				16814, -- [28]
-				20040, -- [29]
-				38768, -- [30]
-				35251, -- [31]
-				36309, -- [32]
-				4440, -- [33]
-				41333, -- [34]
-				26986, -- [35]
-				19757, -- [36]
-				10274, -- [37]
-				32575, -- [38]
-				22371, -- [39]
-				29672, -- [40]
-				22087, -- [41]
-				50841, -- [42]
-				20207, -- [43]
-				22482, -- [44]
-				29564, -- [45]
-				37919, -- [46]
-				42927, -- [47]
-				39930, -- [48]
-				32482, -- [49]
-				56660, -- [50]
-				36794, -- [51]
-				["max_value"] = 79956,
-				["__time"] = 1716881103,
+				946, -- [1]
+				["max_value"] = 946,
+				["__time"] = 1716978294,
 			},
 		},
 		[9850] = {
@@ -341,6 +349,97 @@ EncounterDetailsDB = {
 				2150, -- [150]
 				["max_value"] = 111390,
 				["__time"] = 1716881368,
+			},
+		},
+		[9847] = {
+			["Raid Damage Done"] = {
+				495, -- [1]
+				2304, -- [2]
+				25540, -- [3]
+				16137, -- [4]
+				25509, -- [5]
+				13336, -- [6]
+				11121, -- [7]
+				17130, -- [8]
+				55301, -- [9]
+				43754, -- [10]
+				29441, -- [11]
+				63799, -- [12]
+				62229, -- [13]
+				79956, -- [14]
+				30148, -- [15]
+				38521, -- [16]
+				41142, -- [17]
+				20057, -- [18]
+				31426, -- [19]
+				13458, -- [20]
+				24133, -- [21]
+				70319, -- [22]
+				21904, -- [23]
+				77440, -- [24]
+				33951, -- [25]
+				15317, -- [26]
+				15373, -- [27]
+				16814, -- [28]
+				20040, -- [29]
+				38768, -- [30]
+				35251, -- [31]
+				36309, -- [32]
+				4440, -- [33]
+				41333, -- [34]
+				26986, -- [35]
+				19757, -- [36]
+				10274, -- [37]
+				32575, -- [38]
+				22371, -- [39]
+				29672, -- [40]
+				22087, -- [41]
+				50841, -- [42]
+				20207, -- [43]
+				22482, -- [44]
+				29564, -- [45]
+				37919, -- [46]
+				42927, -- [47]
+				39930, -- [48]
+				32482, -- [49]
+				56660, -- [50]
+				36794, -- [51]
+				["max_value"] = 79956,
+				["__time"] = 1716881103,
+			},
+		},
+		[9843] = {
+			["Raid Damage Done"] = {
+				8514, -- [1]
+				20567, -- [2]
+				31351, -- [3]
+				26333, -- [4]
+				37092, -- [5]
+				17561, -- [6]
+				19579, -- [7]
+				20437, -- [8]
+				33209, -- [9]
+				29009, -- [10]
+				43104, -- [11]
+				53132, -- [12]
+				20087, -- [13]
+				47161, -- [14]
+				16239, -- [15]
+				32527, -- [16]
+				64532, -- [17]
+				15595, -- [18]
+				43209, -- [19]
+				21243, -- [20]
+				45106, -- [21]
+				15190, -- [22]
+				46647, -- [23]
+				43880, -- [24]
+				57486, -- [25]
+				51667, -- [26]
+				72198, -- [27]
+				61072, -- [28]
+				["max_value"] = 72198,
+				["__time"] = 1716880823,
 			},
 		},
 	},
@@ -8223,14 +8322,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Erekem",
 		},
-		[49026] = {
-			["school"] = 1,
+		[59261] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bloodthirsty Tundra Wolf",
+			["source"] = "Phantasmal Naga",
 		},
 		[55604] = {
 			["school"] = 1,
@@ -8543,13 +8643,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Malygos",
 		},
-		[61693] = {
-			["school"] = 64,
+		[57599] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Malygos",
+			["source"] = "Twisted Visage",
 		},
 		[29799] = {
 			["school"] = 1,
@@ -8558,13 +8658,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Attumen the Huntsman",
 		},
-		[57599] = {
-			["school"] = 1,
+		[61693] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Malygos",
 		},
 		[48952] = {
 			["school"] = 2,
@@ -9047,6 +9147,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Commander Stoutbeard",
 		},
+		[51012] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Dark Matter",
+		},
 		[55106] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -9055,14 +9163,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Moorabi",
-		},
-		[51012] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Dark Matter",
 		},
 		[59264] = {
 			["school"] = 1,
@@ -9135,6 +9235,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Svala Sorrowgrave",
 		},
+		[63934] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Scion of Eternity",
+		},
 		[59840] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -9144,13 +9251,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Slad'ran",
-		},
-		[63934] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Scion of Eternity",
 		},
 		[10890] = {
 			["school"] = 32,
@@ -9478,13 +9578,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blistering Steamrager",
 		},
-		[48071] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Scarlaa",
-		},
 		[46024] = {
 			["school"] = 4,
 			["token"] = {
@@ -9492,6 +9585,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Zelfan",
+		},
+		[48071] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Scarlaa",
 		},
 		[49528] = {
 			["school"] = 32,
@@ -9577,23 +9677,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spectral Horse",
 		},
-		[65279] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Emalon the Storm Watcher",
-		},
-		[68988] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Bronjahm",
-		},
 		[57091] = {
 			["school"] = 20,
 			["type"] = "DEBUFF",
@@ -9605,6 +9688,23 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Keristrasza",
+		},
+		[68988] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Bronjahm",
+		},
+		[65279] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Emalon the Storm Watcher",
 		},
 		[52534] = {
 			["school"] = 32,
@@ -9661,6 +9761,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Frenzied Worgen",
 		},
+		[25771] = {
+			["school"] = 2,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Karajote",
+		},
+		[53509] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Anub'arak",
+		},
 		[29865] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -9671,21 +9786,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Loatheb",
 		},
-		[53509] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Anub'arak",
-		},
-		[25771] = {
-			["school"] = 2,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Karajote",
-		},
 		[29833] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -9695,17 +9795,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Attumen the Huntsman",
 		},
-		[59842] = {
-			["school"] = 8,
+		[76665] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Slad'ran",
+			["source"] = "Spot",
 		},
 		[52451] = {
 			["school"] = 32,
@@ -9850,13 +9948,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhenne",
 		},
-		[16280] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[50759] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Siiuh",
+			["source"] = "Unstable Sphere",
 		},
 		[61507] = {
 			["school"] = 1,
@@ -9874,13 +9971,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sapphiron",
 		},
-		[46857] = {
+		[71165] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Raigorstone",
+			["source"] = "Greedyöne",
 		},
 		[42891] = {
 			["school"] = 4,
@@ -9948,14 +10045,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Recobe",
 		},
-		[16592] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Cabal Shadow Priest",
-		},
 		[49544] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -9966,6 +10055,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "The Prophet Tharon'ja",
+		},
+		[16592] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Cabal Shadow Priest",
 		},
 		[58956] = {
 			["school"] = 4,
@@ -10179,14 +10276,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corla, Herald of Twilight",
 		},
-		[51162] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[46857] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ley-Guardian Eregos",
+			["source"] = "Raigorstone",
 		},
 		[19503] = {
 			["school"] = 1,
@@ -10206,20 +10302,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Drakos the Interrogator",
 		},
-		[71165] = {
+		[51162] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ley-Guardian Eregos",
+		},
+		[16280] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Greedyöne",
-		},
-		[50759] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Unstable Sphere",
+			["source"] = "Siiuh",
 		},
 		[27819] = {
 			["school"] = 32,
@@ -10300,15 +10398,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Heigan the Unclean",
 		},
-		[76665] = {
-			["school"] = 4,
+		[59842] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Spot",
+			["source"] = "Slad'ran",
 		},
 		[24189] = {
 			["school"] = 1,
@@ -11091,15 +11191,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kaoor",
 		},
-		[59261] = {
-			["school"] = 16,
+		[49026] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Phantasmal Naga",
+			["source"] = "Bloodthirsty Tundra Wolf",
 		},
 		[59975] = {
 			["school"] = 32,

@@ -14,7 +14,10 @@ function CataNpcFixes.Load()
     local phases = Phasing.phases
 
     return {
-        [1494] = {
+        [658] = { -- Sten Stoutarm
+            [npcKeys.spawns] = {[zoneIDs.DUN_MOROGH] = {{36.55,70.41}}},
+        },
+        [1494] = { -- Negolash
             [npcKeys.spawns] = {[zoneIDs.THE_CAPE_OF_STRANGLETHORN] = {{50.75,79.65}}},
         },
         [1514] = { -- Mokk the Savage
@@ -51,6 +54,9 @@ function CataNpcFixes.Load()
             [npcKeys.questStarts] = {749,26179,26180},
             [npcKeys.questEnds] = {749,24459,26179,26180},
             [npcKeys.waypoints] = {},
+        },
+        [3389] = { -- Regthar Deathgate
+            [npcKeys.questStarts] = {851,852,855,4021},
         },
         [3475] = { -- Echeyakee
             [npcKeys.spawns] = {[zoneIDs.THE_BARRENS] = {{56.4,34.9}}},
@@ -147,6 +153,9 @@ function CataNpcFixes.Load()
         },
         [33181] = { -- Anaya Dawnrunner
             [npcKeys.waypoints] = {},
+        },
+        [33889] = { -- Krokk
+            [npcKeys.spawns] = {[zoneIDs.ASHENVALE]={{82.5,53.6}}},
         },
         [34009] = { -- Withered Ent
             [npcKeys.spawns] = {[zoneIDs.DARKSHORE]={{48.23,44.64},{48.01,43.58},{48.55,43.19},{48.19,43},{47.34,42.59},{47.94,42.46},{46.88,42.33},{47.3,42.24},{48.71,42.11},{48.24,41.84},{47.45,41.65},{46.98,41.56},{47.89,41.45},{48.85,40.95},{47.71,40.82},{47.21,40.45},{47.99,40.22},{48.43,40.11},{49.01,39.94},{46.87,39.79},{47.82,39.65},{47.3,39.51},{47.87,38.86},{49.05,38.86},{48.38,38.73},{49.24,38.19}}},
@@ -270,6 +279,9 @@ function CataNpcFixes.Load()
                     {26.44,46.91,phases.GILNEAS_CHAPTER_8},
                 },
             },
+        },
+        [37115] = { -- Teo Hammerstorm
+            [npcKeys.spawns] = {[zoneIDs.DUN_MOROGH] = {{35.82,64.59}}},
         },
         [37602] = { -- Claims Adjuster
             [npcKeys.spawns] = {
