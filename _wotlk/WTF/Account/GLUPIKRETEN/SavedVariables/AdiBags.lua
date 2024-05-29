@@ -416,10 +416,10 @@ AdiBagsDB = {
 						[5634] = "Consumable#Potions",
 						[43105] = "Trade Goods#Inscription",
 						[2776] = "Trade Goods#Ores",
-						[9262] = "Gem#Gem",
+						[43122] = "Trade Goods#Inscription",
 						[36920] = "Gem#Gem",
 						[2835] = "Trade Goods#Ores",
-						[43122] = "Trade Goods#Inscription",
+						[9262] = "Gem#Gem",
 						[40085] = "Gem#Gem",
 						[3858] = "Trade Goods#Ores",
 						[3860] = "Trade Goods#Bars",
@@ -838,6 +838,7 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 				["Masque"] = false,
 			},
+			["qualityOpacity"] = 0.05,
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
@@ -846,7 +847,6 @@ AdiBagsDB = {
 					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 				},
 			},
-			["qualityOpacity"] = 0.05,
 		},
 	},
 }

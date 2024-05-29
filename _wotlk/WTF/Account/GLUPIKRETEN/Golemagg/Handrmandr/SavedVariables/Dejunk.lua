@@ -16,10 +16,10 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 	},
 	["excludeEquipmentSets"] = true,
 	["includePoorItems"] = true,
-	["autoJunkFrame"] = false,
-	["merchantButton"] = true,
 	["includeBelowItemLevel"] = {
 		["enabled"] = false,
 		["value"] = 0,
 	},
+	["merchantButton"] = true,
+	["autoJunkFrame"] = false,
 }
