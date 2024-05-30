@@ -122,9 +122,9 @@ ReforgeLiteDB = {
 					0, -- [7]
 					0, -- [8]
 					["critBlock"] = 12,
-					["dodge"] = 0,
 					["block"] = 32,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -278,9 +278,9 @@ ReforgeLiteDB = {
 					0, -- [7]
 					0, -- [8]
 					["critBlock"] = 12,
-					["dodge"] = 0,
 					["block"] = 32,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -413,6 +413,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -422,8 +424,6 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 				[8] = false,
@@ -647,10 +647,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -660,6 +656,10 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
+			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
@@ -1070,8 +1070,6 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
-			["buffs"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -1081,6 +1079,8 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
+			},
+			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1211,6 +1211,8 @@ ReforgeLiteDB = {
 				}, -- [2]
 			},
 			["targetLevel"] = 3,
+			["reforgeIDs"] = {
+			},
 			["buffs"] = {
 			},
 			["itemsLocked"] = {
@@ -1229,7 +1231,7 @@ ReforgeLiteDB = {
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["inactiveWindowTitle"] = {
 		0.5, -- [1]
@@ -1239,5 +1241,5 @@ ReforgeLiteDB = {
 	["customPresets"] = {
 	},
 	["windowX"] = 1029.206420898438,
-	["openOnReforge"] = true,
+	["methodWindowY"] = 945.0794677734375,
 }
