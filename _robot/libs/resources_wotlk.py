@@ -93,7 +93,7 @@ data = {
             {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
             {"name": "rip", "type": "GetSpellTexture", "id": 1079, "key": "5"},
             {"name": "rake", "type": "GetSpellTexture", "id": 1822, "key": "3"},
-            {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "3", "modifier": "lshift"},
+            {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
             {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
             {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
             {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},

@@ -247,9 +247,11 @@ xVermin.GetRange = function(unit)
 		-- if elapsedTime > 0.3 then
 		-- 	return 0, 0
 		-- end
+		minRange = minRange and minRange or -1
+		maxRange = maxRange and maxRange or -1
 		return minRange, maxRange
 	else
-		return -1, -1
+		return 9999, 9999
 	end
 end
 xGetRange = xVermin.GetRange
