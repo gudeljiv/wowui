@@ -149,8 +149,8 @@ local SpellHitCap = 3
 local MeleeDWHitCap = 4
 local ExpSoftCap = 5
 local ExpHardCap = 6
-local AtLeast = 1
-local AtMost = 2
+local AtLeast = addonTable.StatCaps.AtLeast
+local AtMost = addonTable.StatCaps.AtMost
 
 local HitCap = {
   stat = StatHit,
@@ -158,6 +158,16 @@ local HitCap = {
     {
       method = AtLeast,
       preset = MeleeHitCap
+    }
+  }
+}
+
+local HitCapSpell = {
+  stat = StatHit,
+  points = {
+    {
+      method = AtLeast,
+      preset = SpellHitCap
     }
   }
 }
@@ -177,35 +187,43 @@ local MeleeCaps = {
   SoftExpCap
 }
 
-local RangedCaps = {
-  {
-    stat = StatHit,
-    points = {
-      {
-        method = AtLeast,
-        preset = MeleeHitCap
-      }
-    }
-  }
-}
-local CasterCaps = {
-  {
-    stat = StatHit,
-    points = {
-      {
-        method = AtLeast,
-        preset = SpellHitCap
-      }
-    }
-  }
-}
+local RangedCaps = { HitCap }
+
+local CasterCaps = { HitCapSpell }
 
 ReforgeLite.presets = {
   ["DEATHKNIGHT"] = {
     ["Blood"] = {
-      tanking = true,
-      weights = {
-        0, 100 * 200, 100 * 200, 20, 0, 0, 40, 150
+      [RAID] = {
+        weights = {
+          0, 110, 100, 150, 20, 50, 120, 200
+        },
+        caps = {
+          {
+            stat = StatHit,
+            points = {
+              {
+                method = AtMost,
+                preset = MeleeHitCap,
+              }
+            },
+          },
+          {
+            stat = StatExp,
+            points = {
+              {
+                method = AtMost,
+                preset = ExpSoftCap,
+              },
+            },
+          },
+        },
+      },
+      [LFG_TYPE_DUNGEON] = {
+        weights = {
+          0, 0, 0, 200, 0, 50, 200, 150
+        },
+        caps = MeleeCaps,
       },
     },
     ["Frost"] = {
@@ -246,7 +264,7 @@ ReforgeLite.presets = {
       },
       [GetSpellInfo(674) .. " (Masterfrost)"] = {
         weights = {
-          0, 0, 0, 229, 116, 144, 164, 147
+          0, 0, 0, 200, 120, 150, 100, 180
         },
         caps = {
           {
@@ -254,20 +272,12 @@ ReforgeLite.presets = {
             points = {
               {
                 method = AtLeast,
-                preset = MeleeHitCap,
+                preset = SpellHitCap,
                 after = 106,
               },
               {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtLeast,
-                preset = ExpSoftCap,
+                method = AtMost,
+                preset = MeleeHitCap,
               },
             },
           },

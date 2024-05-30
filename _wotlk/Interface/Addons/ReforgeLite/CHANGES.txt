@@ -1,10 +1,70 @@
-tag 1810b6921d291831fc42042fa7fdbc1c818bb104 v1.2.7
+tag cbf60473f2a8ff07e7b37fbf5c1a4ed974e3c3ed v1.3
 Author:	skyler-code <skylerh15@github.com>
-Date:	Fri May 24 14:05:35 2024 -0500
+Date:	Wed May 29 21:22:32 2024 -0500
 
-commit 943ae78a32b006492140ecaac6fc4f2968528c8c
+commit 346ae12511c1b0329ea1cc665289c32185736bb1
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 24 14:04:38 2024 -0500
+Date:   Wed May 29 20:51:11 2024 -0500
 
-    Somehow Spirit to Hit got removed for priest/druid/shaman
+    fallbackValue for editbox
+
+commit d4cc35b19c5bd6256a5d4e72248f696a2527b935
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 20:46:50 2024 -0500
+
+    Moved Target Level settings to stat weights category
+
+commit 57bf9480e6abf0d11880e7944d1fbd58c0b86c8c
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 18:36:31 2024 -0500
+
+    negative caps can be confusing
+
+commit f322ead32a8a45b103fcb86bf280c65bc0fd9d92
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 17:56:31 2024 -0500
+
+    masterfrost preset
+
+commit b2d45c286a5dbc2f36a70e0081fa74284150ca73
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 16:26:03 2024 -0500
+
+    removing throttle for now
+
+commit 3dffe2ebafb798ca2adbe2d4408f7f90db359cc7
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 10:03:04 2024 -0500
+
+    ReforgeFrameIsVisible function
+
+commit cfa59b2273d0657b19cd0d878383a10910ceb1f3
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed May 29 09:27:37 2024 -0500
+
+    updated blood dk presets
+
+commit dab206bdcd408278ad0e4474018aec65a098b05b
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue May 28 04:06:28 2024 -0500
+
+    tables should be accessed by the proper key instead of translated in the meta
+
+commit eab1b8bc736b3dfe3f9150e1f8677656435a835c
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue May 28 04:01:10 2024 -0500
+
+    removing hardcoded values
+
+commit 98e31c4163e5ee2415c1456e351e1862ebdc2b2b
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue May 28 04:00:56 2024 -0500
+
+    Restoring old reforgeID logic to prevent players from getting stuck mid-reforge
+
+commit 0469a7f94f528237728945a8a6958eaccadd5873
+Author: skyler-code <skylerh15@github.com>
+Date:   Mon May 27 21:50:52 2024 -0500
+
+    Set Speed Slider to default to 1 since it's 2024 now
 
