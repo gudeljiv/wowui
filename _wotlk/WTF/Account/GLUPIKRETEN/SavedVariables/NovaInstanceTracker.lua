@@ -15,15 +15,15 @@ NITdatabase = {
 		["Asjrdfsad - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 	},
 	["global"] = {
@@ -77,13 +77,13 @@ NITdatabase = {
 					["ammo"] = 195,
 					["firstaidSkill"] = 0,
 					["raceLocalized"] = "Orc",
-					["fishingSkillMax"] = 0,
+					["isPetDead"] = false,
 					["playerName"] = "Poklopac",
 					["classEnglish"] = "HUNTER",
 					["currentXP"] = 102,
-					["ammoType"] = 2512,
-					["isPetDead"] = false,
 					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
+					["ammoType"] = 2512,
 					["firstaidSkillMax"] = 0,
 					["petLevel"] = 0,
 					["cooldowns"] = {
@@ -392,10 +392,10 @@ NITdatabase = {
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 0,
 					["profSkill2"] = 0,
-					["resting"] = false,
-					["race"] = "Orc",
 					["currency"] = {
 					},
+					["resting"] = false,
+					["race"] = "Orc",
 					["time"] = 1665607013,
 					["petLevel"] = 10,
 					["profSkillMax2"] = 0,
@@ -1615,9 +1615,7 @@ NITdatabase = {
 				["Battlearm"] = {
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
-					["dungWeeklies"] = {
-						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFF00FF007|r|cFF00FF00/7|r"] = 1717559999,
-					},
+					["profSkill1"] = 430,
 					["instances"] = {
 						[572] = 1,
 						[574] = 7,
@@ -1658,31 +1656,38 @@ NITdatabase = {
 						[30] = 66,
 						[616] = 12,
 					},
-					["firstaidSkillMax"] = 450,
-					["profSkill2"] = 515,
+					["durabilityAverage"] = 96.7605633802817,
+					["prof2"] = "Jewelcrafting",
 					["savedInstances"] = {
 					},
 					["honor"] = 1239,
 					["maxXP"] = 2121500,
 					["gender"] = "Male",
-					["profSkillMax2"] = 525,
-					["restedXP"] = 1119544,
+					["prof1"] = "Inscription",
+					["restedXP"] = 1258572,
 					["totalBagSlots"] = 100,
-					["freeBagSlots"] = 89,
+					["freeBagSlots"] = 96,
 					["questsDaily"] = {
-						["Cata Jewelcrafting Daily"] = 1717041599,
+						["Cata Jewelcrafting Daily"] = 1717127999,
 					},
 					["arenaPoints"] = 0,
-					["guildRankName"] = "Alt",
+					["currentXP"] = 822251,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 525,
-					["race"] = "Orc",
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
 					["quests"] = {
 					},
 					["resting"] = true,
-					["time"] = 1717015976,
-					["gold"] = 93702567,
-					["playerName"] = "Battlearm",
+					["time"] = 1717053725,
+					["gold"] = 115463355,
+					["level"] = 81,
 					["levelLog"] = {
 						[80] = {
 							["played"] = 1105102,
@@ -1705,20 +1710,20 @@ NITdatabase = {
 							["x"] = 0.7243097040064679,
 							["gold"] = 16635404,
 							["timestamp"] = 1716630700,
-							["mobCount"] = 166,
-							["questCount"] = 5,
+							["mobCount"] = 167,
+							["questCount"] = 6,
 						},
 					},
-					["prof1"] = "Inscription",
+					["profSkillMax2"] = 525,
 					["realm"] = "Golemagg",
-					["cookingSkillMax"] = 0,
 					["guild"] = "CUBE",
+					["race"] = "Orc",
 					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 404,
+					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["conq"] = 0,
-					["prof2"] = "Jewelcrafting",
+					["firstaidSkillMax"] = 450,
 					["currency"] = {
 						[237547] = {
 							["max"] = 0,
@@ -1728,7 +1733,7 @@ NITdatabase = {
 						[134501] = {
 							["max"] = 0,
 							["name"] = "Illustrious Jewelcrafter's Token",
-							["count"] = 2,
+							["count"] = 0,
 						},
 						[135885] = {
 							["max"] = 0,
@@ -1755,9 +1760,9 @@ NITdatabase = {
 							["name"] = "Badge of Justice",
 							["count"] = 0,
 						},
-						[134375] = {
+						[334365] = {
 							["max"] = 0,
-							["name"] = "Stone Keeper's Shard",
+							["name"] = "Emblem of Frost",
 							["count"] = 0,
 						},
 						[237273] = {
@@ -1765,40 +1770,35 @@ NITdatabase = {
 							["name"] = "Defiler's Scourgestone",
 							["count"] = 91,
 						},
+						[134375] = {
+							["max"] = 0,
+							["name"] = "Stone Keeper's Shard",
+							["count"] = 0,
+						},
 						[463446] = {
 							["max"] = 400000,
 							["name"] = "Justice Points",
 							["count"] = 2912,
 						},
-						[334365] = {
-							["max"] = 0,
-							["name"] = "Emblem of Frost",
-							["count"] = 0,
-						},
 					},
-					["durabilityAverage"] = 96.7605633802817,
-					["profSkill1"] = 429,
-					["currentXP"] = 791781,
+					["firstaidSkill"] = 404,
+					["cookingSkillMax"] = 0,
+					["guildRankName"] = "Alt",
 					["cooldowns"] = {
 						["Icy Prism"] = {
 							["time"] = 1677235223.502075,
 						},
 						["Northrend Inscription Research"] = {
-							["time"] = 1716933657.902344,
+							["time"] = 1717106461.882813,
 						},
 						["Fire Prism"] = {
 							["time"] = 1716955199.125,
 						},
 					},
-					["level"] = 81,
+					["profSkill2"] = 515,
 					["classLocalized"] = "Death Knight",
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
+					["dungWeeklies"] = {
+						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFF00FF007|r|cFF00FF00/7|r"] = 1717559999,
 					},
 				},
 				["Mxzq"] = {
@@ -2523,8 +2523,8 @@ NITdatabase = {
 					},
 					["currentXP"] = 1002,
 					["realm"] = "Golemagg",
-					["fishingSkillMax"] = 0,
 					["profSkill2"] = 0,
+					["fishingSkillMax"] = 0,
 					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
@@ -2801,10 +2801,10 @@ NITdatabase = {
 						[43] = 1,
 						[547] = 4,
 						[576] = 1,
-						[189] = 22,
-						[553] = 1,
 						[557] = 1,
+						[553] = 1,
 						[542] = 4,
+						[189] = 22,
 						[574] = 2,
 						[546] = 4,
 						[209] = 7,
@@ -3288,7 +3288,7 @@ NITdatabase = {
 						[309] = 29,
 						[269] = 1,
 						[43] = 9,
-						[658] = 4,
+						[595] = 15,
 						[489] = 22,
 						[599] = 14,
 						[601] = 10,
@@ -3307,8 +3307,8 @@ NITdatabase = {
 						[552] = 3,
 						[566] = 60,
 						[542] = 5,
-						[595] = 15,
 						[532] = 19,
+						[658] = 4,
 					},
 					["durabilityAverage"] = 86.125,
 					["karaAttune"] = true,
@@ -3319,7 +3319,7 @@ NITdatabase = {
 					["gender"] = "Male",
 					["profSkillMax2"] = 525,
 					["prof1"] = "Enchanting",
-					["restedXP"] = 1020752,
+					["restedXP"] = 1299356,
 					["totalBagSlots"] = 100,
 					["prof2SpecName"] = "Goblin Engineer",
 					["questsDaily"] = {
@@ -3328,15 +3328,17 @@ NITdatabase = {
 					["quests"] = {
 					},
 					["dungWeeklies"] = {
-						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFF00FF007|r|cFF00FF00/7|r"] = 1717560000,
+						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFF00FF007|r|cFF00FF00/7|r"] = 1717559999,
 					},
 					["shadowLabAttune"] = true,
-					["freeBagSlots"] = 65,
+					["freeBagSlots"] = 63,
 					["guild"] = "CUBE",
 					["arcatrazAttune"] = true,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 525,
 					["guildRankName"] = "Member",
+					["race"] = "Orc",
+					["blackMorassAttune"] = true,
 					["currency"] = {
 						[237547] = {
 							["max"] = 0,
@@ -3368,9 +3370,9 @@ NITdatabase = {
 							["name"] = "Badge of Justice",
 							["count"] = 0,
 						},
-						[334365] = {
+						[134375] = {
 							["max"] = 0,
-							["name"] = "Emblem of Frost",
+							["name"] = "Stone Keeper's Shard",
 							["count"] = 0,
 						},
 						[237273] = {
@@ -3383,16 +3385,14 @@ NITdatabase = {
 							["name"] = "Justice Points",
 							["count"] = 4000,
 						},
-						[134375] = {
+						[334365] = {
 							["max"] = 0,
-							["name"] = "Stone Keeper's Shard",
+							["name"] = "Emblem of Frost",
 							["count"] = 0,
 						},
 					},
-					["blackMorassAttune"] = true,
-					["resting"] = true,
-					["time"] = 1716978737,
-					["gold"] = 57207154,
+					["time"] = 1717054387,
+					["gold"] = 33683352,
 					["profSkill2"] = 460,
 					["levelLog"] = {
 						[80] = {
@@ -3426,7 +3426,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["hellfireCitadelAttune"] = true,
 					["level"] = 81,
-					["race"] = "Orc",
+					["resting"] = true,
 					["firstaidSkillMax"] = 450,
 					["auchindounAttune"] = true,
 					["currentXP"] = 477968,
@@ -3434,7 +3434,7 @@ NITdatabase = {
 					},
 					["prof2"] = "Engineering",
 					["classLocalized"] = "Warrior",
-					["profSkill1"] = 502,
+					["profSkill1"] = 510,
 				},
 			},
 			["instances"] = {
@@ -4423,17 +4423,17 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4447-725-8754-42428-000155B469",
 					["leftMoney"] = 37554574,
 					["group"] = {
+						["Blagorodna"] = {
+							["class"] = "Priest",
+							["level"] = 81,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "ATM",
+						},
 						["Vermina"] = {
 							["class"] = "Paladin",
 							["level"] = 82,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
-						},
-						["Peekabòó"] = {
-							["class"] = "Rogue",
-							["level"] = 81,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Old School Hollywood",
 						},
 						["Mlynzz"] = {
 							["class"] = "Rogue",
@@ -4447,11 +4447,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Viikate",
 						},
-						["Blagorodna"] = {
-							["class"] = "Priest",
+						["Peekabòó"] = {
+							["class"] = "Rogue",
 							["level"] = 81,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "ATM",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Old School Hollywood",
 						},
 					},
 					["class"] = "Paladin",
@@ -5135,27 +5135,27 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Ecne-Gehennas"] = {
-							["level"] = 48,
+						["Micrim-Gehennas"] = {
+							["level"] = 45,
 							["class"] = "Hunter",
 							["classEnglish"] = "HUNTER",
-							["guildName"] = "Consistently Bad",
 						},
 						["Miqa"] = {
 							["level"] = 47,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
 						},
+						["Ecne-Gehennas"] = {
+							["level"] = 48,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Consistently Bad",
+						},
 						["Sinobia-Gehennas"] = {
 							["level"] = 48,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Social",
-						},
-						["Micrim-Gehennas"] = {
-							["level"] = 45,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
 						},
 					},
 					["class"] = "Priest",
@@ -5617,16 +5617,15 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
 						},
+						["Miqa"] = {
+							["level"] = 46,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
 						["Bigbabajack-Venoxis"] = {
 							["level"] = 45,
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
-						},
-						["Knyfus"] = {
-							["class"] = "Rogue",
-							["level"] = 47,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Nostalgiaa",
 						},
 						["Dildapriest"] = {
 							["class"] = "Priest",
@@ -5634,10 +5633,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Reserve Landslaget",
 						},
-						["Miqa"] = {
-							["level"] = 46,
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
+						["Knyfus"] = {
+							["class"] = "Rogue",
+							["level"] = 47,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Nostalgiaa",
 						},
 					},
 					["class"] = "Priest",
@@ -7750,11 +7750,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Shadow Stalkers",
 						},
-						["Qedqeda-Gehennas"] = {
-							["level"] = 24,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Introspection",
+						["Alriem-Gehennas"] = {
+							["level"] = 18,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "HAVOC EX YU",
 						},
 						["Stormwolf"] = {
 							["level"] = 21,
@@ -7768,16 +7768,16 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Shadow Stalkers",
 						},
+						["Qedqeda-Gehennas"] = {
+							["level"] = 24,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Introspection",
+						},
 						["Miqa"] = {
 							["level"] = 26,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
-						},
-						["Alriem-Gehennas"] = {
-							["level"] = 18,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "HAVOC EX YU",
 						},
 						["Berant-Gehennas"] = {
 							["level"] = 27,
@@ -8230,11 +8230,11 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4459-48-3469-44375-00004491BB",
 					["leftMoney"] = 1903967,
 					["group"] = {
-						["Akacho-Venoxis"] = {
-							["class"] = "Priest",
-							["level"] = 25,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "unanklickbar",
+						["Handrmandr"] = {
+							["class"] = "Paladin",
+							["level"] = 24,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
 						},
 						["Lorradir-Venoxis"] = {
 							["class"] = "Hunter",
@@ -8242,17 +8242,17 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "unanklickbar",
 						},
-						["Handrmandr"] = {
-							["class"] = "Paladin",
-							["level"] = 24,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
-						},
 						["Lancisity-Gehennas"] = {
 							["class"] = "Warrior",
 							["level"] = 25,
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Disqualified",
+						},
+						["Akacho-Venoxis"] = {
+							["class"] = "Priest",
+							["level"] = 25,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "unanklickbar",
 						},
 						["Mudádin-MirageRaceway"] = {
 							["class"] = "Shaman",
@@ -8419,15 +8419,15 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Steakhouse Donnerfels",
 						},
+						["Rectha-Venoxis"] = {
+							["level"] = 21,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
+						},
 						["Breana"] = {
 							["level"] = 23,
 							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
-						},
-						["Leblondi-Venoxis"] = {
-							["level"] = 18,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
 						},
 						["Handrmandr"] = {
 							["class"] = "Paladin",
@@ -8435,10 +8435,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Rectha-Venoxis"] = {
-							["level"] = 21,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
+						["Leblondi-Venoxis"] = {
+							["level"] = 18,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
 						},
 					},
 					["class"] = "Paladin",
@@ -12553,11 +12553,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "OG Bürgergeldstelle",
 						},
-						["Knuttz-MirageRaceway"] = {
+						["Laydee"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Nomads",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "New Beginning",
 						},
 						["Vermina"] = {
 							["level"] = 80,
@@ -12565,21 +12565,21 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Dibbsz-Mograine"] = {
+						["Knuttz-MirageRaceway"] = {
 							["level"] = 80,
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
+							["guildName"] = "Nomads",
 						},
 						["Darthknives-Mandokir"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Laydee"] = {
+						["Dibbsz-Mograine"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "New Beginning",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 					},
 					["class"] = "Paladin",
@@ -19100,21 +19100,21 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "CUBE",
 						},
-						["Mianas"] = {
-							["class"] = "Priest",
+						["Aklyvin-Gehennas"] = {
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Simplexity",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Palasios"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Etaya-Gehennas"] = {
+						["Mianas"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Simplexity",
 						},
 						["Sickyy"] = {
 							["level"] = 80,
@@ -19122,7 +19122,7 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Vicarious",
 						},
-						["Aklyvin-Gehennas"] = {
+						["Etaya-Gehennas"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
@@ -19821,11 +19821,11 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "CUBE",
 						},
-						["Selfita"] = {
-							["class"] = "Paladin",
+						["Selavie"] = {
+							["class"] = "Mage",
 							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Sequence",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Theorycraft",
 						},
 						["Simmex"] = {
 							["class"] = "Warrior",
@@ -19833,11 +19833,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Theorycraft",
 						},
-						["Sqter-NethergardeKeep"] = {
-							["class"] = "Druid",
+						["Selfita"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Quéstology",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Sequence",
 						},
 						["Variola"] = {
 							["class"] = "Death Knight",
@@ -19845,11 +19845,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Theorycraft",
 						},
-						["Selavie"] = {
-							["class"] = "Mage",
+						["Sqter-NethergardeKeep"] = {
+							["class"] = "Druid",
 							["level"] = 80,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Theorycraft",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Quéstology",
 						},
 					},
 					["class"] = "Hunter",
@@ -20264,16 +20264,16 @@ NITdatabase = {
 							["level"] = 80,
 						},
 						["Dubeldee"] = {
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["name"] = "Dubeldee",
 							["level"] = 80,
+							["class"] = "Paladin",
+							["name"] = "Dubeldee",
+							["classEnglish"] = "PALADIN",
 						},
 						["Kanecvenec"] = {
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["name"] = "Kanecvenec",
 							["level"] = 80,
+							["class"] = "Warlock",
+							["name"] = "Kanecvenec",
+							["classEnglish"] = "WARLOCK",
 						},
 						["Pxies-Sulfuron"] = {
 							["name"] = "Pxies-Sulfuron",

@@ -28,15 +28,15 @@ RXPDB = {
 		["Asjrdfsad - Golemagg"] = "global",
 		["Tudum - Ashbringer"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Tudum - Jin'do"] = "global",
+		["Moolatz - Golemagg"] = "global",
 		["Provokator - Jin'do"] = "global",
 		["Mxyzptlk - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
 		["Miqa - Golemagg"] = "global",
-		["Moolatz - Golemagg"] = "global",
-		["Battlearm - Gehennas"] = "global",
 		["Pitchwise - Ashbringer"] = "global",
+		["Battlearm - Gehennas"] = "global",
+		["Tudum - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
 	},
 	["profiles"] = {
@@ -236,16 +236,16 @@ RXPSettings = {
 			["alwaysSendBranded"] = false,
 			["frameSizes"] = {
 				["arrowFrame"] = {
-					32.00003051757813, -- [1]
-					32.00003051757813, -- [2]
+					32.00003814697266, -- [1]
+					32.00003814697266, -- [2]
 				},
 				["RXPFrame"] = {
-					235.0001220703125, -- [1]
-					28, -- [2]
+					235.0001068115234, -- [1]
+					27.99999809265137, -- [2]
 				},
 				["activeItemFrame"] = {
-					77.14276885986328, -- [1]
-					40.00003051757813, -- [2]
+					73.4390869140625, -- [1]
+					40.00004577636719, -- [2]
 				},
 				["activeTargetFrame"] = {
 					0, -- [1]
@@ -259,6 +259,7 @@ RXPSettings = {
 			["enableMinimapButton"] = false,
 			["enableTargetAutomation"] = false,
 			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0000534057617,
 			["macroAnnounced"] = true,
 			["unitscanReset"] = true,
 			["enableLevelUpAnnounceSolo"] = false,
@@ -302,7 +303,6 @@ RXPSettings = {
 				},
 			},
 			["enableTargetMacro"] = false,
-			["frameHeight"] = 124.9999694824219,
 		},
 		["Moolatz - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,
@@ -331,12 +331,12 @@ RXPSettings = {
 		["Vermin - Golemagg"] = {
 			["hideCompletedSteps"] = true,
 			["migrated"] = true,
-			["enableTrainerAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
-			["enableTracker"] = false,
 			["enableTargetAutomation"] = false,
+			["enableTracker"] = false,
+			["enableTrainerAutomation"] = false,
 			["enableBindAutomation"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,
