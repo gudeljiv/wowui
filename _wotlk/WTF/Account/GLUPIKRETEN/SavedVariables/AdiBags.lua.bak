@@ -419,7 +419,7 @@ AdiBagsDB = {
 						[36932] = "Gem#Gem",
 						[36920] = "Gem#Gem",
 						[3858] = "Trade Goods#Ores",
-						[9262] = "Gem#Gem",
+						[43122] = "Trade Goods#Inscription",
 						[40085] = "Gem#Gem",
 						[2835] = "Trade Goods#Ores",
 						[3860] = "Trade Goods#Bars",
@@ -487,7 +487,7 @@ AdiBagsDB = {
 						[8836] = "Trade Goods#Herbs",
 						[34721] = "Trade Goods#Bandages",
 						[7972] = "Junk#Junk",
-						[43122] = "Trade Goods#Inscription",
+						[9262] = "Gem#Gem",
 						[2776] = "Trade Goods#Ores",
 						[43105] = "Trade Goods#Inscription",
 						[23736] = "Ammunition#Bombs",
@@ -668,15 +668,15 @@ AdiBagsDB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Tudum - Jin'do"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
@@ -713,7 +713,14 @@ AdiBagsDB = {
 			["filters"] = {
 				["Equipment"] = false,
 			},
-			["qualityOpacity"] = 0.05,
+			["experiments"] = {
+				["Bag Lag Fix"] = {
+					["Enabled"] = false,
+					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
+					["Percent"] = 1,
+					["Name"] = "Bag Lag Fix",
+				},
+			},
 			["rightClickConfig"] = false,
 			["sortingOrder"] = "byQualityAndLevel",
 			["columnWidth"] = {
@@ -721,14 +728,7 @@ AdiBagsDB = {
 				["Bank"] = 16,
 			},
 			["maxHeight"] = 0.3,
-			["experiments"] = {
-				["Bag Lag Fix"] = {
-					["Enabled"] = false,
-					["Name"] = "Bag Lag Fix",
-					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
-					["Percent"] = 1,
-				},
-			},
+			["qualityOpacity"] = 0.05,
 			["theme"] = {
 				["reagentBank"] = {
 					["sectionFont"] = {
