@@ -55,13 +55,6 @@ X: -45
 Y: -230
 W: 210
 H: 401
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: SpellBookFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -162,8 +155,8 @@ W: 384
 H: 512
 Frame: WorldMapScreenAnchor
 FrameLevel: 0
-Anchor: TOP
-X: -336
+Anchor: TOPLEFT
+X: 278
 Y: -64
 W: 1
 H: 1
@@ -216,3 +209,10 @@ X: -232
 Y: 134
 W: 30
 H: 30
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
