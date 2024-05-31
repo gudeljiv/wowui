@@ -8,6 +8,7 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:45873::::::::80:::::::::|h[]|h|r"] = "Off",
 	["|cff0070dd|Hitem:55831::::::::81:::::::::|h[Headcover of Fog]|h|r"] = "Off",
 	["|cffffffff|Hitem:40554:3817:41398:40086:::::80:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:55831::::::::81:::::::::|h[]|h|r"] = "Off",
 	["|cffa335ee|Hitem:40721:3825:::::::80:::::::::|h[Hammerhead Sharkskin Cloak]|h|r"] = "Off",
 	["|cffffffff|Hitem:40328::41380:40086:::::81:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:55023::::::::81:::::::::|h[]|h|r"] = "Off",
