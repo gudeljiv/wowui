@@ -1,7 +1,8 @@
-VER 3 000000000100001E " " "134400"
+VER 3 0000000001000021 " " "134400"
 #showtooltip
 /startattack
-/cast [@mouseover,exists][]Heroic Throw
+/cast [nostance:2/3,spec:2]Berserker Stance
+/cast Slam
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -91,9 +92,8 @@ VER 3 0000000001000020 " " "134400"
 /cast Overpower
 /cast Inner Rage
 END
-VER 3 0000000001000021 " " "134400"
+VER 3 000000000100001E " " "134400"
 #showtooltip
 /startattack
-/cast [nostance:2/3,spec:2]Berserker Stance
-/cast Slam
+/cast [@mouseover,exists][]Heroic Throw
 END
