@@ -174,6 +174,7 @@ function NIT:print(msg, channel, prefix, nonClickable, tradeLog)
 			--You can't add a seperate link inside another link, has to be done side by side in the string.
 			printPrefix = "|HNITCustomLink:instancelog|h" .. printPrefix .. "|h|r";
 		elseif (not nonClickable) then
+			--Can't have multiple textures inside a link only 1, so if we have multiple we need to make it unclickable.
 			printPrefix = "|HNITCustomLink:instancelog|h" .. printPrefix .. "|h|r";
 			msg = "|HNITCustomLink:instancelog|h" .. msg .. "|h";
 		else
@@ -2555,6 +2556,15 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 					v = "+" .. NIT:commaValue(v);
 				end
 				text = text .. "\n |cFF9CD6DE" .. k .. "|r " .. v;
+			end
+		end
+		if (data.currencies and next(data.currencies)) then
+			text = text .. "\n\n|cFFFFFF00" .. L["Currencies"] .. ":|r"
+			for k, v in NIT:pairsByKeys(data.currencies) do
+				if (v.count > 0) then
+					local texture = "|T" .. v.icon .. ":12:12:0:0|t";
+					text = text .. "\n " .. texture .. " |cFF9CD6DE" .. v.name .. "|r +" .. v.count;
+				end
 			end
 		end
 		if (data.group and next(data.group)) then

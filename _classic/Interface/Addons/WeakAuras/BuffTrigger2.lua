@@ -65,7 +65,7 @@ local triggerInfos = {}
 
 local watched_trigger_events = Private.watched_trigger_events
 
-local UnitGroupRolesAssigned = WeakAuras.IsWrathOrCataOrRetail() and UnitGroupRolesAssigned or function() return "DAMAGER" end
+local UnitGroupRolesAssigned = WeakAuras.IsCataOrRetail() and UnitGroupRolesAssigned or function() return "DAMAGER" end
 
 -- Active scan functions used to quickly check which apply to a aura instance
 -- keyed on unit, debuffType, spellname, with a scan object value
@@ -2338,7 +2338,7 @@ local function EventHandler(frame, event, arg1, arg2, ...)
   Private.StopProfileSystem("bufftrigger2")
 end
 
-if WeakAuras.IsRetail() then
+if WeakAuras.IsCataOrRetail() then
   Private.LibSpecWrapper.Register(function(unit)
     Private.StartProfileSystem("bufftrigger2")
 
@@ -2360,7 +2360,7 @@ Buff2Frame:RegisterEvent("UNIT_PET")
 Buff2Frame:RegisterEvent("RAID_TARGET_UPDATE")
 Buff2Frame:RegisterEvent("PLAYER_SOFT_ENEMY_CHANGED")
 Buff2Frame:RegisterEvent("PLAYER_SOFT_FRIEND_CHANGED")
-if WeakAuras.IsWrathOrCataOrRetail() then
+if WeakAuras.IsCataOrRetail() then
   Buff2Frame:RegisterEvent("PLAYER_FOCUS_CHANGED")
   Buff2Frame:RegisterEvent("ARENA_OPPONENT_UPDATE")
   Buff2Frame:RegisterEvent("UNIT_ENTERED_VEHICLE")
@@ -2949,7 +2949,7 @@ local function createScanFunc(trigger)
     local names = {}
     for index, spellName in ipairs(trigger.ignoreAuraNames) do
       local spellId = WeakAuras.SafeToNumber(spellName)
-      local name = GetSpellInfo(spellId) or spellName
+      local name = spellId and Private.ExecEnv.GetSpellName(spellId) or spellName
       tinsert(names, name)
     end
 
@@ -3092,7 +3092,7 @@ function BuffTrigger.Add(data)
         names = {}
         for index, spellName in ipairs(trigger.auranames) do
           local spellId = WeakAuras.SafeToNumber(spellName)
-          names[index] = GetSpellInfo(spellId) or spellName
+          names[index] = spellId and Private.ExecEnv.GetSpellName(spellId) or spellName
         end
       end
 
@@ -3144,10 +3144,10 @@ function BuffTrigger.Add(data)
 
       local groupTrigger = trigger.unit == "group" or trigger.unit == "raid" or trigger.unit == "party"
       local effectiveIgnoreSelf = (groupTrigger or trigger.unit == "nameplate") and trigger.ignoreSelf
-      local effectiveGroupRole = WeakAuras.IsWrathOrCataOrRetail() and (groupTrigger and trigger.useGroupRole and trigger.group_role) or nil
-      local effectiveRaidRole = WeakAuras.IsClassicEraOrWrathOrCata() and (groupTrigger and trigger.useRaidRole and trigger.raid_role) or nil
+      local effectiveGroupRole = WeakAuras.IsCataOrRetail() and (groupTrigger and trigger.useGroupRole and trigger.group_role) or nil
+      local effectiveRaidRole = WeakAuras.IsClassicOrCata() and (groupTrigger and trigger.useRaidRole and trigger.raid_role) or nil
       local effectiveClass = groupTrigger and trigger.useClass and trigger.class
-      local effectiveSpecId = WeakAuras.IsRetail() and (groupTrigger and trigger.useActualSpec and trigger.actualSpec) or nil
+      local effectiveSpecId = WeakAuras.IsCataOrRetail() and (groupTrigger and trigger.useActualSpec and trigger.actualSpec) or nil
       local effectiveArenaSpec = WeakAuras.IsRetail() and (trigger.unit == "arena" and trigger.useArenaSpec and trigger.arena_spec) or nil
       local effectiveHostility = trigger.unit == "nameplate" and trigger.useHostility and trigger.hostility
       local effectiveIgnoreDead = groupTrigger and trigger.ignoreDead
@@ -3298,12 +3298,12 @@ function BuffTrigger.GetNameAndIconSimple(data, triggernum)
     for index, spellName in ipairs(trigger.auranames) do
       local spellId = WeakAuras.SafeToNumber(spellName)
       if spellId then
-        name, _, icon = GetSpellInfo(spellName)
+        name, _, icon = Private.ExecEnv.GetSpellInfo(spellName)
         if name and icon then
           return name, icon
         end
       elseif not tonumber(spellName) then
-        name, _, icon = GetSpellInfo(spellName)
+        name, _, icon = Private.ExecEnv.GetSpellInfo(spellName)
         if (name and icon) then
           return name, icon
         end
@@ -3315,7 +3315,7 @@ function BuffTrigger.GetNameAndIconSimple(data, triggernum)
     for index, spellIdString in ipairs(trigger.auraspellids) do
       local spellId = spellIdString ~= "" and tonumber(spellIdString)
       if spellId then
-        name, _, icon = GetSpellInfo(spellIdString)
+        name, _, icon = Private.ExecEnv.GetSpellInfo(spellIdString)
         if name and icon then
           return name, icon
         end
@@ -3903,7 +3903,7 @@ end
 
 local function UpdateMatchDataMulti(time, base, key, event, sourceGUID, sourceName, destGUID, destName, spellId, spellName, amount)
   local updated = false
-  local icon = spellId and select(3, GetSpellInfo(spellId))
+  local icon = spellId and Private.ExecEnv.GetSpellIcon(spellId)
   ScheduleMultiCleanUp(destGUID, time + 60)
   if not base[key] or not base[key][sourceGUID] then
     updated = true
@@ -4350,7 +4350,7 @@ function BuffTrigger.GetTriggerDescription(data, triggernum, namestable)
       local icon
       local spellId = WeakAuras.SafeToNumber(name)
       if spellId then
-        icon = select(3, GetSpellInfo(spellId))
+        icon = Private.ExecEnv.GetSpellIcon(spellId)
       else
         icon = WeakAuras.spellCache.GetIcon(name)
       end
@@ -4377,7 +4377,7 @@ function BuffTrigger.GetTriggerDescription(data, triggernum, namestable)
         end
       end
 
-      local icon = select(3, GetSpellInfo(spellId)) or "Interface\\Icons\\INV_Misc_QuestionMark"
+      local icon = Private.ExecEnv.GetSpellIcon(spellId) or "Interface\\Icons\\INV_Misc_QuestionMark"
       tinsert(namestable, {left, spellId, icon})
     end
   end

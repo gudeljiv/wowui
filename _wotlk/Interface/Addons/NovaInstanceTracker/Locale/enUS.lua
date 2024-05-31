@@ -340,8 +340,8 @@ L["statsRep"] = "Rep:";
 L["instanceStatsOutputRepTitle"] = "Reputation Gained";
 L["instanceStatsOutputRepDesc"] = "Show how much repuation gained while inside the dungeon?";
 
-L["instanceStatsOutputHKTitle"] = "Honor Kills";
-L["instanceStatsOutputHKDesc"] = "Show how many honor kills gained while inside a battleground?";
+L["instanceStatsOutputHKTitle"] = "Honor";
+L["instanceStatsOutputHKDesc"] = "Show how much honor gained while inside a battleground?";
 
 L["experiencePerHour"] = "XP/Hour";
 
@@ -551,3 +551,9 @@ L["Cata Fishing Daily"] = "Cata Fishing Daily";
 L["Cata Jewelcrafting Daily"] = "Cata Jewelcrafting Daily";
 
 L["Dungeon weeklies remaining"] = "Dungeon weeklies remaining";
+
+L["Currency"] = "Currency";
+L["Currencies"] = "Currencies";
+
+L["instanceStatsOutputCurrencyTitle"] = "Currency";
+L["instanceStatsOutputCurrencyDesc"] = "Show what currencies were gained while inside a dungeon?";

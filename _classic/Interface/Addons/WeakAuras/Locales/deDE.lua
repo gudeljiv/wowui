@@ -139,8 +139,6 @@ L["Ahn'Qiraj"] = "Ahn'Qiraj"
 --[[Translation missing --]]
 L["Aku'mai"] = "Aku'mai"
 L["Alert Type"] = "Warnungstyp"
---[[Translation missing --]]
-L["Algalon the Observer"] = "Algalon the Observer"
 L["Alive"] = "am Leben"
 L["All"] = "Alle"
 --[[Translation missing --]]
@@ -165,8 +163,6 @@ L["Angle and Radius"] = "Angle and Radius"
 L["Animations"] = "Animationen"
 L["Anticlockwise"] = "Im Gegenuhrzeigersinn"
 --[[Translation missing --]]
-L["Anub'arak"] = "Anub'arak"
---[[Translation missing --]]
 L["Anub'Rekhan"] = "Anub'Rekhan"
 --[[Translation missing --]]
 L["Any"] = "Any"
@@ -175,8 +171,6 @@ L["Any Triggers"] = "Ein Auslöser (ODER)"
 L["AOE"] = "AOE"
 --[[Translation missing --]]
 L["Arcane Resistance"] = "Arcane Resistance"
---[[Translation missing --]]
-L["Archavon the Stone Watcher"] = "Archavon the Stone Watcher"
 --[[Translation missing --]]
 L[ [=[Are you sure you want to run the |cffff0000EXPERIMENTAL|r repair tool?
 This will overwrite any changes you have made since the last database upgrade.
@@ -188,16 +182,10 @@ L["Armor (%)"] = "Rüstung (%)"
 --[[Translation missing --]]
 L["Armor against Target (%)"] = "Armor against Target (%)"
 --[[Translation missing --]]
-L["Armor Peneration Percent"] = "Armor Peneration Percent"
---[[Translation missing --]]
-L["Armor Peneration Rating"] = "Armor Peneration Rating"
---[[Translation missing --]]
 L["Armor Rating"] = "Armor Rating"
 --[[Translation missing --]]
 L["Array"] = "Array"
 L["Ascending"] = "Aufsteigend"
---[[Translation missing --]]
-L["Assembly of Iron"] = "Assembly of Iron"
 L["Assigned Role"] = "Zugewiesene Rolle"
 --[[Translation missing --]]
 L["Assigned Role Icon"] = "Assigned Role Icon"
@@ -245,8 +233,6 @@ L["Aura:"] = "Aura:"
 L["Auras"] = "Auras"
 L["Auras:"] = "Auren:"
 --[[Translation missing --]]
-L["Auriaya"] = "Auriaya"
---[[Translation missing --]]
 L["Author Options"] = "Author Options"
 --[[Translation missing --]]
 L["Auto"] = "Auto"
@@ -269,9 +255,9 @@ L["Back and Forth"] = "Vor und zurück"
 L["Background"] = "Hintergrund"
 L["Background Color"] = "Hintergrundfarbe"
 --[[Translation missing --]]
-L["Baltharus the Warborn"] = "Baltharus the Warborn"
---[[Translation missing --]]
 L["Bar Color/Gradient Start"] = "Bar Color/Gradient Start"
+--[[Translation missing --]]
+L["Bar Texture"] = "Bar Texture"
 --[[Translation missing --]]
 L["Baron Aquanis"] = "Baron Aquanis"
 --[[Translation missing --]]
@@ -311,15 +297,11 @@ L["Blocked"] = "Geblockt"
 --[[Translation missing --]]
 L["Blood"] = "Blood"
 --[[Translation missing --]]
-L["Blood Prince Council"] = "Blood Prince Council"
---[[Translation missing --]]
 L["Blood Rune #1"] = "Blood Rune #1"
 --[[Translation missing --]]
 L["Blood Rune #2"] = "Blood Rune #2"
 --[[Translation missing --]]
 L["Bloodlord Mandokir"] = "Bloodlord Mandokir"
---[[Translation missing --]]
-L["Blood-Queen Lana'thel"] = "Blood-Queen Lana'thel"
 --[[Translation missing --]]
 L["Bonus Reputation Gain"] = "Bonus Reputation Gain"
 L["Border"] = "Rahmen"
@@ -558,8 +540,6 @@ L["DBM Timer"] = "DBM-Timer"
 --[[Translation missing --]]
 L["Death"] = "Death"
 L["Death Knight Rune"] = "Todesritter-Rune"
---[[Translation missing --]]
-L["Deathbringer Saurfang"] = "Deathbringer Saurfang"
 L["Debuff"] = "Debuff"
 L["Debuff Class"] = "Schwächungszauber Klasse"
 L["Debuff Class Icon"] = "Schwächungszauber Klassensymbol"
@@ -570,7 +550,6 @@ L["Debug Log contains more than 1000 entries"] = "Debug Log contains more than 1
 L["Debug Logging enabled"] = "Debug Logging enabled"
 --[[Translation missing --]]
 L["Debug Logging enabled for '%s'"] = "Debug Logging enabled for '%s'"
-L["Defense"] = "Verteidigung"
 --[[Translation missing --]]
 L["Defensive Stats"] = "Defensive Stats"
 L["Deflect"] = "Umlenken"
@@ -664,8 +643,6 @@ L["Edge of Madness"] = "Edge of Madness"
 --[[Translation missing --]]
 L["Elide"] = "Elide"
 L["Elite"] = "Elite"
---[[Translation missing --]]
-L["Emalon the Storm Watcher"] = "Emalon the Storm Watcher"
 L["Emote"] = "Emote"
 --[[Translation missing --]]
 L["Empower Cast End"] = "Empower Cast End"
@@ -783,8 +760,6 @@ L["Extra Attacks"] = "Extraangriffe (EXTRA_ATTACKS)"
 L["Extra Spell Id"] = "Extra Spell Id"
 L["Extra Spell Name"] = "Extra-Zaubername"
 L["Faction"] = "Fraktion"
---[[Translation missing --]]
-L["Faction Champions"] = "Faction Champions"
 L["Faction Name"] = "Fraktionsname"
 L["Faction Reputation"] = "Fraktionsruf"
 --[[Translation missing --]]
@@ -799,8 +774,6 @@ L["Fankriss the Unyielding"] = "Fankriss the Unyielding"
 L["Feature %q is already disabled"] = "Feature %q is already disabled"
 --[[Translation missing --]]
 L["Feature %q is already enabled"] = "Feature %q is already enabled"
---[[Translation missing --]]
-L["Festergut"] = "Festergut"
 --[[Translation missing --]]
 L["Festering Rotslime"] = "Festering Rotslime"
 --[[Translation missing --]]
@@ -824,8 +797,6 @@ L["Fixed"] = "Fixiert"
 --[[Translation missing --]]
 L["Fixed Names"] = "Fixed Names"
 L["Fixed Size"] = "Feste Größe"
---[[Translation missing --]]
-L["Flame Leviathan"] = "Flame Leviathan"
 --[[Translation missing --]]
 L["Flamegor"] = "Flamegor"
 L["Flash"] = "Aufblitzen"
@@ -855,8 +826,6 @@ L["Fourth Value of Tooltip Text"] = "Fourth Value of Tooltip Text"
 --[[Translation missing --]]
 L["Frame Selector"] = "Frame Selector"
 L["Frequency"] = "Häufigkeit"
---[[Translation missing --]]
-L["Freya"] = "Freya"
 L["Friendly"] = "Freundlich"
 L["Friendly Fire"] = "Eigenbeschuss"
 --[[Translation missing --]]
@@ -889,10 +858,6 @@ L["Gelihast"] = "Gelihast"
 L["General"] = "General"
 --[[Translation missing --]]
 L["General Rajaxx"] = "General Rajaxx"
---[[Translation missing --]]
-L["General Vezax"] = "General Vezax"
---[[Translation missing --]]
-L["General Zarithrian"] = "General Zarithrian"
 --[[Translation missing --]]
 L["GetNameAndIcon Function (fallback state)"] = "GetNameAndIcon Function (fallback state)"
 --[[Translation missing --]]
@@ -935,11 +900,7 @@ L["GTFO Alert"] = "GTFO-Warnung"
 L["Guardian"] = "Wächter"
 L["Guild"] = "Gilde"
 --[[Translation missing --]]
-L["Gunship Battle"] = "Gunship Battle"
---[[Translation missing --]]
 L["Hakkar"] = "Hakkar"
---[[Translation missing --]]
-L["Halion"] = "Halion"
 L["Has Target"] = "Hat Ziel"
 L["Has Vehicle UI"] = "Hat Fahrzeug-UI"
 L["HasPet"] = "mit aktivem Begleiter"
@@ -957,6 +918,8 @@ L["Health Deficit"] = "Health Deficit"
 --[[Translation missing --]]
 L["Heigan the Unclean"] = "Heigan the Unclean"
 L["Height"] = "Höhe"
+--[[Translation missing --]]
+L["Hero Talent"] = "Hero Talent"
 --[[Translation missing --]]
 L["Heroic Party"] = "Heroic Party"
 L["Hide"] = "Verbergen"
@@ -980,8 +943,6 @@ L["Higher Than Tank"] = "Höher als der Tank"
 L["Hit (%)"] = "Hit (%)"
 --[[Translation missing --]]
 L["Hit Rating"] = "Hit Rating"
---[[Translation missing --]]
-L["Hodir"] = "Hodir"
 L["Holy Resistance"] = "Heiligwiderstand"
 L["Horde"] = "Horde"
 --[[Translation missing --]]
@@ -991,21 +952,17 @@ L["Hostility"] = "Gesinnung"
 L["Humanoid"] = "Humanoid"
 --[[Translation missing --]]
 L["Hybrid"] = "Hybrid"
---[[Translation missing --]]
-L["Icecrown Citadel"] = "Icecrown Citadel"
 L["Icon"] = "Symbol"
 --[[Translation missing --]]
 L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["ID"] = "ID"
---[[Translation missing --]]
 L["Id"] = "Id"
 --[[Translation missing --]]
-L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"
+L["ID"] = "ID"
 --[[Translation missing --]]
-L["Ignis the Furnace Master"] = "Ignis the Furnace Master"
+L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"
 --[[Translation missing --]]
 L["Ignore Dead"] = "Ignore Dead"
 --[[Translation missing --]]
@@ -1134,13 +1091,7 @@ L["Keep Inside"] = "Keep Inside"
 --[[Translation missing --]]
 L["Kel'Thuzad"] = "Kel'Thuzad"
 --[[Translation missing --]]
-L["Kologarn"] = "Kologarn"
---[[Translation missing --]]
-L["Koralon the Flame Watcher"] = "Koralon the Flame Watcher"
---[[Translation missing --]]
 L["Kurinnaxx"] = "Kurinnaxx"
---[[Translation missing --]]
-L["Lady Deathwhisper"] = "Lady Deathwhisper"
 --[[Translation missing --]]
 L["Lady Sarevess"] = "Lady Sarevess"
 --[[Translation missing --]]
@@ -1172,6 +1123,8 @@ L["Legion"] = "Legion"
 L["Length"] = "Länge"
 L["Level"] = "Stufe"
 --[[Translation missing --]]
+L["LibSharedMedia"] = "LibSharedMedia"
+--[[Translation missing --]]
 L["Limited"] = "Limited"
 --[[Translation missing --]]
 L["Lines & Particles"] = "Lines & Particles"
@@ -1191,10 +1144,6 @@ L["Loot Specialization"] = "Loot Specialization"
 L["Loot Specialization Id"] = "Loot Specialization Id"
 --[[Translation missing --]]
 L["Loot Specialization Name"] = "Loot Specialization Name"
---[[Translation missing --]]
-L["Lord Jaraxxus"] = "Lord Jaraxxus"
---[[Translation missing --]]
-L["Lord Marrowgar"] = "Lord Marrowgar"
 --[[Translation missing --]]
 L["Lorgus Jett"] = "Lorgus Jett"
 L["Lost"] = "Verloren"
@@ -1217,8 +1166,6 @@ L["Main Stat"] = "Main Stat"
 L["Majordomo Executus"] = "Majordomo Executus"
 --[[Translation missing --]]
 L["Malformed WeakAuras link"] = "Malformed WeakAuras link"
---[[Translation missing --]]
-L["Malygos"] = "Malygos"
 --[[Translation missing --]]
 L["Manual"] = "Manual"
 --[[Translation missing --]]
@@ -1269,8 +1216,6 @@ L["Message Type"] = "Nachrichtentyp"
 L["Message type:"] = "Nachrichtentyp:"
 --[[Translation missing --]]
 L["Meta Data"] = "Meta Data"
---[[Translation missing --]]
-L["Mimiron"] = "Mimiron"
 --[[Translation missing --]]
 L["Mine"] = "Mine"
 --[[Translation missing --]]
@@ -1369,8 +1314,6 @@ L["Non-player Character"] = "Nicht-Spieler-Charakter (NPC)"
 L["Normal"] = "Normal"
 --[[Translation missing --]]
 L["Normal Party"] = "Normal Party"
---[[Translation missing --]]
-L["Northrend Beasts"] = "Northrend Beasts"
 L["Not in Group"] = "In keiner Gruppe"
 --[[Translation missing --]]
 L["Not in Smart Group"] = "Not in Smart Group"
@@ -1599,8 +1542,6 @@ L["Print Profiling Results"] = "Print Profiling Results"
 --[[Translation missing --]]
 L["Proc Glow"] = "Proc Glow"
 --[[Translation missing --]]
-L["Professor Putricide"] = "Professor Putricide"
---[[Translation missing --]]
 L["Profiling already started."] = "Profiling already started."
 --[[Translation missing --]]
 L["Profiling automatically started."] = "Profiling automatically started."
@@ -1672,8 +1613,6 @@ L["Rated Battleground"] = "Rated Battleground"
 L["Raw Threat Percent"] = "Raw Threat Percent"
 --[[Translation missing --]]
 L["Razorgore the Untamed"] = "Razorgore the Untamed"
---[[Translation missing --]]
-L["Razorscale"] = "Razorscale"
 L["Ready Check"] = "Bereitschaftscheck"
 --[[Translation missing --]]
 L["Reagent Quality"] = "Reagent Quality"
@@ -1717,10 +1656,6 @@ L["Requesting display information from %s ..."] = "Requesting display informatio
 L["Require Valid Target"] = "Erfordert gültiges Ziel"
 --[[Translation missing --]]
 L["Requires syncing the specialization via LibSpecialization."] = "Requires syncing the specialization via LibSpecialization."
---[[Translation missing --]]
-L["Resilience Percent"] = "Resilience Percent"
---[[Translation missing --]]
-L["Resilience Rating"] = "Resilience Rating"
 L["Resist"] = "Widerstehen"
 --[[Translation missing --]]
 L["Resistances"] = "Resistances"
@@ -1747,8 +1682,6 @@ L["Rotate Right"] = "Nach rechts rotieren"
 --[[Translation missing --]]
 L["Rotation"] = "Rotation"
 --[[Translation missing --]]
-L["Rotface"] = "Rotface"
---[[Translation missing --]]
 L["Round"] = "Round"
 --[[Translation missing --]]
 L["Round Mode"] = "Round Mode"
@@ -1773,10 +1706,6 @@ L["Rune Count - Frost"] = "Rune Count - Frost"
 L["Rune Count - Unholy"] = "Rune Count - Unholy"
 --[[Translation missing --]]
 L["Sapphiron"] = "Sapphiron"
---[[Translation missing --]]
-L["Sartharion"] = "Sartharion"
---[[Translation missing --]]
-L["Saviana Ragefire"] = "Saviana Ragefire"
 L["Say"] = "Sagen"
 --[[Translation missing --]]
 L["Scale"] = "Scale"
@@ -1801,6 +1730,8 @@ https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=] ] = [=[Secure f
 https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=]
 L["Select Frame"] = "Frame auswählen"
 --[[Translation missing --]]
+L["Selection Mode"] = "Selection Mode"
+--[[Translation missing --]]
 L["Separator"] = "Separator"
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as classic.wowhead.com/item-sets"] = "Set IDs can be found on websites such as classic.wowhead.com/item-sets"
@@ -1809,14 +1740,10 @@ L["Set IDs can be found on websites such as wowhead.com/cata/item-sets"] = "Set 
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "Set IDs can be found on websites such as wowhead.com/item-sets"
 --[[Translation missing --]]
-L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"
---[[Translation missing --]]
 L["Shade of Eranikus"] = "Shade of Eranikus"
 L["Shadow Resistance"] = "Schattenwiderstand"
 --[[Translation missing --]]
 L["Shadowlands"] = "Shadowlands"
---[[Translation missing --]]
-L["Shadron"] = "Shadron"
 L["Shake"] = "Beben"
 --[[Translation missing --]]
 L["Shazzrah"] = "Shazzrah"
@@ -1858,8 +1785,6 @@ L["Since Ready"] = "Since Ready"
 L["Since Stack Gain"] = "Since Stack Gain"
 --[[Translation missing --]]
 L["Since Stack Lost"] = "Since Stack Lost"
---[[Translation missing --]]
-L["Sindragosa"] = "Sindragosa"
 L["Size & Position"] = "Größe & Position"
 --[[Translation missing --]]
 L["Slide Animation"] = "Slide Animation"
@@ -2044,15 +1969,13 @@ L["Talent |cFFFF0000Not|r Known"] = "Talent |cFFFF0000Not|r Known"
 L["Talent |cFFFF0000Not|r Selected"] = "Talent |cFFFF0000Not|r Selected"
 --[[Translation missing --]]
 L["Talent Known"] = "Talent Known"
-L["Talent selected"] = "Gewähltes Talent"
 L["Talent Selected"] = "Talent gewählt"
+L["Talent selected"] = "Gewähltes Talent"
 L["Talent Specialization"] = "Talentspezialisierung"
 L["Tanking And Highest"] = "Höchster und Aggro"
 L["Tanking But Not Highest"] = "Aggro aber nicht höchste"
 L["Target"] = "Ziel"
 L["Targeted"] = "Anvisiert"
---[[Translation missing --]]
-L["Tenebron"] = "Tenebron"
 --[[Translation missing --]]
 L["Tertiary Stats"] = "Tertiary Stats"
 L["Text"] = "Text"
@@ -2067,6 +1990,8 @@ L["Texture Function"] = "Texture Function"
 --[[Translation missing --]]
 L["Texture Function (fallback state)"] = "Texture Function (fallback state)"
 --[[Translation missing --]]
+L["Texture Picker"] = "Texture Picker"
+--[[Translation missing --]]
 L["Texture Rotation"] = "Texture Rotation"
 --[[Translation missing --]]
 L["Thaddius"] = "Thaddius"
@@ -2075,19 +2000,11 @@ L["The aura has overwritten the global '%s', this might affect other auras."] = 
 --[[Translation missing --]]
 L["The effective level differs from the level in e.g. Time Walking dungeons."] = "The effective level differs from the level in e.g. Time Walking dungeons."
 --[[Translation missing --]]
-L["The Eye of Eternity"] = "The Eye of Eternity"
---[[Translation missing --]]
 L["The Four Horsemen"] = "The Four Horsemen"
 --[[Translation missing --]]
 L["The 'ID' value can be found in the BigWigs options of a specific spell"] = "The 'ID' value can be found in the BigWigs options of a specific spell"
 --[[Translation missing --]]
-L["The Lich King"] = "The Lich King"
---[[Translation missing --]]
-L["The Obsidian Sanctum"] = "The Obsidian Sanctum"
---[[Translation missing --]]
 L["The Prophet Skeram"] = "The Prophet Skeram"
---[[Translation missing --]]
-L["The Ruby Sanctum"] = "The Ruby Sanctum"
 --[[Translation missing --]]
 L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."] = "The trigger number is optional, and uses the trigger providing dynamic information if not specified."
 --[[Translation missing --]]
@@ -2115,8 +2032,6 @@ L["This aura plays a Text To Speech via a condition."] = "This aura plays a Text
 L["This aura plays a Text To Speech via an action."] = "This aura plays a Text To Speech via an action."
 --[[Translation missing --]]
 L["This filter has been moved to the Location trigger. Change your aura to use the new Location trigger or join the WeakAuras Discord server for help."] = "This filter has been moved to the Location trigger. Change your aura to use the new Location trigger or join the WeakAuras Discord server for help."
---[[Translation missing --]]
-L["Thorim"] = "Thorim"
 --[[Translation missing --]]
 L["Threat Percent"] = "Threat Percent"
 L["Threat Situation"] = "Bedrohungssituation"
@@ -2167,8 +2082,6 @@ L["Top Left"] = "Oben Links"
 L["Top Right"] = "Oben Rechts"
 L["Top to Bottom"] = "Oben -> Unten"
 --[[Translation missing --]]
-L["Toravon the Ice Watcher"] = "Toravon the Ice Watcher"
---[[Translation missing --]]
 L["Torghast"] = "Torghast"
 L["Total Duration"] = "Gesamtdauer"
 --[[Translation missing --]]
@@ -2208,8 +2121,6 @@ L["Tracking Only Cooldown"] = "Tracking Only Cooldown"
 L["Transmission error"] = "Übertragungsfehler"
 --[[Translation missing --]]
 L["Treat charged combo point as 7 combo points"] = "Treat charged combo point as 7 combo points"
---[[Translation missing --]]
-L["Trial of the Crusader"] = "Trial of the Crusader"
 L["Trigger"] = "Auslöser"
 --[[Translation missing --]]
 L["Trigger %i"] = "Trigger %i"
@@ -2229,8 +2140,6 @@ L["Trying to repair broken conditions in %s likely caused by a WeakAuras bug."] 
 L["Twilight Lord Kelris"] = "Twilight Lord Kelris"
 L["Twin Emperors"] = "Zwillingsimperatoren"
 L["Type"] = "Typ"
---[[Translation missing --]]
-L["Ulduar"] = "Ulduar"
 --[[Translation missing --]]
 L["Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."] = "Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."
 --[[Translation missing --]]
@@ -2297,18 +2206,10 @@ L["Using WeakAuras.clones is deprecated. Use WeakAuras.GetRegion(id, cloneId) in
 L["Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."] = "Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."
 --[[Translation missing --]]
 L["Vaelastrasz the Corrupt"] = "Vaelastrasz the Corrupt"
---[[Translation missing --]]
-L["Valithria Dreamwalker"] = "Valithria Dreamwalker"
---[[Translation missing --]]
-L["Val'kyr Twins"] = "Val'kyr Twins"
---[[Translation missing --]]
-L["Vault of Archavon"] = "Vault of Archavon"
 L["Versatility (%)"] = "Vielseitigkeit (%)"
 L["Versatility Rating"] = "Vielseitigkeitswertung"
 --[[Translation missing --]]
 L["Vertical"] = "Vertical"
---[[Translation missing --]]
-L["Vesperon"] = "Vesperon"
 --[[Translation missing --]]
 L["Viscidus"] = "Viscidus"
 L["Visibility"] = "Sichtbarkeit"
@@ -2370,12 +2271,8 @@ L["Wrath of the Lich King"] = "Wrath of the Lich King"
 --[[Translation missing --]]
 L["Writing to the WeakAuras table is not allowed."] = "Writing to the WeakAuras table is not allowed."
 L["X-Offset"] = "X-Versatz"
---[[Translation missing --]]
-L["XT-002 Deconstructor"] = "XT-002 Deconstructor"
 L["Yell"] = "Schreien"
 L["Y-Offset"] = "Y-Versatz"
---[[Translation missing --]]
-L["Yogg-Saron"] = "Yogg-Saron"
 --[[Translation missing --]]
 L["You have new auras ready to be installed!"] = "You have new auras ready to be installed!"
 --[[Translation missing --]]

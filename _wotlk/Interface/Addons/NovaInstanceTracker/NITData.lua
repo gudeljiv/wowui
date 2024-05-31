@@ -149,8 +149,9 @@ function NIT:sendComm(distribution, string, target)
 end
 
 function NIT:versionCheck(remoteVersion)
-	if (remoteVersion == 0) then
-		--Comm is from NWB.
+	if (not remoteVersion or remoteVersion == 0) then
+		--Comm is from NWB is version is 0.
+		--Someone reported version was missing all together, someone else started using the NIT prefix maybe?
 		return;
 	end
 	local lastVersionMsg = NIT.db.global.lastVersionMsg;
@@ -348,6 +349,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "CHAT_MSG_CURRENCY") then
 		--Post cata honor recording.
 		NIT:chatMsgCurrency(...);
+		NIT:recordCurrency();
 		NIT:recordHonorData();
 	elseif (event == "PLAYER_REGEN_ENABLED") then
 		NIT:recordCombatEndedData(...);
@@ -706,20 +708,46 @@ end
 
 --Cata and onwards honor recording, new event added.
 function NIT:chatMsgCurrency(...)
-	if (not NIT.inInstance or NIT.data.instances[1].type ~= "bg") then
+	if (not NIT.inInstance) then
 		return;
 	end
-	if (not NIT.data.instances[1].honor) then
-		NIT.data.instances[1].honor = 0;
-	end
 	local text = ...;
-	if (strmatch(text, "currency:1901")) then
-		local honorGained = strmatch(text, "currency:.+\]|h|r %D*(%d+)")
-		if (not honorGained) then
+	if (not strmatch(text, "currency:")) then
+		return;
+	end
+	local currencyID = tonumber(strmatch(text, "currency:(%d+):"));
+	local instance = NIT.data.instances[1];
+	if (currencyID == 1901 and instance.type == "bg") then
+		local amount = strmatch(text, "currency:.+\]|h|r%D*(%d+)");
+		if (not amount) then
 			NIT:debug("Honor error:", text);
 			return;
 		end
-		NIT.data.instances[1].honor = NIT.data.instances[1].honor + honorGained;
+		if (not instance.honor) then
+			instance.honor = 0;
+		end
+		instance.honor = instance.honor + amount;
+	else
+		--Don't judge my string matching.
+		local amount = strmatch(text, "currency:.+\]|h|r%D*(%d+)");
+		if (not amount) then
+			NIT:debug("Currency error:", text);
+			return;
+		end
+		local data = C_CurrencyInfo.GetCurrencyInfo(currencyID);
+		if (not instance.currencies) then
+			instance.currencies = {};
+		end
+		if (not instance.currencies[currencyID]) then
+			instance.currencies[currencyID] = {
+				count = 0;
+			};
+		end
+		instance.currencies[currencyID] = {
+			name = data.name,
+			count = instance.currencies[currencyID].count + amount,
+			icon = data.iconFileID,
+		}; --/run NIT.data.instances[1].currencies[395] = {name = "Justice Points", count = 5, icon = 463446}
 	end
 end
 
@@ -1281,6 +1309,7 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 	local level = data.enteredLevel or UnitLevel("player");
 	local timeSpent = "";
 	local timeSpentRaw = 0;
+	local nonClickable;
 	if (data.enteredTime and data.leftTime and data.enteredTime > 0 and data.leftTime > 0) then
 		timeSpentRaw = data.leftTime - data.enteredTime;
 	elseif (data.enteredTime and data.leftTime and data.enteredTime > 0 and (GetServerTime() - data.enteredTime) < 21600
@@ -1404,17 +1433,63 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 	if (NIT.db.global.instanceStatsOutputRep or showAll) then
 		local repText = "";
 		if (data.rep and next(data.rep)) then
+			local count = 0;
 			for k, v in NIT:pairsByKeys(data.rep) do
+				count = count + 1;
 				if (v > 0) then
 					v = "+" .. NIT:commaValue(v);
 				else
 					v = "-" .. NIT:commaValue(v);
 				end
-				repText = repText .. "(" .. k .. " " .. v .. ")";
+				if (count == 1) then
+					repText = repText .. "(" .. k .. " " .. v .. ")";
+				else
+					repText = repText .. " (" .. k .. " " .. v .. ")";
+				end
 			end
 		end
 		if (repText ~= "") then
 			text = text .. pColor .. " " .. L["statsRep"] .. "|r " .. sColor .. repText .. "|r";
+		end
+	end
+	if (not data.isPvp and (NIT.db.global.instanceStatsOutputCurrency or showAll)) then
+		local curText = "";
+		if (data.currencies and next(data.currencies)) then
+			local count = 0;
+			local notPrint;
+			if ((not output and NIT.db.global.instanceStatsOutputWhere == "group" and IsInGroup())
+				or (output == "send" and NIT.db.global.instanceStatsOutputWhere == "group" and IsInGroup())
+				or (output and output ~= "self" and output ~= "send")) then
+				--Check if we're going to print or not to use currency textures.
+				notPrint = true;
+			end
+			for k, v in NIT:pairsByKeys(data.currencies) do
+				count = count + 1;
+				local texture = "";
+				if (v.icon) then
+					texture = "|T" .. v.icon .. ":12:12:0:0|t ";
+				end
+				if (count == 1) then
+					if (notPrint) then
+						curText = curText .. "(+" .. v.count .. " " .. v.name .. ")";
+					else
+						curText = curText .. "+" .. v.count .. texture;
+					end
+				else
+					if (notPrint) then
+						curText = curText .. " (+" .. v.count .. " " .. v.name .. ")";
+					else
+						curText = curText .. " +" .. v.count .. texture;
+					end
+					if (texture ~= "") then
+						--Can't have multiple textures inside a link only 1, so if we have multiple we need to make it unclickable.
+						nonClickable = true;
+					end
+				end
+			end
+		end
+		if (curText ~= "") then
+			text = text .. pColor .. " " .. L["Currency"] .. "|r " .. sColor .. curText .. "|r";
 		end
 	end
 	if (output) then
@@ -1432,7 +1507,7 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 			if (IsInGroup()) then
 	  			NIT:sendGroup("[NIT] " .. NIT:stripColors(prefix.. " " .. text));
 			else
-				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
+				NIT:print(NIT.prefixColor .. prefix.. " " .. text, nil, nil, nonClickable);
 			end
 		elseif (output == "say" or output == "yell" or output == "party" or output == "guild"
 			or output == "officer" or output == "raid") then
@@ -1445,7 +1520,7 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 			end
 			SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), string.upper(output));
 		elseif (output == "self") then
-			NIT:print(NIT.prefixColor .. prefix.. " " .. text);
+			NIT:print(NIT.prefixColor .. prefix.. " " .. text, nil, nil, nonClickable);
 		elseif (output == "send") then
 			--If no channel was specified run the normal output with added prefix.
 			if (NIT.db.global.instanceStatsOutputWhere == "group") then
@@ -1453,13 +1528,13 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 					if (NIT.db.global.showStatsInRaid) then
 		  				SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "RAID");
 		  			elseif (NIT.db.global.printRaidInstead) then
-		  				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
+		  				NIT:print(NIT.prefixColor .. prefix.. " " .. text, nil, nil, nonClickable);
 		  			end
 		  		elseif (IsInGroup()) then
 		  			SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "PARTY");
 				end
 			else
-				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
+				NIT:print(NIT.prefixColor .. prefix.. " " .. text, nil, nil, nonClickable);
 			end
 		end
 	elseif (not NIT.db.global.statsOnlyWhenActivity or ((data.xpFromChat and data.xpFromChat > 0)
@@ -1470,14 +1545,14 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 					if (NIT.db.global.showStatsInRaid) then
 		  				SendChatMessage("[NIT] " .. NIT:stripColors(text), "RAID");
 		  			elseif (NIT.db.global.printRaidInstead) then
-		  				NIT:print(text);
+		  				NIT:print(text, nil, nil, nonClickable);
 		  			end
 		  		elseif (IsInGroup()) then
 		  			SendChatMessage("[NIT] " .. NIT:stripColors(text), "PARTY");
 				end
 			elseif (NIT.db.global.instanceStatsOutput) then
 				--NIT:print(text, nil, "[" .. NIT.lastInstanceName .. "]");
-				NIT:print(text);
+				NIT:print(text, nil, nil, nonClickable);
 			end
 		end)
 	end

@@ -374,8 +374,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.13.1"
-local buildTime = "20240508231431"
+local versionString = "5.13.2"
+local buildTime = "20240530213608"
 
 local flavorFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -403,7 +403,7 @@ WeakAuras.buildType = "pr"
 --@end-experimental@]=====]
 
 --[==[@debug@
-if versionStringFromToc == "5.13.1" then
+if versionStringFromToc == "5.13.2" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   WeakAuras.buildType = "dev"
@@ -423,11 +423,6 @@ end
 WeakAuras.IsClassic = WeakAuras.IsClassicEra
 
 ---@return boolean result
-function WeakAuras.IsWrathClassic()
-  return flavor == 3
-end
-
----@return boolean result
 function WeakAuras.IsCataClassic()
   return flavor == 4
 end
@@ -438,18 +433,8 @@ function WeakAuras.IsRetail()
 end
 
 ---@return boolean result
-function WeakAuras.IsClassicEraOrWrath()
-  return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic()
-end
-
----@return boolean result
-function WeakAuras.IsWrathOrCataOrRetail()
-  return WeakAuras.IsRetail() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
-end
-
----@return boolean result
-function WeakAuras.IsWrathOrCata()
-  return WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
+function WeakAuras.IsClassicOrCata()
+  return WeakAuras.IsClassicEra() or WeakAuras.IsCataClassic()
 end
 
 ---@return boolean result
@@ -458,8 +443,8 @@ function WeakAuras.IsCataOrRetail()
 end
 
 ---@return boolean result
-function WeakAuras.IsClassicEraOrWrathOrCata()
-  return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
+function WeakAuras.IsTWW()
+  return WeakAuras.BuildInfo >= 110000
 end
 
 ---@param ... string

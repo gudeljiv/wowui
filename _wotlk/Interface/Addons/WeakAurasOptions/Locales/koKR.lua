@@ -15,13 +15,11 @@ local L = WeakAuras.L
 	L["%d |4aura:auras; deleted"] = "%d개의 위크오라 삭제됨"
 	L["%d |4aura:auras; modified"] = "%d개의 위크오라 수정됨"
 	L["%d |4aura:auras; with meta data modified"] = "%d개의 위크오라 수정됨 (메타 데이터 포함)"
-	L["%d displays loaded"] = "디스플레이 %d개를 불러옴"
-	L["%d displays not loaded"] = "디스플레이 %d개를 불러오지 않음"
-	L["%d displays on standby"] = "디스플레이 %d개가 대기 상태"
+	L["%d displays loaded"] = "디스플레이 %d개 불러옴"
+	L["%d displays not loaded"] = "디스플레이 %d개 불러오지 않음"
+	L["%d displays on standby"] = "디스플레이 %d개 대기 상태"
 	L["%i auras selected"] = "%i개의 위크오라 선택함"
-	--[[Translation missing --]]
 	L["%i."] = "%i."
-	--[[Translation missing --]]
 	L["%i. %s"] = "%i. %s"
 	L["%s - %i. Trigger"] = "%s - %i. 활성 조건"
 	L["%s - Alpha Animation"] = "%s - 투명도 애니메이션"
@@ -49,7 +47,6 @@ local L = WeakAuras.L
 	L["%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"] = "%s %s, 라인: %d, 빈도: %0.2f, 길이: %d, 두께: %d"
 	L["%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"] = "%s %s, 입자: %d, 빈도: %0.2f, 비율: %0.2f"
 	L["%s %u. Overlay Function"] = "%s %u. 오버레이 함수"
-	--[[Translation missing --]]
 	L["%s (%s)"] = "%s (%s)"
 	L["%s Alpha: %d%%"] = "%s 투명도: %d%%"
 	L["%s Color"] = "%s 색상"
@@ -105,22 +102,22 @@ local L = WeakAuras.L
 • |cffffff00Multi-target|r attempts to use the Combat Log events, rather than unitID, to track affected units.
 |cffff0000Note|r: Without a direct relationship to actual unitIDs, results may vary.
 
-|cffffff00*|r Yellow Unit settings can match multiple units and will default to being active even while no affected units are found without a Unit Count or Match Count setting.]=] ] = [=[• |cff00ff00플레이어|r, |cff00ff00대상|r, |cff00ff00주시대상|r 및 |cff00ff00소환수|r는 개별 유닛ID에 직접 대응합니다.
+|cffffff00*|r Yellow Unit settings can match multiple units and will default to being active even while no affected units are found without a Unit Count or Match Count setting.]=] ] = [=[• |cff00ff00플레이어|r, |cff00ff00대상|r, |cff00ff00주시대상|r 및 |cff00ff00소환수|r는 각각의 유닛ID에 직접 대응됩니다.
 
-• |cff00ff00특정 유닛|r으로 감시할 유효한 특정 유닛ID를 제공할 수 있습니다.
+• |cff00ff00유닛 직접 지정|r으로 추적할 유닛ID를 직접 입력할 수 있습니다.
 
-|cffff0000참고|r: 게임은 모든 유효한 유닛ID에 대해 이벤트를 발생시키지 않으므로 이 활성 조건으로 일부를 추적할 수 없습니다.
+|cffff0000참고|r: 게임에선 모든 유닛ID에 대해 이벤트를 발생시키지 않으며 그럴 경우 이 활성 조건에서 추적되지 않습니다.
 
-• |cffffff00파티|r, |cffffff00공격대|r, |cffffff00우두머리|r, |cffffff00투기장|r 및 |cffffff00이름표|r는 해당 유닛ID 여러 개와 일치할 수 있습니다.
+• |cffffff00파티|r, |cffffff00공격대|r, |cffffff00우두머리|r, |cffffff00투기장|r 및 |cffffff00이름표|r는 대응되는 유닛ID가 한 개 이상 일치할 수 있습니다.
 
-• |cffffff00스마트 그룹|r은 현재 그룹 유형에 맞게 조정되어 혼자일 때는 "플레이어"만 파티에서는 "파티" 유닛("플레이어" 포함), 공격대에서는 "공격대" 유닛과 일치합니다.
+• |cffffff00스마트 그룹|r은 현재 그룹 종류에 맞춰 조정되는데 그룹 상태가 아닐땐 "player", 파티일때 "party" 유닛 ("player" 포함), 공격대일때 "raid" 유닛으로 맞춰집니다.
 
-• |cffffff00다중 대상|r은 영향을 받는 유닛을 추적하기 위해 유닛ID가 아닌 전투 기록 이벤트를 사용하려고 시도합니다.
+• |cffffff00다중 대상|r은 오라에 걸린 유닛 추적을 위해 유닛ID 대신 전투 기록 이벤트를 사용하려고 합니다.
 
-|cffff0000참고|r: 실제 유닛ID와 직접적인 관계가 없으면 결과가 다를 수 있습니다.
+|cffff0000참고|r: 실제 유닛ID와 직접적인 관련이 없으며 다른 결과가 나올 수 있습니다.
 
 
-|cffffff00*|r 노란색 유닛 설정은 여러 유닛과 일치할 수 있으며 유닛 수 또는 일치 횟수 설정이 안된 상태에서 오라에 걸린 유닛이 없을 때도 기본으로 활성화됩니다.]=]
+|cffffff00*|r 노란색 유닛 설정은 한 개 이상의 유닛과 일치할 수 있으며 유닛 수나 조건 일치 개수 설정이 안되있고 오라에 걸린 유닛이 없을 때도 기본으로 활성화됩니다.]=]
 	L["A 20x20 pixels icon"] = "20x20 픽셀 아이콘"
 	L["A 32x32 pixels icon"] = "32x32 픽셀 아이콘"
 	L["A 40x40 pixels icon"] = "40x40 픽셀 아이콘"
@@ -153,16 +150,14 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["Affected Unit Filters and Info"] = "오라에 걸린 유닛의 필터와 정보"
 	L["Align"] = "정렬"
 	L["Alignment"] = "정렬"
-	L["All of"] = "다음 중 모두를 만족하면"
+	L["All of"] = "모두 만족"
 	L["Allow Full Rotation"] = "전체 회전 허용"
 	L["Alpha"] = "투명도"
 	L["Anchor"] = "고정 지점"
 	L["Anchor Point"] = "고정 지점"
 	L["Anchored To"] = "고정 위치:"
 	L["And "] = "And"
-	--[[Translation missing --]]
-	L["and"] = "and"
-	--[[Translation missing --]]
+	L["and"] = "그리고"
 	L["and %s"] = "and %s"
 	L["and aligned left"] = ", 왼쪽 정렬"
 	L["and aligned right"] = ", 오른쪽 정렬"
@@ -187,7 +182,7 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["Animation Sequence"] = "애니메이션 순서"
 	L["Animation Start"] = "애니메이션 시작"
 	L["Animations"] = "애니메이션"
-	L["Any of"] = "다음 중 하나를 만족하면"
+	L["Any of"] = "아무거나 만족"
 	L["Apply Template"] = "견본 적용"
 	L["Arcane Orb"] = "비전 구슬"
 	L["At a position a bit left of Left HUD position."] = "좌측 HUD 위치보다 약간 왼쪽에 위치시킵니다."
@@ -249,15 +244,15 @@ Off Screen]=] ] = "위크오라가 화면 밖에 있습니다"
 	L["Center"] = "중앙"
 	L["Chat Message"] = "대화 메시지"
 	L["Chat with WeakAuras experts on our Discord server."] = "우리의 디스코드 서버에서 WeakAuras 전문가들과 대화하세요."
-	L["Check On..."] = "확인 시기..."
+	L["Check On..."] = "검사 기준..."
 	L["Check out our wiki for a large collection of examples and snippets."] = "방대한 예제와 스니펫 모음을 보려면 위키를 확인하세요."
-	L["Children:"] = "자식:"
+	L["Children:"] = "자식 위크오라:"
 	L["Choose"] = "선택"
 	L["Class"] = "직업"
 	L["Clear Debug Logs"] = "디버그 로그 지우기"
 	L["Clear Saved Data"] = "저장된 데이터 지우기"
 	L["Clip Overlays"] = "오버레이 자르기"
-	L["Clipped by Progress"] = "진행도에 맞춰서 잘림"
+	L["Clipped by Progress"] = "진행도에 따라 잘림"
 	L["Close"] = "닫기"
 	L["Code Editor"] = "코드 편집기"
 	L["Collapse"] = "접기"
@@ -280,7 +275,7 @@ Off Screen]=] ] = "위크오라가 화면 밖에 있습니다"
 	L["Conditions"] = "조건"
 	L["Configure what options appear on this panel."] = "이 패널에 나오는 옵션을 구성합니다."
 	L["Constant Factor"] = "고정 요소"
-	L["Control-click to select multiple displays"] = "Ctrl+클릭 - 여러 디스플레이 선택"
+	L["Control-click to select multiple displays"] = "Ctrl+클릭으로 여러 디스플레이 선택"
 	L["Controls the positioning and configuration of multiple displays at the same time"] = "여러 디스플레이의 위치와 설정을 동시에 제어합니다"
 	L["Convert to..."] = "변환하기..."
 	L["Cooldown Numbers might be added by WoW. You can configure these in the game settings."] = "WoW 자체적으로 추가한 쿨타임 숫자입니다. 게임 설정에서 켤 수 있습니다."
@@ -337,12 +332,12 @@ UNIT_POWER_UPDATE:player, UNIT_AURA:nameplate:group PLAYER_TARGET_CHANGED CLEU:S
 	L["Debuff Type"] = "디버프 종류"
 	L["Debug Log"] = "디버그 로그"
 	L["Debug Log:"] = "디버그 로그:"
-	L["Default"] = "기본"
+	L["Default"] = "기본값"
 	L["Default Color"] = "기본 색상"
 	L["Delay"] = "지연 시간"
 	L["Delete"] = "삭제"
 	L["Delete all"] = "모두 삭제"
-	L["Delete children and group"] = "자식과 그룹 삭제"
+	L["Delete children and group"] = "자식 위크오라와 그룹 삭제"
 	L["Delete Entry"] = "항목 삭제"
 	L["Deleting auras: "] = "위크오라 삭제중: "
 	L["Desaturate"] = "흑백"
@@ -353,7 +348,7 @@ UNIT_POWER_UPDATE:player, UNIT_AURA:nameplate:group PLAYER_TARGET_CHANGED CLEU:S
 	L["Disabled"] = "비활성화됨"
 	L["Disallow Entry Reordering"] = "내역 재정렬 거부"
 	L["Display"] = "디스플레이"
-	L["Display Name"] = "디스플레이 이름"
+	L["Display Name"] = "표시할 이름"
 	L["Display Text"] = "텍스트 표시"
 	L["Displays a text, works best in combination with other displays"] = "텍스트를 표시합니다. 다른 디스플레이와 조합할 때 가장 잘 작동합니다."
 	L["Distribute Horizontally"] = "가로로 퍼뜨리기"
@@ -390,9 +385,7 @@ UNIT_POWER_UPDATE:player, UNIT_AURA:nameplate:group PLAYER_TARGET_CHANGED CLEU:S
 	L["Ease type"] = "지연 방식"
 	L["Edge"] = "모서리"
 	L["eliding"] = "생략"
-	--[[Translation missing --]]
 	L["Else If"] = "Else If"
-	--[[Translation missing --]]
 	L["Else If %s"] = "Else If %s"
 	L["Enable \"Edge\" part of the overlay"] = "오버레이의 \"경계선\" 부분을 켭니다"
 	L["Enable \"swipe\" part of the overlay"] = "오버레이의 \"회전\" 부분 켜기"
@@ -549,9 +542,7 @@ Can use \ to escape -.]=] ] = [=[필터 형식: '이름', '이름-서버', '-서
 	L["Icon Position"] = "아이콘 위치"
 	L["Icon Settings"] = "아이콘 설정"
 	L["Icon Source"] = "아이콘 출처"
-	--[[Translation missing --]]
 	L["If"] = "If"
-	--[[Translation missing --]]
 	L["If %s"] = "If %s"
 	L["If checked, then the combo box in the User settings will be sorted."] = "체크하면 사용자 설정의 콤보 박스가 정렬됩니다."
 	L["If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."] = "체크하면 넓은 편집툴이 표시됩니다. 많은 양의 텍스트를 입력 할 때 유용합니다."
@@ -614,7 +605,6 @@ Can use \ to escape -.]=] ] = [=[필터 형식: '이름', '이름-서버', '-서
 	L["Left HUD position"] = "좌측 HUD 위치"
 	L["Length"] = "길이"
 	L["Length of |cFFFF0000%s|r"] = "|cFFFF0000%s|r 길이"
-	--[[Translation missing --]]
 	L["LibSharedMedia"] = "LibSharedMedia"
 	L["Limit"] = "제한"
 	L["Line"] = "줄"
@@ -682,11 +672,11 @@ Can use \ to escape -.]=] ] = [=[필터 형식: '이름', '이름-서버', '-서
 	L["New Aura"] = "새 위크오라"
 	L["New Template"] = "새 템플릿"
 	L["New Value"] = "새 값"
-	L["No Children"] = "자식 없음"
+	L["No Children"] = "자식 위크오라 없음"
 	L["No Logs saved."] = "저장된 기록이 없습니다."
 	L["None"] = "없음"
 	L["Not a table"] = "테이블이 아님"
-	L["Not all children have the same value for this option"] = "이 옵션에선 모든 자식이 같은 값을 갖지 않습니다"
+	L["Not all children have the same value for this option"] = "모든 자식 위크오라가 이 옵션에 같은 값을 갖지 않습니다"
 	L["Not Loaded"] = "불러오지 않음"
 	L["Note: Automated Messages to SAY and YELL are blocked outside of Instances."] = "참고: 일반 대화 및 외치기에 대한 자동화된 메시지는 인스턴스 외부에서 차단됩니다."
 	L["Note: This progress source does not provide a total value/duration. A total value/duration must be set via \"Set Maximum Progress\""] = "참고: 이 진행 출처는 전체 값/지속 시간을 제공하지 않습니다. 전체 값/지속 시간을 \"최대 진행 설정\" 옵션을 통해 반드시 설정해야 합니다"
@@ -729,7 +719,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Option Type"] = "옵션 종류"
 	L["Options will open after combat ends."] = "전투가 끝난 후 옵션이 열립니다."
 	L["or"] = "또는"
-	L["or %s"] = "또는 %s"
+	L["or %s"] = "or %s"
 	L["Orange Rune"] = "주황색 룬"
 	L["Orientation"] = "진행 방향"
 	L["Outer"] = "외부"
@@ -796,7 +786,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Right"] = "오른쪽"
 	L["Right 2 HUD position"] = "우측 2 HUD 위치"
 	L["Right HUD position"] = "우측 HUD 위치"
-	L["Right-click for more options"] = "우클릭 - 추가 옵션"
+	L["Right-click for more options"] = "우클릭으로 여러 옵션 설정"
 	L["Rotate"] = "회전"
 	L["Rotate In"] = "시계방향 회전"
 	L["Rotate Out"] = "반시계방향 회전"
@@ -826,7 +816,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Shadow Color"] = "그림자 색상"
 	L["Shadow X Offset"] = "그림자 X 위치 조정"
 	L["Shadow Y Offset"] = "그림자 Y 위치 조정"
-	L["Shift-click to create chat link"] = "Shift+클릭 - 대화 링크 만들기"
+	L["Shift-click to create chat link"] = "Shift-클릭으로 대화창 링크 생성"
 	L["Show \"Edge\""] = "\"경계\" 표시"
 	L["Show \"Swipe\""] = "\"회전\" 표시"
 	L["Show and Clone Settings"] = "표시 및 복제 설정"
@@ -842,9 +832,9 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Show On"] = "표시 조건"
 	L["Show Spark"] = "섬광 표시"
 	L["Show Text"] = "텍스트 표시"
-	L["Show this group's children"] = "이 그룹의 자식 표시"
+	L["Show this group's children"] = "이 그룹의 자식 위크오라 표시"
 	L["Show Tick"] = "틱 표시"
-	L["Shows a 3D model from the game files"] = "게임 파일내 3D 모델을 추출해서 표시"
+	L["Shows a 3D model from the game files"] = "게임 파일내 3D 모델을 표시합니다"
 	L["Shows a border"] = "테두리 표시"
 	L["Shows a custom texture"] = "맞춤형 텍스쳐를 표시합니다"
 	L["Shows a glow"] = "반짝임 표시"
@@ -853,7 +843,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Shows a spell icon with an optional cooldown overlay"] = "주문 아이콘을 표시하고 쿨타임 애니메이션을 설정합니다"
 	L["Shows a stop motion texture"] = "스톱 모션 텍스쳐를 표시합니다"
 	L["Shows a texture that changes based on duration"] = "지속시간에 따라 변화하는 텍스쳐를 표시합니다"
-	L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"] = "한 줄 이상의 텍스트를 표시하며, 진행 상태나 중첩과 같은 동적 정보를 넣을 수 있습니다"
+	L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"] = "진행 상태나 중첩같은 동적 정보가 포함된 한 줄 이상의 텍스트를 표시합니다"
 	L["Simple"] = "간편 제작"
 	L["Size"] = "크기"
 	L["Slant Amount"] = "기울기 양"
@@ -884,8 +874,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Spark Settings"] = "섬광 설정"
 	L["Spark Texture"] = "섬광 텍스쳐"
 	L["Specialization"] = "전문화"
-	L["Specific Currency ID"] = "특정 화폐 ID"
-	L["Specific Unit"] = "특정 유닛"
+	L["Specific Currency ID"] = "화폐 ID 지정"
+	L["Specific Unit"] = "유닛 직접 지정"
 	L["Spell ID"] = "주문 ID"
 	L["Spell Selection Filters"] = "주문 선택 필터"
 	L["Stack Count"] = "중첩 횟수"
@@ -929,8 +919,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = "애니메이션의 지속 시간(초)입니다. 종료 애니메이션은 디스플레이가 보통 숨겨질 때까지 재생을 시작하지 않습니다."
 	L["The group and all direct children will share the same base frame level."] = "이 그룹과 모든 직속 자식 위크오라는 같은 기반의 프레임 레벨을 공유합니다."
 	L["The type of trigger"] = "활성 조건 종류"
-	--[[Translation missing --]]
-	L["Then "] = "Then "
+	L["Then "] = "Then"
 	L["Thickness"] = "굵기"
 	L["This adds %raidMark as text replacements."] = "이 옵션을 켜면 텍스트에서 %raidMark 대체 코드가 추가됩니다."
 	L["This adds %role, %roleIcon as text replacements. Does nothing if the unit is not a group member."] = "이 옵션은 텍스트 대체 코드에 %role, %roleIcon을 추가합니다. 유닛이 같은 그룹에 있지 않으면 작동하지 않습니다."

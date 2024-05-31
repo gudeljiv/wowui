@@ -1,5 +1,3 @@
--- Part of ReforgeLite by d07.RiV (Iroared)
--- All rights reserved
 local _, addonTable = ...
 local L = ReforgeLiteLocale
 
@@ -167,7 +165,7 @@ local HitCapSpell = {
   points = {
     {
       method = AtLeast,
-      preset = SpellHitCap
+      preset = SpellHitCap,
     }
   }
 }
@@ -407,48 +405,104 @@ ReforgeLite.presets = {
   },
   ["MAGE"] = {
     ["Arcane"] = {
-      weights = {
-        0, 0, 0, 200, 130, 150, 0, 140
-      },
-      caps = {
-        {
-          stat = StatHit,
-          points = {
-            {
-              method = AtLeast,
-              preset = SpellHitCap,
+      [PLAYER_DIFFICULTY1] = {
+        weights = {
+          0, 0, 0, 200, 40, 160, 0, 120
+        },
+        caps = {
+          HitCapSpell,
+          {
+            stat = StatHaste,
+            points = {
+              {
+                method = AtLeast,
+                value = addonTable.playerRace == "Goblin" and 1623 or 1767,
+                after = 80,
+              },
             },
           },
         },
-        {
-          stat = StatHaste,
-          points = {
-            {
-              preset = 1,
-              value = 1767,
-              after = 120,
+      },
+      ["T11 4pc"] = {
+        weights = {
+          0, 0, 0, 200, 40, 160, 0, 120
+        },
+        caps = {
+          HitCapSpell,
+          {
+            stat = StatHaste,
+            points = {
+              {
+                method = AtLeast,
+                value = addonTable.playerRace == "Goblin" and 311 or 443,
+                after = 80,
+              },
             },
           },
         },
       },
     },
     ["Fire"] = {
-      weights = {
-        0, 0, 0, 200, 150, 145, 0, 120
+      ["15% " .. STAT_HASTE] = {
+        weights = {
+          0, 0, 0, 133, 200, 66, 0, 0
+        },
+        caps = {
+          HitCapSpell,
+          {
+            stat = StatHaste,
+            points = {
+              {
+                method = AtLeast,
+                value = addonTable.playerRace == "Goblin" and 678 or 813,
+                after = 80,
+              },
+            },
+          },
+        },
       },
-      caps = CasterCaps,
+      ["25% " .. STAT_HASTE] = {
+        weights = {
+          0, 0, 0, 133, 200, 66, 0, 0
+        },
+        caps = {
+          HitCapSpell,
+          {
+            stat = StatHaste,
+            points = {
+              {
+                method = AtLeast,
+                value = addonTable.playerRace == "Goblin" and 1858 or 2005,
+                after = 80,
+              },
+            },
+          },
+        },
+      },
     },
     ["Frost"] = {
       weights = {
         0, 0, 0, 200, 180, 140, 0, 130
       },
-      caps = CasterCaps,
+      caps = {
+        HitCapSpell,
+        {
+          stat = StatCrit,
+          points = {
+            {
+              method = AtMost,
+              value = addonTable.playerRace == "Worgen" and 2922 or 3101,
+              after = 100,
+            }
+          }
+        }
+      },
     },
   },
   ["PALADIN"] = {
     ["Holy"] = {
       weights = {
-        150, 0, 0, 0, 100, 120, 0, 110
+        160, 0, 0, 0, 80, 200, 0, 120
       },
     },
     ["Protection"] = {
@@ -699,13 +753,8 @@ ReforgeLite.presets = {
           points = {
             {
               method = AtLeast,
-              preset = MeleeHitCap,
-              after = 200,
-            },
-            {
-              method = AtLeast,
               preset = SpellHitCap,
-              after = 100,
+              after = 50,
             },
             {
               preset = MeleeDWHitCap,
@@ -730,7 +779,7 @@ ReforgeLite.presets = {
     },
   },
   ["WARLOCK"] = {
-    ["Affliction"] = {
+    ["Affliction/Destruction"] = {
       weights = {
         0, 0, 0, 200, 140, 160, 0, 120
       },
@@ -738,13 +787,7 @@ ReforgeLite.presets = {
     },
     ["Demonology"] = {
       weights = {
-        0, 0, 0, 200, 120, 140, 0, 160
-      },
-      caps = CasterCaps,
-    },
-    ["Destruction"] = {
-      weights = {
-        0, 0, 0, 200, 140, 160, 0, 120
+        0, 0, 0, 200, 120, 160, 0, 140
       },
       caps = CasterCaps,
     },
@@ -752,27 +795,9 @@ ReforgeLite.presets = {
   ["WARRIOR"] = {
     ["Arms"] = {
       weights = {
-        0, 0, 0, 200, 150, 100, 130, 120
+        0, 0, 0, 200, 150, 100, 200, 120
       },
-      caps = {
-        {
-          stat = StatHit,
-          points = {
-            {
-              method = AtLeast,
-              preset = MeleeHitCap,
-            },
-          },
-        },
-        {
-          stat = StatExp,
-          points = {
-            {
-              preset = ExpSoftCap,
-            },
-          },
-        },
-      },
+      caps = MeleeCaps
     },
     ["Fury"] = {
       [GetSpellInfo(46917)] = { -- Titan's Grip

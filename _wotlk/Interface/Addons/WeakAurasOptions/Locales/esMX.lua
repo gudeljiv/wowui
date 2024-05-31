@@ -384,10 +384,8 @@ Off Screen]=] ] = "Aura está fuera de la pantalla"
 	L["Fade"] = "Apagar"
 	L["Fade In"] = "Fundido de entrada"
 	L["Fade Out"] = "Fundido de salida"
-	--[[Translation missing --]]
-	L["Fadeout Sound"] = "Fadeout Sound"
-	--[[Translation missing --]]
-	L["Fadeout Time (seconds)"] = "Fadeout Time (seconds)"
+	L["Fadeout Sound"] = "Sonido de desvanecimiento"
+	L["Fadeout Time (seconds)"] = "Tiempo de desvanecimiento (segundos)"
 	L["False"] = "Falso"
 	L["Fetch Affected/Unaffected Names and Units"] = "Obtener nombres y unidades afectados / no afectados"
 	L["Fetch Raid Mark Information"] = "Obtener información sobre la marca de banda"
@@ -557,7 +555,6 @@ Con |cFF00CC00>= 0|r se activará siempre.]=]
 	L["Left HUD position"] = "Posición de HUD izquierda"
 	L["Length"] = "Longitud"
 	L["Length of |cFFFF0000%s|r"] = "Longitud de |cFFFF0000%s|r"
-	--[[Translation missing --]]
 	L["LibSharedMedia"] = "LibSharedMedia"
 	L["Limit"] = "Límite"
 	L["Line"] = "Línea"
@@ -834,10 +831,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = "Ocurrencia d
 	L["Stop Sound"] = "Detener sonido"
 	L["Sub Elements"] = "Subelementos"
 	L["Sub Option %i"] = "Subopción %i"
-	--[[Translation missing --]]
-	L["Subevent"] = "Subevent"
-	--[[Translation missing --]]
-	L["Subevent Suffix"] = "Subevent Suffix"
+	L["Subevent"] = "Subevento"
+	L["Subevent Suffix"] = "Sufijo de subevento"
 	L["Supports multiple entries, separated by commas"] = "Supports multiple entries, separated by commas"
 	L["Swipe Overlay Settings"] = "Ajustes de superposición de barrido"
 	L["Templates could not be loaded, the addon is %s"] = "No se pudieron cargar las plantillas, el addon es %s"
@@ -850,8 +845,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = "Ocurrencia d
 	L["Texture Info"] = "Información de textura"
 	L["Texture Picker"] = "Selector de textura"
 	L["Texture Rotation"] = "Rotación de textura"
-	--[[Translation missing --]]
-	L["Texture Selection Mode"] = "Texture Selection Mode"
+	L["Texture Selection Mode"] = "Modo de selección de textura"
 	L["Texture Settings"] = "Ajustes de textura"
 	L["Texture Wrap"] = "Envoltura de textura"
 	L["Texture X Offset"] = "Desplazmiento X de textura"

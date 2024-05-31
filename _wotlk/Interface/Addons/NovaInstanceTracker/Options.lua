@@ -538,6 +538,14 @@ NIT.options = {
 			get = "getInstanceStatsOutputHK",
 			set = "setInstanceStatsOutputHK",
 		},
+		instanceStatsOutputCurrency = {
+			type = "toggle",
+			name = L["instanceStatsOutputCurrencyTitle"],
+			desc = L["instanceStatsOutputCurrencyDesc"],
+			order = 89,
+			get = "getInstanceStatsOutputCurrency",
+			set = "setInstanceStatsOutputCurrency",
+		},
 		trimDataHeader = {
 			type = "header",
 			name = L["trimDataHeaderDesc"],
@@ -727,6 +735,7 @@ NIT.optionDefaults = {
 		instanceStatsOutputRep = true,
 		instanceStatsOutputHK = true,
 		instanceStatsOutputXpPerHour = true,
+		instanceStatsOutputCurrency = true,
 		lastVersionMsg = 0,
 		moneyString = "textures",
 		instanceStatsOutput = true,
@@ -1148,6 +1157,14 @@ end
 
 function NIT:getInstanceStatsOutputHK(info)
 	return self.db.global.instanceStatsOutputHK;
+end
+
+function NIT:setInstanceStatsOutputCurrency(info, value)
+	self.db.global.instanceStatsOutputCurrency = value;
+end
+
+function NIT:getInstanceStatsOutputCurrency(info)
+	return self.db.global.instanceStatsOutputCurrency;
 end
 
 --Instance window dimensions.

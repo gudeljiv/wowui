@@ -1,5 +1,3 @@
--- Part of ReforgeLite by d07.RiV (Iroared)
--- All rights reserved
 local _, addonTable = ...
 local REFORGE_COEFF = 0.4
 local REFORGE_CHEAT = 5
@@ -116,7 +114,7 @@ local itemBonuses = {
 
 function ReforgeLite:GetBuffBonuses ()
   local cur_buffs = {GetPlayerBuffs()}
-  local cur_strength = UnitStat ("player", 1)
+  local cur_strength = UnitStat ("player", LE_UNIT_STAT_STRENGTH)
   local strength = cur_strength
   local extra_strength = 0
   local dodge_bonus = 0
@@ -213,10 +211,11 @@ function ReforgeLite:UpdateMethodStats (method)
   end
   if method.tankingModel then
     local dodge_bonus, parry_bonus, mastery_bonus = self:GetBuffBonuses ()
-    method.orig_stats = {}
-    method.orig_stats[self.STATS.DODGE] = method.stats[self.STATS.DODGE]
-    method.orig_stats[self.STATS.PARRY] = method.stats[self.STATS.PARRY]
-    method.orig_stats[self.STATS.MASTERY] = method.stats[self.STATS.MASTERY]
+    method.orig_stats = {
+      [self.STATS.DODGE] = method.stats[self.STATS.DODGE],
+      [self.STATS.PARRY] = method.stats[self.STATS.PARRY],
+      [self.STATS.MASTERY] = method.stats[self.STATS.MASTERY],
+    }
     method.stats[self.STATS.DODGE] = method.stats[self.STATS.DODGE] + dodge_bonus
     method.stats[self.STATS.PARRY] = method.stats[self.STATS.PARRY] + parry_bonus
     method.stats[self.STATS.MASTERY] = method.stats[self.STATS.MASTERY] + mastery_bonus
@@ -243,7 +242,7 @@ function ReforgeLite:FinalizeReforge (data)
   for i = 1, #method.items do
     method.items[i].reforge = nil
     if method.items[i].src and method.items[i].dst then
-      local amount = floor (method.items[i].stats[method.items[i].src] * REFORGE_COEFF)
+      -- local amount = floor (method.items[i].stats[method.items[i].src] * REFORGE_COEFF)
       for j = 1, #self.reforgeTable do
         if self.reforgeTable[j][1] == method.items[i].src and self.reforgeTable[j][2] == method.items[i].dst then
           method.items[i].reforge = j
@@ -261,7 +260,7 @@ function ReforgeLite:ResetMethod ()
   for i = 1, #self.itemData do
     method.items[i] = {}
     local item = self.itemData[i].item
-    local stats = (item and GetItemStats (item) or {})
+    -- local stats = (item and GetItemStats (item) or {})
     local reforge = (item and self:GetReforgeID (self.itemData[i].slotId))
     if reforge then
       method.items[i].reforge = reforge
@@ -341,10 +340,7 @@ function ReforgeLite:MakeReforgeOption (item, data, src, dst)
       dscore = dscore + data.weights[dst] * amount
     end
   end
-  local opt = {d1 = delta1, d2 = delta2, score = dscore}
-  opt["src"] = src
-  opt["dst"] = dst
-  return opt
+  return {d1 = delta1, d2 = delta2, score = dscore, src = src, dst = dst}
 end
 function ReforgeLite:GetItemReforgeOptions (item, data, slot)
   if self:IsItemLocked (slot) then

@@ -1,70 +1,88 @@
-tag cbf60473f2a8ff07e7b37fbf5c1a4ed974e3c3ed v1.3
+tag 1896945fad6d3ea7128a9b022f7b93014cbbe10a v1.4
 Author:	skyler-code <skylerh15@github.com>
-Date:	Wed May 29 21:22:32 2024 -0500
+Date:	Fri May 31 01:15:45 2024 -0500
 
-commit 346ae12511c1b0329ea1cc665289c32185736bb1
+commit ee4bedcc6f28f87301fcf1f1825afa3a815b1db0
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 20:51:11 2024 -0500
+Date:   Fri May 31 01:13:01 2024 -0500
 
-    fallbackValue for editbox
+    Finally fixed spirit detection
 
-commit d4cc35b19c5bd6256a5d4e72248f696a2527b935
+commit c6fa24dd098b0e00f42f5fae749315be4d4991a9
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 20:46:50 2024 -0500
+Date:   Fri May 31 00:03:30 2024 -0500
 
-    Moved Target Level settings to stat weights category
+    duplicate declaration
 
-commit 57bf9480e6abf0d11880e7944d1fbd58c0b86c8c
+commit 246e5805fd84d2d08890ed10c70da6074c162736
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 18:36:31 2024 -0500
+Date:   Thu May 30 23:42:28 2024 -0500
 
-    negative caps can be confusing
+    reverting https://github.com/skyler-code/ReforgeLite/commit/98e31c4163e5ee2415c1456e351e1862ebdc2b2b
 
-commit f322ead32a8a45b103fcb86bf280c65bc0fd9d92
+commit 2f80cf18f49cb23cb52ed956074c9bcedf5e5592
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 17:56:31 2024 -0500
+Date:   Thu May 30 15:58:25 2024 -0500
 
-    masterfrost preset
+    some cleanup
 
-commit b2d45c286a5dbc2f36a70e0081fa74284150ca73
+commit 4f4afa716cdf9079d1649bdeff14aab772a7c511
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 16:26:03 2024 -0500
+Date:   Thu May 30 15:58:15 2024 -0500
 
-    removing throttle for now
+    Can now drag items from Output window to Reforge Window
 
-commit 3dffe2ebafb798ca2adbe2d4408f7f90db359cc7
+commit aec2e0b051d2f5201ad814e9d23fd736e487e1be
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 10:03:04 2024 -0500
+Date:   Thu May 30 15:57:29 2024 -0500
 
-    ReforgeFrameIsVisible function
+    removing magic numbers for UnitStat
 
-commit cfa59b2273d0657b19cd0d878383a10910ceb1f3
+commit bfa31f7d435937172404091d29bc456d557aea92
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed May 29 09:27:37 2024 -0500
+Date:   Thu May 30 14:07:05 2024 -0500
 
-    updated blood dk presets
+    enhance preset
 
-commit dab206bdcd408278ad0e4474018aec65a098b05b
+commit b861a4a5b35a80412e6f47793222b4b1e755e029
 Author: skyler-code <skylerh15@github.com>
-Date:   Tue May 28 04:06:28 2024 -0500
+Date:   Thu May 30 13:08:33 2024 -0500
 
-    tables should be accessed by the proper key instead of translated in the meta
+    lock presets
 
-commit eab1b8bc736b3dfe3f9150e1f8677656435a835c
+commit e1282a39ed4f7c83b08145d26e1e9e6cffe68ff0
 Author: skyler-code <skylerh15@github.com>
-Date:   Tue May 28 04:01:10 2024 -0500
+Date:   Thu May 30 12:57:01 2024 -0500
 
-    removing hardcoded values
+    hpal preset
 
-commit 98e31c4163e5ee2415c1456e351e1862ebdc2b2b
+commit db921ac5e2d59b9b2c673ec0857b33b22aea4fb0
 Author: skyler-code <skylerh15@github.com>
-Date:   Tue May 28 04:00:56 2024 -0500
+Date:   Thu May 30 12:44:11 2024 -0500
 
-    Restoring old reforgeID logic to prevent players from getting stuck mid-reforge
+    frost mage preset lol
 
-commit 0469a7f94f528237728945a8a6958eaccadd5873
+commit 674bafcc5256596a6ef69f3e0e9c6cae9c1f0aba
 Author: skyler-code <skylerh15@github.com>
-Date:   Mon May 27 21:50:52 2024 -0500
+Date:   Thu May 30 12:35:52 2024 -0500
 
-    Set Speed Slider to default to 1 since it's 2024 now
+    fire preset
+
+commit 85db5e434b44ce9bb3299618ca93bce5d957d62f
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu May 30 12:24:48 2024 -0500
+
+    arcane weights
+
+commit dab1db1f2c1084a4162bbb0424acd4c9483c8ece
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu May 30 11:02:57 2024 -0500
+
+    updated arms preset
+
+commit b1ace8521ff6998fa1673f6721cb022ece10ad7a
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu May 30 11:02:36 2024 -0500
+
+    cleaned up whatever this was
 
