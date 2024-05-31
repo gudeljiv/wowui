@@ -188,3 +188,7 @@ Immersion: enabled
 ConsolePort: enabled
 ACP: enabled
 Immersion_ExtraFade: enabled
+Blizzard_CombatText: enabled
+LittleWigs_Cataclysm: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled

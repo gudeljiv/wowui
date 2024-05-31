@@ -56,3 +56,11 @@ Drift: disabled
 TomTom: disabled
 Immersion: enabled
 Immersion_ExtraFade: enabled
+BigWigs_Core: disabled
+BigWigs_Options: disabled
+BigWigs_Plugins: disabled
+Blizzard_CombatText: enabled
+LittleWigs_Cataclysm: disabled
+BigWigs: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled

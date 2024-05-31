@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 7,
 					["tipo"] = 2,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
@@ -22,7 +22,9 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 137098.002008,
 							["spec"] = 262,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-057D0C29",
 							["damage_from"] = {
@@ -30,22 +32,19 @@ _detalhes_database = {
 							["targets"] = {
 								["Stonecore Flayer"] = 137098,
 							},
-							["colocacao"] = 1,
-							["aID"] = "4476-057D0C29",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993442,
+							["aID"] = "4476-057D0C29",
 							["nome"] = "Ruksz-Gehennas",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[51505] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 19480,
 										},
@@ -66,14 +65,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 19480,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[88767] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10880,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 20853,
 										},
@@ -94,14 +93,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 10880,
 										["r_amt"] = 0,
 									},
 									[8042] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3412,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 6515,
 										},
@@ -122,14 +121,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 3412,
 										["r_amt"] = 0,
 									},
 									[421] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7480,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 76251,
 										},
@@ -150,14 +149,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 19400,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 7480,
 										["r_amt"] = 0,
 									},
 									[8050] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1197,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 5984,
 										},
@@ -178,24 +177,24 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 2393,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 1197,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 10623.63440586619,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993441,
 							["damage_taken"] = 0.002008,
 							["start_time"] = 1716993431,
 							["delay"] = 0,
-							["last_event"] = 1716993441,
+							["last_dps"] = 10623.63440586619,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008008,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
@@ -203,7 +202,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 123831.008008,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-02BB4683",
 							["damage_from"] = {
@@ -213,22 +214,20 @@ _detalhes_database = {
 								["Emerald Shale Hatchling"] = 0,
 								["Stonecore Flayer"] = 123831,
 							},
-							["colocacao"] = 2,
-							["aID"] = "4465-02BB4683",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993442,
+							["totalabsorbed"] = 0.008008,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2051,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 13568,
 										},
@@ -249,14 +248,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 2802,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 2051,
 										["r_amt"] = 0,
 									}, -- [1]
 									[31935] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7499,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 14931,
 										},
@@ -277,42 +276,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 7499,
 										["r_amt"] = 0,
 									},
-									[53595] = {
-										["c_amt"] = 1,
+									[31804] = {
+										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 699,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Stonecore Flayer"] = 2245,
+											["Stonecore Flayer"] = 22755,
 										},
-										["n_total"] = 1250,
-										["n_min"] = 551,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 2245,
-										["c_max"] = 995,
-										["id"] = 53595,
+										["counter"] = 2,
+										["total"] = 22755,
+										["c_max"] = 13694,
+										["id"] = 31804,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 995,
+										["c_min"] = 9061,
 										["successful_casted"] = 0,
-										["c_total"] = 995,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["c_total"] = 22755,
+										["n_amt"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[7294] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 199,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 3732,
 										},
@@ -333,14 +332,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 21,
-										["b_dmg"] = 0,
+										["n_max"] = 199,
 										["r_amt"] = 0,
 									},
 									[88263] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3766,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Emerald Shale Hatchling"] = 0,
 											["Stonecore Flayer"] = 31576,
@@ -362,42 +361,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 17801,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53600] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Stonecore Flayer"] = 14361,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 14361,
-										["c_max"] = 14361,
-										["id"] = 53600,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 14361,
-										["successful_casted"] = 0,
-										["c_total"] = 14361,
-										["n_amt"] = 0,
-										["b_dmg"] = 14361,
+										["n_max"] = 3766,
 										["r_amt"] = 0,
 									},
 									[2812] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 5904,
 										},
@@ -418,14 +389,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 5904,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+									[53600] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["b_dmg"] = 14361,
+										["targets"] = {
+											["Stonecore Flayer"] = 14361,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14361,
+										["c_max"] = 14361,
+										["id"] = 53600,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 14361,
+										["successful_casted"] = 0,
+										["c_total"] = 14361,
+										["n_amt"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[31803] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1597,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 8774,
 										},
@@ -446,14 +445,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 5813,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 1597,
 										["r_amt"] = 0,
 									},
 									[42463] = {
 										["c_amt"] = 4,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 428,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 5985,
 										},
@@ -474,52 +473,52 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 2695,
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
+										["n_max"] = 428,
 										["r_amt"] = 0,
 									},
-									[31804] = {
-										["c_amt"] = 2,
+									[53595] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Stonecore Flayer"] = 22755,
+											["Stonecore Flayer"] = 2245,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
+										["n_total"] = 1250,
+										["n_min"] = 551,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 22755,
-										["c_max"] = 13694,
-										["id"] = 31804,
+										["counter"] = 3,
+										["total"] = 2245,
+										["c_max"] = 995,
+										["id"] = 53595,
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 9061,
+										["c_min"] = 995,
 										["successful_casted"] = 0,
-										["c_total"] = 22755,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["c_total"] = 995,
+										["n_amt"] = 2,
+										["n_max"] = 699,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 9595.583727836645,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993441,
 							["damage_taken"] = 40135.008008,
 							["start_time"] = 1716993429,
 							["delay"] = 0,
-							["last_event"] = 1716993441,
+							["last_dps"] = 9595.583727836645,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.005459,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
@@ -528,7 +527,9 @@ _detalhes_database = {
 							["dps_started"] = true,
 							["total"] = 98548.005459,
 							["spec"] = 103,
-							["on_hold"] = false,
+							["colocacao"] = 3,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-055B0D7A",
 							["damage_from"] = {
@@ -537,21 +538,19 @@ _detalhes_database = {
 							["targets"] = {
 								["Stonecore Flayer"] = 98548,
 							},
-							["colocacao"] = 3,
-							["aID"] = "4476-055B0D7A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005459,
+							["aID"] = "4476-055B0D7A",
 							["nome"] = "Jetcer-Gehennas",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1757,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 25413,
 										},
@@ -572,14 +571,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 16100,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 1757,
 										["r_amt"] = 0,
 									}, -- [1]
 									[62078] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4895,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 28172,
 										},
@@ -600,14 +599,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 9749,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 4895,
 										["r_amt"] = 0,
 									},
 									[1822] = {
 										["c_amt"] = 4,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2505,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 28900,
 										},
@@ -628,14 +627,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 19458,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 2505,
 										["r_amt"] = 0,
 									},
 									[80861] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2488,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 2488,
 										},
@@ -656,14 +655,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 2488,
 										["r_amt"] = 0,
 									},
 									[33876] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4749,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 13575,
 										},
@@ -685,24 +684,24 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 8826,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 4749,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 7636.420415248868,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993442,
 							["damage_taken"] = 6957.005459,
 							["start_time"] = 1716993429,
-							["delay"] = 0,
-							["last_event"] = 1716993442,
+							["delay"] = 1716993442,
+							["last_dps"] = 7636.420415248868,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.00222,
 							["pets"] = {
 								"Searing Totem <Meridann-Gehennas>", -- [1]
 							},
@@ -712,7 +711,9 @@ _detalhes_database = {
 							["dps_started"] = true,
 							["total"] = 94352.00222,
 							["spec"] = 262,
-							["on_hold"] = false,
+							["colocacao"] = 4,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-056218BB",
 							["damage_from"] = {
@@ -721,105 +722,19 @@ _detalhes_database = {
 							["targets"] = {
 								["Stonecore Flayer"] = 94352,
 							},
-							["colocacao"] = 4,
-							["aID"] = "4476-056218BB",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00222,
+							["aID"] = "4476-056218BB",
 							["nome"] = "Meridann-Gehennas",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[77478] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 884,
-										["targets"] = {
-											["Stonecore Flayer"] = 18073,
-										},
-										["n_total"] = 8837,
-										["n_min"] = 883,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 18073,
-										["c_max"] = 1848,
-										["id"] = 77478,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 1847,
-										["successful_casted"] = 0,
-										["c_total"] = 9236,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[188443] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5522,
-										["targets"] = {
-											["Stonecore Flayer"] = 13530,
-										},
-										["n_total"] = 5522,
-										["n_min"] = 5522,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 13530,
-										["c_max"] = 8008,
-										["id"] = 188443,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 8008,
-										["successful_casted"] = 0,
-										["c_total"] = 8008,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2376,
-										["targets"] = {
-											["Stonecore Flayer"] = 2376,
-										},
-										["n_total"] = 2376,
-										["n_min"] = 2376,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 2376,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[8042] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3674,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 3674,
 										},
@@ -840,14 +755,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 3674,
 										["r_amt"] = 0,
 									},
 									[88767] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 19879,
 										},
@@ -868,42 +783,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 19879,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
-									[421] = {
-										["c_amt"] = 1,
+									[26364] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6498,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Stonecore Flayer"] = 17804,
+											["Stonecore Flayer"] = 2376,
 										},
-										["n_total"] = 11100,
-										["n_min"] = 4602,
+										["n_total"] = 2376,
+										["n_min"] = 2376,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 17804,
-										["c_max"] = 6704,
-										["id"] = 421,
+										["counter"] = 1,
+										["total"] = 2376,
+										["c_max"] = 0,
+										["id"] = 26364,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 6704,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 6704,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 2376,
 										["r_amt"] = 0,
 									},
 									[8050] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1278,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 9425,
 										},
@@ -924,14 +839,70 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 4315,
 										["n_amt"] = 4,
+										["n_max"] = 1278,
+										["r_amt"] = 0,
+									},
+									[77478] = {
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Stonecore Flayer"] = 18073,
+										},
+										["n_total"] = 8837,
+										["n_min"] = 883,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 18073,
+										["c_max"] = 1848,
+										["id"] = 77478,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 1847,
+										["successful_casted"] = 0,
+										["c_total"] = 9236,
+										["n_amt"] = 10,
+										["n_max"] = 884,
+										["r_amt"] = 0,
+									},
+									[421] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Stonecore Flayer"] = 17804,
+										},
+										["n_total"] = 11100,
+										["n_min"] = 4602,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 17804,
+										["c_max"] = 6704,
+										["id"] = 421,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 6704,
+										["successful_casted"] = 0,
+										["c_total"] = 6704,
+										["n_amt"] = 2,
+										["n_max"] = 6498,
 										["r_amt"] = 0,
 									},
 									[7294] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 303,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 2118,
 										},
@@ -952,64 +923,93 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 7,
+										["n_max"] = 303,
+										["r_amt"] = 0,
+									},
+									[188443] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Stonecore Flayer"] = 13530,
+										},
+										["n_total"] = 5522,
+										["n_min"] = 5522,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 13530,
+										["c_max"] = 8008,
+										["id"] = 188443,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 8008,
+										["successful_casted"] = 0,
+										["c_total"] = 8008,
+										["n_amt"] = 1,
+										["n_max"] = 5522,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 7311.274871739304,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993442,
 							["damage_taken"] = 60572.00222,
 							["start_time"] = 1716993432,
-							["delay"] = 0,
-							["last_event"] = 1716993442,
+							["delay"] = 1716993442,
+							["last_dps"] = 7311.274871739304,
 						}, -- [4]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007146,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 107664.007146,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 107664.007146,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-42808-0008D73C81",
-							["aID"] = "42808",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
-								["Meridann-Gehennas"] = true,
-								["Searing Totem <Meridann-Gehennas>"] = true,
-								["Ruksz-Gehennas"] = true,
 								["Vermina"] = true,
+								["Searing Totem <Meridann-Gehennas>"] = true,
+								["Searing Totem <Ruksz-Gehennas>"] = true,
+								["Meridann-Gehennas"] = true,
 								["Jetcer-Gehennas"] = true,
 								["Searing Totem"] = true,
-								["Searing Totem <Ruksz-Gehennas>"] = true,
+								["Ruksz-Gehennas"] = true,
 							},
 							["targets"] = {
 								["Meridann-Gehennas"] = 60572,
 								["Jetcer-Gehennas"] = 6957,
 								["Vermina"] = 40135,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007146,
+							["fight_component"] = true,
 							["end_time"] = 1716993442,
+							["aID"] = "42808",
 							["nome"] = "Stonecore Flayer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 3,
 										["g_amt"] = 0,
-										["n_max"] = 6957,
+										["b_dmg"] = 6224,
 										["targets"] = {
 											["Meridann-Gehennas"] = 13589,
 											["Jetcer-Gehennas"] = 6957,
@@ -1020,12 +1020,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 12,
 										["MISS"] = 1,
-										["total"] = 36556,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1034,14 +1034,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 10,
-										["b_dmg"] = 6224,
-										["r_amt"] = 0,
+										["n_max"] = 6957,
+										["total"] = 36556,
 									}, -- [1]
 									[79922] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -1060,14 +1060,14 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[79923] = {
 										["c_amt"] = 0,
 										["b_amt"] = 9,
 										["g_amt"] = 0,
-										["n_max"] = 3110,
+										["b_dmg"] = 14294,
 										["targets"] = {
 											["Vermina"] = 24125,
 											["Jetcer-Gehennas"] = 0,
@@ -1078,12 +1078,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 37,
 										["DODGE"] = 2,
-										["total"] = 71108,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 79923,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1092,24 +1092,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 32,
-										["b_dmg"] = 14294,
-										["r_amt"] = 0,
+										["n_max"] = 3110,
+										["total"] = 71108,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993442,
 							["damage_taken"] = 460541.007146,
 							["start_time"] = 1716993433,
 							["delay"] = 0,
-							["last_event"] = 1716993442,
+							["last_dps"] = 0,
 						}, -- [5]
 						{
 							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.001473,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -1117,10 +1116,10 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 8015.001473,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-2523-0000573D98",
-							["aID"] = "2523",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1129,17 +1128,18 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["aID"] = "2523",
 							["end_time"] = 1716993442,
+							["totalabsorbed"] = 0.001473,
 							["ownerName"] = "Ruksz-Gehennas",
 							["nome"] = "Searing Totem <Ruksz-Gehennas>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[3606] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1515,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 8015,
 										},
@@ -1160,24 +1160,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 2716,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 1515,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993438,
 							["damage_taken"] = 0.001473,
 							["start_time"] = 1716993432,
 							["delay"] = 0,
-							["last_event"] = 1716993438,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.001078,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -1185,10 +1184,10 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 7473.001077999999,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-2523-0000573D9C",
-							["aID"] = "2523",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1197,17 +1196,18 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["aID"] = "2523",
 							["end_time"] = 1716993442,
+							["totalabsorbed"] = 0.001078,
 							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Searing Totem <Meridann-Gehennas>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[3606] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1446,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Stonecore Flayer"] = 7473,
 										},
@@ -1228,29 +1228,33 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 6027,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 1446,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993439,
 							["damage_taken"] = 0.001078,
 							["start_time"] = 1716993436,
 							["delay"] = 0,
-							["last_event"] = 1716993439,
+							["last_dps"] = 0,
 						}, -- [7]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 7,
 					["tipo"] = 3,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Vermina"] = 3039,
+								["Zheboqi-Gehennas"] = 12149,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1262,32 +1266,23 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-4476-0555D0FC",
 							["totalabsorb"] = 0.005002,
 							["last_hps"] = 2082.681518941636,
-							["aID"] = "4476-0555D0FC",
-							["fight_component"] = true,
 							["targets"] = {
 								["Vermina"] = 12618,
 								["Meridann-Gehennas"] = 14259,
 							},
-							["serial"] = "Player-4476-0555D0FC",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.005002,
-							["healing_from"] = {
-							},
+							["last_event"] = 1716993441,
 							["healing_taken"] = 0.005002,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
+							["fight_component"] = true,
 							["end_time"] = 1716993442,
-							["targets_overheal"] = {
-								["Vermina"] = 3039,
-								["Zheboqi-Gehennas"] = 12149,
-							},
-							["start_time"] = 1716993437,
+							["aID"] = "4476-0555D0FC",
 							["nome"] = "Zheboqi-Gehennas",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[19750] = {
 										["c_amt"] = 0,
@@ -1305,12 +1300,12 @@ _detalhes_database = {
 										["counter"] = 2,
 										["overheal"] = 3039,
 										["total"] = 26877,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 19750,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
@@ -1331,31 +1326,39 @@ _detalhes_database = {
 										["counter"] = 2,
 										["overheal"] = 12149,
 										["total"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 94289,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+							},
+							["start_time"] = 1716993437,
 							["custom"] = 0,
-							["last_event"] = 1716993441,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005002,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "PALADIN",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Jetcer-Gehennas"] = 4259,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "DRUID",
 							["totalover"] = 4259.007754,
 							["total_without_pet"] = 2041.007754,
 							["total"] = 2041.007754,
@@ -1363,32 +1366,23 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-4476-055B0D7A",
 							["totalabsorb"] = 0.007754,
 							["last_hps"] = 158.1563544359226,
-							["aID"] = "4476-055B0D7A",
-							["fight_component"] = true,
-							["serial"] = "Player-4476-055B0D7A",
 							["targets"] = {
 								["Jetcer-Gehennas"] = 2041,
 							},
-							["colocacao"] = 2,
-							["spec"] = 103,
+							["last_event"] = 1716993439,
 							["totalover_without_pet"] = 0.007754,
-							["grupo"] = true,
 							["healing_taken"] = 2041.007754,
-							["healing_from"] = {
-								["Jetcer-Gehennas"] = true,
-							},
-							["classe"] = "DRUID",
+							["fight_component"] = true,
 							["end_time"] = 1716993442,
-							["targets_overheal"] = {
-								["Jetcer-Gehennas"] = 4259,
-							},
-							["start_time"] = 1716993432,
+							["heal_enemy_amt"] = 0,
+							["aID"] = "4476-055B0D7A",
 							["nome"] = "Jetcer-Gehennas",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[34299] = {
 										["c_amt"] = 0,
@@ -1405,27 +1399,35 @@ _detalhes_database = {
 										["counter"] = 2,
 										["overheal"] = 4259,
 										["total"] = 2041,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["id"] = 34299,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Jetcer-Gehennas"] = true,
+							},
+							["start_time"] = 1716993432,
 							["custom"] = 0,
-							["last_event"] = 1716993439,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007754,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["spec"] = 103,
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1437,44 +1439,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
 							["totalabsorb"] = 0.006206,
 							["last_hps"] = 0.0005000402868390903,
-							["aID"] = "4465-02BB4683",
-							["fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-4465-02BB4683",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.006206,
+							["last_event"] = 0,
+							["healing_taken"] = 12618.006206,
+							["fight_component"] = true,
+							["end_time"] = 1716993442,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 							},
-							["healing_taken"] = 12618.006206,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1716993442,
-							["targets_overheal"] = {
-							},
 							["start_time"] = 1716993442,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006206,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "PALADIN",
 						}, -- [3]
 						{
 							["flag_original"] = 1304,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "UNGROUPPLAYER",
 							["totalover"] = 0.005753,
 							["total_without_pet"] = 0.005753,
 							["total"] = 0.005753,
@@ -1482,69 +1484,66 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-4476-056218BB",
 							["totalabsorb"] = 0.005753,
 							["last_hps"] = 0.0004635404076998529,
-							["aID"] = "4476-056218BB",
-							["fight_component"] = true,
-							["serial"] = "Player-4476-056218BB",
 							["targets"] = {
 							},
-							["colocacao"] = 4,
-							["spec"] = 262,
+							["last_event"] = 0,
 							["totalover_without_pet"] = 0.005753,
-							["grupo"] = true,
 							["healing_taken"] = 14259.005753,
+							["fight_component"] = true,
+							["end_time"] = 1716993442,
+							["heal_enemy_amt"] = 0,
+							["aID"] = "4476-056218BB",
+							["nome"] = "Meridann-Gehennas",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 							},
-							["classe"] = "UNGROUPPLAYER",
-							["end_time"] = 1716993442,
-							["targets_overheal"] = {
-							},
 							["start_time"] = 1716993442,
-							["nome"] = "Meridann-Gehennas",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005753,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["spec"] = 262,
 						}, -- [4]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 7,
 					["tipo"] = 7,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["resource"] = 3.008586,
 							["pets"] = {
 							},
-							["aID"] = "4465-02BB4683",
-							["passiveover"] = 0.008586,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.008586,
 							["total"] = 5247.008586,
+							["serial"] = "Player-4465-02BB4683",
 							["received"] = 5247.008586,
 							["targets"] = {
 								["Vermina"] = 5247,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.008586,
-							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Vermina",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31930] = {
 										["total"] = 4173,
-										["id"] = 31930,
 										["totalover"] = 0,
+										["id"] = 31930,
 										["targets"] = {
 											["Vermina"] = 4173,
 										},
@@ -1552,46 +1551,46 @@ _detalhes_database = {
 									},
 									[84627] = {
 										["total"] = 1074,
-										["id"] = 84627,
 										["totalover"] = 0,
+										["id"] = 84627,
 										["targets"] = {
 											["Vermina"] = 1074,
 										},
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1716993446,
-							["totalover"] = 0.008586,
-							["serial"] = "Player-4465-02BB4683",
+							["aID"] = "4465-02BB4683",
+							["passiveover"] = 0.008586,
 							["tipo"] = 3,
+							["fight_component"] = true,
+							["last_event"] = 1716993446,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.006284,
 							["pets"] = {
 							},
-							["aID"] = "4476-055B0D7A",
-							["passiveover"] = 0.006284,
+							["classe"] = "DRUID",
+							["totalover"] = 1638.006284,
 							["total"] = 60.006284,
 							["spec"] = 103,
+							["serial"] = "Player-4476-055B0D7A",
 							["received"] = 60.006284,
 							["targets"] = {
 								["Jetcer-Gehennas"] = 60,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.006284,
-							["fight_component"] = true,
 							["nome"] = "Jetcer-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[68285] = {
 										["total"] = 0,
-										["id"] = 68285,
 										["totalover"] = 1638,
+										["id"] = 68285,
 										["targets"] = {
 											["Jetcer-Gehennas"] = 0,
 										},
@@ -1599,207 +1598,182 @@ _detalhes_database = {
 									},
 									[51178] = {
 										["total"] = 60,
-										["id"] = 51178,
 										["totalover"] = 0,
+										["id"] = 51178,
 										["targets"] = {
 											["Jetcer-Gehennas"] = 60,
 										},
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "DRUID",
-							["last_event"] = 1716993439,
-							["totalover"] = 1638.006284,
-							["serial"] = "Player-4476-055B0D7A",
+							["passiveover"] = 0.006284,
+							["aID"] = "4476-055B0D7A",
 							["tipo"] = 3,
+							["fight_component"] = true,
+							["last_event"] = 1716993439,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.002345,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.002345,
+							["total"] = 6086.002345,
+							["spec"] = 262,
+							["serial"] = "Player-4476-057D0C29",
+							["received"] = 6086.002345,
 							["targets"] = {
 								["Ruksz-Gehennas"] = 6086,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["passiveover"] = 0.002345,
 							["alternatepower"] = 0.002345,
 							["nome"] = "Ruksz-Gehennas",
-							["spec"] = 262,
-							["grupo"] = true,
-							["received"] = 6086.002345,
-							["aID"] = "4476-057D0C29",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[88765] = {
 										["total"] = 6086,
-										["id"] = 88765,
 										["totalover"] = 0,
+										["id"] = 88765,
 										["targets"] = {
 											["Ruksz-Gehennas"] = 6086,
 										},
 										["counter"] = 7,
 									},
 								},
+								["tipo"] = 7,
 							},
-							["last_event"] = 1716993441,
-							["totalover"] = 0.002345,
-							["total"] = 6086.002345,
-							["serial"] = "Player-4476-057D0C29",
+							["grupo"] = true,
+							["aID"] = "4476-057D0C29",
 							["tipo"] = 3,
+							["passiveover"] = 0.002345,
+							["last_event"] = 1716993441,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.007332,
 							["pets"] = {
 							},
-							["aID"] = "4476-056218BB",
-							["passiveover"] = 0.007332,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.007332,
 							["total"] = 4950.007332,
 							["spec"] = 262,
+							["serial"] = "Player-4476-056218BB",
 							["received"] = 4950.007332,
 							["targets"] = {
 								["Meridann-Gehennas"] = 4950,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.007332,
-							["fight_component"] = true,
 							["nome"] = "Meridann-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[88765] = {
 										["total"] = 4950,
-										["id"] = 88765,
 										["totalover"] = 0,
+										["id"] = 88765,
 										["targets"] = {
 											["Meridann-Gehennas"] = 4950,
 										},
 										["counter"] = 5,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["last_event"] = 1716993437,
-							["totalover"] = 0.007332,
-							["serial"] = "Player-4476-056218BB",
+							["passiveover"] = 0.007332,
+							["aID"] = "4476-056218BB",
 							["tipo"] = 3,
+							["fight_component"] = true,
+							["last_event"] = 1716993437,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
 							["resource"] = 1.006468,
 							["pets"] = {
 							},
-							["aID"] = "4476-0555D0FC",
-							["passiveover"] = 0.006468,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.006468,
 							["total"] = 0.006468,
+							["serial"] = "Player-4476-0555D0FC",
 							["received"] = 0.006468,
 							["targets"] = {
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.006468,
-							["fight_component"] = true,
 							["resource_type"] = 9,
 							["nome"] = "Zheboqi-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["last_event"] = 1716993437,
-							["totalover"] = 0.006468,
-							["serial"] = "Player-4476-0555D0FC",
+							["aID"] = "4476-0555D0FC",
+							["passiveover"] = 0.006468,
 							["tipo"] = 3,
+							["fight_component"] = true,
+							["last_event"] = 1716993437,
 						}, -- [5]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 7,
 					["tipo"] = 9,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[58180] = {
-										["activedamt"] = 2,
-										["id"] = 58180,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 10,
-										["appliedamt"] = 2,
+										["id"] = 58180,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[33876] = {
-										["activedamt"] = 2,
-										["id"] = 33876,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 10,
-										["appliedamt"] = 2,
+										["id"] = 33876,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1822] = {
-										["activedamt"] = 4,
-										["id"] = 1822,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 9,
-										["appliedamt"] = 4,
+										["id"] = 1822,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["pets"] = {
-							},
-							["aID"] = "4476-055B0D7A",
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 1,
+							["classe"] = "DRUID",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[768] = {
+									[16591] = {
 										["activedamt"] = 1,
-										["id"] = 768,
+										["id"] = 16591,
 										["targets"] = {
 										},
 										["actived_at"] = 1716993429,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[80886] = {
-										["activedamt"] = 1,
-										["id"] = 80886,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993436,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[5217] = {
-										["activedamt"] = 1,
-										["id"] = 5217,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993436,
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
@@ -1830,15 +1804,39 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[67703] = {
-										["activedamt"] = 1,
-										["id"] = 67703,
+									[5215] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 0,
+										["id"] = 5215,
 										["refreshamt"] = 0,
 										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993429,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[5217] = {
+										["activedamt"] = 1,
+										["id"] = 5217,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993436,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
 										["counter"] = 0,
 									},
 									[52610] = {
@@ -1853,16 +1851,15 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[16591] = {
-										["activedamt"] = 1,
-										["id"] = 16591,
+									[67703] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["actived_at"] = 1716993429,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 67703,
 										["refreshamt"] = 0,
-										["actived"] = true,
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[72221] = {
@@ -1877,115 +1874,81 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[5215] = {
-										["activedamt"] = 2,
-										["id"] = 5215,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 29,
-							["nome"] = "Jetcer-Gehennas",
-							["spec"] = 103,
-							["grupo"] = true,
-							["buff_uptime"] = 1,
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "DRUID",
-							["buff_uptime_targets"] = {
-							},
-							["serial"] = "Player-4476-055B0D7A",
-							["last_event"] = 1716993439,
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
+									[80886] = {
 										["activedamt"] = 1,
-										["id"] = 8050,
+										["id"] = 80886,
 										["targets"] = {
 										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[61882] = {
-										["activedamt"] = 5,
-										["id"] = 61882,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8042] = {
-										["activedamt"] = 1,
-										["id"] = 8042,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["pets"] = {
-								"Searing Totem <Meridann-Gehennas>", -- [1]
-							},
-							["aID"] = "4476-056218BB",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[61882] = {
-										["activedamt"] = 1,
-										["id"] = 61882,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993440,
+										["actived_at"] = 1716993436,
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[16246] = {
-										["activedamt"] = 1,
-										["id"] = 16246,
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 29,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 103,
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["aID"] = "4476-055B0D7A",
+							["tipo"] = 4,
+							["last_event"] = 1716993439,
+							["nome"] = "Jetcer-Gehennas",
+							["serial"] = "Player-4476-055B0D7A",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[8050] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[90885] = {
 										["activedamt"] = 1,
-										["id"] = 90885,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 8050,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[61882] = {
+										["appliedamt"] = 5,
+										["targets"] = {
+										},
+										["activedamt"] = 5,
+										["uptime"] = 2,
+										["id"] = 61882,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8042] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 8042,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 32,
+							["classe"] = "SHAMAN",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
 									[8076] = {
 										["activedamt"] = 1,
 										["id"] = 8076,
@@ -1995,6 +1958,40 @@ _detalhes_database = {
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[16246] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = 16246,
+										["refreshamt"] = 4,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[90885] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 90885,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
+										["activedamt"] = 1,
+										["id"] = 324,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993437,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 5,
 										["actived"] = true,
 										["counter"] = 0,
 									},
@@ -2022,18 +2019,6 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993437,
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 5,
-										["actived"] = true,
-										["counter"] = 0,
-									},
 									[5677] = {
 										["activedamt"] = 1,
 										["id"] = 5677,
@@ -2046,34 +2031,45 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
+									[61882] = {
+										["activedamt"] = 1,
+										["id"] = 61882,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993440,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 13,
-							["nome"] = "Meridann-Gehennas",
-							["spec"] = 262,
-							["grupo"] = true,
-							["buff_uptime"] = 32,
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["buff_uptime_targets"] = {
 							},
-							["serial"] = "Player-4476-056218BB",
+							["spec"] = 262,
+							["grupo"] = true,
+							["pets"] = {
+								"Searing Totem <Meridann-Gehennas>", -- [1]
+							},
+							["aID"] = "4476-056218BB",
+							["tipo"] = 4,
 							["last_event"] = 1716993441,
+							["nome"] = "Meridann-Gehennas",
+							["serial"] = "Player-4476-056218BB",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-4476-0555D0FC",
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 16,
 							["classe"] = "PALADIN",
-							["fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[465] = {
 										["activedamt"] = 1,
@@ -2099,15 +2095,15 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[20053] = {
+									[72221] = {
 										["activedamt"] = 1,
-										["id"] = 20053,
+										["id"] = 72221,
 										["targets"] = {
 										},
-										["actived_at"] = 1716993437,
-										["uptime"] = 8,
+										["actived_at"] = 1716993429,
+										["uptime"] = 0,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = true,
 										["counter"] = 0,
 									},
@@ -2123,29 +2119,6 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993429,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[54149] = {
-										["activedamt"] = 1,
-										["id"] = 54149,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[53657] = {
 										["activedamt"] = 1,
 										["id"] = 53657,
@@ -2158,57 +2131,58 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
+									[54149] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 54149,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20053] = {
+										["activedamt"] = 1,
+										["id"] = 20053,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993437,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = true,
+										["counter"] = 0,
+									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 16,
-							["grupo"] = true,
-							["aID"] = "4476-0555D0FC",
+							["fight_component"] = true,
 							["nome"] = "Zheboqi-Gehennas",
-							["last_event"] = 1716993437,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["tipo"] = 4,
+							["aID"] = "4476-0555D0FC",
+							["serial"] = "Player-4476-0555D0FC",
+							["last_event"] = 1716993437,
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
 							["pets"] = {
 								"Searing Totem <Ruksz-Gehennas>", -- [1]
 							},
-							["buff_uptime"] = 24,
-							["classe"] = "SHAMAN",
-							["buff_uptime_targets"] = {
-							},
+							["aID"] = "4476-057D0C29",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[16246] = {
-										["activedamt"] = 2,
-										["id"] = 16246,
-										["targets"] = {
-										},
-										["uptime"] = 5,
 										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 5,
+										["id"] = 16246,
 										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[102748] = {
-										["activedamt"] = 1,
-										["id"] = 102748,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[77747] = {
-										["activedamt"] = 1,
-										["id"] = 77747,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -2221,6 +2195,40 @@ _detalhes_database = {
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[77747] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 77747,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[102748] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 102748,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
+										["activedamt"] = 1,
+										["id"] = 324,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993441,
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 7,
 										["actived"] = true,
 										["counter"] = 0,
 									},
@@ -2236,100 +2244,75 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993441,
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 7,
-										["actived"] = true,
-										["counter"] = 0,
-									},
 								},
+								["tipo"] = 9,
 							},
-							["grupo"] = true,
-							["serial"] = "Player-4476-057D0C29",
-							["aID"] = "4476-057D0C29",
+							["buff_uptime"] = 24,
 							["nome"] = "Ruksz-Gehennas",
 							["spec"] = 262,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["last_event"] = 1716993441,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-4476-057D0C29",
 							["tipo"] = 4,
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[68055] = {
-										["activedamt"] = 1,
-										["id"] = 68055,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 68055,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31803] = {
-										["activedamt"] = 0,
-										["id"] = 31803,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 13,
-										["appliedamt"] = 0,
+										["id"] = 31803,
 										["refreshamt"] = 17,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[26017] = {
-										["activedamt"] = 4,
-										["id"] = 26017,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 13,
-										["appliedamt"] = 4,
+										["id"] = 26017,
 										["refreshamt"] = 7,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31935] = {
-										["activedamt"] = 0,
-										["id"] = 31935,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = 31935,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["cc_done_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[31935] = {
-										["id"] = 31935,
-										["targets"] = {
-											["Stonecore Flayer"] = 2,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
 							["aID"] = "4465-02BB4683",
-							["buff_uptime"] = 40,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[96312] = {
 										["activedamt"] = 1,
@@ -2379,13 +2362,13 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[85433] = {
-										["activedamt"] = 1,
-										["id"] = 85433,
+									[94686] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 94686,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2402,20 +2385,9 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									[94686] = {
+									[72221] = {
 										["activedamt"] = 1,
-										["id"] = 94686,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[25780] = {
-										["activedamt"] = 1,
-										["id"] = 25780,
+										["id"] = 72221,
 										["targets"] = {
 										},
 										["actived_at"] = 1716993429,
@@ -2423,6 +2395,17 @@ _detalhes_database = {
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = true,
+										["counter"] = 0,
+									},
+									[85433] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 85433,
+										["refreshamt"] = 0,
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31930] = {
@@ -2438,26 +2421,14 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[20178] = {
-										["activedamt"] = 1,
-										["id"] = 20178,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 20178,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
-									},
-									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
-										["targets"] = {
-										},
-										["actived_at"] = 1716993429,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
 										["counter"] = 0,
 									},
 									[76691] = {
@@ -2472,20 +2443,49 @@ _detalhes_database = {
 										["actived"] = true,
 										["counter"] = 0,
 									},
+									[25780] = {
+										["activedamt"] = 1,
+										["id"] = 25780,
+										["targets"] = {
+										},
+										["actived_at"] = 1716993429,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
 								},
-							},
-							["debuff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 40,
-							["grupo"] = true,
-							["cc_done"] = 2.002913,
-							["nome"] = "Vermina",
 							["buff_uptime_targets"] = {
 							},
 							["cc_done_targets"] = {
 								["Stonecore Flayer"] = 2,
 							},
+							["serial"] = "Player-4465-02BB4683",
+							["buff_uptime"] = 40,
+							["cc_done_spells"] = {
+								["_ActorTable"] = {
+									[31935] = {
+										["id"] = 31935,
+										["targets"] = {
+											["Stonecore Flayer"] = 2,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["cc_done"] = 2.002913,
+							["nome"] = "Vermina",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PALADIN",
 							["last_event"] = 1716993441,
+							["fight_component"] = true,
 							["tipo"] = 4,
 						}, -- [5]
 						{
@@ -2493,11 +2493,11 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "2523",
-							["serial"] = "Creature-0-4457-725-21149-2523-0000573D98",
 							["ownerName"] = "Ruksz-Gehennas",
 							["nome"] = "Searing Totem <Ruksz-Gehennas>",
 							["last_event"] = 0,
+							["aID"] = "2523",
+							["serial"] = "Creature-0-4457-725-21149-2523-0000573D98",
 							["tipo"] = 4,
 						}, -- [6]
 						{
@@ -2505,27 +2505,27 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "2523",
-							["serial"] = "Creature-0-4457-725-21149-2523-0000573D9C",
 							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Searing Totem <Meridann-Gehennas>",
 							["last_event"] = 0,
+							["aID"] = "2523",
+							["serial"] = "Creature-0-4457-725-21149-2523-0000573D9C",
 							["tipo"] = 4,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 7,
 					["tipo"] = 2,
+					["combatId"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Ruksz-Gehennas"] = "Player-4476-057D0C29",
 					["Meridann-Gehennas"] = "Player-4476-056218BB",
-					["Jetcer-Gehennas"] = "Player-4476-055B0D7A",
-					["Vermina"] = "Player-4465-02BB4683",
 					["Zheboqi-Gehennas"] = "Player-4476-0555D0FC",
+					["Vermina"] = "Player-4465-02BB4683",
+					["Jetcer-Gehennas"] = "Player-4476-055B0D7A",
 				},
 				["CombatStartedAt"] = 1642551.662,
 				["tempo_start"] = 1716993429,
@@ -2535,9 +2535,161 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
+				["combat_counter"] = 14561,
+				["playing_solo"] = true,
+				["totals"] = {
+					2858319, -- [1]
+					29237, -- [2]
+					{
+						0, -- [1]
+						[0] = 100918,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Meridann-Gehennas"] = {
+						["Searing Totem"] = 1,
+						["Flame Shock"] = 1,
+						["Mana Spring Totem"] = 1,
+						["Lightning Shield"] = 1,
+						["Earthquake"] = 1,
+						["Strength of Earth Totem"] = 1,
+						["Wrath of Air Totem"] = 1,
+						["Call of the Elements"] = 1,
+						["Chain Lightning"] = 1,
+						["Earth Shock"] = 1,
+					},
+					["Searing Totem <Ruksz-Gehennas>"] = {
+						["Searing Bolt"] = 1,
+					},
+					["Ruksz-Gehennas"] = {
+						["Lava Burst"] = 1,
+						["Searing Totem"] = 1,
+						["Lava Surge!"] = 1,
+						["Mana Spring Totem"] = 1,
+						["Call of the Elements"] = 1,
+						["Wrath of Air Totem"] = 1,
+						["Strength of Earth Totem"] = 1,
+						["Chain Lightning"] = 5,
+						["Earth Shock"] = 2,
+					},
+					["Vermina"] = {
+						["Shield of the Righteous"] = 1,
+						["Hammer of the Righteous"] = 6,
+						["Avenger's Shield"] = 1,
+						["Holy Wrath"] = 1,
+						["Judgement"] = 2,
+					},
+					["Jetcer-Gehennas"] = {
+						["Prowl"] = 1,
+						["Rake"] = 4,
+						["Mangle"] = 3,
+						["Primal Fury"] = 3,
+						["Tiger's Fury"] = 1,
+						["Swipe"] = 1,
+					},
+					["Zheboqi-Gehennas"] = {
+						["Flash of Light"] = 2,
+						["Beacon of Light"] = 1,
+					},
+					["Searing Totem <Meridann-Gehennas>"] = {
+						["Searing Bolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "The Stonecore",
+				["data_fim"] = "16:37:22",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Stonecore Flayer",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 4.480999999912456,
+				["CombatEndedAt"] = 1642556.143,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "16:37:09",
+				["end_time"] = 1642550.912,
+				["mapId"] = 725,
+				["combat_id"] = 7,
+				["boss_hp"] = 1,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Emerald Shale Hatchling"] = 1,
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["totals_grupo"] = {
+					438341, -- [1]
+					28918, -- [2]
+					{
+						0, -- [1]
+						[0] = 16283,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 0.006206,
+							["Zheboqi-Gehennas"] = 26877.005002,
+							["Meridann-Gehennas"] = 0.005753,
+							["Jetcer-Gehennas"] = 2041.007754,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 123831.008008,
+							["Jetcer-Gehennas"] = 96888.005459,
+							["Meridann-Gehennas"] = 80696.00222,
+							["Ruksz-Gehennas"] = 137098.002008,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 1642538.007,
+				["contra"] = "Stonecore Flayer",
 				["playerTalents"] = {
 					["Vermina"] = {
 						{
@@ -4639,163 +4791,11 @@ _detalhes_database = {
 						}, -- [58]
 					},
 				},
-				["totals"] = {
-					642853, -- [1]
-					28918, -- [2]
-					{
-						0, -- [1]
-						[0] = 16283,
-						["alternatepower"] = 0,
-						[3] = 60,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Searing Totem <Ruksz-Gehennas>"] = {
-						["Searing Bolt"] = 1,
-					},
-					["Jetcer-Gehennas"] = {
-						["Prowl"] = 1,
-						["Rake"] = 4,
-						["Mangle"] = 3,
-						["Primal Fury"] = 3,
-						["Tiger's Fury"] = 1,
-						["Swipe"] = 1,
-					},
-					["Meridann-Gehennas"] = {
-						["Searing Totem"] = 1,
-						["Flame Shock"] = 1,
-						["Mana Spring Totem"] = 1,
-						["Lightning Shield"] = 1,
-						["Earthquake"] = 1,
-						["Strength of Earth Totem"] = 1,
-						["Wrath of Air Totem"] = 1,
-						["Call of the Elements"] = 1,
-						["Chain Lightning"] = 1,
-						["Earth Shock"] = 1,
-					},
-					["Zheboqi-Gehennas"] = {
-						["Flash of Light"] = 2,
-						["Beacon of Light"] = 1,
-					},
-					["Vermina"] = {
-						["Shield of the Righteous"] = 1,
-						["Hammer of the Righteous"] = 6,
-						["Avenger's Shield"] = 1,
-						["Holy Wrath"] = 1,
-						["Judgement"] = 2,
-					},
-					["Searing Totem <Meridann-Gehennas>"] = {
-						["Searing Bolt"] = 1,
-					},
-					["Ruksz-Gehennas"] = {
-						["Lava Burst"] = 1,
-						["Searing Totem"] = 1,
-						["Lava Surge!"] = 1,
-						["Call of the Elements"] = 1,
-						["Mana Spring Totem"] = 1,
-						["Wrath of Air Totem"] = 1,
-						["Strength of Earth Totem"] = 1,
-						["Chain Lightning"] = 5,
-						["Earth Shock"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "The Stonecore",
-				["data_fim"] = "16:37:22",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Stonecore Flayer",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 4.480999999912456,
-				["CombatEndedAt"] = 1642556.143,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "16:37:09",
-				["end_time"] = 1642550.912,
-				["mapId"] = 725,
-				["combat_id"] = 7,
-				["boss_hp"] = 1,
-				["playing_solo"] = true,
-				["frags"] = {
-					["Emerald Shale Hatchling"] = 1,
-				},
-				["combat_counter"] = 14561,
-				["totals_grupo"] = {
-					438341, -- [1]
-					28918, -- [2]
-					{
-						0, -- [1]
-						[0] = 16283,
-						["alternatepower"] = 0,
-						[3] = 60,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 0.006206,
-							["Zheboqi-Gehennas"] = 26877.005002,
-							["Meridann-Gehennas"] = 0.005753,
-							["Jetcer-Gehennas"] = 2041.007754,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Vermina"] = 123831.008008,
-							["Jetcer-Gehennas"] = 96888.005459,
-							["Meridann-Gehennas"] = 80696.00222,
-							["Ruksz-Gehennas"] = 137098.002008,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1642538.007,
-				["TimeData"] = {
-				},
-				["contra"] = "Stonecore Flayer",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 5,
 					["tipo"] = 2,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
@@ -4810,10 +4810,11 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 634273.003061,
 							["spec"] = 262,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-056218BB",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Corborus"] = true,
 							},
@@ -4821,22 +4822,20 @@ _detalhes_database = {
 								["Rock Borer"] = 44591,
 								["Corborus"] = 589682,
 							},
-							["colocacao"] = 1,
-							["aID"] = "4476-056218BB",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993391,
-							["nome"] = "Meridann-Gehennas",
+							["on_hold"] = false,
+							["aID"] = "4476-056218BB",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[88767] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 17761,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 6701,
 											["Corborus"] = 31946,
@@ -4858,14 +4857,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 17761,
 										["r_amt"] = 0,
 									},
 									[8042] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 17090,
 										},
@@ -4886,14 +4885,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 17090,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[188196] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7285,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 32632,
 										},
@@ -4914,14 +4913,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 7285,
 										["r_amt"] = 0,
 									},
 									[403] = {
 										["c_amt"] = 6,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10104,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 216511,
 										},
@@ -4942,14 +4941,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 108358,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
+										["n_max"] = 10104,
 										["r_amt"] = 0,
 									},
 									[8050] = {
 										["c_amt"] = 4,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1861,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 31463,
 										},
@@ -4970,14 +4969,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 11129,
 										["n_amt"] = 17,
-										["b_dmg"] = 0,
+										["n_max"] = 1861,
 										["r_amt"] = 0,
 									},
 									[421] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6701,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 21220,
 											["Corborus"] = 6504,
@@ -4999,14 +4998,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 5628,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 6701,
 										["r_amt"] = 0,
 									},
 									[51490] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 743,
 										},
@@ -5027,14 +5026,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 743,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[51505] = {
 										["c_amt"] = 6,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 142361,
 										},
@@ -5055,42 +5054,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 142361,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2959,
-										["targets"] = {
-											["Corborus"] = 10260,
-										},
-										["n_total"] = 5322,
-										["n_min"] = 2363,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 10260,
-										["c_max"] = 4938,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 4938,
-										["successful_casted"] = 0,
-										["c_total"] = 4938,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[77451] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 33330,
 										},
@@ -5111,20 +5082,49 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 33330,
 										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Corborus"] = 10260,
+										},
+										["n_total"] = 5322,
+										["n_min"] = 2363,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 10260,
+										["c_max"] = 4938,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 4938,
+										["successful_casted"] = 0,
+										["c_total"] = 4938,
+										["n_amt"] = 2,
+										["n_max"] = 2959,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 8599.7288734589,
-							["custom"] = 0,
+							["grupo"] = true,
 							["tipo"] = 1,
+							["nome"] = "Meridann-Gehennas",
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 9712.003061,
 							["start_time"] = 1716993320,
 							["delay"] = 0,
-							["last_event"] = 1716993391,
+							["last_dps"] = 8599.7288734589,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -5137,10 +5137,11 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 525936.0056040001,
 							["spec"] = 103,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-055B0D7A",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Rock Borer"] = true,
 								["Corborus"] = true,
@@ -5149,22 +5150,20 @@ _detalhes_database = {
 								["Rock Borer"] = 77160,
 								["Corborus"] = 448776,
 							},
-							["colocacao"] = 2,
-							["aID"] = "4476-055B0D7A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993391,
-							["nome"] = "Jetcer-Gehennas",
+							["on_hold"] = false,
+							["aID"] = "4476-055B0D7A",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 25,
 										["b_amt"] = 0,
 										["g_amt"] = 8,
-										["n_max"] = 1958,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 15601,
 											["Corborus"] = 97063,
@@ -5187,14 +5186,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 73143,
 										["n_amt"] = 19,
-										["b_dmg"] = 0,
+										["n_max"] = 1958,
 										["r_amt"] = 0,
 									}, -- [1]
 									[5221] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8795,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 158713,
 										},
@@ -5215,14 +5214,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 74277,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 8795,
 										["r_amt"] = 0,
 									},
 									[22568] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 29189,
 										},
@@ -5243,14 +5242,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 29189,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[50259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 0,
 										},
@@ -5272,14 +5271,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[81170] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8240,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 23998,
 										},
@@ -5300,14 +5299,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 15758,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 8240,
 										["r_amt"] = 0,
 									},
 									[1822] = {
 										["c_amt"] = 4,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2875,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 40170,
 										},
@@ -5329,14 +5328,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 21527,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 2875,
 										["r_amt"] = 0,
 									},
 									[7294] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 132,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 132,
 										},
@@ -5357,43 +5356,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[62078] = {
-										["c_amt"] = 5,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Rock Borer"] = 28940,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 28940,
-										["c_max"] = 6701,
-										["a_amt"] = 0,
-										["id"] = 62078,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 2136,
-										["successful_casted"] = 0,
-										["c_total"] = 28940,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 132,
 										["r_amt"] = 0,
 									},
 									[33876] = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4922,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 27453,
 											["Corborus"] = 9475,
@@ -5415,14 +5385,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 13120,
 										["n_amt"] = 5,
+										["n_max"] = 4922,
+										["r_amt"] = 0,
+									},
+									[1079] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Corborus"] = 72160,
+										},
+										["n_total"] = 16036,
+										["n_min"] = 4009,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 72160,
+										["c_max"] = 8018,
+										["id"] = 1079,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 8017,
+										["successful_casted"] = 0,
+										["c_total"] = 56124,
+										["n_amt"] = 4,
+										["n_max"] = 4009,
 										["r_amt"] = 0,
 									},
 									[80861] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2814,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 5034,
 											["Corborus"] = 18008,
@@ -5444,48 +5442,50 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 10097,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 2814,
 										["r_amt"] = 0,
 									},
-									[1079] = {
-										["c_amt"] = 7,
+									[62078] = {
+										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4009,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Corborus"] = 72160,
+											["Rock Borer"] = 28940,
 										},
-										["n_total"] = 16036,
-										["n_min"] = 4009,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 72160,
-										["c_max"] = 8018,
-										["id"] = 1079,
+										["counter"] = 6,
+										["total"] = 28940,
+										["c_max"] = 6701,
+										["a_amt"] = 0,
+										["id"] = 62078,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 8017,
+										["PARRY"] = 1,
+										["c_min"] = 2136,
 										["successful_casted"] = 0,
-										["c_total"] = 56124,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["c_total"] = 28940,
+										["n_amt"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 7130.852221609342,
-							["custom"] = 0,
+							["grupo"] = true,
 							["tipo"] = 1,
+							["nome"] = "Jetcer-Gehennas",
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 12717.005604,
 							["start_time"] = 1716993319,
 							["delay"] = 0,
-							["last_event"] = 1716993391,
+							["last_dps"] = 7130.852221609342,
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
@@ -5497,35 +5497,34 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 342409.007745,
-							["on_hold"] = false,
+							["colocacao"] = 3,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4465-02BB4683",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
-								["[*] Thrashing Charge"] = true,
 								["Rock Borer"] = true,
+								["[*] Thrashing Charge"] = true,
 								["Corborus"] = true,
 							},
 							["targets"] = {
 								["Rock Borer"] = 58762,
 								["Corborus"] = 283647,
 							},
-							["colocacao"] = 3,
-							["aID"] = "4465-02BB4683",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993391,
 							["nome"] = "Vermina",
+							["aID"] = "4465-02BB4683",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 7,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["n_max"] = 2113,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 5481,
 											["Corborus"] = 50468,
@@ -5547,14 +5546,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 24861,
 										["n_amt"] = 15,
-										["b_dmg"] = 0,
+										["n_max"] = 2113,
 										["r_amt"] = 0,
 									}, -- [1]
 									[81297] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 659,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 1793,
 											["Corborus"] = 7177,
@@ -5576,14 +5575,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 1964,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 659,
 										["r_amt"] = 0,
 									},
 									[31935] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9301,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 15831,
 											["Corborus"] = 22812,
@@ -5605,14 +5604,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 9301,
 										["r_amt"] = 0,
 									},
 									[31804] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8789,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 6245,
 											["Corborus"] = 20083,
@@ -5634,14 +5633,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 8789,
 										["r_amt"] = 0,
 									},
 									[7294] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 199,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 396,
 											["Corborus"] = 1581,
@@ -5663,14 +5662,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
+										["n_max"] = 199,
 										["r_amt"] = 0,
 									},
 									[24275] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6946,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 1044,
 											["Corborus"] = 26108,
@@ -5692,14 +5691,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 20206,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 6946,
 										["r_amt"] = 0,
 									},
 									[35395] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6016,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 54032,
 										},
@@ -5720,14 +5719,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 11580,
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
+										["n_max"] = 6016,
 										["r_amt"] = 0,
 									},
 									[88263] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3186,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 16244,
 										},
@@ -5748,14 +5747,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 3284,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 3186,
 										["r_amt"] = 0,
 									},
 									[53595] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 595,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 1108,
 										},
@@ -5776,72 +5775,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2812] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1312,
-										["targets"] = {
-											["Rock Borer"] = 5576,
-											["Corborus"] = 13055,
-										},
-										["n_total"] = 5336,
-										["n_min"] = 984,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 18631,
-										["c_max"] = 5903,
-										["id"] = 2812,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 76,
-										["successful_casted"] = 0,
-										["c_total"] = 13295,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42463] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 519,
-										["targets"] = {
-											["Rock Borer"] = 190,
-											["Corborus"] = 18216,
-										},
-										["n_total"] = 12393,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 39,
-										["total"] = 18406,
-										["c_max"] = 981,
-										["id"] = 42463,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 386,
-										["successful_casted"] = 0,
-										["c_total"] = 6013,
-										["n_amt"] = 32,
-										["b_dmg"] = 0,
+										["n_max"] = 595,
 										["r_amt"] = 0,
 									},
 									[53600] = {
 										["c_amt"] = 2,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 12044,
+										["b_dmg"] = 4854,
 										["targets"] = {
 											["Rock Borer"] = 4854,
 											["Corborus"] = 35674,
@@ -5863,14 +5804,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 28484,
 										["n_amt"] = 1,
-										["b_dmg"] = 4854,
+										["n_max"] = 12044,
 										["r_amt"] = 0,
 									},
 									[31803] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2067,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 34441,
 										},
@@ -5891,20 +5832,79 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 16829,
 										["n_amt"] = 10,
+										["n_max"] = 2067,
+										["r_amt"] = 0,
+									},
+									[42463] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Rock Borer"] = 190,
+											["Corborus"] = 18216,
+										},
+										["n_total"] = 12393,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 39,
+										["total"] = 18406,
+										["c_max"] = 981,
+										["id"] = 42463,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 386,
+										["successful_casted"] = 0,
+										["c_total"] = 6013,
+										["n_amt"] = 32,
+										["n_max"] = 519,
+										["r_amt"] = 0,
+									},
+									[2812] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Rock Borer"] = 5576,
+											["Corborus"] = 13055,
+										},
+										["n_total"] = 5336,
+										["n_min"] = 984,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 18631,
+										["c_max"] = 5903,
+										["id"] = 2812,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 76,
+										["successful_casted"] = 0,
+										["c_total"] = 13295,
+										["n_amt"] = 5,
+										["n_max"] = 1312,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 4642.519256260848,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993390,
 							["damage_taken"] = 87399.00774500001,
 							["start_time"] = 1716993327,
 							["delay"] = 1716993348,
-							["last_event"] = 1716993390,
+							["last_dps"] = 4642.519256260848,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -5918,10 +5918,11 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 299732.003062,
 							["spec"] = 262,
-							["on_hold"] = false,
+							["colocacao"] = 4,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-057D0C29",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Corborus"] = true,
 							},
@@ -5929,22 +5930,20 @@ _detalhes_database = {
 								["Rock Borer"] = 26873,
 								["Corborus"] = 272859,
 							},
-							["colocacao"] = 4,
-							["aID"] = "4476-057D0C29",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993391,
-							["nome"] = "Ruksz-Gehennas",
+							["on_hold"] = false,
+							["aID"] = "4476-057D0C29",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[51505] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 2827,
 											["Corborus"] = 71410,
@@ -5966,14 +5965,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 74237,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[403] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7312,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 6625,
 											["Corborus"] = 118268,
@@ -5995,14 +5994,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 27893,
 										["n_amt"] = 14,
-										["b_dmg"] = 0,
+										["n_max"] = 7312,
 										["r_amt"] = 0,
 									},
 									[26364] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1994,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 3806,
 										},
@@ -6023,14 +6022,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 1994,
 										["r_amt"] = 0,
 									},
 									[8042] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 6817,
 										},
@@ -6051,14 +6050,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 6817,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[8050] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1741,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 3874,
 											["Corborus"] = 25092,
@@ -6080,14 +6079,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 12014,
 										["n_amt"] = 14,
-										["b_dmg"] = 0,
+										["n_max"] = 1741,
 										["r_amt"] = 0,
 									},
 									[88767] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 5984,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 5984,
 										},
@@ -6108,20 +6107,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 5984,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 4063.887235610524,
-							["custom"] = 0,
+							["grupo"] = true,
 							["tipo"] = 1,
+							["nome"] = "Ruksz-Gehennas",
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 4813.003062,
 							["start_time"] = 1716993320,
 							["delay"] = 0,
-							["last_event"] = 1716993391,
+							["last_dps"] = 4063.887235610524,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
@@ -6133,10 +6133,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 37883.002988,
-							["on_hold"] = false,
+							["colocacao"] = 5,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-4476-0555D0FC",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Rock Borer"] = true,
 								["Corborus"] = true,
@@ -6145,22 +6146,20 @@ _detalhes_database = {
 								["Rock Borer"] = 20448,
 								["Corborus"] = 17435,
 							},
-							["colocacao"] = 5,
-							["aID"] = "4476-0555D0FC",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1716993391,
 							["nome"] = "Zheboqi-Gehennas",
+							["aID"] = "4476-0555D0FC",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 2,
 										["g_amt"] = 0,
-										["n_max"] = 891,
+										["b_dmg"] = 1063,
 										["targets"] = {
 											["Rock Borer"] = 5969,
 											["Corborus"] = 5502,
@@ -6183,14 +6182,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 3228,
 										["n_amt"] = 12,
-										["b_dmg"] = 1063,
+										["n_max"] = 891,
 										["r_amt"] = 0,
 									}, -- [1]
 									[25742] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 310,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 1849,
 											["Corborus"] = 3042,
@@ -6212,14 +6211,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 1220,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
+										["n_max"] = 310,
 										["r_amt"] = 0,
 									},
 									[853] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Corborus"] = 0,
 										},
@@ -6241,14 +6240,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[25912] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1750,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 2512,
 											["Corborus"] = 6862,
@@ -6270,14 +6269,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 7624,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 1750,
 										["r_amt"] = 0,
 									},
 									[7294] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 309,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 309,
 										},
@@ -6298,14 +6297,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 309,
 										["r_amt"] = 0,
 									},
 									[20187] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2029,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 9809,
 											["Corborus"] = 2029,
@@ -6327,68 +6326,69 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 7780,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 2029,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 513.6330145489445,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 5622.002988,
 							["start_time"] = 1716993358,
 							["delay"] = 1716993369,
-							["last_event"] = 1716993391,
+							["last_dps"] = 513.6330145489445,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008668,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 89002.008668,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 89002.008668,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
-							["aID"] = "43438",
-							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
-								["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
+								["Meridann-Gehennas"] = true,
 								["Greater Fire Elemental <Meridann-Gehennas>"] = true,
 								["Ruksz-Gehennas"] = true,
-								["Meridann-Gehennas"] = true,
+								["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
 								["Jetcer-Gehennas"] = true,
 								["Zheboqi-Gehennas"] = true,
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
+								["Meridann-Gehennas"] = 9712,
 								["Greater Fire Elemental <Meridann-Gehennas>"] = 458,
 								["Ruksz-Gehennas"] = 4813,
-								["Meridann-Gehennas"] = 9712,
+								["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
 								["Jetcer-Gehennas"] = 8350,
 								["Zheboqi-Gehennas"] = 4223,
 								["Vermina"] = 61241,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008668,
 							["end_time"] = 1716993391,
 							["nome"] = "Corborus",
+							["aID"] = "43438",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 5,
 										["g_amt"] = 0,
-										["n_max"] = 10651,
+										["b_dmg"] = 27214,
 										["targets"] = {
 											["Vermina"] = 56053,
 										},
@@ -6397,12 +6397,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 12,
 										["DODGE"] = 1,
-										["total"] = 56053,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6411,23 +6411,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 8,
-										["b_dmg"] = 27214,
-										["r_amt"] = 0,
+										["n_max"] = 10651,
+										["total"] = 56053,
 									}, -- [1]
 									[82415] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2560,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Greater Fire Elemental"] = 0,
-											["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
+											["Meridann-Gehennas"] = 3976,
 											["Greater Fire Elemental <Meridann-Gehennas>"] = 458,
 											["Ruksz-Gehennas"] = 4813,
-											["Meridann-Gehennas"] = 3976,
-											["Zheboqi-Gehennas"] = 4223,
-											["Vermina"] = 3641,
+											["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
 											["Jetcer-Gehennas"] = 4750,
+											["Vermina"] = 3641,
+											["Zheboqi-Gehennas"] = 4223,
 										},
 										["n_total"] = 22066,
 										["n_min"] = 205,
@@ -6446,14 +6446,14 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 13,
-										["b_dmg"] = 0,
+										["n_max"] = 2560,
 										["r_amt"] = 8,
 									},
 									[86881] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1912,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Meridann-Gehennas"] = 5736,
 											["Jetcer-Gehennas"] = 3600,
@@ -6476,24 +6476,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 1912,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 1612399.008668,
 							["start_time"] = 1716993358,
 							["delay"] = 1716993348,
-							["last_event"] = 1716993391,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.007714,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -6501,11 +6500,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 83512.007714,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 							["aID"] = "15438",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["[*] Thrashing Charge"] = true,
 								["Corborus"] = true,
@@ -6517,17 +6516,18 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007714,
 							["end_time"] = 1716993391,
-							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Greater Fire Elemental <Meridann-Gehennas>",
+							["ownerName"] = "Meridann-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["n_max"] = 4529,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 3419,
 											["Corborus"] = 42229,
@@ -6549,14 +6549,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 12046,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 4529,
 										["r_amt"] = 0,
 									}, -- [1]
 									[424340] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4185,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 7524,
 											["Corborus"] = 16677,
@@ -6578,14 +6578,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 4185,
 										["r_amt"] = 0,
 									},
 									[57984] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1847,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 5505,
 											["Corborus"] = 5497,
@@ -6607,14 +6607,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 1847,
 										["r_amt"] = 0,
 									},
 									[13376] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 222,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 222,
 											["Corborus"] = 2439,
@@ -6636,24 +6636,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 442,
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
+										["n_max"] = 222,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993391,
 							["damage_taken"] = 7774.007713999999,
 							["start_time"] = 1716993351,
 							["delay"] = 1716993367,
-							["last_event"] = 1716993391,
+							["last_dps"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.003887,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -6661,14 +6660,14 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 55029.003887,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 							["aID"] = "15438",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
-								["Rock Borer"] = true,
 								["[*] Thrashing Charge"] = true,
+								["Rock Borer"] = true,
 								["Corborus"] = true,
 							},
 							["targets"] = {
@@ -6678,17 +6677,18 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.003887,
 							["end_time"] = 1716993391,
-							["ownerName"] = "Ruksz-Gehennas",
 							["nome"] = "Greater Fire Elemental <Ruksz-Gehennas>",
+							["ownerName"] = "Ruksz-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3608,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 7785,
 											["Corborus"] = 28751,
@@ -6710,14 +6710,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 3608,
 										["r_amt"] = 0,
 									}, -- [1]
 									[424340] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3403,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 3353,
 											["Corborus"] = 6789,
@@ -6739,14 +6739,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 3403,
 										["r_amt"] = 0,
 									},
 									[57984] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1495,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 1453,
 											["Corborus"] = 4409,
@@ -6768,14 +6768,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 1495,
 										["r_amt"] = 0,
 									},
 									[13376] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 192,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Rock Borer"] = 956,
 											["Corborus"] = 1533,
@@ -6797,36 +6797,35 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 382,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 192,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993386,
 							["damage_taken"] = 4467.003887,
 							["start_time"] = 1716993335,
 							["delay"] = 1716993347,
-							["last_event"] = 1716993386,
+							["last_dps"] = 0,
 						}, -- [8]
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.007284,
-							["pets"] = {
-							},
+							["spellicon"] = 136025,
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 32674.007284,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 32674.007284,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "",
-							["aID"] = "",
-							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -6834,21 +6833,22 @@ _detalhes_database = {
 								["Greater Fire Elemental <Meridann-Gehennas>"] = 7316,
 								["Greater Fire Elemental <Ruksz-Gehennas>"] = 2413,
 							},
-							["spellicon"] = 136025,
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1716993391,
 							["nome"] = "[*] Thrashing Charge",
+							["end_time"] = 1716993391,
+							["aID"] = "",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[81828] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22945,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Vermina"] = 22945,
 											["Greater Fire Elemental <Meridann-Gehennas>"] = 7316,
@@ -6871,84 +6871,84 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 22945,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["last_event"] = 1716993369,
 							["damage_taken"] = 0.007284,
 							["start_time"] = 1716993375,
 							["delay"] = 1716993369,
-							["last_event"] = 1716993369,
+							["last_dps"] = 0,
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001451,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 10832.001451,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 10832.001451,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-43917-0000573D48",
-							["aID"] = "43917",
-							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
-								["Vermina"] = true,
+								["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
 								["Greater Fire Elemental <Meridann-Gehennas>"] = true,
 								["Ruksz-Gehennas"] = true,
-								["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
-								["Jetcer-Gehennas"] = true,
-								["Meridann-Gehennas"] = true,
+								["Vermina"] = true,
 								["Zheboqi-Gehennas"] = true,
+								["Meridann-Gehennas"] = true,
+								["Jetcer-Gehennas"] = true,
 							},
 							["targets"] = {
 								["Strength of Earth Totem <Meridann-Gehennas>"] = 4,
 								["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
-								["Jetcer-Gehennas"] = 4367,
-								["Vermina"] = 3213,
 								["Zheboqi-Gehennas"] = 1399,
+								["Vermina"] = 3213,
+								["Jetcer-Gehennas"] = 4367,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001451,
 							["end_time"] = 1716993391,
 							["nome"] = "Rock Borer",
+							["aID"] = "43917",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 2325,
+										["b_dmg"] = 836,
 										["targets"] = {
 											["Strength of Earth Totem <Meridann-Gehennas>"] = 4,
 											["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
-											["Jetcer-Gehennas"] = 4367,
-											["Vermina"] = 3213,
 											["Zheboqi-Gehennas"] = 1399,
+											["Vermina"] = 3213,
+											["Jetcer-Gehennas"] = 4367,
 										},
 										["n_total"] = 10832,
 										["n_min"] = 4,
 										["g_dmg"] = 0,
 										["counter"] = 10,
 										["DODGE"] = 1,
-										["total"] = 10832,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6957,24 +6957,23 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 8,
-										["b_dmg"] = 836,
-										["r_amt"] = 0,
+										["n_max"] = 2325,
+										["total"] = 10832,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1716993377,
 							["damage_taken"] = 227834.001451,
 							["start_time"] = 1716993367,
 							["delay"] = 1716993377,
-							["last_event"] = 1716993377,
+							["last_dps"] = 0,
 						}, -- [10]
 						{
 							["flag_original"] = 8466,
-							["totalabsorbed"] = 0.00114,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -6982,11 +6981,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.00114,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4457-725-21149-5874-0000D73D28",
 							["aID"] = "5874",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Rock Borer"] = true,
 							},
@@ -6995,32 +6994,40 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00114,
 							["end_time"] = 1716993391,
-							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Strength of Earth Totem <Meridann-Gehennas>",
+							["ownerName"] = "Meridann-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
 							["damage_taken"] = 4.00114,
 							["start_time"] = 1716993391,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_dps"] = 0,
 						}, -- [11]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 5,
 					["tipo"] = 3,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Ruksz-Gehennas"] = 1942,
+								["Meridann-Gehennas"] = 2097,
+								["Zheboqi-Gehennas"] = 52488,
+								["Vermina"] = 4115,
+								["Jetcer-Gehennas"] = 1015,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -7032,39 +7039,28 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-4476-0555D0FC",
 							["totalabsorb"] = 0.007561,
 							["last_hps"] = 1136.723036555177,
-							["aID"] = "4476-0555D0FC",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Ruksz-Gehennas"] = 4584,
 								["Meridann-Gehennas"] = 3976,
-								["Zheboqi-Gehennas"] = 5622,
-								["Vermina"] = 63497,
 								["Jetcer-Gehennas"] = 6160,
+								["Vermina"] = 63497,
+								["Zheboqi-Gehennas"] = 5622,
 							},
-							["serial"] = "Player-4476-0555D0FC",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.007561,
+							["classe"] = "PALADIN",
+							["healing_taken"] = 5622.007561,
+							["end_time"] = 1716993391,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 							},
-							["healing_taken"] = 5622.007561,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1716993391,
-							["targets_overheal"] = {
-								["Ruksz-Gehennas"] = 1942,
-								["Meridann-Gehennas"] = 2097,
-								["Jetcer-Gehennas"] = 1015,
-								["Vermina"] = 4115,
-								["Zheboqi-Gehennas"] = 52488,
-							},
-							["start_time"] = 1716993320,
+							["aID"] = "4476-0555D0FC",
 							["nome"] = "Zheboqi-Gehennas",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[25914] = {
 										["c_amt"] = 2,
@@ -7086,12 +7082,12 @@ _detalhes_database = {
 										["counter"] = 5,
 										["overheal"] = 5054,
 										["total"] = 39522,
-										["c_max"] = 13074,
+										["spellschool"] = 2,
 										["id"] = 25914,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 11728,
-										["spellschool"] = 2,
+										["c_max"] = 13074,
 										["c_total"] = 24802,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
@@ -7111,12 +7107,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["overheal"] = 0,
 										["total"] = 17969,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 85673,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
@@ -7137,12 +7133,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["overheal"] = 4115,
 										["total"] = 11193,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 19750,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
@@ -7163,15 +7159,40 @@ _detalhes_database = {
 										["counter"] = 4,
 										["overheal"] = 14105,
 										["total"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 87188,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+									[53652] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 3219,
+										["targets"] = {
+											["Vermina"] = 9533,
+										},
+										["n_total"] = 9533,
+										["n_min"] = 3145,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 9533,
+										["spellschool"] = 2,
+										["id"] = 53652,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_max"] = 0,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
 										["absorbed"] = 0,
 									},
 									[94289] = {
@@ -7189,52 +7210,33 @@ _detalhes_database = {
 										["counter"] = 7,
 										["overheal"] = 38383,
 										["total"] = 5622,
-										["c_max"] = 2427,
+										["spellschool"] = 2,
 										["id"] = 94289,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 2427,
 										["c_total"] = 4223,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["absorbed"] = 0,
 									},
-									[53652] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 3219,
-										["targets"] = {
-											["Vermina"] = 9533,
-										},
-										["n_total"] = 9533,
-										["n_min"] = 3145,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 9533,
-										["c_max"] = 0,
-										["id"] = 53652,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 2,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
 								},
+								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["start_time"] = 1716993320,
 							["last_event"] = 1716993383,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007561,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -7246,31 +7248,25 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
 							["totalabsorb"] = 0.008616,
 							["last_hps"] = 251.8610076066456,
-							["aID"] = "4465-02BB4683",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Vermina"] = 18576,
 							},
-							["serial"] = "Player-4465-02BB4683",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.008616,
+							["classe"] = "PALADIN",
+							["healing_taken"] = 82073.008616,
+							["end_time"] = 1716993391,
 							["healing_from"] = {
 								["Vermina"] = true,
 								["Zheboqi-Gehennas"] = true,
 							},
-							["healing_taken"] = 82073.008616,
-							["grupo"] = true,
-							["classe"] = "PALADIN",
-							["end_time"] = 1716993391,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1716993390,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[85673] = {
 										["c_amt"] = 0,
@@ -7286,65 +7282,64 @@ _detalhes_database = {
 										["counter"] = 2,
 										["overheal"] = 0,
 										["total"] = 18576,
-										["c_max"] = 0,
+										["spellschool"] = 2,
 										["id"] = 85673,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 2,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["start_time"] = 1716993390,
 							["last_event"] = 1716993354,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008616,
 							["delay"] = 1716993354,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+								["Jetcer-Gehennas"] = 14866,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "DRUID",
 							["totalover"] = 14866.006626,
 							["total_without_pet"] = 10334.006626,
 							["total"] = 10334.006626,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 103,
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
-							["aID"] = "4476-055B0D7A",
+							["serial"] = "Player-4476-055B0D7A",
 							["totalabsorb"] = 0.006626,
 							["last_hps"] = 140.1126245815966,
-							["boss_fight_component"] = true,
-							["serial"] = "Player-4476-055B0D7A",
 							["targets"] = {
 								["Jetcer-Gehennas"] = 10334,
 							},
-							["colocacao"] = 3,
-							["spec"] = 103,
+							["heal_enemy_amt"] = 0,
 							["totalover_without_pet"] = 0.006626,
-							["grupo"] = true,
 							["healing_taken"] = 16494.006626,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 								["Jetcer-Gehennas"] = true,
 							},
-							["classe"] = "DRUID",
 							["end_time"] = 1716993391,
-							["targets_overheal"] = {
-								["Jetcer-Gehennas"] = 14866,
-							},
-							["start_time"] = 1716993356,
+							["aID"] = "4476-055B0D7A",
 							["nome"] = "Jetcer-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[34299] = {
 										["c_amt"] = 0,
@@ -7361,65 +7356,64 @@ _detalhes_database = {
 										["counter"] = 8,
 										["overheal"] = 14866,
 										["total"] = 10334,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["id"] = 34299,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 8,
 										["absorbed"] = 3150,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["start_time"] = 1716993356,
 							["last_event"] = 1716993385,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006626,
 							["delay"] = 1716993374,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "SHAMAN",
 							["totalover"] = 0.002789,
 							["total_without_pet"] = 229.002789,
 							["total"] = 229.002789,
-							["targets_absorbs"] = {
-								["Ruksz-Gehennas"] = 229,
-							},
+							["spec"] = 262,
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
-							["aID"] = "4476-057D0C29",
+							["serial"] = "Player-4476-057D0C29",
 							["totalabsorb"] = 229.002789,
 							["last_hps"] = 3.104912060204013,
-							["boss_fight_component"] = true,
-							["serial"] = "Player-4476-057D0C29",
 							["targets"] = {
 								["Ruksz-Gehennas"] = 229,
 							},
-							["colocacao"] = 4,
-							["spec"] = 262,
+							["heal_enemy_amt"] = 0,
 							["totalover_without_pet"] = 0.002789,
-							["grupo"] = true,
 							["healing_taken"] = 4813.002789,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 								["Ruksz-Gehennas"] = true,
 							},
-							["classe"] = "SHAMAN",
 							["end_time"] = 1716993391,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1716993390,
+							["aID"] = "4476-057D0C29",
 							["nome"] = "Ruksz-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[77830] = {
 										["c_amt"] = 0,
@@ -7435,12 +7429,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["overheal"] = 0,
 										["total"] = 229,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["id"] = 77830,
 										["targets_absorbs"] = {
 											["Ruksz-Gehennas"] = 229,
 										},
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["c_min"] = 0,
 										["n_amt"] = 1,
 										["c_total"] = 0,
@@ -7449,93 +7443,96 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["start_time"] = 1716993390,
 							["last_event"] = 1716993328,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002789,
 							["delay"] = 1716993328,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+								["Ruksz-Gehennas"] = 229,
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "SHAMAN",
 							["totalover"] = 0.001461,
 							["total_without_pet"] = 0.001461,
 							["total"] = 0.001461,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 262,
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 5,
 							["on_hold"] = false,
-							["aID"] = "4476-056218BB",
+							["serial"] = "Player-4476-056218BB",
 							["totalabsorb"] = 0.001461,
 							["last_hps"] = 2.140032224995729e-05,
-							["boss_fight_component"] = true,
-							["serial"] = "Player-4476-056218BB",
 							["targets"] = {
 							},
-							["colocacao"] = 5,
-							["spec"] = 262,
+							["heal_enemy_amt"] = 0,
 							["totalover_without_pet"] = 0.001461,
-							["grupo"] = true,
 							["healing_taken"] = 3976.001461,
 							["healing_from"] = {
 								["Zheboqi-Gehennas"] = true,
 							},
-							["classe"] = "SHAMAN",
 							["end_time"] = 1716993391,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1716993391,
+							["aID"] = "4476-056218BB",
 							["nome"] = "Meridann-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
-							["custom"] = 0,
+							["grupo"] = true,
+							["start_time"] = 1716993391,
 							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001461,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["targets_absorbs"] = {
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "UNKNOW",
 							["totalover"] = 0.00805,
 							["total_without_pet"] = 0.00805,
+							["monster"] = true,
 							["total"] = 0.00805,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 							["totalabsorb"] = 0.00805,
 							["last_hps"] = 0,
-							["aID"] = "43438",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 							["totalover_without_pet"] = 0.00805,
-							["monster"] = true,
 							["healing_taken"] = 0.00805,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
+							["last_event"] = 1716993332,
+							["aID"] = "43438",
 							["end_time"] = 1716993391,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1716993391,
 							["nome"] = "Corborus",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[82415] = {
 										["c_amt"] = 0,
@@ -7568,28 +7565,32 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1716993391,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1716993332,
+							["tipo"] = 2,
 							["totaldenied"] = 3150.00805,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [6]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 5,
 					["tipo"] = 7,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.005909,
 							["pets"] = {
 							},
-							["aID"] = "4476-055B0D7A",
-							["passiveover"] = 0.005909,
+							["classe"] = "DRUID",
+							["totalover"] = 6552.005909,
 							["total"] = 635.005909,
 							["spec"] = 103,
+							["serial"] = "Player-4476-055B0D7A",
 							["received"] = 132.005909,
 							["targets"] = {
 								["Jetcer-Gehennas"] = 132,
@@ -7597,54 +7598,53 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.005909,
-							["boss_fight_component"] = true,
 							["nome"] = "Jetcer-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
-									[17080] = {
-										["total"] = 12,
-										["id"] = 17080,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jetcer-Gehennas"] = 12,
-										},
-										["counter"] = 1,
-									},
-									[29166] = {
-										["total"] = 503,
-										["id"] = 29166,
-										["totalover"] = 0,
-										["targets"] = {
-											["Zheboqi-Gehennas"] = 503,
-										},
-										["counter"] = 2,
-									},
 									[68285] = {
 										["total"] = 0,
-										["id"] = 68285,
 										["totalover"] = 6552,
+										["id"] = 68285,
 										["targets"] = {
 											["Jetcer-Gehennas"] = 0,
 										},
 										["counter"] = 8,
 									},
+									[29166] = {
+										["total"] = 503,
+										["totalover"] = 0,
+										["id"] = 29166,
+										["targets"] = {
+											["Zheboqi-Gehennas"] = 503,
+										},
+										["counter"] = 2,
+									},
+									[17080] = {
+										["total"] = 12,
+										["totalover"] = 0,
+										["id"] = 17080,
+										["targets"] = {
+											["Jetcer-Gehennas"] = 12,
+										},
+										["counter"] = 1,
+									},
 									[51178] = {
 										["total"] = 120,
-										["id"] = 51178,
 										["totalover"] = 0,
+										["id"] = 51178,
 										["targets"] = {
 											["Jetcer-Gehennas"] = 120,
 										},
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "DRUID",
+							["passiveover"] = 0.005909,
+							["aID"] = "4476-055B0D7A",
 							["last_event"] = 1716993389,
-							["totalover"] = 6552.005909,
-							["serial"] = "Player-4476-055B0D7A",
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [1]
 						{
@@ -7652,37 +7652,37 @@ _detalhes_database = {
 							["resource"] = 3.007777,
 							["pets"] = {
 							},
-							["aID"] = "4476-0555D0FC",
-							["passiveover"] = 0.007777,
-							["total"] = 1000.007777,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.007777,
+							["resource_type"] = 9,
+							["serial"] = "Player-4476-0555D0FC",
 							["received"] = 1503.007777,
 							["targets"] = {
 								["Zheboqi-Gehennas"] = 1000,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.007777,
-							["boss_fight_component"] = true,
-							["resource_type"] = 9,
 							["nome"] = "Zheboqi-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[67666] = {
 										["total"] = 1000,
-										["id"] = 67666,
 										["totalover"] = 0,
+										["id"] = 67666,
 										["targets"] = {
 											["Zheboqi-Gehennas"] = 1000,
 										},
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
+							["aID"] = "4476-0555D0FC",
+							["passiveover"] = 0.007777,
 							["last_event"] = 1716993391,
-							["totalover"] = 0.007777,
-							["serial"] = "Player-4476-0555D0FC",
+							["total"] = 1000.007777,
 							["tipo"] = 3,
 						}, -- [2]
 						{
@@ -7690,25 +7690,24 @@ _detalhes_database = {
 							["resource"] = 12.001362,
 							["pets"] = {
 							},
-							["aID"] = "4465-02BB4683",
-							["passiveover"] = 0.001362,
-							["total"] = 17023.001362,
+							["classe"] = "PALADIN",
+							["totalover"] = 213.001362,
+							["resource_type"] = 9,
+							["serial"] = "Player-4465-02BB4683",
 							["received"] = 17023.001362,
 							["targets"] = {
 								["Vermina"] = 17023,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.001362,
-							["boss_fight_component"] = true,
-							["resource_type"] = 9,
 							["nome"] = "Vermina",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31930] = {
 										["total"] = 14730,
-										["id"] = 31930,
 										["totalover"] = 0,
+										["id"] = 31930,
 										["targets"] = {
 											["Vermina"] = 14730,
 										},
@@ -7716,20 +7715,21 @@ _detalhes_database = {
 									},
 									[84627] = {
 										["total"] = 2293,
-										["id"] = 84627,
 										["totalover"] = 213,
+										["id"] = 84627,
 										["targets"] = {
 											["Vermina"] = 2293,
 										},
 										["counter"] = 7,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "PALADIN",
+							["aID"] = "4465-02BB4683",
+							["passiveover"] = 0.001362,
 							["last_event"] = 1716993393,
-							["totalover"] = 213.001362,
-							["serial"] = "Player-4465-02BB4683",
+							["total"] = 17023.001362,
 							["tipo"] = 3,
 						}, -- [3]
 						{
@@ -7737,25 +7737,24 @@ _detalhes_database = {
 							["resource"] = 0.003625,
 							["pets"] = {
 							},
-							["aID"] = "4476-056218BB",
-							["passiveover"] = 0.003625,
+							["classe"] = "SHAMAN",
+							["totalover"] = 4635.003625,
 							["total"] = 20129.003625,
 							["spec"] = 262,
+							["serial"] = "Player-4476-056218BB",
 							["received"] = 20129.003625,
 							["targets"] = {
 								["Meridann-Gehennas"] = 20129,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.003625,
-							["boss_fight_component"] = true,
 							["nome"] = "Meridann-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[39104] = {
 										["total"] = 0,
-										["id"] = 39104,
 										["totalover"] = 815,
+										["id"] = 39104,
 										["targets"] = {
 											["Meridann-Gehennas"] = 0,
 										},
@@ -7763,8 +7762,8 @@ _detalhes_database = {
 									},
 									[51490] = {
 										["total"] = 1335,
-										["id"] = 51490,
 										["totalover"] = 3271,
+										["id"] = 51490,
 										["targets"] = {
 											["Meridann-Gehennas"] = 1335,
 										},
@@ -7772,20 +7771,21 @@ _detalhes_database = {
 									},
 									[88765] = {
 										["total"] = 18794,
-										["id"] = 88765,
 										["totalover"] = 549,
+										["id"] = 88765,
 										["targets"] = {
 											["Meridann-Gehennas"] = 18794,
 										},
 										["counter"] = 21,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "SHAMAN",
+							["passiveover"] = 0.003625,
+							["aID"] = "4476-056218BB",
 							["last_event"] = 1716993395,
-							["totalover"] = 4635.003625,
-							["serial"] = "Player-4476-056218BB",
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [4]
 						{
@@ -7793,106 +7793,106 @@ _detalhes_database = {
 							["resource"] = 0.00426,
 							["pets"] = {
 							},
-							["aID"] = "4476-057D0C29",
-							["passiveover"] = 0.00426,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.00426,
 							["total"] = 9036.00426,
 							["spec"] = 262,
+							["serial"] = "Player-4476-057D0C29",
 							["received"] = 9036.00426,
 							["targets"] = {
 								["Ruksz-Gehennas"] = 9036,
 							},
 							["powertype"] = 0,
 							["alternatepower"] = 0.00426,
-							["boss_fight_component"] = true,
 							["nome"] = "Ruksz-Gehennas",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[88765] = {
 										["total"] = 9036,
-										["id"] = 88765,
 										["totalover"] = 0,
+										["id"] = 88765,
 										["targets"] = {
 											["Ruksz-Gehennas"] = 9036,
 										},
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "SHAMAN",
+							["passiveover"] = 0.00426,
+							["aID"] = "4476-057D0C29",
 							["last_event"] = 1716993387,
-							["totalover"] = 0.00426,
-							["serial"] = "Player-4476-057D0C29",
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [5]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 5,
 					["tipo"] = 9,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[31935] = {
-										["activedamt"] = 0,
-										["id"] = 31935,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 3,
+										["id"] = 31935,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31803] = {
-										["activedamt"] = 0,
-										["id"] = 31803,
+										["appliedamt"] = 5,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 40,
-										["appliedamt"] = 5,
+										["id"] = 31803,
 										["refreshamt"] = 49,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[68055] = {
-										["activedamt"] = 0,
-										["id"] = 68055,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 30,
-										["appliedamt"] = 4,
+										["id"] = 68055,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[57724] = {
-										["activedamt"] = 1,
-										["id"] = 57724,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 72,
-										["appliedamt"] = 1,
+										["id"] = 57724,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[26017] = {
-										["activedamt"] = 0,
-										["id"] = 26017,
+										["appliedamt"] = 5,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 30,
-										["appliedamt"] = 5,
+										["id"] = 26017,
 										["refreshamt"] = 7,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["cooldowns_defensive"] = 1.003778,
 							["pets"] = {
@@ -7901,208 +7901,208 @@ _detalhes_database = {
 								1716993319.397, -- [1]
 								498, -- [2]
 							},
-							["aID"] = "4465-02BB4683",
+							["classe"] = "PALADIN",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[97341] = {
-										["activedamt"] = 1,
-										["id"] = 97341,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 97341,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[92166] = {
-										["activedamt"] = 1,
-										["id"] = 92166,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 92166,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31801] = {
-										["activedamt"] = 1,
-										["id"] = 31801,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 31801,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[85416] = {
-										["activedamt"] = 1,
-										["id"] = 85416,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 85416,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[20178] = {
-										["activedamt"] = 1,
-										["id"] = 20178,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 20178,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[31930] = {
-										["activedamt"] = 3,
-										["id"] = 31930,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 47,
-										["appliedamt"] = 3,
+										["id"] = 31930,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[498] = {
-										["activedamt"] = 1,
-										["id"] = 498,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 498,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[25780] = {
-										["activedamt"] = 1,
-										["id"] = 25780,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 25780,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[91338] = {
-										["activedamt"] = 2,
-										["id"] = 91338,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 74,
-										["appliedamt"] = 2,
+										["id"] = 91338,
 										["refreshamt"] = 108,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[7294] = {
-										["activedamt"] = 1,
-										["id"] = 7294,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 7294,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[26573] = {
-										["activedamt"] = 2,
-										["id"] = 26573,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 20,
-										["appliedamt"] = 2,
+										["id"] = 26573,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 72221,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[20925] = {
-										["activedamt"] = 3,
-										["id"] = 20925,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 22,
-										["appliedamt"] = 3,
+										["id"] = 20925,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[96312] = {
-										["activedamt"] = 1,
-										["id"] = 96312,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
+										["id"] = 96312,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[76691] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 76691,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[85433] = {
-										["activedamt"] = 4,
-										["id"] = 85433,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 21,
-										["appliedamt"] = 4,
+										["id"] = 85433,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[94686] = {
-										["activedamt"] = 1,
-										["id"] = 94686,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 33,
-										["appliedamt"] = 1,
+										["id"] = 94686,
 										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[76691] = {
-										["activedamt"] = 1,
-										["id"] = 76691,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 172,
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["cc_done_targets"] = {
 								["Rock Borer"] = 3,
 							},
+							["serial"] = "Player-4465-02BB4683",
 							["buff_uptime"] = 759,
 							["cc_done_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[31935] = {
 										["id"] = 31935,
@@ -8112,12 +8112,19 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["cooldowns_defensive_targets"] = {
 								["Vermina"] = 1,
 							},
+							["tipo"] = 4,
+							["cc_done"] = 3.003313,
+							["boss_fight_component"] = true,
+							["grupo"] = true,
+							["nome"] = "Vermina",
+							["aID"] = "4465-02BB4683",
+							["last_event"] = 1716993391,
 							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[498] = {
 										["id"] = 498,
@@ -8127,188 +8134,181 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
-							["cc_done"] = 3.003313,
-							["nome"] = "Vermina",
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
-							["classe"] = "PALADIN",
-							["tipo"] = 4,
-							["grupo"] = true,
-							["serial"] = "Player-4465-02BB4683",
-							["last_event"] = 1716993391,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[57724] = {
-										["activedamt"] = 1,
-										["id"] = 57724,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 72,
-										["appliedamt"] = 1,
+										["id"] = 57724,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 35,
-										["appliedamt"] = 2,
+										["id"] = 8050,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["pets"] = {
-								"Fire Elemental Totem <Meridann-Gehennas>", -- [1]
-								"Greater Fire Elemental <Meridann-Gehennas>", -- [2]
-							},
-							["aID"] = "4476-056218BB",
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 356,
+							["classe"] = "SHAMAN",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[33697] = {
-										["activedamt"] = 1,
-										["id"] = 33697,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 33697,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[54758] = {
-										["activedamt"] = 2,
-										["id"] = 54758,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 18,
-										["appliedamt"] = 2,
+										["id"] = 54758,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 324,
 										["refreshamt"] = 21,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[77747] = {
-										["activedamt"] = 2,
-										["id"] = 77747,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 68,
-										["appliedamt"] = 2,
+										["id"] = 77747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16246] = {
-										["activedamt"] = 9,
-										["id"] = 16246,
+										["appliedamt"] = 9,
 										["targets"] = {
 										},
+										["activedamt"] = 9,
 										["uptime"] = 51,
-										["appliedamt"] = 9,
+										["id"] = 16246,
 										["refreshamt"] = 18,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[72416] = {
-										["activedamt"] = 1,
-										["id"] = 72416,
+									[90885] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 90885,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[75473] = {
-										["activedamt"] = 1,
-										["id"] = 75473,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 75473,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[90885] = {
-										["activedamt"] = 1,
-										["id"] = 90885,
+									[72416] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 72416,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16166] = {
-										["activedamt"] = 1,
-										["id"] = 16166,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 16166,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 72221,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[64701] = {
-										["activedamt"] = 1,
-										["id"] = 64701,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 64701,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 107,
-							["nome"] = "Meridann-Gehennas",
+							["boss_fight_component"] = true,
 							["spec"] = 262,
 							["grupo"] = true,
-							["buff_uptime"] = 356,
-							["boss_fight_component"] = true,
+							["pets"] = {
+								"Fire Elemental Totem <Meridann-Gehennas>", -- [1]
+								"Greater Fire Elemental <Meridann-Gehennas>", -- [2]
+							},
+							["aID"] = "4476-056218BB",
+							["nome"] = "Meridann-Gehennas",
+							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4476-056218BB",
@@ -8317,418 +8317,418 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[57724] = {
-										["activedamt"] = 1,
-										["id"] = 57724,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 72,
-										["appliedamt"] = 1,
+										["id"] = 57724,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["dispell"] = 9.001169,
 							["pets"] = {
 							},
-							["aID"] = "4476-0555D0FC",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[465] = {
-										["activedamt"] = 1,
-										["id"] = 465,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20154] = {
-										["activedamt"] = 1,
-										["id"] = 20154,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[94686] = {
-										["activedamt"] = 3,
-										["id"] = 94686,
-										["targets"] = {
-										},
-										["uptime"] = 37,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20053] = {
-										["activedamt"] = 2,
-										["id"] = 20053,
-										["targets"] = {
-										},
-										["uptime"] = 69,
-										["appliedamt"] = 2,
-										["refreshamt"] = 18,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[79063] = {
-										["activedamt"] = 1,
-										["id"] = 79063,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[54149] = {
-										["activedamt"] = 4,
-										["id"] = 54149,
-										["targets"] = {
-										},
-										["uptime"] = 36,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53657] = {
-										["activedamt"] = 1,
-										["id"] = 53657,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["classe"] = "PALADIN",
+							["dispell_targets"] = {
+								["Ruksz-Gehennas"] = 2,
+								["Vermina"] = 1,
+								["Zheboqi-Gehennas"] = 2,
+								["Jetcer-Gehennas"] = 2,
+								["Meridann-Gehennas"] = 2,
 							},
 							["debuff_uptime"] = 72,
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
+							["serial"] = "Player-4476-0555D0FC",
 							["buff_uptime"] = 512,
 							["dispell_oque"] = {
 								[82415] = 9,
 							},
 							["dispell_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[4987] = {
-										["dispell"] = 9,
+										["targets"] = {
+											["Ruksz-Gehennas"] = 2,
+											["Vermina"] = 1,
+											["Zheboqi-Gehennas"] = 2,
+											["Jetcer-Gehennas"] = 2,
+											["Meridann-Gehennas"] = 2,
+										},
 										["id"] = 4987,
 										["dispell_oque"] = {
 											[82415] = 9,
 										},
-										["targets"] = {
-											["Ruksz-Gehennas"] = 2,
-											["Meridann-Gehennas"] = 2,
-											["Zheboqi-Gehennas"] = 2,
-											["Jetcer-Gehennas"] = 2,
-											["Vermina"] = 1,
-										},
+										["dispell"] = 9,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Zheboqi-Gehennas",
-							["dispell_targets"] = {
-								["Ruksz-Gehennas"] = 2,
-								["Meridann-Gehennas"] = 2,
-								["Zheboqi-Gehennas"] = 2,
-								["Jetcer-Gehennas"] = 2,
-								["Vermina"] = 1,
-							},
-							["classe"] = "PALADIN",
-							["tipo"] = 4,
-							["grupo"] = true,
-							["serial"] = "Player-4476-0555D0FC",
-							["last_event"] = 1716993391,
-						}, -- [3]
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
-								["_ActorTable"] = {
-									[1079] = {
-										["activedamt"] = 0,
-										["id"] = 1079,
-										["targets"] = {
-										},
-										["uptime"] = 22,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33876] = {
-										["activedamt"] = 0,
-										["id"] = 33876,
-										["targets"] = {
-										},
-										["uptime"] = 32,
-										["appliedamt"] = 5,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[91565] = {
-										["activedamt"] = 0,
-										["id"] = 91565,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 1,
-										["refreshamt"] = 7,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57724] = {
-										["activedamt"] = 1,
-										["id"] = 57724,
-										["targets"] = {
-										},
-										["uptime"] = 72,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[58180] = {
-										["activedamt"] = 0,
-										["id"] = 58180,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 5,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1822] = {
-										["activedamt"] = 0,
-										["id"] = 1822,
-										["targets"] = {
-										},
-										["uptime"] = 25,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
 							},
-							["pets"] = {
-							},
-							["aID"] = "4476-055B0D7A",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[92052] = {
-										["activedamt"] = 1,
-										["id"] = 92052,
-										["targets"] = {
-										},
-										["uptime"] = 1,
+									[465] = {
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1850] = {
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["id"] = 1850,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[69369] = {
-										["activedamt"] = 2,
-										["id"] = 69369,
-										["targets"] = {
-										},
-										["uptime"] = 25,
-										["appliedamt"] = 2,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[50334] = {
-										["activedamt"] = 1,
-										["id"] = 50334,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
 										["uptime"] = 74,
+										["id"] = 465,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20154] = {
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[80886] = {
-										["activedamt"] = 2,
-										["id"] = 80886,
 										["targets"] = {
 										},
-										["uptime"] = 18,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[5217] = {
-										["activedamt"] = 2,
-										["id"] = 5217,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[67703] = {
-										["activedamt"] = 2,
-										["id"] = 67703,
-										["targets"] = {
-										},
-										["uptime"] = 30,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[24932] = {
 										["activedamt"] = 1,
-										["id"] = 24932,
-										["targets"] = {
-										},
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 20154,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[81022] = {
-										["activedamt"] = 2,
-										["id"] = 81022,
+									[94686] = {
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 6,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16870] = {
-										["activedamt"] = 4,
-										["id"] = 16870,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[52610] = {
-										["activedamt"] = 2,
-										["id"] = 52610,
-										["targets"] = {
-										},
-										["uptime"] = 60,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[93341] = {
-										["activedamt"] = 1,
-										["id"] = 93341,
-										["targets"] = {
-										},
-										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["activedamt"] = 3,
+										["uptime"] = 37,
+										["id"] = 94686,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 72221,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[16591] = {
-										["activedamt"] = 1,
-										["id"] = 16591,
+									[79063] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
+										["id"] = 79063,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53657] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 53657,
+										["refreshamt"] = 4,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54149] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 4,
+										["uptime"] = 36,
+										["id"] = 54149,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20053] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 69,
+										["id"] = 20053,
+										["refreshamt"] = 18,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["boss_fight_component"] = true,
+							["grupo"] = true,
+							["aID"] = "4476-0555D0FC",
+							["tipo"] = 4,
+							["last_event"] = 1716993391,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Zheboqi-Gehennas",
+						}, -- [3]
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[1079] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 22,
+										["id"] = 1079,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[33876] = {
+										["appliedamt"] = 5,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 32,
+										["id"] = 33876,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[91565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 29,
+										["id"] = 91565,
+										["refreshamt"] = 7,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57724] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 72,
+										["id"] = 57724,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[58180] = {
+										["appliedamt"] = 5,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 11,
+										["id"] = 58180,
+										["refreshamt"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1822] = {
+										["appliedamt"] = 3,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 25,
+										["id"] = 1822,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 551,
+							["classe"] = "DRUID",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[92052] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 92052,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1850] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 1850,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 768,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[93341] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 93341,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[50334] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 50334,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[69369] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 25,
+										["id"] = 69369,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5217] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 8,
+										["id"] = 5217,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[80886] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 18,
+										["id"] = 80886,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[81022] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 6,
+										["id"] = 81022,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[67703] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 30,
+										["id"] = 67703,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[52610] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 60,
+										["id"] = 52610,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16870] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 4,
+										["uptime"] = 3,
+										["id"] = 16870,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[72221] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 72221,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16591] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 74,
+										["id"] = 16591,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 191,
-							["nome"] = "Jetcer-Gehennas",
+							["boss_fight_component"] = true,
 							["spec"] = 103,
 							["grupo"] = true,
-							["buff_uptime"] = 551,
-							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["aID"] = "4476-055B0D7A",
+							["nome"] = "Jetcer-Gehennas",
+							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["classe"] = "DRUID",
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4476-055B0D7A",
@@ -8737,151 +8737,151 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[57724] = {
-										["activedamt"] = 1,
-										["id"] = 57724,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 72,
-										["appliedamt"] = 1,
+										["id"] = 57724,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 35,
-										["appliedamt"] = 4,
+										["id"] = 8050,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["pets"] = {
-								"Fire Elemental Totem <Ruksz-Gehennas>", -- [1]
-								"Greater Fire Elemental <Ruksz-Gehennas>", -- [2]
-							},
-							["aID"] = "4476-057D0C29",
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 292,
+							["classe"] = "SHAMAN",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[90885] = {
-										["activedamt"] = 1,
-										["id"] = 90885,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 90885,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 324,
 										["refreshamt"] = 12,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[77747] = {
-										["activedamt"] = 2,
-										["id"] = 77747,
+									[8076] = {
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
-										["uptime"] = 71,
-										["appliedamt"] = 2,
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 8076,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5677] = {
-										["activedamt"] = 0,
-										["id"] = 5677,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 5677,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2825] = {
-										["activedamt"] = 1,
-										["id"] = 2825,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 40,
-										["appliedamt"] = 1,
+										["id"] = 2825,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16246] = {
-										["activedamt"] = 6,
-										["id"] = 16246,
+										["appliedamt"] = 6,
 										["targets"] = {
 										},
+										["activedamt"] = 6,
 										["uptime"] = 26,
-										["appliedamt"] = 6,
+										["id"] = 16246,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2895] = {
-										["activedamt"] = 0,
-										["id"] = 2895,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 2895,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[72221] = {
-										["activedamt"] = 1,
-										["id"] = 72221,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 74,
-										["appliedamt"] = 1,
+										["id"] = 72221,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[8076] = {
-										["activedamt"] = 0,
-										["id"] = 8076,
+									[77747] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["activedamt"] = 2,
+										["uptime"] = 71,
+										["id"] = 77747,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 107,
-							["nome"] = "Ruksz-Gehennas",
+							["boss_fight_component"] = true,
 							["spec"] = 262,
 							["grupo"] = true,
-							["buff_uptime"] = 292,
-							["boss_fight_component"] = true,
+							["pets"] = {
+								"Fire Elemental Totem <Ruksz-Gehennas>", -- [1]
+								"Greater Fire Elemental <Ruksz-Gehennas>", -- [2]
+							},
+							["aID"] = "4476-057D0C29",
+							["nome"] = "Ruksz-Gehennas",
+							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4476-057D0C29",
@@ -8889,16 +8889,23 @@ _detalhes_database = {
 						}, -- [5]
 						{
 							["flag_original"] = 2600,
-							["serial"] = "Creature-0-4457-725-21149-43662-0006573C81",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
-							["damage_spellid"] = 81711,
 							["pets"] = {
 							},
+							["aID"] = "43662",
+							["boss_debuff"] = true,
+							["debuff_uptime"] = 0,
+							["spellschool"] = 1,
+							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
+							["nome"] = "Fracture",
+							["damage_spellid"] = 81711,
+							["last_event"] = 1716993322,
+							["damage_twin"] = "Unbound Earth Rager",
 							["debuff_uptime_targets"] = {
 								["Jetcer-Gehennas"] = {
 									["uptime"] = 0,
@@ -8909,14 +8916,7 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["damage_twin"] = "Unbound Earth Rager",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["aID"] = "43662",
-							["nome"] = "Fracture",
-							["last_event"] = 1716993322,
+							["serial"] = "Creature-0-4457-725-21149-43662-0006573C81",
 							["tipo"] = 4,
 						}, -- [6]
 						{
@@ -8924,12 +8924,12 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "15439",
-							["serial"] = "Creature-0-4457-725-21149-15439-0000573D2C",
 							["ownerName"] = "Ruksz-Gehennas",
 							["nome"] = "Fire Elemental Totem <Ruksz-Gehennas>",
+							["boss_fight_component"] = true,
 							["last_event"] = 0,
+							["aID"] = "15439",
+							["serial"] = "Creature-0-4457-725-21149-15439-0000573D2C",
 							["tipo"] = 4,
 						}, -- [7]
 						{
@@ -8937,12 +8937,12 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "15439",
-							["serial"] = "Creature-0-4457-725-21149-15439-0000573D2F",
 							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Fire Elemental Totem <Meridann-Gehennas>",
+							["boss_fight_component"] = true,
 							["last_event"] = 0,
+							["aID"] = "15439",
+							["serial"] = "Creature-0-4457-725-21149-15439-0000573D2F",
 							["tipo"] = 4,
 						}, -- [8]
 						{
@@ -8950,44 +8950,47 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "15438",
-							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 							["ownerName"] = "Meridann-Gehennas",
 							["nome"] = "Greater Fire Elemental <Meridann-Gehennas>",
+							["boss_fight_component"] = true,
 							["last_event"] = 0,
+							["aID"] = "15438",
+							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 							["tipo"] = 4,
 						}, -- [9]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "43438",
 							["nome"] = "Corborus",
+							["boss_fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
+							["aID"] = "43438",
 						}, -- [10]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["aID"] = "43438",
 							["boss_debuff"] = true,
+							["damage_spellid"] = 82415,
 							["monster"] = true,
 							["debuff_uptime"] = 35,
 							["spellschool"] = 32,
-							["nome"] = "Dampening Wave",
-							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Dampening Wave",
+							["last_event"] = 1716993346,
+							["damage_twin"] = "Corborus",
 							["debuff_uptime_targets"] = {
 								["Ruksz-Gehennas"] = {
 									["uptime"] = 9,
@@ -9003,8 +9006,8 @@ _detalhes_database = {
 									["actived"] = false,
 									["refreshamt"] = 0,
 								},
-								["Jetcer-Gehennas"] = {
-									["uptime"] = 9,
+								["Zheboqi-Gehennas"] = {
+									["uptime"] = 4,
 									["appliedamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
@@ -9017,50 +9020,50 @@ _detalhes_database = {
 									["actived"] = false,
 									["refreshamt"] = 0,
 								},
-								["Zheboqi-Gehennas"] = {
-									["uptime"] = 4,
+								["Jetcer-Gehennas"] = {
+									["uptime"] = 9,
 									["appliedamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
 									["refreshamt"] = 0,
 								},
 							},
-							["tipo"] = 4,
-							["damage_twin"] = "Corborus",
-							["damage_spellid"] = 82415,
 							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
-							["last_event"] = 1716993346,
+							["tipo"] = 4,
 						}, -- [11]
 						{
 							["flag_original"] = 8466,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "15438",
-							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 							["ownerName"] = "Ruksz-Gehennas",
 							["nome"] = "Greater Fire Elemental <Ruksz-Gehennas>",
+							["boss_fight_component"] = true,
 							["last_event"] = 0,
+							["aID"] = "15438",
+							["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 							["tipo"] = 4,
 						}, -- [12]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["aID"] = "43438",
 							["boss_debuff"] = true,
+							["damage_spellid"] = 86881,
 							["monster"] = true,
 							["debuff_uptime"] = 13,
 							["spellschool"] = 1,
-							["nome"] = "Crystal Barrage",
-							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Crystal Barrage",
+							["last_event"] = 1716993391,
+							["damage_twin"] = "Corborus",
 							["debuff_uptime_targets"] = {
 								["Meridann-Gehennas"] = {
 									["uptime"] = 4,
@@ -9084,21 +9087,24 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["tipo"] = 4,
-							["damage_twin"] = "Corborus",
-							["damage_spellid"] = 86881,
 							["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
-							["last_event"] = 1716993391,
+							["tipo"] = 4,
 						}, -- [13]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 5,
 					["tipo"] = 2,
+					["combatId"] = 5,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 0.03246464897047879,
+				["raid_roster"] = {
+					["Ruksz-Gehennas"] = "Player-4476-057D0C29",
+					["Meridann-Gehennas"] = "Player-4476-056218BB",
+					["Zheboqi-Gehennas"] = "Player-4476-0555D0FC",
+					["Vermina"] = "Player-4465-02BB4683",
+					["Jetcer-Gehennas"] = "Player-4476-055B0D7A",
+				},
 				["tempo_start"] = 1716993317,
 				["last_events_tables"] = {
 				},
@@ -9633,529 +9639,487 @@ _detalhes_database = {
 							1, -- [7]
 						}, -- [58]
 					},
-					["Meridann-Gehennas"] = {
+					["Vermina"] = {
 						{
-							135817, -- [1]
-							2, -- [2]
+							135921, -- [1]
+							0, -- [2]
 							2, -- [3]
-							1, -- [4]
+							2, -- [4]
 							1, -- [5]
-							262, -- [6]
-							2, -- [7]
+							[7] = 2,
 						}, -- [1]
 						{
-							135807, -- [1]
-							3, -- [2]
+							135917, -- [1]
+							0, -- [2]
 							1, -- [3]
-							3, -- [4]
+							1, -- [4]
 							1, -- [5]
-							262, -- [6]
-							3, -- [7]
+							[7] = 2,
 						}, -- [2]
 						{
-							459025, -- [1]
+							135903, -- [1]
 							0, -- [2]
-							1, -- [3]
-							2, -- [4]
+							3, -- [3]
+							1, -- [4]
 							1, -- [5]
-							262, -- [6]
-							2, -- [7]
+							[7] = 2,
 						}, -- [3]
 						{
-							136115, -- [1]
-							1, -- [2]
-							5, -- [3]
-							2, -- [4]
+							236251, -- [1]
+							0, -- [2]
+							4, -- [3]
+							1, -- [4]
 							1, -- [5]
-							262, -- [6]
-							1, -- [7]
+							[7] = 2,
 						}, -- [4]
 						{
-							136170, -- [1]
-							1, -- [2]
-							3, -- [3]
-							2, -- [4]
+							135872, -- [1]
+							0, -- [2]
+							5, -- [3]
+							3, -- [4]
 							1, -- [5]
-							262, -- [6]
-							1, -- [7]
+							[7] = 1,
 						}, -- [5]
 						{
-							135850, -- [1]
-							2, -- [2]
-							2, -- [3]
+							135876, -- [1]
+							0, -- [2]
+							6, -- [3]
 							3, -- [4]
 							1, -- [5]
-							262, -- [6]
-							2, -- [7]
+							[7] = 2,
 						}, -- [6]
 						{
-							136094, -- [1]
+							236261, -- [1]
 							0, -- [2]
-							2, -- [3]
-							2, -- [4]
+							4, -- [3]
+							4, -- [4]
 							1, -- [5]
-							262, -- [6]
-							3, -- [7]
+							[7] = 1,
 						}, -- [7]
 						{
-							136099, -- [1]
-							2, -- [2]
+							236256, -- [1]
+							0, -- [2]
+							1, -- [3]
+							3, -- [4]
+							1, -- [5]
+							[7] = 3,
+						}, -- [8]
+						{
+							236254, -- [1]
+							0, -- [2]
 							3, -- [3]
 							3, -- [4]
 							1, -- [5]
-							262, -- [6]
-							2, -- [7]
-						}, -- [8]
-						{
-							136028, -- [1]
-							3, -- [2]
-							2, -- [3]
-							4, -- [4]
-							1, -- [5]
-							262, -- [6]
-							3, -- [7]
+							[7] = 2,
 						}, -- [9]
 						{
-							451165, -- [1]
-							1, -- [2]
+							236247, -- [1]
+							0, -- [2]
+							4, -- [3]
+							2, -- [4]
+							1, -- [5]
+							[7] = 1,
+						}, -- [10]
+						{
+							236394, -- [1]
+							0, -- [2]
+							6, -- [3]
+							2, -- [4]
+							1, -- [5]
+							[7] = 3,
+						}, -- [11]
+						{
+							135895, -- [1]
+							0, -- [2]
+							3, -- [3]
+							2, -- [4]
+							1, -- [5]
+							[7] = 1,
+						}, -- [12]
+						{
+							461859, -- [1]
+							0, -- [2]
 							7, -- [3]
 							2, -- [4]
 							1, -- [5]
-							262, -- [6]
-							1, -- [7]
-						}, -- [10]
+							[7] = 1,
+						}, -- [13]
 						{
-							237576, -- [1]
-							2, -- [2]
-							4, -- [3]
-							2, -- [4]
+							461857, -- [1]
+							0, -- [2]
+							2, -- [3]
+							1, -- [4]
 							1, -- [5]
-							262, -- [6]
-							2, -- [7]
-						}, -- [11]
+							[7] = 3,
+						}, -- [14]
 						{
-							237583, -- [1]
-							3, -- [2]
+							460953, -- [1]
+							0, -- [2]
 							4, -- [3]
 							3, -- [4]
 							1, -- [5]
-							262, -- [6]
-							3, -- [7]
-						}, -- [12]
+							[7] = 3,
+						}, -- [15]
 						{
-							135829, -- [1]
-							1, -- [2]
+							134909, -- [1]
+							0, -- [2]
+							3, -- [3]
+							4, -- [4]
+							1, -- [5]
+							[7] = 2,
+						}, -- [16]
+						{
+							460689, -- [1]
+							0, -- [2]
+							5, -- [3]
+							1, -- [4]
+							1, -- [5]
+							[7] = 3,
+						}, -- [17]
+						{
+							135920, -- [1]
+							0, -- [2]
+							2, -- [3]
+							3, -- [4]
+							1, -- [5]
+							[7] = 2,
+						}, -- [18]
+						{
+							135875, -- [1]
+							0, -- [2]
 							5, -- [3]
 							4, -- [4]
 							1, -- [5]
-							262, -- [6]
-							1, -- [7]
-						}, -- [13]
+							[7] = 2,
+						}, -- [19]
 						{
-							451169, -- [1]
-							2, -- [2]
-							6, -- [3]
-							3, -- [4]
-							1, -- [5]
-							262, -- [6]
-							2, -- [7]
-						}, -- [14]
-						{
-							136011, -- [1]
-							3, -- [2]
+							460690, -- [1]
+							0, -- [2]
 							1, -- [3]
-							1, -- [4]
-							1, -- [5]
-							262, -- [6]
-							3, -- [7]
-						}, -- [15]
-						{
-							252174, -- [1]
-							3, -- [2]
-							6, -- [3]
 							2, -- [4]
 							1, -- [5]
-							262, -- [6]
-							3, -- [7]
-						}, -- [16]
+							[7] = 3,
+						}, -- [20]
 						{
-							136014, -- [1]
+							133526, -- [1]
+							2, -- [2]
+							1, -- [3]
+							2, -- [4]
+							2, -- [5]
+							[7] = 2,
+						}, -- [21]
+						{
+							135892, -- [1]
+							3, -- [2]
+							2, -- [3]
+							2, -- [4]
+							2, -- [5]
+							[7] = 3,
+						}, -- [22]
+						{
+							253400, -- [1]
+							1, -- [2]
+							5, -- [3]
+							4, -- [4]
+							2, -- [5]
+							[7] = 1,
+						}, -- [23]
+						{
+							135963, -- [1]
+							0, -- [2]
+							2, -- [3]
+							3, -- [4]
+							2, -- [5]
+							[7] = 2,
+						}, -- [24]
+						{
+							236264, -- [1]
+							3, -- [2]
+							6, -- [3]
+							3, -- [4]
+							2, -- [5]
+							[7] = 3,
+						}, -- [25]
+						{
+							135926, -- [1]
 							2, -- [2]
 							3, -- [3]
 							1, -- [4]
-							1, -- [5]
-							262, -- [6]
-							2, -- [7]
-						}, -- [17]
-						{
-							136100, -- [1]
-							0, -- [2]
-							5, -- [3]
-							3, -- [4]
-							1, -- [5]
-							262, -- [6]
-							2, -- [7]
-						}, -- [18]
-						{
-							136111, -- [1]
-							1, -- [2]
-							5, -- [3]
-							1, -- [4]
-							1, -- [5]
-							262, -- [6]
-							1, -- [7]
-						}, -- [19]
-						{
-							132152, -- [1]
-							0, -- [2]
-							2, -- [3]
-							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							3, -- [7]
-						}, -- [20]
-						{
-							348567, -- [1]
-							1, -- [2]
-							2, -- [3]
-							3, -- [4]
-							2, -- [5]
-							263, -- [6]
-							2, -- [7]
-						}, -- [21]
+							[7] = 2,
+						}, -- [26]
 						{
 							136051, -- [1]
 							3, -- [2]
-							1, -- [3]
-							3, -- [4]
-							2, -- [5]
-							263, -- [6]
-							3, -- [7]
-						}, -- [22]
-						{
-							135814, -- [1]
-							2, -- [2]
-							1, -- [3]
-							1, -- [4]
-							2, -- [5]
-							263, -- [6]
-							2, -- [7]
-						}, -- [23]
-						{
-							135892, -- [1]
-							0, -- [2]
-							3, -- [3]
-							1, -- [4]
-							2, -- [5]
-							263, -- [6]
-							3, -- [7]
-						}, -- [24]
-						{
-							132314, -- [1]
-							0, -- [2]
 							3, -- [3]
 							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							1, -- [7]
-						}, -- [25]
-						{
-							136110, -- [1]
-							0, -- [2]
-							5, -- [3]
-							4, -- [4]
-							2, -- [5]
-							263, -- [6]
-							2, -- [7]
-						}, -- [26]
-						{
-							136088, -- [1]
-							0, -- [2]
-							5, -- [3]
-							2, -- [4]
-							2, -- [5]
-							263, -- [6]
-							1, -- [7]
+							[7] = 3,
 						}, -- [27]
 						{
-							237587, -- [1]
-							0, -- [2]
-							3, -- [3]
-							3, -- [4]
+							135870, -- [1]
+							1, -- [2]
+							7, -- [3]
+							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							3, -- [7]
+							[7] = 1,
 						}, -- [28]
 						{
-							136024, -- [1]
-							0, -- [2]
+							135880, -- [1]
+							1, -- [2]
 							5, -- [3]
-							1, -- [4]
+							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							2, -- [7]
+							[7] = 1,
 						}, -- [29]
 						{
-							237584, -- [1]
-							0, -- [2]
+							133039, -- [1]
+							2, -- [2]
 							6, -- [3]
 							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							3, -- [7]
+							[7] = 2,
 						}, -- [30]
 						{
-							237577, -- [1]
-							0, -- [2]
-							7, -- [3]
-							2, -- [4]
+							236259, -- [1]
+							2, -- [2]
+							2, -- [3]
+							1, -- [4]
 							2, -- [5]
-							263, -- [6]
-							1, -- [7]
+							[7] = 2,
 						}, -- [31]
 						{
-							135825, -- [1]
-							0, -- [2]
-							4, -- [3]
+							236253, -- [1]
+							1, -- [2]
+							3, -- [3]
 							3, -- [4]
 							2, -- [5]
-							263, -- [6]
-							3, -- [7]
+							[7] = 1,
 						}, -- [32]
 						{
-							451166, -- [1]
-							0, -- [2]
-							1, -- [3]
-							2, -- [4]
+							135985, -- [1]
+							1, -- [2]
+							5, -- [3]
+							1, -- [4]
 							2, -- [5]
-							263, -- [6]
-							3, -- [7]
+							[7] = 1,
 						}, -- [33]
 						{
-							451168, -- [1]
-							0, -- [2]
-							6, -- [3]
-							3, -- [4]
-							2, -- [5]
-							263, -- [6]
-							2, -- [7]
-						}, -- [34]
-						{
-							135791, -- [1]
-							0, -- [2]
-							2, -- [3]
-							1, -- [4]
-							2, -- [5]
-							263, -- [6]
-							3, -- [7]
-						}, -- [35]
-						{
-							135776, -- [1]
-							0, -- [2]
-							4, -- [3]
-							1, -- [4]
-							2, -- [5]
-							263, -- [6]
-							2, -- [7]
-						}, -- [36]
-						{
-							136008, -- [1]
-							0, -- [2]
-							2, -- [3]
+							133562, -- [1]
+							2, -- [2]
+							3, -- [3]
 							4, -- [4]
 							2, -- [5]
-							263, -- [6]
-							2, -- [7]
+							[7] = 2,
+						}, -- [34]
+						{
+							135882, -- [1]
+							1, -- [2]
+							4, -- [3]
+							1, -- [4]
+							2, -- [5]
+							[7] = 2,
+						}, -- [35]
+						{
+							133176, -- [1]
+							2, -- [2]
+							4, -- [3]
+							3, -- [4]
+							2, -- [5]
+							[7] = 2,
+						}, -- [36]
+						{
+							236252, -- [1]
+							2, -- [2]
+							5, -- [3]
+							3, -- [4]
+							2, -- [5]
+							[7] = 2,
 						}, -- [37]
 						{
-							136027, -- [1]
-							0, -- [2]
+							236265, -- [1]
+							1, -- [2]
 							4, -- [3]
 							2, -- [4]
 							2, -- [5]
-							263, -- [6]
-							2, -- [7]
+							[7] = 1,
 						}, -- [38]
 						{
-							136109, -- [1]
+							135433, -- [1]
 							0, -- [2]
-							3, -- [3]
-							1, -- [4]
-							3, -- [5]
-							264, -- [6]
-							2, -- [7]
+							1, -- [3]
+							3, -- [4]
+							2, -- [5]
+							[7] = 2,
 						}, -- [39]
 						{
-							132315, -- [1]
-							0, -- [2]
-							2, -- [3]
+							135883, -- [1]
+							3, -- [2]
+							1, -- [3]
 							1, -- [4]
-							3, -- [5]
-							264, -- [6]
-							2, -- [7]
+							2, -- [5]
+							[7] = 3,
 						}, -- [40]
 						{
-							136037, -- [1]
-							0, -- [2]
-							4, -- [3]
-							2, -- [4]
-							3, -- [5]
-							264, -- [6]
-							2, -- [7]
-						}, -- [41]
-						{
-							135861, -- [1]
+							135897, -- [1]
 							0, -- [2]
 							5, -- [3]
-							2, -- [4]
+							3, -- [4]
 							3, -- [5]
-							264, -- [6]
-							1, -- [7]
+							[7] = 2,
+						}, -- [41]
+						{
+							132347, -- [1]
+							0, -- [2]
+							4, -- [3]
+							3, -- [4]
+							3, -- [5]
+							[7] = 1,
 						}, -- [42]
 						{
-							136076, -- [1]
+							135904, -- [1]
 							0, -- [2]
-							3, -- [3]
-							2, -- [4]
+							1, -- [3]
+							1, -- [4]
 							3, -- [5]
-							264, -- [6]
-							1, -- [7]
+							[7] = 2,
 						}, -- [43]
 						{
-							135859, -- [1]
-							0, -- [2]
+							135889, -- [1]
+							3, -- [2]
 							1, -- [3]
 							2, -- [4]
 							3, -- [5]
-							264, -- [6]
-							3, -- [7]
+							[7] = 3,
 						}, -- [44]
 						{
-							136057, -- [1]
-							0, -- [2]
-							2, -- [3]
-							2, -- [4]
-							3, -- [5]
-							264, -- [6]
-							2, -- [7]
-						}, -- [45]
-						{
-							136059, -- [1]
+							236246, -- [1]
 							0, -- [2]
 							3, -- [3]
-							3, -- [4]
+							2, -- [4]
 							3, -- [5]
-							264, -- [6]
-							3, -- [7]
-						}, -- [46]
+							[7] = 3,
+						}, -- [45]
 						{
-							136060, -- [1]
-							0, -- [2]
-							2, -- [3]
-							4, -- [4]
-							3, -- [5]
-							264, -- [6]
-							3, -- [7]
-						}, -- [47]
-						{
-							237573, -- [1]
-							0, -- [2]
-							6, -- [3]
-							3, -- [4]
-							3, -- [5]
-							264, -- [6]
-							2, -- [7]
-						}, -- [48]
-						{
-							237571, -- [1]
+							135942, -- [1]
 							0, -- [2]
 							5, -- [3]
+							2, -- [4]
+							3, -- [5]
+							[7] = 1,
+						}, -- [46]
+						{
+							236257, -- [1]
+							0, -- [2]
+							3, -- [3]
 							1, -- [4]
 							3, -- [5]
-							264, -- [6]
-							3, -- [7]
-						}, -- [49]
+							[7] = 1,
+						}, -- [47]
 						{
-							237590, -- [1]
+							236262, -- [1]
+							0, -- [2]
+							4, -- [3]
+							4, -- [4]
+							3, -- [5]
+							[7] = 3,
+						}, -- [48]
+						{
+							236260, -- [1]
 							0, -- [2]
 							6, -- [3]
 							2, -- [4]
 							3, -- [5]
-							264, -- [6]
-							3, -- [7]
+							[7] = 3,
+						}, -- [49]
+						{
+							236250, -- [1]
+							0, -- [2]
+							3, -- [3]
+							4, -- [4]
+							3, -- [5]
+							[7] = 1,
 						}, -- [50]
 						{
-							252995, -- [1]
+							236249, -- [1]
+							0, -- [2]
+							4, -- [3]
+							1, -- [4]
+							3, -- [5]
+							[7] = 1,
+						}, -- [51]
+						{
+							236248, -- [1]
+							0, -- [2]
+							6, -- [3]
+							3, -- [4]
+							3, -- [5]
+							[7] = 2,
+						}, -- [52]
+						{
+							237547, -- [1]
 							0, -- [2]
 							7, -- [3]
 							2, -- [4]
 							3, -- [5]
-							264, -- [6]
-							1, -- [7]
-						}, -- [51]
-						{
-							236288, -- [1]
-							0, -- [2]
-							4, -- [3]
-							3, -- [4]
-							3, -- [5]
-							264, -- [6]
-							1, -- [7]
-						}, -- [52]
-						{
-							462651, -- [1]
-							0, -- [2]
-							2, -- [3]
-							3, -- [4]
-							3, -- [5]
-							264, -- [6]
-							3, -- [7]
+							[7] = 1,
 						}, -- [53]
 						{
-							252271, -- [1]
+							134916, -- [1]
 							0, -- [2]
-							1, -- [3]
-							1, -- [4]
+							2, -- [3]
+							2, -- [4]
 							3, -- [5]
-							264, -- [6]
-							2, -- [7]
+							[7] = 3,
 						}, -- [54]
 						{
-							135990, -- [1]
+							252269, -- [1]
 							0, -- [2]
 							5, -- [3]
-							3, -- [4]
+							1, -- [4]
 							3, -- [5]
-							264, -- [6]
-							2, -- [7]
+							[7] = 2,
 						}, -- [55]
 						{
-							237556, -- [1]
+							237486, -- [1]
 							0, -- [2]
+							4, -- [3]
+							2, -- [4]
+							3, -- [5]
+							[7] = 1,
+						}, -- [56]
+						{
+							236258, -- [1]
+							0, -- [2]
+							3, -- [3]
+							3, -- [4]
+							3, -- [5]
+							[7] = 2,
+						}, -- [57]
+						{
+							135937, -- [1]
+							0, -- [2]
+							2, -- [3]
+							4, -- [4]
+							3, -- [5]
+							[7] = 2,
+						}, -- [58]
+						{
+							236255, -- [1]
+							2, -- [2]
 							1, -- [3]
 							3, -- [4]
 							3, -- [5]
-							264, -- [6]
-							3, -- [7]
-						}, -- [56]
+							[7] = 2,
+						}, -- [59]
 						{
-							136079, -- [1]
+							135964, -- [1]
 							0, -- [2]
-							4, -- [3]
-							4, -- [4]
+							2, -- [3]
+							1, -- [4]
 							3, -- [5]
-							264, -- [6]
-							2, -- [7]
-						}, -- [57]
-						{
-							237586, -- [1]
-							0, -- [2]
-							5, -- [3]
-							4, -- [4]
-							3, -- [5]
-							264, -- [6]
-							1, -- [7]
-						}, -- [58]
+							[7] = 2,
+						}, -- [60]
 					},
 					["Jetcer-Gehennas"] = {
 						{
@@ -11208,487 +11172,529 @@ _detalhes_database = {
 							[7] = 2,
 						}, -- [60]
 					},
-					["Vermina"] = {
+					["Meridann-Gehennas"] = {
 						{
-							135921, -- [1]
+							135817, -- [1]
+							2, -- [2]
+							2, -- [3]
+							1, -- [4]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [1]
+						{
+							135807, -- [1]
+							3, -- [2]
+							1, -- [3]
+							3, -- [4]
+							1, -- [5]
+							262, -- [6]
+							3, -- [7]
+						}, -- [2]
+						{
+							459025, -- [1]
+							0, -- [2]
+							1, -- [3]
+							2, -- [4]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [3]
+						{
+							136115, -- [1]
+							1, -- [2]
+							5, -- [3]
+							2, -- [4]
+							1, -- [5]
+							262, -- [6]
+							1, -- [7]
+						}, -- [4]
+						{
+							136170, -- [1]
+							1, -- [2]
+							3, -- [3]
+							2, -- [4]
+							1, -- [5]
+							262, -- [6]
+							1, -- [7]
+						}, -- [5]
+						{
+							135850, -- [1]
+							2, -- [2]
+							2, -- [3]
+							3, -- [4]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [6]
+						{
+							136094, -- [1]
 							0, -- [2]
 							2, -- [3]
 							2, -- [4]
 							1, -- [5]
-							[7] = 2,
-						}, -- [1]
-						{
-							135917, -- [1]
-							0, -- [2]
-							1, -- [3]
-							1, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [2]
-						{
-							135903, -- [1]
-							0, -- [2]
-							3, -- [3]
-							1, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [3]
-						{
-							236251, -- [1]
-							0, -- [2]
-							4, -- [3]
-							1, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [4]
-						{
-							135872, -- [1]
-							0, -- [2]
-							5, -- [3]
-							3, -- [4]
-							1, -- [5]
-							[7] = 1,
-						}, -- [5]
-						{
-							135876, -- [1]
-							0, -- [2]
-							6, -- [3]
-							3, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [6]
-						{
-							236261, -- [1]
-							0, -- [2]
-							4, -- [3]
-							4, -- [4]
-							1, -- [5]
-							[7] = 1,
+							262, -- [6]
+							3, -- [7]
 						}, -- [7]
 						{
-							236256, -- [1]
-							0, -- [2]
-							1, -- [3]
+							136099, -- [1]
+							2, -- [2]
+							3, -- [3]
 							3, -- [4]
 							1, -- [5]
-							[7] = 3,
+							262, -- [6]
+							2, -- [7]
 						}, -- [8]
 						{
-							236254, -- [1]
-							0, -- [2]
-							3, -- [3]
-							3, -- [4]
+							136028, -- [1]
+							3, -- [2]
+							2, -- [3]
+							4, -- [4]
 							1, -- [5]
-							[7] = 2,
+							262, -- [6]
+							3, -- [7]
 						}, -- [9]
 						{
-							236247, -- [1]
-							0, -- [2]
-							4, -- [3]
-							2, -- [4]
-							1, -- [5]
-							[7] = 1,
-						}, -- [10]
-						{
-							236394, -- [1]
-							0, -- [2]
-							6, -- [3]
-							2, -- [4]
-							1, -- [5]
-							[7] = 3,
-						}, -- [11]
-						{
-							135895, -- [1]
-							0, -- [2]
-							3, -- [3]
-							2, -- [4]
-							1, -- [5]
-							[7] = 1,
-						}, -- [12]
-						{
-							461859, -- [1]
-							0, -- [2]
+							451165, -- [1]
+							1, -- [2]
 							7, -- [3]
 							2, -- [4]
 							1, -- [5]
-							[7] = 1,
-						}, -- [13]
+							262, -- [6]
+							1, -- [7]
+						}, -- [10]
 						{
-							461857, -- [1]
-							0, -- [2]
-							2, -- [3]
-							1, -- [4]
+							237576, -- [1]
+							2, -- [2]
+							4, -- [3]
+							2, -- [4]
 							1, -- [5]
-							[7] = 3,
-						}, -- [14]
+							262, -- [6]
+							2, -- [7]
+						}, -- [11]
 						{
-							460953, -- [1]
-							0, -- [2]
+							237583, -- [1]
+							3, -- [2]
 							4, -- [3]
 							3, -- [4]
 							1, -- [5]
-							[7] = 3,
-						}, -- [15]
+							262, -- [6]
+							3, -- [7]
+						}, -- [12]
 						{
-							134909, -- [1]
-							0, -- [2]
-							3, -- [3]
-							4, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [16]
-						{
-							460689, -- [1]
-							0, -- [2]
-							5, -- [3]
-							1, -- [4]
-							1, -- [5]
-							[7] = 3,
-						}, -- [17]
-						{
-							135920, -- [1]
-							0, -- [2]
-							2, -- [3]
-							3, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [18]
-						{
-							135875, -- [1]
-							0, -- [2]
-							5, -- [3]
-							4, -- [4]
-							1, -- [5]
-							[7] = 2,
-						}, -- [19]
-						{
-							460690, -- [1]
-							0, -- [2]
-							1, -- [3]
-							2, -- [4]
-							1, -- [5]
-							[7] = 3,
-						}, -- [20]
-						{
-							133526, -- [1]
-							2, -- [2]
-							1, -- [3]
-							2, -- [4]
-							2, -- [5]
-							[7] = 2,
-						}, -- [21]
-						{
-							135892, -- [1]
-							3, -- [2]
-							2, -- [3]
-							2, -- [4]
-							2, -- [5]
-							[7] = 3,
-						}, -- [22]
-						{
-							253400, -- [1]
+							135829, -- [1]
 							1, -- [2]
 							5, -- [3]
 							4, -- [4]
-							2, -- [5]
-							[7] = 1,
-						}, -- [23]
+							1, -- [5]
+							262, -- [6]
+							1, -- [7]
+						}, -- [13]
 						{
-							135963, -- [1]
-							0, -- [2]
-							2, -- [3]
-							3, -- [4]
-							2, -- [5]
-							[7] = 2,
-						}, -- [24]
-						{
-							236264, -- [1]
-							3, -- [2]
+							451169, -- [1]
+							2, -- [2]
 							6, -- [3]
 							3, -- [4]
-							2, -- [5]
-							[7] = 3,
-						}, -- [25]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [14]
 						{
-							135926, -- [1]
+							136011, -- [1]
+							3, -- [2]
+							1, -- [3]
+							1, -- [4]
+							1, -- [5]
+							262, -- [6]
+							3, -- [7]
+						}, -- [15]
+						{
+							252174, -- [1]
+							3, -- [2]
+							6, -- [3]
+							2, -- [4]
+							1, -- [5]
+							262, -- [6]
+							3, -- [7]
+						}, -- [16]
+						{
+							136014, -- [1]
 							2, -- [2]
 							3, -- [3]
 							1, -- [4]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [17]
+						{
+							136100, -- [1]
+							0, -- [2]
+							5, -- [3]
+							3, -- [4]
+							1, -- [5]
+							262, -- [6]
+							2, -- [7]
+						}, -- [18]
+						{
+							136111, -- [1]
+							1, -- [2]
+							5, -- [3]
+							1, -- [4]
+							1, -- [5]
+							262, -- [6]
+							1, -- [7]
+						}, -- [19]
+						{
+							132152, -- [1]
+							0, -- [2]
+							2, -- [3]
+							2, -- [4]
 							2, -- [5]
-							[7] = 2,
-						}, -- [26]
+							263, -- [6]
+							3, -- [7]
+						}, -- [20]
+						{
+							348567, -- [1]
+							1, -- [2]
+							2, -- [3]
+							3, -- [4]
+							2, -- [5]
+							263, -- [6]
+							2, -- [7]
+						}, -- [21]
 						{
 							136051, -- [1]
 							3, -- [2]
+							1, -- [3]
+							3, -- [4]
+							2, -- [5]
+							263, -- [6]
+							3, -- [7]
+						}, -- [22]
+						{
+							135814, -- [1]
+							2, -- [2]
+							1, -- [3]
+							1, -- [4]
+							2, -- [5]
+							263, -- [6]
+							2, -- [7]
+						}, -- [23]
+						{
+							135892, -- [1]
+							0, -- [2]
+							3, -- [3]
+							1, -- [4]
+							2, -- [5]
+							263, -- [6]
+							3, -- [7]
+						}, -- [24]
+						{
+							132314, -- [1]
+							0, -- [2]
 							3, -- [3]
 							2, -- [4]
 							2, -- [5]
-							[7] = 3,
+							263, -- [6]
+							1, -- [7]
+						}, -- [25]
+						{
+							136110, -- [1]
+							0, -- [2]
+							5, -- [3]
+							4, -- [4]
+							2, -- [5]
+							263, -- [6]
+							2, -- [7]
+						}, -- [26]
+						{
+							136088, -- [1]
+							0, -- [2]
+							5, -- [3]
+							2, -- [4]
+							2, -- [5]
+							263, -- [6]
+							1, -- [7]
 						}, -- [27]
 						{
-							135870, -- [1]
-							1, -- [2]
-							7, -- [3]
-							2, -- [4]
+							237587, -- [1]
+							0, -- [2]
+							3, -- [3]
+							3, -- [4]
 							2, -- [5]
-							[7] = 1,
+							263, -- [6]
+							3, -- [7]
 						}, -- [28]
 						{
-							135880, -- [1]
-							1, -- [2]
+							136024, -- [1]
+							0, -- [2]
 							5, -- [3]
-							2, -- [4]
+							1, -- [4]
 							2, -- [5]
-							[7] = 1,
+							263, -- [6]
+							2, -- [7]
 						}, -- [29]
 						{
-							133039, -- [1]
-							2, -- [2]
+							237584, -- [1]
+							0, -- [2]
 							6, -- [3]
 							2, -- [4]
 							2, -- [5]
-							[7] = 2,
+							263, -- [6]
+							3, -- [7]
 						}, -- [30]
 						{
-							236259, -- [1]
-							2, -- [2]
+							237577, -- [1]
+							0, -- [2]
+							7, -- [3]
+							2, -- [4]
+							2, -- [5]
+							263, -- [6]
+							1, -- [7]
+						}, -- [31]
+						{
+							135825, -- [1]
+							0, -- [2]
+							4, -- [3]
+							3, -- [4]
+							2, -- [5]
+							263, -- [6]
+							3, -- [7]
+						}, -- [32]
+						{
+							451166, -- [1]
+							0, -- [2]
+							1, -- [3]
+							2, -- [4]
+							2, -- [5]
+							263, -- [6]
+							3, -- [7]
+						}, -- [33]
+						{
+							451168, -- [1]
+							0, -- [2]
+							6, -- [3]
+							3, -- [4]
+							2, -- [5]
+							263, -- [6]
+							2, -- [7]
+						}, -- [34]
+						{
+							135791, -- [1]
+							0, -- [2]
 							2, -- [3]
 							1, -- [4]
 							2, -- [5]
-							[7] = 2,
-						}, -- [31]
-						{
-							236253, -- [1]
-							1, -- [2]
-							3, -- [3]
-							3, -- [4]
-							2, -- [5]
-							[7] = 1,
-						}, -- [32]
-						{
-							135985, -- [1]
-							1, -- [2]
-							5, -- [3]
-							1, -- [4]
-							2, -- [5]
-							[7] = 1,
-						}, -- [33]
-						{
-							133562, -- [1]
-							2, -- [2]
-							3, -- [3]
-							4, -- [4]
-							2, -- [5]
-							[7] = 2,
-						}, -- [34]
-						{
-							135882, -- [1]
-							1, -- [2]
-							4, -- [3]
-							1, -- [4]
-							2, -- [5]
-							[7] = 2,
+							263, -- [6]
+							3, -- [7]
 						}, -- [35]
 						{
-							133176, -- [1]
-							2, -- [2]
+							135776, -- [1]
+							0, -- [2]
 							4, -- [3]
-							3, -- [4]
+							1, -- [4]
 							2, -- [5]
-							[7] = 2,
+							263, -- [6]
+							2, -- [7]
 						}, -- [36]
 						{
-							236252, -- [1]
-							2, -- [2]
-							5, -- [3]
-							3, -- [4]
+							136008, -- [1]
+							0, -- [2]
+							2, -- [3]
+							4, -- [4]
 							2, -- [5]
-							[7] = 2,
+							263, -- [6]
+							2, -- [7]
 						}, -- [37]
 						{
-							236265, -- [1]
-							1, -- [2]
+							136027, -- [1]
+							0, -- [2]
 							4, -- [3]
 							2, -- [4]
 							2, -- [5]
-							[7] = 1,
+							263, -- [6]
+							2, -- [7]
 						}, -- [38]
 						{
-							135433, -- [1]
+							136109, -- [1]
 							0, -- [2]
-							1, -- [3]
-							3, -- [4]
-							2, -- [5]
-							[7] = 2,
+							3, -- [3]
+							1, -- [4]
+							3, -- [5]
+							264, -- [6]
+							2, -- [7]
 						}, -- [39]
 						{
-							135883, -- [1]
-							3, -- [2]
-							1, -- [3]
+							132315, -- [1]
+							0, -- [2]
+							2, -- [3]
 							1, -- [4]
-							2, -- [5]
-							[7] = 3,
+							3, -- [5]
+							264, -- [6]
+							2, -- [7]
 						}, -- [40]
 						{
-							135897, -- [1]
+							136037, -- [1]
 							0, -- [2]
-							5, -- [3]
-							3, -- [4]
+							4, -- [3]
+							2, -- [4]
 							3, -- [5]
-							[7] = 2,
+							264, -- [6]
+							2, -- [7]
 						}, -- [41]
 						{
-							132347, -- [1]
-							0, -- [2]
-							4, -- [3]
-							3, -- [4]
-							3, -- [5]
-							[7] = 1,
-						}, -- [42]
-						{
-							135904, -- [1]
-							0, -- [2]
-							1, -- [3]
-							1, -- [4]
-							3, -- [5]
-							[7] = 2,
-						}, -- [43]
-						{
-							135889, -- [1]
-							3, -- [2]
-							1, -- [3]
-							2, -- [4]
-							3, -- [5]
-							[7] = 3,
-						}, -- [44]
-						{
-							236246, -- [1]
-							0, -- [2]
-							3, -- [3]
-							2, -- [4]
-							3, -- [5]
-							[7] = 3,
-						}, -- [45]
-						{
-							135942, -- [1]
+							135861, -- [1]
 							0, -- [2]
 							5, -- [3]
 							2, -- [4]
 							3, -- [5]
-							[7] = 1,
-						}, -- [46]
+							264, -- [6]
+							1, -- [7]
+						}, -- [42]
 						{
-							236257, -- [1]
+							136076, -- [1]
 							0, -- [2]
 							3, -- [3]
-							1, -- [4]
-							3, -- [5]
-							[7] = 1,
-						}, -- [47]
-						{
-							236262, -- [1]
-							0, -- [2]
-							4, -- [3]
-							4, -- [4]
-							3, -- [5]
-							[7] = 3,
-						}, -- [48]
-						{
-							236260, -- [1]
-							0, -- [2]
-							6, -- [3]
 							2, -- [4]
 							3, -- [5]
-							[7] = 3,
-						}, -- [49]
+							264, -- [6]
+							1, -- [7]
+						}, -- [43]
 						{
-							236250, -- [1]
+							135859, -- [1]
+							0, -- [2]
+							1, -- [3]
+							2, -- [4]
+							3, -- [5]
+							264, -- [6]
+							3, -- [7]
+						}, -- [44]
+						{
+							136057, -- [1]
+							0, -- [2]
+							2, -- [3]
+							2, -- [4]
+							3, -- [5]
+							264, -- [6]
+							2, -- [7]
+						}, -- [45]
+						{
+							136059, -- [1]
 							0, -- [2]
 							3, -- [3]
+							3, -- [4]
+							3, -- [5]
+							264, -- [6]
+							3, -- [7]
+						}, -- [46]
+						{
+							136060, -- [1]
+							0, -- [2]
+							2, -- [3]
 							4, -- [4]
 							3, -- [5]
-							[7] = 1,
-						}, -- [50]
+							264, -- [6]
+							3, -- [7]
+						}, -- [47]
 						{
-							236249, -- [1]
-							0, -- [2]
-							4, -- [3]
-							1, -- [4]
-							3, -- [5]
-							[7] = 1,
-						}, -- [51]
-						{
-							236248, -- [1]
+							237573, -- [1]
 							0, -- [2]
 							6, -- [3]
 							3, -- [4]
 							3, -- [5]
-							[7] = 2,
-						}, -- [52]
+							264, -- [6]
+							2, -- [7]
+						}, -- [48]
 						{
-							237547, -- [1]
+							237571, -- [1]
+							0, -- [2]
+							5, -- [3]
+							1, -- [4]
+							3, -- [5]
+							264, -- [6]
+							3, -- [7]
+						}, -- [49]
+						{
+							237590, -- [1]
+							0, -- [2]
+							6, -- [3]
+							2, -- [4]
+							3, -- [5]
+							264, -- [6]
+							3, -- [7]
+						}, -- [50]
+						{
+							252995, -- [1]
 							0, -- [2]
 							7, -- [3]
 							2, -- [4]
 							3, -- [5]
-							[7] = 1,
-						}, -- [53]
+							264, -- [6]
+							1, -- [7]
+						}, -- [51]
 						{
-							134916, -- [1]
-							0, -- [2]
-							2, -- [3]
-							2, -- [4]
-							3, -- [5]
-							[7] = 3,
-						}, -- [54]
-						{
-							252269, -- [1]
-							0, -- [2]
-							5, -- [3]
-							1, -- [4]
-							3, -- [5]
-							[7] = 2,
-						}, -- [55]
-						{
-							237486, -- [1]
+							236288, -- [1]
 							0, -- [2]
 							4, -- [3]
-							2, -- [4]
-							3, -- [5]
-							[7] = 1,
-						}, -- [56]
-						{
-							236258, -- [1]
-							0, -- [2]
-							3, -- [3]
 							3, -- [4]
 							3, -- [5]
-							[7] = 2,
-						}, -- [57]
+							264, -- [6]
+							1, -- [7]
+						}, -- [52]
 						{
-							135937, -- [1]
+							462651, -- [1]
 							0, -- [2]
 							2, -- [3]
-							4, -- [4]
+							3, -- [4]
 							3, -- [5]
-							[7] = 2,
-						}, -- [58]
+							264, -- [6]
+							3, -- [7]
+						}, -- [53]
 						{
-							236255, -- [1]
-							2, -- [2]
+							252271, -- [1]
+							0, -- [2]
+							1, -- [3]
+							1, -- [4]
+							3, -- [5]
+							264, -- [6]
+							2, -- [7]
+						}, -- [54]
+						{
+							135990, -- [1]
+							0, -- [2]
+							5, -- [3]
+							3, -- [4]
+							3, -- [5]
+							264, -- [6]
+							2, -- [7]
+						}, -- [55]
+						{
+							237556, -- [1]
+							0, -- [2]
 							1, -- [3]
 							3, -- [4]
 							3, -- [5]
-							[7] = 2,
-						}, -- [59]
+							264, -- [6]
+							3, -- [7]
+						}, -- [56]
 						{
-							135964, -- [1]
+							136079, -- [1]
 							0, -- [2]
-							2, -- [3]
-							1, -- [4]
+							4, -- [3]
+							4, -- [4]
 							3, -- [5]
-							[7] = 2,
-						}, -- [60]
+							264, -- [6]
+							2, -- [7]
+						}, -- [57]
+						{
+							237586, -- [1]
+							0, -- [2]
+							5, -- [3]
+							4, -- [4]
+							3, -- [5]
+							264, -- [6]
+							1, -- [7]
+						}, -- [58]
 					},
 				},
 				["totals"] = {
@@ -11704,10 +11710,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
 						["dispell"] = 9,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -11727,10 +11733,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
 						["dispell"] = 9,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -11747,16 +11753,16 @@ _detalhes_database = {
 					["Ruksz-Gehennas"] = {
 						["Lava Burst"] = 5,
 						["Earth Shock"] = 1,
-						["Mana Spring Totem"] = 1,
 						["Searing Totem"] = 1,
+						["Mana Spring Totem"] = 1,
 						["Bloodlust"] = 1,
-						["Lightning Bolt"] = 17,
+						["Strength of Earth Totem"] = 1,
 						["Lightning Shield"] = 2,
 						["Fire Elemental Totem"] = 1,
 						["Flame Shock"] = 4,
 						["Wrath of Air Totem"] = 1,
-						["Strength of Earth Totem"] = 1,
 						["Call of the Elements"] = 1,
+						["Lightning Bolt"] = 17,
 						["Lava Surge!"] = 2,
 					},
 					["Jetcer-Gehennas"] = {
@@ -11766,48 +11772,48 @@ _detalhes_database = {
 						["Ravage!"] = 2,
 						["Berserk"] = 1,
 						["Feral Charge"] = 2,
-						["Dash"] = 1,
 						["Ferocious Bite"] = 1,
 						["Savage Roar"] = 2,
+						["Dash"] = 1,
 						["Faerie Fire (Feral)"] = 2,
 						["Mangle"] = 8,
 						["Primal Fury"] = 10,
 						["Shred"] = 16,
 						["Swipe"] = 3,
 					},
-					["Greater Fire Elemental <Ruksz-Gehennas>"] = {
-						["Fire Nova"] = 1,
-					},
 					["Fire Elemental Totem <Ruksz-Gehennas>"] = {
 						["Fire Elemental Totem"] = 1,
-					},
-					["Corborus"] = {
-						["Dampening Wave"] = 2,
 					},
 					["Vermina"] = {
 						["Divine Protection"] = 1,
 						["Word of Glory"] = 2,
 						["Hammer of Wrath"] = 3,
-						["Grand Crusader"] = 1,
-						["Shield of the Righteous"] = 3,
 						["Judgement"] = 4,
-						["Hammer of the Righteous"] = 4,
+						["Shield of the Righteous"] = 3,
 						["Crusader Strike"] = 9,
-						["Consecration"] = 2,
-						["Avenger's Shield"] = 5,
+						["Hammer of the Righteous"] = 4,
+						["Grand Crusader"] = 1,
 						["Holy Shield"] = 3,
+						["Avenger's Shield"] = 5,
+						["Consecration"] = 2,
 						["Holy Wrath"] = 4,
+					},
+					["Corborus"] = {
+						["Dampening Wave"] = 2,
+					},
+					["Fire Elemental Totem <Meridann-Gehennas>"] = {
+						["Fire Elemental Totem"] = 1,
 					},
 					["Zheboqi-Gehennas"] = {
 						["Word of Glory"] = 1,
 						["Cleanse"] = 10,
 						["Flash of Light"] = 1,
-						["Hammer of Justice"] = 1,
 						["Judgement"] = 4,
+						["Hammer of Justice"] = 1,
 						["Holy Shock"] = 8,
 					},
-					["Fire Elemental Totem <Meridann-Gehennas>"] = {
-						["Fire Elemental Totem"] = 1,
+					["Greater Fire Elemental <Ruksz-Gehennas>"] = {
+						["Fire Nova"] = 1,
 					},
 					["Meridann-Gehennas"] = {
 						["Lava Burst"] = 6,
@@ -11818,10 +11824,10 @@ _detalhes_database = {
 						["Call of the Elements"] = 1,
 						["Lava Surge!"] = 3,
 						["Elemental Mastery"] = 1,
-						["Lightning Bolt"] = 18,
 						["Mana Spring Totem"] = 1,
-						["Lightning Shield"] = 3,
 						["Earth Shock"] = 3,
+						["Lightning Shield"] = 3,
+						["Lightning Bolt"] = 18,
 						["Fire Elemental Totem"] = 1,
 						["Wrath of Air Totem"] = 1,
 						["Strength of Earth Totem"] = 1,
@@ -11851,26 +11857,26 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 							["Ruksz-Gehennas"] = 229.002789,
 							["Vermina"] = 18576.008616,
-							["Jetcer-Gehennas"] = 10334.006626,
-							["Meridann-Gehennas"] = 0.001461,
 							["Zheboqi-Gehennas"] = 83839.007561,
+							["Meridann-Gehennas"] = 0.001461,
+							["Jetcer-Gehennas"] = 10334.006626,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
 							["Ruksz-Gehennas"] = 299732.003062,
-							["Vermina"] = 342409.007745,
+							["Meridann-Gehennas"] = 634273.003061,
 							["Jetcer-Gehennas"] = 525936.0056040001,
 							["Zheboqi-Gehennas"] = 37883.002988,
-							["Meridann-Gehennas"] = 634273.003061,
+							["Vermina"] = 342409.007745,
 						}, -- [1]
 					},
 				},
@@ -11878,19 +11884,15 @@ _detalhes_database = {
 				["mapId"] = 725,
 				["combat_id"] = 5,
 				["overall_added"] = true,
-				["EncounterName"] = "Corborus",
-				["raid_roster"] = {
-					["Ruksz-Gehennas"] = "Player-4476-057D0C29",
-					["Meridann-Gehennas"] = "Player-4476-056218BB",
-					["Jetcer-Gehennas"] = "Player-4476-055B0D7A",
-					["Vermina"] = "Player-4465-02BB4683",
-					["Zheboqi-Gehennas"] = "Player-4476-0555D0FC",
-				},
-				["spells_cast_timeline"] = {
+				["contra"] = "Corborus",
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 				["frags"] = {
 					["Rock Borer"] = 34,
 					["Corborus"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["is_boss"] = {
 					["bossimage"] = 522215,
@@ -11910,13 +11912,11 @@ _detalhes_database = {
 				["player_last_events"] = {
 				},
 				["data_inicio"] = "16:35:17",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["boss_hp"] = 0.03246464897047879,
 				["start_time"] = 1642426.111,
-				["contra"] = "Corborus",
 				["TimeData"] = {
 				},
+				["EncounterName"] = "Corborus",
 			}, -- [2]
 		},
 	},
@@ -11926,8 +11926,8 @@ _detalhes_database = {
 		},
 		["pos"] = {
 		},
-		["group_frames"] = true,
 		["lines_per_column"] = 12,
+		["group_frames"] = true,
 		["own_frame"] = {
 			["defensive-raid"] = false,
 			["ofensive"] = false,
@@ -12123,10 +12123,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["playerKey"] = "total",
-				["combatObjectContainer"] = 1,
 				["name"] = "Damage of Each Individual Player",
 				["playerOnly"] = true,
+				["playerKey"] = "total",
+				["combatObjectContainer"] = 1,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -12146,12 +12146,14 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1716993165,
 	["active_profile"] = "xVermin",
-	["last_day"] = "29",
+	["last_day"] = "30",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["on_death_menu"] = false,
+	["character_data"] = {
+		["logons"] = 2400,
+	},
 	["combat_log"] = {
 		["merge_gemstones_1007"] = false,
 		["inverse_deathlog_raid"] = false,
@@ -12163,2617 +12165,590 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["last_encounter"] = "Baron Geddon",
+	["on_death_menu"] = false,
 	["mythic_plus_log"] = {
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4476-05284E02"] = "HEALER",
+		["Player-4465-041AC3F1"] = "DAMAGER",
+		["Player-4465-01236030"] = "TANK",
+		["Player-4701-04440226"] = "DAMAGER",
+		["Player-4441-044CBE15"] = "DAMAGER",
+		["Player-4441-02A0AFEC"] = "DAMAGER",
+		["Player-4442-0439193C"] = "DAMAGER",
+		["Player-4455-0522A303"] = "DAMAGER",
+		["Player-4442-0483262B"] = "NONE",
+		["Player-4476-053260EE"] = "DAMAGER",
+		["Player-4476-055B0D7A"] = "DAMAGER",
+		["Player-4456-039BB001"] = "HEALER",
+		["Player-4465-045FCC53"] = "DAMAGER",
+		["Player-4701-04603586"] = "HEALER",
+		["Player-4701-03B4D18D"] = "DAMAGER",
+		["Player-4477-044F067E"] = "DAMAGER",
+		["Player-4477-052734D8"] = "DAMAGER",
+		["Player-4465-04566174"] = "HEALER",
+		["Player-4701-0343CABB"] = "DAMAGER",
+		["Player-4465-0415CCF0"] = "TANK",
+		["Player-4477-04AADBFE"] = "DAMAGER",
+		["Player-4465-04181C69"] = "DAMAGER",
+		["Player-4476-051E8988"] = "DAMAGER",
+		["Player-4465-0375957E"] = "DAMAGER",
+		["Player-4701-042428D1"] = "HEALER",
+		["Player-4465-02C18BE6"] = "HEALER",
+		["Player-4465-04183578"] = "DAMAGER",
+		["Player-4465-02C980D0"] = "DAMAGER",
+		["Player-4476-055CCA7C"] = "HEALER",
+		["Player-4813-04AE098B"] = "DAMAGER",
+		["Player-4465-02E963ED"] = "DAMAGER",
+		["Player-4477-044E195F"] = "DAMAGER",
+		["Player-4477-035FC45A"] = "DAMAGER",
+		["Player-4465-041C3C9A"] = "DAMAGER",
+		["Player-4442-04820940"] = "DAMAGER",
+		["Player-4476-0515A3CE"] = "DAMAGER",
+		["Player-4465-044BF9AA"] = "DAMAGER",
+		["Player-4465-04184ABA"] = "DAMAGER",
+		["Player-4465-0414E9BF"] = "TANK",
+		["Player-4465-0385AAA3"] = "DAMAGER",
+		["Player-4477-052C09E5"] = "DAMAGER",
+		["Player-4477-04E4CBF8"] = "DAMAGER",
+		["Player-4465-04888FE8"] = "NONE",
+		["Player-4813-03A5691D"] = "DAMAGER",
+		["Player-4477-044F0EE5"] = "HEALER",
+		["Player-4455-052B55CF"] = "DAMAGER",
+		["Player-4477-051E53A9"] = "DAMAGER",
+		["Player-4813-04CB8B0A"] = "DAMAGER",
+		["Player-4477-0525AB6C"] = "HEALER",
+		["Player-4465-04565178"] = "DAMAGER",
+		["Player-4456-0492500F"] = "DAMAGER",
+		["Player-4465-04184F12"] = "DAMAGER",
+		["Player-4477-0529254F"] = "HEALER",
+		["Player-4477-052B56B7"] = "DAMAGER",
+		["Player-4476-0555D0FC"] = "NONE",
+		["Player-4465-041618E9"] = "DAMAGER",
+		["Player-4476-051BE3CC"] = "HEALER",
+		["Player-4465-045D7B11"] = "DAMAGER",
+		["Player-4465-041563CC"] = "DAMAGER",
+		["Player-4454-0469C59E"] = "TANK",
+		["Player-4465-02843DCA"] = "HEALER",
+		["Player-4465-048E5AAA"] = "HEALER",
+		["Player-4465-045D488F"] = "DAMAGER",
+		["Player-4465-0416CEC7"] = "HEALER",
+		["Player-4476-051B6977"] = "DAMAGER",
+		["Player-4813-01ED33EA"] = "DAMAGER",
+		["Player-4465-027A4F1E"] = "DAMAGER",
+		["Player-4465-0385AADB"] = "DAMAGER",
+		["Player-4477-0449F01C"] = "HEALER",
+		["Player-4476-051AB1FC"] = "DAMAGER",
+		["Player-4465-0417A121"] = "DAMAGER",
+		["Player-4465-0421023B"] = "DAMAGER",
+		["Player-4476-03A1F56C"] = "DAMAGER",
+		["Player-4465-048AAFA7"] = "DAMAGER",
+		["Player-4465-02C933C6"] = "DAMAGER",
+		["Player-4465-045C026C"] = "DAMAGER",
+		["Player-4465-0027FD3A"] = "DAMAGER",
+		["Player-4465-0400DA6F"] = "DAMAGER",
+		["Player-4476-052CC147"] = "DAMAGER",
+		["Player-4465-00209801"] = "DAMAGER",
+		["Player-4465-01249DA8"] = "DAMAGER",
+		["Player-4454-051FDD12"] = "DAMAGER",
+		["Player-4477-051D2F11"] = "HEALER",
+		["Player-4465-0290E4C1"] = "DAMAGER",
+		["Player-4465-03B7FD2B"] = "DAMAGER",
+		["Player-4477-04F42090"] = "DAMAGER",
+		["Player-4441-04379C93"] = "HEALER",
+		["Player-4465-0480321A"] = "HEALER",
+		["Player-4465-045A7EFE"] = "DAMAGER",
+		["Player-4465-045301A9"] = "DAMAGER",
+		["Player-4465-033316DE"] = "DAMAGER",
+		["Player-4465-032B1F7B"] = "DAMAGER",
+		["Player-4465-007DD45E"] = "HEALER",
+		["Player-4465-0419BFD6"] = "DAMAGER",
+		["Player-4701-045FD8C5"] = "HEALER",
+		["Player-4456-014F666C"] = "DAMAGER",
+		["Player-4476-0528C998"] = "DAMAGER",
+		["Player-4465-02BD4436"] = "HEALER",
+		["Player-4465-045DF6F6"] = "DAMAGER",
+		["Player-4476-03BF70A6"] = "NONE",
+		["Player-4476-057D0C29"] = "DAMAGER",
+		["Player-4454-030B707F"] = "DAMAGER",
+		["Player-4476-0525D97B"] = "DAMAGER",
+		["Player-4441-029BD82C"] = "DAMAGER",
+		["Player-4749-045A0AF9"] = "DAMAGER",
+		["Player-4465-02390641"] = "DAMAGER",
+		["Player-4465-043A28E5"] = "DAMAGER",
+		["Player-4453-05284C57"] = "DAMAGER",
+		["Player-4442-02101841"] = "DAMAGER",
+		["Player-4465-0415BCAB"] = "DAMAGER",
+		["Player-4465-04181E70"] = "TANK",
+		["Player-4465-03B3FD53"] = "TANK",
+		["Player-4476-05227824"] = "DAMAGER",
+		["Player-4465-027BD3D6"] = "DAMAGER",
+		["Player-4455-05266D0C"] = "DAMAGER",
+		["Player-4476-051EF732"] = "DAMAGER",
+		["Player-4465-0483F454"] = "NONE",
+		["Player-4441-0389A1A3"] = "DAMAGER",
+		["Player-4477-04D7DC4B"] = "DAMAGER",
+		["Player-4465-03BA4BD4"] = "DAMAGER",
+		["Player-4465-041CA1EA"] = "DAMAGER",
+		["Player-4465-03019B40"] = "HEALER",
+		["Player-4701-0443897C"] = "DAMAGER",
+		["Player-4465-040D1D0F"] = "TANK",
+		["Player-4465-03E83C4A"] = "TANK",
+		["Player-4454-05284957"] = "DAMAGER",
+		["Player-4465-03098675"] = "DAMAGER",
+		["Player-4465-0309322F"] = "DAMAGER",
+		["Player-4476-056E6CDA"] = "DAMAGER",
+		["Player-4476-05038705"] = "DAMAGER",
+		["Player-4455-04D60D0D"] = "HEALER",
+		["Player-4464-045EA14C"] = "DAMAGER",
+		["Player-4701-03192770"] = "DAMAGER",
+		["Player-4465-04164974"] = "DAMAGER",
+		["Player-4441-02464036"] = "HEALER",
+		["Player-4701-0444022E"] = "HEALER",
+		["Player-4703-00D08F8F"] = "DAMAGER",
+		["Player-4440-025025D0"] = "DAMAGER",
+		["Player-4465-0394CDC6"] = "DAMAGER",
+		["Player-4476-052575D4"] = "HEALER",
+		["Player-4465-041518AA"] = "TANK",
+		["Player-4465-026A760D"] = "DAMAGER",
+		["Player-4477-056B7040"] = "DAMAGER",
+		["Player-4441-028525FD"] = "DAMAGER",
+		["Player-4465-04072F91"] = "DAMAGER",
+		["Player-4465-0434999B"] = "DAMAGER",
+		["Player-4465-0306E853"] = "DAMAGER",
+		["Player-4456-02DED660"] = "DAMAGER",
+		["Player-4465-04911027"] = "NONE",
+		["Player-4464-0452BD3E"] = "HEALER",
+		["Player-4476-03BCE9A2"] = "DAMAGER",
+		["Player-4465-026CF1DD"] = "HEALER",
+		["Player-4476-051C76CB"] = "DAMAGER",
+		["Player-4454-0514938A"] = "DAMAGER",
+		["Player-4476-051B5D07"] = "DAMAGER",
+		["Player-4476-050C7CFB"] = "DAMAGER",
+		["Player-4455-04F899D3"] = "HEALER",
+		["Player-4465-02CA729A"] = "DAMAGER",
+		["Player-4476-0526911E"] = "DAMAGER",
+		["Player-4476-05274D88"] = "HEALER",
+		["Player-4701-04580F37"] = "DAMAGER",
+		["Player-4465-03052C81"] = "DAMAGER",
+		["Player-4465-030460F8"] = "DAMAGER",
+		["Player-4465-0456983F"] = "DAMAGER",
+		["Player-4465-03C44E74"] = "DAMAGER",
+		["Player-4465-045B4A97"] = "HEALER",
+		["Player-4701-0455068B"] = "DAMAGER",
+		["Player-4465-04580CEF"] = "DAMAGER",
+		["Player-4465-03015CF1"] = "HEALER",
+		["Player-4465-04161BF6"] = "DAMAGER",
+		["Player-4456-05258AEB"] = "HEALER",
+		["Player-4476-052B9016"] = "DAMAGER",
+		["Player-4465-045805A0"] = "DAMAGER",
+		["Player-4456-04D8E2E3"] = "DAMAGER",
+		["Player-4477-052DA39F"] = "DAMAGER",
+		["Player-4476-04BD0494"] = "DAMAGER",
+		["Player-4476-0525229B"] = "DAMAGER",
+		["Player-4465-0434A9F1"] = "HEALER",
+		["Player-4701-03BD9563"] = "DAMAGER",
+		["Player-4465-041537DA"] = "TANK",
+		["Player-4476-05255BEF"] = "DAMAGER",
+		["Player-4464-03062F94"] = "HEALER",
+		["Player-4456-04B4A9CF"] = "HEALER",
+		["Player-4455-03D2FBF7"] = "DAMAGER",
+		["Player-4476-03B1871D"] = "DAMAGER",
+		["Player-4477-0262454E"] = "DAMAGER",
+		["Player-4477-05258005"] = "DAMAGER",
+		["Player-4701-04572ECB"] = "HEALER",
+		["Player-4453-03B2FCB2"] = "DAMAGER",
+		["Player-4454-0525D60E"] = "DAMAGER",
+		["Player-4465-042169FF"] = "DAMAGER",
+		["Player-4701-0384058B"] = "DAMAGER",
+		["Player-4465-0418616B"] = "DAMAGER",
+		["Player-4465-048A319D"] = "DAMAGER",
+		["Player-4465-0394651C"] = "DAMAGER",
+		["Player-4465-0446DE3C"] = "DAMAGER",
+		["Player-4456-04B55F8F"] = "DAMAGER",
+		["Player-4464-045B7033"] = "DAMAGER",
+		["Player-4701-043E3251"] = "DAMAGER",
+		["Player-4465-03047852"] = "DAMAGER",
+		["Player-4454-051F3F57"] = "DAMAGER",
+		["Player-4465-045CDD95"] = "HEALER",
+		["Player-4476-0529D318"] = "HEALER",
+		["Player-4477-051B1E68"] = "DAMAGER",
+		["Player-4456-05256276"] = "DAMAGER",
+		["Player-4476-05281BE6"] = "DAMAGER",
+		["Player-4476-04E04996"] = "DAMAGER",
+		["Player-4441-04577924"] = "DAMAGER",
+		["Player-4465-04167AB6"] = "DAMAGER",
+		["Player-4477-055C2638"] = "HEALER",
+		["Player-4465-0272E0C9"] = "DAMAGER",
+		["Player-4465-04860AA6"] = "NONE",
+		["Player-4465-037C8B65"] = "DAMAGER",
+		["Player-4477-045E6EBE"] = "DAMAGER",
+		["Player-4476-056218BB"] = "DAMAGER",
+		["Player-4476-0525A8B3"] = "DAMAGER",
+		["Player-4465-045BD6D6"] = "HEALER",
+		["Player-4465-02BB4683"] = "NONE",
+		["Player-4455-05273629"] = "DAMAGER",
+		["Player-4465-04533198"] = "DAMAGER",
+		["Player-4465-03A9B48B"] = "DAMAGER",
+		["Player-4477-052A2904"] = "DAMAGER",
+		["Player-4453-051EBDF1"] = "DAMAGER",
+		["Player-4465-04154556"] = "TANK",
+		["Player-4465-022C9439"] = "DAMAGER",
+		["Player-4465-02FE3529"] = "DAMAGER",
+		["Player-4476-051D1816"] = "DAMAGER",
+		["Player-4477-0505BCAC"] = "DAMAGER",
+		["Player-4476-050EC70F"] = "HEALER",
+		["Player-4476-04DD7A19"] = "DAMAGER",
+		["Player-4442-04821DB2"] = "NONE",
+		["Player-4701-04601B30"] = "DAMAGER",
+		["Player-4476-051A1E98"] = "DAMAGER",
+		["Player-4465-014E69A8"] = "DAMAGER",
+		["Player-4464-045EAE6E"] = "DAMAGER",
+		["Player-4477-04EA7D87"] = "HEALER",
+		["Player-4465-04598357"] = "DAMAGER",
+		["Player-4476-056B1551"] = "NONE",
+		["Player-4477-039306B7"] = "DAMAGER",
+		["Player-4477-0567E3E6"] = "DAMAGER",
+		["Player-4465-041B61AD"] = "DAMAGER",
+		["Player-4465-04508B30"] = "DAMAGER",
+		["Player-4476-0560B487"] = "NONE",
+		["Player-4465-0477893A"] = "DAMAGER",
+		["Player-4813-04A837C0"] = "DAMAGER",
+		["Player-4465-0419BFF9"] = "DAMAGER",
+		["Player-4477-045E2D24"] = "DAMAGER",
+		["Player-4701-041C367F"] = "DAMAGER",
+		["Player-4701-03A1A8A7"] = "HEALER",
+		["Player-4477-052A9286"] = "DAMAGER",
+		["Player-4454-0528E8AA"] = "DAMAGER",
+		["Player-4476-056993FB"] = "DAMAGER",
+		["Player-4476-03A3532F"] = "DAMAGER",
+		["Player-4455-0450F48A"] = "HEALER",
+		["Player-4477-04D95E9A"] = "DAMAGER",
+		["Player-4465-024B8106"] = "DAMAGER",
+		["Player-4813-05280E98"] = "DAMAGER",
+		["Player-4464-048583AF"] = "HEALER",
+		["Player-4476-04EF7A40"] = "DAMAGER",
+		["Player-4476-052B56FE"] = "DAMAGER",
+		["Player-4465-041DF57A"] = "DAMAGER",
+		["Player-4701-034FB775"] = "DAMAGER",
+		["Player-4465-01612EE6"] = "DAMAGER",
+		["Player-4701-04526AB2"] = "DAMAGER",
+		["Player-4465-03FB544A"] = "HEALER",
+		["Player-4476-05274441"] = "HEALER",
+		["Player-4465-04506D61"] = "HEALER",
+		["Player-4453-050FCC31"] = "DAMAGER",
+		["Player-4455-0522E8F7"] = "DAMAGER",
+		["Player-4465-04222B07"] = "HEALER",
+		["Player-4465-03733AA0"] = "DAMAGER",
+		["Player-4465-04169280"] = "DAMAGER",
+		["Player-4813-037CBC76"] = "DAMAGER",
+		["Player-4465-04353CB6"] = "DAMAGER",
+		["Player-4464-048B059E"] = "DAMAGER",
+		["Player-4442-04557765"] = "DAMAGER",
+		["Player-4465-0445FF8C"] = "DAMAGER",
+		["Player-4465-0433EDC0"] = "DAMAGER",
+		["Player-4454-04BDB82C"] = "HEALER",
+		["Player-4441-04583046"] = "DAMAGER",
+		["Player-4465-0420AA5C"] = "DAMAGER",
+		["Player-4442-04830097"] = "DAMAGER",
+		["Player-4476-05403F22"] = "DAMAGER",
+		["Player-4476-05401707"] = "DAMAGER",
+		["Player-4455-011D1B6E"] = "DAMAGER",
+		["Player-4465-03D4760B"] = "DAMAGER",
+		["Player-4465-04156195"] = "TANK",
+		["Player-4465-041CEC38"] = "DAMAGER",
+		["Player-4476-038F2C91"] = "HEALER",
+		["Player-4465-03B6F0C8"] = "DAMAGER",
+		["Player-4476-053365F6"] = "DAMAGER",
+		["Player-4456-050A6CD2"] = "HEALER",
+		["Player-4465-04338D09"] = "DAMAGER",
+		["Player-4476-05629088"] = "DAMAGER",
+		["Player-4476-05229702"] = "DAMAGER",
+		["Player-4465-045ADF43"] = "NONE",
+		["Player-4476-05033284"] = "DAMAGER",
+		["Player-4454-051CE4AE"] = "DAMAGER",
+		["Player-4465-04155CC6"] = "TANK",
+		["Player-4476-036AFEF4"] = "DAMAGER",
+		["Player-4476-051E25F1"] = "DAMAGER",
+		["Player-4465-0170B386"] = "DAMAGER",
+		["Player-4465-048F1697"] = "NONE",
+		["Player-4477-04789D02"] = "DAMAGER",
+		["Player-4465-0347473D"] = "DAMAGER",
+		["Player-4465-0445A457"] = "DAMAGER",
+		["Player-4813-043D0093"] = "HEALER",
+		["Player-4701-041CC319"] = "DAMAGER",
+		["Player-4465-03076084"] = "HEALER",
+		["Player-4465-04157D5F"] = "DAMAGER",
+		["Player-4465-04167A83"] = "DAMAGER",
+		["Player-4476-052BDE3A"] = "DAMAGER",
+		["Player-4465-0419A8AA"] = "DAMAGER",
+		["Player-4465-02E96C05"] = "DAMAGER",
+		["Player-4465-03B748D7"] = "DAMAGER",
+		["Player-4465-0374EABC"] = "HEALER",
+		["Player-4465-04169BFF"] = "DAMAGER",
+		["Player-4465-02C34E5A"] = "DAMAGER",
+		["Player-4465-04169F9B"] = "DAMAGER",
+		["Player-4701-0441BE2F"] = "DAMAGER",
+		["Player-4465-0489DCF1"] = "DAMAGER",
+		["Player-4477-05229B0E"] = "DAMAGER",
+		["Player-4441-0188B546"] = "DAMAGER",
+		["Player-4465-0108DC36"] = "DAMAGER",
+		["Player-4465-02C30FDE"] = "DAMAGER",
+		["Player-4476-04C23A7F"] = "DAMAGER",
+		["Player-4476-0535A8A1"] = "HEALER",
+		["Player-4701-0429F7D3"] = "HEALER",
+		["Player-4701-045498E2"] = "DAMAGER",
+		["Player-4465-041490F2"] = "DAMAGER",
+		["Player-4701-044B03FD"] = "DAMAGER",
+		["Player-4477-05270EA0"] = "DAMAGER",
+		["Player-4476-052C397B"] = "HEALER",
+		["Player-4464-043A400A"] = "DAMAGER",
+		["Player-4476-051EF7DF"] = "HEALER",
+		["Player-4465-04171F8B"] = "DAMAGER",
+		["Player-4456-0399FDA0"] = "HEALER",
+		["Player-4476-0510A6E9"] = "DAMAGER",
+		["Player-4465-03F83A13"] = "DAMAGER",
+		["Player-4476-0573A84D"] = "DAMAGER",
+		["Player-4465-045A5CEF"] = "DAMAGER",
+		["Player-4453-052777C8"] = "DAMAGER",
+		["Player-4465-045888C5"] = "HEALER",
+		["Player-4477-04DEE508"] = "DAMAGER",
+		["Player-4465-04552866"] = "DAMAGER",
+		["Player-4465-04927F54"] = "DAMAGER",
+		["Player-4465-01487BDF"] = "DAMAGER",
+		["Player-4465-041ADE53"] = "DAMAGER",
+		["Player-4465-02F97F97"] = "HEALER",
+		["Player-4465-03F619CD"] = "DAMAGER",
+		["Player-4465-0417F0B2"] = "TANK",
+		["Player-4465-011E44D6"] = "HEALER",
+		["Player-4465-02F58B56"] = "HEALER",
+		["Player-4476-052895F1"] = "DAMAGER",
+		["Player-4476-0514B757"] = "DAMAGER",
+		["Player-4455-033237CC"] = "DAMAGER",
+		["Player-4456-04DCC303"] = "DAMAGER",
+		["Player-4440-0196E3E0"] = "DAMAGER",
+		["Player-4465-017A918E"] = "DAMAGER",
+		["Player-4467-045BD2F5"] = "DAMAGER",
+		["Player-4465-0440F9C2"] = "DAMAGER",
+		["Player-4465-0323603A"] = "DAMAGER",
+		["Player-4465-02401517"] = "DAMAGER",
+		["Player-4465-041B7FBB"] = "DAMAGER",
+		["Player-4476-043D9443"] = "HEALER",
+		["Player-4476-051B0296"] = "DAMAGER",
+		["Player-4477-051C3CA9"] = "HEALER",
+		["Player-4813-044A07F7"] = "DAMAGER",
+		["Player-4454-056D30BF"] = "NONE",
+		["Player-4476-05240986"] = "DAMAGER",
+		["Player-4465-02F94030"] = "DAMAGER",
+		["Player-4465-0268A9F4"] = "DAMAGER",
+		["Player-4477-0522AB2E"] = "DAMAGER",
+		["Player-4477-0521BD98"] = "HEALER",
+		["Player-4456-05247FA8"] = "HEALER",
+		["Player-4476-05255D53"] = "DAMAGER",
+		["Player-4456-051F7F85"] = "DAMAGER",
+		["Player-4465-04192DCC"] = "DAMAGER",
+		["Player-4465-041D7552"] = "TANK",
+		["Player-4464-0193BE5A"] = "DAMAGER",
+		["Player-4440-00035182"] = "DAMAGER",
+		["Player-4476-044903AF"] = "HEALER",
+		["Player-4477-052BD829"] = "DAMAGER",
+		["Player-4464-02BDECC4"] = "DAMAGER",
+		["Player-4476-0562932E"] = "HEALER",
+		["Player-4454-0564C553"] = "DAMAGER",
+		["Player-4476-050B41D9"] = "HEALER",
+		["Player-4476-05272CC6"] = "DAMAGER",
+		["Player-4465-02F95356"] = "DAMAGER",
+		["Player-4465-0290D6BC"] = "DAMAGER",
+		["Player-4440-04515ED7"] = "HEALER",
+		["Player-4456-0192CFD3"] = "DAMAGER",
+		["Player-4465-0418373F"] = "DAMAGER",
+		["Player-4465-00E5831F"] = "DAMAGER",
+		["Player-4441-040D8FB6"] = "DAMAGER",
+		["Player-4678-052C87C8"] = "DAMAGER",
+		["Player-4456-04E08346"] = "DAMAGER",
+		["Player-4465-04171EEC"] = "DAMAGER",
+		["Player-4465-021AC09F"] = "DAMAGER",
 	},
+	["last_encounter"] = "Baron Geddon",
 	["combat_counter"] = 14561,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["data_harvested_for_charts"] = {
+	["force_font_outline"] = "",
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["hide_on_combat"] = false,
+			["opened"] = 0,
+			["window_scale"] = 1,
+			["show_icon"] = 5,
+			["encounter_timers_dbm"] = {
+			},
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["use_square_mode"] = false,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_x"] = 0,
+			["arrow_anchor_y"] = 0,
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
+			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["author"] = "Details! Team",
+			["scale"] = 1,
+			["row_height"] = 18,
+			["point"] = "RIGHT",
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
+			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
+		},
+		["DETAILS_PLUGIN_TIME_ATTACK"] = {
+			["enabled"] = true,
+			["realm_last_shown"] = 40,
+			["saved_as_anonymous"] = true,
+			["recently_as_anonymous"] = true,
+			["dps"] = 0,
+			["disable_sharing"] = false,
+			["history"] = {
+			},
+			["time"] = 40,
+			["history_lastindex"] = 0,
+			["author"] = "Details! Team",
+			["realm_history"] = {
+			},
+			["realm_lastamt"] = 0,
+		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["tank_block_size_height"] = 50,
+			["show_power_bar"] = false,
+			["first_run"] = false,
+			["aura_timer_text_size"] = 14,
+			["tank_block_castbar_size_height"] = 16,
+			["show_health_bar"] = true,
+			["aura_offset_y"] = 0,
+			["enabled"] = true,
+			["show_cast_bar"] = false,
+			["author"] = "Details! Team",
+			["tank_block_size"] = 150,
+			["bar_height"] = 24,
+			["tank_block_texture"] = "Details Serenity",
+			["show_inc_bars"] = true,
+			["tank_block_powerbar_size_height"] = 10,
+			["tank_block_height"] = 40,
+			["tank_block_color"] = {
+				0.074509, -- [1]
+				0.035294, -- [2]
+				0.035294, -- [3]
+				0.832845, -- [4]
+			},
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+			["max_compares"] = 4,
+			["compare_type"] = 1,
+		},
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["animate"] = true,
+			["hide_pull_bar"] = false,
+			["useclasscolors"] = true,
+			["usefocus"] = false,
+			["disable_gouge"] = false,
+			["showamount"] = false,
+			["absolute_mode"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["openedfromcommand"] = false,
+			["updatespeed"] = 0.2,
+			["dividebyhundred"] = true,
+			["alwaysshowme"] = true,
+			["useplayercolor"] = true,
+			["playSound"] = false,
+		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
+		},
 	},
 	["last_realversion"] = 156,
 	["cached_talents"] = {
-		["Player-4465-0483F454"] = {
-			{
-				135921, -- [1]
-				1, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [1]
-			{
-				135917, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [2]
-			{
-				135903, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [3]
-			{
-				236251, -- [1]
-				1, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [4]
-			{
-				135872, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [5]
-			{
-				135876, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [6]
-			{
-				236261, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [7]
-			{
-				236256, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [8]
-			{
-				236254, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [9]
-			{
-				236247, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [10]
-			{
-				236394, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [11]
-			{
-				135895, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [12]
-			{
-				461859, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [13]
-			{
-				461857, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [14]
-			{
-				460953, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [15]
-			{
-				134909, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [16]
-			{
-				460689, -- [1]
-				3, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [17]
-			{
-				135920, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [18]
-			{
-				135875, -- [1]
-				2, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [19]
-			{
-				460690, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [20]
-			{
-				133526, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [21]
-			{
-				135892, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [22]
-			{
-				253400, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [23]
-			{
-				135963, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [24]
-			{
-				236264, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [25]
-			{
-				135926, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [26]
-			{
-				136051, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [27]
-			{
-				135870, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [28]
-			{
-				135880, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [29]
-			{
-				135896, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [30]
-			{
-				236259, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [31]
-			{
-				236253, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [32]
-			{
-				135985, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [33]
-			{
-				133562, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [34]
-			{
-				135882, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [35]
-			{
-				133176, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [36]
-			{
-				236252, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [37]
-			{
-				236265, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [38]
-			{
-				135433, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [39]
-			{
-				135883, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [40]
-			{
-				135897, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [41]
-			{
-				132347, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [42]
-			{
-				135904, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [43]
-			{
-				135889, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [44]
-			{
-				236246, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [45]
-			{
-				135942, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [46]
-			{
-				236257, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [47]
-			{
-				236262, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [48]
-			{
-				236260, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [49]
-			{
-				236250, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [50]
-			{
-				236249, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [51]
-			{
-				236248, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [52]
-			{
-				237547, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [53]
-			{
-				134916, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [54]
-			{
-				252269, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [55]
-			{
-				237486, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [56]
-			{
-				236258, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [57]
-			{
-				135937, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [58]
-			{
-				236255, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [59]
-			{
-				135964, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [60]
-		},
-		["Player-4476-057D0C29"] = {
-			{
-				135817, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				135807, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				459025, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				136115, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				136170, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [5]
-			{
-				135850, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				136094, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				136099, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136028, -- [1]
-				3, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				451165, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				237576, -- [1]
-				2, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				237583, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [12]
-			{
-				135829, -- [1]
-				1, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				451169, -- [1]
-				2, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				252174, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [16]
-			{
-				136014, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				136100, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				136111, -- [1]
-				1, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [19]
-			{
-				132152, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [20]
-			{
-				348567, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				136051, -- [1]
-				1, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135814, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				135892, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				132314, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [25]
-			{
-				136110, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				136088, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				237587, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [28]
-			{
-				136024, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				237584, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				237577, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				135825, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [32]
-			{
-				451166, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				451168, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [34]
-			{
-				135791, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [35]
-			{
-				135776, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				136008, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136027, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				136109, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132315, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136037, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135861, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				135859, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				136057, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136059, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				136060, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				237573, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				237571, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				237590, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				252995, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236288, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				462651, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				252271, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				135990, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				237556, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				136079, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				237586, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [58]
-		},
-		["Player-4465-04927F54"] = {
-			{
-				136071, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				136170, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				135856, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				135737, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [4]
-			{
-				135736, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				136031, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [6]
-			{
-				135752, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				135732, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136048, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [9]
-			{
-				236219, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [10]
-			{
-				236223, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				134104, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				136091, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236221, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				236222, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				135754, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				429382, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				136096, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				429383, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				135735, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [20]
-			{
-				136116, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				135807, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				135818, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				429590, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				135821, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				136115, -- [1]
-				3, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				135820, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [28]
-			{
-				135827, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				135903, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [30]
-			{
-				135788, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [31]
-			{
-				135789, -- [1]
-				2, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				135824, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [33]
-			{
-				135822, -- [1]
-				3, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				134153, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				236218, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [36]
-			{
-				236220, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				135826, -- [1]
-				2, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				236216, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [39]
-			{
-				252268, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				135817, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				236218, -- [1]
-				2, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [42]
-			{
-				135854, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [43]
-			{
-				135864, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				135838, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [45]
-			{
-				429385, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [46]
-			{
-				135837, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [47]
-			{
-				135865, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [48]
-			{
-				236227, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				236209, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [50]
-			{
-				135988, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236206, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [52]
-			{
-				135833, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				236214, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				429386, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				135845, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				135849, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				430840, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [58]
-			{
-				135852, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [59]
-			{
-				135861, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				135859, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [61]
-		},
-		["Player-4476-0555D0FC"] = {
-			{
-				135921, -- [1]
-				1, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [1]
-			{
-				135917, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [2]
-			{
-				135903, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [3]
-			{
-				236251, -- [1]
-				1, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [4]
-			{
-				135872, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [5]
-			{
-				135876, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [6]
-			{
-				236261, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [7]
-			{
-				236256, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [8]
-			{
-				236254, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [9]
-			{
-				236247, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [10]
-			{
-				236394, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [11]
-			{
-				135895, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [12]
-			{
-				461859, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 1,
-			}, -- [13]
-			{
-				461857, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [14]
-			{
-				460953, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [15]
-			{
-				134909, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [16]
-			{
-				460689, -- [1]
-				3, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [17]
-			{
-				135920, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [18]
-			{
-				135875, -- [1]
-				2, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				[7] = 2,
-			}, -- [19]
-			{
-				460690, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				[7] = 3,
-			}, -- [20]
-			{
-				133526, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [21]
-			{
-				135892, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [22]
-			{
-				253400, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [23]
-			{
-				135963, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [24]
-			{
-				236264, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [25]
-			{
-				135926, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [26]
-			{
-				136051, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [27]
-			{
-				135870, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [28]
-			{
-				135880, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [29]
-			{
-				135896, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [30]
-			{
-				236259, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [31]
-			{
-				236253, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [32]
-			{
-				135985, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [33]
-			{
-				133562, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [34]
-			{
-				135882, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [35]
-			{
-				133176, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [36]
-			{
-				236252, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [37]
-			{
-				236265, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				[7] = 1,
-			}, -- [38]
-			{
-				135433, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				[7] = 2,
-			}, -- [39]
-			{
-				135883, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				[7] = 3,
-			}, -- [40]
-			{
-				135897, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [41]
-			{
-				132347, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [42]
-			{
-				135904, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [43]
-			{
-				135889, -- [1]
-				2, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [44]
-			{
-				236246, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [45]
-			{
-				135942, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [46]
-			{
-				236257, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [47]
-			{
-				236262, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [48]
-			{
-				236260, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [49]
-			{
-				236250, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [50]
-			{
-				236249, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [51]
-			{
-				236248, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [52]
-			{
-				237547, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [53]
-			{
-				134916, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 3,
-			}, -- [54]
-			{
-				252269, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [55]
-			{
-				237486, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				[7] = 1,
-			}, -- [56]
-			{
-				236258, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [57]
-			{
-				135937, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [58]
-			{
-				236255, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [59]
-			{
-				135964, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				[7] = 2,
-			}, -- [60]
-		},
-		["Player-4465-045FCC53"] = {
-			{
-				136071, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				136170, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				135856, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				135737, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [4]
-			{
-				135736, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				136031, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [6]
-			{
-				135752, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				135732, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136048, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [9]
-			{
-				236219, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [10]
-			{
-				236223, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				134104, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				136091, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236221, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				236222, -- [1]
-				1, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				135754, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				429382, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				136096, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				429383, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				135735, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [20]
-			{
-				136116, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				135807, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				135818, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				429590, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				135821, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				136115, -- [1]
-				3, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				135820, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [28]
-			{
-				135827, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				135903, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [30]
-			{
-				135788, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [31]
-			{
-				135789, -- [1]
-				2, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				135824, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [33]
-			{
-				135822, -- [1]
-				3, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				134153, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				236218, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [36]
-			{
-				236220, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				135826, -- [1]
-				2, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				236216, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [39]
-			{
-				252268, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				135817, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				236218, -- [1]
-				2, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [42]
-			{
-				135854, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [43]
-			{
-				135864, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				135838, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [45]
-			{
-				429385, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [46]
-			{
-				135837, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [47]
-			{
-				135865, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [48]
-			{
-				236227, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				236209, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [50]
-			{
-				135988, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236206, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [52]
-			{
-				135833, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				236214, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				429386, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				135845, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				135849, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				430840, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [58]
-			{
-				135852, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [59]
-			{
-				135861, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				135859, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [61]
-		},
 		["Player-4465-02BB4683"] = {
 			{
 				135921, -- [1]
@@ -15316,1099 +13291,6 @@ _detalhes_database = {
 				2, -- [7]
 			}, -- [60]
 		},
-		["Player-4476-055B0D7A"] = {
-			{
-				136006, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [1]
-			{
-				136087, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				136062, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				252188, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				236154, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				236205, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				132113, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				341763, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				236163, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				236704, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [10]
-			{
-				132129, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [11]
-			{
-				132371, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				236168, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236150, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [14]
-			{
-				136036, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [15]
-			{
-				135138, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				236170, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				135730, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				132123, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				236216, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [20]
-			{
-				134355, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [21]
-			{
-				136095, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				132183, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [23]
-			{
-				304501, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				132130, -- [1]
-				2, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				132134, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				132114, -- [1]
-				2, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				236169, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [28]
-			{
-				132318, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				236159, -- [1]
-				3, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				136112, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				132242, -- [1]
-				2, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				237347, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [33]
-			{
-				236164, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				236149, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				132091, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				237513, -- [1]
-				2, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				236158, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				132278, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132185, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				132121, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135881, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [42]
-			{
-				237586, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [43]
-			{
-				136116, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [44]
-			{
-				136081, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [45]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [46]
-			{
-				236155, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				136085, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [48]
-			{
-				134222, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				132124, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [50]
-			{
-				132137, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [51]
-			{
-				236166, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [52]
-			{
-				132145, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [53]
-			{
-				236161, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				236153, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [55]
-			{
-				132125, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [56]
-			{
-				236288, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [57]
-			{
-				236740, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [58]
-			{
-				236160, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [59]
-			{
-				136041, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [60]
-			{
-				237472, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [61]
-			{
-				135879, -- [1]
-				2, -- [2]
-				1, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [62]
-			{
-				237578, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [63]
-		},
-		["Player-4476-056218BB"] = {
-			{
-				135817, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				135807, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				459025, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				136115, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				136170, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [5]
-			{
-				135850, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				136094, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				136099, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136028, -- [1]
-				3, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				451165, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				237576, -- [1]
-				2, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				237583, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [12]
-			{
-				135829, -- [1]
-				1, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				451169, -- [1]
-				2, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				252174, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [16]
-			{
-				136014, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				136100, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				136111, -- [1]
-				1, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [19]
-			{
-				132152, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [20]
-			{
-				348567, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				136051, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135814, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				135892, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				132314, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [25]
-			{
-				136110, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				136088, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				237587, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [28]
-			{
-				136024, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				237584, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				237577, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				135825, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [32]
-			{
-				451166, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				451168, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [34]
-			{
-				135791, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [35]
-			{
-				135776, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				136008, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136027, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				136109, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132315, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136037, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135861, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				135859, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				136057, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136059, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				136060, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				237573, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				237571, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				237590, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				252995, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236288, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				462651, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				252271, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				135990, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				237556, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				136079, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				237586, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [58]
-		},
 	},
 	["combat_id"] = 7,
 	["savedStyles"] = {
@@ -16431,7 +13313,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -16611,13 +13493,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -16640,7 +13522,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -16656,14 +13538,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
@@ -16681,9 +13560,12 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -16796,7 +13678,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -16846,6 +13728,7 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
+	["ignore_nicktag"] = true,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -16857,7 +13740,6 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["ignore_nicktag"] = true,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -16870,7 +13752,6 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.02927400000000001,
 					["pets"] = {
 					},
 					["classe"] = "PALADIN",
@@ -16878,11 +13759,10 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 1459896.029274,
-					["serial"] = "Player-4465-02BB4683",
-					["aID"] = "4465-02BB4683",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Player-4465-02BB4683",
 					["damage_from"] = {
 						["Stonecore Earthshaper"] = true,
 						["[*] Thrashing Charge"] = true,
@@ -16907,20 +13787,21 @@ _detalhes_database = {
 						["Crystal Shard"] = 4999,
 						["Stonecore Earthshaper"] = 80089,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.02927400000000001,
 					["end_time"] = 1716993209,
 					["nome"] = "Vermina",
+					["aID"] = "4465-02BB4683",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 13,
 								["b_amt"] = 3,
 								["g_amt"] = 11,
-								["n_max"] = 2207,
+								["b_dmg"] = 3491,
 								["targets"] = {
 									["Rock Borer"] = 5481,
 									["Stonecore Berserker"] = 13935,
@@ -16948,14 +13829,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 48613,
 								["n_amt"] = 54,
-								["b_dmg"] = 3491,
+								["n_max"] = 2207,
 								["r_amt"] = 0,
 							}, -- [1]
 							[81297] = {
 								["c_amt"] = 28,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 680,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Earthshaper"] = 6774,
 									["Stonecore Flayer"] = 13413,
@@ -16984,14 +13865,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 25356,
 								["n_amt"] = 96,
-								["b_dmg"] = 0,
+								["n_max"] = 680,
 								["r_amt"] = 0,
 							},
 							[31935] = {
 								["c_amt"] = 3,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 9301,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Warbringer"] = 48916,
 									["Stonecore Flayer"] = 43093,
@@ -17021,14 +13902,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 48377,
 								["n_amt"] = 29,
-								["b_dmg"] = 0,
+								["n_max"] = 9301,
 								["r_amt"] = 0,
 							},
 							[53595] = {
 								["c_amt"] = 5,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 830,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 1108,
 									["Stonecore Berserker"] = 2373,
@@ -17054,14 +13935,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 7198,
 								["n_amt"] = 17,
-								["b_dmg"] = 0,
+								["n_max"] = 830,
 								["r_amt"] = 0,
 							},
 							[7294] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 199,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 396,
 									["Stonecore Berserker"] = 8317,
@@ -17089,14 +13970,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 112,
-								["b_dmg"] = 0,
+								["n_max"] = 199,
 								["r_amt"] = 0,
 							},
 							[88263] = {
 								["c_amt"] = 5,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4150,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 16244,
 									["Stonecore Berserker"] = 77780,
@@ -17123,14 +14004,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 27091,
 								["n_amt"] = 68,
-								["b_dmg"] = 0,
+								["n_max"] = 4150,
 								["r_amt"] = 0,
 							},
 							[35395] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 6016,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 54032,
 									["Crystalspawn Giant"] = 5627,
@@ -17153,49 +14034,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 11580,
 								["n_amt"] = 10,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[42463] = {
-								["c_amt"] = 23,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 528,
-								["targets"] = {
-									["Rock Borer"] = 190,
-									["Stonecore Berserker"] = 4665,
-									["Crystalspawn Giant"] = 1318,
-									["Stonecore Warbringer"] = 7070,
-									["Corborus"] = 18216,
-									["Millhouse Manastorm"] = 12370,
-									["Stonecore Earthshaper"] = 1867,
-									["Stonecore Flayer"] = 6814,
-								},
-								["n_total"] = 33726,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 120,
-								["total"] = 52510,
-								["c_max"] = 1061,
-								["id"] = 42463,
-								["r_dmg"] = 0,
-								["spellschool"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 18784,
-								["n_amt"] = 97,
-								["b_dmg"] = 0,
+								["n_max"] = 6016,
 								["r_amt"] = 0,
 							},
 							[31804] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 9086,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 6245,
 									["Stonecore Berserker"] = 19081,
@@ -17222,46 +14068,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 30894,
 								["n_amt"] = 12,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[53600] = {
-								["c_amt"] = 7,
-								["b_amt"] = 2,
-								["g_amt"] = 0,
-								["n_max"] = 12044,
-								["targets"] = {
-									["Rock Borer"] = 4854,
-									["Stonecore Warbringer"] = 25213,
-									["Millhouse Manastorm"] = 63221,
-									["Corborus"] = 35674,
-									["Stonecore Flayer"] = 16929,
-								},
-								["n_total"] = 12044,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 145891,
-								["c_max"] = 25213,
-								["id"] = 53600,
-								["r_dmg"] = 0,
-								["spellschool"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 133847,
-								["n_amt"] = 1,
-								["b_dmg"] = 21783,
+								["n_max"] = 9086,
 								["r_amt"] = 0,
 							},
 							[31803] = {
 								["c_amt"] = 11,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2067,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 9506,
 									["Crystalspawn Giant"] = 1840,
@@ -17288,14 +14102,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 36896,
 								["n_amt"] = 32,
-								["b_dmg"] = 0,
+								["n_max"] = 2067,
 								["r_amt"] = 0,
 							},
 							[2812] = {
 								["c_amt"] = 15,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3935,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 5576,
 									["Stonecore Berserker"] = 8119,
@@ -17323,14 +14137,81 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 38377,
 								["n_amt"] = 16,
+								["n_max"] = 3935,
+								["r_amt"] = 0,
+							},
+							[42463] = {
+								["c_amt"] = 23,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
 								["b_dmg"] = 0,
+								["targets"] = {
+									["Rock Borer"] = 190,
+									["Stonecore Berserker"] = 4665,
+									["Crystalspawn Giant"] = 1318,
+									["Stonecore Warbringer"] = 7070,
+									["Corborus"] = 18216,
+									["Millhouse Manastorm"] = 12370,
+									["Stonecore Earthshaper"] = 1867,
+									["Stonecore Flayer"] = 6814,
+								},
+								["n_total"] = 33726,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 120,
+								["total"] = 52510,
+								["c_max"] = 1061,
+								["id"] = 42463,
+								["r_dmg"] = 0,
+								["spellschool"] = 2,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 18784,
+								["n_amt"] = 97,
+								["n_max"] = 528,
+								["r_amt"] = 0,
+							},
+							[53600] = {
+								["c_amt"] = 7,
+								["b_amt"] = 2,
+								["g_amt"] = 0,
+								["b_dmg"] = 21783,
+								["targets"] = {
+									["Rock Borer"] = 4854,
+									["Stonecore Warbringer"] = 25213,
+									["Millhouse Manastorm"] = 63221,
+									["Corborus"] = 35674,
+									["Stonecore Flayer"] = 16929,
+								},
+								["n_total"] = 12044,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 8,
+								["total"] = 145891,
+								["c_max"] = 25213,
+								["id"] = 53600,
+								["r_dmg"] = 0,
+								["spellschool"] = 2,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 133847,
+								["n_amt"] = 1,
+								["n_max"] = 12044,
 								["r_amt"] = 0,
 							},
 							[24275] = {
 								["c_amt"] = 6,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 9677,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 1044,
 									["Stonecore Berserker"] = 9677,
@@ -17357,39 +14238,39 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 96024,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
+								["n_max"] = 9677,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 362420.029274,
 					["start_time"] = 1716993029,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.021753,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 77511.02175300001,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 77511.02175300001,
-					["serial"] = "Creature-0-4457-725-21149-42696-0005D73C81",
-					["aID"] = "42696",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4457-725-21149-42696-0005D73C81",
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Searing Totem <Ruksz-Gehennas>"] = true,
 						["Ruksz-Gehennas"] = true,
+						["Searing Totem <Ruksz-Gehennas>"] = true,
 						["Meridann-Gehennas"] = true,
 						["Zheboqi-Gehennas"] = true,
 						["Vermina"] = true,
@@ -17399,32 +14280,33 @@ _detalhes_database = {
 						["Vermina"] = 67263,
 						["Zheboqi-Gehennas"] = 10248,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.021753,
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
+					["aID"] = "42696",
 					["nome"] = "Stonecore Warbringer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 16,
 								["g_amt"] = 0,
-								["n_max"] = 7500,
+								["b_dmg"] = 37122,
 								["targets"] = {
 									["Vermina"] = 60783,
 								},
 								["n_total"] = 60783,
-								["MISS"] = 1,
-								["n_min"] = 0,
 								["g_dmg"] = 0,
+								["n_min"] = 0,
+								["MISS"] = 1,
 								["counter"] = 29,
 								["DODGE"] = 1,
 								["total"] = 60783,
 								["c_max"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -17436,14 +14318,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 21,
-								["b_dmg"] = 37122,
-								["r_amt"] = 0,
+								["n_max"] = 7500,
+								["a_amt"] = 0,
 							}, -- [1]
 							[80158] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -17462,29 +14344,29 @@ _detalhes_database = {
 								["successful_casted"] = 4,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[15496] = {
 								["c_amt"] = 0,
 								["b_amt"] = 2,
 								["g_amt"] = 0,
-								["n_max"] = 10248,
+								["b_dmg"] = 6480,
 								["targets"] = {
 									["Vermina"] = 6480,
 									["Jetcer-Gehennas"] = 0,
 									["Zheboqi-Gehennas"] = 10248,
 								},
 								["n_total"] = 16728,
-								["a_amt"] = 0,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["a_amt"] = 0,
 								["counter"] = 7,
 								["total"] = 16728,
 								["c_max"] = 0,
-								["DODGE"] = 3,
+								["g_dmg"] = 0,
 								["id"] = 15496,
 								["r_dmg"] = 0,
+								["DODGE"] = 3,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -17493,62 +14375,62 @@ _detalhes_database = {
 								["successful_casted"] = 4,
 								["c_total"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 6480,
+								["n_max"] = 10248,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 1251008.021753,
 					["start_time"] = 1716993145,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.012561,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 28510.012561,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 28510.012561,
-					["serial"] = "Creature-0-4457-725-21149-43537-0000573C81",
-					["aID"] = "43537",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4457-725-21149-43537-0000573C81",
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Ruksz-Gehennas"] = true,
-						["Vermina"] = true,
+						["Meridann-Gehennas"] = true,
 						["Jetcer-Gehennas"] = true,
 						["Searing Totem <Ruksz-Gehennas>"] = true,
-						["Meridann-Gehennas"] = true,
+						["Vermina"] = true,
 					},
 					["targets"] = {
 						["Meridann-Gehennas"] = 4758,
 						["Jetcer-Gehennas"] = 4561,
 						["Vermina"] = 19191,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.012561,
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
+					["aID"] = "43537",
 					["nome"] = "Stonecore Earthshaper",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 2,
 								["g_amt"] = 0,
-								["n_max"] = 3714,
+								["b_dmg"] = 4678,
 								["targets"] = {
 									["Vermina"] = 11197,
 								},
@@ -17569,14 +14451,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 4678,
+								["n_max"] = 3714,
 								["r_amt"] = 0,
 							}, -- [1]
 							[81530] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -17595,14 +14477,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[81576] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4758,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Meridann-Gehennas"] = 4758,
 									["Jetcer-Gehennas"] = 4561,
@@ -17624,64 +14506,64 @@ _detalhes_database = {
 								["successful_casted"] = 4,
 								["c_total"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 0,
+								["n_max"] = 4758,
 								["r_amt"] = 4,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 750600.012561,
 					["start_time"] = 1716993193,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.028228,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 77328.02822800001,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 77328.02822800001,
-					["serial"] = "Creature-0-4457-725-21149-43391-0000573C81",
-					["aID"] = "43391",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4457-725-21149-43391-0000573C81",
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Ruksz-Gehennas"] = true,
-						["Vermina"] = true,
+						["Meridann-Gehennas"] = true,
 						["Jetcer-Gehennas"] = true,
 						["Zheboqi-Gehennas"] = true,
-						["Meridann-Gehennas"] = true,
+						["Vermina"] = true,
 					},
 					["targets"] = {
 						["Ruksz-Gehennas"] = 15407,
 						["Meridann-Gehennas"] = 12600,
-						["Zheboqi-Gehennas"] = 12113,
-						["Vermina"] = 27677,
 						["Jetcer-Gehennas"] = 9531,
+						["Vermina"] = 27677,
+						["Zheboqi-Gehennas"] = 12113,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.028228,
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
+					["aID"] = "43391",
 					["nome"] = "Millhouse Manastorm",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 4,
 								["g_amt"] = 0,
-								["n_max"] = 4299,
+								["b_dmg"] = 8030,
 								["targets"] = {
 									["Vermina"] = 12329,
 								},
@@ -17690,12 +14572,12 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 8,
 								["MISS"] = 1,
-								["total"] = 12329,
-								["c_max"] = 0,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["a_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -17704,14 +14586,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 8030,
-								["r_amt"] = 0,
+								["n_max"] = 4299,
+								["total"] = 12329,
 							}, -- [1]
 							[81441] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3448,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Meridann-Gehennas"] = 3448,
 									["Zheboqi-Gehennas"] = 3414,
@@ -17734,14 +14616,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
+								["n_max"] = 3448,
 								["r_amt"] = 2,
 							},
 							[81439] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4876,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Vermina"] = 4876,
 								},
@@ -17761,20 +14643,20 @@ _detalhes_database = {
 								["successful_casted"] = 1,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 4876,
 								["r_amt"] = 1,
 							},
 							[81440] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 5062,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Ruksz-Gehennas"] = 9610,
 									["Meridann-Gehennas"] = 9152,
-									["Zheboqi-Gehennas"] = 8699,
-									["Vermina"] = 7774,
 									["Jetcer-Gehennas"] = 9531,
+									["Vermina"] = 7774,
+									["Zheboqi-Gehennas"] = 8699,
 								},
 								["n_total"] = 44766,
 								["n_min"] = 0,
@@ -17792,14 +14674,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 10,
-								["b_dmg"] = 0,
+								["n_max"] = 5062,
 								["r_amt"] = 7,
 							},
 							[81220] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -17818,14 +14700,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[81216] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -17844,20 +14726,20 @@ _detalhes_database = {
 								["successful_casted"] = 3,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 634664.028228,
 					["start_time"] = 1716993190,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -17872,11 +14754,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["total"] = 1583458.031945,
 					["spec"] = 262,
-					["serial"] = "Player-4476-057D0C29",
-					["aID"] = "4476-057D0C29",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Player-4476-057D0C29",
 					["damage_from"] = {
 						["Stonecore Berserker"] = true,
 						["Millhouse Manastorm"] = true,
@@ -17894,20 +14775,20 @@ _detalhes_database = {
 						["Millhouse Manastorm"] = 90910,
 						["Stonecore Earthshaper"] = 320151,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["end_time"] = 1716993209,
-					["nome"] = "Ruksz-Gehennas",
+					["on_hold"] = false,
+					["aID"] = "4476-057D0C29",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 683,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 683,
 								},
@@ -17928,14 +14809,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 683,
 								["r_amt"] = 0,
 							}, -- [1]
 							[88767] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 13764,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 20719,
 									["Stonecore Warbringer"] = 25387,
@@ -17960,14 +14841,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 9,
-								["b_dmg"] = 0,
+								["n_max"] = 13764,
 								["r_amt"] = 0,
 							},
 							[8042] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3917,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 3404,
 									["Stonecore Warbringer"] = 7169,
@@ -17992,14 +14873,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 6817,
 								["n_amt"] = 7,
-								["b_dmg"] = 0,
+								["n_max"] = 3917,
 								["r_amt"] = 0,
 							},
 							[10444] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 597,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 597,
 								},
@@ -18020,14 +14901,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 597,
 								["r_amt"] = 0,
 							},
 							[188443] = {
 								["c_amt"] = 7,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 5754,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Earthshaper"] = 16125,
 									["Stonecore Berserker"] = 55323,
@@ -18051,14 +14932,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 57022,
 								["n_amt"] = 19,
-								["b_dmg"] = 0,
+								["n_max"] = 5754,
 								["r_amt"] = 0,
 							},
 							[26364] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2293,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Millhouse Manastorm"] = 6763,
 									["Crystalspawn Giant"] = 2084,
@@ -18081,14 +14962,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_max"] = 2293,
 								["r_amt"] = 0,
 							},
 							[403] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 8347,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 6625,
 									["Crystalspawn Giant"] = 47659,
@@ -18111,14 +14992,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 27893,
 								["n_amt"] = 20,
-								["b_dmg"] = 0,
+								["n_max"] = 8347,
 								["r_amt"] = 0,
 							},
 							[8050] = {
 								["c_amt"] = 10,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2111,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 3874,
 									["Stonecore Berserker"] = 5434,
@@ -18145,14 +15026,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 25906,
 								["n_amt"] = 57,
-								["b_dmg"] = 0,
+								["n_max"] = 2111,
 								["r_amt"] = 0,
 							},
 							[421] = {
 								["c_amt"] = 20,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 7751,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 157217,
 									["Crystalspawn Giant"] = 14625,
@@ -18179,14 +15060,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 224003,
 								["n_amt"] = 68,
-								["b_dmg"] = 0,
+								["n_max"] = 7751,
 								["r_amt"] = 0,
 							},
 							[8349] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2253,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 2253,
 								},
@@ -18207,14 +15088,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 2253,
 								["r_amt"] = 0,
 							},
 							[188196] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 6011,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Crystalspawn Giant"] = 6011,
 								},
@@ -18235,14 +15116,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 6011,
 								["r_amt"] = 0,
 							},
 							[77451] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Earthshaper"] = 13451,
 									["Stonecore Warbringer"] = 13213,
@@ -18264,14 +15145,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 26664,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[51505] = {
 								["c_amt"] = 16,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 2827,
 									["Crystalspawn Giant"] = 39785,
@@ -18297,79 +15178,80 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 275853,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Ruksz-Gehennas",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 47972.031945,
 					["start_time"] = 1716993015,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 2911.025929,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 216093.025929,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 216093.025929,
-					["serial"] = "Creature-0-4457-725-21149-43430-0000D73C81",
-					["aID"] = "43430",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4457-725-21149-43430-0000D73C81",
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Jetcer-Gehennas"] = true,
-						["Meridann-Gehennas"] = true,
-						["Ruksz-Gehennas"] = true,
 						["Vermina"] = true,
 						["Zheboqi-Gehennas"] = true,
-						["Searing Totem <Meridann-Gehennas>"] = true,
 						["Searing Totem <Ruksz-Gehennas>"] = true,
+						["Meridann-Gehennas"] = true,
+						["Searing Totem <Meridann-Gehennas>"] = true,
+						["Jetcer-Gehennas"] = true,
+						["Ruksz-Gehennas"] = true,
 					},
 					["targets"] = {
 						["Ruksz-Gehennas"] = 14934,
 						["Meridann-Gehennas"] = 51482,
-						["Jetcer-Gehennas"] = 28364,
-						["Vermina"] = 99524,
 						["Zheboqi-Gehennas"] = 21789,
+						["Vermina"] = 99524,
+						["Jetcer-Gehennas"] = 28364,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 2911.025929,
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
+					["aID"] = "43430",
 					["nome"] = "Stonecore Berserker",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 1,
+								["DODGE"] = 11,
 								["b_amt"] = 21,
 								["g_amt"] = 0,
-								["n_max"] = 5447,
+								["b_dmg"] = 33033,
 								["targets"] = {
 									["Vermina"] = 83295,
 									["Meridann-Gehennas"] = 41062,
 								},
 								["n_total"] = 115000,
-								["MISS"] = 2,
-								["n_min"] = 0,
 								["g_dmg"] = 0,
+								["n_min"] = 0,
+								["MISS"] = 2,
 								["counter"] = 75,
 								["a_amt"] = 1,
 								["total"] = 124357,
 								["c_max"] = 9357,
-								["DODGE"] = 11,
+								["c_amt"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -18381,14 +15263,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 9357,
 								["n_amt"] = 53,
-								["b_dmg"] = 33033,
 								["r_amt"] = 0,
+								["n_max"] = 5447,
 							}, -- [1]
 							[81568] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -18407,32 +15289,32 @@ _detalhes_database = {
 								["successful_casted"] = 6,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[81569] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2225,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Ruksz-Gehennas"] = 14934,
 									["Vermina"] = 16229,
-									["Jetcer-Gehennas"] = 28364,
-									["Meridann-Gehennas"] = 10420,
 									["Zheboqi-Gehennas"] = 21789,
+									["Meridann-Gehennas"] = 10420,
+									["Jetcer-Gehennas"] = 28364,
 								},
 								["n_total"] = 91736,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 134,
 								["a_amt"] = 10,
-								["total"] = 91736,
-								["c_max"] = 0,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["DODGE"] = 13,
 								["id"] = 81569,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 8679,
@@ -18441,14 +15323,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 120,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["n_max"] = 2225,
+								["total"] = 91736,
 							},
 							[81574] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -18467,20 +15349,20 @@ _detalhes_database = {
 								["successful_casted"] = 10,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 1563760.025929,
 					["start_time"] = 1716993130,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 1298,
@@ -18496,11 +15378,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["total"] = 2635501.033369999,
 					["spec"] = 262,
-					["serial"] = "Player-4476-056218BB",
-					["aID"] = "4476-056218BB",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Player-4476-056218BB",
 					["damage_from"] = {
 						["Stonecore Berserker"] = true,
 						["Crystalspawn Giant"] = true,
@@ -18520,20 +15401,20 @@ _detalhes_database = {
 						["Millhouse Manastorm"] = 202422,
 						["Stonecore Warbringer"] = 373941,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["end_time"] = 1716993209,
-					["nome"] = "Meridann-Gehennas",
+					["on_hold"] = false,
+					["aID"] = "4476-056218BB",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Unbound Earth Rager"] = 1107,
 								},
@@ -18554,14 +15435,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 1107,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
 							[88767] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 17761,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 6701,
 									["Stonecore Berserker"] = 94161,
@@ -18587,14 +15468,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 13,
-								["b_dmg"] = 0,
+								["n_max"] = 17761,
 								["r_amt"] = 0,
 							},
 							[8042] = {
 								["c_amt"] = 5,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4360,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 32009,
 									["Crystalspawn Giant"] = 3790,
@@ -18619,14 +15500,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 36711,
 								["n_amt"] = 7,
-								["b_dmg"] = 0,
+								["n_max"] = 4360,
 								["r_amt"] = 0,
 							},
 							[10444] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 500,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Unbound Earth Rager"] = 500,
 								},
@@ -18647,14 +15528,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
+								["n_max"] = 500,
 								["r_amt"] = 0,
 							},
 							[7294] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 354,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Unbound Earth Rager"] = 235,
 									["Stonecore Berserker"] = 3537,
@@ -18677,42 +15558,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 16,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[77451] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Corborus"] = 33330,
-								},
-								["n_total"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 33330,
-								["c_max"] = 18201,
-								["id"] = 77451,
-								["r_dmg"] = 0,
-								["spellschool"] = 4,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 33330,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 354,
 								["r_amt"] = 0,
 							},
 							[77478] = {
 								["c_amt"] = 45,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1139,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 52619,
 									["Stonecore Warbringer"] = 56833,
@@ -18737,14 +15590,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 95799,
 								["n_amt"] = 101,
-								["b_dmg"] = 0,
+								["n_max"] = 1139,
 								["r_amt"] = 0,
 							},
 							[26364] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2959,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 11089,
 									["Crystalspawn Giant"] = 11195,
@@ -18769,14 +15622,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 11003,
 								["n_amt"] = 11,
-								["b_dmg"] = 0,
+								["n_max"] = 2959,
 								["r_amt"] = 0,
 							},
 							[403] = {
 								["c_amt"] = 13,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 10104,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 71225,
 									["Crystalspawn Giant"] = 101257,
@@ -18801,14 +15654,42 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 224691,
 								["n_amt"] = 27,
+								["n_max"] = 10104,
+								["r_amt"] = 0,
+							},
+							[77451] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
 								["b_dmg"] = 0,
+								["targets"] = {
+									["Corborus"] = 33330,
+								},
+								["n_total"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 33330,
+								["c_max"] = 18201,
+								["id"] = 77451,
+								["r_dmg"] = 0,
+								["spellschool"] = 4,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 33330,
+								["n_amt"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[8050] = {
 								["c_amt"] = 11,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1862,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 31463,
 									["Stonecore Berserker"] = 12285,
@@ -18832,42 +15713,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 30977,
 								["n_amt"] = 28,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[51490] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Corborus"] = 743,
-								},
-								["n_total"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 743,
-								["c_max"] = 743,
-								["id"] = 51490,
-								["r_dmg"] = 0,
-								["spellschool"] = 8,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 743,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 1862,
 								["r_amt"] = 0,
 							},
 							[421] = {
 								["c_amt"] = 48,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 8188,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 21220,
 									["Stonecore Berserker"] = 379142,
@@ -18895,14 +15748,42 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 419336,
 								["n_amt"] = 110,
+								["n_max"] = 8188,
+								["r_amt"] = 0,
+							},
+							[51490] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
 								["b_dmg"] = 0,
+								["targets"] = {
+									["Corborus"] = 743,
+								},
+								["n_total"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 743,
+								["c_max"] = 743,
+								["id"] = 51490,
+								["r_dmg"] = 0,
+								["spellschool"] = 8,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 743,
+								["n_amt"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[188443] = {
 								["c_amt"] = 14,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 6752,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Warbringer"] = 53476,
 									["Millhouse Manastorm"] = 60069,
@@ -18926,14 +15807,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 81502,
 								["n_amt"] = 37,
-								["b_dmg"] = 0,
+								["n_max"] = 6752,
 								["r_amt"] = 0,
 							},
 							[188196] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 7285,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 32632,
 									["Stonecore Berserker"] = 24118,
@@ -18957,14 +15838,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 24118,
 								["n_amt"] = 8,
-								["b_dmg"] = 0,
+								["n_max"] = 7285,
 								["r_amt"] = 0,
 							},
 							[51505] = {
 								["c_amt"] = 11,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 142361,
 									["Stonecore Berserker"] = 21625,
@@ -18988,20 +15869,21 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 247103,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Meridann-Gehennas",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 141952.03337,
 					["start_time"] = 1716993004,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [7]
 				{
 					["flag_original"] = 1298,
@@ -19014,11 +15896,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["total"] = 1487519.037698,
 					["spec"] = 103,
-					["serial"] = "Player-4476-055B0D7A",
-					["aID"] = "4476-055B0D7A",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Player-4476-055B0D7A",
 					["damage_from"] = {
 						["Rock Borer"] = true,
 						["Stonecore Berserker"] = true,
@@ -19039,20 +15920,20 @@ _detalhes_database = {
 						["Millhouse Manastorm"] = 103870,
 						["Stonecore Warbringer"] = 242853,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["end_time"] = 1716993209,
-					["nome"] = "Jetcer-Gehennas",
+					["on_hold"] = false,
+					["aID"] = "4476-055B0D7A",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 63,
 								["b_amt"] = 1,
 								["g_amt"] = 15,
-								["n_max"] = 1969,
+								["b_dmg"] = 579,
 								["targets"] = {
 									["Rock Borer"] = 15601,
 									["Stonecore Berserker"] = 38050,
@@ -19068,12 +15949,12 @@ _detalhes_database = {
 								["g_dmg"] = 15805,
 								["counter"] = 153,
 								["a_amt"] = 0,
-								["total"] = 277098,
-								["c_max"] = 3710,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["DODGE"] = 4,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 3710,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -19082,14 +15963,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 171672,
 								["n_amt"] = 67,
-								["b_dmg"] = 579,
-								["r_amt"] = 0,
+								["n_max"] = 1969,
+								["total"] = 277098,
 							}, -- [1]
 							[5221] = {
 								["c_amt"] = 7,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 8795,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 158713,
 									["Crystalspawn Giant"] = 27865,
@@ -19112,14 +15993,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 104253,
 								["n_amt"] = 15,
-								["b_dmg"] = 0,
+								["n_max"] = 8795,
 								["r_amt"] = 0,
 							},
 							[7294] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 132,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 132,
 									["Stonecore Flayer"] = 1578,
@@ -19141,14 +16022,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 13,
-								["b_dmg"] = 0,
+								["n_max"] = 132,
 								["r_amt"] = 0,
 							},
 							[50259] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Crystalspawn Giant"] = 0,
 									["Corborus"] = 0,
@@ -19171,14 +16052,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[81170] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 8262,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 7255,
 									["Crystalspawn Giant"] = 8262,
@@ -19201,14 +16082,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 15758,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
+								["n_max"] = 8262,
 								["r_amt"] = 0,
 							},
 							[1822] = {
 								["c_amt"] = 31,
 								["b_amt"] = 1,
 								["g_amt"] = 0,
-								["n_max"] = 2875,
+								["b_dmg"] = 1752,
 								["targets"] = {
 									["Stonecore Berserker"] = 58375,
 									["Crystalspawn Giant"] = 15966,
@@ -19223,12 +16104,12 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 97,
 								["DODGE"] = 1,
-								["total"] = 274378,
-								["c_max"] = 5760,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["a_amt"] = 0,
 								["id"] = 1822,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 5760,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -19237,14 +16118,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 134410,
 								["n_amt"] = 64,
-								["b_dmg"] = 1752,
-								["r_amt"] = 0,
+								["n_max"] = 2875,
+								["total"] = 274378,
 							},
 							[22568] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 29189,
 								},
@@ -19265,44 +16146,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 29189,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[1079] = {
-								["c_amt"] = 10,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 4009,
-								["targets"] = {
-									["Corborus"] = 72160,
-									["Crystalspawn Giant"] = 19354,
-									["Stonecore Flayer"] = 25965,
-								},
-								["n_total"] = 40067,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 21,
-								["total"] = 117479,
-								["c_max"] = 8018,
-								["id"] = 1079,
-								["r_dmg"] = 0,
-								["spellschool"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 77412,
-								["n_amt"] = 11,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[80861] = {
 								["c_amt"] = 7,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3030,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 5034,
 									["Stonecore Berserker"] = 4682,
@@ -19330,14 +16181,44 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 31327,
 								["n_amt"] = 10,
+								["n_max"] = 3030,
+								["r_amt"] = 0,
+							},
+							[1079] = {
+								["c_amt"] = 10,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
 								["b_dmg"] = 0,
+								["targets"] = {
+									["Corborus"] = 72160,
+									["Crystalspawn Giant"] = 19354,
+									["Stonecore Flayer"] = 25965,
+								},
+								["n_total"] = 40067,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 21,
+								["total"] = 117479,
+								["c_max"] = 8018,
+								["id"] = 1079,
+								["r_dmg"] = 0,
+								["spellschool"] = 1,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 77412,
+								["n_amt"] = 11,
+								["n_max"] = 4009,
 								["r_amt"] = 0,
 							},
 							[33876] = {
 								["c_amt"] = 3,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 5371,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 27453,
 									["Stonecore Berserker"] = 14489,
@@ -19363,14 +16244,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 13120,
 								["n_amt"] = 13,
-								["b_dmg"] = 0,
+								["n_max"] = 5371,
 								["r_amt"] = 0,
 							},
 							[62078] = {
 								["c_amt"] = 33,
 								["b_amt"] = 1,
 								["g_amt"] = 0,
-								["n_max"] = 5667,
+								["b_dmg"] = 3210,
 								["targets"] = {
 									["Rock Borer"] = 28940,
 									["Stonecore Berserker"] = 98890,
@@ -19398,24 +16279,24 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 288442,
 								["n_amt"] = 23,
-								["b_dmg"] = 3210,
+								["n_max"] = 5667,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Jetcer-Gehennas",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 112702.037698,
 					["start_time"] = 1716993017,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 8466,
-					["totalabsorbed"] = 0.008868000000000001,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -19423,10 +16304,10 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 42027.008868,
-					["serial"] = "Creature-0-4457-725-21149-2523-0000573C98",
-					["aID"] = "2523",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-2523-0000573C98",
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -19436,17 +16317,18 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["aID"] = "2523",
 					["end_time"] = 1716993209,
+					["totalabsorbed"] = 0.008868000000000001,
 					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Searing Totem <Meridann-Gehennas>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[3606] = {
 								["c_amt"] = 5,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1850,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Crystalspawn Giant"] = 11127,
 									["Stonecore Berserker"] = 30900,
@@ -19468,24 +16350,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 16733,
 								["n_amt"] = 15,
-								["b_dmg"] = 0,
+								["n_max"] = 1850,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.008868000000000001,
 					["start_time"] = 1716993170,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 8466,
-					["totalabsorbed"] = 0.022681,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -19493,10 +16374,10 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 82490.022681,
-					["serial"] = "Creature-0-4457-725-21149-2523-0000573C9A",
-					["aID"] = "2523",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-2523-0000573C9A",
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -19509,17 +16390,18 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["aID"] = "2523",
 					["end_time"] = 1716993209,
+					["totalabsorbed"] = 0.022681,
 					["ownerName"] = "Ruksz-Gehennas",
 					["nome"] = "Searing Totem <Ruksz-Gehennas>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[3606] = {
 								["c_amt"] = 6,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1536,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Stonecore Berserker"] = 25373,
 									["Crystalspawn Giant"] = 12737,
@@ -19544,24 +16426,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 17405,
 								["n_amt"] = 47,
-								["b_dmg"] = 0,
+								["n_max"] = 1536,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.022681,
 					["start_time"] = 1716993110,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [10]
 				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 0.039209,
 					["pets"] = {
 					},
 					["classe"] = "PALADIN",
@@ -19569,11 +16450,10 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 85893.039209,
-					["serial"] = "Player-4476-0555D0FC",
-					["aID"] = "4476-0555D0FC",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Player-4476-0555D0FC",
 					["damage_from"] = {
 						["Rock Borer"] = true,
 						["Stonecore Berserker"] = true,
@@ -19591,20 +16471,21 @@ _detalhes_database = {
 						["Corborus"] = 17435,
 						["Stonecore Flayer"] = 11757,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.039209,
 					["end_time"] = 1716993209,
 					["nome"] = "Zheboqi-Gehennas",
+					["aID"] = "4476-0555D0FC",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 5,
 								["b_amt"] = 2,
 								["g_amt"] = 0,
-								["n_max"] = 908,
+								["b_dmg"] = 1063,
 								["targets"] = {
 									["Rock Borer"] = 5969,
 									["Stonecore Berserker"] = 3903,
@@ -19632,14 +16513,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 7731,
 								["n_amt"] = 28,
-								["b_dmg"] = 1063,
+								["n_max"] = 908,
 								["r_amt"] = 0,
 							}, -- [1]
 							[25742] = {
 								["c_amt"] = 5,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 310,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 1849,
 									["Stonecore Berserker"] = 1548,
@@ -19666,14 +16547,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 3043,
 								["n_amt"] = 28,
-								["b_dmg"] = 0,
+								["n_max"] = 310,
 								["r_amt"] = 0,
 							},
 							[853] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Corborus"] = 0,
 								},
@@ -19695,14 +16576,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[25912] = {
 								["c_amt"] = 3,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4765,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 2512,
 									["Corborus"] = 6862,
@@ -19726,14 +16607,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 14788,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
+								["n_max"] = 4765,
 								["r_amt"] = 0,
 							},
 							[7294] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 309,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 309,
 									["Stonecore Warbringer"] = 309,
@@ -19755,14 +16636,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
+								["n_max"] = 309,
 								["r_amt"] = 0,
 							},
 							[20187] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2029,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 9809,
 									["Crystalspawn Giant"] = 1917,
@@ -19788,36 +16669,36 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 7780,
 								["n_amt"] = 8,
-								["b_dmg"] = 0,
+								["n_max"] = 2029,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 66417.039209,
 					["start_time"] = 1716993105,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.01633,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 1704.01633,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 1704.01633,
-					["serial"] = "Creature-0-4457-725-21149-43662-0004D73C81",
-					["aID"] = "43662",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4457-725-21149-43662-0004D73C81",
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Vermina"] = true,
 						["Jetcer-Gehennas"] = true,
@@ -19828,20 +16709,21 @@ _detalhes_database = {
 						["Vermina"] = 1220,
 						["Meridann-Gehennas"] = 484,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.01633,
+					["fight_component"] = true,
 					["end_time"] = 1716993238,
+					["aID"] = "43662",
 					["nome"] = "Unbound Earth Rager",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 1,
 								["g_amt"] = 0,
-								["n_max"] = 484,
+								["b_dmg"] = 182,
 								["targets"] = {
 									["Vermina"] = 1220,
 									["Meridann-Gehennas"] = 484,
@@ -19863,40 +16745,39 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 182,
+								["n_max"] = 484,
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 44690.01633,
 					["start_time"] = 1716993221,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.010111,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 86869.010111,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 86869.010111,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4457-725-21149-42808-000BD73C81",
-					["aID"] = "42808",
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Vermina"] = true,
-						["Ruksz-Gehennas"] = true,
 						["Meridann-Gehennas"] = true,
+						["Ruksz-Gehennas"] = true,
+						["Vermina"] = true,
 						["Jetcer-Gehennas"] = true,
 						["Searing Totem <Ruksz-Gehennas>"] = true,
 						["Zheboqi-Gehennas"] = true,
@@ -19905,32 +16786,33 @@ _detalhes_database = {
 						["Vermina"] = 44032,
 						["Jetcer-Gehennas"] = 42837,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.010111,
+					["fight_component"] = true,
 					["end_time"] = 1716993238,
+					["aID"] = "42808",
 					["nome"] = "Stonecore Flayer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 2,
 								["g_amt"] = 0,
-								["n_max"] = 3159,
+								["b_dmg"] = 4743,
 								["targets"] = {
 									["Vermina"] = 10779,
 								},
 								["n_total"] = 10779,
-								["a_amt"] = 0,
-								["n_min"] = 0,
 								["g_dmg"] = 0,
+								["n_min"] = 0,
+								["a_amt"] = 0,
 								["counter"] = 9,
 								["DODGE"] = 1,
 								["total"] = 10779,
 								["c_max"] = 0,
-								["MISS"] = 1,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -19942,14 +16824,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 4743,
-								["r_amt"] = 0,
+								["n_max"] = 3159,
+								["MISS"] = 1,
 							}, -- [1]
 							[79922] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["b_dmg"] = 0,
 								["targets"] = {
 								},
 								["n_total"] = 0,
@@ -19968,14 +16850,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["n_max"] = 0,
 								["r_amt"] = 0,
 							},
 							[79923] = {
 								["c_amt"] = 0,
 								["b_amt"] = 15,
 								["g_amt"] = 0,
-								["n_max"] = 4179,
+								["b_dmg"] = 19700,
 								["targets"] = {
 									["Vermina"] = 33253,
 									["Jetcer-Gehennas"] = 42837,
@@ -19985,12 +16867,12 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 41,
 								["a_amt"] = 1,
-								["total"] = 76090,
-								["c_max"] = 0,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["DODGE"] = 4,
 								["id"] = 79923,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 1521,
@@ -19999,68 +16881,68 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 34,
-								["b_dmg"] = 19700,
-								["r_amt"] = 0,
+								["n_max"] = 4179,
+								["total"] = 76090,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 625504.0101109999,
 					["start_time"] = 1716993215,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.009959,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 89002.00995899999,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 89002.00995899999,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
-					["aID"] = "43438",
-					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Vermina"] = true,
+						["Meridann-Gehennas"] = true,
 						["Greater Fire Elemental <Meridann-Gehennas>"] = true,
 						["Ruksz-Gehennas"] = true,
-						["Meridann-Gehennas"] = true,
+						["Vermina"] = true,
 						["Jetcer-Gehennas"] = true,
 						["Zheboqi-Gehennas"] = true,
 						["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
 					},
 					["targets"] = {
-						["Vermina"] = 61241,
+						["Meridann-Gehennas"] = 9712,
 						["Greater Fire Elemental <Meridann-Gehennas>"] = 458,
 						["Ruksz-Gehennas"] = 4813,
-						["Meridann-Gehennas"] = 9712,
+						["Vermina"] = 61241,
 						["Jetcer-Gehennas"] = 8350,
 						["Zheboqi-Gehennas"] = 4223,
 						["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.009959,
 					["end_time"] = 1716993391,
 					["nome"] = "Corborus",
+					["aID"] = "43438",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 5,
 								["g_amt"] = 0,
-								["n_max"] = 10651,
+								["b_dmg"] = 27214,
 								["targets"] = {
 									["Vermina"] = 56053,
 								},
@@ -20069,12 +16951,12 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 12,
 								["a_amt"] = 0,
-								["total"] = 56053,
-								["c_max"] = 0,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["DODGE"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -20083,23 +16965,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 8,
-								["b_dmg"] = 27214,
-								["r_amt"] = 0,
+								["n_max"] = 10651,
+								["total"] = 56053,
 							}, -- [1]
 							[82415] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2560,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Greater Fire Elemental"] = 0,
-									["Jetcer-Gehennas"] = 4750,
+									["Zheboqi-Gehennas"] = 4223,
 									["Greater Fire Elemental <Meridann-Gehennas>"] = 458,
 									["Ruksz-Gehennas"] = 4813,
-									["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
-									["Zheboqi-Gehennas"] = 4223,
-									["Vermina"] = 3641,
 									["Meridann-Gehennas"] = 3976,
+									["Jetcer-Gehennas"] = 4750,
+									["Vermina"] = 3641,
+									["Greater Fire Elemental <Ruksz-Gehennas>"] = 205,
 								},
 								["n_total"] = 22066,
 								["n_min"] = 0,
@@ -20107,9 +16989,9 @@ _detalhes_database = {
 								["counter"] = 14,
 								["total"] = 22066,
 								["c_max"] = 0,
-								["MISS"] = 1,
 								["id"] = 82415,
 								["r_dmg"] = 12441,
+								["MISS"] = 1,
 								["extra"] = {
 								},
 								["a_dmg"] = 2299,
@@ -20118,14 +17000,14 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 13,
-								["b_dmg"] = 0,
+								["n_max"] = 2560,
 								["r_amt"] = 8,
 							},
 							[86881] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1912,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Meridann-Gehennas"] = 5736,
 									["Jetcer-Gehennas"] = 3600,
@@ -20148,24 +17030,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_max"] = 1912,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 1612399.009959,
 					["start_time"] = 1716993355,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 8466,
-					["totalabsorbed"] = 0.010656,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -20173,14 +17054,14 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 55029.010656,
-					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 					["aID"] = "15438",
-					["boss_fight_component"] = true,
 					["damage_from"] = {
-						["[*] Thrashing Charge"] = true,
 						["Rock Borer"] = true,
+						["[*] Thrashing Charge"] = true,
 						["Corborus"] = true,
 					},
 					["targets"] = {
@@ -20190,17 +17071,18 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.010656,
 					["end_time"] = 1716993391,
-					["ownerName"] = "Ruksz-Gehennas",
 					["nome"] = "Greater Fire Elemental <Ruksz-Gehennas>",
+					["ownerName"] = "Ruksz-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3608,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 7785,
 									["Corborus"] = 28751,
@@ -20222,14 +17104,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 11,
-								["b_dmg"] = 0,
+								["n_max"] = 3608,
 								["r_amt"] = 0,
 							}, -- [1]
 							[424340] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 3403,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 3353,
 									["Corborus"] = 6789,
@@ -20251,14 +17133,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
+								["n_max"] = 3403,
 								["r_amt"] = 0,
 							},
 							[57984] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1495,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 1453,
 									["Corborus"] = 4409,
@@ -20280,14 +17162,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 0,
+								["n_max"] = 1495,
 								["r_amt"] = 0,
 							},
 							[13376] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 192,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 956,
 									["Corborus"] = 1533,
@@ -20309,24 +17191,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 382,
 								["n_amt"] = 11,
-								["b_dmg"] = 0,
+								["n_max"] = 192,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 4467.010656,
 					["start_time"] = 1716993332,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 8466,
-					["totalabsorbed"] = 0.009736,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -20334,11 +17215,11 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 83512.009736,
-					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 					["aID"] = "15438",
-					["boss_fight_component"] = true,
 					["damage_from"] = {
 						["[*] Thrashing Charge"] = true,
 						["Corborus"] = true,
@@ -20350,17 +17231,18 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.009736,
 					["end_time"] = 1716993391,
-					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Greater Fire Elemental <Meridann-Gehennas>",
+					["ownerName"] = "Meridann-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 2,
-								["n_max"] = 4529,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 3419,
 									["Corborus"] = 42229,
@@ -20382,14 +17264,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 12046,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_max"] = 4529,
 								["r_amt"] = 0,
 							}, -- [1]
 							[424340] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4185,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 7524,
 									["Corborus"] = 16677,
@@ -20411,14 +17293,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_max"] = 4185,
 								["r_amt"] = 0,
 							},
 							[57984] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1847,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 5505,
 									["Corborus"] = 5497,
@@ -20440,14 +17322,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_max"] = 1847,
 								["r_amt"] = 0,
 							},
 							[13376] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 222,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Rock Borer"] = 222,
 									["Corborus"] = 2439,
@@ -20469,84 +17351,84 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 442,
 								["n_amt"] = 10,
-								["b_dmg"] = 0,
+								["n_max"] = 222,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 7774.009735999999,
 					["start_time"] = 1716993348,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.003581,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 10832.003581,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 10832.003581,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4457-725-21149-43917-0000573D48",
-					["aID"] = "43917",
-					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Zheboqi-Gehennas"] = true,
+						["Jetcer-Gehennas"] = true,
 						["Greater Fire Elemental <Meridann-Gehennas>"] = true,
 						["Ruksz-Gehennas"] = true,
 						["Greater Fire Elemental <Ruksz-Gehennas>"] = true,
-						["Jetcer-Gehennas"] = true,
+						["Zheboqi-Gehennas"] = true,
 						["Meridann-Gehennas"] = true,
 						["Vermina"] = true,
 					},
 					["targets"] = {
 						["Strength of Earth Totem <Meridann-Gehennas>"] = 4,
-						["Vermina"] = 3213,
+						["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
 						["Jetcer-Gehennas"] = 4367,
 						["Zheboqi-Gehennas"] = 1399,
-						["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
+						["Vermina"] = 3213,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.003581,
 					["end_time"] = 1716993391,
 					["nome"] = "Rock Borer",
+					["aID"] = "43917",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 1,
 								["g_amt"] = 0,
-								["n_max"] = 2325,
+								["b_dmg"] = 836,
 								["targets"] = {
 									["Strength of Earth Totem <Meridann-Gehennas>"] = 4,
-									["Vermina"] = 3213,
+									["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
 									["Jetcer-Gehennas"] = 4367,
 									["Zheboqi-Gehennas"] = 1399,
-									["Greater Fire Elemental <Ruksz-Gehennas>"] = 1849,
+									["Vermina"] = 3213,
 								},
 								["n_total"] = 10832,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 10,
 								["a_amt"] = 0,
-								["total"] = 10832,
-								["c_max"] = 0,
+								["r_amt"] = 0,
+								["spellschool"] = 1,
 								["DODGE"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -20555,36 +17437,35 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 8,
-								["b_dmg"] = 836,
-								["r_amt"] = 0,
+								["n_max"] = 2325,
+								["total"] = 10832,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 227834.003581,
 					["start_time"] = 1716993364,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [17]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.011622,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 32674.011622,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 32674.011622,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "",
-					["aID"] = "",
-					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -20592,20 +17473,21 @@ _detalhes_database = {
 						["Greater Fire Elemental <Meridann-Gehennas>"] = 7316,
 						["Greater Fire Elemental <Ruksz-Gehennas>"] = 2413,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.011622,
 					["end_time"] = 1716993391,
 					["nome"] = "[*] Thrashing Charge",
+					["aID"] = "",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[81828] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 22945,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Vermina"] = 22945,
 									["Greater Fire Elemental <Meridann-Gehennas>"] = 7316,
@@ -20628,24 +17510,23 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
+								["n_max"] = 22945,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.011622,
 					["start_time"] = 1716993372,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [18]
 				{
 					["flag_original"] = 8466,
-					["totalabsorbed"] = 0.007198,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -20653,11 +17534,11 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 0.007198,
-					["serial"] = "Creature-0-4457-725-21149-5874-0000D73D28",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-5874-0000D73D28",
 					["aID"] = "5874",
-					["boss_fight_component"] = true,
 					["damage_from"] = {
 						["Rock Borer"] = true,
 					},
@@ -20666,69 +17547,70 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.007198,
 					["end_time"] = 1716993391,
-					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Strength of Earth Totem <Meridann-Gehennas>",
+					["ownerName"] = "Meridann-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 4.007198000000001,
 					["start_time"] = 1716993388,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [19]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.006699,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 123185.006699,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 123185.006699,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4457-725-21149-42810-0001573C81",
-					["aID"] = "42810",
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
-						["Searing Totem <Ruksz-Gehennas>"] = true,
-						["Zheboqi-Gehennas"] = true,
 						["Ruksz-Gehennas"] = true,
-						["Meridann-Gehennas"] = true,
 						["Searing Totem <Meridann-Gehennas>"] = true,
+						["Searing Totem <Ruksz-Gehennas>"] = true,
+						["Meridann-Gehennas"] = true,
 						["Jetcer-Gehennas"] = true,
+						["Zheboqi-Gehennas"] = true,
 						["Vermina"] = true,
 					},
 					["targets"] = {
 						["Ruksz-Gehennas"] = 12818,
-						["Vermina"] = 16114,
+						["Meridann-Gehennas"] = 62916,
 						["Zheboqi-Gehennas"] = 16645,
 						["Jetcer-Gehennas"] = 14692,
-						["Meridann-Gehennas"] = 62916,
+						["Vermina"] = 16114,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.006699,
+					["fight_component"] = true,
 					["end_time"] = 1716993424,
+					["aID"] = "42810",
 					["nome"] = "Crystalspawn Giant",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 13575,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Meridann-Gehennas"] = 62916,
 								},
@@ -20749,14 +17631,14 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
+								["n_max"] = 13575,
 								["r_amt"] = 0,
 							}, -- [1]
 							[81008] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 16645,
+								["b_dmg"] = 0,
 								["targets"] = {
 									["Vermina"] = 16114,
 									["Jetcer-Gehennas"] = 14692,
@@ -20779,61 +17661,61 @@ _detalhes_database = {
 								["successful_casted"] = 1,
 								["c_total"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 0,
+								["n_max"] = 16645,
 								["r_amt"] = 4,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 536809.006699,
 					["start_time"] = 1716993402,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.008084,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 0.008084,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 0.008084,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4457-725-21149-43286-0000573D8A",
-					["aID"] = "43286",
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Vermina"] = true,
 					},
 					["targets"] = {
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.008084,
+					["fight_component"] = true,
 					["end_time"] = 1716993424,
+					["aID"] = "43286",
 					["nome"] = "Crystal Shard",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["dps_started"] = false,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 4999.008084,
 					["start_time"] = 1716993421,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [21]
 			},
 		}, -- [1]
@@ -20842,44 +17724,39 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
+					["targets_overheal"] = {
+						["Jetcer-Gehennas"] = 41523,
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "DRUID",
 					["totalover"] = 41523.045203,
 					["total_without_pet"] = 40377.045203,
 					["total"] = 40377.045203,
-					["targets_absorbs"] = {
-					},
+					["spec"] = 103,
 					["heal_enemy"] = {
 					},
-					["aID"] = "4476-055B0D7A",
 					["on_hold"] = false,
-					["spec"] = 103,
+					["serial"] = "Player-4476-055B0D7A",
 					["totalabsorb"] = 0.045203,
 					["last_hps"] = 0,
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
 					["targets"] = {
 						["Jetcer-Gehennas"] = 40377,
 					},
-					["serial"] = "Player-4476-055B0D7A",
+					["heal_enemy_amt"] = 0,
 					["totalover_without_pet"] = 0.045203,
-					["grupo"] = true,
 					["healing_taken"] = 102654.045203,
 					["healing_from"] = {
 						["Zheboqi-Gehennas"] = true,
 						["Jetcer-Gehennas"] = true,
 					},
-					["classe"] = "DRUID",
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
-					["targets_overheal"] = {
-						["Jetcer-Gehennas"] = 41523,
-					},
-					["start_time"] = 1716993060,
+					["aID"] = "4476-055B0D7A",
 					["nome"] = "Jetcer-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[34299] = {
 								["c_amt"] = 0,
@@ -20896,27 +17773,39 @@ _detalhes_database = {
 								["counter"] = 26,
 								["overheal"] = 41523,
 								["total"] = 40377,
-								["c_max"] = 0,
+								["spellschool"] = 1,
 								["id"] = 34299,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["c_total"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 26,
 								["absorbed"] = 3150,
 							},
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["start_time"] = 1716993060,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.045203,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["targets_absorbs"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
+					["targets_overheal"] = {
+						["Ruksz-Gehennas"] = 19402,
+						["Vermina"] = 22721,
+						["Zheboqi-Gehennas"] = 183991,
+						["Meridann-Gehennas"] = 8837,
+						["Jetcer-Gehennas"] = 34765,
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
@@ -20928,39 +17817,28 @@ _detalhes_database = {
 					},
 					["heal_enemy"] = {
 					},
-					["aID"] = "4476-0555D0FC",
 					["on_hold"] = false,
+					["serial"] = "Player-4476-0555D0FC",
+					["totalabsorb"] = 0.040832,
+					["last_hps"] = 0,
+					["targets"] = {
+						["Ruksz-Gehennas"] = 28863,
+						["Meridann-Gehennas"] = 110898,
+						["Zheboqi-Gehennas"] = 65250,
+						["Jetcer-Gehennas"] = 62277,
+						["Vermina"] = 254525,
+					},
+					["last_event"] = 0,
+					["totalover_without_pet"] = 0.040832,
+					["healing_taken"] = 65250.04083200001,
+					["fight_component"] = true,
+					["end_time"] = 1716993209,
 					["healing_from"] = {
 						["Zheboqi-Gehennas"] = true,
 					},
-					["totalabsorb"] = 0.040832,
-					["last_hps"] = 0,
+					["aID"] = "4476-0555D0FC",
 					["boss_fight_component"] = true,
-					["fight_component"] = true,
-					["targets"] = {
-						["Ruksz-Gehennas"] = 28863,
-						["Vermina"] = 254525,
-						["Zheboqi-Gehennas"] = 65250,
-						["Jetcer-Gehennas"] = 62277,
-						["Meridann-Gehennas"] = 110898,
-					},
-					["serial"] = "Player-4476-0555D0FC",
-					["totalover_without_pet"] = 0.040832,
-					["healing_taken"] = 65250.04083200001,
-					["grupo"] = true,
-					["classe"] = "PALADIN",
-					["end_time"] = 1716993209,
-					["targets_overheal"] = {
-						["Ruksz-Gehennas"] = 19402,
-						["Vermina"] = 22721,
-						["Jetcer-Gehennas"] = 34765,
-						["Meridann-Gehennas"] = 8837,
-						["Zheboqi-Gehennas"] = 183991,
-					},
-					["start_time"] = 1716993024,
-					["nome"] = "Zheboqi-Gehennas",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[25914] = {
 								["c_amt"] = 6,
@@ -20973,22 +17851,22 @@ _detalhes_database = {
 								["n_max"] = 7247,
 								["targets"] = {
 									["Ruksz-Gehennas"] = 15165,
-									["Vermina"] = 43806,
+									["Meridann-Gehennas"] = 31798,
 									["Jetcer-Gehennas"] = 25140,
 									["Zheboqi-Gehennas"] = 5633,
-									["Meridann-Gehennas"] = 31798,
+									["Vermina"] = 43806,
 								},
 								["n_total"] = 64041,
 								["n_min"] = 0,
 								["counter"] = 17,
 								["overheal"] = 24446,
 								["total"] = 121542,
-								["c_max"] = 13074,
+								["spellschool"] = 2,
 								["id"] = 25914,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 13074,
 								["c_total"] = 57501,
 								["totaldenied"] = 0,
 								["n_amt"] = 11,
@@ -21012,12 +17890,12 @@ _detalhes_database = {
 								["counter"] = 10,
 								["overheal"] = 8873,
 								["total"] = 94609,
-								["c_max"] = 13123,
+								["spellschool"] = 2,
 								["id"] = 85673,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 13123,
 								["c_total"] = 27700,
 								["totaldenied"] = 0,
 								["n_amt"] = 7,
@@ -21041,12 +17919,12 @@ _detalhes_database = {
 								["counter"] = 6,
 								["overheal"] = 13735,
 								["total"] = 16284,
-								["c_max"] = 0,
+								["spellschool"] = 2,
 								["id"] = 85222,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 0,
 								["c_total"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 5,
@@ -21065,50 +17943,24 @@ _detalhes_database = {
 								["targets"] = {
 									["Ruksz-Gehennas"] = 9973,
 									["Vermina"] = 41545,
-									["Zheboqi-Gehennas"] = 10687,
-									["Meridann-Gehennas"] = 42372,
 									["Jetcer-Gehennas"] = 19392,
+									["Meridann-Gehennas"] = 42372,
+									["Zheboqi-Gehennas"] = 10687,
 								},
 								["n_total"] = 96252,
 								["n_min"] = 0,
 								["counter"] = 9,
 								["overheal"] = 28403,
 								["total"] = 123969,
-								["c_max"] = 27717,
+								["spellschool"] = 2,
 								["id"] = 19750,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 27717,
 								["c_total"] = 27717,
 								["totaldenied"] = 0,
 								["n_amt"] = 8,
-								["absorbed"] = 0,
-							},
-							[53652] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Vermina"] = 18606,
-								},
-								["n_max"] = 11573,
-								["targets"] = {
-									["Vermina"] = 120019,
-								},
-								["n_total"] = 120019,
-								["n_min"] = 0,
-								["counter"] = 27,
-								["overheal"] = 18606,
-								["total"] = 120019,
-								["c_max"] = 0,
-								["id"] = 53652,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["spellschool"] = 2,
-								["c_total"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 27,
 								["absorbed"] = 0,
 							},
 							[94289] = {
@@ -21126,15 +17978,41 @@ _detalhes_database = {
 								["counter"] = 36,
 								["overheal"] = 147795,
 								["total"] = 40341,
-								["c_max"] = 7472,
+								["spellschool"] = 2,
 								["id"] = 94289,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 7472,
 								["c_total"] = 14308,
 								["totaldenied"] = 0,
 								["n_amt"] = 24,
+								["absorbed"] = 0,
+							},
+							[53652] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Vermina"] = 18606,
+								},
+								["n_max"] = 11573,
+								["targets"] = {
+									["Vermina"] = 120019,
+								},
+								["n_total"] = 120019,
+								["n_min"] = 0,
+								["counter"] = 27,
+								["overheal"] = 18606,
+								["total"] = 120019,
+								["spellschool"] = 2,
+								["id"] = 53652,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_max"] = 0,
+								["c_total"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 27,
 								["absorbed"] = 0,
 							},
 							[87188] = {
@@ -21152,111 +18030,109 @@ _detalhes_database = {
 								["counter"] = 10,
 								["overheal"] = 27858,
 								["total"] = 5049,
-								["c_max"] = 1498,
+								["spellschool"] = 2,
 								["id"] = 87188,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 1498,
 								["c_total"] = 1498,
 								["totaldenied"] = 0,
 								["n_amt"] = 6,
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
+					["grupo"] = true,
+					["start_time"] = 1716993024,
+					["classe"] = "PALADIN",
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.040832,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["nome"] = "Zheboqi-Gehennas",
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
+					["targets_overheal"] = {
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "SHAMAN",
 					["totalover"] = 0.016757,
 					["total_without_pet"] = 0.016757,
 					["total"] = 0.016757,
-					["targets_absorbs"] = {
-					},
+					["spec"] = 262,
 					["heal_enemy"] = {
 					},
-					["aID"] = "4476-056218BB",
 					["on_hold"] = false,
-					["spec"] = 262,
+					["serial"] = "Player-4476-056218BB",
 					["totalabsorb"] = 0.016757,
 					["last_hps"] = 0,
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
 					["targets"] = {
 					},
-					["serial"] = "Player-4476-056218BB",
+					["heal_enemy_amt"] = 0,
 					["totalover_without_pet"] = 0.016757,
-					["grupo"] = true,
 					["healing_taken"] = 110898.016757,
 					["healing_from"] = {
 						["Zheboqi-Gehennas"] = true,
 					},
-					["classe"] = "SHAMAN",
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
-					["targets_overheal"] = {
-					},
-					["start_time"] = 1716993206,
+					["aID"] = "4476-056218BB",
 					["nome"] = "Meridann-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["start_time"] = 1716993206,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.016757,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["targets_absorbs"] = {
+					},
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
+					["targets_overheal"] = {
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "SHAMAN",
 					["totalover"] = 0.037283,
 					["total_without_pet"] = 3611.037283000001,
 					["total"] = 3611.037283000001,
-					["targets_absorbs"] = {
-						["Ruksz-Gehennas"] = 3611,
-					},
+					["spec"] = 262,
 					["heal_enemy"] = {
 					},
-					["aID"] = "4476-057D0C29",
 					["on_hold"] = false,
-					["spec"] = 262,
+					["serial"] = "Player-4476-057D0C29",
 					["totalabsorb"] = 3611.037283000001,
 					["last_hps"] = 0,
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
 					["targets"] = {
 						["Ruksz-Gehennas"] = 3611,
 					},
-					["serial"] = "Player-4476-057D0C29",
+					["heal_enemy_amt"] = 0,
 					["totalover_without_pet"] = 0.037283,
-					["grupo"] = true,
 					["healing_taken"] = 32474.03728300001,
 					["healing_from"] = {
 						["Zheboqi-Gehennas"] = true,
 						["Ruksz-Gehennas"] = true,
 					},
-					["classe"] = "SHAMAN",
+					["fight_component"] = true,
 					["end_time"] = 1716993209,
-					["targets_overheal"] = {
-					},
-					["start_time"] = 1716993180,
+					["aID"] = "4476-057D0C29",
 					["nome"] = "Ruksz-Gehennas",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[77830] = {
 								["c_amt"] = 0,
@@ -21272,28 +18148,37 @@ _detalhes_database = {
 								["counter"] = 15,
 								["overheal"] = 0,
 								["total"] = 3611,
-								["c_max"] = 0,
+								["spellschool"] = 1,
 								["id"] = 77830,
 								["targets_absorbs"] = {
 									["Ruksz-Gehennas"] = 3611,
 								},
 								["c_min"] = 0,
-								["spellschool"] = 1,
+								["c_max"] = 0,
 								["c_total"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 15,
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["start_time"] = 1716993180,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.037283,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["targets_absorbs"] = {
+						["Ruksz-Gehennas"] = 3611,
+					},
 				}, -- [4]
 				{
 					["flag_original"] = 1297,
+					["targets_overheal"] = {
+						["Vermina"] = 4397,
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
@@ -21306,32 +18191,25 @@ _detalhes_database = {
 					},
 					["heal_enemy"] = {
 					},
-					["aID"] = "4465-02BB4683",
 					["on_hold"] = false,
+					["serial"] = "Player-4465-02BB4683",
+					["totalabsorb"] = 4397.033444,
+					["last_hps"] = 0,
+					["targets"] = {
+						["Vermina"] = 81128,
+					},
+					["last_event"] = 0,
+					["totalover_without_pet"] = 0.033444,
+					["healing_taken"] = 335653.033444,
+					["fight_component"] = true,
+					["end_time"] = 1716993209,
 					["healing_from"] = {
 						["Vermina"] = true,
 						["Zheboqi-Gehennas"] = true,
 					},
-					["totalabsorb"] = 4397.033444,
-					["last_hps"] = 0,
+					["aID"] = "4465-02BB4683",
 					["boss_fight_component"] = true,
-					["fight_component"] = true,
-					["targets"] = {
-						["Vermina"] = 81128,
-					},
-					["serial"] = "Player-4465-02BB4683",
-					["totalover_without_pet"] = 0.033444,
-					["healing_taken"] = 335653.033444,
-					["grupo"] = true,
-					["classe"] = "PALADIN",
-					["end_time"] = 1716993209,
-					["targets_overheal"] = {
-						["Vermina"] = 4397,
-					},
-					["start_time"] = 1716993199,
-					["nome"] = "Vermina",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[85673] = {
 								["c_amt"] = 0,
@@ -21348,12 +18226,12 @@ _detalhes_database = {
 								["counter"] = 7,
 								["overheal"] = 4397,
 								["total"] = 76731,
-								["c_max"] = 0,
+								["spellschool"] = 2,
 								["id"] = 85673,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 0,
 								["c_total"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 7,
@@ -21373,60 +18251,61 @@ _detalhes_database = {
 								["counter"] = 6,
 								["overheal"] = 0,
 								["total"] = 4397,
-								["c_max"] = 0,
+								["spellschool"] = 2,
 								["id"] = 88063,
 								["targets_absorbs"] = {
 									["Vermina"] = 4397,
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
+								["c_max"] = 0,
 								["c_total"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 6,
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
+					["grupo"] = true,
+					["start_time"] = 1716993199,
+					["classe"] = "PALADIN",
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.033444,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["nome"] = "Vermina",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
+					["healing_from"] = {
+					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "UNKNOW",
 					["totalover"] = 0.010115,
 					["total_without_pet"] = 0.010115,
+					["monster"] = true,
 					["total"] = 0.010115,
 					["targets_absorbs"] = {
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
-					["aID"] = "43438",
+					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 					["totalabsorb"] = 0.010115,
 					["last_hps"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 					["targets"] = {
 					},
 					["totalover_without_pet"] = 0.010115,
-					["monster"] = true,
 					["healing_taken"] = 0.010115,
-					["healing_from"] = {
-					},
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["aID"] = "43438",
 					["end_time"] = 1716993391,
 					["targets_overheal"] = {
 					},
-					["start_time"] = 1716993388,
 					["nome"] = "Corborus",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[82415] = {
 								["c_amt"] = 0,
@@ -21459,12 +18338,15 @@ _detalhes_database = {
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
+					["start_time"] = 1716993388,
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 3150.010115,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["boss_fight_component"] = true,
 				}, -- [6]
 			},
 		}, -- [2]
@@ -21473,77 +18355,76 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["resource"] = 38.035335,
+					["resource"] = 53.04528300000001,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
-					["totalover"] = 0.006034,
+					["aID"] = "4465-02BB4683",
+					["passiveover"] = 0.006034,
 					["total"] = 52988.03533500001,
+					["serial"] = "Player-4465-02BB4683",
 					["received"] = 52988.03533500001,
 					["targets"] = {
-						["Vermina"] = 52988,
+						["Vermina"] = 0,
 					},
 					["powertype"] = 0,
-					["boss_fight_component"] = true,
 					["alternatepower"] = 0.035335,
-					["resource_type"] = 9,
-					["fight_component"] = true,
-					["nome"] = "Vermina",
+					["last_event"] = 0,
+					["classe"] = "PALADIN",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[84627] = {
 								["total"] = 23487,
-								["id"] = 84627,
 								["totalover"] = 0,
+								["id"] = 84627,
 								["targets"] = {
-									["Vermina"] = 23487,
+									["Vermina"] = 0,
 								},
 								["counter"] = 71,
 							},
 							[31930] = {
 								["total"] = 29501,
-								["id"] = 31930,
 								["totalover"] = 0,
+								["id"] = 31930,
 								["targets"] = {
-									["Vermina"] = 29501,
+									["Vermina"] = 0,
 								},
 								["counter"] = 116,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["passiveover"] = 0.006034,
-					["aID"] = "4465-02BB4683",
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-4465-02BB4683",
+					["totalover"] = 0.006034,
+					["nome"] = "Vermina",
 					["tipo"] = 3,
+					["fight_component"] = true,
+					["resource_type"] = 9,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.034672,
+					["resource"] = 0.045629,
 					["pets"] = {
 					},
-					["aID"] = "4476-056218BB",
-					["totalover"] = 0.004352,
+					["classe"] = "SHAMAN",
+					["passiveover"] = 0.004352,
 					["total"] = 109969.034672,
 					["spec"] = 262,
+					["serial"] = "Player-4476-056218BB",
 					["received"] = 109969.034672,
 					["targets"] = {
-						["Meridann-Gehennas"] = 109969,
+						["Meridann-Gehennas"] = 0,
 					},
 					["powertype"] = 0,
-					["boss_fight_component"] = true,
 					["alternatepower"] = 0.034672,
-					["fight_component"] = true,
+					["last_event"] = 0,
 					["nome"] = "Meridann-Gehennas",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[39104] = {
 								["total"] = 0,
-								["id"] = 39104,
 								["totalover"] = 0,
+								["id"] = 39104,
 								["targets"] = {
 									["Meridann-Gehennas"] = 0,
 								},
@@ -21551,221 +18432,222 @@ _detalhes_database = {
 							},
 							[88765] = {
 								["total"] = 108634,
-								["id"] = 88765,
 								["totalover"] = 0,
+								["id"] = 88765,
 								["targets"] = {
-									["Meridann-Gehennas"] = 108634,
+									["Meridann-Gehennas"] = 0,
 								},
 								["counter"] = 157,
 							},
 							[51490] = {
 								["total"] = 1335,
-								["id"] = 51490,
 								["totalover"] = 0,
+								["id"] = 51490,
 								["targets"] = {
-									["Meridann-Gehennas"] = 1335,
+									["Meridann-Gehennas"] = 0,
 								},
 								["counter"] = 1,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["classe"] = "SHAMAN",
-					["passiveover"] = 0.004352,
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-4476-056218BB",
+					["aID"] = "4476-056218BB",
+					["totalover"] = 0.004352,
 					["tipo"] = 3,
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.030363,
+					["resource"] = 0.042556,
 					["pets"] = {
-					},
-					["aID"] = "4476-055B0D7A",
-					["totalover"] = 0.003005,
-					["total"] = 1702.030363,
-					["spec"] = 103,
-					["received"] = 1199.030363,
-					["targets"] = {
-						["Zheboqi-Gehennas"] = 503,
-						["Jetcer-Gehennas"] = 1199,
-					},
-					["powertype"] = 0,
-					["boss_fight_component"] = true,
-					["alternatepower"] = 0.030363,
-					["fight_component"] = true,
-					["nome"] = "Jetcer-Gehennas",
-					["spells"] = {
-						["tipo"] = 7,
-						["_ActorTable"] = {
-							[29166] = {
-								["total"] = 503,
-								["id"] = 29166,
-								["totalover"] = 0,
-								["targets"] = {
-									["Zheboqi-Gehennas"] = 503,
-								},
-								["counter"] = 2,
-							},
-							[51178] = {
-								["total"] = 360,
-								["id"] = 51178,
-								["totalover"] = 0,
-								["targets"] = {
-									["Jetcer-Gehennas"] = 360,
-								},
-								["counter"] = 6,
-							},
-							[68285] = {
-								["total"] = 827,
-								["id"] = 68285,
-								["totalover"] = 0,
-								["targets"] = {
-									["Jetcer-Gehennas"] = 827,
-								},
-								["counter"] = 26,
-							},
-							[17080] = {
-								["total"] = 12,
-								["id"] = 17080,
-								["totalover"] = 0,
-								["targets"] = {
-									["Jetcer-Gehennas"] = 12,
-								},
-								["counter"] = 1,
-							},
-						},
 					},
 					["classe"] = "DRUID",
 					["passiveover"] = 0.003005,
-					["last_event"] = 0,
-					["grupo"] = true,
+					["total"] = 1702.030363,
+					["spec"] = 103,
 					["serial"] = "Player-4476-055B0D7A",
+					["received"] = 1199.030363,
+					["targets"] = {
+						["Zheboqi-Gehennas"] = 0,
+						["Jetcer-Gehennas"] = 0,
+					},
+					["powertype"] = 0,
+					["alternatepower"] = 0.030363,
+					["last_event"] = 0,
+					["nome"] = "Jetcer-Gehennas",
+					["spells"] = {
+						["_ActorTable"] = {
+							[51178] = {
+								["total"] = 360,
+								["totalover"] = 0,
+								["id"] = 51178,
+								["targets"] = {
+									["Jetcer-Gehennas"] = 0,
+								},
+								["counter"] = 6,
+							},
+							[29166] = {
+								["total"] = 503,
+								["totalover"] = 0,
+								["id"] = 29166,
+								["targets"] = {
+									["Zheboqi-Gehennas"] = 0,
+								},
+								["counter"] = 2,
+							},
+							[17080] = {
+								["total"] = 12,
+								["totalover"] = 0,
+								["id"] = 17080,
+								["targets"] = {
+									["Jetcer-Gehennas"] = 0,
+								},
+								["counter"] = 1,
+							},
+							[68285] = {
+								["total"] = 827,
+								["totalover"] = 0,
+								["id"] = 68285,
+								["targets"] = {
+									["Jetcer-Gehennas"] = 0,
+								},
+								["counter"] = 26,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["grupo"] = true,
+					["aID"] = "4476-055B0D7A",
+					["totalover"] = 0.003005,
 					["tipo"] = 3,
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.033239,
+					["resource"] = 0.039844,
 					["pets"] = {
 					},
-					["aID"] = "4476-057D0C29",
-					["totalover"] = 0.008652,
+					["classe"] = "SHAMAN",
+					["passiveover"] = 0.008652,
 					["total"] = 69089.033239,
 					["spec"] = 262,
+					["serial"] = "Player-4476-057D0C29",
 					["received"] = 69089.033239,
 					["targets"] = {
-						["Ruksz-Gehennas"] = 69089,
+						["Ruksz-Gehennas"] = 0,
 					},
 					["powertype"] = 0,
-					["boss_fight_component"] = true,
 					["alternatepower"] = 0.033239,
-					["fight_component"] = true,
+					["last_event"] = 0,
 					["nome"] = "Ruksz-Gehennas",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[88765] = {
 								["total"] = 68447,
-								["id"] = 88765,
 								["totalover"] = 0,
+								["id"] = 88765,
 								["targets"] = {
-									["Ruksz-Gehennas"] = 68447,
+									["Ruksz-Gehennas"] = 0,
 								},
 								["counter"] = 78,
 							},
 							[39104] = {
 								["total"] = 642,
-								["id"] = 39104,
 								["totalover"] = 0,
+								["id"] = 39104,
 								["targets"] = {
 									["Ruksz-Gehennas"] = 642,
 								},
 								["counter"] = 4,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["classe"] = "SHAMAN",
-					["passiveover"] = 0.008652,
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-4476-057D0C29",
+					["aID"] = "4476-057D0C29",
+					["totalover"] = 0.008652,
 					["tipo"] = 3,
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 20.042008,
+					["resource"] = 24.056253,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
-					["totalover"] = 0.002419,
+					["aID"] = "4476-0555D0FC",
+					["passiveover"] = 0.002419,
 					["total"] = 2921.042008,
+					["serial"] = "Player-4476-0555D0FC",
 					["received"] = 3424.042008,
 					["targets"] = {
-						["Zheboqi-Gehennas"] = 2921,
+						["Zheboqi-Gehennas"] = 0,
 					},
 					["powertype"] = 0,
-					["boss_fight_component"] = true,
 					["alternatepower"] = 0.042008,
-					["resource_type"] = 9,
-					["fight_component"] = true,
-					["nome"] = "Zheboqi-Gehennas",
+					["last_event"] = 0,
+					["classe"] = "PALADIN",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[67666] = {
 								["total"] = 2921,
-								["id"] = 67666,
 								["totalover"] = 0,
+								["id"] = 67666,
 								["targets"] = {
-									["Zheboqi-Gehennas"] = 2921,
+									["Zheboqi-Gehennas"] = 0,
 								},
 								["counter"] = 6,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["passiveover"] = 0.002419,
-					["aID"] = "4476-0555D0FC",
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-4476-0555D0FC",
+					["totalover"] = 0.002419,
+					["nome"] = "Zheboqi-Gehennas",
 					["tipo"] = 3,
+					["fight_component"] = true,
+					["resource_type"] = 9,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
 					["resource"] = 0.014752,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["totalover"] = 0.002552,
+					["aID"] = "43391",
+					["passiveover"] = 0.002552,
 					["monster"] = true,
 					["total"] = 310.014752,
+					["serial"] = "Creature-0-4457-725-21149-43391-0000573C81",
 					["received"] = 310.014752,
 					["targets"] = {
 						["Millhouse Manastorm"] = 310,
 					},
 					["powertype"] = 0,
 					["alternatepower"] = 0.014752,
-					["fight_component"] = true,
 					["nome"] = "Millhouse Manastorm",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[81220] = {
 								["total"] = 310,
-								["id"] = 81220,
 								["totalover"] = 0,
+								["id"] = 81220,
 								["targets"] = {
 									["Millhouse Manastorm"] = 310,
 								},
 								["counter"] = 2,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["passiveover"] = 0.002552,
-					["aID"] = "43391",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4457-725-21149-43391-0000573C81",
+					["classe"] = "UNKNOW",
 					["tipo"] = 3,
+					["totalover"] = 0.002552,
+					["fight_component"] = true,
+					["last_event"] = 0,
 				}, -- [6]
 			},
 		}, -- [3]
@@ -21775,7 +18657,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[62124] = {
 								["refreshamt"] = 0,
@@ -21839,13 +18720,13 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["cooldowns_defensive"] = 4.023330000000001,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
+					["aID"] = "4465-02BB4683",
 					["interrupt_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[96231] = {
 								["id"] = 96231,
@@ -21858,9 +18739,9 @@ _detalhes_database = {
 								["counter"] = 4,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[97341] = {
 								["refreshamt"] = 0,
@@ -22013,22 +18894,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[76691] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 5,
-								["appliedamt"] = 5,
-								["id"] = 76691,
-								["uptime"] = 177,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[85433] = {
 								["refreshamt"] = 7,
 								["activedamt"] = 13,
 								["appliedamt"] = 13,
 								["id"] = 85433,
 								["uptime"] = 76,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[76691] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 5,
+								["appliedamt"] = 5,
+								["id"] = 76691,
+								["uptime"] = 177,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22044,6 +18925,7 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
 						[81439] = 4,
@@ -22064,10 +18946,9 @@ _detalhes_database = {
 						["Stonecore Earthshaper"] = 1,
 						["Stonecore Flayer"] = 4,
 					},
+					["serial"] = "Player-4465-02BB4683",
 					["buff_uptime"] = 2173,
-					["aID"] = "4465-02BB4683",
 					["cc_done_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[31935] = {
 								["id"] = 31935,
@@ -22084,19 +18965,14 @@ _detalhes_database = {
 								["counter"] = 26,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["boss_fight_component"] = true,
 					["cooldowns_defensive_targets"] = {
 						["Vermina"] = 4,
 					},
-					["interrupt"] = 4.009806,
-					["debuff_uptime_targets"] = {
-					},
-					["cc_done"] = 26.03973,
-					["nome"] = "Vermina",
-					["grupo"] = true,
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
 					["cooldowns_defensive_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[498] = {
 								["id"] = 498,
@@ -22106,16 +18982,21 @@ _detalhes_database = {
 								["counter"] = 4,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["fight_component"] = true,
-					["last_event"] = 0,
+					["cc_done"] = 26.03973,
+					["nome"] = "Vermina",
+					["grupo"] = true,
+					["classe"] = "PALADIN",
 					["tipo"] = 4,
-					["serial"] = "Player-4465-02BB4683",
+					["interrupt"] = 4.009806,
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[8050] = {
 								["refreshamt"] = 0,
@@ -22158,11 +19039,15 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
-					},
-					["buff_uptime"] = 984,
-					["classe"] = "SHAMAN",
-					["buff_uptime_spells"] = {
 						["tipo"] = 9,
+					},
+					["pets"] = {
+						"Searing Totem <Meridann-Gehennas>", -- [1]
+						"Fire Elemental Totem <Meridann-Gehennas>", -- [2]
+						"Greater Fire Elemental <Meridann-Gehennas>", -- [3]
+					},
+					["aID"] = "4476-056218BB",
+					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[61882] = {
 								["refreshamt"] = 0,
@@ -22174,12 +19059,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[64701] = {
+							[54758] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 64701,
-								["uptime"] = 15,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 54758,
+								["uptime"] = 18,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22226,12 +19111,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[16166] = {
+							[64701] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
-								["id"] = 16166,
-								["uptime"] = 1,
+								["id"] = 64701,
+								["uptime"] = 15,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22246,12 +19131,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[54758] = {
+							[16166] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 54758,
-								["uptime"] = 18,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 16166,
+								["uptime"] = 1,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22297,16 +19182,6 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[72221] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 6,
-								["appliedamt"] = 6,
-								["id"] = 72221,
-								["uptime"] = 208,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[72416] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 4,
@@ -22317,32 +19192,38 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[72221] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 6,
+								["appliedamt"] = 6,
+								["id"] = 72221,
+								["uptime"] = 208,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 						},
+						["tipo"] = 9,
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 204,
-					["nome"] = "Meridann-Gehennas",
-					["spec"] = 262,
-					["grupo"] = true,
-					["tipo"] = 4,
-					["pets"] = {
-						"Searing Totem <Meridann-Gehennas>", -- [1]
-						"Fire Elemental Totem <Meridann-Gehennas>", -- [2]
-						"Greater Fire Elemental <Meridann-Gehennas>", -- [3]
-					},
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["aID"] = "4476-056218BB",
-					["debuff_uptime_targets"] = {
-					},
-					["serial"] = "Player-4476-056218BB",
 					["buff_uptime_targets"] = {
 					},
+					["spec"] = 262,
+					["grupo"] = true,
+					["last_event"] = 0,
+					["buff_uptime"] = 984,
+					["classe"] = "SHAMAN",
+					["tipo"] = 4,
+					["debuff_uptime_targets"] = {
+					},
+					["boss_fight_component"] = true,
+					["serial"] = "Player-4476-056218BB",
+					["nome"] = "Meridann-Gehennas",
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[57724] = {
 								["refreshamt"] = 0,
@@ -22355,13 +19236,49 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["dispell"] = 9.001169,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
-					["buff_uptime_spells"] = {
+					["aID"] = "4476-0555D0FC",
+					["dispell_targets"] = {
+						["Ruksz-Gehennas"] = 2,
+						["Meridann-Gehennas"] = 2,
+						["Zheboqi-Gehennas"] = 2,
+						["Vermina"] = 1,
+						["Jetcer-Gehennas"] = 2,
+					},
+					["debuff_uptime"] = 72,
+					["debuff_uptime_targets"] = {
+					},
+					["serial"] = "Player-4476-0555D0FC",
+					["buff_uptime"] = 1322,
+					["last_event"] = 0,
+					["dispell_oque"] = {
+						[82415] = 9,
+					},
+					["dispell_spells"] = {
+						["_ActorTable"] = {
+							[4987] = {
+								["targets"] = {
+									["Ruksz-Gehennas"] = 2,
+									["Meridann-Gehennas"] = 2,
+									["Zheboqi-Gehennas"] = 2,
+									["Vermina"] = 1,
+									["Jetcer-Gehennas"] = 2,
+								},
+								["id"] = 4987,
+								["dispell_oque"] = {
+									[82415] = 9,
+								},
+								["dispell"] = 9,
+								["counter"] = 0,
+							},
+						},
 						["tipo"] = 9,
+					},
+					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[54149] = {
 								["refreshamt"] = 1,
@@ -22454,56 +19371,20 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
-					},
-					["debuff_uptime"] = 72,
-					["debuff_uptime_targets"] = {
-					},
-					["buff_uptime"] = 1322,
-					["dispell_targets"] = {
-						["Ruksz-Gehennas"] = 2,
-						["Meridann-Gehennas"] = 2,
-						["Jetcer-Gehennas"] = 2,
-						["Vermina"] = 1,
-						["Zheboqi-Gehennas"] = 2,
-					},
-					["dispell_oque"] = {
-						[82415] = 9,
-					},
-					["dispell_spells"] = {
 						["tipo"] = 9,
-						["_ActorTable"] = {
-							[4987] = {
-								["dispell"] = 9,
-								["id"] = 4987,
-								["dispell_oque"] = {
-									[82415] = 9,
-								},
-								["targets"] = {
-									["Ruksz-Gehennas"] = 2,
-									["Meridann-Gehennas"] = 2,
-									["Jetcer-Gehennas"] = 2,
-									["Vermina"] = 1,
-									["Zheboqi-Gehennas"] = 2,
-								},
-								["counter"] = 0,
-							},
-						},
 					},
 					["boss_fight_component"] = true,
+					["grupo"] = true,
+					["classe"] = "PALADIN",
+					["nome"] = "Zheboqi-Gehennas",
+					["tipo"] = 4,
+					["fight_component"] = true,
 					["buff_uptime_targets"] = {
 					},
-					["nome"] = "Zheboqi-Gehennas",
-					["grupo"] = true,
-					["fight_component"] = true,
-					["aID"] = "4476-0555D0FC",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Player-4476-0555D0FC",
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[50259] = {
 								["refreshamt"] = 0,
@@ -22576,13 +19457,13 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["cooldowns_defensive"] = 3.014623,
 					["pets"] = {
 					},
-					["aID"] = "4476-055B0D7A",
+					["classe"] = "DRUID",
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[80886] = {
 								["refreshamt"] = 1,
@@ -22674,36 +19555,6 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[1850] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 1850,
-								["uptime"] = 15,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[16870] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 9,
-								["appliedamt"] = 9,
-								["id"] = 16870,
-								["uptime"] = 7,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[69369] = {
-								["refreshamt"] = 3,
-								["activedamt"] = 5,
-								["appliedamt"] = 5,
-								["id"] = 69369,
-								["uptime"] = 48,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[768] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 6,
@@ -22714,12 +19565,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[72221] = {
+							[1850] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 6,
-								["appliedamt"] = 6,
-								["id"] = 72221,
-								["uptime"] = 208,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 1850,
+								["uptime"] = 15,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22740,6 +19591,36 @@ _detalhes_database = {
 								["appliedamt"] = 6,
 								["id"] = 16591,
 								["uptime"] = 208,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[72221] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 6,
+								["appliedamt"] = 6,
+								["id"] = 72221,
+								["uptime"] = 208,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[16870] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 9,
+								["appliedamt"] = 9,
+								["id"] = 16870,
+								["uptime"] = 7,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[69369] = {
+								["refreshamt"] = 3,
+								["activedamt"] = 5,
+								["appliedamt"] = 5,
+								["id"] = 69369,
+								["uptime"] = 48,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -22775,6 +19656,7 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 464,
 					["buff_uptime_targets"] = {
@@ -22783,9 +19665,9 @@ _detalhes_database = {
 					["cc_done_targets"] = {
 						["Stonecore Berserker"] = 1,
 					},
+					["serial"] = "Player-4476-055B0D7A",
 					["buff_uptime"] = 1532,
 					["cc_done_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[50259] = {
 								["id"] = 50259,
@@ -22795,15 +19677,21 @@ _detalhes_database = {
 								["counter"] = 1,
 							},
 						},
-					},
-					["debuff_uptime_targets"] = {
+						["tipo"] = 9,
 					},
 					["cooldowns_defensive_targets"] = {
 						["Jetcer-Gehennas"] = 3,
 					},
-					["boss_fight_component"] = true,
+					["debuff_uptime_targets"] = {
+					},
+					["fight_component"] = true,
+					["aID"] = "4476-055B0D7A",
+					["cc_done"] = 1.011906,
+					["nome"] = "Jetcer-Gehennas",
+					["grupo"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["cooldowns_defensive_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[22812] = {
 								["id"] = 22812,
@@ -22813,20 +19701,13 @@ _detalhes_database = {
 								["counter"] = 3,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["cc_done"] = 1.011906,
-					["nome"] = "Jetcer-Gehennas",
-					["classe"] = "DRUID",
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["grupo"] = true,
-					["serial"] = "Player-4476-055B0D7A",
+					["boss_fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[8050] = {
 								["refreshamt"] = 1,
@@ -22859,15 +19740,15 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 						"Searing Totem <Ruksz-Gehennas>", -- [1]
 						"Fire Elemental Totem <Ruksz-Gehennas>", -- [2]
 						"Greater Fire Elemental <Ruksz-Gehennas>", -- [3]
 					},
-					["classe"] = "SHAMAN",
+					["aID"] = "4476-057D0C29",
 					["interrupt_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[57994] = {
 								["id"] = 57994,
@@ -22880,9 +19761,9 @@ _detalhes_database = {
 								["counter"] = 2,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[102748] = {
 								["refreshamt"] = 0,
@@ -22955,16 +19836,6 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[2825] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 2825,
-								["uptime"] = 40,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[64701] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 2,
@@ -22981,6 +19852,16 @@ _detalhes_database = {
 								["appliedamt"] = 2,
 								["id"] = 16166,
 								["uptime"] = 1,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[2825] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 2825,
+								["uptime"] = 40,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -23018,6 +19899,7 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
 						[81459] = 2,
@@ -23025,127 +19907,128 @@ _detalhes_database = {
 					["debuff_uptime"] = 229,
 					["buff_uptime_targets"] = {
 					},
-					["spec"] = 262,
-					["buff_uptime"] = 829,
-					["debuff_uptime_targets"] = {
-					},
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
 					["interrupt_targets"] = {
 						["Stonecore Earthshaper"] = 2,
 					},
-					["interrupt"] = 2.009235,
-					["nome"] = "Ruksz-Gehennas",
-					["grupo"] = true,
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["aID"] = "4476-057D0C29",
 					["serial"] = "Player-4476-057D0C29",
+					["buff_uptime"] = 829,
+					["nome"] = "Ruksz-Gehennas",
+					["fight_component"] = true,
+					["tipo"] = 4,
+					["interrupt"] = 2.009235,
+					["grupo"] = true,
+					["classe"] = "SHAMAN",
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["spec"] = 262,
+					["boss_fight_component"] = true,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "43430",
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["nome"] = "Stonecore Berserker",
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["aID"] = "43430",
 					["serial"] = "Creature-0-4457-725-21149-43430-0000D73C81",
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Stonecore Berserker",
-					["monster"] = true,
-					["last_event"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 8466,
 					["pets"] = {
 					},
-					["aID"] = "2523",
-					["tipo"] = 4,
 					["classe"] = "PET",
 					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Searing Totem <Meridann-Gehennas>",
-					["serial"] = "Creature-0-4457-725-21149-2523-0000573C98",
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-725-21149-2523-0000573C98",
+					["aID"] = "2523",
 				}, -- [7]
 				{
 					["flag_original"] = 8466,
 					["pets"] = {
 					},
-					["aID"] = "2523",
-					["tipo"] = 4,
 					["classe"] = "PET",
 					["ownerName"] = "Ruksz-Gehennas",
 					["nome"] = "Searing Totem <Ruksz-Gehennas>",
-					["serial"] = "Creature-0-4457-725-21149-2523-0000573C9A",
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-725-21149-2523-0000573C9A",
+					["aID"] = "2523",
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "43391",
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["nome"] = "Millhouse Manastorm",
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["aID"] = "43391",
 					["serial"] = "Creature-0-4457-725-21149-43391-0000573C81",
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Millhouse Manastorm",
-					["monster"] = true,
-					["last_event"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "43537",
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["nome"] = "Stonecore Earthshaper",
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["aID"] = "43537",
 					["serial"] = "Creature-0-4457-725-21149-43537-0000573C81",
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Stonecore Earthshaper",
-					["monster"] = true,
-					["last_event"] = 0,
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "42696",
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["nome"] = "Stonecore Warbringer",
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["aID"] = "42696",
 					["serial"] = "Creature-0-4457-725-21149-42696-0005D73C81",
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Stonecore Warbringer",
-					["monster"] = true,
-					["last_event"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
-					["serial"] = "Creature-0-4457-725-21149-42808-000BD73C81",
-					["fight_component"] = true,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["tipo"] = 4,
 					["monster"] = true,
-					["aID"] = "42808",
 					["nome"] = "Stonecore Flayer",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-42808-000BD73C81",
+					["aID"] = "42808",
 				}, -- [12]
 				{
 					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 					},
 					["aID"] = "43662",
 					["boss_debuff"] = true,
+					["damage_spellid"] = 81711,
 					["monster"] = true,
 					["debuff_uptime"] = 18,
 					["spellschool"] = 1,
-					["nome"] = "Fracture",
+					["boss_fight_component"] = true,
 					["debuff_uptime_targets"] = {
 						["Meridann-Gehennas"] = {
 							["uptime"] = 6,
@@ -23169,85 +20052,85 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["damage_twin"] = "Unbound Earth Rager",
-					["damage_spellid"] = 81711,
-					["serial"] = "Creature-0-4457-725-21149-43662-0007573C81",
+					["nome"] = "Fracture",
 					["tipo"] = 4,
+					["damage_twin"] = "Unbound Earth Rager",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-43662-0007573C81",
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 8466,
-					["boss_fight_component"] = true,
 					["pets"] = {
 					},
-					["tipo"] = 4,
-					["classe"] = "PET",
 					["aID"] = "15439",
-					["serial"] = "Creature-0-4457-725-21149-15439-0000573D2C",
 					["ownerName"] = "Ruksz-Gehennas",
 					["nome"] = "Fire Elemental Totem <Ruksz-Gehennas>",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-4457-725-21149-15439-0000573D2C",
 					["last_event"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 8466,
-					["boss_fight_component"] = true,
 					["pets"] = {
 					},
-					["tipo"] = 4,
-					["classe"] = "PET",
 					["aID"] = "15439",
-					["serial"] = "Creature-0-4457-725-21149-15439-0000573D2F",
 					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Fire Elemental Totem <Meridann-Gehennas>",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-4457-725-21149-15439-0000573D2F",
 					["last_event"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 8466,
-					["boss_fight_component"] = true,
 					["pets"] = {
 					},
-					["tipo"] = 4,
-					["classe"] = "PET",
 					["aID"] = "15438",
-					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 					["ownerName"] = "Meridann-Gehennas",
 					["nome"] = "Greater Fire Elemental <Meridann-Gehennas>",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2F",
 					["last_event"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
-					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 					["pets"] = {
 					},
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["tipo"] = 4,
-					["monster"] = true,
 					["aID"] = "43438",
+					["monster"] = true,
+					["boss_fight_component"] = true,
 					["nome"] = "Corborus",
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
+					["classe"] = "UNKNOW",
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
-					["aID"] = "43438",
 					["pets"] = {
 					},
-					["damage_spellid"] = 82415,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["damage_twin"] = "Corborus",
+					["aID"] = "43438",
 					["boss_debuff"] = true,
-					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
+					["damage_spellid"] = 82415,
 					["monster"] = true,
 					["debuff_uptime"] = 35,
 					["spellschool"] = 32,
+					["nome"] = "Dampening Wave",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["damage_twin"] = "Corborus",
 					["debuff_uptime_targets"] = {
 						["Ruksz-Gehennas"] = {
 							["uptime"] = 9,
@@ -23256,8 +20139,8 @@ _detalhes_database = {
 							["actived"] = false,
 							["refreshamt"] = 0,
 						},
-						["Vermina"] = {
-							["uptime"] = 7,
+						["Meridann-Gehennas"] = {
+							["uptime"] = 6,
 							["appliedamt"] = 0,
 							["activedamt"] = 0,
 							["actived"] = false,
@@ -23277,50 +20160,50 @@ _detalhes_database = {
 							["actived"] = false,
 							["refreshamt"] = 0,
 						},
-						["Meridann-Gehennas"] = {
-							["uptime"] = 6,
+						["Vermina"] = {
+							["uptime"] = 7,
 							["appliedamt"] = 0,
 							["activedamt"] = 0,
 							["actived"] = false,
 							["refreshamt"] = 0,
 						},
 					},
-					["nome"] = "Dampening Wave",
+					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 					["tipo"] = 4,
-					["last_event"] = 0,
 				}, -- [18]
 				{
 					["flag_original"] = 8466,
-					["boss_fight_component"] = true,
 					["pets"] = {
 					},
-					["tipo"] = 4,
-					["classe"] = "PET",
 					["aID"] = "15438",
-					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 					["ownerName"] = "Ruksz-Gehennas",
 					["nome"] = "Greater Fire Elemental <Ruksz-Gehennas>",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-4457-725-21149-15438-0000573D2C",
 					["last_event"] = 0,
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
-					["aID"] = "43438",
 					["pets"] = {
 					},
-					["damage_spellid"] = 86881,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["damage_twin"] = "Corborus",
+					["aID"] = "43438",
 					["boss_debuff"] = true,
-					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
+					["damage_spellid"] = 86881,
 					["monster"] = true,
 					["debuff_uptime"] = 13,
 					["spellschool"] = 1,
+					["nome"] = "Crystal Barrage",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["damage_twin"] = "Corborus",
 					["debuff_uptime_targets"] = {
 						["Meridann-Gehennas"] = {
 							["uptime"] = 4,
@@ -23344,22 +20227,21 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["nome"] = "Crystal Barrage",
+					["serial"] = "Creature-0-4457-725-21149-43438-0000573C81",
 					["tipo"] = 4,
-					["last_event"] = 0,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4457-725-21149-42810-0001573C81",
-					["fight_component"] = true,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["tipo"] = 4,
 					["monster"] = true,
-					["aID"] = "42810",
 					["nome"] = "Crystalspawn Giant",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-4457-725-21149-42810-0001573C81",
+					["aID"] = "42810",
 				}, -- [21]
 			},
 		}, -- [4]
@@ -23370,38 +20252,16 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["totals_grupo"] = {
-			7252267.148308, -- [1]
-			646929.1475959999, -- [2]
-			{
-				0, -- [1]
-				[0] = 236669.151155,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 7.026490000000001,
-				["interrupt"] = 6.019041,
-				["dispell"] = 9.001169,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
 		["tempo_start"] = 1716993177,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
-		["cleu_timeline"] = {
+		["trinketProcs"] = {
 		},
 		["bossTimers"] = {
 		},
-		["trinketProcs"] = {
-		},
+		["combat_counter"] = 14553,
 		["playerTalents"] = {
 		},
 		["totals"] = {
@@ -23417,10 +20277,10 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 7.026490000000001,
-				["interrupt"] = 6.019041,
 				["dispell"] = 9.001169,
+				["interrupt"] = 6.019041,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
@@ -23429,6 +20289,155 @@ _detalhes_database = {
 		},
 		["player_last_events"] = {
 		},
+		["cleu_timeline"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["overall_refreshed"] = true,
+		["data_inicio"] = "16:32:58",
+		["amountCasts"] = {
+			["Greater Fire Elemental <Meridann-Gehennas>"] = {
+				["Fire Nova"] = 1,
+			},
+			["Searing Totem <Ruksz-Gehennas>"] = {
+				["Searing Bolt"] = 5,
+			},
+			["Searing Totem"] = {
+				["Searing Bolt"] = 72,
+			},
+			["Stonecore Flayer"] = {
+				["Flay"] = 2,
+			},
+			["Vermina"] = {
+				["Divine Protection"] = 4,
+				["Word of Glory"] = 7,
+				["Rebuke"] = 5,
+				["Holy Wrath"] = 12,
+				["Hammer of Wrath"] = 9,
+				["Avenger's Shield"] = 13,
+				["Hand of Reckoning"] = 3,
+				["Crusader Strike"] = 11,
+				["Hammer of the Righteous"] = 44,
+				["Holy Shield"] = 6,
+				["Consecration"] = 7,
+				["Grand Crusader"] = 5,
+				["Shield of the Righteous"] = 8,
+				["Judgement"] = 13,
+			},
+			["Zheboqi-Gehennas"] = {
+				["Word of Glory"] = 10,
+				["Cleanse"] = 13,
+				["Holy Shock"] = 22,
+				["Light of Dawn"] = 2,
+				["Hammer of Justice"] = 1,
+				["Flash of Light"] = 9,
+				["Blessing of Kings"] = 1,
+				["Beacon of Light"] = 1,
+				["Judgement"] = 10,
+			},
+			["Greater Fire Elemental"] = {
+				["Fire Nova"] = 8,
+				["Fire Blast"] = 11,
+			},
+			["Stonecore Earthshaper"] = {
+				["Ground Shock"] = 2,
+				["Lava Burst"] = 4,
+			},
+			["Fire Elemental Totem <Ruksz-Gehennas>"] = {
+				["Fire Elemental Totem"] = 1,
+			},
+			["Greater Fire Elemental <Ruksz-Gehennas>"] = {
+				["Fire Nova"] = 1,
+			},
+			["Fire Elemental Totem <Meridann-Gehennas>"] = {
+				["Fire Elemental Totem"] = 1,
+			},
+			["Stonecore Warbringer"] = {
+				["Rage"] = 4,
+				["Cleave"] = 4,
+			},
+			["Stonecore Berserker"] = {
+				["Spinning Slash"] = 6,
+				["Charge"] = 10,
+			},
+			["Crystalspawn Giant"] = {
+				["Quake"] = 1,
+			},
+			["Corborus"] = {
+				["Dampening Wave"] = 2,
+			},
+			["Meridann-Gehennas"] = {
+				["Lava Burst"] = 11,
+				["Searing Totem"] = 3,
+				["Flame Shock"] = 5,
+				["Blood Fury"] = 1,
+				["Earthquake"] = 3,
+				["Thunderstorm"] = 1,
+				["Call of the Elements"] = 3,
+				["Lava Surge!"] = 5,
+				["Elemental Mastery"] = 1,
+				["Hyperspeed Acceleration"] = 2,
+				["Lightning Bolt"] = 40,
+				["Totemic Recall"] = 1,
+				["Mana Spring Totem"] = 3,
+				["Lightning Shield"] = 13,
+				["Wind Shear"] = 2,
+				["Fire Elemental Totem"] = 1,
+				["Wrath of Air Totem"] = 3,
+				["Strength of Earth Totem"] = 3,
+				["Chain Lightning"] = 43,
+				["Earth Shock"] = 13,
+			},
+			["Ruksz-Gehennas"] = {
+				["Fire Nova"] = 1,
+				["Lava Burst"] = 16,
+				["Searing Totem"] = 5,
+				["Flame Shock"] = 15,
+				["Call of the Elements"] = 5,
+				["Lava Surge!"] = 7,
+				["Elemental Mastery"] = 2,
+				["Mana Spring Totem"] = 5,
+				["Lightning Bolt"] = 23,
+				["Bloodlust"] = 1,
+				["Totemic Recall"] = 1,
+				["Lightning Shield"] = 6,
+				["Wind Shear"] = 2,
+				["Fire Elemental Totem"] = 1,
+				["Wrath of Air Totem"] = 5,
+				["Strength of Earth Totem"] = 5,
+				["Chain Lightning"] = 34,
+				["Earth Shock"] = 9,
+			},
+			["Searing Totem <Meridann-Gehennas>"] = {
+				["Searing Bolt"] = 2,
+			},
+			["Jetcer-Gehennas"] = {
+				["Tiger's Fury"] = 6,
+				["Prowl"] = 1,
+				["Rake"] = 22,
+				["Rip"] = 3,
+				["Ferocious Bite"] = 1,
+				["Berserk"] = 1,
+				["Savage Roar"] = 7,
+				["Ravage!"] = 4,
+				["Shred"] = 22,
+				["Dash"] = 1,
+				["Barkskin"] = 3,
+				["Faerie Fire (Feral)"] = 11,
+				["Mangle"] = 16,
+				["Primal Fury"] = 17,
+				["Feral Charge"] = 4,
+				["Swipe"] = 17,
+			},
+		},
+		["mapId"] = 725,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["zoneName"] = "The Stonecore",
+		["end_time"] = 1642533.048,
+		["boss_hp"] = 1,
 		["segments_added"] = {
 			{
 				["elapsed"] = 21.03299999982119,
@@ -23467,168 +20476,22 @@ _detalhes_database = {
 				["clock"] = "16:32:58",
 			}, -- [6]
 		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["data_inicio"] = "16:32:58",
-		["amountCasts"] = {
-			["Greater Fire Elemental <Meridann-Gehennas>"] = {
-				["Fire Nova"] = 1,
-			},
-			["Ruksz-Gehennas"] = {
-				["Fire Nova"] = 1,
-				["Lava Burst"] = 16,
-				["Searing Totem"] = 5,
-				["Flame Shock"] = 15,
-				["Call of the Elements"] = 5,
-				["Lava Surge!"] = 7,
-				["Elemental Mastery"] = 2,
-				["Fire Elemental Totem"] = 1,
-				["Mana Spring Totem"] = 5,
-				["Bloodlust"] = 1,
-				["Lightning Bolt"] = 23,
-				["Lightning Shield"] = 6,
-				["Wind Shear"] = 2,
-				["Totemic Recall"] = 1,
-				["Wrath of Air Totem"] = 5,
-				["Strength of Earth Totem"] = 5,
-				["Chain Lightning"] = 34,
-				["Earth Shock"] = 9,
-			},
-			["Searing Totem"] = {
-				["Searing Bolt"] = 72,
-			},
-			["Stonecore Flayer"] = {
-				["Flay"] = 2,
-			},
-			["Vermina"] = {
-				["Divine Protection"] = 4,
-				["Word of Glory"] = 7,
-				["Rebuke"] = 5,
-				["Crusader Strike"] = 11,
-				["Hammer of Wrath"] = 9,
-				["Holy Wrath"] = 12,
-				["Hand of Reckoning"] = 3,
-				["Holy Shield"] = 6,
-				["Hammer of the Righteous"] = 44,
-				["Avenger's Shield"] = 13,
-				["Consecration"] = 7,
-				["Grand Crusader"] = 5,
-				["Shield of the Righteous"] = 8,
-				["Judgement"] = 13,
-			},
-			["Zheboqi-Gehennas"] = {
-				["Word of Glory"] = 10,
-				["Cleanse"] = 13,
-				["Holy Shock"] = 22,
-				["Light of Dawn"] = 2,
-				["Hammer of Justice"] = 1,
-				["Flash of Light"] = 9,
-				["Blessing of Kings"] = 1,
-				["Beacon of Light"] = 1,
-				["Judgement"] = 10,
-			},
-			["Greater Fire Elemental"] = {
-				["Fire Nova"] = 8,
-				["Fire Blast"] = 11,
-			},
-			["Greater Fire Elemental <Ruksz-Gehennas>"] = {
-				["Fire Nova"] = 1,
-			},
-			["Stonecore Earthshaper"] = {
-				["Ground Shock"] = 2,
-				["Lava Burst"] = 4,
-			},
-			["Jetcer-Gehennas"] = {
-				["Ferocious Bite"] = 1,
-				["Prowl"] = 1,
-				["Rake"] = 22,
-				["Rip"] = 3,
-				["Tiger's Fury"] = 6,
-				["Dash"] = 1,
-				["Savage Roar"] = 7,
-				["Feral Charge"] = 4,
-				["Berserk"] = 1,
-				["Shred"] = 22,
-				["Barkskin"] = 3,
-				["Faerie Fire (Feral)"] = 11,
-				["Mangle"] = 16,
-				["Primal Fury"] = 17,
-				["Ravage!"] = 4,
-				["Swipe"] = 17,
-			},
-			["Fire Elemental Totem <Meridann-Gehennas>"] = {
-				["Fire Elemental Totem"] = 1,
-			},
-			["Stonecore Warbringer"] = {
-				["Rage"] = 4,
-				["Cleave"] = 4,
-			},
-			["Fire Elemental Totem <Ruksz-Gehennas>"] = {
-				["Fire Elemental Totem"] = 1,
-			},
-			["Stonecore Berserker"] = {
-				["Spinning Slash"] = 6,
-				["Charge"] = 10,
-			},
-			["Crystalspawn Giant"] = {
-				["Quake"] = 1,
-			},
-			["Corborus"] = {
-				["Dampening Wave"] = 2,
-			},
-			["Meridann-Gehennas"] = {
-				["Lava Burst"] = 11,
-				["Searing Totem"] = 3,
-				["Flame Shock"] = 5,
-				["Blood Fury"] = 1,
-				["Earthquake"] = 3,
-				["Thunderstorm"] = 1,
-				["Call of the Elements"] = 3,
-				["Lava Surge!"] = 5,
-				["Elemental Mastery"] = 1,
-				["Hyperspeed Acceleration"] = 2,
-				["Lightning Bolt"] = 40,
-				["Fire Elemental Totem"] = 1,
-				["Mana Spring Totem"] = 3,
-				["Lightning Shield"] = 13,
-				["Wind Shear"] = 2,
-				["Totemic Recall"] = 1,
-				["Wrath of Air Totem"] = 3,
-				["Strength of Earth Totem"] = 3,
-				["Chain Lightning"] = 43,
-				["Earth Shock"] = 13,
-			},
-			["Searing Totem <Meridann-Gehennas>"] = {
-				["Searing Bolt"] = 2,
-			},
-			["Searing Totem <Ruksz-Gehennas>"] = {
-				["Searing Bolt"] = 5,
-			},
-		},
-		["mapId"] = 725,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["zoneName"] = "The Stonecore",
-		["end_time"] = 1642533.048,
-		["boss_hp"] = 1,
-		["frags"] = {
+		["spells_cast_timeline"] = {
 		},
 		["data_fim"] = "16:37:04",
 		["overall_enemy_name"] = "-- x -- x --",
-		["spells_cast_timeline"] = {
+		["frags"] = {
 		},
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
+			["damage_section"] = {
+			},
 			["heal_section"] = {
 			},
 			["heal"] = {
-			},
-			["damage_section"] = {
 			},
 			["damage"] = {
 			},
@@ -23638,191 +20501,43 @@ _detalhes_database = {
 			["Raid Damage Done"] = {
 			},
 		},
-		["combat_counter"] = 14553,
-	},
-	["character_data"] = {
-		["logons"] = 2399,
-	},
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
-			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["hide_on_combat"] = false,
-			["opened"] = 0,
-			["author"] = "Details! Team",
-			["show_icon"] = 5,
-			["encounter_timers_dbm"] = {
-			},
-			["window_scale"] = 1,
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["point"] = "RIGHT",
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["row_height"] = 18,
-			["arrow_anchor_x"] = 0,
-			["scale"] = 1,
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
+		["totals_grupo"] = {
+			7252267.148308, -- [1]
+			646929.1475959999, -- [2]
+			{
 				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["font_size"] = 10,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
-				["attribute_type"] = 1,
-			},
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = true,
-			["use_square_mode"] = false,
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
-			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
-		},
-		["DETAILS_PLUGIN_TIME_ATTACK"] = {
-			["enabled"] = true,
-			["realm_last_shown"] = 40,
-			["saved_as_anonymous"] = true,
-			["recently_as_anonymous"] = true,
-			["dps"] = 0,
-			["disable_sharing"] = false,
-			["history"] = {
-			},
-			["time"] = 40,
-			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
-			["realm_history"] = {
-			},
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_VANGUARD"] = {
-			["tank_block_size_height"] = 50,
-			["show_power_bar"] = false,
-			["first_run"] = false,
-			["aura_timer_text_size"] = 14,
-			["tank_block_castbar_size_height"] = 16,
-			["show_health_bar"] = true,
-			["aura_offset_y"] = 0,
-			["enabled"] = true,
-			["show_cast_bar"] = false,
-			["author"] = "Details! Team",
-			["tank_block_size"] = 150,
-			["bar_height"] = 24,
-			["tank_block_texture"] = "Details Serenity",
-			["tank_block_color"] = {
-				0.074509, -- [1]
-				0.035294, -- [2]
-				0.035294, -- [3]
-				0.832845, -- [4]
-			},
-			["tank_block_height"] = 40,
-			["tank_block_powerbar_size_height"] = 10,
-			["show_inc_bars"] = true,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["animate"] = true,
-			["hide_pull_bar"] = false,
-			["useclasscolors"] = true,
-			["usefocus"] = false,
-			["disable_gouge"] = false,
-			["showamount"] = false,
-			["absolute_mode"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["enabled"] = true,
-			["author"] = "Details! Team",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["openedfromcommand"] = false,
-			["updatespeed"] = 0.2,
-			["dividebyhundred"] = true,
-			["alwaysshowme"] = true,
-			["useplayercolor"] = true,
-			["playSound"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-			["max_compares"] = 4,
-			["compare_type"] = 1,
+				[0] = 236669.151155,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["cooldowns_defensive"] = 7.026490000000001,
+				["dispell"] = 9.001169,
+				["interrupt"] = 6.019041,
+				["debuff_uptime"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
 		},
 	},
-	["force_font_outline"] = "",
-	["announce_cooldowns"] = {
+	["data_harvested_for_charts"] = {
+	},
+	["announce_prepots"] = {
 		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -23830,406 +20545,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
-		["Player-4476-05284E02"] = "HEALER",
-		["Player-4465-041AC3F1"] = "DAMAGER",
-		["Player-4465-01236030"] = "TANK",
-		["Player-4465-0477893A"] = "DAMAGER",
-		["Player-4441-044CBE15"] = "DAMAGER",
-		["Player-4441-02A0AFEC"] = "DAMAGER",
-		["Player-4442-0439193C"] = "DAMAGER",
-		["Player-4455-0522A303"] = "DAMAGER",
-		["Player-4465-04508B30"] = "DAMAGER",
-		["Player-4476-053260EE"] = "DAMAGER",
-		["Player-4476-055B0D7A"] = "DAMAGER",
-		["Player-4456-039BB001"] = "HEALER",
-		["Player-4465-045FCC53"] = "DAMAGER",
-		["Player-4701-04603586"] = "HEALER",
-		["Player-4701-03B4D18D"] = "DAMAGER",
-		["Player-4477-044F067E"] = "DAMAGER",
-		["Player-4477-052734D8"] = "DAMAGER",
-		["Player-4465-045A5CEF"] = "DAMAGER",
-		["Player-4476-056B1551"] = "NONE",
-		["Player-4465-0415CCF0"] = "TANK",
-		["Player-4477-04AADBFE"] = "DAMAGER",
-		["Player-4465-04181C69"] = "DAMAGER",
-		["Player-4476-051E8988"] = "DAMAGER",
-		["Player-4465-0375957E"] = "DAMAGER",
-		["Player-4701-042428D1"] = "HEALER",
-		["Player-4465-02C18BE6"] = "HEALER",
-		["Player-4465-04183578"] = "DAMAGER",
-		["Player-4477-0505BCAC"] = "DAMAGER",
-		["Player-4476-055CCA7C"] = "HEALER",
-		["Player-4813-04AE098B"] = "DAMAGER",
-		["Player-4465-02E963ED"] = "DAMAGER",
-		["Player-4477-044E195F"] = "DAMAGER",
-		["Player-4477-035FC45A"] = "DAMAGER",
-		["Player-4465-041C3C9A"] = "DAMAGER",
-		["Player-4442-04820940"] = "DAMAGER",
-		["Player-4476-0515A3CE"] = "DAMAGER",
-		["Player-4465-044BF9AA"] = "DAMAGER",
-		["Player-4465-04533198"] = "DAMAGER",
-		["Player-4465-02F58B56"] = "HEALER",
-		["Player-4465-0385AAA3"] = "DAMAGER",
-		["Player-4455-033237CC"] = "DAMAGER",
-		["Player-4477-04E4CBF8"] = "DAMAGER",
-		["Player-4465-04167AB6"] = "DAMAGER",
-		["Player-4813-03A5691D"] = "DAMAGER",
-		["Player-4477-044F0EE5"] = "HEALER",
-		["Player-4441-04577924"] = "DAMAGER",
-		["Player-4476-0529D318"] = "HEALER",
-		["Player-4813-04CB8B0A"] = "DAMAGER",
-		["Player-4477-0525AB6C"] = "HEALER",
-		["Player-4465-04565178"] = "DAMAGER",
-		["Player-4465-0440F9C2"] = "DAMAGER",
-		["Player-4465-04184F12"] = "DAMAGER",
-		["Player-4477-0529254F"] = "HEALER",
-		["Player-4477-052B56B7"] = "DAMAGER",
-		["Player-4476-0555D0FC"] = "NONE",
-		["Player-4465-041618E9"] = "DAMAGER",
-		["Player-4476-051BE3CC"] = "HEALER",
-		["Player-4465-045D7B11"] = "DAMAGER",
-		["Player-4465-041563CC"] = "DAMAGER",
-		["Player-4454-0469C59E"] = "TANK",
-		["Player-4465-02843DCA"] = "HEALER",
-		["Player-4465-048E5AAA"] = "HEALER",
-		["Player-4465-0323603A"] = "DAMAGER",
-		["Player-4465-0416CEC7"] = "HEALER",
-		["Player-4476-051B6977"] = "DAMAGER",
-		["Player-4813-01ED33EA"] = "DAMAGER",
-		["Player-4465-027A4F1E"] = "DAMAGER",
-		["Player-4465-0385AADB"] = "DAMAGER",
-		["Player-4477-0449F01C"] = "HEALER",
-		["Player-4476-051AB1FC"] = "DAMAGER",
-		["Player-4465-0417A121"] = "DAMAGER",
-		["Player-4465-0421023B"] = "DAMAGER",
-		["Player-4476-03A1F56C"] = "DAMAGER",
-		["Player-4465-048AAFA7"] = "DAMAGER",
-		["Player-4465-02C933C6"] = "DAMAGER",
-		["Player-4465-045C026C"] = "DAMAGER",
-		["Player-4477-051C3CA9"] = "HEALER",
-		["Player-4813-044A07F7"] = "DAMAGER",
-		["Player-4454-056D30BF"] = "NONE",
-		["Player-4701-04572ECB"] = "HEALER",
-		["Player-4465-01249DA8"] = "DAMAGER",
-		["Player-4454-051FDD12"] = "DAMAGER",
-		["Player-4477-051D2F11"] = "HEALER",
-		["Player-4465-0290E4C1"] = "DAMAGER",
-		["Player-4465-03B7FD2B"] = "DAMAGER",
-		["Player-4456-05247FA8"] = "HEALER",
-		["Player-4441-04379C93"] = "HEALER",
-		["Player-4465-0480321A"] = "HEALER",
-		["Player-4476-0525229B"] = "DAMAGER",
-		["Player-4465-045301A9"] = "DAMAGER",
-		["Player-4465-033316DE"] = "DAMAGER",
-		["Player-4465-032B1F7B"] = "DAMAGER",
-		["Player-4465-007DD45E"] = "HEALER",
-		["Player-4464-0193BE5A"] = "DAMAGER",
-		["Player-4701-045FD8C5"] = "HEALER",
-		["Player-4465-045B4A97"] = "HEALER",
-		["Player-4476-0528C998"] = "DAMAGER",
-		["Player-4465-02BD4436"] = "HEALER",
-		["Player-4465-045DF6F6"] = "DAMAGER",
-		["Player-4476-03BF70A6"] = "NONE",
-		["Player-4476-057D0C29"] = "DAMAGER",
-		["Player-4454-030B707F"] = "DAMAGER",
-		["Player-4476-0525D97B"] = "DAMAGER",
-		["Player-4464-02BDECC4"] = "DAMAGER",
-		["Player-4476-0526911E"] = "DAMAGER",
-		["Player-4454-0564C553"] = "DAMAGER",
-		["Player-4465-043A28E5"] = "DAMAGER",
-		["Player-4453-05284C57"] = "DAMAGER",
-		["Player-4442-02101841"] = "DAMAGER",
-		["Player-4465-0415BCAB"] = "DAMAGER",
-		["Player-4465-04181E70"] = "TANK",
-		["Player-4465-03B3FD53"] = "TANK",
-		["Player-4476-05227824"] = "DAMAGER",
-		["Player-4465-027BD3D6"] = "DAMAGER",
-		["Player-4455-05266D0C"] = "DAMAGER",
-		["Player-4476-051EF732"] = "DAMAGER",
-		["Player-4465-0483F454"] = "NONE",
-		["Player-4454-0514938A"] = "DAMAGER",
-		["Player-4476-03BCE9A2"] = "DAMAGER",
-		["Player-4440-04515ED7"] = "HEALER",
-		["Player-4465-041CA1EA"] = "DAMAGER",
-		["Player-4465-0306E853"] = "DAMAGER",
-		["Player-4701-0443897C"] = "DAMAGER",
-		["Player-4465-040D1D0F"] = "TANK",
-		["Player-4465-03E83C4A"] = "TANK",
-		["Player-4454-05284957"] = "DAMAGER",
-		["Player-4465-03098675"] = "DAMAGER",
-		["Player-4465-0309322F"] = "DAMAGER",
-		["Player-4476-056E6CDA"] = "DAMAGER",
-		["Player-4476-05038705"] = "DAMAGER",
-		["Player-4465-04072F91"] = "DAMAGER",
-		["Player-4465-026A760D"] = "DAMAGER",
-		["Player-4701-03192770"] = "DAMAGER",
-		["Player-4465-04164974"] = "DAMAGER",
-		["Player-4476-0525A8B3"] = "DAMAGER",
-		["Player-4441-02464036"] = "HEALER",
-		["Player-4703-00D08F8F"] = "DAMAGER",
-		["Player-4701-0444022E"] = "HEALER",
-		["Player-4465-0394CDC6"] = "DAMAGER",
-		["Player-4440-025025D0"] = "DAMAGER",
-		["Player-4465-041518AA"] = "TANK",
-		["Player-4476-052575D4"] = "HEALER",
-		["Player-4465-04171EEC"] = "DAMAGER",
-		["Player-4441-028525FD"] = "DAMAGER",
-		["Player-4477-056B7040"] = "DAMAGER",
-		["Player-4465-0434999B"] = "DAMAGER",
-		["Player-4455-04D60D0D"] = "HEALER",
-		["Player-4465-03019B40"] = "HEALER",
-		["Player-4456-02DED660"] = "DAMAGER",
-		["Player-4464-0452BD3E"] = "HEALER",
-		["Player-4465-04911027"] = "NONE",
-		["Player-4465-026CF1DD"] = "HEALER",
-		["Player-4476-051C76CB"] = "DAMAGER",
-		["Player-4477-04D7DC4B"] = "DAMAGER",
-		["Player-4476-051B5D07"] = "DAMAGER",
-		["Player-4476-050C7CFB"] = "DAMAGER",
-		["Player-4441-0389A1A3"] = "DAMAGER",
-		["Player-4455-04F899D3"] = "HEALER",
-		["Player-4465-02CA729A"] = "DAMAGER",
-		["Player-4476-050B41D9"] = "HEALER",
-		["Player-4701-04580F37"] = "DAMAGER",
-		["Player-4465-03052C81"] = "DAMAGER",
-		["Player-4476-05274D88"] = "HEALER",
-		["Player-4465-0456983F"] = "DAMAGER",
-		["Player-4456-04D8E2E3"] = "DAMAGER",
-		["Player-4465-030460F8"] = "DAMAGER",
-		["Player-4701-0455068B"] = "DAMAGER",
-		["Player-4476-044903AF"] = "HEALER",
-		["Player-4465-03015CF1"] = "HEALER",
-		["Player-4465-04161BF6"] = "DAMAGER",
-		["Player-4465-03C44E74"] = "DAMAGER",
-		["Player-4476-052B9016"] = "DAMAGER",
-		["Player-4465-045805A0"] = "DAMAGER",
-		["Player-4456-05258AEB"] = "HEALER",
-		["Player-4477-052DA39F"] = "DAMAGER",
-		["Player-4465-04580CEF"] = "DAMAGER",
-		["Player-4465-0419BFD6"] = "DAMAGER",
-		["Player-4465-045A7EFE"] = "DAMAGER",
-		["Player-4701-03BD9563"] = "DAMAGER",
-		["Player-4465-041537DA"] = "TANK",
-		["Player-4465-0434A9F1"] = "HEALER",
-		["Player-4464-03062F94"] = "HEALER",
-		["Player-4456-04B4A9CF"] = "HEALER",
-		["Player-4476-05255BEF"] = "DAMAGER",
-		["Player-4465-0400DA6F"] = "DAMAGER",
-		["Player-4477-0262454E"] = "DAMAGER",
-		["Player-4465-0027FD3A"] = "DAMAGER",
-		["Player-4477-05258005"] = "DAMAGER",
-		["Player-4456-0492500F"] = "DAMAGER",
-		["Player-4454-0525D60E"] = "DAMAGER",
-		["Player-4453-03B2FCB2"] = "DAMAGER",
-		["Player-4701-0384058B"] = "DAMAGER",
-		["Player-4465-042169FF"] = "DAMAGER",
-		["Player-4465-0418616B"] = "DAMAGER",
-		["Player-4465-0394651C"] = "DAMAGER",
-		["Player-4476-03B1871D"] = "DAMAGER",
-		["Player-4477-051B1E68"] = "DAMAGER",
-		["Player-4464-045B7033"] = "DAMAGER",
-		["Player-4456-05256276"] = "DAMAGER",
-		["Player-4465-03047852"] = "DAMAGER",
-		["Player-4477-051E53A9"] = "DAMAGER",
-		["Player-4456-04B55F8F"] = "DAMAGER",
-		["Player-4701-043E3251"] = "DAMAGER",
-		["Player-4454-051F3F57"] = "DAMAGER",
-		["Player-4465-045CDD95"] = "HEALER",
-		["Player-4476-05281BE6"] = "DAMAGER",
-		["Player-4476-04E04996"] = "DAMAGER",
-		["Player-4465-017A918E"] = "DAMAGER",
-		["Player-4465-0446DE3C"] = "DAMAGER",
-		["Player-4477-055C2638"] = "HEALER",
-		["Player-4455-052B55CF"] = "DAMAGER",
-		["Player-4465-037C8B65"] = "DAMAGER",
-		["Player-4465-0272E0C9"] = "DAMAGER",
-		["Player-4465-04860AA6"] = "NONE",
-		["Player-4476-056218BB"] = "DAMAGER",
-		["Player-4477-045E6EBE"] = "DAMAGER",
-		["Player-4465-045BD6D6"] = "HEALER",
-		["Player-4455-05273629"] = "DAMAGER",
-		["Player-4465-0414E9BF"] = "TANK",
-		["Player-4465-02BB4683"] = "NONE",
-		["Player-4465-03A9B48B"] = "DAMAGER",
-		["Player-4465-04184ABA"] = "DAMAGER",
-		["Player-4476-0514B757"] = "DAMAGER",
-		["Player-4465-04154556"] = "TANK",
-		["Player-4465-022C9439"] = "DAMAGER",
-		["Player-4465-02FE3529"] = "DAMAGER",
-		["Player-4442-04821DB2"] = "NONE",
-		["Player-4701-04601B30"] = "DAMAGER",
-		["Player-4476-050EC70F"] = "HEALER",
-		["Player-4456-0399FDA0"] = "HEALER",
-		["Player-4476-0573A84D"] = "DAMAGER",
-		["Player-4476-051D1816"] = "DAMAGER",
-		["Player-4476-051A1E98"] = "DAMAGER",
-		["Player-4465-014E69A8"] = "DAMAGER",
-		["Player-4464-045EAE6E"] = "DAMAGER",
-		["Player-4477-04EA7D87"] = "HEALER",
-		["Player-4453-051EBDF1"] = "DAMAGER",
-		["Player-4476-04DD7A19"] = "DAMAGER",
-		["Player-4477-039306B7"] = "DAMAGER",
-		["Player-4442-0483262B"] = "NONE",
-		["Player-4477-0567E3E6"] = "DAMAGER",
-		["Player-4465-041B61AD"] = "DAMAGER",
-		["Player-4476-0560B487"] = "NONE",
-		["Player-4465-01487BDF"] = "DAMAGER",
-		["Player-4813-04A837C0"] = "DAMAGER",
-		["Player-4465-0419BFF9"] = "DAMAGER",
-		["Player-4477-045E2D24"] = "DAMAGER",
-		["Player-4701-041C367F"] = "DAMAGER",
-		["Player-4701-04440226"] = "DAMAGER",
-		["Player-4477-052A9286"] = "DAMAGER",
-		["Player-4454-0528E8AA"] = "DAMAGER",
-		["Player-4476-056993FB"] = "DAMAGER",
-		["Player-4476-03A3532F"] = "DAMAGER",
-		["Player-4455-0450F48A"] = "HEALER",
-		["Player-4477-04D95E9A"] = "DAMAGER",
-		["Player-4465-024B8106"] = "DAMAGER",
-		["Player-4701-03A1A8A7"] = "HEALER",
-		["Player-4464-048583AF"] = "HEALER",
-		["Player-4476-04EF7A40"] = "DAMAGER",
-		["Player-4476-052B56FE"] = "DAMAGER",
-		["Player-4465-041DF57A"] = "DAMAGER",
-		["Player-4701-034FB775"] = "DAMAGER",
-		["Player-4465-01612EE6"] = "DAMAGER",
-		["Player-4701-04526AB2"] = "DAMAGER",
-		["Player-4465-04506D61"] = "HEALER",
-		["Player-4476-05274441"] = "HEALER",
-		["Player-4465-03FB544A"] = "HEALER",
-		["Player-4453-050FCC31"] = "DAMAGER",
-		["Player-4455-0522E8F7"] = "DAMAGER",
-		["Player-4465-04353CB6"] = "DAMAGER",
-		["Player-4465-03733AA0"] = "DAMAGER",
-		["Player-4701-0429F7D3"] = "HEALER",
-		["Player-4813-037CBC76"] = "DAMAGER",
-		["Player-4465-041490F2"] = "DAMAGER",
-		["Player-4476-04C23A7F"] = "DAMAGER",
-		["Player-4465-04169280"] = "DAMAGER",
-		["Player-4465-0445FF8C"] = "DAMAGER",
-		["Player-4464-048B059E"] = "DAMAGER",
-		["Player-4454-04BDB82C"] = "HEALER",
-		["Player-4441-04583046"] = "DAMAGER",
-		["Player-4465-0420AA5C"] = "DAMAGER",
-		["Player-4442-04830097"] = "DAMAGER",
-		["Player-4455-011D1B6E"] = "DAMAGER",
-		["Player-4476-05401707"] = "DAMAGER",
-		["Player-4476-05403F22"] = "DAMAGER",
-		["Player-4465-03D4760B"] = "DAMAGER",
-		["Player-4476-05229702"] = "DAMAGER",
-		["Player-4465-041CEC38"] = "DAMAGER",
-		["Player-4476-038F2C91"] = "HEALER",
-		["Player-4465-0489DCF1"] = "DAMAGER",
-		["Player-4476-053365F6"] = "DAMAGER",
-		["Player-4456-050A6CD2"] = "HEALER",
-		["Player-4465-04338D09"] = "DAMAGER",
-		["Player-4477-05229B0E"] = "DAMAGER",
-		["Player-4465-04156195"] = "TANK",
-		["Player-4465-03B6F0C8"] = "DAMAGER",
-		["Player-4476-05033284"] = "DAMAGER",
-		["Player-4454-051CE4AE"] = "DAMAGER",
-		["Player-4465-04155CC6"] = "TANK",
-		["Player-4476-036AFEF4"] = "DAMAGER",
-		["Player-4476-051E25F1"] = "DAMAGER",
-		["Player-4465-0170B386"] = "DAMAGER",
-		["Player-4465-048F1697"] = "NONE",
-		["Player-4477-04789D02"] = "DAMAGER",
-		["Player-4701-0441BE2F"] = "DAMAGER",
-		["Player-4465-02C34E5A"] = "DAMAGER",
-		["Player-4813-043D0093"] = "HEALER",
-		["Player-4701-041CC319"] = "DAMAGER",
-		["Player-4465-03076084"] = "HEALER",
-		["Player-4465-04157D5F"] = "DAMAGER",
-		["Player-4465-04167A83"] = "DAMAGER",
-		["Player-4476-052BDE3A"] = "DAMAGER",
-		["Player-4465-04169BFF"] = "DAMAGER",
-		["Player-4465-02E96C05"] = "DAMAGER",
-		["Player-4465-03B748D7"] = "DAMAGER",
-		["Player-4465-0374EABC"] = "HEALER",
-		["Player-4465-0419A8AA"] = "DAMAGER",
-		["Player-4465-0445A457"] = "DAMAGER",
-		["Player-4465-04169F9B"] = "DAMAGER",
-		["Player-4465-0347473D"] = "DAMAGER",
-		["Player-4465-045ADF43"] = "NONE",
-		["Player-4476-05629088"] = "DAMAGER",
-		["Player-4441-0188B546"] = "DAMAGER",
-		["Player-4465-0108DC36"] = "DAMAGER",
-		["Player-4465-02C30FDE"] = "DAMAGER",
-		["Player-4465-0433EDC0"] = "DAMAGER",
-		["Player-4465-04222B07"] = "HEALER",
-		["Player-4442-04557765"] = "DAMAGER",
-		["Player-4701-045498E2"] = "DAMAGER",
-		["Player-4476-0535A8A1"] = "HEALER",
-		["Player-4701-044B03FD"] = "DAMAGER",
-		["Player-4477-05270EA0"] = "DAMAGER",
-		["Player-4476-052C397B"] = "HEALER",
-		["Player-4464-043A400A"] = "DAMAGER",
-		["Player-4476-051EF7DF"] = "HEALER",
-		["Player-4465-04171F8B"] = "DAMAGER",
-		["Player-4813-05280E98"] = "DAMAGER",
-		["Player-4476-0510A6E9"] = "DAMAGER",
-		["Player-4465-03F83A13"] = "DAMAGER",
-		["Player-4465-04566174"] = "HEALER",
-		["Player-4701-0343CABB"] = "DAMAGER",
-		["Player-4453-052777C8"] = "DAMAGER",
-		["Player-4465-045888C5"] = "HEALER",
-		["Player-4477-04DEE508"] = "DAMAGER",
-		["Player-4465-02C980D0"] = "DAMAGER",
-		["Player-4465-04927F54"] = "DAMAGER",
-		["Player-4465-04552866"] = "DAMAGER",
-		["Player-4465-041ADE53"] = "DAMAGER",
-		["Player-4465-02F97F97"] = "HEALER",
-		["Player-4465-03F619CD"] = "DAMAGER",
-		["Player-4465-0417F0B2"] = "TANK",
-		["Player-4465-011E44D6"] = "HEALER",
-		["Player-4465-02401517"] = "DAMAGER",
-		["Player-4465-041B7FBB"] = "DAMAGER",
-		["Player-4465-04598357"] = "DAMAGER",
-		["Player-4465-04888FE8"] = "NONE",
-		["Player-4456-04DCC303"] = "DAMAGER",
-		["Player-4440-0196E3E0"] = "DAMAGER",
-		["Player-4465-048A319D"] = "DAMAGER",
-		["Player-4467-045BD2F5"] = "DAMAGER",
-		["Player-4465-045D488F"] = "DAMAGER",
-		["Player-4465-02F94030"] = "DAMAGER",
-		["Player-4477-052C09E5"] = "DAMAGER",
-		["Player-4476-052895F1"] = "DAMAGER",
-		["Player-4476-043D9443"] = "HEALER",
-		["Player-4476-051B0296"] = "DAMAGER",
-		["Player-4455-03D2FBF7"] = "DAMAGER",
-		["Player-4476-052CC147"] = "DAMAGER",
-		["Player-4465-00209801"] = "DAMAGER",
-		["Player-4476-05240986"] = "DAMAGER",
-		["Player-4477-0521BD98"] = "HEALER",
-		["Player-4465-0268A9F4"] = "DAMAGER",
-		["Player-4477-0522AB2E"] = "DAMAGER",
-		["Player-4477-04F42090"] = "DAMAGER",
-		["Player-4476-04BD0494"] = "DAMAGER",
-		["Player-4476-05255D53"] = "DAMAGER",
-		["Player-4456-051F7F85"] = "DAMAGER",
-		["Player-4465-04192DCC"] = "DAMAGER",
-		["Player-4465-041D7552"] = "TANK",
-		["Player-4456-014F666C"] = "DAMAGER",
-		["Player-4440-00035182"] = "DAMAGER",
-		["Player-4477-052A2904"] = "DAMAGER",
-		["Player-4477-052BD829"] = "DAMAGER",
-		["Player-4441-029BD82C"] = "DAMAGER",
-		["Player-4476-0562932E"] = "HEALER",
-		["Player-4465-02390641"] = "DAMAGER",
-		["Player-4749-045A0AF9"] = "DAMAGER",
-		["Player-4476-05272CC6"] = "DAMAGER",
-		["Player-4465-02F95356"] = "DAMAGER",
-		["Player-4465-0290D6BC"] = "DAMAGER",
-		["Player-4465-03BA4BD4"] = "DAMAGER",
-		["Player-4456-0192CFD3"] = "DAMAGER",
-		["Player-4465-0418373F"] = "DAMAGER",
-		["Player-4465-00E5831F"] = "DAMAGER",
-		["Player-4441-040D8FB6"] = "DAMAGER",
-		["Player-4678-052C87C8"] = "DAMAGER",
-		["Player-4456-04E08346"] = "DAMAGER",
-		["Player-4464-045EA14C"] = "DAMAGER",
-		["Player-4465-021AC09F"] = "DAMAGER",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
 	},

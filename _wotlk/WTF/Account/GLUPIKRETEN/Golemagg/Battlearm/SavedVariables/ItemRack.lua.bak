@@ -1,6 +1,6 @@
 
 ItemRackUser = {
-	["Alpha"] = 1,
+	["SetMenuWrap"] = "OFF",
 	["Queues"] = {
 		[13] = {
 			"41589::::::::74:::::::::", -- [1]
@@ -24,13 +24,11 @@ ItemRackUser = {
 			["Left"] = 815.651123046875,
 		},
 		[14] = {
-			["DockTo"] = 13,
 			["Side"] = "LEFT",
+			["DockTo"] = 13,
 		},
 	},
-	["Hidden"] = {
-		0, -- [1]
-	},
+	["EnableQueues"] = "ON",
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
@@ -41,12 +39,12 @@ ItemRackUser = {
 			},
 		},
 	},
-	["EnableQueues"] = "ON",
-	["MainScale"] = 1,
+	["Alpha"] = 1,
+	["EnableEvents"] = "ON",
+	["ItemsUsed"] = {
+	},
 	["QueuesEnabled"] = {
 		[13] = false,
-	},
-	["ItemsUsed"] = {
 	},
 	["Events"] = {
 		["Enabled"] = {
@@ -56,7 +54,9 @@ ItemRackUser = {
 	},
 	["ButtonSpacing"] = 4,
 	["Locked"] = "OFF",
-	["EnableEvents"] = "ON",
+	["MainScale"] = 1,
 	["MenuScale"] = 1.200000047683716,
-	["SetMenuWrap"] = "OFF",
+	["Hidden"] = {
+		0, -- [1]
+	},
 }

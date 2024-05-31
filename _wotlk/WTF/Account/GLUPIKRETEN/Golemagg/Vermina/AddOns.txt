@@ -203,3 +203,7 @@ LibDetours-1.0: enabled
 LibClassicInspector: enabled
 LibClassicGearScore: enabled
 Immersion_ExtraFade: enabled
+Blizzard_CombatText: enabled
+LittleWigs_Cataclysm: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled

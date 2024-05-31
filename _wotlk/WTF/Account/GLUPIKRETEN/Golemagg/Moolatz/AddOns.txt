@@ -222,3 +222,7 @@ Bagnon_ItemLevel_Vermin: disabled
 unitscan: disabled
 Drift: disabled
 Immersion_ExtraFade: enabled
+Blizzard_CombatText: enabled
+LittleWigs_Cataclysm: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled

@@ -243,3 +243,11 @@ Bagnon_ItemLevel_Vermin: disabled
 Drift: disabled
 Immersion: enabled
 Immersion_ExtraFade: enabled
+Blizzard_CombatText: enabled
+LittleWigs_Cataclysm: disabled
+LittleWigs_WrathOfTheLichKing: disabled
+LittleWigs_Classic: disabled
+LittleWigs_BurningCrusade: disabled
+LittleWigs: disabled
+BigWigs_Cataclysm: disabled
+BigWigs_WrathOfTheLichKing: disabled
