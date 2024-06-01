@@ -12,13 +12,19 @@ function CataObjectFixes.Load()
     local zoneIDs = ZoneDB.zoneIDs
 
     return {
-        [7510] = { --Sprouted Frond
+        [7510] = { -- Sprouted Frond
             [objectKeys.spawns] = {[zoneIDs.TELDRASSIL] = {{43.91,43.99},{43.93,44.04},{43.95,44.08},{59.88,59.89},{59.84,59.86},{59.81,59.84}}},
         },
         [126158] = { -- Tallonkai's Dresser
             [objectKeys.spawns] = {
-                [zoneIDs.TELDRASSIL] = {{66.1,52}}
-            }
+                [zoneIDs.TELDRASSIL] = {{66.1,52}},
+            },
+        },
+        [144052] = { -- Sandsorrow Watch Water Hole
+            [objectKeys.name] = "Sandsorrow Watch Water Hole",
+        },
+        [181781] = { -- Axxarien Crystal
+            [objectKeys.name] = "Axxarien Crystal",
         },
         [194102] = { -- Shatterspear Armaments
             [objectKeys.spawns] = {[141]={{90.96,99.06},{87.07,99.87},{91.69,98.44}},[148]={{62.81,7.27},{62.38,7.8},{63.28,10.48},{61.29,10.61},{61.2,7.71},{63.53,8.07},{63.21,8.92},{61.96,8.94},{61.52,9.23},{61.38,9.81},{62.9,10.82},{62.76,11.37},{62.06,11.44},{62.2,8.98},{61.66,9.22},{63.08,9.56},{62.78,9.64},{61.94,9.95},{61.89,11.07}}},
@@ -42,6 +48,9 @@ function CataObjectFixes.Load()
             [objectKeys.name] = "Portal Rune",
             [objectKeys.spawns] = {[zoneIDs.MOUNT_HYJAL]={{31.64,46.03},{32.03,45.79},{31.68,46.61},{32.36,46.16},{31.92,46.92}}},
             [objectKeys.zoneID] = zoneIDs.MOUNT_HYJAL,
+        },
+        [203461] = { -- Fuel Sampling Station
+            [objectKeys.spawns] = {[zoneIDs.ABYSSAL_DEPTHS]={{51.49,60.41},{55.8,72.5}}}
         },
         [204281] = { -- Worm Mound
             [objectKeys.spawns] = {[1519]={{49.24,18.03},{52.53,14.86},{64.01,16.59},{63.39,5.73},{64.93,8.47},{56.45,22.58},{55.73,16.51},{53.73,19.56},{60.51,6.85},{58.05,10.49},{62.12,17.65},{59.07,20.64}}},
@@ -113,6 +122,11 @@ function CataObjectFixes.Load()
         },
         [460001] = {
             [objectKeys.name] = "Fossil Archaeology Object",
+        },
+        [460002] = {
+            [objectKeys.name] = "Makeshift Cage",
+            [objectKeys.zoneID] = zoneIDs.DUN_MOROGH,
+            [objectKeys.spawns] = {[zoneIDs.DUN_MOROGH] = {{37.43,51.86},{37.4,50.15},{33.18,53.23},{31.99,48.64},{34.11,53.54},{36.81,51.81},{34.89,51.89},{34.4,52.17},{33.66,52.11},{33.36,51.43},{36.77,50.89},{32.83,49.93},{33.42,50.07},{36.03,51.78},{34.56,50.42},{35.59,50.61},{36.31,50.26}}},
         },
     }
 end

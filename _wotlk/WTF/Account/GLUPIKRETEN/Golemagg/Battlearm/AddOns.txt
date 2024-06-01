@@ -176,7 +176,7 @@ Gladdy: enabled
 NovaWorldBuffs: disabled
 Masque: enabled
 AceBIS: disabled
-Bistooltip: disabled
+Bistooltip: enabled
 AskMrRobotClassic: disabled
 ClickLinks: enabled
 Details_Compare2: enabled
@@ -188,7 +188,7 @@ Details_Vanguard: enabled
 FarmHud_TrailPath: enabled
 LibGetEnchant-1.0: enabled
 LibRangeCheck-2.0: enabled
-LoonBestInSlot: enabled
+LoonBestInSlot: disabled
 Masque_Brownstone: enabled
 NugKeyFeedback: enabled
 QuestReward: enabled

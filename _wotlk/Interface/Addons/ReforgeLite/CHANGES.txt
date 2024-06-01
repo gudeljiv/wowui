@@ -1,88 +1,10 @@
-tag 1896945fad6d3ea7128a9b022f7b93014cbbe10a v1.4
+tag 6224841e792d75cf4025b155787eff45f7cbeb02 v1.4.2
 Author:	skyler-code <skylerh15@github.com>
-Date:	Fri May 31 01:15:45 2024 -0500
+Date:	Fri May 31 19:23:45 2024 -0500
 
-commit ee4bedcc6f28f87301fcf1f1825afa3a815b1db0
+commit 3e16273ce151c37be0db20e19f5c8530ae51c346
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 31 01:13:01 2024 -0500
+Date:   Fri May 31 19:20:25 2024 -0500
 
-    Finally fixed spirit detection
-
-commit c6fa24dd098b0e00f42f5fae749315be4d4991a9
-Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 31 00:03:30 2024 -0500
-
-    duplicate declaration
-
-commit 246e5805fd84d2d08890ed10c70da6074c162736
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 23:42:28 2024 -0500
-
-    reverting https://github.com/skyler-code/ReforgeLite/commit/98e31c4163e5ee2415c1456e351e1862ebdc2b2b
-
-commit 2f80cf18f49cb23cb52ed956074c9bcedf5e5592
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 15:58:25 2024 -0500
-
-    some cleanup
-
-commit 4f4afa716cdf9079d1649bdeff14aab772a7c511
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 15:58:15 2024 -0500
-
-    Can now drag items from Output window to Reforge Window
-
-commit aec2e0b051d2f5201ad814e9d23fd736e487e1be
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 15:57:29 2024 -0500
-
-    removing magic numbers for UnitStat
-
-commit bfa31f7d435937172404091d29bc456d557aea92
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 14:07:05 2024 -0500
-
-    enhance preset
-
-commit b861a4a5b35a80412e6f47793222b4b1e755e029
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 13:08:33 2024 -0500
-
-    lock presets
-
-commit e1282a39ed4f7c83b08145d26e1e9e6cffe68ff0
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 12:57:01 2024 -0500
-
-    hpal preset
-
-commit db921ac5e2d59b9b2c673ec0857b33b22aea4fb0
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 12:44:11 2024 -0500
-
-    frost mage preset lol
-
-commit 674bafcc5256596a6ef69f3e0e9c6cae9c1f0aba
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 12:35:52 2024 -0500
-
-    fire preset
-
-commit 85db5e434b44ce9bb3299618ca93bce5d957d62f
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 12:24:48 2024 -0500
-
-    arcane weights
-
-commit dab1db1f2c1084a4162bbb0424acd4c9483c8ece
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 11:02:57 2024 -0500
-
-    updated arms preset
-
-commit b1ace8521ff6998fa1673f6721cb022ece10ad7a
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu May 30 11:02:36 2024 -0500
-
-    cleaned up whatever this was
+    For the absolute fucking dweebs in mage discord. These accomplish the exact same thing
 

@@ -1285,8 +1285,8 @@ function ReforgeLite:CreateOptionList ()
   self.convertSpirit.text:SetPoint ("LEFT", self.pawnButton, "RIGHT", 8, 0)
   self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": 0%")
   self.convertSpirit.text:Hide ()
-  
-  if ReforgeLite.tankingStats[playerClass] then
+
+  if playerClass == "PALADIN" or playerClass == "WARRIOR" or playerClass == "DEATHKNIGHT" then
     self.tankingModel = GUI:CreateCheckButton (self.content, STAT_AVOIDANCE .. " " ..PARENS_TEMPLATE:format(localeClass),
         self.pdb.tankingModel, function (val)
       self.pdb.tankingModel = val
@@ -1828,20 +1828,8 @@ function GetReforgeIdForInventorySlot(slotId)
     return SearchTooltipForReforgeID(reforgeIdTooltip)
 end
 
-local reforgeIdCache = setmetatable({}, {
-  __index = function(self, key)
-    local reforgeId = GetReforgeIdForInventorySlot(key)
-    rawset(self, key, reforgeId)
-    return reforgeId
-  end
-})
-
-function ReforgeLite:PLAYER_EQUIPMENT_CHANGED(slotId)
-  rawset(reforgeIdCache, slotId, nil)
-end
-
 function ReforgeLite:GetReforgeID (slotId)
-  local reforgeId = reforgeIdCache[slotId]
+  local reforgeId = GetReforgeIdForInventorySlot(slotId)
   if reforgeId and reforgeId > UNFORGE_INDEX then
     return reforgeId
   end
@@ -2260,7 +2248,6 @@ function ReforgeLite:DoReforgeUpdate ()
           end
           if srcstat == self.pdb.method.items[self.curReforgeItem].src and dststat == self.pdb.method.items[self.curReforgeItem].dst then
             self.reforgeSent = true
-            rawset(reforgeIdCache, self.reforgingNow, nil)
             C_Reforge.ReforgeItem (id)
             return
           end
@@ -2268,7 +2255,6 @@ function ReforgeLite:DoReforgeUpdate ()
         self:StopReforging()
       elseif self:GetReforgeID(self.reforgingNow) then
         self.reforgeSent = true
-        rawset(reforgeIdCache, self.reforgingNow, nil)
         C_Reforge.ReforgeItem (UNFORGE_INDEX)
       end
       return
@@ -2329,11 +2315,7 @@ end
 --------------------------------------------------------------------------
 
 function ReforgeLite:FORGE_MASTER_ITEM_CHANGED()
-  if self.reforgeSent then
-    self.reforgeSent = nil
-  else -- panic cause user is changing forges on their own
-    wipe(reforgeIdCache)
-  end
+  self.reforgeSent = nil
   self:UpdateItems ()
 end
 

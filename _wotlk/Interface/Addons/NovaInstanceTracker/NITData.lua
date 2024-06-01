@@ -2229,6 +2229,9 @@ function NIT:recordQuests()
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 	local sharedQuests = {};
+	if (not NIT.data.myChars[char].questsDaily) then
+		NIT.data.myChars[char].questsDaily = {};
+	end
 	for k, v in pairs(dailyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
 			local questName = v.name;
