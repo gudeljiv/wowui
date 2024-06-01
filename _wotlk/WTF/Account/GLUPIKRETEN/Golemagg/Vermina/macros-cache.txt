@@ -1,7 +1,8 @@
-VER 3 0000000001000015 " " "134400"
-#showtooltip 
-/startattack
-/cast [@mouseover, harm, nodead][] Avenger's Shield
+VER 3 0000000001000016 " " "134400"
+#showtooltip Divine Light
+/cast Divine Favor
+/cast Divine Illumination
+/cast [@mouseover, help, nodead][] Divine Light
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -56,9 +57,8 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Word Of Glory
 /cast [@mouseover, help, nodead][] Word Of Glory
 END
-VER 3 0000000001000016 " " "134400"
-#showtooltip Divine Light
-/cast Divine Favor
-/cast Divine Illumination
-/cast [@mouseover, help, nodead][] Divine Light
+VER 3 0000000001000015 " " "134400"
+#showtooltip 
+/startattack
+/cast [@mouseover, harm, nodead][] Avenger's Shield
 END

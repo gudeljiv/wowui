@@ -41,29 +41,29 @@ GMMONEY = {
 			["GOLD"] = 1141650,
 			["CLASS"] = "PALADIN",
 		},
-		["Augustin"] = {
-			["GOLD"] = 6713,
-			["CLASS"] = "MAGE",
+		["Tadibey"] = {
+			["GOLD"] = 3000,
+			["CLASS"] = "SHAMAN",
 		},
 		["Moolatz"] = {
 			["GOLD"] = 8133626,
 			["CLASS"] = "DRUID",
 		},
-		["Tadibey"] = {
-			["GOLD"] = 3000,
-			["CLASS"] = "SHAMAN",
+		["Augustin"] = {
+			["GOLD"] = 6713,
+			["CLASS"] = "MAGE",
 		},
-		["Vermina"] = {
-			["GOLD"] = 38438174,
-			["CLASS"] = "PALADIN",
+		["Battitude"] = {
+			["GOLD"] = 8197,
+			["CLASS"] = "ROGUE",
 		},
 		["Miqa"] = {
 			["GOLD"] = 5456489,
 			["CLASS"] = "PRIEST",
 		},
-		["Battitude"] = {
-			["GOLD"] = 8197,
-			["CLASS"] = "ROGUE",
+		["Vermina"] = {
+			["GOLD"] = 37903340,
+			["CLASS"] = "PALADIN",
 		},
 		["Vermin"] = {
 			["GOLD"] = 19680478,
