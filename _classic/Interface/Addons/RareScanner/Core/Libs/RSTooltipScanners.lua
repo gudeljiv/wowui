@@ -41,7 +41,7 @@ function RSTooltipScanners.ScanNpcName(npcID, callback, secondTry)
 		local name, _ = _G[tipName .. 'TextLeft1']:GetText(), _G[tipName ..'TextLeft2']:GetText()
 		if (name) then
 			--Cannot use RSNpcDB.SetNpcName(self.npcID, name), cyclic import!
-			private.dbglobal.rare_names[GetLocale()][npcID] = name
+			private.dbglobal.rare_names[GetLocale()][tonumber(npcID)] = name
 			if (callback) then
 				callback(name)
 			end
@@ -51,7 +51,7 @@ function RSTooltipScanners.ScanNpcName(npcID, callback, secondTry)
 	end)
 	tip:SetHyperlink('unit:Creature-0-0-0-0-' .. npcID .. '-0')
 	
-	if (not private.dbglobal.rare_names[GetLocale()][npcID] and not secondTry) then
+	if (not private.dbglobal.rare_names[GetLocale()][tonumber(npcID)] and not secondTry) then
 		C_Timer.After(1, function()
 			RSTooltipScanners.ScanNpcName(npcID, callback, true)
 		end)

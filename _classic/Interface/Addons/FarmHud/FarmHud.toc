@@ -1,6 +1,6 @@
 ## Interface: 100207
 ## Title: FarmHud
-## Version: 9.2.10-release
+## Version: 9.2.12-releaes
 ## Notes: Turns your minimap into a hud for gathering resources!
 ## IconTexture: 134215
 ## Author: Hizuro, CodeRedLin

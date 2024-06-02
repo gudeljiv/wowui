@@ -74,6 +74,10 @@ function RSCommandLine.SlashCommand(command, ...)
 							RSLogger:PrintMessage(value)
 						end
 					end
+					
+					-- Refresh the options panel
+					private.refreshCustomNpcs = true
+					LibStub("AceConfigRegistry-3.0"):NotifyChange("RareScanner Custom NPCs")
 				end
 			end)
 		end

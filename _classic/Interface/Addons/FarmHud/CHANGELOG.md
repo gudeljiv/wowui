@@ -1,6 +1,6 @@
 # FarmHud
 
-## [9.2.10-release](https://github.com/HizurosWoWAddOns/FarmHud/tree/9.2.10-release) (2024-05-10)
-[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/9.2.10-release) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
+## [9.2.12-releaes](https://github.com/HizurosWoWAddOns/FarmHud/tree/9.2.12-releaes) (2024-06-01)
+[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/9.2.12-releaes) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
 
-- Minor changes  
+- Update github workflow script  

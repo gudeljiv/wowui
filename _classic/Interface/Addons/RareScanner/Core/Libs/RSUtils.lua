@@ -212,10 +212,14 @@ end
 function RSUtils.FixCoord(coord)
 	if (RSUtils.Contains(tostring(coord), "0.")) then
 		coord = RSUtils.Rpad(tostring(coord):gsub('(0%.)',''), 4, '0')
+	else
+		coord = RSUtils.Lpad(coord, 4, '0')
 	end
 	
-	if (tonumber(strsub(coord, 1, 2)) == 0) then
-		return tonumber(string.format("0.%s00", strsub(coord, 3)));
+	if (tonumber(strsub(coord, 1, 3)) == 0) then
+		return tonumber(string.format("0.00%s", strsub(coord, 3)));
+	elseif (tonumber(strsub(coord, 1, 2)) == 0) then
+		return tonumber(string.format("0.0%s", strsub(coord, 2)));
 	else
 		return tonumber(string.format("0.%s", coord));
 	end

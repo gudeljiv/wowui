@@ -1,10 +1,10 @@
-tag 6224841e792d75cf4025b155787eff45f7cbeb02 v1.4.2
+tag 0d33838fc7c0e4274bb61ca52a619e21598be944 v1.4.3
 Author:	skyler-code <skylerh15@github.com>
-Date:	Fri May 31 19:23:45 2024 -0500
+Date:	Sat Jun 1 12:41:41 2024 -0500
 
-commit 3e16273ce151c37be0db20e19f5c8530ae51c346
+commit 7073fa4a4ce6ebf331be8f35ed8ae69286d911a7
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri May 31 19:20:25 2024 -0500
+Date:   Sat Jun 1 12:41:18 2024 -0500
 
-    For the absolute fucking dweebs in mage discord. These accomplish the exact same thing
+    mage presets updated once more
 

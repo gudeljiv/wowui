@@ -129,6 +129,7 @@ do -- 013088, 0070E0
 		{"curseforge","sanxy00"},		{"zhCN",4},false,false,false,
 		{"curseforge","雪夜霜刀"},		{"zhCN",4},false,false,false,
 		{"curseforge","半熟魷魚"},		{"zhTW",4},false,false,false,
+		{"curseforge","spridar"},		{"zhTW",4},false,false,false,
 
 		{"curseforge","Lightuky"},		{"frFR",5},false,false,false,
 		{"curseforge","TomasRipley"},	{"ruRU",5},false,false,false,
