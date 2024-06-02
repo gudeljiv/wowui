@@ -181,7 +181,7 @@ TacoTip: enabled
 GlobalIgnoreList: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled

@@ -41,7 +41,7 @@ AdiBags-ItemRackSets: enabled
 AdiBags_Config: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: enabled
@@ -59,3 +59,4 @@ LittleWigs_Cataclysm: disabled
 BigWigs: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_WrathOfTheLichKing: disabled
+TomTom: enabled

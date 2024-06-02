@@ -45,7 +45,7 @@ AdiBags_Config: enabled
 AdiBags-ItemRackSets: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: enabled
@@ -53,7 +53,7 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
-TomTom: disabled
+TomTom: enabled
 Immersion: enabled
 Immersion_ExtraFade: enabled
 BigWigs_Core: disabled

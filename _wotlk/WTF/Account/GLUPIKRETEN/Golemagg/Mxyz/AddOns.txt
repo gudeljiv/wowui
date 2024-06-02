@@ -198,7 +198,7 @@ TacoTip: enabled
 GlobalIgnoreList: enabled
 GatherMate2_GasClouds: disabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 unitscan: disabled
 Drift: disabled

@@ -225,7 +225,7 @@ SavedInstances: disabled
 GlobalIgnoreList: enabled
 ijaht: disabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 Bagnon_Masque: disabled
 SortBags: enabled
 LibStub: enabled
