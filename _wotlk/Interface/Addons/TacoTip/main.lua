@@ -1,13 +1,13 @@
 
 local addOnName = ...
-local addOnVersion = GetAddOnMetadata(addOnName, "Version") or "0.5.2"
+local addOnVersion = GetAddOnMetadata(addOnName, "Version") or "0.0.1"
 
 local clientVersionString = GetBuildInfo()
 local clientBuildMajor = string.byte(clientVersionString, 1)
 -- load only on classic/tbc/wotlk
---if (clientBuildMajor < 49 or clientBuildMajor > 51 or string.byte(clientVersionString, 2) ~= 46) then
---    return
---end
+-- if (clientBuildMajor < 49 or clientBuildMajor > 51 or string.byte(clientVersionString, 2) ~= 46) then
+--     return
+-- end
 assert(LibStub, "TacoTip requires LibStub")
 assert(LibStub:GetLibrary("LibClassicInspector", true), "TacoTip requires LibClassicInspector")
 assert(LibStub:GetLibrary("LibDetours-1.0", true), "TacoTip requires LibDetours-1.0")
@@ -44,8 +44,6 @@ function TacoTip_GSCallback(guid)
 end
 
 GameTooltip:HookScript("OnTooltipSetUnit", function(self)
-	if TacoTipConfig.hide_in_combat and InCombatLockdown() then return end
-
     local name, unit = self:GetUnit()
     if (not unit) then 
         return
@@ -229,51 +227,30 @@ GameTooltip:HookScript("OnTooltipSetUnit", function(self)
                     end
                 end
             end
-			if (TacoTipConfig.show_avg_ilvl or TacoTipConfig.show_gear_score) then
+            local miniText = ""
+            if (TacoTipConfig.show_gs_player) then
                 local gearscore, avg_ilvl = GearScore:GetScore(guid, true)
                 if (gearscore > 0) then
-					local r, g, b = GearScore:GetQuality(gearscore)
-					if TacoTipConfig.show_gear_score then
-						if (wide_style) then
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFGearScore:|r "..gearscore, "|cFFFFFFFF(iLvl:|r "..avg_ilvl.."|cFFFFFFFF)|r", r, g, b, r, g, b})
-							else
-								tinsert(linesToAdd, {"GearScore: "..gearscore, "iLvl: "..avg_ilvl, r, g, b, r, g, b})
-							end
-						elseif (mini_style) then
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFGS:|r "..gearscore.."|cFFFFFFFFL:|r "..avg_ilvl.."|cFFFFFFFF)|r", r, g, b})
-							else
-								tinsert(linesToAdd, {"GS: "..gearscore.."  iLvl: "..avg_ilvl, r, g, b})
-							end
-						else
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFGearScore:|r "..gearscore, r, g, b})
-							else
-								tinsert(linesToAdd, {"GearScore: "..gearscore, r, g, b})
-							end
-						end
-					else
-						if (wide_style) then
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFItem Level:|r "..avg_ilvl, "|cFFFFFFFF)|r", r, g, b, r, g, b})
-							else
-								tinsert(linesToAdd, {"Item Level: "..avg_ilvl, "", r, g, b, r, g, b})
-							end
-						elseif (mini_style) then
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFL:|r "..avg_ilvl.."|cFFFFFFFF)|r", r, g, b})
-							else
-								tinsert(linesToAdd, {"iLvl: "..avg_ilvl, r, g, b})
-							end
-						else
-							if (r == b and r == g) then
-								tinsert(linesToAdd, {"|cFFFFFFFFItem Level:|r "..avg_ilvl, r, g, b})
-							else
-								tinsert(linesToAdd, {"Item Level: "..avg_ilvl, r, g, b})
-							end
-						end
-					end
+                    local r, g, b = GearScore:GetQuality(gearscore)
+                    if (wide_style) then
+                        if (r == b and r == g) then
+                            tinsert(linesToAdd, {"|cFFFFFFFFGearScore:|r "..gearscore, "|cFFFFFFFF(iLvl:|r "..avg_ilvl.."|cFFFFFFFF)|r", r, g, b, r, g, b})
+                        else
+                            tinsert(linesToAdd, {"GearScore: "..gearscore, "(iLvl: "..avg_ilvl..")", r, g, b, r, g, b})
+                        end
+                    elseif (mini_style) then
+                        if (r == b and r == g) then
+                            miniText = string.format("GS: |cFF%02x%02x%02x%s|r  L: |cFF%02x%02x%02x%s|r  ", r*255, g*255, b*255, gearscore, r*255, g*255, b*255, avg_ilvl)
+                        else
+                            miniText = string.format("|cFF%02x%02x%02xGS: %s  L: %s|r  ", r*255, g*255, b*255, gearscore, avg_ilvl)
+                        end
+                    else
+                        if (r == b and r == g) then
+                            tinsert(linesToAdd, {"|cFFFFFFFFGearScore:|r "..gearscore, r, g, b})
+                        else
+                            tinsert(linesToAdd, {"GearScore: "..gearscore, r, g, b})
+                        end
+                    end
                 end
             end
             if (isPawnLoaded and TacoTipConfig.show_pawn_player) then
@@ -282,11 +259,14 @@ GameTooltip:HookScript("OnTooltipSetUnit", function(self)
                     if (wide_style) then
                         tinsert(linesToAdd, {string.format("Pawn: %s%.2f|r", specColor, pawnScore), string.format("%s(%s)|r", specColor, specName), 1, 1, 1, 1, 1, 1})
                     elseif (mini_style) then
-						tinsert(linesToAdd, {string.format("P: %s%.1f|r", specColor, pawnScore), "", 1, 1, 1, 1, 1, 1})
+                        miniText = miniText .. string.format("P: %s%.1f|r", specColor, pawnScore)
                     else
                         tinsert(linesToAdd, {string.format("Pawn: %s%.2f (%s)|r", specColor, pawnScore, specName), 1, 1, 1})
                     end
                 end
+            end
+            if (miniText ~= "") then
+                tinsert(linesToAdd, {miniText, 1, 1, 1})
             end
             if (CI:IsWotlk() and TacoTipConfig.show_achievement_points) then
                 local achi_pts = CI:GetTotalAchievementPoints(guid)
@@ -410,8 +390,6 @@ GameTooltip:HookScript("OnTooltipSetUnit", function(self)
 end)
 
 local function itemToolTipHook(self)
-	if TacoTipConfig.hide_in_combat and InCombatLockdown() then return end
-
     local _, itemLink = self:GetItem()
     if (itemLink and IsEquippableItem(itemLink)) then
         if (TacoTipConfig.show_item_level) then
@@ -420,7 +398,7 @@ local function itemToolTipHook(self)
                 self:AddLine(L["Item Level"].." "..ilvl, 1, 1, 1)
             end
         end
-        if (TacoTipConfig.show_gear_score and TacoTipConfig.show_gs_items) then
+        if (TacoTipConfig.show_gs_items) then
             local gs, _, r, g, b = GearScore:GetItemScore(itemLink)
             if (gs and gs > 1) then
                 self:AddLine("GearScore: "..gs, r, g, b)
@@ -562,18 +540,16 @@ function TT:InitCharacterFrame()
 end
 
 function TT:RefreshCharacterFrame()
-	if TacoTipConfig.hide_in_combat and InCombatLockdown() then return end
-
     if (TT.InitCharacterFrame) then
         TT:InitCharacterFrame()
         TT.InitCharacterFrame = nil
     end
     local MyGearScore, MyAverageScore, r, g, b = 0,0,0,0,0
-	if (TacoTipConfig.show_avg_ilvl or (TacoTipConfig.show_gear_score and TacoTipConfig.show_gs_character)) then
+    if (TacoTipConfig.show_gs_character or TacoTipConfig.show_avg_ilvl) then
         MyGearScore, MyAverageScore = GearScore:GetScore("player")
         r, g, b = GearScore:GetQuality(MyGearScore)
     end
-	if (TacoTipConfig.show_gear_score and TacoTipConfig.show_gs_character) then
+    if (TacoTipConfig.show_gs_character) then
         PersonalGearScore:SetText(MyGearScore);
         PersonalGearScore:SetTextColor(r, g, b, 1)
         PersonalGearScore:Show()
@@ -667,8 +643,9 @@ function TT:InitInspectFrame()
 end
 
 function TT:RefreshInspectFrame()
-	if TacoTipConfig.hide_in_combat and InCombatLockdown() then return end
-	
+    if (InCombatLockdown()) then
+        return
+    end
     if (TT.InitInspectFrame) then
         if (not InspectModelFrame or not InspectPaperDollFrame) then
             return
@@ -681,7 +658,7 @@ function TT:RefreshInspectFrame()
         inspect_gs, inspect_avg = GearScore:GetScore(InspectFrame.unit)
         r, g, b = GearScore:GetQuality(inspect_gs)
     end
-	if (TacoTipConfig.show_gear_score and TacoTipConfig.show_gs_character) then
+    if (TacoTipConfig.show_gs_character) then
         InspectGearScore:SetText(inspect_gs);
         InspectGearScore:SetTextColor(r, g, b, 1)
         InspectGearScore:Show()

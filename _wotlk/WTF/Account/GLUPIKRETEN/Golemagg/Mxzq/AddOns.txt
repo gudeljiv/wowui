@@ -207,7 +207,7 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 Drift: disabled
 Immersion_ExtraFade: enabled

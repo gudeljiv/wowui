@@ -8,29 +8,29 @@ Details_StreamerDB = {
 		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Greshnik - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battitude - Golemagg"] = "Mxyz - Golemagg",
-		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
-		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
-		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
-		["Provokator - Jin'do"] = "Mxyz - Golemagg",
-		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
-		["Wells - Jin'do"] = "Mxyz - Golemagg",
-		["Tudum - Jin'do"] = "Mxyz - Golemagg",
-		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Vermin - Golemagg"] = "Mxyz - Golemagg",
-		["Asjrdfsad - Golemagg"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
-		["Augustin - Golemagg"] = "Mxyz - Golemagg",
+		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
+		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
+		["Wells - Jin'do"] = "Mxyz - Golemagg",
 		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
-		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
+		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
+		["Asjrdfsad - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
+		["Augustin - Golemagg"] = "Mxyz - Golemagg",
+		["Tudum - Jin'do"] = "Mxyz - Golemagg",
+		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
+		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Mxyz - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
-		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Provokator - Jin'do"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
+		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
+		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
@@ -49,11 +49,11 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["use_square_mode"] = false,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -61,10 +61,10 @@ Details_StreamerDB = {
 			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["arrow_anchor_y"] = 0,
+			["author"] = "Details! Team",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["use_spark"] = false,
+			["font_size"] = 10,
 			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
@@ -77,7 +77,12 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
@@ -90,19 +95,14 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["scale"] = 1,
-			["row_height"] = 18,
+			["use_square_mode"] = false,
 			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
 	},
 }

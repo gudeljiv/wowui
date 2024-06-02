@@ -9,8 +9,8 @@ IEF_Config = {
 	["keepCustomFrames"] = false,
 	["hideFrameRateCinematic"] = true,
 	["hideFrameRate"] = true,
-	["keepTrackingBar"] = true,
+	["keepPartyRaidFrame"] = false,
 	["keepAlertFrames"] = true,
 	["hideNpcPortrait"] = false,
-	["keepPartyRaidFrame"] = false,
+	["keepTrackingBar"] = true,
 }

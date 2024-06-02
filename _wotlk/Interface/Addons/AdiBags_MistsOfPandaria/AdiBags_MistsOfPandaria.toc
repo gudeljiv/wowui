@@ -1,0 +1,17 @@
+## Interface: 100206
+## Title: AdiBags - Mists Of Pandaria
+## Version: 1.0.7
+## Author: Zottelchen
+## Notes: Items from the Mists Of Pandaria expansion.
+## IconTexture: Interface\AddOns\AdiBags_MistsOfPandaria\icon
+## Dependencies: AdiBags
+## X-Date: 2024-03-25T15:46:07Z
+## X-Revision: 20
+## X-Category: Bags & Inventory
+## X-Curse-Project-ID: 881487
+## 
+## X-Wago-ID: EGPXejG1
+
+Localization.lua
+AdiBags_MistsOfPandaria.lua
+

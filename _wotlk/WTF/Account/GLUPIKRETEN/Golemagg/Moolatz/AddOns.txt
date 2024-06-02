@@ -205,7 +205,7 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 SortBags: enabled
 LibStub: enabled
 CallbackHandler-1.0: enabled

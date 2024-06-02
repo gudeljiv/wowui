@@ -192,7 +192,7 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
-Myslot: disabled
+Myslot: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBags: enabled
 unitscan: disabled

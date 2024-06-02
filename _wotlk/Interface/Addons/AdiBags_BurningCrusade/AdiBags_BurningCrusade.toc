@@ -1,0 +1,17 @@
+## Interface: 100206
+## Title: AdiBags - Burning Crusade
+## Version: 1.0.7
+## Author: Zottelchen
+## Notes: Items from the Burning Crusade expansion.
+## IconTexture: Interface\AddOns\AdiBags_BurningCrusade\icon
+## Dependencies: AdiBags
+## X-Date: 2024-03-25T15:44:48Z
+## X-Revision: 23
+## X-Category: Bags & Inventory
+## X-Curse-Project-ID: 881468
+## X-WoWI-ID: 26599
+## X-Wago-ID: bGoMyk60
+
+Localization.lua
+AdiBags_BurningCrusade.lua
+
