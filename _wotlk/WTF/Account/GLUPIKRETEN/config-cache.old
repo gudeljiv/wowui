@@ -1,4 +1,4 @@
-SET cameraDistanceMaxZoomFactor "2"
+SET cameraDistanceMaxZoomFactor "4"
 SET cameraZoomSpeed "50"
 SET statusTextDisplay "BOTH"
 SET VoicePushToTalkKeybind "'"
