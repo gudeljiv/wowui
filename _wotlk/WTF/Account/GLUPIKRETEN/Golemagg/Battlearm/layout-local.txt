@@ -62,13 +62,6 @@ X: -48
 Y: -196
 W: 210
 H: 339
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOP
-X: 25
-Y: -116
-W: 338
-H: 424
 Frame: SpellBookFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -181,6 +174,13 @@ X: 25
 Y: -92
 W: 1024
 H: 740
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: LootFrame
 FrameLevel: 10
 Anchor: CENTER

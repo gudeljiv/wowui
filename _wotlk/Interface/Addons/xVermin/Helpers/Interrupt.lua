@@ -51,7 +51,7 @@ local HandleUnit = function(unit)
 			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-			if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
+			if (bear or cat) and select(2, GetSpellCooldown('Skull Bash')) == 0 and CheckInteractDistance(unit, 3) then
 				HandleRotationFrame(true)
 			end
 		-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then

@@ -102,6 +102,7 @@ data = {
             {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
             {"name": "pulverize", "type": "GetSpellTexture", "id": 80313, "key": "5"},
             {"name": "thrash", "type": "GetSpellTexture", "id": 77758, "key": "3"},
+            {"name": "bash", "type": "GetSpellTexture", "id": 5211, "key": "7"},
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
