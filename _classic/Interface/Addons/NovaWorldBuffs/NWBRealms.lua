@@ -6,10 +6,13 @@ local addonName, addon = ...;
 local NWB = addon.a;
 --A list of layered realms, split up between classic era and TBC.
 function NWB:setRealmData()
-	if (NWB.isTBC or NWB.isWrath) then --This needs changing to isTBC after tbc launches.
+	if (NWB.expansionNum > 1) then
 		NWB.usRealms = {
+			--OCE.
 			["Arugal"] = true,
+			["Remulos"] = true,
 			["Yojamba"] = true,
+			--US.
 			["Benediction"] = true,
 			["Earthfury"] = true,
 			["Faerlina"] = true,
@@ -22,7 +25,6 @@ function NWB:setRealmData()
 			["Mankrik"] = true,
 			["Westfall"] = true,
 			["Atiesh"] = true,
-			["Remulos"] = true,
 			["Bigglesworth"] = true,
 			["Kromcrush"] = true,
 			["Bloodsail Buccaneers"] = true,

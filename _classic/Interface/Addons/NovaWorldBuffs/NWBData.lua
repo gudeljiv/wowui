@@ -131,6 +131,10 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 	local cmd = args[1]; --Cmd (first arg) so we know where to send the data.
 	local remoteVersion = args[2]; --Version number.
 	local data = args[5]; --Data.
+	if (not args[3]) then
+		NWB:debug("Missing comms arg 3:", sender, args[1], args[2], args[3])
+		return;
+	end
 	local k, l = strsplit("-", args[3], 2);
 	time = (tonumber(k) or 0); --Time.
 	elapsed = (args[4] or 0); --Elapsed.
@@ -3039,6 +3043,9 @@ function NWB:recordAttunements()
 end
 
 function NWB:recordAttunementKeys()
+	if (not KeyRingButtonIDToInvSlotID) then
+		return; --This was patched out a month after cata release instead of during beta?
+	end
 	local char = UnitName("player");
 	if (not NWB.data.myChars[char]) then
 		NWB.data.myChars[char] = {};

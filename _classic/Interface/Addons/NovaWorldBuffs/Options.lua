@@ -2196,23 +2196,29 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.74;
+	linesVersion = 2.79;
 	local lines = {
 		" ",
-		"Fixed Gnomeregan msg/sound playing when it drops on a lvl 50 char that can't get it.",
-		"Fix for new Sunken Temple buff being announced to guild chat as 50 seconds until drop, Blizzard has reused the same NPC and same yell msg in Booty Bay as the level 60 ZG buff from original classic and it's triggering the wrong buff drop msg.",
-		"The new Sunken Temple buff only has a 6 second warning yell all other SoD buffs so a drop msg isn't worth.",
-		"|cFF00FF00Please note:|r |cFF9CD6DEYour guild members need to update to properly stop getting the zandalar drop guild msg.|r",
+		"Added Tol Barad timer to the minimap button mouseover tooltip and guild 10 minute warning.",
 	};
+	if (NWB.realm == "Arugal" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
+		lines = {
+			" ",
+			"Added Tol Barad timer to the minimap button mouseover tooltip and guild 10 minute warning.",
+			" ",
+			"|cFFFF6900Note for |cFF00FF00OCE|r:|r |cFF9CD6DEThis version includes a fix for the timers on the Tol Barad/Wintergrasp pvp queueing frame for us so we don't keep seeing timers like \"15 hours left\". If Blizzard ever fixes the OCE timers that's been broken since Wrath launch then I'll remove this queue frame fix.|r",
+		};
+	end
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
 	--Not sure what causes some frame lines to render thicker than others and some not render at all.
-	local separatorText = "-";
+	--[[local separatorText = "-";
 	while (newVersionFrame.scrollFrame:GetWidth() - 55 > newVersionFrame.scrollChild.fs3:GetStringWidth()) do
 		separatorText = separatorText .. "-";
 		newVersionFrame.scrollChild.fs3:SetText(separatorText);
 	end
-	text = text .. separatorText .. "\n";
+	text = text .. separatorText .. "\n";]]
+	text = text .. "\n";
 	if (lines) then
 		for k, v in ipairs(lines) do
 			if (k % 2 == 0) then
@@ -2235,8 +2241,8 @@ function NWB:checkNewVersion()
 	--loadNewVersionFrame();
 	if (NWB.version and NWB.version ~= 9999) then
 		if (not NWB.db.global.versions[NWB.version]) then
-			if (NWB.isSOD) then
-				--Only show this update notes on US realms where they need a DST timer fix.
+			if (NWB.isCata) then
+				--Only show this update for cata users.
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					loadNewVersionFrame();
 				--end

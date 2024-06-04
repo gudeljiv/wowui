@@ -134,6 +134,7 @@ function NWB:OnInitialize()
 	self:removeOldLayers();
 	--Before we start the ticker we need a temp record of our last online time to check dmf reset.
 	self.lastOnlineCache = NWB.data.myChars[UnitName("player")].lo;
+	--self:loadTbCache();
 	self:ticker();
 	self:yellTicker();
 	self:createBroker();
@@ -904,6 +905,10 @@ function NWB:ticker()
 	if (NWB.isSOD) then
 		NWB:checkAshenvaleTimer();
 		NWB:checkStranglethornTimer();
+	end
+	if (NWB.isCata) then
+		NWB:checkTolBaradTimer();
+		--NWB:checkWintergraspTimer();
 	end
 	C_Timer.After(1, function()
 		NWB:ticker();
@@ -6031,6 +6036,12 @@ function NWB:updateMinimapButton(tooltip, frame)
 		NWB:addDMFMinimapString(tooltip);
 		--3 day reset is bundled in the above with dmf string.
 	end
+	if (NWB.isCata) then
+		--First line adds the top seperator, the rest don't so they're merged in the same section.
+		--NWB:addTolBaradMinimapString(tooltip);
+		NWB:addTolBaradMinimapString(tooltip, nil, true);
+		NWB:addWintergraspMinimapString(tooltip, true);
+	end
 	tooltip:AddLine("|cFF9CD6DE" .. L["Left-Click"] .. "|r " .. L["Timers"]);
 	tooltip:AddLine("|cFF9CD6DE" .. L["Right-Click"] .. "|r " .. L["Buffs"]);
 	tooltip:AddLine("|cFF9CD6DE" .. L["Shift Left-Click"] .. "|r " .. L["Felwood Map"]);
@@ -8423,9 +8434,10 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 		--I may change this to realm names later instead, region may be unreliable with US client on EU region if that issue still exists.
 		if (NWB.realm == "Arugal" or NWB.realm == "Felstriker" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
 			--OCE Sunday 12pm UTC reset time (4am monday server time).
-			--dayOffset = 2; --2 days after friday (sunday).
+			dayOffset = 2; --2 days after friday (sunday).
 			--Change this to saturday instead of of friday to try fix classic era calcs.
-			dayOffset = 1;
+			--Changed back to friday now.
+			--dayOffset = 1;
 			hourOffset = 18; -- 6pm.
 			validRegion = true;
 		elseif (NWB.realm == "Arcanite Reaper" or NWB.realm == "Old Blanchy" or NWB.realm == "Anathema" or NWB.realm == "Azuresong"
@@ -8433,40 +8445,40 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 				or NWB.realm == "Thunderfury" or NWB.realm == "Atiesh" or NWB.realm == "Bigglesworth" or NWB.realm == "Blaumeux"
 				or NWB.realm == "Fairbanks" or NWB.realm == "Grobbulus" or NWB.realm == "Whitemane") then
 			--US west Sunday 11am UTC reset time (4am monday server time).
-			--dayOffset = 2; --2 days after friday (sunday).
-			dayOffset = 1;
+			dayOffset = 2; --2 days after friday (sunday).
+			--dayOffset = 1;
 			hourOffset = 11; -- 11am.
 			validRegion = true;
 		elseif (region == 1) then
 			--US east + Latin Sunday 8am UTC reset time (4am monday server time).
-			--dayOffset = 2; --2 days after friday (sunday).
-			dayOffset = 1;
+			dayOffset = 2; --2 days after friday (sunday).
+			--dayOffset = 1;
 			hourOffset = 8; -- 8am.
 			validRegion = true;
 		elseif (region == 2) then
 			--Korea 1am UTC monday (9am monday local) reset time.
 			--(TW seems to be region 2 for some reason also? Hopefully they have same DMF spawn).
 			--I can change it to server name based if someone from KR says this spawn time is wrong.
-			--dayOffset = 3;
-			dayOffset = 2;
+			dayOffset = 3;
+			--dayOffset = 2;
 			hourOffset = 1;
 			validRegion = true;
 		elseif (region == 3) then
 			--EU Monday 4am UTC reset time.
-			--dayOffset = 3; --3 days after friday (monday).
-			dayOffset = 2;
+			dayOffset = 3; --3 days after friday (monday).
+			--dayOffset = 2;
 			hourOffset = 2; -- 4am.
 			validRegion = true;
 		elseif (region == 4) then
 			--Taiwan 1am UTC monday (9am monday local) reset time.
-			--dayOffset = 3;
-			dayOffset = 2;
+			dayOffset = 3;
+			--dayOffset = 2;
 			hourOffset = 1;
 			validRegion = true;
 		elseif (region == 5) then
 			--China 8pm UTC sunday (4am monday local) reset time.
-			--dayOffset = 2;
-			dayOffset = 1;
+			dayOffset = 2;
+			--dayOffset = 1;
 			hourOffset = 20;
 			validRegion = true;
 		end
@@ -8499,10 +8511,14 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 		--There was an issue with using the date table above for a single user, thier client couldn't get the first day of the month correct.
 		--It was correct using %w instead so we'll just go with that for now.
 		for i = 1, 7 do
-			--Iterate the first 7 days in the month to find first saturday.
-			if (date("%w", time({year = data.year, month = data.month, day = i})) == "6") then
+			--Iterate the first 7 days in the month to find first friday.
+			--This was using saturday for a while which seemed correct when friday wasn't during some months, but now friday seems right again..
+			--If this is changed the offset says above needs adjusting to match.
+			--0 = Sunday -> 6 = Saturday.
+			if (date("%w", time({year = data.year, month = data.month, day = i})) == "5") then
 				--If day of the week (wday) is 6 (friday) then set this as first friday of the month.
 				dmfStartDay = i;
+				break;
 			end
 		end
 		if (not dmfStartDay) then

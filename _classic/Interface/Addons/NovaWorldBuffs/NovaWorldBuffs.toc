@@ -2,7 +2,7 @@
 ## Notes: World buff timers and much more.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.78
+## Version: 2.81
 ## SavedVariables: NWBdatabase
 
 embeds.xml
@@ -17,4 +17,6 @@ NWBGuildFilter.lua
 Modules\WeeklyReset.lua
 Modules\Ashenvale.lua
 Modules\Stranglethorn.lua
+Modules\TolBarad.lua
+Modules\Wintergrasp.lua
 Modules\Overlay.lua
