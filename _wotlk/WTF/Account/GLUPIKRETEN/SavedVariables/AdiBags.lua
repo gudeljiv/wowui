@@ -422,10 +422,10 @@ AdiBagsDB = {
 						[36932] = "Gem#Gem",
 						[39966] = "Gem#Gem",
 						[36920] = "Gem#Gem",
-						[43122] = "Trade Goods#Inscription",
 						[9262] = "Gem#Gem",
+						[43122] = "Trade Goods#Inscription",
 						[40085] = "Gem#Gem",
-						[3858] = "Trade Goods#Ores",
+						[2835] = "Trade Goods#Ores",
 						[3860] = "Trade Goods#Bars",
 						[24330] = "Quest#Quest",
 						[2841] = "Trade Goods#Bars",
@@ -489,7 +489,7 @@ AdiBagsDB = {
 						[40023] = "Gem#Gem",
 						[43124] = "Trade Goods#Inscription",
 						[34721] = "Trade Goods#Bandages",
-						[2835] = "Trade Goods#Ores",
+						[3858] = "Trade Goods#Ores",
 						[7972] = "Junk#Junk",
 						[2776] = "Trade Goods#Ores",
 						[43105] = "Trade Goods#Inscription",
@@ -773,14 +773,6 @@ AdiBagsDB = {
 			["filters"] = {
 				["Equipment"] = false,
 			},
-			["qualityOpacity"] = 0.05,
-			["rightClickConfig"] = false,
-			["sortingOrder"] = "byQualityAndLevel",
-			["columnWidth"] = {
-				["Backpack"] = 8,
-				["Bank"] = 16,
-			},
-			["maxHeight"] = 0.3,
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
@@ -789,6 +781,14 @@ AdiBagsDB = {
 					["Name"] = "Bag Lag Fix",
 				},
 			},
+			["rightClickConfig"] = false,
+			["sortingOrder"] = "byQualityAndLevel",
+			["columnWidth"] = {
+				["Backpack"] = 8,
+				["Bank"] = 16,
+			},
+			["maxHeight"] = 0.3,
+			["qualityOpacity"] = 0.05,
 			["theme"] = {
 				["reagentBank"] = {
 					["sectionFont"] = {

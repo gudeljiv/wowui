@@ -63,13 +63,13 @@ RangeDisplayDB3 = {
 					["enabled"] = false,
 				},
 				["playertarget"] = {
-					["relPoint"] = "TOP",
+					["font"] = "Arial Narrow",
 					["fontSize"] = 30,
 					["point"] = "TOP",
 					["frameHeight"] = 60,
 					["checkVisible"] = false,
 					["y"] = -157.9365234375,
-					["font"] = "Arial Narrow",
+					["relPoint"] = "TOP",
 					["frameWidth"] = 200,
 				},
 				["pet"] = {

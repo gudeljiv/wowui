@@ -1,0 +1,40 @@
+Change history
+
+1.10
+- Update TOC for 6.1
+- Fixes for 6.1
+- The height of the TradeSkill UI can now be changed by dragging the bottom border of the window
+- Minor layout fixes
+
+1.9
+- Update TOC for 6.0
+- Added support for Tradeskill Info
+
+1.8
+- Update TOC for 5.3
+- Added support for ElvUI
+
+1.7
+- Update TOC for 5.2
+
+1.6
+- Added support for Aurora
+
+1.5
+- Fix for subclasses that have categories (like cooking)
+- Added X button to the search box like all other searches have
+
+1.4
+- Fixes for filter changes in 5.0.4
+
+1.3
+- Moved Auctionator AH button to the left side of the details pane
+
+1.2
+- Update TOC for 4.3
+
+1.1
+- Added support Auctionator button
+
+1.0
+- Initial version

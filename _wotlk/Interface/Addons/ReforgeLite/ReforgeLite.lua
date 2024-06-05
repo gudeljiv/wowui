@@ -654,7 +654,7 @@ function ReforgeLite:GetFrameY (frame)
   return offs
 end
 
-local function SetTextDelta (text, value, cur, override, percent)
+local function SetTextDelta (text, value, cur, override)
   override = override or (value - cur)
   if override == 0 then
     text:SetTextColor (0.7, 0.7, 0.7)
@@ -663,11 +663,7 @@ local function SetTextDelta (text, value, cur, override, percent)
   else
     text:SetTextColor (1, 0.4, 0.4)
   end
-  if percent then
-    text:SetText (format ("%+.2f%%", value - cur))
-  else
-    text:SetText (format ("%+d", value - cur))
-  end
+  text:SetText (format (value - cur >= 0 and "+%s" or "%s", value - cur))
 end
 
 ------------------------------------------------------------------------
@@ -1199,7 +1195,7 @@ function ReforgeLite:UpdateStatWeightList ()
 end
 function ReforgeLite:UpdateBuffs ()
   if self.pdb.tankingModel then
-    local kings, strength, flask, food = GetPlayerBuffs ()
+    local kings, strength, flask, food = self:GetPlayerBuffs ()
     if kings then
       self.statWeights.buffs.kings:SetChecked (true)
       self.statWeights.buffs.kings:Disable ()
@@ -1731,7 +1727,7 @@ function ReforgeLite:RefreshMethodStats (relax)
         if v.percent then
           self.methodStats[i].value:SetText (format ("%.2f%%", mvalue))
         else
-          self.methodStats[i].value:SetText (format ("%d", mvalue))
+          self.methodStats[i].value:SetText (format ("%s", mvalue))
         end
         local override = nil
         mvalue = v.mgetter (self.pdb.method, true)
@@ -1739,7 +1735,7 @@ function ReforgeLite:RefreshMethodStats (relax)
         if self:GetStatScore (i, mvalue) == self:GetStatScore (i, value) then
           override = 0
         end
-        SetTextDelta (self.methodStats[i].delta, mvalue, value, override, percent)
+        SetTextDelta (self.methodStats[i].delta, mvalue, value, override)
         
 --        self.methodStats:SetCell (pos, 1, self.methodStats[pos].value)
 --        self.methodStats:SetCell (pos, 2, self.methodStats[pos].delta)
@@ -1757,7 +1753,7 @@ function ReforgeLite:RefreshMethodStats (relax)
   if self.pdb.storedMethod then
     self:UpdateMethodStats (self.pdb.storedMethod)
     local storedScore = self:GetMethodScore (self.pdb.storedMethod)
-    self.storedScore.score:SetText (format ("%d (", storedScore))
+    self.storedScore.score:SetText (format ("%s (", storedScore))
     SetTextDelta (self.storedScore.delta, storedScore, self:GetCurrentScore ())
   end
 end
@@ -1858,9 +1854,9 @@ function ReforgeLite:UpdateItems ()
       v.item = item
       v.texture:SetTexture (texture)
       stats = GetItemStats (item)
-      local reforge = self:GetReforgeID (v.slotId)
-      if reforge then
-        local srcId, dstId = unpack(reforgeTable[reforge])
+      v.reforge = self:GetReforgeID(v.slotId)
+      if v.reforge then
+        local srcId, dstId = unpack(reforgeTable[v.reforge])
         reforgeSrc, reforgeDst = self.itemStats[srcId].name, self.itemStats[dstId].name
         local amount = floor ((stats[reforgeSrc] or 0) * 0.4)
         stats[reforgeSrc] = (stats[reforgeSrc] or 0) - amount

@@ -1,0 +1,4 @@
+
+BiggerTradeSkillUiDB = {
+	["height"] = 530,
+}

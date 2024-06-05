@@ -1,4 +1,10 @@
-﻿4.0.07 - 15th May 2024
+﻿4.0.10 - 5th June 2024
+- For 'Recent chat window', ('Chat'), increased the number of recent chat messages shown from 128 to 256.
+- For 'Restore chat messages' ('Chat'), increased the number of restored chat messages from 128 to 256.
+- For 'Filter chat messages' ('Chat'), added a setting to block guild announcements (such as guild member achievements).
+- Structural changes.
+
+4.0.07 - 15th May 2024
 - For 'Enhance minimap', added support for Narcissus custom minimap button.
 
 4.0.06 - 15th May 2024

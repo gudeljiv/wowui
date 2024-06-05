@@ -238,3 +238,4 @@ Blizzard_CombatText: enabled
 LittleWigs_Cataclysm: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_WrathOfTheLichKing: disabled
+BiggerTradeskillUI: disabled

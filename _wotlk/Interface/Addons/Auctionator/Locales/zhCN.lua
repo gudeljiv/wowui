@@ -153,8 +153,7 @@ L["CONFIG_SELLING_ICON_SIZE_TOOLTIP_HEADER"] = "图示大小"
 L["CONFIG_SELLING_ICON_SIZE_TOOLTIP_TEXT"] = "让销售标签页面中的背包物品图示大一点 (最大 50) 或小一点 (最小 10)。预设大小是 42。"
 L["CONFIG_SELLING_IGNORE_ITEM_LEVEL"] = [=[搜索匹配拍卖物品时忽略等级
 ]=]
---[[Translation missing --]]
-L["CONFIG_SELLING_IGNORE_ITEM_SUFFIX"] = "Ignore item suffix/title when searching for matching auctions"
+L["CONFIG_SELLING_IGNORE_ITEM_SUFFIX"] = "搜索匹配拍卖时忽略物品后缀/标题"
 L["CONFIG_SELLING_LIFO_HEADER"] = "销售: 物品"
 L["CONFIG_SELLING_LIFO_TEXT"] = "设定大部分物品的压低价格百分比或数值，以及拍卖有效时限的选项。不压低价格时，这些类别中价格相同的物品会组合在一起，最后加入的物品会第一个卖出，所以不一定要压低价格。"
 L["CONFIG_SELLING_MISSING_FAVOURITES"] = "总是显示收藏夹/自定义物品，包括不在你背包的时候。"
