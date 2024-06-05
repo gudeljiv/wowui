@@ -4,10 +4,10 @@ AdiBagsDB = {
 		["Mists Of Pandaria"] = {
 			["profiles"] = {
 				["Default"] = {
-					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
-					["moveMergedTradegoods"] = false,
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedRecipes"] = false,
+					["moveMergedTradegoods"] = false,
 				},
 			},
 		},
@@ -422,10 +422,10 @@ AdiBagsDB = {
 						[2776] = "Trade Goods#Ores",
 						[39966] = "Gem#Gem",
 						[36920] = "Gem#Gem",
-						[2835] = "Trade Goods#Ores",
-						[43122] = "Trade Goods#Inscription",
-						[40085] = "Gem#Gem",
 						[3858] = "Trade Goods#Ores",
+						[9262] = "Gem#Gem",
+						[40085] = "Gem#Gem",
+						[2835] = "Trade Goods#Ores",
 						[3860] = "Trade Goods#Bars",
 						[34721] = "Trade Goods#Bandages",
 						[2841] = "Trade Goods#Bars",
@@ -489,7 +489,7 @@ AdiBagsDB = {
 						[40023] = "Gem#Gem",
 						[43124] = "Trade Goods#Inscription",
 						[24330] = "Quest#Quest",
-						[9262] = "Gem#Gem",
+						[43122] = "Trade Goods#Inscription",
 						[7972] = "Junk#Junk",
 						[36932] = "Gem#Gem",
 						[44331] = "Consumable#Potions",
@@ -540,20 +540,20 @@ AdiBagsDB = {
 		["Wrath Of The Lich King"] = {
 			["profiles"] = {
 				["Default"] = {
-					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
-					["moveMergedTradegoods"] = false,
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedRecipes"] = false,
+					["moveMergedTradegoods"] = false,
 				},
 			},
 		},
 		["Burning Crusade"] = {
 			["profiles"] = {
 				["Default"] = {
-					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
-					["moveMergedTradegoods"] = false,
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedRecipes"] = false,
+					["moveMergedTradegoods"] = false,
 				},
 			},
 		},
@@ -615,10 +615,10 @@ AdiBagsDB = {
 		["Classic"] = {
 			["profiles"] = {
 				["Default"] = {
-					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
-					["moveMergedTradegoods"] = false,
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedRecipes"] = false,
+					["moveMergedTradegoods"] = false,
 				},
 			},
 		},
@@ -632,12 +632,12 @@ AdiBagsDB = {
 		["Cataclysm"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTradegoods"] = false,
+					["moveMergedRecipes"] = false,
 					["moveMergedFortunecards"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["customPrefix"] = "CATA ",
-					["moveMergedFlasksElixirsPotions"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
@@ -898,7 +898,6 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 				["Masque"] = false,
 			},
-			["qualityOpacity"] = 0.05,
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
@@ -907,6 +906,7 @@ AdiBagsDB = {
 					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 				},
 			},
+			["qualityOpacity"] = 0.05,
 		},
 	},
 }

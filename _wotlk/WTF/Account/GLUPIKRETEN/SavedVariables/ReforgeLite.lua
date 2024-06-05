@@ -4,7 +4,7 @@ ReforgeLiteDB = {
 	["updateTooltip"] = true,
 	["windowY"] = 1215.333129882813,
 	["reforgeCheat"] = 3.991333246231079,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
 			["caps"] = {
@@ -293,6 +293,133 @@ ReforgeLiteDB = {
 			},
 		},
 		["Vermina - Golemagg"] = {
+			["method"] = {
+				["items"] = {
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["reforge"] = 30,
+						["amount"] = 0,
+					}, -- [1]
+					{
+						["dst"] = 8,
+						["src"] = 6,
+						["reforge"] = 42,
+						["amount"] = 0,
+					}, -- [2]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["reforge"] = 30,
+						["amount"] = 0,
+					}, -- [3]
+					{
+						["dst"] = 2,
+						["src"] = 4,
+						["reforge"] = 23,
+						["amount"] = 0,
+					}, -- [4]
+					{
+						["dst"] = 8,
+						["src"] = 2,
+						["reforge"] = 14,
+						["amount"] = 0,
+					}, -- [5]
+					{
+						["dst"] = 8,
+						["src"] = 5,
+						["reforge"] = 35,
+						["amount"] = 0,
+					}, -- [6]
+					{
+						["dst"] = 8,
+						["src"] = 6,
+						["reforge"] = 42,
+						["amount"] = 0,
+					}, -- [7]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["reforge"] = 44,
+						["amount"] = 0,
+					}, -- [8]
+					{
+						["dst"] = 8,
+						["src"] = 5,
+						["reforge"] = 35,
+						["amount"] = 0,
+					}, -- [9]
+					{
+						["dst"] = 8,
+						["src"] = 4,
+						["reforge"] = 28,
+						["amount"] = 0,
+					}, -- [10]
+					{
+						["dst"] = 8,
+						["src"] = 7,
+						["reforge"] = 49,
+						["amount"] = 0,
+					}, -- [11]
+					{
+						["dst"] = 2,
+						["src"] = 4,
+						["reforge"] = 23,
+						["amount"] = 0,
+					}, -- [12]
+					{
+						["dst"] = 8,
+						["src"] = 5,
+						["reforge"] = 35,
+						["amount"] = 0,
+					}, -- [13]
+					{
+						["dst"] = 8,
+						["src"] = 2,
+						["reforge"] = 14,
+						["amount"] = 0,
+					}, -- [14]
+					{
+						["dst"] = 2,
+						["src"] = 3,
+						["reforge"] = 16,
+						["amount"] = 0,
+					}, -- [15]
+					{
+					}, -- [16]
+					{
+					}, -- [17]
+				},
+				["stats"] = {
+					108, -- [1]
+					659, -- [2]
+					819, -- [3]
+					303, -- [4]
+					476, -- [5]
+					105, -- [6]
+					300, -- [7]
+					1215, -- [8]
+					["block"] = 49.28965396054518,
+					["parry"] = 12.41385078430176,
+					["dodge"] = 11.10009860992432,
+				},
+				["tankingModel"] = true,
+				["orig_stats"] = {
+					[3] = 819,
+					[2] = 659,
+					[8] = 1215,
+				},
+			},
+			["weights"] = {
+				0, -- [1]
+				100, -- [2]
+				100, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				80, -- [8]
+			},
 			["caps"] = {
 				{
 					["stat"] = 0,
@@ -415,158 +542,31 @@ ReforgeLiteDB = {
 					}, -- [17]
 				},
 				["stats"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					["block"] = 23,
-					["dodge"] = 0,
-					["parry"] = 0,
+					108, -- [1]
+					659, -- [2]
+					819, -- [3]
+					303, -- [4]
+					476, -- [5]
+					105, -- [6]
+					300, -- [7]
+					1215, -- [8]
+					["block"] = 49.28965396054518,
+					["parry"] = 12.41385078430176,
+					["dodge"] = 11.10009860992432,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
-					[3] = 0,
-					[2] = 0,
-					[8] = 0,
+					[3] = 819,
+					[2] = 659,
+					[8] = 1215,
 				},
 			},
-			["method"] = {
-				["items"] = {
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["reforge"] = 30,
-						["amount"] = 0,
-					}, -- [1]
-					{
-						["dst"] = 8,
-						["src"] = 6,
-						["reforge"] = 42,
-						["amount"] = 0,
-					}, -- [2]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["reforge"] = 30,
-						["amount"] = 0,
-					}, -- [3]
-					{
-						["dst"] = 2,
-						["src"] = 4,
-						["reforge"] = 23,
-						["amount"] = 0,
-					}, -- [4]
-					{
-						["dst"] = 8,
-						["src"] = 2,
-						["reforge"] = 14,
-						["amount"] = 0,
-					}, -- [5]
-					{
-						["dst"] = 8,
-						["src"] = 5,
-						["reforge"] = 35,
-						["amount"] = 0,
-					}, -- [6]
-					{
-						["dst"] = 8,
-						["src"] = 6,
-						["reforge"] = 42,
-						["amount"] = 0,
-					}, -- [7]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["reforge"] = 44,
-						["amount"] = 0,
-					}, -- [8]
-					{
-						["dst"] = 8,
-						["src"] = 5,
-						["reforge"] = 35,
-						["amount"] = 0,
-					}, -- [9]
-					{
-						["dst"] = 8,
-						["src"] = 4,
-						["reforge"] = 28,
-						["amount"] = 0,
-					}, -- [10]
-					{
-						["dst"] = 8,
-						["src"] = 7,
-						["reforge"] = 49,
-						["amount"] = 0,
-					}, -- [11]
-					{
-						["dst"] = 2,
-						["src"] = 4,
-						["reforge"] = 23,
-						["amount"] = 0,
-					}, -- [12]
-					{
-						["dst"] = 8,
-						["src"] = 5,
-						["reforge"] = 35,
-						["amount"] = 0,
-					}, -- [13]
-					{
-						["dst"] = 8,
-						["src"] = 2,
-						["reforge"] = 14,
-						["amount"] = 0,
-					}, -- [14]
-					{
-						["dst"] = 2,
-						["src"] = 3,
-						["reforge"] = 16,
-						["amount"] = 0,
-					}, -- [15]
-					{
-					}, -- [16]
-					{
-					}, -- [17]
-				},
-				["stats"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					["block"] = 23,
-					["dodge"] = 0,
-					["parry"] = 0,
-				},
-				["tankingModel"] = true,
-				["orig_stats"] = {
-					[3] = 0,
-					[2] = 0,
-					[8] = 0,
-				},
-			},
-			["tankingModel"] = true,
+			["targetLevel"] = 3,
 			["buffs"] = {
-			},
-			["weights"] = {
-				0, -- [1]
-				100, -- [2]
-				100, -- [3]
-				0, -- [4]
-				0, -- [5]
-				0, -- [6]
-				0, -- [7]
-				80, -- [8]
 			},
 			["itemsLocked"] = {
 			},
-			["targetLevel"] = 3,
+			["tankingModel"] = true,
 		},
 		["Mxzq - Golemagg"] = {
 			["caps"] = {
@@ -666,8 +666,6 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
-			["buffs"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -677,6 +675,8 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
+			},
+			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -875,11 +875,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-				[8] = false,
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -889,6 +884,11 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
+			},
+			["itemsLocked"] = {
+				[8] = false,
+			},
+			["buffs"] = {
 			},
 		},
 		["Handrmandr - Golemagg"] = {
@@ -1438,10 +1438,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -1451,6 +1447,10 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
+			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -1497,7 +1497,7 @@ ReforgeLiteDB = {
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["openOnReforge"] = true,
+	["methodWindowY"] = 945.0794677734375,
 	["methodWindowX"] = 1069.047729492188,
 	["windowX"] = 1029.206420898438,
 	["customPresets"] = {
