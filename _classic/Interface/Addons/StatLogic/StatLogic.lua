@@ -279,7 +279,7 @@ end
 
 -- SetTip("item:3185:0:0:0:0:0:1957")
 function SetTip(item)
-	local _, link = GetItemInfo(item)
+	local _, link = C_Item.GetItemInfo(item)
 	ItemRefTooltip:ClearLines()
 	ItemRefTooltip:SetHyperlink(link)
 	ItemRefTooltip:Show()
@@ -759,7 +759,7 @@ local equipped_sets = setmetatable({}, {
 
 		for i = 1, INVSLOT_LAST_EQUIPPED do
 			local itemID = GetInventoryItemID("player", i)
-			if itemID and select(16, GetItemInfo(itemID)) == set then
+			if itemID and select(16, C_Item.GetItemInfo(itemID)) == set then
 				equipped = equipped + 1
 			end
 		end
@@ -1192,6 +1192,7 @@ do
 		if not value then
 			wipe(BuffGroupCache)
 			local statModInfo = StatLogic.StatModInfo[statModName]
+			if not statModInfo then return 0 end
 			value = statModInfo.initialValue
 			for _, categoryTable in pairs(StatLogic.StatModTable) do
 				if categoryTable[statModName] then
@@ -1346,7 +1347,7 @@ function StatLogic:GetDodgePerAgi()
 	-- dodgeFromAgi is %
 	local dodgeFromAgi = GetDodgeChance()
 		- self:GetStatMod("ADD_DODGE")
-		- self:GetEffectFromRating(GetCombatRating(CR_DODGE), StatLogic.Stats.DodgeRating)
+		- GetCombatRatingBonus(CR_DODGE)
 		- self:GetEffectFromDefense()
 		- self:GetTotalEquippedStat(StatLogic.Stats.Dodge)
 	return dodgeFromAgi / agility
@@ -1402,7 +1403,7 @@ do
 		-- Count item's actual sockets
 		wipe(statTable)
 		GetItemStats(link, statTable)
-		local numSockets = statTable["EMPTY_SOCKET_RED"] + statTable["EMPTY_SOCKET_YELLOW"] + statTable["EMPTY_SOCKET_BLUE"]
+		local numSockets = statTable["EMPTY_SOCKET_RED"] + statTable["EMPTY_SOCKET_YELLOW"] + statTable["EMPTY_SOCKET_BLUE"] + statTable["EMPTY_SOCKET_PRISMATIC"]
 
 		-- Remove any gemID beyond numSockets
 		local i = 0
@@ -1421,6 +1422,7 @@ do
 		[EMPTY_SOCKET_YELLOW] = 0, -- EMPTY_SOCKET_YELLOW = "Yellow Socket";
 		[EMPTY_SOCKET_BLUE] = 0, -- EMPTY_SOCKET_BLUE = "Blue Socket";
 		[EMPTY_SOCKET_META] = 0, -- EMPTY_SOCKET_META = "Meta Socket";
+		[EMPTY_SOCKET_PRISMATIC] = 0, -- EMPTY_SOCKET_PRISMATIC = "Prismatic Socket";
 	}
 	-- Returns a modified link with all empty sockets replaced with the specified gems,
 	-- sockets already gemmed will remain.
@@ -1429,8 +1431,9 @@ do
 	---@param yellow? string|number gemID to replace a yellow socket
 	---@param blue? string|number gemID to replace a blue socket
 	---@param meta? string|number gemID to replace a meta socket
+	---@param prismatic? string|number gemID to replace a prismatic socket
 	---@return string link Modified item link
-	function StatLogic:BuildGemmedTooltip(link, red, yellow, blue, meta)
+	function StatLogic:BuildGemmedTooltip(link, red, yellow, blue, meta, prismatic)
 		-- Check item
 		if (type(link) ~= "string") then
 			return link
@@ -1438,7 +1441,7 @@ do
 
 		wipe(statTable)
 		GetItemStats(link, statTable)
-		local numSockets = statTable["EMPTY_SOCKET_META"] + statTable["EMPTY_SOCKET_RED"] + statTable["EMPTY_SOCKET_YELLOW"] + statTable["EMPTY_SOCKET_BLUE"]
+		local numSockets = statTable["EMPTY_SOCKET_META"] + statTable["EMPTY_SOCKET_RED"] + statTable["EMPTY_SOCKET_YELLOW"] + statTable["EMPTY_SOCKET_BLUE"] + statTable["EMPTY_SOCKET_PRISMATIC"]
 		if numSockets == 0 then return link end
 
 		-- Check gemID
@@ -1446,13 +1449,15 @@ do
 		yellow = yellow and tonumber(yellow) or 0
 		blue = blue and tonumber(blue) or 0
 		meta = meta and tonumber(meta) or 0
-		if red == 0 and yellow == 0 and blue == 0 and meta == 0 then return link end -- nothing to modify
+		prismatic = prismatic and tonumber(prismatic) or 0
+		if red == 0 and yellow == 0 and blue == 0 and meta == 0 and prismatic == 0 then return link end -- nothing to modify
 
 		-- Fill EmptySocketLookup
 		EmptySocketLookup[EMPTY_SOCKET_RED] = red
 		EmptySocketLookup[EMPTY_SOCKET_YELLOW] = yellow
 		EmptySocketLookup[EMPTY_SOCKET_BLUE] = blue
 		EmptySocketLookup[EMPTY_SOCKET_META] = meta
+		EmptySocketLookup[EMPTY_SOCKET_PRISMATIC] = prismatic
 
 		-- Build socket list
 		local arguments = {"%1"}
@@ -1496,7 +1501,7 @@ function StatLogic:GetGemID(item)
 	end
 
 	-- Check if item is in local cache
-	local name, link = GetItemInfo(item)
+	local name, link = C_Item.GetItemInfo(item)
 	if not name then
 		if tonumber(itemID) then
 			-- Query server for item
@@ -1506,7 +1511,7 @@ function StatLogic:GetGemID(item)
 	end
 	itemID = link:match("item:(%d+)")
 
-	if not GetItemInfo(6948) then -- Hearthstone
+	if not C_Item.GetItemInfo(6948) then -- Hearthstone
 		-- Query server for Hearthstone
 		tip:SetHyperlink("item:"..itemID);
 		return
@@ -1560,7 +1565,7 @@ do
 			return
 		end
 		-- Check if item is in local cache
-		local name, link, _, _, _, _, _, _, inventoryType, _, _, itemClass, itemSubclass = GetItemInfo(item)
+		local name, link, _, _, _, _, _, _, inventoryType, _, _, itemClass, itemSubclass = C_Item.GetItemInfo(item)
 		if not name then return end
 
 		-- Clear table values
@@ -1748,7 +1753,7 @@ function StatLogic:GetArmorDistribution(item, value, color)
 		return
 	end
 	-- Check if item is in local cache
-	local name, _, itemQuality, itemLevel, _, _, _, _, itemEquipLoc, _, _, _, armorSubclass = GetItemInfo(item)
+	local name, _, itemQuality, itemLevel, _, _, _, _, itemEquipLoc, _, _, _, armorSubclass = C_Item.GetItemInfo(item)
 
 	local armor = value
 	local bonus_armor = 0
@@ -1835,7 +1840,7 @@ function StatLogic:GetDiffID(item, ignoreEnchant, ignoreGems, ignoreExtraSockets
 		return
 	end
 	-- Check if item is in local cache
-	name, link, _, _, _, _, _, _, inventoryType = GetItemInfo(item)
+	name, link, _, _, _, _, _, _, inventoryType = C_Item.GetItemInfo(item)
 	if not name then return end
 	-- Get equip location slot id for use in GetInventoryItemLink
 	local slotID = getSlotID[inventoryType]
@@ -1847,7 +1852,7 @@ function StatLogic:GetDiffID(item, ignoreEnchant, ignoreGems, ignoreExtraSockets
 		linkDiff1 = GetInventoryItemLink("player", 16) or "NOITEM"
 		-- If player can Dual Wield, calculate offhand difference
 		if IsUsableSpell(GetSpellInfo(674)) then		-- ["Dual Wield"]
-			local _, _, _, _, _, _, _, _, eqItemType = GetItemInfo(linkDiff1)
+			local _, _, _, _, _, _, _, _, eqItemType = C_Item.GetItemInfo(linkDiff1)
 			-- If 2h is equipped, copy diff1 to diff2
 			if eqItemType == "INVTYPE_2HWEAPON" and not HasTitansGrip() then
 				linkDiff2 = linkDiff1
@@ -1868,7 +1873,7 @@ function StatLogic:GetDiffID(item, ignoreEnchant, ignoreGems, ignoreExtraSockets
 	elseif slotID == 17 then
 		linkDiff1 = GetInventoryItemLink("player", 16) or "NOITEM"
 		-- If 2h is equipped
-		local _, _, _, _, _, _, _, _, eqItemType = GetItemInfo(linkDiff1)
+		local _, _, _, _, _, _, _, _, eqItemType = C_Item.GetItemInfo(linkDiff1)
 		if eqItemType ~= "INVTYPE_2HWEAPON" then
 			linkDiff1 = GetInventoryItemLink("player", 17) or "NOITEM"
 		end

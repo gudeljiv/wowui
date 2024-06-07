@@ -1,34 +1,29 @@
-local TOCNAME,Addon = ...
+local TOCNAME,
+	---@class Addon_Tool	
+	Addon = ...;
 Addon.Tool=Addon.Tool or {}
 local Tool=Addon.Tool
 
 Tool.IconClassTexture="Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES"
 Tool.IconClassTextureWithoutBorder="Interface\\WorldStateFrame\\ICONS-CLASSES"
-Tool.IconClassTextureCoord=CLASS_ICON_TCOORDS
-Tool.IconClass={
-  ["WARRIOR"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:0:64|t",
-  ["MAGE"]=		"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:64:128:0:64|t",
-  ["ROGUE"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:128:192:0:64|t",
-  ["DRUID"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:192:256:0:64|t",
-  ["HUNTER"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:64:128|t",
-  ["SHAMAN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:64:128:64:128|t",
-  ["PRIEST"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:128:192:64:128|t",
-  ["WARLOCK"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:192:256:64:128|t",
-  ["PALADIN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:128:192|t",
-  ["DEATHKNIGHT"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:64:128:128:192|t",
-  }
-Tool.IconClassBig={
-  ["WARRIOR"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:0:64|t",
-  ["MAGE"]=		"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:64:128:0:64|t",
-  ["ROGUE"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:128:192:0:64|t",
-  ["DRUID"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:192:256:0:64|t",
-  ["HUNTER"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:64:128|t",
-  ["SHAMAN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:64:128:64:128|t",
-  ["PRIEST"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:128:192:64:128|t",
-  ["WARLOCK"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:192:256:64:128|t",
-  ["PALADIN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:128:192|t",
-  ["DEATHKNIGHT"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:64:128:128:192|t",
-  }  
+
+---@param classFile string
+---@param size number?
+function Tool.GetClassIcon(classFile, size)
+	assert(type(classFile) == "string", "Usage: Tool.GetClassIcon(class: string, size: number?)", classFile)
+	local coords = CLASS_ICON_TCOORDS[classFile:upper()];
+	local size = size or 14;
+	if coords then
+		local icon = CreateTextureMarkup(
+			"Interface\\WorldStateFrame\\ICONS-CLASSES",
+			256, 256, -- og size
+			size, size, -- new size
+			coords[1], coords[2], coords[3], coords[4], -- texCoords
+			0, 1 -- x, y offsets
+		);
+		return icon;
+	end
+end
   
 Tool.RaidIconNames=ICON_TAG_LIST
 Tool.RaidIcon={
@@ -71,20 +66,19 @@ for eng,name in pairs(LOCALIZED_CLASS_NAMES_FEMALE) do
 	Tool.NameToClass[name]=eng
 end
 
-local _tableAccents = {
-    ["�"] = "A", ["�"] = "A", ["�"] = "A", ["�"] = "A", ["�"] = "Ae", ["�"] = "A",
-	["�"] = "AE", ["�"] = "C", ["�"] = "E", ["�"] = "E", ["�"] = "E", ["�"] = "E", 
-	["�"] = "I", ["�"] = "I", ["�"] = "I", ["�"] = "I", ["�"] = "D", ["�"] = "N", 
-	["�"] = "O", ["�"] = "O", ["�"] = "O", ["�"] = "O", ["�"] = "Oe", ["�"] = "O", 
-	["�"] = "U", ["�"] = "U", ["�"] = "U", ["�"] = "Ue", ["�"] = "Y", ["�"] = "P", 
-	["�"] = "s", ["�"] = "a", ["�"] = "a", ["�"] = "a", ["�"] = "a", ["�"] = "ae", 
-	["�"] = "a", ["�"] = "ae", ["�"] = "c", ["�"] = "e", ["�"] = "e", ["�"] = "e", 
-	["�"] = "e", ["�"] = "i", ["�"] = "i", ["�"] = "i", ["�"] = "i", ["�"] = "eth", 
-	["�"] = "n", ["�"] = "o", ["�"] = "o", ["�"] = "o", ["�"] = "o", ["�"] = "oe", 
-	["�"] = "o", ["�"] = "u", ["�"] = "u", ["�"] = "u", ["�"] = "ue", ["�"] = "y", 
-	["�"] = "p", ["�"] = "y", ["�"] = "ss",
-	}
-
+local transliterations = {
+    ["À"] = "A", ["Á"] = "A", ["Â"] = "A", ["Ã"] = "A", ["Ä"] = "Ae", ["Å"] = "A",
+	["Æ"] = "AE", ["Ç"] = "C", ["È"] = "E", ["É"] = "E", ["Ê"] = "E", ["Ë"] = "E", 
+	["Ì"] = "I", ["Í"] = "I", ["Î"] = "I", ["Ï"] = "I", ["Ð"] = "D", ["Ñ"] = "N", 
+	["Ò"] = "O", ["Ó"] = "O", ["Ô"] = "O", ["Õ"] = "O", ["Ö"] = "Oe", ["Ø"] = "O", 
+	["Ù"] = "U", ["Ú"] = "U", ["Û"] = "U", ["Ü"] = "Ue", ["Ý"] = "Y", ["Þ"] = "P", 
+	["ẞ"] = "s", ["à"] = "a", ["á"] = "a", ["â"] = "a", ["ã"] = "a", ["ä"] = "ae", 
+	["å"] = "a", ["æ"] = "ae", ["ç"] = "c", ["è"] = "e", ["é"] = "e", ["ê"] = "e", 
+	["ë"] = "e", ["ì"] = "i", ["í"] = "i", ["î"] = "i", ["ï"] = "i", ["ð"] = "eth", 
+	["ñ"] = "n", ["ò"] = "o", ["ó"] = "o", ["ô"] = "o", ["õ"] = "o", ["ö"] = "oe", 
+	["ø"] = "o", ["ù"] = "u", ["ú"] = "u", ["û"] = "u", ["ü"] = "ue", ["ý"] = "y", 
+	["þ"] = "p", ["ÿ"] = "y", ["ß"] = "ss",
+}
 -- Hyperlink
 
 local function EnterHyperlink(self,link,text)
@@ -273,8 +267,11 @@ function Tool.iMerge(t1,...)
 	return t1
 end
 
+---Replaces special characters and characters with accents from a given string.
+---@param str string
+---@return string, number
 function Tool.stripChars(str)
-	return string.gsub(str,"[%z\1-\127\194-\244][\128-\191]*", _tableAccents)
+	return string.gsub(str,"[%z\1-\127\194-\244][\128-\191]*", transliterations)
 end
 
 function Tool.CreatePattern(pattern,maximize)		
@@ -353,8 +350,10 @@ local SizingEnter=function(self)
 	if not (GetCursorInfo()) then
 		ResizeCursor:Show()
 		ResizeCursor.Texture:SetTexture(self.GPI_Cursor)
-		--Commenting this out to avoid an LUA error. Has to do with rotation of the resize cursor, can't figure it out at the moment
-		--ResizeCursor.Texture:SetRotation(math.rad(self.GPI_Rotation),CreateVector2D(0.5,0.5))
+		ResizeCursor.Texture:SetRotation(
+			math.rad(self.GPI_Rotation), 
+			{x = 0.5, y = 0.5} -- center point
+		);
 	end
 end
 

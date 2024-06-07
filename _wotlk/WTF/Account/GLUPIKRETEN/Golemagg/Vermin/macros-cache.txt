@@ -16,6 +16,8 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast Shield Slam
 /cast Shield Block
 /cast Inner Rage
+/use blood fury
+/use 14
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -72,10 +74,6 @@ VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
 /use [spec:1]13;[spec:2]10
 /use Loatheb's Shadow
 /use Blood Fury
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
 END
 VER 3 000000000100001F " " "134400"
 #showtooltip

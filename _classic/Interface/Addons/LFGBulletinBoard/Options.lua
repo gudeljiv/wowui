@@ -1,7 +1,27 @@
-local TOCNAME,GBB=...
+local TOCNAME,
+	---@class Addon_Options : Addon_Localization
+	GBB= ...;
 local ChannelIDs
 local ChkBox_FilterDungeon
 local TbcChkBox_FilterDungeon
+local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
+local isCata = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
+local PROJECT_EXPANSION_ID = {
+	[WOW_PROJECT_CLASSIC] = GBB.Enum.Expansions.Classic,
+	[WOW_PROJECT_BURNING_CRUSADE_CLASSIC] = GBB.Enum.Expansions.BurningCrusade,
+	[WOW_PROJECT_WRATH_CLASSIC] = GBB.Enum.Expansions.Wrath,
+	-- note: global not defined in classic era client
+	[WOW_PROJECT_CATACLYSM_CLASSIC or 0] = GBB.Enum.Expansions.Cataclysm,
+}
+local EXPANSION_PROJECT_ID = tInvert(PROJECT_EXPANSION_ID)
+---hack to remove "World of Warcraft: " from classic on esES/esMX clients
+local EXPANSION_NAME0 = EXPANSION_NAME0:gsub("World of Warcraft: ", "")
+local EXPANSION_FILTER_NAME = {
+	[GBB.Enum.Expansions.Classic] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME0),
+	[GBB.Enum.Expansions.BurningCrusade] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME1),
+	[GBB.Enum.Expansions.Wrath] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME2),
+	[GBB.Enum.Expansions.Cataclysm] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME3),
+}
 --Options
 -------------------------------------------------------------------------------------
 
@@ -12,7 +32,14 @@ local function CheckBoxChar (Var,Init)
 	return GBB.Options.AddCheckBox(GBB.DBChar,Var,Init,GBB.L["CboxChar"..Var])
 end
 local function CheckBoxFilter (Dungeon,Init)
-	return GBB.Options.AddCheckBox(GBB.DBChar,"FilterDungeon".. Dungeon,Init,GBB.dungeonNames[Dungeon].." "..GBB.LevelRange(Dungeon,true))
+	local dungeonName = (GBB.GetDungeonInfo(Dungeon, true) or {}).name
+	return GBB.Options.AddCheckBox(
+		GBB.DBChar, "FilterDungeon".. Dungeon, 
+		Init, 
+		((GBB.dungeonNames[Dungeon] 
+			or dungeonName or "ERROR"
+		).." "..GBB.LevelRange(Dungeon,true))
+	)
 end
 local function CreateEditBoxNumber (Var,Init,width,width2)
 	return GBB.Options.AddEditBox(GBB.DB,Var,Init,GBB.L["Edit"..Var],width,width2,true)
@@ -27,8 +54,15 @@ local function CreateEditBoxDungeon(Dungeon,Init,width,width2)
 		GBB.DB.Custom[Dungeon]=GBB.DB["Custom_"..Dungeon]
 		GBB.DB["Custom_"..Dungeon]=nil
 	end
-	if GBB.dungeonNames[Dungeon] then
-		GBB.Options.AddEditBox(GBB.DB.Custom, Dungeon, Init, GBB.dungeonNames[Dungeon].." "..GBB.LevelRange(Dungeon,true), width, width2, false,nil, GBB.Tool.Combine(GBB.dungeonTagsLoc["enGB"][Dungeon]))
+	local dungeonName = (GBB.GetDungeonInfo(Dungeon, true) or {}).name
+	if GBB.dungeonNames[Dungeon] or dungeonName then
+		GBB.Options.AddEditBox(GBB.DB.Custom, Dungeon, Init, 
+			((GBB.dungeonNames[Dungeon] or 
+				dungeonName).." "..GBB.LevelRange(Dungeon,true)
+			),
+			width, width2, false, nil, 
+			GBB.Tool.Combine(GBB.dungeonTagsLoc["enGB"][Dungeon])
+		)
 	else
 		local txt=""
 		if Dungeon=="Search" then
@@ -117,7 +151,7 @@ local DoRightClick=function(self)
 	self:SetChecked(true)
 end
 	
-function SetChatOption()
+local function SetChatOption()
 	GBB.Options.AddCategory(GBB.L["HeaderChannel"])
 	GBB.Options.Indent(10)	
 
@@ -130,6 +164,102 @@ function SetChatOption()
 		GBB.Options.EndInLine()
 	end
 	GBB.Options.Indent(-10)
+end
+
+---Generates and options panels with check box filters for the given expansion.
+---if the expansion is the current game client expansion, it will also include misc filters.
+---@param expansionID ExpansionID
+local function GenerateExpansionPanel(expansionID)
+	GBB.Options.AddPanel(EXPANSION_FILTER_NAME[expansionID], false, true)
+	
+	local isCurrentXpac = expansionID == PROJECT_EXPANSION_ID[WOW_PROJECT_ID];
+	local filters = {} ---@type CheckButton[]
+	local dungeons = GBB.GetSortedDungeonKeys(
+		expansionID, GBB.Enum.DungeonType.Dungeon
+	);
+	local raids = GBB.GetSortedDungeonKeys(
+		expansionID, GBB.Enum.DungeonType.Raid
+	);
+	local bgs = GBB.GetSortedDungeonKeys(
+		expansionID, GBB.Enum.DungeonType.Battleground
+	);
+	
+	-- Dungeons 		
+	GBB.Options.AddCategory(DUNGEONS)
+	GBB.Options.Indent(10)
+	for _, key in pairs(dungeons) do
+		tinsert(filters, CheckBoxFilter(key, false))
+	end
+
+	-- different layout for classic era clients
+	if not isCurrentXpac or isClassicEra then
+		GBB.Options.SetRightSide()
+	end
+
+	-- Raids
+	GBB.Options.Indent(-10)
+	GBB.Options.AddCategory(RAIDS)
+	GBB.Options.Indent(10)
+	for _, key in pairs(raids) do
+		tinsert(filters, CheckBoxFilter(key, false))
+	end
+
+	-- Battlegrounds (bg are all consider part of latest expansion atm)
+	if #bgs > 0 then
+		if isCurrentXpac and not isClassicEra then
+			GBB.Options.SetRightSide()
+		end --else keep on same column as raid for classic era
+
+		GBB.Options.Indent(-10)
+		GBB.Options.AddCategory(BATTLEGROUNDS)
+		GBB.Options.Indent(10)
+		for _, key in pairs(bgs) do
+			tinsert(filters, CheckBoxFilter(key, false))
+		end
+	end
+
+	-- dont include misc filters in the "select all" buttons
+	local resetLimitIdx = #filters 
+
+	-- Misc Categories (only show for current xpac)
+	if isCurrentXpac then
+		GBB.Options.Indent(-10)
+		GBB.Options.AddCategory(OTHER)
+		GBB.Options.Indent(10)		
+		for _, key in pairs(GBB.Misc) do
+			tinsert(filters, CheckBoxFilter(key, false))
+		end
+		
+	else
+		-- add space to make up for no "other" category
+		GBB.Options.AddSpace() 
+	end
+	
+	if not isClassicEra then
+		CheckBoxChar("HeroicOnly", false)
+		CheckBoxChar("NormalOnly", false)
+	end
+	CheckBoxChar("FilterLevel",false)
+	CheckBoxChar("DontFilterOwn",false)
+
+	-- Select/Unselect All Filters Buttons
+	GBB.Options.InLine()
+	GBB.Options.AddButton(GBB.L["BtnSelectAll"],function()
+		DoSelectFilter(true, filters, 1, resetLimitIdx)
+	end)
+	GBB.Options.AddButton(GBB.L["BtnUnselectAll"],function()
+		DoSelectFilter(false, filters,1, resetLimitIdx)
+	end)
+
+	-- Role Filters
+	GBB.Options.AddDrop(GBB.DB,"InviteRole", "DPS", {"DPS", "Tank", "Healer"})
+	GBB.Options.EndInLine()
+	
+	-- Chat Channel Filters (only show for current xpac)
+	if isCurrentXpac then
+		GBB.Options.Indent(-10)
+		SetChatOption()
+	end
 end
 
 function GBB.OptionsInit ()
@@ -237,136 +367,31 @@ function GBB.OptionsInit ()
 	GBB.Options.Indent(-30)
 	GBB.Options.AddSpace()
 	CheckBox("OnDebug",false)
-	----
-	-- Second Panel for Wotlk Dungeons
 
-
-
-	local version, build, date, tocversion = GetBuildInfo()
-	if string.sub(version, 1, 2) ~= "1." then
-
-		GBB.Options.AddPanel(GBB.L["WotlkPanelFilter"])
-		GBB.Options.AddCategory(GBB.L["HeaderDungeon"])
-		GBB.Options.Indent(10)
-	
-		WotlkChkBox_FilterDungeon={}
-			
-		for index=GBB.WOTLKDUNGEONSTART,GBB.WOTLKDUNGEONBREAK do
-			WotlkChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],false)
-		end
-	
-		GBB.Options.SetRightSide()
-		--GBB.Options.AddCategory("")
-		GBB.Options.Indent(10)	
-		for index=GBB.WOTLKDUNGEONBREAK+1,GBB.WOTLKMAXDUNGEON do
-			WotlkChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],false)
-		end
-		--GBB.Options.AddSpace()
-		CheckBoxChar("FilterLevel",false)
-		CheckBoxChar("DontFilterOwn",false)
-		CheckBoxChar("HeroicOnly", false)
-		CheckBoxChar("NormalOnly", false)
-	
-		--GBB.Options.AddSpace()
-	
-		GBB.Options.InLine()
-		GBB.Options.AddButton(GBB.L["BtnSelectAll"],function()
-			DoSelectFilter(true, WotlkChkBox_FilterDungeon, GBB.WOTLKDUNGEONSTART, GBB.WOTLKMAXDUNGEON) -- Doing -2 to not select trade and misc
-		end)
-		GBB.Options.AddButton(GBB.L["BtnUnselectAll"],function()
-			DoSelectFilter(false, WotlkChkBox_FilterDungeon, GBB.WOTLKDUNGEONSTART, GBB.WOTLKMAXDUNGEON)
-		end)
-	
-		GBB.Options.AddDrop(GBB.DB,"InviteRole", "DPS", {"DPS", "Tank", "Healer"})
-		GBB.Options.EndInLine()
-		GBB.Options.Indent(-10)
-		for index=GBB.ENDINGDUNGEONSTART,GBB.ENDINGDUNGEONEND do
-			WotlkChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],true)
-			SetChatOption()
-		end
-
-			-- Third Panel for TBC Dungeons
-		GBB.Options.AddPanel(GBB.L["TBCPanelFilter"])
-		GBB.Options.AddCategory(GBB.L["HeaderDungeon"])
-		GBB.Options.Indent(10)
-
-		TbcChkBox_FilterDungeon={}
-			
-		for index=GBB.TBCDUNGEONSTART,GBB.TBCDUNGEONBREAK do
-			TbcChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],false)
-		end
-
-		GBB.Options.SetRightSide()
-		--GBB.Options.AddCategory("")
-		GBB.Options.Indent(10)	
-		for index=GBB.TBCDUNGEONBREAK+1,GBB.TBCMAXDUNGEON do
-			TbcChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],false)
-		end
-
-		GBB.Options.InLine()
-		GBB.Options.AddButton(GBB.L["BtnSelectAll"],function()
-			DoSelectFilter(true, TbcChkBox_FilterDungeon, GBB.TBCDUNGEONSTART, GBB.TBCMAXDUNGEON)
-		end)
-		GBB.Options.AddButton(GBB.L["BtnUnselectAll"],function()
-			DoSelectFilter(false, TbcChkBox_FilterDungeon, GBB.TBCDUNGEONSTART, GBB.TBCMAXDUNGEON)
-		end)
-		GBB.Options.EndInLine()
+	GBB.Options.AddSpace()
+	-- a global framexml string that's pre translated by blizzard called RESET_POSITION
+	GBB.Options.AddButton(RESET_POSITION,GBB.ResetWindow)
+	GBB.Options.AddSpace()
+	----------------------------------------------------------
+	-- Expansion specific filters
+	----------------------------------------------------------
+	if not isClassicEra then 
+		--- Cata Filters
+		GenerateExpansionPanel(GBB.Enum.Expansions.Cataclysm)
+		--- Wrath Filters
+		GenerateExpansionPanel(GBB.Enum.Expansions.Wrath)
+		--- TBC Filters
+		GenerateExpansionPanel(GBB.Enum.Expansions.BurningCrusade)
 	end
-	
-
-	-- Third panel - Filter
-	GBB.Options.AddPanel(GBB.L["PanelFilter"])
-	GBB.Options.AddCategory(GBB.L["HeaderDungeon"])
-	GBB.Options.Indent(10)
-
-	local defaultChecked = false
-
-	ChkBox_FilterDungeon={}
-	for index=1,GBB.DUNGEONBREAK do
-		ChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],true)
-	end	
-
-	GBB.Options.SetRightSide()
-	--GBB.Options.AddCategory("")
-	GBB.Options.Indent(10)	
-	for index=GBB.DUNGEONBREAK+1,GBB.MAXDUNGEON do
-		ChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],true)
-	end
-
-	if string.sub(version, 1, 2) == "1." then
-		for index=GBB.ENDINGDUNGEONSTART,GBB.ENDINGDUNGEONEND do
-			ChkBox_FilterDungeon[index]=CheckBoxFilter(GBB.dungeonSort[index],true)
-		end
-	end
-	--GBB.Options.AddSpace()
-
-	
-	--GBB.Options.AddSpace()
-	if string.sub(version, 1, 2) == "1." then
-		CheckBoxChar("FilterLevel",false)
-		CheckBoxChar("DontFilterOwn",false)
-		CheckBoxChar("HeroicOnly", false)
-		CheckBoxChar("NormalOnly", false)
-	end
-
-	GBB.Options.InLine()
-
-	GBB.Options.AddButton(GBB.L["BtnSelectAll"],function()
-		DoSelectFilter(true, ChkBox_FilterDungeon, 1, GBB.MAXDUNGEON)
-	end)
-	GBB.Options.AddButton(GBB.L["BtnUnselectAll"],function()
-		DoSelectFilter(false, ChkBox_FilterDungeon, 1, GBB.MAXDUNGEON)
-	end)
-	GBB.Options.EndInLine()
-	GBB.Options.Indent(-10)
-	if string.sub(version, 1, 2) == "1." then
-		SetChatOption()
+	-- Vanilla Filters
+	GenerateExpansionPanel(GBB.Enum.Expansions.Classic)
 		
-	end
-	-- Tags
+	----------------------------------------------------------
+	-- Language Tags and Search Patterns
+	----------------------------------------------------------
 	GBB.Options.AddPanel(GBB.L["PanelTags"],false,true)
 	
-	GBB.Options.AddCategory(GBB.L["HeaderTags"])
+	GBB.Options.AddCategory(LANGUAGES_LABEL)
 	GBB.Options.Indent(10)
 	GBB.Options.InLine()
 	local locale = GetLocale()
@@ -376,7 +401,11 @@ function GBB.OptionsInit ()
 	CheckBox("TagsFrench", locale == "frFR")
 	CheckBox("TagsZhtw",locale == "zhTW")
 	CheckBox("TagsZhcn",locale == "zhCN")
-
+	GBB.Options.EndInLine()
+	GBB.Options.InLine()
+	-- hack: add ptBR, and esES/esMX checkboxes
+	CheckBox("TagsSpanish", locale == "esES" or locale == "esMX")
+	CheckBox("TagsPortuguese", locale == "ptBR")
 	CheckBox("TagsCustom",true)
 	GBB.Options.EndInLine()
 	GBB.Options.Indent(-10)
@@ -400,18 +429,20 @@ function GBB.OptionsInit ()
 	CreateEditBoxDungeon("DM2","",445,200)	
 	CreateEditBoxDungeon("DEADMINES","",445,200)
 	GBB.Options.Indent(-10)
-	
+
+	----------------------------------------------------------	
 	-- localization
+	----------------------------------------------------------
 	GBB.Options.AddPanel(GBB.L["PanelLocales"],false,true)
 	GBB.Options.AddText(GBB.L["msgLocalRestart"])
 	GBB.Options.AddSpace()
 	local locales= GBB.locales.enGB
 	local t={}
-	for key,value in pairs(locales) do 
+	for key, _ in pairs(locales) do 
 		table.insert(t,key)
 	end
 	table.sort(t)
-	for i,key in ipairs(t) do 
+	for _,key in ipairs(t) do 
 		
 		local col=GBB.L[key]~=nil and "|cffffffff" or "|cffff4040"
 		local txt=GBB.L[key.."_org"]~="["..key.."_org]" and GBB.L[key.."_org"] or GBB.L[key]
@@ -443,7 +474,10 @@ function GBB.OptionsInit ()
 
 		GBB.Options.AddEditBox(GBB.DB.CustomLocalesDungeon,key,"",col..locales[key],450,200,false,locales[key],txt)
 	end
+	
+	----------------------------------------------------------
 	-- About
+	----------------------------------------------------------
 	local function SlashText(txt)
 		GBB.Options.AddText(txt)
 	end

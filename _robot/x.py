@@ -32,7 +32,7 @@ SHIFT = 0x2A
 # press_interception_key(X)
 # quit()
 time.sleep(1)
-for i in range(1000):
+for i in range(3000):
     time.sleep(random.uniform(0.2, 0.99))
     # print("press X")
     # press_interception_key(X)

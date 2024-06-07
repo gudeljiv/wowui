@@ -25,7 +25,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.16.6"
+RatingBuster.version = "1.16.8"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -67,13 +67,6 @@ local tsort = table.sort
 local unpack = unpack
 local tonumber = tonumber
 
-local GetItemInfoCached = setmetatable({}, { __index = function(self, n)
-	self[n] = {GetItemInfo(n)} -- store in cache
-	return self[n] -- return result
-end })
-local GetItemInfo = function(item)
-	return unpack(GetItemInfoCached[item])
-end
 local GetParryChance = GetParryChance
 local GetBlockChance = GetBlockChance
 
@@ -103,7 +96,7 @@ local function setGem(info, value)
 	end
 	local gemID, gemText = StatLogic:GetGemID(value)
 	if gemID and gemText then
-		local name, link = GetItemInfo(value)
+		local name, link = C_Item.GetItemInfo(value)
 		local itemID = link:match("item:(%d+)")
 		db.profile[info[#info]].itemID = itemID
 		db.profile[info[#info]].gemID = gemID
@@ -520,6 +513,14 @@ local options = {
 							type = 'toggle',
 							name = L["Ignore unused item types"],
 							desc = L["Show stat summary only for highest level armor type and items you can use with uncommon quality and up"],
+						},
+						sumIgnoreNonPrimaryStat = {
+							type = 'toggle',
+							name = L["Ignore non-primary stat"],
+							desc = L["Show stat summary only for items with your specialization's primary stat"],
+							hidden = function()
+								return addon.tocversion < 40000
+							end,
 						},
 						sumIgnoreEquipped = {
 							type = 'toggle',
@@ -1076,6 +1077,15 @@ local options = {
 							set = setGem,
 							order = 4,
 						},
+						sumGemPrismatic = {
+							type = 'input',
+							name = EMPTY_SOCKET_PRISMATIC,
+							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							usage = L["<ItemID|Link>"],
+							get = getGem,
+							set = setGem,
+							order = 4,
+						},
 					},
 				},
 			},
@@ -1294,6 +1304,11 @@ local defaults = {
 			gemID = nil,
 			gemText = nil,
 		};
+		sumGemPrismatic = {
+			itemID = nil,
+			gemID = nil,
+			gemText = nil,
+		};
 	}
 }
 
@@ -1444,46 +1459,38 @@ do
 	local statStringToStat = setmetatable({
 		["AP"] = StatLogic.Stats.AttackPower,
 		["RANGED_AP"] = StatLogic.Stats.RangedAttackPower,
-		["MANA"] = StatLogic.Stats.Mana,
 		["MANA_REG"] = StatLogic.Stats.ManaRegen,
 		["NORMAL_MANA_REG"] = StatLogic.Stats.ManaRegenNotCasting,
-		["HEALTH"] = StatLogic.Stats.Health,
 		["HEALTH_REG"] = StatLogic.Stats.HealthRegen,
 		["NORMAL_HEALTH_REG"] = StatLogic.Stats.HealthRegenOutOfCombat,
-		["MELEE_CRIT"] = StatLogic.Stats.MeleeCrit,
-		["RANGED_CRIT"] = StatLogic.Stats.RangedCrit,
 		["SPELL_DMG"] = StatLogic.Stats.SpellDamage,
-		["SPELL_HIT"] = StatLogic.Stats.SpellHit,
-		["SPELL_CRIT"] = StatLogic.Stats.SpellCrit,
 		["HEALING"] = StatLogic.Stats.HealingPower,
-		["DODGE_REDUCTION"] = StatLogic.Stats.DodgeReduction,
-		["PARRY_REDUCTION"] = StatLogic.Stats.ParryReduction,
-		["BLOCK_CHANCE"] = StatLogic.Stats.BlockChance,
-		["CRIT_AVOIDANCE"] = StatLogic.Stats.CritAvoidance,
-		["DODGE"] = StatLogic.Stats.Dodge,
-		["MISS"] = StatLogic.Stats.Miss,
-		["PARRY"] = StatLogic.Stats.Parry,
-		["BLOCK_VALUE"] = StatLogic.Stats.BlockValue,
-		["CRIT_DAMAGE_REDUCTION"] = StatLogic.Stats.CritDamageReduction,
 		["PVP_DAMAGE_REDUCTION"] = StatLogic.Stats.PvPDamageReduction,
-		["MASTERY_EFFECT"] = StatLogic.Stats.MasteryEffect,
 	},
 	{
 		__index = function(_, stat)
-			return stat
+			if type(stat) == "string" then
+				local stat_name = stat:gsub("(%u)(%u+)_?", function(head, tail)
+					return head .. tail:lower()
+				end)
+				return StatLogic.Stats[stat_name]
+			else
+				return stat
+			end
 		end
 	})
 
 	local addStatModOption = function(add, mod, sources)
 		-- Override groups that are hidden by default
-		local groupID, rating = tostring(mod):lower():gsub("rating$", "")
+		local groupID, rating = tostring(mod):lower():gsub("_rating$", "")
 		local group = options.args.stat.args[groupID]
 		if not group then return end
 		group.hidden = false
 		if rating > 0 then
 			-- Rename Defense group to Defense Rating
-			group.name = L[mod]
-			group.desc = L["Changes the display of %s"]:format(L[mod])
+			local mod_stat = statStringToStat[mod]
+			group.name = L[mod_stat]
+			group.desc = L["Changes the display of %s"]:format(L[mod_stat])
 		end
 
 		-- ADD_HEALING_MOD_INT -> showHealingFromInt
@@ -1580,13 +1587,6 @@ do
 						addStatModOption(add, mod, sources)
 					end
 				end
-			end
-		end
-
-		for stat in pairs(StatLogic.RatingBase) do
-			local converted = StatLogic.Stats[tostring(stat):gsub("Rating$", "")]
-			if converted then
-				addStatModOption(converted, stat)
 			end
 		end
 	end
@@ -1790,6 +1790,7 @@ local EmptySocketLookup = {
 	[EMPTY_SOCKET_YELLOW] = "sumGemYellow", -- EMPTY_SOCKET_YELLOW = "Yellow Socket";
 	[EMPTY_SOCKET_BLUE] = "sumGemBlue", -- EMPTY_SOCKET_BLUE = "Blue Socket";
 	[EMPTY_SOCKET_META] = "sumGemMeta", -- EMPTY_SOCKET_META = "Meta Socket";
+	[EMPTY_SOCKET_PRISMATIC] = "sumGemPrismatic", -- EMPTY_SOCKET_PRISMATIC = "Prismatic Socket";
 }
 
 -- Avoidance Diminishing Returns
@@ -2188,7 +2189,7 @@ do
 			-- Death Knight: Forceful Deflection - Passive
 			if db.profile.showParryFromStr then
 				local rating = value * GSM("ADD_PARRY_RATING_MOD_STR")
-				local effect = StatLogic:GetEffectFromRating(rating, StatLogic.Stats.ParryRating, playerLevel)
+				local effect = rating * GSM("ADD_PARRY_MOD_PARRY_RATING")
 				if db.profile.enableAvoidanceDiminishingReturns then
 					local effectNoDR = effect
 					effect = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry + effect) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry)
@@ -2197,7 +2198,7 @@ do
 				infoTable[StatLogic.Stats.Parry] = infoTable[StatLogic.Stats.Parry] + effect
 			else
 				local rating = value * GSM("ADD_PARRY_RATING_MOD_STR")
-				local effect = StatLogic:GetEffectFromRating(rating, StatLogic.Stats.ParryRating, playerLevel)
+				local effect = rating * GSM("ADD_PARRY_MOD_PARRY_RATING")
 				processedParry = processedParry + effect
 			end
 		elseif statID == StatLogic.Stats.Agility and db.profile.showStats then
@@ -2342,12 +2343,12 @@ do
 			end
 			if db.profile.showSpellHitFromSpi then
 				local rating = value * GSM("ADD_SPELL_HIT_RATING_MOD_SPI")
-				local effect = StatLogic:GetEffectFromRating(rating, StatLogic.Stats.SpellHitRating, playerLevel)
+				local effect = rating * GSM("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING")
 				infoTable[StatLogic.Stats.SpellHit] = infoTable[StatLogic.Stats.SpellHit] + effect
 			end
 			if db.profile.showSpellCritFromSpi then
 				local rating = value * GSM("ADD_SPELL_CRIT_RATING_MOD_SPI")
-				local effect = StatLogic:GetEffectFromRating(rating, StatLogic.Stats.SpellCritRating, playerLevel)
+				local effect = rating * GSM("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING")
 				infoTable[StatLogic.Stats.SpellCrit] = infoTable[StatLogic.Stats.SpellCrit] + effect
 			end
 		elseif statID == StatLogic.Stats.Health and db.profile.showStats then
@@ -2509,53 +2510,114 @@ end
 -- Used armor type each class uses
 local classArmorTypes = {
 	WARRIOR = {
-		[Enum.ItemArmorSubclass["Plate"]] = true,
-		[Enum.ItemArmorSubclass["Mail"]] = true,
-		[Enum.ItemArmorSubclass["Leather"]] = true,
+		[Enum.ItemArmorSubclass.Plate] = true,
 	},
 	PALADIN = {
-		[Enum.ItemArmorSubclass["Plate"]] = true,
-		[Enum.ItemArmorSubclass["Mail"]] = true,
-		[Enum.ItemArmorSubclass["Leather"]] = true,
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Plate] = true,
 	},
 	HUNTER = {
-		[Enum.ItemArmorSubclass["Mail"]] = true,
-		[Enum.ItemArmorSubclass["Leather"]] = true,
+		[Enum.ItemArmorSubclass.Mail] = true,
 	},
 	ROGUE = {
-		[Enum.ItemArmorSubclass["Leather"]] = true,
+		[Enum.ItemArmorSubclass.Leather] = true,
 	},
 	PRIEST = {
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Cloth] = true,
 	},
 	DEATHKNIGHT = {
-		[Enum.ItemArmorSubclass["Plate"]] = true,
-		[Enum.ItemArmorSubclass["Mail"]] = true,
-		[Enum.ItemArmorSubclass["Leather"]] = true,
+		[Enum.ItemArmorSubclass.Plate] = true,
 	},
 	SHAMAN = {
-		[Enum.ItemArmorSubclass["Mail"]] = true,
-		[Enum.ItemArmorSubclass["Leather"]] = true,
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Mail] = true,
 	},
 	MAGE = {
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Cloth] = true,
 	},
 	WARLOCK = {
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Cloth] = true,
 	},
 	DRUID = {
-		[Enum.ItemArmorSubclass["Leather"]] = true,
-		[Enum.ItemArmorSubclass["Cloth"]] = true,
+		[Enum.ItemArmorSubclass.Leather] = true,
 	},
 }
+
+if addon.tocversion < 40000 then
+	classArmorTypes["WARRIOR"][Enum.ItemArmorSubclass.Mail] = true
+	classArmorTypes["WARRIOR"][Enum.ItemArmorSubclass.Leather] = true
+
+	classArmorTypes["PALADIN"][Enum.ItemArmorSubclass.Mail] = true
+	classArmorTypes["PALADIN"][Enum.ItemArmorSubclass.Leather] = true
+	classArmorTypes["PALADIN"][Enum.ItemArmorSubclass.Cloth] = true
+
+	classArmorTypes["HUNTER"][Enum.ItemArmorSubclass.Leather] = true
+
+	classArmorTypes["DEATHKNIGHT"][Enum.ItemArmorSubclass.Mail] = true
+	classArmorTypes["DEATHKNIGHT"][Enum.ItemArmorSubclass.Leather] = true
+
+	classArmorTypes["SHAMAN"][Enum.ItemArmorSubclass.Leather] = true
+	classArmorTypes["SHAMAN"][Enum.ItemArmorSubclass.Cloth] = true
+
+	classArmorTypes["DRUID"][Enum.ItemArmorSubclass.Cloth] = true
+end
 
 local armorTypes = {
 	[Enum.ItemArmorSubclass["Plate"]] = true,
 	[Enum.ItemArmorSubclass["Mail"]] = true,
 	[Enum.ItemArmorSubclass["Leather"]] = true,
 	[Enum.ItemArmorSubclass["Cloth"]] = true,
+}
+
+local specPrimaryStats = {
+	WARRIOR = {
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	PALADIN = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	HUNTER = {
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+	},
+	ROGUE = {
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+	},
+	PRIEST = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	DEATHKNIGHT = {
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	SHAMAN = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Intellect,
+	},
+	MAGE = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	WARLOCK = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	DRUID = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Intellect,
+	},
 }
 
 local summaryCalcData = {
@@ -2606,7 +2668,7 @@ local summaryCalcData = {
 		option = "sumMastery",
 		name = StatLogic.Stats.Mastery,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.MasteryRating], StatLogic.Stats.MasteryRating)
+			return sum[StatLogic.Stats.MasteryRating] * GSM("ADD_MASTERY_MOD_MASTERY_RATING")
 		end,
 	},
 	{
@@ -2721,7 +2783,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.MeleeHit,
 		func = function(sum)
 			return sum[StatLogic.Stats.MeleeHit]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.MeleeHitRating], StatLogic.Stats.MeleeHitRating, playerLevel)
+				+ sum[StatLogic.Stats.MeleeHitRating] * GSM("ADD_MELEE_HIT_MOD_MELEE_HIT_RATING")
 		end,
 		ispercent = true,
 	},
@@ -2739,7 +2801,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.RangedHit,
 		func = function(sum)
 			return sum[StatLogic.Stats.RangedHit]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.RangedHitRating], StatLogic.Stats.RangedHitRating, playerLevel)
+				+ sum[StatLogic.Stats.RangedHitRating] * GSM("ADD_RANGED_HIT_MOD_RANGED_HIT_RATING")
 		end,
 		ispercent = true,
 	},
@@ -2757,7 +2819,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.MeleeCrit,
 		func = function(sum)
 			return sum[StatLogic.Stats.MeleeCrit]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.MeleeCritRating], StatLogic.Stats.MeleeCritRating, playerLevel)
+				+ sum[StatLogic.Stats.MeleeCritRating] * GSM("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
 				+ sum[StatLogic.Stats.Agility] * GSM("ADD_MELEE_CRIT_MOD_AGI")
 		end,
 		ispercent = true,
@@ -2776,7 +2838,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.RangedCrit,
 		func = function(sum)
 			return sum[StatLogic.Stats.RangedCrit]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.RangedCritRating], StatLogic.Stats.RangedCritRating, playerLevel)
+				+ sum[StatLogic.Stats.RangedCritRating] * GSM("ADD_RANGED_CRIT_MOD_RANGED_CRIT_RATING")
 				+ sum[StatLogic.Stats.Agility] * GSM("ADD_RANGED_CRIT_MOD_AGI")
 		end,
 		ispercent = true,
@@ -2794,7 +2856,7 @@ local summaryCalcData = {
 		option = "sumHaste",
 		name = StatLogic.Stats.MeleeHaste,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.MeleeHasteRating], StatLogic.Stats.MeleeHasteRating, playerLevel)
+			return sum[StatLogic.Stats.MeleeHasteRating] * GSM("ADD_MELEE_HASTE_MOD_MELEE_HASTE_RATING")
 		end,
 		ispercent = true,
 	},
@@ -2811,7 +2873,7 @@ local summaryCalcData = {
 		option = "sumRangedHaste",
 		name = StatLogic.Stats.RangedHaste,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.RangedHasteRating], StatLogic.Stats.RangedHasteRating, playerLevel)
+			return sum[StatLogic.Stats.RangedHasteRating] * GSM("ADD_RANGED_HASTE_MOD_RANGED_HASTE_RATING")
 		end,
 		ispercent = true,
 	},
@@ -2836,7 +2898,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.Expertise,
 		func = function(sum)
 			return sum[StatLogic.Stats.Expertise]
-			  + StatLogic:GetEffectFromRating(sum[StatLogic.Stats.ExpertiseRating], StatLogic.Stats.ExpertiseRating, playerLevel)
+				+ sum[StatLogic.Stats.ExpertiseRating] * GSM("ADD_EXPERTISE_MOD_EXPERTISE_RATING")
 		end,
 	},
 	-- Expertise Rating - EXPERTISE_RATING
@@ -2903,7 +2965,7 @@ local summaryCalcData = {
 		option = "sumArmorPenetration",
 		name = StatLogic.Stats.ArmorPenetration,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.ArmorPenetrationRating], StatLogic.Stats.ArmorPenetrationRating, playerLevel)
+			return sum[StatLogic.Stats.ArmorPenetrationRating] * GSM("ADD_ARMOR_PENETRATION_MOD_ARMOR_PENETRATION_RATING")
 		end,
 		ispercent = true,
 	},
@@ -3012,7 +3074,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.SpellHit,
 		func = function(sum)
 			return sum[StatLogic.Stats.SpellHit]
-				+ StatLogic:GetEffectFromRating(summaryFunc[StatLogic.Stats.SpellHitRating](sum), StatLogic.Stats.SpellHitRating, playerLevel)
+				+ summaryFunc[StatLogic.Stats.SpellHitRating](sum) * GSM("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING")
 		end,
 		ispercent = true,
 	},
@@ -3031,7 +3093,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.SpellCrit,
 		func = function(sum)
 			return sum[StatLogic.Stats.SpellCrit]
-				+ StatLogic:GetEffectFromRating(summaryFunc[StatLogic.Stats.SpellCritRating](sum), StatLogic.Stats.SpellCritRating, playerLevel)
+				+ summaryFunc[StatLogic.Stats.SpellCritRating](sum) * GSM("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING")
 				+ sum[StatLogic.Stats.Intellect] * GSM("ADD_SPELL_CRIT_MOD_INT")
 		end,
 		ispercent = true,
@@ -3050,7 +3112,7 @@ local summaryCalcData = {
 		option = "sumSpellHaste",
 		name = StatLogic.Stats.SpellHaste,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.SpellHasteRating], StatLogic.Stats.SpellHasteRating, playerLevel)
+			return sum[StatLogic.Stats.SpellHasteRating] * GSM("ADD_SPELL_HASTE_MOD_SPELL_HASTE_RATING")
 		end,
 		ispercent = true,
 	},
@@ -3090,7 +3152,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.DodgeBeforeDR,
 		func = function(sum)
 			return sum[StatLogic.Stats.Dodge]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.DodgeRating], StatLogic.Stats.DodgeRating, playerLevel)
+				+ sum[StatLogic.Stats.DodgeRating] * GSM("ADD_DODGE_MOD_DODGE_RATING")
 				+ summaryFunc[StatLogic.Stats.Defense](sum) * GSM("ADD_DODGE_MOD_DEFENSE")
 				+ sum[StatLogic.Stats.Agility] * GSM("ADD_DODGE_MOD_AGI")
 		end,
@@ -3128,7 +3190,7 @@ local summaryCalcData = {
 		func = function(sum)
 			return GetParryChance() > 0 and (
 				sum[StatLogic.Stats.Parry]
-				+ StatLogic:GetEffectFromRating(summaryFunc[StatLogic.Stats.ParryRating](sum), StatLogic.Stats.ParryRating, playerLevel)
+				+ summaryFunc[StatLogic.Stats.ParryRating](sum) * GSM("ADD_PARRY_MOD_PARRY_RATING")
 				+ summaryFunc[StatLogic.Stats.Defense](sum) * GSM("ADD_PARRY_MOD_DEFENSE")
 			) or 0
 		end,
@@ -3167,7 +3229,7 @@ local summaryCalcData = {
 		func = function(sum)
 			return GetBlockChance() > 0 and (
 				sum[StatLogic.Stats.BlockChance]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.BlockRating], StatLogic.Stats.BlockRating, playerLevel)
+				+ sum[StatLogic.Stats.BlockRating] * GSM("ADD_BLOCK_MOD_BLOCK_RATING")
 				+ summaryFunc[StatLogic.Stats.Defense](sum) * GSM("ADD_BLOCK_CHANCE_MOD_DEFENSE")
 				+ summaryFunc[StatLogic.Stats.MasteryEffect](sum) * GSM("ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT")
 			) or 0
@@ -3227,7 +3289,7 @@ local summaryCalcData = {
 		name = StatLogic.Stats.Defense,
 		func = function(sum)
 			return sum[StatLogic.Stats.Defense]
-				+ StatLogic:GetEffectFromRating(sum[StatLogic.Stats.DefenseRating], StatLogic.Stats.DefenseRating, playerLevel)
+				+ sum[StatLogic.Stats.DefenseRating] * GSM("ADD_DEFENSE_MOD_DEFENSE_RATING")
 		end,
 	},
 	-- Avoidance - DODGE, PARRY, MELEE_HIT_AVOID, BLOCK(Optional)
@@ -3251,7 +3313,7 @@ local summaryCalcData = {
 		option = "sumCritAvoid",
 		name = StatLogic.Stats.CritAvoidance,
 		func = function(sum)
-			return StatLogic:GetEffectFromRating(sum[StatLogic.Stats.ResilienceRating], StatLogic.Stats.ResilienceRating) * GSM("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
+			return sum[StatLogic.Stats.ResilienceRating] * GSM("ADD_RESILIENCE_MOD_RESILIENCE_RATING") * GSM("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
 				+ summaryFunc[StatLogic.Stats.Defense](sum) * GSM("ADD_CRIT_AVOIDANCE_MOD_DEFENSE")
 		 end,
 		ispercent = true,
@@ -3341,10 +3403,10 @@ function RatingBuster:StatSummary(tooltip, link)
 
 	-- Show stat summary only for highest level armor type and items you can use with uncommon quality and up
 	if db.global.sumIgnoreUnused then
-		local _, _, itemRarity, _, _, _, _, _, inventoryType, _, classID, subclassID = GetItemInfo(link)
+		local _, _, itemQuality, _, _, _, _, _, inventoryType, _, _, classID, subclassID = C_Item.GetItemInfo(link)
 
 		-- Check rarity
-		if not itemRarity or itemRarity < 2 then
+		if not itemQuality or itemQuality < 2 then
 			return
 		end
 
@@ -3374,6 +3436,7 @@ function RatingBuster:StatSummary(tooltip, link)
 	local yellow = db.profile.sumGemYellow.gemID
 	local blue = db.profile.sumGemBlue.gemID
 	local meta = db.profile.sumGemMeta.gemID
+	local prismatic = db.profile.sumGemPrismatic.gemID
 
 	if db.global.sumIgnoreEnchant then
 		link = StatLogic:RemoveEnchant(link)
@@ -3384,7 +3447,7 @@ function RatingBuster:StatSummary(tooltip, link)
 	if db.global.sumIgnoreGems then
 		link = StatLogic:RemoveGem(link)
 	else
-		link = StatLogic:BuildGemmedTooltip(link, red, yellow, blue, meta)
+		link = StatLogic:BuildGemmedTooltip(link, red, yellow, blue, meta, prismatic)
 	end
 
 	-- Diff Display Style
@@ -3436,6 +3499,16 @@ function RatingBuster:StatSummary(tooltip, link)
 	if not statData.sum then return end
 	if not db.global.calcSum then
 		statData.sum = nil
+	end
+
+	if db.global.sumIgnoreNonPrimaryStat and addon.tocversion >= 40000 then
+		local spec = GetPrimaryTalentTree()
+		if spec then
+			local primaryStat = specPrimaryStats[class][spec]
+			if statData.sum[primaryStat] == 0 then
+				return
+			end
+		end
 	end
 
 	-- Ignore bags

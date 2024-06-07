@@ -1,9 +1,14 @@
 # RatingBuster
 
-## [1.16.6](https://github.com/raethkcj/RatingBuster/tree/1.16.6) (2024-05-09)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.16.5...1.16.6) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.16.8](https://github.com/raethkcj/RatingBuster/tree/1.16.8) (2024-06-06)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.16.6...1.16.8) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Update Cata agility conversions  
-- Fix alternating tooltips for items on action bars  
-- Update C\_Item deprecations  
-- Add Cata Health Regen  
+- Add non-primary stat localizations  
+- Improve breakdown insertion points  
+- Update Cata DodgePerAgi  
+- Add Prismatic Socket substitutions  
+- Add primary stat ignore setting (Closes #180)  
+- Update deprecated GetItemInfo usages  
+- Fix ignore armor type setting  
+- Fix stat option generation  
+- Use stat mods for most rating conversions  

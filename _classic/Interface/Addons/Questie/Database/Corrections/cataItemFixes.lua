@@ -118,6 +118,9 @@ function CataItemFixes.Load()
         [46858] = { -- Personal Riches
             [itemKeys.objectDrops] = {195525},
         },
+        [46896] = { -- Salvaged Supplies
+            [itemKeys.npcDrops] = {},
+        },
         [47044] = { -- Shiny Bling
             [itemKeys.vendors] = {35120},
         },
@@ -183,6 +186,7 @@ function CataItemFixes.Load()
         },
         [49881] = { -- Slaver's Key
             [itemKeys.class] = itemClasses.QUEST,
+            [itemKeys.npcDrops] = {37701},
         },
         [49921] = { -- Unearthed Memento
             [itemKeys.npcDrops] = {},
@@ -505,6 +509,15 @@ function CataItemFixes.Load()
         },
         [63027] = { -- Brazier Torch
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [63034] = { -- Dusty Prison Journal
+            [itemKeys.npcDrops] = {},
+        },
+        [63149] = { -- Cursed Shackles
+            [itemKeys.npcDrops] = {},
+        },
+        [63315] = { -- Cellblock Rations
+            [itemKeys.npcDrops] = {47550},
         },
         [63333] = { -- Obsidian Piston
             [itemKeys.npcDrops] = {7039},

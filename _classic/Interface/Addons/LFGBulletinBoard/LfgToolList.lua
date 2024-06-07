@@ -208,34 +208,34 @@ function GBB.GetLfgList()
 end
 
 function GBB.UpdateLfgTool()
-    if LFGBrowseFrame and LFGBrowseFrame.CategoryDropDown.selectedValue == 120 then return end
-    if  LFGBrowseFrame and LFGBrowseFrame.CategoryDropDown.selectedValue == nil then  
-        LFGBrowseFrame.CategoryDropDown.selectedValue = 2
+    if LFGListFrame and LFGListFrame.CategorySelection.selectedCategory == 120 then return end
+    if  LFGListFrame and LFGListFrame.CategorySelection.selectedCategory == nil then  
+        LFGListFrame.CategorySelection.selectedCategory = 2
     end
 
     LastUpdateTime = time()
     GBB.LfgRequestList = {}
     
     local category = 2
-    if LFGBrowseFrame and LFGBrowseFrame.CategoryDropDown.selectedValue ~= nil then 
-        category = LFGBrowseFrame.CategoryDropDown.selectedValue
+    if LFGListFrame and LFGListFrame.CategorySelection.selectedCategory ~= nil then 
+        category = LFGListFrame.CategorySelection.selectedCategory
     end
 
 	local activities = C_LFGList.GetAvailableActivities(category)
 	--C_LFGList.Search(category, activities)
-    if LFGBrowseFrame and LFGBrowseFrame.searching then return end
+    if LFGListFrame and LFGListFrame.searching then return end
 
 	GBB.GetLfgList()
     GBB.LfgUpdateList()
 end
 
 function GBB.UpdateLfgToolNoSearch()
-    if LFGBrowseFrame.CategoryDropDown.selectedValue == 120 then return end
-    if  LFGBrowseFrame.CategoryDropDown.selectedValue == nil then  
-        LFGBrowseFrame.CategoryDropDown.selectedValue = 2
+    if LFGListFrame.CategorySelection.selectedCategory == 120 then return end
+    if  LFGListFrame.CategorySelection.selectedCategory == nil then  
+        LFGListFrame.CategorySelection.selectedCategory = 2
     end
 
-if LFGBrowseFrame.searching then return end
+if LFGListFrame and LFGListFrame.searching then return end
 
     GBB.LfgRequestList = {}
     GBB.GetLfgList()
@@ -361,11 +361,12 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 			prefix="|r"
 		end
 		local ClassIcon=""
-		if GBB.DB.ShowClassIcon and req.class and GBB.Tool.IconClass[req.class] then
+		if GBB.DB.ShowClassIcon and req.class then
 			if doCompact<1  or GBB.DB.ChatStyle then
-				ClassIcon=GBB.Tool.IconClass[req.class]
+				ClassIcon = GBB.Tool.GetClassIcon(req.class) or ""
+
 			else
-				ClassIcon=GBB.Tool.IconClassBig[req.class]
+				ClassIcon = GBB.Tool.GetClassIcon(req.class, 18) or ""
 			end
 		end
 
@@ -705,7 +706,7 @@ function GBB.LfgRequestShowTooltip(self)
 		if GBB.DB.EnableGroup and GBB.GroupTrans and GBB.GroupTrans[req.name] then
 			local entry=GBB.GroupTrans[req.name]
 
-			GameTooltip:AddLine(GBB.Tool.IconClass[entry.class]..
+			GameTooltip:AddLine((GBB.Tool.GetClassIcon(entry.class) or "")..
 				"|c"..GBB.Tool.ClassColor[entry.class].colorStr ..
 				entry.name)
 			if entry.dungeon then

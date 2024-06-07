@@ -1,0 +1,16 @@
+tag 87e8b938af8c1c0b81da69fd8cdb563a657542e7 v1.4.7
+Author:	skyler-code <skylerhiscock@gmail.com>
+Date:	Wed Jun 5 02:48:12 2024 -0500
+
+commit 3f01c3aa51a8a3e656ac49f43d4cd5ac8939e9c6
+Author: skyler-code <skylerhiscock@gmail.com>
+Date:   Wed Jun 5 02:45:53 2024 -0500
+
+    reset wasnt performing way I'd hoped
+
+commit bf1efe9b7a761cfd1b60f6f3b4b82272ca70b698
+Author: skyler-code <skylerhiscock@gmail.com>
+Date:   Wed Jun 5 02:18:20 2024 -0500
+
+    properly format Result text
+

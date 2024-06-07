@@ -57,12 +57,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
+			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["length"] = 65074,
-			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 		},
 		["+RestedXP Northrend Daily Quests||The Kalu'ak Daily Quests"] = {
@@ -85,26 +85,13 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
+			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "3.1 - Collectable Items",
 			["length"] = 33724,
-			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "3.1 - Collectable Items",
-		},
-		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
-			["guideId"] = 2576357947,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
-			["cata"] = "",
-			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Icecrown Gunship Unlock Daily Quests",
-			["farm"] = true,
-			["name"] = "Icecrown Gunship Unlock Daily Quests",
-			["length"] = 51510,
-			["wotlk"] = "",
-			["displayname"] = "Icecrown Gunship Unlock Daily Quests",
 		},
 		["RXP Cataclysm 1-80 (H)||6-10 Durotar"] = {
 			["guideId"] = 3404204824,
@@ -133,10 +120,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "BloodElf",
 			["length"] = 16765,
-			["name"] = "01-06 Sunstrider Isle",
 			["version"] = 1,
-			["menuIndex"] = 2,
 			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Sunstrider Isle",
+			["menuIndex"] = 2,
+			["name"] = "01-06 Sunstrider Isle",
 			["subweight"] = "10000",
 			["submenuIndex"] = 1,
 			["displayname"] = "1-6 Sunstrider Isle",
@@ -180,18 +167,7 @@ RXPCData = {
 			["wotlk"] = "",
 			["displayname"] = "The Sons of Hodir Daily Quests Route",
 		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
-			["guideId"] = 3722581794,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
-			["cata"] = "",
-			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Daily Quests Route",
-			["farm"] = true,
-			["name"] = "Ebon Blade Daily Quests Route",
-			["length"] = 5934,
-			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Daily Quests Route",
+		["enableGroupQuests"] = {
 		},
 		["RestedXP Cataclysm Preparation||4.1 - 25 Questlog prep - Dungeons and Raids"] = {
 			["guideId"] = 4042332726,
@@ -199,12 +175,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
+			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 			["length"] = 11950,
-			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 		},
 		["RXP Cataclysm 60-80 (H)||67-67 Blade's Edge Turn-ins"] = {
@@ -295,21 +271,6 @@ RXPCData = {
 			["internal"] = "",
 			["displayname"] = "77-78 Sholazar Basin",
 		},
-		["RestedXP Cataclysm Preparation||2.3 - 25 Questlog prep - Icecrown"] = {
-			["guideId"] = 4214625991,
-			["subgroup"] = "Preparation guide",
-			["next"] = "3.1 - Collectable Items",
-			["group"] = "RestedXP Cataclysm Preparation",
-			["cata"] = "",
-			["include"] = "QuestDB",
-			["version"] = 7,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
-			["wotlk"] = "",
-			["name"] = "2.3 - 25 Questlog prep - Icecrown",
-			["length"] = 180148,
-			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
-			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
-		},
 		["RXPGuides||40-45 Eastern Plaguelands"] = {
 			["guideId"] = 3845852368,
 			["group"] = "RXPGuides",
@@ -331,6 +292,24 @@ RXPCData = {
 			["length"] = 137,
 			["name"] = "84-85 Twilight Highlands",
 			["displayname"] = "84-85 Twilight Highlands",
+		},
+		["RXP Cataclysm 1-80 (H)||1-6 Tirisfal Glades"] = {
+			["guideId"] = 605490613,
+			["defaultfor"] = "Undead",
+			["group"] = "RXP Cataclysm 1-80 (H)",
+			["cata"] = "",
+			["defaultFor"] = "Undead",
+			["lowPrio"] = "*RXP Cataclysm 1-80 (H)",
+			["menuIndex"] = 6,
+			["subweight"] = "10000",
+			["submenuIndex"] = 4,
+			["displayname"] = "1-6 Tirisfal Glades",
+			["next"] = "6-10 Eversong Woods",
+			["enabledFor"] = "Horde",
+			["name"] = "01-06 Tirisfal Glades",
+			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Tirisfal Glades",
+			["length"] = 22712,
+			["version"] = 1,
 		},
 		["RXP Cataclysm 1-80 (H)||48-50 Searing Gorge"] = {
 			["guideId"] = 513805646,
@@ -358,7 +337,11 @@ RXPCData = {
 			["version"] = 5,
 			["displayname"] = "40-45 Eastern Plaguelands",
 		},
-		["enableGroupQuests"] = {
+		["enabledDungeons"] = {
+			["Horde"] = {
+			},
+			["Alliance"] = {
+			},
 		},
 		["+RestedXP Northrend Daily Quests||Jewelcrafting"] = {
 			["guideId"] = 2685800964,
@@ -373,44 +356,44 @@ RXPCData = {
 			["wotlk"] = "",
 			["displayname"] = "Jewelcrafting",
 		},
-		["enabledDungeons"] = {
-			["Horde"] = {
-			},
-			["Alliance"] = {
-			},
-		},
-		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
-			["guideId"] = 3206093888,
-			["subgroup"] = "Preparation guide",
-			["next"] = "2.3 - 25 Questlog prep - Icecrown",
-			["group"] = "RestedXP Cataclysm Preparation",
+		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
+			["guideId"] = 3722581794,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
 			["cata"] = "",
-			["include"] = "QuestDB",
-			["version"] = 7,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["wotlk"] = "",
-			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["length"] = 65478,
-			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-		},
-		["RXP Cataclysm 1-80 (H)||1-6 Tirisfal Glades"] = {
-			["guideId"] = 605490613,
-			["defaultfor"] = "Undead",
-			["group"] = "RXP Cataclysm 1-80 (H)",
-			["cata"] = "",
-			["defaultFor"] = "Undead",
-			["lowPrio"] = "*RXP Cataclysm 1-80 (H)",
-			["menuIndex"] = 6,
-			["subweight"] = "10000",
-			["submenuIndex"] = 4,
-			["displayname"] = "1-6 Tirisfal Glades",
-			["next"] = "6-10 Eversong Woods",
-			["enabledFor"] = "Horde",
-			["name"] = "01-06 Tirisfal Glades",
-			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Tirisfal Glades",
-			["length"] = 22712,
 			["version"] = 1,
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Daily Quests Route",
+			["farm"] = true,
+			["name"] = "Ebon Blade Daily Quests Route",
+			["length"] = 5934,
+			["wotlk"] = "",
+			["displayname"] = "Ebon Blade Daily Quests Route",
+		},
+		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
+			["guideId"] = 2576357947,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
+			["cata"] = "",
+			["version"] = 1,
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Icecrown Gunship Unlock Daily Quests",
+			["farm"] = true,
+			["name"] = "Icecrown Gunship Unlock Daily Quests",
+			["length"] = 51510,
+			["wotlk"] = "",
+			["displayname"] = "Icecrown Gunship Unlock Daily Quests",
+		},
+		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
+			["guideId"] = 4116256639,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
+			["cata"] = "",
+			["version"] = 1,
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
+			["farm"] = true,
+			["name"] = "Ebon Blade Unlock Daily Quests",
+			["length"] = 16412,
+			["wotlk"] = "",
+			["displayname"] = "Ebon Blade Unlock Daily Quests",
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Mulgore"] = {
 			["guideId"] = 3243117282,
@@ -448,6 +431,21 @@ RXPCData = {
 			["length"] = 35580,
 			["version"] = 1,
 		},
+		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
+			["guideId"] = 3206093888,
+			["subgroup"] = "Preparation guide",
+			["next"] = "2.3 - 25 Questlog prep - Icecrown",
+			["group"] = "RestedXP Cataclysm Preparation",
+			["cata"] = "",
+			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["wotlk"] = "",
+			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["length"] = 65478,
+			["version"] = 7,
+			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+		},
 		["RXP Cataclysm 1-80 (H)||6-10 Eversong Woods"] = {
 			["guideId"] = 572198316,
 			["defaultfor"] = "BloodElf/Undead",
@@ -457,10 +455,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "BloodElf/Undead",
 			["length"] = 34337,
-			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Eversong Woods",
 			["name"] = "06-10 Eversong Woods",
-			["menuIndex"] = 2,
 			["version"] = 1,
+			["menuIndex"] = 2,
+			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Eversong Woods",
 			["subweight"] = "10000",
 			["submenuIndex"] = 2,
 			["displayname"] = "6-10 Eversong Woods",
@@ -472,28 +470,30 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 			["length"] = 35938,
-			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 		},
 		["dungeonGuides"] = {
 		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
-			["guideId"] = 4116256639,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
+		["RestedXP Cataclysm Preparation||2.3 - 25 Questlog prep - Icecrown"] = {
+			["guideId"] = 4214625991,
+			["subgroup"] = "Preparation guide",
+			["next"] = "3.1 - Collectable Items",
+			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
-			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
-			["farm"] = true,
-			["name"] = "Ebon Blade Unlock Daily Quests",
-			["length"] = 16412,
+			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
+			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Unlock Daily Quests",
+			["name"] = "2.3 - 25 Questlog prep - Icecrown",
+			["length"] = 180148,
+			["version"] = 7,
+			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
 		},
 		["RXP Cataclysm 60-80 (H)||78-79 The Storm Peaks"] = {
 			["guideId"] = 1143410206,
@@ -526,12 +526,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
-			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
+			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["length"] = 40743,
-			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
+			["version"] = 7,
 			["displayname"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 		},
 		["RXP Cataclysm 80-85 (H)||83-84 Uldum"] = {
@@ -690,23 +690,44 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26071] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Defiled Scalding Chasm wildlife: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[25962] = {
+		[25944] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Bloated Kelp Bulb: 0/8",
+				["numRequired"] = 5,
+				["text"] = "Orgrimmar Axe: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Orgrimmar Helm: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Orgrimmar Breastplate: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[26089] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Coldlight Hunter slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Coldlight Oracle slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[25936] = {
 			{
@@ -744,28 +765,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25944] = {
+		[26071] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Orgrimmar Axe: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Defiled Scalding Chasm wildlife: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Orgrimmar Helm: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Orgrimmar Breastplate: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
 		},
 		[25884] = {
 			{
@@ -785,21 +792,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26091] = {
+		[25964] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Use Eel-Splosive Device on Devious Great-Eel: 0/1",
+				["numRequired"] = 6,
+				["text"] = "Injured Assault Volunteers rescued: 0/6",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Avenge Wolf: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[25952] = {
 			{
@@ -849,48 +849,55 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25980] = {
+		[25218] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Banner planted in Fathom-Caller Azrajar's corpse: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[25960] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Horde Lookout restocked: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26089] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Coldlight Hunter slain: 0/4",
+				["text"] = "Fill Sambino's Air Balloon: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Coldlight Oracle slain: 0/4",
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Sambino's Air Valve: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[25964] = {
+		[26087] = {
 			{
-				["type"] = "monster",
+				["type"] = "item",
 				["numRequired"] = 6,
-				["text"] = "Injured Assault Volunteers rescued: 0/6",
+				["text"] = "Glow-Juice: 0/6",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+		},
+		[25962] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Bloated Kelp Bulb: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26091] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Use Eel-Splosive Device on Devious Great-Eel: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Avenge Wolf: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[25982] = {
 			{
@@ -951,39 +958,32 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25595] = {
+		[25976] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Snapjaw Grouper Meat: 0/8",
+				["numRequired"] = 6,
+				["text"] = "Deepfin Plunder: 0/6",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25859] = {
+		[25732] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 20,
-				["text"] = "Vrykul Ledge Kvaldir slain: 0/20",
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "The Pewter Pounder: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25218] = {
+		[25980] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Fill Sambino's Air Balloon: 0/1",
+				["text"] = "Banner planted in Fathom-Caller Azrajar's corpse: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Sambino's Air Valve: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[25220] = {
 			{
@@ -1003,11 +1003,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25732] = {
+		[25859] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "The Pewter Pounder: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 20,
+				["text"] = "Vrykul Ledge Kvaldir slain: 0/20",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1116,21 +1116,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[26135] = {
+		[26008] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Infiltrate Quel'Dormir Temple: 0/1",
+				["numRequired"] = 10,
+				["text"] = "Imprisoned Warriors Freed: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Witness the Concluding Story of the Battlemaiden: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[25629] = {
 			{
@@ -1326,11 +1319,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26096] = {
+		[25969] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Scalding Shroom: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Muckskin Scrounger slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1369,14 +1362,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[25459] = {
+		[26221] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Brinescale Serpents Slain: 0/4",
+				["numRequired"] = 1,
+				["text"] = "Board the Verne once it arrives: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Secure Tenebrous Cavern: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[25439] = {
 			{
@@ -1387,20 +1387,20 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25334] = {
+		[26096] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Share in Farseer Gadra's Spirit Vision: 0/1",
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Scalding Shroom: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25967] = {
+		[25459] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Return to the Forward Post: 0/1",
+				["numRequired"] = 4,
+				["text"] = "Brinescale Serpents Slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1580,27 +1580,20 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[26221] = {
+		[25967] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Board the Verne once it arrives: 0/1",
+				["text"] = "Return to the Forward Post: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+		},
+		[25334] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Secure Tenebrous Cavern: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[25969] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Muckskin Scrounger slain: 0/10",
+				["text"] = "Share in Farseer Gadra's Spirit Vision: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1754,14 +1747,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26008] = {
+		[26135] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Imprisoned Warriors Freed: 0/10",
+				["numRequired"] = 1,
+				["text"] = "Infiltrate Quel'Dormir Temple: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Witness the Concluding Story of the Battlemaiden: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[26130] = {
 			{
@@ -1786,11 +1786,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[25976] = {
+		[25595] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 6,
-				["text"] = "Deepfin Plunder: 0/6",
+				["numRequired"] = 8,
+				["text"] = "Snapjaw Grouper Meat: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1804,11 +1804,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26087] = {
+		[25960] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 6,
-				["text"] = "Glow-Juice: 0/6",
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Horde Lookout restocked: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -1848,12 +1848,14 @@ RXPCData = {
 		[150] = "Cosmowrench, Netherstorm",
 		[151] = "Swamprat Post, Zangarmarsh",
 		[77] = "Camp Taurajo, The Barrens",
+		[326] = "Ulduar, The Storm Peaks",
 		[248] = "Apothecary Camp, Howling Fjord",
 		[304] = "The Argent Stand, Zul'Drak",
 		[249] = "Camp Oneqwah, Grizzly Hills",
 		[604] = "Dreadmaul Hold, Blasted Lands",
 		[250] = "Conquest Hold, Grizzly Hills",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
+		[323] = "Grom'arsh Crash-Site, The Storm Peaks",
 		[310] = "Dalaran",
 		[252] = "Wyrmrest Temple, Dragonblight",
 		[80] = "Ratchet, The Barrens",
@@ -1861,10 +1863,10 @@ RXPCData = {
 		[306] = "Light's Breach, Zul'Drak",
 		[191] = "Vengeance Landing, Howling Fjord",
 		[289] = "Amber Ledge, Borean Tundra",
-		[82] = "Silvermoon City",
+		[257] = "Warsong Hold, Borean Tundra",
 		[42] = "Camp Mojache, Feralas",
 		[130] = "Hellfire Peninsula, The Dark Portal",
-		[257] = "Warsong Hold, Borean Tundra",
+		[320] = "K3, The Storm Peaks",
 		[384] = "The Bulwark, Tirisfal",
 		[163] = "Mok'Nathal Village, Blade's Edge Mountains",
 		[260] = "Kor'kron Vanguard, Dragonblight",
@@ -1882,20 +1884,20 @@ RXPCData = {
 		[18] = "Booty Bay, Stranglethorn",
 		[22] = "Thunder Bluff, Mulgore",
 		[102] = "Falcon Watch, Hellfire Peninsula",
-		[118] = "Zabra'jin, Zangarmarsh",
+		[30] = "Freewind Post, Thousand Needles",
 		[521] = "Smuggler's Scar, Vashj'ir",
 		[609] = "Sandy Beach, Vashj'ir",
 		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
 		[56] = "Stonard, Swamp of Sorrows",
 		[127] = "Stonebreaker Hold, Terokkar Forest",
 		[25] = "Crossroads, The Barrens",
-		[30] = "Freewind Post, Thousand Needles",
+		[118] = "Zabra'jin, Zangarmarsh",
 		[383] = "Thondoril River, Western Plaguelands",
 		[128] = "Shattrath, Terokkar Forest",
 		[10] = "The Sepulcher, Silverpine Forest",
 		[254] = "Venomspite, Dragonblight",
 		[61] = "Splintertree Post, Ashenvale",
-		[320] = "K3, The Storm Peaks",
+		[82] = "Silvermoon City",
 		[23] = "Orgrimmar, Durotar",
 		[40] = "Gadgetzan, Tanaris",
 	},
@@ -1909,40 +1911,40 @@ RXPCData = {
 		[25908] = "Stick it to Them",
 		[25388] = "Crate of Crab Meat",
 		[25658] = "Built to Last",
-		[26194] = "Defending the Rift",
+		[27718] = "Warchief's Command: Vashj'ir!",
 		[25884] = "Come Hell or High Water",
-		[25440] = "Fathom-Lord Zin'jatar",
-		[26122] = "Environmental Awareness",
-		[26087] = "\"Glow-Juice\"",
-		[25670] = "DUN-dun-DUN-dun-DUN-dun",
+		[25948] = "Bring It On!",
+		[25995] = "Overseer Idra'kess",
+		[25960] = "Not Entirely Unprepared",
+		[25924] = "Call of Duty",
 		[25164] = "Backed Into a Corner",
 		[25593] = "Shelled Salvation",
 		[27708] = "The Warden's Time",
-		[25980] = "A Standard Day for Azrajar",
+		[25218] = "Undersea Inflation",
 		[25859] = "No Trespass Forgiven",
 		[25936] = "Pay It Forward",
 		[26065] = "Free Wil'hai",
-		[27718] = "Warchief's Command: Vashj'ir!",
+		[26194] = "Defending the Rift",
 		[25942] = "Buy Us Some Time",
-		[25944] = "Girding Our Loins",
+		[26071] = "Clearing the Defiled",
 		[25946] = "Helm's Deep",
-		[25948] = "Bring It On!",
+		[25440] = "Fathom-Lord Zin'jatar",
 		[25619] = "Reoccupation",
 		[25952] = "Caught Off-Guard",
 		[25954] = "An Occupation of Time",
-		[25360] = "Crabby Patrons",
+		[26122] = "Environmental Awareness",
 		[25993] = "Body Blows",
-		[25960] = "Not Entirely Unprepared",
-		[26089] = "Die Fishman Die",
+		[26087] = "\"Glow-Juice\"",
+		[25962] = "Properly Inspired",
 		[25964] = "Fallen But Not Forgotten",
-		[25371] = "The Abyssal Ride",
+		[26133] = "Fiends from the Netherworld",
 		[25587] = "Gimme Shelter!",
 		[25970] = "Come Prepared",
 		[25972] = "Honor and Privilege",
 		[25974] = "Sira'kess Slaying",
-		[25976] = "Treasure Reclamation",
+		[25595] = "Something Edible",
 		[25883] = "How Disarming",
-		[25218] = "Undersea Inflation",
+		[25980] = "A Standard Day for Azrajar",
 		[25220] = "Slippery Threat",
 		[26111] = "... It Will Come",
 		[25732] = "A Bone to Pick",
@@ -1955,8 +1957,8 @@ RXPCData = {
 		[26000] = "Spelunking",
 		[25477] = "Better Late Than Dead",
 		[25602] = "Can't Start a Fire Without a Spark",
-		[26133] = "Fiends from the Netherworld",
-		[26008] = "Decompression",
+		[25371] = "The Abyssal Ride",
+		[26135] = "Visions of the Past: Rise from the Deep",
 		[25629] = "Her Lady's Hand",
 		[25377] = "The Horde's Hoard",
 		[26141] = "Runestones of Binding",
@@ -1974,10 +1976,10 @@ RXPCData = {
 		[25657] = "Dah, Nunt... Dah, Nunt...",
 		[25659] = "Not Soon Forgotten",
 		[27699] = "Shark Weak",
-		[25459] = "Ophidophobia",
+		[26221] = "Full Circle",
 		[26096] = "Scalding Shrooms",
 		[25794] = "Undersea Sanctuary",
-		[25967] = "Losing Ground",
+		[25459] = "Ophidophobia",
 		[25982] = "Those Aren't Masks",
 		[25419] = "Lady La-La's Medallion",
 		[25929] = "Sea Legs",
@@ -1999,7 +2001,7 @@ RXPCData = {
 		[26088] = "Here Fishie Fishie",
 		[25963] = "Swift Action",
 		[25965] = "Gauging Success",
-		[26221] = "Full Circle",
+		[25967] = "Losing Ground",
 		[25334] = "The Looming Threat",
 		[25971] = "Unfurling Plan",
 		[25592] = "Deep Attraction",
@@ -2011,18 +2013,18 @@ RXPCData = {
 		[25858] = "By Her Lady's Word",
 		[25860] = "At All Costs",
 		[25989] = "Capture the Crab",
-		[26135] = "Visions of the Past: Rise from the Deep",
+		[26008] = "Decompression",
 		[25358] = "Nerve Tonic",
-		[25995] = "Overseer Idra'kess",
+		[25360] = "Crabby Patrons",
 		[25743] = "Decisions, Decisions",
 		[26126] = "The Perfect Fuel",
-		[25595] = "Something Edible",
+		[25976] = "Treasure Reclamation",
 		[26130] = "Unplug L'ghorek",
-		[25962] = "Properly Inspired",
+		[26089] = "Die Fishman Die",
 		[26007] = "Debriefing",
-		[26071] = "Clearing the Defiled",
+		[25944] = "Girding Our Loins",
 		[25503] = "Blackfin's Booty",
-		[25924] = "Call of Duty",
+		[25670] = "DUN-dun-DUN-dun-DUN-dun",
 		[25900] = "Making Contact",
 	},
 	["GA"] = false,
@@ -2040,22 +2042,22 @@ RXPCData = {
 		[83] = true,
 		[39] = true,
 		[19] = true,
-		[6] = true,
+		[23] = true,
 		[82] = true,
 		[77] = true,
-		[86] = true,
-		[23] = true,
+		[3] = true,
+		[6] = true,
 		[12] = true,
 		[47] = true,
-		[96] = true,
 		[65] = true,
+		[49] = true,
 		[50] = true,
 		[103] = true,
 		[52] = true,
 		[27] = true,
-		[49] = true,
+		[96] = true,
 		[28] = true,
-		[3] = true,
+		[86] = true,
 		[57] = true,
 		[61] = true,
 	},
@@ -2293,13 +2295,13 @@ RXPCData = {
 		10445, -- [230]
 		12314, -- [231]
 		[245] = 13349,
-		[253] = 13580,
 		[257] = 4684,
+		[246] = 13283,
 		[0] = 258,
 		[247] = 13361,
 		[244] = 12889,
 		[248] = 13140,
-		[246] = 13283,
+		[253] = 13580,
 	},
 }
 RXPCTrackingData = {
@@ -2394,7 +2396,7 @@ RXPCTrackingData = {
 							[25467] = 30470,
 							[25948] = 30470,
 							[25794] = 22880,
-							[27685] = 3025,
+							[25949] = 30470,
 							[25638] = 22880,
 							[25929] = 30470,
 							[25377] = 30470,
@@ -2407,7 +2409,7 @@ RXPCTrackingData = {
 							[25388] = 30470,
 							[25598] = 30470,
 							[25459] = 30470,
-							[25949] = 30470,
+							[27685] = 3025,
 							[25477] = 30470,
 						},
 						["Durotar"] = {
@@ -2503,13 +2505,29 @@ RXPCTrackingData = {
 					["groupExperience"] = 1483810,
 					["deaths"] = 0,
 					["mobs"] = {
+						["The Storm Peaks"] = {
+							["xp"] = 23760,
+							["count"] = 1,
+						},
+						["Halls of Stone"] = {
+							["xp"] = 582228,
+							["count"] = 109,
+						},
 						["The Vortex Pinnacle"] = {
 							["xp"] = 798984,
 							["count"] = 59,
 						},
+						["Dalaran"] = {
+							["xp"] = 143,
+							["count"] = 1,
+						},
 						["Throne of Tides"] = {
 							["xp"] = 684826,
 							["count"] = 137,
+						},
+						["Halls of Lightning"] = {
+							["xp"] = 1530016,
+							["count"] = 148,
 						},
 					},
 					["timestamp"] = {
@@ -2525,6 +2543,20 @@ RXPCTrackingData = {
 						["started"] = 543397,
 					},
 					["quests"] = {
+						["The Storm Peaks"] = {
+							[12882] = 23760,
+						},
+						["Halls of Stone"] = {
+							[29850] = 29700,
+						},
+						["Halls of Lightning"] = {
+							[29861] = 48510,
+							[29862] = 36410,
+							[29860] = 36410,
+						},
+						["Dalaran"] = {
+							[29609] = 143,
+						},
 					},
 				},
 				[82] = {
@@ -2625,12 +2657,12 @@ RXPCComms = {
 					["xp"] = 1851,
 				},
 				["Brangrixon"] = {
-					["isRxp"] = true,
+					["level"] = 41,
 					["lastSeen"] = 1211747.481,
 					["xpPercentage"] = 82,
-					["level"] = 41,
-					["timePlayed"] = 3172.202000000048,
 					["class"] = "HUNTER",
+					["timePlayed"] = 3172.202000000048,
+					["isRxp"] = true,
 				},
 				["Tyranyr"] = {
 					["timePlayed"] = 1161.074000000022,
@@ -2698,12 +2730,12 @@ RXPCComms = {
 					["xp"] = 140,
 				},
 				["Imanerd"] = {
-					["isRxp"] = true,
+					["level"] = 45,
 					["lastSeen"] = 127160.52,
 					["xpPercentage"] = 53,
-					["level"] = 45,
-					["timePlayed"] = 2378.198999999993,
 					["class"] = "MAGE",
+					["timePlayed"] = 2378.198999999993,
+					["isRxp"] = true,
 				},
 				["Egorrussian"] = {
 					["timePlayed"] = 1186.624000000069,
@@ -2766,20 +2798,20 @@ RXPCComms = {
 					["xp"] = 7511,
 				},
 				["Supablast"] = {
-					["level"] = 64,
+					["class"] = "SHAMAN",
 					["lastSeen"] = 527356.081,
 					["xpPercentage"] = 64,
-					["class"] = "SHAMAN",
-					["timePlayed"] = 1048.947999999975,
 					["isRxp"] = true,
+					["timePlayed"] = 1048.947999999975,
+					["level"] = 64,
 				},
 				["Sheikhagal"] = {
-					["class"] = "PALADIN",
+					["isRxp"] = true,
 					["lastSeen"] = 632614.579,
 					["xpPercentage"] = 62,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
 					["level"] = 61,
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
 				},
 				["Zheboqi"] = {
 					["timePlayed"] = 229.8230000000913,
@@ -2797,12 +2829,12 @@ RXPCComms = {
 					["xp"] = 902,
 				},
 				["Axenado"] = {
-					["isRxp"] = true,
+					["level"] = 43,
 					["lastSeen"] = 127160.52,
 					["xpPercentage"] = 50,
-					["level"] = 43,
-					["timePlayed"] = 2378.198999999993,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 2378.198999999993,
+					["isRxp"] = true,
 				},
 				["Geete"] = {
 					["timePlayed"] = 4418.240999999922,
@@ -2815,12 +2847,12 @@ RXPCComms = {
 					["xp"] = 368,
 				},
 				["Porcupine"] = {
-					["class"] = "HUNTER",
+					["isRxp"] = true,
 					["lastSeen"] = 1316955.333,
 					["xpPercentage"] = 40,
-					["isRxp"] = true,
-					["timePlayed"] = 2067.58899999992,
 					["level"] = 65,
+					["timePlayed"] = 2067.58899999992,
+					["class"] = "HUNTER",
 				},
 				["Supressy"] = {
 					["timePlayed"] = 983.1650000000373,
@@ -2908,20 +2940,20 @@ RXPCComms = {
 					["xp"] = 2465,
 				},
 				["Krizztina"] = {
-					["isRxp"] = true,
+					["level"] = 42,
 					["lastSeen"] = 445847.035,
 					["xpPercentage"] = 0,
-					["level"] = 42,
-					["timePlayed"] = 0,
 					["class"] = "ROGUE",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Itsthickas"] = {
-					["isRxp"] = true,
+					["level"] = 36,
 					["lastSeen"] = 368140.301,
 					["xpPercentage"] = 5,
-					["level"] = 36,
-					["timePlayed"] = 2174.201999999991,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 2174.201999999991,
+					["isRxp"] = true,
 				},
 				["Stormash"] = {
 					["timePlayed"] = 708.0949999999721,
@@ -2934,12 +2966,12 @@ RXPCComms = {
 					["xp"] = 2078,
 				},
 				["Friesmage"] = {
-					["class"] = "MAGE",
+					["isRxp"] = true,
 					["lastSeen"] = 317622.81,
 					["xpPercentage"] = 97,
-					["isRxp"] = true,
-					["timePlayed"] = 2172.037000000011,
 					["level"] = 40,
+					["timePlayed"] = 2172.037000000011,
+					["class"] = "MAGE",
 				},
 				["Leequid"] = {
 					["timePlayed"] = 2543.494000000006,
@@ -2952,12 +2984,12 @@ RXPCComms = {
 					["xp"] = 571,
 				},
 				["Dærçël"] = {
-					["isRxp"] = true,
+					["level"] = 41,
 					["lastSeen"] = 1211747.255,
 					["xpPercentage"] = 26,
-					["level"] = 41,
-					["timePlayed"] = 436.8549999999814,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 436.8549999999814,
+					["isRxp"] = true,
 				},
 				["Jetcer"] = {
 					["timePlayed"] = 229.8230000000913,
@@ -2995,12 +3027,12 @@ RXPCComms = {
 					["xp"] = 9120,
 				},
 				["Taudox"] = {
-					["isRxp"] = true,
+					["level"] = 38,
 					["lastSeen"] = 707849.8740000001,
 					["xpPercentage"] = 96,
-					["level"] = 38,
-					["timePlayed"] = 1315.746999999974,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 1315.746999999974,
+					["isRxp"] = true,
 				},
 				["Uxii"] = {
 					["timePlayed"] = 2265.56799999997,
@@ -3068,12 +3100,12 @@ RXPCComms = {
 					["xp"] = 2966,
 				},
 				["Stolee"] = {
-					["level"] = 82,
+					["class"] = "WARRIOR",
 					["lastSeen"] = 1044308.472,
 					["xpPercentage"] = 5,
-					["class"] = "WARRIOR",
-					["timePlayed"] = 0,
 					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 82,
 				},
 				["Pureshadow"] = {
 					["timePlayed"] = 5.884000000078231,
@@ -3236,22 +3268,22 @@ RXPCComms = {
 					["xp"] = 12060,
 				},
 				["Carismoo"] = {
-					["isRxp"] = true,
+					["level"] = 40,
 					["lastSeen"] = 445847.035,
 					["xpPercentage"] = 28,
-					["level"] = 40,
-					["timePlayed"] = 2704.007999999973,
 					["class"] = "DRUID",
+					["timePlayed"] = 2704.007999999973,
+					["isRxp"] = true,
 				},
 				["Onkaboonka"] = {
 					["timePlayed"] = 5127.974000000046,
 					["class"] = "MAGE",
 					["xp"] = 256,
 				},
-				["Quindk"] = {
-					["timePlayed"] = 4418.240999999922,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 22,
+				["Mlynzz"] = {
+					["timePlayed"] = 928.2209999999031,
+					["class"] = "ROGUE",
+					["xp"] = 5990,
 				},
 				["Spergiura"] = {
 					["timePlayed"] = 2992.561999999976,
@@ -3328,15 +3360,15 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 256,
 				},
-				["Proguen"] = {
-					["timePlayed"] = 1161.074000000022,
-					["class"] = "ROGUE",
-					["xp"] = 1104,
-				},
 				["Hadurogue"] = {
 					["timePlayed"] = 2271.842999999994,
 					["class"] = "ROGUE",
 					["xp"] = 374,
+				},
+				["Proguen"] = {
+					["timePlayed"] = 1161.074000000022,
+					["class"] = "ROGUE",
+					["xp"] = 1104,
 				},
 				["Shellman"] = {
 					["timePlayed"] = 1186.624000000069,
@@ -3359,23 +3391,23 @@ RXPCComms = {
 					["xp"] = 1285,
 				},
 				["Rodnanw"] = {
-					["timePlayed"] = 1215.68200000003,
+					["xpPercentage"] = 73,
 					["isRxp"] = true,
 					["lastSeen"] = 776018.3910000001,
-					["xpPercentage"] = 73,
-					["class"] = "WARRIOR",
-					["xp"] = 2188,
+					["timePlayed"] = 1215.68200000003,
 					["level"] = 71,
+					["xp"] = 2188,
+					["class"] = "WARRIOR",
 				},
 				["Fanlorn"] = {
 					["timePlayed"] = 938.9259999999776,
 					["class"] = "PALADIN",
 					["xp"] = 6732,
 				},
-				["Mlynzz"] = {
-					["timePlayed"] = 928.2209999999031,
-					["class"] = "ROGUE",
-					["xp"] = 5990,
+				["Quindk"] = {
+					["timePlayed"] = 4418.240999999922,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 22,
 				},
 				["Soliaz"] = {
 					["timePlayed"] = 1511.201000000001,
