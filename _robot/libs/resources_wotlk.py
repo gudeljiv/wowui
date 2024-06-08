@@ -83,26 +83,29 @@ data = {
     },
     "druid": {
         "main": [
-            {"name": "auto attack", "type": "GetSpellTexture", "id": 6603, "key": "1"},
+            # BEAR
+            {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "1"},
             {"name": "savage roar", "type": "GetSpellTexture", "id": 52610, "key": "e", "modifier": "lshift"},
             {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "lalt"},
-            {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "lalt"},
-            {"name": "swipe", "type": "GetSpellTexture", "id": 62078, "key": "2"},
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
+            {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "4"},
+            {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
+            {"name": "pulverize", "type": "GetSpellTexture", "id": 80313, "key": "5"},
+            {"name": "bash", "type": "GetSpellTexture", "id": 5211, "key": "7"},
+            # CAT
             {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
             {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
             {"name": "rip", "type": "GetSpellTexture", "id": 1079, "key": "5"},
             {"name": "rake", "type": "GetSpellTexture", "id": 1822, "key": "3"},
-            {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
             {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
             {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
+            # COMMON
+            {"name": "thrash", "type": "GetSpellTexture", "id": 77758, "key": "3"},
             {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
-            {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "4"},
-            {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
-            {"name": "pulverize", "type": "GetSpellTexture", "id": 80313, "key": "5"},
-            {"name": "thrash", "type": "GetSpellTexture", "id": 77758, "key": "3"},
-            {"name": "bash", "type": "GetSpellTexture", "id": 5211, "key": "7"},
+            {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
+            {"name": "swipe", "type": "GetSpellTexture", "id": 62078, "key": "2"},
+            {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "lalt"},
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
