@@ -121,15 +121,31 @@ f:SetScript(
 -- HONOR
 -----------------------------------------------------------------------------------------------------------------------------
 
-hc = CreateFrame('Frame', 'CustomContainer_CombatHonorCount', CustomContainer_Combat)
+local hc = CreateFrame('Frame', 'CustomContainer_CombatHonorPointsCount', CustomContainer_Combat)
 hc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
 hc:SetWidth(10)
 hc:SetHeight(10)
 hc.text = hc:CreateFontString(nil, 'ARTWORK')
 hc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-hc.text:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 1, 3)
+hc.text:SetPoint('TOPLEFT', CustomContainer_Combat, 'BOTTOMLEFT', 1, -3)
 
-local function GetHonor()
+local jc = CreateFrame('Frame', 'CustomContainer_CombatJusticePointsCount', CustomContainer_Combat)
+jc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+jc:SetWidth(10)
+jc:SetHeight(10)
+jc.text = jc:CreateFontString(nil, 'ARTWORK')
+jc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+jc.text:SetPoint('TOP', CustomContainer_Combat, 'BOTTOM', 0, -3)
+
+local vc = CreateFrame('Frame', 'CustomContainer_CombatValorPointsCount', CustomContainer_Combat)
+vc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+vc:SetWidth(10)
+vc:SetHeight(10)
+vc.text = vc:CreateFontString(nil, 'ARTWORK')
+vc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+vc.text:SetPoint('TOPRIGHT', CustomContainer_Combat, 'BOTTOMRIGHT', -1, -3)
+
+local function GetHonorPoints()
 	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(1901)
 	if CurrentAmount > 0 then
 		hc.text:SetText(xVermin.FormatNumber(CurrentAmount))
@@ -139,6 +155,26 @@ local function GetHonor()
 	hc.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 end
 
+local function GetJusticePoints()
+	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(395)
+	if CurrentAmount > 0 then
+		jc.text:SetText(xVermin.FormatNumber(CurrentAmount))
+	else
+		jc.text:SetText('')
+	end
+	jc.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+end
+
+local function GetValorPoints()
+	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(396)
+	if CurrentAmount > 0 then
+		vc.text:SetText(xVermin.FormatNumber(CurrentAmount))
+	else
+		vc.text:SetText('')
+	end
+	vc.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+end
+
 local f = CreateFrame('frame')
 f:RegisterEvent('CHAT_MSG_COMBAT_HONOR_GAIN')
 f:RegisterEvent('CURRENCY_DISPLAY_UPDATE')
@@ -146,6 +182,10 @@ f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		GetHonor()
+		GetHonorPoints()
+		GetJusticePoints()
+		GetValorPoints()
 	end
 )
+
+

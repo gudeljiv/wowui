@@ -28,6 +28,7 @@ VER 3 0000000001000006 "main" "134400"
 /cast [form:1] Maul
 /cast [form:1] Enrage
 /cast [form:3] Claw 
+/use Lifeblood
 END
 VER 3 0000000001000010 "mangle" "134400"
 #showtooltip
