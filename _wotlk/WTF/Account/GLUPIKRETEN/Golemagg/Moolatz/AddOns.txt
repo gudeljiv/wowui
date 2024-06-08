@@ -120,7 +120,7 @@ nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: enabled
 aux-addon: disabled
-RXPGuides: enabled
+RXPGuides: disabled
 whoaThickFrames_BCC: disabled
 AutoOpen: enabled
 BlizzMove_Debug: enabled

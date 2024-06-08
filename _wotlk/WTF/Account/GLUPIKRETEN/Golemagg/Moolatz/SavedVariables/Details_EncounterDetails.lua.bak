@@ -1,198 +1,272 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
-		[18222] = {
+		[18263] = {
 			["Raid Damage Done"] = {
-				42710, -- [1]
-				50742, -- [2]
-				72682, -- [3]
-				39288, -- [4]
-				20687, -- [5]
-				45529, -- [6]
-				75642, -- [7]
-				36706, -- [8]
-				87828, -- [9]
-				63197, -- [10]
-				65724, -- [11]
-				22807, -- [12]
-				87727, -- [13]
-				54449, -- [14]
-				34193, -- [15]
-				30294, -- [16]
-				21991, -- [17]
-				46165, -- [18]
-				30487, -- [19]
-				49592, -- [20]
-				58253, -- [21]
-				3550, -- [22]
-				19522, -- [23]
-				17554, -- [24]
-				24163, -- [25]
-				44503, -- [26]
-				11050, -- [27]
-				14227, -- [28]
-				15221, -- [29]
-				25779, -- [30]
-				10021, -- [31]
-				44795, -- [32]
-				8849, -- [33]
-				53364, -- [34]
-				32520, -- [35]
-				21478, -- [36]
-				["max_value"] = 87828,
-				["__time"] = 1717840890,
+				16046, -- [1]
+				29550, -- [2]
+				10321, -- [3]
+				46086, -- [4]
+				31503, -- [5]
+				55869, -- [6]
+				72423, -- [7]
+				48070, -- [8]
+				60896, -- [9]
+				47468, -- [10]
+				60465, -- [11]
+				60802, -- [12]
+				6943, -- [13]
+				23937, -- [14]
+				18260, -- [15]
+				4619, -- [16]
+				0, -- [17]
+				0, -- [18]
+				38135, -- [19]
+				11466, -- [20]
+				4407, -- [21]
+				30625, -- [22]
+				8463, -- [23]
+				14076, -- [24]
+				18464, -- [25]
+				28444, -- [26]
+				26114, -- [27]
+				52377, -- [28]
+				24632, -- [29]
+				33072, -- [30]
+				26543, -- [31]
+				31333, -- [32]
+				0, -- [33]
+				0, -- [34]
+				0, -- [35]
+				0, -- [36]
+				0, -- [37]
+				0, -- [38]
+				0, -- [39]
+				0, -- [40]
+				0, -- [41]
+				0, -- [42]
+				0, -- [43]
+				0, -- [44]
+				0, -- [45]
+				0, -- [46]
+				0, -- [47]
+				0, -- [48]
+				0, -- [49]
+				0, -- [50]
+				0, -- [51]
+				["max_value"] = 72423,
+				["__time"] = 1717873016,
 			},
 		},
-		[18241] = {
+		[18257] = {
 			["Raid Damage Done"] = {
-				9654, -- [1]
-				16395, -- [2]
-				35278, -- [3]
-				48830, -- [4]
-				57674, -- [5]
-				18000, -- [6]
-				63275, -- [7]
-				76344, -- [8]
-				54156, -- [9]
-				27614, -- [10]
-				80306, -- [11]
-				7407, -- [12]
-				6766, -- [13]
-				41628, -- [14]
-				27442, -- [15]
-				17981, -- [16]
-				39314, -- [17]
-				60540, -- [18]
-				30909, -- [19]
-				66475, -- [20]
-				42579, -- [21]
-				13260, -- [22]
-				26793, -- [23]
-				10635, -- [24]
-				49581, -- [25]
-				42198, -- [26]
-				48115, -- [27]
-				1004, -- [28]
-				5094, -- [29]
-				0, -- [30]
-				17394, -- [31]
-				3553, -- [32]
-				19645, -- [33]
-				9698, -- [34]
-				58999, -- [35]
-				11765, -- [36]
-				28114, -- [37]
-				46374, -- [38]
-				31558, -- [39]
-				52142, -- [40]
-				["max_value"] = 80306,
-				["__time"] = 1717841457,
+				5035, -- [1]
+				38669, -- [2]
+				6057, -- [3]
+				28037, -- [4]
+				5664, -- [5]
+				26884, -- [6]
+				47290, -- [7]
+				55420, -- [8]
+				43727, -- [9]
+				48811, -- [10]
+				49670, -- [11]
+				22410, -- [12]
+				55904, -- [13]
+				40170, -- [14]
+				46160, -- [15]
+				11898, -- [16]
+				23684, -- [17]
+				17921, -- [18]
+				16746, -- [19]
+				36833, -- [20]
+				20660, -- [21]
+				40915, -- [22]
+				37965, -- [23]
+				26714, -- [24]
+				7761, -- [25]
+				17586, -- [26]
+				22753, -- [27]
+				8874, -- [28]
+				17577, -- [29]
+				22438, -- [30]
+				11351, -- [31]
+				11130, -- [32]
+				18402, -- [33]
+				11872, -- [34]
+				18465, -- [35]
+				17526, -- [36]
+				34269, -- [37]
+				23560, -- [38]
+				31669, -- [39]
+				15883, -- [40]
+				10511, -- [41]
+				47503, -- [42]
+				56629, -- [43]
+				13874, -- [44]
+				51375, -- [45]
+				19592, -- [46]
+				0, -- [47]
+				2189, -- [48]
+				10939, -- [49]
+				6255, -- [50]
+				30183, -- [51]
+				10627, -- [52]
+				25521, -- [53]
+				6406, -- [54]
+				2247, -- [55]
+				0, -- [56]
+				0, -- [57]
+				0, -- [58]
+				0, -- [59]
+				0, -- [60]
+				0, -- [61]
+				0, -- [62]
+				0, -- [63]
+				0, -- [64]
+				0, -- [65]
+				0, -- [66]
+				0, -- [67]
+				0, -- [68]
+				0, -- [69]
+				0, -- [70]
+				0, -- [71]
+				0, -- [72]
+				0, -- [73]
+				0, -- [74]
+				0, -- [75]
+				0, -- [76]
+				0, -- [77]
+				0, -- [78]
+				0, -- [79]
+				0, -- [80]
+				0, -- [81]
+				0, -- [82]
+				0, -- [83]
+				0, -- [84]
+				["max_value"] = 56629,
+				["__time"] = 1717872757,
 			},
 		},
-		[18229] = {
+		[18259] = {
 			["Raid Damage Done"] = {
-				15132, -- [1]
-				5344, -- [2]
-				35259, -- [3]
-				12291, -- [4]
-				20283, -- [5]
-				30388, -- [6]
-				50586, -- [7]
-				33620, -- [8]
-				23072, -- [9]
-				53646, -- [10]
-				36138, -- [11]
-				22622, -- [12]
-				62569, -- [13]
-				10558, -- [14]
-				73639, -- [15]
-				26659, -- [16]
-				63591, -- [17]
-				26374, -- [18]
-				46890, -- [19]
-				68233, -- [20]
-				30365, -- [21]
-				26569, -- [22]
-				32832, -- [23]
-				31766, -- [24]
-				32838, -- [25]
-				21190, -- [26]
-				27332, -- [27]
-				31403, -- [28]
-				9594, -- [29]
-				38986, -- [30]
-				46494, -- [31]
-				62092, -- [32]
-				16287, -- [33]
-				["max_value"] = 73639,
-				["__time"] = 1717841067,
+				17195, -- [1]
+				6015, -- [2]
+				30903, -- [3]
+				6664, -- [4]
+				50654, -- [5]
+				42126, -- [6]
+				43950, -- [7]
+				48389, -- [8]
+				14891, -- [9]
+				50922, -- [10]
+				28942, -- [11]
+				52198, -- [12]
+				46717, -- [13]
+				21505, -- [14]
+				34319, -- [15]
+				54854, -- [16]
+				8285, -- [17]
+				35436, -- [18]
+				5675, -- [19]
+				34784, -- [20]
+				35637, -- [21]
+				33554, -- [22]
+				23136, -- [23]
+				21817, -- [24]
+				40181, -- [25]
+				51222, -- [26]
+				31092, -- [27]
+				23024, -- [28]
+				29264, -- [29]
+				18529, -- [30]
+				56612, -- [31]
+				29773, -- [32]
+				26449, -- [33]
+				55304, -- [34]
+				["max_value"] = 56612,
+				["__time"] = 1717872861,
 			},
 		},
-		[18234] = {
+		[18260] = {
 			["Raid Damage Done"] = {
-				1530, -- [1]
-				6583, -- [2]
-				3932, -- [3]
-				10228, -- [4]
-				10658, -- [5]
-				16499, -- [6]
-				9646, -- [7]
-				7739, -- [8]
-				10497, -- [9]
-				8230, -- [10]
-				20621, -- [11]
-				27929, -- [12]
-				37727, -- [13]
-				24253, -- [14]
-				39533, -- [15]
-				16567, -- [16]
-				36303, -- [17]
-				68445, -- [18]
-				59044, -- [19]
-				36971, -- [20]
-				84229, -- [21]
-				45995, -- [22]
-				82756, -- [23]
-				51522, -- [24]
-				36245, -- [25]
-				61620, -- [26]
-				65076, -- [27]
-				46039, -- [28]
-				120708, -- [29]
-				["max_value"] = 120708,
-				["__time"] = 1717841196,
+				4169, -- [1]
+				4048, -- [2]
+				732, -- [3]
+				7799, -- [4]
+				5292, -- [5]
+				4016, -- [6]
+				5143, -- [7]
+				6960, -- [8]
+				5445, -- [9]
+				7217, -- [10]
+				13204, -- [11]
+				4451, -- [12]
+				5190, -- [13]
+				4349, -- [14]
+				4146, -- [15]
+				14239, -- [16]
+				2610, -- [17]
+				4028, -- [18]
+				2298, -- [19]
+				2533, -- [20]
+				5773, -- [21]
+				1061, -- [22]
+				3190, -- [23]
+				4556, -- [24]
+				0, -- [25]
+				16432, -- [26]
+				4072, -- [27]
+				9953, -- [28]
+				6815, -- [29]
+				14590, -- [30]
+				6873, -- [31]
+				4228, -- [32]
+				19343, -- [33]
+				22583, -- [34]
+				35898, -- [35]
+				32166, -- [36]
+				18788, -- [37]
+				17255, -- [38]
+				21313, -- [39]
+				21156, -- [40]
+				36718, -- [41]
+				18224, -- [42]
+				9753, -- [43]
+				1371, -- [44]
+				26421, -- [45]
+				0, -- [46]
+				0, -- [47]
+				["max_value"] = 36718,
+				["__time"] = 1717872909,
 			},
 		},
-		[18238] = {
+		[18261] = {
 			["Raid Damage Done"] = {
-				7219, -- [1]
-				15038, -- [2]
-				21398, -- [3]
-				13702, -- [4]
-				51433, -- [5]
-				35561, -- [6]
-				86424, -- [7]
-				19431, -- [8]
-				45267, -- [9]
-				54564, -- [10]
-				27395, -- [11]
-				53112, -- [12]
-				55395, -- [13]
-				93559, -- [14]
-				29348, -- [15]
-				66277, -- [16]
-				49721, -- [17]
-				37617, -- [18]
-				56464, -- [19]
-				46083, -- [20]
-				19515, -- [21]
-				64368, -- [22]
-				63605, -- [23]
-				18404, -- [24]
-				80135, -- [25]
-				65659, -- [26]
-				["max_value"] = 93559,
-				["__time"] = 1717841332,
+				6550, -- [1]
+				8202, -- [2]
+				8898, -- [3]
+				6144, -- [4]
+				7939, -- [5]
+				9246, -- [6]
+				6741, -- [7]
+				1397, -- [8]
+				0, -- [9]
+				["max_value"] = 9246,
+				["__time"] = 1717872934,
+			},
+		},
+		[18262] = {
+			["Raid Damage Done"] = {
+				50056, -- [1]
+				87469, -- [2]
+				19676, -- [3]
+				14312, -- [4]
+				11143, -- [5]
+				3044, -- [6]
+				0, -- [7]
+				["max_value"] = 87469,
+				["__time"] = 1717872952,
 			},
 		},
 	},
@@ -6763,15 +6837,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Betrayed",
 		},
-		[6726] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Azure Warder",
-		},
 		[59687] = {
 			["school"] = 4,
 			["token"] = {
@@ -6790,13 +6855,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Drakkari Golem",
 		},
-		[59837] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Loken",
-		},
 		[55807] = {
 			["school"] = 16,
 			["type"] = "DEBUFF",
@@ -6806,6 +6864,22 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Kel'Thuzad",
+		},
+		[59837] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Loken",
+		},
+		[6726] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Azure Warder",
 		},
 		[59965] = {
 			["school"] = 8,
@@ -7037,23 +7111,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fireass",
 		},
-		[70388] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Wrathbone Sorcerer",
-		},
-		[57599] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
 		[69056] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -7064,6 +7121,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Soulguard Watchman",
 		},
+		[57599] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
 		[72435] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -7073,6 +7138,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Falric",
+		},
+		[70388] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Wrathbone Sorcerer",
 		},
 		[56909] = {
 			["school"] = 1,
@@ -7209,13 +7283,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Zoremi",
 		},
-		[3600] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[49528] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Earthbind Totem",
+			["source"] = "The Prophet Tharon'ja",
 		},
 		[58879] = {
 			["school"] = 32,
@@ -7224,15 +7299,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spirit Wolf",
 		},
-		[30695] = {
-			["school"] = 32,
+		[49092] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Omor the Unscarred",
+			["source"] = "Ymirjar Harpooner",
 		},
 		[59007] = {
 			["school"] = 1,
@@ -7284,23 +7358,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ferocious Rhino",
 		},
-		[49092] = {
-			["school"] = 1,
+		[30695] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Ymirjar Harpooner",
-		},
-		[49528] = {
-			["school"] = 32,
-			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "The Prophet Tharon'ja",
+			["source"] = "Omor the Unscarred",
+		},
+		[3600] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Earthbind Totem",
 		},
 		[59455] = {
 			["school"] = 1,
@@ -7516,13 +7590,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Salramm the Fleshcrafter",
 		},
-		[54850] = {
-			["school"] = 8,
+		[58944] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Drakkari Colossus",
+			["source"] = "Onyx Brood General",
 		},
 		[59848] = {
 			["school"] = 1,
@@ -7941,13 +8015,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Prophet Tharon'ja",
 		},
-		[24907] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[47751] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Somex",
+			["source"] = "Anomalus",
 		},
 		[68987] = {
 			["school"] = 1,
@@ -8567,13 +8641,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nazru",
 		},
-		[60547] = {
+		[56453] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Mormontt",
+			["source"] = "Lopkopis",
 		},
 		[49048] = {
 			["school"] = 1,
@@ -8623,20 +8698,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[61507] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Hardened Steel Skycaller",
-		},
-		[63106] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Cusack",
-		},
 		[47737] = {
 			["school"] = 64,
 			["token"] = {
@@ -8644,6 +8705,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Chaotic Rift",
+		},
+		[63106] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Cusack",
 		},
 		[22686] = {
 			["school"] = 1,
@@ -8654,6 +8722,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "King Dred",
+		},
+		[12826] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Fireass",
 		},
 		[61251] = {
 			["school"] = 1,
@@ -8693,15 +8771,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Drakkari Scytheclaw",
 		},
-		[12826] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[61507] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Fireass",
+			["source"] = "Hardened Steel Skycaller",
 		},
 		[51336] = {
 			["school"] = 1,
@@ -8808,6 +8883,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Heigan the Unclean",
 		},
+		[23885] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Xpunka",
+		},
 		[48138] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -8816,14 +8899,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Frenzied Worgen",
-		},
-		[23885] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Xpunka",
 		},
 		[19983] = {
 			["school"] = 1,
@@ -9003,6 +9078,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bolster",
 		},
+		[54164] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Ethereal Sphere",
+		},
 		[394449] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -9011,14 +9094,6 @@ EncounterDetailsDB = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Drakkari Golem",
-		},
-		[54164] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Ethereal Sphere",
 		},
 		[59845] = {
 			["school"] = 8,
@@ -9278,14 +9353,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spectral Horse",
 		},
-		[56453] = {
+		[60547] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Lopkopis",
+			["source"] = "Mormontt",
 		},
 		[47436] = {
 			["school"] = 1,
@@ -9646,13 +9720,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Wretched Belcher",
 		},
-		[47751] = {
-			["school"] = 64,
+		[24907] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Anomalus",
+			["source"] = "Somex",
 		},
 		[57591] = {
 			["school"] = 4,
@@ -9874,13 +9948,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Element Warden",
 		},
-		[58944] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[54850] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Onyx Brood General",
+			["source"] = "Drakkari Colossus",
 		},
 		[28470] = {
 			["school"] = 1,
@@ -10629,13 +10703,10 @@ EncounterDetailsDB = {
 	},
 	["emotes"] = {
 		{
-			["boss"] = "Ascendant Lord Obsidius",
+			["boss"] = "Commander Ulthok",
 		}, -- [1]
 		{
-			["boss"] = "Beauty",
+			["boss"] = "Lady Naz'jar",
 		}, -- [2]
-		{
-			["boss"] = "Karsh Steelbender",
-		}, -- [3]
 	},
 }

@@ -60,3 +60,4 @@ BigWigs: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_WrathOfTheLichKing: disabled
 TomTom: enabled
+RXPGuides: disabled
