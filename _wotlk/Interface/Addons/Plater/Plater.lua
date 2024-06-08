@@ -133,7 +133,6 @@ function Plater.IncreaseRefreshID() --private
 end
 
 platerInternal.CreateDataTables(Plater)
-platerInternal.CreatePerformanceUnits(Plater)
 
 Plater.ForceBlizzardNameplateUnits = {
 	--
@@ -3343,17 +3342,6 @@ Plater.AnchorNamesByPhraseId = {
 				unitFrame.ShowUIParentAnimation:Play()
 			end
 			
-			--if (not plateFrame.UnitFrame.HasPlaterHooksRegistered) then
-			if not HOOKED_BLIZZARD_PLATEFRAMES[tostring(plateFrame.UnitFrame)] then
-				--print(HOOKED_BLIZZARD_PLATEFRAMES[tostring(plateFrame.UnitFrame)], tostring(plateFrame.UnitFrame), plateFrame.UnitFrame.HasPlaterHooksRegistered)
-				--hook the retail nameplate
-				--plateFrame.UnitFrame:HookScript("OnShow", Plater.OnRetailNamePlateShow)
-				hooksecurefunc(plateFrame.UnitFrame, "Show", Plater.OnRetailNamePlateShow)
-				--plateFrame.UnitFrame.HasPlaterHooksRegistered = true
-				HOOKED_BLIZZARD_PLATEFRAMES[tostring(plateFrame.UnitFrame)] = true
-				
-			end
-			
 			unitFrame.nameplateScaleAdjust = 1
 			
 			if (DB_USE_UIPARENT) then
@@ -3941,6 +3929,30 @@ Plater.AnchorNamesByPhraseId = {
 		end
 		
 		self:Hide()
+		if self:IsProtected() then
+			self:ClearAllPoints()
+			self:SetParent(nil)
+			for _, f in pairs(self:GetChildren() or {}) do
+				--DevTool:AddData(f, "child")
+				if type(f) == "table" and f.IsProtected then
+					local p, ep = f:IsProtected()
+					--DevTool:AddData({p, ep, f}, "protected?")
+					if ep then
+						--DevTool:AddData(f, "protected!")
+						f:ClearAllPoints()
+						f:SetParent(nil)
+					end
+				end
+			end
+			if not self:IsProtected() then
+				self:Hide()
+			elseif DevTool then
+				DevTool:AddData(self, "protected")
+			end
+		else
+			self:Hide()
+		end
+		
 		
 		if not SUPPORT_BLIZZARD_PLATEFRAMES then
 			-- should be done if events are not needed
@@ -3983,6 +3995,9 @@ function Plater.InitializeSavedVariables()
 	PlaterDB.captured_casts = PlaterDB.captured_casts or {}
 	--table to store auras and any spell cast
 	PlaterDB.captured_spells = PlaterDB.captured_spells or {}
+
+	--table to store npcIds of performance units
+	PlaterDB.performance_units = PlaterDB.performance_units or {}
 end
 
 function Plater.OnInit() --private --~oninit ~init
@@ -4004,6 +4019,10 @@ function Plater.OnInit() --private --~oninit ~init
 
 	Plater.InitializeSavedVariables()
 	Plater.RefreshDBUpvalues()
+
+	C_Timer.After(0, function()
+		platerInternal.CreatePerformanceUnits(Plater)
+	end)
 	
 	Plater.UpdateBlizzardNameplateFonts()
 	
@@ -4413,6 +4432,29 @@ function Plater.OnInit() --private --~oninit ~init
 			hooksecurefunc (NamePlateDriverFrame, "SetupClassNameplateBars", function (self)
 				return Plater.UpdatePersonalBar (self)
 			end)
+			
+			--[[ -- fuck things up a bit...
+			hooksecurefunc (NamePlateBaseMixin, "OnAdded", function(self, namePlateUnitToken, driverFrame)
+				local plateFrame = C_NamePlate.GetNamePlateForUnit (namePlateUnitToken)
+				Plater.OnRetailNamePlateShow(plateFrame.UnitFrame)
+			end)
+			
+			hooksecurefunc (NamePlateDriverFrame, "OnNamePlateAdded", function(self, namePlateUnitToken)
+				if not ENABLED_BLIZZARD_PLATEFRAMES[tostring(frame)] then
+					local plateFrame = C_NamePlate.GetNamePlateForUnit (namePlateUnitToken)
+					DevTool:AddData(plateFrame, "OnNamePlateAdded")
+					C_Timer.After(0, function() Plater.OnRetailNamePlateShow(plateFrame.UnitFrame) end)
+				end
+			end)
+			hooksecurefunc ("DefaultCompactNamePlateFrameSetupInternal", function(frame)
+				DevTool:AddData(frame, "DefaultCompactNamePlateFrameSetupInternal")
+				if not ENABLED_BLIZZARD_PLATEFRAMES[tostring(frame)] then
+					
+					--Plater.OnRetailNamePlateShow (frame)
+				end
+			end)
+			--]]
+			
 		end
 
 		--update the resource location and anchor
@@ -9076,15 +9118,15 @@ end
 			if C_TooltipInfo then
 				local info = C_TooltipInfo.GetHyperlink(("unit:Creature-0-0-0-0-%d"):format(npcID))
 				local leftText = info and info.lines and info.lines[1] and info.lines[1].leftText
-				if leftText and leftText ~= "Unknown" then
+				if leftText and leftText ~= _G.UNKNOWN then
 					return leftText
 				end
 			else
 				local tooltipFrame = GetCreatureNameFromIDFinderTooltip or CreateFrame ("GameTooltip", "GetCreatureNameFromIDFinderTooltip", nil, "GameTooltipTemplate")
 				tooltipFrame:SetOwner (WorldFrame, "ANCHOR_NONE")
 				tooltipFrame:SetHyperlink (("unit:Creature-0-0-0-0-%d"):format(npcID))
-				local petNameLine = _G ["GetCreatureNameFromIDFinderTooltipTextLeft1"]
-				return petNameLine and petNameLine:GetText()
+				local npcNameLine = _G ["GetCreatureNameFromIDFinderTooltipTextLeft1"]
+				return npcNameLine and npcNameLine:GetText()
 			end
 		end
 		
@@ -9093,6 +9135,7 @@ end
 			if not Plater.db.profile.auto_translate_npc_names then return end
 			if PLAYER_IN_COMBAT then --or not IS_IN_OPEN_WORLD then
 				C_Timer.After(5, translate_npc_cache)
+				return
 			end
 			
 			local count = 0

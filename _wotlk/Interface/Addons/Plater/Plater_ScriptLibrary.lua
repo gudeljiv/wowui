@@ -1269,6 +1269,37 @@ do
 		end,
 	})
 
+	--[=
+	--#36 triggers for 10.3.7 season 4 dragonflight m+ dungeons
+	tinsert (PlaterPatchLibrary, {
+		NotEssential = true,
+
+		Notes = {
+			"- Applied adjustments for season 4 mythic dungeons."
+		},
+		Func = function()
+			local addTriggers = {
+				--script name			  trigger list
+				["Add - Important [P]"] = {194745, 190426, npc = true}, --Rotfang Hyena, Decay Totem
+				["Explosion Affix M+ [Plater]"] = {389446}, --Nullifying Pulse, 
+				["Cast - Very Important [Plater]"] = {377488}, --Icy Bindings
+			}
+
+			for scriptName, triggerList in pairs(addTriggers) do
+				if (triggerList.npc) then
+					for _, npcId in ipairs(triggerList) do
+						Plater.AddTriggerToScript(npcId, "npc", scriptName)
+					end
+				else
+					for _, spellId in ipairs(triggerList) do
+						Plater.AddTriggerToScript(spellId, "cast", scriptName)
+					end
+				end
+			end
+		end,
+	})
+	--]=]
+
 	--to tag an update as non-essential, add "NotEssential = true," to the table
 	--/run Plater.db.profile.patch_version = 30
 end --end of patch library

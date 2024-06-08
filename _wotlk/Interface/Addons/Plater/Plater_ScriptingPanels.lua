@@ -2514,7 +2514,7 @@ function Plater.CreateHookingPanel()
 		--add the hook to the script object
 		if (not scriptObject.Hooks [hookName]) then
 			local defaultScript
-			if (hookName == "Load Screen" or hookName == "Player Logon" or hookName == "Initialization" or hookName == "Deinitialization" or hookName == "Option Changed") then
+			if (hookName == "Load Screen" or hookName == "Player Logon" or hookName == "Initialization" or hookName == "Deinitialization" or hookName == "Option Changed" or hookName == "Mod Option Changed") then
 				defaultScript = hookFrame.DefaultScriptNoNameplate
 
 			elseif (hookName == "Player Power Update") then
@@ -4003,6 +4003,13 @@ function Plater.CreateScriptingPanel()
 					scriptingFrame.UpdateOverlapButton()
 				end
 			
+			-- 3d model for the units
+				local npc3DFrame = CreateFrame ("playermodel", "", nil, "ModelWithControlsTemplate")
+				npc3DFrame:SetSize (200, 250)
+				npc3DFrame:EnableMouse (false)
+				npc3DFrame:EnableMouseWheel (false)
+				npc3DFrame:Hide()
+			
 			--when the user hover over a scrollbox line
 				local onenter_trigger_line = function (self)
 					if (self.SpellID) then
@@ -4010,12 +4017,29 @@ function Plater.CreateScriptingPanel()
 						GameTooltip:SetSpellByID (self.SpellID)
 						GameTooltip:AddLine (" ")
 						GameTooltip:Show()
+					elseif self.NpcID then
+						local npcID = tonumber(self.NpcID)
+						GameTooltip:SetOwner (self, "ANCHOR_RIGHT")
+						GameTooltip:SetHyperlink (("unit:Creature-0-0-0-0-%d"):format(npcID))
+						GameTooltip:AddLine (" ")
+						if npcID and Plater.db.profile.npc_cache[npcID] then
+							GameTooltip:AddLine (Plater.db.profile.npc_cache[npcID][2] or "???")
+							GameTooltip:AddLine (" ")
+						end
+						npc3DFrame:SetCreature(npcID)
+						npc3DFrame:SetParent(GameTooltip)
+						npc3DFrame:SetPoint ("top", GameTooltip, "bottom", 0, -10)
+						npc3DFrame:Show()
+						GameTooltip:Show()
 					end
 					self:SetBackdropColor (.3, .3, .3, 0.7)
 				end
 			
 			--when the user leaves a scrollbox line from a hover over
 				local onleave_trigger_line = function (self)
+					npc3DFrame:SetParent(nil)
+					npc3DFrame:ClearAllPoints()
+					npc3DFrame:Hide()
 					GameTooltip:Hide()
 					self:SetBackdropColor (unpack (scrollbox_line_backdrop_color))
 				end
@@ -4032,6 +4056,7 @@ function Plater.CreateScriptingPanel()
 					self.Icon:SetDesaturated (false)
 					self.Icon:SetAlpha (1)
 					self.SpellID = trigger
+					self.NpcID = nil
 					self.TriggerName:SetText (spellName)
 					self.TriggerID:SetText (trigger)
 					
@@ -4042,8 +4067,16 @@ function Plater.CreateScriptingPanel()
 					self.Icon:SetDesaturated (true)
 					self.Icon:SetAlpha (0.5)
 					self.SpellID = nil
-					self.TriggerName:SetText (trigger)
-					self.TriggerID:SetText ("")
+					self.NpcID = trigger
+					
+					local npcData = tonumber(trigger) and Plater.db.profile.npc_cache[tonumber(trigger)]
+					if npcData and npcData[1] then
+						self.TriggerName:SetText (npcData[1])
+						self.TriggerID:SetText (trigger)
+					else
+						self.TriggerName:SetText (trigger)
+						self.TriggerID:SetText ("")
+					end
 				end
 				
 				self.TriggerId = trigger_id
