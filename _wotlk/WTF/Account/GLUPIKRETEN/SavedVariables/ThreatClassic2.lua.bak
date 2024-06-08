@@ -9,11 +9,12 @@ ThreatClassic2DB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
+		["Battlemoo - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

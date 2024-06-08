@@ -7,6 +7,7 @@ TomTomDB = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
+		["Battlemoo - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
@@ -88,6 +89,7 @@ TomTomWaypointsM = {
 		["Greshnik - Dreadnaught"] = "Greshnik - Dreadnaught",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Battlemoo - Golemagg"] = "Battlemoo - Golemagg",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
@@ -137,6 +139,8 @@ TomTomWaypointsM = {
 		["Battitude - Golemagg"] = {
 		},
 		["Greenwise - Golemagg"] = {
+		},
+		["Battlemoo - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},
