@@ -1,0 +1,56 @@
+VER 3 000000000100000B "crspsn" "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Remove Corruption
+END
+VER 3 000000000100000D "dash" "134400"
+#showtooltip Dash
+/cancelform [noform:3] 
+/cast [noform:3] Cat Form 
+/cast Dash 
+END
+VER 3 0000000001000019 "ff" "134400"
+#showtooltip
+/cast [@mouseover,harm,nodead][] Faerie Fire (Feral)
+END
+VER 3 0000000001000004 "ht" "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Healing Touch
+END
+VER 3 0000000001000017 "lb" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Lifebloom
+END
+VER 3 0000000001000006 "main" "134400"
+#showtooltip
+/startattack
+/cast [stealth] Pounce
+/cast [form:0][form:4] Wrath
+/cast [form:1] Maul
+/cast [form:1] Enrage
+/cast [form:3] Claw 
+/use Lifeblood
+END
+VER 3 0000000001000010 "mangle" "134400"
+#showtooltip
+/cast [form:1] Mangle(bear form); [form:3] Mangle(cat form)
+END
+VER 3 0000000001000011 "mup" "134400"
+#showtoltip [stealth] Pounce; [form:1] Maul; [form:3] Claw; Regrowth
+/cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
+END
+VER 3 0000000001000005 "nourish" "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Nourish
+END
+VER 3 0000000001000015 "regrowth" "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Regrowth
+END
+VER 3 0000000001000001 "rej" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Rejuvenation
+END
+VER 3 0000000001000012 "taunt" "134400"
+#showtooltip
+/cast [@mouseover,harm,nodead][] Growl
+END

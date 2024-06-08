@@ -695,8 +695,8 @@ AdiBagsDB = {
 		["Item Sets"] = {
 			["profiles"] = {
 				["Default"] = {
-					["enablePVE"] = false,
 					["includeWeapons"] = false,
+					["enablePVE"] = false,
 					["enablePVP"] = false,
 				},
 			},
@@ -709,6 +709,7 @@ AdiBagsDB = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+		["Battlemoo - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
@@ -731,15 +732,15 @@ AdiBagsDB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Tudum - Jin'do"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
@@ -787,9 +788,9 @@ AdiBagsDB = {
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
-					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 					["Percent"] = 1,
 					["Name"] = "Bag Lag Fix",
+					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 				},
 			},
 			["theme"] = {

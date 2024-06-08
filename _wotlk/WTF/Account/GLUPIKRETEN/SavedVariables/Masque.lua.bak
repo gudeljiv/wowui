@@ -5,22 +5,23 @@ MasqueDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Vermina - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Asjrdfsad - Golemagg"] = "Default",
-		["Tudum - Ashbringer"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
-		["Battitude - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
-		["Battledog - Gehennas"] = "Default",
-		["Miqa - Golemagg"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Battledog - Gehennas"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Battlemoo - Golemagg"] = "Default",
+		["Asjrdfsad - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
+		["Vermina - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -4451,9 +4452,9 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_Crtwoe6orG8"] = {
+				["WeakAuras_FguV0)KEGj3"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
+					["SkinID"] = "Cainyx",
 					["Inherit"] = false,
 				},
 				["WeakAuras_fbiUcba0fHQ"] = {
@@ -4461,10 +4462,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_FguV0)KEGj3"] = {
+				["WeakAuras_yWFc1HkY3FV"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Cainyx",
 					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_qvrJCmhbY2A"] = {
 					["Upgraded"] = true,
@@ -4655,9 +4656,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_BDQvI8HtAOa"] = {
+				["WeakAuras_cG7Zb0nqhfK"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Cainyx",
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_KGZCZ6spB7A"] = {
@@ -5580,15 +5581,15 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
+				["WeakAuras_BDQvI8HtAOa"] = {
+					["Upgraded"] = true,
+					["SkinID"] = "Cainyx",
+					["Inherit"] = false,
+				},
 				["WeakAuras_I0IU9spQpEQ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
-				},
-				["WeakAuras_cG7Zb0nqhfK"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
-					["Inherit"] = false,
 				},
 				["WeakAuras_PyPGdL(Dx4R"] = {
 					["Upgraded"] = true,
@@ -5689,10 +5690,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_yWFc1HkY3FV"] = {
+				["WeakAuras_Crtwoe6orG8"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
 				},
 				["WeakAuras_gJlRULZ(uN4"] = {
 					["Upgraded"] = true,

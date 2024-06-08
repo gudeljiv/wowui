@@ -9,9 +9,10 @@ GatherMate2MarkerDB = {
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
+		["Battlemoo - Golemagg"] = "Battlemoo - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 	},
@@ -1186,11 +1187,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3990393000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[2960385000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[4860588000] = {
+				[3990393000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3122,9 +3123,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2960385000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4860588000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[3460496000] = {
 					["touched"] = false,
@@ -3450,7 +3451,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5397522300] = {
+				[5520631000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3466,11 +3467,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5520631000] = {
+				[5940766000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7060733000] = {
+				[5050555000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3502,11 +3503,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5940766000] = {
+				[5397522300] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5050555000] = {
+				[4010824000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3578,7 +3579,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4010824000] = {
+				[7060733000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3664,6 +3665,10 @@ GatherMate2MarkerDB = {
 			["pinDB"] = {
 			},
 		},
+		["Tadibey - Golemagg"] = {
+			["pinDB"] = {
+			},
+		},
 		["Miqa - Golemagg"] = {
 			["pinDB"] = {
 			},
@@ -3672,7 +3677,7 @@ GatherMate2MarkerDB = {
 			["pinDB"] = {
 			},
 		},
-		["Tadibey - Golemagg"] = {
+		["Battlemoo - Golemagg"] = {
 			["pinDB"] = {
 			},
 		},
