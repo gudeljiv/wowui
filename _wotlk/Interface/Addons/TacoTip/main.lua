@@ -711,6 +711,7 @@ function TT:RefreshInspectFrame()
 end
 
 local function onEvent(self, event, ...)
+	-- print(event)
     if (event == "PLAYER_EQUIPMENT_CHANGED") then
         if (CharacterModelScene and PaperDollFrame and PaperDollFrame:IsShown()) then
             TT:RefreshCharacterFrame()
@@ -761,12 +762,13 @@ local function onEvent(self, event, ...)
             end)
         end
     elseif (event == "UPDATE_MOUSEOVER_UNIT") then
+		-- print("UPDATE_MOUSEOVER_UNIT")
         if (GameTooltip:GetUnit()) then
-            CAfter(0, function()
+            -- CAfter(0.5, function()
                 if (not UnitExists("mouseover")) then
                     GameTooltip:Hide()
                 end
-            end)
+            -- end)
         end
     else -- INVENTORY_READY / TALENTS_READY
         if (TT.InitInspectFrame and InspectModelFrame and InspectPaperDollFrame) then

@@ -31,3 +31,6 @@ xVermin.CheckIfLoadedWithTimer(
 )
 
 CharacterRangedSlotCount:SetScale(0.75)
+
+
+

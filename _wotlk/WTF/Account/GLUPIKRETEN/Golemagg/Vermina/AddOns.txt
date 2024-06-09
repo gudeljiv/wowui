@@ -190,7 +190,7 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 SortBagsButton: disabled
 Myslot: enabled

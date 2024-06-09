@@ -177,7 +177,7 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled

@@ -194,7 +194,7 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 GatherMate2_GasClouds: disabled
 SortBagsButton: disabled

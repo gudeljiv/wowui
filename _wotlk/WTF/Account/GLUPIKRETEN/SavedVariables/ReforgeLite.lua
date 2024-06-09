@@ -369,6 +369,17 @@ ReforgeLiteDB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
+			["tankingModel"] = true,
+			["weights"] = {
+				0, -- [1]
+				20000, -- [2]
+				20000, -- [3]
+				20, -- [4]
+				0, -- [5]
+				0, -- [6]
+				40, -- [7]
+				150, -- [8]
+			},
 			["caps"] = {
 				{
 					["stat"] = 0,
@@ -499,8 +510,8 @@ ReforgeLiteDB = {
 					0, -- [6]
 					0, -- [7]
 					0, -- [8]
-					["dodge"] = 0,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -508,6 +519,11 @@ ReforgeLiteDB = {
 					[2] = 0,
 					[8] = 0,
 				},
+			},
+			["targetLevel"] = 3,
+			["buffs"] = {
+			},
+			["itemsLocked"] = {
 			},
 			["method"] = {
 				["items"] = {
@@ -615,8 +631,8 @@ ReforgeLiteDB = {
 					0, -- [6]
 					0, -- [7]
 					0, -- [8]
-					["dodge"] = 0,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -625,22 +641,6 @@ ReforgeLiteDB = {
 					[8] = 0,
 				},
 			},
-			["tankingModel"] = true,
-			["buffs"] = {
-			},
-			["weights"] = {
-				0, -- [1]
-				20000, -- [2]
-				20000, -- [3]
-				20, -- [4]
-				0, -- [5]
-				0, -- [6]
-				40, -- [7]
-				150, -- [8]
-			},
-			["itemsLocked"] = {
-			},
-			["targetLevel"] = 3,
 		},
 		["Moolatz - Golemagg"] = {
 			["caps"] = {
@@ -770,6 +770,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -779,8 +781,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1059,8 +1059,8 @@ ReforgeLiteDB = {
 					0, -- [8]
 					["critBlock"] = 12,
 					["block"] = 32,
-					["dodge"] = 0,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -1069,6 +1069,7 @@ ReforgeLiteDB = {
 					[8] = 0,
 				},
 			},
+			["tankingModel"] = true,
 			["method"] = {
 				["items"] = {
 					{
@@ -1181,8 +1182,8 @@ ReforgeLiteDB = {
 					0, -- [8]
 					["critBlock"] = 12,
 					["block"] = 32,
-					["dodge"] = 0,
 					["parry"] = 0,
+					["dodge"] = 0,
 				},
 				["tankingModel"] = true,
 				["orig_stats"] = {
@@ -1191,7 +1192,8 @@ ReforgeLiteDB = {
 					[8] = 0,
 				},
 			},
-			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				40, -- [1]
 				100, -- [2]
@@ -1202,11 +1204,9 @@ ReforgeLiteDB = {
 				0, -- [7]
 				40, -- [8]
 			},
-			["buffs"] = {
-			},
 			["itemsLocked"] = {
 			},
-			["tankingModel"] = true,
+			["targetLevel"] = 3,
 		},
 		["Miqa - Golemagg"] = {
 			["caps"] = {
@@ -1282,6 +1282,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1291,8 +1293,6 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 				[8] = false,
@@ -1557,10 +1557,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1571,11 +1567,15 @@ ReforgeLiteDB = {
 				0, -- [7]
 				120, -- [8]
 			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
+			},
 		},
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["inactiveWindowTitle"] = {
 		0.5, -- [1]
@@ -1585,5 +1585,5 @@ ReforgeLiteDB = {
 	["customPresets"] = {
 	},
 	["windowX"] = 1029.206420898438,
-	["openOnReforge"] = true,
+	["methodWindowY"] = 945.0794677734375,
 }

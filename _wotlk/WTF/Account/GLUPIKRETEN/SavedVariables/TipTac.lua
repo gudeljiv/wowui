@@ -1,0 +1,27 @@
+
+TipTac_Config = {
+	["anchorWorldTipType"] = "mouse",
+	["showBuffs"] = false,
+	["left"] = 993.2564086914062,
+	["tipBackdropEdge"] = "nil",
+	["optionsLeft"] = 504.2779846191406,
+	["anchorFrameTipType"] = "mouse",
+	["showPlayerGender"] = false,
+	["anchorFrameUnitPoint"] = "BOTTOMLEFT",
+	["anchorWorldTipPoint"] = "BOTTOMLEFT",
+	["enableBackdrop"] = false,
+	["minimapConfig"] = {
+	},
+	["anchorWorldUnitType"] = "mouse",
+	["showDebuffs"] = false,
+	["barTexture"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
+	["anchorFrameUnitType"] = "mouse",
+	["top"] = 602.7693481445312,
+	["showMinimapIcon"] = false,
+	["showMount"] = false,
+	["optionsBottom"] = 492.269775390625,
+	["modifyFonts"] = true,
+	["reactColoredBackdrop"] = false,
+	["anchorFrameTipPoint"] = "BOTTOMLEFT",
+	["anchorWorldUnitPoint"] = "BOTTOMLEFT",
+}

@@ -38,7 +38,7 @@ Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 AdiBags: enabled
 AdiBags_Config: enabled

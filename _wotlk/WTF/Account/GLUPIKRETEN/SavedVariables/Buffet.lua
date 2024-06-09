@@ -1,6 +1,25 @@
 
 BuffetItemDB = {
 	["itemCache"] = {
+		[4606] = {
+			["isPct"] = false,
+			["isHealth"] = true,
+			["mana"] = 0,
+			["isWellFed"] = false,
+			["isConjured"] = false,
+			["isToxicPotion"] = false,
+			["itemId"] = 4606,
+			["itemClassId"] = 0,
+			["isMana"] = false,
+			["isOverTime"] = false,
+			["isBandage"] = false,
+			["health"] = 552,
+			["isFoodAndDrink"] = true,
+			["isPotion"] = false,
+			["isRestricted"] = false,
+			["overTime"] = 0,
+			["itemSubClassId"] = 5,
+		},
 		[58268] = {
 			["isPct"] = false,
 			["isHealth"] = true,

@@ -203,7 +203,7 @@ RatingBuster: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 AddOnSkins: disabled
 SortBagsButton: disabled
