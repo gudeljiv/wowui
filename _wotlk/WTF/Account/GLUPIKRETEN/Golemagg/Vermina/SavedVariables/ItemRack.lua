@@ -8,12 +8,12 @@ ItemRackUser = {
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {
 		[14] = {
-			["Side"] = "LEFT",
 			["DockTo"] = 13,
+			["Side"] = "LEFT",
 		},
 		[13] = {
-			["Left"] = 813.7465209960938,
 			["Top"] = 614.1904296875,
+			["Left"] = 813.7465209960938,
 		},
 	},
 	["Sets"] = {
@@ -28,7 +28,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "DPS",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -38,10 +38,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["CurrentSet"] = "DPS",
+	["EnableEvents"] = "ON",
 }
