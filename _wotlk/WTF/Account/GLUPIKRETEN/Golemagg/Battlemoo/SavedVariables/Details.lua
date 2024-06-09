@@ -36,7 +36,7 @@ _detalhes_database = {
 							},
 							["end_time"] = 1717871308,
 							["nome"] = "Shalb-Gehennas",
-							["aID"] = "4476-058454C9",
+							["on_hold"] = false,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -215,7 +215,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["aID"] = "4476-058454C9",
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1717871308,
@@ -249,7 +249,7 @@ _detalhes_database = {
 							},
 							["end_time"] = 1717871308,
 							["nome"] = "Yrag-Gehennas",
-							["aID"] = "4476-0583FAE6",
+							["on_hold"] = false,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -426,7 +426,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["aID"] = "4476-0583FAE6",
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1717871307,
@@ -461,8 +461,8 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["end_time"] = 1717871308,
+							["tipo"] = 1,
 							["on_hold"] = false,
-							["aID"] = "4465-0498B68B",
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -480,9 +480,9 @@ _detalhes_database = {
 										["g_dmg"] = 76,
 										["counter"] = 21,
 										["MISS"] = 1,
-										["total"] = 1167,
-										["c_max"] = 148,
 										["r_amt"] = 0,
+										["c_max"] = 148,
+										["n_max"] = 81,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -494,7 +494,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 291,
 										["n_amt"] = 12,
-										["n_max"] = 81,
+										["total"] = 1167,
 										["a_amt"] = 0,
 									}, -- [1]
 									[6807] = {
@@ -557,7 +557,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["tipo"] = 1,
+							["aID"] = "4465-0498B68B",
 							["nome"] = "Battlemoo",
 							["custom"] = 0,
 							["last_event"] = 1717871308,
@@ -591,8 +591,8 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["end_time"] = 1717871308,
+							["tipo"] = 1,
 							["on_hold"] = false,
-							["aID"] = "4476-0582690E",
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -769,7 +769,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["tipo"] = 1,
+							["aID"] = "4476-0582690E",
 							["nome"] = "Willybumz-Gehennas",
 							["custom"] = 0,
 							["last_event"] = 1717871307,
@@ -803,7 +803,7 @@ _detalhes_database = {
 							},
 							["end_time"] = 1717871308,
 							["nome"] = "Vesma-Gehennas",
-							["aID"] = "4476-05840257",
+							["on_hold"] = false,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -868,7 +868,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["aID"] = "4476-05840257",
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1717871307,
@@ -881,16 +881,16 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "47162",
 							["total_without_pet"] = 628.005735,
 							["last_dps_realtime"] = 0,
 							["monster"] = true,
 							["total"] = 628.005735,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4459-36-30163-47162-000064A20D",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Willybumz-Gehennas"] = true,
 								["Shalb-Gehennas"] = true,
@@ -909,7 +909,7 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005735,
 							["end_time"] = 1717871308,
 							["nome"] = "Glubtok",
-							["aID"] = "47162",
+							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1245,16 +1245,16 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "",
 							["total_without_pet"] = 0.008027,
 							["last_dps_realtime"] = 0,
 							["monster"] = true,
 							["total"] = 0.008027,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Vehicle-0-4459-36-30163-48230-000164A20D",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1265,7 +1265,7 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008027,
 							["end_time"] = 1717871308,
 							["nome"] = "Ogre Henchman",
-							["aID"] = "",
+							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1311,16 +1311,16 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "48418",
 							["total_without_pet"] = 0.004431,
 							["last_dps_realtime"] = 0,
 							["monster"] = true,
 							["total"] = 0.004431,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4459-36-30163-48418-000164A20D",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -1331,7 +1331,7 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004431,
 							["end_time"] = 1717871308,
 							["nome"] = "Defias Envoker",
-							["aID"] = "48418",
+							["classe"] = "UNKNOW",
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1403,12 +1403,12 @@ _detalhes_database = {
 								["Battlemoo"] = 705,
 							},
 							["totalover_without_pet"] = 0.005193,
-							["classe"] = "PRIEST",
+							["last_event"] = 1717871274,
 							["healing_taken"] = 0.005193,
 							["end_time"] = 1717871308,
+							["start_time"] = 1717871307,
 							["healing_from"] = {
 							},
-							["aID"] = "4476-05840257",
 							["nome"] = "Vesma-Gehennas",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1441,8 +1441,8 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1717871307,
-							["last_event"] = 1717871274,
+							["classe"] = "PRIEST",
+							["aID"] = "4476-05840257",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005193,
@@ -1451,12 +1451,13 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Vesma-Gehennas"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.001829,
 							["total_without_pet"] = 0.001829,
 							["total"] = 0.001829,
@@ -1470,23 +1471,22 @@ _detalhes_database = {
 							["last_hps"] = 0.0001070843091330223,
 							["targets"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["aID"] = "4465-0498B68B",
 							["totalover_without_pet"] = 0.001829,
 							["healing_taken"] = 705.001829,
-							["healing_from"] = {
-								["Vesma-Gehennas"] = true,
-							},
+							["start_time"] = 1717871308,
 							["end_time"] = 1717871308,
-							["aID"] = "4465-0498B68B",
-							["nome"] = "Battlemoo",
+							["targets_overheal"] = {
+							},
 							["boss_fight_component"] = true,
+							["nome"] = "Battlemoo",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1717871308,
+							["classe"] = "DRUID",
 							["last_event"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -1495,6 +1495,99 @@ _detalhes_database = {
 							["targets_absorbs"] = {
 							},
 						}, -- [2]
+						{
+							["flag_original"] = 1304,
+							["targets_overheal"] = {
+								["Mätäkorva"] = 18430,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = true,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 18430.00534,
+							["total_without_pet"] = 0.00534,
+							["total"] = 0.00534,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = true,
+							["serial"] = "Player-4465-0497494C",
+							["totalabsorb"] = 0.00534,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.00534,
+							["healing_taken"] = 0.00534,
+							["aID"] = "4465-0497494C",
+							["healing_from"] = {
+							},
+							["nome"] = "Mätäkorva",
+							["spells"] = {
+								["_ActorTable"] = {
+									[8936] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Mätäkorva"] = 7415,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Mätäkorva"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 7415,
+										["total"] = 0,
+										["spellschool"] = 8,
+										["id"] = 8936,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_max"] = 0,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+									[774] = {
+										["c_amt"] = 1,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Mätäkorva"] = 11015,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Mätäkorva"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 11015,
+										["total"] = 0,
+										["spellschool"] = 8,
+										["id"] = 774,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_max"] = 0,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["start_time"] = 1717925424,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.00534,
+							["delay"] = 1717925433,
+							["last_event"] = 1717925433,
+						}, -- [3]
 					},
 				}, -- [2]
 				{
@@ -1540,102 +1633,76 @@ _detalhes_database = {
 							["tipo"] = 3,
 						}, -- [1]
 						{
-							["received"] = 10.003463,
+							["received"] = 40.003463,
 							["resource"] = 0.003463,
 							["targets"] = {
-								["Battlemoo"] = 10,
+								["Battlemoo"] = 40,
 							},
-							["total"] = 10.003463,
 							["pets"] = {
 							},
 							["powertype"] = 1,
-							["flag_original"] = 1297,
 							["aID"] = "4465-0498B68B",
 							["totalover"] = 0.003463,
-							["grupo"] = true,
-							["classe"] = "DRUID",
-							["alternatepower"] = 0.003463,
-							["passiveover"] = 0.003463,
+							["total"] = 40.003463,
 							["nome"] = "Battlemoo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[17057] = {
-										["total"] = 10,
+										["total"] = 40,
 										["id"] = 17057,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlemoo"] = 10,
+											["Battlemoo"] = 40,
 										},
-										["counter"] = 1,
+										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
-							["serial"] = "Player-4465-0498B68B",
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "DRUID",
 							["tipo"] = 3,
-							["last_event"] = 1717871469,
+							["passiveover"] = 0.003463,
+							["alternatepower"] = 0.003463,
+							["serial"] = "Player-4465-0498B68B",
+							["last_event"] = 1717926473,
 						}, -- [2]
 						{
-							["flag_original"] = 1304,
-							["resource"] = 0.004205,
+							["received"] = 20.001309,
+							["resource"] = 0.001309,
 							["targets"] = {
-								["Zhäïn"] = 10,
+								["Obehlstrom"] = 20,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
-							["classe"] = "UNGROUPPLAYER",
-							["passiveover"] = 0.004205,
-							["alternatepower"] = 0.004205,
-							["nome"] = "Zhäïn",
+							["aID"] = "4465-043C0208",
+							["totalover"] = 0.001309,
+							["alternatepower"] = 0.001309,
+							["nome"] = "Obehlstrom",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[17057] = {
-										["total"] = 10,
-										["id"] = 17057,
+										["total"] = 20,
 										["totalover"] = 0,
+										["id"] = 17057,
 										["targets"] = {
-											["Zhäïn"] = 10,
+											["Obehlstrom"] = 20,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
-							["received"] = 10.004205,
-							["total"] = 10.004205,
-							["last_event"] = 1717871471,
-							["aID"] = "4465-0304BA3E",
-							["totalover"] = 0.004205,
-							["serial"] = "Player-4465-0304BA3E",
+							["flag_original"] = 1304,
+							["classe"] = "UNGROUPPLAYER",
+							["last_event"] = 1717925365,
+							["passiveover"] = 0.001309,
+							["total"] = 20.001309,
+							["serial"] = "Player-4465-043C0208",
 							["tipo"] = 3,
 						}, -- [3]
-						{
-							["received"] = 0.003578,
-							["resource"] = 3.003578,
-							["targets"] = {
-							},
-							["total"] = 0.003578,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1304,
-							["aID"] = "4465-04981229",
-							["totalover"] = 0.003578,
-							["resource_type"] = 9,
-							["classe"] = "UNGROUPPLAYER",
-							["alternatepower"] = 0.003578,
-							["passiveover"] = 0.003578,
-							["nome"] = "Marudin",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["serial"] = "Player-4465-04981229",
-							["tipo"] = 3,
-							["last_event"] = 1717871478,
-						}, -- [4]
 					},
 				}, -- [3]
 				{
@@ -1708,15 +1775,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["boss_fight_component"] = true,
 							["grupo"] = true,
 							["nome"] = "Yrag-Gehennas",
 							["tipo"] = 4,
-							["aID"] = "4476-0583FAE6",
-							["serial"] = "Player-4476-0583FAE6",
 							["last_event"] = 1717871308,
+							["serial"] = "Player-4476-0583FAE6",
+							["aID"] = "4476-0583FAE6",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
@@ -1751,15 +1818,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["boss_fight_component"] = true,
 							["grupo"] = true,
 							["nome"] = "Vesma-Gehennas",
 							["tipo"] = 4,
-							["aID"] = "4476-05840257",
-							["serial"] = "Player-4476-05840257",
 							["last_event"] = 1717871308,
+							["serial"] = "Player-4476-05840257",
+							["aID"] = "4476-05840257",
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
@@ -1801,7 +1868,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 163,
+							["pets"] = {
+								"Cat <Shalb-Gehennas>", -- [1]
+							},
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1853,20 +1922,18 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 96,
-							["nome"] = "Shalb-Gehennas",
-							["aID"] = "4476-058454C9",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["boss_fight_component"] = true,
+							["last_event"] = 1717871308,
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["buff_uptime"] = 163,
+							["nome"] = "Shalb-Gehennas",
 							["tipo"] = 4,
-							["pets"] = {
-								"Cat <Shalb-Gehennas>", -- [1]
-							},
+							["aID"] = "4476-058454C9",
 							["serial"] = "Player-4476-058454C9",
-							["last_event"] = 1717871308,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
@@ -1949,16 +2016,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 66,
-							["boss_fight_component"] = true,
+							["nome"] = "Willybumz-Gehennas",
 							["spec"] = 262,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4476-0582690E",
-							["nome"] = "Willybumz-Gehennas",
-							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4476-0582690E",
@@ -2048,16 +2115,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 49,
-							["boss_fight_component"] = true,
+							["nome"] = "Battlemoo",
 							["spec"] = 103,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4465-0498B68B",
-							["nome"] = "Battlemoo",
-							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-0498B68B",
@@ -2067,14 +2134,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "",
 							["monster"] = true,
 							["nome"] = "Ogre Henchman",
 							["boss_fight_component"] = true,
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Vehicle-0-4459-36-30163-48230-000164A20D",
-							["aID"] = "",
+							["classe"] = "UNKNOW",
 						}, -- [6]
 						{
 							["flag_original"] = 2600,
@@ -2096,36 +2163,36 @@ _detalhes_database = {
 							["ownerName"] = "Shalb-Gehennas",
 							["nome"] = "Cat <Shalb-Gehennas>",
 							["boss_fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["aID"] = "Pet-0-4460-1-3131-3415-01008F617C",
 							["serial"] = "Pet-0-4460-1-3131-3415-01008F617C",
-							["tipo"] = 4,
+							["last_event"] = 0,
 						}, -- [8]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "48418",
 							["monster"] = true,
 							["nome"] = "Defias Envoker",
 							["boss_fight_component"] = true,
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4459-36-30163-48418-000164A20D",
-							["aID"] = "48418",
+							["classe"] = "UNKNOW",
 						}, -- [9]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "47162",
 							["monster"] = true,
 							["nome"] = "Glubtok",
 							["boss_fight_component"] = true,
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4459-36-30163-47162-000064A20D",
-							["aID"] = "47162",
+							["classe"] = "UNKNOW",
 						}, -- [10]
 					},
 				}, -- [4]
@@ -3252,7 +3319,7 @@ _detalhes_database = {
 					12002, -- [1]
 					705, -- [2]
 					{
-						20, -- [1]
+						70, -- [1]
 						[0] = 269,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -3395,7 +3462,7 @@ _detalhes_database = {
 					10755, -- [1]
 					705, -- [2]
 					{
-						10, -- [1]
+						40, -- [1]
 						[0] = 269,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -3624,16 +3691,12 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1717871466,
 	["active_profile"] = "xVermin",
-	["last_day"] = "08",
+	["last_day"] = "09",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
-		["channel"] = "SELF",
-	},
+	["last_encounter"] = "Emalon the Storm Watcher",
 	["combat_log"] = {
 		["track_hunter_frenzy"] = false,
 		["inverse_deathlog_raid"] = false,
@@ -3645,7 +3708,10 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["last_realversion"] = 156,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["mythic_plus_log"] = {
 	},
 	["cached_roles"] = {
@@ -3679,7 +3745,7 @@ _detalhes_database = {
 		["Player-4477-03823715"] = "DAMAGER",
 		["Player-4465-03BC7E0A"] = "TANK",
 		["Player-4477-04AC58D9"] = "DAMAGER",
-		["Player-4476-039568BB"] = "DAMAGER",
+		["Player-4465-02393930"] = "HEALER",
 		["Player-4815-04812FBB"] = "DAMAGER",
 		["Player-4465-02F9450F"] = "TANK",
 		["Player-4465-040B8FDB"] = "TANK",
@@ -3706,14 +3772,14 @@ _detalhes_database = {
 		["Player-4454-04B050FB"] = "TANK",
 		["Player-4811-03B17C22"] = "DAMAGER",
 		["Player-4742-03ABFF78"] = "DAMAGER",
-		["Player-4477-04108EF6"] = "DAMAGER",
+		["Player-4813-02E48DBE"] = "DAMAGER",
 		["Player-4456-04ABAE28"] = "DAMAGER",
 		["Player-4465-02CBFC54"] = "DAMAGER",
 		["Player-4745-039872BE"] = "TANK",
 		["Player-4465-0382352D"] = "DAMAGER",
 		["Player-4701-03A4EB9E"] = "TANK",
 		["Player-4701-033C9FCA"] = "HEALER",
-		["Player-4465-013A0F84"] = "DAMAGER",
+		["Player-4465-036E4B91"] = "DAMAGER",
 		["Player-4742-00BD292E"] = "DAMAGER",
 		["Player-4476-03DEBB4E"] = "DAMAGER",
 		["Player-4476-039F225E"] = "HEALER",
@@ -3726,14 +3792,14 @@ _detalhes_database = {
 		["Player-4477-0459D267"] = "HEALER",
 		["Player-4465-02EE6D15"] = "DAMAGER",
 		["Player-4465-03E6C2B6"] = "DAMAGER",
-		["Player-4816-04AB2CCF"] = "DAMAGER",
+		["Player-4701-037EF2E6"] = "DAMAGER",
 		["Player-4477-0475D930"] = "TANK",
 		["Player-4477-03824484"] = "DAMAGER",
 		["Player-4811-03A829E9"] = "DAMAGER",
 		["Player-4464-03B09BF3"] = "DAMAGER",
-		["Player-4465-03019843"] = "DAMAGER",
+		["Player-4815-047AE592"] = "DAMAGER",
 		["Player-4477-03AFFDEF"] = "DAMAGER",
-		["Player-4477-04751CB0"] = "TANK",
+		["Player-4476-043CB34D"] = "DAMAGER",
 		["Player-4441-0437468D"] = "HEALER",
 		["Player-4476-04ADE0AB"] = "DAMAGER",
 		["Player-4477-04B195D7"] = "DAMAGER",
@@ -3763,7 +3829,7 @@ _detalhes_database = {
 		["Player-4678-01533823"] = "DAMAGER",
 		["Player-4477-04AC9720"] = "HEALER",
 		["Player-4465-0304DD3C"] = "TANK",
-		["Player-4477-033CC78F"] = "DAMAGER",
+		["Player-4476-011E03D0"] = "DAMAGER",
 		["Player-4476-048E2734"] = "DAMAGER",
 		["Player-4465-04156968"] = "DAMAGER",
 		["Player-4476-043CF37C"] = "DAMAGER",
@@ -3778,7 +3844,7 @@ _detalhes_database = {
 		["Player-4742-039CC922"] = "DAMAGER",
 		["Player-4454-055ABA82"] = "DAMAGER",
 		["Player-4465-036B0989"] = "TANK",
-		["Player-4813-045340CF"] = "HEALER",
+		["Player-4813-04AC12A0"] = "TANK",
 		["Player-4465-0445B5F8"] = "DAMAGER",
 		["Player-4745-03BD9591"] = "DAMAGER",
 		["Player-4476-043DA6F0"] = "TANK",
@@ -3800,7 +3866,7 @@ _detalhes_database = {
 		["Player-4701-031A8022"] = "DAMAGER",
 		["Player-4465-0439BB10"] = "DAMAGER",
 		["Player-4465-02E59964"] = "DAMAGER",
-		["Player-4465-02FFB455"] = "DAMAGER",
+		["Player-4455-04B05EED"] = "TANK",
 		["Player-4465-02EE4EB3"] = "HEALER",
 		["Player-4465-02E9A18A"] = "DAMAGER",
 		["Player-4816-0498582C"] = "DAMAGER",
@@ -3820,16 +3886,16 @@ _detalhes_database = {
 		["Player-4465-03BC5C8F"] = "DAMAGER",
 		["Player-4464-03BCEA34"] = "DAMAGER",
 		["Player-4465-00DFD773"] = "DAMAGER",
-		["Player-4455-032E747B"] = "HEALER",
-		["Player-4441-0392BC9E"] = "TANK",
+		["Player-4465-04147EEB"] = "DAMAGER",
+		["Player-4465-02EDA024"] = "DAMAGER",
 		["Player-4464-048BB827"] = "DAMAGER",
 		["Player-4456-04AE4259"] = "TANK",
 		["Player-4701-045393A4"] = "DAMAGER",
 		["Player-4742-03A04FAE"] = "DAMAGER",
 		["Player-4465-038F9F49"] = "TANK",
 		["Player-4701-0375684A"] = "DAMAGER",
-		["Player-4465-024B4F54"] = "DAMAGER",
-		["Player-4476-03BD9E04"] = "DAMAGER",
+		["Player-4465-03B219A6"] = "DAMAGER",
+		["Player-4441-01D32613"] = "DAMAGER",
 		["Player-4455-027D0B5F"] = "DAMAGER",
 		["Player-4816-0497A055"] = "DAMAGER",
 		["Player-4465-03061313"] = "DAMAGER",
@@ -3837,19 +3903,19 @@ _detalhes_database = {
 		["Player-4465-0301A91B"] = "DAMAGER",
 		["Player-4476-04A25747"] = "DAMAGER",
 		["Player-4476-03483CD8"] = "DAMAGER",
-		["Player-4701-039A4556"] = "DAMAGER",
+		["Player-4465-0490325E"] = "DAMAGER",
 		["Player-4465-040C9C0C"] = "TANK",
 		["Player-4476-047292AB"] = "DAMAGER",
 		["Player-4476-04B17C80"] = "DAMAGER",
 		["Player-4467-02B77199"] = "DAMAGER",
 		["Player-4476-04910C80"] = "TANK",
 		["Player-4815-047D7F11"] = "TANK",
-		["Player-4466-00BAF052"] = "DAMAGER",
+		["Player-4477-0438937C"] = "DAMAGER",
 		["Player-4476-0470A68E"] = "DAMAGER",
-		["Player-4477-05830C8A"] = "DAMAGER",
+		["Player-4813-049C7CFE"] = "DAMAGER",
 		["Player-4465-02E65254"] = "DAMAGER",
 		["Player-4701-03314E17"] = "TANK",
-		["Player-4742-03A32224"] = "DAMAGER",
+		["Player-4476-04912765"] = "DAMAGER",
 		["Player-4815-04B53E93"] = "DAMAGER",
 		["Player-4465-0228C147"] = "DAMAGER",
 		["Player-4701-045DA1CD"] = "DAMAGER",
@@ -3862,10 +3928,10 @@ _detalhes_database = {
 		["Player-4477-04AE4A1B"] = "TANK",
 		["Player-4813-04B1E45C"] = "DAMAGER",
 		["Player-4465-0385F4CC"] = "DAMAGER",
-		["Player-4465-0189BBD2"] = "DAMAGER",
+		["Player-4477-044E6A37"] = "DAMAGER",
 		["Player-4465-00DEF1C5"] = "DAMAGER",
 		["Player-4477-045DDB68"] = "DAMAGER",
-		["Player-4455-04973286"] = "DAMAGER",
+		["Player-4465-02C366BD"] = "DAMAGER",
 		["Player-4701-03D45C0D"] = "DAMAGER",
 		["Player-4477-0434CD60"] = "HEALER",
 		["Player-4465-02E6B5E3"] = "DAMAGER",
@@ -3873,8 +3939,8 @@ _detalhes_database = {
 		["Player-4465-0440CEC7"] = "HEALER",
 		["Player-4477-0251F461"] = "HEALER",
 		["Player-4465-0296F5D8"] = "DAMAGER",
-		["Player-4745-03A13FCE"] = "DAMAGER",
-		["Player-4476-020DE31E"] = "DAMAGER",
+		["Player-4465-0401260D"] = "DAMAGER",
+		["Player-4465-041B40EF"] = "DAMAGER",
 		["Player-4465-036D9970"] = "TANK",
 		["Player-4701-03772FC7"] = "DAMAGER",
 		["Player-4476-0469A0BF"] = "TANK",
@@ -3884,7 +3950,7 @@ _detalhes_database = {
 		["Player-4465-02F9C482"] = "DAMAGER",
 		["Player-4455-04BC6B50"] = "HEALER",
 		["Player-4465-025A1E69"] = "DAMAGER",
-		["Player-4477-03B0030C"] = "DAMAGER",
+		["Player-4476-04B20381"] = "TANK",
 		["Player-4816-04960596"] = "DAMAGER",
 		["Player-4465-037910BA"] = "DAMAGER",
 		["Player-4441-039EF4DF"] = "DAMAGER",
@@ -3924,7 +3990,7 @@ _detalhes_database = {
 		["Player-4465-02E319A9"] = "DAMAGER",
 		["Player-4815-049B168D"] = "DAMAGER",
 		["Player-4701-037C01FE"] = "DAMAGER",
-		["Player-4477-046EF79F"] = "DAMAGER",
+		["Player-4464-03A1E9FC"] = "DAMAGER",
 		["Player-4465-02C4FB89"] = "DAMAGER",
 		["Player-4465-02A172EE"] = "HEALER",
 		["Player-4465-02EA7F29"] = "TANK",
@@ -3933,7 +3999,7 @@ _detalhes_database = {
 		["Player-4701-041E76FF"] = "HEALER",
 		["Player-4701-038E51C3"] = "DAMAGER",
 		["Player-4742-03D2CA6E"] = "DAMAGER",
-		["Player-4701-03B23A66"] = "DAMAGER",
+		["Player-4742-03A94213"] = "DAMAGER",
 		["Player-4477-025CB6E7"] = "DAMAGER",
 		["Player-4813-04840D9B"] = "DAMAGER",
 		["Player-4465-0456B6ED"] = "DAMAGER",
@@ -3943,7 +4009,7 @@ _detalhes_database = {
 		["Player-4454-04891ABB"] = "TANK",
 		["Player-4701-0311B745"] = "DAMAGER",
 		["Player-4701-01B19E9E"] = "DAMAGER",
-		["Player-4816-049C5BF5"] = "DAMAGER",
+		["Player-4476-038A3912"] = "DAMAGER",
 		["Player-4442-03C690CB"] = "DAMAGER",
 		["Player-4477-0342C1F5"] = "DAMAGER",
 		["Player-4476-048528B8"] = "DAMAGER",
@@ -3952,7 +4018,7 @@ _detalhes_database = {
 		["Player-4464-01B9CF52"] = "DAMAGER",
 		["Player-4477-04B04FFC"] = "DAMAGER",
 		["Player-4465-03B47870"] = "DAMAGER",
-		["Player-4701-0395CEF4"] = "DAMAGER",
+		["Player-4815-04BAE1B0"] = "DAMAGER",
 		["Player-4701-03D21535"] = "DAMAGER",
 		["Player-4701-02057E00"] = "DAMAGER",
 		["Player-4701-0193CA0E"] = "DAMAGER",
@@ -3979,11 +4045,11 @@ _detalhes_database = {
 		["Player-4815-047801BA"] = "DAMAGER",
 		["Player-4816-04AABCE2"] = "DAMAGER",
 		["Player-4465-02E807F0"] = "DAMAGER",
-		["Player-4464-03062885"] = "DAMAGER",
+		["Player-4477-049CC442"] = "HEALER",
 		["Player-4701-031837B4"] = "TANK",
 		["Player-4465-0255393C"] = "DAMAGER",
 		["Player-4465-00180435"] = "HEALER",
-		["Player-4477-03710961"] = "HEALER",
+		["Player-4701-039A46F4"] = "DAMAGER",
 		["Player-4476-047A79B6"] = "TANK",
 		["Player-4465-041AD33F"] = "DAMAGER",
 		["Player-4813-0345D5E4"] = "DAMAGER",
@@ -4015,12 +4081,12 @@ _detalhes_database = {
 		["Player-4477-04986814"] = "DAMAGER",
 		["Player-4477-047354C1"] = "DAMAGER",
 		["Player-4813-033F9915"] = "DAMAGER",
-		["Player-4476-043F2E13"] = "DAMAGER",
+		["Player-4464-00D247CA"] = "DAMAGER",
 		["Player-4465-02E48B0A"] = "DAMAGER",
 		["Player-4441-03ACC446"] = "DAMAGER",
 		["Player-4745-03AE87D2"] = "DAMAGER",
-		["Player-4749-01882F48"] = "TANK",
-		["Player-4815-0478FE1D"] = "DAMAGER",
+		["Player-4455-03B86317"] = "DAMAGER",
+		["Player-4477-0340EAC4"] = "DAMAGER",
 		["Player-4441-02500ABE"] = "DAMAGER",
 		["Player-4742-03D77DF6"] = "HEALER",
 		["Player-4811-036D5C26"] = "DAMAGER",
@@ -4044,7 +4110,7 @@ _detalhes_database = {
 		["Player-4477-0451096B"] = "HEALER",
 		["Player-4454-0494D538"] = "TANK",
 		["Player-4477-033D0677"] = "DAMAGER",
-		["Player-4745-039E1667"] = "DAMAGER",
+		["Player-4465-036CDF58"] = "DAMAGER",
 		["Player-4465-0498B68B"] = "DAMAGER",
 		["Player-4476-043E1E57"] = "DAMAGER",
 		["Player-4813-04AC6A76"] = "DAMAGER",
@@ -4187,15 +4253,15 @@ _detalhes_database = {
 		["Player-4678-049EBB20"] = "DAMAGER",
 		["Player-4465-03ABCE75"] = "DAMAGER",
 		["Player-4465-04537975"] = "DAMAGER",
-		["Player-4477-04969D03"] = "DAMAGER",
+		["Player-4477-04F2EAC0"] = "HEALER",
 		["Player-4476-0398C0FC"] = "DAMAGER",
 		["Player-4701-03A06AF0"] = "DAMAGER",
 		["Player-4476-0331CDE3"] = "NONE",
 		["Player-4701-0318A668"] = "DAMAGER",
-		["Player-4465-030692A4"] = "TANK",
+		["Player-4815-046AECF6"] = "DAMAGER",
 		["Player-4442-01CB1178"] = "DAMAGER",
 		["Player-4476-0437163B"] = "DAMAGER",
-		["Player-4816-04A28E83"] = "DAMAGER",
+		["Player-4465-02E18C78"] = "DAMAGER",
 		["Player-4465-012017A9"] = "DAMAGER",
 		["Player-4465-02F203C3"] = "DAMAGER",
 		["Player-4465-03B922BC"] = "HEALER",
@@ -4205,7 +4271,7 @@ _detalhes_database = {
 		["Player-4465-036B1EC7"] = "TANK",
 		["Player-4465-03BC55D9"] = "HEALER",
 		["Player-4742-019006C5"] = "DAMAGER",
-		["Player-4477-056651F8"] = "DAMAGER",
+		["Player-4454-04A7535F"] = "TANK",
 		["Player-4477-0435E253"] = "DAMAGER",
 		["Player-4453-04AF41CF"] = "TANK",
 		["Player-4476-0535A7AE"] = "DAMAGER",
@@ -4219,24 +4285,24 @@ _detalhes_database = {
 		["Player-4742-039F4F93"] = "DAMAGER",
 		["Player-4455-0526DE05"] = "DAMAGER",
 		["Player-4701-02B64917"] = "DAMAGER",
-		["Player-4465-00FA6CF4"] = "DAMAGER",
+		["Player-4465-02E58934"] = "TANK",
 		["Player-4465-03030DA7"] = "DAMAGER",
 		["Player-4476-043ECA31"] = "DAMAGER",
 		["Player-4465-037A56E8"] = "DAMAGER",
 		["Player-4477-03A7BF8F"] = "HEALER",
 		["Player-4465-02EA632B"] = "DAMAGER",
 		["Player-4465-0393A5DF"] = "HEALER",
-		["Player-4465-02FB5CC4"] = "DAMAGER",
+		["Player-4465-03AA7519"] = "TANK",
 		["Player-4477-0339BEBB"] = "DAMAGER",
 		["Player-4440-02EE2860"] = "DAMAGER",
 		["Player-4476-0493D27B"] = "DAMAGER",
-		["Player-4745-03A7F75C"] = "TANK",
+		["Player-4465-0081E008"] = "HEALER",
 		["Player-4464-00435FB4"] = "DAMAGER",
 		["Player-4701-03A263D4"] = "HEALER",
 		["Player-4701-0317C60F"] = "DAMAGER",
 		["Player-4465-02FA73C1"] = "DAMAGER",
 		["Player-4465-03B6F0BC"] = "DAMAGER",
-		["Player-4465-033FFE5A"] = "TANK",
+		["Player-4465-03AEF9DA"] = "DAMAGER",
 		["Player-4465-03804F09"] = "TANK",
 		["Player-4703-0229962D"] = "DAMAGER",
 		["Player-4465-02FC3628"] = "DAMAGER",
@@ -4250,7 +4316,7 @@ _detalhes_database = {
 		["Player-4476-03DD0581"] = "TANK",
 		["Player-4477-039A2696"] = "DAMAGER",
 		["Player-4464-036DEF08"] = "TANK",
-		["Player-4745-03CC0CA6"] = "DAMAGER",
+		["Player-4476-04616A94"] = "DAMAGER",
 		["Player-4455-04AFD28A"] = "DAMAGER",
 		["Player-4465-02E896F9"] = "DAMAGER",
 		["Player-4465-036946B4"] = "DAMAGER",
@@ -4298,47 +4364,47 @@ _detalhes_database = {
 		["Player-4465-03A86B44"] = "DAMAGER",
 		["Player-4477-0520D7D7"] = "DAMAGER",
 		["Player-4465-04911C03"] = "HEALER",
-		["Player-4465-02A6E5CF"] = "DAMAGER",
+		["Player-4465-02FA12E9"] = "TANK",
 		["Player-4465-02ECDAD8"] = "DAMAGER",
 		["Player-4813-02094950"] = "DAMAGER",
 		["Player-4465-02A87DBD"] = "DAMAGER",
 		["Player-4477-044DDCFF"] = "DAMAGER",
 		["Player-4465-0264E620"] = "DAMAGER",
-		["Player-4465-026AFE7E"] = "DAMAGER",
+		["Player-4441-03D6D040"] = "DAMAGER",
 		["Player-4465-02F7B5B1"] = "DAMAGER",
 		["Player-4465-045ECE80"] = "HEALER",
-		["Player-4476-057EB1A8"] = "DAMAGER",
+		["Player-4465-04409421"] = "DAMAGER",
 		["Player-4465-03BC4CFD"] = "HEALER",
 		["Player-4477-017B3259"] = "DAMAGER",
 		["Player-4465-0258C8B8"] = "DAMAGER",
-		["Player-4465-02FA12E9"] = "TANK",
+		["Player-4701-031718F2"] = "DAMAGER",
 		["Player-4465-036F7770"] = "TANK",
 		["Player-4465-048A44B6"] = "DAMAGER",
 		["Player-4476-043BB853"] = "DAMAGER",
-		["Player-4442-0399B647"] = "DAMAGER",
+		["Player-4465-0377F654"] = "DAMAGER",
 		["Player-4476-0474B494"] = "DAMAGER",
 		["Player-4464-03917935"] = "DAMAGER",
-		["Player-4465-036CDF58"] = "DAMAGER",
 		["Player-4816-04AB7360"] = "DAMAGER",
+		["Player-4465-03AB1640"] = "DAMAGER",
 		["Player-4701-038F9723"] = "TANK",
 		["Player-4701-0318D81F"] = "DAMAGER",
 		["Player-4465-02FA9735"] = "DAMAGER",
-		["Player-4464-03A50413"] = "DAMAGER",
+		["Player-4465-02E6D741"] = "DAMAGER",
 		["Player-4811-03A3A380"] = "DAMAGER",
 		["Player-4465-02C5D029"] = "DAMAGER",
 		["Player-4477-044DDB0F"] = "DAMAGER",
 		["Player-4465-0301FE96"] = "HEALER",
 		["Player-4466-038395AF"] = "DAMAGER",
-		["Player-4441-03D6D040"] = "DAMAGER",
-		["Player-4465-0377F654"] = "DAMAGER",
 		["Player-4477-04C90426"] = "DAMAGER",
-		["Player-4465-03889E32"] = "TANK",
+		["Player-4816-04A2C4A2"] = "HEALER",
+		["Player-4465-030692A4"] = "TANK",
+		["Player-4476-04AA9AC7"] = "DAMAGER",
 		["Player-4465-03BC6756"] = "DAMAGER",
 		["Player-4464-03947026"] = "DAMAGER",
-		["Player-4816-04A2C4A2"] = "HEALER",
+		["Player-4440-02F4FD8B"] = "DAMAGER",
 		["Player-4813-01D67AE4"] = "DAMAGER",
-		["Player-4701-00B2A495"] = "DAMAGER",
-		["Player-4455-03B86317"] = "DAMAGER",
+		["Player-4749-01882F48"] = "TANK",
+		["Player-4815-0478FE1D"] = "DAMAGER",
 		["Player-4465-02EB769B"] = "TANK",
 		["Player-4465-037A3E06"] = "DAMAGER",
 		["Player-4815-046F53A9"] = "DAMAGER",
@@ -4346,8 +4412,8 @@ _detalhes_database = {
 		["Player-4455-03B8A51E"] = "DAMAGER",
 		["Player-4465-02FDB386"] = "HEALER",
 		["Player-4465-02FD8F28"] = "DAMAGER",
+		["Player-4813-04AE0F3A"] = "DAMAGER",
 		["Player-4813-034F9148"] = "DAMAGER",
-		["Player-4440-02F4FD8B"] = "DAMAGER",
 		["Player-4476-04A933E9"] = "DAMAGER",
 		["Player-4476-036DF0DE"] = "TANK",
 		["Player-4477-03DF5CD9"] = "DAMAGER",
@@ -4356,26 +4422,26 @@ _detalhes_database = {
 		["Player-4701-03AEB105"] = "DAMAGER",
 		["Player-4465-02E1D02B"] = "DAMAGER",
 		["Player-4476-030A5AF0"] = "HEALER",
-		["Player-4465-02918203"] = "DAMAGER",
+		["Player-4465-03D8460A"] = "DAMAGER",
 		["Player-4742-03E69C5A"] = "HEALER",
 		["Player-4466-0386640C"] = "DAMAGER",
-		["Player-4456-04CF6D97"] = "HEALER",
+		["Player-4464-02789DCB"] = "DAMAGER",
 		["Player-4464-00193680"] = "DAMAGER",
 		["Player-4701-030C5040"] = "DAMAGER",
-		["Player-4464-00D247CA"] = "DAMAGER",
-		["Player-4477-03B1CDB8"] = "TANK",
-		["Player-4477-01554A23"] = "DAMAGER",
+		["Player-4465-025C3578"] = "DAMAGER",
+		["Player-4477-03710961"] = "HEALER",
+		["Player-4476-04AD6F93"] = "DAMAGER",
 		["Player-4813-04AC7347"] = "DAMAGER",
 		["Player-4465-037C458A"] = "DAMAGER",
 		["Player-4476-03859B0C"] = "DAMAGER",
 		["Player-4476-03552E16"] = "DAMAGER",
 		["Player-4815-04779E1B"] = "DAMAGER",
-		["Player-4477-049CC442"] = "HEALER",
+		["Player-4464-03062885"] = "DAMAGER",
 		["Player-4813-04AB8252"] = "DAMAGER",
 		["Player-4703-0150AA81"] = "DAMAGER",
-		["Player-4465-039104E0"] = "TANK",
+		["Player-4442-03A233F9"] = "DAMAGER",
 		["Player-4465-02BC5265"] = "TANK",
-		["Player-4465-040D95F5"] = "DAMAGER",
+		["Player-4455-05270F24"] = "DAMAGER",
 		["Player-4477-049CFB93"] = "HEALER",
 		["Player-4442-03E63561"] = "DAMAGER",
 		["Player-4441-03A4BA37"] = "DAMAGER",
@@ -4383,18 +4449,18 @@ _detalhes_database = {
 		["Player-4454-05234C1D"] = "HEALER",
 		["Player-4465-0304BFD2"] = "DAMAGER",
 		["Player-4465-0234ED4B"] = "DAMAGER",
-		["Player-4701-039A46F4"] = "DAMAGER",
-		["Player-4476-04AD6F93"] = "DAMAGER",
+		["Player-4477-03B1CDB8"] = "TANK",
+		["Player-4811-03972E5D"] = "DAMAGER",
 		["Player-4455-05348842"] = "HEALER",
 		["Player-4465-02DF9BD4"] = "DAMAGER",
 		["Player-4477-04FBB18E"] = "DAMAGER",
 		["Player-4465-032539B1"] = "DAMAGER",
 		["Player-4476-043A875B"] = "DAMAGER",
 		["Player-4701-03A555C0"] = "DAMAGER",
-		["Player-4476-046A3991"] = "TANK",
+		["Player-4476-038EEA25"] = "DAMAGER",
 		["Player-4465-02E86C8E"] = "TANK",
 		["Player-4465-02FD19EF"] = "DAMAGER",
-		["Player-4701-030F40D8"] = "DAMAGER",
+		["Player-4465-03060970"] = "DAMAGER",
 		["Player-4476-04006B6C"] = "DAMAGER",
 		["Player-4701-03436126"] = "DAMAGER",
 		["Player-4465-0391717D"] = "DAMAGER",
@@ -4402,224 +4468,224 @@ _detalhes_database = {
 		["Player-4701-03AE94B9"] = "DAMAGER",
 		["Player-4477-047EF272"] = "DAMAGER",
 		["Player-4465-0306CC5A"] = "DAMAGER",
+		["Player-4465-0242D6DA"] = "DAMAGER",
 		["Player-4815-048BA7CE"] = "DAMAGER",
-		["Player-4464-017B3546"] = "HEALER",
 		["Player-4476-03996607"] = "DAMAGER",
 		["Player-4476-04BCCDDA"] = "DAMAGER",
 		["Player-4465-040B90A1"] = "DAMAGER",
 		["Player-4476-05101119"] = "DAMAGER",
-		["Player-4476-038A3912"] = "DAMAGER",
-		["Player-4742-03A94213"] = "DAMAGER",
+		["Player-4701-0381C047"] = "DAMAGER",
+		["Player-4464-030692BC"] = "DAMAGER",
 		["Player-4816-04A0B653"] = "TANK",
 		["Player-4701-03A862AD"] = "DAMAGER",
-		["Player-4701-0381C047"] = "DAMAGER",
+		["Player-4816-049C5BF5"] = "DAMAGER",
 		["Player-4701-01B92F3F"] = "DAMAGER",
 		["Player-4454-02157755"] = "HEALER",
-		["Player-4464-030692BC"] = "DAMAGER",
-		["Player-4477-048FA61B"] = "DAMAGER",
-		["Player-4815-04BAE1B0"] = "DAMAGER",
-		["Player-4465-0401260D"] = "DAMAGER",
-		["Player-4813-051871D9"] = "DAMAGER",
-		["Player-4742-03BE74D7"] = "DAMAGER",
+		["Player-4465-03DDCCB1"] = "DAMAGER",
+		["Player-4477-02E4768C"] = "HEALER",
+		["Player-4701-03B23A66"] = "DAMAGER",
 		["Player-4465-011C57A5"] = "DAMAGER",
+		["Player-4465-01405DB1"] = "HEALER",
+		["Player-4742-03BE74D7"] = "DAMAGER",
+		["Player-4464-02F4F5C4"] = "HEALER",
 		["Player-4811-0376A82F"] = "DAMAGER",
 		["Player-4465-03B37980"] = "DAMAGER",
-		["Player-4465-01405DB1"] = "HEALER",
+		["Player-4701-0381C253"] = "TANK",
 		["Player-4701-0170B8CB"] = "DAMAGER",
 		["Player-4476-0171287A"] = "DAMAGER",
-		["Player-4464-02F4F5C4"] = "HEALER",
-		["Player-4701-03ACBD13"] = "TANK",
+		["Player-4701-030F2A42"] = "DAMAGER",
+		["Player-4476-057EB1A8"] = "DAMAGER",
 		["Player-4442-0399D1FB"] = "DAMAGER",
-		["Player-4701-0381C253"] = "TANK",
-		["Player-4476-043D9AC5"] = "DAMAGER",
+		["Player-4742-03B4594E"] = "DAMAGER",
+		["Player-4477-046B669A"] = "DAMAGER",
 		["Player-4441-02675BD0"] = "DAMAGER",
-		["Player-4465-02EDA024"] = "DAMAGER",
-		["Player-4465-04142721"] = "DAMAGER",
-		["Player-4476-04616A94"] = "DAMAGER",
+		["Player-4745-03A13FCE"] = "DAMAGER",
+		["Player-4815-0496431A"] = "DAMAGER",
+		["Player-4465-0189BBD2"] = "DAMAGER",
 		["Player-4464-039C5E72"] = "DAMAGER",
 		["Player-4477-02C5E13B"] = "DAMAGER",
-		["Player-4477-046819E1"] = "DAMAGER",
+		["Player-4465-03EB3E54"] = "DAMAGER",
 		["Player-4745-03BD4EEF"] = "DAMAGER",
 		["Player-4476-0403334D"] = "HEALER",
-		["Player-4465-02C366BD"] = "DAMAGER",
+		["Player-4464-02952068"] = "DAMAGER",
 		["Player-4464-0397E0EB"] = "DAMAGER",
-		["Player-4701-031821B6"] = "DAMAGER",
+		["Player-4701-03A93222"] = "DAMAGER",
 		["Player-4465-028BE5A6"] = "TANK",
 		["Player-4465-02F9E2A6"] = "HEALER",
 		["Player-4465-03BC22A1"] = "DAMAGER",
 		["Player-4476-03BDCDF7"] = "HEALER",
 		["Player-4816-04A4EF03"] = "DAMAGER",
-		["Player-4464-02952068"] = "DAMAGER",
+		["Player-4476-046A3991"] = "TANK",
 		["Player-4456-0483F826"] = "DAMAGER",
 		["Player-4465-02E59B91"] = "DAMAGER",
 		["Player-4455-04B0CB85"] = "DAMAGER",
 		["Player-4477-044870C4"] = "DAMAGER",
 		["Player-4465-02E6A387"] = "HEALER",
-		["Player-4816-04B1862D"] = "DAMAGER",
+		["Player-4701-039E5EEB"] = "TANK",
 		["Player-4742-037B48BE"] = "DAMAGER",
-		["Player-4477-04007E9C"] = "DAMAGER",
-		["Player-4455-05270F24"] = "DAMAGER",
-		["Player-4701-03880021"] = "DAMAGER",
-		["Player-4465-03059DF0"] = "HEALER",
-		["Player-4477-04B00B48"] = "TANK",
-		["Player-4476-03BEE8AF"] = "HEALER",
-		["Player-4465-02BC58D1"] = "DAMAGER",
-		["Player-4465-00CD57CA"] = "DAMAGER",
-		["Player-4701-03A93222"] = "DAMAGER",
-		["Player-4464-013199FE"] = "DAMAGER",
 		["Player-4811-036C57B9"] = "DAMAGER",
+		["Player-4465-0273EF4E"] = "DAMAGER",
+		["Player-4477-04007E9C"] = "DAMAGER",
+		["Player-4465-039104E0"] = "TANK",
+		["Player-4745-03ACD4F8"] = "DAMAGER",
+		["Player-4465-02A6E5CF"] = "DAMAGER",
+		["Player-4465-02BC58D1"] = "DAMAGER",
+		["Player-4742-03CDE839"] = "DAMAGER",
+		["Player-4465-02E8FE5F"] = "DAMAGER",
+		["Player-4465-00CD57CA"] = "DAMAGER",
+		["Player-4701-03AD8CB5"] = "HEALER",
 		["Player-4465-02FDE92E"] = "DAMAGER",
 		["Player-4816-04970EF3"] = "DAMAGER",
 		["Player-4815-049D2A2D"] = "TANK",
+		["Player-4466-00BAF052"] = "DAMAGER",
 		["Player-4477-01E0D74F"] = "DAMAGER",
-		["Player-4477-0438937C"] = "DAMAGER",
-		["Player-4465-0490325E"] = "DAMAGER",
+		["Player-4465-03DB7949"] = "TANK",
 		["Player-4465-03D2FA62"] = "DAMAGER",
 		["Player-4749-032E0F4D"] = "DAMAGER",
-		["Player-4465-0393E71A"] = "DAMAGER",
-		["Player-4742-03CDE839"] = "DAMAGER",
-		["Player-4465-032801EA"] = "TANK",
-		["Player-4465-02E8FE5F"] = "DAMAGER",
+		["Player-4476-03BD9E04"] = "DAMAGER",
+		["Player-4701-03C1C37D"] = "DAMAGER",
+		["Player-4701-039F29B2"] = "DAMAGER",
+		["Player-4465-03059CDE"] = "DAMAGER",
 		["Player-4454-0494D4FF"] = "DAMAGER",
 		["Player-4476-048B093D"] = "TANK",
-		["Player-4701-03AD8CB5"] = "HEALER",
-		["Player-4455-04D33838"] = "HEALER",
-		["Player-4465-02C3620C"] = "HEALER",
-		["Player-4465-03738C3D"] = "DAMAGER",
-		["Player-4465-03836ABB"] = "DAMAGER",
-		["Player-4465-04147EEB"] = "DAMAGER",
-		["Player-4465-02F99219"] = "DAMAGER",
-		["Player-4701-03C1C37D"] = "DAMAGER",
-		["Player-4465-03059CDE"] = "DAMAGER",
-		["Player-4465-038D8603"] = "DAMAGER",
 		["Player-4465-02EE4B0B"] = "DAMAGER",
+		["Player-4455-04D33838"] = "HEALER",
+		["Player-4464-03E635DA"] = "DAMAGER",
+		["Player-4441-0392BC9E"] = "TANK",
+		["Player-4465-03836ABB"] = "DAMAGER",
+		["Player-4465-026D9388"] = "HEALER",
+		["Player-4465-02F99219"] = "DAMAGER",
+		["Player-4745-03AEFA42"] = "HEALER",
+		["Player-4477-05830C8A"] = "DAMAGER",
+		["Player-4465-038D8603"] = "DAMAGER",
+		["Player-4465-03738C3D"] = "DAMAGER",
 		["Player-4454-04ADF86E"] = "DAMAGER",
 		["Player-4476-04B20B31"] = "DAMAGER",
-		["Player-4464-03E635DA"] = "DAMAGER",
-		["Player-4476-01501919"] = "TANK",
+		["Player-4465-04142721"] = "DAMAGER",
+		["Player-4465-038B9318"] = "DAMAGER",
 		["Player-4477-04B0F745"] = "TANK",
 		["Player-4701-039D6727"] = "HEALER",
 		["Player-4477-0492798D"] = "DAMAGER",
-		["Player-4465-03EB3E54"] = "DAMAGER",
+		["Player-4742-03BA657E"] = "DAMAGER",
 		["Player-4442-0103F1DD"] = "DAMAGER",
-		["Player-4742-03A82E01"] = "DAMAGER",
-		["Player-4745-03AEFA42"] = "HEALER",
-		["Player-4465-02E58934"] = "TANK",
-		["Player-4811-0385DD31"] = "DAMAGER",
+		["Player-4477-0254B481"] = "DAMAGER",
+		["Player-4476-043D9AC5"] = "DAMAGER",
+		["Player-4701-037F988D"] = "DAMAGER",
+		["Player-4701-03121603"] = "DAMAGER",
 		["Player-4476-045E2483"] = "DAMAGER",
 		["Player-4465-02FAA165"] = "HEALER",
 		["Player-4811-03ABD32F"] = "DAMAGER",
-		["Player-4477-0254B481"] = "DAMAGER",
+		["Player-4466-00CC50DD"] = "DAMAGER",
 		["Player-4701-03743A17"] = "HEALER",
-		["Player-4465-0304A35C"] = "HEALER",
 		["Player-4477-0381B354"] = "DAMAGER",
+		["Player-4476-047B244F"] = "DAMAGER",
 		["Player-4465-02EC887A"] = "DAMAGER",
 		["Player-4465-036BC29C"] = "TANK",
 		["Player-4465-029C2795"] = "HEALER",
 		["Player-4455-04F80E61"] = "DAMAGER",
 		["Player-4442-0202BFC6"] = "DAMAGER",
-		["Player-4455-04B05EED"] = "TANK",
-		["Player-4701-03121603"] = "DAMAGER",
-		["Player-4465-02DBEEE7"] = "DAMAGER",
-		["Player-4466-00CC50DD"] = "DAMAGER",
-		["Player-4465-0304F0B0"] = "DAMAGER",
+		["Player-4742-03A9F661"] = "DAMAGER",
 		["Player-4465-02F62028"] = "DAMAGER",
-		["Player-4465-036E0E98"] = "DAMAGER",
+		["Player-4465-02DBEEE7"] = "DAMAGER",
+		["Player-4701-03ACBD13"] = "TANK",
+		["Player-4465-01E31F00"] = "HEALER",
 		["Player-4465-02679F4E"] = "DAMAGER",
+		["Player-4465-036E0E98"] = "DAMAGER",
+		["Player-4476-04EB9079"] = "DAMAGER",
 		["Player-4441-047A0D1E"] = "HEALER",
 		["Player-4455-04E2BC9B"] = "HEALER",
 		["Player-4701-03A6904B"] = "DAMAGER",
 		["Player-4476-040311B5"] = "HEALER",
-		["Player-4813-04AC12A0"] = "TANK",
+		["Player-4742-03A32224"] = "DAMAGER",
 		["Player-4465-02BC6B57"] = "DAMAGER",
 		["Player-4465-038EC52A"] = "DAMAGER",
 		["Player-4701-039FF4C4"] = "HEALER",
-		["Player-4465-01E31F00"] = "HEALER",
+		["Player-4816-04A28E83"] = "DAMAGER",
 		["Player-4465-00F4F733"] = "DAMAGER",
+		["Player-4465-02BD4F10"] = "DAMAGER",
+		["Player-4465-03B3BAD9"] = "DAMAGER",
 		["Player-4701-03768151"] = "DAMAGER",
-		["Player-4476-04EB9079"] = "DAMAGER",
-		["Player-4742-03B4594E"] = "DAMAGER",
-		["Player-4465-000925CC"] = "DAMAGER",
+		["Player-4813-03964084"] = "DAMAGER",
 		["Player-4465-036AD451"] = "DAMAGER",
-		["Player-4815-048E2849"] = "DAMAGER",
-		["Player-4465-03AC9558"] = "DAMAGER",
-		["Player-4815-0496431A"] = "DAMAGER",
+		["Player-4477-046819E1"] = "DAMAGER",
+		["Player-4465-03046E17"] = "HEALER",
+		["Player-4440-01D96E82"] = "HEALER",
 		["Player-4749-03960BD4"] = "TANK",
 		["Player-4465-036C642C"] = "DAMAGER",
-		["Player-4465-02BD4F10"] = "DAMAGER",
-		["Player-4476-011E03D0"] = "DAMAGER",
+		["Player-4465-000925CC"] = "DAMAGER",
+		["Player-4465-036D0C5D"] = "DAMAGER",
 		["Player-4701-03190ACD"] = "HEALER",
 		["Player-4454-04978A8A"] = "DAMAGER",
-		["Player-4440-01D96E82"] = "HEALER",
+		["Player-4442-013D9E9A"] = "TANK",
 		["Player-4815-04865F8D"] = "DAMAGER",
 		["Player-4465-03D36725"] = "DAMAGER",
-		["Player-4813-03964084"] = "DAMAGER",
-		["Player-4465-02ED0694"] = "DAMAGER",
-		["Player-4442-013D9E9A"] = "TANK",
+		["Player-4477-049ABDF5"] = "TANK",
+		["Player-4465-02BC7B1D"] = "DAMAGER",
+		["Player-4465-033FFE5A"] = "TANK",
 		["Player-4476-0528D4D3"] = "DAMAGER",
 		["Player-4477-044FB388"] = "DAMAGER",
 		["Player-4701-031865DF"] = "DAMAGER",
-		["Player-4477-018B8F86"] = "DAMAGER",
-		["Player-4465-03AEF9DA"] = "DAMAGER",
-		["Player-4465-03DB7949"] = "TANK",
 		["Player-4465-0277B076"] = "HEALER",
-		["Player-4811-037AFCE9"] = "DAMAGER",
+		["Player-4465-02ED0694"] = "DAMAGER",
+		["Player-4465-0393E71A"] = "DAMAGER",
+		["Player-4476-047EAC4B"] = "DAMAGER",
+		["Player-4465-032312D2"] = "HEALER",
 		["Player-4465-02BDC0CB"] = "DAMAGER",
 		["Player-4476-043B540B"] = "HEALER",
-		["Player-4815-047AE592"] = "DAMAGER",
+		["Player-4745-03A7F75C"] = "TANK",
 		["Player-4813-04B175CD"] = "TANK",
 		["Player-4464-0258248F"] = "DAMAGER",
 		["Player-4742-03A9E78C"] = "DAMAGER",
 		["Player-4465-02C21EF2"] = "DAMAGER",
-		["Player-4465-032312D2"] = "HEALER",
+		["Player-4465-02E593AE"] = "TANK",
 		["Player-4477-0496ECB8"] = "DAMAGER",
-		["Player-4476-043CB34D"] = "DAMAGER",
+		["Player-4465-00FA6CF4"] = "DAMAGER",
 		["Player-4465-04067CF7"] = "DAMAGER",
 		["Player-4465-03B28F60"] = "DAMAGER",
-		["Player-4464-0486ABA6"] = "HEALER",
+		["Player-4465-03019843"] = "DAMAGER",
 		["Player-4813-03706992"] = "HEALER",
-		["Player-4465-038B9318"] = "DAMAGER",
-		["Player-4465-02E593AE"] = "TANK",
+		["Player-4465-03AC9558"] = "DAMAGER",
+		["Player-4476-01501919"] = "TANK",
 		["Player-4465-02E8CB25"] = "DAMAGER",
-		["Player-4701-037EF2E6"] = "DAMAGER",
 		["Player-4701-03A15E03"] = "TANK",
 		["Player-4441-0346828B"] = "DAMAGER",
 		["Player-4701-03A3670C"] = "DAMAGER",
+		["Player-4477-056651F8"] = "DAMAGER",
 		["Player-4453-04B1064D"] = "DAMAGER",
 		["Player-4465-03A8FDA2"] = "DAMAGER",
-		["Player-4454-04A7535F"] = "TANK",
-		["Player-4476-047B244F"] = "DAMAGER",
+		["Player-4465-013A0F84"] = "DAMAGER",
+		["Player-4477-04C24C57"] = "DAMAGER",
 		["Player-4815-04687892"] = "DAMAGER",
 		["Player-4465-044B76FA"] = "DAMAGER",
 		["Player-4465-02BE5B61"] = "TANK",
 		["Player-4465-01EB89BD"] = "DAMAGER",
 		["Player-4477-04B19F1F"] = "TANK",
-		["Player-4465-02E18C78"] = "DAMAGER",
-		["Player-4477-04B061DC"] = "DAMAGER",
+		["Player-4477-044E1AB3"] = "DAMAGER",
+		["Player-4455-04499609"] = "DAMAGER",
 		["Player-4813-04AC406D"] = "DAMAGER",
 		["Player-4701-03104BFE"] = "DAMAGER",
 		["Player-4816-049D2FC1"] = "DAMAGER",
-		["Player-4815-047ECA19"] = "DAMAGER",
-		["Player-4465-03AA7519"] = "TANK",
+		["Player-4477-04B061DC"] = "DAMAGER",
+		["Player-4476-03BEE8AF"] = "HEALER",
 		["Player-4811-03A0A5E7"] = "DAMAGER",
-		["Player-4477-04F2EAC0"] = "HEALER",
-		["Player-4441-01D32613"] = "DAMAGER",
+		["Player-4477-04108EF6"] = "DAMAGER",
+		["Player-4477-04969D03"] = "DAMAGER",
 		["Player-4815-047A3574"] = "DAMAGER",
-		["Player-4477-0509F3D6"] = "HEALER",
+		["Player-4465-02FB5CC4"] = "DAMAGER",
 		["Player-4465-02F9BB47"] = "TANK",
-		["Player-4465-036D0C5D"] = "DAMAGER",
-		["Player-4465-0273EF4E"] = "DAMAGER",
+		["Player-4813-02719A94"] = "DAMAGER",
+		["Player-4742-03AE7BDB"] = "TANK",
 		["Player-4465-0415ACC5"] = "DAMAGER",
-		["Player-4477-049ABDF5"] = "TANK",
+		["Player-4701-038E0110"] = "DAMAGER",
 		["Player-4815-048AD744"] = "DAMAGER",
 		["Player-4701-032FFB2D"] = "DAMAGER",
 		["Player-4476-05779FDD"] = "DAMAGER",
-		["Player-4465-03EAE1F2"] = "HEALER",
-		["Player-4742-03A0AFBB"] = "HEALER",
+		["Player-4742-037E7723"] = "DAMAGER",
+		["Player-4465-03B40A07"] = "DAMAGER",
 		["Player-4465-020DCC29"] = "HEALER",
 		["Player-4701-0373AEA2"] = "DAMAGER",
 		["Player-4476-0484EA7B"] = "DAMAGER",
-		["Player-4742-037E7723"] = "DAMAGER",
+		["Player-4465-03EAE1F2"] = "HEALER",
 		["Player-4465-02E3211D"] = "DAMAGER",
 		["Player-4701-0381F7AE"] = "DAMAGER",
 		["Player-4465-03E83B5C"] = "HEALER",
@@ -4629,7 +4695,7 @@ _detalhes_database = {
 		["Player-4815-046EF644"] = "DAMAGER",
 		["Player-4465-03701B18"] = "DAMAGER",
 		["Player-4465-04124C5F"] = "DAMAGER",
-		["Player-4465-03B40A07"] = "DAMAGER",
+		["Player-4742-03A0AFBB"] = "HEALER",
 		["Player-4465-02DE38C5"] = "DAMAGER",
 		["Player-4454-04B50A61"] = "DAMAGER",
 		["Player-4465-040C50BE"] = "DAMAGER",
@@ -4639,7 +4705,7 @@ _detalhes_database = {
 		["Player-4742-03948F76"] = "TANK",
 		["Player-4465-02E63083"] = "DAMAGER",
 		["Player-4477-044E6A12"] = "DAMAGER",
-		["Player-4467-0059B681"] = "DAMAGER",
+		["Player-4476-057F1758"] = "HEALER",
 		["Player-4464-039285F2"] = "DAMAGER",
 		["Player-4465-0497E364"] = "DAMAGER",
 		["Player-4742-03A07C0D"] = "DAMAGER",
@@ -4648,15 +4714,15 @@ _detalhes_database = {
 		["Player-4455-04517458"] = "HEALER",
 		["Player-4742-0116319B"] = "DAMAGER",
 		["Player-4465-036BA4C5"] = "TANK",
-		["Player-4465-036B02B5"] = "DAMAGER",
+		["Player-4476-03C08F87"] = "HEALER",
 		["Player-4466-025B57DB"] = "HEALER",
 		["Player-4476-04417AC6"] = "DAMAGER",
 		["Player-4465-040CF0D5"] = "DAMAGER",
 		["Player-4464-0288E2D2"] = "DAMAGER",
 		["Player-4465-02BE3538"] = "DAMAGER",
+		["Player-4701-0460E43C"] = "DAMAGER",
 		["Player-4477-04AC58E4"] = "TANK",
 		["Player-4465-03E3724A"] = "HEALER",
-		["Player-4701-0460E43C"] = "DAMAGER",
 		["Player-4701-03A1121A"] = "TANK",
 		["Player-4465-03047E3E"] = "HEALER",
 		["Player-4477-0134D639"] = "DAMAGER",
@@ -4781,727 +4847,207 @@ _detalhes_database = {
 		["Player-4701-03AB7C8D"] = "DAMAGER",
 		["Player-4701-03B77D10"] = "DAMAGER",
 		["Player-4465-041560F4"] = "DAMAGER",
-		["Player-4476-03C08F87"] = "HEALER",
 		["Player-4701-0380607A"] = "DAMAGER",
-		["Player-4454-04B10390"] = "DAMAGER",
+		["Player-4465-03B562BE"] = "HEALER",
 		["Player-4701-030BEAE3"] = "DAMAGER",
+		["Player-4476-044A3B22"] = "DAMAGER",
 		["Player-4701-0386A058"] = "DAMAGER",
-		["Player-4476-043B7DF4"] = "DAMAGER",
+		["Player-4465-0304A35C"] = "HEALER",
 		["Player-4815-0492E950"] = "DAMAGER",
-		["Player-4465-02E8515A"] = "DAMAGER",
-		["Player-4465-02393930"] = "HEALER",
+		["Player-4454-052418C2"] = "DAMAGER",
+		["Player-4454-04B10390"] = "DAMAGER",
 		["Player-4742-03A8E3B9"] = "HEALER",
 		["Player-4477-03BCFC37"] = "DAMAGER",
-		["Player-4477-044E1AB3"] = "DAMAGER",
-		["Player-4701-03A50970"] = "DAMAGER",
+		["Player-4467-0059B681"] = "DAMAGER",
+		["Player-4476-043B7DF4"] = "DAMAGER",
 		["Player-4477-0535A61A"] = "DAMAGER",
+		["Player-4476-039568BB"] = "DAMAGER",
 		["Player-4701-032EEEF4"] = "DAMAGER",
-		["Player-4465-02BC7B1D"] = "DAMAGER",
+		["Player-4701-031821B6"] = "DAMAGER",
 		["Player-4465-02BCC327"] = "DAMAGER",
 		["Player-4454-056537F6"] = "HEALER",
 		["Player-4465-02F695EE"] = "DAMAGER",
 		["Player-4477-04308ECE"] = "TANK",
-		["Player-4742-03AE7BDB"] = "TANK",
 		["Player-4465-02EA1CC7"] = "DAMAGER",
 		["Player-4464-048E46FE"] = "HEALER",
 		["Player-4465-005E49F6"] = "DAMAGER",
-		["Player-4813-04A451E7"] = "DAMAGER",
-		["Player-4465-03048835"] = "TANK",
+		["Player-4465-03059DF0"] = "HEALER",
+		["Player-4465-036B02B5"] = "DAMAGER",
 		["Player-4441-039A8381"] = "DAMAGER",
 		["Player-4465-03E1BA65"] = "DAMAGER",
 		["Player-4465-02DCF7D2"] = "DAMAGER",
 		["Player-4476-0475DF38"] = "DAMAGER",
 		["Player-4701-03AF0ADE"] = "DAMAGER",
-		["Player-4813-02E48DBE"] = "DAMAGER",
-		["Player-4477-046B669A"] = "DAMAGER",
+		["Player-4465-03048835"] = "TANK",
+		["Player-4465-02E8515A"] = "DAMAGER",
 		["Player-4465-03723FDC"] = "DAMAGER",
 		["Player-4467-0256016D"] = "DAMAGER",
 		["Player-4813-02FD3108"] = "HEALER",
-		["Player-4465-036E4B91"] = "DAMAGER",
+		["Player-4465-0226937A"] = "DAMAGER",
 		["Player-4742-03AE43CE"] = "DAMAGER",
 		["Player-4476-04403933"] = "DAMAGER",
 		["Player-4476-057EC3EC"] = "DAMAGER",
 		["Player-4701-032DE566"] = "DAMAGER",
 		["Player-4701-039A8A33"] = "TANK",
 		["Player-4465-047EEF17"] = "HEALER",
-		["Player-4476-038EEA25"] = "DAMAGER",
+		["Player-4455-04973286"] = "DAMAGER",
 		["Player-4442-03975527"] = "DAMAGER",
 		["Player-4742-039CA709"] = "DAMAGER",
-		["Player-4745-038C86B0"] = "DAMAGER",
-		["Player-4465-0081E008"] = "HEALER",
+		["Player-4464-0486ABA6"] = "HEALER",
+		["Player-4477-04751CB0"] = "TANK",
 		["Player-4465-024429BB"] = "DAMAGER",
-		["Player-4465-041A0721"] = "DAMAGER",
+		["Player-4745-038C86B0"] = "DAMAGER",
 		["Player-4701-033BD796"] = "DAMAGER",
 		["Player-4701-030CCA0A"] = "DAMAGER",
-		["Player-4476-047EAC4B"] = "DAMAGER",
+		["Player-4465-041A0721"] = "DAMAGER",
 		["Player-4465-0461A8E6"] = "DAMAGER",
 		["Player-4476-04806366"] = "TANK",
 		["Player-4465-02E7F109"] = "TANK",
-		["Player-4464-03A1E9FC"] = "DAMAGER",
-		["Player-4701-038E0110"] = "DAMAGER",
+		["Player-4816-04B1862D"] = "DAMAGER",
+		["Player-4477-033CC78F"] = "DAMAGER",
 		["Player-4465-02E0EA77"] = "HEALER",
-		["Player-4476-04B20381"] = "TANK",
-		["Player-4465-0242D6DA"] = "DAMAGER",
+		["Player-4745-039E1667"] = "DAMAGER",
+		["Player-4815-048AB3B8"] = "DAMAGER",
+		["Player-4813-045340CF"] = "HEALER",
+		["Player-4815-048E2849"] = "DAMAGER",
 		["Player-4465-03033F45"] = "HEALER",
-		["Player-4465-0226937A"] = "DAMAGER",
-		["Player-4465-03B3BAD9"] = "DAMAGER",
-		["Player-4465-041B40EF"] = "DAMAGER",
+		["Player-4465-0304F0B0"] = "DAMAGER",
 		["Player-4701-03ACAEC7"] = "DAMAGER",
-		["Player-4455-04499609"] = "DAMAGER",
+		["Player-4477-0509F3D6"] = "HEALER",
 		["Player-4465-02FB571D"] = "TANK",
 		["Player-4477-0331BBCA"] = "DAMAGER",
-		["Player-4477-044E6A37"] = "DAMAGER",
-		["Player-4442-03A233F9"] = "DAMAGER",
+		["Player-4811-0385DD31"] = "DAMAGER",
+		["Player-4815-047ECA19"] = "DAMAGER",
 		["Player-4477-04BFB40B"] = "TANK",
 		["Player-4464-02CE48C9"] = "HEALER",
-		["Player-4701-030F2A42"] = "DAMAGER",
-		["Player-4701-03185370"] = "HEALER",
+		["Player-4465-040D95F5"] = "DAMAGER",
+		["Player-4742-03A82E01"] = "DAMAGER",
 		["Player-4476-04B051C4"] = "DAMAGER",
-		["Player-4742-03A9F661"] = "DAMAGER",
+		["Player-4701-03185370"] = "HEALER",
 		["Player-4466-02B5CC92"] = "DAMAGER",
 		["Player-4442-03A24C28"] = "DAMAGER",
+		["Player-4465-02FFB455"] = "DAMAGER",
 		["Player-4742-03AC49F6"] = "DAMAGER",
+		["Player-4813-047E4A9E"] = "DAMAGER",
 		["Player-4454-04AEF3A1"] = "DAMAGER",
-		["Player-4701-037F988D"] = "DAMAGER",
-		["Player-4811-03972E5D"] = "DAMAGER",
 		["Player-4701-0253A59C"] = "TANK",
-		["Player-4813-02719A94"] = "DAMAGER",
-		["Player-4464-02789DCB"] = "DAMAGER",
+		["Player-4465-0270C031"] = "TANK",
+		["Player-4701-03A50970"] = "DAMAGER",
 		["Player-4442-03A890B2"] = "DAMAGER",
-		["Player-4476-052DB5BD"] = "DAMAGER",
-		["Player-4465-03060970"] = "DAMAGER",
+		["Player-4816-04AB2CCF"] = "DAMAGER",
+		["Player-4477-048FA61B"] = "DAMAGER",
 		["Player-4454-03DA221B"] = "HEALER",
-		["Player-4465-02E7CDCC"] = "DAMAGER",
+		["Player-4476-052DB5BD"] = "DAMAGER",
 		["Player-4476-0445EEFA"] = "HEALER",
-		["Player-4477-02E4768C"] = "HEALER",
+		["Player-4465-02E7CDCC"] = "DAMAGER",
+		["Player-4455-032E747B"] = "HEALER",
 		["Player-4476-03725EC6"] = "DAMAGER",
 		["Player-4701-03130686"] = "DAMAGER",
-		["Player-4465-03B219A6"] = "DAMAGER",
-		["Player-4815-0478BF4C"] = "DAMAGER",
+		["Player-4742-03A9B0B8"] = "DAMAGER",
 		["Player-4465-02F33F5C"] = "DAMAGER",
 		["Player-4477-04A80F7F"] = "DAMAGER",
-		["Player-4742-03A9B0B8"] = "DAMAGER",
+		["Player-4701-039A4556"] = "DAMAGER",
+		["Player-4811-037AFCE9"] = "DAMAGER",
 		["Player-4476-03DEC012"] = "HEALER",
-		["Player-4813-049C7CFE"] = "DAMAGER",
 		["Player-4465-03893158"] = "DAMAGER",
 		["Player-4815-0479BD5D"] = "DAMAGER",
 		["Player-4477-04037B1A"] = "HEALER",
 		["Player-4465-0396C108"] = "HEALER",
-		["Player-4745-03ACD4F8"] = "DAMAGER",
-		["Player-4476-04912765"] = "DAMAGER",
+		["Player-4464-017B3546"] = "HEALER",
+		["Player-4476-02888C00"] = "DAMAGER",
 		["Player-4465-03A99F97"] = "DAMAGER",
-		["Player-4701-039F29B2"] = "DAMAGER",
-		["Player-4476-03A93254"] = "DAMAGER",
+		["Player-4477-018B8F86"] = "DAMAGER",
+		["Player-4745-03CC0CA6"] = "DAMAGER",
 		["Player-4813-04A29CA2"] = "TANK",
 		["Player-4476-0348CFF8"] = "HEALER",
-		["Player-4813-047E4A9E"] = "DAMAGER",
-		["Player-4465-03046E17"] = "HEALER",
+		["Player-4465-032801EA"] = "TANK",
+		["Player-4813-04A451E7"] = "DAMAGER",
 		["Player-4813-01D54F92"] = "DAMAGER",
 		["Player-4465-012FE71E"] = "DAMAGER",
-		["Player-4815-048AB3B8"] = "DAMAGER",
+		["Player-4476-020DE31E"] = "DAMAGER",
 		["Player-4465-0308DF3B"] = "DAMAGER",
-		["Player-4701-039E5EEB"] = "TANK",
+		["Player-4477-03B0030C"] = "DAMAGER",
 		["Player-4476-048E9838"] = "HEALER",
-		["Player-4477-04C24C57"] = "DAMAGER",
+		["Player-4701-03880021"] = "DAMAGER",
 		["Player-4477-04C0B6B5"] = "DAMAGER",
+		["Player-4464-013199FE"] = "DAMAGER",
 		["Player-4465-02A33E95"] = "DAMAGER",
-		["Player-4742-03BA657E"] = "DAMAGER",
 		["Player-4742-039FDD52"] = "DAMAGER",
+		["Player-4815-0478BF4C"] = "DAMAGER",
 		["Player-4815-047F3B1D"] = "DAMAGER",
-		["Player-4476-057F1758"] = "HEALER",
-		["Player-4465-0308755E"] = "TANK",
+		["Player-4477-046EF79F"] = "DAMAGER",
 		["Player-4465-033973B7"] = "TANK",
-		["Player-4476-044A3B22"] = "DAMAGER",
+		["Player-4465-024B4F54"] = "DAMAGER",
 		["Player-4701-037B706E"] = "DAMAGER",
-		["Player-4465-025C3578"] = "DAMAGER",
-		["Player-4813-04AE0F3A"] = "DAMAGER",
-		["Player-4455-04B1B277"] = "DAMAGER",
+		["Player-4456-04CF6D97"] = "HEALER",
+		["Player-4701-0395CEF4"] = "DAMAGER",
+		["Player-4477-04B00B48"] = "TANK",
 		["Player-4441-038D83F6"] = "DAMAGER",
 		["Player-4465-038CD123"] = "DAMAGER",
-		["Player-4476-04AA9AC7"] = "DAMAGER",
+		["Player-4701-030F40D8"] = "DAMAGER",
 		["Player-4701-032E3169"] = "DAMAGER",
 		["Player-4465-02FEEA7A"] = "TANK",
 		["Player-4465-02701995"] = "HEALER",
 		["Player-4454-0378F0BC"] = "HEALER",
 		["Player-4465-038000EA"] = "DAMAGER",
-		["Player-4464-037C0139"] = "DAMAGER",
-		["Player-4465-03D8460A"] = "DAMAGER",
+		["Player-4813-051871D9"] = "DAMAGER",
 		["Player-4465-0306C90B"] = "DAMAGER",
 		["Player-4454-044931B8"] = "HEALER",
-		["Player-4464-0396327A"] = "DAMAGER",
+		["Player-4465-02C3620C"] = "HEALER",
+		["Player-4476-03A93254"] = "DAMAGER",
 		["Player-4477-048752B2"] = "DAMAGER",
 		["Player-4816-04A26ADC"] = "DAMAGER",
 		["Player-4701-0317A62B"] = "DAMAGER",
 		["Player-4701-03AE5364"] = "DAMAGER",
 		["Player-4813-048ADC15"] = "DAMAGER",
-		["Player-4815-046AECF6"] = "DAMAGER",
+		["Player-4465-0308755E"] = "TANK",
 		["Player-4477-033128B4"] = "DAMAGER",
 		["Player-4477-01D63F16"] = "DAMAGER",
 		["Player-4465-0377590B"] = "DAMAGER",
-		["Player-4454-052418C2"] = "DAMAGER",
+		["Player-4476-043F2E13"] = "DAMAGER",
 		["Player-4477-0483C796"] = "TANK",
 		["Player-4465-03BE24BF"] = "DAMAGER",
 		["Player-4701-03A78735"] = "DAMAGER",
-		["Player-4477-0340EAC4"] = "DAMAGER",
+		["Player-4455-04B1B277"] = "DAMAGER",
 		["Player-4456-031C327F"] = "DAMAGER",
-		["Player-4701-031718F2"] = "DAMAGER",
+		["Player-4701-00B2A495"] = "DAMAGER",
 		["Player-4701-031DCB34"] = "DAMAGER",
+		["Player-4465-03889E32"] = "TANK",
 		["Player-4465-04585209"] = "DAMAGER",
-		["Player-4465-04409421"] = "DAMAGER",
-		["Player-4465-02E6D741"] = "DAMAGER",
+		["Player-4464-037C0139"] = "DAMAGER",
 		["Player-4742-03A9BAB1"] = "TANK",
 		["Player-4465-02E98A53"] = "TANK",
 		["Player-4465-025997AE"] = "DAMAGER",
-		["Player-4465-03AB1640"] = "DAMAGER",
+		["Player-4464-03A50413"] = "DAMAGER",
 		["Player-4701-033E6408"] = "DAMAGER",
 		["Player-4476-04453DB0"] = "DAMAGER",
-		["Player-4476-02888C00"] = "DAMAGER",
-		["Player-4465-02C370ED"] = "DAMAGER",
+		["Player-4464-0396327A"] = "DAMAGER",
+		["Player-4477-01554A23"] = "DAMAGER",
 		["Player-4701-03BE0B90"] = "TANK",
-		["Player-4465-0270C031"] = "TANK",
-		["Player-4465-011F4E2E"] = "DAMAGER",
+		["Player-4465-02C370ED"] = "DAMAGER",
+		["Player-4465-02918203"] = "DAMAGER",
 		["Player-4454-04BCCC4E"] = "DAMAGER",
 		["Player-4465-02F4B98D"] = "DAMAGER",
 		["Player-4465-014D2C7C"] = "DAMAGER",
 		["Player-4701-0397F7A8"] = "DAMAGER",
-		["Player-4465-026D9388"] = "HEALER",
-		["Player-4476-0434D3BB"] = "DAMAGER",
+		["Player-4442-0399B647"] = "DAMAGER",
+		["Player-4465-011F4E2E"] = "DAMAGER",
 		["Player-4742-03A78F3C"] = "DAMAGER",
-		["Player-4465-03DDCCB1"] = "DAMAGER",
-		["Player-4465-03B562BE"] = "HEALER",
+		["Player-4465-026AFE7E"] = "DAMAGER",
+		["Player-4476-0434D3BB"] = "DAMAGER",
 		["Player-4465-03B5D11E"] = "DAMAGER",
 		["Player-4477-01BAFA29"] = "TANK",
 		["Player-4465-0385235B"] = "DAMAGER",
 		["Player-4453-046930FE"] = "DAMAGER",
 		["Player-4455-05180BC9"] = "DAMAGER",
 	},
-	["data_harvested_for_charts"] = {
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["reverse"] = false,
+		["channel"] = "SELF",
 	},
+	["last_realversion"] = 156,
 	["cached_talents"] = {
-		["Player-4476-057EB1A8"] = {
-			{
-				461117, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				3, -- [7]
-			}, -- [1]
-			{
-				461112, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				132210, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				461118, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [4]
-			{
-				132160, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [5]
-			{
-				132179, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				134296, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				132121, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				132173, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [9]
-			{
-				461846, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				236184, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				132127, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [12]
-			{
-				236357, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [13]
-			{
-				236177, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				3, -- [7]
-			}, -- [14]
-			{
-				236186, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				132166, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				236202, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				236175, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				253, -- [6]
-				1, -- [7]
-			}, -- [18]
-			{
-				236190, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				253, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				132205, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [20]
-			{
-				236179, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				3, -- [7]
-			}, -- [21]
-			{
-				132174, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				461121, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				132217, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				236182, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				3, -- [7]
-			}, -- [25]
-			{
-				132206, -- [1]
-				1, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				254, -- [6]
-				1, -- [7]
-			}, -- [26]
-			{
-				461115, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				132222, -- [1]
-				2, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [28]
-			{
-				132329, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				132345, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [30]
-			{
-				132177, -- [1]
-				3, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				3, -- [7]
-			}, -- [31]
-			{
-				461120, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				236201, -- [1]
-				2, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [33]
-			{
-				132323, -- [1]
-				1, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				1, -- [7]
-			}, -- [34]
-			{
-				461119, -- [1]
-				2, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [35]
-			{
-				236173, -- [1]
-				2, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				254, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				236176, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				254, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				236198, -- [1]
-				3, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				254, -- [6]
-				3, -- [7]
-			}, -- [38]
-			{
-				236183, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [39]
-			{
-				136100, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				236180, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				132293, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [42]
-			{
-				132336, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				132204, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [44]
-			{
-				236185, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				132207, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				133713, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [47]
-			{
-				132378, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				135125, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				1, -- [7]
-			}, -- [49]
-			{
-				236199, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [50]
-			{
-				236200, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [51]
-			{
-				236181, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				255, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				236187, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				136181, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				304583, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				132216, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				132149, -- [1]
-				1, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				255, -- [6]
-				3, -- [7]
-			}, -- [57]
-			{
-				132209, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				255, -- [6]
-				2, -- [7]
-			}, -- [58]
-		},
 		["Player-4465-0498B68B"] = {
 			{
 				136006, -- [1]
@@ -6071,2752 +5617,14 @@ _detalhes_database = {
 				2, -- [7]
 			}, -- [63]
 		},
-		["Player-4477-05830C8A"] = {
-			{
-				135817, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				135807, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				459025, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				136115, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				136170, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [5]
-			{
-				135850, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				136094, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				136099, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136028, -- [1]
-				3, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				451165, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				237576, -- [1]
-				2, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				237583, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [12]
-			{
-				135829, -- [1]
-				1, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				451169, -- [1]
-				2, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				252174, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [16]
-			{
-				136014, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				136100, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				136111, -- [1]
-				1, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [19]
-			{
-				132152, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [20]
-			{
-				348567, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				136051, -- [1]
-				1, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135814, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				135892, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				132314, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [25]
-			{
-				136110, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				136088, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				237587, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [28]
-			{
-				136024, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				237584, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				237577, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				135825, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [32]
-			{
-				451166, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				451168, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [34]
-			{
-				135791, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [35]
-			{
-				135776, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				136008, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136027, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				136109, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132315, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136037, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135861, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				135859, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				136057, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136059, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				136060, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				237573, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				237571, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				237590, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				252995, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236288, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				462651, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				252271, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				135990, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				237556, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				136079, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				237586, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [58]
-		},
-		["Player-4476-0582690E"] = {
-			{
-				135817, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				135807, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				459025, -- [1]
-				2, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				136115, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				136170, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [5]
-			{
-				135850, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				136094, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				136099, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136028, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				451165, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				237576, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				237583, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [12]
-			{
-				135829, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				451169, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				252174, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				3, -- [7]
-			}, -- [16]
-			{
-				136014, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				136100, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				262, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				136111, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [19]
-			{
-				132152, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [20]
-			{
-				348567, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				136051, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135814, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				135892, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				132314, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [25]
-			{
-				136110, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				136088, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				237587, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [28]
-			{
-				136024, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				237584, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				237577, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				135825, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [32]
-			{
-				451166, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				451168, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [34]
-			{
-				135791, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [35]
-			{
-				135776, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				136008, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136027, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				136109, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132315, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136037, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135861, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				135859, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				136057, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136059, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				136060, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				237573, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				237571, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				237590, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				252995, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236288, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				462651, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				252271, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				135990, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				237556, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				136079, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				237586, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [58]
-		},
-		["Player-4476-030A5AF0"] = {
-			{
-				136006, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [1]
-			{
-				136087, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				136062, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				252188, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				236154, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				236205, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				132113, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				341763, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				236163, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				236704, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [10]
-			{
-				132129, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [11]
-			{
-				132371, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				236168, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236150, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [14]
-			{
-				136036, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [15]
-			{
-				135138, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				236170, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				135730, -- [1]
-				1, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				132123, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				236216, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [20]
-			{
-				134355, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [21]
-			{
-				136095, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				132183, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [23]
-			{
-				304501, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				132130, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				132134, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				132114, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				236169, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [28]
-			{
-				132318, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				236159, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				136112, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				132242, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				237347, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [33]
-			{
-				236164, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				236149, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				132091, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				237513, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				236158, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				132278, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132185, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				132121, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135881, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [42]
-			{
-				237586, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [43]
-			{
-				136116, -- [1]
-				2, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [44]
-			{
-				136081, -- [1]
-				3, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [45]
-			{
-				136076, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [46]
-			{
-				236155, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				136085, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [48]
-			{
-				134222, -- [1]
-				3, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				132124, -- [1]
-				1, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [50]
-			{
-				132137, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [51]
-			{
-				236166, -- [1]
-				2, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [52]
-			{
-				132145, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [53]
-			{
-				236161, -- [1]
-				1, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				236153, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [55]
-			{
-				132125, -- [1]
-				2, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [56]
-			{
-				236288, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [57]
-			{
-				236740, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [58]
-			{
-				236160, -- [1]
-				3, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [59]
-			{
-				136041, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [60]
-			{
-				237472, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [61]
-			{
-				135879, -- [1]
-				3, -- [2]
-				1, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [62]
-			{
-				237578, -- [1]
-				2, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [63]
-		},
-		["Player-4465-02B843FA"] = {
-			{
-				136006, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [1]
-			{
-				136087, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				136062, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				252188, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [4]
-			{
-				236154, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				236205, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				132113, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				341763, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				236163, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				236704, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [10]
-			{
-				132129, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [11]
-			{
-				132371, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				236168, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236150, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [14]
-			{
-				136036, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [15]
-			{
-				135138, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				236170, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				135730, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				132123, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				102, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				236216, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				102, -- [6]
-				1, -- [7]
-			}, -- [20]
-			{
-				134355, -- [1]
-				3, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [21]
-			{
-				136095, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				132183, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [23]
-			{
-				304501, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				132130, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				132134, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				132114, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				236169, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [28]
-			{
-				132318, -- [1]
-				1, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				236159, -- [1]
-				3, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				136112, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				132242, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				237347, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [33]
-			{
-				236164, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				236149, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				132091, -- [1]
-				2, -- [2]
-				5, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				237513, -- [1]
-				2, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				236158, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				132278, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [39]
-			{
-				132185, -- [1]
-				1, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				132121, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				103, -- [6]
-				2, -- [7]
-			}, -- [41]
-			{
-				135881, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				103, -- [6]
-				3, -- [7]
-			}, -- [42]
-			{
-				237586, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [43]
-			{
-				136116, -- [1]
-				2, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [44]
-			{
-				136081, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [45]
-			{
-				136076, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [46]
-			{
-				236155, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				136085, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [48]
-			{
-				134222, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				132124, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [50]
-			{
-				132137, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [51]
-			{
-				236166, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [52]
-			{
-				132145, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [53]
-			{
-				236161, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				236153, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [55]
-			{
-				132125, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [56]
-			{
-				236288, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				1, -- [7]
-			}, -- [57]
-			{
-				236740, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [58]
-			{
-				236160, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [59]
-			{
-				136041, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [60]
-			{
-				237472, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [61]
-			{
-				135879, -- [1]
-				3, -- [2]
-				1, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				3, -- [7]
-			}, -- [62]
-			{
-				237578, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				105, -- [6]
-				2, -- [7]
-			}, -- [63]
-		},
-		["Player-4477-0520D7D7"] = {
-			{
-				136071, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				136170, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [2]
-			{
-				135856, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [3]
-			{
-				135737, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [4]
-			{
-				135736, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				136031, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [6]
-			{
-				135752, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				135732, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				136048, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [9]
-			{
-				236219, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [10]
-			{
-				236223, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				134104, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				136091, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				236221, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [14]
-			{
-				236222, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				135754, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				429382, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [17]
-			{
-				136096, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				429383, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [19]
-			{
-				135735, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [20]
-			{
-				136116, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				135807, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				135818, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				429590, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				135821, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				136115, -- [1]
-				3, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				135820, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [28]
-			{
-				135827, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [29]
-			{
-				135903, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [30]
-			{
-				135788, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [31]
-			{
-				135789, -- [1]
-				2, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				135824, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [33]
-			{
-				135822, -- [1]
-				3, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				134153, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [35]
-			{
-				236218, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [36]
-			{
-				236220, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				135826, -- [1]
-				1, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				236216, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [39]
-			{
-				252268, -- [1]
-				1, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				135817, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				236218, -- [1]
-				2, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [42]
-			{
-				135854, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [43]
-			{
-				135864, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				135838, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [45]
-			{
-				429385, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [46]
-			{
-				135837, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [47]
-			{
-				135865, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [48]
-			{
-				236227, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				236209, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [50]
-			{
-				135988, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				236206, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [52]
-			{
-				135833, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [53]
-			{
-				236214, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [54]
-			{
-				429386, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [55]
-			{
-				135845, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [56]
-			{
-				135849, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [57]
-			{
-				430840, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [58]
-			{
-				135852, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [59]
-			{
-				135861, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				135859, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [61]
-		},
 	},
 	["combat_counter"] = 18601,
-	["last_encounter"] = "Emalon the Storm Watcher",
 	["force_font_outline"] = "",
 	["ignore_nicktag"] = true,
 	["combat_id"] = 5,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -8846,31 +5654,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "xVerminClean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -8957,12 +5777,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -9001,7 +5821,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
@@ -9019,26 +5839,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -9080,35 +5881,31 @@ _detalhes_database = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["switch_damager"] = {
+			["switch_healer_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
+			["bars_grow_direction"] = 1,
+			["auto_current"] = true,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -9120,7 +5917,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -9134,8 +5936,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -9144,16 +5944,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -9161,18 +5958,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -9206,23 +5999,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["bg_alpha"] = 0,
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -9234,7 +6037,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -9302,8 +6110,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["end_time"] = 1717871194,
-					["on_hold"] = false,
 					["aID"] = "4465-0498B68B",
+					["on_hold"] = false,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9324,7 +6132,7 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["counter"] = 40,
 								["MISS"] = 1,
-								["total"] = 2856,
+								["r_amt"] = 0,
 								["c_max"] = 151,
 								["c_amt"] = 3,
 								["id"] = 1,
@@ -9338,7 +6146,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 442,
 								["n_amt"] = 29,
-								["r_amt"] = 0,
+								["total"] = 2856,
 								["n_max"] = 101,
 							}, -- [1]
 							[33878] = {
@@ -9532,16 +6340,16 @@ _detalhes_database = {
 					["totalabsorbed"] = 101.024633,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "",
 					["total_without_pet"] = 594.024633,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 594.024633,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Vehicle-0-4459-36-30163-48230-000064A20D",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Willybumz-Gehennas"] = true,
 						["Shalb-Gehennas"] = true,
@@ -9560,7 +6368,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1717871194,
 					["nome"] = "Ogre Henchman",
-					["aID"] = "",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9688,8 +6496,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["end_time"] = 1717871194,
-					["on_hold"] = false,
 					["aID"] = "4476-0582690E",
+					["on_hold"] = false,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9990,9 +6798,9 @@ _detalhes_database = {
 								["g_dmg"] = 70,
 								["counter"] = 24,
 								["a_amt"] = 0,
-								["total"] = 1308,
-								["c_max"] = 149,
 								["r_amt"] = 0,
+								["c_max"] = 149,
+								["n_max"] = 86,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -10004,7 +6812,7 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 149,
 								["n_amt"] = 16,
-								["n_max"] = 86,
+								["total"] = 1308,
 								["MISS"] = 3,
 							}, -- [1]
 							[85256] = {
@@ -10649,16 +7457,16 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "48418",
 					["total_without_pet"] = 0.018493,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 0.018493,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4459-36-30163-48418-000164A20D",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -10669,7 +7477,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.018493,
 					["end_time"] = 1717871194,
 					["nome"] = "Defias Envoker",
-					["aID"] = "48418",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -10819,16 +7627,16 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "47162",
 					["total_without_pet"] = 628.0142089999999,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 628.0142089999999,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4459-36-30163-47162-000064A20D",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Willybumz-Gehennas"] = true,
 						["Shalb-Gehennas"] = true,
@@ -10847,7 +7655,7 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.014209,
 					["end_time"] = 1717871309,
 					["nome"] = "Glubtok",
-					["aID"] = "47162",
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -11092,7 +7900,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PRIEST",
 					["totalover"] = 514.022339,
 					["total_without_pet"] = 1780.022339,
 					["total"] = 1780.022339,
@@ -11108,14 +7916,14 @@ _detalhes_database = {
 					["targets"] = {
 						["Battlemoo"] = 1780,
 					},
-					["last_event"] = 0,
+					["nome"] = "Vesma-Gehennas",
 					["totalover_without_pet"] = 0.022339,
 					["healing_taken"] = 0.022339,
 					["fight_component"] = true,
 					["end_time"] = 1717871194,
+					["start_time"] = 1717871156,
 					["healing_from"] = {
 					},
-					["aID"] = "4476-05840257",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -11175,23 +7983,24 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["start_time"] = 1717871156,
-					["classe"] = "PRIEST",
+					["aID"] = "4476-05840257",
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["totaldenied"] = 0.022339,
 					["delay"] = 0,
-					["nome"] = "Vesma-Gehennas",
+					["heal_enemy_amt"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["targets_overheal"] = {
-						["Battlemoo"] = 160,
+					["healing_from"] = {
+						["Vesma-Gehennas"] = true,
+						["Battlemoo"] = true,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "DRUID",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 160.024385,
 					["total_without_pet"] = 217.024385,
 					["total"] = 217.024385,
@@ -11205,18 +8014,18 @@ _detalhes_database = {
 					["targets"] = {
 						["Battlemoo"] = 217,
 					},
-					["heal_enemy_amt"] = 0,
+					["aID"] = "4465-0498B68B",
 					["totalover_without_pet"] = 0.024385,
 					["healing_taken"] = 1997.024385,
-					["healing_from"] = {
-						["Vesma-Gehennas"] = true,
-						["Battlemoo"] = true,
-					},
+					["start_time"] = 1717871173,
 					["fight_component"] = true,
 					["end_time"] = 1717871194,
-					["aID"] = "4465-0498B68B",
+					["targets_overheal"] = {
+						["Battlemoo"] = 160,
+					},
+					["targets_absorbs"] = {
+					},
 					["nome"] = "Battlemoo",
-					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							[20007] = {
@@ -11275,14 +8084,13 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["start_time"] = 1717871173,
+					["classe"] = "DRUID",
 					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["totaldenied"] = 0.024385,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-					},
+					["boss_fight_component"] = true,
 				}, -- [2]
 			},
 		}, -- [2]
@@ -11291,7 +8099,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["resource"] = 20.022764,
+					["resource"] = 34.025946,
 					["pets"] = {
 					},
 					["aID"] = "4476-0583FAE6",
@@ -11364,6 +8172,42 @@ _detalhes_database = {
 					["totalover"] = 0.001511,
 					["last_event"] = 0,
 				}, -- [2]
+				{
+					["flag_original"] = 1297,
+					["resource"] = 0.012504,
+					["pets"] = {
+					},
+					["classe"] = "DRUID",
+					["passiveover"] = 0.005578,
+					["total"] = 0.005578,
+					["serial"] = "Player-4465-0498B68B",
+					["received"] = 0.005578,
+					["targets"] = {
+						["Battlemoo"] = 0,
+					},
+					["powertype"] = 1,
+					["alternatepower"] = 0.005578,
+					["nome"] = "Battlemoo",
+					["spells"] = {
+						["_ActorTable"] = {
+							[17057] = {
+								["total"] = 0,
+								["totalover"] = 0,
+								["id"] = 17057,
+								["targets"] = {
+									["Battlemoo"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["aID"] = "4465-0498B68B",
+					["tipo"] = 3,
+					["totalover"] = 0.005578,
+					["last_event"] = 0,
+					["grupo"] = true,
+				}, -- [3]
 			},
 		}, -- [3]
 		{
@@ -11413,13 +8257,12 @@ _detalhes_database = {
 					["classe"] = "DRUID",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[76691] = {
-								["actived_at"] = 1717871257,
+							[72221] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 4,
 								["appliedamt"] = 4,
-								["id"] = 76691,
-								["uptime"] = 57,
+								["id"] = 72221,
+								["uptime"] = 108,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11434,21 +8277,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[76691] = {
+								["actived_at"] = 1717871257,
+								["refreshamt"] = 0,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = 76691,
+								["uptime"] = 57,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[5487] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 4,
 								["appliedamt"] = 4,
 								["id"] = 5487,
-								["uptime"] = 108,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[72221] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 4,
-								["appliedamt"] = 4,
-								["id"] = 72221,
 								["uptime"] = 108,
 								["targets"] = {
 								},
@@ -11483,14 +8327,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["fight_component"] = true,
-					["debuff_uptime_targets"] = {
-					},
 					["cc_done"] = 4.013549,
-					["boss_fight_component"] = true,
-					["grupo"] = true,
 					["nome"] = "Battlemoo",
+					["grupo"] = true,
+					["boss_fight_component"] = true,
 					["aID"] = "4465-0498B68B",
 					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
 					["tipo"] = 4,
 				}, -- [1]
 				{
@@ -11557,12 +8401,12 @@ _detalhes_database = {
 					["nome"] = "Yrag-Gehennas",
 					["boss_fight_component"] = true,
 					["grupo"] = true,
-					["classe"] = "PALADIN",
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
 					["serial"] = "Player-4476-0583FAE6",
-					["last_event"] = 0,
+					["classe"] = "PALADIN",
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
@@ -11618,12 +8462,12 @@ _detalhes_database = {
 					["grupo"] = true,
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["serial"] = "Player-4476-05840257",
+					["tipo"] = 4,
 					["nome"] = "Vesma-Gehennas",
+					["serial"] = "Player-4476-05840257",
+					["last_event"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
@@ -11662,9 +8506,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-						"Cat <Shalb-Gehennas>", -- [1]
-					},
+					["buff_uptime"] = 334,
 					["aID"] = "4476-058454C9",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -11712,18 +8554,20 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 170,
-					["nome"] = "Shalb-Gehennas",
-					["tipo"] = 4,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
-					["debuff_uptime_targets"] = {
-					},
 					["boss_fight_component"] = true,
 					["last_event"] = 0,
-					["buff_uptime"] = 334,
-					["serial"] = "Player-4476-058454C9",
+					["nome"] = "Shalb-Gehennas",
+					["grupo"] = true,
+					["pets"] = {
+						"Cat <Shalb-Gehennas>", -- [1]
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
 					["classe"] = "HUNTER",
+					["serial"] = "Player-4476-058454C9",
+					["buff_uptime_targets"] = {
+					},
 				}, -- [4]
 				{
 					["flag_original"] = 1047,
@@ -11811,15 +8655,15 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 121,
-					["debuff_uptime_targets"] = {
-					},
+					["nome"] = "Willybumz-Gehennas",
 					["spec"] = 262,
 					["grupo"] = true,
 					["buff_uptime"] = 233,
 					["aID"] = "4476-0582690E",
-					["nome"] = "Willybumz-Gehennas",
-					["last_event"] = 0,
 					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
 					["buff_uptime_targets"] = {
 					},
 					["serial"] = "Player-4476-0582690E",
@@ -11845,8 +8689,8 @@ _detalhes_database = {
 					["ownerName"] = "Shalb-Gehennas",
 					["nome"] = "Cat <Shalb-Gehennas>",
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Pet-0-4460-1-3131-3415-01008F617C",
 					["classe"] = "PET",
 				}, -- [7]
@@ -11854,9 +8698,9 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["fight_component"] = true,
-					["boss_fight_component"] = true,
 					["nome"] = "Ogre Henchman",
 					["monster"] = true,
 					["tipo"] = 4,
@@ -11868,53 +8712,53 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "48418",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Defias Envoker",
 					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4459-36-30163-48418-000164A20D",
 					["last_event"] = 0,
+					["aID"] = "48418",
+					["serial"] = "Creature-0-4459-36-30163-48418-000164A20D",
+					["tipo"] = 4,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "48229",
 					["monster"] = true,
 					["nome"] = "Kobold Digger",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-4459-36-30163-48229-000664A20D",
-					["aID"] = "48229",
+					["classe"] = "UNKNOW",
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "48262",
 					["monster"] = true,
 					["nome"] = "Ogre Bodyguard",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-4459-36-30163-48262-000064A20D",
-					["aID"] = "48262",
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "47162",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Glubtok",
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-4459-36-30163-47162-000064A20D",
-					["classe"] = "UNKNOW",
+					["aID"] = "47162",
 				}, -- [12]
 			},
 		}, -- [4]
@@ -12005,14 +8849,8 @@ _detalhes_database = {
 				["Lightning Bolt"] = 30,
 				["Flame Shock"] = 5,
 			},
-			["Shalb-Gehennas"] = {
-				["Explosive Shot"] = 8,
-				["Arcane Shot"] = 2,
-				["Berserking"] = 1,
-				["Hunter's Mark"] = 4,
-				["Steady Shot"] = 25,
-				["Auto Shot"] = 35,
-				["Serpent Sting"] = 10,
+			["Kobold Digger"] = {
+				["Candle Blast"] = 4,
 			},
 			["Cat"] = {
 				["Claw"] = 18,
@@ -12023,17 +8861,23 @@ _detalhes_database = {
 				["Demoralizing Roar"] = 1,
 				["Growl"] = 1,
 			},
+			["Shalb-Gehennas"] = {
+				["Explosive Shot"] = 8,
+				["Arcane Shot"] = 2,
+				["Berserking"] = 1,
+				["Hunter's Mark"] = 4,
+				["Steady Shot"] = 25,
+				["Auto Shot"] = 35,
+				["Serpent Sting"] = 10,
+			},
 			["Ogre Bodyguard"] = {
 				["Bonk"] = 2,
-			},
-			["Defias Cannon"] = {
-				["Cannonball"] = 68,
 			},
 			["Cat <Shalb-Gehennas>"] = {
 				["Claw"] = 4,
 			},
-			["Kobold Digger"] = {
-				["Candle Blast"] = 4,
+			["Defias Cannon"] = {
+				["Cannonball"] = 68,
 			},
 		},
 		["mapId"] = 36,
@@ -12116,12 +8960,8 @@ _detalhes_database = {
 			}, -- [4]
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["character_data"] = {
-		["logons"] = 2538,
+		["logons"] = 2540,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
@@ -12158,7 +8998,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -12169,16 +9012,26 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["author"] = "Details! Team",
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
+			["font_size"] = 10,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -12190,27 +9043,14 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["use_square_mode"] = false,
 			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -12297,6 +9137,8 @@ _detalhes_database = {
 			["max_compares"] = 4,
 			["compare_type"] = 1,
 		},
+	},
+	["data_harvested_for_charts"] = {
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

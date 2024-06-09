@@ -4,10 +4,10 @@ AdiBagsDB = {
 		["Mists Of Pandaria"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedRecipes"] = false,
 					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["moveMergedTradegoods"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
@@ -541,20 +541,20 @@ AdiBagsDB = {
 		["Wrath Of The Lich King"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedRecipes"] = false,
 					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["moveMergedTradegoods"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
 		["Burning Crusade"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedRecipes"] = false,
 					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["moveMergedTradegoods"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
@@ -616,10 +616,10 @@ AdiBagsDB = {
 		["Classic"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedRecipes"] = false,
 					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["moveMergedTradegoods"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
@@ -633,12 +633,12 @@ AdiBagsDB = {
 		["Cataclysm"] = {
 			["profiles"] = {
 				["Default"] = {
+					["moveMergedFlasksElixirsPotions"] = false,
 					["moveMergedTradegoods"] = false,
+					["moveMergedRecipes"] = false,
 					["moveMergedFortunecards"] = false,
 					["moveMergedTemporaryPermanentEnhancements"] = false,
 					["customPrefix"] = "CATA ",
-					["moveMergedFlasksElixirsPotions"] = false,
-					["moveMergedRecipes"] = false,
 				},
 			},
 		},
@@ -695,8 +695,8 @@ AdiBagsDB = {
 		["Item Sets"] = {
 			["profiles"] = {
 				["Default"] = {
-					["enablePVE"] = false,
 					["includeWeapons"] = false,
+					["enablePVE"] = false,
 					["enablePVP"] = false,
 				},
 			},
@@ -732,15 +732,15 @@ AdiBagsDB = {
 		["Vermin - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
@@ -905,9 +905,9 @@ AdiBagsDB = {
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
+					["Name"] = "Bag Lag Fix",
 					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 					["Percent"] = 1,
-					["Name"] = "Bag Lag Fix",
 				},
 			},
 			["qualityOpacity"] = 0.05,
