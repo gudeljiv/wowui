@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10690,
+	["session"] = 10694,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7587,45 +7587,13 @@ BugGrabberDB = {
 			["counter"] = 210,
 		}, -- [988]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ReforgeLite' tried to call the protected function 'CompactRaidFrame1:Show()'.",
-			["time"] = "2024/05/17 11:20:17",
-			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:378: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:304: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:62: in function <...AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua:59>",
-			["session"] = 10672,
-			["counter"] = 38,
-		}, -- [989]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
-			["time"] = "2024/05/11 11:13:14",
-			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:100: in function `?'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:21: in function `FullUpdate'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:342: in function <...nterface/AddOns/ShadowedUnitFrames/modules/units.lua:342>",
-			["session"] = 10675,
-			["counter"] = 82,
-		}, -- [990]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'SpellActivationOverlay' tried to call the protected function 'MultiBarBottomLeftButton5:Show()'.",
 			["time"] = "2024/06/09 11:46:01",
 			["locals"] = "Skipped (In Encounter)",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua\"]:370: in function <...e/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua:344>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `ActionButton_Update'\n[string \"@Interface/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua\"]:800: in function <...e/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua:698>\n[string \"=[C]\"]: in function `ActionButton_OnEvent'\n[string \"@Interface/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua\"]:249: in function <...e/AddOns/Blizzard_ActionBar/Classic/ActionButton.lua:241>",
 			["session"] = 10675,
 			["counter"] = 1,
-		}, -- [991]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '*** ForceTaint_Strong ***' tried to call the protected function 'UNKNOWN()'.",
-			["time"] = "2024/05/12 11:50:07",
-			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `IsItemInRange'\n[string \"return function()\"]:7: in function <[string \"return function()\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4859: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/Text.lua\"]:258: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:94: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua\"]:622: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:94: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua\"]:828: in function <...ace/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua:826>",
-			["session"] = 10677,
-			["counter"] = 72,
-		}, -- [992]
-		{
-			["message"] = "Interface/AddOns/QuestReward/main.lua:161: attempt to index local 'btn' (a nil value)",
-			["time"] = "2024/05/11 11:27:22",
-			["locals"] = "self = Frame {\n 0 = <userdata>\n}\nindex = 2\nbtn = nil\n(*temporary) = \"QuestInfoRewardsFrameQuestInfoItem2\"\n(*temporary) = \"2\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'btn' (a nil value)\"\nkjl = <table> {\n SetLen = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:375\n Floor = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:243\n getNamefromLink = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:272\n tcount = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:324\n UpdateDatabase = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:144\n Ceiling = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:233\n getIDNumber = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:293\n printr = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:337\n setupAddon = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:69\n PairsByKeys = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:254\n Enums = <table> {\n }\n private = <table> {\n }\n Round = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:214\n Timer = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:163\n Msg = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:91\n}\nBuyNowItems = <table> {\n 1 = 44812\n 2 = 45724\n}\nTempSell = nil\n",
-			["stack"] = "[string \"@Interface/AddOns/QuestReward/main.lua\"]:161: in function `QuestReward_SelectItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:156: in function `QuestReward_ChooseItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:81: in function <Interface/AddOns/QuestReward/main.lua:76>",
-			["session"] = 10677,
-			["counter"] = 100,
-		}, -- [993]
+		}, -- [989]
 		{
 			["message"] = "...Tip/Libs/LibClassicInspector-17/LibClassicInspector.lua:2993: bad argument #1 to 'tonumber' (value expected)",
 			["time"] = "2024/06/02 17:17:54",
@@ -7633,7 +7601,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `tonumber'\n[string \"@Interface/AddOns/TacoTip/Libs/LibClassicInspector-17/LibClassicInspector.lua\"]:2993: in function <...Tip/Libs/LibClassicInspector/LibClassicInspector.lua:2969>\n[string \"=(tail call)\"]: ?",
 			["session"] = 10677,
 			["counter"] = 62,
-		}, -- [994]
+		}, -- [990]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/_Misc_Frames.lua:94: 'end' expected (to close 'function' at line 64) near '<eof>'",
 			["time"] = "2024/06/09 18:52:48",
@@ -7641,13 +7609,13 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 10684,
 			["counter"] = 1,
-		}, -- [995]
+		}, -- [991]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/_Misc_Frames.lua:1 Interface/AddOns/xVermin/Frames/_Misc_Frames.lua:94: 'end' expected (to close 'function' at line 64) near '<eof>'",
 			["time"] = "2024/06/09 18:52:49",
 			["session"] = 10684,
 			["counter"] = 2,
-		}, -- [996]
+		}, -- [992]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/_Misc_Frames.lua:39: attempt to index global 'gtt' (a nil value)",
 			["time"] = "2024/06/09 18:53:23",
@@ -7655,28 +7623,60 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Frames/_Misc_Frames.lua\"]:39: in main chunk",
 			["session"] = 10685,
 			["counter"] = 1,
+		}, -- [993]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
+			["time"] = "2024/05/11 11:13:14",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:100: in function `?'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:21: in function `FullUpdate'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:342: in function <...nterface/AddOns/ShadowedUnitFrames/modules/units.lua:342>",
+			["session"] = 10691,
+			["counter"] = 83,
+		}, -- [994]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '*** ForceTaint_Strong ***' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2024/05/12 11:50:07",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `IsItemInRange'\n[string \"return function()\"]:7: in function <[string \"return function()\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4859: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/Text.lua\"]:258: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:94: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua\"]:622: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:94: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua\"]:828: in function <...ace/AddOns/WeakAuras/RegionTypes/RegionPrototype.lua:826>",
+			["session"] = 10692,
+			["counter"] = 74,
+		}, -- [995]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ReforgeLite' tried to call the protected function 'CompactRaidFrame1:Show()'.",
+			["time"] = "2024/05/17 11:20:17",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:378: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:304: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface/AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua\"]:62: in function <...AddOns/Blizzard_UnitFrame/Wrath/CompactUnitFrame.lua:59>",
+			["session"] = 10692,
+			["counter"] = 39,
+		}, -- [996]
+		{
+			["message"] = "Interface/AddOns/QuestReward/main.lua:161: attempt to index local 'btn' (a nil value)",
+			["time"] = "2024/05/11 11:27:22",
+			["locals"] = "self = Frame {\n 0 = <userdata>\n}\nindex = 2\nbtn = nil\n(*temporary) = \"QuestInfoRewardsFrameQuestInfoItem2\"\n(*temporary) = \"2\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'btn' (a nil value)\"\nkjl = <table> {\n SetLen = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:375\n Floor = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:243\n getNamefromLink = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:272\n tcount = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:324\n UpdateDatabase = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:144\n Ceiling = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:233\n getIDNumber = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:293\n printr = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:337\n setupAddon = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:69\n PairsByKeys = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:254\n Enums = <table> {\n }\n private = <table> {\n }\n Round = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:214\n Timer = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:163\n Msg = <function> defined @Interface/AddOns/QuestReward/Libs/LibKjasi/Kjasi.lua:91\n}\nBuyNowItems = <table> {\n 1 = 44812\n 2 = 45724\n}\nTempSell = nil\n",
+			["stack"] = "[string \"@Interface/AddOns/QuestReward/main.lua\"]:161: in function `QuestReward_SelectItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:156: in function `QuestReward_ChooseItem'\n[string \"@Interface/AddOns/QuestReward/main.lua\"]:81: in function <Interface/AddOns/QuestReward/main.lua:76>",
+			["session"] = 10692,
+			["counter"] = 101,
 		}, -- [997]
 		{
 			["message"] = "...ddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:79: attempt to index local 'self' (a nil value)",
 			["time"] = "2024/05/22 14:29:30",
 			["locals"] = "self = nil\nname = \"picoFPS\"\ndescription = nil\nsubcategory = <table> {\n GetID = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:13\n SetCategorySet = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:53\n order = 29\n HasSubcategories = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:72\n GetOrder = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:25\n SetCategoryTutorialInfo = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:83\n HasParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:49\n SetOrder = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:29\n ID = 29\n Init = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:6\n GetParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:41\n GetName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:17\n name = \"picoFPS\"\n subcategories = <table> {\n }\n SetParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:45\n SetName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:21\n CreateSubcategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:76\n GetCategoryTutorialInfo = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:90\n GetQualifiedName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:33\n GetSubcategories = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:68\n GetCategorySet = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:57\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <table> {\n GetID = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:13\n SetCategorySet = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:53\n order = 29\n HasSubcategories = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:72\n GetOrder = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:25\n SetCategoryTutorialInfo = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:83\n HasParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:49\n SetOrder = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:29\n ID = 29\n Init = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:6\n GetParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:41\n GetName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:17\n name = \"picoFPS\"\n subcategories = <table> {\n }\n SetParentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:45\n SetName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:21\n CreateSubcategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:76\n GetCategoryTutorialInfo = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:90\n GetQualifiedName = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:33\n GetSubcategories = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:68\n GetCategorySet = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:57\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'self' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Category.lua\"]:79: in function <...ddOns/Blizzard_Settings_Shared/Blizzard_Category.lua:76>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua\"]:158: in function <.../Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:127>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsInbound.lua\"]:53: in function <...lizzard_Settings_Shared/Blizzard_SettingsInbound.lua:52>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/Buffet/Libs/tekKonfigAboutPanel.lua\"]:13: in function `new'\n[string \"@Interface/AddOns/picoFPS/picoFPS.lua\"]:30: in main chunk",
-			["session"] = 10690,
-			["counter"] = 311,
+			["session"] = 10694,
+			["counter"] = 315,
 		}, -- [998]
 		{
 			["message"] = ".../Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:765: table index is nil",
 			["time"] = "2024/05/22 14:29:30",
 			["locals"] = "self = SettingsPanel {\n 0 = <userdata>\n GameTab = Button {\n }\n categoryLayouts = <table> {\n }\n RegisterCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:812\n RevertSettings = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:474\n ClosePanelButton = Button {\n }\n SetCurrentLayout = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:899\n CheckTutorials = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:279\n OnShow = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:241\n Open = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:378\n ClearSearchBox = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:745\n AssignLayoutToCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:764\n CategoryList = Frame {\n }\n SearchBox = EditBox {\n }\n modified = <table> {\n }\n AddOnsTab = Button {\n }\n SetSecureAttributeResults = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:204\n ForEachCanvas = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:588\n Bg = Frame {\n }\n CallRefreshOnCanvases = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:627\n GetSecureAttributeResults = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:208\n OnLoad = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:70\n ExitWithoutCommit = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:335\n TransitionBackOpeningPanel = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:366\n FinalizeCommit = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:454\n SetCurrentCategorySettingsToDefaults = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:532\n GetAllCategories = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:808\n ExitWithCommit = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:355\n SetApplyButtonEnabled = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:603\n HasUnappliedSettings = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:575\n OnKeybindRebindSuccess = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:1008\n OnTabSelected = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:212\n secureAttributeResults = <table> {\n }\n ClearActiveCategoryTutorial = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:1012\n SetAllSettingsToDefaults = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:502\n WipeModifiedTable = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:608\n OnKeybindStartedListening = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:985\n OnKeybindStoppedListening = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:972\n SetOutputText = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:964\n tabsGroup = <table> {\n }\n settings = <table> {\n }\n ClearCurrentCategoryCanvas = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:903\n RepairDisplay = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:796\n GetCurrentCategory = <function> defined @Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:956\n InputBlocker = Frame {\n }\n Flush = <function> defined @Interface/AddOn",
 			["stack"] = "[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua\"]:765: in function `AssignLayoutToCategory'\n[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua\"]:160: in function <.../Blizzard_Settings_Shared/Blizzard_SettingsPanel.lua:127>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/AddOns/Blizzard_Settings_Shared/Blizzard_SettingsInbound.lua\"]:53: in function <...lizzard_Settings_Shared/Blizzard_SettingsInbound.lua:52>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/Buffet/Libs/tekKonfigAboutPanel.lua\"]:13: in function `new'\n[string \"@Interface/AddOns/picoFPS/picoFPS.lua\"]:30: in main chunk",
-			["session"] = 10690,
-			["counter"] = 311,
+			["session"] = 10694,
+			["counter"] = 315,
 		}, -- [999]
 		{
 			["message"] = "Interface/AddOns/RangeDisplay/RangeDisplay_Cata.toc:30 Duplicate File Load Detected. [Interface/AddOns/RangeDisplay/libs/LibDataBroker-1.1-4/LibDataBroker-1.1.lua] first loaded at [Interface/AddOns/RangeDisplay/RangeDisplay_Cata.toc:28]",
 			["time"] = "2024/05/01 10:32:33",
-			["session"] = 10690,
-			["counter"] = 900,
+			["session"] = 10694,
+			["counter"] = 908,
 		}, -- [1000]
 	},
 }

@@ -369,7 +369,122 @@ ReforgeLiteDB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
-			["tankingModel"] = true,
+			["method"] = {
+				["items"] = {
+					{
+						["dst"] = 2,
+						["src"] = 4,
+						["amount"] = 0,
+						["reforge"] = 23,
+					}, -- [1]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["amount"] = 0,
+						["reforge"] = 44,
+					}, -- [2]
+					{
+						["dst"] = 2,
+						["src"] = 4,
+						["amount"] = 0,
+						["reforge"] = 23,
+					}, -- [3]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [4]
+					{
+						["dst"] = 2,
+						["src"] = 4,
+						["amount"] = 0,
+						["reforge"] = 23,
+					}, -- [5]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [6]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [7]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["amount"] = 0,
+						["reforge"] = 44,
+					}, -- [8]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["amount"] = 0,
+						["reforge"] = 44,
+					}, -- [9]
+					{
+						["dst"] = 2,
+						["src"] = 8,
+						["amount"] = 0,
+						["reforge"] = 51,
+					}, -- [10]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [11]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [12]
+					{
+					}, -- [13]
+					{
+						["dst"] = 2,
+						["src"] = 5,
+						["amount"] = 0,
+						["reforge"] = 30,
+					}, -- [14]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["amount"] = 0,
+						["reforge"] = 44,
+					}, -- [15]
+					{
+					}, -- [16]
+					{
+						["dst"] = 2,
+						["src"] = 7,
+						["amount"] = 0,
+						["reforge"] = 44,
+					}, -- [17]
+				},
+				["stats"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					["parry"] = 0,
+					["dodge"] = 0,
+				},
+				["tankingModel"] = true,
+				["orig_stats"] = {
+					[3] = 0,
+					[2] = 0,
+					[8] = 0,
+				},
+			},
 			["weights"] = {
 				0, -- [1]
 				20000, -- [2]
@@ -525,122 +640,7 @@ ReforgeLiteDB = {
 			},
 			["itemsLocked"] = {
 			},
-			["method"] = {
-				["items"] = {
-					{
-						["dst"] = 2,
-						["src"] = 4,
-						["amount"] = 0,
-						["reforge"] = 23,
-					}, -- [1]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["amount"] = 0,
-						["reforge"] = 44,
-					}, -- [2]
-					{
-						["dst"] = 2,
-						["src"] = 4,
-						["amount"] = 0,
-						["reforge"] = 23,
-					}, -- [3]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [4]
-					{
-						["dst"] = 2,
-						["src"] = 4,
-						["amount"] = 0,
-						["reforge"] = 23,
-					}, -- [5]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [6]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [7]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["amount"] = 0,
-						["reforge"] = 44,
-					}, -- [8]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["amount"] = 0,
-						["reforge"] = 44,
-					}, -- [9]
-					{
-						["dst"] = 2,
-						["src"] = 8,
-						["amount"] = 0,
-						["reforge"] = 51,
-					}, -- [10]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [11]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [12]
-					{
-					}, -- [13]
-					{
-						["dst"] = 2,
-						["src"] = 5,
-						["amount"] = 0,
-						["reforge"] = 30,
-					}, -- [14]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["amount"] = 0,
-						["reforge"] = 44,
-					}, -- [15]
-					{
-					}, -- [16]
-					{
-						["dst"] = 2,
-						["src"] = 7,
-						["amount"] = 0,
-						["reforge"] = 44,
-					}, -- [17]
-				},
-				["stats"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					["parry"] = 0,
-					["dodge"] = 0,
-				},
-				["tankingModel"] = true,
-				["orig_stats"] = {
-					[3] = 0,
-					[2] = 0,
-					[8] = 0,
-				},
-			},
+			["tankingModel"] = true,
 		},
 		["Moolatz - Golemagg"] = {
 			["caps"] = {

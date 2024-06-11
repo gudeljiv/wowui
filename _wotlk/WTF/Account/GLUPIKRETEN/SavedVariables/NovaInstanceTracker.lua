@@ -16,15 +16,15 @@ NITdatabase = {
 		["Asjrdfsad - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 	},
 	["global"] = {
@@ -78,13 +78,13 @@ NITdatabase = {
 					["ammo"] = 195,
 					["playerName"] = "Poklopac",
 					["raceLocalized"] = "Orc",
-					["ammoType"] = 2512,
+					["cookingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
 					["classEnglish"] = "HUNTER",
 					["currentXP"] = 102,
-					["isPetDead"] = false,
-					["cookingSkillMax"] = 0,
 					["fishingSkillMax"] = 0,
+					["ammoType"] = 2512,
+					["isPetDead"] = false,
 					["firstaidSkillMax"] = 0,
 					["petLevel"] = 0,
 					["cooldowns"] = {
@@ -393,10 +393,10 @@ NITdatabase = {
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 0,
 					["profSkill2"] = 0,
+					["resting"] = false,
 					["race"] = "Orc",
 					["currency"] = {
 					},
-					["resting"] = false,
 					["time"] = 1665607013,
 					["gold"] = 3123,
 					["profSkillMax2"] = 0,
@@ -1498,7 +1498,7 @@ NITdatabase = {
 					["time"] = 1648050788,
 				}, -- [119]
 			},
-			["weeklyResetTime"] = 1718164800,
+			["weeklyResetTime"] = 1718164797,
 			["gammaBuffSettings"] = {
 			},
 			["myChars"] = {
@@ -1550,7 +1550,7 @@ NITdatabase = {
 						[30] = 66,
 						[616] = 12,
 					},
-					["durabilityAverage"] = 95.3623188405797,
+					["durabilityAverage"] = 100,
 					["profSkill2"] = 515,
 					["savedInstances"] = {
 					},
@@ -1558,21 +1558,21 @@ NITdatabase = {
 					["maxXP"] = 5203400,
 					["gender"] = "Male",
 					["prof1"] = "Inscription",
-					["restedXP"] = 1931514,
+					["restedXP"] = 3504986,
 					["totalBagSlots"] = 100,
-					["freeBagSlots"] = 86,
+					["freeBagSlots"] = 92,
 					["questsDaily"] = {
-						["Cata Jewelcrafting Daily"] = 1717992000,
+						["Cata Jewelcrafting Daily"] = 1718164800,
 					},
 					["arenaPoints"] = 0,
-					["currentXP"] = 816211,
+					["currentXP"] = 864501,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 525,
 					["race"] = "Orc",
 					["classLocalized"] = "Death Knight",
 					["resting"] = true,
-					["time"] = 1717952644,
-					["gold"] = 157602091,
+					["time"] = 1718126825,
+					["gold"] = 157806183,
 					["profSkillMax2"] = 525,
 					["levelLog"] = {
 						[82] = {
@@ -1614,8 +1614,8 @@ NITdatabase = {
 							["gold"] = 130215347,
 							["zoneName"] = "The Stonecore",
 							["timestamp"] = 1717837367,
-							["mobCount"] = 42,
-							["questCount"] = 1,
+							["mobCount"] = 43,
+							["questCount"] = 2,
 						},
 					},
 					["guildRankName"] = "Alt",
@@ -1637,7 +1637,7 @@ NITdatabase = {
 						[134501] = {
 							["max"] = 0,
 							["name"] = "Illustrious Jewelcrafter's Token",
-							["count"] = 8,
+							["count"] = 9,
 						},
 						[135885] = {
 							["max"] = 0,
@@ -2057,7 +2057,14 @@ NITdatabase = {
 				["Handrmandr"] = {
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
-					["profSkill1"] = 0,
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
 					["instances"] = {
 						[33] = 3,
 						[70] = 2,
@@ -2072,34 +2079,33 @@ NITdatabase = {
 						[129] = 1,
 						[189] = 12,
 						[289] = 1,
-						[329] = 1,
+						[329] = 2,
 					},
-					["firstaidSkillMax"] = 0,
+					["durabilityAverage"] = 91.66666666666666,
 					[17033] = 0,
-					["prof2"] = "none",
+					["profSkill2"] = 0,
 					["savedInstances"] = {
 					},
 					["honor"] = 0,
-					["maxXP"] = 110700,
+					["maxXP"] = 115700,
 					["gender"] = "Male",
-					["profSkillMax2"] = 0,
-					["restedXP"] = 16484,
+					["prof1"] = "none",
+					["restedXP"] = 8,
 					["totalBagSlots"] = 84,
-					["freeBagSlots"] = 76,
+					["freeBagSlots"] = 64,
 					["questsDaily"] = {
 					},
 					["arenaPoints"] = 0,
-					["guild"] = "CUBE",
+					["guildRankName"] = "Alt",
 					["raceEnglish"] = "Tauren",
 					["profSkillMax1"] = 0,
-					["durabilityAverage"] = 100,
+					["profSkill1"] = 0,
 					["classLocalized"] = "Paladin",
-					["resting"] = true,
-					["currency"] = {
-					},
-					["time"] = 1717873629,
-					["gold"] = 2676463,
-					["prof1"] = "none",
+					["prof2"] = "none",
+					["race"] = "Tauren",
+					["time"] = 1718126525,
+					["gold"] = 2965522,
+					["firstaidSkillMax"] = 0,
 					["levelLog"] = {
 						{
 							["played"] = 2,
@@ -2578,38 +2584,41 @@ NITdatabase = {
 							["gold"] = 2349819,
 							["zoneName"] = "Zul'Farrak",
 							["timestamp"] = 1717787555,
-							["mobCount"] = 23,
+							["mobCount"] = 128,
 							["questCount"] = 4,
 						}, -- [48]
+						{
+							["played"] = 65804,
+							["subzoneName"] = "The Gauntlet",
+							["gold"] = 2792858,
+							["zoneName"] = "Stratholme",
+							["timestamp"] = 1718126005,
+							["mobCount"] = 59,
+							["questCount"] = 5,
+						}, -- [49]
 					},
-					["dungWeeklies"] = {
-					},
+					["guild"] = "CUBE",
 					["realm"] = "Golemagg",
-					["level"] = 48,
-					["firstaidSkill"] = 0,
-					["raceLocalized"] = "Tauren",
 					["fishingSkillMax"] = 0,
+					["currency"] = {
+					},
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
 					["playerName"] = "Handrmandr",
 					["classEnglish"] = "PALADIN",
 					["conq"] = 0,
-					["currentXP"] = 48747,
-					["race"] = "Tauren",
-					["cookingSkillMax"] = 0,
+					["resting"] = true,
+					["dungWeeklies"] = {
+					},
+					["firstaidSkill"] = 0,
 					[21177] = 0,
-					["guildRankName"] = "Alt",
+					["level"] = 49,
 					["cooldowns"] = {
 					},
-					["profSkill2"] = 0,
+					["profSkillMax2"] = 0,
 					["quests"] = {
 					},
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
+					["currentXP"] = 69757,
 				},
 				["Tadibey"] = {
 					["fishingSkill"] = 0,
@@ -2951,10 +2960,10 @@ NITdatabase = {
 						[43] = 1,
 						[209] = 7,
 						[576] = 1,
-						[542] = 4,
-						[553] = 1,
 						[189] = 22,
+						[553] = 1,
 						[557] = 1,
+						[542] = 4,
 						[574] = 2,
 						[546] = 4,
 						[547] = 4,
@@ -3662,13 +3671,20 @@ NITdatabase = {
 					["fishingSkill"] = 25,
 					["cookingSkill"] = 165,
 					["shatteredHallsAttune"] = true,
-					["profSkill1"] = 525,
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
 					["instances"] = {
 						[574] = 13,
 						[576] = 7,
 						[578] = 11,
 						[643] = 5,
-						[645] = 5,
+						[645] = 6,
 						[529] = 17,
 						[657] = 2,
 						[533] = 36,
@@ -3693,7 +3709,7 @@ NITdatabase = {
 						[489] = 22,
 						[43] = 9,
 						[269] = 1,
-						[532] = 19,
+						[658] = 4,
 						[542] = 5,
 						[599] = 14,
 						[601] = 10,
@@ -3712,44 +3728,35 @@ NITdatabase = {
 						[545] = 1,
 						[566] = 60,
 						[725] = 2,
-						[658] = 4,
 						[595] = 15,
+						[532] = 19,
 					},
-					["firstaidSkillMax"] = 450,
-					["level"] = 83,
+					["durabilityAverage"] = 90.64935064935065,
+					["profSkill2"] = 465,
 					["savedInstances"] = {
 					},
 					["honor"] = 1910,
 					["maxXP"] = 5203400,
 					["gender"] = "Male",
-					["prof1"] = "Enchanting",
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["restedXP"] = 323186,
+					["profSkillMax2"] = 525,
+					["prof2"] = "Engineering",
+					["restedXP"] = 1178758,
 					["totalBagSlots"] = 100,
-					["arcatrazAttune"] = true,
-					["auchindounAttune"] = true,
+					["prof2SpecName"] = "Goblin Engineer",
+					["questsDaily"] = {
+					},
 					["arenaPoints"] = 0,
 					["quests"] = {
 					},
-					["profSkill2"] = 465,
-					["dungWeeklies"] = {
-						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFFFF00000|r|cFF00FF00/7|r"] = 1718164800,
-					},
-					["guildRankName"] = "Member",
-					["currentXP"] = 2532183,
-					["prof2SpecName"] = "Goblin Engineer",
+					["prof1"] = "Enchanting",
+					["arcatrazAttune"] = true,
+					["race"] = "Orc",
+					["currentXP"] = 3298862,
+					["resting"] = true,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 525,
-					["questsDaily"] = {
-					},
-					["prof2"] = "Engineering",
+					["karaAttune"] = true,
+					["guildRankName"] = "Member",
 					["blackMorassAttune"] = true,
 					["currency"] = {
 						[237547] = {
@@ -3803,9 +3810,9 @@ NITdatabase = {
 							["count"] = 654,
 						},
 					},
-					["time"] = 1717952530,
-					["gold"] = 82832112,
-					["guild"] = "CUBE",
+					["time"] = 1718126579,
+					["gold"] = 88231067,
+					["freeBagSlots"] = 80,
 					["levelLog"] = {
 						[82] = {
 							["played"] = 2172929,
@@ -3842,32 +3849,149 @@ NITdatabase = {
 							["gold"] = 78060062,
 							["zoneName"] = "Throne of Tides",
 							["timestamp"] = 1717756657,
-							["mobCount"] = 273,
+							["mobCount"] = 340,
 							["questCount"] = 2,
 						},
 					},
-					["hellfireCitadelAttune"] = true,
+					["conq"] = 0,
 					["realm"] = "Golemagg",
-					["cookingSkillMax"] = 225,
-					["playerName"] = "Vermin",
-					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 75,
 					["firstaidSkill"] = 447,
+					["raceLocalized"] = "Orc",
+					["cookingSkillMax"] = 225,
+					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
-					["conq"] = 0,
-					["race"] = "Orc",
-					["resting"] = true,
-					["durabilityAverage"] = 93.20261437908496,
-					["freeBagSlots"] = 69,
-					["karaAttune"] = true,
-					["cooldowns"] = {
+					["hellfireCitadelAttune"] = true,
+					["dungWeeklies"] = {
+						["|cFF9CD6DE(|r|cff00ff00N|r|cFF9CD6DE)|r Dungeon weeklies remaining: |cFFFF00000|r|cFF00FF00/7|r"] = 1718164797,
 					},
 					["shadowLabAttune"] = true,
+					["firstaidSkillMax"] = 450,
+					["auchindounAttune"] = true,
+					["guild"] = "CUBE",
+					["cooldowns"] = {
+					},
+					["level"] = 83,
 					["classLocalized"] = "Warrior",
-					["profSkillMax2"] = 525,
+					["profSkill1"] = 525,
 				},
 			},
 			["instances"] = {
+				{
+					["GUID"] = "Creature-0-4457-329-21572-45456-0007E88746",
+					["leftMoney"] = 2966344,
+					["group"] = {
+						["Xegro-Venoxis"] = {
+							["class"] = "Hunter",
+							["level"] = 50,
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Bal a dash malanore",
+						},
+						["Poongashu-Gehennas"] = {
+							["class"] = "Druid",
+							["level"] = 50,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Hyperactive",
+						},
+						["Lavahoof-Venoxis"] = {
+							["class"] = "Shaman",
+							["level"] = 51,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Laughin Coffin",
+						},
+						["Handrmandr"] = {
+							["class"] = "Paladin",
+							["level"] = 49,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
+						},
+						["Volhigh-Venoxis"] = {
+							["class"] = "Warlock",
+							["level"] = 50,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Bal a dash malanore",
+						},
+					},
+					["class"] = "Paladin",
+					["leftTime"] = 1718126486,
+					["groupAverage"] = 49.66666666666666,
+					["enteredXP"] = 48747,
+					["xpFromChat"] = 131710,
+					["zoneID"] = 21572,
+					["mobCountFromKill"] = 218,
+					["leftXP"] = 69757,
+					["GUIDSource"] = "mouseover",
+					["playerName"] = "Handrmandr",
+					["classEnglish"] = "PALADIN",
+					["rep"] = {
+						["Guild: +"] = -1000,
+					},
+					["enteredTime"] = 1718125225,
+					["instanceID"] = 329,
+					["difficultyID"] = 1,
+					["leftLevel"] = 49,
+					["rawMoneyCount"] = 27990,
+					["instanceName"] = "Stratholme",
+					["enteredMoney"] = 2774654,
+					["mobCount"] = 164,
+					["enteredLevel"] = 48,
+				}, -- [1]
+				{
+					["GUID"] = "Creature-0-4448-645-3513-40017-0000E87F09",
+					["leftMoney"] = 88231067,
+					["group"] = {
+						["Haffory-Venoxis"] = {
+							["level"] = 84,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Remter",
+						},
+						["Khadga-Gehennas"] = {
+							["level"] = 81,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+						},
+						["Iamsx-Gehennas"] = {
+							["level"] = 83,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "POGGIES",
+						},
+						["Kycata-Gehennas"] = {
+							["level"] = 80,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+						},
+						["Vermin"] = {
+							["level"] = 83,
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+					},
+					["class"] = "Warrior",
+					["leftTime"] = 1718125132,
+					["groupAverage"] = 81.75,
+					["enteredXP"] = 2532183,
+					["xpFromChat"] = 766679,
+					["zoneID"] = 3513,
+					["mobCountFromKill"] = 99,
+					["enteredTime"] = 1718124332,
+					["mobCount"] = 67,
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
+					["rep"] = {
+					},
+					["leftXP"] = 3298862,
+					["instanceID"] = 645,
+					["difficultyID"] = 1,
+					["leftLevel"] = 83,
+					["enteredMoney"] = 88070037,
+					["instanceName"] = "Blackrock Caverns",
+					["rawMoneyCount"] = 67030,
+					["GUIDSource"] = "mouseover",
+					["enteredLevel"] = 83,
+				}, -- [2]
 				{
 					["GUID"] = "Creature-0-4448-33-7762-47146-0000E5D65A",
 					["leftMoney"] = 1064445,
@@ -3924,7 +4048,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 3069,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 19,
-				}, -- [1]
+				}, -- [3]
 				{
 					["GUID"] = "Creature-0-4459-43-17710-5767-000065D1AA",
 					["leftMoney"] = 1030232,
@@ -3985,7 +4109,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 453,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 18,
-				}, -- [2]
+				}, -- [4]
 				{
 					["GUID"] = "Creature-0-4458-389-23023-44223-000165CEEC",
 					["leftMoney"] = 1019125,
@@ -4044,7 +4168,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-389-23023-44216-000065CEEC",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [3]
+				}, -- [5]
 				{
 					["GUID"] = "Creature-0-4459-43-15679-3654-000065CE95",
 					["leftMoney"] = 1012597,
@@ -4101,7 +4225,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 12,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 17,
-				}, -- [4]
+				}, -- [6]
 				{
 					["GUID"] = "Creature-0-4448-389-6857-44216-000065CB02",
 					["leftMoney"] = 1012999,
@@ -4157,7 +4281,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-389-6857-44217-000065CB02",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [5]
+				}, -- [7]
 				{
 					["GUID"] = "Creature-0-4480-643-25138-44752-0000E579C8",
 					["leftMoney"] = 23179549,
@@ -4210,9 +4334,9 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["enteredMoney"] = 22927356,
@@ -4227,7 +4351,7 @@ NITdatabase = {
 					["leftXP"] = 3221409,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 83,
-				}, -- [6]
+				}, -- [8]
 				{
 					["GUID"] = "Creature-0-4448-725-300-51396-0000657147",
 					["leftMoney"] = 22927356,
@@ -4276,9 +4400,9 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["enteredMoney"] = 22567356,
@@ -4294,7 +4418,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-725-300-50048-0000657147",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [7]
+				}, -- [9]
 				{
 					["GUID"] = "Creature-0-4457-657-28124-49943-0000656D00",
 					["leftMoney"] = 21913867,
@@ -4365,9 +4489,9 @@ NITdatabase = {
 					["enteredMoney"] = 20878767,
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["classEnglish"] = "DRUID",
@@ -4383,7 +4507,7 @@ NITdatabase = {
 					["enteredTime"] = 1717923108,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [8]
+				}, -- [10]
 				{
 					["GUID"] = "Creature-0-4457-725-25325-42428-0000655CF4",
 					["leftMoney"] = 50897231,
@@ -4427,9 +4551,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 326,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["GUIDSource"] = "target",
@@ -4447,7 +4571,7 @@ NITdatabase = {
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 124,
 					["enteredLevel"] = 83,
-				}, -- [9]
+				}, -- [11]
 				{
 					["GUID"] = "Creature-0-5563-657-13577-43875-00006554B4",
 					["leftMoney"] = 137636980,
@@ -4494,9 +4618,9 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["enteredMoney"] = 137355556,
@@ -4511,7 +4635,7 @@ NITdatabase = {
 					["leftXP"] = 816211,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [10]
+				}, -- [12]
 				{
 					["GUID"] = "Creature-0-4457-643-24411-44752-00016553F6",
 					["leftMoney"] = 78046613,
@@ -4568,7 +4692,7 @@ NITdatabase = {
 					["enteredMoney"] = 77886149,
 					["mobCount"] = 137,
 					["enteredLevel"] = 83,
-				}, -- [11]
+				}, -- [13]
 				{
 					["GUID"] = "Creature-0-4459-645-23233-40023-0000E54D34",
 					["leftMoney"] = 77886149,
@@ -4617,9 +4741,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 94,
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["GUIDSource"] = "mouseover",
@@ -4637,7 +4761,7 @@ NITdatabase = {
 					["enteredMoney"] = 77594818,
 					["mobCount"] = 66,
 					["enteredLevel"] = 83,
-				}, -- [12]
+				}, -- [14]
 				{
 					["GUID"] = "Creature-0-4445-643-28381-44841-000064AAD3",
 					["leftMoney"] = 20878767,
@@ -4684,9 +4808,9 @@ NITdatabase = {
 					["rawMoneyCount"] = 59828,
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["leftXP"] = 112271,
@@ -4703,7 +4827,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-643-28381-40936-000064A8AC",
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [13]
+				}, -- [15]
 				{
 					["leftMoney"] = 999848,
 					["group"] = {
@@ -4727,7 +4851,7 @@ NITdatabase = {
 					["enteredMoney"] = 999848,
 					["mobCount"] = 0,
 					["enteredLevel"] = 15,
-				}, -- [14]
+				}, -- [16]
 				{
 					["GUID"] = "Creature-0-4459-36-30163-48262-000064A20D",
 					["leftMoney"] = 0,
@@ -4780,7 +4904,7 @@ NITdatabase = {
 					["enteredMoney"] = 998599,
 					["mobCount"] = 17,
 					["enteredLevel"] = 15,
-				}, -- [15]
+				}, -- [17]
 				{
 					["GUID"] = "Creature-0-4445-230-20436-8889-0001643CCD",
 					["leftMoney"] = 5523144,
@@ -4839,7 +4963,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-230-20436-8889-0000E43CCD",
 					["mobCount"] = 108,
 					["mergeSource"] = "combatlogDestGUID",
-				}, -- [16]
+				}, -- [18]
 				{
 					["GUID"] = "Creature-0-4459-329-8039-45412-00006437DC",
 					["leftMoney"] = 5497683,
@@ -4916,7 +5040,7 @@ NITdatabase = {
 					["enteredMoney"] = 5456489,
 					["mobCount"] = 153,
 					["enteredLevel"] = 50,
-				}, -- [17]
+				}, -- [19]
 				{
 					["GUID"] = "Creature-0-4479-645-8685-39705-0000642B3E",
 					["leftMoney"] = 19846807,
@@ -4963,9 +5087,9 @@ NITdatabase = {
 					["enteredMoney"] = 19566316,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["classEnglish"] = "DRUID",
@@ -4980,7 +5104,7 @@ NITdatabase = {
 					["enteredTime"] = 1717840810,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [18]
+				}, -- [20]
 				{
 					["GUID"] = "Creature-0-4459-657-4583-49943-00006424D6",
 					["leftMoney"] = 73978189,
@@ -5042,7 +5166,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-657-4583-45704-00006424D6",
 					["mobCount"] = 70,
 					["enteredLevel"] = 83,
-				}, -- [19]
+				}, -- [21]
 				{
 					["GUID"] = "Creature-0-4459-725-3176-42428-0000641E31",
 					["leftMoney"] = 130407185,
@@ -5090,9 +5214,9 @@ NITdatabase = {
 					["enteredMoney"] = 130175718,
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["classEnglish"] = "DEATHKNIGHT",
@@ -5107,7 +5231,7 @@ NITdatabase = {
 					["enteredTime"] = 1717836782,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [20]
+				}, -- [22]
 				{
 					["GUID"] = "Creature-0-4460-209-32365-44929-0000635795",
 					["leftMoney"] = 2481464,
@@ -5172,7 +5296,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-209-32365-40712-0000635795",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [21]
+				}, -- [23]
 				{
 					["GUID"] = "Creature-0-4457-429-8227-11448-0001E353F3",
 					["leftMoney"] = 2341019,
@@ -5230,7 +5354,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 12267,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 47,
-				}, -- [22]
+				}, -- [24]
 				{
 					["GUID"] = "Creature-0-4457-643-19060-44841-000062E739",
 					["leftMoney"] = 303077009,
@@ -5278,9 +5402,9 @@ NITdatabase = {
 					["enteredMoney"] = 302820123,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["classEnglish"] = "DEATHKNIGHT",
@@ -5295,7 +5419,7 @@ NITdatabase = {
 					["enteredTime"] = 1717756877,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [23]
+				}, -- [25]
 				{
 					["GUID"] = "Creature-0-5563-643-9372-44752-000162E2A0",
 					["leftMoney"] = 78248062,
@@ -5358,7 +5482,7 @@ NITdatabase = {
 					["enteredMoney"] = 77997178,
 					["mobCount"] = 140,
 					["enteredLevel"] = 82,
-				}, -- [24]
+				}, -- [26]
 				{
 					["GUID"] = "Creature-0-4458-657-31024-49943-000061EEB4",
 					["leftMoney"] = 309185821,
@@ -5408,9 +5532,9 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["enteredMoney"] = 308465821,
@@ -5427,7 +5551,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-657-31024-49943-000061EEB4",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [25]
+				}, -- [27]
 				{
 					["GUID"] = "Creature-0-4457-645-17846-39705-000061EA45",
 					["leftMoney"] = 74051867,
@@ -5483,7 +5607,7 @@ NITdatabase = {
 					["enteredMoney"] = 73837301,
 					["mobCount"] = 24,
 					["enteredLevel"] = 82,
-				}, -- [26]
+				}, -- [28]
 				{
 					["GUID"] = "Creature-0-4445-725-25553-50048-000061E9A5",
 					["leftMoney"] = 73837301,
@@ -5545,7 +5669,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-725-25553-50048-000061E9A5",
 					["mobCount"] = 89,
 					["enteredLevel"] = 82,
-				}, -- [27]
+				}, -- [29]
 				{
 					["GUID"] = "Creature-0-4457-429-17337-11444-000061E8C9",
 					["leftMoney"] = 2170947,
@@ -5562,6 +5686,12 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "good job",
 						},
+						["Harrypottah-Mandokir"] = {
+							["level"] = 44,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Hijos de Necropolis",
+						},
 						["Handrmandr"] = {
 							["level"] = 47,
 							["class"] = "Paladin",
@@ -5572,12 +5702,6 @@ NITdatabase = {
 							["level"] = 47,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-						},
-						["Harrypottah-Mandokir"] = {
-							["level"] = 44,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Hijos de Necropolis",
 						},
 					},
 					["class"] = "Paladin",
@@ -5602,7 +5726,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 46,
-				}, -- [28]
+				}, -- [30]
 				{
 					["GUID"] = "Creature-0-4459-329-16267-10422-000061E807",
 					["leftMoney"] = 2170947,
@@ -5661,7 +5785,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 24790,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 46,
-				}, -- [29]
+				}, -- [31]
 				{
 					["GUID"] = "Creature-0-4459-70-15313-2748-000061E130",
 					["leftMoney"] = 1938635,
@@ -5720,7 +5844,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 7793,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 45,
-				}, -- [30]
+				}, -- [32]
 				{
 					["GUID"] = "Creature-0-4459-602-28952-56027-0000617BB0",
 					["leftMoney"] = 46298546,
@@ -5737,14 +5861,14 @@ NITdatabase = {
 					["enteredMoney"] = 45015453,
 					["currencies"] = {
 						[161] = {
+							["icon"] = 134375,
 							["name"] = "Stone Keeper's Shard",
 							["count"] = 6,
-							["icon"] = 134375,
 						},
 						[1901] = {
+							["icon"] = 463451,
 							["name"] = "Honor Points",
 							["count"] = 11,
-							["icon"] = 463451,
 						},
 					},
 					["classEnglish"] = "PALADIN",
@@ -5763,7 +5887,7 @@ NITdatabase = {
 					["enteredTime"] = 1717662575,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [31]
+				}, -- [33]
 				{
 					["GUID"] = "Creature-0-4458-645-14088-39705-0000616CB4",
 					["leftMoney"] = 8805344,
@@ -5807,9 +5931,9 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["enteredMoney"] = 8512223,
@@ -5824,7 +5948,7 @@ NITdatabase = {
 					["leftXP"] = 2822243,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [32]
+				}, -- [34]
 				{
 					["GUID"] = "Creature-0-4479-643-14835-44841-0000616B8A",
 					["leftMoney"] = 70845984,
@@ -5882,7 +6006,7 @@ NITdatabase = {
 					["enteredMoney"] = 70556791,
 					["mobCount"] = 140,
 					["enteredLevel"] = 82,
-				}, -- [33]
+				}, -- [35]
 				{
 					["GUID"] = "Creature-0-4459-602-30054-28580-0000609B79",
 					["leftMoney"] = 0,
@@ -5899,9 +6023,9 @@ NITdatabase = {
 					["enteredMoney"] = 44856692,
 					["currencies"] = {
 						[1901] = {
+							["count"] = 6,
 							["icon"] = 463451,
 							["name"] = "Honor Points",
-							["count"] = 6,
 						},
 					},
 					["classEnglish"] = "PALADIN",
@@ -5917,7 +6041,7 @@ NITdatabase = {
 					["enteredTime"] = 1717607290,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [34]
+				}, -- [36]
 				{
 					["GUID"] = "Creature-0-4459-599-29514-55835-0000609956",
 					["leftMoney"] = 44856692,
@@ -5934,9 +6058,9 @@ NITdatabase = {
 					["enteredMoney"] = 44437393,
 					["currencies"] = {
 						[1901] = {
+							["count"] = 3,
 							["icon"] = 463451,
 							["name"] = "Honor Points",
-							["count"] = 3,
 						},
 					},
 					["classEnglish"] = "PALADIN",
@@ -5952,7 +6076,7 @@ NITdatabase = {
 					["enteredTime"] = 1717606743,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [35]
+				}, -- [37]
 				{
 					["GUID"] = "Creature-0-4469-599-13043-27969-0000609888",
 					["leftMoney"] = 44437393,
@@ -5980,7 +6104,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 81912,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [36]
+				}, -- [38]
 				{
 					["GUID"] = "Creature-0-4459-429-11327-45052-0000604723",
 					["leftMoney"] = 1858708,
@@ -6039,7 +6163,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-429-11327-45052-0000604723",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [37]
+				}, -- [39]
 				{
 					["GUID"] = "Creature-0-4457-429-5942-44999-00006023A6",
 					["leftMoney"] = 1761408,
@@ -6099,7 +6223,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-429-5942-44999-00006023A6",
 					["mobCount"] = 97,
 					["enteredLevel"] = 44,
-				}, -- [38]
+				}, -- [40]
 				{
 					["GUID"] = "Creature-0-4459-645-5449-6112-0000602148",
 					["leftMoney"] = 69338679,
@@ -6157,7 +6281,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 122939,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [39]
+				}, -- [41]
 				{
 					["GUID"] = "Creature-0-4480-564-819-22878-0001E01862",
 					["leftMoney"] = 40965732,
@@ -6185,7 +6309,7 @@ NITdatabase = {
 					["enteredMoney"] = 40866824,
 					["mobCount"] = 0,
 					["enteredLevel"] = 83,
-				}, -- [40]
+				}, -- [42]
 				{
 					["GUID"] = "Creature-0-4458-409-2690-12100-0000600EE9",
 					["leftMoney"] = 40239055,
@@ -6213,7 +6337,7 @@ NITdatabase = {
 					["enteredMoney"] = 39166373,
 					["mobCount"] = 0,
 					["enteredLevel"] = 83,
-				}, -- [41]
+				}, -- [43]
 				{
 					["GUID"] = "Creature-0-4457-129-2383-44837-00005F5060",
 					["leftMoney"] = 1508384,
@@ -6273,7 +6397,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-129-2383-7347-00025F5060",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [42]
+				}, -- [44]
 				{
 					["GUID"] = "Creature-0-4447-189-11777-4542-00005F4E8F",
 					["leftMoney"] = 1418496,
@@ -6335,7 +6459,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 3961,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 43,
-				}, -- [43]
+				}, -- [45]
 				{
 					["GUID"] = "Creature-0-4479-429-12903-11486-00005F4ABB",
 					["leftMoney"] = 1364964,
@@ -6392,7 +6516,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 6488,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 43,
-				}, -- [44]
+				}, -- [46]
 				{
 					["GUID"] = "Creature-0-4459-189-14048-6575-0008DF4A8B",
 					["leftMoney"] = 1351376,
@@ -6449,7 +6573,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1710,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 42,
-				}, -- [45]
+				}, -- [47]
 				{
 					["GUID"] = "Creature-0-4445-189-3194-44805-00005F47F0",
 					["leftMoney"] = 1343166,
@@ -6508,7 +6632,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 3744,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 42,
-				}, -- [46]
+				}, -- [48]
 				{
 					["GUID"] = "Creature-0-4479-289-12166-45110-00005F3FF8",
 					["leftMoney"] = 1249452,
@@ -6568,7 +6692,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4479-289-12166-45107-00005F3FF8",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [47]
+				}, -- [49]
 				{
 					["GUID"] = "Creature-0-4459-70-11417-7172-00005F3FF3",
 					["leftMoney"] = 1045886,
@@ -6627,7 +6751,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 9421,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 40,
-				}, -- [48]
+				}, -- [50]
 				{
 					["GUID"] = "Creature-0-4447-189-10002-44691-00005F3B1F",
 					["leftMoney"] = 1019965,
@@ -6686,7 +6810,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4447-189-10002-44690-00005F3B14",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [49]
+				}, -- [51]
 				{
 					["GUID"] = "Creature-0-4459-643-6793-44841-00005F2389",
 					["leftMoney"] = 8715059,
@@ -6728,9 +6852,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 249,
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["GUIDSource"] = "nameplate1",
@@ -6748,7 +6872,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["mobCount"] = 157,
 					["enteredLevel"] = 82,
-				}, -- [50]
+				}, -- [52]
 				{
 					["GUID"] = "Creature-0-4459-643-2246-40923-0000DEFF92",
 					["leftMoney"] = 38517155,
@@ -6795,9 +6919,9 @@ NITdatabase = {
 					["classEnglish"] = "PALADIN",
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["enteredMoney"] = 38249573,
@@ -6812,7 +6936,7 @@ NITdatabase = {
 					["leftXP"] = 1536247,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 83,
-				}, -- [51]
+				}, -- [53]
 				{
 					["GUID"] = "Creature-0-5563-725-21178-51396-00005EF81D",
 					["leftMoney"] = 270170268,
@@ -6859,9 +6983,9 @@ NITdatabase = {
 					["rawMoneyCount"] = 96918,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["leftXP"] = 1473261,
@@ -6880,7 +7004,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-725-21178-50048-00005EF81D",
 					["mobCount"] = 116,
 					["enteredLevel"] = 82,
-				}, -- [52]
+				}, -- [54]
 				{
 					["GUID"] = "Creature-0-4458-725-3669-5874-00005EF6B4",
 					["leftMoney"] = 78317328,
@@ -6936,7 +7060,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 65732,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [53]
+				}, -- [55]
 				{
 					["GUID"] = "Creature-0-4469-429-17563-44971-00005DFFB7",
 					["leftMoney"] = 1440719,
@@ -6997,7 +7121,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4469-429-17563-44971-00005DFFB7",
 					["mobCount"] = 189,
 					["enteredLevel"] = 40,
-				}, -- [54]
+				}, -- [56]
 				{
 					["GUID"] = "Creature-0-4446-645-8891-40017-0001DDFC8D",
 					["leftMoney"] = 8426806,
@@ -7043,9 +7167,9 @@ NITdatabase = {
 					["enteredMoney"] = 8133506,
 					["currencies"] = {
 						[395] = {
+							["icon"] = 463446,
 							["name"] = "Justice Points",
 							["count"] = 154,
-							["icon"] = 463446,
 						},
 					},
 					["classEnglish"] = "DRUID",
@@ -7060,7 +7184,7 @@ NITdatabase = {
 					["enteredTime"] = 1717435562,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [55]
+				}, -- [57]
 				{
 					["GUID"] = "Creature-0-4468-657-31473-43875-00005DF33C",
 					["leftMoney"] = 38214597,
@@ -7105,9 +7229,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 76,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["GUIDSource"] = "mouseover",
@@ -7125,7 +7249,7 @@ NITdatabase = {
 					["classEnglish"] = "PALADIN",
 					["mobCount"] = 77,
 					["enteredLevel"] = 82,
-				}, -- [56]
+				}, -- [58]
 				{
 					["GUID"] = "Creature-0-4457-657-21839-43875-00005DED24",
 					["leftMoney"] = 249230091,
@@ -7173,9 +7297,9 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["enteredMoney"] = 248950650,
@@ -7190,7 +7314,7 @@ NITdatabase = {
 					["leftXP"] = 407111,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [57]
+				}, -- [59]
 				{
 					["GUID"] = "Creature-0-4446-657-7437-43875-00005DE89C",
 					["leftMoney"] = 83598634,
@@ -7248,7 +7372,7 @@ NITdatabase = {
 					["enteredMoney"] = 83337578,
 					["mobCount"] = 58,
 					["enteredLevel"] = 81,
-				}, -- [58]
+				}, -- [60]
 				{
 					["GUID"] = "Creature-0-4457-349-9497-12238-00005C9045",
 					["leftMoney"] = 1242440,
@@ -7264,6 +7388,12 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Wixana",
 						},
+						["Huskkaffen-Gehennas"] = {
+							["level"] = 36,
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Wixana",
+						},
 						["Handrmandr"] = {
 							["level"] = 39,
 							["class"] = "Paladin",
@@ -7275,12 +7405,6 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Quéstology",
-						},
-						["Huskkaffen-Gehennas"] = {
-							["level"] = 36,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Wixana",
 						},
 					},
 					["class"] = "Paladin",
@@ -7305,7 +7429,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1165,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 38,
-				}, -- [59]
+				}, -- [61]
 				{
 					["GUID"] = "Creature-0-4468-189-10084-6575-0004DC8E47",
 					["leftMoney"] = 1234775,
@@ -7321,6 +7445,12 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Wixana",
 						},
+						["Huskkaffen-Gehennas"] = {
+							["level"] = 36,
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Wixana",
+						},
 						["Handrmandr"] = {
 							["level"] = 38,
 							["class"] = "Paladin",
@@ -7332,12 +7462,6 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Quéstology",
-						},
-						["Huskkaffen-Gehennas"] = {
-							["level"] = 36,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Wixana",
 						},
 					},
 					["class"] = "Paladin",
@@ -7362,7 +7486,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2683,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 38,
-				}, -- [60]
+				}, -- [62]
 				{
 					["GUID"] = "Creature-0-4457-349-8610-13596-00005C8A3D",
 					["leftMoney"] = 1225592,
@@ -7420,7 +7544,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1108,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 37,
-				}, -- [61]
+				}, -- [63]
 				{
 					["GUID"] = "Creature-0-4458-189-24887-44706-00005C888E",
 					["leftMoney"] = 1169984,
@@ -7482,7 +7606,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 3134,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 37,
-				}, -- [62]
+				}, -- [64]
 				{
 					["GUID"] = "Creature-0-5563-643-26092-15447-00005C8352",
 					["leftMoney"] = 48889530,
@@ -7540,7 +7664,7 @@ NITdatabase = {
 					["enteredMoney"] = 48636503,
 					["mobCount"] = 140,
 					["enteredLevel"] = 81,
-				}, -- [63]
+				}, -- [65]
 				{
 					["GUID"] = "Creature-0-4458-189-5837-6575-0007DA18FA",
 					["leftMoney"] = 1047304,
@@ -7597,7 +7721,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 3384,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 36,
-				}, -- [64]
+				}, -- [66]
 				{
 					["GUID"] = "Creature-0-4445-645-21431-49476-00005A179A",
 					["leftMoney"] = 8133626,
@@ -7641,9 +7765,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 92,
 					["currencies"] = {
 						[395] = {
+							["count"] = 154,
 							["icon"] = 463446,
 							["name"] = "Justice Points",
-							["count"] = 154,
 						},
 					},
 					["GUIDSource"] = "mouseover",
@@ -7661,7 +7785,7 @@ NITdatabase = {
 					["enteredMoney"] = 7836984,
 					["mobCount"] = 66,
 					["enteredLevel"] = 82,
-				}, -- [65]
+				}, -- [67]
 				{
 					["GUID"] = "Creature-0-4468-725-1107-51396-00005A0FD3",
 					["leftMoney"] = 38807342,
@@ -7708,9 +7832,9 @@ NITdatabase = {
 					["classEnglish"] = "PALADIN",
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["enteredMoney"] = 38447342,
@@ -7727,7 +7851,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4468-725-1107-51396-00005A0FD3",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [66]
+				}, -- [68]
 				{
 					["GUID"] = "Creature-0-4458-645-3322-40021-0002DA0B8C",
 					["leftMoney"] = 50279172,
@@ -7783,7 +7907,7 @@ NITdatabase = {
 					["enteredMoney"] = 50023600,
 					["mobCount"] = 69,
 					["enteredLevel"] = 81,
-				}, -- [67]
+				}, -- [69]
 				{
 					["GUID"] = "Creature-0-4459-657-4586-43875-00005A06E6",
 					["leftMoney"] = 221362807,
@@ -7828,9 +7952,9 @@ NITdatabase = {
 					["mobCountFromKill"] = 91,
 					["currencies"] = {
 						[395] = {
+							["name"] = "Justice Points",
 							["count"] = 154,
 							["icon"] = 463446,
-							["name"] = "Justice Points",
 						},
 					},
 					["GUIDSource"] = "mouseover",
@@ -7848,7 +7972,7 @@ NITdatabase = {
 					["enteredMoney"] = 221053181,
 					["mobCount"] = 77,
 					["enteredLevel"] = 81,
-				}, -- [68]
+				}, -- [70]
 				{
 					["GUID"] = "Creature-0-4480-643-5396-15447-00005886BE",
 					["leftMoney"] = 7845606,
@@ -7905,7 +8029,7 @@ NITdatabase = {
 					["enteredMoney"] = 7585227,
 					["mobCount"] = 139,
 					["enteredLevel"] = 81,
-				}, -- [69]
+				}, -- [71]
 				{
 					["GUID"] = "Creature-0-4457-349-10161-12258-00005868EA",
 					["leftMoney"] = 1022120,
@@ -7963,7 +8087,7 @@ NITdatabase = {
 					["enteredMoney"] = 1015084,
 					["mobCount"] = 74,
 					["enteredLevel"] = 36,
-				}, -- [70]
+				}, -- [72]
 				{
 					["GUID"] = "Creature-0-4459-189-9730-6575-0001D86858",
 					["leftMoney"] = 1035334,
@@ -8020,7 +8144,7 @@ NITdatabase = {
 					["enteredMoney"] = 1026600,
 					["mobCount"] = 73,
 					["enteredLevel"] = 35,
-				}, -- [71]
+				}, -- [73]
 				{
 					["GUID"] = "Creature-0-5571-47-2516-44415-0000586363",
 					["leftMoney"] = 1026600,
@@ -8077,7 +8201,7 @@ NITdatabase = {
 					["enteredMoney"] = 1017258,
 					["mobCount"] = 98,
 					["enteredLevel"] = 34,
-				}, -- [72]
+				}, -- [74]
 				{
 					["GUID"] = "Creature-0-4468-349-3616-12219-0000D85B70",
 					["leftMoney"] = 1017258,
@@ -8134,7 +8258,7 @@ NITdatabase = {
 					["enteredMoney"] = 1010717,
 					["mobCount"] = 79,
 					["enteredLevel"] = 34,
-				}, -- [73]
+				}, -- [75]
 				{
 					["GUID"] = "Creature-0-4459-349-7666-12236-0000585959",
 					["leftMoney"] = 1010717,
@@ -8192,7 +8316,7 @@ NITdatabase = {
 					["enteredMoney"] = 1001439,
 					["mobCount"] = 63,
 					["enteredLevel"] = 33,
-				}, -- [74]
+				}, -- [76]
 				{
 					["GUID"] = "Creature-0-4479-189-2580-2523-00005857CB",
 					["leftMoney"] = 1001439,
@@ -8249,7 +8373,7 @@ NITdatabase = {
 					["enteredMoney"] = 995907,
 					["mobCount"] = 71,
 					["enteredLevel"] = 33,
-				}, -- [75]
+				}, -- [77]
 				{
 					["GUID"] = "Creature-0-4457-47-6744-44402-00005850F3",
 					["leftMoney"] = 995907,
@@ -8315,7 +8439,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-47-6744-44402-00005850F3",
 					["mobCount"] = 97,
 					["enteredLevel"] = 33,
-				}, -- [76]
+				}, -- [78]
 				{
 					["GUID"] = "Creature-0-5563-189-2711-44660-0000574637",
 					["leftMoney"] = 961063,
@@ -8374,7 +8498,7 @@ NITdatabase = {
 					["enteredMoney"] = 924495,
 					["mobCount"] = 73,
 					["enteredLevel"] = 31,
-				}, -- [77]
+				}, -- [79]
 				{
 					["GUID"] = "Creature-0-4459-189-22451-4543-00005744E2",
 					["leftMoney"] = 924495,
@@ -8433,7 +8557,7 @@ NITdatabase = {
 					["enteredMoney"] = 906192,
 					["mobCount"] = 47,
 					["enteredLevel"] = 30,
-				}, -- [78]
+				}, -- [80]
 				{
 					["GUID"] = "Creature-0-4479-34-5645-46251-00005742A3",
 					["leftMoney"] = 886135,
@@ -8490,7 +8614,7 @@ NITdatabase = {
 					["enteredMoney"] = 881684,
 					["mobCount"] = 40,
 					["enteredLevel"] = 30,
-				}, -- [79]
+				}, -- [81]
 				{
 					["GUID"] = "Creature-0-4458-189-16495-4543-00005740E1",
 					["leftMoney"] = 888434,
@@ -8548,7 +8672,7 @@ NITdatabase = {
 					["enteredMoney"] = 880353,
 					["mobCount"] = 41,
 					["enteredLevel"] = 29,
-				}, -- [80]
+				}, -- [82]
 				{
 					["GUID"] = "Creature-0-4459-643-21382-39616-0000573F74",
 					["leftMoney"] = 7658659,
@@ -8603,7 +8727,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2861,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [81]
+				}, -- [83]
 				{
 					["GUID"] = "Creature-0-4457-725-21149-42808-0008D73C81",
 					["leftMoney"] = 38182112,
@@ -8663,7 +8787,7 @@ NITdatabase = {
 					["enteredMoney"] = 37787000,
 					["mobCount"] = 66,
 					["enteredLevel"] = 82,
-				}, -- [82]
+				}, -- [84]
 				{
 					["GUID"] = "Creature-0-4459-90-11157-7800-00005705EA",
 					["leftMoney"] = 880353,
@@ -8719,7 +8843,7 @@ NITdatabase = {
 					["enteredMoney"] = 871930,
 					["mobCount"] = 88,
 					["enteredLevel"] = 28,
-				}, -- [83]
+				}, -- [85]
 				{
 					["GUID"] = "Creature-0-4457-34-9245-3527-000056FF3F",
 					["leftMoney"] = 971925,
@@ -8777,7 +8901,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-34-9245-2523-000056FEC8",
 					["mobCount"] = 33,
 					["enteredLevel"] = 28,
-				}, -- [84]
+				}, -- [86]
 				{
 					["GUID"] = "Creature-0-4448-90-3032-7800-000056EA3D",
 					["leftMoney"] = 974556,
@@ -8835,7 +8959,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-90-3032-8320-000056EA50",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [85]
+				}, -- [87]
 				{
 					["GUID"] = "Creature-0-4448-657-3059-45477-000256E957",
 					["leftMoney"] = 37787000,
@@ -8893,7 +9017,7 @@ NITdatabase = {
 					["enteredMoney"] = 37761322,
 					["mobCount"] = 15,
 					["enteredLevel"] = 82,
-				}, -- [86]
+				}, -- [88]
 				{
 					["GUID"] = "Creature-0-4460-33-20628-47294-0000564342",
 					["leftMoney"] = 966608,
@@ -8949,7 +9073,7 @@ NITdatabase = {
 					["enteredMoney"] = 960539,
 					["mobCount"] = 6,
 					["enteredLevel"] = 26,
-				}, -- [87]
+				}, -- [89]
 				{
 					["GUID"] = "Creature-0-4446-34-7535-46254-0000563EEB",
 					["leftMoney"] = 974309,
@@ -9006,7 +9130,7 @@ NITdatabase = {
 					["enteredMoney"] = 970186,
 					["mobCount"] = 40,
 					["enteredLevel"] = 26,
-				}, -- [88]
+				}, -- [90]
 				{
 					["GUID"] = "Creature-0-4445-645-4428-49476-000055F0FB",
 					["leftMoney"] = 7655798,
@@ -9063,7 +9187,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 107917,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [89]
+				}, -- [91]
 				{
 					["GUID"] = "Creature-0-4458-329-26307-6112-000055CF10",
 					["leftMoney"] = 5456489,
@@ -9119,7 +9243,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 22864,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 50,
-				}, -- [90]
+				}, -- [92]
 				{
 					["GUID"] = "Creature-0-4480-643-11327-44841-000055C38C",
 					["leftMoney"] = 64387875,
@@ -9176,7 +9300,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 92111,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [91]
+				}, -- [93]
 				{
 					["GUID"] = "Creature-0-4459-645-4343-49476-000055BE51",
 					["leftMoney"] = 64107764,
@@ -9232,7 +9356,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 101446,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [92]
+				}, -- [94]
 				{
 					["GUID"] = "Creature-0-4458-643-23438-2523-000055B816",
 					["leftMoney"] = 37719290,
@@ -9296,22 +9420,22 @@ NITdatabase = {
 					["enteredMoney"] = 37554574,
 					["mobCount"] = 141,
 					["enteredLevel"] = 82,
-				}, -- [93]
+				}, -- [95]
 				{
 					["GUID"] = "Creature-0-4447-725-8754-42428-000155B469",
 					["leftMoney"] = 37554574,
 					["group"] = {
+						["Vermina"] = {
+							["class"] = "Paladin",
+							["level"] = 82,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
+						},
 						["Peekabòó"] = {
 							["class"] = "Rogue",
 							["level"] = 81,
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Old School Hollywood",
-						},
-						["Blagorodna"] = {
-							["class"] = "Priest",
-							["level"] = 81,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "ATM",
 						},
 						["Mlynzz"] = {
 							["class"] = "Rogue",
@@ -9325,11 +9449,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Viikate",
 						},
-						["Vermina"] = {
-							["class"] = "Paladin",
-							["level"] = 82,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
+						["Blagorodna"] = {
+							["class"] = "Priest",
+							["level"] = 81,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "ATM",
 						},
 					},
 					["class"] = "Paladin",
@@ -9354,7 +9478,7 @@ NITdatabase = {
 					["enteredMoney"] = 37378712,
 					["mobCount"] = 99,
 					["enteredLevel"] = 82,
-				}, -- [94]
+				}, -- [96]
 				{
 					["GUID"] = "Creature-0-4469-643-14661-44841-000055ADE0",
 					["leftMoney"] = 7359881,
@@ -9411,7 +9535,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 71250,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [95]
+				}, -- [97]
 				{
 					["GUID"] = "Creature-0-4448-645-27889-39705-000055A715",
 					["leftMoney"] = 7100631,
@@ -9468,7 +9592,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 94701,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [96]
+				}, -- [98]
 				{
 					["GUID"] = "Creature-0-4469-643-13825-44841-00005587A9",
 					["leftMoney"] = 26623358,
@@ -9525,7 +9649,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 101290,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [97]
+				}, -- [99]
 				{
 					["GUID"] = "Creature-0-4459-643-7760-44841-000054BD13",
 					["leftMoney"] = 6817930,
@@ -9582,7 +9706,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 63239,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 81,
-				}, -- [98]
+				}, -- [100]
 				{
 					["GUID"] = "Creature-0-4457-645-13477-39705-000054B391",
 					["leftMoney"] = 6765591,
@@ -9639,7 +9763,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 80087,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [99]
+				}, -- [101]
 				{
 					["GUID"] = "Creature-0-4460-643-1680-40792-0000549DAC",
 					["leftMoney"] = 4857504,
@@ -9695,7 +9819,7 @@ NITdatabase = {
 					["enteredMoney"] = 4607366,
 					["mobCount"] = 137,
 					["enteredLevel"] = 80,
-				}, -- [100]
+				}, -- [102]
 				{
 					["GUID"] = "Creature-0-4445-574-17126-24137-0000534D37",
 					["leftMoney"] = 4607366,
@@ -9755,7 +9879,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-574-17126-211299-0000534D86",
 					["mobCount"] = 109,
 					["enteredLevel"] = 80,
-				}, -- [101]
+				}, -- [103]
 				{
 					["GUID"] = "Creature-0-4460-601-6428-55566-000051F957",
 					["leftMoney"] = 4831758,
@@ -9813,7 +9937,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 6134,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [102]
+				}, -- [104]
 				{
 					["GUID"] = "Creature-0-4459-230-12604-45849-000051DAEA",
 					["leftMoney"] = 3580908,
@@ -9868,7 +9992,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-230-12604-45821-000051DB02",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [103]
+				}, -- [105]
 				{
 					["GUID"] = "Creature-0-5571-329-3602-45456-0007D1D947",
 					["leftMoney"] = 3473458,
@@ -9945,7 +10069,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 27631,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 48,
-				}, -- [104]
+				}, -- [106]
 				{
 					["GUID"] = "Creature-0-4458-329-12785-45200-000051CA25",
 					["leftMoney"] = 3248463,
@@ -10003,7 +10127,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 22505,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 47,
-				}, -- [105]
+				}, -- [107]
 				{
 					["GUID"] = "Creature-0-4458-429-11447-45052-000051BA50",
 					["leftMoney"] = 3171119,
@@ -10013,27 +10137,27 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Sinobia-Gehennas"] = {
+						["Ecne-Gehennas"] = {
 							["level"] = 48,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Social",
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Consistently Bad",
 						},
 						["Miqa"] = {
 							["level"] = 47,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
 						},
+						["Sinobia-Gehennas"] = {
+							["level"] = 48,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Social",
+						},
 						["Micrim-Gehennas"] = {
 							["level"] = 45,
 							["class"] = "Hunter",
 							["classEnglish"] = "HUNTER",
-						},
-						["Ecne-Gehennas"] = {
-							["level"] = 48,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Consistently Bad",
 						},
 					},
 					["class"] = "Priest",
@@ -10060,7 +10184,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-429-11447-45052-000051BA50",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [106]
+				}, -- [108]
 				{
 					["GUID"] = "Creature-0-4448-643-5116-26125-000050B873",
 					["leftMoney"] = 13766126,
@@ -10118,7 +10242,7 @@ NITdatabase = {
 					["enteredMoney"] = 13076113,
 					["mobCount"] = 137,
 					["enteredLevel"] = 80,
-				}, -- [107]
+				}, -- [109]
 				{
 					["GUID"] = "Creature-0-4457-645-4947-49476-000050B46E",
 					["leftMoney"] = 13076113,
@@ -10176,7 +10300,7 @@ NITdatabase = {
 					["enteredMoney"] = 12142133,
 					["mobCount"] = 68,
 					["enteredLevel"] = 80,
-				}, -- [108]
+				}, -- [110]
 				{
 					["GUID"] = "Creature-0-4480-645-1311-39708-000250A4C2",
 					["leftMoney"] = 12142133,
@@ -10234,7 +10358,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [109]
+				}, -- [111]
 				{
 					["GUID"] = "Creature-0-5563-643-162-31216-000150A39F",
 					["leftMoney"] = 12142133,
@@ -10292,7 +10416,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 112418,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [110]
+				}, -- [112]
 				{
 					["GUID"] = "Creature-0-4458-209-5230-40712-00004FD47F",
 					["leftMoney"] = 1962551,
@@ -10361,7 +10485,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-209-5230-40712-00004FD47F",
 					["mobCount"] = 176,
 					["enteredLevel"] = 47,
-				}, -- [111]
+				}, -- [113]
 				{
 					["GUID"] = "Creature-0-4445-657-20525-49943-00004F28FE",
 					["leftMoney"] = 130774264,
@@ -10427,7 +10551,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 157907,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 82,
-				}, -- [112]
+				}, -- [114]
 				{
 					["GUID"] = "Creature-0-4459-643-24682-44841-00004F25FE",
 					["leftMoney"] = 129933433,
@@ -10485,7 +10609,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 94528,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 81,
-				}, -- [113]
+				}, -- [115]
 				{
 					["GUID"] = "Creature-0-4459-329-21286-10385-00004F1069",
 					["leftMoney"] = 1782195,
@@ -10495,16 +10619,16 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
 						},
+						["Bigbabajack-Venoxis"] = {
+							["level"] = 45,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
 						["Knyfus"] = {
 							["class"] = "Rogue",
 							["level"] = 47,
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Nostalgiaa",
-						},
-						["Miqa"] = {
-							["level"] = 46,
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
 						},
 						["Dildapriest"] = {
 							["class"] = "Priest",
@@ -10512,10 +10636,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Reserve Landslaget",
 						},
-						["Bigbabajack-Venoxis"] = {
-							["level"] = 45,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
+						["Miqa"] = {
+							["level"] = 46,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
 						},
 					},
 					["class"] = "Priest",
@@ -10543,7 +10667,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-329-21286-45325-00004F06EE",
 					["mobCount"] = 215,
 					["mergeSource"] = "mouseover",
-				}, -- [114]
+				}, -- [116]
 				{
 					["GUID"] = "Creature-0-4459-645-22130-40017-0006CE11A3",
 					["leftMoney"] = 127185778,
@@ -10602,7 +10726,7 @@ NITdatabase = {
 					["enteredMoney"] = 126294065,
 					["mobCount"] = 67,
 					["enteredLevel"] = 81,
-				}, -- [115]
+				}, -- [117]
 				{
 					["GUID"] = "Creature-0-4459-643-21395-47243-00004E112B",
 					["leftMoney"] = 127839911,
@@ -10660,7 +10784,7 @@ NITdatabase = {
 					["enteredMoney"] = 127547949,
 					["mobCount"] = 142,
 					["enteredLevel"] = 81,
-				}, -- [116]
+				}, -- [118]
 				{
 					["GUID"] = "Creature-0-4448-645-6730-40017-0006CE0A3C",
 					["leftMoney"] = 127547949,
@@ -10719,7 +10843,7 @@ NITdatabase = {
 					["enteredMoney"] = 126936613,
 					["mobCount"] = 61,
 					["enteredLevel"] = 81,
-				}, -- [117]
+				}, -- [119]
 				{
 					["GUID"] = "Creature-0-4480-643-6529-1964-00014E03E7",
 					["leftMoney"] = 119164599,
@@ -10775,7 +10899,7 @@ NITdatabase = {
 					["enteredMoney"] = 118873173,
 					["mobCount"] = 135,
 					["enteredLevel"] = 81,
-				}, -- [118]
+				}, -- [120]
 				{
 					["GUID"] = "Creature-0-4446-645-6974-40017-0002CDFD3F",
 					["leftMoney"] = 118873173,
@@ -10834,7 +10958,7 @@ NITdatabase = {
 					["enteredMoney"] = 117937548,
 					["mobCount"] = 63,
 					["enteredLevel"] = 81,
-				}, -- [119]
+				}, -- [121]
 				{
 					["GUID"] = "Creature-0-4469-599-6841-27973-00074DF12C",
 					["leftMoney"] = 37496367,
@@ -10861,7 +10985,7 @@ NITdatabase = {
 					["enteredMoney"] = 37209538,
 					["mobCount"] = 88,
 					["enteredLevel"] = 80,
-				}, -- [120]
+				}, -- [122]
 				{
 					["GUID"] = "Creature-0-4480-602-5647-56027-00004DF10A",
 					["leftMoney"] = 37209538,
@@ -10888,7 +11012,7 @@ NITdatabase = {
 					["enteredMoney"] = 37209538,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [121]
+				}, -- [123]
 				{
 					["GUID"] = "Creature-0-4460-643-1686-40792-00004DC30B",
 					["leftMoney"] = 197143068,
@@ -10946,7 +11070,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 92715,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [122]
+				}, -- [124]
 				{
 					["GUID"] = "Creature-0-4457-645-5288-40017-00054DBF50",
 					["leftMoney"] = 196862353,
@@ -11004,7 +11128,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 56643,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [123]
+				}, -- [125]
 				{
 					["GUID"] = "Creature-0-5563-643-25334-1964-00014CB77B",
 					["leftMoney"] = 11353320,
@@ -11062,7 +11186,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 102398,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [124]
+				}, -- [126]
 				{
 					["GUID"] = "Creature-0-4479-70-27922-2748-00004C7E17",
 					["leftMoney"] = 1586002,
@@ -11118,7 +11242,7 @@ NITdatabase = {
 					["enteredMoney"] = 1571113,
 					["mobCount"] = 145,
 					["enteredLevel"] = 44,
-				}, -- [125]
+				}, -- [127]
 				{
 					["GUID"] = "Creature-0-4468-429-20250-11450-0005CC7A4D",
 					["leftMoney"] = 1571113,
@@ -11173,7 +11297,7 @@ NITdatabase = {
 					["enteredMoney"] = 1561092,
 					["mobCount"] = 83,
 					["enteredLevel"] = 44,
-				}, -- [126]
+				}, -- [128]
 				{
 					["GUID"] = "Creature-0-4457-329-17911-45323-00004C74F0",
 					["leftMoney"] = 1598142,
@@ -11229,7 +11353,7 @@ NITdatabase = {
 					["enteredMoney"] = 1570218,
 					["mobCount"] = 85,
 					["enteredLevel"] = 44,
-				}, -- [127]
+				}, -- [129]
 				{
 					["leftMoney"] = 1570218,
 					["group"] = {
@@ -11283,7 +11407,7 @@ NITdatabase = {
 					["enteredMoney"] = 1570218,
 					["mobCount"] = 0,
 					["enteredLevel"] = 44,
-				}, -- [128]
+				}, -- [130]
 				{
 					["GUID"] = "Creature-0-5563-429-18525-11441-00004C657D",
 					["leftMoney"] = 1570218,
@@ -11340,7 +11464,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 4926,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 44,
-				}, -- [129]
+				}, -- [131]
 				{
 					["leftMoney"] = 37209538,
 					["group"] = {
@@ -11364,7 +11488,7 @@ NITdatabase = {
 					["enteredMoney"] = 37209538,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [130]
+				}, -- [132]
 				{
 					["GUID"] = "Creature-0-5563-602-18374-28580-00014C6332",
 					["leftMoney"] = 37209538,
@@ -11391,7 +11515,7 @@ NITdatabase = {
 					["enteredMoney"] = 37149739,
 					["mobCount"] = 10,
 					["enteredLevel"] = 80,
-				}, -- [131]
+				}, -- [133]
 				{
 					["GUID"] = "Creature-0-4460-599-12887-27969-00004C5F88",
 					["leftMoney"] = 37149739,
@@ -11418,7 +11542,7 @@ NITdatabase = {
 					["enteredMoney"] = 36914180,
 					["mobCount"] = 84,
 					["enteredLevel"] = 80,
-				}, -- [132]
+				}, -- [134]
 				{
 					["GUID"] = "Creature-0-4468-600-25727-28016-00004B3C44",
 					["leftMoney"] = 4977007,
@@ -11479,7 +11603,7 @@ NITdatabase = {
 					["enteredTime"] = 1716205862,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [133]
+				}, -- [135]
 				{
 					["GUID"] = "Creature-0-4459-632-16586-36502-00004B2035",
 					["leftMoney"] = 37709037,
@@ -11536,7 +11660,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 21377,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [134]
+				}, -- [136]
 				{
 					["GUID"] = "Creature-0-4459-553-15721-17977-00004B14D5",
 					["leftMoney"] = 37465268,
@@ -11563,7 +11687,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 379880,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [135]
+				}, -- [137]
 				{
 					["GUID"] = "Creature-0-4468-429-15457-14369-0004CA1A73",
 					["leftMoney"] = 1494332,
@@ -11622,7 +11746,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4468-429-15457-44991-00004A1A73",
 					["mobCount"] = 97,
 					["enteredLevel"] = 43,
-				}, -- [136]
+				}, -- [138]
 				{
 					["GUID"] = "Creature-0-4468-189-13459-4298-000349F5B2",
 					["leftMoney"] = 1553184,
@@ -11678,7 +11802,7 @@ NITdatabase = {
 					["enteredMoney"] = 1524847,
 					["mobCount"] = 69,
 					["enteredLevel"] = 39,
-				}, -- [137]
+				}, -- [139]
 				{
 					["GUID"] = "Creature-0-4457-70-24114-46236-000049ED5E",
 					["leftMoney"] = 1488881,
@@ -11737,7 +11861,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-70-24114-46241-000049ED5E",
 					["mobCount"] = 200,
 					["enteredLevel"] = 39,
-				}, -- [138]
+				}, -- [140]
 				{
 					["GUID"] = "Creature-0-4459-349-25352-13599-0000C9EA46",
 					["leftMoney"] = 2121357,
@@ -11793,7 +11917,7 @@ NITdatabase = {
 					["enteredMoney"] = 2114639,
 					["mobCount"] = 34,
 					["enteredLevel"] = 38,
-				}, -- [139]
+				}, -- [141]
 				{
 					["GUID"] = "Creature-0-4479-349-13451-12219-000049E788",
 					["leftMoney"] = 2164514,
@@ -11850,7 +11974,7 @@ NITdatabase = {
 					["enteredMoney"] = 2157666,
 					["mobCount"] = 73,
 					["enteredLevel"] = 37,
-				}, -- [140]
+				}, -- [142]
 				{
 					["GUID"] = "Creature-0-4448-189-11733-44707-0003490498",
 					["leftMoney"] = 2158354,
@@ -11907,7 +12031,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1701,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 37,
-				}, -- [141]
+				}, -- [143]
 				{
 					["GUID"] = "Creature-0-4445-189-14507-44691-0001C90283",
 					["leftMoney"] = 2112541,
@@ -11966,7 +12090,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-189-14507-44690-0000490283",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [142]
+				}, -- [144]
 				{
 					["GUID"] = "Creature-0-4447-349-14785-12238-0000490117",
 					["leftMoney"] = 2087577,
@@ -12022,7 +12146,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2070,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 36,
-				}, -- [143]
+				}, -- [145]
 				{
 					["GUID"] = "Creature-0-4459-349-10107-12220-0004C8F2C9",
 					["leftMoney"] = 1925735,
@@ -12078,7 +12202,7 @@ NITdatabase = {
 					["enteredMoney"] = 1917810,
 					["mobCount"] = 77,
 					["enteredLevel"] = 35,
-				}, -- [144]
+				}, -- [146]
 				{
 					["GUID"] = "Creature-0-4457-189-15073-44804-000048F09E",
 					["leftMoney"] = 1917810,
@@ -12136,7 +12260,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-189-15073-44691-000248F0C6",
 					["mobCount"] = 74,
 					["enteredLevel"] = 35,
-				}, -- [145]
+				}, -- [147]
 				{
 					["GUID"] = "Creature-0-4458-47-22249-4514-0002C8EA3B",
 					["leftMoney"] = 1893166,
@@ -12192,7 +12316,7 @@ NITdatabase = {
 					["enteredMoney"] = 1869297,
 					["mobCount"] = 100,
 					["enteredLevel"] = 33,
-				}, -- [146]
+				}, -- [148]
 				{
 					["GUID"] = "Creature-0-4447-189-9004-4543-0000487D8F",
 					["leftMoney"] = 2994743,
@@ -12246,7 +12370,7 @@ NITdatabase = {
 					["enteredMoney"] = 2989663,
 					["mobCount"] = 40,
 					["enteredLevel"] = 30,
-				}, -- [147]
+				}, -- [149]
 				{
 					["GUID"] = "Creature-0-4468-34-32029-46254-00004876AA",
 					["leftMoney"] = 2986291,
@@ -12302,7 +12426,7 @@ NITdatabase = {
 					["enteredMoney"] = 2982931,
 					["mobCount"] = 63,
 					["enteredLevel"] = 30,
-				}, -- [148]
+				}, -- [150]
 				{
 					["GUID"] = "Creature-0-5563-189-177-4543-0000487475",
 					["leftMoney"] = 2972142,
@@ -12359,7 +12483,7 @@ NITdatabase = {
 					["enteredMoney"] = 2956910,
 					["mobCount"] = 49,
 					["enteredLevel"] = 29,
-				}, -- [149]
+				}, -- [151]
 				{
 					["GUID"] = "Creature-0-4459-668-9529-30824-000047223B",
 					["leftMoney"] = 195766459,
@@ -12418,7 +12542,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39378,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [150]
+				}, -- [152]
 				{
 					["GUID"] = "Creature-0-4460-585-20909-24664-00004715ED",
 					["leftMoney"] = 194660806,
@@ -12448,7 +12572,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-585-20909-55007-00004715ED",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [151]
+				}, -- [153]
 				{
 					["GUID"] = "Creature-0-4445-34-25834-46251-0000470951",
 					["leftMoney"] = 23255,
@@ -12505,7 +12629,7 @@ NITdatabase = {
 					["enteredMoney"] = 19165,
 					["mobCount"] = 40,
 					["enteredLevel"] = 26,
-				}, -- [152]
+				}, -- [154]
 				{
 					["GUID"] = "Creature-0-4445-33-19529-47138-0000463606",
 					["leftMoney"] = 10650,
@@ -12561,7 +12685,7 @@ NITdatabase = {
 					["enteredMoney"] = 4545,
 					["mobCount"] = 34,
 					["enteredLevel"] = 26,
-				}, -- [153]
+				}, -- [155]
 				{
 					["GUID"] = "Creature-0-4458-34-19323-46251-000045FEB2",
 					["leftMoney"] = 4545,
@@ -12617,7 +12741,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 830,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 26,
-				}, -- [154]
+				}, -- [156]
 				{
 					["GUID"] = "Creature-0-5563-33-13156-47132-0003C5F4A2",
 					["leftMoney"] = 60755,
@@ -12628,10 +12752,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Shadow Stalkers",
 						},
-						["Miqa"] = {
-							["level"] = 26,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
+						["Qedqeda-Gehennas"] = {
+							["level"] = 24,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Introspection",
 						},
 						["Stormwolf"] = {
 							["level"] = 21,
@@ -12645,17 +12770,16 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Shadow Stalkers",
 						},
+						["Miqa"] = {
+							["level"] = 26,
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+						},
 						["Alriem-Gehennas"] = {
 							["level"] = 18,
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "HAVOC EX YU",
-						},
-						["Qedqeda-Gehennas"] = {
-							["level"] = 24,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Introspection",
 						},
 						["Berant-Gehennas"] = {
 							["level"] = 27,
@@ -12687,7 +12811,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2369,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 25,
-				}, -- [155]
+				}, -- [157]
 				{
 					["GUID"] = "Creature-0-4457-43-15574-3678-000045DAE4",
 					["leftMoney"] = 31693,
@@ -12740,7 +12864,7 @@ NITdatabase = {
 					["enteredMoney"] = 14349,
 					["mobCount"] = 120,
 					["enteredLevel"] = 23,
-				}, -- [156]
+				}, -- [158]
 				{
 					["GUID"] = "Creature-0-5563-34-11521-46254-000045C19E",
 					["leftMoney"] = 9954,
@@ -12796,7 +12920,7 @@ NITdatabase = {
 					["enteredMoney"] = 5373,
 					["mobCount"] = 51,
 					["enteredLevel"] = 23,
-				}, -- [157]
+				}, -- [159]
 				{
 					["leftMoney"] = 5333504,
 					["group"] = {
@@ -12850,7 +12974,7 @@ NITdatabase = {
 					["enteredMoney"] = 5333504,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [158]
+				}, -- [160]
 				{
 					["leftMoney"] = 5333504,
 					["group"] = {
@@ -12874,7 +12998,7 @@ NITdatabase = {
 					["enteredMoney"] = 5333504,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [159]
+				}, -- [161]
 				{
 					["GUID"] = "Creature-0-4460-409-6702-12056-00004500B7",
 					["leftMoney"] = 5327804,
@@ -12902,7 +13026,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [160]
+				}, -- [162]
 				{
 					["GUID"] = "Creature-0-4459-230-13220-8911-0009C4FF37",
 					["leftMoney"] = 5327804,
@@ -12936,7 +13060,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [161]
+				}, -- [163]
 				{
 					["GUID"] = "Creature-0-5563-564-6600-22873-000044FCB1",
 					["leftMoney"] = 5327804,
@@ -12963,7 +13087,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [162]
+				}, -- [164]
 				{
 					["GUID"] = "Creature-0-4460-33-5713-47293-000044F1D8",
 					["leftMoney"] = 1938975,
@@ -13027,7 +13151,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 2748,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 25,
-				}, -- [163]
+				}, -- [165]
 				{
 					["GUID"] = "Creature-0-4448-34-6357-46249-000344EC65",
 					["leftMoney"] = 1922727,
@@ -13103,16 +13227,16 @@ NITdatabase = {
 					["rawMoneyCount"] = 2282,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 24,
-				}, -- [164]
+				}, -- [166]
 				{
 					["GUID"] = "Creature-0-4459-48-3469-44375-00004491BB",
 					["leftMoney"] = 1903967,
 					["group"] = {
-						["Lancisity-Gehennas"] = {
-							["class"] = "Warrior",
+						["Akacho-Venoxis"] = {
+							["class"] = "Priest",
 							["level"] = 25,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Disqualified",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "unanklickbar",
 						},
 						["Lorradir-Venoxis"] = {
 							["class"] = "Hunter",
@@ -13120,17 +13244,17 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "unanklickbar",
 						},
-						["Akacho-Venoxis"] = {
-							["class"] = "Priest",
-							["level"] = 25,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "unanklickbar",
-						},
 						["Handrmandr"] = {
 							["class"] = "Paladin",
 							["level"] = 24,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
+						},
+						["Lancisity-Gehennas"] = {
+							["class"] = "Warrior",
+							["level"] = 25,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Disqualified",
 						},
 						["Mudádin-MirageRaceway"] = {
 							["class"] = "Shaman",
@@ -13165,7 +13289,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-48-3469-44375-00004491BB",
 					["mobCount"] = 122,
 					["enteredLevel"] = 24,
-				}, -- [165]
+				}, -- [167]
 				{
 					["GUID"] = "Creature-0-4480-33-1636-47143-0000C48C4D",
 					["leftMoney"] = 1853180,
@@ -13225,7 +13349,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4480-33-1636-47131-0001C48C4D",
 					["mobCount"] = 99,
 					["enteredLevel"] = 21,
-				}, -- [166]
+				}, -- [168]
 				{
 					["GUID"] = "Creature-0-4460-43-1924-5762-0000C48991",
 					["leftMoney"] = 3028962,
@@ -13280,7 +13404,7 @@ NITdatabase = {
 					["enteredMoney"] = 3025013,
 					["mobCount"] = 96,
 					["enteredLevel"] = 20,
-				}, -- [167]
+				}, -- [169]
 				{
 					["GUID"] = "Creature-0-4459-43-12954-5768-0000432991",
 					["leftMoney"] = 3019695,
@@ -13297,15 +13421,15 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Steakhouse Donnerfels",
 						},
+						["Breana"] = {
+							["level"] = 23,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
+						},
 						["Leblondi-Venoxis"] = {
 							["level"] = 18,
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
-						},
-						["Rectha-Venoxis"] = {
-							["level"] = 21,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
 						},
 						["Handrmandr"] = {
 							["class"] = "Paladin",
@@ -13313,10 +13437,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Breana"] = {
-							["level"] = 23,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+						["Rectha-Venoxis"] = {
+							["level"] = 21,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 					},
 					["class"] = "Paladin",
@@ -13342,7 +13466,7 @@ NITdatabase = {
 					["enteredMoney"] = 3005775,
 					["mobCount"] = 96,
 					["enteredLevel"] = 17,
-				}, -- [168]
+				}, -- [170]
 				{
 					["GUID"] = "Creature-0-5571-600-16154-26639-0001420C1E",
 					["leftMoney"] = 13019475,
@@ -13408,7 +13532,7 @@ NITdatabase = {
 					["enteredTime"] = 1715604526,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [169]
+				}, -- [171]
 				{
 					["GUID"] = "Creature-0-4445-574-13574-23954-0000408F6A",
 					["leftMoney"] = 9495204,
@@ -13467,7 +13591,7 @@ NITdatabase = {
 					["enteredMoney"] = 8971023,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [170]
+				}, -- [172]
 				{
 					["GUID"] = "Creature-0-4458-608-27166-31010-000075D8E2",
 					["leftMoney"] = 12158484,
@@ -13524,7 +13648,7 @@ NITdatabase = {
 					["enteredTime"] = 1710610639,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 80,
-				}, -- [171]
+				}, -- [173]
 				{
 					["GUID"] = "Creature-0-4479-632-2641-36564-000070536A",
 					["leftMoney"] = 207623254,
@@ -13583,7 +13707,7 @@ NITdatabase = {
 					["enteredMoney"] = 207617875,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [172]
+				}, -- [174]
 				{
 					["GUID"] = "Creature-0-4445-632-2928-38161-00007052E2",
 					["leftMoney"] = 33415275,
@@ -13640,7 +13764,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 19891,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [173]
+				}, -- [175]
 				{
 					["GUID"] = "Creature-0-4457-599-25055-28070-00006F83C4",
 					["leftMoney"] = 13729543,
@@ -13701,7 +13825,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-599-25055-211299-00006F7D2D",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [174]
+				}, -- [176]
 				{
 					["GUID"] = "Creature-0-4460-602-8215-28923-00006F715B",
 					["leftMoney"] = 12834419,
@@ -13760,7 +13884,7 @@ NITdatabase = {
 					["enteredMoney"] = 12614450,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [175]
+				}, -- [177]
 				{
 					["GUID"] = "Creature-0-4459-658-4245-37578-00006F7657",
 					["leftMoney"] = 12614450,
@@ -13817,7 +13941,7 @@ NITdatabase = {
 					["enteredMoney"] = 12374603,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [176]
+				}, -- [178]
 				{
 					["GUID"] = "Creature-0-5563-604-10568-29836-00006F5E05",
 					["leftMoney"] = 12462439,
@@ -13884,7 +14008,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-604-10568-211299-0000EF6004",
 					["GUIDSource"] = "nameplate1",
 					["mergeSource"] = "mouseover",
-				}, -- [177]
+				}, -- [179]
 				{
 					["GUID"] = "Creature-0-5563-574-9923-211299-00006F5181",
 					["leftMoney"] = 13011819,
@@ -13942,7 +14066,7 @@ NITdatabase = {
 					["enteredTime"] = 1701794168,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [178]
+				}, -- [180]
 				{
 					["GUID"] = "Creature-0-4460-575-6671-26861-00006F4582",
 					["leftMoney"] = 12753175,
@@ -14008,7 +14132,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-575-6671-30871-00006F4582",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [179]
+				}, -- [181]
 				{
 					["GUID"] = "Creature-0-4447-595-9806-26499-00006F470F",
 					["leftMoney"] = 12372732,
@@ -14066,7 +14190,7 @@ NITdatabase = {
 					["enteredTime"] = 1701790644,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [180]
+				}, -- [182]
 				{
 					["GUID"] = "Creature-0-4469-632-7648-36502-00006EE696",
 					["leftMoney"] = 10353767,
@@ -14123,7 +14247,7 @@ NITdatabase = {
 					["enteredMoney"] = 10332765,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [181]
+				}, -- [183]
 				{
 					["GUID"] = "Creature-0-4447-632-6458-37584-00036EE639",
 					["leftMoney"] = 11185284,
@@ -14182,7 +14306,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29020,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [182]
+				}, -- [184]
 				{
 					["GUID"] = "Creature-0-4447-632-6405-36502-00006EE29A",
 					["leftMoney"] = 206644675,
@@ -14241,7 +14365,7 @@ NITdatabase = {
 					["enteredMoney"] = 206622175,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [183]
+				}, -- [185]
 				{
 					["GUID"] = "Creature-0-4458-632-9891-37584-00046EE262",
 					["leftMoney"] = 38900958,
@@ -14299,7 +14423,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31424,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [184]
+				}, -- [186]
 				{
 					["GUID"] = "Creature-0-4447-578-886-27656-00006E43E0",
 					["leftMoney"] = 10628873,
@@ -14377,7 +14501,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4447-578-886-28276-00016E4329",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [185]
+				}, -- [187]
 				{
 					["GUID"] = "Creature-0-4468-632-2544-37584-0003EDB6B2",
 					["leftMoney"] = 9138650,
@@ -14439,7 +14563,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 24258,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [186]
+				}, -- [188]
 				{
 					["GUID"] = "Creature-0-4468-632-2447-36502-00006DB27B",
 					["leftMoney"] = 10183064,
@@ -14496,7 +14620,7 @@ NITdatabase = {
 					["enteredMoney"] = 10162834,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [187]
+				}, -- [189]
 				{
 					["GUID"] = "Creature-0-4468-632-2363-37588-00026DB246",
 					["leftMoney"] = 205648975,
@@ -14555,7 +14679,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23829,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [188]
+				}, -- [190]
 				{
 					["GUID"] = "Creature-0-4458-632-12229-37584-0000EDB034",
 					["leftMoney"] = 37896334,
@@ -14612,7 +14736,7 @@ NITdatabase = {
 					["enteredMoney"] = 37867833,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [189]
+				}, -- [191]
 				{
 					["GUID"] = "Creature-0-4448-658-23159-36877-0000EC98CC",
 					["leftMoney"] = 8186486,
@@ -14672,7 +14796,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-658-23159-2110-00006C93FA",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [190]
+				}, -- [192]
 				{
 					["GUID"] = "Creature-0-4479-632-3173-37584-00026C9267",
 					["leftMoney"] = 6543110,
@@ -14730,7 +14854,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23613,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [191]
+				}, -- [193]
 				{
 					["GUID"] = "Creature-0-4459-632-30091-15438-00006C902A",
 					["leftMoney"] = 9189634,
@@ -14789,7 +14913,7 @@ NITdatabase = {
 					["enteredMoney"] = 9171904,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [192]
+				}, -- [194]
 				{
 					["GUID"] = "Creature-0-4479-632-3019-24207-00006C8E1B",
 					["leftMoney"] = 204651946,
@@ -14846,7 +14970,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25115,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [193]
+				}, -- [195]
 				{
 					["GUID"] = "Creature-0-5563-632-24943-36502-00006C89E1",
 					["leftMoney"] = 36894633,
@@ -14903,7 +15027,7 @@ NITdatabase = {
 					["enteredMoney"] = 36873550,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [194]
+				}, -- [196]
 				{
 					["GUID"] = "Creature-0-4469-668-7846-30824-00006BA2BB",
 					["leftMoney"] = 6519497,
@@ -14959,7 +15083,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33855,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [195]
+				}, -- [197]
 				{
 					["GUID"] = "Creature-0-4458-658-3149-36877-00006B9D47",
 					["leftMoney"] = 5873042,
@@ -15016,7 +15140,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33502,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [196]
+				}, -- [198]
 				{
 					["GUID"] = "Creature-0-4457-632-14706-37588-0002EB8501",
 					["leftMoney"] = 4780340,
@@ -15073,7 +15197,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [197]
+				}, -- [199]
 				{
 					["GUID"] = "Creature-0-4445-632-16008-37596-00006B8212",
 					["leftMoney"] = 4194359,
@@ -15100,7 +15224,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [198]
+				}, -- [200]
 				{
 					["leftMoney"] = 4194359,
 					["group"] = {
@@ -15124,7 +15248,7 @@ NITdatabase = {
 					["enteredMoney"] = 4194359,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [199]
+				}, -- [201]
 				{
 					["GUID"] = "Creature-0-5571-575-23987-15447-00006B6C6B",
 					["leftMoney"] = 4194359,
@@ -15186,7 +15310,7 @@ NITdatabase = {
 					["subDifficulty"] = "gamma",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [200]
+				}, -- [202]
 				{
 					["GUID"] = "Creature-0-4469-608-5131-29316-00006B664A",
 					["leftMoney"] = 4266663,
@@ -15263,7 +15387,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4469-608-5131-30667-00006B6509",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [201]
+				}, -- [203]
 				{
 					["GUID"] = "Creature-0-4457-578-10581-28276-0001EB603F",
 					["leftMoney"] = 4822690,
@@ -15319,7 +15443,7 @@ NITdatabase = {
 					["enteredTime"] = 1701534696,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [202]
+				}, -- [204]
 				{
 					["GUID"] = "Creature-0-4458-389-28691-11322-00016B521F",
 					["leftMoney"] = 95416,
@@ -15374,7 +15498,7 @@ NITdatabase = {
 					["enteredMoney"] = 93122,
 					["mobCount"] = 80,
 					["enteredLevel"] = 16,
-				}, -- [203]
+				}, -- [205]
 				{
 					["leftMoney"] = 4142341,
 					["group"] = {
@@ -15398,7 +15522,7 @@ NITdatabase = {
 					["enteredMoney"] = 4142341,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [204]
+				}, -- [206]
 				{
 					["GUID"] = "Creature-0-4468-575-9225-26550-00016B4086",
 					["leftMoney"] = 4142341,
@@ -15458,7 +15582,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4468-575-9225-211299-00006B4090",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [205]
+				}, -- [207]
 				{
 					["GUID"] = "Creature-0-4459-632-1275-38161-00006B4016",
 					["leftMoney"] = 3162940,
@@ -15514,7 +15638,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 27910,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [206]
+				}, -- [208]
 				{
 					["GUID"] = "Creature-0-4480-632-13373-36478-0000E85288",
 					["leftMoney"] = 8271991,
@@ -15573,7 +15697,7 @@ NITdatabase = {
 					["enteredMoney"] = 8257547,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [207]
+				}, -- [209]
 				{
 					["GUID"] = "Creature-0-5563-632-18830-36502-0000684FD9",
 					["leftMoney"] = 205807088,
@@ -15631,7 +15755,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 20249,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [208]
+				}, -- [210]
 				{
 					["GUID"] = "Creature-0-4469-632-17102-37584-0002E84C8D",
 					["leftMoney"] = 87406852,
@@ -15690,7 +15814,7 @@ NITdatabase = {
 					["enteredMoney"] = 87390143,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [209]
+				}, -- [211]
 				{
 					["GUID"] = "Creature-0-4459-575-9160-26553-0000672055",
 					["leftMoney"] = 9382548,
@@ -15750,7 +15874,7 @@ NITdatabase = {
 					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [210]
+				}, -- [212]
 				{
 					["GUID"] = "Creature-0-4445-576-3683-26723-0000671A1A",
 					["leftMoney"] = 8572673,
@@ -15814,7 +15938,7 @@ NITdatabase = {
 					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [211]
+				}, -- [213]
 				{
 					["GUID"] = "Creature-0-4480-604-2417-13321-0006E715B0",
 					["leftMoney"] = 8369877,
@@ -15880,7 +16004,7 @@ NITdatabase = {
 					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [212]
+				}, -- [214]
 				{
 					["GUID"] = "Creature-0-5563-602-2276-28920-000066FE9A",
 					["leftMoney"] = 8173251,
@@ -15948,7 +16072,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-602-2276-28578-0002E6FE9A",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "target",
-				}, -- [213]
+				}, -- [215]
 				{
 					["GUID"] = "Creature-0-4459-632-5744-37587-0000E6FFBA",
 					["leftMoney"] = 6556360,
@@ -16012,7 +16136,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25724,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [214]
+				}, -- [216]
 				{
 					["GUID"] = "Creature-0-4468-632-1961-36502-000066FB52",
 					["leftMoney"] = 204842993,
@@ -16069,7 +16193,7 @@ NITdatabase = {
 					["enteredMoney"] = 204828912,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [215]
+				}, -- [217]
 				{
 					["GUID"] = "Creature-0-4479-632-1571-36502-000066F878",
 					["leftMoney"] = 85085428,
@@ -16128,7 +16252,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 9005,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [216]
+				}, -- [218]
 				{
 					["GUID"] = "Creature-0-4460-600-12552-26632-00006611A5",
 					["leftMoney"] = 6274731,
@@ -16187,7 +16311,7 @@ NITdatabase = {
 					["enteredMoney"] = 6011525,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [217]
+				}, -- [219]
 				{
 					["GUID"] = "Creature-0-4459-619-27336-29311-0000660214",
 					["leftMoney"] = 6011525,
@@ -16255,7 +16379,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-619-27336-211299-0000660F67",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [218]
+				}, -- [220]
 				{
 					["GUID"] = "Creature-0-4447-578-10394-27656-000065AD24",
 					["leftMoney"] = 4528038,
@@ -16314,7 +16438,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4447-578-10394-27656-000065AD24",
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [219]
+				}, -- [221]
 				{
 					["GUID"] = "Creature-0-4468-632-13257-37584-0001E5A5D0",
 					["leftMoney"] = 203751543,
@@ -16372,7 +16496,7 @@ NITdatabase = {
 					["enteredMoney"] = 203724187,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [220]
+				}, -- [222]
 				{
 					["GUID"] = "Creature-0-4457-632-27197-36502-000065A161",
 					["leftMoney"] = 84097464,
@@ -16430,7 +16554,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 6235,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [221]
+				}, -- [223]
 				{
 					["GUID"] = "Creature-0-5563-599-28531-28070-000064ECB2",
 					["leftMoney"] = 1447271,
@@ -16495,7 +16619,7 @@ NITdatabase = {
 					["leftXP"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [222]
+				}, -- [224]
 				{
 					["GUID"] = "Creature-0-5563-632-28304-37587-0000E4E54D",
 					["leftMoney"] = 936068,
@@ -16552,7 +16676,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 24017,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [223]
+				}, -- [225]
 				{
 					["GUID"] = "Creature-0-4480-658-11179-36658-000064E05D",
 					["leftMoney"] = 912051,
@@ -16610,7 +16734,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 23443,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [224]
+				}, -- [226]
 				{
 					["GUID"] = "Creature-0-4460-619-2521-29311-000064D574",
 					["leftMoney"] = 888608,
@@ -16670,7 +16794,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4460-619-2521-31104-000064D574",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [225]
+				}, -- [227]
 				{
 					["GUID"] = "Creature-0-5563-668-26881-30824-000064D3E9",
 					["leftMoney"] = 638052,
@@ -16729,7 +16853,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 43334,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [226]
+				}, -- [228]
 				{
 					["GUID"] = "Creature-0-5571-632-2146-36502-000064CD95",
 					["leftMoney"] = 383855,
@@ -16787,7 +16911,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 34760,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [227]
+				}, -- [229]
 				{
 					["GUID"] = "Creature-0-4445-632-13554-36502-0000649230",
 					["leftMoney"] = 4013385,
@@ -16846,7 +16970,7 @@ NITdatabase = {
 					["enteredMoney"] = 3987110,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [228]
+				}, -- [230]
 				{
 					["GUID"] = "Creature-0-4468-632-30787-37584-0003648DA1",
 					["leftMoney"] = 2586078,
@@ -16903,7 +17027,7 @@ NITdatabase = {
 					["enteredMoney"] = 2559352,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [229]
+				}, -- [231]
 				{
 					["GUID"] = "Creature-0-4446-668-25863-37554-000064887D",
 					["leftMoney"] = 2348225,
@@ -16962,7 +17086,7 @@ NITdatabase = {
 					["enteredMoney"] = 1713774,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [230]
+				}, -- [232]
 				{
 					["GUID"] = "Creature-0-4469-632-11234-37094-00006483E3",
 					["leftMoney"] = 1713774,
@@ -17017,7 +17141,7 @@ NITdatabase = {
 					["enteredMoney"] = 1687380,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [231]
+				}, -- [233]
 				{
 					["GUID"] = "Creature-0-4457-632-27077-37584-0004646701",
 					["leftMoney"] = 242532695,
@@ -17076,7 +17200,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 17616,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [232]
+				}, -- [234]
 				{
 					["GUID"] = "Creature-0-4458-632-21922-37584-000064643A",
 					["leftMoney"] = 85470423,
@@ -17135,7 +17259,7 @@ NITdatabase = {
 					["enteredMoney"] = 85454846,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [233]
+				}, -- [235]
 				{
 					["leftMoney"] = 5588001,
 					["group"] = {
@@ -17189,7 +17313,7 @@ NITdatabase = {
 					["enteredMoney"] = 5588001,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [234]
+				}, -- [236]
 				{
 					["GUID"] = "Creature-0-4448-668-11954-36954-00006396FB",
 					["leftMoney"] = 5588001,
@@ -17247,7 +17371,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 40470,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 80,
-				}, -- [235]
+				}, -- [237]
 				{
 					["GUID"] = "Creature-0-4447-658-16613-37578-00006391B5",
 					["leftMoney"] = 4923996,
@@ -17306,7 +17430,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 29937,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [236]
+				}, -- [238]
 				{
 					["GUID"] = "Creature-0-4469-632-2120-36502-0000638B33",
 					["leftMoney"] = 3698716,
@@ -17364,7 +17488,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 34764,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [237]
+				}, -- [239]
 				{
 					["GUID"] = "Creature-0-4459-632-21776-36502-000063884A",
 					["leftMoney"] = 3663952,
@@ -17420,7 +17544,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25455,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [238]
+				}, -- [240]
 				{
 					["GUID"] = "Creature-0-4458-658-28375-36877-00006386DF",
 					["leftMoney"] = 4420497,
@@ -17431,10 +17555,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "OG Bürgergeldstelle",
 						},
-						["Dibbsz-Mograine"] = {
+						["Knuttz-MirageRaceway"] = {
 							["level"] = 80,
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
+							["guildName"] = "Nomads",
 						},
 						["Vermina"] = {
 							["level"] = 80,
@@ -17442,22 +17567,21 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "CUBE",
 						},
-						["Laydee"] = {
+						["Dibbsz-Mograine"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "New Beginning",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Darthknives-Mandokir"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Knuttz-MirageRaceway"] = {
+						["Laydee"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Nomads",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "New Beginning",
 						},
 					},
 					["class"] = "Paladin",
@@ -17483,7 +17607,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 46520,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [239]
+				}, -- [241]
 				{
 					["GUID"] = "Creature-0-4459-658-19827-37577-00036381ED",
 					["leftMoney"] = 4321977,
@@ -17548,7 +17672,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-658-19827-37578-0000E37F6C",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [240]
+				}, -- [242]
 				{
 					["GUID"] = "Creature-0-4457-632-3810-37583-0000637AD0",
 					["leftMoney"] = 4273877,
@@ -17606,7 +17730,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31591,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [241]
+				}, -- [243]
 				{
 					["GUID"] = "Creature-0-4458-632-25952-36497-00006375F8",
 					["leftMoney"] = 3631661,
@@ -17664,7 +17788,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 26247,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [242]
+				}, -- [244]
 				{
 					["GUID"] = "Creature-0-4468-604-15889-29836-0001636950",
 					["leftMoney"] = 12754098,
@@ -17720,7 +17844,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 28861,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [243]
+				}, -- [245]
 				{
 					["GUID"] = "Creature-0-4457-574-695-23954-0000636545",
 					["leftMoney"] = 12375808,
@@ -17778,7 +17902,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 32733,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [244]
+				}, -- [246]
 				{
 					["GUID"] = "Creature-0-4460-619-21638-29311-000063618A",
 					["leftMoney"] = 11840022,
@@ -17835,7 +17959,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 36466,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [245]
+				}, -- [247]
 				{
 					["GUID"] = "Creature-0-5563-602-8323-28923-0000635C67",
 					["leftMoney"] = 11655556,
@@ -17894,7 +18018,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 73681,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [246]
+				}, -- [248]
 				{
 					["GUID"] = "Creature-0-4457-601-31555-29120-0000635A5F",
 					["leftMoney"] = 11433875,
@@ -17958,7 +18082,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 7830,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [247]
+				}, -- [249]
 				{
 					["GUID"] = "Creature-0-4459-619-13205-30278-0001E35294",
 					["leftMoney"] = 10292458,
@@ -18014,7 +18138,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 4318,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [248]
+				}, -- [250]
 				{
 					["GUID"] = "Creature-0-5563-571-7983-25861-0000634EEC",
 					["leftMoney"] = 10212985,
@@ -18071,7 +18195,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31740,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 79,
-				}, -- [249]
+				}, -- [251]
 				{
 					["GUID"] = "Creature-0-4458-632-19002-36502-0000634B2D",
 					["leftMoney"] = 241508100,
@@ -18129,7 +18253,7 @@ NITdatabase = {
 					["enteredMoney"] = 241478824,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [250]
+				}, -- [252]
 				{
 					["GUID"] = "Creature-0-4446-632-9326-37584-000063454F",
 					["leftMoney"] = 81924079,
@@ -18188,7 +18312,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 22632,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [251]
+				}, -- [253]
 				{
 					["GUID"] = "Creature-0-4457-578-25941-27656-00006209EC",
 					["leftMoney"] = 9392899,
@@ -18259,7 +18383,7 @@ NITdatabase = {
 					["enteredMoney"] = 9206959,
 					["mobCount"] = 96,
 					["enteredLevel"] = 79,
-				}, -- [252]
+				}, -- [254]
 				{
 					["GUID"] = "Creature-0-4460-575-7984-30871-000061FD4A",
 					["leftMoney"] = 9852206,
@@ -18322,7 +18446,7 @@ NITdatabase = {
 					["enteredMoney"] = 9077529,
 					["mobCount"] = 86,
 					["enteredLevel"] = 78,
-				}, -- [253]
+				}, -- [255]
 				{
 					["GUID"] = "Creature-0-4458-601-7201-28734-000061F340",
 					["leftMoney"] = 9077529,
@@ -18378,7 +18502,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [254]
+				}, -- [256]
 				{
 					["GUID"] = "Creature-0-4457-599-22816-27978-000061ED5F",
 					["leftMoney"] = 9077529,
@@ -18436,7 +18560,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39195,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [255]
+				}, -- [257]
 				{
 					["GUID"] = "Creature-0-4457-595-21447-30997-000061ED06",
 					["leftMoney"] = 8890334,
@@ -18494,7 +18618,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4457-595-21447-26527-000061E481",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [256]
+				}, -- [258]
 				{
 					["GUID"] = "Creature-0-4448-632-20965-36502-000061E1C5",
 					["leftMoney"] = 240427358,
@@ -18553,7 +18677,7 @@ NITdatabase = {
 					["enteredMoney"] = 240397132,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [257]
+				}, -- [259]
 				{
 					["GUID"] = "Creature-0-4468-632-25919-36502-000061DE14",
 					["leftMoney"] = 82201784,
@@ -18612,7 +18736,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 17299,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [258]
+				}, -- [260]
 				{
 					["GUID"] = "Creature-0-4469-604-16474-29836-0000DF1BFC",
 					["leftMoney"] = 8621044,
@@ -18668,7 +18792,7 @@ NITdatabase = {
 					["enteredMoney"] = 8447453,
 					["mobCount"] = 69,
 					["enteredLevel"] = 78,
-				}, -- [259]
+				}, -- [261]
 				{
 					["GUID"] = "Creature-0-4457-632-8019-36502-00005F19C2",
 					["leftMoney"] = 239531300,
@@ -18727,7 +18851,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 20704,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [260]
+				}, -- [262]
 				{
 					["GUID"] = "Creature-0-4457-632-7759-36502-00005F16FC",
 					["leftMoney"] = 81236198,
@@ -18785,7 +18909,7 @@ NITdatabase = {
 					["enteredMoney"] = 81215310,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [261]
+				}, -- [263]
 				{
 					["GUID"] = "Creature-0-4458-595-24320-26527-00005E5573",
 					["leftMoney"] = 8186684,
@@ -18841,7 +18965,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [262]
+				}, -- [264]
 				{
 					["GUID"] = "Creature-0-4469-578-8399-27656-00005E4B59",
 					["leftMoney"] = 8766895,
@@ -18900,7 +19024,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 16951,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 78,
-				}, -- [263]
+				}, -- [265]
 				{
 					["GUID"] = "Creature-0-4447-574-9017-510-00005E4759",
 					["leftMoney"] = 8601944,
@@ -18958,7 +19082,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 513,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 78,
-				}, -- [264]
+				}, -- [266]
 				{
 					["GUID"] = "Creature-0-4457-576-19400-26722-0000DE40BF",
 					["leftMoney"] = 8567122,
@@ -19015,7 +19139,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 46491,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [265]
+				}, -- [267]
 				{
 					["GUID"] = "Creature-0-4460-599-1046-27978-00005DBAA5",
 					["leftMoney"] = 7517166,
@@ -19071,7 +19195,7 @@ NITdatabase = {
 					["enteredMoney"] = 7328586,
 					["mobCount"] = 154,
 					["enteredLevel"] = 77,
-				}, -- [266]
+				}, -- [268]
 				{
 					["GUID"] = "Creature-0-4459-632-4519-37584-00035DBA60",
 					["leftMoney"] = 238537396,
@@ -19130,7 +19254,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 33196,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [267]
+				}, -- [269]
 				{
 					["GUID"] = "Creature-0-4459-632-4283-36502-00005DB537",
 					["leftMoney"] = 69967334,
@@ -19188,7 +19312,7 @@ NITdatabase = {
 					["enteredMoney"] = 69941318,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [268]
+				}, -- [270]
 				{
 					["GUID"] = "Creature-0-4468-601-4810-29120-00005CDB8C",
 					["leftMoney"] = 6666052,
@@ -19250,7 +19374,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5157,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [269]
+				}, -- [271]
 				{
 					["GUID"] = "Creature-0-4479-604-4185-29836-00005CD614",
 					["leftMoney"] = 6512895,
@@ -19307,7 +19431,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 16434,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 77,
-				}, -- [270]
+				}, -- [272]
 				{
 					["GUID"] = "Creature-0-4480-632-640-36502-00005C7EE9",
 					["leftMoney"] = 237531000,
@@ -19366,7 +19490,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 27469,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [271]
+				}, -- [273]
 				{
 					["GUID"] = "Creature-0-4458-632-20934-36502-00005C7C73",
 					["leftMoney"] = 68968118,
@@ -19425,7 +19549,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 12782,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [272]
+				}, -- [274]
 				{
 					["GUID"] = "Creature-0-4479-576-5577-26723-00005A31CA",
 					["leftMoney"] = 6707187,
@@ -19483,7 +19607,7 @@ NITdatabase = {
 					["enteredMoney"] = 6519863,
 					["mobCount"] = 106,
 					["enteredLevel"] = 76,
-				}, -- [273]
+				}, -- [275]
 				{
 					["GUID"] = "Creature-0-4480-600-5980-26632-00005A2E05",
 					["leftMoney"] = 6519863,
@@ -19565,7 +19689,7 @@ NITdatabase = {
 					["enteredMoney"] = 6340133,
 					["mobCount"] = 108,
 					["enteredLevel"] = 76,
-				}, -- [274]
+				}, -- [276]
 				{
 					["GUID"] = "Creature-0-4479-619-5087-29311-00005A2A45",
 					["leftMoney"] = 5971608,
@@ -19622,7 +19746,7 @@ NITdatabase = {
 					["enteredMoney"] = 5791688,
 					["mobCount"] = 122,
 					["enteredLevel"] = 76,
-				}, -- [275]
+				}, -- [277]
 				{
 					["GUID"] = "Creature-0-4460-599-10387-28070-00005A2942",
 					["leftMoney"] = 5418901,
@@ -19677,7 +19801,7 @@ NITdatabase = {
 					["enteredMoney"] = 4936703,
 					["mobCount"] = 148,
 					["enteredLevel"] = 76,
-				}, -- [276]
+				}, -- [278]
 				{
 					["GUID"] = "Creature-0-4459-601-14656-29120-00005A1D6B",
 					["leftMoney"] = 4936703,
@@ -19734,7 +19858,7 @@ NITdatabase = {
 					["enteredMoney"] = 4780140,
 					["mobCount"] = 41,
 					["enteredLevel"] = 76,
-				}, -- [277]
+				}, -- [279]
 				{
 					["GUID"] = "Creature-0-5571-604-17267-29836-000059E96D",
 					["leftMoney"] = 4180567,
@@ -19790,7 +19914,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 37581,
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 76,
-				}, -- [278]
+				}, -- [280]
 				{
 					["GUID"] = "Creature-0-4469-608-4375-29314-000059E440",
 					["leftMoney"] = 3994986,
@@ -19845,7 +19969,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 48408,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 76,
-				}, -- [279]
+				}, -- [281]
 				{
 					["GUID"] = "Creature-0-4457-576-3301-26723-000059D7ED",
 					["leftMoney"] = 3798578,
@@ -19901,7 +20025,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 1106,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 76,
-				}, -- [280]
+				}, -- [282]
 				{
 					["GUID"] = "Creature-0-5563-632-11886-37584-0001D9E317",
 					["leftMoney"] = 236305664,
@@ -19960,7 +20084,7 @@ NITdatabase = {
 					["enteredMoney"] = 236279575,
 					["mobCount"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [281]
+				}, -- [283]
 				{
 					["GUID"] = "Creature-0-4457-632-4444-36502-000059DD60",
 					["leftMoney"] = 67182876,
@@ -20019,7 +20143,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 30161,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 80,
-				}, -- [282]
+				}, -- [284]
 				{
 					["GUID"] = "Creature-0-4459-619-23636-29311-0000592811",
 					["leftMoney"] = 3901049,
@@ -20073,7 +20197,7 @@ NITdatabase = {
 					["enteredMoney"] = 3713178,
 					["mobCount"] = 123,
 					["enteredLevel"] = 75,
-				}, -- [283]
+				}, -- [285]
 				{
 					["GUID"] = "Creature-0-4480-601-25724-29120-00005921EA",
 					["leftMoney"] = 13084952,
@@ -20130,7 +20254,7 @@ NITdatabase = {
 					["enteredMoney"] = 12934194,
 					["mobCount"] = 42,
 					["enteredLevel"] = 75,
-				}, -- [284]
+				}, -- [286]
 				{
 					["GUID"] = "Creature-0-4448-574-22374-23954-0000592101",
 					["leftMoney"] = 12934194,
@@ -20187,7 +20311,7 @@ NITdatabase = {
 					["enteredMoney"] = 12785711,
 					["mobCount"] = 2,
 					["enteredLevel"] = 75,
-				}, -- [285]
+				}, -- [287]
 				{
 					["GUID"] = "Creature-0-4457-576-9898-26723-00005912AE",
 					["leftMoney"] = 12487986,
@@ -20242,7 +20366,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25966,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [286]
+				}, -- [288]
 				{
 					["GUID"] = "Creature-0-4447-619-3141-29311-0000590F8E",
 					["leftMoney"] = 12314020,
@@ -20300,7 +20424,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 45679,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [287]
+				}, -- [289]
 				{
 					["GUID"] = "Creature-0-4446-608-9080-31134-0000590F22",
 					["leftMoney"] = 12120341,
@@ -20358,7 +20482,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39075,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [288]
+				}, -- [290]
 				{
 					["GUID"] = "Creature-0-4458-601-7878-29120-0000590895",
 					["leftMoney"] = 11933266,
@@ -20415,7 +20539,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 8713,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [289]
+				}, -- [291]
 				{
 					["GUID"] = "Creature-0-4480-600-23843-26632-0000590381",
 					["leftMoney"] = 11776553,
@@ -20472,7 +20596,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31861,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [290]
+				}, -- [292]
 				{
 					["GUID"] = "Creature-0-4457-574-30384-23954-000058D113",
 					["leftMoney"] = 10921692,
@@ -20529,7 +20653,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39631,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 75,
-				}, -- [291]
+				}, -- [293]
 				{
 					["GUID"] = "Creature-0-5563-619-28278-29311-000058CAC9",
 					["leftMoney"] = 11013061,
@@ -20585,7 +20709,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 31539,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [292]
+				}, -- [294]
 				{
 					["GUID"] = "Creature-0-5563-576-27805-26723-000058C3F3",
 					["leftMoney"] = 10390869,
@@ -20641,7 +20765,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 30376,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [293]
+				}, -- [295]
 				{
 					["GUID"] = "Creature-0-4468-601-18826-29120-000058C1A5",
 					["leftMoney"] = 10212493,
@@ -20705,7 +20829,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5958,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [294]
+				}, -- [296]
 				{
 					["GUID"] = "Creature-0-4457-608-25576-31134-000058BAA0",
 					["leftMoney"] = 9621726,
@@ -20761,7 +20885,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 39101,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [295]
+				}, -- [297]
 				{
 					["GUID"] = "Creature-0-4459-619-5700-30329-000058AA12",
 					["leftMoney"] = 9944625,
@@ -20817,7 +20941,7 @@ NITdatabase = {
 					["enteredMoney"] = 9915785,
 					["mobCount"] = 76,
 					["enteredLevel"] = 73,
-				}, -- [296]
+				}, -- [298]
 				{
 					["GUID"] = "Creature-0-4457-600-22246-26632-000058A3F0",
 					["leftMoney"] = 10429686,
@@ -20873,7 +20997,7 @@ NITdatabase = {
 					["enteredMoney"] = 10249521,
 					["mobCount"] = 103,
 					["enteredLevel"] = 73,
-				}, -- [297]
+				}, -- [299]
 				{
 					["GUID"] = "Creature-0-4460-576-21256-26723-0000589EF0",
 					["leftMoney"] = 10249521,
@@ -20953,119 +21077,6 @@ NITdatabase = {
 					["instanceName"] = "The Nexus",
 					["enteredMoney"] = 10055046,
 					["mobCount"] = 106,
-					["enteredLevel"] = 73,
-				}, -- [298]
-				{
-					["GUID"] = "Creature-0-4457-553-21072-17993-0008D89DF8",
-					["leftMoney"] = 10055046,
-					["group"] = {
-						["Timree-Razorfen"] = {
-							["level"] = 77,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
-						},
-						["Camidruid"] = {
-							["level"] = 75,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-						},
-						["Casí-Razorfen"] = {
-							["level"] = 77,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
-						},
-						["Vermina"] = {
-							["class"] = "Paladin",
-							["level"] = 73,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
-						},
-						["Krutýpindík"] = {
-							["level"] = 76,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
-					},
-					["class"] = "Paladin",
-					["leftTime"] = 1700306690,
-					["groupAverage"] = 75.6,
-					["enteredXP"] = 591579,
-					["xpFromChat"] = 59062,
-					["zoneID"] = 21072,
-					["mobCountFromKill"] = 8,
-					["leftXP"] = 650641,
-					["GUIDSource"] = "mouseover",
-					["playerName"] = "Vermina",
-					["classEnglish"] = "PALADIN",
-					["rep"] = {
-						["The Sha'tar: +"] = -96,
-					},
-					["enteredTime"] = 1700306425,
-					["instanceID"] = 553,
-					["difficultyID"] = 1,
-					["leftLevel"] = 73,
-					["rawMoneyCount"] = 26921,
-					["instanceName"] = "Tempest Keep: The Botanica",
-					["enteredMoney"] = 10028125,
-					["mobCount"] = 8,
-					["enteredLevel"] = 73,
-				}, -- [299]
-				{
-					["GUID"] = "Creature-0-5563-619-24496-30319-00025896E4",
-					["leftMoney"] = 10036649,
-					["group"] = {
-						["Akîraja-Venoxis"] = {
-							["class"] = "Priest",
-							["level"] = 75,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Hygge",
-						},
-						["Lackoftalent-Gehennas"] = {
-							["class"] = "Rogue",
-							["level"] = 72,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Ett Par Kalla",
-						},
-						["Stilettö-PyrewoodVillage"] = {
-							["class"] = "Hunter",
-							["level"] = 73,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Fractured Minority",
-						},
-						["Chigoh-PyrewoodVillage"] = {
-							["class"] = "Hunter",
-							["level"] = 77,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Kalimdor United",
-						},
-						["Vermina"] = {
-							["class"] = "Paladin",
-							["level"] = 73,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
-						},
-					},
-					["class"] = "Paladin",
-					["leftTime"] = 1700305612,
-					["groupAverage"] = 74,
-					["enteredXP"] = 396281,
-					["xpFromChat"] = 195298,
-					["zoneID"] = 24496,
-					["mobCountFromKill"] = 75,
-					["leftXP"] = 591579,
-					["GUIDSource"] = "mouseover",
-					["playerName"] = "Vermina",
-					["classEnglish"] = "PALADIN",
-					["rep"] = {
-					},
-					["enteredTime"] = 1700304810,
-					["instanceID"] = 619,
-					["difficultyID"] = 1,
-					["leftLevel"] = 73,
-					["rawMoneyCount"] = 29346,
-					["instanceName"] = "Ahn'kahet: The Old Kingdom",
-					["enteredMoney"] = 10007303,
-					["mobCount"] = 72,
 					["enteredLevel"] = 73,
 				}, -- [300]
 			},

@@ -117,18 +117,7 @@ function ReforgeLite:GetBuffBonuses ()
     end
   end
   if self.pdb.buffs.strength and not cur_buffs[2] then
-    local playerLevel = UnitLevel("player")
-    if playerLevel == 85 then
-      extra_strength = extra_strength + 549
-    elseif playerLevel == 84 then
-      extra_strength = extra_strength + 505
-    elseif playerLevel == 83 then
-      extra_strength = extra_strength + 465
-    elseif playerLevel >= 81 then
-      extra_strength = extra_strength + 378
-    else
-      extra_strength = extra_strength + 155
-    end
+    extra_strength = extra_strength + 549
   end
   if self.pdb.buffs.flask == 1 and cur_buffs[3] ~= 1 then
     extra_strength = extra_strength + 300
@@ -437,7 +426,7 @@ function ReforgeLite:InitReforgeClassic ()
   for i = 1, #data.method.items do
     local reforge = self.itemData[i].reforge
     if reforge then
-      local src, dst = self.reforgeTable[reforge][1], self.reforgeTable[reforge][2]
+      local src, dst = unpack(self.reforgeTable[reforge])
       local amount = floor (method.items[i].stats[src] * REFORGE_COEFF)
       data.initial[src] = data.initial[src] + amount
       data.initial[dst] = data.initial[dst] - amount

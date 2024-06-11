@@ -1,16 +1,34 @@
-tag 87e8b938af8c1c0b81da69fd8cdb563a657542e7 v1.4.7
+tag 12d054e9380fb44294f0a8f3bea9a1799327328f v1.4.8
 Author:	skyler-code <skylerhiscock@gmail.com>
-Date:	Wed Jun 5 02:48:12 2024 -0500
+Date:	Mon Jun 10 07:40:51 2024 -0500
 
-commit 3f01c3aa51a8a3e656ac49f43d4cd5ac8939e9c6
+commit db5c1bce62e9a896fd401d55469d1b16995ceb15
 Author: skyler-code <skylerhiscock@gmail.com>
-Date:   Wed Jun 5 02:45:53 2024 -0500
+Date:   Sat Jun 8 02:34:26 2024 -0500
 
-    reset wasnt performing way I'd hoped
+    unnecessary
 
-commit bf1efe9b7a761cfd1b60f6f3b4b82272ca70b698
+commit 909263adfbac4e895aae9f75226a9a11d7121c7f
 Author: skyler-code <skylerhiscock@gmail.com>
-Date:   Wed Jun 5 02:18:20 2024 -0500
+Date:   Sat Jun 8 01:47:24 2024 -0500
 
-    properly format Result text
+    missing seal of righteousness check
+
+commit ad8576614bd67e1d3b6f5dc817371f1babaf1bf0
+Author: skyler-code <skylerhiscock@gmail.com>
+Date:   Fri Jun 7 13:28:43 2024 -0500
+
+    added regen and throughput presets for resto
+
+commit 85d427bc260b89ddba1776beb70a5a88e2a172c6
+Author: skyler-code <skylerhiscock@gmail.com>
+Date:   Wed Jun 5 15:47:50 2024 -0500
+
+    campfire spirit is no longer factored in
+
+commit f56b5d09657539aacda429a24bf2c654ca4e2410
+Author: skyler-code <skylerhiscock@gmail.com>
+Date:   Wed Jun 5 13:22:25 2024 -0500
+
+    unpack cleanup
 

@@ -12,18 +12,18 @@ ChocolateBarDB = {
 		["Greenwise - Golemagg"] = "Default",
 		["Mulatz - Genesis"] = "Default",
 		["Battledog - Gehennas"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Battlemoo - Golemagg"] = "Default",
-		["Wells - Jin'do"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
@@ -62,8 +62,8 @@ ChocolateBarDB = {
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Asjrdfsad - Golemagg"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -830,15 +830,13 @@ CB_PlayedTime = {
 	["Nitwit-Dreadnaught"] = {
 		["total"] = 8735,
 	},
-	["Battlearm-Gehennas"] = {
-		["total"] = 305,
-		["timeAtThisLevel"] = 305,
-		["timeStamp"] = 220252.548,
-	},
 	["Battlemoo-Golemagg"] = {
 		["total"] = 17910,
 		["timeStamp"] = 2601363.584,
 		["timeAtThisLevel"] = 1789,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 576,
@@ -853,16 +851,18 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 1,
 		["timeStamp"] = 60973.364,
 	},
+	["Battledog-Gehennas"] = {
+		["total"] = 332,
+		["timeAtThisLevel"] = 332,
+		["timeStamp"] = 214163.326,
+	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
 	},
-	["Pitchwise-Dreadnaught"] = {
-		["total"] = 140587,
-	},
 	["Handrmandr-Golemagg"] = {
-		["total"] = 64943,
-		["timeAtThisLevel"] = 451,
-		["timeStamp"] = 2522722.035,
+		["total"] = 64954,
+		["timeAtThisLevel"] = 462,
+		["timeStamp"] = 2774243.988,
 	},
 	["Poklopac-MirageRaceway"] = {
 		["total"] = 333,
@@ -902,16 +902,16 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
-	["Battledog-Gehennas"] = {
-		["total"] = 332,
-		["timeAtThisLevel"] = 332,
-		["timeStamp"] = 214163.326,
+	["Pitchwise-Dreadnaught"] = {
+		["total"] = 140587,
 	},
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Battlearm-Gehennas"] = {
+		["total"] = 305,
+		["timeAtThisLevel"] = 305,
+		["timeStamp"] = 220252.548,
 	},
 	["Augustin-Golemagg"] = {
 		["total"] = 435533,
@@ -935,13 +935,13 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 1185220,
-		["timeAtThisLevel"] = 2632,
-		["timeStamp"] = 2601685.486,
+		["total"] = 1185303,
+		["timeAtThisLevel"] = 2715,
+		["timeStamp"] = 2775683.883,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 2185810,
-		["timeStamp"] = 2601621.789,
-		["timeAtThisLevel"] = 5635,
+		["total"] = 2186775,
+		["timeStamp"] = 2775667.731,
+		["timeAtThisLevel"] = 6600,
 	},
 }
