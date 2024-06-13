@@ -9,17 +9,29 @@ RatingBusterDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Dopesnare - Lone Wolf"] = "HUNTER",
-		["Dopemend - Lone Wolf"] = "PRIEST",
+		["Dopeclaw - Lone Wolf"] = "DRUID",
 		["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+		["Dopesnare - Lone Wolf"] = "HUNTER",
+		["Dopenac - Lone Wolf"] = "PRIEST",
+		["Dopecoil - Lone Wolf"] = "SHAMAN",
+		["Dopestab - Lone Wolf"] = "ROGUE",
+		["Dopedot - Lone Wolf"] = "WARLOCK",
+		["Dopemend - Lone Wolf"] = "PRIEST",
+		["Doperage - Lone Wolf"] = "WARRIOR",
 		["Dopetrap - Lone Wolf"] = "HUNTER",
 	},
 	["profiles"] = {
 		["HUNTER"] = {
 		},
-		["PRIEST"] = {
+		["WARRIOR"] = {
+		},
+		["WARLOCK"] = {
 		},
 		["SHAMAN"] = {
+		},
+		["ROGUE"] = {
+		},
+		["PRIEST"] = {
 		},
 	},
 }

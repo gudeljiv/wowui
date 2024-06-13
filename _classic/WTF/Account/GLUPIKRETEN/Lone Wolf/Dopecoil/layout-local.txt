@@ -209,6 +209,13 @@ X: 11
 Y: 69
 W: 640
 H: 512
+Frame: ItemRackButton10
+FrameLevel: 1
+Anchor: CENTER
+X: -343
+Y: -89
+W: 36
+H: 36
 Frame: ItemRackButton13
 FrameLevel: 1
 Anchor: CENTER

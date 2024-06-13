@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 4.0.10 (5th June 2024)
+-- 	Leatrix Plus 4.0.11 (12th June 2024)
 ----------------------------------------------------------------------
 
 --	01:Functions  02:Locks    03:Restart  40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "4.0.10"
+	LeaPlusLC["AddonVer"] = "4.0.11"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -1233,6 +1233,18 @@
 
 				},
 
+				-- Sunflower (Singing Sunflower) (sound/event/)
+				["MuteSunflower"] = {
+
+					"event_pvz_babbling.ogg#567354",
+					"event_pvz_dadadoo.ogg#567327",
+					"event_pvz_doobeedoo.ogg#567317",
+					"event_pvz_lalala.ogg#567338",
+					"event_pvz_sunflower.ogg#567374",
+					"event_pvz_zombieonyourlawn.ogg#567295",
+
+				},
+
 				-- Screech (sound/spells/)
 				["MuteScreech"] = {
 
@@ -1371,9 +1383,12 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteNetherdrakes", "Netherdrakes", 150, -192, false, "If checked, netherdrakes will be quieter.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 150, -212, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Pets", 284, -72)
+			LeaPlusLC:MakeTx(SoundPanel, "Hunter", 284, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteScreech", "Screech", 284, -92, false, "If checked, Screech will be muted.|n|nThis is a spell used by some flying pets.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteYawns", "Yawns", 284, -112, false, "If checked, yawns from hunter pet cats will be muted.")
+
+			LeaPlusLC:MakeTx(SoundPanel, "Pets", 284, -152)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 284, -172, false, "If checked, the Singing Sunflower pet will be muted.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Misc", 418, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteAdal", "A'dal", 418, -92, false, "If checked, A'dal in Shattrath City will be muted.")
