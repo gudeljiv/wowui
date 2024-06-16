@@ -1,3 +1,9 @@
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Abyssal Seahorse
@@ -15,12 +21,6 @@ VER 3 0000000000000029 " " "132152"
 /petattack [@mouseover,exists,harm][]
 /petdefensive
 END
-VER 3 000000000000002A " " "132328"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
@@ -31,7 +31,7 @@ VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4606
+/cast item:0
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip

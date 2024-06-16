@@ -1319,7 +1319,7 @@ end
 
 -- Handle figuring out what auras players can cure
 local curableSpells = {
-	["DRUID"] = {[2893] = {"Poison"}, [8946] = {"Poison"}, [2782] = {"Curse"}},
+	["DRUID"] = {[2893] = {"Poison"}, [8946] = {"Poison"}, [2782] = {"Curse", "Poison"}},
 	["PRIEST"] = {[527] = {"Magic"}, [528] = {"Disease"},  [552] = {"Disease"}},
 	-- ["PALADIN"] = {[1152] = {"Poison", "Disease"}, [4987] = {"Poison", "Disease", "Magic"}},
 	["PALADIN"] = {[1152] = {"Poison", "Disease"}, [4987] = {"Poison", "Disease"}},
