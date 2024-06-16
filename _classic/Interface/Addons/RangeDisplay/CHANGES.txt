@@ -1,0 +1,10 @@
+lightweight tag c17c229835d40d6ef21cb58eb90aa3af33636113 v6.1.1
+Author:	Péter Radics <mitchnull@gmail.com>
+Date:	Fri Jun 14 08:02:53 2024 +0200
+
+commit c17c229835d40d6ef21cb58eb90aa3af33636113
+Author: Péter Radics <mitchnull@gmail.com>
+Date:   Fri Jun 14 08:02:53 2024 +0200
+
+    bump
+
