@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "10.2.7",
-	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
@@ -13,23 +9,27 @@ OmniCCDB = {
 		["Kaonac - Jin'do"] = "Default",
 		["Battlemoo - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
-		["Handrmandr - Golemagg"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Battledog - Gehennas"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Asjrdfsad - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Provokator - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
-		["Battledog - Gehennas"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "10.2.7",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -83,9 +83,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -120,9 +120,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -143,23 +143,24 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
 	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["yOff"] = 0,
+			["fontFace"] = "Fonts\\ARIALN.TTF",
 			["effect"] = "pulse",
-			["scaleText"] = true,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -200,7 +201,17 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["fontFace"] = "Fonts\\ARIALN.TTF",
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["minDuration"] = 2,
+			["scaleText"] = true,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -244,29 +255,18 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["mmSSDuration"] = 0,
+			["yOff"] = 0,
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
 			["spiralOpacity"] = 1,
 			["minDuration"] = 3,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
-			["yOff"] = 0,
+			["mmSSDuration"] = 0,
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["fontSize"] = 18,
 		},
 	},
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["engine"] = "AniUpdater",
 }
