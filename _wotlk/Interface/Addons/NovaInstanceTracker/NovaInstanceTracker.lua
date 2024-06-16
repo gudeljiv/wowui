@@ -785,6 +785,33 @@ function SlashCmdList.NITCMD(msg, editBox)
 	end
 end
 
+local playedWindows = {};
+function NIT:isTimePlayedMsgRegistered()
+	for i = 1, NUM_CHAT_WINDOWS do
+		if (_G['ChatFrame' .. i] and _G['ChatFrame' .. i]:IsEventRegistered("TIME_PLAYED_MSG")) then
+			return true;
+		end
+	end
+end
+
+function NIT:registerTimePlayedMsg()
+	for k, v in pairs(playedWindows) do
+		if (_G['ChatFrame' .. k]) then
+			_G['ChatFrame' .. k]:RegisterEvent("TIME_PLAYED_MSG");
+		end
+	end
+end
+
+function NIT:unregisterTimePlayedMsg()
+	playedWindows = {};
+	for i = 1, NUM_CHAT_WINDOWS do
+		if (_G['ChatFrame' .. i] and _G['ChatFrame' .. i]:IsEventRegistered("TIME_PLAYED_MSG")) then
+			_G['ChatFrame' .. i]:UnregisterEvent("TIME_PLAYED_MSG");
+			playedWindows[i] = true;
+		end
+	end
+end
+
 local lockoutNum, lockoutNum24 = 0, 0;
 function NIT:ticker()
 	local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();

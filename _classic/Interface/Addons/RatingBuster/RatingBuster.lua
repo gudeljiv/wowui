@@ -25,7 +25,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.16.8"
+RatingBuster.version = "1.16.9"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -1936,7 +1936,7 @@ end
 function RatingBuster:RecursivelySplitLine(text, separatorTable, link, color)
 	if type(separatorTable) == "table" and table.maxn(separatorTable) > 0 then
 		local sep = tremove(separatorTable, 1)
-		text =  text:gsub(sep, "@")
+		text = text:gsub(sep, "@")
 		text = strsplittable("@", text)
 		local processedText = {}
 		local tempTable = {}
@@ -1944,6 +1944,8 @@ function RatingBuster:RecursivelySplitLine(text, separatorTable, link, color)
 			copyTable(tempTable, separatorTable)
 			tinsert(processedText, self:RecursivelySplitLine(t, tempTable, link, color))
 		end
+		-- Remove frontier patterns, as they get printed oddly in the repl of a gsub
+		sep = sep:gsub("%%f%[.-%]", "")
 		-- Join text
 		return (table.concat(processedText, "@"):gsub("@", sep))
 	else
@@ -1951,22 +1953,21 @@ function RatingBuster:RecursivelySplitLine(text, separatorTable, link, color)
 	end
 end
 
+local escaped_large_number_sep = LARGE_NUMBER_SEPERATOR:gsub("[-.]", "%%%1")
+
 function RatingBuster:ProcessText(text, link, color)
 	-- Convert text to lower so we don't have to worry about same ratings with different cases
 	local lowerText = text:lower()
 	-- Check if text has a matching pattern
-	for _, num in ipairs(L["numberPatterns"]) do
+	for _, numPattern in ipairs(L["numberPatterns"]) do
 		-- Capture the stat value
-		local _, insertionPoint, value, partialtext = lowerText:find(num.pattern)
+		local _, insertionPoint, value = lowerText:find(numPattern)
 		if value then
-			-- Check and switch captures if needed
-			if partialtext and tonumber(partialtext) then
-				value, partialtext = partialtext, value
-			end
 			-- Capture the stat name
 			for _, statPattern in ipairs(L["statList"]) do
 				local pattern, stat = unpack(statPattern)
-				if (not partialtext and lowerText:find(pattern)) or (partialtext and partialtext:find(pattern)) then
+				if lowerText:find(pattern) then
+					value = value:gsub(escaped_large_number_sep, "")
 					value = tonumber(value)
 					local infoTable = StatLogic.StatTable.new()
 					RatingBuster:ProcessStat(stat, value, infoTable, link, color)
@@ -1985,10 +1986,16 @@ function RatingBuster:ProcessText(text, link, color)
 								effect = ("%+.1f"):format(effect)
 							elseif floor(abs(effect) + 0.5) > 0 then
 								effect = ("%+.0f"):format(effect)
+							else
+								-- Effect is too small to show
+								effect = false
 							end
-							effects[effect] = effects[effect] or {}
-							if statID ~= "Decimal" then
-								tinsert(effects[effect], S[statID])
+
+							if effect then
+								effects[effect] = effects[effect] or {}
+								if statID ~= "Decimal" then
+									tinsert(effects[effect], S[statID])
+								end
 							end
 						end
 					end
@@ -2005,11 +2012,9 @@ function RatingBuster:ProcessText(text, link, color)
 					local infoString = table.concat(info, ", ")
 					if infoString ~= "" then
 						-- Change insertion point if necessary
-						if num.addInfo == "AfterStat" then
-							local _, statInsertionPoint = lowerText:find(pattern)
-							if statInsertionPoint > insertionPoint then
-								insertionPoint = statInsertionPoint
-							end
+						local _, statInsertionPoint = lowerText:find(pattern)
+						if statInsertionPoint > insertionPoint then
+							insertionPoint = statInsertionPoint
 						end
 
 						-- Backwards Compatibility

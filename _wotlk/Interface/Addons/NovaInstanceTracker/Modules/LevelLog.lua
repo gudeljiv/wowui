@@ -94,9 +94,9 @@ end
 --When leveling up.
 function NIT:requestLevelLogPlayed()
 	waitingForPlayed = true;
-	if (DEFAULT_CHAT_FRAME:IsEventRegistered("TIME_PLAYED_MSG")) then
+	if (NIT:isTimePlayedMsgRegistered()) then
 		reregisterPlayedEvent = true;
-		DEFAULT_CHAT_FRAME:UnregisterEvent("TIME_PLAYED_MSG");
+		NIT:unregisterTimePlayedMsg();
 	end
 	--Backup timer incase played data fails to come back.
 	backupPlayedTimer = C_Timer.NewTimer(5, function()
@@ -107,9 +107,9 @@ end
 
 --When logging on.
 function NIT:requestPlayedCache()
-	if (DEFAULT_CHAT_FRAME:IsEventRegistered("TIME_PLAYED_MSG")) then
+	if (NIT:isTimePlayedMsgRegistered()) then
 		reregisterPlayedEvent = true;
-		DEFAULT_CHAT_FRAME:UnregisterEvent("TIME_PLAYED_MSG");
+		NIT:unregisterTimePlayedMsg();
 	end
 	RequestTimePlayed();
 end
@@ -137,7 +137,7 @@ function NIT:addLevelLogPlayed(timestamp)
 	if (reregisterPlayedEvent) then
 		reregisterPlayedEvent = nil;
 		C_Timer.After(2, function()
-			DEFAULT_CHAT_FRAME:RegisterEvent("TIME_PLAYED_MSG");
+			NIT:registerTimePlayedMsg();
 		end)
 	end
 end
@@ -158,7 +158,7 @@ function NIT:backupPlayedTimer()
 				if (reregisterPlayedEvent) then
 					reregisterPlayedEvent = nil;
 					C_Timer.After(2, function()
-						DEFAULT_CHAT_FRAME:RegisterEvent("TIME_PLAYED_MSG");
+						NIT:registerTimePlayedMsg();
 					end)
 				end
 			end

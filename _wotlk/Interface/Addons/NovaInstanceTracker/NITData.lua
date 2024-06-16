@@ -2166,6 +2166,7 @@ function NIT:recordQuests()
 		NIT.data.myChars[char].quests = {};
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilWeeklyReset();
+	local sharedQuests = {};
 	for k, v in pairs(weeklyQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
 			local questName = v.name;
@@ -2211,7 +2212,7 @@ function NIT:recordQuests()
 			--end
 		end
 		--Heroic.
-		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(301);
+		--[[local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(301);
 		--if (currencyQuantity ~= 0) then
 		if (UnitLevel("player") == 85) then
 			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
@@ -2225,7 +2226,24 @@ function NIT:recordQuests()
 				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r Dungeon weeklies remaining: " .. remainingText;
 				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
 			--end
-		end
+		end]]
+		--Heroic was changed from a 7 per week cap to a rolling season cap so we'll display that cap instead.
+		--Enable this once they fix the season earled display bug.
+		--[[local name, count, _, _, _, max = GetCurrencyInfo(396);
+		--if (currencyQuantity ~= 0) then
+		if (UnitLevel("player") == 85) then
+			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
+			--if (remaining < overallLimit) then
+				local remainingText = "|cFF00FF00" .. count .. "|r|cFF00FF00/" .. max .. "|r";
+				if (count == 0) then
+					remainingText = "|cFFFF0000" .. count .. "|r|cFF00FF00/" .. max .. "|r";
+				elseif (count < max) then
+					remainingText = "|cFFFFFF00" .. count .. "|r|cFF00FF00/" .. max .. "|r";
+				end
+				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r " .. name .. " cap: " .. remainingText;
+				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
+			--end
+		end]]
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 	local sharedQuests = {};
