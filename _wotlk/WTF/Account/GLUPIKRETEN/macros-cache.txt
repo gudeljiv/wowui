@@ -1,3 +1,9 @@
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Abyssal Seahorse
@@ -15,27 +21,21 @@ VER 3 0000000000000029 " " "132152"
 /petattack [@mouseover,exists,harm][]
 /petdefensive
 END
-VER 3 000000000000002A " " "132328"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:34722
+/cast item:0
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33445
+/cast item:8766
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:58268
+/cast item:8932
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33447
+/cast item:3928
 END
 VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -47,7 +47,7 @@ VER 3 000000000000000E "inspect" "136106"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33448
+/cast item:13443
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -56,9 +56,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Clubnik's Dozer
-/targetexact Ectoplasmic Exhaust
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000039 "solo raid" "134400"
 /run InviteUnit("a");C_Timer.After(1,function() ConvertToRaid() end)

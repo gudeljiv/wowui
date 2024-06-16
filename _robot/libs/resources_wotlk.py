@@ -44,7 +44,7 @@ data = {
             {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "1", "modifier": "lshift"},
             {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "1", "modifier": "lshift"},
             {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "9"},
-            {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "3", "modifier": "lshift"},
+            {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "1"},
             {"name": "slam", "type": "GetSpellTexture", "id": 1464, "key": "2", "modifier": "lshift"},
             {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "4", "modifier": "lshift"},
             {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "5", "modifier": "lshift"},

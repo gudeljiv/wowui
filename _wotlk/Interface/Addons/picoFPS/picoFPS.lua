@@ -27,7 +27,7 @@ end
 
 local f = CreateFrame("frame")
 local dataobj = LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject("picoFPS", {type = "data source", text = "75.0 FPS", OnClick = function() collectgarbage("collect") end})
-local about = LibStub("tekKonfig-AboutPanel").new(nil, "picoFPS")
+local about = LibStub("tekKonfig-AboutPanel-PICO").new(nil, "picoFPS")
 
 
 --------------------------------
