@@ -1,7 +1,6 @@
 # Auctionator
 
-## [10.2.47](https://github.com/Auctionator/Auctionator/tree/10.2.47) (2024-06-03)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.46...10.2.47) 
+## [10.2.48](https://github.com/Auctionator/Auctionator/tree/10.2.48) (2024-06-10)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.47...10.2.48) 
 
-- Retail: Cancelling: Fix cancelling error via undercut scan on cancelled auction  
-- The War Within: Fix for changed function name  
+- Classic: Fix Shift+Click on shopping result including ilvl in search name  

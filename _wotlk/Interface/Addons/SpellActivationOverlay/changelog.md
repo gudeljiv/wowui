@@ -1,5 +1,24 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.2.0 (2024-06-17)
+
+Necrosis
+- Recently, Necrosis has started to include SpellActivationOverlay
+- There were issues when both SpellActivationOverlay and Necrosis are installed
+- Players who have not installed Necrosis were unaffected
+- Players who log in with a class other than Warlock were unaffected
+- Please update both SpellActivationOverlay and Necrosis to fix these issues
+
+Options Panel
+- A special mode "Disabled" has been introduced, blocking the options panel
+- On top of blocking the options panel, effects can no longer trigger
+- Players can opt in to disable SpellActivationOverlay when Necrosis is loaded
+- This option is available only for Warlocks who have installed Necrosis
+
+Bug Fixes
+- Lua errors caused by 'OverrideActionBarButton' should no longer happen
+- Lua errors caused by other action buttons should happen less often
+
 #### v2.1.1 (2024-06-10)
 
 New Spell Alert:

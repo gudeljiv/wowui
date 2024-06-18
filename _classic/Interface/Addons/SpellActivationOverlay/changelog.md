@@ -1,5 +1,39 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.2.0 (2024-06-17)
+
+Necrosis
+- Recently, Necrosis has started to include SpellActivationOverlay
+- There were issues when both SpellActivationOverlay and Necrosis are installed
+- Players who have not installed Necrosis were unaffected
+- Players who log in with a class other than Warlock were unaffected
+- Please update both SpellActivationOverlay and Necrosis to fix these issues
+
+Options Panel
+- A special mode "Disabled" has been introduced, blocking the options panel
+- On top of blocking the options panel, effects can no longer trigger
+- Players can opt in to disable SpellActivationOverlay when Necrosis is loaded
+- This option is available only for Warlocks who have installed Necrosis
+
+Bug Fixes
+- Lua errors caused by 'OverrideActionBarButton' should no longer happen
+- Lua errors caused by other action buttons should happen less often
+
+#### v2.1.1 (2024-06-10)
+
+New Spell Alert:
+- Death Knight's Dark Transformation (Cataclysm)
+
+New Glowing Button:
+- Death Knight's Dark Transformation (Cataclysm)
+
+Bug Fixes
+- Effects based on Holy Power can no longer trigger before level 9 (Cataclysm)
+- Mage's Arcane Missiles timer should now refresh correctly (Cataclysm)
+
+The Arcane Missiles issue is most likely a bug from the game client
+Until Blizzard fixes it, the addon exceptionally implements a local fix
+
 #### v2.1.0 (2024-06-03)
 
 Options Panel
@@ -26,7 +60,7 @@ New Spell Alert:
 New Glowing Buttons:
 - Judgement when Judgements of the Pure buff is missing (Wrath, Cataclysm)
 - Priest's Inner Fire, when the buff is missing (Wrath, Cataclysm)\*\*
-- Priest's Shadowform, when not assuming the shadowform (Cataclysm)
+- Priest's Shadowform, when not assuming the shadowform
 - Priest's Shadow Word: Death, when the enemy has low hp (Cataclysm)
 - Rogue's Backstab, with Murderous Intent when the enemy has low hp (Cataclysm)
 - Warlock's Fel Flame, during Fel Spark, from tier 11 set bonus (Cataclysm)

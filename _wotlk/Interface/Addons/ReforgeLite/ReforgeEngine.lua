@@ -2,31 +2,11 @@ local _, addonTable = ...
 local REFORGE_COEFF = 0.4
 local REFORGE_CHEAT = 5
 
+local ReforgeLite = addonTable.ReforgeLite
+local L = addonTable.L
+local DeepCopy = addonTable.DeepCopy
 local playerClass, playerRace = addonTable.playerClass, addonTable.playerRace
 local missChance = (playerRace == "NIGHTELF" and 7 or 5)
-
-local function DeepCopy (t, cache)
-  if type (t) ~= "table" then
-    return t
-  end
-  local copy = {}
-  for i, v in pairs (t) do
-    if type (v) ~= "table" then
-      copy[i] = v
-    else
-      cache = cache or {}
-      cache[t] = copy
-      if cache[v] then
-        copy[i] = cache[v]
-      else
-        copy[i] = DeepCopy (v, cache)
-      end
-    end
-  end
-  return copy
-end
-
-local L = ReforgeLiteLocale
 
 ---------------------------------------------------------------------------------------
 function ReforgeLite:GetPlayerBuffs ()
@@ -213,25 +193,17 @@ function ReforgeLite:UpdateMethodStats (method)
   end
 end
 function ReforgeLite:FinalizeReforge (data)
-  local method = data.method
-  for i = 1, #method.items do
-    method.items[i].reforge = nil
-    if method.items[i].src and method.items[i].dst then
-      -- local amount = floor (method.items[i].stats[method.items[i].src] * REFORGE_COEFF)
-      for j = 1, #self.reforgeTable do
-        if self.reforgeTable[j][1] == method.items[i].src and self.reforgeTable[j][2] == method.items[i].dst then
-          method.items[i].reforge = j
-          break
-        end
-      end
+  for _,item in ipairs(data.method.items) do
+    item.reforge = nil
+    if item.src and item.dst then
+      item.reforge = self:GetReforgeTableIndex(item.src, item.dst)
     end
-    method.items[i].stats = nil
+    item.stats = nil
   end
-  self:UpdateMethodStats (method)
+  self:UpdateMethodStats (data.method)
 end
 function ReforgeLite:ResetMethod ()
-  local method = {}
-  method.items = {}
+  local method = { items = {} }
   for i = 1, #self.itemData do
     method.items[i] = {}
     if self.itemData[i].reforge then
@@ -391,8 +363,7 @@ function ReforgeLite:GetItemReforgeOptions (item, data, slot)
   return opt
 end
 function ReforgeLite:InitReforgeClassic ()
-  local method = {}
-  method.items = {}
+  local method = { items = {} }
   for i = 1, #self.itemData do
     method.items[i] = {}
     method.items[i].stats = {}
@@ -582,8 +553,7 @@ function ReforgeLite:GetItemReforgeOptionsS2H (item, data, slot)
   return opt
 end
 function ReforgeLite:InitReforgeS2H ()
-  local method = {}
-  method.items = {}
+  local method = { items = {} }
   for i = 1, #self.itemData do
     method.items[i] = {}
     method.items[i].stats = {}
@@ -744,8 +714,7 @@ function ReforgeLite:GetItemReforgeOptionsTank (item, data, slot)
   return opt
 end
 function ReforgeLite:InitReforgeTank ()
-  local method = {}
-  method.items = {}
+  local method = { items = {} }
   for i = 1, #self.itemData do
     method.items[i] = {}
     method.items[i].stats = {}
@@ -805,7 +774,7 @@ function ReforgeLite:InitReforgeTank ()
   local parryRating = GetCombatRating (CR_PARRY)
   data.baseParry = GetParryChance () - self:DiminishStat (parryRating, self.STATS.PARRY)
   data.unhit = 100 + 0.8 * max (0, self.pdb.targetLevel)
-  
+
   data.caps = {{stat = self.STATS.DODGE, init = data.init.dodge}, {stat = self.STATS.PARRY, init = data.init.parry}}
 
   return data
@@ -922,7 +891,7 @@ function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
 
   local success, scores, codes = pcall (self.ComputeReforgeCore, self, data, reforgeOptions)
 
-  self.methodDebug = "<no data>" 
+  self.methodDebug = "<no data>"
   if success then
     local code = self[chooseFunc] (self, data, reforgeOptions, scores, codes)
     scores, codes = nil, nil
@@ -960,64 +929,65 @@ function ReforgeLite:Compute ()
   end
 end
 
-local ErrorFrame = CreateFrame ("Frame", "ReforgeLiteErrorFrame", UIParent, "BackdropTemplate")
-ErrorFrame:Hide ()
-ErrorFrame:SetPoint ("CENTER")
-ErrorFrame:SetFrameStrata ("TOOLTIP")
-ErrorFrame:SetWidth (320)
-ErrorFrame:SetHeight (400)
-ErrorFrame:SetBackdrop ({
-  bgFile = "Interface\\Tooltips\\ChatBubble-Background",
-  edgeFile = "Interface\\Tooltips\\ChatBubble-BackDrop",
-  tile = true, tileSize = 32, edgeSize = 32,
-  insets = {left = 32, right = 32, top = 32, bottom = 32}
-})
-ErrorFrame:SetBackdropColor (0, 0, 0, 1)
-ErrorFrame:SetMovable (true)
-ErrorFrame:SetClampedToScreen (true)
-ErrorFrame:EnableMouse (true)
-ErrorFrame:SetScript ("OnMouseDown", function () ErrorFrame:StartMoving () end)
-ErrorFrame:SetScript ("OnMouseUp", function () ErrorFrame:StopMovingOrSizing () end)
+local ErrorFrame
+local function CreateErrorFrame()
+  ErrorFrame = CreateFrame ("Frame", "ReforgeLiteErrorFrame", UIParent, "BackdropTemplate")
+  ErrorFrame:Hide ()
+  ErrorFrame:SetPoint ("CENTER")
+  ErrorFrame:SetFrameStrata ("TOOLTIP")
+  ErrorFrame:SetWidth (320)
+  ErrorFrame:SetHeight (400)
+  ErrorFrame.backdropInfo = BACKDROP_TUTORIAL_16_16
+  ErrorFrame:ApplyBackdrop()
+  ErrorFrame:SetMovable (true)
+  ErrorFrame:SetClampedToScreen (true)
+  ErrorFrame:EnableMouse (true)
+  ErrorFrame:SetScript ("OnMouseDown", function (frame) frame:StartMoving () end)
+  ErrorFrame:SetScript ("OnMouseUp", function (frame) frame:StopMovingOrSizing () end)
 
-ErrorFrame.ok = CreateFrame ("Button", "ReforgeLiteErrorFrameOk", ErrorFrame, "UIPanelButtonTemplate")
-ErrorFrame.ok:SetSize (112, 22)
-ErrorFrame.ok:SetText (ACCEPT)
-ErrorFrame.ok:SetPoint ("BOTTOM", 0, 10)
-ErrorFrame.ok:SetScript ("OnClick", function () ErrorFrame:Hide () end)
-ErrorFrame.message = ErrorFrame:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-ErrorFrame.message:SetPoint ("TOPLEFT", 15, -15)
-ErrorFrame.message:SetPoint ("TOPRIGHT", -15, -15)
-ErrorFrame.message:SetJustifyH ("LEFT")
-ErrorFrame.message:SetTextColor (1, 1, 1)
-ErrorFrame.message:SetText ("")
-ErrorFrame.scroll = CreateFrame ("ScrollFrame", "ReforgeLiteErrorFrameScroll", ErrorFrame, "UIPanelScrollFrameTemplate")
-ErrorFrame.scroll:SetPoint ("TOPLEFT", ErrorFrame.message, "BOTTOMLEFT", 0, -10)
-ErrorFrame.scroll:SetPoint ("TOPRIGHT", ErrorFrame.message, "BOTTOMRIGHT", -16, -10)
-ErrorFrame.scroll:SetPoint ("BOTTOM", ErrorFrame.ok, "TOP", 0, 10)
-ErrorFrame.text = CreateFrame ("EditBox", "ReforgeLiteErrorFrameText", ErrorFrame.scroll)
-ErrorFrame.scroll:SetScrollChild (ErrorFrame.text)
-ErrorFrame.text:SetWidth (274)
-ErrorFrame.text:SetHeight (100)
-ErrorFrame.text:SetMultiLine (true)
-ErrorFrame.text:SetAutoFocus (false)
-ErrorFrame.text:SetFontObject (GameFontHighlight)
-ErrorFrame.text:SetScript ("OnEscapePressed", function () ErrorFrame:Hide () end)
-ErrorFrame.updateText = function ()
-  ErrorFrame.text:SetText (ErrorFrame.err)
-  ErrorFrame.scroll:UpdateScrollChildRect ()
-  ErrorFrame.text:ClearFocus ()
-end
-ErrorFrame.text:SetScript ("OnTextChanged", ErrorFrame.updateText)
-ErrorFrame.text:SetScript ("OnEditFocusGained", function ()
-  ErrorFrame.text:HighlightText ()
-end)
-function ErrorFrame:DisplayError (message, err)
-  ErrorFrame.message:SetText (message)
-  ErrorFrame.err = err
-  ErrorFrame.updateText ()
-  ErrorFrame:Show ()
+  ErrorFrame.ok = CreateFrame ("Button", nil, ErrorFrame, "UIPanelButtonTemplate")
+  ErrorFrame.ok:SetSize (112, 22)
+  ErrorFrame.ok:SetText (ACCEPT)
+  ErrorFrame.ok:SetPoint ("BOTTOM", 0, 10)
+  ErrorFrame.ok:SetScript ("OnClick", function (frame) frame:GetParent():Hide () end)
+  ErrorFrame.message = ErrorFrame:CreateFontString (nil, "OVERLAY", "GameFontNormal")
+  ErrorFrame.message:SetPoint ("TOPLEFT", 15, -15)
+  ErrorFrame.message:SetPoint ("TOPRIGHT", -15, -15)
+  ErrorFrame.message:SetJustifyH ("LEFT")
+  ErrorFrame.message:SetTextColor (1, 1, 1)
+  ErrorFrame.message:SetText ("")
+  ErrorFrame.scroll = CreateFrame ("ScrollFrame", nil, ErrorFrame, "UIPanelScrollFrameTemplate")
+  ErrorFrame.scroll:SetPoint ("TOPLEFT", ErrorFrame.message, "BOTTOMLEFT", 0, -10)
+  ErrorFrame.scroll:SetPoint ("TOPRIGHT", ErrorFrame.message, "BOTTOMRIGHT", -16, -10)
+  ErrorFrame.scroll:SetPoint ("BOTTOM", ErrorFrame.ok, "TOP", 0, 10)
+  ErrorFrame.text = CreateFrame ("EditBox", nil, ErrorFrame.scroll)
+  ErrorFrame.scroll:SetScrollChild (ErrorFrame.text)
+  ErrorFrame.text:SetWidth (274)
+  ErrorFrame.text:SetHeight (100)
+  ErrorFrame.text:SetMultiLine (true)
+  ErrorFrame.text:SetAutoFocus (false)
+  ErrorFrame.text:SetFontObject (GameFontHighlight)
+  ErrorFrame.text:SetScript ("OnEscapePressed", function () ErrorFrame:Hide () end)
+  ErrorFrame.updateText = function ()
+    ErrorFrame.text:SetText (ErrorFrame.err)
+    ErrorFrame.scroll:UpdateScrollChildRect ()
+    ErrorFrame.text:ClearFocus ()
+  end
+  ErrorFrame.text:SetScript ("OnTextChanged", ErrorFrame.updateText)
+  ErrorFrame.text:SetScript ("OnEditFocusGained", function ()
+    ErrorFrame.text:HighlightText ()
+  end)
+  function ErrorFrame:DisplayError (message, err)
+    ErrorFrame.message:SetText (message)
+    ErrorFrame.err = err
+    ErrorFrame.updateText ()
+    ErrorFrame:Show ()
+  end
 end
 
 function ReforgeLite:DebugMethod ()
-  ErrorFrame:DisplayError ("E-mail: d07.riv@gmail.com", self.methodDebug or "<no data>")
+  if not ErrorFrame then
+    CreateErrorFrame()
+  end
+  ErrorFrame:DisplayError ("https://github.com/skyler-code/ReforgeLite/issues", self.methodDebug or "<no data>")
 end

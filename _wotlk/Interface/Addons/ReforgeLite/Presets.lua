@@ -1,5 +1,7 @@
 local _, addonTable = ...
-local L = ReforgeLiteLocale
+local L = addonTable.L
+local ReforgeLite = addonTable.ReforgeLite
+local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 
 ----------------------------------------- CAP PRESETS ---------------------------------
 
@@ -189,411 +191,447 @@ local RangedCaps = { HitCap }
 
 local CasterCaps = { HitCapSpell }
 
-ReforgeLite.presets = {
-  ["DEATHKNIGHT"] = {
-    ["Blood"] = {
-      [RAID] = {
-        weights = {
-          0, 110, 100, 150, 20, 50, 120, 200
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtMost,
-                preset = MeleeHitCap,
-              }
-            },
+local specInfo = {}
+
+do
+  local specs = {
+    DEATHKNIGHTBlood = 398,
+    DEATHKNIGHTFrost = 399,
+    DEATHKNIGHTUnholy = 400,
+    DRUIDBalance = 752,
+    DRUIDFeralCombat = 750,
+    DRUIDRestoration = 748,
+    HUNTERBeastMastery = 811,
+    HUNTERMarksmanship = 807,
+    HUNTERSurvival = 809,
+    MAGEArcane = 799,
+    MAGEFire = 851,
+    MAGEFrost = 823,
+    PALADINHoly = 831,
+    PALADINProtection = 839,
+    PALADINRetribution = 855,
+    PRIESTDiscipline = 760,
+    PRIESTHoly = 813,
+    PRIESTShadow = 795,
+    ROGUEAssassination = 182,
+    ROGUECombat = 181,
+    ROGUESubtlety = 183,
+    SHAMANElemental = 261,
+    SHAMANEnhancement = 263,
+    SHAMANRestoration = 262,
+    WARLOCKAffliction = 871,
+    WARLOCKDemonology = 867,
+    WARLOCKDestruction = 865,
+    WARRIORArms = 746,
+    WARRIORFury = 815,
+    WARRIORProtection = 845,
+  }
+
+  for k,v in pairs(specs) do
+    local _, tabName, _, icon = GetSpecializationInfoForSpecID(v)
+    specInfo[v] = { name = tabName, icon = icon }
+  end
+
+  local presets = {
+    ["DEATHKNIGHT"] = {
+      [specs.DEATHKNIGHTBlood] = {
+        [RAID] = {
+          weights = {
+            0, 110, 100, 150, 20, 50, 120, 200
           },
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtMost,
-                preset = ExpSoftCap,
-              },
-            },
-          },
-        },
-      },
-      [LFG_TYPE_DUNGEON] = {
-        weights = {
-          0, 0, 0, 200, 0, 50, 200, 150
-        },
-        caps = MeleeCaps,
-      },
-    },
-    ["Frost"] = {
-      [ENCHSLOT_2HWEAPON] = {
-        weights = {
-          0, 0, 0, 201, 115, 129, 163, 126
-        },
-        caps = MeleeCaps,
-      },
-      [GetSpellInfo(674) .. " (Oblit)"] = {
-        weights = {
-          0, 0, 0, 229, 116, 147, 164, 144
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 106,
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtLeast,
-                preset = ExpSoftCap,
-              },
-            },
-          },
-        },
-      },
-      [GetSpellInfo(674) .. " (Masterfrost)"] = {
-        weights = {
-          0, 0, 0, 200, 120, 150, 100, 180
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = SpellHitCap,
-                after = 106,
-              },
-              {
-                method = AtMost,
-                preset = MeleeHitCap,
-              },
-            },
-          },
-        },
-      },
-    },
-    ["Unholy"] = {
-      [PLAYER_DIFFICULTY1] = {
-        weights = {
-          0, 0, 0, 200, 130, 160, 100, 110
-        },
-        caps = { HitCap },
-      },
-      [C_Item.GetItemNameByID(78478) or "Gurthalak, Voice of the Deeps"] = {
-        weights = {
-          0, 0, 0, 200, 120, 160, 100, 130
-        },
-        caps = { HitCap },
-      },
-    },
-  },
-  ["DRUID"] = {
-    ["Balance"] = {
-      weights = {
-        0, 0, 0, 200, 100, 150, 0, 130
-      },
-      caps = CasterCaps,
-    },
-    ["Feral Combat"] = {
-      ["Bear"] = {
-        weights = {
-          0, 150, 0, 40, 60, 10, 60, 90
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                preset = MeleeHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                preset = ExpSoftCap,
-                after = 30,
-              },
-              {
-                preset = ExpHardCap,
-              },
-            },
-          },
-        },
-      },
-      ["Cat"] = {
-        weights = {
-          0, 0, 0, 115, 110, 110, 115, 110
-        },
-        tip = "All stats are nearly equal for cats, don't rely on this too much",
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                preset = MeleeHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                preset = ExpSoftCap,
-              },
-            },
-          },
-        },
-      },
-    },
-    ["Restoration"] = {
-      [MANA_REGEN_ABBR] = {
-        weights = {
-          150, 0, 0, 0, 130, 160, 0, 140
-        },
-        tip = "Feel free to change the value of spirit if needed",
-        caps = {
-          {
-            stat = StatHaste,
-            points = {
-              {
-                preset = 1,
-                method = AtLeast,
-                value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
-                after = 120,
-              },
-            },
-          },
-        },
-      },
-      [BONUS_HEALING] = {
-        weights = {
-          140, 0, 0, 0, 130, 160, 0, 150
-        },
-        tip = "Feel free to change the value of spirit if needed",
-        caps = {
-          {
-            stat = StatHaste,
-            points = {
-              {
-                preset = 1,
-                method = AtLeast,
-                value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
-                after = 120,
-              },
-            },
-          },
-        },
-      },
-    }
-  },
-  ["HUNTER"] = {
-    ["Beast Mastery"] = {
-      weights = {
-        0, 0, 0, 200, 150, 100, 0, 100
-      },
-      caps = RangedCaps,
-    },
-    ["Marksmanship (Arcane Shot)"] = {
-      weights = {
-        0, 0, 0, 200, 150, 140, 0, 110
-      },
-      caps = RangedCaps,
-    },
-    ["Marksmanship (Aimed Shot)"] = {
-      weights = {
-        0, 0, 0, 200, 140, 150, 0, 110
-      },
-      caps = RangedCaps,
-    },
-    ["Survival"] = {
-      weights = {
-        0, 0, 0, 200, 140, 130, 0, 120
-      },
-      caps = RangedCaps,
-    },
-  },
-  ["MAGE"] = {
-    ["Arcane"] = {
-      [PLAYER_DIFFICULTY1] = {
-        weights = {
-          0, 0, 0, 5, 1, 4, -1, 3
-        },
-        caps = {
-          HitCapSpell,
-          {
-            stat = StatHaste,
-            points = {
-              {
-                method = AtLeast,
-                value = addonTable.playerRace == "Goblin" and 1623 or 1767,
-                after = 2,
-              },
-            },
-          },
-        },
-      },
-      ["T11 4pc"] = {
-        weights = {
-          0, 0, 0, 5, 1, 4, -1, 3
-        },
-        caps = {
-          HitCapSpell,
-          {
-            stat = StatHaste,
-            points = {
-              {
-                method = AtLeast,
-                value = addonTable.playerRace == "Goblin" and 311 or 443,
-                after = 2,
-              },
-            },
-          },
-        },
-      },
-    },
-    ["Fire"] = {
-      ["15% " .. STAT_HASTE] = {
-        weights = {
-          -1, -1, -1, 2, 3, 1, -1, -1
-        },
-        caps = {
-          HitCapSpell,
-          {
-            stat = StatHaste,
-            points = {
-              {
-                method = AtLeast,
-                value = addonTable.playerRace == "Goblin" and 678 or 813,
-                after = 2,
-              },
-            },
-          },
-        },
-      },
-      ["25% " .. STAT_HASTE] = {
-        weights = {
-          -1, -1, -1, 2, 3, 1, -1, -1
-        },
-        caps = {
-          HitCapSpell,
-          {
-            stat = StatHaste,
-            points = {
-              {
-                method = AtLeast,
-                value = addonTable.playerRace == "Goblin" and 1858 or 2005,
-                after = 2,
-              },
-            },
-          },
-        },
-      },
-    },
-    ["Frost"] = {
-      weights = {
-        0, 0, 0, 200, 180, 140, 0, 130
-      },
-      caps = {
-        HitCapSpell,
-        {
-          stat = StatCrit,
-          points = {
+          caps = {
             {
-              method = AtMost,
-              value = addonTable.playerRace == "Worgen" and 2922 or 3101,
-              after = 100,
+              stat = StatHit,
+              points = {
+                {
+                  method = AtMost,
+                  preset = MeleeHitCap,
+                }
+              },
+            },
+            {
+              stat = StatExp,
+              points = {
+                {
+                  method = AtMost,
+                  preset = ExpSoftCap,
+                },
+              },
+            },
+          },
+        },
+        [LFG_TYPE_DUNGEON] = {
+          weights = {
+            0, 0, 0, 200, 0, 50, 200, 150
+          },
+          caps = MeleeCaps,
+        },
+      },
+      [specs.DEATHKNIGHTFrost] = {
+        [ENCHSLOT_2HWEAPON] = {
+          weights = {
+            0, 0, 0, 201, 115, 129, 163, 126
+          },
+          caps = MeleeCaps,
+        },
+        [GetSpellInfo(674) .. " (Oblit)"] = {
+          weights = {
+            0, 0, 0, 229, 116, 147, 164, 144
+          },
+          caps = {
+            {
+              stat = StatHit,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = MeleeHitCap,
+                  after = 106,
+                },
+                {
+                  preset = MeleeDWHitCap,
+                },
+              },
+            },
+            {
+              stat = StatExp,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = ExpSoftCap,
+                },
+              },
+            },
+          },
+        },
+        [GetSpellInfo(674) .. " (Masterfrost)"] = {
+          weights = {
+            0, 0, 0, 200, 120, 150, 100, 180
+          },
+          caps = {
+            {
+              stat = StatHit,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = SpellHitCap,
+                  after = 106,
+                },
+                {
+                  method = AtMost,
+                  preset = MeleeHitCap,
+                },
+              },
+            },
+          },
+        },
+      },
+      [specs.DEATHKNIGHTUnholy] = {
+        [PLAYER_DIFFICULTY1] = {
+          weights = {
+            0, 0, 0, 200, 130, 160, 100, 110
+          },
+          caps = { HitCap },
+        },
+        ["|T"..(C_Item.GetItemIconByID(78478) or "error")..":0|t " .. (C_Item.GetItemNameByID(78478) or "Gurthalak, Voice of the Deeps")] = {
+          weights = {
+            0, 0, 0, 200, 120, 160, 100, 130
+          },
+          caps = { HitCap },
+        },
+      },
+    },
+    ["DRUID"] = {
+      [specs.DRUIDBalance] = {
+        weights = {
+          0, 0, 0, 200, 100, 150, 0, 130
+        },
+        caps = CasterCaps,
+      },
+      [specs.DRUIDFeralCombat] = {
+        [GetSpellInfo(5487)] = { -- Bear
+          icon = select(3, GetSpellInfo(5487)),
+          weights = {
+            0, 150, 0, 40, 60, 10, 60, 90
+          },
+          caps = {
+            {
+              stat = StatHit,
+              points = {
+                {
+                  preset = MeleeHitCap,
+                },
+              },
+            },
+            {
+              stat = StatExp,
+              points = {
+                {
+                  preset = ExpSoftCap,
+                  after = 30,
+                },
+                {
+                  preset = ExpHardCap,
+                },
+              },
+            },
+          },
+        },
+        [GetSpellInfo(768)] = { -- Cat
+          icon = select(3, GetSpellInfo(768)),
+          weights = {
+            0, 0, 0, 115, 110, 110, 115, 110
+          },
+          caps = {
+            {
+              stat = StatHit,
+              points = {
+                {
+                  preset = MeleeHitCap,
+                },
+              },
+            },
+            {
+              stat = StatExp,
+              points = {
+                {
+                  preset = ExpSoftCap,
+                },
+              },
+            },
+          },
+        },
+      },
+      [specs.DRUIDRestoration] = {
+        [MANA_REGEN_ABBR] = {
+          weights = {
+            150, 0, 0, 0, 130, 160, 0, 140
+          },
+          caps = {
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  preset = 1,
+                  method = AtLeast,
+                  value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
+                  after = 120,
+                },
+              },
+            },
+          },
+        },
+        [BONUS_HEALING] = {
+          weights = {
+            140, 0, 0, 0, 130, 160, 0, 150
+          },
+          caps = {
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  preset = 1,
+                  method = AtLeast,
+                  value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
+                  after = 120,
+                },
+              },
+            },
+          },
+        },
+      }
+    },
+    ["HUNTER"] = {
+      [specs.HUNTERBeastMastery] = {
+        weights = {
+          0, 0, 0, 200, 150, 80, 0, 110
+        },
+        caps = RangedCaps,
+      },
+      [specs.HUNTERMarksmanship] = {
+        tip = "Sim it!",
+        weights = {
+          0, 0, 0, 200, 150, 110, 0, 80
+        },
+        caps = RangedCaps,
+      },
+      [specs.HUNTERSurvival] = {
+        tip = "Sim it! Check WoWHead/Discord for Haste caps!!",
+        weights = {
+          0, 0, 0, 200, 110, 150, 0, 80
+        },
+        caps = RangedCaps,
+      },
+    },
+    ["MAGE"] = {
+      [specs.MAGEArcane] = {
+        [PLAYER_DIFFICULTY1] = {
+          weights = {
+            0, 0, 0, 5, 1, 4, -1, 3
+          },
+          caps = {
+            HitCapSpell,
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  method = AtLeast,
+                  value = addonTable.playerRace == "Goblin" and 1623 or 1767,
+                  after = 2,
+                },
+              },
+            },
+          },
+        },
+        ["T11 4pc"] = {
+          icon = 464778,
+          weights = {
+            0, 0, 0, 5, 1, 4, -1, 3
+          },
+          caps = {
+            HitCapSpell,
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  method = AtLeast,
+                  value = addonTable.playerRace == "Goblin" and 311 or 443,
+                  after = 2,
+                },
+              },
+            },
+          },
+        },
+      },
+      [specs.MAGEFire] = {
+        ["15% " .. STAT_HASTE] = {
+          weights = {
+            -1, -1, -1, 2, 3, 1, -1, -1
+          },
+          caps = {
+            HitCapSpell,
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  method = AtLeast,
+                  value = addonTable.playerRace == "Goblin" and 678 or 813,
+                  after = 2,
+                },
+              },
+            },
+          },
+        },
+        ["25% " .. STAT_HASTE] = {
+          weights = {
+            -1, -1, -1, 2, 3, 1, -1, -1
+          },
+          caps = {
+            HitCapSpell,
+            {
+              stat = StatHaste,
+              points = {
+                {
+                  method = AtLeast,
+                  value = addonTable.playerRace == "Goblin" and 1858 or 2005,
+                  after = 2,
+                },
+              },
+            },
+          },
+        },
+      },
+      [specs.MAGEFrost] = {
+        weights = {
+          0, 0, 0, 200, 180, 140, 0, 130
+        },
+        caps = {
+          HitCapSpell,
+          {
+            stat = StatCrit,
+            points = {
+              {
+                method = AtMost,
+                value = addonTable.playerRace == "Worgen" and 2922 or 3101,
+                after = 100,
+              }
             }
           }
-        }
-      },
-    },
-  },
-  ["PALADIN"] = {
-    ["Holy"] = {
-      weights = {
-        160, 0, 0, 0, 80, 200, 0, 120
-      },
-    },
-    ["Protection"] = {
-      [PET_DEFENSIVE] = {
-        tanking = true,
-        weights = {
-          0, 4, 4, 3, 0, 0, 3, 5
         },
       },
-      [DAMAGE] = {
+    },
+    ["PALADIN"] = {
+      [specs.PALADINHoly] = {
         weights = {
-          0, 0, 0, 4, 0, 0, 5, 2
+          160, 0, 0, 0, 80, 200, 0, 120
         },
-        caps = {
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtLeast,
-                preset = ExpSoftCap,
-                after = 3,
+      },
+      [specs.PALADINProtection] = {
+        [PET_DEFENSIVE] = {
+          tanking = true,
+          weights = {
+            0, 4, 4, 3, 0, 0, 3, 5
+          },
+        },
+        [DAMAGE] = {
+          weights = {
+            0, 0, 0, 4, 0, 0, 5, 2
+          },
+          caps = {
+            {
+              stat = StatExp,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = ExpSoftCap,
+                  after = 3,
+                },
+                {
+                  method = AtMost,
+                  preset = ExpHardCap,
+                },
               },
-              {
-                method = AtMost,
-                preset = ExpHardCap,
+            },
+            {
+              stat = StatHit,
+              points = {
+                {
+                  method = AtMost,
+                  preset = MeleeHitCap,
+                }
               },
             },
           },
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtMost,
-                preset = MeleeHitCap,
-              }
-            },
-          },
         },
       },
-    },
-    ["Retribution"] = {
-      weights = {
-        0, 0, 0, 200, 135, 110, 180, 150
-      },
-      caps = MeleeCaps,
-    },
-  },
-  ["PRIEST"] = {
-    ["Discipline"] = {
-      weights = {
-        150, 0, 0, 0, 80, 100, 0, 120
-      },
-    },
-    ["Holy"] = {
-      weights = {
-        150, 0, 0, 0, 80, 120, 0, 100
-      },
-    },
-    ["Shadow"] = {
-      weights = {
-        0, 0, 0, 200, 100, 140, 0, 130
-      },
-      caps = CasterCaps
-    },
-  },
-  ["ROGUE"] = {
-    ["Tier 12"] = {
-      ["Assassination"] = {
+      [specs.PALADINRetribution] = {
         weights = {
-          0, 0, 0, 200, 120, 130, 120, 140
+          0, 0, 0, 200, 135, 110, 180, 150
+        },
+        caps = MeleeCaps,
+      },
+    },
+    ["PRIEST"] = {
+      [specs.PRIESTDiscipline] = {
+        weights = {
+          150, 0, 0, 0, 80, 100, 0, 120
+        },
+      },
+      [specs.PRIESTHoly] = {
+        weights = {
+          150, 0, 0, 0, 80, 120, 0, 100
+        },
+      },
+      [specs.PRIESTShadow] = {
+        weights = {
+          0, 0, 0, 200, 100, 140, 0, 130
+        },
+        caps = CasterCaps
+      },
+    },
+    ["ROGUE"] = {
+      [specs.ROGUEAssassination] = {
+        weights = {
+          0, 0, 0, 200, 110, 130, 120, 140
         },
         caps = {
           {
@@ -601,10 +639,6 @@ ReforgeLite.presets = {
             points = {
               {
                 method = AtLeast,
-                preset = MeleeHitCap,
-                after = 160,
-              },
-              {
                 preset = SpellHitCap,
                 after = 82,
               },
@@ -617,34 +651,18 @@ ReforgeLite.presets = {
             stat = StatExp,
             points = {
               {
+                method = AtMost,
                 preset = ExpSoftCap,
               },
             },
           },
         },
       },
-      ["Combat"] = {
+      [specs.ROGUECombat] = {
         weights = {
-          0, 0, 0, 215, 125, 170, 185, 150
+          0, 0, 0, 200, 125, 170, 215, 150
         },
         caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 150,
-              },
-              {
-                preset = SpellHitCap,
-                after = 120,
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
           {
             stat = StatExp,
             points = {
@@ -654,9 +672,22 @@ ReforgeLite.presets = {
               },
             },
           },
+          {
+            stat = StatHit,
+            points = {
+              {
+                method = AtLeast,
+                preset = SpellHitCap,
+                after = 100,
+              },
+              {
+                preset = MeleeDWHitCap,
+              },
+            },
+          },
         },
       },
-      ["Subtlety"] = {
+      [specs.ROGUESubtlety] = {
         weights = {
           0, 0, 0, 155, 145, 155, 130, 90
         },
@@ -689,42 +720,16 @@ ReforgeLite.presets = {
         },
       },
     },
-    ["Tier 13"] = {
-      ["Assassination"] = {
+    ["SHAMAN"] = {
+      [specs.SHAMANElemental] = {
         weights = {
-          0, 0, 0, 225, 120, 140, 140, 160
+          0, 0, 0, 200, 80, 140, 0, 120
         },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 170,
-              },
-              {
-                preset = SpellHitCap,
-                after = 90,
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                preset = ExpSoftCap,
-              },
-            },
-          },
-        },
+        caps = CasterCaps,
       },
-      ["Combat"] = {
+      [specs.SHAMANEnhancement] = {
         weights = {
-          0, 0, 0, 240, 120, 190, 210, 150
+          0, 0, 0, 250, 120, 80, 190, 150
         },
         caps = {
           {
@@ -732,12 +737,8 @@ ReforgeLite.presets = {
             points = {
               {
                 method = AtLeast,
-                preset = MeleeHitCap,
-                after = 170,
-              },
-              {
                 preset = SpellHitCap,
-                after = 135,
+                after = 50,
               },
               {
                 preset = MeleeDWHitCap,
@@ -755,255 +756,203 @@ ReforgeLite.presets = {
           },
         },
       },
-      ["Subtlety"] = {
+      [specs.SHAMANRestoration] = {
         weights = {
-          0, 0, 0, 180, 150, 175, 155, 95
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 115,
-              },
-              {
-                preset = SpellHitCap,
-                after = 90,
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                preset = ExpSoftCap,
-              },
-            },
-          },
+          130, 0, 0, 0, 100, 100, 0, 100
         },
       },
     },
-  },
-  ["SHAMAN"] = {
-    ["Elemental"] = {
-      weights = {
-        0, 0, 0, 200, 80, 140, 0, 120
+    ["WARLOCK"] = {
+      [specs.WARLOCKAffliction] = {
+        weights = {
+          0, 0, 0, 200, 140, 160, 0, 120
+        },
+        caps = CasterCaps,
       },
-      caps = CasterCaps,
+      [specs.WARLOCKDestruction] = {
+        weights = {
+          0, 0, 0, 200, 140, 160, 0, 120
+        },
+        caps = CasterCaps,
+      },
+      [specs.WARLOCKDemonology] = {
+        weights = {
+          0, 0, 0, 200, 120, 160, 0, 140
+        },
+        caps = CasterCaps,
+      },
     },
-    ["Enhancement"] = {
-      weights = {
-        0, 0, 0, 250, 120, 80, 190, 150
+    ["WARRIOR"] = {
+      [specs.WARRIORArms] = {
+        weights = {
+          0, 0, 0, 200, 150, 100, 200, 120
+        },
+        caps = MeleeCaps
       },
-      caps = {
-        {
-          stat = StatHit,
-          points = {
+      [specs.WARRIORFury] = {
+        [GetSpellInfo(46917)] = { -- Titan's Grip
+          icon = select(3, GetSpellInfo(46917)),
+          weights = {
+            0, 0, 0, 200, 150, 100, 180, 130
+          },
+          caps = {
             {
-              method = AtLeast,
-              preset = SpellHitCap,
-              after = 50,
+              stat = StatHit,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = MeleeHitCap,
+                  after = 140,
+                },
+                {
+                  value = 1300,
+                  preset = 1,
+                  after = 125
+                },
+                {
+                  preset = MeleeDWHitCap,
+                },
+              },
             },
             {
-              preset = MeleeDWHitCap,
+              stat = StatExp,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = ExpSoftCap,
+                },
+              },
             },
           },
         },
-        {
-          stat = StatExp,
-          points = {
+        [GetSpellInfo(81099)] = { -- Single-Minded Fury
+          icon = select(3, GetSpellInfo(81099)),
+          weights = {
+            0, 0, 0, 200, 150, 100, 180, 130
+          },
+          caps = {
             {
-              method = AtLeast,
-              preset = ExpSoftCap,
+              stat = StatHit,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = MeleeHitCap,
+                  after = 140,
+                },
+                {
+                  value = 1300,
+                  preset = 1,
+                  after = 125
+                },
+                {
+                  preset = MeleeDWHitCap,
+                },
+              },
+            },
+            {
+              stat = StatExp,
+              points = {
+                {
+                  method = AtLeast,
+                  preset = ExpSoftCap,
+                },
+              },
             },
           },
         },
       },
-    },
-    ["Restoration"] = {
-      weights = {
-        130, 0, 0, 0, 100, 100, 0, 100
-      },
-    },
-  },
-  ["WARLOCK"] = {
-    ["Affliction/Destruction"] = {
-      weights = {
-        0, 0, 0, 200, 140, 160, 0, 120
-      },
-      caps = CasterCaps,
-    },
-    ["Demonology"] = {
-      weights = {
-        0, 0, 0, 200, 120, 160, 0, 140
-      },
-      caps = CasterCaps,
-    },
-  },
-  ["WARRIOR"] = {
-    ["Arms"] = {
-      weights = {
-        0, 0, 0, 200, 150, 100, 200, 120
-      },
-      caps = MeleeCaps
-    },
-    ["Fury"] = {
-      [GetSpellInfo(46917)] = { -- Titan's Grip
+      [specs.WARRIORProtection] = {
+        tanking = true,
         weights = {
-          0, 0, 0, 200, 150, 100, 180, 130
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 140,
-              },
-              {
-                value = 1300,
-                preset = 1,
-                after = 125
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtLeast,
-                preset = ExpSoftCap,
-              },
-            },
-          },
-        },
-      },
-      [GetSpellInfo(81099)] = { -- Single-Minded Fury
-        weights = {
-          0, 0, 0, 200, 150, 100, 180, 130
-        },
-        caps = {
-          {
-            stat = StatHit,
-            points = {
-              {
-                method = AtLeast,
-                preset = MeleeHitCap,
-                after = 140,
-              },
-              {
-                value = 1300,
-                preset = 1,
-                after = 125
-              },
-              {
-                preset = MeleeDWHitCap,
-              },
-            },
-          },
-          {
-            stat = StatExp,
-            points = {
-              {
-                method = AtLeast,
-                preset = ExpSoftCap,
-              },
-            },
-          },
+          40, 100, 100, 0, 0, 0, 0, 40
         },
       },
     },
-    ["Protection"] = {
-      tanking = true,
-      weights = {
-        40, 100, 100, 0, 0, 0, 0, 40
-      },
-    },
-  },
---  ["PvP (Arena)"] = {
---  },
-}
+  }
 
-function ReforgeLite:InitPresets ()
+  ReforgeLite.presets = presets[addonTable.playerClass]
+end
+
+function ReforgeLite:InitPresets()
   self.presets[CUSTOM] = self.db.customPresets
-  
+
   if PawnVersion then
-    local PawnMap = {
-      Spirit = true,
-      DodgeRating = true,
-      ParryRating
-    }
-    self.presets["Pawn scales"] = function ()
-      if PawnCommon == nil or PawnCommon.Scales == nil then return {} end
+    self.presets["Pawn"] = function ()
+      if not PawnCommon or not PawnCommon.Scales then return {} end
       local result = {}
       for k, v in pairs (PawnCommon.Scales) do
-        local preset = {leaf = "import"}
-        preset.weights = {}
-        local raw = v.Values or {}
-        preset.weights[self.STATS.SPIRIT] = raw["Spirit"] or 0
-        preset.weights[self.STATS.DODGE] = raw["DodgeRating"] or 0
-        preset.weights[self.STATS.PARRY] = raw["ParryRating"] or 0
-        preset.weights[self.STATS.HIT] = raw["HitRating"] or 0
-        preset.weights[self.STATS.CRIT] = raw["CritRating"] or 0
-        preset.weights[self.STATS.HASTE] = raw["HasteRating"] or 0
-        preset.weights[self.STATS.EXP] = raw["ExpertiseRating"] or 0
-        preset.weights[self.STATS.MASTERY] = raw["MasteryRating"] or 0
-        local total = 0
-        local average = 0
-        for i = 1, #self.itemStats do
-          if preset.weights[i] ~= 0 then
-            total = total + 1
-            average = average + preset.weights[i]
-          end
-        end
-        if total > 0 and average > 0 then
-          local factor = 1
-          while factor * average / total < 10 do
-            factor = factor * 100
-          end
-          while factor * average / total > 1000 do
-            factor = factor / 10
-          end
+        if v.ClassID == addonTable.playerClassID then
+          local preset = {leaf = "import", name = v.LocalizedName or k}
+          preset.weights = {}
+          local raw = v.Values or {}
+          preset.weights[self.STATS.SPIRIT] = raw["Spirit"] or 0
+          preset.weights[self.STATS.DODGE] = raw["DodgeRating"] or 0
+          preset.weights[self.STATS.PARRY] = raw["ParryRating"] or 0
+          preset.weights[self.STATS.HIT] = raw["HitRating"] or 0
+          preset.weights[self.STATS.CRIT] = raw["CritRating"] or 0
+          preset.weights[self.STATS.HASTE] = raw["HasteRating"] or 0
+          preset.weights[self.STATS.EXP] = raw["ExpertiseRating"] or 0
+          preset.weights[self.STATS.MASTERY] = raw["MasteryRating"] or 0
+          local total = 0
+          local average = 0
           for i = 1, #self.itemStats do
-            preset.weights[i] = preset.weights[i] * factor
+            if preset.weights[i] ~= 0 then
+              total = total + 1
+              average = average + preset.weights[i]
+            end
           end
-          result[v.LocalizedName or k] = preset
+          if total > 0 and average > 0 then
+            local factor = 1
+            while factor * average / total < 10 do
+              factor = factor * 100
+            end
+            while factor * average / total > 1000 do
+              factor = factor / 10
+            end
+            for i = 1, #self.itemStats do
+              preset.weights[i] = preset.weights[i] * factor
+            end
+            tinsert(result, preset)
+          end
         end
       end
       return result
     end
   end
 
-  self.presetMenu = CreateFrame ("Frame", "ReforgeLitePresetMenu")
-  self.presetMenu.info = {}
-  self.presetMenu.initialize = function (menu, level)
+  self.presetMenu = LibDD:Create_UIDropDownMenu("ReforgeLitePresetMenu", self)
+  LibDD:UIDropDownMenu_SetInitializeFunction(self.presetMenu, function (menu, level)
     if not level then return end
-    local info = menu.info
-    wipe (info)
     local list = self.presets
     if level > 1 then
-      list = UIDROPDOWNMENU_MENU_VALUE
+      list = L_UIDROPDOWNMENU_MENU_VALUE
     end
-    info.notCheckable = true
-
+    local menuList = {}
     for k, v in pairs (list) do
       if type (v) == "function" then
         v = v ()
       end
-      info.text = ((list == self.db.customPresets or v.leaf == "import") and k or L[k])
+      local info = LibDD:UIDropDownMenu_CreateInfo()
+      info.notCheckable = true
+      info.sortKey = v.name or k
+      info.text = info.sortKey
+      info.isSpec = 0
+      if specInfo[k] then
+        info.text = "|T"..specInfo[k].icon..":0|t " .. specInfo[k].name
+        info.sortKey = specInfo[k].name
+        info.isSpec = 1
+      end
+      if v.icon then
+        info.text = "|T"..v.icon..":0|t " .. info.text
+      end
       info.value = v
+      if v.tip then
+        info.tooltipTitle = v.tip
+        info.tooltipOnButton = true
+      end
       if v.caps or v.weights or v.leaf then
         info.func = function ()
-          CloseDropDownMenus ()
+          LibDD:CloseDropDownMenus ()
           if v.leaf == "import" then
             self:SetStatWeights (v.weights, v.caps)
           else
@@ -1022,18 +971,27 @@ function ReforgeLite:InitPresets ()
         end
         info.keepShownOnClick = true
       end
-      UIDropDownMenu_AddButton (info, level)
+      tinsert(menuList, info)
     end
-  end
+    table.sort(menuList, function (a, b)
+      if a.isSpec ~= b.isSpec then
+        return a.isSpec < b.isSpec
+      end
+      return a.sortKey < b.sortKey
+    end)
+    for _,v in ipairs(menuList) do
+      LibDD:UIDropDownMenu_AddButton (v, level)
+    end
+  end)
 
-  self.presetDelMenu = CreateFrame ("Frame", "ReforgeLitePresetDelMenu")
-  self.presetDelMenu.info = {}
-  self.presetDelMenu.initialize = function (menu, level)
+
+  self.presetDelMenu = LibDD:Create_UIDropDownMenu("ReforgeLitePresetDelMenu", self)
+  LibDD:UIDropDownMenu_SetInitializeFunction(self.presetDelMenu, function (menu, level)
     if level ~= 1 then return end
-    local info = menu.info
-    wipe (info)
-    info.notCheckable = true
+    local info = LibDD:UIDropDownMenu_CreateInfo()
+    local menuList = {}
     for k, v in pairs (self.db.customPresets) do
+      info.notCheckable = true
       info.text = k
       info.func = function ()
         self.db.customPresets[k] = nil
@@ -1041,7 +999,11 @@ function ReforgeLite:InitPresets ()
           self.deletePresetButton:Disable ()
         end
       end
-      UIDropDownMenu_AddButton (info, level)
+      tinsert(menuList, info)
     end
-  end
+    table.sort(menuList, function (a, b) return a.text < b.text end)
+    for _,v in ipairs(menuList) do
+      LibDD:UIDropDownMenu_AddButton (v, level)
+    end
+  end)
 end

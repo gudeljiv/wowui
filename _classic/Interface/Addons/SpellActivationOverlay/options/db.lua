@@ -99,7 +99,7 @@ end
 
 -- Load database and use default values if needed
 function SAO.LoadDB(self)
-    local currentversion = 143;
+    local currentversion = 220;
     local db = SpellActivationOverlayDB or {};
 
     if not db.alert then
@@ -204,7 +204,7 @@ end
 -- Utility frame dedicated to react to variable loading
 local loader = CreateFrame("Frame", "SpellActivationOverlayDBLoader");
 loader:RegisterEvent("VARIABLES_LOADED");
-loader:SetScript("OnEvent", function (event)
+loader:SetScript("OnEvent", function (self, event)
     SAO:LoadDB();
     SAO:ApplyAllVariables();
     SpellActivationOverlayOptionsPanel_Init(SAO.OptionsPanel);

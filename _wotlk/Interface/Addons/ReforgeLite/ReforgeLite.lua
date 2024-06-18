@@ -2,6 +2,13 @@ local addonName, addonTable = ...
 local addonTitle = C_AddOns.GetAddOnMetadata(addonName, "title")
 local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT
 
+local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
+addonTable.ReforgeLite = ReforgeLite
+
+local L = addonTable.L
+local GUI = addonTable.GUI
+local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+
 local function DeepCopy (t, cache)
   if type (t) ~= "table" then
     return t
@@ -22,18 +29,13 @@ local function DeepCopy (t, cache)
   end
   return copy
 end
+addonTable.DeepCopy = DeepCopy
 
 local gprint = print
 local function print(...)
     gprint("|cff33ff99"..addonName.."|r:",...)
 end
 
-local L = ReforgeLiteLocale
-local GUI = ReforgeLiteGUI
-
-ReforgeLite = CreateFrame ("Frame", nil, UIParent, "BackdropTemplate")
-ReforgeLite:Hide ()
-ReforgeLiteDB = nil
 local AddonPath = "Interface\\AddOns\\" .. addonName .. "\\"
 local DefaultDB = {
   itemSize = 24,
@@ -84,6 +86,7 @@ local DefaultDBProfile = {
     }
   },
   itemsLocked = {},
+  categoryStates = { [SETTINGS] = true },
 }
 local function MergeTables (dst, src)
   for k, v in pairs (src) do
@@ -105,7 +108,7 @@ local function ReforgeFrameIsVisible()
 end
 
 ReforgeLite.dbkey = UnitName ("player") .. " - " .. GetRealmName ()
-addonTable.localeClass, addonTable.playerClass = UnitClass ("player")
+addonTable.localeClass, addonTable.playerClass, addonTable.playerClassID = UnitClass ("player")
 addonTable.playerRace = select(2,UnitRace ("player"))
 local playerClass, playerRace, localeClass = addonTable.playerClass, addonTable.playerRace, addonTable.localeClass
 local missChance = (playerRace == "NightElf" and 7 or 5)
@@ -177,73 +180,77 @@ end
 
 -----------------------------------------------------------------
 
-StaticPopupDialogs["REFORGE_LITE_SAVE_PRESET"] = {
-  text = L["Enter the preset name"],
-  button1 = ACCEPT,
-  button2 = CANCEL,
-  hasEditBox = true,
-  maxLetters = 31,
-  OnAccept = function (self)
-    local name = self.editBox:GetText ()
-    ReforgeLite.db.customPresets[name] = {
-      caps = DeepCopy (ReforgeLite.pdb.caps),
-      weights = DeepCopy (ReforgeLite.pdb.weights)
-    }
-    ReforgeLite.deletePresetButton:Enable ()
-  end,
-  EditBoxOnEnterPressed = function (self)
-    local name = self:GetParent ().editBox:GetText ()
-    if name ~= "" then
-      ReforgeLite.db.customPresets[name] = {
-        caps = DeepCopy (ReforgeLite.pdb.caps),
-        weights = DeepCopy (ReforgeLite.pdb.weights)
-      }
-      ReforgeLite.deletePresetButton:Enable ()
-      self:GetParent ():Hide ()
-    end
-  end,
-  EditBoxOnTextChanged = function (self, data)
-    if data ~= "" then
-      self:GetParent ().button1:Enable ()
-    else
-      self:GetParent ().button1:Disable ()
-    end
-  end,
-  EditBoxOnEscapePressed = function(self)
-		self:GetParent():Hide();
-	end,
-  OnShow = function (self)
-    self.editBox:SetText ("")
-    self.button1:Disable ()
-    self.editBox:SetFocus ()
-  end,
-  OnHide = function (self)
-    ChatEdit_FocusActiveWindow ()
-    self.editBox:SetText ("")
-  end,
-  timeout = 0,
-  whileDead = true,
-  hideOnEscape = true
-}
+local function CreateStaticPopup(name, text, func)
+  StaticPopupDialogs[name] = {
+    text = text,
+    button1 = ACCEPT,
+    button2 = CANCEL,
+    hasEditBox = true,
+    editBoxWidth = 350,
+    OnAccept = function (self)
+      func(self.editBox:GetText ())
+    end,
+    EditBoxOnEnterPressed = function (self)
+      local importStr = self:GetParent ().editBox:GetText ()
+      if importStr ~= "" then
+        func(importStr)
+        self:GetParent ():Hide ()
+      end
+    end,
+    EditBoxOnTextChanged = function (self, data)
+      if data ~= "" then
+        self:GetParent ().button1:Enable ()
+      else
+        self:GetParent ().button1:Disable ()
+      end
+    end,
+    EditBoxOnEscapePressed = function(self)
+      self:GetParent():Hide();
+    end,
+    OnShow = function (self)
+      self.editBox:SetText ("")
+      self.button1:Disable ()
+      self.editBox:SetFocus ()
+    end,
+    OnHide = function (self)
+      ChatEdit_FocusActiveWindow ()
+      self.editBox:SetText ("")
+    end,
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true
+  }
+end
+
+CreateStaticPopup("REFORGE_LITE_PARSE_PAWN", L["Enter pawn string"], function(text) ReforgeLite:ParsePawnString(text) end )
+CreateStaticPopup("REFORGE_LITE_PARSE_WOWSIMS", L["Enter WoWSims JSON"], function(text) ReforgeLite:ParseWoWSimsString(text) end )
+CreateStaticPopup("REFORGE_LITE_SAVE_PRESET", L["Enter the preset name"], function(text)
+  ReforgeLite.db.customPresets[text] = {
+    caps = DeepCopy(ReforgeLite.pdb.caps),
+    weights = DeepCopy(ReforgeLite.pdb.weights)
+  }
+  ReforgeLite.deletePresetButton:Enable()
+end)
+
 
 ReforgeLite.itemSlots = {
-  "HeadSlot",
-  "NeckSlot",
-  "ShoulderSlot",
-  "BackSlot",
-  "ChestSlot",
-  "WristSlot",
-  "HandsSlot",
-  "WaistSlot",
-  "LegsSlot",
-  "FeetSlot",
-  "Finger0Slot",
-  "Finger1Slot",
-  "Trinket0Slot",
-  "Trinket1Slot",
-  "MainHandSlot",
-  "SecondaryHandSlot",
-  "RangedSlot"
+  "HEADSLOT",
+  "NECKSLOT",
+  "SHOULDERSLOT",
+  "BACKSLOT",
+  "CHESTSLOT",
+  "WRISTSLOT",
+  "HANDSSLOT",
+  "WAISTSLOT",
+  "LEGSSLOT",
+  "FEETSLOT",
+  "FINGER0SLOT",
+  "FINGER1SLOT",
+  "TRINKET0SLOT",
+  "TRINKET1SLOT",
+  "MAINHANDSLOT",
+  "SECONDARYHANDSLOT",
+  "RANGEDSLOT"
 }
 local ignoredSlots = { [INVSLOT_TABARD] = true, [INVSLOT_BODY] = true }
 
@@ -257,12 +264,7 @@ local function HasFireBuff()
 end
 
 function ReforgeLite:CreateItemStats()
-  local function RatingStat (i, name_, tip_, id_, hid_, short)
-    if hid_ then
-      if playerClass == "HUNTER" then
-        id_ = hid_
-      end
-    end
+  local function RatingStat (i, name_, tip_, id_, short)
     return {
       name = name_,
       tip = tip_,
@@ -279,6 +281,10 @@ function ReforgeLite:CreateItemStats()
       end,
       parser = short and "^+(%d+) " .. _G[name_].."$" or _G[name_]:gsub("%%s", "(.+)")
     }
+  end
+  local CR_HIT, CR_CRIT, CR_HASTE = CR_HIT_SPELL, CR_CRIT_SPELL, CR_HASTE_SPELL
+  if playerClass == "HUNTER" then
+    CR_HIT, CR_CRIT, CR_HASTE = CR_HIT_RANGED, CR_CRIT_RANGED, CR_HASTE_RANGED
   end
   self.itemStats = {
     {
@@ -301,13 +307,13 @@ function ReforgeLite:CreateItemStats()
         end
       end
     },
-    RatingStat (self.STATS.DODGE, "ITEM_MOD_DODGE_RATING", STAT_DODGE, CR_DODGE),
-    RatingStat (self.STATS.PARRY, "ITEM_MOD_PARRY_RATING", STAT_PARRY, CR_PARRY),
-    RatingStat (self.STATS.HIT, "ITEM_MOD_HIT_RATING", HIT, CR_HIT_SPELL, CR_HIT_RANGED),
-    RatingStat (self.STATS.CRIT, "ITEM_MOD_CRIT_RATING", CRIT_ABBR, CR_CRIT_SPELL, CR_CRIT_RANGED),
-    RatingStat (self.STATS.HASTE, "ITEM_MOD_HASTE_RATING", STAT_HASTE, CR_HASTE_SPELL, CR_HASTE_RANGED),
-    RatingStat (self.STATS.EXP, "ITEM_MOD_EXPERTISE_RATING", STAT_EXPERTISE, CR_EXPERTISE),
-    RatingStat (self.STATS.MASTERY, "ITEM_MOD_MASTERY_RATING_SHORT", STAT_MASTERY, CR_MASTERY, nil, true)
+    RatingStat (self.STATS.DODGE,   "ITEM_MOD_DODGE_RATING",         STAT_DODGE,     CR_DODGE),
+    RatingStat (self.STATS.PARRY,   "ITEM_MOD_PARRY_RATING",         STAT_PARRY,     CR_PARRY),
+    RatingStat (self.STATS.HIT,     "ITEM_MOD_HIT_RATING",           HIT,            CR_HIT),
+    RatingStat (self.STATS.CRIT,    "ITEM_MOD_CRIT_RATING",          CRIT_ABBR,      CR_CRIT),
+    RatingStat (self.STATS.HASTE,   "ITEM_MOD_HASTE_RATING",         STAT_HASTE,     CR_HASTE),
+    RatingStat (self.STATS.EXP,     "ITEM_MOD_EXPERTISE_RATING",     STAT_EXPERTISE, CR_EXPERTISE),
+    RatingStat (self.STATS.MASTERY, "ITEM_MOD_MASTERY_RATING_SHORT", STAT_MASTERY,   CR_MASTERY, true)
   }
 end
 ReforgeLite:CreateItemStats()
@@ -461,6 +467,33 @@ function ReforgeLite:GetStatScore (stat, value)
   end
 end
 
+function ReforgeLite:ParseWoWSimsString(importStr)
+  local success, wowsims = pcall(function () return addonTable.json.decode(importStr) end)
+  if success and (wowsims or {}).player then
+    local newItems = DeepCopy(self.pdb.method.items)
+    for slot,item in ipairs(newItems) do
+      local simItemInfo = wowsims.player.equipment.items[slot] or {}
+      local equippedItemInfo = self.itemData[slot]
+      if simItemInfo.id ~= equippedItemInfo.itemId then
+        local _, importItemLink = C_Item.GetItemInfo(simItemInfo.id)
+        print(string.format( L["Item Import Mismatch"], importItemLink, equippedItemInfo.item))
+        return
+      end
+      item.reforge = nil
+      if simItemInfo.reforging then
+        item.reforge = simItemInfo.reforging - self.REFORGE_TABLE_BASE
+        item.src, item.dst = unpack(self.reforgeTable[item.reforge])
+      end
+      item.stats = nil
+    end
+    self.pdb.method.items = newItems
+    self:UpdateMethodStats(self.pdb.method)
+    self:UpdateMethodCategory ()
+  else -- error
+    print(wowsims)
+  end
+end
+
 function ReforgeLite:ParsePawnString (pawn)
   local pos, _, version, name, values = strfind (pawn, "^%s*%(%s*Pawn%s*:%s*v(%d+)%s*:%s*\"([^\"]+)\"%s*:%s*(.+)%s*%)%s*$")
   version = tonumber (version)
@@ -501,49 +534,6 @@ function ReforgeLite:ParsePawnString (pawn)
   self:SetStatWeights (weights)
 end
 
-StaticPopupDialogs["REFORGE_LITE_PARSE_PAWN"] = {
-  text = L["Enter pawn string"],
-  button1 = ACCEPT,
-  button2 = CANCEL,
-  hasEditBox = true,
-  editBoxWidth = 350,
-  maxLetters = 1024,
-  OnAccept = function (self)
-    local pawn = self.editBox:GetText ()
-    ReforgeLite:ParsePawnString (pawn)
-  end,
-  EditBoxOnEnterPressed = function (self)
-    local pawn = self:GetParent ().editBox:GetText ()
-    if pawn ~= "" then
-      ReforgeLite:ParsePawnString (pawn)
-      self:GetParent ():Hide ()
-    end
-  end,
-  EditBoxOnTextChanged = function (self, data)
-    if data ~= "" then
-      self:GetParent ().button1:Enable ()
-    else
-      self:GetParent ().button1:Disable ()
-    end
-  end,
-  EditBoxOnEscapePressed = function(self)
-		self:GetParent():Hide();
-	end,
-  OnShow = function (self)
-    self.editBox:SetText ("")
-    self.button1:Disable ()
-    self.editBox:SetFocus ()
-  end,
-  OnHide = function (self)
-    ChatEdit_FocusActiveWindow ()
-    self.editBox:SetText ("")
-  end,
-  timeout = 0,
-  whileDead = true,
-  hideOnEscape = true
-}
-
-
 local orderIds = {}
 local function getOrderId(section)
   orderIds[section] = (orderIds[section] or 0) + 1
@@ -555,10 +545,8 @@ end
 function ReforgeLite:CreateCategory (name)
   local c = CreateFrame ("Frame", nil, self.content)
   c:ClearAllPoints ()
-  c:SetWidth (16)
-  c:SetHeight (16)
-  c.expanded = true
-
+  c:SetSize(16,16)
+  c.expanded = not self.pdb.categoryStates[name]
   c.name = c:CreateFontString (nil, "OVERLAY", "GameFontNormal")
   c.catname = c.name
   c.name:SetPoint ("TOPLEFT", c, "TOPLEFT", 18, -1)
@@ -567,8 +555,7 @@ function ReforgeLite:CreateCategory (name)
 
   c.button = CreateFrame ("Button", nil, c)
   c.button:ClearAllPoints ()
-  c.button:SetWidth (14)
-  c.button:SetHeight (14)
+  c.button:SetSize (14,14)
   c.button:SetPoint ("TOPLEFT", c, "TOPLEFT", 0, 0)
   c.button:SetHighlightTexture ("Interface\\Buttons\\UI-PlusButton-Hilight")
   c.button.UpdateTexture = function (self)
@@ -581,49 +568,51 @@ function ReforgeLite:CreateCategory (name)
     end
   end
   c.button:UpdateTexture ()
-  c.button:SetScript ("OnClick", function (self)
-    self:GetParent ():Toggle ()
-  end)
+  c.button:SetScript ("OnClick", function (btn) btn:GetParent():Toggle() end)
   c.button.anchor = {point = "TOPLEFT", rel = c, relPoint = "TOPLEFT", x = 0, y = 0}
 
   c.frames = {}
   c.anchors = {}
-  c.AddFrame = function (self, frame)
-    table.insert (self.frames, frame)
-    frame.Show2 = function (self)
-      if self.category.expanded then
-        self:Show ()
+  c.AddFrame = function (cat, frame)
+    table.insert (cat.frames, frame)
+    frame.Show2 = function (f)
+      if f.category.expanded then
+        f:Show ()
       end
-      self.chidden = nil
+      f.chidden = nil
     end
-    frame.Hide2 = function (self)
-      self:Hide ()
-      self.chidden = true
+    frame.Hide2 = function (f)
+      f:Hide ()
+      f.chidden = true
     end
-    frame.category = self
+    frame.category = cat
+    if not cat.expanded then
+      frame:Hide()
+    end
   end
 
-  c.Toggle = function (self)
-    self.expanded = not self.expanded
+  c.Toggle = function (category)
+    category.expanded = not category.expanded
+    self.pdb.categoryStates[name] = not category.expanded or nil
     if c.expanded then
-      for k, v in pairs (self.frames) do
+      for k, v in pairs (category.frames) do
         if not v.chidden then
           v:Show ()
         end
       end
-      for k, v in pairs (self.anchors) do
+      for k, v in pairs (category.anchors) do
         v.frame:SetPoint (v.point, v.rel, v.relPoint, v.x, v.y)
       end
     else
-      for k, v in pairs (self.frames) do
+      for k, v in pairs (category.frames) do
         v:Hide ()
       end
-      for k, v in pairs (self.anchors) do
-        v.frame:SetPoint (v.point, self.button, v.relPoint, v.x, v.y)
+      for k, v in pairs (category.anchors) do
+        v.frame:SetPoint (v.point, category.button, v.relPoint, v.x, v.y)
       end
     end
-    self.button:UpdateTexture ()
-    ReforgeLite:UpdateContentSize ()
+    category.button:UpdateTexture ()
+    self:UpdateContentSize ()
   end
 
   return c
@@ -736,22 +725,26 @@ function ReforgeLite:FixScroll ()
   end
 end
 
-function ReforgeLite:CreateFrame ()
+function ReforgeLite:CreateFrame()
+  self:Hide()
   self:SetFrameStrata ("DIALOG")
   self:ClearAllPoints ()
-  self:SetWidth (self.db.windowWidth)
-  self:SetHeight (self.db.windowHeight)
+  self:SetSize(self.db.windowWidth, self.db.windowHeight)
   self:SetResizeBounds(780, 500, 1000, 800)
   if self.db.windowX and self.db.windowY then
     self:SetPoint ("TOPLEFT", UIParent, "BOTTOMLEFT", self.db.windowX, self.db.windowY)
   else
     self:SetPoint ("CENTER")
   end
-  self:SetBackdrop ({
-    bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16,
-    edgeFile = AddonPath .. "textures\\frameborder", edgeSize = 32,
+  self.backdropInfo = {
+    bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+    edgeFile = AddonPath .. "textures\\frameborder",
+    tile = true,
+    tileSize = 16,
+    edgeSize = 32,
     insets = {left = 1, right = 1, top = 20, bottom = 1}
-  })
+  }
+  self:ApplyBackdrop()
   self:SetBackdropBorderColor (unpack (self.db.activeWindowTitle))
   self:SetBackdropColor (0.1, 0.1, 0.1)
 
@@ -787,8 +780,7 @@ function ReforgeLite:CreateFrame ()
   self.close:SetNormalTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Up.blp")
   self.close:SetPushedTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Down.blp")
   self.close:SetHighlightTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight.blp")
-  self.close:SetWidth (20)
-  self.close:SetHeight (20)
+  self.close:SetSize(20, 20)
   self.close:SetPoint ("TOPRIGHT", self, "TOPRIGHT", -4, -12)
   self.close:SetScript ("OnClick", function (self)
     self:GetParent ():Hide ()
@@ -797,8 +789,7 @@ function ReforgeLite:CreateFrame ()
   self.leftGrip = CreateFrame ("Button", nil, self)
   self.leftGrip:SetNormalTexture (AddonPath .. "textures\\leftgrip")
   self.leftGrip:SetHighlightTexture (AddonPath .. "textures\\leftgrip")
-  self.leftGrip:SetWidth (20)
-  self.leftGrip:SetHeight (20)
+  self.leftGrip:SetSize(20, 20)
   self.leftGrip:SetPoint ("BOTTOMLEFT", self, "BOTTOMLEFT", -4, -4)
   self.leftGrip:SetScript ("OnMouseDown", function (self, arg)
     if arg == "LeftButton" then
@@ -817,8 +808,7 @@ function ReforgeLite:CreateFrame ()
   self.rightGrip = CreateFrame ("Button", nil, self)
   self.rightGrip:SetNormalTexture (AddonPath .. "textures\\rightGrip")
   self.rightGrip:SetHighlightTexture (AddonPath .. "textures\\rightGrip")
-  self.rightGrip:SetWidth (20)
-  self.rightGrip:SetHeight (20)
+  self.rightGrip:SetSize(20, 20)
   self.rightGrip:SetPoint ("BOTTOMRIGHT", self, "BOTTOMRIGHT", 4, -4)
   self.rightGrip:SetScript ("OnMouseDown", function (self, arg)
     if arg == "LeftButton" then
@@ -860,8 +850,8 @@ function ReforgeLite:CreateFrame ()
   self.scrollBar:SetValueStep (1)
   self.scrollBar:SetValue (0)
   self.scrollBar:SetWidth (16)
-  self.scrollBar:SetScript ("OnValueChanged", function (self, value)
-    ReforgeLite:SetScroll (value)
+  self.scrollBar:SetScript ("OnValueChanged", function (bar, value)
+    self:SetScroll (value)
   end)
   self.scrollBar:Hide ()
 
@@ -888,7 +878,7 @@ function ReforgeLite:CreateItemTable ()
   self.itemLevel:SetPoint ("TOPLEFT", self, "TOPLEFT", 12, -40)
   self.itemLevel:SetTextColor (1, 1, 0.8)
   self.itemLevel:SetText (STAT_AVERAGE_ITEM_LEVEL .. ": 0")
-  
+
   self.itemTable = GUI:CreateTable (#self.itemSlots + 1, #self.itemStats, self.db.itemSize, self.db.itemSize + 4, {0.5, 0.5, 0.5, 1}, self)
   self.itemTable:SetPoint ("TOPLEFT", self.itemLevel, "BOTTOMLEFT", 0, -10)
   self.itemTable:SetPoint ("BOTTOM", self, "BOTTOM", 0, 10)
@@ -907,12 +897,11 @@ function ReforgeLite:CreateItemTable ()
     self.itemData[i] = CreateFrame ("Frame", nil, self.itemTable)
     self.itemData[i].slot = v
     self.itemData[i]:ClearAllPoints ()
-    self.itemData[i]:SetWidth (self.db.itemSize)
-    self.itemData[i]:SetHeight (self.db.itemSize)
+    self.itemData[i]:SetSize(self.db.itemSize, self.db.itemSize)
     self.itemTable:SetCell (i, 0, self.itemData[i])
     self.itemData[i]:EnableMouse (true)
     self.itemData[i]:SetScript ("OnEnter", function (self)
-      GameTooltip:SetOwner (self, "ANCHORLEFT")
+      GameTooltip:SetOwner (self, "ANCHOR_LEFT")
       local hasItem, hasCooldown, repairCost = GameTooltip:SetInventoryItem ("player", self.slotId)
       if not hasItem then
         local text = _G[strupper (self.slot)]
@@ -1246,7 +1235,7 @@ function ReforgeLite:CreateOptionList ()
 
   self.presetsButton = GUI:CreateImageButton (self.content, 24, 24, "Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up",
     "Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down", "Interface\\Buttons\\UI-Common-MouseHilight", function ()
-    ToggleDropDownMenu (1, nil, self.presetMenu, self.presetsButton:GetName (), 0, 0)
+    LibDD:ToggleDropDownMenu (1, nil, self.presetMenu, self.presetsButton:GetName (), 0, 0)
   end)
   self.statWeightsCategory:AddFrame (self.presetsButton)
   self:SetAnchor (self.presetsButton, "TOPLEFT", self.statWeightsCategory, "BOTTOMLEFT", 0, -5)
@@ -1256,9 +1245,8 @@ function ReforgeLite:CreateOptionList ()
 
   self.savePresetButton = CreateFrame ("Button", "ReforgeLiteSavePresetButton", self.content, "UIPanelButtonTemplate")
   self.statWeightsCategory:AddFrame (self.savePresetButton)
-  self.savePresetButton:SetWidth (114)
-  self.savePresetButton:SetHeight (22)
   self.savePresetButton:SetText (SAVE)
+  self.savePresetButton:SetSize (self.savePresetButton:GetFontString():GetStringWidth() + 20, 22)
   self.savePresetButton:SetScript ("OnClick", function (self)
     StaticPopup_Show ("REFORGE_LITE_SAVE_PRESET")
   end)
@@ -1266,12 +1254,11 @@ function ReforgeLite:CreateOptionList ()
 
   self.deletePresetButton = CreateFrame ("Button", "ReforgeLiteDeletePresetButton", self.content, "UIPanelButtonTemplate")
   self.statWeightsCategory:AddFrame (self.deletePresetButton)
-  self.deletePresetButton:SetWidth (114)
-  self.deletePresetButton:SetHeight (22)
   self.deletePresetButton:SetText (DELETE)
+  self.deletePresetButton:SetSize (self.deletePresetButton:GetFontString():GetStringWidth() + 20, 22)
   self.deletePresetButton:SetScript ("OnClick", function ()
     if next (self.db.customPresets) then
-      ToggleDropDownMenu (1, nil, self.presetDelMenu, self.deletePresetButton:GetName (), 0, 0)
+      LibDD:ToggleDropDownMenu (1, nil, self.presetDelMenu, self.deletePresetButton:GetName (), 0, 0)
     end
   end)
   self:SetAnchor (self.deletePresetButton, "LEFT", self.savePresetButton, "RIGHT", 5, 0)
@@ -1279,14 +1266,11 @@ function ReforgeLite:CreateOptionList ()
     self.deletePresetButton:Disable ()
   end
 
-  self.pawnButton = CreateFrame ("Button", "ReforgeLiteDeletePresetButton", self.content, "UIPanelButtonTemplate")
+  self.pawnButton = CreateFrame ("Button", "ReforgeLiteImportPawnButton", self.content, "UIPanelButtonTemplate")
   self.statWeightsCategory:AddFrame (self.pawnButton)
-  self.pawnButton:SetWidth (114)
-  self.pawnButton:SetHeight (22)
   self.pawnButton:SetText (L["Import Pawn"])
-  self.pawnButton:SetScript ("OnClick", function (self)
-    StaticPopup_Show ("REFORGE_LITE_PARSE_PAWN")
-  end)
+  self.pawnButton:SetSize (self.pawnButton:GetFontString():GetStringWidth() + 20, 22)
+  self.pawnButton:SetScript ("OnClick", function() StaticPopup_Show ("REFORGE_LITE_PARSE_PAWN") end)
   self:SetAnchor (self.pawnButton, "TOPLEFT", self.presetsButton, "BOTTOMLEFT", 0, -5)
 
   self.convertSpirit = CreateFrame ("Frame", nil, self.content)
@@ -1351,12 +1335,6 @@ function ReforgeLite:CreateOptionList ()
     self.statCaps[i] = {}
     self.statCaps[i].stat = GUI:CreateDropdown (self.statCaps, statList, self.pdb.caps[i].stat,
       function (val) self.pdb.caps[i].stat = val end, 110)
-    self.statCaps[i].cover = CreateFrame ("Frame", nil, self.statCaps)
-    self.statCaps[i].cover:SetAllPoints (self.statCaps[i].stat)
-    self.statCaps[i].cover:SetFrameLevel (self.statCaps[i].stat:GetFrameLevel () + 10)
-    self.statCaps[i].cover:EnableMouse (true)
-    GUI:SetTooltip (self.statCaps[i].cover, L["Only one cap allowed with spirit-to-hit conversion"])
-    self.statCaps[i].cover:Hide ()
     self.statCaps[i].add = GUI:CreateImageButton (self.statCaps, 20, 20, "Interface\\Buttons\\UI-PlusButton-Up",
       "Interface\\Buttons\\UI-PlusButton-Down", "Interface\\Buttons\\UI-PlusButton-Hilight", function ()
       self:AddCapPoint (i)
@@ -1391,14 +1369,13 @@ function ReforgeLite:CreateOptionList ()
   end)
 
   self.computeButton = CreateFrame ("Button", "ReforgeLiteConfirmButton", self.content, "UIPanelButtonTemplate")
-  self.computeButton:SetWidth (114)
-  self.computeButton:SetHeight (22)
   self.computeButton:SetText (L["Compute"])
-  self.computeButton:SetScript ("OnClick", function (self)
-    local method = ReforgeLite:Compute ()
+  self.computeButton:SetSize (self.computeButton:GetFontString():GetStringWidth() + 20, 22)
+  self.computeButton:SetScript ("OnClick", function (btn)
+    local method = self:Compute ()
     if method then
-      ReforgeLite.pdb.method = method
-      ReforgeLite:UpdateMethodCategory ()
+      self.pdb.method = method
+      self:UpdateMethodCategory ()
     end
   end)
 
@@ -1407,13 +1384,10 @@ function ReforgeLite:CreateOptionList ()
   self.quality = CreateFrame ("Slider", nil, self.content, "BackdropTemplate")
   self:SetAnchor (self.quality, "LEFT", self.computeButton, "RIGHT", 15, 0)
   self.quality:SetOrientation ("HORIZONTAL")
-  self.quality:SetWidth (150)
-  self.quality:SetHeight (15)
+  self.quality:SetSize(150, 15)
   self.quality:SetHitRectInsets (0, 0, -10, 0)
-  self.quality:SetBackdrop ({bgFile = "Interface\\Buttons\\UI-SliderBar-Background",
-    edgeFile = "Interface\\Buttons\\UI-SliderBar-Border", tile = true, tileSize = 8, edgeSize = 8,
-    insets = {left = 3, right = 3, top = 6, bottom = 6}
-  })
+  self.quality.backdropInfo = BACKDROP_SLIDER_8_8
+  self.quality:ApplyBackdrop()
   self.quality:SetThumbTexture ("Interface\\Buttons\\UI-SliderBar-Button-Horizontal")
   self.quality:SetMinMaxValues (1, 20)
   self.quality:SetValueStep (1)
@@ -1458,9 +1432,8 @@ function ReforgeLite:CreateOptionList ()
   self.storedScore.suffix:SetText (")")
 
   self.storedClear = CreateFrame ("Button", "ReforgeLiteStoredClear", self.content, "UIPanelButtonTemplate")
-  self.storedClear:SetWidth (114)
-  self.storedClear:SetHeight (22)
   self.storedClear:SetText (L["Clear"])
+  self.storedClear:SetSize (self.storedClear:GetFontString():GetStringWidth() + 20, 22)
   self.storedClear:SetScript ("OnClick", function (self)
     ReforgeLite:ClearStoredMethod ()
   end)
@@ -1468,9 +1441,8 @@ function ReforgeLite:CreateOptionList ()
   self:SetAnchor (self.storedClear, "TOPLEFT", self.storedScore, "BOTTOMLEFT", 0, -8)
 
   self.storedRestore = CreateFrame ("Button", "ReforgeLiteStoredRestore", self.content, "UIPanelButtonTemplate")
-  self.storedRestore:SetWidth (114)
-  self.storedRestore:SetHeight (22)
   self.storedRestore:SetText (REFORGE_RESTORE)
+  self.storedRestore:SetSize (self.storedRestore:GetFontString():GetStringWidth() + 20, 22)
   self.storedRestore:SetScript ("OnClick", function (self)
     ReforgeLite:RestoreStoredMethod ()
   end)
@@ -1496,12 +1468,10 @@ function ReforgeLite:CreateOptionList ()
   self.settings:SetRowHeight (self.db.itemSize + 2)
 
   self:FillSettings ()
-  self.settingsCategory:Toggle ()
 
   self.lastElement = CreateFrame ("Frame", nil, self.content)
   self.lastElement:ClearAllPoints ()
-  self.lastElement:SetWidth (0)
-  self.lastElement:SetHeight (0)
+  self.lastElement:SetSize(0, 0)
   self:SetAnchor (self.lastElement, "TOPLEFT", self.settings, "BOTTOMLEFT", 0, -10)
   self:UpdateContentSize ()
 
@@ -1535,13 +1505,10 @@ function ReforgeLite:FillSettings ()
     end
   end), "LEFT")
 
-  self.debugButton = CreateFrame ("Button", "ReforgeLiteDebugButton", self.content, "UIPanelButtonTemplate")
-  self.debugButton:SetWidth (114)
-  self.debugButton:SetHeight (22)
+  self.debugButton = CreateFrame ("Button", nil, self.settings, "UIPanelButtonTemplate")
   self.debugButton:SetText (L["Debug"])
-  self.debugButton:SetScript ("OnClick", function (self)
-    ReforgeLite:DebugMethod ()
-  end)
+  self.debugButton:SetSize (self.debugButton:GetFontString():GetStringWidth() + 20, 22)
+  self.debugButton:SetScript ("OnClick", function (btn) self:DebugMethod() end)
   self.settings:SetCell (getOrderId('settings'), 0, self.debugButton, "LEFT")
 end
 function ReforgeLite:GetCurrentScore ()
@@ -1584,9 +1551,16 @@ function ReforgeLite:UpdateMethodCategory ()
     self.methodCategory = self:CreateCategory (L["Result"])
     self:SetAnchor (self.methodCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
 
+    self.importWowSims = CreateFrame ("Button", nil, self.methodCategory, "UIPanelButtonTemplate")
+    self.methodCategory:AddFrame (self.importWowSims)
+    self.importWowSims:SetText (L["Import WoWSims"])
+    self.importWowSims:SetSize (self.importWowSims:GetFontString():GetStringWidth() + 20, 22)
+    self.importWowSims:SetScript ("OnClick", function() StaticPopup_Show ("REFORGE_LITE_PARSE_WOWSIMS") end)
+    self:SetAnchor (self.importWowSims, "TOPLEFT", self.methodCategory, "BOTTOMLEFT", 0, -5)
+
     self.methodStats = GUI:CreateTable (#self.itemStats, 2, self.db.itemSize, 60, {0.5, 0.5, 0.5, 1})
     self.methodCategory:AddFrame (self.methodStats)
-    self:SetAnchor (self.methodStats, "TOPLEFT", self.methodCategory, "BOTTOMLEFT", 0, -5)
+    self:SetAnchor (self.methodStats, "TOPLEFT", self.importWowSims, "BOTTOMLEFT", 0, -5)
     self.methodStats:SetRowHeight (self.db.itemSize + 2)
     self.methodStats:SetColumnWidth (60)
 
@@ -1616,34 +1590,28 @@ function ReforgeLite:UpdateMethodCategory ()
       self.methodStats[i].delta:SetText ("+0")
     end
 
-    self.methodShow = CreateFrame ("Button", "ReforgeLiteMethodShowButton", self.content, "UIPanelButtonTemplate")
-    self.methodShow:SetWidth (114)
-    self.methodShow:SetHeight (22)
+    self.methodShow = CreateFrame ("Button", nil, self.content, "UIPanelButtonTemplate")
+    self.methodShow:SetSize(85, 22)
     self.methodShow:SetText (SHOW)
-    self.methodShow:SetScript ("OnClick", function (self)
-      ReforgeLite:ShowMethodWindow ()
-    end)
+    self.methodShow:SetScript ("OnClick", function (btn) self:ShowMethodWindow() end)
     self.methodCategory:AddFrame (self.methodShow)
     self:SetAnchor (self.methodShow, "TOPLEFT", self.methodStats, "BOTTOMLEFT", 0, -5)
 
-    self.methodReset = CreateFrame ("Button", "ReforgeLiteMethodResetButton", self.content, "UIPanelButtonTemplate")
-    self.methodReset:SetWidth (114)
-    self.methodReset:SetHeight (22)
+    self.methodReset = CreateFrame ("Button", nil, self.content, "UIPanelButtonTemplate")
+    self.methodReset:SetSize(85, 22)
     self.methodReset:SetText (RESET)
-    self.methodReset:SetScript ("OnClick", function (self)
-      ReforgeLite:ResetMethod ()
-    end)
+    self.methodReset:SetScript ("OnClick", function (btn) self:ResetMethod() end)
     self.methodCategory:AddFrame (self.methodReset)
     self:SetAnchor (self.methodReset, "BOTTOMLEFT", self.methodShow, "BOTTOMRIGHT", 8, 0)
 
     self:SetAnchor (self.storedCategory, "TOPLEFT", self.methodShow, "BOTTOMLEFT", 0, -10)
-    
+
     self.methodTank = CreateFrame ("Frame", nil, self.content)
     self.methodCategory:AddFrame (self.methodTank)
     self.methodTank:SetPoint ("TOPLEFT", self.methodStats, "TOPRIGHT", 10, 0)
     self.methodTank:SetPoint ("BOTTOMLEFT", self.methodStats, "BOTTOMRIGHT", 10, 0)
     self.methodTank:SetPoint ("RIGHT", self.content, "RIGHT", -2, 0)
-    
+
     for i = 1, 10 do
       self.methodTank[i] = self.methodTank:CreateFontString (nil, "ARTWORK", "GameFontNormal")
       if i == 1 then
@@ -1704,69 +1672,33 @@ function ReforgeLite:RefreshMethodStats (relax)
       else
         self.methodTank:Hide2 ()
       end
-      local stats = self.itemStats
---[[      if self.pdb.tankingModel then
-        stats = self.tankingStats[self.pdb.tankingModel] or stats
-      end
-      
-      local rows = 0
-      for i, _ in pairs (stats) do
-        rows = rows + 1
-      end
-      
-      self.methodStats:ClearCells ()
-      while self.methodStats.rows > rows do
-        self.methodStats:DeleteRow (1)
-      end
-      if self.methodStats.rows < rows then
-        self.methodStats:AddRow (1, rows - self.methodStats.rows)
-      end
-      self.methodStats:SetRowHeight (self.db.itemSize + 2)
-      
-      self.methodStats:SetCellText (0, 0, L["Score"], "LEFT", {1, 0.8, 0})
-      self.methodStats:SetCell (0, 1, self.methodStats.score)
-      self.methodStats:SetCell (0, 2, self.methodStats.scoreDelta)
-      self.methodStats.score:Show ()
-      self.methodStats.scoreDelta:Show ()]]
-
       self.methodStats.score:SetText (floor (score + 0.5))
       SetTextDelta (self.methodStats.scoreDelta, score, self:GetCurrentScore ())
---      local pos = 0
---      for i, v in pairs (stats) do
-      for i, v in ipairs (stats) do
---        pos = pos + 1
---        self.methodStats:SetCellText (pos, 0, v.tip, "LEFT")
-
+      for i, v in ipairs (self.itemStats) do
         local mvalue = v.mgetter (self.pdb.method)
         if v.percent then
           self.methodStats[i].value:SetText (format ("%.2f%%", mvalue))
         else
           self.methodStats[i].value:SetText (format ("%s", mvalue))
         end
-        local override = nil
+        local override
         mvalue = v.mgetter (self.pdb.method, true)
         local value = v.getter ()
         if self:GetStatScore (i, mvalue) == self:GetStatScore (i, value) then
           override = 0
         end
         SetTextDelta (self.methodStats[i].delta, mvalue, value, override)
-        
---        self.methodStats:SetCell (pos, 1, self.methodStats[pos].value)
---        self.methodStats:SetCell (pos, 2, self.methodStats[pos].delta)
---        self.methodStats[pos].value:Show ()
---        self.methodStats[pos].delta:Show ()
       end
     end
     if relax and (self.pdb.storedMethod == nil or score > storedScore) then
       self.pdb.storedMethod = DeepCopy (self.pdb.method)
+      self:UpdateMethodStats (self.pdb.storedMethod)
       storedScore = score
       self.storedClear:Enable ()
       self.storedRestore:Enable ()
     end
   end
   if self.pdb.storedMethod then
-    self:UpdateMethodStats (self.pdb.storedMethod)
-    local storedScore = self:GetMethodScore (self.pdb.storedMethod)
     self.storedScore.score:SetText (format ("%s (", storedScore))
     SetTextDelta (self.storedScore.delta, storedScore, self:GetCurrentScore ())
   end
@@ -1791,9 +1723,9 @@ function ReforgeLite:UpdateContentSize ()
   self:SetScript ("OnUpdate", self.FixScroll)
 end
 
-local function GetReforgeTableIndex(stat1, stat2)
+function ReforgeLite:GetReforgeTableIndex(src, dst)
   for k,v in ipairs(reforgeTable) do
-    if v[1] == stat1 and v[2] == stat2 then
+    if v[1] == src and v[2] == dst then
       return k
     end
   end
@@ -1824,7 +1756,7 @@ local function SearchTooltipForReforgeID(tip)
     end
     if srcStat and destStat then break end
   end
-  return GetReforgeTableIndex(srcStat, destStat)
+  return ReforgeLite:GetReforgeTableIndex(srcStat, destStat)
 end
 
 local reforgeIdTooltip
@@ -1860,14 +1792,14 @@ end
 
 function ReforgeLite:UpdateItems ()
   for i, v in ipairs (self.itemData) do
-    local item = GetInventoryItemLink ("player", v.slotId)
-    local texture = GetInventoryItemTexture ("player", v.slotId)
+    local item = Item:CreateFromEquipmentSlot(v.slotId)
     local stats = {}
     local reforgeSrc, reforgeDst
-    if texture then
-      v.item = item
-      v.texture:SetTexture (texture)
-      stats = GetItemStats (item)
+    if not item:IsItemEmpty() then
+      v.item = item:GetItemLink()
+      v.itemId = item:GetItemID()
+      v.texture:SetTexture (item:GetItemIcon())
+      stats = GetItemStats (v.item)
       v.reforge = self:GetReforgeID(v.slotId)
       if v.reforge then
         local srcId, dstId = unpack(reforgeTable[v.reforge])
@@ -1913,19 +1845,19 @@ function ReforgeLite:UpdateItems ()
 
   self.s2hFactor = 0
   if playerClass == "PRIEST" then
-    local pts = select(5, GetTalentInfo (3, 20, false, false))
+    local pts = select(5, GetTalentInfo (3, 20))
     self.s2hFactor = pts * 50
-  elseif playerClass == "DRUID" and GetPrimaryTalentTree (false, false) ~= 2 then
-    local pts = select(5, GetTalentInfo (1, 7, false, false))
+  elseif playerClass == "DRUID" and GetPrimaryTalentTree () ~= 2 then
+    local pts = select(5, GetTalentInfo (1, 7))
     self.s2hFactor = pts * 50
-  elseif playerClass == "SHAMAN" and GetPrimaryTalentTree (false, false) ~= 2 then
-    local pts = select(5, GetTalentInfo (1, 9, false, false))
+  elseif playerClass == "SHAMAN" and GetPrimaryTalentTree () ~= 2 then
+    local pts = select(5, GetTalentInfo (1, 9))
     self.s2hFactor = (pts == 3 and 100 or pts * 33)
   elseif playerClass == "PALADIN" then
-    local pts = select(5, GetTalentInfo (1, 4, false, false))
+    local pts = select(5, GetTalentInfo (1, 4))
     self.s2hFactor = pts * 50
   end
-  if self.s2hFactor and self.s2hFactor > 0 then
+  if self.s2hFactor > 0 then
     self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": " .. self.s2hFactor .. "%")
     self.convertSpirit.text:Show ()
   else
@@ -1966,18 +1898,14 @@ function ReforgeLite:ShowMethodWindow ()
     self.methodWindow:SetFrameStrata ("DIALOG")
     self.methodWindow:SetFrameLevel (self:GetFrameLevel () + 10)
     self.methodWindow:ClearAllPoints ()
-    self.methodWindow:SetWidth (300)
-    self.methodWindow:SetHeight (520)
+    self.methodWindow:SetSize(300, 520)
     if self.db.methodWindowX and self.db.methodWindowY then
       self.methodWindow:SetPoint ("TOPLEFT", UIParent, "BOTTOMLEFT", self.db.methodWindowX, self.db.methodWindowY)
     else
       self.methodWindow:SetPoint ("CENTER")
     end
-    self.methodWindow:SetBackdrop ({
-      bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16,
-      edgeFile = AddonPath .. "textures\\frameborder", edgeSize = 32,
-      insets = {left = 1, right = 1, top = 20, bottom = 1}
-    })
+    self.methodWindow.backdropInfo = self.backdropInfo
+    self.methodWindow:ApplyBackdrop()
     self.methodWindow:SetBackdropBorderColor (unpack (self.db.activeWindowTitle))
     self.methodWindow:SetBackdropColor (0.1, 0.1, 0.1)
 
@@ -2012,8 +1940,7 @@ function ReforgeLite:ShowMethodWindow ()
     self.methodWindow.close:SetNormalTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Up.blp")
     self.methodWindow.close:SetPushedTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Down.blp")
     self.methodWindow.close:SetHighlightTexture ("Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight.blp")
-    self.methodWindow.close:SetWidth (20)
-    self.methodWindow.close:SetHeight (20)
+    self.methodWindow.close:SetSize(20, 20)
     self.methodWindow.close:SetPoint ("TOPRIGHT", self.methodWindow, "TOPRIGHT", -4, -12)
     self.methodWindow.close:SetScript ("OnClick", function (self)
       self:GetParent ():Hide ()
@@ -2038,30 +1965,27 @@ function ReforgeLite:ShowMethodWindow ()
       self.methodWindow.items[i] = CreateFrame ("Frame", nil, self.methodWindow.itemTable)
       self.methodWindow.items[i].slot = v
       self.methodWindow.items[i]:ClearAllPoints ()
-      self.methodWindow.items[i]:SetWidth (self.db.itemSize)
-      self.methodWindow.items[i]:SetHeight (self.db.itemSize)
+      self.methodWindow.items[i]:SetSize(self.db.itemSize, self.db.itemSize)
       self.methodWindow.itemTable:SetCell (i, 2, self.methodWindow.items[i])
       self.methodWindow.items[i]:EnableMouse (true)
       self.methodWindow.items[i]:RegisterForDrag("LeftButton")
-      self.methodWindow.items[i]:SetScript ("OnEnter", function (self)
-        GameTooltip:SetOwner (self, "ANCHORLEFT")
-        if self.item then
+      self.methodWindow.items[i]:SetScript ("OnEnter", function (itemSlot)
+        GameTooltip:SetOwner(itemSlot, "ANCHOR_LEFT")
+        if itemSlot.item then
           local slotId = GetInventorySlotInfo(v)
           GameTooltip:SetInventoryItem("player", slotId)
         else
-          local text = _G[strupper (self.slot)]
-          if self.checkRelic then
+          local text = _G[strupper (itemSlot.slot)]
+          if itemSlot.checkRelic then
             text = _G["RELICSLOT"]
           end
           GameTooltip:SetText (text)
         end
         GameTooltip:Show ()
       end)
-      self.methodWindow.items[i]:SetScript ("OnLeave", function (self)
-        GameTooltip:Hide ()
-      end)
-      self.methodWindow.items[i]:SetScript ("OnDragStart", function (self)
-        if self.item then
+      self.methodWindow.items[i]:SetScript ("OnLeave", function () GameTooltip:Hide() end)
+      self.methodWindow.items[i]:SetScript ("OnDragStart", function (itemSlot)
+        if itemSlot.item and ReforgeFrameIsVisible() then
           PickupInventoryItem(GetInventorySlotInfo(v))
         end
       end)
@@ -2081,20 +2005,14 @@ function ReforgeLite:ShowMethodWindow ()
 
       self.methodWindow.items[i].check = GUI:CreateCheckButton (self.methodWindow.itemTable, "", false,
         function (val) self.methodOverride[i] = (val and 1 or -1) self:UpdateMethodChecks () end)
---      self.methodWindow.items[i].check = self.methodWindow.itemTable:CreateTexture (nil, "OVERLAY")
---      self.methodWindow.items[i].check:SetWidth (self.db.itemSize)
---      self.methodWindow.items[i].check:SetHeight (self.db.itemSize)
       self.methodWindow.itemTable:SetCell (i, 1, self.methodWindow.items[i].check)
---      self.methodWindow.items[i].check:SetTexture ("Interface\\Buttons\\UI-CheckBox-Check")
---      self.methodWindow.items[i].check:Hide ()
     end
-    self.methodWindow.reforge = CreateFrame ("Button", "ReforgeLiteReforgeButton", self.methodWindow, "UIPanelButtonTemplate")
-    self.methodWindow.reforge:SetWidth (114)
-    self.methodWindow.reforge:SetHeight (22)
+    self.methodWindow.reforge = CreateFrame ("Button", nil, self.methodWindow, "UIPanelButtonTemplate")
+    self.methodWindow.reforge:SetSize(114, 22)
     self.methodWindow.reforge:SetPoint ("BOTTOMLEFT", self.methodWindow, "BOTTOMLEFT", 12, 12)
     self.methodWindow.reforge:SetText (REFORGE)
-    self.methodWindow.reforge:SetScript ("OnClick", function (self)
-      ReforgeLite:DoReforge ()
+    self.methodWindow.reforge:SetScript ("OnClick", function (btn)
+      self:DoReforge ()
     end)
     self.methodWindow.reforgeTip = CreateFrame ("Frame", nil, self.methodWindow)
     self.methodWindow.reforgeTip:SetAllPoints (self.methodWindow.reforge)
@@ -2112,16 +2030,15 @@ function ReforgeLite:ShowMethodWindow ()
     self.methodOverride[i] = 0
   end
 
-  self.methodWindow:SetFrameLevel (ReforgeLite:GetFrameLevel () + 10)
+  self.methodWindow:SetFrameLevel (self:GetFrameLevel () + 10)
   self.methodWindow:SetBackdropBorderColor (unpack (self.db.activeWindowTitle))
   self:SetBackdropBorderColor (unpack (self.db.inactiveWindowTitle))
 
   for i, v in ipairs (self.methodWindow.items) do
-    local item = GetInventoryItemLink ("player", v.slotId)
-    local texture = GetInventoryItemTexture ("player", v.slotId)
-    if texture then
-      v.item = item
-      v.texture:SetTexture (texture)
+    local item = Item:CreateFromEquipmentSlot(v.slotId)
+    if not item:IsItemEmpty() then
+      v.item = item:GetItemLink()
+      v.texture:SetTexture(item:GetItemIcon())
     else
       v.item = nil
       v.texture:SetTexture (v.slotTexture)
@@ -2186,17 +2103,16 @@ function ReforgeLite:UpdateMethodChecks ()
     local cost = 0
     local anyDiffer = false
     for i, v in ipairs (self.methodWindow.items) do
-      local item = GetInventoryItemLink ("player", v.slotId)
-      v.item = item
-      local texture = GetInventoryItemTexture ("player", v.slotId)
-      v.texture:SetTexture (texture or v.slotTexture)
-      if not item or self:IsReforgeMatching (v.slotId, self.pdb.method.items[i].reforge, self.methodOverride[i]) then
+      local item = Item:CreateFromEquipmentSlot(v.slotId)
+      v.item = item:GetItemLink()
+      v.texture:SetTexture (item:GetItemIcon() or v.slotTexture)
+      if item:IsItemEmpty() or self:IsReforgeMatching (v.slotId, self.pdb.method.items[i].reforge, self.methodOverride[i]) then
         v.check:SetChecked (true)
       else
         anyDiffer = true
         v.check:SetChecked (false)
         if self.pdb.method.items[i].reforge then
-          local itemCost = select (11, C_Item.GetItemInfo (item)) or 0
+          local itemCost = select (11, C_Item.GetItemInfo (v.item)) or 0
           cost = cost + (itemCost > 0 and itemCost or 100000)
         end
       end
