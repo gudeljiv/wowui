@@ -1,8 +1,20 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["spellCacheAchievements"] = true,
 	["savedSnippets"] = {
+	},
+	["spellCacheAchievements"] = true,
+	["spellCacheAchivements"] = true,
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.13.2",
+	["lockPositions"] = false,
+	["spellCacheStrings"] = true,
+	["frame"] = {
+		["xOffset"] = 616.4613342285156,
+		["width"] = 1018.314880371094,
+		["height"] = 1028.286254882813,
+		["yOffset"] = 1371.428588867188,
 	},
 	["spellCache"] = {
 		["Spotted"] = {
@@ -4089,7 +4101,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "23169=134157,95353=134157",
 		},
 		["Defend Wyrmrest"] = {
-			["spells"] = "107576=134158,110763=464981",
+			["spells"] = "107576=134158,110763=433447",
 		},
 		["Earth-Warder"] = {
 			["spells"] = "107455=236554",
@@ -4935,7 +4947,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "103821=433442,109615=136025",
 		},
 		["Attack Wyrmrest"] = {
-			["spells"] = "107577=134154,110768=464981",
+			["spells"] = "107577=134154,110768=433447",
 		},
 		["Rising Fire Totem"] = {
 			["spells"] = "103819=135829,108374=135829",
@@ -4980,7 +4992,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "103669=348560,109888=348560",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=464981",
+			["spells"] = "35673=433447",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -15312,7 +15324,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "77794=462651,77795=462651,77796=462651,77800=462651,96300=462651",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=464981",
+			["spells"] = "6603=433447",
 		},
 		["Unresponsive"] = {
 			["spells"] = "86003=136175,86022=136175",
@@ -29457,7 +29469,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "45441=135732",
 		},
 		["Clayton's Test Spell"] = {
-			["spells"] = "64755=464981",
+			["spells"] = "64755=433447",
 		},
 		["Item - Death Knight T8 Tank 4P Bonus"] = {
 			["spells"] = "64748=136097",
@@ -74130,17 +74142,5 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.13.2",
-	["lockPositions"] = false,
-	["frame"] = {
-		["xOffset"] = 1205.348266601563,
-		["yOffset"] = 1214.1865234375,
-		["height"] = 1043.524291992188,
-		["width"] = 1032.91845703125,
-	},
-	["spellCacheStrings"] = true,
-	["spellCacheAchivements"] = true,
-	["build"] = "55006",
+	["build"] = "55141",
 }

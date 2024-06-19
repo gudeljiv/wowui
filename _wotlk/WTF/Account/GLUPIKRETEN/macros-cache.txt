@@ -1,3 +1,11 @@
+VER 3 0000000000000029 " " "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
 VER 3 000000000000002A " " "132328"
 #showtooltip
 /dismount
@@ -12,14 +20,6 @@ VER 3 0000000000000028 " " "134400"
 END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
-END
-VER 3 0000000000000029 " " "132152"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-/petattack [@mouseover,exists,harm][]
-/petdefensive
 END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
@@ -56,7 +56,8 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Okrilla
+/targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"
 /run InviteUnit("a");C_Timer.After(1,function() ConvertToRaid() end)

@@ -1,263 +1,25 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		{
-		}, -- [1]
+		[2] = {
+		},
 	},
-	["currentStep"] = 1,
+	["currentStep"] = 2,
 	["questObjectivesCache"] = {
-		[0] = 60,
-		[26351] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Jungle Stalker Feather: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26352] = {
+		[26269] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Fuel Regulator Blueprints: 0/1",
+				["text"] = "Green Hills of Stranglethorn - Page 14: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[27110] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Immol'thar slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Prince Tortheldrin slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[27104] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Zevrim Thornhoof slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "  slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[27119] = {
+		[26400] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = " : 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27113] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["generated"] = true,
-				["text"] = "Objective Complete",
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27068] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "  slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26359] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Mind Vision complete: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26360] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Braddok's Big Brain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26298] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 6,
-				["text"] = "Bloodscalp Tusk: 0/6",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26299] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 25,
-				["text"] = "Shrunken Head: 0/25",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[186] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Stranglethorn Tiger slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26301] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Balia'mah Trophy: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Ziata'jai Trophy: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[187] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Elder Stranglethorn Tiger slain: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26303] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Mind's Eye: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[188] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Paw of Sin'Dall: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26305] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Filled Soul Gem: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27692] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Princess Theradras slain: 1/1",
-				["finished"] = true,
-				["numFulfilled"] = 1,
-			}, -- [1]
-		},
-		[27605] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Shade of Eranikus slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[190] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Young Panther slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27604] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Head of Jammal'an: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[191] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Panther slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27697] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Lord Vyletongue slain: 1/1",
-				["finished"] = true,
-				["numFulfilled"] = 1,
-			}, -- [1]
-		},
-		[192] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Shadowmaw Panther slain: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26343] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 2,
-				["text"] = "Large River Crocolisk Skin: 0/2",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[193] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Fang of Bhag'thera: 0/1",
+				["text"] = "Opened Mosh'Ogg Bounty: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -278,65 +40,29 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[194] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Stranglethorn Raptor slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[208] = {
+		[26281] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Head of Bangalash: 0/1",
+				["text"] = "Grom'gol Rations: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[195] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Lashtail Raptor slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[27009] = {
+		[27692] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Amnennar the Coldbringer slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
+				["text"] = "Princess Theradras slain: 1/1",
+				["finished"] = true,
+				["numFulfilled"] = 1,
 			}, -- [1]
 		},
-		[196] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Jungle Stalker slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26321] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 40,
-				["text"] = "Bites of Murkgill meat: 0/40",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[197] = {
+		[26299] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Talon of Tethis: 0/1",
+				["numRequired"] = 25,
+				["text"] = "Shrunken Head: 0/25",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -357,27 +83,61 @@ RXPCData = {
 				["numFulfilled"] = 1,
 			}, -- [2]
 		},
-		[27140] = {
+		[26303] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Mind's Eye: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26305] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Filled Soul Gem: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25674] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Vectus slain: 0/1",
+				["text"] = "Dreadmaul Ambusher slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25678] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Nethergarde Miner slain: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Marduk Blackpool slain: 0/1",
+				["numRequired"] = 3,
+				["text"] = "Nethergarde Engineer slain: 0/3",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[26325] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Zuuldaian Fetish: 0/8",
+				["type"] = "monster",
+				["numRequired"] = 3,
+				["text"] = "Nethergarde Foreman slain: 0/3",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[25680] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Illycor slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -391,38 +151,169 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[9457] = {
+		[26321] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Heart of Naias: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 40,
+				["text"] = "Bites of Murkgill meat: 0/40",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26304] = {
+		[25688] = {
 			{
-				["type"] = "object",
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Loramus resurrected: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26325] = {
+			{
+				["type"] = "item",
 				["numRequired"] = 8,
-				["text"] = "Zul'Mamwe Brazier Extinguished: 0/8",
+				["text"] = "Zuuldaian Fetish: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26269] = {
+		[25692] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Green Hills of Stranglethorn - Page 14: 0/1",
+				["numRequired"] = 7,
+				["text"] = "Vile Demonic Blood: 0/7",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26330] = {
+		[25694] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Jarroc Torn-Wing slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Shahandana slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Gomegaz slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[25698] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Gan'zulah's Body: 0/1",
+				["text"] = "Amulet of Sevine: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27605] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Shade of Eranikus slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27103] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Sealed Reliquary of Purity: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26343] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 2,
+				["text"] = "Large River Crocolisk Skin: 0/2",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[190] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Young Panther slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[192] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Shadowmaw Panther slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[194] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Stranglethorn Raptor slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[196] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Jungle Stalker slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25720] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Marl Wormthorn slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27119] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = " : 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26359] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Mind Vision complete: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[208] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Head of Bangalash: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -450,11 +341,324 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[26901] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Kraul Guano: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26399] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Mosh'Ogg Bounty: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26403] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Tumbled Crystal: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26278] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 12,
+				["text"] = "Lashtail Egg slain: 0/12",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26280] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 15,
+				["text"] = "Murkgill Murloc slain: 0/15",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26159] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 9,
+				["text"] = "Snickerfang Hyena Blood: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 9,
+				["text"] = "Redstone Basilisk Blood: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[26298] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Bloodscalp Tusk: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26300] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Nezzliok's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26304] = {
+			{
+				["type"] = "object",
+				["numRequired"] = 8,
+				["text"] = "Zul'Mamwe Brazier Extinguished: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27068] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "  slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[9457] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Heart of Naias: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25675] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 6,
+				["text"] = "Dreadmaul Mauler slain: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Dreadmaul Warlock slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[25677] = {
+			{
+				["type"] = "object",
+				["numRequired"] = 6,
+				["text"] = "Ore Heap dissolved: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26405] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 16,
+				["text"] = "Skullsplitter Troll slain: 0/16",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25681] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Chief Prospector Hondo slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27697] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Lord Vyletongue slain: 1/1",
+				["finished"] = true,
+				["numFulfilled"] = 1,
+			}, -- [1]
+		},
+		[188] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Paw of Sin'Dall: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25687] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Loramus' Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Loramus' Torso: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Loramus' Legs: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[26301] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Balia'mah Trophy: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Ziata'jai Trophy: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[25691] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 24,
+				["text"] = "Charred Granite Chips: 0/24",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27104] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Zevrim Thornhoof slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "  slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[26330] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Gan'zulah's Body: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[26332] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 6,
 				["text"] = "Skullsplitter Mojo: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27604] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Head of Jammal'an: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25701] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Razelikh's body destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Razelikh's soul imprisoned: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[26338] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Bloodscalp Mystic slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Bloodscalp Scout slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Bloodscalp Hunter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Bloodscalp Beastmaster slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
+		[185] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Young Stranglethorn Tiger slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[187] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Elder Stranglethorn Tiger slain: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -468,11 +672,74 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26901] = {
+		[191] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Panther slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[193] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Kraul Guano: 0/1",
+				["text"] = "Fang of Bhag'thera: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[195] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Lashtail Raptor slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[197] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Talon of Tethis: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25719] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Demoniac Vessel: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27113] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[186] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Stranglethorn Tiger slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[26360] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Braddok's Big Brain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -507,104 +774,55 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
-		[26399] = {
+		[9436] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Mosh'Ogg Bounty: 0/1",
+				["text"] = "Bloodscalp Totem: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26400] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Opened Mosh'Ogg Bounty: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26338] = {
+		[27110] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Bloodscalp Mystic slain: 0/7",
+				["numRequired"] = 1,
+				["text"] = "Immol'thar slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Bloodscalp Scout slain: 0/7",
+				["numRequired"] = 1,
+				["text"] = "Prince Tortheldrin slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Bloodscalp Hunter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Bloodscalp Beastmaster slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [4]
 		},
-		[26300] = {
+		[0] = 85,
+		[26352] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Nezzliok's Head: 0/1",
+				["text"] = "Fuel Regulator Blueprints: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26403] = {
+		[26351] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 5,
-				["text"] = "Tumbled Crystal: 0/5",
+				["text"] = "Jungle Stalker Feather: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26278] = {
+		[27009] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 12,
-				["text"] = "Lashtail Egg slain: 0/12",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26405] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 16,
-				["text"] = "Skullsplitter Troll slain: 0/16",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26280] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Murkgill Murloc slain: 0/15",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[26281] = {
-			{
-				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Grom'gol Rations: 0/1",
+				["text"] = "Amnennar the Coldbringer slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -618,29 +836,155 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[9436] = {
+		[27140] = {
 			{
-				["type"] = "item",
+				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Bloodscalp Totem: 0/1",
+				["text"] = "Vectus slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Marduk Blackpool slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[25705] = {
+			{
+				["type"] = "object",
+				["numRequired"] = 8,
+				["text"] = "Azsh'ir Idol destroyed: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[27103] = {
+		[25684] = {
 			{
-				["type"] = "item",
+				["type"] = "object",
 				["numRequired"] = 1,
-				["text"] = "Sealed Reliquary of Purity: 0/1",
+				["text"] = "Use internal Bloodstone Teleporter: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Use external Bloodstone Teleporter: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[25695] = {
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Examined the Alliance Plans: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[185] = {
+		[25717] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Doomguard Destroyer slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Dreadlord Defiler slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Corrupted Darkwood Treant slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 3,
+				["text"] = "Felspore Bog Lord slain: 0/3",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
+		[25703] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 10,
-				["text"] = "Young Stranglethorn Tiger slain: 0/10",
+				["text"] = "Bloodwash Barbarian slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Bloodwash Enchantress slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[25699] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Amulet of Grol: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25697] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Amulet of Allistarj: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25706] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Bloodwash Zealot slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Bloodwash Acolyte slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Bloodwash Gambler slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Bloodwash Idolater slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
+		[26172] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Ashmane Steak: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -648,60 +992,87 @@ RXPCData = {
 	},
 	["currentGuideGroup"] = "RXP Cataclysm 1-80 (H)",
 	["flightPaths"] = {
+		[537] = "Razor Hill, Durotar",
+		[614] = "Northern Rocketway, Azshara",
 		[402] = "Bloodhoof Village, Mulgore",
-		[44] = "Bilgewater Harbor, Azshara",
 		[536] = "Sen'jin Village, Durotar",
 		[613] = "Southern Rocketway, Azshara",
+		[20] = "Grom'gol",
 		[22] = "Thunder Bluff, Mulgore",
-		[537] = "Razor Hill, Durotar",
 		[23] = "Orgrimmar, Durotar",
-		[614] = "Northern Rocketway, Azshara",
+		[44] = "Bilgewater Harbor, Azshara",
 	},
 	["questNameCache"] = {
-		[26351] = "Mind Vision",
-		[26352] = "Cozzle's Plan",
-		[26359] = "See Raptor",
-		[26360] = "Mind Control",
-		[26298] = "Hunt for Yenniku",
-		[26299] = "Headhunting",
-		[26300] = "Nezzliok Will Know",
-		[26301] = "Speaking with Nezzliok",
-		[9436] = "Bloodscalp Insight",
-		[26303] = "The Mind's Eye",
-		[188] = "Tiger Mastery",
-		[26305] = "Saving Yenniku",
-		[190] = "Panther Hunting",
-		[191] = "Panther Stalking",
-		[192] = "Panther Prowess",
-		[193] = "Panther Mastery",
-		[194] = "Raptor Hunting",
-		[195] = "Raptor Stalking",
-		[196] = "Raptor Prowess",
-		[26321] = "I Think She's Hungry",
-		[197] = "Raptor Mastery",
-		[26325] = "A Nose for This Sort of Thing",
-		[185] = "Tiger Hunting",
-		[186] = "Tiger Stalking",
-		[26304] = "Nighttime in the Jungle",
-		[26330] = "Who's a Big Troll?",
-		[9457] = "An Unusual Patron",
-		[26332] = "Skullsplitter Mojo",
-		[26344] = "Some Assembly Required",
-		[26280] = "The Defense of Grom'gol: Murloc Menace",
-		[26405] = "Zul'Mamwe Mambo",
-		[26399] = "The Mosh'Ogg Bounty",
-		[26400] = "The Universal Key",
-		[26338] = "Population Con-Troll",
-		[208] = "Big Game Hunter",
-		[26403] = "Venture Company Mining",
-		[26278] = "The Defense of Grom'gol: Raptor Risk",
-		[26279] = "The Defense of Grom'gol: Ogre Oppression",
-		[26343] = "Supply and Demand",
-		[26281] = "The Defense of Grom'gol: Trollish Thievery",
-		[26345] = "Excelsior",
 		[26269] = "The Green Hills of Stranglethorn",
-		[26362] = "Be Raptor",
+		[26400] = "The Universal Key",
+		[9457] = "An Unusual Patron",
+		[26281] = "The Defense of Grom'gol: Trollish Thievery",
+		[26299] = "Headhunting",
+		[26301] = "Speaking with Nezzliok",
+		[26303] = "The Mind's Eye",
+		[26305] = "Saving Yenniku",
+		[25674] = "Futile Pride",
+		[25678] = "Pick Your Fate",
+		[25680] = "That's Not Us",
+		[25684] = "Attune the Bloodstone",
+		[26321] = "I Think She's Hungry",
+		[25688] = "The Altar of Storms",
+		[26325] = "A Nose for This Sort of Thing",
+		[25692] = "The Vile Blood of Demons",
+		[25694] = "Protecting Our Rear",
+		[25698] = "The Amulet of Sevine",
+		[25706] = "Neptool's Revenge",
+		[26343] = "Supply and Demand",
+		[26345] = "Excelsior",
+		[192] = "Panther Prowess",
+		[194] = "Raptor Hunting",
+		[196] = "Raptor Prowess",
+		[25720] = "The Downfall of Marl Wormthorn",
+		[26359] = "See Raptor",
+		[208] = "Big Game Hunter",
+		[26399] = "The Mosh'Ogg Bounty",
+		[26403] = "Venture Company Mining",
+		[26405] = "Zul'Mamwe Mambo",
+		[26280] = "The Defense of Grom'gol: Murloc Menace",
+		[26159] = "The First Step",
+		[26298] = "Hunt for Yenniku",
+		[26300] = "Nezzliok Will Know",
+		[26304] = "Nighttime in the Jungle",
+		[25675] = "Ogre Combat",
+		[25677] = "It's All Mine",
+		[25681] = "Some People Just Need Killing",
+		[25687] = "Not Just Any Body",
+		[25691] = "The Charred Granite of the Dark Portal",
+		[26330] = "Who's a Big Troll?",
+		[26332] = "Skullsplitter Mojo",
+		[25699] = "The Amulet of Grol",
+		[25701] = "You Are Rakh'likh, Demon",
+		[26338] = "Population Con-Troll",
+		[185] = "Tiger Hunting",
 		[187] = "Tiger Prowess",
+		[26344] = "Some Assembly Required",
+		[191] = "Panther Stalking",
+		[193] = "Panther Mastery",
+		[195] = "Raptor Stalking",
+		[25717] = "The Demons and the Druid",
+		[25719] = "Demoniac Vessel",
+		[26360] = "Mind Control",
+		[26362] = "Be Raptor",
+		[9436] = "Bloodscalp Insight",
+		[26278] = "The Defense of Grom'gol: Raptor Risk",
+		[186] = "Tiger Stalking",
+		[25703] = "Atrocities",
+		[25697] = "The Amulet of Allistarj",
+		[197] = "Raptor Mastery",
+		[190] = "Panther Hunting",
+		[26279] = "The Defense of Grom'gol: Ogre Oppression",
+		[188] = "Tiger Mastery",
+		[26172] = "A Bloodmage's Gotta Eat Too",
+		[25695] = "Watching Our Back",
+		[26352] = "Cozzle's Plan",
+		[26351] = "Mind Vision",
+		[28553] = "Okrilla and the Blasted Lands",
+		[25705] = "False Idols",
 	},
 	["guideMetaData"] = {
 		["RXP Cataclysm 1-80 (H)||1-6 Darkspear Isle"] = {
@@ -760,12 +1131,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["length"] = 65074,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
+			["version"] = 7,
 			["displayname"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 		},
 		["+RestedXP Northrend Daily Quests||The Kalu'ak Daily Quests"] = {
@@ -788,12 +1159,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
 			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "3.1 - Collectable Items",
 			["length"] = 33724,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
+			["version"] = 7,
 			["displayname"] = "3.1 - Collectable Items",
 		},
 		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
@@ -926,12 +1297,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
 			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 			["length"] = 11950,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
+			["version"] = 7,
 			["displayname"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 		},
 		["RestedXP Cataclysm Preparation||2.3 - 25 Questlog prep - Icecrown"] = {
@@ -941,12 +1312,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
 			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "2.3 - 25 Questlog prep - Icecrown",
 			["length"] = 180148,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
+			["version"] = 7,
 			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
 		},
 		["RXP Cataclysm 60-80 (H)||69-70 Shadowmoon Valley (Scryer)"] = {
@@ -1172,10 +1543,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "Tauren",
 			["length"] = 10765,
-			["name"] = "01-06 Mulgore",
-			["version"] = 1,
-			["menuIndex"] = 2,
 			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Mulgore",
+			["name"] = "01-06 Mulgore",
+			["menuIndex"] = 2,
+			["version"] = 1,
 			["subweight"] = "10000",
 			["submenuIndex"] = 1,
 			["displayname"] = "1-6 Mulgore",
@@ -1193,20 +1564,24 @@ RXPCData = {
 			["key"] = "RXP Cataclysm 60-80 (H)||71-73 Borean Tundra",
 			["displayname"] = "69-73 Borean Tundra",
 		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
-			["guideId"] = 4116256639,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
+		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
+			["guideId"] = 3404663570,
+			["defaultfor"] = "Tauren",
+			["next"] = "10-22 Azshara",
+			["enabledFor"] = "Horde",
 			["cata"] = "",
+			["group"] = "RXP Cataclysm 1-80 (H)",
+			["defaultFor"] = "Tauren",
+			["length"] = 35580,
+			["name"] = "06-10 Mulgore",
+			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
+			["menuIndex"] = 2,
 			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
-			["farm"] = true,
-			["name"] = "Ebon Blade Unlock Daily Quests",
-			["length"] = 16412,
-			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Unlock Daily Quests",
+			["subweight"] = "10000",
+			["submenuIndex"] = 2,
+			["displayname"] = "6-10 Mulgore",
 		},
-		["dungeonGuides"] = {
+		["enableGroupQuests"] = {
 		},
 		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
 			["guideId"] = 3206093888,
@@ -1215,12 +1590,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 			["length"] = 65478,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["version"] = 7,
 			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 		},
 		["RXP Cataclysm 60-80 (H)||68-71 Howling Fjord"] = {
@@ -1279,7 +1654,7 @@ RXPCData = {
 			["length"] = 34337,
 			["version"] = 1,
 		},
-		["enableGroupQuests"] = {
+		["dungeonGuides"] = {
 		},
 		["RestedXP Cataclysm Preparation||2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills"] = {
 			["guideId"] = 161226205,
@@ -1288,12 +1663,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 			["length"] = 35938,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+			["version"] = 7,
 			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 		},
 		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
@@ -1309,22 +1684,18 @@ RXPCData = {
 			["wotlk"] = "",
 			["displayname"] = "Ebon Blade Daily Quests Route",
 		},
-		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
-			["guideId"] = 3404663570,
-			["defaultfor"] = "Tauren",
-			["next"] = "10-22 Azshara",
-			["enabledFor"] = "Horde",
+		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
+			["guideId"] = 4116256639,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
 			["cata"] = "",
-			["group"] = "RXP Cataclysm 1-80 (H)",
-			["defaultFor"] = "Tauren",
-			["length"] = 35580,
-			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
 			["version"] = 1,
-			["menuIndex"] = 2,
-			["name"] = "06-10 Mulgore",
-			["subweight"] = "10000",
-			["submenuIndex"] = 2,
-			["displayname"] = "6-10 Mulgore",
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
+			["farm"] = true,
+			["name"] = "Ebon Blade Unlock Daily Quests",
+			["length"] = 16412,
+			["wotlk"] = "",
+			["displayname"] = "Ebon Blade Unlock Daily Quests",
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Tirisfal Glades"] = {
 			["guideId"] = 605490613,
@@ -1387,12 +1758,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["length"] = 40743,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
+			["version"] = 7,
 			["displayname"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 		},
 		["enabledDungeons"] = {
@@ -1434,10 +1805,10 @@ RXPCData = {
 	},
 	["discardPile"] = {
 	},
-	["currentGuideName"] = "27-31 Northern Stranglethorn",
+	["currentGuideName"] = "55-58 Blasted Lands",
 	["stepSkip"] = {
 	},
-	["currentStepId"] = 2888569168,
+	["currentStepId"] = 509152597,
 	["guideDisabled"] = {
 		68109, -- [1]
 		65058, -- [2]
@@ -1908,6 +2279,11 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 278,
 				},
+				["Bouczech"] = {
+					["timePlayed"] = 507.9550000000745,
+					["class"] = "PRIEST",
+					["xp"] = 224,
+				},
 				["Tukil"] = {
 					["timePlayed"] = 570.3280000002123,
 					["class"] = "HUNTER",
@@ -2153,6 +2529,11 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 147,
 				},
+				["Rockí"] = {
+					["timePlayed"] = 507.9550000000745,
+					["class"] = "HUNTER",
+					["xp"] = 224,
+				},
 				["Moriala"] = {
 					["timePlayed"] = 319.2879999999423,
 					["class"] = "WARLOCK",
@@ -2163,14 +2544,24 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 271,
 				},
+				["Lølà"] = {
+					["timePlayed"] = 507.9550000000745,
+					["class"] = "PALADIN",
+					["xp"] = 224,
+				},
 				["Huntled"] = {
 					["timePlayed"] = 319.8209999999963,
 					["class"] = "HUNTER",
 					["xp"] = 432,
 				},
-				["Nesny"] = {
-					["timePlayed"] = 652.3020000001416,
-					["class"] = "SHAMAN",
+				["Intensiv"] = {
+					["timePlayed"] = 812.8589999999385,
+					["class"] = "PALADIN",
+					["xp"] = 60,
+				},
+				["Lancisity"] = {
+					["timePlayed"] = 1408.612000000023,
+					["class"] = "WARRIOR",
 					["xp"] = 180,
 				},
 				["Thránduíl"] = {
@@ -2188,20 +2579,20 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 292,
 				},
+				["Krotalia"] = {
+					["timePlayed"] = 507.9550000000745,
+					["class"] = "MAGE",
+					["xp"] = 224,
+				},
+				["Nesny"] = {
+					["timePlayed"] = 652.3020000001416,
+					["class"] = "SHAMAN",
+					["xp"] = 180,
+				},
 				["Ikoba"] = {
 					["timePlayed"] = 259.0580000001937,
 					["class"] = "HUNTER",
 					["xp"] = 222,
-				},
-				["Restares"] = {
-					["timePlayed"] = 891.9509999998845,
-					["class"] = "HUNTER",
-					["xp"] = 54,
-				},
-				["Intensiv"] = {
-					["timePlayed"] = 812.8589999999385,
-					["class"] = "PALADIN",
-					["xp"] = 60,
 				},
 				["Erat"] = {
 					["timePlayed"] = 295.6509999996051,
@@ -2213,20 +2604,20 @@ RXPCComms = {
 					["class"] = "MAGE",
 					["xp"] = 20,
 				},
-				["Lancisity"] = {
-					["timePlayed"] = 1408.612000000023,
-					["class"] = "WARRIOR",
-					["xp"] = 180,
+				["Lyonette"] = {
+					["timePlayed"] = 930.4310000000987,
+					["class"] = "PRIEST",
+					["xp"] = 1232,
 				},
 				["Femboyfarmer"] = {
 					["timePlayed"] = 298.1499999999069,
 					["class"] = "WARRIOR",
 					["xp"] = 48,
 				},
-				["Nicfusa"] = {
-					["timePlayed"] = 223.6239999998361,
-					["class"] = "PRIEST",
-					["xp"] = 432,
+				["Marketfresh"] = {
+					["timePlayed"] = 269.0359999998473,
+					["class"] = "MAGE",
+					["xp"] = 454,
 				},
 				["Slashcan"] = {
 					["timePlayed"] = 269.0359999998473,
@@ -2243,30 +2634,30 @@ RXPCComms = {
 					["class"] = "MAGE",
 					["xp"] = 222,
 				},
-				["Nevalies"] = {
-					["timePlayed"] = 1067.285999999847,
-					["class"] = "PRIEST",
-					["xp"] = 94,
+				["Restares"] = {
+					["timePlayed"] = 891.9509999998845,
+					["class"] = "HUNTER",
+					["xp"] = 54,
 				},
 				["Craxah"] = {
 					["timePlayed"] = 258.0090000000782,
 					["class"] = "HUNTER",
 					["xp"] = 2497,
 				},
-				["Therazon"] = {
-					["timePlayed"] = 796.7110000001267,
-					["class"] = "WARRIOR",
-					["xp"] = 168,
+				["Tripio"] = {
+					["timePlayed"] = 223.6239999998361,
+					["class"] = "DRUID",
+					["xp"] = 432,
 				},
 				["Ruuh"] = {
 					["timePlayed"] = 316.9979999999632,
 					["class"] = "PALADIN",
 					["xp"] = 30,
 				},
-				["Lyonette"] = {
-					["timePlayed"] = 930.4310000000987,
+				["Nevalies"] = {
+					["timePlayed"] = 1067.285999999847,
 					["class"] = "PRIEST",
-					["xp"] = 1232,
+					["xp"] = 94,
 				},
 				["Hirnsalto"] = {
 					["timePlayed"] = 378.0320000001229,
@@ -2288,25 +2679,25 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 168,
 				},
-				["Lukrätzia"] = {
-					["timePlayed"] = 378.0320000001229,
-					["class"] = "WARLOCK",
-					["xp"] = 20,
+				["Therazon"] = {
+					["timePlayed"] = 796.7110000001267,
+					["class"] = "WARRIOR",
+					["xp"] = 168,
 				},
-				["Singhy"] = {
-					["timePlayed"] = 792.8450000002049,
-					["class"] = "ROGUE",
-					["xp"] = 271,
+				["Gangoso"] = {
+					["timePlayed"] = 1079.51500000013,
+					["class"] = "PRIEST",
+					["xp"] = 840,
 				},
 				["Friskpresset"] = {
 					["timePlayed"] = 856.0789999999106,
 					["class"] = "PRIEST",
 					["xp"] = 211,
 				},
-				["Tripio"] = {
-					["timePlayed"] = 223.6239999998361,
-					["class"] = "DRUID",
-					["xp"] = 432,
+				["Lukrätzia"] = {
+					["timePlayed"] = 378.0320000001229,
+					["class"] = "WARLOCK",
+					["xp"] = 20,
 				},
 				["Youtouchme"] = {
 					["timePlayed"] = 722.7249999998603,
@@ -2338,15 +2729,15 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 381,
 				},
-				["Twinxy"] = {
-					["timePlayed"] = 1402.956999999937,
-					["class"] = "HUNTER",
-					["xp"] = 291,
-				},
 				["Bobjoejim"] = {
 					["timePlayed"] = 269.0359999998473,
 					["class"] = "SHAMAN",
 					["xp"] = 454,
+				},
+				["Gandzi"] = {
+					["timePlayed"] = 298.1499999999069,
+					["class"] = "SHAMAN",
+					["xp"] = 48,
 				},
 				["Kokudzin"] = {
 					["timePlayed"] = 618.0219999998808,
@@ -2383,15 +2774,15 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 230,
 				},
-				["Krataz"] = {
-					["timePlayed"] = 269.4599999999628,
-					["class"] = "MAGE",
-					["xp"] = 432,
+				["Footinmouth"] = {
+					["timePlayed"] = 299.5219999998808,
+					["class"] = "SHAMAN",
+					["xp"] = 147,
 				},
-				["Petperwhis"] = {
-					["timePlayed"] = 1007.967999999877,
+				["Twinxy"] = {
+					["timePlayed"] = 1402.956999999937,
 					["class"] = "HUNTER",
-					["xp"] = 454,
+					["xp"] = 291,
 				},
 				["Synnjavind"] = {
 					["timePlayed"] = 1079.51500000013,
@@ -2413,40 +2804,40 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 271,
 				},
-				["Sportlich"] = {
-					["timePlayed"] = 987.9569999999949,
-					["class"] = "HUNTER",
-					["xp"] = 44,
+				["Krataz"] = {
+					["timePlayed"] = 269.4599999999628,
+					["class"] = "MAGE",
+					["xp"] = 432,
 				},
 				["Maruhunt"] = {
 					["timePlayed"] = 570.3280000002123,
 					["class"] = "HUNTER",
 					["xp"] = 196,
 				},
-				["Gandzi"] = {
-					["timePlayed"] = 298.1499999999069,
-					["class"] = "SHAMAN",
-					["xp"] = 48,
-				},
 				["Bakuzo"] = {
 					["timePlayed"] = 699.7409999999218,
 					["class"] = "SHAMAN",
 					["xp"] = 320,
+				},
+				["Minatoo"] = {
+					["timePlayed"] = 722.7249999998603,
+					["class"] = "PALADIN",
+					["xp"] = 216,
 				},
 				["Tmaxenregle"] = {
 					["timePlayed"] = 316.9979999999632,
 					["class"] = "MAGE",
 					["xp"] = 30,
 				},
-				["Smashgar"] = {
-					["timePlayed"] = 258.0090000000782,
-					["class"] = "WARRIOR",
-					["xp"] = 2497,
+				["Mûgwôrt"] = {
+					["timePlayed"] = 298.1499999999069,
+					["class"] = "MAGE",
+					["xp"] = 48,
 				},
-				["Footinmouth"] = {
-					["timePlayed"] = 299.5219999998808,
-					["class"] = "SHAMAN",
-					["xp"] = 147,
+				["Petperwhis"] = {
+					["timePlayed"] = 1007.967999999877,
+					["class"] = "HUNTER",
+					["xp"] = 454,
 				},
 				["Ililiilill"] = {
 					["timePlayed"] = 1055.60699999996,
@@ -2498,6 +2889,11 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 					["xp"] = 96,
 				},
+				["Sortejager"] = {
+					["timePlayed"] = 801.8870000001043,
+					["class"] = "HUNTER",
+					["xp"] = 5062,
+				},
 				["Vachett"] = {
 					["timePlayed"] = 987.9569999999949,
 					["class"] = "PALADIN",
@@ -2508,20 +2904,15 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 					["xp"] = 196,
 				},
-				["Baraj"] = {
-					["timePlayed"] = 927.035000000149,
-					["class"] = "SHAMAN",
-					["xp"] = 279,
-				},
 				["Djoncumstard"] = {
 					["timePlayed"] = 779.3919999999925,
 					["class"] = "MAGE",
 					["xp"] = 4387,
 				},
-				["Sortejager"] = {
-					["timePlayed"] = 801.8870000001043,
-					["class"] = "HUNTER",
-					["xp"] = 5062,
+				["Baraj"] = {
+					["timePlayed"] = 927.035000000149,
+					["class"] = "SHAMAN",
+					["xp"] = 279,
 				},
 				["Garbi"] = {
 					["timePlayed"] = 553.5069999997504,
@@ -2558,10 +2949,10 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 492,
 				},
-				["Mûgwôrt"] = {
-					["timePlayed"] = 298.1499999999069,
-					["class"] = "MAGE",
-					["xp"] = 48,
+				["Smashgar"] = {
+					["timePlayed"] = 258.0090000000782,
+					["class"] = "WARRIOR",
+					["xp"] = 2497,
 				},
 				["Remenderin"] = {
 					["timePlayed"] = 1044.397000000347,
@@ -2593,10 +2984,10 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 48,
 				},
-				["Minatoo"] = {
-					["timePlayed"] = 722.7249999998603,
-					["class"] = "PALADIN",
-					["xp"] = 216,
+				["Sportlich"] = {
+					["timePlayed"] = 987.9569999999949,
+					["class"] = "HUNTER",
+					["xp"] = 44,
 				},
 				["Halkwizz"] = {
 					["timePlayed"] = 779.3919999999925,
@@ -2633,10 +3024,10 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 4387,
 				},
-				["Gangoso"] = {
-					["timePlayed"] = 1079.51500000013,
-					["class"] = "PRIEST",
-					["xp"] = 840,
+				["Singhy"] = {
+					["timePlayed"] = 792.8450000002049,
+					["class"] = "ROGUE",
+					["xp"] = 271,
 				},
 				["Akacho"] = {
 					["timePlayed"] = 1384.272999999987,
@@ -2658,15 +3049,15 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 54,
 				},
+				["Nicfusa"] = {
+					["timePlayed"] = 223.6239999998361,
+					["class"] = "PRIEST",
+					["xp"] = 432,
+				},
 				["Argiæ"] = {
 					["timePlayed"] = 143.4449999998324,
 					["class"] = "PALADIN",
 					["xp"] = 381,
-				},
-				["Marketfresh"] = {
-					["timePlayed"] = 269.0359999998473,
-					["class"] = "MAGE",
-					["xp"] = 454,
 				},
 				["Orccultist"] = {
 					["timePlayed"] = 796.7110000001267,

@@ -1,11 +1,9 @@
 
 EventTraceSavedVars = {
 	["ShowTimestamp"] = true,
-	["Size"] = {
-		["Height"] = 824.82177734375,
-		["Width"] = 734.8216552734375,
-	},
+	["LogEventsWhenHidden"] = false,
 	["ShowArguments"] = true,
+	["LogCREvents"] = true,
 	["Filters"] = {
 		["User"] = {
 			{
@@ -25,181 +23,213 @@ EventTraceSavedVars = {
 			}, -- [3]
 			{
 				["enabled"] = true,
+				["event"] = "ADDON_LOADED",
+				["displayEvent"] = "ADDON_LOADED",
+			}, -- [4]
+			{
+				["enabled"] = true,
 				["event"] = "BAG_UPDATE_COOLDOWN",
 				["displayEvent"] = "BAG_UPDATE_COOLDOWN",
-			}, -- [4]
+			}, -- [5]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_ADDON",
 				["displayEvent"] = "CHAT_MSG_ADDON",
-			}, -- [5]
+			}, -- [6]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_CHANNEL",
 				["displayEvent"] = "CHAT_MSG_CHANNEL",
-			}, -- [6]
+			}, -- [7]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_MONSTER_SAY",
 				["displayEvent"] = "CHAT_MSG_MONSTER_SAY",
-			}, -- [7]
+			}, -- [8]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_SYSTEM",
 				["displayEvent"] = "CHAT_MSG_SYSTEM",
-			}, -- [8]
+			}, -- [9]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_TRADESKILLS",
 				["displayEvent"] = "CHAT_MSG_TRADESKILLS",
-			}, -- [9]
+			}, -- [10]
 			{
 				["enabled"] = true,
 				["event"] = "CHAT_MSG_YELL",
 				["displayEvent"] = "CHAT_MSG_YELL",
-			}, -- [10]
+			}, -- [11]
 			{
 				["enabled"] = true,
 				["event"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["displayEvent"] = "COMBAT_LOG_EVENT_UNFILTERED",
-			}, -- [11]
+			}, -- [12]
 			{
 				["enabled"] = true,
 				["event"] = "COMPANION_UPDATE",
 				["displayEvent"] = "COMPANION_UPDATE",
-			}, -- [12]
+			}, -- [13]
 			{
 				["enabled"] = true,
 				["event"] = "CONSOLE_MESSAGE",
 				["displayEvent"] = "CONSOLE_MESSAGE",
-			}, -- [13]
+			}, -- [14]
 			{
 				["enabled"] = true,
 				["event"] = "CRITERIA_UPDATE",
 				["displayEvent"] = "CRITERIA_UPDATE",
-			}, -- [14]
+			}, -- [15]
 			{
 				["enabled"] = true,
 				["event"] = "CURRENT_SPELL_CAST_CHANGED",
 				["displayEvent"] = "CURRENT_SPELL_CAST_CHANGED",
-			}, -- [15]
+			}, -- [16]
 			{
 				["enabled"] = true,
 				["event"] = "CURSOR_CHANGED",
 				["displayEvent"] = "CURSOR_CHANGED",
-			}, -- [16]
+			}, -- [17]
 			{
 				["enabled"] = true,
 				["event"] = "GLOBAL_MOUSE_DOWN",
 				["displayEvent"] = "GLOBAL_MOUSE_DOWN",
-			}, -- [17]
+			}, -- [18]
 			{
 				["enabled"] = true,
 				["event"] = "GLOBAL_MOUSE_UP",
 				["displayEvent"] = "GLOBAL_MOUSE_UP",
-			}, -- [18]
+			}, -- [19]
 			{
 				["enabled"] = true,
 				["event"] = "GUILD_RANKS_UPDATE",
 				["displayEvent"] = "GUILD_RANKS_UPDATE",
-			}, -- [19]
+			}, -- [20]
 			{
 				["enabled"] = true,
 				["event"] = "GUILD_ROSTER_UPDATE",
 				["displayEvent"] = "GUILD_ROSTER_UPDATE",
-			}, -- [20]
+			}, -- [21]
+			{
+				["enabled"] = true,
+				["event"] = "GUILD_TRADESKILL_UPDATE",
+				["displayEvent"] = "GUILD_TRADESKILL_UPDATE",
+			}, -- [22]
 			{
 				["enabled"] = true,
 				["event"] = "ITEM_DATA_LOAD_RESULT",
 				["displayEvent"] = "ITEM_DATA_LOAD_RESULT",
-			}, -- [21]
+			}, -- [23]
 			{
 				["enabled"] = true,
 				["event"] = "LFG_LIST_SEARCH_RESULT_UPDATED",
 				["displayEvent"] = "LFG_LIST_SEARCH_RESULT_UPDATED",
-			}, -- [22]
+			}, -- [24]
+			{
+				["enabled"] = true,
+				["event"] = "LFG_LOCK_INFO_RECEIVED",
+				["displayEvent"] = "LFG_LOCK_INFO_RECEIVED",
+			}, -- [25]
+			{
+				["enabled"] = true,
+				["event"] = "MODIFIER_STATE_CHANGED",
+				["displayEvent"] = "MODIFIER_STATE_CHANGED",
+			}, -- [26]
 			{
 				["enabled"] = true,
 				["event"] = "PLAYER_STARTED_MOVING",
 				["displayEvent"] = "PLAYER_STARTED_MOVING",
-			}, -- [23]
+			}, -- [27]
 			{
 				["enabled"] = true,
 				["event"] = "PLAYER_STARTED_TURNING",
 				["displayEvent"] = "PLAYER_STARTED_TURNING",
-			}, -- [24]
+			}, -- [28]
 			{
 				["enabled"] = true,
 				["event"] = "PLAYER_STOPPED_MOVING",
 				["displayEvent"] = "PLAYER_STOPPED_MOVING",
-			}, -- [25]
+			}, -- [29]
 			{
 				["enabled"] = true,
 				["event"] = "PLAYER_STOPPED_TURNING",
 				["displayEvent"] = "PLAYER_STOPPED_TURNING",
-			}, -- [26]
+			}, -- [30]
+			{
+				["enabled"] = true,
+				["event"] = "SPELL_ACTIVATION_OVERLAY_HIDE",
+				["displayEvent"] = "SPELL_ACTIVATION_OVERLAY_HIDE",
+			}, -- [31]
 			{
 				["enabled"] = true,
 				["event"] = "SPELL_UPDATE_COOLDOWN",
 				["displayEvent"] = "SPELL_UPDATE_COOLDOWN",
-			}, -- [27]
+			}, -- [32]
 			{
 				["enabled"] = true,
 				["event"] = "SPELL_UPDATE_USABLE",
 				["displayEvent"] = "SPELL_UPDATE_USABLE",
-			}, -- [28]
+			}, -- [33]
+			{
+				["enabled"] = true,
+				["event"] = "UI_INFO_MESSAGE",
+				["displayEvent"] = "UI_INFO_MESSAGE",
+			}, -- [34]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_AURA",
 				["displayEvent"] = "UNIT_AURA",
-			}, -- [29]
+			}, -- [35]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_HAPPINESS",
 				["displayEvent"] = "UNIT_HAPPINESS",
-			}, -- [30]
+			}, -- [36]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_HEALTH",
 				["displayEvent"] = "UNIT_HEALTH",
-			}, -- [31]
+			}, -- [37]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_HEALTH_FREQUENT",
 				["displayEvent"] = "UNIT_HEALTH_FREQUENT",
-			}, -- [32]
+			}, -- [38]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_POWER_FREQUENT",
 				["displayEvent"] = "UNIT_POWER_FREQUENT",
-			}, -- [33]
+			}, -- [39]
 			{
 				["enabled"] = true,
 				["event"] = "UNIT_POWER_UPDATE",
 				["displayEvent"] = "UNIT_POWER_UPDATE",
-			}, -- [34]
+			}, -- [40]
 			{
 				["enabled"] = true,
 				["event"] = "UPDATE_EXHAUSTION",
 				["displayEvent"] = "UPDATE_EXHAUSTION",
-			}, -- [35]
+			}, -- [41]
 			{
 				["enabled"] = true,
 				["event"] = "UPDATE_INVENTORY_DURABILITY",
 				["displayEvent"] = "UPDATE_INVENTORY_DURABILITY",
-			}, -- [36]
+			}, -- [42]
 			{
 				["enabled"] = true,
 				["event"] = "UPDATE_MOUSEOVER_UNIT",
 				["displayEvent"] = "UPDATE_MOUSEOVER_UNIT",
-			}, -- [37]
+			}, -- [43]
 			{
 				["enabled"] = true,
 				["event"] = "UPDATE_SHAPESHIFT_FORM",
 				["displayEvent"] = "UPDATE_SHAPESHIFT_FORM",
-			}, -- [38]
+			}, -- [44]
 		},
 	},
-	["LogCREvents"] = true,
-	["LogEventsWhenHidden"] = false,
+	["Size"] = {
+		["Height"] = 831.8060302734375,
+		["Width"] = 715,
+	},
 }
