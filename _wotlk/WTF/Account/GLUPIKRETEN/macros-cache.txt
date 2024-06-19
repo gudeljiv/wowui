@@ -1,11 +1,3 @@
-VER 3 0000000000000029 " " "132152"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-/petattack [@mouseover,exists,harm][]
-/petdefensive
-END
 VER 3 000000000000002A " " "132328"
 #showtooltip
 /dismount
@@ -21,6 +13,14 @@ END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
+VER 3 0000000000000029 " " "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
@@ -31,11 +31,11 @@ VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:8932
+/cast item:8952
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3928
+/cast item:13446
 END
 VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -56,7 +56,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Okrilla
+/targetexact Neptool
 /targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"

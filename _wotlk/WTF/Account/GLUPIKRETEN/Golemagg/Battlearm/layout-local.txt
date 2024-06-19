@@ -195,13 +195,6 @@ X: 1
 Y: -336
 W: 330
 H: 113
-Frame: WeakAurasOptions
-FrameLevel: 1
-Anchor: TOP
-X: -222
-Y: -22
-W: 1018
-H: 1028
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

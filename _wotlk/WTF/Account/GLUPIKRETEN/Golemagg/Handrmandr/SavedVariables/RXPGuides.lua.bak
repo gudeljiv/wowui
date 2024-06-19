@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[2] = {
+		[21] = {
 		},
 	},
-	["currentStep"] = 2,
+	["currentStep"] = 21,
 	["questObjectivesCache"] = {
 		[26269] = {
 			{
@@ -107,6 +107,15 @@ RXPCData = {
 				["numRequired"] = 1,
 				["text"] = "Dreadmaul Ambusher slain: 0/1",
 				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25676] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
@@ -420,6 +429,36 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[25706] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Bloodwash Zealot slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Bloodwash Acolyte slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Bloodwash Gambler slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Bloodwash Idolater slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
 		[26304] = {
 			{
 				["type"] = "object",
@@ -472,35 +511,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[25706] = {
+		[25679] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Bloodwash Zealot slain: 0/8",
-				["finished"] = false,
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Bloodwash Acolyte slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Bloodwash Gambler slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Bloodwash Idolater slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [4]
 		},
 		[25681] = {
 			{
@@ -834,7 +852,7 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[0] = 85,
+		[0] = 87,
 		[26345] = {
 			{
 				["type"] = "item",
@@ -1012,8 +1030,10 @@ RXPCData = {
 		[26303] = "The Mind's Eye",
 		[26305] = "Saving Yenniku",
 		[25674] = "Futile Pride",
+		[25676] = "Heartstrike",
 		[25678] = "Pick Your Fate",
 		[25680] = "That's Not Us",
+		[25682] = "Mission Complete",
 		[25684] = "Attune the Bloodstone",
 		[26321] = "I Think She's Hungry",
 		[25688] = "The Altar of Storms",
@@ -1040,7 +1060,9 @@ RXPCData = {
 		[26304] = "Nighttime in the Jungle",
 		[25675] = "Ogre Combat",
 		[25677] = "It's All Mine",
+		[25679] = "Into the Mountain",
 		[25681] = "Some People Just Need Killing",
+		[25683] = "The Dreadmaul Furnace",
 		[25687] = "Not Just Any Body",
 		[25691] = "The Charred Granite of the Dark Portal",
 		[26330] = "Who's a Big Troll?",
@@ -1315,9 +1337,14 @@ RXPCData = {
 		[248] = 13140,
 		[257] = 4684,
 	},
-	["currentStepId"] = 509152597,
+	["currentStepId"] = 509152723,
 	["currentGuideName"] = "55-58 Blasted Lands",
 	["stepSkip"] = {
+		[20] = true,
+		[7] = true,
+		[18] = true,
+		[9] = true,
+		[16] = true,
 	},
 	["discardPile"] = {
 	},
@@ -1419,12 +1446,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["length"] = 65074,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
+			["version"] = 7,
 			["displayname"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 		},
 		["+Argent Tournament||A_1_AT_Start"] = {
@@ -1534,12 +1561,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
 			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "3.1 - Collectable Items",
 			["length"] = 33724,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
+			["version"] = 7,
 			["displayname"] = "3.1 - Collectable Items",
 		},
 		["RXP Cataclysm 1-80 (H)||55-58 Blasted Lands"] = {
@@ -1713,12 +1740,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["length"] = 40743,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
+			["version"] = 7,
 			["displayname"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 		},
 		["RestedXP Cataclysm Preparation||RestedXP Total XP prepared"] = {
@@ -1753,12 +1780,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
 			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 			["length"] = 11950,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
+			["version"] = 7,
 			["displayname"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 		},
 		["RestedXP Cataclysm Preparation||2.3 - 25 Questlog prep - Icecrown"] = {
@@ -1768,12 +1795,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
 			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "2.3 - 25 Questlog prep - Icecrown",
 			["length"] = 180148,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
+			["version"] = 7,
 			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
 		},
 		["+Argent Tournament||J_3.2AT_Sunreavers_Daily_Quests"] = {
@@ -1927,10 +1954,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "Tauren",
 			["subweight"] = "10000",
-			["name"] = "01-06 Mulgore",
-			["version"] = 1,
-			["menuIndex"] = 2,
 			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Mulgore",
+			["name"] = "01-06 Mulgore",
+			["menuIndex"] = 2,
+			["version"] = 1,
 			["length"] = 10765,
 			["submenuIndex"] = 1,
 			["displayname"] = "1-6 Mulgore",
@@ -2070,40 +2097,6 @@ RXPCData = {
 			["length"] = 22712,
 			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Tirisfal Glades",
 		},
-		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
-			["guideId"] = 3404663570,
-			["next"] = "10-22 Azshara",
-			["defaultfor"] = "Tauren",
-			["enabledFor"] = "Horde",
-			["cata"] = "",
-			["group"] = "RXP Cataclysm 1-80 (H)",
-			["defaultFor"] = "Tauren",
-			["subweight"] = "10000",
-			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
-			["version"] = 1,
-			["menuIndex"] = 2,
-			["name"] = "06-10 Mulgore",
-			["length"] = 35580,
-			["submenuIndex"] = 2,
-			["displayname"] = "6-10 Mulgore",
-		},
-		["enableGroupQuests"] = {
-		},
-		["RestedXP Cataclysm Preparation||2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills"] = {
-			["guideId"] = 161226205,
-			["subgroup"] = "Preparation guide",
-			["next"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["group"] = "RestedXP Cataclysm Preparation",
-			["cata"] = "",
-			["include"] = "QuestDB",
-			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
-			["wotlk"] = "",
-			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
-			["length"] = 35938,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
-			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
-		},
 		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
 			["guideId"] = 4116256639,
 			["subgroup"] = "Faction Daily Quests",
@@ -2116,6 +2109,40 @@ RXPCData = {
 			["length"] = 16412,
 			["name"] = "Ebon Blade Unlock Daily Quests",
 			["displayname"] = "Ebon Blade Unlock Daily Quests",
+		},
+		["dungeonGuides"] = {
+		},
+		["RestedXP Cataclysm Preparation||2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills"] = {
+			["guideId"] = 161226205,
+			["subgroup"] = "Preparation guide",
+			["next"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["group"] = "RestedXP Cataclysm Preparation",
+			["cata"] = "",
+			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
+			["wotlk"] = "",
+			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+			["length"] = 35938,
+			["version"] = 7,
+			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
+		},
+		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
+			["guideId"] = 3404663570,
+			["next"] = "10-22 Azshara",
+			["defaultfor"] = "Tauren",
+			["enabledFor"] = "Horde",
+			["cata"] = "",
+			["group"] = "RXP Cataclysm 1-80 (H)",
+			["defaultFor"] = "Tauren",
+			["subweight"] = "10000",
+			["name"] = "06-10 Mulgore",
+			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
+			["menuIndex"] = 2,
+			["version"] = 1,
+			["length"] = 35580,
+			["submenuIndex"] = 2,
+			["displayname"] = "6-10 Mulgore",
 		},
 		["+Argent Tournament||E_2_AT_Undercity"] = {
 			["guideId"] = 4145941938,
@@ -2168,15 +2195,15 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
-			["version"] = 7,
 			["wotlk"] = "",
 			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 			["length"] = 65478,
-			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
+			["version"] = 7,
 			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 		},
-		["dungeonGuides"] = {
+		["enableGroupQuests"] = {
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Kezan"] = {
 			["guideId"] = 2881620480,

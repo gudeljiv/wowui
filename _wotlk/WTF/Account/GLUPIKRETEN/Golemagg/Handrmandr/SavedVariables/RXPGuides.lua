@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[2] = {
+		[76] = {
 		},
 	},
-	["currentStep"] = 2,
+	["currentStep"] = 76,
 	["questObjectivesCache"] = {
 		[26269] = {
 			{
@@ -107,6 +107,15 @@ RXPCData = {
 				["numRequired"] = 1,
 				["text"] = "Dreadmaul Ambusher slain: 0/1",
 				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25676] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
@@ -225,6 +234,15 @@ RXPCData = {
 				["numRequired"] = 1,
 				["text"] = "Shade of Eranikus slain: 0/1",
 				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[25702] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
@@ -402,6 +420,24 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
+		[25686] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[27697] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Lord Vyletongue slain: 1/1",
+				["finished"] = true,
+				["numFulfilled"] = 1,
+			}, -- [1]
+		},
 		[26298] = {
 			{
 				["type"] = "item",
@@ -416,6 +452,15 @@ RXPCData = {
 				["type"] = "item",
 				["numRequired"] = 1,
 				["text"] = "Nezzliok's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[9457] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Heart of Naias: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -438,11 +483,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[9457] = {
+		[26405] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Heart of Naias: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 16,
+				["text"] = "Skullsplitter Troll slain: 0/16",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -472,12 +517,12 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[26405] = {
+		[25679] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 16,
-				["text"] = "Skullsplitter Troll slain: 0/16",
-				["finished"] = false,
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
@@ -490,13 +535,13 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[27697] = {
+		[25683] = {
 			{
-				["type"] = "monster",
+				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "Lord Vyletongue slain: 1/1",
-				["finished"] = true,
-				["numFulfilled"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
 			}, -- [1]
 		},
 		[188] = {
@@ -799,7 +844,7 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[0] = 85,
+		[0] = 90,
 		[26352] = {
 			{
 				["type"] = "item",
@@ -950,6 +995,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[26172] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Ashmane Steak: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[25706] = {
 			{
 				["type"] = "monster",
@@ -980,15 +1034,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
-		[26172] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Ashmane Steak: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 	},
 	["currentGuideGroup"] = "RXP Cataclysm 1-80 (H)",
 	["flightPaths"] = {
@@ -1012,15 +1057,19 @@ RXPCData = {
 		[26303] = "The Mind's Eye",
 		[26305] = "Saving Yenniku",
 		[25674] = "Futile Pride",
+		[25676] = "Heartstrike",
 		[25678] = "Pick Your Fate",
 		[25680] = "That's Not Us",
+		[25682] = "Mission Complete",
 		[25684] = "Attune the Bloodstone",
 		[26321] = "I Think She's Hungry",
 		[25688] = "The Altar of Storms",
 		[26325] = "A Nose for This Sort of Thing",
 		[25692] = "The Vile Blood of Demons",
 		[25694] = "Protecting Our Rear",
+		[25696] = "The Sunveil Excursion",
 		[25698] = "The Amulet of Sevine",
+		[25702] = "Home... Gone... Naga...",
 		[25706] = "Neptool's Revenge",
 		[26343] = "Supply and Demand",
 		[26345] = "Excelsior",
@@ -1040,9 +1089,14 @@ RXPCData = {
 		[26304] = "Nighttime in the Jungle",
 		[25675] = "Ogre Combat",
 		[25677] = "It's All Mine",
+		[25679] = "Into the Mountain",
 		[25681] = "Some People Just Need Killing",
+		[25683] = "The Dreadmaul Furnace",
+		[25685] = "The First Step",
 		[25687] = "Not Just Any Body",
+		[25689] = "Time is Short",
 		[25691] = "The Charred Granite of the Dark Portal",
+		[25693] = "Enhancing the Stone",
 		[26330] = "Who's a Big Troll?",
 		[26332] = "Skullsplitter Mojo",
 		[25699] = "The Amulet of Grol",
@@ -1059,6 +1113,8 @@ RXPCData = {
 		[26360] = "Mind Control",
 		[26362] = "Be Raptor",
 		[9436] = "Bloodscalp Insight",
+		[25686] = "Blood Ritual",
+		[25690] = "A Bloodmage's Gotta Eat Too",
 		[26278] = "The Defense of Grom'gol: Raptor Risk",
 		[186] = "Tiger Stalking",
 		[25703] = "Atrocities",
@@ -1131,12 +1187,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
-			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 			["length"] = 65074,
-			["version"] = 7,
+			["title"] = "1.1 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "1.1 - Instant quest turn ins - Dragonblight & The Storm Peaks",
 		},
 		["+RestedXP Northrend Daily Quests||The Kalu'ak Daily Quests"] = {
@@ -1159,12 +1215,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|3.1 - Collectable Items",
-			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "3.1 - Collectable Items",
 			["length"] = 33724,
-			["version"] = 7,
+			["title"] = "3.1 - Collectable Items\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "3.1 - Collectable Items",
 		},
 		["+RestedXP Northrend Daily Quests||Icecrown Gunship Unlock Daily Quests"] = {
@@ -1297,12 +1353,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|4.1 - 25 Questlog prep - Dungeons and Raids",
-			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 			["length"] = 11950,
-			["version"] = 7,
+			["title"] = "4.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "4.1 - 25 Questlog prep - Dungeons and Raids",
 		},
 		["RestedXP Cataclysm Preparation||2.3 - 25 Questlog prep - Icecrown"] = {
@@ -1312,12 +1368,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.3 - 25 Questlog prep - Icecrown",
-			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.3 - 25 Questlog prep - Icecrown",
 			["length"] = 180148,
-			["version"] = 7,
+			["title"] = "2.3 - 25 Questlog prep - Icecrown\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "2.3 - 25 Questlog prep - Icecrown",
 		},
 		["RXP Cataclysm 60-80 (H)||69-70 Shadowmoon Valley (Scryer)"] = {
@@ -1543,10 +1599,10 @@ RXPCData = {
 			["enabledFor"] = "Horde",
 			["defaultFor"] = "Tauren",
 			["length"] = 10765,
-			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Mulgore",
-			["name"] = "01-06 Mulgore",
-			["menuIndex"] = 2,
 			["version"] = 1,
+			["key"] = "RXP Cataclysm 1-80 (H)||01-06 Mulgore",
+			["menuIndex"] = 2,
+			["name"] = "01-06 Mulgore",
 			["subweight"] = "10000",
 			["submenuIndex"] = 1,
 			["displayname"] = "1-6 Mulgore",
@@ -1564,24 +1620,20 @@ RXPCData = {
 			["key"] = "RXP Cataclysm 60-80 (H)||71-73 Borean Tundra",
 			["displayname"] = "69-73 Borean Tundra",
 		},
-		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
-			["guideId"] = 3404663570,
-			["defaultfor"] = "Tauren",
-			["next"] = "10-22 Azshara",
-			["enabledFor"] = "Horde",
+		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
+			["guideId"] = 4116256639,
+			["subgroup"] = "Faction Daily Quests",
+			["group"] = "+RestedXP Northrend Daily Quests",
 			["cata"] = "",
-			["group"] = "RXP Cataclysm 1-80 (H)",
-			["defaultFor"] = "Tauren",
-			["length"] = 35580,
-			["name"] = "06-10 Mulgore",
-			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
-			["menuIndex"] = 2,
 			["version"] = 1,
-			["subweight"] = "10000",
-			["submenuIndex"] = 2,
-			["displayname"] = "6-10 Mulgore",
+			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
+			["farm"] = true,
+			["name"] = "Ebon Blade Unlock Daily Quests",
+			["length"] = 16412,
+			["wotlk"] = "",
+			["displayname"] = "Ebon Blade Unlock Daily Quests",
 		},
-		["enableGroupQuests"] = {
+		["dungeonGuides"] = {
 		},
 		["RestedXP Cataclysm Preparation||2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks"] = {
 			["guideId"] = 3206093888,
@@ -1590,12 +1642,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
-			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 			["length"] = 65478,
-			["version"] = 7,
+			["title"] = "2.2 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "2.2 - 25 Questlog prep - Zul'Drak & The Storm Peaks",
 		},
 		["RXP Cataclysm 60-80 (H)||68-71 Howling Fjord"] = {
@@ -1654,7 +1706,7 @@ RXPCData = {
 			["length"] = 34337,
 			["version"] = 1,
 		},
-		["dungeonGuides"] = {
+		["enableGroupQuests"] = {
 		},
 		["RestedXP Cataclysm Preparation||2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills"] = {
 			["guideId"] = 161226205,
@@ -1663,12 +1715,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
-			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 			["length"] = 35938,
-			["version"] = 7,
+			["title"] = "2.1 - 25 Questlog prep\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "2.1 - 25 Questlog prep - Dragonblight & Grizzly Hills",
 		},
 		["+RestedXP Northrend Daily Quests||Ebon Blade Daily Quests Route"] = {
@@ -1684,18 +1736,22 @@ RXPCData = {
 			["wotlk"] = "",
 			["displayname"] = "Ebon Blade Daily Quests Route",
 		},
-		["+RestedXP Northrend Daily Quests||Ebon Blade Unlock Daily Quests"] = {
-			["guideId"] = 4116256639,
-			["subgroup"] = "Faction Daily Quests",
-			["group"] = "+RestedXP Northrend Daily Quests",
+		["RXP Cataclysm 1-80 (H)||6-10 Mulgore"] = {
+			["guideId"] = 3404663570,
+			["defaultfor"] = "Tauren",
+			["next"] = "10-22 Azshara",
+			["enabledFor"] = "Horde",
 			["cata"] = "",
+			["group"] = "RXP Cataclysm 1-80 (H)",
+			["defaultFor"] = "Tauren",
+			["length"] = 35580,
 			["version"] = 1,
-			["key"] = "+RestedXP Northrend Daily Quests|Faction Daily Quests|Ebon Blade Unlock Daily Quests",
-			["farm"] = true,
-			["name"] = "Ebon Blade Unlock Daily Quests",
-			["length"] = 16412,
-			["wotlk"] = "",
-			["displayname"] = "Ebon Blade Unlock Daily Quests",
+			["name"] = "06-10 Mulgore",
+			["menuIndex"] = 2,
+			["key"] = "RXP Cataclysm 1-80 (H)||06-10 Mulgore",
+			["subweight"] = "10000",
+			["submenuIndex"] = 2,
+			["displayname"] = "6-10 Mulgore",
 		},
 		["RXP Cataclysm 1-80 (H)||1-6 Tirisfal Glades"] = {
 			["guideId"] = 605490613,
@@ -1758,12 +1814,12 @@ RXPCData = {
 			["group"] = "RestedXP Cataclysm Preparation",
 			["cata"] = "",
 			["include"] = "QuestDB",
+			["version"] = 7,
 			["key"] = "RestedXP Cataclysm Preparation|Preparation guide|1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
-			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["wotlk"] = "",
 			["name"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 			["length"] = 40743,
-			["version"] = 7,
+			["title"] = "1.2 - Instant quest turn ins\\nRXP Cataclysm Prep Guide",
 			["displayname"] = "1.2 - Instant quest turn ins - Icecrown & Sholazar Basin",
 		},
 		["enabledDungeons"] = {
@@ -1807,8 +1863,31 @@ RXPCData = {
 	},
 	["currentGuideName"] = "55-58 Blasted Lands",
 	["stepSkip"] = {
+		[32] = true,
+		[16] = true,
+		[63] = true,
+		[73] = true,
+		[9] = true,
+		[18] = true,
+		[70] = true,
+		[37] = true,
+		[39] = true,
+		[41] = true,
+		[43] = true,
+		[44] = true,
+		[66] = true,
+		[46] = true,
+		[24] = true,
+		[48] = true,
+		[49] = true,
+		[67] = true,
+		[52] = true,
+		[7] = true,
+		[20] = true,
+		[22] = true,
+		[53] = true,
 	},
-	["currentStepId"] = 509152597,
+	["currentStepId"] = 509153067,
 	["guideDisabled"] = {
 		68109, -- [1]
 		65058, -- [2]
