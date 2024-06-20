@@ -2,7 +2,7 @@
 ## Author: d07.RiV (Iroared) (Continued by Brues)
 ## Title: ReforgeLite Classic
 ## Notes: Calculates optimal reforging for given weights/caps.
-## Version: v1.6.1
+## Version: v.1.6.2
 ## SavedVariables: ReforgeLiteDB
 
 embeds.xml

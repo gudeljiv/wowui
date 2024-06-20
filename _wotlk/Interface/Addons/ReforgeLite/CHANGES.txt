@@ -1,22 +1,12 @@
-tag ceb0ff26b4153c8550085feb2dfc4860e1966c56 v1.6.1
+tag ccf976f2696b690f3b3c10dd785ab8d0e1c61186 v.1.6.2
 Author:	skyler-code <skylerh15@github.com>
-Date:	Thu Jun 20 03:25:36 2024 -0500
+Date:	Thu Jun 20 09:28:13 2024 -0500
 
-commit 51a77b39a02d7f87975db9e1535d735a269eaa3b
+commit af879f2e139ffc84c64376b358f0f17b5f7fd87b
 Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jun 20 03:25:20 2024 -0500
+Date:   Thu Jun 20 09:27:54 2024 -0500
 
-    false itemsLocked values will no longer be saved to WTF
-
-commit 668227d46fdf46e5d58a37686a6fc6bee17baa12
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jun 20 03:17:10 2024 -0500
-
-    fix for any druids stuck with avoidance mode
-
-commit 3ee8a2f7d9ff969bd9a0f461045aca517d447262
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jun 20 00:29:17 2024 -0500
-
-    Fix for Korean tooltip parsing
+    Revert "Fix for Korean tooltip parsing"
+    
+    This reverts commit 3ee8a2f7d9ff969bd9a0f461045aca517d447262.
 
