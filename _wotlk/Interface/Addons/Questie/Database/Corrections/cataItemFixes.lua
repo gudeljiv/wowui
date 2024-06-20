@@ -49,6 +49,9 @@ function CataItemFixes.Load()
         [21145] = { -- Essence of Xandivious
             [itemKeys.npcDrops] = {},
         },
+        [22674] = { -- Wavefront Medallion
+            [itemKeys.npcDrops] = {},
+        },
         [22978] = { -- Emitter Spare Part
             [itemKeys.npcDrops] = {},
         },
@@ -602,6 +605,9 @@ function CataItemFixes.Load()
         },
         [65734] = { -- Twilight Documents
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [68638] = { -- Frostsaber Cub
+            [itemKeys.npcDrops] = {51681},
         },
         [68890] = { -- Dragon Kite 2-Pack
             [itemKeys.class] = itemClasses.QUEST,

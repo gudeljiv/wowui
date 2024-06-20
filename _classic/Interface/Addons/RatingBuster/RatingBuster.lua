@@ -25,7 +25,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.16.9"
+RatingBuster.version = "1.16.10"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
