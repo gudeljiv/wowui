@@ -751,7 +751,7 @@ GBB.Seasonal = {
     ["BREW"] = { startDate = "09/20", endDate = "10/06"},
 	["HOLLOW"] = { startDate = "10/18", endDate = "11/01"},
 	["LOVE"] = {startDate = "02/03", endDate = "02/17"},
-	["SUMMER"] = {startDate = "06/21", endDate = "07/05"},
+	-- ["SUMMER"] = {startDate = "06/21", endDate = "07/05"},
 }
 
 -- clear unused dungeons in classic to not generate options/checkboxes with the-

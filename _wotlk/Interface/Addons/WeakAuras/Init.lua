@@ -170,8 +170,9 @@ Private.frames = {}
 --- @field subeventSuffix string?
 --- @field type triggerTypes
 --- @field unit string?
---- @field use_showOn boolean|nil
 --- @field use_alwaystrue boolean|nil
+--- @field use_ignoreoverride boolean|nil
+--- @field use_showOn boolean|nil
 
 ---@class prototypeDataArgs
 ---@field name string
@@ -191,11 +192,12 @@ Private.frames = {}
 ---@field timedrequired boolean?
 ---@field GetNameAndIcon (fun(trigger: triggerData): string?, string?)|nil
 ---@field iconFunc (fun(trigger: triggerData): string?)|nil
+---@field loadFunc (fun(trigger: triggerData): nil)|nil
 ---@field nameFunc (fun(trigger: triggerData): string?)|nil
 ---@field events (fun(trigger: triggerData): table)|nil
 ---@field internal_events (fun(trigger: triggerData): table)|nil
 ---@field name string
----@field statesParamater "unit"|"one"|"all"|nil
+---@field statesParameter "unit"|"one"|"all"|nil
 ---@field progressType "timed"|"static"|"none"
 
 --- @class triggerUntriggerData
@@ -374,8 +376,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.13.2"
-local buildTime = "20240530213608"
+local versionString = "5.14.0"
+local buildTime = "20240620154556"
 
 local flavorFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -403,7 +405,7 @@ WeakAuras.buildType = "pr"
 --@end-experimental@]=====]
 
 --[==[@debug@
-if versionStringFromToc == "5.13.2" then
+if versionStringFromToc == "5.14.0" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   WeakAuras.buildType = "dev"
@@ -538,7 +540,7 @@ function WeakAuras.IsLibsOK()
   return libsAreOk
 end
 
-if not WeakAuras.IsLibsOK() then
+if not libsAreOk then
   C_Timer.After(1, function()
     WeakAuras.prettyPrint("WeakAuras is missing necessary libraries. Please reinstall a proper package.")
   end)

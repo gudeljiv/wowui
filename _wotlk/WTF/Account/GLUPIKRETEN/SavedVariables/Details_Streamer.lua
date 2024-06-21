@@ -9,34 +9,39 @@ Details_StreamerDB = {
 		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
 		["Greshnik - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battitude - Golemagg"] = "Mxyz - Golemagg",
-		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
-		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
-		["Battlemoo - Golemagg"] = "Mxyz - Golemagg",
+		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
 		["Wells - Jin'do"] = "Mxyz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
+		["Provokator - Jin'do"] = "Mxyz - Golemagg",
+		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
+		["Battlemoo - Golemagg"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
+		["Tudum - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
-		["Asjrdfsad - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
-		["Augustin - Golemagg"] = "Mxyz - Golemagg",
-		["Tudum - Jin'do"] = "Mxyz - Golemagg",
-		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
+		["Asjrdfsad - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Augustin - Golemagg"] = "Mxyz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
-		["Provokator - Jin'do"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
-		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
+		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
 		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
-			["use_square_mode"] = false,
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["is_first_run"] = false,
 			["grow_direction"] = "right",
 			["arrow_color"] = {
@@ -45,7 +50,7 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["scale"] = 1,
+			["point"] = "RIGHT",
 			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
@@ -54,20 +59,20 @@ Details_StreamerDB = {
 			},
 			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["point"] = "RIGHT",
-			["main_frame_strata"] = "LOW",
+			["use_square_mode"] = false,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -75,13 +80,13 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = false,
+			["font_size"] = 10,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -93,11 +98,6 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["y"] = -183.107162475586,
 			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {

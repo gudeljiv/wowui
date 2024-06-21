@@ -282,6 +282,8 @@ L["Bottom to Top"] = "De Bas en Haut"
 L["Bounce"] = "Rebond"
 L["Bounce with Decay"] = "Rebond décroissant"
 --[[Translation missing --]]
+L["BreakUpLargeNumbers (Blizzard)"] = "BreakUpLargeNumbers (Blizzard)"
+--[[Translation missing --]]
 L["Broodlord Lashlayer"] = "Broodlord Lashlayer"
 L["Buff"] = "Amélioration"
 L["Buff/Debuff"] = "Amélioration / affaiblissement"
@@ -885,6 +887,8 @@ L["Ignore Disconnected"] = "Ignorer les déconnectés"
 L["Ignore Rune CD"] = "Ignorer le rechargement des runes"
 L["Ignore Rune CDs"] = "Ignorer les rechargements des runes"
 L["Ignore Self"] = "Ignorer soi-même"
+--[[Translation missing --]]
+L["Ignore Spell Override"] = "Ignore Spell Override"
 L["Immune"] = "Immunité"
 L["Important"] = "Important"
 --[[Translation missing --]]
@@ -1575,10 +1579,6 @@ L["Show Incoming Heal"] = "Afficher les Soins en Cours"
 --[[Translation missing --]]
 L["Show Loss of Control"] = "Show Loss of Control"
 L["Show On"] = "Afficher Sur"
---[[Translation missing --]]
-L["Show Override"] = "Show Override"
---[[Translation missing --]]
-L["Show Override Spell"] = "Show Override Spell"
 L["Show Rested Overlay"] = "Superposer l'XP en reposé"
 L["Shrink"] = "Rétrécir"
 --[[Translation missing --]]
@@ -1804,6 +1804,8 @@ L["The 'ID' value can be found in the BigWigs options of a specific spell"] = "T
 --[[Translation missing --]]
 L["The Prophet Skeram"] = "The Prophet Skeram"
 L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."] = "Le numéro du déclencheur est facultatif, et utilise le déclencheur fournissant des informations dynamiques s'il n'est pas spécifié."
+--[[Translation missing --]]
+L["The War Within"] = "The War Within"
 L["There are %i updates to your auras ready to be installed!"] = [=[
 Il y a %i mises à jour de vos auras prêtes à être installées!]=]
 L["Thick Outline"] = "Contour épais"

@@ -806,6 +806,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Same texture as Foreground"] = "Такая же текстура, что и на переднем плане"
 	L["Saved Data"] = "Сохраненные данные"
 	L["Scale"] = "Масштаб"
+	--[[Translation missing --]]
+	L["Search API"] = "Search API"
 	L["Select Talent"] = "Выбрать талант"
 	L["Select the auras you always want to be listed first"] = "Выберите индикации для гибридной позиции"
 	L["Selected Frame"] = "Выбранный кадр"
@@ -989,6 +991,8 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "%s не является допустимой единицей для метода RegisterUnitEvent"
 	L["Unit Count"] = "Количество единиц"
 	L["Unit Frames"] = "Рамки единиц"
+	--[[Translation missing --]]
+	L["Unknown"] = "Unknown"
 	L["Unknown property '%s' found in '%s'"] = "Неизвестное свойство %s в переменной %s."
 	L["Unlike the start or finish animations, the main animation will loop over and over until the display is hidden."] = "В отличие от начальной или конечной анимации, основная зациклена и будет повторяться пока индикация не пропадет."
 	L["Update"] = "Обновить"

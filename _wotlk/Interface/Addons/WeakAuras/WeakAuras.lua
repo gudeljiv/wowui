@@ -3,7 +3,7 @@ local AddonName = ...
 ---@class Private
 local Private = select(2, ...)
 
-local internalVersion = 73
+local internalVersion = 74
 
 -- Lua APIs
 local insert = table.insert
@@ -888,24 +888,19 @@ local function ConstructFunction(prototype, trigger, skipOptional)
   for _, orConjunctionGroup  in pairs(orConjunctionGroups) do
     tinsert(tests, "("..table.concat(orConjunctionGroup , " or ")..")")
   end
-  local ret = preambles .. "return function("..table.concat(input, ", ")..")\n";
-  ret = ret..(init or "");
-  -- Enable to debug load function inputs
-  --ret = ret .. "print('INPUTS')"
-  --for _, i in ipairs(input) do
-  --  ret = ret .. "print('" .. i .. "'," .. i .. ")"
-  --end
-  ret = ret..(#debug > 0 and table.concat(debug, "\n") or "");
-  ret = ret.."if(";
-  ret = ret..((#required > 0) and table.concat(required, " and ").." and " or "");
-  ret = ret..(#tests > 0 and table.concat(tests, " and ") or "true");
-  ret = ret..") then\n";
+  local ret = {preambles .. "return function("..table.concat(input, ", ")..")\n"};
+  table.insert(ret, (init or ""));
+  table.insert(ret, (#debug > 0 and table.concat(debug, "\n") or ""));
+  table.insert(ret, "if(");
+  table.insert(ret, ((#required > 0) and table.concat(required, " and ").." and " or ""));
+  table.insert(ret, (#tests > 0 and table.concat(tests, " and ") or "true"));
+  table.insert(ret, ") then\n");
   if(#debug > 0) then
-    ret = ret.."print('ret: true');\n";
+    table.insert(ret, "print('ret: true');\n");
   end
-  ret = ret.."return true else return false end end";
+  table.insert(ret, "return true else return false end end");
 
-  return ret, events;
+  return table.concat(ret), events;
 end
 
 function WeakAuras.GetActiveConditions(id, cloneId)
@@ -1668,8 +1663,8 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
   local encounter_id = WeakAuras.CurrentEncounter and WeakAuras.CurrentEncounter.id or 0
 
   if (event == "ENCOUNTER_START") then
-    encounter_id = tonumber (arg1)
-    CreateEncounterTable (encounter_id)
+    encounter_id = tonumber(arg1)
+    CreateEncounterTable(encounter_id)
   elseif (event == "ENCOUNTER_END") then
     encounter_id = 0
     DestroyEncounterTable()
@@ -1887,7 +1882,7 @@ loadFrame:RegisterEvent("PLAYER_REGEN_DISABLED");
 loadFrame:RegisterEvent("PLAYER_REGEN_ENABLED");
 loadFrame:RegisterEvent("PLAYER_ROLES_ASSIGNED");
 loadFrame:RegisterEvent("SPELLS_CHANGED");
-loadFrame:RegisterEvent("UNIT_INVENTORY_CHANGED")
+loadFrame:RegisterUnitEvent("UNIT_INVENTORY_CHANGED", "player")
 loadFrame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
 loadFrame:RegisterEvent("PLAYER_DEAD")
 loadFrame:RegisterEvent("PLAYER_ALIVE")
@@ -3550,7 +3545,7 @@ do
 
     if type(glow_frame_monitor) == "table" then
       for region, data in pairs(glow_frame_monitor) do
-        if region.state and region.state.unit == unit
+        if region.state and UnitIsUnit(region.state.unit, unit)
         and ((data.frame ~= frame) and (FRAME_UNIT_ADDED or FRAME_UNIT_UPDATE))
         or ((data.frame == frame) and FRAME_UNIT_REMOVED)
         then
@@ -4370,6 +4365,15 @@ do
       end
     end
   end);
+  dynFrame.frame:RegisterEvent("PLAYER_REGEN_ENABLED")
+  dynFrame.frame:RegisterEvent("PLAYER_REGEN_DISABLED")
+  dynFrame.frame:SetScript("OnEvent", function(self, event)
+    if event == "PLAYER_REGEN_ENABLED" and self:IsShown() then
+      self:Hide()
+    elseif event == "PLAYER_REGEN_DISABLED" and not self:IsShown() and dynFrame.size > 0 then
+      self:Show()
+    end
+  end)
 end
 
 Private.dynFrame = dynFrame;
@@ -6227,12 +6231,6 @@ end
 function WeakAuras.GetTriggerCategoryFor(triggerType)
   local prototype = Private.event_prototypes[triggerType]
   return prototype and prototype.type
-end
-
----@param unit UnitToken
----@return number stagger
-function WeakAuras.UnitStagger(unit)
-  return UnitStagger(unit) or 0
 end
 
 function Private.SortOrderForValues(values)

@@ -299,6 +299,8 @@ L["Bottom Right"] = "Embaixo à direita"
 L["Bottom to Top"] = "De baixo para cima"
 L["Bounce"] = "Salto"
 L["Bounce with Decay"] = "Salto com declínio"
+--[[Translation missing --]]
+L["BreakUpLargeNumbers (Blizzard)"] = "BreakUpLargeNumbers (Blizzard)"
 L["Broodlord Lashlayer"] = "Prolemestre Flagelador"
 L["Buff"] = "Buff"
 --[[Translation missing --]]
@@ -1049,6 +1051,8 @@ L["Ignore Rune CD"] = "Ignore Rune CD"
 L["Ignore Rune CDs"] = "Ignore Rune CDs"
 --[[Translation missing --]]
 L["Ignore Self"] = "Ignore Self"
+--[[Translation missing --]]
+L["Ignore Spell Override"] = "Ignore Spell Override"
 L["Immune"] = "Imune"
 L["Important"] = "Importante"
 --[[Translation missing --]]
@@ -1931,10 +1935,6 @@ L["Show Loss of Control"] = "Show Loss of Control"
 --[[Translation missing --]]
 L["Show On"] = "Show On"
 --[[Translation missing --]]
-L["Show Override"] = "Show Override"
---[[Translation missing --]]
-L["Show Override Spell"] = "Show Override Spell"
---[[Translation missing --]]
 L["Show Rested Overlay"] = "Show Rested Overlay"
 L["Shrink"] = "Encolher"
 --[[Translation missing --]]
@@ -2195,6 +2195,8 @@ L["The 'ID' value can be found in the BigWigs options of a specific spell"] = "T
 L["The Prophet Skeram"] = "The Prophet Skeram"
 --[[Translation missing --]]
 L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."] = "The trigger number is optional, and uses the trigger providing dynamic information if not specified."
+--[[Translation missing --]]
+L["The War Within"] = "The War Within"
 --[[Translation missing --]]
 L["There are %i updates to your auras ready to be installed!"] = "There are %i updates to your auras ready to be installed!"
 --[[Translation missing --]]
