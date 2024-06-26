@@ -740,8 +740,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = "Ocurrencia d
 	L["Same texture as Foreground"] = "Misma textura que primer plano"
 	L["Saved Data"] = "Datos guardados"
 	L["Scale"] = "Escala"
-	--[[Translation missing --]]
-	L["Search API"] = "Search API"
+	L["Search API"] = "API de búsqueda"
 	L["Select Talent"] = "Seleccionar talento"
 	L["Select the auras you always want to be listed first"] = "Selecciona las auras que quieres que siempre sean listadas primero"
 	L["Selected Frame"] = "Marco seleccionado"
@@ -919,8 +918,7 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "La unidad %s no es una unidad válida para RegisterUnitEvent"
 	L["Unit Count"] = "Recuento de unidad"
 	L["Unit Frames"] = "Marcos de unidad"
-	--[[Translation missing --]]
-	L["Unknown"] = "Unknown"
+	L["Unknown"] = "Desconocido"
 	L["Unknown property '%s' found in '%s'"] = "Propiedad desconocida '%s' encontrada en '%s'"
 	L["Unlike the start or finish animations, the main animation will loop over and over until the display is hidden."] = "Ignorar animaciones de inicio y final: la animación principal se repetirá hasta que el aura se oculte."
 	L["Update"] = "Actualizar"

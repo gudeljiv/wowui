@@ -113,7 +113,7 @@ addonTable.playerRace = select(2,UnitRace ("player"))
 local playerClass, playerRace, localeClass = addonTable.playerClass, addonTable.playerRace, addonTable.localeClass
 local missChance = (playerRace == "NightElf" and 7 or 5)
 local UNFORGE_INDEX = -1
-addonTable.StatCaps = {
+addonTable.StatCapMethods = {
   AtLeast = 1,
   AtMost = 2,
   NewValue = 3,
@@ -279,7 +279,7 @@ function ReforgeLite:CreateItemStats()
       mgetter = function (method, orig)
         return (orig and method.orig_stats and method.orig_stats[i]) or method.stats[i]
       end,
-      parser = short and "^+(%d+) " .. _G[name_].."$" or _G[name_]:gsub("%%s", "(.+)")
+      parser = short and L["StatFormat"]:gsub("%%s", _G[name_]) or (ITEM_SPELL_TRIGGER_ONEQUIP .. " " .. _G[name_]:gsub("%%s", "(.+)"))
     }
   end
   local CR_HIT, CR_CRIT, CR_HASTE = CR_HIT_SPELL, CR_CRIT_SPELL, CR_HASTE_SPELL
@@ -303,7 +303,7 @@ function ReforgeLite:CreateItemStats()
       end,
       parser = function(line)
         if CreateColor(line:GetTextColor()):IsEqualTo(WHITE_FONT_COLOR) then
-          return strmatch(line:GetText(), "^+(%d+) "..ITEM_MOD_SPIRIT_SHORT.."$")
+          return strmatch(line:GetText(), L["StatFormat"]:gsub("%%s", ITEM_MOD_SPIRIT_SHORT))
         end
       end
     },
@@ -970,9 +970,9 @@ function ReforgeLite:AddCapPoint (i, loading)
     self:RemoveCapPoint (i, point)
   end)
   local methodList = {
-    {value = addonTable.StatCaps.AtLeast, name = L["At least"]},
-    {value = addonTable.StatCaps.AtMost, name = L["At most"]},
-    {value = addonTable.StatCaps.NewValue, name = ""}
+    {value = addonTable.StatCapMethods.AtLeast, name = L["At least"]},
+    {value = addonTable.StatCapMethods.AtMost, name = L["At most"]},
+    {value = addonTable.StatCapMethods.NewValue, name = ""}
   }
   local method = GUI:CreateDropdown (self.statCaps, methodList, 1,
     function (val) self.pdb.caps[i].points[point].method = val end, 80)
@@ -1434,7 +1434,7 @@ function ReforgeLite:CreateOptionList ()
   self.storedScore.suffix:SetText (")")
 
   self.storedClear = CreateFrame ("Button", "ReforgeLiteStoredClear", self.content, "UIPanelButtonTemplate")
-  self.storedClear:SetText (L["Clear"])
+  self.storedClear:SetText (KEY_NUMLOCK_MAC)
   self.storedClear:SetSize (self.storedClear:GetFontString():GetStringWidth() + 20, 22)
   self.storedClear:SetScript ("OnClick", function (self)
     ReforgeLite:ClearStoredMethod ()
@@ -1670,7 +1670,7 @@ function ReforgeLite:RefreshMethodStats (relax)
         if playerClass == "WARRIOR" then
           self.methodTank:PrintLine ("%s: %.2f%%", L["Crit block"], self.pdb.method.stats.critBlock or 0)
         end
-        self.methodTank:PrintLine ("%s: %.2f%%", L["Total"], ctc)
+        self.methodTank:PrintLine ("%s: %.2f%%", TOTAL, ctc)
       else
         self.methodTank:Hide2 ()
       end

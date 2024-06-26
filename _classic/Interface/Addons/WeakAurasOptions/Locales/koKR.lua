@@ -798,8 +798,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[위크오�
 	L["Same texture as Foreground"] = "전경과 같은 텍스쳐"
 	L["Saved Data"] = "저장된 데이터"
 	L["Scale"] = "크기 비율"
-	--[[Translation missing --]]
-	L["Search API"] = "Search API"
+	L["Search API"] = "API 검색"
 	L["Select Talent"] = "특성 선택"
 	L["Select the auras you always want to be listed first"] = "목록 최상단에 고정시킬 위크오라를 선택하세요"
 	L["Selected Frame"] = "선택한 프레임"

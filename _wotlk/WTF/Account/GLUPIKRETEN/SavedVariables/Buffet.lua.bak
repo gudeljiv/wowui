@@ -466,5 +466,6 @@ BuffetItemDB = {
 		},
 	},
 	["version"] = "4.4.0.110",
+	["nextScanDelay"] = 1.2,
 	["build"] = 55141,
 }

@@ -159,6 +159,8 @@ local bIsOptionsPanelFullyLoaded = false
 
 -- ~options �ptions
 function Plater.OpenOptionsPanel(pageNumber, bIgnoreLazyLoad)
+	platerInternal.OpenOptionspanelAfterCombat = nil
+	
 	--localization
 	local L = DF.Language.GetLanguageTable(addonId)
 
@@ -181,6 +183,12 @@ function Plater.OpenOptionsPanel(pageNumber, bIgnoreLazyLoad)
 		end
 
 		return true
+	end
+	
+	if (InCombatLockdown()) then
+		Plater:Msg ("Optionspanel not loaded and cannot open during combat. It will open automatically after combat ends.")
+		platerInternal.OpenOptionspanelAfterCombat = {pageNumber, bIgnoreLazyLoad}
+		return
 	end
 
 	if (pageNumber) then
@@ -1903,6 +1911,21 @@ local debuff_options = {
 		name = "OPTIONS_HEIGHT",
 		desc = "OPTIONS_AURA_DEBUFF_HEIGHT",
 	},
+	{
+		type = "range",
+		get = function() return Plater.db.profile.aura_border_thickness end,
+		set = function (self, fixedparam, value) 
+			Plater.db.profile.aura_border_thickness = value
+			Plater.RefreshDBUpvalues()
+			Plater.RefreshAuras()
+			Plater.UpdateAllPlates()
+		end,
+		min = 1,
+		max = 5,
+		step = 1,
+		name = "OPTIONS_BORDER_THICKNESS",
+		desc = "OPTIONS_BORDER_THICKNESS",
+	},
 	
 	{type = "blank"},
 	{type = "label", get = function() return "Aura Size (Frame 2):" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
@@ -1936,6 +1959,21 @@ local debuff_options = {
 		step = 1,
 		name = "OPTIONS_HEIGHT",
 		desc = "OPTIONS_AURA_HEIGHT",
+	},
+	{
+		type = "range",
+		get = function() return Plater.db.profile.aura_border_thickness2 end,
+		set = function (self, fixedparam, value) 
+			Plater.db.profile.aura_border_thickness2 = value
+			Plater.RefreshDBUpvalues()
+			Plater.RefreshAuras()
+			Plater.UpdateAllPlates()
+		end,
+		min = 1,
+		max = 5,
+		step = 1,
+		name = "OPTIONS_BORDER_THICKNESS",
+		desc = "OPTIONS_BORDER_THICKNESS",
 	},
 	
 	{type = "blank"},
@@ -4462,6 +4500,21 @@ do
 			name = "OPTIONS_HEIGHT",
 			desc = "OPTIONS_AURA_HEIGHT",
 		},
+		{
+			type = "range",
+			get = function() return Plater.db.profile.aura_border_thickness_personal end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.aura_border_thickness_personal = value
+				Plater.RefreshDBUpvalues()
+				Plater.RefreshAuras()
+				Plater.UpdateAllPlates()
+			end,
+			min = 1,
+			max = 5,
+			step = 1,
+			name = "OPTIONS_BORDER_THICKNESS",
+			desc = "OPTIONS_BORDER_THICKNESS",
+		},
 		
 		--y offset
 		{
@@ -4492,6 +4545,7 @@ do
 			desc = "When using a fixed position and want to go back to Blizzard default." .. CVarDesc,
 			name = "Reset to Automatic Position" .. CVarIcon,
 			nocombat = true,
+			width = 140,
 		},
 		
 		{
@@ -4562,7 +4616,7 @@ do
 			desc = "With a fixed position, personal bar won't move.\n\nTo revert this, click the button above." .. CVarDesc,
 		},
 		
-		{type = "blank"},
+		--{type = "blank"},
 		{type = "label", get = function() return "Blizzard Cast Bar:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
 		
 		--hide castbar from blizzard

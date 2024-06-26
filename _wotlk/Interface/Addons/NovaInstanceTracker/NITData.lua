@@ -38,6 +38,12 @@ local GetContainerItemLink = GetContainerItemLink or C_Container.GetContainerIte
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
 local GetQuestInfo = C_QuestLog.GetQuestInfo or C_QuestLog.GetTitleForQuestID;
 NIT.currentInstanceID = 0;
+--This is for a system that records before and after honor for bgs honor gained calced.
+--Didn't have to end up using it becaus another way was worked out that didn't work at the start of expansion.
+--Cata scoreboard isn't accurate honor gained either, but NIT current system is now accurate, hopefully nothing else breaks.
+--Can't use CHAT_MSG_CURRENCY becaus bg bonus honor doesn't trigger it.
+--local usePreHonor = true;
+local usePreHonor;
 
 --Some of this addon comm stuff is copied from my other addon NovaWorldBuffs and is left here incase of future stuff being added.
 function NIT:OnCommReceived(commPrefix, string, distribution, sender)
@@ -229,6 +235,7 @@ if (NIT.expansionNum < 4) then
 end
 if (NIT.expansionNum > 3) then
 	f:RegisterEvent("CHAT_MSG_CURRENCY");
+	f:RegisterEvent("CHAT_MSG_COMBAT_HONOR_GAIN");
 end
 f:RegisterEvent("GROUP_JOINED");
 f:RegisterEvent("GROUP_FORMED");
@@ -698,12 +705,43 @@ function NIT:chatMsgCombatHonorGain(...)
 		NIT.data.instances[1].honor = 0;
 	end
 	local text = ...;
-	local honorGained = string.match(text, "%d+");
+	local honorGained;
+	if (string.match(text, "%d+%.%d+")) then
+		--Decimal in cata.
+		honorGained = string.match(text, "%d+%.%d+");
+	else
+		honorGained = string.match(text, "%d+");
+	end
 	if (not honorGained) then
 		NIT:debug("Honor error:", text);
 		return;
 	end
+	--NIT:debug("Honor Gained:", honorGained);
 	NIT.data.instances[1].honor = NIT.data.instances[1].honor + honorGained;
+end
+
+function NIT:calcRecordedHonor(logID, useData)
+	local data;
+	if (logID) then
+		data = NIT.data.instances[logID];
+	else
+		data = useData;
+	end
+	if (not data or not data.honor) then
+		return 0;
+	end
+	if (usePreHonor and NIT.inInstance and data.preHonor and logID == 1 and data.type == "bg") then
+		local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
+		if (honor) then
+			return NIT:round(honor.quantity - data.preHonor);
+		else
+			return NIT:round(data.honor);
+		end				
+	elseif (data.preHonor and data.postHonor) then
+		return NIT:round(data.postHonor - data.preHonor);
+	else
+		return NIT:round(data.honor);
+	end
 end
 
 --Cata and onwards honor recording, new event added.
@@ -718,7 +756,8 @@ function NIT:chatMsgCurrency(...)
 	local currencyID = tonumber(strmatch(text, "currency:(%d+):"));
 	local instance = NIT.data.instances[1];
 	if (currencyID == 1901 and instance.type == "bg") then
-		local amount = strmatch(text, "currency:.+\]|h|r%D*(%d+)");
+		--Doesn't work right in cata becaus the currency msgs don't work for bonus honor at the end of a bg.
+		--[[local amount = strmatch(text, "currency:.+\]|h|r%D*(%d+)");
 		if (not amount) then
 			NIT:debug("Honor error:", text);
 			return;
@@ -727,6 +766,7 @@ function NIT:chatMsgCurrency(...)
 			instance.honor = 0;
 		end
 		instance.honor = instance.honor + amount;
+		NIT:debug("Honor Gained2:", amount);]]
 	else
 		--Don't judge my string matching.
 		local amount = strmatch(text, "currency:.+\]|h|r%D*(%d+)");
@@ -1151,6 +1191,12 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 				--t.subDifficulty = getDungeonSubDifficulty();
 				if (type == "bg") then
 					t.honor = 0;
+					if (usePreHonor) then
+						local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
+						if (honor) then
+							t.preHonor = honor.quantity;
+						end
+					end
 				end
 				if (type == "bg" or type == "arena") then
 					t.isPvp = true;
@@ -1261,7 +1307,14 @@ function NIT:leftInstance()
 	if (NIT.inInstance and NIT.data.instances[1]) then
 		local isPvp = NIT.data.instances[1].isPvp
 		NIT.data.instances[1]["leftTime"] = GetServerTime();
-		if (not isPvp) then
+		if (isPvp) then
+			if (usePreHonor and NIT.data.instances[1].type == "bg") then
+				local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
+				if (honor) then
+					NIT.data.instances[1].postHonor = honor.quantity;
+				end
+			end
+		else
 			NIT.data.instances[1]["leftLevel"] = UnitLevel("player");
 			NIT.data.instances[1]["leftXP"] = UnitXP("player");
 			NIT.data.instances[1]["leftMoney"] = GetMoney();
@@ -1352,7 +1405,7 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 	end
 	if (data.isPvp) then
 		if (data.type == "bg") then
-			text = text .. pColor .. " " .. L["Honor"] .. ":|r " .. sColor .. (data.honor or 0) .. "|r";
+			text = text .. pColor .. " " .. L["Honor"] .. ":|r " .. sColor .. NIT:calcRecordedHonor(nil, data) .. "|r";
 			if (NIT.db.global.instanceStatsOutputHK) then
 				text = text .. pColor .. " " .. L["HKs"] .. ":|r " .. sColor .. (data.hk or 0) .. "|r";
 			end
@@ -2228,22 +2281,18 @@ function NIT:recordQuests()
 			--end
 		end]]
 		--Heroic was changed from a 7 per week cap to a rolling season cap so we'll display that cap instead.
-		--Enable this once they fix the season earled display bug.
-		--[[local name, count, _, _, _, max = GetCurrencyInfo(396);
-		--if (currencyQuantity ~= 0) then
 		if (UnitLevel("player") == 85) then
-			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(301);
-			--if (remaining < overallLimit) then
-				local remainingText = "|cFF00FF00" .. count .. "|r|cFF00FF00/" .. max .. "|r";
-				if (count == 0) then
-					remainingText = "|cFFFF0000" .. count .. "|r|cFF00FF00/" .. max .. "|r";
-				elseif (count < max) then
-					remainingText = "|cFFFFFF00" .. count .. "|r|cFF00FF00/" .. max .. "|r";
-				end
-				local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r " .. name .. " cap: " .. remainingText;
-				NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
-			--end
-		end]]
+			local valor = C_CurrencyInfo.GetCurrencyInfo(396);
+			local name, totalEarned, max = valor.name, valor.totalEarned, valor.maxQuantity;
+			local remainingText = "|cFF00FF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+			if (totalEarned == 0) then
+				remainingText = "|cFFFF0000" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+			elseif (totalEarned < max) then
+				remainingText = "|cFFFFFF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+			end
+			local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r " .. name .. " cap: " .. remainingText;
+			NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
+		end
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 	local sharedQuests = {};

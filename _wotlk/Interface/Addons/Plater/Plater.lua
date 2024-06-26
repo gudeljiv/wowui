@@ -1918,16 +1918,16 @@ Plater.AnchorNamesByPhraseId = {
 				return format ("%.1f", number)
 			else
 				if (number > 999999999) then
-					return format ("%.2f", number/1000000000) .. "B"
+					return format ("%.2fB", number/1000000000)
 					
 				elseif (number > 999999) then
-					return format ("%.2f", number/1000000) .. "M"
+					return format ("%.2fM", number/1000000)
 					
 				elseif (number > 99999) then
 					return floor (number/1000) .. "K"
 					
 				elseif (number > 999) then
-					return format ("%.1f", (number/1000)) .. "K"
+					return format ("%.1fK", (number/1000))
 					
 				end
 				
@@ -2137,6 +2137,12 @@ Plater.AnchorNamesByPhraseId = {
 			
 			Plater.UpdateAllNameplateColors()
 			Plater.UpdateAllPlates()
+			
+			if (platerInternal.OpenOptionspanelAfterCombat) then
+				local OpenOptionspanelAfterCombat = platerInternal.OpenOptionspanelAfterCombat
+				platerInternal.OpenOptionspanelAfterCombat = nil
+				C_Timer.NewTimer (1.5, function() Plater.OpenOptionsPanel(unpack(OpenOptionspanelAfterCombat)) end )
+			end
 		end,
 
 		FRIENDLIST_UPDATE = function()
@@ -3071,6 +3077,11 @@ Plater.AnchorNamesByPhraseId = {
 			--> border
 				--create a border using default borders from the retail game
 				local healthBarBorder = DF:CreateFullBorder(nil, plateFrame.unitFrame.healthBar)
+				local borderOffset = 0 -- -1 * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+				PixelUtil.SetPoint (healthBarBorder, "TOPLEFT", plateFrame.unitFrame.healthBar, "TOPLEFT", -borderOffset, borderOffset)
+				PixelUtil.SetPoint (healthBarBorder, "TOPRIGHT", plateFrame.unitFrame.healthBar, "TOPRIGHT", borderOffset, borderOffset)
+				PixelUtil.SetPoint (healthBarBorder, "BOTTOMLEFT", plateFrame.unitFrame.healthBar, "BOTTOMLEFT", -borderOffset, -borderOffset)
+				PixelUtil.SetPoint (healthBarBorder, "BOTTOMRIGHT", plateFrame.unitFrame.healthBar, "BOTTOMRIGHT", borderOffset, -borderOffset)
 				healthBarBorder.Left:SetDrawLayer("OVERLAY", 6)
 				healthBarBorder.Right:SetDrawLayer("OVERLAY", 6)
 				healthBarBorder.Top:SetDrawLayer("OVERLAY", 6)
@@ -3078,6 +3089,10 @@ Plater.AnchorNamesByPhraseId = {
 				plateFrame.unitFrame.healthBar.border = healthBarBorder
 				
 				local powerBarBorder = DF:CreateFullBorder(nil, plateFrame.unitFrame.powerBar)
+				PixelUtil.SetPoint (powerBarBorder, "TOPLEFT", plateFrame.unitFrame.powerBar, "TOPLEFT", -borderOffset, borderOffset)
+				PixelUtil.SetPoint (powerBarBorder, "TOPRIGHT", plateFrame.unitFrame.powerBar, "TOPRIGHT", borderOffset, borderOffset)
+				PixelUtil.SetPoint (powerBarBorder, "BOTTOMLEFT", plateFrame.unitFrame.powerBar, "BOTTOMLEFT", -borderOffset, -borderOffset)
+				PixelUtil.SetPoint (powerBarBorder, "BOTTOMRIGHT", plateFrame.unitFrame.powerBar, "BOTTOMRIGHT", borderOffset, -borderOffset)
 				powerBarBorder.Left:SetDrawLayer("OVERLAY", 6)
 				powerBarBorder.Right:SetDrawLayer("OVERLAY", 6)
 				powerBarBorder.Top:SetDrawLayer("OVERLAY", 6)
@@ -3847,6 +3862,12 @@ Plater.AnchorNamesByPhraseId = {
 				plateFrame.unitFrame.WidgetContainer:SetPoint('TOP', plateFrame.castBar, 'BOTTOM')
 			end
 			
+			--if plateFrame.UnitFrame and plateFrame.UnitFrame.HealthBarsContainerOrigParent then
+			--	DevTool:AddData("removing")
+			--	plateFrame.UnitFrame.HealthBarsContainer:SetParent(plateFrame.UnitFrame.HealthBarsContainerOrigParent)
+			--	plateFrame.UnitFrame.HealthBarsContainerOrigParent = nil
+			--end
+			
 			--community patch by Ariani#0960 (discord)
 			--make the unitFrame be parented to UIParent allowing frames to be moved between strata levels
 			--March 3rd, 2019
@@ -3929,25 +3950,34 @@ Plater.AnchorNamesByPhraseId = {
 		end
 		
 		--self:Hide()
+		
 		if self:IsProtected() then
 			self:ClearAllPoints()
 			self:SetParent(nil)
-			for _, f in pairs(self:GetChildren() or {}) do
-				--DevTool:AddData(f, "child")
-				if type(f) == "table" and f.IsProtected then
-					local p, ep = f:IsProtected()
-					--DevTool:AddData({p, ep, f}, "protected?")
-					if ep then
-						--DevTool:AddData(f, "protected!")
-						f:ClearAllPoints()
-						f:SetParent(nil)
-					end
-				end
+			
+			if self.HealthBarsContainer then
+				self.HealthBarsContainerOrigParent = self.HealthBarsContainer:GetParent() or self.HealthBarsContainerOrigParent
+				self.HealthBarsContainer:ClearAllPoints()
+				--self.HealthBarsContainer:SetParent(nil)
 			end
+			
+			--for _, f in pairs(self:GetChildren() or {}) do
+			--	--DevTool:AddData(f, "child")
+			--	if type(f) == "table" and f.IsProtected then
+			--		local p, ep = f:IsProtected()
+			--		--DevTool:AddData({p, ep, f}, "protected?")
+			--		if ep then
+			--			--DevTool:AddData(f, "protected!")
+			--			f:ClearAllPoints()
+			--			f:SetParent(nil)
+			--			f:Hide()
+			--		end
+			--	end
+			--end
 			if not self:IsProtected() then
 				self:Hide()
 			elseif DevTool then
-				DevTool:AddData(self, "protected")
+				DevTool:AddData(self, "protected nameplate...")
 			end
 		else
 			self:Hide()
@@ -4016,6 +4046,9 @@ function Plater.OnInit() --private --~oninit ~init
 
 		DF.Language.SetCurrentLanguage(addonId, PlaterLanguage.language)
 	end
+
+	--PlaterBackup is a table to store data that has been removed by the player might want to restore in another time
+	PlaterBackup = PlaterBackup or {}
 
 	Plater.InitializeSavedVariables()
 	Plater.RefreshDBUpvalues()
@@ -4186,8 +4219,12 @@ function Plater.OnInit() --private --~oninit ~init
 	--hooking scripts has load conditions, here it creates a load filter for plater
 	--so when a load condition is changed it reload hooks
 		function Plater.HookLoadCallback (encounterID) --private
+			Plater.StartLogPerformanceCore("Plater-Core", "Mod/Script", "HookLoadCallback")
+			
 			Plater.EncounterID = encounterID
 			Plater.WipeAndRecompileAllScripts ("hook", true) --sending true to not dispatch a hotReload in the scripts
+			
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "HookLoadCallback")
 		end
 		DF:CreateLoadFilterParser (Plater.HookLoadCallback)
 	
@@ -5019,6 +5056,10 @@ function Plater.OnInit() --private --~oninit ~init
 					local profile = Plater.db.profile
 					local isInCombat = profile.use_player_combat_state and PLAYER_IN_COMBAT or unitFrame.InCombat
 					
+					--reset spark color and size
+					self.Spark:SetVertexColor(unpack(profile.cast_statusbar_spark_color))
+					PixelUtil.SetSize(self.Spark, profile.cast_statusbar_spark_width, self:GetHeight())
+
 					--cut the spell name text to fit within the castbar
 					Plater.UpdateSpellNameSize (self.Text, unitFrame.ActorType, nil, isInCombat)
 
@@ -5389,8 +5430,9 @@ function Plater.OnInit() --private --~oninit ~init
 	function Plater.OnUpdateHealthMax (self)
 		Plater.StartLogPerformanceCore("Plater-Core", "Health", "OnUpdateHealthMax")
 		
-		--the framework already set the min max values
-		self.CurrentHealthMax = self.currentHealthMax
+		-- ensure updated values...
+		Plater.QuickHealthUpdate (self.unitFrame)
+		
 		Plater.CheckLifePercentText (self.unitFrame)
 		
 		Plater.EndLogPerformanceCore("Plater-Core", "Health", "OnUpdateHealthMax")
@@ -7409,15 +7451,15 @@ end
 			
 			if (showDecimals) then
 				if (percent < 10) then
-					healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. " (" .. format ("%.2f", percent) .. "%)")
+					healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. format (" (%.2f%%)", percent))
 					
 				elseif (percent < 99.9) then
-					healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. " (" .. format ("%.1f", percent) .. "%)")
+					healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. format (" (%.1f%%)", percent))
 				else
 					healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. " (100%)")
 				end
 			else
-				healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) .. " (" .. floor (percent) .. "%)")
+				healthBar.lifePercent:SetText (Plater.FormatNumber (currentHealth) ..  format (" (%d%%)", percent))
 			end
 			
 		elseif (showHealthAmount) then
@@ -7428,15 +7470,15 @@ end
 			
 			if (showDecimals) then
 				if (percent < 10) then
-					healthBar.lifePercent:SetText (format ("%.2f", percent) .. "%")
+					healthBar.lifePercent:SetText (format ("%.2f%%", percent))
 					
 				elseif (percent < 99.9) then
-					healthBar.lifePercent:SetText (format ("%.1f", percent) .. "%")
+					healthBar.lifePercent:SetText (format ("%.1f%%", percent))
 				else
 					healthBar.lifePercent:SetText ("100%")
 				end
 			else
-				healthBar.lifePercent:SetText (floor (percent) .. "%")
+				healthBar.lifePercent:SetText (format ("%d%%", percent))
 			end
 		
 		else
@@ -11004,7 +11046,7 @@ end
 		
 		ScriptRunCommMessageHook = function(globalScriptObject, hookName, source, ...)
 			local modName = globalScriptObject.DBScriptObject.Name
-			Plater.StartLogPerformance("Mod-RunHooks", modName, hook)
+			Plater.StartLogPerformance("Mod-RunHooks", modName, hookName)
 			local okay, errortext = xpcall (globalScriptObject [hookName], GetErrorHandler("Mod |cFFAAAA22" .. modName .. "|r code for |cFFBB8800" .. hookName .. "|r error: "), PLATER_GLOBAL_MOD_ENV [globalScriptObject.DBScriptObject.scriptId], source, ...)
 			Plater.EndLogPerformance("Mod-RunHooks", modName, hookName)
 			if (not okay) then
@@ -11647,14 +11689,22 @@ end
 
 	function Plater.WipeAndRecompileAllScripts (scriptType, noHotReload)
 		if (scriptType == "script") then
+			Plater.StartLogPerformanceCore("Plater-Core", "Mod/Script", "WipeAndRecompileAllScripts - script")
+			
 			table.wipe(SCRIPT_AURA_TRIGGER_CACHE)
 			table.wipe(SCRIPT_CASTBAR_TRIGGER_CACHE)
 			table.wipe(SCRIPT_UNIT_TRIGGER_CACHE)
 			Plater.CompileAllScripts (scriptType, noHotReload)
 			
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "WipeAndRecompileAllScripts - script")
+			
 		elseif (scriptType == "hook") then
+			Plater.StartLogPerformanceCore("Plater-Core", "Mod/Script", "WipeAndRecompileAllScripts - hook")
+			
 			Plater.WipeHookContainers (noHotReload)
 			Plater.CompileAllScripts (scriptType, noHotReload)
+			
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "WipeAndRecompileAllScripts - hook")
 		end
 	end
 
@@ -11861,9 +11911,11 @@ end
 	
 	--compile scripts from the Hooking tab
 	function Plater.CompileHook (scriptObject, noHotReload)
+		Plater.StartLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 		
 		--check if the script is valid and if is enabled
 		if (not scriptObject) then
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 			return
 		end
 		
@@ -11880,17 +11932,20 @@ end
 			end
 			--clear env when disabling/disabled
 			PLATER_GLOBAL_MOD_ENV [scriptObject.scriptId] = nil
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 			return
 		end
 		
 		do --check integrity
 			if (not scriptObject.Name) then
 				Plater:Msg ("fail to load mod: " .. (scriptObject.Name or "") .. ".")
+				Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 				return
 			end
 
 			if (not scriptObject.LoadConditions) then
 				Plater:Msg ("fail to load mod: " .. (scriptObject.Name or "") .. ".")
+				Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 				return
 			end
 			
@@ -11907,11 +11962,13 @@ end
 				not scriptObject.LoadConditions.map_ids
 			) then
 				Plater:Msg ("fail to load mod: " .. (scriptObject.Name or "") .. ".")
+				Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 				return
 			end
 
 			if (not scriptObject.Hooks) then
 				Plater:Msg ("fail to load mod: " .. (scriptObject.Name or "") .. ".")
+				Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 				return
 			end
 		end
@@ -11928,6 +11985,7 @@ end
 				--clear env if needed
 				PLATER_GLOBAL_MOD_ENV [scriptObject.scriptId] = nil
 			end
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 			return
 		else
 			Plater.CurrentlyLoadedHooks [scriptObject.scriptId] = true
@@ -12004,6 +12062,7 @@ end
 			
 			if (type (code) ~= "string") then
 				Plater:Msg ("fail to load mod: " .. (scriptObject.Name or "") .. ".")
+				Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 				return
 			end
 			
@@ -12054,14 +12113,19 @@ end
 			end
 		end
 		
+		Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileHook")
 	end
 
 	--compile scripts from the Scripting tab
 	function Plater.CompileScript(scriptObject, noHotReload, ...)
+		Plater.StartLogPerformanceCore("Plater-Core", "Mod/Script", "CompileScript")
+		
 		--check if the script is valid and if is enabled
 		if (not scriptObject) then
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileScript")
 			return
 		elseif (not scriptObject.Enabled) then
+			Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileScript")
 			return
 		end
 		
@@ -12248,6 +12312,7 @@ end
 			end
 		end
 		
+		Plater.EndLogPerformanceCore("Plater-Core", "Mod/Script", "CompileScript")
 	end
 
 	--check all triggers of all scripts for overlaps

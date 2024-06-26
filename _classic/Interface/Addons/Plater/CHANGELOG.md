@@ -1,14 +1,13 @@
 @Terciob:
-- Patch for S4 scripts.
-- Backend changes on performance units.
-- Maintenance on plugin handling.
+- Updates and preparations for scripts for TWW.
 
 @cont1nuity:
-- Fixing pixel perfect aura borders and Masque support.
-- Addind default aura border color option.
-- Fixing pixel perfect aura borders and Masque support.
-- Workaround to support TWW beta.
-- Better pixel perfect implementation all around on borders.
-- Adding unit names to the unit script trigger lists and their zones and 3d model to tooltip (if available).
-- Fixing default mod code for 'Mod Option Changed' hook.
+- First load of the options menu will only take place out of combat now and be triggered automatically when combat ends.
+- Fixing an issue with out of order health updates.
+- Adding memory profiling.
+- Adding aura border thickness options.
+- Some improvements for TWW handling (still a mess with default nameplates, though).
+- More profiling for mods/scripts.
+- Some slight improvements to health text handling.
+- Improvements to pixel perfect aura borders.
 

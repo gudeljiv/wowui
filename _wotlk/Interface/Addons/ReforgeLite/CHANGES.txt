@@ -1,12 +1,46 @@
-tag ccf976f2696b690f3b3c10dd785ab8d0e1c61186 v.1.6.2
+tag ddbc5ae211f748f0ebc77721f4e2cc941c937554 v1.6.3
 Author:	skyler-code <skylerh15@github.com>
-Date:	Thu Jun 20 09:28:13 2024 -0500
+Date:	Sat Jun 22 16:52:44 2024 -0500
 
-commit af879f2e139ffc84c64376b358f0f17b5f7fd87b
+commit 2f1691c7e7f18b801fa9c8da08692fdb32a59983
 Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jun 20 09:27:54 2024 -0500
+Date:   Sat Jun 22 10:54:37 2024 -0500
 
-    Revert "Fix for Korean tooltip parsing"
-    
-    This reverts commit 3ee8a2f7d9ff969bd9a0f461045aca517d447262.
+    Revert of a5c654141212d03081723e08a7f98ea6b98fe3f1
+
+commit 9931aa19decea99201b3265be8b1dd53902baea1
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 16:51:52 2024 -0500
+
+    export presets for sharing (import next)
+
+commit 80af7098977c4699b2b820c850a8f1558af8b053
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 14:28:30 2024 -0500
+
+    properly partition class presets to prevent name clashing
+
+commit 7ac172c2c9da882d23ca9fe83c36adf6cc336d3d
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 11:15:28 2024 -0500
+
+    New presets will now only be shown to the class that can use them
+
+commit 864f76722c2c017ced3861e23dbcc418311e11f5
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 10:32:11 2024 -0500
+
+    magic number cleanup
+
+commit c9e94361549099f57a5b7f0df46749e82e1038c2
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 10:12:50 2024 -0500
+
+    further i18n cleanup
+
+commit b1b4f782ce4c7aa7959b6d899307eac5f6cc2f95
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 22 09:59:10 2024 -0500
+
+    fire mage preset tweaks to ensure correct priority
 

@@ -6,7 +6,6 @@ IEF_Config = {
 		["BuffFrame"] = true,
 		["DebuffFrame"] = true,
 	},
-	["UIParentAlpha"] = 0,
 	["keepCustomFrames"] = false,
 	["hideFrameRateCinematic"] = true,
 	["hideFrameRate"] = true,

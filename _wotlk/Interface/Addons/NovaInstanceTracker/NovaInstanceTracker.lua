@@ -990,7 +990,7 @@ function NIT:updateMinimapButton(tooltip, frame)
 				tooltip:AddLine("|cFF9CD6DE" .. L["mobCount"] .. ":|r |cFFFFFFFF" .. (mobCount or "Unknown"));
 			end
 			if (data.honor) then
-				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
+				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. NIT:calcRecordedHonor(1));
 			end
 			if (UnitLevel("player") ~= NIT.maxLevel and data.type ~= "arena") then
 				tooltip:AddLine("|cFF9CD6DE" .. L["experience"] .. ":|r |cFFFFFFFF" .. (NIT:commaValue(data.xpFromChat) or "Unknown"));
@@ -2011,7 +2011,7 @@ function NIT:recalcInstanceLineFrames()
 					frame:ClearAllPoints();
 					frame:SetPoint("LEFT", NITInstanceFrame.EditBox, "TOPLEFT", 3, -offset);
 					offset = offset + 14;
-					local line = NIT:buildInstanceLineFrameString(v, count);
+					local line = NIT:buildInstanceLineFrameString(v, count, k);
 					if (count < 10) then
 						--Offset the text for single digit numbers so the date comlumn lines up.
 						frame.fs:SetPoint("LEFT", 7, 0);
@@ -2042,7 +2042,7 @@ function NIT:recalcInstanceLineFrames()
 	end
 end
 
-function NIT:buildInstanceLineFrameString(v, count)
+function NIT:buildInstanceLineFrameString(v, count, logID)
 	local player = v.playerName;
 	local _, _, _, classColorHex = GetClassColor(v.classEnglish);
 	--Safeguard for weakauras/addons that like to overwrite and break the GetClassColor() function.
@@ -2174,7 +2174,7 @@ function NIT:buildInstanceLineFrameString(v, count)
 	elseif (v.type == "bg") then
 		timeColor = "|cFFFFA500";
 		if (v.honor) then
-			lockoutTimeString = instance .. " (+" .. v.honor .. " Honor)";
+			lockoutTimeString = instance .. " (+" .. NIT:calcRecordedHonor(logID) .. " Honor)";
 		else
 			lockoutTimeString = instance .. " (Battleground)";
 		end
@@ -2574,7 +2574,7 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 		end
 		if (data.honor) then
 			text = text .. "\n\n|cFFFFFF00" .. L["honorGains"] .. ":|r"
-			text = text .. "\n |cFF9CD6DE+" .. data.honor .. "|r";
+			text = text .. "\n |cFF9CD6DE+" .. NIT:calcRecordedHonor(nil, data) .. "|r";
 		end
 		if (data.rep and next(data.rep)) then
 			text = text .. "\n\n|cFFFFFF00" .. L["repGains"] .. ":|r"
@@ -4324,7 +4324,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				else
 					texture = "|TInterface\\TargetingFrame\\UI-PVP-Alliance:12:12:0:0:64:64:7:36:1:36|t";
 				end
-				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Honor"] .. ":|r " .. color2 .. NIT:commaValue(data.honor) .. "|r";
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Honor"] .. ":|r " .. color2 .. NIT:commaValue(NIT:calcRecordedHonor(nil, data)) .. "|r";
 			end
 			if (data.conq and data.conq > 0) then
 				local texture = "|TInterface\\Icons\\Pvpcurrency-conquest-horde:12:12:-1:0:64:64:7:36:1:36|t"

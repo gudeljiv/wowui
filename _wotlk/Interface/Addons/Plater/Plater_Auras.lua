@@ -1288,7 +1288,7 @@ end
 		
 		-- switch to proper border, keep compatibility
 		newIcon.Border = DF:CreateFullBorder("$parentBorder", newIcon)
-		local iconOffset = -1 * newIcon:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+		local iconOffset = -1 * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
 		PixelUtil.SetPoint (newIcon.Border, "TOPLEFT", newIcon, "TOPLEFT", -iconOffset, iconOffset)
 		PixelUtil.SetPoint (newIcon.Border, "TOPRIGHT", newIcon, "TOPRIGHT", iconOffset, iconOffset)
 		PixelUtil.SetPoint (newIcon.Border, "BOTTOMLEFT", newIcon, "BOTTOMLEFT", -iconOffset, -iconOffset)
@@ -1297,7 +1297,7 @@ end
 			self.Border:SetVertexColor(r, g, b, a)
 		end
 		newIcon.Border.SetBorderSize = function(self, size)
-			local borderSize = (size or 1) * newIcon:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+			local borderSize = (size or 1) * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
 			self:SetBorderSizes(borderSize, 1, borderSize, 0)
 			self:UpdateSizes()
 		end
@@ -1321,7 +1321,7 @@ end
 		newIcon.Icon = newIcon:CreateTexture (nil, "artwork")
 		--newIcon.Icon:SetSize (18, 12)
 		--newIcon.Icon:SetPoint ("center")
-		iconOffset = -1 * newIcon:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+		iconOffset = -1 * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
 		PixelUtil.SetPoint (newIcon.Icon, "TOPLEFT", newIcon, "TOPLEFT", -iconOffset, iconOffset)
 		PixelUtil.SetPoint (newIcon.Icon, "TOPRIGHT", newIcon, "TOPRIGHT", iconOffset, iconOffset)
 		PixelUtil.SetPoint (newIcon.Icon, "BOTTOMLEFT", newIcon, "BOTTOMLEFT", -iconOffset, -iconOffset)
@@ -1473,21 +1473,25 @@ end
 			
 			--newFrameIcon:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1})
 			--newFrameIcon.Border:SetBorderSize (1)
-			newFrameIcon:SetBorderSize (1)
 			
 		
 			local auraWidth
 			local auraHeight
+			local borderThickness
 			if curBuffFrame == 2 then
 				auraWidth = Plater.db.profile.aura_width2
 				auraHeight = Plater.db.profile.aura_height2
+				borderThickness = Plater.db.profile.aura_border_thickness2
 			else
 				auraWidth = Plater.db.profile.aura_width
 			    auraHeight = Plater.db.profile.aura_height
+				borderThickness = Plater.db.profile.aura_border_thickness
 			end
-			newFrameIcon:SetSize (auraWidth, auraHeight)
-			--PixelUtil.SetSize(newFrameIcon, auraWidth, auraHeight)
+			newFrameIcon:SetBorderSize (borderThickness)
+			--newFrameIcon:SetSize (auraWidth, auraHeight)
 			--newFrameIcon.Icon:SetSize (auraWidth-2, auraHeight-2)
+			local sizeMod = UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+			PixelUtil.SetSize(newFrameIcon, auraWidth * sizeMod, auraHeight * sizeMod)
 			
 			--mixin the meta functions for scripts
 			DF:Mixin (newFrameIcon, Plater.ScriptMetaFunctions)
@@ -1653,27 +1657,33 @@ end
 			auraIconFrame.RefreshID = PLATER_REFRESH_ID
 			
 			--icon size
+			local auraWidth
+			local auraHeight
+			local borderThickness
 			if (isPersonal) then
-				local auraWidth = profile.aura_width_personal
-				local auraHeight = profile.aura_height_personal
-				auraIconFrame:SetSize (auraWidth, auraHeight)
-				--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+				auraWidth = profile.aura_width_personal
+				auraHeight = profile.aura_height_personal
+				borderThickness = profile.aura_border_thickness_personal
+				--auraIconFrame:SetSize (auraWidth, auraHeight)
 				--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 			else
 				if curBuffFrame == 2 then
-					local auraWidth = profile.aura_width2
-					local auraHeight = profile.aura_height2
-					auraIconFrame:SetSize (auraWidth, auraHeight)
-					--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+					auraWidth = profile.aura_width2
+					auraHeight = profile.aura_height2
+					borderThickness = profile.aura_border_thickness2
+					--auraIconFrame:SetSize (auraWidth, auraHeight)
 					--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 				else
-					local auraWidth = profile.aura_width
-					local auraHeight = profile.aura_height
-					auraIconFrame:SetSize (auraWidth, auraHeight)
-					--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+					auraWidth = profile.aura_width
+					auraHeight = profile.aura_height
+					borderThickness = profile.aura_border_thickness
+					--auraIconFrame:SetSize (auraWidth, auraHeight)
 					--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 				end
 			end
+			auraIconFrame:SetBorderSize (borderThickness)
+			local sizeMod = 1 --UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+			PixelUtil.SetSize(auraIconFrame, auraWidth * sizeMod, auraHeight * sizeMod)
 			
 			auraIconFrame.Cooldown:SetEdgeTexture (profile.aura_cooldown_edge_texture)
 			auraIconFrame.Cooldown:SetReverse (profile.aura_cooldown_reverse)
@@ -1697,27 +1707,33 @@ end
 		--when it changes the isPersonal flag it change locally without increasing the refresh ID
 		--> update the icon size depending on where it is shown
 		if (auraIconFrame.IsPersonal ~= isPersonal or auraIconFrame.BuffFrame ~= curBuffFrame or auraIconFrame.IsGhostAura) then
+			local auraWidth
+			local auraHeight
+			local borderThickness
 			if (isPersonal) then
-				local auraWidth = profile.aura_width_personal
-				local auraHeight = profile.aura_height_personal
-				auraIconFrame:SetSize (auraWidth, auraHeight)
-				--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+				auraWidth = profile.aura_width_personal
+				auraHeight = profile.aura_height_personal
+				borderThickness = profile.aura_border_thickness_personal
+				--auraIconFrame:SetSize (auraWidth, auraHeight)
 				--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 			else
 				if curBuffFrame == 2 then
-					local auraWidth = profile.aura_width2
-					local auraHeight = profile.aura_height2
-					auraIconFrame:SetSize (auraWidth, auraHeight)
-					--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+					auraWidth = profile.aura_width2
+					auraHeight = profile.aura_height2
+					borderThickness = profile.aura_border_thickness2
+					--auraIconFrame:SetSize (auraWidth, auraHeight)
 					--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 				else
-					local auraWidth = profile.aura_width
-					local auraHeight = profile.aura_height
-					auraIconFrame:SetSize (auraWidth, auraHeight)
-					--PixelUtil.SetSize(auraIconFrame, auraWidth, auraHeight)
+					auraWidth = profile.aura_width
+					auraHeight = profile.aura_height
+					borderThickness = profile.aura_border_thickness
+					--auraIconFrame:SetSize (auraWidth, auraHeight)
 					--auraIconFrame.Icon:SetSize (auraWidth-2, auraHeight-2)
 				end
 			end
+			auraIconFrame:SetBorderSize (borderThickness)
+			local sizeMod = 1 --UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+			PixelUtil.SetSize(auraIconFrame, auraWidth * sizeMod, auraHeight * sizeMod)
 			
 			Plater.UpdateIconAspecRatio (auraIconFrame)
 		end
@@ -2009,7 +2025,7 @@ end
 			iconFrame.Border:Hide()
 			
 			iconFrame.Border = DF:CreateFullBorder("$parentBorder", iconFrame)
-			local iconOffset = -1 * iconFrame:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+			local iconOffset = -1 * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
 			PixelUtil.SetPoint (iconFrame.Border, "TOPLEFT", iconFrame, "TOPLEFT", -iconOffset, iconOffset)
 			PixelUtil.SetPoint (iconFrame.Border, "TOPRIGHT", iconFrame, "TOPRIGHT", iconOffset, iconOffset)
 			PixelUtil.SetPoint (iconFrame.Border, "BOTTOMLEFT", iconFrame, "BOTTOMLEFT", -iconOffset, -iconOffset)
@@ -2018,7 +2034,7 @@ end
 				self.Border:SetVertexColor(r, g, b, a)
 			end
 			iconFrame.Border.SetBorderSize = function(self, size)
-				local borderSize = (size or 1) * iconFrame:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
+				local borderSize = (size or 1) * UIParent:GetEffectiveScale() * (Plater.db.profile.use_ui_parent_just_enabled and Plater.db.profile.ui_parent_scale_tune or 1)
 				self:SetBorderSizes(borderSize, 1, borderSize, 0)
 				self:UpdateSizes()
 			end
