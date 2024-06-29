@@ -1,7 +1,6 @@
 # Myslot
 
-## [v5.15.1](https://github.com/tg123/myslot/tree/v5.15.1) (2024-06-14)
-[Full Changelog](https://github.com/tg123/myslot/commits/v5.15.1) 
+## [v5.16.0](https://github.com/tg123/myslot/tree/v5.16.0) (2024-06-29)
+[Full Changelog](https://github.com/tg123/myslot/commits/v5.16.0) 
 
-- Merge pull request #50 from Justw8/master  
-    The War Within compatibility code  
+- feat: Update GUI label for "Other" in settings menu  
