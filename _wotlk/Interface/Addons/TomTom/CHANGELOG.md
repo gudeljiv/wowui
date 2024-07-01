@@ -1,8 +1,10 @@
 # TomTom
 
-## [v3.6.2-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.2-release) (2024-05-08)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.2-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v3.6.3-release](https://github.com/jnwhiteh/TomTom/tree/v3.6.3-release) (2024-06-30)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.6.3-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Declare UnitGUID global  
+- Add units for waypoint arrow (metric, imperial)  
 - Update TOC for 10.2.7  
 - Update TOC for Cataclysm Classic  
 - Support 11.0 by removing some broken functionality  
@@ -693,5 +695,3 @@
 - Added in TTA. May need tweaking for cosmetic value.  
 - * Fix for minimap/world textures  
 - * Fix for the crazy arrow  
-- * Fix for the crazy arrow  
-- .toc update  

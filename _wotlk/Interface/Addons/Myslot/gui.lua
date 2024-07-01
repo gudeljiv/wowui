@@ -138,6 +138,8 @@ local function CreateSettingMenu(opt)
         ["CHARACTOR"] = false,
     }
 
+    opt.ignorePetActionBar = false
+
     -- https://warcraft.wiki.gg/wiki/Action_slot
     local actionbarlist = {
         {
@@ -249,7 +251,7 @@ local function CreateSettingMenu(opt)
 
     return {
         {
-            text = ACTIONBAR_LABEL,
+            text = ACTIONBARS_LABEL,
             hasArrow = true,
             notCheckable = false,
             isNotRadio = true,
@@ -301,6 +303,18 @@ local function CreateSettingMenu(opt)
                 },
             }
         }, -- 3
+        {
+            text = PET .. " " .. ACTIONBARS_LABEL,
+            notCheckable = false,
+            isNotRadio = true,
+            keepShownOnClick = true,
+            func = function ()
+                opt.ignorePetActionBar = not opt.ignorePetActionBar
+            end,
+            checked = function ()
+                return opt.ignorePetActionBar
+            end,
+        }, -- 4
     }
 end
 
@@ -327,6 +341,13 @@ do
 
         StaticPopupDialogs["MYSLOT_MSGBOX"].OnAccept = function()
             StaticPopup_Hide("MYSLOT_MSGBOX")
+
+            MySlot:Clear("MACRO", clearOpt.ignoreMacros)
+            MySlot:Clear("ACTION", clearOpt.ignoreActionBars)
+            if clearOpt.ignoreBinding then
+                MySlot:Clear("BINDING")
+            end
+
             MySlot:RecoverData(msg, {
                 actionOpt = actionOpt,
                 clearOpt = clearOpt,
@@ -365,6 +386,8 @@ do
         }
     })
     tAppendAll(settings, CreateSettingMenu(clearOpt))
+
+    table.remove(settings) -- remove pet action bar clearOpt, will support it later
 
     tAppendAll(settings, {
         {
