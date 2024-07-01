@@ -1,7 +1,11 @@
 # RatingBuster
 
-## [1.16.10](https://github.com/raethkcj/RatingBuster/tree/1.16.10) (2024-06-19)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.16.9...1.16.10) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.16.11](https://github.com/raethkcj/RatingBuster/tree/1.16.11) (2024-06-29)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.16.10...1.16.11) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Bump tocs (Closes #183)  
-- Parse localized number separators (Fixes #182)  
+- Add SoD weapon skill runes  
+- Add missing base game weapon bonus statmods  
+- Enable unused variable diagnostics  
+- Convert weapon bonus stat data to new statmod format  
+- Use lua enums for UnitStat args  
+- Refactor weapon racials to use StatMods  

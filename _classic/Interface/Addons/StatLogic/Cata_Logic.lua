@@ -51,14 +51,14 @@ local BaseManaRegenPerSpi = {
 }
 
 local NormalManaRegenPerSpi = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	return (0.001 / spi + BaseManaRegenPerSpi[level] * (int ^ 0.5)) * 5
 end
 
 local NormalManaRegenPerInt = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	-- Derivative of regen with respect to int
 	return (spi * BaseManaRegenPerSpi[level] / (2 * (int ^ 0.5))) * 5
 end
@@ -2298,9 +2298,25 @@ elseif addon.class == "WARRIOR" then
 end
 
 if addon.playerRace == "Dwarf" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace2H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Guns] = {StatLogic.Stats.RangedCrit, 1}
+	StatLogic.StatModTable["Dwarf"] = {
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 3,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Mace1H] = true,
+					[Enum.ItemWeaponSubclass.Mace2H] = true,
+				}
+			}
+		},
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Guns] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "Gnome" then
 	StatLogic.StatModTable["Gnome"] = {
 		["MOD_MANA"] = {
@@ -2309,10 +2325,17 @@ elseif addon.playerRace == "Gnome" then
 			{
 				["value"] = 0.05,
 			},
-		}
+		},
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 3,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Dagger] = true,
+					[Enum.ItemWeaponSubclass.Sword1H] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Dagger] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword1H] = {StatLogic.Stats.Expertise, 3}
 elseif addon.playerRace == "Human" then
 	StatLogic.StatModTable["Human"] = {
 		["MOD_SPI"] = {
@@ -2321,16 +2344,32 @@ elseif addon.playerRace == "Human" then
 			{
 				["value"] = 0.03,
 			},
-		}
+		},
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 3,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Mace1H] = true,
+					[Enum.ItemWeaponSubclass.Mace2H] = true,
+					[Enum.ItemWeaponSubclass.Sword1H] = true,
+					[Enum.ItemWeaponSubclass.Sword2H] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace2H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword2H] = {StatLogic.Stats.Expertise, 3}
 elseif addon.playerRace == "Orc" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe2H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Unarmed] = {StatLogic.Stats.Expertise, 3}
+	StatLogic.StatModTable["Orc"] = {
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 3,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Axe1H] = true,
+					[Enum.ItemWeaponSubclass.Axe2H] = true,
+					[Enum.ItemWeaponSubclass.Unarmed] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "Troll" then
 	StatLogic.StatModTable["Troll"] = {
 		["MOD_NORMAL_HEALTH_REG"] = {
@@ -2348,9 +2387,16 @@ elseif addon.playerRace == "Troll" then
 				["spellid"] = 20555,
 			},
 		},
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Bows] = true,
+					[Enum.ItemWeaponSubclass.Thrown] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Bows] = {StatLogic.Stats.RangedCrit, 1}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Thrown] = {StatLogic.Stats.RangedCrit, 1}
 end
 
 StatLogic.StatModTable["ALL"] = {
@@ -2420,35 +2466,35 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 53646,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Shaman: Totemic Wrath - Buff: 77747
 		-- 4.0.1: Spell Power increased by 10%.
 		{
 			["value"] = 0.1,
 			["aura"] = 77747,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Shaman: Flametongue Totem - Buff: 52109
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 52109,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Mage: Arcane Brilliance - Buff: 79058
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 79058,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Mage: Dalaran Brilliance - Buff: 61316
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 61316,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 	},
 	["MOD_HEALING"] = {
@@ -2457,35 +2503,35 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 53646,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Shaman: Totemic Wrath - Buff: 77747
 		-- 4.0.1: Spell Power increased by 10%.
 		{
 			["value"] = 0.1,
 			["aura"] = 77747,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Shaman: Flametongue Totem - Buff: 52109
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 52109,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Mage: Arcane Brilliance - Buff: 79058
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 79058,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 		-- Mage: Dalaran Brilliance - Buff: 61316
 		-- 4.0.1: Spell Power increased by 6%.
 		{
 			["value"] = 0.06,
 			["aura"] = 61316,
-			["group"] = addon.BuffGroup.SpellPower,
+			["group"] = addon.ExclusiveGroup.SpellPower,
 		},
 	},
 	["MOD_ARMOR"] = {
@@ -2508,7 +2554,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 19506,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 		-- Death Knight: Abomination's Might - Buff: 55972
 		-- 4.0.1: Attack power increased by 5/10%.
@@ -2517,7 +2563,7 @@ StatLogic.StatModTable["ALL"] = {
 				0.05, 0.1,
 			},
 			["aura"] = 55972,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 		-- Shaman: Unleashed Rage - Buff: 30809
 		-- 4.0.1: Melee attack power increased by 4/7/10%.
@@ -2526,14 +2572,14 @@ StatLogic.StatModTable["ALL"] = {
 				0.04, 0.07, 0.1,
 			},
 			["aura"] = 30809,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 		-- Paladin: Blessing of Might - Buff: 19740
 		-- 4.0.1: Increasing attack power by 10%.
 		{
 			["value"] = 0.1,
 			["aura"] = 19740,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 	},
 	["MOD_MANA"] = {
@@ -2568,28 +2614,28 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.05,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Druid: Mark of the Wild - Buff: 79061
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 79061,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Hunter: Embrace of the Shale Spider - Buff: 90363
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 90363,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff: 69378
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 4%.
 		{
 			["value"] = 0.04,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_AGI"] = {
@@ -2598,28 +2644,28 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.05,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Druid: Mark of the Wild - Buff: 79061
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 79061,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Hunter: Embrace of the Shale Spider - Buff: 90363
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 90363,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff: 69378
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 4%.
 		{
 			["value"] = 0.04,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_STA"] = {
@@ -2628,28 +2674,28 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.05,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Druid: Mark of the Wild - Buff: 79061
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 79061,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Hunter: Embrace of the Shale Spider - Buff: 90363
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 90363,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff: 69378
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 4%.
 		{
 			["value"] = 0.04,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_INT"] = {
@@ -2658,28 +2704,28 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.05,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Druid: Mark of the Wild - Buff: 79061
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 79061,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Hunter: Embrace of the Shale Spider - Buff: 90363
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 5%.
 		{
 			["value"] = 0.05,
 			["aura"] = 90363,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff: 69378
 		-- 4.0.1: Strength, Agility, Stamina, and Intellect increased by 4%.
 		{
 			["value"] = 0.04,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_SPI"] = {
@@ -2843,14 +2889,14 @@ function StatLogic:GetDodgePerAgi()
 	local dodgeFromDodgeRating = GetCombatRatingBonus(CR_DODGE)
 	local D_r = dodgeFromDodgeRating
 	local D_b = self:GetStatMod("ADD_DODGE")
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", 2) -- 2 = Agility
+	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	local modAgi = 1
 	if ModAgiClasses[addon.class] then
 		modAgi = self:GetStatMod("MOD_AGI")
 		-- Talents that modify Agi will not add to posBuff, so we need to calculate baseAgi
 		-- But Agi from Kings etc. will add to posBuff, so we subtract those if present
 		for _, case in ipairs(StatLogic.StatModTable["ALL"]["MOD_AGI"]) do
-			if case.group == addon.BuffGroup.AllStats then
+			if case.group == addon.ExclusiveGroup.AllStats then
 				if StatLogic:GetAuraInfo(case.aura) then
 					modAgi = modAgi - case.value
 				end
@@ -2895,7 +2941,7 @@ modDodge includes
 ---@return number modDodge The part that is affected by diminishing returns.
 ---@return number drFreeDodge The part that isn't affected by diminishing returns.
 function StatLogic:GetDodgeChanceBeforeDR()
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", 2) -- 2 = Agility
+	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	local baseAgi = stat - posBuff - negBuff
 	local dodgePerAgi = self:GetDodgePerAgi()
 	local dodgeFromDodgeRating = GetCombatRatingBonus(CR_DODGE)

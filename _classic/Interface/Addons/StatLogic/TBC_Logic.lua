@@ -46,14 +46,14 @@ local BaseManaRegenPerSpi = {
 }
 
 local NormalManaRegenPerSpi = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	return (0.001 / spi + BaseManaRegenPerSpi[level] * (int ^ 0.5)) * 5
 end
 
 local NormalManaRegenPerInt = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	-- Derivative of regen with respect to int
 	return (spi * BaseManaRegenPerSpi[level] / (2 * (int ^ 0.5))) * 5
 end
@@ -223,25 +223,25 @@ if addon.class == "DRUID" then
 			{
 				["value"] = 1,
 				["aura"] = 768,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Bear Form
 			{
 				["value"] = 1,
 				["aura"] = 5487,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Dire Bear Form
 			{
 				["value"] = 1,
 				["aura"] = 9634,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Moonkin Form
 			{
 				["value"] = 1,
 				["aura"] = 24858,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 		},
 		["ADD_AP_MOD_STR"] = {
@@ -1151,6 +1151,30 @@ elseif addon.class == "ROGUE" then
 				},
 			},
 		},
+		[StatLogic.Stats.MeleeCrit] = {
+			-- Talent: Dagger Specialization
+			{
+				["tab"] = 2,
+				["num"] = 11,
+				["rank"] = {
+					1, 2, 3, 4, 5,
+				},
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Dagger] = true,
+				},
+			},
+			-- Talent: Fist Weapon Specialization
+			{
+				["tab"] = 2,
+				["num"] = 16,
+				["rank"] = {
+					1, 2, 3, 4, 5,
+				},
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Unarmed] = true,
+				},
+			},
+		},
 	}
 elseif addon.class == "SHAMAN" then
 	StatLogic.StatModTable["SHAMAN"] = {
@@ -1529,11 +1553,35 @@ elseif addon.class == "WARRIOR" then
 				["aura"] = 12976,
 			},
 		},
+		[StatLogic.Stats.MeleeCrit] = {
+			-- Talent: Poleaxe Specialization
+			{
+				["tab"] = 1,
+				["num"] = 12,
+				["rank"] = {
+					1, 2, 3, 4, 5,
+				},
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Axe1H] = true,
+					[Enum.ItemWeaponSubclass.Axe2H] = true,
+					[Enum.ItemWeaponSubclass.Polearm] = true,
+				},
+			},
+		},
 	}
 end
 
 if addon.playerRace == "Dwarf" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Guns] = {StatLogic.Stats.RangedCrit, 1}
+	StatLogic.StatModTable["Dwarf"] = {
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Guns] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "NightElf" then
 	StatLogic.StatModTable["NightElf"] = {
 		-- Night Elf : Quickness - Racial
@@ -1573,14 +1621,30 @@ elseif addon.playerRace == "Human" then
 				["value"] = 0.1,
 			},
 		},
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 5,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Mace1H] = true,
+					[Enum.ItemWeaponSubclass.Mace2H] = true,
+					[Enum.ItemWeaponSubclass.Sword1H] = true,
+					[Enum.ItemWeaponSubclass.Sword2H] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace1H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace2H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword1H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword2H] = {StatLogic.Stats.Expertise, 5}
 elseif addon.playerRace == "Orc" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe1H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe2H] = {StatLogic.Stats.Expertise, 5}
+	StatLogic.StatModTable["Orc"] = {
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 5,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Axe1H] = true,
+					[Enum.ItemWeaponSubclass.Axe2H] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "Troll" then
 	StatLogic.StatModTable["Troll"] = {
 		["MOD_NORMAL_HEALTH_REG"] = {
@@ -1598,9 +1662,16 @@ elseif addon.playerRace == "Troll" then
 				["spellid"] = 20555,
 			},
 		},
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Bows] = true,
+					[Enum.ItemWeaponSubclass.Thrown] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Bows] = {StatLogic.Stats.RangedCrit, 1}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Thrown] = {StatLogic.Stats.RangedCrit, 1}
 end
 
 StatLogic.StatModTable["ALL"] = {
@@ -1635,7 +1706,7 @@ StatLogic.StatModTable["ALL"] = {
 				0.08, 0.16, 0.25,
 			},
 			["aura"] = 15363,
-			["group"] = addon.BuffGroup.Armor,
+			["group"] = addon.ExclusiveGroup.Armor,
 		},
 		-- Shaman: Ancestral Fortitude (Rank 1/2/3) - Buff
 		--         Increases your armor value by 8%/16%/25%.
@@ -1644,7 +1715,7 @@ StatLogic.StatModTable["ALL"] = {
 				0.08, 0.16, 0.25,
 			},
 			["aura"] = 16237,
-			["group"] = addon.BuffGroup.Armor,
+			["group"] = addon.ExclusiveGroup.Armor,
 		},
 	},
 	["MOD_STR"] = {
@@ -1653,14 +1724,14 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Greater Blessing of Kings - Buff
 		-- Increases stats by 10%.
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_AGI"] = {

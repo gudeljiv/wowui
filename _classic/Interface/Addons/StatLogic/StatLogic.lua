@@ -245,7 +245,7 @@ setmetatable(cache, {__mode = "kv"}) -- weak table to enable garbage collection
 -- Set Debugging --
 -------------------
 local DEBUG = false
-function StatLogic:ToggleDebugging()
+function StatLogic:ClearCache()
 	DEBUG = not DEBUG
 	wipe(cache)
 end
@@ -324,7 +324,11 @@ StatLogic.StatModInfo = {
 	-- The crit conversions are also only necessary in Vanilla, while Dodge is necessary in every expansion.
 	-- Spell crit modifiers are only required if they mod school 1 (physical)
 	-- That means spells with EffectAura 57 or 290, and, separately, EffectAura 71 or 552 whose final digit of EffectMiscValue_0 is an odd number
-	["ADD_MELEE_CRIT"] = {
+	[StatLogic.Stats.MeleeCrit] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	[StatLogic.Stats.RangedCrit] = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
@@ -333,6 +337,14 @@ StatLogic.StatModInfo = {
 		finalAdjust = 0,
 	},
 	["ADD_SPELL_CRIT"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	[StatLogic.Stats.WeaponSkill] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	[StatLogic.Stats.Expertise] = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
@@ -745,8 +757,25 @@ do
 	end
 end
 
--- Maps weapon subclasses to stat, value tuples
-addon.WeaponRacials = {}
+---@type { [Enum.ItemWeaponSubclass]: { [Stat]: true} }
+addon.WeaponSubclassStats = {}
+
+function addon.GenerateWeaponSubclassStats()
+	for _, modList in pairs(StatLogic.StatModTable) do
+		for stat, cases in pairs(modList) do
+			for _, case in ipairs(cases) do
+				if case.weapon then
+					for subclassID in pairs(case.weapon) do
+						if not addon.WeaponSubclassStats[subclassID] then
+							addon.WeaponSubclassStats[subclassID] = {}
+						end
+						addon.WeaponSubclassStats[subclassID][stat] = true
+					end
+				end
+			end
+		end
+	end
+end
 
 -----------------------------
 -- StatModValidator Caches --
@@ -846,7 +875,7 @@ end
 -- Ignore Stat Mods that are only used for reverse-engineering agi/int conversion rates
 StatLogic.StatModIgnoresAlwaysBuffed = {
 	["ADD_DODGE"] = true,
-	["ADD_MELEE_CRIT"] = true,
+	[StatLogic.Stats.MeleeCrit] = true,
 	["ADD_SPELL_CRIT"] = true,
 }
 
@@ -942,6 +971,16 @@ addon.StatModValidators = {
 			["PLAYER_LEVEL_UP"] = true,
 		},
 	},
+	rune = {
+		validate = function(case)
+			if type(case.rune) == "number" then
+				return C_Engraving.IsRuneEquipped(case.rune)
+			else
+				return true
+			end
+		end,
+		events = {}
+	},
 	set = {
 		validate = function(case)
 			return equipped_sets[case.set] and equipped_sets[case.set] >= case.pieces
@@ -970,12 +1009,17 @@ addon.StatModValidators = {
 		},
 	},
 	weapon = {
-		validate = function(case)
-			local weapon = GetInventoryItemID("player", 16)
-			if weapon then
-				local subclassID = select(7, C_Item.GetItemInfoInstant(weapon))
-				return subclassID and case.weapon[subclassID]
+		validate = function(case, _, overrideStats)
+			local subclassID
+			if overrideStats then
+				subclassID = overrideStats.subclassID
+			else
+				local weapon = GetInventoryItemID("player", INVSLOT_MAINHAND)
+				if weapon then
+					subclassID = select(7, C_Item.GetItemInfoInstant(weapon))
+				end
 			end
+			return subclassID and case.weapon[subclassID]
 		end,
 		events = {
 			["UNIT_INVENTORY_CHANGED"] = "player",
@@ -987,6 +1031,7 @@ addon.StatModValidators = {
 -- maps events defined on Validators to the StatMods that depend on them.
 local StatModCache = {}
 addon.StatModCacheInvalidators = {}
+local WeaponSubclassInvalidators = {}
 
 function StatLogic:InvalidateEvent(event, unit)
 	local key = event
@@ -997,6 +1042,14 @@ function StatLogic:InvalidateEvent(event, unit)
 	if stats then
 		for _, stat in pairs(stats) do
 			StatModCache[stat] = nil
+		end
+	end
+	if WeaponSubclassInvalidators[key] then
+		-- Since stats added by weaon subclass StatMods are inserted
+		-- directly into the cached sum, we need to wipe the item sum cache
+		wipe(cache)
+		if RatingBuster then
+			RatingBuster:ClearCache()
 		end
 	end
 end
@@ -1020,7 +1073,12 @@ do
 	end)
 end
 
-local function ValidateStatMod(statModName, case)
+local function ValidateStatMod(statModName, case, overrideStats)
+	if overrideStats and overrideStats.subclassID and not case.weapon then
+		-- If we're passed a weapon type, we're only interested in StatMods with weapon cases
+		return false
+	end
+
 	for validatorType in pairs(case) do
 		local validator = addon.StatModValidators[validatorType]
 		if validator then
@@ -1032,10 +1090,13 @@ local function ValidateStatMod(statModName, case)
 					end
 					addon.StatModCacheInvalidators[key] = addon.StatModCacheInvalidators[key] or {}
 					table.insert(addon.StatModCacheInvalidators[key], statModName)
+					if case.weapon then
+						WeaponSubclassInvalidators[key] = true
+					end
 				end
 			end
 
-			if validator.validate and not validator.validate(case, statModName) then
+			if validator.validate and not validator.validate(case, statModName, overrideStats) then
 				return false
 			end
 		end
@@ -1106,14 +1167,15 @@ do
 end
 
 do
-	addon.BuffGroup = {
+	addon.ExclusiveGroup = {
 		AllStats = 1,
 		AttackPower = 2,
 		SpellPower = 3,
 		Armor = 4,
 		Feral = 5,
+		WeaponRacial = 6,
 	}
-	local BuffGroupCache = {}
+	local ExclusiveGroupCache = {}
 
 	local function ApplyMod(currentValue, newValue, initialValue)
 		if initialValue == 0 then
@@ -1133,8 +1195,8 @@ do
 		return currentValue
 	end
 
-	local GetStatModValue = function(statModName, currentValue, case, initialValue, level)
-		if not ValidateStatMod(statModName, case) then
+	local GetStatModValue = function(statModName, currentValue, case, initialValue, level, overrideStats)
+		if not ValidateStatMod(statModName, case, overrideStats) then
 			return currentValue
 		end
 
@@ -1169,13 +1231,13 @@ do
 
 		if newValue then
 			if case.group then
-				local oldValue = BuffGroupCache[case.group]
+				local oldValue = ExclusiveGroupCache[case.group]
 				if oldValue and newValue > oldValue then
 					currentValue = RemoveMod(currentValue, oldValue, initialValue)
 				end
 				if not oldValue or newValue > oldValue then
 					currentValue = ApplyMod(currentValue, newValue, initialValue)
-					BuffGroupCache[case.group] = newValue
+					ExclusiveGroupCache[case.group] = newValue
 				end
 			else
 				currentValue = ApplyMod(currentValue, newValue, initialValue)
@@ -1185,21 +1247,25 @@ do
 		return currentValue
 	end
 
-	function StatLogic:GetStatMod(statModName, level)
+	---@param statModName string|Stat
+	---@param level? integer
+	---@param overrideStats? StatTable
+	---@return number
+	function StatLogic:GetStatMod(statModName, level, overrideStats)
 		local value
 		if not level or level == UnitLevel("player") then
 			value = StatModCache[statModName]
 		end
 
 		if not value then
-			wipe(BuffGroupCache)
+			wipe(ExclusiveGroupCache)
 			local statModInfo = StatLogic.StatModInfo[statModName]
 			if not statModInfo then return 0 end
 			value = statModInfo.initialValue
 			for _, categoryTable in pairs(StatLogic.StatModTable) do
 				if categoryTable[statModName] then
 					for _, case in ipairs(categoryTable[statModName]) do
-						value = GetStatModValue(statModName, value, case, statModInfo.initialValue, level)
+						value = GetStatModValue(statModName, value, case, statModInfo.initialValue, level, overrideStats)
 					end
 				end
 			end
@@ -1345,7 +1411,7 @@ if not CR_DODGE then CR_DODGE = 3 end;
 -- Only works for your currect class and current level, does not support class and level args.
 ---@return number dodge Dodge percentage per agility
 function StatLogic:GetDodgePerAgi()
-	local _, agility = UnitStat("player", 2)
+	local _, agility = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	-- dodgeFromAgi is %
 	local dodgeFromAgi = GetDodgeChance()
 		- self:GetStatMod("ADD_DODGE")
@@ -1356,16 +1422,16 @@ function StatLogic:GetDodgePerAgi()
 end
 
 function StatLogic:GetCritPerAgi()
-	local _, agility = UnitStat("player", 2)
+	local _, agility = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	local critFromAgi = GetCritChance()
-	- self:GetStatMod("ADD_MELEE_CRIT")
+	- self:GetStatMod(StatLogic.Stats.MeleeCrit)
 	- self:GetCritChanceFromWeaponSkill()
 	- self:GetTotalEquippedStat(StatLogic.Stats.MeleeCrit)
 	return critFromAgi / agility
 end
 
 function StatLogic:GetSpellCritPerInt()
-	local _, intellect = UnitStat("player", 4)
+	local _, intellect = UnitStat("player", LE_UNIT_STAT_INTELLECT)
 	local critFromInt = GetSpellCritChance(1)
 	- self:GetStatMod("ADD_SPELL_CRIT")
 	return critFromInt / intellect
@@ -1603,10 +1669,12 @@ do
 		statTable.numLines = numLines
 
 		if itemClass == Enum.ItemClass.Weapon then
-			local racial = addon.WeaponRacials[itemSubclass]
-			if racial then
-				local stat, value = unpack(racial)
-				statTable[stat] = value
+			for _, statMods in pairs(addon.WeaponSubclassStats) do
+				for statMod in pairs(statMods) do
+					local overrideStats = StatLogic.StatTable.new("subclassID", itemSubclass)
+					local value = StatLogic:GetStatMod(statMod, _, overrideStats)
+					statTable[statMod] = value
+				end
 			end
 		end
 

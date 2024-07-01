@@ -59,14 +59,14 @@ local BaseManaRegenPerSpi = {
 }
 
 local NormalManaRegenPerSpi = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	return (0.001 / spi + BaseManaRegenPerSpi[level] * (int ^ 0.5)) * 5
 end
 
 local NormalManaRegenPerInt = function(level)
-	local _, int = UnitStat("player", 4)
-	local _, spi = UnitStat("player", 5)
+	local _, int = UnitStat("player", LE_UNIT_STAT_INTELLECT)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	-- Derivative of regen with respect to int
 	return (spi * BaseManaRegenPerSpi[level] / (2 * (int ^ 0.5))) * 5
 end
@@ -232,7 +232,7 @@ for _, v in pairs(HealthRegenPerSpi) do
 end
 
 local function NormalHealthRegenPerSpi(level)
-	local _, spi = UnitStat("player", 5)
+	local _, spi = UnitStat("player", LE_UNIT_STAT_SPIRIT)
 	local data = HealthRegenPerSpi
 	if spi < 50 then
 		data = BaseHealthRegenPerSpi
@@ -1014,25 +1014,25 @@ if addon.class == "DRUID" then
 			{
 				["value"] = 1,
 				["aura"] = 768,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Bear Form
 			{
 				["value"] = 1,
 				["aura"] = 5487,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Dire Bear Form
 			{
 				["value"] = 1,
 				["aura"] = 9634,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 			-- Moonkin Form
 			{
 				["value"] = 1,
 				["aura"] = 24858,
-				["group"] = addon.BuffGroup.Feral,
+				["group"] = addon.ExclusiveGroup.Feral,
 			},
 		},
 		["ADD_AP_MOD_STR"] = {
@@ -2465,6 +2465,20 @@ elseif addon.class == "ROGUE" then
 				},
 			},
 		},
+		[StatLogic.Stats.MeleeCrit] = {
+			-- Talent: Close Quarters Combat
+			{
+				["tab"] = 2,
+				["num"] = 9,
+				["rank"] = {
+					1, 2, 3, 4, 5,
+				},
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Dagger] = true,
+					[Enum.ItemWeaponSubclass.Unarmed] = true,
+				},
+			},
+		},
 	}
 elseif addon.class == "SHAMAN" then
 	StatLogic.StatModTable["SHAMAN"] = {
@@ -2917,13 +2931,44 @@ elseif addon.class == "WARRIOR" then
 				},
 			},
 		},
+		[StatLogic.Stats.MeleeCrit] = {
+			-- Talent: Poleaxe Specialization
+			{
+				["tab"] = 1,
+				["num"] = 13,
+				["rank"] = {
+					1, 2, 3, 4, 5,
+				},
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Axe1H] = true,
+					[Enum.ItemWeaponSubclass.Axe2H] = true,
+					[Enum.ItemWeaponSubclass.Polearm] = true,
+				},
+			},
+		},
 	}
 end
 
 if addon.playerRace == "Dwarf" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace1H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace2H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Guns] = {StatLogic.Stats.RangedCrit, 1}
+	StatLogic.StatModTable["Dwarf"] = {
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 5,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Mace1H] = true,
+					[Enum.ItemWeaponSubclass.Mace2H] = true,
+				}
+			}
+		},
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Guns] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "Gnome" then
 	StatLogic.StatModTable["Gnome"] = {
 		["MOD_INT"] = {
@@ -2944,16 +2989,32 @@ elseif addon.playerRace == "Human" then
 				["value"] = 0.03,
 				["race"] = "Human",
 			},
-		}
+		},
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 3,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Mace1H] = true,
+					[Enum.ItemWeaponSubclass.Mace2H] = true,
+					[Enum.ItemWeaponSubclass.Sword1H] = true,
+					[Enum.ItemWeaponSubclass.Sword2H] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Mace2H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword1H] = {StatLogic.Stats.Expertise, 3}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Sword2H] = {StatLogic.Stats.Expertise, 3}
 elseif addon.playerRace == "Orc" then
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe1H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Axe2H] = {StatLogic.Stats.Expertise, 5}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Unarmed] = {StatLogic.Stats.Expertise, 5}
+	StatLogic.StatModTable["Orc"] = {
+		[StatLogic.Stats.Expertise] = {
+			{
+				["value"] = 5,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Axe1H] = true,
+					[Enum.ItemWeaponSubclass.Axe2H] = true,
+					[Enum.ItemWeaponSubclass.Unarmed] = true,
+				}
+			}
+		},
+	}
 elseif addon.playerRace == "Troll" then
 	StatLogic.StatModTable["Troll"] = {
 		["MOD_NORMAL_HEALTH_REG"] = {
@@ -2971,9 +3032,16 @@ elseif addon.playerRace == "Troll" then
 				["spellid"] = 20555,
 			},
 		},
+		[StatLogic.Stats.RangedCrit] = {
+			{
+				["value"] = 1,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Bows] = true,
+					[Enum.ItemWeaponSubclass.Thrown] = true,
+				}
+			}
+		},
 	}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Bows] = {StatLogic.Stats.RangedCrit, 1}
-	addon.WeaponRacials[Enum.ItemWeaponSubclass.Thrown] = {StatLogic.Stats.RangedCrit, 1}
 end
 
 StatLogic.StatModTable["ALL"] = {
@@ -3049,7 +3117,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 19506,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 		-- Death Knight: Abomination's Might - Buff
 		--               Attack power increased by 5/10%.
@@ -3058,7 +3126,7 @@ StatLogic.StatModTable["ALL"] = {
 				0.05, 0.1,
 			},
 			["aura"] = 53138,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 		-- Shaman: Unleashed Rage - Buff
 		--         Melee attack power increased by 4/7/10%.
@@ -3067,7 +3135,7 @@ StatLogic.StatModTable["ALL"] = {
 				0.04, 0.07, 0.1,
 			},
 			["aura"] = 30809,
-			["group"] = addon.BuffGroup.AttackPower,
+			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
 	},
 	-- MetaGem: Beaming Earthsiege Diamond - 41389
@@ -3084,31 +3152,31 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Blessing of Sanctuary
 		{
 			["value"] = 0.1,
 			["aura"] = 20911,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Greater Blessing of Sanctuary
 		{
 			["value"] = 0.1,
 			["aura"] = 25899,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff
 		--                 Increases stats by 8%.
 		{
 			["value"] = 0.08,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_AGI"] = {
@@ -3117,19 +3185,19 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff
 		--                 Increases stats by 8%.
 		{
 			["value"] = 0.08,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_STA"] = {
@@ -3138,31 +3206,31 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Blessing of Sanctuary
 		{
 			["value"] = 0.1,
 			["aura"] = 20911,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Greater Blessing of Sanctuary
 		{
 			["value"] = 0.1,
 			["aura"] = 25899,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff
 		--                 Increases stats by 8%.
 		{
 			["value"] = 0.08,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["MOD_INT"] = {
@@ -3171,19 +3239,19 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff
 		--                 Increases stats by 8%.
 		{
 			["value"] = 0.08,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- MetaGem: Ember Skyfire Diamond - 35503
 		--          +14 Spell Power and +2% Intellect
@@ -3204,19 +3272,19 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.1,
 			["aura"] = 20217,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		{
 			["value"] = 0.1,
 			["aura"] = 25898,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 		-- Leatherworking: Blessing of Forgotten Kings - Buff
 		--                 Increases stats by 8%.
 		{
 			["value"] = 0.08,
 			["aura"] = 69378,
-			["group"] = addon.BuffGroup.AllStats,
+			["group"] = addon.ExclusiveGroup.AllStats,
 		},
 	},
 	["ADD_DODGE_REDUCTION_MOD_EXPERTISE"] = {
@@ -3418,14 +3486,14 @@ function StatLogic:GetDodgePerAgi()
 	local dodgeFromModDefense = modDefense * 0.04
 	local D_r = dodgeFromDodgeRating + dodgeFromModDefense
 	local D_b = self:GetStatMod("ADD_DODGE") + (baseDefense - level * 5) * 0.04
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", 2) -- 2 = Agility
+	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	local modAgi = 1
 	if ModAgiClasses[addon.class] then
 		modAgi = self:GetStatMod("MOD_AGI")
 		-- Talents that modify Agi will not add to posBuff, so we need to calculate baseAgi
 		-- But Agi from Kings etc. will add to posBuff, so we subtract those if present
 		for _, case in ipairs(StatLogic.StatModTable["ALL"]["MOD_AGI"]) do
-			if case.group == addon.BuffGroup.AllStats then
+			if case.group == addon.ExclusiveGroup.AllStats then
 				if StatLogic:GetAuraInfo(case.aura) then
 					modAgi = modAgi - case.value
 				end
@@ -3470,7 +3538,7 @@ modDodge includes
 ---@return number modDodge The part that is affected by diminishing returns.
 ---@return number drFreeDodge The part that isn't affected by diminishing returns.
 function StatLogic:GetDodgeChanceBeforeDR()
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", 2) -- 2 = Agility
+	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
 	local baseAgi = stat - posBuff - negBuff
 	local dodgePerAgi = self:GetDodgePerAgi()
 	local dodgeFromDodgeRating = GetCombatRatingBonus(CR_DODGE)
