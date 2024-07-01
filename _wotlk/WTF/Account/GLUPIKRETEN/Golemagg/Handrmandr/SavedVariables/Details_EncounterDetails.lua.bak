@@ -1,336 +1,925 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
+		[1873] = {
+			["Raid Damage Done"] = {
+				4052, -- [1]
+				2726, -- [2]
+				2629, -- [3]
+				1263, -- [4]
+				10356, -- [5]
+				4989, -- [6]
+				358, -- [7]
+				1644, -- [8]
+				2339, -- [9]
+				19208, -- [10]
+				13555, -- [11]
+				10193, -- [12]
+				6553, -- [13]
+				5916, -- [14]
+				16012, -- [15]
+				4624, -- [16]
+				11999, -- [17]
+				25186, -- [18]
+				10615, -- [19]
+				20594, -- [20]
+				8715, -- [21]
+				8540, -- [22]
+				16686, -- [23]
+				5211, -- [24]
+				10781, -- [25]
+				2830, -- [26]
+				3489, -- [27]
+				3308, -- [28]
+				4542, -- [29]
+				0, -- [30]
+				["max_value"] = 25186,
+				["__time"] = 1719827981,
+			},
+		},
+		[1874] = {
+			["Raid Damage Done"] = {
+				7909, -- [1]
+				2132, -- [2]
+				1832, -- [3]
+				919, -- [4]
+				4324, -- [5]
+				7908, -- [6]
+				57, -- [7]
+				781, -- [8]
+				8047, -- [9]
+				12310, -- [10]
+				9703, -- [11]
+				10855, -- [12]
+				5350, -- [13]
+				12713, -- [14]
+				14867, -- [15]
+				6809, -- [16]
+				15699, -- [17]
+				12864, -- [18]
+				6321, -- [19]
+				4522, -- [20]
+				4598, -- [21]
+				5172, -- [22]
+				1297, -- [23]
+				0, -- [24]
+				["max_value"] = 15699,
+				["__time"] = 1719828009,
+			},
+		},
+		[1859] = {
+			["Raid Damage Done"] = {
+				1845, -- [1]
+				1318, -- [2]
+				3943, -- [3]
+				6053, -- [4]
+				3314, -- [5]
+				4043, -- [6]
+				8509, -- [7]
+				2567, -- [8]
+				3259, -- [9]
+				["max_value"] = 8509,
+				["__time"] = 1719827166,
+			},
+		},
+		[1875] = {
+			["Raid Damage Done"] = {
+				2691, -- [1]
+				1390, -- [2]
+				1590, -- [3]
+				1495, -- [4]
+				["max_value"] = 2691,
+				["__time"] = 1719828038,
+			},
+		},
+		[1891] = {
+			["Raid Damage Done"] = {
+				5685, -- [1]
+				2387, -- [2]
+				1880, -- [3]
+				2990, -- [4]
+				1412, -- [5]
+				7255, -- [6]
+				4723, -- [7]
+				1986, -- [8]
+				5621, -- [9]
+				1529, -- [10]
+				10720, -- [11]
+				2998, -- [12]
+				10419, -- [13]
+				5067, -- [14]
+				7587, -- [15]
+				2194, -- [16]
+				5103, -- [17]
+				8470, -- [18]
+				12151, -- [19]
+				2488, -- [20]
+				4872, -- [21]
+				18720, -- [22]
+				475, -- [23]
+				7445, -- [24]
+				42, -- [25]
+				2553, -- [26]
+				6102, -- [27]
+				200, -- [28]
+				6348, -- [29]
+				2517, -- [30]
+				5533, -- [31]
+				663, -- [32]
+				1864, -- [33]
+				5448, -- [34]
+				6189, -- [35]
+				831, -- [36]
+				9198, -- [37]
+				851, -- [38]
+				13817, -- [39]
+				1071, -- [40]
+				4229, -- [41]
+				2924, -- [42]
+				7262, -- [43]
+				1975, -- [44]
+				4315, -- [45]
+				1453, -- [46]
+				2425, -- [47]
+				5989, -- [48]
+				2318, -- [49]
+				6755, -- [50]
+				1739, -- [51]
+				19906, -- [52]
+				12409, -- [53]
+				3201, -- [54]
+				4384, -- [55]
+				16416, -- [56]
+				6000, -- [57]
+				3748, -- [58]
+				4226, -- [59]
+				9021, -- [60]
+				4125, -- [61]
+				4098, -- [62]
+				4805, -- [63]
+				573, -- [64]
+				["max_value"] = 19906,
+				["__time"] = 1719828835,
+			},
+		},
+		[1876] = {
+			["Raid Damage Done"] = {
+				2230, -- [1]
+				4274, -- [2]
+				236, -- [3]
+				1210, -- [4]
+				744, -- [5]
+				3458, -- [6]
+				6517, -- [7]
+				8231, -- [8]
+				11790, -- [9]
+				8148, -- [10]
+				14178, -- [11]
+				14488, -- [12]
+				7691, -- [13]
+				6239, -- [14]
+				9184, -- [15]
+				["max_value"] = 14488,
+				["__time"] = 1719828053,
+			},
+		},
+		[1892] = {
+			["Raid Damage Done"] = {
+				10165, -- [1]
+				0, -- [2]
+				848, -- [3]
+				1064, -- [4]
+				3892, -- [5]
+				1544, -- [6]
+				10152, -- [7]
+				0, -- [8]
+				1362, -- [9]
+				22, -- [10]
+				3889, -- [11]
+				1126, -- [12]
+				3326, -- [13]
+				10003, -- [14]
+				6571, -- [15]
+				12493, -- [16]
+				8781, -- [17]
+				16080, -- [18]
+				7349, -- [19]
+				6200, -- [20]
+				1718, -- [21]
+				8693, -- [22]
+				2866, -- [23]
+				0, -- [24]
+				0, -- [25]
+				11938, -- [26]
+				0, -- [27]
+				83, -- [28]
+				422, -- [29]
+				21, -- [30]
+				314, -- [31]
+				67, -- [32]
+				["max_value"] = 16080,
+				["__time"] = 1719828876,
+			},
+		},
+		[1877] = {
+			["Raid Damage Done"] = {
+				5053, -- [1]
+				1573, -- [2]
+				3231, -- [3]
+				3780, -- [4]
+				951, -- [5]
+				2439, -- [6]
+				1246, -- [7]
+				3302, -- [8]
+				0, -- [9]
+				["max_value"] = 5053,
+				["__time"] = 1719828063,
+			},
+		},
+		[1893] = {
+			["Raid Damage Done"] = {
+				526, -- [1]
+				2915, -- [2]
+				10307, -- [3]
+				2987, -- [4]
+				445, -- [5]
+				20449, -- [6]
+				12199, -- [7]
+				4187, -- [8]
+				6179, -- [9]
+				3414, -- [10]
+				12805, -- [11]
+				13254, -- [12]
+				8619, -- [13]
+				["max_value"] = 20449,
+				["__time"] = 1719828889,
+			},
+		},
+		[1878] = {
+			["Raid Damage Done"] = {
+				3440, -- [1]
+				2489, -- [2]
+				1339, -- [3]
+				3580, -- [4]
+				731, -- [5]
+				2152, -- [6]
+				7155, -- [7]
+				2502, -- [8]
+				13550, -- [9]
+				1750, -- [10]
+				3104, -- [11]
+				1205, -- [12]
+				3634, -- [13]
+				558, -- [14]
+				2060, -- [15]
+				7490, -- [16]
+				96, -- [17]
+				3529, -- [18]
+				5200, -- [19]
+				2478, -- [20]
+				5624, -- [21]
+				6864, -- [22]
+				608, -- [23]
+				9006, -- [24]
+				11061, -- [25]
+				13897, -- [26]
+				6061, -- [27]
+				9120, -- [28]
+				12075, -- [29]
+				3998, -- [30]
+				4463, -- [31]
+				2562, -- [32]
+				1891, -- [33]
+				0, -- [34]
+				1559, -- [35]
+				1394, -- [36]
+				755, -- [37]
+				3461, -- [38]
+				2353, -- [39]
+				636, -- [40]
+				0, -- [41]
+				521, -- [42]
+				693, -- [43]
+				0, -- [44]
+				2031, -- [45]
+				7585, -- [46]
+				2985, -- [47]
+				1137, -- [48]
+				2735, -- [49]
+				880, -- [50]
+				3820, -- [51]
+				223, -- [52]
+				1538, -- [53]
+				960, -- [54]
+				6013, -- [55]
+				12018, -- [56]
+				7164, -- [57]
+				13515, -- [58]
+				10215, -- [59]
+				9081, -- [60]
+				13660, -- [61]
+				6294, -- [62]
+				15593, -- [63]
+				4965, -- [64]
+				3973, -- [65]
+				4079, -- [66]
+				5024, -- [67]
+				4889, -- [68]
+				4971, -- [69]
+				659, -- [70]
+				1479, -- [71]
+				7833, -- [72]
+				399, -- [73]
+				224, -- [74]
+				8851, -- [75]
+				1752, -- [76]
+				1393, -- [77]
+				7473, -- [78]
+				5003, -- [79]
+				9176, -- [80]
+				10984, -- [81]
+				11060, -- [82]
+				10064, -- [83]
+				8232, -- [84]
+				5175, -- [85]
+				6154, -- [86]
+				11652, -- [87]
+				3503, -- [88]
+				3053, -- [89]
+				6264, -- [90]
+				1419, -- [91]
+				3005, -- [92]
+				8793, -- [93]
+				2718, -- [94]
+				8414, -- [95]
+				8930, -- [96]
+				4195, -- [97]
+				2685, -- [98]
+				3461, -- [99]
+				185, -- [100]
+				4149, -- [101]
+				112, -- [102]
+				0, -- [103]
+				["max_value"] = 15593,
+				["__time"] = 1719828175,
+			},
+		},
+		[1894] = {
+			["Raid Damage Done"] = {
+				1808, -- [1]
+				4087, -- [2]
+				4791, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				23, -- [8]
+				3244, -- [9]
+				1862, -- [10]
+				408, -- [11]
+				4963, -- [12]
+				3673, -- [13]
+				2511, -- [14]
+				7822, -- [15]
+				16165, -- [16]
+				7106, -- [17]
+				4513, -- [18]
+				11448, -- [19]
+				10687, -- [20]
+				2993, -- [21]
+				3775, -- [22]
+				4774, -- [23]
+				7540, -- [24]
+				6650, -- [25]
+				9382, -- [26]
+				4679, -- [27]
+				4017, -- [28]
+				3633, -- [29]
+				6998, -- [30]
+				416, -- [31]
+				["max_value"] = 16165,
+				["__time"] = 1719828920,
+			},
+		},
+		[1863] = {
+			["Raid Damage Done"] = {
+				1221, -- [1]
+				2498, -- [2]
+				1132, -- [3]
+				9344, -- [4]
+				2711, -- [5]
+				10533, -- [6]
+				3227, -- [7]
+				0, -- [8]
+				1675, -- [9]
+				["max_value"] = 10533,
+				["__time"] = 1719827306,
+			},
+		},
+		[1879] = {
+			["Raid Damage Done"] = {
+				5443, -- [1]
+				936, -- [2]
+				0, -- [3]
+				1913, -- [4]
+				3231, -- [5]
+				0, -- [6]
+				3761, -- [7]
+				3013, -- [8]
+				0, -- [9]
+				953, -- [10]
+				0, -- [11]
+				5345, -- [12]
+				0, -- [13]
+				0, -- [14]
+				7756, -- [15]
+				253, -- [16]
+				5853, -- [17]
+				6865, -- [18]
+				1328, -- [19]
+				6040, -- [20]
+				12505, -- [21]
+				13734, -- [22]
+				17434, -- [23]
+				24854, -- [24]
+				25048, -- [25]
+				11700, -- [26]
+				18770, -- [27]
+				12448, -- [28]
+				8363, -- [29]
+				8063, -- [30]
+				4378, -- [31]
+				2851, -- [32]
+				3984, -- [33]
+				5188, -- [34]
+				6633, -- [35]
+				1681, -- [36]
+				1437, -- [37]
+				504, -- [38]
+				0, -- [39]
+				0, -- [40]
+				["max_value"] = 25048,
+				["__time"] = 1719828216,
+			},
+		},
+		[1895] = {
+			["Raid Damage Done"] = {
+				1422, -- [1]
+				3159, -- [2]
+				376, -- [3]
+				1601, -- [4]
+				2033, -- [5]
+				46, -- [6]
+				1289, -- [7]
+				2558, -- [8]
+				892, -- [9]
+				421, -- [10]
+				5699, -- [11]
+				621, -- [12]
+				4717, -- [13]
+				1218, -- [14]
+				1853, -- [15]
+				0, -- [16]
+				971, -- [17]
+				0, -- [18]
+				["max_value"] = 5699,
+				["__time"] = 1719828944,
+			},
+		},
+		[1880] = {
+			["Raid Damage Done"] = {
+				41, -- [1]
+				42, -- [2]
+				1688, -- [3]
+				0, -- [4]
+				1724, -- [5]
+				0, -- [6]
+				2402, -- [7]
+				693, -- [8]
+				538, -- [9]
+				0, -- [10]
+				224, -- [11]
+				816, -- [12]
+				1051, -- [13]
+				2578, -- [14]
+				1607, -- [15]
+				2598, -- [16]
+				2091, -- [17]
+				5027, -- [18]
+				3971, -- [19]
+				3292, -- [20]
+				2111, -- [21]
+				2761, -- [22]
+				755, -- [23]
+				5092, -- [24]
+				416, -- [25]
+				4941, -- [26]
+				5238, -- [27]
+				["max_value"] = 5238,
+				["__time"] = 1719828264,
+			},
+		},
+		[1896] = {
+			["Raid Damage Done"] = {
+				9071, -- [1]
+				2348, -- [2]
+				471, -- [3]
+				2505, -- [4]
+				2992, -- [5]
+				4153, -- [6]
+				17335, -- [7]
+				3310, -- [8]
+				6155, -- [9]
+				4532, -- [10]
+				350, -- [11]
+				564, -- [12]
+				4769, -- [13]
+				164, -- [14]
+				827, -- [15]
+				3301, -- [16]
+				876, -- [17]
+				323, -- [18]
+				10105, -- [19]
+				2208, -- [20]
+				3363, -- [21]
+				3459, -- [22]
+				9982, -- [23]
+				10090, -- [24]
+				1519, -- [25]
+				14001, -- [26]
+				1296, -- [27]
+				2558, -- [28]
+				5905, -- [29]
+				3676, -- [30]
+				3944, -- [31]
+				697, -- [32]
+				2893, -- [33]
+				7965, -- [34]
+				2907, -- [35]
+				5207, -- [36]
+				1927, -- [37]
+				693, -- [38]
+				2455, -- [39]
+				4875, -- [40]
+				6307, -- [41]
+				1791, -- [42]
+				886, -- [43]
+				2822, -- [44]
+				4233, -- [45]
+				24868, -- [46]
+				11895, -- [47]
+				6114, -- [48]
+				3690, -- [49]
+				9700, -- [50]
+				11815, -- [51]
+				7551, -- [52]
+				2045, -- [53]
+				6960, -- [54]
+				603, -- [55]
+				3192, -- [56]
+				3969, -- [57]
+				647, -- [58]
+				2953, -- [59]
+				239, -- [60]
+				825, -- [61]
+				2451, -- [62]
+				6035, -- [63]
+				6650, -- [64]
+				2882, -- [65]
+				7599, -- [66]
+				0, -- [67]
+				["max_value"] = 24868,
+				["__time"] = 1719829016,
+			},
+		},
+		[1881] = {
+			["Raid Damage Done"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+				["__time"] = 1719828272,
+			},
+		},
+		[1897] = {
+			["Raid Damage Done"] = {
+				3385, -- [1]
+				5424, -- [2]
+				1931, -- [3]
+				["max_value"] = 5424,
+				["__time"] = 1719829030,
+			},
+		},
+		[1882] = {
+			["Raid Damage Done"] = {
+				6116, -- [1]
+				1999, -- [2]
+				2459, -- [3]
+				168, -- [4]
+				0, -- [5]
+				2672, -- [6]
+				1462, -- [7]
+				7689, -- [8]
+				7254, -- [9]
+				738, -- [10]
+				3175, -- [11]
+				0, -- [12]
+				499, -- [13]
+				13778, -- [14]
+				9989, -- [15]
+				18203, -- [16]
+				9717, -- [17]
+				7644, -- [18]
+				4353, -- [19]
+				1934, -- [20]
+				6035, -- [21]
+				12680, -- [22]
+				25138, -- [23]
+				8485, -- [24]
+				6610, -- [25]
+				3125, -- [26]
+				16379, -- [27]
+				8236, -- [28]
+				2908, -- [29]
+				1391, -- [30]
+				693, -- [31]
+				["max_value"] = 25138,
+				["__time"] = 1719828350,
+			},
+		},
+		[1898] = {
+			["Raid Damage Done"] = {
+				3145, -- [1]
+				2127, -- [2]
+				1589, -- [3]
+				1964, -- [4]
+				637, -- [5]
+				6799, -- [6]
+				4040, -- [7]
+				1336, -- [8]
+				3830, -- [9]
+				9003, -- [10]
+				3321, -- [11]
+				7116, -- [12]
+				5518, -- [13]
+				5834, -- [14]
+				3239, -- [15]
+				505, -- [16]
+				2706, -- [17]
+				1463, -- [18]
+				["max_value"] = 9003,
+				["__time"] = 1719829049,
+			},
+		},
+		[1883] = {
+			["Raid Damage Done"] = {
+				964, -- [1]
+				2444, -- [2]
+				7, -- [3]
+				0, -- [4]
+				7347, -- [5]
+				4287, -- [6]
+				5342, -- [7]
+				1722, -- [8]
+				1999, -- [9]
+				10064, -- [10]
+				17953, -- [11]
+				9633, -- [12]
+				12507, -- [13]
+				12425, -- [14]
+				9605, -- [15]
+				13370, -- [16]
+				17012, -- [17]
+				10795, -- [18]
+				11201, -- [19]
+				6682, -- [20]
+				6181, -- [21]
+				3610, -- [22]
+				905, -- [23]
+				653, -- [24]
+				159, -- [25]
+				1760, -- [26]
+				1022, -- [27]
+				["max_value"] = 17953,
+				["__time"] = 1719828384,
+			},
+		},
+		[1899] = {
+			["Raid Damage Done"] = {
+				7388, -- [1]
+				2563, -- [2]
+				1883, -- [3]
+				1197, -- [4]
+				0, -- [5]
+				591, -- [6]
+				23, -- [7]
+				23, -- [8]
+				546, -- [9]
+				23, -- [10]
+				2224, -- [11]
+				891, -- [12]
+				2313, -- [13]
+				2710, -- [14]
+				5473, -- [15]
+				7138, -- [16]
+				11581, -- [17]
+				2756, -- [18]
+				168, -- [19]
+				3089, -- [20]
+				0, -- [21]
+				["max_value"] = 11581,
+				["__time"] = 1719829105,
+			},
+		},
+		[1884] = {
+			["Raid Damage Done"] = {
+				1324, -- [1]
+				858, -- [2]
+				282, -- [3]
+				517, -- [4]
+				2257, -- [5]
+				2330, -- [6]
+				141, -- [7]
+				7598, -- [8]
+				7109, -- [9]
+				860, -- [10]
+				0, -- [11]
+				5377, -- [12]
+				1136, -- [13]
+				5235, -- [14]
+				4191, -- [15]
+				2078, -- [16]
+				10828, -- [17]
+				8419, -- [18]
+				6767, -- [19]
+				1004, -- [20]
+				2090, -- [21]
+				247, -- [22]
+				1595, -- [23]
+				1489, -- [24]
+				339, -- [25]
+				117, -- [26]
+				2434, -- [27]
+				3666, -- [28]
+				26, -- [29]
+				12529, -- [30]
+				["max_value"] = 12529,
+				["__time"] = 1719828415,
+			},
+		},
+		[1900] = {
+			["Raid Damage Done"] = {
+				941, -- [1]
+				["max_value"] = 941,
+				["__time"] = 1719829109,
+			},
+		},
+		[1885] = {
+			["Raid Damage Done"] = {
+				2160, -- [1]
+				3773, -- [2]
+				1727, -- [3]
+				3876, -- [4]
+				3610, -- [5]
+				2184, -- [6]
+				2867, -- [7]
+				5180, -- [8]
+				918, -- [9]
+				10945, -- [10]
+				1010, -- [11]
+				3491, -- [12]
+				4580, -- [13]
+				7254, -- [14]
+				3144, -- [15]
+				1999, -- [16]
+				1804, -- [17]
+				1424, -- [18]
+				4968, -- [19]
+				3099, -- [20]
+				4226, -- [21]
+				6268, -- [22]
+				1547, -- [23]
+				5025, -- [24]
+				0, -- [25]
+				["max_value"] = 10945,
+				["__time"] = 1719828468,
+			},
+		},
+		[1901] = {
+			["Raid Damage Done"] = {
+				8847, -- [1]
+				3861, -- [2]
+				3299, -- [3]
+				1150, -- [4]
+				3335, -- [5]
+				1226, -- [6]
+				9669, -- [7]
+				2342, -- [8]
+				882, -- [9]
+				2203, -- [10]
+				2603, -- [11]
+				3407, -- [12]
+				7464, -- [13]
+				["max_value"] = 9669,
+				["__time"] = 1719829123,
+			},
+		},
+		[1886] = {
+			["Raid Damage Done"] = {
+				1210, -- [1]
+				3990, -- [2]
+				3287, -- [3]
+				6187, -- [4]
+				1178, -- [5]
+				4692, -- [6]
+				3696, -- [7]
+				5362, -- [8]
+				2909, -- [9]
+				8190, -- [10]
+				2005, -- [11]
+				2423, -- [12]
+				2255, -- [13]
+				1735, -- [14]
+				559, -- [15]
+				121, -- [16]
+				4350, -- [17]
+				1591, -- [18]
+				5803, -- [19]
+				3427, -- [20]
+				2134, -- [21]
+				["max_value"] = 8190,
+				["__time"] = 1719828498,
+			},
+		},
+		[1871] = {
+			["Raid Damage Done"] = {
+				2650, -- [1]
+				3652, -- [2]
+				82, -- [3]
+				797, -- [4]
+				83, -- [5]
+				0, -- [6]
+				906, -- [7]
+				3781, -- [8]
+				86, -- [9]
+				2623, -- [10]
+				149, -- [11]
+				86, -- [12]
+				4075, -- [13]
+				3029, -- [14]
+				8213, -- [15]
+				4820, -- [16]
+				12282, -- [17]
+				6646, -- [18]
+				6744, -- [19]
+				10089, -- [20]
+				1379, -- [21]
+				2713, -- [22]
+				0, -- [23]
+				["max_value"] = 12282,
+				["__time"] = 1719827923,
+			},
+		},
+		[1872] = {
+			["Raid Damage Done"] = {
+				1213, -- [1]
+				961, -- [2]
+				5107, -- [3]
+				4565, -- [4]
+				2227, -- [5]
+				1566, -- [6]
+				3006, -- [7]
+				2949, -- [8]
+				6740, -- [9]
+				1907, -- [10]
+				1401, -- [11]
+				0, -- [12]
+				4776, -- [13]
+				702, -- [14]
+				4682, -- [15]
+				["max_value"] = 6740,
+				["__time"] = 1719827943,
+			},
+		},
+		[1866] = {
+			["Raid Damage Done"] = {
+				3238, -- [1]
+				1619, -- [2]
+				3657, -- [3]
+				7276, -- [4]
+				3087, -- [5]
+				5612, -- [6]
+				6982, -- [7]
+				["max_value"] = 7276,
+				["__time"] = 1719827442,
+			},
+		},
 	},
 	["encounter_spells"] = {
-		[93520] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Lord Godfrey",
-		},
-		[31901] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Omor the Unscarred",
-		},
-		[30643] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Hellfire Watcher",
-		},
-		[12739] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Shadowy Attendant",
-		},
-		[30641] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
-		},
-		[11921] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Hellfire Familiar",
-		},
-		[93686] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Commander Springvale",
-		},
-		[93564] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Lord Godfrey",
-		},
-		[93505] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Lord Walden",
-		},
-		[8269] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Coilfang Collaborator",
-		},
-		[17228] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Keli'dan the Breaker",
-		},
-		[23224] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Baron Silverlaine",
-		},
-		[30913] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Broggok",
-		},
-		[30691] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Vazruden the Herald",
-		},
-		[34645] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
-		},
-		[31985] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Mennu the Betrayer",
-		},
-		[16856] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Bonechewer Destroyer",
-		},
-		[19130] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Coilfang Collaborator",
-		},
-		[91088] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Corpse Eater",
-		},
-		[34970] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Rokmar the Crackler",
-		},
-		[1604] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Haunted Servitor",
-		},
-		[31981] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Mennu the Betrayer",
-		},
-		[93687] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Commander Springvale",
-		},
-		[93691] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[34980] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Mennu the Betrayer",
-		},
-		[30914] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Broggok Poison Cloud",
-		},
-		[91561] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Fetid Ghoul",
-		},
-		[93707] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Lord Godfrey",
-		},
-		[7054] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Tormented Officer",
-		},
-		[14032] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Hellfire Watcher",
-		},
-		[33787] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Coilfang Collaborator",
-		},
-		[31991] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Mennu the Betrayer",
-		},
-		[22857] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
-		},
-		[93857] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Baron Silverlaine",
-		},
-		[93629] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Lord Godfrey",
-		},
-		[30917] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Broggok",
-		},
-		[30925] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "The Maker",
-		},
-		[93468] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Baron Ashbury",
-		},
-		[30927] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Liquid Fire",
-		},
 		[35010] = {
 			["school"] = 8,
 			["token"] = {
@@ -348,6 +937,649 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Lord Walden",
+		},
+		[79057] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Tynissa-Gehennas",
+		},
+		[34645] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
+		},
+		[34268] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ghaz'an",
+		},
+		[93686] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Commander Springvale",
+		},
+		[14032] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Hellfire Watcher",
+		},
+		[22858] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
+		},
+		[31623] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[34931] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ethereal Darkcaster",
+		},
+		[1604] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Haunted Servitor",
+		},
+		[93520] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Lord Godfrey",
+		},
+		[30686] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Omor the Unscarred",
+		},
+		[7054] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Tormented Officer",
+		},
+		[93535] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lord Walden",
+		},
+		[31901] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Omor the Unscarred",
+		},
+		[93423] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Baron Ashbury",
+		},
+		[30636] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Shattered Hand Warhound",
+		},
+		[34977] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Mennu's Healing Ward",
+		},
+		[30639] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Shattered Hand Warhound",
+		},
+		[30641] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
+		},
+		[30643] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Hellfire Watcher",
+		},
+		[15550] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Bog Giant",
+		},
+		[13338] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Shadowmoon Warlock",
+		},
+		[93505] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lord Walden",
+		},
+		[6726] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Shadowmoon Technician",
+		},
+		[7485] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Razorclaw the Butcher",
+		},
+		[30927] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Liquid Fire",
+		},
+		[34970] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Rokmar the Crackler",
+		},
+		[30913] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Broggok",
+		},
+		[93685] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Commander Springvale",
+		},
+		[30917] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Broggok",
+		},
+		[11921] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Hellfire Familiar",
+		},
+		[40504] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Quagmirran",
+		},
+		[15716] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ghaz'an",
+		},
+		[30925] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "The Maker",
+		},
+		[32197] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Shadowmoon Warlock",
+		},
+		[93863] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Rethilgore",
+		},
+		[31566] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[40062] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shadowmoon Technician",
+		},
+		[12039] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Hellfire Watcher",
+		},
+		[22857] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
+		},
+		[8269] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
+		},
+		[19130] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
+		},
+		[16592] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Ethereal Darkcaster",
+		},
+		[30691] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Vazruden the Herald",
+		},
+		[8362] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Hellfire Watcher",
+		},
+		[30695] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Omor the Unscarred",
+		},
+		[93697] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lord Walden",
+		},
+		[16856] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Bonechewer Destroyer",
+		},
+		[31717] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "The Black Stalker",
+		},
+		[38163] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Quagmirran",
+		},
+		[93857] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Baron Silverlaine",
+		},
+		[32358] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Pandemonius",
+		},
+		[31598] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Bleeding Hollow Darkcaster",
+		},
+		[31981] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mennu the Betrayer",
+		},
+		[32364] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Nexus-Prince Shaffar",
+		},
+		[31985] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mennu the Betrayer",
+		},
+		[8374] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Tavarok",
+		},
+		[30846] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Shadowmoon Technician",
+		},
+		[31991] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mennu the Betrayer",
+		},
+		[31615] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[34298] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Claw",
+		},
+		[34971] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Claw",
+		},
+		[34662] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[25778] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Underbog Lord",
+		},
+		[31429] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Claw",
+		},
+		[93468] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Baron Ashbury",
+		},
+		[34929] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Ethereal Darkcaster",
+		},
+		[16005] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Technician",
+		},
+		[93629] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Lord Godfrey",
+		},
+		[31948] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Rokmar the Crackler",
+		},
+		[414266] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+		},
+		[33787] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
+		},
+		[91561] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Fetid Ghoul",
+		},
+		[30844] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shadowmoon Technician",
 		},
 		[93581] = {
 			["school"] = 32,
@@ -369,27 +1601,146 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Godfrey",
 		},
-		[93863] = {
+		[32154] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
+		},
+		[93691] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[15254] = {
+			["school"] = 64,
+			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Rethilgore",
+			["source"] = "Ethereal Beacon",
 		},
-		[33111] = {
-			["school"] = 32,
+		[93707] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Shadowmoon Warlock",
+			["source"] = "Lord Godfrey",
+		},
+		[34780] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Quagmirran",
+		},
+		[30916] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Broggok",
+		},
+		[30914] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Broggok Poison Cloud",
+		},
+		[15241] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Bleeding Hollow Darkcaster",
+		},
+		[34874] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Hungarfen",
+		},
+		[91088] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Corpse Eater",
+		},
+		[93687] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Commander Springvale",
+		},
+		[30621] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Bonechewer Ravener",
+		},
+		[22907] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[34980] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mennu the Betrayer",
+		},
+		[93564] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lord Godfrey",
+		},
+		[34267] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ghaz'an",
+		},
+		[31932] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
 		},
 		[33132] = {
 			["school"] = 4,
@@ -399,74 +1750,153 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corrupted Nova Totem",
 		},
-		[16005] = {
-			["school"] = 4,
+		[34881] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Murkblood Oracle",
+		},
+		[32065] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Coilfang Technician",
+			["source"] = "Bog Giant",
 		},
-		[93535] = {
-			["school"] = 16,
+		[12097] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Underbog Frenzy",
+		},
+		[34290] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lord Walden",
+			["source"] = "Ghaz'an",
 		},
-		[32197] = {
+		[32325] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shadowmoon Warlock",
+			["source"] = "Pandemonius",
 		},
-		[30916] = {
+		[31946] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Broggok",
+			["source"] = "Swamplord Musel'ek",
 		},
-		[79057] = {
-			["school"] = 64,
+		[31567] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Tynissa-Gehennas",
+			["source"] = "Swamplord Musel'ek",
 		},
-		[7485] = {
+		[34942] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Razorclaw the Butcher",
+			["source"] = "Ethereal Darkcaster",
 		},
-		[12039] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Hellfire Watcher",
-		},
-		[93685] = {
+		[14516] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Commander Springvale",
+			["source"] = "Bonechewer Hungerer",
 		},
-		[34977] = {
+		[12739] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shadowy Attendant",
+		},
+		[31956] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Rokmar the Crackler",
+		},
+		[31704] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "The Black Stalker",
+		},
+		[17228] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[15791] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ethereal Sorcerer",
+		},
+		[10966] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Mennu's Healing Ward",
+			["source"] = "Laughing Skull Legionnaire",
+		},
+		[23224] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Baron Silverlaine",
+		},
+		[38153] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Quagmirran",
 		},
 		[91677] = {
 			["school"] = 8,
@@ -479,35 +1909,75 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Pustulant Monstrosity",
 		},
-		[93697] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Lord Walden",
-		},
-		[93423] = {
+		[33111] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Baron Ashbury",
+			["source"] = "Shadowmoon Warlock",
 		},
-		[31956] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[35008] = {
+			["school"] = 16,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Rokmar the Crackler",
 		},
+		[30707] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Omor the Unscarred",
+		},
+		[33865] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ethereal Scavenger",
+		},
+		[8599] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ethereal Crypt Raider",
+		},
+		[32363] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Nexus-Prince Shaffar",
+		},
+		[31403] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ethereal Crypt Raider",
+		},
 	},
 	["emotes"] = {
+		{
+			["boss"] = "Vazruden the Herald",
+		}, -- [1]
+		{
+			["boss"] = "Omor the Unscarred",
+		}, -- [2]
+		{
+			["boss"] = "Watchkeeper Gargolmar",
+		}, -- [3]
 	},
 }

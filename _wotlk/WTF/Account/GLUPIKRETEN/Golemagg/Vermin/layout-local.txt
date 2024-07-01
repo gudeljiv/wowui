@@ -184,8 +184,8 @@ H: 1
 Frame: WorldMapFrame
 FrameLevel: 1
 Anchor: TOP
-X: 25
-Y: -92
+X: -182
+Y: -93
 W: 610
 H: 463
 Frame: AtlasLoot_GUI-Frame

@@ -5,7 +5,7 @@ Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
-RXPGuides: enabled
+RXPGuides: disabled
 nPower: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled

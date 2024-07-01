@@ -64,7 +64,7 @@ LittleWigs_Cataclysm: disabled
 BigWigs: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_WrathOfTheLichKing: disabled
-RXPGuides: enabled
+RXPGuides: disabled
 FarmHud: enabled
 FarmHud_QuestArrow: enabled
 nBuff: enabled

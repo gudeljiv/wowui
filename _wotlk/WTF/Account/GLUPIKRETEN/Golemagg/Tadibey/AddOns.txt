@@ -60,7 +60,7 @@ BigWigs: disabled
 BigWigs_Cataclysm: disabled
 BigWigs_WrathOfTheLichKing: disabled
 TomTom: enabled
-RXPGuides: enabled
+RXPGuides: disabled
 FarmHud: enabled
 FarmHud_QuestArrow: enabled
 nBuff: enabled

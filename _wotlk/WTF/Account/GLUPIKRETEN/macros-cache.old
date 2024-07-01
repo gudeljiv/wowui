@@ -1,3 +1,11 @@
+VER 3 0000000000000029 " " "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
 VER 3 000000000000002A " " "132328"
 #showtooltip
 /dismount
@@ -12,14 +20,6 @@ VER 3 0000000000000028 " " "134400"
 END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
-END
-VER 3 0000000000000029 " " "132152"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-/petattack [@mouseover,exists,harm][]
-/petdefensive
 END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
