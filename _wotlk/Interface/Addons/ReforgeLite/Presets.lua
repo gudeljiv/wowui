@@ -2,6 +2,7 @@ local _, addonTable = ...
 local L = addonTable.L
 local ReforgeLite = addonTable.ReforgeLite
 local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+local tsort, tinsert = table.sort, tinsert
 
 ----------------------------------------- CAP PRESETS ---------------------------------
 
@@ -349,16 +350,17 @@ do
         caps = CasterCaps,
       },
       [specs.DRUIDFeralCombat] = {
-        [GetSpellInfo(5487)] = { -- Bear
+        [("%s (%s)"):format(GetSpellInfo(5487), TANK)] = { -- Bear
           icon = select(3, GetSpellInfo(5487)),
           weights = {
-            0, 150, 0, 40, 60, 10, 60, 90
+            0, 54, 0, 25, 53, 7, 48, 37
           },
           caps = {
             {
               stat = StatHit,
               points = {
                 {
+                  method = AtMost,
                   preset = CAPS.MeleeHitCap,
                 },
               },
@@ -367,26 +369,31 @@ do
               stat = StatExp,
               points = {
                 {
+                  method = AtMost,
                   preset = CAPS.ExpSoftCap,
-                  after = 30,
-                },
-                {
-                  preset = CAPS.ExpHardCap,
                 },
               },
             },
           },
         },
-        [GetSpellInfo(768)] = { -- Cat
+        [("%s (%s)"):format(GetSpellInfo(5487), STAT_DPS_SHORT)] = { -- Bear
+          icon = select(3, GetSpellInfo(5487)),
+          weights = {
+            0, -6, 0, 100, 50, 25, 100, -1
+          },
+          caps = MeleeCaps,
+        },
+        [("%s (%s)"):format(GetSpellInfo(768), "Monocat")] = { -- Cat
           icon = select(3, GetSpellInfo(768)),
           weights = {
-            0, 0, 0, 115, 110, 110, 115, 110
+            0, 0, 0, 30, 31, 28, 30, 31
           },
           caps = {
             {
               stat = StatHit,
               points = {
                 {
+                  method = AtMost,
                   preset = CAPS.MeleeHitCap,
                 },
               },
@@ -395,11 +402,19 @@ do
               stat = StatExp,
               points = {
                 {
+                  method = AtMost,
                   preset = CAPS.ExpSoftCap,
                 },
               },
             },
           },
+        },
+        [("%s (%s)"):format(GetSpellInfo(768), "Bearweave")] = { -- Cat
+          icon = select(3, GetSpellInfo(768)),
+          weights = {
+            0, 0, 0, 33, 31, 26, 32, 30
+          },
+          caps = MeleeCaps,
         },
       },
       [specs.DRUIDRestoration] = {
@@ -458,9 +473,21 @@ do
       [specs.HUNTERSurvival] = {
         tip = "Sim it! Check WoWHead/Discord for Haste caps!!",
         weights = {
-          0, 0, 0, 200, 110, 150, 0, 80
+          0, 0, 0, 200, 110, 150, 0, 40
         },
-        caps = RangedCaps,
+        caps = {
+          HitCap,
+          {
+            stat = StatHaste,
+            points = {
+              {
+                method = AtLeast,
+                value = 757,
+                after = 80,
+              },
+            },
+          },
+        },
       },
     },
     ["MAGE"] = {
@@ -614,7 +641,7 @@ do
     ["PRIEST"] = {
       [specs.PRIESTDiscipline] = {
         weights = {
-          150, 0, 0, 0, 80, 100, 0, 120
+          150, 0, 0, 0, 100, 120, 0, 80
         },
       },
       [specs.PRIESTHoly] = {
@@ -870,20 +897,33 @@ do
       },
     },
   }
+  if ReforgeLite.isDev then
+    ReforgeLite.presets = presets
+  else
+    ReforgeLite.presets = presets[addonTable.playerClass]
+  end
+end
 
-  ReforgeLite.presets = presets[addonTable.playerClass]
+function ReforgeLite:InitCustomPresets()
+  local customPresets = {}
+  for _, db in ipairs({self.db, self.cdb}) do
+    for k, v in pairs(db.customPresets) do
+      v.name = k
+      tinsert(customPresets, v)
+    end
+  end
+  self.presets[CUSTOM] = customPresets
 end
 
 function ReforgeLite:InitPresets()
-  self.presets[CUSTOM] = self.db.customPresets
-
+  self:InitCustomPresets()
   if PawnVersion then
     self.presets["Pawn"] = function ()
       if not PawnCommon or not PawnCommon.Scales then return {} end
       local result = {}
       for k, v in pairs (PawnCommon.Scales) do
         if v.ClassID == addonTable.playerClassID then
-          local preset = {leaf = "import", name = v.LocalizedName or k}
+          local preset = {name = v.LocalizedName or k}
           preset.weights = {}
           local raw = v.Values or {}
           preset.weights[self.STATS.SPIRIT] = raw["Spirit"] or 0
@@ -921,90 +961,116 @@ function ReforgeLite:InitPresets()
     end
   end
 
-  self.presetMenu = LibDD:Create_UIDropDownMenu("ReforgeLitePresetMenu", self)
-  LibDD:UIDropDownMenu_SetInitializeFunction(self.presetMenu, function (menu, level)
-    if not level then return end
-    local list = self.presets
-    if level > 1 then
-      list = L_UIDROPDOWNMENU_MENU_VALUE
-    end
-    local menuList = {}
-    for k, v in pairs (list) do
-      if type (v) == "function" then
-        v = v ()
-      end
-      local info = LibDD:UIDropDownMenu_CreateInfo()
-      info.notCheckable = true
-      info.sortKey = v.name or k
-      info.text = info.sortKey
-      info.isSpec = 0
-      if specInfo[k] then
-        info.text = "|T"..specInfo[k].icon..":0|t " .. specInfo[k].name
-        info.sortKey = specInfo[k].name
-        info.isSpec = 1
-      end
-      if v.icon then
-        info.text = "|T"..v.icon..":0|t " .. info.text
-      end
-      info.value = v
-      if v.tip then
-        info.tooltipTitle = v.tip
-        info.tooltipOnButton = true
-      end
-      if v.caps or v.weights or v.leaf then
-        info.func = function ()
-          LibDD:CloseDropDownMenus ()
-          if v.leaf == "import" then
-            self:SetStatWeights (v.weights, v.caps)
-          else
-            self:SetStatWeights (v.weights, v.caps or {})
-          end
-          self:SetTankingModel (v.tanking)
-        end
-        info.hasArrow = nil
-        info.keepShownOnClick = nil
+  local menuListInit = function(options)
+    return function (menu, level)
+      if not level then return end
+      local list = menu.list
+      if level > 1 then
+        list = L_UIDROPDOWNMENU_MENU_VALUE
       else
-        info.func = nil
-        if next (v) then
-          info.hasArrow = true
-        else
-          info.hasArrow = nil
+        addonTable.GUI:ClearEditFocus()
+      end
+      local menuList = {}
+      for k in pairs (list) do
+        local v = GetValueOrCallFunction(list, k)
+        local info = LibDD:UIDropDownMenu_CreateInfo()
+        info.notCheckable = true
+        info.sortKey = v.name or k
+        info.text = info.sortKey
+        info.isSpec = 0
+        info.value = v
+        if specInfo[k] then
+          info.text = "|T"..specInfo[k].icon..":0|t " .. specInfo[k].name
+          info.sortKey = specInfo[k].name
+          info.isSpec = 1
         end
-        info.keepShownOnClick = true
+        if v.icon then
+          info.text = "|T"..v.icon..":0|t " .. info.text
+        end
+        if v.tip then
+          info.tooltipTitle = v.tip
+          info.tooltipOnButton = true
+        end
+        if v.caps or v.weights then
+          info.func = function()
+            LibDD:CloseDropDownMenus()
+            options.onClick(info)
+          end
+        else
+          if next (v) then
+            info.hasArrow = true
+          else
+            info.disabled = true
+          end
+          info.keepShownOnClick = true
+        end
+        tinsert(menuList, info)
       end
-      tinsert(menuList, info)
-    end
-    table.sort(menuList, function (a, b)
-      if a.isSpec ~= b.isSpec then
-        return a.isSpec < b.isSpec
+      tsort(menuList, function (a, b)
+        if a.isSpec ~= b.isSpec then
+          return a.isSpec < b.isSpec
+        end
+        return a.sortKey < b.sortKey
+      end)
+      for _,v in ipairs(menuList) do
+        LibDD:UIDropDownMenu_AddButton (v, level)
       end
-      return a.sortKey < b.sortKey
-    end)
-    for _,v in ipairs(menuList) do
-      LibDD:UIDropDownMenu_AddButton (v, level)
     end
-  end)
+  end
 
+  self.presetMenu = LibDD:Create_UIDropDownMenu("ReforgeLitePresetMenu", self)
+  self.presetMenu.list = self.presets
+  LibDD:UIDropDownMenu_Initialize(self.presetMenu, menuListInit({
+    onClick = function(info)
+      self:SetStatWeights(info.value.weights, info.value.caps or {})
+      self:SetTankingModel (info.value.tanking)
+    end
+  }), "MENU")
+
+  local exportList = {
+    [REFORGE_CURRENT] = function()
+      local result = {
+        caps = self.pdb.caps,
+        weights = self.pdb.weights,
+      }
+      return result
+    end
+  }
+  addonTable.MergeTables(exportList, self.presets)
+
+  self.exportPresetMenu = LibDD:Create_UIDropDownMenu("ReforgeLiteExportPresetMenu", self)
+  self.exportPresetMenu.list = exportList
+  LibDD:UIDropDownMenu_Initialize(self.exportPresetMenu, menuListInit({
+    onClick = function(info)
+      self:ExportPreset(info.sortKey, info.value)
+    end
+  }), "MENU")
 
   self.presetDelMenu = LibDD:Create_UIDropDownMenu("ReforgeLitePresetDelMenu", self)
-  LibDD:UIDropDownMenu_SetInitializeFunction(self.presetDelMenu, function (menu, level)
+  LibDD:UIDropDownMenu_Initialize(self.presetDelMenu, function (menu, level)
     if level ~= 1 then return end
+    addonTable.GUI:ClearEditFocus()
     local menuList = {}
-    for k, v in pairs (self.db.customPresets) do
-      local info = LibDD:UIDropDownMenu_CreateInfo()
-      info.notCheckable = true
-      info.text = k
-      info.func = function ()
-        self.db.customPresets[k] = nil
-        if next (self.db.customPresets) == nil then
-          self.deletePresetButton:Disable ()
+    for _, db in ipairs({self.db, self.cdb}) do
+      for k in pairs(db.customPresets) do
+        local info = LibDD:UIDropDownMenu_CreateInfo()
+        info.notCheckable = true
+        info.text = k
+        info.func = function()
+          db.customPresets[k] = nil
+          self:InitCustomPresets()
+          if not self:CustomPresetsExist() then
+            self.deletePresetButton:Disable()
+          end
+          LibDD:CloseDropDownMenus()
         end
+        tinsert(menuList, info)
       end
-      tinsert(menuList, info)
     end
-    table.sort(menuList, function (a, b) return a.text < b.text end)
+    tsort(menuList, function (a, b) return a.text < b.text end)
     for _,v in ipairs(menuList) do
-      LibDD:UIDropDownMenu_AddButton (v, level)
+      LibDD:UIDropDownMenu_AddButton(v, level)
     end
-  end)
+  end, "MENU")
+
 end

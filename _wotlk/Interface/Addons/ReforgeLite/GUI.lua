@@ -10,6 +10,18 @@ function GUI:GenerateWidgetName ()
 end
 GUI.defaultParent = nil
 
+function GUI:ClearEditFocus()
+  LibDD:CloseDropDownMenus()
+  for _,v in ipairs(self.editBoxes) do
+    v:ClearFocus()
+  end
+end
+
+function GUI:ClearFocus()
+  LibDD:CloseDropDownMenus()
+  self:ClearEditFocus()
+end
+
 function GUI:SetTooltip (widget, tip)
   if tip then
     widget:SetScript ("OnEnter", function (self)
@@ -27,30 +39,36 @@ function GUI:SetTooltip (widget, tip)
 end
 
 GUI.editBoxes = {}
-function GUI:CreateEditBox (parent, width, height, default, setter, fallbackValue)
+GUI.editBoxes.insert = tinsert
+GUI.unusedEditBoxes = {}
+function GUI:CreateEditBox (parent, width, height, default, setter)
   local box
-  if #self.editBoxes > 0 then
-    box = tremove (self.editBoxes, 1)
+  if #self.unusedEditBoxes > 0 then
+    box = tremove (self.unusedEditBoxes, 1)
     box:SetParent (parent)
     box:Show ()
     box:SetTextColor (1, 1, 1)
     box:EnableMouse (true)
   else
     box = CreateFrame ("EditBox", self:GenerateWidgetName (), parent, "InputBoxTemplate")
+    self.editBoxes:insert(box)
     box:SetAutoFocus (false)
     box:SetFontObject (ChatFontNormal)
     box:SetNumeric ()
     box:SetTextInsets (0, 0, 3, 3)
     box:SetMaxLetters (8)
-    box:SetScript ("OnEnterPressed", function (box)
-      box:ClearFocus ()
+    box:SetScript ("OnEnterPressed", box.ClearFocus)
+    box:SetScript ("OnEditFocusGained", function(frame)
+      LibDD:CloseDropDownMenus()
+      frame.prevValue = tonumber(frame:GetText())
+      frame:HighlightText()
     end)
     box.Recycle = function (box)
       box:Hide ()
       box:SetScript ("OnEditFocusLost", nil)
       box:SetScript ("OnEnter", nil)
       box:SetScript ("OnLeave", nil)
-      tinsert (self.editBoxes, box)
+      tinsert (self.unusedEditBoxes, box)
     end
   end
   if width then
@@ -60,12 +78,16 @@ function GUI:CreateEditBox (parent, width, height, default, setter, fallbackValu
     box:SetHeight (height)
   end
   box:SetText (default)
-  box:SetScript ("OnEditFocusLost", function (box)
-    local value = tonumber(box:GetText()) or fallbackValue or 0
-    box:SetText (value)
+  box:SetScript ("OnEditFocusLost", function (frame)
+    local value = tonumber(frame:GetText())
+    if not value then
+      value = frame.prevValue or 0
+    end
+    frame:SetText (value)
     if setter then
       setter (value)
     end
+    frame.prevValue = nil
   end)
   return box
 end
@@ -78,47 +100,46 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
     sel:SetParent (parent)
     sel:Show ()
   else
-    local name = self:GenerateWidgetName ()
-    sel = LibDD:Create_UIDropDownMenu(name, parent)
-    LibDD:UIDropDownMenu_SetInitializeFunction(sel, function (self)
-      local info = {}
-      for i = 1, #self.values do
-        info.text = self.values[i].name
+    sel = LibDD:Create_UIDropDownMenu(self:GenerateWidgetName(), parent)
+    LibDD:UIDropDownMenu_SetInitializeFunction(sel, function (dropdown)
+      self:ClearEditFocus()
+      local info = LibDD:UIDropDownMenu_CreateInfo()
+      for i = 1, #dropdown.values do
+        info.text = dropdown.values[i].name
         info.func = function (inf)
-          LibDD:UIDropDownMenu_SetSelectedValue (self, inf.value)
-          self.value = inf.value
-          if self.setter then self.setter (inf.value) end
+          LibDD:UIDropDownMenu_SetSelectedValue (dropdown, inf.value)
+          dropdown.value = inf.value
+          if dropdown.setter then dropdown.setter (inf.value) end
         end
-        info.value = self.values[i].value
-        info.checked = (self.value == self.values[i].value)
+        info.value = dropdown.values[i].value
+        info.checked = (dropdown.value == dropdown.values[i].value)
         LibDD:UIDropDownMenu_AddButton (info)
       end
     end)
-    sel.SetValue = function (self, value)
-      self.value = value
-      for i = 1, #self.values do
-        if self.values[i].value == value then
-          LibDD:UIDropDownMenu_SetText (self, self.values[i].name)
+    sel.SetValue = function (dropdown, value)
+      dropdown.value = value
+      for i = 1, #dropdown.values do
+        if dropdown.values[i].value == value then
+          LibDD:UIDropDownMenu_SetText (dropdown, dropdown.values[i].name)
           return
         end
       end
-      LibDD:UIDropDownMenu_SetText (self, "")
+      LibDD:UIDropDownMenu_SetText (dropdown, "")
     end
     LibDD:UIDropDownMenu_JustifyText (sel, "LEFT")
     sel:SetHeight (50)
-    _G[name .. "Left"]:SetHeight (50)
-    _G[name .. "Middle"]:SetHeight (50)
-    _G[name .. "Right"]:SetHeight (50)
-    _G[name .. "Text"]:SetPoint ("LEFT", _G[name .. "Left"], "LEFT", 27, 1)
-    _G[name .. "Button"]:SetWidth (22)
-    _G[name .. "Button"]:SetHeight (22)
-    _G[name .. "Button"]:SetPoint ("TOPRIGHT", _G[name .. "Right"], "TOPRIGHT", -16, -13)
-    sel.Recycle = function (sel)
-      sel:Hide ()
-      sel:SetScript ("OnEnter", nil)
-      sel:SetScript ("OnLeave", nil)
-      sel.setter = nil
-      tinsert (self.dropdowns, sel)
+    sel.Left:SetHeight(50)
+    sel.Middle:SetHeight(50)
+    sel.Right:SetHeight(50)
+    sel.Text:SetPoint ("LEFT", sel.Left, "LEFT", 27, 1)
+    sel.Button:SetSize(22, 22)
+    sel.Button:SetPoint ("TOPRIGHT", sel.Right, "TOPRIGHT", -16, -13)
+    sel.Recycle = function (frame)
+      frame:Hide ()
+      frame:SetScript ("OnEnter", nil)
+      frame:SetScript ("OnLeave", nil)
+      frame.setter = nil
+      tinsert (self.dropdowns, frame)
     end
   end
   sel.value = default
@@ -150,7 +171,7 @@ function GUI:CreateCheckButton (parent, text, default, setter)
       tinsert (self.checkButtons, btn)
     end
   end
-  _G[btn:GetName () .. "Text"]:SetText (text)
+  btn.Text:SetText(text)
   btn:SetChecked (default)
   if setter then
     btn:SetScript ("OnClick", function (self)
@@ -183,8 +204,7 @@ function GUI:CreateImageButton (parent, width, height, img, pus, hlt, handler)
   if hlt then
     btn:SetHighlightTexture (hlt)
   end
-  btn:SetWidth (width)
-  btn:SetHeight (height)
+  btn:SetSize(width, height)
   if handler then
     btn:SetScript ("OnClick", handler)
   end
@@ -193,8 +213,7 @@ end
 
 function GUI:CreateColorPicker (parent, width, height, color, handler)
   local box = CreateFrame ("Frame", nil, parent)
-  box:SetWidth (width)
-  box:SetHeight (height)
+  box:SetSize(width, height)
   box:EnableMouse (true)
   box.texture = box:CreateTexture (nil, "OVERLAY")
   box.texture:SetAllPoints ()
@@ -234,7 +253,7 @@ function GUI:CreateHLine (x1, x2, y, w, color, parent)
   parent = parent or self.defaultParent
   local line = parent:CreateTexture (nil, "ARTWORK")
   line:SetDrawLayer ("ARTWORK")
-  line:SetColorTexture (color[1], color[2], color[3], color[4])
+  line:SetColorTexture (unpack(color))
   if x1 > x2 then
     x1, x2 = x2, x1
   end
@@ -259,7 +278,7 @@ function GUI:CreateVLine (x, y1, y2, w, color, parent)
   parent = parent or self.defaultParent
   local line = parent:CreateTexture (nil, "ARTWORK")
   line:SetDrawLayer ("ARTWORK")
-  line:SetColorTexture (color[1], color[2], color[3], color[4])
+  line:SetColorTexture (unpack(color))
   if y1 > y2 then
     y1, y2 = y2, y1
   end
@@ -289,8 +308,7 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
 
   local t = CreateFrame ("Frame", nil, parent)
   t:ClearAllPoints ()
-  t:SetWidth (400)
-  t:SetHeight (400)
+  t:SetSize(400, 400)
   t:SetPoint ("TOPLEFT")
 
   t.rows = rows
@@ -470,7 +488,6 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
     end
   end
   t.OnUpdateFix = function (self)
-    self:SetScript ("OnUpdate", nil)
     self:SetScript ("OnSizeChanged", nil)
 
     local numAutoRows = 0
@@ -531,14 +548,14 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
     end
 
     self:SetScript ("OnSizeChanged", function (self)
-      self:SetScript ("OnUpdate", self.OnUpdateFix)
+      RunNextFrame(function() self:OnUpdateFix() end)
     end)
 
     if self.onUpdate then
       self.onUpdate ()
     end
   end
-  
+
   if gridColor then
     t.hlines = {}
     t.vlines = {}
@@ -569,7 +586,7 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
   t:OnUpdateFix ()
 
   t:SetScript ("OnSizeChanged", function (self)
-    self:SetScript ("OnUpdate", self.OnUpdateFix)
+    RunNextFrame(function() self:OnUpdateFix() end)
   end)
 
   t.SetCell = function (self, i, j, value, align, offsX, offsY)
@@ -594,7 +611,7 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
       end
       self.cells[i][j] = nil
     end
-    
+
     if self.cells[i][j] then
       self.cells[i][j]:SetFontObject (font)
       self.cells[i][j]:Show ()
@@ -610,7 +627,7 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
       end
     end
     self.cells[i][j].istag = true
-    self.cells[i][j]:SetTextColor (color[1], color[2], color[3])
+    self.cells[i][j]:SetTextColor (unpack(color))
     self.cells[i][j]:SetText (text)
     self.cells[i][j].align = align
     self:AlignCell (i, j)

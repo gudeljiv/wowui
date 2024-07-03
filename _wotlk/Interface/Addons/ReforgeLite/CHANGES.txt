@@ -1,46 +1,328 @@
-tag ddbc5ae211f748f0ebc77721f4e2cc941c937554 v1.6.3
+tag 22f3ef12cc153a6a9fe034e8d66d3d9e6b43d321 v1.7.0
 Author:	skyler-code <skylerh15@github.com>
-Date:	Sat Jun 22 16:52:44 2024 -0500
+Date:	Wed Jul 3 04:02:07 2024 -0500
 
-commit 2f1691c7e7f18b801fa9c8da08692fdb32a59983
+commit 886507fec52cc0936161c5811a09c3bcb34b2fd0
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 10:54:37 2024 -0500
+Date:   Wed Jul 3 04:01:40 2024 -0500
 
-    Revert of a5c654141212d03081723e08a7f98ea6b98fe3f1
+    simplify call
 
-commit 9931aa19decea99201b3265be8b1dd53902baea1
+commit 148e1f75ae58f171926c76f1da3916ab1294bb2f
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 16:51:52 2024 -0500
+Date:   Wed Jul 3 03:57:55 2024 -0500
 
-    export presets for sharing (import next)
+    ClearFocus when opening method window
 
-commit 80af7098977c4699b2b820c850a8f1558af8b053
+commit 858cb3c92ab99f68e95aa79cf0ca6f93cd513c35
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 14:28:30 2024 -0500
+Date:   Wed Jul 3 03:57:30 2024 -0500
 
-    properly partition class presets to prevent name clashing
+    ParsePresetString isDev
 
-commit 7ac172c2c9da882d23ca9fe83c36adf6cc336d3d
+commit b387375e112760d2c64bb97764e206c9a39827ec
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 11:15:28 2024 -0500
+Date:   Wed Jul 3 03:47:23 2024 -0500
 
-    New presets will now only be shown to the class that can use them
+    UX improvements
 
-commit 864f76722c2c017ced3861e23dbcc418311e11f5
+commit 1829073ee299d2aa59084e365bc043371f6c7d72
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 10:32:11 2024 -0500
+Date:   Wed Jul 3 03:12:13 2024 -0500
 
-    magic number cleanup
+    close dropdowns when editbox gains focus
 
-commit c9e94361549099f57a5b7f0df46749e82e1038c2
+commit 8325814ec5cd8dce342c8c7f096331c5cfe317b8
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 10:12:50 2024 -0500
+Date:   Wed Jul 3 03:00:17 2024 -0500
 
-    further i18n cleanup
+    clearfocus on all editboxes when pressing calculate
 
-commit b1b4f782ce4c7aa7959b6d899307eac5f6cc2f95
+commit 452a57b271d354ef5aa263e882c36a660873173e
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Jun 22 09:59:10 2024 -0500
+Date:   Wed Jul 3 01:27:19 2024 -0500
 
-    fire mage preset tweaks to ensure correct priority
+    allow tabbing through statweight editboxes
+
+commit 939baa3f8f5223747ea6f18d2a92d85c16ca7a24
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Jul 2 01:20:05 2024 -0500
+
+    small dropdown optimizations and convert preset to actual menu
+
+commit b12d9d9eab091cfe9da3a1042795809ba90185b5
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Jul 2 01:16:53 2024 -0500
+
+    removing a few global calls where we already have access to the object locally
+
+commit eb902a4bb6c59afb34a4cbf97575ffbea44e1910
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Jul 2 01:14:32 2024 -0500
+
+    cleaning up tooltip scan function
+
+commit e87745e162e4e9b40f1b74e12747e0df7e7e453e
+Author: skyler-code <skylerh15@github.com>
+Date:   Mon Jul 1 20:01:46 2024 -0500
+
+    move onmousewheel logic to declaration
+
+commit bb0d68452d06df862ff6a5877793ae322ece59a7
+Author: skyler-code <skylerh15@github.com>
+Date:   Mon Jul 1 18:36:37 2024 -0500
+
+    readjust grips
+
+commit a1323d0d14278a0850590d097e28e0ecaf7690b1
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 30 20:01:46 2024 -0500
+
+    moved export window to new file
+
+commit b6c9b30e4bc69b93c8f284a29fafbc62d2a2a3cd
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 30 19:30:03 2024 -0500
+
+    dont use string.format global
+
+commit 34740edb85d2f6545b31735ecbd87f0ed0d2118c
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 16:56:34 2024 -0500
+
+    more titlebar tweaks
+
+commit f3a2fa4db2271c90d3d48758428517511425bf1f
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 15:41:28 2024 -0500
+
+    when exportframe text has focus, clear highlight and focus after esc press
+
+commit ed6e3a4bc1887a57f680fcdce3601e8ed9f81b3b
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 15:38:08 2024 -0500
+
+    hide export frame when esc pressed
+
+commit c161417bc31957c65b6e8cd52b4b2a7f86a82180
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 02:23:39 2024 -0500
+
+    small cleanup
+
+commit 42580d70b3ec0e7206e4110e0c078461319f26ab
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 02:14:31 2024 -0500
+
+    ensure setFrameActive state
+
+commit 75b0169a48445a5fa81b9207a5d47df73473e7fe
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 01:54:27 2024 -0500
+
+    SetFrameActive onShow if methodWindow is not shown
+
+commit 9ea35e6f70516820ecdad136a367d9f5c0893cbe
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 01:36:41 2024 -0500
+
+    close window when user presses escape
+
+commit 22950fc76788de1e8b2505065dd1433a2bf8398a
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jun 29 00:27:01 2024 -0500
+
+    dont need these
+
+commit 826983f1b737d24792cbaeadc7898f8c276b6ae3
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 23:39:29 2024 -0500
+
+    small tweaks
+
+commit a6136d78d71782bfba89b25b8f363a9d0fc6f448
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 23:19:53 2024 -0500
+
+    draw the border ourselves
+
+commit e8b3d64a4ab42b9dd5882006e451f1e673c62840
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 20:06:16 2024 -0500
+
+    show all presets in dev mode
+
+commit 8a5573ef36601d70b101f7b78f03f94a0483fda5
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 20:04:22 2024 -0500
+
+    adjusted surv preset to include haste cap
+
+commit 3abe2f3d7087fdb8d37e997512d04be357f8fc5e
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 19:40:07 2024 -0500
+
+    small optimization
+
+commit 8bac0cb19e35418d26d0ee4ff8d401e466b7d7cc
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 19:35:12 2024 -0500
+
+    hide export button if not in dev mode
+
+commit 55e8c9695e499c4de0fd8566dcbd8ddd93cd5b2b
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 19:10:16 2024 -0500
+
+    debug mode
+
+commit f74bb9d1a0dcfc337efab01e13796ba58a7f7bf6
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 18:43:07 2024 -0500
+
+    InitPresets when creating frame
+
+commit 882fbdd77df3c7c2979eec6262c4d5b2b9fc6130
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 18:13:07 2024 -0500
+
+    small optimizations
+
+commit 0238c8c2f6bd7decfae21e103a439cbad365c49d
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 18:00:12 2024 -0500
+
+    Druid presets updated
+
+commit 04954eb9fcf6c0b34afb40b40201b9fd9648f1a0
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 02:00:31 2024 -0500
+
+    small optimizations. utilize RunNextFrame instead of OnUpdate
+
+commit a129dfdc2c1d8d541b1fbe78ec439c846f24dbf6
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 01:20:01 2024 -0500
+
+    reduce getiteminfo calls
+
+commit 01b8042cba0a999972b1948ab03024bd3f5fe9f2
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Jun 28 01:19:33 2024 -0500
+
+    trying to reduce some global calls
+
+commit 62dec03b9cedf0a5c937edceb57ba4abf836cd5c
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu Jun 27 20:37:57 2024 -0500
+
+    cleanup
+
+commit efc659003b9e71afc179378278c73b2307bcd17b
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu Jun 27 01:25:55 2024 -0500
+
+    preset import start
+
+commit 7fa8910d19b3a78e4128416b894a5b73bd494cb0
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Jun 25 03:36:24 2024 -0500
+
+    removing redundant values
+
+commit e63826e42f044db4068326d5ccd5ceb5db32eb24
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Jun 25 03:33:20 2024 -0500
+
+    pointless nil checks
+
+commit c66ee69a1dbbd4b31ba3bf019d36d0dbc2aa586b
+Author: skyler-code <skylerh15@github.com>
+Date:   Mon Jun 24 08:54:24 2024 -0500
+
+    adjusted disc preset
+
+commit 64f34d558915c3bd4a63f90fff1913b4b8b3fde0
+Author: skyler-code <skylerh15@github.com>
+Date:   Mon Jun 24 08:13:47 2024 -0500
+
+    scope
+
+commit ebbcbac176c055eb866d5feced32f0318b01e607
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 21:16:28 2024 -0500
+
+    wrong default for classes
+
+commit d0fd2b96cd0238315a3bd4da12d0e684ca386aee
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 04:02:41 2024 -0500
+
+    export current weights
+
+commit 6745e017e2b12ba61ed7db6bfc374706835b2b2c
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:29:41 2024 -0500
+
+    cleanup
+
+commit 94160e1e3f5b878d07e8a0f33de26e9de0bdcc5b
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:27:29 2024 -0500
+
+    disable dropdown option if no function or children
+
+commit 3daf2d1090a631e220e69f243040d888fa2cb4a7
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:20:29 2024 -0500
+
+    exportPresetButton doesn't need to be disabled
+
+commit 5dd4a84d455a44c67ebc7942159eeede01269661
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:13:57 2024 -0500
+
+    CloseDropDownMenus when showing StaticPopup
+
+commit 7feb8a7fc904cfa98d9506f348a0b48ecee9d748
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:02:59 2024 -0500
+
+    utilize HorizontalSliderTemplate
+
+commit 00c3122ce2376a7fed3ff82a09ef17e0087e65b2
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 03:02:44 2024 -0500
+
+    SetSize cleanup
+
+commit e96660285ca5ec6a4c7c73d5e995dbe247d21153
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 02:21:23 2024 -0500
+
+    various cleanup. Using blizzard template's instead of custom code
+
+commit 0602b33ebbd69ecabc51c2f398e37360df8c3fb7
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 01:02:59 2024 -0500
+
+    utilize json lib for methodDebug formatting
+
+commit 61adee1a9bdf11eb36a03373aa7558f1afb53d6e
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 00:58:43 2024 -0500
+
+    Pawn OptionalDep
+
+commit 17a7fea74eda6151808c9a84eb4735360154aa5c
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 00:58:21 2024 -0500
+
+    convert Accept to UIPanelCloseButton
+
+commit 2587f318c62bdb3e3b4985c886570ebc77bf7cd1
+Author: skyler-code <skylerh15@github.com>
+Date:   Sun Jun 23 00:30:07 2024 -0500
+
+    consolidate preset dropdown logic
 

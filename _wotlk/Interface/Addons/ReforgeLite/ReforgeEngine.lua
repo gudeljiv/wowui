@@ -1,4 +1,4 @@
-local _, addonTable = ...
+local addonName, addonTable = ...
 local REFORGE_COEFF = 0.4
 local REFORGE_CHEAT = 5
 
@@ -7,6 +7,8 @@ local L = addonTable.L
 local DeepCopy = addonTable.DeepCopy
 local playerClass, playerRace = addonTable.playerClass, addonTable.playerRace
 local missChance = (playerRace == "NIGHTELF" and 7 or 5)
+
+local floor, tinsert, unpack, pairs, random = floor, tinsert, unpack, pairs, random
 
 ---------------------------------------------------------------------------------------
 function ReforgeLite:GetPlayerBuffs ()
@@ -160,7 +162,7 @@ function ReforgeLite:UpdateMethodStats (method)
     end
   end
   method.stats[self.STATS.SPIRIT] = floor (method.stats[self.STATS.SPIRIT] * self.spiritBonus + 0.5)
-  if self.s2hFactor and self.s2hFactor > 0 then
+  if self.s2hFactor > 0 then
     method.stats[self.STATS.HIT] = method.stats[self.STATS.HIT] +
       floor ((method.stats[self.STATS.SPIRIT] - oldspi) * self.s2hFactor / 100 + 0.5)
   end
@@ -230,10 +232,8 @@ end
 
 function ReforgeLite:IsItemLocked (slot)
   if self.pdb.itemsLocked[slot] then return true end
-  local item = self.itemData[slot].item
-  if not item then return true end
-  local ilvl = select (4, GetItemInfo (item))
-  return ilvl < 200
+  local slotData = self.itemData[slot]
+  return not slotData.item or slotData.ilvl < 200
 end
 
 ------------------------------------- CLASSIC REFORGE ------------------------------
@@ -251,7 +251,7 @@ function ReforgeLite:MakeReforgeOption (item, data, src, dst)
       delta2 = delta2 - amount
     elseif src == self.STATS.SPIRIT then
       dscore = dscore - data.weights[src] * amount
-      if self.s2hFactor and self.s2hFactor > 0 then
+      if self.s2hFactor > 0 then
         if data.caps[1].stat == self.STATS.HIT then
           delta1 = delta1 - floor (amount * self.s2hFactor / 100 + random ())
         elseif data.caps[2].stat == self.STATS.HIT then
@@ -273,7 +273,7 @@ function ReforgeLite:MakeReforgeOption (item, data, src, dst)
       delta2 = delta2 + amount
     elseif dst == self.STATS.SPIRIT then
       dscore = dscore + data.weights[dst] * amount
-      if self.s2hFactor and self.s2hFactor > 0 then
+      if self.s2hFactor > 0 then
         if data.caps[1].stat == self.STATS.HIT then
           delta1 = delta1 + floor (amount * self.s2hFactor / 100 + random ())
         elseif data.caps[2].stat == self.STATS.HIT then
@@ -311,55 +311,8 @@ function ReforgeLite:GetItemReforgeOptions (item, data, slot)
   end
   local opt = {}
   for _, v in pairs (aopt) do
-    table.insert (opt, v)
+    tinsert (opt, v)
   end
--- good old method
---[[  local opt = {}
-  local best = nil
-  for i = 1, #self.itemStats do
-    if item.stats[i] == 0 and i ~= data.caps[1].stat and i ~= data.caps[2].stat and (best == nil or data.weights[i] > data.weights[best]) then
-      best = i
-    end
-  end
-  if best then
-    local worst = nil
-    local worstScore = 0
-    for i = 1, #self.itemStats do
-      if item.stats[i] > 0 and i ~= data.caps[1].stat and i ~= data.caps[2].stat then
-        local score = (data.weights[best] - data.weights[i]) * floor (item.stats[i] * REFORGE_COEFF)
-        if score > worstScore then
-          worstScore = score
-          worst = i
-        end
-      end
-    end
-    if worst then
-      table.insert (opt, {src = worst, dst = best, d1 = 0, d2 = 0, score = worstScore})
-    else
-      table.insert (opt, {d1 = 0, d2 = 0, score = 0})
-    end
-  else
-    table.insert (opt, {d1 = 0, d2 = 0, score = 0})
-  end
-  for s = 1, 2 do
-    if data.caps[s].stat > 0 then
-      if item.stats[data.caps[s].stat] == 0 then
-        for i = 1, #self.itemStats do
-          if item.stats[i] > 0 then
-            local amount = floor (item.stats[i] * REFORGE_COEFF)
-            local srcweight = (i == data.caps[3 - s].stat and 0 or data.weights[i])
-            table.insert (opt, {src = i, dst = data.caps[s].stat,
-              ["d" .. s] = amount, ["d" .. (3 - s)] = (i == data.caps[3 - s].stat and -amount or 0), score = -amount * srcweight})
-          end
-        end
-      end
-      if item.stats[data.caps[s].stat] > 0 and best then
-        local amount = floor (item.stats[data.caps[s].stat] * REFORGE_COEFF)
-        table.insert (opt, {src = data.caps[s].stat, dst = best,
-          d1 = (s == 1 and -amount or 0), d2 = (s == 2 and -amount or 0), score = data.weights[best] * amount})
-      end
-    end
-  end]]
   return opt
 end
 function ReforgeLite:InitReforgeClassic ()
@@ -408,7 +361,7 @@ function ReforgeLite:InitReforgeClassic ()
       end
     end
   end
-  if self.s2hFactor and self.s2hFactor > 0 then
+  if self.s2hFactor > 0 then
     data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - floor (reforgedSpirit * self.spiritBonus * self.s2hFactor / 100 + 0.5)
   end
   if data.caps[1].stat > 0 then
@@ -434,7 +387,7 @@ function ReforgeLite:InitReforgeClassic ()
     REFORGE_CHEAT = 1
   end
 
-  if self.s2hFactor and self.s2hFactor > 0 then
+  if self.s2hFactor > 0 then
     if data.weights[self.STATS.SPIRIT] == 0 and (data.caps[1].stat == self.STATS.HIT or data.caps[2].stat == self.STATS.HIT) then
       data.weights[self.STATS.SPIRIT] = 1
     end
@@ -519,36 +472,36 @@ function ReforgeLite:GetItemReforgeOptionsS2H (item, data, slot)
       end
     end
     if worst then
-      table.insert (opt, {src = worst, dst = best, d1 = 0, d2 = 0, score = worstScore})
+      tinsert (opt, {src = worst, dst = best, d1 = 0, d2 = 0, score = worstScore})
     else
-      table.insert (opt, {d1 = 0, d2 = 0, score = 0})
+      tinsert (opt, {d1 = 0, d2 = 0, score = 0})
     end
   else
-    table.insert (opt, {d1 = 0, d2 = 0, score = 0})
+    tinsert (opt, {d1 = 0, d2 = 0, score = 0})
   end
   if item.stats[self.STATS.HIT] == 0 then
     for i = 1, #self.itemStats do
       if item.stats[i] > 0 then
         local amount = floor (item.stats[i] * REFORGE_COEFF)
-        table.insert (opt, {src = i, dst = self.STATS.HIT, d1 = amount, d2 = (i == self.STATS.SPIRIT and -amount or 0),
+        tinsert (opt, {src = i, dst = self.STATS.HIT, d1 = amount, d2 = (i == self.STATS.SPIRIT and -amount or 0),
           score = -amount * (i == self.STATS.SPIRIT and 0 or data.weights[i])})
       end
     end
   elseif best then
     local amount = floor (item.stats[self.STATS.HIT] * REFORGE_COEFF)
-    table.insert (opt, {src = self.STATS.HIT, dst = best, d1 = -amount, d2 = 0, score = data.weights[best] * amount})
+    tinsert (opt, {src = self.STATS.HIT, dst = best, d1 = -amount, d2 = 0, score = data.weights[best] * amount})
   end
   if item.stats[self.STATS.SPIRIT] == 0 then
     for i = 1, #self.itemStats do
       if item.stats[i] > 0 then
         local amount = floor (item.stats[i] * REFORGE_COEFF)
-        table.insert (opt, {src = i, dst = self.STATS.SPIRIT, d1 = (i == self.STATS.HIT and -amount or 0), d2 = amount,
+        tinsert (opt, {src = i, dst = self.STATS.SPIRIT, d1 = (i == self.STATS.HIT and -amount or 0), d2 = amount,
           score = -amount * (i == self.STATS.HIT and 0 or data.weights[i])})
       end
     end
   elseif best then
     local amount = floor (item.stats[self.STATS.SPIRIT] * REFORGE_COEFF)
-    table.insert (opt, {src = self.STATS.SPIRIT, dst = best, d1 = 0, d2 = -amount, score = data.weights[best] * amount})
+    tinsert (opt, {src = self.STATS.SPIRIT, dst = best, d1 = 0, d2 = -amount, score = data.weights[best] * amount})
   end
   return opt
 end
@@ -680,36 +633,36 @@ function ReforgeLite:GetItemReforgeOptionsTank (item, data, slot)
       end
     end
     if worst then
-      table.insert (opt, {src = worst, dst = best, d1 = 0, d2 = 0, score = worstScore})
+      tinsert (opt, {src = worst, dst = best, d1 = 0, d2 = 0, score = worstScore})
     else
-      table.insert (opt, {d1 = 0, d2 = 0, score = 0})
+      tinsert (opt, {d1 = 0, d2 = 0, score = 0})
     end
   else
-    table.insert (opt, {d1 = 0, d2 = 0, score = 0})
+    tinsert (opt, {d1 = 0, d2 = 0, score = 0})
   end
   if item.stats[self.STATS.DODGE] == 0 then
     for i = 1, #self.itemStats do
       if item.stats[i] > 0 then
         local amount = floor (item.stats[i] * REFORGE_COEFF)
-        table.insert (opt, {src = i, dst = self.STATS.DODGE, d1 = amount, d2 = (i == self.STATS.PARRY and -amount or 0),
+        tinsert (opt, {src = i, dst = self.STATS.DODGE, d1 = amount, d2 = (i == self.STATS.PARRY and -amount or 0),
           score = -amount * (i == self.STATS.PARRY and 0 or data.weights[i])})
       end
     end
   elseif best then
     local amount = floor (item.stats[self.STATS.DODGE] * REFORGE_COEFF)
-    table.insert (opt, {src = self.STATS.DODGE, dst = best, d1 = -amount, d2 = 0, score = data.weights[best] * amount})
+    tinsert (opt, {src = self.STATS.DODGE, dst = best, d1 = -amount, d2 = 0, score = data.weights[best] * amount})
   end
   if item.stats[self.STATS.PARRY] == 0 then
     for i = 1, #self.itemStats do
       if item.stats[i] > 0 then
         local amount = floor (item.stats[i] * REFORGE_COEFF)
-        table.insert (opt, {src = i, dst = self.STATS.PARRY, d1 = (i == self.STATS.DODGE and -amount or 0), d2 = amount,
+        tinsert (opt, {src = i, dst = self.STATS.PARRY, d1 = (i == self.STATS.DODGE and -amount or 0), d2 = amount,
           score = -amount * (i == self.STATS.DODGE and 0 or data.weights[i])})
       end
     end
   elseif best then
     local amount = floor (item.stats[self.STATS.PARRY] * REFORGE_COEFF)
-    table.insert (opt, {src = self.STATS.PARRY, dst = best, d1 = 0, d2 = -amount, score = data.weights[best] * amount})
+    tinsert (opt, {src = self.STATS.PARRY, dst = best, d1 = 0, d2 = -amount, score = data.weights[best] * amount})
   end
   return opt
 end
@@ -826,20 +779,6 @@ end
 
 -----------------------------------------------------------------------------
 
-local function FormatValue (value, prefix)
-  if type (value) == "table" then
-    local result = "{\n"
-    prefix = prefix or ""
-    local newprefix = prefix .. "  "
-    for k, v in pairs (value) do
-      result = result .. newprefix .. tostring (k) .. " = " .. FormatValue (v, newprefix) .. "\n"
-    end
-    return result .. prefix .. "}"
-  else
-    return tostring (value)
-  end
-end
-
 StaticPopupDialogs["REFORGELITE_COMPUTEERROR"] = {
   text = L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\nError message: %s"],
   button1 = OKAY,
@@ -891,7 +830,6 @@ function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
 
   local success, scores, codes = pcall (self.ComputeReforgeCore, self, data, reforgeOptions)
 
-  self.methodDebug = "<no data>"
   if success then
     local code = self[chooseFunc] (self, data, reforgeOptions, scores, codes)
     scores, codes = nil, nil
@@ -906,88 +844,24 @@ function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
       data.method.items[i].src = opt.src
       data.method.items[i].dst = opt.dst
     end
-    self.methodDebug = "data = " .. FormatValue (data) .. "\n\n"
+    self.methodDebug = { data = DeepCopy(data) }
     self:FinalizeReforge (data)
-    self.methodDebug = self.methodDebug .. "method = " .. FormatValue (data.method)
+    self.methodDebug.method = DeepCopy(data.method)
     return data.method
   else
-    self.methodDebug = "data = " .. FormatValue (data)
+    self.methodDebug = { data = DeepCopy(data) }
     StaticPopup_Show ("REFORGELITE_COMPUTEERROR", scores)
     return nil
   end
 end
 
 function ReforgeLite:Compute ()
-  self.spiritBonus = self.spiritBonus or 1
   if self.pdb.tankingModel then
     return self:ComputeReforge ("InitReforgeTank", "GetItemReforgeOptionsTank", "ChooseReforgeTank")
-  elseif self.s2hFactor and self.s2hFactor > 0 and ((self.pdb.caps[1].stat == self.STATS.HIT and self.pdb.caps[2].stat == 0) or
-                                                    (self.pdb.caps[2].stat == self.STATS.HIT and self.pdb.caps[1].stat == 0)) then
+  elseif self.s2hFactor > 0 and ((self.pdb.caps[1].stat == self.STATS.HIT and self.pdb.caps[2].stat == 0) or
+                                 (self.pdb.caps[2].stat == self.STATS.HIT and self.pdb.caps[1].stat == 0)) then
     return self:ComputeReforge ("InitReforgeS2H", "GetItemReforgeOptionsS2H", "ChooseReforgeS2H")
   else
     return self:ComputeReforge ("InitReforgeClassic", "GetItemReforgeOptions", "ChooseReforgeClassic")
   end
-end
-
-local ErrorFrame
-local function CreateErrorFrame()
-  ErrorFrame = CreateFrame ("Frame", "ReforgeLiteErrorFrame", UIParent, "BackdropTemplate")
-  ErrorFrame:Hide ()
-  ErrorFrame:SetPoint ("CENTER")
-  ErrorFrame:SetFrameStrata ("TOOLTIP")
-  ErrorFrame:SetWidth (320)
-  ErrorFrame:SetHeight (400)
-  ErrorFrame.backdropInfo = BACKDROP_TUTORIAL_16_16
-  ErrorFrame:ApplyBackdrop()
-  ErrorFrame:SetMovable (true)
-  ErrorFrame:SetClampedToScreen (true)
-  ErrorFrame:EnableMouse (true)
-  ErrorFrame:SetScript ("OnMouseDown", function (frame) frame:StartMoving () end)
-  ErrorFrame:SetScript ("OnMouseUp", function (frame) frame:StopMovingOrSizing () end)
-
-  ErrorFrame.ok = CreateFrame ("Button", nil, ErrorFrame, "UIPanelButtonTemplate")
-  ErrorFrame.ok:SetSize (112, 22)
-  ErrorFrame.ok:SetText (ACCEPT)
-  ErrorFrame.ok:SetPoint ("BOTTOM", 0, 10)
-  ErrorFrame.ok:SetScript ("OnClick", function (frame) frame:GetParent():Hide () end)
-  ErrorFrame.message = ErrorFrame:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  ErrorFrame.message:SetPoint ("TOPLEFT", 15, -15)
-  ErrorFrame.message:SetPoint ("TOPRIGHT", -15, -15)
-  ErrorFrame.message:SetJustifyH ("LEFT")
-  ErrorFrame.message:SetTextColor (1, 1, 1)
-  ErrorFrame.message:SetText ("")
-  ErrorFrame.scroll = CreateFrame ("ScrollFrame", nil, ErrorFrame, "UIPanelScrollFrameTemplate")
-  ErrorFrame.scroll:SetPoint ("TOPLEFT", ErrorFrame.message, "BOTTOMLEFT", 0, -10)
-  ErrorFrame.scroll:SetPoint ("TOPRIGHT", ErrorFrame.message, "BOTTOMRIGHT", -16, -10)
-  ErrorFrame.scroll:SetPoint ("BOTTOM", ErrorFrame.ok, "TOP", 0, 10)
-  ErrorFrame.text = CreateFrame ("EditBox", nil, ErrorFrame.scroll)
-  ErrorFrame.scroll:SetScrollChild (ErrorFrame.text)
-  ErrorFrame.text:SetWidth (274)
-  ErrorFrame.text:SetHeight (100)
-  ErrorFrame.text:SetMultiLine (true)
-  ErrorFrame.text:SetAutoFocus (false)
-  ErrorFrame.text:SetFontObject (GameFontHighlight)
-  ErrorFrame.text:SetScript ("OnEscapePressed", function () ErrorFrame:Hide () end)
-  ErrorFrame.updateText = function ()
-    ErrorFrame.text:SetText (ErrorFrame.err)
-    ErrorFrame.scroll:UpdateScrollChildRect ()
-    ErrorFrame.text:ClearFocus ()
-  end
-  ErrorFrame.text:SetScript ("OnTextChanged", ErrorFrame.updateText)
-  ErrorFrame.text:SetScript ("OnEditFocusGained", function ()
-    ErrorFrame.text:HighlightText ()
-  end)
-  function ErrorFrame:DisplayError (message, err)
-    ErrorFrame.message:SetText (message)
-    ErrorFrame.err = err
-    ErrorFrame.updateText ()
-    ErrorFrame:Show ()
-  end
-end
-
-function ReforgeLite:DebugMethod ()
-  if not ErrorFrame then
-    CreateErrorFrame()
-  end
-  ErrorFrame:DisplayError ("https://github.com/skyler-code/ReforgeLite/issues", self.methodDebug or "<no data>")
 end
