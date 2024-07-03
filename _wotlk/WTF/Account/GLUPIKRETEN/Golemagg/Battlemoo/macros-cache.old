@@ -42,7 +42,8 @@ VER 3 0000000001000006 "main" "134400"
 END
 VER 3 0000000001000010 "mangle" "134400"
 #showtooltip
-/cast [form:1] Mangle(bear form); [form:3] Mangle(cat form)
+/cast [form:1] Mangle(bear form)
+/cast [form:3] Mangle(cat form)
 END
 VER 3 0000000001000011 "mup" "134400"
 #showtoltip [stealth] Pounce; [form:1] Maul; [form:3] Claw; Regrowth

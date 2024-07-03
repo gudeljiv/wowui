@@ -316,8 +316,10 @@ local function createconfig()
 						width = "double",
 						values = {
 							["auto"] = "Automatic (yards for US, metric elsewhere)",
-							["yards"] = "Show distance in miles and yards",
-							["meters"] = "Show distance in km and meters",
+							["yards"] = "Show the distance in yards",
+							["meters"] = "Show the distance in meters",
+							["humanyards"] = "Show distance in miles and yards",
+							["humanmeters"] = "Show distance in km and meters",
 						},
 						arg = "arrow.distanceUnits",
 					},
