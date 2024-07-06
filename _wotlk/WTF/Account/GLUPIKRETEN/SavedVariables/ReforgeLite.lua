@@ -1598,11 +1598,19 @@ ReforgeLiteDB = {
 	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["classProfiles"] = {
-		["PALADIN"] = {
+		["DEATHKNIGHT"] = {
 			["customPresets"] = {
 			},
 		},
 		["DRUID"] = {
+			["customPresets"] = {
+			},
+		},
+		["WARRIOR"] = {
+			["customPresets"] = {
+			},
+		},
+		["PALADIN"] = {
 			["customPresets"] = {
 			},
 		},

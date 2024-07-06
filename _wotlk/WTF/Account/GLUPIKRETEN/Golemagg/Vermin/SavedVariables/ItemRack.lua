@@ -10,27 +10,35 @@ ItemRackUser = {
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {
 		[13] = {
-			["Top"] = 611.3741455078125,
-			["Left"] = 814.1182250976562,
+			["Top"] = 612.0070190429688,
+			["Left"] = 816.65087890625,
 		},
 		[14] = {
-			["Side"] = "LEFT",
 			["DockTo"] = 13,
+			["Side"] = "LEFT",
 		},
 	},
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
 			},
+			["Queues"] = {
+				[14] = {
+				},
+			},
 		},
 		["~Unequip"] = {
 			["equip"] = {
+			},
+			["Queues"] = {
+				[14] = {
+				},
 			},
 		},
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "tank",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -40,8 +48,6 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 		[13] = {
 			"28041::::::::75:::::::::", -- [1]
@@ -54,8 +60,13 @@ ItemRackUser = {
 			"19120::::::::77:::::::::", -- [1]
 			"28041::::::::77:::::::::", -- [2]
 			0, -- [3]
+			"55814::::::::84:::::::::", -- [4]
+			"55795::::::::84:::::::::", -- [5]
+			"55251::::::::84:::::::::", -- [6]
 		},
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2026047706604,
-	["CurrentSet"] = "tank",
+	["EnableEvents"] = "ON",
 }

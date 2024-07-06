@@ -732,16 +732,16 @@ AtlasLootClassicDB = {
 			[58159] = "JusticePoints:2200",
 			[58121] = "JusticePoints:2200",
 			[45877] = "SiderealEssence:25",
-			[64684] = "honor:1250",
-			[28128] = "honor:4750",
 			[42074] = "honor:8295",
+			[28128] = "honor:4750",
+			[64684] = "honor:1250",
 			[42039] = "honor:8295",
 			[33915] = "honor:6840",
 			[50355] = "EmblemOfFrost:60",
 			[57929] = "JusticePoints:950",
 			[28320] = "honor:2850",
-			[48628] = "EmblemOfTriumph:50",
 			[51354] = "honor:29862",
+			[48628] = "EmblemOfTriumph:50",
 			[40440] = "honor:9500",
 			[28448] = "honor:4750",
 			[36922] = "EmblemOfHeroism:20",
@@ -749,7 +749,7 @@ AtlasLootClassicDB = {
 			[40696] = "EmblemOfHeroism:40",
 			[50995] = "EmblemOfFrost:60",
 			[40824] = "EmblemOfConquest:58",
-			[24546] = "honor:3800",
+			[40888] = "honor:6895",
 			[35156] = "honor:7600",
 			[32828] = "ApexisS:10",
 			[41272] = "EmblemOfHeroism:45",
@@ -802,13 +802,13 @@ AtlasLootClassicDB = {
 			[42041] = "honor:14931",
 			[58481] = "ValorPoints:1650",
 			[50357] = "EmblemOfFrost:60",
+			[28309] = "honor:4750",
 			[28641] = "honor:3800",
-			[24547] = "honor:4750",
 			[48502] = "EmblemOfTriumph:30",
 			[28385] = "honor:3800",
 			[40442] = "honor:9500",
 			[28449] = "honor:3800",
-			[28309] = "honor:4750",
+			[24547] = "honor:4750",
 			[50869] = "EmblemOfFrost:95",
 			[40698] = "EmblemOfHeroism:25",
 			[50997] = "EmblemOfFrost:60",
@@ -891,11 +891,11 @@ AtlasLootClassicDB = {
 			[45946] = "SiderealEssence:15",
 			[41660] = "EmblemOfConquest:58",
 			[58100] = "JusticePoints:1650",
-			[42044] = "honor:14931",
+			[48185] = "EmblemOfTriumph:50",
 			[33664] = "honor:8550",
 			[33728] = "honor:8550",
 			[33920] = "honor:5130",
-			[46138] = "EmblemOfConquest:19",
+			[44091] = "honor:2175",
 			[58484] = "ValorPoints:1650",
 			[64689] = "honor:1650",
 			[64753] = "honor:1650",
@@ -1032,10 +1032,10 @@ AtlasLootClassicDB = {
 			[47290] = "DefilersScourgestone:38",
 			[50969] = "EmblemOfFrost:95",
 			[48188] = "EmblemOfTriumph:50",
-			[35140] = "honor:7600",
+			[50847] = "EmblemOfFrost:95",
 			[31587] = "honor:3040",
 			[31619] = "honor:3800",
-			[50847] = "EmblemOfFrost:95",
+			[35140] = "honor:7600",
 			[48458] = "EmblemOfTriumph:50",
 			[42944] = "JusticePoints:2175",
 			[40961] = "EmblemOfValor:30",
@@ -1044,7 +1044,7 @@ AtlasLootClassicDB = {
 			[47294] = "DefilersScourgestone:30",
 			[35076] = "honor:9500",
 			[41281] = "EmblemOfTriumph:50",
-			[50109] = "EmblemOfFrost:95",
+			[60344] = "ValorPoints:2200",
 			[31971] = "honor:5320",
 			[32003] = "honor:6650",
 			[47678] = "EmblemOfTriumph:75",
@@ -1053,7 +1053,7 @@ AtlasLootClassicDB = {
 			[58105] = "JusticePoints:1650",
 			[45887] = "SiderealEssence:25",
 			[33669] = "honor:8550",
-			[33733] = "honor:8550",
+			[50109] = "EmblemOfFrost:95",
 			[44096] = "honor:2175",
 			[48190] = "EmblemOfTriumph:50",
 			[41273] = "EmblemOfValor:30",
@@ -1231,13 +1231,13 @@ AtlasLootClassicDB = {
 			[45943] = "SiderealEssence:19",
 			[42950] = "JusticePoints:2175",
 			[47300] = "DefilersScourgestone:50",
-			[47556] = "SiderealEssence:3",
+			[27880] = "honor:3800",
 			[51330] = "honor:29862",
 			[35018] = "honor:19000",
 			[35082] = "honor:14250",
 			[41287] = "EmblemOfTriumph:50",
 			[47684] = "EmblemOfTriumph:75",
-			[45509] = "EmblemOfConquest:19",
+			[47556] = "SiderealEssence:3",
 			[44105] = "honor:2175",
 			[57919] = "JusticePoints:1650",
 			[35167] = "honor:5700",
@@ -1345,7 +1345,7 @@ AtlasLootClassicDB = {
 			[41270] = "EmblemOfHeroism:45",
 			[42058] = "honor:8295",
 			[42122] = "honor:10850",
-			[27880] = "honor:3800",
+			[45509] = "EmblemOfConquest:19",
 			[35146] = "honor:7600",
 			[40267] = "EmblemOfValor:25",
 			[50973] = "EmblemOfFrost:95",
@@ -1441,7 +1441,7 @@ AtlasLootClassicDB = {
 			[45293] = "SiderealEssence:19",
 			[42061] = "honor:8295",
 			[33937] = "honor:3990",
-			[60344] = "ValorPoints:2200",
+			[33733] = "honor:8550",
 			[28299] = "honor:9500",
 			[28331] = "honor:4750",
 			[28363] = "honor:1425",
@@ -1508,8 +1508,8 @@ AtlasLootClassicDB = {
 			[48627] = "EmblemOfTriumph:30",
 			[28300] = "honor:9500",
 			[28332] = "honor:4750",
-			[44091] = "honor:2175",
-			[48185] = "EmblemOfTriumph:50",
+			[46138] = "EmblemOfConquest:19",
+			[42044] = "honor:14931",
 			[48652] = "EmblemOfTriumph:50",
 			[48716] = "JusticePoints:2175",
 			[50827] = "EmblemOfFrost:60",
@@ -1557,8 +1557,8 @@ AtlasLootClassicDB = {
 			[35092] = "honor:7600",
 			[41297] = "EmblemOfConquest:58",
 			[45455] = "SiderealEssence:19",
-			[40888] = "honor:6895",
 			[28640] = "honor:3800",
+			[24546] = "honor:3800",
 			[32043] = "honor:5320",
 			[41310] = "EmblemOfTriumph:75",
 			[50977] = "EmblemOfFrost:60",
@@ -1686,9 +1686,9 @@ AtlasLootClassicDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -2144,22 +2144,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["classFilter"] = true,
-				["selected"] = {
-					"AtlasLootClassic_Crafting", -- [1]
-					"AlchemyCata", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"TOPRIGHT", -- [1]
-					nil, -- [2]
-					"TOPRIGHT", -- [3]
-					-215.8162841796875, -- [4]
-					-88.8571548461914, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -2175,11 +2162,24 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["classFilter"] = true,
+				["point"] = {
+					"TOPRIGHT", -- [1]
+					nil, -- [2]
+					"TOPRIGHT", -- [3]
+					-215.8162841796875, -- [4]
+					-88.8571548461914, -- [5]
+				},
+				["selected"] = {
+					"AtlasLootClassic_Crafting", -- [1]
+					"AlchemyCata", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {

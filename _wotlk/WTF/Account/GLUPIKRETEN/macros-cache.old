@@ -31,7 +31,7 @@ VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:58262
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
