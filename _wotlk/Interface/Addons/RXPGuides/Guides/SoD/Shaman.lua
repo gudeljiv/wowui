@@ -2374,7 +2374,7 @@ step
     .goto 1414,39.26,57.69
     >>Click on the |cRXP_PICK_Blue Crystal|r amongst the orange crystals to collect |T134088:0|t[Tear of Theradras]
     >>|cRXP_WARN_Be careful as enemies in this area are elite and they can stun.|r |cFFFF0000you are likely going to die multiple times|r
-    .collect 213553,1
+    .collect 213552,1
 step
     .goto 1414,38.45,57.84,25,0
     .goto 1414,38.64,57.69,25,0
@@ -2384,7 +2384,7 @@ step
     .goto 1443,27.72,57.51
     >>Click on a |cRXP_PICK_Blue Crystal|r amongst the purple crystals to collect |T134088:0|t[Tear of Theradras]
     >>|cRXP_WARN_Be careful as enemies in this area are elite and they can stun.|r |cFFFF0000you are likely going to die multiple times|r
-    .collect 213552,1
+    .collect 213553,1
 step
     #completewith next
     .zone Orgrimmar >>Travel to |cFFfa9602Orgrimmar|r
@@ -2905,9 +2905,9 @@ step
     .train 432241,1
 step
     #loop
-    .goto Azshara,19.4 64.0,20,0
-    .goto Azshara,21.2 60.8,20,0
-    .goto Azshara,21.0 60.0,20,0
+    .goto Azshara,19.4,64.0,20,0
+    .goto Azshara,21.2,60.8,20,0
+    .goto Azshara,21.0,60.0,20,0
     >>Kill |cRXP_ENEMY_Haldarr Satyr|r, |cRXP_ENEMY_Haldarr Trickster|r and |cRXP_ENEMY_Haldarr Felsworn.|r Loot them for |cRXP_LOOT_|T134331:0|tWaterlogged Shaman's Notes|r
     .collect 221351,1 --1/1 Waterlogged Shaman's Notes
     .mob Haldarr Satyr
@@ -2936,7 +2936,7 @@ step
     .train 432241,1
 step
     #completewith next
-    .zone Hinterlands >>Travel to Hinterlands
+    .zone The Hinterlands >>Travel to The Hinterlands
     .train 432241,1
 step
     #loop
@@ -2998,7 +2998,7 @@ step
     .use 221349
     .train 432241,1
 step
-    .goto Seaying Gorge,24.0,72.4
+    .goto Searing Gorge,24.0,72.4
     >>Kill |cRXP_ENEMY_Corrupt Moderate Manifestation of Fire|r then >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moderate Manifestation of Fire.|r
     .turnin 82071 >>Turn in Purifying Fire
     .accept 82074 >>Accept Answering Fire's Call

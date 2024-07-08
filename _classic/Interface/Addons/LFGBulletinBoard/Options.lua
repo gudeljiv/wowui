@@ -1,5 +1,5 @@
 local TOCNAME,
-	---@class Addon_Options : Addon_Localization
+	---@class Addon_Options : Addon_Localization, Addon_CustomFilters, Addon_Dungeons, Addon_Tags, Addon_LibGPIOptions
 	GBB= ...;
 local ChannelIDs
 local ChkBox_FilterDungeon
@@ -93,13 +93,7 @@ local function FixFilters()
 				end
 			end
 		end
-	end	
-
-	for eventName, eventData in pairs(GBB.Seasonal) do
-        if GBB.Tool.InDateRange(eventData.startDate, eventData.endDate) == false then
-			GBB.DBChar["FilterDungeon"..eventName]=false
-        end
-    end
+	end
 end
 
 local function ResetFilters()
@@ -170,7 +164,9 @@ end
 ---if the expansion is the current game client expansion, it will also include misc filters.
 ---@param expansionID ExpansionID
 local function GenerateExpansionPanel(expansionID)
-	GBB.Options.AddPanel(EXPANSION_FILTER_NAME[expansionID], false, true)
+	local panel = GBB.Options.AddPanel(EXPANSION_FILTER_NAME[expansionID], false, true)
+	-- hack: save changes anytime the panel is hidden (issues: 200, 147, 57)
+	panel:HookScript("OnHide", GBB.Options._DoOk)
 	
 	local isCurrentXpac = expansionID == PROJECT_EXPANSION_ID[WOW_PROJECT_ID];
 	local filters = {} ---@type CheckButton[]
@@ -221,8 +217,21 @@ local function GenerateExpansionPanel(expansionID)
 	-- dont include misc filters in the "select all" buttons
 	local resetLimitIdx = #filters 
 
-	-- Misc Categories (only show for current xpac)
+	-- Extra Categories (only show for current xpac)
 	if isCurrentXpac then
+		
+		-- Add any Custom user filters 
+		local customCategories = GBB.GetCustomFilterKeys()
+		if next(customCategories) then
+			GBB.Options.Indent(-10)
+			GBB.Options.AddCategory(ADDITIONAL_FILTERS)
+			GBB.Options.Indent(10)
+			for _, key in ipairs(customCategories) do
+				tinsert(filters, CheckBoxFilter(key, false))
+			end
+		end
+
+		-- Add `GBB.Misc` defined categories
 		GBB.Options.Indent(-10)
 		GBB.Options.AddCategory(OTHER)
 		GBB.Options.Indent(10)		
@@ -387,6 +396,14 @@ function GBB.OptionsInit ()
 	GenerateExpansionPanel(GBB.Enum.Expansions.Classic)
 		
 	----------------------------------------------------------
+	-- Custom Filters/Categories
+	----------------------------------------------------------
+	local customCategoriesFrame = GBB.Options.AddPanel(ADDITIONAL_FILTERS, false, true);
+	customCategoriesFrame:SetWidth(
+		InterfaceOptionsFramePanelContainer:GetWidth() - customCategoriesFrame:GetParent().ScrollBar:GetWidth()
+	);
+	-- defer Update call until after language "Tags" saved vars are initialized bellow
+	----------------------------------------------------------
 	-- Language Tags and Search Patterns
 	----------------------------------------------------------
 	GBB.Options.AddPanel(GBB.L["PanelTags"],false,true)
@@ -430,6 +447,7 @@ function GBB.OptionsInit ()
 	CreateEditBoxDungeon("DEADMINES","",445,200)
 	GBB.Options.Indent(-10)
 
+	GBB.UpdateAdditionalFiltersPanel(customCategoriesFrame); -- update the custom filters panel now.
 	----------------------------------------------------------	
 	-- localization
 	----------------------------------------------------------

@@ -195,6 +195,10 @@ local CasterCaps = { HitCapSpell }
 
 local specInfo = {}
 
+local function CreateIconMarkup(icon)
+  return CreateSimpleTextureMarkup(icon, 18, 18) .. " "
+end
+
 do
   local specs = {
     DEATHKNIGHTBlood = 398,
@@ -229,7 +233,7 @@ do
     WARRIORProtection = 845,
   }
 
-  for k,v in pairs(specs) do
+  for _,v in pairs(specs) do
     local _, tabName, _, icon = GetSpecializationInfoForSpecID(v)
     specInfo[v] = { name = tabName, icon = icon }
   end
@@ -270,77 +274,32 @@ do
         },
       },
       [specs.DEATHKNIGHTFrost] = {
-        [ENCHSLOT_2HWEAPON] = {
+        [GetSpellInfo(49020)] = { -- Obliterate
+          icon = 135771,
           weights = {
-            0, 0, 0, 201, 115, 129, 163, 126
+            0, 0, 0, 200, 120, 160, 50, 90
           },
-          caps = MeleeCaps,
+          caps = { HitCap },
         },
-        [GetSpellInfo(674) .. " (Oblit)"] = {
-          weights = {
-            0, 0, 0, 229, 116, 147, 164, 144
-          },
-          caps = {
-            {
-              stat = StatHit,
-              points = {
-                {
-                  method = AtLeast,
-                  preset = CAPS.MeleeHitCap,
-                  after = 106,
-                },
-                {
-                  preset = CAPS.MeleeDWHitCap,
-                },
-              },
-            },
-            {
-              stat = StatExp,
-              points = {
-                {
-                  method = AtLeast,
-                  preset = CAPS.ExpSoftCap,
-                },
-              },
-            },
-          },
-        },
-        [GetSpellInfo(674) .. " (Masterfrost)"] = {
+        ["Masterfrost"] = {
+          icon = 135833,
           weights = {
             0, 0, 0, 200, 120, 150, 100, 180
           },
-          caps = {
-            {
-              stat = StatHit,
-              points = {
-                {
-                  method = AtLeast,
-                  preset = CAPS.SpellHitCap,
-                  after = 106,
-                },
-                {
-                  method = AtMost,
-                  preset = CAPS.MeleeHitCap,
-                },
-              },
-            },
-          },
+          caps = CasterCaps
         },
       },
-      [specs.DEATHKNIGHTUnholy] = {
-        [PLAYER_DIFFICULTY1] = {
-          weights = {
+      [specs.DEATHKNIGHTUnholy] = function()
+        local gurth = C_Item.IsEquippedItem(77191) or C_Item.IsEquippedItem(78478) or C_Item.IsEquippedItem(78487)
+        return {
+          weights = gurth and {
+            0, 0, 0, 200, 120, 160, 100, 130
+          } or {
             0, 0, 0, 200, 130, 160, 100, 110
           },
           caps = { HitCap },
-        },
-        ["|T"..(C_Item.GetItemIconByID(78478) or "error")..":0|t " .. (C_Item.GetItemNameByID(78478) or "Gurthalak, Voice of the Deeps")] = {
-          weights = {
-            0, 0, 0, 200, 120, 160, 100, 130
-          },
-          caps = { HitCap },
-        },
-      },
+        }
+      end,
     },
     ["DRUID"] = {
       [specs.DRUIDBalance] = {
@@ -351,7 +310,7 @@ do
       },
       [specs.DRUIDFeralCombat] = {
         [("%s (%s)"):format(GetSpellInfo(5487), TANK)] = { -- Bear
-          icon = select(3, GetSpellInfo(5487)),
+          icon = 132276,
           weights = {
             0, 54, 0, 25, 53, 7, 48, 37
           },
@@ -377,14 +336,14 @@ do
           },
         },
         [("%s (%s)"):format(GetSpellInfo(5487), STAT_DPS_SHORT)] = { -- Bear
-          icon = select(3, GetSpellInfo(5487)),
+          icon = 132276,
           weights = {
             0, -6, 0, 100, 50, 25, 100, -1
           },
           caps = MeleeCaps,
         },
         [("%s (%s)"):format(GetSpellInfo(768), "Monocat")] = { -- Cat
-          icon = select(3, GetSpellInfo(768)),
+          icon = 132115,
           weights = {
             0, 0, 0, 30, 31, 28, 30, 31
           },
@@ -410,7 +369,7 @@ do
           },
         },
         [("%s (%s)"):format(GetSpellInfo(768), "Bearweave")] = { -- Cat
-          icon = select(3, GetSpellInfo(768)),
+          icon = 132115,
           weights = {
             0, 0, 0, 33, 31, 26, 32, 30
           },
@@ -531,7 +490,7 @@ do
         },
       },
       [specs.MAGEFire] = {
-        ["15% " .. STAT_HASTE] = {
+        [PERCENTAGE_STRING:format(15) .. " " .. STAT_HASTE] = {
           weights = {
             -1, -1, -1, 5, 3, 4, -1, 1
           },
@@ -549,7 +508,7 @@ do
             },
           },
         },
-        ["25% " .. STAT_HASTE] = {
+        [PERCENTAGE_STRING:format(25) .. " " .. STAT_HASTE] = {
           weights = {
             -1, -1, -1, 5, 3, 4, -1, 1
           },
@@ -670,9 +629,6 @@ do
                 preset = CAPS.SpellHitCap,
                 after = 82,
               },
-              {
-                preset = CAPS.MeleeDWHitCap,
-              },
             },
           },
           {
@@ -708,9 +664,6 @@ do
                 preset = CAPS.SpellHitCap,
                 after = 100,
               },
-              {
-                preset = CAPS.MeleeDWHitCap,
-              },
             },
           },
         },
@@ -731,9 +684,6 @@ do
               {
                 preset = CAPS.SpellHitCap,
                 after = 80,
-              },
-              {
-                preset = CAPS.MeleeDWHitCap,
               },
             },
           },
@@ -767,9 +717,6 @@ do
                 method = AtLeast,
                 preset = CAPS.SpellHitCap,
                 after = 50,
-              },
-              {
-                preset = CAPS.MeleeDWHitCap,
               },
             },
           },
@@ -819,7 +766,7 @@ do
       },
       [specs.WARRIORFury] = {
         [GetSpellInfo(46917)] = { -- Titan's Grip
-          icon = select(3, GetSpellInfo(46917)),
+          icon = 236316,
           weights = {
             0, 0, 0, 200, 150, 100, 180, 130
           },
@@ -832,29 +779,13 @@ do
                   preset = CAPS.MeleeHitCap,
                   after = 140,
                 },
-                {
-                  value = 1300,
-                  preset = 1,
-                  after = 125
-                },
-                {
-                  preset = CAPS.MeleeDWHitCap,
-                },
               },
             },
-            {
-              stat = StatExp,
-              points = {
-                {
-                  method = AtLeast,
-                  preset = CAPS.ExpSoftCap,
-                },
-              },
-            },
+            SoftExpCap
           },
         },
         [GetSpellInfo(81099)] = { -- Single-Minded Fury
-          icon = select(3, GetSpellInfo(81099)),
+          icon = 458974,
           weights = {
             0, 0, 0, 200, 150, 100, 180, 130
           },
@@ -867,25 +798,9 @@ do
                   preset = CAPS.MeleeHitCap,
                   after = 140,
                 },
-                {
-                  value = 1300,
-                  preset = 1,
-                  after = 125
-                },
-                {
-                  preset = CAPS.MeleeDWHitCap,
-                },
               },
             },
-            {
-              stat = StatExp,
-              points = {
-                {
-                  method = AtLeast,
-                  preset = CAPS.ExpSoftCap,
-                },
-              },
-            },
+            SoftExpCap
           },
         },
       },
@@ -977,15 +892,15 @@ function ReforgeLite:InitPresets()
         info.notCheckable = true
         info.sortKey = v.name or k
         info.text = info.sortKey
-        info.isSpec = 0
+        info.prioritySort = v.prioritySort or 0
         info.value = v
         if specInfo[k] then
-          info.text = "|T"..specInfo[k].icon..":0|t " .. specInfo[k].name
+          info.text = CreateIconMarkup(specInfo[k].icon) .. specInfo[k].name
           info.sortKey = specInfo[k].name
-          info.isSpec = 1
+          info.prioritySort = -1
         end
         if v.icon then
-          info.text = "|T"..v.icon..":0|t " .. info.text
+          info.text = CreateIconMarkup(v.icon) .. info.text
         end
         if v.tip then
           info.tooltipTitle = v.tip
@@ -1007,8 +922,8 @@ function ReforgeLite:InitPresets()
         tinsert(menuList, info)
       end
       tsort(menuList, function (a, b)
-        if a.isSpec ~= b.isSpec then
-          return a.isSpec < b.isSpec
+        if a.prioritySort ~= b.prioritySort then
+          return a.prioritySort > b.prioritySort
         end
         return a.sortKey < b.sortKey
       end)
@@ -1030,6 +945,7 @@ function ReforgeLite:InitPresets()
   local exportList = {
     [REFORGE_CURRENT] = function()
       local result = {
+        prioritySort = 1,
         caps = self.pdb.caps,
         weights = self.pdb.weights,
       }

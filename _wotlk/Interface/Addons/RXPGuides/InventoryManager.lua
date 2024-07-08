@@ -5,6 +5,8 @@ local inventoryManager = {}
 addon.inventoryManager = inventoryManager
 
 local gameVersion = select(4, GetBuildInfo())
+
+local GetItemInfo = C_Item and C_Item.GetItemInfo or _G.GetItemInfo
 local GetContainerNumFreeSlots = C_Container and C_Container.GetContainerNumFreeSlots or _G.GetContainerNumFreeSlots
 local GetContainerNumSlots = C_Container and C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
 
@@ -620,7 +622,9 @@ local function ProcessJunk(sellWares,override)
         if inventoryManager.sellGoods then
             local value = GetMoney() - inventoryManager.sellGoods
             local colour = addon.guideTextColors["RXP_WARN_"]
-            print(format(L("RXPGuides: |c%sSold junk items for|r %s"),colour,GetCoinTextureString(value)))
+            if value > 0 then
+                print(format(L("RXPGuides: |c%sSold junk items for|r %s"),colour,GetCoinTextureString(value)))
+            end
             inventoryManager.sellGoods = false
         end
     elseif isMerchant then

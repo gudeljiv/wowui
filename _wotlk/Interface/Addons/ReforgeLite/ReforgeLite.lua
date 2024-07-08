@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.7.0"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.7.1"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -37,6 +37,7 @@ local gprint = print
 local function print(...)
     gprint("|cff33ff99"..addonName.."|r:",...)
 end
+addonTable.print = print
 
 local DefaultDB = {
   itemSize = 24,
@@ -293,7 +294,7 @@ function ReforgeLite:CreateItemStats()
       mgetter = function (method, orig)
         return (orig and method.orig_stats and method.orig_stats[i]) or method.stats[i]
       end,
-      parser = short and L["StatFormat"]:gsub("%%s", _G[name_]) or (ITEM_SPELL_TRIGGER_ONEQUIP .. " " .. _G[name_]:gsub("%%s", "(.+)"))
+      parser = short and L["StatFormat"]:gsub("%%s", _G[name_]) or (L["EquipPreString"] .. _G[name_]:gsub("%%s", "(.+)"))
     }
   end
   local CR_HIT, CR_CRIT, CR_HASTE = CR_HIT_SPELL, CR_CRIT_SPELL, CR_HASTE_SPELL
@@ -585,7 +586,7 @@ function ReforgeLite:CreateCategory (name)
   c.button = CreateFrame ("Button", nil, c)
   c.button:ClearAllPoints ()
   c.button:SetSize (14,14)
-  c.button:SetPoint ("TOPLEFT", c, "TOPLEFT", 0, 0)
+  c.button:SetPoint ("TOPLEFT")
   c.button:SetHighlightTexture ("Interface\\Buttons\\UI-PlusButton-Hilight")
   c.button.UpdateTexture = function (self)
     if self:GetParent ().expanded then
@@ -743,6 +744,16 @@ function ReforgeLite:FixScroll ()
   end
 end
 
+function ReforgeLite:SwapFrameLevels(window)
+  if not self.methodWindow then return end
+  local topWindow, bottomWindow = self:GetFrameOrder()
+  if (window or self) == topWindow then return end
+  bottomWindow:SetFrameLevel(topWindow:GetFrameLevel())
+  topWindow:SetFrameLevel(bottomWindow:GetFrameLevel() - 10)
+  bottomWindow:SetFrameActive(true)
+  topWindow:SetFrameActive(false)
+end
+
 function ReforgeLite:CreateFrame()
   self:InitPresets()
   self:SetFrameStrata ("DIALOG")
@@ -781,11 +792,7 @@ function ReforgeLite:CreateFrame()
   self:SetMovable (true)
   self:SetResizable (true)
   self:SetScript ("OnMouseDown", function (self, arg)
-    if self.methodWindow and self:GetFrameLevel () < self.methodWindow:GetFrameLevel () then
-      self:SetFrameLevel (self.methodWindow:GetFrameLevel () + 10)
-      self:SetFrameActive(true)
-      self.methodWindow:SetFrameActive(false)
-    end
+    self:SwapFrameLevels()
     if arg == "LeftButton" then
       self:StartMoving ()
       self.moving = true
@@ -802,9 +809,9 @@ function ReforgeLite:CreateFrame()
   tinsert(UISpecialFrames, self:GetName()) -- allow closing with escape
 
   self.title = self:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  self.title:SetPoint ("TOPLEFT", 12, -9)
-  self.title:SetTextColor (1, 1, 1)
   self.title:SetText (addonTitle)
+  self.title:SetTextColor (1, 1, 1)
+  self.title:SetPoint ("TOPLEFT", 12, floor(self.title:GetHeight()-self.titlebar:GetHeight()))
 
   self.close = CreateFrame ("Button", nil, self, "UIPanelCloseButtonNoScripts")
   self.close:SetSize(28, 28)
@@ -988,7 +995,7 @@ function ReforgeLite:AddCapPoint (i, loading)
   end
 
   local rem = GUI:CreateImageButton (self.statCaps, 20, 20, "Interface\\PaperDollInfoFrame\\UI-GearManager-LeaveItem-Transparent",
-    "Interface\\PaperDollInfoFrame\\UI-GearManager-LeaveItem-Transparent", nil, function ()
+    "Interface\\PaperDollInfoFrame\\UI-GearManager-LeaveItem-Transparent", nil, nil, function ()
     self:RemoveCapPoint (i, point)
   end)
   local methodList = {
@@ -997,8 +1004,8 @@ function ReforgeLite:AddCapPoint (i, loading)
     {value = addonTable.StatCapMethods.NewValue, name = ""}
   }
   local method = GUI:CreateDropdown (self.statCaps, methodList, 1,
-    function (val) self.pdb.caps[i].points[point].method = val end, 80)
-  local preset = GUI:CreateDropdown (self.statCaps, self.capPresets, 1, function (val)
+    function (_,val) self.pdb.caps[i].points[point].method = val end, 80)
+  local preset = GUI:CreateDropdown (self.statCaps, self.capPresets, 1, function (_,val)
     self.pdb.caps[i].points[point].preset = val
     self:UpdateCapPreset (i, point)
     self:ReorderCapPoint (i, point)
@@ -1028,6 +1035,8 @@ function ReforgeLite:AddCapPoint (i, loading)
     self:UpdateCapPoints (i)
     self:UpdateContentSize ()
   end
+  self.statCaps[i].add:Enable()
+  self.statCaps:OnUpdateFix()
 end
 function ReforgeLite:RemoveCapPoint (i, point, loading)
   local row = #self.pdb.caps[1].points + (i == 1 and 1 or #self.pdb.caps[2].points + 2)
@@ -1036,6 +1045,9 @@ function ReforgeLite:RemoveCapPoint (i, point, loading)
   if not loading then
     self:UpdateCapPoints (i)
     self:UpdateContentSize ()
+  end
+  if #self.pdb.caps[i].points == 0 then
+    self.statCaps[i].add:Disable()
   end
 end
 function ReforgeLite:ReorderCapPoint (i, point)
@@ -1121,7 +1133,6 @@ function ReforgeLite:SetStatWeights (weights, caps)
       else
         self.pdb.caps[i].stat = 0
         self.pdb.caps[i].points = {}
-        self:AddCapPoint (i)
       end
     end
     self:UpdateCapPoints (1)
@@ -1177,14 +1188,14 @@ function ReforgeLite:UpdateStatWeightList ()
     self.statWeights:SetCell (1, 3, self.statWeights.buffs.strength, "LEFT")
     self.statWeights.buffs.flask = GUI:CreateDropdown (self.statWeights,
       {{value = 0, name = L["Other/No flask"]}, {value = 1, name = "300" .. ITEM_MOD_STRENGTH_SHORT},
-       {value = 2, name = "225" .. ITEM_MOD_MASTERY_RATING_SHORT}}, self.pdb.buffs.flask or 0, function (val)
+       {value = 2, name = "225" .. ITEM_MOD_MASTERY_RATING_SHORT}}, self.pdb.buffs.flask or 0, function (_,val)
       self.pdb.buffs.flask = (val ~= 0 and val)
       self:RefreshMethodStats ()
     end, 125)
     self.statWeights.buffs.food = GUI:CreateDropdown (self.statWeights,
       {{value = 0, name = L["Other/No food"]}, {value = 1, name = "90" .. ITEM_MOD_MASTERY_RATING_SHORT},
        {value = 2, name = "90" .. ITEM_MOD_DODGE_RATING_SHORT}, {value = 3, name = "90" .. ITEM_MOD_PARRY_RATING_SHORT},
-       {value = 4, name = "90" .. ITEM_MOD_STRENGTH_SHORT},{value = 5, name = "40" .. ITEM_MOD_STRENGTH_SHORT}}, self.pdb.buffs.food or 0, function (val)
+       {value = 4, name = "90" .. ITEM_MOD_STRENGTH_SHORT},{value = 5, name = "40" .. ITEM_MOD_STRENGTH_SHORT}}, self.pdb.buffs.food or 0, function (_,val)
       self.pdb.buffs.food = (val ~= 0 and val)
       self:RefreshMethodStats ()
     end, 125)
@@ -1262,7 +1273,7 @@ function ReforgeLite:CreateOptionList ()
   self:SetAnchor (self.statWeightsCategory, "TOPLEFT", self.content, "TOPLEFT", 2, -2)
 
   self.presetsButton = GUI:CreateImageButton (self.content, 24, 24, "Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up",
-    "Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down", "Interface\\Buttons\\UI-Common-MouseHilight", function (btn)
+    "Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down", "Interface\\Buttons\\UI-Common-MouseHilight", nil, function (btn)
     LibDD:ToggleDropDownMenu (nil, nil, self.presetMenu, btn:GetName(), 0, 0)
   end)
   self.statWeightsCategory:AddFrame (self.presetsButton)
@@ -1314,7 +1325,7 @@ function ReforgeLite:CreateOptionList ()
   self.statWeightsCategory:AddFrame (self.convertSpirit)
   self.convertSpirit.text = self.convertSpirit:CreateFontString (nil, "OVERLAY", "GameFontNormal")
   self.convertSpirit.text:SetPoint ("LEFT", self.pawnButton, "RIGHT", 8, 0)
-  self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": 0%")
+  self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": "..PERCENTAGE_STRING:format(0))
 
   if playerClass == "PALADIN" or playerClass == "WARRIOR" or playerClass == "DEATHKNIGHT" then
     self.tankingModel = GUI:CreateCheckButton (self.content, STAT_AVOIDANCE .. " " ..PARENS_TEMPLATE:format(localeClass),
@@ -1372,9 +1383,18 @@ function ReforgeLite:CreateOptionList ()
   for i = 1, 2 do
     self.statCaps[i] = {}
     self.statCaps[i].stat = GUI:CreateDropdown (self.statCaps, statList, self.pdb.caps[i].stat,
-      function (val) self.pdb.caps[i].stat = val end, 110)
+      function (dropdown, val)
+        if val == 0 then
+          while #self.pdb.caps[i].points > 0 do
+            self:RemoveCapPoint (i, 1)
+          end
+        elseif dropdown.value == 0 then
+          self:AddCapPoint(i)
+        end
+        self.pdb.caps[i].stat = val
+      end, 110)
     self.statCaps[i].add = GUI:CreateImageButton (self.statCaps, 20, 20, "Interface\\Buttons\\UI-PlusButton-Up",
-      "Interface\\Buttons\\UI-PlusButton-Down", "Interface\\Buttons\\UI-PlusButton-Hilight", function ()
+      "Interface\\Buttons\\UI-PlusButton-Down", "Interface\\Buttons\\UI-PlusButton-Hilight", "Interface\\Buttons\\UI-PlusButton-Disabled", function()
       self:AddCapPoint (i)
     end)
     GUI:SetTooltip (self.statCaps[i].add, L["Add cap"])
@@ -1382,10 +1402,13 @@ function ReforgeLite:CreateOptionList ()
     self.statCaps:SetCell (i, 2, self.statCaps[i].add, "LEFT")
   end
   for i = 1, 2 do
-    for point = 1, #self.pdb.caps[i].points do
+    for point in ipairs(self.pdb.caps[i].points) do
       self:AddCapPoint (i, point)
     end
     self:UpdateCapPoints (i)
+    if self.pdb.caps[i].stat == 0 then
+      self:RemoveCapPoint(i)
+    end
   end
   self.statCaps.onUpdate = function ()
     local row = 1
@@ -1517,11 +1540,11 @@ function ReforgeLite:CreateOptionList ()
     ReforgeLite:UpdateMethodCategory ()
   end
 end
-function ReforgeLite:GetActiveFrame()
+function ReforgeLite:GetFrameOrder()
   if self.methodWindow and self.methodWindow:IsShown() and self.methodWindow:GetFrameLevel () > self:GetFrameLevel() then
-    return self.methodWindow
+    return self.methodWindow, self
   end
-  return self
+  return self, self.methodWindow
 end
 function ReforgeLite:FillSettings ()
   self.settings:SetCell (getOrderId('settings'), 0, GUI:CreateCheckButton (self.settings, L["Open window when reforging"],
@@ -1532,13 +1555,16 @@ function ReforgeLite:FillSettings ()
   local activeWindowTitleOrderId = getOrderId('settings')
   self.settings:SetCellText (activeWindowTitleOrderId, 0, L["Active window color"], "LEFT", nil, "GameFontNormal")
   self.settings:SetCell (activeWindowTitleOrderId, 1, GUI:CreateColorPicker (self.settings, 20, 20, self.db.activeWindowTitle, function ()
-    self:GetActiveFrame():SetFrameActive(true)
+    self:GetFrameOrder():SetFrameActive(true)
   end), "LEFT")
 
   local inactiveWindowTitleOrderId = getOrderId('settings')
   self.settings:SetCellText (inactiveWindowTitleOrderId, 0, L["Inactive window color"], "LEFT", nil, "GameFontNormal")
   self.settings:SetCell (inactiveWindowTitleOrderId, 1, GUI:CreateColorPicker (self.settings, 20, 20, self.db.inactiveWindowTitle, function ()
-    self:GetActiveFrame():SetFrameActive(false)
+    local _, inactiveWindow = self:GetFrameOrder()
+    if inactiveWindow then
+      inactiveWindow:SetFrameActive(false)
+    end
   end), "LEFT")
 
   self.debugButton = CreateFrame ("Button", nil, self.settings, "UIPanelButtonTemplate")
@@ -1725,7 +1751,7 @@ function ReforgeLite:RefreshMethodStats (relax)
         if v.percent then
           self.methodStats[i].value:SetText (format ("%.2f%%", mvalue))
         else
-          self.methodStats[i].value:SetText (format ("%s", mvalue))
+          self.methodStats[i].value:SetText (mvalue)
         end
         local override
         mvalue = v.mgetter (self.pdb.method, true)
@@ -1906,7 +1932,7 @@ function ReforgeLite:UpdateItems ()
     self.s2hFactor = pts * 50
   end
   if self.s2hFactor > 0 then
-    self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": " .. self.s2hFactor .. "%")
+    self.convertSpirit.text:SetText (L["Spirit to hit"] .. ": " .. PERCENTAGE_STRING:format(self.s2hFactor))
     self.convertSpirit.text:Show ()
   else
     self.convertSpirit.text:Hide ()
@@ -1938,7 +1964,6 @@ function ReforgeLite:ShowMethodWindow ()
   if not self.methodWindow then
     self.methodWindow = CreateFrame ("Frame", "ReforgeLiteMethodWindow", UIParent, "BackdropTemplate")
     self.methodWindow:SetFrameStrata ("DIALOG")
-    self.methodWindow:SetFrameLevel (self:GetFrameLevel () + 10)
     self.methodWindow:ClearAllPoints ()
     self.methodWindow:SetSize(250, 506)
     if self.db.methodWindowX and self.db.methodWindowY then
@@ -1968,11 +1993,7 @@ function ReforgeLite:ShowMethodWindow ()
     self.methodWindow:EnableMouse (true)
     self.methodWindow:SetMovable (true)
     self.methodWindow:SetScript ("OnMouseDown", function (window, arg)
-      if window:GetFrameLevel () < self:GetFrameLevel () then
-        window:SetFrameLevel (self:GetFrameLevel () + 10)
-        window:SetFrameActive(true)
-        self:SetFrameActive(false)
-      end
+      self:SwapFrameLevels(window)
       if arg == "LeftButton" then
         window:StartMoving ()
         window.moving = true
@@ -1989,9 +2010,9 @@ function ReforgeLite:ShowMethodWindow ()
     tinsert(UISpecialFrames, self.methodWindow:GetName()) -- allow closing with escape
 
     self.methodWindow.title = self.methodWindow:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-    self.methodWindow.title:SetPoint ("TOPLEFT", 10, -8)
-    self.methodWindow.title:SetTextColor (1, 1, 1)
     self.methodWindow.title:SetText (addonTitle.." Output")
+    self.methodWindow.title:SetTextColor (1, 1, 1)
+    self.methodWindow.title:SetPoint ("TOPLEFT", 12, self.methodWindow.title:GetHeight()-self.methodWindow.titlebar:GetHeight())
 
     self.methodWindow.close = CreateFrame ("Button", nil, self.methodWindow, "UIPanelCloseButtonNoScripts")
     self.methodWindow.close:SetPoint ("TOPRIGHT")
@@ -2091,7 +2112,7 @@ function ReforgeLite:ShowMethodWindow ()
     self.methodOverride[i] = 0
   end
 
-  self.methodWindow:SetFrameLevel (self:GetFrameLevel () + 10)
+  self.methodWindow:SetFrameLevel(self:GetFrameLevel() + 10)
 
   for i, v in ipairs (self.methodWindow.items) do
     local item = Item:CreateFromEquipmentSlot(v.slotId)

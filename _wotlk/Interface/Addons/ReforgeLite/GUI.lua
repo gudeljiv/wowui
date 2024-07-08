@@ -108,8 +108,8 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
         info.text = dropdown.values[i].name
         info.func = function (inf)
           LibDD:UIDropDownMenu_SetSelectedValue (dropdown, inf.value)
+          if dropdown.setter then dropdown.setter (dropdown,inf.value) end
           dropdown.value = inf.value
-          if dropdown.setter then dropdown.setter (inf.value) end
         end
         info.value = dropdown.values[i].value
         info.checked = (dropdown.value == dropdown.values[i].value)
@@ -118,6 +118,7 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
     end)
     sel.SetValue = function (dropdown, value)
       dropdown.value = value
+      dropdown.selectedValue = value
       for i = 1, #dropdown.values do
         if dropdown.values[i].value == value then
           LibDD:UIDropDownMenu_SetText (dropdown, dropdown.values[i].name)
@@ -139,6 +140,10 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
       frame:SetScript ("OnEnter", nil)
       frame:SetScript ("OnLeave", nil)
       frame.setter = nil
+      frame.value = nil
+      frame.selectedName = nil
+      frame.selectedID = nil
+      frame.selectedValue = nil
       tinsert (self.dropdowns, frame)
     end
   end
@@ -182,7 +187,7 @@ function GUI:CreateCheckButton (parent, text, default, setter)
 end
 
 GUI.imgButtons = {}
-function GUI:CreateImageButton (parent, width, height, img, pus, hlt, handler)
+function GUI:CreateImageButton (parent, width, height, img, pus, hlt, disabledTexture, handler)
   local btn
   if #self.imgButtons > 0 then
     btn = tremove (self.imgButtons, 1)
@@ -201,9 +206,8 @@ function GUI:CreateImageButton (parent, width, height, img, pus, hlt, handler)
   end
   btn:SetNormalTexture (img)
   btn:SetPushedTexture (pus)
-  if hlt then
-    btn:SetHighlightTexture (hlt)
-  end
+  btn:SetHighlightTexture (hlt or img)
+  btn:SetDisabledTexture(disabledTexture or img)
   btn:SetSize(width, height)
   if handler then
     btn:SetScript ("OnClick", handler)

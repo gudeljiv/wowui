@@ -1,7 +1,8 @@
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
+#groupweight 9
 #name 1 BfA Intro
 #displayname Chapter 1 - BfA Intro
 #next 1 Horde Silverpine Forest Fresh;1 Horde Draenor Scenario
@@ -31,10 +32,55 @@ step << DK !Orc !Undead !Tauren !Troll !BloodElf !Goblin
 .goto 1602,49.96,38.98
 >>Take the Death Gate to Orgrimmar
 .complete 58903,2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+step
+#veteran
+.goto 85,40.83,80.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
+>>|cRXP_WARN_Select "Battle for Azeroth" Campaign|r
+*|cRXP_WARN_It's possible that it bugs out and doesn't give you the quest. If this is the case select a different campaign and swap back to the "Battle for Azeroth" one until you get the quest|r
+.turnin 62568 >>Turn in Adventurers Wanted: Chromie's Call
+.accept 51443 >>Accept Battle for Azeroth: Mission Statement
+.target Chromie
+.skipgossip
+.isOnQuest 62568
+.isQuestAvailable 60360
+.zoneskip 85,1
+step
+#veteran
+.goto 85,40.83,80.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
+>>|cRXP_WARN_Select "Battle for Azeroth" Campaign|r
+*|cRXP_WARN_It's possible that it bugs out and doesn't give you the quest. If this is the case select a different campaign and swap back to the "Battle for Azeroth" one until you get the quest|r
+.accept 51443 >>Accept Battle for Azeroth: Mission Statement
+.target Chromie
+.skipgossip
+.isQuestAvailable 60360
+.zoneskip 85,1
 step
 .goto 85,49.40,76.58
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Warchief's Herald|r
-.accept 51443 >>Accept Battle for Azeroth: Mission Statement
 .target Warchief's Herald
 .isQuestAvailable 60360
 #fresh
@@ -45,28 +91,6 @@ step
 .complete 51443,1 
 .isQuestAvailable 60360
 #fresh
-step
-#veteran
-.goto 85,40.83,80.16
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
->>|cRXP_WARN_Select "Draenor" Campaign|r
-.turnin 62568 >>Turn in Adventurers Wanted: Chromie's Call
-.accept 34398 >>Accept Warlords of Draenor: The Dark Portal
-.target Chromie
-.skipgossip
-.isOnQuest 62568
-.isQuestAvailable 60360
-.zoneskip 85,1
-step
-#veteran
-.goto 85,40.83,80.16
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
->>|cRXP_WARN_Select "Draenor" Campaign|r
-.accept 34398 >>Accept Warlords of Draenor: The Dark Portal
-.target Chromie
-.skipgossip
-.isQuestAvailable 60360
-.zoneskip 85,1
 step
 .goto 85,49.40,76.58
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Warchief's Herald|r
@@ -90,13 +114,13 @@ step
 .goto 85,53.56,78.79
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gryshka|r
 .home >>Set your Hearthstone to The Broken Tusk
->>|cFF0E8312Buy food/water if needed|r
+>>|cRXP_BUY_Buy food/water if needed|r
 .target Innkeeper Gryshka
 .zoneskip 85,1
 step
 #veteran
 #label DMFBuyAHItems
->>|cFF0E8312Buy the following items from the auction house or send them to yourself via mail|r
+>>|cRXP_BUY_Buy the following items from the auction house or send them to yourself via mail|r
 >>|cRXP_WARN_This step is optional and you don't need to buy the items if you don't want to/can't afford it|r
 +|cRXP_WARN_Manually skip this step when you're done|r
 .goto 85,53.98,73.26
@@ -120,7 +144,7 @@ step << !Goblin !DK
 #completewith DMFDarkmoonPortalTaken
 .goto 85,53.83,82.60
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Trak'gen|r
-.vendor >>|cFF0E8312Buy|r |T133634:0|t[Brown Leather Satchels] |cFF0E8312from him|r
+.vendor >>|cRXP_BUY_Buy|r |T133634:0|t[Brown Leather Satchels] |cRXP_BUY_from him|r
 >>|cRXP_WARN_Skip this step if you already have better bags|r
 .target Trak'gen
 
@@ -145,7 +169,7 @@ step
 .dmf
 step
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tClick the Strider if you don't have an Heirloom Mount
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kae Ti|r. |cFF0E8312Buy a|r |T133734:0|t[Ride Ticket Book] |cFF0E8312from her|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kae Ti|r. |cRXP_BUY_Buy a|r |T133734:0|t[Ride Ticket Book] |cRXP_BUY_from her|r
 .goto 407,50.44,59.33
 .collect 92788,1,7926,1 
 .target Kae Ti
@@ -247,7 +271,7 @@ step
 .dmf
 step
 .goto 407,47.76,64.76
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gelvas|r. |cFF0E8312Buy as many|r |T669449:0|t[Darkmoon Top Hats] |cFF0E8312from him as you can|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gelvas|r. |cRXP_BUY_Buy as many|r |T669449:0|t[Darkmoon Top Hats] |cRXP_BUY_from him as you can|r
 .turnin 7926 >>Turn in The Darkmoon Faire
 .collect 171364,1,29506,1 
 .target Gelvas Grimegate
@@ -545,7 +569,7 @@ step
 .goto 1165,49.94,85.84,40,0
 .goto 1165,48.89,83.91,40,0
 .goto 1165,49.98,82.33
->>Stay close to Talanji else she will stop moving
+>>|cRXP_WARN_Stay close to |cRXP_FRIENDLY_Princess Talanji|r else she will stop moving|r
 .complete 46957,1 
 .target Princess Talanji
 .zoneskip 1164
@@ -612,7 +636,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 1 Horde Silverpine Forest Fresh
 #displayname Chapter 2 - Silverpine Forest
@@ -1485,7 +1509,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 7
+#version 9
 #group RestedXP Horde 10-60
 #name 1 Horde Zuldazar First Half
 #displayname Chapter 3 - Zuldazar Beginning
@@ -1526,7 +1550,7 @@ step
 #completwith next
 >>Mount |cRXP_FRIENDLY_Ata the Winglord|r
 .goto 1164,49.94,43.13
-.complete 49615,1 
+.complete 49488,1 
 .target Ata the Winglord
 step
 .goto 862,62.82,32.56
@@ -1846,7 +1870,16 @@ step
 .target Marksman Julyen
 step
 >>Kill |cRXP_ENEMY_Venomous Diemetradons|r
-.loop 40,862,68.00,26.14,68.86,25.70,68.80,25.22,68.41,25.03,68.56,24.19,67.78,24.33,67.41,24.86,68.00,26.14
+#loop
+.line 862,68.00,26.14,68.86,25.70,68.80,25.22,68.41,25.03,68.56,24.19,67.78,24.33,67.41,24.86,68.00,26.14
+.goto 862,68.00,26.14,40,0
+.goto 862,68.86,25.70,40,0
+.goto 862,68.80,25.22,40,0
+.goto 862,68.41,25.03,40,0
+.goto 862,68.56,24.19,40,0
+.goto 862,67.78,24.33,40,0
+.goto 862,67.41,24.86,40,0
+.goto 862,68.00,26.14,40,0
 .complete 47583,1 
 .mob Venomous Diemetradons
 step
@@ -2055,7 +2088,7 @@ step
 .goto 1165,44.29,16.71
 .mob Guardian of the Dead
 step
->>>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tClimb the pyramid and talk to |cRXP_FRIENDLY_Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tClimb the pyramid and talk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,46.06,15.65,14,0
 .goto 1165,46.11,13.07
 .turnin 47437 >>Turn in Competitive Devotion
@@ -2347,7 +2380,19 @@ step
 .complete 47312,1 
 .mob Queenfeather
 step
-.loop 30,862,71.36,41.35,71.40,40.68,70.72,39.81,70.76,39.47,70.48,38.95,70.00,39.24,70.00,40.50,70.13,40.39,70.53,40.62,70.82,40.94,71.36,41.35
+#loop
+.line 862,71.36,41.35,71.40,40.68,70.72,39.81,70.76,39.47,70.48,38.95,70.00,39.24,70.00,40.50,70.13,40.39,70.53,40.62,70.82,40.94,71.36,41.35
+.goto 862,71.36,41.35,30,0
+.goto 862,71.40,40.68,30,0
+.goto 862,70.72,39.81,30,0
+.goto 862,70.76,39.47,30,0
+.goto 862,70.48,38.95,30,0
+.goto 862,70.00,39.24,30,0
+.goto 862,70.00,40.50,30,0
+.goto 862,70.13,40.39,30,0
+.goto 862,70.53,40.62,30,0
+.goto 862,70.82,40.94,30,0
+.goto 862,71.36,41.35,30,0
 >>|cRXP_WARN_Use your Extra Action Button ON COOLDOWN on |cRXP_ENEMY_Savagemane Ravasaurs|r and |cRXP_ENEMY_Invasive Eggsnatchers|r|r
 >>Loot the |cRXP_PICK_Steaming Fresh Carrions|r on the ground
 .complete 47311,1 
@@ -2819,12 +2864,44 @@ step
 .target Crosh
 step
 #label TortollanScrolls
-.loop 45,862,77.44,63.72,76.80,64.28,76.10,65.58,76.61,65.68,76.48,65.95,76.13,66.67,74.99,66.58,74.73,66.00,74.41,66.54,74.19,65.91,73.75,66.40,73.80,65.68,74.13,65.03,74.63,65.16,77.44,63.72
+#loop
+.line 862,77.44,63.72,76.80,64.28,76.10,65.58,76.61,65.68,76.48,65.95,76.13,66.67,74.99,66.58,74.73,66.00,74.41,66.54,74.19,65.91,73.75,66.40,73.80,65.68,74.13,65.03,74.63,65.16,77.44,63.72
+.goto 862,77.44,63.72,45,0
+.goto 862,76.80,64.28,45,0
+.goto 862,76.10,65.58,45,0
+.goto 862,76.61,65.68,45,0
+.goto 862,76.48,65.95,45,0
+.goto 862,76.13,66.67,45,0
+.goto 862,74.99,66.58,45,0
+.goto 862,74.73,66.00,45,0
+.goto 862,74.41,66.54,45,0
+.goto 862,74.19,65.91,45,0
+.goto 862,73.75,66.40,45,0
+.goto 862,73.80,65.68,45,0
+.goto 862,74.13,65.03,45,0
+.goto 862,74.63,65.16,45,0
+.goto 862,77.44,63.72,45,0
 >>Kill |cRXP_ENEMY_Nazeshi Tempest-Wielders|r. Loot them for their |cRXP_LOOT_scrolls|r
 .complete 49288,1 
 .mob Nazeshi Tempest-Wielder
 step
-.loop 45,862,77.44,63.72,76.80,64.28,76.10,65.58,76.61,65.68,76.48,65.95,76.13,66.67,74.99,66.58,74.73,66.00,74.41,66.54,74.19,65.91,73.75,66.40,73.80,65.68,74.13,65.03,74.63,65.16,77.44,63.72
+#loop
+.line 862,77.44,63.72,76.80,64.28,76.10,65.58,76.61,65.68,76.48,65.95,76.13,66.67,74.99,66.58,74.73,66.00,74.41,66.54,74.19,65.91,73.75,66.40,73.80,65.68,74.13,65.03,74.63,65.16,77.44,63.72
+.goto 862,77.44,63.72,45,0
+.goto 862,76.80,64.28,45,0
+.goto 862,76.10,65.58,45,0
+.goto 862,76.61,65.68,45,0
+.goto 862,76.48,65.95,45,0
+.goto 862,76.13,66.67,45,0
+.goto 862,74.99,66.58,45,0
+.goto 862,74.73,66.00,45,0
+.goto 862,74.41,66.54,45,0
+.goto 862,74.19,65.91,45,0
+.goto 862,73.75,66.40,45,0
+.goto 862,73.80,65.68,45,0
+.goto 862,74.13,65.03,45,0
+.goto 862,74.63,65.16,45,0
+.goto 862,77.44,63.72,45,0
 >>Kill |cRXP_ENEMY_Murlocs|r and |cRXP_ENEMY_Nagas|r. Run on top of |cRXP_FRIENDLY_Tadpoles|r to scare them
 .complete 49315,1 
 step
@@ -2913,7 +2990,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 1 Horde Draenor Scenario
 #displayname Chapter 2 - Draenor Scenario
@@ -2921,58 +2998,81 @@ RXPGuides.RegisterGuide([[
 #veteran
 << Horde
 step
-#completewith AcceptDraenorChromieTime
+#completewith AcceptTheDarkPortal
 +Welcome to the RestedXP Veteran Guide! It will guide you to level 60 as fast as possible. |cRXP_WARN_ALWAYS read the instructions, especially the orange ones|r.
 step
 .goto 1163,74.00,69.92
 .zone 85 >> Take the portal to Orgrimmar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 step
-.isOnQuest 62568
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
-.target Chromie
-.goto 85,40.83,80.16
-.turnin 62568 >>Turn in Adventurers Wanted: Chromie's Call
-step
-#label AcceptDraenorChromieTime
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo to |cRXP_FRIENDLY_Chromie|r, talk to her and select |cRXP_PICK_Draenor|r
-.goto 85,43.60,73.14,100,0
-.goto 85,40.80,80.12
-.skipgossip 1
-.accept 34398 >>Accept Warlords of Draenor: The Dark Portal
-.target Chromie
-step
-#label TalkToVanguardBattlemageDraenor
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tFollow the arrow. Talk to the |cRXP_FRIENDLY_Vanguard Battlemage|r downstairs
+#completewith next
+>>|cRXP_WARN_Follow the arrow.|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Thrallmar Battlemage|r downstairs
 .goto 85,54.81,89.85,8,0
 .goto 85,54.64,87.10,8,0
 .goto 85,56.03,86.99,8,0
-.goto 85,55.83,91.44
-.skipgossip
-.complete 34398,1 
-.target Vanguard Battlemage
+.goto 85,57.14,90.69
+.skipgossip 1
+.zone 17 >>Travel to the Blasted Lands
+.target Thrallmar Mage
 step
-.itemcount 132516,1
-#completewith BlastedLandsTheDarkPortal
-.cooldown item,132516,>0,1
-.cast 202844 >>Use |T1405809:0|t[Gunshoes]
-step
-#completewith next
-.goto 17,68.41,50.82,20,0
-.goto 17,63.25,49.60,30,0
-.goto 17,61.13,52.26,30,0
-.goto 17,58.86,52.55,30,0
-+If you can't fly then follow the path over the mountains.
-*Wait for the patroll to leave if you have to
-step
-#completewith next
-+You can skip the next cutscene (Esc -> Yes)
-step
-#label BlastedLandsTheDarkPortal
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dadgar|r
+#label AcceptTheDarkPortal
+.goto 17,54.93,50.26
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Khadgar|r
+.accept 36881 >>Accept Warlords of Draenor: The Dark Portal
 .target Archmage Khadgar
-.goto 17,54.92,50.43
-.skipgossip
-.complete 34398,2 
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Khadgar|r |cRXP_WARN_and accept the popup|r
+.skipgossip 78423,1,1
+.goto 17,54.93,50.26
+.complete 36881,1 
+.target Archmage Khadgar
 step
 .goto 577,54.79,48.28
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Khadgar|r
@@ -3083,7 +3183,7 @@ step
 step
 #completewith next
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tOpen the |cRXP_PICK_cage|r
-.goto 577,61.02,62.77
+.goto 577,61.02,62.77,0
 .complete 34421,2 
 step
 >>Use the |T132839:0|t[Lucifrium Bead] to burn the missing |cRXP_PICK_huts|r
@@ -3091,6 +3191,7 @@ step
 .goto 577,61.43,61.97,0,0
 .complete 34422,1 
 step
+>>|TInterface/GossipFrame/HealerGossipIcon:0|tOpen the |cRXP_PICK_cage|r
 .goto 577,61.02,62.77
 .complete 34421,2 
 step
@@ -3153,7 +3254,7 @@ step
 .turnin 34425 >>Turn in The Kargathar Proving Grounds
 .accept 34427 >>Accept A Potential Ally
 step
->>Use the 'Frostfire Focus' near the fire
+>>Use the |T252270:0|t[Frostfire Focus] near the fire
 *Spam use the item if you have a bleed on you.
 .use 110799
 .goto 577,68.91,33.73
@@ -3168,13 +3269,14 @@ step
 .target Farseer Drek'Thar
 .target Archmage Khadgar
 step
->>Wait for the others for roughly 20 seconds
+>>Wait at the waypoint location for roughly 20 seconds
 .goto 577,73.38,27.13
 .complete 34429,1 
 step
->>Kill everything and anything!
+>>Kill the |cRXP_ENEMY_Shattered Hand Brawlers|r
 .goto 577,73.37,27.40
 .complete 34429,2,99 
+.mob Shattered Hand Brawler
 step
 #completewith next
 +You can skip the next cutscene (Esc -> Yes)
@@ -3190,8 +3292,9 @@ step
 .turnin 34429 >>Turn in Kill Your Hundred
 .goto 578,81.31,50.26
 .accept 34739 >>Accept The Shadowmoon Clan
+.goto 578,81.56,44.78
 .accept 34737 >>Accept Masters of Shadow
-.goto 578,82.32,44.55
+.goto 578,82.90,44.35
 .target Archmage Khadgar
 .target Thrall
 .target Luuka
@@ -3234,18 +3337,21 @@ step
 .mob Ungra
 step
 #requires TanaanJungleIntroEnemyUmbralHalls
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Liadrin|r, |cRXP_FRIENDLY_Yrel|r and |cRXP_FRIENDLY_Olin Umberhide|r
-.goto 578,50.95,47.85
-.turnin 34737 >>Turn in Masters of Shadow
-.turnin 34740 >>Turn in Yrel
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Olin Umberhide|r, |cRXP_FRIENDLY_Yrel|r, and |cRXP_FRIENDLY_Lady Liadrin|r
 .turnin 34739 >>Turn in The Shadowmoon Clan
+.goto 578,51.19,46.86
+.turnin 34740 >>Turn in Yrel
+.goto 578,50.55,48.28
+.turnin 34737 >>Turn in Masters of Shadow
 .accept 34741 >>Accept Keli'dan the Breaker
-.target Lady Liadrin
-.target Yrel
+.goto 578,50.13,48.25
 .target Olin Umberhide
+.target Yrel
+.target Lady Liadrin
 step
 >>Kill |cRXP_ENEMY_Keli'dan|r
-*|cRXP_WARN_Talent info some self healing or a pet before pulling him (without Heirlooms)|r. Hold your interrupt/stun for his ability 'Void Vacuum'. Drag him away from the totems otherwise he will deal a lot more damage
+*|cRXP_WARN_Talent info some self healing or a pet before pulling him (without Heirlooms)|r. Hold your interrupt/stun for his ability 'Void Vacuum'.
+*|cRXP_WARN_Drag him away from the totems otherwise he will deal a lot more damage|r
 .goto 578,36.30,48.95
 .complete 34741,1 
 .mob Keli'dan the Breaker
@@ -3303,11 +3409,12 @@ step
 .turnin 34439 >>Turn in The Battle of the Forge
 .accept 34442 >>Accept Ga'nar of the Frostwolf
 step
-.goto 577,44.02,29.49
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hansel Heavyhands|r and |cRXP_FRIENDLY_Thaelin Darkanvil|r
 .accept 34987 >>Accept The Gunpowder Plot
-.accept 34958 >>Accept The Shadow of the Worldbreaker
+.goto 577,44.10,29.54
 .target Hansel Heavyhands
+.accept 34958 >>Accept The Shadow of the Worldbreaker
+.goto 577,44.07,29.69
 .target Thaelin Darkanvil
 step
 #sticky
@@ -3358,9 +3465,10 @@ step
 step
 #requires TanaanJungleIntroWorldbreakerSchematics
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thaelin Darkanvil|r and |cRXP_FRIENDLY_Hansel Heavyhands|r
-.goto 577,44.05,29.54
 .turnin 34958 >>Turn in The Shadow of the Worldbreaker
+.goto 577,44.09,29.69
 .turnin 34987 >>Turn in The Gunpowder Plot
+.goto 577,44.09,29.56
 .target Thaelin Darkanvil
 .target Hansel Heavyhands
 step
@@ -3386,7 +3494,7 @@ step
 .cast 202844 >>Use |T1405809:0|t[Gunshoes]
 step
 >>Kill |cRXP_ENEMY_Gogluk|r
-.goto 577,37.55,47.38
+.goto 577,37.45,48.33
 .complete 35747,2 
 .mob Gogluk
 step
@@ -3443,7 +3551,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 2 Horde Nazmir
 #displayname Chapter 4 - Nazmir
@@ -3460,14 +3568,14 @@ step
 .zoneskip 863
 step
 .goto 1164,41.22,66.75
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Princess Talanji|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Princess Talanji|r
 .turnin 47512 >>Turn in Nazmir
 .accept 47103 >>Accept Journey to Nazmir
 .zoneskip 863
 .target Princess Talanji
 step
 .goto 1165,51.65,41.29
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo outside. Talk to |cFF00FF25Rokhan|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo outside. Talk to |cRXP_FRIENDLY_Rokhan|r
 .turnin 47103 >>Turn in Journey to Nazmir
 .accept 48535 >>Accept Nazmir, the Forbidden Swamp
 .zoneskip 863
@@ -3493,11 +3601,11 @@ step
 .groundgoto 862,53.74,18.75,15,0
 .groundgoto 863,43.39,86.96,15,0
 .goto 863,43.00,86.03
->>Travel to |cFF00FF25Princess Talanji|r in Nazmir
+>>Travel to |cRXP_FRIENDLY_Princess Talanji|r in Nazmir
 .complete 48535,2 
 .isOnQuest 48535
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Princess Talanji|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Princess Talanji|r
 .goto 863,43.00,86.03
 .turnin 48535 >>Turn in Nazmir, the Forbidden Swamp
 .accept 47105 >>Accept Into The Darkness
@@ -3505,7 +3613,7 @@ step
 .target Princess Talanji
 step
 .goto 863,47.25,79.73
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTravel to The Fallen Outpost. Talk to |cFF00FF25Princess Talanji|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTravel to The Fallen Outpost. Talk to |cRXP_FRIENDLY_Princess Talanji|r
 .complete 47105,1 
 .turnin 47105 >>Turn in Into The Darkness
 .accept 47264 >>Accept Leave None Standing
@@ -3963,7 +4071,12 @@ step
 .target Theurgist Salazae
 .turnin 47248 >>Turn in 'Til Death Do Us Part
 step
-.loop 40,863,37.27,27.84,36.94,31.05,35.97,28.78,37.27,27.84
+#loop
+.line 863,37.27,27.84,36.94,31.05,35.97,28.78,37.27,27.84
+.goto 863,37.27,27.84,40,0
+.goto 863,36.94,31.05,40,0
+.goto 863,35.97,28.78,40,0
+.goto 863,37.27,27.84,40,0
 >>Kill |cRXP_ENEMY_Corrupted Spirits|r and |cRXP_ENEMY_Acolytes of Tizeja|r
 .complete 48934,1 
 .mob Corrupted Spirit
@@ -4103,7 +4216,13 @@ step
 .complete 48857,2 
 .mob Empowered Kal'dran
 step
-.loop 50,863,32.66,61.25,30.23,61.71,28.79,60.87,29.13,58.20,32.66,61.25
+#loop
+.line 863,32.66,61.25,30.23,61.71,28.79,60.87,29.13,58.20,32.66,61.25
+.goto 863,32.66,61.25,50,0
+.goto 863,30.23,61.71,50,0
+.goto 863,28.79,60.87,50,0
+.goto 863,29.13,58.20,50,0
+.goto 863,32.66,61.25,50,0
 >>Kill |cRXP_ENEMY_Zardrax Conduits|r and |cRXP_ENEMY_Reconstructed Terrors|r
 >>|cRXP_WARN_Use the |T458256:0|t[Modified Blood Fetish] on |cRXP_ENEMY_Reconstructed Terrors|r to weaken them|r
 .complete 48856,1 
@@ -4220,7 +4339,18 @@ step
 .skipgossip
 .target Mojoba
 step
-.loop 40,863,21.46,50.76,22.61,52.02,23.28,53.65,23.99,55.95,23.47,59.73,22.67,58.45,22.64,54.95,21.59,54.21,21.29,52.95,21.46,50.76
+#loop
+.line 863,21.46,50.76,22.61,52.02,23.28,53.65,23.99,55.95,23.47,59.73,22.67,58.45,22.64,54.95,21.59,54.21,21.29,52.95,21.46,50.76
+.goto 863,21.46,50.76,40,0
+.goto 863,22.61,52.02,40,0
+.goto 863,23.28,53.65,40,0
+.goto 863,23.99,55.95,40,0
+.goto 863,23.47,59.73,40,0
+.goto 863,22.67,58.45,40,0
+.goto 863,22.64,54.95,40,0
+.goto 863,21.59,54.21,40,0
+.goto 863,21.29,52.95,40,0
+.goto 863,21.46,50.76,40,0
 >>Kill |cRXP_ENEMY_Tar Oozes|r. Loot them for their |cRXP_LOOT_tar|r
 .complete 49776,1 
 .mob Tar Ooze
@@ -4276,7 +4406,16 @@ step
 .complete 49780,1 
 .use 156480
 step
-.loop 50,863,25.60,44.47,23.78,44.29,23.70,46.79,24.59,47.70,23.97,50.31,25.48,51.89,25.87,47.65,25.60,44.47
+#loop
+.line 863,25.60,44.47,23.78,44.29,23.70,46.79,24.59,47.70,23.97,50.31,25.48,51.89,25.87,47.65,25.60,44.47
+.goto 863,25.60,44.47,50,0
+.goto 863,23.78,44.29,50,0
+.goto 863,23.70,46.79,50,0
+.goto 863,24.59,47.70,50,0
+.goto 863,23.97,50.31,50,0
+.goto 863,25.48,51.89,50,0
+.goto 863,25.87,47.65,50,0
+.goto 863,25.60,44.47,50,0
 >>Kill |cRXP_ENEMY_Bone Raptors|r
 .complete 49779,1 
 .mob Bone Raptor
@@ -4351,7 +4490,15 @@ step
 .complete 48498,1 
 .mob Fangcaller Sithis
 step
-.loop 50,863,26.20,38.11,26.16,40.41,26.92,42.07,28.13,41.40,28.31,39.88,28.17,37.96,26.20,38.11
+#loop
+.line 863,26.20,38.11,26.16,40.41,26.92,42.07,28.13,41.40,28.31,39.88,28.17,37.96,26.20,38.11
+.goto 863,26.20,38.11,50,0
+.goto 863,26.16,40.41,50,0
+.goto 863,26.92,42.07,50,0
+.goto 863,28.13,41.40,50,0
+.goto 863,28.31,39.88,50,0
+.goto 863,28.17,37.96,50,0
+.goto 863,26.20,38.11,50,0
 >>Kill |cRXP_ENEMY_Sethrak Warbringers|r, |cRXP_ENEMY_Wardens|r, |cRXP_ENEMY_Ravagers|r, and |cRXP_ENEMY_Skycallers|r
 .complete 48497,1 
 .mob Sethrak Warbringer
@@ -4579,7 +4726,14 @@ step
 .goto 863,39.39,57.48
 .use 154130
 step
-.loop 50,863,40.68,58.82,40.70,55.76,39.51,53.03,38.75,55.17,38.79,56.85,40.68,58.82
+#loop
+.line 863,40.68,58.82,40.70,55.76,39.51,53.03,38.75,55.17,38.79,56.85,40.68,58.82
+.goto 863,40.68,58.82,50,0
+.goto 863,40.70,55.76,50,0
+.goto 863,39.51,53.03,50,0
+.goto 863,38.75,55.17,50,0
+.goto 863,38.79,56.85,50,0
+.goto 863,40.68,58.82,50,0
 >>Kill |cRXP_ENEMY_Phylactery Guardians|r, |cRXP_ENEMY_Kel'vax|r, |cRXP_ENEMY_Resurrected Warriors|r, and |cRXP_ENEMY_Bound Scavengers|r. Loot them for their |cRXP_LOOT_bones|r
 .complete 48479,1 
 .mob Phylactery Guardian
@@ -4717,7 +4871,18 @@ step
 .complete 47919,3 
 .mob Corpse Monger Jal'aka
 step
-.loop 40,863,50.52,39.69,49.48,40.46,47.56,37.24,48.31,36.88,48.77,35.44,48.51,33.99,50.61,33.49,49.41,34.56,49.47,36.37,50.52,39.69
+#loop
+.line 863,50.52,39.69,49.48,40.46,47.56,37.24,48.31,36.88,48.77,35.44,48.51,33.99,50.61,33.49,49.41,34.56,49.47,36.37,50.52,39.69
+.goto 863,50.52,39.69,40,0
+.goto 863,49.48,40.46,40,0
+.goto 863,47.56,37.24,40,0
+.goto 863,48.31,36.88,40,0
+.goto 863,48.77,35.44,40,0
+.goto 863,48.51,33.99,40,0
+.goto 863,50.61,33.49,40,0
+.goto 863,49.41,34.56,40,0
+.goto 863,49.47,36.37,40,0
+.goto 863,50.52,39.69,40,0
 >>Kill |cRXP_ENEMY_Nath'vor Cannibals|r
 .complete 47998,1 
 .mob Nath'vor Cannibal
@@ -4773,13 +4938,43 @@ step
 .mob Summoner Yarz
 step
 #label DreadtickL
-.loop 40,863,60.08,18.94,59.90,19.82,59.58,20.04,59.47,20.03,58.72,20.52,58.73,22.11,60.86,23.31,60.71,21.99,60.95,21.96,61.51,21.60,61.55,21.19,61.08,20.41,61.80,19.68,60.08,18.94
+#loop
+.line 863,60.08,18.94,59.90,19.82,59.58,20.04,59.47,20.03,58.72,20.52,58.73,22.11,60.86,23.31,60.71,21.99,60.95,21.96,61.51,21.60,61.55,21.19,61.08,20.41,61.80,19.68,60.08,18.94
+.goto 863,60.08,18.94,40,0
+.goto 863,59.90,19.82,40,0
+.goto 863,59.58,20.04,40,0
+.goto 863,59.47,20.03,40,0
+.goto 863,58.72,20.52,40,0
+.goto 863,58.73,22.11,40,0
+.goto 863,60.86,23.31,40,0
+.goto 863,60.71,21.99,40,0
+.goto 863,60.95,21.96,40,0
+.goto 863,61.51,21.60,40,0
+.goto 863,61.55,21.19,40,0
+.goto 863,61.08,20.41,40,0
+.goto 863,61.80,19.68,40,0
+.goto 863,60.08,18.94,40,0
 >>Kill |cRXP_ENEMY_Dreadtick Leechers|r. Alternatively, use the |T1500879:0|t[Scroll of Combustion] on |cRXP_ENEMY_Dreadtick Leechers|r
 .complete 49071,1 
 .use 153024
 .mob Dreadtick Leecher
 step
-.loop 40,863,60.08,18.94,59.90,19.82,59.58,20.04,59.47,20.03,58.72,20.52,58.73,22.11,60.86,23.31,60.71,21.99,60.95,21.96,61.51,21.60,61.55,21.19,61.08,20.41,61.80,19.68,60.08,18.94
+#loop
+.line 863,60.08,18.94,59.90,19.82,59.58,20.04,59.47,20.03,58.72,20.52,58.73,22.11,60.86,23.31,60.71,21.99,60.95,21.96,61.51,21.60,61.55,21.19,61.08,20.41,61.80,19.68,60.08,18.94
+.goto 863,60.08,18.94,40,0
+.goto 863,59.90,19.82,40,0
+.goto 863,59.58,20.04,40,0
+.goto 863,59.47,20.03,40,0
+.goto 863,58.72,20.52,40,0
+.goto 863,58.73,22.11,40,0
+.goto 863,60.86,23.31,40,0
+.goto 863,60.71,21.99,40,0
+.goto 863,60.95,21.96,40,0
+.goto 863,61.51,21.60,40,0
+.goto 863,61.55,21.19,40,0
+.goto 863,61.08,20.41,40,0
+.goto 863,61.80,19.68,40,0
+.goto 863,60.08,18.94,40,0
 >>Kill |cRXP_ENEMY_Loa-Gutter Drudges|r and |cRXP_ENEMY_Hexxers|r
 .complete 49070,1 
 .mob Loa-Gutter Drudge
@@ -4858,7 +5053,17 @@ step
 >>Use the |T1500879:0|t[Scroll of Purification] on the |cRXP_PICK_Corrupted Loa Blood|r
 .complete 49125,1 
 step
-.loop 40,863,59.99,25.95,60.46,25.52,62.07,24.51,63.23,23.81,62.83,23.12,63.07,22.27,63.81,21.18,64.66,20.86,59.99,25.95
+#loop
+.line 863,59.99,25.95,60.46,25.52,62.07,24.51,63.23,23.81,62.83,23.12,63.07,22.27,63.81,21.18,64.66,20.86,59.99,25.95
+.goto 863,59.99,25.95,40,0
+.goto 863,60.46,25.52,40,0
+.goto 863,62.07,24.51,40,0
+.goto 863,63.23,23.81,40,0
+.goto 863,62.83,23.12,40,0
+.goto 863,63.07,22.27,40,0
+.goto 863,63.81,21.18,40,0
+.goto 863,64.66,20.86,40,0
+.goto 863,59.99,25.95,40,0
 >>|cRXP_WARN_Focus on freeing the |cRXP_FRIENDLY_Tortollan Captives|r|r
 >>Kill |cRXP_ENEMY_Blood Crawgs|r and |cRXP_ENEMY_Crawg Riders|r
 .complete 51689,1 
@@ -4927,7 +5132,21 @@ step
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tPlace the |cRXP_PICK_totem|r on the ground
 .complete 49131,1 
 step
-.loop 50,863,54.48,23.27,55.96,23.38,57.17,22.88,58.09,21.44,58.11,20.19,58.81,17.23,57.52,15.52,55.99,17.07,56.10,18.58,54.39,18.72,54.11,20.19,55.06,20.43,54.48,23.27
+#loop
+.line 863,54.48,23.27,55.96,23.38,57.17,22.88,58.09,21.44,58.11,20.19,58.81,17.23,57.52,15.52,55.99,17.07,56.10,18.58,54.39,18.72,54.11,20.19,55.06,20.43,54.48,23.27
+.goto 863,54.48,23.27,50,0
+.goto 863,55.96,23.38,50,0
+.goto 863,57.17,22.88,50,0
+.goto 863,58.09,21.44,50,0
+.goto 863,58.11,20.19,50,0
+.goto 863,58.81,17.23,50,0
+.goto 863,57.52,15.52,50,0
+.goto 863,55.99,17.07,50,0
+.goto 863,56.10,18.58,50,0
+.goto 863,54.39,18.72,50,0
+.goto 863,54.11,20.19,50,0
+.goto 863,55.06,20.43,50,0
+.goto 863,54.48,23.27,50,0
 >>Kill |cRXP_ENEMY_Skullcrushers|r, |cRXP_ENEMY_Loa-Gutter Butchers|r, and |cRXP_ENEMY_Loa-Gutter Darters|r. Loot the |cRXP_ENEMY_Butchers|r and |cRXP_ENEMY_Darters|r for |cRXP_LOOT_Torga's parts|r
 .complete 49132,1 
 .complete 49130,1 
@@ -5183,7 +5402,18 @@ step
 .use 158071
 .target Krol'dra the Wise
 step
-.loop 40,863,80.66,53.80,81.12,55.26,82.87,54.44,83.14,53.54,83.07,53.19,83.79,53.20,81.75,47.61,81.49,48.41,82.55,51.58,80.66,53.80
+#loop
+.line 863,80.66,53.80,81.12,55.26,82.87,54.44,83.14,53.54,83.07,53.19,83.79,53.20,81.75,47.61,81.49,48.41,82.55,51.58,80.66,53.80
+.goto 863,80.66,53.80,40,0
+.goto 863,81.12,55.26,40,0
+.goto 863,82.87,54.44,40,0
+.goto 863,83.14,53.54,40,0
+.goto 863,83.07,53.19,40,0
+.goto 863,83.79,53.20,40,0
+.goto 863,81.75,47.61,40,0
+.goto 863,81.49,48.41,40,0
+.goto 863,82.55,51.58,40,0
+.goto 863,80.66,53.80,40,0
 >>|cRXP_WARN_Focus on destroying Frog Containers|r
 >>Kill |cRXP_ENEMY_Vilescale Mana Tasters|r and |cRXP_ENEMY_Vilescale Guardians|r
 .complete 48093,1 
@@ -5327,7 +5557,18 @@ step
 .use 151363
 .mob Vilescale Behemoth
 step
-.loop 50,863,78.54,30.05,80.01,31.77,79.85,33.79,78.93,33.32,78.67,34.31,78.20,34.73,76.56,33.56,77.67,33.17,76.90,31.62,78.54,30.05
+#loop
+.line 863,78.54,30.05,80.01,31.77,79.85,33.79,78.93,33.32,78.67,34.31,78.20,34.73,76.56,33.56,77.67,33.17,76.90,31.62,78.54,30.05
+.goto 863,78.54,30.05,50,0
+.goto 863,80.01,31.77,50,0
+.goto 863,79.85,33.79,50,0
+.goto 863,78.93,33.32,50,0
+.goto 863,78.67,34.31,50,0
+.goto 863,78.20,34.73,50,0
+.goto 863,76.56,33.56,50,0
+.goto 863,77.67,33.17,50,0
+.goto 863,76.90,31.62,50,0
+.goto 863,78.54,30.05,50,0
 >>Focus on rescuing Injured and Captive Sailors
 >>Kill Vilescale Slavers, Sorceresses, and Fathom-Hunters
 .complete 47756,1 
@@ -5374,7 +5615,11 @@ step
 >>Loot the |cRXP_PICK_Mechanism|r on the ground
 .complete 47596,3 
 step
-.loop 50,863,79.16,27.43,77.67,25.28,79.57,22.25
+#loop
+.line 863,79.16,27.43,77.67,25.28,79.57,22.25
+.goto 863,79.16,27.43,50,0
+.goto 863,77.67,25.28,50,0
+.goto 863,79.57,22.25,50,0
 >>Kill |cRXP_ENEMY_Vilescale Warriors|r, |cRXP_ENEMY_Hydromancers|r, and |cRXP_ENEMY_Tidebinders|r. Loot them for their |cRXP_LOOT_relics|r
 .complete 47598,1 
 .mob Vilescale Warrior
@@ -5486,7 +5731,19 @@ step
 >>Pick up |cRXP_PICK_Shavras's Core|r on the ground
 .complete 49935,1 
 step
-.loop 40,863,67.60,37.69,65.81,38.31,66.41,36.02,65.63,32.81,66.71,32.93,67.74,34.00,67.45,36.10,67.92,36.77,69.12,36.64,69.96,39.46,67.60,37.69
+#loop
+.line 863,67.60,37.69,65.81,38.31,66.41,36.02,65.63,32.81,66.71,32.93,67.74,34.00,67.45,36.10,67.92,36.77,69.12,36.64,69.96,39.46,67.60,37.69
+.goto 863,67.60,37.69,40,0
+.goto 863,65.81,38.31,40,0
+.goto 863,66.41,36.02,40,0
+.goto 863,65.63,32.81,40,0
+.goto 863,66.71,32.93,40,0
+.goto 863,67.74,34.00,40,0
+.goto 863,67.45,36.10,40,0
+.goto 863,67.92,36.77,40,0
+.goto 863,69.12,36.64,40,0
+.goto 863,69.96,39.46,40,0
+.goto 863,67.60,37.69,40,0
 >>Kill |cRXP_ENEMY_Blood-Infused Lashers|r and |cRXP_ENEMY_Nawathan Spectres|r. Loot |cRXP_ENEMY_Spectres|r for their |cRXP_LOOT_Titan Plating|r
 .complete 49937,1 
 .complete 49938,1 
@@ -5563,7 +5820,20 @@ step
 .use 156528
 .mob Reanimated Monstrosity
 step
-.loop 50,863,69.31,34.13,69.89,33.36,69.30,32.36,70.54,29.97,69.87,27.55,68.68,27.81,69.31,34.13,71.77,36.71,73.56,34.64,72.74,32.87,70.94,35.02,69.89,33.36
+#loop
+.line 863,69.31,34.13,69.89,33.36,69.30,32.36,70.54,29.97,69.87,27.55,68.68,27.81,69.31,34.13,71.77,36.71,73.56,34.64,72.74,32.87,70.94,35.02,69.89,33.36
+.goto 863,69.31,34.13,50,0
+.goto 863,69.89,33.36,50,0
+.goto 863,69.30,32.36,50,0
+.goto 863,70.54,29.97,50,0
+.goto 863,69.87,27.55,50,0
+.goto 863,68.68,27.81,50,0
+.goto 863,69.31,34.13,50,0
+.goto 863,71.77,36.71,50,0
+.goto 863,73.56,34.64,50,0
+.goto 863,72.74,32.87,50,0
+.goto 863,70.94,35.02,50,0
+.goto 863,69.89,33.36,50,0
 >>Kill |cRXP_ENEMY_Nazwathan Guardians|r and |cRXP_ENEMY_Blood Benders|r
 .complete 49949,1 
 .mob Nazwathan Guardian
@@ -5732,7 +6002,15 @@ step
 .mob Amaki Guard
 .mob Amaki Bloodsinger
 step
-.loop 30,863,62.79,57.23,62.93,57.79,62.20,58.34,60.74,58.57,61.56,56.58,62.60,55.29,62.79,57.23
+#loop
+.line 863,62.79,57.23,62.93,57.79,62.20,58.34,60.74,58.57,61.56,56.58,62.60,55.29,62.79,57.23
+.goto 863,62.79,57.23,30,0
+.goto 863,62.93,57.79,30,0
+.goto 863,62.20,58.34,30,0
+.goto 863,60.74,58.57,30,0
+.goto 863,61.56,56.58,30,0
+.goto 863,62.60,55.29,30,0
+.goto 863,62.79,57.23,30,0
 >>Kill |cRXP_ENEMY_Battle Crawgs|r in the area
 .complete 49379,1 
 .mob Battle Crawg
@@ -5743,7 +6021,12 @@ step
 .complete 49380,2 
 .use 153678
 step
-.loop 40,863,62.18,54.47,60.17,53.42,60.47,55.82,62.18,54.47
+#loop
+.line 863,62.18,54.47,60.17,53.42,60.47,55.82,62.18,54.47
+.goto 863,62.18,54.47,40,0
+.goto 863,60.17,53.42,40,0
+.goto 863,60.47,55.82,40,0
+.goto 863,62.18,54.47,40,0
 >>Kill |cRXP_ENEMY_Amaki War Slaves|r, |cRXP_ENEMY_Amaki Guards|r, and |cRXP_ENEMY_Amaki Bloodsingers|r to feed the |cRXP_FRIENDLY_Crawgling|r
 .complete 49378,2 
 .mob Amaki War Slave
@@ -5796,7 +6079,16 @@ step
 .use 152596
 .mob Primal Snapjaw
 step
-.loop 40,863,34.14,75.89,36.48,71.33,36.38,73.79,38.16,74.64,38.68,75.65,36.09,77.53,36.47,80.15,34.14,75.89
+#loop
+.line 863,34.14,75.89,36.48,71.33,36.38,73.79,38.16,74.64,38.68,75.65,36.09,77.53,36.47,80.15,34.14,75.89
+.goto 863,34.14,75.89,40,0
+.goto 863,36.48,71.33,40,0
+.goto 863,36.38,73.79,40,0
+.goto 863,38.16,74.64,40,0
+.goto 863,38.68,75.65,40,0
+.goto 863,36.09,77.53,40,0
+.goto 863,36.47,80.15,40,0
+.goto 863,34.14,75.89,40,0
 >>Kill |cRXP_ENEMY_Saurids|r. Loot them for their |cRXP_LOOT_teeth|r
 .complete 48574,1 
 .mob Sickly Saurid
@@ -5898,7 +6190,18 @@ step
 .complete 48584,1 
 .mob Dreadtick Latcher
 step
-.loop 40,863,29.99,69.78,28.40,69.86,29.39,75.15,27.03,77.66,27.21,78.55,28.34,78.80,30.32,76.84,30.97,74.43,33.42,71.77,29.99,69.78
+#loop
+.line 863,29.99,69.78,28.40,69.86,29.39,75.15,27.03,77.66,27.21,78.55,28.34,78.80,30.32,76.84,30.97,74.43,33.42,71.77,29.99,69.78
+.goto 863,29.99,69.78,40,0
+.goto 863,28.40,69.86,40,0
+.goto 863,29.39,75.15,40,0
+.goto 863,27.03,77.66,40,0
+.goto 863,27.21,78.55,40,0
+.goto 863,28.34,78.80,40,0
+.goto 863,30.32,76.84,40,0
+.goto 863,30.97,74.43,40,0
+.goto 863,33.42,71.77,40,0
+.goto 863,29.99,69.78,40,0
 >>Kill |cRXP_ENEMY_Infected Saurolisks|r. Additionally run over their |cRXP_PICK_eggs|r
 .complete 48588,1 
 .mob Infected Saurolisk
@@ -5931,7 +6234,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 2 Horde Draenor Garrison
 #displayname Chapter 3 - Draenor Garrison Intro
@@ -5944,9 +6247,9 @@ step
 .goto 525,40.79,67.09
 .turnin -33868 >>Turn in The Home of the Frostwolves
 .accept 33815 >>Accept A Song of Frost and Fire
-.timer 30,Introduction Roleplay
+.timer 32,Introduction Roleplay
 step
->>Wait next to |cRXP_FRIENDLY_Durotan|r for ~20s
+>>Wait next to |cRXP_FRIENDLY_Durotan|r
 .goto 525,41.54,67.61,20,0
 .goto 525,41.81,69.65
 .complete 33815,1 
@@ -5969,6 +6272,7 @@ step
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tInteract with the shade of the |cRXP_PICK_Horde Banner|r
 .goto 590,50.67,39.48
 .complete 34364,1 
+.timer 16,Roleplay Duration
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tWait for |cRXP_FRIENDLY_Gazlowe|r and talk to him
 .goto 590,51.25,39.61
@@ -6023,7 +6327,7 @@ step
 .accept 34765 >>Accept The Den of Skog
 step
 >>Kill |cRXP_ENEMY_Skog|r
->>Watch out for |cRXP_ENEMY_Skog's|r Ground Slap ability while fighting him.
+>>|cRXP_WARN_Watch out for his Ground Slap ability|r
 .goto 590,48.88,84.72
 .complete 34765,1 
 .mob Skog
@@ -6039,7 +6343,7 @@ step
 .complete 34378,1 
 step
 #completewith GarridonEndStartQuests
-+Addons can't track the position of characters inside the garrison. Therefore it's not possible to create waypoints.
++|cRXP_WARN_AddOns can't track the position of characters inside the garrison. Therefore it's not possible to create waypoints.|r
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazlowe|r in front of the Architect Table
 .turnin 34378 >>Turn in Establish Your Garrison
@@ -6112,6 +6416,7 @@ step
 .isOnQuest 34823
 .zoneskip 590
 #completewith next
+.use 110560
 .cast 171253 >>Use your Garrison Hearthstone. It's in your toy box
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk with |cRXP_FRIENDLY_Gazlowe|r and |cRXP_FRIENDLY_Rokhan|r just outside the building
@@ -6172,7 +6477,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 3 Horde Vol'dun
 #displayname Chapter 5 - Vol'dun
@@ -6399,7 +6704,17 @@ step
 .use 159729
 .target Sable Polecat
 step
-.loop 30,864,54.29,51.10,54.49,48.68,53.31,49.11,52.89,49.86,53.06,50.54,53.32,51.45,52.73,52.30,53.32,51.45,54.29,51.10
+#loop
+.line 864,54.29,51.10,54.49,48.68,53.31,49.11,52.89,49.86,53.06,50.54,53.32,51.45,52.73,52.30,53.32,51.45,54.29,51.10
+.goto 864,54.29,51.10,30,0
+.goto 864,54.49,48.68,30,0
+.goto 864,53.31,49.11,30,0
+.goto 864,52.89,49.86,30,0
+.goto 864,53.06,50.54,30,0
+.goto 864,53.32,51.45,30,0
+.goto 864,52.73,52.30,30,0
+.goto 864,53.32,51.45,30,0
+.goto 864,54.29,51.10,30,0
 >>Kill |cRXP_ENEMY_Venomous Sandstingers|r and |cRXP_ENEMY_Sandstinger Drones|r. Loot them for their |cRXP_LOOT_glands|r
 >>Loot the |cRXP_PICK_Picklevine|r on the ground for its juice. |cRXP_WARN_Spam click this to get 4-5 juice per |cRXP_PICK_Picklevine|r|r
 .complete 47319,1 
@@ -6887,7 +7202,17 @@ step
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on the |cRXP_PICK_Unwanted Memory|r on the ground. Press "Escape" on your keyboard to skip the cinematic
 .complete 48988,1 
 step
-.loop 40,864,53.44,78.22,54.91,76.01,54.80,75.40,54.57,75.45,53.15,77.46,52.65,76.40,52.78,77.66,52.85,78.05,53.44,78.22
+#loop
+.line 864,53.44,78.22,54.91,76.01,54.80,75.40,54.57,75.45,53.15,77.46,52.65,76.40,52.78,77.66,52.85,78.05,53.44,78.22
+.goto 864,53.44,78.22,40,0
+.goto 864,54.91,76.01,40,0
+.goto 864,54.80,75.40,40,0
+.goto 864,54.57,75.45,40,0
+.goto 864,53.15,77.46,40,0
+.goto 864,52.65,76.40,40,0
+.goto 864,52.78,77.66,40,0
+.goto 864,52.85,78.05,40,0
+.goto 864,53.44,78.22,40,0
 >>Kill |cRXP_ENEMY_Distorted|r and |cRXP_ENEMY_Fractured Memories|r
 .complete 49005,1 
 .complete 49005,2 
@@ -7554,7 +7879,16 @@ step
 .mob Expedition Leader Augustus
 step
 #requires WeaSpyglass
-.loop 40,864,47.96,87.70,48.34,87.30,47.96,86.55,47.32,86.06,46.16,85.20,46.66,86.50,47.08,86.99,47.96,87.70
+#loop
+.line 864,47.96,87.70,48.34,87.30,47.96,86.55,47.32,86.06,46.16,85.20,46.66,86.50,47.08,86.99,47.96,87.70
+.goto 864,47.96,87.70,40,0
+.goto 864,48.34,87.30,40,0
+.goto 864,47.96,86.55,40,0
+.goto 864,47.32,86.06,40,0
+.goto 864,46.16,85.20,40,0
+.goto 864,46.66,86.50,40,0
+.goto 864,47.08,86.99,40,0
+.goto 864,47.96,87.70,40,0
 >>Kill |cRXP_ENEMY_Ashvane Enforcers|r, |cRXP_ENEMY_Prospectors|r, and |cRXP_ENEMY_Redrock Laborers|r. Loot them for their |cRXP_LOOT_keys|r and |cRXP_LOOT_garb|r
 .complete 47939,1 
 .collect 160735,5,49261,1 
@@ -9316,7 +9650,20 @@ step
 
 step
 #requires Ara
-.loop 30,942,51.90,32.68,51.80,32.36,51.30,31.63,50.63,30.88,50.23,30.99,50.05,31.76,50.06,32.19,49.72,32.95,49.87,33.13,50.64,33.54,51.06,33.04,51.90,32.68
+#loop
+.line 942,51.90,32.68,51.80,32.36,51.30,31.63,50.63,30.88,50.23,30.99,50.05,31.76,50.06,32.19,49.72,32.95,49.87,33.13,50.64,33.54,51.06,33.04,51.90,32.68
+.goto 942,51.90,32.68,30,0
+.goto 942,51.80,32.36,30,0
+.goto 942,51.30,31.63,30,0
+.goto 942,50.63,30.88,30,0
+.goto 942,50.23,30.99,30,0
+.goto 942,50.05,31.76,30,0
+.goto 942,50.06,32.19,30,0
+.goto 942,49.72,32.95,30,0
+.goto 942,49.87,33.13,30,0
+.goto 942,50.64,33.54,30,0
+.goto 942,51.06,33.04,30,0
+.goto 942,51.90,32.68,30,0
 >>Kill |cRXP_ENEMY_Storm's Wake Footmen|r and |cRXP_ENEMY_Tidesages|r
 >>Loot the |cRXP_ENEMY_Tidesages|r for |T433449:0|t[Fading Umbral Wands]. Use the Wands on the Flames. You can get 2 with one use
 >>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on the |cRXP_FRIENDLY_Frightened Peons|r to rescue them
@@ -9487,7 +9834,14 @@ step
 .goto 895,87.76,50.49,26,0
 .goto 895,87.11,51.90,26,0
 .goto 895,87.30,52.93,26,0
-.loop 25,895,88.51,49.46,87.16,49.58,87.47,50.84,87.76,50.49,87.11,51.90,87.30,52.93,
+#loop
+.line 895,88.51,49.46,87.16,49.58,87.47,50.84,87.76,50.49,87.11,51.90,87.30,52.93,
+.goto 895,88.51,49.46,25,0
+.goto 895,87.16,49.58,25,0
+.goto 895,87.47,50.84,25,0
+.goto 895,87.76,50.49,25,0
+.goto 895,87.11,51.90,25,0
+.goto 895,87.30,52.93,25,0
 >>Kill |cRXP_ENEMY_Fogsail Cannoneers|r. Loot them for their |cRXP_LOOT_Cannonballs|r
 .complete 51439,1 
 .mob Fogsail Cannoneer
@@ -9725,7 +10079,7 @@ step
 .target Eitrigg
 step
 .zoneskip 862
-+|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Swellthrasher|r
++|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Swellthrasher|r
 .goto 896,20.60,43.34
 .skipgossip
 .target Swellthrasher
@@ -9750,19 +10104,23 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 7
+#version 9
 #veteran
 #group RestedXP Horde 10-60
+#groupweight 9
 #name 3 Horde Zuldazar
 #displayname Chapter 4 - Zuldazar Beginning
 #next 3 Horde Zuldazar 2
 << Horde
 step
 .isQuestAvailable 51443
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warchief's Herald|r
-.goto 85,49.40,76.59
+.goto 85,40.83,80.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
+>>|cRXP_WARN_Select "Battle for Azeroth" Campaign|r
+*|cRXP_WARN_It's possible that it bugs out and doesn't give you the quest. If this is the case select the "Cataclysm" campaign and swap back to the "Battle for Azeroth" one until you get the quest|r
 .accept 51443 >>Accept Battle for Azeroth: Mission Statement
-.target Warchief's Herald
+.skipgossip
+.target Chromie
 step
 .isOnQuest 51443
 >>Enter the building
@@ -9953,7 +10311,7 @@ step
 step
 .isOnQuest 46957
 .zoneskip 1164
->>Stay close to |cRXP_FRIENDLY_Talanji|r else she will stop moving
+>>|cRXP_WARN_Stay close to |cRXP_FRIENDLY_Talanji|r else she will stop moving|r
 .goto 1165,50.02,60.63,40,0
 .goto 1165,50.78,92.73,40,0
 .goto 1165,50.35,90.93,40,0
@@ -10024,6 +10382,27 @@ step
 .goto 1164,41.22,66.75
 .turnin 46931 >>Turn in Speaker of the Horde
 .target Princess Talanji
+step << DemonHunter
+.xp <20,1
+.pve
+.zoneskip 85,1
+#title Active War Mode. Skip if you don't want to.
++Skip if you don't want to activate War Mode (Bottom Right on your Talent Window (N)) even though it increases your experience gain by at least 10%
+step
+#label PortalToZuldazarCatchupA
+.isQuestAvailable 27484
+.goto 85,53.38,90.49,10,0
+.goto 85,58.52,91.31
+.zone 862 >>Enter the |cRXP_PICK_Portal to Zuldazar|r
+.zoneskip 85,1
+step
+#requires PortalToZuldazarCatchupA
+.zoneskip 1164
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo up and talk to |cRXP_FRIENDLY_Ripa the Wind Ripper|r
+.goto 1165,50.72,85.21,20,0
+.goto 1165,52.10,90.13
+.fly The Great Seal >>Fly to The Great Seal
+.target Ripa the Wind Ripper
 step
 #label ZuldazarAcceptZuldazar
 .goto 1164,41.72,69.33
@@ -10041,7 +10420,7 @@ step
 .goto 1165,48.72,44.92,10,0
 .goto 1165,49.56,44.60,18 >>Take the elevator up to |cRXP_FRIENDLY_King Rastakhan|r
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_King Rastakhan|r, |cRXP_FRIENDLY_Zolani|r, and |cRXP_FRIENDLY_Yazma|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_King Rastakhan|r, |cRXP_FRIENDLY_Zolani|r, and |cRXP_FRIENDLY_Yazma|r |cRXP_WARN_upstairs|r
 .goto 1164,22.67,72.08,5,0
 .goto 1165,48.72,44.92,10,0
 .goto 1165,49.56,44.60,18,0
@@ -10053,7 +10432,7 @@ step
 #completwith next
 >>Mount |cRXP_FRIENDLY_Ata the Winglord|r
 .goto 1164,49.94,43.13
-.complete 49615,1 
+.complete 49488,1 
 .target Ata the Winglord
 step
 .goto 862,62.82,32.56
@@ -10364,7 +10743,16 @@ step
 .complete 47585,2 
 .target Marksman Julyen
 step
-.loop 40,862,68.00,26.14,68.86,25.70,68.80,25.22,68.41,25.03,68.56,24.19,67.78,24.33,67.41,24.86,68.00,26.14
+#loop
+.line 862,68.00,26.14,68.86,25.70,68.80,25.22,68.41,25.03,68.56,24.19,67.78,24.33,67.41,24.86,68.00,26.14
+.goto 862,68.00,26.14,40,0
+.goto 862,68.86,25.70,40,0
+.goto 862,68.80,25.22,40,0
+.goto 862,68.41,25.03,40,0
+.goto 862,68.56,24.19,40,0
+.goto 862,67.78,24.33,40,0
+.goto 862,67.41,24.86,40,0
+.goto 862,68.00,26.14,40,0
 >>Kill |cRXP_ENEMY_Venomous Diemetradons|r
 .complete 47583,1 
 .mob Venomous Diemetradons
@@ -10521,7 +10909,7 @@ step
 .cast 109076>>Use a Goblin Glider Kit to fly to Wardruid Loti
 step
 #label ZuldazarTheZanchuliCouncil
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,45.26,24.02
 .turnin 47445 >>Turn in The Zanchuli Council
 .accept 47423 >>Accept Forbidden Practices
@@ -10542,13 +10930,13 @@ step
 .use 152627
 .target Zanchuli Acolyte
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Hexlord Raal|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hexlord Raal|r
 .goto 1165,51.90,11.89
 .turnin 47423 >>Turn in Forbidden Practices
 .accept 47433 >>Accept Offensively Defensive
 .target Hexlord Raal
 step
->>Mount |cFF00FF25Ata the Windlord|r
+>>Mount |cRXP_FRIENDLY_Ata the Windlord|r
 .goto 1165,53.20,11.63
 .complete 47433,2 
 .target Ata the Windlord
@@ -10557,7 +10945,7 @@ step
 *The first one is directly below the starting position
 .complete 47433,3 
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,46.21,19.25
 .turnin 47433 >>Turn in Offensively Defensive
 .accept 47435 >>Accept Pterrortorial Dispute
@@ -10576,7 +10964,7 @@ step
 .complete 47435,1 
 .mob Bloodraged Pterrordax
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Hexlord Raal|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hexlord Raal|r
 .goto 1165,40.92,11.33
 .turnin 47435 >>Turn in Pterrortorial Dispute
 .turnin 47434 >>Turn in Restraining Order
@@ -10602,7 +10990,7 @@ step
 .complete 47437,3 
 .mob Guardian of the Dead
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tClimb the pyramid and talk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tClimb the pyramid and talk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,46.06,15.65,14,0
 .goto 1165,46.11,13.07
 .turnin 47437 >>Turn in Competitive Devotion
@@ -10619,7 +11007,7 @@ step
 +|cRXP_WARN_Please follow the waypoint and the instructions perfectly and choose the Pterrodax not the Raptor on the next quest. Disable other Addons that automatically turn in quests.|r
 step
 .isQuestAvailable 47438
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .turnin 47422 >>Turn in Dire Situation
 .accept 47438 >>Accept Picking a Side
 .goto 1165,42.30,9.10
@@ -10630,7 +11018,7 @@ step
 +|cRXP_WARN_Please follow the waypoint and the instructions perfectly and choose the Pterrodax not the Raptor on the next quest. Disable other Addons that automatically turn in quests.|r
 step
 .isQuestAvailable 47438
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on |cFF00FF25Pa'ku|r to choose her
+>>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on |cRXP_FRIENDLY_Pa'ku|r to choose her
 .complete 47438,1 
 .goto 1165,42.61,9.21
 .target Pa'ku
@@ -10640,31 +11028,31 @@ step
 .abandon 47438
 step
 .isQuestAvailable 47438
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .accept 47438 >>Accept Picking a Side
 .goto 1165,42.30,9.10
 .target Wardruid Loti
 step
 .isQuestAvailable 47438
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on |cFF00FF25Pa'ku|r to choose her
+>>|TInterface/GossipFrame/HealerGossipIcon:0|tClick on |cRXP_FRIENDLY_Pa'ku|r to choose her
 .complete 47438,1 
 .goto 1165,42.61,9.21
 .target Pa'ku
 step
 .isQuestTurnedIn 47436
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .turnin 47438 >>Turn in Picking a Side
 .goto 1165,42.30,9.10
 .target Wardruid Loti
 step
 .isQuestTurnedIn 47436
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Hexlord Raal|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hexlord Raal|r
 .accept 47440 >>Accept Pa'ku, Master of Winds
 .goto 1165,42.54,9.49
 .target Hexlord Raal
 step
 .isQuestTurnedIn 47443
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,42.30,9.10
 .accept 47439 >>Accept Gonk, Lord of the Pack
 .target Wardruid Loti
@@ -10677,7 +11065,7 @@ step
 .goto 1165,36.28,7.99,25 >>Jump down
 step
 .isQuestTurnedIn 47443
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Gonk|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gonk|r
 .goto 862,48.18,32.27
 .skipgossip
 .complete 47439,1 
@@ -10697,7 +11085,7 @@ step
 .goto 1165,50.49,40.70,10 >>Run through the |cRXP_PICK_Totem of Gonk|r to get his buff
 step
 .isQuestTurnedIn 47443
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tJump down and talk to |cFF00FF25Wardruid Loti|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tJump down and talk to |cRXP_FRIENDLY_Wardruid Loti|r
 .goto 1165,49.92,33.42
 .turnin 47439 >>Turn in Gonk, Lord of the Pack
 .accept 48897 >>Accept The Bargain is Struck
@@ -10799,22 +11187,18 @@ step
 .accept 48527 >>Accept Ravenous Landsharks
 .target Beastlord L'kala
 step
-#completewith DirehornD
 .goto 862,66.56,42.35
 .home >>Set your Hearthstone to Beastcaller Inn
 step << Monk
 .xp <20,1
 .zoneskip 379
-#completewith LearnJourneymanRiding2
 .cast 126892 >>Use Zen Pilgrimage
 step << Monk
 .xp <20,1
-#completewith LearnJourneymanRiding2
 .goto 379,48.53,43.57
 .zone 85 >>Take the Portal to Orgrimmar
 step << !DemonHunter !Monk
 .xp <20,1
-#completewith LearnJourneymanRiding2
 .goto 862,67.26,43.02
 .fly The Great Seal >>Fly to The Great Seal
 step << !DemonHunter !Monk
@@ -10824,13 +11208,12 @@ step << !DemonHunter !Monk
 .goto 1163,48.74,29.28,20 >>Enter The Great Seal
 step << !DemonHunter !Monk
 .xp <20,1
-#completewith LearnJourneymanRiding2
 .goto 1163,74.06,69.92
 .zone 85 >>Take the portal to Orgrimmar
-step << !DemonHunter !Monk
+step << !DemonHunter
 .xp <20,1
 .pve
-#label LearnJourneymanRiding2
+.zoneskip 85,1
 #title Active War Mode. Skip if you don't want to.
 +Skip if you don't want to activate War Mode (Bottom Right on your Talent Window (N)) even though it increases your experience gain by at least 10%
 step << !DemonHunter
@@ -11008,57 +11391,6 @@ step
 .goto 862,66.81,42.51
 .target Beastlord L'kala
 .target Trader Alexxi
-step << Monk
-.xp <20,1
-.zoneskip 379
-#completewith LearnJourneymanRiding3
-.cast 126892 >>Use Zen Pilgrimage
-step << Monk
-.xp <20,1
-#completewith LearnJourneymanRiding3
-.goto 379,48.53,43.57
-.zone 85 >>Take the Portal to Orgrimmar
-step << !DemonHunter !Monk
-.xp <20,1
-#completewith LearnJourneymanRiding3
-.goto 862,67.26,43.02
-.fly The Great Seal >>Fly to The Great Seal
-.zoneskip 85
-step << !DemonHunter !Monk
-.zoneskip 85
-.xp <20,1
-#completewith LearnJourneymanRiding3
-.goto 1163,48.74,29.28
-.zone 1163 >> Enter the Great Seal
-step << !DemonHunter !Monk
-.xp <20,1
-#completewith LearnJourneymanRiding3
-.goto 1163,74.06,69.92
-.zone 85 >>Take the portal to Orgrimmar
-step << !DemonHunter
-#label LearnJourneymanRiding3
-.pve
-.xp <20,1
-#title Active War Mode. Skip if you don't want to.
-+Skip if you don't want to activate War Mode (Bottom Right on your Talent Window (N)) even though it increases your experience gain by at least 10%
-step << !DemonHunter
-.zoneskip 85,1
-.xp <20,1
-.cooldown item,6948,<1,1
-#completewith ZuldazarNearlyHatchungEgg
-#label JourneymanPortalBack3
-.goto 85,43.93,72.96,15,0
-.goto 85,53.17,90.47,10,0
-.zone 1163 >>Take the portal to Zuldazar
-.goto 85,58.54,91.30
-.fly Warbeast Kraal >>Fly to Warbeast Kraal
-.goto 1165,51.81,41.25
-step << !DemonHunter
-.xp <20,1
-.zoneskip 85,1
-#completewith ZuldazarNearlyHatchungEgg
-.hs >>Hearth to Warbeast Kraal
-.cooldown item,6948,>0,1
 step
 #requires JourneymanPortalBack3
 #completewith next
@@ -11608,7 +11940,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #veteran
 #group RestedXP Horde 10-60
 #name 3 Horde Zuldazar 2
@@ -12761,7 +13093,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 4 Horde Zuldazar Second Half
 #displayname Chapter 6 - Zuldazar End
@@ -13794,7 +14126,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 4 Horde Silverpine Forest
 #displayname Chapter 6 - Silverpine Forest
@@ -13818,6 +14150,7 @@ step
 step
 >>Open the Adventure Guide (Shift + J), click on the right arrow until you see 'Spires of Arak', click 'Start Quest'
 >>|cRXP_WARN_MAKE SURE YOU'RE IN THE WARLORDS OF DRAENOR TIMEWALKING PHASE|r
+*You have to be at least level 30 to do this. The guide is written in a way that you should be level 30 at this point.
 .goto 85,40.81,80.08
 .accept 36951 >>Accept Arakkoa Exodus
 step
@@ -14716,7 +15049,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 5 Horde Hillsbrad Foothills
 #displayname Chapter 7 - Hillsbrad Foothills
@@ -15650,7 +15983,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 6 Horde Spires of Arak
 #displayname Chapter 8 - Spires of Arak
@@ -16378,7 +16711,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 7 Horde Gorgrond
 #displayname Chapter 9 - Gorgrond
@@ -16967,7 +17300,12 @@ step
 step
 >>Kill |cRXP_ENEMY_Gorger|r. Loot them for their |cRXP_LOOT_shells|r.
 >>Pick up the |cRXP_PICK_Crystals|r from the corpses of |cRXP_ENEMY_Longtooth Gorgers|r
-.loop 20,543,45.57,52.41,44.59,53.72,43.77,53.54,44.58,51.32
+#loop
+.line 543,45.57,52.41,44.59,53.72,43.77,53.54,44.58,51.32
+.goto 543,45.57,52.41,20,0
+.goto 543,44.59,53.72,20,0
+.goto 543,43.77,53.54,20,0
+.goto 543,44.58,51.32,20,0
 .complete 35038,1 
 .complete 35202,1 
 .mob Boneyard Tunneler
@@ -17149,7 +17487,13 @@ step
 step
 #sticky
 #label defendersdionor
-.loop 15,543,49.80,47.63,49.46,47.19,49.82,46.36,50.28,46.09,50.89,46.31
+#loop
+.line 543,49.80,47.63,49.46,47.19,49.82,46.36,50.28,46.09,50.89,46.31
+.goto 543,49.80,47.63,15,0
+.goto 543,49.46,47.19,15,0
+.goto 543,49.82,46.36,15,0
+.goto 543,50.28,46.09,15,0
+.goto 543,50.89,46.31,15,0
 >>Kill the |cRXP_ENEMY_Seedpriests|r or |cRXP_ENEMY_Growths|r
 .complete 33689,1 
 .mob Dionor Seedpriest
@@ -17585,7 +17929,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #df
-#version 6
+#version 9
 #group RestedXP Horde 10-60
 #name 99 Monk Quest Horde
 #displayname Monk Quests

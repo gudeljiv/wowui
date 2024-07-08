@@ -1,15 +1,15 @@
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #group RestedXP Cataclysm Preparation
 #name QuestDB
 #internal
 step
-.setquestdb {[7163]={["repfaction"]=729,["previousQuest"]=7161,["reputation"]="friendly",["xp"]=27750,["appliesTo"]="Horde"},[7164]={["repfaction"]=729,["reputation"]="honored",["xp"]=27750,["appliesTo"]="Horde"},[7165]={["repfaction"]=729,["reputation"]="revered",["xp"]=34650,["appliesTo"]="Horde"},[7166]={["repfaction"]=729,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Horde"},[7167]={["repfaction"]=729,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Horde"},[7168]={["repfaction"]=730,["previousQuest"]=7162,["reputation"]="friendly",["xp"]=27750,["appliesTo"]="Alliance"},[7169]={["repfaction"]=730,["reputation"]="honored",["xp"]=27750,["appliesTo"]="Alliance"},[7170]={["repfaction"]=730,["reputation"]="revered",["xp"]=34650,["appliesTo"]="Alliance"},[7171]={["repfaction"]=730,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Alliance"},[7172]={["repfaction"]=730,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Alliance"},[24815]={["repfaction"]=1156,["xp"]=22050,["reputation"]="friendly"},[24825]={["repfaction"]=1156,["uniqueWith"]={24826,25239,24828},["xp"]=22050,["reputation"]="honored",},[24830]={["repfaction"]=1156,["uniqueWith"]={24832,25240,24823},["xp"]=22050,["reputation"]="revered"},[24831]={["repfaction"]=1156,["uniqueWith"]={24833,24829,24835},["xp"]=22050,["reputation"]="exalted"},[7142]={["priority"]=1,["appliesTo"]="Horde",["previousQuest"]=7222,["xp"]=41550,["questLog"]=true},[7141]={["priority"]=1,["appliesTo"]="Alliance",["previousQuest"]=7221,["xp"]=41550,["questLog"]=true},[13364]={["priority"]=9,["appliesTo"]="Horde",["previousQuest"]=13363,["xp"]=33100,["questLog"]=true},[13403]={["priority"]=9,["appliesTo"]="Alliance",["previousQuest"]=13402,["xp"]=33100,["questLog"]=true},[13207]={["priority"]=3,["xp"]=43200,["questLog"]=true},[29848]={["priority"]=24,["xp"]=27000,["questLog"]=true},[29850]={["priority"]=24,["xp"]=27000,["questLog"]=true},[26034]={["priority"]=4,["previousQuest"]=26013,["xp"]=33750,["questLog"]=true},[12948]={["priority"]=19,["previousQuest"]=12936,["xp"]=32400,["questLog"]=true},[29861]={["priority"]=2,["xp"]=44100,["questLog"]=true},[29860]={["priority"]=2,["xp"]=33100,["questLog"]=true},[29862]={["priority"]=6,["xp"]=33100,["questLog"]=true},[78752]={["priority"]=2,["xp"]=44100,["questLog"]=true},[78753]={["priority"]=2,["xp"]=44100,["questLog"]=true},[13131]={["priority"]=2,["xp"]=33100,["questLog"]=true},[13132]={["priority"]=2,["xp"]=44100,["questLog"]=true},[29864]={["priority"]=6,["xp"]=33100,["questLog"]=true},[29834]={["priority"]=3,["group"]="galdarah",["xp"]=43200,["questLog"]=true},[29835]={["priority"]=3,["group"]="galdarah",["xp"]=43200,["questLog"]=true},[29839]={["priority"]=3,["group"]="oneofakind",["xp"]=32400,["questLog"]=true},[29838]={["priority"]=3,["group"]="oneofakind",["xp"]=32400,["questLog"]=true},[29844]={["priority"]=3,["group"]="forposterity",["xp"]=32400,["questLog"]=true},[29840]={["priority"]=3,["group"]="forposterity",["xp"]=32400,["questLog"]=true},[29830]={["priority"]=3,["xp"]=42800,["questLog"]=true},[13007]={["priority"]=7,["previousQuest"]=12998,["xp"]=33100,["questLog"]=true},[13187]={["priority"]=3,["xp"]=42300,["questLog"]=true,},[13164]={["priority"]=8,["previousQuest"]=13162,["xp"]=33100,["questLog"]=true},[13129]={["priority"]=5,["previousQuest"]=12037,["xp"]=33200,["questLog"]=true},[29828]={["priority"]=24,["previousQuest"]=12037,["xp"]=24900,["questLog"]=true},[29808]={["priority"]=5,["xp"]=33200,["questLog"]=true},[29811]={["priority"]=5,["xp"]=33200,["questLog"]=true},[29807]={["priority"]=5,["xp"]=33200,["questLog"]=true},[12713]={["priority"]=20,["previousQuest"]=12676,["xp"]=31750,["questLog"]=true},[12919]={["priority"]=21,["previousQuest"]=12916,["xp"]=31750,["questLog"]=true},[12624]={["priority"]=22,["xp"]=31750,["questLog"]=true},[12236]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12242,["xp"]=31450,["questLog"]=true},[12249]={["priority"]=23,["appliesTo"]="Alliance",["previousQuest"]=12250,["xp"]=31450,["questLog"]=true},[12164]={["priority"]=23,["previousQuest"]=12411,["xp"]=31450,["questLog"]=true},[12097]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12095,["xp"]=31450,["questLog"]=true},[12431]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12430,["xp"]=31450,["questLog"]=true},[13142]={["priority"]=12,["previousQuest"]=13137,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13214]={["priority"]=13,["previousQuest"]=13213,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13215]={["priority"]=14,["previousQuest"]=13214,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13216]={["priority"]=15,["previousQuest"]=13215,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13217]={["priority"]=16,["previousQuest"]=13216,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13218]={["priority"]=17,["previousQuest"]=13217,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13219]={["priority"]=18,["previousQuest"]=13218,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13368]={["priority"]=11,["appliesTo"]="Horde",["previousQuest"]=13367,["xp"]=33100,["questLog"]=true},[13350]={["priority"]=11,["appliesTo"]="Alliance",["previousQuest"]=13346,["xp"]=33100,["questLog"]=true},[13281]={["priority"]=10,["appliesTo"]="Horde",["previousQuest"]=13279,["xp"]=33100,["questLog"]=true},[13297]={["priority"]=10,["appliesTo"]="Alliance",["previousQuest"]=13295,["xp"]=33100,["questLog"]=true},[12730]={["priority"]=19,["previousQuest"]=12729,["xp"]=32400,["questLog"]=true},[13309]={["priority"]=28,["appliesTo"]="Alliance",["previousQuest"]=13341,["xp"]=22050,["questLog"]=true},[13310]={["priority"]=28,["appliesTo"]="Horde",["previousQuest"]=13340,["xp"]=22050,["questLog"]=true},[13284]={["priority"]=27,["appliesTo"]="Alliance",["previousQuest"]=13341,["xp"]=22050,["questLog"]=true},[13301]={["priority"]=27,["appliesTo"]="Horde",["previousQuest"]=13340,["xp"]=22050,["questLog"]=true},[13300]={["priority"]=25,["appliesTo"]="Alliance",["previousQuest"]=13225,["xp"]=22050,["questLog"]=true},[13302]={["priority"]=25,["appliesTo"]="Horde",["previousQuest"]=13224,["xp"]=22050,["questLog"]=true},[13336]={["priority"]=24,["appliesTo"]="Alliance",["previousQuest"]=13225,["xp"]=22050,["questLog"]=true},[13330]={["priority"]=24,["appliesTo"]="Horde",["previousQuest"]=13224,["xp"]=22050,["questLog"]=true},[12995]={["priority"]=30,["previousQuest"]=12943,["xp"]=22050,["questLog"]=true},[13071]={["priority"]=31,["previousQuest"]=12992,["xp"]=22050,["questLog"]=true},[13069]={["priority"]=32,["previousQuest"]=12982,["xp"]=22050,["questLog"]=true},[12838]={["priority"]=34,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[12813]={["priority"]=33,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[12815]={["priority"]=35,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[13289]={["priority"]=28,["appliesTo"]="Alliance",["previousQuest"]=13288,["xp"]=22050,["questLog"]=true},[13276]={["priority"]=28,["appliesTo"]="Horde",["previousQuest"]=13264,["xp"]=22050,["questLog"]=true},[13323]={["priority"]=29,["appliesTo"]="Alliance",["previousQuest"]=13318,["xp"]=22050,["questLog"]=true},[13353]={["priority"]=29,["appliesTo"]="Horde",["previousQuest"]=13352,["xp"]=22050,["questLog"]=true},[13280]={["priority"]=26,["appliesTo"]="Alliance",["previousQuest"]=13296,["xp"]=22050,["questLog"]=true},[13283]={["priority"]=26,["appliesTo"]="Horde",["previousQuest"]=13293,["xp"]=22050,["questLog"]=true},[13344]={["priority"]=30,["appliesTo"]="Alliance",["previousQuest"]=13318,["xp"]=22050,["questLog"]=true},[13365]={["priority"]=30,["appliesTo"]="Horde",["previousQuest"]=13352,["xp"]=22050,["questLog"]=true},[12500]={["appliesTo"]="Horde",["previousQuest"]=12498,["xp"]=24900,},[12499]={["appliesTo"]="Alliance",["previousQuest"]=12498,["xp"]=24900,},[12696]={["xp"]=5350},[28790]={["appliesTo"]="Horde",["xp"]=29725},[28825]={["appliesTo"]="Alliance",["xp"]=29725},[13416]={["appliesTo"]="Horde",["previousQuest"]=12927,["xp"]=104750,["itemId"]=40971,["itemAmount"]=1},[13415]={["appliesTo"]="Alliance",["previousQuest"]=12860,["xp"]=33100,["itemId"]=40971,["itemAmount"]=1},[13034]={["appliesTo"]="Horde",["xp"]=22050},[13009]={["xp"]=22050},[12976]={["previousQuest"]=12975,["xp"]=11050},[12548]={["previousQuest"]=12613,["xp"]=59400},[12539]={["previousQuest"]=12537,["xp"]=42800},[13068]={["previousQuest"]=13141,["xp"]=221450},[13375]={["xp"]=44100,["itemId"]=44577,["itemAmount"]=1},[24429]={["appliesTo"]="Horde",["xp"]=33100,["itemId"]=49643,["itemAmount"]=1},[24428]={["appliesTo"]="Horde",["xp"]=33100,["itemId"]=49644,["itemAmount"]=1},[13631]={["xp"]=44100,["itemId"]=46052,["itemAmount"]=1},[13819]={["xp"]=44100,["itemId"]=46053,["itemAmount"]=1},[12085]={["appliesTo"]="Horde",["xp"]=8120,["itemId"]=36780,["itemAmount"]=1},[12067]={["appliesTo"]="Alliance",["xp"]=8120,["itemId"]=36756,["itemAmount"]=1},[12147]={["appliesTo"]="Horde",["xp"]=12300,["itemId"]=36856,["itemAmount"]=1},[12146]={["appliesTo"]="Alliance",["xp"]=12300,["itemId"]=36855,["itemAmount"]=1},[12059]={["appliesTo"]="Horde",["xp"]=4060,["itemId"]=36746,["itemAmount"]=1},[12055]={["appliesTo"]="Alliance",["xp"]=4060,["itemId"]=36742,["itemAmount"]=1},[12057]={["appliesTo"]="Horde",["xp"]=8940,["itemId"]=36744,["itemAmount"]=1},[12168]={["appliesTo"]="Alliance",["xp"]=820,["itemId"]=36958,["itemAmount"]=1},[12271]={["appliesTo"]="Horde",["xp"]=4060,["itemId"]=37432,["itemAmount"]=1},[12419]={["xp"]=5250,["itemId"]=37833,["itemAmount"]=1},[12839]={["xp"]=22050,["itemId"]=40666,["itemAmount"]=1},[14095]={["title"]=123,["xp"]=22050,["itemId"]=46955,["itemAmount"]=1},[12888]={["appliesTo"]="engineering",["xp"]=38600,["itemId"]=41267,["itemAmount"]=1},[13420]={["xp"]=21400,["itemId"]=44725,["itemAmount"]=1},[24554]={["appliesTo"]="Horde",["xp"]=38600,["itemId"]=50380,["itemAmount"]=1},[14443]={["appliesTo"]="Alliance",["xp"]=38600,["itemId"]=50379,["itemAmount"]=1},[12565]={["xp"]=21150,["itemId"]=38551,["itemAmount"]=10},[12655]={["xp"]=21400,["itemId"]=38551,["itemAmount"]=10},[12615]={["xp"]=21400,["itemId"]=38551,["itemAmount"]=10},[13092]={["xp"]=22050,["itemId"]=43089,["itemAmount"]=15},[12882]={["appliesTo"]="Alliance",["xp"]=21600,["itemId"]=42780,["itemAmount"]=10},[12870]={["appliesTo"]="Alliance",["xp"]=21600,["itemId"]=42780,["itemAmount"]=10}}
+.setquestdb {[7163]={["repfaction"]=729,["previousQuest"]=7161,["reputation"]="friendly",["xp"]=27750,["appliesTo"]="Horde"},[7164]={["repfaction"]=729,["reputation"]="honored",["xp"]=27750,["appliesTo"]="Horde"},[7165]={["repfaction"]=729,["reputation"]="revered",["xp"]=34650,["appliesTo"]="Horde"},[7166]={["repfaction"]=729,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Horde"},[7167]={["repfaction"]=729,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Horde"},[7168]={["repfaction"]=730,["previousQuest"]=7162,["reputation"]="friendly",["xp"]=27750,["appliesTo"]="Alliance"},[7169]={["repfaction"]=730,["reputation"]="honored",["xp"]=27750,["appliesTo"]="Alliance"},[7170]={["repfaction"]=730,["reputation"]="revered",["xp"]=34650,["appliesTo"]="Alliance"},[7171]={["repfaction"]=730,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Alliance"},[7172]={["repfaction"]=730,["reputation"]="exalted",["xp"]=41550,["appliesTo"]="Alliance"},[24815]={["repfaction"]=1156,["xp"]=22050,["reputation"]="friendly"},[24825]={["repfaction"]=1156,["uniqueWith"]={24826,25239,24828},["xp"]=22050,["reputation"]="honored",},[24830]={["repfaction"]=1156,["uniqueWith"]={24832,25240,24823},["xp"]=22050,["reputation"]="revered"},[24831]={["repfaction"]=1156,["uniqueWith"]={24833,24829,24835},["xp"]=22050,["reputation"]="exalted"},[7142]={["priority"]=1,["appliesTo"]="Horde",["previousQuest"]=7222,["xp"]=41550,["questLog"]=true},[7141]={["priority"]=1,["appliesTo"]="Alliance",["previousQuest"]=7221,["xp"]=41550,["questLog"]=true},[13364]={["priority"]=9,["appliesTo"]="Horde",["previousQuest"]=13363,["xp"]=33100,["questLog"]=true},[13403]={["priority"]=9,["appliesTo"]="Alliance",["previousQuest"]=13402,["xp"]=33100,["questLog"]=true},[13207]={["priority"]=3,["xp"]=43200,["questLog"]=true},[29848]={["priority"]=24,["xp"]=27000,["questLog"]=true},[29850]={["priority"]=24,["xp"]=27000,["questLog"]=true},[26034]={["priority"]=4,["previousQuest"]=26013,["xp"]=33750,["questLog"]=true},[12948]={["priority"]=19,["previousQuest"]=12936,["xp"]=32400,["questLog"]=true},[29861]={["priority"]=2,["xp"]=44100,["questLog"]=true},[29860]={["priority"]=2,["xp"]=33100,["questLog"]=true},[29862]={["priority"]=6,["xp"]=33100,["questLog"]=true},[78752]={["priority"]=2,["xp"]=44100,["questLog"]=true},[78753]={["priority"]=2,["xp"]=44100,["questLog"]=true},[13131]={["priority"]=2,["xp"]=33100,["questLog"]=true},[13132]={["priority"]=2,["xp"]=44100,["questLog"]=true},[29864]={["priority"]=6,["xp"]=33100,["questLog"]=true},[29834]={["priority"]=3,["group"]="galdarah",["xp"]=43200,["questLog"]=true},[29835]={["priority"]=3,["group"]="galdarah",["xp"]=43200,["questLog"]=true},[29839]={["priority"]=3,["group"]="oneofakind",["xp"]=32400,["questLog"]=true},[29838]={["priority"]=3,["group"]="oneofakind",["xp"]=32400,["questLog"]=true},[29844]={["priority"]=3,["group"]="forposterity",["xp"]=32400,["questLog"]=true},[29840]={["priority"]=3,["group"]="forposterity",["xp"]=32400,["questLog"]=true},[29830]={["priority"]=3,["xp"]=42800,["questLog"]=true},[13007]={["priority"]=7,["previousQuest"]=12998,["xp"]=33100,["questLog"]=true},[13187]={["priority"]=3,["xp"]=42300,["questLog"]=true,},[13164]={["priority"]=8,["previousQuest"]=13162,["xp"]=33100,["questLog"]=true},[13129]={["priority"]=5,["previousQuest"]=12037,["xp"]=33200,["questLog"]=true},[29828]={["priority"]=24,["previousQuest"]=12037,["xp"]=24900,["questLog"]=true},[29808]={["priority"]=5,["xp"]=33200,["questLog"]=true},[29811]={["priority"]=5,["xp"]=33200,["questLog"]=true},[29807]={["priority"]=5,["xp"]=33200,["questLog"]=true},[12713]={["priority"]=20,["previousQuest"]=12676,["xp"]=31750,["questLog"]=true},[12919]={["priority"]=21,["previousQuest"]=12916,["xp"]=31750,["questLog"]=true},[12624]={["priority"]=22,["xp"]=31750,["questLog"]=true},[12236]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12242,["xp"]=31450,["questLog"]=true},[12249]={["priority"]=23,["appliesTo"]="Alliance",["previousQuest"]=12250,["xp"]=31450,["questLog"]=true},[12164]={["priority"]=23,["previousQuest"]=12411,["xp"]=31450,["questLog"]=true},[12097]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12095,["xp"]=31450,["questLog"]=true},[12431]={["priority"]=23,["appliesTo"]="Horde",["previousQuest"]=12430,["xp"]=31450,["questLog"]=true},[13142]={["priority"]=12,["previousQuest"]=13137,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13214]={["priority"]=13,["previousQuest"]=13213,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13215]={["priority"]=14,["previousQuest"]=13214,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13216]={["priority"]=15,["previousQuest"]=13215,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13217]={["priority"]=16,["previousQuest"]=13216,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13218]={["priority"]=17,["previousQuest"]=13217,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13219]={["priority"]=18,["previousQuest"]=13218,["group"]="Valhalas",["xp"]=33100,["questLog"]=true},[13368]={["priority"]=11,["appliesTo"]="Horde",["previousQuest"]=13367,["xp"]=33100,["questLog"]=true},[13350]={["priority"]=11,["appliesTo"]="Alliance",["previousQuest"]=13346,["xp"]=33100,["questLog"]=true},[13281]={["priority"]=10,["appliesTo"]="Horde",["previousQuest"]=13279,["xp"]=33100,["questLog"]=true},[13297]={["priority"]=10,["appliesTo"]="Alliance",["previousQuest"]=13295,["xp"]=33100,["questLog"]=true},[12730]={["priority"]=19,["previousQuest"]=12729,["xp"]=32400,["questLog"]=true},[13309]={["priority"]=28,["appliesTo"]="Alliance",["previousQuest"]=13341,["xp"]=22050,["questLog"]=true},[13310]={["priority"]=28,["appliesTo"]="Horde",["previousQuest"]=13340,["xp"]=22050,["questLog"]=true},[13284]={["priority"]=27,["appliesTo"]="Alliance",["previousQuest"]=13341,["xp"]=22050,["questLog"]=true},[13301]={["priority"]=27,["appliesTo"]="Horde",["previousQuest"]=13340,["xp"]=22050,["questLog"]=true},[13300]={["priority"]=25,["appliesTo"]="Alliance",["previousQuest"]=13225,["xp"]=22050,["questLog"]=true},[13302]={["priority"]=25,["appliesTo"]="Horde",["previousQuest"]=13224,["xp"]=22050,["questLog"]=true},[13336]={["priority"]=24,["appliesTo"]="Alliance",["previousQuest"]=13225,["xp"]=22050,["questLog"]=true},[13330]={["priority"]=24,["appliesTo"]="Horde",["previousQuest"]=13224,["xp"]=22050,["questLog"]=true},[12995]={["priority"]=30,["previousQuest"]=12943,["xp"]=22050,["questLog"]=true},[13071]={["priority"]=31,["previousQuest"]=12992,["xp"]=22050,["questLog"]=true},[13069]={["priority"]=32,["previousQuest"]=12982,["xp"]=22050,["questLog"]=true},[12838]={["priority"]=34,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[12813]={["priority"]=33,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[12815]={["priority"]=35,["previousQuest"]=12807,["xp"]=22050,["questLog"]=true},[13289]={["priority"]=28,["appliesTo"]="Alliance",["previousQuest"]=13288,["xp"]=22050,["questLog"]=true},[13276]={["priority"]=28,["appliesTo"]="Horde",["previousQuest"]=13264,["xp"]=22050,["questLog"]=true},[13323]={["priority"]=29,["appliesTo"]="Alliance",["previousQuest"]=13318,["xp"]=22050,["questLog"]=true},[13353]={["priority"]=29,["appliesTo"]="Horde",["previousQuest"]=13352,["xp"]=22050,["questLog"]=true},[13280]={["priority"]=26,["appliesTo"]="Alliance",["previousQuest"]=13296,["xp"]=22050,["questLog"]=true},[13283]={["priority"]=26,["appliesTo"]="Horde",["previousQuest"]=13293,["xp"]=22050,["questLog"]=true},[13344]={["priority"]=30,["appliesTo"]="Alliance",["previousQuest"]=13318,["xp"]=22050,["questLog"]=true},[13365]={["priority"]=30,["appliesTo"]="Horde",["previousQuest"]=13352,["xp"]=22050,["questLog"]=true},[12500]={["appliesTo"]="Horde",["previousQuest"]=12498,["xp"]=24900,},[12499]={["appliesTo"]="Alliance",["previousQuest"]=12498,["xp"]=24900,},[12696]={["xp"]=5350},[28790]={["appliesTo"]="Horde",["xp"]=29725},[28825]={["appliesTo"]="Alliance",["xp"]=29725},[13416]={["appliesTo"]="Horde",["previousQuest"]=12927,["xp"]=104750,["itemId"]=40971,["itemAmount"]=1},[13415]={["appliesTo"]="Alliance",["previousQuest"]=12860,["xp"]=33100,["itemId"]=40971,["itemAmount"]=1},[13034]={["appliesTo"]="Horde",["xp"]=22050},[13009]={["xp"]=22050},[12976]={["previousQuest"]=12975,["xp"]=11050},[12548]={["previousQuest"]=12613,["xp"]=59400},[12539]={["previousQuest"]=12537,["xp"]=42800},[13072]={["previousQuest"]=13068,["xp"]=221450},[13375]={["xp"]=44100,["itemId"]=44577,["itemAmount"]=1},[24429]={["appliesTo"]="Horde",["xp"]=33100,["itemId"]=49643,["itemAmount"]=1},[24428]={["appliesTo"]="Horde",["xp"]=33100,["itemId"]=49644,["itemAmount"]=1},[13631]={["xp"]=44100,["itemId"]=46052,["itemAmount"]=1},[13819]={["xp"]=44100,["itemId"]=46053,["itemAmount"]=1},[12085]={["appliesTo"]="Horde",["xp"]=8120,["itemId"]=36780,["itemAmount"]=1},[12067]={["appliesTo"]="Alliance",["xp"]=8120,["itemId"]=36756,["itemAmount"]=1},[12147]={["appliesTo"]="Horde",["xp"]=12300,["itemId"]=36856,["itemAmount"]=1},[12146]={["appliesTo"]="Alliance",["xp"]=12300,["itemId"]=36855,["itemAmount"]=1},[12059]={["appliesTo"]="Horde",["xp"]=4060,["itemId"]=36746,["itemAmount"]=1},[12055]={["appliesTo"]="Alliance",["xp"]=4060,["itemId"]=36742,["itemAmount"]=1},[12057]={["appliesTo"]="Horde",["xp"]=8940,["itemId"]=36744,["itemAmount"]=1},[12168]={["appliesTo"]="Alliance",["xp"]=820,["itemId"]=36958,["itemAmount"]=1},[12271]={["appliesTo"]="Horde",["xp"]=4060,["itemId"]=37432,["itemAmount"]=1},[12419]={["xp"]=5250,["itemId"]=37833,["itemAmount"]=1},[12839]={["xp"]=22050,["itemId"]=40666,["itemAmount"]=1},[14095]={["title"]=123,["xp"]=22050,["itemId"]=46955,["itemAmount"]=1},[12888]={["appliesTo"]="engineering",["xp"]=38600,["itemId"]=41267,["itemAmount"]=1},[13420]={["xp"]=21400,["itemId"]=44725,["itemAmount"]=1},[24554]={["appliesTo"]="Horde",["xp"]=38600,["itemId"]=50380,["itemAmount"]=1},[14443]={["appliesTo"]="Alliance",["xp"]=38600,["itemId"]=50379,["itemAmount"]=1},[12565]={["xp"]=21150,["itemId"]=38551,["itemAmount"]=10},[12655]={["xp"]=21400,["itemId"]=38551,["itemAmount"]=10},[12615]={["xp"]=21400,["itemId"]=38551,["itemAmount"]=10},[13092]={["xp"]=22050,["itemId"]=43089,["itemAmount"]=15},[12882]={["appliesTo"]="Alliance",["xp"]=21600,["itemId"]=42780,["itemAmount"]=10},[12870]={["appliesTo"]="Alliance",["xp"]=21600,["itemId"]=42780,["itemAmount"]=10}}
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -20,7 +20,7 @@ RXPGuides.RegisterGuide([[
 step
 #sticky
 +Welcome to the RXP 80-81 Prep guide!
-+Before you begin, make sure to join a guild if you are not in one already. This will get you a lot of reputation with your guild to a point where you will be able to purchase herilooms for additional 15% additional experience when turning in prepared quests.
++Before you begin, make sure to join a guild if you are not in one already. This will get you a lot of reputation with your guild to a point where you will be able to purchase herilooms as well as cloaks to teleport to your faction's main city.
 +Feel free to use "Total XP prepared" guide to check on your progress and have a look at your best available quests for the questlog guide.
 +Start with the Instant quest turn ins and 25 Questlog prep chapters and make sure to finish Collectable items guide before rounding everything out with Dungeons and Raids part of the guide, this will make sure you are prepared with as many optimal quests and quest starting items for Cataclysm launch.
 +Then check out Turn In Day Speed Assistant to speed up your turn in route
@@ -30,7 +30,27 @@ step << skip
 +Once you finish the guide, it is highly recommended you copy your character over to the PTR and give the Turn in Guide a test whirl on the PTR so you know the route better!
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
+#wotlk
+#cata
+#include QuestDB
+#group RestedXP Cataclysm Preparation
+
+#name Turn In Day Speed Assistant
+step
++Some items of note that you can collect to navigate through the turn-in guide faster are the following:
+>>|cRXP_LOOT_[Signet of the Kirin Tor]|r or any of the upgraded versions, bought from |cRXP_FRIENDLY_Harold Winston|r in Dalaran's Jewelcrafting store.
+>>|cRXP_LOOT_[Shroud of Cooperation]|r or any of the upgraded verions, bought from your faction's Guild Vendor in Orgrimmar or Stormwind. It requires Honored reputation with your guild to be purchased. It is required for the end of turn in guide.
+>>|cRXP_LOOT_[Argent Crusader's Tabard]|r can be bought from |cRXP_FRIENDLY_Dame Evniki Kapsalis|r, Crusader's Quartermaster at Argent Tournament, Icecrown. The price is 50 |cRXP_LOOT_[Champion's Seal]|r and it might require a few days worth of daily quests.
+>>|cRXP_LOOT_[Jaina's Locket]|r is a reward for completing legendary Shadowmourne and it can be traded if not already soulbound. It is not worth spending gold on this unles you already have one.
+>>|cRXP_LOOT_[Wormhole Generator: Northrend]|r is Engineering exclusive toy, and even with 2 hour cooldown it can come in handy to teleport to nearly any zone in Northrend.
+.train 90267>>Make sure you purchase a |T237446:0|t|cRXP_PICK_Flight Master's License|r from Stormwind or Orgrimmar so you can fly in the Cataclysm zones
++After that, you can think about purchasing a stack of potions that can help you moving around:
+>>|cRXP_LOOT_[Swim Speed Potion]|r will help you in situations where you can't avoid water. This might come in very handy in beginning steps of Vashj'ir, until you get your underwater mount and swim speed enchant.
+>>|cRXP_LOOT_[Swiftness Potion]|r will always be useful for quickly going through indoors areas.
+]])
+RXPGuides.RegisterGuide([[
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -1599,7 +1619,7 @@ step << Alliance
 
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -2061,7 +2081,14 @@ step
 .goto IcecrownGlacier,79.79,71.76
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
 .turnin 13157 >>Turn in The Crusaders' Pinnacle
+.accept 13068 >>Accept A Tale of Valor
 .target Highlord Tirion Fordring
+step
+.goto IcecrownGlacier,79.85,30.82
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bridenbrad|r
+>>|cRXP_WARN_Do NOT continue this questline after turning this in|r
+.turnin 13068 >>Turn in A Tale of Valor
+.target Crusader Bridenbrad
 
 step
 #completewith next
@@ -2608,7 +2635,7 @@ step
 +Congratulations, you have finished the guide to preparing free turn in quests!
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -3398,7 +3425,7 @@ step
 +Congratulations on gathering required collectable items for the turn in guide!
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -3416,7 +3443,7 @@ step
 .show25quests >> CLICK HERE to see the list of 25 best quests for your character
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -4397,7 +4424,7 @@ step << Horde
 .isOnQuest 12236
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -6154,7 +6181,7 @@ step
 .mob Iron Colossus
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -8774,12 +8801,10 @@ step
 step
 .requires quest,13297,13281
 .goto IcecrownGlacier,62.26,63.37
->>|cRXP_WARN_===YOU ARE UNABLE TO SOLO THIS QUEST===|r
 >>|cRXP_WARN_Channel the|r |T134816:0|t[Pustulant Spinal Fluid] |cRXP_WARN_at a Cauldron|r
 >>|cRXP_WARN_Kill |cRXP_ENEMY_Rampaging Ghouls|r and |cRXP_ENEMY_Living Plague|r when they spawn|r
 >>|cRXP_WARN_When prompted to "Add Fluid Soon" or "Add fluid NOW!!", you or your fellow party member must channel the|r |T134816:0|t[Pustulant Spinal Fluid] |cRXP_WARN_at the Cauldron again|r
 >>|cRXP_WARN_If prompted that the "Neutralizing agent FAILED!", channel the|r |T134816:0|t[Pustulant Spinal Fluid] |cRXP_WARN_to start the event again|r
->>|cRXP_WARN_Find a group for this quest.|r
 .complete 13295,1 << Alliance 
 .complete 13279,1 << Horde 
 .mob Living Plague
@@ -8947,7 +8972,6 @@ step
 step
 .requires quest,13297,13281
 .goto IcecrownGlacier,62.26,63.37
->>|cRXP_WARN_===YOU ARE UNABLE TO SOLO THIS QUEST===|r
 >>|cRXP_WARN_Channel the|r |T134816:0|t[Pustulant Spinal Fluid] |cRXP_WARN_at a Cauldron|r
 >>|cRXP_WARN_Kill |cRXP_ENEMY_Rampaging Ghouls|r and |cRXP_ENEMY_Living Plague|r when they spawn|r
 >>|cRXP_WARN_When prompted to "Add Fluid Soon" or "Add fluid NOW!!", you or your fellow party member must channel the|r |T134816:0|t[Pustulant Spinal Fluid] |cRXP_WARN_at the Cauldron again|r
@@ -9557,7 +9581,7 @@ step
 .complete 12624,1 
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #cata
 #include QuestDB
@@ -9679,7 +9703,7 @@ step
 .accept 29828 >> Accept What the Scourge Dred
 step
 .requires quest,13129
->>Kill |cRXP_ENEMY_Novos the Summoner|r and use |T132606:0|t[Kurzel's Blouse Scrap] on his corpse
+>>Kill |cRXP_ENEMY_Novos the Summoner|r and use |T237278:0|t[Kurzel's Blouse Scrap] on his corpse
 >>|cRXP_WARN_Do NOT turn this quest in|r
 .use 43214
 .complete 13129,1 
@@ -10022,4 +10046,1532 @@ step
 .mob Halion
 step
 +Congratulations on preparing for cata launch!
+]])
+RXPGuides.RegisterGuide([[
+#version 9
+#wotlk
+#cata
+#include QuestDB
+#group RestedXP Cataclysm Preparation
+
+#name Launch Turn in Guide
+step
+>>Welcome to the launch day turn in guide, DO NOT do this guide on official server until the release day. If you wish to run a test, copy your character with prepared quests on to the beta testing server and do it there.
++Before starting, make sure that your Hearthstone is set to Agmar's Hammer fortress << Horde
++Before starting, make sure that your Hearthstone is set to Star's Rest camp << Alliance
+
+step
+.isOnQuest 13207,29848,29850
+#completewith lasthos
++Pre-clear Halls of Stone dungeon and defeat the Tribunal of Ages boss room so that Brann relocates near the enterance
+step
+.isOnQuest 13207
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.turnin 13207 >> Turn in Halls of Stone
+.target Brann Bronzebeard
+step
+.isQuestTurnedIn 13207
+.isOnQuest 29848,29850
+#completewith lasthos
++Enter Halls of Stone dungeon and turn in your quests
+.goto TheStormPeaks,39.9,26.9
+.zoneskip Halls of Stone
+step
+.isOnQuest 29848
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaldir Ironbane|r
+.turnin 29848 >> Turn in The Forlorn Watcher
+.target Kaldir Ironbane
+step
+.isOnQuest 29850
+#label lasthos
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaldir Ironbane|r
+.turnin 29850 >> Turn in Corrupt Constructs
+.target Kaldir Ironbane
+
+step
+.isOnQuest 29860,29861,29862
+#completewith lasthol
++Exit Halls of Stone and Head towards Halls of Lightning
+.goto TheStormPeaks,45.4,21.4
+.zoneskip Halls of Lightning
+step
+.isOnQuest 29860
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stormherald Eljrrin|r
+.turnin 29860 >> Turn in Diametrically Opposed
+.target Stormherald Eljrrin
+step
+.isOnQuest 29861
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stormherald Eljrrin|r
+.turnin 29861 >> Turn in Whatever it Takes!
+.target Stormherald Eljrrin
+step
+.isOnQuest 29862
+#label lasthol
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stormherald Eljrrin|r
+.turnin 29862 >> Turn in Clearing the Way
+.target Stormherald Eljrrin
+
+step
+#requires lasthol
+#completewith next
++Exit Halls of Lightning
+.zoneskip TheStormPeaks
+step << Horde
+.isQuestAvailable 13416
+.itemcount 40971,1
+.goto TheStormPeaks,37.7,45.3
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.accept 13416 >>Accept The Library Console
+.use 40971
+.target Brann Bronzebeard
+step << Alliance
+.isQuestAvailable 13415
+.itemcount 40971,1
+.goto TheStormPeaks,37.7,45.3
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.accept 13415 >>Accept The Library Console
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isOnQuest 13416
+.itemcount 40971,1
+.goto TheStormPeaks,37.43,46.83
+>>Click the |cRXP_PICK_Inventor's Library Console|r inside The Inventor's Library
+.turnin 13416 >>Turn in The Library Console
+step << Horde
+.isQuestTurnedIn 13416
+.goto TheStormPeaks,37.43,46.83
+>>Click the |cRXP_PICK_Inventor's Library Console|r inside The Inventor's Library
+.accept 12928 >>Accept Norgannon's Shell
+step << Alliance
+.isOnQuest 13415
+.goto TheStormPeaks,37.43,46.83
+>>Click the |cRXP_PICK_Inventor's Library Console|r inside The Inventor's Library
+.turnin 13415 >>Turn in The Library Console
+step << Alliance
+.isQuestTurnedIn 13415
+.goto TheStormPeaks,37.43,46.83
+>>Click the |cRXP_PICK_Inventor's Library Console|r inside The Inventor's Library
+.accept 12872 >>Accept Norgannon's Shell
+step << Horde
+.isOnQuest 12928
+#completewith NorgannonShh
+.goto TheStormPeaks,37.43,46.84
+.cast 55197 >> Use the |T134375:0|t[Charged Disk] to summon |cRXP_ENEMY_Archivist Mechaton|r
+.timer 50,Norgannon's Shell RP
+.use 44704
+step << Horde
+.isOnQuest 12928
+#label NorgannonShh
+.goto TheStormPeaks,37.53,46.52
+>>|cRXP_WARN_Wait out the RP|r
+>>Kill |cRXP_ENEMY_Archivist Mechaton|r. Loot him for his |cRXP_LOOT_Shell|r
+.complete 12928,1 
+.use 44704
+.mob Archivist Mechaton
+step << Alliance
+.isOnQuest 12872
+#completewith NorgannonSha
+.goto TheStormPeaks,37.43,46.84
+.cast 55197 >> Use the |T134375:0|t[Charged Disk] to summon |cRXP_ENEMY_Archivist Mechaton|r
+.timer 50,Norgannon's Shell RP
+.use 44704
+step << Alliance
+.isOnQuest 12872
+#label NorgannonSha
+.goto TheStormPeaks,37.53,46.52
+>>|cRXP_WARN_Wait out the RP|r
+>>Kill |cRXP_ENEMY_Archivist Mechaton|r. Loot him for his |cRXP_LOOT_Shell|r
+.complete 12872,1 
+.use 44704
+.mob Archivist Mechaton
+step << Alliance
+.isOnQuest 12872
+.goto TheStormPeaks,37.70,45.34
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r next to you (|cRXP_WARN_where you summoned him before|r)
+>>|cRXP_WARN_Summon him again with|r |T133866:0|t[|cRXP_LOOT_Brann's Communicator|r] |cRXP_WARN_if he disappeared|r
+.turnin 12872 >>Turn in Norgannon's Shell
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isOnQuest 12928
+.goto TheStormPeaks,37.70,45.34
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r next to you (|cRXP_WARN_where you summoned him before|r)
+>>|cRXP_WARN_Summon him again with|r |T133866:0|t[|cRXP_LOOT_Brann's Communicator|r] |cRXP_WARN_if he disappeared|r
+.turnin 12928 >>Turn in Norgannon's Shell
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isQuestTurnedIn 12928
+.goto TheStormPeaks,37.70,45.34
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r next to you (|cRXP_WARN_where you summoned him before|r)
+>>|cRXP_WARN_Summon him again with|r |T133866:0|t[|cRXP_LOOT_Brann's Communicator|r] |cRXP_WARN_if he disappeared|r
+.accept 13273 >>Accept Going After the Core
+.use 40971
+.target Brann Bronzebeard
+step
+.skill engineering,<400,1
+.itemcount 41267,1
+>>|cRXP_WARN_Make sure to prepare rest of engineering mats|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_SCRAP-E|r
+.use 41267
+.accept 12888 >> Accept SCRAP-E
+.turnin 12888 >> Turn in SCRAP-E
+.goto TheStormPeaks,37.6,46.6
+.target SCRAP-E
+step << Horde
+.isOnQuest 13273
+.goto TheStormPeaks,59.78,52.64
+>>Loot |cRXP_LOOT_Prospector Khrona's Notes|r on the crate
+.complete 13273,1 
+step << Horde
+.isOnQuest 13273
+.goto TheStormPeaks,59.25,51.48
+>>Loot |cRXP_LOOT_Prospector Soren's Notes|r on the crate
+.complete 13273,2 
+step << Horde
+.isOnQuest 13273
+#completewith next
+.cast 61122 >> Use |T133866:0|t[|cRXP_LOOT_Brann's Communicator|r] to summon |cRXP_FRIENDLY_Brann|r
+.use 40971
+step << Horde
+.isOnQuest 13273
+.goto TheStormPeaks,59.25,51.48
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.turnin 13273 >>Turn in Going After the Core
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isQuestTurnedIn 13273
+.goto TheStormPeaks,59.25,51.48
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.accept 13274 >>Accept The Core's Keeper
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isOnQuest 13274
+#completewith next
+.goto TheStormPeaks,56.40,58.46,20,0
+.goto TheStormPeaks,54.97,57.48,20 >> |cRXP_WARN_Fly through the hole 75% of the way down the mountain into Loken's Bargain|r
+step << Horde
+.isOnQuest 13274
+#completewith next
+.goto TheStormPeaks,55.69,54.34,40,0
+.goto TheStormPeaks,56.38,52.11,40 >>Travel toward |cRXP_ENEMY_Athan|r
+step << Horde
+.isOnQuest 13274
+.goto TheStormPeaks,56.38,52.11
+>>Kill |cRXP_ENEMY_Athan|r. Loot him for |cRXP_LOOT_Norgannon's Core|r
+.complete 13274,1 
+.mob Athan
+step << Horde
+.isOnQuest 13274
+#completewith next
+.cast 61122 >> Use |T133866:0|t[|cRXP_LOOT_Brann's Communicator|r] to summon |cRXP_FRIENDLY_Brann|r
+.use 40971
+step << Horde
+.isOnQuest 13274
+.goto TheStormPeaks,54.34,50.04
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.turnin 13274 >>Turn in The Core's Keeper
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+.isQuestTurnedIn 13274
+.goto TheStormPeaks,54.34,50.04
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann|r
+.accept 13285 >>Accept Forging the Keystone
+.use 40971
+.target Brann Bronzebeard
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xarantaur|r
+.accept 13034 >>Accept The Witness and the Hero
+.goto TheStormPeaks,65.77,51.41
+.target Xarantaur
+step << Horde
+>>Click the |cRXP_PICK_History Scrolls|r hanging off the walls
+.complete 13034,1 
+.goto TheStormPeaks,65.81,50.43,-1
+.complete 13034,2 
+.goto TheStormPeaks,66.84,50.10,-1
+.complete 13034,3 
+.goto TheStormPeaks,67.50,50.58,-1
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xarantaur|r
+.turnin 13034 >>Turn in The Witness and the Hero
+.goto TheStormPeaks,65.77,51.41
+.target Xarantaur
+step
+.isQuestTurnedIn 12975
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_King Jokkum|r and |cRXP_FRIENDLY_Njormeld|r
+.accept 12976 >>Accept A Monument to the Fallen
+.goto TheStormPeaks,65.45,60.16
+.turnin 12976 >>Turn in A Monument to the Fallen
+.goto TheStormPeaks,63.20,63.27
+.target King Jokkum
+.target Njormeld
+step
+.isQuestTurnedIn 12924
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Njormeld|r
+.accept 13009 >> Accept A New Beginning
+.goto TheStormPeaks,63.2,63.2
+.target Njormeld
+step
+>>|cRXP_WARN_Use the |T136222:0|t|cRXP_LOOT_Everfrost Chip|r to start the quest|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder|r
+.use 44725
+.accept 13420 >> Accept Everfrost
+.turnin 13420 >> Turn in Everfrost
+.goto TheStormPeaks,67.0,61.0
+.target Calder
+step << Horde
+.isOnQuest 13285
+#completewith next
+.goto TheStormPeaks,45.48,49.49,40 >>Fly up the Temple of Invention toward |cRXP_FRIENDLY_Brann|r
+step << Horde
+.isOnQuest 13285
+.goto TheStormPeaks,45.48,49.50
+.gossipoption 94560 >>Talk to |cRXP_FRIENDLY_Brann|r
+>>|cRXP_WARN_Wait out |cRXP_FRIENDLY_Brann|r's RP|r
+.complete 13285,1 
+.skipgossip
+.timer 55,Forging the Keystone RP
+.target Brann Bronzebeard
+step << Horde
+.isOnQuest 13285
+.goto TheStormPeaks,37.31,49.66
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Boktar|r
+.turnin 13285 >>Turn in Forging the Keystone
+.target Boktar Bloodfury
+step << Horde
+.isQuestAvailable 12882
+.itemcount 42780,10
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Olut Alegut|r
+.accept 12882 >> Accept Ancient Relics
+.turnin 12882 >> Turn in Ancient Relics
+.goto TheStormPeaks,37.0,49.6
+.target Olut Alegut
+step
+.isOnQuest 13009
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thorim|r
+>>|cRXP_WARN_He is all the way up at the Temple of Storms|r
+.turnin 13009 >> Turn in A New Beginning
+.goto TheStormPeaks,33.4,58.0
+.target Thorim
+step
+.isOnQuest 13007
+#completewith next
++|cRXP_WARN_Fly to Bouldercrag's Refuge|r
+.goto TheStormPeaks,31.4,38.0,50
+step
+.isOnQuest 13007
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bouldercrag|r
+.turnin 13007 >> Turn in The Iron Colossus
+.goto TheStormPeaks,31.4,38.0
+.target Bouldercrag the Rockshaper
+step
+.itemcount 46874,1
+#completewith QD1
++Use your |cRXP_LOOT_Argent Crusader's Tabard|r
+.cooldown item,46874,>0
+.use 46874
+step
+.itemcount 46955,1
+.use 46955
+>>Go to the Argent Tournament Grounds
+>>Use |T133725:0|t[Kraken Tooth] and accept the quest
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Silverdawn|r
+.accept 14095 >> Accept Identifying the Remains
+.turnin 14095 >> Turn in Identifying the Remains
+.goto IcecrownGlacier,69.6,23.2
+.target Crusader Silverdawn
+step
+.isQuestTurnedIn 13068
+.goto IcecrownGlacier,79.85,30.82
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bridenbrad|r
+.accept 13072 >>Accept A Hero Remains
+.target Crusader Bridenbrad
+step << Alliance
+#label QD1
+>>|cRXP_WARN_Use the |T136222:0|t|cRXP_LOOT_Battered Hilt|r to start the quest|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Caladis Brightspear|r
+.goto IcecrownGlacier,74.2,31.2
+.use 50379
+.accept 14443 >> Accept The Battered Hilt
+.turnin 14443 >> Turn in The Battered Hilt
+.accept 14444 >> Accept What The Dragons Know
+.target Caladis Brightspear
+step << Horde
+#label QD1
+>>|cRXP_WARN_Use the |T136222:0|t|cRXP_LOOT_Battered Hilt|r to start the quest|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Myralion Sunblaze|r
+.goto IcecrownGlacier,74.6,31.0
+.use 50380
+.accept 24554 >> Accept The Battered Hilt
+.turnin 24554 >> Turn in The Battered Hilt
+.accept 24555 >> Accept What The Dragons Know
+.target Myralion Sunblaze
+
+step << Horde
+.loop 40,IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_WARN_Fly up to Orgrim's Hammer, the Horde ship flying in the air|r
+.turnin 13368 >>Turn in No Rest For The Wicked
+.isQuestComplete 13368
+.target Koltira Deathweaver
+step << Alliance
+.loop 40,IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
+.turnin 13350 >>Turn in No Rest For The Wicked
+.isQuestComplete 13350
+.target Thassarian
+step << Horde
+.loop 40,IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_WARN_Fly up to Orgrim's Hammer, the Horde ship flying in the air|r
+.turnin 13281 >>Turn in Neutralizing the Plague
+.isQuestComplete 13281
+.target Koltira Deathweaver
+step << Alliance
+.loop 40,IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
+.turnin 13297 >>Turn in Neutralizing the Plague
+.isQuestComplete 13297
+.target Thassarian
+step << Alliance
+.line IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|cRXP_WARN_Go toward the back-left corner on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
+.turnin 13289 >>Turn in That's Abominable!
+.isQuestComplete 13289
+.target Thassarian
+step << Horde
+.line IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_WARN_Fly up to Orgrim's Hammer, the Horde ship flying in the air|r
+>>|cRXP_WARN_Go into the back room on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koltira|r
+.turnin 13276 >>Turn in That's Abominable!
+.isQuestComplete 13276
+.target Koltira Deathweaver
+step << Alliance
+.line IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|cRXP_WARN_Go toward the back-left corner on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
+.turnin 13323 >>Turn in Drag and Drop
+.isQuestComplete 13323
+.target Thassarian
+step << Horde
+.line IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_WARN_Fly up to Orgrim's Hammer, the Horde ship flying in the air|r
+>>|cRXP_WARN_Go into the back room on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koltira|r
+.turnin 13353 >>Turn in Drag and Drop
+.isQuestComplete 13353
+.target Koltira Deathweaver
+step << Alliance
+.line IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|cRXP_WARN_Go toward the back-left corner on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
+.turnin 13344 >>Turn in Not a Bug
+.isQuestComplete 13344
+.target Thassarian
+step << Horde
+.line IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_WARN_Fly up to Orgrim's Hammer, the Horde ship flying in the air|r
+>>|cRXP_WARN_Go into the back room on the top floor of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koltira|r
+.turnin 13365 >>Turn in Not a Bug
+.isQuestComplete 13365
+.target Koltira Deathweaver
+step << Alliance
+.line IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|cRXP_WARN_Look for |cRXP_FRIENDLY_Absalan|r at the back of the ship as well as the stairs to the left and the right|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Absalan|r
+.turnin 13300 >>Turn in Slaves to Saronite
+.isQuestComplete 13300
+.target Absalan the Pious
+step << Horde
+.line IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_FRIENDLY_Keltan|r |cRXP_WARN_patrols all over Orgrim's Hammer|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keltan|r
+.turnin 13302 >>Turn in Slaves to Saronite
+.target Warbringer Davos Rioht
+.target Brother Keltan
+.isQuestComplete 13302
+step << Alliance
+.line IcecrownGlacier,63.10,57.22,63.96,56.49,64.32,55.27,64.10,54.05,63.68,52.62,63.24,51.38,62.78,50.37,62.22,49.16,61.75,48.06,61.30,46.97,60.77,45.69,60.20,44.34,59.65,43.00,59.13,41.78,58.65,40.63,58.07,39.06,57.58,37.89,57.04,37.30,56.14,37.70,55.47,38.76,55.48,39.67,55.81,41.09,56.24,42.45,56.78,43.76,57.29,44.88,57.92,45.95,58.49,47.06,59.08,48.22,59.60,49.41,60.10,50.66,60.57,51.93,61.00,53.22,61.46,54.48,61.95,55.87,62.53,57.08,63.10,57.22
+>>|cRXP_WARN_Fly up to The Skybreaker, the Alliance ship flying in the air|r
+>>|cRXP_WARN_Go up the stairs to the top floor at the back of the ship|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drosche|r
+.turnin 13336 >>Turn in Blood of the Chosen
+.isQuestComplete 13336
+.target Knight-Captain Drosche
+step << Horde
+.line IcecrownGlacier,65.55,48.81,66.12,49.95,66.67,51.04,67.48,52.19,68.29,52.51,69.20,52.11,69.62,50.99,69.74,50.05,69.79,48.80,69.80,47.29,69.79,45.49,69.78,43.97,69.75,42.64,69.70,41.17,69.65,39.60,69.58,38.00,69.52,36.42,69.47,34.96,69.43,33.66,69.41,32.10,69.45,30.33,69.48,28.90,69.36,27.80,69.08,27.09,68.20,26.52,67.22,26.57,66.40,27.05,65.57,27.85,64.72,28.65,63.91,29.31,63.11,29.97,62.28,30.69,61.45,31.27,60.70,31.95,60.27,32.98,60.10,34.36,60.24,35.79,60.66,36.94,61.22,38.17,61.75,39.40,62.30,40.57,62.86,41.77,63.27,42.72,63.75,43.97,64.22,45.22,64.65,46.36,65.00,47.42,65.46,48.62,65.55,48.81
+>>|cRXP_FRIENDLY_Davos|r |cRXP_WARN_patrols all over Orgrim's Hammer|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Davos|r
+.turnin 13330 >>Turn in Blood of the Chosen
+.target Warbringer Davos Rioht
+.isQuestComplete 13330
+step << Alliance
+.goto Icecrown,62.55,51.29
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koup|r
+.turnin 13309 >>Turn in Assault by Air
+.isQuestComplete 13309
+.target Ground Commander Koup
+step << Horde
+.goto IcecrownGlacier,58.34,46.20
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xutjja|r
+.turnin 13310 >>Turn in Assault by Air
+.isQuestComplete 13310
+.target Ground Commander Xutjja
+step << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koup|r
+.goto Icecrown,62.60,51.35
+.turnin 13284 >>Turn in Assault by Ground
+.isQuestComplete 13284
+.target Ground Commander Koup
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xutjja|r
+.goto IcecrownGlacier,58.34,46.20
+.turnin 13301 >>Turn in Assault by Ground
+.isQuestComplete 13301
+.target Ground Commander Xutjja
+step << Alliance
+.goto Icecrown,56.97,62.55
+>>|cRXP_WARN_Exit the Jumobot|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Frazzle|r
+.turnin 13280 >>Turn in King of the Mountain
+.isQuestComplete 13280
+.target Frazzle Geargrinder
+step
+.goto IcecrownGlacier,79.79,71.76
+.isOnQuest 13403,13364
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
+.turnin 13403 >>Turn in Tirion's Gambit << Alliance
+.turnin 13364 >>Turn in Tirion's Gambit << Horde
+.target Highlord Tirion Fordring
+step << Horde
+.goto IcecrownGlacier,51.94,57.60
+>>|cRXP_WARN_Exit the Jumobot|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Blast|r
+.turnin 13283 >>Turn in King of the Mountain
+.isQuestComplete 13283
+.target Blast Thunderbomb
+step
+.goto IcecrownGlacier,79.79,71.76
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
+.turnin 13072 >>Turn in A Hero Remains
+.accept 13073 >>Accept The Keeper's Favor
+.target Highlord Tirion Fordring
+step
+#completewith next
+.goto IcecrownGlacier,87.07,77.03
+.gossipoption 94726 >>Talk to |cRXP_FRIENDLY_Lilliandra|r
+.target Arch Druid Lilliandra
+.skipgossip
+step
+#completewith next
+.goto IcecrownGlacier,87.00,77.07
+.zone Moonglade >> Take the |cRXP_FRIENDLY_Moonglade Portal|r to Moonglade
+.target Moonglade Portal
+step
+.goto Moonglade,36.18,41.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Remulos|r
+.turnin 13073 >>Turn in The Keeper's Favor
+.accept 13074 >>Accept Hope Within the Emerald Nightmare
+.target Keeper Remulos
+step
+#loop
+.line Moonglade,36.67,40.90,37.40,43.63,34.63,41.48,34.88,43.63,33.65,44.08,32.46,43.65,32.18,40.31,33.99,39.09,35.44,38.34,36.67,40.90
+.goto Moonglade,36.67,40.90,20,0
+.goto Moonglade,37.40,43.63,20,0
+.goto Moonglade,34.63,41.48,20,0
+.goto Moonglade,34.88,43.63,20,0
+.goto Moonglade,33.65,44.08,20,0
+.goto Moonglade,32.46,43.65,20,0
+.goto Moonglade,32.18,40.31,20,0
+.goto Moonglade,33.99,39.09,20,0
+.goto Moonglade,35.44,38.34,20,0
+.goto Moonglade,36.67,40.90,20,0
+>>Loot |cRXP_LOOT_Emerald Acorns|r on the ground
+>>|cRXP_WARN_Avoid being hit by |cRXP_ENEMY_Nightmare Aberrations|r as they'll remove|r |T136090:0|t[Fitful Dream]
+>>|cRXP_WARN_If you lose the|r |T136090:0|t[Fitful Dream]|cRXP_WARN_ buff, talk to |cRXP_FRIENDLY_Remulos|r again|r
+.complete 13074,1 
+.target Keeper Remulos
+.skipgossip 11832,1
+step
+.goto Moonglade,36.18,41.80
+>>|cRXP_WARN_Click the|r |T136090:0|t[Fitful Dream] |cRXP_WARN_buff to remove it|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Remulos|r
+.turnin 13074 >>Turn in Hope Within the Emerald Nightmare
+.accept 13075 >>Accept The Boon of Remulos
+.target Keeper Remulos
+step
+#completewith Remulos
+.goto Moonglade,36.04,42.15
+.zone IcecrownGlacier >> Take the |cRXP_FRIENDLY_Moonglade Return Portal|r to Icecrown
+.target Moonglade Return Portal
+.cooldown item,6948,<0
+step
+#label Remulos
+.goto IcecrownGlacier,79.85,30.82
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bridenbrad|r
+.turnin 13075 >>Turn in The Boon of Remulos
+.accept 13076 >>Accept Time Yet Remains
+.target Crusader Bridenbrad
+step
+.goto IcecrownGlacier,79.79,71.76
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
+.turnin 13076 >>Turn in Time Yet Remains
+.accept 13077 >>Accept The Touch of an Aspect
+.target Highlord Tirion Fordring
+step
+.goto IcecrownGlacier,54.15,71.18
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vereth|r
+.turnin 13164 >>Turn in The Fate of Bloodbane
+.target Vereth the Cunning
+.isQuestComplete 13164
+step
+#completewith iccend
++Enter Icecrown Citadel raid
+.goto IcecrownGlacier,53.6,86.4
+step
+.reputation 1156,friendly,<0,1
+.unitscan Ormus
+.dailyturnin 24815 >> Turn in Choose Your Path and choose your path.
+step
+.reputation 1156,honored,<0,1
+.unitscan Ormus
+.dailyturnin 24825,24826,25239,24828 >> Turn in your next quest and continue down the chosen path.
+step
+.reputation 1156,revered,<0,1
+.unitscan Ormus
+.dailyturnin 24830,24832,25240,24823 >> Turn in your next quest and continue down the chosen path.
+step
+#label iccend
+.reputation 1156,exalted,<0,1
+.unitscan Ormus
+.dailyturnin 24831,24833,24829,24835 >> Turn in your last quest and get your exalted ring.
+.isQuestAvailable 24831
+.isQuestAvailable 24833
+.isQuestAvailable 24829
+.isQuestAvailable 24835
+step
+.isOnQuest 12995,13071,13069
+#completewith svlast
++Exit Icecrown citadel and fly towards Shadow Vault
+step
+.goto IcecrownGlacier,42.84,24.92
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sliver|r
+.turnin 12995 >>Turn in Leave Our Mark
+.isQuestComplete 12995
+.target Baron Sliver
+step
+.goto IcecrownGlacier,43.6,24.1,60,0
+.goto IcecrownGlacier,42.7,26.8
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vile|r, he is an abomination that patrols the path between the entrance and the main building
+.turnin 13071 >>Turn in Vile Like Fire!
+.isQuestComplete 13071
+.target Vile
+step
+#label svlast
+.goto IcecrownGlacier,43.63,25.13,15,0
+.goto IcecrownGlacier,43.29,25.31
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Leaper|r
+.turnin 13069 >>Turn in Shoot 'Em Up
+.isQuestComplete 13069
+.target The Leaper
+step
+.isOnQuest 13214
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13214 >> Turn in Battle at Valhalas: Fallen Heroes
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.isOnQuest 13215
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13215 >> Turn in Battle at Valhalas: Khit'rix the Dark Master
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.isOnQuest 13216
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13216 >> Turn in Battle at Valhalas: The Return of Sigrid Iceborn
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.isOnQuest 13217
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13217 >> Turn in Battle at Valhalas: Carnage!
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.isOnQuest 13218
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13218 >> Turn in Battle at Valhalas: Thane Deathblow
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.isOnQuest 13219
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gjonner|r
+.turnin 13219 >> Turn in Battle at Valhalas: Final Challenge
+.goto IcecrownGlacier,31.6,30.8
+.target Gjonner the Merciless
+step
+.itemcount 43089,15
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Bone Witch|r
+.accept 13092 >> Accept Reading the Bones
+.turnin 13092 >> Turn in Reading the Bones
+.goto IcecrownGlacier,32.4,42.8
+.target The Bone Witch
+.isQuestAvailable 13092
+step
+.goto IcecrownGlacier,32.50,42.94
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Bone Witch|r
+.turnin 13142 >>Turn in Banshee's Revenge
+.isQuestComplete 13142
+
+.target The Bone Witch
+step
+.isOnQuest 12838,12813,12815
+#completewith drlast
++Exit Icecrown citadel and fly towards Death's Rise
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurochs|r
+.turnin 12838 >> Turn in Intelligence Gathering
+.isQuestComplete 12838
+.line IcecrownGlacier,19.80,48.18,19.90,48.33,20.07,48.36,20.19,48.30,20.29,48.08,20.31,47.86,20.25,47.68,20.09,47.54,19.98,47.55,19.85,47.60,19.77,47.82,19.76,48.03,19.80,48.18
+.target Aurochs Grimbane
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Setaal|r
+.turnin 12813 >>Turn in From Their Corpses, Rise!
+.isQuestComplete 12813
+.goto IcecrownGlacier,19.67,48.39
+.target Setaal Darkmender
+step
+#label drlast
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uzo|r
+.turnin 12815 >>Turn in No Fly Zone
+.isQuestComplete 12815
+.goto IcecrownGlacier,19.64,47.80
+.target Uzo Deathcaller
+step
+.itemcount 40666,1
+.use 40666
+>>Use |T134940:0|t[Note from the Grand Admiral] and accept the quest
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord-Commander Arete|r
+.accept 12839 >> Accept The Grand (Admiral's) Plan
+.turnin 12839 >> Turn in The Grand (Admiral's) Plan
+.goto IcecrownGlacier,19.6,48.0
+.target Lord-Commander Arete
+step
+#completewith next
+.zone SholazarBasin >> Fly to Sholazar Basin
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Freya|r
+.accept 12548 >>Accept The Etymidian
+.goto SholazarBasin,64.57,48.60
+.target Avatar of Freya
+step
+.isOnQuest 12548
+.goto SholazarBasin,40.35,83.13
+.zone Un'Goro Crater >> Take the Waygate in Sholazar to Un'Goro Crater
+step
+.goto Un'Goro Crater,47.38,9.22
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Etymidian|r after taking the Waygate
+.turnin 12548 >>Turn in The Etymidian
+.accept 12547 >>Accept The Activation Rune
+.target The Etymidian
+step
+.goto Un'Goro Crater,48.2,5.5,40,0
+.goto Un'Goro Crater,48.17,2.49
+>>Kill |cRXP_ENEMY_High Cultist Herenn|r. Loot him for the |cRXP_LOOT_Omega Rune|r
+.complete 12547,1 
+.mob High Cultist Herenn
+step
+.goto Un'Goro Crater,47.38,9.22
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Etymidian|r
+.turnin 12547 >>Turn in The Activation Rune
+.accept 12797 >>Accept Back Through the Waygate
+.target The Etymidian
+step
+#completewith next
+.goto Un'Goro Crater,50.53,7.74
+.zone SholazarBasin >>Take the Waygate back to Sholazar
+step
+.isOnQuest 12624
+.turnin 12624 >>Turn in It Could Be Anywhere!
+.goto SholazarBasin,26.86,58.94
+.target Chad
+step
+.isQuestAvailable 12696
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calvert|r
+.accept 12696 >>Accept Aerial Surveillance
+.goto SholazarBasin,25.41,58.47
+.target Professor Calvert
+step
+.isOnQuest 12696
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vic|r
+.goto SholazarBasin,49.95,61.52
+.turnin 12696 >>Turn in Aerial Surveillance
+.target Pilot Vic
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Freya|r
+.turnin 12797 >>Turn in Back Through the Waygate
+.goto SholazarBasin,64.57,48.60
+.target Avatar of Freya
+step
+.isQuestAvailable 12539
+.goto SholazarBasin,54.99,69.11
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tUse |T237378:0|t[Zepik's Hunting Horn] to summon |cRXP_FRIENDLY_Zepik|r. Talk to him
+.accept 12539 >>Accept Hoofing It
+.target Zepik the Gorloc Hunter
+.use 38512
+step
+.isOnQuest 12539
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rakjak|r
+.turnin 12539 >>Turn in Hoofing It
+.goto SholazarBasin,54.99,69.11
+.target High-Shaman Rakjak
+step
+.isQuestTurnedIn 12539
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rakjak|r
+.accept 12540 >>Accept Just Following Orders
+.goto SholazarBasin,54.99,69.11
+.target High-Shaman Rakjak
+step
+.isOnQuest 12540
+.goto SholazarBasin,54.05,64.52
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to an |cRXP_FRIENDLY_Injured Rainspeaker Oracle|r. Kill the |cRXP_ENEMY_Ravenous Mangal Crocolisk|r that spawns
+.complete 12540,1 
+.skipgossip
+.target Injured Rainspeaker Oracle
+.mob Ravenous Mangal Crocolisk
+step
+.isOnQuest 12540
+.goto SholazarBasin,54.05,64.52
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Injured Rainspeaker Oracle|r
+.turnin 12540 >>Turn in Just Following Orders
+.target Injured Rainspeaker Oracle
+step
+#completewith dbend
+.hs >> Hearth to the Star's Rest camp << Alliance
+.hs >> Hearth to the Agmar's Hammer fortress << Horde
+.zoneskip Dragonblight
+step << Horde
+.itemcount 36780,1
+.goto Dragonblight,38.05,46.22
+.use 36780 >> |cRXP_WARN_Use |T133472:0|t[|cRXP_LOOT_Lieutenant Ta'zinni's Letter|r] to start the quest|r and talk to |cRXP_FRIENDLY_Agmar|r
+.accept 12085 >>Accept A Letter for Home
+.turnin 12085 >>Turn in A Letter for Home
+.target Overlord Agmar
+step << Alliance
+.itemcount 36756,1
+.goto Dragonblight,29.0,55.4
+.use 36756 >> |cRXP_WARN_Use |T133472:0|t[|cRXP_LOOT_Captain Malin's Letter|r] to start the quest|r and talk to |cRXP_FRIENDLY_Commander Saia Azuresteel|r
+.accept 12067 >>Accept A Letter for Home
+.turnin 12067 >>Turn in A Letter for Home
+.target Commander Saia Azuresteel
+step << Horde
+.itemcount 36746,1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aethas|r
+.goto Dragonblight,38.0,46.2
+.use 36746
+.accept 12059 >> Accept A Strange Device
+.turnin 12059 >> Turn in A Strange Device
+.target Image of Archmage Aethas Sunreaver
+step << Alliance
+.itemcount 36742,1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Modera|r
+.goto Dragonblight,38.0,46.2
+.use 36742
+.accept 12055 >> Accept A Strange Device
+.turnin 12055 >> Turn in A Strange Device
+.target Image of Archmage Modera
+step << Horde
+#label FleshTomestep1
+.itemcount 36744,1
+.use 36744
+>>Use |133738:0|t[Flesh-bound Tome] and accept the quest
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Gort|r
+.accept 12057 >> Accept The Flesh-Bound Tome
+.turnin 12057 >> Turn in The Flesh-Bound Tome
+.accept 12115 >> Koltira and the Language of Death
+.goto Dragonblight,35.8,48.2
+.target Captain Gort
+step << Horde
+.isOnQuest 12115
+#requires FleshTomestep1
+.line Dragonblight,36.11,47.55,35.81,46.97,35.83,46.43,36.14,45.85,36.38,46.39,37.14,46.47,37.12,47.12,36.85,47.52,36.48,47.68,36.11,47.55
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koltira|r
+>>|cRXP_FRIENDLY_Koltira|r |cRXP_WARN_patrols central Agmar's Hammer|r
+.turnin 12115 >>Turn in Koltira and the Language of Death
+.goto Dragonblight,36.11,47.55,30,0
+.goto Dragonblight,35.81,46.97,30,0
+.goto Dragonblight,35.83,46.43,30,0
+.goto Dragonblight,36.14,45.85,30,0
+.goto Dragonblight,36.38,46.39,30,0
+.goto Dragonblight,37.14,46.47,30,0
+.goto Dragonblight,37.12,47.12,30,0
+.goto Dragonblight,36.85,47.52,30,0
+.goto Dragonblight,36.48,47.68,30,0
+.goto Dragonblight,36.11,47.55
+.unitscan Koltira Deathweaver
+step << Alliance
+.itemcount 36958,1
+.use 36958
+>>Use |T133330:0|t[The Favor of Zangus] and accept the quest
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warden Jodi Moonsong|r
+.accept 12168 >> Accept The Favor of Zangus
+.turnin 12168 >> Turn in The Favor of Zangus
+.goto Dragonblight,29.2,55.6
+.target Warden Jodi Moonsong
+step
+.isOnQuest 29808,29807,29811,13187
+#completewith next
+.goto Dragonblight,26.15,49.48,15 >> Drop down into The Pit of Narjun
+step
+.isOnQuest 29808,29807,29811
+#completewith anend
++Enter Azoj'Nerub and turn in your quests
+
+step
+.isOnQuest 29808
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Reclaimer A'zak|r
+.turnin 29808 >> Turn in Don't Forget the Eggs!
+.target Reclaimer A'zak
+step
+.isOnQuest 29807
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Reclaimer A'zak|r
+.turnin 29807 >> Turn in Death to the Traitor King
+.target Reclaimer A'zak
+step
+#label anend
+.isOnQuest 29811
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Reclaimer A'zak|r
+.turnin 29811 >> Turn in The Gatewatcher's Talisman
+.target Reclaimer A'zak
+step
+.isOnQuest 13187
+#completewith next
++Enter Ahn'Kahet and turn in your quest
+step
+.isOnQuest 13187
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kilix|r
+.turnin 13187 >> Turn in The Faceless Ones
+.target Kilix the Unraveler
+step
+#completewith wyrmend
+>>|cRXP_WARN_Fly up to the top of Wyrmrest Temple|r
+.goto Dragonblight,59.8,54.6,50
+step
+.itemcount 36856,1 << Horde
+.itemcount 36855,1 << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurastrasza|r at the bottom flor of Wyrmrest Temple
+>>|cRXP_WARN_Atop Wyrmrest Temple|r
+.goto Dragonblight,60.0,55.2
+.use 36856 << Horde
+.use 36855 << Alliance
+.accept 12147 >> Accept Disturbing Implications << Horde
+.turnin 12147 >> Turn in Disturbing Implications << Horde
+.accept 12146 >> Accept Disturbing Implications << Alliance
+.turnin 12146 >> Turn in Disturbing Implications << Alliance
+.target Aurastrasza
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alexstrasza|r
+.itemcount 44577,1
+.use 44577
+.accept 13375 >> Accept The Heroic Key to the Focusing Iris
+.turnin 13375 >> Turn in The Heroic Key to the Focusing Iris
+.goto Dragonblight,59.8,54.6
+.target Alexstrasza the Life-Binder
+step
+.isQuestAvailable 12500 << Horde
+.isQuestAvailable 12499 << Alliance
+>>|cRXP_WARN_Fly to the top of Wyrmrest Temple|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alexstrasza|r
+.accept 12500 >>Accept Return to Angrathar << Horde
+.accept 12499 >>Accept Return To Angrathar << Alliance
+.goto Dragonblight,59.83,54.66
+.target Alexstrasza the Life-Binder
+step
+.isOnQuest 13077
+.goto Dragonblight,59.84,54.66
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alextrasza|r
+.turnin 13077 >>Turn in The Touch of an Aspect
+.target Alexstrasza the Life-Binder
+step
+.isQuestTurnedIn 13077
+.goto Dragonblight,59.84,54.66
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alextrasza|r
+.accept 13078 >>Accept Dahlia's Tears
+.target Alexstrasza the Life-Binder
+step
+.isOnQuest 24555 << Horde
+.isOnQuest 14444 << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krasus|r
+.complete 24555,1 << Horde 
+.complete 14444,1 << Alliance 
+.skipgossip
+.target Krasus
+step
+.itemcount 37833,1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krasus|r
+.use 37833
+.accept 12419 >>Accept The Fate of the Ruby Dragonshrine
+.turnin 12419 >>Turn in The Fate of the Ruby Dragonshrine
+.goto Dragonblight,59.79,54.70
+.target Krasus
+step
+.isOnQuest 26034
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krasus|r
+.turnin 26034 >> Turn in The Twilight Destroyer
+.goto Dragonblight,59.8,54.6
+.target Krasus
+step
+.isOnQuest 13078
+.goto Dragonblight,50.14,52.57,12,0
+.goto Dragonblight,50.58,51.87,12,0
+.goto Dragonblight,50.21,51.63,12,0
+.goto Dragonblight,52.25,47.12,12,0
+.goto Dragonblight,52.06,46.55,12,0
+.goto Dragonblight,51.89,47.68,12,0
+.goto Dragonblight,51.69,47.22,12,0
+.goto Dragonblight,44.39,52.08,12,0
+.goto Dragonblight,44.28,52.30,12,0
+.goto Dragonblight,44.05,52.49,12,0
+.goto Dragonblight,43.86,51.50,12,0
+.goto Dragonblight,43.76,52.03,12,0
+.goto Dragonblight,43.30,52.06,12,0
+.goto Dragonblight,43.39,51.40
+>>Loot |cRXP_LOOT_Dahlia's Tears|r on the ground
+.complete 13078,1 
+step
+.goto Dragonblight,59.84,54.66
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alextrasza|r atop Wyrmrest Temple
+.turnin 13078 >>Turn in Dahlia's Tears
+.accept 13079 >>Accept The Boon of Alexstrasza
+.target Alexstrasza the Life-Binder
+step << Horde
+.isOnQuest 12097
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Gort|r
+.turnin 12097 >> Turn in Sarathstra, Scourge of the North
+.goto Dragonblight,35.8,48.2
+.target Captain Gort
+step << Horde
+.isOnQuest 12500
+.goto Dragonblight,40.71,18.07
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Saurfang|r
+>>|cRXP_WARN_Get ready to press Escape to skip cinematic|r
+.turnin 12500 >>Turn in Return to Angrathar
+.target Saurfang the Younger
+step << Alliance
+#label dbend
+.isOnQuest 12499
+.goto Dragonblight,37.81,23.41
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bolvar|r
+>>|cRXP_WARN_Get ready to press Escape to skip cinematic|r
+.turnin 12499 >>Turn in Return To Angrathar
+.target Highlord Bolvar Fordragon
+step
+.itemcount 46874,1
+#completewith next
++Use your |cRXP_LOOT_Argent Crusader's Tabard|r
+.cooldown item,46874,>0
+.use 46874
+step
+.goto IcecrownGlacier,79.85,30.82
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bridenbrad|r
+.turnin 13079 >>Turn in The Boon of Alexstrasza
+.accept 13080 >>Accept Hope Yet Remains
+.target Crusader Bridenbrad
+step
+.goto IcecrownGlacier,79.79,71.76
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
+.turnin 13080 >>Turn in Hope Yet Remains
+.accept 13081 >>Accept The Will of the Naaru
+.timer 15,The Will of the Naaru RP
+.target Highlord Tirion Fordring
+step
+#completewith next
+.goto IcecrownGlacier,79.90,71.84
+>>|cRXP_WARN_Wait out the RP|r
+>>|cRXP_WARN_If you miss the portal, abandon "The Will of the Naaru" and accept it again|r << !Mage
+>>|cRXP_WARN_If you miss the portal, cast |T135760:0|t[Teleport: Shattrath] << Mage
+.zone Shattrath City >>|cRXP_WARN_Click the |cRXP_PICK_Portal to Shattrath|r that |cRXP_FRIENDLY_Rhydian|r summons for you|r
+step
+.goto Shattrath City,53.98,44.76
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_A'dal|r
+.turnin 13081 >>Turn in The Will of the Naaru
+.accept 13082 >>Accept The Boon of A'dal
+.target A'dal
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bridenbrad|r
+>>Click |cRXP_PICK_Bridenbrad's Possessions|r on the ground
+.turnin 13082 >>Turn in The Boon of A'dal
+.goto IcecrownGlacier,79.85,30.82
+.accept 13083 >>Accept Light Within the Darkness
+.goto IcecrownGlacier,79.79,30.83
+.target Crusader Bridenbrad
+step
+.goto IcecrownGlacier,79.79,71.76
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion|r
+.turnin 13083 >>Turn in Light Within the Darkness
+.target Highlord Tirion Fordring
+step
+#completewith dalaranend1
+.zoneskip Dalaran
+.zone Dalaran >> Teleport to Dalaran if you have your Kirin'tor ring equipped << !Mage
+.zone Dalaran >> Teleport to Dalaran << Mage
+step << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arcanist Tybalin|r
+.turnin 14444 >> Turn in What The Dragons Know
+.accept 14457 >> Accept The Sunreaver Plan
+.goto Dalaran,39.6,57.6
+.target Arcanist Tybalin
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magister Hathorel|r
+.turnin 24555 >> Turn in What The Dragons Know
+.accept 24557 >> Accept The Silver Covenant's Scheme
+.goto Dalaran,69.8,31.4
+.target Magister Hathorel
+step
+#completewith next
+.goto Dalaran,59.9,47.5,-1
+.goto Dalaran,35.2,45.3,-1
+.goto Dalaran,48.1,32.4,-1
+.subzone 4560 >>|cRXP_WARN_Head into Dalaran's sewers|r
+step << Alliance
+>>Kill |cRXP_ENEMY_Sunreaver Agents|r. Loot them for |T133451:0|t[|cRXP_LOOT_Sunreaver Orders|r]
+>>|cRXP_WARN_If you are unable to find him in a timely manner, skips this step|r
+.collect 49536,1,14457,1 
+.unitscan Sunreaver Agent
+step << Horde
+>>Kill |cRXP_ENEMY_Silver Covenant Agents|r. Loot them for |T133451:0|t[|cRXP_LOOT_Silver Covenant Orders|r]
+>>|cRXP_WARN_If you are unable to find him in a timely manner, skips this step|r
+.collect 49872,1,24557,1 
+.unitscan Silver Covenant Agent
+step << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arcanist Tybalin|r
+.isQuestComplete 14457
+.turnin 14457 >> Turn in The Sunreaver Plan
+.goto Dalaran,39.6,57.6
+.target Arcanist Tybalin
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magister Hathorel|r
+.isQuestComplete 24557
+.turnin 24557 >> Turn in The Silver Covenant's Scheme
+.goto Dalaran,69.8,31.4
+.target Magister Hathorel
+step
+.itemcount 46052,1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rhonin|r
+.use 46052
+.accept 13631 >> Accept All Is Well That Ends Well
+.turnin 13631 >> Turn in All Is Well That Ends Well
+.goto Dalaran,31.6,48.6
+.target Rhonin
+step
+.itemcount 46053,1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rhonin|r
+.use 46053
+.accept 13819 >> Accept All Is Well That Ends Well
+.turnin 13819 >> Turn in All Is Well That Ends Well
+.goto Dalaran,31.6,48.6
+.target Rhonin
+step
+.isOnQuest 78752
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Lan'dalock|r
+.turnin 78752 >> Turn in Proof of Demise: Titan Rune Protocol Gamma
+.target Archmage Lan'dalock
+step
+.isOnQuest 78753
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Lan'dalock|r
+.turnin 78753 >> Turn in Proof of Demise: Threats to Azeroth
+.target Archmage Lan'dalock
+step
+.isOnQuest 29830
+#completewith next
++Enter Violet hold and turn in your quest
+.goto Dalaran,66.7,68.2
+step
+#label dalaranend1
+.isOnQuest 29830
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Sinclari|r
+.turnin 29830 >> Turn in Containment
+.target Lieutenant Sinclari
+step << Alliance
+.isQuestAvailable 12870
+.itemcount 42780,10
++Fly to Frosthold, The Storm TheStormPeaks
+#completewith next
+step << Alliance
+.isQuestAvailable 12870
+.itemcount 42780,10
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rork Sharpchin|r
+.accept 12870 >> Accept Ancient Relics
+.turnin 12870 >> Turn in Ancient Relics
+.goto TheStormPeaks,28.8,74.0
+.target Rork Sharpchin
+step
+#completewith gundrakend
+.isOnQuest 29834,29835,29840,29844,29838,29839
++Fly to Gundrak dungeon and turn in your quests inside
+.goto ZulDrak,76.3,20.9,20 << Horde
+.goto ZulDrak,81.3,28.9,20 << Alliance
+step
+.isOnQuest 29834
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29834 >> Turn in Gal'darah Must Pay
+.target Chronicler Bah'Kini
+.target Tol'mar
+step
+.isOnQuest 29835
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29835 >> Turn in Gal'darah Must Pay
+.target Chronicler Bah'Kini
+.target Tol'mar
+step
+.isOnQuest 29840
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29840 >> Turn in For Posterity
+.target Chronicler Bah'Kini
+.target Tol'mar
+step
+.isOnQuest 29844
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29844 >> Turn in For Posterity
+.target Chronicler Bah'Kini
+.target Tol'mar
+step
+.isOnQuest 29838
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29838 >> Turn in One of a Kind
+.target Chronicler Bah'Kini
+.target Tol'mar
+step
+#label gundrakend
+.isOnQuest 29839
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chronicler Bah'Kini|r or |cRXP_FRIENDLY_Tol'mar|r
+.turnin 29839 >> Turn in One of a Kind
+.target Chronicler Bah'Kini
+.target Tol'mar
+
+step
+.itemcount 38551,10
+.isQuestAvailable 12655
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Khufu|r
+.accept 12655 >> Accept The Blessing of Zim'Rhuk
+.goto Zul'Drak,59.6,58.0
+.target Witch Doctor Khufu
+step
+.itemcount 38551,10
+.isQuestAvailable 12615
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Khufu|r
+.accept 12615 >> Accept The Blessing of Zim'Torga
+.goto Zul'Drak,59.6,58.0
+.target Witch Doctor Khufu
+step
+.itemcount 38551,10
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zim'Torga|r
+.turnin 12615 >> Turn in The Blessing of Zim'Torga
+.goto Zul'Drak,59.6,57.2
+.target Zim'Torga
+step
+.itemcount 38551,10
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zim'Rhuk|r
+.turnin 12655 >> Turn in The Blessing of Zim'Rhuk
+.goto Zul'Drak,59.5,44.7
+.target Zim'Rhuk
+step
+.isOnQuest 12730
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Har'koa|r
+.turnin 12730 >>Turn in Convocation at Zol'Heb
+.goto ZulDrak,60.28,57.76
+.target Har'koa
+step
+.isOnQuest 12948
+#completewith next
+>>|cRXP_WARN_Fly to Arena of Anguish|r
+.goto ZulDrak,48.6,56.4,50
+step
+.isOnQuest 12948
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wodin|r
+.turnin 12948 >> Turn in The Champion of Anguish
+.goto ZulDrak,48.6,56.4
+.target Wodin the Troll-Servant
+step
+.itemcount 38551,10
+.isQuestAvailable 12615
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hexxer Ubungo|r
+.accept 12565 >> Accept The Blessing of Zim'Abwa
+.goto Zul'Drak,40.6,65.6
+.target Hexxer Ubungo
+step
+.itemcount 38551,10
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zim'Abwa|r
+.turnin 12565 >> Turn in The Blessing of Zim'Abwa
+.goto Zul'Drak,36.7,72.5
+.target Zim'Abwa
+step
+.isOnQuest 12919
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader MacKellar|r
+.turnin 12919 >> Turn in The Storm King's Vengeance
+.goto ZulDrak,25.2,64.0
+.target Crusader MacKellar
+step
+.isOnQuest 12713
+#completewith next
+>>|cRXP_WARN_Fly to Ebon Watch|r
+.goto ZulDrak,14.0,73.8,50
+step
+.isOnQuest 12713
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stefan Vadu|r
+.turnin 12713 >> Turn in Betrayal
+.goto ZulDrak,14.0,73.8
+.target Stefan Vadu
+step
+.isOnQuest 13129,29828
+#completewith dtkend
+>>Fly to Drak'tharon Keep
+.goto ZulDrak,28.9,86.9,20
+step
+.isOnQuest 13129
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kurzel|r
+.turnin 13129 >> Turn in Head Games
+.target Kurzel
+step
+.isOnQuest 29828
+#label dtkend
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kurzel|r
+.turnin 29828 >> Turn in What the Scourge Dred
+.target Kurzel
+step << Alliance
+.isOnQuest 12249
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thayreen|r
+.turnin 12249 >> Turn in Ursoc, the Bear God
+.goto GrizzlyHills,31.2,59.4
+.target Hierophant Thayreen
+step << Horde
+.isOnQuest 12236
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grayhorn|r
+.turnin 12236 >> Turn in Ursoc, the Bear God
+.goto GrizzlyHills,31.2,59.4
+.target Windseer Grayhorn
+step << Horde
+.isOnQuest 12431
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorgonna|r
+.turnin 12431 >> Turn in The Conquest Pit: Final Showdown
+.goto GrizzlyHills,20.8,64.0
+.target Gorgonna
+step
+.isOnQuest 12164
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sasha|r
+.turnin 12164 >> Turn in Hour of the Worg
+.goto GrizzlyHills,57.5,41.3
+.target Sasha
+step
+.isOnQuest 13131,13132,29864
+.zone Howling Fjord >>Use your |cRXP_LOOT_Wormhole Generator: Northrend|r] and create a portal and teleport to Howling Fjord
+.use 48933
+.itemcount 48933,1
+step
+.requires 13131,13132,29864
+#completewith UPdungeon
++Enter Utgarde Pinnacle and turn in your quests
+.goto Howling Fjord,57.3,46.8,50
+.zoneskip Utgarde Pinnacle
+step
+.isOnQuest 13131
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brigg Smallshanks|r
+.turnin 13131 >> Turn in Junk in My Trunk
+.target Brigg Smallshanks
+step
+.isOnQuest 13132
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brigg Smallshanks|r
+.turnin 13132 >> Turn in Vengeance Be Mine!
+.target Brigg Smallshanks
+step
+#label UPdungeon
+.isOnQuest 29864
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Confessor Paletress|r
+.turnin 29864 >> Turn in Working at the Source
+.target Image of Argent Confessor Paletress
+step
+#completewith Hillsbradend
++|cRXP_WARN_This last part of the guide scales with level, it is very beneficial to delay turning in AV quests until you are at least level 81, and will give more exp if you are level 84|r
+>>Make your way to Alterac Mountains in Hillsbrad Foothills
+.zoneskip Hillsbrad Foothills
+step << Mage
+#completewith Hillsbradend
+.zone Ironforge	>> Teleport to Ironforge << Alliance
+.zone Undercity >> Teleport to Undercity << Horde
+.zoneskip Hillsbrad Foothills
+step << !Mage Alliance
+#completewith Hillsbradend
+.zone Wetlands >> Take a boat to Menathil Harbor, Wetlands
+.goto Howling Fjord,61.2,62.6,0,0
+.zone Hillsbrad Foothills >> Head to Hillsbrad Foothills
+.zoneskip Hillsbrad Foothills
+step << !Mage Horde
+#completewith Hillsbradend
+.zone Tirisfal Glades >> Take a zeppelin to Undercity
+.goto Howling Fjord,77.7,28.4,0,0
+.zone Hillsbrad Foothills >> Head to Hillsbrad Foothills
+.zoneskip Hillsbrad Foothills
+step << Alliance
+.isOnQuest 7141
+.goto 1424/0,-355.00000,13.70000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Stonehewer|r
+.turnin 7141 >> Turn in The Battle of Alterac
+.target Prospector Stonehewer
+step << Alliance
+.isQuestAvailable 8271
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Stonehewer|r
+.turnin 8271 >> Turn in Hero of the Stormpike
+.target Prospector Stonehewer
+step << Alliance
+.reputation 730,friendly,<0,1
+.isQuestAvailable 7168
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Haggerdin|r
+.accept 7168 >> Accept Rise and Be Recognized
+.turnin 7168 >> Turn in Rise and Be Recognized
+.target Lieutenant Haggerdin
+step << Alliance
+.reputation 730,honored,<0,1
+.isQuestAvailable 7169
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Haggerdin|r
+.accept 7169 >> Accept Honored Amongst the Guard
+.turnin 7169 >> Turn in Honored Amongst the Guard
+.target Lieutenant Haggerdin
+step << Alliance
+.reputation 730,revered,<0,1
+.isQuestAvailable 7170
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Haggerdin|r
+.accept 7170 >> Accept Earned Reverence
+.turnin 7170 >> Turn in Earned Reverence
+.target Lieutenant Haggerdin
+step << Alliance
+.reputation 730,exalted,<0,1
+.isQuestAvailable 7171
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Haggerdin|r
+.accept 7171 >> Accept Legendary Heroes
+.turnin 7171 >> Turn in Legendary Heroes
+.target Lieutenant Haggerdin
+step << Alliance
+.reputation 730,exalted,999,1
+.isQuestAvailable 7172
+.goto 1424/0,-324.10001,-16.40000
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Haggerdin|r
+.accept 7172 >> Accept The Eye of Command
+.turnin 7172 >> Turn in The Eye of Command
+.target Lieutenant Haggerdin
+step << Horde
+.isOnQuest 7142
+.goto 1424/0,-1001.90002,370.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Voggah Deathgrip|r
+.turnin 7142 >> Turn in The Battle for Alterac
+.target Voggah Deathgrip
+step << Horde
+.isQuestAvailable 8272
+.goto 1424/0,-1001.90002,370.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Voggah Deathgrip|r
+.turnin 8272 >> Turn in Hero of the Frostwolf
+.target Voggah Deathgrip
+step << Horde
+.reputation 729,friendly,<0,1
+.isQuestAvailable 7163
+.goto 1424/0,-959.70001,398.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warmaster Laggrond|r
+.accept 7163 >> Accept Rise and Be Recognized
+.turnin 7163 >> Turn in Rise and Be Recognized
+.target Warmaster Laggrond
+step << Horde
+.reputation 729,honored,<0,1
+.isQuestAvailable 7164
+.goto 1424/0,-959.70001,398.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warmaster Laggrond|r
+.accept 7164 >> Accept Honored Amongst the Clan
+.turnin 7164 >> Turn in Honored Amongst the Clan
+.target Warmaster Laggrond
+step << Horde
+.reputation 729,revered,<0,1
+.isQuestAvailable 7165
+.goto 1424/0,-959.70001,398.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warmaster Laggrond|r
+.accept 7165 >> Accept Earned Reverence
+.turnin 7165 >> Turn in Earned Reverence
+.target Warmaster Laggrond
+step << Horde
+.reputation 729,exalted,<0,1
+.isQuestAvailable 7166
+.goto 1424/0,-959.70001,398.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warmaster Laggrond|r
+.accept 7166 >> Accept Legendary Heroes
+.turnin 7166 >> Turn in Legendary Heroes
+.target Warmaster Laggrond
+step << Horde
+.reputation 729,exalted,999,1
+.isQuestAvailable 7167
+.goto 1424/0,-959.70001,398.30002
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warmaster Laggrond|r
+.accept 7167 >> Accept The Eye of Command
+.turnin 7167 >> Turn in The Eye of Command
+.target Warmaster Laggrond
+step << Horde
+#label Hillsbradend
+>>Use your cloak, or Veteran's Hearthstone to teleport to Orgrimmar << Horde
+>>Use your cloak, or Hero's Hearthstone to teleport to Stormwind << Alliance
+.zone Stormwind City >> Get to Stormwind << Alliance
+.zone Orgrimmar >> Get to Orgrimmar << Horde
+.use 68809 << Horde
+.use 68808 << Alliance
+.use 63353 << Horde
+.use 63207 << Horde
+.use 65274 << Horde
+.use 63352 << Alliance
+.use 63206 << Alliance
+.use 65360 << Alliance
+step << Alliance
+.accept 28825 >> Accept A Personal Summons
+step << Horde
+.accept 28790 >> Accept A Personal Summons
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
+.itemcount 49643,1
+.use 49643
+.accept 24429 >> Accept A Most Puzzling Circumstance
+.turnin 24429 >> Turn in A Most Puzzling Circumstance
+.goto Orgrimmar,49.6,50.6
+.target Neeru Fireblade
+step << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zardeth|r, who is found in lower level of the The Slaughtered Lamb tavern
+.itemcount 49644,1
+.use 49644
+.accept 24428 >> Accept A Most Puzzling Circumstance
+.turnin 24428 >> Turn in A Most Puzzling Circumstance
+.goto Stormwind City,40.2,84.4
+.target Zardeth of the Black Claw
+step << Alliance
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Naraat|r, who can be found in the newly added portal areas on the lake next to Stormwind Keep
+.turnin 28825 >> Turn in A Personal Summons
+.goto Stormwind City,74.6,19.0
+.target Naraat the Earthspeaker
+step << Horde
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krogar|r, who is found on top of a bluff in the northern part of Orgrimmar
+.turnin 28790 >> Turn in A Personal Summons
+.goto Orgrimmar,50.2,37.8
+.target Farseer Krogar
+step
++Congratulations on completing the turn in guide, feel free to move on to leveling with one of our other guides or do so on your own! Best of luck leveling.
 ]])

@@ -10,6 +10,7 @@ local fmt, tinsert, ipairs, pairs, next, type, wipe, tonumber, strlower =
     string.format, table.insert, ipairs, pairs, next, type, wipe, tonumber,
     strlower
 
+local GetItemInfo = C_Item and C_Item.GetItemInfo or _G.GetItemInfo
 local GetItemInfoInstant, GetInventoryItemLink, IsEquippedItem =
     _G.GetItemInfoInstant, _G.GetInventoryItemLink, _G.IsEquippedItem
 local GetItemStats = _G.GetItemStats
@@ -596,6 +597,17 @@ function addon.itemUpgrades:LoadStatWeights()
                 data[kind] = nil
             end
         end
+
+        -- SoD
+        if addon.player.season == 3 and data['ITEM_MOD_SPIRIT_SHORT'] then
+            if addon.player.class == "PRIEST" then
+                data['ITEM_MOD_SPIRIT_SHORT'] =
+                    data['ITEM_MOD_SPIRIT_SHORT'] * 0.75
+            else
+                data['ITEM_MOD_SPIRIT_SHORT'] =
+                    data['ITEM_MOD_SPIRIT_SHORT'] * 0.5
+            end
+        end
     end
 
     session.specWeights = newWeights
@@ -1117,7 +1129,7 @@ function addon.itemUpgrades:CompareItemWeight(itemLink, tooltip)
         end
 
         -- Even if ratio nil, add to comparisons for upstream handling based on debug value
-        if ratio or equippedItemLink == _G.EMPTY then
+        if ratio or equippedItemLink == _G.EMPTY or equippedItemLink == _G.NONE then
             tinsert(comparisons, {
                 ['Ratio'] = ratio,
                 ['WeightIncrease'] = weightIncrease,
@@ -1180,7 +1192,6 @@ addon.itemUpgrades.AH = addon:NewModule("ItemUpgradesAH", "AceEvent-3.0")
 function addon.itemUpgrades.AH:Setup()
     if not addon.settings.profile.enableItemUpgradesAH then return end
     if not addon.settings.profile.enableBetaFeatures then return end
-    if addon.settings.profile.soloSelfFound then return end
 
     addon.settings.enabledBetaFeatures[fmt("%s %s", _G.ENABLE,
                                            _G.MINIMAP_TRACKING_AUCTIONEER)] =

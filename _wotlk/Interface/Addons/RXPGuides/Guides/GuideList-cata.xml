@@ -42,4 +42,6 @@
 	<Script file="Guides/Dailies/Northrend Best GPH Daily Quests.lua"/>
 
     <Script file="Guides/Dailies/Argent Tournament Grounds.lua"/>
+
+	<Script file="Guides/Dailies/Cataclysm/Tol Barad Daily Quests.lua"/>
 </Ui>

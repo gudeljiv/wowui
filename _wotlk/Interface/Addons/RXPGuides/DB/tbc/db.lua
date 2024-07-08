@@ -1,5 +1,7 @@
 local addonName, addon = ...
 
+local GetItemCount = C_Item and C_Item.GetItemCount or _G.GetItemCount
+
 addon.skipPreReq = {
     [9573] = 1,
     [533] = 1,
@@ -28,6 +30,14 @@ if class == "WARLOCK" then
 elseif class == "HUNTER" then
     addon.defaultGuideList["Dun Morogh"] = "RestedXP Alliance 1-20\\1-11 Dun Morogh"
 end
+
+--Which invslot to check for heirlooms
+addon.heirlooms = {
+    [3] = true,--shoulder
+    [5] = true,--chest
+    [12] = true,--ring1
+    [13] = true,--ring2
+}
 
 addon.mapId = {
 	["Durotar"] = 1411,
@@ -213,7 +223,7 @@ local function IsQuestAvailable(quest,id,skipRepCheck)
     id = id or quest.Id
 
     local function ProcessRep(rep,faction)
-        local _, _, standing = GetFactionInfoByID(faction)
+        local _, _, standing = addon.GetFactionInfoByID(faction)
         local current = addon.repStandingID[strlower(rep)]
         if skipRepCheck then
             if (skipRepCheck == 932 and faction == 934) or
