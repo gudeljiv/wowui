@@ -85,7 +85,7 @@ SkillInfoPlus: enabled
 SortBags: enabled
 SpeedyAutoLoot: enabled
 Syndicator: enabled
-TacoTip: enabled
+TacoTip: disabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
 ThreatClassic2: enabled

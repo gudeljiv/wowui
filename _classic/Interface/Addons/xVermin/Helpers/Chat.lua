@@ -104,7 +104,7 @@ xVermin.SetChatChannels = function()
 	for i = 1, 18 do
 		if _G['ChatConfigChatSettingsLeftCheckBox' .. i .. 'Check'] then
 			ToggleChatColorNamesByClassGroup(true, _G['ChatConfigChatSettingsLeftCheckBox' .. i .. 'Check']:GetParent().type)
-			-- LeaPlusLC:LockItem(_G["ChatConfigChatSettingsLeftCheckBox" .. i .. "ColorClasses"], true)
+		-- LeaPlusLC:LockItem(_G["ChatConfigChatSettingsLeftCheckBox" .. i .. "ColorClasses"], true)
 		end
 	end
 end
@@ -277,8 +277,7 @@ local function SetChat()
 	) do
 		ChatFrameCondition = ChatFrameCondition .. v:GetName() .. ','
 		background = _G[v:GetName() .. 'Background']
-		v.SetPoint = function()
-		end
+		v.SetPoint = function() end
 
 		if (v:GetName() == 'ChatFrame7' or v:GetName() == 'ChatFrame8') then
 			v:SetWidth((chatWidth / 1.3) - 4)
@@ -292,27 +291,24 @@ local function SetChat()
 		local BottomButton = _G[v:GetName() .. 'ButtonFrameBottomButton']
 		local UpButton = _G[v:GetName() .. 'ButtonFrameUpButton']
 		local DownButton = _G[v:GetName() .. 'ButtonFrameDownButton']
-		local MinimizeButton = _G[v:GetName() .. 'ButtonFrameMinimizeButton']
+		local MinimizeButton = _G[v:GetName() .. 'MinimizeButton']
 
 		UpButton:Hide()
-		UpButton.Show = function()
-		end
+		UpButton.Show = function() end
 
 		DownButton:Hide()
-		DownButton.Show = function()
-		end
+		DownButton.Show = function() end
 
 		MinimizeButton:Hide()
-		DownButton.Show = function()
-		end
+		MinimizeButton.Show = function() end
 
 		BottomButton:ClearAllPoints()
 		BottomButton:SetPoint('BOTTOMRIGHT', v, 'BOTTOMRIGHT', 0, -5)
 		BottomButton:SetScale(0.7)
-		BottomButton.Hide = function()
-		end
-		BottomButton.SetScale = function()
-		end
+		BottomButton.Hide = function() end
+		BottomButton.SetScale = function() end
+		BottomButton.SetPoint = function() end
+		
 
 		v:EnableMouse(false)
 		-- v:SetScript(

@@ -32,7 +32,7 @@ Bagnon_VoidStorage: enabled
 BagBrother: enabled
 GDKPd: enabled
 nTooltip: disabled
-TacoTip: enabled
+TacoTip: disabled
 GlobalIgnoreList: enabled
 aTotemBar: disabled
 nMainbar: enabled

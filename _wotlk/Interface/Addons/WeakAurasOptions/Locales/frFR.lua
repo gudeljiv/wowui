@@ -10,6 +10,8 @@ local L = WeakAuras.L
 	L[" and |cFFFF0000mirrored|r"] = "et  |cFFFF0000mirrored|r"
 	L["-- Do not remove this comment, it is part of this aura: "] = "-- Ne supprimez pas ce commentaire, il fait partie de cette aura :"
 	L[" rotated |cFFFF0000%s|r degrees"] = "degrés de |cFFFF0000%s|r  rotation"
+	--[[Translation missing --]]
+	L["% - To show a percent sign"] = "% - To show a percent sign"
 	L["% of Progress"] = "% de progression"
 	L["%d |4aura:auras; added"] = "%d |4aura:auras; ajoutée(s)"
 	L["%d |4aura:auras; deleted"] = "%d |4aura:auras; supprimée(s)"
@@ -213,6 +215,8 @@ Si la durée de l'animation est définie à |cFF00CC0010%|r, et le déclencheur 
 	L["At a position a bit left of Right HUD position"] = "Une position à droite de la Position ATH Droite."
 	L["At the same position as Blizzard's spell alert"] = "À la même position que l'alerte de sort de Blizzard."
 	--[[Translation missing --]]
+	L["Attach to Foreground"] = "Attach to Foreground"
+	--[[Translation missing --]]
 	L["Aura"] = "Aura"
 	--[[Translation missing --]]
 	L[ [=[Aura is
@@ -268,6 +272,8 @@ Off Screen]=]
 	L["Bottom Right"] = "Bas droit"
 	L["Bracket Matching"] = "Crochet Correspondant"
 	L["Browse Wago, the largest collection of auras."] = "Parcourez Wago, la plus grande collection d'auras."
+	--[[Translation missing --]]
+	L["By default this shows the information from the trigger selected via dynamic information. The information from a specific trigger can be shown via e.g. %2.p."] = "By default this shows the information from the trigger selected via dynamic information. The information from a specific trigger can be shown via e.g. %2.p."
 	L["Can be a UID (e.g., party1)."] = "Peut être un UID (par exemple, groupe1)."
 	--[[Translation missing --]]
 	L["Can set to 0 if Columns * Width equal File Width"] = "Can set to 0 if Columns * Width equal File Width"
@@ -346,6 +352,8 @@ Off Screen]=]
 	L["Crop X"] = "Couper X"
 	L["Crop Y"] = "Couper Y"
 	L["Custom"] = "Personnalisé"
+	--[[Translation missing --]]
+	L["Custom - Allows you to define a custom Lua function that returns a list of string values. %c1 will be replaced by the first value returned, %c2 by the second, etc."] = "Custom - Allows you to define a custom Lua function that returns a list of string values. %c1 will be replaced by the first value returned, %c2 by the second, etc."
 	L["Custom Anchor"] = "Ancrage personnalisé"
 	--[[Translation missing --]]
 	L["Custom Check"] = "Custom Check"
@@ -431,14 +439,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED
 	L["Dynamic Information"] = "Information Dynamique"
 	L["Dynamic information from first active trigger"] = "Information dynamique depuis le premier déclencheur"
 	L["Dynamic information from Trigger %i"] = "Information dynamique du Déclencheur %i"
-	L["Dynamic text tooltip"] = [=[Il y a plusieurs codes spéciaux disponibles pour rendre ce texte dynamique :
-
-|cFFFF0000%p|r - Progression - Le temps restant sur un compteur, ou une valeur autre
-|cFFFF0000%t|r - Total - La durée maximum d'un compteur, ou le maximum d'une valeur autre
-|cFFFF0000%n|r - Nom - Le nom du graphique (souvent le nom d'une aura), ou l'ID du graphique s'il n'y a pas de nom dynamique
-|cFFFF0000%i|r - Icône - L'icône associée à l'affichage
-|cFFFF0000%s|r - Pile - La taille de la pile d'une aura (généralement)
-|cFFFF0000%c|r - Personnalisé - Vous permet de définir une fonction Lua personnalisée qui donne un texte à afficher]=]
+	--[[Translation missing --]]
+	L["Dynamic Text Replacements"] = "Dynamic Text Replacements"
 	--[[Translation missing --]]
 	L["Ease Strength"] = "Ease Strength"
 	--[[Translation missing --]]
@@ -651,6 +653,8 @@ Si le nombre entré est decimal (ex. 0.5), une fraction (ex. 1/2), ou un pourcen
 	L["Hybrid Position"] = "Position hybride"
 	L["Hybrid Sort Mode"] = "Mode de tri hybride"
 	L["Icon"] = "Icône"
+	--[[Translation missing --]]
+	L["Icon - The icon associated with the display"] = "Icon - The icon associated with the display"
 	L["Icon Info"] = "Info d'icône"
 	L["Icon Inset"] = "Objet inséré"
 	--[[Translation missing --]]
@@ -719,6 +723,8 @@ Si cette case est cochée, ce séparateur inclura du texte. Sinon, ce sera juste
 	L["Indent Size"] = "Indent Size"
 	L["Information"] = "Information"
 	L["Inner"] = "Intérieur"
+	--[[Translation missing --]]
+	L["Insert text replacement codes to make text dynamic."] = "Insert text replacement codes to make text dynamic."
 	--[[Translation missing --]]
 	L["Invalid Item ID"] = "Invalid Item ID"
 	L["Invalid Item Name/ID/Link"] = "Nom d'objet / ID / lien invalide"
@@ -825,6 +831,8 @@ Plusieurs valeurs peuvent être choisies]=]
 Seule une unique valeur peut être choisie]=]
 	--[[Translation missing --]]
 	L["Must be a power of 2"] = "Must be a power of 2"
+	--[[Translation missing --]]
+	L["Name - The name of the display (usually an aura name), or the display's ID if there is no dynamic name"] = "Name - The name of the display (usually an aura name), or the display's ID if there is no dynamic name"
 	L["Name Info"] = "Info du nom"
 	L["Name Pattern Match"] = "Correspondance de modèle de nom"
 	L["Name(s)"] = "Nom(s)"
@@ -933,6 +941,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Press Ctrl+C to copy the URL"] = "Appuyer sur Ctrl+C pour copier l'URL"
 	--[[Translation missing --]]
 	L["Prevent Merging"] = "Prevent Merging"
+	--[[Translation missing --]]
+	L["Progress - The remaining time of a timer, or a non-timer value"] = "Progress - The remaining time of a timer, or a non-timer value"
 	L["Progress Bar"] = "Barre de progression"
 	L["Progress Bar Settings"] = "Paramètres de la barre de progression"
 	--[[Translation missing --]]
@@ -1102,6 +1112,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Spell Selection Filters"] = "Spell Selection Filters"
 	L["Stack Count"] = "Nombre de Piles"
 	L["Stack Info"] = "Info de Piles"
+	--[[Translation missing --]]
+	L["Stacks - The number of stacks of an aura (usually)"] = "Stacks - The number of stacks of an aura (usually)"
 	L["Stagger"] = "Report"
 	--[[Translation missing --]]
 	L["Standby"] = "Standby"
@@ -1161,8 +1173,12 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = "La durée de l'animation en secondes. L'animation de fin ne commence qu'après le moment où l'affichage est normalement caché."
 	--[[Translation missing --]]
 	L["The group and all direct children will share the same base frame level."] = "The group and all direct children will share the same base frame level."
+	--[[Translation missing --]]
+	L["The trigger number is optional. When no trigger number is specified, the trigger selected via dynamic information will be used."] = "The trigger number is optional. When no trigger number is specified, the trigger selected via dynamic information will be used."
 	L["The type of trigger"] = "Le type de déclencheur"
 	L["Then "] = "Alors"
+	--[[Translation missing --]]
+	L["There are several special codes available to make this text dynamic. Click to view a list with all dynamic text codes."] = "There are several special codes available to make this text dynamic. Click to view a list with all dynamic text codes."
 	L["Thickness"] = "Épaisseur"
 	--[[Translation missing --]]
 	L["This adds %raidMark as text replacements."] = "This adds %raidMark as text replacements."
@@ -1226,6 +1242,8 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Top Right"] = "Haut droite"
 	--[[Translation missing --]]
 	L["Total"] = "Total"
+	--[[Translation missing --]]
+	L["Total - The maximum duration of a timer, or a maximum non-timer value"] = "Total - The maximum duration of a timer, or a maximum non-timer value"
 	--[[Translation missing --]]
 	L["Total Angle"] = "Total Angle"
 	--[[Translation missing --]]

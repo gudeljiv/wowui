@@ -34,10 +34,12 @@ local bit_band = bit.band
 
 local COMBATLOG_OBJECT_TYPE_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
 
+local GetSpellCooldown = TMW.GetSpellCooldown
 Env.GetSpellCooldown = GetSpellCooldown
-local GetSpellCooldown = GetSpellCooldown
+local GetSpellName = TMW.GetSpellName
+local GetSpellInfo = TMW.GetSpellInfo
 
-local GetItemCooldown = GetItemCooldown or (C_Container and C_Container.GetItemCooldown)
+local GetItemCooldown = GetItemCooldown or (C_Item and C_Item.GetItemCooldown) or (C_Container and C_Container.GetItemCooldown)
 
 function Env.CooldownDuration(spell, gcdAsUnusable)
 	if spell == "gcd" then
@@ -52,7 +54,7 @@ function Env.CooldownDuration(spell, gcdAsUnusable)
 	return 0, 0, 0
 end
 
-local GetSpellCharges = GetSpellCharges
+local GetSpellCharges = TMW.GetSpellCharges
 function Env.RechargeDuration(spell)
 	local charges, maxCharges, start, duration = GetSpellCharges(spell)
 	if charges and charges ~= maxCharges then
@@ -180,8 +182,8 @@ if TMW.isRetail then
 		icon = "Interface\\Icons\\ability_monk_roll",
 		tcoords = CNDT.COMMON.standardtcoords,
 		Env = {
-			GetSpellCharges = GetSpellCharges,
-			GetSpellCount = GetSpellCount,
+			GetSpellCharges = TMW.GetSpellCharges,
+			GetSpellCount = C_Spell.GetSpellCastCount or _G.GetSpellCount
 		},
 		funcstr = [[(GetSpellCharges(c.OwnSpells.First) or GetSpellCount(c.OwnSpells.First)) c.Operator c.Level]],
 		events = function(ConditionObject, c)
@@ -212,7 +214,7 @@ if TMW.isRetail then
 		icon = "Interface\\Icons\\ability_warlock_handofguldan",
 		tcoords = CNDT.COMMON.standardtcoords,
 		Env = {
-			GetSpellCharges = GetSpellCharges,
+			GetSpellCharges = TMW.GetSpellCharges,
 		},
 		funcstr = [[RechargeDuration(c.OwnSpells.First) c.Operator c.Level]],
 		events = function(ConditionObject, c)
@@ -277,7 +279,7 @@ ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 			module:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED",
 			function(_, unit, _, spellID)
 				if unit == "player" and ussSpells[spellID] and not blacklist[spellID] then
-					Env.LastPlayerCastName = strlower(GetSpellInfo(spellID))
+					Env.LastPlayerCastName = strlower(GetSpellName(spellID))
 					Env.LastPlayerCastID = spellID
 					TMW:Fire("TMW_CNDT_LASTCAST_UPDATED")
 				end
@@ -301,7 +303,7 @@ ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 
 ConditionCategory:RegisterSpacer(2.9)
 
-local IsUsableSpell = IsUsableSpell
+local IsUsableSpell = C_Spell.IsSpellUsable or _G.IsUsableSpell
 function Env.ReactiveHelper(NameFirst, Checked)
 	local usable, nomana = IsUsableSpell(NameFirst)
 	if Checked then
@@ -326,11 +328,11 @@ ConditionCategory:RegisterCondition(2.95, "SPELL_LEARNED", {
 	icon = 237558,
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		GetSpellInfo = GetSpellInfo,
+		GetSpellName = TMW.GetSpellName
 	},
 	-- In Classic SoD, IsPlayerSpell doesn't work for rune abilities (always returns false).
 	-- However, GetSpellInfo with a name input only returns the player's spells.
-	funcstr = [[BOOLCHECK( GetSpellInfo(c.Spells.FirstString) )]],
+	funcstr = [[BOOLCHECK( GetSpellName(c.Spells.FirstString) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("SPELLS_CHANGED")
@@ -436,7 +438,7 @@ ConditionCategory:RegisterCondition(3.5,  "OVERLAYED", {
 			module = CNDT:NewModule("OVERLAYED", "AceEvent-3.0")
 
 			local function handleEvent(event, arg1)
-				Env.OverlayedNameMap[strlowerCache[GetSpellInfo(arg1)]] = arg1
+				Env.OverlayedNameMap[strlowerCache[GetSpellName(arg1)]] = arg1
 			end
 
 			module:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW", handleEvent)

@@ -31,6 +31,7 @@ local currentTimestamp = time()
 
 local doUpdateCache = true
 
+local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
 local GetContainerNumSlots = C_Container and C_Container.GetContainerNumSlots or GetContainerNumSlots
 local GetContainerItemID = C_Container and C_Container.GetContainerItemID or GetContainerItemID
 local GetContainerItemLink = C_Container and C_Container.GetContainerItemLink or GetContainerItemLink

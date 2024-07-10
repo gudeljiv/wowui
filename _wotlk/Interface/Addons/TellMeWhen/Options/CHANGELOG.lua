@@ -3,6 +3,11 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="7.4.0"
 
 TMW.CHANGELOG = [==[
+## v10.2.7
+* Initial support for WoW 11.0
+* Fix GetTalentTabInfo call for SOD Phase 4
+* Fix Tooltip Number conditions for Cata
+
 ## v10.2.6
 * Additional updates for Cataclysm Classic, including handling for new player resource types.
 

@@ -15,6 +15,7 @@ local CreateFrame = CreateFrame
 local AceGUI = LibStub("AceGUI-3.0")
 local SharedMedia = LibStub("LibSharedMedia-3.0")
 local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+local LAAC = LibStub("LibAPIAutoComplete-1.0")
 
 local IndentationLib = IndentationLib
 
@@ -190,6 +191,7 @@ local function ConstructTextEditor(frame)
   -- display we ned the original, so save it here.
   local originalGetText = editor.editBox.GetText
   set_scheme()
+  LAAC:enable(editor.editBox)
   IndentationLib.enable(editor.editBox, color_scheme, WeakAurasSaved.editor_tab_spaces)
 
   local cancel = CreateFrame("Button", nil, group.frame, "UIPanelButtonTemplate")
@@ -822,9 +824,15 @@ local function ConstructTextEditor(frame)
       helpButton:Hide()
     end
     if (frame.window == "texture") then
-      frame.texturePicker:CancelClose()
+      local texturepicker = OptionsPrivate.TexturePicker(frame, true)
+      if texturepicker then
+        texturepicker:CancelClose()
+      end
     elseif (frame.window == "icon") then
-      frame.iconPicker:CancelClose()
+      local iconpicker = OptionsPrivate.IconPicker(frame, true)
+      if iconpicker then
+        iconpicker:CancelClose()
+      end
     end
     frame.window = "texteditor"
     frame:UpdateFrameVisible()
@@ -991,7 +999,7 @@ local function ConstructTextEditor(frame)
   return group
 end
 
-function OptionsPrivate.TextEditor(frame)
-  textEditor = textEditor or ConstructTextEditor(frame)
+function OptionsPrivate.TextEditor(frame, noConstruct)
+  textEditor = textEditor or (not noConstruct and ConstructTextEditor(frame))
   return textEditor
 end

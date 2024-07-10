@@ -1,6 +1,8 @@
 
-## v10.2.6
-* Additional updates for Cataclysm Classic, including handling for new player resource types.
+## v10.2.7
+* Initial support for WoW 11.0
+* Fix GetTalentTabInfo call for SOD Phase 4
+* Fix Tooltip Number conditions for Cata
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/52c8e5708ffbb8f90e5f4c2fab48f1172f0c0498/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/85181d0423d2aef033534655e7cbf476266f91c1/CHANGELOG.md)

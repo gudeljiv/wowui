@@ -15,9 +15,10 @@ if not TMW then return end
 local L = TMW.L
 
 local print = TMW.print
-local GetSpellBookItemInfo, GetItemIcon = 
-	  GetSpellBookItemInfo, GetItemIcon
 
+local GetItemIcon = C_Item and C_Item.GetItemIconByID or GetItemIcon
+local GetSpellBookItemInfo = TMW.GetSpellBookItemInfo
+	  
 local Type = TMW.Classes.IconType:New("conditionicon")
 Type.name = L["ICONMENU_CNDTIC"]
 Type.desc = L["ICONMENU_CNDTIC_DESC"]
@@ -177,7 +178,8 @@ function Type:DragReceived(icon, t, data, subType)
 
 	local _, input
 	if t == "spell" then
-		_, input = GetSpellBookItemInfo(data, subType)
+		local spellData = GetSpellBookItemInfo(data, subType)
+		input = spellData and spellData.actionID
 	elseif t == "item" then
 		input = GetItemIcon(data)
 	end

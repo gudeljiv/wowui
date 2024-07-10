@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20240501042110"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20240622163308"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -167,13 +167,14 @@ DogTag:AddTag("Unit", "Level", {
 	category = L["Characteristics"]
 })
 
+local maxLevel = GetMaxPlayerLevel and GetMaxPlayerLevel() or _G.MAX_PLAYER_LEVEL
 DogTag:AddTag("Unit", "IsMaxLevel", {
-	alias = ("Boolean(Level(unit=unit) >= %d)"):format(_G.MAX_PLAYER_LEVEL),
+	alias = ("Boolean(Level(unit=unit) >= %d)"):format(maxLevel),
 	arg = {
 		'unit', 'string;undef', 'player'
 	},
-	doc = L["Return True if the level of unit is %d"]:format(_G.MAX_PLAYER_LEVEL),
-	example = ('[IsMaxLevel] => %q'):format(UnitLevel("player") >= _G.MAX_PLAYER_LEVEL and L["True"] or ""),
+	doc = L["Return True if the level of unit is %d"]:format(maxLevel),
+	example = ('[IsMaxLevel] => %q'):format(UnitLevel("player") >= maxLevel and L["True"] or ""),
 	category = L["Characteristics"],
 })
 

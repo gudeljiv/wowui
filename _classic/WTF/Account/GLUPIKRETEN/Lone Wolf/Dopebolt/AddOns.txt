@@ -66,7 +66,7 @@ SharedMedia: enabled
 SharedMedia_xVermin: enabled
 SimpleRaidTargetIcons: enabled
 SortBags: enabled
-TacoTip: enabled
+TacoTip: disabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
 ThreatClassic2: enabled

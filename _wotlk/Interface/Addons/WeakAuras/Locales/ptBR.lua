@@ -121,7 +121,6 @@ Note: This trigger will use BigWigs or DBM, in that order if both are installed.
 Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "Adicionar"
 L["Add Missing Auras"] = "Adicionar auras faltantes"
-L["Additional Trigger Replacements"] = "Substitutos de gatilho adicionais"
 --[[Translation missing --]]
 L["Advanced Caster's Target Check"] = "Advanced Caster's Target Check"
 L["Affected"] = "Afetado"
@@ -537,6 +536,8 @@ L["Defensive Stats"] = "Defensive Stats"
 --[[Translation missing --]]
 L["Deflect"] = "Deflect"
 --[[Translation missing --]]
+L["Delve"] = "Delve"
+--[[Translation missing --]]
 L["Desaturate"] = "Desaturate"
 --[[Translation missing --]]
 L["Desaturate Background"] = "Desaturate Background"
@@ -848,6 +849,8 @@ L["Flip"] = "Flip"
 L["Floor"] = "Floor"
 --[[Translation missing --]]
 L["Focus"] = "Focus"
+--[[Translation missing --]]
+L["Follower Dungeon"] = "Follower Dungeon"
 --[[Translation missing --]]
 L["Font"] = "Font"
 --[[Translation missing --]]
@@ -1725,6 +1728,8 @@ L["Quantity"] = "Quantity"
 --[[Translation missing --]]
 L["Quantity earned this week"] = "Quantity earned this week"
 --[[Translation missing --]]
+L["Quest Party"] = "Quest Party"
+--[[Translation missing --]]
 L["Queued Action"] = "Queued Action"
 L["Radius"] = "Raio"
 --[[Translation missing --]]
@@ -2095,6 +2100,8 @@ L["Stolen"] = "Roubado"
 --[[Translation missing --]]
 L["Stop"] = "Stop"
 --[[Translation missing --]]
+L["Story Raid"] = "Story Raid"
+--[[Translation missing --]]
 L["Strength"] = "Strength"
 --[[Translation missing --]]
 L["String"] = "String"
@@ -2193,8 +2200,6 @@ L["The Four Horsemen"] = "The Four Horsemen"
 L["The 'ID' value can be found in the BigWigs options of a specific spell"] = "The 'ID' value can be found in the BigWigs options of a specific spell"
 --[[Translation missing --]]
 L["The Prophet Skeram"] = "The Prophet Skeram"
---[[Translation missing --]]
-L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."] = "The trigger number is optional, and uses the trigger providing dynamic information if not specified."
 --[[Translation missing --]]
 L["The War Within"] = "The War Within"
 --[[Translation missing --]]

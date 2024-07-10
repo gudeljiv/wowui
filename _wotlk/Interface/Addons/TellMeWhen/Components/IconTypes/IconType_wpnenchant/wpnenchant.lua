@@ -17,8 +17,10 @@ local L = TMW.L
 local print = TMW.print
 local _G, strmatch, strtrim, select, floor, ceil, pairs, wipe, type, max =
 	  _G, strmatch, strtrim, select, floor, ceil, pairs, wipe, type, max
-local GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetItemInfo, GetWeaponEnchantInfo =
-	  GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetItemInfo, GetWeaponEnchantInfo
+local GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetWeaponEnchantInfo =
+	  GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetWeaponEnchantInfo
+
+local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
 
 local strlowerCache = TMW.strlowerCache
 
@@ -35,7 +37,7 @@ local Type = TMW.Classes.IconType:New("wpnenchant")
 LibStub("AceTimer-3.0"):Embed(Type)
 Type.name = L["ICONMENU_WPNENCHANT"]
 Type.desc = L["ICONMENU_WPNENCHANT_DESC"]
-Type.menuIcon = GetSpellTexture(8024)
+Type.menuIcon = TMW.GetSpellTexture(8024)
 Type.AllowNoName = true
 Type.menuSpaceAfter = true
 

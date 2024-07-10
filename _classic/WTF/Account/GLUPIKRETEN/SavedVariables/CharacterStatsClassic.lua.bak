@@ -1,6 +1,6 @@
 
 CharacterStatsClassicDB = {
-	["statsPanelHidden"] = false,
-	["useBlizzardBlockValue"] = false,
-	["useTransparentStatsBackground"] = true,
+["statsPanelHidden"] = false,
+["useBlizzardBlockValue"] = false,
+["useTransparentStatsBackground"] = true,
 }

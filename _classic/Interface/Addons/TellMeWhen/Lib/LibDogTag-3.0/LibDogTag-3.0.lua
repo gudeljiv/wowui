@@ -6,7 +6,7 @@ Description: A library to provide a markup syntax
 ]]
 
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20240501042053"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20240622213617"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -555,7 +555,7 @@ function DogTag:ADDON_LOADED()
 				if AceLibrary then
 					AceLibrary:HasInstance(name) -- try to load
 				end
-				LoadAddOn(name)
+				(C_AddOns and C_AddOns.LoadAddOn or _G.LoadAddOn)(name)
 				if LibStub:GetLibrary(name, true) then
 					data[k] = nil
 					del(k)

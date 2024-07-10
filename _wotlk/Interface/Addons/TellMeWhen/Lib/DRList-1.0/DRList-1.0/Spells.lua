@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "DRList-1.0", 64 -- Don't forget to change this in DRList-1.0.lua aswell!
+local MAJOR, MINOR = "DRList-1.0", 69 -- Don't forget to change this in DRList-1.0.lua aswell!
 local Lib = LibStub(MAJOR)
 if Lib.spellListVersion and Lib.spellListVersion >= MINOR then
     return
@@ -135,7 +135,7 @@ if Lib.gameExpansion == "retail" then
         [199085]  = "stun", -- Warpath
         [20549]   = "stun", -- War Stomp (Racial, Tauren)
         [255723]  = "stun", -- Bull Rush (Racial, Highmountain Tauren)
-        [287712]  = "stun", -- Haymaker (Racial, Kul Tiran)
+        [287712]  = { "stun", "knockback" }, -- Haymaker (Racial, Kul Tiran)
         [332423]  = "stun", -- Sparkling Driftglobe Core (Kyrian Covenant)
 
         -- *** Controlled Root Effects ***
@@ -209,7 +209,7 @@ if Lib.gameExpansion == "retail" then
         [355]     = "taunt", -- Taunt
 
         -- *** Controlled Knockback Effects ***
-        -- Experimental, see https://github.com/wardz/DRList-1.0/wiki/DR-Categories#knockback-notes-retail
+        -- Note: not every knockback has an aura.
         [108199]  = "knockback", -- Gorefiend's Grasp
         [202249]  = "knockback", -- Overrun
         [61391]   = "knockback", -- Typhoon
@@ -219,7 +219,6 @@ if Lib.gameExpansion == "retail" then
         [157981]  = "knockback", -- Blast Wave
         [204263]  = "knockback", -- Shining Force
         [51490]   = "knockback", -- Thunderstorm
-        --[287712]  = "knockback", -- Haywire (Racial, Kul'Tiran)
     }
 
 elseif Lib.gameExpansion == "tbc" then
@@ -653,6 +652,14 @@ elseif Lib.gameExpansion == "wotlk" then
         [42949] = "scatter", -- Dragon's Breath (Rank 5)
         [42950] = "scatter", -- Dragon's Breath (Rank 6)
 
+        -- *** Force Taunt Effects ***
+        [56222]   = "taunt", -- Dark Command
+        [51399]   = "taunt", -- Death Grip (Taunt Effect)
+        [6795]    = "taunt", -- Growl (Druid)
+        [20736]   = "taunt", -- Distracting Shot
+        [62124]   = "taunt", -- Hand of Reckoning
+        [355]     = "taunt", -- Taunt
+
         -- *** Spells that DRs with itself only ***
         [33786] = "cyclone",        -- Cyclone
         [19306] = "counterattack",  -- Counterattack 1
@@ -685,7 +692,7 @@ elseif Lib.gameExpansion == "cata" then
         [61721] = "incapacitate", -- Polymorph: Rabbit
         [61780] = "incapacitate", -- Polymorph: Turkey
         [61305] = "incapacitate", -- Polymorph: Black Cat
-        [82691] = "incapacitate", -- Ring of Frost
+        [82691] = { "incapacitate", "deep_freeze_rof" }, -- Ring of Frost (Also shares DR with Deep Freeze)
         [20066] = "incapacitate", -- Repentance
         [1776]  = "incapacitate", -- Gouge
         [6770]  = "incapacitate", -- Sap
@@ -722,7 +729,7 @@ elseif Lib.gameExpansion == "cata" then
         [24394] = "stun", -- Intimidation
         [56626] = "stun", -- Sting (Wasp)
         [50519] = "stun", -- Sonic Blast
-        [44572] = "stun", -- Deep Freeze
+        [44572] = { "stun", "deep_freeze_rof" }, -- Deep Freeze (Also shares DR with Ring of Frost)
         [83046] = "stun", -- Improved Polymorph (Rank 1)
         [83047] = "stun", -- Improved Polymorph (Rank 2)
         [853]   = "stun", -- Hammer of Justice
@@ -807,8 +814,6 @@ elseif Lib.gameExpansion == "cata" then
         [18425] = "silence", -- Silenced - Improved Kick
         [86759] = "silence", -- Silenced - Improved Kick (Rank 2)
         [24259] = "silence", -- Spell Lock
-        [31117] = "silence", -- Silenced - Unstable Affliction (Rank 1)
-        [43523] = "silence", -- Silenced - Unstable Affliction (Rank 2)
         [18498] = "silence", -- Silenced - Gag Order
         [50613] = "silence", -- Arcane Torrent (Racial, Runic Power)
         [28730] = "silence", -- Arcane Torrent (Racial, Mana)
@@ -825,12 +830,15 @@ elseif Lib.gameExpansion == "cata" then
         [13181] = "mind_control", -- Gnomish Mind Control Cap (Item)
         [67799] = "mind_control", -- Mind Amplification Dish (Item)
 
-        -- *** Special Shared DRs ***
-        -- Atm these would overwrite existing previous table values so this is commented out for now
-        -- until i get the time to work on a better solution. For now this edge case category is
-        -- best handled inside your addon itself.
-        --[44572] = "deep_freeze_rof", -- Deep Freeze
-        --[82691] = "deep_freeze_rof", -- Ring of Frost
+        -- *** Force Taunt Effects ***
+        [56222]   = "taunt", -- Dark Command
+        [51399]   = "taunt", -- Death Grip (Taunt Effect)
+        [6795]    = "taunt", -- Growl (Druid)
+        [20736]   = "taunt", -- Distracting Shot
+        [62124]   = "taunt", -- Hand of Reckoning
+        [355]     = "taunt", -- Taunt
+
+        -- TODO: knockbacks?
 
         -- *** Spells that DRs with itself only ***
         [19503] = "scatter", -- Scatter Shot
@@ -838,7 +846,6 @@ elseif Lib.gameExpansion == "cata" then
         [33786] = "cyclone", -- Cyclone
         [19306] = "counterattack", -- Counterattack
         [76780] = "bind_elemental", -- Bind Elemental
-        -- TODO: taunts, knockbacks?
     }
 
 elseif Lib.gameExpansion == "classic" then
@@ -984,5 +991,6 @@ elseif Lib.gameExpansion == "classic" then
         [10473]  = "frost_shock",  -- Frost Shock (Rank 4)
     }
 end
+
 -- Alias for DRData-1.0
 Lib.spells = Lib.spellList

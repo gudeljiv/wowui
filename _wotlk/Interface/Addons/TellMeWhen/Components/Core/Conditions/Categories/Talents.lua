@@ -25,15 +25,17 @@ local _, pclass = UnitClass("Player")
 
 local wipe = 
       wipe
-local GetTalentInfo, GetNumTalents, GetGlyphLink, GetSpellInfo = 
-      GetTalentInfo, GetNumTalents, GetGlyphLink, GetSpellInfo
+local GetTalentInfo, GetNumTalents, GetGlyphLink = 
+      GetTalentInfo, GetNumTalents, GetGlyphLink
 local GetSpecializationInfo, GetNumClasses = 
       GetSpecializationInfo, GetNumClasses
 local GetNumBattlefieldScores, RequestBattlefieldScoreData, GetBattlefieldScore, GetNumArenaOpponents, GetArenaOpponentSpec =
       GetNumBattlefieldScores, RequestBattlefieldScoreData, GetBattlefieldScore, GetNumArenaOpponents, GetArenaOpponentSpec
-local UnitAura, IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID =
-	  UnitAura, IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID
+local IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID =
+	  IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID
 	  
+local GetSpellInfo = TMW.GetSpellInfo
+local GetSpellName = TMW.GetSpellName
 local GetClassInfo = TMW.GetClassInfo
 local GetMaxClassID = TMW.GetMaxClassID
 
@@ -387,11 +389,63 @@ ConditionCategory:RegisterCondition(8.1, "TREEROLE2", {
 	end,
 })
 
-
 CNDT.Env.TalentMap = {}
 CNDT.Env.PvpTalentMap = {}
 if C_ClassTalents then
 	-- Dragonflight
+
+	function CNDT:GetTalentRanksBySpellID()
+		local map = {}
+	
+		-- A "config" is a loadout - either the current one (maybe unsaved), or a saved one.
+		-- NOTE: C_ClassTalents.GetActiveConfigID returns a generic config for the curent class spec,
+		-- not the actual currently selected loadout (which is only returned by )
+		local configID = C_ClassTalents.GetActiveConfigID()
+		if configID then
+			-- will be nil on fresh characters
+			local configInfo = C_Traits.GetConfigInfo(configID)
+
+			-- I have no idea why the concept of trees exists.
+			-- It seems that every class has a single tree, regardless of spec.
+			for _, treeID in pairs(configInfo.treeIDs) do
+
+				-- Nodes are circles/square in the talent tree.
+				for _, nodeID in pairs(C_Traits.GetTreeNodes(treeID)) do
+					local nodeInfo = C_Traits.GetNodeInfo(configID, nodeID)
+
+					-- Entries are the choices in each node.
+					-- Choice nodes have two, otherwise there's only one.
+					for _, entryID in pairs(nodeInfo.entryIDs) do
+						local entryInfo = C_Traits.GetEntryInfo(configID, entryID)
+
+						if not entryInfo.definitionID then
+							-- No idea what causes this. Reported on discord as happening on TWW beta.
+							-- Doesn't happen on TWW PTR.
+							print("Missing definitionID for configId", configID, "entryId", entryID)
+						else
+							-- Definition seems a useless layer between entry and spellID.
+							-- Blizzard's in-game API help about them is currently completely wrong
+							-- about what fields it has. Currently the only field I see is spellID.
+							local definitionInfo = C_Traits.GetDefinitionInfo(entryInfo.definitionID)
+							local spellID = definitionInfo.spellID
+
+							if spellID 
+							-- The ranks are stored on the node, but we
+							-- have to make sure that we're looking at the ranks for the
+							-- currently selected entry for the talent.
+							and nodeInfo.activeEntry 
+							and nodeInfo.activeEntry.entryID == entryID 
+							then
+								map[spellID] = nodeInfo.ranksPurchased or 0
+							end
+						end
+					end
+				end
+			end
+		end
+
+		return map
+	end
 
 	function CNDT:PLAYER_TALENT_UPDATE()
 		wipe(Env.TalentMap)
@@ -422,45 +476,14 @@ if C_ClassTalents then
 			TMW:Fire("TMW_TALENT_LOADOUT_NAME_UPDATE", loadoutName)
 		end
 
-		-- A "config" is a loadout - either the current one (maybe unsaved), or a saved one.
-		-- NOTE: C_ClassTalents.GetActiveConfigID returns a generic config for the curent class spec,
-		-- not the actual currently selected loadout (which is only returned by )
-		local configID = C_ClassTalents.GetActiveConfigID()
-		if configID then
-			-- will be nil on fresh characters
-			local configInfo = C_Traits.GetConfigInfo(configID)
+		local ranksbySpellId = CNDT:GetTalentRanksBySpellID()
+		for spellID, ranks in pairs(ranksbySpellId) do
+			local name = GetSpellName(spellID)
 
-			-- I have no idea why the concept of trees exists.
-			-- It seems that every class has a single tree, regardless of spec.
-			for _, treeID in pairs(configInfo.treeIDs) do
-
-				-- Nodes are circles/square in the talent tree.
-				for _, nodeID in pairs(C_Traits.GetTreeNodes(treeID)) do
-					local nodeInfo = C_Traits.GetNodeInfo(configID, nodeID)
-
-					-- Entries are the choices in each node.
-					-- Choice nodes have two, otherwise there's only one.
-					for _, entryID in pairs(nodeInfo.entryIDs) do
-						local entryInfo = C_Traits.GetEntryInfo(configID, entryID)
-						-- Definition seems a useless layer between entry and spellID.
-						-- Blizzard's in-game API help about them is currently completely wrong
-						-- about what fields it has. Currently the only field I see is spellID.
-						local definitionInfo = C_Traits.GetDefinitionInfo(entryInfo.definitionID)
-						local spellID = definitionInfo.spellID
-						local name, _, tex = GetSpellInfo(spellID)
-
-						-- The ranks are stored on the node, but we
-						-- have to make sure that we're looking at the ranks for the
-						-- currently selected entry for the talent.
-						local ranks = nodeInfo.activeEntry and nodeInfo.activeEntry.entryID == entryID and nodeInfo.ranksPurchased or 0
-
-						local lower = name and strlowerCache[name]
-						if lower then
-							Env.TalentMap[lower] = ranks
-							Env.TalentMap[spellID] = ranks
-						end
-					end
-				end
+			local lower = name and strlowerCache[name]
+			if lower then
+				Env.TalentMap[lower] = ranks
+				Env.TalentMap[spellID] = ranks
 			end
 		end
 
@@ -690,7 +713,7 @@ if GetGlyphSocketInfo then
 				if spellID then
 					GlyphLookup[spellID] = 1
 					
-					local name = GetSpellInfo(spellID)
+					local name = GetSpellName(spellID)
 					name = strlowerCache[name]
 					GlyphLookup[name] = 1
 				end
@@ -702,7 +725,7 @@ if GetGlyphSocketInfo then
 				if spellID then
 					GlyphLookup[spellID] = 1
 					
-					local name = GetSpellInfo(spellID)
+					local name = GetSpellName(spellID)
 					name = strlowerCache[name]
 					GlyphLookup[name] = 1
 				end
@@ -813,19 +836,24 @@ if IsInJailersTower then
 			self.watching = false
 		end
 	end
+
+	local GetAuraDataByIndex = C_UnitAuras.GetAuraDataByIndex
 	function AnimaPowWatcher:UNIT_AURA(_, unit)
 		if unit ~= "player" then return end
 
 		for i=1, 300 do
-			local name, _, count, _, _, _, _, _, _, spellID = UnitAura("player", i, "MAW");
-			if not spellID then return end
+			local data = GetAuraDataByIndex("player", i, "MAW");
+			if not data then return end
+
+			local spellId = data.spellId
+			local count = data.applications
 			if count == 0 then
-				count = 1;
+				count = 1
 			end
 
-			if currentAnimaPows[spellID] ~= count then
-				currentAnimaPows[spellID] = count;
-				currentAnimaPows[strlowerCache[name]] = count;
+			if currentAnimaPows[data.spellId] ~= count then
+				currentAnimaPows[data.spellId] = count;
+				currentAnimaPows[strlowerCache[data.name]] = count;
 				TMW:Fire("TMW_ANIMA_POWER_COUNT_CHANGED")
 			end
 		end
@@ -854,10 +882,10 @@ end
 
 if C_Covenants then
 	TMW.CovenantIcons = {
-		[1] = GetSpellTexture(321076),
-		[2] = GetSpellTexture(321079),
-		[3] = GetSpellTexture(299206),
-		[4] = GetSpellTexture(321078),
+		[1] = TMW.GetSpellTexture(321076),
+		[2] = TMW.GetSpellTexture(321079),
+		[3] = TMW.GetSpellTexture(299206),
+		[4] = TMW.GetSpellTexture(321078),
 	}
 	ConditionCategory:RegisterCondition(22, "COVENANT", {
 		text = L["CONDITIONPANEL_COVENANT"],

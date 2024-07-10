@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20240501042053"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20240622213617"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -378,7 +378,7 @@ function DogTag:OpenHelp()
 		end
 		
 		selectedTreeLine = this
-		if GetMouseFocus() == this then
+		if this:IsMouseMotionFocus() then
 			this.highlight:SetAlpha(1)
 		else
 			this.highlight:SetAlpha(0.7)

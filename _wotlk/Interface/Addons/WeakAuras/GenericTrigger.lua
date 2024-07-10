@@ -54,15 +54,11 @@ local Private = select(2, ...)
 -- Lua APIs
 local tinsert, tconcat, wipe = table.insert, table.concat, wipe
 local tostring, pairs, type = tostring, pairs, type
-local error, setmetatable = error, setmetatable
+local error = error
 local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo;
 
 -- WoW APIs
 local IsPlayerMoving = IsPlayerMoving
-
-WeakAurasAceEvents = setmetatable({}, {__tostring=function() return "WeakAuras" end});
-LibStub("AceEvent-3.0"):Embed(WeakAurasAceEvents);
-local aceEvents = WeakAurasAceEvents
 
 ---@class WeakAuras
 local WeakAuras = WeakAuras;
@@ -3356,7 +3352,7 @@ do
         startTime, duration = 0, 0
       end
       itemCdEnabled[id] = enabled;
-      if(duration > 0 and duration > 1.5 and duration ~= WeakAuras.gcdDuration()) then
+      if(duration and duration > 0 and duration > 1.5 and duration ~= WeakAuras.gcdDuration()) then
         local time = GetTime();
         local endTime = startTime + duration;
         itemCdDurs[id] = duration;
@@ -3469,6 +3465,7 @@ function WeakAuras.WatchUnitChange(unit)
     watchUnitChange:RegisterEvent("PLAYER_TARGET_CHANGED")
     if not WeakAuras.IsClassicEra() then
       watchUnitChange:RegisterEvent("PLAYER_FOCUS_CHANGED")
+      watchUnitChange:RegisterEvent("ARENA_OPPONENT_UPDATE")
     end
     watchUnitChange:RegisterEvent("PLAYER_ROLES_ASSIGNED")
     watchUnitChange:RegisterEvent("PLAYER_SOFT_ENEMY_CHANGED")
@@ -3585,52 +3582,67 @@ function WeakAuras.WatchUnitChange(unit)
       end
     end
 
-    watchUnitChange:SetScript("OnEvent", function(self, event, unit)
-      Private.StartProfileSystem("generictrigger unit change");
-      local eventsToSend = {}
-      if event == "PLAYER_ENTERING_WORLD" then
+    local handleEvent = {
+      PLAYER_ENTERING_WORLD = function(_, eventsToSend)
         for unit in pairs(watchUnitChange.unitIdToGUID) do
           handleUnit(unit, eventsToSend, unitUpdate, markerUpdate, reactionUpdate)
         end
-      elseif event == "NAME_PLATE_UNIT_ADDED" then
+      end,
+      NAME_PLATE_UNIT_ADDED = function(unit, eventsToSend)
         handleUnit(unit, eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "NAME_PLATE_UNIT_REMOVED" then
+      end,
+      NAME_PLATE_UNIT_REMOVED = function(unit, eventsToSend)
         handleUnit(unit, eventsToSend, unitUpdate, markerClear, reactionClear)
-      elseif event == "INSTANCE_ENCOUNTER_ENGAGE_UNIT" then
+      end,
+      INSTANCE_ENCOUNTER_ENGAGE_UNIT = function(_, eventsToSend)
         for i = 1, 5 do
           handleUnit("boss" .. i, eventsToSend, unitUpdate, markerInit, reactionInit)
           handleUnit("boss" .. i .. "target", eventsToSend, unitUpdate, markerInit, reactionInit)
         end
-      elseif event == "PLAYER_TARGET_CHANGED" then
+      end,
+      ARENA_OPPONENT_UPDATE = function(unit, eventsToSend)
+        handleUnit(unit, eventsToSend, unitUpdate, markerInit, reactionInit)
+        handleUnit(unit .. "target", eventsToSend, unitUpdate, markerInit, reactionInit)
+      end,
+      PLAYER_TARGET_CHANGED = function(_, eventsToSend)
         handleUnit("target", eventsToSend, unitUpdate, markerInit, reactionInit)
         handleUnit("targettarget", eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "PLAYER_FOCUS_CHANGED" then
+      end,
+      PLAYER_FOCUS_CHANGED = function(_, eventsToSend)
         handleUnit("focus", eventsToSend, unitUpdate, markerInit, reactionInit)
         handleUnit("focustarget", eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "PLAYER_SOFT_ENEMY_CHANGED" then
+      end,
+      PLAYER_SOFT_ENEMY_CHANGED = function(_, eventsToSend)
         handleUnit("softenemy", eventsToSend, unitUpdate, markerInit, reactionInit)
         handleUnit("softenemytarget", eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "PLAYER_SOFT_FRIEND_CHANGED" then
+      end,
+      PLAYER_SOFT_FRIEND_CHANGED = function(_, eventsToSend)
         handleUnit("softfriend", eventsToSend, unitUpdate, markerInit, reactionInit)
         handleUnit("softfriendtarget", eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "RAID_TARGET_UPDATE" then
+      end,
+      RAID_TARGET_UPDATE = function(_, eventsToSend)
         for unit in pairs(watchUnitChange.raidmark) do
           handleUnit(unit, eventsToSend, markerUpdate)
         end
-      elseif event == "UNIT_FACTION" then
+      end,
+      UNIT_FACTION = function(unit, eventsToSend)
         handleUnit(unit, eventsToSend, reactionUpdate)
-      elseif event == "UNIT_PET" then
+      end,
+      UNIT_PET = function(unit, eventsToSend)
         local pet = WeakAuras.unitToPetUnit[unit]
         if pet and watchUnitChange.trackedUnits[pet] then
           eventsToSend["UNIT_CHANGED_" .. pet] = pet
         end
-      elseif event == "PLAYER_ROLES_ASSIGNED" then
+      end,
+      PLAYER_ROLES_ASSIGNED = function(_, eventsToSend)
         for unit in pairs(Private.multiUnitUnits.group) do
           handleUnit(unit, eventsToSend, roleUpdate)
         end
-      elseif event == "UNIT_TARGET" then
+      end,
+      UNIT_TARGET = function(unit, eventsToSend)
         handleUnit(unit .. "target", eventsToSend, unitUpdate, markerInit, reactionInit)
-      elseif event == "GROUP_ROSTER_UPDATE" then
+      end,
+      GROUP_ROSTER_UPDATE = function(_, eventsToSend)
         for unit in pairs(Private.multiUnitUnits.group) do
           handleUnit(unit, eventsToSend, unitUpdate, markerInit, reactionInit)
         end
@@ -3645,7 +3657,12 @@ function WeakAuras.WatchUnitChange(unit)
           watchUnitChange.inRaid = inRaid
         end
       end
+    }
 
+    watchUnitChange:SetScript("OnEvent", function(self, event, unit)
+      Private.StartProfileSystem("generictrigger unit change");
+      local eventsToSend = {}
+      handleEvent[event](unit, eventsToSend)
       -- send events
       for event, unit in pairs(eventsToSend) do
         WeakAuras.ScanEvents(event, unit)
@@ -4369,10 +4386,10 @@ function GenericTrigger.SetToolTip(trigger, state)
   return false
 end
 
----@type fun(data: auraData, triggernum: number): string
+---@type fun(data: auraData, triggernum: number): table
 function GenericTrigger.GetAdditionalProperties(data, triggernum)
   local trigger = data.triggers[triggernum].trigger
-  local ret = {""};
+  local props = {}
   local prototype = GenericTrigger.GetPrototype(trigger)
   if prototype then
     for _, v in pairs(prototype.args) do
@@ -4383,29 +4400,25 @@ function GenericTrigger.GetAdditionalProperties(data, triggernum)
         enable = v.enable
       end
       if (enable and v.store and v.name and v.display and v.conditionType ~= "bool") then
-        table.insert(ret, "|cFFFFCC00%".. triggernum .. "." .. v.name .. "|r - " .. v.display .. "\n")
+        props[v.name] = v.display
       end
     end
     if prototype.countEvents then
-      table.insert(ret, "|cFFFFCC00%".. triggernum .. ".count|r - " .. L["Count"] .. "\n")
+      props.count = L["Count"]
     end
-
   else
     if (trigger.custom_type == "stateupdate") then
       local variables = GenericTrigger.GetTsuConditionVariables(data.id, triggernum)
       if (type(variables) == "table") then
         for var, varData in pairs(variables) do
-          if (type(varData) == "table") then
-            if varData.display then
-              table.insert(ret, "|cFFFFCC00%".. triggernum .. "." .. var .. "|r - " .. varData.display .. "\n")
-            end
+          if (type(varData) == "table") and varData.display then
+            props[var] = varData.display
           end
         end
       end
     end
   end
-
-  return table.concat(ret);
+  return props;
 end
 
 function GenericTrigger.GetProgressSources(data, triggernum, values)

@@ -10,6 +10,8 @@ local L = WeakAuras.L
 	L[" and |cFFFF0000mirrored|r"] = "并且|cFFFF0000镜像|r"
 	L["-- Do not remove this comment, it is part of this aura: "] = "-- 不要移除此注释，这是此光环的一部分："
 	L[" rotated |cFFFF0000%s|r degrees"] = "旋转|cFFFF0000%s|r度"
+	--[[Translation missing --]]
+	L["% - To show a percent sign"] = "% - To show a percent sign"
 	L["% of Progress"] = "进度%"
 	L["%d |4aura:auras; added"] = "已添加%d个光环"
 	L["%d |4aura:auras; deleted"] = "已删除%d个光环"
@@ -177,6 +179,8 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["At a position a bit left of Left HUD position."] = "在左侧HUD偏左一点的位置。"
 	L["At a position a bit left of Right HUD position"] = "在右侧HUD偏左一点的位置。"
 	L["At the same position as Blizzard's spell alert"] = "与暴雪的法术警报在同一位置"
+	--[[Translation missing --]]
+	L["Attach to Foreground"] = "Attach to Foreground"
 	L["Aura"] = "光环"
 	L[ [=[Aura is
 Off Screen]=] ] = "光环在屏幕外"
@@ -223,6 +227,8 @@ Off Screen]=] ] = "光环在屏幕外"
 	L["Bottom Right"] = "右下"
 	L["Bracket Matching"] = "括号自动匹配"
 	L["Browse Wago, the largest collection of auras."] = "浏览Wago，最大的光环集合网站。"
+	--[[Translation missing --]]
+	L["By default this shows the information from the trigger selected via dynamic information. The information from a specific trigger can be shown via e.g. %2.p."] = "By default this shows the information from the trigger selected via dynamic information. The information from a specific trigger can be shown via e.g. %2.p."
 	L["Can be a UID (e.g., party1)."] = "可以是单位 ID（例如：party1）。"
 	L["Can set to 0 if Columns * Width equal File Width"] = "如果列x宽度=文件宽度，可以设为0"
 	L["Can set to 0 if Rows * Height equal File Height"] = "如果行x高度=文件高度，可以设为0"
@@ -282,6 +288,8 @@ Off Screen]=] ] = "光环在屏幕外"
 	L["Crop X"] = "裁剪X"
 	L["Crop Y"] = "裁剪Y"
 	L["Custom"] = "自定义"
+	--[[Translation missing --]]
+	L["Custom - Allows you to define a custom Lua function that returns a list of string values. %c1 will be replaced by the first value returned, %c2 by the second, etc."] = "Custom - Allows you to define a custom Lua function that returns a list of string values. %c1 will be replaced by the first value returned, %c2 by the second, etc."
 	L["Custom Anchor"] = "自定义锚点"
 	L["Custom Check"] = "自定义检查"
 	L["Custom Code"] = "自定义代码"
@@ -350,14 +358,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Dynamic Information"] = "动态信息"
 	L["Dynamic information from first active trigger"] = "排列最前的活跃的触发器的动态信息"
 	L["Dynamic information from Trigger %i"] = "触发器%i的动态信息"
-	L["Dynamic text tooltip"] = [=[这里有几个特别的编码允许文字动态显示：
-
-|cFFFF0000%p|r - 进度 - 剩余持续时间或非时间值
-|cFFFF0000%t|r - 总共 - 总持续时间或最大的非时间值
-|cFFFF0000%n|r - 名称 - 图示名称(通常是光环名称)或是没有动态名称图示的编号
-|cFFFF0000%i|r - 图标 - 图示关连的显标
-|cFFFF0000%s|r - 堆叠 - 光环堆叠数量(通常)
-|cFFFF0000%c|r - 自定义 - 允许你自定义一个Lua函数并返回一个用于显示的字符串]=]
+	--[[Translation missing --]]
+	L["Dynamic Text Replacements"] = "Dynamic Text Replacements"
 	L["Ease Strength"] = "缓动强度"
 	L["Ease type"] = "缓动类型"
 	L["Edge"] = "边缘"
@@ -513,6 +515,8 @@ Can use \ to escape -.]=] ] = [=[过滤格式：'名称'，'名称-服务器'，
 	L["Hybrid Position"] = "混合定位"
 	L["Hybrid Sort Mode"] = "混合排序模式"
 	L["Icon"] = "图标"
+	--[[Translation missing --]]
+	L["Icon - The icon associated with the display"] = "Icon - The icon associated with the display"
 	L["Icon Info"] = "图标信息"
 	L["Icon Inset"] = "图标内嵌"
 	L["Icon Picker"] = "图标选择器"
@@ -558,6 +562,8 @@ Can use \ to escape -.]=] ] = [=[过滤格式：'名称'，'名称-服务器'，
 	L["Indent Size"] = "缩进"
 	L["Information"] = "信息"
 	L["Inner"] = "内部"
+	--[[Translation missing --]]
+	L["Insert text replacement codes to make text dynamic."] = "Insert text replacement codes to make text dynamic."
 	L["Invalid Item ID"] = "无效的物品 ID"
 	L["Invalid Item Name/ID/Link"] = "无效的物品名称/ID/链接"
 	L["Invalid Spell ID"] = "无效的法术 ID"
@@ -635,6 +641,8 @@ Can use \ to escape -.]=] ] = [=[过滤格式：'名称'，'名称-服务器'，
 	L["Multiselect single tooltip"] = [=[|cFFFF0000忽略|r - |cFF777777单个|r - |cFF777777多个|r
 只有一个单一的匹配值可以提取]=]
 	L["Must be a power of 2"] = "必须为2的幂"
+	--[[Translation missing --]]
+	L["Name - The name of the display (usually an aura name), or the display's ID if there is no dynamic name"] = "Name - The name of the display (usually an aura name), or the display's ID if there is no dynamic name"
 	L["Name Info"] = "名称讯息"
 	L["Name Pattern Match"] = "名称规则匹配"
 	L["Name(s)"] = "名称"
@@ -723,6 +731,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[事件发�
 	L["Press Ctrl+C to copy"] = "按 Ctrl+C 复制"
 	L["Press Ctrl+C to copy the URL"] = "按 Ctrl+C 复制 URL"
 	L["Prevent Merging"] = "阻止合并"
+	--[[Translation missing --]]
+	L["Progress - The remaining time of a timer, or a non-timer value"] = "Progress - The remaining time of a timer, or a non-timer value"
 	L["Progress Bar"] = "进度条"
 	L["Progress Bar Settings"] = "进度条设置"
 	L["Progress Settings"] = "进度设置"
@@ -851,6 +861,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[事件发�
 	L["Spell Selection Filters"] = "法术选择过滤器"
 	L["Stack Count"] = "层数"
 	L["Stack Info"] = "层数信息"
+	--[[Translation missing --]]
+	L["Stacks - The number of stacks of an aura (usually)"] = "Stacks - The number of stacks of an aura (usually)"
 	L["Stagger"] = "交错"
 	L["Standby"] = "已就绪"
 	L["Star"] = "星星"
@@ -889,8 +901,12 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[事件发�
 	L["The duration of the animation in seconds."] = "动画持续秒数"
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = "动画时长秒时。直到图示可以被正常隐藏之后，结束动画才会播放。"
 	L["The group and all direct children will share the same base frame level."] = "此组与直接子元素将共享同一个框体层级。"
+	--[[Translation missing --]]
+	L["The trigger number is optional. When no trigger number is specified, the trigger selected via dynamic information will be used."] = "The trigger number is optional. When no trigger number is specified, the trigger selected via dynamic information will be used."
 	L["The type of trigger"] = "触发器类型"
 	L["Then "] = "然后"
+	--[[Translation missing --]]
+	L["There are several special codes available to make this text dynamic. Click to view a list with all dynamic text codes."] = "There are several special codes available to make this text dynamic. Click to view a list with all dynamic text codes."
 	L["Thickness"] = "粗细"
 	L["This adds %raidMark as text replacements."] = "这将添加 %raidMark 作为文本替换。"
 	L["This adds %role, %roleIcon as text replacements. Does nothing if the unit is not a group member."] = "这将添加 %role, %roleIcon 作为文本替换。如果单位不是队伍成员，则不产生效果。"
@@ -936,6 +952,8 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Top Left"] = "左上"
 	L["Top Right"] = "右上"
 	L["Total"] = "总计"
+	--[[Translation missing --]]
+	L["Total - The maximum duration of a timer, or a maximum non-timer value"] = "Total - The maximum duration of a timer, or a maximum non-timer value"
 	L["Total Angle"] = "最大角度"
 	L["Total Time"] = "总计时间"
 	L["Trigger"] = "触发"

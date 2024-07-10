@@ -16,10 +16,15 @@
 -- ---------------------------------
 
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
+local LoadAddOn = C_AddOns and C_AddOns.LoadAddOn or LoadAddOn
+local EnableAddOn = C_AddOns and C_AddOns.EnableAddOn or EnableAddOn
+local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
+
+
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.2.6" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.2.7" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -160,14 +165,11 @@ end)
 -- GLOBALS: UIParent, CreateFrame, collectgarbage, geterrorhandler 
 
 ---------- Upvalues ----------
-local GetSpellCooldown, GetSpellInfo, GetSpellTexture, IsUsableSpell =
-	  GetSpellCooldown, GetSpellInfo, GetSpellTexture, IsUsableSpell
+local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or GetSpellTexture
 local InCombatLockdown, GetTalentInfo =
 	  InCombatLockdown, GetTalentInfo
 local IsInGuild, IsInGroup, IsInInstance =
 	  IsInGuild, IsInGroup, IsInInstance
-local GetAddOnInfo, IsAddOnLoaded, LoadAddOn, EnableAddOn, GetBuildInfo =
-	  GetAddOnInfo, IsAddOnLoaded, LoadAddOn, EnableAddOn, GetBuildInfo
 local tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, select, wipe, rawget, rawset, assert, pcall, error, getmetatable, setmetatable, loadstring, unpack, debugstack =
 	  tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, select, wipe, rawget, rawset, assert, pcall, error, getmetatable, setmetatable, loadstring, unpack, debugstack
 local strfind, strmatch, format, gsub, gmatch, strsub, strtrim, strsplit, strlower, strrep, strchar, strconcat, strjoin, max, ceil, floor, random =
@@ -392,9 +394,42 @@ end
 
 
 
+if _G.GetSpellInfo then
+	TMW.GetSpellInfo = _G.GetSpellInfo
+else
+	local C_Spell_GetSpellInfo = C_Spell.GetSpellInfo
+	TMW.GetSpellInfo = function(spellID)
+		if not spellID then
+			return nil;
+		end
+
+		local spellInfo = C_Spell_GetSpellInfo(spellID);
+		if spellInfo then
+			return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
+		end
+	end
+end
+
+if C_Spell.GetSpellName then
+	TMW.GetSpellName = C_Spell.GetSpellName
+else
+	TMW.GetSpellName = GetSpellInfo
+end
+local GetSpellName = TMW.GetSpellName
 
 
-
+if _G.GetSpellCooldown then
+	TMW.GetSpellCooldown = _G.GetSpellCooldown
+else
+	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown
+	TMW.GetSpellCooldown = function(spellID)
+		local spellCooldownInfo = C_Spell_GetSpellCooldown(spellID);
+		if spellCooldownInfo then
+			return spellCooldownInfo.startTime, spellCooldownInfo.duration, spellCooldownInfo.isEnabled, spellCooldownInfo.modRate;
+		end
+	end
+end
+local GetSpellCooldown = TMW.GetSpellCooldown
 
 ---------------------------------
 -- Caches
@@ -432,19 +467,19 @@ end})
 
 
 TMW.SpellTexturesMetaIndex = {}
-if GetSpellInfo(336126) then
+if GetSpellName(336126) then
 	--hack for pvp tinkets
 	TMW.SpellTexturesMetaIndex[336126] = GetSpellTexture(336126)
-	TMW.SpellTexturesMetaIndex[strlowerCache[GetSpellInfo(336126)]] = GetSpellTexture(336126)
+	TMW.SpellTexturesMetaIndex[strlowerCache[GetSpellName(336126)]] = GetSpellTexture(336126)
 end
 local SpellTexturesMetaIndex = TMW.SpellTexturesMetaIndex
 
-local avengingWrathName = GetSpellInfo(31884)
+local avengingWrathName = GetSpellName(31884)
 function TMW.GetSpellTexture(spell)
 	if not spell then return end
 
 	local spellTex = GetSpellTexture(spell)
-	if spellTex and (spellTex ~= 135875 or GetSpellInfo(spell) == avengingWrathName) then
+	if spellTex and (spellTex ~= 135875 or GetSpellName(spell) == avengingWrathName) then
 		-- Workaround https://github.com/ascott18/TellMeWhen/issues/2114 - 
 		-- don't return avenging wrath texture if the input wasn't the avenging wrath spell.
 		return spellTex
@@ -454,7 +489,6 @@ function TMW.GetSpellTexture(spell)
 		SpellTexturesMetaIndex[spell] or
 		rawget(SpellTexturesMetaIndex, strlowerCache[spell])
 end
-local GetSpellTexture = TMW.GetSpellTexture
 
 
 
@@ -1072,17 +1106,17 @@ function TMW:PLAYER_LOGIN()
 	TMW:UnregisterEvent("PLAYER_LOGIN")
 	TMW.PLAYER_LOGIN = nil
 
-	if not LibStub("DRList-1.0", true) then
-		StaticPopupDialogs["TMW_RESTARTNEEDED"] = {
-			text = L["ERROR_MISSINGFILE_NOREQ"],
-			button1 = OKAY,
-			timeout = 0,
-			showAlert = true,
-			whileDead = true,
-			preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
-		}
-		StaticPopup_Show("TMW_RESTARTNEEDED", TELLMEWHEN_VERSION_FULL, "TellMeWhen/Lib/DRList-1.0/DRList-1.0.lua") -- arg3 could also be L["ERROR_MISSINGFILE_REQFILE"]
-	end
+	-- if not LibStub("DRList-1.0", true) then
+	-- 	StaticPopupDialogs["TMW_RESTARTNEEDED"] = {
+	-- 		text = L["ERROR_MISSINGFILE_NOREQ"],
+	-- 		button1 = OKAY,
+	-- 		timeout = 0,
+	-- 		showAlert = true,
+	-- 		whileDead = true,
+	-- 		preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
+	-- 	}
+	-- 	StaticPopup_Show("TMW_RESTARTNEEDED", TELLMEWHEN_VERSION_FULL, "TellMeWhen/Lib/DRList-1.0/DRList-1.0.lua") -- arg3 could also be L["ERROR_MISSINGFILE_REQFILE"]
+	-- end
 	
 
 
@@ -1865,7 +1899,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 		},
 		[48025] = {
 			icon = function(self, ics)
-				ics.Name = gsub(ics.Name, "(CrowdControl)", "%1; " .. GetSpellInfo(339))
+				ics.Name = gsub(ics.Name, "(CrowdControl)", "%1; " .. TMW.GetSpellName(339))
 			end,
 		},
 		[47002] = {
@@ -2051,7 +2085,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 
 				for _, stanceData in ipairs(self.stances) do
 					if stanceData.class == pclass then
-						local stanceName = GetSpellInfo(stanceData.id)
+						local stanceName = TMW.GetSpellName(stanceData.id)
 						tinsert(self.CSN, stanceName)
 					end
 				end
@@ -2238,7 +2272,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 
 				for _, stanceData in ipairs(self.stances) do
 					if stanceData.class == pclass then
-						local stanceName = GetSpellInfo(stanceData.id)
+						local stanceName = TMW.GetSpellName(stanceData.id)
 						tinsert(self.CSN, stanceName)
 					end
 				end

@@ -376,8 +376,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.14.1"
-local buildTime = "20240623182434"
+local versionString = "5.15.0"
+local buildTime = "20240709234545"
 
 local flavorFromToc = C_AddOns.GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -405,7 +405,7 @@ WeakAuras.buildType = "pr"
 --@end-experimental@]=====]
 
 --[==[@debug@
-if versionStringFromToc == "5.14.1" then
+if versionStringFromToc == "5.15.0" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   WeakAuras.buildType = "dev"
@@ -466,11 +466,6 @@ do
   }
   local LibStubLibs = {
     "CallbackHandler-1.0",
-    "AceConfig-3.0",
-    "AceConsole-3.0",
-    "AceGUI-3.0",
-    "AceEvent-3.0",
-    "AceGUISharedMediaWidgets-1.0",
     "AceTimer-3.0",
     "AceSerializer-3.0",
     "AceComm-3.0",
@@ -482,7 +477,6 @@ do
     "LibDBIcon-1.0",
     "LibGetFrame-1.0",
     "LibSerialize",
-    "LibUIDropDownMenu-4.0"
   }
   if WeakAuras.IsRetail() then
     tinsert(LibStubLibs, "LibSpecialization")

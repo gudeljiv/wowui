@@ -76,6 +76,19 @@ local LDBIcon = LibStub("LibDBIcon-1.0")
 local LCG = LibStub("LibCustomGlow-1.0")
 local LGF = LibStub("LibGetFrame-1.0")
 
+local CustomNames = C_AddOns.IsAddOnLoaded("CustomNames") and LibStub("CustomNames") -- optional addon
+if CustomNames then
+  WeakAuras.GetName = CustomNames.Get
+  WeakAuras.UnitName = CustomNames.UnitName
+  WeakAuras.GetUnitName = CustomNames.GetUnitName
+  WeakAuras.UnitFullName = CustomNames.UnitFullName
+else
+  WeakAuras.GetName = function(name) return name end
+  WeakAuras.UnitName = UnitName
+  WeakAuras.GetUnitName = GetUnitName
+  WeakAuras.UnitFullName = UnitFullName
+end
+
 local timer = WeakAurasTimers
 WeakAuras.timer = timer
 
@@ -3554,7 +3567,7 @@ do
 
     if type(glow_frame_monitor) == "table" then
       for region, data in pairs(glow_frame_monitor) do
-        if region.state and UnitIsUnit(region.state.unit, unit)
+        if region.state and type(region.state.unit) == "string" and UnitIsUnit(region.state.unit, unit)
         and ((data.frame ~= frame) and (FRAME_UNIT_ADDED or FRAME_UNIT_UPDATE))
         or ((data.frame == frame) and FRAME_UNIT_REMOVED)
         then
@@ -3585,7 +3598,7 @@ do
     end
     if type(anchor_unitframe_monitor) == "table" then
       for region, data in pairs(anchor_unitframe_monitor) do
-        if region.state and region.state.unit == unit
+        if region.state and type(region.state.unit) == "string" and UnitIsUnit(region.state.unit, unit)
         and ((data.frame ~= frame) and (FRAME_UNIT_ADDED or FRAME_UNIT_UPDATE))
         or ((data.frame == frame) and FRAME_UNIT_REMOVED)
         then
@@ -3599,7 +3612,7 @@ do
       end
     end
     for regionData, data_frame in pairs(Private.dyngroup_unitframe_monitor) do
-      if regionData.region.state and regionData.region.state.unit == unit
+      if regionData.region.state and type(regionData.region.state.unit) == "string" and UnitIsUnit(regionData.region.state.unit, unit)
       and ((data_frame ~= frame) and (FRAME_UNIT_ADDED or FRAME_UNIT_UPDATE))
       or ((data_frame == frame) and FRAME_UNIT_REMOVED)
       then
@@ -3842,27 +3855,17 @@ Private.GetTriggerDescription = wrapTriggerSystemFunction("GetTriggerDescription
 local wrappedGetOverlayInfo = wrapTriggerSystemFunction("GetOverlayInfo", "table");
 
 Private.GetAdditionalProperties = function(data)
-  local additionalProperties = ""
+  local props = {}
   for i = 1, #data.triggers do
     local triggerSystem = GetTriggerSystem(data, i);
     if (triggerSystem) then
-      local add = triggerSystem.GetAdditionalProperties(data, i)
-      if (add and add ~= "") then
-        if additionalProperties ~= "" then
-          additionalProperties = additionalProperties .. "\n"
-        end
-        additionalProperties = additionalProperties .. add;
+      local triggerProps = triggerSystem.GetAdditionalProperties(data, i)
+      if triggerProps then
+        props[i] = triggerProps
       end
     end
   end
-
-  if additionalProperties ~= "" then
-    additionalProperties = "\n\n"
-                  .. L["Additional Trigger Replacements"] .. "\n"
-                  .. additionalProperties .. "\n\n"
-                  .. L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."]
-  end
-  return additionalProperties
+  return props
 end
 
 Private.GetProgressSources = function(data)
@@ -6039,6 +6042,12 @@ do
   function WeakAuras.UnitNameWithRealm(unit)
     ownRealm = ownRealm or select(2, UnitFullName("player"))
     local name, realm = UnitFullName(unit)
+    return name or "", realm or ownRealm or ""
+  end
+
+  function WeakAuras.UnitNameWithRealmCustomName(unit)
+    ownRealm = ownRealm or select(2, UnitFullName("player"))
+    local name, realm =  WeakAuras.UnitFullName(unit)
     return name or "", realm or ownRealm or ""
   end
 end

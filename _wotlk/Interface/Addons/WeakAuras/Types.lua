@@ -626,14 +626,14 @@ Private.format_types = {
 
       if realm == "never" then
         nameFunc = function(unit)
-          return unit and UnitName(unit)
+          return unit and WeakAuras.UnitName(unit)
         end
       elseif realm == "star" then
         nameFunc = function(unit)
           if not unit then
             return ""
           end
-          local name, realm = UnitName(unit)
+          local name, realm = WeakAuras.UnitName(unit)
           if realm then
             return name .. "*"
           end
@@ -644,7 +644,7 @@ Private.format_types = {
           if not unit then
             return ""
           end
-          local name, realm = UnitName(unit)
+          local name, realm = WeakAuras.UnitName(unit)
           if realm then
             return name .. "-" .. realm
           end
@@ -655,7 +655,7 @@ Private.format_types = {
           if not unit then
             return ""
           end
-          local name, realm = WeakAuras.UnitNameWithRealm(unit)
+          local name, realm = WeakAuras.UnitNameWithRealmCustomName(unit)
           return name .. "-" .. realm
         end
       end
@@ -751,10 +751,11 @@ Private.format_types = {
 
       if realm == "never" then
         nameFunc = function(name, realm)
-          return name
+          return WeakAuras.GetName(name)
         end
       elseif realm == "star" then
         nameFunc = function(name, realm)
+          name = WeakAuras.GetName(name)
           if realm ~= "" then
             return name .. "*"
           end
@@ -762,6 +763,7 @@ Private.format_types = {
         end
       elseif realm == "differentServer" then
         nameFunc = function(name, realm)
+          name = WeakAuras.GetName(name)
           if realm ~= "" then
             return name .. "-" .. realm
           end
@@ -769,6 +771,7 @@ Private.format_types = {
         end
       elseif realm == "always" then
         nameFunc = function(name, realm)
+          name = WeakAuras.GetName(name)
           if realm == "" then
             realm = select(2, WeakAuras.UnitNameWithRealm("player"))
           end
@@ -2814,9 +2817,13 @@ if not WeakAuras.IsClassicEra() then
     [192] = L["Dungeon (Mythic+)"], -- "Challenge Level 1" TODO: check if this label is correct
     [193] = L["10 Player Raid (Heroic)"],
     [194] = L["25 Player Raid (Heroic)"],
+    [205] = L["Follower Dungeon"],
+    [208] = L["Delve"],
+    [216] = L["Quest Party"],
+    [220] = L["Story Raid"]
   }
 
-  for i = 1, 200 do
+  for i = 1, 220 do
     local name, type = GetDifficultyInfo(i)
     if name then
       if instance_difficulty_names[i] then
@@ -4162,6 +4169,7 @@ if WeakAuras.IsClassicEra() then
 end
 
 if WeakAuras.IsCataClassic() then
+  Private.item_slot_types[18] = RELICSLOT
   for slot = 20, 28 do
     Private.item_slot_types[slot] = nil
   end

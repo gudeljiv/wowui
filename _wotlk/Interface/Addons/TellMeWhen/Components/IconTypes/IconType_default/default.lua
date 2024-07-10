@@ -17,8 +17,10 @@ local L = TMW.L
 local print = TMW.print
 local type =
 	  type
-local GetSpellInfo, GetSpellBookItemInfo, GetSpellBookItemName =
-	  GetSpellInfo, GetSpellBookItemInfo, GetSpellBookItemName
+
+local GetSpellInfo = TMW.GetSpellInfo
+local GetSpellName = TMW.GetSpellName
+local GetSpellBookItemInfo = TMW.GetSpellBookItemInfo
 
 local Type = TMW.Classes.IconType:New("")
 Type.name = L["ICONMENU_TYPE"]
@@ -56,26 +58,22 @@ function Type:DragReceived(icon, t, data, subType, param4)
 	local ics = icon:GetSettings()
 
 	-- Take the dragged thing and create a new icon from it of the appropriate type.
-
 	local newType, input
 	if t == "spell" then
 		if data == 0 and type(param4) == "number" then
 			-- I don't remember the purpose of this anymore.
 			-- It handles some special sort of spell, though, and is required.
 			-- param4 here is a spellID, obviously.
-			input = GetSpellInfo(param4)
+			input = GetSpellName(param4)
 		else
-			local type, baseSpellID = GetSpellBookItemInfo(data, subType)
 			
-			if not baseSpellID or type ~= "SPELL" then
+			local spellData = GetSpellBookItemInfo(data, subType)
+			if not spellData or spellData.typeName ~= "SPELL" then
 				return
 			end
 			
-			
-			local currentSpellName = GetSpellBookItemName(data, subType)		
-			local baseSpellName = GetSpellInfo(baseSpellID)
-			
-			input = baseSpellName or currentSpellName
+			local baseSpellName = GetSpellName(spellData.actionId)
+			input = baseSpellName or spellData.name
 		end
 	
 		newType = "cooldown"
