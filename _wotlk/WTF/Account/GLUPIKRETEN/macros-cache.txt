@@ -1,3 +1,12 @@
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Abyssal Seahorse
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 0000000000000029 " " "132152"
 #showtooltip
 /dismount
@@ -11,15 +20,6 @@ VER 3 000000000000002A " " "132328"
 /dismount
 /petfollow
 /petpassive
-END
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/cast Abyssal Seahorse
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
-END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
 END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip

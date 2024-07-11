@@ -2249,7 +2249,7 @@ function NIT:recordQuests()
 		--Normal.
 		local _, currencyQuantity, _, _, _, overallLimit = GetLFGDungeonRewardCapInfo(300); --https://warcraft.wiki.gg/wiki/LfgDungeonID
 		--currencyQuantity is 0 if we don't qualify for this type of queue due totoo low level or whatever (I think).
-		if (currencyQuantity ~= 0) then
+		if (overallLimit and currencyQuantity and currencyQuantity ~= 0) then
 			local remaining = LFGRewardsFrame_EstimateRemainingCompletions(300);
 			--Only record if we've used some slots this week.
 			--Changed to just show it even if 7 left.
@@ -2283,15 +2283,19 @@ function NIT:recordQuests()
 		--Heroic was changed from a 7 per week cap to a rolling season cap so we'll display that cap instead.
 		if (UnitLevel("player") == 85) then
 			local valor = C_CurrencyInfo.GetCurrencyInfo(396);
-			local name, totalEarned, max = valor.name, valor.totalEarned, valor.maxQuantity;
-			local remainingText = "|cFF00FF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
-			if (totalEarned == 0) then
-				remainingText = "|cFFFF0000" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
-			elseif (totalEarned < max) then
-				remainingText = "|cFFFFFF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+			if (valor) then
+				local name, totalEarned, max = valor.name, valor.totalEarned, valor.maxQuantity;
+				if (name and totalEarned and max) then
+					local remainingText = "|cFF00FF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+					if (totalEarned == 0) then
+						remainingText = "|cFFFF0000" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+					elseif (totalEarned < max) then
+						remainingText = "|cFFFFFF00" .. totalEarned .. "|r|cFF00FF00/" .. max .. "|r";
+					end
+					local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r " .. name .. " cap: " .. remainingText;
+					NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
+				end
 			end
-			local desc = "|cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r " .. name .. " cap: " .. remainingText;
-			NIT.data.myChars[char].dungWeeklies[desc] = resetTime;
 		end
 	end
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();

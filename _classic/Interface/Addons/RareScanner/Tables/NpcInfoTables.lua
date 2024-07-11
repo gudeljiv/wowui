@@ -462,4 +462,7 @@ private.NPC_INFO = {
 	[11497] = { zoneID = 100013, displayID = 12683 }; --The Razza
 	[11498] = { zoneID = 100013, displayID = 10169 }; --Skarr the Unbreakable
 	[12237] = { zoneID = 100015, displayID = 9014 }; --Meshlok the Harvester
+	[224965] = { zoneID = 0, displayID = 120171, season = 2 }; --Khonsu <Night Traveller>
+	[228611] = { zoneID = 0, displayID = 121694, season = 2 }; --Wandering Swordsman
+	[228673] = { zoneID = 0, displayID = 121694, season = 2 }; --Wandering Swordsman
 }
