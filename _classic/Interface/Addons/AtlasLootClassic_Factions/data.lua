@@ -74,8 +74,10 @@ data["ArgentDawn"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f529rep8" },
 				{ 2, 18182 }, -- Chromatic Mantle of the Dawn
-				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 27), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 27) }, -- Insignia of the Dawn / Crusade
-				{ 18,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 6), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 6) }, -- Insignia of the Dawn / Crusade
+				{ 4,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 27), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 27) }, -- Insignia of the Dawn / Crusade
+				{ 5,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 6), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 6) }, -- Insignia of the Dawn / Crusade
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227819}, -- Blessed Flame Mantle of the Dawn
 			},
 		},
 		{ -- Revered
@@ -93,8 +95,12 @@ data["ArgentDawn"] = {
 				{ 12,  18170 }, -- Frost Mantle of the Dawn
 				{ 13,  18172 }, -- Nature Mantle of the Dawn
 				{ 14, 18173 }, -- Shadow Mantle of the Dawn
-				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 45), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 45) }, -- Insignia of the Dawn / Crusade
-				{ 18,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 7), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 7) }, -- Insignia of the Dawn / Crusade
+				{ 16,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 45), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 45) }, -- Insignia of the Dawn / Crusade
+				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 7), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 7) }, -- Insignia of the Dawn / Crusade
+				{ 19, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 20, 227888 }, -- Argent Elite Shoulders
+				{ 21, 227818 }, -- Glowing Mantle of the Dawn
+				{ 22, 227817 }, -- Radiant Gloves of the Dawn
 			},
 		},
 		{ -- Honored
@@ -107,8 +113,12 @@ data["ArgentDawn"] = {
 				{ 5,  19442 }, -- Formula: Powerful Anti-Venom
 				{ 6,  19446 }, -- Formula: Enchant Bracer - Mana Regeneration
 				{ 7, 13482 }, -- Recipe: Transmute Air to Fire
-				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 75), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 75) }, -- Insignia of the Dawn / Crusade
-				{ 18,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 20), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 20) }, -- Insignia of the Dawn / Crusade
+				{ 9,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 75), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 75) }, -- Insignia of the Dawn / Crusade
+				{ 10,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 20), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 20) }, -- Insignia of the Dawn / Crusade
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17,  227816 }, -- Argent Elite Boots
+				{ 18,  227815 }, -- Fine Dawn Treaders
+				{ 19,  227814 }, -- Radiant Girdle of the Dawn
 			},
 		},
 		{ -- Friendly
@@ -142,6 +152,10 @@ data["Timbermaw"] = {
 				{ 2, 19218 }, -- Pattern: Mantle of the Timbermaw
 				{ 3, 19327 }, -- Pattern: Timbermaw Brawlers
 				{ 4, 19204 }, -- Plans: Heavy Timbermaw Boots
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227808 }, -- Rugged Mantle of the Timbermaw
+				{ 18, 227809 }, -- Studded Timbermaw Brawlers
+				{ 19, 227810 }, -- Dense Timbermaw Boots
 			},
 		},
 		{ -- Honored
@@ -154,16 +168,23 @@ data["Timbermaw"] = {
 				{ 5, 19326 }, -- Pattern: Might of the Timbermaw
 				{ 6, 19215 }, -- Pattern: Wisdom of the Timbermaw
 				{ 7, 19445 }, -- Formula: Enchant Weapon - Agility
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227807 }, -- Dense Timbermaw Belt
+				{ 18, 227805 }, -- Ferocity of the Timbermaw
+				{ 19, 228190 }, -- Knowledge of the Timbermaw
 			},
 		},
 		{ -- Friendly
 			name = ALIL["Friendly"],
 			[NORMAL_DIFF] = {
 				{ 1, "f576rep5" },
-				{ 2,  13484 }, -- Recipe: Transmute Earth to Water
-				{ 3,  15754 }, -- Pattern: Warbear Woolies
-				{ 4,  15742 }, -- Pattern: Warbear Harness
+				{ 2,  15754 }, -- Pattern: Warbear Woolies
+				{ 3,  15742 }, -- Pattern: Warbear Harness
+				{ 4,  13484 }, -- Recipe: Transmute Earth to Water
 				{ 5,  22392 }, -- Formula: Enchant 2H Weapon - Agility
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17,  227804 }, -- Dire Warbear Woolies
+				{ 18,  227803 }, -- Dire Warbear Harness
 			},
 		},
 	},
@@ -178,10 +199,20 @@ data["ThoriumBrotherhood"] = {
 			name = ALIL["Exalted"],
 			[NORMAL_DIFF] = {
 				{ 1, "f59rep8" },
-				{ 2,  20040 }, -- Plans: Dark Iron Boots
-				{ 3,  19210 }, -- Plans: Ebon Hand
-				{ 4,  19211 }, -- Plans: Blackguard
-				{ 5,  19212 }, -- Plans: Nightfall
+				{ 2,  19210 }, -- Plans: Ebon Hand
+				{ 3,  19211 }, -- Plans: Blackguard
+				{ 4,  19212 }, -- Plans: Nightfall
+				{ 5,  20040 }, -- Plans: Dark Iron Boots
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227842 }, -- Ebon Fist
+				{ 18, 227840 }, -- Implacable Blackguard
+				{ 19, 227843 }, -- Reaving Nightfall
+				{ 20, 228929 }, -- Tempered Dark Iron Boots
+				{ 21, 228924 }, -- Tempered Dark Iron Boots
+				{ 22, 228927 }, -- Tempered Dark Iron Boots
+				{ 23, 228926 }, -- Tempered Dark Iron Boots
+				{ 24, 228925 }, -- Tempered Dark Iron Boots
+				{ 25, 228928 }, -- Tempered Dark Iron Boots
 			},
 		},
 		{ -- Revered
@@ -198,6 +229,15 @@ data["ThoriumBrotherhood"] = {
 				{ 9,  19208 }, -- Plans: Black Amnesty
 				{ 10,  19209 }, -- Plans: Blackfury
 				{ 11, 19449 }, -- Formula: Enchant Weapon - Mighty Intellect
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227839 }, -- Fine Flarecore Leggings
+				{ 19, 227837 }, -- Thick Corehound Belt
+				{ 20, 227834 }, -- Molten Chain Shoulders
+				{ 21, 227838 }, -- Shining Chromatic Gauntlets
+				{ 22, 227835 }, -- Tempered Dark Iron Gauntlets
+				{ 23, 227836 }, -- Tempered Dark Iron Leggings
+				{ 24, 227832 }, -- Tempered Black Amnesty
+				{ 25, 227833 }, -- Glaive of Obsidian Fury
 			},
 		},
 		{ -- Honored
@@ -213,6 +253,15 @@ data["ThoriumBrotherhood"] = {
 				{ 8,  17059 }, -- Plans: Dark Iron Reaver
 				{ 9,  17060 }, -- Plans: Dark Iron Destroyer
 				{ 10,  19448 }, -- Formula: Enchant Weapon - Mighty Spirit
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227830 }, -- Fine Flarecore Mantle
+				{ 18, 227831 }, -- Fine Flarecore Robe
+				{ 19, 227828 }, -- Lavawalker Belt
+				{ 20, 227827 }, -- Molten Chain Girdle
+				{ 21, 227829 }, -- Hardened Black Dragonscale Boots
+				{ 22, 227824 }, -- Tempered Dark Iron Helm
+				{ 23, 227826 }, -- Dark Iron Flame Reaver
+				{ 24, 227825 }, -- Molten Dark Iron Destroyer
 			},
 		},
 		{ -- Friendly
@@ -225,6 +274,11 @@ data["ThoriumBrotherhood"] = {
 				{ 5,  17051 }, -- Plans: Dark Iron Bracers
 				{ 6,  20761 }, -- Recipe: Transmute Elemental Fire
 				{ 7,  19444 }, -- Formula: Enchant Weapon - Strength
+				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 17, 227823 }, -- Fine Flarecore Gloves
+				{ 18, 227821 }, -- Flamekissed Molten Helm
+				{ 19, 227822 }, -- Thick Corehound Boots
+				{ 20, 227820 }, -- Tempered Dark Iron Bracers
 			},
 		},
 	},
@@ -418,6 +472,15 @@ data["HydraxianWaterlords"] = {
 	ContentType = FACTIONS_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	items = {
+		{ -- Exalted
+			name = ALIL["Exalted"],
+			[NORMAL_DIFF] = {
+				{ 1, "f749rep8" },
+				{ 2, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
+				{ 3, 227926}, -- Hydraxian Coronation
+				{ 4, 227915}, -- Duke's Domain
+			},
+		},
 		{ -- Revered
 			name = ALIL["Revered"],
 			[NORMAL_DIFF] = {

@@ -1698,11 +1698,27 @@ function NWB:loadSpecificOptions()
 			get = "getAshenvaleOverlayFont",
 			set = "setAshenvaleOverlayFont",
 		};
+		NWB.options.args["printStvCoins"] = {
+			type = "toggle",
+			name = L["printStvCoinsTitle"],
+			desc = L["printStvCoinsDesc"],
+			order = 35,
+			get = "getPrintStvCoins",
+			set = "setPrintStvCoins",
+		};
+		NWB.options.args["printBlackrockHonor"] = {
+			type = "toggle",
+			name = L["printBlackrockHonorTitle"],
+			desc = L["printBlackrockHonorDesc"],
+			order = 36,
+			get = "getPrintBlackrockHonor",
+			set = "setPrintBlackrockHonor",
+		};
 		NWB.options.args["layersNoteText"] = {
 			type = "description",
 			name = "|cFF9CD6DE" .. L["layersNoteText"],
 			fontSize = "medium",
-			order = 35,
+			order = 37,
 		};
 		NWB.options.args.cappingSupport = {
 			type = "toggle",
@@ -1926,6 +1942,8 @@ NWB.optionDefaults = {
 		overlayShowStranglethorn = true,
 		showStvBoss = false,
 		sodMiddleScreenWarning = false,
+		printStvCoins = true,
+		printBlackrockHonor = true,
 	},
 };
 
@@ -2196,19 +2214,29 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.79;
+	linesVersion = 2.83;
 	local lines = {
 		" ",
-		"Added Tol Barad timer to the minimap button mouseover tooltip and guild 10 minute warning.",
+		"|cFFFF6900[Era and SoD]|r",
+		"- Added new alliance rend buff Might of Stormwind to the /buffs tracking frame.",
+		"- Disabled timers for rend/ony/nef on classic, Blizzard has changed the handin cooldown to 1 minute (it may take a while for people to update before you stop seeing guild timer msgs).",
+		" ",
+		"|cFFFF6900[SoD only]|r",
+		"- Removed ashenvale starts soon guild warnings (it's old content now but the timer is still on minimap button/worldmap to view if you want).",
+		"- Removed STV 30 minutes guild warning, 15 minute warning is still active, the new coins will give honor so maybe still useful to see spawn.",
+		"- Added new Slaughter Coins to coin counter during STV event.",
+		"- Added Blackrock Mountain pvp event timers to minimap button tooltip and world map, let me know if these timers are wrong for your region.",
+		"- Added honor tracker during the Blackrock Mountain event in the same way coins are tracked for STV.",
+		"- Added config options to disable STV coins and Blackrock honor tracker chat msgs.",
 	};
-	if (NWB.realm == "Arugal" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
+	--[[if (NWB.realm == "Arugal" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
 		lines = {
 			" ",
 			"Added Tol Barad timer to the minimap button mouseover tooltip and guild 10 minute warning.",
 			" ",
 			"|cFFFF6900Note for |cFF00FF00OCE|r:|r |cFF9CD6DEThis version includes a fix for the timers on the Tol Barad/Wintergrasp pvp queueing frame for us so we don't keep seeing timers like \"15 hours left\". If Blizzard ever fixes the OCE timers that's been broken since Wrath launch then I'll remove this queue frame fix.|r",
 		};
-	end
+	end]]
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
 	--Not sure what causes some frame lines to render thicker than others and some not render at all.
@@ -2241,7 +2269,7 @@ function NWB:checkNewVersion()
 	--loadNewVersionFrame();
 	if (NWB.version and NWB.version ~= 9999) then
 		if (not NWB.db.global.versions[NWB.version]) then
-			if (NWB.isCata) then
+			if (NWB.isClassic) then
 				--Only show this update for cata users.
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					loadNewVersionFrame();
@@ -4195,6 +4223,22 @@ end
 function NWB:setOverlayShowStranglethorn(info, value)
 	self.db.global.overlayShowStranglethorn = value;
 	NWB:refreshOverlay();
+end
+
+function NWB:getPrintStvCoins(info)
+	return self.db.global.printStvCoins;
+end
+
+function NWB:setPrintStvCoins(info, value)
+	self.db.global.printStvCoins = value;
+end
+
+function NWB:getPrintBlackrockHonor(info)
+	return self.db.global.printBlackrockHonor;
+end
+
+function NWB:setPrintBlackrockHonor(info, value)
+	self.db.global.printBlackrockHonor = value;
 end
 
 function NWB:getOverlayShowStranglethorn(info)

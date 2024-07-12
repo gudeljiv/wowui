@@ -1,8 +1,8 @@
-## Interface: 11502
+## Interface: 11503
 ## Title: ClassicProfessionFilter - Hotfix
 ## Notes: Search and filter your professions for specific patterns/recipes or materials in bags.
 ## Author: Slainsvirtue-Mankrik, GrumpyPlayers (also known as <SG>Soul)
-## Version: 1.3
+## Version: 1.3.1
 
 ## X-Curse-Project-ID: 353572
 ## LoadOnDemand: 0

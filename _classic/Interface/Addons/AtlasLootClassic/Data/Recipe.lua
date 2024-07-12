@@ -996,6 +996,19 @@ RECIPE_DATA.CLASSIC = {
 	[217258] = {8,165,439102}, -- Pattern: Enchanter's Cowl
 	[217399] = {4,190,439960}, -- Recipe: Lesser Arcane Elixir
 	[223163] = {10,190,448624}, -- Formula: Scroll of Spatial Mending
+	[228114] = {2,300,461675}, -- Plans: Refined Arcanite Reaper
+	[228305] = {2,300,461712}, -- Plans: Refined Hammer of the Titans
+	[228313] = {2,295,461737}, -- Plans: Tempest Gauntlets
+	[228314] = {2,300,461739}, -- Plans: Warcraft of the Great Chief
+	[228312] = {2,300,461735}, -- Plans: Invincible Mail
+	[228311] = {2,280,461733}, -- Plans: Finely-Enchanted Battlehammer
+	[228308] = {2,285,461718}, -- Plans: Tranquility
+	[228307] = {2,300,461716}, -- Plans: Deadly Heartseeker
+	[228306] = {2,300,461714}, -- Plans: Desecration
+	[228310] = {2,300,461730}, -- Plans: Hardened Frostguard
+	[228315] = {2,300,461743}, -- Plans: Sageblade of the Archmagus
+	[228319] = {3,300,461754}, -- Pattern: Girdle of Arcane Insight
+	[228301] = {3,300,461706}, -- Pattern: Swift Flight Vambraces
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

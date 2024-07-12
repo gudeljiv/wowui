@@ -246,8 +246,8 @@ TOKEN_DATA.CLASSIC = {
 	[18563] = 18564, -- Bindings of the Windseeker <left>
 	[19017] = 18564, -- Essence of the Firelord
 	[17204] = { 17182 }, -- Eye of Sulfuras
-	[18703] = { 18714, 18713, 18715 }, -- Ancient Petrified Leaf
-	[18646] = { 18665, 18646, 0, 18608, 18609 }, -- The Eye of Divinity
+	[18703] = { 18714, 18713, 18715,0,nil,{228334, "SoD"},{228332, "SoD"}}, -- Ancient Petrified Leaf
+	[18646] = { 18665, 18646, 0, 18608, 18609,0,{228335, "SoD"},{228336, "SoD"}}, -- The Eye of Divinity
 	[18665] = 18646, -- The Eye of Shadow
 	[17074] = { 17074, 17223 }, -- Shadowstrike
 	[17223] = 17074, -- Thunderstrike
@@ -272,7 +272,7 @@ TOKEN_DATA.CLASSIC = {
 	[12780] = { 13966, 13968, 13965, type = 3 }, -- General Drakkisath's Command
 	[7666] = { 7673, type = 3 }, -- Shattered Necklace
 	[19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
-	[18423] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
+	[18423] = { 18404, 18403, 18406,0,{228685, "SoD" },{228687, "SoD"},{228686,"SoD"}, type = 3 }, -- Head of Onyxia
 	[20644] = { 20600, type = 3 }, -- Shrouded in Nightmare
 	[217350] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
 	[217351] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
@@ -401,7 +401,7 @@ TOKEN_DATA.CLASSIC = {
 	[220942] = { {10034, 4}, type = 9 },
 	
 	-- Quest objective
-	[18705] = { 18713, type = 4 }, -- Mature Black Dragon Sinew
+	[18705] = { 18713,0,{228334, "SoD" }, type = 4 }, -- Mature Black Dragon Sinew
 	[18704] = { 18714, type = 4 }, -- Mature Blue Dragon Sinew
 	[12871] = { 12895, 0, 12903, 12945, type = 4 }, -- Chromatic Carapace
 	[18706] = { {18706, 12}, 0, 19024, type = 4 }, -- Arena Master
@@ -438,7 +438,7 @@ TOKEN_DATA.CLASSIC = {
 	[12811] = { "prof20034", "prof22750", "prof25079", 0, "prof18456", "prof16990", "prof23632", "prof23633", type = 5 }, -- Righteous Orb
 	[20381] = { "prof24703", type = 5 }, -- Dreamscale Breastplate
 	[12753] = { "prof22928", "prof27830", type = 5 }, -- Dreamscale Breastplate
-	[17203] = { "prof21161", type = 5 }, -- Sulfuron Ingot
+	[17203] = { "prof21161", {"prof460460", "SoD"}, type = 5 }, -- Sulfuron Ingot
 	[15410] = { "prof19106", "prof19093", type = 5 }, -- Scale of Onyxia
 
 	-- Atiesh
@@ -472,6 +472,90 @@ TOKEN_DATA.CLASSIC = {
 	[21178] = { "f609rep5", 0, {20802, 5}, {20800, 3}, {20801, 7} }, -- Gloves of Earthen Power
 	[21187] = 21178, -- Earthweave Cloak
 	[21179] = 21178, -- Band of Earthen Wrath
+	[227728] = { 227683 }, -- Eye of Sulfuras
+	[226557] = { 226557, 226568, type = 9 }, -- Arcanist Boots
+	[226552] = { 226552, 216921, type = 9 }, -- Felheart Gloves
+	[226645] = { 226645, 226652, 226663, 226673, type = 9 }, -- Cenarion Boots
+	[226613] = { 226613, 226636, 226620, 226628, type = 9 }, -- Earthfury Boots
+	[226593] = { 226593, 226601, 226609, type = 9 }, -- Lawbringer Boots
+	[226486] = { 226486, 226497, type = 9 }, -- Gauntlets of Might
+	[226574] = { 226574, 226583, type = 9 }, -- Pants of Prophecy
+	[226561] = { 226561, 226565, type = 9 }, -- Arcanist Leggings
+	[226547] = { 226547, 216923, type = 9 }, -- Felheart Pants
+	[226445] = { 226445, 226479, type = 9 }, -- Nightslayer Pants
+	[226646] = { 226646, 226651, 226666, 226671, type = 9 }, -- Cenarion Leggings
+	[226532] = { 226532, 226537, type = 9 }, -- Giantstalker's Leggings
+	[226614] = { 226614, 226639, 226623, 226631, type = 9 }, -- Earthfury Legguards
+	[226594] = { 226594, 226598, 226606, type = 9 }, -- Lawbringer Legplates
+	[226490] = { 226490, 226493, type = 9 }, -- Legplates of Might
+	[226572] = { 226572, 226585, type = 9 }, -- Gloves of Prophecy
+	[226441] = { 226441, 226475, type = 9 }, -- Nightslayer Gloves
+	[226531] = { 226531, 226538, type = 9 }, -- Giantstalker's Boots
+	[226615] = { 226615, 226637, 226621, 226629, type = 9 }, -- Earthfury Gauntlets
+	[226591] = { 226591, 226600, 226608, type = 9 }, -- Lawbringer Gauntlets
+	[226487] = { 226487, 226496, type = 9 }, -- Sabatons of Might
+	[226573] = { 226573, 226584, type = 9 }, -- Circlet of Prophecy
+	[226562] = { 226562, 226564, type = 9 }, -- Arcanist Crown
+	[226549] = { 226549, 216922, type = 9 }, -- Felheart Horns
+	[226446] = { 226446, 226480, type = 9 }, -- Nightslayer Cover
+	[226647] = { 226647, 226658, 226659, 226670, type = 9 }, -- Cenarion Helm
+	[226533] = { 226533, 226536, type = 9 }, -- Giantstalker's Helmet
+	[226612] = { 226612, 226638, 226622, 226630, type = 9 }, -- Earthfury Helmet
+	[226590] = { 226590, 226599, type = 9 }, -- Lawbringer Helm
+	[226488] = { 226488, 226495, type = 9 }, -- Helm of Might
+	[226571] = { 226571, 226586, type = 9 }, -- Boots of Prophecy
+	[226556] = { 226556, 226569, type = 9 }, -- Arcanist Gloves
+	[226554] = { 226554, 216918, type = 9 }, -- Felheart Slippers
+	[226443] = { 226443, 226477, type = 9 }, -- Nightslayer Boots
+	[226648] = { 226648, 226654, 226664, 226669, type = 9 }, -- Cenarion Gloves
+	[226528] = { 226528, 226540, type = 9 }, -- Giantstalker's Gloves
+	[226560] = { 226560, 226566, type = 9 }, -- Arcanist Mantle
+	[226550] = { 226550, 216925, type = 9 }, -- Felheart Shoulder Pads
+	[226644] = { 226644, 226653, 226665, 226674, type = 9 }, -- Cenarion Spaulders
+	[226611] = { 226611, 226640, 226624, 226632, type = 9 }, -- Earthfury Epaulets
+	[226588] = { 226588, 221783, 226605, type = 9 }, -- Lawbringer Spaulders
+	[226575] = { 226575, 226582, type = 9 }, -- Robes of Prophecy
+	[226559] = { 226559, 226563, type = 9 }, -- Arcanist Robes
+	[226548] = { 226548, 216924, type = 9 }, -- Felheart Robes
+	[226447] = { 226447, 226473, type = 9 }, -- Nightslayer Chestpiece
+	[221785] = { 221785, 226656, 226661, 226675, type = 9 }, -- Cenarion Vestments
+	[226534] = { 226534, 226535, type = 9 }, -- Giantstalker's Breastplate
+	[226617] = { 226617, 226635, 226619, 226627, type = 9 }, -- Earthfury Vestments
+	[226610] = { 226610, 226602, 226595, type = 9 }, -- Lawbringer Chestguard
+	[226489] = { 226489, 226494, type = 9 }, -- Breastplate of Might
+	[226576] = { 226576, 226581, type = 9 }, -- Mantle of Prophecy
+	[226444] = { 226444, 226478, type = 9 }, -- Nightslayer Shoulder Pads
+	[226527] = { 226527, 226543, type = 9 }, -- Giantstalker's Epaulets
+	[226491] = { 226491, 226492, type = 9 }, -- Pauldrons of Might
+	[228277] = { 228701, type = 9 }, -- Core Hound Tooth (Molten)
+	[228296] = { 228511, type = 9 }, -- Perdition's  Blade (Molten)
+	[228299] = { 228460, type = 9 }, -- Spinal Reaper (Molten)
+	[228288] = { 228461, type = 9 }, -- Bonereaver's Edge (Molten)
+	[227536] = {ICONS.MAGE, 226557, 226568, 0,ICONS.PRIEST, 226571, 226586, 0, ICONS.WARLOCK, 226554,216918, type = 5}, -- Incandescent Boots
+	[227765] = {ICONS.DRUID, 226645, 226652, 226663, 226673, 0, ICONS.WARRIOR, 226487, 226496, 0, ICONS.ROGUE, 226443, 226477, type = 5}, -- Scorched Core Boots
+	[227763] = {ICONS.DRUID, 226646, 226651, 226666, 226671, 0, ICONS.WARRIOR, 226490, 226493, 0, ICONS.ROGUE, 226445, 226479, type = 5}, -- Scorched Core Leggings
+	[227534] = {ICONS.MAGE, 226561, 226565, 0, ICONS.PRIEST, 226574, 226583, 0, ICONS.WARLOCK, 226547, 216923, type = 5}, -- Incandescent Leggings
+	[227754] = {ICONS.PALADIN, 226594, 226598, 226606, 0, ICONS.HUNTER, 226532, 226537, 0, ICONS.SHAMAN, 226614, 226639, 226623, 226631, type = 5}, -- Molten Scaled Leggings
+	[227757] = {ICONS.PALADIN, 226593, 226601, 226609, 0, ICONS.HUNTER, 226531, 226538, 0, ICONS.SHAMAN, 226613, 226636, 226620, 226628, type = 5}, -- Molten Scaled Boots
+	[227533] = {ICONS.MAGE, 226556, 226569, 0, ICONS.PRIEST, 226572, 226585, 0, ICONS.WARLOCK, 226552, 216921, type = 5}, -- Incandescent Gloves
+	[227764] = {ICONS.DRUID, 226647, 226658, 226659, 226670, 0, ICONS.WARRIOR, 226488, 226495, 0, ICONS.ROGUE, 226446, 226480, type = 5}, -- Scorched Core Helm
+	[227755] = {ICONS.PALADIN, 226590, 226599, 0, ICONS.HUNTER, 226533, 226536, 0, ICONS.SHAMAN, 226612, 226638, 226622, 226630, type = 5}, -- Molten Scaled Helm
+	[227759] = {ICONS.DRUID, 226648, 226654, 226664, 226669, 0, ICONS.WARRIOR, 226486, 226497, 0, ICONS.ROGUE, 226441, 226475, type = 5}, -- Scorched Core Gloves
+	[227756] = {ICONS.PALADIN, 226591, 226600, 226608, 0, ICONS.HUNTER, 226528, 226540, 0, ICONS.SHAMAN, 226615, 226637, 226621, 226629, type = 5}, -- Molten Scaled Gloves
+	[227537] = {ICONS.MAGE, 226560, 226566, 0, ICONS.PRIEST, 226576, 226581, 0, ICONS.WARLOCK, 226550, 216925, type = 5}, -- Incandescent Shoulderpads
+	[227762] = {ICONS.DRUID, 226644, 226653, 226665, 226674, 0, ICONS.WARRIOR, 226491, 226492, 0, ICONS.ROGUE, 226444, 226478, type = 5}, -- Scorched Core Shoulderpads
+	[227752] = {ICONS.PALADIN, 226588, 221783, 226605, 0, ICONS.HUNTER, 226527, 226543, 0, ICONS.SHAMAN, 226611, 226640, 226624, 226632, type = 5}, -- Molten Scaled Shoulderpads
+	[227535] = {ICONS.MAGE, 226559, 226563, 0, ICONS.PRIEST, 226575, 226582, 0, ICONS.WARLOCK, 226548, 216924, type = 5}, -- Incandescent Robe
+	[227766] = {ICONS.DRUID, 221785, 226656, 226661, 226675, 0, ICONS.WARRIOR, 226489, 226494, 0, ICONS.ROGUE, 226447, 226473, type = 5}, -- Scorched Core Chest
+	[227758] = {ICONS.PALADIN, 226610, 226602, 226595, 0, ICONS.HUNTER, 226534, 226535, 0, ICONS.SHAMAN, 226617, 226635, 226619, 226627, type = 5}, -- Molten Scaled Chest
+	[227532] = {ICONS.MAGE, 226562, 226564, 0, ICONS.PRIEST, 226573, 226584, 0, ICONS.WARLOCK, 226549, 216922, type = 5}, -- Incandescent Hood
+	[227531] = {ICONS.MAGE, 226558, 226567, 0, ICONS.PRIEST, 226578, 226579, 0, ICONS.WARLOCK, 226553, 216920, type = 5}, -- Incandescent Bindings
+	[227760] = {ICONS.DRUID, 226655, 226662, 226668, 226649, 0, ICONS.WARRIOR, 226484, 226499, 0, ICONS.ROGUE, 226442, 226476, type = 5}, -- Scorched Core Bindings
+	[227750] = {ICONS.PALADIN, 226589, 226596, 226603, 0, ICONS.HUNTER, 226530, 226541, 0, ICONS.SHAMAN, 226618, 226642, 226626, 226634, type = 5}, -- Molten Scaled Bindings
+	[227530] = {ICONS.MAGE, 226555, 226570, 0, ICONS.PRIEST, 226577, 226580, 0, ICONS.WARLOCK, 226551, 216919, type = 5}, -- Incandescent Belt
+	[227761] = {ICONS.DRUID, 226657, 226660, 226667, 226650, 0, ICONS.WARRIOR, 226485, 226498, 0, ICONS.ROGUE, 226440, 226474, type = 5}, -- Scorched Core Belt
+	[227751] = {ICONS.PALADIN, 226592, 226597, 226604, 0, ICONS.HUNTER, 226529, 226542, 0, ICONS.SHAMAN, 226616, 226641, 226625, 226633, type = 5}, -- Molten Scaled Belt
+
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

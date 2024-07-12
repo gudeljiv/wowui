@@ -1818,6 +1818,175 @@ data["ScourgeInvasion"] = {
 		},
 	},
 }
+
+data["SoD Set Items"] = {
+	name = AL["Set Items"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = SET_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Level 60 Tier 1"],
+			[NORMAL_DIFF] = {
+				{ 1, 1698 }, --Balance
+				{ 2, 1699 }, --Feral
+				{ 3, 1701 }, --Tank
+				{ 4, 1700 }, --Resto
+				{ 6, 1702 }, --Ranged Hunter
+				{ 7, 1703 }, --Melee Hunter
+				{ 9, 1704 }, --Damage Mage
+				{ 10, 1705 }, --Healer Mage
+				{ 12, 1713 }, -- Healer Sham
+				{ 13, 1715 }, -- Melee Sham
+				{ 14, 1714 }, -- Ranged Sham
+				{ 15, 1716 }, -- Tank Sham
+				{ 16, 1706 }, -- Holy Pally
+				{ 17, 1707 }, -- Ret Pally
+				{ 18, 1708 }, -- Tank Pally
+				{ 20, 1709 }, -- Healer Priest
+				{ 21, 1710 }, -- DPS Priest
+				{ 23, 1711 }, -- DPS Rogue
+				{ 24, 1712 }, -- Tank Rogue
+				{ 26, 1717 }, -- DPS Lock
+				{ 27, 1718 }, -- Tank Lock
+				{ 29, 1719 }, -- Tank Warr
+				{ 30, 1720 }, -- Dps Warr				
+			},
+		},
+		{
+			name = AL["Level 60 Dungeon Set 0.5"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 2, 1667 },
+				{ 4, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 5, 1669 },
+				{ 7, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 8, 1671 },
+				{ 10, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 11, 1673 },
+				{ 16, "INV_Box_01", nil, AL["Priest"], nil },
+				{ 17, 1675 },
+				{ 19, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 20, 1676 },
+				{ 22, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 23, 1679 },
+				{ 25, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 26, 1681 },
+				{ 28, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 29, 1778 },
+			},
+		},
+		{
+			name = AL["Level 60 Dungeon Set 0"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 2, 1666 },
+				{ 4, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 5, 1668 },
+				{ 7, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 8, 1670 },
+				{ 10, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 11, 1672 },
+				{ 16, "INV_Box_01", nil, AL["Priest"], nil },
+				{ 17, 1674 },
+				{ 19, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 20, 1677 },
+				{ 22, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 23, 1678 },
+				{ 25, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 26, 1680 },
+				{ 28, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 29, 1682 },
+			},
+		},
+		{
+			name = AL["Level 50 PvP Sets"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Horde"], nil },
+				{ 2, 1618 }, --Blood Guard's Plate
+				{ 4, 1624 },
+				{ 5, 1623 },
+				{ 6, 1622 },
+				{ 7, 1625 },
+				{ 9, 1627 },
+				{ 10, 1631 },
+				{ 11, 1629 },
+				{ 13, 1633 },
+				{ 14, 1635 },
+				{ 16, "INV_Box_01", nil, AL["Alliance"], nil },
+				{ 17, 1619 },
+				{ 18, 1620 },
+				{ 19, 1621 },
+				{ 21, 1665 },
+				{ 22, 1626 },
+				{ 24, 1628 },
+				{ 25, 1630 },
+				{ 26, 1632 },
+				{ 28, 1634 },
+				{ 29, 1636 },
+			},
+		},
+		{
+			name = AL["Level 50 Emerald Sets"],
+			[NORMAL_DIFF] = {
+				{ 1, 1652 },
+				{ 2, 1653 },
+				{ 4, 1654 },
+				{ 5, 1655 },
+				{ 6, 1656 },
+				{ 8, 1657 },
+				{ 9, 1658 },
+				{ 10, 1659 },
+				{ 12, 1660 },
+				{ 13, 1661 },
+			},
+		},
+		{
+			name = AL["Level 50 Raid"],
+			[NORMAL_DIFF] = {
+				{ 1, 1637 }, 
+				{ 2, 1638 }, 
+				{ 3, 1639 }, 
+				{ 5, 1640 }, 
+				{ 6, 1641 }, 
+				{ 7, 1642 }, 
+				{ 8, 1643 }, 
+				{ 10, 1644 }, 
+				{ 11, 1645 }, 
+				{ 12, 1646 }, 
+				{ 13, 1647 }, 
+				{ 16, 1648 }, 
+				{ 17, 1649 },
+				{ 18, 1650 },
+			},
+		},
+		{
+			name = AL["Level 40 Raid"],
+			[NORMAL_DIFF] = {
+				{ 1, 1584 },
+				{ 2, 1587 },
+				{ 3, 1588 },
+				{ 5, 1585 },
+				{ 6, 1586 },
+				{ 8, 1590 },
+				{ 9, 1591 },
+				{ 11, 1589 },
+				{ 12, 1592 },
+			},
+		},
+		{
+			name = AL["Level 25 Raid"],
+			[NORMAL_DIFF] = {
+				{ 1, 1570 }, -- Twilight Invoker's Vestments
+				{ 3, 1578 }, -- 
+				{ 4, 1579 }, -- 
+				{ 6, 1577 }, -- 
+			},
+		},
+	},
+}
+
 data["Sod Exclusives"] = {
 	name = AL["Waylaid Supplies"],
 	ContentType = SOD_CONTENT,
@@ -1939,100 +2108,6 @@ data["Sod Exclusives"] = {
 				{ 23, 220930 }, --Waylaid Supplies: Major Healing Potions
 				{ 24, 220929 }, -- Waylaid Supplies: Superior Mana Potions
 				{ 25, 220928 }, -- Waylaid Supplies: Enchanted Thorium Bars
-			},
-		},
-	},
-}
-
-data["SoD Set Items"] = {
-	name = AL["Set Items"],
-	ContentType = SOD_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = SET_ITTYPE,
-	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
-	items = {
-		{
-			name = AL["Level 25 Raid"],
-			[NORMAL_DIFF] = {
-				{ 1, 1570 }, -- Twilight Invoker's Vestments
-				{ 3, 1578 }, -- 
-				{ 4, 1579 }, -- 
-				{ 6, 1577 }, -- 
-			},
-		},
-		{
-			name = AL["Level 40 Raid"],
-			[NORMAL_DIFF] = {
-				{ 1, 1584 },
-				{ 2, 1587 },
-				{ 3, 1588 },
-				{ 5, 1585 },
-				{ 6, 1586 },
-				{ 8, 1590 },
-				{ 9, 1591 },
-				{ 11, 1589 },
-				{ 12, 1592 },
-			},
-		},
-		{
-			name = AL["Level 50 Raid"],
-			[NORMAL_DIFF] = {
-				{ 1, 1637 }, 
-				{ 2, 1638 }, 
-				{ 3, 1639 }, 
-				{ 5, 1640 }, 
-				{ 6, 1641 }, 
-				{ 7, 1642 }, 
-				{ 8, 1643 }, 
-				{ 10, 1644 }, 
-				{ 11, 1645 }, 
-				{ 12, 1646 }, 
-				{ 13, 1647 }, 
-				{ 16, 1648 }, 
-				{ 17, 1649 },
-				{ 18, 1650 },
-			},
-		},
-		{
-			name = AL["Level 50 Emerald Sets"],
-			[NORMAL_DIFF] = {
-				{ 1, 1652 },
-				{ 2, 1653 },
-				{ 4, 1654 },
-				{ 5, 1655 },
-				{ 6, 1656 },
-				{ 8, 1657 },
-				{ 9, 1658 },
-				{ 10, 1659 },
-				{ 12, 1660 },
-				{ 13, 1661 },
-			},
-		},
-		{
-			name = AL["Level 50 PvP Sets"],
-			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Horde"], nil },
-				{ 2, 1618 }, --Blood Guard's Plate
-				{ 4, 1624 },
-				{ 5, 1623 },
-				{ 6, 1622 },
-				{ 7, 1625 },
-				{ 9, 1627 },
-				{ 10, 1631 },
-				{ 11, 1629 },
-				{ 13, 1633 },
-				{ 14, 1635 },
-				{ 16, "INV_Box_01", nil, AL["Alliance"], nil },
-				{ 17, 1619 },
-				{ 18, 1620 },
-				{ 19, 1621 },
-				{ 21, 1665 },
-				{ 22, 1626 },
-				{ 24, 1628 },
-				{ 25, 1630 },
-				{ 26, 1632 },
-				{ 28, 1634 },
-				{ 29, 1636 },
 			},
 		},
 	},

@@ -1387,6 +1387,11 @@ local default_global_data = {
 		encounter_journal_cache = {}, --store a dump of the encounter journal
 		installed_skins_cache = {},
 
+		debug_options_panel = {
+			scaletable = {scale = 1},
+			position = {},
+		},
+
 		user_is_patreon_supporter = false,
 
 		show_aug_predicted_spell_damage = false,
@@ -1940,8 +1945,9 @@ end
 ---@param newProfileName string
 ---@param bImportAutoRunCode boolean
 ---@param bIsFromImportPrompt boolean
+---@param overwriteExisting boolean
 ---@return boolean
-function Details:ImportProfile (profileString, newProfileName, bImportAutoRunCode, bIsFromImportPrompt)
+function Details:ImportProfile (profileString, newProfileName, bImportAutoRunCode, bIsFromImportPrompt, overwriteExisting)
 	if (not newProfileName or type(newProfileName) ~= "string" or string.len(newProfileName) < 2) then
 		Details:Msg("invalid profile name or profile name is too short.") --localize-me
 		return false
@@ -1955,11 +1961,13 @@ function Details:ImportProfile (profileString, newProfileName, bImportAutoRunCod
 
 		local profileObject = Details:GetProfile (newProfileName, false)
 		local nameWasDuplicate = false
-		while(profileObject) do
-			newProfileName = newProfileName .. '2';
-			profileObject = Details:GetProfile(newProfileName, false)
-			nameWasDuplicate = true
-		end
+    if not overwriteExisting then
+      while(profileObject) do
+        newProfileName = newProfileName .. '2';
+        profileObject = Details:GetProfile(newProfileName, false)
+        nameWasDuplicate = true
+      end
+    end
 		if (not profileObject) then
 			--profile doesn't exists, create new
 			profileObject = Details:CreateProfile (newProfileName)

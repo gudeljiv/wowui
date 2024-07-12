@@ -1,12 +1,13 @@
-## Interface: 11502
+## Interface: 11503, 40400
 ## Notes: World buff timers and much more.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.82
+## Version: 2.83
 ## SavedVariables: NWBdatabase
 
 embeds.xml
 Locale\Locales.xml
+Modules\DB.lua
 NovaWorldBuffs.lua
 Options.lua
 NWBHelp.lua
@@ -14,9 +15,11 @@ NWBData.lua
 NWBCreatures.lua
 NWBRealms.lua
 NWBGuildFilter.lua
+Modules\WorldBuffs.lua
 Modules\WeeklyReset.lua
 Modules\Ashenvale.lua
 Modules\Stranglethorn.lua
+Modules\Blackrock.lua
 Modules\TolBarad.lua
 Modules\Wintergrasp.lua
 Modules\Overlay.lua
