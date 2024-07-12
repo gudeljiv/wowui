@@ -13,14 +13,14 @@ ItemRackUser = {
 			["Left"] = 816.6031494140625,
 		},
 		[14] = {
-			["Side"] = "LEFT",
 			["DockTo"] = 13,
+			["Side"] = "LEFT",
 		},
 	},
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
-				[8] = "13210::::::::58:::::::::",
+				[2] = "11933::::::::58:::::::::",
 			},
 		},
 		["~Unequip"] = {
@@ -30,7 +30,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -40,8 +40,6 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 		[13] = {
 			"41589::::::::76:::::::::", -- [1]
@@ -50,6 +48,8 @@ ItemRackUser = {
 			0, -- [4]
 		},
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 }

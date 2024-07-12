@@ -1,5 +1,5 @@
 local TOCNAME,
-    ---@class Addon_CustomFilters
+    ---@class Addon_CustomFilters: Addon_LibGPIOptions
     Addon = ...;
 
 -- Note on verbiage: Here im considering the "store" to be a category's entry table in the savedVars 
@@ -62,6 +62,16 @@ local presets = {
             enUS = "blood bloodmoon bm",
         },
         key = "BLOOD",
+        levels = CopyTable(HIDDEN_LEVEL_RANGE),
+        isDisabled = not isSoD,
+        sortIdx = 1,
+    },
+    BRE = { -- Blackrock Eruption (SoD)
+        name = "Blackrock Eruption",
+        tags = {
+            enUS = "eruption bre brm dailys dialies dailies daily",
+        },
+        key = "BRE",
         levels = CopyTable(HIDDEN_LEVEL_RANGE),
         isDisabled = not isSoD,
         sortIdx = 1,
@@ -272,18 +282,6 @@ local fixSavedFiltersSorts = function()
         entry.sortIdx = sortIdx
         sortIdx = sortIdx + 1
     end
-end
-local dungeonPanelFilterHandles
---- These checkboxes for these filters are also available in the dungeons panel. Keep state in sync.
----@param key string
----@return CheckButton?
-local getAlternateCheckbox = function(key)
-    ---@cast Addon Addon_LibGPIOptions
-    assert(Addon.Options.Vars, "This function should be called after options have been initialized")
-    if not dungeonPanelFilterHandles then
-        dungeonPanelFilterHandles = tInvert(Addon.Options.Vars) 
-    end
-    return _G[dungeonPanelFilterHandles["FilterDungeon"..key]]
 end
 
 ---@param direction "up" | "down"
@@ -621,18 +619,19 @@ local FilterSettingsPool = {
                 end
                 editBox:SetScript("OnEscapePressed", resetState)
                 editBox:SetScript("OnEditFocusLost", resetState)
-                
+                Addon.OptionsBuilder.RegisterFrameWithSavedVar( -- register the toggle with the saved vars registry
+                    options.toggle, GroupBulletinBoardDBChar, "FilterDungeon" .. dbEntry.key
+                );
+                ---@cast options {toggle: RegisteredFrameMixin|CheckButton|{func:function}}
+                -- hook up the toggle button to variable updates from any source in the registry
+                options.toggle:OnSavedVarUpdate(function(updatedValue)
+                    options.toggle:SetChecked(updatedValue)
+                end);
                 --`.func` is defined as part of the ChatConfigBaseCheckButtonTemplate
-                -- its called in the "OnClick" handler
-                options.toggle.func = function(checkbox, isChecked)
-                    GroupBulletinBoardDBChar["FilterDungeon"..dbEntry.key] = isChecked
-                    local altCheckbox = getAlternateCheckbox(dbEntry.key)
-                    if altCheckbox then
-                        altCheckbox:SetChecked(isChecked)
-                    end
+                options.toggle.func = function(_, isChecked) -- called in the template's "OnClick" handler
+                    options.toggle:SetSavedValue(isChecked)
                     self:UpdateFilterState(options, dbEntry)
                 end
-                
                 editBox:Show()
                 nextAnchor = editBox.label
             end
