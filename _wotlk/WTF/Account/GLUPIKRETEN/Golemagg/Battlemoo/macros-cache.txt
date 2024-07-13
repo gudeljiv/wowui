@@ -48,6 +48,7 @@ END
 VER 3 0000000001000011 "mup" "134400"
 #showtoltip [stealth] Pounce; [form:1] Maul; [form:3] Claw; Regrowth
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
+/Startattack
 END
 VER 3 0000000001000005 "nourish" "134400"
 #showtooltip

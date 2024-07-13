@@ -1,9 +1,3 @@
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/cast Abyssal Seahorse
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
-END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
@@ -21,17 +15,23 @@ VER 3 000000000000002A " " "132328"
 /petfollow
 /petpassive
 END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Abyssal Seahorse
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:28399
+/cast item:0
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:27854
+/cast item:0
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -50,9 +50,7 @@ VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 /cast item:0
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Blacktalon the Savage
-/targetexact Stonescythe Alpha
-/targetexact Stonescythe Whelp
+/targetexact Foreman Razelcraz
 /targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"
