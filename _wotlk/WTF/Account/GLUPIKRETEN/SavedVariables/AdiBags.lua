@@ -423,10 +423,10 @@ AdiBagsDB = {
 						[2776] = "Trade Goods#Ores",
 						[39966] = "Gem#Gem",
 						[36920] = "Gem#Gem",
-						[3858] = "Trade Goods#Ores",
-						[9262] = "Gem#Gem",
-						[40085] = "Gem#Gem",
 						[2835] = "Trade Goods#Ores",
+						[43122] = "Trade Goods#Inscription",
+						[40085] = "Gem#Gem",
+						[3858] = "Trade Goods#Ores",
 						[3860] = "Trade Goods#Bars",
 						[34721] = "Trade Goods#Bandages",
 						[2841] = "Trade Goods#Bars",
@@ -490,7 +490,7 @@ AdiBagsDB = {
 						[40023] = "Gem#Gem",
 						[43124] = "Trade Goods#Inscription",
 						[24330] = "Quest#Quest",
-						[43122] = "Trade Goods#Inscription",
+						[9262] = "Gem#Gem",
 						[7972] = "Junk#Junk",
 						[36932] = "Gem#Gem",
 						[44331] = "Consumable#Potions",
@@ -695,8 +695,8 @@ AdiBagsDB = {
 		["Item Sets"] = {
 			["profiles"] = {
 				["Default"] = {
-					["enablePVE"] = false,
 					["includeWeapons"] = false,
+					["enablePVE"] = false,
 					["enablePVP"] = false,
 				},
 			},
@@ -902,6 +902,7 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 				["Masque"] = false,
 			},
+			["qualityOpacity"] = 0.05,
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
@@ -910,7 +911,6 @@ AdiBagsDB = {
 					["Name"] = "Bag Lag Fix",
 				},
 			},
-			["qualityOpacity"] = 0.05,
 		},
 	},
 }

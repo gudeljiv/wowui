@@ -16,18 +16,18 @@ OmniCCDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Asjrdfsad - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
-		["Tudum - Ashbringer"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Battledog - Gehennas"] = "Default",
 	},
@@ -143,6 +143,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -247,18 +248,16 @@ OmniCC4Config = {
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["mmSSDuration"] = 0,
 			["spiralOpacity"] = 1,
-			["yOff"] = 0,
+			["minDuration"] = 3,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
-			["minDuration"] = 3,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["yOff"] = 0,
 		},
 	},
-	["version"] = "8.1.1",
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -269,4 +268,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+	["engine"] = "AniUpdater",
 }

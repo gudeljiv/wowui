@@ -53,6 +53,12 @@ VER 3 0000000001000005 "nourish" "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Nourish
 END
+VER 3 000000000100001C "prowl" "134400"
+#showtooltip Prowl
+/cancelform [noform:3] 
+/cast [noform:3] Cat Form 
+/cast Prowl
+END
 VER 3 0000000001000015 "regrowth" "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Regrowth

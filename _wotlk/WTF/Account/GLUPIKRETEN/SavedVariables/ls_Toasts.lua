@@ -27,7 +27,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
-		["Nitwit - Dreadnaught"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Mxys - Golemagg"] = "Default",
@@ -53,7 +53,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Moolatz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
