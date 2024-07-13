@@ -10,13 +10,13 @@ Postal3DB = {
 		["Battlemoo - Golemagg"] = "Battlemoo - Golemagg",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Asjrdfsad - Golemagg"] = "Asjrdfsad - Golemagg",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -37,10 +37,10 @@ Postal3DB = {
 				"Battlearm|Golemagg|Horde|83|DEATHKNIGHT", -- [5]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [6]
 				"Battledog|Gehennas|Horde|1|WARRIOR", -- [7]
-				"Battlemoo|Golemagg|Horde|63|DRUID", -- [8]
+				"Battlemoo|Golemagg|Horde|64|DRUID", -- [8]
 				"Handrmandr|Golemagg|Horde|73|PALADIN", -- [9]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [10]
-				"Miqa|Golemagg|Horde|51|PRIEST", -- [11]
+				"Miqa|Golemagg|Horde|52|PRIEST", -- [11]
 				"Moolatz|Golemagg|Horde|83|DRUID", -- [12]
 				"Mxyzptlk|Golemagg|Horde|17|WARLOCK", -- [13]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [14]

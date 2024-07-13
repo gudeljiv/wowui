@@ -27,11 +27,11 @@ VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:8766
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:8952
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -47,10 +47,10 @@ VER 3 000000000000000E "inspect" "136106"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:6149
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Foreman Razelcraz
+/targetexact Ranger Captain Venn'ren
 /targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"

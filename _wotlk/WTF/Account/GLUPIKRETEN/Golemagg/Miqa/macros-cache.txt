@@ -1,13 +1,3 @@
-VER 3 000000000100000E " " "134400"
-#showtooltip Greater Heal
-/cast Inner Focus
-/cast [@mouseover,exists,help][@target,exists,help][] Greater Heal
-END
-VER 3 000000000100000F " " "134400"
-#showtooltip Prayer of Healing
-/cast Inner Focus
-/cast Prayer of Healing
-END
 VER 3 0000000001000009 "cure" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Cure Disease
@@ -25,6 +15,11 @@ VER 3 000000000100000B "flay" "134400"
 #showtooltip Mind Flay
 /use [nochanneling:Mind Flay] Mind Flay
 END
+VER 3 000000000100000E "greater" "134400"
+#showtooltip Greater Heal
+/cast Inner Focus
+/cast [@mouseover,exists,help][@target,exists,help][] Greater Heal
+END
 VER 3 0000000001000004 "heal" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Heal
@@ -38,9 +33,14 @@ VER 3 0000000001000007 "mb" "134400"
 /startattack
 /cast Mind Blast
 END
-VER 3 000000000100000C "penance" "134400"
+VER 3 000000000100000C "penan" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Penance
+END
+VER 3 000000000100000F "poh" "134400"
+#showtooltip Prayer of Healing
+/cast Inner Focus
+/cast Prayer of Healing
 END
 VER 3 0000000001000002 "pws" "134400"
 #showtooltip

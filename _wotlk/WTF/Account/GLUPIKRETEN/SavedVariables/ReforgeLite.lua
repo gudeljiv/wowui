@@ -1290,7 +1290,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["targetLevel"] = 3,
 			["method"] = {
 				["items"] = {
 					{
@@ -1339,6 +1338,9 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
+			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1352,7 +1354,8 @@ ReforgeLiteDB = {
 			["itemsLocked"] = {
 				[8] = false,
 			},
-			["buffs"] = {
+			["categoryStates"] = {
+				["Settings"] = true,
 			},
 		},
 		["Battlemoo - Golemagg"] = {
@@ -1594,15 +1597,19 @@ ReforgeLiteDB = {
 			["customPresets"] = {
 			},
 		},
-		["DRUID"] = {
-			["customPresets"] = {
-			},
-		},
 		["WARRIOR"] = {
 			["customPresets"] = {
 			},
 		},
 		["PALADIN"] = {
+			["customPresets"] = {
+			},
+		},
+		["DRUID"] = {
+			["customPresets"] = {
+			},
+		},
+		["PRIEST"] = {
 			["customPresets"] = {
 			},
 		},
