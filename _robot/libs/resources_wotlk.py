@@ -7,7 +7,7 @@ data = {
         "druid": {"#ff9f13", "#ffa91e"},
         "death knight": {"#dd365a", "#e44266"},
         "hunter": {"#c8e795", "#d0f1a0"},
-        "rogue": {"#ffff8b"},
+        "rogue": {"#ffff8b", "#ffff96"},
         "paladin": {"#ffacd4", "#ffb6dc"},
         "warlock": {"#a8a6fd"},
         "priest": {"#ffffff"},
@@ -177,7 +177,8 @@ data = {
     },
     "rogue": {
         "main": [
-            {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1", "modifier": "lshift"},
+            {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "1"},
+            {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1"},
             {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
         ],
         "secondary": [
