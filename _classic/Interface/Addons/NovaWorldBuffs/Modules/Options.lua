@@ -464,6 +464,14 @@ NWB.options = {
 			get = "getWintergraspChat10",
 			set = "setWintergraspChat10",
 		},
+		chatOnlyInCity = {
+			type = "toggle",
+			name = L["chatOnlyInCityTitle"],
+			desc = L["chatOnlyInCityDesc"],
+			order = 171,
+			get = "getChatOnlyInCity",
+			set = "setChatOnlyInCity",
+		},
 		middleWarningHeader = {
 			type = "header",
 			name = NWB.prefixColor .. L["middleWarningHeaderDesc"],
@@ -572,6 +580,14 @@ NWB.options = {
 			order = 193,
 			get = "getWintergraspMiddle10",
 			set = "setWintergraspMiddle10",
+		},
+		middleOnlyInCity = {
+			type = "toggle",
+			name = L["middleOnlyInCityTitle"],
+			desc = L["middleOnlyInCityDesc"],
+			order = 194,
+			get = "getMiddleOnlyInCity",
+			set = "setMiddleOnlyInCity",
 		},
 		guildWarningHeader = {
 			type = "header",
@@ -1753,6 +1769,7 @@ NWB.optionDefaults = {
 		chat0 = true,
 		chatZan = false,
 		chatNpcKilled = true,
+		chatOnlyInCity = false,
 		middle30 = true,
 		middle15 = false,
 		middle10 = true,
@@ -1766,7 +1783,8 @@ NWB.optionDefaults = {
 		middleNpcKilled = true,
 		middleHandInMsg = true,
 		middleHandInMsgWhenOnCooldown = true,
-		--These are 1/0 instead of true/false to be smaller via addon comms.
+		middleOnlyInCity = false,
+		--These are 1/0 instead of true/false to be smaller via addon comms (This was a mistake on my part not understanding the compression lib and needs changing back one day).
 		guild10 = 1,
 		guild1 = 1,
 		guildNpcKilled = 1,
@@ -2214,9 +2232,23 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.83;
+	linesVersion = 2.84;
 	local lines = {
 		" ",
+		"|cFF00FF00Version 2.84|r",
+		"|cFFFF6900[Era and SoD]|r",
+		"- Added options to only show buff drop msgs for chat window and middle of the screen while you're in a city the buff can drop in, you won't see msgs out in the world with these enabled.",
+		"- Removed the \"buff has dropped\" guild msg, now there's no cooldown it can be kinda spammy getting 2 msgs for every drop. The msg saying it will drop in x seconds is still there so you can relog, but there is no need for both msgs anymore.",
+		"- Added 3 minute cooldown between buff drop warning msgs.",
+		" ",
+		"|cFFFF6900[SoD only]|r",
+		"- Added kill count to the honor tracker for Blackrock Erruption pvp event.",
+		"- Disabled blackrock event timer guild msgs, this wasn't meant to enabled as the event is up 50% of the time there's no need for warnings when it spawns, can just look at the timer on minimap button tooltip to see the timer.",
+		"- Fixed missing icon for Spark of Inspiration buff in /buffs window.",
+		"- Adjusted Blackrock Eruption timer for NA realms.",
+		" ",
+		" ",
+		"|cFF00FF00Version 2.83|r",
 		"|cFFFF6900[Era and SoD]|r",
 		"- Added new alliance rend buff Might of Stormwind to the /buffs tracking frame.",
 		"- Disabled timers for rend/ony/nef on classic, Blizzard has changed the handin cooldown to 1 minute (it may take a while for people to update before you stop seeing guild timer msgs).",
@@ -3193,7 +3225,6 @@ function NWB:getSoundOnlyInCity(info)
 	return self.db.global.soundOnlyInCity;
 end
 
---Only plays sounds in city.
 function NWB:setSoundsDisableInInstances(info, value)
 	self.db.global.soundsDisableInInstances = value;
 end
@@ -3202,7 +3233,6 @@ function NWB:getSoundsDisableInInstances(info)
 	return self.db.global.soundsDisableInInstances;
 end
 
---Only plays sounds in city.
 function NWB:setSoundsDisableInBattlegrounds(info, value)
 	self.db.global.soundsDisableInBattlegrounds = value;
 end
@@ -4271,4 +4301,22 @@ end
 
 function NWB:getMinimapLayerScale(info)
 	return self.db.global.minimapLayerScale;
+end
+
+--Print in city only.
+function NWB:setChatOnlyInCity(info, value)
+	self.db.global.chatOnlyInCity = value;
+end
+
+function NWB:getChatOnlyInCity(info)
+	return self.db.global.chatOnlyInCity;
+end
+
+--Middle msg in city only.
+function NWB:setMiddleOnlyInCity(info, value)
+	self.db.global.middleOnlyInCity = value;
+end
+
+function NWB:getMiddleOnlyInCity(info)
+	return self.db.global.middleOnlyInCity;
 end

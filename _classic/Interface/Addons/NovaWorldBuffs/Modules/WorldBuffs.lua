@@ -9,6 +9,7 @@ local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 
 NWB.lastHeraldYell = 0;
+local buffDrops = {};
 local function monsterYell(...)
 	local layerNum;
 	if (NWB.isLayered and NWB:checkLayerCount() and NWB.lastKnownLayerMapID and NWB.lastKnownLayerMapID > 0
@@ -353,7 +354,10 @@ local function combatLogEventUnfiltered(...)
 			if (expirationTime >= (3599.5 - buffLag) and (zone == 1454 or (zone == 1413 and NWB.faction == "Alliance") or not NWB.isLayered) and unitType == "Creature"
 					and ((GetServerTime() - NWB.data.rendYell2) < yellTwoOffset or (GetServerTime() - NWB.data.rendYell) < yellOneOffset)) then
 				NWB:trackNewBuff(spellName, "rend", npcID);
-				NWB:playSound("soundsRendDrop", "rend");
+				if (not buffDrops["rend"] or GetServerTime() - buffDrops["rend"] > NWB.buffDropSpamCooldown) then
+					NWB:playSound("soundsRendDrop", "rend");
+				end
+				buffDrops["rend"] = GetServerTime();
 				if (NWB.db.global.cityGotBuffSummon) then
 					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
 						NWB.hideSummonPopup = true;
@@ -395,7 +399,10 @@ local function combatLogEventUnfiltered(...)
 				NWB:trackNewBuff(spellName, "zan", npcID);
 				--Not sure why this triggers 4 times on PTR, needs more testing once it's on live server but for now we do a 1 second cooldown.
 				NWB.lastZanBuffGained = GetServerTime();
-				NWB:playSound("soundsZanDrop", "zan");
+				--if (not buffDrops["zan"] or GetServerTime() - buffDrops["zan"] > NWB.buffDropSpamCooldown) then
+					NWB:playSound("soundsZanDrop", "zan");
+				--end
+				--buffDrops["zan"] = GetServerTime();
 				NWB:buffDroppedTaxiNode("zg");
 				if (NWB.db.global.zgGotBuffSummon) then
 					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
@@ -430,7 +437,12 @@ local function combatLogEventUnfiltered(...)
 					end
 				end
 				NWB:trackNewBuff(spellName, "nef", npcID);
-				NWB:playSound("soundsNefDrop", "nef");
+				--Share cd with ony, same buff.
+				if (not buffDrops["ony"] or GetServerTime() - buffDrops["ony"] > NWB.buffDropSpamCooldown) then
+					NWB:playSound("soundsNefDrop", "nef");
+				end
+				buffDrops["ony"] = GetServerTime();
+				--buffDrops["nef"] = GetServerTime();
 				if (NWB.db.global.cityGotBuffSummon) then
 					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
 						NWB.hideSummonPopup = true;
@@ -466,7 +478,10 @@ local function combatLogEventUnfiltered(...)
 					end
 				end
 				NWB:trackNewBuff(spellName, "ony", npcID);
-				NWB:playSound("soundsOnyDrop", "ony");
+				if (not buffDrops["ony"] or GetServerTime() - buffDrops["ony"] > NWB.buffDropSpamCooldown) then
+					NWB:playSound("soundsOnyDrop", "ony");
+				end
+				buffDrops["ony"] = GetServerTime();
 				if (NWB.db.global.cityGotBuffSummon) then
 					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
 						NWB.hideSummonPopup = true;
@@ -661,7 +676,7 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199 and UnitLevel("player") < 40) then
 				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
-				if (GetServerTime() - NWB.lastBlackfathomBoon > 300) then
+				if (GetServerTime() - NWB.lastBlackfathomBoon > NWB.buffDropSpamCooldownSoD) then
 					NWB.lastBlackfathomBoon = GetServerTime();
 					NWB:playSound("soundsBlackfathomBoon", "bob");
 					NWB:print(string.format(L["specificBuffDropped"], L["Boon of Blackfathom"]));
@@ -676,7 +691,7 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199 and UnitLevel("player") < 50) then
 				NWB:trackNewBuff(spellName, "sparkOfInspiration");
-				if (GetServerTime() - NWB.lastSparkOfInspiration > 300) then
+				if (GetServerTime() - NWB.lastSparkOfInspiration > NWB.buffDropSpamCooldownSoD) then
 					NWB.lastSparkOfInspiration = GetServerTime();
 					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
 					NWB:print(string.format(L["specificBuffDropped"], L["Spark of Inspiration"]));
@@ -686,7 +701,7 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199 and UnitLevel("player") < 60) then
 				NWB:trackNewBuff(spellName, "fervorTempleExplorer");
-				if (GetServerTime() - NWB.lastFervorTempleExplorer > 300) then
+				if (GetServerTime() - NWB.lastFervorTempleExplorer > NWB.buffDropSpamCooldownSoD) then
 					NWB.lastFervorTempleExplorer = GetServerTime();
 					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
 					NWB:print(string.format(L["specificBuffDropped"], L["Fervor of the Temple Explorer"]));
@@ -933,12 +948,16 @@ function NWB:setRendBuff(source, sender, zoneID, GUID, isAllianceAndLayered)
 			--NWB:sendGuildMsg(L["rendBuffDropped"] .. layerMsg, "guildBuffDropped");
 		end
 		if (NWB.isLayered and count > 0) then
-			NWB:sendBuffDropped("GUILD", "rend", nil, count);
-			--NWB:doBuffDropMsg("rend " .. count);
-			NWB:doBuffDropMsg("rend", count);
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "rend", nil, count);
+				--NWB:doBuffDropMsg("rend " .. count);
+				NWB:doBuffDropMsg("rend", count);
+			end
 		else
-			NWB:sendBuffDropped("GUILD", "rend");
-			NWB:doBuffDropMsg("rend");
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "rend");
+				NWB:doBuffDropMsg("rend");
+			end
 		end
 	end
 	rendLastSet = GetServerTime();
@@ -1049,12 +1068,16 @@ function NWB:setOnyBuff(source, sender, zoneID, GUID, isSapped)
 			--NWB:sendGuildMsg(L["onyxiaBuffDropped"] .. layerMsg, "guildBuffDropped");
 		end
 		if (NWB.isLayered and count > 0 and not isSapped) then
-			NWB:sendBuffDropped("GUILD", "ony", nil, count);
-			--NWB:doBuffDropMsg("ony " .. count);
-			NWB:doBuffDropMsg("ony", count);
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "ony", nil, count);
+				--NWB:doBuffDropMsg("ony " .. count);
+				NWB:doBuffDropMsg("ony", count);
+			end
 		elseif (not isSapped) then
-			NWB:sendBuffDropped("GUILD", "ony");
-			NWB:doBuffDropMsg("ony");
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "ony");
+				NWB:doBuffDropMsg("ony");
+			end
 		end
 	end
 	onyLastSet = GetServerTime();
@@ -1136,12 +1159,16 @@ function NWB:setNefBuff(source, sender, zoneID, GUID)
 			--NWB:sendGuildMsg(L["nefarianBuffDropped"] .. layerMsg, "guildBuffDropped");
 		end
 		if (NWB.isLayered and count > 0) then
-			NWB:sendBuffDropped("GUILD", "nef", nil, count);
-			--NWB:doBuffDropMsg("nef " .. count);
-			NWB:doBuffDropMsg("nef", count);
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "nef", nil, count);
+				--NWB:doBuffDropMsg("nef " .. count);
+				NWB:doBuffDropMsg("nef", count);
+			end
 		else
-			NWB:sendBuffDropped("GUILD", "nef");
-			NWB:doBuffDropMsg("nef");
+			if (not NWB.noGuildBuffDroppedMsgs) then
+				NWB:sendBuffDropped("GUILD", "nef");
+				NWB:doBuffDropMsg("nef");
+			end
 		end
 	end
 	nefLastSet = GetServerTime();
@@ -1152,6 +1179,8 @@ end
 
 local f = CreateFrame("Frame");
 f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+f:RegisterEvent("CHAT_MSG_MONSTER_YELL");
+f:RegisterEvent("CHAT_MSG_MONSTER_SAY");
 f:SetScript("OnEvent", function(self, event, ...)
 	if (event == "COMBAT_LOG_EVENT_UNFILTERED") then
 		combatLogEventUnfiltered(...);
@@ -1175,17 +1204,19 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 			if (source == "self") then
 				NWB.data.rendYell = GetServerTime();
 			end
-			if (NWB.db.global.guildNpcDialogue == 1 and (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend)) then
-				NWB:sendGuildMsg(L["rendFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
-			end
-			rendFirstYell = GetServerTime();
-			if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
-				NWB:startFlash("flashFirstYell");
-				if (NWB.db.global.middleBuffWarning) then
-					NWB:middleScreenMsg("rendFirstYell", L["rendFirstYellMsg"] .. layerMsg, nil, 5);
+			if ((GetServerTime() - rendFirstYell) > NWB.buffDropSpamCooldown) then
+				if (NWB.db.global.guildNpcDialogue == 1 and (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend)) then
+					NWB:sendGuildMsg(L["rendFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
 				end
+				rendFirstYell = GetServerTime();
+				if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
+					NWB:startFlash("flashFirstYell");
+					if (NWB.db.global.middleBuffWarning and (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type))) then
+						NWB:middleScreenMsg("rendFirstYell", L["rendFirstYellMsg"] .. layerMsg, nil, 5);
+					end
+				end
+				NWB:playSound("soundsFirstYell", "rend");
 			end
-			NWB:playSound("soundsFirstYell", "rend");
 			NWB:sendBigWigs(6, "[NWB] " .. L["rend"]);
 		end
 	elseif (type == "ony") then
@@ -1194,15 +1225,17 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 			if (source == "self") then
 				NWB.data.onyYell = GetServerTime();
 			end
-			if (NWB.db.global.guildNpcDialogue == 1) then
-				NWB:sendGuildMsg(L["onyxiaFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
+			if ((GetServerTime() - onyFirstYell) > NWB.buffDropSpamCooldown) then
+				if (NWB.db.global.guildNpcDialogue == 1) then
+					NWB:sendGuildMsg(L["onyxiaFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
+				end
+				onyFirstYell = GetServerTime();
+				NWB:startFlash("flashFirstYell");
+				if (NWB.db.global.middleBuffWarning and (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type))) then
+					NWB:middleScreenMsg("onyFirstYell", L["onyxiaFirstYellMsg"] .. layerMsg, nil, 5);
+				end
+				NWB:playSound("soundsFirstYell", "ony");
 			end
-			onyFirstYell = GetServerTime();
-			NWB:startFlash("flashFirstYell");
-			if (NWB.db.global.middleBuffWarning) then
-				NWB:middleScreenMsg("onyFirstYell", L["onyxiaFirstYellMsg"] .. layerMsg, nil, 5);
-			end
-			NWB:playSound("soundsFirstYell", "ony");
 			NWB:sendBigWigs(14, "[NWB] " .. L["Rallying Cry of the Dragonslayer"]);
 		end
 	elseif (type == "nef") then
@@ -1211,15 +1244,17 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 			if (source == "self") then
 				NWB.data.nefYell = GetServerTime();
 			end
-			if (NWB.db.global.guildNpcDialogue == 1) then
-				NWB:sendGuildMsg(L["nefarianFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
+			if ((GetServerTime() - nefFirstYell) > NWB.buffDropSpamCooldown) then
+				if (NWB.db.global.guildNpcDialogue == 1) then
+					NWB:sendGuildMsg(L["nefarianFirstYellMsg"] .. layerMsg, "guildNpcDialogue");
+				end
+				nefFirstYell = GetServerTime();
+				NWB:startFlash("flashFirstYell");
+				if (NWB.db.global.middleBuffWarning and (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type))) then
+					NWB:middleScreenMsg("nefFirstYell", L["nefarianFirstYellMsg"] .. layerMsg, nil, 5);
+				end
+				NWB:playSound("soundsFirstYell", "nef");
 			end
-			nefFirstYell = GetServerTime();
-			NWB:startFlash("flashFirstYell");
-			if (NWB.db.global.middleBuffWarning) then
-				NWB:middleScreenMsg("nefFirstYell", L["nefarianFirstYellMsg"] .. layerMsg, nil, 5);
-			end
-			NWB:playSound("soundsFirstYell", "nef");
 			NWB:sendBigWigs(15, "[NWB] " .. L["Rallying Cry of the Dragonslayer"]);
 		end
 	elseif (type == "zan") then
@@ -1265,7 +1300,7 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 			end
 			zanFirstYell = GetServerTime();
 			NWB:startFlash("flashFirstYellZan");
-			if (NWB.db.global.middleBuffWarning) then
+			if (NWB.db.global.middleBuffWarning and (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type))) then
 				NWB:middleScreenMsg("zanFirstYell", msg .. layerMsg, nil, 5);
 			end
 			NWB:playSound("soundsFirstYell", "zan");
@@ -1285,21 +1320,21 @@ function NWB:doBuffDropMsg(type, layer)
 		layerMsg = " (" .. L["Layer"] .. " " .. layer .. ")";
 	end
 	if (type == "rend") then
-		if ((GetServerTime() - rendDropMsg) > 40) then
+		if ((GetServerTime() - rendDropMsg) > NWB.buffDropSpamCooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["rendBuffDropped"] .. layerMsg, "guildBuffDropped");
 			end
 			rendDropMsg = GetServerTime();
 		end
 	elseif (type == "ony") then
-		if ((GetServerTime() - onyDropMsg) > 40) then
+		if ((GetServerTime() - onyDropMsg) > NWB.buffDropSpamCooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["onyxiaBuffDropped"] .. layerMsg, "guildBuffDropped");
 			end
 			onyDropMsg = GetServerTime();
 		end
 	elseif (type == "nef") then
-		if ((GetServerTime() - nefDropMsg) > 40) then
+		if ((GetServerTime() - nefDropMsg) > NWB.buffDropSpamCooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["nefarianBuffDropped"] .. layerMsg, "guildBuffDropped");
 			end

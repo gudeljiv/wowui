@@ -1029,3 +1029,9 @@ L["printStvCoinsDesc"] = "Print to chat a counter of how many STV coins earned d
 
 L["printBlackrockHonorTitle"] = "Print Blackrock Honor";
 L["printBlackrockHonorDesc"] = "Print to chat a counter of how much Blackrock Eruption honor earned during the event.";
+
+L["chatOnlyInCityTitle"] = "Only In City";
+L["chatOnlyInCityDesc"] = "Only print timer and buff drop chat msgs when you are in the main city where the buffs drop (Stranglethorn Vale included for Zandalar buff).";
+
+L["middleOnlyInCityTitle"] = "Only In City";
+L["middleOnlyInCityDesc"] = "Only show middle of the screen timer and buff drop msgs when you are in the main city where the buffs drop (Stranglethorn Vale included for Zandalar buff).";

@@ -386,6 +386,21 @@ function NWB.isCapitalCity()
 	end
 end
 
+function NWB:isCapitalCityAction(type)
+	local _, _, zone = NWB:GetPlayerZonePosition();
+	local subZone = GetSubZoneText();
+	if (zone == 1453 and NWB.faction == "Alliance" and (type == "ony" or type == "nef" or type == "timer")) then
+		return true;
+	elseif (zone == 1454 and NWB.faction == "Horde" and (type == "ony" or type == "nef" or type == "rend" or type == "timer")) then
+		return true;
+	elseif (zone == 1413 and subZone == POSTMASTER_LETTER_BARRENS_MYTHIC and (type == "ony" or type == "nef"
+			or type == "rend" or type == "timer")) then
+		return true;
+	elseif ((zone == 1434 or zone == 1443 or zone == 1454 or zone == 1413) and type == "zan" or type == "timer") then
+		return true;
+	end
+end
+
 --Single line buff timers.
 function NWB:getShortBuffTimers(channel, layerNum)
 	local msg = "";
@@ -924,9 +939,9 @@ function NWB:ticker()
 			--NWB:checkAshenvaleTimer(); --Disabled in p4.
 			NWB:checkStranglethornTimer();
 		end
-		if (NWB.sodPhase == 4) then
-			NWB:checkBlackrockTimer();
-		end
+		--if (NWB.sodPhase == 4) then
+			--NWB:checkBlackrockTimer();
+		--end
 	end
 	if (NWB.isCata) then
 		NWB:checkTolBaradTimer();
@@ -1046,18 +1061,20 @@ function NWB:doWarning(type, num, secondsLeft, layer)
 	end
 	msg = msg .. layerMsg .. period;
 	--Chat.
-	if (NWB.db.global.chat30 and num == 30 and send) then
-		NWB:print(msg, nil, nil, true);
-	elseif (NWB.db.global.chat15 and num == 15 and send) then
-		NWB:print(msg, nil, nil, true);
-	elseif (NWB.db.global.chat10 and num == 10 and send) then
-		NWB:print(msg, nil, nil, true);
-	elseif (NWB.db.global.chat5 and num == 5 and send) then
-		NWB:print(msg, nil, nil, true);
-	elseif (NWB.db.global.chat1 and num == 1 and send) then
-		NWB:print(msg, nil, nil, true);
-	elseif (NWB.db.global.chat0 and num == 0 and send) then
-		NWB:print(msg, nil, nil, true);
+	if (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type)) then
+		if (NWB.db.global.chat30 and num == 30 and send) then
+			NWB:print(msg, nil, nil, true);
+		elseif (NWB.db.global.chat15 and num == 15 and send) then
+			NWB:print(msg, nil, nil, true);
+		elseif (NWB.db.global.chat10 and num == 10 and send) then
+			NWB:print(msg, nil, nil, true);
+		elseif (NWB.db.global.chat5 and num == 5 and send) then
+			NWB:print(msg, nil, nil, true);
+		elseif (NWB.db.global.chat1 and num == 1 and send) then
+			NWB:print(msg, nil, nil, true);
+		elseif (NWB.db.global.chat0 and num == 0 and send) then
+			NWB:print(msg, nil, nil, true);
+		end
 	end
 	--Guild.
 	local loadWait = GetServerTime() - NWB.loadTime;
@@ -1080,18 +1097,20 @@ function NWB:doWarning(type, num, secondsLeft, layer)
 	if ((UnitInBattleground("player") or NWB:isInArena()) and NWB.db.global.middleHideBattlegrounds) then
 		return;
 	end
-	if (NWB.db.global.middle30 and num == 30 and send) then
-		NWB:middleScreenMsg("middle30", msg, nil, 5);
-	elseif (NWB.db.global.middle15 and num == 15 and send) then
-		NWB:middleScreenMsg("middle15", msg, nil, 5);
-	elseif (NWB.db.global.middle10 and num == 10 and send) then
-		NWB:middleScreenMsg("middle10", msg, nil, 5);
-	elseif (NWB.db.global.middle5 and num == 5 and send) then
-		NWB:middleScreenMsg("middle5", msg, nil, 5);
-	elseif (NWB.db.global.middle1 and num == 1 and send) then
-		NWB:middleScreenMsg("middle1", msg, nil, 5);
-	elseif (NWB.db.global.middle0 and num == 0 and send) then
-		NWB:middleScreenMsg("middle0", msg, nil, 5);
+	if (not NWB.db.global.middleOnlyInCity or NWB:isCapitalCityAction(type)) then
+		if (NWB.db.global.middle30 and num == 30 and send) then
+			NWB:middleScreenMsg("middle30", msg, nil, 5);
+		elseif (NWB.db.global.middle15 and num == 15 and send) then
+			NWB:middleScreenMsg("middle15", msg, nil, 5);
+		elseif (NWB.db.global.middle10 and num == 10 and send) then
+			NWB:middleScreenMsg("middle10", msg, nil, 5);
+		elseif (NWB.db.global.middle5 and num == 5 and send) then
+			NWB:middleScreenMsg("middle5", msg, nil, 5);
+		elseif (NWB.db.global.middle1 and num == 1 and send) then
+			NWB:middleScreenMsg("middle1", msg, nil, 5);
+		elseif (NWB.db.global.middle0 and num == 0 and send) then
+			NWB:middleScreenMsg("middle0", msg, nil, 5);
+		end
 	end
 end
 
@@ -1106,6 +1125,12 @@ function NWB:sendGuildMsg(msg, type, zoneName, prefix, minVersion)
 		if (NWB.isSOD and NWB.sodPhase == 3) then
 			return;
 		end
+	end
+	--Don't send buff dropped msgs to guild chat now the cooldown is changed to 1 minute, too spammy.
+	--The "buff will dorp in 14 seconds" pre-warning type msgs will still get sent, 1 msg is enough.
+	--This is also disabled in the actual sending of the guild commans func.
+	if (NWB.noGuildBuffDroppedMsgs and type == "guildBuffDropped") then
+		return;
 	end
 	if (not NWB.isClassic and type ~= "guildTerok10" and type ~= "guildWintergrasp10") then
 		return;
@@ -2039,7 +2064,7 @@ local buffTable = {
 		maxDuration = 7200,
 	},
 	["sparkOfInspiration"] = {
-		icon = "|TInterface\\Icons\\achievement_boss_mekgineer_thermaplugg-:12:12:0:0|t",
+		icon = "|T236424:12:12:0:0|t", --achievement_boss_mekgineer_thermaplugg- seemed bugged, id works though.
 		fullName = "Spark of Inspiration",
 		maxDuration = 7200,
 	},

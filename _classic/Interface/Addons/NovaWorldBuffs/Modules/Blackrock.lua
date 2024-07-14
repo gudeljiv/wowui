@@ -19,7 +19,8 @@ if (region == 1 and string.match(NWB.realm, "(AU)")) then
 elseif (region == 1) then
 	--US.
 	isUS = true;
-	calcStart = 1707264000; --Date and time (GMT):Wednesday, February 7, 2024 12:00:00 AM; --OCE and US different.
+	--calcStart = 1707264000; --Date and time (GMT):Wednesday, February 7, 2024 12:00:00 AM; --OCE and US different.
+	calcStart = 1707260400;
 elseif (region == 2) then
 	--Korea.
 	calcStart = 1707256800; --Date and time (GMT): Tuesday, February 6, 2024 10:00:00 PM --KR starts 1h before OCE/US.
@@ -150,7 +151,7 @@ function NWB:addBlackrockMinimapString(tooltip, noTopSeperator, noBottomSeperato
 	return true;
 end
 
-function NWB:checkBlackrockTimer()
+--[[function NWB:checkBlackrockTimer()
 	local _, _, _, realTimeLeft = getTimeLeft();
 	if (realTimeLeft <= 900 and realTimeLeft >= 899 and GetTime() - lastSendGuild > 900) then
 		lastSendGuild = GetTime();
@@ -187,7 +188,7 @@ function NWB:checkBlackrockTimer()
 			RaidNotice_AddMessage(RaidWarningFrame, NWB:stripColors(msg), colorTable, 5);
 		end
 	end
-end
+end]]
 
 local mapMarkerTypes;
 if (NWB.isSOD) then
@@ -363,7 +364,7 @@ function NWB:loadBlackrock()
 	createBlackrockMarkers();
 end
 
-local lastHonor, honorCount = 0, 0;
+local lastHonor, honorCount, killCount = 0, 0, 0;
 local function honorLooted(amount)
 	--if (not NWB.blackrockRunning) then
 	--	return;
@@ -375,12 +376,14 @@ local function honorLooted(amount)
 	--if (zone == 1427 or zone == 1428 or GetZoneText() == L["Blackrock Mountain"]) then
 		--local eruptionData = C_UnitAuras.GetPlayerAuraBySpellID(461197);
 		local hotBloodedData = C_UnitAuras.GetPlayerAuraBySpellID(461196);
-		if (hotBloodedData) then
-			if (GetTime() - lastHonor > 3600) then
+		if (hotBloodedData) then --Slightly less than an hour so no chance of overalap between events.
+			if (GetTime() - lastHonor > 3540) then
 				--If last honor was seen too long ago then reset to start, it's a new event.
 				honorCount = 0;
+				killCount = 0;
 			end
 			honorCount = honorCount + amount;
+			killCount = killCount + 1;
 			--C_Timer.After(0.1, function()
 			--	NWB:print("|cFFFFFFFF" .. L["Total honor this event"] .. ":|r " .. honorCount, nil, "[NWB]");
 			--end);
@@ -392,7 +395,8 @@ end
 
 function NWB:printBlackrockHonorCount()
 	if (NWB.db.global.printBlackrockHonor) then
-		NWB:print("|cFFFFFFFF" .. L["Total honor this event"] .. ":|r " .. honorCount, nil, "[NWB]");
+		--NWB:print("|cFFFFFFFF" .. L["Total honor this event"] .. ":|r " .. honorCount, nil, "[NWB]");
+		NWB:print("|cFFFFFFFF" .. L["Total honor this event"] .. ":|r " .. honorCount .. " |cFFFFFFFF(Kills:|r " .. killCount .. "|cFFFFFFFF)|r", nil, "[NWB]");
 	end
 end
 
