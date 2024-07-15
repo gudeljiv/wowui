@@ -213,3 +213,11 @@ local RTFH = function(xframe)
 	f:Hide()
 end
 xRTFH = RTFH
+
+
+local f = CreateFrame("FRAME")
+f:RegisterEvent("PLAYER_TARGET_CHANGED")
+f:SetScript("OnEvent", function(...)
+	xRTFH(1)
+	xRTFH(2)
+end)

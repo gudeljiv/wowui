@@ -66,6 +66,13 @@ local HandleUnit = function(unit)
 			end
 		end
 
+		-- ROGUE INTERRUPT
+		if xVermin.Class == 'ROGUE' then
+			if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
+				HandleRotationFrame(true)
+			end
+		end
+
 		-- SHAMAN INTERRUPT
 		if xVermin.Class == 'SHAMAN' then
 			if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
