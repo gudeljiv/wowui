@@ -2132,13 +2132,51 @@ data["DarkMoon Cards"] = {
 	},
 }
 
-data["Wild Offerings"] = {
-	name = AL["Wild Offerings"],
+data["SoD Currency"] = {
+	name = AL["Currency Rewards"],
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
+		{
+			name = AL["Tarnished Undermine Real Rewards"],
+			[NORMAL_DIFF] = {
+				{ 1, 226405 }, -- Damaged Undermine Supply Crate 5
+				{ 2, 227284 }, -- Band of the Beast 50
+				{ 3, 227279 }, -- Loop of the Magister 50
+				{ 4, 227280 }, -- Craft of the Shadows 50
+				{ 5, 227282 }, -- Ring of the Dreaded Mist 50
+				{ 6, 228432 }, -- Whistle of the Beast 50
+				{ 7, 228168 }, -- Goblin Gear Grinder 50
+				{ 8, 228169 }, -- The Attitude Adjustor 50
+				{ 9, 228170 }, -- Makeshift South Sea Oar 50
+				{ 10, 228185 }, -- Broken Bottle of Goblino Noir 50
+				{ 11, 228184 }, -- Goblin Clothesline 25
+				{ 13, 228186 }, -- Abandoned Wedding Band 25
+				{ 14, 228187 }, -- Stick of the South Sea 50
+				{ 15, 228189 }, -- Gift of Gob 25
+				{ 16, 228173 }, -- Libram of the Consecrated 15
+				{ 17, 228174 }, -- Libram of the Devoted 15
+				{ 18, 228175 }, -- Libram of Holy Alacrity 15
+				{ 19, 228176 }, -- Totem of Thunder 15
+				{ 20, 228177 }, -- Totem of Raging Fire 15
+				{ 21, 228178 }, -- Totem of Earthen Vitality 15
+				{ 22, 228179 }, -- Totem of the Plains 15
+				{ 23, 228180 }, -- Idol of the Swarm 15
+				{ 24, 228181 }, -- Idol of Exsanguination (Cat) 15
+				{ 25, 228182 }, -- Idol of Exsanguination (Bear) 15
+				{ 26, 228183 }, -- Idol of the Grove 15
+				{ 28, 228171 }, -- Kezan Cash Carrier 25
+				{ 30, "INV_Box_01", nil, AL["Continued -->"], nil },
+				{ 101, 228121 }, -- Pattern: Leather-Reinforced Runecloth Bag 50
+				{ 102, 13518 }, -- Recipe: Flask of Petrification 50
+				{ 103, 13519 }, -- Recipe: Flask of the Titans 50
+				{ 104, 13520 }, -- Recipe: Flask of Distilled Wisdom 50
+				{ 105, 13521 }, -- Recipe: Flask of Supreme Power 50
+				{ 106, 13522 }, -- Recipe: Flask of Chromatic Resistance 50
+			},
+		},
 		{
 			name = AL["Wild Offering Rewards"],
 			[NORMAL_DIFF] = {

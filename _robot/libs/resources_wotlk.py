@@ -180,9 +180,11 @@ data = {
             {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "1"},
             {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1"},
             {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
+            {"name": "blade flurry not active", "type": "GetSpellTexture", "id": 13877, "key": "f5"},
+            {"name": "blade flurry active", "type": "GetSpellTexture", "id": 57499, "key": "f5"},
         ],
         "secondary": [
-            {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
+            # {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
         ],
     },
     "paladin": {

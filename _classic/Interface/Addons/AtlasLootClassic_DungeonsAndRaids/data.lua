@@ -2916,13 +2916,15 @@ data["BlackrockDepths"] = {
 				{ 3,  18043 }, -- Coal Miner Boots
 				{ 4,  22275 }, -- Firemoss Boots
 				{ 5,  18044 }, -- Hurley's Tankard
-				{ 7, "INV_Box_01", nil, AL["Lokhtos Darkbargainer"], nil },
-				{ 8, 18592 }, -- Plans: Sulfuron Hammer
-				{ 16, "INV_Box_01", nil, AL["Ribbly Screwspigot"], nil },
-				{ 17, 11612 }, -- Plans: Dark Iron Plate
-				{ 18, 2662 }, -- Ribbly's Quiver
-				{ 19, 2663 }, -- Ribbly's Bandolier
-				{ 20, 11742 }, -- Wayfarer's Knapsack
+				{ 7, "INV_Box_01", nil, AL["Ribbly Screwspigot"], nil },
+				{ 8, 11612 }, -- Plans: Dark Iron Plate
+				{ 9, 2662 }, -- Ribbly's Quiver
+				{ 10, 2663 }, -- Ribbly's Bandolier
+				{ 11, 11742 }, -- Wayfarer's Knapsack
+				{ 13, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 14, 227901 }, -- Plans: Tempered Dark Iron Plate
+				{ 16, "INV_Box_01", nil, AL["Lokhtos Darkbargainer"], nil },
+				{ 17, 18592 }, -- Plans: Sulfuron Hammer
 				{ 22, "INV_Box_01", nil, AL["Plugger Spazzring"], nil },
 				{ 23, 12793 }, -- Mixologist's Tunic
 				{ 24, 12791 }, -- Barman Shanker
@@ -8674,93 +8676,71 @@ data["WorldBosses2"] = {
 	},
 }
 data["DemonFallCanyon"] = {
-	MapID = 15540,
-	InstanceID = 15475,
+	MapID = 15475,
+	InstanceID = 15540,
 	ContentType = DUNGEON_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = {60, 60, 60},
 	items = {
-			{ -- DemonFallCanyon
-			name = AL["Unsorted New Loot"],
-			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
-				{ 3, 228090}, -- Cenarion Ritual Dagger
-				{ 4, 228185}, -- Broken Bottle of Goblino Noir
-				{ 5, 228077}, -- Dreambough
-				{ 6, 227935}, -- Hammer of the Fallen Thane
-				{ 7, 228168}, -- Goblin Gear Grinder
-				{ 8, 228169}, -- The Attitude Adjustor
-				{ 9, 228026}, -- Blade of Blackwood
-				{ 10, 228094}, -- Dreadlord's Blade
-				{ 11, 228106}, -- Shield of Life and Death
-				{ 12, 228108}, -- Shadow of Gorehowl
-				{ 13, 227857}, -- Desecration
-				{ 14, 228086}, -- Repurposed Shredderblade
-				{ 15, 228187}, -- Stick of the Souths Sea
-				{ 16, 228079}, -- Cloak of Leaves
-				{ 17, 228112}, -- Nightmare Gown
-				{ 18, 228104}, -- Robes of Elune
-				{ 19, 228074}, -- Hands of Temptation
-				{ 20, 228184}, -- Goblin Clothesline
-				{ 21, 228091}, -- Thorned Boots
-				{ 22, 228111}, -- Mask of the Godslayer
-				{ 23, 228092}, -- Druidic Mantle
-				{ 24, 228101}, -- Hide of the Behemoth
-				{ 25, 228109}, -- Legguards of Sacrifice
-				{ 26, 228088}, -- Shredder Operator's Dogtags
-				{ 27, 227936}, -- Diplomat Ring
-				{ 28, 227983}, -- Dark Iron Seal
-				{ 30, "INV_Box_01", nil, AL["Continued -->"], nil },
-				{ 101, 228076}, -- Burning Ring of Fire
-				{ 102, 228080}, -- Resin Loop
-				{ 103, 228085}, -- Phaseshifted Legion Band
-				{ 104, 228087}, -- Supercharged Silver Moebius
-				{ 105, 228186}, -- Abandoned Wedding Band
-				{ 106, 227925}, -- Beacon of Hydraxis
-				{ 107, 228078}, -- Accursed Chalice
-				{ 108, 228081}, -- Germinating Poisonseed
-				{ 109, 228083}, -- Gloaming Treeheart
-				{ 110, 228084}, -- Miniaturized Fire Extinguisher
-				{ 111, 228089}, -- Woodcarved Moonstalker
-				{ 112, 228093}, -- Dark Heart of Darkness
-				{ 113, 228113}, -- Cold Embrace
-				{ 114, 228170}, -- Makeshift South Sea Oar
-			},
-		},
-		{ -- DemonFallCanyon
+		{ -- DFCGrimroot
 			name = AL["Grimroot"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228080}, -- Resin Loop
+				{ 2, 228081}, -- Germinating Poisonseed
+				{ 3, 228079}, -- Cloak of Leaves
+				{ 4, 228082}, -- Warsong Axe
+				{ 5, 228083}, -- Gloaming Treeheart
 			},
 		},
-		{ -- DemonFallCanyon
+		{ -- DFCDiathorus
 			name = AL["Diathorus The Seeker"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228106}, -- Shield of Life and Death
+				{ 2, 228107}, -- Fallen Huntress' Longbow
+				{ 3, 228094}, -- Dreadlord's Blade
+				{ 4, 228104}, -- Robes of Elune
+				{ 5, 228103}, -- Nathrezim's Greaves
 			},
 		},
-		{ -- DemonFallCanyon
+		{ -- DFCDestructor
 			name = AL["Destructor's Wraith"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228074}, -- Hands of Temptation
+				{ 2, 228075}, -- Spear of Destiny
+				{ 3, 228077}, -- Dreambough
+				{ 4, 228078}, -- Accursed Chalice
+				{ 5, 228076}, -- Burning Ring of Fire
 			},
 		},
-		{ -- DemonFallCanyon
+		{ -- DFCZilbagob
 			name = AL["Zilbagob"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228086}, -- Repurposed Shredderblade
+				{ 2, 228088}, -- Shredder Operator's Dogtags
+				{ 3, 228087}, -- Supercharged Silver Moebius
+				{ 4, 228084}, -- Miniaturized Fire Extinguisher
+				{ 5, 228085}, -- Phaseshifted Legion Band
 			},
 		},
-		{ -- DemonFallCanyon
+		{ -- DFCPyranis
 			name = AL["Pyranis"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228091}, -- Thorned Boots
+				{ 2, 228093}, -- Dark Heart of Darkness
+				{ 3, 228090}, -- Cenarion Ritual Dagger
+				{ 4, 228092}, -- Druidic Mantle
+				{ 5, 228089}, -- Woodcarved Moonstalker
 			},
 		},
-		{ -- DemonFallCanyon
+		{ -- DFCHellscream
 			name = AL["Hellscream's Phantom"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Dungeon Name and drops unconfirmed"], nil },
+				{ 1, 228112}, -- Nightmare Gown
+				{ 2, 228113}, -- Cold Embrace
+				{ 3, 228111}, -- Mask of the Godslayer
+				{ 4, 228109}, -- Legguards of Sacrifice
+				{ 5, 228108}, -- Shadow of Gorehowl
+				{ 7, 228410}, -- Dreadblade of the Destructor
 			},
 		},
 	},

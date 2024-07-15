@@ -3,9 +3,9 @@ ReforgeLiteDB = {
 	["windowHeight"] = 564,
 	["updateTooltip"] = true,
 	["windowY"] = 1215.968139648438,
-	["windowX"] = 1029.206420898438,
 	["reforgeCheat"] = 3.991333246231079,
-	["openOnReforge"] = true,
+	["windowX"] = 1029.206420898438,
+	["methodWindowY"] = 945.0794677734375,
 	["profiles"] = {
 		["Handrmandr - Golemagg"] = {
 			["caps"] = {
@@ -872,6 +872,10 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
+			["buffs"] = {
+			},
+			["itemsLocked"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -881,10 +885,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["itemsLocked"] = {
-			},
-			["buffs"] = {
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -1503,6 +1503,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1512,8 +1514,6 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1593,7 +1593,7 @@ ReforgeLiteDB = {
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["classProfiles"] = {
 		["DEATHKNIGHT"] = {

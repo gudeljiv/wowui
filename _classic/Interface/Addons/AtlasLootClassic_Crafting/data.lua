@@ -59,7 +59,6 @@ data["Alchemy"] = {
 				{ 10, 448085 }, --Flask of Restless Dreams
 				{ 11, 446226 }, --Flask of Everlasting Nightmares
 				{ 12, 446851 }, --Flask of Nightmarish Mojo
-				{ 16, "INV_Box_01", nil, AL["Phase 4"], nil },
 			},
 		},
 		{
@@ -239,14 +238,13 @@ data["Blacksmithing"] = {
 			{ 4, 461739 }, -- Warcrest of the Great Chief
 			{ 5, 461735 }, -- Invincible Mail
 			{ 6, 461671 }, -- Stronger-hold Gauntlets
-			--{ 7,  }, -- Argent Elite Shoulders
+			{ 7, 461667 }, -- Tempered Dark Iron Plate 227871
+			--{ 7, }, -- Argent Elite Shoulders
 			--{ 8,  }, -- Shimmering Dawnbringer Shoulders
 			--{ 9,  }, -- Radiant Gloves of the Dawn
 			--{ 10,  }, -- Radiant Girdle of the Dawn
 			--{ 11,  }, -- Dense Timbermaw Boots
 			--{ 12,  }, -- Dense Timbermaw Belt
-			{ 14, "INV_Box_01", nil, AL["Fire Resist"], nil },
-			{ 15, 461667 }, -- Tempered Dark Iron Plate 227871
 			--{ 16, }, -- Tempered Dark Iron Leggings 227836
 			--{ 17, }, -- Tempered Dark Iron Boots
 			--{ 18, }, -- Tempered Dark Iron Gauntlets
@@ -254,28 +252,24 @@ data["Blacksmithing"] = {
 			--{ 20, }, -- Molten Chain Girdle 227827
 			--{ 21, }, -- Tempered Dark Iron Helm 227824
 			--{ 22, }, -- Tempered Dark Iron Bracers 227820
-			{ 24, "INV_Box_01", nil, AL["Weapons"], nil },
-			{ 25, 461716 }, -- Deadly Heartseeker
-			{ 26, 461733 }, -- Finely-Enchanted Battlehammer
-			{ 27, 461718 }, -- Tranquility
-			{ 28, 461712 }, -- Refined Hammer of the Titans
-			{ 29, 461714 }, -- Desecration
-			{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
-			{ 101, 461730 }, -- Hardened Frostguard
-			{ 102, 461743 }, -- Sageblade of the Archmagus
-			{ 103, 461675 }, -- Refined Arcanite Reaper
-			{ 104, 460460 }, -- Sulfuron Hammer
-			{ 105, 461647 }, -- Skyrider's Masterwork Stormhammer
-			{ 106, 461669 }, -- Refined Arcanite Champion 
+			{ 16, "INV_Box_01", nil, AL["Weapons"], nil },
+			{ 17, 461716 }, -- Deadly Heartseeker
+			{ 18, 461733 }, -- Finely-Enchanted Battlehammer
+			{ 19, 461718 }, -- Tranquility
+			{ 20, 461712 }, -- Refined Hammer of the Titans
+			{ 21, 461714 }, -- Desecration
+			{ 22, 461730 }, -- Hardened Frostguard
+			{ 23, 461743 }, -- Sageblade of the Archmagus
+			{ 24, 461675 }, -- Refined Arcanite Reaper
+			{ 25, 460460 }, -- Sulfuron Hammer
+			{ 26, 461647 }, -- Skyrider's Masterwork Stormhammer
+			{ 27, 461669 }, -- Refined Arcanite Champion 
 			--{ 107, }, --Hammer of the Wild Gods 227858
 			--{ 108, }, -- Ebon Fist 227842
 			--{ 109, }, -- Implacable Blackguard 227840
 			--{ 110, }, -- Tempered Black Amnesty 227832
 			--{ 111, }, -- Dark Iron Flame Reaver 227826
 			--{ 112, }, -- Molten Dark Iron Destroyer 227825
-			{ 113, "INV_Box_01", nil, AL["Please Note: Some crafts"], nil },
-			{ 114, "INV_Box_01", nil, AL["are not yet in game."], nil },
-			{ 115, "INV_Box_01", nil, AL["This section is incomplete"], nil },
 			}
 		},
 			{
@@ -1145,18 +1139,15 @@ data["Tailoring"] = {
 			{ 2, 461747 }, -- Incandescent Mooncloth Vest
 			{ 3, 461708 }, -- Incandescent Mooncloth Robe
 			--{ 4, 461708 }, -- Incandescent Mooncloth Boots
-			{ 5, 461750 }, -- Incandescent Mooncloth Circlet
-			{ 6, 461752 }, -- Incandescent Mooncloth Leggings
-			{ 7, 462282 }, -- Embroidered Belt of the Archmage
+			{ 4, 461750 }, -- Incandescent Mooncloth Circlet
+			{ 5, 461752 }, -- Incandescent Mooncloth Leggings
+			{ 6, 462282 }, -- Embroidered Belt of the Archmage
 			--{ 8, }, -- Fine Flarecore Leggings
 			--{ 9, }, -- Fine Flarecore Robe
 			--{ 10, }, -- Fine Flarecore Mantle
 			--{ 11, }, -- Fine Flarecore Gloves
 			--{ 12, }, -- Argent Elite Boots
 			--{ 13, }, -- Rugged Mantle of the Timbermaw
-			{ 16, "INV_Box_01", nil, AL["Please Note: Some crafts"], nil },
-			{ 17, "INV_Box_01", nil, AL["are not yet in game."], nil },
-			{ 18, "INV_Box_01", nil, AL["This section is incomplete"], nil },
 			}
 		},
 		{
@@ -1501,10 +1492,10 @@ data["Leatherworking"] = {
 			{ 12, 461754 }, -- Girdle of Arcane Insight
 			{ 13, 461706 }, -- Swift Flight Vambraces
 			--{ 14, }, -- Knowledge of the Timbermaw
-			{ 15, 461657 }, -- Hardened Black Dragonscale Leggings
-			{ 17, 461690 }, -- Mastercrafted Shifting Cloak
-			{ 18, 461722 }, -- Devilcore Gauntlets
-			{ 19, 461724 }, -- Devilcore Leggings
+			{ 14, 461657 }, -- Hardened Black Dragonscale Leggings
+			{ 16, 461690 }, -- Mastercrafted Shifting Cloak
+			{ 17, 461722 }, -- Devilcore Gauntlets
+			{ 18, 461724 }, -- Devilcore Leggings
 			--{ 20, }, -- Shining Chromatic Gauntlets
 			--{ 21, }, -- Glowing Mantle of the Dawn
 			--{ 22, }, -- Fine Dawn Treaders
@@ -1512,16 +1503,12 @@ data["Leatherworking"] = {
 			--{ 24, }, -- Ferocity of the Timbermaw
 			--{ 25, }, -- Dire Warbear Woolies
 			--{ 26, }, -- Dire Warbear Harness
-			{ 27, "INV_Box_01", nil, AL["Please Note: Some crafts"], nil },
-			{ 28, "INV_Box_01", nil, AL["are not yet in game."], nil },
-			{ 29, "INV_Box_01", nil, AL["This section is incomplete"], nil },
-			{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
-			{ 101, "INV_Box_01", nil, AL["Fire Resist"], nil },
-			{ 102, 461663 }, -- Masterwork Volcanic Shoulders
-			{ 103, 461665 }, -- Masterwork Volcanic Leggings
-			{ 104, 461661 }, -- Masterwork Volcanic Breastplate
-			{ 105, 461659 }, -- Hardened Black Dragonscale Shoulders
-			{ 106, 461655 }, -- Hardened Black Dragonscale Breastplate
+			{ 20, "INV_Box_01", nil, AL["Fire Resist"], nil },
+			{ 21, 461663 }, -- Masterwork Volcanic Shoulders
+			{ 22, 461665 }, -- Masterwork Volcanic Leggings
+			{ 23, 461661 }, -- Masterwork Volcanic Breastplate
+			{ 24, 461659 }, -- Hardened Black Dragonscale Shoulders
+			{ 25, 461655 }, -- Hardened Black Dragonscale Breastplate
 			--{ 107, }, -- Thick Corehound Belt
 			--{ 108, }, -- Hardened Black Dragonscale Boots
 			--{ 109, }, -- Lavawalker Belt

@@ -1145,3 +1145,5 @@ data["SoD Level 50"] = {
 		PVP_RANKS,
 	},
 }
+
+

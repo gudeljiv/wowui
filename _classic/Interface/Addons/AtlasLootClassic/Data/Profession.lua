@@ -1488,6 +1488,7 @@ PROFESSION_DATA.CLASSIC = {
 	[461752] = {227864,8,290,305,335,{14048,14342,14341},{6,4,1}}, -- Incandescent Mooncloth Leggings
 	[462282] = {228476,8,300,315,345,{14048,9210,14342,7080,7078,14344,14341},{16,10,10,12,12,6,6}}, -- Embroidered Belt of the Archmage
 	[461657] = {227852,3,300,320,340,{8170,15416,12810,15407,14341},{40,60,4,1,2}}, -- Hardened Black Dragonscale Leggings
+	[461727] = {227844,8,300,315,345,{14046,15407},{1,1}}, -- Leather-Reinforced Runecloth Bag
 }
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
     PROFESSION_DATA.BCC = {

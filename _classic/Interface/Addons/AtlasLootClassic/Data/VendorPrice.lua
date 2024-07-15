@@ -16,6 +16,57 @@ local PRICE_INFO_LIST = {
 	["silverblood"] 	= { itemID = 213169 }, -- Silver Blood Coin
 	["goldblood"] 	= { itemID = 213170 }, -- Gold Blood Coin
 	["emeraldchip"] 	= { itemID = 219927 }, -- Emerald Chip
+	["argent1"] 	= { itemID = 12843 }, -- Corruptor's Scourgestone
+	["argent2"] 	= { itemID = 12753 }, -- Skin of Shadow
+	["argent3"] 	= { itemID = 19059 }, -- Argent Shoulders
+	["argent4"] 	= { itemID = 19058 }, -- Golden Mantle of the Dawn
+	["argent5"] 	= { itemID = 19057 }, -- Gloves of the Dawn
+	["argent6"] 	= { itemID = 19056 }, -- Argent Boots
+	["argent7"] 	= { itemID = 19052 }, -- Dawn Treaders
+	["argent8"] 	= { itemID = 19051 }, -- Girdle of the Dawn
+	["argent9"] 	= { itemID = 12735 }, -- Frayed Abomination Stitching
+	["argent10"] 	= { itemID = 12625 }, -- Dawnbringer Shoulders
+	["tmb1"] 	= { itemID = 21383 }, -- Winnterfall Spirit Beads
+	["curedruggedhide"] 	= { itemID = 15407 }, -- Cured Rugged Hide
+	["mooncloth"] 	= { itemID = 14342 }, -- Mooncloth
+	["arcanitebar"] 	= { itemID = 12360 }, -- Arcanite Bar
+	["tmb2"] 	= { itemID = 19050 }, -- Mantle of the Timbermaw
+	["tmb3"] 	= { itemID = 19049 }, -- Timbermaw Brawlers
+	["tmb4"] 	= { itemID = 19048 }, -- Heavy Timbermaw Boots
+	["tmb5"] 	= { itemID = 19043 }, -- Heavy Timbermaw Belt
+	["tmb6"] 	= { itemID = 19044 }, -- Might of the timbermaw
+	["tmb7"] 	= { itemID = 19047 }, -- Wisdom of the Timbermaw
+	["tmb8"] 	= { itemID = 15065 }, -- Warbear Woolies
+	["tmb9"] 	= { itemID = 15064 }, -- Warbear Harness
+	["tmb10"] 	= { itemID = 15802 }, -- Mooncloth Boots
+	["firelandsember"] 	= { itemID = 227801 }, -- Firelands Ember
+	["fierycore"] 	= { itemID = 17010 }, -- Fiery Core
+	["lavacore"] 	= { itemID = 17011 }, -- Lava Core
+	["tb1"] 	= { itemID = 19170 }, -- Ebon Hand
+	["tb2"] 	= { itemID = 19168 }, -- Blackguard
+	["tb3"] 	= { itemID = 19169 }, -- Nightfall
+	["tb4"] 	= { itemID = 20039 }, -- Dark Iron Boots
+	["tb5"] 	= { itemID = 19165 }, -- Flarecore Leggings
+	["tb6"] 	= { itemID = 19162 }, -- Corehound Belt
+	["tb7"] 	= { itemID = 16988 }, -- Fiery Chain Shoulders
+	["tb8"] 	= { itemID = 19157 }, -- Chromatic Gauntlets
+	["tb9"] 	= { itemID = 19164 }, -- Dark Iron Gauntlets
+	["tb10"] 	= { itemID = 17013 }, -- Dark Iron Leggings
+	["tb11"] 	= { itemID = 19166 }, -- Black Amnesty
+	["tb12"] 	= { itemID = 19167 }, -- Blackfury
+	["tb13"] 	= { itemID = 16980 }, -- Flarecore Mantle
+	["tb14"] 	= { itemID = 19156 }, -- Flarecore Robe
+	["tb15"] 	= { itemID = 19149 }, -- Lava Belt
+	["tb16"] 	= { itemID = 16989 }, -- Fiery Chain Girdle
+	["tb17"] 	= { itemID = 16984 }, -- Black Dragonscale Boots
+	["tb18"] 	= { itemID = 19148 }, -- Dark Iron Helm
+	["tb19"] 	= { itemID = 17015 }, -- Dark Iron Reaver
+	["tb20"] 	= { itemID = 17016 }, -- Dark Iron Destroyer
+	["tb21"] 	= { itemID = 16979 }, -- Flarecore Gloves
+	["tb22"] 	= { itemID = 16983 }, -- Molten helm
+	["tb23"] 	= { itemID = 16982 }, -- Corehound Boots
+	["tb24"] 	= { itemID = 17014 }, -- Dark Iron Bracers
+	
 	-- others
 	["money"] 			= { func = GetCoinTextureString },
 
@@ -156,6 +207,54 @@ VENDOR_PRICES_RAW.CLASSIC = {
 	 [221443] = "emeraldchip:75",
 	 [220649] = "emeraldchip:50",
 	 [221439] = "emeraldchip:50",
+	 --Argent Dawn Rep
+	 [227888] = "argent3:1:argent2:3:argent1:4",
+	 [227818] = "argent4:1:argent2:3:argent1:4",
+	 [227817] = "argent5:1:argent9:2:argent1:3",
+	 [227816] = "argent6:1:argent2:2:argent1:3",
+	 [227815] = "argent7:1:argent2:2:argent1:3",
+	 [227814] = "argent8:1:argent9:2:argent1:2",
+	 [227879] = "argent8:1:argent2:3:argent1:4",
+	 [227859] = "argent10:1:argent9:3:argent1:4",
+	 --Timbermaw Hold Rep
+	 [227808] = "tmb2:1:mooncloth:1:tmb1:25",
+	 [227809] = "tmb3:1:curedruggedhide:1:tmb1:20",
+	 [227810] = "tmb4:1:arcanitebar:1:tmb1:25",
+	 [227807] = "tmb5:1:arcanitebar:1:tmb1:20",
+	 [227805] = "tmb6:1:curedruggedhide:1:tmb1:20",
+	 [228190] = "tmb7:1:mooncloth:1:tmb1:20",
+	 [227804] = "tmb8:1:curedruggedhide:2:tmb1:30",
+	 [227803] = "tmb9:1:curedruggedhide:2:tmb1:30",
+	 [227862] = "tmb10:1:mooncloth:1:tmb1:25",
+	 --Thorium Brotherhood Rep
+	 [227842] = "tb1:1:firelandsember:25:fierycore:2",
+	 [227840] = "tb2:1:firelandsember:25:lavacore:2",
+	 [228924] = "tb4:1:firelandsember:15:fierycore:2",
+	 [228925] = "tb4:1:firelandsember:15:fierycore:2",
+	 [228926] = "tb4:1:firelandsember:15:fierycore:2",
+	 [228927] = "tb4:1:firelandsember:15:fierycore:2",
+	 [228928] = "tb4:1:firelandsember:15:fierycore:2",
+	 [228929] = "tb4:1:firelandsember:15:fierycore:2",
+	 [227839] = "tb5:1:firelandsember:15:fierycore:1",
+	 [227837] = "tb6:1:firelandsember:15:fierycore:1",
+	 [227834] = "tb7:1:firelandsember:15:fierycore:1",
+	 [227838] = "tb8:1:firelandsember:15:fierycore:1",
+	 [227835] = "tb9:1:firelandsember:15:fierycore:1",
+	 [227836] = "tb10:1:firelandsember:15:fierycore:1",
+	 [227832] = "tb11:1:firelandsember:25:fierycore:2",
+	 [227833] = "tb12:1:firelandsember:25:lavacore:2",
+	 [227830] = "tb13:1:firelandsember:15:fierycore:1",
+	 [227831] = "tb14:1:firelandsember:20:lavacore:1",
+	 [227828] = "tb15:1:firelandsember:15:lavacore:1",
+	 [227827] = "tb16:1:firelandsember:15:fierycore:1",
+	 [227829] = "tb17:1:firelandsember:15:lavacore:1",
+	 [227824] = "tb18:1:firelandsember:15:lavacore:1",
+	 [227826] = "tb19:1:firelandsember:25:fierycore:2",
+	 [227825] = "tb20:1:firelandsember:25:fierycore:2",
+	 [227823] = "tb21:1:firelandsember:15:fierycore:1",
+	 [227821] = "tb22:1:firelandsember:15:lavacore:1",
+	 [227822] = "tb23:1:firelandsember:15:lavacore:1",
+	 [227820] = "tb24:1:firelandsember:10:fierycore:1",
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

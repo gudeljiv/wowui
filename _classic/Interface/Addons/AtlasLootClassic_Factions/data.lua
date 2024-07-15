@@ -89,18 +89,20 @@ data["ArgentDawn"] = {
 				{ 5,  19217 }, -- Pattern: Argent Shoulders
 				{ 6,  19329 }, -- Pattern: Golden Mantle of the Dawn
 				{ 7,  19205 }, -- Plans: Gloves of the Dawn
-				{ 8,  19447 }, -- Formula: Enchant Bracer - Healing
-				{ 10,  18171 }, -- Arcane Mantle of the Dawn
-				{ 11,  18169 }, -- Flame Mantle of the Dawn
-				{ 12,  18170 }, -- Frost Mantle of the Dawn
-				{ 13,  18172 }, -- Nature Mantle of the Dawn
-				{ 14, 18173 }, -- Shadow Mantle of the Dawn
+				{ 8, 12698 }, -- Plans: Dawnbringer Shoulders
+				{ 9,  19447 }, -- Formula: Enchant Bracer - Healing
+				{ 11,  18171 }, -- Arcane Mantle of the Dawn
+				{ 12,  18169 }, -- Flame Mantle of the Dawn
+				{ 13,  18170 }, -- Frost Mantle of the Dawn
+				{ 14,  18172 }, -- Nature Mantle of the Dawn
+				{ 15, 18173 }, -- Shadow Mantle of the Dawn
 				{ 16,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_EPIC, 45), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_EPIC, 45) }, -- Insignia of the Dawn / Crusade
 				{ 17,  22523, 22524, [ATLASLOOT_IT_AMOUNT1] = format(AD_INSIGNIA_FORMAT_BLUE, 7), [ATLASLOOT_IT_AMOUNT2] = format(AD_INSIGNIA_FORMAT_BLUE, 7) }, -- Insignia of the Dawn / Crusade
 				{ 19, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
 				{ 20, 227888 }, -- Argent Elite Shoulders
 				{ 21, 227818 }, -- Glowing Mantle of the Dawn
 				{ 22, 227817 }, -- Radiant Gloves of the Dawn
+				{ 23, 227859 }, -- Shimmering Dawnbringer Shoulders
 			},
 		},
 		{ -- Honored
@@ -185,6 +187,7 @@ data["Timbermaw"] = {
 				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
 				{ 17,  227804 }, -- Dire Warbear Woolies
 				{ 18,  227803 }, -- Dire Warbear Harness
+				{ 20,  227862 }, -- Incandescent Mooncloth Boots
 			},
 		},
 	},
@@ -206,7 +209,7 @@ data["ThoriumBrotherhood"] = {
 				{ 16, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
 				{ 17, 227842 }, -- Ebon Fist
 				{ 18, 227840 }, -- Implacable Blackguard
-				{ 19, 227843 }, -- Reaving Nightfall
+				--{ 19, 227843 }, -- Reaving Nightfall (removed?)
 				{ 20, 228929 }, -- Tempered Dark Iron Boots
 				{ 21, 228924 }, -- Tempered Dark Iron Boots
 				{ 22, 228927 }, -- Tempered Dark Iron Boots
