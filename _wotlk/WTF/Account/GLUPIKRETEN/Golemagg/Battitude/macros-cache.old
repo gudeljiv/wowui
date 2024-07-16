@@ -1,13 +1,13 @@
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [stealth] Ambush; Sinister Strike
-/use 13
-/use 14
-END
 VER 3 0000000001000004 "poison" "134400"
 #showtooltip
 /use [nomod] Instant Poison; [mod:shift] Crippling Poison; [mod:ctrl] Mind-Numbing Poison; [mod:alt] Wound Poison
 /use [btn: 1] 16; [btn:2] 17
 /click StaticPopup1Button1
+END
+VER 3 0000000001000003 "ss" "134400"
+#showtooltip
+/startattack
+/cast [stealth] Ambush; Sinister Strike
+/use 13
+/use 14
 END
