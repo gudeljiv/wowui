@@ -3,12 +3,12 @@ data = dict()
 data = {
     "colors": {
         "shaman": {"#0092f1", "#4090ea", "#3d7aff"},
-        "warrior": {"#dfb990"},
-        "druid": {"#ff9f13"},
-        "death knight": {"#dd365a"},
-        "hunter": {"#c8e795"},
-        "rogue": {"#ffff8b"},
-        "paladin": {"#ffacd4"},
+        "warrior": {"#dfb990", "#e7c49b"},
+        "druid": {"#ff9f13", "#ffa91e"},
+        "death knight": {"#dd365a", "#e44266"},
+        "hunter": {"#c8e795", "#d0f1a0"},
+        "rogue": {"#ffff8b", "#ffff96"},
+        "paladin": {"#ffacd4", "#ffb6dc"},
         "warlock": {"#a8a6fd"},
         "priest": {"#ffffff"},
     },

@@ -864,9 +864,9 @@ CB_PlayedTime = {
 ["total"] = 17358,
 },
 ["Dopeclaw-LoneWolf"] = {
-["total"] = 199404,
-["timeAtThisLevel"] = 2946,
-["timeStamp"] = 2826649.858,
+["total"] = 199422,
+["timeAtThisLevel"] = 2964,
+["timeStamp"] = 1293606.73,
 },
 ["Testxv-"] = {
 ["total"] = 530,
@@ -979,9 +979,9 @@ CB_PlayedTime = {
 ["total"] = 3924,
 },
 ["Dopestab-LoneWolf"] = {
-["total"] = 234128,
-["timeAtThisLevel"] = 6184,
-["timeStamp"] = 1198697.874,
+["total"] = 234377,
+["timeAtThisLevel"] = 6433,
+["timeStamp"] = 1293481.202,
 },
 ["Battlearm-Gehennas"] = {
 ["total"] = 305,
@@ -1030,9 +1030,9 @@ CB_PlayedTime = {
 ["total"] = 79871,
 },
 ["Jutarnjedrvo-LoneWolf"] = {
-["total"] = 277108,
-["timeStamp"] = 2826513.338,
-["timeAtThisLevel"] = 29450,
+["total"] = 277175,
+["timeStamp"] = 1293514.669,
+["timeAtThisLevel"] = 29517,
 },
 ["Dopebolt-LoneWolf"] = {
 ["total"] = 1204,

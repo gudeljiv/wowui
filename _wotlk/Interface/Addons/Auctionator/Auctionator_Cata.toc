@@ -1,6 +1,6 @@
 ## Interface: 40400
 ## Title: Auctionator
-## Version: 10.2.51
+## Version: 10.2.53
 ## Author: Borjamacare, plusmouse
 ## X-Website: https://www.curseforge.com/wow/addons/auctionator
 ## X-Category: Auction/Economy
@@ -11,7 +11,6 @@
 ## SavedVariables: AUCTIONATOR_CONFIG, AUCTIONATOR_SAVEDVARS, AUCTIONATOR_SHOPPING_LISTS, AUCTIONATOR_PRICE_DATABASE, AUCTIONATOR_POSTING_HISTORY, AUCTIONATOR_VENDOR_PRICE_CACHE, AUCTIONATOR_RECENT_SEARCHES, AUCTIONATOR_SELLING_GROUPS
 ## SavedVariablesPerCharacter: AUCTIONATOR_CHARACTER_CONFIG
 ## IconTexture: Interface\AddOns\Auctionator\Images\Logo
-
 
 Patches\TaintLess.xml
 Libs\Manifest.xml

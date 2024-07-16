@@ -8,7 +8,7 @@ ReforgeLiteDB = {
 		0, -- [2]
 		0, -- [3]
 	},
-	["reforgeCheat"] = 3.991333246231079,
+	["windowX"] = 1029.206420898438,
 	["inactiveWindowTitle"] = {
 		0.5, -- [1]
 		0.5, -- [2]
@@ -784,6 +784,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -793,8 +795,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1583,10 +1583,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1597,11 +1593,15 @@ ReforgeLiteDB = {
 				0, -- [7]
 				120, -- [8]
 			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
+			},
 		},
 	},
 	["windowWidth"] = 800,
 	["itemSize"] = 24,
-	["methodWindowY"] = 945.0794677734375,
+	["openOnReforge"] = true,
 	["methodWindowX"] = 1069.047729492188,
 	["classProfiles"] = {
 		["DEATHKNIGHT"] = {
@@ -1631,6 +1631,6 @@ ReforgeLiteDB = {
 	},
 	["customPresets"] = {
 	},
-	["openOnReforge"] = true,
-	["windowX"] = 1029.206420898438,
+	["methodWindowY"] = 945.0794677734375,
+	["reforgeCheat"] = 3.991333246231079,
 }

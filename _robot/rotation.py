@@ -285,6 +285,8 @@ def main_rotation(main_skill, main_abilities):
                     if dprint:
                         print_debug(ability, score)
                     press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
+                    if ability["pause"]:
+                        time.sleep(ability["pause"])
             except Exception as e:
                 print("score, diff not found for main ability", ability["name"], dt.now().strftime("%H:%M:%S"))
                 print(e)

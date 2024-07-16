@@ -484,7 +484,7 @@ nil,
 ["CDTimersOnButtons"] = true,
 ["LastTotems"] = {
 10478,
-5730,
+10427,
 10462,
 10600,
 },

@@ -1,7 +1,6 @@
 # Auctionator
 
-## [10.2.51](https://github.com/Auctionator/Auctionator/tree/10.2.51) (2024-07-13)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.50...10.2.51) 
+## [10.2.53](https://github.com/Auctionator/Auctionator/tree/10.2.53) (2024-07-15)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.52...10.2.53) 
 
-- Vanilla: Fix full scans breaking  
-- Add missing C\_Item namespace to some GetItemInfo* calls  
+- Classic: Full Scan: Add fallback for when Blizzard item data missing  

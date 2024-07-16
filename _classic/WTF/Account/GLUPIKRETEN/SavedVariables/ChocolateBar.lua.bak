@@ -932,9 +932,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 2827321.743,
 },
 ["Jutarnjedrvo-LoneWolf"] = {
-["total"] = 277108,
-["timeAtThisLevel"] = 29450,
-["timeStamp"] = 2826513.338,
+["total"] = 277175,
+["timeAtThisLevel"] = 29517,
+["timeStamp"] = 1293514.669,
 },
 ["Tudum-Ashbringer"] = {
 ["total"] = 6477,
@@ -979,9 +979,9 @@ CB_PlayedTime = {
 ["total"] = 356150,
 },
 ["Dopestab-LoneWolf"] = {
-["total"] = 234087,
-["timeStamp"] = 2826703.413,
-["timeAtThisLevel"] = 6143,
+["total"] = 234377,
+["timeStamp"] = 1293481.202,
+["timeAtThisLevel"] = 6433,
 },
 ["Paydo-"] = {
 ["total"] = 18945,
