@@ -1525,9 +1525,9 @@ _detalhes_database = {
 											["The Prophet Tharon'ja"] = 17060,
 										},
 										["n_total"] = 5912,
-										["a_amt"] = 0,
+										["g_dmg"] = 2453,
 										["n_min"] = 221,
-										["MISS"] = 9,
+										["a_amt"] = 0,
 										["counter"] = 66,
 										["DODGE"] = 10,
 										["total"] = 17060,
@@ -1545,7 +1545,7 @@ _detalhes_database = {
 										["c_total"] = 8695,
 										["n_amt"] = 19,
 										["r_amt"] = 0,
-										["g_dmg"] = 2453,
+										["MISS"] = 9,
 									}, -- [1]
 									[2098] = {
 										["c_amt"] = 0,
@@ -1732,16 +1732,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "26632",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 48511.005352,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 48511.005352,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26632",
 							["damage_from"] = {
 								["Mirror Image <Bizonacci-Mandokir>"] = true,
 								["Kentta-Gehennas"] = true,
@@ -1761,7 +1760,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 14717.005352,
 							["end_time"] = 1720883515,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "The Prophet Tharon'ja",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1796,32 +1796,29 @@ _detalhes_database = {
 										["b_dmg"] = 1747,
 										["r_amt"] = 0,
 									}, -- [1]
-									[49548] = {
+									[49356] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 609,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 5542,
-											["Kentta-Gehennas"] = 6090,
-											["Bizonacci-Mandokir"] = 6030,
 										},
-										["n_total"] = 17662,
-										["n_min"] = 554,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 17662,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 49548,
+										["id"] = 49356,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 554,
-										["a_amt"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["c_total"] = 0,
-										["n_amt"] = 30,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -1852,6 +1849,35 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[49548] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 609,
+										["targets"] = {
+											["Handrmandr"] = 5542,
+											["Kentta-Gehennas"] = 6090,
+											["Bizonacci-Mandokir"] = 6030,
+										},
+										["n_total"] = 17662,
+										["n_min"] = 554,
+										["g_dmg"] = 0,
+										["counter"] = 30,
+										["total"] = 17662,
+										["c_max"] = 0,
+										["id"] = 49548,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 554,
+										["a_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 30,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[53463] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1866,32 +1892,6 @@ _detalhes_database = {
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 53463,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49356] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49356,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
@@ -2305,13 +2305,13 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Bizonacci-Mandokir"] = true,
+							["targets_overheal"] = {
+								["Bizonacci-Mandokir"] = 1666,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4813-058D547F",
+							["classe"] = "MAGE",
 							["totalover"] = 1666.005919,
 							["total_without_pet"] = 6030.005919,
 							["total"] = 6030.005919,
@@ -2331,13 +2331,13 @@ _detalhes_database = {
 							["last_event"] = 1720883502,
 							["totalover_without_pet"] = 0.005919,
 							["healing_taken"] = 6030.005919,
-							["targets_overheal"] = {
-								["Bizonacci-Mandokir"] = 1666,
+							["healing_from"] = {
+								["Bizonacci-Mandokir"] = true,
 							},
 							["end_time"] = 1720883515,
+							["aID"] = "4813-058D547F",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Bizonacci-Mandokir",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[49609] = {
@@ -2398,7 +2398,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883508,
-							["boss_fight_component"] = true,
+							["nome"] = "Bizonacci-Mandokir",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005919,
@@ -2610,12 +2610,13 @@ _detalhes_database = {
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
+							["targets_overheal"] = {
+								["Disorderr-Gehennas"] = 10056,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-058DD3B9",
+							["classe"] = "MAGE",
 							["totalover"] = 10056.008447,
 							["total_without_pet"] = 0.008447,
 							["total"] = 0.008447,
@@ -2633,13 +2634,12 @@ _detalhes_database = {
 							["last_event"] = 1720883494,
 							["totalover_without_pet"] = 0.008447,
 							["healing_taken"] = 0.008447,
-							["targets_overheal"] = {
-								["Disorderr-Gehennas"] = 10056,
+							["healing_from"] = {
 							},
 							["end_time"] = 1720883515,
+							["aID"] = "4476-058DD3B9",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Disorderr-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[12051] = {
@@ -2699,7 +2699,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883506,
-							["boss_fight_component"] = true,
+							["nome"] = "Disorderr-Gehennas",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.008447,
@@ -3088,17 +3088,17 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 114,
-							["buff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
 							["spec"] = 63,
 							["grupo"] = true,
 							["pets"] = {
 								"Mirror Image <Bizonacci-Mandokir>", -- [1]
 							},
 							["aID"] = "4813-058D547F",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
 							["nome"] = "Bizonacci-Mandokir",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4813-058D547F",
@@ -3149,15 +3149,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-055EF2D8",
 							["last_event"] = 1720883509,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-055EF2D8",
 							["nome"] = "Tatenen-Gehennas",
+							["serial"] = "Player-4476-055EF2D8",
+							["aID"] = "4476-055EF2D8",
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
@@ -3314,7 +3314,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 71,
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
@@ -3332,15 +3332,15 @@ _detalhes_database = {
 							["cooldowns_defensive_targets"] = {
 								["Handrmandr"] = 1,
 							},
-							["nome"] = "Handrmandr",
+							["boss_fight_component"] = true,
 							["grupo"] = true,
 							["classe"] = "PALADIN",
 							["tipo"] = 4,
 							["last_event"] = 1720883515,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-048D3FC8",
-							["boss_fight_component"] = true,
+							["nome"] = "Handrmandr",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -3351,8 +3351,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [4]
@@ -3374,9 +3374,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
-							["classe"] = "ROGUE",
+							["buff_uptime"] = 59,
+							["aID"] = "4476-056A5F33",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[49609] = {
@@ -3428,18 +3427,19 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 7,
-							["buff_uptime"] = 59,
-							["tipo"] = 4,
-							["nome"] = "Kentta-Gehennas",
-							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1720883514,
-							["boss_fight_component"] = true,
-							["serial"] = "Player-4476-056A5F33",
+							["pets"] = {
+							},
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["last_event"] = 1720883514,
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "ROGUE",
+							["serial"] = "Player-4476-056A5F33",
+							["nome"] = "Kentta-Gehennas",
 						}, -- [5]
 						{
 							["flag_original"] = 8466,
@@ -3449,8 +3449,8 @@ _detalhes_database = {
 							["ownerName"] = "Bizonacci-Mandokir",
 							["boss_fight_component"] = true,
 							["nome"] = "Mirror Image <Bizonacci-Mandokir>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-31216-000112990A",
 							["aID"] = "31216",
 						}, -- [6]
@@ -3458,14 +3458,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26632",
 							["monster"] = true,
 							["nome"] = "The Prophet Tharon'ja",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26632",
-							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
+							["tipo"] = 4,
 						}, -- [7]
 						{
 							["flag_original"] = 68168,
@@ -3482,6 +3482,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 12,
 							["spellschool"] = 32,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Decay Flesh",
+							["tipo"] = 4,
+							["damage_twin"] = "The Prophet Tharon'ja",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 3,
@@ -3512,11 +3517,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "The Prophet Tharon'ja",
-							["nome"] = "Decay Flesh",
 							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 							["last_event"] = 1720883482,
 						}, -- [8]
@@ -3535,6 +3535,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 30,
 							["spellschool"] = 8,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Poison Cloud",
+							["tipo"] = 4,
+							["damage_twin"] = "The Prophet Tharon'ja",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 10,
@@ -3558,11 +3563,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "The Prophet Tharon'ja",
-							["nome"] = "Poison Cloud",
 							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 							["last_event"] = 1720883502,
 						}, -- [9]
@@ -3581,6 +3581,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 12,
 							["spellschool"] = 32,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Return Flesh",
+							["tipo"] = 4,
+							["damage_twin"] = "The Prophet Tharon'ja",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 3,
@@ -3611,11 +3616,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "The Prophet Tharon'ja",
-							["nome"] = "Return Flesh",
 							["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 							["last_event"] = 1720883505,
 						}, -- [10]
@@ -3633,7 +3633,7 @@ _detalhes_database = {
 					["Handrmandr"] = "Player-4465-048D3FC8",
 					["Bizonacci-Mandokir"] = "Player-4813-058D547F",
 				},
-				["tempo_start"] = 1720883464,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3641,7 +3641,9 @@ _detalhes_database = {
 				["bossIcon"] = "",
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 2227,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 					["Tatenen-Gehennas"] = {
 						{
@@ -5835,9 +5837,7 @@ _detalhes_database = {
 				["TimeData"] = {
 				},
 				["resincked"] = true,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 2227,
 				["totals_grupo"] = {
 					266001, -- [1]
 					44721, -- [2]
@@ -5909,7 +5909,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 274239.09,
 				["contra"] = "The Prophet Tharon'ja",
-				["overall_added"] = true,
+				["tempo_start"] = 1720883464,
 			}, -- [1]
 			{
 				{
@@ -7344,16 +7344,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 168415.001652,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 168415.001652,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Scourge Brute"] = true,
@@ -7370,7 +7369,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001652,
 							["end_time"] = 1720883316,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -7390,7 +7390,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 122,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["total"] = 168415,
 										["c_max"] = 3064,
 										["DODGE"] = 5,
 										["id"] = 1,
@@ -7405,7 +7405,7 @@ _detalhes_database = {
 										["c_total"] = 11899,
 										["n_amt"] = 102,
 										["b_dmg"] = 5406,
-										["total"] = 168415,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -7449,16 +7449,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 126059.002292,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 126059.002292,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Shaman"] = true,
 								["Drakkari Guardian"] = true,
@@ -7472,7 +7471,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002292,
 							["end_time"] = 1720883316,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -7490,7 +7490,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 83,
 										["MISS"] = 1,
-										["r_amt"] = 0,
+										["total"] = 126059,
 										["c_max"] = 3647,
 										["DODGE"] = 4,
 										["id"] = 1,
@@ -7505,7 +7505,7 @@ _detalhes_database = {
 										["c_total"] = 12351,
 										["n_amt"] = 73,
 										["b_dmg"] = 6551,
-										["total"] = 126059,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -7549,16 +7549,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 27737.004044,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 27737.004044,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -7571,7 +7570,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004044,
 							["end_time"] = 1720883316,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -7647,16 +7647,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 25522.005187,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 25522.005187,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -7669,7 +7668,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005187,
 							["end_time"] = 1720883316,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -7744,16 +7744,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27483",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 14450.003485,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 14450.003485,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "27483",
 							["damage_from"] = {
 								["Mirror Image <Bizonacci-Mandokir>"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -7771,7 +7770,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.003485,
 							["end_time"] = 1720883311,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "King Dred",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -7955,16 +7955,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26628",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 13968.001801,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 13968.001801,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26628",
 							["damage_from"] = {
 								["Mirror Image <Bizonacci-Mandokir>"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -7983,7 +7982,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001801,
 							["end_time"] = 1720883316,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Scytheclaw",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8061,16 +8061,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "26641",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 8457.005105,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 8457.005105,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26641-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26641",
 							["damage_from"] = {
 								["Mirror Image <Bizonacci-Mandokir>"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -8088,7 +8087,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 941.005105,
 							["end_time"] = 1720883311,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Gutripper",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8164,16 +8164,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 7727.004258,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 7727.004258,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -8185,7 +8184,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004258,
 							["end_time"] = 1720883311,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8364,16 +8364,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26824",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1112.003444,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1112.003444,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26824-000012983F",
-							["classe"] = "UNKNOW",
+							["aID"] = "26824",
 							["damage_from"] = {
 								["Disorderr-Gehennas"] = true,
 								["Kentta-Gehennas"] = true,
@@ -8388,7 +8387,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 1112.003444,
 							["end_time"] = 1720883311,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Raptor Mount",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8436,16 +8436,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26637",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 932.006514,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 932.006514,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26637-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26637",
 							["damage_from"] = {
 								["Kentta-Gehennas"] = true,
 								["Handrmandr"] = true,
@@ -8461,7 +8460,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.006514,
 							["end_time"] = 1720883311,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Handler",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8942,14 +8942,12 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Disorderr-Gehennas"] = true,
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-058DD3B9",
+							["classe"] = "MAGE",
 							["totalover"] = 0.001127,
 							["total_without_pet"] = 583.001127,
 							["total"] = 583.001127,
@@ -8968,12 +8966,14 @@ _detalhes_database = {
 							["last_event"] = 1720883289,
 							["totalover_without_pet"] = 0.001127,
 							["healing_taken"] = 1425.001127,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Disorderr-Gehennas"] = true,
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720883311,
+							["aID"] = "4476-058DD3B9",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Disorderr-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[59913] = {
@@ -9006,7 +9006,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883310,
-							["boss_fight_component"] = true,
+							["nome"] = "Disorderr-Gehennas",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.001127,
@@ -9697,14 +9697,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -9773,15 +9773,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720883310,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
@@ -9798,6 +9798,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Hooked Net",
+							["tipo"] = 4,
+							["damage_twin"] = "Risen Drakkari Handler",
 							["debuff_uptime_targets"] = {
 								["Tatenen-Gehennas"] = {
 									["uptime"] = 0,
@@ -9808,11 +9813,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Risen Drakkari Handler",
-							["nome"] = "Hooked Net",
 							["serial"] = "Creature-0-4479-600-3543-26637-00009296A7",
 							["last_event"] = 1720883274,
 						}, -- [5]
@@ -9864,6 +9864,17 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[22959] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 35,
+										["id"] = 22959,
+										["refreshamt"] = 9,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[413841] = {
 										["appliedamt"] = 3,
 										["targets"] = {
@@ -9883,17 +9894,6 @@ _detalhes_database = {
 										["uptime"] = 23,
 										["id"] = 92315,
 										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22959] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 35,
-										["id"] = 22959,
-										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -9991,27 +9991,27 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-000C9296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-000C9296A7",
+							["tipo"] = 4,
 						}, -- [7]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00021296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00021296A7",
+							["tipo"] = 4,
 						}, -- [8]
 						{
 							["flag_original"] = 1298,
@@ -10048,54 +10048,54 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-055EF2D8",
 							["last_event"] = 1720883307,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-055EF2D8",
 							["nome"] = "Tatenen-Gehennas",
+							["serial"] = "Player-4476-055EF2D8",
+							["aID"] = "4476-055EF2D8",
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Soulmage",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26636",
-							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
+							["tipo"] = 4,
 						}, -- [10]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["monster"] = true,
 							["nome"] = "Scourge Brute",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26623",
-							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
+							["tipo"] = 4,
 						}, -- [11]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26641",
 							["monster"] = true,
 							["nome"] = "Drakkari Gutripper",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26641",
-							["serial"] = "Creature-0-4479-600-3543-26641-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26641-00001296A7",
+							["tipo"] = 4,
 						}, -- [12]
 						{
 							["flag_original"] = 2632,
@@ -10112,6 +10112,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 6,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Gut Rip",
+							["tipo"] = 4,
+							["damage_twin"] = "Drakkari Gutripper",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 6,
@@ -10121,11 +10126,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Drakkari Gutripper",
-							["nome"] = "Gut Rip",
 							["serial"] = "Creature-0-4479-600-3543-26641-00001296A7",
 							["last_event"] = 1720883289,
 						}, -- [13]
@@ -10137,8 +10137,8 @@ _detalhes_database = {
 							["ownerName"] = "Bizonacci-Mandokir",
 							["boss_fight_component"] = true,
 							["nome"] = "Mirror Image <Bizonacci-Mandokir>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-31216-0001129856",
 							["aID"] = "31216",
 						}, -- [14]
@@ -10146,14 +10146,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "27483",
 							["monster"] = true,
 							["nome"] = "King Dred",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "27483",
-							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
+							["tipo"] = 4,
 						}, -- [15]
 						{
 							["flag_original"] = 68168,
@@ -10170,6 +10170,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 32,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Fearsome Roar",
+							["tipo"] = 4,
+							["damage_twin"] = "King Dred",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 8,
@@ -10204,11 +10209,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "King Dred",
-							["nome"] = "Fearsome Roar",
 							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 							["last_event"] = 1720883306,
 						}, -- [16]
@@ -10227,6 +10227,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 15,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Mangling Slash",
+							["tipo"] = 4,
+							["damage_twin"] = "King Dred",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 15,
@@ -10236,11 +10241,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "King Dred",
-							["nome"] = "Mangling Slash",
 							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 							["last_event"] = 1720883307,
 						}, -- [17]
@@ -10248,14 +10248,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26628",
 							["monster"] = true,
 							["nome"] = "Drakkari Scytheclaw",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26628",
-							["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
+							["tipo"] = 4,
 						}, -- [18]
 						{
 							["flag_original"] = 68168,
@@ -10272,6 +10272,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 2,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Grievous Bite",
+							["tipo"] = 4,
+							["damage_twin"] = "King Dred",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 2,
@@ -10281,11 +10286,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "King Dred",
-							["nome"] = "Grievous Bite",
 							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 							["last_event"] = 1720883296,
 						}, -- [19]
@@ -10304,6 +10304,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 15,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Rend",
+							["tipo"] = 4,
+							["damage_twin"] = "Drakkari Scytheclaw",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 15,
@@ -10313,11 +10318,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Drakkari Scytheclaw",
-							["nome"] = "Rend",
 							["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
 							["last_event"] = 1720883309,
 						}, -- [20]
@@ -10336,6 +10336,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 12,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Bellowing Roar",
+							["tipo"] = 4,
+							["damage_twin"] = "King Dred",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 0,
@@ -10366,11 +10371,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "King Dred",
-							["nome"] = "Bellowing Roar",
 							["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 							["last_event"] = 1720883305,
 						}, -- [21]
@@ -12537,13 +12537,13 @@ _detalhes_database = {
 						["Word of Glory"] = 1,
 						["Holy Wrath"] = 3,
 						["Hammer of Wrath"] = 1,
-						["Grand Crusader"] = 1,
-						["Shield of the Righteous"] = 2,
 						["Avenger's Shield"] = 2,
+						["Shield of the Righteous"] = 2,
+						["Crusader Strike"] = 2,
 						["Hammer of the Righteous"] = 11,
 						["Holy Shield"] = 1,
 						["Consecration"] = 1,
-						["Crusader Strike"] = 2,
+						["Grand Crusader"] = 1,
 						["Ardent Defender"] = 1,
 						["Judgement"] = 2,
 					},
@@ -14318,16 +14318,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 514445.008047,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 514445.008047,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-00059296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Risen Drakkari Soulmage"] = true,
@@ -14344,7 +14343,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008047,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14359,9 +14359,9 @@ _detalhes_database = {
 											["Risen Drakkari Soulmage"] = 88442,
 										},
 										["n_total"] = 453105,
-										["MISS"] = 17,
+										["g_dmg"] = 0,
 										["n_min"] = 946,
-										["a_amt"] = 0,
+										["MISS"] = 17,
 										["counter"] = 365,
 										["DODGE"] = 15,
 										["total"] = 514445,
@@ -14379,7 +14379,7 @@ _detalhes_database = {
 										["c_total"] = 61340,
 										["n_amt"] = 294,
 										["r_amt"] = 0,
-										["g_dmg"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -14423,16 +14423,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 304544.0059,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 304544.0059,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00019296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Shaman"] = true,
 								["Drakkari Guardian"] = true,
@@ -14446,7 +14445,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.0059,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14464,7 +14464,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 238,
 										["MISS"] = 15,
-										["r_amt"] = 0,
+										["total"] = 304544,
 										["c_max"] = 3659,
 										["DODGE"] = 14,
 										["id"] = 1,
@@ -14479,7 +14479,7 @@ _detalhes_database = {
 										["c_total"] = 34054,
 										["n_amt"] = 182,
 										["b_dmg"] = 12582,
-										["total"] = 304544,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -14523,16 +14523,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 93899.007542,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 93899.007542,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -14545,7 +14544,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007542,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14622,16 +14622,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 73836.005173,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 73836.005173,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -14644,7 +14643,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005173,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14721,16 +14721,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26631",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 61188.001287,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 61188.001287,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26631",
 							["damage_from"] = {
 								["Disorderr-Gehennas"] = true,
 								["Bizonacci-Mandokir"] = true,
@@ -14751,7 +14750,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001287,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Novos the Summoner",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14858,16 +14858,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 19665.004616,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 19665.004616,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -14879,7 +14878,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004616,
 							["end_time"] = 1720883222,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14953,16 +14953,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26627",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 3655.007827,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3655.007827,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
-							["classe"] = "UNKNOW",
+							["aID"] = "26627",
 							["damage_from"] = {
 								["Tatenen-Gehennas"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -14979,7 +14978,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007827,
 							["end_time"] = 1720883205,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Crystal Handler",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -15054,16 +15054,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "27600",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 432.00284,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 432.00284,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27600-0000129799",
-							["classe"] = "UNKNOW",
+							["aID"] = "27600",
 							["damage_from"] = {
 								["Kentta-Gehennas"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -15079,7 +15078,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.00284,
 							["end_time"] = 1720883205,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Shadowcaster",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -15127,16 +15127,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "27598",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 412.003909,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 412.003909,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27598-0000129799",
-							["classe"] = "UNKNOW",
+							["aID"] = "27598",
 							["damage_from"] = {
 								["Kentta-Gehennas"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -15151,7 +15150,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.003909,
 							["end_time"] = 1720883205,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Fetid Troll Corpse",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -15199,16 +15199,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27597",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 0.004808,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.004808,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27597-00001297C6",
-							["classe"] = "UNKNOW",
+							["aID"] = "27597",
 							["damage_from"] = {
 								["Disorderr-Gehennas"] = true,
 							},
@@ -15220,7 +15219,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004808,
 							["end_time"] = 1720883205,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Hulking Corpse",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -15574,14 +15574,13 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Bizonacci-Mandokir"] = true,
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
+								["Bizonacci-Mandokir"] = 6762,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4813-058D547F",
+							["classe"] = "MAGE",
 							["totalover"] = 6762.004235,
 							["total_without_pet"] = 2451.004235,
 							["total"] = 2451.004235,
@@ -15601,13 +15600,14 @@ _detalhes_database = {
 							["last_event"] = 1720883198,
 							["totalover_without_pet"] = 0.004235,
 							["healing_taken"] = 16674.004235,
-							["targets_overheal"] = {
-								["Bizonacci-Mandokir"] = 6762,
+							["healing_from"] = {
+								["Bizonacci-Mandokir"] = true,
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720883205,
+							["aID"] = "4813-058D547F",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Bizonacci-Mandokir",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[12051] = {
@@ -15668,7 +15668,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883192,
-							["boss_fight_component"] = true,
+							["nome"] = "Bizonacci-Mandokir",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.004235,
@@ -15677,14 +15677,13 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Disorderr-Gehennas"] = true,
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
+								["Disorderr-Gehennas"] = 5822,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-058DD3B9",
+							["classe"] = "MAGE",
 							["totalover"] = 5822.006164,
 							["total_without_pet"] = 305.006164,
 							["total"] = 305.006164,
@@ -15703,13 +15702,14 @@ _detalhes_database = {
 							["last_event"] = 1720883171,
 							["totalover_without_pet"] = 0.006164,
 							["healing_taken"] = 14321.006164,
-							["targets_overheal"] = {
-								["Disorderr-Gehennas"] = 5822,
+							["healing_from"] = {
+								["Disorderr-Gehennas"] = true,
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720883205,
+							["aID"] = "4476-058DD3B9",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Disorderr-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[12051] = {
@@ -15769,7 +15769,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883161,
-							["boss_fight_component"] = true,
+							["nome"] = "Disorderr-Gehennas",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.006164,
@@ -16309,27 +16309,27 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -16514,15 +16514,15 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 154,
-							["debuff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
 							["spec"] = 63,
 							["grupo"] = true,
 							["buff_uptime"] = 35,
 							["classe"] = "MAGE",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
 							["nome"] = "Bizonacci-Mandokir",
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 							["buff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4813-058D547F",
@@ -16532,27 +16532,27 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Soulmage",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26636",
-							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
+							["tipo"] = 4,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00009296A7",
+							["tipo"] = 4,
 						}, -- [5]
 						{
 							["flag_original"] = 1297,
@@ -16896,14 +16896,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26627",
 							["monster"] = true,
 							["nome"] = "Crystal Handler",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26627",
-							["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
+							["tipo"] = 4,
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
@@ -16920,6 +16920,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 64,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Arcane Field",
+							["tipo"] = 4,
+							["damage_twin"] = "Novos the Summoner",
 							["debuff_uptime_targets"] = {
 								["Kentta-Gehennas"] = {
 									["uptime"] = 0,
@@ -16929,11 +16934,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Novos the Summoner",
-							["nome"] = "Arcane Field",
 							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 							["last_event"] = 1720883126,
 						}, -- [10]
@@ -16941,14 +16941,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["monster"] = true,
 							["nome"] = "Scourge Brute",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26623",
-							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
+							["tipo"] = 4,
 						}, -- [11]
 						{
 							["flag_original"] = 1298,
@@ -16996,28 +16996,28 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720883199,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [12]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26631",
 							["monster"] = true,
 							["nome"] = "Novos the Summoner",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26631",
-							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
+							["tipo"] = 4,
 						}, -- [13]
 						{
 							["flag_original"] = 68168,
@@ -17034,6 +17034,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 8,
 							["spellschool"] = 32,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Wrath of Misery",
+							["tipo"] = 4,
+							["damage_twin"] = "Novos the Summoner",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 8,
@@ -17044,11 +17049,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Novos the Summoner",
-							["nome"] = "Wrath of Misery",
 							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 							["last_event"] = 1720883205,
 						}, -- [14]
@@ -17067,6 +17067,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 31,
 							["spellschool"] = 16,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Frostbolt",
+							["tipo"] = 4,
+							["damage_twin"] = "Novos the Summoner",
 							["debuff_uptime_targets"] = {
 								["Tatenen-Gehennas"] = {
 									["uptime"] = 7,
@@ -17098,11 +17103,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Novos the Summoner",
-							["nome"] = "Frostbolt",
 							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 							["last_event"] = 1720883204,
 						}, -- [15]
@@ -17121,6 +17121,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 6,
 							["spellschool"] = 16,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Blizzard",
+							["tipo"] = 4,
+							["damage_twin"] = "Novos the Summoner",
 							["debuff_uptime_targets"] = {
 								["Tatenen-Gehennas"] = {
 									["uptime"] = 6,
@@ -17130,11 +17135,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Novos the Summoner",
-							["nome"] = "Blizzard",
 							["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 							["last_event"] = 1720883197,
 						}, -- [16]
@@ -20813,16 +20813,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 166092.002282,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 166092.002282,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-00061296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Risen Drakkari Soulmage"] = true,
@@ -20839,7 +20838,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002282,
 							["end_time"] = 1720883066,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -20854,9 +20854,9 @@ _detalhes_database = {
 											["Scourge Brute"] = 26453,
 										},
 										["n_total"] = 162468,
-										["MISS"] = 3,
+										["g_dmg"] = 0,
 										["n_min"] = 884,
-										["a_amt"] = 0,
+										["MISS"] = 3,
 										["counter"] = 116,
 										["DODGE"] = 2,
 										["total"] = 166092,
@@ -20874,7 +20874,7 @@ _detalhes_database = {
 										["c_total"] = 3624,
 										["n_amt"] = 104,
 										["r_amt"] = 0,
-										["g_dmg"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -20918,16 +20918,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 106415.008333,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 106415.008333,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00011296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 								["Drakkari Shaman"] = true,
@@ -20941,7 +20940,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008333,
 							["end_time"] = 1720883066,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -20959,7 +20959,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 77,
 										["MISS"] = 3,
-										["r_amt"] = 0,
+										["total"] = 106415,
 										["c_max"] = 3758,
 										["DODGE"] = 6,
 										["id"] = 1,
@@ -20974,7 +20974,7 @@ _detalhes_database = {
 										["c_total"] = 9582,
 										["n_amt"] = 63,
 										["b_dmg"] = 4566,
-										["total"] = 106415,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -21018,16 +21018,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "26630",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 48722.002416,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 48722.002416,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["damage_from"] = {
 								["Mirror Image <Bizonacci-Mandokir>"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -21051,7 +21050,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002416,
 							["end_time"] = 1720883057,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Trollgore",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21085,21 +21085,20 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[49639] = {
+									[49555] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 864,
+										["n_max"] = 0,
 										["targets"] = {
-											["Handrmandr"] = 1627,
 										},
-										["n_total"] = 1627,
-										["n_min"] = 763,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1627,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 49639,
+										["id"] = 49555,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
@@ -21108,7 +21107,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -21135,6 +21134,33 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49639] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 864,
+										["targets"] = {
+											["Handrmandr"] = 1627,
+										},
+										["n_total"] = 1627,
+										["n_min"] = 763,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1627,
+										["c_max"] = 0,
+										["id"] = 49639,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -21165,32 +21191,6 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49555] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49555,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["c_total"] = 0,
-										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -21242,16 +21242,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 25581.001117,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 25581.001117,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -21264,7 +21263,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001117,
 							["end_time"] = 1720883066,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21340,16 +21340,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 21827.005574,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 21827.005574,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -21362,7 +21361,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005574,
 							["end_time"] = 1720883066,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21536,16 +21536,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 6872.004575,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 6872.004575,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -21557,7 +21556,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004575,
 							["end_time"] = 1720883066,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21632,16 +21632,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27753",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 433.002053,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 433.002053,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27753-0000129747",
-							["classe"] = "UNKNOW",
+							["aID"] = "27753",
 							["damage_from"] = {
 								["Trollgore"] = true,
 								["Handrmandr"] = true,
@@ -21658,7 +21657,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002053,
 							["end_time"] = 1720883057,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Invader",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -22694,14 +22694,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["monster"] = true,
 							["nome"] = "Scourge Brute",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26623",
-							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -22864,6 +22864,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Pierce Armor",
+							["tipo"] = 4,
+							["damage_twin"] = "Flesheating Ghoul",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 0,
@@ -22874,11 +22879,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Flesheating Ghoul",
-							["nome"] = "Pierce Armor",
 							["serial"] = "Creature-0-4479-600-3543-27871-00001296A7",
 							["last_event"] = 1720883027,
 						}, -- [4]
@@ -22959,8 +22959,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [6]
@@ -22968,14 +22968,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [7]
 						{
 							["flag_original"] = 8466,
@@ -22985,8 +22985,8 @@ _detalhes_database = {
 							["ownerName"] = "Bizonacci-Mandokir",
 							["boss_fight_component"] = true,
 							["nome"] = "Mirror Image <Bizonacci-Mandokir>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-31216-0001129753",
 							["aID"] = "31216",
 						}, -- [8]
@@ -23036,54 +23036,54 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720883053,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
+							["tipo"] = 4,
 						}, -- [10]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["monster"] = true,
 							["nome"] = "Trollgore",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26630",
-							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
+							["tipo"] = 4,
 						}, -- [11]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00011296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00011296A7",
+							["tipo"] = 4,
 						}, -- [12]
 						{
 							["flag_original"] = 68168,
@@ -23100,6 +23100,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 2,
 							["spellschool"] = 8,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Infected Wound",
+							["tipo"] = 4,
+							["damage_twin"] = "Trollgore",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 2,
@@ -23109,11 +23114,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Trollgore",
-							["nome"] = "Infected Wound",
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
 							["last_event"] = 1720883044,
 						}, -- [13]
@@ -23121,14 +23121,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Soulmage",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26636",
-							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
+							["tipo"] = 4,
 						}, -- [14]
 					},
 				}, -- [4]
@@ -25429,16 +25429,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26624",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 28125.008113,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 28125.008113,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26624",
 							["damage_from"] = {
 								["Kentta-Gehennas"] = true,
 								["Bizonacci-Mandokir"] = true,
@@ -25459,7 +25458,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008113,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Wretched Belcher",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26470,16 +26470,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27871",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1658.007228,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1658.007228,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27871-00019296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "27871",
 							["damage_from"] = {
 								["Disorderr-Gehennas"] = true,
 								["Bizonacci-Mandokir"] = true,
@@ -26496,7 +26495,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007228,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Flesheating Ghoul",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26597,16 +26597,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26621",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 4774.005494999999,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4774.005494999999,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26621-00021296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26621",
 							["damage_from"] = {
 								["Kentta-Gehennas"] = true,
 								["Bizonacci-Mandokir"] = true,
@@ -26623,7 +26622,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005495,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Ghoul Tormentor",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26698,16 +26698,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 21013.00525,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 21013.00525,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00011296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Shaman"] = true,
 								["Drakkari Guardian"] = true,
@@ -26721,7 +26720,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.00525,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26797,16 +26797,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 33485.001752,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 33485.001752,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-000C9296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Scourge Brute"] = true,
@@ -26823,7 +26822,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001752,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27032,16 +27032,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 4289.008928,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4289.008928,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -27054,7 +27053,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008928,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27103,16 +27103,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26630",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 5057.001208,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 5057.001208,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["damage_from"] = {
 								["Drakkari Invader"] = true,
 							},
@@ -27125,7 +27124,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001208,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Trollgore",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27173,16 +27173,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27753",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 998.003147,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 998.003147,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27753-0000929726",
-							["classe"] = "UNKNOW",
+							["aID"] = "27753",
 							["damage_from"] = {
 								["Trollgore"] = true,
 							},
@@ -27195,7 +27194,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.003147,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Invader",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27243,16 +27243,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 8853.002231,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 8853.002231,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -27265,7 +27264,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002231,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27313,16 +27313,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1499.003193,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1499.003193,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -27334,7 +27333,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.003193,
 							["end_time"] = 1720883000,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -27572,14 +27572,12 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Disorderr-Gehennas"] = true,
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4476-058DD3B9",
+							["classe"] = "MAGE",
 							["totalover"] = 0.006094,
 							["total_without_pet"] = 292.006094,
 							["total"] = 292.006094,
@@ -27598,12 +27596,14 @@ _detalhes_database = {
 							["last_event"] = 1720882994,
 							["totalover_without_pet"] = 0.006094,
 							["healing_taken"] = 3475.006094,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Disorderr-Gehennas"] = true,
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720883000,
+							["aID"] = "4476-058DD3B9",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Disorderr-Gehennas",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[59913] = {
@@ -27636,7 +27636,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720882994,
-							["boss_fight_component"] = true,
+							["nome"] = "Disorderr-Gehennas",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.006094,
@@ -27786,13 +27786,12 @@ _detalhes_database = {
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4813-058D547F",
+							["classe"] = "MAGE",
 							["totalover"] = 0.005551,
 							["total_without_pet"] = 0.005551,
 							["total"] = 0.005551,
@@ -27810,12 +27809,13 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["totalover_without_pet"] = 0.005551,
 							["healing_taken"] = 10207.005551,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720883000,
+							["aID"] = "4813-058D547F",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Bizonacci-Mandokir",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
@@ -27823,7 +27823,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720883000,
-							["boss_fight_component"] = true,
+							["nome"] = "Bizonacci-Mandokir",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.005551,
@@ -28109,15 +28109,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-055EF2D8",
 							["last_event"] = 1720882999,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-055EF2D8",
 							["nome"] = "Tatenen-Gehennas",
+							["serial"] = "Player-4476-055EF2D8",
+							["aID"] = "4476-055EF2D8",
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -28134,6 +28134,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 8,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Bile Vomit",
+							["tipo"] = 4,
+							["damage_twin"] = "Wretched Belcher",
 							["debuff_uptime_targets"] = {
 								["Bizonacci-Mandokir"] = {
 									["uptime"] = 0,
@@ -28160,11 +28165,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Wretched Belcher",
-							["nome"] = "Bile Vomit",
 							["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
 							["last_event"] = 1720882992,
 						}, -- [2]
@@ -28185,14 +28185,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "27871",
 							["monster"] = true,
 							["nome"] = "Flesheating Ghoul",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "27871",
-							["serial"] = "Creature-0-4479-600-3543-27871-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-27871-00009296A7",
+							["tipo"] = 4,
 						}, -- [4]
 						{
 							["flag_original"] = 1297,
@@ -28234,9 +28234,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
+							["buff_uptime"] = 0,
+							["aID"] = "4465-048D3FC8",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[20178] = {
@@ -28279,18 +28278,19 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 14,
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["nome"] = "Handrmandr",
-							["grupo"] = true,
-							["aID"] = "4465-048D3FC8",
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1720882999,
-							["boss_fight_component"] = true,
-							["serial"] = "Player-4465-048D3FC8",
+							["pets"] = {
+							},
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["last_event"] = 1720882999,
+							["boss_fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-048D3FC8",
+							["nome"] = "Handrmandr",
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
@@ -28307,6 +28307,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Pierce Armor",
+							["tipo"] = 4,
+							["damage_twin"] = "Flesheating Ghoul",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 0,
@@ -28317,11 +28322,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Flesheating Ghoul",
-							["nome"] = "Pierce Armor",
 							["serial"] = "Creature-0-4479-600-3543-27871-00009296A7",
 							["last_event"] = 1720882993,
 						}, -- [6]
@@ -28329,14 +28329,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26621",
 							["monster"] = true,
 							["nome"] = "Ghoul Tormentor",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26621",
-							["serial"] = "Creature-0-4479-600-3543-26621-00011296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26621-00011296A7",
+							["tipo"] = 4,
 						}, -- [7]
 						{
 							["flag_original"] = 1298,
@@ -28376,6 +28376,18 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[413841] = {
+										["activedamt"] = -1,
+										["id"] = 413841,
+										["targets"] = {
+										},
+										["actived_at"] = 1720882996,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[22959] = {
 										["appliedamt"] = 0,
 										["targets"] = {
@@ -28394,18 +28406,6 @@ _detalhes_database = {
 										["activedamt"] = 0,
 										["uptime"] = 0,
 										["id"] = 92315,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[413841] = {
-										["activedamt"] = -1,
-										["id"] = 413841,
-										["targets"] = {
-										},
-										["actived_at"] = 1720882996,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -28432,16 +28432,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 12,
-							["buff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
 							["spec"] = 63,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4813-058D547F",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
 							["nome"] = "Bizonacci-Mandokir",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4813-058D547F",
@@ -28451,40 +28451,40 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26624",
 							["monster"] = true,
 							["nome"] = "Wretched Belcher",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26624",
-							["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
+							["tipo"] = 4,
 						}, -- [10]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00021296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00021296A7",
+							["tipo"] = 4,
 						}, -- [11]
 						{
 							["flag_original"] = 1298,
@@ -28495,8 +28495,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [12]
@@ -28504,14 +28504,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-00061296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-00061296A7",
+							["tipo"] = 4,
 						}, -- [13]
 					},
 				}, -- [4]
@@ -31049,16 +31049,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 30074.001072,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 30074.001072,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00001296A8",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 								["Kentta-Gehennas"] = true,
@@ -31079,7 +31078,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001072,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -31099,7 +31099,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 24,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["total"] = 30074,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -31114,7 +31114,7 @@ _detalhes_database = {
 										["c_total"] = 0,
 										["n_amt"] = 20,
 										["b_dmg"] = 558,
-										["total"] = 30074,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -31526,16 +31526,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 33610.00245,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 33610.00245,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-00059296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Scourge Brute"] = true,
@@ -31552,7 +31551,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.00245,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -31567,9 +31567,9 @@ _detalhes_database = {
 											["Risen Drakkari Soulmage"] = 4939,
 										},
 										["n_total"] = 30704,
-										["a_amt"] = 0,
+										["g_dmg"] = 0,
 										["n_min"] = 1068,
-										["MISS"] = 3,
+										["a_amt"] = 0,
 										["counter"] = 28,
 										["DODGE"] = 2,
 										["total"] = 33610,
@@ -31587,7 +31587,7 @@ _detalhes_database = {
 										["c_total"] = 2906,
 										["n_amt"] = 20,
 										["r_amt"] = 0,
-										["g_dmg"] = 0,
+										["MISS"] = 3,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -31631,16 +31631,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 6247.006317,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 6247.006317,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -31653,7 +31652,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.006317,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -31970,16 +31970,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26630",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 5178.001196,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 5178.001196,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["damage_from"] = {
 								["Drakkari Invader"] = true,
 							},
@@ -31992,7 +31991,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001196,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Trollgore",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -32041,16 +32041,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27753",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 844.00349,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 844.00349,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27753-0000929706",
-							["classe"] = "UNKNOW",
+							["aID"] = "27753",
 							["damage_from"] = {
 								["Trollgore"] = true,
 							},
@@ -32063,7 +32062,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.00349,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Invader",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -32266,16 +32266,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 4304.007436,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4304.007436,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -32288,7 +32287,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007436,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -32363,16 +32363,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1488.005391,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1488.005391,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -32384,7 +32383,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005391,
 							["end_time"] = 1720882970,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33046,14 +33046,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00009296A7",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -33093,24 +33093,24 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[92315] = {
-										["activedamt"] = -1,
-										["id"] = 92315,
-										["targets"] = {
-										},
-										["actived_at"] = 1720882964,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[413841] = {
 										["activedamt"] = -2,
 										["id"] = 413841,
 										["targets"] = {
 										},
 										["actived_at"] = 1720882961,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[92315] = {
+										["activedamt"] = -1,
+										["id"] = 92315,
+										["targets"] = {
+										},
+										["actived_at"] = 1720882964,
 										["uptime"] = 0,
 										["appliedamt"] = 0,
 										["refreshamt"] = 0,
@@ -33274,6 +33274,11 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 5,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["nome"] = "Crush Armor",
+							["tipo"] = 4,
+							["damage_twin"] = "Risen Drakkari Warrior",
 							["debuff_uptime_targets"] = {
 								["Handrmandr"] = {
 									["uptime"] = 5,
@@ -33284,11 +33289,6 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["damage_twin"] = "Risen Drakkari Warrior",
-							["nome"] = "Crush Armor",
 							["serial"] = "Creature-0-4479-600-3543-26635-00001296A8",
 							["last_event"] = 1720882966,
 						}, -- [4]
@@ -33326,15 +33326,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-055EF2D8",
 							["last_event"] = 1720882965,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-055EF2D8",
 							["nome"] = "Tatenen-Gehennas",
+							["serial"] = "Player-4476-055EF2D8",
+							["aID"] = "4476-055EF2D8",
 						}, -- [5]
 						{
 							["flag_original"] = 1298,
@@ -33345,8 +33345,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [6]
@@ -33354,27 +33354,27 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [7]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-00061296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-00061296A7",
+							["tipo"] = 4,
 						}, -- [8]
 						{
 							["flag_original"] = 1298,
@@ -33409,28 +33409,28 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720882969,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [9]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Soulmage",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26636",
-							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
+							["tipo"] = 4,
 						}, -- [10]
 					},
 				}, -- [4]
@@ -36597,16 +36597,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 38444.00794500001,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 38444.00794500001,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-000C1296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Risen Drakkari Soulmage"] = true,
@@ -36623,7 +36622,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007945,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -36643,7 +36643,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 30,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["total"] = 38444,
 										["c_max"] = 3620,
 										["DODGE"] = 2,
 										["id"] = 1,
@@ -36658,7 +36658,7 @@ _detalhes_database = {
 										["c_total"] = 9512,
 										["n_amt"] = 19,
 										["b_dmg"] = 0,
-										["total"] = 38444,
+										["r_amt"] = 0,
 									}, -- [1]
 									[47668] = {
 										["c_amt"] = 0,
@@ -36702,16 +36702,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 36774.004131,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 36774.004131,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00039296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -36731,7 +36730,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 800.004131,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -36807,16 +36807,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 6072.002687,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 6072.002687,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -36829,7 +36828,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002687,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -36878,16 +36878,15 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "26626",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 5213.008329,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 5213.008329,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26626-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26626",
 							["damage_from"] = {
 								["Scourge Reanimator"] = true,
 								["Disorderr-Gehennas"] = true,
@@ -36906,7 +36905,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 1148.008329,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Reanimator",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -37008,16 +37008,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26630",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 5167.003201,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 5167.003201,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["damage_from"] = {
 								["Drakkari Invader"] = true,
 							},
@@ -37030,7 +37029,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.003201,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Trollgore",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -37079,16 +37079,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 4561.006377,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4561.006377,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -37101,7 +37100,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.006377,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -37150,16 +37150,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1515.008124,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1515.008124,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -37171,7 +37170,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008124,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -37218,16 +37218,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27709",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 931.0073970000001,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 931.0073970000001,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27709-00001296E6",
-							["classe"] = "UNKNOW",
+							["aID"] = "27709",
 							["damage_from"] = {
 								["Trollgore"] = true,
 							},
@@ -37240,7 +37239,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.007397,
 							["end_time"] = 1720882937,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Invader",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -37909,14 +37909,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["monster"] = true,
 							["nome"] = "Risen Drakkari Warrior",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26635",
-							["serial"] = "Creature-0-4479-600-3543-26635-00019296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26635-00019296A7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -37927,8 +37927,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [3]
@@ -38017,16 +38017,16 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 16,
-							["buff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
 							["spec"] = 63,
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["aID"] = "4813-058D547F",
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
 							["nome"] = "Bizonacci-Mandokir",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4813-058D547F",
@@ -38036,27 +38036,27 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26626",
 							["monster"] = true,
 							["nome"] = "Scourge Reanimator",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26626",
-							["serial"] = "Creature-0-4479-600-3543-26626-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26626-00009296A7",
+							["tipo"] = 4,
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [6]
 						{
 							["flag_original"] = 1298,
@@ -38091,15 +38091,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720882934,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [7]
 						{
 							["flag_original"] = 1298,
@@ -38180,14 +38180,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["monster"] = true,
 							["nome"] = "Drakkari Guardian",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26620",
-							["serial"] = "Creature-0-4479-600-3543-26620-000B1296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26620-000B1296A7",
+							["tipo"] = 4,
 						}, -- [9]
 					},
 				}, -- [4]
@@ -41126,16 +41126,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26620",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 22385.006213,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 22385.006213,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26620-00059296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26620",
 							["damage_from"] = {
 								["Risen Drakkari Warrior"] = true,
 								["Scourge Brute"] = true,
@@ -41152,7 +41151,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.006213,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Guardian",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41167,9 +41167,9 @@ _detalhes_database = {
 											["Risen Drakkari Soulmage"] = 2986,
 										},
 										["n_total"] = 19786,
-										["a_amt"] = 0,
+										["g_dmg"] = 0,
 										["n_min"] = 1064,
-										["MISS"] = 1,
+										["a_amt"] = 0,
 										["counter"] = 19,
 										["DODGE"] = 2,
 										["total"] = 22385,
@@ -41187,7 +41187,7 @@ _detalhes_database = {
 										["c_total"] = 2599,
 										["n_amt"] = 13,
 										["r_amt"] = 0,
-										["g_dmg"] = 0,
+										["MISS"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
@@ -41205,16 +41205,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26635",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 18017.005568,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 18017.005568,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26635-00001296C2",
-							["classe"] = "UNKNOW",
+							["aID"] = "26635",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 								["Kentta-Gehennas"] = true,
@@ -41233,7 +41232,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005568,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Warrior",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41284,16 +41284,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26623",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 6620.004822,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 6620.004822,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26623",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -41306,7 +41305,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.004822,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Scourge Brute",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41354,16 +41354,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26636",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 4578.005006,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4578.005006,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26636",
 							["damage_from"] = {
 								["Drakkari Guardian"] = true,
 							},
@@ -41376,7 +41375,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.005006,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Risen Drakkari Soulmage",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41424,16 +41424,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26630",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 2522.008737,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 2522.008737,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["damage_from"] = {
 								["Drakkari Invader"] = true,
 							},
@@ -41446,7 +41445,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008737,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Trollgore",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41523,16 +41523,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "26639",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 695.006161,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 695.006161,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -41544,7 +41543,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.006161,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Shaman",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -41617,16 +41617,15 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "27709",
+							["classe"] = "UNKNOW",
 							["total_without_pet"] = 444.001468,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 444.001468,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-4479-600-3543-27709-00001296C5",
-							["classe"] = "UNKNOW",
+							["aID"] = "27709",
 							["damage_from"] = {
 								["Trollgore"] = true,
 							},
@@ -41639,7 +41638,8 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.001468,
 							["end_time"] = 1720882906,
 							["boss_fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Drakkari Invader",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -42000,13 +42000,12 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Tatenen-Gehennas"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4813-058D547F",
+							["classe"] = "MAGE",
 							["totalover"] = 0.00321,
 							["total_without_pet"] = 0.00321,
 							["total"] = 0.00321,
@@ -42024,12 +42023,13 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["totalover_without_pet"] = 0.00321,
 							["healing_taken"] = 3891.00321,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Tatenen-Gehennas"] = true,
 							},
 							["end_time"] = 1720882906,
+							["aID"] = "4813-058D547F",
 							["heal_enemy_amt"] = 0,
-							["classe"] = "MAGE",
-							["nome"] = "Bizonacci-Mandokir",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
@@ -42037,7 +42037,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1720882906,
-							["boss_fight_component"] = true,
+							["nome"] = "Bizonacci-Mandokir",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.00321,
@@ -42382,28 +42382,28 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-055EF2D8",
 							["last_event"] = 1720882905,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-055EF2D8",
 							["nome"] = "Tatenen-Gehennas",
+							["serial"] = "Player-4476-055EF2D8",
+							["aID"] = "4476-055EF2D8",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26639",
 							["monster"] = true,
 							["nome"] = "Drakkari Shaman",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26639",
-							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
+							["tipo"] = 4,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -42427,15 +42427,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["boss_fight_component"] = true,
 							["grupo"] = true,
-							["aID"] = "4476-056A5F33",
 							["last_event"] = 1720882902,
 							["tipo"] = 4,
-							["serial"] = "Player-4476-056A5F33",
 							["nome"] = "Kentta-Gehennas",
+							["serial"] = "Player-4476-056A5F33",
+							["aID"] = "4476-056A5F33",
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
@@ -42446,8 +42446,8 @@ _detalhes_database = {
 							["spec"] = 63,
 							["grupo"] = true,
 							["nome"] = "Disorderr-Gehennas",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Player-4476-058DD3B9",
 							["aID"] = "4476-058DD3B9",
 						}, -- [5]
@@ -42455,14 +42455,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "26630",
 							["monster"] = true,
 							["nome"] = "Trollgore",
 							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "26630",
-							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
 							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
+							["tipo"] = 4,
 						}, -- [6]
 					},
 				}, -- [4]
@@ -44143,41 +44143,16 @@ _detalhes_database = {
 				},
 				["aura_timeline"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Bizonacci-Mandokir"] = 0.00321,
-							["Handrmandr"] = 0.006689,
-							["Kentta-Gehennas"] = 0.008015,
-							["Tatenen-Gehennas"] = 7375.00644,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tatenen-Gehennas"] = 468.006252,
-							["Kentta-Gehennas"] = 5345.003618,
-							["Disorderr-Gehennas"] = 13961.001311,
-							["Bizonacci-Mandokir"] = 20098.003839,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "17:01:40",
 				["end_time"] = 273682.248,
 				["mapId"] = 600,
 				["combat_id"] = 1,
 				["overall_added"] = true,
 				["TimeData"] = {
 				},
+				["EncounterName"] = "Trollgore",
 				["spells_cast_timeline"] = {
 				},
-				["EncounterName"] = "Trollgore",
 				["frags"] = {
 					["Spider"] = 2,
 					["Drakkari Invader"] = 2,
@@ -44220,7 +44195,32 @@ _detalhes_database = {
 				["combat_counter"] = 2208,
 				["start_time"] = 273670.902,
 				["contra"] = "Risen Drakkari Warrior",
-				["data_inicio"] = "17:01:40",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Bizonacci-Mandokir"] = 0.00321,
+							["Handrmandr"] = 0.006689,
+							["Kentta-Gehennas"] = 0.008015,
+							["Tatenen-Gehennas"] = 7375.00644,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Tatenen-Gehennas"] = 468.006252,
+							["Kentta-Gehennas"] = 5345.003618,
+							["Disorderr-Gehennas"] = 13961.001311,
+							["Bizonacci-Mandokir"] = 20098.003839,
+						}, -- [1]
+					},
+				},
 			}, -- [8]
 		},
 	},
@@ -44274,7 +44274,7 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
-	["last_version"] = "4.4.0 12809",
+	["last_version"] = "4.4.0 12811",
 	["player_stats"] = {
 	},
 	["SoloTablesSaved"] = {
@@ -44880,395 +44880,6 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["track_hunter_frenzy"] = false,
 	},
-	["last_day"] = "16",
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["enabled"] = true,
-			["animate"] = false,
-			["hide_pull_bar"] = false,
-			["author"] = "Terciob",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["usefocus"] = false,
-			["updatespeed"] = 1,
-			["playSound"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["absolute_mode"] = false,
-			["useclasscolors"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["disable_gouge"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-			["max_compares"] = 4,
-			["compare_type"] = 1,
-		},
-		["DETAILS_PLUGIN_VANGUARD"] = {
-			["tank_block_size_height"] = 50,
-			["show_power_bar"] = false,
-			["first_run"] = false,
-			["aura_timer_text_size"] = 14,
-			["tank_block_castbar_size_height"] = 16,
-			["show_health_bar"] = true,
-			["aura_offset_y"] = 0,
-			["enabled"] = true,
-			["show_cast_bar"] = false,
-			["author"] = "Terciob",
-			["tank_block_size"] = 150,
-			["bar_height"] = 24,
-			["tank_block_texture"] = "Details Serenity",
-			["show_inc_bars"] = true,
-			["tank_block_powerbar_size_height"] = 10,
-			["tank_block_height"] = 40,
-			["tank_block_color"] = {
-				0.074509, -- [1]
-				0.035294, -- [2]
-				0.035294, -- [3]
-				0.832845, -- [4]
-			},
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
-			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["author"] = "Terciob",
-			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
-			["show_icon"] = 5,
-			["opened"] = 0,
-			["hide_on_combat"] = false,
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["use_square_mode"] = false,
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["arrow_anchor_y"] = 0,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_x"] = 0,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -183.107162475586,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["point"] = "RIGHT",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 18,
-			["scale"] = 1,
-		},
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["cached_roles"] = {
-		["Player-4454-058A52AF"] = "NONE",
-		["Player-4477-056F5DBC"] = "DAMAGER",
-		["Player-4476-0571B79B"] = "HEALER",
-		["Player-4476-058A1E64"] = "HEALER",
-		["Player-4477-034D0389"] = "DAMAGER",
-		["Player-4476-057C28F5"] = "HEALER",
-		["Player-4454-057FDF5D"] = "NONE",
-		["Player-4476-0570551B"] = "DAMAGER",
-		["Player-4454-01767480"] = "DAMAGER",
-		["Player-4476-057EA889"] = "DAMAGER",
-		["Player-4442-0497F433"] = "DAMAGER",
-		["Player-4476-058A324E"] = "DAMAGER",
-		["Player-4441-047A82BB"] = "HEALER",
-		["Player-4465-042C47ED"] = "DAMAGER",
-		["Player-4477-05693FA2"] = "DAMAGER",
-		["Player-4465-03803920"] = "HEALER",
-		["Player-4476-056E8433"] = "NONE",
-		["Player-4464-046124C6"] = "DAMAGER",
-		["Player-4465-049558EA"] = "DAMAGER",
-		["Player-4476-057E9251"] = "NONE",
-		["Player-4476-058D7462"] = "HEALER",
-		["Player-4476-058C323C"] = "DAMAGER",
-		["Player-4465-04976E7D"] = "DAMAGER",
-		["Player-4442-048F602B"] = "DAMAGER",
-		["Player-4465-04963A71"] = "HEALER",
-		["Player-4476-0583C40E"] = "DAMAGER",
-		["Player-4454-033CFD4C"] = "NONE",
-		["Player-4477-051B613F"] = "DAMAGER",
-		["Player-4441-049E56A0"] = "DAMAGER",
-		["Player-4465-048D53DE"] = "DAMAGER",
-		["Player-4476-0561E16E"] = "NONE",
-		["Player-4454-05706C5B"] = "DAMAGER",
-		["Player-4476-0584455F"] = "DAMAGER",
-		["Player-4441-0485DBAE"] = "DAMAGER",
-		["Player-4477-04CCB787"] = "TANK",
-		["Player-4442-048E6D86"] = "DAMAGER",
-		["Player-4476-058ACCF6"] = "NONE",
-		["Player-4465-044B8CE9"] = "DAMAGER",
-		["Player-4476-058BC287"] = "DAMAGER",
-		["Player-4476-05818651"] = "DAMAGER",
-		["Player-4476-057FB81E"] = "HEALER",
-		["Player-4476-055BB254"] = "DAMAGER",
-		["Player-4476-05643C28"] = "DAMAGER",
-		["Player-4477-0581BE96"] = "HEALER",
-		["Player-4476-057E7E86"] = "DAMAGER",
-		["Player-4476-0584C7A8"] = "DAMAGER",
-		["Player-4476-03BEC040"] = "DAMAGER",
-		["Player-4476-055EF2D8"] = "NONE",
-		["Player-4476-057E9139"] = "HEALER",
-		["Player-4476-0583FCB8"] = "DAMAGER",
-		["Player-4464-049BEC2B"] = "HEALER",
-		["Player-4465-0499A0A9"] = "DAMAGER",
-		["Player-4476-05817180"] = "DAMAGER",
-		["Player-4476-0516E768"] = "NONE",
-		["Player-4477-044125E6"] = "DAMAGER",
-		["Player-4476-045978E3"] = "DAMAGER",
-		["Player-4465-04999D6A"] = "DAMAGER",
-		["Player-4464-0434E814"] = "HEALER",
-		["Player-4465-03B70E92"] = "DAMAGER",
-		["Player-4476-0589DE4E"] = "DAMAGER",
-		["Player-4465-0459FF69"] = "DAMAGER",
-		["Player-4477-04E7F532"] = "HEALER",
-		["Player-4465-0495E81E"] = "HEALER",
-		["Player-4476-057DA985"] = "DAMAGER",
-		["Player-4454-057776FC"] = "HEALER",
-		["Player-4477-058B65DD"] = "DAMAGER",
-		["Player-4442-0489BA00"] = "DAMAGER",
-		["Player-4465-0499951D"] = "DAMAGER",
-		["Player-4453-0573C4CF"] = "DAMAGER",
-		["Player-4465-04526356"] = "DAMAGER",
-		["Player-4476-057F14C7"] = "DAMAGER",
-		["Player-4476-05845918"] = "DAMAGER",
-		["Player-4476-057567F1"] = "HEALER",
-		["Player-4454-0587042B"] = "HEALER",
-		["Player-4465-0495D91E"] = "DAMAGER",
-		["Player-4477-055F4830"] = "DAMAGER",
-		["Player-4464-0491F7C3"] = "HEALER",
-		["Player-4465-0496203A"] = "DAMAGER",
-		["Player-4465-049415C4"] = "DAMAGER",
-		["Player-4441-0491E3A2"] = "NONE",
-		["Player-4465-049711AB"] = "DAMAGER",
-		["Player-4476-051E68AD"] = "HEALER",
-		["Player-4476-057C09BD"] = "DAMAGER",
-		["Player-4465-048788CA"] = "HEALER",
-		["Player-4476-0585B53C"] = "HEALER",
-		["Player-4476-05706EAE"] = "DAMAGER",
-		["Player-4465-0497FB52"] = "HEALER",
-		["Player-4476-05744E43"] = "DAMAGER",
-		["Player-4476-0570530C"] = "DAMAGER",
-		["Player-4476-0575B50C"] = "HEALER",
-		["Player-4477-051F50E8"] = "HEALER",
-		["Player-4476-03342002"] = "DAMAGER",
-		["Player-4477-03B563F6"] = "DAMAGER",
-		["Player-4456-05888313"] = "DAMAGER",
-		["Player-4476-057FF733"] = "HEALER",
-		["Player-4464-0496520E"] = "NONE",
-		["Player-4465-0493CA11"] = "DAMAGER",
-		["Player-4465-0499959E"] = "DAMAGER",
-		["Player-4442-0494EC36"] = "DAMAGER",
-		["Player-4465-049CE881"] = "DAMAGER",
-		["Player-4442-048E9FB7"] = "HEALER",
-		["Player-4442-0495A79B"] = "DAMAGER",
-		["Player-4465-045DF342"] = "DAMAGER",
-		["Player-4476-057E9F1E"] = "NONE",
-		["Player-4465-04946EC9"] = "DAMAGER",
-		["Player-4476-04DF55E9"] = "DAMAGER",
-		["Player-4476-05402640"] = "DAMAGER",
-		["Player-4465-049399C9"] = "DAMAGER",
-		["Player-4476-0580C7A6"] = "HEALER",
-		["Player-4441-048768D1"] = "DAMAGER",
-		["Player-4442-04974655"] = "DAMAGER",
-		["Player-4477-056F7F8C"] = "DAMAGER",
-		["Player-4442-0495215C"] = "HEALER",
-		["Player-4476-058DD3B9"] = "DAMAGER",
-		["Player-4476-05821E5E"] = "DAMAGER",
-		["Player-4441-049E5CBF"] = "DAMAGER",
-		["Player-4476-05817900"] = "HEALER",
-		["Player-4477-04B74D9C"] = "DAMAGER",
-		["Player-4476-0581CE32"] = "DAMAGER",
-		["Player-4442-04875E76"] = "DAMAGER",
-		["Player-4464-049CCB1C"] = "DAMAGER",
-		["Player-4477-055CC94F"] = "HEALER",
-		["Player-4476-03651E50"] = "DAMAGER",
-		["Player-4454-056EEAE7"] = "DAMAGER",
-		["Player-4477-057E169E"] = "DAMAGER",
-		["Player-4464-048A0E2B"] = "DAMAGER",
-		["Player-4476-058A7B76"] = "DAMAGER",
-		["Player-4454-058B0D7A"] = "HEALER",
-		["Player-4477-057085B8"] = "NONE",
-		["Player-4442-0491836D"] = "DAMAGER",
-		["Player-4476-039C29F2"] = "DAMAGER",
-		["Player-4476-05899BB2"] = "DAMAGER",
-		["Player-4465-048B7484"] = "HEALER",
-		["Player-4465-0490F8E0"] = "DAMAGER",
-		["Player-4476-057F40FB"] = "DAMAGER",
-		["Player-4476-056B60C2"] = "DAMAGER",
-		["Player-4477-056FAF5C"] = "HEALER",
-		["Player-4464-04974604"] = "DAMAGER",
-		["Player-4464-049C2065"] = "DAMAGER",
-		["Player-4465-049287D6"] = "DAMAGER",
-		["Player-4477-057FFE93"] = "DAMAGER",
-		["Player-4813-058D547F"] = "DAMAGER",
-		["Player-4465-0498D624"] = "HEALER",
-		["Player-4464-048F193F"] = "DAMAGER",
-		["Player-4465-049F110A"] = "DAMAGER",
-		["Player-4476-05840D83"] = "HEALER",
-		["Player-4465-048D3FC8"] = "NONE",
-		["Player-4476-029F9EF2"] = "DAMAGER",
-		["Player-4465-04953BDA"] = "DAMAGER",
-		["Player-4476-057055AF"] = "DAMAGER",
-		["Player-4476-0573C518"] = "HEALER",
-		["Player-4464-049F0B75"] = "DAMAGER",
-		["Player-4465-049399CD"] = "DAMAGER",
-		["Player-4441-049FDC1D"] = "DAMAGER",
-		["Player-4464-04972955"] = "DAMAGER",
-		["Player-4454-0584A557"] = "DAMAGER",
-		["Player-4454-0568FA6E"] = "DAMAGER",
-		["Player-4476-051E492B"] = "DAMAGER",
-		["Player-4476-058C2637"] = "NONE",
-		["Player-4476-0584457B"] = "DAMAGER",
-		["Player-4464-049F0E00"] = "DAMAGER",
-		["Player-4477-05762D4E"] = "DAMAGER",
-		["Player-4477-05847D3B"] = "HEALER",
-		["Player-4477-0569B72F"] = "DAMAGER",
-		["Player-4465-048DCD82"] = "DAMAGER",
-		["Player-4464-041D6C40"] = "DAMAGER",
-		["Player-4465-04976E11"] = "DAMAGER",
-		["Player-4465-049E05F6"] = "NONE",
-		["Player-4454-050DC61C"] = "HEALER",
-		["Player-4454-04E537DC"] = "DAMAGER",
-		["Player-4476-057E3716"] = "DAMAGER",
-		["Player-4476-05870779"] = "DAMAGER",
-		["Player-4477-0319CA1E"] = "DAMAGER",
-		["Player-4477-05778B9C"] = "DAMAGER",
-		["Player-4476-0586ABE8"] = "DAMAGER",
-		["Player-4465-0491D4F2"] = "HEALER",
-		["Player-4454-05700970"] = "DAMAGER",
-		["Player-4465-0496DF68"] = "DAMAGER",
-		["Player-4476-056C05A3"] = "HEALER",
-		["Player-4476-03EE896D"] = "DAMAGER",
-		["Player-4465-048F2236"] = "HEALER",
-		["Player-4465-0479C382"] = "DAMAGER",
-		["Player-4477-057D39EA"] = "DAMAGER",
-		["Player-4476-0585F39A"] = "HEALER",
-		["Player-4465-0487613D"] = "HEALER",
-		["Player-4442-049EE628"] = "DAMAGER",
-		["Player-4465-02FE1B94"] = "HEALER",
-		["Player-4465-0490907D"] = "HEALER",
-		["Player-4477-057FFEAB"] = "DAMAGER",
-		["Player-4476-05808389"] = "HEALER",
-		["Player-4813-035170C2"] = "DAMAGER",
-		["Player-4465-04964CE7"] = "DAMAGER",
-		["Player-4465-04918A06"] = "DAMAGER",
-		["Player-4476-0580E3BE"] = "DAMAGER",
-		["Player-4442-04904149"] = "HEALER",
-		["Player-4476-05685EC4"] = "HEALER",
-		["Player-4477-058C7682"] = "DAMAGER",
-		["Player-4477-05818042"] = "DAMAGER",
-		["Player-4465-049A2AB3"] = "HEALER",
-		["Player-4476-0576250E"] = "DAMAGER",
-		["Player-4476-056590AA"] = "DAMAGER",
-		["Player-4477-0588D332"] = "HEALER",
-		["Player-4476-0564F595"] = "HEALER",
-		["Player-4464-049CE4C1"] = "DAMAGER",
-		["Player-4476-05765938"] = "HEALER",
-		["Player-4465-049145AF"] = "DAMAGER",
-		["Player-4476-05863A28"] = "DAMAGER",
-		["Player-4477-0477C33F"] = "DAMAGER",
-		["Player-4454-057E5F65"] = "DAMAGER",
-		["Player-4476-057FD640"] = "DAMAGER",
-		["Player-4464-049205D1"] = "DAMAGER",
-		["Player-4454-0575AD7E"] = "DAMAGER",
-		["Player-4476-058A50BA"] = "DAMAGER",
-		["Player-4476-0583603B"] = "DAMAGER",
-		["Player-4476-057FF056"] = "DAMAGER",
-		["Player-4476-057F2ED9"] = "DAMAGER",
-		["Player-4465-048AC9A5"] = "DAMAGER",
-		["Player-4465-0499B494"] = "DAMAGER",
-		["Player-4465-04999D74"] = "DAMAGER",
-		["Player-4465-049421F2"] = "DAMAGER",
-		["Player-4464-0002857E"] = "HEALER",
-		["Player-4464-02343D26"] = "DAMAGER",
-		["Player-4701-034E5A25"] = "DAMAGER",
-		["Player-4476-057EBFC1"] = "HEALER",
-		["Player-4465-048D6805"] = "DAMAGER",
-		["Player-4477-05825876"] = "NONE",
-		["Player-4465-0496764F"] = "DAMAGER",
-		["Player-4442-048710AA"] = "DAMAGER",
-		["Player-4476-058184EA"] = "HEALER",
-		["Player-4476-0581FD4A"] = "DAMAGER",
-		["Player-4465-04917D20"] = "DAMAGER",
-		["Player-4477-05847D3D"] = "DAMAGER",
-		["Player-4476-05808F01"] = "DAMAGER",
-		["Player-4465-04887C3E"] = "DAMAGER",
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_instance_time"] = 1720882872,
 	["local_instances_config"] = {
 		{
 			["modo"] = 2,
@@ -45375,6 +44986,393 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
+	["mythic_plus_log"] = {
+	},
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Terciob",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["usefocus"] = false,
+			["updatespeed"] = 1,
+			["playSound"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["absolute_mode"] = false,
+			["useclasscolors"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["disable_gouge"] = false,
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+			["max_compares"] = 4,
+			["compare_type"] = 1,
+		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["tank_block_size_height"] = 50,
+			["show_power_bar"] = false,
+			["first_run"] = false,
+			["aura_timer_text_size"] = 14,
+			["tank_block_castbar_size_height"] = 16,
+			["show_health_bar"] = true,
+			["aura_offset_y"] = 0,
+			["enabled"] = true,
+			["show_cast_bar"] = false,
+			["author"] = "Terciob",
+			["tank_block_size"] = 150,
+			["bar_height"] = 24,
+			["tank_block_texture"] = "Details Serenity",
+			["show_inc_bars"] = true,
+			["tank_block_powerbar_size_height"] = 10,
+			["tank_block_height"] = 40,
+			["tank_block_color"] = {
+				0.074509, -- [1]
+				0.035294, -- [2]
+				0.035294, -- [3]
+				0.832845, -- [4]
+			},
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["author"] = "Terciob",
+			["window_scale"] = 1,
+			["encounter_timers_dbm"] = {
+			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["use_square_mode"] = false,
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["arrow_anchor_y"] = 0,
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_x"] = 0,
+			["author"] = "Details! Team",
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["font_size"] = 10,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["point"] = "RIGHT",
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["row_height"] = 18,
+			["scale"] = 1,
+		},
+	},
+	["cached_roles"] = {
+		["Player-4476-03651E50"] = "DAMAGER",
+		["Player-4477-0588D332"] = "HEALER",
+		["Player-4476-0571B79B"] = "HEALER",
+		["Player-4476-058A1E64"] = "HEALER",
+		["Player-4477-034D0389"] = "DAMAGER",
+		["Player-4476-057C28F5"] = "HEALER",
+		["Player-4454-057FDF5D"] = "NONE",
+		["Player-4476-0570551B"] = "DAMAGER",
+		["Player-4441-048768D1"] = "DAMAGER",
+		["Player-4476-057EA889"] = "DAMAGER",
+		["Player-4442-0497F433"] = "DAMAGER",
+		["Player-4476-058A324E"] = "DAMAGER",
+		["Player-4441-047A82BB"] = "HEALER",
+		["Player-4465-042C47ED"] = "DAMAGER",
+		["Player-4477-05693FA2"] = "DAMAGER",
+		["Player-4465-03803920"] = "HEALER",
+		["Player-4476-056E8433"] = "NONE",
+		["Player-4477-05825876"] = "NONE",
+		["Player-4454-0575AD7E"] = "DAMAGER",
+		["Player-4465-0497FB52"] = "HEALER",
+		["Player-4476-058D7462"] = "HEALER",
+		["Player-4476-058C323C"] = "DAMAGER",
+		["Player-4465-04976E7D"] = "DAMAGER",
+		["Player-4442-048F602B"] = "DAMAGER",
+		["Player-4465-04963A71"] = "HEALER",
+		["Player-4476-0583C40E"] = "DAMAGER",
+		["Player-4454-033CFD4C"] = "NONE",
+		["Player-4477-051B613F"] = "DAMAGER",
+		["Player-4441-049E56A0"] = "DAMAGER",
+		["Player-4465-048D53DE"] = "DAMAGER",
+		["Player-4476-0561E16E"] = "NONE",
+		["Player-4454-05706C5B"] = "DAMAGER",
+		["Player-4476-0584455F"] = "DAMAGER",
+		["Player-4441-0485DBAE"] = "DAMAGER",
+		["Player-4476-057567F1"] = "HEALER",
+		["Player-4442-048E6D86"] = "DAMAGER",
+		["Player-4476-057DA985"] = "DAMAGER",
+		["Player-4465-044B8CE9"] = "DAMAGER",
+		["Player-4476-058BC287"] = "DAMAGER",
+		["Player-4476-05818651"] = "DAMAGER",
+		["Player-4476-057FB81E"] = "HEALER",
+		["Player-4477-0581BE96"] = "HEALER",
+		["Player-4476-05643C28"] = "DAMAGER",
+		["Player-4476-055EF2D8"] = "NONE",
+		["Player-4476-057E7E86"] = "DAMAGER",
+		["Player-4476-0584C7A8"] = "DAMAGER",
+		["Player-4476-03BEC040"] = "DAMAGER",
+		["Player-4441-0491E3A2"] = "NONE",
+		["Player-4476-057E9139"] = "HEALER",
+		["Player-4476-0583FCB8"] = "DAMAGER",
+		["Player-4464-049BEC2B"] = "HEALER",
+		["Player-4465-0499A0A9"] = "DAMAGER",
+		["Player-4476-05817180"] = "DAMAGER",
+		["Player-4477-044125E6"] = "DAMAGER",
+		["Player-4476-058184EA"] = "HEALER",
+		["Player-4476-045978E3"] = "DAMAGER",
+		["Player-4465-04999D6A"] = "DAMAGER",
+		["Player-4464-0434E814"] = "HEALER",
+		["Player-4476-055BB254"] = "DAMAGER",
+		["Player-4476-0589DE4E"] = "DAMAGER",
+		["Player-4464-0002857E"] = "HEALER",
+		["Player-4477-04E7F532"] = "HEALER",
+		["Player-4477-04CCB787"] = "TANK",
+		["Player-4464-046124C6"] = "DAMAGER",
+		["Player-4454-057776FC"] = "HEALER",
+		["Player-4477-058B65DD"] = "DAMAGER",
+		["Player-4442-0489BA00"] = "DAMAGER",
+		["Player-4465-0499951D"] = "DAMAGER",
+		["Player-4453-0573C4CF"] = "DAMAGER",
+		["Player-4465-04526356"] = "DAMAGER",
+		["Player-4465-03B70E92"] = "DAMAGER",
+		["Player-4476-05845918"] = "DAMAGER",
+		["Player-4454-057E5F65"] = "DAMAGER",
+		["Player-4476-058ACCF6"] = "NONE",
+		["Player-4465-0495D91E"] = "DAMAGER",
+		["Player-4477-055F4830"] = "DAMAGER",
+		["Player-4464-0491F7C3"] = "HEALER",
+		["Player-4465-0496203A"] = "DAMAGER",
+		["Player-4465-049415C4"] = "DAMAGER",
+		["Player-4465-0495E81E"] = "HEALER",
+		["Player-4465-049558EA"] = "DAMAGER",
+		["Player-4476-051E68AD"] = "HEALER",
+		["Player-4476-057C09BD"] = "DAMAGER",
+		["Player-4465-048788CA"] = "HEALER",
+		["Player-4476-0585B53C"] = "HEALER",
+		["Player-4476-05706EAE"] = "DAMAGER",
+		["Player-4454-01767480"] = "DAMAGER",
+		["Player-4476-05744E43"] = "DAMAGER",
+		["Player-4476-0570530C"] = "DAMAGER",
+		["Player-4476-0575B50C"] = "HEALER",
+		["Player-4477-051F50E8"] = "HEALER",
+		["Player-4476-03342002"] = "DAMAGER",
+		["Player-4477-03B563F6"] = "DAMAGER",
+		["Player-4456-05888313"] = "DAMAGER",
+		["Player-4476-057FF733"] = "HEALER",
+		["Player-4464-0496520E"] = "NONE",
+		["Player-4465-0493CA11"] = "DAMAGER",
+		["Player-4465-0499959E"] = "DAMAGER",
+		["Player-4476-057E9251"] = "NONE",
+		["Player-4477-04B74D9C"] = "DAMAGER",
+		["Player-4442-048E9FB7"] = "HEALER",
+		["Player-4465-048D6805"] = "DAMAGER",
+		["Player-4465-045DF342"] = "DAMAGER",
+		["Player-4476-057E9F1E"] = "NONE",
+		["Player-4465-04946EC9"] = "DAMAGER",
+		["Player-4476-04DF55E9"] = "DAMAGER",
+		["Player-4476-057F2ED9"] = "DAMAGER",
+		["Player-4465-049399C9"] = "DAMAGER",
+		["Player-4476-0580C7A6"] = "HEALER",
+		["Player-4477-056F7F8C"] = "DAMAGER",
+		["Player-4442-04974655"] = "DAMAGER",
+		["Player-4476-058DD3B9"] = "DAMAGER",
+		["Player-4442-0495215C"] = "HEALER",
+		["Player-4476-058A7B76"] = "DAMAGER",
+		["Player-4476-05821E5E"] = "DAMAGER",
+		["Player-4441-049E5CBF"] = "DAMAGER",
+		["Player-4464-048A0E2B"] = "DAMAGER",
+		["Player-4442-0494EC36"] = "DAMAGER",
+		["Player-4477-056F5DBC"] = "DAMAGER",
+		["Player-4442-04875E76"] = "DAMAGER",
+		["Player-4476-05817900"] = "HEALER",
+		["Player-4477-055CC94F"] = "HEALER",
+		["Player-4454-058A52AF"] = "NONE",
+		["Player-4454-056EEAE7"] = "DAMAGER",
+		["Player-4477-057E169E"] = "DAMAGER",
+		["Player-4476-05863A28"] = "DAMAGER",
+		["Player-4464-049CCB1C"] = "DAMAGER",
+		["Player-4454-058B0D7A"] = "HEALER",
+		["Player-4477-057085B8"] = "NONE",
+		["Player-4464-049C2065"] = "DAMAGER",
+		["Player-4476-039C29F2"] = "DAMAGER",
+		["Player-4476-05899BB2"] = "DAMAGER",
+		["Player-4477-058C7682"] = "DAMAGER",
+		["Player-4476-05685EC4"] = "HEALER",
+		["Player-4476-057F40FB"] = "DAMAGER",
+		["Player-4476-056B60C2"] = "DAMAGER",
+		["Player-4477-056FAF5C"] = "HEALER",
+		["Player-4464-04974604"] = "DAMAGER",
+		["Player-4476-05840D83"] = "HEALER",
+		["Player-4465-049287D6"] = "DAMAGER",
+		["Player-4465-048B7484"] = "HEALER",
+		["Player-4813-058D547F"] = "DAMAGER",
+		["Player-4465-0490F8E0"] = "DAMAGER",
+		["Player-4464-048F193F"] = "DAMAGER",
+		["Player-4465-049F110A"] = "DAMAGER",
+		["Player-4442-0491836D"] = "DAMAGER",
+		["Player-4465-048D3FC8"] = "NONE",
+		["Player-4476-029F9EF2"] = "DAMAGER",
+		["Player-4465-04953BDA"] = "DAMAGER",
+		["Player-4476-057055AF"] = "DAMAGER",
+		["Player-4476-0573C518"] = "HEALER",
+		["Player-4464-049F0B75"] = "DAMAGER",
+		["Player-4454-0584A557"] = "DAMAGER",
+		["Player-4441-049FDC1D"] = "DAMAGER",
+		["Player-4464-04972955"] = "DAMAGER",
+		["Player-4477-057FFEAB"] = "DAMAGER",
+		["Player-4454-0568FA6E"] = "DAMAGER",
+		["Player-4476-051E492B"] = "DAMAGER",
+		["Player-4476-058C2637"] = "NONE",
+		["Player-4476-0584457B"] = "DAMAGER",
+		["Player-4464-049F0E00"] = "DAMAGER",
+		["Player-4477-05762D4E"] = "DAMAGER",
+		["Player-4477-05847D3B"] = "HEALER",
+		["Player-4477-0569B72F"] = "DAMAGER",
+		["Player-4465-048DCD82"] = "DAMAGER",
+		["Player-4464-041D6C40"] = "DAMAGER",
+		["Player-4465-04976E11"] = "DAMAGER",
+		["Player-4465-049E05F6"] = "NONE",
+		["Player-4454-050DC61C"] = "HEALER",
+		["Player-4454-04E537DC"] = "DAMAGER",
+		["Player-4476-057E3716"] = "DAMAGER",
+		["Player-4476-05870779"] = "DAMAGER",
+		["Player-4477-0319CA1E"] = "DAMAGER",
+		["Player-4477-05778B9C"] = "DAMAGER",
+		["Player-4476-0586ABE8"] = "DAMAGER",
+		["Player-4465-0491D4F2"] = "HEALER",
+		["Player-4454-05700970"] = "DAMAGER",
+		["Player-4465-0496DF68"] = "DAMAGER",
+		["Player-4476-056C05A3"] = "HEALER",
+		["Player-4476-03EE896D"] = "DAMAGER",
+		["Player-4465-048F2236"] = "HEALER",
+		["Player-4465-0479C382"] = "DAMAGER",
+		["Player-4477-057D39EA"] = "DAMAGER",
+		["Player-4476-0585F39A"] = "HEALER",
+		["Player-4465-0487613D"] = "HEALER",
+		["Player-4442-049EE628"] = "DAMAGER",
+		["Player-4465-02FE1B94"] = "HEALER",
+		["Player-4465-0490907D"] = "HEALER",
+		["Player-4465-049399CD"] = "DAMAGER",
+		["Player-4476-05808389"] = "HEALER",
+		["Player-4813-035170C2"] = "DAMAGER",
+		["Player-4465-04964CE7"] = "DAMAGER",
+		["Player-4465-04918A06"] = "DAMAGER",
+		["Player-4476-0580E3BE"] = "DAMAGER",
+		["Player-4442-04904149"] = "HEALER",
+		["Player-4465-0498D624"] = "HEALER",
+		["Player-4477-057FFE93"] = "DAMAGER",
+		["Player-4477-05818042"] = "DAMAGER",
+		["Player-4465-049A2AB3"] = "HEALER",
+		["Player-4476-0576250E"] = "DAMAGER",
+		["Player-4476-056590AA"] = "DAMAGER",
+		["Player-4476-05402640"] = "DAMAGER",
+		["Player-4476-0564F595"] = "HEALER",
+		["Player-4464-049CE4C1"] = "DAMAGER",
+		["Player-4476-05765938"] = "HEALER",
+		["Player-4465-049145AF"] = "DAMAGER",
+		["Player-4476-0581CE32"] = "DAMAGER",
+		["Player-4477-0477C33F"] = "DAMAGER",
+		["Player-4465-049CE881"] = "DAMAGER",
+		["Player-4476-057FD640"] = "DAMAGER",
+		["Player-4464-049205D1"] = "DAMAGER",
+		["Player-4465-049711AB"] = "DAMAGER",
+		["Player-4476-058A50BA"] = "DAMAGER",
+		["Player-4476-0583603B"] = "DAMAGER",
+		["Player-4476-057FF056"] = "DAMAGER",
+		["Player-4454-0587042B"] = "HEALER",
+		["Player-4465-048AC9A5"] = "DAMAGER",
+		["Player-4465-0499B494"] = "DAMAGER",
+		["Player-4465-04999D74"] = "DAMAGER",
+		["Player-4465-049421F2"] = "DAMAGER",
+		["Player-4465-0459FF69"] = "DAMAGER",
+		["Player-4464-02343D26"] = "DAMAGER",
+		["Player-4701-034E5A25"] = "DAMAGER",
+		["Player-4476-057EBFC1"] = "HEALER",
+		["Player-4442-0495A79B"] = "DAMAGER",
+		["Player-4476-057F14C7"] = "DAMAGER",
+		["Player-4465-0496764F"] = "DAMAGER",
+		["Player-4476-0516E768"] = "NONE",
+		["Player-4442-048710AA"] = "DAMAGER",
+		["Player-4476-0581FD4A"] = "DAMAGER",
+		["Player-4465-04917D20"] = "DAMAGER",
+		["Player-4477-05847D3D"] = "DAMAGER",
+		["Player-4476-05808F01"] = "DAMAGER",
+		["Player-4465-04887C3E"] = "DAMAGER",
+	},
+	["last_day"] = "17",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["last_instance_time"] = 1720882872,
 	["ignore_nicktag"] = false,
 	["nick_tag_cache"] = {
 		["nextreset"] = 1722418684,
@@ -45817,7 +45815,7 @@ _detalhes_database = {
 		}, -- [1]
 	},
 	["character_data"] = {
-		["logons"] = 120,
+		["logons"] = 122,
 	},
 	["combat_counter"] = 2238,
 	["announce_deaths"] = {
@@ -46445,7 +46443,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1794,
 								["targets"] = {
-									["Trollgore"] = 22408,
+									["Scourge Reanimator"] = 3533,
 									["Drakkari Guardian"] = 4953,
 									["Novos the Summoner"] = 20316,
 									["Risen Drakkari Handler"] = 7919,
@@ -46459,8 +46457,8 @@ _detalhes_database = {
 									["Darkweb Recluse"] = 6255,
 									["King Dred"] = 13987,
 									["Risen Drakkari Death Knight"] = 16493,
-									["Scourge Reanimator"] = 3533,
 									["Wretched Belcher"] = 9559,
+									["Trollgore"] = 22408,
 								},
 								["n_total"] = 105936,
 								["n_min"] = 0,
@@ -46649,16 +46647,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 1610.083799,
 					["pets"] = {
 					},
-					["aID"] = "26635",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 1015363.083799,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 1015363.083799,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26635-00001296C2",
-					["classe"] = "UNKNOW",
+					["aID"] = "26635",
 					["damage_from"] = {
 						["Drakkari Guardian"] = true,
 						["Kentta-Gehennas"] = true,
@@ -46679,7 +46676,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Risen Drakkari Warrior",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -46694,9 +46692,9 @@ _detalhes_database = {
 									["Bizonacci-Mandokir"] = 7940,
 								},
 								["n_total"] = 925044,
-								["a_amt"] = 0,
+								["g_dmg"] = 0,
 								["n_min"] = 0,
-								["MISS"] = 35,
+								["a_amt"] = 0,
 								["counter"] = 766,
 								["DODGE"] = 46,
 								["total"] = 1015363,
@@ -46714,7 +46712,7 @@ _detalhes_database = {
 								["c_total"] = 90319,
 								["n_amt"] = 613,
 								["r_amt"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 35,
 							}, -- [1]
 							[47668] = {
 								["c_amt"] = 0,
@@ -46759,16 +46757,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.05197400000000001,
 					["pets"] = {
 					},
-					["aID"] = "26623",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 253191.051974,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 253191.051974,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26623-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26623",
 					["damage_from"] = {
 						["Handrmandr"] = true,
 						["Drakkari Guardian"] = true,
@@ -46785,7 +46782,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Scourge Brute",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -46864,16 +46862,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 1046.071356,
 					["pets"] = {
 					},
-					["aID"] = "26620",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 1516675.071356,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 1516675.071356,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26620-00059296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26620",
 					["damage_from"] = {
 						["Risen Drakkari Warrior"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -46897,7 +46894,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Guardian",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -46919,7 +46917,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 1105,
 								["MISS"] = 51,
-								["r_amt"] = 0,
+								["total"] = 1516494,
 								["c_max"] = 3810,
 								["DODGE"] = 53,
 								["id"] = 1,
@@ -46934,7 +46932,7 @@ _detalhes_database = {
 								["c_total"] = 143355,
 								["n_amt"] = 898,
 								["b_dmg"] = 66788,
-								["total"] = 1516494,
+								["r_amt"] = 0,
 							}, -- [1]
 							[47668] = {
 								["c_amt"] = 0,
@@ -47005,16 +47003,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "26630",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 51244.02890100001,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 51244.02890100001,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26630",
 					["damage_from"] = {
 						["Mirror Image <Bizonacci-Mandokir>"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -47038,7 +47035,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.028901,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Trollgore",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -47057,7 +47055,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 25,
 								["a_amt"] = 0,
-								["r_amt"] = 0,
+								["total"] = 11401,
 								["c_max"] = 0,
 								["DODGE"] = 2,
 								["id"] = 1,
@@ -47072,8 +47070,62 @@ _detalhes_database = {
 								["c_total"] = 0,
 								["n_amt"] = 21,
 								["b_dmg"] = 0,
-								["total"] = 11401,
+								["r_amt"] = 0,
 							}, -- [1]
+							[49639] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 864,
+								["targets"] = {
+									["Handrmandr"] = 1627,
+									["Drakkari Invader"] = 326,
+								},
+								["n_total"] = 1953,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 1953,
+								["c_max"] = 0,
+								["id"] = 49639,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 3,
+								["c_total"] = 0,
+								["n_amt"] = 3,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[49637] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_total"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49637,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 1,
+								["c_total"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
 							[49618] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -47104,32 +47156,6 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[49637] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_total"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 49637,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["c_total"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 							[49555] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -47153,34 +47179,6 @@ _detalhes_database = {
 								["successful_casted"] = 2,
 								["c_total"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[49639] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 864,
-								["targets"] = {
-									["Handrmandr"] = 1627,
-									["Drakkari Invader"] = 326,
-								},
-								["n_total"] = 1953,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 1953,
-								["c_max"] = 0,
-								["id"] = 49639,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["c_total"] = 0,
-								["n_amt"] = 3,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -47232,16 +47230,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "27709",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 1290.015476,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 1290.015476,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-27709-00001296C5",
-					["classe"] = "UNKNOW",
+					["aID"] = "27709",
 					["damage_from"] = {
 						["Trollgore"] = true,
 						["Kentta-Gehennas"] = true,
@@ -47258,7 +47255,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.015476,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Invader",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -47309,16 +47307,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.068529,
 					["pets"] = {
 					},
-					["aID"] = "26636",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 198377.068529,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 198377.068529,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26636-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26636",
 					["damage_from"] = {
 						["Drakkari Guardian"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -47336,7 +47333,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Risen Drakkari Soulmage",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -47350,9 +47348,9 @@ _detalhes_database = {
 									["Drakkari Guardian"] = 194859,
 								},
 								["n_total"] = 186767,
-								["MISS"] = 9,
+								["g_dmg"] = 0,
 								["n_min"] = 0,
-								["a_amt"] = 0,
+								["MISS"] = 9,
 								["counter"] = 165,
 								["DODGE"] = 13,
 								["total"] = 198377,
@@ -47370,7 +47368,7 @@ _detalhes_database = {
 								["c_total"] = 11610,
 								["n_amt"] = 130,
 								["r_amt"] = 0,
-								["g_dmg"] = 0,
+								["a_amt"] = 0,
 							}, -- [1]
 							[47668] = {
 								["c_amt"] = 0,
@@ -47415,16 +47413,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 842.0712130000001,
 					["pets"] = {
 					},
-					["aID"] = "26639",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 79195.07121300002,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 79195.07121300002,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26639-00009296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26639",
 					["damage_from"] = {
 						["Disorderr-Gehennas"] = true,
 						["Bizonacci-Mandokir"] = true,
@@ -47444,7 +47441,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -47631,7 +47629,7 @@ _detalhes_database = {
 								["g_dmg"] = 15175,
 								["counter"] = 424,
 								["MISS"] = 67,
-								["r_amt"] = 0,
+								["total"] = 119825,
 								["c_max"] = 769,
 								["DODGE"] = 26,
 								["id"] = 1,
@@ -47646,7 +47644,7 @@ _detalhes_database = {
 								["c_total"] = 51023,
 								["n_amt"] = 178,
 								["b_dmg"] = 2067,
-								["total"] = 119825,
+								["r_amt"] = 0,
 							}, -- [1]
 							[2098] = {
 								["c_amt"] = 0,
@@ -47961,7 +47959,7 @@ _detalhes_database = {
 						["Drakkari Guardian"] = 3131,
 						["Spider"] = 7,
 						["Risen Drakkari Handler"] = 1517,
-						["Risen Shadowcaster"] = 889,
+						["Beetle"] = 7,
 						["Darkweb Hatchling"] = 1656,
 						["Drakkari Shaman"] = 1604,
 						["Drakkari Scytheclaw"] = 9701,
@@ -47971,8 +47969,8 @@ _detalhes_database = {
 						["Darkweb Recluse"] = 8977,
 						["King Dred"] = 1950,
 						["Rat"] = 7,
-						["Beetle"] = 7,
 						["Flesheating Ghoul"] = 6505,
+						["Risen Shadowcaster"] = 889,
 					},
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -48467,7 +48465,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1873,
 								["targets"] = {
-									["Risen Drakkari Warrior"] = 10711,
+									["Fetid Troll Corpse"] = 1547,
 									["Drakkari Guardian"] = 6833,
 									["Drakkari Scytheclaw"] = 1835,
 									["Risen Drakkari Handler"] = 7891,
@@ -48475,13 +48473,13 @@ _detalhes_database = {
 									["Risen Drakkari Soulmage"] = 1819,
 									["Ghoul Tormentor"] = 6623,
 									["Drakkari Gutripper"] = 1677,
-									["Drakkari Commander"] = 1844,
+									["Risen Drakkari Warrior"] = 10711,
 									["Drakkari Shaman"] = 4926,
-									["Drakkari Raptor Mount"] = 3475,
-									["Risen Drakkari Death Knight"] = 6491,
-									["King Dred"] = 0,
 									["Darkweb Recluse"] = 8641,
-									["Fetid Troll Corpse"] = 1547,
+									["Drakkari Raptor Mount"] = 3475,
+									["King Dred"] = 0,
+									["Risen Drakkari Death Knight"] = 6491,
+									["Drakkari Commander"] = 1844,
 									["Hulking Corpse"] = 1574,
 								},
 								["n_total"] = 55535,
@@ -48869,13 +48867,13 @@ _detalhes_database = {
 									["Flesheating Ghoul"] = 2924,
 									["Drakkari Shaman"] = 2110,
 									["Ghoul Tormentor"] = 2303,
-									["Drakkari Raptor Mount"] = 2433,
+									["Darkweb Recluse"] = 9039,
 									["Risen Drakkari Warrior"] = 9826,
 									["Drakkari Gutripper"] = 6060,
 									["King Dred"] = 7473,
-									["Risen Drakkari Death Knight"] = 7223,
+									["Drakkari Raptor Mount"] = 2433,
 									["Risen Drakkari Bat Rider"] = 1410,
-									["Darkweb Recluse"] = 9039,
+									["Risen Drakkari Death Knight"] = 7223,
 									["Trollgore"] = 11742,
 									["Risen Drakkari Handler"] = 4362,
 								},
@@ -49540,7 +49538,7 @@ _detalhes_database = {
 								["g_dmg"] = 10514,
 								["counter"] = 134,
 								["a_amt"] = 0,
-								["r_amt"] = 0,
+								["total"] = 60515,
 								["c_max"] = 1168,
 								["DODGE"] = 5,
 								["id"] = 1,
@@ -49555,7 +49553,7 @@ _detalhes_database = {
 								["c_total"] = 12334,
 								["n_amt"] = 76,
 								["b_dmg"] = 1501,
-								["total"] = 60515,
+								["r_amt"] = 0,
 							}, -- [1]
 							[81297] = {
 								["c_amt"] = 29,
@@ -50230,9 +50228,9 @@ _detalhes_database = {
 									["Handrmandr"] = 12573,
 								},
 								["n_total"] = 12573,
-								["a_amt"] = 0,
+								["g_dmg"] = 0,
 								["n_min"] = 0,
-								["MISS"] = 1,
+								["a_amt"] = 0,
 								["counter"] = 16,
 								["DODGE"] = 1,
 								["total"] = 12573,
@@ -50250,7 +50248,7 @@ _detalhes_database = {
 								["c_total"] = 0,
 								["n_amt"] = 13,
 								["r_amt"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 1,
 							}, -- [1]
 							[49678] = {
 								["c_amt"] = 0,
@@ -50881,16 +50879,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "26631",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 56040.004975,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 56040.004975,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26631",
 					["damage_from"] = {
 						["Disorderr-Gehennas"] = true,
 						["Bizonacci-Mandokir"] = true,
@@ -50911,7 +50908,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.004975,
 					["end_time"] = 1720883206,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Novos the Summoner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51018,16 +51016,15 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "27600",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 432.005423,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 432.005423,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-27600-0000129799",
-					["classe"] = "UNKNOW",
+					["aID"] = "27600",
 					["damage_from"] = {
 						["Kentta-Gehennas"] = true,
 						["Handrmandr"] = true,
@@ -51043,7 +51040,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.005423,
 					["end_time"] = 1720883206,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Risen Shadowcaster",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51091,16 +51089,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "26627",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 3655.013267,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 3655.013267,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
-					["classe"] = "UNKNOW",
+					["aID"] = "26627",
 					["damage_from"] = {
 						["Bizonacci-Mandokir"] = true,
 						["Handrmandr"] = true,
@@ -51117,7 +51114,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.013267,
 					["end_time"] = 1720883206,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Crystal Handler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51192,16 +51190,15 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "27598",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 412.012167,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 412.012167,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-27598-0000129799",
-					["classe"] = "UNKNOW",
+					["aID"] = "27598",
 					["damage_from"] = {
 						["Handrmandr"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -51216,7 +51213,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.012167,
 					["end_time"] = 1720883206,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Fetid Troll Corpse",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51264,16 +51262,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "27597",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 0.007219,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 0.007219,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-27597-00001297C6",
-					["classe"] = "UNKNOW",
+					["aID"] = "27597",
 					["damage_from"] = {
 						["Disorderr-Gehennas"] = true,
 					},
@@ -51285,7 +51282,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.007219,
 					["end_time"] = 1720883206,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Hulking Corpse",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51455,16 +51453,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 606.019449,
 					["pets"] = {
 					},
-					["aID"] = "26637",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 5990.019449,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 5990.019449,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26637-00011296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26637",
 					["damage_from"] = {
 						["Disorderr-Gehennas"] = true,
 						["Bizonacci-Mandokir"] = true,
@@ -51482,7 +51479,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720883261,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Risen Drakkari Handler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51587,16 +51585,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 3561.012257,
 					["pets"] = {
 					},
-					["aID"] = "26641",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 19243.012257,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 19243.012257,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26641-00021296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26641",
 					["damage_from"] = {
 						["Mirror Image <Bizonacci-Mandokir>"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -51614,7 +51611,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720883261,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Gutripper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51627,9 +51625,9 @@ _detalhes_database = {
 									["Handrmandr"] = 19243,
 								},
 								["n_total"] = 19243,
-								["a_amt"] = 4,
+								["g_dmg"] = 0,
 								["n_min"] = 0,
-								["MISS"] = 2,
+								["a_amt"] = 4,
 								["counter"] = 25,
 								["DODGE"] = 1,
 								["total"] = 19243,
@@ -51647,7 +51645,7 @@ _detalhes_database = {
 								["c_total"] = 0,
 								["n_amt"] = 19,
 								["r_amt"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 2,
 							}, -- [1]
 							[49710] = {
 								["c_amt"] = 0,
@@ -51692,16 +51690,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 1112.017869,
 					["pets"] = {
 					},
-					["aID"] = "26824",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 12419.017869,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 12419.017869,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26824-000012982C",
-					["classe"] = "UNKNOW",
+					["aID"] = "26824",
 					["damage_from"] = {
 						["Kentta-Gehennas"] = true,
 						["Handrmandr"] = true,
@@ -51718,7 +51715,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720883261,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Raptor Mount",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -51807,16 +51805,15 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "27483",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 14450.01123,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 14450.01123,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "27483",
 					["damage_from"] = {
 						["Mirror Image <Bizonacci-Mandokir>"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -51834,7 +51831,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.01123,
 					["end_time"] = 1720883312,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "King Dred",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -52019,16 +52017,15 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.010683,
 					["pets"] = {
 					},
-					["aID"] = "26628",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 20868.010683,
 					["last_dps_realtime"] = 0,
 					["monster"] = true,
 					["total"] = 20868.010683,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26628",
 					["damage_from"] = {
 						["Mirror Image <Bizonacci-Mandokir>"] = true,
 						["Disorderr-Gehennas"] = true,
@@ -52048,7 +52045,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1720883312,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Drakkari Scytheclaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -52063,9 +52061,9 @@ _detalhes_database = {
 									["Tatenen-Gehennas"] = 4452,
 								},
 								["n_total"] = 17744,
-								["a_amt"] = 4,
+								["g_dmg"] = 0,
 								["n_min"] = 0,
-								["MISS"] = 1,
+								["a_amt"] = 4,
 								["counter"] = 20,
 								["DODGE"] = 1,
 								["total"] = 17744,
@@ -52083,7 +52081,7 @@ _detalhes_database = {
 								["c_total"] = 0,
 								["n_amt"] = 16,
 								["r_amt"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 1,
 							}, -- [1]
 							[13738] = {
 								["c_amt"] = 0,
@@ -52425,16 +52423,15 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "26632",
+					["classe"] = "UNKNOW",
 					["total_without_pet"] = 48511.007953,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 48511.007953,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
-					["classe"] = "UNKNOW",
+					["aID"] = "26632",
 					["damage_from"] = {
 						["Mirror Image <Bizonacci-Mandokir>"] = true,
 						["Kentta-Gehennas"] = true,
@@ -52454,7 +52451,8 @@ _detalhes_database = {
 					["totalabsorbed"] = 14717.007953,
 					["end_time"] = 1720883515,
 					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "The Prophet Tharon'ja",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -52489,7 +52487,7 @@ _detalhes_database = {
 								["b_dmg"] = 1747,
 								["r_amt"] = 0,
 							}, -- [1]
-							[49356] = {
+							[53463] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
@@ -52502,7 +52500,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 49356,
+								["id"] = 53463,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -52542,6 +52540,32 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
+							[49356] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_total"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49356,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 1,
+								["c_total"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
 							[49548] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -52568,32 +52592,6 @@ _detalhes_database = {
 								["successful_casted"] = 1,
 								["c_total"] = 0,
 								["n_amt"] = 30,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[53463] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_total"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 53463,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["c_total"] = 0,
-								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -52751,30 +52749,30 @@ _detalhes_database = {
 								["n_amt"] = 20,
 								["absorbed"] = 0,
 							},
-							[85673] = {
-								["c_amt"] = 1,
+							[49617] = {
+								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Handrmandr"] = 17729,
+									["Tatenen-Gehennas"] = 11569,
 								},
-								["n_max"] = 8309,
+								["n_max"] = 0,
 								["targets"] = {
-									["Handrmandr"] = 16613,
+									["Tatenen-Gehennas"] = 0,
 								},
-								["n_total"] = 8309,
+								["n_total"] = 0,
 								["n_min"] = 0,
-								["counter"] = 2,
-								["overheal"] = 17729,
-								["total"] = 16613,
-								["c_max"] = 8304,
-								["id"] = 85673,
+								["counter"] = 3,
+								["overheal"] = 11569,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49617,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 2,
-								["c_total"] = 8304,
+								["spellschool"] = 32,
+								["c_total"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
+								["n_amt"] = 3,
 								["absorbed"] = 0,
 							},
 							[85222] = {
@@ -52861,30 +52859,30 @@ _detalhes_database = {
 								["n_amt"] = 22,
 								["absorbed"] = 0,
 							},
-							[49617] = {
-								["c_amt"] = 0,
+							[85673] = {
+								["c_amt"] = 1,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Tatenen-Gehennas"] = 11569,
+									["Handrmandr"] = 17729,
 								},
-								["n_max"] = 0,
+								["n_max"] = 8309,
 								["targets"] = {
-									["Tatenen-Gehennas"] = 0,
+									["Handrmandr"] = 16613,
 								},
-								["n_total"] = 0,
+								["n_total"] = 8309,
 								["n_min"] = 0,
-								["counter"] = 3,
-								["overheal"] = 11569,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 49617,
+								["counter"] = 2,
+								["overheal"] = 17729,
+								["total"] = 16613,
+								["c_max"] = 8304,
+								["id"] = 85673,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
-								["spellschool"] = 32,
-								["c_total"] = 0,
+								["spellschool"] = 2,
+								["c_total"] = 8304,
 								["totaldenied"] = 0,
-								["n_amt"] = 3,
+								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[20167] = {
@@ -53373,14 +53371,13 @@ _detalhes_database = {
 				}, -- [5]
 				{
 					["flag_original"] = 1298,
-					["healing_from"] = {
-						["Bizonacci-Mandokir"] = true,
-						["Tatenen-Gehennas"] = true,
+					["targets_overheal"] = {
+						["Bizonacci-Mandokir"] = 12638,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "4813-058D547F",
+					["classe"] = "MAGE",
 					["totalover"] = 12638.045602,
 					["total_without_pet"] = 9342.045602,
 					["total"] = 9342.045602,
@@ -53397,13 +53394,14 @@ _detalhes_database = {
 					["last_event"] = 0,
 					["totalover_without_pet"] = 0.045602,
 					["healing_taken"] = 60661.04560200001,
-					["targets_overheal"] = {
-						["Bizonacci-Mandokir"] = 12638,
+					["healing_from"] = {
+						["Bizonacci-Mandokir"] = true,
+						["Tatenen-Gehennas"] = true,
 					},
 					["fight_component"] = true,
 					["end_time"] = 1720882906,
+					["aID"] = "4813-058D547F",
 					["heal_enemy_amt"] = 0,
-					["classe"] = "MAGE",
 					["nome"] = "Bizonacci-Mandokir",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -53516,14 +53514,14 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1720882879,
-					["boss_fight_component"] = true,
+					["targets_absorbs"] = {
+						["Bizonacci-Mandokir"] = 6672,
+					},
 					["custom"] = 0,
 					["tipo"] = 2,
 					["totaldenied"] = 0.045602,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-						["Bizonacci-Mandokir"] = 6672,
-					},
+					["boss_fight_component"] = true,
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
@@ -53659,14 +53657,13 @@ _detalhes_database = {
 				}, -- [9]
 				{
 					["flag_original"] = 1298,
-					["healing_from"] = {
-						["Disorderr-Gehennas"] = true,
-						["Tatenen-Gehennas"] = true,
+					["targets_overheal"] = {
+						["Disorderr-Gehennas"] = 19669,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "4476-058DD3B9",
+					["classe"] = "MAGE",
 					["totalover"] = 19669.053079,
 					["total_without_pet"] = 2637.053079,
 					["total"] = 2637.053079,
@@ -53683,13 +53680,14 @@ _detalhes_database = {
 					["last_event"] = 0,
 					["totalover_without_pet"] = 0.053079,
 					["healing_taken"] = 36781.053079,
-					["targets_overheal"] = {
-						["Disorderr-Gehennas"] = 19669,
+					["healing_from"] = {
+						["Disorderr-Gehennas"] = true,
+						["Tatenen-Gehennas"] = true,
 					},
 					["fight_component"] = true,
 					["end_time"] = 1720882993,
+					["aID"] = "4476-058DD3B9",
 					["heal_enemy_amt"] = 0,
-					["classe"] = "MAGE",
 					["nome"] = "Disorderr-Gehennas",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -53776,13 +53774,13 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["start_time"] = 1720882884,
-					["boss_fight_component"] = true,
+					["targets_absorbs"] = {
+					},
 					["custom"] = 0,
 					["tipo"] = 2,
 					["totaldenied"] = 0.053079,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-					},
+					["boss_fight_component"] = true,
 				}, -- [10]
 			},
 		}, -- [2]
@@ -53791,7 +53789,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["resource"] = 17.139118,
+					["resource"] = 23.202698,
 					["pets"] = {
 					},
 					["classe"] = "PALADIN",
@@ -53857,7 +53855,7 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.178771,
+					["resource"] = 0.262663,
 					["pets"] = {
 					},
 					["classe"] = "MAGE",
@@ -53923,7 +53921,7 @@ _detalhes_database = {
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.115616,
+					["resource"] = 0.170904,
 					["pets"] = {
 					},
 					["classe"] = "ROGUE",
@@ -53961,7 +53959,7 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.09989100000000001,
+					["resource"] = 0.154969,
 					["pets"] = {
 					},
 					["aID"] = "4813-058D547F",
@@ -54027,7 +54025,7 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 142.148032,
+					["resource"] = 216.213382,
 					["pets"] = {
 					},
 					["classe"] = "PALADIN",
@@ -54378,7 +54376,7 @@ _detalhes_database = {
 						[48895] = 2,
 					},
 					["debuff_uptime"] = 1048,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
 						["Drakkari Shaman"] = 2,
@@ -54434,16 +54432,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["boss_fight_component"] = true,
+					["interrupt"] = 2.003325,
 					["fight_component"] = true,
-					["debuff_uptime_targets"] = {
-					},
 					["aID"] = "4813-058D547F",
-					["cc_done"] = 47.066891,
 					["nome"] = "Bizonacci-Mandokir",
+					["cc_done"] = 47.066891,
+					["boss_fight_component"] = true,
 					["grupo"] = true,
 					["last_event"] = 0,
-					["interrupt"] = 2.003325,
+					["buff_uptime_targets"] = {
+					},
 					["spec"] = 63,
 					["tipo"] = 4,
 				}, -- [1]
@@ -54487,7 +54485,7 @@ _detalhes_database = {
 					["dispell"] = 7.016455,
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
+					["aID"] = "4476-055EF2D8",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							[96231] = {
@@ -54503,6 +54501,73 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
+					["dispell_targets"] = {
+						["Tatenen-Gehennas"] = 0,
+						["Disorderr-Gehennas"] = 0,
+						["Handrmandr"] = 4,
+						["Bizonacci-Mandokir"] = 3,
+					},
+					["interrompeu_oque"] = {
+						[48894] = 2,
+					},
+					["debuff_uptime"] = 18,
+					["debuff_uptime_targets"] = {
+					},
+					["interrupt_targets"] = {
+						["Drakkari Shaman"] = 2,
+					},
+					["cc_done_targets"] = {
+						["Drakkari Shaman"] = 1,
+					},
+					["serial"] = "Player-4476-055EF2D8",
+					["buff_uptime"] = 363,
+					["cc_done_spells"] = {
+						["_ActorTable"] = {
+							[853] = {
+								["id"] = 853,
+								["targets"] = {
+									["Drakkari Shaman"] = 1,
+								},
+								["counter"] = 1,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["dispell_oque"] = {
+						[49703] = 1,
+						[49037] = 4,
+						[49637] = 1,
+						[50378] = 1,
+					},
+					["dispell_spells"] = {
+						["_ActorTable"] = {
+							[4987] = {
+								["dispell"] = 7,
+								["id"] = 4987,
+								["dispell_oque"] = {
+									[49703] = 1,
+									[49037] = 4,
+									[49637] = 1,
+									[50378] = 1,
+								},
+								["targets"] = {
+									["Tatenen-Gehennas"] = 0,
+									["Disorderr-Gehennas"] = 0,
+									["Handrmandr"] = 4,
+									["Bizonacci-Mandokir"] = 3,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["fight_component"] = true,
+					["classe"] = "PALADIN",
+					["buff_uptime_targets"] = {
+					},
+					["cc_done"] = 1.007014,
+					["nome"] = "Tatenen-Gehennas",
+					["grupo"] = true,
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[88819] = {
@@ -54574,77 +54639,10 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["interrompeu_oque"] = {
-						[48894] = 2,
-					},
-					["debuff_uptime"] = 18,
-					["debuff_uptime_targets"] = {
-					},
-					["interrupt_targets"] = {
-						["Drakkari Shaman"] = 2,
-					},
-					["cc_done_targets"] = {
-						["Drakkari Shaman"] = 1,
-					},
-					["serial"] = "Player-4476-055EF2D8",
-					["buff_uptime"] = 363,
-					["cc_done_spells"] = {
-						["_ActorTable"] = {
-							[853] = {
-								["id"] = 853,
-								["targets"] = {
-									["Drakkari Shaman"] = 1,
-								},
-								["counter"] = 1,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["dispell_oque"] = {
-						[49703] = 1,
-						[49037] = 4,
-						[49637] = 1,
-						[50378] = 1,
-					},
-					["dispell_spells"] = {
-						["_ActorTable"] = {
-							[4987] = {
-								["dispell"] = 7,
-								["id"] = 4987,
-								["dispell_oque"] = {
-									[49703] = 1,
-									[49037] = 4,
-									[49637] = 1,
-									[50378] = 1,
-								},
-								["targets"] = {
-									["Tatenen-Gehennas"] = 0,
-									["Disorderr-Gehennas"] = 0,
-									["Handrmandr"] = 4,
-									["Bizonacci-Mandokir"] = 3,
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["fight_component"] = true,
-					["aID"] = "4476-055EF2D8",
-					["buff_uptime_targets"] = {
-					},
-					["cc_done"] = 1.007014,
-					["nome"] = "Tatenen-Gehennas",
-					["grupo"] = true,
-					["interrupt"] = 2.005775,
 					["tipo"] = 4,
-					["dispell_targets"] = {
-						["Tatenen-Gehennas"] = 0,
-						["Disorderr-Gehennas"] = 0,
-						["Handrmandr"] = 4,
-						["Bizonacci-Mandokir"] = 3,
-					},
 					["boss_fight_component"] = true,
 					["last_event"] = 0,
+					["interrupt"] = 2.005775,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
@@ -54789,11 +54787,11 @@ _detalhes_database = {
 					["grupo"] = true,
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["boss_fight_component"] = true,
-					["serial"] = "Player-4476-056A5F33",
+					["tipo"] = 4,
 					["classe"] = "ROGUE",
+					["serial"] = "Player-4476-056A5F33",
+					["last_event"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -54818,7 +54816,9 @@ _detalhes_database = {
 					["interrompeu_oque"] = {
 						[51240] = 1,
 					},
-					["spec"] = 63,
+					["interrupt_targets"] = {
+						["Risen Drakkari Death Knight"] = 1,
+					},
 					["cc_done_targets"] = {
 						["Drakkari Guardian"] = 4,
 						["Drakkari Scytheclaw"] = 1,
@@ -54829,11 +54829,11 @@ _detalhes_database = {
 						["Drakkari Gutripper"] = 1,
 						["Fetid Troll Corpse"] = 1,
 						["Drakkari Shaman"] = 3,
+						["Darkweb Recluse"] = 5,
 						["Drakkari Raptor Mount"] = 2,
-						["Risen Drakkari Death Knight"] = 3,
 						["Drakkari Commander"] = 1,
 						["Risen Drakkari Handler"] = 2,
-						["Darkweb Recluse"] = 5,
+						["Risen Drakkari Death Knight"] = 3,
 						["Risen Drakkari Warrior"] = 4,
 					},
 					["serial"] = "Player-4476-058DD3B9",
@@ -54851,11 +54851,11 @@ _detalhes_database = {
 									["Drakkari Gutripper"] = 1,
 									["Fetid Troll Corpse"] = 1,
 									["Drakkari Shaman"] = 3,
+									["Darkweb Recluse"] = 5,
 									["Drakkari Raptor Mount"] = 2,
-									["Risen Drakkari Death Knight"] = 3,
 									["Drakkari Commander"] = 1,
 									["Risen Drakkari Handler"] = 2,
-									["Darkweb Recluse"] = 5,
+									["Risen Drakkari Death Knight"] = 3,
 									["Risen Drakkari Warrior"] = 4,
 								},
 								["counter"] = 37,
@@ -54866,28 +54866,26 @@ _detalhes_database = {
 					["aID"] = "4476-058DD3B9",
 					["fight_component"] = true,
 					["cc_done"] = 37.053993,
-					["nome"] = "Disorderr-Gehennas",
-					["grupo"] = true,
-					["boss_fight_component"] = true,
-					["interrupt_targets"] = {
-						["Risen Drakkari Death Knight"] = 1,
-					},
-					["last_event"] = 0,
 					["interrupt"] = 1.004825,
+					["grupo"] = true,
+					["nome"] = "Disorderr-Gehennas",
+					["boss_fight_component"] = true,
 					["tipo"] = 4,
+					["spec"] = 63,
+					["last_event"] = 0,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26630",
 					["monster"] = true,
 					["nome"] = "Trollgore",
 					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "26630",
-					["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
 					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
+					["tipo"] = 4,
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
@@ -55292,14 +55290,14 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26626",
 					["fight_component"] = true,
 					["nome"] = "Scourge Reanimator",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26626",
-					["serial"] = "Creature-0-4479-600-3543-26626-00009296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26626-00009296A7",
+					["last_event"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
@@ -55372,27 +55370,27 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26621",
 					["fight_component"] = true,
 					["nome"] = "Ghoul Tormentor",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26621",
-					["serial"] = "Creature-0-4479-600-3543-26621-00011296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26621-00011296A7",
+					["last_event"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26624",
 					["fight_component"] = true,
 					["nome"] = "Wretched Belcher",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26624",
-					["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26624-00001296A7",
+					["last_event"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 2632,
@@ -55430,14 +55428,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "27871",
 					["fight_component"] = true,
 					["nome"] = "Flesheating Ghoul",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "27871",
-					["serial"] = "Creature-0-4479-600-3543-27871-00001296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-27871-00001296A7",
+					["last_event"] = 0,
 				}, -- [17]
 				{
 					["flag_original"] = 8466,
@@ -55447,10 +55445,10 @@ _detalhes_database = {
 					["ownerName"] = "Bizonacci-Mandokir",
 					["boss_fight_component"] = true,
 					["nome"] = "Mirror Image <Bizonacci-Mandokir>",
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["classe"] = "PET",
 					["serial"] = "Creature-0-4479-600-3543-31216-0001129753",
-					["last_event"] = 0,
+					["tipo"] = 4,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -55467,6 +55465,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 2,
 					["spellschool"] = 8,
+					["nome"] = "Infected Wound",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "Trollgore",
 					["debuff_uptime_targets"] = {
 						["Handrmandr"] = {
 							["uptime"] = 2,
@@ -55476,11 +55479,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Infected Wound",
-					["tipo"] = 4,
-					["damage_twin"] = "Trollgore",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26630-00001296A7",
 					["last_event"] = 0,
 				}, -- [19]
@@ -55488,27 +55486,27 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26625",
 					["fight_component"] = true,
 					["nome"] = "Darkweb Recluse",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26625",
-					["serial"] = "Creature-0-4479-600-3543-26625-00019296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26625-00019296A7",
+					["last_event"] = 0,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "26627",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Crystal Handler",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
 					["last_event"] = 0,
+					["aID"] = "26627",
+					["serial"] = "Creature-0-4479-600-3543-26627-00001297A8",
+					["tipo"] = 4,
 				}, -- [21]
 				{
 					["flag_original"] = 2632,
@@ -55525,6 +55523,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 0,
 					["spellschool"] = 64,
+					["nome"] = "Arcane Field",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "Novos the Summoner",
 					["debuff_uptime_targets"] = {
 						["Kentta-Gehennas"] = {
 							["uptime"] = 0,
@@ -55534,11 +55537,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Arcane Field",
-					["tipo"] = 4,
-					["damage_twin"] = "Novos the Summoner",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 					["last_event"] = 0,
 				}, -- [22]
@@ -55546,14 +55544,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "26631",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "Novos the Summoner",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 					["last_event"] = 0,
+					["aID"] = "26631",
+					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
+					["tipo"] = 4,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -55570,6 +55568,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 8,
 					["spellschool"] = 32,
+					["nome"] = "Wrath of Misery",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "Novos the Summoner",
 					["debuff_uptime_targets"] = {
 						["Bizonacci-Mandokir"] = {
 							["uptime"] = 8,
@@ -55579,11 +55582,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Wrath of Misery",
-					["tipo"] = 4,
-					["damage_twin"] = "Novos the Summoner",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 					["last_event"] = 0,
 				}, -- [24]
@@ -55602,6 +55600,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 6,
 					["spellschool"] = 16,
+					["nome"] = "Blizzard",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "Novos the Summoner",
 					["debuff_uptime_targets"] = {
 						["Tatenen-Gehennas"] = {
 							["uptime"] = 6,
@@ -55611,11 +55614,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Blizzard",
-					["tipo"] = 4,
-					["damage_twin"] = "Novos the Summoner",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26631-00001296A7",
 					["last_event"] = 0,
 				}, -- [25]
@@ -55623,14 +55621,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26637",
 					["fight_component"] = true,
 					["nome"] = "Risen Drakkari Handler",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26637",
-					["serial"] = "Creature-0-4479-600-3543-26637-00011296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26637-00011296A7",
+					["last_event"] = 0,
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
@@ -55728,14 +55726,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "27483",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "King Dred",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 					["last_event"] = 0,
+					["aID"] = "27483",
+					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
+					["tipo"] = 4,
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
@@ -55752,6 +55750,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 32,
 					["spellschool"] = 1,
+					["nome"] = "Fearsome Roar",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "King Dred",
 					["debuff_uptime_targets"] = {
 						["Tatenen-Gehennas"] = {
 							["uptime"] = 8,
@@ -55782,11 +55785,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Fearsome Roar",
-					["tipo"] = 4,
-					["damage_twin"] = "King Dred",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 					["last_event"] = 0,
 				}, -- [31]
@@ -55805,6 +55803,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 15,
 					["spellschool"] = 1,
+					["nome"] = "Mangling Slash",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "King Dred",
 					["debuff_uptime_targets"] = {
 						["Handrmandr"] = {
 							["uptime"] = 15,
@@ -55814,11 +55817,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Mangling Slash",
-					["tipo"] = 4,
-					["damage_twin"] = "King Dred",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 					["last_event"] = 0,
 				}, -- [32]
@@ -55851,6 +55849,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 2,
 					["spellschool"] = 1,
+					["nome"] = "Grievous Bite",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "King Dred",
 					["debuff_uptime_targets"] = {
 						["Handrmandr"] = {
 							["uptime"] = 2,
@@ -55860,11 +55863,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Grievous Bite",
-					["tipo"] = 4,
-					["damage_twin"] = "King Dred",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 					["last_event"] = 0,
 				}, -- [34]
@@ -55883,8 +55881,6 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 30,
 					["spellschool"] = 1,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
 					["debuff_uptime_targets"] = {
 						["Handrmandr"] = {
 							["uptime"] = 30,
@@ -55894,9 +55890,11 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
+					["classe"] = "UNKNOW",
+					["nome"] = "Rend",
 					["last_event"] = 0,
 					["damage_twin"] = "Drakkari Scytheclaw",
-					["nome"] = "Rend",
+					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26628-00011296A7",
 					["tipo"] = 4,
 				}, -- [35]
@@ -55915,6 +55913,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 12,
 					["spellschool"] = 1,
+					["nome"] = "Bellowing Roar",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "King Dred",
 					["debuff_uptime_targets"] = {
 						["Tatenen-Gehennas"] = {
 							["uptime"] = 4,
@@ -55945,11 +55948,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Bellowing Roar",
-					["tipo"] = 4,
-					["damage_twin"] = "King Dred",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-27483-00001296A7",
 					["last_event"] = 0,
 				}, -- [36]
@@ -55957,40 +55955,40 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "26830",
 					["fight_component"] = true,
 					["nome"] = "Risen Drakkari Death Knight",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "26830",
-					["serial"] = "Creature-0-4479-600-3543-26830-00019296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-26830-00019296A7",
+					["last_event"] = 0,
 				}, -- [37]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "27431",
 					["fight_component"] = true,
 					["nome"] = "Drakkari Commander",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "27431",
-					["serial"] = "Creature-0-4479-600-3543-27431-00001296A7",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4479-600-3543-27431-00001296A7",
+					["last_event"] = 0,
 				}, -- [38]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "26632",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["boss_fight_component"] = true,
 					["nome"] = "The Prophet Tharon'ja",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 					["last_event"] = 0,
+					["aID"] = "26632",
+					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
+					["tipo"] = 4,
 				}, -- [39]
 				{
 					["flag_original"] = 68168,
@@ -56007,6 +56005,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 12,
 					["spellschool"] = 32,
+					["nome"] = "Decay Flesh",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "The Prophet Tharon'ja",
 					["debuff_uptime_targets"] = {
 						["Tatenen-Gehennas"] = {
 							["uptime"] = 3,
@@ -56037,11 +56040,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Decay Flesh",
-					["tipo"] = 4,
-					["damage_twin"] = "The Prophet Tharon'ja",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 					["last_event"] = 0,
 				}, -- [40]
@@ -56060,6 +56058,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 30,
 					["spellschool"] = 8,
+					["nome"] = "Poison Cloud",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "The Prophet Tharon'ja",
 					["debuff_uptime_targets"] = {
 						["Handrmandr"] = {
 							["uptime"] = 10,
@@ -56083,11 +56086,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Poison Cloud",
-					["tipo"] = 4,
-					["damage_twin"] = "The Prophet Tharon'ja",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 					["last_event"] = 0,
 				}, -- [41]
@@ -56106,6 +56104,11 @@ _detalhes_database = {
 					["monster"] = true,
 					["debuff_uptime"] = 12,
 					["spellschool"] = 32,
+					["nome"] = "Return Flesh",
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["damage_twin"] = "The Prophet Tharon'ja",
 					["debuff_uptime_targets"] = {
 						["Tatenen-Gehennas"] = {
 							["uptime"] = 3,
@@ -56136,11 +56139,6 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Return Flesh",
-					["tipo"] = 4,
-					["damage_twin"] = "The Prophet Tharon'ja",
-					["boss_fight_component"] = true,
 					["serial"] = "Creature-0-4479-600-3543-26632-00001296A7",
 					["last_event"] = 0,
 				}, -- [42]
@@ -56395,9 +56393,6 @@ _detalhes_database = {
 			["Risen Drakkari Warrior"] = {
 				["Heal"] = 52,
 			},
-			["Darkweb Recluse"] = {
-				["Encasing Webs"] = 3,
-			},
 			["Bizonacci-Mandokir"] = {
 				["Fireball"] = 1,
 				["Will of the Forsaken"] = 1,
@@ -56429,6 +56424,9 @@ _detalhes_database = {
 				["Deafening Roar"] = 3,
 				["Icy Touch"] = 5,
 				["Fear"] = 2,
+			},
+			["Darkweb Recluse"] = {
+				["Encasing Webs"] = 3,
 			},
 			["King Dred"] = {
 				["Mangling Slash"] = 1,
@@ -56600,9 +56598,11 @@ _detalhes_database = {
 		},
 	},
 	["force_font_outline"] = "",
-	["mythic_plus_log"] = {
-	},
 	["data_harvested_for_charts"] = {
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

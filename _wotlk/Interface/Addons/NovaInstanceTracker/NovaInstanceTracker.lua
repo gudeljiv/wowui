@@ -5060,11 +5060,12 @@ function NIT:getActiveSpec()
 	local name, icon, talentCount, specType, role, fileName = nil, nil, 0;
 	for tab = 1, GetNumTalentTabs() do
 		local _, specName, specIcon, pointsSpent, file;
-		if (NIT.isCata) then
+		--if (NIT.isCata) then
 			_, specName, _, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
-		else
-			specName, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
-		end
+		--else
+			--This returns order was changed in 1.15.3 era to the cata version above.
+		--	specName, specIcon, pointsSpent, file = GetTalentTabInfo(tab, false, false, GetActiveTalentGroup());
+		--end
 		if (pointsSpent and pointsSpent > talentCount) then
 			name, icon, talentCount, fileName = specName, specIcon, pointsSpent, file;
 		end

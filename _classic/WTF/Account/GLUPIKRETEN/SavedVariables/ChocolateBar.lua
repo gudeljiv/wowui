@@ -1019,9 +1019,9 @@ CB_PlayedTime = {
 ["total"] = 8794,
 },
 ["Doperage-LoneWolf"] = {
-["total"] = 137989,
-["timeAtThisLevel"] = 2257,
-["timeStamp"] = 2826585.85,
+["total"] = 138157,
+["timeAtThisLevel"] = 2425,
+["timeStamp"] = 1378615.211,
 },
 ["Augustin-"] = {
 ["total"] = 425995,

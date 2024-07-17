@@ -13,11 +13,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1645
+/use item:1708
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3927
+/use item:3771
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -30,7 +30,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:929
 END
 VER 3 000000000000002C "r aa" "134400"
 #showtooltip Legs Rune Ability
@@ -66,6 +66,14 @@ VER 3 000000000000002A "rune w" "134400"
 /startattack
 /petattack
 /use Waist Rune Ability
+END
+VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
+/targetexact Burning Blade Shadowmage
+/targetexact Burning Blade Felsworn
+/targetexact Burning Blade Reaver
+/targetexact Burning Blade Adept
+/targetexact Burning Blade Augur
+/targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip

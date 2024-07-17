@@ -245,6 +245,7 @@ f:RegisterEvent("TRADE_SKILL_CLOSE");
 f:RegisterEvent("UPDATE_BATTLEFIELD_SCORE");
 f:RegisterEvent("ENCOUNTER_END");
 f:RegisterEvent("CURRENCY_DISPLAY_UPDATE");
+f:RegisterEvent("CHAT_MSG_LOOT");
 if (NIT.isRetail) then
 	f:RegisterEvent("CHALLENGE_MODE_START");
 	f:RegisterEvent("CHALLENGE_MODE_COMPLETED");
@@ -516,6 +517,11 @@ function NIT:trimTrades()
 	end
 end
 
+local lootCurrency = {
+	--SoD.
+    [226404] = "Tarnished Undermine Real",
+};
+
 function NIT:chatMsgLoot(...)
 	local msg = ...;
 	local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType,
@@ -537,6 +543,29 @@ function NIT:chatMsgLoot(...)
 		end
     end
     if (itemLink) then
+    	if (NIT.inInstance) then
+	    	local instance = NIT.data.instances[1];
+	    	local itemID = string.match(itemLink, "item:(%d+)");
+	    	if (itemID) then
+	    		itemID = tonumber(itemID);
+	    		if (lootCurrency[tonumber(itemID)]) then
+		    		local itemName, _, _, _, _, _, _, _, _, icon = C_Item.GetItemInfo(itemID);
+		    		if (not instance.currencies) then
+						instance.currencies = {};
+					end
+					if (not instance.currencies[itemID]) then
+						instance.currencies[itemID] = {
+							count = 0;
+						};
+					end
+					instance.currencies[itemID] = {
+						name = itemName,
+						count = instance.currencies[itemID].count + (amount or 1),
+						icon = icon,
+					};
+				end
+	    	end
+    	end
     	if (string.match(itemLink, "|Hkeystone:(.+)|h") or string.match(itemLink, "item:180653")) then
     		C_Timer.After(1, function()
     			NIT:debug("looted keystone");
@@ -785,7 +814,7 @@ function NIT:chatMsgCurrency(...)
 		end
 		instance.currencies[currencyID] = {
 			name = data.name,
-			count = instance.currencies[currencyID].count + amount,
+			count = instance.currencies[currencyID].count + (amount or 1),
 			icon = data.iconFileID,
 		}; --/run NIT.data.instances[1].currencies[395] = {name = "Justice Points", count = 5, icon = 463446}
 	end

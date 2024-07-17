@@ -30,9 +30,9 @@ xKillCount = {
 			["name"] = "Scarlet Convert",
 			["count"] = 13,
 		},
-		["Meven Korgal"] = {
-			["name"] = "Meven Korgal",
-			["count"] = 3,
+		["Tirisfal Farmhand"] = {
+			["name"] = "Tirisfal Farmhand",
+			["count"] = 1,
 		},
 		["Wretched Zombie"] = {
 			["name"] = "Wretched Zombie",
@@ -42,9 +42,9 @@ xKillCount = {
 			["name"] = "Samuel Fipps",
 			["count"] = 1,
 		},
-		["Tirisfal Farmhand"] = {
-			["name"] = "Tirisfal Farmhand",
-			["count"] = 1,
+		["Meven Korgal"] = {
+			["name"] = "Meven Korgal",
+			["count"] = 3,
 		},
 		["Rotting Dead"] = {
 			["name"] = "Rotting Dead",
@@ -64,8 +64,8 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 290220,
-		["pulltotal"] = 4038,
+		["totaltotal"] = 360730,
+		["pulltotal"] = 8297,
 	},
 	["position"] = {
 		["y"] = 217.2070007324219,

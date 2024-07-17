@@ -62,13 +62,6 @@ X: -48
 Y: -196
 W: 210
 H: 339
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: SpellBookFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -111,6 +104,13 @@ X: -111
 Y: 229
 W: 128
 H: 64
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: TabardFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -174,7 +174,7 @@ X: 1
 Y: -336
 W: 330
 H: 113
-Frame: FriendsFrame
+Frame: CharacterFrame
 FrameLevel: 1
 Anchor: TOPLEFT
 X: 16

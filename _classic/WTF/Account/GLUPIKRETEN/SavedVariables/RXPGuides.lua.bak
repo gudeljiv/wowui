@@ -1,0 +1,84 @@
+
+RXPData = {
+["gameVersion"] = 11503,
+["defaultProfile"] = false,
+["release"] = "v4.6.19",
+["cacheVersion"] = 24,
+["trainGenericSpells"] = true,
+}
+RXPDB = {
+["profileKeys"] = {
+["Doperage - Lone Wolf"] = "global",
+},
+["profiles"] = {
+["global"] = {
+},
+},
+}
+RXPSettings = {
+["profileKeys"] = {
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+},
+["profiles"] = {
+["Doperage - Lone Wolf"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["season"] = 2,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["frameHeight"] = 125.0000152587891,
+},
+},
+}
