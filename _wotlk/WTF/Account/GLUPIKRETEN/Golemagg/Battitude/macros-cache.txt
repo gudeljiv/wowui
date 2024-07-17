@@ -1,6 +1,6 @@
 VER 3 0000000001000004 "poison" "134400"
 #showtooltip
-/use [nomod] Instant Poison; [mod:shift] Crippling Poison; [mod:ctrl] Mind-Numbing Poison; [mod:alt] Wound Poison
+/use [nomod] Instant Poison; [mod:shift] Crippling Poison; [mod:ctrl] Deadly Poison; [mod:alt] Wound Poison
 /use [btn: 1] 16; [btn:2] 17
 /click StaticPopup1Button1
 END

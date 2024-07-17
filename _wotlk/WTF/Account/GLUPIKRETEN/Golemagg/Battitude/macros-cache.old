@@ -7,7 +7,7 @@ END
 VER 3 0000000001000003 "ss" "134400"
 #showtooltip
 /startattack
-/cast [stealth] Ambush; Sinister Strike
+/cast [stealth] Cheap Shot; Sinister Strike
 /use 13
 /use 14
 END

@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "CENTER",
 	},
 	["experience"] = {
-		["pulltotal"] = 8297,
-		["totaltotal"] = 360730,
+		["pulltotal"] = 7104,
+		["totaltotal"] = 447195,
 	},
 	["killLog"] = {
 		["Mindless Zombie"] = {
@@ -64,13 +64,13 @@ xKillCount = {
 			["name"] = "Scarlet Initiate",
 			["count"] = 3,
 		},
-		["Meven Korgal"] = {
-			["name"] = "Meven Korgal",
-			["count"] = 3,
-		},
 		["Tirisfal Farmhand"] = {
 			["name"] = "Tirisfal Farmhand",
 			["count"] = 1,
+		},
+		["Meven Korgal"] = {
+			["name"] = "Meven Korgal",
+			["count"] = 3,
 		},
 	},
 }
