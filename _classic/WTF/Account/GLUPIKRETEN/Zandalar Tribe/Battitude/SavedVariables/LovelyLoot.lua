@@ -1,0 +1,4 @@
+
+LovelyLootPCDB = {
+	["charSpec"] = false,
+}

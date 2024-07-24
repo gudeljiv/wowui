@@ -1,7 +1,7 @@
 ## Interface: 11403
 ## Title: Masque: ElvUI
 ## Notes: ElvUI Skin for Masque
-## Version: 2.0
+## Version: 2.1
 ## Author: Lorade
 ## Dependencies: Masque
 

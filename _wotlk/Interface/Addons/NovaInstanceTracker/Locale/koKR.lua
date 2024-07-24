@@ -389,3 +389,5 @@ L["Skinning"] = "무두질";
 L["Jewelcrafting"] = "보석세공";
 L["Inscription"] = "주문각인";
 L["First Aid"] = "응급치료";
+
+L["Tarnished Undermine Real"] = "빛바랜 언더마인화";

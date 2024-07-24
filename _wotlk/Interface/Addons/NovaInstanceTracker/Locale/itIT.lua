@@ -301,3 +301,5 @@ L["instanceStatsOutputRunsPerLevelDesc"] = "Show how many runs it will take per 
 
 L["instanceStatsOutputRunsNextLevelTitle"] = "Runs Until Next Level";
 L["instanceStatsOutputRunsNextLevelDesc"] = "Show how many more runs you need until your next level?";
+
+L["Tarnished Undermine Real"] = "Tarnished Undermine Real";

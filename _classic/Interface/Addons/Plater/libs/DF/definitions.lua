@@ -236,7 +236,13 @@
 ---@field CreateColorDropDown fun(self:table, parent:frame, func:function, default:any, width:number?, height:number?, member:string?, name:string?, template:table?) : df_dropdown
 ---@field CreateOutlineDropDown fun(self:table, parent:frame, func:function, default:any, width:number?, height:number?, member:string?, name:string?, template:table?) : df_dropdown
 ---@field CreateAnchorPointDropDown fun(self:table, parent:frame, func:function, default:any, width:number?, height:number?, member:string?, name:string?, template:table?) : df_dropdown
+---@field CreateAudioDropDown fun(self:table, parent:frame, func:function, default:any, width:number?, height:number?, member:string?, name:string?, template:table?) : df_dropdown
 ---@field CreateFontListGenerator fun(self:table, callback:function) : function return a function which when called returns a table filled with all fonts available and ready to be used on dropdowns
+---@field CreateAnchorPointListGenerator fun(self:table, callback:function) : function return a function which when called returns a table filled with all anchor points available and ready to be used on dropdowns
+---@field CreateColorListGenerator fun(self:table, callback:function) : function return a function which when called returns a table filled with all colors available and ready to be used on dropdowns
+---@field CreateOutlineListGenerator fun(self:table, callback:function) : function return a function which when called returns a table filled with all outline options available and ready to be used on dropdowns
+---@field CreateAudioListGenerator fun(self:table, callback:function) : function return a function which when called returns a table filled with all audio options available and ready to be used on dropdowns
+---@field BuildDropDownFontList fun(self:table, onClick:function, icon:atlasname|texturepath|textureid|nil, iconTexcoord:table?, iconSize:number?, bIncludeDefault:boolean?) : table build a list of fonts to be used as optionsTable for a dropdown
 ---@field CreateTextEntry fun(self:table, parent:frame, textChangedCallback:function, width:number, height:number, member:string?, name:string?, labelText:string?, textentryTemplate:table?, labelTemplate:table?) : df_textentry
 ---@field ReskinSlider fun(self:table, slider:frame)
 ---@field GetAvailableSpells fun(self:table) : table<spellid, boolean>
@@ -274,6 +280,7 @@
 ---@field CreateColorPickButton fun(self:table, parent:frame, name:string?, member:string?, callback:function, alpha:number?, buttonTemplate:table?) : df_colorpickbutton
 ---@field CreateSlider fun(self:table, parent:frame, width:number?, height:number?, minValue:number?, maxValue:number?, step:number?, defaultv:number?, isDecemal:boolean?, member:string?, name:string?, label:string?, sliderTemplate:string|table?, labelTemplate:string|table?) : df_slider, df_label?
 ---@field CreateFrameContainer fun(self:table, parent:frame, options:table?, frameName:string?) : df_framecontainer create a frame container, which is a frame that envelops another frame, and can be moved, resized, etc.
+---@field CreateAnimationHub fun(self:table, parent:uiobject, onPlay:function?, onFinished:function?) : animationgroup
 ---@field CreateAnimation fun(self:table, animationGroup:animationgroup, animationType:animationtype, order:number, duration:number, arg1:any, arg2:any, arg3:any, arg4:any, arg5:any, arg6:any, arg7:any, arg8:any) : animation
 ---@field NewImage fun(self:table, parent:frame, texture:atlasname|texturepath|textureid|df_gradienttable|nil, width:number?, height:number?, layer:drawlayer?, texCoord:table?, member:string?, name:string?) : df_image
 ---@field CreateTexture fun(self:table, parent:frame, texture:atlasname|texturepath|textureid|nil, width:number?, height:number?, layer:drawlayer?, coords:table?, member:string?, name:string?) : df_image
@@ -321,8 +328,9 @@
 ---@field CreateMenuWithGridScrollBox fun(self:table, parent:frame, name:string?, refreshMeFunc:function, refreshButtonFunc:function, clickFunc:function, onCreateButton:function, gridScrollBoxOptions:df_gridscrollbox_options) : df_gridscrollbox create a scrollbox with a grid layout to be used as a menu
 ---@field CreateSearchBox fun(self:table, parent:frame, callback:function) : df_searchbox
 ---@field ConvertAnchorPointToInside fun(self:table, anchorPoint:anchorid) : anchorid
+---@field CreateHeader fun(self:table, parent:frame, headerTable:df_headercolumndata[], options:table?, frameName:string?) : df_headerframe
 ---@field
-
+---@field
 
 
 

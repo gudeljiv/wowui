@@ -10,13 +10,13 @@ Postal3DB = {
 		["Battlemoo - Golemagg"] = "Battlemoo - Golemagg",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Asjrdfsad - Golemagg"] = "Asjrdfsad - Golemagg",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -32,7 +32,7 @@ Postal3DB = {
 			["alts"] = {
 				"Asjrdfsad|Golemagg|Horde|1|PRIEST", -- [1]
 				"Augustin|Golemagg|Horde|54|MAGE", -- [2]
-				"Battitude|Golemagg|Horde|33|ROGUE", -- [3]
+				"Battitude|Golemagg|Horde|43|ROGUE", -- [3]
 				"Battlearm|Gehennas|Horde|1|WARRIOR", -- [4]
 				"Battlearm|Golemagg|Horde|83|DEATHKNIGHT", -- [5]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [6]

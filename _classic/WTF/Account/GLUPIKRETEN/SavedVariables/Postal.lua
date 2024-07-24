@@ -3,6 +3,7 @@ Postal3DB = {
 ["global"] = {
 ["BlackBook"] = {
 ["alts"] = {
+"Battitude|Zandalar Tribe|Alliance|1|ROGUE",
 "Dopeah|Stitches|Horde|1|SHAMAN",
 "Dopebolt|Lone Wolf|Horde|2|MAGE",
 "Dopeclaw|Lone Wolf|Horde|38|DRUID",
@@ -35,6 +36,7 @@ Postal3DB = {
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Dopecure - Stitches"] = "Dopecure - Stitches",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
+["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
@@ -95,6 +97,8 @@ Postal3DB = {
 "Doperage|Lone Wolf|Horde",
 },
 },
+},
+["Battitude - Zandalar Tribe"] = {
 },
 ["Dopesnare - Stitches"] = {
 ["BlackBook"] = {

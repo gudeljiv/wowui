@@ -12,7 +12,7 @@ xVermin.CheckIfLoadedWithTimer(
 				ECS_StatsFrame:HookScript(
 					"OnUpdate",
 					function()
-						if EngravingFrame:IsVisible() then
+						if EngravingFrame and EngravingFrame:IsVisible() then
 							ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrame, "TOPRIGHT", 15, 45)
 						else
 							ECS_StatsFrame:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", -25, -15)

@@ -23,13 +23,13 @@ RXPDB = {
 		["Battlemoo - Golemagg"] = "global",
 		["Tandaram - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
-		["Moolatz - Golemagg"] = "global",
+		["Pitchwise - Ashbringer"] = "global",
 		["Battlearm - Gehennas"] = "global",
-		["Tudum - Jin'do"] = "global",
+		["Moolatz - Golemagg"] = "global",
 		["Asjrdfsad - Golemagg"] = "global",
 		["Tudum - Ashbringer"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Pitchwise - Ashbringer"] = "global",
+		["Tudum - Jin'do"] = "global",
 		["Miqa - Golemagg"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
@@ -161,6 +161,8 @@ RXPSettings = {
 			["enableTracker"] = false,
 			["xprate"] = 1.3,
 			["frameHeight"] = 125.0001068115234,
+			["enableMinimapButton"] = false,
+			["hardcore"] = false,
 			["framePositions"] = {
 				["arrowFrame"] = {
 					{
@@ -199,7 +201,6 @@ RXPSettings = {
 					}, -- [1]
 				},
 			},
-			["hardcore"] = false,
 			["frameSizes"] = {
 				["arrowFrame"] = {
 					32.00003814697266, -- [1]
@@ -218,7 +219,6 @@ RXPSettings = {
 					68, -- [2]
 				},
 			},
-			["enableMinimapButton"] = false,
 			["migrated"] = true,
 		},
 		["Asjrdfsad - Golemagg"] = {
@@ -405,12 +405,12 @@ RXPSettings = {
 		["Vermin - Golemagg"] = {
 			["hideCompletedSteps"] = true,
 			["migrated"] = true,
-			["enableTrainerAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
-			["arrowText"] = 10,
 			["enableTargetAutomation"] = false,
+			["arrowText"] = 10,
+			["enableTrainerAutomation"] = false,
 			["enableFPAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,

@@ -1,8 +1,8 @@
 # RatingBuster
 
-## [1.17.0](https://github.com/raethkcj/RatingBuster/tree/1.17.0) (2024-07-10)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.16.12...1.17.0) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.17.2](https://github.com/raethkcj/RatingBuster/tree/1.17.2) (2024-07-20)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.17.1...1.17.2) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Add regen set bonuses  
-- SoD P4 Rune Updates  
-- Add Defender's Resolve  
+- Add Vanilla Shaman int conversion  
+- Fix DodgePerAgi fallback  
+- Fix zero truncation  

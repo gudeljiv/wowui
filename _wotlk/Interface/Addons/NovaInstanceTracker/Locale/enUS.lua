@@ -557,3 +557,24 @@ L["Currencies"] = "Currencies";
 
 L["instanceStatsOutputCurrencyTitle"] = "Currency";
 L["instanceStatsOutputCurrencyDesc"] = "Show what currencies were gained while inside a dungeon?";
+
+L["Tarnished Undermine Real"] = "Tarnished Undermine Real";
+
+L["lootReminderDesc"] = "Loot Reminders";
+
+L["lootReminderRealTitle"] = "Tarnished Undermine Real";
+L["lootReminderRealDesc"] = "Show a reminder to loot Tarnished Undermine Real in SoD when a boss dies that can drop it.";
+
+L["lootReminderSizeTitle"] = "Text Size";
+L["lootReminderSizeDesc"] = "What size text to show on the reminder.";
+
+L["lootReminderXTitle"] = "X Position";
+L["lootReminderXDesc"] = "Adjust this for the left/right position of the reminder text.";
+
+L["lootReminderYTitle"] = "Y Position";
+L["lootReminderYDesc"] = "Adjust this for the up/down position of the reminder text.";
+
+L["Looted"] = "Looted";
+L["Not Looted"] = "Not Looted";
+L["Killed But Not Looted"] = "Killed But Not Looted";
+L["Loot the Tarnished Undermine Real"] = "Loot the Tarnished Undermine Real";

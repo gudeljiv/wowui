@@ -6,7 +6,6 @@ local ADDON_NAME, private = ...
 local LibStub = _G.LibStub
 local RareScanner = LibStub("AceAddon-3.0"):GetAddon("RareScanner")
 local AL = LibStub("AceLocale-3.0"):GetLocale("RareScanner", false)
-local LibDialog = LibStub("LibDialog-1.0")
 
 local RSLootOptions = private.NewLib("RareScannerLootOptions")
 

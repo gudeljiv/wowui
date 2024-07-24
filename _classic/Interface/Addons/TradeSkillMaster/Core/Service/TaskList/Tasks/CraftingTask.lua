@@ -6,15 +6,16 @@
 
 local TSM = select(2, ...) ---@type TSM
 local CraftingTask = TSM.Include("LibTSMClass").DefineClass("CraftingTask", TSM.TaskList.Task)
-local Environment = TSM.Include("Environment")
-local L = TSM.Include("Locale").GetTable()
-local CraftString = TSM.Include("Util.CraftString")
-local Table = TSM.Include("Util.Table")
-local Event = TSM.Include("Util.Event")
-local Log = TSM.Include("Util.Log")
-local ItemString = TSM.Include("Util.ItemString")
-local BagTracking = TSM.Include("Service.BagTracking")
-local Profession = TSM.Include("Service.Profession")
+local TradeSkill = TSM.LibTSMWoW:Include("API.TradeSkill")
+local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
+local L = TSM.Locale.GetTable()
+local CraftString = TSM.LibTSMTypes:Include("Crafting.CraftString")
+local Table = TSM.LibTSMUtil:Include("Lua.Table")
+local Event = TSM.LibTSMWoW:Include("Service.Event")
+local Log = TSM.LibTSMUtil:Include("Util.Log")
+local ItemString = TSM.LibTSMTypes:Include("Item.ItemString")
+local BagTracking = TSM.LibTSMService:Include("Inventory.BagTracking")
+local Profession = TSM.LibTSMService:Include("Profession")
 TSM.TaskList.CraftingTask = CraftingTask
 local private = {
 	currentlyCrafting = nil,
@@ -139,7 +140,7 @@ function CraftingTask.OnButtonClick(self)
 			private.currentlyCrafting = nil
 		end
 	elseif self._buttonText == L["OPEN"] then
-		Profession.Open(Environment.IsRetail() and self._skillId or self._profession)
+		TradeSkill.OpenUI(ClientInfo.IsRetail() and self._skillId or self._profession)
 	else
 		error("Invalid state: "..tostring(self._buttonText))
 	end

@@ -1,130 +1,64 @@
-tag 74dbb5f4ff8ca8ceb9ecc9fa93d1eeae1d78735e v1.7.1
+tag df20f60edc4be95b4273b3ed684997e01f7ce8a7 v1.7.2
 Author:	skyler-code <skylerh15@github.com>
-Date:	Sun Jul 7 18:20:42 2024 -0500
+Date:	Wed Jul 17 19:16:17 2024 -0500
 
-commit bed32520340b2deda1e7b61a5d5b1e741534f5da
+commit 3c199da43c6774a826b56876f009c5bcbc8c5b07
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 02:17:31 2024 -0500
+Date:   Wed Jul 17 19:12:05 2024 -0500
 
-    simplified presets with dw hit caps
+    moving throttle to queueupdate
 
-commit 130d8d3ae9c02036aa907a4f1f4ab04b653ba965
+commit 21d047eb02fb4ba6c6762d4d05c6b4cd36af8acf
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 01:57:12 2024 -0500
+Date:   Wed Jul 17 18:15:26 2024 -0500
 
-    fix statcap dropdown widths when adding a new cap
+    throttle UpdateItems so it doesnt run more than once per frame
 
-commit 735384465c7c0035301ef8518990b59fa938de44
+commit ee47cae78af1a6a3f3f567881b09c14e09e2dae3
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 01:42:13 2024 -0500
+Date:   Wed Jul 17 17:47:42 2024 -0500
 
-    hide none cap if not set at load
+    no need to queue update when opening forge master
 
-commit 2867580b1358e0aeca7791b3b84d6cf9ec94b9e4
+commit d43e6f86e042e965b11934be246aecfd9824bf13
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 01:23:19 2024 -0500
+Date:   Wed Jul 17 17:47:00 2024 -0500
 
-    want to prevent an issue where these dont get recycled correctly
+    adjust autoopen logic to make more sense
 
-commit 05e69d4b2682597ea5b552f0d618286c94e83018
+commit ea70f614760ca38ae46b6a2995565ea97f79e1a7
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 01:13:13 2024 -0500
+Date:   Wed Jul 17 17:45:47 2024 -0500
 
-    adjusted frost oblit preset again
+    prevent user from opening RFL in combat
 
-commit 1ca9c9a612019c89d598db9956d00634682c2b1d
+commit 7bdd1eb3e05093bf57264c5edf3abaaa6b9e5dc8
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 01:03:02 2024 -0500
+Date:   Wed Jul 17 16:32:08 2024 -0500
 
-    fix small visual issue where dropdown's old value shows as selected
+    added rfl slash command
 
-commit d2770abedd5cb50685ac00b09528a707f0f6811c
+commit a35aa8f468765f9e93808534848c145c4ce31aee
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 00:45:27 2024 -0500
+Date:   Wed Jul 17 16:31:58 2024 -0500
 
-    erase selectedValues when recycling dropdowns
+    was calling update_items an extra time
 
-commit 9548d23cffec5669cc0fae2ef8240365bb97333f
+commit 4cebb74cb4a41d66642d7399c78e90576c68330c
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 00:38:41 2024 -0500
+Date:   Wed Jul 17 16:31:34 2024 -0500
 
-    Adjust logic of stat cap buttons when adjusting to be more user friendly
+    only queue update when a rfl window is shown
 
-commit f2ca3c20a7e9590216724a9577949f8e572b8bbc
+commit 7b6bf17342b46d18ec4ae42978c6f67fa330ab2c
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 00:37:45 2024 -0500
+Date:   Wed Jul 17 16:31:13 2024 -0500
 
-    Allow setting disabled texture on image buttons
+    prevent scenario where framelevel would try to be set below 1
 
-commit 4cb04ae5707fd9333ec3f1977819a1c1f903dbaf
+commit 5f74c6ef212b74556c6e1d1f151d55bdea9f6593
 Author: skyler-code <skylerh15@github.com>
-Date:   Fri Jul 5 00:07:19 2024 -0500
+Date:   Wed Jul 17 16:06:55 2024 -0500
 
-    throw print in addonTable
-
-commit aca48128f82cfce29b2f649d95507d3cbc3d279a
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jul 4 23:59:59 2024 -0500
-
-    no need to add cap when setting to none
-
-commit 71eb1e4a4f70883bccc810438a7b61194107c805
-Author: skyler-code <skylerh15@github.com>
-Date:   Thu Jul 4 23:59:40 2024 -0500
-
-    simplify setpoint call
-
-commit db441d614ff521f794f67fd209dacb4c2d4a66a7
-Author: Hantunaar <56095922+Hantunaar@users.noreply.github.com>
-Date:   Fri Jul 5 03:05:21 2024 +0200
-
-    Update Localization.lua (french) (#23)
-
-commit 817ad620396ac05ad653d81d66b2b039e1bf6ba8
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 17:56:26 2024 -0500
-
-    updated unholy preset to be dynamic
-
-commit a8c41252bfca9a8e051921ec338eadc4f414553e
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 17:41:32 2024 -0500
-
-    dropdown sorting adjustment
-
-commit e29adbac6a597c94b871f5d360c3a588758bc393
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 15:52:01 2024 -0500
-
-    small formatting cleanup
-
-commit 89b67e29bfb2afefa315016f19b733af728077d6
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 15:50:20 2024 -0500
-
-    update frost dk presets
-
-commit 1f53085bfe9bb3a1e0e8db1f7388ee6db31c4928
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 15:50:09 2024 -0500
-
-    adjust preset icons
-
-commit dcc9f9823de4ac17012115799adf9504daab5c0f
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 14:01:29 2024 -0500
-
-    small adjustments to accommodate non-english clients
-
-commit ec3e4068f015f0b38fddd8c2f853576847c2c37f
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 13:15:55 2024 -0500
-
-    Korean fix will now only apply to Korean clients
-
-commit 8dc5cea881060f920289283e35b2ab443028eb62
-Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 3 12:53:41 2024 -0500
-
-    fixed an extreme impossible edge case bug
+    correct frame level swapping issues
 

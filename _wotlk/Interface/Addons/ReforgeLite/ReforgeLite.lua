@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.7.1"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.7.2"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -747,9 +747,12 @@ end
 function ReforgeLite:SwapFrameLevels(window)
   if not self.methodWindow then return end
   local topWindow, bottomWindow = self:GetFrameOrder()
-  if (window or self) == topWindow then return end
+  if (window or self) == topWindow then
+    topWindow:SetFrameActive(true)
+    return
+  end
   bottomWindow:SetFrameLevel(topWindow:GetFrameLevel())
-  topWindow:SetFrameLevel(bottomWindow:GetFrameLevel() - 10)
+  topWindow:SetFrameLevel(max(bottomWindow:GetFrameLevel() - 10, 1))
   bottomWindow:SetFrameActive(true)
   topWindow:SetFrameActive(false)
 end
@@ -1862,8 +1865,7 @@ function ReforgeLite:GetReforgeIDFromString(item)
   return ((id and id ~= UNFORGE_INDEX) and (id - self.REFORGE_TABLE_BASE) or nil)
 end
 
-function ReforgeLite:UpdateItems ()
-  if not self.initialized then return end
+function ReforgeLite:UpdateItems()
   for i, v in ipairs (self.itemData) do
     local item = Item:CreateFromEquipmentSlot(v.slotId)
     local stats = {}
@@ -1888,29 +1890,30 @@ function ReforgeLite:UpdateItems ()
     end
     for j, s in ipairs (self.itemStats) do
       if stats[s.name] and stats[s.name] ~= 0 then
-        self.itemData[i].stats[j]:SetText (stats[s.name])
+        v.stats[j]:SetText (stats[s.name])
         if s.name == reforgeSrc then
-          self.itemData[i].stats[j]:SetTextColor (1, 0.4, 0.4)
+          v.stats[j]:SetTextColor (1, 0.4, 0.4)
         elseif s.name == reforgeDst then
-          self.itemData[i].stats[j]:SetTextColor (0.6, 1, 0.6)
+          v.stats[j]:SetTextColor (0.6, 1, 0.6)
         else
-          self.itemData[i].stats[j]:SetTextColor (1, 1, 1)
+          v.stats[j]:SetTextColor (1, 1, 1)
         end
       else
-        self.itemData[i].stats[j]:SetText ("-")
-        self.itemData[i].stats[j]:SetTextColor (0.8, 0.8, 0.8)
+        v.stats[j]:SetText ("-")
+        v.stats[j]:SetTextColor (0.8, 0.8, 0.8)
       end
     end
   end
   for i, v in ipairs (self.itemStats) do
-    self.statTotals[i]:SetText (v.getter ())
+    self.statTotals[i]:SetText(v.getter())
   end
-  for i = 1, 2 do
-    for point = 1, #self.pdb.caps[i].points do
-      local value = self.pdb.caps[i].points[point].value
-      self:UpdateCapPreset (i, point)
-      if value ~= self.pdb.caps[i].points[point].value then
-        self:ReorderCapPoint (i, point)
+
+  for capIndex, cap in ipairs(self.pdb.caps) do
+    for pointIndex, point in ipairs(cap.points) do
+      local oldValue = point.value
+      self:UpdateCapPreset (capIndex, pointIndex)
+      if oldValue ~= point.value then
+        self:ReorderCapPoint (capIndex, pointIndex)
       end
     end
   end
@@ -1946,12 +1949,14 @@ local queueUpdateEvents = {
   ["COMBAT_RATING_UPDATE"] = true,
   ["MASTERY_UPDATE"] = true,
   ["PLAYER_EQUIPMENT_CHANGED"] = true,
-  ["FORGE_MASTER_OPENED"] = true,
-  ["FORGE_MASTER_CLOSED"] = true,
   ["FORGE_MASTER_ITEM_CHANGED"] = true,
 }
 
 function ReforgeLite:QueueUpdate()
+  if not self:GetFrameOrder():IsShown() then return end
+  local time = GetTime()
+  if self.lastRan == time then return end
+  self.lastRan = time
   RunNextFrame(function() self:UpdateItems() end)
   if self.methodWindow then
     RunNextFrame(function() self:UpdateMethodChecks() end)
@@ -2322,22 +2327,23 @@ end
 
 function ReforgeLite:FORGE_MASTER_ITEM_CHANGED()
   self.reforgeSent = nil
-  self:UpdateItems()
 end
 
 function ReforgeLite:FORGE_MASTER_OPENED()
-  if self.db.openOnReforge and (not self.methodWindow or not self.methodWindow:IsShown()) then
+  if self.db.openOnReforge and not self:IsShown() and (not self.methodWindow or not self.methodWindow:IsShown()) then
+    self.autoOpened = true
     self:Show()
   end
   self.reforgeSent = nil
 end
 
 function ReforgeLite:FORGE_MASTER_CLOSED()
-  if self.db.openOnReforge then
+  if self.autoOpened then
     self:Hide()
     if self.methodWindow then
       self.methodWindow:Hide()
     end
+    self.autoOpened = nil
   end
   self.reforgeSent = nil
 end
@@ -2356,13 +2362,16 @@ function ReforgeLite:OnShow()
     self:CreateFrame()
     self.initialized = true
   end
-  if not self.methodWindow or not self.methodWindow:IsShown() then
-    self:SetFrameActive(true)
-  end
+  self:SwapFrameLevels()
   self:UpdateItems()
 end
 
+function ReforgeLite:OnHide()
+  self:SwapFrameLevels(self.methodWindow)
+end
+
 function ReforgeLite:OnCommand (cmd)
+  if InCombatLockdown() then print(ERROR_CAPS, ERR_AFFECTING_COMBAT) return end
   self:Show ()
 end
 
@@ -2378,6 +2387,8 @@ function ReforgeLite:ADDON_LOADED (addon)
   self.s2hFactor = 0
 
   self:SetUpHooks()
+  self:RegisterEvent("FORGE_MASTER_OPENED")
+  self:RegisterEvent("FORGE_MASTER_CLOSED")
 
   for event in pairs(queueUpdateEvents) do
     self:RegisterEvent(event)
@@ -2385,8 +2396,9 @@ function ReforgeLite:ADDON_LOADED (addon)
   self:UnregisterEvent("ADDON_LOADED")
 
   self:SetScript("OnShow", self.OnShow)
+  self:SetScript("OnHide", self.OnHide)
 
-  for k, v in pairs({ addonName, "reforge", REFORGE:lower() }) do
+  for k, v in pairs({ addonName, "reforge", REFORGE:lower(), "rfl" }) do
     _G["SLASH_"..addonName:upper()..k] = "/" .. v
   end
   SlashCmdList[addonName:upper()] = function(...) self:OnCommand(...) end

@@ -1,5 +1,19 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.3.0 (2024-07-17)
+
+Mage
+- Mage's Impact effect is hidden when Fire Blast misses (Wrath, Cataclysm)
+
+Shaman
+- Shaman's Molten Blast option was displayed twice (Season of Discovery)
+- Shaman's Maelstorm Weapon no longer empowers Chain Heal (SoD)
+- Shaman's Maelstorm Weapon no longer empowers Healing Wave (SoD)
+
+Bug Fixes
+- Lua errors caused by action buttons should no longer happen
+- This should fix the infinite action bar switch on Malygos, Nefarian, etc.
+
 #### v2.2.0 (2024-06-17)
 
 Necrosis

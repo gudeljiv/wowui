@@ -1,9 +1,3 @@
-VER 3 0000000000000029 " " "134400"
-#showtooltip
-/use Instant Poison
-/use [button:2] 17; 16
-/click StaticPopup1Button1
-END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
 END
@@ -13,11 +7,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1708
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3771
+/use item:4540
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -30,7 +24,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:0
 END
 VER 3 000000000000002C "r aa" "134400"
 #showtooltip Legs Rune Ability
@@ -68,11 +62,7 @@ VER 3 000000000000002A "rune w" "134400"
 /use Waist Rune Ability
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Burning Blade Shadowmage
-/targetexact Burning Blade Felsworn
-/targetexact Burning Blade Reaver
-/targetexact Burning Blade Adept
-/targetexact Burning Blade Augur
+/targetexact Conservator Ilthalaine
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

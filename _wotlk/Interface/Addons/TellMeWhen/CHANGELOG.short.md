@@ -1,8 +1,10 @@
 
-## v10.2.7
-* Initial support for WoW 11.0
-* Fix GetTalentTabInfo call for SOD Phase 4
-* Fix Tooltip Number conditions for Cata
+## v11.0.0
+* Added the original Lightwell icon type back to Cata Classic
+* Fix: dragging a spell to an icon not working in WoW 10.2.7.
+* Fix: #2168 floating point errors in alpha animations
+* Fix: Icon fade animations not always working on condition icons
+* Fix: #2170 specific aura variable indexes 1,2,3 not working on buff/debuff icons
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/85181d0423d2aef033534655e7cbf476266f91c1/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/c02caca8a179ba390847776f111575a127c05a3a/CHANGELOG.md)

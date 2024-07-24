@@ -547,3 +547,5 @@ L["Skinning"] = "Dépeçage";
 L["Jewelcrafting"] = "Joaillerie";
 L["Inscription"] = "Calligraphie";
 L["First Aid"] = "Secourisme";
+
+L["Tarnished Undermine Real"] = "Réal de Terremine terni";

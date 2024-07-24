@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20240622163308"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20240721184833"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -37,9 +37,11 @@ local lastUnit
 local function updateTT(unit)
 	if C_TooltipInfo then
 		local tooltipData = C_TooltipInfo.GetUnit(unit)
-		TooltipUtil.SurfaceArgs(tooltipData)
-		for _, line in ipairs(tooltipData.lines) do
-			TooltipUtil.SurfaceArgs(line)
+		if TooltipUtil.SurfaceArgs then
+			TooltipUtil.SurfaceArgs(tooltipData)
+			for _, line in ipairs(tooltipData.lines) do
+				TooltipUtil.SurfaceArgs(line)
+			end
 		end
 
 		return tooltipData

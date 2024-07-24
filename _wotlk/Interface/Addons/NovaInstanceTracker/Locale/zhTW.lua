@@ -378,3 +378,5 @@ L["Skinning"] = "剝皮";
 L["Jewelcrafting"] = "珠寶設計";
 L["Inscription"] = "銘文學";
 L["First Aid"] = "急救";
+
+L["Tarnished Undermine Real"] = "黯淡的幽坑城真幣";

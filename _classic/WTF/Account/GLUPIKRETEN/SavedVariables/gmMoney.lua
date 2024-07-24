@@ -146,6 +146,12 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 },
+["Zandalar Tribe"] = {
+["Battitude"] = {
+["GOLD"] = 0,
+["CLASS"] = "ROGUE",
+},
+},
 }
 GMMONEYSET = {
 ["FULLDISP"] = true,

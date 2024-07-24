@@ -26,6 +26,7 @@ ChocolateBarDB = {
 ["Dopede - Stitches"] = "Default",
 ["Kaonac - Jin'do"] = "Default",
 ["Spija - Genesis"] = "Default",
+["Battitude - Zandalar Tribe"] = "Default",
 ["Testxv - Golemagg"] = "Default",
 ["Pitchwise - Ashbringer"] = "Default",
 ["Klhjakhsgdjh - Golemagg"] = "Default",
@@ -757,6 +758,11 @@ CB_PlayedTime = {
 ["timeStamp"] = 1602497.329,
 ["timeAtThisLevel"] = 139142,
 },
+["Battitude-ZandalarTribe"] = {
+["total"] = 187,
+["timeAtThisLevel"] = 187,
+["timeStamp"] = 1978543.169,
+},
 ["Vermin-Golemagg"] = {
 ["total"] = 1990361,
 ["timeAtThisLevel"] = 897814,
@@ -963,9 +969,9 @@ CB_PlayedTime = {
 ["total"] = 425995,
 },
 ["Doperage-LoneWolf"] = {
-["total"] = 138112,
-["timeStamp"] = 1378570.144,
-["timeAtThisLevel"] = 2380,
+["total"] = 138157,
+["timeStamp"] = 1378615.211,
+["timeAtThisLevel"] = 2425,
 },
 ["Mxyzptlk-"] = {
 ["total"] = 8794,

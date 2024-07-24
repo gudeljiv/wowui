@@ -4,7 +4,7 @@
 local LibStub = _G.LibStub
 local ADDON_NAME, private = ...
 
-local LibDialog = LibStub("LibDialog-1.0")
+local LibDialog = LibStub("LibDialog-1.0RS")
 
 -- Locales
 local AL = LibStub("AceLocale-3.0"):GetLocale("RareScanner");

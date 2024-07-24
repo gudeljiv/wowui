@@ -6,8 +6,9 @@
 
 local TSM = select(2, ...) ---@type TSM
 local Sniper = TSM.Tooltip:NewPackage("Sniper")
-local L = TSM.Include("Locale").GetTable()
-local ItemString = TSM.Include("Util.ItemString")
+local L = TSM.Locale.GetTable()
+local ItemString = TSM.LibTSMTypes:Include("Item.ItemString")
+local SniperOperation = TSM.LibTSMSystem:Include("SniperOperation")
 local private = {}
 
 
@@ -36,9 +37,9 @@ function private.PopulateBelowPriceLine(tooltip, itemString)
 		-- example tooltip
 		belowPrice = 35
 	else
-		belowPrice = TSM.Operations.Sniper.GetBelowPrice(itemString)
+		belowPrice = SniperOperation.GetMaxPrice(itemString)
 	end
 	if belowPrice then
-		tooltip:AddItemValueLine(L["Sniper Below Price"], belowPrice)
+		tooltip:AddItemValueLine(L["Sniper Max Price"], belowPrice)
 	end
 end

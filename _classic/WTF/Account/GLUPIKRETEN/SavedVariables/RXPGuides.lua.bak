@@ -9,6 +9,7 @@ RXPData = {
 RXPDB = {
 ["profileKeys"] = {
 ["Doperage - Lone Wolf"] = "global",
+["Battitude - Zandalar Tribe"] = "global",
 },
 ["profiles"] = {
 ["global"] = {
@@ -18,17 +19,40 @@ RXPDB = {
 RXPSettings = {
 ["profileKeys"] = {
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+["Battitude - Zandalar Tribe"] = "Default",
 },
 ["profiles"] = {
 ["Doperage - Lone Wolf"] = {
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+116.0000915527344,
+40.00004959106445,
+},
+},
+["enableMinimapButton"] = false,
+["season"] = 2,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
+"CENTER",
+nil,
+"CENTER",
+-159.3650207519531,
+-172.8253784179688,
 },
 },
 ["RXPFrame"] = {
@@ -52,14 +76,119 @@ RXPSettings = {
 ["activeTargetFrame"] = {
 {
 "CENTER",
+nil,
+"CENTER",
+-253.3331604003906,
+-252.0639038085938,
+},
+},
+},
+},
+["Default"] = {
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-193.0157318115234,
+-289.523681640625,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
 "UIParent",
 "CENTER",
 0,
 0,
 },
 },
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-163.1743927001953,
+-175.3653106689453,
 },
-["season"] = 2,
+},
+},
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["enableMinimapButton"] = false,
+["macroAnnounced"] = true,
+},
+["Battitude - Zandalar Tribe"] = {
+["showDangerousUnitscan"] = false,
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
+["frameHeight"] = 125.0000152587891,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-163.1743927001953,
+-175.3653259277344,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-193.0157318115234,
+-289.523681640625,
+},
+},
+},
+["soloSelfFound"] = true,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -67,18 +196,17 @@ RXPSettings = {
 },
 ["RXPFrame"] = {
 235.0001068115234,
-27.99999809265137,
+125.0000228881836,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-40.00000762939453,
+39.99991989135742,
 },
 ["activeTargetFrame"] = {
 85.2649154663086,
-68,
+40.00004959106445,
 },
 },
-["frameHeight"] = 125.0000152587891,
 },
 },
 }

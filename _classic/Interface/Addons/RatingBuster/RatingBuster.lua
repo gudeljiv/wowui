@@ -25,7 +25,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.17.0"
+RatingBuster.version = "1.17.2"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -1975,15 +1975,15 @@ function RatingBuster:ProcessText(text, link, color)
 					-- Group effects with identical values
 					for statID, effect in pairs(infoTable) do
 						if  type(statID) == "table" and statID.isPercent or statID == "Spell" then
-							effect = ("%+.2f%%"):format(effect)
+							effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
 							effects[effect] = effects[effect] or {}
 							tinsert(effects[effect], S[statID])
 						elseif statID == "Percent" then
-							effect = ("%+.2f%%"):format(effect)
+							effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
 							effects[effect] = effects[effect] or {}
 						else
 							if floor(abs(effect) * 10 + 0.5) > 0 then
-								effect = ("%+.1f"):format(effect)
+								effect = ("%+.1f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".")
 							elseif floor(abs(effect) + 0.5) > 0 then
 								effect = ("%+.0f"):format(effect)
 							else

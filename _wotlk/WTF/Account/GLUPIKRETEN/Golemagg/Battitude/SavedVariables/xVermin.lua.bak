@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "CENTER",
 	},
 	["experience"] = {
-		["pulltotal"] = 7104,
-		["totaltotal"] = 447195,
+		["pulltotal"] = 10058,
+		["totaltotal"] = 1006748,
 	},
 	["killLog"] = {
 		["Mindless Zombie"] = {

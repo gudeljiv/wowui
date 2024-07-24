@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12482,
+["session"] = 12486,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -3748,12 +3748,36 @@ BugGrabberDB = {
 ["counter"] = 114,
 },
 {
+["message"] = "...nterface/AddOns/ElvUI/Classic/Modules/Skins/Misc.lua:80: hooksecurefunc(): CinematicFrame_OnDisplaySizeChanged is not a function",
+["time"] = "2024/07/24 09:54:06",
+["locals"] = "",
+["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ElvUI/Classic/Modules/Skins/Misc.lua\"]:80: in function <...nterface/AddOns/ElvUI/Classic/Modules/Skins/Misc.lua:24>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\"]:2139: in function <Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:2134>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/ElvUI/Core/General/Core.lua\"]:1833: in function `CallLoadFunc'\n[string \"@Interface/AddOns/ElvUI/Core/General/Core.lua\"]:1848: in function `CallLoadedModule'\n[string \"@Interface/AddOns/ElvUI/Core/General/Core.lua\"]:1874: in function `InitializeModules'\n[string \"@Interface/AddOns/ElvUI/Core/General/Core.lua\"]:1984: in function `Initialize'\n[string \"@Interface/AddOns/ElvUI/Core/init.lua\"]:294: in function <Interface/AddOns/ElvUI/Core/init.lua:293>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:523: in function `EnableAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:626: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12483,
+["counter"] = 1,
+},
+{
+["message"] = "...ibraries/Classic/LibClassicSpecs/LibClassicSpecs.lua:414: attempt to compare number with string",
+["time"] = "2024/07/24 09:54:08",
+["locals"] = "isInspect = nil\nisPet = nil\nspecIndex = 0\nmaxSpent = 0\n(for index) = 1\n(for limit) = 3\n(for step) = 1\ntabIndex = 1\nspent = \"\"\n(*temporary) = 3\n(*temporary) = 182\n(*temporary) = \"Assassination\"\n(*temporary) = \"attempt to compare number with string\"\nGetNumTalentTabs = <function> defined =[C]:-1\nselect = <function> defined =[C]:-1\nGetTalentTabInfo = <function> defined =[C]:-1\nClassID = 4\nGetTalentInfo = <function> defined =[C]:-1\nDRUID_FERAL_TAB = 2\nDRUID_FERAL_INSTINCT = 3\nDRUID_THICK_HIDE = 5\nDRUID_GUARDIAN_SPEC_INDEX = 3\nDRUID_RESTO_SPEC_INDEX = 4\n",
+["stack"] = "[string \"@Interface/AddOns/ElvUI_Libraries/Classic/LibClassicSpecs/LibClassicSpecs.lua\"]:414: in function <...ibraries/Classic/LibClassicSpecs/LibClassicSpecs.lua:405>\n[string \"@Interface/AddOns/ElvUI/Core/General/API.lua\"]:332: in function `CheckRole'\n[string \"@Interface/AddOns/ElvUI/Core/General/API.lua\"]:619: in function `?'\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:54: in function `Fire'\n[string \"@Interface/AddOns/ChocolateBar/libs/AceEvent-3.0-4/AceEvent-3.0.lua\"]:120: in function <...dOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua:119>",
+["session"] = 12483,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/ECS.lua:15: attempt to index global 'EngravingFrame' (a nil value)",
+["time"] = "2024/07/24 09:59:48",
+["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'EngravingFrame' (a nil value)\"\n",
+["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ECS.lua\"]:15: in function <Interface/AddOns/xVermin/Addons/ECS.lua:14>",
+["session"] = 12485,
+["counter"] = 100,
+},
+{
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12482,
-["counter"] = 4,
+["session"] = 12486,
+["counter"] = 7,
 },
 },
 }

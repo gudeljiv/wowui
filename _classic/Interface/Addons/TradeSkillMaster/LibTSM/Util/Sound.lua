@@ -6,8 +6,8 @@
 
 local TSM = select(2, ...) ---@type TSM
 local Sound = TSM.Init("Util.Sound") ---@class Util.Sound
-local L = TSM.Include("Locale").GetTable()
-local NO_SOUND_KEY = "TSM_NO_SOUND" -- this can never change
+local L = TSM.Locale.GetTable()
+local Constants = TSM.LibTSMTypes:Include("Constants")
 ---@alias SoundKey
 ---|'"TSM_NO_SOUND"'
 ---|'"AuctionWindowOpen"'
@@ -29,7 +29,7 @@ local NO_SOUND_KEY = "TSM_NO_SOUND" -- this can never change
 ---|'"UnwrapGift"'
 ---@type table<SoundKey,string>
 local SOUNDS = {
-	[NO_SOUND_KEY] = "<"..L["No Sound"]..">",
+	[Constants.NO_SOUND_KEY] = "<"..L["No Sound"]..">",
 	["AuctionWindowOpen"] = L["Auction Window Open"],
 	["AuctionWindowClose"] = L["Auction Window Close"],
 	["alarmclockwarning3"] = L["Alarm Clock"],
@@ -73,14 +73,8 @@ local SOUNDKITIDS = {
 -- Module Functions
 -- ============================================================================
 
----Gets the key used to represent no sound.
----@return SoundKey @The key used to represent no sound
-function Sound.GetNoSoundKey()
-	return NO_SOUND_KEY
-end
-
 ---Iterates over the available sounds.
----@return fun():SoundKey, string @An iterator with two fields, the sound key and a localized description
+---@return fun(): SoundKey, string @An iterator with fields: `key`, `description`
 function Sound.Iterator()
 	return pairs(SOUNDS)
 end
@@ -88,7 +82,7 @@ end
 ---Plays a sound and flashes the client icon.
 ---@param soundKey SoundKey The sound key to play
 function Sound.PlaySound(soundKey)
-	if soundKey == NO_SOUND_KEY then
+	if soundKey == Constants.NO_SOUND_KEY then
 		-- do nothing
 	elseif soundKey == "TSM_CASH_REGISTER" then
 		PlaySoundFile("Interface\\Addons\\TradeSkillMaster\\Media\\register.mp3", "Master")

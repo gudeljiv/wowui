@@ -1,10 +1,10 @@
-lightweight tag 795ec0123f7fcf05b2137cbfe7056dfaeec8857f v1.3.4
+lightweight tag 0db7f50fa497652700b2c33232cf4f7028326c56 v1.3.5
 Author:	Simon Hirsig <simon.hirsig@gmail.com>
-Date:	Sat May 18 08:38:39 2024 +0200
+Date:	Sat Jul 20 14:20:51 2024 +0200
 
-commit 795ec0123f7fcf05b2137cbfe7056dfaeec8857f
+commit 0db7f50fa497652700b2c33232cf4f7028326c56
 Author: Simon Hirsig <simon.hirsig@gmail.com>
-Date:   Sat May 18 08:38:39 2024 +0200
+Date:   Sat Jul 20 14:20:51 2024 +0200
 
     client version bump
 

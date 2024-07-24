@@ -1,0 +1,18 @@
+
+EngraverFilters = {
+["Warrior"] = {
+},
+}
+EngraverSharedOptions = {
+["ShowFilterSelector"] = false,
+["UIScale"] = 0.809999942779541,
+["VisibilityMode"] = "SyncCharacterPane",
+["LayoutDirection"] = 1,
+["DisplayMode"] = 1,
+["HideDragTab"] = false,
+["PreventSpellPlacement"] = false,
+["HideUndiscoveredRunes"] = false,
+["EnableRightClickDrag"] = false,
+["HideTooltip"] = false,
+["HideSlotLabels"] = false,
+}

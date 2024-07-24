@@ -551,3 +551,5 @@ L["Skinning"] = "Desuello";
 L["Jewelcrafting"] = "Joyería";
 L["Inscription"] = "Inscripción";
 L["First Aid"] = "Primeros auxilios";
+
+L["Tarnished Undermine Real"] = "Real deslustrado de Minahonda";

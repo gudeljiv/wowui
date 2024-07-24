@@ -1554,3 +1554,4 @@ L["STRING_WIPE_ERROR1"] = "已经发送了一个清除指令。"
 L["STRING_WIPE_ERROR2"] = "不在团队中。"
 L["STRING_WIPE_ERROR3"] = "无法停止遇敌。"
 L["STRING_YES"] = "是"
+

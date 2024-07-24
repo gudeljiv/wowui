@@ -42,7 +42,7 @@ GMMONEY = {
 ["CLASS"] = "PRIEST",
 },
 ["Doperage"] = {
-["GOLD"] = 140573,
+["GOLD"] = 140588,
 ["CLASS"] = "WARRIOR",
 },
 },
@@ -134,6 +134,12 @@ GMMONEY = {
 ["Tudum"] = {
 ["GOLD"] = 112,
 ["CLASS"] = "WARRIOR",
+},
+},
+["Zandalar Tribe"] = {
+["Battitude"] = {
+["GOLD"] = 0,
+["CLASS"] = "ROGUE",
 },
 },
 ["Gehennas"] = {

@@ -49,6 +49,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NIT.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
+NIT.version = tonumber(version);
 if (NIT.expansionNum < 10) then
 	NIT.classic = true;
 end
@@ -107,6 +108,10 @@ function NIT:OnInitialize()
 	self:tickerCharacterData();
 	self:resetOldLockouts();
 	self:wipeUpgradeData();
+	if (self.updateLootReminderFrame) then
+		self:updateLootReminderFrame();
+	end
+	self:checkNewVersion();
 end
 
 NIT.regionFont = "Fonts\\ARIALN.ttf";
@@ -947,8 +952,10 @@ function NIT:updateMinimapButton(tooltip, frame)
 		if (tooltip.NITSeparator) then
 			tooltip.NITSeparator:Hide();
 		end
-		if (tooltip.NITSeparator2) then
-			tooltip.NITSeparator2:Hide();
+		for i = 2, 10 do
+			if (tooltip["NITSeparator" .. i]) then
+				tooltip["NITSeparator" .. i]:Hide();
+			end
 		end
 		return;
 	end
@@ -1029,6 +1036,22 @@ function NIT:updateMinimapButton(tooltip, frame)
 					end
 					tooltip:AddLine(" |cFF9CD6DE" .. k .. "|r |cFFFFFFFF" .. v);
 				end
+			end
+		end
+		if (NIT.getLootReminderMinimapString and NIT.db.global.lootReminderMinimap) then
+			local text = NIT:getLootReminderMinimapString();
+			if (text) then
+				if (not tooltip.NITSeparator3) then
+					tooltip.NITSeparator3 = tooltip:CreateTexture(nil, "BORDER");
+				    tooltip.NITSeparator3:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+				    tooltip.NITSeparator3:SetHeight(1);
+				    tooltip.NITSeparator3:SetPoint("LEFT", 10, 0);
+				    tooltip.NITSeparator3:SetPoint("RIGHT", -10, 0);
+			    end
+			    tooltip:AddLine(" ");
+				tooltip.NITSeparator3:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+				tooltip.NITSeparator3:Show();
+				tooltip:AddLine(text);
 			end
 		end
 		tooltip:AddLine(" ");
@@ -3612,6 +3635,40 @@ function NIT:createAltsFrameSlider()
 		NIT.charsMinLevelSlider.editBox:SetScript("OnEscapePressed", EditBox_OnEscapePressed);
 	end
 end
+function NIT:createAltsFrameLootReminderButton()
+	if (NIT.updateLootReminderFrame and not NIT.altsLootReminderButton) then
+		--Loot reminder button.
+		NIT.altsLootReminderButton = CreateFrame("Button", "NITAltsLootReminderButton", NITAltsFrame.EditBox, "UIPanelButtonTemplate");
+		--NIT.altsLootReminderButton:SetPoint("CENTER", -60, -14);
+		NIT.altsLootReminderButton:SetPoint("CENTER", 0, -31);
+		NIT.altsLootReminderButton:SetWidth(130);
+		NIT.altsLootReminderButton:SetHeight(17);
+		NIT.altsLootReminderButton:SetText(L["Loot Reminder List"]);
+		NIT.altsLootReminderButton:SetNormalFontObject("GameFontNormalSmall");
+		NIT.altsLootReminderButton:SetScript("OnClick", function(self, arg)
+			NIT:loadLootReminderListFrame();
+		end)
+		NIT.altsLootReminderButton:SetScript("OnMouseDown", function(self, button)
+			if (button == "LeftButton" and not self:GetParent():GetParent().isMoving) then
+				self:GetParent():GetParent().EditBox:ClearFocus();
+				self:GetParent():GetParent():StartMoving();
+				self:GetParent():GetParent().isMoving = true;
+			end
+		end)
+		NIT.altsLootReminderButton:SetScript("OnMouseUp", function(self, button)
+			if (button == "LeftButton" and self:GetParent():GetParent().isMoving) then
+				self:GetParent():GetParent():StopMovingOrSizing();
+				self:GetParent():GetParent().isMoving = false;
+			end
+		end)
+		NIT.altsLootReminderButton:SetScript("OnHide", function(self)
+			if (self:GetParent():GetParent().isMoving) then
+				self:GetParent():GetParent():StopMovingOrSizing();
+				self:GetParent():GetParent().isMoving = false;
+			end
+		end)
+	end
+end
 
 function NIT:openAltsFrame()
 	if (not NIT.altsFrameShowsAltsButton) then
@@ -3619,6 +3676,9 @@ function NIT:openAltsFrame()
 	end
 	if (not NIT.charsMinLevelSlider) then
 		NIT:createAltsFrameSlider();
+	end
+	if (NIT.updateLootReminderFrame and not NIT.altsLootReminderButton) then
+		NIT:createAltsFrameLootReminderButton();
 	end
 	NITAltsFrame.fs:SetFont(NIT.regionFont, 14);
 	local header = NIT.prefixColor .. "NovaInstanceTracker v" .. version .. "|r\n"

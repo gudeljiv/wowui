@@ -316,3 +316,5 @@ L["Skinning"] = "剥皮";
 L["Jewelcrafting"] = "珠宝加工";
 L["Inscription"] = "铭文";
 L["First Aid"] = "急救";
+
+L["Tarnished Undermine Real"] = "褪色的安德麦雷亚尔";

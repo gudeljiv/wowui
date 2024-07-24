@@ -316,3 +316,5 @@ L["Skinning"] = "Снятие шкур";
 L["Jewelcrafting"] = "Ювелирное дело";
 L["Inscription"] = "Начертание";
 L["First Aid"] = "Первая помощь";
+
+L["Tarnished Undermine Real"] = "Потускневший реал Нижней шахты";

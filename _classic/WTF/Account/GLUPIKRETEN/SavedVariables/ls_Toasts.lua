@@ -23,6 +23,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 ["Paydo - Dreadmist"] = "Default",
 ["Dopede - Stitches"] = "Default",
 ["Kaonac - Jin'do"] = "Default",
+["Battitude - Zandalar Tribe"] = "Default",
 ["Testxv - Golemagg"] = "Default",
 ["Pitchwise - Ashbringer"] = "Default",
 ["Klhjakhsgdjh - Golemagg"] = "Default",

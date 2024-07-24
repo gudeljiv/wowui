@@ -316,3 +316,5 @@ L["Skinning"] = "Kürschnerei";
 L["Jewelcrafting"] = "Juwelenschleifen";
 L["Inscription"] = "Inschriftenkunde";
 L["First Aid"] = "Erste Hilfe";
+
+L["Tarnished Undermine Real"] = "Angelaufener Real aus Undermine";

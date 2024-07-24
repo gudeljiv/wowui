@@ -5,8 +5,8 @@ EngraverFilters = {
 }
 EngraverSharedOptions = {
 ["ShowFilterSelector"] = false,
-["HideTooltip"] = false,
 ["HideSlotLabels"] = false,
+["HideTooltip"] = false,
 ["LayoutDirection"] = 1,
 ["DisplayMode"] = 1,
 ["HideDragTab"] = false,

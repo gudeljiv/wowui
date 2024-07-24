@@ -288,12 +288,12 @@ local function LoadData()
     LBIS:AddItem(spec4, "228089", LBIS.L["Trinket"], "BIS") --Woodcarved Moonstalker
     LBIS:AddItem(spec4, "221309", LBIS.L["Trinket"], "BIS") --Darkmoon Card: Sandstorm
     LBIS:AddItem(spec4, "227915", LBIS.L["Trinket"], "Alt") --Duke's Domain
-    LBIS:AddItem(spec4, "221307", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Decay
     LBIS:AddItem(spec4, "223195", LBIS.L["Trinket"], "Alt") --Breadth of the Beast
     LBIS:AddItem(spec4, "227683", LBIS.L["Main Hand"], "BIS") --Sulfuras, Hand of Ragnaros
     LBIS:AddItem(spec4, "227833", LBIS.L["Main Hand"], "Alt") --Glaive of Obsidian Fury
     LBIS:AddItem(spec4, "228272", LBIS.L["Main Hand"], "Alt") --Shadowstrike
     LBIS:AddItem(spec4, "228230", LBIS.L["Main Hand"], "Alt") --Refined Hammer of the Titans
+    LBIS:AddItem(spec4, "228666", LBIS.L["Main Hand"], "Alt") --Seeping Willow
     LBIS:AddItem(spec4, "221446", LBIS.L["Main Hand"], "Alt") --Ritualist's Hammer
     LBIS:AddItem(spec4, "220596", LBIS.L["Main Hand"], "Alt") --Ancient Divining Rod
     LBIS:AddItem(spec4, "228181", LBIS.L["Ranged/Relic"], "BIS") --Idol of Exsanguination (Cat)

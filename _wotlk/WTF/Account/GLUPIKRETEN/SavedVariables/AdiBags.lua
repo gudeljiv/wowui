@@ -695,8 +695,8 @@ AdiBagsDB = {
 		["Item Sets"] = {
 			["profiles"] = {
 				["Default"] = {
-					["includeWeapons"] = false,
 					["enablePVE"] = false,
+					["includeWeapons"] = false,
 					["enablePVP"] = false,
 				},
 			},
@@ -732,15 +732,15 @@ AdiBagsDB = {
 		["Vermin - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
@@ -905,9 +905,9 @@ AdiBagsDB = {
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
+					["Percent"] = 1,
 					["Name"] = "Bag Lag Fix",
 					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
-					["Percent"] = 1,
 				},
 			},
 			["qualityOpacity"] = 0.05,

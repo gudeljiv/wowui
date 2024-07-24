@@ -31,7 +31,7 @@ VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4607
+/cast item:0
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -47,10 +47,11 @@ VER 3 000000000000000E "inspect" "136106"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3827
+/cast item:0
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Koltira Deathweaver
+/targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"
 /run InviteUnit("a");C_Timer.After(1,function() ConvertToRaid() end)

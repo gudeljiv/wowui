@@ -1,10 +1,28 @@
-lightweight tag 899ac439a17c19a799d30a6a2a0e2faf5cc215e1 DetailsRetail.8.3.0.7348.141
+tag 0b2da52a1a524111afcdb812dc2c983ae23de97d Details.12816.158
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon Jul 6 11:27:35 2020 -0300
+Date:	Tue Jul 23 23:35:23 2024 -0300
 
-commit 899ac439a17c19a799d30a6a2a0e2faf5cc215e1
+commit 3abce2d78d4d70b2d9d0dd98b17d8d09776e48f8
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon Jul 6 11:27:35 2020 -0300
+Date:   Tue Jul 23 23:35:10 2024 -0300
 
-    Fixed an issue affecting the Auto Hide for some users
+    Making your daily dose of patches.
+
+commit 28b7da65da3b34faefe11110225d969f31ecb472
+Author: Flamanis <Flamanis@users.noreply.github.com>
+Date:   Tue Jul 23 21:33:11 2024 -0500
+
+    Use first tooltip line if controller tooltip line is empty
+
+commit 28b7da65da3b34faefe11110225d969f31ecb472
+Author: Flamanis <Flamanis@users.noreply.github.com>
+Date:   Tue Jul 23 21:33:11 2024 -0500
+
+    Use first tooltip line if controller tooltip line is empty
+
+commit 4cc95883a1bbbd40e30e4ae077e951561645f734
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Tue Jul 23 22:42:57 2024 -0300
+
+    Tag release for more updates
 
