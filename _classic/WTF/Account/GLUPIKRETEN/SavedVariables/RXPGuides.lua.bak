@@ -25,54 +25,7 @@ RXPSettings = {
 ["Doperage - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
 ["macroAnnounced"] = true,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-116.0000915527344,
-40.00004959106445,
-},
-},
-["enableMinimapButton"] = false,
-["season"] = 2,
 ["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159.3650207519531,
--172.8253784179688,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
 ["activeTargetFrame"] = {
 {
 "CENTER",
@@ -82,19 +35,6 @@ nil,
 -252.0639038085938,
 },
 },
-},
-},
-["Default"] = {
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--193.0157318115234,
--289.523681640625,
-},
-},
 ["RXPFrame"] = {
 {
 "BOTTOMRIGHT",
@@ -113,6 +53,39 @@ nil,
 0,
 },
 },
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159.3650207519531,
+-172.8253784179688,
+},
+},
+},
+["frameSizes"] = {
+["activeTargetFrame"] = {
+116.0000915527344,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["season"] = 2,
+["enableMinimapButton"] = false,
+},
+["Default"] = {
+["framePositions"] = {
 ["arrowFrame"] = {
 {
 "CENTER",
@@ -122,44 +95,6 @@ nil,
 -175.3653106689453,
 },
 },
-},
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["enableMinimapButton"] = false,
-["macroAnnounced"] = true,
-},
-["Battitude - Zandalar Tribe"] = {
-["showDangerousUnitscan"] = false,
-["enableGroupQuests"] = false,
-["showDangerousMobsMap"] = false,
-["macroAnnounced"] = true,
-["frameHeight"] = 125.0000152587891,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--163.1743927001953,
--175.3653259277344,
-},
-},
 ["RXPFrame"] = {
 {
 "BOTTOMRIGHT",
@@ -188,11 +123,10 @@ nil,
 },
 },
 },
-["soloSelfFound"] = true,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
-32.00003814697266,
+31.99995613098145,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -207,6 +141,72 @@ nil,
 40.00004959106445,
 },
 },
+["enableMinimapButton"] = false,
+["macroAnnounced"] = true,
+},
+["Battitude - Zandalar Tribe"] = {
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["showDangerousUnitscan"] = false,
+["soloSelfFound"] = true,
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-193.0157318115234,
+-289.523681640625,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-163.1743927001953,
+-175.3653259277344,
+},
+},
+},
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
 },
 },
 }

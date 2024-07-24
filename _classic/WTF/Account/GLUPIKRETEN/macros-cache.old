@@ -1,9 +1,3 @@
-VER 3 0000000000000029 " " "134400"
-#showtooltip
-/use Instant Poison
-/use [button:2] 17; 16
-/click StaticPopup1Button1
-END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
 END
