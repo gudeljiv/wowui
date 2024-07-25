@@ -18,7 +18,7 @@ local private = {}
 -- Module Functions
 -- ============================================================================
 
-function Accounting.OnInitialize()
+function Accounting.OnEnable()
 	TSM.Tooltip.Register(TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM Accounting"])
 		:SetSettingsModule("Accounting")

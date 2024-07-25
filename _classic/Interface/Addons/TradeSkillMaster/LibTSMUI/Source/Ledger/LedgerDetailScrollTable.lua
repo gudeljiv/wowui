@@ -171,7 +171,7 @@ function LedgerDetailScrollTable.__protected:_HandleRowClick(row, mouseButton)
 	else
 		error("Unexpected Type: "..tostring(recordType))
 	end
-	self:ShowConfirmationDialog(L["Delete Record?"], subtitle, self._deleteFunc, uuid)
+	self:GetBaseElement():ShowConfirmationDialog(L["Delete Record?"], subtitle, self._deleteFunc, uuid)
 end
 
 function LedgerDetailScrollTable.__protected:_HandleHeaderCellClick(button, mouseButton)

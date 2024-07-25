@@ -119,11 +119,6 @@ function LibTSMComponent.__static.IsRetail()
 	return GAME_VERSION == "RETAIL"
 end
 
-function LibTSMComponent.__static.IsWarRetail()
-	-- luacheck: globals GetBuildInfo
-	return select(4, GetBuildInfo()) >= 110000
-end
-
 ---Gets the current time value (or 0 if no function is registered).
 ---@return number
 function LibTSMComponent.__static.GetTime()

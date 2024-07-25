@@ -314,8 +314,7 @@ Find more information:
 https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Triggers#events]=] ] = [=[필터가 없는 COMBAT_LOG_EVENT_UNFILTERED 이벤트는 컴퓨터 성능 소모가 심하기 때문에 사용을 자제하는 것이 좋습니다.
 자세한 정보:
 https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Triggers#events]=]
---[[Translation missing --]]
-L["Communities"] = "Communities"
+L["Communities"] = "커뮤니티"
 L["Condition Custom Text"] = "조건 사용자 정의 텍스트"
 L["Conditions"] = "조건"
 L["Contains"] = "포함"

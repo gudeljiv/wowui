@@ -13,6 +13,13 @@ NWB.firstYells = {rend = 0, ony = 0, nef = 0, zan = 0}; --Npc yells, shared guil
 NWB.buffDrops = {rend = 0, ony = 0, nef = 0, zan = 0}; --Full duration buff applications, personal cooldown.
 NWB.lastSets = {rend = 0, ony = 0, nef = 0, zan = 0}; --Buff drops actual being set in the addon, if it meets all checks after buff applications.
 
+--5 second leeway for funcs sharing the same cooldown, this is for buff drops that have a 1 minute server cooldown anyway.
+local function isOnCooldown(cooldownType, type)
+	if (NWB[cooldownType] and (GetServerTime() - NWB[cooldownType][type] < NWB.buffDropSpamCooldown - 5)) then
+		return true;
+	end
+end
+
 --Adding a central place to control whether an event should fire, things are changing a lot recently in classic with buff cooldowns etc and this just make it easier to change things in one place.
 function NWB:checkEventStatus(event, type, subEvent, channel)
 	if (event == subEvent) then
@@ -80,7 +87,7 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 			--Disable rend guild msgs in SoD.
 			return;
 		end
-		if (GetServerTime() - NWB.firstYells[type] > NWB.buffDropSpamCooldown) then
+		if (not isOnCooldown("firstYells", type)) then
 			NWB.firstYells[type] = GetServerTime();
 			return true;
 		else
@@ -92,7 +99,7 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 			--Disable rend guild msgs in SoD.
 			return;
 		end
-		if (GetServerTime() - NWB.buffDrops[type] > NWB.buffDropSpamCooldown) then
+		if (not isOnCooldown("buffDrops", type)) then
 			--NWB.buffDrops[type] = GetServerTime(); --Set in the drop func below.
 			return true;
 		else

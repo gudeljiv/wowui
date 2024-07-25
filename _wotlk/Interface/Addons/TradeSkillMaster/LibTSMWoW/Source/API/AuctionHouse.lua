@@ -187,7 +187,7 @@ function AuctionHouse.SecureHookCancel(func)
 end
 
 ---Register a secure hook function for when an auction is purchased.
----@param func fun(duration: number, itemLink: string?, quantity: number?, price: number?) The function to call
+---@param func fun(itemLink: string?, quantity: number?, price: number?) The function to call
 function AuctionHouse.SecureHookPurchase(func)
 	tinsert(private.purchaseHookFuncs, func)
 end
@@ -441,6 +441,9 @@ function private.PlaceAuctionBidHook(_, index, amountPaid)
 		return
 	end
 	private.HandlePurchaseHook(itemLink, name, stackSize, buyout)
+	for _, callback in ipairs(private.purchaseHookFuncs) do
+		callback(itemLink, stackSize, buyout)
+	end
 end
 
 function private.HandlePurchaseHook(link, name, quantity, price)

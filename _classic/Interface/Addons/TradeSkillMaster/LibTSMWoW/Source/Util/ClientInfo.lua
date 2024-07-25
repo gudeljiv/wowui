@@ -70,9 +70,9 @@ ClientInfo:OnModuleLoad(function()
 		[ClientInfo.FEATURES.REGION_WIDE_TRADING] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.CRAFTING_ORDERS] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.CHARACTER_SPECIALIZATION] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.C_ITEM] = LibTSMWoW.IsWarRetail(),
-		[ClientInfo.FEATURES.C_SPELL] = LibTSMWoW.IsWarRetail(),
-		[ClientInfo.FEATURES.WARBAND_BANK] = LibTSMWoW.IsWarRetail(),
+		[ClientInfo.FEATURES.C_ITEM] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.C_SPELL] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.WARBAND_BANK] = LibTSMWoW.IsRetail(),
 	}
 end)
 
@@ -81,12 +81,6 @@ end)
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
-
----Returns whether or not we're running within the War Within retail version of the game.
----@return boolean
-function ClientInfo.IsWarRetail()
-	return LibTSMWoW.IsWarRetail()
-end
 
 ---Returns whether or not we're running within the retail version of the game.
 ---@return boolean

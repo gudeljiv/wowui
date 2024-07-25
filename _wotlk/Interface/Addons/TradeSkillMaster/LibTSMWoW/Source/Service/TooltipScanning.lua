@@ -131,7 +131,6 @@ function private.SetContainerItem(bag, slot)
 		else
 			info = C_TooltipInfo.GetBagItem(bag, slot)
 		end
-		TooltipUtil.SurfaceArgs(info)
 		return info
 	else
 		if bag == BANK_CONTAINER then
@@ -148,7 +147,6 @@ function private.SetItemId(itemId)
 	private.PrepareTooltip()
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
 		local info =  C_TooltipInfo.GetItemByID(itemId)
-		TooltipUtil.SurfaceArgs(info)
 		return info
 	else
 		private.tooltip:SetItemByID(itemId)
@@ -159,7 +157,6 @@ function private.SetInboxItem(index, attachIndex)
 	private.PrepareTooltip()
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
 		local info = C_TooltipInfo.GetInboxItem(index, attachIndex)
-		TooltipUtil.SurfaceArgs(info)
 		return info
 	else
 		return select(2, private.tooltip:SetInboxItem(index, attachIndex))
@@ -173,7 +170,6 @@ function private.SetGuildBankItem(tab, slot)
 		if not info then
 			return nil
 		end
-		TooltipUtil.SurfaceArgs(info)
 		return info
 	else
 		return private.tooltip:SetGuildBankItem(tab, slot)
@@ -194,16 +190,7 @@ function private.ScanTooltipCharges(info)
 		if text == PROFESSIONS_MODIFIED_CRAFTING_REAGENT_BASIC then
 			return false
 		end
-		local num = strmatch(text, "%d+")
-		local chargesStr = gsub(ITEM_SPELL_CHARGES, "%%d", "%%d+")
-		if strfind(chargesStr, ":") then
-			if num == 1 then
-				chargesStr = gsub(chargesStr, "\1244(.+):.+;", "%1")
-			else
-				chargesStr = gsub(chargesStr, "\1244.+:(.+);", "%1")
-			end
-		end
-		local maxCharges = strmatch(text, "^"..chargesStr.."$")
+		local maxCharges = tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244.+:(.+);").."$")) or tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244(.+):.+;").."$"))
 		if maxCharges then
 			return maxCharges
 		end
@@ -230,7 +217,6 @@ function private.TooltipLineIteratorHelper(info, index)
 		end
 		local text = nil
 		if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
-			TooltipUtil.SurfaceArgs(info.lines[index])
 			text = info.lines[index].leftText
 		else
 			local tooltipText = _G["TSMScanTooltipTextLeft"..index]

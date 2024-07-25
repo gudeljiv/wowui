@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.7.2"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.8.0"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -1006,14 +1006,20 @@ function ReforgeLite:AddCapPoint (i, loading)
     {value = addonTable.StatCapMethods.AtMost, name = L["At most"]},
     {value = addonTable.StatCapMethods.NewValue, name = ""}
   }
-  local method = GUI:CreateDropdown (self.statCaps, methodList, 1,
-    function (_,val) self.pdb.caps[i].points[point].method = val end, 80)
-  local preset = GUI:CreateDropdown (self.statCaps, self.capPresets, 1, function (_,val)
-    self.pdb.caps[i].points[point].preset = val
-    self:UpdateCapPreset (i, point)
-    self:ReorderCapPoint (i, point)
-    self:RefreshMethodStats ()
-  end, 80)
+  local method = GUI:CreateDropdown (self.statCaps, methodList, { default = 1, setter = function (_,val) self.pdb.caps[i].points[point].method = val end, width = 80 })
+  local preset = GUI:CreateDropdown (self.statCaps, self.capPresets, {
+    default = 1,
+    width = 80,
+    setter = function (_,val)
+      self.pdb.caps[i].points[point].preset = val
+      self:UpdateCapPreset (i, point)
+      self:ReorderCapPoint (i, point)
+      self:RefreshMethodStats ()
+    end,
+    menuItemHidden = function(info)
+      return info.category and info.category ~= self.statCaps[i].stat.selectedValue
+    end
+  })
   local value = GUI:CreateEditBox (self.statCaps, 40, 30, 0, function (val)
     self.pdb.caps[i].points[point].value = val
     self:ReorderCapPoint (i, point)
@@ -1029,8 +1035,8 @@ function ReforgeLite:AddCapPoint (i, loading)
   GUI:SetTooltip (after, L["Weight after cap"])
 
   self.statCaps:SetCell (row, 0, rem)
-  self.statCaps:SetCell (row, 1, method, "CENTER", 0, -10)
-  self.statCaps:SetCell (row, 2, preset, "CENTER", 0, -10)
+  self.statCaps:SetCell (row, 1, method, "LEFT", -20, -10)
+  self.statCaps:SetCell (row, 2, preset, "LEFT", -20, -10)
   self.statCaps:SetCell (row, 3, value)
   self.statCaps:SetCell (row, 4, after)
 
@@ -1051,6 +1057,7 @@ function ReforgeLite:RemoveCapPoint (i, point, loading)
   end
   if #self.pdb.caps[i].points == 0 then
     self.statCaps[i].add:Disable()
+    self.statCaps[i].stat:SetValue(0)
   end
 end
 function ReforgeLite:ReorderCapPoint (i, point)
@@ -1191,17 +1198,21 @@ function ReforgeLite:UpdateStatWeightList ()
     self.statWeights:SetCell (1, 3, self.statWeights.buffs.strength, "LEFT")
     self.statWeights.buffs.flask = GUI:CreateDropdown (self.statWeights,
       {{value = 0, name = L["Other/No flask"]}, {value = 1, name = "300" .. ITEM_MOD_STRENGTH_SHORT},
-       {value = 2, name = "225" .. ITEM_MOD_MASTERY_RATING_SHORT}}, self.pdb.buffs.flask or 0, function (_,val)
-      self.pdb.buffs.flask = (val ~= 0 and val)
-      self:RefreshMethodStats ()
-    end, 125)
+       {value = 2, name = "225" .. ITEM_MOD_MASTERY_RATING_SHORT}}, {
+        default = self.pdb.buffs.flask or 0,
+        width = 125,
+        setter = function (_,val)
+          self.pdb.buffs.flask = (val ~= 0 and val)
+          self:RefreshMethodStats ()
+        end,
+    })
     self.statWeights.buffs.food = GUI:CreateDropdown (self.statWeights,
       {{value = 0, name = L["Other/No food"]}, {value = 1, name = "90" .. ITEM_MOD_MASTERY_RATING_SHORT},
        {value = 2, name = "90" .. ITEM_MOD_DODGE_RATING_SHORT}, {value = 3, name = "90" .. ITEM_MOD_PARRY_RATING_SHORT},
-       {value = 4, name = "90" .. ITEM_MOD_STRENGTH_SHORT},{value = 5, name = "40" .. ITEM_MOD_STRENGTH_SHORT}}, self.pdb.buffs.food or 0, function (_,val)
-      self.pdb.buffs.food = (val ~= 0 and val)
-      self:RefreshMethodStats ()
-    end, 125)
+       {value = 4, name = "90" .. ITEM_MOD_STRENGTH_SHORT},{value = 5, name = "40" .. ITEM_MOD_STRENGTH_SHORT}}, {default = self.pdb.buffs.food or 0, setter =  function (_,val)
+        self.pdb.buffs.food = (val ~= 0 and val)
+        self:RefreshMethodStats ()
+      end, width = 125})
     self.statWeights:SetCell (2, 1, self.statWeights.buffs.flask, "LEFT", -10, -10)
     self.statWeights:SetCell (2, 3, self.statWeights.buffs.food, "LEFT", -10, -10)
   end
@@ -1257,17 +1268,17 @@ function ReforgeLite:UpdateBuffs ()
     end
     if flask then
       self.statWeights.buffs.flask:SetValue (flask)
-      UIDropDownMenu_DisableDropDown (self.statWeights.buffs.flask)
+      LibDD:UIDropDownMenu_DisableDropDown (self.statWeights.buffs.flask)
     else
       self.statWeights.buffs.flask:SetValue (self.pdb.buffs.flask or 0)
-      UIDropDownMenu_EnableDropDown (self.statWeights.buffs.flask)
+      LibDD:UIDropDownMenu_EnableDropDown (self.statWeights.buffs.flask)
     end
     if food then
       self.statWeights.buffs.food:SetValue (food)
-      UIDropDownMenu_DisableDropDown (self.statWeights.buffs.food)
+      LibDD:UIDropDownMenu_DisableDropDown (self.statWeights.buffs.food)
     else
       self.statWeights.buffs.food:SetValue (self.pdb.buffs.food or 0)
-      UIDropDownMenu_EnableDropDown (self.statWeights.buffs.food)
+      LibDD:UIDropDownMenu_EnableDropDown (self.statWeights.buffs.food)
     end
   end
 end
@@ -1385,8 +1396,9 @@ function ReforgeLite:CreateOptionList ()
   end
   for i = 1, 2 do
     self.statCaps[i] = {}
-    self.statCaps[i].stat = GUI:CreateDropdown (self.statCaps, statList, self.pdb.caps[i].stat,
-      function (dropdown, val)
+    self.statCaps[i].stat = GUI:CreateDropdown (self.statCaps, statList, {
+      default = self.pdb.caps[i].stat,
+      setter = function (dropdown, val)
         if val == 0 then
           while #self.pdb.caps[i].points > 0 do
             self:RemoveCapPoint (i, 1)
@@ -1395,7 +1407,12 @@ function ReforgeLite:CreateOptionList ()
           self:AddCapPoint(i)
         end
         self.pdb.caps[i].stat = val
-      end, 110)
+      end,
+      width = 110,
+      menuItemDisabled = function(val)
+        return val > 0 and self.statCaps[3-i].stat.value == val
+      end
+    })
     self.statCaps[i].add = GUI:CreateImageButton (self.statCaps, 20, 20, "Interface\\Buttons\\UI-PlusButton-Up",
       "Interface\\Buttons\\UI-PlusButton-Down", "Interface\\Buttons\\UI-PlusButton-Hilight", "Interface\\Buttons\\UI-PlusButton-Disabled", function()
       self:AddCapPoint (i)
@@ -1419,7 +1436,7 @@ function ReforgeLite:CreateOptionList ()
       row = row + 1
       for point = 1, #self.pdb.caps[i].points do
         if self.statCaps.cells[row][2] and self.statCaps.cells[row][2].values then
-          UIDropDownMenu_SetWidth (self.statCaps.cells[row][2], self.statCaps:GetColumnWidth (2) - 20)
+          LibDD:UIDropDownMenu_SetWidth (self.statCaps.cells[row][2], self.statCaps:GetColumnWidth (2) - 20)
         end
         row = row + 1
       end

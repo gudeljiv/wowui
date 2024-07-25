@@ -20,7 +20,7 @@ local private = {}
 -- Module Functions
 -- ============================================================================
 
-function Auctioning.OnInitialize()
+function Auctioning.OnEnable()
 	TSM.Tooltip.Register(TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM Auctioning"])
 		:SetSettingsModule("Auctioning")

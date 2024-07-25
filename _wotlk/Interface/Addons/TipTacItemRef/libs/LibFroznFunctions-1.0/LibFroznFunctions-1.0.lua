@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 24; -- bump on changes
+local LIB_MINOR = 25; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -562,6 +562,106 @@ function LibFroznFunctions:IsMountCollected(mountID)
 	end
 end
 
+-- get mouse focus
+--
+-- @return frame that currently has mouse focus
+function LibFroznFunctions:GetMouseFocus()
+	-- since tww 11.0.0
+	if (GetMouseFoci) then
+		local frames = GetMouseFoci();
+		
+		return frames and frames[1];
+	end
+	
+	-- before tww 11.0.0
+	return GetMouseFocus();
+end
+
+-- get spell info
+--
+-- @param  spell  spell id or name
+-- @return name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon
+function LibFroznFunctions:GetSpellInfo(spell)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellInfo) then
+		if (not spell) then
+			return nil;
+		end
+		
+		local spellInfo = C_Spell.GetSpellInfo(spell);
+		
+		if (not spellInfo) then
+			return nil;
+		end
+		
+		return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellInfo(spell);
+end
+
+-- get spell subtext
+--
+-- @param  spell  spell id or name
+-- @return name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon
+function LibFroznFunctions:GetSpellSubtext(spell)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellSubtext) then
+		if (not spell) then
+			return nil;
+		end
+		
+		return C_Spell.GetSpellSubtext(spell);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellSubtext(spell);
+end
+
+-- get spell link
+--
+-- @param  spell    spell id or name
+-- @param  glyphID  optional. glyph id.
+-- @return spellLink
+function LibFroznFunctions:GetSpellLink(spell, glyphID)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellLink) then
+		if (not spell) then
+			return nil;
+		end
+		
+		return C_Spell.GetSpellLink(spell, glyphID);
+	end
+	
+	-- before tww 11.0.0
+	if (not LibFroznFunctions.hasWoWFlavor.realGetSpellLinkAvailable) then
+		local name, _, icon, castTime, minRange, maxRange, _spellID = self:GetSpellInfo(spell);
+		
+		return format("|c%s|Hspell:%d:0|h[%s]|h|r", "FF71D5FF", spellID, name);
+	end
+	
+	return GetSpellLink(spell);
+end
+
+-- get spell book item name
+--
+-- @param  index     spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookType  BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellName, spellSubName, spellID
+function LibFroznFunctions:GetSpellBookItemName(index, bookType)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) then
+		local BOOKTYPE_SPELL = "spell";
+		local spellBank = (bookType == BOOKTYPE_SPELL) and Enum.SpellBookSpellBank.Player or Enum.SpellBookSpellBank.Pet;
+		
+		return C_SpellBook.GetSpellBookItemName(index, spellBank);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellBookItemName(index, bookType);
+end
+
 ----------------------------------------------------------------------------------------------------
 --                                        Helper Functions                                        --
 ----------------------------------------------------------------------------------------------------
@@ -716,17 +816,20 @@ end
 
 -- remove all items from table
 --
--- @param tab[]  table to remove all items from
-function LibFroznFunctions:RemoveAllFromTable(tab)
+-- @param tab[]    table to remove all items from
+-- @param shallow  optional. true if only values on the first level should be compared, false/nil if deeper nested values should also be compared.
+function LibFroznFunctions:RemoveAllFromTable(tab, shallow)
 	-- no table
 	if (type(tab) ~= "table") then
 		return;
 	end
 	
 	-- remove all items from table
-	for key, value in pairs(tab) do
-		if (type(value) == "table") then
-			self:RemoveAllFromTable(value);
+	if (not shallow) then
+		for key, value in pairs(tab) do
+			if (type(value) == "table") then
+				self:RemoveAllFromTable(value);
+			end
 		end
 	end
 	
@@ -2011,7 +2114,7 @@ end
 --
 -- @param params               parameters
 --          .prompt              prompt to show
---          .text                text to show
+--          .lockedText          locked text to show
 --          .iconFile            optional. path to an icon (usually in Interface\\) or a FileDataID
 --          .iconTexCoord        optional.  coordinates for cropping the icon. object with four values:
 --            leftTexel            coordinate that identifies the left edge as a fraction of the image's width
@@ -2146,7 +2249,7 @@ function LibFroznFunctions:ShowPopupWithText(params)
 	
 	-- show popup with text
 	StaticPopup_Show(popupName, nil, nil, {
-		lockedEditBoxText = params.text,
+		lockedEditBoxText = params.lockedText,
 		iconFile = params.iconFile,
 		iconTexCoord = params.iconTexCoord,
 		onShowHandler = params.onShowHandler,
@@ -2581,7 +2684,7 @@ end
 --           .nameWithForeignServerSuffix  name of unit with additional foreign server suffix if needed, e.g. "Rugnaer (*)"
 --           .nameWithServerName           name with server name of unit, e.g. "Rugnaer-DunMorogh"
 --           .nameWithTitle                name with title of unit, e.g. "Sternenrufer Rugnaer". if the unit is currently not visible to the client, the title is missing and it only contains the unit name (.name).
---           .serverName                   server name of unit, e.g. "DunMorogh"
+--           .serverName                   server name of unit, e.g. "DunMorogh". nil if the unit is from the same realm.
 --           .sex                          sex of unit, e.g. 1 (neutrum / unknown), 2 (male) or 3 (female)
 --           .className                    localized class name of unit, e.g. "Warrior" or "Guerrier"
 --           .classFile                    locale-independent class file of unit, e.g. "WARRIOR"

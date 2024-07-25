@@ -92,6 +92,10 @@ function ReforgeLite:GetNeededExpertiseHard ()
   end
 end
 
+local function CreateIconMarkup(icon)
+  return CreateSimpleTextureMarkup(icon, 18, 18) .. " "
+end
+
 local AtLeast = addonTable.StatCapMethods.AtLeast
 local AtMost = addonTable.StatCapMethods.AtMost
 
@@ -107,6 +111,11 @@ local CAPS = {
   MeleeDWHitCap = 4,
   ExpSoftCap = 5,
   ExpHardCap = 6,
+  FirstHasteBreak = 7,
+  SecondHasteBreak = 8,
+  ThirdHasteBreak = 9,
+  FourthHasteBreak = 10,
+  FifthHasteBreak = 11,
 }
 
 ReforgeLite.capPresets = {
@@ -120,37 +129,163 @@ ReforgeLite.capPresets = {
     name = L["Melee hit cap"],
     getter = function ()
       return ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HIT) * (ReforgeLite:GetNeededMeleeHit () - ReforgeLite:GetMeleeHitBonus ())
-    end
+    end,
+    category = StatHit
   },
   {
     value = CAPS.SpellHitCap,
     name = L["Spell hit cap"],
     getter = function ()
       return ReforgeLite:RatingPerPoint (ReforgeLite.STATS.SPELLHIT) * (ReforgeLite:GetNeededSpellHit () - ReforgeLite:GetSpellHitBonus ())
-    end
+    end,
+    category = StatHit
   },
   {
     value = CAPS.MeleeDWHitCap,
     name = L["Melee DW hit cap"],
     getter = function ()
       return ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HIT) * (ReforgeLite:GetNeededMeleeHit () + 19 - ReforgeLite:GetMeleeHitBonus ())
-    end
+    end,
+    category = StatHit
   },
   {
     value = CAPS.ExpSoftCap,
     name = L["Expertise soft cap"],
     getter = function ()
       return ReforgeLite:RatingPerPoint (ReforgeLite.STATS.EXP) * (ReforgeLite:GetNeededExpertiseSoft () - ReforgeLite:GetExpertiseBonus ())
-    end
+    end,
+    category = StatExp
   },
   {
     value = CAPS.ExpHardCap,
     name = L["Expertise hard cap"],
     getter = function ()
       return ReforgeLite:RatingPerPoint (ReforgeLite.STATS.EXP) * (ReforgeLite:GetNeededExpertiseHard () - ReforgeLite:GetExpertiseBonus ())
-    end
+    end,
+    category = StatExp
   },
 }
+
+local function GetActiveItemSet()
+  local itemSets = {}
+  for _,v in ipairs({INVSLOT_HEAD,INVSLOT_SHOULDER,INVSLOT_CHEST,INVSLOT_LEGS,INVSLOT_HAND}) do
+    local item = Item:CreateFromEquipmentSlot(v)
+    if not item:IsItemEmpty() then
+      local itemSetId = select(16, C_Item.GetItemInfo(item:GetItemID()))
+      if itemSetId then
+        itemSets[itemSetId] = (itemSets[itemSetId] or 0) + 1
+      end
+    end
+  end
+  return itemSets
+end
+
+if addonTable.playerClass == "DRUID" then
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.FirstHasteBreak,
+    category = StatHaste,
+    name = ("7.15%% 5th %sRejuv Tick"):format(CreateIconMarkup(136081)),
+    getter = function ()
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 7.15)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.SecondHasteBreak,
+    category = StatHaste,
+    name = ("15.65%% 9th %sWG / %sEfflo Tick"):format(CreateIconMarkup(236153), CreateIconMarkup(134222)),
+    getter = function ()
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65)
+    end,
+  })
+elseif addonTable.playerClass == "PRIEST" then
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.FirstHasteBreak,
+    category = StatHaste,
+    name = ("18.74%% 2nd %sDP Tick"):format(CreateIconMarkup(252997)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 8.7 or 9.8
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.SecondHasteBreak,
+    category = StatHaste,
+    name = ("24.97%% 2nd %sSWP Tick"):format(CreateIconMarkup(136207)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 14.41 or 15.56
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.ThirdHasteBreak,
+    category = StatHaste,
+    name = ("30%% 2nd %sVT Tick"):format(CreateIconMarkup(135978)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 19.03 or 20.21
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.FourthHasteBreak,
+    category = StatHaste,
+    name = ("31.26%% 3rd %sDP Tick"):format(CreateIconMarkup(252997)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 20.17 or 21.37
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  if addonTable.playerRace == "Goblin" then
+    tinsert(ReforgeLite.capPresets, {
+      value = CAPS.FifthHasteBreak,
+      category = StatHaste,
+      name = ("41.67%% 3rd %sSWP Tick"):format(CreateIconMarkup(136207)),
+      getter = function ()
+        return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 29.7)
+      end,
+    })
+  end
+elseif addonTable.playerClass == "MAGE" then
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.FirstHasteBreak,
+    category = StatHaste,
+    name = ("15%% 2nd %sCombustion Tick"):format(CreateIconMarkup(135824)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 5.29 or 6.348
+      if addonTable.playerRace == "Goblin" then
+        percentNeeded = 5.29
+      end
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.SecondHasteBreak,
+    category = StatHaste,
+    name = ("25%% 3rd %sCombustion Tick"):format(CreateIconMarkup(135824)),
+    getter = function ()
+      local percentNeeded = addonTable.playerRace == "Goblin" and 14.509 or 15.65
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.ThirdHasteBreak,
+    category = StatHaste,
+    name = ("1 Sec %sArcane Blast"):format(CreateIconMarkup(135735)),
+    getter = function()
+      local percentNeeded = 13.8
+      local firelordCount = GetActiveItemSet()[931] or 0
+      if addonTable.playerRace == "Goblin" then
+        if firelordCount >= 4 then
+          percentNeeded = 2.43
+        else
+          percentNeeded = 12.68
+        end
+      elseif firelordCount >= 4 then
+        percentNeeded = 3.459
+      end
+      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
+    end,
+  })
+end
 
 ----------------------------------------- WEIGHT PRESETS ------------------------------
 
@@ -194,10 +329,6 @@ local RangedCaps = { HitCap }
 local CasterCaps = { HitCapSpell }
 
 local specInfo = {}
-
-local function CreateIconMarkup(icon)
-  return CreateSimpleTextureMarkup(icon, 18, 18) .. " "
-end
 
 do
   local specs = {
@@ -386,9 +517,8 @@ do
               stat = StatHaste,
               points = {
                 {
-                  preset = 1,
                   method = AtLeast,
-                  value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
+                  preset = CAPS.FirstHasteBreak,
                   after = 120,
                 },
               },
@@ -404,9 +534,8 @@ do
               stat = StatHaste,
               points = {
                 {
-                  preset = 1,
                   method = AtLeast,
-                  value = ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65),
+                  preset = CAPS.FirstHasteBreak,
                   after = 120,
                 },
               },
@@ -423,67 +552,32 @@ do
         caps = RangedCaps,
       },
       [specs.HUNTERMarksmanship] = {
-        tip = "Sim it!",
         weights = {
           0, 0, 0, 200, 150, 110, 0, 80
         },
         caps = RangedCaps,
       },
       [specs.HUNTERSurvival] = {
-        tip = "Sim it! Check WoWHead/Discord for Haste caps!!",
         weights = {
-          0, 0, 0, 200, 110, 150, 0, 40
+          0, 0, 0, 200, 110, 80, 0, 40
+        },
+        caps = RangedCaps,
+      },
+    },
+    ["MAGE"] = {
+      [specs.MAGEArcane] = {
+        weights = {
+          0, 0, 0, 5, 1, 4, -1, 3
         },
         caps = {
-          HitCap,
+          HitCapSpell,
           {
             stat = StatHaste,
             points = {
               {
                 method = AtLeast,
-                value = 757,
-                after = 80,
-              },
-            },
-          },
-        },
-      },
-    },
-    ["MAGE"] = {
-      [specs.MAGEArcane] = {
-        [PLAYER_DIFFICULTY1] = {
-          weights = {
-            0, 0, 0, 5, 1, 4, -1, 3
-          },
-          caps = {
-            HitCapSpell,
-            {
-              stat = StatHaste,
-              points = {
-                {
-                  method = AtLeast,
-                  value = addonTable.playerRace == "Goblin" and 1623 or 1767,
-                  after = 2,
-                },
-              },
-            },
-          },
-        },
-        ["T11 4pc"] = {
-          icon = 464778,
-          weights = {
-            0, 0, 0, 5, 1, 4, -1, 3
-          },
-          caps = {
-            HitCapSpell,
-            {
-              stat = StatHaste,
-              points = {
-                {
-                  method = AtLeast,
-                  value = addonTable.playerRace == "Goblin" and 311 or 443,
-                  after = 2,
-                },
+                preset = CAPS.ThirdHasteBreak,
+                after = 2,
               },
             },
           },
@@ -501,7 +595,7 @@ do
               points = {
                 {
                   method = AtLeast,
-                  value = addonTable.playerRace == "Goblin" and 678 or 813,
+                  preset = CAPS.FirstHasteBreak,
                   after = 2,
                 },
               },
@@ -519,7 +613,7 @@ do
               points = {
                 {
                   method = AtLeast,
-                  value = addonTable.playerRace == "Goblin" and 1858 or 2005,
+                  preset = CAPS.SecondHasteBreak,
                   after = 2,
                 },
               },

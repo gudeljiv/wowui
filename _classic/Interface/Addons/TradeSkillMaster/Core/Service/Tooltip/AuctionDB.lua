@@ -48,6 +48,9 @@ function AuctionDB.OnInitialize(settingsDB)
 		:AddKey("global", "tooltipOptions", "moduleTooltips")
 		:AddKey("realm", "coreOptions", "auctionDBAltRealm")
 	private.altRealm = private.settings.auctionDBAltRealm
+end
+
+function AuctionDB.OnEnable()
 	local tooltipInfo = TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM AuctionDB"], private.PopulateRightText)
 		:SetSettingsModule("AuctionDB")
@@ -157,7 +160,7 @@ function private.PopulateLineWithTrend(tooltip, itemString, info)
 end
 
 function private.PopulateRightText(tooltip, itemString)
-	local lastScan, numAuctions = nil
+	local lastScan, numAuctions = nil, nil
 	if itemString == ItemString.GetPlaceholder() then
 		-- example tooltip
 		lastScan = time() - 120

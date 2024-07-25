@@ -17,7 +17,7 @@ local private = {}
 -- Module Functions
 -- ============================================================================
 
-function Shopping.OnInitialize()
+function Shopping.OnEnable()
 	TSM.Tooltip.Register(TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM Shopping"])
 		:SetSettingsModule("Shopping")

@@ -53,7 +53,9 @@ function General.OnInitialize(settingsDB)
 		:AddKey("global", "userData", "customPriceSources")
 		:AddKey("global", "userData", "customPriceSourceFormat")
 		:AddKey("global", "coreOptions", "destroyValueSource")
+end
 
+function General.OnEnable()
 	local tooltipInfo = TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM General Info"])
 	private.tooltipInfo = tooltipInfo

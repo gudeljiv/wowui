@@ -17,7 +17,7 @@ local private = {}
 -- Module Functions
 -- ============================================================================
 
-function Sniper.OnInitialize()
+function Sniper.OnEnable()
 	TSM.Tooltip.Register(TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM Sniper"])
 		:SetSettingsModule("Sniper")

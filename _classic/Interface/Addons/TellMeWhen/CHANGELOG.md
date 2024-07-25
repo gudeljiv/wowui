@@ -1,3 +1,7 @@
+## v11.0.1
+* Fix: #2174 - Autocast conditions not working
+* Fix: #2176, #2177, #2175, Many spells not tracking cooldowns properly
+
 ## v11.0.0
 * Added the original Lightwell icon type back to Cata Classic
 * Fix: dragging a spell to an icon not working in WoW 10.2.7.

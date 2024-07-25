@@ -26,8 +26,12 @@ local private = {
 	moneyCollected = 0,
 	checkInboxTimer = nil,
 }
-local INBOX_SIZE = ClientInfo.IsRetail() and 100 or 50
 local MAIL_REFRESH_TIME = ClientInfo.IsRetail() and 15 or 60
+local MANUAL_MAIL_TYPES = {
+	[Inbox.MAIL_TYPE.OTHER.GOLD_AND_ITEMS] = true,
+	[Inbox.MAIL_TYPE.OTHER.ITEMS] = true,
+	[Inbox.MAIL_TYPE.OTHER.GOLD] = true,
+}
 
 
 
@@ -72,8 +76,10 @@ end
 -- ============================================================================
 
 function private.OpenMailThread(autoRefresh, keepMoney, filterText, filterType)
-	local isLastLoop = false
+	local preLeftMail, preTotalMail = nil, nil
+	local postLeftMail, postTotalMail = nil, nil
 	while true do
+		preLeftMail, preTotalMail = Inbox.GetNumItems()
 		local query = TSM.Mailing.Inbox.CreateQuery()
 		query:ResetOrderBy()
 			:OrderBy("index", false)
@@ -96,13 +102,10 @@ function private.OpenMailThread(autoRefresh, keepMoney, filterText, filterType)
 		private.OpenMails(mails, keepMoney, filterType)
 		TempTable.Release(mails)
 
-		if not autoRefresh or isLastLoop then
+		postLeftMail, postTotalMail = Inbox.GetNumItems()
+		if not autoRefresh or (preLeftMail == postLeftMail and preTotalMail == postTotalMail and postTotalMail == postLeftMail) then
+			Threading.Sleep(1)
 			break
-		end
-
-		local numLeftMail, totalLeftMail = Inbox.GetNumItems()
-		if totalLeftMail == numLeftMail or numLeftMail == INBOX_SIZE then
-			isLastLoop = true
 		end
 
 		CheckInbox()
@@ -126,24 +129,24 @@ function private.OpenMails(mails, keepMoney, filterType)
 		local matchesFilter = (not filterType and mailType) or (filterType == mailType)
 		local hasBagSpace = not Mail.GetInboxItemLink(index) or CalculateTotalNumberOfFreeBagSlots() > private.settings.keepMailSpace
 		if matchesFilter and hasBagSpace then
-			local _, money, _, _, _, _, textCreated = Inbox.GetHeaderInfo(index)
-			if not keepMoney or (keepMoney and money <= 0) then
+			local _, money, cod, _, _, _, textCreated = Inbox.GetHeaderInfo(index)
+			if cod == 0 and (not keepMoney or (keepMoney and money <= 0)) then
 				local message = private.settings.inboxMessages and private.GetOpenMailMessage(index) or nil
 				AutoLootMailItem(index)
 				private.moneyCollected = private.moneyCollected + money
 
 				local event = nil
-				if textCreated and mailType ~= Inbox.MAIL_TYPE.OTHER.TEMP_INVOICE then
+				if mailType == Inbox.MAIL_TYPE.BUY.CRAFTING_ORDER or MANUAL_MAIL_TYPES[mailType] then
+					event = "MAIL_SUCCESS"
+				elseif textCreated and mailType ~= Inbox.MAIL_TYPE.OTHER.TEMP_INVOICE then
 					-- Temporary invoices are not auto deleted
 					event = "CLOSE_INBOX_ITEM"
-				else
-					event = "MAIL_SUCCESS"
 				end
-				if Threading.WaitForEvent(event, "MAIL_FAILED") ~= "MAIL_FAILED" then
+				if event and Threading.WaitForEvent(event, "MAIL_FAILED") ~= "MAIL_FAILED" then
 					if message then
 						ChatMessage.PrintUser(message)
 					end
-					if event == "MAIL_SUCCESS" then
+					if textCreated and event == "MAIL_SUCCESS" then
 						private.DeleteEmptyMail(index)
 					end
 				end
@@ -213,15 +216,6 @@ function private.GetOpenMailMessage(index)
 		if numItems == 1 and itemLink and quantity > 0 then
 			return format(L["Your auction of %sx%s expired"], itemLink, quantity)
 		end
-	elseif mailType == Inbox.MAIL_TYPE.LETTER.COD then
-		local sender, _, cod = Inbox.GetHeaderInfo(index)
-		sender = sender or "?"
-		local _, itemLink, quantity = private.GetMailItemInfo(index)
-		if quantity > 0 then
-			return format(L["%s sent you a COD of multiple items for %s"], sender, itemLink, quantity, private.FormatMoney(cod, "FEEDBACK_RED"))
-		elseif quantity == -1 then
-			return format(L["%s sent you a COD of %sx%d for %s"], sender, itemLink, quantity, private.FormatMoney(cod, "FEEDBACK_RED"))
-		end
 	elseif mailType == Inbox.MAIL_TYPE.OTHER.GOLD_AND_ITEMS then
 		local sender, money = Inbox.GetHeaderInfo(index)
 		sender = sender or "?"
@@ -246,10 +240,6 @@ function private.GetOpenMailMessage(index)
 		local sender, money = Inbox.GetHeaderInfo(index)
 		sender = sender or "?"
 		return format(L["%s sent you %s"], sender, private.FormatMoney(money, "FEEDBACK_GREEN"))
-	elseif mailType == Inbox.MAIL_TYPE.LETTER then
-		local sender, _, _, _, subject = Inbox.GetHeaderInfo(index)
-		sender = sender or "?"
-		return format(L["%s sent you a message: %s"], sender, subject)
 	end
 end
 

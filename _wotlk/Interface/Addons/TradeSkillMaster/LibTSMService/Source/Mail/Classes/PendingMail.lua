@@ -86,7 +86,7 @@ function PendingMail.Start()
 
 	-- Handle auction buying (handled via PendingMail.HandleAuctionPurchase() for retail)
 	if not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
-		AuctionHouse.SecureHookPurchase(function(_, itemLink, quantity)
+		AuctionHouse.SecureHookPurchase(function(itemLink, quantity)
 			local itemString = itemLink and ItemString.Get(itemLink) or nil
 			if not itemString then
 				return

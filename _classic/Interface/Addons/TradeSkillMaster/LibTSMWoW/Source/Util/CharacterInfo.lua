@@ -38,8 +38,6 @@ function CharacterInfo.GetMaxLevel()
 	elseif ClientInfo.IsVanillaClassic() then
 		return 60
 	elseif ClientInfo.IsRetail() then
-		return 70
-	elseif ClientInfo.IsWarRetail() then
 		return 80
 	else
 		error("Invalid game version")

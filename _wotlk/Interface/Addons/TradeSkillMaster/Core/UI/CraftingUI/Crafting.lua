@@ -458,7 +458,7 @@ function private.ActionHandler(manager, state, action, ...)
 	elseif action == "ACTION_START_CRAFT" then
 		local recipeString, quantity, craftingSource, salvageItemLocation = ...
 		local craftString = CraftString.FromRecipeString(recipeString)
-		if state.craftingRecipeString or Profession.NeededTools(craftString) or TSM.Crafting.ProfessionUtil.GetNumCraftableRecipeString(recipeString) == 0 or Profession.GetRemainingCooldown(craftString) then
+		if state.craftingRecipeString or Profession.NeededTools(craftString) or (not salvageItemLocation and TSM.Crafting.ProfessionUtil.GetNumCraftableRecipeString(recipeString) == 0) or Profession.GetRemainingCooldown(craftString) then
 			return
 		end
 		state.craftingSource = craftingSource

@@ -1,64 +1,96 @@
-tag df20f60edc4be95b4273b3ed684997e01f7ce8a7 v1.7.2
+tag 338f74fd012fa9794d74052cc46130559e6606bf v1.8.0
 Author:	skyler-code <skylerh15@github.com>
-Date:	Wed Jul 17 19:16:17 2024 -0500
+Date:	Wed Jul 24 23:05:51 2024 -0500
 
-commit 3c199da43c6774a826b56876f009c5bcbc8c5b07
+commit 0249c3131f1fe96fc1aba2909e5b7728b8dd0e9e
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 19:12:05 2024 -0500
+Date:   Sat Jul 20 22:20:08 2024 -0500
 
-    moving throttle to queueupdate
+    recycling menuItem funcs
 
-commit 21d047eb02fb4ba6c6762d4d05c6b4cd36af8acf
+commit e1135041ecf4d162d06d8ba7d19f4bb5c002dc9a
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 18:15:26 2024 -0500
+Date:   Sat Jul 20 14:56:45 2024 -0500
 
-    throttle UpdateItems so it doesnt run more than once per frame
+    small cleanup
 
-commit ee47cae78af1a6a3f3f567881b09c14e09e2dae3
+commit fa4eacdb1f4726e611e56ccf37a4788801ed5732
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 17:47:42 2024 -0500
+Date:   Sat Jul 20 14:46:28 2024 -0500
 
-    no need to queue update when opening forge master
+    added arcane blast haste cap preset
 
-commit d43e6f86e042e965b11934be246aecfd9824bf13
+commit e43d855460aeecd1aaddbd20d08ecc5c29c8d9c6
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 17:47:00 2024 -0500
+Date:   Sat Jul 20 13:50:48 2024 -0500
 
-    adjust autoopen logic to make more sense
+    added mage haste breakpoints
 
-commit ea70f614760ca38ae46b6a2995565ea97f79e1a7
+commit c726a3cccf23a17a443474d6f24dced33003699e
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 17:45:47 2024 -0500
+Date:   Sat Jul 20 13:34:02 2024 -0500
 
-    prevent user from opening RFL in combat
+    haste breakpoints for shadow and rdruid
 
-commit 7bdd1eb3e05093bf57264c5edf3abaaa6b9e5dc8
+commit bac0df585a33494a87acfd972ccb7744c88b6267
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 16:32:08 2024 -0500
+Date:   Sat Jul 20 11:28:57 2024 -0500
 
-    added rfl slash command
+    fixed recycling menuItem funcs
 
-commit a35aa8f468765f9e93808534848c145c4ce31aee
+commit 98c6cff49604a85b4665aac538b1de6f754c518f
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 16:31:58 2024 -0500
+Date:   Sat Jul 20 04:55:56 2024 -0500
 
-    was calling update_items an extra time
+    added haste cap presets for resto druids
 
-commit 4cebb74cb4a41d66642d7399c78e90576c68330c
+commit 0793417339167206b110ba061305c8ba6b84d3c2
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 16:31:34 2024 -0500
+Date:   Sat Jul 20 04:29:37 2024 -0500
 
-    only queue update when a rfl window is shown
+    use LibDD's UIDropDownMenu_SetWidth
 
-commit 7b6bf17342b46d18ec4ae42978c6f67fa330ab2c
+commit f27cdb53f04169c108ce2ab6553bed337b901cb3
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 16:31:13 2024 -0500
+Date:   Sat Jul 20 04:23:28 2024 -0500
 
-    prevent scenario where framelevel would try to be set below 1
+    Hide preset caps that aren't relevant to current stat cap
 
-commit 5f74c6ef212b74556c6e1d1f151d55bdea9f6593
+commit 3c626abe966971d2a44c52d5f9cc009d209d81b5
 Author: skyler-code <skylerh15@github.com>
-Date:   Wed Jul 17 16:06:55 2024 -0500
+Date:   Sat Jul 20 03:41:35 2024 -0500
 
-    correct frame level swapping issues
+    prevent user from setting stat caps to the same value
+
+commit e059e1f67bfc14de7827169fb5e20eee74bedc95
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jul 20 03:30:56 2024 -0500
+
+    move optional CreateDropdown args to an object
+
+commit 2c007edacc4156acd7e295314ed35d8b76597c5e
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jul 20 03:08:24 2024 -0500
+
+    set cap stat to none after removing last cap
+
+commit 3fe04e5b9fdf4be363ddfdfe4ef1ab8f5363ab2e
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jul 20 02:57:43 2024 -0500
+
+    Fix alignment when recycling editbox for caps
+    
+    Closes #11
+
+commit 0cc2c28e5a8e6399fb2175f3a4c4a708066536b2
+Author: skyler-code <skylerh15@github.com>
+Date:   Sat Jul 20 02:54:19 2024 -0500
+
+    use LibDD for disabling/enabling dropdown
+
+commit 8d36741cd5d8abaa02c80d183264eb8655f9ecd1
+Author: skyler-code <skylerh15@github.com>
+Date:   Wed Jul 17 23:46:56 2024 -0500
+
+    simplify surv/mm preset
 

@@ -157,12 +157,10 @@ end
 
 function private.PlayerProfessionsThread()
 	-- get the player's tradeskills
-	if ClientInfo.IsRetail() or ClientInfo.IsCataClassic() then
-		if ClientInfo.IsWarRetail() then
-			ProfessionsBookFrame_Update()
-		else
-			SpellBook_UpdateProfTab()
-		end
+	if ClientInfo.IsRetail() then
+		ProfessionsBookFrame_Update()
+	elseif ClientInfo.IsCataClassic() then
+		SpellBook_UpdateProfTab()
 	else
 		SpellBookFrame_UpdateSkillLineTabs()
 	end

@@ -93,7 +93,7 @@ function GUI:CreateEditBox (parent, width, height, default, setter)
 end
 
 GUI.dropdowns = {}
-function GUI:CreateDropdown (parent, values, default, setter, width)
+function GUI:CreateDropdown (parent, values, options)
   local sel
   if #self.dropdowns > 0 then
     sel = tremove (self.dropdowns, 1)
@@ -103,17 +103,23 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
     sel = LibDD:Create_UIDropDownMenu(self:GenerateWidgetName(), parent)
     LibDD:UIDropDownMenu_SetInitializeFunction(sel, function (dropdown)
       self:ClearEditFocus()
-      local info = LibDD:UIDropDownMenu_CreateInfo()
-      for i = 1, #dropdown.values do
-        info.text = dropdown.values[i].name
+      for _, value in ipairs(dropdown.values) do
+        local info = LibDD:UIDropDownMenu_CreateInfo()
+        info.text = value.name
+        info.value = value.value
+        info.checked = (dropdown.value == value.value)
+        info.category = value.category
         info.func = function (inf)
           LibDD:UIDropDownMenu_SetSelectedValue (dropdown, inf.value)
           if dropdown.setter then dropdown.setter (dropdown,inf.value) end
           dropdown.value = inf.value
         end
-        info.value = dropdown.values[i].value
-        info.checked = (dropdown.value == dropdown.values[i].value)
-        LibDD:UIDropDownMenu_AddButton (info)
+        if dropdown.menuItemDisabled then
+          info.disabled = dropdown.menuItemDisabled(info.value)
+        end
+        if not dropdown.menuItemHidden or not dropdown.menuItemHidden(info) then
+          LibDD:UIDropDownMenu_AddButton(info)
+        end
       end
     end)
     sel.SetValue = function (dropdown, value)
@@ -144,16 +150,20 @@ function GUI:CreateDropdown (parent, values, default, setter, width)
       frame.selectedName = nil
       frame.selectedID = nil
       frame.selectedValue = nil
+      frame.menuItemDisabled = nil
+      frame.menuItemHidden = nil
       tinsert (self.dropdowns, frame)
     end
   end
-  sel.value = default
   sel.values = values
-  sel.setter = setter
+  sel.setter = options.setter
+  sel.menuItemDisabled = options.menuItemDisabled
+  sel.menuItemHidden = options.menuItemHidden
+
   LibDD:UIDropDownMenu_Initialize (sel, sel.Initialize)
-  sel:SetValue (default)
-  if width then
-    LibDD:UIDropDownMenu_SetWidth (sel, width)
+  sel:SetValue (options.default)
+  if options.width then
+    LibDD:UIDropDownMenu_SetWidth (sel, options.width)
   end
   return sel
 end

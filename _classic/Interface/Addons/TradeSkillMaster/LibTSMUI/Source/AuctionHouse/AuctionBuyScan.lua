@@ -71,6 +71,7 @@ local STATE_SCHEMA = Reactive.CreateStateSchema("AUCTION_BUY_SCAN_STATE")
 	:AddBooleanField("canCancel", false)
 	:AddBooleanField("cancelShown", false)
 	:AddBooleanField("postDialogShown", false)
+	:AddNumberField("postDuration", 2)
 	:Commit()
 
 
@@ -745,7 +746,7 @@ function AuctionBuyScan.__private:_ActionHandler(manager, state, action, ...)
 		state.auctionScrollTable:GetBaseElement():ShowDialogFrame(UIElements.New("ShoppingPostDialog", "dialog")
 			:SetSize(326, LibTSMUI.IsRetail() and 344 or 380)
 			:AddAnchor("CENTER")
-			:SetAuction(itemString, bid, buyout, quantity, undercut)
+			:SetAuction(itemString, bid, buyout, quantity, undercut, state.postDuration)
 			:SetManager(manager)
 			:SetAction("OnPostClicked", "ACTION_POST_AUCTION_CONFIRMED")
 			:SetScript("OnHide", manager:CallbackToProcessAction("ACITON_HANDLE_POST_DIALOG_HIDDEN"))
@@ -753,6 +754,7 @@ function AuctionBuyScan.__private:_ActionHandler(manager, state, action, ...)
 		state.postDialogShown = true
 	elseif action == "ACTION_POST_AUCTION_CONFIRMED" then
 		local itemString, duration, stackSize, numStacks, bid, buyout = ...
+		state.postDuration = duration
 		local postBag, postSlot = BagTracking.CreateQueryBagsAuctionable()
 			:OrderBy("slotId", true)
 			:Select("bag", "slot")

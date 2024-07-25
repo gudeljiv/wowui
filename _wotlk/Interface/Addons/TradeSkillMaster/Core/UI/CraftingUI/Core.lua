@@ -43,7 +43,7 @@ do
 	if not C_AddOns.IsAddOnLoaded("Blizzard_Professions") then
 		C_AddOns.LoadAddOn("Blizzard_Professions")
 	end
-	if ClientInfo.IsWarRetail() and not C_AddOns.IsAddOnLoaded("Blizzard_ProfessionsBook") then
+	if ClientInfo.IsRetail() and not C_AddOns.IsAddOnLoaded("Blizzard_ProfessionsBook") then
 		C_AddOns.LoadAddOn("Blizzard_ProfessionsBook")
 	end
 end

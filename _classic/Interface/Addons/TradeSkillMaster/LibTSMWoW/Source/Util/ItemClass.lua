@@ -171,19 +171,31 @@ end)
 ---Gets the name of the item type.
 ---@return string
 function ItemClass.GetClassInfo(classId)
-	return ClientInfo.IsWarRetail() and C_Item.GetItemClassInfo(classId) or GetItemClassInfo(classId)
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_ITEM) then
+		return C_Item.GetItemClassInfo(classId)
+	else
+		return GetItemClassInfo(classId)
+	end
 end
 
 ---Gets the name of the item subtype.
 ---@return string
 function ItemClass.GetSubClassInfo(classId, subClassId)
-	return ClientInfo.IsWarRetail() and C_Item.GetItemSubClassInfo(classId, subClassId) or GetItemSubClassInfo(classId, subClassId)
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_ITEM) then
+		return C_Item.GetItemSubClassInfo(classId, subClassId)
+	else
+		return GetItemSubClassInfo(classId, subClassId)
+	end
 end
 
 ---Gets the name of the item subtype.
 ---@return string
 function ItemClass.GetInventorySlotInfo(inventorySlot)
-	return ClientInfo.IsWarRetail() and C_Item.GetItemInventorySlotInfo(inventorySlot) or GetItemInventorySlotInfo(inventorySlot)
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_ITEM) then
+		return C_Item.GetItemInventorySlotInfo(inventorySlot)
+	else
+		return GetItemInventorySlotInfo(inventorySlot)
+	end
 end
 
 ---Gets the pet class ID.

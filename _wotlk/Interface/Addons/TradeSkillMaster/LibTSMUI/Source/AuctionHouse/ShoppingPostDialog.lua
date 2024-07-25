@@ -10,7 +10,6 @@ local UIElements = LibTSMUI:Include("Util.UIElements")
 local BagTracking = LibTSMUI:From("LibTSMService"):Include("Inventory.BagTracking")
 local ItemString = LibTSMUI:From("LibTSMTypes"):Include("Item.ItemString")
 local UIManager = LibTSMUI:From("LibTSMUtil"):IncludeClassType("UIManager")
-local DEFAULT_DURATION = 2
 
 
 
@@ -36,6 +35,7 @@ function ShoppingPostDialog:__init(frame)
 		buyout = nil,
 		stackSize = nil,
 		undercut = nil,
+		duration = nil,
 	}
 end
 
@@ -64,14 +64,16 @@ end
 ---@param buyout number The per-item buyout
 ---@param stackSize number The stack size being posted
 ---@param undercut number The amount to undercut by
+---@param duration number The auction duration
 ---@return ShoppingPostDialog
-function ShoppingPostDialog:SetAuction(itemString, bid, buyout, stackSize, undercut)
+function ShoppingPostDialog:SetAuction(itemString, bid, buyout, stackSize, undercut, duration)
 	self._auction.itemString = itemString
 	self._auction.bid = bid
 	self._auction.buyout = buyout
 	self._auction.stackSize = stackSize
 	self._auction.undercut = undercut
-	self:GetElement("view.posting"):SetAuction(self._auction.itemString, DEFAULT_DURATION, self._auction.bid, self._auction.buyout, 1, self._auction.stackSize, self._auction.undercut)
+	self._auction.duration = duration
+	self:GetElement("view.posting"):SetAuction(self._auction.itemString, self._auction.duration, self._auction.bid, self._auction.buyout, 1, self._auction.stackSize, self._auction.undercut)
 	return self
 end
 
@@ -87,7 +89,7 @@ function ShoppingPostDialog.__private:_GetViewContentFrame(_, path)
 			:SetAction("OnItemEditClicked", "ACTION_ITEM_EDIT_CLICKED")
 			:SetAction("OnPostClicked", "ACTION_POST_CLICKED")
 		if self._auction.itemString then
-			frame:SetAuction(self._auction.itemString, DEFAULT_DURATION, self._auction.bid, self._auction.buyout, 1, self._auction.stackSize, self._auction.undercut)
+			frame:SetAuction(self._auction.itemString, self._auction.duration, self._auction.bid, self._auction.buyout, 1, self._auction.stackSize, self._auction.undercut)
 		end
 		return frame
 	elseif path == "selection" then

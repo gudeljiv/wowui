@@ -20,7 +20,7 @@ local private = {}
 -- Module Functions
 -- ============================================================================
 
-function Crafting.OnInitialize()
+function Crafting.OnEnable()
 	TSM.Tooltip.Register(TSM.Tooltip.CreateInfo()
 		:SetHeadings(L["TSM Crafting"])
 		:SetSettingsModule("Crafting")
