@@ -342,7 +342,7 @@ function ShoppingAdvancedSearch.__private:_ActionHandler(manager, state, action,
 	elseif action == "ACTION_ITEM_LEVEL_CHANGED" then
 		state.itemLevelRange = self:GetElement("search.body.itemLevel.slider"):GetValue()
 	elseif action == "ACTION_MAX_QTY_CHANGED" then
-		state.maxQty = self:GetElement("search.body.content.frame.maxQty.input"):GetValue()
+		state.maxQty = tonumber(self:GetElement("search.body.content.frame.maxQty.input"):GetValue())
 	elseif action == "ACTION_MIN_RARITY_CHANGED" then
 		state.minRarity = self:GetElement("search.body.content.minRarity.dropdown"):GetSelectedItem()
 	elseif action == "ACTION_UNCOLLECTED_CHANGED" then

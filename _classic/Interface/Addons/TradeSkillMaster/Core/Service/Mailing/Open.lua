@@ -76,10 +76,8 @@ end
 -- ============================================================================
 
 function private.OpenMailThread(autoRefresh, keepMoney, filterText, filterType)
-	local preLeftMail, preTotalMail = nil, nil
-	local postLeftMail, postTotalMail = nil, nil
 	while true do
-		preLeftMail, preTotalMail = Inbox.GetNumItems()
+		local preLeftMail, preTotalMail = Inbox.GetNumItems()
 		local query = TSM.Mailing.Inbox.CreateQuery()
 		query:ResetOrderBy()
 			:OrderBy("index", false)
@@ -102,7 +100,7 @@ function private.OpenMailThread(autoRefresh, keepMoney, filterText, filterType)
 		private.OpenMails(mails, keepMoney, filterType)
 		TempTable.Release(mails)
 
-		postLeftMail, postTotalMail = Inbox.GetNumItems()
+		local postLeftMail, postTotalMail = Inbox.GetNumItems()
 		if not autoRefresh or (preLeftMail == postLeftMail and preTotalMail == postTotalMail and postTotalMail == postLeftMail) then
 			Threading.Sleep(1)
 			break

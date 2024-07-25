@@ -1,7 +1,7 @@
 
 local addon,ns=...;
 local L=ns.L;
-ns.debugMode = "9.2.12-releaes"=="@".."project-version".."@";
+ns.debugMode = "9.2.13-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH");
 
 local ACD = LibStub("AceConfigDialog-3.0");
@@ -13,7 +13,6 @@ local _G,type,wipe,tinsert,unpack,tostring = _G,type,wipe,tinsert,unpack,tostrin
 local GetPlayerFacing,C_Map = GetPlayerFacing,C_Map;
 local Minimap_OnClick = (MinimapMixin and MinimapMixin.Onclick) or Minimap_OnClick; -- TODO: check it - needed for classic 1.15 / wotlk 3.4.3
 local Minimap_UpdateRotationSetting = Minimap_UpdateRotationSetting or function() end -- TODO: check it - need for classic 1.15 / wotlk 3.4.3
-local IsAddOnLoaded = IsAddOnLoaded or C_AddOns.IsAddOnLoaded; -- TODO: check it - classic deprecated 1.15; need for wotlk 3.4.3
 
 ns.QuestArrowToken = {};
 local modEvents,events = {},{"ADDON_LOADED","PLAYER_ENTERING_WORLD","PLAYER_LOGIN","PLAYER_LOGOUT","MODIFIER_STATE_CHANGED"};
@@ -126,6 +125,16 @@ local function SetPlayerDotTexture(bool) -- executed by FarmHud:UpdateOptions(),
 end
 
 -- tracking options
+ local function C_Minimap_GetTrackingInfo(index) -- Changed with 11.0; returns a table instead a list
+	if C_Minimap and C_Minimap.GetTrackingInfo then
+		local info = {}
+		info.name, info.texture, info.active, info.type, info.subType, info.spellID = C_Minimap.GetTrackingInfo(index);
+		if not info.texture then
+			return info.name;
+		end
+		return info;
+	end
+end
 
 function ns.GetTrackingTypes()
 	if ns.IsClassic() then return {}; end
@@ -134,8 +143,8 @@ function ns.GetTrackingTypes()
 		numTrackingTypes = num;
 		wipe(trackingTypes);
 		for i=1, num do
-			local name, textureId, active, objType, objLevel, objId = C_Minimap.GetTrackingInfo(i);
-			trackingTypes[textureId] = {index=i,name=name,active=active,level=objLevel};
+			local info = C_Minimap_GetTrackingInfo(i)
+			trackingTypes[info.texture] = {index=i,name=info.name,active=info.active,level=info.subType}
 		end
 	end
 	return trackingTypes;
@@ -145,7 +154,7 @@ local function TrackingTypes_Update(bool, id)
 	if ns.IsClassic() then return end
 	if tonumber(id) then
 		local key,data = "tracking^"..id,trackingTypes[id];
-		local _, _, active = C_Minimap.GetTrackingInfo(data.index);
+		local info = C_Minimap_GetTrackingInfo(data.index);
 		trackingHookLocked = true;
 		if bool then
 			if FarmHudDB[key]=="client" then
@@ -153,9 +162,9 @@ local function TrackingTypes_Update(bool, id)
 					C_Minimap.SetTracking(data.index,trackingTypesStates[data.index]);
 					trackingTypesStates[data.index] = nil;
 				end
-			elseif FarmHudDB[key]~=tostring(active) then
+			elseif FarmHudDB[key]~=tostring(info.active) then
 				if trackingTypesStates[data.index]==nil then
-					trackingTypesStates[data.index] = active;
+					trackingTypesStates[data.index] = info.active;
 				end
 				C_Minimap.SetTracking(data.index,FarmHudDB[key]=="true");
 			end
@@ -596,6 +605,22 @@ do
 	end
 end
 
+local function Minimap_OnClick(self)
+	-- Copy of Minimap_OnClick. Require for replaced functions GetCenter and GetEffectiveScale
+	local x, y = GetCursorPosition();
+	local s, X,Y = MinimapMT.GetEffectiveScale(Minimap)
+	x = x / s;
+	y = y / s;
+
+	local cx, cy = MinimapMT.GetCenter(Minimap)
+	X = x - cx;
+	Y = y - cy;
+
+	if ( sqrt(X * X + Y * Y) < (self:GetWidth() / 2) ) then
+		Minimap:PingLocation(X, Y);
+	end
+end
+
 function FarmHudMixin:OnShow()
 	trackEnableMouse = true;
 
@@ -631,7 +656,7 @@ function FarmHudMixin:OnShow()
 	local OnMouseUp = Minimap:GetScript("OnMouseUp");
 	if OnMouseUp~=Minimap_OnClick then
 		mps.OnMouseUp = OnMouseUp;
-		MinimapMT.SetScript(Minimap,"OnMouseUp",Minimap_OnClick); -- TODO: currently not work on hud.
+		MinimapMT.SetScript(Minimap,"OnMouseUp",Minimap_OnClick);
 	end
 
 	-- cache non original frame script entries from foreign addons
@@ -894,7 +919,7 @@ end
 local function checkOnKnownProblematicAddOns()
 	wipe(knownProblematicAddOnsDetected);
 	for addOnName,bool in pairs(knownProblematicAddOns) do
-		if bool and (IsAddOnLoaded(addOnName)) then
+		if bool and (C_AddOns.IsAddOnLoaded(addOnName)) then
 			tinsert(knownProblematicAddOnsDetected,addOnName);
 		end
 	end
@@ -977,7 +1002,7 @@ function FarmHudMixin:ToggleOptions()
 		ACD:Close(addon);
 	else
 		ACD:Open(addon);
-		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.12-releaes");
+		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.13-release");
 	end
 end
 

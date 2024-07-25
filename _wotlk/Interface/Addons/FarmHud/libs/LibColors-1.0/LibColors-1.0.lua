@@ -1,5 +1,5 @@
 
-local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r124","r",""))) or 9999;
+local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r125","r",""))) or 9999;
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 local _G,string,tonumber,rawset,type = _G,string,tonumber,rawset,type
 local hex = "%02x";
@@ -125,8 +125,22 @@ do --[[ basic set of colors ]]
 		money_copper = "f0a55f",
 	};
 
-	-- add class names with english and localized names
+	local classColors = {}
 	for n, c in pairs(CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS) do
+		classColors[n] = c;
+	end
+
+	if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
+		local nonClassicClasses = { DEATHKNIGHT = "ffc41e3a", MONK = "ff00ff98", DEMONHUNTER = "ffa330c9", EVOKER = "ff33937f" }
+		for n,c in pairs(nonClassicClasses) do
+			if not classColors[n] then
+				classColors[n] = {colorStr=c}
+			end
+		end
+	end
+
+	-- add class names with english and localized names
+	for n, c in pairs(classColors) do
 		tmp[n:lower()] = c.colorStr;
 		if LOCALIZED_CLASS_NAMES_MALE[n] then
 			tmp[LOCALIZED_CLASS_NAMES_MALE[n]:lower()] = c.colorStr;

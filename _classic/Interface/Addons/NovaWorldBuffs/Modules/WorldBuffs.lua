@@ -1452,22 +1452,23 @@ function NWB:doBuffDropMsg(type, layer)
 	if (NWB.isLayered and tonumber(layer) and NWB.doLayerMsg) then
 		layerMsg = " (" .. L["Layer"] .. " " .. layer .. ")";
 	end
+	local cooldown = NWB.buffDropSpamCooldown > 39 and NWB.buffDropSpamCooldown or 40;
 	if (type == "rend") then
-		if ((GetServerTime() - rendDropMsg) > NWB.buffDropSpamCooldown) then
+		if ((GetServerTime() - rendDropMsg) > cooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["rendBuffDropped"] .. layerMsg, "guildBuffDropped", "rend");
 			end
 			rendDropMsg = GetServerTime();
 		end
 	elseif (type == "ony") then
-		if ((GetServerTime() - onyDropMsg) > NWB.buffDropSpamCooldown) then
+		if ((GetServerTime() - onyDropMsg) > cooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["onyxiaBuffDropped"] .. layerMsg, "guildBuffDropped", "ony");
 			end
 			onyDropMsg = GetServerTime();
 		end
 	elseif (type == "nef") then
-		if ((GetServerTime() - nefDropMsg) > NWB.buffDropSpamCooldown) then
+		if ((GetServerTime() - nefDropMsg) > cooldown) then
 			if (NWB.db.global.guildBuffDropped == 1) then
 				NWB:sendGuildMsg(L["nefarianBuffDropped"] .. layerMsg, "guildBuffDropped", "nef");
 			end

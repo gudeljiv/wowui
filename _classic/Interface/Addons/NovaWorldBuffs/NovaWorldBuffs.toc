@@ -2,7 +2,7 @@
 ## Notes: World buff timers and much more.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.87
+## Version: 2.88
 ## SavedVariables: NWBdatabase
 
 embeds.xml
@@ -24,3 +24,4 @@ Modules\TolBarad.lua
 Modules\Wintergrasp.lua
 Modules\Overlay.lua
 Modules\BuffsWindow.lua
+Modules\DungeonPortals.lua

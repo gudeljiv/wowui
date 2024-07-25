@@ -146,8 +146,7 @@ end
 function private.SetItemId(itemId)
 	private.PrepareTooltip()
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
-		local info =  C_TooltipInfo.GetItemByID(itemId)
-		return info
+		return C_TooltipInfo.GetItemByID(itemId)
 	else
 		private.tooltip:SetItemByID(itemId)
 	end
@@ -156,8 +155,7 @@ end
 function private.SetInboxItem(index, attachIndex)
 	private.PrepareTooltip()
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
-		local info = C_TooltipInfo.GetInboxItem(index, attachIndex)
-		return info
+		return C_TooltipInfo.GetInboxItem(index, attachIndex)
 	else
 		return select(2, private.tooltip:SetInboxItem(index, attachIndex))
 	end
@@ -166,11 +164,7 @@ end
 function private.SetGuildBankItem(tab, slot)
 	private.PrepareTooltip()
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TOOLTIP_INFO) then
-		local info = C_TooltipInfo.GetGuildBankItem(tab, slot)
-		if not info then
-			return nil
-		end
-		return info
+		return C_TooltipInfo.GetGuildBankItem(tab, slot)
 	else
 		return private.tooltip:SetGuildBankItem(tab, slot)
 	end
@@ -190,7 +184,12 @@ function private.ScanTooltipCharges(info)
 		if text == PROFESSIONS_MODIFIED_CRAFTING_REAGENT_BASIC then
 			return false
 		end
-		local maxCharges = tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244.+:(.+);").."$")) or tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244(.+):.+;").."$"))
+		local maxCharges = nil
+		if strfind(ITEM_SPELL_CHARGES, ":") then
+			maxCharges = tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244.+:(.+);").."$")) or tonumber(strmatch(text, "^(%d+) "..strmatch(ITEM_SPELL_CHARGES, "\1244(.+):.+;").."$"))
+		else
+			maxCharges = tonumber(strmatch(text, "^(%d+)"..strmatch(ITEM_SPELL_CHARGES, "%%d(.+)").."$"))
+		end
 		if maxCharges then
 			return maxCharges
 		end
