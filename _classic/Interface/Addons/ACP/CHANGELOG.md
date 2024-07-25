@@ -1,6 +1,8 @@
 # Addon Control Panel
 
-## [3.5.11](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/tree/3.5.11) (2023-12-22)
-[Full Changelog](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/compare/3.5.10...3.5.11) [Previous Releases](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/releases)
+## [3.5.12](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/tree/3.5.12) (2024-07-25)
+[Full Changelog](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/compare/3.5.11...3.5.12) [Previous Releases](https://github.com/Legacy-of-Sylvanaar/addon-control-panel/releases)
 
-- Fix some buggy logic and bracket mess.  
+- Fix LuaCheck  
+- Version bump  
+- 11.0.x Support  
