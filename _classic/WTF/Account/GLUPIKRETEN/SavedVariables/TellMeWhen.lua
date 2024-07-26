@@ -5963,6 +5963,8 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -5971,8 +5973,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -6099,6 +6099,8 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -6107,8 +6109,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -6412,6 +6412,8 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
+["Version"] = 100900,
+["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -8098,8 +8100,6 @@ nil,
 },
 },
 },
-["Version"] = 100900,
-["NumGroups"] = 5,
 },
 ["Dopesick - Stitches"] = {
 ["Version"] = 101600,
@@ -8109,7 +8109,6 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Version"] = 110101,
 ["Groups"] = {
 {
@@ -9982,6 +9981,7 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
 },
 ["Dopede - Stitches"] = {
 ["Version"] = 101600,
@@ -10000,7 +10000,6 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Version"] = 102701,
 ["Groups"] = {
 {
@@ -12283,6 +12282,7 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
 },
 ["Dopeclaw - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -12291,6 +12291,8 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
+["NumGroups"] = 5,
+["Version"] = 101600,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -15710,8 +15712,6 @@ nil,
 },
 },
 },
-["NumGroups"] = 5,
-["Version"] = 101600,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -15721,7 +15721,6 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
-["Version"] = 101600,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -17073,6 +17072,7 @@ nil,
 },
 },
 },
+["Version"] = 101600,
 },
 ["Dopedot - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -17860,6 +17860,222 @@ nil,
 ["Enabled"] = true,
 },
 {
+["Type"] = "cooldown",
+["Name"] = "Backstab",
+["GUID"] = "TMW:icon:1ceynOOtaPeT",
+["Conditions"] = {
+{
+["Type"] = "COMBO",
+["Operator"] = "<=",
+["Level"] = 5,
+},
+{
+["Type"] = "LUA",
+["Name"] = "not IsSpellKnownOrOverridesKnown(424785) and not IsSpellKnownOrOverridesKnown(399956)",
+},
+["n"] = 3,
+},
+["ManaCheck"] = true,
+["States"] = {
+{
+},
+nil,
+{
+["Alpha"] = 0,
+},
+{
+["Alpha"] = 0,
+},
+},
+["RangeCheck"] = true,
+["Enabled"] = true,
+},
+{
+["Type"] = "cooldown",
+["Conditions"] = {
+{
+["Type"] = "BUFFDUR",
+["Operator"] = "~=",
+["Name"] = "Cutthroat",
+},
+["n"] = 1,
+},
+["Name"] = "Ambush",
+["Enabled"] = true,
+["GUID"] = "TMW:icon:1cey=nVUgRO_",
+["ManaCheck"] = true,
+["States"] = {
+{
+},
+nil,
+{
+["Alpha"] = 0,
+},
+{
+["Alpha"] = 0,
+},
+},
+["RangeCheck"] = true,
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["States"] = {
+{
+},
+nil,
+{
+},
+{
+},
+},
+},
+{
+["Type"] = "cooldown",
+["Name"] = "Between the Eyes",
+["GUID"] = "TMW:icon:1cey=nVdK_ap",
+["Conditions"] = {
+{
+["Type"] = "COMBO",
+["Operator"] = ">=",
+["Level"] = 4,
+},
+{
+["Type"] = "LUA",
+["Name"] = "not _G.UnitCastingInteruptible",
+},
+{
+["Type"] = "BUFFDUR",
+["Operator"] = "~=",
+["Name"] = "Slice and Dice",
+["PrtsBefore"] = 1,
+},
+{
+["Type"] = "LUA",
+["PrtsAfter"] = 1,
+["AndOr"] = "OR",
+["Name"] = "xTTD <= 30",
+},
+{
+["Type"] = "LUA",
+["Name"] = "IsSpellKnownOrOverridesKnown(400009)",
+},
+["n"] = 5,
+},
+["States"] = {
+{
+["Alpha"] = 0,
+},
+nil,
+{
+["Alpha"] = 0,
+},
+{
+["Alpha"] = 0,
+},
+},
+["RangeCheck"] = true,
+["Enabled"] = true,
+["OnlyMine"] = true,
+},
+{
 ["OnlyMine"] = true,
 ["Type"] = "cooldown",
 ["Name"] = "Slice and Dice",
@@ -17936,7 +18152,11 @@ nil,
 ["Name"] = "xTTD <= 30",
 ["AndOr"] = "OR",
 },
-["n"] = 4,
+{
+["Type"] = "LUA",
+["Name"] = "IsSpellKnownOrOverridesKnown(424785) or IsSpellKnownOrOverridesKnown(399956)",
+},
+["n"] = 5,
 },
 },
 {
@@ -18032,150 +18252,11 @@ nil,
 ["Name"] = "xTTD <= 30",
 ["AndOr"] = "OR",
 },
-["n"] = 4,
-},
-},
 {
-["States"] = {
-{
+["Type"] = "LUA",
+["Name"] = "IsSpellKnownOrOverridesKnown(424785) or IsSpellKnownOrOverridesKnown(399956)",
 },
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
-},
-},
-{
-["States"] = {
-{
-},
-nil,
-{
-},
-{
-},
+["n"] = 5,
 },
 },
 {
@@ -18702,12 +18783,12 @@ nil,
 ["Icons"] = {
 "TMW:icon:1ZBi1G1LSN04",
 "TMW:icon:1ZBi1G1Ik=8q",
-"TMW:icon:1bfjTFwseiek",
+"TMW:icon:1cey=nVUgRO_",
 "TMW:icon:1bdJCdXiCTSJ",
-"TMW:icon:1bzTh96gkXSt",
 "TMW:icon:1cer6m1AqtWi",
+"TMW:icon:1cey=nVdK_ap",
 "TMW:icon:1TeVAjjavXC6",
-"TMW:icon:1TeVAjjXQ0WB",
+"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1cer6m0=J70m",
 "TMW:icon:1cer6m0_Lhyb",
 },
@@ -18781,12 +18862,12 @@ nil,
 ["Icons"] = {
 "TMW:icon:1ZBi1G1LSN04",
 "TMW:icon:1ZBi1G1Ik=8q",
-"TMW:icon:1bfjTFwseiek",
+"TMW:icon:1cey=nVUgRO_",
 "TMW:icon:1bdJCdXiCTSJ",
-"TMW:icon:1bzTh96gkXSt",
 "TMW:icon:1cer6m1AqtWi",
+"TMW:icon:1cey=nVdK_ap",
 "TMW:icon:1TeVAjjavXC6",
-"TMW:icon:1TeVAjjXQ0WB",
+"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1cer6m0=J70m",
 "TMW:icon:1cer6m0_Lhyb",
 },
@@ -20280,6 +20361,8 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMin"] = 15,
+["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -20288,8 +20371,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMin"] = 15,
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20378,6 +20459,8 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMin"] = 15,
+["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -20386,8 +20469,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMin"] = 15,
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20501,7 +20582,6 @@ nil,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Version"] = 102601,
 ["Groups"] = {
 {
@@ -23579,6 +23659,7 @@ nil,
 ["OnlyInCombat"] = true,
 },
 },
+["NumGroups"] = 5,
 },
 ["Dopestab - Lone Wolf"] = {
 ["Version"] = 102000,

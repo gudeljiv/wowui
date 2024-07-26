@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12500,
+["session"] = 12508,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -3780,12 +3780,20 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
+["message"] = "Interface/AddOns/xVermin/Helpers/Engravings.lua:65: attempt to index global 'default_macro2' (a nil value)",
+["time"] = "2024/07/26 18:27:03",
+["locals"] = "mutilate = false\nsaber = false\nflesh = false\ncategories = <table> {\n 1 = 1\n 2 = 5\n 3 = 6\n 4 = 7\n 5 = 8\n 6 = 9\n 7 = 10\n 8 = 11\n 9 = 16\n}\nrune_macro = \"#showtooltip\n/startattack\n/use Backstab\n\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <table> {\n <rune> = \"Backstab\"\n}\n(*temporary) = \"#showtooltip\n/startattack\n/use Backstab\n\"\n(*temporary) = 1\n(*temporary) = \"Backstab\"\n(*temporary) = nil\n(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(*temporary) = 3\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 3\n(*temporary) = 4\n(*temporary) = \"attempt to index global 'default_macro2' (a nil value)\"\ndefault_macro = \"#showtooltip\n/startattack\n/use <rune>\n\"\nCreateOrUpdateMacro = <function> defined @Interface/AddOns/xVermin/Helpers/Engravings.lua:18\ndefault_tease_macro = \"#showtooltip\n/stopattack\n/cast [@mouseover,exists,harm][] Tease\n\"\ndefault_feint_macro = \"#showtooltip\n/cast Feint\n\"\n",
+["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Engravings.lua\"]:65: in function <Interface/AddOns/xVermin/Helpers/Engravings.lua:27>\n[string \"@Interface/AddOns/xVermin/Helpers/Engravings.lua\"]:137: in function <Interface/AddOns/xVermin/Helpers/Engravings.lua:128>",
+["session"] = 12505,
+["counter"] = 1,
+},
+{
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12500,
-["counter"] = 18,
+["session"] = 12508,
+["counter"] = 24,
 },
 },
 }

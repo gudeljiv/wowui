@@ -4,6 +4,9 @@ local default_macro = [[#showtooltip
 /startattack
 /use <rune>
 ]]
+local default_macro_2 = [[#showtooltip
+/use <rune>
+]]
 local default_tease_macro = [[#showtooltip
 /stopattack
 /cast [@mouseover,exists,harm][] Tease
@@ -55,7 +58,14 @@ local function UpdateEngravingMacro()
 		default_macro:gsub(
 		'<%a+>',
 		{
-			['<rune>'] = tostring("Sinister Strike")
+			['<rune>'] = tostring("Backstab")
+		}
+	)
+	local rune_macro_2 =
+		default_macro_2:gsub(
+		'<%a+>',
+		{
+			['<rune>'] = tostring("Backstab")
 		}
 	)
 
@@ -67,7 +77,14 @@ local function UpdateEngravingMacro()
 				['<rune>'] = tostring("Mutilate")
 			}
 		)
-		CreateOrUpdateMacro('attack', rune_macro)
+		
+		rune_macro_2 =
+			default_macro_2:gsub(
+			'<%a+>',
+			{
+				['<rune>'] = tostring("Mutilate")
+			}
+		)
 	end
 
 	if saber then 
@@ -78,8 +95,18 @@ local function UpdateEngravingMacro()
 				['<rune>'] = tostring("Saber Slash")
 			}
 		)
-		CreateOrUpdateMacro('attack', rune_macro)
+		
+		rune_macro_2 =
+			default_macro_2:gsub(
+			'<%a+>',
+			{
+				['<rune>'] = tostring("Saber Slash")
+			}
+		)
 	end
+
+	CreateOrUpdateMacro('att1', rune_macro)
+	CreateOrUpdateMacro('att2', rune_macro_2)
 
 	if flesh then 
 		CreateOrUpdateMacro('tease', default_tease_macro)

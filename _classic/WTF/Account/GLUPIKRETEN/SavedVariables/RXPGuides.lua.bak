@@ -92,7 +92,7 @@ nil,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
-67.99996185302734,
+68.00004577636719,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -116,8 +116,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--209.5236206054688,
--248.254638671875,
+-210,
+-248.0000610351563,
 },
 },
 ["RXPFrame"] = {
@@ -134,8 +134,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--241.9046783447266,
--209.5241851806641,
+-242.0000305175781,
+-210,
 },
 },
 ["arrowFrame"] = {
@@ -143,13 +143,36 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--165.0791015625,
--153.7777862548828,
+-165,
+-154.0000305175781,
 },
 },
 },
 },
 ["Doperage - Lone Wolf"] = {
+["frameSizes"] = {
+["activeTargetFrame"] = {
+86.8570556640625,
+67.99996185302734,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
+["enableMinimapButton"] = false,
+["season"] = 2,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -188,36 +211,8 @@ nil,
 },
 },
 },
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-86.8570556640625,
-67.99996185302734,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["season"] = 2,
-["enableMinimapButton"] = false,
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
-["enableMinimapButton"] = false,
-["season"] = 2,
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -256,7 +251,10 @@ nil,
 },
 },
 },
-["itemUpgradeSpec"] = "Enhance",
+["season"] = 2,
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
@@ -275,6 +273,8 @@ nil,
 31.99995613098145,
 },
 },
+["itemUpgradeSpec"] = "Enhance",
+["enableMinimapButton"] = false,
 },
 ["Battitude - Zandalar Tribe"] = {
 ["soloSelfFound"] = true,

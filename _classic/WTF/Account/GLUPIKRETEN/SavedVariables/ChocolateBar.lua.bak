@@ -985,9 +985,9 @@ CB_PlayedTime = {
 ["total"] = 3924,
 },
 ["Dopestab-LoneWolf"] = {
-["total"] = 245929,
-["timeAtThisLevel"] = 6083,
-["timeStamp"] = 2160547.873,
+["total"] = 257757,
+["timeAtThisLevel"] = 6702,
+["timeStamp"] = 2182025.556,
 },
 ["Battlearm-Gehennas"] = {
 ["total"] = 305,

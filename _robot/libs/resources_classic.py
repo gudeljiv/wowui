@@ -146,6 +146,8 @@ data = {
     "rogue": {
         "main": [
             {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1"},
+            {"name": "ambush", "type": "GetSpellTexture", "id": 462720, "key": "0"},
+            {"name": "backstab", "type": "GetSpellTexture", "id": 8721, "key": "2"},
             {"name": "saber slash", "type": "GetSpellTexture", "id": 424785, "key": "2"},
             {"name": "mutilate", "type": "GetSpellTexture", "id": 399956, "key": "2"},
             {"name": "gouge", "type": "GetSpellTexture", "id": 1776, "key": "f"},
@@ -159,7 +161,7 @@ data = {
             {"name": "blade flurry", "type": "GetSpellTexture", "id": 13877, "key": "2", "modifier": "lalt"},
         ],
         "secondary": [
-            {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
+            # {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
         ],
     },
     "warlock": {

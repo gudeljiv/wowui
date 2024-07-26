@@ -23,15 +23,15 @@ TomTomDB = {
 ["Lonac - Stitches"] = "Default",
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
-["Dopesnare - Lone Wolf"] = "Default",
+["Doperage - Lone Wolf"] = "Default",
 ["Judawise - Golemagg"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
 ["Handrmandr - Golemagg"] = "Default",
 ["Vermina - Golemagg"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
-["Doperage - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
 ["Battlearm - Jin'do"] = "Default",
 ["Dopesick - Stitches"] = "Default",
@@ -119,15 +119,15 @@ TomTomWaypointsM = {
 ["Lonac - Stitches"] = "Lonac - Stitches",
 ["Antun - Golemagg"] = "Antun - Golemagg",
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
-["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Judawise - Golemagg"] = "Judawise - Golemagg",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 ["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 ["Vermina - Golemagg"] = "Vermina - Golemagg",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 ["Dopesick - Stitches"] = "Dopesick - Stitches",
@@ -226,7 +226,7 @@ TomTomWaypointsM = {
 },
 ["Provokator - Jin'do"] = {
 },
-["Dopesnare - Lone Wolf"] = {
+["Doperage - Lone Wolf"] = {
 },
 ["Judawise - Golemagg"] = {
 },
@@ -240,9 +240,9 @@ TomTomWaypointsM = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Dopesnare - Lone Wolf"] = {
 },
-["Doperage - Lone Wolf"] = {
+["Dopetrap - Lone Wolf"] = {
 },
 ["Nitwit - Dreadnaught"] = {
 },

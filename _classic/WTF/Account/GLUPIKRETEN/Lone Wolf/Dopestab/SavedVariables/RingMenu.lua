@@ -11,7 +11,7 @@ RingMenu_ringConfig = {
 ["g"] = 0,
 ["b"] = 0,
 },
-["radius"] = 125,
+["radius"] = 115,
 ["backdropScale"] = 1.5,
 ["closeOnClick"] = false,
 ["angle"] = 0,
