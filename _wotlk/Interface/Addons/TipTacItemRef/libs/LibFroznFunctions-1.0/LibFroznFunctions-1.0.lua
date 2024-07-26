@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 25; -- bump on changes
+local LIB_MINOR = 26; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -62,13 +62,15 @@ end
 --         .CataC      = true/false for CataC
 --         .SL         = true/false for SL
 --         .DF         = true/false for DF
+--         .TWW        = true/false for TWW
 LibFroznFunctions.isWoWFlavor = {
 	ClassicEra = false,
 	BCC = false,
 	WotLKC = false,
 	CataC = false,
 	SL = false,
-	DF = false
+	DF = false,
+	TWW = false
 };
 
 if (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CLASSIC"]) then
@@ -82,8 +84,10 @@ elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CATACLYSM_CLASSIC"]) then
 else -- retail
 	if (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_SHADOWLANDS"]) then
 		LibFroznFunctions.isWoWFlavor.SL = true;
-	else
+	elseif (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_DRAGONFLIGHT"]) then
 		LibFroznFunctions.isWoWFlavor.DF = true;
+	else
+		LibFroznFunctions.isWoWFlavor.TWW = true;
 	end
 end
 
@@ -109,7 +113,7 @@ LFF_GEAR_SCORE_ALGORITHM = {
 --         .GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips         = true/false if GameTooltip:FadeOut() will not be called for worldframe unit tips (till wotlkc)
 --         .barMarginAdjustment                                        = bar margin adjustment (till wotlkc)
 --         .realGetSpellLinkAvailable                                  = true/false if the real GetSpellLink() is available (since bc 2.3.0). in classic era this function only returns the spell name instead of a spell link.
---         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expacID) (since Legion 7.1.0)
+--         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
 --         .defaultGearScoreAlgorithm                                  = default GearScore algorithm
 --         .optionsSliderTemplate                                      = options slider template ("OptionsSliderTemplate", since df 10.0.0 and catac 4.4.0 "UISliderTemplateWithLabels")
 --         .dragonriding                                               = true/false if dragonriding is available (since df)
@@ -170,7 +174,8 @@ LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet =
 	LibFroznFunctions.isWoWFlavor.BCC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
 	LibFroznFunctions.isWoWFlavor.WotLKC     and 213 or -- Valorous Dreamwalker Robe (Druid, Tier 7)
 	LibFroznFunctions.isWoWFlavor.CataC      and 359 or -- Stormrider's Robes (Druid, Tier 11)
-	LibFroznFunctions.isWoWFlavor.DF         and 395;   -- Lost Landcaller's Robes (Druid, Tier 23)
+	LibFroznFunctions.isWoWFlavor.DF         and 395 or -- Lost Landcaller's Robes (Druid, Tier 29)
+	LibFroznFunctions.isWoWFlavor.TWW        and 571;   -- Hide of the Greatlynx (Druid, Tier 32)
 
 -- get addon metadata
 --
@@ -646,20 +651,77 @@ end
 
 -- get spell book item name
 --
--- @param  index     spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
--- @param  bookType  BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
 -- @return spellName, spellSubName, spellID
-function LibFroznFunctions:GetSpellBookItemName(index, bookType)
+LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Player) or BOOKTYPE_SPELL; -- see SpellBookSpellBank in "SpellBookConstantsDocumentation.lua"
+LFF_BOOKTYPE_PET_OR_SPELLBANK_PET = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Pet) or BOOKTYPE_PET;
+
+function LibFroznFunctions:GetSpellBookItemName(index, bookTypeOrSpellBank)
 	-- since tww 11.0.0
 	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) then
-		local BOOKTYPE_SPELL = "spell";
-		local spellBank = (bookType == BOOKTYPE_SPELL) and Enum.SpellBookSpellBank.Player or Enum.SpellBookSpellBank.Pet;
-		
-		return C_SpellBook.GetSpellBookItemName(index, spellBank);
+		return C_SpellBook.GetSpellBookItemName(index, bookTypeOrSpellBank);
 	end
 	
 	-- before tww 11.0.0
-	return GetSpellBookItemName(index, bookType);
+	return GetSpellBookItemName(index, bookTypeOrSpellBank);
+end
+
+-- get spell book item texture
+--
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellName, spellSubName, spellID
+function LibFroznFunctions:GetSpellBookItemTexture(index, bookTypeOrSpellBank)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemTexture) then
+		return C_SpellBook.GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+end
+
+-- get spell book item info
+--
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellType, id
+function LibFroznFunctions:GetSpellBookItemInfo(index, bookTypeOrSpellBank)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemInfo) then
+		local spellBookItemInfo = C_SpellBook.GetSpellBookItemInfo(index, bookTypeOrSpellBank);
+		
+		if (not spellBookItemInfo) then
+			return nil;
+		end
+		
+		local spellBookItemTypeToSpellTypeLookup = { -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
+			[Enum.SpellBookItemType.None] = nil,
+			[Enum.SpellBookItemType.Spell] = "SPELL",
+			[Enum.SpellBookItemType.FutureSpell] = "FUTURESPELL",
+			[Enum.SpellBookItemType.PetAction] = "PETACTION",
+			[Enum.SpellBookItemType.Flyout] = "FLYOUT"
+		};
+		
+		return spellBookItemTypeToSpellTypeLookup[spellBookItemInfo.itemType], spellBookItemInfo.actionID;
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellBookItemInfo(index, bookTypeOrSpellBank);
+end
+
+-- has pet spells
+--
+-- @return numPetSpells, petNameToken. returns numPetSpells = nil for feral spirit (shaman wolves) in wotlkc.
+function LibFroznFunctions:HasPetSpells()
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.HasPetSpells) then
+		return C_SpellBook.HasPetSpells();
+	end
+	
+	-- before tww 11.0.0
+	return HasPetSpells();
 end
 
 ----------------------------------------------------------------------------------------------------

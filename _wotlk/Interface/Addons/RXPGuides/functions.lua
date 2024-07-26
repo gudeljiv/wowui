@@ -3351,15 +3351,15 @@ end
 function addon.functions.areapoiexists(self, text, zone, ...)
     if type(self) == "string" then
         local element = {}
-        element.zone = addon.GetMapId(zone) or zone
+        element.zone = addon.GetMapId(zone) or tonumber(zone)
         local ids = {...}
         for i,v in pairs(ids) do
             ids[i] = tonumber(v)
         end
-        if not ids[1] then
+        if not (ids[1] and element.zone) then
             return addon.error(
                         L("Error parsing guide") .. " " .. addon.currentGuideName ..
-                           ": Invalid PoI ID\n" .. self)
+                           ": Invalid PoI ID or map ID\n" .. self)
         end
         element.ids = ids
         if text and text ~= "" then element.text = text end
@@ -3368,8 +3368,9 @@ function addon.functions.areapoiexists(self, text, zone, ...)
     end
     local element = self.element
     local exists = false
+    local zoneId = element.zone
     for _,id in pairs(element.ids) do
-        if C_AreaPoiInfo.GetAreaPOIInfo(zone, id) then
+        if zoneId and id and C_AreaPoiInfo.GetAreaPOIInfo(zoneId, id) then
             exists = true
         end
     end
@@ -3377,7 +3378,7 @@ function addon.functions.areapoiexists(self, text, zone, ...)
     local event = text
     local step = element.step
     if event ~= "WindowUpdate" and step.active and not addon.settings.profile.debug and (not exists) == not element.reverse and not addon.isHidden then
-        element.tooltipText = "Step skipped: Missing pre-requisites"
+        element.tooltipText = "Step skipped: Quest unavailable today"
         step.completed = true
         addon.updateSteps = true
     elseif step.active and not step.completed then
@@ -3434,12 +3435,15 @@ end
 function addon.functions.isQuestComplete(self, ...)
     if type(self) == "string" then
         local element = {}
-        local text, id = ...
+        local text, id, reverse = ...
         id = GetQuestId(tonumber(id))
         if not id then
             return addon.error(
                         L("Error parsing guide") .. " " .. addon.currentGuideName ..
                            ": Invalid quest ID\n" .. self)
+        end
+        if reverse then
+            element.reverse = true
         end
         element.questId = id
         if text and text ~= "" then element.text = text end
@@ -3450,13 +3454,21 @@ function addon.functions.isQuestComplete(self, ...)
     local step = element.step
     local id = element.questId
     local event = ...
-    if event ~= "WindowUpdate" and step.active and not (IsOnQuest(id) and IsQuestComplete(id)) and not addon.settings.profile.debug and not addon.isHidden then
+    local isCompleted = not(IsOnQuest(id) and IsQuestComplete(id)) == not(element.reverse)
+    if event ~= "WindowUpdate" and step.active and isCompleted and not addon.settings.profile.debug and not addon.isHidden then
         step.completed = true
         addon.updateSteps = true
         element.tooltipText = "Step skipped: Missing pre-requisites"
     elseif step.active and not step.completed then
         element.tooltipText = nil
     end
+end
+
+function addon.functions.isQuestNotComplete(self, text, id, ...)
+    if type(self) == "string" then
+        return addon.functions.isQuestComplete(self,text,id,true)
+    end
+    return addon.functions.isQuestComplete(self,text,id,...)
 end
 
 function addon.functions.isOnQuest(self, text, ...)
@@ -5120,6 +5132,49 @@ function addon.functions.logout(self, text, duration)
     end
 end
 
+function addon.functions.countdown(self, text, duration)
+    if type(self) == "string" then
+        return {duration = tonumber(duration) or 0, text = text, textOnly = not text}
+    end
+
+    local element = self.element or self
+    local step = element.step
+    local event = text
+    if not step.active or step.completed or addon.isHidden or
+                     (not element.textOnly and element.completed) then
+        element.isActive = false
+        element.completed = false
+        element.skip = false
+        element.startTime = false
+        return
+    elseif not element.isActive then
+        element.isActive = true
+    end
+
+    if element.isActive and not element.startTime then
+        local t = GetTime()
+        element.startTime = t
+        addon.ScheduleTask(t + element.duration, element)
+        if element.timer then
+            addon.StartTimer(element.timer,element.timerText)
+        end
+        element.frame = self
+    end
+
+    if element.startTime and element.startTime > 0 and
+            (GetTime() - element.startTime >= element.duration) then
+
+        element.startTime = -1
+        addon.SetElementComplete(element.frame)
+        element.frame = nil
+        if element.textOnly then
+            addon.updateSteps = true
+            step.completed = true
+            element.isActive = false
+        end
+    end
+end
+
 if addon.gameVersion >= 110000 then
     events.scenario = {"SCENARIO_UPDATE", "SCENARIO_CRITERIA_UPDATE", "CRITERIA_COMPLETE"}
     addon.icons.scenario = addon.icons.complete
@@ -5261,28 +5316,27 @@ else
 
         element.text = element.rawtext .. element.criteria
     end
-
-    function addon.functions.timer(self,text,duration,timerText,callback,...)
-        if type(self) == "string" then
-            local eventList = callback and {...}
-            return {textOnly = true, timer = tonumber(duration), events = eventList,
-                    callback = callback, timerText = timerText, parent = true, text = text}
-        end
-        local element = self.element
-        local parent = element.parent
-        if parent and not element.callback then
-            parent.timer = element.timer
-            parent.timerText = element.timerText
-            return
-        end
-
-        local f = addon.functions[element.callback]
-        if type(f) == "function" and f(self,text,duration,timerText,callback,...) then
-            addon.StartTimer(element.timer,element.timerText)
-        end
-    end
 end
 
+function addon.functions.timer(self,text,duration,timerText,callback,...)
+    if type(self) == "string" then
+        local eventList = callback and {...}
+        return {textOnly = true, timer = tonumber(duration), events = eventList,
+                callback = callback, timerText = timerText, parent = true, text = text}
+    end
+    local element = self.element
+    local parent = element.parent
+    if parent and not element.callback then
+        parent.timer = element.timer
+        parent.timerText = element.timerText
+        return
+    end
+
+    local f = addon.functions[element.callback]
+    if type(f) == "function" and f(self,text,duration,timerText,callback,...) then
+        addon.StartTimer(element.timer,element.timerText)
+    end
+end
 --Waypoint functions:
 
 --Waypoints will turn into low prio WPs whenever it returns true
@@ -5612,28 +5666,28 @@ function addon.functions.collecttoy(self, ...)
     end
 end
 
-function addon.functions.collectpet(self, ...)
+function addon.functions.collectpet(self, text, id, total, flags)
     if type(self) == "string" then -- on parse
         local element = {}
         element.dynamicText = true
-        local text, id = ...
         id = tonumber(id)
         if not id then
             return addon.error(
                         L("Error parsing guide") .. " "  .. addon.currentGuideName ..
                            ': No pet npc ID provided\n' .. self)
         end
-        element.id = id
-        if text and text ~= "" then
-            element.rawtext = text
-            element.tooltipText = element.rawtext
-        else
-            element.text = " "
+        if flags then
+            element.skpStep = true
         end
+        element.total = tonumber(total) or 1
+        element.id = id
+        element.rawtext = text
+        element.text = text or " "
         return element
     end
 
     local element = self.element
+    local step = element.step
 
     -- we need to reset petjournal search, as owned parameter could be received only from journal by index
     C_PetJournal.SetSearchFilter("")
@@ -5642,27 +5696,30 @@ function addon.functions.collectpet(self, ...)
     C_PetJournal.SetAllPetTypesChecked(true)
     C_PetJournal.SetAllPetSourcesChecked(true)
 
-    local isCollected = false -- default values so it doesn't break
+    local count = 0
     element.itemName = ""
 
     for index = 1, C_PetJournal.GetNumPets() do
         local petID, speciesID, owned, cutomName, _, _, _, speciesName, _, _, companionID = C_PetJournal.GetPetInfoByIndex(index);
         if (companionID == element.id) then -- we found it
             element.itemName = speciesName
-            isCollected = owned
-            break
+            if owned then
+                count = count + 1
+            end
         end
     end
 
-    if element.rawtext then
-        element.tooltipText = element.rawtext
-        element.text = fmt("%s\n%s", element.rawtext, element.itemName)
-    else
-        element.text = fmt("%s", element.itemName)
+    if not element.rawtext then
+        element.text = fmt("%s: %d/%d", element.itemName,count,element.total)
         element.tooltipText = element.text
     end
-    if isCollected then
-        addon.SetElementComplete(self)
+    if step.active and count >= element.total then
+        if element.skipStep then
+            element.step.completed = true
+            addon.updateSteps = true
+        else
+            addon.SetElementComplete(self)
+        end
     end
 end
 
@@ -6296,5 +6353,15 @@ function addon.functions.engrave(self, ...)
         elseif not element.textOnly then
             addon.SetElementIncomplete(self)
         end
+    end
+end
+
+function addon.functions.openitem(self,text,id)
+    if type(self) == "string" then
+        return {id = tonumber(id), text = text, textOnly = true}
+    end
+    local element = self.element
+    if element.step.active then
+        addon.inventoryManager.itemsToOpen[element.id] = true
     end
 end

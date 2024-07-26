@@ -187,8 +187,8 @@ local function EventHandler(self, event, addonName)
 	end
 end
 
-local frame = CreateFrame("Frame");
-frame:RegisterEvent("ADDON_LOADED");
-frame:RegisterEvent("RUNE_UPDATED");
-frame:SetScript("OnEvent", EventHandler);
+-- local frame = CreateFrame("Frame");
+-- frame:RegisterEvent("ADDON_LOADED");
+-- frame:RegisterEvent("RUNE_UPDATED");
+-- frame:SetScript("OnEvent", EventHandler);
 

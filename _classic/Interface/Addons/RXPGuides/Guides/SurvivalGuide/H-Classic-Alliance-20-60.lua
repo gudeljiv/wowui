@@ -1,6 +1,6 @@
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 #classic
@@ -185,7 +185,7 @@ step
 .goto Ashenvale,34.67,48.83
 .subzone 415 >> Travel to Astranaar
 step
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shindrell Swiftfirei|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shindrell Swiftfire|r
 .target Shindrell Swiftfire
 .goto Ashenvale,34.67,48.83
 .turnin 1008 >> Turn in The Zoram Strand
@@ -527,7 +527,7 @@ step
 .target Daelyshia
 step
 #completewith next
-.goto Darkshore,32.75,42.21,35 >> Travel to the Auberdine Docks. Wait for the Menethil Harbor boat
+.goto 1439,32.432,43.744,15 >> Travel to the Auberdine Docks. Wait for the Menethil Harbor boat
 step
 .goto Darkshore,32.44,43.71
 >>|cRXP_WARN_Level your|r |T135966:0|t[First Aid] |cRXP_WARN_and|r |T133971:0|t[Cooking] |cRXP_WARN_while waiting for the Menethil Harbor boat|r
@@ -535,7 +535,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 #classic
@@ -738,20 +738,20 @@ step << !Druid
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bilban Tosslespanner|r << Warrior
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 .goto Ironforge,69.872,82.890 << Hunter
 .goto Ironforge,65.905,88.405 << Warrior
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .trainer >> Train your class spells
 .target Regnus Thundergranite << Hunter
 .target Bilban Tosslespanner << Warrior
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 step << Mage
 .goto Ironforge,25.496,7.080
@@ -784,7 +784,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 #classic
@@ -1051,22 +1051,24 @@ step
 #completewith next
 .goto Duskwood,18.203,56.215,50 >> Travel towards |cRXP_FRIENDLY_Jitters|r in western Duskwood
 step
-#era/som
-#completewith FinishedWolves
->>Kill |cRXP_ENEMY_Spiders|r in Duskwood. Loot them for their |cRXP_LOOT_Gooey Spider Legs|r
->>|cRXP_WARN_You will also need 1 |cRXP_LOOT_Small Venom Sac|r for your upcoming Rogue quest|r << Rogue !Dwarf
-.collect 2251,6,93,1 
-.collect 1475,1,2359,1 << Rogue !Dwarf 
-.mob Pygmy Venom Web Spider
-.mob Venom Web Spider
-.mob Green Recluse
-.mob Black Widow Hatchling
-step
 .goto Duskwood,18.203,56.215
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jitters|r
 .turnin 163 >> Turn in Raven Hill
 .accept 5 >> Accept Jitters' Growling Gut
 .target Jitters
+step << !Dwarf Rogue
+#completewith FinishedWolves
+>>Kill |cRXP_ENEMY_Pygmy Venom Web Spiders|r and |cRXP_ENEMY_Venom Web Spiders|r. Loot them for a |cRXP_LOOT_Small Venom Sac|r and their |cRXP_LOOT_Gooey Spider Legs|r
+>>|cRXP_WARN_You need a |cRXP_LOOT_Small Venom Sac|r to make an|r |T134437:0|t[Anti-Venom] |cRXP_WARN_later to remove the|r |T136230:0|t[Touch of Zanzil] |cRXP_WARN_debuff later|r
+>>|cRXP_WARN_Save the |cRXP_LOOT_Gooey Spider Legs|r for later|r
+>>|cRXP_WARN_If you have a|r |T626003:0|t|cFFF48CBAPaladin|r |cRXP_WARN_or|r |T625999:0|t|cFFFF7C0ADruid|r |cRXP_WARN_friend you can skip this step and ask them to remove it for you later|r
+.collect 1475,1,2359,1 
+.collect 2251,6,93,1,1 
+.disablecheckbox
+.mob Pygmy Venom Web Spider
+.mob Venom Web Spider
+.itemcount 6452,<1 
+.isQuestAvailable 2359
 step
 #completewith BliztikCheck
 .goto Duskwood,18.040,54.350
@@ -1119,33 +1121,21 @@ step
 .target Lars
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lars|r
 .turnin -226 >> Turn in Wolves at Our Heels
-step
-#era/som
-.goto Duskwood,33.6,60.4,100,0
-.goto Duskwood,12.2,69.8,100,0
-.goto Duskwood,10.6,37.0,100,0
-.goto Duskwood,12.8,55.6
->>Kill |cRXP_ENEMY_Spiders|r in Duskwood. Loot them for their |cRXP_LOOT_Gooey Spider Legs|r
->>|cRXP_WARN_You will also need 1 |cRXP_LOOT_Small Venom Sac|r for your upcoming Rogue quest|r << Rogue !Dwarf
-.collect 2251,6,93,1 
-.collect 1475,1,2359,1 << Rogue !Dwarf 
+step << !Dwarf Rogue
+.goto Duskwood,15.90,72.10,60,0
+.goto Duskwood,14.86,64.56,50,0
+.goto Duskwood,10.43,53.97
+>>Kill |cRXP_ENEMY_Pygmy Venom Web Spiders|r and |cRXP_ENEMY_Venom Web Spiders|r. Loot them for a |cRXP_LOOT_Small Venom Sac|r and their |cRXP_LOOT_Gooey Spider Legs|r
+>>|cRXP_WARN_You need a |cRXP_LOOT_Small Venom Sac|r to make an|r |T134437:0|t[Anti-Venom] |cRXP_WARN_later to remove the|r |T136230:0|t[Touch of Zanzil] |cRXP_WARN_debuff later|r
+>>|cRXP_WARN_Save the |cRXP_LOOT_Gooey Spider Legs|r for later|r
+>>|cRXP_WARN_If you have a|r |T626003:0|t|cFFF48CBAPaladin|r |cRXP_WARN_or|r |T625999:0|t|cFFFF7C0ADruid|r |cRXP_WARN_friend you can skip this step and ask them to remove it for you later|r
+.collect 1475,1,2359,1 
+.collect 2251,6,93,1,1 
+.disablecheckbox
 .mob Pygmy Venom Web Spider
 .mob Venom Web Spider
-.mob Green Recluse
-.mob Black Widow Hatchling
-step
-#som
-#phase 3-6
->>Kill Spiders in Duskwood
-.goto Duskwood,10.69,59.86,90,0
-.goto Duskwood,8.82,38.44
-.collect 2251,6,93,1
-.collect 1475,1,2359,1 << Rogue !Dwarf
->>You'll need 1 venom sac to craft an anti-venom for the upcoming Rogue quest in Stormwind << Rogue !Dwarf
-.mob Pygmy Venom Web Spider
-.mob Venom Web Spider
-.mob Green Recluse
-.mob Black Widow Hatchling
+.itemcount 6452,<1 
+.isQuestAvailable 2359
 step
 #completewith next
 .zone Westfall >> Travel to Westfall
@@ -1181,39 +1171,75 @@ step
 .complete 1076,1
 .unitscan DUST DEVIL
 step << Rogue
+#optional
+#completewith TowerKey
++|cRXP_WARN_==PAY ATTENTION TO THE UPCOMING SECTION==|r
+>>|cRXP_WARN_Press Escape, then go into -> Options -> Controls|r
+>>|cRXP_WARN_Check "Enable Interact Key" and bind the "Interact with Target" option to a key|r
+>>|cRXP_WARN_Additionally, it's recommended you enable Enemy Nameplates (Default Key: V) as it allows you to see enemies behind some of the corners inside the tower|r
+step << Rogue
 .goto Westfall,68.50,70.08
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Agent Kearnen|r
+>>|cRXP_WARN_You MUST do this quest your|r |T132290:0|t[Poisons]
 .turnin 2360 >> Turn in Mathias and the Defias
-.target Agent Kearnen
-step << Rogue
-.goto Westfall,68.50,70.08
-.target Agent Kearnen
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Agent Kearnen|r
 .accept 2359 >> Accept Klaven's Tower
-.isQuestTurnedIn 2360
+.target Agent Kearnen
 step << Rogue
+#label TowerKey
+#loop
+.goto Westfall,71.49,73.49,0
+.goto Westfall,71.01,75.72,0
+.goto Westfall,69.58,73.07,0
 .goto Westfall,71.49,73.49,30,0
 .goto Westfall,71.01,75.72,30,0
 .goto Westfall,69.58,73.07,30,0
-.goto Westfall,71.49,73.49,30,0
-.goto Westfall,71.01,75.72,30,0
-.goto Westfall,69.58,73.07
->>|T133644:0|t[Pick Pocket] a |cRXP_ENEMY_Malformed Defias Drone|r. Loot it for the |cRXP_LOOT_Tower Key|r
+>>|T133644:0|t[Pick Pocket] the |cRXP_ENEMY_Malformed Defias Drone|r. Loot it for the |cRXP_LOOT_Defias Tower Key|r
 >>|cRXP_WARN_You must be in|r |T132320:0|t[Stealth] |cRXP_WARN_to use|r |T133644:0|t[Pick Pocket]
->>|cRXP_WARN_The |cRXP_ENEMY_Malformed Defias Drone|r patrols around the outside of the Tower|r
+>>|cRXP_WARN_The |cRXP_ENEMY_Malformed Defias Drone|r spawns at the entrance to the tower, then patrols around the outside of it|r
+>>|cRXP_WARN_Be careful as he deals a LOT of damage. If your|r |T132320:0|t[Stealth] |cRXP_WARN_breaks, quickly use|r |T132307:0|t[Sprint] |cRXP_WARN_and run away|r
 .complete 2359,2 
-.link https://www.youtube.com/watch?v=t05Ux5Qis9k >>|cRXP_WARN_Click here for a video guide|r
-.isOnQuest 2359
+.link https://www.youtube.com/watch?v=5sIew15IcG0 >> Click HERE for a video guide
 .mob Malformed Defias Drone
 step << Rogue
-.goto Westfall,70.41,73.93
->>|cRXP_WARN_Travel up to the top of the Tower|r
->>Open the |cRXP_PICK_Duskwood Chest|r. Loot it for |cRXP_LOOT_Klaven Mortwake's Journal|r
->>|cRXP_WARN_You can|r |T132310:0|t[Sap] |cRXP_ENEMY_Klaven Mortwake|r |cRXP_WARN_and then open the|r |cRXP_PICK_Duskwood Chest|r
->>|cRXP_WARN_If your|r |T132310:0|t[Sap] |cRXP_WARN_resists or misses, cast|r |T132331:0|t[Vanish] |cRXP_WARN_and try again or otherwise jump down and reset him. Alternatively you can come back later to complete it|r
+#optional
+#completewith Mortwake
++|cRXP_WARN_Equip the|r |T135641:0|t[Curvewood Dagger] |cRXP_WARN_for this quest if you don't already have a|r |T135641:0|t[Dagger] |cRXP_WARN_equipped|r
+.use 15396
+.itemcount 15396,1
+step << Rogue
+#label Mortwake
+.goto 1436,70.421,74.031
+>>|cRXP_WARN_Travel up to 2nd top floor of the tower. Whilst in|r |T132320:0|t[Stealth] |cRXP_WARN_and the |cRXP_ENEMY_Defias Tower Sentries|r aren't next to you, Jump onto the chair, then onto the lamp, then onto the bookshelf on top of the waypoint location|r
+>>|cRXP_WARN_Manually|r |T132320:0|t[Unstealth]|cRXP_WARN_, then press your "Interact with Target" keybind to open the |cRXP_PICK_Duskwood Chest|r. Loot it for|r |cRXP_LOOT_Klaven Mortwake's Journal|r
+>>|cRXP_WARN_NOTE: Your|r |T132320:0|t[Stealth] |cRXP_WARN_will temporarily stop working after looting|r |cRXP_LOOT_Klaven Mortwake's Journal|r
+>>|cRXP_WARN_Be prepared to run if you don't kill the |cRXP_ENEMY_Defias Tower Sentries|r on the 2nd floor. They will most likely aggro you permanently (but not attack you) when you are on top of the bookshelf as it is an evade spot|r
+>>|cRXP_WARN_If you have a|r |T135641:0|t[Dagger] |cRXP_WARN_in your bags or equipped, you can cast|r |T132282:0|t[Ambush] |cRXP_WARN_on the |cRXP_ENEMY_Defias Tower Patrollers|r and |cRXP_ENEMY_Defias Tower Sentries|r inside to kill them instantly. Be prepared to run after you kill the first |cRXP_ENEMY_Defias Tower Sentry|r and remember you can be hit from above. This is slower, but a LOT safer|r
+>>|cRXP_WARN_Be careful as the |cRXP_ENEMY_Malformed Defias Drone|r and |cRXP_ENEMY_Defias Drones|r can be at the entrance of the tower if you have to run out of it|r
 .complete 2359,1 
-.link https://www.youtube.com/watch?v=t05Ux5Qis9k >>|cRXP_WARN_Click here for a video guide|r
-.isOnQuest 2359
+.link https://www.youtube.com/watch?v=5sIew15IcG0 >> Click HERE for a video guide
+.mob Defias Tower Patroller
+.mob Defias Tower Sentry
+step << !Dwarf Rogue
+#sticky
+#label AntiVenomStart
+.collect 6452,1 >> Craft an |T134437:0|t[Anti-Venom]
+.aura -9991
+.itemcount 6452,<1 
+.train 7934,3 
+step << !Dwarf Rogue
+#optional
+#requires AntiVenomStart
+#label AntiVenomEnd
+.cast 7932 >>|cRXP_WARN_Use the |T134437:0|t[Anti-Venom] in your bags to remove the |T136230:0|t[Touch of Zanzil] debuff|r
+.use 6452
+.aura -9991
+.itemcount 6452,1 
+step << Dwarf Rogue
+#optional
+#sticky
+#label AntiVenomEnd2
+.cast 20594 >>|cRXP_WARN_Cast |T136225:0|t[Stoneform] to remove the |T136230:0|t[Touch of Zanzil] debuff|r
+.aura -9991
 step << Rogue
 #era
 .goto Westfall,63.6,51.4,60,0
@@ -1281,46 +1307,80 @@ step << Druid
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
 .turnin 5061 >> Turn in Aquatic Form
 step << Rogue
-.hs >> Hearth to Stormwind
-.cooldown item,6948,>0,1
-step << Rogue
-#completewith next
+#completewith KlavenEnd
 .goto Westfall,56.55,52.64
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thor|r
 .fly Stormwind >> Fly to Stormwind
 .target Thor
 .zoneskip Stormwind City
+.cooldown item,6948,<0
 step << Rogue
-.isQuestComplete 1076
+#optional
+#completewith KlavenEnd
+.hs >> Hearth to Stormwind
+.cooldown item,6948,>0,1
+.zoneskip Stormwind City
+step << Rogue
 .goto Stormwind City,43.08,80.39
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Collin Mauren|r
 .turnin 1076 >> Turn in Devils in Westfall
 .target Collin Mauren
+.isQuestComplete 1076
+step << !Dwarf Rogue
+#optional
+#requires AntiVenomEnd
+#completewith FirstAidEnd
+.goto 1453,42.938,33.878,20,0
+.goto 1453,41.544,31.330,20,0
+.goto 1453,41.688,28.049,20,0
+.goto 1453,43.070,26.155,15 >> Travel toward |cRXP_FRIENDLY_Shaina Fuller|r
+.aura -9991
+step << !Dwarf Rogue
+#requires AntiVenomEnd
+.goto 1453,43.070,26.155
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shaina Fuller|r
+>>|cRXP_WARN_If you have a|r |T626003:0|t|cFFF48CBAPaladin|r |cRXP_WARN_or|r |T625999:0|t|cFFFF7C0ADruid|r |cRXP_WARN_friend, ask them to remove the|r |T136230:0|t[Touch of Zanzil] |cRXP_WARN_for you instead|r
+.skill firstaid,80 >> |cRXP_WARN_Level your|r |T135966:0|t[First Aid] |cRXP_WARN_to 80|r
+.aura -9991
+.itemcount 6452,<1 
+step << !Dwarf Rogue
+#label FirstAidEnd
+.goto 1453,43.070,26.155
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shaina Fuller|r
+>>|cRXP_WARN_If you have a|r |T626003:0|t|cFFF48CBAPaladin|r |cRXP_WARN_or|r |T625999:0|t|cFFFF7C0ADruid|r |cRXP_WARN_friend, ask them to remove the|r |T136230:0|t[Touch of Zanzil] |cRXP_WARN_for you instead|r
+.train 7934 >> |cRXP_WARN_Train|r |T134437:0|t[Anti-Venom]
+.aura -9991
+.itemcount 6452,<1 
+step << !Dwarf Rogue
+#sticky
+#label AntiVenomStart2
+.collect 6452,1 >> Craft an |T134437:0|t[Anti-Venom]
+.aura -9991
+.itemcount 6452,<1 
+.train 7934,3 
+step << !Dwarf Rogue
+#sticky
+#requires AntiVenomStart2
+#label AntiVenomEnd2
+.cast 7932 >>|cRXP_WARN_Use the |T134437:0|t[Anti-Venom] in your bags to remove the |T136230:0|t[Touch of Zanzil] debuff|r
+.use 6452
+.aura -9991
+.itemcount 6452,1 
 step << Rogue
+#optional
+#requires AntiVenomEnd2
 #completewith next
 .goto StormwindClassic,74.90,54.00,20,0
 .goto StormwindClassic,78.43,60.15,20,0
-.goto StormwindClassic,78.67,60.13,5 >> Enter the SI:7 Headquarters. Travel up stairs toward |cRXP_FRIENDLY_Master Mathias Shaw|r
+.goto StormwindClassic,78.67,60.13,10 >> Enter the SI:7 Headquarters. Travel up stairs toward |cRXP_FRIENDLY_Master Mathias Shaw|r
 step << Rogue
-.goto Stormwind City,75.78,59.84
+#label KlavenEnd
+#requires AntiVenomEnd2
+.goto StormwindClassic,75.78,59.84
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Mathias Shaw|r
+>>|cRXP_WARN_Remember to re-equip your main weapon if you switched to a|r |T135641:0|t[Dagger] |cRXP_WARN_earlier|r << Rogue
 .turnin 2359 >> Turn in Klaven's Tower
 .target Master Mathias Shaw
-.accept 2607 >> Accept The Touch of Zanzil
-step << Rogue
-#completewith next
-.goto StormwindClassic,78.86,58.85,9 >> Travel down into the basement
-step << Rogue
-.goto StormwindClassic,78.03,58.76
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doc Mixilpixil|r
-.target Doc Mixilpixil
-.turnin 2607 >> Turn in The Touch of Zanzil
-
-step << Rogue !Dwarf
-.goto Stormwind City,42.8,26.6
-.train 7934 >> |cRXP_WARN_Level|r |T135966:0|t[First Aid] |cRXP_WARN_to 80|r
->>|cRXP_WARN_Make an|r |T134437:0|t[Anti-Venom] |cRXP_WARN_to remove the|r |T136230:0|t[Touch of Zanzil] |cRXP_WARN_debuff|r
->>|cRXP_WARN_If you have a|r |T626003:0|t|cFFF48CBAPaladin|r |cRXP_WARN_or|r |T625999:0|t|cFFFF7C0ADruid|r |cRXP_WARN_friend you can skip this step and ask them to remove it for you|r
 step << Rogue
 .goto Stormwind City,66.27,62.12
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dungar Longdrink|r
@@ -1447,7 +1507,7 @@ step
 >>|cRXP_ENEMY_Redridge Drudgers|r |cRXP_WARN_attack very fast and |cRXP_ENEMY_Redridge Bashers|r have a|r |T132154:0|t[Knockdown] |cRXP_WARN_stun|r
 >>|cRXP_WARN_You may also acquire them by|r |T134708:0|t[Mining] |cRXP_WARN_the|r |T134566:0|t[Copper Veins] |cRXP_WARN_and|r |T134579:0|t[Tin Veins] |cRXP_WARN_inside the Rethban Caverns|r
 .complete 347,1 
-.skill mining,<1,1 
+.train 2575,3 
 .mob Redridge Drudger
 step
 #label Rethban
@@ -2356,7 +2416,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 #classic
@@ -2839,7 +2899,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 << Alliance
@@ -3240,7 +3300,7 @@ step
 .goto Ashenvale,38.73,36.32,60,0
 .goto Ashenvale,39.595,36.309
 >>Kill |cRXP_ENEMY_Dal Bloodclaw|r. Loot him for his |cRXP_LOOT_Skull|r
->>|cRXP_ENEMY_Dal Bloodclaw|r |cRXP_WARN_patols Thistlefur Village|r
+>>|cRXP_ENEMY_Dal Bloodclaw|r |cRXP_WARN_patrols Thistlefur Village|r
 .complete 1054,1
 .unitscan Dal Bloodclaw
 step
@@ -3836,7 +3896,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 20-30
 << Alliance
@@ -4331,7 +4391,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -4350,19 +4410,19 @@ step << !Druid !Warrior !Hunter
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r << Warlock
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 .goto Ironforge,51.1,8.7,15,0 << Warlock
 .goto Ironforge,50.343,5.657 << Warlock
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .trainer >> Train your class spells
 .target Briarthorn << Warlock
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 step << Mage
 .goto Ironforge,31.33,27.80
@@ -5931,7 +5991,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -6227,7 +6287,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -6752,7 +6812,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -7359,7 +7419,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -7688,7 +7748,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -8431,7 +8491,7 @@ step << !Warlock
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -8851,7 +8911,7 @@ step << Mage
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -9046,7 +9106,7 @@ step
 .goto Swamp of Sorrows,55.184,34.158
 .line Swamp of Sorrows,55.70,34.14,55.92,35.96,55.57,37.64,53.27,38.99,51.27,38.82,48.70,38.56,47.29,38.39,46.52,38.69,45.67,36.55,44.34,34.66,42.27,32.14,40.86,32.36,40.23,34.79,38.81,35.80,38.08,41.22,37.91,43.29,36.75,46.43,33.50,44.03,33.37,40.43,32.61,38.67,32.16,37.15,32.26,36.24,33.44,40.35,33.46,43.98,36.65,46.42,37.85,43.51,38.10,40.89,38.48,37.66,38.84,35.82,40.41,34.13,40.87,32.43,42.18,32.07,44.92,35.47,45.66,36.52,46.35,38.74,47.56,38.35,52.43,39.04,53.25,39.13,55.39,37.60
 >>Kill |cRXP_ENEMY_Noboru the Cudgel|r. Loot him for |T133485:0|t[|cRXP_LOOT_Noboru's Cudgel|r]
-.use 6196 >>|cRXP_WARN_Use |T133464:0|t[|cRXP_LOOT_Noboru's Cudgel|r] to start the quest|r
+.use 6196 >>|cRXP_WARN_Use |T133485:0|t[|cRXP_LOOT_Noboru's Cudgel|r] to start the quest|r
 >>|cRXP_ENEMY_Noboru the Cudgel|r |cRXP_WARN_patrols a large section of Swamp of Sorrows. The patrol path is marked on your map. He spawns where the patrol route starts on the eastern point|r
 .collect 6196,1,1392,1 
 .accept 1392 >>Accept Noboru the Cudgel
@@ -9168,7 +9228,8 @@ step
 .goto Swamp of Sorrows,57.43,26.08
 .complete 1389,1 
 step
-.goto Swamp of Sorrows,67.00,47.00 >> Swim to the middle of the Pool of Tears
+.goto Swamp of Sorrows,67.00,47.00
+>>Swim to the middle of the Pool of Tears
 .complete 1448,1 
 step
 .isQuestComplete 1389
@@ -9402,10 +9463,10 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
-#version 15
+#version 21
 #classic
 << Alliance
 #name 39-39 Dustwallow Marsh
@@ -9679,7 +9740,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 30-40
 #classic
@@ -10462,7 +10523,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -11464,7 +11525,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -11497,19 +11558,19 @@ step << !Druid !Hunter !Warrior
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r << Warlock
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 .goto Ironforge,51.1,8.7,15,0 << Warlock
 .goto Ironforge,50.343,5.657 << Warlock
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .trainer >> Train your class spells
 .target Briarthorn << Warlock
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 step << Warlock
 .goto Ironforge,53.2,7.8,15,0
@@ -11875,7 +11936,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -11917,19 +11978,19 @@ step << !Druid !Hunter !Warrior
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r << Warlock
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 .goto Ironforge,51.1,8.7,15,0 << Warlock
 .goto Ironforge,50.343,5.657 << Warlock
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .trainer >> Train your class spells
 .target Briarthorn << Warlock
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 step << Warlock
 .goto Ironforge,53.2,7.8,15,0
@@ -12716,7 +12777,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -12981,7 +13042,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -13239,7 +13300,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -13580,7 +13641,7 @@ step
 .accept 4135 >> Accept The Writhing Deep
 step
 .goto Feralas,73.31,56.30
-.use 11463 >>|cRXP_WARN_Use the |T133464:0|t[|cRXP_LOOT_Undelivered Parcel|r] to start the quest|r
+.use 11463 >>|cRXP_WARN_Use the |T133628:0|t[|cRXP_LOOT_Undelivered Parcel|r] to start the quest|r
 .collect 11463,1,4281
 .accept 4281 >> Accept Thalanaar Delivery
 step
@@ -13882,7 +13943,7 @@ step << !Mage
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -14066,7 +14127,7 @@ step << !Druid
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r << Warlock
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regnus Thundergranite|r << Hunter
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bilban Tosslespanner|r << Warrior
@@ -14074,7 +14135,7 @@ step << !Druid
 .goto Ironforge,50.343,5.657 << Warlock
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .goto Ironforge,69.872,82.890 << Hunter
 .goto Ironforge,65.905,88.405 << Warrior
@@ -14082,7 +14143,7 @@ step << !Druid
 .target Briarthorn << Warlock
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 .target Regnus Thundergranite << Hunter
 .target Bilban Tosslespanner << Warrior
@@ -14185,7 +14246,28 @@ step
 .accept 732 >> Accept Tremors of the Earth
 .target Garek
 step
-.loop 60,Badlands,36.37,71.63,39.75,72.36,43.61,72.61,51.70,73.52,61.89,67.68,54.73,58.52,48.53,53.02,45.44,51.70,41.01,54.95,35.35,56.99,28.17,56.44,19.50,57.77,16.05,64.35,12.51,72.73,12.85,77.42,14.51,79.15,21.83,78.10,25.39,73.02,32.13,74.04,36.37,71.63
+#loop
+.line Badlands,36.37,71.63,39.75,72.36,43.61,72.61,51.70,73.52,61.89,67.68,54.73,58.52,48.53,53.02,45.44,51.70,41.01,54.95,35.35,56.99,28.17,56.44,19.50,57.77,16.05,64.35,12.51,72.73,12.85,77.42,14.51,79.15,21.83,78.10,25.39,73.02,32.13,74.04,36.37,71.63
+.goto Badlands,36.37,71.63,60,0
+.goto Badlands,39.75,72.36,60,0
+.goto Badlands,43.61,72.61,60,0
+.goto Badlands,51.70,73.52,60,0
+.goto Badlands,61.89,67.68,60,0
+.goto Badlands,54.73,58.52,60,0
+.goto Badlands,48.53,53.02,60,0
+.goto Badlands,45.44,51.70,60,0
+.goto Badlands,41.01,54.95,60,0
+.goto Badlands,35.35,56.99,60,0
+.goto Badlands,28.17,56.44,60,0
+.goto Badlands,19.50,57.77,60,0
+.goto Badlands,16.05,64.35,60,0
+.goto Badlands,12.51,72.73,60,0
+.goto Badlands,12.85,77.42,60,0
+.goto Badlands,14.51,79.15,60,0
+.goto Badlands,21.83,78.10,60,0
+.goto Badlands,25.39,73.02,60,0
+.goto Badlands,32.13,74.04,60,0
+.goto Badlands,36.37,71.63,60,0
 >>Kill |cRXP_ENEMY_Boss Tho'grun|r. Loot him for his |cRXP_LOOT_Sign of the Earth|r
 >>|cRXP_ENEMY_Boss Tho'grun|r |cRXP_WARN_patrols across all of Badlands|r
 .complete 732,1 
@@ -14949,7 +15031,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -15437,7 +15519,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -16370,7 +16452,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 40-50
 #classic
@@ -16942,7 +17024,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -17967,7 +18049,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -18238,7 +18320,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -18876,7 +18958,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -19277,19 +19359,19 @@ step << !Druid !Hunter !Warrior
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r << Warlock
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fenthwick|r << Rogue
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Toldren Deepiron|r << Priest
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Juli Stormkettle|r << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dink|r << Mage
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r << Paladin
 .goto Ironforge,51.1,8.7,15,0 << Warlock
 .goto Ironforge,50.343,5.657 << Warlock
 .goto Ironforge,51.495,15.330 << Rogue
 .goto Ironforge,25.207,10.756 << Priest
-.goto Ironforge,26.295,6.752 << Mage
+.goto Ironforge,27.18,8.60 << Mage
 .goto Ironforge,23.141,6.149 << Paladin
 .trainer >> Train your class spells
 .target Briarthorn << Warlock
 .target Fenthwick << Rogue
 .target Toldren Deepiron << Priest
-.target Juli Stormkettle << Mage
+.target Dink << Mage
 .target Brandur Ironhammer << Paladin
 step << Warlock
 .goto Ironforge,53.2,7.8,15,0
@@ -19370,7 +19452,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -19965,7 +20047,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -20771,7 +20853,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -21447,7 +21529,7 @@ step << Mage
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -22008,7 +22090,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -23574,7 +23656,7 @@ step << !Druid !Mage
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -24316,7 +24398,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic
@@ -25001,7 +25083,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #hardcore
-#version 15
+#version 21
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 50-60
 #classic

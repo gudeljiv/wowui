@@ -3,7 +3,7 @@
 ## Notes: In-game leveling guides
 ## Notes-zhCN: TODO
 ## Author: RestedXP
-## Version: v4.6.19
+## Version: v4.6.30
 ## OptionalDeps: Questie, RXPGuides_Themes
 ## SavedVariables: RXPData, RXPDB, RXPSettings
 ## SavedVariablesPerCharacter: RXPCData, RXPCTrackingData, RXPCComms, RXPCSettings

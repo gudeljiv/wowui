@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = false,
-	["position"] = {
-		["y"] = 217.2070007324219,
-		["x"] = -444.0689392089844,
-		["to"] = "CENTER",
-		["from"] = "CENTER",
-	},
-	["experience"] = {
-		["pulltotal"] = 32472,
-		["totaltotal"] = 1660093,
-	},
 	["killLog"] = {
 		["Mindless Zombie"] = {
 			["name"] = "Mindless Zombie",
@@ -40,9 +30,9 @@ xKillCount = {
 			["name"] = "Scarlet Convert",
 			["count"] = 13,
 		},
-		["Night Web Spider"] = {
-			["name"] = "Night Web Spider",
-			["count"] = 8,
+		["Meven Korgal"] = {
+			["name"] = "Meven Korgal",
+			["count"] = 3,
 		},
 		["Wretched Zombie"] = {
 			["name"] = "Wretched Zombie",
@@ -52,9 +42,9 @@ xKillCount = {
 			["name"] = "Samuel Fipps",
 			["count"] = 1,
 		},
-		["Young Scavenger"] = {
-			["name"] = "Young Scavenger",
-			["count"] = 8,
+		["Tirisfal Farmhand"] = {
+			["name"] = "Tirisfal Farmhand",
+			["count"] = 1,
 		},
 		["Rotting Dead"] = {
 			["name"] = "Rotting Dead",
@@ -64,13 +54,23 @@ xKillCount = {
 			["name"] = "Scarlet Initiate",
 			["count"] = 3,
 		},
-		["Tirisfal Farmhand"] = {
-			["name"] = "Tirisfal Farmhand",
-			["count"] = 1,
+		["Young Scavenger"] = {
+			["name"] = "Young Scavenger",
+			["count"] = 8,
 		},
-		["Meven Korgal"] = {
-			["name"] = "Meven Korgal",
-			["count"] = 3,
+		["Night Web Spider"] = {
+			["name"] = "Night Web Spider",
+			["count"] = 8,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 1794900,
+		["pulltotal"] = 16056,
+	},
+	["position"] = {
+		["y"] = 217.2070007324219,
+		["x"] = -444.0689392089844,
+		["to"] = "CENTER",
+		["from"] = "CENTER",
 	},
 }

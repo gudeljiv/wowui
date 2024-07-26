@@ -3,9 +3,16 @@ RXPGuides.RegisterGuide([[
 << Horde
 #xprate >1.99
 #name 24-26 Southern Barrens
-#version 20
+#version 21
 #group RestedXP Horde 22-30
 #next 26-28 Ashenvale;26-28 SoD Ashenvale
+step << Rogue/Shaman
+.goto The Barrens,45.58,59.04
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Byula|r
+.vendor >>|cRXP_BUY_Sell your junk, then restock on food and water if necessary|r << !Rogue !Warrior
+.vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
+.target Innkeeper Byula
+.dungeon !WC
 step
 .goto The Barrens,44.55,59.27
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mangletooth|r
@@ -28,7 +35,6 @@ step << Warrior
 .accept 1824 >>Accept Trial at the Field of Giants
 .target Ruga Ragetotem
 step
-#label CampTHS2
 .goto The Barrens,45.58,59.04
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Byula|r
 .home >>Set your Hearthstone to Camp Taurajo
@@ -36,14 +42,59 @@ step
 .vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
 .target Innkeeper Byula
 .dungeon WC
-step
-#label CampTHS2
+step << !Rogue !Shaman
 .goto The Barrens,45.58,59.04
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Byula|r
 .vendor >>|cRXP_BUY_Sell your junk, then restock on food and water if necessary|r << !Rogue !Warrior
 .vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
 .target Innkeeper Byula
 .dungeon !WC
+step
+#optional
+#label CampTHS2
+step << Warlock
+#season 2
+#sticky
+#completewith BarrensEnd
+#label ExplorerImp
+>>As you're questing cast |T136163:0|t|cRXP_FRIENDLY_[Drain Soul]|r on mobs untill you receive an |T133257:0|t|cRXP_LOOT_Explorer's Soul|r. |cRXP_WARN_Use it to learn how to summon an|r |T236294:0|t|cRXP_FRIENDLY_[Explorer Imp]|r
+.train 445459 >>|cRXP_WARN_Use|r |T133257:0|t|cRXP_LOOT_Explorer's Soul|r |cRXP_WARN_to learn how to summon an|r |T236294:0|t[|cRXP_FRIENDLY_Explorer Imp|r]
+.train 445459,1 
+.train 1120,3 
+.use 221978
+step << Warlock/Mage
+#season 2
+#requires ExplorerImp << Warlock
+#sticky
+#completewith BarrensEnd
+#label FelPortalRune
+>>You are in a zone with |cRXP_FRIENDLY_Fel Portals|r present. If you find one summon your |T236294:0|t[|cRXP_FRIENDLY_Explorer Imp|r] and talk to it while next to a portal to send it on an expedition. After 10-20 minutes it will return with loot and a chance to award you with |T134419:0|t[|cRXP_FRIENDLY_Rune of the Felguard|r] << Warlock
+>>You are in a zone with |cRXP_FRIENDLY_Fel Portals|r present. If you find one close it using a |T134945:0|t[|cRXP_LOOT_Scroll of Spatial Mending|r]. This will award you with |T134939:0|t[|cRXP_FRIENDLY_Spell Notes: Balefire Bolt|r] << Mage
+>>|cRXP_WARN_Be on the lookout for the portals untill you get the rune|r
+.collect 221499,1 << Warlock 
+.collect 223147,1 << Mage 
+.itemcount 220792,1 << Mage 
+.use 223148 << Warlock 
+.use 220792 << Mage
+.train 429311,1 << Mage
+.train 431756,1 << Warlock
+.train 1120,3 << Warlock 
+.unitscan Fel Sliver
+.unitscan Fel Crack
+.unitscan Fel Tear
+.unitscan Fel Scar
+.unitscan Fel Rift
+step << Warlock/Mage
+#season 2
+#requires FelPortalRune
+#sticky
+#completewith BarrensEnd
+.itemcount 221499,1 << Warlock 
+.itemcount 223147,1 << Mage 
+.train 431756 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Felguard|r] |cRXP_WARN_to learn|r |T136216:0|t[Summon Felguard] << Warlock
+.train 429311 >>|cRXP_WARN_Use the|r |T134939:0|t[|cRXP_FRIENDLY_Spell Notes: Balefire Bolt|r |cRXP_WARN_to train|r |T135809:0|t[Balefire Bolt] << Mage
+.use 221499 << Warlock
+.use 223147 << Mage
 step
 #completewith next
 >>Kill a |cRXP_ENEMY_Thunderhawk|r. Loot it for its |cRXP_LOOT_Wings|r
@@ -62,7 +113,16 @@ step
 .use 5102
 .unitscan Owatanka
 step << Warrior
-.loop 25,The Barrens,45.17,69.08,43.87,68.84,42.17,69.65,42.35,71.85,42.77,72.28,43.86,72.06,45.38,72.25,45.17,69.08
+#loop
+.line The Barrens,45.17,69.08,43.87,68.84,42.17,69.65,42.35,71.85,42.77,72.28,43.86,72.06,45.38,72.25,45.17,69.08
+.goto The Barrens,45.17,69.08,25,0
+.goto The Barrens,43.87,68.84,25,0
+.goto The Barrens,42.17,69.65,25,0
+.goto The Barrens,42.35,71.85,25,0
+.goto The Barrens,42.77,72.28,25,0
+.goto The Barrens,43.86,72.06,25,0
+.goto The Barrens,45.38,72.25,25,0
+.goto The Barrens,45.17,69.08,25,0
 >>Kill |cRXP_ENEMY_Silithid Protectors|r, |cRXP_ENEMY_Silithid Swarmers|r, |cRXP_ENEMY_Silithid Creepers|r and |cRXP_ENEMY_Silithid Grubs|r. Loot them for their |T133027:0|t[Twitching Antenna]
 >>|cRXP_WARN_NOTE: The |T133027:0|t[Twitching Antenna] only have a 15 minute duration, do not AFK or logout during this quest|r
 .complete 1824,1 
@@ -168,12 +228,12 @@ step
 >>Kill |cRXP_ENEMY_Razormane Warfrenzies|r. Loot them for the |T134955:0|t[|cRXP_LOOT_Razormane War Shield|r]
 >>|cRXP_WARN_The |cRXP_ENEMY_Razormane Stalkers|r are stealthed|r
 .collect 5093,1,893,1 
+.mob +Razormane Stalker
+.mob +Razormane Pathfinder
 .collect 5092,1,893,1 
+.mob +Razormane Seer
 .collect 5094,1,893,1 
-.mob Razormane Stalker
-.mob Razormane Pathfinder
-.mob Razormane Seer
-.mob Razormane Warfrenzy
+.mob +Razormane Warfrenzy
 step
 #completewith next
 .goto The Barrens,44.85,78.81,45,0
@@ -211,9 +271,38 @@ step
 .goto The Barrens,45.05,79.75,45,0
 .goto The Barrens,44.83,79.87,45,0
 .goto The Barrens,44.37,79.85
-.loop 25,The Barrens,44.37,79.85,44.83,79.87,45.05,79.75,45.12,79.20,44.89,78.87,44.43,78.71,43.80,79.46,43.66,79.12,43.48,78.95,43.07,78.98,42.65,79.87,42.82,80.23,43.24,80.49,43.49,80.48,43.63,80.97,43.79,81.40,44.15,81.44,44.83,80.95,45.46,80.91,45.52,80.47,45.10,80.30,44.66,80.49,44.31,80.79,44.16,80.46,44.03,80.38,43.91,80.46,44.06,80.02,44.37,79.85
+#loop
+.line The Barrens,44.37,79.85,44.83,79.87,45.05,79.75,45.12,79.20,44.89,78.87,44.43,78.71,43.80,79.46,43.66,79.12,43.48,78.95,43.07,78.98,42.65,79.87,42.82,80.23,43.24,80.49,43.49,80.48,43.63,80.97,43.79,81.40,44.15,81.44,44.83,80.95,45.46,80.91,45.52,80.47,45.10,80.30,44.66,80.49,44.31,80.79,44.16,80.46,44.03,80.38,43.91,80.46,44.06,80.02,44.37,79.85
+.goto The Barrens,44.37,79.85,25,0
+.goto The Barrens,44.83,79.87,25,0
+.goto The Barrens,45.05,79.75,25,0
+.goto The Barrens,45.12,79.20,25,0
+.goto The Barrens,44.89,78.87,25,0
+.goto The Barrens,44.43,78.71,25,0
+.goto The Barrens,43.80,79.46,25,0
+.goto The Barrens,43.66,79.12,25,0
+.goto The Barrens,43.48,78.95,25,0
+.goto The Barrens,43.07,78.98,25,0
+.goto The Barrens,42.65,79.87,25,0
+.goto The Barrens,42.82,80.23,25,0
+.goto The Barrens,43.24,80.49,25,0
+.goto The Barrens,43.49,80.48,25,0
+.goto The Barrens,43.63,80.97,25,0
+.goto The Barrens,43.79,81.40,25,0
+.goto The Barrens,44.15,81.44,25,0
+.goto The Barrens,44.83,80.95,25,0
+.goto The Barrens,45.46,80.91,25,0
+.goto The Barrens,45.52,80.47,25,0
+.goto The Barrens,45.10,80.30,25,0
+.goto The Barrens,44.66,80.49,25,0
+.goto The Barrens,44.31,80.79,25,0
+.goto The Barrens,44.16,80.46,25,0
+.goto The Barrens,44.03,80.38,25,0
+.goto The Barrens,43.91,80.46,25,0
+.goto The Barrens,44.06,80.02,25,0
+.goto The Barrens,44.37,79.85,25,0
 >>Kill |cRXP_ENEMY_Kuz|r. Loot him for |cRXP_LOOT_Kuz's Skull|r
->>|cRXP_ENEMY_Kuz|r patrols around slightly
+>>|cRXP_ENEMY_Kuz|r |cRXP_WARN_patrols around slightly|r
 .complete 879,1 
 .unitscan Kuz
 step
@@ -252,13 +341,24 @@ step
 .mob Razormane Pathfinder
 step
 #label WandShield
-.loop 25,The Barrens,42.57,78.81,42.12,78.48,41.49,78.69,41.22,79.72,40.91,80.60,40.55,80.84,41.62,80.92,41.54,82.28,42.48,82.28,42.57,78.81
+#loop
+.line The Barrens,42.57,78.81,42.12,78.48,41.49,78.69,41.22,79.72,40.91,80.60,40.55,80.84,41.62,80.92,41.54,82.28,42.48,82.28,42.57,78.81
+.goto The Barrens,42.57,78.81,25,0
+.goto The Barrens,42.12,78.48,25,0
+.goto The Barrens,41.49,78.69,25,0
+.goto The Barrens,41.22,79.72,25,0
+.goto The Barrens,40.91,80.60,25,0
+.goto The Barrens,40.55,80.84,25,0
+.goto The Barrens,41.62,80.92,25,0
+.goto The Barrens,41.54,82.28,25,0
+.goto The Barrens,42.48,82.28,25,0
+.goto The Barrens,42.57,78.81,25,0
 >>Kill |cRXP_ENEMY_Razormane Seers|r. Loot them for a |T135139:0|t[|cRXP_LOOT_Charred Razormane Wand|r]
 >>Kill |cRXP_ENEMY_Razormane Warfrenzies|r. Loot them for a |T134955:0|t[|cRXP_LOOT_Razormane War Shield|r]
 .collect 5092,1,893,1 
+.mob +Razormane Seer
 .collect 5094,1,893,1 
-.mob Razormane Seer
-.mob Razormane Warfrenzy
+.mob +Razormane Warfrenzy
 step
 #label NakSkull
 .goto The Barrens,43.87,83.43
@@ -395,6 +495,7 @@ step
 .isQuestTurnedIn 843
 step
 #label BaelModan
+#completewith RevengeofGann2
 .goto The Barrens,48.63,84.49,110 >>Travel to Bael Modan
 .isQuestTurnedIn 843
 step
@@ -452,6 +553,7 @@ step
 .isQuestComplete 857
 .group
 step
+#label RevengeofGann2
 #loop
 .goto The Barrens,48.96,84.36,30,0
 .goto The Barrens,48.88,84.02,30,0
@@ -525,7 +627,16 @@ step
 .isQuestTurnedIn 843
 step
 #label WashtethePawne
-.loop 25,The Barrens,44.85,78.81,44.44,78.97,43.14,80.75,43.35,81.16,47.22,79.72,47.21,79.35,44.76,74.79,44.85,78.81
+#loop
+.line The Barrens,44.85,78.81,44.44,78.97,43.14,80.75,43.35,81.16,47.22,79.72,47.21,79.35,44.76,74.79,44.85,78.81
+.goto The Barrens,44.85,78.81,25,0
+.goto The Barrens,44.44,78.97,25,0
+.goto The Barrens,43.14,80.75,25,0
+.goto The Barrens,43.35,81.16,25,0
+.goto The Barrens,47.22,79.72,25,0
+.goto The Barrens,47.21,79.35,25,0
+.goto The Barrens,44.76,74.79,25,0
+.goto The Barrens,44.85,78.81,25,0
 >>Kill |cRXP_ENEMY_Washte Pawne|r. Loot him for |T135992:0|t[|cRXP_LOOT_Washte Pawne's Feather|r]. Use it to start the quest
 .collect 5103,1,885 
 .accept 885 >>Accept Washte Pawne
@@ -561,7 +672,7 @@ step
 .goto Dustwallow Marsh,33.30,31.23,40,0
 .goto Dustwallow Marsh,34.58,30.62,40,0
 .goto Dustwallow Marsh,36.64,31.72,120 >> Travel to Brackenwall Village
->>|cRXP_WARN_Be careful! There are level 36-38 mobs in the area. Follow the waypoint for safety|r
+>>|cRXP_WARN_Be careful! There are level 36-38 mobs in the area. Follow the waypoint arrow for safety|r
 step << Warrior/Shaman
 .goto Dustwallow Marsh,36.17,31.79
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|t|cRXP_BUY_Talk to|r |cRXP_FRIENDLY_Zulrg|r|cRXP_BUY_. Buy a|r |T135158:0|t[Big Stick] |cRXP_BUY_from him if it's up|r
@@ -633,6 +744,7 @@ step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tatternack|r
 .accept 893 >> Accept Weapons of Choice
 .turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
 .target Tatternack Steelforge
 step
 .goto The Barrens,44.86,59.13
@@ -709,6 +821,41 @@ step
 .fly Ratchet >> Fly to Ratchet
 .target Devrak
 step
+#sticky
+#completewith LeaveRatchet
+#season 2
+.goto The Barrens,61.8,39.4
+>>|cRXP_WARN_If you have |cRXP_LOOT_3 gold|r to spare you can buy a rune from|r |cRXP_FRIENDLY_Grizzby|r |cRXP_WARN_in the Ratchet inn. Judge for yourself if you can afford it and if the rune is useful for your class. You can always buy it later|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grizzby|r in the inn
+.use 210822 << Priest
+.use 210820 << Paladin
+.use 210654 << Mage
+.use 210818 << Hunter
+.use 210817 << Druid
+.use 210825 << Warrior
+.use 210824 << Warlock
+.use 210653 << Rogue
+.use 210823 << Shaman
+.train 415995 >>|cRXP_WARN_Buy and use the|r |T135791:0|t[|cRXP_FRIENDLY_Harmonious Epiphany|r] |cRXP_WARN_to train|r |T237549:0|t[Serendipity] << Priest
+.train 410010 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Sacrifice|r] |cRXP_WARN_to train|r |T134596:0|t[Engrave Pants - Divine Sacrifice] << Paladin
+.train 401761 >>|cRXP_WARN_Buy and use the|r |T134939:0|t[|cRXP_FRIENDLY_Spell Notes: Rewind Time|r] |cRXP_WARN_to train|r |T237538:0|t[Rewind Time] << Mage
+.train 410122 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Lone Wolf|r] |cRXP_WARN_to train|r |T132266:0|t[Lone Wolf] << Hunter
+.train 416042 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Survival|r] |cRXP_WARN_to train|r |T132126:0|t[Survival of the Fittest] << Druid
+.train 425445 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Warbringer|r] |cRXP_WARN_to train|r |T236319:0|t[Warbinger] << Warrior
+.train 425476 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Pact|r] |cRXP_WARN_to train|r |T237562:0|t[Demonic Pact] << Warlock
+.train 424990 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Main Gauche|r] |cRXP_WARN_to train|r |T237531:0|t[Main Gauche] << Rogue
+.train 410096 >>|cRXP_WARN_Buy and use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Dual Wield Specialization|r] |cRXP_WARN_to train|r |T132686:0|t[Engrave Chest - Dual Wield Specialization] << Shaman
+.target Grizzby
+.train 415995,1 << Priest
+.train 410010,1 << Paladin
+.train 401761,1 << Mage
+.train 410122,1 << Hunter
+.train 416042,1 << Druid
+.train 425445,1 << Warrior
+.train 425476,1 << Warlock
+.train 424990,1 << Rogue
+.train 410096,1 << Shaman
+step
 .goto The Barrens,65.84,43.86
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mahren|r
 .turnin 874 >>Turn in Mahren Skyseer
@@ -728,11 +875,13 @@ step
 .complete 873,1 
 .unitscan Isha Awak
 step
+#label BarrensEnd
 .goto The Barrens,65.84,43.86
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mahren|r
 .turnin 873 >> Turn in Isha Awak
 .target Mahren Skyseer
 step
+#label LeaveRatchet
 .goto The Barrens,63.09,37.16
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bragok|r
 .fly Orgrimmar >> Fly to Orgrimmar
@@ -784,6 +933,14 @@ step << Troll Priest
 .turnin 5642 >> Turn in Shadowguard
 .trainer >> Train your class spells
 .target Ur'kyo
+.isOnQuest 5642
+step << Troll Priest
+.goto Orgrimmar,35.59,87.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to|r |cRXP_FRIENDLY_Ur'kyo|r
+.turnin 5680 >> Turn in Shadowguard
+.trainer >> Train your class spells
+.target Ur'kyo
+.isQuestAvailable 5680
 step << Undead Priest
 .goto Orgrimmar,35.59,87.80
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to|r |cRXP_FRIENDLY_Ur'kyo|r
@@ -819,6 +976,20 @@ step << Shaman
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kardris|r
 .train 943 >> Train your class spells
 .target Kardris Dreamseeker
+.xp <26,1
+step << Rogue
+.goto Orgrimmar,43.90,54.65
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormok|r
+.train 6762 >> Train your class spells
+.target Ormok
+.xp <24,1
+.xp >26,1
+step << Rogue
+#optional
+.goto Orgrimmar,43.90,54.65
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormok|r
+.train 1833 >> Train your class spells
+.target Ormok
 .xp <26,1
 step << Warrior
 .goto Orgrimmar,79.91,31.36
@@ -925,26 +1096,30 @@ step
 .collect 16655,1,6504,1 
 .collect 16656,1,6504,1 
 step << Hunter
+#xprate <2.1
 .goto Orgrimmar,45.12,63.89
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
 .fly Splintertree Post >> Fly to Splintertree Post
 .target Doras
 .zoneskip Thunder Bluff
-step << !Hunter
+step
+#xprate >2.09 << Hunter
 #completewith next
 .goto Orgrimmar,26.22,61.58,80,0
 .goto Orgrimmar,15.66,63.33,30,0
 .zone The Barrens >> Leave Orgrimmar through the Western exit
 .zoneskip The Barrens
-step << !Hunter
+step
+#xprate >2.09 << Hunter
 #completewith next
 .goto Kalimdor,56.80,45.45,15,0
 .goto Ashenvale,94.54,76.15,40,0
 .goto Ashenvale,93.49,73.76,40,0
 .goto Ashenvale,92.47,71.18,40,0
 .goto Ashenvale,91.85,68.71,40,0
-.goto Ashenvale,91.39,65.86,25 >> Travel north alongside the river into Ashenvale
-step << !Hunter
+.goto Ashenvale,91.39,65.86,25 >> Travel North alongside the river into Ashenvale
+step
+#xprate >2.09 << Hunter
 .goto Ashenvale,89.87,68.07,40,0
 .goto Ashenvale,86.89,68.65,40,0
 .goto Ashenvale,79.89,68.38,40,0

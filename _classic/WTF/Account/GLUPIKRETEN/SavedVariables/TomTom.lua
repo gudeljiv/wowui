@@ -12,10 +12,10 @@ TomTomDB = {
 ["Wells - Jin'do"] = "Default",
 ["Dotwise - Golemagg"] = "Default",
 ["Poklopac - Dreadnaught"] = "Default",
-["Konac - Dreadnaught"] = "Default",
-["Tudum - Ashbringer"] = "Default",
-["Koloman - Golemagg"] = "Default",
+["Dopesnare - Stitches"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
+["Koloman - Golemagg"] = "Default",
+["Tudum - Ashbringer"] = "Default",
 ["Augustin - Golemagg"] = "Default",
 ["Moolatz - Golemagg"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
@@ -23,15 +23,15 @@ TomTomDB = {
 ["Lonac - Stitches"] = "Default",
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
 ["Judawise - Golemagg"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
 ["Handrmandr - Golemagg"] = "Default",
 ["Vermina - Golemagg"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
-["Dopesnare - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
 ["Battlearm - Jin'do"] = "Default",
 ["Dopesick - Stitches"] = "Default",
@@ -58,7 +58,7 @@ TomTomDB = {
 ["Dopeah - Stitches"] = "Default",
 ["Dopeclaw - Stitches"] = "Default",
 ["Dopeclaw - Lone Wolf"] = "Default",
-["Dopesnare - Stitches"] = "Default",
+["Konac - Dreadnaught"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -108,10 +108,10 @@ TomTomWaypointsM = {
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 ["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-["Koloman - Golemagg"] = "Koloman - Golemagg",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Koloman - Golemagg"] = "Koloman - Golemagg",
+["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 ["Augustin - Golemagg"] = "Augustin - Golemagg",
 ["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
@@ -119,15 +119,15 @@ TomTomWaypointsM = {
 ["Lonac - Stitches"] = "Lonac - Stitches",
 ["Antun - Golemagg"] = "Antun - Golemagg",
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
-["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Judawise - Golemagg"] = "Judawise - Golemagg",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 ["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 ["Vermina - Golemagg"] = "Vermina - Golemagg",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 ["Dopesick - Stitches"] = "Dopesick - Stitches",
@@ -154,7 +154,7 @@ TomTomWaypointsM = {
 ["Dopeah - Stitches"] = "Dopeah - Stitches",
 ["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
 ["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 },
 ["profiles"] = {
 ["Mxzq - Golemagg"] = {
@@ -179,13 +179,13 @@ TomTomWaypointsM = {
 },
 ["Poklopac - Dreadnaught"] = {
 },
-["Konac - Dreadnaught"] = {
+["Dopesnare - Stitches"] = {
 },
-["Tudum - Ashbringer"] = {
+["Dopedot - Lone Wolf"] = {
 },
 ["Koloman - Golemagg"] = {
 },
-["Dopedot - Lone Wolf"] = {
+["Tudum - Ashbringer"] = {
 },
 ["Augustin - Golemagg"] = {
 },
@@ -226,7 +226,7 @@ TomTomWaypointsM = {
 },
 ["Provokator - Jin'do"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Dopesnare - Lone Wolf"] = {
 },
 ["Judawise - Golemagg"] = {
 },
@@ -240,9 +240,9 @@ TomTomWaypointsM = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
 },
-["Doperage - Lone Wolf"] = {
+["Dopetrap - Lone Wolf"] = {
 },
-["Dopesnare - Lone Wolf"] = {
+["Doperage - Lone Wolf"] = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
@@ -296,7 +296,7 @@ TomTomWaypointsM = {
 },
 ["Dopeclaw - Lone Wolf"] = {
 },
-["Dopesnare - Stitches"] = {
+["Konac - Dreadnaught"] = {
 },
 },
 }

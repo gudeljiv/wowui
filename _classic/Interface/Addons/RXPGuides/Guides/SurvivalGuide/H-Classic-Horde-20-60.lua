@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
 #classic
 << Horde
 #name 35-37 Desolace Horde
-#version 15
+#version 21
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 30-40
 #next 37-39 Northern Stranglethorn
@@ -29,6 +29,9 @@ step
 .goto Stonetalon Mountains,29.29,79.69
 .zone Desolace >>Head southwest to the mountain path. Follow it into the Charred Vale. From there, turn south into Desolace
 .zoneskip Desolace
+step
+#completewith next
+.subzone 599 >>Travel to Thunder Axe Fortress
 step
 .goto Desolace,55.80,30.10
 >>Kill and loot members of the |cRXP_ENEMY_Burning Blade|r until you get a |T134253:0|t[|cRXP_LOOT_Flayed Demon Skin|r]
@@ -99,15 +102,60 @@ step
 .complete 1481,1 
 .mob Hatefury Shadowstalker
 step
-.loop 25,Desolace,75.26,27.91,76.77,27.73,77.54,26.68,78.20,25.63,78.90,24.60,78.74,23.15,79.33,20.96,79.69,18.92,79.36,16.18,77.43,15.44,75.96,15.89,74.52,15.66,72.81,16.83,71.58,17.94,71.50,20.22,72.36,21.23,73.04,22.41,73.09,24.41,73.79,25.72,75.26,27.91
+#loop
+.line Desolace,75.26,27.91,76.77,27.73,77.54,26.68,78.20,25.63,78.90,24.60,78.74,23.15,79.33,20.96,79.69,18.92,79.36,16.18,77.43,15.44,75.96,15.89,74.52,15.66,72.81,16.83,71.58,17.94,71.50,20.22,72.36,21.23,73.04,22.41,73.09,24.41,73.79,25.72,75.26,27.91
+.goto Desolace,75.26,27.91,25,0
+.goto Desolace,76.77,27.73,25,0
+.goto Desolace,77.54,26.68,25,0
+.goto Desolace,78.20,25.63,25,0
+.goto Desolace,78.90,24.60,25,0
+.goto Desolace,78.74,23.15,25,0
+.goto Desolace,79.33,20.96,25,0
+.goto Desolace,79.69,18.92,25,0
+.goto Desolace,79.36,16.18,25,0
+.goto Desolace,77.43,15.44,25,0
+.goto Desolace,75.96,15.89,25,0
+.goto Desolace,74.52,15.66,25,0
+.goto Desolace,72.81,16.83,25,0
+.goto Desolace,71.58,17.94,25,0
+.goto Desolace,71.50,20.22,25,0
+.goto Desolace,72.36,21.23,25,0
+.goto Desolace,73.04,22.41,25,0
+.goto Desolace,73.09,24.41,25,0
+.goto Desolace,73.79,25.72,25,0
+.goto Desolace,75.26,27.91,25,0
 >>Kill |cRXP_ENEMY_Hatefury Satyrs|r. Prioritize killing the |cRXP_ENEMY_Hatefury Rogues|r
 .complete 1434,1 
+.mob +Hatefury Rogue
 .complete 1434,2 
+.mob +Hatefury Felsworn
 .complete 1434,3 
+.mob +Hatefury Betrayer
 .complete 1434,4 
-.unitscan Hatefury Rogue
+.mob +Hatefury Hellcaller
 step
-.loop 25,Desolace,75.26,27.91,76.77,27.73,77.54,26.68,78.20,25.63,78.90,24.60,78.74,23.15,79.33,20.96,79.69,18.92,79.36,16.18,77.43,15.44,75.96,15.89,74.52,15.66,72.81,16.83,71.58,17.94,71.50,20.22,72.36,21.23,73.04,22.41,73.09,24.41,73.79,25.72,75.26,27.91
+#loop
+.line Desolace,75.26,27.91,76.77,27.73,77.54,26.68,78.20,25.63,78.90,24.60,78.74,23.15,79.33,20.96,79.69,18.92,79.36,16.18,77.43,15.44,75.96,15.89,74.52,15.66,72.81,16.83,71.58,17.94,71.50,20.22,72.36,21.23,73.04,22.41,73.09,24.41,73.79,25.72,75.26,27.91
+.goto Desolace,75.26,27.91,25,0
+.goto Desolace,76.77,27.73,25,0
+.goto Desolace,77.54,26.68,25,0
+.goto Desolace,78.20,25.63,25,0
+.goto Desolace,78.90,24.60,25,0
+.goto Desolace,78.74,23.15,25,0
+.goto Desolace,79.33,20.96,25,0
+.goto Desolace,79.69,18.92,25,0
+.goto Desolace,79.36,16.18,25,0
+.goto Desolace,77.43,15.44,25,0
+.goto Desolace,75.96,15.89,25,0
+.goto Desolace,74.52,15.66,25,0
+.goto Desolace,72.81,16.83,25,0
+.goto Desolace,71.58,17.94,25,0
+.goto Desolace,71.50,20.22,25,0
+.goto Desolace,72.36,21.23,25,0
+.goto Desolace,73.04,22.41,25,0
+.goto Desolace,73.09,24.41,25,0
+.goto Desolace,73.79,25.72,25,0
+.goto Desolace,75.26,27.91,25,0
 >>Kill |cRXP_ENEMY_Hatefury Shadowstalkers|r. Loot them for a |cRXP_LOOT_Scalp|r
 .complete 1481,1 
 .mob Hatefury Shadowstalker
@@ -210,12 +258,6 @@ step
 .target Felgur Twocuts
 step
 #completewith next
-.goto Desolace,49.7,57.2,0
->>|TInterface/GossipFrame/HealerGossipIcon:0|tLoot the |cRXP_LOOT_Kodo Bones|r on the ground around the Kodo Graveyard
->>|cRXP_WARN_Be careful as high level|r |cRXP_ENEMY_Kodos|r |cRXP_WARN_can spawn after looting the|r |cRXP_LOOT_Kodo Bones|r << !Rogue !Druid
->>|cRXP_WARN_Be careful as high level|r |cRXP_ENEMY_Kodos|r |cRXP_WARN_can spawn after looting the|r |cRXP_LOOT_Kodo Bones|r|cRXP_WARN_. Immediately stealthing will often prevent them from attacking you|r << Rogue/Druid
-.complete 5501,1 
-step
 .goto Desolace,60.86,61.86,0
 >>Use the |T132488:0|t[Kodo Kombobulator] on |cRXP_FRIENDLY_Kodos|r, then escort them to |cRXP_FRIENDLY_Smeed|r
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Kodo|r after each trip to progress the quest
@@ -239,10 +281,23 @@ step
 .goto Desolace,48.90,58.86,30,0
 .goto Desolace,48.98,60.05,30,0
 .goto Desolace,53.31,61.24
->>|TInterface/GossipFrame/HealerGossipIcon:0|tLoot the |cRXP_LOOT_Kodo Bones|r on the ground around the Kodo Graveyard
+>>Loot the |cRXP_LOOT_Kodo Bones|r on the ground around the Kodo Graveyard
 >>|cRXP_WARN_Be careful as high level|r |cRXP_ENEMY_Kodos|r |cRXP_WARN_can spawn after looting the|r |cRXP_LOOT_Kodo Bones|r << !Rogue !Druid
 >>|cRXP_WARN_Be careful as high level|r |cRXP_ENEMY_Kodos|r |cRXP_WARN_can spawn after looting the|r |cRXP_LOOT_Kodo Bones|r|cRXP_WARN_. Immediately stealthing will often prevent them from attacking you|r << Rogue/Druid
 .complete 5501,1 
+step
+#loop
+.goto Desolace,53.96,61.10,0
+.waypoint Desolace,53.96,61.10,50,0
+.waypoint Desolace,60.87,61.85,20,0
+>>Use the |T132488:0|t[Kodo Kombobulator] on |cRXP_FRIENDLY_Kodos|r, then escort them to |cRXP_FRIENDLY_Smeed|r
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Kodo|r after each trip to progress the quest
+.complete 5561,1 
+.use 13892
+.target Dying Kodo
+.target Aged Kodo
+.target Ancient Kodo
+.target Smeed Scrabblescrew
 step
 .goto Desolace,60.80,61.90
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Smeed|r
@@ -279,8 +334,34 @@ step
 .target Thalon
 step << Warlock/Druid/Shaman
 #ah
-.loop 25,Desolace,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick |cRXP_PICK_Shellfish Traps|r to loot their |cRXP_LOOT_Shellfish|r
+#loop
+.line Desolace,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+>>Click |cRXP_PICK_Shellfish Traps|r to loot their |cRXP_LOOT_Shellfish|r
 >>|cRXP_WARN_The droprates may be low|r
 .use 5996 >>Drink an |T134797:0|t[Elixir of Water Breathing]
 .collect 13545,10 
@@ -295,8 +376,34 @@ step << Warlock/Druid/Shaman
 .itemcount 13545,10 
 step << !Warlock !Druid !Shaman
 #ah
-.loop 25,Desolace,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick |cRXP_PICK_Shellfish Traps|r to loot their |cRXP_LOOT_Shellfish|r
+#loop
+.line Desolace,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4,23.3,77.1,22.4,75.1,20.7,75.0,20.0,73.6,19.8,76.1,17.9,76.3,18.7,77.2,24.3,77.4
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+.goto Desolace,23.30,77.10,25,0
+.goto Desolace,22.40,75.10,25,0
+.goto Desolace,20.70,75.00,25,0
+.goto Desolace,20.00,73.60,25,0
+.goto Desolace,19.80,76.10,25,0
+.goto Desolace,17.90,76.30,25,0
+.goto Desolace,18.70,77.20,25,0
+.goto Desolace,24.30,77.40,25,0
+>>Click |cRXP_PICK_Shellfish Traps|r to loot their |cRXP_LOOT_Shellfish|r
 >>|cRXP_WARN_The droprates may be low|r
 .use 5996 >>Drink an |T134797:0|t[Elixir of Water Breathing]
 .collect 13545,10 
@@ -375,7 +482,7 @@ step
 .target Azore Aldamort
 step
 .goto Desolace,36.07,30.40
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick |cRXP_PICK_Rackmore's Log|r, resting on a barrel
+>>Click |cRXP_PICK_Rackmore's Log|r, resting on a barrel
 .accept 6161 >> Accept Claim Rackmore's Treasure!
 step << !Warlock !Druid !Shaman
 #ah
@@ -415,7 +522,7 @@ step
 .goto Desolace,35.36,25.03,40,0
 .goto Desolace,34.34,23.11,40,0
 .goto Desolace,32.97,28.58
->>|TInterface/GossipFrame/HealerGossipIcon:0|tLoot the |cRXP_PICK_Giant Softshell Clams|r for their |cRXP_LOOT_Meat|r
+>>Loot the |cRXP_PICK_Giant Softshell Clams|r for their |cRXP_LOOT_Meat|r
 >>|cRXP_ENEMY_Enraged Reef Crawlers|r |cRXP_WARN_can also drop the|r |cRXP_PICK_Giant Softshell Clams|r
 .complete 6142,1 
 .mob Enraged Reef Crawler
@@ -433,24 +540,35 @@ step
 .mob Drysnap Crawler
 step
 .goto Desolace,30.00,8.80
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick |cRXP_PICK_Rackmore's Chest|r
+>>Click |cRXP_PICK_Rackmore's Chest|r
 .turnin 6161 >> Turn in Claim Rackmore's Treasure!
 .isQuestComplete 6161
 step
 #label BookoftheAncients
 .goto Desolace,28.20,6.60
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick the |cRXP_PICK_Serpent Statue|r to summon |cRXP_ENEMY_Lord Kragaru|r. Kill him and loot him for his |cRXP_LOOT_Book|r
+>>Click the |cRXP_PICK_Serpent Statue|r to summon |cRXP_ENEMY_Lord Kragaru|r. Kill him and loot him for his |cRXP_LOOT_Book|r
 >>|cRXP_WARN_Kill everything around the Serpent Statue first!|r
 .complete 6027,1 
 .mob Lord Kragaru
 step
-.loop 25,Desolace,28.48,11.14,27.24,10.26,27.81,7.83,27.87,5.71,28.66,6.74,30.07,6.86,30.96,7.87,30.33,8.98,29.99,11.23,28.48,11.14
+#loop
+.line Desolace,28.48,11.14,27.24,10.26,27.81,7.83,27.87,5.71,28.66,6.74,30.07,6.86,30.96,7.87,30.33,8.98,29.99,11.23,28.48,11.14
+.goto Desolace,28.48,11.14,25,0
+.goto Desolace,27.24,10.26,25,0
+.goto Desolace,27.81,7.83,25,0
+.goto Desolace,27.87,5.71,25,0
+.goto Desolace,28.66,6.74,25,0
+.goto Desolace,30.07,6.86,25,0
+.goto Desolace,30.96,7.87,25,0
+.goto Desolace,30.33,8.98,25,0
+.goto Desolace,29.99,11.23,25,0
+.goto Desolace,28.48,11.14,25,0
 >>Kill |cRXP_ENEMY_Slitherblade Nagas|r. Loot them for the |cRXP_LOOT_Golden Key|r
 .complete 6161,2 
 step
 #label Rackmore
 .goto Desolace,30.00,8.80
->>|TInterface/GossipFrame/HealerGossipIcon:0|tClick |cRXP_PICK_Rackmore's Chest|r
+>>Click |cRXP_PICK_Rackmore's Chest|r
 .turnin 6161 >> Turn in Claim Rackmore's Treasure!
 step
 #completewith next
@@ -462,13 +580,34 @@ step
 .mob Slitherblade Naga
 .mob Slitherblade Sorceress
 step
-.loop 25,Desolace,28.48,11.14,27.24,10.26,27.81,7.83,27.87,5.71,28.66,6.74,30.07,6.86,30.96,7.87,30.33,8.98,29.99,11.23,28.48,11.14
+#loop
+.line Desolace,28.48,11.14,27.24,10.26,27.81,7.83,27.87,5.71,28.66,6.74,30.07,6.86,30.96,7.87,30.33,8.98,29.99,11.23,28.48,11.14
+.goto Desolace,28.48,11.14,25,0
+.goto Desolace,27.24,10.26,25,0
+.goto Desolace,27.81,7.83,25,0
+.goto Desolace,27.87,5.71,25,0
+.goto Desolace,28.66,6.74,25,0
+.goto Desolace,30.07,6.86,25,0
+.goto Desolace,30.96,7.87,25,0
+.goto Desolace,30.33,8.98,25,0
+.goto Desolace,29.99,11.23,25,0
+.goto Desolace,28.48,11.14,25,0
 >>Kill |cRXP_ENEMY_Slitherblade Oracles|r. Loot them for an |cRXP_LOOT_Oracle Crystal|r
 >>|cRXP_ENEMY_Slitherblade Oracles|r |cRXP_WARN_share spawns with other|r |cRXP_ENEMY_Slitherblade Nagas|r|cRXP_WARN_; you may have to kill them|r
 .complete 1482,1 
 .mob Slitherblade Oracle
 step
-.loop 25,Desolace,32.41,23.00,34.99,21.73,36.86,20.16,39.13,18.74,40.44,20.40,37.70,20.85,36.64,23.40,34.67,24.12,32.41,23.00
+#loop
+.line Desolace,32.41,23.00,34.99,21.73,36.86,20.16,39.13,18.74,40.44,20.40,37.70,20.85,36.64,23.40,34.67,24.12,32.41,23.00
+.goto Desolace,32.41,23.00,25,0
+.goto Desolace,34.99,21.73,25,0
+.goto Desolace,36.86,20.16,25,0
+.goto Desolace,39.13,18.74,25,0
+.goto Desolace,40.44,20.40,25,0
+.goto Desolace,37.70,20.85,25,0
+.goto Desolace,36.64,23.40,25,0
+.goto Desolace,34.67,24.12,25,0
+.goto Desolace,32.41,23.00,25,0
 >>Kill |cRXP_ENEMY_Slitherblade Naga|r, |cRXP_ENEMY_Myrmidons|r, and |cRXP_ENEMY_Sorceresses|r
 .complete 6143,1 
 .complete 6143,2 
@@ -487,9 +626,9 @@ step
 step
 .goto Desolace,52.24,53.44
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tReturn to |cRXP_FRIENDLY_Maurin|r
-.turnin 1435 >> Turn in The Burning of Spirits
 .turnin 1482 >> Turn in The Corrupter
 .accept 1484 >> Accept The Corrupter
+.turnin 1435 >> Turn in The Burning of Spirits
 .target Maurin Bonesplitter
 step
 #ah
@@ -513,7 +652,7 @@ step
 .goto Desolace,73.18,75.11,30,0
 .goto Desolace,73.57,74.21,30,0
 .goto Desolace,73.67,72.90,30,0
->>|TInterface/GossipFrame/HealerGossipIcon:0|tLoot the |cRXP_PICK_Sacks of Meat|r around Magram Village for their |cRXP_LOOT_Meat|r
+>>Loot the |cRXP_PICK_Sacks of Meat|r around Magram Village for their |cRXP_LOOT_Meat|r
 .complete 1370,1 
 step
 .goto Desolace,36.21,79.24
@@ -521,6 +660,11 @@ step
 .turnin 1370 >> Turn in Stealing Supplies
 .accept 1373 >> Accept Ongeku
 .target Uthek the Wise
+step
+.goto Desolace,25.10,72.20
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Roon|r
+.accept 5763 >> Accept Hunting in Stranglethorn
+.target Roon Wildmane
 step << Hunter
 #completewith next
 .goto Desolace,24.90,68.67
@@ -541,11 +685,6 @@ step << Hunter
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|t|cRXP_BUY_Talk to|r |cRXP_FRIENDLY_Aboda|r
 .stable >> Abandon the |cRXP_ENEMY_Scorpashi Lasher|r and retrieve your regular pet
 .target Aboda
-step
-.goto Desolace,25.10,72.20
->>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Roon|r
-.accept 5763 >> Accept Hunting in Stranglethorn
-.target Roon Wildmane
 step
 .goto Desolace,25.80,68.20
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tReturn to |cRXP_FRIENDLY_Taiga|r
@@ -681,6 +820,7 @@ step << Rogue
 .goto Orgrimmar,43.90,54.65
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormok|r
 .train 8691 >> Train your class spells
+>>|T132273:0|t[Instant Poison Rank 3] |cRXP_WARN_requires 160 skill in Poisons!|r
 .target Ormok
 .xp <36,1
 .xp >38,1
@@ -739,7 +879,7 @@ step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Belgrom|r
 .turnin 1184 >> Turn in Parts of the Swarm
 .target Belgrom Rockmaul
-step
+step << !Hunter
 #ah
 .goto Orgrimmar,55.59,62.92
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Auctioneer Thathung|r
@@ -749,8 +889,6 @@ step
 .goto Orgrimmar,54.10,68.42
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Gryshka|r
 .home >> Set your Hearthstone to Orgrimmar
-.vendor >>|cRXP_BUY_Sell your junk, then restock on food and water if necessary|r << !Rogue !Warrior
-.vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
 .target Innkeeper Gryshka
 step
 #completewith next

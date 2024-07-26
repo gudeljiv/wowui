@@ -2,17 +2,21 @@
 EngraverFilters = {
 ["Warrior"] = {
 },
+["Shaman"] = {
+},
+["Rogue"] = {
+},
 }
 EngraverSharedOptions = {
 ["ShowFilterSelector"] = false,
-["HideSlotLabels"] = false,
+["LayoutDirection"] = 2,
 ["HideTooltip"] = false,
-["LayoutDirection"] = 1,
+["HideSlotLabels"] = false,
 ["DisplayMode"] = 1,
-["HideDragTab"] = false,
-["UIScale"] = 0.809999942779541,
-["HideUndiscoveredRunes"] = false,
-["EnableRightClickDrag"] = false,
-["VisibilityMode"] = "SyncCharacterPane",
+["HideDragTab"] = true,
 ["PreventSpellPlacement"] = false,
+["HideUndiscoveredRunes"] = false,
+["EnableRightClickDrag"] = true,
+["VisibilityMode"] = "ShowOnMouseOver",
+["UIScale"] = 0.7099999785423279,
 }

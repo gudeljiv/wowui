@@ -1,6 +1,6 @@
 nPower: disabled
 nHealth: disabled
-Immersion: enabled
+Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled

@@ -81,6 +81,7 @@ xVerminSavedData = {
 "Serpent Sting",
 "Faerie Fire (Feral)",
 "rake",
+"Instant Poison II",
 },
 ["Dreamharvester"] = {
 "Deep Wound",
@@ -239,6 +240,16 @@ xVerminSavedData = {
 "Chain Lightning",
 "Serpent Sting",
 },
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -257,23 +268,12 @@ xVerminSavedData = {
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
 ["Dianastalion"] = {
 "Stormstrike",
 "Mutilate",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Ironspine"] = {
+"Rend",
 },
 ["Ruuzlu"] = {
 "Charge Stun",
@@ -320,9 +320,9 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -356,6 +356,7 @@ xVerminSavedData = {
 },
 ["Thundering Boulderkin"] = {
 "Serpent Sting",
+"Instant Poison II",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
@@ -370,9 +371,9 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Sea Elemental"] = {
 "Frost Shock",
@@ -392,8 +393,9 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
-["Ironspine"] = {
-"Rend",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Unfettered Spirit"] = {
 "Deep Wound",
