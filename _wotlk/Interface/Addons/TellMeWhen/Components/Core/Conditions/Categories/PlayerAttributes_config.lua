@@ -22,9 +22,6 @@ local strlowerCache = TMW.strlowerCache
 local GetSpellInfo = TMW.GetSpellInfo
 local GetSpellName = TMW.GetSpellName
 
-local GetNumTrackingTypes = GetNumTrackingTypes or C_Minimap.GetNumTrackingTypes
-local GetTrackingInfo = GetTrackingInfo or C_Minimap.GetTrackingInfo
-
 local _, pclass = UnitClass("Player")
 
 
@@ -152,7 +149,38 @@ Module.showColorHelp = false
 Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
 
 local TrackingCache = {}
-if GetNumTrackingTypes and GetTrackingInfo and GetNumTrackingTypes() > 0 then
+if C_Minimap and C_Minimap.GetTrackingInfo and C_Minimap.GetNumTrackingTypes() > 0 and type(C_Minimap.GetTrackingInfo(1)) == "table" then
+	local GetTrackingInfo = C_Minimap.GetTrackingInfo
+	local GetNumTrackingTypes = C_Minimap.GetNumTrackingTypes
+	-- Wow 11.0+
+	
+	function Module:Table_Get()
+		for i = 1, GetNumTrackingTypes() do
+			local data = GetTrackingInfo(i)
+			TrackingCache[i] = strlower(data.name)
+		end
+		
+		return TrackingCache
+	end
+
+	function Module:Entry_AddToList_1(f, id)
+		local info = GetTrackingInfo(id)
+	
+		f.Name:SetText(info.name)
+		f.ID:SetText(nil)
+	
+		f.tooltiptitle = info.name
+		
+		f.insert = info.name
+	
+		f.Icon:SetTexture(info.texture)
+	end
+
+elseif C_Minimap and C_Minimap.GetTrackingInfo and C_Minimap.GetNumTrackingTypes() > 0 then
+	-- Cata Classic
+	local GetTrackingInfo = C_Minimap.GetTrackingInfo
+	local GetNumTrackingTypes = C_Minimap.GetNumTrackingTypes
+
 	function Module:Table_Get()
 		for i = 1, GetNumTrackingTypes() do
 			local name, _, active = GetTrackingInfo(i)
@@ -174,6 +202,7 @@ if GetNumTrackingTypes and GetTrackingInfo and GetNumTrackingTypes() > 0 then
 	
 		f.Icon:SetTexture(texture)
 	end
+	
 else
 	-- WoW Classic
 	for _, id in pairs{

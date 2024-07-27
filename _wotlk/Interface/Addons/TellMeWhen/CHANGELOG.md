@@ -1,3 +1,16 @@
+## v11.0.3
+* Fix activation overlays in Classic
+* Fix the Tracking ACtive condition (again)
+
+## v11.0.2
+* Support Masque round spell activation overlays. 
+  * Must be enabled in Masque -> General Settings -> Advanced -> Spell Alert Style (pick anything other than "None").
+* Fix: #2178 Spell dragging to icons broken (again) in WoW 11.0
+* Fix: #2179 Tracking Active condition broken in WoW 11.0
+* Fix: #2182 Unlearned choice node talents missing from suggestion list
+* Fix: #2181 Totem tracking by name broken, added new warlock talents to Guardians icon type
+* Fix: #2183 Abilities like Void Eruption/Bolt not reflecting when the spell changes.
+
 ## v11.0.1
 * Fix: #2174 - Autocast conditions not working
 * Fix: #2176, #2177, #2175, Many spells not tracking cooldowns properly
