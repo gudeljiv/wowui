@@ -89,6 +89,7 @@ nil,
 ["Dopestab - Lone Wolf"] = {
 ["hardcore"] = true,
 ["season"] = 2,
+["lockFrames"] = false,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
@@ -99,7 +100,7 @@ nil,
 125.0000228881836,
 },
 ["activeItemFrame"] = {
-72.69829559326172,
+72.69862365722656,
 39.99988174438477,
 },
 ["arrowFrame"] = {
@@ -134,8 +135,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--242.0000305175781,
--210,
+513.5549926757812,
+-29.68246841430664,
 },
 },
 ["arrowFrame"] = {
@@ -150,10 +151,6 @@ nil,
 },
 },
 ["Doperage - Lone Wolf"] = {
-["enableMinimapButton"] = false,
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -192,7 +189,9 @@ nil,
 },
 },
 },
-["season"] = 2,
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 86.8570556640625,
@@ -211,32 +210,15 @@ nil,
 31.99995613098145,
 },
 },
+["season"] = 2,
+["enableMinimapButton"] = false,
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
+["enableMinimapButton"] = false,
 ["season"] = 2,
 ["frameHeight"] = 125.0000152587891,
 ["macroAnnounced"] = true,
 ["hardcore"] = true,
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Enhance",
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -275,16 +257,11 @@ nil,
 },
 },
 },
-},
-["Battitude - Zandalar Tribe"] = {
-["showDangerousMobsMap"] = false,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["showDangerousUnitscan"] = false,
+["itemUpgradeSpec"] = "Enhance",
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
-40.00004959106445,
+67.99996185302734,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -292,13 +269,19 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-39.99991989135742,
+39.99988174438477,
 },
 ["arrowFrame"] = {
 32.00003814697266,
-32.00003814697266,
+31.99995613098145,
 },
 },
+},
+["Battitude - Zandalar Tribe"] = {
+["soloSelfFound"] = true,
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -337,8 +320,26 @@ nil,
 },
 },
 },
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
 ["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
+["showDangerousUnitscan"] = false,
 },
 },
 }

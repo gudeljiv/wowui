@@ -1,16 +1,16 @@
 
 EngraverOptions = {
 ["ShowFilterSelector"] = false,
-["LayoutDirection"] = 3,
+["HideSlotLabels"] = false,
 ["VisibilityMode"] = "ShowAlways",
 ["PreventSpellPlacement"] = false,
 ["CurrentFilter"] = 0,
-["HideSlotLabels"] = false,
+["LayoutDirection"] = 3,
 ["DisplayMode"] = 1,
 ["HideDragTab"] = false,
-["UIScale"] = 0.7006592750549316,
+["UseCharacterSpecificSettings"] = false,
 ["HideUndiscoveredRunes"] = false,
 ["EnableRightClickDrag"] = false,
 ["HideTooltip"] = false,
-["UseCharacterSpecificSettings"] = false,
+["UIScale"] = 0.7006592750549316,
 }

@@ -7,7 +7,7 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:1708
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip

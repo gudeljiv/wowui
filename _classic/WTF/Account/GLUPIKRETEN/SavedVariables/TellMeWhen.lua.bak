@@ -491,10 +491,10 @@ nil,
 ["Operator"] = ">=",
 },
 {
-["PrtsAfter"] = 1,
-["Type"] = "LUA",
 ["Name"] = "xImmune(\"Serpent Sting\")",
 ["AndOr"] = "OR",
+["PrtsAfter"] = 1,
+["Type"] = "LUA",
 },
 {
 ["Name"] = "not xImmune(\"Chimera Shot\")",
@@ -4069,6 +4069,7 @@ nil,
 },
 },
 ["Enabled"] = true,
+["HideIfNoUnits"] = true,
 ["Conditions"] = {
 {
 ["Type"] = "DEBUFFSTACKS",
@@ -4125,7 +4126,6 @@ nil,
 },
 ["n"] = 8,
 },
-["HideIfNoUnits"] = true,
 ["States"] = {
 {
 },
@@ -4154,7 +4154,6 @@ nil,
 },
 },
 ["Enabled"] = true,
-["HideIfNoUnits"] = true,
 ["Conditions"] = {
 {
 ["Name"] = "Defensive Stance",
@@ -4187,6 +4186,7 @@ nil,
 },
 ["n"] = 6,
 },
+["HideIfNoUnits"] = true,
 ["States"] = {
 {
 },
@@ -4231,10 +4231,10 @@ nil,
 ["Name"] = "xAOE(5) == 1",
 },
 {
-["PrtsAfter"] = 1,
-["Type"] = "STANCE",
 ["Name"] = "Battle Stance; Berserker Stance",
 ["AndOr"] = "OR",
+["PrtsAfter"] = 1,
+["Type"] = "STANCE",
 },
 {
 ["Type"] = "SPEC",
@@ -4774,10 +4774,10 @@ nil,
 ["Name"] = "Spell Reflection",
 },
 {
-["PrtsAfter"] = 1,
-["Type"] = "LUA",
 ["Name"] = "xUnitCasting(\"target\")",
 ["AndOr"] = "OR",
+["PrtsAfter"] = 1,
+["Type"] = "LUA",
 },
 {
 ["Type"] = "SPEC",
@@ -5013,8 +5013,8 @@ nil,
 ["Checked"] = true,
 ["Unit"] = "target",
 ["Name"] = "Rend",
-["Level"] = 0.6,
 ["AndOr"] = "OR",
+["Level"] = 0.6,
 ["Operator"] = "<=",
 },
 {
@@ -5963,7 +5963,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -5973,6 +5972,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -6099,7 +6099,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -6109,6 +6108,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -6412,7 +6412,6 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
-["Version"] = 100900,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -8008,7 +8007,7 @@ nil,
 ["point"] = "TOPLEFT",
 ["relativePoint"] = "TOPLEFT",
 },
-["Locked"] = true,
+["Scale"] = 0.4,
 ["Name"] = "ROTATION QUEUE",
 ["Icons"] = {
 {
@@ -8067,7 +8066,7 @@ nil,
 },
 },
 },
-["Scale"] = 0.4,
+["Locked"] = true,
 },
 {
 ["Icons"] = {
@@ -8100,6 +8099,7 @@ nil,
 },
 },
 },
+["Version"] = 100900,
 },
 ["Dopesick - Stitches"] = {
 ["Version"] = 101600,
@@ -8109,7 +8109,6 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
-["Version"] = 110101,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -8343,10 +8342,10 @@ nil,
 ["Operator"] = ">=",
 },
 {
-["Type"] = "LUA",
 ["AndOr"] = "OR",
-["Name"] = "xAOE(5,false) > 1",
+["Type"] = "LUA",
 ["PrtsAfter"] = 1,
+["Name"] = "xAOE(5,false) > 1",
 },
 {
 ["Name"] = "not xImmune(\"Molten Blast\")",
@@ -9982,6 +9981,7 @@ nil,
 },
 },
 ["NumGroups"] = 5,
+["Version"] = 110101,
 },
 ["Dopede - Stitches"] = {
 ["Version"] = 101600,
@@ -10000,7 +10000,6 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
-["Version"] = 102701,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -10545,10 +10544,10 @@ nil,
 ["Operator"] = "<",
 },
 {
-["Type"] = "LUA",
 ["AndOr"] = "OR",
-["Name"] = "xTTD <= 7",
+["Type"] = "LUA",
 ["PrtsAfter"] = 1,
+["Name"] = "xTTD <= 7",
 },
 {
 ["Name"] = "not xBehindTarget() and not IsSpellKnownOrOverridesKnown(407993)",
@@ -12283,6 +12282,7 @@ nil,
 },
 },
 ["NumGroups"] = 5,
+["Version"] = 102701,
 },
 ["Dopeclaw - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -12291,7 +12291,6 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
-["NumGroups"] = 5,
 ["Version"] = 101600,
 ["Groups"] = {
 {
@@ -12645,8 +12644,8 @@ nil,
 ["Checked"] = true,
 ["Name"] = "Frost Fever",
 ["PrtsBefore"] = 1,
-["AndOr"] = "OR",
 ["Level"] = 7.5,
+["AndOr"] = "OR",
 ["Operator"] = ">",
 },
 {
@@ -15712,6 +15711,7 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -15721,7 +15721,6 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -17073,6 +17072,7 @@ nil,
 },
 },
 ["Version"] = 101600,
+["NumGroups"] = 5,
 },
 ["Dopedot - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -17081,10 +17081,14 @@ nil,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TQvxnAfbGyU",
-["Scale"] = 1,
-["Name"] = "Spells",
-["Alpha"] = 0,
 ["Locked"] = true,
+["Point"] = {
+["y"] = -5,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+},
+["Alpha"] = 0,
+["Scale"] = 1,
 ["Columns"] = 20,
 ["Icons"] = {
 {
@@ -17378,11 +17382,7 @@ nil,
 },
 },
 },
-["Point"] = {
-["y"] = -5,
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-},
+["Name"] = "Spells",
 },
 {
 ["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -17773,7 +17773,7 @@ nil,
 ["Conditions"] = {
 {
 ["Type"] = "COMBO",
-["Operator"] = "<",
+["Operator"] = "<=",
 ["Level"] = 5,
 },
 {
@@ -17806,7 +17806,7 @@ nil,
 ["Conditions"] = {
 {
 ["Type"] = "COMBO",
-["Operator"] = "<",
+["Operator"] = "<=",
 ["Level"] = 5,
 },
 {
@@ -17835,7 +17835,7 @@ nil,
 ["Conditions"] = {
 {
 ["Type"] = "COMBO",
-["Operator"] = "<",
+["Operator"] = "<=",
 ["Level"] = 5,
 },
 {
@@ -17867,11 +17867,20 @@ nil,
 {
 ["Type"] = "COMBO",
 ["Operator"] = "<=",
+["PrtsBefore"] = 1,
 ["Level"] = 5,
 },
 {
 ["Type"] = "LUA",
+["PrtsAfter"] = 1,
 ["Name"] = "not IsSpellKnownOrOverridesKnown(424785) and not IsSpellKnownOrOverridesKnown(399956)",
+},
+{
+["Type"] = "LUA",
+["PrtsAfter"] = 1,
+["AndOr"] = "OR",
+["Name"] = "xTTD <= 30 and not IsSpellKnownOrOverridesKnown(424785) and not IsSpellKnownOrOverridesKnown(399956)",
+["PrtsBefore"] = 1,
 },
 ["n"] = 3,
 },
@@ -17892,6 +17901,8 @@ nil,
 },
 {
 ["Type"] = "cooldown",
+["Name"] = "Ambush",
+["GUID"] = "TMW:icon:1cey=nVUgRO_",
 ["Conditions"] = {
 {
 ["Type"] = "BUFFDUR",
@@ -17900,9 +17911,6 @@ nil,
 },
 ["n"] = 1,
 },
-["Name"] = "Ambush",
-["Enabled"] = true,
-["GUID"] = "TMW:icon:1cey=nVUgRO_",
 ["ManaCheck"] = true,
 ["States"] = {
 {
@@ -17916,6 +17924,7 @@ nil,
 },
 },
 ["RangeCheck"] = true,
+["Enabled"] = true,
 },
 {
 ["States"] = {
@@ -18028,9 +18037,23 @@ nil,
 },
 },
 {
+["OnlyMine"] = true,
 ["Type"] = "cooldown",
 ["Name"] = "Between the Eyes",
 ["GUID"] = "TMW:icon:1cey=nVdK_ap",
+["States"] = {
+{
+},
+nil,
+{
+["Alpha"] = 0,
+},
+{
+["Alpha"] = 0,
+},
+},
+["RangeCheck"] = true,
+["Enabled"] = true,
 ["Conditions"] = {
 {
 ["Type"] = "COMBO",
@@ -18050,30 +18073,19 @@ nil,
 {
 ["Type"] = "LUA",
 ["PrtsAfter"] = 1,
-["AndOr"] = "OR",
 ["Name"] = "xTTD <= 30",
+["AndOr"] = "OR",
 },
 {
 ["Type"] = "LUA",
 ["Name"] = "IsSpellKnownOrOverridesKnown(400009)",
 },
-["n"] = 5,
-},
-["States"] = {
 {
-["Alpha"] = 0,
+["Type"] = "LUA",
+["Name"] = "xGetRange() >= 10",
 },
-nil,
-{
-["Alpha"] = 0,
+["n"] = 6,
 },
-{
-["Alpha"] = 0,
-},
-},
-["RangeCheck"] = true,
-["Enabled"] = true,
-["OnlyMine"] = true,
 },
 {
 ["OnlyMine"] = true,
@@ -18784,11 +18796,11 @@ nil,
 "TMW:icon:1ZBi1G1LSN04",
 "TMW:icon:1ZBi1G1Ik=8q",
 "TMW:icon:1cey=nVUgRO_",
+"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1bdJCdXiCTSJ",
 "TMW:icon:1cer6m1AqtWi",
 "TMW:icon:1cey=nVdK_ap",
 "TMW:icon:1TeVAjjavXC6",
-"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1cer6m0=J70m",
 "TMW:icon:1cer6m0_Lhyb",
 },
@@ -18863,11 +18875,11 @@ nil,
 "TMW:icon:1ZBi1G1LSN04",
 "TMW:icon:1ZBi1G1Ik=8q",
 "TMW:icon:1cey=nVUgRO_",
+"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1bdJCdXiCTSJ",
 "TMW:icon:1cer6m1AqtWi",
 "TMW:icon:1cey=nVdK_ap",
 "TMW:icon:1TeVAjjavXC6",
-"TMW:icon:1ceynOOtaPeT",
 "TMW:icon:1cer6m0=J70m",
 "TMW:icon:1cer6m0_Lhyb",
 },
@@ -18950,6 +18962,9 @@ nil,
 ["NumGroups"] = 5,
 ["Version"] = 110101,
 ["Locked"] = true,
+},
+["Dopecoil - Lone Wolf"] = {
+["Version"] = 102000,
 },
 ["PRIEST"] = {
 ["Groups"] = {
@@ -20361,7 +20376,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMin"] = 15,
 ["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
@@ -20371,6 +20385,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20459,7 +20474,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMin"] = 15,
 ["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
@@ -20469,6 +20483,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20532,8 +20547,8 @@ nil,
 {
 ["GUID"] = "TMW:group:1ZM=EKbLryuK",
 ["Columns"] = 1,
-["Scale"] = 0.4,
 ["Locked"] = true,
+["Scale"] = 0.4,
 ["Name"] = "DEBUG",
 ["Icons"] = {
 {
@@ -20574,15 +20589,11 @@ nil,
 ["NumGroups"] = 6,
 ["TextureName"] = "xVerminClean",
 },
-["Dopecoil - Lone Wolf"] = {
-["Version"] = 102000,
-},
 ["Lonac - Stitches"] = {
 ["Version"] = 101600,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
-["Version"] = 102601,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -23660,6 +23671,7 @@ nil,
 },
 },
 ["NumGroups"] = 5,
+["Version"] = 102601,
 },
 ["Dopestab - Lone Wolf"] = {
 ["Version"] = 102000,

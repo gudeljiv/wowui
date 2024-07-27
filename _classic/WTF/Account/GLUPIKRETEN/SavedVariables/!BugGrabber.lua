@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12510,
+["session"] = 12512,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -1550,14 +1550,6 @@ BugGrabberDB = {
 ["stack"] = "[string \"print(xRange())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 ["session"] = 11090,
 ["counter"] = 2,
-},
-{
-["message"] = "[string \"print(xRange(\"target\"))\"]:1: attempt to call global 'xRange' (a nil value)",
-["time"] = "2024/01/03 11:40:54",
-["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
-["stack"] = "[string \"print(xRange(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-["session"] = 11090,
-["counter"] = 1,
 },
 {
 ["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WeakAuras' tried to call the protected function 'Frame:Hide()'.",
@@ -3780,20 +3772,36 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
-["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
-["time"] = "2023/10/19 21:06:56",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12509,
-["counter"] = 25,
-},
-{
 ["message"] = ".../AddOns/Blizzard_StaticPopup/Classic/StaticPopup.lua:733: attempt to index local 'dialog' (a nil value)",
 ["time"] = "2024/07/24 10:14:18",
 ["locals"] = "self = StaticPopup1 {\n 0 = <userdata>\n hideOnEscape = 1\n SubText = FontString {\n }\n ItemFrame = StaticPopup1ItemFrame {\n }\n OnBackdropLoaded = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:390\n SetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:422\n button4 = StaticPopup1Button4 {\n }\n moneyFrame = StaticPopup1MoneyFrame {\n }\n extraButton = StaticPopup1ExtraButton {\n }\n text = StaticPopup1Text {\n }\n SetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:347\n moneyInputFrame = StaticPopup1MoneyInputFrame {\n }\n maxHeightSoFar = 97.190500\n exclusive = 1\n SetBorderBlendMode = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:266\n TopLeftCorner = Texture {\n }\n CoverFrame = Frame {\n }\n itemFrame = StaticPopup1ItemFrame {\n }\n ApplyBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:294\n BottomEdge = Texture {\n }\n button3 = StaticPopup1Button3 {\n }\n icon = StaticPopup1AlertIcon {\n }\n Center = Texture {\n }\n backdropInfo = <table> {\n }\n OnBackdropSizeChanged = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:278\n RightEdge = Texture {\n }\n numButtons = 2\n maxWidthSoFar = 320\n button2 = StaticPopup1Button2 {\n }\n GetEdgeSize = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:188\n BottomRightCorner = Texture {\n }\n button1 = StaticPopup1Button1 {\n }\n TopEdge = Texture {\n }\n BottomLeftCorner = Texture {\n }\n TopRightCorner = Texture {\n }\n editBox = StaticPopup1EditBox {\n }\n timeleft = 0\n extraFrame = StaticPopup1ExtraFrame {\n }\n SetupTextureCoordinates = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:214\n Separator = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n which = \"ADDON_ACTION_FORBIDDEN\"\n}\ndialog = nil\n(*temporary) = \"ADDON_ACTION_FORBIDDEN\"\n(*temporary) = 0\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <table> {\n}\n(*temporary) = 1\n(*temporary) = StaticPopup1 {\n 0 = <userdata>\n hideOnEscape = 1\n SubText = FontString {\n }\n ItemFrame = StaticPopup1ItemFrame {\n }\n OnBackdropLoaded = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:390\n SetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:422\n button4 = StaticPopup1Button4 {\n }\n moneyFrame = StaticPopup1MoneyFrame {\n }\n extraButton = StaticPopup1ExtraButton {\n }\n text = StaticPopup1Text {\n }\n SetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:347\n moneyInputFrame = StaticPopup1MoneyInputFrame {\n }\n maxHeightSoFar = 97.190500\n exclusive = 1\n SetBorderBlendMode = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:266\n TopLeftCorner = Texture {\n }\n CoverFrame = Frame {\n }\n itemFrame = StaticPopup1ItemFrame {\n }\n ApplyBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:294\n BottomEdge = Texture {\n }\n button3 = StaticPopup1Button3 {\n }\n icon = StaticPopup1AlertIcon {\n }\n Center = Texture {\n }\n backdropInfo = <table> {\n }\n OnBackdropSizeChanged = <func",
 ["stack"] = "[string \"@Interface/AddOns/Blizzard_StaticPopup/Classic/StaticPopup.lua\"]:733: in function `StaticPopup_OnHide'\n[string \"*StaticPopup.xml:286_OnHide\"]:1: in function <[string \"*StaticPopup.xml:286_OnHide\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/Blizzard_StaticPopup/Classic/StaticPopup.lua\"]:528: in function <.../AddOns/Blizzard_StaticPopup/Classic/StaticPopup.lua:117>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `StaticPopup_Show'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:853: in function <...erface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua:509>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:509: in function <Interface/AddOns/RXPGuides/Targeting.lua:486>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 ["session"] = 12509,
 ["counter"] = 2,
+},
+{
+["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'xVermin' tried to call the protected function 'SetNote()'.",
+["time"] = "2024/07/27 12:57:28",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `SetNote'\n[string \"@Interface/AddOns/Blizzard_StaticPopup_Frame/Classic/StaticPopup.lua\"]:2818: in function `OnAccept'\n[string \"@Interface/AddOns/Blizzard_StaticPopup/Classic/StaticPopup.lua\"]:811: in function `StaticPopup_OnClick'\n[string \"*StaticPopup.xml:23_OnClick\"]:1: in function <[string \"*StaticPopup.xml:23_OnClick\"]:1>",
+["session"] = 12511,
+["counter"] = 1,
+},
+{
+["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
+["time"] = "2023/10/19 21:06:56",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+["session"] = 12511,
+["counter"] = 26,
+},
+{
+["message"] = "[string \"print(xRange(\"target\"))\"]:1: attempt to call global 'xRange' (a nil value)",
+["time"] = "2024/01/03 11:40:54",
+["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
+["stack"] = "[string \"print(xRange(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+["session"] = 12511,
+["counter"] = 3,
 },
 },
 }
