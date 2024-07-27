@@ -1,3 +1,12 @@
+VER 3 0000000001000004 "att1" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Backstab
+END
+VER 3 0000000001000005 "att2" "Inv_misc_questionmark"
+#showtooltip
+/use Backstab
+END
 VER 3 0000000001000002 "poison" "134400"
 #showtooltip
 /use Instant Poison

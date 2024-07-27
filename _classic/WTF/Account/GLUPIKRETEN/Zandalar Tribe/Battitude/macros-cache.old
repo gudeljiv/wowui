@@ -1,3 +1,14 @@
+VER 3 0000000001000002 "poison" "134400"
+#showtooltip
+/use Instant Poison
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000003 "ss" "134400"
+#showtooltip
+/startattack
+/cast sinister strike
+END
 VER 3 0000000001000001 "tease" "Inv_misc_questionmark"
 #showtooltip
 /cast Feint

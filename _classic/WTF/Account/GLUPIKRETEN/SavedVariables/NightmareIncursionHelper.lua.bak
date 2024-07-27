@@ -6,6 +6,7 @@ NIHdatabase = {
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
+["Battlenac - Zandalar Tribe"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",

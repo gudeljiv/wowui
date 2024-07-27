@@ -1,17 +1,17 @@
 
 xKillCount = {
-	["show"] = false,
-	["killLog"] = {
-	},
-	["experience"] = {
-		["totaltotal"] = 39969,
-		["pulltotal"] = 1820,
-	},
-	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
-	},
+["show"] = false,
+["killLog"] = {
+},
+["experience"] = {
+["totaltotal"] = 43308,
+["pulltotal"] = 65,
+},
+["position"] = {
+["y"] = -350,
+["x"] = 5,
+["to"] = "TOPLEFT",
+["from"] = "TOPLEFT",
+["anchor"] = "UIParent",
+},
 }
