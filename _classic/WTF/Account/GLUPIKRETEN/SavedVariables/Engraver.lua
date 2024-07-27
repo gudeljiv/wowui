@@ -9,14 +9,14 @@ EngraverFilters = {
 }
 EngraverSharedOptions = {
 ["ShowFilterSelector"] = false,
-["UIScale"] = 0.7099999785423279,
-["VisibilityMode"] = "ShowOnMouseOver",
+["HideSlotLabels"] = false,
+["HideTooltip"] = false,
 ["LayoutDirection"] = 2,
 ["DisplayMode"] = 1,
 ["HideDragTab"] = true,
-["PreventSpellPlacement"] = false,
+["UIScale"] = 0.7099999785423279,
 ["HideUndiscoveredRunes"] = false,
 ["EnableRightClickDrag"] = true,
-["HideTooltip"] = false,
-["HideSlotLabels"] = false,
+["VisibilityMode"] = "ShowOnMouseOver",
+["PreventSpellPlacement"] = false,
 }
