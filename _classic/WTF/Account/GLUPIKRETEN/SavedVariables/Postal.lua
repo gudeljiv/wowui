@@ -28,7 +28,7 @@ Postal3DB = {
 ["BlackBook"] = {
 ["alts"] = {
 "Battitude|Zandalar Tribe|Alliance|1|ROGUE",
-"Battlenac|Zandalar Tribe|Alliance|1|PRIEST",
+"Battlenac|Zandalar Tribe|Alliance|4|PRIEST",
 "Dopeah|Stitches|Horde|1|SHAMAN",
 "Dopebolt|Lone Wolf|Horde|2|MAGE",
 "Dopeclaw|Lone Wolf|Horde|38|DRUID",
@@ -43,7 +43,7 @@ Postal3DB = {
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Lone Wolf|Horde|48|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopestab|Lone Wolf|Horde|38|ROGUE",
+"Dopestab|Lone Wolf|Horde|40|ROGUE",
 "Dopetrap|Lone Wolf|Horde|1|HUNTER",
 "Jutarnjedrvo|Lone Wolf|Horde|50|SHAMAN",
 "Lonac|Stitches|Horde|1|WARRIOR",

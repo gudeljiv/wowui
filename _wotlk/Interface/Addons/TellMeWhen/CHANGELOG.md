@@ -1,3 +1,7 @@
+## v11.0.4
+* Fix: #2186 Activation overlays in Retail
+* The cooldown charge sweep is now skinned with Masque.
+
 ## v11.0.3
 * Fix activation overlays in Classic
 * Fix the Tracking ACtive condition (again)

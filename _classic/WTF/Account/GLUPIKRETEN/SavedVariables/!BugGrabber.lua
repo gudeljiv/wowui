@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 12519,
+["session"] = 12523,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3804,12 +3804,20 @@ BugGrabberDB = {
 ["counter"] = 8,
 },
 {
+["message"] = "Lua error in aura 'Herbaning Switch': Trigger 1\nWeakAuras Version: 5.15.4\nAura Version: 1.0.3\n[string \"return function()\"]:15: attempt to call global 'xBehindTargetIndicator' (a nil value)",
+["time"] = "2024/07/28 13:32:54",
+["locals"] = "nextTrack = nil\nherbTracking = \"Find Herbs\"\nmineralTracking = \"Find Minerals\"\nisNotTracking = false\nisInit = true\ntheTime = 2336938.976000\nnotInCombat = true\nnotResting = true\nIsFlying = false\nnotChanneling = true\nnotCasting = true\nhaveTarget = false\nunitalive = true\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'xBehindTargetIndicator' (a nil value)\"\n",
+["stack"] = "[string \"return function()\"]:15: in function <[string \"return function()\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:716: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:625>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1095: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1439: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:2037: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1819: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1663>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:2014: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:151>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface/AddOns/Blizzard_UIParentPanelManager/Classic/UIParentPanelManager_Shared.lua\"]:1108: in function `HideUIPanel'\n[string \"@Interface/AddOns/Blizzard_SharedXML/Classic/SharedUIPanelTemplates.lua\"]:193: in function <...lizzard_SharedXML/Classic/SharedUIPanelTemplates.lua:184>",
+["session"] = 12520,
+["counter"] = 30,
+},
+{
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12519,
-["counter"] = 31,
+["session"] = 12523,
+["counter"] = 34,
 },
 },
 }

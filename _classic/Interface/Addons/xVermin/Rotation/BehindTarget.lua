@@ -58,3 +58,8 @@ xVermin.BehindTarget = function()
 	end
 end
 xBehindTarget = xVermin.BehindTarget
+
+xVermin.BehindTargetIndicator = function()
+	return indicator
+end
+xBehindTargetIndicator = xVermin.BehindTargetIndicator

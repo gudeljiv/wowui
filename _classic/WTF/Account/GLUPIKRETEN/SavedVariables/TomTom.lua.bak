@@ -8,10 +8,10 @@ TomTomDB = {
 ["Greshnik - Dreadnaught"] = "Default",
 ["Battitude - Golemagg"] = "Default",
 ["Greenwise - Golemagg"] = "Default",
-["Konac - Dreadnaught"] = "Default",
+["Dopeclaw - Lone Wolf"] = "Default",
 ["Dopemend - Lone Wolf"] = "Default",
 ["Wells - Jin'do"] = "Default",
-["Dopeclaw - Lone Wolf"] = "Default",
+["Konac - Dreadnaught"] = "Default",
 ["Poklopac - Dreadnaught"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
 ["Grgur - Golemagg"] = "Default",
@@ -105,10 +105,10 @@ TomTomWaypointsM = {
 ["Greshnik - Dreadnaught"] = "Greshnik - Dreadnaught",
 ["Battitude - Golemagg"] = "Battitude - Golemagg",
 ["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
 ["Wells - Jin'do"] = "Wells - Jin'do",
-["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 ["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
@@ -173,13 +173,13 @@ TomTomWaypointsM = {
 },
 ["Greenwise - Golemagg"] = {
 },
-["Konac - Dreadnaught"] = {
+["Dopeclaw - Lone Wolf"] = {
 },
 ["Dopemend - Lone Wolf"] = {
 },
 ["Wells - Jin'do"] = {
 },
-["Dopeclaw - Lone Wolf"] = {
+["Konac - Dreadnaught"] = {
 },
 ["Poklopac - Dreadnaught"] = {
 },

@@ -997,9 +997,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 220252.548,
 },
 ["Dopestab-LoneWolf"] = {
-["total"] = 273650,
-["timeAtThisLevel"] = 10216,
-["timeStamp"] = 2266926.351,
+["total"] = 281912,
+["timeAtThisLevel"] = 0,
+["timeStamp"] = 2338798.297,
 },
 ["Dotwise-"] = {
 ["total"] = 3924,
@@ -1051,8 +1051,8 @@ CB_PlayedTime = {
 ["timeAtThisLevel"] = 32298,
 },
 ["Battlenac-ZandalarTribe"] = {
-["total"] = 1563,
+["total"] = 2352,
 ["timeAtThisLevel"] = 0,
-["timeStamp"] = 2269371.99,
+["timeStamp"] = 2342442.905,
 },
 }

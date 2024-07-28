@@ -30,7 +30,26 @@ RXPSettings = {
 ["profiles"] = {
 ["Default"] = {
 ["macroAnnounced"] = true,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
 ["enableMinimapButton"] = false,
+["season"] = 0,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -69,25 +88,6 @@ nil,
 },
 },
 },
-["season"] = 0,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
 },
 ["Dopestab - Lone Wolf"] = {
 ["hardcore"] = false,
@@ -107,7 +107,7 @@ nil,
 39.99988174438477,
 },
 ["activeTargetFrame"] = {
-86.8570556640625,
+85.2649154663086,
 68.00004577636719,
 },
 },
@@ -154,10 +154,29 @@ nil,
 },
 },
 ["Doperage - Lone Wolf"] = {
-["enableMinimapButton"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+86.8570556640625,
+67.99996185302734,
+},
+},
 ["frameHeight"] = 125.0000152587891,
 ["macroAnnounced"] = true,
 ["hardcore"] = true,
+["enableMinimapButton"] = false,
+["season"] = 2,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -194,25 +213,6 @@ nil,
 -253.3331756591797,
 -252.0639038085938,
 },
-},
-},
-["season"] = 2,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-86.8570556640625,
-67.99996185302734,
 },
 },
 },
@@ -261,11 +261,11 @@ nil,
 ["enableGroupQuests"] = false,
 ["soloSelfFound"] = true,
 ["showDangerousUnitscan"] = false,
-["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.26507568359375,
-40.00004959106445,
+67.99996185302734,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -281,33 +281,9 @@ nil,
 },
 },
 ["itemUpgradeSpec"] = "Discipline ",
-["frameHeight"] = 125.0000152587891,
+["enableMinimapButton"] = false,
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-},
-["itemUpgradeSpec"] = "Enhance",
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
-["enableMinimapButton"] = false,
-["season"] = 2,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -346,6 +322,30 @@ nil,
 },
 },
 },
+["itemUpgradeSpec"] = "Enhance",
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["season"] = 2,
+["enableMinimapButton"] = false,
 },
 ["Battitude - Zandalar Tribe"] = {
 ["macroAnnounced"] = true,

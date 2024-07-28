@@ -5,15 +5,5716 @@ _detalhes_database = {
 ["mythic_dungeon_id"] = 0,
 ["tabela_historico"] = {
 ["tabelas"] = {
+{
+{
+["combatId"] = 369,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008551,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 72.008551,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 72.008551,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Frostmane Troll Whelp"] = true,
+},
+["targets"] = {
+["Frostmane Troll Whelp"] = 72,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 72,
+},
+["end_time"] = 1722098945,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Frostmane Troll Whelp"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 7,
+["total"] = 22,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Frostmane Troll Whelp"] = 50,
+},
+["n_total"] = 50,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 50,
+["c_max"] = 0,
+["RESIST"] = 1,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 3.009510218622284,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 48.008551,
+["start_time"] = 1722098921,
+["delay"] = 0,
+["last_event"] = 1722098945,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.005579,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 48.005579,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 48.005579,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-706-0000251F6F",
+["aID"] = "706",
+["fight_component"] = true,
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 48,
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098945,
+["nome"] = "Frostmane Troll Whelp",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Battlenac"] = 48,
+},
+["n_total"] = 48,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 11,
+["total"] = 48,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 11,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 72.005579,
+["start_time"] = 1722098923,
+["delay"] = 0,
+["last_event"] = 1722098943,
+},
+},
+},
+{
+["combatId"] = 369,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 369,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 369,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 369,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["tempo_start"] = 1722098921,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+120,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:49:05",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Frostmane Troll Whelp",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269511.119,
+["CombatEndedAt"] = 2269511.119,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:48:41",
+["end_time"] = 2269511.119,
+["mapId"] = 0,
+["combat_id"] = 369,
+["boss_hp"] = 1,
+["playing_solo"] = true,
+["frags"] = {
+["Frostmane Troll Whelp"] = 1,
+},
+["combat_counter"] = 413,
+["totals_grupo"] = {
+72,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 72.008551,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 2269487.192,
+["TimeData"] = {
+},
+["contra"] = "Frostmane Troll Whelp",
+},
+{
+{
+["combatId"] = 368,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007889,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 74.007889,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 74.007889,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Frostmane Troll Whelp"] = true,
+},
+["targets"] = {
+["Frostmane Troll Whelp"] = 74,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 74,
+},
+["end_time"] = 1722098907,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 3,
+["n_max"] = 4,
+["targets"] = {
+["Frostmane Troll Whelp"] = 27,
+},
+["n_total"] = 21,
+["n_min"] = 3,
+["g_dmg"] = 6,
+["counter"] = 9,
+["total"] = 27,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Frostmane Troll Whelp"] = 47,
+},
+["n_total"] = 47,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 47,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 3.096693962063433,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 43.007889,
+["start_time"] = 1722098883,
+["delay"] = 0,
+["last_event"] = 1722098906,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.001024,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 43.001024,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 43.001024,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-706-0000251F7E",
+["aID"] = "706",
+["fight_component"] = true,
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 43,
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098907,
+["nome"] = "Frostmane Troll Whelp",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Battlenac"] = 43,
+},
+["n_total"] = 43,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 12,
+["total"] = 43,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 11,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 74.001024,
+["start_time"] = 1722098883,
+["delay"] = 0,
+["last_event"] = 1722098905,
+},
+},
+},
+{
+["combatId"] = 368,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 368,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 368,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 368,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269485.514,
+["tempo_start"] = 1722098883,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+117,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:48:28",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Frostmane Troll Whelp",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269473.901,
+["CombatEndedAt"] = 2269473.901,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:48:04",
+["end_time"] = 2269473.901,
+["mapId"] = 0,
+["combat_id"] = 368,
+["boss_hp"] = 1,
+["playing_solo"] = true,
+["frags"] = {
+["Frostmane Troll Whelp"] = 1,
+},
+["combat_counter"] = 412,
+["totals_grupo"] = {
+74,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 74.007889,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 2269450.002,
+["TimeData"] = {
+},
+["contra"] = "Frostmane Troll Whelp",
+},
+{
+{
+["combatId"] = 367,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003284,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 87.00328400000001,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 87.00328400000001,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Frostmane Troll Whelp"] = true,
+},
+["targets"] = {
+["Frostmane Troll Whelp"] = 87,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 87,
+},
+["end_time"] = 1722098876,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Frostmane Troll Whelp"] = 87,
+},
+["n_total"] = 62,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 87,
+["c_max"] = 25,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 25,
+["successful_casted"] = 0,
+["c_total"] = 25,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.145725218312387,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 6.003284,
+["start_time"] = 1722098866,
+["delay"] = 0,
+["last_event"] = 1722098874,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.001617,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.001617,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.001617,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-706-0000251F5A",
+["aID"] = "706",
+["fight_component"] = true,
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 6,
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098876,
+["nome"] = "Frostmane Troll Whelp",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 6,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 87.001617,
+["start_time"] = 1722098871,
+["delay"] = 0,
+["last_event"] = 1722098873,
+},
+},
+},
+{
+["combatId"] = 367,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 367,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 367,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 367,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269446.406,
+["tempo_start"] = 1722098866,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+93,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 4,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:47:57",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Frostmane Troll Whelp",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269443.142,
+["CombatEndedAt"] = 2269443.142,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:47:47",
+["end_time"] = 2269443.142,
+["mapId"] = 0,
+["combat_id"] = 367,
+["boss_hp"] = 1,
+["playing_solo"] = true,
+["frags"] = {
+["Frostmane Troll Whelp"] = 1,
+},
+["combat_counter"] = 411,
+["totals_grupo"] = {
+87,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 87.00328400000001,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 2269433.629,
+["TimeData"] = {
+},
+["contra"] = "Frostmane Troll Whelp",
+},
+{
+{
+["combatId"] = 366,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002942,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 69.002942,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 69.002942,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Frostmane Troll Whelp"] = true,
+},
+["targets"] = {
+["Frostmane Troll Whelp"] = 69,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 69,
+},
+["end_time"] = 1722098863,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Frostmane Troll Whelp"] = 69,
+},
+["n_total"] = 69,
+["n_min"] = 17,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 69,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 8.488490835568955,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 11.002942,
+["start_time"] = 1722098856,
+["delay"] = 0,
+["last_event"] = 1722098863,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.001498,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 11.001498,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 11.001498,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-706-0000251FCC",
+["aID"] = "706",
+["fight_component"] = true,
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 11,
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098863,
+["nome"] = "Frostmane Troll Whelp",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 11,
+},
+["n_total"] = 11,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 11,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 69.001498,
+["start_time"] = 1722098855,
+["delay"] = 0,
+["last_event"] = 1722098861,
+},
+},
+},
+{
+["combatId"] = 366,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 366,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 366,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 366,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269433.629,
+["tempo_start"] = 1722098855,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+80,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 4,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:47:44",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Frostmane Troll Whelp",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269430.562,
+["CombatEndedAt"] = 2269430.562,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:47:36",
+["end_time"] = 2269430.562,
+["mapId"] = 0,
+["combat_id"] = 366,
+["boss_hp"] = 1,
+["playing_solo"] = true,
+["frags"] = {
+["Frostmane Troll Whelp"] = 1,
+},
+["combat_counter"] = 410,
+["totals_grupo"] = {
+69,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 69.002942,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 2269422.433,
+["TimeData"] = {
+},
+["contra"] = "Frostmane Troll Whelp",
+},
+{
+{
+["combatId"] = 365,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005127,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 51.005127,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 51.005127,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Rockjaw Trogg"] = 51,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 51,
+},
+["end_time"] = 1722098765,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Rockjaw Trogg"] = 51,
+},
+["n_total"] = 51,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 51,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 11.67432524619109,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.005127,
+["start_time"] = 1722098760,
+["delay"] = 0,
+["last_event"] = 1722098763,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.001874,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.001874,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.001874,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-707-000024DC2D",
+["aID"] = "707",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098765,
+["nome"] = "Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Battlenac"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 51.001874,
+["start_time"] = 1722098762,
+["delay"] = 0,
+["last_event"] = 1722098762,
+},
+},
+},
+{
+["combatId"] = 365,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 365,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 365,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 365,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269420.846,
+["tempo_start"] = 1722098760,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+53,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:46:05",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269331.623,
+["CombatEndedAt"] = 2269331.623,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:46:01",
+["end_time"] = 2269331.623,
+["mapId"] = 0,
+["combat_id"] = 365,
+["boss_hp"] = 1,
+["frags"] = {
+["Rockjaw Trogg"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 409,
+["totals_grupo"] = {
+51,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 51.005127,
+},
+},
+},
+["start_time"] = 2269327.254,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 364,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006455,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 54.006455,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 54.006455,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Small Crag Boar"] = true,
+},
+["targets"] = {
+["Small Crag Boar"] = 54,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098720,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 4,
+["targets"] = {
+["Small Crag Boar"] = 23,
+},
+["n_total"] = 13,
+["n_min"] = 2,
+["g_dmg"] = 2,
+["counter"] = 6,
+["total"] = 23,
+["c_max"] = 8,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 8,
+["successful_casted"] = 0,
+["c_total"] = 8,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Small Crag Boar"] = 31,
+},
+["n_total"] = 31,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 31,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 3.587991961167425,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 13.006455,
+["start_time"] = 1722098705,
+["delay"] = 0,
+["last_event"] = 1722098718,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003507,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 13.003507,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 13.003507,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-708-00002523FD",
+["aID"] = "708",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 13,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098720,
+["nome"] = "Small Crag Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Battlenac"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 6,
+["MISS"] = 1,
+["total"] = 13,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 54.003507,
+["start_time"] = 1722098706,
+["delay"] = 0,
+["last_event"] = 1722098717,
+},
+},
+},
+{
+["combatId"] = 364,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 364,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 364,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 364,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269325.528,
+["tempo_start"] = 1722098705,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+67,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:45:20",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Small Crag Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269285.774,
+["CombatEndedAt"] = 2269285.774,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:45:05",
+["end_time"] = 2269286.747,
+["mapId"] = 0,
+["combat_id"] = 364,
+["frags"] = {
+["Small Crag Boar"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 408,
+["totals_grupo"] = {
+54,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 54.006455,
+},
+},
+},
+["start_time"] = 2269271.695,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 363,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003671,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 48.003671,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 48.003671,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 48,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098698,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 48,
+},
+["n_total"] = 48,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 48,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.572018146203243,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.003671,
+["start_time"] = 1722098693,
+["delay"] = 0,
+["last_event"] = 1722098696,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.004888,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.004888,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.004888,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-0000252134",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098698,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Battlenac"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 0,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 48.004888,
+["start_time"] = 1722098698,
+["delay"] = 0,
+["last_event"] = 1722098695,
+},
+},
+},
+{
+["combatId"] = 363,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 363,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 363,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 363,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269269.947,
+["tempo_start"] = 1722098693,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+48,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:44:59",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269264.64,
+["CombatEndedAt"] = 2269264.64,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:44:54",
+["end_time"] = 2269265.087,
+["mapId"] = 0,
+["combat_id"] = 363,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 407,
+["totals_grupo"] = {
+48,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 48.003671,
+},
+},
+},
+["start_time"] = 2269260.072,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 362,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003932,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 67.00393199999999,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 67.00393199999999,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 67,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098672,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 67,
+},
+["n_total"] = 67,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 67,
+["c_max"] = 0,
+["RESIST"] = 1,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.552884516726586,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.003932,
+["start_time"] = 1722098665,
+["delay"] = 0,
+["last_event"] = 1722098692,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002295,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.002295,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.002295,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-0000252124",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098672,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Battlenac"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 67.002295,
+["start_time"] = 1722098669,
+["delay"] = 0,
+["last_event"] = 1722098669,
+},
+},
+},
+{
+["combatId"] = 362,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 362,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 362,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 362,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269256.395,
+["tempo_start"] = 1722098665,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+69,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:44:32",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269237.543,
+["CombatEndedAt"] = 2269237.543,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:44:25",
+["end_time"] = 2269238.424,
+["mapId"] = 0,
+["combat_id"] = 362,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 406,
+["totals_grupo"] = {
+67,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 67.00393199999999,
+},
+},
+},
+["start_time"] = 2269231.41,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 361,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008864,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 58.008864,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 58.008864,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 58,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098646,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 44,
+},
+["n_total"] = 44,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 44,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 4.822417823554154,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 8.008863999999999,
+["start_time"] = 1722098634,
+["delay"] = 0,
+["last_event"] = 1722098645,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.00793,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 8.00793,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 8.00793,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-0000A4EFDD",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 8,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098646,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Battlenac"] = 8,
+},
+["n_total"] = 8,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 8,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 58.00793,
+["start_time"] = 1722098638,
+["delay"] = 0,
+["last_event"] = 1722098644,
+},
+},
+},
+{
+["combatId"] = 361,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 361,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 361,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 361,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269231.41,
+["tempo_start"] = 1722098634,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+66,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:44:07",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269212.839,
+["CombatEndedAt"] = 2269212.839,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:43:55",
+["end_time"] = 2269213.125,
+["mapId"] = 0,
+["combat_id"] = 361,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 405,
+["totals_grupo"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 58.008864,
+},
+},
+},
+["start_time"] = 2269201.096,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 360,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008579,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 54.008579,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 54.008579,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 54,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098622,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 54,
+},
+["n_total"] = 31,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 54,
+["c_max"] = 23,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 23,
+["successful_casted"] = 0,
+["c_total"] = 23,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 8.990940403236905,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 4.008579,
+["start_time"] = 1722098616,
+["delay"] = 0,
+["last_event"] = 1722098621,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.00783,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 4.00783,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 4.00783,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000024FDEA",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 4,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098622,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Battlenac"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 54.00783,
+["start_time"] = 1722098617,
+["delay"] = 0,
+["last_event"] = 1722098619,
+},
+},
+},
+{
+["combatId"] = 360,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 360,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 360,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 360,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269201.096,
+["tempo_start"] = 1722098616,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:43:42",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269188.142,
+["CombatEndedAt"] = 2269188.142,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:43:36",
+["end_time"] = 2269188.75,
+["mapId"] = 0,
+["combat_id"] = 360,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 404,
+["totals_grupo"] = {
+54,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 54.008579,
+},
+},
+},
+["start_time"] = 2269182.743,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 359,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006229,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 47.006229,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 47.006229,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 47,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098612,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 47,
+},
+["n_total"] = 47,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 47,
+["c_max"] = 0,
+["RESIST"] = 1,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.696998005552498,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 5.006228999999999,
+["start_time"] = 1722098605,
+["delay"] = 0,
+["last_event"] = 1722098615,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.005453,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 5.005453,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 5.005453,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000024FE0A",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 5,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098612,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 47.005453,
+["start_time"] = 1722098606,
+["delay"] = 0,
+["last_event"] = 1722098608,
+},
+},
+},
+{
+["combatId"] = 359,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 359,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 359,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 359,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269179.623,
+["tempo_start"] = 1722098605,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+52,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:43:32",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269177.587,
+["CombatEndedAt"] = 2269177.587,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:43:25",
+["end_time"] = 2269178.546,
+["mapId"] = 0,
+["combat_id"] = 359,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 403,
+["totals_grupo"] = {
+47,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 47.006229,
+},
+},
+},
+["start_time"] = 2269171.527,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 358,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006023,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 49.006023,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 49.006023,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 49,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[64] = 49,
+},
+["end_time"] = 1722098574,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 49,
+},
+["n_total"] = 49,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 49,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 12.19662095522441,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.006023,
+["start_time"] = 1722098570,
+["delay"] = 0,
+["last_event"] = 1722098573,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006987,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.006987,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.006987,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000025216D",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098574,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Battlenac"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 0,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 49.006987,
+["start_time"] = 1722098574,
+["delay"] = 0,
+["last_event"] = 1722098572,
+},
+},
+},
+{
+["combatId"] = 358,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 358,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 358,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 358,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269169.848,
+["tempo_start"] = 1722098570,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+49,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:42:54",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269139.855,
+["CombatEndedAt"] = 2269139.855,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:42:50",
+["end_time"] = 2269140.742,
+["mapId"] = 0,
+["combat_id"] = 358,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 402,
+["totals_grupo"] = {
+49,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 49.006023,
+},
+},
+},
+["start_time"] = 2269136.724,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 357,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008443,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 47.008443,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 47.008443,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 47,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098537,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 47,
+},
+["n_total"] = 47,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 47,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.702087681811335,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 5.008443,
+["start_time"] = 1722098530,
+["delay"] = 0,
+["last_event"] = 1722098534,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.008194,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 5.008194,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 5.008194,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000024FE19",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 5,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098537,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 47.008194,
+["start_time"] = 1722098531,
+["delay"] = 0,
+["last_event"] = 1722098533,
+},
+},
+},
+{
+["combatId"] = 357,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 357,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 357,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 357,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269134.964,
+["tempo_start"] = 1722098530,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+52,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:42:17",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269102.131,
+["CombatEndedAt"] = 2269102.131,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:42:10",
+["end_time"] = 2269102.969,
+["mapId"] = 0,
+["combat_id"] = 357,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 401,
+["totals_grupo"] = {
+47,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 47.008443,
+},
+},
+},
+["start_time"] = 2269095.955,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 356,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007729,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 50.007729,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 50.007729,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 50,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098479,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 50,
+},
+["n_total"] = 50,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 50,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.9855688899472,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 4.007728999999999,
+["start_time"] = 1722098474,
+["delay"] = 0,
+["last_event"] = 1722098479,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.00577,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 4.00577,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 4.00577,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000024428B",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 4,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098479,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Battlenac"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 50.00577,
+["start_time"] = 1722098475,
+["delay"] = 0,
+["last_event"] = 1722098477,
+},
+},
+},
+{
+["combatId"] = 356,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 356,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 356,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 356,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269094.291,
+["tempo_start"] = 1722098474,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+54,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:41:20",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269046.171,
+["CombatEndedAt"] = 2269046.171,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:15",
+["end_time"] = 2269046.38,
+["mapId"] = 0,
+["combat_id"] = 356,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 400,
+["totals_grupo"] = {
+50,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 50.007729,
+},
+},
+},
+["start_time"] = 2269041.372,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 355,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007388,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 33.007388,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 33.007388,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+},
+["targets"] = {
+["Rockjaw Trogg"] = 33,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098465,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Rockjaw Trogg"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 16.47897553648042,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.007388,
+["start_time"] = 1722098463,
+["delay"] = 0,
+["last_event"] = 1722098464,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.007788,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.007788,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.007788,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-707-0000250022",
+["aID"] = "707",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098465,
+["nome"] = "Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 33.00778800000001,
+["start_time"] = 1722098465,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 355,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 355,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 355,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 355,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269039.689,
+["tempo_start"] = 1722098463,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+33,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:41:06",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2269031.512,
+["CombatEndedAt"] = 2269031.512,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:04",
+["end_time"] = 2269031.926,
+["mapId"] = 0,
+["combat_id"] = 355,
+["frags"] = {
+["Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 399,
+["totals_grupo"] = {
+33,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 33.007388,
+},
+},
+},
+["start_time"] = 2269029.923,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 354,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006888,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 51.006888,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 51.006888,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Burly Rockjaw Trogg"] = true,
+},
+["targets"] = {
+["Burly Rockjaw Trogg"] = 51,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098428,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Burly Rockjaw Trogg"] = 51,
+},
+["n_total"] = 51,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 51,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.262834685985381,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 7.006888,
+["start_time"] = 1722098422,
+["delay"] = 0,
+["last_event"] = 1722098426,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003229,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 7.003229,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 7.003229,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-724-000025217C",
+["aID"] = "724",
+["damage_from"] = {
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 7,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098428,
+["nome"] = "Burly Rockjaw Trogg",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 7,
+},
+["n_total"] = 7,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 7,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 51.00322900000001,
+["start_time"] = 1722098421,
+["delay"] = 0,
+["last_event"] = 1722098425,
+},
+},
+},
+{
+["combatId"] = 354,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 354,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 354,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 354,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2269028.23,
+["tempo_start"] = 1722098421,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Battlenac"] = {
+["Smite"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:40:28",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Burly Rockjaw Trogg",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2268994.254,
+["CombatEndedAt"] = 2268994.254,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:21",
+["end_time"] = 2268994.761,
+["mapId"] = 0,
+["combat_id"] = 354,
+["frags"] = {
+["Burly Rockjaw Trogg"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 398,
+["totals_grupo"] = {
+51,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Battlenac"] = 51.006888,
+},
+},
+},
+["start_time"] = 2268987.738,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 353,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006519,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 85.006519,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 85.006519,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Small Crag Boar"] = true,
+},
+["targets"] = {
+["Small Crag Boar"] = 85,
+},
+["colocacao"] = 1,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098409,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Small Crag Boar"] = 85,
+},
+["n_total"] = 85,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 85,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.413789479726335,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 9.006519,
+["start_time"] = 1722098400,
+["delay"] = 0,
+["last_event"] = 1722098407,
+},
+{
+["flag_original"] = 1298,
+["totalabsorbed"] = 0.007657,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 21.007657,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 21.007657,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-02984FD3",
+["damage_from"] = {
+["Small Crag Boar"] = true,
+},
+["targets"] = {
+["Small Crag Boar"] = 21,
+},
+["colocacao"] = 2,
+["aID"] = "5232-02984FD3",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[32] = 21,
+},
+["end_time"] = 1722098409,
+["nome"] = "Yum",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Small Crag Boar"] = 7,
+},
+["n_total"] = 7,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 7,
+["c_max"] = 0,
+["BLOCK"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Small Crag Boar"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 2.326429346675157,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 9.007657,
+["start_time"] = 1722098402,
+["delay"] = 0,
+["last_event"] = 1722098408,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003865,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 18.003865,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 18.003865,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-708-00002521F4",
+["aID"] = "708",
+["damage_from"] = {
+["Yum"] = true,
+["Battlenac"] = true,
+},
+["targets"] = {
+["Yum"] = 9,
+["Battlenac"] = 9,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098409,
+["nome"] = "Small Crag Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Yum"] = 9,
+["Battlenac"] = 9,
+},
+["n_total"] = 18,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 7,
+["total"] = 18,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 106.003865,
+["start_time"] = 1722098400,
+["delay"] = 0,
+["last_event"] = 1722098407,
+},
+},
+},
+{
+["combatId"] = 353,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 353,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 353,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 1298,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-02984FD3",
+["grupo"] = true,
+["aID"] = "5232-02984FD3",
+["nome"] = "Yum",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 353,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2268986.165,
+["tempo_start"] = 1722098400,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+124,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Yum"] = {
+["Smite"] = 1,
+},
+["Battlenac"] = {
+["Smite"] = 4,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:40:10",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Small Crag Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2268975.613,
+["CombatEndedAt"] = 2268975.613,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:01",
+["end_time"] = 2268976.124,
+["mapId"] = 0,
+["combat_id"] = 353,
+["frags"] = {
+["Small Crag Boar"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 397,
+["totals_grupo"] = {
+106,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Yum"] = 21.007657,
+["Battlenac"] = 85.006519,
+},
+},
+},
+["start_time"] = 2268967.094,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 352,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1298,
+["totalabsorbed"] = 0.00749,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 32.00749,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 32.00749,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-02984FD3",
+["damage_from"] = {
+},
+["targets"] = {
+["Small Crag Boar"] = 32,
+},
+["colocacao"] = 1,
+["aID"] = "5232-02984FD3",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[32] = 32,
+},
+["end_time"] = 1722098366,
+["nome"] = "Yum",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[585] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Small Crag Boar"] = 32,
+},
+["n_total"] = 32,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 32,
+["c_max"] = 0,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.378535272818255,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.00749,
+["start_time"] = 1722098363,
+["delay"] = 0,
+["last_event"] = 1722098365,
+},
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005262,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["total_without_pet"] = 28.005262,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 28.005262,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5232-029795CB",
+["damage_from"] = {
+["Small Crag Boar"] = true,
+},
+["targets"] = {
+["Small Crag Boar"] = 28,
+},
+["colocacao"] = 2,
+["aID"] = "5232-029795CB",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[32] = 28,
+},
+["end_time"] = 1722098366,
+["nome"] = "Battlenac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 2,
+["targets"] = {
+["Small Crag Boar"] = 4,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 2,
+["counter"] = 2,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[585] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Small Crag Boar"] = 24,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 24,
+["c_max"] = 24,
+["id"] = 585,
+["r_dmg"] = 0,
+["spellschool"] = 2,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 24,
+["successful_casted"] = 0,
+["c_total"] = 24,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 5.580960940439775,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 6.005262,
+["start_time"] = 1722098362,
+["delay"] = 0,
+["last_event"] = 1722098365,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.005875,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.005875,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.005875,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-38-708-0000252238",
+["aID"] = "708",
+["damage_from"] = {
+["Yum"] = true,
+["Battlenac"] = true,
+},
+["targets"] = {
+["Battlenac"] = 6,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1722098366,
+["nome"] = "Small Crag Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Battlenac"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 6,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 60.005875,
+["start_time"] = 1722098361,
+["delay"] = 0,
+["last_event"] = 1722098363,
+},
+},
+},
+{
+["combatId"] = 352,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 352,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 352,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1298,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-02984FD3",
+["grupo"] = true,
+["aID"] = "5232-02984FD3",
+["nome"] = "Yum",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "PRIEST",
+["serial"] = "Player-5232-029795CB",
+["grupo"] = true,
+["aID"] = "5232-029795CB",
+["nome"] = "Battlenac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 352,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Battlenac"] = "Player-5232-029795CB",
+},
+["CombatStartedAt"] = 2268967.094,
+["tempo_start"] = 1722098361,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+66,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Yum"] = {
+["Smite"] = 2,
+},
+["Battlenac"] = {
+["Smite"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:39:27",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Small Crag Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2268932.593,
+["CombatEndedAt"] = 2268932.593,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:39:22",
+["end_time"] = 2268933.257,
+["mapId"] = 0,
+["combat_id"] = 352,
+["frags"] = {
+["Small Crag Boar"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 396,
+["totals_grupo"] = {
+60,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Yum"] = 32.00749,
+["Battlenac"] = 28.005262,
+},
+},
+},
+["start_time"] = 2268928.239,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
 },
 },
 ["ocd_tracker"] = {
-["enabled"] = false,
+["show_title"] = true,
 ["current_cooldowns"] = {
 },
 ["lines_per_column"] = 12,
 ["group_frames"] = true,
-["width"] = 120,
+["show_options"] = false,
 ["frames"] = {
 ["defensive-raid"] = {
 },
@@ -28,12 +5729,12 @@ _detalhes_database = {
 ["defensive-personal"] = {
 },
 },
-["show_options"] = false,
+["width"] = 120,
 ["ignored_cooldowns"] = {
 },
+["framme_locked"] = false,
 ["cooldowns"] = {
 },
-["height"] = 18,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -41,12 +5742,12 @@ _detalhes_database = {
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["framme_locked"] = false,
+["height"] = 18,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["show_title"] = true,
+["enabled"] = false,
 ["filters"] = {
 ["itemutil"] = false,
 ["itempower"] = false,
@@ -82,10 +5783,10 @@ _detalhes_database = {
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["name"] = "Damage of Each Individual Player",
-["playerOnly"] = true,
 ["playerKey"] = "total",
 ["combatObjectContainer"] = 1,
+["name"] = "Damage of Each Individual Player",
+["playerOnly"] = true,
 },
 },
 ["totals"] = {
@@ -109,15 +5810,86 @@ _detalhes_database = {
 ["ignore_nicktag"] = false,
 ["combat_log"] = {
 ["inverse_deathlog_overalldata"] = false,
-["track_hunter_frenzy"] = false,
 ["merge_gemstones_1007"] = false,
+["track_hunter_frenzy"] = false,
 ["merge_critical_heals"] = false,
 ["inverse_deathlog_raid"] = false,
 ["calc_evoker_damage"] = true,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["last_day"] = "27",
+["local_instances_config"] = {
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+[3] = 2,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 1,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -1101.599021911621,
+["w"] = 234.8974151611328,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+1,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 2,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -869.6630859375,
+["w"] = 228.9744262695313,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+},
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
@@ -131,13 +5903,13 @@ _detalhes_database = {
 },
 ["usefocus"] = false,
 ["updatespeed"] = 1,
-["disable_gouge"] = false,
+["useclasscolors"] = false,
 ["showamount"] = false,
 ["useplayercolor"] = false,
 ["absolute_mode"] = false,
 ["playSound"] = false,
 ["playSoundFile"] = "Details Threat Warning Volume 3",
-["useclasscolors"] = false,
+["disable_gouge"] = false,
 },
 ["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 ["enabled"] = true,
@@ -160,39 +5932,27 @@ _detalhes_database = {
 1,
 0.5,
 },
-["use_square_mode"] = false,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
 ["arrow_anchor_y"] = 0,
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
 ["hide"] = true,
 },
-["row_height"] = 18,
+["main_frame_locked"] = true,
 ["arrow_anchor_x"] = 0,
-["point"] = "RIGHT",
+["scale"] = 1,
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["author"] = "Details! Team",
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
+["use_spark"] = false,
+["main_frame_strata"] = "LOW",
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
+["y"] = -183.107162475586,
 ["row_spacement"] = 19,
 ["main_frame_color"] = {
 0,
@@ -200,23 +5960,38 @@ _detalhes_database = {
 0,
 0,
 },
-["main_frame_strata"] = "LOW",
+["author"] = "Details! Team",
 ["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
 ["font_size"] = 10,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["attribute_type"] = 1,
+["update_speed"] = 0.05,
+["size"] = 32,
+},
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["use_spark"] = false,
-["scale"] = 1,
-["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["point"] = "RIGHT",
+["row_height"] = 18,
+["use_square_mode"] = false,
 },
 },
-},
-["mythic_plus_log"] = {
+["last_day"] = "27",
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["data_harvested_for_charts"] = {
 },
@@ -231,22 +6006,18 @@ _detalhes_database = {
 ["dungeon_zone_id"] = 0,
 ["previous_boss_killed_at"] = 0,
 },
-["cached_roles"] = {
+["character_data"] = {
+["logons"] = 28,
 },
-["cached_talents"] = {
-},
-["benchmark_db"] = {
-["frame"] = {
-},
-},
+["force_font_outline"] = "",
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
 },
-["combat_id"] = 317,
+["combat_id"] = 369,
 ["savedStyles"] = {
 {
-["show_statusbar"] = false,
+["hide_in_combat_type"] = 1,
 ["clickthrough_window"] = false,
 ["titlebar_shown"] = false,
 ["menu_anchor"] = {
@@ -264,7 +6035,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["micro_displays_locked"] = false,
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -276,42 +6047,30 @@ _detalhes_database = {
 1,
 },
 ["clickthrough_toolbaricons"] = false,
-["attribute_text"] = {
-["enabled"] = true,
-["shadow"] = false,
-["side"] = 1,
-["text_color"] = {
-1,
-1,
-1,
-1,
-},
-["custom_text"] = "{name}",
-["text_face"] = "Arial Narrow",
-["anchor"] = {
-56,
-3,
-},
-["text_size"] = 12,
-["enable_custom_text"] = false,
-["show_timer"] = false,
-},
+["clickthrough_rows"] = false,
 ["titlebar_texture"] = "xVerminClean",
-["ignore_mass_showhide"] = false,
-["fontstrings_text_limit_offset"] = -10,
+["switch_tank"] = {
+1,
+1,
+1,
+},
+["switch_all_roles_after_wipe"] = {
+1,
+1,
+1,
+},
 ["icon_desaturated"] = false,
 ["desaturated_menu"] = false,
-["show_sidebars"] = false,
+["micro_displays_side"] = 2,
 ["window_scale"] = 1,
 ["hide_icon"] = true,
 ["toolbar_side"] = 1,
 ["bg_g"] = 0.1333333333333333,
 ["menu_icons_alpha"] = 0.92,
 ["bg_b"] = 0.1333333333333333,
-["rowareaborder_color"] = {
-0,
-0,
-0,
+["switch_healer_in_combat"] = {
+1,
+1,
 1,
 },
 ["color"] = {
@@ -399,12 +6158,12 @@ _detalhes_database = {
 },
 ["skin"] = "Minimalistic",
 ["following"] = {
-["enabled"] = false,
 ["bar_color"] = {
 1,
 1,
 1,
 },
+["enabled"] = false,
 ["text_color"] = {
 1,
 1,
@@ -443,14 +6202,14 @@ false,
 1,
 },
 },
-["micro_displays_side"] = 2,
-["bg_alpha"] = 0,
+["show_sidebars"] = false,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["name"] = "vermin",
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -461,7 +6220,26 @@ false,
 ["onenter"] = 1,
 },
 ["fullborder_shown"] = false,
-["clickthrough_rows"] = false,
+["attribute_text"] = {
+["show_timer"] = false,
+["shadow"] = false,
+["side"] = 1,
+["text_color"] = {
+1,
+1,
+1,
+1,
+},
+["custom_text"] = "{name}",
+["text_face"] = "Arial Narrow",
+["anchor"] = {
+56,
+3,
+},
+["text_size"] = 12,
+["enable_custom_text"] = false,
+["enabled"] = true,
+},
 ["rowareaborder_shown"] = false,
 ["rowareaborder_size"] = 0.5,
 ["clickthrough_incombatonly"] = false,
@@ -473,7 +6251,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["skin_custom"] = "vermin",
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -489,45 +6267,49 @@ false,
 0.07058823529411765,
 },
 },
-["bars_grow_direction"] = 1,
 ["row_show_animation"] = {
 ["anim"] = "Fade",
 ["options"] = {
 },
+},
+["menu_anchor_down"] = {
+16,
+-3,
 },
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
 ["right"] = true,
 },
-["hide_in_combat_type"] = 1,
+["show_statusbar"] = false,
 ["switch_damager_in_combat"] = {
 1,
 1,
 1,
 },
-["switch_healer_in_combat"] = {
-1,
-1,
+["rowareaborder_color"] = {
+0,
+0,
+0,
 1,
 },
-["menu_anchor_down"] = {
-16,
--3,
-},
+["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["bars_sort_direction"] = 1,
+["skin_custom"] = "vermin",
+["switch_damager"] = {
+1,
+1,
+1,
+},
+["bg_alpha"] = 0,
+["hide_in_combat"] = false,
 ["row_info"] = {
-["show_arena_role_icon"] = false,
+["textR_outline"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 ["textL_outline"] = false,
-["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-["textR_show_data"] = {
-true,
-true,
-false,
-},
-["percent_type"] = 1,
+["textR_outline_small"] = true,
+["textL_outline_small"] = true,
+["textL_enable_custom_text"] = false,
 ["fixed_text_color"] = {
 1,
 1,
@@ -539,12 +6321,7 @@ false,
 ["between"] = 1,
 },
 ["texture_background_class_color"] = false,
-["textL_outline_small_color"] = {
-0,
-0,
-0,
-1,
-},
+["start_after_icon"] = true,
 ["font_face_file"] = "Fonts\\ARIALN.TTF",
 ["faction_icon_size_offset"] = -10,
 ["backdrop"] = {
@@ -558,6 +6335,8 @@ false,
 ["enabled"] = false,
 ["texture"] = "ThreatPlatesBorder",
 },
+["font_size"] = 11,
+["textL_custom_text"] = "{data1}. {data3}{data2}",
 ["models"] = {
 ["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 ["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -566,13 +6345,16 @@ false,
 ["lower_alpha"] = 0.1,
 ["upper_enabled"] = false,
 },
-["textL_custom_text"] = "{data1}. {data3}{data2}",
-["font_size"] = 11,
 ["textL_translit_text"] = false,
-["height"] = 19,
+["texture_custom_file"] = "Interface\\",
 ["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 ["icon_size_offset"] = 0,
-["start_after_icon"] = true,
+["textL_outline_small_color"] = {
+0,
+0,
+0,
+1,
+},
 ["show_faction_icon"] = true,
 ["overlay_color"] = {
 0.7,
@@ -580,14 +6362,18 @@ false,
 0.7,
 0,
 },
-["textL_outline_small"] = true,
-["textR_outline_small"] = true,
-["arena_role_icon_size_offset"] = -10,
+["textR_show_data"] = {
+true,
+true,
+false,
+},
+["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+["icon_file"] = "",
 ["icon_grayscale"] = false,
-["textR_bracket"] = "(",
 ["use_spec_icons"] = false,
+["textR_bracket"] = "(",
 ["texture_custom"] = "",
-["textR_outline"] = false,
+["show_arena_role_icon"] = false,
 ["fixed_texture_color"] = {
 0,
 0,
@@ -621,33 +6407,23 @@ false,
 0,
 0,
 },
-["icon_file"] = "",
+["arena_role_icon_size_offset"] = -10,
 ["font_face"] = "Arial Narrow",
 ["texture_class_colors"] = true,
-["textL_enable_custom_text"] = false,
+["percent_type"] = 1,
 ["fast_ps_update"] = false,
 ["textR_separator"] = "NONE",
-["texture_custom_file"] = "Interface\\",
+["height"] = 19,
 },
-["version"] = 3,
-["hide_in_combat"] = false,
-["switch_damager"] = {
-1,
-1,
-1,
-},
-["switch_tank"] = {
-1,
-1,
-1,
-},
-["switch_all_roles_after_wipe"] = {
-1,
-1,
-1,
-},
+["ignore_mass_showhide"] = false,
+["fontstrings_text_limit_offset"] = -10,
 ["wallpaper"] = {
-["enabled"] = false,
+["overlay"] = {
+1,
+1,
+1,
+1,
+},
 ["alpha"] = 0.5,
 ["width"] = 283.000183105469,
 ["texcoord"] = {
@@ -659,12 +6435,7 @@ false,
 ["height"] = 114.042518615723,
 ["anchor"] = "all",
 ["level"] = 2,
-["overlay"] = {
-1,
-1,
-1,
-1,
-},
+["enabled"] = false,
 ["texture"] = "Interface\\AddOns\\Details\\images\\background",
 },
 ["stretch_button_side"] = 2,
@@ -684,7 +6455,7 @@ false,
 ["channel"] = "SELF",
 ["reverse"] = false,
 },
-["combat_counter"] = 358,
+["combat_counter"] = 413,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -719,7 +6490,7 @@ false,
 },
 ["raid_roster"] = {
 },
-["tempo_start"] = 2267805.589,
+["tempo_start"] = 1722097509,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
@@ -812,88 +6583,20 @@ false,
 ["start_time"] = 0,
 ["TimeData"] = {
 },
-["combat_counter"] = 357,
+["combat_counter"] = 361,
 },
-["force_font_outline"] = "",
-["local_instances_config"] = {
-{
-["modo"] = 2,
-["sub_attribute"] = 1,
-["horizontalSnap"] = true,
-["verticalSnap"] = false,
-["isLocked"] = true,
-["is_open"] = true,
-["sub_atributo_last"] = {
-1,
-1,
-1,
-1,
-1,
-},
-["snap"] = {
-[3] = 2,
-},
-["segment"] = 0,
-["mode"] = 2,
-["attribute"] = 1,
-["pos"] = {
-["normal"] = {
-["y"] = 596.4414672851562,
-["x"] = -1101.599021911621,
-["w"] = 234.8974151611328,
-["h"] = 138.5456237792969,
-},
-["solo"] = {
-["y"] = 2,
-["x"] = 1,
-["w"] = 300,
-["h"] = 200,
+["benchmark_db"] = {
+["frame"] = {
 },
 },
+["cached_talents"] = {
 },
-{
-["modo"] = 2,
-["sub_attribute"] = 1,
-["horizontalSnap"] = true,
-["verticalSnap"] = false,
-["isLocked"] = true,
-["is_open"] = true,
-["sub_atributo_last"] = {
-1,
-1,
-1,
-1,
-1,
-},
-["snap"] = {
-1,
-},
-["segment"] = 0,
-["mode"] = 2,
-["attribute"] = 2,
-["pos"] = {
-["normal"] = {
-["y"] = 596.4414672851562,
-["x"] = -869.6630859375,
-["w"] = 228.9744262695313,
-["h"] = 138.5456237792969,
-},
-["solo"] = {
-["y"] = 2,
-["x"] = 1,
-["w"] = 300,
-["h"] = 200,
-},
-},
-},
-},
-["character_data"] = {
-["logons"] = 27,
+["mythic_plus_log"] = {
 },
 ["announce_cooldowns"] = {
-["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
+["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -901,9 +6604,7 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["cached_roles"] = {
 },
 ["cached_specs"] = {
 },
