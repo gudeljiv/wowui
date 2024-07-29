@@ -15,11 +15,11 @@ Postal3DB = {
 "Dopedot|Lone Wolf|Horde|25|WARLOCK",
 "Dopemend|Lone Wolf|Horde|12|PRIEST",
 "Dopenac|Lone Wolf|Horde|16|PRIEST",
-"Doperage|Lone Wolf|Horde|35|WARRIOR",
+"Doperage|Lone Wolf|Horde|36|WARRIOR",
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Lone Wolf|Horde|48|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopestab|Lone Wolf|Horde|40|ROGUE",
+"Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Lone Wolf|Horde|1|HUNTER",
 "Jutarnjedrvo|Lone Wolf|Horde|50|SHAMAN",
 "Lonac|Stitches|Horde|1|WARRIOR",
@@ -145,8 +145,8 @@ Postal3DB = {
 ["Doperage - Lone Wolf"] = {
 ["BlackBook"] = {
 ["recent"] = {
-"Dopestab|Lone Wolf|Horde",
 "Dopemend|Lone Wolf|Horde",
+"Dopestab|Lone Wolf|Horde",
 "Dopedot|Lone Wolf|Horde",
 "Dopesnare|Lone Wolf|Horde",
 },

@@ -1,13 +1,13 @@
+VER 3 000000000100001C " " "134400"
+#showtooltip Thunder Clap
+/cast [nostance:1,nocombat] Battle Stance;
+/cast Thunder Clap
+END
 VER 3 000000000100001B " " "132147"
 #showtooltip ""
 /equipslot [noworn:shield]16 The Butcher
 /equipslot [noworn:shield]17 Shield of Thorsen
 /equipslot [worn:shield]16 Killmaim
-END
-VER 3 000000000100001C " " "134400"
-#showtooltip Thunder Clap
-/cast [nostance:1,nocombat] Battle Stance;
-/cast Thunder Clap
 END
 VER 3 0000000001000022 "attack" "Inv_misc_questionmark"
 #showtooltip

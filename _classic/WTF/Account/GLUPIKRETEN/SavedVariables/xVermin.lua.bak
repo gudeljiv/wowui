@@ -278,9 +278,9 @@ xVerminSavedData = {
 ["Unfettered Spirit"] = {
 "Deep Wound",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
@@ -292,9 +292,9 @@ xVerminSavedData = {
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
 },
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Ironspine"] = {
 "Rend",
