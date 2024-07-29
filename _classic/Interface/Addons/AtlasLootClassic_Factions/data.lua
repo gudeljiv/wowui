@@ -480,8 +480,7 @@ data["HydraxianWaterlords"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f749rep8" },
 				{ 2, "INV_Box_01", nil, AL["SoD Exclusive"], nil },
-				{ 3, 227926}, -- Hydraxian Coronation
-				{ 4, 227915}, -- Duke's Domain
+				{ 3, 227915}, -- Duke's Domain
 			},
 		},
 		{ -- Revered
@@ -500,6 +499,7 @@ data["HydraxianWaterlords"] = {
 			[NORMAL_DIFF] = {
 				{ 1, "f749rep6" },
 				{ 2, 17333 }, -- Aqual Quintessence
+				{ 3, 227926}, -- Hydraxian Coronation
 			},
 		},
 	},

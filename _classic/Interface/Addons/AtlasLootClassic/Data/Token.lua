@@ -531,6 +531,21 @@ TOKEN_DATA.CLASSIC = {
 	[228296] = { 228511, type = 9 }, -- Perdition's  Blade (Molten)
 	[228299] = { 228460, type = 9 }, -- Spinal Reaper (Molten)
 	[228288] = { 228461, type = 9 }, -- Bonereaver's Edge (Molten)
+	[228263] = { 229376, type = 9 }, -- Sorcerous Dagger (Molten)
+	[228229] = { 228459, type = 9 }, -- Obsidian Edged Blade (Molten)
+	[228146] = { 229377, type = 9 }, -- Magmadar's Left Claw (Molten)
+	[228350] = { 229379, type = 9 }, -- Eskhandar's Right Claw (Molten)
+	[228267] = { 229372, type = 9 }, -- Gutgore Ripper (Molten)
+	[228160] = { 229373, type = 9 }, -- Faithbringer (Molten)
+	[228139] = { 229374, type = 9 }, -- Fist of the Firesworn (Molten)
+	[228272] = { 229380, type = 9 }, -- Shadowstrike (Molten)
+	[228128] = { 228508, type = 9 }, -- Hammer of the Black Anvil (Molten)
+	[228129] = { 228143, type = 9 }, -- Shadowflame Skull
+	[228264] = { 228462, type = 9 }, -- Aurastone Hammer (Molten)
+	[228265] = { 228506, type = 9 }, -- Brutality Blade (Molten)
+	[228248] = { 228463, type = 9 }, -- Earthshaker (Molten)
+	[228252] = { 228519, type = 9 }, -- Striker's Mark (Molten)
+	[228269] = { 228517, type = 9 }, -- Azuresong Mageblade (Molten)
 	[227536] = {ICONS.MAGE, 226557, 226568, 0,ICONS.PRIEST, 226571, 226586, 0, ICONS.WARLOCK, 226554,216918, type = 5}, -- Incandescent Boots
 	[227765] = {ICONS.DRUID, 226645, 226652, 226663, 226673, 0, ICONS.WARRIOR, 226487, 226496, 0, ICONS.ROGUE, 226443, 226477, type = 5}, -- Scorched Core Boots
 	[227763] = {ICONS.DRUID, 226646, 226651, 226666, 226671, 0, ICONS.WARRIOR, 226490, 226493, 0, ICONS.ROGUE, 226445, 226479, type = 5}, -- Scorched Core Leggings

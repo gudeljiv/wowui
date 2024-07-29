@@ -50,7 +50,7 @@ data = {
     "warrior": {
         "main": [
             {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "1", "modifier": "lshift"},
-            {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "1", "modifier": "lshift"},
+            {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "7"},
             {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "3", "modifier": "lshift"},
             {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "3", "modifier": "lshift"},
             {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "4", "modifier": "lshift"},

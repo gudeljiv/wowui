@@ -11,6 +11,7 @@ OmniCCDB = {
 ["Dopemend - Lone Wolf"] = "Default",
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Mxzq - Golemagg"] = "Default",

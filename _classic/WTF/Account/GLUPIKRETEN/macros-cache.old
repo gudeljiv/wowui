@@ -11,11 +11,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:159
+/cast item:0
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:961
+/cast item:117
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -74,8 +74,7 @@ VER 3 000000000000002A "rune w" "134400"
 /use Waist Rune Ability
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Grelin Whitebeard
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip

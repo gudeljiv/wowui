@@ -182,6 +182,9 @@ xVerminSavedData = {
 "Intimidation",
 "Starfire Stun",
 },
+["Entropic Beast"] = {
+"Lava Lash",
+},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -190,8 +193,8 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Entropic Beast"] = {
-"Lava Lash",
+["Constrictor Vine"] = {
+"Earthbind",
 },
 ["Larsera"] = {
 "Serpent Sting",
@@ -205,19 +208,20 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Constrictor Vine"] = {
-"Earthbind",
-},
-["Sea Spray"] = {
-"Frost Shock",
-},
 ["Arclector"] = {
 "Firebolt",
 "Shadowburn",
 },
+["Sea Spray"] = {
+"Frost Shock",
+},
 ["Bristleback Geomancer"] = {
 "Firebolt",
 "Incinerate",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
 },
 ["Gahz'rilla"] = {
 "Impact",
@@ -236,9 +240,9 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
+["Dianastalion"] = {
+"Stormstrike",
+"Mutilate",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",
@@ -268,9 +272,8 @@ xVerminSavedData = {
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
 },
-["Dianastalion"] = {
-"Stormstrike",
-"Mutilate",
+["Ironspine"] = {
+"Rend",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -280,21 +283,14 @@ xVerminSavedData = {
 "Charge Stun",
 "Impact",
 },
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
+["Scarlet Chaplain"] = {
+"Weakened Soul",
 },
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
 ["Whirlwind Ripper"] = {
 "Lightning Shield",
-"Serpent Sting",
-},
-["Scarlet Chaplain"] = {
-"Weakened Soul",
-},
-["Rock Elemental"] = {
 "Serpent Sting",
 },
 ["Theradrim Guardian"] = {
@@ -307,9 +303,15 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
+["Rock Elemental"] = {
+"Serpent Sting",
+},
 ["Burning Destroyer"] = {
 "Lava Lash",
 "Serpent Sting",
+},
+["Jazzter"] = {
+"Fireball",
 },
 ["Razorlash"] = {
 "Blackout",
@@ -376,9 +378,6 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Klaxxi"] = {
 "Big Bronze Bomb",
 "Flanking Strike",
@@ -387,6 +386,9 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
+["Sea Elemental"] = {
+"Frost Shock",
+},
 ["Agathelos the Raging"] = {
 "Charge Stun",
 "Entrapment",
@@ -394,8 +396,9 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
-["Ironspine"] = {
-"Rend",
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
 },
 ["Unfettered Spirit"] = {
 "Deep Wound",

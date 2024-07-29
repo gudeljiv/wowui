@@ -48,6 +48,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 ["Pitchwise - Golemagg"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Dotwise - Golemagg"] = "Default",

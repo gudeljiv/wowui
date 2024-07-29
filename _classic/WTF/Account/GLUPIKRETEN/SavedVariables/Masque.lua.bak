@@ -34,13 +34,14 @@ MasqueDB = {
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Vermin - Golemagg"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
+["Tadibey - Golemagg"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Dopesnare - Lone Wolf"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 ["Dopeah - Stitches"] = "Default",
 ["Dopeclaw - Stitches"] = "Default",
-["Tadibey - Golemagg"] = "Default",
 ["Dopeclaw - Lone Wolf"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {

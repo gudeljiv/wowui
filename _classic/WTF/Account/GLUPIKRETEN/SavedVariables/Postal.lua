@@ -11,6 +11,7 @@ Postal3DB = {
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
 ["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
@@ -39,7 +40,7 @@ Postal3DB = {
 "Dopedot|Lone Wolf|Horde|25|WARLOCK",
 "Dopemend|Lone Wolf|Horde|12|PRIEST",
 "Dopenac|Lone Wolf|Horde|16|PRIEST",
-"Doperage|Lone Wolf|Horde|33|WARRIOR",
+"Doperage|Lone Wolf|Horde|35|WARRIOR",
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Lone Wolf|Horde|48|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
@@ -49,6 +50,7 @@ Postal3DB = {
 "Lonac|Stitches|Horde|1|WARRIOR",
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vermins|Stitches|Horde|26|WARRIOR",
+"Vermin|Zandalar Tribe|Alliance|1|WARRIOR",
 },
 },
 },
@@ -110,6 +112,8 @@ Postal3DB = {
 },
 },
 },
+["Vermin - Zandalar Tribe"] = {
+},
 ["Dopedot - Lone Wolf"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
@@ -141,6 +145,8 @@ Postal3DB = {
 ["Doperage - Lone Wolf"] = {
 ["BlackBook"] = {
 ["recent"] = {
+"Dopestab|Lone Wolf|Horde",
+"Dopemend|Lone Wolf|Horde",
 "Dopedot|Lone Wolf|Horde",
 "Dopesnare|Lone Wolf|Horde",
 },

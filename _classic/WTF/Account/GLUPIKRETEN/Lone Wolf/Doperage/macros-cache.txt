@@ -25,10 +25,6 @@ VER 3 000000000100001A "defs" "134400"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 000000000100001F "dummy" "134400"
-#showtooltip
-/cast [@player] Target Dummy
-END
 VER 3 000000000100000E "fury" "134400"
 #showtooltip
 /use Blood Fury

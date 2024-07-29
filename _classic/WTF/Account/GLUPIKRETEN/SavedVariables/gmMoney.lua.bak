@@ -34,15 +34,15 @@ GMMONEY = {
 ["CLASS"] = "MAGE",
 },
 ["Dopemend"] = {
-["GOLD"] = 1010934,
+["GOLD"] = 1226570,
 ["CLASS"] = "PRIEST",
 },
 ["Dopestab"] = {
-["GOLD"] = 1576900,
+["GOLD"] = 1644558,
 ["CLASS"] = "ROGUE",
 },
 ["Doperage"] = {
-["GOLD"] = 140538,
+["GOLD"] = 72087,
 ["CLASS"] = "WARRIOR",
 },
 },
@@ -154,6 +154,10 @@ GMMONEY = {
 ["Battlenac"] = {
 ["GOLD"] = 98,
 ["CLASS"] = "PRIEST",
+},
+["Vermin"] = {
+["GOLD"] = 0,
+["CLASS"] = "WARRIOR",
 },
 },
 }

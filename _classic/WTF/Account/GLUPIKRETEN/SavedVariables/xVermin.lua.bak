@@ -205,6 +205,9 @@ xVerminSavedData = {
 "Pounce",
 "Starfire Stun",
 },
+["Entropic Beast"] = {
+"Lava Lash",
+},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -213,8 +216,8 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Entropic Beast"] = {
-"Lava Lash",
+["Constrictor Vine"] = {
+"Earthbind",
 },
 ["Larsera"] = {
 "Serpent Sting",
@@ -228,20 +231,21 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Constrictor Vine"] = {
-"Earthbind",
-},
-["Sea Spray"] = {
-"Frost Shock",
-},
 ["High Inquisitor Whitemane"] = {
 "Intercept Stun",
 "Intimidation",
 "Crippling Poison",
 },
+["Sea Spray"] = {
+"Frost Shock",
+},
 ["Bristleback Geomancer"] = {
 "Firebolt",
 "Incinerate",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
 },
 ["Gahz'rilla"] = {
 "Impact",
@@ -260,10 +264,6 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
 ["Princess Theradras"] = {
 "Lightning Shield",
 "Instant Poison IV",
@@ -278,6 +278,10 @@ xVerminSavedData = {
 ["Unfettered Spirit"] = {
 "Deep Wound",
 },
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
+},
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
@@ -288,9 +292,9 @@ xVerminSavedData = {
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
 },
 ["Ironspine"] = {
 "Rend",
@@ -299,9 +303,8 @@ xVerminSavedData = {
 "Charge Stun",
 "Impact",
 },
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
+["Scarlet Chaplain"] = {
+"Weakened Soul",
 },
 ["Enraged Stone Spirit"] = {
 "Rend",
@@ -310,11 +313,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Scarlet Chaplain"] = {
-"Weakened Soul",
-},
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Klaxxi"] = {
 "Big Bronze Bomb",
@@ -324,8 +327,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Jazzter"] = {
+"Fireball",
 },
 ["Razorlash"] = {
 "Blackout",
@@ -413,10 +416,6 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
-["Dianastalion"] = {
-"Stormstrike",
-"Mutilate",
-},
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
@@ -434,6 +433,10 @@ xVerminSavedData = {
 "Lightning Shield",
 "Living Bomb",
 "Molten Blast",
+},
+["Dianastalion"] = {
+"Stormstrike",
+"Mutilate",
 },
 ["Theradrim Shardling"] = {
 "Chain Lightning",

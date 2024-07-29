@@ -48,6 +48,7 @@ AtlasLootClassicDB = {
 ["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Korupcija - Stonespine"] = "Korupcija - Stonespine",
 ["Mxys - Golemagg"] = "Default",
 ["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
@@ -62,8 +63,8 @@ AtlasLootClassicDB = {
 ["Koloman - Golemagg"] = "Default",
 ["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Battlearm - Gehennas"] = "Battlearm - Gehennas",
-["Provokator - Jin'do"] = "xVermin",
 ["Battlearm - Hydraxian Waterlords"] = "Default",
+["Provokator - Jin'do"] = "xVermin",
 ["Grgur - Golemagg"] = "Default",
 ["Jaroslav - Golemagg"] = "Default",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -620,7 +621,7 @@ AtlasLootClassicDB = {
 [34033] = "honor:4275",
 [35088] = "honor:9500",
 [45830] = "EmblemOfConquest:28",
-[41290] = "EmblemOfHeroism:30",
+[35152] = "honor:7600",
 [28861] = "honor:3800",
 [45838] = "EmblemOfConquest:28",
 [31962] = "honor:6650",
@@ -891,14 +892,14 @@ AtlasLootClassicDB = {
 [40747] = "EmblemOfValor:40",
 [40691] = "EmblemOfHeroism:40",
 [40723] = "EmblemOfValor:25",
-[40267] = "EmblemOfValor:25",
-[35152] = "honor:7600",
+[34129] = "honor:16650",
+[41290] = "EmblemOfHeroism:30",
 [40819] = "EmblemOfValor:45",
 [33690] = "honor:6840",
 [28130] = "honor:4750",
 [33754] = "honor:8550",
 [45829] = "EmblemOfConquest:28",
-[34129] = "honor:16650",
+[40267] = "EmblemOfValor:25",
 [28443] = "honor:3800",
 [42066] = "honor:33180",
 [32814] = "honor:3990",
@@ -1462,6 +1463,10 @@ nil,
 },
 },
 ["Dopemend - Lone Wolf"] = {
+["minimap"] = {
+["shown"] = false,
+["hide"] = true,
+},
 ["GUI"] = {
 ["selected"] = {
 nil,
@@ -1470,10 +1475,6 @@ nil,
 1,
 0,
 },
-},
-["minimap"] = {
-["shown"] = false,
-["hide"] = true,
 },
 },
 ["Konac - Dreadnaught"] = {
@@ -1534,6 +1535,12 @@ nil,
 ["hide"] = true,
 },
 },
+["Vermin - Zandalar Tribe"] = {
+["minimap"] = {
+["shown"] = false,
+["hide"] = true,
+},
+},
 ["Whatevs - Stonespine"] = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
@@ -1564,26 +1571,10 @@ nil,
 ["hide"] = true,
 },
 },
-["Doperage - Lone Wolf"] = {
+["Dopetrap - Lone Wolf"] = {
 ["minimap"] = {
 ["shown"] = false,
 ["hide"] = true,
-},
-["GUI"] = {
-["point"] = {
-nil,
-nil,
-"CENTER",
--178.41259765625,
-58.412841796875,
-},
-["selected"] = {
-nil,
-"RazorfenKraul",
-8,
-1,
-0,
-},
 },
 },
 ["Nitwit - Dreadnaught"] = {
@@ -1719,13 +1710,13 @@ nil,
 },
 ["Vermins - Stonespine"] = {
 },
+["Battlearm - Hydraxian Waterlords"] = {
+},
 ["Provokator - Jin'do"] = {
 ["minimap"] = {
 ["shown"] = false,
 ["hide"] = true,
 },
-},
-["Battlearm - Hydraxian Waterlords"] = {
 },
 ["xVermin"] = {
 ["GUI"] = {
@@ -1867,7 +1858,23 @@ nil,
 },
 ["Elohssa - Stonespine"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Doperage - Lone Wolf"] = {
+["GUI"] = {
+["point"] = {
+nil,
+nil,
+"CENTER",
+-178.41259765625,
+58.412841796875,
+},
+["selected"] = {
+nil,
+"RazorfenKraul",
+8,
+1,
+0,
+},
+},
 ["minimap"] = {
 ["shown"] = false,
 ["hide"] = true,

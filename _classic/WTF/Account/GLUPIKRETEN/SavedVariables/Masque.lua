@@ -32,6 +32,7 @@ MasqueDB = {
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Battlearm - Gehennas"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 ["Dopeclaw - Lone Wolf"] = "Default",
 ["Tadibey - Golemagg"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",

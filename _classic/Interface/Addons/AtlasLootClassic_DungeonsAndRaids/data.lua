@@ -8288,13 +8288,9 @@ data["MoltenCore2"] = {
 			DisplayIDs = {{13031},{12030}},
 			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
-				{ 1, 227536 },	-- Incandescent Boots
-				{ 2, 227765 },	-- Scorched Core Boots
-				{ 3, 227757 },	-- Molten Scaled Boots
-				{ 4, 227533 },	-- Incandescent Gloves
-				{ 5, 227759 },	-- Scorched Core Gloves
-				{ 14, "INV_Box_01", nil, AL["*Drops are not confirmed*"], nil },
-				{ 15, "INV_Box_01", nil, AL["*Token drops are Estimates*"], nil },
+				{ 1, 227533 },	-- Incandescent Gloves
+				{ 2, 227759 },	-- Scorched Core Gloves
+				{ 3, 227756 },	-- Molten Scaled Gloves
 				{ 16, 228285 },	-- Helm of the Lifegiver
 				{ 17, 228247 },	-- Choker of Enlightenment
 				{ 18, 228239 },	-- Robe of Volatile Power
@@ -8306,6 +8302,7 @@ data["MoltenCore2"] = {
 				{ 24, 228243},	-- Ring of Spell Power
 				{ 25, 228262 },	-- Crimson Shocker
 				{ 26, 228263 },	-- Sorcerous Dagger
+				{ 27, 228127 },	-- Wristguards of Instability
 				{ 30, 16665 },	-- Tome of Tranquilizing Shot
 			},
 		},
@@ -8319,7 +8316,8 @@ data["MoltenCore2"] = {
 				{ 1, 227763 },	-- Scorched Core Leggings
 				{ 2, 227534 },	-- Incandescent Leggings
 				{ 3, 227754 },	-- Molten Scaled Leggings
-				{ 11, 228146 },	-- Eskhandar's Right Claw (Magmadar's Left Claw)
+				{ 5, 228146 },	-- Magmadar's Left Claw
+				{ 6, 228101 },	-- Hide of the Behemoth
 				{ 16, 228249 },	-- Medallion of Steadfast Might
 				{ 17, 228258 },	-- Deep Earth Spaulders
 				{ 18, 228257 },	-- Aged Core Leather Gloves
@@ -8346,8 +8344,7 @@ data["MoltenCore2"] = {
 				{ 1, 227765 },	-- Scorched Core Boots
 				{ 2, 227757 },	-- Molten Scaled Boots
 				{ 3, 227533 },	-- Incandescent Gloves
-				{ 4, 227759 },	-- Scorched Core Gloves
-				{ 5, 227756 },	-- Molten Scaled Gloves
+				{ 5, 228350 },	-- Eskhandar's Right Claw
    				{ 16, 228285 },	-- Helm of the Lifegiver
 				{ 17, 228239 },	-- Robe of Volatile Power
 				{ 18, 228246 },	-- Wristguards of Stability
@@ -8358,6 +8355,7 @@ data["MoltenCore2"] = {
 				{ 23, 228243 },	-- Ring of Spell Power
 				{ 24, 228262 },	-- Crimson Shocker
 				{ 25, 228263 },	-- Sorcerous Dagger
+				{ 26, 228127 },	-- Wristguards of Instability
 			},
 		},
 		{	--MCGarr
@@ -8370,6 +8368,9 @@ data["MoltenCore2"] = {
 				{ 1, 227532 },	-- Incandescent Hood
 				{ 2, 227764 },	-- Scorched Core Helm
 				{ 3, 227755 },	-- Molten Scaled Helm
+				{ 5, 228139 },	-- Fist of the Firesworn
+				{ 6, 228142 },	-- Earth and Fire
+				{ 7, 228160 },	-- Faithbringer
 				{ 16, 228258 },	-- Deep Earth Spaulders
 				{ 17, 228257 },	-- Aged Core Leather Gloves
 				{ 18, 228260 },	-- Flameguard Gauntlets
@@ -8394,11 +8395,9 @@ data["MoltenCore2"] = {
 			DisplayIDs = {{13032}},
 			AtlasMapBossID = 5,
 			[NORMAL_DIFF] = {
-				{ 1, 227533 },	-- Incandescent Gloves
-				{ 2, 227759 },	-- Scorched Core Gloves
-				{ 3, 227756 },	-- Molten Scaled Gloves
-				{ 4, 227536 },	-- Incandescent Boots
-				{ 5, 227765 },	-- Scorched Core Boots
+				{ 1, 227531 },	-- Incandescent Bindings
+				{ 2, 227760 },	-- Scorched Core Bindings
+				{ 3, 227750 },	-- Molten Scaled Bindings
 				{ 16, 228285},	-- Helm of the Lifegiver
 				{ 17, 228239 },	-- Robe of Volatile Power
 				{ 18, 228246 },	-- Wristguards of Stability
@@ -8409,6 +8408,8 @@ data["MoltenCore2"] = {
 				{ 23, 228243 },	-- Ring of Spell Power
 				{ 24, 228262 },	-- Crimson Shocker
 				{ 25, 228263 },	-- Sorcerous Dagger
+				{ 26, 228127 },	-- Wristguards of Instability
+				{ 27, 228253 },	-- Sabatons of the Flamewalker
 			},
 		},
 		{	--MCGeddon
@@ -8419,9 +8420,9 @@ data["MoltenCore2"] = {
 			AtlasMapBossID = 6,
 			[NORMAL_DIFF] = {
 				{ 1,  18563 },	-- Bindings of the Windseeker
-				{ 3, 227537 },	-- Incandescent Shoulderpads
-				{ 4, 227762 },	-- Scorched Core Shoulderpads
-				{ 5, 227752 },	-- Molten Scaled Shoulderpads
+				{ 3, 227530 },	-- Incandescent Belt
+				{ 4, 227761 },	-- Scorched Core Belt
+				{ 5, 227751 },	-- Molten Scaled Belt
 				{ 16, 228258 },	-- Deep Earth Spaulders
 				{ 17, 228257 },	-- Aged Core Leather Gloves
 				{ 18, 228260 },	-- Flameguard Gauntlets
@@ -8434,6 +8435,9 @@ data["MoltenCore2"] = {
 				{ 25, 228255 },	-- Talisman of Ephemeral Power
 				{ 26, 228259 },	-- Fire Runed Grimoire
 				{ 27, 228229 },	-- Obsidian Edged Blade
+				{ 28, 228139 },	-- Fist of the Firesworn
+				{ 29, 228142 },	-- Earth and Fire
+				{ 30, 228160 },	-- Faithbringer
 			},
 		},
 		{	--MCGolemagg
@@ -8443,24 +8447,49 @@ data["MoltenCore2"] = {
 			DisplayIDs = {{11986}},
 			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1, 227535 },	-- Incandescent Robe
-				{ 2, 227766 },	-- Scorched Core Chest
-				{ 3, 227758 },	-- Molten Scaled Chest
-				{ 11, 17203 },	-- Sulfuron Ingot
-				{ 16, 228258 },	-- Deep Earth Spaulders
-				{ 17, 228257 },	-- Aged Core Leather Gloves
-				{ 18, 228260 },	-- Flameguard Gauntlets
-				{ 19, 228256 },	-- Mana Igniting Cord
-				{ 20, 228240 },	-- Flamewaker Legplates
-				{ 21, 228253 },	-- Sabatons of the Flamewalker
-				{ 22, 228254 },	-- Magma Tempered Boots
-				{ 23, 228261 },	-- Quick Strike Ring
-				{ 24, 228255 },	-- Talisman of Ephemeral Power
-				{ 25, 228259 },	-- Fire Runed Grimoire
-				{ 26, 228270 },	-- Blastershot Launcher
-				{ 27, 228269 },	-- Azuresong Mageblade
-				{ 28, 228229 },	-- Obsidian Edged Blade
-				{ 29, 228271 },	-- Staff of Dominance
+				{ 1, 17203 },	-- Sulfuron Ingot
+				{ 2, 228270 },	-- Blastershot Launcher
+				{ 3, 228137 },	-- Heart of Golemagg
+				{ 4, 228147 },	-- Magmadar's Horn
+				{ 5, 228258 },	-- Deep Earth Spaulders
+				{ 6, 228257 },	-- Aged Core Leather Gloves
+				{ 7, 228260 },	-- Flameguard Gauntlets
+				{ 8, 228256 },	-- Mana Igniting Cord
+				{ 9, 228240 },	-- Flamewaker Legplates
+				{ 10, 228253 },	-- Sabatons of the Flamewalker
+				{ 11, 228254 },	-- Magma Tempered Boots
+				{ 12, 228261 },	-- Quick Strike Ring
+				{ 13, 228255 },	-- Talisman of Ephemeral Power
+				{ 14, 228259 },	-- Fire Runed Grimoire
+				{ 15, 228270 },	-- Blastershot Launcher
+				{ 16, 228269 },	-- Azuresong Mageblade
+				{ 17, 228229 },	-- Obsidian Edged Blade
+				{ 18, 228271 },	-- Staff of Dominance
+				{ 20, 227535 },	-- Incandescent Robe
+				{ 21, 227766 },	-- Scorched Core Chest
+				{ 22, 227758 },	-- Molten Scaled Chest
+				{ 24, 227537 }, -- 
+				{ 25, 227752 }, -- 
+				{ 26, 227762 }, -- 
+				{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
+				{ 101, 227533 }, -- 
+				{ 102, 227756 }, -- 
+				{ 103, 227759 }, -- 
+				{ 105, 227531 }, -- 
+				{ 106, 227750 }, -- 
+				{ 107, 227760 }, -- 
+				{ 109, 227530 }, -- 
+				{ 110, 227751 }, -- 
+				{ 111, 227761 }, -- 
+				{ 116, 227534 }, -- 
+				{ 117, 227754 }, -- 
+				{ 118, 227763 }, -- 
+				{ 120, 227536 }, -- 
+				{ 121, 227757 }, -- 
+				{ 122, 227765 }, -- 
+				{ 124, 227532 }, -- Incandescent Hood
+				{ 125, 227764 }, -- Scorched Core Helm
+				{ 126, 227755 }, -- Molten Scaled Helm
 			},
 		},
 		{ -- MCSulfuron
@@ -8470,20 +8499,48 @@ data["MoltenCore2"] = {
 			DisplayIDs = {{13030},{12030}},
 			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
-				{ 1, 227537 },	-- Incandescent Shoulderpads
-				{ 2, 227762 },	-- Scorched Core Shoulderpads
-				{ 3, 227752 },	-- Molten Scaled Shoulderpads
-				{ 16, 18870 }, -- Helm of the Lifegiver
-				{ 17, 228239 }, -- Robe of Volatile Power
-				{ 18, 228246 }, -- Wristguards of Stability
-				{ 19, 228244 }, -- Manastorm Leggings
-				{ 20, 228245 }, -- Salamander Scale Pants
-				{ 21, 228240 }, -- Flamewaker Legplates
-				{ 22, 228242 }, -- Heavy Dark Iron Ring
-				{ 23, 228243 }, -- Ring of Spell Power
-				{ 24, 228262 }, -- Crimson Shocker
-				{ 25, 228263 }, -- Sorcerous Dagger
-				{ 26, 228272 }, -- Shadowstrike
+				{ 1, 17203 },	-- Sulfuron Ingot
+				{ 3, 18870 }, -- Helm of the Lifegiver
+				{ 4, 228239 }, -- Robe of Volatile Power
+				{ 5, 228246 }, -- Wristguards of Stability
+				{ 6, 228244 }, -- Manastorm Leggings
+				{ 7, 228245 }, -- Salamander Scale Pants
+				{ 8, 228240 }, -- Flamewaker Legplates
+				{ 9, 228242 }, -- Heavy Dark Iron Ring
+				{ 10, 228243 }, -- Ring of Spell Power
+				{ 11, 228262 }, -- Crimson Shocker
+				{ 12, 228263 }, -- Sorcerous Dagger
+				{ 13, 228272 }, -- Shadowstrike
+				{ 14, 228127 },	-- Wristguards of Instability
+				{ 15, 228128 }, -- Hammer of the Black Anvil
+				{ 16, 228260 }, -- Flameguard Gauntlets
+				{ 17, 228292 }, -- Dragon's Blood Cape
+				{ 18, 228295 }, -- Onslaught Girdle
+				{ 20, 227535 },	-- Incandescent Robe
+				{ 21, 227766 },	-- Scorched Core Chest
+				{ 22, 227758 },	-- Molten Scaled Chest
+				{ 24, 227537 }, -- 
+				{ 25, 227752 }, -- 
+				{ 26, 227762 }, -- 
+				{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
+				{ 101, 227533 }, -- 
+				{ 102, 227756 }, -- 
+				{ 103, 227759 }, -- 
+				{ 105, 227531 }, -- 
+				{ 106, 227750 }, -- 
+				{ 107, 227760 }, -- 
+				{ 109, 227530 }, -- 
+				{ 110, 227751 }, -- 
+				{ 111, 227761 }, -- 
+				{ 116, 227534 }, -- 
+				{ 117, 227754 }, -- 
+				{ 118, 227763 }, -- 
+				{ 120, 227536 }, -- 
+				{ 121, 227757 }, -- 
+				{ 122, 227765 }, -- 
+				{ 124, 227532 }, -- Incandescent Hood
+				{ 125, 227764 }, -- Scorched Core Helm
+				{ 126, 227755 }, -- Molten Scaled Helm
 			},
 		},
 		{ -- MCMajordomo
@@ -8503,9 +8560,11 @@ data["MoltenCore2"] = {
 				{ 7,  228275 }, -- Core Forged Greaves
 				{ 8,  228274 }, -- Cauterizing Band
 				{ 9,  228277 }, -- Core Hound Tooth
-				{ 11, 228278 }, -- Hyperthermically Insulated Lava Dredger
+				{ 10, 228278 }, -- Hyperthermically Insulated Lava Dredger
 				{ 16, 18703 }, -- Ancient Petrified Leaf
 				{ 18, 18646 }, -- The Eye of Divinity
+				{ 20, 228129 }, -- Shadowflame Skull
+				{ 30, "INV_Box_01", nil, AL["*Need More Drop Data*"], nil },
 			},
 		},
 		{ -- MCRagnaros
@@ -8517,22 +8576,53 @@ data["MoltenCore2"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 227728 }, -- Eye of Sulfuras
 				{ 2, 19017 }, -- Essence of the Firelord
-				{ 4, 227534 },	-- Incandescent Leggings
-				{ 5, 227763 },	-- Scorched Core Leggings
-				{ 6, 227754 },	-- Molten Scaled Leggings
-				{ 14, 228297 }, -- Shard of the Flame
-				{ 16, 228291 }, -- Crown of Destruction
-				{ 17, 228147 }, -- Choker of the Fire Lord (Magmadar's Horn)
-				{ 18, 228290 }, -- Cloak of the Shrouded Mists
-				{ 19, 228292 }, -- Dragon's Blood Cape
-				{ 20, 228295 }, -- Onslaught Girdle
-				{ 21, 228286 }, -- Band of Accuria
-				{ 22, 228287 }, -- Band of Sulfuras
-				{ 23, 228266 }, -- Essence of the Pure Flame (Drillborer Disk)
-				{ 24, 228294 }, -- Malistar's Defender
-				{ 25, 228296 }, -- Perdition's Blade (Gutgore Ripper)
-				{ 26, 228299 }, -- Spinal Reaper
-				{ 27, 228288 }, -- Bonereaver's Edge
+				{ 4, 228297 }, -- Shard of the Flame
+				{ 5, 228291 }, -- Crown of Destruction
+				{ 6, 228147 }, -- Choker of the Fire Lord (Magmadar's Horn)
+				{ 7, 228290 }, -- Cloak of the Shrouded Mists
+				{ 8, 228292 }, -- Dragon's Blood Cape
+				{ 9, 228295 }, -- Onslaught Girdle
+				{ 10, 228286 }, -- Band of Accuria
+				{ 11, 228287 }, -- Band of Sulfuras
+				{ 12, 228266 }, -- Essence of the Pure Flame (Drillborer Disk)
+				{ 13, 228294 }, -- Malistar's Defender
+				{ 14, 228296 }, -- Perdition's Blade (Gutgore Ripper)
+				{ 15, 228299 }, -- Spinal Reaper
+				{ 16, 228288 }, -- Bonereaver's Edge
+				{ 18, "INV_Box_01", nil, AL["*Need More Drop Data*"], nil },
+				{ 20, 227535 },	-- Incandescent Robe
+				{ 21, 227766 },	-- Scorched Core Chest
+				{ 22, 227758 },	-- Molten Scaled Chest
+				{ 24, 227537 }, -- 
+				{ 25, 227752 }, -- 
+				{ 26, 227762 }, -- 
+				{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
+				{ 101, 227533 }, -- 
+				{ 102, 227756 }, -- 
+				{ 103, 227759 }, -- 
+				{ 105, 227531 }, -- 
+				{ 106, 227750 }, -- 
+				{ 107, 227760 }, -- 
+				{ 109, 227530 }, -- 
+				{ 110, 227751 }, -- 
+				{ 111, 227761 }, -- 
+				{ 116, 227534 }, -- 
+				{ 117, 227754 }, -- 
+				{ 118, 227763 }, -- 
+				{ 120, 227536 }, -- 
+				{ 121, 227757 }, -- 
+				{ 122, 227765 }, -- 
+				{ 124, 227532 }, -- Incandescent Hood
+				{ 125, 227764 }, -- Scorched Core Helm
+				{ 126, 227755 }, -- Molten Scaled Helm
+			},
+		},
+		{ -- MCRagnaros
+			name = AL["The Molten Core"],
+			npcID = 227959,
+			Level = 999,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["*Need More Drop Data*"], nil },
 			},
 		},
 		{ -- MCRANDOMBOSSDROPS
@@ -8549,18 +8639,6 @@ data["MoltenCore2"] = {
 				{ 18, 18265 }, -- Pattern: Flarecore Wraps
 				{ 19, 21371 }, -- Pattern: Core Felcloth Bag
 				{ 21, 18257 }, -- Recipe: Major Rejuvenation Potion
-			},
-		},
-		{ -- MCTrashMobs
-			name = AL["Trash"],
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1, 227530 }, -- Incandescent Belt
-				{ 2, 227761 }, -- Scorched Core Belt
-				{ 3, 227751 }, -- Molten Scaled Belt
-				{ 4, 227531 }, -- Incandescent Bindings
-				{ 5, 227760 }, -- Scorched Core Bindings
-				{ 6, 227750 }, -- Molten Scaled Bindings
 			},
 		},
 	},
@@ -8584,19 +8662,47 @@ data["Onyxia2"] = {
 			DisplayIDs = {{8570}},
 			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
-				{ 1, 18423 }, -- Head of Onyxia					
-				{ 3, 15410 }, -- Scale of Onyxia
-				{ 15, "INV_Box_01", nil, AL["*Drops are not confirmed*"], nil },
-				{ 16, 18705 }, -- Mature Black Dragon Sinew
-				{ 18, 228759 }, -- Eskhandar's Collar
-				{ 19, 17078 }, -- Sapphiron Drape
-				{ 20, 18813 }, -- Ring of Binding
-				{ 21, 228298 }, -- Shard of the Scale
-				{ 22, 228955 }, -- Ancient Cornerstone Grimoire
-				{ 23, 17068 }, -- Deathbringer
-				{ 24, 17075 }, -- Vis'kag the Bloodletter
-				{ 26, 17966 }, -- Onyxia Hide Backpack
-				{ 27, 11938 }, -- Sack of Gems
+				{ 1, 18423 }, -- Head of Onyxia
+				{ 2, 18705 }, -- Mature Black Dragon Sinew
+				{ 3, 228759 }, -- Eskhandar's Collar
+				{ 4, 17078 }, -- Sapphiron Drape
+				{ 5, 18813 }, -- Ring of Binding
+				{ 6, 228298 }, -- Shard of the Scale
+				{ 7, 228955 }, -- Ancient Cornerstone Grimoire
+				{ 8, 17068 }, -- Deathbringer
+				{ 9, 17075 }, -- Vis'kag the Bloodletter
+				{ 10, 228166 }, -- Key to the City
+				{ 11, 228162 }, -- Deceit
+				{ 12, 228165 }, -- Dragonslayer's Javelin
+				{ 13, 228163 }, -- Broodmother's Brooch
+				{ 15, 228992 }, -- Onyxia Hide Backpack
+				{ 16, 15410 }, -- Scale of Onyxia
+				{ 17, 11938 }, -- Sack of Gems
+				{ 19, 227532 }, -- These are just tier tokens below..
+				{ 20, 227755 }, -- 
+				{ 21, 227764 }, -- 
+				{ 23, 227537 }, -- 
+				{ 24, 227752 }, -- 
+				{ 25, 227762 }, -- 
+				{ 27, 227535 }, -- 
+				{ 28, 227758 }, -- 
+				{ 29, 227766 }, -- 
+				{ 30, "INV_Box_01", nil, AL["Continued-->"], nil },
+				{ 101, 227533 }, -- 
+				{ 102, 227756 }, -- 
+				{ 103, 227759 }, -- 
+				{ 105, 227531 }, -- 
+				{ 106, 227750 }, -- 
+				{ 107, 227760 }, -- 
+				{ 109, 227530 }, -- 
+				{ 110, 227751 }, -- 
+				{ 111, 227761 }, -- 
+				{ 116, 227534 }, -- 
+				{ 117, 227754 }, -- 
+				{ 118, 227763 }, -- 
+				{ 120, 227536 }, -- 
+				{ 121, 227757 }, -- 
+				{ 122, 227765 }, -- 
 				-- Hidden items
 				{ 0, 17962 }, -- Blue Sack of Gems
 				{ 0, 17963 }, -- Green Sack of Gems

@@ -13,6 +13,7 @@ RatingBusterDB = {
 ["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
 ["Dopesnare - Lone Wolf"] = "HUNTER",
 ["Dopenac - Lone Wolf"] = "PRIEST",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
 ["Dopecoil - Lone Wolf"] = "SHAMAN",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopedot - Lone Wolf"] = "WARLOCK",
