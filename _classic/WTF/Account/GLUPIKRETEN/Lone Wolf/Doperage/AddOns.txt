@@ -12,7 +12,7 @@ Grid2RaidDebuffsOptions: disabled
 nTooltip: disabled
 WeakAuras: enabled
 xVermin: enabled
-RXPGuides: disabled
+RXPGuides: enabled
 ItemRackOptions: enabled
 AdiBags: enabled
 AdiBags_Config: enabled

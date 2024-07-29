@@ -117,6 +117,9 @@ xVerminSavedData = {
 },
 ["Dopemend"] = {
 },
+["Whirlwind Stormwalker"] = {
+"Deep Wound",
+},
 ["Corrupt Minor Manifestation of Water"] = {
 "Frost Shock",
 },
@@ -244,6 +247,16 @@ xVerminSavedData = {
 "Stormstrike",
 "Mutilate",
 },
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -261,16 +274,6 @@ xVerminSavedData = {
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
 },
 ["Ironspine"] = {
 "Rend",
@@ -303,8 +306,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Burning Destroyer"] = {
 "Lava Lash",
@@ -323,9 +326,9 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -374,9 +377,9 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Klaxxi"] = {
 "Big Bronze Bomb",
@@ -386,8 +389,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Agathelos the Raging"] = {
 "Charge Stun",

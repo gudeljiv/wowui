@@ -9,12 +9,12 @@ TomTomDB = {
 ["Battitude - Golemagg"] = "Default",
 ["Greenwise - Golemagg"] = "Default",
 ["Dopeclaw - Lone Wolf"] = "Default",
-["Konac - Dreadnaught"] = "Default",
+["Dopesnare - Stitches"] = "Default",
 ["Dopemend - Lone Wolf"] = "Default",
 ["Wells - Jin'do"] = "Default",
 ["Tudum - Ashbringer"] = "Default",
 ["Poklopac - Dreadnaught"] = "Default",
-["Dopesnare - Stitches"] = "Default",
+["Konac - Dreadnaught"] = "Default",
 ["Grgur - Golemagg"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
@@ -107,12 +107,12 @@ TomTomWaypointsM = {
 ["Battitude - Golemagg"] = "Battitude - Golemagg",
 ["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 ["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
-["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 ["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
@@ -177,7 +177,7 @@ TomTomWaypointsM = {
 },
 ["Dopeclaw - Lone Wolf"] = {
 },
-["Konac - Dreadnaught"] = {
+["Dopesnare - Stitches"] = {
 },
 ["Dopemend - Lone Wolf"] = {
 },
@@ -187,7 +187,7 @@ TomTomWaypointsM = {
 },
 ["Poklopac - Dreadnaught"] = {
 },
-["Dopesnare - Stitches"] = {
+["Konac - Dreadnaught"] = {
 },
 ["Grgur - Golemagg"] = {
 },
