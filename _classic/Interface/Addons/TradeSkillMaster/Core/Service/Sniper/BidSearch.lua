@@ -6,10 +6,10 @@
 
 local TSM = select(2, ...) ---@type TSM
 local BidSearch = TSM.Sniper:NewPackage("BidSearch")
+local SoundAlert = TSM.LibTSMWoW:Include("UI.SoundAlert")
 local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
 local Threading = TSM.LibTSMTypes:Include("Threading")
 local SniperOperation = TSM.LibTSMSystem:Include("SniperOperation")
-local Sound = TSM.Include("Util.Sound")
 local private = {
 	settings = nil,
 	scanThreadId = nil,
@@ -81,6 +81,6 @@ end
 
 function private.OnQueryDone(_, _, numNewResults)
 	if numNewResults > 0 then
-		Sound.PlaySound(private.settings.sniperSound)
+		SoundAlert.Play(private.settings.sniperSound)
 	end
 end

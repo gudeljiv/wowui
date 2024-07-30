@@ -4,6 +4,14 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local LibTSMTypes = select(2, ...).LibTSMTypes
-local Constants = LibTSMTypes:Init("Constants")
-Constants.NO_SOUND_KEY = "TSM_NO_SOUND" -- This can never change
+local ADDON_TABLE = select(2, ...)
+ADDON_TABLE.LibTSMApp = ADDON_TABLE.LibTSMCore.NewComponent("LibTSMApp")
+	:AddDependency("LibTSMUI")
+	:AddDependency("LibTSMService")
+	:AddDependency("LibTSMSystem")
+	:AddDependency("LibTSMWoW")
+	:AddDependency("LibTSMTypes")
+	:AddDependency("LibTSMUtil")
+	:AddDependency("LibTSMData")
+assert(ADDON_TABLE.Locale)
+ADDON_TABLE.LibTSMApp.Locale = ADDON_TABLE.Locale

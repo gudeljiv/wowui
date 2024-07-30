@@ -10,9 +10,9 @@ local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
 local L = TSM.Locale.GetTable()
 local DelayTimer = TSM.LibTSMWoW:IncludeClassType("DelayTimer")
 local Event = TSM.LibTSMWoW:Include("Service.Event")
+local SoundAlert = TSM.LibTSMWoW:Include("UI.SoundAlert")
 local Money = TSM.LibTSMUtil:Include("UI.Money")
 local Database = TSM.LibTSMUtil:Include("Database")
-local Sound = TSM.Include("Util.Sound")
 local FSM = TSM.LibTSMUtil:Include("FSM")
 local Math = TSM.LibTSMUtil:Include("Lua.Math")
 local Theme = TSM.LibTSMService:Include("UI.Theme")
@@ -976,5 +976,5 @@ end
 function private.FSMOpenCallback()
 	private.fsm:ProcessEvent("EV_OPENING_DONE")
 
-	Sound.PlaySound(private.settings.openMailSound)
+	SoundAlert.Play(private.settings.openMailSound)
 end

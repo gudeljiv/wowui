@@ -10,12 +10,12 @@ local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
 local Money = TSM.LibTSMUtil:Include("UI.Money")
 local AuctionHouse = TSM.LibTSMWoW:Include("API.AuctionHouse")
 local Event = TSM.LibTSMWoW:Include("Service.Event")
+local SoundAlert = TSM.LibTSMWoW:Include("UI.SoundAlert")
 local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
 local Auction = TSM.LibTSMService:Include("Auction")
 local ItemInfo = TSM.LibTSMService:Include("Item.ItemInfo")
 local L = TSM.Locale.GetTable()
 local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
-local Sound = TSM.Include("Util.Sound")
 local Theme = TSM.LibTSMService:Include("UI.Theme")
 local private = {
 	settings = nil,
@@ -202,7 +202,7 @@ function private.GetAuctionSoldMessage(msg)
 	else
 		link = msg
 	end
-	Sound.PlaySound(private.settings.auctionSaleSound)
+	SoundAlert.Play(private.settings.auctionSaleSound)
 	if price then
 		return format(L["Your auction of %s has sold for %s!"], link, Money.ToStringForAH(price, "|cffffffff"))
 	else

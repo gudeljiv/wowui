@@ -31,9 +31,8 @@ end
 ---@param characterName string The current character name
 ---@param connectedRealms? string[] Connected realm names
 ---@param accessibleFactions string[] Accessible faction names
----@param errorIfInvalid boolean Error if the saved DB is invalid (useful for dev versions)
 ---@return SettingsDB
 ---@return SettingsMigration
-function Settings.NewDB(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions, errorIfInvalid)
-	return SettingsDB.New(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions, errorIfInvalid)
+function Settings.NewDB(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions)
+	return SettingsDB.New(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions)
 end

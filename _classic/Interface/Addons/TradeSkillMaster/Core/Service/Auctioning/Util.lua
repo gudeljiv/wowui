@@ -145,7 +145,7 @@ function Util.GetPlayerAuctionCount(subRows, itemString, operationSettings, find
 		local timeLeft = subRow:GetListingInfo()
 		if not AuctioningOperation.IsAuctionFiltered(itemString, operationSettings, itemBuyout, quantity, timeLeft) then
 			local _, itemMinBid = subRow:GetBidInfo()
-			if itemMinBid == findBid and itemBuyout == findBuyout and (ClientInfo.HasFeature(ClientInfo.FEATURES.AH_STACKS) or quantity == findStackSize) then
+			if itemMinBid == findBid and itemBuyout == findBuyout and (not ClientInfo.HasFeature(ClientInfo.FEATURES.AH_STACKS) or quantity == findStackSize) then
 				local count = private.GetPlayerAuctionCount(subRow)
 				if ClientInfo.HasFeature(ClientInfo.FEATURES.AH_STACKS) and count == 0 and playerQuantity > 0 then
 					-- There's another player's auction after ours, so stop counting

@@ -19,7 +19,7 @@ VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1710
+/cast item:929
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -74,7 +74,7 @@ VER 3 000000000000002A "rune w" "134400"
 /use Waist Rune Ability
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact "Stinky" Ignatz
+/targetexact Wandering Swordsman
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

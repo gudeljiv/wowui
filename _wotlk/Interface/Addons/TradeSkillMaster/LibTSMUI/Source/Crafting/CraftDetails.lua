@@ -454,6 +454,9 @@ function CraftDetails:SetSpellId(spellId)
 
 	local changed = craftString ~= self._state.craftString
 	self._state.craftString = craftString
+	if TradeSkill.IsClassicCrafting() then
+		TradeSkill.SelectCraft(craftString and Profession.GetIndexByCraftString(craftString) or 0)
+	end
 	self:_UpdateRecipeString(changed)
 	self:Draw()
 	return self

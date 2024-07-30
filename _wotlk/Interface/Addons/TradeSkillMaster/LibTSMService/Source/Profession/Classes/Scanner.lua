@@ -743,7 +743,7 @@ function private.GetItemStringAndCraftName(craftString)
 		craftName = ItemInfo.GetName(itemString)
 	elseif strfind(resultItem, "enchant:") then
 		itemString = ""
-		craftName = TradeSkill.GetBasicInfo(indirectSpellId or spellId)
+		craftName = TradeSkill.GetBasicInfo(TradeSkill.IsClassicCrafting() and Scanner.GetClassicSpellId(spellId) or (indirectSpellId or spellId))
 	elseif strfind(resultItem, "item:") then
 		-- Result of craft is item
 		local level = CraftString.GetLevel(craftString)

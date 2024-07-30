@@ -7,14 +7,11 @@
 local TSM = select(2, ...) ---@type TSM
 local Mailing = TSM.MainUI.Settings:NewPackage("Mailing") ---@type AddonPackage
 local L = TSM.Locale.GetTable()
-local Sound = TSM.Include("Util.Sound")
 local Math = TSM.LibTSMUtil:Include("Lua.Math")
 local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
 local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local private = {
 	settings = nil,
-	sounds = {},
-	soundkeys = {},
 }
 local ITEM_QUALITY_DESCS = { ITEM_QUALITY2_DESC, ITEM_QUALITY3_DESC, ITEM_QUALITY4_DESC }
 local ITEM_QUALITY_KEYS = { 2, 3, 4 }
@@ -44,10 +41,6 @@ function Mailing.OnInitialize(settingsDB)
 		:AddKey("global", "mailingOptions", "resendDelay")
 		:AddKey("global", "mailingOptions", "deMaxQuality")
 	TSM.MainUI.Settings.RegisterSettingPage(L["Mailing"], "middle", private.GetMailingSettingsFrame)
-	for key, name in Sound.Iterator() do
-		tinsert(private.sounds, name)
-		tinsert(private.soundkeys, key)
-	end
 end
 
 
@@ -103,11 +96,9 @@ function private.GetMailingSettingsFrame()
 				:SetFont("BODY_BODY2_MEDIUM")
 				:SetText(L["Open mail complete sound"])
 			)
-			:AddChild(UIElements.New("SelectionDropdown", "soundDropdown")
+			:AddChild(UIElements.New("SoundDropdown", "mailSoundDropdown")
 				:SetHeight(24)
-				:SetItems(private.sounds, private.soundkeys)
 				:SetSettingInfo(private.settings, "openMailSound")
-				:SetScript("OnSelectionChanged", private.SoundOnSelectionChanged)
 				:SetTooltip(SETTING_TOOLTIP.openMailSound)
 			)
 		)
@@ -182,10 +173,6 @@ end
 -- ============================================================================
 -- Local Script Handlers
 -- ============================================================================
-
-function private.SoundOnSelectionChanged(self, selection)
-	Sound.PlaySound(private.settings.openMailSound)
-end
 
 function private.RestartDelayOnValueChanged(input)
 	local value = Math.Round(tonumber(input:GetValue()), 0.5)

@@ -11,6 +11,7 @@
     <Script file="Source\UI\StaticPopupDialog.lua" />
     <Script file="Source\UI\FontObject.lua" />
     <Script file="Source\UI\ExtraTooltip.lua" />
+    <Script file="Source\UI\SoundAlert.lua" />
 
     <Script file="Source\Service\Event.lua" />
 

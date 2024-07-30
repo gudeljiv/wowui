@@ -7,7 +7,6 @@
 local TSM = select(2, ...) ---@type TSM
 local Shopping = TSM.MainUI.Settings:NewPackage("Shopping") ---@type AddonPackage
 local L = TSM.Locale.GetTable()
-local Sound = TSM.Include("Util.Sound")
 local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
 local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local Item = TSM.LibTSMWoW:Include("API.Item")
@@ -16,8 +15,6 @@ local UIManager = TSM.LibTSMUtil:IncludeClassType("UIManager")
 local private = {
 	manager = nil, ---@type UIManager
 	settings = nil,
-	sounds = {},
-	soundkeys = {},
 }
 local SETTING_TOOLTIPS = {
 	searchAutoFocus = L["When enabled, the search input in the Browse tab of the AH will automatically be focused to allow for quickly searching the AH."],
@@ -49,11 +46,6 @@ function Shopping.OnInitialize(settingsDB)
 		:AddKey("global", "shoppingOptions", "pctSource")
 		:AddKey("global", "shoppingOptions", "buyoutAlertSource")
 		:AddKey("global", "sniperOptions", "sniperSound")
-
-	for key, name in Sound.Iterator() do
-		tinsert(private.sounds, name)
-		tinsert(private.soundkeys, key)
-	end
 
 	-- Create the state / manager
 	local state = STATE_SCHEMA:CreateState()
@@ -164,11 +156,9 @@ function private.GetShoppingSettingsFrame(state)
 				:SetFont("BODY_BODY2_MEDIUM")
 				:SetText(L["Found auction sound"])
 			)
-			:AddChild(UIElements.New("SelectionDropdown", "soundDrodown")
+			:AddChild(UIElements.New("SoundDropdown", "sniperSoundDropdown")
 				:SetHeight(24)
-				:SetItems(private.sounds, private.soundkeys)
 				:SetSettingInfo(private.settings, "sniperSound")
-				:SetAction("OnSelectionChanged", "ACTION_PLAY_SELECTED_SOUND")
 				:SetTooltip(SETTING_TOOLTIPS.sniperSound)
 			)
 		)
@@ -211,8 +201,6 @@ function private.ActionHandler(manager, state, action, ...)
 		assert(minLevel and maxLevel)
 		private.settings.minDeSearchLvl = minLevel
 		private.settings.maxDeSearchLvl = maxLevel
-	elseif action == "ACTION_PLAY_SELECTED_SOUND" then
-		Sound.PlaySound(state.frame:GetElement("sniper.content.soundDrodown"):GetSelectedItemKey())
 	else
 		error("Unknown action: "..tostring(action))
 	end

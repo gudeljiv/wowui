@@ -8,7 +8,6 @@ local LibTSMUI = select(2, ...).LibTSMUI
 local L = LibTSMUI.Locale.GetTable()
 local AuctionHouseUIUtils = LibTSMUI:Init("AuctionHouse.AuctionHouseUIUtils")
 local BagTracking = LibTSMUI:From("LibTSMService"):Include("Inventory.BagTracking")
-local ItemInfo = LibTSMUI:From("LibTSMService"):Include("Item.ItemInfo")
 local ItemString = LibTSMUI:From("LibTSMTypes"):Include("Item.ItemString")
 local Theme = LibTSMUI:From("LibTSMService"):Include("UI.Theme")
 local Group = LibTSMUI:From("LibTSMTypes"):Include("Group")
@@ -42,29 +41,18 @@ end
 ---@param buyout number The buyout
 ---@return number
 function AuctionHouseUIUtils.CalculateDeposit(itemString, useAutoBaseItemString, postTime, stackSize, bid, buyout)
-	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
-		local isCommodity = ItemInfo.IsCommodity(itemString)
-		local vendorSell = ItemInfo.GetVendorSell(itemString) or 0
-		local postTimeMultiple = postTime == 3 and 4 or postTime
-		if isCommodity then
-			return max(floor(0.15 * vendorSell * stackSize * postTimeMultiple), 100)
-		else
-			return max(floor(0.15 * vendorSell * postTimeMultiple), 100) * stackSize
-		end
+	local query = BagTracking.CreateQueryBagsAuctionable()
+		:OrderBy("slotId", true)
+		:Select("bag", "slot")
+	if useAutoBaseItemString then
+		query:Equal("baseItemString", ItemString.GetBaseFast(itemString))
+			:VirtualField("autoBaseItemString", "string", Group.TranslateItemString, "itemString")
+			:Equal("autoBaseItemString", itemString)
 	else
-		local query = BagTracking.CreateQueryBagsAuctionable()
-			:OrderBy("slotId", true)
-			:Select("bag", "slot")
-		if useAutoBaseItemString then
-			query:Equal("baseItemString", ItemString.GetBaseFast(itemString))
-				:VirtualField("autoBaseItemString", "string", Group.TranslateItemString, "itemString")
-				:Equal("autoBaseItemString", itemString)
-		else
-			query:Equal("itemString", itemString)
-		end
-		local postBag, postSlot = query:GetFirstResultAndRelease()
-		return postBag and AuctionHouseWrapper.GetDepositCost(postBag, postSlot, stackSize, postTime, bid, buyout) or nil
+		query:Equal("itemString", itemString)
 	end
+	local postBag, postSlot = query:GetFirstResultAndRelease()
+	return (postBag and postSlot) and AuctionHouseWrapper.GetDepositCost(postBag, postSlot, stackSize, postTime, bid, buyout) or nil
 end
 
 ---Gets the display text for a market value percent.

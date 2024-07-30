@@ -4,21 +4,23 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local TSM = select(2, ...) ---@type TSM
-local AddonSettings = TSM.Init("App.Lib.AddonSettings") ---@class App.Lib.AddonSettings: TSMModule
-local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
-local SessionInfo = TSM.LibTSMWoW:Include("Util.SessionInfo")
-local L = TSM.Locale.GetTable()
-local Table = TSM.LibTSMUtil:Include("Lua.Table")
-local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
-local CSV = TSM.LibTSMUtil:Include("Format.CSV")
-local StaticPopupDialog = TSM.LibTSMWoW:IncludeClassType("StaticPopupDialog")
-local Settings = TSM.LibTSMTypes:Include("Settings")
+local LibTSMApp = select(2, ...).LibTSMApp
+local AddonSettings = LibTSMApp:Init("Lib.AddonSettings")
+local L = LibTSMApp.Locale.GetTable()
+local SessionInfo = LibTSMApp:From("LibTSMWoW"):Include("Util.SessionInfo")
+local StaticPopupDialog = LibTSMApp:From("LibTSMWoW"):IncludeClassType("StaticPopupDialog")
+local Settings = LibTSMApp:From("LibTSMTypes"):Include("Settings")
+local Schema = LibTSMApp:From("LibTSMSystem"):Include("AddonSettings.Schema")
+local TempTable = LibTSMApp:From("LibTSMUtil"):Include("BaseType.TempTable")
+local CSV = LibTSMApp:From("LibTSMUtil"):Include("Format.CSV")
+local Table = LibTSMApp:From("LibTSMUtil"):Include("Lua.Table")
+local Log = LibTSMApp:From("LibTSMUtil"):Include("Util.Log")
 local LibRealmInfo = LibStub("LibRealmInfo")
-local Schema = TSM.LibTSMSystem:Include("AddonSettings.Schema")
 local private = {
 	db = nil,
+	loadCallbacks = {},
 }
+local LOAD_WARNING_THRESHOLD = 0.02
 
 
 
@@ -26,38 +28,54 @@ local private = {
 -- Module Loading
 -- ============================================================================
 
-AddonSettings:OnModuleLoad(function()
-	TSM.SetSettingsLoader(function()
-		local connectedRealms = nil
-		if ClientInfo.HasFeature(ClientInfo.FEATURES.REGION_WIDE_TRADING) then
-			connectedRealms = {}
-			local realmId, _, _, _, _, _, _, _, connectedRealmIds = LibRealmInfo:GetRealmInfo(SessionInfo.GetRealmName())
-			if connectedRealmIds then
-				for _, id in ipairs(connectedRealmIds) do
-					if id ~= realmId then
-						local _, connectedRealmName = LibRealmInfo:GetRealmInfoByID(id)
-						if connectedRealmName then
-							tinsert(connectedRealms, connectedRealmName)
-						end
+---Loads the addon settings database.
+function AddonSettings.LoadDB()
+	local connectedRealms = nil
+	if LibTSMApp then
+		connectedRealms = {}
+		local realmId, _, _, _, _, _, _, _, connectedRealmIds = LibRealmInfo:GetRealmInfo(SessionInfo.GetRealmName())
+		if connectedRealmIds then
+			for _, id in ipairs(connectedRealmIds) do
+				if id ~= realmId then
+					local _, connectedRealmName = LibRealmInfo:GetRealmInfoByID(id)
+					if connectedRealmName then
+						tinsert(connectedRealms, connectedRealmName)
 					end
 				end
 			end
 		end
-		local factionName = SessionInfo.GetFactionName()
-		local accessibleFactions = nil
-		if ClientInfo.HasFeature(ClientInfo.FEATURES.CONNECTED_FACTION_AH) then
-			accessibleFactions = { "Horde", "Alliance", "Neutral" }
-		else
-			accessibleFactions = { factionName }
+	end
+	local factionName = SessionInfo.GetFactionName()
+	local accessibleFactions = nil
+	if LibTSMApp.IsRetail() then
+		accessibleFactions = { "Horde", "Alliance", "Neutral" }
+	else
+		accessibleFactions = { factionName }
+	end
+	local db, upgradeObj = Settings.NewDB("TradeSkillMasterDB", Schema.Get(), SessionInfo.GetRealmName(), factionName, SessionInfo.GetCharacterName(), connectedRealms, accessibleFactions)
+	if upgradeObj then
+		private.ProcessUpgrade(db, upgradeObj)
+	end
+	private.db = db
+	for _, callback in ipairs(private.loadCallbacks) do
+		local startTime = LibTSMApp.GetTime()
+		callback(db)
+		local timeTaken = LibTSMApp.GetTime() - startTime
+		if timeTaken > LOAD_WARNING_THRESHOLD then
+			Log.Warn("Loading settings for %s took %0.5fs", private.loadCallbacks[callback], timeTaken)
 		end
-		local db, upgradeObj = Settings.NewDB("TradeSkillMasterDB", Schema.Get(), SessionInfo.GetRealmName(), factionName, SessionInfo.GetCharacterName(), connectedRealms, accessibleFactions, TSM.IsDev())
-		if upgradeObj then
-			private.ProcessUpgrade(db, upgradeObj)
-		end
-		private.db = db
-		return db
-	end)
-end)
+	end
+	wipe(private.loadCallbacks)
+end
+
+---Register a callback when the settings are loaded.
+---@param debugName string A name used for debugging
+---@param callback fun(db: SettingsDB) The callback function
+function AddonSettings.RegisterOnLoad(debugName, callback)
+	assert(not private.db and not private.loadCallbacks[callback])
+	tinsert(private.loadCallbacks, callback)
+	private.loadCallbacks[callback] = debugName
+end
 
 ---Gets the addon settings DB
 ---@return SettingsDB
@@ -234,7 +252,7 @@ function private.ProcessUpgrade(db, upgradeObj)
 			end
 		end
 	end
-	if prevVersion < 105 and ClientInfo.IsRetail() then
+	if prevVersion < 105 and LibTSMApp.IsRetail() then
 		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "userData", "craftingCooldownIgnore") do
 			if prevVersion < 99 then
 				local IGNORED_COOLDOWN_SEP = "\001"
@@ -269,7 +287,7 @@ function private.ProcessUpgrade(db, upgradeObj)
 		end
 	end
 	if prevVersion < 120 then
-		if ClientInfo.IsRetail() then
+		if LibTSMApp.IsRetail() then
 			for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
 				if prevVersion < 99 then
 					local newValue = {}

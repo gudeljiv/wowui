@@ -531,7 +531,6 @@ function AuctionHouseWrapper.PostAuction(bag, slot, duration, stackSize, numAuct
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
 		bid = Math.Round(bid, COPPER_PER_SILVER)
 		buyout = Math.Round(buyout, COPPER_PER_SILVER)
-		private.itemLocation:Clear()
 		private.itemLocation:SetBagAndSlot(bag, slot)
 		local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
 		if commodityStatus == Enum.ItemCommodityStatus.Item then
@@ -613,21 +612,38 @@ end
 ---@param bag number The bag where the item is located
 ---@param slot number The slot where the item is located
 ---@param stackSize number The stack size
----@param postTime number THe post duration
+---@param postTime number The post duration
 ---@param bid number The bid amount
 ---@param buyout number The buyout amount
----@return number
+---@return number?
 function AuctionHouseWrapper.GetDepositCost(bag, slot, stackSize, postTime, bid, buyout)
-	assert(not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
-	ClearCursor()
-	Container.PickupItem(bag, slot)
-	ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-	ClearCursor()
-	local depositCost = GetAuctionDeposit(postTime, bid, buyout, stackSize, 1)
-	ClearCursor()
-	ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-	ClearCursor()
-	return depositCost
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
+		private.itemLocation:SetBagAndSlot(bag, slot)
+		if not private.itemLocation:IsValid() then
+			return nil
+		end
+		local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
+		if commodityStatus == Enum.ItemCommodityStatus.Item then
+			return C_AuctionHouse.CalculateItemDeposit(private.itemLocation, postTime, stackSize)
+		elseif commodityStatus == Enum.ItemCommodityStatus.Commodity then
+			return C_AuctionHouse.CalculateCommodityDeposit(C_Item.GetItemID((private.itemLocation)), postTime, stackSize)
+		elseif commodityStatus == Enum.ItemCommodityStatus.Unknown then
+			Log.Err("No commodity status for item (%d, %d)", bag, slot)
+			return nil
+		else
+			error("Invalid commodity status")
+		end
+	else
+		ClearCursor()
+		Container.PickupItem(bag, slot)
+		ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
+		ClearCursor()
+		local depositCost = GetAuctionDeposit(postTime, bid, buyout, stackSize, 1)
+		ClearCursor()
+		ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
+		ClearCursor()
+		return depositCost
+	end
 end
 
 

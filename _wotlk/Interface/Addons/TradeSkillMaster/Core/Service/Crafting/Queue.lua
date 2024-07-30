@@ -79,15 +79,15 @@ function Queue.SetNum(recipeString, num)
 		:Equal("recipeString", recipeString)
 	local row = query:GetFirstResult()
 	if row and numQueued == 0 then
-		-- delete this row
+		-- Delete this row
 		private.db:DeleteRow(row)
 	elseif row then
-		-- update this row
+		-- Update this row
 		row:SetField("num", numQueued)
 			:Update()
 	elseif numQueued > 0 then
 		local craftString = CraftString.FromRecipeString(recipeString)
-		-- insert a new row
+		-- Insert a new row
 		private.db:NewRow()
 			:SetField("recipeString", recipeString)
 			:SetField("craftString", craftString)

@@ -326,6 +326,12 @@ function TradeSkill.IsEnchant(spellId)
 	end
 end
 
+---Selects the recipe to craft based on the craft index.
+---@param index number The index of the craft
+function TradeSkill.SelectCraft(index)
+	SelectCraft(index)
+end
+
 ---Gets cooldown info for a recipe.
 ---@param spellId number The recipe spell ID
 ---@return boolean isDailyCooldown
@@ -708,10 +714,13 @@ end
 ---@return number icon
 function TradeSkill.GetBasicInfo(spellId)
 	if TradeSkill.IsClassicCrafting() then
-		spellId = GetCraftInfo(spellId) or spellId
+		local name = GetCraftInfo(spellId)
+		local icon = GetCraftIcon(spellId)
+		return name, icon
+	else
+		local name, icon = Spell.GetInfo(spellId)
+		return name, icon
 	end
-	local name, icon = Spell.GetInfo(spellId)
-	return name, icon
 end
 
 ---Crafts a recipe.
@@ -726,13 +735,11 @@ function TradeSkill.Craft(spellId, quantity, optionalMats, level, enchantSlotId,
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI) then
 		if enchantSlotId then
 			assert(not level and not next(optionalMats) and not salvageSlotId)
-			private.itemLocation:Clear()
 			private.itemLocation:SetBagAndSlot(SlotId.Split(enchantSlotId))
 			C_TradeSkillUI.CraftEnchant(spellId, quantity, optionalMats, private.itemLocation)
 		elseif salvageSlotId then
 			assert(not level and not next(optionalMats))
 			if TradeSkill.IsValiMatSlotId(salvageSlotId) then
-				private.itemLocation:Clear()
 				private.itemLocation:SetBagAndSlot(SlotId.Split(salvageSlotId))
 				C_TradeSkillUI.CraftSalvage(spellId, quantity, private.itemLocation)
 			end
@@ -759,7 +766,6 @@ end
 ---@param slotId number
 ---@return boolean
 function TradeSkill.IsValiMatSlotId(slotId)
-	private.itemLocation:Clear()
 	private.itemLocation:SetBagAndSlot(SlotId.Split(slotId))
 	local success = pcall(C_Item.DoesItemExist, private.itemLocation)
 	return success

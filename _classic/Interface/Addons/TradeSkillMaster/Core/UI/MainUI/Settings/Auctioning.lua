@@ -8,7 +8,6 @@ local TSM = select(2, ...) ---@type TSM
 local Auctioning = TSM.MainUI.Settings:NewPackage("Auctioning") ---@type AddonPackage
 local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
 local L = TSM.Locale.GetTable()
-local Sound = TSM.Include("Util.Sound")
 local String = TSM.LibTSMUtil:Include("Lua.String")
 local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
 local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
@@ -16,8 +15,6 @@ local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local private = {
 	settingsDB = nil,
 	settings = nil,
-	sounds = {},
-	soundkeys = {},
 }
 local SETTING_TOOLTIPS = {
 	cancelWithBid = L["If enabled, TSM will cancel undercut auctions even if they have been bid on."],
@@ -47,10 +44,6 @@ function Auctioning.OnInitialize(settingsDB)
 		private.settings:AddKey("factionrealm", "auctioningOptions", "whitelist")
 	end
 	TSM.MainUI.Settings.RegisterSettingPage(L["Auctioning"], "middle", private.GetAuctioningSettingsFrame)
-	for key, name in Sound.Iterator() do
-		tinsert(private.sounds, name)
-		tinsert(private.soundkeys, key)
-	end
 end
 
 
@@ -109,17 +102,13 @@ function private.GetAuctioningSettingsFrame()
 				:SetLayout("HORIZONTAL")
 				:SetHeight(24)
 				:SetMargin(0, 0, 0, 12)
-				:AddChild(UIElements.New("SelectionDropdown", "scanComplete")
+				:AddChild(UIElements.New("SoundDropdown", "scanComplete")
 					:SetMargin(0, 12, 0, 0)
-					:SetItems(private.sounds, private.soundkeys)
 					:SetSettingInfo(private.settings, "scanCompleteSound")
-					:SetScript("OnSelectionChanged", private.SoundOnSelectionChanged)
 					:SetTooltip(SETTING_TOOLTIPS.scanCompleteSound)
 				)
-				:AddChild(UIElements.New("SelectionDropdown", "confirmComplete")
-					:SetItems(private.sounds, private.soundkeys)
+				:AddChild(UIElements.New("SoundDropdown", "confirmComplete")
 					:SetSettingInfo(private.settings, "confirmCompleteSound")
-					:SetScript("OnSelectionChanged", private.SoundOnSelectionChanged)
 					:SetTooltip(SETTING_TOOLTIPS.confirmCompleteSound)
 				)
 			)
@@ -129,11 +118,9 @@ function private.GetAuctioningSettingsFrame()
 				:SetFont("BODY_BODY2_MEDIUM")
 				:SetText(L["Auction sale sound"])
 			)
-			:AddChild(UIElements.New("SelectionDropdown", "saleDropdown")
+			:AddChild(UIElements.New("SoundDropdown", "saleSoundDropdown")
 				:SetHeight(24)
-				:SetItems(private.sounds, private.soundkeys)
 				:SetSettingInfo(private.settings, "auctionSaleSound")
-				:SetScript("OnSelectionChanged", private.SoundOnSelectionChanged)
 				:SetTooltip(SETTING_TOOLTIPS.auctionSaleSound)
 			)
 		)
@@ -208,10 +195,6 @@ end
 -- ============================================================================
 -- Local Script Handlers
 -- ============================================================================
-
-function private.SoundOnSelectionChanged(self)
-	Sound.PlaySound(self:GetSelectedItemKey())
-end
 
 function private.NewPlayerOnEnterPressed(input)
 	local newPlayer = strlower(input:GetValue())

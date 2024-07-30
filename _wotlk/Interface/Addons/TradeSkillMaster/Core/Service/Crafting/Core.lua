@@ -16,6 +16,7 @@ local Database = TSM.LibTSMUtil:Include("Database")
 local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
 local Table = TSM.LibTSMUtil:Include("Lua.Table")
 local Math = TSM.LibTSMUtil:Include("Lua.Math")
+local SmartMap = TSM.LibTSMUtil:IncludeClassType("SmartMap")
 local Money = TSM.LibTSMUtil:Include("UI.Money")
 local Log = TSM.LibTSMUtil:Include("Util.Log")
 local ItemString = TSM.LibTSMTypes:Include("Item.ItemString")
@@ -41,6 +42,7 @@ local private = {
 	ignoredCooldownDB = nil,
 	numMatDBRows = {},
 	playerTemp = {},
+	numCraftableItemStringSmartMap = nil,
 }
 local CHARACTER_KEY = UnitName("player").." - "..GetRealmName()
 local IGNORED_COOLDOWN_SEP = "\001"
@@ -85,6 +87,8 @@ function Crafting.OnInitialize(settingsDB)
 		end
 	end
 	TempTable.Release(used)
+
+	private.numCraftableItemStringSmartMap = SmartMap.New("string", "number", TSM.Crafting.ProfessionUtil.GetNumCraftableFromDBRecipeString)
 
 	local professionItems = TempTable.Acquire()
 	local matCountByCraft = TempTable.Acquire()
@@ -263,7 +267,7 @@ function Crafting.CreateQueueQuery()
 	return TSM.Crafting.Queue.CreateQuery()
 		:InnerJoin(private.spellDB, "craftString")
 		:VirtualField("profit", "number", TSM.Crafting.Cost.GetProfitByRecipeString, "recipeString", Math.GetNan())
-		:VirtualField("numCraftable", "number", TSM.Crafting.ProfessionUtil.GetNumCraftableFromDBRecipeString, "recipeString")
+		:VirtualSmartMapField("numCraftable", private.numCraftableItemStringSmartMap, "recipeString")
 		:VirtualField("levelItemString", "string", TSM.Crafting.Cost.GetLevelItemString, "recipeString", "")
 end
 
@@ -299,6 +303,10 @@ function Crafting.GetCraftStringByItem(itemString)
 		:Equal("itemString", itemString)
 		:Select("craftString", "hasCD", "profession")
 	return query:IteratorAndRelease()
+end
+
+function Crafting.InvalidateNumQueuedSmartMap()
+	private.numCraftableItemStringSmartMap:Invalidate()
 end
 
 function Crafting.GetMostProfitableCraftStringByItem(itemString, playerFilter, noCD)

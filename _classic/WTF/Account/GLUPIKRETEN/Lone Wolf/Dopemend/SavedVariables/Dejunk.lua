@@ -2,8 +2,11 @@
 __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["characterSpecificSettings"] = false,
 ["merchantButton"] = true,
-["autoJunkFrame"] = false,
-["autoSell"] = false,
+["includeBelowItemLevel"] = {
+["enabled"] = false,
+["value"] = 0,
+},
+["includeUnsuitableEquipment"] = false,
 ["exclusions"] = {
 },
 ["excludeEquipmentSets"] = false,
@@ -16,9 +19,6 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["includeArtifactRelics"] = false,
 ["includePoorItems"] = true,
 ["chatMessages"] = true,
-["includeUnsuitableEquipment"] = false,
-["includeBelowItemLevel"] = {
-["enabled"] = false,
-["value"] = 0,
-},
+["autoSell"] = false,
+["autoJunkFrame"] = false,
 }

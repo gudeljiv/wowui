@@ -149,4 +149,6 @@
     <Script file="Source\Vendor\VendorBuybackScrollTable.lua" />
     <Script file="Source\Vendor\VendorQuantityDialog.lua" />
     <Script file="Source\Vendor\VendorSellScrollTable.lua" />
+
+    <Script file="Source\Settings\SoundDropdown.lua" />
 </Ui>

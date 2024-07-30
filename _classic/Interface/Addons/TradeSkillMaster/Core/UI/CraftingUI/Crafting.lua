@@ -428,6 +428,7 @@ function private.ActionHandler(manager, state, action, ...)
 		if not state.frame then
 			return
 		end
+		TSM.Crafting.InvalidateNumQueuedSmartMap()
 		state.frame:GetElement("top.left.content.recipeList"):UpdateData()
 		state.frame:GetElement("top.right.queue.queueList"):UpdateData()
 	elseif action == "ACTION_SKILL_UPDATE" then

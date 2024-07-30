@@ -8,7 +8,6 @@ local TSM = select(2, ...) ---@type TSM
 local Auctioning = TSM.UI.AuctionUI:NewPackage("Auctioning") ---@type AddonPackage
 local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
 local L = TSM.Locale.GetTable()
-local Sound = TSM.Include("Util.Sound")
 local Money = TSM.LibTSMUtil:Include("UI.Money")
 local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
 local TextureAtlas = TSM.LibTSMService:Include("UI.TextureAtlas")
@@ -19,6 +18,7 @@ local CustomString = TSM.LibTSMTypes:Include("CustomString")
 local AuctionHouseWrapper = TSM.LibTSMWoW:Include("API.AuctionHouseWrapper")
 local AuctionHouse = TSM.LibTSMWoW:Include("API.AuctionHouse")
 local DefaultUI = TSM.LibTSMWoW:Include("UI.DefaultUI")
+local SoundAlert = TSM.LibTSMWoW:Include("UI.SoundAlert")
 local Group = TSM.LibTSMTypes:Include("Group")
 local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
 local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
@@ -799,7 +799,7 @@ function private.ActionHandler(manager, state, action, ...)
 	elseif action == "ACTION_SCAN_COMPLETED" then
 		AuctionScan.ReleaseLock(L["Auctioning"])
 		state.scanThreadId = nil
-		Sound.PlaySound(private.settings.scanCompleteSound)
+		SoundAlert.Play(private.settings.scanCompleteSound)
 		state.scanProgress = 1
 		state.isScanning = false
 		if state.statusTotalNum == 0 then
@@ -904,7 +904,7 @@ function private.ActionHandler(manager, state, action, ...)
 		elseif isDone then
 			state.canStartNewScan = true
 			AuctionHouseWrapper.AutoQueryOwnedAuctions()
-			Sound.PlaySound(private.settings.confirmCompleteSound)
+			SoundAlert.Play(private.settings.confirmCompleteSound)
 		end
 		private.UpdateScanFrame(state)
 	elseif action == "ACTION_SKIP_AUCTION" then
@@ -925,7 +925,7 @@ function private.ActionHandler(manager, state, action, ...)
 		elseif isDone then
 			state.canStartNewScan = true
 			AuctionHouseWrapper.AutoQueryOwnedAuctions()
-			Sound.PlaySound(private.settings.confirmCompleteSound)
+			SoundAlert.Play(private.settings.confirmCompleteSound)
 		end
 		private.UpdateScanFrame(state)
 	elseif action == "ACTION_RESCAN" then

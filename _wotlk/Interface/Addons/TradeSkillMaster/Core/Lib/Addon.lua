@@ -10,7 +10,7 @@ local Analytics = TSM.LibTSMUtil:Include("Util.Analytics")
 local Event = TSM.LibTSMWoW:Include("Service.Event")
 local Log = TSM.LibTSMUtil:Include("Util.Log")
 local LibTSMClass = TSM.Include("LibTSMClass")
-local AddonSettings = TSM.Include("App.Lib.AddonSettings")
+local AddonSettings = TSM.LibTSMApp:Include("Lib.AddonSettings")
 local private = {
 	eventFrames = {},
 	initializeQueue = {},
@@ -50,12 +50,9 @@ function private.DoInitialize()
 				Log.Warn("Loading %s->%s took %0.5fs", component, path, moduleLoadTime)
 			end
 		end
-		for _, path, moduleLoadTime, settingsLoadTime in TSM.ModuleInfoIterator() do
+		for _, path, moduleLoadTime in TSM.ModuleInfoIterator() do
 			if moduleLoadTime > TIME_WARNING_THRESHOLD then
 				Log.Warn("Loading module %s took %0.5fs", path, moduleLoadTime)
-			end
-			if settingsLoadTime > TIME_WARNING_THRESHOLD then
-				Log.Warn("Loading settings for %s took %0.5fs", path, settingsLoadTime)
 			end
 		end
 	end
@@ -78,7 +75,7 @@ function private.DoEnable()
 		tinsert(private.disableQueue, addon)
 	end
 	if private.totalEnableTime == 0 then
-		for _, path, _, _, gameDataLoadTime in TSM.ModuleInfoIterator() do
+		for _, path, _, gameDataLoadTime in TSM.ModuleInfoIterator() do
 			if (gameDataLoadTime or 0) > TIME_WARNING_THRESHOLD then
 				Log.Warn("Loading game data for %s took %0.5fs", path, gameDataLoadTime)
 			end
@@ -209,7 +206,7 @@ end
 function TSM.AddonTestLogout()
 	private.OnDisableHelper()
 	TSM.DebugLogout()
-	for _, path, _, _, _, moduleUnloadTime in TSM.ModuleInfoIterator() do
+	for _, path, _, _, moduleUnloadTime in TSM.ModuleInfoIterator() do
 		if moduleUnloadTime > TIME_WARNING_THRESHOLD then
 			Log.Warn("Unloading %s took %0.5fs", path, moduleUnloadTime)
 		end

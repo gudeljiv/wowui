@@ -66,7 +66,6 @@ end)
 ---@return boolean
 function AuctionHouse.IsSellable(bag, slot)
 	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
-	private.itemLocation:Clear()
 	private.itemLocation:SetBagAndSlot(bag, slot)
 	return private.itemLocation:IsValid() and C_AuctionHouse.IsSellItemValid(private.itemLocation, false)
 end

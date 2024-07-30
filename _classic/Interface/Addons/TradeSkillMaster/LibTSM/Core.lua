@@ -7,6 +7,7 @@
 local ADDON_NAME = select(1, ...)
 local TSM = select(2, ...) ---@class TSM
 local LibTSMClass = LibStub("LibTSMClass")
+local AddonSettings = TSM.LibTSMApp:Include("Lib.AddonSettings")
 local private = {
 	context = {},
 	initOrder = {},
@@ -15,7 +16,6 @@ local private = {
 	gotAddonLoaded = false,
 	gotPlayerLogin = false,
 	gotPlayerLogout = false,
-	settingsLoader = nil,
 	startSystemTime = GetTimePreciseSec(),
 	startTime = time(),
 }
@@ -43,8 +43,7 @@ end
 ---@param func fun(db: SettingsDB) The function to call
 function MODULE_METHODS:OnSettingsLoad(func)
 	local context = private.context[self]
-	assert(context and not context.settingsLoadFunc and not context.settingsLoadTime and type(func) == "function")
-	context.settingsLoadFunc = func
+	AddonSettings.RegisterOnLoad(context.path, func)
 end
 
 ---Registers the function be called once game data is available.
@@ -96,8 +95,6 @@ function TSM.Init(path)
 		module = moduleObj,
 		moduleLoadFunc = nil,
 		moduleLoadTime = nil,
-		settingsLoadFunc = nil,
-		settingsLoadTime = nil,
 		gameDataLoadFunc = nil,
 		gameDataLoadTime = nil,
 		moduleUnloadFunc = nil,
@@ -123,7 +120,7 @@ function TSM.Include(path)
 end
 
 ---Returns an iterator over all available modules.
----@return fun(): number, string, number, number, number, number # An iterator with fields: `index`, `path`, `loadTime`, `settingsLoadTime`, `gameDataLoadTime`, `moduleUnloadTime`
+---@return fun(): number, string, number, number, number, number # An iterator with fields: `index`, `path`, `loadTime`, `gameDataLoadTime`, `moduleUnloadTime`
 function TSM.ModuleInfoIterator()
 	return private.ModuleInfoIterator, nil, 0
 end
@@ -137,13 +134,6 @@ end
 ---@return boolean
 function TSM.IsLibTSMLoaded()
 	return private.gotAddonLoaded
-end
-
----Sets the function which is responsible for loading the settingsDB.
----@param func fun(): SettingsDB
-function TSM.SetSettingsLoader(func)
-	assert(not private.settingsLoader)
-	private.settingsLoader = func
 end
 
 ---Returns whether or not we're running a dev version.
@@ -178,7 +168,7 @@ function private.ModuleInfoIterator(_, index)
 	end
 	local context = private.context[path]
 	assert(context)
-	return index, path, context.moduleLoadTime, context.settingsLoadTime, context.gameDataLoadTime, context.moduleUnloadTime
+	return index, path, context.moduleLoadTime, context.gameDataLoadTime, context.moduleUnloadTime
 end
 
 function private.ProcessModuleLoad(path)
@@ -194,21 +184,6 @@ function private.ProcessModuleLoad(path)
 		local startTime = GetTimePreciseSec()
 		context.moduleLoadFunc()
 		context.moduleLoadTime = GetTimePreciseSec() - startTime
-	end
-end
-
-function private.ProcessSettingsLoad(path, db)
-	local context = private.context[path]
-	assert(context)
-	if context.settingsLoadTime then
-		-- Already loaded
-		return
-	end
-	context.settingsLoadTime = 0
-	if context.settingsLoadFunc then
-		local startTime = GetTimePreciseSec()
-		context.settingsLoadFunc(db)
-		context.settingsLoadTime = GetTimePreciseSec() - startTime
 	end
 end
 
@@ -260,11 +235,7 @@ function private.OnEvent(_, event, arg)
 			private.ProcessModuleLoad(path)
 		end
 		-- Load settings
-		local db = private.settingsLoader()
-		-- Settings are now available
-		for _, path in ipairs(private.loadOrder) do
-			private.ProcessSettingsLoad(path, db)
-		end
+		AddonSettings.LoadDB()
 		private.frame:UnregisterEvent("ADDON_LOADED")
 	elseif event == "PLAYER_LOGIN" then
 		assert(private.gotAddonLoaded and not private.gotPlayerLogin and not private.gotPlayerLogout)

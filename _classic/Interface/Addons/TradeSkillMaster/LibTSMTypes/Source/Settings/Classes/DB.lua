@@ -46,10 +46,9 @@ local DEFAULT_DB = {
 ---@param characterName string The current character name
 ---@param connectedRealms? string[] Connected realm names
 ---@param accessibleFactions string[] Accessible faction names
----@param errIfInvalid boolean Error if the saved DB is invalid (useful for dev versions)
 ---@return SettingsDB
 ---@return SettingsMigration
-function SettingsDB.__static.New(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions, errIfInvalid)
+function SettingsDB.__static.New(name, schema, realmName, factionName, characterName, connectedRealms, accessibleFactions)
 	assert(type(name) == "string")
 	local currentScopeKeys = {
 		global = Types.GLOBAL_SCOPE_KEY,
@@ -74,16 +73,16 @@ function SettingsDB.__static.New(name, schema, realmName, factionName, character
 		isValid = false
 	elseif not private.ValidateTable(tbl, schema:GetMinimumVersion()) then
 		-- Corrupted
-		assert(not errIfInvalid, "DB is not valid!")
+		assert(LibTSMTypes.IsDevVersion() or LibTSMTypes.IsTestVersion(), "DB is not valid!")
 		isValid = false
 	elseif tbl._version == schema:GetVersion() and tbl._hash ~= schema:GetHash() then
 		-- The hash didn't match
-		assert(not errIfInvalid, "Invalid settings hash! Did you forget to increase the version?")
+		assert(LibTSMTypes.IsDevVersion() or LibTSMTypes.IsTestVersion(), "Invalid settings hash! Did you forget to increase the version?")
 		isValid = false
 	elseif tbl._syncOwner and tbl._syncOwner[currentScopeKeys.sync] and tbl._syncOwner[currentScopeKeys.sync] ~= tbl._syncAccountKey[currentScopeKeys.factionrealm] then
 		-- We aren't the owner of this character, so wipe the DB and show a manual error
 		userError = true
-		assert(not errIfInvalid, "Settings are corrupted due to manual copying of saved variables file")
+		assert(LibTSMTypes.IsDevVersion() or LibTSMTypes.IsTestVersion(), "Settings are corrupted due to manual copying of saved variables file")
 		isValid = false
 	end
 	if not isValid then
@@ -590,12 +589,14 @@ function SettingsDB:_DeleteScope(scopeType, scopeKey)
 	Table.RemoveByValue(self._tbl._scopeKeys[scopeType], scopeKey)
 end
 
-function SettingsDB:_AccessibleCharacterIteratorHelper(accountFilter, factionrealm, altsOnly)
+function SettingsDB.__private:_AccessibleCharacterIteratorHelper(accountFilter, factionrealm, altsOnly)
+	local realm = strmatch(factionrealm, "^.+"..String.Escape(Types.SCOPE_KEY_SEP).."(.+)$")
+	assert(realm)
 	local result = TempTable.Acquire()
 	for scopeKey, ownerAccount in pairs(self._tbl._syncOwner) do
 		if not accountFilter or ownerAccount == accountFilter then
 			local character = strmatch(scopeKey, "^(.+)"..String.Escape(Types.SCOPE_KEY_SEP..factionrealm))
-			if character and (not altsOnly or factionrealm ~= self._currentScopeKeys.factionrealm or character ~= self._currentScopeKeys.char) then
+			if character and (not altsOnly or factionrealm ~= self._currentScopeKeys.factionrealm or strjoin(Types.SCOPE_KEY_SEP, character, realm) ~= self._currentScopeKeys.char) then
 				tinsert(result, character)
 			end
 		end

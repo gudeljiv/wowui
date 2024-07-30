@@ -40,6 +40,27 @@ do
 		end
 	end
 end
+---@type table<TSMSoundKey,string>
+local SOUND_DESCRIPTIONS = {
+	["TSM_NO_SOUND"] = "<"..L["No Sound"]..">",
+	["TSM_CASH_REGISTER"] = L["Cash Register"],
+	["AuctionWindowOpen"] = L["Auction Window Open"],
+	["AuctionWindowClose"] = L["Auction Window Close"],
+	["alarmclockwarning3"] = L["Alarm Clock"],
+	["UI_AutoQuestComplete"] = L["Auto Quest Complete"],
+	["HumanExploration"] = L["Exploration"],
+	["Fishing Reel in"] = L["Fishing Reel In"],
+	["LevelUp"] = L["Level Up"],
+	["MapPing"] = L["Map Ping"],
+	["MONEYFRAMEOPEN"] = L["Money Frame Open"],
+	["IgPlayerInviteAccept"] = L["Player Invite Accept"],
+	["QUESTADDED"] = L["Quest Added"],
+	["QUESTCOMPLETED"] = L["Quest Completed"],
+	["UI_QuestObjectivesComplete"] = L["Quest Objectives Complete"],
+	["RaidWarning"] = L["Raid Warning"],
+	["ReadyCheck"] = L["Ready Check"],
+	["UnwrapGift"] = L["Unwrap Gift"],
+}
 
 
 
@@ -124,4 +145,13 @@ function UIUtils.HandleModifiedItemClick(itemString)
 		return
 	end
 	Item.HandleModifiedItemClick(link)
+end
+
+---Gets the localized description of a sound.
+---@param soundKey TSMSoundKey
+---@return string
+function UIUtils.GetSoundDescription(soundKey)
+	local description = SOUND_DESCRIPTIONS[soundKey]
+	assert(description)
+	return description
 end

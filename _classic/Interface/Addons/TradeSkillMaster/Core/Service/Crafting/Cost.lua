@@ -6,7 +6,6 @@
 
 local TSM = select(2, ...) ---@type TSM
 local Cost = TSM.Crafting:NewPackage("Cost") ---@type AddonPackage
-local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
 local Math = TSM.LibTSMUtil:Include("Lua.Math")
 local OptionalMatData = TSM.LibTSMData:Include("OptionalMat")
@@ -202,7 +201,13 @@ end
 function private.GetOptionalMats(itemString, resultTbl)
 	ItemString.GetStatModifiers(itemString, true, resultTbl)
 	for i = #resultTbl, 1, -1 do
-		local statOptionalMat = ProfessionInfo.GetOptionalMatByStatModifier(resultTbl[i])
+		local statOptionalMat = nil
+		for optionalMatItemString, info in pairs(OptionalMatData.Info) do
+			if info.statModifier == resultTbl[i] then
+				statOptionalMat = optionalMatItemString
+				break
+			end
+		end
 		if statOptionalMat then
 			resultTbl[i] = statOptionalMat
 		else
@@ -210,19 +215,27 @@ function private.GetOptionalMats(itemString, resultTbl)
 		end
 	end
 	local itemLevel = ItemString.GetItemLevel(itemString)
-	local levelOptionalMat = itemLevel and ProfessionInfo.GetOptionalMatByItemLevel(itemLevel) or nil
-	if levelOptionalMat then
-		tinsert(resultTbl, levelOptionalMat)
+	if itemLevel then
+		for optionalMatItemString, info in pairs(OptionalMatData.Info) do
+			if info.absItemLevel == itemLevel then
+				tinsert(resultTbl, optionalMatItemString)
+				break
+			end
+		end
 	end
 	local relItemLevel, isAbs = ItemString.ParseLevel(ItemString.ToLevel(itemString))
 	if not isAbs then
 		local levelItemString = ItemString.ToLevel(itemString)
 		for _, craftString in TSM.Crafting.GetCraftStringByItem(levelItemString) do
 			local level = CraftString.GetLevel(craftString)
-			local optionalMatItemString = level and ProfessionInfo.GetOptionalMatByRelItemLevel(relItemLevel)
-			if relItemLevel and optionalMatItemString then
-				tinsert(resultTbl, optionalMatItemString)
-				relItemLevel = nil
+			if level and relItemLevel then
+				for optionalMatItemString, info in pairs(OptionalMatData.Info) do
+					if info.relItemLevels and info.relItemLevels[relItemLevel] and not info.ignored then
+						tinsert(resultTbl, optionalMatItemString)
+						relItemLevel = nil
+						break
+					end
+				end
 			end
 		end
 	end

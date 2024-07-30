@@ -138,7 +138,7 @@ end
 ---@param stackSize number The stack size
 function PendingMail.HandleAuctionPurchase(levelItemString, stackSize)
 	if not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
-		-- Auction buys handles via a secure hook
+		-- Auction buys handled via a secure hook
 		return
 	end
 	private.ChangePendingMailQuantity(levelItemString, stackSize)
