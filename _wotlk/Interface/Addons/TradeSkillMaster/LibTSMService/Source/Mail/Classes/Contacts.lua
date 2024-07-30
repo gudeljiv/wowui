@@ -11,7 +11,6 @@ local Guild = LibTSMService:From("LibTSMWoW"):Include("API.Guild")
 local CharacterInfo = LibTSMService:From("LibTSMWoW"):Include("Util.CharacterInfo")
 local SessionInfo = LibTSMService:From("LibTSMWoW"):Include("Util.SessionInfo")
 local TempTable = LibTSMService:From("LibTSMUtil"):Include("BaseType.TempTable")
-local String = LibTSMService:From("LibTSMUtil"):Include("Lua.String")
 local Table = LibTSMService:From("LibTSMUtil"):Include("Lua.Table")
 local private = {
 	settingsDB = nil,
@@ -45,9 +44,10 @@ end
 ---@return fun(): string @Iterator with fields: `name`
 function Contacts.AltIterator(regionWide)
 	local result = TempTable.Acquire()
-	for _, factionrealm in private.settingsDB:AccessibleRealmIterator("realm", not regionWide) do
+	for _, factionrealm in private.settingsDB:AccessibleRealmIterator("factionrealm", not regionWide) do
+		local realm = gsub(strmatch(factionrealm, "^[^%-]+ %- (.+)$"), "%-", "")
 		for _, character in private.settingsDB:AccessibleCharacterIterator(nil, factionrealm) do
-			character = CharacterInfo.Ambiguate(gsub(strmatch(character, "(.*) "..String.Escape("-")).."-"..gsub(factionrealm, String.Escape("-"), ""), " ", ""), "none")
+			character = CharacterInfo.Ambiguate(gsub(character.."-"..realm, " ", ""), "none")
 			if character ~= SessionInfo.GetCharacterName() then
 				result[character] = true
 			end

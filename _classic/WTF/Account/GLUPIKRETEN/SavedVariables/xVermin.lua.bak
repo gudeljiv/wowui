@@ -82,6 +82,8 @@ xVerminSavedData = {
 "Faerie Fire (Feral)",
 "rake",
 "Instant Poison II",
+"Deep Wound",
+"Rend",
 },
 ["Dreamharvester"] = {
 "Deep Wound",

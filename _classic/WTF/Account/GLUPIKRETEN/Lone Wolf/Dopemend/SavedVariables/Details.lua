@@ -59,7 +59,7 @@ _detalhes_database = {
 ["utility"] = false,
 },
 },
-["last_version"] = "1.15.3 12819",
+["last_version"] = "1.15.3 12822",
 ["player_stats"] = {
 },
 ["SoloTablesSaved"] = {
@@ -151,7 +151,7 @@ _detalhes_database = {
 },
 ["last_instance_time"] = 0,
 ["active_profile"] = "xVermin",
-["last_realversion"] = 158,
+["last_realversion"] = 159,
 ["ignore_nicktag"] = false,
 ["combat_log"] = {
 ["merge_gemstones_1007"] = false,
@@ -163,6 +163,14 @@ _detalhes_database = {
 ["track_hunter_frenzy"] = false,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
+},
+["character_data"] = {
+["logons"] = 261,
+},
+["mythic_plus_log"] = {
+},
+["last_day"] = "30",
+["cached_roles"] = {
 },
 ["local_instances_config"] = {
 {
@@ -236,8 +244,6 @@ _detalhes_database = {
 },
 },
 },
-["mythic_plus_log"] = {
-},
 ["mythic_dungeon_currentsaved"] = {
 ["dungeon_name"] = "",
 ["started"] = false,
@@ -249,14 +255,7 @@ _detalhes_database = {
 ["dungeon_zone_id"] = 0,
 ["previous_boss_killed_at"] = 0,
 },
-["cached_roles"] = {
-},
-["data_harvested_for_charts"] = {
-},
 ["cached_talents"] = {
-},
-["character_data"] = {
-["logons"] = 259,
 },
 ["benchmark_db"] = {
 ["frame"] = {
@@ -287,7 +286,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["micro_displays_locked"] = false,
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -455,13 +454,13 @@ false,
 },
 },
 ["show_sidebars"] = false,
-["bg_alpha"] = 0,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["name"] = "vermin",
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -503,7 +502,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["skin_custom"] = "vermin",
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -519,11 +518,14 @@ false,
 0.07058823529411765,
 },
 },
-["bars_grow_direction"] = 1,
 ["row_show_animation"] = {
 ["anim"] = "Fade",
 ["options"] = {
 },
+},
+["menu_anchor_down"] = {
+16,
+-3,
 },
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
@@ -542,18 +544,15 @@ false,
 0,
 1,
 },
-["menu_anchor_down"] = {
-16,
--3,
-},
+["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["bars_sort_direction"] = 1,
+["skin_custom"] = "vermin",
 ["switch_damager"] = {
 1,
 1,
 1,
 },
-["version"] = 3,
+["bg_alpha"] = 0,
 ["hide_in_combat"] = false,
 ["row_info"] = {
 ["textR_outline"] = false,
@@ -707,7 +706,7 @@ false,
 ["channel"] = "SELF",
 ["reverse"] = false,
 },
-["combat_counter"] = 994,
+["combat_counter"] = 998,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -742,7 +741,7 @@ false,
 },
 ["raid_roster"] = {
 },
-["tempo_start"] = 2517889.415,
+["tempo_start"] = 2539719.499,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
@@ -835,10 +834,9 @@ false,
 ["start_time"] = 0,
 ["TimeData"] = {
 },
-["combat_counter"] = 993,
+["combat_counter"] = 997,
 },
 ["force_font_outline"] = "",
-["last_day"] = "30",
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
@@ -882,7 +880,10 @@ false,
 0.5,
 },
 ["use_square_mode"] = false,
-["arrow_anchor_y"] = 0,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
@@ -893,16 +894,26 @@ false,
 ["point"] = "RIGHT",
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["author"] = "Details! Team",
 ["row_color"] = {
 0.443137254901961,
 0.592156862745098,
 1,
 0.480826139450073,
 },
+["author"] = "Details! Team",
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
+["font_size"] = 10,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["main_frame_strata"] = "LOW",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 ["per_second"] = {
 ["enabled"] = false,
 ["point"] = "CENTER",
@@ -914,28 +925,17 @@ false,
 ["update_speed"] = 0.05,
 ["attribute_type"] = 1,
 },
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["main_frame_strata"] = "LOW",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
-["font_size"] = 10,
+["use_spark"] = false,
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["use_spark"] = false,
+["y"] = -183.107162475586,
 ["scale"] = 1,
 ["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
+["arrow_anchor_y"] = 0,
 },
 },
+["data_harvested_for_charts"] = {
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

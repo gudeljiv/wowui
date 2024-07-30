@@ -54,8 +54,8 @@ function PlayerInfo.GetConnectedAlts()
 	wipe(private.connectedAlts)
 	for _, factionrealm in private.settingsDB:AccessibleRealmIterator("factionrealm", not private.settings.regionWide) do
 		for _, character in private.settingsDB:AccessibleCharacterIterator(nil, factionrealm) do
-			local realm = strmatch(factionrealm, ".+ %- (.+)")
-			character = Ambiguate(gsub(strmatch(character, "(.*) ?"..String.Escape("-").."?").."-"..gsub(realm, String.Escape("-"), ""), " ", ""), "none")
+			local realm = gsub(strmatch(factionrealm, "^[^%-]+ %- (.+)$"), "%-", "")
+			character = Ambiguate(gsub(character.."-"..realm, " ", ""), "none")
 			if character ~= SessionInfo.GetCharacterName() then
 				tinsert(private.connectedAlts, character)
 			end

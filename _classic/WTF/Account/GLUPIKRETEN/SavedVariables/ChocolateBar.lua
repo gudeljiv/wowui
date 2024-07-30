@@ -898,9 +898,9 @@ CB_PlayedTime = {
 ["total"] = 271466,
 },
 ["Dopemend-LoneWolf"] = {
-["total"] = 44077,
-["timeStamp"] = 2517893.907,
-["timeAtThisLevel"] = 18281,
+["total"] = 44497,
+["timeStamp"] = 2539724.248,
+["timeAtThisLevel"] = 18701,
 },
 ["Mxym-"] = {
 ["total"] = 4765,
@@ -980,9 +980,9 @@ CB_PlayedTime = {
 ["timeAtThisLevel"] = 46960,
 },
 ["Doperage-LoneWolf"] = {
-["total"] = 172252,
-["timeStamp"] = 2516551.7,
-["timeAtThisLevel"] = 436,
+["total"] = 176973,
+["timeStamp"] = 2538328.995,
+["timeAtThisLevel"] = 5157,
 },
 ["Mxyzptlk-"] = {
 ["total"] = 8794,
