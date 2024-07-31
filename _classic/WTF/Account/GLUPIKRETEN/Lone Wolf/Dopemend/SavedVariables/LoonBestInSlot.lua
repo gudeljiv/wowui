@@ -33,10 +33,10 @@ LBISSettings = {
 ["hide"] = true,
 },
 ["PhaseTooltip"] = {
-["Phase 3"] = true,
-["Phase 4"] = true,
-["Phase 2"] = true,
 ["Phase 1"] = true,
+["Phase 3"] = true,
+["Phase 2"] = true,
+["Phase 4"] = true,
 },
 ["SelectedRank"] = "All",
 ["HideObsolete"] = false,

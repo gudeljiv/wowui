@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+["session"] = 12562,
 ["lastSanitation"] = 3,
-["session"] = 12553,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near '�'",
-["session"] = 10254,
 ["time"] = "2023/09/07 16:02:46",
+["session"] = 10254,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near '�'",
-["session"] = 10254,
 ["time"] = "2023/09/07 16:02:46",
+["session"] = 10254,
 ["counter"] = 1,
 },
 {
@@ -81,14 +81,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near '�'",
-["session"] = 10256,
 ["time"] = "2023/09/07 16:04:17",
+["session"] = 10256,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near '�'",
-["session"] = 10256,
 ["time"] = "2023/09/07 16:04:17",
+["session"] = 10256,
 ["counter"] = 1,
 },
 {
@@ -173,14 +173,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-["session"] = 10304,
 ["time"] = "2023/09/08 20:53:46",
+["session"] = 10304,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-["session"] = 10304,
 ["time"] = "2023/09/08 20:53:46",
+["session"] = 10304,
 ["counter"] = 1,
 },
 {
@@ -289,14 +289,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-["time"] = "2023/09/09 20:42:15",
 ["session"] = 10351,
+["time"] = "2023/09/09 20:42:15",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-["time"] = "2023/09/09 20:42:15",
 ["session"] = 10351,
+["time"] = "2023/09/09 20:42:15",
 ["counter"] = 1,
 },
 {
@@ -477,14 +477,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-["session"] = 10438,
 ["time"] = "2023/09/15 14:05:59",
+["session"] = 10438,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-["session"] = 10438,
 ["time"] = "2023/09/15 14:05:59",
+["session"] = 10438,
 ["counter"] = 1,
 },
 {
@@ -529,14 +529,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-["session"] = 10456,
 ["time"] = "2023/09/16 12:30:04",
+["session"] = 10456,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-["session"] = 10456,
 ["time"] = "2023/09/16 12:30:04",
+["session"] = 10456,
 ["counter"] = 1,
 },
 {
@@ -677,14 +677,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-["time"] = "2023/09/25 11:41:10",
 ["session"] = 10571,
+["time"] = "2023/09/25 11:41:10",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-["time"] = "2023/09/25 11:41:10",
 ["session"] = 10571,
+["time"] = "2023/09/25 11:41:10",
 ["counter"] = 1,
 },
 {
@@ -761,14 +761,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-["session"] = 10630,
 ["time"] = "2023/09/29 10:14:29",
+["session"] = 10630,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-["session"] = 10630,
 ["time"] = "2023/09/29 10:14:29",
+["session"] = 10630,
 ["counter"] = 1,
 },
 {
@@ -781,14 +781,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-["session"] = 10634,
 ["time"] = "2023/09/29 10:40:13",
+["session"] = 10634,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-["session"] = 10634,
 ["time"] = "2023/09/29 10:40:13",
+["session"] = 10634,
 ["counter"] = 1,
 },
 {
@@ -969,38 +969,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
@@ -1013,14 +1013,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-["session"] = 10768,
 ["time"] = "2023/10/12 13:05:29",
+["session"] = 10768,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-["session"] = 10768,
 ["time"] = "2023/10/12 13:05:29",
+["session"] = 10768,
 ["counter"] = 1,
 },
 {
@@ -1153,14 +1153,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-["session"] = 10843,
 ["time"] = "2023/10/24 10:11:42",
+["session"] = 10843,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-["session"] = 10843,
 ["time"] = "2023/10/24 10:11:42",
+["session"] = 10843,
 ["counter"] = 2,
 },
 {
@@ -1237,14 +1237,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-["session"] = 10877,
 ["time"] = "2023/10/27 10:26:52",
+["session"] = 10877,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-["session"] = 10877,
 ["time"] = "2023/10/27 10:26:52",
+["session"] = 10877,
 ["counter"] = 2,
 },
 {
@@ -1321,14 +1321,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0-3/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-["session"] = 10932,
 ["time"] = "2023/11/18 11:01:21",
+["session"] = 10932,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-["session"] = 10932,
 ["time"] = "2023/11/18 11:01:21",
+["session"] = 10932,
 ["counter"] = 1,
 },
 {
@@ -1373,14 +1373,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-["session"] = 11014,
 ["time"] = "2023/12/15 11:10:59",
+["session"] = 11014,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-["session"] = 11014,
 ["time"] = "2023/12/15 11:10:59",
+["session"] = 11014,
 ["counter"] = 1,
 },
 {
@@ -2121,14 +2121,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["time"] = "2024/01/19 11:37:15",
 ["session"] = 11383,
+["time"] = "2024/01/19 11:37:15",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["time"] = "2024/01/19 11:37:15",
 ["session"] = 11383,
+["time"] = "2024/01/19 11:37:15",
 ["counter"] = 1,
 },
 {
@@ -2325,14 +2325,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["time"] = "2024/01/21 18:11:39",
 ["session"] = 11425,
+["time"] = "2024/01/21 18:11:39",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["time"] = "2024/01/21 18:11:39",
 ["session"] = 11425,
+["time"] = "2024/01/21 18:11:39",
 ["counter"] = 1,
 },
 {
@@ -2569,14 +2569,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["time"] = "2024/01/27 20:37:53",
 ["session"] = 11521,
+["time"] = "2024/01/27 20:37:53",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["time"] = "2024/01/27 20:37:53",
 ["session"] = 11521,
+["time"] = "2024/01/27 20:37:53",
 ["counter"] = 1,
 },
 {
@@ -2645,14 +2645,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["time"] = "2024/02/24 19:15:41",
 ["session"] = 11661,
+["time"] = "2024/02/24 19:15:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["time"] = "2024/02/24 19:15:41",
 ["session"] = 11661,
+["time"] = "2024/02/24 19:15:41",
 ["counter"] = 1,
 },
 {
@@ -2857,14 +2857,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["time"] = "2024/03/07 11:31:22",
 ["session"] = 11847,
+["time"] = "2024/03/07 11:31:22",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["time"] = "2024/03/07 11:31:22",
 ["session"] = 11847,
+["time"] = "2024/03/07 11:31:22",
 ["counter"] = 1,
 },
 {
@@ -2901,14 +2901,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["session"] = 11923,
 ["time"] = "2024/03/16 18:39:55",
+["session"] = 11923,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["session"] = 11923,
 ["time"] = "2024/03/16 18:39:55",
+["session"] = 11923,
 ["counter"] = 2,
 },
 {
@@ -3009,38 +3009,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
@@ -3173,14 +3173,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["time"] = "2024/04/02 13:37:38",
 ["session"] = 12085,
+["time"] = "2024/04/02 13:37:38",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["time"] = "2024/04/02 13:37:38",
 ["session"] = 12085,
+["time"] = "2024/04/02 13:37:38",
 ["counter"] = 1,
 },
 {
@@ -3689,14 +3689,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["time"] = "2024/04/20 17:32:12",
 ["session"] = 12411,
+["time"] = "2024/04/20 17:32:12",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["time"] = "2024/04/20 17:32:12",
 ["session"] = 12411,
+["time"] = "2024/04/20 17:32:12",
 ["counter"] = 3,
 },
 {
@@ -3797,26 +3797,26 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Engraver/Engraver.toc:1 Couldn't open Interface/AddOns/Engraver/Engraver.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Couldn't open Interface/AddOns/Engraver/Bindings.xml",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/RuneBar/RuneBar.toc:1 Couldn't open Interface/AddOns/RuneBar/RuneBar.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc:1 Couldn't open Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
@@ -3917,45 +3917,125 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMWoW/LibTSMWoW.xml:14 Error loading Interface/AddOns/TradeSkillMaster/Source/UI/SoundAlert.lua",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMUI/LibTSMUI.xml:153 Error loading Interface/AddOns/TradeSkillMaster/Source/Settings/SoundDropdown.lua",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/TradeSkillMaster.toc:31 Couldn't open Interface/AddOns/TradeSkillMaster/LibTSMApp/LibTSMApp.xml",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
-["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
-["time"] = "2023/10/19 21:06:56",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12552,
-["counter"] = 43,
+["message"] = "Interface/AddOns/AdiBags/core/Experiments.lua:41: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n baseName = \"AdiBags\"\n defaultModuleLibraries = <table> {\n }\n defaultModuleState = true\n CreateAllExperiments = <function> defined @Interface/AddOns/AdiBags/core/Experiments.lua:68\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n Enabled = <function> defined @Interface/AddOns/AdiBags/core/Experiments.lua:63\n enabledState = false\n CreateExperiment = <function> defined @Interface/AddOns/AdiBags/core/Experiments.lua:36\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/core/Experiments.lua:30\n moduleName = \"Experiments\"\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n GetOptions = <function> defined @Interface/AddOns/AdiBags/core/Experiments.lua:76\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n name = \"AdiBags_Experiments\"\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n}\nexp = <table> {\n Percent = 1\n Name = \"Bag Lag Fix\"\n Description = \"This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.\"\n}\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"Experiment percent must be between 0 and 100\"\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:374\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n Filter = <function> defined @Interface/AddOns/AdiBags/core/Filters.lua:146\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n Reconfigure = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:216\n SetupTooltip = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:133\n GetContainerItemTextureCountLocked = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:448\n DeleteTheme = <function> defined @Interface/AddOns/AdiBags/core/Theme.lua:92\n hooks = <table> {\n }\n GetDistinctItemID = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:309\n CreateFont = <function> defined @Interface/AddOns/AdiBags/core/Fonts.lua:125\n isClassic = true\n OpenOptions = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:298\n GetFamilyTag = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:400\n Hook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:273\n IterateBags ",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/core/Experiments.lua\"]:41: in function `CreateExperiment'\n[string \"@Interface/AddOns/AdiBags/core/Experiments.lua\"]:69: in function `CreateAllExperiments'\n[string \"@Interface/AddOns/AdiBags/core/Experiments.lua\"]:31: in function <Interface/AddOns/AdiBags/core/Experiments.lua:30>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
 },
 {
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
-["time"] = "2024/02/07 16:32:18",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
-["session"] = 12552,
-["counter"] = 4,
+["message"] = "Interface/AddOns/AdiBags/modules/DataSource.lua:59: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n BANKFRAME_OPENED = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:87\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n cannotDisable = true\n name = \"AdiBags_DataSource\"\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n RegisterBucketEvent = <function> defined @Interface/AddOns/AdiBags/core/EventHandlers.lua:120\n baseName = \"AdiBags\"\n uiName = \"LDB Plugin\"\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:181\n Update = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:172\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n BANKFRAME_CLOSED = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:99\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:71\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/DataSource.lua:58\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n UnregisterAllBuckets = <function> defined @Interface/AddOns/AdiBags/core/EventHandlers.lua:135\n enabledState = false\n uiDesc = \"Provides a LDB data source to be displayed by LDB display addons.\"\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n UnregisterBucket = <function> defined @Interface/AddOns/AdiBags/core/EventHandlers.lua:128\n RegisterBucketMessage = <function> defined @Interface/AddOns/AdiBags/core/EventHandlers.lua:124\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n defaultModuleState = true\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"DataSource\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <functi",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/DataSource.lua\"]:59: in function <Interface/AddOns/AdiBags/modules/DataSource.lua:58>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/NewItemTracking.lua:61: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:192\n name = \"AdiBags_NewItem\"\n Filter = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:181\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n baseName = \"AdiBags\"\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n priority = 80\n ShowBlizzardGlow = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:245\n BAG_NEW_ITEMS_UPDATED = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:174\n UpdateModuleButton = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:144\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n IsNew = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:158\n AddNewItem = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:148\n uiName = \"Track new items\"\n filterName = \"NewItem\"\n uiDesc = \"Track new items in each bag, displaying a glowing aura over them and putting them in a special section. \"New\" status can be reset by clicking on the small \"N\" button at top left of bags.\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n OnBagFrameCreated = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:115\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnDisable = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:92\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:80\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:60\n enabledState = false\n UpdateButton = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:128\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n ShowLegacyGlow = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:309\n StopButtonGlow = <function> defined @Interface/AddOns/AdiBags/modules/NewItemTracking.lua:139\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n defaultModuleState = true\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"NewItem\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBag",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/NewItemTracking.lua\"]:61: in function <Interface/AddOns/AdiBags/modules/NewItemTracking.lua:60>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/MoneyFrame.lua:35: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/MoneyFrame.lua:75\n name = \"AdiBags_MoneyFrame\"\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n uiName = \"Money\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n baseName = \"AdiBags\"\n OnBagFrameCreated = <function> defined @Interface/AddOns/AdiBags/modules/MoneyFrame.lua:58\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnDisable = <function> defined @Interface/AddOns/AdiBags/modules/MoneyFrame.lua:52\n enabledState = false\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/MoneyFrame.lua:45\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/MoneyFrame.lua:34\n uiDesc = \"Display character money at bottom right of the backpack.\"\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n defaultModuleState = true\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"MoneyFrame\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:374\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n Filter = <function> defined @Interface/AddOns/AdiBags/core/Filters.lua:146\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n Reconfigure = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:216\n S",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/MoneyFrame.lua\"]:35: in function <Interface/AddOns/AdiBags/modules/MoneyFrame.lua:34>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/FilterOverride.lua:67: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n AssignItems = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:135\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:158\n name = \"AdiBags_FilterOverride\"\n Filter = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:128\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n OnClickSectionHeader = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:491\n baseName = \"AdiBags\"\n CURSOR_CHANGED = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:524\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n OptionPreselectItem = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:154\n uiName = \"Manual filtering\"\n OnTooltipUpdateSectionHeader = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:480\n UpdateOptions = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:154\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n OnDisable = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:124\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:116\n UpgradeProfile = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:77\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:64\n enabledState = false\n uiDesc = \"Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title.\"\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n priority = 95\n filterName = \"FilterOverride\"\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n defaultModuleState = true\n OnReceiveDragSectionHeader = <function> defined @Interface/AddOns/AdiBags/modules/FilterOverride.lua:502\n moduleName = \"FilterOverride\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*tempo",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/FilterOverride.lua\"]:67: in function <Interface/AddOns/AdiBags/modules/FilterOverride.lua:64>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/ItemLevel.lua:75: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n UpdateButton_Retail = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:137\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:254\n name = \"AdiBags_ItemLevel\"\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n uiName = \"Item level\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n baseName = \"AdiBags\"\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n UpdateButton_Classic = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:205\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:106\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnDisable = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:114\n enabledState = false\n UpdateButton = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:129\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/ItemLevel.lua:74\n uiDesc = \"Display the level of equippable item in the top left corner of the button.\"\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n defaultModuleState = true\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"ItemLevel\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:374\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n Filter = <",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/ItemLevel.lua\"]:75: in function <Interface/AddOns/AdiBags/modules/ItemLevel.lua:74>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/Junk.lua:78: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModuleLibraries = <table> {\n }\n baseName = \"AdiBags\"\n AdiBags_OverrideFilter = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:147\n RawHookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:394\n uiDesc = \"Put items of poor quality or labeled as junk in the \"Junk\" section.\"\n OnClickSectionHeader = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:187\n ExtendedCheckItem = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:118\n priority = 85\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:214\n BaseCheckItem = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:109\n IsJunk = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:139\n name = \"AdiBags_Junk\"\n Filter = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:143\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n OnDisable = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:105\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n CheckItem = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:122\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:82\n ADDON_LOADED = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:98\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:77\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Update = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:168\n uiName = \"Junk\"\n IsHooked = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:492\n OnTooltipUpdateSectionHeader = <function> defined @Interface/AddOns/AdiBags/modules/Junk.lua:177\n filterName = \"Junk\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n hooks = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n UnhookAll = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:476\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n Hook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:273\n enabledState = false\n Unhook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:417\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n SecureHookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:409\n HookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:365\n defaultModuleState = true\n IterateMod",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/Junk.lua\"]:78: in function <Interface/AddOns/AdiBags/modules/Junk.lua:77>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/modules/TooltipInfo.lua:47: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModuleLibraries = <table> {\n }\n RawHookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:394\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags/modules/TooltipInfo.lua:74\n name = \"AdiBags_TooltipInfo\"\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n baseName = \"AdiBags\"\n OnTooltipSetItem = <function> defined @Interface/AddOns/AdiBags/modules/TooltipInfo.lua:119\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n OnEnable = <function> defined @Interface/AddOns/AdiBags/modules/TooltipInfo.lua:54\n OnInitialize = <function> defined @Interface/AddOns/AdiBags/modules/TooltipInfo.lua:46\n IsHooked = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:492\n uiDesc = \"Add more information in tooltips related to items in your bags.\"\n uiName = \"Tooltip information\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n hooks = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n UnhookAll = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:476\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n Hook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:273\n enabledState = false\n Unhook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:417\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n SecureHookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:409\n HookScript = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:365\n defaultModuleState = true\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n RawHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:312\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"TooltipInfo\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n Acquire",
+["stack"] = "[string \"@Interface/AddOns/AdiBags/modules/TooltipInfo.lua\"]:47: in function <Interface/AddOns/AdiBags/modules/TooltipInfo.lua:46>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "...AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:44: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n UnregisterAllEvents = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n GetOptions = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:49\n name = \"AdiBags_ItemRackSets\"\n Filter = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:70\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n RegisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n uiName = \"ItemRack item sets\"\n baseName = \"AdiBags-ItemRackSets\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n OnDisable = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:65\n OnEnable = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:60\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n OnInitialize = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:43\n enabledState = false\n uiDesc = \"Put items belonging to one or more sets of ItemRack in specific sections.\"\n RegisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n UnregisterAllMessages = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n priority = 100\n filterName = \"ItemRackSets\"\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n SendMessage = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49\n defaultModuleState = true\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n moduleName = \"ItemRackSets\"\n UnregisterEvent = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n findSetsForItem = <function> defined @Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:104\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:374\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0",
+["stack"] = "[string \"@Interface/AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua\"]:44: in function <...AddOns/AdiBags-ItemRackSets/AdiBags-ItemRackSets.lua:43>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
+},
+{
+["message"] = "...rface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:30: attempt to index field 'db' (a nil value)",
+["time"] = "2024/07/31 09:34:11",
+["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:363\n Enable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:290\n filterName = \"Item Sets\"\n EnableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:328\n modules = <table> {\n }\n GetModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:206\n IterateEmbeds = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:438\n uiDesc = \"Put sets items in their own sections.\"\n GetName = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:275\n GetOptions = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:41\n name = \"AdiBags_Item Sets\"\n Filter = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:69\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:346\n Update = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:25\n uiName = \"Item Sets\"\n IsModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:213\n SetDefaultModuleState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:383\n SetEnabledState = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:420\n enabledState = false\n baseName = \"AdiBags_Item_Sets\"\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n defaultModuleState = true\n OnInitialize = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:29\n NewModule = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:231\n IterateModules = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:433\n OnDisable = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:21\n defaultModuleLibraries = <table> {\n }\n OnEnable = <function> defined @Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:17\n moduleName = \"Item Sets\"\n priority = 98\n Disable = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:310\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\nAdiBags = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:374\n SetDefaultModulePrototype = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:405\n Filter = <function> defined @Interface/AddOns/AdiBags/core/Filters.lua:146\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n Reconfigure = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:216\n SetupTooltip = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:133\n GetContainerItemTextureCountLocked = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:448\n DeleteTheme = <function> defined @Interface/AddOns/AdiBags/core/Theme.lua:92\n hooks = <table> {\n }\n GetDistinctItemID = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:309\n CreateFont = <function> defined @Interface/AddOns/AdiBags/core/Fonts.lua:125\n isClassic = true\n OpenOptions = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:298\n GetFamilyTag = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:400\n Hook = <function> defined @Interfa",
+["stack"] = "[string \"@Interface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua\"]:30: in function <...rface/AddOns/AdiBags_Item_Sets/AdiBags_Item_Sets.lua:29>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:494: in function `InitializeAddon'\n[string \"@Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua\"]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 12555,
+["counter"] = 2,
 },
 {
 ["message"] = "...terface/AddOns/ShadowedUnitFrames/modules/layout.lua:580: attempt to compare nil with number",
 ["time"] = "2024/07/30 15:48:32",
 ["locals"] = "self = <table> {\n SetupBars = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:363\n CheckMedia = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:48\n SetupFrame = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:319\n LoadSML = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:166\n ReverseDirection = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:222\n ToggleVisibility = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:68\n GetRelative = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:210\n PositionWidgets = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:496\n mediaPath = <table> {\n }\n SetupText = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:450\n InitFontString = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:418\n MediaRegistered = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:58\n GetRelativeAnchor = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:227\n SetupFontString = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:402\n GetAuraGrowth = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:218\n Reload = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:99\n SetBarVisibility = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:76\n GetJustify = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:193\n GetPoint = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:206\n MediaForced = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:10\n GetColumnGrowth = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:214\n GetSplitRelativeAnchor = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:249\n Load = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:124\n AnchorFrame = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/layout.lua:265\n}\nframe = SUFUnitfocustarget {\n 0 = <userdata>\n OnEnter = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:536\n UnregisterAll = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:125\n OnBackdropLoaded = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:152\n Center = Texture {\n }\n GetBackdropColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:390\n registeredEvents = <table> {\n }\n UnitClassToken = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:551\n RightEdge = Texture {\n }\n SetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:422\n powerBar = StatusBar {\n }\n RegisterNormalEvent = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:47\n SetVisibility = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:226\n SetBarColor = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:167\n topFrameLevel = 5\n BottomEdge = Texture {\n }\n updateTimer = <userdata>\n ApplyBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:282\n highFrame = Frame {\n }\n GetBackdropBorderColor = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lua:347\n SetRangeAlpha = <function> defined @Interface/AddOns/ShadowedUnitFrames/modules/units.lua:159\n BottomRightCorner = Texture {\n }\n BottomLeftCorner = Texture {\n }\n visibility = <table> {\n }\n TopRightCorner = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/AddOns/Blizzard_SharedXML/Backdrop.lu",
 ["stack"] = "[string \"@Interface/AddOns/ShadowedUnitFrames/modules/layout.lua\"]:580: in function `PositionWidgets'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/layout.lua\"]:143: in function `Load'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:284: in function `SetVisibility'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:1260: in function `ProfileChanged'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:673: in function `?'\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:54: in function `Fire'\n[string \"@Interface/AddOns/AdiBags/libs/AceDB-3.0-29/AceDB-3.0.lua\"]:462: in function `SetProfile'\n[string \"@Interface/AddOns/Masque/Libs/AceDBOptions-3.0-15/AceDBOptions-3.0.lua\"]:271: in function <...ns/Masque/Libs/AceDBOptions-3.0/AceDBOptions-3.0.lua:270>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-87/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-87/AceConfigDialog-3.0.lua\"]:834: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:661>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-DropDown.lua\"]:432: in function <...ue/Libs/AceGUI-3.0/widgets/AceGUIWidget-DropDown.lua:423>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-DropDown-Items.lua\"]:351: in function <...s/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua:341>",
-["session"] = 12553,
-["counter"] = 6,
+["session"] = 12562,
+["counter"] = 19,
+},
+{
+["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
+["time"] = "2023/10/19 21:06:56",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+["session"] = 12562,
+["counter"] = 46,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
+["time"] = "2024/02/07 16:32:18",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
+["session"] = 12562,
+["counter"] = 5,
 },
 },
 }

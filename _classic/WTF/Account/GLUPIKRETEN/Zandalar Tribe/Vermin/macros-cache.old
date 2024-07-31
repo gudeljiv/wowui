@@ -44,6 +44,12 @@ VER 3 000000000100000F "mock" "134400"
 /cast [@mouseover,exists][stance:2]Taunt
 /cast [@mouseover,exists][stance:1]Mocking Blow
 END
+VER 3 0000000001000024 "ms/bt" "134400"
+#showtooltip Mortal Strike
+/startattack
+/cast [nostance:3] Berserker Stance;
+/cast Mortal Strike
+END
 VER 3 000000000100001D "over" "134400"
 #showtooltip Overpower
 /startattack
@@ -68,7 +74,6 @@ VER 3 0000000001000008 "silence" "134400"
 /cast Bloodrage
 /cast [@focus,exists][][stance:1/2]Shield Bash
 /cast [@focus,exists][][stance:3]Pummel
-/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
 END
 VER 3 0000000001000010 "slam" "134400"
 #showtooltip
@@ -88,10 +93,4 @@ VER 3 0000000001000020 "sweep" "134400"
 /cast [stance:1/3] Sweeping Strikes
 /cast [stance:1/3] Bloodrage
 /cast [stance:2] Disarm
-END
-VER 3 0000000001000024 "ww" "134400"
-#showtooltip Whirlwind
-/startattack
-/cast [nostance:3] Berserker Stance;
-/cast Whirlwind
 END

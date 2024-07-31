@@ -33,16 +33,16 @@ GMMONEY = {
 ["GOLD"] = 0,
 ["CLASS"] = "MAGE",
 },
+["Dopemend"] = {
+["GOLD"] = 1973407,
+["CLASS"] = "PRIEST",
+},
 ["Dopestab"] = {
 ["GOLD"] = 1643838,
 ["CLASS"] = "ROGUE",
 },
-["Dopemend"] = {
-["GOLD"] = 1990634,
-["CLASS"] = "PRIEST",
-},
 ["Doperage"] = {
-["GOLD"] = 394985,
+["GOLD"] = 425554,
 ["CLASS"] = "WARRIOR",
 },
 },
@@ -67,9 +67,9 @@ GMMONEY = {
 ["GOLD"] = 4,
 ["CLASS"] = "WARRIOR",
 },
-["Vermina"] = {
-["GOLD"] = 59137573,
-["CLASS"] = "PALADIN",
+["Tadibey"] = {
+["GOLD"] = 763196,
+["CLASS"] = "SHAMAN",
 },
 ["Moolatz"] = {
 ["GOLD"] = 7980232,
@@ -79,17 +79,17 @@ GMMONEY = {
 ["GOLD"] = 96743,
 ["CLASS"] = "MAGE",
 },
-["Battitude"] = {
-["GOLD"] = 998227,
-["CLASS"] = "ROGUE",
+["Vermina"] = {
+["GOLD"] = 59137573,
+["CLASS"] = "PALADIN",
 },
 ["Miqa"] = {
 ["GOLD"] = 6472995,
 ["CLASS"] = "PRIEST",
 },
-["Tadibey"] = {
-["GOLD"] = 763196,
-["CLASS"] = "SHAMAN",
+["Battitude"] = {
+["GOLD"] = 998227,
+["CLASS"] = "ROGUE",
 },
 ["Vermin"] = {
 ["GOLD"] = 144333979,
@@ -97,12 +97,12 @@ GMMONEY = {
 },
 },
 ["Stitches"] = {
-["Dopesnare"] = {
-["GOLD"] = 104705,
-["CLASS"] = "HUNTER",
+["Vermins"] = {
+["GOLD"] = 107135,
+["CLASS"] = "WARRIOR",
 },
-["Dopesick"] = {
-["GOLD"] = 114,
+["Lonac"] = {
+["GOLD"] = 74108,
 ["CLASS"] = "WARRIOR",
 },
 ["Dopede"] = {
@@ -121,32 +121,18 @@ GMMONEY = {
 ["GOLD"] = 1642296,
 ["CLASS"] = "SHAMAN",
 },
-["Lonac"] = {
-["GOLD"] = 74108,
+["Dopesick"] = {
+["GOLD"] = 114,
 ["CLASS"] = "WARRIOR",
 },
-["Vermins"] = {
-["GOLD"] = 107135,
-["CLASS"] = "WARRIOR",
+["Dopesnare"] = {
+["GOLD"] = 104705,
+["CLASS"] = "HUNTER",
 },
 },
 ["Ashbringer"] = {
 ["Tudum"] = {
 ["GOLD"] = 112,
-["CLASS"] = "WARRIOR",
-},
-},
-["Zandalar Tribe"] = {
-["Battitude"] = {
-["GOLD"] = 0,
-["CLASS"] = "ROGUE",
-},
-["Battlenac"] = {
-["GOLD"] = 98,
-["CLASS"] = "PRIEST",
-},
-["Vermin"] = {
-["GOLD"] = 0,
 ["CLASS"] = "WARRIOR",
 },
 },
@@ -160,8 +146,22 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 },
+["Zandalar Tribe"] = {
+["Battitude"] = {
+["GOLD"] = 0,
+["CLASS"] = "ROGUE",
+},
+["Battlenac"] = {
+["GOLD"] = 98,
+["CLASS"] = "PRIEST",
+},
+["Vermin"] = {
+["GOLD"] = 864,
+["CLASS"] = "WARRIOR",
+},
+},
 }
 GMMONEYSET = {
-["TEXTMODE"] = true,
 ["FULLDISP"] = true,
+["TEXTMODE"] = true,
 }

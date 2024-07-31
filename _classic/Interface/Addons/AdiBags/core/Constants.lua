@@ -194,7 +194,6 @@ addon.DEFAULT_SETTINGS = {
 		bags = {
 			["*"] = true,
 		},
-    deprecationPhase = 1,
 		positionMode = "manual",
 		positions = {
 			anchor = { point = "BOTTOMRIGHT", xOffset = -32, yOffset = 200 },

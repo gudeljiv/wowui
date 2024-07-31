@@ -17,14 +17,14 @@
 # You should have received a copy of the GNU General Public License
 # along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
-## Interface: 100206
+## Interface: 100107
 
 ## Title: AdiBags
 ## Notes: Adirelle's bag addon.
 ## Author: Adirelle
-## Version: v1.10.26
+## Version: v1.10.23
 ## SavedVariables: AdiBagsDB
-## X-Date: 2024-04-12T20:20:34Z
+## X-Date: 2023-12-04T6:02:26Z
 ## X-License: GPL v3
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibSharedMedia-3.0, Scrap, BrainDead, SyLevel
 #@alpha@
@@ -86,7 +86,6 @@ modules\Masque.lua
 
 core\ItemDatabase.lua
 core\DefaultFilters.lua
-core\Deprecation.lua
 
 #@debug@
 # ## Version: DEV
