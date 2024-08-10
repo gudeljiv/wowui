@@ -42,14 +42,6 @@ SRTIExternalUF = {
 "Grid2LayoutHeader2UnitButton4",
 "Grid2LayoutHeader2UnitButton5",
 },
-["blizzard_compactraidframes"] = {
-"CompactRaidFrame1",
-"CompactRaidFrame2",
-"CompactRaidFrame3",
-"CompactRaidFrame4",
-"CompactRaidFrame5",
-"CompactRaidFrame6",
-},
 ["shadowedunitframes"] = {
 "SUFUnittarget",
 "SUFUnittargettarget",
@@ -59,5 +51,13 @@ SRTIExternalUF = {
 "SUFHeaderpartyUnitButton2",
 "SUFHeaderpartyUnitButton3",
 "SUFHeaderpartyUnitButton4",
+},
+["blizzard_compactraidframes"] = {
+"CompactRaidFrame1",
+"CompactRaidFrame2",
+"CompactRaidFrame3",
+"CompactRaidFrame4",
+"CompactRaidFrame5",
+"CompactRaidFrame6",
 },
 }
