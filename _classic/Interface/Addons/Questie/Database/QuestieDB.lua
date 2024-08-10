@@ -73,7 +73,11 @@ local questTagCorrections = {
     [7842] = {0, ""},
     [7843] = {0, ""},
     [8122] = {41, "PvP"},
+    [8367] = {41, "PvP"},
+    [8371] = {41, "PvP"},
+    [8385] = {41, "PvP"},
     [8386] = {41, "PvP"},
+    [8388] = {41, "PvP"},
     [8404] = {41, "PvP"},
     [8405] = {41, "PvP"},
     [8406] = {41, "PvP"},
@@ -144,6 +148,7 @@ local questTagCorrections = {
     [90288] = {1, "Elite"},
     [90289] = {1, "Elite"},
     [90308] = {1, "Elite"},
+    [90312] = {1, "Elite"},
 }
 
 -- race bitmask data, for easy access
@@ -184,6 +189,7 @@ QuestieDB.classKeys = {
 }
 
 QuestieDB.specialFlags = {
+    NONE = 0,
     REPEATABLE = 1,
 }
 
@@ -502,19 +508,6 @@ function QuestieDB:IsExclusiveQuestInQuestLogOrComplete(exclusiveTo)
         if Questie.db.char.complete[exId] then
             return true
         end
-    end
-    return false
-end
-
----@param parentID number
----@return boolean
-function QuestieDB.IsParentQuestActive(parentID)
-    --! If you edit the logic here, also edit in AvailableQuests.IsLevelRequirementsFulfilled
-    if (not parentID) or (parentID == 0) then
-        return false
-    end
-    if QuestiePlayer.currentQuestlog[parentID] then
-        return true
     end
     return false
 end
@@ -1214,12 +1207,16 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
         end
         if objectives[5] and type(objectives[5]) == "table" and #objectives[5] > 0 then
             for _, creditObjective in pairs(objectives[5]) do
+                if creditObjective[4] == 0 then
+                    creditObjective[4] = nil
+                end
                 ---@type KillObjective
                 local killCreditObjective = {
                     Type = "killcredit",
                     IdList = creditObjective[1],
                     RootId = creditObjective[2],
-                    Text = creditObjective[3]
+                    Text = creditObjective[3],
+                    Icon = creditObjective[4]
                 }
 
                 --? There are quest(s) which have the killCredit at first so we need to switch them
@@ -1256,12 +1253,6 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
             Text = triggerEnd[1],
             Coordinates = triggerEnd[2]
         }
-    end
-
-    local preQuestGroup = QO.preQuestGroup
-    local preQuestSingle = QO.preQuestSingle
-    if preQuestGroup and preQuestSingle and next(preQuestGroup) and next(preQuestSingle) then
-        Questie:Debug(Questie.DEBUG_CRITICAL, "ERRRRORRRRRRR not mutually exclusive for questID:", questId)
     end
 
     --- Quest objectives generated from quest log in QuestieQuest.lua -> QuestieQuest:PopulateQuestLogInfo(quest)
@@ -1430,59 +1421,6 @@ function QuestieDB.IsFriendlyToPlayer(friendlyToFaction)
     end
 
     return false
-end
-
---[[
-    https://github.com/cmangos/issues/wiki/AreaTable.dbc
-    Example to differentiate between Dungeon and Zone infront of a Dungeon:
-    1337 Uldaman = The Dungeon (MapID ~= 0, AreaID = 0)
-    1517 Uldaman = Cave infront of the Dungeon (MapID = 0, AreaID = 3 (Badlands))
-
-    Check `l10n.zoneLookup` for the available IDs
-]]
----@param zoneId number
----@return table
-function QuestieDB:GetQuestsByZoneId(zoneId)
-    if not zoneId then
-        return nil;
-    end
-    -- is in cache return that
-    if _QuestieDB.zoneCache[zoneId] then
-        return _QuestieDB.zoneCache[zoneId]
-    end
-    local zoneQuests = {};
-    local alternativeZoneID = ZoneDB:GetAlternativeZoneId(zoneId)
-    -- loop over all quests to populate a zone
-    for qid, _ in pairs(QuestieDB.QuestPointers or QuestieDB.questData) do
-        local quest = QuestieDB.GetQuest(qid);
-        if quest then
-            if quest.zoneOrSort > 0 then
-                if (quest.zoneOrSort == zoneId or (alternativeZoneID and quest.zoneOrSort == alternativeZoneID)) then
-                    zoneQuests[qid] = quest;
-                end
-            elseif quest.Starts.NPC and (not zoneQuests[qid]) then
-                local npc = QuestieDB:GetNPC(quest.Starts.NPC[1]);
-                if npc and npc.friendly and npc.spawns then
-                    for zone, _ in pairs(npc.spawns) do
-                        if zone == zoneId  or (alternativeZoneID and zone == alternativeZoneID) then
-                            zoneQuests[qid] = quest;
-                        end
-                    end
-                end
-            elseif quest.Starts.GameObject and (not zoneQuests[qid]) then
-                local obj = QuestieDB:GetObject(quest.Starts.GameObject[1]);
-                if obj and obj.spawns then
-                    for zone, _ in pairs(obj.spawns) do
-                        if zone == zoneId  or (alternativeZoneID and zone == alternativeZoneID) then
-                            zoneQuests[qid] = quest;
-                        end
-                    end
-                end
-            end
-        end
-    end
-    _QuestieDB.zoneCache[zoneId] = zoneQuests;
-    return zoneQuests;
 end
 
 ---------------------------------------------------------------------------------------------------

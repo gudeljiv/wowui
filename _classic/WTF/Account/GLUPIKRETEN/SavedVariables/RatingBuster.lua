@@ -11,6 +11,7 @@ RatingBusterDB = {
 ["profileKeys"] = {
 ["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Vermin - Celebras"] = "WARRIOR",
 ["Dopesnare - Lone Wolf"] = "HUNTER",
 ["Dopenac - Lone Wolf"] = "PRIEST",
 ["Vermin - Zandalar Tribe"] = "WARRIOR",

@@ -291,11 +291,23 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -318,11 +330,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
-},
 ["Sea Elemental"] = {
 "Frost Shock",
+},
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Klaxxi"] = {
 "Big Bronze Bomb",
@@ -338,13 +350,13 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
-},
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
 "Entrapment",
+},
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Lord Vyletongue"] = {
 "Blackout",
@@ -421,23 +433,11 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Dianastalion"] = {
 "Stormstrike",

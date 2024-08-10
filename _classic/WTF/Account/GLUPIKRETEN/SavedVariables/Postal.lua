@@ -25,7 +25,8 @@ Postal3DB = {
 "Lonac|Stitches|Horde|1|WARRIOR",
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vermins|Stitches|Horde|26|WARRIOR",
-"Vermin|Zandalar Tribe|Alliance|3|WARRIOR",
+"Vermin|Celebras|Alliance|1|WARRIOR",
+"Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },
 },
@@ -41,6 +42,7 @@ Postal3DB = {
 ["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
@@ -113,6 +115,8 @@ Postal3DB = {
 },
 },
 ["Dopetrap - Lone Wolf"] = {
+},
+["Vermin - Celebras"] = {
 },
 ["Dopedot - Lone Wolf"] = {
 },

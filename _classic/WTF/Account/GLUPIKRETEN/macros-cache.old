@@ -39,8 +39,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Grelin Whitebeard
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip

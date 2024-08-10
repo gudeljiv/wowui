@@ -9,9 +9,10 @@ RXPData = {
 RXPDB = {
 ["profileKeys"] = {
 ["Vermin - Zandalar Tribe"] = "global",
+["Doperage - Lone Wolf"] = "global",
 ["Jutarnjedrvo - Lone Wolf"] = "global",
 ["Dopestab - Lone Wolf"] = "global",
-["Doperage - Lone Wolf"] = "global",
+["Vermin - Celebras"] = "global",
 ["Battlenac - Zandalar Tribe"] = "global",
 ["Dopemend - Lone Wolf"] = "global",
 ["Battitude - Zandalar Tribe"] = "global",
@@ -24,15 +25,18 @@ RXPDB = {
 RXPSettings = {
 ["profileKeys"] = {
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
 ["Battitude - Zandalar Tribe"] = "Default",
 },
 ["profiles"] = {
 ["Vermin - Zandalar Tribe"] = {
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
 ["hardcore"] = false,
 ["framePositions"] = {
 ["arrowFrame"] = {
@@ -40,8 +44,8 @@ RXPSettings = {
 "CENTER",
 nil,
 "CENTER",
--159.3649444580078,
--170.2851867675781,
+-159,
+-170,
 },
 },
 ["RXPFrame"] = {
@@ -67,16 +71,19 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--226.0313568115234,
--259.6825866699219,
+-226,
+-260,
 },
 },
 },
 ["season"] = 0,
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["showDangerousUnitscan"] = false,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
-32.00003814697266,
+31.99995613098145,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -84,20 +91,142 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-40.00000762939453,
+39.99991989135742,
 },
 ["activeTargetFrame"] = {
-86.8570556640625,
-68.00004577636719,
+85.2649154663086,
+67.99996185302734,
 },
 },
-["showDangerousMobsMap"] = false,
-["enableGroupQuests"] = false,
-["frameHeight"] = 125.0000152587891,
-["soloSelfFound"] = true,
 ["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
+},
+["Jutarnjedrvo - Lone Wolf"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-168.8886566162109,
+-169.6510009765625,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-253.3332214355469,
+-172.6985778808594,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-216.5078125,
+-253.3335876464844,
+},
+},
+},
+["itemUpgradeSpec"] = "Enhance",
+["frameHeight"] = 125.0000152587891,
 ["macroAnnounced"] = true,
-["showDangerousUnitscan"] = false,
+["hardcore"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["season"] = 2,
+["enableMinimapButton"] = false,
+},
+["Doperage - Lone Wolf"] = {
+["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = false,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159.9999694824219,
+-165.8410797119141,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+490.1585083007813,
+-91.42863464355469,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-253.3331756591797,
+-252.0639038085938,
+},
+},
+},
+["season"] = 2,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+234.9999084472656,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
 },
 ["Battlenac - Zandalar Tribe"] = {
 ["showDangerousMobsMap"] = false,
@@ -145,8 +274,6 @@ nil,
 ["soloSelfFound"] = true,
 ["showDangerousUnitscan"] = false,
 ["frameHeight"] = 125.0000152587891,
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Discipline ",
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.26507568359375,
@@ -165,6 +292,8 @@ nil,
 31.99995613098145,
 },
 },
+["itemUpgradeSpec"] = "Discipline ",
+["enableMinimapButton"] = false,
 },
 ["Default"] = {
 ["macroAnnounced"] = true,
@@ -291,69 +420,6 @@ nil,
 ["season"] = 2,
 ["lockFrames"] = false,
 },
-["Doperage - Lone Wolf"] = {
-["enableMinimapButton"] = false,
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = false,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159.9999694824219,
--165.8410797119141,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-490.1585083007813,
--91.42863464355469,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--253.3331756591797,
--252.0639038085938,
-},
-},
-},
-["season"] = 2,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-234.9999084472656,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-},
-},
 ["Dopemend - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
 ["framePositions"] = {
@@ -394,7 +460,9 @@ nil,
 },
 },
 },
+["season"] = 2,
 ["enableMinimapButton"] = false,
+["itemUpgradeSpec"] = "Discipline ",
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
@@ -413,18 +481,16 @@ nil,
 32.00003814697266,
 },
 },
-["season"] = 2,
-["itemUpgradeSpec"] = "Discipline ",
 },
-["Jutarnjedrvo - Lone Wolf"] = {
+["Vermin - Celebras"] = {
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--168.8886566162109,
--169.6510009765625,
+-226,
+-260,
 },
 },
 ["RXPFrame"] = {
@@ -439,30 +505,27 @@ nil,
 ["activeItemFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
--253.3332214355469,
--172.6985778808594,
+0,
+0,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--216.5078125,
--253.3335876464844,
+-159,
+-170,
 },
 },
 },
-["itemUpgradeSpec"] = "Enhance",
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
+["season"] = 0,
 ["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -470,22 +533,45 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-39.99988174438477,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["soloSelfFound"] = true,
+["enableMinimapButton"] = false,
+["showDangerousMobsMap"] = false,
+["enableGroupQuests"] = false,
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["showDangerousUnitscan"] = false,
+},
+["Battitude - Zandalar Tribe"] = {
+["macroAnnounced"] = true,
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["showDangerousUnitscan"] = false,
+["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
 },
 ["activeTargetFrame"] = {
 85.2649154663086,
-67.99996185302734,
+40.00004959106445,
 },
 },
-["season"] = 2,
-["enableMinimapButton"] = false,
-},
-["Battitude - Zandalar Tribe"] = {
-["showDangerousUnitscan"] = false,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["macroAnnounced"] = true,
-["frameHeight"] = 125.0000152587891,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -524,25 +610,7 @@ nil,
 },
 },
 },
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-},
-["showDangerousMobsMap"] = false,
+["soloSelfFound"] = true,
 },
 },
 }
