@@ -12,6 +12,9 @@ function CataItemFixes.Load()
         [2629] = { -- Intrepid Strongbox Key
             [itemKeys.npcDrops] = {41429},
         },
+        [2633] = { -- Jungle Remedy
+            [itemKeys.npcDrops] = {937,940,941,942},
+        },
         [2859] = { -- Vile Fin Scale
             [itemKeys.npcDrops] = {1541,1543,1544,1545},
         },
@@ -35,7 +38,10 @@ function CataItemFixes.Load()
             [itemKeys.startQuest] = 0,
         },
         [10458] = { -- Prayer to Elune
-            [itemKeys.npcDrops] = {}
+            [itemKeys.npcDrops] = {},
+        },
+        [12283] = { -- Broodling Essence
+            [itemKeys.npcDrops] = {},
         },
         [18597] = { -- Orcish Orphan Whistle
             [itemKeys.class] = itemClasses.QUEST,
@@ -393,6 +399,9 @@ function CataItemFixes.Load()
         [55280] = { -- Deepmoss Venom Sac
             [itemKeys.npcDrops] = {41185,4005,4006,4007},
         },
+        [55808] = { -- Horde's Proposal
+            [itemKeys.npcDrops] = {41199},
+        },
         [55809] = { -- Twilight Armor Plate
             [itemKeys.npcDrops] = {},
         },
@@ -443,6 +452,9 @@ function CataItemFixes.Load()
         },
         [58365] = { -- Horn of the Ancients
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [58490] = { -- Opened Mosh'Ogg Bounty
+            [itemKeys.npcDrops] = {43003},
         },
         [58500] = { -- Jade Crystal Cluster
             [itemKeys.npcDrops] = {},
@@ -651,6 +663,9 @@ function CataItemFixes.Load()
         [68890] = { -- Dragon Kite 2-Pack
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [68937] = { -- Direhammer's Boots
+            [itemKeys.objectDrops] = {208376},
+        },
         [69027] = { -- Cone of Cold
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -716,6 +731,9 @@ function CataItemFixes.Load()
         },
         [71716] = { -- Soothsayer's Runes
             [itemKeys.class] = itemClasses.QUEST,
+        },
+        [73269] = { -- Great Sea Herring
+            [itemKeys.npcDrops] = {},
         },
     }
 end

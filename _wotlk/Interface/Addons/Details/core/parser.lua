@@ -628,14 +628,18 @@
 		--146739 is corruption that doesn't expire
 
 		local spells_cant_start_combat = {
-			[387846] = true,
-			[352561] = true,
-			[111400] = true,
-			[371070] = true,
-			[368637] = true,
-			[401394] = true,
-			[146739] = true,
+			[368637] = true, --The Third Rune
+			[371070] = true, --Rotting from Within
+			[146739] = true, --Corruption
+			[387846] = true, --Fel Armor
+			[352561] = true, --Undulating Maneuvers
+			[401394] = true, --Unstable Flames
+			[111400] = true, --Burning Rush
+			[12654] = true, --Ignite
+			[419800] = true, --Intensifying Flame
+			[448744] = true, --Authority of Radiant Power
 		}
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --internal functions
 
@@ -937,6 +941,8 @@
 					end
 				end
 
+				--local spellInfo = C_Spell.GetSpellInfo(spellId)
+				--print("1 spell:", spellId, spellInfo.name)
 				Details222.StartCombat(sourceSerial, sourceName, sourceFlags, targetSerial, targetName, targetFlags)
 			else
 				--entrar em combate se for dot e for do jogador e o ultimo combate ter sido a mais de 10 segundos atr�s
@@ -945,8 +951,9 @@
 						return
 					end
 
-					--faz o calculo dos 10 segundos
+					--can't start a combat with a dot with the latest combat finished less than 10 seconds ago
 					if (Details.last_combat_time + 10 < _tempo) then
+						--print("2 spell:", spellId)
 						Details222.StartCombat(sourceSerial, sourceName, sourceFlags, targetSerial, targetName, targetFlags)
 					end
 				end
@@ -7233,12 +7240,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 					end
 
 					actor = _current_damage_container:GetOrCreateActor (guid, name, flag, true)
-					actor.total = Details:GetOrderNumber()
-					actor.classe = classToken or "UNKNOW"
-
-					if (flag == 0x548) then
-						--oponent
-						actor.enemy = true
+					if (actor) then
+						actor.total = Details:GetOrderNumber()
+						actor.classe = classToken or "UNKNOW"
+						if (flag == 0x548) then
+							--oponent
+							actor.enemy = true
+						end
+						actor.made_by_pvpparser = true
 					end
 				end
 			end
@@ -7263,12 +7272,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 					end
 
 					actor = _current_heal_container:GetOrCreateActor (guid, name, flag, true)
-					actor.total = Details:GetOrderNumber()
-					actor.classe = classToken or "UNKNOW"
-
-					if (flag == 0x548) then
-						--oponent
-						actor.enemy = true
+					if (actor) then
+						actor.total = Details:GetOrderNumber()
+						actor.classe = classToken or "UNKNOW"
+						if (flag == 0x548) then
+							--oponent
+							actor.enemy = true
+						end
+						actor.made_by_pvpparser = true
 					end
 				end
 			end

@@ -56,12 +56,22 @@ NIT.zones = {
 		type = "dungeon",
 		expansion = "classic",
 	},
-	[1004] = {
+	[189] = {
 		name = L["Scarlet Monastery"],
 		type = "dungeon",
 		expansion = "classic",
 	},
-	[1007] = {
+	[1004] = { --New retail ID?
+		name = L["Scarlet Monastery"],
+		type = "dungeon",
+		expansion = "classic",
+	},
+	[289] = {
+		name = L["Scholomance"],
+		type = "dungeon",
+		expansion = "classic",
+	},
+	[1007] = { --New retail ID?
 		name = L["Scholomance"],
 		type = "dungeon",
 		expansion = "classic",
@@ -101,6 +111,11 @@ NIT.zones = {
 		type = "dungeon",
 		expansion = "classic",
 	},
+	[2784] = {
+		name = L["Demon Fall Canyon"],
+		type = "dungeon",
+		expansion = "classic", --SoD.
+	},
 	--Raids (Classic).
 	[249] = {
 		name = L["Onyxia's Lair"],
@@ -139,6 +154,18 @@ NIT.zones = {
 	},
 	[533] = {
 		name = L["Naxxramas"],
+		type = "raid",
+		expansion = "classic",
+		noLockout = true,
+	},
+	[2791] = {
+		name = L["Storm Cliffs"],
+		type = "raid",
+		expansion = "classic", --SoD.
+		noLockout = true,
+	},
+	[2789] = {
+		name = L["The Tainted Scar"],
 		type = "raid",
 		expansion = "classic",
 		noLockout = true,

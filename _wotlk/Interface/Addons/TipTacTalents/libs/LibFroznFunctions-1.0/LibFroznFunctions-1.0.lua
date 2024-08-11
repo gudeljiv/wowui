@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 27; -- bump on changes
+local LIB_MINOR = 29; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -116,7 +116,7 @@ LFF_GEAR_SCORE_ALGORITHM = {
 --         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
 --         .defaultGearScoreAlgorithm                                  = default GearScore algorithm
 --         .optionsSliderTemplate                                      = options slider template ("OptionsSliderTemplate", since df 10.0.0 and catac 4.4.0 "UISliderTemplateWithLabels")
---         .dragonriding                                               = true/false if dragonriding is available (since df)
+--         .skyriding                                                  = true/false if skyriding is available (since df 10.0.2)
 LibFroznFunctions.hasWoWFlavor = {
 	guildNameInPlayerUnitTip = true,
 	specializationAndClassTextInPlayerUnitTip = true,
@@ -135,7 +135,7 @@ LibFroznFunctions.hasWoWFlavor = {
 	relatedExpansionForItemAvailable = true,
 	defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TipTac,
 	optionsSliderTemplate = "UISliderTemplateWithLabels",
-	dragonriding = (GetAchievementInfo(15794) and true or false) -- see DRAGONRIDING_ACCOUNT_ACHIEVEMENT_ID in "Blizzard_DragonflightLandingPage.lua"
+	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false) -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
 };
 
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
@@ -169,6 +169,9 @@ end
 if (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 0;
 end
+if (LibFroznFunctions.isWoWFlavor.DF) then
+	LibFroznFunctions.hasWoWFlavor.skyriding = (GetAchievementInfo(15794) and true or false) -- see DRAGONRIDING_ACCOUNT_ACHIEVEMENT_ID in "Blizzard_DragonflightLandingPage.lua"
+end
 LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet = 
 	LibFroznFunctions.isWoWFlavor.ClassicEra and  66 or -- Cenarion Vestments (Druid, Tier 1)
 	LibFroznFunctions.isWoWFlavor.BCC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
@@ -176,35 +179,6 @@ LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet =
 	LibFroznFunctions.isWoWFlavor.CataC      and 359 or -- Stormrider's Robes (Druid, Tier 11)
 	LibFroznFunctions.isWoWFlavor.DF         and 395 or -- Lost Landcaller's Robes (Druid, Tier 29)
 	LibFroznFunctions.isWoWFlavor.TWW        and 571;   -- Hide of the Greatlynx (Druid, Tier 32)
-
--- get addon metadata
---
--- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (case insensitive)
--- @param  field        field name (case insensitive), e.g. "Title", "Version" or "Notes"
--- @return value of the field in TOC metadata of an addon
-function LibFroznFunctions:GetAddOnMetadata(indexOrName, field)
-	-- since df 10.1.0
-	if (C_AddOns) and (C_AddOns.GetAddOnMetadata) then
-		return C_AddOns.GetAddOnMetadata(indexOrName, field);
-	end
-	
-	-- before df 10.1.0
-	return GetAddOnMetadata(indexOrName, field);
-end
-
--- load addon
---
--- @param  indexOrName     index in the addon list (cannot query Blizzard addons by index) or name of the addon (case insensitive)
--- @return loaded, reason  if the addon is succesfully loaded or was already loaded. locale-independent reason why the addon could not be loaded e.g. "DISABLED", otherwise returns nil if the addon was loaded.
-function LibFroznFunctions:LoadAddOn(indexOrName)
-	-- since df 10.2.0
-	if (C_AddOns) and (C_AddOns.LoadAddOn) then
-		return C_AddOns.LoadAddOn(indexOrName);
-	end
-	
-	-- before df 10.2.0
-	return LoadAddOn(indexOrName);
-end
 
 -- aura filters, see "AuraUtil.lua"
 LFF_AURA_FILTERS = (AuraUtil) and (AuraUtil.AuraFilters) or {
@@ -743,6 +717,60 @@ function LibFroznFunctions:HasPetSpells()
 	
 	-- before tww 11.0.0
 	return HasPetSpells();
+end
+
+-- get quest currency info
+--
+-- @param  itemType       category of the currency to query. currently "reward" is the only category in use for currencies.
+-- @param  currencyIndex  index of the currency to query, in the range [1, before tww 11.0.0: GetNumRewardCurrencies(); since tww 11.0.0: #C_QuestInfoSystem.GetQuestRewardCurrencies()].
+-- @return questRewardCurrencyInfo
+function LibFroznFunctions:GetQuestCurrencyInfo(itemType, currencyIndex)
+	-- since tww 11.0.0
+	if (C_QuestOffer) and (C_QuestOffer.GetQuestRewardCurrencyInfo) then
+		return C_QuestOffer.GetQuestRewardCurrencyInfo(itemType, currencyIndex);
+	end
+	
+	-- before tww 11.0.0
+	local name, texture, quantity, quality = GetQuestCurrencyInfo(itemType, currencyIndex);
+	local currencyID = GetQuestCurrencyID(itemType, currencyIndex);
+	
+	return {
+		texture = texture,
+		name = name,
+		currencyID = currencyID,
+		quality = quality,
+		baseRewardAmount = nil,
+		bonusRewardAmount = nil,
+		totalRewardAmount = quantity,
+		questRewardContextFlags = nil
+	};
+end
+
+-- get quest log reward currency info
+--
+-- @param  questID        quest id
+-- @param  currencyIndex  index of the currency to query, in the range [1, before tww 11.0.0: GetNumQuestLogRewardCurrencies(); since tww 11.0.0: #C_QuestInfoSystem.GetQuestRewardCurrencies()].
+-- @param  isChoice       true if reward is choice reward
+-- @return questRewardCurrencyInfo
+function LibFroznFunctions:GetQuestLogRewardCurrencyInfo(questID, currencyIndex, isChoice)
+	-- since tww 11.0.0
+	if (C_QuestLog) and (C_QuestLog.GetQuestRewardCurrencyInfo) then
+		return C_QuestLog.GetQuestRewardCurrencyInfo(questID, currencyIndex, isChoice);
+	end
+	
+	-- before tww 11.0.0
+	local name, texture, quantity, currencyID, quality = GetQuestLogRewardCurrencyInfo(currencyIndex, questID, isChoice);
+	
+	return {
+		texture = texture,
+		name = name,
+		currencyID = currencyID,
+		quality = quality,
+		baseRewardAmount = nil,
+		bonusRewardAmount = nil,
+		totalRewardAmount = quantity,
+		questRewardContextFlags = nil
+	};
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -1420,15 +1448,37 @@ end
 function LibFroznFunctions:OpenAddOnCategory(categoryName, subcategoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
 	if (Settings) and (Settings.OpenToCategory) then
+		-- open category
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
-			for index, category in ipairs(tbl.categories) do
+			local categories = tbl.categories;
+			
+			for index, category in ipairs(categories) do
 				if (category:GetName() == categoryName) then
-					Settings.OpenToCategory(category:GetID(), category:GetName());
+					Settings.OpenToCategory(category:GetID());
 					
+					-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
+					local categoryList = SettingsPanel:GetCategoryList();
+					local categoryElementData = categoryList:FindCategoryElementData(category)
+					
+					if (categoryElementData) then
+						categoryList.ScrollBox:ScrollToElementData(categoryElementData, ScrollBoxConstants.AlignNearest);
+					end
+					
+					-- open subcategory
 					if (subcategoryName) then
-						for index, subcategory in ipairs(category:GetSubcategories()) do
+						local subCategories = category:GetSubcategories();
+						
+						for index, subcategory in ipairs(subCategories) do
 							if (subcategory:GetName() == subcategoryName) then
 								SettingsPanel:SelectCategory(subcategory);
+								
+								-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
+								local subCategoryElementData = categoryList:FindCategoryElementData(subcategory)
+								
+								if (subCategoryElementData) then
+									categoryList.ScrollBox:ScrollToElementData(subCategoryElementData, ScrollBoxConstants.AlignNearest);
+								end
+								
 								return;
 							end
 						end
@@ -1549,10 +1599,10 @@ end
 
 -- is addon finished loading
 --
--- @param  indexOrName  index or name of the addon (as in TOC/folder filename), case insensitive
+-- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (as in TOC/folder filename, case insensitive)
 -- @return true if the addon finished loading, false otherwise.
 function LibFroznFunctions:IsAddOnFinishedLoading(indexOrName)
-	local loaded, finished = IsAddOnLoaded(indexOrName)
+	local loaded, finished = C_AddOns.IsAddOnLoaded(indexOrName)
 	
 	return loaded and finished;
 end

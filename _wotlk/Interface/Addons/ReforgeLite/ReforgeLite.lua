@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.8.0"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.0"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -43,8 +43,6 @@ local DefaultDB = {
   itemSize = 24,
   windowWidth = 800,
   windowHeight = 564,
-
-  reforgeCheat = 1,
 
   openOnReforge = true,
   updateTooltip = true,
@@ -125,6 +123,7 @@ addonTable.StatCapMethods = {
   AtLeast = 1,
   AtMost = 2,
   NewValue = 3,
+  Exactly = 4,
 }
 
 function ReforgeLite:UpgradeDBCaps (caps)
@@ -932,27 +931,28 @@ function ReforgeLite:CreateItemTable ()
     self.itemData[i]:SetSize(self.db.itemSize, self.db.itemSize)
     self.itemTable:SetCell (i, 0, self.itemData[i])
     self.itemData[i]:EnableMouse (true)
-    self.itemData[i]:SetScript ("OnEnter", function (self)
-      GameTooltip:SetOwner (self, "ANCHOR_LEFT")
-      local hasItem, hasCooldown, repairCost = GameTooltip:SetInventoryItem ("player", self.slotId)
+    self.itemData[i]:SetScript ("OnEnter", function (frame)
+      GameTooltip:SetOwner (frame, "ANCHOR_LEFT")
+      local hasItem, hasCooldown, repairCost = GameTooltip:SetInventoryItem ("player", frame.slotId)
       if not hasItem then
-        local text = _G[strupper (self.slot)]
-        if self.checkRelic then
+        local text = _G[strupper (frame.slot)]
+        if frame.checkRelic then
           text = _G["RELICSLOT"]
         end
         GameTooltip:SetText (text)
       end
       GameTooltip:Show ()
     end)
-    self.itemData[i]:SetScript ("OnLeave", function (self)
-      GameTooltip:Hide ()
+    self.itemData[i]:SetScript ("OnLeave", function ()
+      GameTooltip:Hide()
     end)
-    self.itemData[i]:SetScript ("OnMouseDown", function ()
-      self.pdb.itemsLocked[i] = not self.pdb.itemsLocked[i] or nil
-      if self.pdb.itemsLocked[i] then
-        self.itemData[i].locked:Show ()
+    self.itemData[i]:SetScript ("OnMouseDown", function (frame)
+      if not frame.itemGUID then return end
+      self.pdb.itemsLocked[frame.itemGUID] = not self.pdb.itemsLocked[frame.itemGUID] and 1 or nil
+      if self.pdb.itemsLocked[frame.itemGUID] then
+        frame.locked:Show ()
       else
-        self.itemData[i].locked:Hide ()
+        frame.locked:Hide ()
       end
     end)
     self.itemData[i].slotId, self.itemData[i].slotTexture, self.itemData[i].checkRelic = GetInventorySlotInfo (v)
@@ -966,9 +966,6 @@ function ReforgeLite:CreateItemTable ()
     self.itemData[i].locked = self.itemData[i]:CreateTexture (nil, "OVERLAY")
     self.itemData[i].locked:SetAllPoints (self.itemData[i])
     self.itemData[i].locked:SetTexture ("Interface\\PaperDollInfoFrame\\UI-GearManager-LeaveItem-Transparent")
-    if not self.pdb.itemsLocked[i] then
-      self.itemData[i].locked:Hide ()
-    end
 
     self.itemData[i].stats = {}
     for j, s in ipairs (self.itemStats) do
@@ -1004,6 +1001,7 @@ function ReforgeLite:AddCapPoint (i, loading)
   local methodList = {
     {value = addonTable.StatCapMethods.AtLeast, name = L["At least"]},
     {value = addonTable.StatCapMethods.AtMost, name = L["At most"]},
+    {value = addonTable.StatCapMethods.Exactly, name = L["Exactly"]},
     {value = addonTable.StatCapMethods.NewValue, name = ""}
   }
   local method = GUI:CreateDropdown (self.statCaps, methodList, { default = 1, setter = function (_,val) self.pdb.caps[i].points[point].method = val end, width = 80 })
@@ -1296,43 +1294,29 @@ function ReforgeLite:CreateOptionList ()
   self.presetsButton.tip:SetPoint ("LEFT", self.presetsButton, "RIGHT", 5, 0)
   self.presetsButton.tip:SetText (L["Presets"])
 
-  self.savePresetButton = CreateFrame ("Button", "ReforgeLiteSavePresetButton", self.content, "UIPanelButtonTemplate")
+  self.savePresetButton = GUI:CreatePanelButton (self.content, SAVE, function() StaticPopup_Show ("REFORGE_LITE_SAVE_PRESET") end)
   self.statWeightsCategory:AddFrame (self.savePresetButton)
-  self.savePresetButton:SetText (SAVE)
-  self.savePresetButton:SetSize (self.savePresetButton:GetFontString():GetStringWidth() + 20, 22)
-  self.savePresetButton:SetScript ("OnClick", function() StaticPopup_Show ("REFORGE_LITE_SAVE_PRESET") end)
   self:SetAnchor (self.savePresetButton, "LEFT", self.presetsButton.tip, "RIGHT", 8, 0)
 
-  self.deletePresetButton = CreateFrame ("Button", "ReforgeLiteDeletePresetButton", self.content, "UIPanelButtonTemplate")
-  self.statWeightsCategory:AddFrame (self.deletePresetButton)
-  self.deletePresetButton:SetText (DELETE)
-  self.deletePresetButton:SetSize (self.deletePresetButton:GetFontString():GetStringWidth() + 20, 22)
-  self.deletePresetButton:SetScript ("OnClick", function(btn)
+  self.deletePresetButton = GUI:CreatePanelButton (self.content, DELETE, function(btn)
     LibDD:ToggleDropDownMenu (nil, nil, self.presetDelMenu, btn:GetName(), 0, 0)
   end)
+  self.statWeightsCategory:AddFrame (self.deletePresetButton)
   self:SetAnchor (self.deletePresetButton, "LEFT", self.savePresetButton, "RIGHT", 5, 0)
   if not self:CustomPresetsExist() then
     self.deletePresetButton:Disable()
   end
 
-  self.exportPresetButton = CreateFrame ("Button", "ReforgeLiteExportPresetButton", self.content, "UIPanelButtonTemplate")
-  self.statWeightsCategory:AddFrame (self.exportPresetButton)
-  self.exportPresetButton:SetText (L["Export"])
-  self.exportPresetButton:SetSize (self.exportPresetButton:GetFontString():GetStringWidth() + 20, 22)
-  self.exportPresetButton:SetScript ("OnClick", function (btn)
-    LibDD:ToggleDropDownMenu (nil, nil, self.exportPresetMenu, btn:GetName (), 0, 0)
-  end)
-  self.exportPresetButton:SetPoint ("LEFT", self.deletePresetButton, "RIGHT", 5, 0)
-
-  if not self.isDev then
-    self.exportPresetButton:Hide()
+  if self.isDev then
+    self.exportPresetButton = GUI:CreatePanelButton (self.content, L["Export"], function(btn)
+      LibDD:ToggleDropDownMenu (nil, nil, self.exportPresetMenu, btn:GetName(), 0, 0)
+    end)
+    self.statWeightsCategory:AddFrame (self.exportPresetButton)
+    self.exportPresetButton:SetPoint ("LEFT", self.deletePresetButton, "RIGHT", 5, 0)
   end
 
-  self.pawnButton = CreateFrame ("Button", "ReforgeLiteImportPawnButton", self.content, "UIPanelButtonTemplate")
+  self.pawnButton = GUI:CreatePanelButton (self.content, L["Import Pawn"], function(btn) StaticPopup_Show ("REFORGE_LITE_PARSE_PAWN") end)
   self.statWeightsCategory:AddFrame (self.pawnButton)
-  self.pawnButton:SetText (L["Import Pawn"])
-  self.pawnButton:SetSize (self.pawnButton:GetFontString():GetStringWidth() + 20, 22)
-  self.pawnButton:SetScript ("OnClick", function() StaticPopup_Show ("REFORGE_LITE_PARSE_PAWN") end)
   self:SetAnchor (self.pawnButton, "TOPLEFT", self.presetsButton, "BOTTOMLEFT", 0, -5)
 
   self.convertSpirit = CreateFrame ("Frame", nil, self.content)
@@ -1446,48 +1430,14 @@ function ReforgeLite:CreateOptionList ()
   self.statCaps.onUpdate ()
   RunNextFrame(function() self:CapUpdater() end)
 
-  self.computeButton = CreateFrame ("Button", "ReforgeLiteConfirmButton", self.content, "UIPanelButtonTemplate")
-  self.computeButton:SetText (L["Compute"])
-  self.computeButton:SetSize (self.computeButton:GetFontString():GetStringWidth() + 20, 22)
+  self.computeButton = GUI:CreatePanelButton (self.content, L["Compute"], function(btn) self:StartCompute(btn) end)
   self.computeButton:SetScript ("PreClick", function (btn)
-    if self.db.debug then btn.timeRan = GetTimePreciseSec() end
+    GUI:Lock()
     GUI:ClearFocus()
-  end)
-  self.computeButton:SetScript ("OnClick", function (btn)
-    local method = self:Compute ()
-    if method then
-      self.pdb.method = method
-      self:UpdateMethodCategory ()
-      if btn.timeRan then
-        print(TIME_ELAPSED, GetTimePreciseSec() - btn.timeRan)
-        btn.timeRan = nil
-      end
-    end
+    btn:RenderText(IN_PROGRESS)
   end)
 
   self:UpdateStatWeightList ()
-
-  self.quality = CreateFrame ("Slider", nil, self.content, "HorizontalSliderTemplate")
-  self:SetAnchor (self.quality, "LEFT", self.computeButton, "RIGHT", 10, 0)
-  self.quality:SetSize(150, 15)
-  self.quality:SetMinMaxValues (1, 20)
-  self.quality:SetValueStep (1)
-  self.quality:SetValue (self.db.reforgeCheat)
-  self.quality:EnableMouseWheel (false)
-  self.quality:SetScript ("OnValueChanged", function (slider)
-    self.db.reforgeCheat = slider:GetValue ()
-  end)
-
-  self.quality.label = self.quality:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  self.quality.label:SetPoint ("BOTTOM", self.quality, "TOP", 0, 0)
-  self.quality.label:SetTextColor (1, 1, 1)
-  self.quality.label:SetText (SPEED)
-  self.quality.lowtext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
-  self.quality.lowtext:SetPoint ("TOPLEFT", self.quality, "BOTTOMLEFT", 2, 3)
-  self.quality.lowtext:SetText ("1")
-  self.quality.hightext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
-  self.quality.hightext:SetPoint ("TOPRIGHT", self.quality, "BOTTOMRIGHT", -2, 3)
-  self.quality.hightext:SetText ("20")
 
   self.storedCategory = self:CreateCategory (L["Best result"])
   self:SetAnchor (self.storedCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
@@ -1512,21 +1462,11 @@ function ReforgeLite:CreateOptionList ()
   self.storedScore.suffix:SetTextColor (1, 1, 1)
   self.storedScore.suffix:SetText (")")
 
-  self.storedClear = CreateFrame ("Button", "ReforgeLiteStoredClear", self.content, "UIPanelButtonTemplate")
-  self.storedClear:SetText (KEY_NUMLOCK_MAC)
-  self.storedClear:SetSize (self.storedClear:GetFontString():GetStringWidth() + 20, 22)
-  self.storedClear:SetScript ("OnClick", function (self)
-    ReforgeLite:ClearStoredMethod ()
-  end)
+  self.storedClear = GUI:CreatePanelButton (self.content, KEY_NUMLOCK_MAC, function(btn) self:ClearStoredMethod () end)
   self.storedCategory:AddFrame (self.storedClear)
   self:SetAnchor (self.storedClear, "TOPLEFT", self.storedScore, "BOTTOMLEFT", 0, -8)
 
-  self.storedRestore = CreateFrame ("Button", "ReforgeLiteStoredRestore", self.content, "UIPanelButtonTemplate")
-  self.storedRestore:SetText (REFORGE_RESTORE)
-  self.storedRestore:SetSize (self.storedRestore:GetFontString():GetStringWidth() + 20, 22)
-  self.storedRestore:SetScript ("OnClick", function (self)
-    ReforgeLite:RestoreStoredMethod ()
-  end)
+  self.storedRestore = GUI:CreatePanelButton (self.content, REFORGE_RESTORE, function(btn) self:RestoreStoredMethod () end)
   self.storedCategory:AddFrame (self.storedRestore)
   self:SetAnchor (self.storedRestore, "BOTTOMLEFT", self.storedClear, "BOTTOMRIGHT", 8, 0)
 
@@ -1587,10 +1527,7 @@ function ReforgeLite:FillSettings ()
     end
   end), "LEFT")
 
-  self.debugButton = CreateFrame ("Button", nil, self.settings, "UIPanelButtonTemplate")
-  self.debugButton:SetText (L["Debug"])
-  self.debugButton:SetSize (self.debugButton:GetFontString():GetStringWidth() + 20, 22)
-  self.debugButton:SetScript ("OnClick", function (btn) self:DebugMethod() end)
+  self.debugButton = GUI:CreatePanelButton (self.content, L["Debug"], function(btn) self:DebugMethod () end)
   self.settings:SetCell (getOrderId('settings'), 0, self.debugButton, "LEFT")
 
   if self.isDev then
@@ -1643,11 +1580,8 @@ function ReforgeLite:UpdateMethodCategory ()
     self.methodCategory = self:CreateCategory (L["Result"])
     self:SetAnchor (self.methodCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
 
-    self.importWowSims = CreateFrame ("Button", nil, self.methodCategory, "UIPanelButtonTemplate")
+    self.importWowSims = GUI:CreatePanelButton (self.methodCategory, L["Import WoWSims"], function(btn) StaticPopup_Show("REFORGE_LITE_PARSE_WOWSIMS") end)
     self.methodCategory:AddFrame (self.importWowSims)
-    self.importWowSims:SetText (L["Import WoWSims"])
-    self.importWowSims:SetSize (self.importWowSims:GetFontString():GetStringWidth() + 20, 22)
-    self.importWowSims:SetScript ("OnClick", function() StaticPopup_Show ("REFORGE_LITE_PARSE_WOWSIMS") end)
     self:SetAnchor (self.importWowSims, "TOPLEFT", self.methodCategory, "BOTTOMLEFT", 0, -5)
 
     self.methodStats = GUI:CreateTable (#self.itemStats, 2, self.db.itemSize, 60, {0.5, 0.5, 0.5, 1})
@@ -1682,17 +1616,13 @@ function ReforgeLite:UpdateMethodCategory ()
       self.methodStats[i].delta:SetText ("+0")
     end
 
-    self.methodShow = CreateFrame ("Button", nil, self.content, "UIPanelButtonTemplate")
+    self.methodShow = GUI:CreatePanelButton (self.content, SHOW, function(btn) self:ShowMethodWindow() end)
     self.methodShow:SetSize(85, 22)
-    self.methodShow:SetText (SHOW)
-    self.methodShow:SetScript ("OnClick", function (btn) self:ShowMethodWindow() end)
     self.methodCategory:AddFrame (self.methodShow)
     self:SetAnchor (self.methodShow, "TOPLEFT", self.methodStats, "BOTTOMLEFT", 0, -5)
 
-    self.methodReset = CreateFrame ("Button", nil, self.content, "UIPanelButtonTemplate")
+    self.methodReset = GUI:CreatePanelButton (self.content, RESET, function(btn) self:ResetMethod() end)
     self.methodReset:SetSize(85, 22)
-    self.methodReset:SetText (RESET)
-    self.methodReset:SetScript ("OnClick", function (btn) self:ResetMethod() end)
     self.methodCategory:AddFrame (self.methodReset)
     self:SetAnchor (self.methodReset, "BOTTOMLEFT", self.methodShow, "BOTTOMRIGHT", 8, 0)
 
@@ -1891,6 +1821,7 @@ function ReforgeLite:UpdateItems()
       v.item = item:GetItemLink()
       v.itemId = item:GetItemID()
       v.ilvl = item:GetCurrentItemLevel()
+      v.itemGUID = item:GetItemGUID()
       v.texture:SetTexture(item:GetItemIcon())
       stats = GetItemStats(v.item)
       v.reforge = self:GetReforgeID(v.slotId)
@@ -1903,7 +1834,16 @@ function ReforgeLite:UpdateItems()
       end
     else
       v.item = nil
+      v.itemId = nil
+      v.ilvl = nil
+      v.reforge = nil
+      v.itemGUID = nil
       v.texture:SetTexture (v.slotTexture)
+    end
+    if self.pdb.itemsLocked[v.itemGUID] then
+      v.locked:Show()
+    else
+      v.locked:Hide()
     end
     for j, s in ipairs (self.itemStats) do
       if stats[s.name] and stats[s.name] ~= 0 then
@@ -2111,13 +2051,9 @@ function ReforgeLite:ShowMethodWindow ()
         function (val) self.methodOverride[i] = (val and 1 or -1) self:UpdateMethodChecks () end)
       self.methodWindow.itemTable:SetCell (i, 1, self.methodWindow.items[i].check)
     end
-    self.methodWindow.reforge = CreateFrame ("Button", nil, self.methodWindow, "UIPanelButtonTemplate")
+    self.methodWindow.reforge = GUI:CreatePanelButton (self.methodWindow, REFORGE, function(btn) self:DoReforge() end)
     self.methodWindow.reforge:SetSize(114, 22)
     self.methodWindow.reforge:SetPoint ("BOTTOMLEFT", 12, 12)
-    self.methodWindow.reforge:SetText (REFORGE)
-    self.methodWindow.reforge:SetScript ("OnClick", function (btn)
-      self:DoReforge ()
-    end)
     self.methodWindow.reforgeTip = CreateFrame ("Frame", nil, self.methodWindow)
     self.methodWindow.reforgeTip:SetAllPoints (self.methodWindow.reforge)
     self.methodWindow.reforgeTip:EnableMouse (true)
@@ -2239,34 +2175,51 @@ end
 
 --------------------------------------------------------------------------
 
+local reforgeCo = nil
 local function ClearReforgeWindow()
   ClearCursor()
   C_Reforge.SetReforgeFromCursorItem ()
   ClearCursor()
 end
 
+function ReforgeLite:DoReforge()
+  if self.pdb.method and self.methodWindow and ReforgeFrameIsVisible() then
+    if reforgeCo then
+      self:StopReforging()
+    else
+      ClearReforgeWindow()
+      self.methodWindow.reforge:SetText (CANCEL)
+      reforgeCo = coroutine.create( function() self:DoReforgeUpdate() end )
+      coroutine.resume(reforgeCo)
+    end
+  end
+end
+
 function ReforgeLite:StopReforging()
-  self.curReforgeItem = nil
-  self.reforgingNow = nil
-  self.methodWindow.reforge:SetScript ("OnUpdate", nil)
-  self.methodWindow.reforge:SetText (REFORGE)
+  reforgeCo = nil
+  if self.methodWindow then
+    self.methodWindow.reforge:SetText(REFORGE)
+  end
   ClearReforgeWindow()
+  collectgarbage()
+end
+
+function ReforgeLite:ContinueReforge()
+  if not (self.pdb.method and self.methodWindow.reforge:IsShown() and ReforgeFrameIsVisible()) then
+    self:StopReforging()
+    return
+  end
+  if reforgeCo then
+    coroutine.resume(reforgeCo)
+  end
 end
 
 function ReforgeLite:DoReforgeUpdate ()
-  if not (self.curReforgeItem and self.pdb.method and self.methodWindow.reforge:IsShown() and ReforgeFrameIsVisible()) then
-    self:StopReforging()
-  end
-  if self.reforgeSent then return end
-  while self.curReforgeItem <= #self.methodWindow.items do
-    local slotInfo = self.methodWindow.items[self.curReforgeItem]
-    local newReforge = self.pdb.method.items[self.curReforgeItem].reforge
-    if slotInfo.item and not self:IsReforgeMatching(slotInfo.slotId, newReforge, self.methodOverride[self.curReforgeItem]) then
-      if self.reforgingNow ~= slotInfo.slotId then
-        self.reforgingNow = slotInfo.slotId
-        PickupInventoryItem(self.reforgingNow)
-        C_Reforge.SetReforgeFromCursorItem()
-      end
+  for slotId, slotInfo in ipairs(self.methodWindow.items) do
+    local newReforge = self.pdb.method.items[slotId].reforge
+    if slotInfo.item and not self:IsReforgeMatching(slotInfo.slotId, newReforge, self.methodOverride[slotId]) then
+      PickupInventoryItem(slotInfo.slotId)
+      C_Reforge.SetReforgeFromCursorItem()
       if newReforge then
         local id = UNFORGE_INDEX
         local stats = GetItemStats (slotInfo.item)
@@ -2275,35 +2228,18 @@ function ReforgeLite:DoReforgeUpdate ()
           if (stats[self.itemStats[srcstat].name] or 0) ~= 0 and (stats[self.itemStats[dststat].name] or 0) == 0 then
             id = id + 1
           end
-          if srcstat == self.pdb.method.items[self.curReforgeItem].src and dststat == self.pdb.method.items[self.curReforgeItem].dst then
-            self.reforgeSent = true
+          if srcstat == self.pdb.method.items[slotId].src and dststat == self.pdb.method.items[slotId].dst then
             C_Reforge.ReforgeItem (id)
-            return
+            coroutine.yield()
           end
         end
-        self:StopReforging()
-      elseif self:GetReforgeID(self.reforgingNow) then
-        self.reforgeSent = true
+      elseif self:GetReforgeID(slotInfo.slotId) then
         C_Reforge.ReforgeItem (UNFORGE_INDEX)
+        coroutine.yield()
       end
-      return
     end
-    self.curReforgeItem = self.curReforgeItem + 1
   end
   self:StopReforging()
-end
-
-function ReforgeLite:DoReforge ()
-  if self.pdb.method and self.methodWindow and ReforgeFrameIsVisible() then
-    if self.curReforgeItem then
-      self:StopReforging()
-    else
-      self.curReforgeItem = INVSLOT_FIRST_EQUIPPED
-      ClearReforgeWindow()
-      self.methodWindow.reforge:SetScript ("OnUpdate", function () self:DoReforgeUpdate() end)
-      self.methodWindow.reforge:SetText (CANCEL)
-    end
-  end
 end
 
 --------------------------------------------------------------------------
@@ -2343,7 +2279,7 @@ end
 --------------------------------------------------------------------------
 
 function ReforgeLite:FORGE_MASTER_ITEM_CHANGED()
-  self.reforgeSent = nil
+  self:ContinueReforge()
 end
 
 function ReforgeLite:FORGE_MASTER_OPENED()
@@ -2351,7 +2287,7 @@ function ReforgeLite:FORGE_MASTER_OPENED()
     self.autoOpened = true
     self:Show()
   end
-  self.reforgeSent = nil
+  self:StopReforging()
 end
 
 function ReforgeLite:FORGE_MASTER_CLOSED()
@@ -2362,7 +2298,7 @@ function ReforgeLite:FORGE_MASTER_CLOSED()
     end
     self.autoOpened = nil
   end
-  self.reforgeSent = nil
+  self:StopReforging()
 end
 
 function ReforgeLite:OnEvent(event, ...)

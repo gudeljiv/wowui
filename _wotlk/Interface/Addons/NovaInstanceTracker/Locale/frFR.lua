@@ -549,3 +549,30 @@ L["Inscription"] = "Calligraphie";
 L["First Aid"] = "Secourisme";
 
 L["Tarnished Undermine Real"] = "Réal de Terremine terni";
+
+L["Dungeon weeklies remaining"] = "Quêtes hebdomadaires de donjon restantes";
+
+L["Currency"] = "Monnaie";
+L["Currencies"] = "Monnaies";
+
+L["instanceStatsOutputCurrencyTitle"] = "Monnaie";
+L["instanceStatsOutputCurrencyDesc"] = "Affiche les monnaies gagnées dans un donjon ?";
+
+L["lootReminderDesc"] = "Rappels de butin";
+
+L["lootReminderRealTitle"] = "Réal de Terremine terni";
+L["lootReminderRealDesc"] = "Affiche un rappel pour ramasser le Réal de Terremine terni dans SoD lorsqu'un boss meurt qui peut le lâcher.";
+
+L["lootReminderSizeTitle"] = "Taille du texte";
+L["lootReminderSizeDesc"] = "Quelle taille de texte afficher dans le rappel.";
+
+L["lootReminderXTitle"] = "Position X";
+L["lootReminderXDesc"] = "Ajuste ceci pour la position gauche/droite du texte du rappel.";
+
+L["lootReminderYTitle"] = "Position Y";
+L["lootReminderYDesc"] = "Ajuste ceci pour la position haut/bas du texte du rappel.";
+
+L["Looted"] = "Butin Ramassé";
+L["Not Looted"] = "Butin Non Ramassé";
+L["Killed But Not Looted"] = "Tué mais non ramassé";
+L["Loot the Tarnished Undermine Real"] = "Ramassez le Réal de Terremine terni";

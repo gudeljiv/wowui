@@ -3,6 +3,8 @@ if (not L) then
 	return;
 end
 
+--Spanish (AL)
+
 L["noTimer"] = "Sin temporizador"; --No timer
 L["noCurrentTimer"] = "Sin temporizador actual"; --No current timer
 L["noActiveTimers"] = "Sin temporizadores activos";	--No active timers
@@ -552,4 +554,31 @@ L["Jewelcrafting"] = "Joyería";
 L["Inscription"] = "Inscripción";
 L["First Aid"] = "Primeros auxilios";
 
-L["Tarnished Undermine Real"] = "Real deslustrado de Minahonda";
+L["Tarnished Undermine Real"] = "Real de Minahonda deslustrado";
+
+L["Dungeon weeklies remaining"] = "Misiones semanales de calabozos restantes";
+
+L["Currency"] = "Moneda";
+L["Currencies"] = "Monedas";
+
+L["instanceStatsOutputCurrencyTitle"] = "Moneda";
+L["instanceStatsOutputCurrencyDesc"] = "¿Muestra qué monedas se obtuvieron dentro de un calabozo?";
+
+L["lootReminderDesc"] = "Recordatorios de botín";
+
+L["lootReminderRealTitle"] = "Real de Minahonda deslustrado";
+L["lootReminderRealDesc"] = "Muestra un recordatorio para despojar el Real de Minahonda deslustrado en SoD cuando muere un jefe que puede soltarlo.";
+
+L["lootReminderSizeTitle"] = "Tamaño del texto";
+L["lootReminderSizeDesc"] = "Qué tamaño de texto mostrar en el recordatorio.";
+
+L["lootReminderXTitle"] = "Posición X";
+L["lootReminderXDesc"] = "Ajusta esto para la posición izquierda/derecha del texto del recordatorio.";
+
+L["lootReminderYTitle"] = "Posición Y";
+L["lootReminderYDesc"] = "Ajusta esto para la posición arriba/abajo del texto del recordatorio.";
+
+L["Looted"] = "Despojado";
+L["Not Looted"] = "No Despojado";
+L["Killed But Not Looted"] = "Muerto pero no despojado";
+L["Loot the Tarnished Undermine Real"] = "Despoja el Real de Minahonda deslustrado";

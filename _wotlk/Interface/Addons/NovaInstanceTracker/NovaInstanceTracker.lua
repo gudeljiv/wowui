@@ -48,6 +48,7 @@ NIT.acr = LibStub:GetLibrary("AceConfigRegistry-3.0");
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NIT.LDBIcon = LibStub("LibDBIcon-1.0");
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata;
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
 NIT.version = tonumber(version);
 if (NIT.expansionNum < 10) then
@@ -2397,8 +2398,20 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			end
 		end
 		if (not data.isPvp and not data.mythicPlus) then
-			text = text .. "\n|cFF9CD6DE" .. L["enteredLevel"] .. ":|r " .. (data.enteredLevel or "Unknown");
-			text = text .. "\n|cFF9CD6DE" .. L["leftLevel"] .. ":|r " .. (data.leftLevel or "Unknown");
+			local foundPercent;
+			if (data.enteredLevelPercent) then
+				text = text .. "\n|cFF9CD6DE" .. L["enteredLevel"] .. ":|r " .. data.enteredLevelPercent;
+				foundPercent = true;
+			else
+				text = text .. "\n|cFF9CD6DE" .. L["enteredLevel"] .. ":|r " .. (data.enteredLevel or "Unknown");
+			end
+			if (data.enteredLevel ~= NIT.maxLevel) then
+				if (data.leftLevelPercent) then
+					text = text .. "\n|cFF9CD6DE" .. L["leftLevel"] .. ":|r " .. data.leftLevelPercent;
+				else
+					text = text .. "\n|cFF9CD6DE" .. L["leftLevel"] .. ":|r " .. (data.leftLevel or "Unknown");
+				end
+			end
 		end
 		if (data.type ~= "arena" and data.groupAverage and data.groupAverage > 0 and not data.mythicPlus) then
 			text = text .. "\n|cFF9CD6DE" .. L["averageGroupLevel"] .. ":|r " .. (NIT:round(data.groupAverage, 2) or "Unknown");
@@ -3641,8 +3654,8 @@ function NIT:createAltsFrameLootReminderButton()
 		NIT.altsLootReminderButton = CreateFrame("Button", "NITAltsLootReminderButton", NITAltsFrame.EditBox, "UIPanelButtonTemplate");
 		--NIT.altsLootReminderButton:SetPoint("CENTER", -60, -14);
 		NIT.altsLootReminderButton:SetPoint("CENTER", 0, -31);
-		NIT.altsLootReminderButton:SetWidth(130);
-		NIT.altsLootReminderButton:SetHeight(17);
+		NIT.altsLootReminderButton:SetWidth(170);
+		NIT.altsLootReminderButton:SetHeight(18);
 		NIT.altsLootReminderButton:SetText(L["Loot Reminder List"]);
 		NIT.altsLootReminderButton:SetNormalFontObject("GameFontNormalSmall");
 		NIT.altsLootReminderButton:SetScript("OnClick", function(self, arg)

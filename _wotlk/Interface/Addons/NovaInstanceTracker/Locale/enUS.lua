@@ -550,6 +550,8 @@ L["Cata Cooking Daily"] = "Cata Cooking Daily";
 L["Cata Fishing Daily"] = "Cata Fishing Daily";
 L["Cata Jewelcrafting Daily"] = "Cata Jewelcrafting Daily";
 
+L["Tarnished Undermine Real"] = "Tarnished Undermine Real";
+
 L["Dungeon weeklies remaining"] = "Dungeon weeklies remaining";
 
 L["Currency"] = "Currency";
@@ -557,8 +559,6 @@ L["Currencies"] = "Currencies";
 
 L["instanceStatsOutputCurrencyTitle"] = "Currency";
 L["instanceStatsOutputCurrencyDesc"] = "Show what currencies were gained while inside a dungeon?";
-
-L["Tarnished Undermine Real"] = "Tarnished Undermine Real";
 
 L["lootReminderDesc"] = "Loot Reminders";
 
@@ -578,3 +578,9 @@ L["Looted"] = "Looted";
 L["Not Looted"] = "Not Looted";
 L["Killed But Not Looted"] = "Killed But Not Looted";
 L["Loot the Tarnished Undermine Real"] = "Loot the Tarnished Undermine Real";
+
+L["Reminder"] = "Reminder";
+L["missingArgentDawnTrinket"] = "%s trinket reminder %s isn't equipped." --Argent Dawn trinket reminder [Rune of the Dawn] isn't equipped.
+
+L["argentDawnTrinketReminderTitle"] = "Argent Dawn Trinket Reminder";
+L["argentDawnTrinketReminderDesc"] = "Argent Dawn trinket reminder in chat if you enter Scholomance/Stratholme with the trinket in bags and not exalted.";

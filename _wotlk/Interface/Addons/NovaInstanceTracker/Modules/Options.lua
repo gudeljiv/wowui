@@ -15,7 +15,7 @@ NIT.options = {
 	args = {
 		titleText = {
 			type = "description",
-			name = "        " .. NIT.prefixColor .. "NovaInstanceTracker (v" .. GetAddOnMetadata("NovaInstanceTracker", "Version") .. ")",
+			name = "        " .. NIT.prefixColor .. "NovaInstanceTracker (v" .. NIT.version .. ")",
 			fontSize = "large",
 			order = 1,
 		},
@@ -741,6 +741,17 @@ function NIT:loadSpecificOptions()
 			width = 1.5,
 		};
 	end
+	if (NIT.isClassic) then
+		NIT.options.args["argentDawnTrinketReminder"] = {
+			type = "toggle",
+			name = L["argentDawnTrinketReminderTitle"],
+			desc = L["argentDawnTrinketReminderDesc"],
+			order = 49,
+			get = "getArgentDawnTrinketReminder",
+			set = "setArgentDawnTrinketReminder",
+			width = 1.5,
+		};
+	end
 end
 		
 		
@@ -840,6 +851,7 @@ NIT.optionDefaults = {
 		lootReminderY = 150,
 		lootReminderMinimap = true,
 		wipeUpgradeData = true,
+		argentDawnTrinketReminder = true,
 	},
 };
 
@@ -1632,4 +1644,13 @@ end
 
 function NIT:getLootReminderY(info)
 	return self.db.global.lootReminderY;
+end
+
+--Argent Dawn trinket reminder.
+function NIT:setArgentDawnTrinketReminder(info, value)
+	self.db.global.rgentDawnTrinketReminder = value;
+end
+
+function NIT:getArgentDawnTrinketReminder(info)
+	return self.db.global.argentDawnTrinketReminder;
 end

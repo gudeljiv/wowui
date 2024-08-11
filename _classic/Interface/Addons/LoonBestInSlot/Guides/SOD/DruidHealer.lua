@@ -5,7 +5,7 @@ local function LoadData()
     local spec4 = LBIS:RegisterSpec(LBIS.L["Druid"], LBIS.L["Healer"], "4")
 
     LBIS:AddEnchant(spec4, "15394", LBIS.L["Head"]) --Lesser Arcanum of Resilience
-    LBIS:AddEnchant(spec4, "446472", LBIS.L["Shoulder"]) --Atal'ai Signet of Serenity
+    LBIS:AddEnchant(spec4, "460963", LBIS.L["Shoulder"]) --Blessed Flame Mantle of the Dawn
     LBIS:AddEnchant(spec4, "461129", LBIS.L["Back"]) --Hydraxian Coronation
     LBIS:AddEnchant(spec4, "20025", LBIS.L["Chest"]) --Enchant Chest - Greater Stats
     LBIS:AddEnchant(spec4, "23802", LBIS.L["Wrist"]) --Enchant Bracer - Healing Power
@@ -379,6 +379,7 @@ local function LoadData()
     LBIS:AddItem(spec4, "228274", LBIS.L["Ring"], "BIS") --Cauterizing Band
     LBIS:AddItem(spec4, "228585", LBIS.L["Ring"], "BIS") --Mark of the Dragon Lord
     LBIS:AddItem(spec4, "227454", LBIS.L["Ring"], "Alt") --Tidal Loop
+    LBIS:AddItem(spec4, "228687", LBIS.L["Ring"], "Alt") --Dragonslayer's Signet
     LBIS:AddItem(spec4, "228359", LBIS.L["Ring"], "Alt") --Ring of Entropy
     LBIS:AddItem(spec4, "16058", LBIS.L["Ring"], "Alt") --Fordring's Seal
     LBIS:AddItem(spec4, "22334", LBIS.L["Ring"], "Alt") --Band of Mending
@@ -387,9 +388,9 @@ local function LoadData()
     LBIS:AddItem(spec4, "220629", LBIS.L["Ring"], "Alt") --Drakeclaw Band of the Blood Prophet
     LBIS:AddItem(spec4, "221308", LBIS.L["Trinket"], "BIS") --Darkmoon Card: Overgrowth
     LBIS:AddItem(spec4, "18470", LBIS.L["Trinket"], "BIS") --Royal Seal of Eldre'Thalas
-    LBIS:AddItem(spec4, "228678", LBIS.L["Trinket"], "BIS") --Draconic Infused Emblem
+    LBIS:AddItem(spec4, "228188", LBIS.L["Trinket"], "BIS") --Prestor's Hairpin
     LBIS:AddItem(spec4, "221448", LBIS.L["Trinket"], "BIS") --Talisman of the Corrupted Grove
-    LBIS:AddItem(spec4, "228188", LBIS.L["Trinket"], "Alt") --Prestor's Hairpin
+    LBIS:AddItem(spec4, "228678", LBIS.L["Trinket"], "Alt") --Draconic Infused Emblem
     LBIS:AddItem(spec4, "228084", LBIS.L["Trinket"], "Alt") --Miniaturized Fire Extinguisher
     LBIS:AddItem(spec4, "19288", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Blue Dragon
     LBIS:AddItem(spec4, "227972", LBIS.L["Trinket"], "Alt") --Burst of Knowledge

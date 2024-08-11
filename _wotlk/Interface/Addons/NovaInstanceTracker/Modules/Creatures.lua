@@ -737,6 +737,7 @@ NIT.critterCreatures = {
 	[8179] = "Greater Healing Ward",
 	[7527] = "Goblin Land Mine",
 	[7863] = "Dream Vision",
+	[10577] = "Crypt Scarab",
 };
 
 --for k, v in pairs(NIT.critterCreatures2) do

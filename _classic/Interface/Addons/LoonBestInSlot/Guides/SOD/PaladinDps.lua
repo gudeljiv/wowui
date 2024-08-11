@@ -327,6 +327,7 @@ local function LoadData()
     LBIS:AddItem(spec4, "228722", LBIS.L["Trinket"], "BIS") --Hand of Justice
     LBIS:AddItem(spec4, "228078", LBIS.L["Trinket"], "BIS") --Accursed Chalice
     LBIS:AddItem(spec4, "10725", LBIS.L["Trinket"], "BIS") --Gnomish Battle Chicken
+    LBIS:AddItem(spec4, "227915", LBIS.L["Trinket"], "Alt") --Duke's Domain
     LBIS:AddItem(spec4, "221307", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Decay
     LBIS:AddItem(spec4, "221309", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Sandstorm
     LBIS:AddItem(spec4, "13965", LBIS.L["Trinket"], "Alt") --Blackhand's Breadth
@@ -338,16 +339,17 @@ local function LoadData()
     LBIS:AddItem(spec4, "228230", LBIS.L["Two Hand"], "Alt") --Refined Hammer of the Titans
     LBIS:AddItem(spec4, "228460", LBIS.L["Two Hand"], "Alt") --Spinal Reaper
     LBIS:AddItem(spec4, "227691", LBIS.L["Two Hand"], "Alt") --Blade of Hanna
-    LBIS:AddItem(spec4, "227960", LBIS.L["Two Hand"], "Alt") --Impervious Giant
     LBIS:AddItem(spec4, "228229", LBIS.L["Two Hand"], "Alt") --Obsidian Edged Blade
-    LBIS:AddItem(spec4, "1263", LBIS.L["Two Hand"], "Alt") --Brain Hacker
+    LBIS:AddItem(spec4, "227960", LBIS.L["Two Hand"], "Alt") --Impervious Giant
     LBIS:AddItem(spec4, "227845", LBIS.L["Two Hand"], "Alt") --Refined Arcanite Reaper
-    LBIS:AddItem(spec4, "223526", LBIS.L["Two Hand"], "Alt") --Sul'thraze the Lasher
+    LBIS:AddItem(spec4, "1263", LBIS.L["Two Hand"], "Alt") --Brain Hacker
     LBIS:AddItem(spec4, "228160", LBIS.L["Two Hand"], "Alt") --Faithbringer
+    LBIS:AddItem(spec4, "223526", LBIS.L["Two Hand"], "Alt") --Sul'thraze the Lasher
     LBIS:AddItem(spec4, "23203", LBIS.L["Ranged/Relic"], "BIS") --Libram of Fervor
     LBIS:AddItem(spec4, "221457", LBIS.L["Ranged/Relic"], "Alt") --Libram of Draconic Destruction
     LBIS:AddItem(spec4, "209574", LBIS.L["Ranged/Relic"], "Alt") --Discarded Tenets of the Silver Hand
     LBIS:AddItem(spec4, "228173", LBIS.L["Ranged/Relic"], "Alt") --Libram of the Consecrated
+    LBIS:AddItem(spec4, "215435", LBIS.L["Ranged/Relic"], "Alt") --Libram of Benediction
 end
 if C_Seasons and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfDiscovery then
     LoadData();

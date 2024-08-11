@@ -2,11 +2,60 @@
 ---NovaInstanceTracker--
 ------------------------
 
+local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
+
+function NIT:argentDawnTrinketReminder()
+	if (not NIT.db.global.argentDawnTrinketReminder) then
+		return;
+	end
+	local _, _, _, _, _, _, _, instanceID = GetInstanceInfo();
+	if (instanceID == 289 or instanceID == 329) then
+		local factionName, _, standing = GetFactionInfoByID(529);
+		if (standing and standing < 8 and standing ~= 0) then
+			local trinkets = {
+				[1] = {
+					itemID = 13209,
+					name = "|cFF0070DD[Seal of the Dawn]|r",
+				},
+				[2] = {
+					itemID = 19812,
+					name = "|cFF0070DD[Rune of the Dawn]|c",
+				},
+				[3] = {
+					itemID = 12846,
+					name = "|cFFFFFFFF[Argent Dawn Commission]|r",
+				},
+			};
+			local isEquipped;
+			for k, v in ipairs(trinkets) do
+				if (C_Item.IsEquippedItem(v.itemID)) then
+					isEquipped = true;
+				end
+			end
+			if (not isEquipped) then
+				for k, v in ipairs(trinkets) do
+					local trinket = GetItemCount(v.itemID);
+					if (trinket and trinket > 0) then
+						local _, itemLink = C_Item.GetItemInfo(v.itemID);
+						local itemString;
+						if (itemLink) then
+							itemString = itemLink;
+						else
+							itemString = v.name;
+						end
+						NIT:print("|cFF00FF00" .. L["Reminder"] .. ":|r " .. string.format(L["missingArgentDawnTrinket"], factionName, itemString));
+						return;
+					end
+				end
+			end
+		end
+	end
+end
+
 if (not NIT.isSOD) then
 	return;
 end
 
-local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local lootReminderFrame, lootReminderListFrame;
 local lastLootNpcID, lastBossNpcID, lastBossTime;
 local tinsert = tinsert;
@@ -18,7 +67,6 @@ local dungeons = {
 	[230] = "Blackrock Depths",
 	[229] = "Blackrock Spire",
 	[2784] = "Demonfall Canyon",
-	--[389] = "Test Dungeon RFC",
 };
 
 --Some bosses are missing encounter_end event in classic we need a db of all the bosses.
@@ -33,14 +81,14 @@ local turBosses = {
 	[10808] = {name = "Timmy the Cruel", instanceID = 329, order = 4},
 	[11032] = {name = "Malor the Zealous", instanceID = 329, order = 5},
 	[10997] = {name = "Cannon Master Willey", instanceID = 329, order = 6},
-	[10811] = {name = "Archivist Galford", instanceID = 999, order = 7},
+	[10811] = {name = "Archivist Galford", instanceID = 329, order = 7},
 	[10813] = {name = "Balnazzar", instanceID = 329, order = 8},
 	[-101] = {header = true, title = "Undead Side", instanceID = 329, order = 10},
-	[10435] = {name = "Magistrate Barthilas", instanceID = 329, order = 11},
-	[10436] = {name = "Baroness Anastari", instanceID = 329, order = 12},
-	[11121] = {name = "Black Guard Swordsmith", instanceID = 329, order = 13},
 	[10437] = {name = "Nerub'enkan", instanceID = 329, order = 14},
+	[10436] = {name = "Baroness Anastari", instanceID = 329, order = 12},
 	[10438] = {name = "Maleki the Pallid", instanceID = 329, order = 15},
+	[10435] = {name = "Magistrate Barthilas", instanceID = 329, order = 11},
+	--[11121] = {name = "Black Guard Swordsmith", instanceID = 329, order = 13}, --Doesn't drop.
 	[10439] = {name = "Ramstein the Gorger", instanceID = 329, order = 16},
 	[10440] = {name = "Baron Rivendare", instanceID = 329, order = 17},
 	--[11120] = {name = "Crimson Hammersmith", instanceID = 329, order = 99}, --Needs testing (spawnable mob unlikely to drop).
@@ -54,9 +102,9 @@ local turBosses = {
 	[10503] = {name = "Jandice Barov", instanceID = 289, order = 2},
 	[11622] = {name = "Rattlegore", instanceID = 289, order = 3},
 	[10433] = {name = "Marduk Blackpool", instanceID = 289, order = 4},
-	[10508] = {name = "Ras Frostwhisper", instanceID = 289, order = 5},
-	[10505] = {name = "Instructor Malicia", instanceID = 289, order = 6},
-	[10432] = {name = "Vectus", instanceID = 289, order = 7},
+	[10432] = {name = "Vectus", instanceID = 289, order = 5},
+	[10508] = {name = "Ras Frostwhisper", instanceID = 289, order = 6},
+	[10505] = {name = "Instructor Malicia", instanceID = 289, order = 7},
 	[11261] = {name = "Doctor Theolen Krastinov", instanceID = 289, order = 8},
 	[10901] = {name = "Lorekeeper Polkelt", instanceID = 289, order = 9},
 	[10507] = {name = "The Ravenian", instanceID = 289, order = 10},
@@ -127,11 +175,6 @@ local turBosses = {
 	[10220] = {name = "Halycon", instanceID = 229, order = 17},
 	[10268] = {name = "Gizrul the Slavener", instanceID = 229, order = 18},
 	[9568] = {name = "Overlord Wyrmthalak", instanceID = 229, order = 19},
-	
-	--Test Dungeon RFC.
-	--[11319] = {name = "Ambassador Flamelash", instanceID = 389, order = 1},
-	--[11318] = {name = "Bael'Gar", instanceID = 389, order = 2},
-	--[11320] = {name = "Earthborer", instanceID = 389, order = 3},
 };
 
 local function getBossCount(instanceID)
@@ -150,9 +193,9 @@ end
 
 local function getLootedStatus(npcID, itemID)
 	local data = NIT.data.myChars[UnitName("player")].bossKills[npcID];
-	if (data and data.looted and data.looted[itemID] and data.resetTime > GetServerTime()) then
+	if (data and data.looted and data.looted[itemID] and data.resetTime and data.resetTime > GetServerTime()) then
 		return true;
-	elseif (data and data.resetTime > GetServerTime()) then
+	elseif (data and data.resetTime and data.resetTime > GetServerTime()) then
 		--Killed but not looted.
 		return false, true;
 	end
@@ -272,12 +315,10 @@ local function chatMsgLoot(...)
 	    	local itemID = string.match(itemLink, "item:(%d+)");
 	    	if (itemID) then
 	    		itemID = tonumber(itemID);
-	    		if (not lastLootNpcID) then
-	    			NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
-	    		end
 	    		if (itemID == 226404) then
 	    			hideMiddleMsg();
 	    			if (lastLootNpcID) then
+	    				NIT:debug("Using lastLootNpcID:", lastBossNpcID);
 			    		local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
 						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID]) then
 							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID] = {};
@@ -287,10 +328,29 @@ local function chatMsgLoot(...)
 						end
 						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime or
 								(NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime < GetServerTime() - 300)) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;	
+							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;
+							NIT:debug("Missing boss kill reset time", lastLootNpcID); --Possiblly if a boss not on the list drops a token?
 						end
 						NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted[itemID] = true;
+					elseif (lastBossNpcID) then
+						NIT:debug("Using backup lastBossNpcID:", lastBossNpcID);
+						local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID]) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID] = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime or
+								(NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime < GetServerTime() - 300)) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime = resetTime;
+							NIT:debug("Missing boss kill reset time", lastBossNpcID); --Possiblly if a boss not on the list drops a token?
+						end
+						NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted[itemID] = true;
+					else
+						NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
 					end
+					lastLootNpcID = nil;
 	    		end
 	    	end
     	end
@@ -298,7 +358,7 @@ local function chatMsgLoot(...)
 end
 
 local function lootOpened()
-	lastLootNpcID = nil;
+	--lastLootNpcID = nil; --Delete old ID on looting real instead.
 	local sources = {GetLootSourceInfo(1)}
 	--Always only 1 source in classic.
 	local guid = sources[1];
@@ -307,7 +367,9 @@ local function lootOpened()
 		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
 		if (npcID) then
 			npcID = tonumber(npcID);
-			lastLootNpcID = npcID;
+			if (npcID and turBosses[npcID]) then
+				lastLootNpcID = npcID;
+			end
 		end
 		return;
 	end
@@ -317,7 +379,9 @@ local function lootOpened()
 		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
 		if (npcID) then
 			npcID = tonumber(npcID);
-			lastLootNpcID = npcID;
+			if (npcID and turBosses[npcID]) then
+				lastLootNpcID = npcID;
+			end
 		end
 	end
 end
@@ -332,7 +396,7 @@ end
 local function combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
-	if (subEvent == "UNIT_DIED" and NIT.inInstance and string.match(destGUID, "Creature")) then
+	if (subEvent == "UNIT_DIED" and NIT.inInstance and destGUID and string.match(destGUID, "Creature")) then
 		--If max level player then count mobs via death instead of xp.
 		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
 		npcID = tonumber(npcID);
@@ -381,7 +445,7 @@ function NIT:updateLootReminderFrame(runTest)
 end
 
 function NIT:loadLootReminderFrame()
-	local frame = CreateFrame("Frame", "TestFrame", UIParent);
+	local frame = CreateFrame("Frame", "NITLootReminderFrame", UIParent);
 	frame:SetSize(1, 1);
 	frame:SetPoint("CENTER", UIParent, -10, 100);
 	frame.fs = frame:CreateFontString("NITLootReminderFrameFS", "ARTWORK");
@@ -394,7 +458,7 @@ function NIT:loadLootReminderFrame()
 	--[[frame.animationGroup = frame:CreateAnimationGroup();
 	frame.animationGroup:SetLooping("BOUNCE");
 	local bounce = frame.animationGroup:CreateAnimation("Translation");
-	bounce:SetChildKey("TestFrame");
+	bounce:SetChildKey("NITLootReminderFrame");
 	bounce:SetOffset(0, 40);
 	bounce:SetDuration(0.05);
 	bounce:SetScript("OnUpdate", function()
@@ -619,8 +683,8 @@ function NIT:loadLootReminderListFrame()
 		frame:Hide();
 		lootReminderListFrame = frame;
 	end
-	lootReminderListFrame.scrollChild.fs:SetText("|cFF00FF00NIT Loot Reminder Daily List");
-	local text = "";
+	lootReminderListFrame.scrollChild.fs:SetText("|cFFFFFFFFNIT Loot Reminder Daily List|r\n|cFF1EFF00[" .. L["Tarnished Undermine Real"] .. "]|r");
+	local text = "\n";
 	local count = 0;
 	for instanceID, instanceName in NIT:pairsByKeys(dungeons) do
 		count = count + 1;

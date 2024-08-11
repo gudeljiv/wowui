@@ -80,6 +80,9 @@ function QuestieQuestFixes:Load()
         [30] = {
             [questKeys.extraObjectives] = {{{[zoneIDs.MOONGLADE]={{36.5,41.7}}}, Questie.ICON_TYPE_EVENT, l10n("Combine the Pendant halves at the Shrine of Remulos.")}},
         },
+        [32] = { -- Rise of the Silithid
+            [questKeys.nextQuestInChain] = 4494,
+        },
         [33] = {
             [questKeys.preQuestSingle] = {},
         },
@@ -106,6 +109,9 @@ function QuestieQuestFixes:Load()
         },
         [155] = {
             [questKeys.triggerEnd] = {"Escort The Defias Traitor to discover where VanCleef is hiding", {[zoneIDs.WESTFALL]={{42.55,71.53}}}},
+        },
+        [162] = { -- Rise of the Silithid
+            [questKeys.nextQuestInChain] = 4493,
         },
         [163] = {
             [questKeys.exclusiveTo] = {5}, -- Raven Hill breadcrumb
@@ -780,6 +786,9 @@ function QuestieQuestFixes:Load()
         [1302] = {
             [questKeys.preQuestSingle] = {}, -- #889
         },
+        [1322] = {
+            [questKeys.objectivesText] = {"Acquire 6 Acidic Venom Sacs for Do'gol in Brackenwall Village."},
+        },
         [1324] = {
             [questKeys.objectives] = {{{4966,"Subdue Private Hendel"}}},
             [questKeys.nextQuestInChain] = 1267, -- wotlkDB is wrong, classicGB is right
@@ -1290,6 +1299,9 @@ function QuestieQuestFixes:Load()
         [2936] = {
             [questKeys.triggerEnd] = {"Find the Spider God's Name", {[zoneIDs.TANARIS]={{38.73,19.88}}}},
         },
+        [2943] = { -- Return to Troyas
+            [questKeys.nextQuestInChain] = 2879,
+        },
         [2945] = {
             [questKeys.startedBy] = {{6212},nil,{9326}},
         },
@@ -1342,6 +1354,9 @@ function QuestieQuestFixes:Load()
         [3181] = {
             [questKeys.startedBy] = {{5833},nil,{10000}},
         },
+        [3182] = { -- Proof of Deed
+            [questKeys.nextQuestInChain] = 3201,
+        },
         [3321] = {
             [questKeys.objectives] = {{{7804,"Watch Trenton Work"}}},
         },
@@ -1371,6 +1386,9 @@ function QuestieQuestFixes:Load()
         },
         [3453] = {
             [questKeys.objectives] = {{{8479,"Torch Creation"}}},
+        },
+        [3454] = { -- The Torch of Retribution
+            [questKeys.nextQuestInChain] = 3462,
         },
         [3483] = {
             [questKeys.parentQuest] = 3449, -- #1008
@@ -1458,12 +1476,13 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {936,3762,3761},
         },
         [3785] = {
-            [questKeys.requiredSourceItems] = {11018},
+            [questKeys.requiredSourceItems] = {11022,11018},
         },
         [3786] = {
-            [questKeys.requiredSourceItems] = {11018},
+            [questKeys.requiredSourceItems] = {11022,11018},
         },
-        [3791] = {
+        [3791] = { -- The Mystery of Morrowgrain
+            [questKeys.requiredSourceItems] = {11022,11018},
             [questKeys.preQuestSingle] = {3787,3788}, -- #885
         },
         [3903] = {
@@ -1558,6 +1577,9 @@ function QuestieQuestFixes:Load()
         [4122] = {
             [questKeys.preQuestSingle] = {4082}, -- #1349
         },
+        [4126] = {
+            [questKeys.preQuestSingle] = {},
+        },
         [4133] = {
             [questKeys.exclusiveTo] = {4134}, -- #1859
         },
@@ -1587,6 +1609,9 @@ function QuestieQuestFixes:Load()
         },
         [4265] = {
             [questKeys.triggerEnd] = {"Free Raschal.", {[zoneIDs.FERALAS]={{72.13,63.84}}}},
+        },
+        [4267] = { -- Rise of the Silithid
+            [questKeys.nextQuestInChain] = 4493,
         },
         [4285] = {
             [questKeys.triggerEnd] = {"Discover and examine the Northern Crystal Pylon",{[zoneIDs.UN_GORO_CRATER]={{56,12}}}},
@@ -1623,8 +1648,8 @@ function QuestieQuestFixes:Load()
         [4491] = {
             [questKeys.triggerEnd] = {"Escort Ringo to Spraggle Frock at Marshal's Refuge", {[zoneIDs.UN_GORO_CRATER]={{43.71,8.29}}}},
         },
-        [4493] = {
-            [questKeys.preQuestSingle] = {4267},
+        [4493] = { -- March of the Silithid
+            [questKeys.preQuestSingle] = {162,4267},
         },
         [4494] = {
             [questKeys.preQuestSingle] = {32,7732},
@@ -1667,6 +1692,9 @@ function QuestieQuestFixes:Load()
         [4641] = {
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE, -- #877
             [questKeys.exclusiveTo] = {788}, -- #1956
+        },
+        [4726] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_INTERACT, l10n("Use the Draco-Incarcinatrix 900 and defeat the dragonkin."), 0, {{"monster",7047},{"monster",7048}},{"monster",7049}}},
         },
         [4729] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Empty Worg Pup Cage to capture it."), 0, {{"monster", 10221}}}},
@@ -2585,8 +2613,9 @@ function QuestieQuestFixes:Load()
         [7494] = {
             [questKeys.startedBy] = {{2198,10877,10878},nil,nil}, -- #2489
         },
-        [7495] = {
+        [7495] = { -- Victory for the Alliance
             [questKeys.startedBy] = {{10184},nil,{18423}},
+            [questKeys.requiredLevel] = 60,
         },
         [7507] = {
             [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.PALADIN,
@@ -2695,22 +2724,22 @@ function QuestieQuestFixes:Load()
             [questKeys.triggerEnd] = {"Message to the Wildhammer Delivered", {[zoneIDs.THE_HINTERLANDS]={{14.34,48.07}}}},
         },
         [7863] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7864] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7865] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7866] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7867] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7868] = {
-            [questKeys.zoneOrSort] = 3277,
+            [questKeys.zoneOrSort] = zoneIDs.WARSONG_GULCH,
         },
         [7886] = { -- #1435
             [questKeys.startedBy] = {{14733},nil,nil},
@@ -2930,14 +2959,26 @@ function QuestieQuestFixes:Load()
         [8361] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Summon a Templar using a full Twilight set."),0,{{"object", 180456},{"object", 180518},{"object", 180529},{"object", 180544},{"object", 180549},{"object", 180564},}}},
         },
+        [8367] = { -- For Great Honor
+            [questKeys.zoneOrSort] = sortKeys.BATTLEGROUND,
+        },
         [8368] = {
             [questKeys.exclusiveTo] = {8426,8427,8428,8429,8430},
+        },
+        [8371] = { -- Concerted Efforts
+            [questKeys.zoneOrSort] = sortKeys.BATTLEGROUND,
         },
         [8372] = {
             [questKeys.exclusiveTo] = {8399,8400,8401,8402,8403},
         },
         [8373] = {
             [questKeys.objectives] = {nil,{{180449,"Clean up a stink bomb that's been dropped on Southshore!"}}},
+        },
+        [8385] = { -- Concerted Efforts
+            [questKeys.zoneOrSort] = sortKeys.BATTLEGROUND,
+        },
+        [8388] = { -- For Great Honor
+            [questKeys.zoneOrSort] = sortKeys.BATTLEGROUND,
         },
         [8399] = {
             [questKeys.exclusiveTo] = {8372,8400,8401,8402,8403},

@@ -30,7 +30,7 @@ if (locale == "deDE" and NIT.expansionNum < 5) then
 end
 
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
-local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
+local version = NIT.version;
 local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots;
 local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
 local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
@@ -1181,8 +1181,12 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 			instanceName = "(Instance Name Not Found)";
 		end
 		local instanceNameMsg = instanceName;
-		if (difficultyID == 174) then
+		--174 was heroic dung in wrath, but 2 is heroic in cata and retail.
+		if (difficultyID == 174 or difficultyID == 2 or difficultyID == 5 or difficultyID == 6 or difficultyID == 11
+			 or difficultyID == 15 or difficultyID == 39 or difficultyID == 149) then
 			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r";
+		elseif (difficultyID == 8 or difficultyID == 16 or difficultyID == 23 or difficultyID == 40) then --Mythic retail.
+			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFFa335eeM|r|cFF9CD6DE)|r";
 		end
 		if (isGhost) then
 			--This never worked and doesn't need to anyway.
@@ -1204,6 +1208,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 					type = type,
 					enteredTime = GetServerTime(),
 					enteredLevel = UnitLevel("player");
+					enteredLevelPercent = NIT:getLevelPercentage();
 					enteredXP = UnitXP("player");
 					enteredMoney = GetMoney(),
 					leftTime = 0,
@@ -1297,6 +1302,11 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 						NIT:print("|cFF00FF00Gamma Dungeon:|r " .. L["autoGammaBuffReminder"]);
 					end)
 				end]]
+				if (NIT.isClassic and (instanceID == 289 or instanceID == 329)) then
+					C_Timer.After(10, function()
+						NIT:argentDawnTrinketReminder();
+					end)
+				end
 			elseif (isReload) then
 				C_Timer.After(3, function()
 					local texture = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\redX2:12:12:0:0|t";
@@ -1344,6 +1354,7 @@ function NIT:leftInstance()
 			end
 		else
 			NIT.data.instances[1]["leftLevel"] = UnitLevel("player");
+			NIT.data.instances[1]["leftLevelPercent"] = NIT:getLevelPercentage();
 			NIT.data.instances[1]["leftXP"] = UnitXP("player");
 			NIT.data.instances[1]["leftMoney"] = GetMoney();
 		end
@@ -1741,9 +1752,10 @@ function NIT:mergeLastInstances(GUID, source)
 	NIT.data.instances[2].playerName = UnitName("player");
 	NIT.data.instances[2].class = class;
 	NIT.data.instances[2].classEnglish = classEnglish;
-	NIT.data.instances[2].enteredLevel = UnitLevel("player");
-	NIT.data.instances[2].enteredXP = UnitXP("player");
-	NIT.data.instances[2].enteredMoney = GetMoney();
+	--This stuff should already be recorded and overwriting it would have been incorrect.
+	--NIT.data.instances[2].enteredLevel = UnitLevel("player");
+	--NIT.data.instances[2].enteredXP = UnitXP("player");
+	--NIT.data.instances[2].enteredMoney = GetMoney();
 	if (not NIT.data.instances[1].isPvp) then
 		NIT.data.instances[2].mobCount =  NIT.data.instances[2].mobCount + NIT.data.instances[1].mobCount;
 		NIT.data.instances[2].mobCountFromKill =  NIT.data.instances[2].mobCountFromKill + NIT.data.instances[1].mobCountFromKill;
@@ -3661,6 +3673,21 @@ end
 
 function NIT:resetCurrentTradeData()
 	playerMoney, targetMoney, tradeWho, tradeWhoClass = 0, 0, "", "";
+end
+
+function NIT:getLevelPercentage()
+	--[[local xp = UnitXP("player");
+	if (xp and xp > 0) then
+		local percent = (xp / UnitXPMax("player")) * 100;
+		return NIT:round(percent, 2);
+	end]]
+	local playerLevel = UnitLevel("player");
+	local xp = UnitXP("player");
+	if (xp and xp > 0) then
+		local percent = (xp / UnitXPMax("player")) * 100;
+		playerLevel = tonumber(UnitLevel("player") .. "." .. string.format("%02.f", percent));
+		return playerLevel;
+	end
 end
 
 ---Some intergration for softres.it

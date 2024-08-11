@@ -552,3 +552,30 @@ L["Inscription"] = "Escrivania";
 L["First Aid"] = "Primeiros Socorros";
 
 L["Tarnished Undermine Real"] = "Real da Inframina Desgastado";
+
+L["Dungeon weeklies remaining"] = "Missões semanais de masmorras restantes";
+
+L["Currency"] = "Moeda";
+L["Currencies"] = "Moedas";
+
+L["instanceStatsOutputCurrencyTitle"] = "Moeda";
+L["instanceStatsOutputCurrencyDesc"] = "Mostra quais moedas foram obtidas dentro de uma masmorra?";
+
+L["lootReminderDesc"] = "Lembretes de saque";
+
+L["lootReminderRealTitle"] = "Real da Inframina Desgastado";
+L["lootReminderRealDesc"] = "Mostra um lembrete para saquear o Real da Inframina Desgastado em SoD quando um chefe morrer que pode soltá-lo.";
+
+L["lootReminderSizeTitle"] = "Tamanho do texto";
+L["lootReminderSizeDesc"] = "Qual o tamanho do texto para mostrar no lembrete.";
+
+L["lootReminderXTitle"] = "Posição X";
+L["lootReminderXDesc"] = "Ajusta isso para a posição esquerda/direita do texto do lembrete.";
+
+L["lootReminderYTitle"] = "Posição Y";
+L["lootReminderYDesc"] = "Ajusta isso para a posição acima/abaixo do texto do lembrete.";
+
+L["Looted"] = "Saqueado";
+L["Not Looted"] = "Não Saqueado";
+L["Killed But Not Looted"] = "Morto mas não saqueado";
+L["Loot the Tarnished Undermine Real"] = "Saqueie o Real da Inframina Desgastado";
