@@ -319,10 +319,6 @@ function BagTracking.ForceBankQuantityDeduction(itemString, quantity)
 	if DefaultUI.IsBankVisible() then
 		return
 	end
-	private.slotDB:SetQueryUpdatesPaused(true)
-	local query = private.slotDB:NewQuery()
-		:Equal("itemString", itemString)
-		:Function("bag", Container.IsBankOrReagentBank)
 	local levelItemString = ItemString.ToLevel(itemString)
 	if private.isFirstBankOpen then
 		-- Haven't scanned yet, so just deduct the quantity
@@ -338,6 +334,10 @@ function BagTracking.ForceBankQuantityDeduction(itemString, quantity)
 		end
 		return
 	end
+	private.slotDB:SetQueryUpdatesPaused(true)
+	local query = private.slotDB:NewQuery()
+		:Equal("itemString", itemString)
+		:Function("bag", Container.IsBankOrReagentBank)
 	for _, row in query:Iterator() do
 		if quantity > 0 then
 			local rowQuantity, rowBag = row:GetFields("quantity", "bag")

@@ -7,7 +7,6 @@
 local TSM = select(2, ...) ---@type TSM
 local Log = TSM.LibTSMUtil:Include("Util.Log")
 local MoneyFormatter = TSM.LibTSMUtil:IncludeClassType("MoneyFormatter")
-local StaticPopupDialog = TSM.LibTSMWoW:IncludeClassType("StaticPopupDialog")
 local Addon = TSM.LibTSMWoW:Include("API.Addon")
 local ChatFrame = TSM.LibTSMWoW:Include("API.ChatFrame")
 local AuctioningOperation = TSM.LibTSMSystem:Include("AuctioningOperation")
@@ -27,10 +26,6 @@ local private = {
 	oribosExchangeTemp = {},
 }
 do
-	-- Show a message if we were updated
-	if C_AddOns.GetAddOnMetadata("TradeSkillMaster", "Version") ~= "v4.14.7" and not TSM.IsTest() then
-		StaticPopupDialog.ShowWithOk("TSM was just updated and may not work properly until you restart WoW.")
-	end
 	-- Basic module configuration
 	Log.SetLoggingToChatEnabled(TSM.IsTest())
 	MoneyFormatter.SetLargeNumberSeperator(LARGE_NUMBER_SEPERATOR)
