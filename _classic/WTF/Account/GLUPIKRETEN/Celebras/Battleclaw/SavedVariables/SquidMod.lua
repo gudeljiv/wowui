@@ -1,0 +1,2 @@
+
+SquidModDB = 2
