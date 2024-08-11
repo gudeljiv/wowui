@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:117
+/cast item:0
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -39,8 +39,9 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Young Wendigo
-/targetexact Wendigo
+/targetexact Foreman Stonebrow
+/targetexact Senator Mehr Stonehallow
+/targetexact Kazan Mogosh
 /targetexact Large Crag Boar
 /targetexact Crag Boar
 /targetlasttarget [dead]

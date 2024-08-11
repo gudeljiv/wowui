@@ -2,8 +2,9 @@
 NIHdatabase = {
 ["profileKeys"] = {
 ["Dopeclaw - Lone Wolf"] = "Default",
-["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Vbank - Celebras"] = "Default",
 ["Vermin - Celebras"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",

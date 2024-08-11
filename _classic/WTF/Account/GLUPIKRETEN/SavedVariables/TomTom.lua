@@ -3,6 +3,7 @@ TomTomDB = {
 ["profileKeys"] = {
 ["Mxzq - Golemagg"] = "Default",
 ["Mxyz - Golemagg"] = "Default",
+["Vbank - Celebras"] = "Default",
 ["Verminz - Golemagg"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
 ["Greshnik - Dreadnaught"] = "Default",
@@ -33,8 +34,8 @@ TomTomDB = {
 ["Handrmandr - Golemagg"] = "Default",
 ["Vermina - Golemagg"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
 ["Tudum - Jin'do"] = "Default",
 ["Mxys - Golemagg"] = "Default",
@@ -53,7 +54,7 @@ TomTomDB = {
 ["Vermin - Celebras"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Pitchwise - Ashbringer"] = "Default",
-["Dopesnare - Lone Wolf"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
 ["Jaroslav - Golemagg"] = "Default",
 ["Klhjakhsgdjh - Golemagg"] = "Default",
 ["Poklopac - Mirage Raceway"] = "Default",
@@ -102,6 +103,7 @@ TomTomWaypointsM = {
 ["profileKeys"] = {
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+["Vbank - Celebras"] = "Vbank - Celebras",
 ["Verminz - Golemagg"] = "Verminz - Golemagg",
 ["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
 ["Greshnik - Dreadnaught"] = "Greshnik - Dreadnaught",
@@ -132,8 +134,8 @@ TomTomWaypointsM = {
 ["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 ["Vermina - Golemagg"] = "Vermina - Golemagg",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Tudum - Jin'do"] = "Tudum - Jin'do",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
@@ -152,7 +154,7 @@ TomTomWaypointsM = {
 ["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 ["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 ["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
@@ -166,6 +168,8 @@ TomTomWaypointsM = {
 ["Mxzq - Golemagg"] = {
 },
 ["Mxyz - Golemagg"] = {
+},
+["Vbank - Celebras"] = {
 },
 ["Verminz - Golemagg"] = {
 },
@@ -252,9 +256,9 @@ TomTomWaypointsM = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
 },
-["Doperage - Lone Wolf"] = {
+["Dopesnare - Lone Wolf"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Doperage - Lone Wolf"] = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
@@ -292,7 +296,7 @@ TomTomWaypointsM = {
 },
 ["Pitchwise - Ashbringer"] = {
 },
-["Dopesnare - Lone Wolf"] = {
+["Dopetrap - Lone Wolf"] = {
 },
 ["Jaroslav - Golemagg"] = {
 },

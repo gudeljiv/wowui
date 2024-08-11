@@ -2,7 +2,11 @@
 GMMONEY = {
 ["Celebras"] = {
 ["Vermin"] = {
-["GOLD"] = 125,
+["GOLD"] = 84,
+["CLASS"] = "WARRIOR",
+},
+["Vbank"] = {
+["GOLD"] = 0,
 ["CLASS"] = "WARRIOR",
 },
 },

@@ -3,6 +3,7 @@ ChocolateBarDB = {
 ["profileKeys"] = {
 ["Dopeclaw - Lone Wolf"] = "Default",
 ["Mxyz - Golemagg"] = "Default",
+["Vbank - Celebras"] = "Default",
 ["Verminz - Golemagg"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
 ["Battitude - Golemagg"] = "Default",
@@ -915,6 +916,11 @@ CB_PlayedTime = {
 ["Vermins-"] = {
 ["total"] = 3014,
 },
+["Vbank-Celebras"] = {
+["total"] = 39,
+["timeAtThisLevel"] = 39,
+["timeStamp"] = 3547721.521,
+},
 ["Tandaram-Jin'do"] = {
 ["total"] = 97,
 ["timeAtThisLevel"] = 97,
@@ -970,24 +976,24 @@ CB_PlayedTime = {
 ["timeStamp"] = 60973.364,
 ["timeAtThisLevel"] = 1,
 },
-["Pitchwise-Dreadnaught"] = {
-["total"] = 140587,
-},
 ["Battledog-Gehennas"] = {
 ["total"] = 332,
 ["timeStamp"] = 214163.326,
 ["timeAtThisLevel"] = 332,
+},
+["Pitchwise-Dreadnaught"] = {
+["total"] = 140587,
 },
 ["Dopede-Stitches"] = {
 ["total"] = 53562,
 ["timeStamp"] = 1455863.759,
 ["timeAtThisLevel"] = 46960,
 },
-["Mxyzptlk-"] = {
-["total"] = 8794,
-},
 ["Paydo-"] = {
 ["total"] = 18945,
+},
+["Mxyzptlk-"] = {
+["total"] = 8794,
 },
 ["Mxzq-"] = {
 ["total"] = 356150,
@@ -1040,9 +1046,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 850961.1950000001,
 },
 ["Vermin-Celebras"] = {
-["total"] = 6545,
-["timeStamp"] = 99365.755,
-["timeAtThisLevel"] = 0,
+["total"] = 14212,
+["timeStamp"] = 3547993.223,
+["timeAtThisLevel"] = 2768,
 },
 ["Dopecoil-LoneWolf"] = {
 ["total"] = 10261,

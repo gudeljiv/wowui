@@ -3,6 +3,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 ["profileKeys"] = {
 ["Dopeclaw - Lone Wolf"] = "Default",
 ["Mxyz - Golemagg"] = "Default",
+["Vbank - Celebras"] = "Default",
 ["Dopesick - Stitches"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
 ["Battitude - Golemagg"] = "Default",

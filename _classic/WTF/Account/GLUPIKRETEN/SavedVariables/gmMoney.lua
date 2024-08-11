@@ -145,6 +145,10 @@ GMMONEY = {
 },
 },
 ["Celebras"] = {
+["Vbank"] = {
+["GOLD"] = 0,
+["CLASS"] = "WARRIOR",
+},
 ["Vermin"] = {
 ["GOLD"] = 284,
 ["CLASS"] = "WARRIOR",
