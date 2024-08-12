@@ -53,7 +53,7 @@ Postal3DB = {
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
-"Vermin|Celebras|Alliance|10|WARRIOR",
+"Vermin|Celebras|Alliance|12|WARRIOR",
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },
@@ -134,6 +134,11 @@ Postal3DB = {
 ["Dopedot - Lone Wolf"] = {
 },
 ["Vermin - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vbank|Celebras|Alliance",
+},
+},
 },
 ["Battlenac - Zandalar Tribe"] = {
 },

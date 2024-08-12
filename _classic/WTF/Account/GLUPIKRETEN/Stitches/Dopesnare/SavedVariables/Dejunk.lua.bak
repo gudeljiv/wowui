@@ -7,6 +7,7 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["excludeEquipmentSets"] = true,
 ["autoRepair"] = false,
 ["inclusions"] = {
+["11285"] = true,
 ["5075"] = true,
 ["16645"] = true,
 ["16651"] = true,

@@ -136,7 +136,6 @@ OmniCCDB = {
 },
 }
 OmniCC4Config = {
-["engine"] = "AniUpdater",
 ["groups"] = {
 {
 ["id"] = "Ignore",
@@ -147,7 +146,7 @@ OmniCC4Config = {
 ["enabled"] = true,
 },
 },
-["version"] = "8.1.1",
+["engine"] = "AniUpdater",
 ["groupSettings"] = {
 ["base"] = {
 ["enabled"] = true,
@@ -197,14 +196,14 @@ OmniCC4Config = {
 ["mmSSDuration"] = 0,
 ["minSize"] = 0.5,
 ["spiralOpacity"] = 1.00999997742474,
-["scaleText"] = true,
+["minDuration"] = 2,
 ["xOff"] = 0,
 ["tenthsDuration"] = 0,
 ["fontOutline"] = "OUTLINE",
 ["anchor"] = "CENTER",
 ["minEffectDuration"] = 30,
+["scaleText"] = true,
 ["yOff"] = 0,
-["minDuration"] = 2,
 },
 ["Ignore"] = {
 ["enabled"] = false,
@@ -247,13 +246,13 @@ OmniCC4Config = {
 ["controlled"] = {
 },
 },
-["minDuration"] = 3,
-["effect"] = "pulse",
 ["yOff"] = 0,
+["effect"] = "pulse",
+["scaleText"] = true,
 ["minEffectDuration"] = 30,
 ["anchor"] = "CENTER",
 ["spiralOpacity"] = 1,
-["scaleText"] = true,
+["minDuration"] = 3,
 ["xOff"] = 0,
 ["tenthsDuration"] = 0,
 ["fontOutline"] = "OUTLINE",
@@ -263,4 +262,5 @@ OmniCC4Config = {
 ["fontSize"] = 18,
 },
 },
+["version"] = "8.1.1",
 }

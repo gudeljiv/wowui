@@ -31,7 +31,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:2455
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:4599

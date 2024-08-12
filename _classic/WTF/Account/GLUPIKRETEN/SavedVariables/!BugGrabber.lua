@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12590,
+["session"] = 12592,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -4050,8 +4050,22 @@ BugGrabberDB = {
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12590,
-["counter"] = 54,
+["session"] = 12592,
+["counter"] = 55,
+},
+{
+["message"] = ".../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
+["time"] = "2024/08/12 16:12:58",
+["locals"] = "(*temporary) = \"Blizzard_APIDocumentationGenerated\"\n = <userdata>\n = <userdata>\n",
+["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:227: in function `UIParentLoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:321: in function `APIDocumentation_LoadUI'\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:47: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:26>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:65: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:58>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:210: in function `enable'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:194: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:159>\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:1055: in function `TextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/WeakAurasOptions.lua\"]:924: in function `OpenTextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/CommonOptions.lua\"]:1603: in function <Interface/AddOns/WeakAurasOptions/CommonOptions.lua:1602>",
+["session"] = 12592,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:1 .../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
+["time"] = "2024/08/12 16:12:58",
+["session"] = 12592,
+["counter"] = 2,
 },
 },
 }

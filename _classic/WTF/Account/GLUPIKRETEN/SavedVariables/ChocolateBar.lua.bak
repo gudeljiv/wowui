@@ -54,9 +54,9 @@ ChocolateBarDB = {
 ["Dopesnare - Lone Wolf"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
-["Jutarnjedrvo - Lone Wolf"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
 ["Tukac - Genesis"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Pitchwise - Golemagg"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
@@ -846,9 +846,9 @@ CB_PlayedTime = {
 ["total"] = 437,
 },
 ["Dopesnare-Stitches"] = {
-["total"] = 302680,
-["timeStamp"] = 3625262.602,
-["timeAtThisLevel"] = 13366,
+["total"] = 302859,
+["timeStamp"] = 3641397.082,
+["timeAtThisLevel"] = 13545,
 },
 ["Tadibey-Golemagg"] = {
 ["total"] = 71353,
@@ -1066,9 +1066,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 850961.1950000001,
 },
 ["Vermin-Celebras"] = {
-["total"] = 17982,
-["timeStamp"] = 3622921.199,
-["timeAtThisLevel"] = 0,
+["total"] = 18199,
+["timeStamp"] = 3625499.763,
+["timeAtThisLevel"] = 217,
 },
 ["Korupcija-"] = {
 ["total"] = 21359,

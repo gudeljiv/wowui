@@ -57,7 +57,7 @@ ChocolateBarDB = {
 ["Moolatz - Dreadnaught"] = "Default",
 ["Mxyzptlk - Golemagg"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
-["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Tukac - Genesis"] = "Default",
 ["Pitchwise - Golemagg"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
@@ -83,7 +83,7 @@ ChocolateBarDB = {
 ["Battlearm - Jin'do"] = "Default",
 ["Mxzq - Golemagg"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
-["Tukac - Genesis"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Dopesnare - Lone Wolf"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
@@ -846,9 +846,9 @@ CB_PlayedTime = {
 ["total"] = 437,
 },
 ["Dopesnare-Stitches"] = {
-["total"] = 302680,
-["timeAtThisLevel"] = 13366,
-["timeStamp"] = 3625262.602,
+["total"] = 302859,
+["timeAtThisLevel"] = 13545,
+["timeStamp"] = 3641397.082,
 },
 ["Tadibey-Golemagg"] = {
 ["total"] = 71353,
@@ -1066,9 +1066,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 2827159.601,
 },
 ["Vermin-Celebras"] = {
-["total"] = 18199,
-["timeAtThisLevel"] = 217,
-["timeStamp"] = 3625499.763,
+["total"] = 19628,
+["timeAtThisLevel"] = 1646,
+["timeStamp"] = 3641727.051,
 },
 ["Jutarnjedrvo-LoneWolf"] = {
 ["total"] = 279956,
