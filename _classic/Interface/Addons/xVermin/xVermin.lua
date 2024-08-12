@@ -58,6 +58,9 @@ local function xInstallAddon()
 			TMW:LockToggle()
 		end
 	end
+	if ShadowUF then
+		ShadowUF.db:SetProfile(xVermin.Class)
+	end
 
 	ShowHelm(false)
 	ShowCloak(false)

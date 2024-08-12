@@ -238,3 +238,4 @@ ClassicBestiary: enabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
 Bagnon_ItemLevel_Vermin: disabled
+Blizzard_CombatText: enabled

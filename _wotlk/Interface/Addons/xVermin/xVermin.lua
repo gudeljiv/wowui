@@ -32,6 +32,9 @@ local function xInstallAddon()
 	if Plater then
 		Plater.db:SetProfile('xVermin')
 	end
+	if ShadowUF then
+		ShadowUF.db:SetProfile(xVermin.Class)
+	end
 	if TMW then
 		TMW.db:SetProfile(xVermin.Class)
 		if not TMW.db.profile.Locked then

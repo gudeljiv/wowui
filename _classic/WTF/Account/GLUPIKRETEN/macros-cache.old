@@ -39,12 +39,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Foreman Stonebrow
-/targetexact Senator Mehr Stonehallow
-/targetexact Kazan Mogosh
-/targetexact Large Crag Boar
-/targetexact Crag Boar
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip
@@ -53,8 +48,7 @@ VER 3 0000000000000024 "sharp" "134400"
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run local _,_,threatpct,_,_ = UnitDetailedThreatSituation("player", "target");
-ChatFrame1:AddMessage('You are ' .. tostring(threatpct) .. '% towards aggro.');
+/run print(xTTD)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

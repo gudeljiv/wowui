@@ -1,22 +1,22 @@
 
 SRTISaved = {
-	["alt"] = false,
-	["bindinghover"] = false,
-	["radialscale"] = 1,
-	["double"] = true,
-	["ctrl"] = true,
-	["hovertime"] = 0.2000000029802322,
-	["shift"] = false,
-	["doublehover"] = false,
-	["speed"] = 0.25,
-	["singlehover"] = false,
+["alt"] = false,
+["bindinghover"] = false,
+["radialscale"] = 1,
+["double"] = true,
+["ctrl"] = true,
+["hovertime"] = 0.2000000029802322,
+["shift"] = false,
+["doublehover"] = false,
+["speed"] = 0.25,
+["singlehover"] = false,
 }
 SRTIExternalUF = {
-	["shadowedunitframes"] = {
-		"SUFUnittarget", -- [1]
-		"SUFHeaderpartyUnitButton1", -- [2]
-	},
-	["blizzard_compactraidframes"] = {
-		"CompactRaidFrame1", -- [1]
-	},
+["shadowedunitframes"] = {
+"SUFUnittarget",
+"SUFHeaderpartyUnitButton1",
+},
+["blizzard_compactraidframes"] = {
+"CompactRaidFrame1",
+},
 }

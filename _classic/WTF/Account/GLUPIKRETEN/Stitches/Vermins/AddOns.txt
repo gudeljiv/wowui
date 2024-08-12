@@ -10,3 +10,4 @@ Leatrix_enUS: enabled
 ElvUI: enabled
 Demodal: enabled
 Carbonite: enabled
+Blizzard_CombatText: enabled
