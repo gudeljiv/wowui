@@ -6,7 +6,7 @@ ImmersionSetup = {
 ["disableglowani"] = false,
 ["immersivemode"] = false,
 ["disableprogression"] = false,
-["inspect"] = "SHIFT",
+["titleoffsetY"] = 289.739471435547,
 ["hideui"] = false,
 ["boxoffsetY"] = -243.398361206055,
 ["disableanisequence"] = false,
@@ -23,6 +23,6 @@ ImmersionSetup = {
 ["boxlock"] = true,
 ["boxpoint"] = "Top",
 ["anidivisor"] = 5,
-["titleoffsetY"] = 289.739471435547,
+["inspect"] = "SHIFT",
 ["reset"] = "BACKSPACE",
 }
