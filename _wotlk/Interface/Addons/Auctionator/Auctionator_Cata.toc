@@ -1,6 +1,6 @@
 ## Interface: 40400
 ## Title: Auctionator
-## Version: 11.0.1
+## Version: 11.0.3
 ## Author: Borjamacare, plusmouse
 ## X-Website: https://www.curseforge.com/wow/addons/auctionator
 ## X-Category: Auction/Economy
@@ -24,3 +24,5 @@ Locales\Manifest.xml
 Source\Manifest.xml
 Source_Classic\Manifest.xml
 Data_Cata\Suffixes.lua
+
+Embeds\json.lua

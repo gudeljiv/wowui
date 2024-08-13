@@ -54,9 +54,9 @@ ChocolateBarDB = {
 ["Dopesnare - Lone Wolf"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
-["Jutarnjedrvo - Lone Wolf"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
 ["Tukac - Genesis"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Pitchwise - Golemagg"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
@@ -1066,9 +1066,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 850961.1950000001,
 },
 ["Vermin-Celebras"] = {
-["total"] = 44166,
-["timeStamp"] = 3728241.009,
-["timeAtThisLevel"] = 0,
+["total"] = 48085,
+["timeStamp"] = 3744731.447,
+["timeAtThisLevel"] = 3919,
 },
 ["Korupcija-"] = {
 ["total"] = 21359,
@@ -1084,9 +1084,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 90463.557,
 },
 ["Vbank-Celebras"] = {
-["total"] = 304,
-["timeAtThisLevel"] = 304,
-["timeStamp"] = 3732166.616,
+["total"] = 351,
+["timeAtThisLevel"] = 351,
+["timeStamp"] = 3744638.323,
 },
 ["Battlenac-ZandalarTribe"] = {
 ["total"] = 2352,

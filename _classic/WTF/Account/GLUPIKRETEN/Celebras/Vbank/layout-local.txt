@@ -1,11 +1,4 @@
 Version: 1
-Frame: TellMeWhen_GlobalGroup1
-FrameLevel: 10
-Anchor: TOP
-X: 400
-Y: -5
-W: 180
-H: 30
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER
@@ -13,6 +6,13 @@ X: -159
 Y: -170
 W: 32
 H: 32
+Frame: TellMeWhen_GlobalGroup1
+FrameLevel: 10
+Anchor: TOP
+X: 400
+Y: -5
+W: 180
+H: 30
 Frame: PossessButton1
 FrameLevel: 3
 Anchor: BOTTOM

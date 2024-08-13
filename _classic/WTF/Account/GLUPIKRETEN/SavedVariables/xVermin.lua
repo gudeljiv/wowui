@@ -241,18 +241,14 @@ xVerminSavedData = {
 ["Rusty Harvest Golem"] = {
 "Rend",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Unfettered Spirit"] = {
+"Deep Wound",
 },
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -265,15 +261,15 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
-["Unfettered Spirit"] = {
-"Deep Wound",
-},
 ["Thepalalol"] = {
 "Cheap Shot",
 "Mutilate",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
@@ -325,8 +321,8 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -397,8 +393,8 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Wailing Highborne"] = {
 "Rend",
@@ -424,11 +420,15 @@ xVerminSavedData = {
 "Earth Shock",
 "Intimidation",
 },
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
+"Serpent Sting",
+"Thunder Clap",
 },
 ["Ambershard Crusher"] = {
 "Chain Lightning",
