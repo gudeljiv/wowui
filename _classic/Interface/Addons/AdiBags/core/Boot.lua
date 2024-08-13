@@ -27,9 +27,9 @@ local addonName, root = ...
 ---@class AdiBags: AceModule
 local addon = LibStub('AceAddon-3.0'):NewAddon(root, addonName, 'ABEvent-1.0', 'ABBucket-1.0', 'AceHook-3.0', 'AceConsole-3.0')
 
---[===[@debug@
+--[==[@debug@
 _G[addonName] = addon
---@end-debug@]===]
+--@end-debug@]==]
 
 addon:SetDefaultModuleState(false)
 
@@ -37,18 +37,18 @@ addon:SetDefaultModuleState(false)
 -- Debug stuff
 --------------------------------------------------------------------------------
 
---[===[@alpha@
+--[=[@alpha@
 ---@type AdiDebug
 AdiDebug = AdiDebug
 
 if AdiDebug then
 	AdiDebug:Embed(addon, addonName)
 else
---@end-alpha@]===]
+--@end-alpha@]=]
 	function addon.Debug(self, ...) end
---[===[@alpha@
+--[=[@alpha@
 end
---@end-alpha@]===]
+--@end-alpha@]=]
 
 --------------------------------------------------------------------------------
 -- Module prototype

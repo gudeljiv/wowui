@@ -34,6 +34,8 @@ function addon:SetupDefaultFilters()
 	local GetItemIDs = _G.C_EquipmentSet.GetItemIDs
 	local GetEquipmentSetIDs = _G.C_EquipmentSet.GetEquipmentSetIDs
 	local GetItemLocations = _G.C_EquipmentSet.GetItemLocations
+	local GetItemClassInfo = _G.C_Item.GetItemClassInfo
+	local GetItemSubClassInfo = _G.C_Item.GetItemSubClassInfo
 	local pairs = _G.pairs
 	local wipe = _G.wipe
 	--GLOBALS>
@@ -248,7 +250,7 @@ function addon:SetupDefaultFilters()
 
 		local equipmentFilter = addon:RegisterFilter('Equipment', 60, function(self, slotData)
 			local equipSlot = slotData.equipSlot
-			if equipSlot and equipSlot ~= "" then
+			if equipSlot and equipSlot ~= "" and equipSlot ~= "INVTYPE_NON_EQUIP_IGNORE" then
 				local rule = self.db.profile.dispatchRule
 				local category
 				if rule == 'category' then

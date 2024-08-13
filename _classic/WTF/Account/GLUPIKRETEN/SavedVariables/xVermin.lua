@@ -12,6 +12,9 @@ xVerminSavedData = {
 "Rend",
 "Sunder Armor",
 },
+["Harvest Watcher"] = {
+"Rend",
+},
 ["Frozen Soul"] = {
 "Deep Wound",
 },
@@ -75,6 +78,9 @@ xVerminSavedData = {
 },
 ["Wind Howler"] = {
 "Deep Wound",
+},
+["Harvest Golem"] = {
+"Rend",
 },
 ["Swirling Vortex"] = {
 "Lightning Shield",
@@ -172,6 +178,10 @@ xVerminSavedData = {
 "Lightning Shield",
 "Chain Lightning",
 },
+["Bristleback Geomancer"] = {
+"Firebolt",
+"Incinerate",
+},
 ["Furious Stone Spirit"] = {
 "Lightning Shield",
 "Serpent Sting",
@@ -220,9 +230,8 @@ xVerminSavedData = {
 ["Sea Spray"] = {
 "Frost Shock",
 },
-["Bristleback Geomancer"] = {
-"Firebolt",
-"Incinerate",
+["Rusty Harvest Golem"] = {
+"Rend",
 },
 ["Ambershard Crusher"] = {
 "Chain Lightning",
@@ -249,16 +258,6 @@ xVerminSavedData = {
 "Stormstrike",
 "Mutilate",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -276,6 +275,16 @@ xVerminSavedData = {
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Ironspine"] = {
 "Rend",
@@ -308,8 +317,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Burning Destroyer"] = {
 "Lava Lash",
@@ -328,9 +337,9 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -379,9 +388,9 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Klaxxi"] = {
 "Big Bronze Bomb",
@@ -391,8 +400,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Agathelos the Raging"] = {
 "Charge Stun",

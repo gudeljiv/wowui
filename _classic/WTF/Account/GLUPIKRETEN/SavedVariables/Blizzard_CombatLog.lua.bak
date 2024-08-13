@@ -108,7 +108,8 @@ nil,
 ["b"] = 0.7,
 },
 },
-["eventColoring"] = {
+["highlightedEvents"] = {
+["PARTY_KILL"] = true,
 },
 ["defaults"] = {
 ["spell"] = {
@@ -124,8 +125,7 @@ nil,
 ["b"] = 0,
 },
 },
-["highlightedEvents"] = {
-["PARTY_KILL"] = true,
+["eventColoring"] = {
 },
 },
 ["hasQuickButton"] = true,
@@ -156,8 +156,8 @@ nil,
 ["braces"] = true,
 ["unitBraces"] = true,
 ["schoolNameHighlighting"] = true,
-["hideBuffs"] = false,
 ["unitIcons"] = true,
+["hideBuffs"] = false,
 ["unitColoring"] = true,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
@@ -352,7 +352,8 @@ nil,
 ["b"] = 0.7,
 },
 },
-["eventColoring"] = {
+["highlightedEvents"] = {
+["PARTY_KILL"] = true,
 },
 ["defaults"] = {
 ["spell"] = {
@@ -368,8 +369,7 @@ nil,
 ["b"] = 0,
 },
 },
-["highlightedEvents"] = {
-["PARTY_KILL"] = true,
+["eventColoring"] = {
 },
 },
 ["hasQuickButton"] = true,
@@ -400,8 +400,8 @@ nil,
 ["braces"] = true,
 ["unitBraces"] = true,
 ["schoolNameHighlighting"] = true,
-["hideBuffs"] = false,
 ["unitIcons"] = true,
+["hideBuffs"] = false,
 ["unitColoring"] = true,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
@@ -552,10 +552,10 @@ nil,
 ["r"] = 1,
 },
 },
+["eventColoring"] = {
+},
 ["highlightedEvents"] = {
 ["PARTY_KILL"] = true,
-},
-["eventColoring"] = {
 },
 ["defaults"] = {
 ["damage"] = {
@@ -644,12 +644,12 @@ nil,
 ["unitBraces"] = true,
 ["schoolNameHighlighting"] = true,
 ["hideDebuffs"] = false,
-["hideBuffs"] = false,
+["unitIcons"] = true,
 ["actionHighlighting"] = false,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
 ["unitColoring"] = true,
-["unitIcons"] = true,
+["hideBuffs"] = false,
 ["timestampFormat"] = "%H:%M:%S",
 ["braces"] = true,
 ["actionActorColoring"] = false,
@@ -789,10 +789,10 @@ nil,
 ["r"] = 0.75,
 },
 },
+["eventColoring"] = {
+},
 ["highlightedEvents"] = {
 ["PARTY_KILL"] = true,
-},
-["eventColoring"] = {
 },
 ["defaults"] = {
 ["damage"] = {
@@ -887,8 +887,8 @@ nil,
 ["schoolNameActorColoring"] = false,
 ["unitBraces"] = true,
 ["schoolNameHighlighting"] = true,
-["unitIcons"] = true,
 ["hideBuffs"] = false,
+["unitIcons"] = true,
 ["hideDebuffs"] = false,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,

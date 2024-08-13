@@ -46,7 +46,7 @@ local GetContainerNumFreeSlots = C_Container and _G.C_Container.GetContainerNumF
 local GetContainerNumSlots = C_Container and _G.C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
 local geterrorhandler = _G.geterrorhandler
 local GetInventoryItemTexture = _G.GetInventoryItemTexture
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
 local GetNumBankSlots = _G.GetNumBankSlots
 local ipairs = _G.ipairs
 local IsInventoryItemLocked = _G.IsInventoryItemLocked
@@ -115,15 +115,15 @@ do
 						if not bestScore or slotScore > bestScore then
 							addon:Debug('FindSlotForItem', bag, slot, 'slotCount=', slotCount, 'score=', slotScore, 'NEW BEST SLOT')
 							bestBag, bestSlot, bestScore = bag, slot, slotScore
-						--[===[@debug@
+						--[==[@debug@
 						else
 							addon:Debug('FindSlotForItem', bag, slot, 'slotCount=', slotCount, 'score=', slotScore, '<', bestScore)
-						--@end-debug@]===]
+						--@end-debug@]==]
 						end
-					--[===[@debug@
+					--[==[@debug@
 					else
 						addon:Debug('FindSlotForItem', bag, slot, 'slotCount=', slotCount, ': not enough space')
-					--@end-debug@]===]
+					--@end-debug@]==]
 					end
 				end
 			end

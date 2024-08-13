@@ -5,9 +5,10 @@ local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 -- This is a deprecation message for AdiBags. To remove this for whatever reason,
 -- remove this call from Core.lua in OnInitialize.
 function addon:Deprecation()
-    print("AdiBags is discontinued and will get no new releases.")
-    print("Please consider switching to AdiBags' successor, BetterBags.")
-    print("BetterBags is available at Curse, Wago, and github.com/Cidan/BetterBags")
+  if addon.db.profile.deprecationPhase < 2 then
+    local prefix = "|cFF8ADCFF"..addonName.."|r:"
+    local msg = "This addon has been deprecated and is therefore unlikely to receive new features, nor timely bug fixes. Continued support will largely be left up to the community.\n\nPlease consider switching to AdiBags' successor, BetterBags, which is written by the same team that maintains AdiBags and is available to download from Curse, Wago, and GitHub.\n\nThanks! :)"
+    print(prefix, msg)
     local frame = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
     frame:SetBackdrop({
       bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -19,14 +20,12 @@ function addon:Deprecation()
     })
     frame:SetBackdropColor(0, 0, 0, 0.9)
     frame:SetPoint("LEFT", 30, 0)
-    frame:SetSize(440, 300)
+    frame:SetSize(440, 250)
     local text = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
     text:SetTextColor(1, 1, 1, 1)
     text:SetPoint("LEFT", 20, 0)
     text:SetJustifyH("LEFT")
-    text:SetText([[
-AdiBags is discontinued, will get no new releases or bug fixes. Please consider switching to AdiBags' successor, BetterBags. BetterBags is written by the same team that maintains AdiBags. BetterBags is available at Curse, Wago, and github.com/Cidan/BetterBags
-      ]])
+    text:SetText(prefix.."\n"..msg)
     text:SetWordWrap(true)
     text:SetWidth(400)
     --frame:SetSize(text:GetStringWidth()+ 40, 200)
@@ -34,9 +33,11 @@ AdiBags is discontinued, will get no new releases or bug fixes. Please consider 
     local button = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
     button:SetSize(180, 25)
     button:SetPoint("BOTTOM", 0, 10)
-    button:SetText("Close")
+    button:SetText("Do Not Show Again")
     button:SetScript("OnClick", function()
+      addon.db.profile.deprecationPhase = 2
       frame:Hide()
     end)
     frame:Show()
+  end
 end

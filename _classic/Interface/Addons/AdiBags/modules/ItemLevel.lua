@@ -25,7 +25,8 @@ local L = addon.L
 --<GLOBALS
 local _G = _G
 local abs = _G.math.abs
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
+local GetItemQualityColor = _G.C_Item.GetItemQualityColor
 local ITEM_QUALITY_HEIRLOOM
 local ITEM_QUALITY_POOR
 
@@ -163,7 +164,7 @@ function mod:UpdateButton_Retail(event, button)
 			level = item and item:GetCurrentItemLevel() or 0
 			if level >= settings.minLevel
 				and (quality ~= ITEM_QUALITY_POOR or not settings.ignoreJunk)
-				and (loc ~= "" or not settings.equippableOnly)
+				and (loc ~= "" and loc ~= "INVTYPE_NON_EQUIP_IGNORE" or not settings.equippableOnly)
 				and (quality ~= ITEM_QUALITY_HEIRLOOM or not settings.ignoreHeirloom)
 				and colorSchemes[settings.colorScheme] ~= nil
 			then

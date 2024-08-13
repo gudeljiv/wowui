@@ -332,11 +332,11 @@ local function GetOptions()
 		end
 	end
 	options = {
-		--[===[@debug@
+		--[==[@debug@
 		name = addonName..' DEV',
-		--@end-debug@]===]
+		--@end-debug@]==]
 		--@non-debug@
-		name = addonName..' v1.10.23',
+		name = addonName..' v1.10.28',
 		--@end-non-debug@
 		type = 'group',
 		handler = addon:GetOptionHandler(addon),
