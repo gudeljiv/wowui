@@ -71,12 +71,12 @@ LBISSettings = {
 ["Phase 3"] = true,
 ["Phase 4"] = true,
 },
-["PriorityList"] = {
-},
+["ShowCustom"] = true,
 ["SelectedRank"] = "All",
 ["HideObsolete"] = false,
 ["SelectedSourceType"] = "All",
+["PriorityList"] = {
+},
 ["SelectedSlot"] = "Ring",
-["ShowCustom"] = true,
 ["SelectedPhase"] = "Phase 1",
 }

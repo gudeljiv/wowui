@@ -1,36 +1,10 @@
 
 Postal3DB = {
-["profileKeys"] = {
-["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
-["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-["Vbank - Celebras"] = "Vbank - Celebras",
-["Dopesick - Stitches"] = "Dopesick - Stitches",
-["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
-["Dopede - Stitches"] = "Dopede - Stitches",
-["Vermins - Stitches"] = "Vermins - Stitches",
-["Dopecure - Stitches"] = "Dopecure - Stitches",
-["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
-["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
-["Vermin - Celebras"] = "Vermin - Celebras",
-["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
-["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
-["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
-["Lonac - Stitches"] = "Lonac - Stitches",
-["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Dopeah - Stitches"] = "Dopeah - Stitches",
-["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
-["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-},
 ["global"] = {
 ["BlackBook"] = {
 ["alts"] = {
 "Battitude|Zandalar Tribe|Alliance|1|ROGUE",
+"Battlenac|Celebras|Alliance|1|PRIEST",
 "Battlenac|Zandalar Tribe|Alliance|4|PRIEST",
 "Dopeah|Stitches|Horde|1|SHAMAN",
 "Dopebolt|Lone Wolf|Horde|2|MAGE",
@@ -53,10 +27,38 @@ Postal3DB = {
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
-"Vermin|Celebras|Alliance|17|WARRIOR",
+"Vermin|Celebras|Alliance|18|WARRIOR",
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },
+},
+["profileKeys"] = {
+["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+["Vbank - Celebras"] = "Vbank - Celebras",
+["Dopesick - Stitches"] = "Dopesick - Stitches",
+["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
+["Dopede - Stitches"] = "Dopede - Stitches",
+["Vermins - Stitches"] = "Vermins - Stitches",
+["Dopecure - Stitches"] = "Dopecure - Stitches",
+["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
+["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
+["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Vermin - Celebras"] = "Vermin - Celebras",
+["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
+["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+["Lonac - Stitches"] = "Lonac - Stitches",
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+["Dopeah - Stitches"] = "Dopeah - Stitches",
+["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
 },
 ["profiles"] = {
 ["Dopeclaw - Lone Wolf"] = {
@@ -78,6 +80,11 @@ Postal3DB = {
 },
 },
 ["Vbank - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vermin|Celebras|Alliance",
+},
+},
 },
 ["Dopesick - Stitches"] = {
 ["BlackBook"] = {
@@ -121,6 +128,8 @@ Postal3DB = {
 },
 ["Battitude - Zandalar Tribe"] = {
 },
+["Dopetrap - Lone Wolf"] = {
+},
 ["Dopesnare - Stitches"] = {
 ["BlackBook"] = {
 ["recent"] = {
@@ -131,14 +140,14 @@ Postal3DB = {
 },
 ["Vermin - Zandalar Tribe"] = {
 },
-["Dopedot - Lone Wolf"] = {
-},
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
 "Vbank|Celebras|Alliance",
 },
 },
+},
+["Dopedot - Lone Wolf"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
@@ -206,7 +215,7 @@ Postal3DB = {
 },
 ["Dopebolt - Lone Wolf"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Battlenac - Celebras"] = {
 },
 },
 }

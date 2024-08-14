@@ -7,6 +7,7 @@ PlaterDBChr = {
 },
 ["first_run3"] = {
 ["Player-5232-029795CB"] = true,
+["Player-5266-026B45A3"] = true,
 ["Player-5220-01B88810"] = true,
 },
 ["minimap"] = {
