@@ -20,9 +20,9 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["hide"] = true,
 },
 ["exclusions"] = {
-["19699"] = true,
-["19702"] = true,
 ["19705"] = true,
+["19702"] = true,
+["19699"] = true,
 ["19706"] = true,
 ["19700"] = true,
 },

@@ -47,25 +47,25 @@ TomTomDB = {
 ["Nitwit - Dreadnaught"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Vermins - Stitches"] = "Default",
-["Pitchwise - Dreadnaught"] = "Default",
-["Doperage - Lone Wolf"] = "Default",
-["Vermin - Golemagg"] = "Default",
-["Dopedot - Lone Wolf"] = "Default",
+["Battlenac - Celebras"] = "Default",
+["Mxzq - Golemagg"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
+["Verminz - Golemagg"] = "Default",
 ["Vermins - Stonespine"] = "Default",
 ["Grgur - Golemagg"] = "Default",
+["Moolatz - Golemagg"] = "Default",
 ["Battlearm - Hydraxian Waterlords"] = "Default",
-["Vermin - Celebras"] = "Default",
 ["Wells - Jin'do"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
 ["Jaroslav - Golemagg"] = "Default",
 ["Battlearm - Jin'do"] = "Default",
-["Moolatz - Golemagg"] = "Default",
+["Vermin - Celebras"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
-["Verminz - Golemagg"] = "Default",
-["Vermin - Zandalar Tribe"] = "Default",
-["Mxzq - Golemagg"] = "Default",
-["Battlenac - Celebras"] = "Default",
+["Dopedot - Lone Wolf"] = "Default",
+["Vermin - Golemagg"] = "Default",
+["Doperage - Lone Wolf"] = "Default",
+["Pitchwise - Dreadnaught"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -150,25 +150,25 @@ TomTomWaypointsM = {
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Vermins - Stitches"] = "Vermins - Stitches",
-["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Vermin - Golemagg"] = "Vermin - Golemagg",
-["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Verminz - Golemagg"] = "Verminz - Golemagg",
 ["Vermins - Stonespine"] = "Vermins - Stonespine",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
+["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 ["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 ["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Verminz - Golemagg"] = "Verminz - Golemagg",
-["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Vermin - Golemagg"] = "Vermin - Golemagg",
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 },
 ["profiles"] = {
 ["Dopeclaw - Lone Wolf"] = {
@@ -263,21 +263,21 @@ TomTomWaypointsM = {
 },
 ["Vermins - Stitches"] = {
 },
-["Pitchwise - Dreadnaught"] = {
+["Battlenac - Celebras"] = {
 },
-["Doperage - Lone Wolf"] = {
+["Mxzq - Golemagg"] = {
 },
-["Vermin - Golemagg"] = {
+["Vermin - Zandalar Tribe"] = {
 },
-["Dopedot - Lone Wolf"] = {
+["Verminz - Golemagg"] = {
 },
 ["Vermins - Stonespine"] = {
 },
 ["Grgur - Golemagg"] = {
 },
-["Battlearm - Hydraxian Waterlords"] = {
+["Moolatz - Golemagg"] = {
 },
-["Vermin - Celebras"] = {
+["Battlearm - Hydraxian Waterlords"] = {
 },
 ["Wells - Jin'do"] = {
 },
@@ -300,9 +300,9 @@ TomTomWaypointsM = {
 ["callbacks"] = {
 ["distance"] = {
 },
-["minimap"] = {
-},
 ["world"] = {
+},
+["minimap"] = {
 },
 },
 ["minimap"] = true,
@@ -314,17 +314,17 @@ TomTomWaypointsM = {
 },
 ["Battlearm - Jin'do"] = {
 },
-["Moolatz - Golemagg"] = {
+["Vermin - Celebras"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
-["Verminz - Golemagg"] = {
+["Dopedot - Lone Wolf"] = {
 },
-["Vermin - Zandalar Tribe"] = {
+["Vermin - Golemagg"] = {
 },
-["Mxzq - Golemagg"] = {
+["Doperage - Lone Wolf"] = {
 },
-["Battlenac - Celebras"] = {
+["Pitchwise - Dreadnaught"] = {
 },
 },
 }
