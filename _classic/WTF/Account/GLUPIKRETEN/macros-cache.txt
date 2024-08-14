@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2581
+/cast item:0
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -11,15 +11,15 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000039 "buff food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:5477
+/cast item:0
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:159
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4605
+/cast item:117
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -37,17 +37,34 @@ VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
 END
+VER 3 000000000000003A "pattack" "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
+VER 3 000000000000003B "pdef" "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:4599
 /cast feed pet
 /use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Murloc Minor Tidecaller
-/targetexact Murloc Shorestriker
-/targetexact Dire Condor
-/targetexact Tarantula
-/targetexact Great Goretusk
+/targetexact Blackmoss the Fetid
+/targetexact Lord Melenas
+/targetexact Bloodfeather Matriarch
+/targetexact Timberling
+/targetexact Webwood Venomfang
+/targetexact Webwood Lurker
+/targetexact Strigid Owl
+/targetexact Nightsaber
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

@@ -47,20 +47,21 @@ TomTomDB = {
 ["Nitwit - Dreadnaught"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Vermins - Stitches"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Battlenac - Celebras"] = "Default",
 ["Mxzq - Golemagg"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
 ["Verminz - Golemagg"] = "Default",
 ["Vermins - Stonespine"] = "Default",
 ["Grgur - Golemagg"] = "Default",
-["Moolatz - Golemagg"] = "Default",
+["Vermin - Celebras"] = "Default",
 ["Battlearm - Hydraxian Waterlords"] = "Default",
 ["Wells - Jin'do"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
 ["Jaroslav - Golemagg"] = "Default",
 ["Battlearm - Jin'do"] = "Default",
-["Vermin - Celebras"] = "Default",
+["Moolatz - Golemagg"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Vermin - Golemagg"] = "Default",
@@ -150,20 +151,21 @@ TomTomWaypointsM = {
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Vermins - Stitches"] = "Vermins - Stitches",
+["Mq - Celebras"] = "Mq - Celebras",
 ["Battlenac - Celebras"] = "Battlenac - Celebras",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Verminz - Golemagg"] = "Verminz - Golemagg",
 ["Vermins - Stonespine"] = "Vermins - Stonespine",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
-["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 ["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-["Vermin - Celebras"] = "Vermin - Celebras",
+["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Vermin - Golemagg"] = "Vermin - Golemagg",
@@ -263,6 +265,8 @@ TomTomWaypointsM = {
 },
 ["Vermins - Stitches"] = {
 },
+["Mq - Celebras"] = {
+},
 ["Battlenac - Celebras"] = {
 },
 ["Mxzq - Golemagg"] = {
@@ -275,7 +279,7 @@ TomTomWaypointsM = {
 },
 ["Grgur - Golemagg"] = {
 },
-["Moolatz - Golemagg"] = {
+["Vermin - Celebras"] = {
 },
 ["Battlearm - Hydraxian Waterlords"] = {
 },
@@ -314,7 +318,7 @@ TomTomWaypointsM = {
 },
 ["Battlearm - Jin'do"] = {
 },
-["Vermin - Celebras"] = {
+["Moolatz - Golemagg"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 },

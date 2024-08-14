@@ -171,26 +171,15 @@ xVerminSavedData = {
 "Rend",
 "Serpent Sting",
 },
-["Stone Behemoth"] = {
-"Rend",
+["Furious Stone Spirit"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Cracked Golem"] = {
 "Rend",
 },
 ["Primordial Behemoth"] = {
 "Concussive Shot",
-},
-["Furious Stone Spirit"] = {
-"Lightning Shield",
-"Serpent Sting",
-},
-["Shadowshard Rumbler"] = {
-"Lightning Shield",
-"Chain Lightning",
-},
-["Bristleback Geomancer"] = {
-"Firebolt",
-"Incinerate",
 },
 ["Dark Rider"] = {
 "Charge Stun",
@@ -200,16 +189,27 @@ xVerminSavedData = {
 "Intimidation",
 "Starfire Stun",
 },
-["Ambereye Reaver"] = {
+["Shadowshard Rumbler"] = {
 "Lightning Shield",
-"Serpent Sting",
+"Chain Lightning",
 },
-["Ambershard Destroyer"] = {
-"Lightning Shield",
+["Bristleback Geomancer"] = {
+"Firebolt",
+"Incinerate",
+},
+["Stone Behemoth"] = {
+"Rend",
 },
 ["Arclector"] = {
 "Firebolt",
 "Shadowburn",
+},
+["Ambershard Destroyer"] = {
+"Lightning Shield",
+},
+["Ambereye Reaver"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Entropic Beast"] = {
 "Lava Lash",
@@ -225,17 +225,9 @@ xVerminSavedData = {
 ["Constrictor Vine"] = {
 "Earthbind",
 },
-["Larsera"] = {
+["Ambershard Crusher"] = {
+"Chain Lightning",
 "Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
 },
 ["Dianastalion"] = {
 "Stormstrike",
@@ -247,14 +239,21 @@ xVerminSavedData = {
 ["Rusty Harvest Golem"] = {
 "Rend",
 },
-["Unfettered Spirit"] = {
-"Deep Wound",
-},
 ["Gahz'rilla"] = {
 "Impact",
 "Intimidation",
 "Charge Stun",
 "Counterspell",
+},
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
+"Serpent Sting",
+"Thunder Clap",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -299,36 +298,16 @@ xVerminSavedData = {
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
-["Ironspine"] = {
-"Rend",
-},
 ["Entropic Horror"] = {
 "Lava Lash",
 "Flame Shock",
 },
+["Ironspine"] = {
+"Rend",
+},
 ["Ruuzlu"] = {
 "Charge Stun",
 "Impact",
-},
-["Scarlet Chaplain"] = {
-"Weakened Soul",
-},
-["Enraged Stone Spirit"] = {
-"Rend",
-},
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
-},
-["Whirling Tempest"] = {
-"Lightning Shield",
-"Earth Shock",
-"Chain Lightning",
-"Lightning Bolt",
-"Serpent Sting",
-},
-["Rock Elemental"] = {
-"Serpent Sting",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -357,19 +336,35 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
+["Enraged Stone Spirit"] = {
+"Rend",
+},
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
+},
+["Rock Elemental"] = {
+"Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
+},
+["Scarlet Chaplain"] = {
+"Weakened Soul",
+},
 ["Jazzter"] = {
 "Fireball",
 },
 ["Razorlash"] = {
 "Blackout",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
-},
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
 "Entrapment",
+},
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -399,8 +394,12 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Whirling Tempest"] = {
+"Lightning Shield",
+"Earth Shock",
+"Chain Lightning",
+"Lightning Bolt",
+"Serpent Sting",
 },
 ["Wailing Highborne"] = {
 "Rend",
@@ -415,6 +414,21 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
+["Unfettered Spirit"] = {
+"Deep Wound",
+},
+["Larsera"] = {
+"Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
+},
 ["Princess Theradras"] = {
 "Lightning Shield",
 "Instant Poison IV",
@@ -425,20 +439,6 @@ xVerminSavedData = {
 "Serpent Sting",
 "Earth Shock",
 "Intimidation",
-},
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
 },
 ["Theradrim Shardling"] = {
 "Chain Lightning",

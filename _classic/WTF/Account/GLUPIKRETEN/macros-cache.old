@@ -37,13 +37,28 @@ VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
 END
+VER 3 000000000000003A "pattack" "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
+VER 3 000000000000003B "pdef" "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:4599
 /cast feed pet
 /use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Alanndarian Nightsong
+/targetexact Murloc Minor Tidecaller
+/targetexact Murloc Shorestriker
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

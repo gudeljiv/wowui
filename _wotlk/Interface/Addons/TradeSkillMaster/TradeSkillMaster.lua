@@ -17,7 +17,7 @@ local ItemInfo = TSM.LibTSMService:Include("Item.ItemInfo")
 local ItemFilter = TSM.LibTSMService:IncludeClassType("ItemFilter")
 local VendorBuy = TSM.LibTSMService:Include("Item.VendorBuy")
 local Sync = TSM.LibTSMService:Include("Sync")
-local Inventory = TSM.Include("Service.Inventory")
+local Inventory = TSM.LibTSMApp:Include("Service.Inventory")
 local L = TSM.Locale.GetTable()
 local CustomStringFormat = TSM.LibTSMUI:Include("Util.CustomStringFormat")
 local private = {
@@ -27,7 +27,7 @@ local private = {
 }
 do
 	-- Basic module configuration
-	Log.SetLoggingToChatEnabled(TSM.IsTest())
+	Log.SetLoggingToChatEnabled(TSM.LibTSMUtil.IsTestVersion())
 	MoneyFormatter.SetLargeNumberSeperator(LARGE_NUMBER_SEPERATOR)
 end
 
@@ -53,9 +53,9 @@ function TSM.OnInitialize(settingsDB)
 
 	-- Configure the logger
 	ChatFrame.SetActive(private.settings.chatFrame)
-	if TSM.IsTest() then
+	if TSM.LibTSMUtil.IsTestVersion() then
 		private.settings.chatLoggingEnabled = true
-	elseif not TSM.IsDev() then
+	elseif not TSM.LibTSMUtil.IsDevVersion() then
 		private.settings.chatLoggingEnabled = false
 	end
 	Log.SetLoggingToChatEnabled(private.settings.chatLoggingEnabled)

@@ -1,0 +1,42 @@
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Raptor Strike
+/cast Mongoose Bite
+END
+VER 3 0000000001000002 "arcane" "134400"
+#showtooltip
+/startattack
+/cast Arcane Shot
+END
+VER 3 0000000001000006 "blast" "134400"
+#showtooltip
+/cast rapid fire
+/cast blood fury
+END
+VER 3 0000000001000007 "fd" "134400"
+#showtooltip
+/cast feign death
+/stopattack
+/stopattack
+/stopcasting
+/petpassive
+END
+VER 3 0000000001000003 "multi" "134400"
+#showtooltip
+/startattack
+/cast Multi-Shot
+END
+VER 3 0000000001000005 "revive" "134400"
+#showtooltip
+/cast [@pet,dead]Revive Pet
+/cast [nopet] Call Pet
+/cast Mend Pet
+END
+VER 3 0000000001000001 "sting" "134400"
+#showtooltip
+/petattack
+/startattack
+/cast Serpent Sting
+/cast !Auto Shot
+END

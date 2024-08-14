@@ -197,10 +197,10 @@ function NeedsFoodBadly:UpdateMacros()
 		}
 	)
 
-	CreateOrUpdateMacro('Food', foodMacro)
-	CreateOrUpdateMacro('Drink', drinkMacro)
-	CreateOrUpdateMacro('Stone', healthstoneMacro)
-	CreateOrUpdateMacro('Potion', healthPotionMacro)
+	-- CreateOrUpdateMacro('Food', foodMacro)
+	-- CreateOrUpdateMacro('Drink', drinkMacro)
+	-- CreateOrUpdateMacro('Stone', healthstoneMacro)
+	-- CreateOrUpdateMacro('Potion', healthPotionMacro)
 	-- CreateOrUpdateMacro('Mill', millingMacro)
 	-- CreateOrUpdateMacro('Prsp', prospectingMacro)
 

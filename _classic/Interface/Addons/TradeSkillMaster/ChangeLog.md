@@ -1,7 +1,10 @@
-## v4.14.8 Changes
+## v4.14.9 Changes
 
-* [All] Fixed error when buying auctions from a Shopping scan in some situations
+* [Retail] Update for 11.0.2
+* [Retail] Fixed mailing of warbound items
+* [Retail] Include warbank in total gold displayed
+* [Retail] Allow crafting more than one of an enchant at a time
+* [Classic] Fixed error on load when destroying UI is open
 * [All] Various other bug fixes
-* [Classic] Various tooltip fixes
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

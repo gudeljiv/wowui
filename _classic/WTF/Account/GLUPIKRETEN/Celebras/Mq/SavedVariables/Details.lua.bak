@@ -1,0 +1,7209 @@
+
+_detalhes_database = {
+["savedbuffs"] = {
+},
+["mythic_dungeon_id"] = 0,
+["tabela_historico"] = {
+["tabelas"] = {
+{
+{
+["combatId"] = 49,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006298,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 90.006298,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 90.006298,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Webwood Spider"] = true,
+},
+["targets"] = {
+["Webwood Spider"] = 90,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 90,
+},
+["end_time"] = 1723654289,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 2,
+["n_max"] = 5,
+["targets"] = {
+["Webwood Spider"] = 25,
+},
+["n_total"] = 15,
+["n_min"] = 5,
+["g_dmg"] = 10,
+["counter"] = 5,
+["total"] = 25,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Webwood Spider"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 0,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 2,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Webwood Spider"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Webwood Spider"] = 28,
+},
+["n_total"] = 28,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 28,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 11,
+["targets"] = {
+["Webwood Spider"] = 21,
+},
+["n_total"] = 21,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 21,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 5.505645828158085,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 4.006298,
+["start_time"] = 1723654272,
+["delay"] = 0,
+["last_event"] = 1723654287,
+},
+{
+["flag_original"] = 68168,
+["totalabsorbed"] = 0.004814,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 4.004814,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 4.004814,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1986-0000BCE071",
+["aID"] = "1986",
+["fight_component"] = true,
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 4,
+},
+["monster"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654289,
+["nome"] = "Webwood Spider",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Mq"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 5,
+["MISS"] = 2,
+["total"] = 4,
+["c_max"] = 0,
+["DODGE"] = 2,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 90.004814,
+["start_time"] = 1723654279,
+["delay"] = 0,
+["last_event"] = 1723654285,
+},
+},
+},
+{
+["combatId"] = 49,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 49,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 49,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[1978] = {
+["activedamt"] = 0,
+["id"] = 1978,
+["targets"] = {
+},
+["uptime"] = 14,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["classe"] = "HUNTER",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[13163] = {
+["activedamt"] = 1,
+["id"] = 13163,
+["targets"] = {
+},
+["uptime"] = 17,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 17,
+["debuff_uptime"] = 14,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 1723654289,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 49,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["tempo_start"] = 1723654272,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+94,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:51:29",
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Webwood Spider",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824829.813,
+["CombatEndedAt"] = 3824829.813,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:51:13",
+["end_time"] = 3824829.813,
+["mapId"] = 1,
+["combat_id"] = 49,
+["boss_hp"] = 1,
+["playing_solo"] = true,
+["frags"] = {
+["Webwood Spider"] = 1,
+},
+["combat_counter"] = 62,
+["totals_grupo"] = {
+90,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 90.006298,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 3824813.465,
+["TimeData"] = {
+},
+["contra"] = "Webwood Spider",
+},
+{
+{
+["combatId"] = 48,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007444,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 73.00744399999999,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 73.00744399999999,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Grellkin"] = true,
+},
+["targets"] = {
+["Grellkin"] = 73,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654243,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Grellkin"] = 11,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 11,
+["c_max"] = 11,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 11,
+["successful_casted"] = 0,
+["c_total"] = 11,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Grellkin"] = 8,
+},
+["n_total"] = 8,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 8,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Grellkin"] = 45,
+},
+["n_total"] = 45,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 45,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Grellkin"] = 9,
+},
+["n_total"] = 9,
+["n_min"] = 9,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 9,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 8.86873712358936,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 3.007444,
+["start_time"] = 1723654235,
+["delay"] = 0,
+["last_event"] = 1723654242,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.008339,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 3.008339,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 3.008339,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1989-00003CDF9B",
+["aID"] = "1989",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 3,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654243,
+["nome"] = "Grellkin",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Mq"] = 3,
+},
+["n_total"] = 3,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 3,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 73.008339,
+["start_time"] = 1723654240,
+["delay"] = 0,
+["last_event"] = 1723654240,
+},
+},
+},
+{
+["combatId"] = 48,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 48,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 48,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[1978] = {
+["activedamt"] = 0,
+["id"] = 1978,
+["targets"] = {
+},
+["uptime"] = 7,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["classe"] = "HUNTER",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[13163] = {
+["activedamt"] = 1,
+["id"] = 13163,
+["targets"] = {
+},
+["uptime"] = 8,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 8,
+["debuff_uptime"] = 7,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 1723654243,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 48,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824812.56,
+["tempo_start"] = 1723654235,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+76,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:50:43",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Grellkin",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824784.051,
+["CombatEndedAt"] = 3824784.051,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:50:35",
+["end_time"] = 3824784.051,
+["mapId"] = 1,
+["combat_id"] = 48,
+["boss_hp"] = 1,
+["frags"] = {
+["Grellkin"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 61,
+["totals_grupo"] = {
+73,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 73.00744399999999,
+},
+},
+},
+["start_time"] = 3824775.819,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 47,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006446,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 77.006446,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 77.006446,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 77,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654222,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Thistle Boar"] = 16,
+},
+["n_total"] = 5,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 16,
+["c_max"] = 11,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 11,
+["successful_casted"] = 0,
+["c_total"] = 11,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 19,
+},
+["n_total"] = 19,
+["n_min"] = 9,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 19,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Thistle Boar"] = 12,
+},
+["n_total"] = 12,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 12,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.005043754957844,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 6.006446,
+["start_time"] = 1723654211,
+["delay"] = 0,
+["last_event"] = 1723654221,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.007729,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.007728999999999,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.007728999999999,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CDF81",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 6,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654222,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Mq"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 6,
+["c_max"] = 0,
+["DODGE"] = 2,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 77.007729,
+["start_time"] = 1723654216,
+["delay"] = 0,
+["last_event"] = 1723654220,
+},
+},
+},
+{
+["combatId"] = 47,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 47,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 47,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[1978] = {
+["activedamt"] = 0,
+["id"] = 1978,
+["targets"] = {
+},
+["uptime"] = 9,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["classe"] = "HUNTER",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[13163] = {
+["activedamt"] = 1,
+["id"] = 13163,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 11,
+["debuff_uptime"] = 9,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 1723654222,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 47,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824775.042,
+["tempo_start"] = 1723654211,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+83,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:50:23",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824763.365,
+["CombatEndedAt"] = 3824763.365,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:50:12",
+["end_time"] = 3824763.365,
+["mapId"] = 1,
+["combat_id"] = 47,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 60,
+["totals_grupo"] = {
+77,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 77.006446,
+},
+},
+},
+["start_time"] = 3824752.372,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 46,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002926,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 48.002926,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 48.002926,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Young Nightsaber"] = 48,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654172,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Young Nightsaber"] = 44,
+},
+["n_total"] = 44,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 44,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Young Nightsaber"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.302892636229798,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.002926,
+["start_time"] = 1723654167,
+["delay"] = 0,
+["last_event"] = 1723654171,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006357,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.006357,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.006357,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-2031-00003C18C4",
+["aID"] = "2031",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654172,
+["nome"] = "Young Nightsaber",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 48.006357,
+["start_time"] = 1723654172,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 46,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 46,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 46,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[1978] = {
+["activedamt"] = 0,
+["id"] = 1978,
+["targets"] = {
+},
+["uptime"] = 4,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["classe"] = "HUNTER",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[13163] = {
+["activedamt"] = 1,
+["id"] = 13163,
+["targets"] = {
+},
+["uptime"] = 5,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 5,
+["debuff_uptime"] = 4,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 1723654172,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 46,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824751.77,
+["tempo_start"] = 1723654167,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+48,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:49:32",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Young Nightsaber",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824713.127,
+["CombatEndedAt"] = 3824713.127,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:49:27",
+["end_time"] = 3824713.127,
+["mapId"] = 1,
+["combat_id"] = 46,
+["boss_hp"] = 1,
+["frags"] = {
+["Young Nightsaber"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 59,
+["totals_grupo"] = {
+48,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 48.002926,
+},
+},
+},
+["start_time"] = 3824707.967,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 45,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001431,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 43.001431,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 43.001431,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Young Thistle Boar"] = true,
+},
+["targets"] = {
+["Young Thistle Boar"] = 43,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654153,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Young Thistle Boar"] = 4,
+},
+["n_total"] = 4,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 4,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Young Thistle Boar"] = 29,
+},
+["n_total"] = 29,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 29,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Young Thistle Boar"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 8.34817142290994,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 1.001431,
+["start_time"] = 1723654148,
+["delay"] = 0,
+["last_event"] = 1723654152,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.008698,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 1.008698,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 1.008698,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1984-00003C1B0B",
+["aID"] = "1984",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 1,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723654153,
+["nome"] = "Young Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 1,
+["targets"] = {
+["Mq"] = 1,
+},
+["n_total"] = 1,
+["n_min"] = 1,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 1,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 43.008698,
+["start_time"] = 1723654152,
+["delay"] = 0,
+["last_event"] = 1723654152,
+},
+},
+},
+{
+["combatId"] = 45,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 45,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 45,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[1978] = {
+["activedamt"] = 0,
+["id"] = 1978,
+["targets"] = {
+},
+["uptime"] = 4,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["classe"] = "HUNTER",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[13163] = {
+["activedamt"] = 1,
+["id"] = 13163,
+["targets"] = {
+},
+["uptime"] = 5,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 5,
+["debuff_uptime"] = 4,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 1723654153,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 45,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824707.18,
+["tempo_start"] = 1723654148,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+44,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:49:13",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Young Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824693.732,
+["CombatEndedAt"] = 3824693.732,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:49:08",
+["end_time"] = 3824693.732,
+["mapId"] = 1,
+["combat_id"] = 45,
+["boss_hp"] = 1,
+["frags"] = {
+["Young Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 58,
+["totals_grupo"] = {
+43,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 43.001431,
+},
+},
+},
+["start_time"] = 3824688.581,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 44,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005141,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 87.00514100000001,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 87.00514100000001,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Grellkin"] = true,
+},
+["targets"] = {
+["Grellkin"] = 87,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653786,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 5,
+["targets"] = {
+["Grellkin"] = 33,
+},
+["n_total"] = 20,
+["n_min"] = 5,
+["g_dmg"] = 4,
+["counter"] = 6,
+["total"] = 33,
+["c_max"] = 9,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 9,
+["successful_casted"] = 0,
+["c_total"] = 9,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Grellkin"] = 28,
+},
+["n_total"] = 28,
+["n_min"] = 9,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 28,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Grellkin"] = 26,
+},
+["n_total"] = 26,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 26,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 4.785761331211567,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 23.005141,
+["start_time"] = 1723653768,
+["delay"] = 0,
+["last_event"] = 1723653785,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003555,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 23.003555,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 23.003555,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1989-00003C1C39",
+["aID"] = "1989",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 23,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653786,
+["nome"] = "Grellkin",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Mq"] = 23,
+},
+["n_total"] = 23,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 7,
+["total"] = 23,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 87.003555,
+["start_time"] = 1723653772,
+["delay"] = 0,
+["last_event"] = 1723653784,
+},
+},
+},
+{
+["combatId"] = 44,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 44,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 44,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 44,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824687.857,
+["tempo_start"] = 1723653768,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+110,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:43:07",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Grellkin",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824327.545,
+["CombatEndedAt"] = 3824327.545,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:42:49",
+["end_time"] = 3824327.545,
+["mapId"] = 1,
+["combat_id"] = 44,
+["boss_hp"] = 1,
+["frags"] = {
+["Grellkin"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 57,
+["totals_grupo"] = {
+87,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 87.00514100000001,
+},
+},
+},
+["start_time"] = 3824309.365,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 43,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003632,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 63.003632,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 63.003632,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 63,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653766,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Thistle Boar"] = 10,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 10,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 10,
+["successful_casted"] = 0,
+["c_total"] = 10,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Thistle Boar"] = 43,
+},
+["n_total"] = 43,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 43,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.568003843674516,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 5.003632,
+["start_time"] = 1723653757,
+["delay"] = 0,
+["last_event"] = 1723653764,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.004039,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 5.004039000000001,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 5.004039000000001,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBC11",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 5,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653766,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Mq"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 63.004039,
+["start_time"] = 1723653762,
+["delay"] = 0,
+["last_event"] = 1723653764,
+},
+},
+},
+{
+["combatId"] = 43,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 43,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 43,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 43,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824308.729,
+["tempo_start"] = 1723653757,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+68,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:42:47",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824307.331,
+["CombatEndedAt"] = 3824307.331,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:42:38",
+["end_time"] = 3824307.331,
+["mapId"] = 1,
+["combat_id"] = 43,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 56,
+["totals_grupo"] = {
+63,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 63.003632,
+},
+},
+},
+["start_time"] = 3824299.006,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 42,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005608,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 56.005608,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 56.005608,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 56,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653739,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Thistle Boar"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Thistle Boar"] = 41,
+},
+["n_total"] = 41,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 41,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.126302073899836,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.005608,
+["start_time"] = 1723653731,
+["delay"] = 0,
+["last_event"] = 1723653737,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006847,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.006847,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.006847,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBE29",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653739,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Mq"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 56.006847,
+["start_time"] = 1723653735,
+["delay"] = 0,
+["last_event"] = 1723653735,
+},
+},
+},
+{
+["combatId"] = 42,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 42,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 42,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 42,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824298.159,
+["tempo_start"] = 1723653731,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:42:19",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824280.208,
+["CombatEndedAt"] = 3824280.208,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:42:12",
+["end_time"] = 3824280.208,
+["mapId"] = 1,
+["combat_id"] = 42,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 55,
+["totals_grupo"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 56.005608,
+},
+},
+},
+["start_time"] = 3824272.349,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 41,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007727,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 72.007727,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 72.007727,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 72,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653724,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Thistle Boar"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 14,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 19,
+},
+["n_total"] = 19,
+["n_min"] = 9,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 19,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Thistle Boar"] = 39,
+},
+["n_total"] = 39,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 39,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 5.050692782416267,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 14.007727,
+["start_time"] = 1723653709,
+["delay"] = 0,
+["last_event"] = 1723653722,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006067,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 14.006067,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 14.006067,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBC54",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 14,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653724,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Mq"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 72.006067,
+["start_time"] = 1723653714,
+["delay"] = 0,
+["last_event"] = 1723653722,
+},
+},
+},
+{
+["combatId"] = 41,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 41,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 41,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 41,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824271.558,
+["tempo_start"] = 1723653709,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+86,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:42:04",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824265.211,
+["CombatEndedAt"] = 3824265.211,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:50",
+["end_time"] = 3824265.211,
+["mapId"] = 1,
+["combat_id"] = 41,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 54,
+["totals_grupo"] = {
+72,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 72.007727,
+},
+},
+},
+["start_time"] = 3824250.954,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 40,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007324,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 61.007324,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 61.007324,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Mangy Nightsaber"] = true,
+},
+["targets"] = {
+["Mangy Nightsaber"] = 61,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653707,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 6,
+["targets"] = {
+["Mangy Nightsaber"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 11,
+["targets"] = {
+["Mangy Nightsaber"] = 21,
+},
+["n_total"] = 21,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 21,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Mangy Nightsaber"] = 24,
+},
+["n_total"] = 24,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 24,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 10,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 5.28797122301646,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 6.007324000000001,
+["start_time"] = 1723653695,
+["delay"] = 0,
+["last_event"] = 1723653706,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002478,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.002478,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.002478,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-2032-00003CBDF5",
+["aID"] = "2032",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 6,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653707,
+["nome"] = "Mangy Nightsaber",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Mq"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 6,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 61.002478,
+["start_time"] = 1723653699,
+["delay"] = 0,
+["last_event"] = 1723653705,
+},
+},
+},
+{
+["combatId"] = 40,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 40,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 40,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 40,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824250.178,
+["tempo_start"] = 1723653695,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+67,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:41:47",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mangy Nightsaber",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824248.189,
+["CombatEndedAt"] = 3824248.189,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:36",
+["end_time"] = 3824248.189,
+["mapId"] = 1,
+["combat_id"] = 40,
+["boss_hp"] = 1,
+["frags"] = {
+["Mangy Nightsaber"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 53,
+["totals_grupo"] = {
+61,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 61.007324,
+},
+},
+},
+["start_time"] = 3824236.652,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 39,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001471,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 75.00147100000001,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 75.00147100000001,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Thistle Boar"] = 75,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653689,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Thistle Boar"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 60,
+},
+["n_total"] = 30,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 60,
+["c_max"] = 30,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 30,
+["successful_casted"] = 0,
+["c_total"] = 30,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.565294095122749,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.001471,
+["start_time"] = 1723653681,
+["delay"] = 0,
+["last_event"] = 1723653687,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.005821,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.005821,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.005821,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBE14",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653689,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Mq"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 0,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 75.005821,
+["start_time"] = 1723653689,
+["delay"] = 0,
+["last_event"] = 1723653686,
+},
+},
+},
+{
+["combatId"] = 39,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 39,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 39,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 39,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824235.917,
+["tempo_start"] = 1723653681,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+75,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:41:30",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824230.353,
+["CombatEndedAt"] = 3824230.353,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:22",
+["end_time"] = 3824230.353,
+["mapId"] = 1,
+["combat_id"] = 39,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 52,
+["totals_grupo"] = {
+75,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 75.00147100000001,
+},
+},
+},
+["start_time"] = 3824222.512,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 38,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.00398,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 77.00398,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 77.00398,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 77,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653679,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 5,
+["targets"] = {
+["Thistle Boar"] = 15,
+},
+["n_total"] = 10,
+["n_min"] = 5,
+["g_dmg"] = 5,
+["counter"] = 3,
+["total"] = 15,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 19,
+},
+["n_total"] = 19,
+["n_min"] = 9,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 19,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 43,
+},
+["n_total"] = 43,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 43,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.006082208877808,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 11.00398,
+["start_time"] = 1723653666,
+["delay"] = 0,
+["last_event"] = 1723653678,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002904,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 11.002904,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 11.002904,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003C262F",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 11,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653679,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Mq"] = 11,
+},
+["n_total"] = 11,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 11,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 77.002904,
+["start_time"] = 1723653671,
+["delay"] = 0,
+["last_event"] = 1723653677,
+},
+},
+},
+{
+["combatId"] = 38,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 38,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 38,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 38,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824221.722,
+["tempo_start"] = 1723653666,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+88,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:41:20",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824220.632,
+["CombatEndedAt"] = 3824220.632,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:41:07",
+["end_time"] = 3824220.632,
+["mapId"] = 1,
+["combat_id"] = 38,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 51,
+["totals_grupo"] = {
+77,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 77.00398,
+},
+},
+},
+["start_time"] = 3824207.811,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 37,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.00491,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 56.00491,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 56.00491,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+["Thistle Boar"] = true,
+},
+["targets"] = {
+["Thistle Boar"] = 56,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653664,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 6,
+["targets"] = {
+["Thistle Boar"] = 17,
+},
+["n_total"] = 6,
+["n_min"] = 6,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 17,
+["c_max"] = 11,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 11,
+["successful_casted"] = 0,
+["c_total"] = 11,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Thistle Boar"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Thistle Boar"] = 29,
+},
+["n_total"] = 29,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 29,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.107222081319073,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.00491,
+["start_time"] = 1723653656,
+["delay"] = 0,
+["last_event"] = 1723653663,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006509,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.006509,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.006509,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBE04",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+["Mq"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653664,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Mq"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 2,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 56.006509,
+["start_time"] = 1723653662,
+["delay"] = 0,
+["last_event"] = 1723653662,
+},
+},
+},
+{
+["combatId"] = 37,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 37,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 37,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 37,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824207.048,
+["tempo_start"] = 1723653656,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:41:05",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824205.636,
+["CombatEndedAt"] = 3824205.636,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:57",
+["end_time"] = 3824205.636,
+["mapId"] = 1,
+["combat_id"] = 37,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 50,
+["totals_grupo"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 56.00491,
+},
+},
+},
+["start_time"] = 3824197.756,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 36,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008671,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 55.008671,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 55.008671,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Thistle Boar"] = 55,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653650,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 55,
+},
+["n_total"] = 55,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 55,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.020889725623682,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.008671,
+["start_time"] = 1723653642,
+["delay"] = 0,
+["last_event"] = 1723653649,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003953,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.003953,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.003953,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003CBC69",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653650,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 55.003953,
+["start_time"] = 1723653650,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 36,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 36,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 36,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 36,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824197.019,
+["tempo_start"] = 1723653642,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+55,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:40:50",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824191.099,
+["CombatEndedAt"] = 3824191.099,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:43",
+["end_time"] = 3824191.099,
+["mapId"] = 1,
+["combat_id"] = 36,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 49,
+["totals_grupo"] = {
+55,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 55.008671,
+},
+},
+},
+["start_time"] = 3824183.264,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 35,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.005067,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 57.005067,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 57.005067,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Thistle Boar"] = 57,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653638,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 57,
+},
+["n_total"] = 57,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 57,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.738187588682153,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.005067,
+["start_time"] = 1723653630,
+["delay"] = 0,
+["last_event"] = 1723653637,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.007369,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.007369,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.007369,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003C484D",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653638,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 57.007369,
+["start_time"] = 1723653638,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 35,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 35,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 35,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 35,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824182.557,
+["tempo_start"] = 1723653630,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+57,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:40:39",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824179.727,
+["CombatEndedAt"] = 3824179.727,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:31",
+["end_time"] = 3824179.727,
+["mapId"] = 1,
+["combat_id"] = 35,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 48,
+["totals_grupo"] = {
+57,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 57.005067,
+},
+},
+},
+["start_time"] = 3824171.267,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 34,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002894,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 64.002894,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 64.002894,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Mangy Nightsaber"] = 64,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653624,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Mangy Nightsaber"] = 43,
+},
+["n_total"] = 43,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 43,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Mangy Nightsaber"] = 21,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 21,
+["c_max"] = 21,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 21,
+["successful_casted"] = 0,
+["c_total"] = 21,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 13.18288238933997,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.002894,
+["start_time"] = 1723653619,
+["delay"] = 0,
+["last_event"] = 1723653623,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.007997,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.007997,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.007997,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-2032-00003CBDE5",
+["aID"] = "2032",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653624,
+["nome"] = "Mangy Nightsaber",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 64.007997,
+["start_time"] = 1723653624,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 34,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 34,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 34,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 34,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824170.413,
+["tempo_start"] = 1723653619,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+64,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:40:24",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mangy Nightsaber",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824165.147,
+["CombatEndedAt"] = 3824165.147,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:20",
+["end_time"] = 3824165.147,
+["mapId"] = 1,
+["combat_id"] = 34,
+["boss_hp"] = 1,
+["frags"] = {
+["Mangy Nightsaber"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 47,
+["totals_grupo"] = {
+64,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 64.002894,
+},
+},
+},
+["start_time"] = 3824160.292,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 33,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003106,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 56.003106,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 56.003106,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Thistle Boar"] = 56,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653613,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Thistle Boar"] = 56,
+},
+["n_total"] = 56,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 56,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.913110233482557,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.003106,
+["start_time"] = 1723653605,
+["delay"] = 0,
+["last_event"] = 1723653613,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002851,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.002851,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.002851,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-1985-00003C1F65",
+["aID"] = "1985",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653613,
+["nome"] = "Thistle Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 56.002851,
+["start_time"] = 1723653613,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 33,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 33,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 33,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 33,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824159.58,
+["tempo_start"] = 1723653605,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:40:13",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Thistle Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824154.196,
+["CombatEndedAt"] = 3824154.196,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:40:05",
+["end_time"] = 3824154.196,
+["mapId"] = 1,
+["combat_id"] = 33,
+["boss_hp"] = 1,
+["frags"] = {
+["Thistle Boar"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 46,
+["totals_grupo"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 56.003106,
+},
+},
+},
+["start_time"] = 3824146.095,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 32,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.003301,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 74.003301,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 74.003301,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026B513C",
+["damage_from"] = {
+},
+["targets"] = {
+["Mangy Nightsaber"] = 74,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653599,
+["nome"] = "Mq",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Mangy Nightsaber"] = 53,
+},
+["n_total"] = 28,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 53,
+["c_max"] = 25,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 25,
+["successful_casted"] = 0,
+["c_total"] = 25,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Mangy Nightsaber"] = 21,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 21,
+["c_max"] = 21,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 21,
+["successful_casted"] = 0,
+["c_total"] = 21,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 11.838633978253,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.003301,
+["start_time"] = 1723653593,
+["delay"] = 0,
+["last_event"] = 1723653598,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.005934,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 0.005934,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.005934,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5208-1-91-2032-00003CBDA7",
+["aID"] = "2032",
+["damage_from"] = {
+["Mq"] = true,
+},
+["targets"] = {
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1723653599,
+["nome"] = "Mangy Nightsaber",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 74.005934,
+["start_time"] = 1723653599,
+["delay"] = 0,
+["last_event"] = 0,
+},
+},
+},
+{
+["combatId"] = 32,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 32,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 32,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["serial"] = "Player-5266-026B513C",
+["grupo"] = true,
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 32,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
+},
+["CombatStartedAt"] = 3824145.276,
+["tempo_start"] = 1723653593,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+74,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Mq"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "18:40:00",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mangy Nightsaber",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 3824140.425,
+["CombatEndedAt"] = 3824140.425,
+["aura_timeline"] = {
+},
+["data_inicio"] = "18:39:53",
+["end_time"] = 3824140.425,
+["mapId"] = 1,
+["combat_id"] = 32,
+["boss_hp"] = 1,
+["frags"] = {
+["Mangy Nightsaber"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 45,
+["totals_grupo"] = {
+74,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Mq"] = 74.003301,
+},
+},
+},
+["start_time"] = 3824134.174,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+},
+},
+["ocd_tracker"] = {
+["enabled"] = false,
+["current_cooldowns"] = {
+},
+["lines_per_column"] = 12,
+["group_frames"] = true,
+["width"] = 120,
+["frames"] = {
+["defensive-raid"] = {
+},
+["main"] = {
+},
+["ofensive"] = {
+},
+["defensive-target"] = {
+},
+["utility"] = {
+},
+["defensive-personal"] = {
+},
+},
+["show_options"] = false,
+["ignored_cooldowns"] = {
+},
+["cooldowns"] = {
+},
+["height"] = 18,
+["own_frame"] = {
+["defensive-raid"] = false,
+["ofensive"] = false,
+["defensive-target"] = false,
+["utility"] = false,
+["defensive-personal"] = false,
+},
+["framme_locked"] = false,
+["show_conditions"] = {
+["only_inside_instance"] = true,
+["only_in_group"] = true,
+},
+["show_title"] = true,
+["filters"] = {
+["itemutil"] = false,
+["itempower"] = false,
+["defensive-target"] = false,
+["itemheal"] = false,
+["defensive-personal"] = false,
+["defensive-raid"] = false,
+["ofensive"] = true,
+["crowdcontrol"] = false,
+["utility"] = false,
+},
+},
+["last_version"] = "1.15.3 12829",
+["player_stats"] = {
+},
+["SoloTablesSaved"] = {
+["Mode"] = 1,
+},
+["tabela_instancias"] = {
+},
+["coach"] = {
+["enabled"] = false,
+["welcome_panel_pos"] = {
+},
+["last_coach_name"] = false,
+},
+["on_death_menu"] = false,
+["nick_tag_cache"] = {
+["nextreset"] = 1724749170,
+["last_version"] = 16,
+},
+["last_instance_id"] = 0,
+["data_harvest_for_charsts"] = {
+["players"] = {
+{
+["name"] = "Damage of Each Individual Player",
+["playerOnly"] = true,
+["playerKey"] = "total",
+["combatObjectContainer"] = 1,
+},
+},
+["totals"] = {
+{
+["combatObjectSubTableKey"] = 1,
+["name"] = "Damage of All Player Combined",
+["combatObjectSubTableName"] = "totals",
+},
+},
+},
+["announce_interrupts"] = {
+["enabled"] = false,
+["whisper"] = "",
+["channel"] = "SAY",
+["custom"] = "",
+["next"] = "",
+},
+["last_instance_time"] = 0,
+["active_profile"] = "xVermin",
+["last_realversion"] = 159,
+["ignore_nicktag"] = false,
+["combat_log"] = {
+["merge_gemstones_1007"] = false,
+["inverse_deathlog_raid"] = false,
+["calc_evoker_damage"] = true,
+["inverse_deathlog_overalldata"] = false,
+["evoker_calc_damage"] = false,
+["merge_critical_heals"] = false,
+["track_hunter_frenzy"] = false,
+["evoker_show_realtimedps"] = false,
+["inverse_deathlog_mplus"] = false,
+},
+["cached_talents"] = {
+},
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["animate"] = false,
+["hide_pull_bar"] = false,
+["author"] = "Terciob",
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["updatespeed"] = 1,
+["disable_gouge"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["useclasscolors"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["playSound"] = false,
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["arrow_anchor_y"] = 0,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_x"] = 0,
+["scale"] = 1,
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["y"] = -183.107162475586,
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["attribute_type"] = 1,
+["update_speed"] = 0.05,
+["size"] = 32,
+},
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["use_spark"] = false,
+["font_size"] = 10,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["author"] = "Details! Team",
+["point"] = "RIGHT",
+["row_height"] = 18,
+["use_square_mode"] = false,
+},
+},
+["mythic_plus_log"] = {
+},
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
+["benchmark_db"] = {
+["frame"] = {
+},
+},
+["last_day"] = "14",
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
+},
+["character_data"] = {
+["logons"] = 14,
+},
+["local_instances_config"] = {
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+[3] = 2,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 1,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -1101.599021911621,
+["w"] = 234.8974151611328,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+1,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 2,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -869.6630859375,
+["w"] = 228.9744262695313,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+},
+["combat_id"] = 49,
+["savedStyles"] = {
+{
+["show_statusbar"] = false,
+["clickthrough_window"] = false,
+["titlebar_shown"] = false,
+["menu_anchor"] = {
+16,
+0,
+["side"] = 2,
+},
+["bg_r"] = 0.1333333333333333,
+["fullborder_size"] = 0.5,
+["hide_out_of_combat"] = false,
+["color_buttons"] = {
+1,
+1,
+1,
+1,
+},
+["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
+["skin_custom"] = "vermin",
+["use_auto_align_multi_fontstrings"] = true,
+["tooltip"] = {
+["n_abilities"] = 3,
+["n_enemies"] = 3,
+},
+["switch_all_roles_in_combat"] = {
+1,
+1,
+1,
+},
+["clickthrough_toolbaricons"] = false,
+["attribute_text"] = {
+["enabled"] = true,
+["shadow"] = false,
+["side"] = 1,
+["text_color"] = {
+1,
+1,
+1,
+1,
+},
+["custom_text"] = "{name}",
+["text_face"] = "Arial Narrow",
+["anchor"] = {
+56,
+3,
+},
+["text_size"] = 12,
+["enable_custom_text"] = false,
+["show_timer"] = false,
+},
+["titlebar_texture"] = "xVerminClean",
+["ignore_mass_showhide"] = false,
+["fontstrings_text_limit_offset"] = -10,
+["icon_desaturated"] = false,
+["desaturated_menu"] = false,
+["show_sidebars"] = false,
+["window_scale"] = 1,
+["hide_icon"] = true,
+["toolbar_side"] = 1,
+["bg_g"] = 0.1333333333333333,
+["menu_icons_alpha"] = 0.92,
+["bg_b"] = 0.1333333333333333,
+["rowareaborder_color"] = {
+0,
+0,
+0,
+1,
+},
+["color"] = {
+0.07058823529411765,
+0.07058823529411765,
+0.07058823529411765,
+0,
+},
+["hide_on_context"] = {
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 48,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+{
+["enabled"] = false,
+["inverse"] = false,
+["value"] = 100,
+},
+},
+["skin"] = "Minimalistic",
+["following"] = {
+["enabled"] = false,
+["bar_color"] = {
+1,
+1,
+1,
+},
+["text_color"] = {
+1,
+1,
+1,
+},
+},
+["switch_healer"] = {
+1,
+1,
+1,
+},
+["fontstrings_text2_anchor"] = 70,
+["menu_icons_size"] = 0.8500000238418579,
+["bars_inverted"] = false,
+["menu_icons"] = {
+false,
+true,
+false,
+false,
+false,
+false,
+["space"] = -4,
+["shadow"] = false,
+},
+["instance_button_anchor"] = {
+-27,
+1,
+},
+["total_bar"] = {
+["enabled"] = false,
+["only_in_group"] = false,
+["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+["color"] = {
+1,
+1,
+1,
+},
+},
+["micro_displays_side"] = 2,
+["version"] = 3,
+["switch_tank_in_combat"] = {
+1,
+1,
+1,
+},
+["bg_alpha"] = 0,
+["fontstrings_text4_anchor"] = 4,
+["plugins_grow_direction"] = 1,
+["menu_alpha"] = {
+["enabled"] = false,
+["onleave"] = 1,
+["ignorebars"] = false,
+["iconstoo"] = true,
+["onenter"] = 1,
+},
+["fullborder_shown"] = false,
+["clickthrough_rows"] = false,
+["rowareaborder_shown"] = false,
+["rowareaborder_size"] = 0.5,
+["clickthrough_incombatonly"] = false,
+["fullborder_color"] = {
+0,
+0,
+0,
+1,
+},
+["backdrop_texture"] = "Details Ground",
+["hide_in_combat_alpha"] = 0,
+["bars_sort_direction"] = 1,
+["strata"] = "LOW",
+["libwindow"] = {
+["y"] = -20,
+["x"] = 2.012314325838815e-05,
+["point"] = "TOPLEFT",
+["scale"] = 1,
+},
+["statusbar_info"] = {
+["alpha"] = 0,
+["overlay"] = {
+0.07058823529411765,
+0.07058823529411765,
+0.07058823529411765,
+},
+},
+["menu_anchor_down"] = {
+16,
+-3,
+},
+["bars_grow_direction"] = 1,
+["grab_on_top"] = false,
+["auto_hide_menu"] = {
+["left"] = false,
+["right"] = true,
+},
+["hide_in_combat_type"] = 1,
+["switch_damager_in_combat"] = {
+1,
+1,
+1,
+},
+["switch_healer_in_combat"] = {
+1,
+1,
+1,
+},
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
+["auto_current"] = true,
+["micro_displays_locked"] = false,
+["row_info"] = {
+["show_arena_role_icon"] = false,
+["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+["textL_outline"] = false,
+["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+["textR_show_data"] = {
+true,
+true,
+false,
+},
+["percent_type"] = 1,
+["fixed_text_color"] = {
+1,
+1,
+1,
+},
+["space"] = {
+["right"] = 0,
+["left"] = 0,
+["between"] = 1,
+},
+["texture_background_class_color"] = false,
+["textL_outline_small_color"] = {
+0,
+0,
+0,
+1,
+},
+["font_face_file"] = "Fonts\\ARIALN.TTF",
+["faction_icon_size_offset"] = -10,
+["backdrop"] = {
+["color"] = {
+1,
+1,
+1,
+1,
+},
+["size"] = 12,
+["enabled"] = false,
+["texture"] = "ThreatPlatesBorder",
+},
+["models"] = {
+["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
+["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+["upper_alpha"] = 0.5,
+["lower_enabled"] = false,
+["lower_alpha"] = 0.1,
+["upper_enabled"] = false,
+},
+["textL_custom_text"] = "{data1}. {data3}{data2}",
+["font_size"] = 11,
+["textL_translit_text"] = false,
+["height"] = 19,
+["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+["icon_size_offset"] = 0,
+["start_after_icon"] = true,
+["show_faction_icon"] = true,
+["overlay_color"] = {
+0.7,
+0.7,
+0.7,
+0,
+},
+["textL_outline_small"] = true,
+["textR_outline_small"] = true,
+["arena_role_icon_size_offset"] = -10,
+["icon_grayscale"] = false,
+["textR_bracket"] = "(",
+["use_spec_icons"] = false,
+["texture_custom"] = "",
+["textR_outline"] = false,
+["fixed_texture_color"] = {
+0,
+0,
+0,
+1,
+},
+["textL_show_number"] = true,
+["textR_enable_custom_text"] = false,
+["textR_outline_small_color"] = {
+0,
+0,
+0,
+1,
+},
+["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
+["texture"] = "xVerminClean",
+["textR_class_colors"] = false,
+["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+["overlay_texture"] = "xVerminClean",
+["fixed_texture_background_color"] = {
+0,
+0,
+0,
+0.07912671566009521,
+},
+["textL_class_colors"] = false,
+["texture_background"] = "xVerminClean",
+["alpha"] = 1,
+["no_icon"] = true,
+["icon_offset"] = {
+0,
+0,
+},
+["icon_file"] = "",
+["font_face"] = "Arial Narrow",
+["texture_class_colors"] = true,
+["textL_enable_custom_text"] = false,
+["fast_ps_update"] = false,
+["textR_separator"] = "NONE",
+["texture_custom_file"] = "Interface\\",
+},
+["name"] = "vermin",
+["hide_in_combat"] = false,
+["switch_damager"] = {
+1,
+1,
+1,
+},
+["switch_tank"] = {
+1,
+1,
+1,
+},
+["switch_all_roles_after_wipe"] = {
+1,
+1,
+1,
+},
+["wallpaper"] = {
+["enabled"] = false,
+["alpha"] = 0.5,
+["width"] = 283.000183105469,
+["texcoord"] = {
+0,
+1,
+0,
+0.7,
+},
+["height"] = 114.042518615723,
+["anchor"] = "all",
+["level"] = 2,
+["overlay"] = {
+1,
+1,
+1,
+1,
+},
+["texture"] = "Interface\\AddOns\\Details\\images\\background",
+},
+["stretch_button_side"] = 2,
+["titlebar_height"] = 16,
+["fontstrings_text3_anchor"] = 35,
+["use_multi_fontstrings"] = true,
+["titlebar_texture_color"] = {
+0.2,
+0.2,
+0.2,
+0,
+},
+},
+},
+["force_font_outline"] = "",
+["combat_counter"] = 62,
+["announce_deaths"] = {
+["enabled"] = false,
+["last_hits"] = 1,
+["only_first"] = 5,
+["where"] = 1,
+},
+["tabela_overall"] = {
+{
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["aID"] = "5266-026B513C",
+["nome"] = "Mq",
+["grupo"] = true,
+["classe"] = "HUNTER",
+["tipo"] = 4,
+["serial"] = "Player-5266-026B513C",
+["last_event"] = 0,
+},
+},
+},
+{
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+},
+["tempo_start"] = 1723648481,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["trinketProcs"] = {
+},
+["playerTalents"] = {
+},
+["totals"] = {
+0,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+0,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = false,
+["aura_timeline"] = {
+},
+["overall_refreshed"] = true,
+["data_inicio"] = 0,
+["amountCasts"] = {
+},
+["mapId"] = 1,
+["player_last_events"] = {
+},
+["zoneName"] = "Kalimdor",
+["cleu_events"] = {
+["n"] = 1,
+},
+["boss_hp"] = 1,
+["frags"] = {
+},
+["segments_added"] = {
+},
+["data_fim"] = 0,
+["cleu_timeline"] = {
+},
+["spells_cast_timeline"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+},
+["damage"] = {
+},
+},
+["start_time"] = 0,
+["TimeData"] = {
+},
+["combat_counter"] = 13,
+},
+["announce_prepots"] = {
+["enabled"] = false,
+["channel"] = "SELF",
+["reverse"] = false,
+},
+["data_harvested_for_charts"] = {
+},
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
+["announce_cooldowns"] = {
+["ignored_cooldowns"] = {
+},
+["enabled"] = false,
+["custom"] = "",
+["channel"] = "RAID",
+},
+["rank_window"] = {
+["last_difficulty"] = 15,
+["last_raid"] = "",
+},
+["cached_roles"] = {
+},
+["cached_specs"] = {
+},
+}

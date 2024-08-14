@@ -69,10 +69,13 @@ local function BuyAmmo()
 		if xVermin.Class == 'HUNTER' then
 
 			for bag = 0, 4 do 
-				local bagtype = GetItemFamily(C_Container.GetBagName(bag))
-				-- if ammo quiver
-				if bagtype == 1 then 
-					numberOfSlots = C_Container.GetContainerNumSlots(bag);
+				-- print(bag, C_Container.GetBagName(bag))
+				if C_Container.GetBagName(bag) ~= nil then 
+					local bagtype = C_Item.GetItemFamily(C_Container.GetBagName(bag))
+					-- if ammo quiver
+					if bagtype == 1 then 
+						numberOfSlots = C_Container.GetContainerNumSlots(bag);
+					end
 				end
 			end
 

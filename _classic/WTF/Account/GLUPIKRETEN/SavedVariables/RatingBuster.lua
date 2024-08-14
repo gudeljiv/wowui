@@ -18,6 +18,7 @@ RatingBusterDB = {
 ["Vermins - Stitches"] = "WARRIOR",
 ["Dopecure - Stitches"] = "PRIEST",
 ["Dopemend - Lone Wolf"] = "PRIEST",
+["Mq - Celebras"] = "HUNTER",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
 ["Doperage - Lone Wolf"] = "WARRIOR",
 ["Dopesnare - Stitches"] = "HUNTER",

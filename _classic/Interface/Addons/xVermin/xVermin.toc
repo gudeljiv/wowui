@@ -79,7 +79,7 @@ Helpers/AutoBuyAmmo.lua
 Helpers/AutoRepair.lua
 Helpers/AutoRollGreed.lua
 Helpers/Bags.lua
-# Helpers/BestFood.lua
+Helpers/BestFood.lua
 Helpers/BetterLootMessage.lua
 Helpers/Bindings.lua
 Helpers/Buffs.lua

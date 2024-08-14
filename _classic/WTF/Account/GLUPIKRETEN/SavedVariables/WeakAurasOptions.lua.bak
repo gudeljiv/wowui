@@ -1,20 +1,8 @@
 
 WeakAurasOptionsSaved = {
 ["magnetAlign"] = true,
-["savedSnippets"] = {
-},
 ["spellCacheAchievements"] = true,
-["spellCacheAchivements"] = true,
-["locale"] = "enUS",
-["needsRebuild"] = false,
-["version"] = "5.15.4",
-["lockPositions"] = false,
-["spellCacheStrings"] = true,
-["frame"] = {
-["xOffset"] = 841.8576049804688,
-["width"] = 1116.095092773438,
-["height"] = 959.7171630859375,
-["yOffset"] = 1169.543334960938,
+["savedSnippets"] = {
 },
 ["spellCache"] = {
 ["Enchant Cloak - Greater Defense"] = {
@@ -113,9 +101,6 @@ WeakAurasOptionsSaved = {
 ["Increased Arcane Resist 06"] = {
 ["spells"] = "14708=136235",
 },
-["Clean Up Masterwork Volcanic Leggings in Era [DNT]"] = {
-["spells"] = "465719=136235",
-},
 ["Major Heal Self (TEST)"] = {
 ["spells"] = "24=136235",
 },
@@ -128,11 +113,11 @@ WeakAurasOptionsSaved = {
 ["Create Hive'Regal Rubbing DND"] = {
 ["spells"] = "24807=136235",
 },
+["Clean Up Masterwork Volcanic Leggings in Era [DNT]"] = {
+["spells"] = "465719=136235",
+},
 ["Clean Up Quel'Serrar SoD to Era [DNT]"] = {
 ["spells"] = "465699=136235",
-},
-["[DNT] Drained of Blood (Instance - Cast)"] = {
-["spells"] = "464614=236363",
 },
 ["Dream Eater"] = {
 ["spells"] = "425460=136167,425462=136167,451438=237507,451439=237507,452745=237507",
@@ -146,8 +131,8 @@ WeakAurasOptionsSaved = {
 ["Tuxedo Jacket"] = {
 ["spells"] = "12093=132149,12135=136021",
 },
-["Servant of Flame and Scale"] = {
-["spells"] = "464591=236191",
+["[DNT] Drained of Blood (Instance - Cast)"] = {
+["spells"] = "464614=236363",
 },
 ["Law of Nature"] = {
 ["spells"] = "463873=136235",
@@ -37674,5 +37659,17 @@ WeakAurasOptionsSaved = {
 ["spells"] = "452430=135215,452432=135215",
 },
 },
+["locale"] = "enUS",
+["needsRebuild"] = false,
+["version"] = "5.15.4",
+["lockPositions"] = false,
+["frame"] = {
+["xOffset"] = 841.8576049804688,
+["yOffset"] = 1169.543334960938,
+["height"] = 959.7171630859375,
+["width"] = 1116.095092773438,
+},
+["spellCacheAchivements"] = true,
+["spellCacheStrings"] = true,
 ["build"] = "55917",
 }

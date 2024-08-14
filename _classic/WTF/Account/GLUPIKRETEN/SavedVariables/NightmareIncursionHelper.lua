@@ -10,6 +10,7 @@ NIHdatabase = {
 ["Vermins - Stitches"] = "Default",
 ["Dopecure - Stitches"] = "Default",
 ["Dopemend - Lone Wolf"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
