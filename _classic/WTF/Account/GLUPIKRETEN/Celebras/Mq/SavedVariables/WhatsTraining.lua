@@ -15,6 +15,10 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
+["Bite"] = {
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
 ["Natural Armor"] = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
