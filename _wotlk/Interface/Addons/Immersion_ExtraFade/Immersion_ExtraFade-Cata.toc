@@ -1,5 +1,5 @@
 ## Interface: 40400
-## Version: 1.17.7
+## Version: 1.17.8
 ## Title: Immersion ExtraFade
 ## Author: LudiusMaximus
 ## Notes: Improves Immersion's UI fading while talking to NPCs.

@@ -1,15 +1,20 @@
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast rapid fire
-/cast blood fury
-END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Raptor Strike
 /cast Mongoose Bite
 END
-VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000002 "arcane" "134400"
+#showtooltip
+/startattack
+/cast Arcane Shot
+END
+VER 3 0000000001000006 "blast" "134400"
+#showtooltip
+/cast rapid fire
+/cast blood fury
+END
+VER 3 0000000001000007 "fd" "134400"
 #showtooltip
 /cast feign death
 /stopattack
@@ -17,30 +22,21 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 /stopcasting
 /petpassive
 END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000003 "multi" "134400"
+#showtooltip
+/startattack
+/cast Multi-Shot
+END
+VER 3 0000000001000005 "revive" "134400"
 #showtooltip
 /cast [@pet,dead]Revive Pet
 /cast [nopet] Call Pet
 /cast Mend Pet
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 "sting" "134400"
 #showtooltip
 /petattack
 /startattack
 /cast Serpent Sting
-/cast !Auto Shot
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/startattack
-/cast Arcane Shot
-/cast !Auto Shot
-END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/startattack
-/cast Multi-Shot
 /cast !Auto Shot
 END

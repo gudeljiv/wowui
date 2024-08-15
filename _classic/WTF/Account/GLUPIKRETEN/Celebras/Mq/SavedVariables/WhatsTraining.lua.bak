@@ -1,5 +1,11 @@
 
 WT_LearnedPetAbilities = {
+["Great Stamina"] = {
+["Rank 1"] = true,
+},
+["Natural Armor"] = {
+["Rank 1"] = true,
+},
 }
 WT_NeedsToOpenBeastTraining = true
 WT_IgnoredSpells = {

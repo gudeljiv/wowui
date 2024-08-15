@@ -18,5 +18,6 @@ SRTIExternalUF = {
 },
 ["blizzard_compactraidframes"] = {
 "CompactRaidFrame1",
+"CompactRaidFrame2",
 },
 }

@@ -26,6 +26,14 @@ local Range = {
 ShadowUF:RegisterModule(Range, "range", ShadowUF.L["Range indicator"])
 
 local LSR = LibStub("SpellRange-1.0")
+local RangeCheck = LibStub('LibRangeCheck-3.0')
+RangeCheck.RegisterCallback(
+	RangeCheck, 
+	RangeCheck.CHECKERS_CHANGED, 
+	function() 
+		-- print("need to refresh my stored checkers") 
+	end
+)
 
 local playerClass = select(2, UnitClass("player"))
 local rangeSpells = {}
@@ -41,6 +49,8 @@ local function checkRange(self)
 		spell = rangeSpells.hostile
 	end
 
+	-- print(spell)
+
 	if( not UnitIsConnected(frame.unit) or not UnitInPhase(frame.unit) ) then
 		frame:SetRangeAlpha(ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	elseif( spell ) then
@@ -51,6 +61,11 @@ local function checkRange(self)
 	-- Nope, fall back to interaction :(
 	else
 		frame:SetRangeAlpha(CheckInteractDistance(frame.unit, 4) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
+
+		-- CheckInteractDistance was checking for 28 yards... inspect range so i put 30
+		-- local minRange, maxRange = RangeCheck:GetRange(frame.unit)
+		-- print(minRange, maxRange,frame.unit)
+		-- frame:SetRangeAlpha(maxRange and maxRange <= 30 and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	end
 end
 
