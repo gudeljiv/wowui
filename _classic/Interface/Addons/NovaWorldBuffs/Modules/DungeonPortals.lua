@@ -99,7 +99,7 @@ if (not NWB.isSOD) then
 end
 function NWB:createExtraDungMarkers()
 	local markers = {
-		[1] = {
+		[1] = { --/dump NWB:GetPlayerZonePosition()
 			icon = "Interface\\Icons\\Ability_mount_drake_azure",
 			tooltip = "Azuregos",
 			zone = 1447,
@@ -112,6 +112,13 @@ function NWB:createExtraDungMarkers()
 			zone = 1419,
 			x = 0.47189059380033,
 			y = 0.54758248379708,
+		},
+		[3] = {
+			icon = "Interface\\Icons\\Achievement_boss_kelidanthebreaker",
+			tooltip = "Demon Fall Canyon",
+			zone = 1440,
+			x = 0.84471679297417,
+			y = 0.73532787093496,
 		},
 	};
 	for k, v in pairs(markers) do
@@ -127,7 +134,7 @@ function NWB:createExtraDungMarkers()
 		obj.tooltip:SetFrameStrata("TOOLTIP");
 		obj.tooltip:SetFrameLevel(9);
 		obj.tooltip.fs = obj.tooltip:CreateFontString("NWBExtraDungMarkerTooltipFS" .. k, "ARTWORK");
-		obj.tooltip.fs:SetPoint("CENTER", 0, 1);
+		obj.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 		obj.tooltip.fs:SetFont(NWB.regionFont, 11.5);
 		obj.tooltip.fs:SetText("|CffDEDE42" .. v.tooltip);
 		obj.tooltip:SetWidth(obj.tooltip.fs:GetStringWidth() + 16);

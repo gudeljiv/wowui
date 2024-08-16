@@ -79,7 +79,7 @@ function NWB:getBlackrockTimeString(isShort, veryShort)
 		if (veryShort) then
 			if (type == "running") then
 				--For the overlay we don't show it running, so add the time until next start.
-				timeString = NWB:getTimeString(timeLeft + 9000, true, "short");
+				timeString = NWB:getTimeString(timeLeft + 3600, true, "short");
 			end
 			--if (type == "running") then
 			--	text = "|cFF00C800" .. L["Blackrock"] .. ": |cFF9CD6DE" .. timeString .. "|r" .. "|r |cFF9CD6DE" .. L["remaining"] .. "|r";

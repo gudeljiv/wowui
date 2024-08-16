@@ -31,6 +31,9 @@ function GUI:Lock()
         if frame:IsMouseEnabled() then
           frame:EnableMouse(false)
           frame.mouseDisabled = true
+        elseif frame:IsMouseMotionEnabled() then
+          frame:SetMouseMotionEnabled(false)
+          frame.mouseMotionDisabled = true
         end
         if frame.SetTextColor then
           frame.prevColor = {frame:GetTextColor()}
@@ -41,7 +44,7 @@ function GUI:Lock()
   end
   for _, dropdown in ipairs(self.dropdowns) do
     if not dropdown.isDisabled then
-      LibDD:UIDropDownMenu_DisableDropDown(dropdown)
+      dropdown:DisableDropdown()
       dropdown.locked = true
     end
   end
@@ -56,6 +59,9 @@ function GUI:Unlock()
         if frame.mouseDisabled then
           frame:EnableMouse(true)
           frame.mouseDisabled = nil
+        elseif frame.mouseMotionDisabled then
+          frame:SetMouseMotionEnabled(true)
+          frame.mouseMotionDisabled = nil
         end
         if frame.prevColor then
           frame:SetTextColor (unpack(frame.prevColor))
@@ -66,7 +72,7 @@ function GUI:Unlock()
   end
   for _, dropdown in ipairs(self.dropdowns) do
     if dropdown.locked then
-      LibDD:UIDropDownMenu_EnableDropDown(dropdown)
+      dropdown:EnableDropdown()
       dropdown.locked = nil
     end
   end
@@ -74,13 +80,23 @@ end
 
 function GUI:SetTooltip (widget, tip)
   if tip then
-    widget:SetScript ("OnEnter", function (self)
-      GameTooltip:SetOwner (self, "ANCHOR_LEFT")
-      GameTooltip:SetText (tip)
-      GameTooltip:Show ()
+    widget:SetScript ("OnEnter", function (tipFrame)
+      local tipText
+      if type(tip) == "function" then
+        tipText = tip()
+      else
+        tipText = tip
+      end
+      if tipText then
+        GameTooltip:SetOwner(tipFrame, "ANCHOR_LEFT")
+        GameTooltip:SetText(tipText)
+        GameTooltip:Show()
+      end
     end)
-    widget:SetScript ("OnLeave", function ()
-      GameTooltip:Hide ()
+    widget:SetScript ("OnLeave", function (tipFrame)
+      if GameTooltip:GetOwner() == tipFrame then
+        GameTooltip:Hide()
+      end
     end)
   else
     widget:SetScript ("OnEnter", nil)
@@ -186,6 +202,12 @@ function GUI:CreateDropdown (parent, values, options)
         end
       end
       LibDD:UIDropDownMenu_SetText (dropdown, "")
+    end
+    sel.EnableDropdown = function(dropdown)
+      LibDD:UIDropDownMenu_EnableDropDown (dropdown)
+    end
+    sel.DisableDropdown = function(dropdown)
+      LibDD:UIDropDownMenu_DisableDropDown (dropdown)
     end
     LibDD:UIDropDownMenu_JustifyText (sel, "LEFT")
     sel:SetHeight (50)
@@ -740,6 +762,49 @@ function GUI:CreateTable (rows, cols, firstRow, firstColumn, gridColor, parent)
   end
 
   return t
+end
+
+function GUI.CreateStaticPopup(name, text, options)
+  StaticPopupDialogs[name] = {
+    text = text,
+    button1 = ACCEPT,
+    button2 = CANCEL,
+    hasEditBox = true,
+    editBoxWidth = 350,
+    OnAccept = function (self)
+      options.func(self.editBox:GetText ())
+    end,
+    EditBoxOnEnterPressed = function (self)
+      local importStr = self:GetParent ().editBox:GetText ()
+      if importStr ~= "" then
+        options.func(importStr)
+        self:GetParent ():Hide ()
+      end
+    end,
+    EditBoxOnTextChanged = function (self, data)
+      if data ~= "" then
+        self:GetParent ().button1:Enable ()
+      else
+        self:GetParent ().button1:Disable ()
+      end
+    end,
+    EditBoxOnEscapePressed = function(self)
+      self:GetParent():Hide();
+    end,
+    OnShow = function (self)
+      LibDD:CloseDropDownMenus()
+      self.editBox:SetText ("")
+      self.button1:Disable ()
+      self.editBox:SetFocus ()
+    end,
+    OnHide = function (self)
+      ChatEdit_FocusActiveWindow()
+      self.editBox:SetText ("")
+    end,
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true
+  }
 end
 
 addonTable.GUI = GUI

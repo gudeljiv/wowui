@@ -993,6 +993,9 @@ L["overlayShowAshenvaleDesc"] = "Show overlay Ashenvale timer?";
 L["overlayShowStranglethornTitle"] = "Overlay Stranglethorn";
 L["overlayShowStranglethornDesc"] = "Show overlay stranglethorn timer?";
 
+L["overlayShowBlackrockTitle"] = "Overlay Blackrock";
+L["overlayShowBlackrockDesc"] = "Show overlay stranglethornblackrock timer?";
+
 L["sodMiddleScreenWarningTitle"] = "Middle Screen Warning";
 L["sodMiddleScreenWarningDesc"] = "Show a 15/30 mins warning in the middle of the screen for SoD events like STV etc.";
 
@@ -1038,3 +1041,8 @@ L["middleOnlyInCityDesc"] = "Only show middle of the screen timer and buff drop 
 
 L["flashOnlyInCityTitle"] = "Only In City";
 L["flashOnlyInCityDesc"] = "Only flash while minimized when you are in the main city where the buffs drop (Stranglethorn Vale included for Zandalar buff).";
+
+L["blueShamansTitle"] = "Blue Shamans";
+L["blueShamansDesc"] = "Show shamans as blue on this addon in classic.";
+
+L["Battle Shout"] = "Battle Shout";

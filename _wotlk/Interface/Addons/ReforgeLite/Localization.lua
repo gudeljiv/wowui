@@ -30,7 +30,6 @@ L_enUS["Open window when reforging"] = "Open window when reforging"
 L_enUS["Other/No flask"] = "Other/No flask"
 L_enUS["Other/No food"] = "Other/No food"
 L_enUS["Presets"] = "Presets"
-L_enUS["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"
 L_enUS["Reforging window must be open"] = "Reforging window must be open"
 L_enUS["Remove cap"] = "Remove cap"
 L_enUS["Result"] = "Result"
@@ -74,7 +73,6 @@ if gameLocale == "frFR" then
   L["Other/No flask"] = "Autre/Pas de flacon"
   L["Other/No food"] = "Autre/Pas de nourriture"
   L["Presets"] = "Pré-établis"
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite n'a pas réussi à calculer votre retouche optimale. Essayez d'augmenter la vitesse en déplaçant le curseur de vitesse.\\nMessage d'erreur : %s"
   L["Reforging window must be open"] = "La fenêtre de retouche doit être ouverte"
   L["Remove cap"] = "Enlever ce cap"
   L["Result"] = "Résultat"
@@ -87,7 +85,7 @@ if gameLocale == "frFR" then
   L["Tanking model"] = "Modèle de tanking"
   L["Weight after cap"] = "Valeur après cap"
   L["Exactly"] = "Exactement"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "Il s'agit d'une solution de contournement en matière de performances. Glisser vers la droite réduira le nombre de calculs effectués et la précision du résultat."
+  L["Slide to the left if the calculation slows your game too much."] = "Glissez vers la gauche si le calcul ralentit trop votre jeu."
 
 elseif gameLocale == "deDE" then -- German
   L["Active window color"] = "Aktive Fensterfarbe"
@@ -117,7 +115,6 @@ elseif gameLocale == "deDE" then -- German
 --   L["Other/No flask"] = ""
 --   L["Other/No food"] = ""
 --   L["Presets"] = ""
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite konnte dein optimales Umschmieden nicht berechnen. Versuche es erneut nachdem du den Geschwindigkeitswert mit dem Regler erhöht hast." -- Needs review
   L["Reforging window must be open"] = "Umschmieden Fenster muss geöffnet sein"
   L["Remove cap"] = "Entferne Cap"
   L["Result"] = "Resultat"
@@ -130,7 +127,7 @@ elseif gameLocale == "deDE" then -- German
 --   L["Tanking model"] = ""
   L["Weight after cap"] = "Gewichtung über Cap"
   L["Item Import Mismatch"] = "%s stimmt nicht mit Ihrem aktuell ausgerüsteten %s überein. ReforgeLite unterstützt nur ausgerüstete Gegenstände."
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "Dies ist ein Workaround, um die Leistung zu verbessern. Durch Verschieben nach rechts wird die Anzahl der durchgeführten Berechnungen und die Genauigkeit des Ergebnisses reduziert."
+  L["Slide to the left if the calculation slows your game too much."] = "Schieben Sie es nach links, wenn die Berechnung Ihr Spiel zu sehr verlangsamt."
 
 elseif gameLocale == "koKR" then
   L["StatFormat"] = "^%s %+(%d+)$"
@@ -160,7 +157,6 @@ elseif gameLocale == "koKR" then
 --   L["Other/No flask"] = ""
 --   L["Other/No food"] = ""
   L["Presets"] = "프리셋"
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite가 최적 재연마 결과를 계산에 실패했습니다. 속도 막대를 움직여 속도를 높여보세요.\\n오류 메시지: %s"
   L["Reforging window must be open"] = "재연마 창이 열려 있어야 합니다"
   L["Remove cap"] = "조건 삭제"
   L["Result"] = "결과"
@@ -175,7 +171,7 @@ elseif gameLocale == "koKR" then
   L["Item Import Mismatch"] = "%s은(는) 현재 장착된 %s와 일치하지 않습니다. ReforgeLite는 장착된 아이템만 지원합니다."
   L["EquipPreString"] = ITEM_SPELL_TRIGGER_ONEQUIP .. " "
   L["Exactly"] = "정확히"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "이는 성능 해결 방법입니다. 오른쪽으로 밀면 수행되는 계산 횟수와 결과의 정확도가 감소합니다."
+  L["Slide to the left if the calculation slows your game too much."] = "계산으로 인해 게임 속도가 너무 느려지면 왼쪽으로 밉니다."
 
 elseif gameLocale == "ruRU" then
   L["Active window color"] = "Цвет активного окна"
@@ -205,7 +201,6 @@ elseif gameLocale == "ruRU" then
   L["Other/No flask"] = "Другое/нет настоя"
   L["Other/No food"] = "Другое/нет еды"
   L["Presets"] = "Шаблоны"
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite не смог посчитать оптимальную перековку. Попробуйте увеличить скорость.\\nОшибка: %s"
   L["Reforging window must be open"] = "Необходимо открыть окно перековки"
   L["Remove cap"] = "Удалить пороговое значение"
   L["Result"] = "Результат"
@@ -219,7 +214,7 @@ elseif gameLocale == "ruRU" then
   L["Weight after cap"] = "Вес после порога"
   L["Item Import Mismatch"] = "%s не соответствует вашему текущему экипированному %s. ReforgeLite поддерживает только экипированные предметы."
   L["Exactly"] = "Точно"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "Это обходной путь производительности. Скольжение вправо уменьшит количество выполняемых вычислений и точность результата."
+  L["Slide to the left if the calculation slows your game too much."] = "Сдвиньте влево, если расчет слишком сильно замедляет вашу игру."
 
 elseif gameLocale == "zhCN" then
   L["Active window color"] = "激活窗口的颜色"
@@ -249,7 +244,6 @@ elseif gameLocale == "zhCN" then
   L["Other/No flask"] = "其他/无合剂"
   L["Other/No food"] = "其他/无食物"
   L["Presets"] = "预设"
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite 无法计算你的最优重铸方案，请尝试调整速度滑块，提高处理速度。\\n错误信息: %s"
   L["Reforging window must be open"] = "必须打开重铸窗口"
   L["Remove cap"] = "移除上限"
   L["Result"] = "成果"
@@ -263,7 +257,7 @@ elseif gameLocale == "zhCN" then
   L["Weight after cap"] = "超过上限后权重"
   L["Item Import Mismatch"] = "%s 与您当前装备的 %s 不匹配。ReforgeLite 仅支持装备物品。"
   L["Exactly"] = "确切地"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "这是一种性能解决方法。向右滑动将减少执行的计算次数和结果的准确性。"
+  L["Slide to the left if the calculation slows your game too much."] = "如果计算导致你的游戏速度太慢，请向左滑动。"
 
 elseif gameLocale == "esES" or gameLocale == "esMX" then
   L["Active window color"] = "Color de ventana activa"
@@ -292,7 +286,6 @@ elseif gameLocale == "esES" or gameLocale == "esMX" then
 --   L["Other/No flask"] = ""
 --   L["Other/No food"] = ""
   L["Presets"] = "Ajustes pre-establecidos"
---   L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = ""
   L["Reforging window must be open"] = "Ventana de reforje tiene que estar abierta"
   L["Remove cap"] = "Quitar cap"
   L["Result"] = "Resultado"
@@ -306,7 +299,7 @@ elseif gameLocale == "esES" or gameLocale == "esMX" then
   L["Weight after cap"] = "Peso despues del cap"
   L["Item Import Mismatch"] = "%s no coincide con tu %s equipado actualmente. ReforgeLite solo admite elementos equipados."
   L["Exactly"] = "Exactamente"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "Esta es una solución alternativa para el rendimiento. Deslizarse hacia la derecha reducirá la cantidad de cálculos realizados y la precisión del resultado."
+  L["Slide to the left if the calculation slows your game too much."] = "Deslízate hacia la izquierda si el cálculo ralentiza demasiado tu juego."
 
 elseif gameLocale == "zhTW" then
   L["Active window color"] = "當前視窗的顏色"
@@ -335,7 +328,6 @@ elseif gameLocale == "zhTW" then
   L["Other/No flask"] = "其他/無精鍊"
   L["Other/No food"] = "其他/無食物"
   L["Presets"] = "預設"
-  L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\\nError message: %s"] = "ReforgeLite 計算失敗，未能取得最佳重鑄方案。請嘗試更改速度值來提高處理速度。\\n錯誤訊息：%s"
   L["Reforging window must be open"] = "重鑄視窗必須開啟"
   L["Remove cap"] = "移除上限"
   L["Result"] = "結果"
@@ -349,7 +341,9 @@ elseif gameLocale == "zhTW" then
   L["Weight after cap"] = "超過上限後比重"
   L["Item Import Mismatch"] = "%s 与您当前装备的 %s 不匹配。ReforgeLite 仅支持装备物品。"
   L["Exactly"] = "確切地"
-  L["This is a performance workaround. Sliding to the right will reduce the number of calculations performed and the accuracy of the result."] = "這是一種效能解決方法。向右滑動將減少執行的計算次數和結果的準確性。"
+  L["Slide to the left if the calculation slows your game too much."] = "如果計算使遊戲速度減慢太多，請向左滑動。"
+  L["EquipPreString"] = ITEM_SPELL_TRIGGER_ONEQUIP .. " "
+  L["StatFormat"] = "^+(%d+)%s$"
 end
 
 setmetatable (L_enUS, {__index = function (self, key)

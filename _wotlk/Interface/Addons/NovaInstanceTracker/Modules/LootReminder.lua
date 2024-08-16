@@ -3,264 +3,9 @@
 ------------------------
 
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
-
-function NIT:argentDawnTrinketReminder()
-	if (not NIT.db.global.argentDawnTrinketReminder) then
-		return;
-	end
-	local _, _, _, _, _, _, _, instanceID = GetInstanceInfo();
-	if (instanceID == 289 or instanceID == 329) then
-		local factionName, _, standing = GetFactionInfoByID(529);
-		if (standing and standing < 8 and standing ~= 0) then
-			local trinkets = {
-				[1] = {
-					itemID = 13209,
-					name = "|cFF0070DD[Seal of the Dawn]|r",
-				},
-				[2] = {
-					itemID = 19812,
-					name = "|cFF0070DD[Rune of the Dawn]|c",
-				},
-				[3] = {
-					itemID = 12846,
-					name = "|cFFFFFFFF[Argent Dawn Commission]|r",
-				},
-			};
-			local isEquipped;
-			for k, v in ipairs(trinkets) do
-				if (C_Item.IsEquippedItem(v.itemID)) then
-					isEquipped = true;
-				end
-			end
-			if (not isEquipped) then
-				for k, v in ipairs(trinkets) do
-					local trinket = GetItemCount(v.itemID);
-					if (trinket and trinket > 0) then
-						local _, itemLink = C_Item.GetItemInfo(v.itemID);
-						local itemString;
-						if (itemLink) then
-							itemString = itemLink;
-						else
-							itemString = v.name;
-						end
-						NIT:print("|cFF00FF00" .. L["Reminder"] .. ":|r " .. string.format(L["missingArgentDawnTrinket"], factionName, itemString));
-						return;
-					end
-				end
-			end
-		end
-	end
-end
-
-if (not NIT.isSOD) then
-	return;
-end
-
 local lootReminderFrame, lootReminderListFrame;
 local lastLootNpcID, lastBossNpcID, lastBossTime;
 local tinsert = tinsert;
-
-local dungeons = {
-	[289] = "Scholomance",
-	[329] = "Stratholme",
-	[429] = "Dire Maul",
-	[230] = "Blackrock Depths",
-	[229] = "Blackrock Spire",
-	[2784] = "Demonfall Canyon",
-};
-
---Some bosses are missing encounter_end event in classic we need a db of all the bosses.
---Tarnished Undermine Real bosses.
---Order field is the most comon order these would be killed in for display purposes.
-local turBosses = {
-	--Stratholme (1-9 live side, 10+ undead side).
-	[-100] = {header = true, title = "Live Side", instanceID = 329, order = 0},
-	[11058] = {name = "Ezra Grimm", instanceID = 329, order = 1},
-	[10516] = {name = "The Unforgiven", instanceID = 329, order = 2},
-	[11143] = {name = "Postmaster Malown", instanceID = 329, order = 3},
-	[10808] = {name = "Timmy the Cruel", instanceID = 329, order = 4},
-	[11032] = {name = "Malor the Zealous", instanceID = 329, order = 5},
-	[10997] = {name = "Cannon Master Willey", instanceID = 329, order = 6},
-	[10811] = {name = "Archivist Galford", instanceID = 329, order = 7},
-	[10813] = {name = "Balnazzar", instanceID = 329, order = 8},
-	[-101] = {header = true, title = "Undead Side", instanceID = 329, order = 10},
-	[10437] = {name = "Nerub'enkan", instanceID = 329, order = 14},
-	[10436] = {name = "Baroness Anastari", instanceID = 329, order = 12},
-	[10438] = {name = "Maleki the Pallid", instanceID = 329, order = 15},
-	[10435] = {name = "Magistrate Barthilas", instanceID = 329, order = 11},
-	--[11121] = {name = "Black Guard Swordsmith", instanceID = 329, order = 13}, --Doesn't drop.
-	[10439] = {name = "Ramstein the Gorger", instanceID = 329, order = 16},
-	[10440] = {name = "Baron Rivendare", instanceID = 329, order = 17},
-	--[11120] = {name = "Crimson Hammersmith", instanceID = 329, order = 99}, --Needs testing (spawnable mob unlikely to drop).
-	--[10812] = {name = "Grand Crusader Dathrohan", instanceID = 329, order = 99}, --Becomes Balnazzar halfway through the fight.
-	--[10558] = {name = "Hearthsinger Forresten", instanceID = 329, order = 99}, --Needs testing.
-	--[10393] = {name = "Skul", instanceID = 329, order = 99}, --Needs testing (rare mob so unlikely to drop).
-	--[10809] = {name = "Stonespine", instanceID = 329, order = 99}, --Needs testing (rare mob so unlikely to drop).
-	
-	--Scholomance.
-	[10506] = {name = "Kirtonos the Herald", instanceID = 289, order = 1},
-	[10503] = {name = "Jandice Barov", instanceID = 289, order = 2},
-	[11622] = {name = "Rattlegore", instanceID = 289, order = 3},
-	[10433] = {name = "Marduk Blackpool", instanceID = 289, order = 4},
-	[10432] = {name = "Vectus", instanceID = 289, order = 5},
-	[10508] = {name = "Ras Frostwhisper", instanceID = 289, order = 6},
-	[10505] = {name = "Instructor Malicia", instanceID = 289, order = 7},
-	[11261] = {name = "Doctor Theolen Krastinov", instanceID = 289, order = 8},
-	[10901] = {name = "Lorekeeper Polkelt", instanceID = 289, order = 9},
-	[10507] = {name = "The Ravenian", instanceID = 289, order = 10},
-	[10504] = {name = "Lord Alexei Barov", instanceID = 289, order = 11},
-	[10502] = {name = "Lady Illucia Barov", instanceID = 289, order = 12},
-	[1853] = {name = "Darkmaster Gandling", instanceID = 289, order = 13},
-	
-	--Blackrock Depths. (Which BRD bosses can drop them? Not all can I think, this list is which on wowhead has seen a drop but probably not complete.
-	[9016] = {name = "Bael'Gar", instanceID = 230, order = 1},
-	[9017] = {name = "Lord Incendius", instanceID = 230, order = 2},
-	[9056] = {name = "Fineous Darkvire", instanceID = 230, order = 3},
-	[9033] = {name = "General Angerforge", instanceID = 230, order = 4},
-	[8983] = {name = "Golem Lord Argelmach", instanceID = 230, order = 5},
-	[9537] = {name = "Hurley Blackbreath", instanceID = 230, order = 6},
-	[9502] = {name = "Phalanx", instanceID = 230, order = 7},
-	[9156] = {name = "Ambassador Flamelash", instanceID = 230, order = 8},
-	[9938] = {name = "Magmus", instanceID = 230, order = 9},
-	[9019] = {name = "Emperor Dagran Thaurissan", instanceID = 230, order = 10},
-	
-	--Dire Maul (1-9 east, 10-19 west, 20+ north).
-	[-102] = {header = true, title = "East", instanceID = 429, order = 0},
-	[14354] = {name = "Pusillin", instanceID = 429, order = 1},
-	[11490] = {name = "Zevrim Thornhoof", instanceID = 429, order = 2},
-	[13280] = {name = "Hydrospawn", instanceID = 429, order = 3},
-	[14327] = {name = "Lethtendris", instanceID = 429, order = 4},
-	[11492] = {name = "Alzzin the Wildshaper", instanceID = 429, order = 5},
-	[-103] = {header = true, title = "West", instanceID = 429, order = 10},
-	[11489] = {name = "Tendris Warpwood", instanceID = 429, order = 11},
-	[11488] = {name = "Illyanna Ravenoak", instanceID = 429, order = 12},
-	[11487] = {name = "Magister Kalendris", instanceID = 429, order = 13},
-	--[11467] = {name = "Tsu'zee", instanceID = 429, order = 14}, --Needs testing (rare mob so unlikely to drop).
-	[11496] = {name = "Immol'thar", instanceID = 429, order = 15},
-	[11486] = {name = "Prince Tortheldrin", instanceID = 429, order = 16},
-	[-104] = {header = true, title = "North", instanceID = 429, order = 20},
-	--[14326] = {name = "Guard Mol'dar", instanceID = 429, order = 21}, --Some north bosses don't drop, probably for tribute run reasons.
-	--[14322] = {name = "Stomper Kreeg", instanceID = 429, order = 22}, --Some north bosses don't drop, probably for tribute run reasons.
-	--[14321] = {name = "Guard Fengus", instanceID = 429, order = 23}, --Some north bosses don't drop, probably for tribute run reasons.
-	--[14323] = {name = "Guard Slip'kik", instanceID = 429, order = 24}, --Some north bosses don't drop, probably for tribute run reasons.
-	--[14325] = {name = "Captain Kromcrush", instanceID = 429, order = 25}, --Some north bosses don't drop, probably for tribute run reasons.
-	--[14324] = {name = "Cho'Rush the Observer", instanceID = 429, order = 26}, --The add during the last boss fight, no drop?
-	[11501] = {name = "King Gordok", instanceID = 429, order = 27},
-	
-	--Demonfall Canyon.
-	[226923] = {name = "Grimroot", instanceID = 2784, order = 1},
-	[228022] = {name = "The Destructor's Wraith", instanceID = 2784, order = 2},
-	[226922] = {name = "Zilbagob", instanceID = 2784, order = 3},
-	[227140] = {name = "Pyranis", instanceID = 2784, order = 4},
-	[227019] = {name = "Diathorus the Seeker", instanceID = 2784, order = 5},
-	[227028] = {name = "Hellscream's Phantom", instanceID = 2784, order = 6},
-	
-	--Blackrock Spire (1-9 lower, 10+ upper).
-	[-105] = {header = true, title = "Upper", instanceID = 229, order = 0},
-	[9816] = {name = "Pyroguard Emberseer", instanceID = 229, order = 1},
-	--[10264] = {name = "Solakar Flamewreath", instanceID = 229, order = 2}, -- No drop.
-	--[10899] = {name = "Goraluk Anvilcrack", instanceID = 229, order = 3}, --No drop.
-	--[10339] = {name = "Gyth <Rend Blackhand's Mount>", instanceID = 229, order = 4}, --No drop.
-	[10429] = {name = "Warchief Rend Blackhand", instanceID = 229, order = 5},
-	[10430] = {name = "The Beast", instanceID = 229, order = 6},
-	[10363] = {name = "General Drakkisath", instanceID = 229, order = 7},
-	--[10509] = {name = "Jed Runewatcher", instanceID = 229, order = 99}, --No drop.
-	[-106] = {header = true, title = "Lower", instanceID = 229, order = 10},
-	[9196] = {name = "Highlord Omokk", instanceID = 229, order = 11},
-	[9236] = {name = "Shadow Hunter Vosh'gajin", instanceID = 229, order = 12},
-	[9237] = {name = "War Master Voone", instanceID = 229, order = 13},
-	[10596] = {name = "Mother Smolderweb", instanceID = 229, order = 14},
-	[10584] = {name = "Urok Doomhowl", instanceID = 229, order = 15},
-	--[9736] = {name = "Quartermaster Zigris", instanceID = 229, order = 16}, --Needs testing.
-	[10220] = {name = "Halycon", instanceID = 229, order = 17},
-	[10268] = {name = "Gizrul the Slavener", instanceID = 229, order = 18},
-	[9568] = {name = "Overlord Wyrmthalak", instanceID = 229, order = 19},
-};
-
-local function getBossCount(instanceID)
-	local count, headerCount = 0, 0;
-	for k, v in pairs(turBosses) do
-		if (v.instanceID == instanceID) then
-			if (v.header) then
-				headerCount = headerCount + 1;
-			else
-				count = count + 1;
-			end
-		end
-	end
-	return count, headerCount;
-end
-
-local function getLootedStatus(npcID, itemID)
-	local data = NIT.data.myChars[UnitName("player")].bossKills[npcID];
-	if (data and data.looted and data.looted[itemID] and data.resetTime and data.resetTime > GetServerTime()) then
-		return true;
-	elseif (data and data.resetTime and data.resetTime > GetServerTime()) then
-		--Killed but not looted.
-		return false, true;
-	end
-end
-
-function NIT:getLootReminderMinimapString()
-	if (NIT.currentInstanceID and dungeons[NIT.currentInstanceID] and UnitLevel("player") > 44) then
-		local text = "";
-		local sorted = {};
-		local count = 0;
-		local lootedCount = 0;
-		for k, v in pairs(turBosses) do
-			if (v.instanceID == NIT.currentInstanceID) then
-				local t = {
-					npcID = k,
-					name = v.name,
-					order = v.order,
-					instanceID = v.instanceID,
-					header = v.header,
-					title = v.title,
-				};
-				tinsert(sorted, t);
-			end
-		end
-		table.sort(sorted, function(a, b) return a.order < b.order end);
-		for k, v in pairs(sorted) do
-			count = count + 1;
-			if (v.header) then
-				local headerString = "|cFF9CD6DE[" .. v.title  .. "]|r";
-				if (count == 1) then
-					text = text .. headerString;
-				else
-					text = text .. "\n" .. headerString;
-				end
-			else
-				local looted, isKilledButNotLooted = getLootedStatus(v.npcID, 226404);
-				local lootedString;
-				if (isKilledButNotLooted) then
-					lootedString = "|cFFFF6900(" .. L["Killed But Not Looted"] .. ")|r";
-				elseif (looted) then
-					lootedString = "|cFF00FF00(" .. L["Looted"] .. ")|r";
-					lootedCount = lootedCount + 1;
-				else
-					lootedString = "|cFFFF0000(" .. L["Not Looted"] .. ")|r";
-				end
-				if (count == 1) then
-					text = text .. "|cFFFFAE42".. v.name .. "|r  " .. lootedString;
-				else
-					text = text .. "\n|cFFFFAE42" .. v.name .. "|r  " .. lootedString;
-				end
-			end
-		end
-		local bossCount, headerCount = getBossCount(NIT.currentInstanceID);
-		local lootedString
-		if (lootedCount >= bossCount) then
-			lootedString = "|cFF00FF00" .. lootedCount .. "/" .. bossCount .. "|r";
-		else
-			lootedString = "|cFF9CD6DE " .. lootedCount .. "/" .. bossCount .. "|r";
-		end
-		local header = "|cFFFFFF00" .. L["Tarnished Undermine Real"] .. "|r - " .. lootedString .. "\n";
-		if (text ~= "") then
-			return header .. text;
-		end
-	end
-end
 
 local msgTimer, fadeTimer;
 local function hideMiddleMsg()
@@ -276,7 +21,7 @@ local function hideMiddleMsg()
 	end
 end
 
-local function addMsg(msg)
+local function addMsg(msg, time)
 	if (not NIT.db.global.lootReminderReal) then
 		return;
 	end
@@ -289,150 +34,11 @@ local function addMsg(msg)
 	end
 	lootReminderFrame.fs:SetText("|cFF00FF00[NIT]|r |cFFFFFF00" .. msg);
 	UIFrameFadeIn(lootReminderFrame, 0, 0, 1)
-	msgTimer = C_Timer.NewTimer(10, function()
+	msgTimer = C_Timer.NewTimer(time, function()
 		hideMiddleMsg();
 	end)
 	lootReminderFrame.StartBounce();
 end
-
-local function chatMsgLoot(...)
-	local msg = ...;
-    local amount;
-    local name = UnitName("Player");
-    local otherPlayer;
-    --Self loot multiple item "You receive loot: [Item]x2"
-	local itemLink, amount = strmatch(msg, string.gsub(string.gsub(LOOT_ITEM_SELF_MULTIPLE, "%%s", "(.+)"), "%%d", "(%%d+)"));
-	if (not itemLink) then
- 		--Self receive single loot "You receive loot: [Item]"
-    	itemLink = msg:match(LOOT_ITEM_SELF:gsub("%%s", "(.+)"));
-		if (not itemLink) then
- 			--Self receive single item "You receive item: [Item]"
-			itemLink = msg:match(LOOT_ITEM_PUSHED_SELF:gsub("%%s", "(.+)"));
-		end
-    end
-    if (itemLink) then
-    	if (NIT.inInstance) then
-	    	local itemID = string.match(itemLink, "item:(%d+)");
-	    	if (itemID) then
-	    		itemID = tonumber(itemID);
-	    		if (itemID == 226404) then
-	    			hideMiddleMsg();
-	    			if (lastLootNpcID) then
-	    				NIT:debug("Using lastLootNpcID:", lastBossNpcID);
-			    		local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID]) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID] = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime or
-								(NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime < GetServerTime() - 300)) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;
-							NIT:debug("Missing boss kill reset time", lastLootNpcID); --Possiblly if a boss not on the list drops a token?
-						end
-						NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted[itemID] = true;
-					elseif (lastBossNpcID) then
-						NIT:debug("Using backup lastBossNpcID:", lastBossNpcID);
-						local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID]) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID] = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime or
-								(NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime < GetServerTime() - 300)) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime = resetTime;
-							NIT:debug("Missing boss kill reset time", lastBossNpcID); --Possiblly if a boss not on the list drops a token?
-						end
-						NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted[itemID] = true;
-					else
-						NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
-					end
-					lastLootNpcID = nil;
-	    		end
-	    	end
-    	end
-    end
-end
-
-local function lootOpened()
-	--lastLootNpcID = nil; --Delete old ID on looting real instead.
-	local sources = {GetLootSourceInfo(1)}
-	--Always only 1 source in classic.
-	local guid = sources[1];
-	--Check loot sources first.
-	if (guid) then
-		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
-		if (npcID) then
-			npcID = tonumber(npcID);
-			if (npcID and turBosses[npcID]) then
-				lastLootNpcID = npcID;
-			end
-		end
-		return;
-	end
-	local guid = UnitGUID("target");
-	--Check target as backup.
-	if (guid) then
-		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
-		if (npcID) then
-			npcID = tonumber(npcID);
-			if (npcID and turBosses[npcID]) then
-				lastLootNpcID = npcID;
-			end
-		end
-	end
-end
-
---local function lootClosed()
-	--It was unreliable removing the npcID when loot closed, it can close before the items are looted to your bags with auto loot.
-	--And using a delay timer would be unreliable with ping I think.
-	--Just clear the last npcID when loot is opened for now and see how reliable it is.
-	--lastLootNpcID = nil;
---end
-
-local function combatLogEventUnfiltered(...)
-	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
-			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
-	if (subEvent == "UNIT_DIED" and NIT.inInstance and destGUID and string.match(destGUID, "Creature")) then
-		--If max level player then count mobs via death instead of xp.
-		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
-		npcID = tonumber(npcID);
-		local _, instanceType, difficultyID, _, _, _, _, instanceID = GetInstanceInfo();
-		if (turBosses[npcID]) then
-			if (dungeons[instanceID] and (not NIT.data.myChars[UnitName("player")].bossKills[npcID]
-					or NIT.data.myChars[UnitName("player")].bossKills[npcID].resetTime < GetServerTime())) then
-				addMsg(L["Loot the Tarnished Undermine Real"] .. "!");
-				local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-				if (not NIT.data.myChars[UnitName("player")].bossKills[npcID]) then
-					NIT.data.myChars[UnitName("player")].bossKills[npcID] = {};
-				end
-				NIT.data.myChars[UnitName("player")].bossKills[npcID].resetTime = resetTime;
-				lastBossNpcID = npcID;
-				lastBossTime = GetServerTime();
-			end
-		end
-	end
-end
-
-local f = CreateFrame("Frame");
-f:RegisterEvent("CHAT_MSG_LOOT");
-f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-f:RegisterEvent("LOOT_OPENED");
---f:RegisterEvent("LOOT_CLOSED");
-f:SetScript('OnEvent', function(self, event, ...)
-	if (event == "CHAT_MSG_LOOT") then
-		chatMsgLoot(...);
-	elseif (event == "COMBAT_LOG_EVENT_UNFILTERED") then
-		combatLogEventUnfiltered(...);
-	elseif (event == "LOOT_OPENED") then
-		lootOpened();
-	--elseif (event == "LOOT_CLOSED") then
-	--	lootClosed();
-	end
-end)
 
 function NIT:updateLootReminderFrame(runTest)
 	lootReminderFrame:SetPoint("CENTER", UIParent, NIT.db.global.lootReminderX, NIT.db.global.lootReminderY);
@@ -440,7 +46,7 @@ function NIT:updateLootReminderFrame(runTest)
 	lootReminderFrame.defaultX = NIT.db.global.lootReminderX;
     lootReminderFrame.defaultY = NIT.db.global.lootReminderY;
 	if (runTest) then
-		addMsg("Loot reminder test.");
+		addMsg("Loot reminder test.", 10);
 	end
 end
 
@@ -742,3 +348,400 @@ function NIT:loadLootReminderListFrame()
 	--newVersionFrame:SetSize(600, 50 + newVersionFrame.scrollChild.fs:GetStringHeight() + newVersionFrame.scrollChild.fs2:GetStringHeight() + newVersionFrame.scrollChild.fs3:GetStringHeight());
 	lootReminderListFrame:Show();
 end
+
+function NIT:argentDawnTrinketReminder()
+	if (not NIT.db.global.argentDawnTrinketReminder) then
+		return;
+	end
+	if (NIT.expansionNum > 4) then
+		return;
+	end
+	local _, _, _, _, _, _, _, instanceID = GetInstanceInfo();
+	if (instanceID == 289 or instanceID == 329) then
+		local factionName, _, standing = GetFactionInfoByID(529);
+		if (standing and standing < 8 and standing ~= 0) then
+			local trinkets = {
+				[1] = {
+					itemID = 13209,
+					name = "|cFF0070DD[Seal of the Dawn]|r",
+				},
+				[2] = {
+					itemID = 19812,
+					name = "|cFF0070DD[Rune of the Dawn]|c",
+				},
+				[3] = {
+					itemID = 12846,
+					name = "|cFFFFFFFF[Argent Dawn Commission]|r",
+				},
+			};
+			local isEquipped;
+			for k, v in ipairs(trinkets) do
+				if (C_Item.IsEquippedItem(v.itemID)) then
+					isEquipped = true;
+				end
+			end
+			if (not isEquipped) then
+				for k, v in ipairs(trinkets) do
+					local trinket = GetItemCount(v.itemID);
+					if (trinket and trinket > 0) then
+						local _, itemLink = C_Item.GetItemInfo(v.itemID);
+						local itemString;
+						if (itemLink) then
+							itemString = itemLink;
+						else
+							itemString = v.name;
+						end
+						NIT:print("|cFF00FF00" .. L["Reminder"] .. ":|r " .. string.format(L["missingArgentDawnTrinket"], factionName, itemString));
+						addMsg("|cFF00FF00" .. L["Reminder"] .. ":|r " .. string.format(L["missingArgentDawnTrinket"], factionName, itemString), 4);
+						return;
+					end
+				end
+			end
+		end
+	end
+end
+
+if (not NIT.isSOD) then
+	return;
+end
+
+local dungeons = {
+	[289] = "Scholomance",
+	[329] = "Stratholme",
+	[429] = "Dire Maul",
+	[230] = "Blackrock Depths",
+	[229] = "Blackrock Spire",
+	[2784] = "Demonfall Canyon",
+};
+
+--Some bosses are missing encounter_end event in classic we need a db of all the bosses.
+--Tarnished Undermine Real bosses.
+--Order field is the most comon order these would be killed in for display purposes.
+local turBosses = {
+	--Stratholme (1-9 live side, 10+ undead side).
+	[-100] = {header = true, title = "Live Side", instanceID = 329, order = 0},
+	[11058] = {name = "Ezra Grimm", instanceID = 329, order = 1},
+	[10516] = {name = "The Unforgiven", instanceID = 329, order = 2},
+	[11143] = {name = "Postmaster Malown", instanceID = 329, order = 3},
+	[10808] = {name = "Timmy the Cruel", instanceID = 329, order = 4},
+	[11032] = {name = "Malor the Zealous", instanceID = 329, order = 5},
+	[10997] = {name = "Cannon Master Willey", instanceID = 329, order = 6},
+	[10811] = {name = "Archivist Galford", instanceID = 329, order = 7},
+	[10813] = {name = "Balnazzar", instanceID = 329, order = 8},
+	[-101] = {header = true, title = "Undead Side", instanceID = 329, order = 10},
+	[10437] = {name = "Nerub'enkan", instanceID = 329, order = 14},
+	[10436] = {name = "Baroness Anastari", instanceID = 329, order = 12},
+	[10438] = {name = "Maleki the Pallid", instanceID = 329, order = 15},
+	[10435] = {name = "Magistrate Barthilas", instanceID = 329, order = 11},
+	--[11121] = {name = "Black Guard Swordsmith", instanceID = 329, order = 13}, --Doesn't drop.
+	[10439] = {name = "Ramstein the Gorger", instanceID = 329, order = 16},
+	[10440] = {name = "Baron Rivendare", instanceID = 329, order = 17},
+	--[11120] = {name = "Crimson Hammersmith", instanceID = 329, order = 99}, --Needs testing (spawnable mob unlikely to drop).
+	--[10812] = {name = "Grand Crusader Dathrohan", instanceID = 329, order = 99}, --Becomes Balnazzar halfway through the fight.
+	--[10558] = {name = "Hearthsinger Forresten", instanceID = 329, order = 99}, --Needs testing.
+	--[10393] = {name = "Skul", instanceID = 329, order = 99}, --Needs testing (rare mob so unlikely to drop).
+	--[10809] = {name = "Stonespine", instanceID = 329, order = 99}, --Needs testing (rare mob so unlikely to drop).
+	
+	--Scholomance.
+	[10506] = {name = "Kirtonos the Herald", instanceID = 289, order = 1},
+	[10503] = {name = "Jandice Barov", instanceID = 289, order = 2},
+	[11622] = {name = "Rattlegore", instanceID = 289, order = 3},
+	[10433] = {name = "Marduk Blackpool", instanceID = 289, order = 4},
+	[10432] = {name = "Vectus", instanceID = 289, order = 5},
+	[10508] = {name = "Ras Frostwhisper", instanceID = 289, order = 6},
+	[10505] = {name = "Instructor Malicia", instanceID = 289, order = 7},
+	[11261] = {name = "Doctor Theolen Krastinov", instanceID = 289, order = 8},
+	[10901] = {name = "Lorekeeper Polkelt", instanceID = 289, order = 9},
+	[10507] = {name = "The Ravenian", instanceID = 289, order = 10},
+	[10504] = {name = "Lord Alexei Barov", instanceID = 289, order = 11},
+	[10502] = {name = "Lady Illucia Barov", instanceID = 289, order = 12},
+	[1853] = {name = "Darkmaster Gandling", instanceID = 289, order = 13},
+	
+	--Blackrock Depths. (Which BRD bosses can drop them? Not all can I think, this list is which on wowhead has seen a drop but probably not complete.
+	[9016] = {name = "Bael'Gar", instanceID = 230, order = 1},
+	[9017] = {name = "Lord Incendius", instanceID = 230, order = 2},
+	[9056] = {name = "Fineous Darkvire", instanceID = 230, order = 3},
+	[9033] = {name = "General Angerforge", instanceID = 230, order = 4},
+	[8983] = {name = "Golem Lord Argelmach", instanceID = 230, order = 5},
+	[9537] = {name = "Hurley Blackbreath", instanceID = 230, order = 6},
+	[9502] = {name = "Phalanx", instanceID = 230, order = 7},
+	[9156] = {name = "Ambassador Flamelash", instanceID = 230, order = 8},
+	[9938] = {name = "Magmus", instanceID = 230, order = 9},
+	[9019] = {name = "Emperor Dagran Thaurissan", instanceID = 230, order = 10},
+	
+	--Dire Maul (1-9 east, 10-19 west, 20+ north).
+	[-102] = {header = true, title = "East", instanceID = 429, order = 0},
+	[14354] = {name = "Pusillin", instanceID = 429, order = 1},
+	[11490] = {name = "Zevrim Thornhoof", instanceID = 429, order = 2},
+	[13280] = {name = "Hydrospawn", instanceID = 429, order = 3},
+	[14327] = {name = "Lethtendris", instanceID = 429, order = 4},
+	[11492] = {name = "Alzzin the Wildshaper", instanceID = 429, order = 5},
+	[-103] = {header = true, title = "West", instanceID = 429, order = 10},
+	[11489] = {name = "Tendris Warpwood", instanceID = 429, order = 11},
+	[11488] = {name = "Illyanna Ravenoak", instanceID = 429, order = 12},
+	[11487] = {name = "Magister Kalendris", instanceID = 429, order = 13},
+	--[11467] = {name = "Tsu'zee", instanceID = 429, order = 14}, --Needs testing (rare mob so unlikely to drop).
+	[11496] = {name = "Immol'thar", instanceID = 429, order = 15},
+	[11486] = {name = "Prince Tortheldrin", instanceID = 429, order = 16},
+	[-104] = {header = true, title = "North", instanceID = 429, order = 20},
+	--[14326] = {name = "Guard Mol'dar", instanceID = 429, order = 21}, --Some north bosses don't drop, probably for tribute run reasons.
+	--[14322] = {name = "Stomper Kreeg", instanceID = 429, order = 22}, --Some north bosses don't drop, probably for tribute run reasons.
+	--[14321] = {name = "Guard Fengus", instanceID = 429, order = 23}, --Some north bosses don't drop, probably for tribute run reasons.
+	--[14323] = {name = "Guard Slip'kik", instanceID = 429, order = 24}, --Some north bosses don't drop, probably for tribute run reasons.
+	--[14325] = {name = "Captain Kromcrush", instanceID = 429, order = 25}, --Some north bosses don't drop, probably for tribute run reasons.
+	--[14324] = {name = "Cho'Rush the Observer", instanceID = 429, order = 26}, --The add during the last boss fight, no drop?
+	[11501] = {name = "King Gordok", instanceID = 429, order = 27},
+	
+	--Demonfall Canyon.
+	[226923] = {name = "Grimroot", instanceID = 2784, order = 1},
+	[228022] = {name = "The Destructor's Wraith", instanceID = 2784, order = 2},
+	[226922] = {name = "Zilbagob", instanceID = 2784, order = 3},
+	[227140] = {name = "Pyranis", instanceID = 2784, order = 4},
+	[227019] = {name = "Diathorus the Seeker", instanceID = 2784, order = 5},
+	[227028] = {name = "Hellscream's Phantom", instanceID = 2784, order = 6},
+	
+	--Blackrock Spire (1-9 lower, 10+ upper).
+	[-105] = {header = true, title = "Upper", instanceID = 229, order = 0},
+	[9816] = {name = "Pyroguard Emberseer", instanceID = 229, order = 1},
+	--[10264] = {name = "Solakar Flamewreath", instanceID = 229, order = 2}, -- No drop.
+	--[10899] = {name = "Goraluk Anvilcrack", instanceID = 229, order = 3}, --No drop.
+	--[10339] = {name = "Gyth <Rend Blackhand's Mount>", instanceID = 229, order = 4}, --No drop.
+	[10429] = {name = "Warchief Rend Blackhand", instanceID = 229, order = 5},
+	[10430] = {name = "The Beast", instanceID = 229, order = 6},
+	[10363] = {name = "General Drakkisath", instanceID = 229, order = 7},
+	--[10509] = {name = "Jed Runewatcher", instanceID = 229, order = 99}, --No drop.
+	[-106] = {header = true, title = "Lower", instanceID = 229, order = 10},
+	[9196] = {name = "Highlord Omokk", instanceID = 229, order = 11},
+	[9236] = {name = "Shadow Hunter Vosh'gajin", instanceID = 229, order = 12},
+	[9237] = {name = "War Master Voone", instanceID = 229, order = 13},
+	[10596] = {name = "Mother Smolderweb", instanceID = 229, order = 14},
+	[10584] = {name = "Urok Doomhowl", instanceID = 229, order = 15},
+	--[9736] = {name = "Quartermaster Zigris", instanceID = 229, order = 16}, --Needs testing.
+	[10220] = {name = "Halycon", instanceID = 229, order = 17},
+	[10268] = {name = "Gizrul the Slavener", instanceID = 229, order = 18},
+	[9568] = {name = "Overlord Wyrmthalak", instanceID = 229, order = 19},
+};
+
+local function getBossCount(instanceID)
+	local count, headerCount = 0, 0;
+	for k, v in pairs(turBosses) do
+		if (v.instanceID == instanceID) then
+			if (v.header) then
+				headerCount = headerCount + 1;
+			else
+				count = count + 1;
+			end
+		end
+	end
+	return count, headerCount;
+end
+
+local function getLootedStatus(npcID, itemID)
+	local data = NIT.data.myChars[UnitName("player")].bossKills[npcID];
+	if (data and data.looted and data.looted[itemID] and data.resetTime and data.resetTime > GetServerTime()) then
+		return true;
+	elseif (data and data.resetTime and data.resetTime > GetServerTime()) then
+		--Killed but not looted.
+		return false, true;
+	end
+end
+
+function NIT:getLootReminderMinimapString()
+	if (NIT.currentInstanceID and dungeons[NIT.currentInstanceID] and UnitLevel("player") > 44) then
+		local text = "";
+		local sorted = {};
+		local count = 0;
+		local lootedCount = 0;
+		for k, v in pairs(turBosses) do
+			if (v.instanceID == NIT.currentInstanceID) then
+				local t = {
+					npcID = k,
+					name = v.name,
+					order = v.order,
+					instanceID = v.instanceID,
+					header = v.header,
+					title = v.title,
+				};
+				tinsert(sorted, t);
+			end
+		end
+		table.sort(sorted, function(a, b) return a.order < b.order end);
+		for k, v in pairs(sorted) do
+			count = count + 1;
+			if (v.header) then
+				local headerString = "|cFF9CD6DE[" .. v.title  .. "]|r";
+				if (count == 1) then
+					text = text .. headerString;
+				else
+					text = text .. "\n" .. headerString;
+				end
+			else
+				local looted, isKilledButNotLooted = getLootedStatus(v.npcID, 226404);
+				local lootedString;
+				if (isKilledButNotLooted) then
+					lootedString = "|cFFFF6900(" .. L["Killed But Not Looted"] .. ")|r";
+				elseif (looted) then
+					lootedString = "|cFF00FF00(" .. L["Looted"] .. ")|r";
+					lootedCount = lootedCount + 1;
+				else
+					lootedString = "|cFFFF0000(" .. L["Not Looted"] .. ")|r";
+				end
+				if (count == 1) then
+					text = text .. "|cFFFFAE42".. v.name .. "|r  " .. lootedString;
+				else
+					text = text .. "\n|cFFFFAE42" .. v.name .. "|r  " .. lootedString;
+				end
+			end
+		end
+		local bossCount, headerCount = getBossCount(NIT.currentInstanceID);
+		local lootedString
+		if (lootedCount >= bossCount) then
+			lootedString = "|cFF00FF00" .. lootedCount .. "/" .. bossCount .. "|r";
+		else
+			lootedString = "|cFF9CD6DE " .. lootedCount .. "/" .. bossCount .. "|r";
+		end
+		local header = "|cFFFFFF00" .. L["Tarnished Undermine Real"] .. "|r - " .. lootedString .. "\n";
+		if (text ~= "") then
+			return header .. text;
+		end
+	end
+end
+
+local function chatMsgLoot(...)
+	local msg = ...;
+    local amount;
+    local name = UnitName("Player");
+    local otherPlayer;
+    --Self loot multiple item "You receive loot: [Item]x2"
+	local itemLink, amount = strmatch(msg, string.gsub(string.gsub(LOOT_ITEM_SELF_MULTIPLE, "%%s", "(.+)"), "%%d", "(%%d+)"));
+	if (not itemLink) then
+ 		--Self receive single loot "You receive loot: [Item]"
+    	itemLink = msg:match(LOOT_ITEM_SELF:gsub("%%s", "(.+)"));
+		if (not itemLink) then
+ 			--Self receive single item "You receive item: [Item]"
+			itemLink = msg:match(LOOT_ITEM_PUSHED_SELF:gsub("%%s", "(.+)"));
+		end
+    end
+    if (itemLink) then
+    	if (NIT.inInstance) then
+	    	local itemID = string.match(itemLink, "item:(%d+)");
+	    	if (itemID) then
+	    		itemID = tonumber(itemID);
+	    		if (itemID == 226404) then
+	    			hideMiddleMsg();
+	    			if (lastLootNpcID) then
+	    				NIT:debug("Using lastLootNpcID:", lastBossNpcID);
+			    		local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID]) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID] = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime or
+								(NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime < GetServerTime() - 300)) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;
+							NIT:debug("Missing boss kill reset time", lastLootNpcID); --Possiblly if a boss not on the list drops a token?
+						end
+						NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted[itemID] = true;
+					elseif (lastBossNpcID) then
+						NIT:debug("Using backup lastBossNpcID:", lastBossNpcID);
+						local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID]) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID] = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted = {};
+						end
+						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime or
+								(NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime < GetServerTime() - 300)) then
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime = resetTime;
+							NIT:debug("Missing boss kill reset time", lastBossNpcID); --Possiblly if a boss not on the list drops a token?
+						end
+						NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted[itemID] = true;
+					else
+						NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
+					end
+					lastLootNpcID = nil;
+	    		end
+	    	end
+    	end
+    end
+end
+
+local function lootOpened()
+	--lastLootNpcID = nil; --Delete old ID on looting real instead.
+	local sources = {GetLootSourceInfo(1)}
+	--Always only 1 source in classic.
+	local guid = sources[1];
+	--Check loot sources first.
+	if (guid) then
+		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
+		if (npcID) then
+			npcID = tonumber(npcID);
+			if (npcID and turBosses[npcID]) then
+				lastLootNpcID = npcID;
+			end
+		end
+		return;
+	end
+	local guid = UnitGUID("target");
+	--Check target as backup.
+	if (guid) then
+		local _, _, _, _, zoneID, npcID = strsplit("-", guid);
+		if (npcID) then
+			npcID = tonumber(npcID);
+			if (npcID and turBosses[npcID]) then
+				lastLootNpcID = npcID;
+			end
+		end
+	end
+end
+
+--local function lootClosed()
+	--It was unreliable removing the npcID when loot closed, it can close before the items are looted to your bags with auto loot.
+	--And using a delay timer would be unreliable with ping I think.
+	--Just clear the last npcID when loot is opened for now and see how reliable it is.
+	--lastLootNpcID = nil;
+--end
+
+local function combatLogEventUnfiltered(...)
+	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
+			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
+	if (subEvent == "UNIT_DIED" and NIT.inInstance and destGUID and string.match(destGUID, "Creature")) then
+		--If max level player then count mobs via death instead of xp.
+		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
+		npcID = tonumber(npcID);
+		local _, instanceType, difficultyID, _, _, _, _, instanceID = GetInstanceInfo();
+		if (turBosses[npcID]) then
+			if (dungeons[instanceID] and (not NIT.data.myChars[UnitName("player")].bossKills[npcID]
+					or NIT.data.myChars[UnitName("player")].bossKills[npcID].resetTime < GetServerTime())) then
+				addMsg(L["Loot the Tarnished Undermine Real"] .. "!", 10);
+				local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+				if (not NIT.data.myChars[UnitName("player")].bossKills[npcID]) then
+					NIT.data.myChars[UnitName("player")].bossKills[npcID] = {};
+				end
+				NIT.data.myChars[UnitName("player")].bossKills[npcID].resetTime = resetTime;
+				lastBossNpcID = npcID;
+				lastBossTime = GetServerTime();
+			end
+		end
+	end
+end
+
+local f = CreateFrame("Frame");
+f:RegisterEvent("CHAT_MSG_LOOT");
+f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+f:RegisterEvent("LOOT_OPENED");
+--f:RegisterEvent("LOOT_CLOSED");
+f:SetScript('OnEvent', function(self, event, ...)
+	if (event == "CHAT_MSG_LOOT") then
+		chatMsgLoot(...);
+	elseif (event == "COMBAT_LOG_EVENT_UNFILTERED") then
+		combatLogEventUnfiltered(...);
+	elseif (event == "LOOT_OPENED") then
+		lootOpened();
+	--elseif (event == "LOOT_CLOSED") then
+	--	lootClosed();
+	end
+end)

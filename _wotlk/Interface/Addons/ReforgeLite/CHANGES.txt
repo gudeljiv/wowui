@@ -1,10 +1,120 @@
-tag 986831fec520ea465a26fa38510c5bb3116a4a41 v1.9.0
+tag 307d66a2b370c048993537dcb020c68702da5e63 v1.9.1
 Author:	skyler-code <skylerh15@github.com>
-Date:	Sun Aug 4 16:26:24 2024 -0500
+Date:	Thu Aug 15 18:37:36 2024 -0500
 
-commit 576b311e7044b440fe73271ea2b237600e45ab66
+commit 2f605c3c2ba9fe7e995ee2589c98f0578d39449c
 Author: skyler-code <skylerh15@github.com>
-Date:   Sun Aug 4 12:18:53 2024 -0500
+Date:   Thu Aug 15 18:34:44 2024 -0500
 
-    No need to start ticker if compute finished on the first run
+    shrink preset icons a little
+
+commit 38f2b18037856ac7899d319a1fbe12626103d43d
+Author: skyler-code <skylerh15@github.com>
+Date:   Thu Aug 15 18:31:16 2024 -0500
+
+    zhTW fixes
+
+commit cc03b2c9289b272bf10bd7ae4e337dfd8b95ffaa
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 20:21:03 2024 -0500
+
+    proper formatting for ranged/spell haste
+
+commit bd818a6de3776777987956c40197f89f4a59d0a8
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 20:19:25 2024 -0500
+
+    Factor in current haste bonuses into cap value tooltip
+
+commit 96171ffdae55b695b4c09de620057c902068469e
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 20:18:23 2024 -0500
+
+    redundant
+
+commit bf1d5eefbf29bb1bc94372394584daa68feda3c1
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 19:48:24 2024 -0500
+
+    properly calculate haste bonuses using player stats
+
+commit 75b8b09f32dab8db0b3ebc3e361fb3efb75392d5
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 17:25:22 2024 -0500
+
+    show hit/exp bonuses in cap tooltip
+
+commit 1fea61f9712572f85bb7f25920c5ea311081a19c
+Author: skyler-code <skylerh15@github.com>
+Date:   Tue Aug 13 17:15:26 2024 -0500
+
+    correct Dark Intent toggling logic
+
+commit 801bc72327a9c627e4f894577f5c2514198fcc1e
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 18:45:38 2024 -0500
+
+    ToggleDarkIntentButton function
+
+commit 2bbb6d53fa2026593ef2b8c8f1064ed9cb37a139
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 18:45:26 2024 -0500
+
+    collapse stat caps when setting an entry to none
+
+commit 4cfba4e67ff6d5a1e620b2ccd6aab1db9b9b7f8a
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 18:22:12 2024 -0500
+
+    leaked from other branch
+
+commit 1193044663e7aedf85c95c0ca69474cf26c81c1b
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 17:39:16 2024 -0500
+
+    dont show cap value tooltip for spirit
+
+commit 862ee1f3eb5942b38a6c0e69b9a91beaede40ea5
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 17:24:43 2024 -0500
+
+    small restructure
+
+commit d4efda8f7f5f528c9745759b15233eeff9b90243
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 17:19:33 2024 -0500
+
+    show spell hit conversion in tooltip
+
+commit 4e01e51aca6b9c44c7e824efcf83a2113f80a462
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 16:58:29 2024 -0500
+
+    Revert "using ceil to round up rather than floor(x+random())"
+    
+    This reverts commit 52365919a5482f06ab521e53a55d1965025a554a.
+
+commit b50f445101a1d7fa56b287bfdda52e7505d786b6
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 16:49:07 2024 -0500
+
+    moved CreateStaticPopup to GUI
+
+commit fce59ec7945f8ba5c4cecc381f9e6c38111e24a8
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 16:47:53 2024 -0500
+
+    small cleanup
+
+commit 296f4ba6444a51f46dc7d308b64588e6590c0a4d
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 04:49:13 2024 -0500
+
+    druid/priest/firemage preset haste breakpoints use dark intent modifier
+
+commit 9bb52b3d0b287b0893fa04df0502ccea4479b755
+Author: skyler-code <skylerh15@github.com>
+Date:   Fri Aug 9 04:22:02 2024 -0500
+
+    Adding Dark Intent checkbox for haste caps
 

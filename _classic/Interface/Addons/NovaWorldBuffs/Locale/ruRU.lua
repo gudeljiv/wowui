@@ -660,3 +660,5 @@ L["none"] = "None.";
 L["Temple of Atal'Hakkar"] = "храме Атал'Хаккар";
 
 L["Might of Stormwind"] = "Мощь Штормграда";
+
+L["Battle Shout"] = "Боевой крик";

@@ -11,6 +11,12 @@ local NWB = addon.a;
 NWB.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NWB.isClassic = true;
+	if (C_Engraving and C_Engraving.IsEngravingEnabled()) then
+		NWB.isSOD = true;
+	end
+	if (C_Seasons and C_Seasons.GetActiveSeason() == 3) then
+		NWB.isHardcore = true;
+	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	NWB.isTBC = true;
 	NWB.expansionNum = 2;
@@ -37,9 +43,7 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NWB.isRetail = true;
 	NWB.expansionNum = 10;
 end
-if (NWB.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
-	NWB.isSOD = true;
-end
+
 --Temporary until actual launch.
 --if (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	--This basically meant prepatch, some things were still enabled.
@@ -102,6 +106,7 @@ NWB.spellTypes = {
 	[24417] = "sheenZanza",
 	[24382] = "spiritZanza",
 	[24383] = "swiftZanza",
+	[25101] = "battleShout",
 	--TBC.
 	[28518] = "flaskFort",
 	[28591] = "flaskPure",
@@ -259,6 +264,11 @@ NWB.buffTable = {
 		icon = "|TInterface\\Icons\\inv_potion_31:12:12:0:0|t",
 		fullName = "Swiftness of Zanza",
 		maxDuration = 7200,
+	},
+	["battleShout"] = {
+		icon = "|TInterface\\Icons\\ability_warrior_battleshout:12:12:0:0|t",
+		fullName = "Battle Shout",
+		maxDuration = 900,
 	},
 	--TBC.
 	["flaskFort"] = {

@@ -1037,3 +1037,5 @@ L["Blackrock PvP Event"] = "Blackrock PvP Event";
 L["Total honor this event"] = "Total honor this event";
 
 L["Might of Stormwind"] = "Puissance de Hurlevent";
+
+L["Battle Shout"] = "Cri de guerre";

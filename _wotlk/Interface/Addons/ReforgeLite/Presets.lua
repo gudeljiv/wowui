@@ -63,6 +63,38 @@ function ReforgeLite:GetExpertiseBonus ()
   end
   return bonus
 end
+function ReforgeLite:GetMeleeHasteBonus()
+  return addonTable.round((GetMeleeHaste()+100)/(GetCombatRatingBonus(CR_HASTE_MELEE)+100), 0.0001)
+end
+function ReforgeLite:GetRangedHasteBonus()
+  return addonTable.round((GetRangedHaste()+100)/(GetCombatRatingBonus(CR_HASTE_RANGED)+100), 0.0001)
+end
+local function PlayerHasSpellHasteBuff()
+  return select(5, ReforgeLite:GetPlayerBuffs())
+end
+function ReforgeLite:GetSpellHasteBonus()
+  local baseBonus = (UnitSpellHaste('PLAYER')+100)/(GetCombatRatingBonus(CR_HASTE_SPELL)+100)
+  if self.pdb.spellHaste or self.pdb.darkIntent then
+    local spellHaste, darkIntent = PlayerHasSpellHasteBuff()
+    if self.pdb.spellHaste and not spellHaste then
+      baseBonus = baseBonus * 1.05
+    end
+    if self.pdb.darkIntent and not darkIntent then
+      baseBonus = baseBonus * 1.03
+    end
+  end
+  return addonTable.round(baseBonus, 0.000001)
+end
+function ReforgeLite:GetHasteBonuses()
+  return self:GetMeleeHasteBonus(), self:GetRangedHasteBonus(), self:GetSpellHasteBonus()
+end
+function ReforgeLite:CalcHasteWithBonus(haste, hasteBonus)
+  return ((hasteBonus - 1) * 100) + haste * hasteBonus
+end
+function ReforgeLite:CalcHasteWithBonuses(haste)
+  local meleeBonus, rangedBonus, spellBonus = self:GetHasteBonuses()
+  return self:CalcHasteWithBonus(haste, meleeBonus), self:CalcHasteWithBonus(haste, rangedBonus), self:CalcHasteWithBonus(haste, spellBonus)
+end
 function ReforgeLite:GetNeededMeleeHit ()
   local diff = self.pdb.targetLevel
   if diff <= 2 then
@@ -93,7 +125,7 @@ function ReforgeLite:GetNeededExpertiseHard ()
 end
 
 local function CreateIconMarkup(icon)
-  return CreateSimpleTextureMarkup(icon, 18, 18) .. " "
+  return CreateSimpleTextureMarkup(icon, 16, 16) .. " "
 end
 
 local AtLeast = addonTable.StatCapMethods.AtLeast
@@ -180,91 +212,69 @@ local function GetActiveItemSet()
   return itemSets
 end
 
+local function GetSpellHasteRequired(percentNeeded)
+  return function()
+    local hasteMod = ReforgeLite:GetSpellHasteBonus()
+    return ceil((percentNeeded - (hasteMod - 1) * 100) * ReforgeLite:RatingPerPoint(ReforgeLite.STATS.HASTE) / hasteMod)
+  end
+end
+
 if addonTable.playerClass == "DRUID" then
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.FirstHasteBreak,
     category = StatHaste,
-    name = ("7.15%% 5th %sRejuv Tick"):format(CreateIconMarkup(136081)),
-    getter = function ()
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 7.15)
-    end,
+    name = ("12.51%% 5th %sRejuv Tick"):format(CreateIconMarkup(136081)),
+    getter = GetSpellHasteRequired(12.51),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.SecondHasteBreak,
     category = StatHaste,
-    name = ("15.65%% 9th %sWG / %sEfflo Tick"):format(CreateIconMarkup(236153), CreateIconMarkup(134222)),
-    getter = function ()
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 15.65)
-    end,
+    name = ("21.43%% 9th %sWG / %sEfflo Tick"):format(CreateIconMarkup(236153), CreateIconMarkup(134222)),
+    getter = GetSpellHasteRequired(21.4345),
   })
 elseif addonTable.playerClass == "PRIEST" then
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.FirstHasteBreak,
     category = StatHaste,
     name = ("18.74%% 2nd %sDP Tick"):format(CreateIconMarkup(252997)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 8.7 or 9.8
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    getter = GetSpellHasteRequired(18.74),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.SecondHasteBreak,
     category = StatHaste,
     name = ("24.97%% 2nd %sSWP Tick"):format(CreateIconMarkup(136207)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 14.41 or 15.56
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    getter = GetSpellHasteRequired(24.97),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.ThirdHasteBreak,
     category = StatHaste,
-    name = ("30%% 2nd %sVT Tick"):format(CreateIconMarkup(135978)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 19.03 or 20.21
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    name = ("30.01%% 2nd %sVT Tick"):format(CreateIconMarkup(135978)),
+    getter = GetSpellHasteRequired(30.01),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.FourthHasteBreak,
     category = StatHaste,
     name = ("31.26%% 3rd %sDP Tick"):format(CreateIconMarkup(252997)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 20.17 or 21.37
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    getter = GetSpellHasteRequired(31.26),
   })
-  if addonTable.playerRace == "Goblin" then
-    tinsert(ReforgeLite.capPresets, {
-      value = CAPS.FifthHasteBreak,
-      category = StatHaste,
-      name = ("41.67%% 3rd %sSWP Tick"):format(CreateIconMarkup(136207)),
-      getter = function ()
-        return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * 29.7)
-      end,
-    })
-  end
+  tinsert(ReforgeLite.capPresets, {
+    value = CAPS.FifthHasteBreak,
+    category = StatHaste,
+    name = ("41.67%% 3rd %sSWP Tick"):format(CreateIconMarkup(136207)),
+    getter = GetSpellHasteRequired(41.675),
+  })
 elseif addonTable.playerClass == "MAGE" then
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.FirstHasteBreak,
     category = StatHaste,
     name = ("15%% 2nd %sCombustion Tick"):format(CreateIconMarkup(135824)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 5.29 or 6.348
-      if addonTable.playerRace == "Goblin" then
-        percentNeeded = 5.29
-      end
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    getter = GetSpellHasteRequired(15.01),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.SecondHasteBreak,
     category = StatHaste,
     name = ("25%% 3rd %sCombustion Tick"):format(CreateIconMarkup(135824)),
-    getter = function ()
-      local percentNeeded = addonTable.playerRace == "Goblin" and 14.509 or 15.65
-      return ceil(ReforgeLite:RatingPerPoint (ReforgeLite.STATS.HASTE) * percentNeeded)
-    end,
+    getter = GetSpellHasteRequired(25.08),
   })
   tinsert(ReforgeLite.capPresets, {
     value = CAPS.ThirdHasteBreak,
@@ -1052,7 +1062,7 @@ function ReforgeLite:InitPresets()
   self.exportPresetMenu.list = exportList
   LibDD:UIDropDownMenu_Initialize(self.exportPresetMenu, menuListInit({
     onClick = function(info)
-      self:ExportPreset(info.sortKey, info.value)
+      self:ExportJSON(info.sortKey, info.value)
     end
   }), "MENU")
 

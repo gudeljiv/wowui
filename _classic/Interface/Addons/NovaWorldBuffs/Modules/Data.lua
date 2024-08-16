@@ -24,7 +24,7 @@
 local addonName, addon = ...;
 local NWB = addon.a;
 local c = addon.c;
-local version = GetAddOnMetadata("NovaWorldBuffs", "Version") or 9999;
+local version = NWB.version;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local time, elapsed = 0, 0;
 local NWBLFrame;

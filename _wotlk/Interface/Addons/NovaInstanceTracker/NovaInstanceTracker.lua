@@ -28,7 +28,7 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_LEGION_CLASSIC) then
 	NIT.expansionNum = 7;
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NIT.isRetail = true;
-	NIT.expansionNum = 10;
+	NIT.expansionNum = 11;
 end
 if (NIT.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
 	NIT.isSOD = true;
@@ -61,26 +61,18 @@ if (NIT.isCata) then
 elseif (NIT.isWrath) then
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 999;  --No limit in prepatch, but maybe a limit later?
-	--if (NIT.isPrepatch) then
-	--	NIT.maxLevel = 70;
-	--else
-	--	NIT.maxLevel = 80;
-	--end
 elseif (NIT.isTBC) then
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 999;
-	--NIT.maxLevel = 70;
 elseif (NIT.isRetail) then
 	--Retail is 10 per hour and account wide not per character.
 	NIT.hourlyLimit = 10;
 	NIT.dailyLimit = 999;
-	--NIT.maxLevel = 70;
 	NIT.noDailyLockout = true;
 else
 	NIT.noRaidLockouts = true;
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 999;
-	--NIT.maxLevel = 60;
 	NIT.noRaidLockout = nil;
 end
 NIT.maxLevel = GetMaxPlayerLevel();
@@ -254,6 +246,7 @@ function NIT:getTimeString(seconds, countOnly, type)
 	else
 		timecalc = seconds - time();
 	end
+	local y = math.floor((timecalc / (86400*365)));
 	local d = math.floor((timecalc % (86400*365)) / 86400);
 	local h = math.floor((timecalc % 86400) / 3600);
 	local m = math.floor((timecalc % 3600) / 60);
@@ -263,6 +256,16 @@ function NIT:getTimeString(seconds, countOnly, type)
 		space = " ";
 	end
 	if (type == "short") then
+		if (y == 1 and d == 0) then
+			return y .. " " .. L["yearShort"];
+		elseif (y == 1) then
+			return y .. " " .. L["yearShort"] .. " " .. d .. " " .. L["dayShort"];
+		end
+		if (y > 1 and d == 0) then
+			return y .. " " .. L["yearShort"];
+		elseif (y > 1) then
+			return y .. " " .. L["yearShort"] .. " " .. d .. " " .. L["dayShort"];
+		end
 		if (d == 1 and h == 0) then
 			return d .. L["dayShort"];
 		elseif (d == 1) then
@@ -296,6 +299,16 @@ function NIT:getTimeString(seconds, countOnly, type)
 		--If no matches it must be seconds only.
 		return s .. L["secondShort"];
 	elseif (type == "medium") then
+		if (y == 1 and d == 0) then
+			return y .. " " .. L["yearMedium"];
+		elseif (y == 1) then
+			return y .. " " .. L["yearMedium"] .. " " .. d .. " " .. L["daysMedium"];
+		end
+		if (y > 1 and d == 0) then
+			return y .. " " .. L["yearsMedium"];
+		elseif (y > 1) then
+			return y .. " " .. L["yearsMedium"] .. " " .. d .. " " .. L["daysMedium"];
+		end
 		if (d == 1 and h == 0) then
 			return d .. " " .. L["dayMedium"];
 		elseif (d == 1) then
@@ -329,6 +342,16 @@ function NIT:getTimeString(seconds, countOnly, type)
 		--If no matches it must be seconds only.
 		return s .. " " .. L["secondsMedium"];
 	else
+		if (y == 1 and d == 0) then
+			return y .. " " .. L["year"];
+		elseif (y == 1) then
+			return y .. " " .. L["year"] .. " " .. d .. " " .. L["days"];
+		end
+		if (y > 1 and d == 0) then
+			return y .. " " .. L["years"];
+		elseif (y > 1) then
+			return y .. " " .. L["years"] .. " " .. d .. " " .. L["days"];
+		end
 		if (d == 1 and h == 0) then
 			return d .. " " .. L["day"];
 		elseif (d == 1) then
@@ -667,7 +690,7 @@ end
 
 function NIT:openConfig()
 	--Opening the frame needs to be run twice to avoid a bug.
-	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
+	--[[InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
 	--Hack to fix the issue of interface options not opening to menus below the current scroll range.
 	--This addon name starts with N and will always be closer to the middle so just scroll to the middle when opening.
 	if (InterfaceOptionsFrameAddOnsListScrollBar) then
@@ -676,7 +699,8 @@ function NIT:openConfig()
 			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
 		end
 	end
-	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
+	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");]]
+	Settings.OpenToCategory("NovaInstanceTracker");
 end
 
 function NIT:isInArena()
@@ -3649,6 +3673,9 @@ function NIT:createAltsFrameSlider()
 	end
 end
 function NIT:createAltsFrameLootReminderButton()
+	if (not NIT.isSOD) then
+		return;
+	end
 	if (NIT.updateLootReminderFrame and not NIT.altsLootReminderButton) then
 		--Loot reminder button.
 		NIT.altsLootReminderButton = CreateFrame("Button", "NITAltsLootReminderButton", NITAltsFrame.EditBox, "UIPanelButtonTemplate");

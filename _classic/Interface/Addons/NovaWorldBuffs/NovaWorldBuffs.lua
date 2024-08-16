@@ -34,6 +34,7 @@ NWB.map = 0;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NWB.LDBIcon = LibStub("LibDBIcon-1.0");
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata;
 local version = GetAddOnMetadata("NovaWorldBuffs", "Version") or 9999;
 NWB.version = tonumber(version);
 NWB.latestRemoteVersion = version;
@@ -1921,7 +1922,8 @@ function NWB:storeBuffs()
 						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
 						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
 						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]
-						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"] or k == L["Might of Stormwind"]) then
+						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"] or k == L["Might of Stormwind"]
+						or k == L["Battle Shout"]) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
@@ -3608,14 +3610,15 @@ end
 
 function NWB:openConfig()
 	--Opening the frame needs to be run twice to avoid a bug.
-	InterfaceOptionsFrame_OpenToCategory("NovaWorldBuffs");
+	--[[InterfaceOptionsFrame_OpenToCategory("NovaWorldBuffs");
 	--Hack to fix the issue of interface options not opening to menus below the current scroll range.
 	--This addon name starts with N and will always be closer to the middle so just scroll to the middle when opening.
 	local min, max = InterfaceOptionsFrameAddOnsListScrollBar:GetMinMaxValues();
 	if (min < max) then
 		InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
 	end
-	InterfaceOptionsFrame_OpenToCategory("NovaWorldBuffs");
+	InterfaceOptionsFrame_OpenToCategory("NovaWorldBuffs");]]
+	Settings.OpenToCategory("NovaWorldBuffs");
 end
 
 function NWB:doResetTimerData()
@@ -4683,29 +4686,43 @@ function SlashCmdList.NWBSFCMD(msg, editBox)
 	end
 	local dataPrefix, layer, layerNum;
 	local layerMsg = "";
+	local string = L["Songflower"] .. ":";
+	local found;
 	--Show timers for our current layer.
-	if (NWB.isLayered and NWB.layeredSongflowers and NWB:checkLayerCount() and NWB.lastKnownLayerMapID and NWB.lastKnownLayerMapID > 0
+	if (NWB.isLayered) then
+		if (NWB.layeredSongflowers and NWB:checkLayerCount() and NWB.lastKnownLayerMapID and NWB.lastKnownLayerMapID > 0
 			and NWB.lastKnownLayer and NWB.lastKnownLayer > 0) then
-		layerNum = NWB.lastKnownLayer;
-		layer = NWB.lastKnownLayerID;
-		dataPrefix = NWB.data.layers[layer];
-		layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
+			layerNum = NWB.lastKnownLayer;
+			layer = NWB.lastKnownLayerID;
+			dataPrefix = NWB.data.layers[layer];
+			layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
+		elseif (NWB.layeredSongflowers and NWB:GetLayerCount() == 1) then
+			for k, v in NWB:pairsByKeys(NWB.data.layers) do
+				layerNum = 1;
+				dataPrefix = NWB.data.layers[k];
+				layer = k;
+				layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
+				break;
+			end
+		end
 	else
 		dataPrefix = NWB.data;
 	end
-	local string = L["Songflower"] .. ":";
-	local found;
-	for k, v in pairs(NWB.songFlowers) do
-		local time = (dataPrefix[k] + 1500) - GetServerTime();
-		if (time > 0) then
-			local minutes = string.format("%02.f", math.floor(time / 60));
-    		local seconds = string.format("%02.f", math.floor(time - minutes * 60));
-			string = string .. " (" .. v.subZone .. " " .. minutes .. "m" .. seconds .. "s)";
-			found = true;
-  		end
-	end
-	if (not found) then
-		string = string .. " " .. L["noActiveTimers"] .. ".";
+	if (dataPrefix) then
+		for k, v in pairs(NWB.songFlowers) do
+			local time = (dataPrefix[k] + 1500) - GetServerTime();
+			if (time > 0) then
+				local minutes = string.format("%02.f", math.floor(time / 60));
+	    		local seconds = string.format("%02.f", math.floor(time - minutes * 60));
+				string = string .. " (" .. v.subZone .. " " .. minutes .. "m" .. seconds .. "s)";
+				found = true;
+	  		end
+		end
+		if (not found) then
+			string = string .. " " .. L["noActiveTimers"] .. ".";
+		end
+	else
+		string = string .. " " .. L["Can't find current layer or no timers active for this layer."] .. ".";
 	end
 	if (msg ~= nil and msg ~= "") then
 		NWB:print(string .. layerMsg, msg);
@@ -5886,6 +5903,9 @@ function NWB:createDragonMarkers()
 end
 
 function NWB:refreshFelwoodMarkers()
+	if (NWB.expansionNum > 3) then
+		return;
+	end
 	for k, v in pairs(NWB.songFlowers) do
 		NWB.dragonLibPins:RemoveWorldMapIcon(k .. "NWB", _G[k .. "NWB"]);
 		NWB.dragonLibPins:RemoveMinimapIcon(k .. "NWBMini", _G[k .. "NWBMini"]);
@@ -7213,7 +7233,7 @@ function NWB:getDmfZoneString()
 end
 
 function NWB:checkDmfBuffReset(isLogon)
-	if (not NWB.isClassic) then
+	if (NWB.isHardcore or not NWB.isClassic) then
 		return;
 	end
 	local charString = "";
@@ -11634,14 +11654,16 @@ function NWB:scanTicker()
 			NWB:disableScan();
 		end
 	end
-	--Only enabled during this short window so it doesn't clash with other scan addons.
-	scanCheckEnabled = true;
-	UIParent:UnregisterEvent("ADDON_ACTION_FORBIDDEN");
-	scanFrame:RegisterEvent("ADDON_ACTION_FORBIDDEN");
-	TargetUnit(L["Herald of Thrall"], true);
-	scanFrame:UnregisterEvent("ADDON_ACTION_FORBIDDEN");
-	UIParent:RegisterEvent("ADDON_ACTION_FORBIDDEN");
-	scanCheckEnabled = false;
+	if (not UnitOnTaxi("player")) then
+		--Only enabled during this short window so it doesn't clash with other scan addons.
+		scanCheckEnabled = true;
+		UIParent:UnregisterEvent("ADDON_ACTION_FORBIDDEN");
+		scanFrame:RegisterEvent("ADDON_ACTION_FORBIDDEN");
+		TargetUnit(L["Herald of Thrall"], true);
+		scanFrame:UnregisterEvent("ADDON_ACTION_FORBIDDEN");
+		UIParent:RegisterEvent("ADDON_ACTION_FORBIDDEN");
+		scanCheckEnabled = false;
+	end
 	C_Timer.After(1, function()
 		NWB:scanTicker();
 	end)

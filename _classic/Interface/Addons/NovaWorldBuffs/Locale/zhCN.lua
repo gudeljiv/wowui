@@ -1009,4 +1009,6 @@ L["middleOnlyInCityTitle"] = "是否只在主城提示";
 L["middleOnlyInCityDesc"] = "只有当您在掉落 Buff 的主城时，才会显示屏幕中央计时器信息（赞达拉 BUFF 的 荆棘谷也包括在内）";
 
 L["flashOnlyInCityTitle"] = "是否只在主城闪烁";
-L["flashOnlyInCityDesc"] = "只有当您在掉落 Buff 的主城时，才会进行最小化闪烁（赞达拉 BUFF 的 荆棘谷也包括在内）";														   
+L["flashOnlyInCityDesc"] = "只有当您在掉落 Buff 的主城时，才会进行最小化闪烁（赞达拉 BUFF 的 荆棘谷也包括在内）";
+
+L["Battle Shout"] = "战斗怒吼";												   

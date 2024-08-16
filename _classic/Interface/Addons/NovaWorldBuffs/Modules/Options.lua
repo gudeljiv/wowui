@@ -16,7 +16,7 @@ NWB.options = {
 	args = {
 		titleText = {
 			type = "description",
-			name = "        " .. NWB.prefixColor .. "NovaWorldBuffs (v" .. GetAddOnMetadata("NovaWorldBuffs", "Version") .. ")",
+			name = "        " .. NWB.prefixColor .. "NovaWorldBuffs (v" .. NWB.version .. ")",
 			fontSize = "large",
 			order = 1,
 		},
@@ -1920,7 +1920,7 @@ NWB.optionDefaults = {
 		showNaxxWorldmapMarkers = true,
 		showNaxxMinimapMarkers = true,
 		bigWigsSupport = true,
-		cappingSupport = true,
+		cappingSupport = false, --Disabled by default now, the phases those events were tied to have passed and I get too many questions where it's from.
 		earlyRendScan = true,
 		dmfFrame = true,
 		dmfAutoRes = false,

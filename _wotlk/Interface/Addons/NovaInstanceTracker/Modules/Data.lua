@@ -418,13 +418,12 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "PLAYER_CAMPING") then
 		--Print stats if logging out inside an instance for an offline reset.
 		if (NIT.inInstance) then
-			NIT.data.instances[1]["leftTime"] = GetServerTime();
+			NIT:recordLeftInstanceStats();
 			NIT:showInstanceStats();
 		end
 		NIT:recordLockoutData();
 		NIT:recordQuests();
 	elseif (event == "PLAYER_LOGOUT") then
-		--Print stats if logging out inside an instance for an offline reset.
 		NIT:recordLockoutData();
 		NIT:recordQuests();
 	elseif (event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_CLOSE") then
@@ -1341,25 +1340,30 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 	end
 end
 
+function NIT:recordLeftInstanceStats()
+	local isPvp = NIT.data.instances[1].isPvp
+	NIT.data.instances[1]["leftTime"] = GetServerTime();
+	if (isPvp) then
+		if (usePreHonor and NIT.data.instances[1].type == "bg") then
+			local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
+			if (honor) then
+				NIT.data.instances[1].postHonor = honor.quantity;
+			end
+		end
+	else
+		NIT.data.instances[1]["leftLevel"] = UnitLevel("player");
+		NIT.data.instances[1]["leftLevelPercent"] = NIT:getLevelPercentage();
+		NIT.data.instances[1]["leftXP"] = UnitXP("player");
+		NIT.data.instances[1]["leftMoney"] = GetMoney();
+	end
+end
+
 function NIT:leftInstance()
 	if (NIT.inInstance and NIT.data.instances[1]) then
-		local isPvp = NIT.data.instances[1].isPvp
-		NIT.data.instances[1]["leftTime"] = GetServerTime();
-		if (isPvp) then
-			if (usePreHonor and NIT.data.instances[1].type == "bg") then
-				local honor = C_CurrencyInfo.GetCurrencyInfo(1901);
-				if (honor) then
-					NIT.data.instances[1].postHonor = honor.quantity;
-				end
-			end
-		else
-			NIT.data.instances[1]["leftLevel"] = UnitLevel("player");
-			NIT.data.instances[1]["leftLevelPercent"] = NIT:getLevelPercentage();
-			NIT.data.instances[1]["leftXP"] = UnitXP("player");
-			NIT.data.instances[1]["leftMoney"] = GetMoney();
-		end
+		NIT:recordLeftInstanceStats();
 		--NIT:debug("left", UnitLevel("player"));
 		--Don't show party stats if bg or arena, only self.
+		local isPvp = NIT.data.instances[1].isPvp
 		if (not isPvp or NIT.db.global.instanceStatsOutputWhere == "self") then
 			NIT:showInstanceStats();
 		end
@@ -1531,7 +1535,7 @@ function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 				if (v > 0) then
 					v = "+" .. NIT:commaValue(v);
 				else
-					v = "-" .. NIT:commaValue(v);
+					v = NIT:commaValue(v);
 				end
 				if (count == 1) then
 					repText = repText .. "(" .. k .. " " .. v .. ")";
@@ -3082,7 +3086,11 @@ local tradeskillSpecs = {
 }
 --Cache all prof spec spell names.
 for k, v in pairs(tradeskillSpecs) do
-	GetSpellInfo(k);
+	if (C_Spell and C_Spell.GetSpellInfo) then
+		C_Spell.GetSpellInfo(k);
+	else
+		GetSpellInfo(k);
+	end
 end
 
 --By tab index.
@@ -3095,7 +3103,12 @@ local function getProfessionSpec(spellTabIndex)
     for j = offset + 1, offset + numSlots do
         local _, spellID = GetSpellBookItemInfo(j, BOOKTYPE_SPELL);
         if (spellID and tradeskillSpecs[spellID]) then
-            specName = GetSpellInfo(spellID);
+        	if (C_Spell and C_Spell.GetSpellInfo) then
+				local spellData = C_Spell.GetSpellInfo(spellID);
+				specName = spellData.name;
+			else
+            	specName = GetSpellInfo(spellID);
+            end
             return specName;
         end
     end
@@ -3113,7 +3126,12 @@ local function getProfessionSpecClassic(profName)
         for j = offset + 1, offset + numSlots do
            local _, spellID = GetSpellBookItemInfo(j, BOOKTYPE_SPELL);
            if (spellID and tradeskillSpecs[spellID] and tradeskillSpecs[spellID] == profName) then
-	            specName = GetSpellInfo(spellID);
+           		if (C_Spell and C_Spell.GetSpellInfo) then
+				local spellData = C_Spell.GetSpellInfo(spellID);
+					specName = spellData.name;
+				else
+	            	specName = GetSpellInfo(spellID);
+	            end
 	            return specName
 	        end
         end

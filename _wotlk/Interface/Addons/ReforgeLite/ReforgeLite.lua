@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.0"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.1"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -33,6 +33,12 @@ local function DeepCopy (t, cache)
 end
 addonTable.DeepCopy = DeepCopy
 
+local function round(v, bracket)
+	bracket = bracket or 1
+	return floor(v/bracket + ((v >= 0 and 1) or -1) * 0.5) * bracket
+end
+addonTable.round = round
+
 local gprint = print
 local function print(...)
     gprint("|cff33ff99"..addonName.."|r:",...)
@@ -47,6 +53,8 @@ local DefaultDB = {
   openOnReforge = true,
   updateTooltip = true,
 
+  speed = 10,
+
   activeWindowTitle = {0.6, 0, 0},
   inactiveWindowTitle = {0.5, 0.5, 0.5},
 
@@ -59,6 +67,8 @@ local DefaultDB = {
 }
 local DefaultDBProfile = {
   targetLevel = 3,
+  spellHaste = true,
+  darkIntent = false,
 
   buffs = {
   },
@@ -192,52 +202,9 @@ end
 
 -----------------------------------------------------------------
 
-local function CreateStaticPopup(name, text, options)
-  StaticPopupDialogs[name] = {
-    text = text,
-    button1 = ACCEPT,
-    button2 = CANCEL,
-    hasEditBox = true,
-    editBoxWidth = 350,
-    OnAccept = function (self)
-      options.func(self.editBox:GetText ())
-    end,
-    EditBoxOnEnterPressed = function (self)
-      local importStr = self:GetParent ().editBox:GetText ()
-      if importStr ~= "" then
-        options.func(importStr)
-        self:GetParent ():Hide ()
-      end
-    end,
-    EditBoxOnTextChanged = function (self, data)
-      if data ~= "" then
-        self:GetParent ().button1:Enable ()
-      else
-        self:GetParent ().button1:Disable ()
-      end
-    end,
-    EditBoxOnEscapePressed = function(self)
-      self:GetParent():Hide();
-    end,
-    OnShow = function (self)
-      LibDD:CloseDropDownMenus()
-      self.editBox:SetText ("")
-      self.button1:Disable ()
-      self.editBox:SetFocus ()
-    end,
-    OnHide = function (self)
-      ChatEdit_FocusActiveWindow ()
-      self.editBox:SetText ("")
-    end,
-    timeout = 0,
-    whileDead = true,
-    hideOnEscape = true
-  }
-end
-
-CreateStaticPopup("REFORGE_LITE_PARSE_PAWN", L["Enter pawn string"], { func = function(text) ReforgeLite:ParseImportString(text) end })
-CreateStaticPopup("REFORGE_LITE_PARSE_WOWSIMS", L["Enter WoWSims JSON"], { func = function(text) ReforgeLite:ParseWoWSimsString(text) end } )
-CreateStaticPopup("REFORGE_LITE_SAVE_PRESET", L["Enter the preset name"], { func = function(text)
+GUI.CreateStaticPopup("REFORGE_LITE_PARSE_PAWN", L["Enter pawn string"], { func = function(text) ReforgeLite:ParseImportString(text) end })
+GUI.CreateStaticPopup("REFORGE_LITE_PARSE_WOWSIMS", L["Enter WoWSims JSON"], { func = function(text) ReforgeLite:ParseWoWSimsString(text) end } )
+GUI.CreateStaticPopup("REFORGE_LITE_SAVE_PRESET", L["Enter the preset name"], { func = function(text)
   ReforgeLite.cdb.customPresets[text] = {
     caps = DeepCopy(ReforgeLite.pdb.caps),
     weights = DeepCopy(ReforgeLite.pdb.weights)
@@ -245,7 +212,6 @@ CreateStaticPopup("REFORGE_LITE_SAVE_PRESET", L["Enter the preset name"], { func
   ReforgeLite:InitCustomPresets()
   ReforgeLite.deletePresetButton:Enable()
 end })
-
 
 ReforgeLite.itemSlots = {
   "HEADSLOT",
@@ -373,7 +339,7 @@ ReforgeLite.tankingStats = {
       mgetter = function (method)
         return method.stats.parry or 0
       end,
-      getter = GetDodgeChance
+      getter = GetParryChance
     },
     [ReforgeLite.STATS.MASTERY] = {
       tip = BLOCK,
@@ -404,7 +370,7 @@ ReforgeLite.tankingStats = {
       mgetter = function (method)
         return method.stats.parry or 0
       end,
-      getter = GetDodgeChance
+      getter = GetParryChance
     },
     [ReforgeLite.STATS.MASTERY] = {
       tip = BLOCK,
@@ -449,7 +415,7 @@ end
 
 ReforgeLite.reforgeTable = reforgeTable
 
-local REFORGE_COEFF = 0.4
+addonTable.REFORGE_COEFF = 0.4
 ReforgeLite.spiritBonus = playerRace == "Human" and 1.03 or 1
 
 function ReforgeLite:UpdateWindowSize ()
@@ -907,7 +873,6 @@ function ReforgeLite:CreateItemTable ()
   self.itemLevel = self:CreateFontString (nil, "OVERLAY", "GameFontNormal")
   self.itemLevel:SetPoint ("TOPLEFT", 12, -28)
   self.itemLevel:SetTextColor (1, 1, 0.8)
-  self.itemLevel:SetText (STAT_AVERAGE_ITEM_LEVEL .. ": 0")
 
   self.itemTable = GUI:CreateTable (#self.itemSlots + 1, #self.itemStats, self.db.itemSize, self.db.itemSize + 4, {0.5, 0.5, 0.5, 1}, self)
   self.itemTable:SetPoint ("TOPLEFT", self.itemLevel, "BOTTOMLEFT", 0, -10)
@@ -1029,7 +994,33 @@ function ReforgeLite:AddCapPoint (i, loading)
   end)
 
   GUI:SetTooltip (rem, L["Remove cap"])
-  GUI:SetTooltip (value, L["Cap value"])
+  GUI:SetTooltip (value, function()
+    local cap = self.pdb.caps[i]
+    if cap.stat == self.STATS.SPIRIT then return end
+    local pointValue = (cap.points[point].value or 0)
+    local rating = round(pointValue / self:RatingPerPoint(cap.stat), 0.01)
+    if cap.stat == self.STATS.HIT then
+      local meleeHitBonus = self:GetMeleeHitBonus()
+      if meleeHitBonus > 0 then
+        rating = ("%s%% + %s%% = %s"):format(rating, meleeHitBonus, rating + meleeHitBonus)
+      end
+      local spellHitRating = round(pointValue / self:RatingPerPoint(self.STATS.SPELLHIT), 0.01)
+      local spellHitBonus = self:GetSpellHitBonus()
+      if spellHitBonus > 0 then
+        spellHitRating = ("%s%% + %s%% = %s"):format(spellHitRating,spellHitBonus,spellHitRating+spellHitBonus)
+      end
+      rating = ("%s: %s%%\n%s: %s%%"):format(MELEE, rating, STAT_CATEGORY_SPELL, spellHitRating)
+    elseif cap.stat == self.STATS.EXP then
+      local expBonus = self:GetExpertiseBonus()
+      if expBonus > 0 then
+        rating = ("%s + %s = %s"):format(rating, expBonus, rating + expBonus)
+      end
+    elseif cap.stat == self.STATS.HASTE then
+      local meleeHaste, rangedHaste, spellHaste = self:CalcHasteWithBonuses(rating)
+      rating = ("%s: %.2f\n%s: %.2f\n%s: %.2f"):format(MELEE, meleeHaste, RANGED, rangedHaste, STAT_CATEGORY_SPELL, spellHaste)
+    end
+    return ("%s\n%s"):format(L["Cap value"], rating)
+  end)
   GUI:SetTooltip (after, L["Weight after cap"])
 
   self.statCaps:SetCell (row, 0, rem)
@@ -1054,8 +1045,10 @@ function ReforgeLite:RemoveCapPoint (i, point, loading)
     self:UpdateContentSize ()
   end
   if #self.pdb.caps[i].points == 0 then
+    self.pdb.caps[i].stat = 0
     self.statCaps[i].add:Disable()
     self.statCaps[i].stat:SetValue(0)
+    self.statCaps:ToggleDarkIntentButton()
   end
 end
 function ReforgeLite:ReorderCapPoint (i, point)
@@ -1081,12 +1074,12 @@ function ReforgeLite:UpdateCapPreset (i, point)
   end
   if self.capPresets[preset].getter then
     self.statCaps.cells[row][3]:SetTextColor (0.5, 0.5, 0.5)
-    self.statCaps.cells[row][3]:EnableMouse (false)
+    self.statCaps.cells[row][3]:SetMouseClickEnabled (false)
     self.statCaps.cells[row][3]:ClearFocus ()
     self.pdb.caps[i].points[point].value = max(0, ceil (self.capPresets[preset].getter ()))
   else
     self.statCaps.cells[row][3]:SetTextColor (1, 1, 1)
-    self.statCaps.cells[row][3]:EnableMouse (true)
+    self.statCaps.cells[row][3]:SetMouseClickEnabled (true)
   end
   self.statCaps.cells[row][3]:SetText (self.pdb.caps[i].points[point].value)
 end
@@ -1106,6 +1099,15 @@ function ReforgeLite:SetTankingModel (model)
     self:UpdateStatWeightList ()
     self:RefreshMethodStats ()
   end
+end
+function ReforgeLite:CollapseStatCaps()
+  local caps = DeepCopy(self.pdb.caps)
+  table.sort(caps, function(a,b)
+    local aIsNone = a.stat == 0 and 1 or 0
+    local bIsNone = b.stat == 0 and 1 or 0
+    return aIsNone < bIsNone
+  end)
+  self:SetStatWeights(nil, caps)
 end
 function ReforgeLite:SetStatWeights (weights, caps)
   if weights then
@@ -1143,8 +1145,11 @@ function ReforgeLite:SetStatWeights (weights, caps)
         self.pdb.caps[i].points = {}
       end
     end
-    self:UpdateCapPoints (1)
-    self:UpdateCapPoints (2)
+    for i=1,2 do
+      self:UpdateCapPoints (i)
+    end
+    self.statCaps:ToggleDarkIntentButton()
+    self.statCaps:ToggleStatDropdownToCorrectState()
     self.statCaps.onUpdate ()
     self:UpdateContentSize ()
     RunNextFrame(function() self:CapUpdater() end)
@@ -1266,17 +1271,17 @@ function ReforgeLite:UpdateBuffs ()
     end
     if flask then
       self.statWeights.buffs.flask:SetValue (flask)
-      LibDD:UIDropDownMenu_DisableDropDown (self.statWeights.buffs.flask)
+      self.statWeights.buffs.flask:DisableDropdown()
     else
       self.statWeights.buffs.flask:SetValue (self.pdb.buffs.flask or 0)
-      LibDD:UIDropDownMenu_EnableDropDown (self.statWeights.buffs.flask)
+      self.statWeights.buffs.flask:EnableDropdown()
     end
     if food then
       self.statWeights.buffs.food:SetValue (food)
-      LibDD:UIDropDownMenu_DisableDropDown (self.statWeights.buffs.food)
+      self.statWeights.buffs.food:DisableDropdown()
     else
       self.statWeights.buffs.food:SetValue (self.pdb.buffs.food or 0)
-      LibDD:UIDropDownMenu_EnableDropDown (self.statWeights.buffs.food)
+      self.statWeights.buffs.food:EnableDropdown()
     end
   end
 end
@@ -1378,6 +1383,24 @@ function ReforgeLite:CreateOptionList ()
   for i, v in ipairs (self.itemStats) do
     tinsert (statList, {value = i, name = v.long})
   end
+  self.statCaps.ToggleDarkIntentButton = function(caps)
+    for _, cap in ipairs(caps) do
+      if cap.stat.selectedValue == self.STATS.HASTE then
+        cap.darkIntent:Show()
+      else
+        cap.darkIntent:Hide()
+      end
+    end
+  end
+  self.statCaps.ToggleStatDropdownToCorrectState = function(caps)
+    for i = 2, #caps do
+      if self.pdb.caps[i-1].stat == 0  then
+        caps[i].stat:DisableDropdown()
+      else
+        caps[i].stat:EnableDropdown()
+      end
+    end
+  end
   for i = 1, 2 do
     self.statCaps[i] = {}
     self.statCaps[i].stat = GUI:CreateDropdown (self.statCaps, statList, {
@@ -1391,6 +1414,11 @@ function ReforgeLite:CreateOptionList ()
           self:AddCapPoint(i)
         end
         self.pdb.caps[i].stat = val
+        if val == 0 then
+          self:CollapseStatCaps()
+        end
+        self.statCaps:ToggleDarkIntentButton()
+        self.statCaps:ToggleStatDropdownToCorrectState()
       end,
       width = 110,
       menuItemDisabled = function(val)
@@ -1402,8 +1430,26 @@ function ReforgeLite:CreateOptionList ()
       self:AddCapPoint (i)
     end)
     GUI:SetTooltip (self.statCaps[i].add, L["Add cap"])
+    self.statCaps[i].darkIntent = GUI:CreateCheckButton(
+      self.statCaps,
+      CreateSimpleTextureMarkup(463285, 20, 20),
+      self.pdb.darkIntent,
+      function(val)
+        self.pdb.darkIntent = val
+        for pointIndex, point in ipairs(self.pdb.caps[i].points) do
+          local oldValue = point.value
+          self:UpdateCapPreset(i, pointIndex)
+          if oldValue ~= point.value then
+            self:ReorderCapPoint (i, pointIndex)
+          end
+        end
+      end
+    )
+    self.statCaps[i].darkIntent:Hide()
+    GUI:SetTooltip (self.statCaps[i].darkIntent, ("%s %s - %s +%s%%"):format(CreateSimpleTextureMarkup(463285, 30, 30),GetSpellInfo(85767),format(STAT_FORMAT, STAT_HASTE),3))
     self.statCaps:SetCell (i, 0, self.statCaps[i].stat, "LEFT", -20, -10)
     self.statCaps:SetCell (i, 2, self.statCaps[i].add, "LEFT")
+    self.statCaps:SetCell (i, 3, self.statCaps[i].darkIntent, "LEFT")
   end
   for i = 1, 2 do
     for point in ipairs(self.pdb.caps[i].points) do
@@ -1414,6 +1460,8 @@ function ReforgeLite:CreateOptionList ()
       self:RemoveCapPoint(i)
     end
   end
+  self.statCaps:ToggleDarkIntentButton()
+  self.statCaps:ToggleStatDropdownToCorrectState()
   self.statCaps.onUpdate = function ()
     local row = 1
     for i = 1, 2 do
@@ -1438,6 +1486,41 @@ function ReforgeLite:CreateOptionList ()
   end)
 
   self:UpdateStatWeightList ()
+
+  self.quality = CreateFrame ("Slider", nil, self.content, "HorizontalSliderTemplate")
+  self:SetAnchor (self.quality, "LEFT", self.computeButton, "RIGHT", 10, 0)
+  self.quality:SetSize(150, 15)
+  self.quality:SetMinMaxValues (1, 20)
+  self.quality:SetValueStep (1)
+  self.quality:SetValue (self.db.speed)
+  self.quality:EnableMouseWheel (false)
+  self.quality:SetScript ("OnValueChanged", function (slider)
+    self.db.speed = slider:GetValue ()
+  end)
+
+  self.quality.label = self.quality:CreateFontString (nil, "OVERLAY", "GameFontNormal")
+  self.quality.label:SetPoint ("BOTTOM", self.quality, "TOP", 0, 0)
+  self.quality.label:SetTextColor (1, 1, 1)
+  self.quality.label:SetText (SPEED)
+
+  self.quality.helpButton = CreateFrame("Button",nil,self.quality,"MainHelpPlateButton")
+  self.quality.helpButton:SetPoint("BOTTOMLEFT",self.quality.label, "BOTTOMRIGHT",0,-20)
+  self.quality.helpButton:SetScale(0.45)
+  self.quality.helpButton:SetScript("OnEnter", function(btn)
+    GameTooltip:SetOwner(btn, "ANCHOR_RIGHT");
+    GameTooltip:SetText(L["Slide to the left if the calculation slows your game too much."],nil,nil,nil,nil,true);
+    GameTooltip:Show()
+  end)
+	self.quality.helpButton:SetScript("OnLeave", function(btn)
+    GameTooltip:Hide()
+  end)
+
+  self.quality.lowtext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
+  self.quality.lowtext:SetPoint ("TOPLEFT", self.quality, "BOTTOMLEFT", 2, 3)
+  self.quality.lowtext:SetText (SLOW)
+  self.quality.hightext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
+  self.quality.hightext:SetPoint ("TOPRIGHT", self.quality, "BOTTOMRIGHT", -2, 3)
+  self.quality.hightext:SetText (FAST)
 
   self.storedCategory = self:CreateCategory (L["Best result"])
   self:SetAnchor (self.storedCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
@@ -1527,7 +1610,7 @@ function ReforgeLite:FillSettings ()
     end
   end), "LEFT")
 
-  self.debugButton = GUI:CreatePanelButton (self.content, L["Debug"], function(btn) self:DebugMethod () end)
+  self.debugButton = GUI:CreatePanelButton (self.settings, L["Debug"], function(btn) self:DebugMethod () end)
   self.settings:SetCell (getOrderId('settings'), 0, self.debugButton, "LEFT")
 
   if self.isDev then
@@ -1881,10 +1964,10 @@ function ReforgeLite:UpdateItems()
   if playerClass == "PRIEST" then
     local pts = select(5, GetTalentInfo (3, 20))
     self.s2hFactor = pts * 50
-  elseif playerClass == "DRUID" and GetPrimaryTalentTree () ~= 2 then
+  elseif playerClass == "DRUID" then
     local pts = select(5, GetTalentInfo (1, 7))
     self.s2hFactor = pts * 50
-  elseif playerClass == "SHAMAN" and GetPrimaryTalentTree () ~= 2 then
+  elseif playerClass == "SHAMAN" then
     local pts = select(5, GetTalentInfo (1, 9))
     self.s2hFactor = (pts == 3 and 100 or pts * 33)
   elseif playerClass == "PALADIN" then
@@ -2114,14 +2197,14 @@ function ReforgeLite:IsReforgeMatching (slotId, reforge, override)
 
   if oreforge then
     local osrc, odst = unpack(reforgeTable[oreforge])
-    local oamount = floor ((stats[self.itemStats[osrc].name] or 0) * REFORGE_COEFF)
+    local oamount = floor ((stats[self.itemStats[osrc].name] or 0) * addonTable.REFORGE_COEFF)
     deltas[osrc] = deltas[osrc] + oamount
     deltas[odst] = deltas[odst] - oamount
   end
 
   if reforge then
     local src, dst = unpack(reforgeTable[reforge])
-    local amount = floor ((stats[self.itemStats[src].name] or 0) * REFORGE_COEFF)
+    local amount = floor ((stats[self.itemStats[src].name] or 0) * addonTable.REFORGE_COEFF)
     deltas[src] = deltas[src] - amount
     deltas[dst] = deltas[dst] + amount
   end

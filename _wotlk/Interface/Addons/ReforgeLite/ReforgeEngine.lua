@@ -1,6 +1,6 @@
 local addonName, addonTable = ...
-local REFORGE_COEFF = 0.4
-local MAX_LOOPS = 50000
+local REFORGE_COEFF = addonTable.REFORGE_COEFF
+local MAX_LOOPS = 100000
 
 local ReforgeLite = addonTable.ReforgeLite
 local L = addonTable.L
@@ -11,14 +11,15 @@ local missChance = (playerRace == "NIGHTELF" and 7 or 5)
 local floor, tinsert, unpack, pairs, random = floor, tinsert, unpack, pairs, random
 
 ---------------------------------------------------------------------------------------
-function ReforgeLite:GetPlayerBuffs ()
-  local kings, strength, flask, food
+function ReforgeLite:GetPlayerBuffs()
+  local kings, strength, flask, food, spellHaste, darkIntent
   local i = 1
   while true do
-    local id = select (10, UnitAura ("player", i))
-    if id == nil then
-      return kings, strength, flask, food
+    local aura = C_UnitAuras.GetBuffDataByIndex("player", i)
+    if aura == nil then
+      return kings, strength, flask, food, spellHaste, darkIntent
     else
+      local id = aura.spellId
       if id == 79063 or id == 79061 or id == 90363 then
         kings = true
       elseif id == 57330 or id == 93435 or id == 8076 or id == 6673 then
@@ -33,10 +34,14 @@ function ReforgeLite:GetPlayerBuffs ()
         food = 4
       elseif id == 57371 then -- 40 strength food
         food = 5
-      elseif id == 79472 then -- 300 strength flask
+      elseif id == 79472 or id == 92731 then -- 300 strength flask
         flask = 1
       elseif id == 79635 then -- 225 mastery elixir
         flask = 2
+      elseif id == 49868 or id == 24907 or id == 2895 then
+        spellHaste = true
+      elseif id == 85768 or id == 85767 then
+        darkIntent = true
       end
     end
     i = i + 1
@@ -365,26 +370,15 @@ function ReforgeLite:InitReforgeClassic ()
   if self.s2hFactor > 0 then
     data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - floor (reforgedSpirit * self.spiritBonus * self.s2hFactor / 100 + 0.5)
   end
-  if data.caps[1].stat > 0 then
-    data.caps[1].init = data.initial[data.caps[1].stat]
-    for i = 1, #data.method.items do
-      data.caps[1].init = data.caps[1].init + data.method.items[i].stats[data.caps[1].stat]
-    end
-  end
-  if data.caps[2].stat > 0 then
-    data.caps[2].init = data.initial[data.caps[2].stat]
-    for i = 1, #data.method.items do
-      data.caps[2].init = data.caps[2].init + data.method.items[i].stats[data.caps[2].stat]
-    end
-  end
-  if data.caps[1].stat == 0 then
-    data.caps[1], data.caps[2] = data.caps[2], data.caps[1]
-  end
-  if data.caps[2].stat == data.caps[1].stat then
-    data.caps[2].stat = 0
-    data.caps[2].init = 0
-  end
 
+  for _,v in ipairs(data.caps) do
+    if v.stat > 0 then
+      v.init = data.initial[v.stat]
+      for i = 1, #data.method.items do
+        v.init = v.init + data.method.items[i].stats[v.stat]
+      end
+    end
+  end
   if self.s2hFactor > 0 then
     if data.weights[self.STATS.SPIRIT] == 0 and (data.caps[1].stat == self.STATS.HIT or data.caps[2].stat == self.STATS.HIT) then
       data.weights[self.STATS.SPIRIT] = 1
@@ -394,16 +388,20 @@ function ReforgeLite:InitReforgeClassic ()
   return data
 end
 
+function ReforgeLite:RunYieldCheck()
+  if self.__chooseLoops == self.__maxLoops then
+    self.__chooseLoops = nil
+    coroutine.yield()
+  else
+    self.__chooseLoops = (self.__chooseLoops or 0) + 1
+  end
+end
+
 function ReforgeLite:ChooseReforgeClassic (data, reforgeOptions, scores, codes)
   local bestCode = {nil, nil, nil, nil}
   local bestScore = {0, 0, 0, 0}
   for k, score in pairs (scores) do
-    if self.__chooseLoops == MAX_LOOPS then
-      self.__chooseLoops = 0
-      coroutine.yield()
-    else
-      self.__chooseLoops = self.__chooseLoops + 1
-    end
+    self:RunYieldCheck()
     local s1 = data.caps[1].init
     local s2 = data.caps[2].init
     local code = codes[k]
@@ -559,7 +557,7 @@ function ReforgeLite:InitReforgeS2H ()
     data.spi = data.spi + data.method.items[i].stats[self.STATS.SPIRIT]
   end
   data.initial[self.STATS.SPIRIT] = floor (data.initial[self.STATS.SPIRIT] * self.spiritBonus + 0.5)
-  
+
   data.caps = {{stat = self.STATS.HIT, init = data.cap.init}, {stat = self.STATS.SPIRIT, init = data.spi}}
 
   return data
@@ -569,12 +567,7 @@ function ReforgeLite:ChooseReforgeS2H (data, reforgeOptions, scores, codes)
   local bestCode = {nil, nil}
   local bestScore = {0, 0}
   for k, score in pairs (scores) do
-    if self.__chooseLoops == MAX_LOOPS then
-      self.__chooseLoops = 0
-      coroutine.yield()
-    else
-      self.__chooseLoops = self.__chooseLoops + 1
-    end
+    self:RunYieldCheck()
     local code = codes[k]
     local hit = data.cap.init
     local spi = data.spi
@@ -743,12 +736,7 @@ function ReforgeLite:ChooseReforgeTank (data, reforgeOptions, scores, codes)
   local bestCode = {nil, nil}
   local bestScore = {0, 0}
   for k, score in pairs (scores) do
-    if self.__chooseLoops == MAX_LOOPS then
-      self.__chooseLoops = 0
-      coroutine.yield()
-    else
-      self.__chooseLoops = self.__chooseLoops + 1
-    end
+    self:RunYieldCheck()
     local code = codes[k]
     local dodge_rating = data.init.dodge
     local parry_rating = data.init.parry
@@ -791,17 +779,6 @@ end
 
 -----------------------------------------------------------------------------
 
-StaticPopupDialogs["REFORGELITE_COMPUTEERROR"] = {
-  text = L["ReforgeLite failed to compute your optimal reforge. Try increasing the speed by moving the speed slider.\nError message: %s"],
-  button1 = OKAY,
-  button2 = nil,
-  OnAccept = function ()
-  end,
-  timeout = 0,
-  whileDead = 1,
-  hideOnEscape = 1
-}
-
 function ReforgeLite:ComputeReforgeCore (data, reforgeOptions)
   local TABLE_SIZE = 10000
   local scores, codes = {}, {}
@@ -813,12 +790,7 @@ function ReforgeLite:ComputeReforgeCore (data, reforgeOptions)
     local opt = reforgeOptions[i]
     local count = 0
     for k, score in pairs (scores) do
-      if self.__chooseLoops == MAX_LOOPS then
-        self.__chooseLoops = 0
-        coroutine.yield()
-      else
-        self.__chooseLoops = self.__chooseLoops + 1
-      end
+      self:RunYieldCheck()
       local code = codes[k]
       local s1 = k % TABLE_SIZE
       local s2 = floor (k / TABLE_SIZE)
@@ -846,10 +818,11 @@ function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
     reforgeOptions[i] = self[optionFunc] (self, data.method.items[i], data, i)
   end
 
-  self.__chooseLoops = 0
+  local _, maxQuality = self.quality:GetMinMaxValues()
+  self.__maxLoops = MAX_LOOPS * (self.db.speed / maxQuality)
+
   local scores, codes = self:ComputeReforgeCore(data, reforgeOptions)
 
-  self.__chooseLoops = 0
   local code = self[chooseFunc] (self, data, reforgeOptions, scores, codes)
   self.__chooseLoops = nil
   scores, codes = nil, nil

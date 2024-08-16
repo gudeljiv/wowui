@@ -997,3 +997,5 @@ L["Tol Barad"] = "托爾巴拉德";
 L["eventIsRunning"] = "%s 正在進行中";
 
 L["Might of Stormwind"] = "暴風城之力";
+
+L["Battle Shout"] = "戰鬥怒吼";

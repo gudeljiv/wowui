@@ -125,7 +125,10 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 		end
 		return true;
 	elseif (event == "playSound") then
-		if (NWB.isSOD and type == "rend" and subEvent == "soundsFirstYell") then
+		--if (NWB.isSOD and type == "rend" and subEvent == "soundsFirstYell") then
+		--	return;
+		--end
+		if (NWB.isSOD and not NWB:isCapitalCityAction(type)) then
 			return;
 		end
 		--These are checked in thier parent functions atm, like yell/buff drop etc.
@@ -797,6 +800,11 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199) then
 				NWB:trackNewBuff(spellName, "swiftZanza");
+			end
+		elseif (destName == UnitName("player") and spellID == 25101) then
+			local expirationTime = NWB:getBuffDuration(spellName, 0);
+			if (expirationTime >= 7199) then
+				NWB:trackNewBuff(spellName, "battleShout");
 			end
 		--New SoD buffs, now that they allow spellIDs in classic this needs to all be changed to a hash table instead of this mess of elseif's in the future.
 		elseif (destName == UnitName("player") and spellName == L["Boon of Blackfathom"]) then
