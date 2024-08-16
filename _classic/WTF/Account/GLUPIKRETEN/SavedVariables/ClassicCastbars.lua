@@ -54,7 +54,7 @@ ClassicCastbarsDB = {
 },
 ["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 ["frameStrata"] = "HIGH",
-["width"] = 106,
+["showInterruptSchool"] = true,
 ["position"] = {
 "CENTER",
 7.3,
@@ -75,7 +75,7 @@ ClassicCastbarsDB = {
 0,
 0.535,
 },
-["showInterruptSchool"] = true,
+["width"] = 106,
 ["textColor"] = {
 1,
 1,

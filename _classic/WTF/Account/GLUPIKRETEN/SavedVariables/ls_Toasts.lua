@@ -45,7 +45,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 ["Provokator - Jin'do"] = "Default",
 ["Tandaram - Jin'do"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
-["Battlenac - Celebras"] = "Default",
+["Moolatz - Dreadnaught"] = "Default",
 ["Tadibey - Golemagg"] = "Default",
 ["Konac - Dreadnaught"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
@@ -77,7 +77,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 ["Dotwise - Golemagg"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
-["Moolatz - Dreadnaught"] = "Default",
+["Battlenac - Celebras"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {

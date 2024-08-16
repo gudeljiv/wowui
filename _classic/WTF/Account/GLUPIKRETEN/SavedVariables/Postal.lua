@@ -28,7 +28,7 @@ Postal3DB = {
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
-"Vermin|Celebras|Alliance|19|WARRIOR",
+"Vermin|Celebras|Alliance|20|WARRIOR",
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },

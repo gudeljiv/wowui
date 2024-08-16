@@ -183,172 +183,6 @@ function NIT:ApplyBounce(object, bounceHeight, duration, smoothing, doNotStart)
 end
 NIT:loadLootReminderFrame();
 
-function NIT:loadLootReminderListFrame()
-	if (not lootReminderListFrame) then
-		local frame = CreateFrame("Frame", "NITLootReminderListFrame", UIParent, "BackdropTemplate");
-		frame.scrollFrame = CreateFrame("ScrollFrame", "$parentScrollFrame", frame, "UIPanelScrollFrameTemplate");
-		--frame.scrollFrame:SetAllPoints();
-		frame.scrollChild = CreateFrame("Frame", "$parentScrollChild", frame.scrollFrame);
-		frame.scrollFrame:SetScrollChild(frame.scrollChild);
-		--frame.scrollChild:SetWidth(frame:GetWidth() - 30);
-		frame.scrollChild:SetAllPoints();
-		frame.scrollChild:SetPoint("RIGHT", -40, 0);
-		frame.scrollChild:SetPoint("TOP", 0, -20);
-		frame.scrollChild:SetHeight(1);
-		frame.scrollChild:SetScript("OnSizeChanged", function(self,event)
-			frame.scrollChild:SetWidth(self:GetWidth())
-		end)
-		frame.scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -8);
-		frame.scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 8);
-		
-		frame:SetBackdrop({
-			bgFile = "Interface\\Buttons\\WHITE8x8",
-			insets = {top = 4, left = 4, bottom = 4, right = 4},
-			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-			tileEdge = true,
-			edgeSize = 16,
-		});
-		frame:SetBackdropColor(0, 0, 0, 0.9);
-		frame:SetBackdropBorderColor(1, 1, 1, 0.7);
-		frame.scrollFrame.ScrollBar:ClearAllPoints();
-		frame.scrollFrame.ScrollBar:SetPoint("TOPRIGHT", -5, -(frame.scrollFrame.ScrollBar.ScrollDownButton:GetHeight()) + 1);
-		frame.scrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", -5, frame.scrollFrame.ScrollBar.ScrollUpButton:GetHeight());
-		frame:SetToplevel(true);
-		frame:SetMovable(true);
-		frame:EnableMouse(true);
-		frame:SetUserPlaced(false);
-		frame:SetPoint("CENTER", UIParent, 0, 100);
-		frame:SetSize(500, 670);
-		frame:SetFrameStrata("HIGH");
-		frame:SetFrameLevel(140);
-		frame:SetScript("OnMouseDown", function(self, button)
-			if (button == "LeftButton" and not self.isMoving) then
-				self:StartMoving();
-				self.isMoving = true;
-			end
-		end)
-		frame:SetScript("OnMouseUp", function(self, button)
-			if (button == "LeftButton" and self.isMoving) then
-				self:StopMovingOrSizing();
-				self.isMoving = false;
-			end
-		end)
-		frame:SetScript("OnHide", function(self)
-			if (self.isMoving) then
-				self:StopMovingOrSizing();
-				self.isMoving = false;
-			end
-		end)
-		frame.scrollChild:EnableMouse(true);
-		--frame.scrollChild:SetHyperlinksEnabled(true);
-		--frame.scrollChild:SetScript("OnHyperlinkClick", ChatFrame_OnHyperlinkShow);
-		--Set all fonts in the module using the frame.
-		--Header string.
-		frame.scrollChild.fs = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS", "ARTWORK");
-		frame.scrollChild.fs:SetPoint("TOP", 0, -0);
-		--The main display string.
-		frame.scrollChild.fs2 = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS2", "ARTWORK");
-		frame.scrollChild.fs2:SetPoint("TOPLEFT", 10, -24);
-		frame.scrollChild.fs2:SetJustifyH("LEFT");
-		--Bottom string.
-		frame.scrollChild.fs3 = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS3", "ARTWORK");
-		frame.scrollChild.fs3:SetPoint("BOTTOM", 0, -20);
-		--frame.scrollChild.fs3:SetFont(NIT.regionFont, 14);
-		--Top right X close button.
-		frame.close = CreateFrame("Button", "NITLootReminderListFrameClose", frame, "UIPanelCloseButton");
-		frame.close:SetPoint("TOPRIGHT", -22, -4);
-		frame.close:SetWidth(20);
-		frame.close:SetHeight(20);
-		frame.close:SetScript("OnClick", function(self, arg)
-			frame:Hide();
-		end)
-		frame.close:GetNormalTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetHighlightTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetPushedTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetDisabledTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame:SetFrameStrata("HIGH");
-		frame:SetClampedToScreen(true);
-		frame.scrollChild.fs:SetFont(NIT.regionFont, 14);
-		--frame.scrollChild.fs2:SetFontObject(Game15Font);
-		frame.scrollChild.fs2:SetFont(NIT.regionFont, 13);
-		frame.scrollChild.fs3:SetFont(NIT.regionFont, 13);
-		frame.scrollChild.fs:ClearAllPoints();
-		frame.scrollChild.fs2:ClearAllPoints();
-		frame.scrollChild.fs3:ClearAllPoints();
-		frame.scrollChild.fs:SetPoint("TOP", 0, -5);
-		frame.scrollChild.fs2:SetPoint("TOP", 0, -25);
-		frame.scrollChild.fs3:SetPoint("TOPLEFT", 10, -48);
-		frame.scrollChild.fs3:SetPoint("RIGHT", 0, -48);
-		frame.scrollChild.fs3:SetJustifyH("LEFT");
-		frame.scrollChild.fs3:CanWordWrap(true);
-		frame.scrollChild.fs3:CanNonSpaceWrap(true);
-		frame.scrollChild.fs3:SetNonSpaceWrap(true);
-		frame.scrollChild.fs3:SetWordWrap(true);
-		frame.scrollChild.fs:SetText("|TInterface\\AddOns\\NovaInstanceTracker\\Media\\portal:16:16:0:0|t  |cFF00FF00Nova Instance Tracker");
-		frame.scrollChild.fs2:SetText("|cFFFFFF00New in version|r |cFFFF6900" .. string.format("%.2f", NIT.version));
-		frame:Hide();
-		lootReminderListFrame = frame;
-	end
-	lootReminderListFrame.scrollChild.fs:SetText("|cFFFFFFFFNIT Loot Reminder Daily List|r\n|cFF1EFF00[" .. L["Tarnished Undermine Real"] .. "]|r");
-	local text = "\n";
-	local count = 0;
-	for instanceID, instanceName in NIT:pairsByKeys(dungeons) do
-		count = count + 1;
-		if (count == 1) then
-			text = text .. "|cFFFFFF00" .. instanceName .. "|r";
-		else
-			text = text .. "\n\n|cFFFFFF00" .. instanceName .. "|r";
-		end
-		count = count + 1;
-		local sorted = {};
-		local lootedCount = 0;
-		for k, v in pairs(turBosses) do
-			if (v.instanceID == instanceID) then
-				local t = {
-					npcID = k,
-					name = v.name,
-					order = v.order,
-					instanceID = v.instanceID,
-					header = v.header,
-					title = v.title,
-				};
-				tinsert(sorted, t);
-			end
-		end
-		table.sort(sorted, function(a, b) return a.order < b.order end);
-		for k, v in ipairs(sorted) do
-			count = count + 1;
-			if (v.header) then
-				local headerString = "|cFF9CD6DE[" .. v.title  .. "]|r";
-				if (count == 1) then
-					text = text .. headerString;
-				else
-					text = text .. "\n" .. headerString;
-				end
-			else
-				local looted, isKilledButNotLooted = getLootedStatus(v.npcID, 226404);
-				local lootedString;
-				if (isKilledButNotLooted) then
-					lootedString = "|cFFFF6900(" .. L["Killed But Not Looted"] .. ")|r";
-				elseif (looted) then
-					lootedString = "|cFF00FF00(" .. L["Looted"] .. ")|r";
-					lootedCount = lootedCount + 1;
-				else
-					lootedString = "|cFFFF0000(" .. L["Not Looted"] .. ")|r";
-				end
-				if (count == 1) then
-					text = text .. "|cFFFFAE42".. v.name .. "|r  " .. lootedString;
-				else
-					text = text .. "\n|cFFFFAE42" .. v.name .. "|r  " .. lootedString;
-				end
-			end
-		end
-	end
-	lootReminderListFrame.scrollChild.fs2:SetText(text);
-	--newVersionFrame:SetSize(600, 50 + newVersionFrame.scrollChild.fs:GetStringHeight() + newVersionFrame.scrollChild.fs2:GetStringHeight() + newVersionFrame.scrollChild.fs3:GetStringHeight());
-	lootReminderListFrame:Show();
-end
-
 function NIT:argentDawnTrinketReminder()
 	if (not NIT.db.global.argentDawnTrinketReminder) then
 		return;
@@ -745,3 +579,167 @@ f:SetScript('OnEvent', function(self, event, ...)
 	--	lootClosed();
 	end
 end)
+
+function NIT:loadLootReminderListFrame()
+	if (not lootReminderListFrame) then
+		local frame = CreateFrame("Frame", "NITLootReminderListFrame", UIParent, "BackdropTemplate");
+		frame.scrollFrame = CreateFrame("ScrollFrame", "$parentScrollFrame", frame, "UIPanelScrollFrameTemplate");
+		--frame.scrollFrame:SetAllPoints();
+		frame.scrollChild = CreateFrame("Frame", "$parentScrollChild", frame.scrollFrame);
+		frame.scrollFrame:SetScrollChild(frame.scrollChild);
+		--frame.scrollChild:SetWidth(frame:GetWidth() - 30);
+		frame.scrollChild:SetAllPoints();
+		frame.scrollChild:SetPoint("RIGHT", -40, 0);
+		frame.scrollChild:SetPoint("TOP", 0, -20);
+		frame.scrollChild:SetHeight(1);
+		frame.scrollChild:SetScript("OnSizeChanged", function(self,event)
+			frame.scrollChild:SetWidth(self:GetWidth())
+		end)
+		frame.scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -8);
+		frame.scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 8);
+		
+		frame:SetBackdrop({
+			bgFile = "Interface\\Buttons\\WHITE8x8",
+			insets = {top = 4, left = 4, bottom = 4, right = 4},
+			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+			tileEdge = true,
+			edgeSize = 16,
+		});
+		frame:SetBackdropColor(0, 0, 0, 0.9);
+		frame:SetBackdropBorderColor(1, 1, 1, 0.7);
+		frame.scrollFrame.ScrollBar:ClearAllPoints();
+		frame.scrollFrame.ScrollBar:SetPoint("TOPRIGHT", -5, -(frame.scrollFrame.ScrollBar.ScrollDownButton:GetHeight()) + 1);
+		frame.scrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", -5, frame.scrollFrame.ScrollBar.ScrollUpButton:GetHeight());
+		frame:SetToplevel(true);
+		frame:SetMovable(true);
+		frame:EnableMouse(true);
+		frame:SetUserPlaced(false);
+		frame:SetPoint("CENTER", UIParent, 0, 100);
+		frame:SetSize(500, 670);
+		frame:SetFrameStrata("HIGH");
+		frame:SetFrameLevel(140);
+		frame:SetScript("OnMouseDown", function(self, button)
+			if (button == "LeftButton" and not self.isMoving) then
+				self:StartMoving();
+				self.isMoving = true;
+			end
+		end)
+		frame:SetScript("OnMouseUp", function(self, button)
+			if (button == "LeftButton" and self.isMoving) then
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+			end
+		end)
+		frame:SetScript("OnHide", function(self)
+			if (self.isMoving) then
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+			end
+		end)
+		frame.scrollChild:EnableMouse(true);
+		--frame.scrollChild:SetHyperlinksEnabled(true);
+		--frame.scrollChild:SetScript("OnHyperlinkClick", ChatFrame_OnHyperlinkShow);
+		--Set all fonts in the module using the frame.
+		--Header string.
+		frame.scrollChild.fs = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS", "ARTWORK");
+		frame.scrollChild.fs:SetPoint("TOP", 0, -0);
+		--The main display string.
+		frame.scrollChild.fs2 = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS2", "ARTWORK");
+		frame.scrollChild.fs2:SetPoint("TOPLEFT", 10, -24);
+		frame.scrollChild.fs2:SetJustifyH("LEFT");
+		--Bottom string.
+		frame.scrollChild.fs3 = frame.scrollChild:CreateFontString("NITLootReminderListFrameFS3", "ARTWORK");
+		frame.scrollChild.fs3:SetPoint("BOTTOM", 0, -20);
+		--frame.scrollChild.fs3:SetFont(NIT.regionFont, 14);
+		--Top right X close button.
+		frame.close = CreateFrame("Button", "NITLootReminderListFrameClose", frame, "UIPanelCloseButton");
+		frame.close:SetPoint("TOPRIGHT", -22, -4);
+		frame.close:SetWidth(20);
+		frame.close:SetHeight(20);
+		frame.close:SetScript("OnClick", function(self, arg)
+			frame:Hide();
+		end)
+		frame.close:GetNormalTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
+		frame.close:GetHighlightTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
+		frame.close:GetPushedTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
+		frame.close:GetDisabledTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
+		frame:SetFrameStrata("HIGH");
+		frame:SetClampedToScreen(true);
+		frame.scrollChild.fs:SetFont(NIT.regionFont, 14);
+		--frame.scrollChild.fs2:SetFontObject(Game15Font);
+		frame.scrollChild.fs2:SetFont(NIT.regionFont, 13);
+		frame.scrollChild.fs3:SetFont(NIT.regionFont, 13);
+		frame.scrollChild.fs:ClearAllPoints();
+		frame.scrollChild.fs2:ClearAllPoints();
+		frame.scrollChild.fs3:ClearAllPoints();
+		frame.scrollChild.fs:SetPoint("TOP", 0, -5);
+		frame.scrollChild.fs2:SetPoint("TOP", 0, -25);
+		frame.scrollChild.fs3:SetPoint("TOPLEFT", 10, -48);
+		frame.scrollChild.fs3:SetPoint("RIGHT", 0, -48);
+		frame.scrollChild.fs3:SetJustifyH("LEFT");
+		frame.scrollChild.fs3:CanWordWrap(true);
+		frame.scrollChild.fs3:CanNonSpaceWrap(true);
+		frame.scrollChild.fs3:SetNonSpaceWrap(true);
+		frame.scrollChild.fs3:SetWordWrap(true);
+		frame:Hide();
+		lootReminderListFrame = frame;
+	end
+	lootReminderListFrame.scrollChild.fs:SetText("|cFFFFFFFFNIT Loot Reminder Daily List|r\n|cFF1EFF00[" .. L["Tarnished Undermine Real"] .. "]|r");
+	local text = "\n";
+	local count = 0;
+	for instanceID, instanceName in NIT:pairsByKeys(dungeons) do
+		count = count + 1;
+		if (count == 1) then
+			text = text .. "|cFFFFFF00" .. instanceName .. "|r";
+		else
+			text = text .. "\n\n|cFFFFFF00" .. instanceName .. "|r";
+		end
+		count = count + 1;
+		local sorted = {};
+		local lootedCount = 0;
+		for k, v in pairs(turBosses) do
+			if (v.instanceID == instanceID) then
+				local t = {
+					npcID = k,
+					name = v.name,
+					order = v.order,
+					instanceID = v.instanceID,
+					header = v.header,
+					title = v.title,
+				};
+				tinsert(sorted, t);
+			end
+		end
+		table.sort(sorted, function(a, b) return a.order < b.order end);
+		for k, v in ipairs(sorted) do
+			count = count + 1;
+			if (v.header) then
+				local headerString = "|cFF9CD6DE[" .. v.title  .. "]|r";
+				if (count == 1) then
+					text = text .. headerString;
+				else
+					text = text .. "\n" .. headerString;
+				end
+			else
+				local looted, isKilledButNotLooted = getLootedStatus(v.npcID, 226404);
+				local lootedString;
+				if (isKilledButNotLooted) then
+					lootedString = "|cFFFF6900(" .. L["Killed But Not Looted"] .. ")|r";
+				elseif (looted) then
+					lootedString = "|cFF00FF00(" .. L["Looted"] .. ")|r";
+					lootedCount = lootedCount + 1;
+				else
+					lootedString = "|cFFFF0000(" .. L["Not Looted"] .. ")|r";
+				end
+				if (count == 1) then
+					text = text .. "|cFFFFAE42".. v.name .. "|r  " .. lootedString;
+				else
+					text = text .. "\n|cFFFFAE42" .. v.name .. "|r  " .. lootedString;
+				end
+			end
+		end
+	end
+	lootReminderListFrame.scrollChild.fs2:SetText(text);
+	--newVersionFrame:SetSize(600, 50 + newVersionFrame.scrollChild.fs:GetStringHeight() + newVersionFrame.scrollChild.fs2:GetStringHeight() + newVersionFrame.scrollChild.fs3:GetStringHeight());
+	lootReminderListFrame:Show();
+end

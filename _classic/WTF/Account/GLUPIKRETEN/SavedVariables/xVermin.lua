@@ -8,6 +8,9 @@ xVerminSavedData = {
 ["Antu'sul"] = {
 "Impact",
 },
+["Harvest Reaper"] = {
+"Rend",
+},
 ["Searing Totem II"] = {
 "Rend",
 "Sunder Armor",
@@ -254,10 +257,6 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -269,6 +268,10 @@ xVerminSavedData = {
 "Starfire Stun",
 "Electrocutioner's Shock",
 "Chimera Shot",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
 },
 ["Unfettered Spirit"] = {
 "Deep Wound",
@@ -345,8 +348,9 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Ironspine"] = {
-"Rend",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Ruuzlu"] = {
 "Charge Stun",
@@ -386,9 +390,9 @@ xVerminSavedData = {
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -400,9 +404,9 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
@@ -437,9 +441,8 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Ironspine"] = {
+"Rend",
 },
 ["Wailing Highborne"] = {
 "Rend",

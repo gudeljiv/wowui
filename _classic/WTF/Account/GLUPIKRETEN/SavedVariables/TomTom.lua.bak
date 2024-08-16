@@ -266,37 +266,6 @@ TomTomWaypointsM = {
 ["Vermins - Stitches"] = {
 },
 ["Mq - Celebras"] = {
-[1439] = {
-["1439:423471882.64059:618092909.53545:Ancient Flame"] = {
-1439,
-0.4234718826405868,
-0.6180929095354524,
-["arrivaldistance"] = 15,
-["callbacks"] = {
-["distance"] = {
-[10] = nil --[[ skipped inline function ]],
-[15] = nil --[[ skipped inline function ]],
-},
-["world"] = {
-["onclick"] = nil --[[ skipped inline function ]],
-["tooltip_update"] = nil --[[ skipped inline function ]],
-["tooltip_show"] = nil --[[ skipped inline function ]],
-},
-["minimap"] = {
-["onclick"] = nil --[[ skipped inline function ]],
-["tooltip_update"] = nil --[[ skipped inline function ]],
-["tooltip_show"] = nil --[[ skipped inline function ]],
-},
-},
-["persistent"] = true,
-["minimap"] = true,
-["cleardistance"] = 10,
-["title"] = "Ancient Flame",
-["from"] = "?",
-["crazy"] = true,
-["world"] = true,
-},
-},
 },
 ["Battlenac - Celebras"] = {
 },
