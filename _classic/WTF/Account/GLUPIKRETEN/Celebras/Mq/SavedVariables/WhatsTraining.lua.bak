@@ -19,6 +19,10 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
+["Bite"] = {
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
 }
 WT_NeedsToOpenBeastTraining = false
 WT_IgnoredSpells = {

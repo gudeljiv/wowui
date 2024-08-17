@@ -39,6 +39,6 @@ VER 3 0000000001000001 "sting" "134400"
 #showtooltip
 /petattack
 /startattack
-/cast Serpent Sting
+/cast concussive shot
 /cast !Auto Shot
 END

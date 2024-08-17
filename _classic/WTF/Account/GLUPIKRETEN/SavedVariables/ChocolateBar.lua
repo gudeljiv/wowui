@@ -929,14 +929,14 @@ CB_PlayedTime = {
 ["total"] = 3014,
 },
 ["Battlenac-Celebras"] = {
-["total"] = 234,
-["timeStamp"] = 3790083.348,
+["total"] = 1249,
+["timeStamp"] = 214375.353,
 ["timeAtThisLevel"] = 0,
 },
 ["Vbank-Celebras"] = {
-["total"] = 641,
-["timeStamp"] = 4052945.091,
-["timeAtThisLevel"] = 641,
+["total"] = 860,
+["timeStamp"] = 227456.644,
+["timeAtThisLevel"] = 860,
 },
 ["Vermin-ZandalarTribe"] = {
 ["total"] = 6357,
@@ -1062,9 +1062,9 @@ CB_PlayedTime = {
 ["total"] = 140587,
 },
 ["Mq-Celebras"] = {
-["total"] = 30273,
-["timeStamp"] = 74352.048,
-["timeAtThisLevel"] = 0,
+["total"] = 39054,
+["timeStamp"] = 233209.585,
+["timeAtThisLevel"] = 3041,
 },
 ["Dopecoil-LoneWolf"] = {
 ["total"] = 10261,
@@ -1078,9 +1078,9 @@ CB_PlayedTime = {
 ["total"] = 79871,
 },
 ["Vermin-Celebras"] = {
-["total"] = 70138,
-["timeAtThisLevel"] = 2554,
-["timeStamp"] = 4049776.431,
+["total"] = 88707,
+["timeAtThisLevel"] = 3310,
+["timeStamp"] = 227362.814,
 },
 ["Dopebolt-LoneWolf"] = {
 ["total"] = 1204,

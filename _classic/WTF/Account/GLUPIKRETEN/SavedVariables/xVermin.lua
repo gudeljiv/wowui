@@ -11,6 +11,9 @@ xVerminSavedData = {
 ["Harvest Reaper"] = {
 "Rend",
 },
+["Defias Evoker"] = {
+"Fire Blast",
+},
 ["Searing Totem II"] = {
 "Rend",
 "Sunder Armor",
@@ -177,12 +180,8 @@ xVerminSavedData = {
 ["Boiling Elemental"] = {
 "Instant Poison",
 },
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
-},
-["Primordial Behemoth"] = {
-"Concussive Shot",
+["Sneed's Shredder"] = {
+"Rend",
 },
 ["Herod"] = {
 "Arcane Shot",
@@ -215,21 +214,29 @@ xVerminSavedData = {
 "Pounce",
 "Starfire Stun",
 },
-["Shadowshard Rumbler"] = {
-"Lightning Shield",
-"Chain Lightning",
+["Burning Destroyer"] = {
+"Lava Lash",
+"Serpent Sting",
+},
+["Primordial Behemoth"] = {
+"Concussive Shot",
 },
 ["Bristleback Geomancer"] = {
 "Firebolt",
 "Incinerate",
 },
-["Stone Behemoth"] = {
-"Rend",
+["Shadowshard Rumbler"] = {
+"Lightning Shield",
+"Chain Lightning",
 },
 ["High Inquisitor Whitemane"] = {
 "Intercept Stun",
 "Intimidation",
 "Crippling Poison",
+},
+["Stone Behemoth"] = {
+"Rend",
+"Serpent Sting",
 },
 ["Ambershard Destroyer"] = {
 "Lightning Shield",
@@ -249,6 +256,10 @@ xVerminSavedData = {
 "Earth Shock",
 "Intimidation",
 },
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -257,9 +268,8 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
+["Unfettered Spirit"] = {
+"Deep Wound",
 },
 ["Larsera"] = {
 "Serpent Sting",
@@ -273,8 +283,9 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Unfettered Spirit"] = {
-"Deep Wound",
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -309,10 +320,6 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
-},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -328,8 +335,12 @@ xVerminSavedData = {
 "Living Bomb",
 "Molten Blast",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+},
+["Lord Vyletongue"] = {
+"Blackout",
+"Impact",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
@@ -338,15 +349,12 @@ xVerminSavedData = {
 ["Sandfury Shadowcaster"] = {
 "Earthbind",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
-["Whirling Tempest"] = {
-"Lightning Shield",
-"Earth Shock",
-"Chain Lightning",
-"Lightning Bolt",
-"Serpent Sting",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Ironspine"] = {
 "Rend",
@@ -355,30 +363,24 @@ xVerminSavedData = {
 "Charge Stun",
 "Impact",
 },
-["Lord Vyletongue"] = {
-"Blackout",
-"Impact",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
+["Remote-Controlled Golem"] = {
+"Rend",
+},
+["Rock Elemental"] = {
 "Serpent Sting",
 },
 ["Sea Elemental"] = {
 "Frost Shock",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
 },
 ["Jazzter"] = {
 "Fireball",
@@ -386,8 +388,9 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
@@ -403,9 +406,13 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
@@ -440,9 +447,12 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Whirling Tempest"] = {
+"Lightning Shield",
+"Earth Shock",
+"Chain Lightning",
+"Lightning Bolt",
+"Serpent Sting",
 },
 ["Wailing Highborne"] = {
 "Rend",
@@ -502,10 +512,7 @@ xVerminSavedData = {
 },
 ["Cracked Golem"] = {
 "Rend",
-},
-["Furious Stone Spirit"] = {
-"Lightning Shield",
 "Serpent Sting",
 },
-},
-}
+["Furious Stone Spirit"] = {
+"Lightning Shi
