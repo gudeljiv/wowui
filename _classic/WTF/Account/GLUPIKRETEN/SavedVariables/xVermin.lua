@@ -257,6 +257,10 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -268,10 +272,6 @@ xVerminSavedData = {
 "Starfire Stun",
 "Electrocutioner's Shock",
 "Chimera Shot",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
 },
 ["Unfettered Spirit"] = {
 "Deep Wound",
@@ -348,9 +348,8 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Ironspine"] = {
+"Rend",
 },
 ["Ruuzlu"] = {
 "Charge Stun",
@@ -390,9 +389,9 @@ xVerminSavedData = {
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -404,9 +403,9 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
@@ -441,8 +440,9 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Ironspine"] = {
-"Rend",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Wailing Highborne"] = {
 "Rend",

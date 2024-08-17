@@ -228,9 +228,17 @@ xVerminSavedData = {
 ["Constrictor Vine"] = {
 "Earthbind",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
+["Larsera"] = {
 "Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
 },
 ["Dianastalion"] = {
 "Stormstrike",
@@ -301,12 +309,12 @@ xVerminSavedData = {
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
+["Ironspine"] = {
+"Rend",
+},
 ["Entropic Horror"] = {
 "Lava Lash",
 "Flame Shock",
-},
-["Ironspine"] = {
-"Rend",
 },
 ["Ruuzlu"] = {
 "Charge Stun",
@@ -361,13 +369,13 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
-},
 ["Bound Elemental"] = {
 "Lightning Shield",
 "Rend",
+},
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -420,17 +428,9 @@ xVerminSavedData = {
 ["Unfettered Spirit"] = {
 "Deep Wound",
 },
-["Larsera"] = {
+["Ambershard Crusher"] = {
+"Chain Lightning",
 "Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
 },
 ["Princess Theradras"] = {
 "Lightning Shield",

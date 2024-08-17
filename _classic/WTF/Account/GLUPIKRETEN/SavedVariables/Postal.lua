@@ -153,8 +153,8 @@ Postal3DB = {
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
-"Mq|Celebras|Alliance",
 "Vbank|Celebras|Alliance",
+"Mq|Celebras|Alliance",
 },
 },
 },
