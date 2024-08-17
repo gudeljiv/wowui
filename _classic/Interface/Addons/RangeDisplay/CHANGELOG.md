@@ -1,6 +1,6 @@
 # RangeDisplay
 
-## [v6.1.2](https://github.com/mitchnull/RangeDisplay/tree/v6.1.2) (2024-06-14)
-[Full Changelog](https://github.com/mitchnull/RangeDisplay/compare/v6.1.1...v6.1.2) 
+## [v6.1.4](https://github.com/mitchnull/RangeDisplay/tree/v6.1.4) (2024-08-16)
+[Full Changelog](https://github.com/mitchnull/RangeDisplay/compare/v6.1.3...v6.1.4) 
 
-- bump  
+- fix LoadAddOn  
