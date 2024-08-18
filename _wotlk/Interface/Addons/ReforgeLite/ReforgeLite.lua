@@ -5,7 +5,7 @@ local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.1"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.2"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -32,12 +32,6 @@ local function DeepCopy (t, cache)
   return copy
 end
 addonTable.DeepCopy = DeepCopy
-
-local function round(v, bracket)
-	bracket = bracket or 1
-	return floor(v/bracket + ((v >= 0 and 1) or -1) * 0.5) * bracket
-end
-addonTable.round = round
 
 local gprint = print
 local function print(...)
@@ -513,7 +507,7 @@ function ReforgeLite:ParsePawnString (values)
     factor = 100
   end
   for k, v in pairs (raw) do
-    raw[k] = floor (v * factor + 0.5)
+    raw[k] = Round(v * factor)
   end
 
   local weights = {}
@@ -998,26 +992,34 @@ function ReforgeLite:AddCapPoint (i, loading)
     local cap = self.pdb.caps[i]
     if cap.stat == self.STATS.SPIRIT then return end
     local pointValue = (cap.points[point].value or 0)
-    local rating = round(pointValue / self:RatingPerPoint(cap.stat), 0.01)
+    local rating = pointValue / self:RatingPerPoint(cap.stat)
     if cap.stat == self.STATS.HIT then
       local meleeHitBonus = self:GetMeleeHitBonus()
       if meleeHitBonus > 0 then
-        rating = ("%s%% + %s%% = %s"):format(rating, meleeHitBonus, rating + meleeHitBonus)
+        rating = ("%.2f%% + %s%% = %.2f"):format(rating, meleeHitBonus, rating + meleeHitBonus)
+      else
+        rating = ("%.2f"):format(rating)
       end
-      local spellHitRating = round(pointValue / self:RatingPerPoint(self.STATS.SPELLHIT), 0.01)
+      local spellHitRating = pointValue / self:RatingPerPoint(self.STATS.SPELLHIT)
       local spellHitBonus = self:GetSpellHitBonus()
       if spellHitBonus > 0 then
-        spellHitRating = ("%s%% + %s%% = %s"):format(spellHitRating,spellHitBonus,spellHitRating+spellHitBonus)
+        spellHitRating = ("%.2f%% + %s%% = %.2f"):format(spellHitRating,spellHitBonus,spellHitRating+spellHitBonus)
+      else
+        spellHitRating = ("%.2f"):format(spellHitRating)
       end
       rating = ("%s: %s%%\n%s: %s%%"):format(MELEE, rating, STAT_CATEGORY_SPELL, spellHitRating)
     elseif cap.stat == self.STATS.EXP then
       local expBonus = self:GetExpertiseBonus()
       if expBonus > 0 then
-        rating = ("%s + %s = %s"):format(rating, expBonus, rating + expBonus)
+        rating = ("%.2f + %s = %.2f"):format(rating, expBonus, rating + expBonus)
+      else
+        rating = ("%.2f"):format(rating)
       end
     elseif cap.stat == self.STATS.HASTE then
       local meleeHaste, rangedHaste, spellHaste = self:CalcHasteWithBonuses(rating)
       rating = ("%s: %.2f\n%s: %.2f\n%s: %.2f"):format(MELEE, meleeHaste, RANGED, rangedHaste, STAT_CATEGORY_SPELL, spellHaste)
+    else
+      rating = ("%.2f"):format(rating)
     end
     return ("%s\n%s"):format(L["Cap value"], rating)
   end)
@@ -1777,7 +1779,7 @@ function ReforgeLite:RefreshMethodStats (relax)
       else
         self.methodTank:Hide2 ()
       end
-      self.methodStats.score:SetText (floor (score + 0.5))
+      self.methodStats.score:SetText (Round(score))
       SetTextDelta (self.methodStats.scoreDelta, score, self:GetCurrentScore ())
       for i, v in ipairs (self.itemStats) do
         local mvalue = v.mgetter (self.pdb.method)
@@ -1964,10 +1966,10 @@ function ReforgeLite:UpdateItems()
   if playerClass == "PRIEST" then
     local pts = select(5, GetTalentInfo (3, 20))
     self.s2hFactor = pts * 50
-  elseif playerClass == "DRUID" then
+  elseif playerClass == "DRUID" and GetPrimaryTalentTree () ~= 2 then
     local pts = select(5, GetTalentInfo (1, 7))
     self.s2hFactor = pts * 50
-  elseif playerClass == "SHAMAN" then
+  elseif playerClass == "SHAMAN" and GetPrimaryTalentTree () ~= 2 then
     local pts = select(5, GetTalentInfo (1, 9))
     self.s2hFactor = (pts == 3 and 100 or pts * 33)
   elseif playerClass == "PALADIN" then
@@ -2209,8 +2211,8 @@ function ReforgeLite:IsReforgeMatching (slotId, reforge, override)
     deltas[dst] = deltas[dst] + amount
   end
 
-  deltas[self.STATS.SPIRIT] = floor (deltas[self.STATS.SPIRIT] * self.spiritBonus + 0.5)
-  deltas[self.STATS.HIT] = deltas[self.STATS.HIT] + floor (deltas[self.STATS.SPIRIT] * self.s2hFactor / 100 + 0.5)
+  deltas[self.STATS.SPIRIT] = Round(deltas[self.STATS.SPIRIT] * self.spiritBonus)
+  deltas[self.STATS.HIT] = deltas[self.STATS.HIT] + Round(deltas[self.STATS.SPIRIT] * self.s2hFactor / 100)
 
   for i = 1, #self.itemStats do
     if self:GetStatScore (i, self.pdb.method.stats[i]) ~= self:GetStatScore (i, self.pdb.method.stats[i] - deltas[i]) then
