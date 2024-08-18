@@ -2,19 +2,19 @@
 GMMONEY = {
 ["Celebras"] = {
 ["Vbank"] = {
-["GOLD"] = 3796,
+["GOLD"] = 3436,
 ["CLASS"] = "WARRIOR",
 },
 ["Battlenac"] = {
-["GOLD"] = 0,
+["GOLD"] = 192,
 ["CLASS"] = "PRIEST",
 },
 ["Mq"] = {
-["GOLD"] = 15232,
+["GOLD"] = 24923,
 ["CLASS"] = "HUNTER",
 },
 ["Vermin"] = {
-["GOLD"] = 5751,
+["GOLD"] = 2355,
 ["CLASS"] = "WARRIOR",
 },
 },

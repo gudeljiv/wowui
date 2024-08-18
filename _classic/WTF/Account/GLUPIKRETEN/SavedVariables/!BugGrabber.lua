@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12644,
+["session"] = 12652,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -3640,14 +3640,6 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
-["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RingMenu' tried to call the protected function 'SpellStopCasting()'.",
-["time"] = "2023/09/09 12:26:26",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SpellStopCasting'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3497: in function `ToggleGameMenu'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:347: in function `TransitionBackOpeningPanel'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:336: in function `ExitWithCommit'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:305: in function `Close'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:71: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:70>",
-["session"] = 12358,
-["counter"] = 11,
-},
-{
 ["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CheckInteractDistance()'.",
 ["time"] = "2024/04/09 08:39:15",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
@@ -4038,20 +4030,6 @@ BugGrabberDB = {
 ["counter"] = 36,
 },
 {
-["message"] = ".../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
-["time"] = "2024/08/12 16:12:58",
-["locals"] = "(*temporary) = \"Blizzard_APIDocumentationGenerated\"\n = <userdata>\n = <userdata>\n",
-["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:227: in function `UIParentLoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:321: in function `APIDocumentation_LoadUI'\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:47: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:26>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:65: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:58>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:210: in function `enable'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:194: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:159>\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:1055: in function `TextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/WeakAurasOptions.lua\"]:924: in function `OpenTextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/CommonOptions.lua\"]:1603: in function <Interface/AddOns/WeakAurasOptions/CommonOptions.lua:1602>",
-["session"] = 12592,
-["counter"] = 1,
-},
-{
-["message"] = "Interface/AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:1 .../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
-["time"] = "2024/08/12 16:12:58",
-["session"] = 12592,
-["counter"] = 2,
-},
-{
 ["message"] = "bad argument #1 to '?' (Usage: local result = C_Item.IsItemInRange(itemInfo, targetToken))",
 ["time"] = "2024/08/14 08:24:45",
 ["locals"] = "(*temporary) = \"bad argument #1 to '?' (Usage: local result = C_Item.IsItemInRange(itemInfo, targetToken))\"\n",
@@ -4090,20 +4068,50 @@ BugGrabberDB = {
 ["counter"] = 19,
 },
 {
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
-["time"] = "2024/02/07 16:32:18",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
-["session"] = 12640,
-["counter"] = 15,
+["message"] = ".../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
+["time"] = "2024/08/12 16:12:58",
+["locals"] = "(*temporary) = \"Blizzard_APIDocumentationGenerated\"\n = <userdata>\n = <userdata>\n",
+["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:227: in function `UIParentLoadAddOn'\n[string \"@Interface/AddOns/Blizzard_UIParent/Vanilla/UIParent.lua\"]:321: in function `APIDocumentation_LoadUI'\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:47: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:26>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:65: in function <...bs/LibAPIAutoComplete-1.0/LibAPIAutoComplete-1.0.lua:58>\n[string \"@Interface/AddOns/WeakAurasOptions/Libs/LibAPIAutoComplete-1.0-3/LibAPIAutoComplete-1.0.lua\"]:210: in function `enable'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:194: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:159>\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:1055: in function `TextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/WeakAurasOptions.lua\"]:924: in function `OpenTextEditor'\n[string \"@Interface/AddOns/WeakAurasOptions/CommonOptions.lua\"]:1603: in function <Interface/AddOns/WeakAurasOptions/CommonOptions.lua:1602>",
+["session"] = 12648,
+["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:1 .../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
+["time"] = "2024/08/12 16:12:58",
+["session"] = 12648,
+["counter"] = 4,
+},
+{
+["message"] = "...face/AddOns/Blizzard_BuffFrame/Classic/BuffFrame.lua:292: script ran too long",
+["time"] = "2024/08/17 15:45:46",
+["locals"] = "auraButton = TempEnchant2 {\n 0 = <userdata>\n duration = TempEnchant2Duration {\n }\n count = TempEnchant2Count {\n }\n Shadow = TempEnchant2Background {\n }\n}\ntimeLeft = 1230.305000\nduration = TempEnchant2Duration {\n 0 = <userdata>\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = TempEnchant2Duration {\n 0 = <userdata>\n}\n(*temporary) = <function> defined @Interface/AddOns/nBuff/core.lua:17\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"script ran too long\"\n",
+["stack"] = "[string \"@Interface/AddOns/Blizzard_BuffFrame/Classic/BuffFrame.lua\"]:292: in function `AuraButton_UpdateDuration'\n[string \"@Interface/AddOns/Blizzard_BuffFrame/Classic/BuffFrame.lua\"]:488: in function `TemporaryEnchantFrame_Update'\n[string \"@Interface/AddOns/Blizzard_BuffFrame/Classic/BuffFrame.lua\"]:454: in function <...face/AddOns/Blizzard_BuffFrame/Classic/BuffFrame.lua:447>",
+["session"] = 12650,
+["counter"] = 1,
+},
+{
+["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RingMenu' tried to call the protected function 'SpellStopCasting()'.",
+["time"] = "2023/09/09 12:26:26",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SpellStopCasting'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3497: in function `ToggleGameMenu'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:347: in function `TransitionBackOpeningPanel'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:336: in function `ExitWithCommit'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:305: in function `Close'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:71: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:70>",
+["session"] = 12651,
+["counter"] = 12,
 },
 {
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12643,
-["counter"] = 79,
+["session"] = 12652,
+["counter"] = 85,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
+["time"] = "2024/02/07 16:32:18",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
+["session"] = 12652,
+["counter"] = 20,
 },
 },
 }

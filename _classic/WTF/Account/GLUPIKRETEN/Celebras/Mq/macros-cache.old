@@ -8,6 +8,7 @@ VER 3 0000000001000002 "arcane" "134400"
 #showtooltip
 /startattack
 /cast Arcane Shot
+/cast !Auto Shot
 END
 VER 3 0000000001000006 "blast" "134400"
 #showtooltip
@@ -26,6 +27,7 @@ VER 3 0000000001000003 "multi" "134400"
 #showtooltip
 /startattack
 /cast Multi-Shot
+/cast !Auto Shot
 END
 VER 3 0000000001000005 "revive" "134400"
 #showtooltip
