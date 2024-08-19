@@ -224,6 +224,7 @@ local TT_DefaultConfig = {
 	
 	-- anchors
 	enableAnchor = true,
+	
 	anchorWorldUnitType = "normal",
 	anchorWorldUnitPoint = "BOTTOMRIGHT",
 	anchorWorldTipType = "normal",
@@ -233,18 +234,18 @@ local TT_DefaultConfig = {
 	anchorFrameTipType = "normal",
 	anchorFrameTipPoint = "BOTTOMRIGHT",
 	
-	enableAnchorOverrideWorldUnitInCombat = false,
-	anchorWorldUnitTypeInCombat = "normal",
-	anchorWorldUnitPointInCombat = "BOTTOMRIGHT",
-	enableAnchorOverrideWorldTipInCombat = false,
-	anchorWorldTipTypeInCombat = "normal",
-	anchorWorldTipPointInCombat = "BOTTOMRIGHT",
-	enableAnchorOverrideFrameUnitInCombat = false,
-	anchorFrameUnitTypeInCombat = "normal",
-	anchorFrameUnitPointInCombat = "BOTTOMRIGHT",
-	enableAnchorOverrideFrameTipInCombat = false,
-	anchorFrameTipTypeInCombat = "normal",
-	anchorFrameTipPointInCombat = "BOTTOMRIGHT",
+	enableAnchorOverrideWorldUnitDuringChallengeMode = false,
+	anchorWorldUnitTypeDuringChallengeMode = "normal",
+	anchorWorldUnitPointDuringChallengeMode = "BOTTOMRIGHT",
+	enableAnchorOverrideWorldTipDuringChallengeMode = false,
+	anchorWorldTipTypeDuringChallengeMode = "normal",
+	anchorWorldTipPointDuringChallengeMode = "BOTTOMRIGHT",
+	enableAnchorOverrideFrameUnitDuringChallengeMode = false,
+	anchorFrameUnitTypeDuringChallengeMode = "normal",
+	anchorFrameUnitPointDuringChallengeMode = "BOTTOMRIGHT",
+	enableAnchorOverrideFrameTipDuringChallengeMode = false,
+	anchorFrameTipTypeDuringChallengeMode = "normal",
+	anchorFrameTipPointDuringChallengeMode = "BOTTOMRIGHT",
 	
 	enableAnchorOverrideWorldUnitDuringSkyriding = false,
 	anchorWorldUnitTypeDuringSkyriding = "normal",
@@ -259,6 +260,19 @@ local TT_DefaultConfig = {
 	anchorFrameTipTypeDuringSkyriding = "normal",
 	anchorFrameTipPointDuringSkyriding = "BOTTOMRIGHT",
 	
+	enableAnchorOverrideWorldUnitInCombat = false,
+	anchorWorldUnitTypeInCombat = "normal",
+	anchorWorldUnitPointInCombat = "BOTTOMRIGHT",
+	enableAnchorOverrideWorldTipInCombat = false,
+	anchorWorldTipTypeInCombat = "normal",
+	anchorWorldTipPointInCombat = "BOTTOMRIGHT",
+	enableAnchorOverrideFrameUnitInCombat = false,
+	anchorFrameUnitTypeInCombat = "normal",
+	anchorFrameUnitPointInCombat = "BOTTOMRIGHT",
+	enableAnchorOverrideFrameTipInCombat = false,
+	anchorFrameTipTypeInCombat = "normal",
+	anchorFrameTipPointInCombat = "BOTTOMRIGHT",
+	
 	enableAnchorOverrideCF = false,
 	anchorOverrideCFType = "normal",
 	anchorOverrideCFPoint = "BOTTOMRIGHT",
@@ -266,15 +280,26 @@ local TT_DefaultConfig = {
 	mouseOffsetX = 0,
 	mouseOffsetY = 0,
 	
-	-- combat
-	hideTipsWorldUnits = false,
-	hideTipsWorldTips = false,
-	hideTipsFrameUnits = false,
-	hideTipsFrameTips = false,
-	hideTipsUnitTips = false,
-	hideTipsSpellTips = false,
-	hideTipsItemTips = false,
-	hideTipsActionTips = false,
+	-- hiding
+	hideTipsDuringChallengeModeWorldUnits = false,
+	hideTipsDuringChallengeModeWorldTips = false,
+	hideTipsDuringChallengeModeFrameUnits = false,
+	hideTipsDuringChallengeModeFrameTips = false,
+	hideTipsDuringChallengeModeUnitTips = false,
+	hideTipsDuringChallengeModeSpellTips = false,
+	hideTipsDuringChallengeModeItemTips = false,
+	hideTipsDuringChallengeModeActionTips = false,
+	hideTipsDuringChallengeModeExpBarTips = false,
+	
+	hideTipsDuringSkyridingWorldUnits = false,
+	hideTipsDuringSkyridingWorldTips = false,
+	hideTipsDuringSkyridingFrameUnits = false,
+	hideTipsDuringSkyridingFrameTips = false,
+	hideTipsDuringSkyridingUnitTips = false,
+	hideTipsDuringSkyridingSpellTips = false,
+	hideTipsDuringSkyridingItemTips = false,
+	hideTipsDuringSkyridingActionTips = false,
+	hideTipsDuringSkyridingExpBarTips = false,
 	
 	hideTipsInCombatWorldUnits = false,
 	hideTipsInCombatWorldTips = false,
@@ -284,15 +309,17 @@ local TT_DefaultConfig = {
 	hideTipsInCombatSpellTips = false,
 	hideTipsInCombatItemTips = false,
 	hideTipsInCombatActionTips = false,
+	hideTipsInCombatExpBarTips = false,
 	
-	hideTipsDuringSkyridingWorldUnits = false,
-	hideTipsDuringSkyridingFrameUnits = false,
-	hideTipsDuringSkyridingWorldTips = false,
-	hideTipsDuringSkyridingFrameTips = false,
-	hideTipsDuringSkyridingUnitTips = false,
-	hideTipsDuringSkyridingSpellTips = false,
-	hideTipsDuringSkyridingItemTips = false,
-	hideTipsDuringSkyridingActionTips = false,
+	hideTipsWorldUnits = false,
+	hideTipsWorldTips = false,
+	hideTipsFrameUnits = false,
+	hideTipsFrameTips = false,
+	hideTipsUnitTips = false,
+	hideTipsSpellTips = false,
+	hideTipsItemTips = false,
+	hideTipsActionTips = false,
+	hideTipsExpBarTips = false,
 	
 	showHiddenModifierKey = "shift",
 	
@@ -380,7 +407,7 @@ TT_ExtendedConfig.tipsToModify = {
 			["ShoppingTooltip1"] = {
 				applyAppearance = true, applyScaling = true, applyAnchor = false,
 				hookFnForFrame = function(TT_CacheForFrames, tip)
-					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. This call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
+					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. this call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
 					-- update: fixed in df 10.1.5, but not in catac 4.4.0 or classic era 1.15.2.
 					
 					-- since df 10.0.2
@@ -394,7 +421,7 @@ TT_ExtendedConfig.tipsToModify = {
 			["ShoppingTooltip2"] = {
 				applyAppearance = true, applyScaling = true, applyAnchor = false,
 				hookFnForFrame = function(TT_CacheForFrames, tip)
-					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. This call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
+					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. this call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
 					-- update: fixed in df 10.1.5, but not in catac 4.4.0 or classic era 1.15.2.
 					
 					-- since df 10.0.2
@@ -453,7 +480,7 @@ TT_ExtendedConfig.tipsToModify = {
 			["ItemRefShoppingTooltip1"] = {
 				applyAppearance = true, applyScaling = true, applyAnchor = false,
 				hookFnForFrame = function(TT_CacheForFrames, tip)
-					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. This call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
+					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. this call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
 					-- update: fixed in df 10.1.5, but not in catac 4.4.0 or classic era 1.15.2.
 					
 					-- since df 10.0.2
@@ -467,7 +494,7 @@ TT_ExtendedConfig.tipsToModify = {
 			["ItemRefShoppingTooltip2"] = {
 				applyAppearance = true, applyScaling = true, applyAnchor = false,
 				hookFnForFrame = function(TT_CacheForFrames, tip)
-					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. This call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
+					-- workaround for blizzard bug in df 10.1.0: tooltipData won't be reset for (ItemRef)ShoopingTooltip1/2 because ClearHandlerInfo() won't be called in event OnHide. this call is missing in script handlers of ShoppingTooltipTemplate (see GameTooltip.xml). For GameTooltip this is included in function GameTooltip_OnHide().
 					-- update: fixed in df 10.1.5, but not in catac 4.4.0 or classic era 1.15.2.
 					
 					-- since df 10.0.2
@@ -1071,6 +1098,7 @@ tt:RegisterEvent("PLAYER_LOGIN");
 -- OnUnitTipResize                     unit tooltip is being resized                                                           TT_CacheForFrames, tooltip, currentDisplayParams, first
 -- OnUnitTipPostStyle                  after unit tooltip has been styled and has the final size                               TT_CacheForFrames, tooltip, currentDisplayParams, first
 --                                                                                                                             
+-- OnTipResized                        tooltip has been resized                                                                TT_CacheForFrames, tooltip, currentDisplayParams
 -- OnTipRescaled                       tooltip has been rescaled                                                               TT_CacheForFrames, tooltip, currentDisplayParams
 --                                                                                                                             
 -- OnTipResetCurrentDisplayParams      tooltip's current display parameters has to be reset                                    TT_CacheForFrames, tooltip, currentDisplayParams
@@ -2345,6 +2373,7 @@ function tt:SetPaddingToTip(tip)
 	
 	if (isItemTooltipShown) then
 		tip:SetPadding(0, 0, 0, 0);
+		tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 		
 		GameTooltip_CalculatePadding(tip);
 		
@@ -2372,6 +2401,7 @@ function tt:SetPaddingToTip(tip)
 	
 	-- set padding to tip
 	tip:SetPadding(newPaddingRight, newPaddingBottom, newPaddingLeft, newPaddingTop);
+	tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 	
 	if (isItemTooltipShown) then
 		if (isBottomFontStringShown) then
@@ -2385,7 +2415,62 @@ function tt:SetPaddingToTip(tip)
 end
 
 -- register for group events
+--
+-- use isHandlingSizeChange to prevent endless loop when handling size change
+local isHandlingSizeChange = false;
+ 
 LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
+	OnTipAddedToCache = function(self, TT_CacheForFrames, tip)
+		-- get tip parameters
+		local frameParams = TT_CacheForFrames[tip];
+		
+		if (not frameParams) then
+			return;
+		end
+		
+		local tipParams = frameParams.config;
+		
+		-- no hooking allowed
+		if (tipParams.noHooks) then
+			return;
+		end
+		
+		-- HOOK: tip's OnSizeChanged to monitor size changes
+		LibFroznFunctions:CallFunctionDelayed(tipParams.waitSecondsForHooking, function()
+			tip:HookScript("OnSizeChanged", function(tip)
+				-- check if we're currently handling size change
+				if (isHandlingSizeChange) then
+					return;
+				end
+				
+				isHandlingSizeChange = false;
+				
+				-- get current display parameters
+				local frameParams = TT_CacheForFrames[tip];
+				
+				if (not frameParams) then
+					return;
+				end
+				
+				local currentDisplayParams = frameParams.currentDisplayParams;
+				
+				-- current display parameters aren't set
+				if (not currentDisplayParams.isSet) and (not currentDisplayParams.isSetTemporarily) then
+					return;
+				end
+				
+				-- inform group that the tip has been resized
+				isHandlingSizeChange = true;
+				
+				LibFroznFunctions:FireGroupEvent(MOD_NAME, "OnTipResized", TT_CacheForFrames, tip, currentDisplayParams);
+				
+				-- set padding to tip
+				tt:SetPaddingToTip(tip);
+				
+				isHandlingSizeChange = false;
+			end);
+		end);
+	end,
 	OnApplyTipAppearanceAndHooking = function(self, TT_CacheForFrames, cfg, TT_ExtendedConfig)
 		-- HOOK: SharedTooltip_SetBackdropStyle() to reapply backdrop and padding if necessary (e.g. needed for OnTooltipSetItem() or AreaPOIPinMixin:OnMouseEnter() on world map (e.g. Torghast) or VignettePin on world map (e.g. weekly event in Maw))
 		hooksecurefunc("SharedTooltip_SetBackdropStyle", function(tip, style, embedded)
@@ -2999,7 +3084,7 @@ function tt:AnchorTipToMouse(tip)
 	
 	-- anchor tip to mouse position
 	if (anchorType == "mouse") then
-		local x, y = GetCursorPosition();
+		local x, y = LibFroznFunctions:GetCursorPosition();
 		
 		tip:ClearAllPoints();
 		tip:SetPoint(anchorPoint, UIParent, "BOTTOMLEFT", self:GetNearestPixelSize(tip, x + cfg.mouseOffsetX, false, true), self:GetNearestPixelSize(tip, y + cfg.mouseOffsetY, false, true));
@@ -3032,21 +3117,47 @@ function tt:GetAnchorPosition(tip)
 	local anchorFrameName = (mouseFocus == WorldFrame and "World" or "Frame") .. (isUnit and "Unit" or "Tip");
 	local var = "anchor" .. anchorFrameName;
 	
-	-- consider anchor override for in combat or during skyriding
-	local anchorOverride = (cfg["enableAnchorOverride" .. anchorFrameName .. "InCombat"] and UnitAffectingCombat("player") and "InCombat" or "");
+	-- consider anchor override during challenge mode, during skyriding or in combat
+	local anchorOverride = "";
 	
-	if (anchorOverride == "") then
-		local bonusBarIndex = GetBonusBarIndex(); -- skyriding bonus bar is 11
+	if (cfg["enableAnchorOverride" .. anchorFrameName .. "DuringChallengeMode"]) and (LibFroznFunctions.hasWoWFlavor.challengeMode) and (C_ChallengeMode.IsChallengeModeActive()) then
+		local difficultyID = select(3, GetInstanceInfo());
 		
-		anchorOverride = (cfg["enableAnchorOverride" .. anchorFrameName .. "DuringSkyriding"] and (bonusBarIndex == 11) and "DuringSkyriding" or "");
+		if (difficultyID) then
+			local isChallengeMode = select(4, GetDifficultyInfo(difficultyID));
+			
+			if (isChallengeMode) then
+				local timerID = GetWorldElapsedTimers();
+				local _, elapsedTime, timerType = GetWorldElapsedTime(timerID);
+				
+				if (timerType == LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE) and (elapsedTime >= 0) then
+					anchorOverride = "DuringChallengeMode";
+				end
+			end
+		end
 	end
 	
+	if (anchorOverride == "") and (cfg["enableAnchorOverride" .. anchorFrameName .. "DuringSkyriding"]) and (LibFroznFunctions.hasWoWFlavor.skyriding) then
+		local bonusBarIndex = GetBonusBarIndex(); -- skyriding bonus bar is 11
+		
+		if (bonusBarIndex == 11) then
+			anchorOverride = "DuringSkyriding";
+		end
+	end
+	
+	if (anchorOverride == "") and (cfg["enableAnchorOverride" .. anchorFrameName .. "InCombat"]) and (UnitAffectingCombat("player")) then
+		anchorOverride = "InCombat";
+	end
+	
+	-- get anchor position
 	local anchorType, anchorPoint = cfg[var .. "Type" .. anchorOverride], cfg[var .. "Point" .. anchorOverride];
 	
-	-- check for GameTooltip anchor overrides
+	-- check for other GameTooltip anchor overrides
 	if (tip == GameTooltip) then
 		-- override GameTooltip anchor for (Guild & Community) ChatFrame
-		if (cfg.enableAnchorOverrideCF) and (anchorFrameName == "FrameTip") and (not tip:IsForbidden()) and (LibFroznFunctions:IsFrameBackInFrameChain(tip:GetOwner(), {
+		local tipOwner = tip:GetOwner();
+		
+		if (cfg.enableAnchorOverrideCF) and (anchorFrameName == "FrameTip") and (not tip:IsForbidden()) and (LibFroznFunctions:IsFrameBackInFrameChain(tipOwner, {
 					"ChatFrame(%d+)",
 					(LibFroznFunctions:IsAddOnFinishedLoading("Blizzard_Communities") and CommunitiesFrame.Chat.MessageFrame)
 				}, 1)) then
@@ -3700,8 +3811,27 @@ LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
 -- register for group events
 LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
 	OnTipSetHidden = function(self, TT_CacheForFrames, tip, currentDisplayParams, tipContent)
+		-- determine if tip comes from experience bar
+		local isTipFromExpBar = false;
+		
+		if (tip == GameTooltip) then
+			if (LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar) then
+				local tipOwner = tip:GetOwner();
+				
+				if (tipOwner == LibFroznFunctions.hasWoWFlavor.experienceBarFrame) then
+					isTipFromExpBar = true;
+				end
+			else
+				local mouseFocus = LibFroznFunctions:GetMouseFocus();
+				
+				if (LibFroznFunctions:IsFrameBackInFrameChain(mouseFocus, { LibFroznFunctions.hasWoWFlavor.experienceBarFrame }, 2)) then
+					isTipFromExpBar = true;
+				end
+			end
+		end
+		
 		-- unhandled tip content
-		if (not LibFroznFunctions:ExistsInTable(tipContent, { TT_TIP_CONTENT.unit, TT_TIP_CONTENT.aura, TT_TIP_CONTENT.spell, TT_TIP_CONTENT.item, TT_TIP_CONTENT.action })) then
+		if (not LibFroznFunctions:ExistsInTable(tipContent, { TT_TIP_CONTENT.unit, TT_TIP_CONTENT.aura, TT_TIP_CONTENT.spell, TT_TIP_CONTENT.item, TT_TIP_CONTENT.action })) and (not isTipFromExpBar) then
 			return;
 		end
 		
@@ -3716,15 +3846,39 @@ LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
 			return;
 		end
 		
-		-- consider hiding tips in combat or during skyriding
-		local hidingTip = (UnitAffectingCombat("player") and "InCombat" or "");
+		-- consider hiding tips during challenge mode, during skyriding or in combat
+		local hidingTip = "";
 		
-		if (hidingTip == "") then
-			local bonusBarIndex = GetBonusBarIndex(); -- skyriding bonus bar is 11
+		if (LibFroznFunctions.hasWoWFlavor.challengeMode) and (C_ChallengeMode.IsChallengeModeActive()) then
+			local difficultyID = select(3, GetInstanceInfo());
 			
-			hidingTip = ((bonusBarIndex == 11) and "DuringSkyriding" or "");
+			if (difficultyID) then
+				local isChallengeMode = select(4, GetDifficultyInfo(difficultyID));
+				
+				if (isChallengeMode) then
+					local timerID = GetWorldElapsedTimers();
+					local _, elapsedTime, timerType = GetWorldElapsedTime(timerID);
+					
+					if (timerType == LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE) and (elapsedTime >= 0) then
+						hidingTip = "DuringChallengeMode";
+					end
+				end
+			end
 		end
 		
+		if (hidingTip == "") and (LibFroznFunctions.hasWoWFlavor.skyriding) then
+			local bonusBarIndex = GetBonusBarIndex(); -- skyriding bonus bar is 11
+			
+			if (bonusBarIndex == 11) then
+				hidingTip = "DuringSkyriding";
+			end
+		end
+		
+		if (hidingTip == "") and (UnitAffectingCombat("player")) then
+			hidingTip = "InCombat";
+		end
+		
+		-- check if tooltip needs to be hidden
 		if (currentDisplayParams.anchorFrameName) then
 			if (cfg["hideTips" .. hidingTip .. currentDisplayParams.anchorFrameName .. "s"]) then
 				currentDisplayParams.hideTip = true;
@@ -3732,7 +3886,7 @@ LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
 			end
 		end
 		
-		local tipContentName = ((tipContent == TT_TIP_CONTENT.unit) and "Unit") or (((tipContent == TT_TIP_CONTENT.aura) or (tipContent == TT_TIP_CONTENT.spell)) and "Spell") or ((tipContent == TT_TIP_CONTENT.item) and "Item") or ((tipContent == TT_TIP_CONTENT.action) and "Action");
+		local tipContentName = ((tipContent == TT_TIP_CONTENT.unit) and "Unit") or (((tipContent == TT_TIP_CONTENT.aura) or (tipContent == TT_TIP_CONTENT.spell)) and "Spell") or ((tipContent == TT_TIP_CONTENT.item) and "Item") or ((tipContent == TT_TIP_CONTENT.action) and "Action") or (isTipFromExpBar and "ExpBar");
 		
 		if (cfg["hideTips" .. hidingTip .. tipContentName .. "Tips"]) then
 			currentDisplayParams.hideTip = true;
