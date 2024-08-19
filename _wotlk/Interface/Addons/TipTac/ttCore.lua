@@ -583,6 +583,31 @@ TT_ExtendedConfig.tipsToModify = {
 				hooksecurefunc("LFGListApplicantMember_OnEnter", LFGLFAVSB_OnEnter_Hook);
 			end
 			
+			-- UIDropDownMenu
+			
+			-- HOOK: UIDropDownMenu_CreateFrames() to add the new frames
+			local last_UIDROPDOWNMENU_MAXLEVELS = 0;
+			
+			hooksecurefunc("UIDropDownMenu_CreateFrames", function(level, index)
+				for i = last_UIDROPDOWNMENU_MAXLEVELS + 1, UIDROPDOWNMENU_MAXLEVELS do -- see "UIDropDownMenu.lua"
+					tt:AddModifiedTipExtended("DropDownList" .. i, {
+						applyAppearance = true,
+						applyScaling = false, -- #todo: switch applyScaling from "false" to "true", but needed more coding to consider call of SetScale() in ToggleDropDownMenu() in "UIDropDownMenu.lua"
+						applyAnchor = false
+					});
+				end
+				
+				last_UIDROPDOWNMENU_MAXLEVELS = UIDROPDOWNMENU_MAXLEVELS;
+			end);
+			
+			-- HOOK: ToggleDropDownMenu() to reapply appearance because e.g. 1-pixel borders sometimes aren't displayed correctly
+			hooksecurefunc("ToggleDropDownMenu", function(level, value, dropDownFrame, anchorName, xOffset, yOffset, menuList, button, autoHideDelay)
+				-- reapply appearance to tip
+				local tip = _G["DropDownList" .. (level or 1)];
+				
+				tt:SetAppearanceToTip(tip);
+			end);
+			
 			-- LibQTip-1.0, e.g. used by addon Broker_Location
 			local LibQTip = LibStub:GetLibrary("LibQTip-1.0", true);
 			
@@ -803,10 +828,6 @@ TT_ExtendedConfig.tipsToModify = {
 		}
 	}
 };
-
-for i = 1, UIDROPDOWNMENU_MAXLEVELS do -- see "UIDropDownMenu.lua"
-	TT_ExtendedConfig.tipsToModify[MOD_NAME].frames["DropDownList" .. i] = { applyAppearance = true, applyScaling = false, applyAnchor = true }; -- #todo: switch applyScaling from "false" to "true", but needed more coding to consider call of SetScale() in ToggleDropDownMenu() in "UIDropDownMenu.lua"
-end
 
 ----------------------------------------------------------------------------------------------------
 --                                           Variables                                            --
@@ -2373,7 +2394,6 @@ function tt:SetPaddingToTip(tip)
 	
 	if (isItemTooltipShown) then
 		tip:SetPadding(0, 0, 0, 0);
-		tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 		
 		GameTooltip_CalculatePadding(tip);
 		
@@ -2401,7 +2421,6 @@ function tt:SetPaddingToTip(tip)
 	
 	-- set padding to tip
 	tip:SetPadding(newPaddingRight, newPaddingBottom, newPaddingLeft, newPaddingTop);
-	tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 	
 	if (isItemTooltipShown) then
 		if (isBottomFontStringShown) then
@@ -2466,6 +2485,9 @@ LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, {
 				
 				-- set padding to tip
 				tt:SetPaddingToTip(tip);
+				
+				-- recalculate size of tip to ensure that it has the correct dimensions
+				LibFroznFunctions:RecalculateSizeOfGameTooltip(tip);
 				
 				isHandlingSizeChange = false;
 			end);
