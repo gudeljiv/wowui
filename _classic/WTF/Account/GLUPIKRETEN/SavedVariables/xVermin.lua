@@ -328,8 +328,8 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Lord Vyletongue"] = {
 "Blackout",
@@ -339,11 +339,23 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -356,21 +368,21 @@ xVerminSavedData = {
 "Charge Stun",
 "Impact",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-},
-["Enraged Stone Spirit"] = {
-"Rend",
-},
 ["Whirlwind Ripper"] = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Enraged Stone Spirit"] = {
+"Rend",
+},
+["Remote-Controlled Golem"] = {
+"Rend",
 },
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
@@ -440,20 +452,8 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Wailing Highborne"] = {
 "Rend",
