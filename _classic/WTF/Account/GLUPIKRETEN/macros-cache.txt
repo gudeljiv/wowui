@@ -38,7 +38,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2455
+/cast item:0
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -55,9 +55,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:4592
+#showtooltip item:5470
 /cast feed pet
-/use item:4592
+/use item:5470
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 /targetexact Lieutenant Fangore
