@@ -22,7 +22,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:733
+/cast item:4605
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -55,17 +55,15 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:6289
+#showtooltip item:5503
 /cast feed pet
-/use item:6289
+/use item:5503
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 /targetexact Lieutenant Fangore
-/targetexact Benny Blaanco
-/targetexact Murloc Streamrunner
-/targetexact Mor'ladim
-/targetexact Leprithus
-/targetexact Nightbane Vile Fang
+/targetexact Murloc Minor Tidecaller
+/targetexact Blackrock Outrunner
+/targetexact Black Dragon Whelp
 /targetexact Thundris Windweaver
 /targetlasttarget [dead]
 END

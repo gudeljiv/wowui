@@ -1,3 +1,6 @@
+### 2.2.25
+- Fix inventory full sound playing on unlootable loot that requires rolling on retail.
+
 ### 2.2.24
 - Ops, fixed error on classic
 
