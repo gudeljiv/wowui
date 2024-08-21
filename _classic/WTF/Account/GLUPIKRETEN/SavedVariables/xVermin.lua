@@ -25,6 +25,10 @@ xVerminSavedData = {
 ["Frozen Soul"] = {
 "Deep Wound",
 },
+["Commander Springvale"] = {
+"Demoralizing Shout",
+"Cleave",
+},
 ["Arcanist Doan"] = {
 "Arcane Blast",
 "Arcane Missiles",
@@ -99,6 +103,10 @@ xVerminSavedData = {
 "Deep Wound",
 "Rend",
 },
+["Archmage Arugal"] = {
+"Hammer of Justice",
+"Iron Grenade",
+},
 ["Dreamharvester"] = {
 "Deep Wound",
 "Rend",
@@ -132,6 +140,9 @@ xVerminSavedData = {
 "War Stomp",
 },
 ["Dopemend"] = {
+},
+["Shadowfang Moonwalker"] = {
+"Seal of Command",
 },
 ["Whirlwind Stormwalker"] = {
 "Deep Wound",
@@ -297,8 +308,20 @@ xVerminSavedData = {
 "Lightning Bolt",
 "Serpent Sting",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -331,23 +354,11 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Ironspine"] = {
 "Rend",
@@ -366,9 +377,8 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Remote-Controlled Golem"] = {
+"Rend",
 },
 ["Klaxxi"] = {
 "Big Bronze Bomb",
@@ -378,8 +388,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
@@ -408,11 +418,12 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",
@@ -421,8 +432,8 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Wailing Highborne"] = {
 "Rend",

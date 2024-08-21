@@ -157,8 +157,8 @@ Postal3DB = {
 ["BlackBook"] = {
 ["recent"] = {
 "Vbank|Celebras|Alliance",
-"Dibsie-Celebras|Celebras|Alliance",
 "Mq|Celebras|Alliance",
+"Dibsie-Celebras|Celebras|Alliance",
 },
 },
 },
