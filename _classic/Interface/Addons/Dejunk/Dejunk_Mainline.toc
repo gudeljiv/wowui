@@ -1,6 +1,6 @@
-## Interface: 110000
+## Interface: 110002
 ## Title: Dejunk
-## Version: 1.10.6
+## Version: 1.10.8
 ## Author: https://github.com/moody
 ## IconTexture: Interface\AddOns\Dejunk\assets\dejunk-icon
 ## Notes: Simple junk selling and destroying.
