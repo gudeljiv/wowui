@@ -1,0 +1,83 @@
+
+NarcissusDB = {
+["OnlyShowOwnedUpgradeItem"] = true,
+["VignetteStrength"] = 0.5,
+["TruncateText"] = false,
+["ShrinkArea"] = 0,
+["LetterboxEffect"] = false,
+["ShowItemID"] = false,
+["NamePlateLanguage"] = "enUS",
+["Favorites"] = {
+["FavoriteSpellVisualKitIDs"] = {
+},
+["FavoriteAnimationIDs"] = {
+},
+},
+["BaseLineOffset"] = 0,
+["ItemNameWidth"] = 180,
+["UseEscapeButton"] = true,
+["UseEntranceVisual"] = true,
+["LoopAnimation"] = false,
+["GlobalScale"] = 0.8,
+["UseBustShot"] = true,
+["AnchorToMinimap"] = true,
+["TooltipLanguages"] = {
+},
+["TranslateName"] = false,
+["IsSortedByCategory"] = true,
+["installTime"] = 1725536391,
+["AutoPlayAnimation"] = false,
+["AFKScreen"] = false,
+["AKFScreenDelay"] = false,
+["ShowModulePanelOnMouseOver"] = true,
+["CameraSafeMode"] = true,
+["FontHeightItemName"] = 10,
+["EnableDoubleTap"] = false,
+["WeatherEffect"] = true,
+["EquipmentSetManager"] = true,
+["NamePlateNameOffset"] = 0,
+["SearchRelatives"] = false,
+["LetterboxRatio"] = 2,
+["GemManager"] = true,
+["ModelPanelScale"] = 1,
+["TooltipTheme"] = "Bright",
+["FadeButton"] = false,
+["IndependentMinimapButton"] = false,
+["TransmogOutfitSelect"] = true,
+["Version"] = 10000,
+["Tutorials"] = {
+["ExitConfirmation"] = true,
+["Movement"] = false,
+["SpellVisualBrowser"] = true,
+["NPCBrowserEntance"] = true,
+["WeaponBrowser"] = true,
+["NPCBrowser"] = true,
+},
+["CameraTransition"] = true,
+["CameraOrbit"] = true,
+["SpeedyScreenshotAlert"] = true,
+["ShowMinimapButton"] = true,
+["HideTextsWithUI"] = true,
+["NameTranslationPosition"] = 1,
+["ItemFlyout"] = true,
+["MinimapButton"] = {
+["Position"] = 0.8697217422859005,
+},
+["SearchRelativesHotkey"] = "TAB",
+}
+NarciCreatureOptions = {
+}
+NarciAchievementOptions = {
+["UseAsDefault"] = false,
+["IncompleteFirst"] = true,
+["Scale"] = 1,
+["ReplaceToast"] = true,
+["Theme"] = 1,
+["ShowRedMark"] = false,
+}
+NarciStatisticsDB = {
+["InstalledDate"] = 1725536401,
+["TimeSpentInNarcissus"] = 61,
+}
+NarciTurntableOptions = nil
+NarciCharacterProfiles = nil

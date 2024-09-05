@@ -1,15 +1,17 @@
 local addonName, addonTable = ...
 local addonTitle = C_AddOns.GetAddOnMetadata(addonName, "title")
 local CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT = CreateColor, WHITE_FONT_COLOR, ITEM_MOD_SPIRIT_SHORT
+local GetItemStats = C_Item.GetItemStats or GetItemStats
 
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.2"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.4"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
 local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+addonTable.MAX_LOOPS = 125000
 
 local function DeepCopy (t, cache)
   if type (t) ~= "table" then
@@ -39,6 +41,15 @@ local function print(...)
 end
 addonTable.print = print
 
+local function GetSpellName(id)
+  if C_Spell.GetSpellName then
+    return C_Spell.GetSpellName(id)
+  end
+  local spellName = GetSpellInfo(id)
+  return spellName
+end
+addonTable.GetSpellName = GetSpellName
+
 local DefaultDB = {
   itemSize = 24,
   windowWidth = 800,
@@ -47,7 +58,7 @@ local DefaultDB = {
   openOnReforge = true,
   updateTooltip = true,
 
-  speed = 10,
+  speed = addonTable.MAX_LOOPS * 0.8,
 
   activeWindowTitle = {0.6, 0, 0},
   inactiveWindowTitle = {0.5, 0.5, 0.5},
@@ -191,6 +202,9 @@ function ReforgeLite:UpgradeDB ()
     db.classProfiles[playerClass] = DefaultDBClassProfile
   else
     MergeTables (db.classProfiles[playerClass], DefaultDBClassProfile)
+  end
+  if db.speed <= 20 then
+    db.speed = addonTable.MAX_LOOPS*(db.speed/20)
   end
 end
 
@@ -463,7 +477,7 @@ function ReforgeLite:ParseWoWSimsString(importStr)
     end
     self.pdb.method.items = newItems
     self:UpdateMethodStats(self.pdb.method)
-    self:UpdateMethodCategory ()
+    self:UpdateMethodCategory()
   else -- error
     print(wowsims)
   end
@@ -892,19 +906,18 @@ function ReforgeLite:CreateItemTable ()
     self.itemData[i]:EnableMouse (true)
     self.itemData[i]:SetScript ("OnEnter", function (frame)
       GameTooltip:SetOwner (frame, "ANCHOR_LEFT")
-      local hasItem, hasCooldown, repairCost = GameTooltip:SetInventoryItem ("player", frame.slotId)
-      if not hasItem then
-        local text = _G[strupper (frame.slot)]
+      if frame.item then
+        GameTooltip:SetInventoryItem("player", frame.slotId)
+      else
+        local text = _G[strupper(frame.slot)]
         if frame.checkRelic then
-          text = _G["RELICSLOT"]
+          text = RELICSLOT
         end
-        GameTooltip:SetText (text)
+        GameTooltip:SetText(text)
       end
       GameTooltip:Show ()
     end)
-    self.itemData[i]:SetScript ("OnLeave", function ()
-      GameTooltip:Hide()
-    end)
+    self.itemData[i]:SetScript ("OnLeave", function () GameTooltip:Hide() end)
     self.itemData[i]:SetScript ("OnMouseDown", function (frame)
       if not frame.itemGUID then return end
       self.pdb.itemsLocked[frame.itemGUID] = not self.pdb.itemsLocked[frame.itemGUID] and 1 or nil
@@ -1191,11 +1204,11 @@ function ReforgeLite:UpdateStatWeightList ()
   end
   if self.pdb.tankingModel then
     self.statWeights.buffs = {}
-    self.statWeights.buffs.kings = GUI:CreateCheckButton (self.statWeights, GetSpellInfo(20217), self.pdb.buffs.kings, function (val)
+    self.statWeights.buffs.kings = GUI:CreateCheckButton (self.statWeights, GetSpellName(20217), self.pdb.buffs.kings, function (val)
       self.pdb.buffs.kings = val
       self:RefreshMethodStats ()
     end)
-    self.statWeights.buffs.strength = GUI:CreateCheckButton (self.statWeights, GetSpellInfo(57330), self.pdb.buffs.strength, function (val)
+    self.statWeights.buffs.strength = GUI:CreateCheckButton (self.statWeights, GetSpellName(57330), self.pdb.buffs.strength, function (val)
       self.pdb.buffs.strength = val
       self:RefreshMethodStats ()
     end)
@@ -1345,30 +1358,25 @@ function ReforgeLite:CreateOptionList ()
     self.pdb.tankingModel = nil
   end
 
-  local playerLevel = UnitLevel("player")
+  local levelList = {
+    {value=0,name=("%s (+%d)"):format(PVP, 0)},
+    {value=2,name=("%s (+%d)"):format(LFG_TYPE_HEROIC_DUNGEON, 2)},
+    {value=3,name=("%s (+%d)"):format(LFG_TYPE_RAID, 3)}
+  }
 
-  self.targetLevelText = self.statWeightsCategory:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  self:SetAnchor(self.targetLevelText, "TOPLEFT", self.tankingModel or self.pawnButton, "BOTTOMLEFT", 0, -5)
-  self.targetLevelText:SetTextColor (1, 1, 1)
-  self.targetLevelText:SetText(STAT_TARGET_LEVEL..": "..playerLevel.. " +")
-  self.statWeightsCategory:AddFrame (self.targetLevelText)
-
-  self.targetLevel = GUI:CreateEditBox (self.content, 25, 30, self.pdb.targetLevel, function (val)
-    self.pdb.targetLevel = val
-    self.targetLevelResult:SetText("= "..playerLevel + self.pdb.targetLevel)
-    self:UpdateItems()
-  end)
-  self:SetAnchor (self.targetLevel, "LEFT", self.targetLevelText, "RIGHT", 10, 0)
-  self.statWeightsCategory:AddFrame (self.targetLevel)
-
-  self.targetLevelResult = self.statWeightsCategory:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  self:SetAnchor(self.targetLevelResult, "LEFT", self.targetLevel, "RIGHT", 6, 0)
-  self.targetLevelResult:SetTextColor (1, 1, 1)
-  self.targetLevelResult:SetText("= "..playerLevel + self.pdb.targetLevel)
-  self.statWeightsCategory:AddFrame (self.targetLevelResult)
+  self.targetLevel = GUI:CreateDropdown(self.content, levelList, {
+    default =  self.pdb.targetLevel,
+    setter = function(_,val) self.pdb.targetLevel = val; self:UpdateItems() end,
+    width = 150,
+  })
+  self.statWeightsCategory:AddFrame(self.targetLevel)
+  self.targetLevel.text = self.targetLevel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  self.targetLevel.text:SetText(STAT_TARGET_LEVEL)
+  self:SetAnchor(self.targetLevel.text, "TOPLEFT", self.tankingModel or self.pawnButton, "BOTTOMLEFT", 0, -8)
+  self.targetLevel:SetPoint("BOTTOMLEFT", self.targetLevel.text, "BOTTOMLEFT", self.targetLevel.text:GetStringWidth(), -20)
 
   self.statWeights = GUI:CreateTable (ceil (#self.itemStats / 2), 4)
-  self:SetAnchor (self.statWeights, "TOPLEFT", self.targetLevelText, "BOTTOMLEFT", 0, -8)
+  self:SetAnchor (self.statWeights, "TOPLEFT", self.targetLevel.text, "BOTTOMLEFT", 0, -8)
   self.statWeights:SetPoint ("RIGHT", -5, 0)
   self.statWeightsCategory:AddFrame (self.statWeights)
   self.statWeights:SetRowHeight (self.db.itemSize + 2)
@@ -1448,7 +1456,7 @@ function ReforgeLite:CreateOptionList ()
       end
     )
     self.statCaps[i].darkIntent:Hide()
-    GUI:SetTooltip (self.statCaps[i].darkIntent, ("%s %s - %s +%s%%"):format(CreateSimpleTextureMarkup(463285, 30, 30),GetSpellInfo(85767),format(STAT_FORMAT, STAT_HASTE),3))
+    GUI:SetTooltip (self.statCaps[i].darkIntent, ("%s %s - %s +%s%%"):format(CreateSimpleTextureMarkup(463285, 30, 30),GetSpellName(85767),format(STAT_FORMAT, STAT_HASTE),3))
     self.statCaps:SetCell (i, 0, self.statCaps[i].stat, "LEFT", -20, -10)
     self.statCaps:SetCell (i, 2, self.statCaps[i].add, "LEFT")
     self.statCaps:SetCell (i, 3, self.statCaps[i].darkIntent, "LEFT")
@@ -1489,40 +1497,26 @@ function ReforgeLite:CreateOptionList ()
 
   self:UpdateStatWeightList ()
 
-  self.quality = CreateFrame ("Slider", nil, self.content, "HorizontalSliderTemplate")
+  self.quality = CreateFrame ("Slider", nil, self.content, "UISliderTemplateWithLabels")
   self:SetAnchor (self.quality, "LEFT", self.computeButton, "RIGHT", 10, 0)
   self.quality:SetSize(150, 15)
-  self.quality:SetMinMaxValues (1, 20)
-  self.quality:SetValueStep (1)
+  self.quality:SetMinMaxValues (1000, addonTable.MAX_LOOPS)
+  self.quality:SetValueStep (1000)
+  self.quality:SetObeyStepOnDrag(true)
   self.quality:SetValue (self.db.speed)
   self.quality:EnableMouseWheel (false)
   self.quality:SetScript ("OnValueChanged", function (slider)
     self.db.speed = slider:GetValue ()
   end)
 
-  self.quality.label = self.quality:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-  self.quality.label:SetPoint ("BOTTOM", self.quality, "TOP", 0, 0)
-  self.quality.label:SetTextColor (1, 1, 1)
-  self.quality.label:SetText (SPEED)
+  self.quality.Text:SetText (SPEED)
+  self.quality.Low:SetText (SLOW)
+  self.quality.High:SetText (FAST)
 
   self.quality.helpButton = CreateFrame("Button",nil,self.quality,"MainHelpPlateButton")
-  self.quality.helpButton:SetPoint("BOTTOMLEFT",self.quality.label, "BOTTOMRIGHT",0,-20)
+  self.quality.helpButton:SetPoint("BOTTOMLEFT",self.quality.Text, "BOTTOMRIGHT",0,-20)
   self.quality.helpButton:SetScale(0.45)
-  self.quality.helpButton:SetScript("OnEnter", function(btn)
-    GameTooltip:SetOwner(btn, "ANCHOR_RIGHT");
-    GameTooltip:SetText(L["Slide to the left if the calculation slows your game too much."],nil,nil,nil,nil,true);
-    GameTooltip:Show()
-  end)
-	self.quality.helpButton:SetScript("OnLeave", function(btn)
-    GameTooltip:Hide()
-  end)
-
-  self.quality.lowtext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
-  self.quality.lowtext:SetPoint ("TOPLEFT", self.quality, "BOTTOMLEFT", 2, 3)
-  self.quality.lowtext:SetText (SLOW)
-  self.quality.hightext = self.quality:CreateFontString (nil, "ARTWORK", "GameFontHighlightSmall")
-  self.quality.hightext:SetPoint ("TOPRIGHT", self.quality, "BOTTOMRIGHT", -2, 3)
-  self.quality.hightext:SetText (FAST)
+  GUI:SetTooltip(self.quality.helpButton, L["Slide to the left if the calculation slows your game too much."])
 
   self.storedCategory = self:CreateCategory (L["Best result"])
   self:SetAnchor (self.storedCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
@@ -1530,10 +1524,10 @@ function ReforgeLite:CreateOptionList ()
   self.storedCategory:AddFrame (self.storedScore)
   self:SetAnchor (self.storedScore, "TOPLEFT", self.storedCategory, "BOTTOMLEFT", 0, -8)
   self.storedScore:SetTextColor (1, 1, 1)
-  self.storedScore:SetText (L["Score"] .. ": ")
+  self.storedScore:SetText (PROVING_GROUNDS_SCORE)
   self.storedScore.score = self.content:CreateFontString (nil, "OVERLAY", "GameFontNormal")
   self.storedCategory:AddFrame (self.storedScore.score)
-  self:SetAnchor (self.storedScore.score, "BOTTOMLEFT", self.storedScore, "BOTTOMRIGHT", 0, 0)
+  self:SetAnchor (self.storedScore.score, "BOTTOMLEFT", self.storedScore, "BOTTOMRIGHT", 4, 0)
   self.storedScore.score:SetTextColor (1, 1, 1)
   self.storedScore.score:SetText ("0 (")
   self.storedScore.delta = self.content:CreateFontString (nil, "OVERLAY", "GameFontNormal")
@@ -1658,9 +1652,9 @@ function ReforgeLite:GetCurrentScore ()
       score = score + self:GetStatScore (i, self.itemStats[i].getter ())
     end
   end
-  return score
+  return RoundToSignificantDigits(score, 2)
 end
-function ReforgeLite:UpdateMethodCategory ()
+function ReforgeLite:UpdateMethodCategory()
   if self.methodCategory == nil then
     self.methodCategory = self:CreateCategory (L["Result"])
     self:SetAnchor (self.methodCategory, "TOPLEFT", self.computeButton, "BOTTOMLEFT", 0, -10)
@@ -1745,6 +1739,7 @@ function ReforgeLite:UpdateMethodCategory ()
 
   self:RefreshMethodStats (true)
 
+  self:RefreshMethodWindow()
   self:UpdateContentSize ()
 end
 function ReforgeLite:RefreshMethodStats (relax)
@@ -1779,7 +1774,7 @@ function ReforgeLite:RefreshMethodStats (relax)
       else
         self.methodTank:Hide2 ()
       end
-      self.methodStats.score:SetText (Round(score))
+      self.methodStats.score:SetText (score)
       SetTextDelta (self.methodStats.scoreDelta, score, self:GetCurrentScore ())
       for i, v in ipairs (self.itemStats) do
         local mvalue = v.mgetter (self.pdb.method)
@@ -2007,155 +2002,157 @@ end
 
 --------------------------------------------------------------------------
 
-function ReforgeLite:ShowMethodWindow ()
-  if not self.methodWindow then
-    self.methodWindow = CreateFrame ("Frame", "ReforgeLiteMethodWindow", UIParent, "BackdropTemplate")
-    self.methodWindow:SetFrameStrata ("DIALOG")
-    self.methodWindow:ClearAllPoints ()
-    self.methodWindow:SetSize(250, 506)
-    if self.db.methodWindowX and self.db.methodWindowY then
-      self.methodWindow:SetPoint ("TOPLEFT", UIParent, "BOTTOMLEFT", self.db.methodWindowX, self.db.methodWindowY)
-    else
-      self.methodWindow:SetPoint ("CENTER")
-    end
-    self.methodWindow.backdropInfo = self.backdropInfo
-    self.methodWindow:ApplyBackdrop()
-
-    self.methodWindow.titlebar = self.methodWindow:CreateTexture(nil,"BACKGROUND")
-    self.methodWindow.titlebar:SetPoint("TOPLEFT",self.methodWindow,"TOPLEFT",3,-3)
-    self.methodWindow.titlebar:SetPoint("TOPRIGHT",self.methodWindow,"TOPRIGHT",-3,-3)
-    self.methodWindow.titlebar:SetHeight(20)
-    self.methodWindow.SetFrameActive = function(frame, active)
-      if active then
-        frame.titlebar:SetColorTexture(unpack (self.db.activeWindowTitle))
-      else
-        frame.titlebar:SetColorTexture(unpack (self.db.inactiveWindowTitle))
-      end
-    end
-    self.methodWindow:SetFrameActive(true)
-
-    self.methodWindow:SetBackdropColor (0.1, 0.1, 0.1)
-    self.methodWindow:SetBackdropBorderColor (0, 0, 0)
-
-    self.methodWindow:EnableMouse (true)
-    self.methodWindow:SetMovable (true)
-    self.methodWindow:SetScript ("OnMouseDown", function (window, arg)
-      self:SwapFrameLevels(window)
-      if arg == "LeftButton" then
-        window:StartMoving ()
-        window.moving = true
-      end
-    end)
-    self.methodWindow:SetScript ("OnMouseUp", function (window)
-      if window.moving then
-        window:StopMovingOrSizing ()
-        window.moving = false
-        self.db.methodWindowX = window:GetLeft ()
-        self.db.methodWindowY = window:GetTop ()
-      end
-    end)
-    tinsert(UISpecialFrames, self.methodWindow:GetName()) -- allow closing with escape
-
-    self.methodWindow.title = self.methodWindow:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-    self.methodWindow.title:SetText (addonTitle.." Output")
-    self.methodWindow.title:SetTextColor (1, 1, 1)
-    self.methodWindow.title:SetPoint ("TOPLEFT", 12, self.methodWindow.title:GetHeight()-self.methodWindow.titlebar:GetHeight())
-
-    self.methodWindow.close = CreateFrame ("Button", nil, self.methodWindow, "UIPanelCloseButtonNoScripts")
-    self.methodWindow.close:SetPoint ("TOPRIGHT")
-    self.methodWindow.close:SetSize(28, 28)
-    self.methodWindow.close:SetScript ("OnClick", function (btn)
-      btn:GetParent():Hide()
-    end)
-    self.methodWindow:SetScript ("OnHide", function (frame)
-      self:SetFrameActive(true)
-    end)
-    self.methodWindow:SetScript ("OnShow", function (frame)
-      self:SetFrameActive(false)
-      frame:SetFrameActive(true)
-    end)
-    self:SetFrameActive(false)
-
-    self.methodWindow.itemTable = GUI:CreateTable (#self.itemSlots + 1, 3, 0, 0, nil, self.methodWindow)
-    self.methodWindow:ClearAllPoints ()
-    self.methodWindow.itemTable:SetPoint ("TOPLEFT", 12, -28)
-    self.methodWindow.itemTable:SetRowHeight (26)
-    self.methodWindow.itemTable:SetColumnWidth (1, self.db.itemSize)
-    self.methodWindow.itemTable:SetColumnWidth (2, self.db.itemSize + 2)
-    self.methodWindow.itemTable:SetColumnWidth (3, 274 - self.db.itemSize * 2)
-
-    self.methodOverride = {}
-    for i = 1, #self.itemSlots do
-      self.methodOverride[i] = 0
-    end
-
-    self.methodWindow.items = {}
-    for i, v in ipairs (self.itemSlots) do
-      self.methodWindow.items[i] = CreateFrame ("Frame", nil, self.methodWindow.itemTable)
-      self.methodWindow.items[i].slot = v
-      self.methodWindow.items[i]:ClearAllPoints ()
-      self.methodWindow.items[i]:SetSize(self.db.itemSize, self.db.itemSize)
-      self.methodWindow.itemTable:SetCell (i, 2, self.methodWindow.items[i])
-      self.methodWindow.items[i]:EnableMouse (true)
-      self.methodWindow.items[i]:RegisterForDrag("LeftButton")
-      self.methodWindow.items[i]:SetScript ("OnEnter", function (itemSlot)
-        GameTooltip:SetOwner(itemSlot, "ANCHOR_LEFT")
-        if itemSlot.item then
-          local slotId = GetInventorySlotInfo(v)
-          GameTooltip:SetInventoryItem("player", slotId)
-        else
-          local text = _G[strupper (itemSlot.slot)]
-          if itemSlot.checkRelic then
-            text = _G["RELICSLOT"]
-          end
-          GameTooltip:SetText (text)
-        end
-        GameTooltip:Show ()
-      end)
-      self.methodWindow.items[i]:SetScript ("OnLeave", function () GameTooltip:Hide() end)
-      self.methodWindow.items[i]:SetScript ("OnDragStart", function (itemSlot)
-        if itemSlot.item and ReforgeFrameIsVisible() then
-          PickupInventoryItem(GetInventorySlotInfo(v))
-        end
-      end)
-      self.methodWindow.items[i].slotId, self.methodWindow.items[i].slotTexture, self.methodWindow.items[i].checkRelic = GetInventorySlotInfo (v)
-      self.methodWindow.items[i].checkRelic = self.methodWindow.items[i].checkRelic and UnitHasRelicSlot ("player")
-      if self.methodWindow.items[i].checkRelic then
-        self.methodWindow.items[i].slotTexture = "Interface\\Paperdoll\\UI-PaperDoll-Slot-Relic.blp"
-      end
-      self.methodWindow.items[i].texture = self.methodWindow.items[i]:CreateTexture (nil, "OVERLAY")
-      self.methodWindow.items[i].texture:SetAllPoints (self.methodWindow.items[i])
-      self.methodWindow.items[i].texture:SetTexture (self.methodWindow.items[i].slotTexture)
-
-      self.methodWindow.items[i].reforge = self.methodWindow.itemTable:CreateFontString (nil, "OVERLAY", "GameFontNormal")
-      self.methodWindow.itemTable:SetCell (i, 3, self.methodWindow.items[i].reforge, "LEFT")
-      self.methodWindow.items[i].reforge:SetTextColor (1, 1, 1)
-      self.methodWindow.items[i].reforge:SetText ("")
-
-      self.methodWindow.items[i].check = GUI:CreateCheckButton (self.methodWindow.itemTable, "", false,
-        function (val) self.methodOverride[i] = (val and 1 or -1) self:UpdateMethodChecks () end)
-      self.methodWindow.itemTable:SetCell (i, 1, self.methodWindow.items[i].check)
-    end
-    self.methodWindow.reforge = GUI:CreatePanelButton (self.methodWindow, REFORGE, function(btn) self:DoReforge() end)
-    self.methodWindow.reforge:SetSize(114, 22)
-    self.methodWindow.reforge:SetPoint ("BOTTOMLEFT", 12, 12)
-    self.methodWindow.reforgeTip = CreateFrame ("Frame", nil, self.methodWindow)
-    self.methodWindow.reforgeTip:SetAllPoints (self.methodWindow.reforge)
-    self.methodWindow.reforgeTip:EnableMouse (true)
-    GUI:SetTooltip (self.methodWindow.reforgeTip, L["Reforging window must be open"])
-    self.methodWindow.reforgeTip:SetFrameLevel (self.methodWindow.reforge:GetFrameLevel () + 5)
-    self.methodWindow.reforgeTip:Hide ()
-
-    self.methodWindow.cost = CreateFrame ("Frame", "ReforgeLiteReforgeCost", self.methodWindow, "SmallMoneyFrameTemplate")
-    MoneyFrame_SetType (self.methodWindow.cost, "REFORGE")
-    self.methodWindow.cost:SetPoint ("LEFT", self.methodWindow.reforge, "RIGHT", 5, 0)
+function ReforgeLite:CreateMethodWindow()
+  self.methodWindow = CreateFrame ("Frame", "ReforgeLiteMethodWindow", UIParent, "BackdropTemplate")
+  self.methodWindow:SetFrameStrata ("DIALOG")
+  self.methodWindow:ClearAllPoints ()
+  self.methodWindow:SetSize(250, 506)
+  if self.db.methodWindowX and self.db.methodWindowY then
+    self.methodWindow:SetPoint ("TOPLEFT", UIParent, "BOTTOMLEFT", self.db.methodWindowX, self.db.methodWindowY)
+  else
+    self.methodWindow:SetPoint ("CENTER")
   end
+  self.methodWindow.backdropInfo = self.backdropInfo
+  self.methodWindow:ApplyBackdrop()
 
+  self.methodWindow.titlebar = self.methodWindow:CreateTexture(nil,"BACKGROUND")
+  self.methodWindow.titlebar:SetPoint("TOPLEFT",self.methodWindow,"TOPLEFT",3,-3)
+  self.methodWindow.titlebar:SetPoint("TOPRIGHT",self.methodWindow,"TOPRIGHT",-3,-3)
+  self.methodWindow.titlebar:SetHeight(20)
+  self.methodWindow.SetFrameActive = function(frame, active)
+    if active then
+      frame.titlebar:SetColorTexture(unpack (self.db.activeWindowTitle))
+    else
+      frame.titlebar:SetColorTexture(unpack (self.db.inactiveWindowTitle))
+    end
+  end
+  self.methodWindow:SetFrameActive(true)
+
+  self.methodWindow:SetBackdropColor (0.1, 0.1, 0.1)
+  self.methodWindow:SetBackdropBorderColor (0, 0, 0)
+
+  self.methodWindow:EnableMouse (true)
+  self.methodWindow:SetMovable (true)
+  self.methodWindow:SetScript ("OnMouseDown", function (window, arg)
+    self:SwapFrameLevels(window)
+    if arg == "LeftButton" then
+      window:StartMoving ()
+      window.moving = true
+    end
+  end)
+  self.methodWindow:SetScript ("OnMouseUp", function (window)
+    if window.moving then
+      window:StopMovingOrSizing ()
+      window.moving = false
+      self.db.methodWindowX = window:GetLeft ()
+      self.db.methodWindowY = window:GetTop ()
+    end
+  end)
+  tinsert(UISpecialFrames, self.methodWindow:GetName()) -- allow closing with escape
+
+  self.methodWindow.title = self.methodWindow:CreateFontString (nil, "OVERLAY", "GameFontNormal")
+  self.methodWindow.title:SetText (addonTitle.." Output")
+  self.methodWindow.title:SetTextColor (1, 1, 1)
+  self.methodWindow.title:SetPoint ("TOPLEFT", 12, self.methodWindow.title:GetHeight()-self.methodWindow.titlebar:GetHeight())
+
+  self.methodWindow.close = CreateFrame ("Button", nil, self.methodWindow, "UIPanelCloseButtonNoScripts")
+  self.methodWindow.close:SetPoint ("TOPRIGHT")
+  self.methodWindow.close:SetSize(28, 28)
+  self.methodWindow.close:SetScript ("OnClick", function (btn)
+    btn:GetParent():Hide()
+  end)
+  self.methodWindow:SetScript ("OnHide", function (frame)
+    self:SetFrameActive(true)
+  end)
+  self.methodWindow:SetScript ("OnShow", function (frame)
+    self:SetFrameActive(false)
+    frame:SetFrameActive(true)
+    self:RefreshMethodWindow()
+  end)
+  self:SetFrameActive(false)
+
+  self.methodWindow.itemTable = GUI:CreateTable (#self.itemSlots + 1, 3, 0, 0, nil, self.methodWindow)
+  self.methodWindow:ClearAllPoints ()
+  self.methodWindow.itemTable:SetPoint ("TOPLEFT", 12, -28)
+  self.methodWindow.itemTable:SetRowHeight (26)
+  self.methodWindow.itemTable:SetColumnWidth (1, self.db.itemSize)
+  self.methodWindow.itemTable:SetColumnWidth (2, self.db.itemSize + 2)
+  self.methodWindow.itemTable:SetColumnWidth (3, 274 - self.db.itemSize * 2)
+
+  self.methodOverride = {}
   for i = 1, #self.itemSlots do
     self.methodOverride[i] = 0
   end
 
-  self.methodWindow:SetFrameLevel(self:GetFrameLevel() + 10)
+  self.methodWindow.items = {}
+  for i, v in ipairs (self.itemSlots) do
+    self.methodWindow.items[i] = CreateFrame ("Frame", nil, self.methodWindow.itemTable)
+    self.methodWindow.items[i].slot = v
+    self.methodWindow.items[i]:ClearAllPoints ()
+    self.methodWindow.items[i]:SetSize(self.db.itemSize, self.db.itemSize)
+    self.methodWindow.itemTable:SetCell (i, 2, self.methodWindow.items[i])
+    self.methodWindow.items[i]:EnableMouse (true)
+    self.methodWindow.items[i]:RegisterForDrag("LeftButton")
+    self.methodWindow.items[i]:SetScript ("OnEnter", function (itemSlot)
+      GameTooltip:SetOwner(itemSlot, "ANCHOR_LEFT")
+      if itemSlot.item then
+        GameTooltip:SetInventoryItem("player", itemSlot.slotId)
+      else
+        local text = _G[itemSlot.slot:upper()]
+        if itemSlot.checkRelic then
+          text = RELICSLOT
+        end
+        GameTooltip:SetText(text)
+      end
+      GameTooltip:Show()
+    end)
+    self.methodWindow.items[i]:SetScript ("OnLeave", function () GameTooltip:Hide() end)
+    self.methodWindow.items[i]:SetScript ("OnDragStart", function (itemSlot)
+      if itemSlot.item and ReforgeFrameIsVisible() then
+        PickupInventoryItem(itemSlot.slotId)
+      end
+    end)
+    self.methodWindow.items[i].slotId, self.methodWindow.items[i].slotTexture, self.methodWindow.items[i].checkRelic = GetInventorySlotInfo(v)
+    self.methodWindow.items[i].checkRelic = self.methodWindow.items[i].checkRelic and UnitHasRelicSlot ("player")
+    if self.methodWindow.items[i].checkRelic then
+      self.methodWindow.items[i].slotTexture = "Interface\\Paperdoll\\UI-PaperDoll-Slot-Relic.blp"
+    end
+    self.methodWindow.items[i].texture = self.methodWindow.items[i]:CreateTexture (nil, "OVERLAY")
+    self.methodWindow.items[i].texture:SetAllPoints (self.methodWindow.items[i])
+    self.methodWindow.items[i].texture:SetTexture (self.methodWindow.items[i].slotTexture)
+
+    self.methodWindow.items[i].reforge = self.methodWindow.itemTable:CreateFontString (nil, "OVERLAY", "GameFontNormal")
+    self.methodWindow.itemTable:SetCell (i, 3, self.methodWindow.items[i].reforge, "LEFT")
+    self.methodWindow.items[i].reforge:SetTextColor (1, 1, 1)
+    self.methodWindow.items[i].reforge:SetText ("")
+
+    self.methodWindow.items[i].check = GUI:CreateCheckButton (self.methodWindow.itemTable, "", false,
+      function (val) self.methodOverride[i] = (val and 1 or -1) self:UpdateMethodChecks () end)
+    self.methodWindow.itemTable:SetCell (i, 1, self.methodWindow.items[i].check)
+  end
+  self.methodWindow.reforge = GUI:CreatePanelButton (self.methodWindow, REFORGE, function(btn) self:DoReforge() end)
+  self.methodWindow.reforge:SetSize(114, 22)
+  self.methodWindow.reforge:SetPoint ("BOTTOMLEFT", 12, 12)
+  self.methodWindow.reforgeTip = CreateFrame ("Frame", nil, self.methodWindow)
+  self.methodWindow.reforgeTip:SetAllPoints (self.methodWindow.reforge)
+  self.methodWindow.reforgeTip:EnableMouse (true)
+  GUI:SetTooltip (self.methodWindow.reforgeTip, L["Reforging window must be open"])
+  self.methodWindow.reforgeTip:SetFrameLevel (self.methodWindow.reforge:GetFrameLevel () + 5)
+  self.methodWindow.reforgeTip:Hide ()
+
+  self.methodWindow.cost = CreateFrame ("Frame", "ReforgeLiteReforgeCost", self.methodWindow, "SmallMoneyFrameTemplate")
+  MoneyFrame_SetType (self.methodWindow.cost, "REFORGE")
+  self.methodWindow.cost:SetPoint ("LEFT", self.methodWindow.reforge, "RIGHT", 5, 0)
+  self:RefreshMethodWindow()
+end
+
+function ReforgeLite:RefreshMethodWindow()
+  if not self.methodWindow then
+    return
+  end
+  for i = 1, #self.itemSlots do
+    self.methodOverride[i] = 0
+  end
 
   for i, v in ipairs (self.methodWindow.items) do
     local item = Item:CreateFromEquipmentSlot(v.slotId)
@@ -2176,9 +2173,19 @@ function ReforgeLite:ShowMethodWindow ()
     end
   end
   self:UpdateMethodChecks ()
-  GUI:ClearFocus()
-  self.methodWindow:Show ()
 end
+
+function ReforgeLite:ShowMethodWindow()
+  if not self.methodWindow then
+    self:CreateMethodWindow()
+  end
+
+  self.methodWindow:SetFrameLevel(self:GetFrameLevel() + 10)
+
+  GUI:ClearFocus()
+  self.methodWindow:Show()
+end
+
 function ReforgeLite:IsReforgeMatching (slotId, reforge, override)
   if override == 1 then
     return true
@@ -2371,6 +2378,9 @@ function ReforgeLite:FORGE_MASTER_OPENED()
   if self.db.openOnReforge and not self:IsShown() and (not self.methodWindow or not self.methodWindow:IsShown()) then
     self.autoOpened = true
     self:Show()
+  end
+  if self.methodWindow then
+    self:RefreshMethodWindow()
   end
   self:StopReforging()
 end

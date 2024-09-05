@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.15.45 (21st August 2024)
+	-- 	Leatrix Maps 1.15.47 (4th September 2024)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList, LeaLockList = {}, {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.15.45"
+	LeaMapsLC["AddonVer"] = "1.15.47"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -28,7 +28,7 @@
 			end)
 			return
 		end
-		if gametocversion and gametocversion == 11500 then
+		if gametocversion and gametocversion == 11504 then
 			LeaMapsLC.NewPatch = true
 		end
 	end
@@ -62,7 +62,11 @@
 		if LeaMapsLC["UseDefaultMap"] == "Off" then
 			SetCVar("miniWorldMap", 1)
 			WorldMapFrame.minimizedWidth = 1024
-			WorldMapFrame.minimizedHeight = 740
+			if LeaMapsLC.NewPatch then
+				WorldMapFrame.minimizedHeight = 712
+			else
+				WorldMapFrame.minimizedHeight = 740
+			end
 			-- Resizing the map makes Questie icons smaller but works with GatherMate2
 			WorldMapFrame:SetSize(WorldMapFrame.minimizedWidth, WorldMapFrame.minimizedHeight) -- Needed for Classic Era
 			WorldMapFrame:OnFrameSizeChanged()
@@ -84,7 +88,29 @@
 
 		-- Unlock map frame
 		if LeaMapsLC["UseDefaultMap"] == "Off" then
-			WorldMapTitleDropDown_ToggleLock()
+			if LeaMapsLC.NewPatch then
+				-- Temporary for toggle lock
+				WorldMapFrame:SetMovable(true)
+				WorldMapFrame:RegisterForDrag("LeftButton")
+				WorldMapFrame:SetScript("OnDragStart", function()
+					if LeaMapsLC["UnlockMapFrame"] == "On" then
+						-- WorldMapFrame:StartMoving()
+						WorldMapTitleButton_OnDragStart()
+					end
+				end)
+				WorldMapFrame:SetScript("OnDragStop", function()
+					if LeaMapsLC["UnlockMapFrame"] == "On" then
+						-- WorldMapFrame:StopMovingOrSizing()
+						WorldMapTitleButton_OnDragStop()
+						WorldMapFrame:SetUserPlaced(false)
+						-- Save map frame position
+						LeaMapsLC["MapPosA"], void, LeaMapsLC["MapPosR"], LeaMapsLC["MapPosX"], LeaMapsLC["MapPosY"] = WorldMapFrame:GetPoint()
+					end
+				end)
+
+			else
+				WorldMapTitleDropDown_ToggleLock()
+			end
 		end
 
 		-- Remove right-click from title bar
@@ -108,10 +134,17 @@
 		-- Hide world map dropdown menus to prevent GuildControlSetRank() taint
 		local menuTempFrame = CreateFrame("FRAME")
 		menuTempFrame:Hide()
-		WorldMapContinentDropDown:SetParent(menuTempFrame)
-		WorldMapZoneDropDown:SetParent(menuTempFrame)
-		WorldMapZoomOutButton:SetParent(menuTempFrame)
-		WorldMapZoneMinimapDropDown:SetParent(menuTempFrame)
+		if LeaMapsLC.NewPatch then
+			WorldMapContinentDropdown:SetParent(menuTempFrame)
+			WorldMapZoneDropdown:SetParent(menuTempFrame)
+			WorldMapZoomOutButton:SetParent(menuTempFrame)
+			WorldMapZoneMinimapDropdown:SetParent(menuTempFrame)
+		else
+			WorldMapContinentDropDown:SetParent(menuTempFrame)
+			WorldMapZoneDropDown:SetParent(menuTempFrame)
+			WorldMapZoomOutButton:SetParent(menuTempFrame)
+			WorldMapZoneMinimapDropDown:SetParent(menuTempFrame)
+		end
 
 		-- Function to show world map title button if default windowed map is showing
 		local function SetWorldMapTitleButton()
@@ -178,7 +211,11 @@
 			local function SetBorderClickInset()
 				if LeaMapsLC["UnlockMapFrame"] == "On" then
 					-- Map is unlocked so increase clickable area around map
-					WorldMapFrame:SetHitRectInsets(-20, -20, 20, 0)
+					if LeaMapsLC.NewPatch then
+						WorldMapFrame:SetHitRectInsets(-20, -20, -20, 0)
+					else
+						WorldMapFrame:SetHitRectInsets(-20, -20, 20, 0)
+					end
 				else
 					-- Map is locked so remove clickable area around map
 					WorldMapFrame:SetHitRectInsets(6, 6, 65, 25)
@@ -213,10 +250,18 @@
 			local outerFrame = CreateFrame("FRAME", nil, WorldMapFrame)
 			outerFrame:SetSize(360, 20)
 
-			if LeaMapsLC["UseDefaultMap"] == "Off" then
-				outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 16, -24)
+			if LeaMapsLC.NewPatch then
+				if LeaMapsLC["UseDefaultMap"] == "Off" then
+					outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 16, 0)
+				else
+					outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, 20)
+				end
 			else
-				outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, -6)
+				if LeaMapsLC["UseDefaultMap"] == "Off" then
+					outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 16, -24)
+				else
+					outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, -6)
+				end
 			end
 
 			-- Create No zones available dropdown menu
@@ -363,8 +408,13 @@
 			if LeaMapsLC["UseDefaultMap"] == "On" then
 
 				hooksecurefunc(WorldMapFrame, "Minimize", function()
-					outerFrame:ClearAllPoints()
-					outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, -6)
+					if LeaMapsLC.NewPatch then
+						outerFrame:ClearAllPoints()
+						outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, 20)
+					else
+						outerFrame:ClearAllPoints()
+						outerFrame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 14, -6)
+					end
 				end)
 
 				hooksecurefunc(WorldMapFrame, "Maximize", function()
@@ -1695,13 +1745,29 @@
 			WorldMapFrame:SetScript("OnDragStart", function()
 				if LeaMapsLC["UnlockMapFrame"] == "On" then
 					-- WorldMapFrame:StartMoving()
-					WorldMapTitleButton_OnDragStart()
+					if LeaMapsLC.NewPatch then
+						-- WorldMapTitleButton_OnDragStart does nothing if map is locked
+						WorldMapScreenAnchor:ClearAllPoints()
+						WorldMapFrame:ClearAllPoints()
+						WorldMapFrame:StartMoving()
+					else
+						WorldMapTitleButton_OnDragStart()
+					end
 				end
 			end)
 			WorldMapFrame:SetScript("OnDragStop", function()
 				if LeaMapsLC["UnlockMapFrame"] == "On" then
 					-- WorldMapFrame:StopMovingOrSizing()
-					WorldMapTitleButton_OnDragStop()
+					if LeaMapsLC.NewPatch then
+						-- WorldMapTitleButton_OnDragStop does nothing if map is locked
+						WorldMapFrame:StopMovingOrSizing()
+						-- move the anchor
+						WorldMapScreenAnchor:StartMoving()
+						WorldMapScreenAnchor:SetPoint("TOPLEFT", WorldMapFrame)
+						WorldMapScreenAnchor:StopMovingOrSizing()
+					else
+						WorldMapTitleButton_OnDragStop()
+					end
 					WorldMapFrame:SetUserPlaced(false)
 					-- Save map frame position
 					LeaMapsLC["MapPosA"], void, LeaMapsLC["MapPosR"], LeaMapsLC["MapPosX"], LeaMapsLC["MapPosY"] = WorldMapFrame:GetPoint()
@@ -2020,9 +2086,19 @@
 			-- Create table to store revealed overlays
 			local overlayTextures = {}
 			local bfoverlayTextures = {}
+			local tex = {} -- LewMapsLC.NewPatch
 
 			-- Function to refresh overlays (Blizzard_SharedMapDataProviders\MapExplorationDataProvider)
 			local function MapExplorationPin_RefreshOverlays(pin, fullUpdate)
+
+				-- Remove existing textures
+				if LeaMapsLC.NewPatch then
+					for k, v in pairs(tex) do
+						v:SetVertexColor(1, 1, 1, 1)
+					end
+					wipe(tex)
+				end
+
 				overlayTextures = {}
 				local mapID = WorldMapFrame.mapID; if not mapID then return end
 				local artID = C_Map.GetMapArtID(mapID); if not artID or not Leatrix_Maps["Reveal"][artID] then return end
@@ -2070,6 +2146,9 @@
 							end
 							for k = 1, numTexturesWide do
 								local texture = pin.overlayTexturePool:Acquire()
+								if LeaMapsLC.NewPatch then
+									tinsert(tex, texture)
+								end
 								if ( k < numTexturesWide ) then
 									texturePixelWidth = TILE_SIZE_WIDTH
 									textureFileWidth = TILE_SIZE_WIDTH
@@ -2119,8 +2198,19 @@
 				pin.overlayTexturePool.resetterFunc = TexturePool_ResetVertexColor
 			end
 
+			local bftex = {} -- LeaMapsLC.NewPatch
+
 			-- Repeat refresh overlays function for Battlefield map
 			local function bfMapExplorationPin_RefreshOverlays(pin, fullUpdate)
+
+				-- Remove existing textures
+				if LeaMapsLC.NewPatch then
+					for k, v in pairs(bftex) do
+						v:SetVertexColor(1, 1, 1, 1)
+					end
+					wipe(bftex)
+				end
+
 				bfoverlayTextures = {}
 				local mapID = BattlefieldMapFrame.mapID; if not mapID then return end
 				local artID = C_Map.GetMapArtID(mapID); if not artID or not Leatrix_Maps["Reveal"][artID] then return end
@@ -2168,6 +2258,9 @@
 							end
 							for k = 1, numTexturesWide do
 								local texture = pin.overlayTexturePool:Acquire()
+								if LeaMapsLC.NewPatch then
+									tinsert(bftex, texture)
+								end
 								if ( k < numTexturesWide ) then
 									texturePixelWidth = TILE_SIZE_WIDTH
 									textureFileWidth = TILE_SIZE_WIDTH
@@ -2458,7 +2551,53 @@
 		-- Create panel in game options panel
 		----------------------------------------------------------------------
 
-		do
+		if LeaMapsLC.NewPatch then
+
+			local interPanel = CreateFrame("FRAME")
+			interPanel.name = "Leatrix Maps"
+
+			local maintitle = LeaMapsLC:MakeTx(interPanel, "Leatrix Maps", 0, 0)
+			maintitle:SetFont(maintitle:GetFont(), 72)
+			maintitle:ClearAllPoints()
+			maintitle:SetPoint("TOP", 0, -72)
+
+			local expTitle = LeaMapsLC:MakeTx(interPanel, L["World of Warcraft Classic"], 0, 0)
+			expTitle:SetFont(expTitle:GetFont(), 32)
+			expTitle:ClearAllPoints()
+			expTitle:SetPoint("TOP", 0, -152)
+
+			local subTitle = LeaMapsLC:MakeTx(interPanel, "www.leatrix.com", 0, 0)
+			subTitle:SetFont(subTitle:GetFont(), 20)
+			subTitle:ClearAllPoints()
+			subTitle:SetPoint("BOTTOM", 0, 72)
+
+			local slashTitle = LeaMapsLC:MakeTx(interPanel, "/ltm", 0, 0)
+			slashTitle:SetFont(slashTitle:GetFont(), 72)
+			slashTitle:ClearAllPoints()
+			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
+			slashTitle:SetScript("OnMouseUp", function(self, button)
+				if button == "LeftButton" then
+					SlashCmdList["Leatrix_Maps"]("")
+				end
+			end)
+			slashTitle:SetScript("OnEnter", function()
+				slashTitle.r,  slashTitle.g, slashTitle.b = slashTitle:GetTextColor()
+				slashTitle:SetTextColor(1, 1, 0)
+			end)
+			slashTitle:SetScript("OnLeave", function()
+				slashTitle:SetTextColor(slashTitle.r, slashTitle.g, slashTitle.b)
+			end)
+
+			local pTex = interPanel:CreateTexture(nil, "BACKGROUND")
+			pTex:SetAllPoints()
+			pTex:SetTexture("Interface\\GLUES\\Models\\UI_MainMenu\\swordgradient2")
+			pTex:SetAlpha(0.2)
+			pTex:SetTexCoord(0, 1, 1, 0)
+
+			local category = Settings.RegisterCanvasLayoutCategory(interPanel, L["Leatrix Maps"])
+			Settings.RegisterAddOnCategory(category)
+
+		else
 
 			local interPanel = CreateFrame("FRAME")
 			interPanel.name = "Leatrix Maps"
@@ -2478,22 +2617,20 @@
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
 
-			local slashButton = CreateFrame("Button", nil, interPanel)
-			slashButton:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
-			slashButton:SetScript("OnClick", function() SlashCmdList["Leatrix_Maps"]("") end)
-
-			local slashTitle = LeaMapsLC:MakeTx(slashButton, "/ltm", 0, 0)
+			local slashTitle = LeaMapsLC:MakeTx(interPanel, "/ltm", 0, 0)
 			slashTitle:SetFont(slashTitle:GetFont(), 72)
 			slashTitle:ClearAllPoints()
-			slashTitle:SetAllPoints()
-
-			slashButton:SetSize(slashTitle:GetSize())
-			slashButton:SetScript("OnEnter", function()
+			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
+			slashTitle:SetScript("OnMouseUp", function(self, button)
+				if button == "LeftButton" then
+					SlashCmdList["Leatrix_Maps"]("")
+				end
+			end)
+			slashTitle:SetScript("OnEnter", function()
 				slashTitle.r,  slashTitle.g, slashTitle.b = slashTitle:GetTextColor()
 				slashTitle:SetTextColor(1, 1, 0)
 			end)
-
-			slashButton:SetScript("OnLeave", function()
+			slashTitle:SetScript("OnLeave", function()
 				slashTitle:SetTextColor(slashTitle.r, slashTitle.g, slashTitle.b)
 			end)
 
@@ -2513,7 +2650,12 @@
 
 		do
 
-			LeaMapsLC:CreateDropDown("ZoneMapMenu", "Zone Map", LeaMapsLC["PageF"], 146, "TOPLEFT", 16, -392, {L["Never"], L["Battlegrounds"], L["Always"]}, L["Choose where the zone map should be shown."])
+			if LeaMapsLC.NewPatch then
+				LeaMapsLC:CreateDropdownNew("ZoneMapMenu", "Zone Map", 146, "TOPLEFT", LeaMapsLC["PageF"], "TOPLEFT", 16, -392, {{L["Never"], 1}, {L["Battlegrounds"], 2}, {L["Always"], 3}}, L["Choose where the zone map should be shown."])
+				LeaMapsCB["ZoneMapMenu"]:SetWidth(170)
+			else
+				LeaMapsLC:CreateDropDown("ZoneMapMenu", "Zone Map", LeaMapsLC["PageF"], 146, "TOPLEFT", 16, -392, {L["Never"], L["Battlegrounds"], L["Always"]}, L["Choose where the zone map should be shown."])
+			end
 
 			-- Set zone map visibility
 			local function SetZoneMapStyle()
@@ -2539,8 +2681,12 @@
 			SetZoneMapStyle()
 
 			-- Set style when a drop menu is selected (procs when the list is hidden)
-			LeaMapsCB["ListFrameZoneMapMenu"]:HookScript("OnHide", SetZoneMapStyle)
-			LeaMapsCB["ListFrameZoneMapMenu"]:SetFrameLevel(30)
+			if LeaMapsLC.NewPatch then
+				LeaMapsCB["ZoneMapMenu"]:RegisterCallback("OnUpdate", SetZoneMapStyle)
+			else
+				LeaMapsCB["ListFrameZoneMapMenu"]:HookScript("OnHide", SetZoneMapStyle)
+				LeaMapsCB["ListFrameZoneMapMenu"]:SetFrameLevel(30)
+			end
 
 		end
 
@@ -2846,6 +2992,27 @@
 		return mbtn
 	end
 
+	-- Create a dropdown menu (using standard dropdown template)
+	function LeaMapsLC:CreateDropdownNew(frame, label, width, anchor, parent, relative, x, y, items)
+
+		local RadioDropdown = CreateFrame("DropdownButton", nil, parent, "WowStyle1DropdownTemplate")
+		LeaMapsCB[frame] = RadioDropdown
+		RadioDropdown:SetPoint(anchor, parent, relative, x, y)
+
+		local function IsSelected(value)
+			return value == LeaMapsLC[frame]
+		end
+
+		local function SetSelected(value)
+			LeaMapsLC[frame] = value
+		end
+
+		MenuUtil.CreateRadioMenu(RadioDropdown, IsSelected, SetSelected, unpack(items))
+
+		local lf = RadioDropdown:CreateFontString(nil, "OVERLAY", "GameFontNormal"); lf:SetPoint("TOPLEFT", RadioDropdown, 0, 20); lf:SetPoint("TOPRIGHT", RadioDropdown, -5, 20); lf:SetJustifyH("LEFT"); lf:SetText(L[label])
+
+	end
+
 	-- Create a dropdown menu (using custom function to avoid taint)
 	function LeaMapsLC:CreateDropDown(ddname, label, parent, width, anchor, x, y, items, tip)
 
@@ -3108,7 +3275,12 @@
 	function LeaMapsLC:MakeSL(frame, field, label, caption, low, high, step, x, y, form)
 
 		-- Create slider control
-		local Slider = CreateFrame("Slider", "LeaMapsGlobalSlider" .. field, frame, "OptionssliderTemplate")
+		local Slider
+		if LeaMapsLC.NewPatch then
+			Slider = CreateFrame("Slider", "LeaMapsGlobalSlider" .. field, frame, "HorizontalSliderTemplate")
+		else
+			Slider = CreateFrame("Slider", "LeaMapsGlobalSlider" .. field, frame, "OptionssliderTemplate")
+		end
 		LeaMapsCB[field] = Slider
 		Slider:SetMinMaxValues(low, high)
 		Slider:SetValueStep(step)
@@ -3122,11 +3294,19 @@
 		Slider:SetScript("OnLeave", GameTooltip_Hide)
 
 		-- Remove slider text
-		_G[Slider:GetName().."Low"]:SetText('')
-		_G[Slider:GetName().."High"]:SetText('')
+		if not LeaMapsLC.NewPatch then
+			_G[Slider:GetName().."Low"]:SetText('')
+			_G[Slider:GetName().."High"]:SetText('')
+		end
 
 		-- Set label
-		_G[Slider:GetName().."Text"]:SetText(L[label])
+		if LeaMapsLC.NewPatch then
+			local labelfrm = Slider:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+			labelfrm:SetPoint("TOP", Slider, "TOP", 0, 12)
+			labelfrm:SetText(L[label])
+		else
+			_G[Slider:GetName().."Text"]:SetText(L[label])
+		end
 
 		-- Create slider label
 		Slider.f = Slider:CreateFontString(nil, 'BACKGROUND')
@@ -3377,7 +3557,11 @@
 			end
 		else
 			-- Prevent options panel from showing if a game options panel is showing
-			if InterfaceOptionsFrame:IsShown() or VideoOptionsFrame:IsShown() or ChatConfigFrame:IsShown() then return end
+			if LeaMapsLC.NewPatch then
+				if ChatConfigFrame:IsShown() then return end
+			else
+				if InterfaceOptionsFrame:IsShown() or VideoOptionsFrame:IsShown() or ChatConfigFrame:IsShown() then return end
+			end
 			-- Toggle the options panel
 			if LeaMapsLC:IsMapsShowing() then
 				LeaMapsLC["PageF"]:Hide()

@@ -2,7 +2,7 @@
 ## Title: Buffet
 ## Notes: Food/water macro generator
 ## Author: Tekkub Stoutwrithe, mZHg
-## Version: 4.4.0.115
+## Version: 4.4.0.116
 ## IconTexture: Interface\Icons\INV_Misc_Food_DimSum
 ## X-Icon: Interface\Icons\INV_Misc_Food_DimSum
 ## SavedVariables: BuffetItemDB

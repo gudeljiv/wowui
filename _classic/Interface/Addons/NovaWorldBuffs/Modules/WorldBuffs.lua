@@ -803,7 +803,7 @@ local function combatLogEventUnfiltered(...)
 			end
 		elseif (destName == UnitName("player") and spellID == 25101) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
+			if (expirationTime >= 899) then
 				NWB:trackNewBuff(spellName, "battleShout");
 			end
 		--New SoD buffs, now that they allow spellIDs in classic this needs to all be changed to a hash table instead of this mess of elseif's in the future.

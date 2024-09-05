@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 4.0.21 (21st August 2024)
+-- 	Leatrix Plus 4.0.23 (4th September 2024)
 ----------------------------------------------------------------------
 
 --	01:Functions  02:Locks    03:Restart  40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "4.0.21"
+	LeaPlusLC["AddonVer"] = "4.0.23"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -3180,8 +3180,8 @@
 					PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Elite.blp")
 					PlayerFrameTexture:SetTexCoord(1, .09375, 0, .78125)
 				elseif chain == 3 then -- Rare Elite
-					PlayerFrameTexture:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
-					PlayerFrameTexture:SetTexCoord(0.25, 0.0234375, 0, 0.1953125)
+					PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Rare-Elite.blp")
+					PlayerFrameTexture:SetTexCoord(1, .09375, 0, .78125)
 				end
 			end
 
@@ -12681,22 +12681,20 @@
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
 
-			local slashButton = CreateFrame("Button", nil, interPanel)
-			slashButton:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
-			slashButton:SetScript("OnClick", function() SlashCmdList["Leatrix_Plus"]("") end)
-
-			local slashTitle = LeaPlusLC:MakeTx(slashButton, "/ltp", 0, 0)
+			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/ltp", 0, 0)
 			slashTitle:SetFont(slashTitle:GetFont(), 72)
 			slashTitle:ClearAllPoints()
-			slashTitle:SetAllPoints()
-
-			slashButton:SetSize(slashTitle:GetSize())
-			slashButton:SetScript("OnEnter", function()
+			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
+			slashTitle:SetScript("OnMouseUp", function(self, button)
+				if button == "LeftButton" then
+					SlashCmdList["Leatrix_Plus"]("")
+				end
+			end)
+			slashTitle:SetScript("OnEnter", function()
 				slashTitle.r,  slashTitle.g, slashTitle.b = slashTitle:GetTextColor()
 				slashTitle:SetTextColor(1, 1, 0)
 			end)
-
-			slashButton:SetScript("OnLeave", function()
+			slashTitle:SetScript("OnLeave", function()
 				slashTitle:SetTextColor(slashTitle.r, slashTitle.g, slashTitle.b)
 			end)
 

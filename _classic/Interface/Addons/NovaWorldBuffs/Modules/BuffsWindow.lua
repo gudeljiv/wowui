@@ -7,7 +7,7 @@
 local addonName, addon = ...;
 local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
-local buffTable = NWB.buffTable;
+local spellTypes = NWB.spellTypes;
 
 local NWBbuffListFrame = CreateFrame("ScrollFrame", "NWBbuffListFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBbuffListFrame:Hide();
@@ -448,6 +448,14 @@ function NWB:openBuffListFrame()
 	end
 end
 
+local function getSpellDataByType(type)
+	for k, v in pairs(spellTypes) do
+		if (type == v.type) then
+			return v;
+		end
+	end
+end
+
 local framesUsed = {};
 local usedLineFrameCount = 0;
 local offset = 40;
@@ -554,11 +562,9 @@ function NWB:recalcBuffListFrame()
 							local storedBuffs = {};
 							for k, v in NWB:pairsByKeys(v.buffs) do --Iterate buffs.
 								buffString = "";
-								if (v.track and v.timeLeft > 0) then
-									local icon = "";
-									if (buffTable[v.type]) then
-										icon = buffTable[v.type].icon;
-									end
+								local buffData = getSpellDataByType(v.type);
+								if (buffData and v.track and v.timeLeft > 0) then
+									local icon = buffData.icon;
 									local buffName = k;
 									if (k == "Supreme Power") then
 										buffName = "Flask of Supreme Power";
@@ -607,12 +613,10 @@ function NWB:recalcBuffListFrame()
 							if (v.storedBuffs and next(v.storedBuffs)) then
 								for k, v in NWB:pairsByKeys(v.storedBuffs) do --Iterate buffs.
 									storedBuffString = "";
-									if (v.track and v.timeLeft > 0) then
+									local buffData = getSpellDataByType(v.type);
+									if (buffData and v.track and v.timeLeft > 0) then
 										storedBuffs[k] = true;
-										local icon = "";
-										if (buffTable[v.type]) then
-											icon = buffTable[v.type].icon;
-										end
+										local icon = buffData.icon;
 										local buffName = k;
 										if (k == "Supreme Power") then
 											buffName = "Flask of Supreme Power";
@@ -656,17 +660,18 @@ function NWB:recalcBuffListFrame()
 								for k, v in NWB:pairsByKeys(v) do
 									statsBuffString = "";
 									local key = string.gsub(k, "%Count", "")
-									if (buffTable[key] and not foundBuffs[key] and tonumber(v) and v > 0) then
+									local buffData = getSpellDataByType(key);
+									if (buffData and not foundBuffs[key] and tonumber(v) and v > 0) then
 										if (not foundActiveBuff and not NWB.db.global.showUnbuffedAlts) then
 											foundActiveBuff = true;
 										end
-										local buffName = buffTable[key].fullName;
+										local buffName = buffData.fullName;
 										if (buffName == "Supreme Power") then
 											buffName = "Flask of Supreme Power";
 										elseif (buffName == "Distilled Wisdom") then
 											buffName = "Flask of Distilled Wisdom";
 										end
-										local icon = buffTable[key].icon;
+										local icon = buffData.icon;
 										local buffCount = v;
 										local skip;
 										if (key == "ony" or key == "nef") then

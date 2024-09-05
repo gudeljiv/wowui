@@ -272,13 +272,6 @@ end
 
 --Send to specified addon channel.
 function NWB:sendComm(distribution, string, target, prio, useOldSerializer)
-	--if (NWB.isDebug) then
-	--	local a, b, c, d, e = strsplit(" ", string, 5);
-	--	print(1, a, b, c, d, e)
-	--	local deserializeResult, deserialized = NWB.serializer:Deserialize(e);
-		--print(2, deserializeResult, deserialized)
-	--	NWB:debug(deserialized);
-	--end
 	if (useOldSerializer) then
 		NWB:debug("useOldSerializer", useOldSerializer);
 	end
@@ -1699,12 +1692,9 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 																NWB.data.layers[layer][k] = v;
 															end
 														else
-															--print(2, k, v)
 															--Ignore data if we've set this buff type to 0 cooldown.
 															local type = strmatch(k, "(%a+)Timer$");
-															--print(2, k, v, type)
 															if (not (type and NWB[type .. "CooldownTime"] and NWB[type .. "CooldownTime"] < 1)) then
-																--print(3, k, v, type)
 																NWB.data.layers[layer][k] = v;
 															end
 														end

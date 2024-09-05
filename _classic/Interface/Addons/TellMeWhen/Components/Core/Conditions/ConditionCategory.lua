@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -75,7 +75,7 @@ end
 --        ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 --    end,
 --    anticipate = [[
---      local _, start, duration = CooldownDuration(c.NameFirst)
+--      local start, duration = GetSpellCooldown(c.NameFirst)
 --      local VALUE = duration and start + (duration - c.Level) or huge
 --    ]],
 --  })

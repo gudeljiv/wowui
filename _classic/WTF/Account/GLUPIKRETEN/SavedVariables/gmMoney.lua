@@ -102,7 +102,7 @@ GMMONEY = {
 },
 ["Celebras"] = {
 ["Vbank"] = {
-["GOLD"] = 1330,
+["GOLD"] = 11831,
 ["CLASS"] = "WARRIOR",
 },
 ["Battlenac"] = {
@@ -110,7 +110,7 @@ GMMONEY = {
 ["CLASS"] = "PRIEST",
 },
 ["Mq"] = {
-["GOLD"] = 60506,
+["GOLD"] = 61469,
 ["CLASS"] = "HUNTER",
 },
 ["Vermin"] = {

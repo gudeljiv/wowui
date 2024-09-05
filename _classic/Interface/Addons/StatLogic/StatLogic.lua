@@ -1778,8 +1778,8 @@ do
 
 				if not found then
 					-- Strip color codes
-					text = text:gsub("^|c%x%x%x%x%x%x%x%x", "")
-					text = text:gsub("|r$", "")
+					text = text:gsub("|c%x%x%x%x%x%x%x%x", "")
+					text = text:gsub("|r", "")
 				end
 				local rawText = text
 
@@ -2197,16 +2197,10 @@ if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS"
 
 	local function InitializeComms()
 		local target
-		if GetNormalizedRealmName() == "CrusaderStrike" and UnitFactionGroup("player") == "Alliance" then
-			target = "Astraea"
-		elseif GetNormalizedRealmName() == "LoneWolf" and UnitFactionGroup("player") == "Horde" then
-			target = "Astraean"
-		elseif GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Horde" and tocversion >= 30000 then
+		if GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Horde" and tocversion >= 30000 then
 			target = "Pinstripe"
 		elseif GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Alliance" and tocversion >= 30000 then
 			target = "Astriea"
-		elseif GetNormalizedRealmName() == "ClassicEraPTR" and UnitFactionGroup("player") == "Horde" then
-			target = "Rbshaman"
 		end
 
 		if target then

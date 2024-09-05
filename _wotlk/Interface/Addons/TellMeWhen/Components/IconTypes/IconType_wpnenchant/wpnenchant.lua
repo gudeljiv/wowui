@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -37,7 +37,7 @@ local Type = TMW.Classes.IconType:New("wpnenchant")
 LibStub("AceTimer-3.0"):Embed(Type)
 Type.name = L["ICONMENU_WPNENCHANT"]
 Type.desc = L["ICONMENU_WPNENCHANT_DESC"]
-Type.menuIcon = TMW.GetSpellTexture(8024)
+Type.menuIcon = TMW.GetSpellTexture(8024) or TMW.GetSpellTexture(318038)
 Type.AllowNoName = true
 Type.menuSpaceAfter = true
 

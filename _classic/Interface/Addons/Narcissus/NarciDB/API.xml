@@ -1,0 +1,15 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <Script file="API.lua"/>
+    <Script file="Easing.lua"/>
+    <Script file="TimeUtil.lua"/>
+    <Script file="FadeFrame.lua"/>
+    <Script file="ItemType.lua"/>
+    <Script file="ClassicAPI.lua"/>
+    <Script file="NarciAPI.lua"/>
+    <Script file="Processor.lua"/>
+    <Script file="Color.lua"/>
+    <Script file="ScrollFrame.lua"/>
+    <Script file="TooltipParser.lua"/>
+    <Script file="TransmogDataProvider.lua"/>
+    <Script file="CharacterProfile.lua"/>
+</Ui>

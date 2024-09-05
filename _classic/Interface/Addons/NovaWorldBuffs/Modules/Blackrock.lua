@@ -415,7 +415,7 @@ local function chatMsgCombatHonorGain(...)
 end
 
 function NWB:blackrockEnded()
-	NWB:debug("Blackock event ended.");
+	--NWB:debug("Blackock event ended.");
 	--Disabled for now, we'll see how accurate the timer is first.
 	--Probably won't start right on the hour like other events so this may need a delay to be sure it ended.
 	--Or just swap this to widgets to get real ending.

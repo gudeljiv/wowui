@@ -1,6 +1,6 @@
 #  --------------------
 #  TellMeWhen
-#  Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+#  Originally by NephMakes
 # 
 #  Other contributions by:
 # 		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -18,7 +18,7 @@
 ## X-WoWI-ID: 10855
 ## X-Wago-ID: ZQ6aZqKW
 
-## Version: 11.0.4
+## Version: 11.0.6
 ## Author: Cybeloras of Aerie Peak
 ## IconTexture: Interface\Addons\TellMeWhen\Textures\LDB Icon
 ## AddonCompartmentFunc: TellMeWhen_OnAddonCompartmentClick

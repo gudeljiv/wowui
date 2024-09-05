@@ -1,24 +1,10 @@
-tag c7fc3da6675446be48612d41d01d217a8d06c5ea v1.9.2
+tag f4a74eb58ce34cae1e5669ff8bd83e63ac9b8d99 v1.9.4
 Author:	skyler-code <skylerh15@github.com>
-Date:	Sat Aug 17 23:45:13 2024 -0500
+Date:	Sat Aug 31 02:56:58 2024 -0500
 
-commit 30fa4ff30666f20d5a2af75f2d2ba38ba65c49b7
+commit eb493a9d5b7691ba9b5398704549e18fe125fcbf
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Aug 17 23:43:49 2024 -0500
+Date:   Sat Aug 31 02:56:50 2024 -0500
 
-    Dont recommend spirit-to-hit for non-ele/boomkin
-    
-    This reverts commit 0381a078799066a93eb36cbeb9128698c9956636.
-
-commit 6734be85b128247ce1cffef7319a59182cf2e453
-Author: skyler-code <skylerh15@github.com>
-Date:   Fri Aug 16 22:03:44 2024 -0500
-
-    rounding fixes
-
-commit 50ba7f6c5a013c2f45e1050fd183cdf7d61a383e
-Author: skyler-code <skylerh15@github.com>
-Date:   Fri Aug 16 17:08:02 2024 -0500
-
-    use Round func from MathUtil
+    Emergency fix to make sure our loop counter resets properly
 

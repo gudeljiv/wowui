@@ -80,10 +80,10 @@ function NWB:OnInitialize()
 	self:checkLayers();
 	self:cleanupSettingsData();
 	self:setSongFlowers();
-	self:createSongflowerMarkers();
-	self:createTuberMarkers();
-	self:createDragonMarkers();
-	self:refreshFelwoodMarkers();
+	--self:createSongflowerMarkers();
+	--self:createTuberMarkers();
+	--self:createDragonMarkers();
+	--self:refreshFelwoodMarkers();
 	self:createWorldbuffMarkersTable();
 	self:createWorldbuffMarkers();
 	self:createShatDailyMarkers();
@@ -111,10 +111,7 @@ function NWB:OnInitialize()
 	self:createLayerFrameTimerLogButton();
 	self:setLayerFrameText();
 	self:logonCheckGuildMasterSetting();
-	self:createNaxxMarkers();
-	if (NWB.createExtraDungMarkers) then
-		NWB:createExtraDungMarkers();
-	end
+	self:createDungeonPortalMarkers();
 	self:timerCleanup();
 	self:resetOldLockouts();
 	if (NWB.isTBC or NWB.isWrath) then
@@ -309,7 +306,7 @@ function NWB:printBuffTimers(isLogon)
 		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
 		if (dmfCooldown > 0 and not noMsgs) then
 			if ((not isLogon and NWB.db.global.showDmfBuffWb) or NWB.db.global.logonDmfBuffCooldown) then
-				if (not foundThisCharDmfReset) then
+				if (not foundThisCharDmfReset and not NWB:isDMFBooned()) then
 					--Only send this cooldown left msg if dmf didn't reset while we're offline.
 					msg = string.format(L["dmfBuffCooldownMsg"], NWB:getTimeString(dmfCooldown, true));
 					NWB:print("|HNWBCustomLink:timers|h" .. msg .. "|h", nil, "[DMF]");
@@ -358,15 +355,51 @@ end
 function NWB:isCapitalCityAction(type)
 	local _, _, zone = NWB:GetPlayerZonePosition();
 	local subZone = GetSubZoneText();
-	if (zone == 1453 and NWB.faction == "Alliance" and (type == "ony" or type == "nef" or type == "timer")) then
+	if (zone == 1453 and NWB.faction == "Alliance" and (type == "ony" or type == "nef" or type == "rend" or type == "timer")) then
 		return true;
 	elseif (zone == 1454 and NWB.faction == "Horde" and (type == "ony" or type == "nef" or type == "rend" or type == "timer")) then
 		return true;
 	elseif (zone == 1413 and subZone == POSTMASTER_LETTER_BARRENS_MYTHIC and (type == "ony" or type == "nef"
 			or type == "rend" or type == "timer")) then
 		return true;
+	elseif (zone == 1413 and (type == "rend" or type == "timer")) then
+		return true;
 	elseif ((zone == 1434 or zone == 1443 or zone == 1454 or zone == 1413) and type == "zan" or type == "timer") then
 		return true;
+	end
+end
+
+function NWB:isDMFBooned(char, realm)
+	if (char) then
+		if (realm) then
+			if (NWB.db.global[realm] and type(NWB.db.global[realm]) == "table") then
+				for faction, factionData in pairs(NWB.db.global[realm]) do
+					if (type(factionData) == "table" and factionData.myChars and factionData.myChars[char] and factionData.myChars[char].storedBuffs) then
+						for k, v in pairs(factionData.myChars[char].storedBuffs) do
+							if (v.type == "dmf" and v.timeLeft and v.timeLeft > 0) then
+								return true;
+							end
+						end
+					end
+				end
+			end			
+		else
+			if (NWB.data.myChars[char] and NWB.data.myChars[char].storedBuffs) then
+				for k, v in pairs(NWB.data.myChars[char].storedBuffs) do
+					if (v.type == "dmf" and v.timeLeft and v.timeLeft > 0) then
+						return true;
+					end
+				end
+			end
+		end
+	else
+		if (NWB.data.myChars[UnitName("player")].storedBuffs) then
+			for k, v in pairs(NWB.data.myChars[UnitName("player")].storedBuffs) do
+				if (v.type == "dmf" and v.timeLeft and v.timeLeft > 0) then
+					return true;
+				end
+			end
+		end
 	end
 end
 
@@ -859,7 +892,9 @@ function NWB:ticker()
 		NWB.data.myChars[UnitName("player")].dmfCooldown = NWB.data.myChars[UnitName("player")].dmfCooldown - 1;
 		if (lastDmfTick >= 1 and NWB.data.myChars[UnitName("player")].dmfCooldown <= 0 and NWB.data.myChars[UnitName("player")].dmfCooldown > -99990) then
 			if (NWB.isDmfUp or NWB.isAlwaysDMF) then
-				NWB:print(L["dmfBuffReset"]);
+				if (not NWB:isDMFBooned()) then
+					NWB:print(L["dmfBuffReset"]);
+				end
 			end
 			lastDmfTick = -99999;
 		else
@@ -1744,10 +1779,10 @@ function NWB:untrackBuff(spellName)
 end
 
 local spellTypes = NWB.spellTypes;
-local dmfBuffTable = NWB.dmfBuffTable;
-local buffTable = NWB.buffTable;
+--local dmfBuffTable = NWB.dmfBuffTable;
+--local buffTable = NWB.buffTable;
 
-local function findSpellTypeByName(spellName)
+--[[local function findSpellTypeByName(spellName)
 	for k, v in pairs(buffTable) do
 		if (spellName == L[v.fullName]) then
 			return k;
@@ -1756,6 +1791,14 @@ local function findSpellTypeByName(spellName)
 	for k, v in pairs(dmfBuffTable) do
 		if (spellName == L[v.fullName]) then
 			return v.type;
+		end
+	end
+end]]
+
+local function getMaxDurationByType(type)
+	for k, v in pairs(spellTypes) do
+		if (type == v.type or type == v.type2) then
+			return v.maxDuration;
 		end
 	end
 end
@@ -1806,14 +1849,15 @@ function NWB:recalcBuffTimers()
 	end
 	if (NWB.data.myChars[UnitName("player")].buffs) then
 		for k, v in pairs(NWB.data.myChars[UnitName("player")].buffs) do
-			if (not v.timeLeft or not v.setTime) then
+			if (not v.timeLeft or not v.setTime or v.timeLeft < 0) then
 				NWB.data.myChars[UnitName("player")].buffs[k] = nil;
 			else
 				if (not v.playedCacheSetAt) then
 					v.playedCacheSetAt = 0;
 				end
 				--Calc the difference between current total played time and the played time we record when buff was gotten.
-				v.timeLeft = buffTable[v.type].maxDuration - (NWB.played - v.playedCacheSetAt);
+				v.timeLeft = getMaxDurationByType(v.type) - (NWB.played - v.playedCacheSetAt);
+				--v.timeLeft = buffTable[v.type].maxDuration - (NWB.played - v.playedCacheSetAt);
 				--v.timeLeft = NWB.db.global[v.type .. "BuffTime"] - (NWB.played - v.playedCacheSetAt);
 				--NWB.data.myChars[UnitName("player")].buffs[k].timeLeft = NWB.db.global[v.type .. "BuffTime"] - (NWB.played - v.playedCacheSetAt);
 			end
@@ -1824,24 +1868,49 @@ end
 
 --/played can sometimes drift a bit with buff durations, probably due to loads times and such.
 --Here we resync the buff tracking with current buff durations.
---And pick up any buffs not being tracked already for whenever reason.
+--And pick up any buffs not being tracked already for whatever reason.
 function NWB:syncBuffsWithCurrentDuration()
+	local db = NWB.data.myChars[UnitName("player")];
 	--Remove any buffs still being tracked that we don't have, seems to only happen when there's server lag during chronoboon use.
-	if (NWB.data.myChars[UnitName("player")].buffs) then
-		for k, v in pairs(NWB.data.myChars[UnitName("player")].buffs) do
+	if (db.buffs) then
+		for k, v in pairs(db.buffs) do
 			if (v.track and v.timeLeft > 0) then
 				local expirationTime = NWB:getBuffDuration(k, 1);
 				if (expirationTime == 0) then
-					NWB.data.myChars[UnitName("player")].buffs[k].track = false;
+					db.buffs[k].track = false;
 					NWB:debug("removed inactive buff during sync", k);
 				end
 			end
 		end
+	else
+		db.buffs = {};
 	end
 	for i = 1, 32 do
 		local spellName, _, _, _, _, expirationTime, _, _, _, spellID = UnitBuff("player", i);
 		if (spellName and NWB.played > 600) then
-			local foundType = findSpellTypeByName(spellName);
+			if (spellTypes[spellID]) then
+				local buffData = spellTypes[spellID];
+				local type = buffData.type;
+				db.buffs[spellName] = {};
+				db.buffs[spellName].type = buffData.type;
+				db.buffs[spellName].spellID = spellID;
+				local timeLeft = expirationTime - GetTime();
+				local maxDuration = (buffData.maxDuration or 0);
+				--local maxDuration = NWB.db.global[type .. "BuffTime"] or 0;
+				local elapsedDuration = maxDuration - timeLeft;
+				local newPlayedCache = NWB.played - elapsedDuration;
+				db.buffs[spellName].timeLeft = timeLeft;
+				db.buffs[spellName].setTime = GetServerTime();
+				db.buffs[spellName].track = true;
+				--Change the played seconds this was buff was set at to match the current time elapsed on our current buff.
+				db.buffs[spellName].playedCacheSetAt = math.floor(newPlayedCache);
+				--NWB:debug("Resyncing spellID tracked buff", spellName);
+				if (not db[type .. "Count"]
+						or db[type .. "Count"] == 0) then
+					db[type .. "Count"] = 1;
+				end
+			end
+			--[[local foundType = findSpellTypeByName(spellName);
 			if (NWB.data.myChars[UnitName("player")].buffs and (NWB.data.myChars[UnitName("player")].buffs[spellName] or foundType)) then
 				if (NWB.data.myChars[UnitName("player")].buffs[spellName] and spellTypes[spellID]) then
 					local type = NWB.data.myChars[UnitName("player")].buffs[spellName].type;
@@ -1899,16 +1968,64 @@ function NWB:syncBuffsWithCurrentDuration()
 						or NWB.data.myChars[UnitName("player")][spellTypes[spellID] .. "Count"] == 0) then
 					NWB.data.myChars[UnitName("player")][spellTypes[spellID] .. "Count"] = 1;
 				end
-			end
+			end]]
 		end
 	end
 	NWB:recalcBuffTimers();
 end
 
---This has to check npcID's as well as names to work for all languages.
---We have no spellID's to check thanks to combat log hiding them in classic.
+--This doesn't use the getSpellInfo() extra chronoboon args becaus they have been known to change order in the past.
+--This is a bit more sloppy but it works.
+--At a later data I should add the GetSpellInfi() version as backup so they can be recorded for new installs that haven't booned yet as this only records when booning.
 local tempStoredBuffs = {};
 function NWB:storeBuffs()
+	NWB:syncBuffsWithCurrentDuration();
+	--NWB:debug("temp storing buffs");
+	if (NWB.data.myChars[UnitName("player")].buffs) then
+		for k, v in pairs(NWB.data.myChars[UnitName("player")].buffs) do
+			if (v.track and v.timeLeft and v.timeLeft > 0) then
+				--Slowly converting things to spellID's now they exist in classic.
+				--The non spellID stuff can be removed at a later date.
+				if (v.spellID and spellTypes[v.spellID] and spellTypes[v.spellID].isBoonable) then
+					tempStoredBuffs[k] = {};
+					for kk, vv in pairs(v) do
+						tempStoredBuffs[k][kk] = vv;
+					end
+					--NWB:debug("storing by spellID")
+				--This cluster is thanks to hidden spellID's in classic and dealing with locales.
+				elseif (k == L["Warchief's Blessing"] or k == L["Rallying Cry of the Dragonslayer"] or k == L["Songflower Serenade"]
+						or k == L["Slip'kik's Savvy"] or k == L["Fengus' Ferocity"] or k == L["Mol'dar's Moxie"]
+						or k == L["Spirit of Zandalar"] or k == L["Sayge's Dark Fortune of Agility"]
+						or k == L["Sayge's Dark Fortune of Intelligence"] or k == L["Sayge's Dark Fortune of Spirit"]
+						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
+						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
+						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]
+						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"] or k == L["Might of Stormwind"]) then
+					if (k ~= L["Battle Shout"]) then
+						tempStoredBuffs[k] = {};
+						for kk, vv in pairs(v) do
+							tempStoredBuffs[k][kk] = vv;
+						end
+						NWB:debug("storing by name", k);
+					end
+				elseif (v.npcID and (v.npcID == 14392 or v.npcID == 14394
+						or v.npcID == 14720 or v.npcID == 14721 or v.npcID == 4949 or v.npcID == 10719 or v.npcID == 14875
+						or v.npcID == 15076 or v.npcID == 14326 or v.npcID == 14321 or v.npcID == 14323
+						or v.npcID == 9087 or v.npcID == 4783)) then
+					if (k ~= L["Battle Shout"]) then
+						tempStoredBuffs[k] = {};
+						for kk, vv in pairs(v) do
+							tempStoredBuffs[k][kk] = vv;
+						end
+						NWB:debug("storing by npc");
+					end
+				end
+			end
+		end
+	end
+end
+
+--[[function NWB:storeBuffs()
 	NWB:syncBuffsWithCurrentDuration();
 	NWB:debug("temp storing buffs");
 	if (NWB.data.myChars[UnitName("player")].buffs) then
@@ -1922,8 +2039,7 @@ function NWB:storeBuffs()
 						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
 						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
 						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]
-						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"] or k == L["Might of Stormwind"]
-						or k == L["Battle Shout"]) then
+						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"] or k == L["Might of Stormwind"]) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
@@ -1940,11 +2056,11 @@ function NWB:storeBuffs()
 			end
 		end
 	end
-end
+end]]
 
 --Insert buffs from temp table we recorded on cast start.
 function NWB:recordStoredBuffs()
-	NWB:debug("record temp stored buffs");
+	--NWB:debug("record temp stored buffs");
 	if (not NWB.data.myChars[UnitName("player")].storedBuffs) then
 		NWB.data.myChars[UnitName("player")].storedBuffs = {};
 	end
@@ -1959,12 +2075,12 @@ function NWB:recordStoredBuffs()
 end
 
 function NWB:clearTempStoredBuffs()
-	NWB:debug("clear temp stored buffs");
+	--NWB:debug("clear temp stored buffs");
 	tempStoredBuffs = {};
 end
 
 function NWB:clearStoredBuffs()
-	NWB:debug("clear stored buffs");
+	--NWB:debug("clear stored buffs");
 	NWB.data.myChars[UnitName("player")].storedBuffs = {};
 	tempStoredBuffs = {};
 	NWB:recalcBuffTimers();
@@ -3145,20 +3261,7 @@ function NWB:playSound(sound, type)
 		return;
 	end
 	if (NWB.db.global.soundOnlyInCity and (type == "rend" or type == "ony" or type == "nef" or type == "zan" or type == "timer")) then
-		local play;
-		local _, _, zone = NWB:GetPlayerZonePosition();
-		local subZone = GetSubZoneText();
-		if (zone == 1453 and NWB.faction == "Alliance" and (type == "ony" or type == "nef" or type == "timer")) then
-			play = true;
-		elseif (zone == 1454 and NWB.faction == "Horde" and (type == "ony" or type == "nef" or type == "rend" or type == "timer")) then
-			play = true;
-		elseif (zone == 1413 and subZone == POSTMASTER_LETTER_BARRENS_MYTHIC and (type == "ony" or type == "nef"
-				or type == "rend" or type == "timer")) then
-			play = true;
-		elseif ((zone == 1434 or zone == 1443 or zone == 1454 or zone == 1413) and type == "zan" or type == "timer") then
-			play = true;
-		end
-		if (not play) then
+		if (not NWB:isCapitalCityAction(type)) then
 			return;
 		end
 	end
@@ -5513,6 +5616,44 @@ function NWB:updateFelwoodMinimapMarker(type)
 	end
 end
 
+--Try lessen some taint issues by only creating minimap markers if felwood map is viewed.
+--Bit scuffed but just seeing how it goes atm.
+local createdFelwoodMarkers;
+function NWB:createFelwoodMarkers()
+	if (createdFelwoodMarkers) then
+		return;
+	end
+	createdFelwoodMarkers = true;
+	NWB:createSongflowerMarkers();
+	NWB:createTuberMarkers();
+	NWB:createDragonMarkers();
+	NWB:refreshFelwoodMarkers();
+	NWB:updateWorldbuffMarkersScale();
+end
+
+if (WorldMapFrame) then
+	hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
+		if (WorldMapFrame:GetMapID() == 1448) then
+			NWB:createFelwoodMarkers();
+		end
+	end)
+	WorldMapFrame:HookScript("OnShow", function()
+		if (WorldMapFrame:GetMapID() == 1448) then
+			NWB:createFelwoodMarkers();
+		end
+	end)
+end
+
+local f = CreateFrame("Frame");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:RegisterEvent("AREA_POIS_UPDATED");
+f:SetScript("OnEvent", function(self, event, ...)
+	local _, _, zone = NWB:GetPlayerZonePosition();
+	if (zone == 1448) then
+		NWB:createFelwoodMarkers();
+	end
+end)
+
 function NWB:createSongflowerMarkers()
 	local iconLocation = "Interface\\Icons\\spell_holy_mindvision";
 	for k, v in pairs(NWB.songFlowers) do
@@ -5903,7 +6044,7 @@ function NWB:createDragonMarkers()
 end
 
 function NWB:refreshFelwoodMarkers()
-	if (NWB.expansionNum > 3) then
+	if (NWB.expansionNum > 3 or not createdFelwoodMarkers) then
 		return;
 	end
 	for k, v in pairs(NWB.songFlowers) do
@@ -6392,20 +6533,22 @@ function NWB:updateWorldbuffMarkersScale()
 			_G[k]:SetScale(scale + (scale * 0.2));
 		end
 		--Update Felwood markers.
-		for k, v in pairs(NWB.songFlowers) do
-			_G[k .. "NWB"]:SetScale(scale);
-			_G[k .. "NWB"].tooltip:SetScale(scale);
-			_G[k .. "NWB"].timerFrame:SetScale(scale);
-		end
-	 	for k, v in pairs(NWB.tubers) do
-			_G[k .. "NWB"]:SetScale(scale);
-			_G[k .. "NWB"].tooltip:SetScale(scale);
-			_G[k .. "NWB"].timerFrame:SetScale(scale);
-		end
-	 	for k, v in pairs(NWB.dragons) do
-			_G[k .. "NWB"]:SetScale(scale);
-			_G[k .. "NWB"].tooltip:SetScale(scale);
-			_G[k .. "NWB"].timerFrame:SetScale(scale);
+		if (createdFelwoodMarkers) then
+			for k, v in pairs(NWB.songFlowers) do
+				_G[k .. "NWB"]:SetScale(scale);
+				_G[k .. "NWB"].tooltip:SetScale(scale);
+				_G[k .. "NWB"].timerFrame:SetScale(scale);
+			end
+		 	for k, v in pairs(NWB.tubers) do
+				_G[k .. "NWB"]:SetScale(scale);
+				_G[k .. "NWB"].tooltip:SetScale(scale);
+				_G[k .. "NWB"].timerFrame:SetScale(scale);
+			end
+		 	for k, v in pairs(NWB.dragons) do
+				_G[k .. "NWB"]:SetScale(scale);
+				_G[k .. "NWB"].tooltip:SetScale(scale);
+				_G[k .. "NWB"].timerFrame:SetScale(scale);
+			end
 		end
 		--DMF.
 		if (_G["NWBDMF"]) then
@@ -6661,7 +6804,7 @@ function SlashCmdList.NWBDMFCMD(msg, editBox)
 	end
 	if (output) then
 		if (msg ~= nil and msg ~= "") then
-			NWB:print(output, msg);
+			NWB:print(output, msg, "[NWB]");
 		else
 			NWB:print(output);
 		end
@@ -7258,19 +7401,21 @@ function NWB:checkDmfBuffReset(isLogon)
 							charData.dmfCooldown = -99999;
 						end
 						if (charData.dmfCooldown and lastOnline and charData.resting and charData.dmfCooldown > 0 and GetServerTime() - lastOnline > 28800) then
-							--If 8+ hours offline and in rested area and have dmf buff cooldwn.
-							count = count + 1;
-							local _, _, _, classColorHex = GetClassColor(charData.englishClass);
-							local text = "|c" .. classColorHex .. char .. "-" .. realm .. "|r";
-							if (count == 1) then
-								charString = text;
-							else
-								charString = charString .. ", " .. text;
-							end
-							--Reset dmf buff cooldown data, needs to still be a number and lower than -99990.
-							charData.dmfCooldown = -99999;
-							if (char == me) then
-								foundThisCharDmfReset = true;
+							if (not NWB:isDMFBooned(char, realm)) then
+								--If 8+ hours offline and in rested area and have dmf buff cooldwn.
+								count = count + 1;
+								local _, _, _, classColorHex = GetClassColor(charData.englishClass);
+								local text = "|c" .. classColorHex .. char .. "-" .. realm .. "|r";
+								if (count == 1) then
+									charString = text;
+								else
+									charString = charString .. ", " .. text;
+								end
+								--Reset dmf buff cooldown data, needs to still be a number and lower than -99990.
+								charData.dmfCooldown = -99999;
+								if (char == me) then
+									foundThisCharDmfReset = true;
+								end
 							end
 						end
 					end

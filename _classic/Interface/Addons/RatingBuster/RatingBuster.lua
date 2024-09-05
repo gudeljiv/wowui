@@ -22,7 +22,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.18.1"
+RatingBuster.version = "1.18.2"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -1792,6 +1792,9 @@ function RatingBuster:InitializeDatabase()
 			LibStub("AceConfigDialog-3.0"):Open(addonNameWithVersion)
 		end
 		addon.RepaintStaticTooltips()
+		if ReforgingFrame then
+			ReforgingFrame_Update(ReforgingFrame)
+		end
 	end)
 	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileCopied", "ClearCache")
 	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileReset", "ClearCache")
@@ -2052,9 +2055,9 @@ function RatingBuster:ProcessLine(text, link, color, statModContext)
 			return cacheText
 		end
 	elseif EmptySocketLookup[text] and db.profile[EmptySocketLookup[text]].gemText then -- Replace empty sockets with gem text
-		text = db.profile[EmptySocketLookup[text]].gemText
+		local gemText = db.profile[EmptySocketLookup[text]].gemText
+		text = RatingBuster:ProcessLine(gemText, link, color, statModContext)
 		cache[profileSpec][cacheID] = text
-		-- SetText
 		return text
 	elseif text:find("%d") then -- do nothing if we don't find a number
 		-- Temporarily replace exclusions
@@ -2630,7 +2633,11 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_ReforgingUI", function()
 	local function hookReforgingFontString(fontString)
 		local og_SetText = fontString.SetText
 		fontString.SetText = function(self, text, ...)
-			og_SetText(self, RatingBuster:ProcessText(text))
+			local statModContext = StatLogic:NewStatModContext({
+				profile = db:GetCurrentProfile(),
+				spec = RatingBuster:GetDisplayedSpec()
+			})
+			og_SetText(self, RatingBuster:ProcessText(text, nil, nil, statModContext), ...)
 		end
 	end
 

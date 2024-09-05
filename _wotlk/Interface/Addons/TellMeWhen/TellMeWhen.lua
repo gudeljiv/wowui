@@ -1,6 +1,6 @@
 ﻿-- ---------------------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -24,7 +24,7 @@ local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "11.0.4" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "11.0.6" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -366,33 +366,6 @@ end
 
 
 
----------------------------------
--- Global Cooldown Data
----------------------------------
-
--- Rogue's Backstab. We don't need class spells anymore - any GCD spell works fine.
-local GCDSpell = 53
-TMW.GCDSpell = GCDSpell
-local GCD = 0
-TMW.GCD = 0
-
-function TMW.OnGCD(d)
-	if d <= 0.1 then
-		-- A cd of 0.001 is Blizzard's terrible way of indicating that something's cooldown hasn't started,
-		-- but is still unusable, and has a cooldown pending. It should not be considered a GCD.
-		-- In general, anything less than 0.1 isn't a GCD.
-		return false
-	elseif d <= 1 then
-		-- A cd of 1 (or less) is always a GCD (or at least isn't worth showing)
-		return true
-	else
-		-- If the duration passed in is the same as the GCD spell,
-		-- and the duration isnt zero, then it is a GCD
-		return GCD == d and d > 0 
-	end
-end
-
-
 
 if _G.GetSpellInfo then
 	TMW.GetSpellInfo = _G.GetSpellInfo
@@ -416,20 +389,6 @@ else
 	TMW.GetSpellName = GetSpellInfo
 end
 local GetSpellName = TMW.GetSpellName
-
-
-if _G.GetSpellCooldown then
-	TMW.GetSpellCooldown = _G.GetSpellCooldown
-else
-	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown
-	TMW.GetSpellCooldown = function(spellID)
-		local spellCooldownInfo = C_Spell_GetSpellCooldown(spellID);
-		if spellCooldownInfo then
-			return spellCooldownInfo.startTime, spellCooldownInfo.duration, spellCooldownInfo.isEnabled, spellCooldownInfo.modRate;
-		end
-	end
-end
-local GetSpellCooldown = TMW.GetSpellCooldown
 
 ---------------------------------
 -- Caches
@@ -490,7 +449,24 @@ function TMW.GetSpellTexture(spell)
 		rawget(SpellTexturesMetaIndex, strlowerCache[spell])
 end
 
+TMW.spellTextureCache = setmetatable(
+{}, {
+	__mode = "kv",
+	__index = function(t, i)
+		if not i then return end
 
+		local tex = TMW.GetSpellTexture(i)
+		t[i] = tex
+		return tex
+	end,
+	__call = function(t, i)
+		return t[i]
+	end,
+}) 
+
+TMW:RegisterEvent("SPELLS_CHANGED", function()
+	wipe(TMW.spellTextureCache)
+end)
 
 
 
@@ -2592,15 +2568,11 @@ function TMW:CpuProfileReset()
 end
 
 --- Update variables that are used globally thoughout TMW.
--- This includes TMW.time and TMW.GCD.
 -- Call this manually when script execution starts in a context
 -- that needs these variables but isn't originating from TMW:OnUpdate().
 function TMW:UpdateGlobals()
 	time = GetTime()
 	TMW.time = time
-
-	_, GCD=GetSpellCooldown(GCDSpell)
-	TMW.GCD = GCD	
 end
 
 do	-- TMW:OnUpdate()
