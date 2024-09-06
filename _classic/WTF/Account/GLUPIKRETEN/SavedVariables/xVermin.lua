@@ -515,4 +515,8 @@ xVerminSavedData = {
 "Serpent Sting",
 },
 ["Furious Stone Spirit"] = {
-"Lightning Shi
+"Lightning Shield",
+"Serpent Sting",
+},
+},
+}
