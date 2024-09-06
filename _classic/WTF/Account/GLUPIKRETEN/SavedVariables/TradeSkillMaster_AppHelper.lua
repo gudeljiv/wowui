@@ -7,8 +7,6 @@ TradeSkillMaster_AppHelperDB = {
 },
 ["analytics"] = {
 ["data"] = {
-"[\"AC\",\"v4.14.9\",1724350657837,0,1,\"ADDON_INITIALIZE\",0]",
-"[\"AC\",\"v4.14.9\",1724350660046,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.10\",1724409143784,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.10\",1724409145784,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.10\",1724417070299,0,1,\"ADDON_INITIALIZE\",0]",
@@ -41,8 +39,12 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.12\",1725536761831,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.12\",1725536784299,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.12\",1725536785941,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.12\",1725606619310,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.12\",1725606621085,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.12\",1725607559305,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.12\",1725607560691,0,2,\"ADDON_ENABLE\",0]",
 },
-["updateTime"] = 1725536785.941492,
+["updateTime"] = 1725607560.691402,
 },
 ["blackMarket"] = {
 },

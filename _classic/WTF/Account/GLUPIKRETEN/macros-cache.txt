@@ -55,9 +55,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:4592
 /cast feed pet
-/use item:3770
+/use item:4592
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 /targetexact Foreman Stonebrow

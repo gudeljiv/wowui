@@ -18,7 +18,7 @@ NarcissusDB = {
 ["UseEscapeButton"] = true,
 ["UseEntranceVisual"] = true,
 ["LoopAnimation"] = false,
-["GlobalScale"] = 0.8,
+["GlobalScale"] = 0.7,
 ["UseBustShot"] = true,
 ["AnchorToMinimap"] = true,
 ["TooltipLanguages"] = {
@@ -46,12 +46,10 @@ NarcissusDB = {
 ["NameTranslationPosition"] = 1,
 ["HideTextsWithUI"] = true,
 ["TransmogOutfitSelect"] = true,
-["ShowMinimapButton"] = true,
+["ShowMinimapButton"] = false,
 ["SpeedyScreenshotAlert"] = true,
 ["CameraOrbit"] = true,
 ["CameraTransition"] = true,
-["FadeButton"] = false,
-["Version"] = 10000,
 ["Tutorials"] = {
 ["ExitConfirmation"] = true,
 ["Movement"] = false,
@@ -60,10 +58,12 @@ NarcissusDB = {
 ["NPCBrowser"] = true,
 ["WeaponBrowser"] = true,
 },
+["Version"] = 10000,
+["FadeButton"] = false,
 ["IndependentMinimapButton"] = false,
 ["LetterboxRatio"] = 2,
+["EnableDoubleTap"] = true,
 ["FontHeightItemName"] = 10,
-["EnableDoubleTap"] = false,
 }
 NarciCreatureOptions = {
 }
@@ -77,7 +77,7 @@ NarciAchievementOptions = {
 }
 NarciStatisticsDB = {
 ["InstalledDate"] = 1725536401,
-["TimeSpentInNarcissus"] = 61,
+["TimeSpentInNarcissus"] = 78,
 }
 NarciTurntableOptions = nil
 NarciCharacterProfiles = nil
