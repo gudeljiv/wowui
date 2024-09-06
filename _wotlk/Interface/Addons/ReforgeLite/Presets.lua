@@ -64,10 +64,10 @@ function ReforgeLite:GetExpertiseBonus ()
   return bonus
 end
 function ReforgeLite:GetMeleeHasteBonus()
-  return addonTable.round((GetMeleeHaste()+100)/(GetCombatRatingBonus(CR_HASTE_MELEE)+100), 0.0001)
+  return RoundToSignificantDigits((GetMeleeHaste()+100)/(GetCombatRatingBonus(CR_HASTE_MELEE)+100), 4)
 end
 function ReforgeLite:GetRangedHasteBonus()
-  return addonTable.round((GetRangedHaste()+100)/(GetCombatRatingBonus(CR_HASTE_RANGED)+100), 0.0001)
+  return RoundToSignificantDigits((GetRangedHaste()+100)/(GetCombatRatingBonus(CR_HASTE_RANGED)+100), 4)
 end
 local function PlayerHasSpellHasteBuff()
   return select(5, ReforgeLite:GetPlayerBuffs())
@@ -83,7 +83,7 @@ function ReforgeLite:GetSpellHasteBonus()
       baseBonus = baseBonus * 1.03
     end
   end
-  return addonTable.round(baseBonus, 0.000001)
+  return RoundToSignificantDigits(baseBonus, 6)
 end
 function ReforgeLite:GetHasteBonuses()
   return self:GetMeleeHasteBonus(), self:GetRangedHasteBonus(), self:GetSpellHasteBonus()
@@ -383,6 +383,7 @@ do
     ["DEATHKNIGHT"] = {
       [specs.DEATHKNIGHTBlood] = {
         [RAID] = {
+          targetLevel = 3,
           weights = {
             0, 110, 100, 150, 20, 50, 120, 200
           },
@@ -408,6 +409,7 @@ do
           },
         },
         [LFG_TYPE_DUNGEON] = {
+          targetLevel = 2,
           weights = {
             0, 0, 0, 200, 0, 50, 200, 150
           },
@@ -415,7 +417,7 @@ do
         },
       },
       [specs.DEATHKNIGHTFrost] = {
-        [GetSpellInfo(49020)] = { -- Obliterate
+        [addonTable.GetSpellName(49020)] = { -- Obliterate
           icon = 135771,
           weights = {
             0, 0, 0, 200, 120, 160, 50, 90
@@ -450,7 +452,7 @@ do
         caps = CasterCaps,
       },
       [specs.DRUIDFeralCombat] = {
-        [("%s (%s)"):format(GetSpellInfo(5487), TANK)] = { -- Bear
+        [("%s (%s)"):format(addonTable.GetSpellName(5487), TANK)] = { -- Bear Form (Tank)
           icon = 132276,
           weights = {
             0, 54, 0, 25, 53, 7, 48, 37
@@ -476,14 +478,14 @@ do
             },
           },
         },
-        [("%s (%s)"):format(GetSpellInfo(5487), STAT_DPS_SHORT)] = { -- Bear
+        [("%s (%s)"):format(addonTable.GetSpellName(5487), STAT_DPS_SHORT)] = { -- Bear Form (DPS)
           icon = 132276,
           weights = {
             0, -6, 0, 100, 50, 25, 100, -1
           },
           caps = MeleeCaps,
         },
-        [("%s (%s)"):format(GetSpellInfo(768), "Monocat")] = { -- Cat
+        [("%s (%s)"):format(addonTable.GetSpellName(768), "Monocat")] = { -- Cat Form (Monocat)
           icon = 132115,
           weights = {
             0, 0, 0, 30, 31, 28, 30, 31
@@ -509,7 +511,7 @@ do
             },
           },
         },
-        [("%s (%s)"):format(GetSpellInfo(768), "Bearweave")] = { -- Cat
+        [("%s (%s)"):format(addonTable.GetSpellName(768), "Bearweave")] = { -- Cat Form (Bearweave)
           icon = 132115,
           weights = {
             0, 0, 0, 33, 31, 26, 32, 30
@@ -577,7 +579,7 @@ do
     ["MAGE"] = {
       [specs.MAGEArcane] = {
         weights = {
-          0, 0, 0, 5, 1, 4, -1, 3
+          0, 0, 0, 5, 1, 4, 0, 3
         },
         caps = {
           HitCapSpell,
@@ -596,7 +598,7 @@ do
       [specs.MAGEFire] = {
         [PERCENTAGE_STRING:format(15) .. " " .. STAT_HASTE] = {
           weights = {
-            -1, -1, -1, 5, 3, 4, -1, 1
+            0, 0, 0, 5, 3, 4, 0, 1
           },
           caps = {
             HitCapSpell,
@@ -614,7 +616,7 @@ do
         },
         [PERCENTAGE_STRING:format(25) .. " " .. STAT_HASTE] = {
           weights = {
-            -1, -1, -1, 5, 3, 4, -1, 1
+            0, 0, 0, 5, 3, 4, 0, 1
           },
           caps = {
             HitCapSpell,
@@ -869,7 +871,7 @@ do
         caps = MeleeCaps
       },
       [specs.WARRIORFury] = {
-        [GetSpellInfo(46917)] = { -- Titan's Grip
+        [addonTable.GetSpellName(46917)] = { -- Titan's Grip
           icon = 236316,
           weights = {
             0, 0, 0, 200, 150, 100, 180, 130
@@ -888,7 +890,7 @@ do
             SoftExpCap
           },
         },
-        [GetSpellInfo(81099)] = { -- Single-Minded Fury
+        [addonTable.GetSpellName(81099)] = { -- Single-Minded Fury
           icon = 458974,
           weights = {
             0, 0, 0, 200, 150, 100, 180, 130
@@ -1041,6 +1043,10 @@ function ReforgeLite:InitPresets()
   self.presetMenu.list = self.presets
   LibDD:UIDropDownMenu_Initialize(self.presetMenu, menuListInit({
     onClick = function(info)
+      if info.value.targetLevel then
+        self.pdb.targetLevel = info.value.targetLevel
+        self.targetLevel:SetValue(info.value.targetLevel)
+      end
       self:SetStatWeights(info.value.weights, info.value.caps or {})
       self:SetTankingModel (info.value.tanking)
     end

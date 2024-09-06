@@ -8573,13 +8573,12 @@ EncounterDetailsDB = {
 },
 ["source"] = "Bentebenlås",
 },
-[55931] = {
-["school"] = 4,
+[70890] = {
+["school"] = 32,
 ["token"] = {
-["SPELL_CAST_SUCCESS"] = true,
-["SPELL_CAST_START"] = true,
+["SPELL_DAMAGE"] = true,
 },
-["source"] = "Prince Taldaram",
+["source"] = "Gvozdenko",
 },
 [48639] = {
 ["school"] = 1,
@@ -11826,14 +11825,12 @@ EncounterDetailsDB = {
 },
 ["source"] = "Vrykul Skeleton",
 },
-[43649] = {
-["school"] = 32,
+[47743] = {
+["school"] = 64,
 ["token"] = {
-["SPELL_CAST_START"] = true,
 ["SPELL_CAST_SUCCESS"] = true,
-["SPELL_DAMAGE"] = true,
 },
-["source"] = "Dalronn the Controller",
+["source"] = "Anomalus",
 },
 [28747] = {
 ["school"] = 1,
@@ -11844,19 +11841,22 @@ EncounterDetailsDB = {
 },
 ["source"] = "Krik'thir the Gatewatcher",
 },
-[70890] = {
-["school"] = 32,
-["token"] = {
-["SPELL_DAMAGE"] = true,
-},
-["source"] = "Gvozdenko",
-},
-[47743] = {
-["school"] = 64,
+[55931] = {
+["school"] = 4,
 ["token"] = {
 ["SPELL_CAST_SUCCESS"] = true,
+["SPELL_CAST_START"] = true,
 },
-["source"] = "Anomalus",
+["source"] = "Prince Taldaram",
+},
+[43649] = {
+["school"] = 32,
+["token"] = {
+["SPELL_CAST_START"] = true,
+["SPELL_CAST_SUCCESS"] = true,
+["SPELL_DAMAGE"] = true,
+},
+["source"] = "Dalronn the Controller",
 },
 [60492] = {
 ["school"] = 1,

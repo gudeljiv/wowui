@@ -7,7 +7,6 @@ END
 VER 3 0000000001000002 "arcane" "134400"
 #showtooltip
 /startattack
-/cast Arcane Shot
 /cast !Auto Shot
 END
 VER 3 0000000001000006 "blast" "134400"

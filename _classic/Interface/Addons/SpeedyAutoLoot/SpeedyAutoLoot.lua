@@ -6,7 +6,7 @@ local Config = {};
 local internal = {
   _frame = CreateFrame("frame", nil, UIParent),
   lootThreshold = 10,
-  isItemLocked = false,
+  isAnyItemLocked = false,
   isLooting = false,
   isHidden = true,
   ElvUI = false,
@@ -63,7 +63,7 @@ function AutoLoot:LootSlot(slot)
   local slotType = GetLootSlotType(slot);
   local lootQuantity, _, lootQuality, lootLocked, isQuestItem = select(3, GetLootSlotInfo(slot));
   if lootLocked or (lootQuality and lootQuality >= internal.lootThreshold) then
-    internal.isItemLocked = true;
+    internal.isAnyItemLocked = true;
   elseif slotType ~= LOOT_SLOT_ITEM or (not internal.isClassic and isQuestItem) or self:ProcessLootItem(itemLink, lootQuantity) then
     LootSlot(slot);
     internal.slotsLooted[slot] = true;
@@ -82,10 +82,10 @@ end
 function AutoLoot:OnLootReady(autoLoot)
   if not internal.isLooting then
     internal.isLooting = true;
-    self:ResetLootFrame()
+    self:ResetLootFrame();
     local numItems = GetNumLootItems();
     if numItems == 0 then
-      CloseLoot()
+      CloseLoot();
       return;
     end
 
@@ -102,7 +102,6 @@ function AutoLoot:OnLootReady(autoLoot)
 
       if numItems > 0 then
         self:ShowLootFrame();
-        self:PlayInventoryFullSound();
       end
     else
       self:ShowLootFrame();
@@ -113,16 +112,16 @@ end
 ---@param slot number
 function AutoLoot:OnBindConfirm(slot)
   if LootSlotHasItem(slot) and internal.isLooting and internal.isHidden then
-    ConfirmLootSlot(slot)
+    ConfirmLootSlot(slot);
     self:ShowLootFrame(true);
   end
 end
 
 ---@param slot number
 function AutoLoot:OnSlotChanged(slot)
-  -- workaround for bugged stackables in wrath
-  -- Check if we attempted to loot the slot internally, i don't actually know in what situations LOOT_SLOT_CHANGED fires
-  -- this should block situations where that event fires but the addon never attempted to loot the slot in the first place, should be good enough
+  -- was a working workaround for bugged stackables in wrath
+  -- Check if we looted the slot internally and loot it again if it still has a item in the slot.
+  -- this should block situations where that event fires but there is still something in the slot we previously looted resulting in unlooted stuff
   if internal.isLooting and internal.slotsLooted[slot] and LootSlotHasItem(slot) then
     self:LootSlot(slot);
   end
@@ -139,7 +138,8 @@ end
 function AutoLoot:OnLootClosed()
   internal.isLooting = false;
   internal.isHidden = true;
-  internal.isItemLocked = false;
+  internal.isAnyItemLocked = false;
+  internal.inventorySoundPlayed = false;
   if self.isClassic then
     wipe(internal.slotsLooted);
   end
@@ -156,13 +156,16 @@ function AutoLoot:OnErrorMessage(gameErrorIndex, message)
   if tContains(({ERR_INV_FULL,ERR_ITEM_MAX_COUNT,ERR_LOOT_ROLL_PENDING}), message) then
     if internal.isLooting and internal.isHidden then
       self:ShowLootFrame(true);
+    end
+    if message ~= ERR_LOOT_ROLL_PENDING then
       self:PlayInventoryFullSound();
     end
   end
 end
 
 function AutoLoot:PlayInventoryFullSound()
-  if Config.global.enableSound and not internal.isItemLocked then
+  if Config.global.enableSound and not internal.inventorySoundPlayed and not internal.isAnyItemLocked then
+    internal.inventorySoundPlayed = true;
     PlaySound(Config.global.InventoryFullSound, internal.audioChannel);
   end
 end

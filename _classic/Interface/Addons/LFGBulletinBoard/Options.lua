@@ -1,5 +1,5 @@
 local TOCNAME,
-	---@class Addon_Options : Addon_Localization, Addon_CustomFilters, Addon_Dungeons, Addon_Tags, Addon_LibGPIOptions
+	---@class Addon_Options : Addon_Localization, Addon_CustomFilters, Addon_Dungeons, Addon_Tags, Addon_LibGPIOptions, Addon_LibMinimapButton
 	GBB= ...;
 local ChannelIDs
 local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
@@ -303,7 +303,21 @@ function GBB.OptionsInit ()
 	GBB.OptionsBuilder.Indent(10)
 	GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton,"visible",true,GBB.L["Cboxshowminimapbutton"])
 	GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton,"lock",false,GBB.L["CboxLockMinimapButton"])
-	GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton,"lockDistance",true,GBB.L["CboxLockMinimapButtonDistance"])
+	local lockDistCheckbox = GBB.OptionsBuilder
+		.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton,"lockDistance",true,GBB.L["CboxLockMinimapButtonDistance"])
+	if GBB.MinimapButton.isLibDBIconAvailable then
+		local default = GBB.DB.MinimapButton.lockDistance; -- default to the same value as the lockDistance setting
+		GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton, 'UseLibDBIcon', default, GBB.L.USE_LIBDBICON)
+
+		--- disable the lockDistance checkbox when using `LibDBIcon` since it will be attached to the minimap anyways.
+		local updateHook = function(useLibDBIcon)
+			lockDistCheckbox:SetChecked(useLibDBIcon or  GBB.DB.MinimapButton.lockDistance)
+			lockDistCheckbox:SetEnabled(not useLibDBIcon)
+			lockDistCheckbox.Text:SetTextColor(unpack(useLibDBIcon and {GRAY_FONT_COLOR:GetRGB()} or {WHITE_FONT_COLOR:GetRGB()}))
+		end
+		GBB.OptionsBuilder.GetSavedVarHandle(GBB.DB.MinimapButton, 'UseLibDBIcon'):AddUpdateHook(updateHook);
+		updateHook(GBB.DB.MinimapButton.UseLibDBIcon) -- run once to sync the checkbox state.
+	end
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	CheckBox("ShowTotalTime",false)
 	CheckBox("OrderNewTop",true)

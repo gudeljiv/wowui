@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -20,8 +20,6 @@ local print = TMW.print
 local LMB = LibStub("Masque", true) or (LibMasque and LibMasque("Button"))
 local type = type
 local bitband = bit.band
-
-local OnGCD = TMW.OnGCD
 
 local ColorMSQ, OnlyMSQ
 

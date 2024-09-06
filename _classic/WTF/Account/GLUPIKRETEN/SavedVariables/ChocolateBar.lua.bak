@@ -89,7 +89,7 @@ ChocolateBarDB = {
 ["Dopecoil - Lone Wolf"] = "Default",
 ["Blooq - Genesis"] = "Default",
 },
-["addonVersion"] = "v3.11",
+["addonVersion"] = "v3.14",
 ["profiles"] = {
 ["Default"] = {
 ["fontSize"] = 10,
@@ -1012,9 +1012,9 @@ CB_PlayedTime = {
 ["timeAtThisLevel"] = 332,
 },
 ["Mq-Celebras"] = {
-["total"] = 33256,
-["timeAtThisLevel"] = 0,
-["timeStamp"] = 219511.49,
+["total"] = 44249,
+["timeAtThisLevel"] = 1515,
+["timeStamp"] = 4167376.4,
 },
 ["Dopede-Stitches"] = {
 ["total"] = 53653,
@@ -1078,9 +1078,9 @@ CB_PlayedTime = {
 ["timeStamp"] = 850961.1950000001,
 },
 ["Vermin-Celebras"] = {
-["total"] = 88707,
-["timeStamp"] = 227362.814,
-["timeAtThisLevel"] = 3310,
+["total"] = 94130,
+["timeStamp"] = 4158531.393,
+["timeAtThisLevel"] = 0,
 },
 ["Korupcija-"] = {
 ["total"] = 21359,

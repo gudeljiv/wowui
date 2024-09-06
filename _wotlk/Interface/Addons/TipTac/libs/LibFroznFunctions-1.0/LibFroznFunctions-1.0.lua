@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 29; -- bump on changes
+local LIB_MINOR = 32; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -112,11 +112,14 @@ LFF_GEAR_SCORE_ALGORITHM = {
 --         .GameTooltipSetPaddingWithLeftAndTop                        = true/false if GameTooltip:SetPadding() has the optional left and top parameters (since BfA 8.2.0)
 --         .GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips         = true/false if GameTooltip:FadeOut() will not be called for worldframe unit tips (till wotlkc)
 --         .barMarginAdjustment                                        = bar margin adjustment (till wotlkc)
+--         .experienceBarFrame                                         = frame of experience bar
+--         .experienceBarDockedToInterfaceBar                          = true/false if experience bar is docked to interface bar (till df 10.0.0)
 --         .realGetSpellLinkAvailable                                  = true/false if the real GetSpellLink() is available (since bc 2.3.0). in classic era this function only returns the spell name instead of a spell link.
 --         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
 --         .defaultGearScoreAlgorithm                                  = default GearScore algorithm
 --         .optionsSliderTemplate                                      = options slider template ("OptionsSliderTemplate", since df 10.0.0 and catac 4.4.0 "UISliderTemplateWithLabels")
 --         .skyriding                                                  = true/false if skyriding is available (since df 10.0.2)
+--         .challengeMode                                              = true/false if challenge mode is available (since Legion 7.0.3)
 LibFroznFunctions.hasWoWFlavor = {
 	guildNameInPlayerUnitTip = true,
 	specializationAndClassTextInPlayerUnitTip = true,
@@ -128,14 +131,17 @@ LibFroznFunctions.hasWoWFlavor = {
 	roleIconAvailable = true,
 	specializationAvailable = true,
 	itemLevelOfFirstRaidTierSet = false,
-	barMarginAdjustment = 0,
 	GameTooltipSetPaddingWithLeftAndTop = true,
 	GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips = false,
+	barMarginAdjustment = 0,
+	experienceBarFrame = MainStatusTrackingBarContainer,
+	experienceBarDockedToInterfaceBar = false,
 	realGetSpellLinkAvailable = true,
 	relatedExpansionForItemAvailable = true,
 	defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TipTac,
 	optionsSliderTemplate = "UISliderTemplateWithLabels",
-	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false) -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
+	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false), -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
+	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false)
 };
 
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
@@ -162,6 +168,8 @@ if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.
 end
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip = false;
+	LibFroznFunctions.hasWoWFlavor.experienceBarFrame = MainMenuExpBar;
+	LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar = true;
 end
 if (LibFroznFunctions.isWoWFlavor.CataC) then
 	LibFroznFunctions.hasWoWFlavor.GetTalentTabInfoReturnValuesFromCataC = true;
@@ -1509,7 +1517,7 @@ end
 -- @param categoryName  name of category
 function LibFroznFunctions:ExpandAddOnCategory(categoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
-	if (Settings) and (Settings.CreateCategories) then
+	if (Settings) and (Settings.CreateCategory) then
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
 			for index, category in ipairs(tbl.categories) do
 				if (category:GetName() == categoryName) then
@@ -2169,6 +2177,26 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 	
 	-- primaryTooltip:SetShown(primaryShown); -- removed
 	-- secondaryTooltip:SetShown(secondaryShown); -- removed
+end
+
+-- get cursor position
+--
+-- @return x coordinate, y coordinate (unaffected by UI scale)
+function LibFroznFunctions:GetCursorPosition()
+	-- get cursor position
+	local x, y = GetCursorPosition();
+	
+	-- workaround for blizzard bug (tested under tww 11.0.2): if centering of the cursor when mouse freelooking is enabled, GetCursorPosition() returns the real cursor position for the first frame instead of the centered position when left-clicking. reproduced with addon "Combat Mode". for more info, see: https://github.com/Stanzilla/WoWUIBugs/issues/504
+	if (IsMouselooking()) and (GetCVar("CursorFreelookCentering") == "1") then
+		local UIScale = UIParent:GetEffectiveScale();
+		local UIParentWidth = UIParent:GetWidth() * UIScale;
+		local UIParentHeight = UIParent:GetHeight() * UIScale;
+		
+		x, y = (UIParentWidth / 2), (UIParentHeight * tonumber(GetCVar("CursorCenteredYPos")));
+	end
+	
+	-- return cursor position
+	return x, y;
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -3896,7 +3924,7 @@ function LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGU
 	end
 	
 	if (not totalQualityColor) then
-		totalQualityColor = LibFroznFunctions:GetItemQualityColor(math.floor(totalQuality / totalItemsForQuality + 0.5), Enum.ItemQuality.Common);
+		totalQualityColor = LibFroznFunctions:GetItemQualityColor(Round(totalQuality / totalItemsForQuality), Enum.ItemQuality.Common);
 	end
 	
 	-- set GearScore and quality color

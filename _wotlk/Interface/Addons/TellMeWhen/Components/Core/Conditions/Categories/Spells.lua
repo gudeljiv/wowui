@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -34,7 +34,7 @@ local bit_band = bit.band
 
 local COMBATLOG_OBJECT_TYPE_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
 
-local GetSpellCooldown = TMW.GetSpellCooldown
+local GetSpellCooldown = TMW.COMMON.Cooldowns.GetSpellCooldown
 Env.GetSpellCooldown = GetSpellCooldown
 local GetSpellName = TMW.GetSpellName
 local GetSpellInfo = TMW.GetSpellInfo
@@ -43,15 +43,17 @@ local GetItemCooldown = GetItemCooldown or (C_Item and C_Item.GetItemCooldown) o
 
 function Env.CooldownDuration(spell, gcdAsUnusable)
 	if spell == "gcd" then
-		local start, duration = GetSpellCooldown(TMW.GCDSpell)
-		return duration == 0 and 0 or (duration - (TMW.time - start)), start, duration
+		local cooldown = GetSpellCooldown(TMW.GCDSpell)
+		local duration = cooldown.duration
+		return duration == 0 and 0 or (duration - (TMW.time - cooldown.startTime))
 	end
 
-	local start, duration = GetSpellCooldown(spell)
-	if duration then
-		return ((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or (duration - (TMW.time - start)), start, duration
+	local cooldown = GetSpellCooldown(spell)
+	if cooldown then
+		local duration = cooldown.duration
+		return ((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or (duration - (TMW.time - cooldown.startTime))
 	end
-	return 0, 0, 0
+	return 0
 end
 
 local GetSpellCharges = TMW.GetSpellCharges
@@ -101,13 +103,12 @@ ConditionCategory:RegisterCondition(1,	 "SPELLCD", {
 	funcstr = [[CooldownDuration(c.OwnSpells.First, c.Checked) c.Operator c.Level]],
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
+			ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_COOLDOWN")
 	end,
 	anticipate = function(c)
 		local str = [[
-			local start, duration = GetSpellCooldown(c.OwnSpells.First)
-			local VALUE = duration and start + (duration - c.Level) or huge
+			local cooldown = GetSpellCooldown(c.OwnSpells.First)
+			local VALUE = cooldown and cooldown.startTime + (cooldown.duration - c.Level) or huge
 		]]
 		if TMW:GetSpells(c.Name).First == "gcd" then
 			str = str:gsub("c.OwnSpells.First", TMW.GCDSpell)
@@ -137,21 +138,22 @@ ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 	funcstr = [[CooldownDuration(c.OwnSpells.First, c.Checked) c.Operator CooldownDuration(c.OwnSpells2.First, c.Checked2)]],
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
+			ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_COOLDOWN")
 	end,
 	anticipate = function(c)
 		local str = [[
-			local start, duration = GetSpellCooldown(c.OwnSpells.First)
-			local start2, duration2 = GetSpellCooldown(c.OwnSpells2.First)
+			local cooldown = GetSpellCooldown(c.OwnSpells.First)
+			local cooldown2 = GetSpellCooldown(c.OwnSpells2.First)
+			local duration = cooldown and cooldown.duration
+			local duration2 = cooldown2 and cooldown2.duration
 			local VALUE
 			if duration and duration2 then
-				local v1, v2 = start + duration, start2 + duration2
+				local v1, v2 = cooldown.startTime + duration, cooldown2.startTime + duration2
 				VALUE = v1 < v2 and v1 or v2
 			elseif duration then
-				VALUE = start + duration
+				VALUE = cooldown.startTime + duration
 			elseif duration2 then
-				VALUE = start2 + duration2
+				VALUE = cooldown2.startTime + duration2
 			else
 				VALUE = huge
 			end
@@ -188,9 +190,7 @@ if TMW.isRetail then
 		funcstr = [[(GetSpellCharges(c.OwnSpells.First) or GetSpellCount(c.OwnSpells.First)) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_CHARGES")
+				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_CHARGES")
 		end,	
 	})
 	ConditionCategory:RegisterCondition(2.6, "SPELLCHARGETIME", {
@@ -219,9 +219,7 @@ if TMW.isRetail then
 		funcstr = [[RechargeDuration(c.OwnSpells.First) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
-				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_CHARGES")
+				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_CHARGES")
 		end,
 		anticipate = [[
 			local _, _, start, duration = GetSpellCharges(c.OwnSpells.First)
@@ -303,11 +301,11 @@ ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 
 ConditionCategory:RegisterSpacer(2.9)
 
-local IsUsableSpell = C_Spell.IsSpellUsable or _G.IsUsableSpell
+local IsUsableSpell = TMW.COMMON.SpellUsable.IsUsableSpell
 function Env.ReactiveHelper(NameFirst, Checked)
-	local usable, nomana = IsUsableSpell(NameFirst)
+	local usable, noMana = IsUsableSpell(NameFirst)
 	if Checked then
-		return usable or nomana
+		return usable or noMana
 	else
 		return usable
 	end
@@ -360,7 +358,7 @@ ConditionCategory:RegisterCondition(3,	 "REACTIVE", {
 	funcstr = [[BOOLCHECK( ReactiveHelper(c.OwnSpells.First, c.Checked) )]],
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
+			ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_USABLE")
 	end,
 })
 ConditionCategory:RegisterCondition(3.1, "CURRENTSPELL", {
@@ -473,12 +471,14 @@ ConditionCategory:RegisterCondition(4,	 "MANAUSABLE", {
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = [[not BOOLCHECK( SpellHasNoMana(c.OwnSpells.First) )]],
 	Env = {
-		SpellHasNoMana = TMW.SpellHasNoMana
+		SpellHasNoMana = function(spell)
+			local _, noMana = IsUsableSpell(spell)
+			return noMana
+		end
 	},
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
-			ConditionObject:GenerateNormalEventString("UNIT_POWER_FREQUENT", "player")
+			ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_USABLE")
 	end,
 })
 ConditionCategory:RegisterCondition(4.5, "SPELLCOST", {
@@ -512,16 +512,26 @@ ConditionCategory:RegisterCondition(5,	 "SPELLRANGE", {
 		editbox:SetTexts(L["CONDITIONPANEL_SPELLRANGE"], L["CNDT_ONLYFIRST"])
 		editbox:SetLabel(L["SPELLTOCHECK"])
 	end,
+	defaultUnit = "target",
 	useSUG = true,
 	nooperator = true,
 	texttable = {[0] = L["INRANGE"], [1] = L["NOTINRANGE"]},
 	icon = "Interface\\Icons\\ability_hunter_snipershot",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		IsSpellInRange = LibStub("SpellRange-1.0").IsSpellInRange,
+		IsSpellInRange = TMW.COMMON.SpellRange.IsSpellInRange,
 	},
 	funcstr = function(c)
-		return 1-c.Level .. [[ == (IsSpellInRange(c.OwnSpells.First, c.Unit) or 0)]]
+		return [[BOOLCHECK( IsSpellInRange(c.OwnSpells.First, c.Unit) )]]
+	end,
+	events = function(ConditionObject, c)
+		local SpellRange = TMW.COMMON.SpellRange
+		local spells = TMW:GetSpells(c.Name, true)
+		
+		if c.Unit == "target" and SpellRange.HasRangeEvents(spells.First) then
+			return ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_RANGE")
+		end
+		return nil
 	end,
 })
 ConditionCategory:RegisterCondition(6,	 "GCD", {
@@ -530,15 +540,14 @@ ConditionCategory:RegisterCondition(6,	 "GCD", {
 	unit = PLAYER,
 	icon = "Interface\\Icons\\ability_hunter_steadyshot",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[BOOLCHECK( (TMW.GCD > 0 and TMW.GCD < 1.7) )]],
+	funcstr = [[BOOLCHECK( (TMW.GetGCD() > 0 and TMW.GetGCD() < 1.7) )]],
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
-			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
+			ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_COOLDOWN")
 	end,
 	anticipate = [[
-		local start, duration = GetSpellCooldown(TMW.GCDSpell)
-		local VALUE = start + duration -- the time at which we need to update again. (when the GCD ends)
+		local cooldown = GetSpellCooldown(TMW.GCDSpell)
+		local VALUE = cooldown.startTime + cooldown.duration -- the time at which we need to update again. (when the GCD ends)
 	]],
 })
 

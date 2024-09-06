@@ -266,7 +266,7 @@ nil,
 },
 },
 },
-["Version"] = 110401,
+["Version"] = 110701,
 ["profileKeys"] = {
 ["Mxzq - Golemagg"] = "HUNTER",
 ["Battledog - Gehennas"] = "WARRIOR",
@@ -324,7 +324,7 @@ nil,
 ["Version"] = 102000,
 },
 ["WARRIOR"] = {
-["Version"] = 110401,
+["Version"] = 110701,
 ["Locked"] = true,
 ["Groups"] = {
 {
@@ -403,13 +403,12 @@ nil,
 ["GUID"] = "TMW:icon:1Y2=7t59vfSn",
 ["Conditions"] = {
 {
-["PrtsBefore"] = 1,
 ["Type"] = "CURRENTSPELL",
 ["Name"] = "Cleave",
 ["Level"] = 1,
 },
 {
-["PrtsBefore"] = 2,
+["PrtsBefore"] = 3,
 ["Type"] = "LEVEL",
 ["Level"] = 20,
 ["Operator"] = ">=",
@@ -659,6 +658,7 @@ nil,
 },
 },
 },
+["HideIfNoUnits"] = true,
 ["Conditions"] = {
 {
 ["Type"] = "DEBUFFSTACKS",
@@ -715,7 +715,6 @@ nil,
 },
 ["n"] = 8,
 },
-["HideIfNoUnits"] = true,
 ["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 ["States"] = {
 {
@@ -744,7 +743,6 @@ nil,
 },
 },
 },
-["HideIfNoUnits"] = true,
 ["Conditions"] = {
 {
 ["Name"] = "Defensive Stance",
@@ -777,6 +775,7 @@ nil,
 },
 ["n"] = 6,
 },
+["HideIfNoUnits"] = true,
 ["GUID"] = "TMW:icon:1byi=FOzUEvn",
 ["States"] = {
 {
@@ -1602,9 +1601,9 @@ nil,
 {
 ["Type"] = "DEBUFFDUR",
 ["Checked"] = true,
-["Level"] = 0.6,
-["Name"] = "Rend",
 ["AndOr"] = "OR",
+["Name"] = "Rend",
+["Level"] = 0.6,
 ["Unit"] = "target",
 ["Operator"] = "<=",
 },
@@ -1639,6 +1638,7 @@ nil,
 ["GUID"] = "TMW:icon:1TQv_LtTwAae",
 ["States"] = {
 {
+["Alpha"] = 0,
 },
 nil,
 {
@@ -2621,6 +2621,7 @@ nil,
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
 ["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -2629,7 +2630,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -2758,6 +2758,7 @@ nil,
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
 ["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -2766,7 +2767,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -17063,7 +17063,7 @@ nil,
 ["Version"] = 110401,
 },
 ["HUNTER"] = {
-["Version"] = 110401,
+["Version"] = 110701,
 ["NumGroups"] = 5,
 ["TextureName"] = "xVerminClean",
 ["Groups"] = {
@@ -17120,7 +17120,12 @@ nil,
 ["Type"] = "LUA",
 ["Name"] = "(xTTD == -1 or xTTD > 6) and IsSpellInRange(\"Serpent Sting\", \"target\") and not xImmune(\"Serpent Sting\")",
 },
-["n"] = 6,
+{
+["Type"] = "MANA",
+["Operator"] = ">=",
+["Level"] = 25,
+},
+["n"] = 7,
 },
 ["States"] = {
 {
@@ -18058,14 +18063,14 @@ nil,
 ["Enabled"] = true,
 ["Conditions"] = {
 {
-["Type"] = "MANA",
-["Operator"] = ">=",
-},
-{
 ["Type"] = "CURRENTSPELL",
 ["Unit"] = "target",
 ["Name"] = "Raptor Strike",
 ["Level"] = 1,
+},
+{
+["Type"] = "MANA",
+["Operator"] = ">=",
 },
 {
 ["Type"] = "LUA",

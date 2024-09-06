@@ -4,7 +4,7 @@
 ## Interface-BCC: @toc-version-bcc@
 ## Interface-Wrath: @toc-version-wrath@
 ## Title: Broker: |cff00ff00MicroMenu|r
-## Version: v.1.7.6
+## Version: v.1.7.7
 ## Notes: Shows the micro menu and game menu in a clickable broker tooltip.
 ## Author: github.com/Kiatra
 ## OptionalDeps: LibQTip-1.0

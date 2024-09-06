@@ -6,7 +6,18 @@ local addonName, addon = ...;
 local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 
+local naxxLoaded, azuregosLoaded, kazzakLoaded, demonfallLoaded;
+function NWB:createDungeonPortalMarkers()
+	NWB:createNaxxMarkers();
+end
+
+---All these marklers are changed to load on demand instead of when addon is loaded to try lessen taint issues with classic maps.
+
 function NWB:createNaxxMarkers()
+	if (naxxLoaded) then
+		return;
+	end
+	naxxLoaded = true;
 	--This icon was part of the original art Blizzard released with the 1.11 patch.
 	--This exact cut of this image was linked to me and I think is from warcraft logs.
 	local iconLocation = "Interface\\AddOns\\NovaWorldBuffs\\Media\\Naxx.tga";
@@ -66,6 +77,9 @@ end
 
 local showNaxxArrow;
 function NWB:refreshNaxxMarkers()
+	if (not naxxLoaded) then
+		return;
+	end
 	NWB.dragonLibPins:RemoveWorldMapIcon("NWBNaxxMarker", _G["NWBNaxxMarker"]);
 	NWB.dragonLibPins:RemoveMinimapIcon("NWBNaxxMarkerMini", _G["NWBNaxxMarkerMini"]);
 	if (NWB.db.global.showNaxxWorldmapMarkers) then
@@ -76,9 +90,39 @@ function NWB:refreshNaxxMarkers()
 	end
 end
 
+local function checkMapsLoaded(usingWorldmap)
+	if (usingWorldmap) then
+		if (WorldMapFrame) then
+			local mapID = WorldMapFrame:GetMapID();
+			if (mapID == 1423) then
+				NWB:createNaxxMarkers();
+			elseif (mapID == 1447 and NWB.createAzuregosMarker) then
+				NWB:createAzuregosMarker();
+			elseif (mapID == 1419 and NWB.createKazzakMarker) then
+				NWB:createKazzakMarker();
+			elseif (mapID == 1440 and NWB.createDemonfallMarker) then
+				NWB:createDemonfallMarker();
+			end
+		end
+	else
+		local _, _, zone = NWB:GetPlayerZonePosition();
+		if (zone == 1423) then
+			NWB:createNaxxMarkers();
+		elseif (zone == 1447 and NWB.createAzuregosMarker) then
+			NWB:createAzuregosMarker();
+		elseif (zone == 1419 and NWB.createKazzakMarker) then
+			NWB:createKazzakMarker();
+		elseif (zone == 1440 and NWB.createDemonfallMarker) then
+			NWB:createDemonfallMarker();
+		end
+	end
+end
+
 local f = CreateFrame("Frame");
 f:RegisterEvent("PLAYER_DEAD");
 f:RegisterEvent("PLAYER_UNGHOST");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:RegisterEvent("AREA_POIS_UPDATED");
 f:SetScript("OnEvent", function(self, event, ...)
 	if (event == "PLAYER_DEAD") then
 		local _, _, _, _, _, _, _, instanceID = GetInstanceInfo();
@@ -91,49 +135,44 @@ f:SetScript("OnEvent", function(self, event, ...)
 			showNaxxArrow = nil;
 			NWB:refreshNaxxMarkers();
 		end
+	elseif (event == "PLAYER_ENTERING_WORLD" or event == "AREA_POIS_UPDATED") then
+		checkMapsLoaded();
 	end
 end)
 
-if (not NWB.isSOD) then
-	return;
+if (WorldMapFrame) then
+	hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
+		checkMapsLoaded(true);
+	end)
+	WorldMapFrame:HookScript("OnShow", function()
+		checkMapsLoaded(true);
+	end)
 end
-function NWB:createExtraDungMarkers()
-	local markers = {
-		[1] = { --/dump NWB:GetPlayerZonePosition()
-			icon = "Interface\\Icons\\Ability_mount_drake_azure",
-			tooltip = "Azuregos",
-			zone = 1447,
-			x = 0.43610526270177,
-			y = 0.83763884877542,
-		},
-		[2] = {
-			icon = "Interface\\Icons\\Achievement_boss_kiljaedan",
-			tooltip = "Lord Kazzak",
-			zone = 1419,
-			x = 0.47189059380033,
-			y = 0.54758248379708,
-		},
-		[3] = {
-			icon = "Interface\\Icons\\Achievement_boss_kelidanthebreaker",
-			tooltip = "Demon Fall Canyon",
-			zone = 1440,
-			x = 0.84471679297417,
-			y = 0.73532787093496,
-		},
-	};
+
+local f = CreateFrame("Frame");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:RegisterEvent("AREA_POIS_UPDATED");
+f:SetScript("OnEvent", function(self, event, ...)
+	local _, _, zone = NWB:GetPlayerZonePosition();
+	if (zone == 1448) then
+		NWB:createFelwoodMarkers();
+	end
+end)
+
+function NWB:createExtraMarker(markers)
 	for k, v in pairs(markers) do
 		--Worldmap marker.
-		local obj = CreateFrame("Frame", "NWBExtraDungMarker" .. k, WorldMapFrame);
+		local obj = CreateFrame("Frame", "NWBExtraDungMarker" .. v.markerName, WorldMapFrame);
 		obj.texture = obj:CreateTexture(nil, "ARTWORK");
 		obj.texture:SetTexture(v.icon);
 		obj.texture:SetAllPoints(obj);
 		obj:SetSize(15, 15);
 		--World map tooltip.
-		obj.tooltip = CreateFrame("Frame", "NWBExtraDungMarkerTooltip" .. k, WorldMapFrame, "TooltipBorderedFrameTemplate");
+		obj.tooltip = CreateFrame("Frame", "NWBExtraDungMarkerTooltip" .. v.markerName, WorldMapFrame, "TooltipBorderedFrameTemplate");
 		obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, 22);
 		obj.tooltip:SetFrameStrata("TOOLTIP");
 		obj.tooltip:SetFrameLevel(9);
-		obj.tooltip.fs = obj.tooltip:CreateFontString("NWBExtraDungMarkerTooltipFS" .. k, "ARTWORK");
+		obj.tooltip.fs = obj.tooltip:CreateFontString("NWBExtraDungMarkerTooltipFS" .. v.markerName, "ARTWORK");
 		obj.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 		obj.tooltip.fs:SetFont(NWB.regionFont, 11.5);
 		obj.tooltip.fs:SetText("|CffDEDE42" .. v.tooltip);
@@ -148,17 +187,17 @@ function NWB:createExtraDungMarkers()
 		obj.tooltip:Hide();
 		
 		--Minimap marker.
-		local obj = CreateFrame("FRAME", "NWBExtraDungMarkerMini" .. k);
+		local obj = CreateFrame("FRAME", "NWBExtraDungMarkerMini" .. v.markerName);
 		obj.texture = obj:CreateTexture(nil, "ARTWORK");
 		obj.texture:SetTexture(v.icon);
 		obj.texture:SetAllPoints(obj);
 		obj:SetSize(13, 13);
 		--Minimap tooltip.
-		obj.tooltip = CreateFrame("Frame", "NWBExtraDungMarkerMiniTooltip" .. k, MinimMapFrame, "TooltipBorderedFrameTemplate");
+		obj.tooltip = CreateFrame("Frame", "NWBExtraDungMarkerMiniTooltip" .. v.markerName, MinimMapFrame, "TooltipBorderedFrameTemplate");
 		obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, 12);
 		obj.tooltip:SetFrameStrata("TOOLTIP");
 		obj.tooltip:SetFrameLevel(9);
-		obj.tooltip.fs = obj.tooltip:CreateFontString("NWBExtraDungMarkerMiniTooltipFS" .. k, "ARTWORK");
+		obj.tooltip.fs = obj.tooltip:CreateFontString("NWBExtraDungMarkerMiniTooltipFS" .. v.markerName, "ARTWORK");
 		obj.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 		obj.tooltip.fs:SetFont(NWB.regionFont, 8);
 		obj.tooltip.fs:SetText("|CffDEDE42" .. v.tooltip);
@@ -171,13 +210,71 @@ function NWB:createExtraDungMarkers()
 			obj.tooltip:Hide();
 		end)
 		obj.tooltip:Hide();
-		NWB.dragonLibPins:RemoveWorldMapIcon("NWBExtraDungMarker" .. k, _G["NWBExtraDungMarker" .. k]);
-		NWB.dragonLibPins:RemoveMinimapIcon("NWBExtraDungMarkerMini" .. k, _G["NWBExtraDungMarkerMini" .. k]);
+		NWB.dragonLibPins:RemoveWorldMapIcon("NWBExtraDungMarker" .. v.markerName, _G["NWBExtraDungMarker" .. v.markerName]);
+		NWB.dragonLibPins:RemoveMinimapIcon("NWBExtraDungMarkerMini" .. v.markerName, _G["NWBExtraDungMarkerMini" .. v.markerName]);
 		if (NWB.db.global.showNaxxWorldmapMarkers) then
-			NWB.dragonLibPins:AddWorldMapIconMap("NWBExtraDungMarker" .. k, _G["NWBExtraDungMarker" .. k], v.zone, v.x, v.y);
+			NWB.dragonLibPins:AddWorldMapIconMap("NWBExtraDungMarker" .. v.markerName, _G["NWBExtraDungMarker" .. v.markerName], v.zone, v.x, v.y);
 		end
 		if (NWB.db.global.showNaxxMinimapMarkers) then
-			NWB.dragonLibPins:AddMinimapIconMap("NWBExtraDungMarkerMini" .. k, _G["NWBExtraDungMarkerMini" .. k], v.zone, v.x, v.y);
+			NWB.dragonLibPins:AddMinimapIconMap("NWBExtraDungMarkerMini" .. v.markerName, _G["NWBExtraDungMarkerMini" .. v.markerName], v.zone, v.x, v.y);
 		end
 	end
+end
+
+if (not NWB.isSOD) then
+	return;
+end
+
+function NWB:createAzuregosMarker()
+	if (azuregosLoaded) then
+		return;
+	end
+	local markers = {
+		[1] = {
+			markerName = "Azuregos",
+			icon = "Interface\\Icons\\Ability_mount_drake_azure",
+			tooltip = "Azuregos",
+			zone = 1447,
+			x = 0.43610526270177,
+			y = 0.83763884877542,
+		},
+	};
+	NWB:createExtraMarker(markers);
+	azuregosLoaded = true;
+end
+
+function NWB:createKazzakMarker()
+	if (kazzakLoaded) then
+		return;
+	end
+	local markers = {
+		[1] = {
+			markerName = "Kazzak",
+			icon = "Interface\\Icons\\Achievement_boss_kiljaedan",
+			tooltip = "Lord Kazzak",
+			zone = 1419,
+			x = 0.47189059380033,
+			y = 0.54758248379708,
+		},
+	};
+	NWB:createExtraMarker(markers);
+	kazzakLoaded = true;
+end
+
+function NWB:createDemonfallMarker()
+	if (demonfallLoaded) then
+		return;
+	end
+	local markers = {
+		[1] = {
+			markerName = "DFC",
+			icon = "Interface\\Icons\\Achievement_boss_kelidanthebreaker",
+			tooltip = "Demon Fall Canyon",
+			zone = 1440,
+			x = 0.84471679297417,
+			y = 0.73532787093496,
+		},
+	};
+	NWB:createExtraMarker(markers);
+	demonfallLoaded = true;
 end

@@ -1,6 +1,6 @@
 
 ChocolateBarDB = {
-["addonVersion"] = "v3.11",
+["addonVersion"] = "v3.14",
 ["profileKeys"] = {
 ["Dopeclaw - Lone Wolf"] = "Default",
 ["Mxyz - Golemagg"] = "Default",
@@ -1062,9 +1062,9 @@ CB_PlayedTime = {
 ["total"] = 140587,
 },
 ["Mq-Celebras"] = {
-["total"] = 39054,
-["timeStamp"] = 233209.585,
-["timeAtThisLevel"] = 3041,
+["total"] = 44249,
+["timeStamp"] = 4167376.4,
+["timeAtThisLevel"] = 1515,
 },
 ["Dopecoil-LoneWolf"] = {
 ["total"] = 10261,
@@ -1078,9 +1078,9 @@ CB_PlayedTime = {
 ["total"] = 79871,
 },
 ["Vermin-Celebras"] = {
-["total"] = 88707,
-["timeAtThisLevel"] = 3310,
-["timeStamp"] = 227362.814,
+["total"] = 94130,
+["timeAtThisLevel"] = 0,
+["timeStamp"] = 4158531.393,
 },
 ["Dopebolt-LoneWolf"] = {
 ["total"] = 1204,

@@ -70,7 +70,506 @@ elseif (NWB.isClassic) then
 	NWB.nefCooldownTime = 0;
 end
 
+NWB.spellTypes = {
+	--Classic.
+	[16609] = {
+		icon = "|TInterface\\Icons\\spell_arcane_teleportorgrimmar:12:12:0:0|t",
+		fullName = "Warchief's Blessing",
+		maxDuration = 3600,
+		type = "rend",
+		isBoonable = true,
+	},
+	[22888] = {
+		icon = "|TInterface\\Icons\\inv_misc_head_dragon_01:12:12:0:0|t",
+		fullName = "Rallying Cry of the Dragonslayer",
+		maxDuration = 7200,
+		type = "ony",
+		type2 = "nef",
+		isBoonable = true,
+	},
+	--[[["nef"] = {
+		icon = "|TInterface\\Icons\\inv_misc_head_dragon_01:12:12:0:0|t",
+		fullName = "Rallying Cry of the Dragonslayer",
+		maxDuration = 7200,
+		type = "nef",
+	},]]
+	[24425] = {
+		icon = "|TInterface\\Icons\\ability_creature_poison_05:12:12:0:0|t",
+		fullName = "Spirit of Zandalar",
+		maxDuration = 7200,
+		type = "zan",
+		isBoonable = true,
+	},
+	--New spell ID's after hotfix 23/4/21.
+	[355366] = {
+		icon = "|TInterface\\Icons\\spell_arcane_teleportorgrimmar:12:12:0:0|t",
+		fullName = "Warchief's Blessing",
+		maxDuration = 3600,
+		type = "rend",
+		isBoonable = true,
+	},
+	[355363] = {
+		icon = "|TInterface\\Icons\\inv_misc_head_dragon_01:12:12:0:0|t",
+		fullName = "Rallying Cry of the Dragonslayer",
+		maxDuration = 7200,
+		type = "ony",
+		type2 = "nef",
+		isBoonable = true,
+	},
+	[355365] = {
+		icon = "|TInterface\\Icons\\ability_creature_poison_05:12:12:0:0|t",
+		fullName = "Spirit of Zandalar",
+		maxDuration = 7200,
+		type = "zan",
+		isBoonable = true,
+	},
+	[22818] = {
+		icon = "|TInterface\\Icons\\spell_nature_massteleport:12:12:0:0|t",
+		fullName = "Mol'dar's Moxie",
+		maxDuration = 7200,
+		type = "moxie",
+		isBoonable = true,
+	},
+	[22817] = {
+		icon = "|TInterface\\Icons\\spell_nature_undyingstrength:12:12:0:0|t",
+		fullName = "Fengus' Ferocity",
+		maxDuration = 7200,
+		type = "ferocity",
+		isBoonable = true,
+	},
+	[22820] = {
+		icon = "|TInterface\\Icons\\spell_holy_lesserheal02:12:12:0:0|t",
+		fullName = "Slip'kik's Savvy",
+		maxDuration = 7200,
+		type = "savvy",
+		isBoonable = true,
+	},
+	[17628] = { --Supreme Power.
+		icon = "|TInterface\\Icons\\inv_potion_41:12:12:0:0|t",
+		fullName = "Supreme Power",
+		maxDuration = 7200,
+		type = "flaskPower",
+	},
+	[17626] = { --Flask of the Titans (only flask spell with Flask in the name, dunno why).
+		icon = "|TInterface\\Icons\\inv_potion_62:12:12:0:0|t",
+		fullName = "Flask of the Titans",
+		maxDuration = 7200,
+		type = "flaskTitans",
+	},
+	[17627] = { --Distilled Wisdom.
+		icon = "|TInterface\\Icons\\inv_potion_97:12:12:0:0|t",
+		fullName = "Distilled Wisdom",
+		maxDuration = 7200,
+		type = "flaskWisdom",
+	},
+	[17629] = { --Chromatic Resistance.
+		icon = "|TInterface\\Icons\\inv_potion_48:12:12:0:0|t",
+		fullName = "Flask of Chromatic Resistance",
+		maxDuration = 7200,
+		type = "flaskResistance",
+	},
+	[15366] = {
+		icon = "|TInterface\\Icons\\spell_holy_mindvision:12:12:0:0|t",
+		fullName = "Songflower Serenade",
+		maxDuration = 3600,
+		type = "songflower",
+		isBoonable = true,
+	},
+	[15123] = {
+		icon = "|TInterface\\Icons\\spell_fire_firearmor:12:12:0:0|t",
+		fullName = "Resist Fire",
+		maxDuration = 3600,
+		type = "resistFire",
+	},
+	[8733] = {
+		icon = "|TInterface\\Icons\\spell_frost_frostward:12:12:0:0|t",
+		fullName = "Blessing of Blackfathom",
+		maxDuration = 3600,
+		type = "blackfathom",
+	},
+	[29235] = {
+		icon = "|TInterface\\Icons\\inv_summerfest_firespirit:12:12:0:0|t",
+		fullName = "Fire Festival Fortitude",
+		maxDuration = 3600,
+		type = "festivalFortitude",
+	},
+	[29846] = {
+		icon = "|TInterface\\Icons\\inv_misc_summerfest_brazierorange:12:12:0:0|t",
+		fullName = "Fire Festival Fury",
+		maxDuration = 3600,
+		type = "festivalFury",
+	},
+	[29338] = {
+		icon = "|TInterface\\Icons\\inv_misc_summerfest_brazierorange:12:12:0:0|t",
+		fullName = "Fire Festival Fury",
+		maxDuration = 3600,
+		type = "festivalFury",
+	},
+	[29175] = {
+		icon = "|TInterface\\Icons\\inv_summerfest_symbol_medium:12:12:0:0|t",
+		fullName = "Ribbon Dance",
+		maxDuration = 3600,
+		type = "ribbonDance",
+	},
+	[29534] = { --Traces of Silithyst.
+		icon = "|TInterface\\Icons\\spell_nature_timestop:12:12:0:0|t",
+		fullName = "Traces of Silithyst",
+		maxDuration = 3600,
+		type = "silithyst",
+	},
+	[24417] = {
+		icon = "|TInterface\\Icons\\inv_potion_29:12:12:0:0|t",
+		fullName = "Sheen of Zanza",
+		maxDuration = 7200,
+		type = "sheenZanza",
+	},
+	[24382] = {
+		icon = "|TInterface\\Icons\\inv_potion_30:12:12:0:0|t",
+		fullName = "Spirit of Zanza",
+		maxDuration = 7200,
+		type = "spiritZanza",
+	},
+	[24383] = {
+		icon = "|TInterface\\Icons\\inv_potion_31:12:12:0:0|t",
+		fullName = "Swiftness of Zanza",
+		maxDuration = 7200,
+		type = "swiftZanza",
+	},
+	[25101] = {
+		icon = "|TInterface\\Icons\\ability_warrior_battleshout:12:12:0:0|t",
+		fullName = "Battle Shout",
+		maxDuration = 900,
+		type = "battleShout",
+	},
+	--TBC.
+	[28518] = {
+		icon = "|TInterface\\Icons\\inv_potion_119:12:12:0:0|t",
+		fullName = "Flask of Fortification",
+		maxDuration = 7200,
+		type = "flaskFort",
+	},
+	[28591] = {
+		icon = "|TInterface\\Icons\\inv_potion_115:12:12:0:0|t",
+		fullName = "Flask of Pure Death",
+		maxDuration = 7200,
+		type = "flaskPure",
+	},
+	[28520] = {
+		icon = "|TInterface\\Icons\\inv_potion_117:12:12:0:0|t",
+		fullName = "Flask of Relentless Assault",
+		maxDuration = 7200,
+		type = "flaskRelent",
+	},
+	[28521] = {
+		icon = "|TInterface\\Icons\\inv_potion_116:12:12:0:0|t",
+		fullName = "Flask of Blinding Light",
+		maxDuration = 7200,
+		type = "flaskBlinding",
+	},
+	[28519] = {
+		icon = "|TInterface\\Icons\\inv_potion_118:12:12:0:0|t",
+		fullName = "Flask of Mighty Restoration",
+		maxDuration = 7200,
+		type = "flaskMighty",
+	},
+	[42735] = {
+		icon = "|TInterface\\Icons\\inv_potion_48:12:12:0:0|t",
+		fullName = "Flask of Chromatic Wonder",
+		maxDuration = 7200,
+		type = "flaskChromatic",
+	},
+	--Shat flasks have 2 or 3 spells the same, have to test after launch which is correct for each.
+	[41607] = {
+		icon = "|TInterface\\Icons\\inv_potion_119:12:12:0:0|t",
+		fullName = "Fortification of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskFort",
+	},
+	[41609] = {
+		icon = "|TInterface\\Icons\\inv_potion_119:12:12:0:0|t",
+		fullName = "Fortification of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskFort",
+	},
+	[46837] = {
+		icon = "|TInterface\\Icons\\inv_potion_115:12:12:0:0|t",
+		fullName = "Pure Death of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskPure",
+	},
+	[46838] = {
+		icon = "|TInterface\\Icons\\inv_potion_115:12:12:0:0|t",
+		fullName = "Pure Death of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskPure",
+	},
+	[41606] = {
+		icon = "|TInterface\\Icons\\inv_potion_117:12:12:0:0|t",
+		fullName = "Relentless Assault of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskRelent",
+	},
+	[41608] = {
+		icon = "|TInterface\\Icons\\inv_potion_117:12:12:0:0|t",
+		fullName = "Relentless Assault of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskRelent",
+	},
+	[46839] = {
+		icon = "|TInterface\\Icons\\inv_potion_116:12:12:0:0|t",
+		fullName = "Blinding Light of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskBlinding",
+	},
+	[46840] = {
+		icon = "|TInterface\\Icons\\inv_potion_116:12:12:0:0|t",
+		fullName = "Blinding Light of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskBlinding",
+	},
+	[41605] = {
+		icon = "|TInterface\\Icons\\inv_potion_118:12:12:0:0|t",
+		fullName = "Mighty Restoration of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskMighty",
+	},
+	[41610] = {
+		icon = "|TInterface\\Icons\\inv_potion_118:12:12:0:0|t",
+		fullName = "Mighty Restoration of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskMighty",
+	},
+	[41604] = {
+		icon = "|TInterface\\Icons\\inv_potion_41:12:12:0:0|t",
+		fullName = "Supreme Power of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskSupreme",
+	},
+	[41611] = {
+		icon = "|TInterface\\Icons\\inv_potion_41:12:12:0:0|t",
+		fullName = "Supreme Power of Shattrath",
+		maxDuration = 7200,
+		type = "shattrathFlaskSupreme",
+	},
+	[40572] = {
+		icon = "|TInterface\\Icons\\inv_potion_35:12:12:0:0|t",
+		fullName = "Unstable Flask of the Beast",
+		maxDuration = 7200,
+		type = "unstableFlaskBeast",
+	},
+	[40580] = {
+		icon = "|TInterface\\Icons\\inv_potion_35:12:12:0:0|t",
+		fullName = "Unstable Flask of the Beast",
+		maxDuration = 7200,
+		type = "unstableFlaskBeast",
+	},
+	[40576] = {
+		icon = "|TInterface\\Icons\\inv_potion_42:12:12:0:0|t",
+		fullName = "Unstable Flask of the Sorcerer",
+		maxDuration = 7200,
+		type = "unstableFlaskSorcerer",
+	},
+	[40588] = {
+		icon = "|TInterface\\Icons\\inv_potion_42:12:12:0:0|t",
+		fullName = "Unstable Flask of the Sorcerer",
+		maxDuration = 7200,
+		type = "unstableFlaskSorcerer",
+	},
+	[40763] = {
+		icon = "|TInterface\\Icons\\inv_potion_42:12:12:0:0|t",
+		fullName = "Unstable Flask of the Sorcerer",
+		maxDuration = 7200,
+		type = "unstableFlaskSorcerer",
+	},
+	[40567] = {
+		icon = "|TInterface\\Icons\\inv_potion_91:12:12:0:0|t",
+		fullName = "Unstable Flask of the Bandit",
+		maxDuration = 7200,
+		type = "unstableFlaskBandit",
+	},
+	[40577] = {
+		icon = "|TInterface\\Icons\\inv_potion_91:12:12:0:0|t",
+		fullName = "Unstable Flask of the Bandit",
+		maxDuration = 7200,
+		type = "unstableFlaskBandit",
+	},
+	[40579] = {
+		icon = "|TInterface\\Icons\\inv_potion_91:12:12:0:0|t",
+		fullName = "Unstable Flask of the Bandit",
+		maxDuration = 7200,
+		type = "unstableFlaskBandit",
+	},
+	[40568] = {
+		icon = "|TInterface\\Icons\\inv_potion_77:12:12:0:0|t",
+		fullName = "Unstable Flask of the Elder",
+		maxDuration = 7200,
+		type = "unstableFlaskElder",
+	},
+	[40582] = {
+		icon = "|TInterface\\Icons\\inv_potion_77:12:12:0:0|t",
+		fullName = "Unstable Flask of the Elder",
+		maxDuration = 7200,
+		type = "unstableFlaskElder",
+	},
+	[40573] = {
+		icon = "|TInterface\\Icons\\inv_potion_70:12:12:0:0|t",
+		fullName = "Unstable Flask of the Physician",
+		maxDuration = 7200,
+		type = "unstableFlaskPhysician",
+	},
+	[40586] = {
+		icon = "|TInterface\\Icons\\inv_potion_70:12:12:0:0|t",
+		fullName = "Unstable Flask of the Physician",
+		maxDuration = 7200,
+		type = "unstableFlaskPhysician",
+	},
+	[40575] = {
+		icon = "|TInterface\\Icons\\inv_potion_84:12:12:0:0|t",
+		fullName = "Unstable Flask of the Soldier",
+		maxDuration = 7200,
+		type = "unstableFlaskSoldier",
+	},
+	[40587] = {
+		icon = "|TInterface\\Icons\\inv_potion_84:12:12:0:0|t",
+		fullName = "Unstable Flask of the Soldier",
+		maxDuration = 7200,
+		type = "unstableFlaskSoldier",
+	},
+	--SoD.
+	[430947] = {
+		icon = "|TInterface\\Icons\\achievement_boss_bazil_akumai:12:12:0:0|t",
+		fullName = "Boon of Blackfathom",
+		maxDuration = 7200,
+		type = "boonOfBlackfathom",
+		isBoonable = true,
+	},
+	[430352] = {
+		icon = "|TInterface\\Icons\\spell_misc_warsongfocus:12:12:0:0|t",
+		fullName = "Ashenvale Rallying Cry",
+		maxDuration = 7200,
+		type = "ashenvaleRallyingCry",
+	},
+	[438536] = { --Why is there 2 the same? Horde and Alliance perhaps?
+		icon = "|T236424:12:12:0:0|t", --achievement_boss_mekgineer_thermaplugg- seemed bugged, id works though.
+		fullName = "Spark of Inspiration",
+		maxDuration = 7200,
+		type = "sparkOfInspiration",
+		isBoonable = true,
+	},
+	[438537] = {
+		icon = "|T236424:12:12:0:0|t", --achievement_boss_mekgineer_thermaplugg- seemed bugged, id works though.
+		fullName = "Spark of Inspiration",
+		maxDuration = 7200,
+		type = "sparkOfInspiration",
+		isBoonable = true,
+	},
+	[446695] = {
+		icon = "|TInterface\\Icons\\achievement_bg_killxenemies_generalsroom:12:12:0:0|t",
+		fullName = "Fervor of the Temple Explorer",
+		maxDuration = 7200,
+		type = "fervorTempleExplorer",
+		isBoonable = true,
+	},
+	[446698] = {
+		icon = "|TInterface\\Icons\\achievement_bg_killxenemies_generalsroom:12:12:0:0|t",
+		fullName = "Fervor of the Temple Explorer",
+		maxDuration = 7200,
+		type = "fervorTempleExplorer",
+		isBoonable = true,
+	},
+	[460939] = {
+		icon = "|TInterface\\Icons\\spell_arcane_teleportstormwind:12:12:0:0|t",
+		fullName = "Might of Stormwind",
+		maxDuration = 7200,
+		type = "mightOfStormwind",
+		isBoonable = true,
+	},
+	[460940] = {
+		icon = "|TInterface\\Icons\\spell_arcane_teleportstormwind:12:12:0:0|t",
+		fullName = "Might of Stormwind",
+		maxDuration = 7200,
+		type = "mightOfStormwind",
+		isBoonable = true,
+	},
+	
+	
+	[23736] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Agility",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23766] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Intelligence",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23738] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Spirit",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23737] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Stamina",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23735] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Strength",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23767] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Armor",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23769] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Resistance",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+	[23768] = {
+		icon = "|TInterface\\Icons\\inv_misc_orb_02:12:12:0:0|t",
+		fullName = "Sayge's Dark Fortune of Damage",
+		maxDuration = 7200,
+		type = "dmf",
+		isBoonable = true,
+	},
+};
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--[[
 NWB.spellTypes = {
 	--Classic.
 	[16609] = "rend",
@@ -443,4 +942,19 @@ NWB.dmfBuffTable = {
 		maxDuration = 7200,
 		type = "dmf",
 	},
-}
+};]]
+
+--debug func to make sure no types were missing when changing system over to spellIDs.
+--[[function test()
+    for k, v in pairs(NWB.buffTable) do
+        local found;
+        for kk, vv in pairs(NWB.spellTypes) do
+            if (k == vv.type or k == vv.type2) then
+                found = true;
+            end
+        end
+        if (not found) then
+            print("missing", k);
+        end
+    end
+end]]

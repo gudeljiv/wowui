@@ -166,15 +166,15 @@ GMMONEY = {
 ["CLASS"] = "PRIEST",
 },
 ["Vbank"] = {
-["GOLD"] = 3436,
+["GOLD"] = 11831,
 ["CLASS"] = "WARRIOR",
 },
 ["Mq"] = {
-["GOLD"] = 17169,
+["GOLD"] = 61469,
 ["CLASS"] = "HUNTER",
 },
 ["Vermin"] = {
-["GOLD"] = 2355,
+["GOLD"] = 21402,
 ["CLASS"] = "WARRIOR",
 },
 },

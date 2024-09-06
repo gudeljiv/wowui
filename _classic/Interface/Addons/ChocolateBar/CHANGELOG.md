@@ -1,6 +1,8 @@
 # ChocolateBar
 
-## [v3.11](https://github.com/Kiatra/ChocolateBar/tree/v3.11) (2023-05-06)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v3.10...v3.11) 
+## [v3.14](https://github.com/Kiatra/ChocolateBar/tree/v3.14) (2024-08-17)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v3/13...v3.14) 
 
-- fix error on login  
+- Merge pull request #38 from icbat/master  
+    Fixes reference to GetAddOnMetadata for 11.0.2  
+- Fixes reference to GetAddOnMetadata for 11.0.2  

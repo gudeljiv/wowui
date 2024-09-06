@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 4.0.20 (14th August 2024)
+-- 	Leatrix Plus 4.0.23 (4th September 2024)
 ----------------------------------------------------------------------
 
 --	01:Functions  02:Locks    03:Restart  40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "4.0.20"
+	LeaPlusLC["AddonVer"] = "4.0.23"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -666,6 +666,44 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Block requested invites (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			local frame = CreateFrame("FRAME")
+			frame:SetScript("OnEvent", function()
+				if LeaPlusLC["NoRequestedInvites"] == "On" then
+					local groupInvitePopUp = StaticPopup_FindVisible("GROUP_INVITE_CONFIRMATION")
+					if groupInvitePopUp and groupInvitePopUp.data then
+						local void, name, guid = GetInviteConfirmationInfo(groupInvitePopUp.data)
+						if LeaPlusLC:FriendCheck(name, guid) then
+							return
+						else
+							-- If not a friend, decline
+							RespondToInviteConfirmation(groupInvitePopUp.data, false)
+							StaticPopup_Hide("GROUP_INVITE_CONFIRMATION")
+						end
+					end
+				end
+			end)
+
+			-- Function to set event
+			local function SetEvent()
+				if LeaPlusLC["NoRequestedInvites"] == "On" then
+					frame:RegisterEvent("GROUP_INVITE_CONFIRMATION")
+				else
+					frame:UnregisterEvent("GROUP_INVITE_CONFIRMATION")
+				end
+			end
+
+			-- Set event on startup if enabled and when option is clicked
+			if LeaPlusLC["NoRequestedInvites"] == "On" then SetEvent() end
+			LeaPlusCB["NoRequestedInvites"]:HookScript("OnClick", SetEvent)
+
+		end
 
 		----------------------------------------------------------------------
 		-- Block friend requests
@@ -3142,8 +3180,8 @@
 					PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Elite.blp")
 					PlayerFrameTexture:SetTexCoord(1, .09375, 0, .78125)
 				elseif chain == 3 then -- Rare Elite
-					PlayerFrameTexture:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
-					PlayerFrameTexture:SetTexCoord(0.25, 0.0234375, 0, 0.1953125)
+					PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Rare-Elite.blp")
+					PlayerFrameTexture:SetTexCoord(1, .09375, 0, .78125)
 				end
 			end
 
@@ -5065,6 +5103,11 @@
 					end
 					-- Move GameTooltip to below the minimap in case the button uses it
 					button:HookScript("OnEnter", SetButtonTooltip)
+					-- Special case for MoveAny because it doesn't have button.db
+					if buttonName == "moveany" then
+						button.db = button.db or {}
+						if not button.db.hide then button.db.hide = false end
+					end
 				end
 
 				-- Hide new LibDBIcon icons
@@ -5892,6 +5935,13 @@
 				if LeaPlusLC["CombineAddonButtons"] == "On" then
 					--C_Timer.After(0.1, function() -- Removed for now
 						local buttonName = strlower(name)
+
+						-- Special case for MoveAny because it doesn't have button.db
+						if buttonName == "moveany" then
+							button.db = button.db or {}
+							if not button.db.hide then button.db.hide = false end
+						end
+
 						if not strfind(strlower(LeaPlusDB["MiniExcludeList"]), buttonName) then
 							if button.db and not button.db.hide then
 								button:Hide()
@@ -12631,22 +12681,20 @@
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
 
-			local slashButton = CreateFrame("Button", nil, interPanel)
-			slashButton:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
-			slashButton:SetScript("OnClick", function() SlashCmdList["Leatrix_Plus"]("") end)
-
-			local slashTitle = LeaPlusLC:MakeTx(slashButton, "/ltp", 0, 0)
+			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/ltp", 0, 0)
 			slashTitle:SetFont(slashTitle:GetFont(), 72)
 			slashTitle:ClearAllPoints()
-			slashTitle:SetAllPoints()
-
-			slashButton:SetSize(slashTitle:GetSize())
-			slashButton:SetScript("OnEnter", function()
+			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
+			slashTitle:SetScript("OnMouseUp", function(self, button)
+				if button == "LeftButton" then
+					SlashCmdList["Leatrix_Plus"]("")
+				end
+			end)
+			slashTitle:SetScript("OnEnter", function()
 				slashTitle.r,  slashTitle.g, slashTitle.b = slashTitle:GetTextColor()
 				slashTitle:SetTextColor(1, 1, 0)
 			end)
-
-			slashButton:SetScript("OnLeave", function()
+			slashTitle:SetScript("OnLeave", function()
 				slashTitle:SetTextColor(slashTitle.r, slashTitle.g, slashTitle.b)
 			end)
 
@@ -12732,6 +12780,7 @@
 				-- Social
 				LeaPlusLC:LoadVarChk("NoDuelRequests", "Off")				-- Block duels
 				LeaPlusLC:LoadVarChk("NoPartyInvites", "Off")				-- Block party invites
+				LeaPlusLC:LoadVarChk("NoRequestedInvites", "Off")			-- Block requested invites
 				LeaPlusLC:LoadVarChk("NoFriendRequests", "Off")				-- Block friend requests
 				LeaPlusLC:LoadVarChk("NoSharedQuests", "Off")				-- Block shared quests
 
@@ -13130,6 +13179,7 @@
 			-- Social
 			LeaPlusDB["NoDuelRequests"] 		= LeaPlusLC["NoDuelRequests"]
 			LeaPlusDB["NoPartyInvites"]			= LeaPlusLC["NoPartyInvites"]
+			LeaPlusDB["NoRequestedInvites"]		= LeaPlusLC["NoRequestedInvites"]
 			LeaPlusDB["NoFriendRequests"]		= LeaPlusLC["NoFriendRequests"]
 			LeaPlusDB["NoSharedQuests"]			= LeaPlusLC["NoSharedQuests"]
 
@@ -15325,6 +15375,7 @@
 				-- Social
 				LeaPlusDB["NoDuelRequests"] = "On"				-- Block duels
 				LeaPlusDB["NoPartyInvites"] = "Off"				-- Block party invites
+				LeaPlusDB["NoRequestedInvites"] = "Off"			-- Block requested invites
 				LeaPlusDB["NoFriendRequests"] = "Off"			-- Block friend requests
 				LeaPlusDB["NoSharedQuests"] = "Off"				-- Block shared quests
 
@@ -15745,8 +15796,9 @@
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Blocks"					, 	146, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoDuelRequests"			, 	"Block duels"					,	146, -92, 	false,	"If checked, duel requests will be blocked unless the player requesting the duel is a friend.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPartyInvites"			, 	"Block party invites"			, 	146, -112, 	false,	"If checked, party invitations will be blocked unless the player inviting you is a friend.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoFriendRequests"			, 	"Block friend requests"			, 	146, -132, 	false,	"If checked, BattleTag and Real ID friend requests will be automatically declined.|n|nEnabling this option will automatically decline any pending requests.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoSharedQuests"			, 	"Block shared quests"			, 	146, -152, 	false,	"If checked, shared quests will be declined unless the player sharing the quest is a friend.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRequestedInvites"		, 	"Block requested invites"		, 	146, -132, 	false,	"If checked, requests to invite a player to your group will be declined unless the player requesting to join is a friend.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoFriendRequests"			, 	"Block friend requests"			, 	146, -152, 	false,	"If checked, BattleTag and Real ID friend requests will be automatically declined.|n|nEnabling this option will automatically decline any pending requests.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoSharedQuests"			, 	"Block shared quests"			, 	146, -172, 	false,	"If checked, shared quests will be declined unless the player sharing the quest is a friend.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends will be automatically accepted unless you are queued for a battleground.")

@@ -2,6 +2,7 @@
 RXPData = {
 ["gameVersion"] = 11503,
 ["defaultProfile"] = false,
+["cache"] = "Mxyzptlk#21477",
 ["release"] = "v4.6.31",
 ["cacheVersion"] = 25,
 ["trainGenericSpells"] = true,
@@ -119,6 +120,11 @@ RXPSettings = {
 ["season"] = 0,
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
+["enableMinimapButton"] = false,
+["itemUpgradeSpec"] = "Enhance",
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -157,10 +163,7 @@ nil,
 },
 },
 },
-["itemUpgradeSpec"] = "Enhance",
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
+["season"] = 2,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -179,8 +182,6 @@ nil,
 67.99996185302734,
 },
 },
-["season"] = 2,
-["enableMinimapButton"] = false,
 },
 ["Vbank - Celebras"] = {
 ["season"] = 0,
@@ -199,7 +200,7 @@ nil,
 },
 ["activeTargetFrame"] = {
 85.2649154663086,
-68.00004577636719,
+67.99996185302734,
 },
 },
 ["enableMinimapButton"] = false,
@@ -487,6 +488,25 @@ nil,
 },
 ["Dopemend - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["season"] = 2,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -525,27 +545,8 @@ nil,
 },
 },
 },
-["season"] = 2,
-["enableMinimapButton"] = false,
 ["itemUpgradeSpec"] = "Discipline ",
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
+["enableMinimapButton"] = false,
 },
 ["Battitude - Zandalar Tribe"] = {
 ["macroAnnounced"] = true,
@@ -613,7 +614,26 @@ nil,
 },
 ["Dopesnare - Stitches"] = {
 ["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
 ["enableMinimapButton"] = false,
+["season"] = 0,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -652,25 +672,6 @@ nil,
 },
 },
 },
-["season"] = 0,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
 },
 ["Vermin - Celebras"] = {
 ["showDangerousMobsMap"] = false,
@@ -683,7 +684,7 @@ nil,
 nil,
 "CENTER",
 -276.793701171875,
--199.6824035644531,
+-199.6824188232422,
 },
 },
 ["RXPFrame"] = {
@@ -752,8 +753,8 @@ nil,
 31.99995613098145,
 },
 },
-["frameHeight"] = 125.0000152587891,
 ["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
 },
 ["Battlenac - Zandalar Tribe"] = {
 ["showDangerousMobsMap"] = false,
@@ -825,6 +826,7 @@ nil,
 ["Mq - Celebras"] = {
 ["showDangerousMobsMap"] = true,
 ["macroAnnounced"] = true,
+["hardcore"] = true,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -832,7 +834,7 @@ nil,
 nil,
 "CENTER",
 -158.0948333740234,
--197.5882873535156,
+-197.5883026123047,
 },
 },
 ["RXPFrame"] = {
@@ -866,14 +868,17 @@ nil,
 ["season"] = 0,
 ["dungeons"] = {
 ["ULDA"] = true,
+["SFK"] = true,
 ["STOCKS"] = true,
 ["RFD"] = true,
+["WC"] = true,
 ["GNOMER"] = true,
 ["DM"] = true,
 ["SM"] = true,
+["MARA"] = true,
 ["BFD"] = true,
 ["RFK"] = true,
-["MARA"] = true,
+["BRD"] = true,
 ["ST"] = true,
 ["ZF"] = true,
 },
@@ -895,11 +900,11 @@ nil,
 },
 ["activeTargetFrame"] = {
 85.2649154663086,
-67.99996185302734,
+40.00004959106445,
 },
 },
-["enableMinimapButton"] = false,
 ["frameHeight"] = 125.0000152587891,
+["enableMinimapButton"] = false,
 },
 ["Vermin - Zandalar Tribe"] = {
 ["showDangerousMobsMap"] = false,
@@ -1035,26 +1040,6 @@ nil,
 },
 ["Default"] = {
 ["macroAnnounced"] = true,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["enableMinimapButton"] = false,
-["season"] = 0,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -1093,9 +1078,28 @@ nil,
 },
 },
 },
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["season"] = 0,
+["enableMinimapButton"] = false,
 },
 ["Dopestab - Lone Wolf"] = {
-["enableMinimapButton"] = false,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -1114,9 +1118,6 @@ nil,
 68.00004577636719,
 },
 },
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = false,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -1155,6 +1156,10 @@ nil,
 },
 },
 },
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = false,
+["enableMinimapButton"] = false,
 ["season"] = 2,
 ["lockFrames"] = false,
 },
@@ -1286,10 +1291,29 @@ nil,
 },
 },
 ["Doperage - Lone Wolf"] = {
-["enableMinimapButton"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+234.9999084472656,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
 ["frameHeight"] = 125.0000152587891,
 ["macroAnnounced"] = true,
 ["hardcore"] = false,
+["enableMinimapButton"] = false,
+["season"] = 2,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -1328,27 +1352,11 @@ nil,
 },
 },
 },
-["season"] = 2,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-234.9999084472656,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-},
 },
 ["Battlenac - Celebras"] = {
+["enableMinimapButton"] = false,
+["macroAnnounced"] = true,
+["season"] = 0,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -1367,8 +1375,7 @@ nil,
 67.99996185302734,
 },
 },
-["macroAnnounced"] = true,
-["season"] = 0,
+["itemUpgradeSpec"] = "Discipline ",
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -1407,8 +1414,6 @@ nil,
 },
 },
 },
-["itemUpgradeSpec"] = "Discipline ",
-["enableMinimapButton"] = false,
 },
 },
 }

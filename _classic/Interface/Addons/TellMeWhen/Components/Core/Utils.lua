@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -1352,16 +1352,6 @@ end
 ---------------------------------
 -- WoW API Helpers
 ---------------------------------
-
-function TMW.SpellHasNoMana(spell)
-	-- TODO: in warlords, you can't determine spell costs anymore. Thanks, blizzard!
-	-- This function used to get the spell cost, and determine usability from that, 
-	-- but we can't do that anymore. It was a more reliable method because IsUsableSpell
-	-- was broken for some abilities (like Jab)
-
-	local _, nomana = IsUsableSpell(spell)
-	return nomana
-end
 
 function TMW.GetRuneCooldownDuration()
 	-- Round to a precision of 3 decimal points for comparison with returns from GetSpellCooldown

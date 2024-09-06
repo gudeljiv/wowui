@@ -858,6 +858,7 @@ function NIT:ticker()
 	end
 	lockoutNum24 = hourCount24;
 	lockoutNum = hourCount;
+	NIT:updateDataBrokerText();
 	C_Timer.After(1, function()
 		NIT:ticker();
 	end)
@@ -921,9 +922,9 @@ end
 local NITLDB, doUpdateMinimapButton;
 function NIT:createBroker()
 	local data = {
-		type = "launcher",
+		type = "data source",
 		label = "NIT",
-		text = "NovaInstanceTracker",
+		text = "Ready",
 		icon = "Interface\\AddOns\\NovaInstanceTracker\\Media\\portal",
 		OnClick = function(self, button)
 			if (button == "LeftButton" and IsShiftKeyDown()) then
@@ -1187,6 +1188,22 @@ function NIT:getMinimapButtonLockoutString()
 			.. NIT.prefixColor .. hourCount24 .. NIT.chatColor .. " " .. L["instancesPastHour24"] .. "\n"
 			.. L["nextInstanceAvailable"] .. " " .. lockoutInfo .. ".";
 	return msg;
+end
+
+--For data broker panel type addons text.
+local gsub = gsub;
+function NIT:updateDataBrokerText()
+	local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
+	local msg = gsub(L["ready"], "%.$", ""); --Remove trailing period from our local string.
+	local timeLeft24 = 86400 - (GetServerTime() - hourTimestamp24);
+	local timeLeft = 3600 - (GetServerTime() - hourTimestamp);
+	local timeLeftMax = math.max(timeLeft24, timeLeft);
+	if (GetServerTime() - hourTimestamp24 < 86400 and hourCount24 >= NIT.dailyLimit and timeLeft24 == timeLeftMax) then
+		msg = NIT:getTimeString(86400 - (GetServerTime() - hourTimestamp24), true, "short") .. " (24" .. L["hourShort"] .. ")";
+	elseif (GetServerTime() - hourTimestamp < 3600 and hourCount >= NIT.hourlyLimit) then
+		msg = NIT:getTimeString(3600 - (GetServerTime() - hourTimestamp), true, "short");
+	end
+	NITLDB.text = msg;
 end
 
 function NIT:getMinimapButtonNextExpires(char)
@@ -4404,11 +4421,11 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				for k, v in pairs(data.cooldowns) do
 					if (v.time > GetServerTime()) then
 						local timeString = "(" .. NIT:getTimeString(v.time - GetServerTime(), true, NIT.db.global.timeStringType) .. " " .. L["left"] .. ")";
-						cooldownText = cooldownText .. "\n    " .. color1 .. k .. ":|r " .. color2 .. timeString .. "|r";
+						cooldownText = cooldownText .. "\n    " .. color1 .. k .. "|r " .. color2 .. timeString .. "|r";
 						foundCooldowns = true;
 					elseif (GetServerTime() - v.time < 1209600) then
 						--Display cooldowns are ready only for 2 weeks after last used so we don't have to worrie about dropped professions.
-						cooldownText = cooldownText .. "\n    " .. color1 .. k .. ":|r " .. color2 .. L["ready"] .. "|r";
+						cooldownText = cooldownText .. "\n    " .. color1 .. k .. "|r " .. color2 .. L["ready"] .. "|r";
 						foundCooldowns = true;
 					end
 				end

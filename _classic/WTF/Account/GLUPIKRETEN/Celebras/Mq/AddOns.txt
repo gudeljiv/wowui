@@ -3,3 +3,4 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Blizzard_CombatText: enabled
 ItemRackOptions: enabled
+RXPGuides: disabled

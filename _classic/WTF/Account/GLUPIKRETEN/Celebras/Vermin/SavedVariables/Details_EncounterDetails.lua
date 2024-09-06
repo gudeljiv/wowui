@@ -8562,19 +8562,22 @@ EncounterDetailsDB = {
 },
 ["source"] = "Jdog",
 },
-[47743] = {
-["school"] = 64,
-["token"] = {
-["SPELL_CAST_SUCCESS"] = true,
-},
-["source"] = "Anomalus",
-},
-[70890] = {
+[43649] = {
 ["school"] = 32,
 ["token"] = {
+["SPELL_CAST_START"] = true,
+["SPELL_CAST_SUCCESS"] = true,
 ["SPELL_DAMAGE"] = true,
 },
-["source"] = "Gvozdenko",
+["source"] = "Dalronn the Controller",
+},
+[55931] = {
+["school"] = 4,
+["token"] = {
+["SPELL_CAST_SUCCESS"] = true,
+["SPELL_CAST_START"] = true,
+},
+["source"] = "Prince Taldaram",
 },
 [57722] = {
 ["school"] = 1,
@@ -8592,14 +8595,12 @@ EncounterDetailsDB = {
 },
 ["source"] = "Krik'thir the Gatewatcher",
 },
-[43649] = {
-["school"] = 32,
+[47743] = {
+["school"] = 64,
 ["token"] = {
-["SPELL_CAST_START"] = true,
 ["SPELL_CAST_SUCCESS"] = true,
-["SPELL_DAMAGE"] = true,
 },
-["source"] = "Dalronn the Controller",
+["source"] = "Anomalus",
 },
 [27142] = {
 ["school"] = 2,
@@ -8609,13 +8610,12 @@ EncounterDetailsDB = {
 },
 ["source"] = "Dulifox",
 },
-[55931] = {
-["school"] = 4,
+[70890] = {
+["school"] = 32,
 ["token"] = {
-["SPELL_CAST_SUCCESS"] = true,
-["SPELL_CAST_START"] = true,
+["SPELL_DAMAGE"] = true,
 },
-["source"] = "Prince Taldaram",
+["source"] = "Gvozdenko",
 },
 [15654] = {
 ["school"] = 32,

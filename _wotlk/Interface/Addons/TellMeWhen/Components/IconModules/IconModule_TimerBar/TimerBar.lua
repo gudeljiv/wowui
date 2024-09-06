@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -21,10 +21,6 @@ local print = TMW.print
 local LSM = LibStub("LibSharedMedia-3.0")
 local	pairs, wipe =
 		pairs, wipe
-
-local OnGCD = TMW.OnGCD
-
-
 
 local BarsToUpdate = {}
 

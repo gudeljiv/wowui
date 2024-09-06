@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -16,8 +16,6 @@ if not TMW then return end
 local TMW = TMW
 local L = TMW.L
 local print = TMW.print
-
-local OnGCD = TMW.OnGCD
 
 local IconPosition_Sortable = TMW:NewClass("GroupModule_IconPosition_Sortable", "GroupModule_IconPosition")
 

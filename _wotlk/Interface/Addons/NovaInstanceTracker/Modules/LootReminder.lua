@@ -636,6 +636,26 @@ function NIT:loadLootReminderListFrame()
 				self.isMoving = false;
 			end
 		end)
+		
+		frame.scrollChild:SetScript("OnMouseDown", function(self, button)
+			if (button == "LeftButton" and not frame.isMoving) then
+				frame:StartMoving();
+				frame.isMoving = true;
+			end
+		end)
+		frame.scrollChild:SetScript("OnMouseUp", function(self, button)
+			if (button == "LeftButton" and frame.isMoving) then
+				frame:StopMovingOrSizing();
+				frame.isMoving = false;
+			end
+		end)
+		frame.scrollChild:SetScript("OnHide", function(self)
+			if (frame.isMoving) then
+				frame:StopMovingOrSizing();
+				frame.isMoving = false;
+			end
+		end)
+		
 		frame.scrollChild:EnableMouse(true);
 		--frame.scrollChild:SetHyperlinksEnabled(true);
 		--frame.scrollChild:SetScript("OnHyperlinkClick", ChatFrame_OnHyperlinkShow);

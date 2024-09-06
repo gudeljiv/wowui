@@ -424,6 +424,9 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:recordLockoutData();
 		NIT:recordQuests();
 	elseif (event == "PLAYER_LOGOUT") then
+		--if (NIT.inInstance) then
+		--	NIT:recordLeftInstanceStats();
+		--end
 		NIT:recordLockoutData();
 		NIT:recordQuests();
 	elseif (event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_CLOSE") then
@@ -1352,7 +1355,10 @@ function NIT:recordLeftInstanceStats()
 		end
 	else
 		NIT.data.instances[1]["leftLevel"] = UnitLevel("player");
-		NIT.data.instances[1]["leftLevelPercent"] = NIT:getLevelPercentage();
+		local levelPercentage = NIT:getLevelPercentage();
+		if (levelPercentage) then
+			NIT.data.instances[1]["leftLevelPercent"] = levelPercentage;
+		end
 		NIT.data.instances[1]["leftXP"] = UnitXP("player");
 		NIT.data.instances[1]["leftMoney"] = GetMoney();
 	end
@@ -3388,8 +3394,8 @@ function NIT:recordCooldowns()
 		for slot = 1, GetContainerNumSlots(bag) do
 			local item = Item:CreateFromBagAndSlot(bag, slot);
 			if (item) then
-				local itemID = item:GetItemID(item);
-				local itemName = item:GetItemName(item);
+				local itemID = item:GetItemID();
+				local itemName = item:GetItemName();
 				if (itemID and itemName and itemCooldowns[itemID]) then
 					local startTime, duration, isEnabled = GetContainerItemCooldown(bag, slot);
 					--local endTime = (startTime + duration) - (GetTime() - GetServerTime());
@@ -3693,6 +3699,7 @@ function NIT:resetCurrentTradeData()
 	playerMoney, targetMoney, tradeWho, tradeWhoClass = 0, 0, "", "";
 end
 
+--UnitXP() seems to return nil sometimes? Right on logging out I think?
 function NIT:getLevelPercentage()
 	--[[local xp = UnitXP("player");
 	if (xp and xp > 0) then

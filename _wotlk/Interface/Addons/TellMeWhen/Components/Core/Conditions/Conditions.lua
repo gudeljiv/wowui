@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -745,14 +745,14 @@ CNDT.Substitutions = {
 		return conditionData.percent and conditionSettings.Level/100 or conditionSettings.Level
 	end,
 },{
-	src = "c.Checked",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return tostring(conditionSettings.Checked)
-	end,
-},{
 	src = "c.Checked2",
 	rep = function(conditionData, conditionSettings, name, name2)
 		return tostring(conditionSettings.Checked2)
+	end,
+},{
+	src = "c.Checked",
+	rep = function(conditionData, conditionSettings, name, name2)
+		return tostring(conditionSettings.Checked)
 	end,
 },{
 	src = "c.Operator",

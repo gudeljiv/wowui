@@ -1,7 +1,7 @@
 
 local addon,ns=...;
 local L=ns.L;
-ns.debugMode = "9.2.15-release"=="@".."project-version".."@";
+ns.debugMode = "9.2.16-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH");
 
 local ACD = LibStub("AceConfigDialog-3.0");
@@ -125,13 +125,11 @@ local function SetPlayerDotTexture(bool) -- executed by FarmHud:UpdateOptions(),
 end
 
 -- tracking options
- local function C_Minimap_GetTrackingInfo(index) -- Changed with 11.0; returns a table instead a list
-	if C_Minimap and C_Minimap.GetTrackingInfo then
+local C_Minimap_GetTrackingInfo = C_Minimap.GetTrackingInfo
+if WOW_PROJECT_ID~=WOW_PROJECT_MAINLINE then
+	function C_Minimap_GetTrackingInfo(index) -- nice blizzard. Added new function to cata classic but with old return values.
 		local info = {}
 		info.name, info.texture, info.active, info.type, info.subType, info.spellID = C_Minimap.GetTrackingInfo(index);
-		if not info.texture then
-			return info.name;
-		end
 		return info;
 	end
 end
@@ -1002,7 +1000,7 @@ function FarmHudMixin:ToggleOptions()
 		ACD:Close(addon);
 	else
 		ACD:Open(addon);
-		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.15-release");
+		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.16-release");
 	end
 end
 

@@ -24,11 +24,11 @@ Postal3DB = {
 "Dopetrap|Lone Wolf|Horde|1|HUNTER",
 "Jutarnjedrvo|Lone Wolf|Horde|50|SHAMAN",
 "Lonac|Stitches|Horde|1|WARRIOR",
-"Mq|Celebras|Alliance|16|HUNTER",
+"Mq|Celebras|Alliance|24|HUNTER",
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
-"Vermin|Celebras|Alliance|21|WARRIOR",
+"Vermin|Celebras|Alliance|23|WARRIOR",
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },
@@ -84,6 +84,7 @@ Postal3DB = {
 ["Vbank - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
+"Mq|Celebras|Alliance",
 "Vermin|Celebras|Alliance",
 },
 },
@@ -156,6 +157,7 @@ Postal3DB = {
 ["recent"] = {
 "Vbank|Celebras|Alliance",
 "Mq|Celebras|Alliance",
+"Dibsie-Celebras|Celebras|Alliance",
 },
 },
 },

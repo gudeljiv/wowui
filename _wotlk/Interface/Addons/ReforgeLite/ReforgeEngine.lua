@@ -1,6 +1,5 @@
 local addonName, addonTable = ...
 local REFORGE_COEFF = addonTable.REFORGE_COEFF
-local MAX_LOOPS = 100000
 
 local ReforgeLite = addonTable.ReforgeLite
 local L = addonTable.L
@@ -9,16 +8,14 @@ local playerClass, playerRace = addonTable.playerClass, addonTable.playerRace
 local missChance = (playerRace == "NIGHTELF" and 7 or 5)
 
 local floor, tinsert, unpack, pairs, random = floor, tinsert, unpack, pairs, random
+local GetItemStats = C_Item.GetItemStats or GetItemStats
 
 ---------------------------------------------------------------------------------------
 function ReforgeLite:GetPlayerBuffs()
   local kings, strength, flask, food, spellHaste, darkIntent
-  local i = 1
-  while true do
-    local aura = C_UnitAuras.GetBuffDataByIndex("player", i)
-    if aura == nil then
-      return kings, strength, flask, food, spellHaste, darkIntent
-    else
+  for k,v in pairs({C_UnitAuras.GetAuraSlots('player','helpful')}) do
+    local aura = C_UnitAuras.GetAuraDataBySlot('player',v)
+    if aura then
       local id = aura.spellId
       if id == 79063 or id == 79061 or id == 90363 then
         kings = true
@@ -44,8 +41,8 @@ function ReforgeLite:GetPlayerBuffs()
         darkIntent = true
       end
     end
-    i = i + 1
   end
+  return kings, strength, flask, food, spellHaste, darkIntent
 end
 function ReforgeLite:DiminishStat (rating, stat)
   return rating > 0 and 1 / (0.0152366 + 0.956 / (rating / self:RatingPerPoint (stat))) or 0
@@ -70,7 +67,7 @@ function ReforgeLite:GetMethodScore (method)
       score = score + self:GetStatScore (i, method.stats[i])
     end
   end
-  return score
+  return RoundToSignificantDigits(score, 2)
 end
 
 local itemBonuses = {
@@ -166,10 +163,10 @@ function ReforgeLite:UpdateMethodStats (method)
       method.stats[method.items[i].dst] = method.stats[method.items[i].dst] + method.items[i].amount
     end
   end
-  method.stats[self.STATS.SPIRIT] = floor (method.stats[self.STATS.SPIRIT] * self.spiritBonus + 0.5)
+  method.stats[self.STATS.SPIRIT] = Round(method.stats[self.STATS.SPIRIT] * self.spiritBonus)
   if self.s2hFactor > 0 then
     method.stats[self.STATS.HIT] = method.stats[self.STATS.HIT] +
-      floor ((method.stats[self.STATS.SPIRIT] - oldspi) * self.s2hFactor / 100 + 0.5)
+      Round((method.stats[self.STATS.SPIRIT] - oldspi) * self.s2hFactor / 100)
   end
   if method.tankingModel then
     local dodge_bonus, parry_bonus, mastery_bonus = self:GetBuffBonuses ()
@@ -199,6 +196,7 @@ function ReforgeLite:UpdateMethodStats (method)
     end
   end
 end
+
 function ReforgeLite:FinalizeReforge (data)
   for _,item in ipairs(data.method.items) do
     item.reforge = nil
@@ -209,6 +207,7 @@ function ReforgeLite:FinalizeReforge (data)
   end
   self:UpdateMethodStats (data.method)
 end
+
 function ReforgeLite:ResetMethod ()
   local method = { items = {} }
   for i = 1, #self.itemData do
@@ -221,7 +220,7 @@ function ReforgeLite:ResetMethod ()
   method.tankingModel = self.pdb.tankingModel
   self:UpdateMethodStats (method)
   self.pdb.method = method
-  self:UpdateMethodCategory ()
+  self:UpdateMethodCategory()
 end
 
 function ReforgeLite:CapAllows (cap, value)
@@ -368,7 +367,7 @@ function ReforgeLite:InitReforgeClassic ()
     end
   end
   if self.s2hFactor > 0 then
-    data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - floor (reforgedSpirit * self.spiritBonus * self.s2hFactor / 100 + 0.5)
+    data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - Round(reforgedSpirit * self.spiritBonus * self.s2hFactor / 100)
   end
 
   for _,v in ipairs(data.caps) do
@@ -387,9 +386,9 @@ function ReforgeLite:InitReforgeClassic ()
 
   return data
 end
-
+local maxLoops
 function ReforgeLite:RunYieldCheck()
-  if self.__chooseLoops == self.__maxLoops then
+  if (self.__chooseLoops or 0) >= maxLoops then
     self.__chooseLoops = nil
     coroutine.yield()
   else
@@ -549,14 +548,14 @@ function ReforgeLite:InitReforgeS2H ()
       data.initial[dst] = data.initial[dst] - amount
     end
   end
-  data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - floor (self.itemStats[self.STATS.SPIRIT].getter () * self.s2hFactor / 100 + 0.5)
+  data.initial[self.STATS.HIT] = data.initial[self.STATS.HIT] - Round(self.itemStats[self.STATS.SPIRIT].getter () * self.s2hFactor / 100)
   data.cap.init = data.initial[self.STATS.HIT]
-  data.spi = floor (data.initial[self.STATS.SPIRIT] + 0.5)
+  data.spi = Round(data.initial[self.STATS.SPIRIT])
   for i = 1, #data.method.items do
     data.cap.init = data.cap.init + data.method.items[i].stats[self.STATS.HIT]
     data.spi = data.spi + data.method.items[i].stats[self.STATS.SPIRIT]
   end
-  data.initial[self.STATS.SPIRIT] = floor (data.initial[self.STATS.SPIRIT] * self.spiritBonus + 0.5)
+  data.initial[self.STATS.SPIRIT] = Round(data.initial[self.STATS.SPIRIT] * self.spiritBonus)
 
   data.caps = {{stat = self.STATS.HIT, init = data.cap.init}, {stat = self.STATS.SPIRIT, init = data.spi}}
 
@@ -576,8 +575,8 @@ function ReforgeLite:ChooseReforgeS2H (data, reforgeOptions, scores, codes)
       hit = hit + reforgeOptions[i][b].d1
       spi = spi + reforgeOptions[i][b].d2
     end
-    spi = floor (spi * self.spiritBonus + 0.5)
-    hit = hit + floor (spi * self.s2hFactor / 100 + 0.5)
+    spi = Round(spi * self.spiritBonus)
+    hit = hit + Round(spi * self.s2hFactor / 100)
     local allow = self:CapAllows (data.cap, hit) and 1 or 2
     score = score + self:GetCapScore (data.cap, hit) + data.weights[self.STATS.SPIRIT] * spi
     if bestCode[allow] == nil or score > bestScore[allow] then
@@ -811,6 +810,7 @@ function ReforgeLite:ComputeReforgeCore (data, reforgeOptions)
   end
   return scores, codes
 end
+
 function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
   local data = self[initFunc] (self)
   local reforgeOptions = {}
@@ -818,13 +818,12 @@ function ReforgeLite:ComputeReforge (initFunc, optionFunc, chooseFunc)
     reforgeOptions[i] = self[optionFunc] (self, data.method.items[i], data, i)
   end
 
-  local _, maxQuality = self.quality:GetMinMaxValues()
-  self.__maxLoops = MAX_LOOPS * (self.db.speed / maxQuality)
+  self.__chooseLoops = nil
+  maxLoops = self.db.speed
 
   local scores, codes = self:ComputeReforgeCore(data, reforgeOptions)
 
   local code = self[chooseFunc] (self, data, reforgeOptions, scores, codes)
-  self.__chooseLoops = nil
   scores, codes = nil, nil
   collectgarbage ("collect")
   for i = 1, #data.method.items do
@@ -864,13 +863,13 @@ function ReforgeLite:StartCompute(btn)
   end
   local co = coroutine.create( function() self:Compute() end )
   coroutine.resume(co)
-  local routineStatus = coroutine.status(co)
-  if routineStatus == "dead" then
+  local normalStatus = { suspended = true, running = true }
+  if not normalStatus[coroutine.status(co)] then
     endProcess()
-  elseif routineStatus == "suspended" then
+  else
     C_Timer.NewTicker(0, function(timer)
-      local success = coroutine.resume(co)
-      if not success then
+      coroutine.resume(co)
+      if not normalStatus[coroutine.status(co)] then
         timer:Cancel()
         endProcess()
       end

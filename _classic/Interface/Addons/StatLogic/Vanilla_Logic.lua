@@ -152,7 +152,7 @@ addon.SpellCritPerInt = {
 		0.0500, 0.0482, 0.0458, 0.0443, 0.0422, 0.0409, 0.0397, 0.0380, 0.0370, 0.0355,
 		0.0342, 0.0333, 0.0321, 0.0314, 0.0303, 0.0293, 0.0287, 0.0278, 0.0273, 0.0262,
 		0.0257, 0.0252, 0.0245, 0.0239, 0.0233, 0.0227, 0.0223, 0.0218, 0.0213, 0.0208,
-		nil,    nil,    nil,    nil,    0.0186, 0.0184, 0.0180, 0.0175, 0.0173, 0.0169,
+		0.0203, 0.0200, 0.0194, 0.0191, 0.0186, 0.0184, 0.0180, 0.0175, 0.0173, 0.0169,
 	},
 	["MAGE"] = {
 		0.1920, 0.1846, 0.1778, 0.1655, 0.1600, 0.1548, 0.1500, 0.1455, 0.1371, 0.1333,
@@ -1413,13 +1413,20 @@ elseif addon.class == "WARLOCK" then
 				["aura"] = 425463,
 			},
 			-- Rune: Dance of the Wicked
-			--   You and your demon pet gain dodge chance equal to your spell critical strike chance.
 			{
 				["known"] = 412798,
 				["rune"] = true,
 				["aura"] = 412800,
 				["tooltip"] = true,
-				-- TODO: ADD_DODGE_MOD_SPELL_CRIT?
+			}
+		},
+		["ADD_DODGE_MOD_SPELL_CRIT"] = {
+			-- Rune: Dance of the Wicked
+			{
+				["known"] = 412798,
+				["rune"] = true,
+				["aura"] = 412800,
+				["value"] = 1,
 			}
 		},
 		-- Warlock: Demonic Pact - Rune

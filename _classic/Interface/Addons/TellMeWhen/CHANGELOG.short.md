@@ -1,7 +1,6 @@
 
-## v11.0.4
-* Fix: #2186 Activation overlays in Retail
-* The cooldown charge sweep is now skinned with Masque.
+## v11.0.7
+* Fix: #2217 error in item cooldown conditions
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/444d1399034a16df0aecaea1a31b3c3b6a954e91/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/0c836040ee7e730884835b6deef957de60856d02/CHANGELOG.md)

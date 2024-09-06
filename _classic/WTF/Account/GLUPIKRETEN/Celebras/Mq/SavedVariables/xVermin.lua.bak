@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 xKillCount = {
 ["show"] = false,
@@ -15,3 +16,22 @@ xKillCount = {
 ["killLog"] = {
 },
 }
+=======
+
+xKillCount = {
+["show"] = false,
+["position"] = {
+["y"] = -350,
+["x"] = 5,
+["to"] = "TOPLEFT",
+["from"] = "TOPLEFT",
+["anchor"] = "UIParent",
+},
+["experience"] = {
+["pulltotal"] = 346,
+["totaltotal"] = 282822,
+},
+["killLog"] = {
+},
+}
+>>>>>>> 314f3f6b704ae96029dcb533ce1f2a9e6294d56c
