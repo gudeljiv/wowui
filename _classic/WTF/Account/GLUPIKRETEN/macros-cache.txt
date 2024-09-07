@@ -60,7 +60,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3730
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Kobold Worker
+/targetexact Defias Thug
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

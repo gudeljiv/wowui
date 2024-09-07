@@ -1,19 +1,20 @@
 
 ReforgeLiteDB = {
-	["windowHeight"] = 564,
-	["updateTooltip"] = true,
-	["windowY"] = 1215.968139648438,
-	["activeWindowTitle"] = {
-		0.8, -- [1]
-		0, -- [2]
-		0, -- [3]
-	},
-	["reforgeCheat"] = 3.991333246231079,
 	["inactiveWindowTitle"] = {
 		0.5, -- [1]
 		0.5, -- [2]
 		0.5, -- [3]
 	},
+	["windowY"] = 1215.968139648438,
+	["reforgeCheat"] = 3.991333246231079,
+	["openOnReforge"] = true,
+	["speed"] = 100000,
+	["activeWindowTitle"] = {
+		0.8, -- [1]
+		0, -- [2]
+		0, -- [3]
+	},
+	["windowHeight"] = 564,
 	["profiles"] = {
 		["Handrmandr - Golemagg"] = {
 			["caps"] = {
@@ -60,6 +61,7 @@ ReforgeLiteDB = {
 			},
 		},
 		["Vermina - Golemagg"] = {
+			["spellHaste"] = true,
 			["method"] = {
 				["items"] = {
 					{
@@ -329,6 +331,7 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["darkIntent"] = false,
 			["tankingModel"] = true,
 			["buffs"] = {
 			},
@@ -784,6 +787,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -793,8 +798,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1350,6 +1353,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1359,8 +1364,6 @@ ReforgeLiteDB = {
 				185, -- [6]
 				113, -- [7]
 				0, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 				[8] = false,
@@ -1583,10 +1586,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1596,6 +1595,10 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
+			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
 			},
 		},
 		["Tadibey - Golemagg"] = {
@@ -1677,8 +1680,8 @@ ReforgeLiteDB = {
 			},
 		},
 	},
+	["updateTooltip"] = true,
+	["windowX"] = 1029.206420898438,
 	["customPresets"] = {
 	},
-	["openOnReforge"] = true,
-	["windowX"] = 1029.206420898438,
 }

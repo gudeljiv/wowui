@@ -42,16 +42,16 @@ Postal3DB = {
 ["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
 ["Dopede - Stitches"] = "Dopede - Stitches",
 ["Vermins - Stitches"] = "Vermins - Stitches",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Mq - Celebras"] = "Mq - Celebras",
 ["Dopecure - Stitches"] = "Dopecure - Stitches",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
-["Mq - Celebras"] = "Mq - Celebras",
-["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Vermin - Celebras"] = "Vermin - Celebras",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
@@ -116,7 +116,14 @@ Postal3DB = {
 },
 },
 },
-["Turbonac - Celebras"] = {
+["Mq - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vbank|Celebras|Alliance",
+"Vermin|Celebras|Alliance",
+"Meesa-Celebras|Celebras|Alliance",
+},
+},
 },
 ["Dopecure - Stitches"] = {
 ["BlackBook"] = {
@@ -133,18 +140,11 @@ Postal3DB = {
 },
 },
 },
-["Mq - Celebras"] = {
-["BlackBook"] = {
-["recent"] = {
-"Vbank|Celebras|Alliance",
-"Vermin|Celebras|Alliance",
-"Meesa-Celebras|Celebras|Alliance",
-},
-},
+["Dopetrap - Lone Wolf"] = {
 },
 ["Battitude - Zandalar Tribe"] = {
 },
-["Dopetrap - Lone Wolf"] = {
+["Vermin - Zandalar Tribe"] = {
 },
 ["Dopesnare - Stitches"] = {
 ["BlackBook"] = {
@@ -154,7 +154,9 @@ Postal3DB = {
 },
 },
 },
-["Vermin - Zandalar Tribe"] = {
+["Dopedot - Lone Wolf"] = {
+},
+["Turbonac - Celebras"] = {
 },
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
@@ -164,8 +166,6 @@ Postal3DB = {
 "Dibsie-Celebras|Celebras|Alliance",
 },
 },
-},
-["Dopedot - Lone Wolf"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
