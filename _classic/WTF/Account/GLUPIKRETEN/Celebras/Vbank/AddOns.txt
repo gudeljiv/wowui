@@ -155,5 +155,5 @@ kExtraBossFrames: disabled
 ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
-ImprovedRuneEngravingUI: enabled
+ImprovedRuneEngravingUI: disabled
 RuneBar: enabled
