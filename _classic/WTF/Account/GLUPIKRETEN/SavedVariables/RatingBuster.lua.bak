@@ -16,16 +16,16 @@ RatingBusterDB = {
 ["Dopenac - Lone Wolf"] = "PRIEST",
 ["Dopede - Stitches"] = "SHAMAN",
 ["Vermins - Stitches"] = "WARRIOR",
-["Turbonac - Celebras"] = "Warlock",
+["Mq - Celebras"] = "HUNTER",
 ["Dopecure - Stitches"] = "PRIEST",
 ["Dopemend - Lone Wolf"] = "PRIEST",
-["Mq - Celebras"] = "HUNTER",
-["Battitude - Zandalar Tribe"] = "ROGUE",
 ["Doperage - Lone Wolf"] = "WARRIOR",
-["Dopesnare - Stitches"] = "HUNTER",
+["Battitude - Zandalar Tribe"] = "ROGUE",
 ["Dopeclaw - Lone Wolf"] = "DRUID",
-["Dopedot - Lone Wolf"] = "WARLOCK",
+["Dopesnare - Stitches"] = "HUNTER",
 ["Vermin - Celebras"] = "WARRIOR",
+["Turbonac - Celebras"] = "Warlock",
+["Dopedot - Lone Wolf"] = "WARLOCK",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopesick - Stitches"] = "WARRIOR",
 ["Dopecoil - Lone Wolf"] = "SHAMAN",
@@ -46,6 +46,8 @@ RatingBusterDB = {
 ["WARLOCK"] = {
 },
 ["SHAMAN"] = {
+},
+["Warlock"] = {
 },
 ["DRUID"] = {
 },

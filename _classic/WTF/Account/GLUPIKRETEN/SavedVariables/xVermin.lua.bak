@@ -356,32 +356,44 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
+},
+["Ironspine"] = {
+"Rend",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
 "Flame Shock",
 },
-["Ironspine"] = {
-"Rend",
-},
 ["Ruuzlu"] = {
 "Charge Stun",
 "Impact",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Remote-Controlled Golem"] = {
+"Rend",
 },
 ["Sea Elemental"] = {
 "Frost Shock",
@@ -398,13 +410,13 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
-},
 ["Bound Elemental"] = {
 "Lightning Shield",
 "Rend",
+},
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -457,20 +469,8 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Wailing Highborne"] = {
 "Rend",

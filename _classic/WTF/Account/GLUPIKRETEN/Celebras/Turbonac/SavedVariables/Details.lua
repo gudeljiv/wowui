@@ -7,36 +7,37 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 460,
+["combatId"] = 468,
 ["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008439,
+["totalabsorbed"] = 0.002159,
 ["pets"] = {
-"Jubtog <Turbonac>",
+"Unknown <Turbonac>",
 },
 ["classe"] = "WARLOCK",
-["total_without_pet"] = 43.008439,
+["total_without_pet"] = 47.002159,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
-["total"] = 57.008439,
+["total"] = 71.002159,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
-["Timber Wolf"] = true,
+["Kobold Worker"] = true,
 },
 ["targets"] = {
-["Timber Wolf"] = 57,
+["Kobold Worker"] = 71,
 },
 ["colocacao"] = 1,
 ["aID"] = "5266-026E1779",
 ["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
+[128] = 71,
 },
-["end_time"] = 1725700870,
+["end_time"] = 1725711101,
 ["nome"] = "Turbonac",
 ["spells"] = {
 ["tipo"] = 2,
@@ -44,16 +45,16 @@ _detalhes_database = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
+["g_amt"] = 1,
+["n_max"] = 3,
 ["targets"] = {
-["Timber Wolf"] = 2,
+["Kobold Worker"] = 17,
 },
-["n_total"] = 2,
+["n_total"] = 14,
 ["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 2,
+["g_dmg"] = 3,
+["counter"] = 7,
+["total"] = 17,
 ["c_max"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
@@ -65,7 +66,7 @@ _detalhes_database = {
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
-["n_amt"] = 1,
+["n_amt"] = 6,
 ["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
@@ -75,185 +76,17 @@ _detalhes_database = {
 ["g_amt"] = 0,
 ["n_max"] = 10,
 ["targets"] = {
-["Timber Wolf"] = 20,
+["Kobold Worker"] = 30,
 },
-["n_total"] = 20,
+["n_total"] = 30,
 ["n_min"] = 10,
 ["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 20,
+["counter"] = 3,
+["total"] = 30,
 ["c_max"] = 0,
 ["id"] = 172,
 ["r_dmg"] = 0,
 ["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Timber Wolf"] = 21,
-},
-["n_total"] = 21,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 21,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 5.097321083690897,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 6.008439,
-["start_time"] = 1725700859,
-["delay"] = 0,
-["last_event"] = 1725700868,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.007051,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 14.007051,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 14.007051,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
-["damage_from"] = {
-},
-["targets"] = {
-["Timber Wolf"] = 14,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700870,
-["ownerName"] = "Turbonac",
-["nome"] = "Jubtog <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 7,
-["targets"] = {
-["Timber Wolf"] = 14,
-},
-["n_total"] = 14,
-["n_min"] = 7,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 14,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 1.252418723175944,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.007051,
-["start_time"] = 1725700866,
-["delay"] = 0,
-["last_event"] = 1725700868,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.00854,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 6.00854,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 6.00854,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-69-00005C1689",
-["aID"] = "69",
-["damage_from"] = {
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 6,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700870,
-["nome"] = "Timber Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Turbonac"] = 6,
-},
-["n_total"] = 6,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 6,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -269,30 +102,173 @@ _detalhes_database = {
 },
 ["friendlyfire"] = {
 },
+["last_dps"] = 6.613464884480092,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 12.002159,
+["start_time"] = 1725711091,
+["delay"] = 0,
+["last_event"] = 1725711100,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.008579,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 24.008579,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 24.008579,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 24,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 24,
+},
+["end_time"] = 1725711101,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Kobold Worker"] = 24,
+},
+["n_total"] = 24,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 24,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 2.236268535760527,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.008579,
+["start_time"] = 1725711093,
+["delay"] = 0,
+["last_event"] = 1725711098,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.005592,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 12.005592,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 12.005592,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C3A3D",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 12,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711101,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 12,
+},
+["n_total"] = 12,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 12,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
 ["last_dps"] = 0,
 ["custom"] = 0,
 ["tipo"] = 1,
-["damage_taken"] = 57.00854,
-["start_time"] = 1725700863,
+["damage_taken"] = 71.00559200000001,
+["start_time"] = 1725711090,
 ["delay"] = 0,
-["last_event"] = 1725700867,
+["last_event"] = 1725711098,
 },
 },
 },
 {
-["combatId"] = 460,
+["combatId"] = 468,
 ["tipo"] = 3,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 460,
+["combatId"] = 468,
 ["tipo"] = 7,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 460,
+["combatId"] = 468,
 ["tipo"] = 9,
 ["_ActorTable"] = {
 {
@@ -300,23 +276,12 @@ _detalhes_database = {
 ["debuff_uptime_spells"] = {
 ["tipo"] = 9,
 ["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
 [172] = {
 ["activedamt"] = 0,
 ["id"] = 172,
 ["targets"] = {
 },
-["uptime"] = 7,
+["uptime"] = 10,
 ["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
@@ -328,7 +293,7 @@ _detalhes_database = {
 ["debuff_uptime_targets"] = {
 },
 ["pets"] = {
-"Jubtog <Turbonac>",
+"Unknown <Turbonac>",
 },
 ["buff_uptime_targets"] = {
 },
@@ -351,10 +316,10 @@ _detalhes_database = {
 },
 },
 ["grupo"] = true,
-["debuff_uptime"] = 16,
+["debuff_uptime"] = 10,
 ["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
-["last_event"] = 1725700870,
+["last_event"] = 1725711101,
 ["tipo"] = 4,
 },
 {
@@ -362,18 +327,18 @@ _detalhes_database = {
 ["pets"] = {
 },
 ["classe"] = "PET",
-["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
-["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
 ["grupo"] = true,
 ["ownerName"] = "Turbonac",
-["nome"] = "Jubtog <Turbonac>",
+["nome"] = "Unknown <Turbonac>",
 ["last_event"] = 0,
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 460,
+["combatId"] = 468,
 ["tipo"] = 2,
 ["_ActorTable"] = {
 },
@@ -381,7 +346,7 @@ _detalhes_database = {
 ["raid_roster"] = {
 ["Turbonac"] = "Player-5266-026E1779",
 },
-["tempo_start"] = 1725700859,
+["tempo_start"] = 1725711090,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
@@ -394,7 +359,7 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-63,
+83,
 0,
 {
 0,
@@ -410,6 +375,4065 @@ _detalhes_database = {
 ["cooldowns_defensive"] = 0,
 ["interrupt"] = 0,
 ["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 3,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:11:42",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032953.237,
+["CombatEndedAt"] = 2032953.237,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:11:31",
+["end_time"] = 2032953.237,
+["mapId"] = 0,
+["combat_id"] = 468,
+["boss_hp"] = 1,
+["frags"] = {
+["Kobold Worker"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 520,
+["totals_grupo"] = {
+71,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 71.002159,
+["Unknown <Turbonac>"] = 24.008579,
+},
+},
+},
+["start_time"] = 2032942.501,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 467,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007763,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 49.007763,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 72.007763,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 72,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 27,
+},
+["end_time"] = 1725711084,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 7,
+},
+["n_total"] = 7,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 7,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 22,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.459253946870402,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 10.007763,
+["start_time"] = 1725711072,
+["delay"] = 0,
+["last_event"] = 1725711083,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.004861,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 23.004861,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 23.004861,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 23,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 7,
+},
+["end_time"] = 1725711084,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Kobold Worker"] = 23,
+},
+["n_total"] = 23,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 23,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 2.063586383199475,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.004861,
+["start_time"] = 1725711079,
+["delay"] = 0,
+["last_event"] = 1725711083,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003633,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 10.003633,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 10.003633,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-0000DC3A3D",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 10,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711084,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 10,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 72.00363300000001,
+["start_time"] = 1725711075,
+["delay"] = 0,
+["last_event"] = 1725711083,
+},
+},
+},
+{
+["combatId"] = 467,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 467,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 467,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 6,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 12,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 12,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 17,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725711084,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 467,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032940.529,
+["tempo_start"] = 1725711072,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+82,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 2,
+},
+["Turbonac"] = {
+["Corruption"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:11:24",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 11.1480000000447,
+["CombatEndedAt"] = 2032935.557,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:11:13",
+["end_time"] = 2032935.557,
+["mapId"] = 0,
+["combat_id"] = 467,
+["playing_solo"] = true,
+["frags"] = {
+["Kobold Worker"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 519,
+["totals_grupo"] = {
+72,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 72.007763,
+["Unknown <Turbonac>"] = 23.004861,
+},
+},
+},
+["start_time"] = 2032924.409,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 466,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007167,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 57.007167,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 73.00716700000001,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 73,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 14,
+},
+["end_time"] = 1725711067,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 15,
+},
+["n_total"] = 10,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 15,
+["c_max"] = 5,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 5,
+["successful_casted"] = 0,
+["c_total"] = 5,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 22,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.296435273840097,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 8.007166999999999,
+["start_time"] = 1725711056,
+["delay"] = 0,
+["last_event"] = 1725711067,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.00765,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 16.00765,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 16.00765,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 16,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711067,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 8,
+["targets"] = {
+["Kobold Worker"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 1.380564898666543,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.00765,
+["start_time"] = 1725711063,
+["delay"] = 0,
+["last_event"] = 1725711066,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002701,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 8.002701,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 8.002701,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005B1227",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 8,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711067,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 8,
+},
+["n_total"] = 8,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 8,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 73.002701,
+["start_time"] = 1725711060,
+["delay"] = 0,
+["last_event"] = 1725711066,
+},
+},
+},
+{
+["combatId"] = 466,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 466,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 466,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 8,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 11,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 19,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725711067,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 466,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["tempo_start"] = 1725711056,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+81,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 1,
+},
+["Turbonac"] = {
+["Corruption"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:11:08",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032919.338,
+["CombatEndedAt"] = 2032919.338,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:10:56",
+["end_time"] = 2032919.338,
+["mapId"] = 0,
+["combat_id"] = 466,
+["boss_hp"] = 1,
+["frags"] = {
+["Kobold Worker"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 518,
+["totals_grupo"] = {
+73,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 73.00716700000001,
+["Unknown <Turbonac>"] = 16.00765,
+},
+},
+},
+["start_time"] = 2032907.743,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 465,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.002367,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 53.002367,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 74.00236699999999,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 74,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 74,
+},
+["end_time"] = 1725711050,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 5,
+["c_max"] = 0,
+["a_amt"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["PARRY"] = 1,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 18,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.743563792004243,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 10.002367,
+["start_time"] = 1725711043,
+["delay"] = 0,
+["last_event"] = 1725711050,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.003169,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 21.003169,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 21.003169,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 21,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 21,
+},
+["end_time"] = 1725711050,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 8,
+["targets"] = {
+["Kobold Worker"] = 21,
+},
+["n_total"] = 8,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 21,
+["c_max"] = 13,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 13,
+["successful_casted"] = 0,
+["c_total"] = 13,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 2.765394206725117,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.003169,
+["start_time"] = 1725711047,
+["delay"] = 0,
+["last_event"] = 1725711050,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.00593,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 10.00593,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 10.00593,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C21A8",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 10,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711050,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 74.00593,
+["start_time"] = 1725711044,
+["delay"] = 0,
+["last_event"] = 1725711050,
+},
+},
+},
+{
+["combatId"] = 465,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 465,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 465,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 7,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 7,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 7,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 7,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 14,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725711050,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 465,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032907.743,
+["tempo_start"] = 1725711043,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+84,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:10:51",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032902.36,
+["CombatEndedAt"] = 2032902.36,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:10:43",
+["end_time"] = 2032902.36,
+["mapId"] = 0,
+["combat_id"] = 465,
+["boss_hp"] = 1,
+["frags"] = {
+["Kobold Worker"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 517,
+["totals_grupo"] = {
+74,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 74.00236699999999,
+["Unknown <Turbonac>"] = 21.003169,
+},
+},
+},
+["start_time"] = 2032894.765,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 464,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007766,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 57.007766,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 78.007766,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 78,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 78,
+},
+["end_time"] = 1725711034,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 9,
+},
+["n_total"] = 9,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 9,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 18,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 9.180624455466855,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 6.007766,
+["start_time"] = 1725711025,
+["delay"] = 0,
+["last_event"] = 1725711033,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.007076,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 21.007076,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 21.007076,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 21,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 21,
+},
+["end_time"] = 1725711034,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Kobold Worker"] = 21,
+},
+["n_total"] = 7,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 21,
+["c_max"] = 14,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 14,
+["successful_casted"] = 0,
+["c_total"] = 14,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 2.472293279921012,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.007076,
+["start_time"] = 1725711030,
+["delay"] = 0,
+["last_event"] = 1725711033,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.003632,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.003632,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.003632,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C3155",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 6,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711034,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 6,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 78.003632,
+["start_time"] = 1725711027,
+["delay"] = 0,
+["last_event"] = 1725711031,
+},
+},
+},
+{
+["combatId"] = 464,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 464,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 464,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 8,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 8,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 9,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 9,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 16,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725711034,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 464,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032892.751,
+["tempo_start"] = 1725711025,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+84,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 1,
+},
+["Turbonac"] = {
+["Immolate"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:10:34",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032885.356,
+["CombatEndedAt"] = 2032885.356,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:10:25",
+["end_time"] = 2032885.356,
+["mapId"] = 0,
+["combat_id"] = 464,
+["boss_hp"] = 1,
+["frags"] = {
+["Kobold Worker"] = 1,
+},
+["playing_solo"] = true,
+["combat_counter"] = 516,
+["totals_grupo"] = {
+78,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 78.007766,
+["Unknown <Turbonac>"] = 21.007076,
+},
+},
+},
+["start_time"] = 2032876.859,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 463,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.001412,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 150.001412,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 220.001412,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 220,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 125,
+},
+["end_time"] = 1725711014,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 14,
+},
+["n_total"] = 12,
+["n_min"] = 2,
+["g_dmg"] = 2,
+["counter"] = 6,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[686] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Kobold Worker"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 686,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 72,
+},
+["n_total"] = 72,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 14,
+["total"] = 72,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 14,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 50,
+},
+["n_total"] = 50,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 50,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.073695875462616,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 33.001412,
+["start_time"] = 1725710978,
+["delay"] = 0,
+["last_event"] = 1725711013,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.007683,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 70.007683,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 70.007683,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 70,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 33,
+},
+["end_time"] = 1725711014,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Kobold Worker"] = 70,
+},
+["n_total"] = 70,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 9,
+["total"] = 70,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 9,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 1.932739302090453,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.007683,
+["start_time"] = 1725710986,
+["delay"] = 0,
+["last_event"] = 1725711013,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.008697,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 33.008697,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 33.008697,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C3C84",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 33,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725711014,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 12,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 12,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 220.008697,
+["start_time"] = 1725710983,
+["delay"] = 0,
+["last_event"] = 1725711011,
+},
+},
+},
+{
+["combatId"] = 463,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 463,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 463,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 35,
+["appliedamt"] = 3,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 18,
+["appliedamt"] = 3,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 36,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 36,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 53,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725711014,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 463,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032873.872,
+["tempo_start"] = 1725710978,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+253,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 8,
+},
+["Turbonac"] = {
+["Corruption"] = 3,
+["Immolate"] = 2,
+["Shadow Bolt"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:10:15",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 36.22199999983423,
+["CombatEndedAt"] = 2032865.923,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:09:38",
+["end_time"] = 2032865.923,
+["mapId"] = 0,
+["combat_id"] = 463,
+["playing_solo"] = true,
+["frags"] = {
+["Kobold Worker"] = 3,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 515,
+["totals_grupo"] = {
+220,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 220.001412,
+["Unknown <Turbonac>"] = 70.007683,
+},
+},
+},
+["start_time"] = 2032829.701,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 462,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008672,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 62.008672,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 78.008672,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 78,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 59,
+},
+["end_time"] = 1725710971,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 5,
+},
+["n_total"] = 3,
+["n_min"] = 3,
+["g_dmg"] = 2,
+["counter"] = 3,
+["total"] = 5,
+["c_max"] = 0,
+["a_amt"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["PARRY"] = 1,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[686] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Kobold Worker"] = 15,
+},
+["n_total"] = 15,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 15,
+["c_max"] = 0,
+["id"] = 686,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 22,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.032877028523251,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 8.008672,
+["start_time"] = 1725710960,
+["delay"] = 0,
+["last_event"] = 1725710971,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.008598,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 16.008598,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 16.008598,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 16,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 9,
+},
+["end_time"] = 1725710971,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Kobold Worker"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 1.443256220706632,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.008598,
+["start_time"] = 1725710968,
+["delay"] = 0,
+["last_event"] = 1725710971,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.007491,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 21.007491,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 21.007491,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C382F",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Kqmen"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 8,
+["Kqmen"] = 13,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725710971,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 8,
+["Kqmen"] = 13,
+},
+["n_total"] = 21,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 9,
+["total"] = 21,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 8,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 137.007491,
+["start_time"] = 1725710962,
+["delay"] = 0,
+["last_event"] = 1725710970,
+},
+},
+},
+{
+["combatId"] = 462,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 462,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 462,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 9,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 10,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 10,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 20,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725710971,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 462,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032811.915,
+["tempo_start"] = 1725710960,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+158,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 1,
+},
+["Turbonac"] = {
+["Corruption"] = 1,
+["Shadow Bolt"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:09:32",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 11.09199999994598,
+["CombatEndedAt"] = 2032823.007,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:09:21",
+["end_time"] = 2032823.007,
+["mapId"] = 0,
+["combat_id"] = 462,
+["playing_solo"] = true,
+["frags"] = {
+["Kobold Worker"] = 2,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 514,
+["totals_grupo"] = {
+78,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 78.008672,
+["Unknown <Turbonac>"] = 16.008598,
+},
+},
+},
+["start_time"] = 2032811.915,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["combatId"] = 461,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007769,
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 58.007769,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 73.007769,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Kobold Worker"] = true,
+},
+["targets"] = {
+["Kobold Worker"] = 73,
+},
+["colocacao"] = 1,
+["aID"] = "5266-026E1779",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 73,
+},
+["end_time"] = 1725710954,
+["nome"] = "Turbonac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Kobold Worker"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 6,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 10,
+["targets"] = {
+["Kobold Worker"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 22,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 5.625502311653504,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 11.007769,
+["start_time"] = 1725710941,
+["delay"] = 0,
+["last_event"] = 1725710952,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.005763,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 15.005763,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 15.005763,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["colocacao"] = 2,
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Kobold Worker"] = 15,
+},
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 15,
+},
+["end_time"] = 1725710954,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 8,
+["targets"] = {
+["Kobold Worker"] = 15,
+},
+["n_total"] = 15,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 15,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 1.156246185863105,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 0.005763,
+["start_time"] = 1725710947,
+["delay"] = 0,
+["last_event"] = 1725710950,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002853,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 18.002853,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 18.002853,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-257-00005C37D2",
+["aID"] = "257",
+["damage_from"] = {
+["Jubtog <Turbonac>"] = true,
+["Kqmen"] = true,
+["Turbonac"] = true,
+["Unknown <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 11,
+["Kqmen"] = 7,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725710954,
+["nome"] = "Kobold Worker",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Turbonac"] = 11,
+["Kqmen"] = 7,
+},
+["n_total"] = 18,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 8,
+["total"] = 18,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 7,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 130.002853,
+["start_time"] = 1725710944,
+["delay"] = 0,
+["last_event"] = 1725710951,
+},
+},
+},
+{
+["combatId"] = 461,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 461,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 461,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["activedamt"] = 0,
+["id"] = 348,
+["targets"] = {
+},
+["uptime"] = 11,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["activedamt"] = 0,
+["id"] = 172,
+["targets"] = {
+},
+["uptime"] = 9,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["serial"] = "Player-5266-026E1779",
+["debuff_uptime_targets"] = {
+},
+["pets"] = {
+"Unknown <Turbonac>",
+},
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime"] = 13,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 13,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["grupo"] = true,
+["debuff_uptime"] = 20,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["last_event"] = 1725710954,
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["classe"] = "PET",
+["aID"] = "Pet-0-5251-0-78-416-0200A76C11",
+["serial"] = "Pet-0-5251-0-78-416-0200A76C11",
+["grupo"] = true,
+["ownerName"] = "Turbonac",
+["nome"] = "Unknown <Turbonac>",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 461,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["tempo_start"] = 1725710941,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+148,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Jubtog"] = {
+["Firebolt"] = 2,
+},
+["Turbonac"] = {
+["Corruption"] = 1,
+},
+["Unknown <Turbonac>"] = {
+["Firebolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "14:09:15",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kobold Worker",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032805.96,
+["CombatEndedAt"] = 2032805.96,
+["aura_timeline"] = {
+},
+["data_inicio"] = "14:09:02",
+["end_time"] = 2032805.96,
+["mapId"] = 0,
+["combat_id"] = 461,
+["boss_hp"] = 1,
+["frags"] = {
+["Kobold Worker"] = 2,
+},
+["playing_solo"] = true,
+["combat_counter"] = 513,
+["totals_grupo"] = {
+73,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Turbonac"] = 73.007769,
+["Unknown <Turbonac>"] = 15.005763,
+},
+},
+},
+["start_time"] = 2032792.982,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 460,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+"Jubtog <Turbonac>",
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 43.008439,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 57.008439,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-5266-026E1779",
+["damage_from"] = {
+["Timber Wolf"] = true,
+},
+["targets"] = {
+["Timber Wolf"] = 57,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725700870,
+["totalabsorbed"] = 0.008439,
+["aID"] = "5266-026E1779",
+["nome"] = "Turbonac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Timber Wolf"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 2,
+["r_amt"] = 0,
+},
+[172] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Timber Wolf"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 172,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+[348] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Timber Wolf"] = 21,
+},
+["n_total"] = 21,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 21,
+["c_max"] = 0,
+["id"] = 348,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 9,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700868,
+["damage_taken"] = 6.008439,
+["start_time"] = 1725700859,
+["delay"] = 0,
+["last_dps"] = 5.097321083690898,
+},
+{
+["flag_original"] = 4369,
+["totalabsorbed"] = 0.007051,
+["pets"] = {
+},
+["classe"] = "PET",
+["total_without_pet"] = 14.007051,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 14.007051,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["damage_from"] = {
+},
+["targets"] = {
+["Timber Wolf"] = 14,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1725700870,
+["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
+["ownerName"] = "Turbonac",
+["nome"] = "Jubtog <Turbonac>",
+["spells"] = {
+["_ActorTable"] = {
+[3110] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Timber Wolf"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 3110,
+["r_dmg"] = 0,
+["spellschool"] = 4,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 7,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700868,
+["damage_taken"] = 0.007051,
+["start_time"] = 1725700866,
+["delay"] = 0,
+["last_dps"] = 1.252418723175944,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 6.00854,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 6.00854,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5251-0-78-69-00005C1689",
+["damage_from"] = {
+["Turbonac"] = true,
+["Jubtog <Turbonac>"] = true,
+},
+["targets"] = {
+["Turbonac"] = 6,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "69",
+["fight_component"] = true,
+["end_time"] = 1725700870,
+["totalabsorbed"] = 0.00854,
+["nome"] = "Timber Wolf",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Turbonac"] = 6,
+},
+["n_total"] = 6,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 6,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 2,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700867,
+["damage_taken"] = 57.00854,
+["start_time"] = 1725700863,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 460,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 460,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 460,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[348] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 9,
+["id"] = 348,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[172] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 7,
+["id"] = 172,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+"Jubtog <Turbonac>",
+},
+["buff_uptime"] = 11,
+["classe"] = "WARLOCK",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[687] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 11,
+["id"] = 687,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 16,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["nome"] = "Turbonac",
+["last_event"] = 1725700870,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
+["tipo"] = 4,
+},
+{
+["flag_original"] = 4369,
+["pets"] = {
+},
+["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
+["ownerName"] = "Turbonac",
+["nome"] = "Jubtog <Turbonac>",
+["grupo"] = true,
+["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["last_event"] = 0,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 460,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
+},
+["CombatStartedAt"] = 2032792.982,
+["tempo_start"] = 1725700859,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+63,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -449,10 +4473,10 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 460,
 ["boss_hp"] = 1,
-["frags"] = {
-["Timber Wolf"] = 1,
+["spells_cast_timeline"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 ["combat_counter"] = 512,
 ["totals_grupo"] = {
 57,
@@ -467,10 +4491,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -480,13 +4504,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -498,17 +4522,17 @@ _detalhes_database = {
 ["start_time"] = 2858.696,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Timber Wolf"] = 1,
 },
 },
 {
 {
-["combatId"] = 459,
 ["tipo"] = 2,
+["combatId"] = 459,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003551,
 ["pets"] = {
 "Jubtog <Turbonac>",
 },
@@ -517,7 +4541,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 143.003551,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -526,22 +4552,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Young Wolf"] = 143,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700858,
+["totalabsorbed"] = 0.003551,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Young Wolf"] = 31,
 },
@@ -562,14 +4586,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 [172] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Young Wolf"] = 80,
 },
@@ -590,20 +4614,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 7.523730783395568,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700857,
 ["damage_taken"] = 8.003551,
 ["start_time"] = 1725700839,
 ["delay"] = 0,
-["last_event"] = 1725700857,
+["last_dps"] = 7.523730783395568,
 },
 {
 ["flag_original"] = 4369,
@@ -615,31 +4640,30 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 32.004699,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Young Wolf"] = 32,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700858,
+["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Jubtog <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Young Wolf"] = 32,
 },
@@ -660,24 +4684,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 1.683837480928074,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700856,
 ["damage_taken"] = 0.004699,
 ["start_time"] = 1725700845,
 ["delay"] = 0,
-["last_event"] = 1725700856,
+["last_dps"] = 1.683837480928074,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.006083,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -685,10 +4709,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 8.006083,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-299-00005C0C35",
-["aID"] = "299",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Jubtog <Turbonac>"] = true,
@@ -696,20 +4720,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 8,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "299",
+["fight_component"] = true,
 ["end_time"] = 1725700858,
+["totalabsorbed"] = 0.006083,
 ["nome"] = "Young Wolf",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 8,
 },
@@ -718,12 +4743,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 10,
 ["DODGE"] = 1,
-["total"] = 8,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 2,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -732,125 +4757,123 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 2,
+["total"] = 8,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700857,
 ["damage_taken"] = 143.006083,
 ["start_time"] = 1725700844,
 ["delay"] = 0,
-["last_event"] = 1725700857,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 459,
 ["tipo"] = 3,
+["combatId"] = 459,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 459,
 ["tipo"] = 7,
+["combatId"] = 459,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 459,
 ["tipo"] = 9,
+["combatId"] = 459,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 13,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [172] = {
-["activedamt"] = 0,
-["id"] = 172,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 16,
-["appliedamt"] = 3,
+["id"] = 172,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Jubtog <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 19,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 29,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 29,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700858,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
-["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Jubtog <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 459,
 ["tipo"] = 2,
+["combatId"] = 459,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 2858.696,
 ["tempo_start"] = 1725700839,
 ["last_events_tables"] = {
@@ -877,10 +4900,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -921,11 +4944,29 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 459,
 ["playing_solo"] = true,
-["frags"] = {
-["Young Wolf"] = 3,
+["spells_cast_timeline"] = {
 },
-["boss_hp"] = 1,
 ["combat_counter"] = 511,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Turbonac"] = 143.003551,
+["Jubtog <Turbonac>"] = 32.004699,
+},
+},
+},
 ["totals_grupo"] = {
 143,
 0,
@@ -939,48 +4980,31 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 143.003551,
-["Jubtog <Turbonac>"] = 32.004699,
-},
-},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
 },
 ["start_time"] = 2838.735,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Young Wolf"] = 3,
 },
 },
 {
 {
-["combatId"] = 458,
 ["tipo"] = 2,
+["combatId"] = 458,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005696,
 ["pets"] = {
 "Jubtog <Turbonac>",
 },
@@ -989,7 +5013,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 174.005696,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -998,22 +5024,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Timber Wolf"] = 174,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700798,
+["totalabsorbed"] = 0.005696,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Timber Wolf"] = 13,
 },
@@ -1034,14 +5058,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Timber Wolf"] = 71,
 },
@@ -1062,14 +5086,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 15,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Timber Wolf"] = 46,
 },
@@ -1090,20 +5114,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 5.968911086717884,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700797,
 ["damage_taken"] = 30.005696,
 ["start_time"] = 1725700769,
 ["delay"] = 0,
-["last_event"] = 1725700797,
+["last_dps"] = 5.968911086717884,
 },
 {
 ["flag_original"] = 4369,
@@ -1115,31 +5140,30 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 44.004481,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Timber Wolf"] = 44,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700798,
+["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Jubtog <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Timber Wolf"] = 44,
 },
@@ -1149,36 +5173,36 @@ _detalhes_database = {
 ["counter"] = 6,
 ["total"] = 44,
 ["c_max"] = 13,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 3110,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 13,
 ["successful_casted"] = 0,
 ["c_total"] = 13,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 1.509484117727769,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700797,
 ["damage_taken"] = 0.004481,
 ["start_time"] = 1725700787,
 ["delay"] = 1725700785,
-["last_event"] = 1725700797,
+["last_dps"] = 1.509484117727769,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.003882,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1186,10 +5210,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 30.003882,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-69-00005C152C",
-["aID"] = "69",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Jubtog <Turbonac>"] = true,
@@ -1197,20 +5221,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 30,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "69",
+["fight_component"] = true,
 ["end_time"] = 1725700798,
+["totalabsorbed"] = 0.003882,
 ["nome"] = "Timber Wolf",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 30,
 },
@@ -1232,114 +5257,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 15,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700794,
 ["damage_taken"] = 174.003882,
 ["start_time"] = 1725700774,
 ["delay"] = 0,
-["last_event"] = 1725700794,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 458,
 ["tipo"] = 3,
+["combatId"] = 458,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 458,
 ["tipo"] = 7,
+["combatId"] = 458,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 458,
 ["tipo"] = 9,
+["combatId"] = 458,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Jubtog <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 29,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 29,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700798,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
-["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Jubtog <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 458,
 ["tipo"] = 2,
+["combatId"] = 458,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 2769.177,
 ["tempo_start"] = 1725700769,
 ["last_events_tables"] = {
@@ -1366,10 +5389,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1410,11 +5433,29 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 458,
 ["playing_solo"] = true,
-["frags"] = {
-["Timber Wolf"] = 3,
+["spells_cast_timeline"] = {
 },
-["boss_hp"] = 1,
 ["combat_counter"] = 510,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Turbonac"] = 174.005696,
+["Jubtog <Turbonac>"] = 44.004481,
+},
+},
+},
 ["totals_grupo"] = {
 174,
 0,
@@ -1428,48 +5469,31 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 174.005696,
-["Jubtog <Turbonac>"] = 44.004481,
-},
-},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
 },
 ["start_time"] = 2769.177,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Timber Wolf"] = 3,
 },
 },
 {
 {
-["combatId"] = 457,
 ["tipo"] = 2,
+["combatId"] = 457,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006848,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -1478,7 +5502,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 304.006848,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -1489,22 +5515,20 @@ _detalhes_database = {
 ["Kobold Vermin"] = 150,
 ["Kobold Worker"] = 154,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700681,
+["totalabsorbed"] = 0.006848,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 18,
 ["Kobold Vermin"] = 10,
@@ -1526,14 +5550,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 11,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 17,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 32,
 ["Kobold Vermin"] = 66,
@@ -1555,14 +5579,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 23,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 17,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 51,
 ["Kobold Worker"] = 31,
@@ -1584,20 +5608,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 15,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 5.347619975725151,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700679,
 ["damage_taken"] = 34.006848,
 ["start_time"] = 1725700624,
 ["delay"] = 0,
-["last_event"] = 1725700679,
+["last_dps"] = 5.347619975725151,
 },
 {
 ["flag_original"] = 4369,
@@ -1609,11 +5634,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 96.008407,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 ["Kobold Worker"] = true,
 },
@@ -1621,21 +5646,20 @@ _detalhes_database = {
 ["Kobold Vermin"] = 23,
 ["Kobold Worker"] = 73,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700681,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 23,
 ["Kobold Worker"] = 73,
@@ -1657,24 +5681,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 11,
 ["n_amt"] = 11,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 1.68883194075533,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700671,
 ["damage_taken"] = 25.008407,
 ["start_time"] = 1725700646,
 ["delay"] = 1725700671,
-["last_event"] = 1725700671,
+["last_dps"] = 1.68883194075533,
 },
 {
 ["flag_original"] = 2600,
-["totalabsorbed"] = 0.006611,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1682,10 +5706,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 32.006611,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-257-00005C0DAB",
-["aID"] = "257",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -1695,20 +5719,21 @@ _detalhes_database = {
 ["Turbonac"] = 7,
 ["Jubtog <Turbonac>"] = 25,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "257",
+["fight_component"] = true,
 ["end_time"] = 1725700681,
+["totalabsorbed"] = 0.006611,
 ["nome"] = "Kobold Worker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Jubtog"] = 0,
 ["Turbonac"] = 7,
@@ -1719,12 +5744,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 15,
 ["a_amt"] = 0,
-["total"] = 32,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 3,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1733,24 +5758,23 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 11,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 4,
+["total"] = 32,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700678,
 ["damage_taken"] = 154.006611,
 ["start_time"] = 1725700652,
 ["delay"] = 1725700635,
-["last_event"] = 1725700678,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.002181,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1758,10 +5782,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 27.002181,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-6-00005C0C10",
-["aID"] = "6",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Jubtog <Turbonac>"] = true,
@@ -1769,20 +5793,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 27,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "6",
+["fight_component"] = true,
 ["end_time"] = 1725700681,
+["totalabsorbed"] = 0.002181,
 ["nome"] = "Kobold Vermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 27,
 },
@@ -1804,43 +5829,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 20,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700660,
 ["damage_taken"] = 150.002181,
 ["start_time"] = 1725700651,
 ["delay"] = 1725700660,
-["last_event"] = 1725700660,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 457,
 ["tipo"] = 3,
+["combatId"] = 457,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 457,
 ["tipo"] = 7,
+["combatId"] = 457,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 457,
 ["tipo"] = 9,
+["combatId"] = 457,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
 ["activedamt"] = -1,
@@ -1855,64 +5879,63 @@ _detalhes_database = {
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 57,
 ["classe"] = "WARLOCK",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 57,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 57,
 ["debuff_uptime"] = 25,
-["aID"] = "5266-026E1779",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700681,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 457,
 ["tipo"] = 2,
+["combatId"] = 457,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 2623.705,
 ["tempo_start"] = 1725700624,
 ["last_events_tables"] = {
@@ -1939,10 +5962,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1983,13 +6006,29 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 457,
 ["playing_solo"] = true,
-["frags"] = {
-["Kobold Worker"] = 2,
-["Jubtog"] = 1,
-["Kobold Vermin"] = 3,
+["spells_cast_timeline"] = {
 },
-["boss_hp"] = 1,
 ["combat_counter"] = 509,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Turbonac"] = 304.006848,
+["Imp <Turbonac>"] = 96.008407,
+},
+},
+},
 ["totals_grupo"] = {
 304,
 0,
@@ -2003,48 +6042,33 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 304.006848,
-["Imp <Turbonac>"] = 96.008407,
-},
-},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
 },
 ["start_time"] = 2623.705,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Worker"] = 2,
+["Jubtog"] = 1,
+["Kobold Vermin"] = 3,
 },
 },
 {
 {
-["combatId"] = 456,
 ["tipo"] = 2,
+["combatId"] = 456,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002747,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -2053,7 +6077,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 133.002747,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -2064,23 +6090,21 @@ _detalhes_database = {
 ["Kobold Vermin"] = 60,
 ["Kobold Worker"] = 73,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 60,
 },
 ["end_time"] = 1725700575,
+["totalabsorbed"] = 0.002747,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 11,
 ["Kobold Vermin"] = 5,
@@ -2102,14 +6126,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 15,
 },
@@ -2130,14 +6154,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 15,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 9,
 ["Kobold Worker"] = 46,
@@ -2159,20 +6183,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 4.503529847966696,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700574,
 ["damage_taken"] = 30.002747,
 ["start_time"] = 1725700546,
 ["delay"] = 0,
-["last_event"] = 1725700574,
+["last_dps"] = 4.503529847966696,
 },
 {
 ["flag_original"] = 4369,
@@ -2184,33 +6209,32 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 47.005884,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Worker"] = 16,
 ["Kobold Vermin"] = 31,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 31,
 },
 ["end_time"] = 1725700575,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 16,
 ["Kobold Vermin"] = 31,
@@ -2221,36 +6245,36 @@ _detalhes_database = {
 ["counter"] = 7,
 ["total"] = 47,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 3110,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 1.591639318728208,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700574,
 ["damage_taken"] = 0.005884,
 ["start_time"] = 1725700553,
 ["delay"] = 0,
-["last_event"] = 1725700574,
+["last_dps"] = 1.591639318728208,
 },
 {
 ["flag_original"] = 2600,
-["totalabsorbed"] = 0.004013,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2258,10 +6282,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 24.004013,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-257-00005C0D91",
-["aID"] = "257",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Jubtog <Turbonac>"] = true,
@@ -2269,20 +6293,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 24,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "257",
+["fight_component"] = true,
 ["end_time"] = 1725700575,
+["totalabsorbed"] = 0.004013,
 ["nome"] = "Kobold Worker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 24,
 },
@@ -2291,12 +6316,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 12,
 ["MISS"] = 1,
-["total"] = 24,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 3,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -2305,24 +6330,23 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 3,
+["total"] = 24,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700573,
 ["damage_taken"] = 73.004013,
 ["start_time"] = 1725700553,
 ["delay"] = 0,
-["last_event"] = 1725700573,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.002366,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2330,10 +6354,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 6.002366,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-6-00005BF69D",
-["aID"] = "6",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -2342,20 +6366,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 6,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "6",
+["fight_component"] = true,
 ["end_time"] = 1725700575,
+["totalabsorbed"] = 0.002366,
 ["nome"] = "Kobold Vermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 6,
 },
@@ -2376,114 +6401,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700559,
 ["damage_taken"] = 60.002366,
 ["start_time"] = 1725700570,
 ["delay"] = 1725700559,
-["last_event"] = 1725700559,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 456,
 ["tipo"] = 3,
+["combatId"] = 456,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 456,
 ["tipo"] = 7,
+["combatId"] = 456,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 456,
 ["tipo"] = 9,
+["combatId"] = 456,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = -1,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = -1,
 ["uptime"] = 14,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 29,
 ["classe"] = "WARLOCK",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 29,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 29,
 ["debuff_uptime"] = 14,
-["aID"] = "5266-026E1779",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700575,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 456,
 ["tipo"] = 2,
+["combatId"] = 456,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 2545.461,
 ["tempo_start"] = 1725700546,
 ["last_events_tables"] = {
@@ -2510,10 +6533,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2554,12 +6577,29 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 456,
 ["playing_solo"] = true,
-["frags"] = {
-["Kobold Worker"] = 1,
-["Kobold Vermin"] = 1,
+["spells_cast_timeline"] = {
 },
-["boss_hp"] = 1,
 ["combat_counter"] = 508,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Turbonac"] = 133.002747,
+["Imp <Turbonac>"] = 47.005884,
+},
+},
+},
 ["totals_grupo"] = {
 133,
 0,
@@ -2573,48 +6613,32 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 133.002747,
-["Imp <Turbonac>"] = 47.005884,
-},
-},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
 },
 ["start_time"] = 2545.461,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Worker"] = 1,
+["Kobold Vermin"] = 1,
 },
 },
 {
 {
-["combatId"] = 455,
 ["tipo"] = 2,
+["combatId"] = 455,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002714,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -2623,7 +6647,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 133.002714,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -2634,23 +6660,21 @@ _detalhes_database = {
 ["Kobold Vermin"] = 60,
 ["Kobold Worker"] = 73,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 60,
 },
 ["end_time"] = 1725700543,
+["totalabsorbed"] = 0.002714,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 20,
 },
@@ -2671,14 +6695,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 16,
 },
@@ -2699,14 +6723,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 29,
 ["Kobold Worker"] = 29,
@@ -2728,20 +6752,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 12,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 7.150683548386957,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700543,
 ["damage_taken"] = 28.002714,
 ["start_time"] = 1725700524,
 ["delay"] = 0,
-["last_event"] = 1725700543,
+["last_dps"] = 7.150683548386957,
 },
 {
 ["flag_original"] = 4369,
@@ -2753,33 +6778,32 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 39.003143,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Vermin"] = 31,
 ["Kobold Worker"] = 8,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 31,
 },
 ["end_time"] = 1725700543,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 31,
 ["Kobold Worker"] = 8,
@@ -2801,24 +6825,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 2.09694317204297,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700543,
 ["damage_taken"] = 0.003143,
 ["start_time"] = 1725700536,
 ["delay"] = 1725700530,
-["last_event"] = 1725700543,
+["last_dps"] = 2.09694317204297,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.005898,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2826,10 +6850,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 15.005898,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-257-00005C1522",
-["aID"] = "257",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Imp <Turbonac>"] = true,
@@ -2837,20 +6861,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 15,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "257",
+["fight_component"] = true,
 ["end_time"] = 1725700543,
+["totalabsorbed"] = 0.005898,
 ["nome"] = "Kobold Worker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 15,
 },
@@ -2872,24 +6897,23 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700542,
 ["damage_taken"] = 73.005898,
 ["start_time"] = 1725700528,
 ["delay"] = 0,
-["last_event"] = 1725700542,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.002142,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2897,10 +6921,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 13.002142,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-6-00005C1990",
-["aID"] = "6",
 ["damage_from"] = {
 ["Turbonac"] = true,
 ["Jubtog <Turbonac>"] = true,
@@ -2908,20 +6932,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 13,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "6",
+["fight_component"] = true,
 ["end_time"] = 1725700543,
+["totalabsorbed"] = 0.002142,
 ["nome"] = "Kobold Vermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 13,
 },
@@ -2943,108 +6968,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700543,
 ["damage_taken"] = 60.002142,
 ["start_time"] = 1725700531,
 ["delay"] = 0,
-["last_event"] = 1725700543,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 455,
 ["tipo"] = 3,
+["combatId"] = 455,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 455,
 ["tipo"] = 7,
+["combatId"] = 455,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 455,
 ["tipo"] = 9,
+["combatId"] = 455,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 18,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 19,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 18,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 18,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700543,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 455,
 ["tipo"] = 2,
+["combatId"] = 455,
 ["_ActorTable"] = {
 },
 },
@@ -3061,8 +7086,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 161,
 0,
@@ -3076,10 +7100,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3120,11 +7144,10 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 455,
 ["boss_hp"] = 1,
-["frags"] = {
-["Kobold Vermin"] = 1,
-["Kobold Worker"] = 1,
+["spells_cast_timeline"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 ["combat_counter"] = 507,
 ["totals_grupo"] = {
 133,
@@ -3139,10 +7162,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3152,13 +7175,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3170,17 +7193,18 @@ _detalhes_database = {
 ["start_time"] = 2524.035,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Vermin"] = 1,
+["Kobold Worker"] = 1,
 },
 },
 {
 {
-["combatId"] = 454,
 ["tipo"] = 2,
+["combatId"] = 454,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00311,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -3189,7 +7213,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 116.00311,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -3198,23 +7224,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Kobold Vermin"] = 116,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 76,
 },
 ["end_time"] = 1725700515,
+["totalabsorbed"] = 0.00311,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 8,
 },
@@ -3224,26 +7248,26 @@ _detalhes_database = {
 ["counter"] = 4,
 ["total"] = 8,
 ["c_max"] = 0,
-["BLOCK"] = 1,
+["spellschool"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
+["BLOCK"] = 1,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 35,
 },
@@ -3264,14 +7288,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 29,
 },
@@ -3292,20 +7316,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 15,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 6.233375067168146,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700514,
 ["damage_taken"] = 11.00311,
 ["start_time"] = 1725700496,
 ["delay"] = 0,
-["last_event"] = 1725700514,
+["last_dps"] = 6.233375067168146,
 },
 {
 ["flag_original"] = 4369,
@@ -3317,32 +7342,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 44.001932,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Vermin"] = 44,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 36,
 },
 ["end_time"] = 1725700515,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 44,
 },
@@ -3363,24 +7387,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 11,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 2.364424073078974,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700514,
 ["damage_taken"] = 0.001932,
 ["start_time"] = 1725700499,
 ["delay"] = 0,
-["last_event"] = 1725700514,
+["last_dps"] = 2.364424073078974,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.002903,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3388,10 +7412,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 11.002903,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-6-00005C1981",
-["aID"] = "6",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -3400,20 +7424,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 11,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "6",
+["fight_component"] = true,
 ["end_time"] = 1725700515,
+["totalabsorbed"] = 0.002903,
 ["nome"] = "Kobold Vermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 11,
 },
@@ -3435,108 +7460,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700513,
 ["damage_taken"] = 116.002903,
 ["start_time"] = 1725700497,
 ["delay"] = 0,
-["last_event"] = 1725700513,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 454,
 ["tipo"] = 3,
+["combatId"] = 454,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 454,
 ["tipo"] = 7,
+["combatId"] = 454,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 454,
 ["tipo"] = 9,
+["combatId"] = 454,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 18,
 ["classe"] = "WARLOCK",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 18,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 18,
 ["debuff_uptime"] = 15,
-["aID"] = "5266-026E1779",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700515,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 454,
 ["tipo"] = 2,
+["combatId"] = 454,
 ["_ActorTable"] = {
 },
 },
@@ -3554,8 +7579,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 127,
 0,
@@ -3569,10 +7593,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3613,10 +7637,10 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 454,
 ["boss_hp"] = 1,
-["frags"] = {
-["Kobold Vermin"] = 2,
+["spells_cast_timeline"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 ["combat_counter"] = 506,
 ["totals_grupo"] = {
 116,
@@ -3631,10 +7655,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3644,13 +7668,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3662,17 +7686,17 @@ _detalhes_database = {
 ["start_time"] = 2496.13,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Vermin"] = 2,
 },
 },
 {
 {
-["combatId"] = 453,
 ["tipo"] = 2,
+["combatId"] = 453,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003607,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -3681,7 +7705,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 76.003607,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -3690,22 +7716,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Kobold Worker"] = 76,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700494,
+["totalabsorbed"] = 0.003607,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 12,
 },
@@ -3727,14 +7751,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 21,
 },
@@ -3755,14 +7779,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 21,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 26,
 },
@@ -3783,20 +7807,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 5.930368835830093,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700493,
 ["damage_taken"] = 18.003607,
 ["start_time"] = 1725700481,
 ["delay"] = 0,
-["last_event"] = 1725700493,
+["last_dps"] = 5.930368835830093,
 },
 {
 ["flag_original"] = 4369,
@@ -3808,31 +7833,30 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 17.00441,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Worker"] = 17,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700494,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 17,
 },
@@ -3853,24 +7877,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 1.326811017478126,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700493,
 ["damage_taken"] = 0.00441,
 ["start_time"] = 1725700493,
 ["delay"] = 1725700481,
-["last_event"] = 1725700493,
+["last_dps"] = 1.326811017478126,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.002806,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3878,10 +7902,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 18.002806,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-257-00005C197B",
-["aID"] = "257",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -3890,20 +7914,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 18,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "257",
+["fight_component"] = true,
 ["end_time"] = 1725700494,
+["totalabsorbed"] = 0.002806,
 ["nome"] = "Kobold Worker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 18,
 },
@@ -3924,108 +7949,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700493,
 ["damage_taken"] = 76.00280599999999,
 ["start_time"] = 1725700483,
 ["delay"] = 0,
-["last_event"] = 1725700493,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 453,
 ["tipo"] = 3,
+["combatId"] = 453,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 453,
 ["tipo"] = 7,
+["combatId"] = 453,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 453,
 ["tipo"] = 9,
+["combatId"] = 453,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 12,
-["appliedamt"] = 1,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 13,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 12,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 12,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700494,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 453,
 ["tipo"] = 2,
+["combatId"] = 453,
 ["_ActorTable"] = {
 },
 },
@@ -4043,8 +8068,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 94,
 0,
@@ -4058,10 +8082,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4098,10 +8122,10 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 453,
 ["boss_hp"] = 1,
-["frags"] = {
-["Kobold Worker"] = 1,
+["spells_cast_timeline"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 ["combat_counter"] = 505,
 ["totals_grupo"] = {
 76,
@@ -4116,10 +8140,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4129,13 +8153,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4147,17 +8171,17 @@ _detalhes_database = {
 ["start_time"] = 2480.464,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Worker"] = 1,
 },
 },
 {
 {
-["combatId"] = 452,
 ["tipo"] = 2,
+["combatId"] = 452,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002298,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -4166,7 +8190,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 114.002298,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -4175,23 +8201,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Kobold Vermin"] = 114,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 69,
 },
 ["end_time"] = 1725700479,
+["totalabsorbed"] = 0.002298,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 12,
 },
@@ -4212,14 +8236,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 7,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 17,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 29,
 },
@@ -4240,14 +8264,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 17,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 38,
 },
@@ -4268,20 +8292,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 6.755691733333333,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700477,
 ["damage_taken"] = 8.002298,
 ["start_time"] = 1725700462,
 ["delay"] = 0,
-["last_event"] = 1725700477,
+["last_dps"] = 6.755691733333333,
 },
 {
 ["flag_original"] = 4369,
@@ -4293,32 +8318,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 35.006225,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Vermin"] = 35,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 [128] = 27,
 },
 ["end_time"] = 1725700479,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Vermin"] = 35,
 },
@@ -4339,24 +8363,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 2.074442962962963,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700477,
 ["damage_taken"] = 0.006225,
 ["start_time"] = 1725700463,
 ["delay"] = 0,
-["last_event"] = 1725700477,
+["last_dps"] = 2.074442962962963,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.001227,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4364,10 +8388,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 8.001227,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-6-00005C1967",
-["aID"] = "6",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -4376,20 +8400,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 8,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "6",
+["fight_component"] = true,
 ["end_time"] = 1725700479,
+["totalabsorbed"] = 0.001227,
 ["nome"] = "Kobold Vermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 8,
 },
@@ -4411,114 +8436,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700476,
 ["damage_taken"] = 114.001227,
 ["start_time"] = 1725700465,
 ["delay"] = 0,
-["last_event"] = 1725700476,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 452,
 ["tipo"] = 3,
+["combatId"] = 452,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 452,
 ["tipo"] = 7,
+["combatId"] = 452,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 452,
 ["tipo"] = 9,
+["combatId"] = 452,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 2,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 17,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 17,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700479,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 452,
 ["tipo"] = 2,
+["combatId"] = 452,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 2480.464,
 ["tempo_start"] = 1725700462,
 ["last_events_tables"] = {
@@ -4545,10 +8568,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4589,11 +8612,29 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 452,
 ["playing_solo"] = true,
-["frags"] = {
-["Kobold Vermin"] = 2,
+["spells_cast_timeline"] = {
 },
-["boss_hp"] = 1,
 ["combat_counter"] = 504,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Turbonac"] = 114.002298,
+["Imp <Turbonac>"] = 35.006225,
+},
+},
+},
 ["totals_grupo"] = {
 114,
 0,
@@ -4607,48 +8648,31 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 114.002298,
-["Imp <Turbonac>"] = 35.006225,
-},
-},
+["raid_roster"] = {
+["Turbonac"] = "Player-5266-026E1779",
 },
 ["start_time"] = 2461.451,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
+["Kobold Vermin"] = 2,
 },
 },
 {
 {
-["combatId"] = 451,
 ["tipo"] = 2,
+["combatId"] = 451,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001635,
 ["pets"] = {
 "Imp <Turbonac>",
 },
@@ -4657,7 +8681,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 72.001635,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026E1779",
 ["damage_from"] = {
@@ -4666,22 +8692,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Kobold Worker"] = 72,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700458,
+["totalabsorbed"] = 0.001635,
+["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 3,
 },
@@ -4702,14 +8726,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 [686] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 28,
 },
@@ -4730,14 +8754,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 15,
 ["r_amt"] = 0,
 },
 [348] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 17,
 },
@@ -4758,20 +8782,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 11.0398091076358,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700458,
 ["damage_taken"] = 3.001635,
 ["start_time"] = 1725700452,
 ["delay"] = 0,
-["last_event"] = 1725700458,
+["last_dps"] = 11.0398091076358,
 },
 {
 ["flag_original"] = 4369,
@@ -4783,31 +8808,30 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 24.001827,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Kobold Worker"] = 24,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725700458,
+["aID"] = "416",
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3110] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Kobold Worker"] = 24,
 },
@@ -4828,24 +8852,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 3.68013293468265,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700457,
 ["damage_taken"] = 0.001827,
 ["start_time"] = 1725700454,
 ["delay"] = 0,
-["last_event"] = 1725700457,
+["last_dps"] = 3.68013293468265,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.007626,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4853,10 +8877,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 3.007626,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5251-0-78-257-00005C0DA1",
-["aID"] = "257",
 ["damage_from"] = {
 ["Imp <Turbonac>"] = true,
 ["Turbonac"] = true,
@@ -4865,20 +8889,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Turbonac"] = 3,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "257",
+["fight_component"] = true,
 ["end_time"] = 1725700458,
+["totalabsorbed"] = 0.007626,
 ["nome"] = "Kobold Worker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Turbonac"] = 3,
 },
@@ -4899,108 +8924,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725700456,
 ["damage_taken"] = 72.007626,
 ["start_time"] = 1725700456,
 ["delay"] = 0,
-["last_event"] = 1725700456,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 451,
 ["tipo"] = 3,
+["combatId"] = 451,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 451,
 ["tipo"] = 7,
+["combatId"] = 451,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 451,
 ["tipo"] = 9,
+["combatId"] = 451,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [348] = {
-["activedamt"] = 0,
-["id"] = 348,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 348,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "Imp <Turbonac>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
 ["buff_uptime"] = 6,
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
-["activedamt"] = 1,
-["id"] = 687,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 687,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 6,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 6,
-["aID"] = "5266-026E1779",
 ["nome"] = "Turbonac",
 ["last_event"] = 1725700458,
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
 ["ownerName"] = "Turbonac",
 ["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 451,
 ["tipo"] = 2,
+["combatId"] = 451,
 ["_ActorTable"] = {
 },
 },
@@ -5017,8 +9042,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 75,
 0,
@@ -5032,10 +9056,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5075,10 +9099,10 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 451,
 ["boss_hp"] = 1,
-["frags"] = {
-["Kobold Worker"] = 1,
+["spells_cast_timeline"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 ["combat_counter"] = 503,
 ["totals_grupo"] = {
 72,
@@ -5093,10 +9117,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5106,13 +9130,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5124,3750 +9148,19 @@ _detalhes_database = {
 ["start_time"] = 2451.572,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 450,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.002077,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 68.002077,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 105.002077,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-["Kobold Vermin"] = true,
-},
-["targets"] = {
-["Kobold Vermin"] = 105,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 69,
-},
-["end_time"] = 1725700315,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 3,
-["targets"] = {
-["Kobold Vermin"] = 7,
-},
-["n_total"] = 7,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 7,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Kobold Vermin"] = 31,
-},
-["n_total"] = 31,
-["n_min"] = 15,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 31,
-["c_max"] = 0,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Kobold Vermin"] = 30,
-},
-["n_total"] = 30,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 30,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 6.679521437658925,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 4.002077,
-["start_time"] = 1725700299,
-["delay"] = 0,
-["last_event"] = 1725700315,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.006751,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 37.006751,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 37.006751,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Kobold Vermin"] = 37,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 21,
-},
-["end_time"] = 1725700315,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Kobold Vermin"] = 37,
-},
-["n_total"] = 24,
-["n_min"] = 7,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 37,
-["c_max"] = 13,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 13,
-["successful_casted"] = 0,
-["c_total"] = 13,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 2.354119020356196,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.006751,
-["start_time"] = 1725700301,
-["delay"] = 0,
-["last_event"] = 1725700310,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.005523,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 4.005523,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 4.005523,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-6-00005BF683",
-["aID"] = "6",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 4,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700315,
-["nome"] = "Kobold Vermin",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Turbonac"] = 4,
-},
-["n_total"] = 4,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 4,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 105.005523,
-["start_time"] = 1725700312,
-["delay"] = 0,
-["last_event"] = 1725700314,
-},
-},
-},
-{
-["combatId"] = 450,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 450,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 450,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 11,
-["appliedamt"] = 2,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["buff_uptime"] = 16,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 16,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["grupo"] = true,
-["debuff_uptime"] = 11,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725700315,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 450,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 2451.572,
-["tempo_start"] = 1725700299,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-109,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 2,
-},
-["Turbonac"] = {
-["Immolate"] = 1,
-["Shadow Bolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:11:56",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Kobold Vermin",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 2315.173,
-["CombatEndedAt"] = 2315.173,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:11:40",
-["end_time"] = 2315.173,
-["mapId"] = 0,
-["combat_id"] = 450,
-["boss_hp"] = 1,
 ["frags"] = {
-["Kobold Vermin"] = 2,
-},
-["playing_solo"] = true,
-["combat_counter"] = 502,
-["totals_grupo"] = {
-105,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 105.002077,
-["Imp <Turbonac>"] = 37.006751,
-},
-},
-},
-["start_time"] = 2299.453,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 449,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.002059,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 92.002059,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 138.002059,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-["Kobold Worker"] = true,
-["Kobold Vermin"] = true,
-},
-["targets"] = {
-["Kobold Worker"] = 76,
-["Kobold Vermin"] = 62,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 62,
-},
-["end_time"] = 1725700296,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 3,
-["n_max"] = 2,
-["targets"] = {
-["Kobold Worker"] = 12,
-},
-["n_total"] = 8,
-["n_min"] = 2,
-["g_dmg"] = 4,
-["counter"] = 7,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 15,
-["targets"] = {
-["Kobold Worker"] = 12,
-["Kobold Vermin"] = 15,
-},
-["n_total"] = 27,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 27,
-["c_max"] = 0,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Kobold Worker"] = 24,
-["Kobold Vermin"] = 29,
-},
-["n_total"] = 53,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 11,
-["total"] = 53,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 11,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 6.569962342299418,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 37.002059,
-["start_time"] = 1725700275,
-["delay"] = 0,
-["last_event"] = 1725700295,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.003547,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 46.003547,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 46.003547,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Kobold Worker"] = 28,
-["Kobold Vermin"] = 18,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 18,
-},
-["end_time"] = 1725700296,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Kobold Worker"] = 28,
-["Kobold Vermin"] = 18,
-},
-["n_total"] = 36,
-["n_min"] = 7,
-["g_dmg"] = 0,
-["counter"] = 6,
-["total"] = 46,
-["c_max"] = 10,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 10,
-["successful_casted"] = 0,
-["c_total"] = 10,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 2.190123637229219,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.003547,
-["start_time"] = 1725700276,
-["delay"] = 0,
-["last_event"] = 1725700295,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.0043,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 19.0043,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 19.0043,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-6-00005BD89B",
-["aID"] = "6",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 19,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700296,
-["nome"] = "Kobold Vermin",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 3,
-["targets"] = {
-["Turbonac"] = 19,
-},
-["n_total"] = 19,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 9,
-["total"] = 19,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 9,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 62.0043,
-["start_time"] = 1725700277,
-["delay"] = 0,
-["last_event"] = 1725700293,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.004558,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 18.004558,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 18.004558,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-257-00005C150D",
-["aID"] = "257",
-["damage_from"] = {
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 18,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700296,
-["nome"] = "Kobold Worker",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Turbonac"] = 18,
-},
-["n_total"] = 18,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 6,
-["total"] = 18,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 6,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 76.004558,
-["start_time"] = 1725700282,
-["delay"] = 0,
-["last_event"] = 1725700292,
-},
-},
-},
-{
-["combatId"] = 449,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 449,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 449,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 18,
-["appliedamt"] = 2,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["buff_uptime"] = 21,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 21,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["grupo"] = true,
-["debuff_uptime"] = 18,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725700296,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 449,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 2299.453,
-["tempo_start"] = 1725700275,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-175,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 4,
-},
-["Turbonac"] = {
-["Immolate"] = 1,
-["Shadow Bolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:11:37",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Kobold Worker",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 2296.624,
-["CombatEndedAt"] = 2296.624,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:11:16",
-["end_time"] = 2296.624,
-["mapId"] = 0,
-["combat_id"] = 449,
-["boss_hp"] = 1,
-["frags"] = {
-["Kobold Vermin"] = 1,
 ["Kobold Worker"] = 1,
-},
-["playing_solo"] = true,
-["combat_counter"] = 501,
-["totals_grupo"] = {
-138,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 138.002059,
-["Imp <Turbonac>"] = 46.003547,
-},
-},
-},
-["start_time"] = 2275.619,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 448,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.005419,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 26.005419,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 42.005419,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-},
-["targets"] = {
-["Kobold Vermin"] = 42,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 21,
-},
-["end_time"] = 1725700272,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[348] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 0,
-["targets"] = {
-["Kobold Vermin"] = 13,
-},
-["n_total"] = 0,
-["n_min"] = 0,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 13,
-["c_max"] = 13,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 13,
-["successful_casted"] = 0,
-["c_total"] = 13,
-["n_amt"] = 0,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Kobold Vermin"] = 13,
-},
-["n_total"] = 13,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 13,
-["c_max"] = 0,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 14.29241884994969,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.005419,
-["start_time"] = 1725700269,
-["delay"] = 0,
-["last_event"] = 1725700271,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.004727,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 16.004727,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 16.004727,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Kobold Vermin"] = 16,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 8,
-},
-["end_time"] = 1725700272,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Kobold Vermin"] = 16,
-},
-["n_total"] = 16,
-["n_min"] = 8,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 16,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 5.445636951344272,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.004727,
-["start_time"] = 1725700269,
-["delay"] = 0,
-["last_event"] = 1725700271,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.006757,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 0.006757,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 0.006757,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-6-00005BF68E",
-["aID"] = "6",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700272,
-["nome"] = "Kobold Vermin",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 42.006757,
-["start_time"] = 1725700272,
-["delay"] = 0,
-["last_event"] = 0,
-},
-},
-},
-{
-["combatId"] = 448,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 448,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 448,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = -1,
-["id"] = 348,
-["targets"] = {
-},
-["actived_at"] = 1725700271,
-["uptime"] = 0,
-["appliedamt"] = 0,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["debuff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["grupo"] = true,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 3,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["buff_uptime"] = 3,
-["debuff_uptime"] = 0,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725700272,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 448,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 2275.619,
-["tempo_start"] = 1725700269,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-42,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Turbonac"] = {
-["Shadow Bolt"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:11:12",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Kobold Vermin",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 2.938999999999851,
-["CombatEndedAt"] = 2271.947,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:11:10",
-["end_time"] = 2271.947,
-["mapId"] = 0,
-["combat_id"] = 448,
-["playing_solo"] = true,
-["frags"] = {
-["Kobold Vermin"] = 1,
-},
-["boss_hp"] = 1,
-["combat_counter"] = 500,
-["totals_grupo"] = {
-42,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 42.005419,
-["Imp <Turbonac>"] = 16.004727,
-},
-},
-},
-["start_time"] = 2269.008,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 447,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.002462,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 24.002462,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 46.002462,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-},
-["targets"] = {
-["Young Wolf"] = 46,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700224,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Young Wolf"] = 8,
-},
-["n_total"] = 8,
-["n_min"] = 8,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 8,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Young Wolf"] = 16,
-},
-["n_total"] = 16,
-["n_min"] = 16,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 16,
-["c_max"] = 0,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 8.772399313500907,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.002462,
-["start_time"] = 1725700219,
-["delay"] = 0,
-["last_event"] = 1725700223,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.007659,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 22.007659,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 22.007659,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Young Wolf"] = 22,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700224,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Young Wolf"] = 22,
-},
-["n_total"] = 22,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 22,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 4.196731311975478,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.007659,
-["start_time"] = 1725700219,
-["delay"] = 0,
-["last_event"] = 1725700223,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.005923,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 0.005923,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 0.005923,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-299-00005C16A3",
-["aID"] = "299",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725700224,
-["nome"] = "Young Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 46.005923,
-["start_time"] = 1725700224,
-["delay"] = 0,
-["last_event"] = 0,
-},
-},
-},
-{
-["combatId"] = 447,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 447,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 447,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 3,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["debuff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["grupo"] = true,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 5,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["buff_uptime"] = 5,
-["debuff_uptime"] = 3,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725700224,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 447,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 2219.382,
-["tempo_start"] = 1725700219,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-46,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 1,
-},
-["Turbonac"] = {
-["Immolate"] = 1,
-["Shadow Bolt"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:10:25",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Young Wolf",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 5.244000000000142,
-["CombatEndedAt"] = 2224.626,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:10:20",
-["end_time"] = 2224.626,
-["mapId"] = 0,
-["combat_id"] = 447,
-["playing_solo"] = true,
-["frags"] = {
-["Young Wolf"] = 1,
-},
-["boss_hp"] = 1,
-["combat_counter"] = 499,
-["totals_grupo"] = {
-46,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 46.002462,
-["Imp <Turbonac>"] = 22.007659,
-},
-},
-},
-["start_time"] = 2219.382,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 446,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.002623,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 25.002623,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 55.002623,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-},
-["targets"] = {
-["Timber Wolf"] = 55,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699838,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Timber Wolf"] = 13,
-},
-["n_total"] = 13,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 13,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Timber Wolf"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 8.398629256375047,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.002623,
-["start_time"] = 1725699831,
-["delay"] = 0,
-["last_event"] = 1725699838,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.003052,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 30.003052,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 30.003052,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-["Timber Wolf"] = true,
-},
-["targets"] = {
-["Timber Wolf"] = 30,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699838,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Timber Wolf"] = 30,
-},
-["n_total"] = 30,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 30,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 4.581318063826553,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 4.003052,
-["start_time"] = 1725699831,
-["delay"] = 0,
-["last_event"] = 1725699838,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.001203,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 4.001203,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 4.001203,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-69-00005C16AD",
-["aID"] = "69",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Jubtog <Turbonac>"] = 4,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699838,
-["nome"] = "Timber Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Jubtog <Turbonac>"] = 4,
-},
-["n_total"] = 4,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 4,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 55.001203,
-["start_time"] = 1725699835,
-["delay"] = 0,
-["last_event"] = 1725699837,
-},
-},
-},
-{
-["combatId"] = 446,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 446,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 446,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 3,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["debuff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["grupo"] = true,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 7,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["buff_uptime"] = 7,
-["debuff_uptime"] = 3,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725699838,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 446,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 1831.146,
-["tempo_start"] = 1725699831,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-59,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 2,
-},
-["Turbonac"] = {
-["Immolate"] = 1,
-["Shadow Bolt"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:03:58",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Timber Wolf",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 6.548999999999978,
-["CombatEndedAt"] = 1837.695,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:03:52",
-["end_time"] = 1837.695,
-["mapId"] = 0,
-["combat_id"] = 446,
-["playing_solo"] = true,
-["frags"] = {
-["Timber Wolf"] = 1,
-},
-["boss_hp"] = 1,
-["combat_counter"] = 498,
-["totals_grupo"] = {
-55,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 55.002623,
-["Imp <Turbonac>"] = 30.003052,
-},
-},
-},
-["start_time"] = 1831.146,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 445,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.002105,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 9.002105,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 43.002105,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-},
-["targets"] = {
-["Young Wolf"] = 43,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699746,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Young Wolf"] = 9,
-},
-["n_total"] = 4,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 9,
-["c_max"] = 5,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 5,
-["successful_casted"] = 0,
-["c_total"] = 5,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 2.707600113335841,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.002105,
-["start_time"] = 1725699730,
-["delay"] = 0,
-["last_event"] = 1725699746,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.003225,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 34.003225,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 34.003225,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-["Young Wolf"] = true,
-},
-["targets"] = {
-["Young Wolf"] = 34,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699746,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Young Wolf"] = 34,
-},
-["n_total"] = 23,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 34,
-["c_max"] = 11,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 11,
-["successful_casted"] = 0,
-["c_total"] = 11,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 2.140991373882375,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 9.003225,
-["start_time"] = 1725699730,
-["delay"] = 0,
-["last_event"] = 1725699737,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.006572,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 9.006572,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 9.006572,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-299-00005C167E",
-["aID"] = "299",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Jubtog <Turbonac>"] = 9,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699746,
-["nome"] = "Young Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Jubtog"] = 0,
-["Jubtog <Turbonac>"] = 9,
-},
-["n_total"] = 9,
-["n_min"] = 1,
-["g_dmg"] = 0,
-["counter"] = 6,
-["total"] = 9,
-["c_max"] = 0,
-["MISS"] = 1,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 43.006572,
-["start_time"] = 1725699734,
-["delay"] = 0,
-["last_event"] = 1725699744,
-},
-},
-},
-{
-["combatId"] = 445,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 445,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 445,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["serial"] = "Player-5266-026E1779",
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 16,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["buff_uptime"] = 16,
-["grupo"] = true,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725699746,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 445,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 1730.031,
-["tempo_start"] = 1725699730,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-52,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:02:26",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Young Wolf",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15.88200000000006,
-["CombatEndedAt"] = 1745.913,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:02:11",
-["end_time"] = 1745.913,
-["mapId"] = 0,
-["combat_id"] = 445,
-["playing_solo"] = true,
-["frags"] = {
-["Young Wolf"] = 1,
-},
-["boss_hp"] = 1,
-["combat_counter"] = 497,
-["totals_grupo"] = {
-43,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 43.002105,
-["Imp <Turbonac>"] = 34.003225,
-},
-},
-},
-["start_time"] = 1730.031,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 444,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.001346,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 36.001346,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 44.001346,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-["Young Wolf"] = true,
-},
-["targets"] = {
-["Young Wolf"] = 44,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 44,
-},
-["end_time"] = 1725699663,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 3,
-["targets"] = {
-["Young Wolf"] = 5,
-},
-["n_total"] = 5,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 5,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[686] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 15,
-["targets"] = {
-["Young Wolf"] = 15,
-},
-["n_total"] = 15,
-["n_min"] = 15,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 15,
-["c_max"] = 0,
-["RESIST"] = 1,
-["id"] = 686,
-["r_dmg"] = 0,
-["spellschool"] = 32,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Young Wolf"] = 16,
-},
-["n_total"] = 16,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 16,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 5.211577164514993,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 2.001346,
-["start_time"] = 1725699654,
-["delay"] = 0,
-["last_event"] = 1725699662,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.002842,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 8.002842,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 8.002842,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Young Wolf"] = 8,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 8,
-},
-["end_time"] = 1725699663,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Young Wolf"] = 8,
-},
-["n_total"] = 8,
-["n_min"] = 8,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 8,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0.9478671088475678,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.002842,
-["start_time"] = 1725699662,
-["delay"] = 0,
-["last_event"] = 1725699662,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.006156,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 2.006156,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 2.006156,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-299-00005C0CF5",
-["aID"] = "299",
-["damage_from"] = {
-["Turbonac"] = true,
-["Imp <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 2,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699663,
-["nome"] = "Young Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Turbonac"] = 2,
-},
-["n_total"] = 2,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 2,
-["c_max"] = 0,
-["DODGE"] = 1,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 44.006156,
-["start_time"] = 1725699661,
-["delay"] = 0,
-["last_event"] = 1725699661,
-},
-},
-},
-{
-["combatId"] = 444,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 444,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 444,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 8,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["buff_uptime"] = 9,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["grupo"] = true,
-["debuff_uptime"] = 8,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725699663,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 444,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["CombatStartedAt"] = 1654.536,
-["tempo_start"] = 1725699654,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-46,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Turbonac"] = {
-["Shadow Bolt"] = 2,
-},
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:01:03",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Young Wolf",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 8.346000000000004,
-["CombatEndedAt"] = 1662.882,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:00:55",
-["end_time"] = 1662.882,
-["mapId"] = 0,
-["combat_id"] = 444,
-["playing_solo"] = true,
-["frags"] = {
-["Young Wolf"] = 1,
-},
-["boss_hp"] = 1,
-["combat_counter"] = 496,
-["totals_grupo"] = {
-44,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 44.001346,
-["Imp <Turbonac>"] = 8.002842,
-},
-},
-},
-["start_time"] = 1654.439,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
-{
-{
-["combatId"] = 443,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.006154,
-["pets"] = {
-"Imp <Turbonac>",
-},
-["classe"] = "WARLOCK",
-["total_without_pet"] = 29.006154,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 44.006154,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-5266-026E1779",
-["damage_from"] = {
-["Young Wolf"] = true,
-},
-["targets"] = {
-["Young Wolf"] = 44,
-},
-["colocacao"] = 1,
-["aID"] = "5266-026E1779",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 44,
-},
-["end_time"] = 1725699644,
-["nome"] = "Turbonac",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 3,
-["targets"] = {
-["Young Wolf"] = 8,
-},
-["n_total"] = 8,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 8,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[348] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Young Wolf"] = 21,
-},
-["n_total"] = 21,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 21,
-["c_max"] = 0,
-["id"] = 348,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 4.665128167073045,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 3.006154,
-["start_time"] = 1725699635,
-["delay"] = 0,
-["last_event"] = 1725699644,
-},
-{
-["flag_original"] = 4369,
-["totalabsorbed"] = 0.00152,
-["pets"] = {
-},
-["classe"] = "PET",
-["total_without_pet"] = 15.00152,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 15.00152,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["colocacao"] = 2,
-["aID"] = "416",
-["damage_from"] = {
-},
-["targets"] = {
-["Young Wolf"] = 15,
-},
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-[128] = 15,
-},
-["end_time"] = 1725699644,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[3110] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 8,
-["targets"] = {
-["Young Wolf"] = 15,
-},
-["n_total"] = 15,
-["n_min"] = 7,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 15,
-["c_max"] = 0,
-["id"] = 3110,
-["r_dmg"] = 0,
-["spellschool"] = 4,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 1.590323332979965,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 0.00152,
-["start_time"] = 1725699639,
-["delay"] = 0,
-["last_event"] = 1725699641,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.006956,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 3.006956,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 3.006956,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5251-0-78-299-00005C0C3A",
-["aID"] = "299",
-["damage_from"] = {
-["Imp <Turbonac>"] = true,
-["Turbonac"] = true,
-["Jubtog <Turbonac>"] = true,
-},
-["targets"] = {
-["Turbonac"] = 3,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1725699644,
-["nome"] = "Young Wolf",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Turbonac"] = 3,
-},
-["n_total"] = 3,
-["n_min"] = 1,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 3,
-["c_max"] = 0,
-["DODGE"] = 1,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 44.006956,
-["start_time"] = 1725699641,
-["delay"] = 0,
-["last_event"] = 1725699643,
-},
-},
-},
-{
-["combatId"] = 443,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 443,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 443,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[348] = {
-["activedamt"] = 0,
-["id"] = 348,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["serial"] = "Player-5266-026E1779",
-["debuff_uptime_targets"] = {
-},
-["pets"] = {
-"Imp <Turbonac>",
-},
-["buff_uptime_targets"] = {
-},
-["classe"] = "WARLOCK",
-["buff_uptime"] = 9,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[687] = {
-["activedamt"] = 1,
-["id"] = 687,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["grupo"] = true,
-["debuff_uptime"] = 9,
-["aID"] = "5266-026E1779",
-["nome"] = "Turbonac",
-["last_event"] = 1725699644,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 4369,
-["pets"] = {
-},
-["classe"] = "PET",
-["aID"] = "416",
-["serial"] = "Creature-0-5251-0-78-416-00005C1589",
-["grupo"] = true,
-["ownerName"] = "Turbonac",
-["nome"] = "Imp <Turbonac>",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 443,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Turbonac"] = "Player-5266-026E1779",
-},
-["tempo_start"] = 1725699635,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-47,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Imp <Turbonac>"] = {
-["Firebolt"] = 1,
-},
-["Jubtog"] = {
-["Firebolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Eastern Kingdoms",
-["data_fim"] = "11:00:45",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Young Wolf",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 1644.32,
-["CombatEndedAt"] = 1644.32,
-["aura_timeline"] = {
-},
-["data_inicio"] = "11:00:35",
-["end_time"] = 1644.32,
-["mapId"] = 0,
-["combat_id"] = 443,
-["boss_hp"] = 1,
-["frags"] = {
-["Young Wolf"] = 1,
-},
-["playing_solo"] = true,
-["combat_counter"] = 495,
-["totals_grupo"] = {
-44,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Turbonac"] = 44.006154,
-["Imp <Turbonac>"] = 15.00152,
-},
-},
-},
-["start_time"] = 1634.887,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
 },
 },
 },
 },
 ["ocd_tracker"] = {
-["enabled"] = false,
+["show_title"] = true,
 ["current_cooldowns"] = {
 },
 ["lines_per_column"] = 12,
 ["group_frames"] = true,
-["width"] = 120,
+["show_options"] = false,
 ["frames"] = {
 ["defensive-raid"] = {
 },
@@ -8882,11 +9175,12 @@ _detalhes_database = {
 ["defensive-personal"] = {
 },
 },
-["show_options"] = false,
+["width"] = 120,
 ["ignored_cooldowns"] = {
 },
+["cooldowns"] = {
+},
 ["height"] = 18,
-["framme_locked"] = false,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -8894,13 +9188,12 @@ _detalhes_database = {
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["cooldowns"] = {
-},
+["framme_locked"] = false,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["show_title"] = true,
+["enabled"] = false,
 ["filters"] = {
 ["itemutil"] = false,
 ["itempower"] = false,
@@ -8936,10 +9229,10 @@ _detalhes_database = {
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["name"] = "Damage of Each Individual Player",
-["playerOnly"] = true,
 ["playerKey"] = "total",
 ["combatObjectContainer"] = 1,
+["name"] = "Damage of Each Individual Player",
+["playerOnly"] = true,
 },
 },
 ["totals"] = {
@@ -8963,13 +9256,17 @@ _detalhes_database = {
 ["ignore_nicktag"] = false,
 ["combat_log"] = {
 ["inverse_deathlog_overalldata"] = false,
-["track_hunter_frenzy"] = false,
 ["merge_gemstones_1007"] = false,
+["track_hunter_frenzy"] = false,
 ["merge_critical_heals"] = false,
 ["inverse_deathlog_raid"] = false,
 ["calc_evoker_damage"] = true,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
+},
+["cached_talents"] = {
+},
+["mythic_plus_log"] = {
 },
 ["local_instances_config"] = {
 {
@@ -9043,36 +9340,117 @@ _detalhes_database = {
 },
 },
 },
-["mythic_plus_log"] = {
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["last_day"] = "07",
-["cached_roles"] = {
-},
 ["data_harvested_for_charts"] = {
 },
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["animate"] = false,
+["hide_pull_bar"] = false,
+["author"] = "Terciob",
+["playercolor"] = {
+1,
+1,
+1,
 },
-["character_data"] = {
-["logons"] = 35,
+["usefocus"] = false,
+["updatespeed"] = 1,
+["useclasscolors"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["playSound"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["disable_gouge"] = false,
 },
-["benchmark_db"] = {
-["frame"] = {
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["arrow_anchor_y"] = 0,
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_x"] = 0,
+["scale"] = 1,
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["use_spark"] = false,
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["y"] = -183.107162475586,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["author"] = "Details! Team",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["attribute_type"] = 1,
+["update_speed"] = 0.05,
+["size"] = 32,
+},
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["point"] = "RIGHT",
+["row_height"] = 18,
+["use_square_mode"] = false,
 },
 },
+["force_font_outline"] = "",
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
 },
-["combat_id"] = 460,
+["combat_id"] = 468,
 ["savedStyles"] = {
 {
 ["hide_in_combat_type"] = 1,
@@ -9093,7 +9471,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -9261,13 +9639,13 @@ false,
 },
 },
 ["show_sidebars"] = false,
-["name"] = "vermin",
+["bg_alpha"] = 0,
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["version"] = 3,
+["name"] = "vermin",
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -9309,7 +9687,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -9325,14 +9703,11 @@ false,
 0.07058823529411765,
 },
 },
+["bars_grow_direction"] = 1,
 ["row_show_animation"] = {
 ["anim"] = "Fade",
 ["options"] = {
 },
-},
-["menu_anchor_down"] = {
-16,
--3,
 },
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
@@ -9351,15 +9726,18 @@ false,
 0,
 1,
 },
-["bars_grow_direction"] = 1,
+["menu_anchor_down"] = {
+16,
+-3,
+},
 ["auto_current"] = true,
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["switch_damager"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["version"] = 3,
 ["hide_in_combat"] = false,
 ["row_info"] = {
 ["textR_outline"] = false,
@@ -9513,7 +9891,7 @@ false,
 ["channel"] = "SELF",
 ["reverse"] = false,
 },
-["combat_counter"] = 512,
+["combat_counter"] = 520,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -9541,10 +9919,11 @@ false,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["buff_uptime"] = 0,
+["pets"] = {
+},
 ["buff_uptime_targets"] = {
 },
-["classe"] = "PRIEST",
+["aID"] = "5266-026B45A3",
 ["buff_uptime_spells"] = {
 ["_ActorTable"] = {
 [1243] = {
@@ -9558,12 +9937,81 @@ false,
 },
 ["nome"] = "Battlenac",
 ["grupo"] = true,
-["tipo"] = 4,
+["buff_uptime"] = 0,
 ["last_event"] = 0,
+["classe"] = "PRIEST",
+["serial"] = "Player-5266-026B45A3",
+["tipo"] = 4,
+},
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[348] = {
+["id"] = 348,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[172] = {
+["id"] = 172,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+},
+["tipo"] = 4,
 ["pets"] = {
 },
-["serial"] = "Player-5266-026B45A3",
-["aID"] = "5266-026B45A3",
+["debuff_uptime_targets"] = {
+},
+["aID"] = "5266-026E1779",
+["serial"] = "Player-5266-026E1779",
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["id"] = 687,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+},
+["buff_uptime_targets"] = {
+},
+["debuff_uptime"] = 0,
+["buff_uptime"] = 0,
+["classe"] = "WARLOCK",
+["nome"] = "Turbonac",
+["grupo"] = true,
+["last_event"] = 0,
+},
+{
+["flag_original"] = 4369,
+["tipo"] = 4,
+["pets"] = {
+},
+["classe"] = "PET",
+["grupo"] = true,
+["serial"] = "Pet-0-5251-0-78-416-0100A76C11",
+["aID"] = "Pet-0-5251-0-78-416-0100A76C11",
+["nome"] = "Jubtog <Turbonac>",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 4369,
+["tipo"] = 4,
+["pets"] = {
+},
+["classe"] = "PET",
+["serial"] = "Creature-0-5251-0-78-416-00005C1589",
+["grupo"] = true,
+["aID"] = "416",
+["nome"] = "Imp <Turbonac>",
+["last_event"] = 0,
 },
 },
 },
@@ -9644,9 +10092,9 @@ false,
 ["n"] = 1,
 },
 ["boss_hp"] = 1,
-["frags"] = {
-},
 ["segments_added"] = {
+},
+["frags"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
@@ -9672,111 +10120,28 @@ false,
 },
 ["combat_counter"] = 480,
 },
-["force_font_outline"] = "",
-["cached_talents"] = {
-},
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["animate"] = false,
-["hide_pull_bar"] = false,
-["author"] = "Terciob",
-["playercolor"] = {
-1,
-1,
-1,
-},
-["usefocus"] = false,
-["updatespeed"] = 1,
-["disable_gouge"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["playSound"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["useclasscolors"] = false,
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["use_square_mode"] = false,
-["arrow_anchor_y"] = 0,
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["point"] = "RIGHT",
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["author"] = "Details! Team",
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["main_frame_strata"] = "LOW",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
-["font_size"] = 10,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["use_spark"] = false,
-["scale"] = 1,
-["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
+["benchmark_db"] = {
+["frame"] = {
 },
 },
+["character_data"] = {
+["logons"] = 36,
+},
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
 },
 ["announce_cooldowns"] = {
-["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
+["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -9784,9 +10149,7 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["cached_roles"] = {
 },
 ["cached_specs"] = {
 },
