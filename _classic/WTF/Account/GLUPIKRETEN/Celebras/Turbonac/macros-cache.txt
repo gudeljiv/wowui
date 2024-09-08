@@ -1,8 +1,3 @@
-VER 3 0000000001000005 " " "134400"
-#showtooltip
-/startattack
-/cast Shadow Bolt
-END
 VER 3 0000000001000002 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,help][] Power Word: Shield
@@ -16,4 +11,9 @@ VER 3 0000000001000001 " " "134400"
 /petattack
 /startattack
 /cast [@mouseover,exists,harm][] Immolate
+END
+VER 3 0000000001000005 " " "134400"
+#showtooltip
+/startattack
+/cast Shadow Bolt
 END

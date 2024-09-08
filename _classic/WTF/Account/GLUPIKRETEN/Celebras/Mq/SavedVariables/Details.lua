@@ -7,12 +7,11 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 1597,
 ["tipo"] = 2,
+["combatId"] = 1597,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005395,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -21,7 +20,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 640.005395,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -29,22 +30,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Harpy"] = 640,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608800,
+["totalabsorbed"] = 0.005395,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 99,
 },
@@ -65,14 +64,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 0,
 },
@@ -94,14 +93,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 169,
 },
@@ -122,14 +121,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 64,
 },
@@ -150,14 +149,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 74,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 74,
 },
@@ -178,20 +177,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 74,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 38.6057060562668,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608799,
 ["damage_taken"] = 0.005395,
 ["start_time"] = 1725608783,
 ["delay"] = 0,
-["last_event"] = 1725608799,
+["last_dps"] = 38.6057060562668,
 },
 {
 ["flag_original"] = 4369,
@@ -203,32 +203,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 234.006022,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Harpy"] = true,
 },
 ["targets"] = {
 ["Bloodfury Harpy"] = 234,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608800,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 18,
 ["targets"] = {
 ["Bloodfury Harpy"] = 194,
 },
@@ -250,14 +249,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 18,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 40,
 },
@@ -266,12 +265,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 7,
 ["DODGE"] = 1,
-["total"] = 40,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -280,36 +279,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 9,
+["total"] = 40,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 14.11545554350882,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608796,
 ["damage_taken"] = 123.006022,
 ["start_time"] = 1725608783,
 ["delay"] = 0,
-["last_event"] = 1725608796,
+["last_dps"] = 14.11545554350882,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002084,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 123.002084,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 123.002084,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4022-000059CECB",
-["aID"] = "4022",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -317,20 +316,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 123,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002084,
+["fight_component"] = true,
 ["end_time"] = 1725608800,
+["aID"] = "4022",
 ["nome"] = "Bloodfury Harpy",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 22,
+["b_dmg"] = 18,
 ["targets"] = {
 ["QM <Mq>"] = 123,
 ["QM"] = 0,
@@ -353,114 +353,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 44,
 ["n_amt"] = 4,
-["b_dmg"] = 18,
+["n_max"] = 22,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608795,
 ["damage_taken"] = 640.002084,
 ["start_time"] = 1725608785,
 ["delay"] = 0,
-["last_event"] = 1725608795,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1597,
 ["tipo"] = 3,
+["combatId"] = 1597,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1597,
 ["tipo"] = 7,
+["combatId"] = 1597,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1597,
 ["tipo"] = 9,
+["combatId"] = 1597,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 17,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 17,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 17,
 ["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608800,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1597,
 ["tipo"] = 2,
+["combatId"] = 1597,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 1484324.159,
 ["tempo_start"] = 1725608783,
 ["last_events_tables"] = {
@@ -469,9 +467,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1613,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -487,10 +483,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -533,11 +529,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1597,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Harpy"] = 1,
 },
-["combat_counter"] = 1613,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 640,
 0,
@@ -551,26 +549,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -579,21 +580,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 1484324.159,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Harpy",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1596,
 ["tipo"] = 2,
+["combatId"] = 1596,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007187,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -602,7 +601,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 610.0071869999999,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -610,50 +611,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Windcaller"] = 610,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608758,
+["totalabsorbed"] = 0.007187,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[2643] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 54,
-["targets"] = {
-["Bloodfury Windcaller"] = 54,
-},
-["n_total"] = 54,
-["n_min"] = 54,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 54,
-["c_max"] = 0,
-["id"] = 2643,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 33,
 },
@@ -674,14 +645,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
+[2643] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Bloodfury Windcaller"] = 54,
+},
+["n_total"] = 54,
+["n_min"] = 54,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 54,
+["c_max"] = 0,
+["id"] = 2643,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 54,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 56,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 274,
 },
@@ -702,14 +701,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 112,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 48,
 },
@@ -730,20 +729,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 60.21194225613066,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608758,
 ["damage_taken"] = 0.007187,
 ["start_time"] = 1725608748,
 ["delay"] = 0,
-["last_event"] = 1725608758,
+["last_dps"] = 60.21194225613066,
 },
 {
 ["flag_original"] = 4369,
@@ -755,32 +755,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 201.001182,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Windcaller"] = true,
 },
 ["targets"] = {
 ["Bloodfury Windcaller"] = 201,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608758,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 183,
 },
@@ -801,14 +800,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 18,
 },
@@ -830,36 +829,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 19.84021143016141,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608758,
 ["damage_taken"] = 79.001182,
 ["start_time"] = 1725608748,
 ["delay"] = 0,
-["last_event"] = 1725608758,
+["last_dps"] = 19.84021143016141,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005124,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 79.005124,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 79.005124,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4026-000059CF52",
-["aID"] = "4026",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -867,20 +866,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 79,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005124,
+["fight_component"] = true,
 ["end_time"] = 1725608758,
+["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 20,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 79,
 },
@@ -901,14 +901,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 40,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 20,
 ["r_amt"] = 0,
 },
 [6728] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mq"] = 0,
 },
@@ -920,136 +920,134 @@ _detalhes_database = {
 ["c_max"] = 0,
 ["id"] = 6728,
 ["r_dmg"] = 0,
-["RESIST"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
+["RESIST"] = 1,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608757,
 ["damage_taken"] = 610.005124,
 ["start_time"] = 1725608750,
 ["delay"] = 0,
-["last_event"] = 1725608757,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1596,
 ["tipo"] = 3,
+["combatId"] = 1596,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1596,
 ["tipo"] = 7,
+["combatId"] = 1596,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1596,
 ["tipo"] = 9,
+["combatId"] = 1596,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 9,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 10,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 10,
 ["debuff_uptime"] = 9,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608758,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4026-000059CF52",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4026-000059CF52",
+["aID"] = "4026",
 },
 },
 },
 {
-["combatId"] = 1596,
 ["tipo"] = 2,
+["combatId"] = 1596,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 1484288.57,
 ["tempo_start"] = 1725608748,
 ["last_events_tables"] = {
@@ -1058,9 +1056,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1612,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -1076,10 +1072,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1125,11 +1121,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1596,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Windcaller"] = 1,
 },
-["combat_counter"] = 1612,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 610,
 0,
@@ -1143,26 +1141,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1171,21 +1172,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 1484288.57,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Windcaller",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1595,
 ["tipo"] = 2,
+["combatId"] = 1595,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003428,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -1194,7 +1193,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 627.003428,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -1202,22 +1203,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Windcaller"] = 627,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608743,
+["totalabsorbed"] = 0.003428,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 66,
 },
@@ -1238,14 +1237,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 58,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 210,
 },
@@ -1266,14 +1265,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 58,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 72,
 },
@@ -1294,20 +1293,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 32.98629145637765,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608741,
 ["damage_taken"] = 0.003428,
 ["start_time"] = 1725608724,
 ["delay"] = 0,
-["last_event"] = 1725608741,
+["last_dps"] = 32.98629145637765,
 },
 {
 ["flag_original"] = 4369,
@@ -1319,32 +1319,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 279.003047,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Windcaller"] = true,
 },
 ["targets"] = {
 ["Bloodfury Windcaller"] = 279,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608743,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 32,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 230,
 },
@@ -1366,14 +1365,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 32,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 49,
 },
@@ -1395,36 +1394,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 15,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 14.67819060402239,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608740,
 ["damage_taken"] = 160.003047,
 ["start_time"] = 1725608724,
 ["delay"] = 0,
-["last_event"] = 1725608740,
+["last_dps"] = 14.67819060402239,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00773,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 160.00773,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 160.00773,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4026-000059B165",
-["aID"] = "4026",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -1432,20 +1431,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 160,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00773,
+["fight_component"] = true,
 ["end_time"] = 1725608743,
+["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 160,
 },
@@ -1466,14 +1466,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 [6728] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -1492,121 +1492,121 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608740,
 ["damage_taken"] = 627.00773,
 ["start_time"] = 1725608724,
 ["delay"] = 0,
-["last_event"] = 1725608740,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1595,
 ["tipo"] = 3,
+["combatId"] = 1595,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1595,
 ["tipo"] = 7,
+["combatId"] = 1595,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1595,
 ["tipo"] = 9,
+["combatId"] = 1595,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 19,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725608743,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4026-000059B165",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4026-000059B165",
+["aID"] = "4026",
 },
 },
 },
 {
-["combatId"] = 1595,
 ["tipo"] = 2,
+["combatId"] = 1595,
 ["_ActorTable"] = {
 },
 },
@@ -1620,11 +1620,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1611,
+["playing_solo"] = true,
 ["totals"] = {
 787,
 0,
@@ -1638,10 +1635,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1685,11 +1682,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1595,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Windcaller"] = 1,
 },
-["combat_counter"] = 1611,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 627,
 0,
@@ -1703,10 +1703,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1716,13 +1716,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1734,18 +1734,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1484264.31,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Windcaller",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1594,
 ["tipo"] = 2,
+["combatId"] = 1594,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008328,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -1754,7 +1753,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1143.008328,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -1763,22 +1764,20 @@ _detalhes_database = {
 ["Bloodfury Harpy"] = 664,
 ["Bloodfury Ambusher"] = 479,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608703,
+["totalabsorbed"] = 0.008328,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 64,
 ["Bloodfury Ambusher"] = 80,
@@ -1800,14 +1799,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 2,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 411,
 ["Bloodfury Ambusher"] = 212,
@@ -1829,14 +1828,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 196,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 0,
 },
@@ -1858,20 +1857,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 33.73696363647492,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608702,
 ["damage_taken"] = 0.008328,
 ["start_time"] = 1725608669,
 ["delay"] = 0,
-["last_event"] = 1725608702,
+["last_dps"] = 33.73696363647492,
 },
 {
 ["flag_original"] = 4369,
@@ -1883,11 +1883,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 376.005232,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Harpy"] = true,
 ["Bloodfury Ambusher"] = true,
@@ -1896,21 +1896,20 @@ _detalhes_database = {
 ["Bloodfury Harpy"] = 189,
 ["Bloodfury Ambusher"] = 187,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608703,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 16,
 ["targets"] = {
 ["Bloodfury Harpy"] = 156,
 ["Bloodfury Ambusher"] = 164,
@@ -1920,12 +1919,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 13,
 ["a_amt"] = 0,
-["total"] = 320,
-["c_max"] = 53,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 53,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1934,14 +1933,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 53,
 ["n_amt"] = 10,
-["b_dmg"] = 16,
-["r_amt"] = 0,
+["n_max"] = 30,
+["total"] = 320,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Harpy"] = 33,
 ["Bloodfury Ambusher"] = 23,
@@ -1951,12 +1950,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 9,
 ["a_amt"] = 0,
-["total"] = 56,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1965,36 +1964,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 9,
+["total"] = 56,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 11.09814734360213,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608702,
 ["damage_taken"] = 407.005232,
 ["start_time"] = 1725608679,
 ["delay"] = 1725608686,
-["last_event"] = 1725608702,
+["last_dps"] = 11.09814734360213,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.007358,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 247.007358,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 247.007358,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4025-00005A9F6C",
-["aID"] = "4025",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -2002,20 +2001,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 247,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007358,
+["fight_component"] = true,
 ["end_time"] = 1725608703,
+["aID"] = "4025",
 ["nome"] = "Bloodfury Ambusher",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 27,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 128,
 },
@@ -2036,14 +2036,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 27,
 ["r_amt"] = 0,
 },
 [2608] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 119,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 119,
 },
@@ -2063,36 +2063,35 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 119,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608700,
 ["damage_taken"] = 479.007358,
 ["start_time"] = 1725608685,
 ["delay"] = 0,
-["last_event"] = 1725608700,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005015,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 160.005015,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 160.005015,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4022-000059B15A",
-["aID"] = "4022",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -2100,20 +2099,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 160,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005015,
+["fight_component"] = true,
 ["end_time"] = 1725608703,
+["aID"] = "4022",
 ["nome"] = "Bloodfury Harpy",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 160,
 ["QM"] = 0,
@@ -2136,132 +2136,132 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 45,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608681,
 ["damage_taken"] = 664.005015,
 ["start_time"] = 1725608690,
 ["delay"] = 1725608681,
-["last_event"] = 1725608681,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1594,
 ["tipo"] = 3,
+["combatId"] = 1594,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1594,
 ["tipo"] = 7,
+["combatId"] = 1594,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1594,
 ["tipo"] = 9,
+["combatId"] = 1594,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 3,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 29,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 34,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 34,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 32,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 32,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725608703,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4025-00005A9F6C",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4025",
 ["nome"] = "Bloodfury Ambusher",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4025-00005A9F6C",
+["aID"] = "4025",
 },
 },
 },
 {
-["combatId"] = 1594,
 ["tipo"] = 2,
+["combatId"] = 1594,
 ["_ActorTable"] = {
 },
 },
@@ -2276,11 +2276,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1610,
+["playing_solo"] = true,
 ["totals"] = {
 1550,
 0,
@@ -2294,10 +2291,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2341,12 +2338,15 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1594,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Harpy"] = 1,
 ["Bloodfury Ambusher"] = 1,
 },
-["combat_counter"] = 1610,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 1143,
 0,
@@ -2360,10 +2360,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2373,13 +2373,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2391,18 +2391,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1484209.779,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Harpy",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1593,
 ["tipo"] = 2,
+["combatId"] = 1593,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001632,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -2411,7 +2410,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1233.001632,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -2419,22 +2420,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Windcaller"] = 1233,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608653,
+["totalabsorbed"] = 0.001632,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 66,
 },
@@ -2455,14 +2454,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 0,
 },
@@ -2484,14 +2483,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 560,
 },
@@ -2512,14 +2511,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["b_dmg"] = 0,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 96,
 },
@@ -2541,14 +2540,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [2643] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 55,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 55,
 },
@@ -2569,20 +2568,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 55,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 44.81849558368185,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608651,
 ["damage_taken"] = 0.001632,
 ["start_time"] = 1725608625,
 ["delay"] = 0,
-["last_event"] = 1725608651,
+["last_dps"] = 44.81849558368185,
 },
 {
 ["flag_original"] = 4369,
@@ -2594,32 +2594,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 456.008986,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Windcaller"] = true,
 },
 ["targets"] = {
 ["Bloodfury Windcaller"] = 456,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608653,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 31,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 397,
 },
@@ -2641,14 +2640,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 113,
 ["n_amt"] = 9,
-["b_dmg"] = 0,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 59,
 },
@@ -2669,36 +2668,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 17,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 16.57551473959464,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608651,
 ["damage_taken"] = 265.008986,
 ["start_time"] = 1725608625,
 ["delay"] = 0,
-["last_event"] = 1725608651,
+["last_dps"] = 16.57551473959464,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003784,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 265.003784,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 265.003784,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4026-000058E8A2",
-["aID"] = "4026",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -2706,20 +2705,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 265,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003784,
+["fight_component"] = true,
 ["end_time"] = 1725608653,
+["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 265,
 ["QM"] = 0,
@@ -2742,114 +2742,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 12,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608649,
 ["damage_taken"] = 1233.003784,
 ["start_time"] = 1725608629,
 ["delay"] = 0,
-["last_event"] = 1725608649,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1593,
 ["tipo"] = 3,
+["combatId"] = 1593,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1593,
 ["tipo"] = 7,
+["combatId"] = 1593,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1593,
 ["tipo"] = 9,
+["combatId"] = 1593,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 21,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 1,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 28,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 28,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 28,
 ["debuff_uptime"] = 21,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608653,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1593,
 ["tipo"] = 2,
+["combatId"] = 1593,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 1484207.348,
 ["tempo_start"] = 1725608625,
 ["last_events_tables"] = {
@@ -2858,9 +2856,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1609,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -2876,10 +2872,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2922,11 +2918,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1593,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Windcaller"] = 2,
 },
-["combat_counter"] = 1609,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 1233,
 0,
@@ -2940,26 +2938,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2968,21 +2969,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 1484165.591,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Windcaller",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1592,
 ["tipo"] = 2,
+["combatId"] = 1592,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007209,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -2991,7 +2990,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 633.007209,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -2999,22 +3000,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Windcaller"] = 633,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608617,
+["totalabsorbed"] = 0.007209,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 66,
 },
@@ -3035,14 +3034,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 44,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 263,
 },
@@ -3063,14 +3062,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 44,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 48,
 },
@@ -3091,20 +3090,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 50.49515068570163,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608616,
 ["damage_taken"] = 0.007209,
 ["start_time"] = 1725608605,
 ["delay"] = 0,
-["last_event"] = 1725608616,
+["last_dps"] = 50.49515068570163,
 },
 {
 ["flag_original"] = 4369,
@@ -3116,32 +3116,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 256.004424,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["damage_from"] = {
 ["Bloodfury Windcaller"] = true,
 },
 ["targets"] = {
 ["Bloodfury Windcaller"] = 256,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608617,
+["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 32,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 206,
 },
@@ -3162,14 +3161,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 32,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Windcaller"] = 50,
 },
@@ -3190,36 +3189,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 20.42153988500035,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608616,
 ["damage_taken"] = 89.004424,
 ["start_time"] = 1725608605,
 ["delay"] = 0,
-["last_event"] = 1725608616,
+["last_dps"] = 20.42153988500035,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.008238,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 89.008238,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 89.008238,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4026-00005AB071",
-["aID"] = "4026",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -3227,20 +3226,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 89,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.008238,
+["fight_component"] = true,
 ["end_time"] = 1725608617,
+["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 23,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 89,
 ["QM"] = 0,
@@ -3263,108 +3263,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 23,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608614,
 ["damage_taken"] = 633.008238,
 ["start_time"] = 1725608606,
 ["delay"] = 0,
-["last_event"] = 1725608614,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1592,
 ["tipo"] = 3,
+["combatId"] = 1592,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1592,
 ["tipo"] = 7,
+["combatId"] = 1592,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1592,
 ["tipo"] = 9,
+["combatId"] = 1592,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 12,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 12,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 12,
 ["debuff_uptime"] = 11,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608617,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0500A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0500A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1592,
 ["tipo"] = 2,
+["combatId"] = 1592,
 ["_ActorTable"] = {
 },
 },
@@ -3378,11 +3378,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1608,
+["playing_solo"] = true,
 ["totals"] = {
 722,
 0,
@@ -3396,10 +3393,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3440,11 +3437,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1592,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Windcaller"] = 1,
 },
-["combat_counter"] = 1608,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 633,
 0,
@@ -3458,10 +3458,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3471,13 +3471,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3489,18 +3489,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1484145.361,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Windcaller",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1591,
 ["tipo"] = 2,
+["combatId"] = 1591,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005936,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -3509,7 +3508,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 907.005936,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -3518,22 +3519,20 @@ _detalhes_database = {
 ["Bloodfury Ambusher"] = 462,
 ["Bloodfury Windcaller"] = 445,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608566,
+["totalabsorbed"] = 0.005936,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 33,
 },
@@ -3554,14 +3553,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 58,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 218,
 ["Bloodfury Windcaller"] = 164,
@@ -3583,14 +3582,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 104,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 58,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 64,
 ["Bloodfury Windcaller"] = 80,
@@ -3612,20 +3611,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 25.08382245085245,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608551,
 ["damage_taken"] = 0.005936,
 ["start_time"] = 1725608543,
 ["delay"] = 1725608551,
-["last_event"] = 1725608551,
+["last_dps"] = 25.08382245085245,
 },
 {
 ["flag_original"] = 4369,
@@ -3637,11 +3637,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 348.001871,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["damage_from"] = {
 ["Bloodfury Ambusher"] = true,
 ["Bloodfury Windcaller"] = true,
@@ -3650,21 +3650,20 @@ _detalhes_database = {
 ["Bloodfury Ambusher"] = 147,
 ["Bloodfury Windcaller"] = 201,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608566,
+["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 39,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 112,
 ["Bloodfury Windcaller"] = 182,
@@ -3687,14 +3686,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 39,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Ambusher"] = 35,
 ["Bloodfury Windcaller"] = 19,
@@ -3717,36 +3716,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 9.624211703867458,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608544,
 ["damage_taken"] = 807.0018709999999,
 ["start_time"] = 1725608550,
 ["delay"] = 1725608544,
-["last_event"] = 1725608544,
+["last_dps"] = 9.624211703867458,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00695,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 486.00695,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 486.00695,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4025-00005A9F86",
-["aID"] = "4025",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -3754,20 +3753,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 486,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00695,
+["fight_component"] = true,
 ["end_time"] = 1725608566,
+["aID"] = "4025",
 ["nome"] = "Bloodfury Ambusher",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 253,
 },
@@ -3788,14 +3788,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 54,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 29,
 ["r_amt"] = 0,
 },
 [2608] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 117,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 233,
 },
@@ -3815,36 +3815,35 @@ _detalhes_database = {
 ["successful_casted"] = 2,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 117,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608550,
 ["damage_taken"] = 462.00695,
 ["start_time"] = 1725608545,
 ["delay"] = 1725608550,
-["last_event"] = 1725608550,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.002939,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 321.002939,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 321.002939,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4026-00005A9F67",
-["aID"] = "4026",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -3852,20 +3851,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 321,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002939,
+["fight_component"] = true,
 ["end_time"] = 1725608566,
+["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 27,
+["b_dmg"] = 25,
 ["targets"] = {
 ["QM <Mq>"] = 321,
 ["QM"] = 0,
@@ -3875,12 +3875,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 16,
 ["a_amt"] = 0,
-["total"] = 321,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -3889,14 +3889,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 13,
-["b_dmg"] = 25,
-["r_amt"] = 0,
+["n_max"] = 27,
+["total"] = 321,
 },
 [6728] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -3915,145 +3915,145 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608550,
 ["damage_taken"] = 445.002939,
 ["start_time"] = 1725608547,
 ["delay"] = 1725608550,
-["last_event"] = 1725608550,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1591,
 ["tipo"] = 3,
+["combatId"] = 1591,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1591,
 ["tipo"] = 7,
+["combatId"] = 1591,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1591,
 ["tipo"] = 9,
+["combatId"] = 1591,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 2,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 22,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 37,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 37,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 24,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 24,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725608566,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4025-00005A9F86",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4025",
 ["nome"] = "Bloodfury Ambusher",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4025-00005A9F86",
+["aID"] = "4025",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4026-00005A9F67",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4026-00005A9F67",
+["aID"] = "4026",
 },
 },
 },
 {
-["combatId"] = 1591,
 ["tipo"] = 2,
+["combatId"] = 1591,
 ["_ActorTable"] = {
 },
 },
@@ -4068,11 +4068,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1607,
+["playing_solo"] = true,
 ["totals"] = {
 1714,
 0,
@@ -4086,10 +4083,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4137,11 +4134,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1591,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Ambusher"] = 1,
 },
-["combat_counter"] = 1607,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 907,
 0,
@@ -4155,10 +4155,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4168,13 +4168,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4186,18 +4186,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1484069.984,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Ambusher",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1590,
 ["tipo"] = 2,
+["combatId"] = 1590,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00479,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -4206,7 +4205,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 699.00479,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -4214,22 +4215,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Slayer"] = 699,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608497,
+["totalabsorbed"] = 0.00479,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [5116] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 0,
 },
@@ -4251,14 +4250,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 99,
 },
@@ -4279,14 +4278,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 56,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 313,
 },
@@ -4307,14 +4306,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 48,
 },
@@ -4335,20 +4334,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 54.51179833172555,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608497,
 ["damage_taken"] = 0.00479,
 ["start_time"] = 1725608485,
 ["delay"] = 0,
-["last_event"] = 1725608497,
+["last_dps"] = 54.51179833172555,
 },
 {
 ["flag_original"] = 4369,
@@ -4360,32 +4360,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 239.002598,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["damage_from"] = {
 ["Bloodfury Slayer"] = true,
 },
 ["targets"] = {
 ["Bloodfury Slayer"] = 239,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608497,
+["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 38,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 199,
 },
@@ -4406,14 +4405,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 38,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 40,
 },
@@ -4434,36 +4433,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 18.63858675837468,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608496,
 ["damage_taken"] = 118.002598,
 ["start_time"] = 1725608485,
 ["delay"] = 0,
-["last_event"] = 1725608496,
+["last_dps"] = 18.63858675837468,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003403,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 118.003403,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 118.003403,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4024-00005AB1A9",
-["aID"] = "4024",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -4471,20 +4470,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 118,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003403,
+["fight_component"] = true,
 ["end_time"] = 1725608497,
+["aID"] = "4024",
 ["nome"] = "Bloodfury Slayer",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 118,
 ["QM"] = 0,
@@ -4507,14 +4507,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [16231] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -4533,121 +4533,121 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608495,
 ["damage_taken"] = 699.0034029999999,
 ["start_time"] = 1725608487,
 ["delay"] = 0,
-["last_event"] = 1725608495,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1590,
 ["tipo"] = 3,
+["combatId"] = 1590,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1590,
 ["tipo"] = 7,
+["combatId"] = 1590,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1590,
 ["tipo"] = 9,
+["combatId"] = 1590,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 12,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 12,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 12,
 ["debuff_uptime"] = 11,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608497,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4024-00005AB1A9",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4024",
 ["nome"] = "Bloodfury Slayer",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4024-00005AB1A9",
+["aID"] = "4024",
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1590,
 ["tipo"] = 2,
+["combatId"] = 1590,
 ["_ActorTable"] = {
 },
 },
@@ -4662,11 +4662,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1606,
+["playing_solo"] = true,
 ["totals"] = {
 817,
 0,
@@ -4680,10 +4677,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4697,15 +4694,15 @@ _detalhes_database = {
 ["QM <Mq>"] = {
 ["Growl"] = 1,
 },
+["QM"] = {
+["Growl"] = 1,
+["Screech"] = 5,
+},
 ["Mq"] = {
 ["Auto Shot"] = 5,
 ["Concussive Shot"] = 1,
 ["Arcane Shot"] = 2,
 ["Serpent Sting"] = 1,
-},
-["QM"] = {
-["Growl"] = 1,
-["Screech"] = 5,
 },
 ["Bloodfury Slayer"] = {
 ["Curse of Recklessness"] = 1,
@@ -4729,11 +4726,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1590,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Slayer"] = 1,
 },
-["combat_counter"] = 1606,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 699,
 0,
@@ -4747,10 +4747,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4760,13 +4760,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4778,18 +4778,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1484025.654,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Slayer",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1589,
 ["tipo"] = 2,
+["combatId"] = 1589,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002028,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -4798,7 +4797,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 752.002028,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -4806,22 +4807,48 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 752,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608462,
+["totalabsorbed"] = 0.002028,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
+[14282] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Bloodfury Roguefeather"] = 91,
+},
+["n_total"] = 91,
+["n_min"] = 25,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 91,
+["c_max"] = 0,
+["id"] = 14282,
+["r_dmg"] = 25,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 33,
+["r_amt"] = 1,
+},
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 0,
 },
@@ -4843,42 +4870,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
-},
-[14282] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 33,
-["targets"] = {
-["Bloodfury Roguefeather"] = 91,
-},
-["n_total"] = 91,
-["n_min"] = 25,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 91,
-["c_max"] = 0,
-["id"] = 14282,
-["r_dmg"] = 25,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 1,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 57,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 363,
 },
@@ -4899,14 +4898,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 105,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 57,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 64,
 },
@@ -4927,20 +4926,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 35.69065154276142,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608461,
 ["damage_taken"] = 0.002028,
 ["start_time"] = 1725608441,
 ["delay"] = 0,
-["last_event"] = 1725608461,
+["last_dps"] = 35.69065154276142,
 },
 {
 ["flag_original"] = 4369,
@@ -4952,32 +4952,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 234.001715,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["damage_from"] = {
 ["Bloodfury Roguefeather"] = true,
 },
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 234,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608462,
+["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 195,
 },
@@ -4999,14 +4998,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 29,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 39,
 },
@@ -5028,36 +5027,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 11.10591907934797,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608460,
 ["damage_taken"] = 169.001715,
 ["start_time"] = 1725608441,
 ["delay"] = 0,
-["last_event"] = 1725608460,
+["last_dps"] = 11.10591907934797,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007027,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 169.007027,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 169.007027,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4023-00005AB1CD",
-["aID"] = "4023",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -5065,20 +5064,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 169,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007027,
+["fight_component"] = true,
 ["end_time"] = 1725608462,
+["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 23,
 ["targets"] = {
 ["QM <Mq>"] = 169,
 ["QM"] = 0,
@@ -5101,114 +5101,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 23,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608460,
 ["damage_taken"] = 752.007027,
 ["start_time"] = 1725608448,
 ["delay"] = 0,
-["last_event"] = 1725608460,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1589,
 ["tipo"] = 3,
+["combatId"] = 1589,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1589,
 ["tipo"] = 7,
+["combatId"] = 1589,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1589,
 ["tipo"] = 9,
+["combatId"] = 1589,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 21,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 21,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 21,
 ["debuff_uptime"] = 14,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608462,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1589,
 ["tipo"] = 2,
+["combatId"] = 1589,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 1484015.851,
 ["tempo_start"] = 1725608441,
 ["last_events_tables"] = {
@@ -5217,9 +5215,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1605,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -5235,10 +5231,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5280,11 +5276,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1589,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Roguefeather"] = 1,
 },
-["combat_counter"] = 1605,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 752,
 0,
@@ -5298,26 +5296,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5326,21 +5327,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 1483981.806,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Roguefeather",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1588,
 ["tipo"] = 2,
+["combatId"] = 1588,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005646,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -5349,7 +5348,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 798.0056460000001,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -5357,50 +5358,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 798,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608418,
+["totalabsorbed"] = 0.005646,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[2643] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 57,
-["targets"] = {
-["Bloodfury Roguefeather"] = 57,
-},
-["n_total"] = 57,
-["n_min"] = 57,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 57,
-["c_max"] = 0,
-["id"] = 2643,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 33,
 },
@@ -5422,14 +5393,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
+[2643] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Bloodfury Roguefeather"] = 57,
+},
+["n_total"] = 57,
+["n_min"] = 57,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 57,
+["c_max"] = 0,
+["id"] = 2643,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 57,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 55,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 360,
 },
@@ -5450,14 +5449,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 55,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 72,
 },
@@ -5478,20 +5477,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 38.85508063113466,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608418,
 ["damage_taken"] = 0.005646,
 ["start_time"] = 1725608398,
 ["delay"] = 0,
-["last_event"] = 1725608418,
+["last_dps"] = 38.85508063113466,
 },
 {
 ["flag_original"] = 4369,
@@ -5503,32 +5503,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 276.00858,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["damage_from"] = {
 ["Bloodfury Roguefeather"] = true,
 },
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 276,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608418,
+["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 4,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 234,
 },
@@ -5550,14 +5549,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 3,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 42,
 },
@@ -5579,36 +5578,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 3,
 ["n_amt"] = 5,
-["b_dmg"] = 3,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 13.43892199828493,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608418,
 ["damage_taken"] = 127.00858,
 ["start_time"] = 1725608400,
 ["delay"] = 0,
-["last_event"] = 1725608418,
+["last_dps"] = 13.43892199828493,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003504,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 127.003504,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 127.003504,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4023-00005AB160",
-["aID"] = "4023",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -5616,20 +5615,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 127,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003504,
+["fight_component"] = true,
 ["end_time"] = 1725608418,
+["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 127,
 ["QM"] = 0,
@@ -5652,14 +5652,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 [3391] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -5678,132 +5678,132 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608414,
 ["damage_taken"] = 798.003504,
 ["start_time"] = 1725608402,
 ["delay"] = 0,
-["last_event"] = 1725608414,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1588,
 ["tipo"] = 3,
+["combatId"] = 1588,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1588,
 ["tipo"] = 7,
+["combatId"] = 1588,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1588,
 ["tipo"] = 9,
+["combatId"] = 1588,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 7,
-["appliedamt"] = 2,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 20,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 20,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 22,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 22,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725608418,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4023-00005AB160",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4023-00005AB160",
+["aID"] = "4023",
 },
 },
 },
 {
-["combatId"] = 1588,
 ["tipo"] = 2,
+["combatId"] = 1588,
 ["_ActorTable"] = {
 },
 },
@@ -5817,11 +5817,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1604,
+["playing_solo"] = true,
 ["totals"] = {
 925,
 0,
@@ -5835,10 +5832,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5885,11 +5882,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1588,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Roguefeather"] = 1,
 },
-["combat_counter"] = 1604,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 798,
 0,
@@ -5903,10 +5903,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5916,13 +5916,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5934,18 +5934,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483938.61,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Roguefeather",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1587,
 ["tipo"] = 2,
+["combatId"] = 1587,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003055,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -5954,7 +5953,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 743.003055,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -5962,22 +5963,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Singed Basilisk"] = 743,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608367,
+["totalabsorbed"] = 0.003055,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Singed Basilisk"] = 99,
 },
@@ -5998,14 +5997,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 56,
+["b_dmg"] = 41,
 ["targets"] = {
 ["Singed Basilisk"] = 356,
 },
@@ -6026,14 +6025,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 41,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Singed Basilisk"] = 64,
 },
@@ -6054,20 +6053,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 41.77460109055741,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608367,
 ["damage_taken"] = 0.003055,
 ["start_time"] = 1725608350,
 ["delay"] = 0,
-["last_event"] = 1725608367,
+["last_dps"] = 41.77460109055741,
 },
 {
 ["flag_original"] = 4369,
@@ -6079,32 +6079,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 224.00731,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["damage_from"] = {
 ["Singed Basilisk"] = true,
 },
 ["targets"] = {
 ["Singed Basilisk"] = 224,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608367,
+["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Singed Basilisk"] = 167,
 },
@@ -6113,12 +6112,12 @@ _detalhes_database = {
 ["g_dmg"] = 82,
 ["counter"] = 9,
 ["MISS"] = 1,
-["total"] = 167,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 2,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -6127,14 +6126,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 29,
+["total"] = 167,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Singed Basilisk"] = 57,
 },
@@ -6155,36 +6154,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 12.59458619132977,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608365,
 ["damage_taken"] = 186.00731,
 ["start_time"] = 1725608350,
 ["delay"] = 0,
-["last_event"] = 1725608365,
+["last_dps"] = 12.59458619132977,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.001758,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 186.001758,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 186.001758,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4042-000059B19E",
-["aID"] = "4042",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -6192,20 +6191,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 186,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.001758,
+["fight_component"] = true,
 ["end_time"] = 1725608367,
+["aID"] = "4042",
 ["nome"] = "Singed Basilisk",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 186,
 ["QM"] = 0,
@@ -6228,108 +6228,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608366,
 ["damage_taken"] = 743.001758,
 ["start_time"] = 1725608350,
 ["delay"] = 0,
-["last_event"] = 1725608366,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1587,
 ["tipo"] = 3,
+["combatId"] = 1587,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1587,
 ["tipo"] = 7,
+["combatId"] = 1587,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1587,
 ["tipo"] = 9,
+["combatId"] = 1587,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 17,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 17,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 17,
 ["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608367,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0400A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0400A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1587,
 ["tipo"] = 2,
+["combatId"] = 1587,
 ["_ActorTable"] = {
 },
 },
@@ -6344,11 +6344,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1603,
+["playing_solo"] = true,
 ["totals"] = {
 929,
 0,
@@ -6362,10 +6359,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6407,11 +6404,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1587,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Singed Basilisk"] = 1,
 },
-["combat_counter"] = 1603,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 743,
 0,
@@ -6425,10 +6425,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6438,13 +6438,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6456,18 +6456,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483890.445,
-["TimeData"] = {
-},
 ["contra"] = "Singed Basilisk",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1586,
 ["tipo"] = 2,
+["combatId"] = 1586,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00553,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -6476,7 +6475,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 369.00553,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -6485,50 +6486,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 369,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608331,
+["totalabsorbed"] = 0.00553,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[13550] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Bloodfury Storm Witch"] = 76,
-},
-["n_total"] = 76,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 76,
-["c_max"] = 0,
-["id"] = 13550,
-["r_dmg"] = 12,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 1,
-},
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 0,
 },
@@ -6550,14 +6521,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
+},
+[13550] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Bloodfury Storm Witch"] = 76,
+},
+["n_total"] = 76,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 76,
+["c_max"] = 0,
+["id"] = 13550,
+["r_dmg"] = 12,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["n_max"] = 16,
+["r_amt"] = 1,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 38,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 97,
 },
@@ -6578,14 +6577,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 38,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 66,
 },
@@ -6606,20 +6605,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 17.80055619876178,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608327,
 ["damage_taken"] = 144.00553,
 ["start_time"] = 1725608310,
 ["delay"] = 0,
-["last_event"] = 1725608327,
+["last_dps"] = 17.80055619876178,
 },
 {
 ["flag_original"] = 4369,
@@ -6631,32 +6631,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 130.008001,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Storm Witch"] = true,
 },
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 130,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608331,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 31,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 94,
 },
@@ -6678,14 +6677,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 36,
 },
@@ -6707,36 +6706,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 6.271490641587883,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608322,
 ["damage_taken"] = 305.008001,
 ["start_time"] = 1725608314,
 ["delay"] = 0,
-["last_event"] = 1725608322,
+["last_dps"] = 6.271490641587883,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.006654,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 449.006654,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 449.006654,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4027-0000582E6F",
-["aID"] = "4027",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -6745,20 +6744,21 @@ _detalhes_database = {
 ["Mq"] = 144,
 ["QM <Mq>"] = 305,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.006654,
+["fight_component"] = true,
 ["end_time"] = 1725608331,
+["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 47,
 ["QM"] = 0,
@@ -6781,14 +6781,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["r_amt"] = 0,
 },
 [6535] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 47,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mq"] = 47,
 ["QM <Mq>"] = 45,
@@ -6809,14 +6809,14 @@ _detalhes_database = {
 ["successful_casted"] = 2,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 47,
 ["r_amt"] = 0,
 },
 [9532] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 110,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mq"] = 97,
 ["QM <Mq>"] = 213,
@@ -6837,132 +6837,132 @@ _detalhes_database = {
 ["successful_casted"] = 3,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 110,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608323,
 ["damage_taken"] = 369.006654,
 ["start_time"] = 1725608313,
 ["delay"] = 0,
-["last_event"] = 1725608323,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1586,
 ["tipo"] = 3,
+["combatId"] = 1586,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1586,
 ["tipo"] = 7,
+["combatId"] = 1586,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1586,
 ["tipo"] = 9,
+["combatId"] = 1586,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 1,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 21,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 21,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 21,
 ["debuff_uptime"] = 21,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608331,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4027-0000582E6F",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4027-0000582E6F",
+["aID"] = "4027",
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1586,
 ["tipo"] = 2,
+["combatId"] = 1586,
 ["_ActorTable"] = {
 },
 },
@@ -6977,11 +6977,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1602,
+["playing_solo"] = true,
 ["totals"] = {
 818,
 0,
@@ -6995,10 +6992,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7012,14 +7009,14 @@ _detalhes_database = {
 ["QM <Mq>"] = {
 ["Growl"] = 1,
 },
+["Bloodfury Storm Witch"] = {
+["Lightning Bolt"] = 3,
+["Lightning Cloud"] = 2,
+},
 ["Mq"] = {
 ["Auto Shot"] = 2,
 ["Arcane Shot"] = 1,
 ["Serpent Sting"] = 1,
-},
-["Bloodfury Storm Witch"] = {
-["Lightning Bolt"] = 3,
-["Lightning Cloud"] = 2,
 },
 ["QM"] = {
 ["Growl"] = 1,
@@ -7044,10 +7041,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1586,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 },
-["combat_counter"] = 1602,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 369,
 0,
@@ -7061,10 +7061,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7074,13 +7074,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7092,18 +7092,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483851.108,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Storm Witch",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1585,
 ["tipo"] = 2,
+["combatId"] = 1585,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.003241,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -7112,7 +7111,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 710.003241,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -7120,22 +7121,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 710,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608289,
+["totalabsorbed"] = 0.003241,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 99,
 },
@@ -7156,14 +7155,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 61,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 328,
 },
@@ -7184,14 +7183,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 61,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 64,
 },
@@ -7212,20 +7211,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 49.08421990984347,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608288,
 ["damage_taken"] = 0.003241,
 ["start_time"] = 1725608274,
 ["delay"] = 0,
-["last_event"] = 1725608288,
+["last_dps"] = 49.08421990984347,
 },
 {
 ["flag_original"] = 4369,
@@ -7237,32 +7237,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 219.00525,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Storm Witch"] = true,
 },
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 219,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608289,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 184,
 },
@@ -7284,14 +7283,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 35,
 },
@@ -7313,14 +7312,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 [14916] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 0,
 },
@@ -7330,48 +7329,48 @@ _detalhes_database = {
 ["counter"] = 1,
 ["total"] = 0,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 1,
 ["id"] = 14916,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.14035603171317,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608288,
 ["damage_taken"] = 179.00525,
 ["start_time"] = 1725608274,
 ["delay"] = 0,
-["last_event"] = 1725608288,
+["last_dps"] = 15.14035603171317,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003764,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 179.003764,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 179.003764,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4027-000058872A",
-["aID"] = "4027",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -7379,20 +7378,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 179,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003764,
+["fight_component"] = true,
 ["end_time"] = 1725608289,
+["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 22,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 44,
 },
@@ -7413,14 +7413,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 22,
 ["r_amt"] = 0,
 },
 [9532] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 86,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 86,
 },
@@ -7440,14 +7440,14 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 86,
 ["r_amt"] = 0,
 },
 [6535] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 49,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 49,
 },
@@ -7467,121 +7467,121 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 49,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608285,
 ["damage_taken"] = 710.003764,
 ["start_time"] = 1725608277,
 ["delay"] = 0,
-["last_event"] = 1725608285,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1585,
 ["tipo"] = 3,
+["combatId"] = 1585,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1585,
 ["tipo"] = 7,
+["combatId"] = 1585,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1585,
 ["tipo"] = 9,
+["combatId"] = 1585,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 15,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 15,
 ["debuff_uptime"] = 13,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608289,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4027-000058872A",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4027-000058872A",
+["aID"] = "4027",
 },
 },
 },
 {
-["combatId"] = 1585,
 ["tipo"] = 2,
+["combatId"] = 1585,
 ["_ActorTable"] = {
 },
 },
@@ -7596,11 +7596,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1601,
+["playing_solo"] = true,
 ["totals"] = {
 889,
 0,
@@ -7614,10 +7611,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7662,11 +7659,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1585,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Storm Witch"] = 1,
 },
-["combat_counter"] = 1601,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 710,
 0,
@@ -7680,10 +7680,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7693,13 +7693,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7711,18 +7711,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483814.902,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Storm Witch",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1584,
 ["tipo"] = 2,
+["combatId"] = 1584,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.007161,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -7731,7 +7730,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 808.007161,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -7739,22 +7740,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 808,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608248,
+["totalabsorbed"] = 0.007161,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 76,
 },
@@ -7775,14 +7774,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 1,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 55,
+["b_dmg"] = 39,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 400,
 },
@@ -7803,14 +7802,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 39,
+["n_max"] = 55,
 ["r_amt"] = 0,
 },
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 58,
 },
@@ -7831,20 +7830,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 46.42118585556143,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608247,
 ["damage_taken"] = 0.007161,
 ["start_time"] = 1725608230,
 ["delay"] = 0,
-["last_event"] = 1725608247,
+["last_dps"] = 46.42118585556143,
 },
 {
 ["flag_original"] = 4369,
@@ -7856,32 +7856,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 274.008669,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Roguefeather"] = true,
 },
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 274,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608248,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 224,
 },
@@ -7902,14 +7901,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 50,
 },
@@ -7930,36 +7929,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.74219631165374,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608246,
 ["damage_taken"] = 252.008669,
 ["start_time"] = 1725608230,
 ["delay"] = 0,
-["last_event"] = 1725608246,
+["last_dps"] = 15.74219631165374,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007799,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 252.007799,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 252.007799,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4023-000058E666",
-["aID"] = "4023",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -7967,20 +7966,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 252,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007799,
+["fight_component"] = true,
 ["end_time"] = 1725608248,
+["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 252,
 ["QM"] = 0,
@@ -8003,119 +8003,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 53,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608244,
 ["damage_taken"] = 808.007799,
 ["start_time"] = 1725608230,
 ["delay"] = 0,
-["last_event"] = 1725608244,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1584,
 ["tipo"] = 3,
+["combatId"] = 1584,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1584,
 ["tipo"] = 7,
+["combatId"] = 1584,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1584,
 ["tipo"] = 9,
+["combatId"] = 1584,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 2,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 18,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 18,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 17,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 17,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725608248,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1584,
 ["tipo"] = 2,
+["combatId"] = 1584,
 ["_ActorTable"] = {
 },
 },
@@ -8130,11 +8130,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1600,
+["playing_solo"] = true,
 ["totals"] = {
 1060,
 0,
@@ -8148,10 +8145,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8192,11 +8189,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1584,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Roguefeather"] = 1,
 },
-["combat_counter"] = 1600,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 808,
 0,
@@ -8210,10 +8210,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8223,13 +8223,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8241,18 +8241,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483770.758,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Roguefeather",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1583,
 ["tipo"] = 2,
+["combatId"] = 1583,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.006698,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -8261,7 +8260,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 741.006698,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -8270,22 +8271,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 741,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608216,
+["totalabsorbed"] = 0.006698,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 128,
 },
@@ -8306,14 +8305,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 2,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 400,
 },
@@ -8334,14 +8333,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 0,
 },
@@ -8363,20 +8362,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 23.1767389590406,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608214,
 ["damage_taken"] = 383.006698,
 ["start_time"] = 1725608184,
 ["delay"] = 0,
-["last_event"] = 1725608214,
+["last_dps"] = 23.1767389590406,
 },
 {
 ["flag_original"] = 4369,
@@ -8388,32 +8388,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 213.007357,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Storm Witch"] = true,
 },
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 213,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608216,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 4,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 0,
 ["Bloodfury Storm Witch"] = 160,
@@ -8423,12 +8422,12 @@ _detalhes_database = {
 ["g_dmg"] = 76,
 ["counter"] = 9,
 ["a_amt"] = 0,
-["total"] = 160,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -8437,14 +8436,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 29,
+["total"] = 160,
 },
 [14916] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 0,
 },
@@ -8454,26 +8453,26 @@ _detalhes_database = {
 ["counter"] = 1,
 ["total"] = 0,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 1,
 ["id"] = 14916,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 53,
 },
@@ -8495,36 +8494,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 6.662309426984652,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608230,
 ["damage_taken"] = 92.007357,
 ["start_time"] = 1725608201,
 ["delay"] = 1725608185,
-["last_event"] = 1725608230,
+["last_dps"] = 6.662309426984652,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00372,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 475.00372,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 475.00372,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4027-0000582CDE",
-["aID"] = "4027",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -8533,20 +8532,21 @@ _detalhes_database = {
 ["QM <Mq>"] = 92,
 ["Mq"] = 383,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00372,
+["fight_component"] = true,
 ["end_time"] = 1725608216,
+["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [9532] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 106,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 92,
 ["Mq"] = 383,
@@ -8567,132 +8567,132 @@ _detalhes_database = {
 ["successful_casted"] = 5,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 106,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608215,
 ["damage_taken"] = 741.0037199999999,
 ["start_time"] = 1725608201,
 ["delay"] = 1725608187,
-["last_event"] = 1725608215,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1583,
 ["tipo"] = 3,
+["combatId"] = 1583,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1583,
 ["tipo"] = 7,
+["combatId"] = 1583,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1583,
 ["tipo"] = 9,
+["combatId"] = 1583,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 29,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [15571] = {
-["activedamt"] = 1,
-["id"] = 15571,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 12,
-["appliedamt"] = 3,
+["id"] = 15571,
 ["refreshamt"] = 1,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 32,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 32,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 32,
 ["debuff_uptime"] = 41,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608216,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4027-0000582CDE",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4027-0000582CDE",
+["aID"] = "4027",
 },
 },
 },
 {
-["combatId"] = 1583,
 ["tipo"] = 2,
+["combatId"] = 1583,
 ["_ActorTable"] = {
 },
 },
@@ -8707,11 +8707,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1599,
+["playing_solo"] = true,
 ["totals"] = {
 1216,
 0,
@@ -8725,10 +8722,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8772,11 +8769,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1583,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Storm Witch"] = 1,
 },
-["combat_counter"] = 1599,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 741,
 0,
@@ -8790,10 +8790,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8803,13 +8803,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8821,18 +8821,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483724.643,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Storm Witch",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1582,
 ["tipo"] = 2,
+["combatId"] = 1582,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.00355,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -8841,7 +8840,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 704.00355,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -8849,22 +8850,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 704,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608177,
+["totalabsorbed"] = 0.00355,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 370,
 },
@@ -8885,14 +8884,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 102,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 48,
 },
@@ -8913,20 +8912,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 36.39577883451379,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608175,
 ["damage_taken"] = 0.00355,
 ["start_time"] = 1725608157,
 ["delay"] = 0,
-["last_event"] = 1725608175,
+["last_dps"] = 36.39577883451379,
 },
 {
 ["flag_original"] = 4369,
@@ -8938,32 +8938,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 286.004549,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Storm Witch"] = true,
 },
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 286,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608177,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 1,
-["n_max"] = 29,
+["b_dmg"] = 15,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 236,
 },
@@ -8985,14 +8984,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 57,
 ["n_amt"] = 6,
-["b_dmg"] = 15,
+["n_max"] = 29,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 50,
 },
@@ -9013,36 +9012,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 14.78594576841106,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608175,
 ["damage_taken"] = 294.004549,
 ["start_time"] = 1725608157,
 ["delay"] = 0,
-["last_event"] = 1725608175,
+["last_dps"] = 14.78594576841106,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00414,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 294.00414,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 294.00414,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4027-000059B056",
-["aID"] = "4027",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -9050,20 +9049,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 294,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00414,
+["fight_component"] = true,
 ["end_time"] = 1725608177,
+["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 24,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 90,
 },
@@ -9084,14 +9084,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 24,
 ["r_amt"] = 0,
 },
 [6535] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 65,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 110,
 },
@@ -9111,14 +9111,14 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 65,
 ["r_amt"] = 0,
 },
 [9532] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 94,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 94,
 },
@@ -9138,127 +9138,125 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 94,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608172,
 ["damage_taken"] = 704.00414,
 ["start_time"] = 1725608159,
 ["delay"] = 0,
-["last_event"] = 1725608172,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1582,
 ["tipo"] = 3,
+["combatId"] = 1582,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1582,
 ["tipo"] = 7,
+["combatId"] = 1582,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1582,
 ["tipo"] = 9,
+["combatId"] = 1582,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 20,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 20,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 20,
 ["debuff_uptime"] = 11,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608177,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4027-000059B056",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4027-000059B056",
+["aID"] = "4027",
 },
 },
 },
 {
-["combatId"] = 1582,
 ["tipo"] = 2,
+["combatId"] = 1582,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 1483723.827,
 ["tempo_start"] = 1725608157,
 ["last_events_tables"] = {
@@ -9267,9 +9265,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1598,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -9285,10 +9281,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9333,11 +9329,13 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1582,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Storm Witch"] = 1,
 },
-["combat_counter"] = 1598,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 704,
 0,
@@ -9351,26 +9349,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -9379,21 +9380,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 1483697.602,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Storm Witch",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1581,
 ["tipo"] = 2,
+["combatId"] = 1581,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005732,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -9402,7 +9401,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1516.005732,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -9412,52 +9413,20 @@ _detalhes_database = {
 ["Bloodfury Roguefeather"] = 744,
 ["Bloodfury Storm Witch"] = 772,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608128,
+["totalabsorbed"] = 0.005732,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[2643] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 55,
-["targets"] = {
-["Bloodfury Roguefeather"] = 52,
-["Bloodfury Storm Witch"] = 55,
-},
-["n_total"] = 107,
-["n_min"] = 52,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 107,
-["c_max"] = 0,
-["MISS"] = 1,
-["id"] = 2643,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 20,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 33,
 ["Bloodfury Storm Witch"] = 20,
@@ -9480,14 +9449,44 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 20,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
+[2643] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Bloodfury Roguefeather"] = 52,
+["Bloodfury Storm Witch"] = 55,
+},
+["n_total"] = 107,
+["n_min"] = 52,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 107,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 2643,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 55,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 46,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 311,
 ["Bloodfury Storm Witch"] = 443,
@@ -9509,14 +9508,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 14,
-["b_dmg"] = 46,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 76,
 ["Bloodfury Storm Witch"] = 76,
@@ -9538,20 +9537,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 2,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 35.79199480600466,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608126,
 ["damage_taken"] = 200.005732,
 ["start_time"] = 1725608092,
 ["delay"] = 0,
-["last_event"] = 1725608126,
+["last_dps"] = 35.79199480600466,
 },
 {
 ["flag_original"] = 4369,
@@ -9563,11 +9563,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 450.004394,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Roguefeather"] = true,
 ["Bloodfury Storm Witch"] = true,
@@ -9576,21 +9576,20 @@ _detalhes_database = {
 ["Bloodfury Roguefeather"] = 272,
 ["Bloodfury Storm Witch"] = 178,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608128,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 7,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 250,
 ["Bloodfury Storm Witch"] = 139,
@@ -9600,12 +9599,12 @@ _detalhes_database = {
 ["g_dmg"] = 165,
 ["counter"] = 18,
 ["a_amt"] = 0,
-["total"] = 389,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -9614,14 +9613,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 30,
+["total"] = 389,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Roguefeather"] = 22,
 ["Bloodfury Storm Witch"] = 39,
@@ -9644,36 +9643,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 10.62433643405728,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608125,
 ["damage_taken"] = 690.004394,
 ["start_time"] = 1725608092,
 ["delay"] = 0,
-["last_event"] = 1725608125,
+["last_dps"] = 10.62433643405728,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005649,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 624.005649,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 624.005649,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4027-00005AA028",
-["aID"] = "4027",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -9682,20 +9681,21 @@ _detalhes_database = {
 ["Mq"] = 200,
 ["QM <Mq>"] = 424,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005649,
+["fight_component"] = true,
 ["end_time"] = 1725608128,
+["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [9532] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 111,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 193,
 ["Mq"] = 200,
@@ -9707,26 +9707,26 @@ _detalhes_database = {
 ["counter"] = 5,
 ["total"] = 393,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 9532,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 4,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 111,
 ["r_amt"] = 0,
 },
 [6535] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 231,
 },
@@ -9746,36 +9746,35 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608114,
 ["damage_taken"] = 772.005649,
 ["start_time"] = 1725608099,
 ["delay"] = 1725608114,
-["last_event"] = 1725608114,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.001188,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 266.001188,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 266.001188,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4023-00005AA0C4",
-["aID"] = "4023",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -9783,20 +9782,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 266,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.001188,
+["fight_component"] = true,
 ["end_time"] = 1725608128,
+["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 25,
 ["targets"] = {
 ["QM <Mq>"] = 266,
 ["QM"] = 0,
@@ -9806,12 +9806,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 14,
 ["a_amt"] = 0,
-["total"] = 266,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -9820,14 +9820,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 11,
-["b_dmg"] = 25,
-["r_amt"] = 0,
+["n_max"] = 26,
+["total"] = 266,
 },
 [3391] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -9846,29 +9846,31 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608121,
 ["damage_taken"] = 744.001188,
 ["start_time"] = 1725608099,
 ["delay"] = 0,
-["last_event"] = 1725608121,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1581,
 ["tipo"] = 3,
+["combatId"] = 1581,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
+["targets_overheal"] = {
+},
 ["pets"] = {
 "QM <Mq>",
 },
@@ -9881,29 +9883,22 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 1,
 ["on_hold"] = false,
+["serial"] = "Player-5266-026B513C",
 ["totalabsorb"] = 0.008057,
 ["last_hps"] = 1.794505076025996,
-["aID"] = "5266-026B513C",
-["fight_component"] = true,
 ["targets"] = {
 ["QM <Mq>"] = 76,
 },
-["serial"] = "Player-5266-026B513C",
-["colocacao"] = 1,
 ["totalover_without_pet"] = 0.008057,
-["healing_from"] = {
-},
+["last_event"] = 1725608127,
 ["healing_taken"] = 0.008057,
-["grupo"] = true,
-["classe"] = "HUNTER",
+["fight_component"] = true,
 ["end_time"] = 1725608128,
-["targets_overheal"] = {
-},
-["start_time"] = 1725608126,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 [3111] = {
 ["c_amt"] = 0,
@@ -9919,31 +9914,38 @@ _detalhes_database = {
 ["counter"] = 2,
 ["overheal"] = 0,
 ["total"] = 76,
-["c_max"] = 0,
+["spellschool"] = 8,
 ["id"] = 3111,
 ["targets_absorbs"] = {
 },
 ["c_min"] = 0,
-["spellschool"] = 8,
+["c_max"] = 0,
 ["c_total"] = 0,
 ["totaldenied"] = 0,
 ["n_amt"] = 2,
 ["absorbed"] = 0,
 },
 },
+["tipo"] = 3,
 },
+["grupo"] = true,
+["healing_from"] = {
+},
+["start_time"] = 1725608126,
 ["custom"] = 0,
-["last_event"] = 1725608127,
+["tipo"] = 2,
 ["totaldenied"] = 0.008057,
 ["delay"] = 0,
-["tipo"] = 2,
+["classe"] = "HUNTER",
 },
 {
 ["flag_original"] = 4369,
+["targets_overheal"] = {
+},
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
-["heal_enemy_amt"] = 0,
+["classe"] = "PET",
 ["totalover"] = 0.008742,
 ["total_without_pet"] = 0.008742,
 ["total"] = 0.008742,
@@ -9951,56 +9953,52 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 2,
 ["on_hold"] = false,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["totalabsorb"] = 0.008742,
 ["last_hps"] = 0.0002098315011280701,
-["fight_component"] = true,
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
 ["targets"] = {
 },
-["grupo"] = true,
-["healing_from"] = {
-["Mq"] = true,
-},
-["totalover_without_pet"] = 0.008742,
 ["start_time"] = 1725608128,
+["totalover_without_pet"] = 0.008742,
 ["healing_taken"] = 76.008742,
-["classe"] = "PET",
+["fight_component"] = true,
 ["end_time"] = 1725608128,
-["targets_overheal"] = {
-},
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 },
+["tipo"] = 3,
+},
+["grupo"] = true,
+["last_event"] = 0,
+["healing_from"] = {
+["Mq"] = true,
 },
 ["custom"] = 0,
-["last_event"] = 0,
+["tipo"] = 2,
 ["totaldenied"] = 0.008742,
 ["delay"] = 0,
-["tipo"] = 2,
+["heal_enemy_amt"] = 0,
 },
 },
 },
 {
-["combatId"] = 1581,
 ["tipo"] = 7,
+["combatId"] = 1581,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1581,
 ["tipo"] = 9,
+["combatId"] = 1581,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["serial"] = "Player-5266-026B513C",
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [15571] = {
 ["activedamt"] = -1,
@@ -10015,74 +10013,76 @@ _detalhes_database = {
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 30,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["buff_uptime_targets"] = {
-},
-["pets"] = {
-"QM <Mq>",
-},
-["fight_component"] = true,
-["debuff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
-["grupo"] = true,
-["buff_uptime_spells"] = {
 ["tipo"] = 9,
+},
+["buff_uptime"] = 42,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13163] = {
-["activedamt"] = 1,
-["id"] = 13163,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 38,
-["appliedamt"] = 1,
+["id"] = 13163,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 42,
+["fight_component"] = true,
 ["debuff_uptime"] = 30,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
-["last_event"] = 1725608128,
+["aID"] = "5266-026B513C",
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
+["buff_uptime_targets"] = {
+},
 ["tipo"] = 4,
+["pets"] = {
+"QM <Mq>",
+},
+["serial"] = "Player-5266-026B513C",
+["last_event"] = 1725608128,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4027-00005AA028",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4027",
 ["nome"] = "Bloodfury Storm Witch",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4027-00005AA028",
+["aID"] = "4027",
 },
 {
 ["flag_original"] = 4369,
@@ -10090,32 +10090,32 @@ _detalhes_database = {
 },
 ["classe"] = "PET",
 ["fight_component"] = true,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
+["grupo"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5252-1-80-4023-00005AA0C4",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "4023",
 ["nome"] = "Bloodfury Roguefeather",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4023-00005AA0C4",
+["aID"] = "4023",
 },
 },
 },
 {
-["combatId"] = 1581,
 ["tipo"] = 2,
+["combatId"] = 1581,
 ["_ActorTable"] = {
 },
 },
@@ -10129,11 +10129,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1597,
+["playing_solo"] = true,
 ["totals"] = {
 2406,
 76,
@@ -10147,10 +10144,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10202,12 +10199,15 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1581,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Roguefeather"] = 1,
 ["Bloodfury Storm Witch"] = 1,
 },
-["combat_counter"] = 1597,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 1516,
 76,
@@ -10221,10 +10221,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10234,6 +10234,8 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
@@ -10241,8 +10243,6 @@ _detalhes_database = {
 ["Mq"] = 76.00805700000001,
 ["QM <Mq>"] = 0.008742,
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -10254,18 +10254,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483626.793,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Storm Witch",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1580,
 ["tipo"] = 2,
+["combatId"] = 1580,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.007042,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -10274,7 +10273,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 695.007042,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -10282,22 +10283,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Bloodfury Slayer"] = 695,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608055,
+["totalabsorbed"] = 0.007042,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [5116] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Storm Witch"] = 0,
 },
@@ -10319,14 +10318,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 64,
 },
@@ -10347,14 +10346,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 61,
+["b_dmg"] = 42,
 ["targets"] = {
 ["Bloodfury Slayer"] = 324,
 },
@@ -10375,14 +10374,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 120,
 ["n_amt"] = 4,
-["b_dmg"] = 42,
+["n_max"] = 61,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 0,
 },
@@ -10404,20 +10403,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 37.30179486907607,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608081,
 ["damage_taken"] = 0.007042,
 ["start_time"] = 1725608036,
 ["delay"] = 0,
-["last_event"] = 1725608081,
+["last_dps"] = 37.30179486907607,
 },
 {
 ["flag_original"] = 4369,
@@ -10429,32 +10429,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 307.007947,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["colocacao"] = 2,
-["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["damage_from"] = {
 ["Bloodfury Slayer"] = true,
 },
 ["targets"] = {
 ["Bloodfury Slayer"] = 307,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725608055,
+["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 6,
-["n_max"] = 39,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 265,
 },
@@ -10476,14 +10475,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 39,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Bloodfury Slayer"] = 42,
 },
@@ -10504,36 +10503,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 16.47745529198563,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608053,
 ["damage_taken"] = 179.007947,
 ["start_time"] = 1725608036,
 ["delay"] = 0,
-["last_event"] = 1725608053,
+["last_dps"] = 16.47745529198563,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002153,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 179.002153,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 179.002153,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4024-000059FA4D",
-["aID"] = "4024",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -10541,20 +10540,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 179,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002153,
+["fight_component"] = true,
 ["end_time"] = 1725608055,
+["aID"] = "4024",
 ["nome"] = "Bloodfury Slayer",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 31,
 ["targets"] = {
 ["QM <Mq>"] = 179,
 ["QM"] = 0,
@@ -10564,12 +10564,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 8,
 ["MISS"] = 1,
-["total"] = 179,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["a_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -10578,108 +10578,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 31,
-["r_amt"] = 0,
+["n_max"] = 33,
+["total"] = 179,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725608050,
 ["damage_taken"] = 695.002153,
 ["start_time"] = 1725608037,
 ["delay"] = 0,
-["last_event"] = 1725608050,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1580,
 ["tipo"] = 3,
+["combatId"] = 1580,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1580,
 ["tipo"] = 7,
+["combatId"] = 1580,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1580,
 ["tipo"] = 9,
+["combatId"] = 1580,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 19,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 19,
 ["debuff_uptime"] = 14,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725608055,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "Pet-0-5252-1-80-154-0300A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0300A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1580,
 ["tipo"] = 2,
+["combatId"] = 1580,
 ["_ActorTable"] = {
 },
 },
@@ -10694,11 +10694,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1596,
+["playing_solo"] = true,
 ["totals"] = {
 874,
 0,
@@ -10712,10 +10709,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10756,11 +10753,14 @@ _detalhes_database = {
 ["mapId"] = 1,
 ["combat_id"] = 1580,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Bloodfury Slayer"] = 1,
 },
-["combat_counter"] = 1596,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 695,
 0,
@@ -10774,10 +10774,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10787,13 +10787,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -10805,19 +10805,19 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1483577.311,
-["TimeData"] = {
-},
 ["contra"] = "Bloodfury Slayer",
+["playerTalents"] = {
+},
 },
 },
 },
 ["ocd_tracker"] = {
-["enabled"] = false,
+["show_title"] = true,
 ["current_cooldowns"] = {
 },
 ["lines_per_column"] = 12,
 ["group_frames"] = true,
-["width"] = 120,
+["show_options"] = false,
 ["frames"] = {
 ["defensive-raid"] = {
 },
@@ -10832,12 +10832,12 @@ _detalhes_database = {
 ["defensive-personal"] = {
 },
 },
-["show_options"] = false,
+["width"] = 120,
 ["ignored_cooldowns"] = {
 },
+["framme_locked"] = false,
 ["cooldowns"] = {
 },
-["height"] = 18,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -10845,12 +10845,12 @@ _detalhes_database = {
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["framme_locked"] = false,
+["height"] = 18,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["show_title"] = true,
+["enabled"] = false,
 ["filters"] = {
 ["itemutil"] = false,
 ["itempower"] = false,
@@ -10863,7 +10863,7 @@ _detalhes_database = {
 ["utility"] = false,
 },
 },
-["last_version"] = "1.15.3 12888",
+["last_version"] = "1.15.3 13001",
 ["player_stats"] = {
 },
 ["SoloTablesSaved"] = {
@@ -10886,10 +10886,10 @@ _detalhes_database = {
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["name"] = "Damage of Each Individual Player",
-["playerOnly"] = true,
 ["playerKey"] = "total",
 ["combatObjectContainer"] = 1,
+["name"] = "Damage of Each Individual Player",
+["playerOnly"] = true,
 },
 },
 ["totals"] = {
@@ -10922,15 +10922,24 @@ _detalhes_database = {
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["data_harvested_for_charts"] = {
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
 },
 ["mythic_plus_log"] = {
 },
-["cached_talents"] = {
+["data_harvested_for_charts"] = {
 },
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["cached_roles"] = {
+},
+["cached_talents"] = {
 },
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -10945,13 +10954,13 @@ _detalhes_database = {
 },
 ["usefocus"] = false,
 ["updatespeed"] = 1,
-["disable_gouge"] = false,
+["playSound"] = false,
 ["showamount"] = false,
 ["useplayercolor"] = false,
 ["absolute_mode"] = false,
 ["useclasscolors"] = false,
 ["playSoundFile"] = "Details Threat Warning Volume 3",
-["playSound"] = false,
+["disable_gouge"] = false,
 },
 ["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 ["enabled"] = true,
@@ -10974,41 +10983,28 @@ _detalhes_database = {
 1,
 0.5,
 },
+["use_square_mode"] = false,
 ["arrow_anchor_y"] = 0,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
 ["hide"] = true,
 },
-["main_frame_locked"] = true,
+["row_height"] = 18,
 ["arrow_anchor_x"] = 0,
-["scale"] = 1,
+["point"] = "RIGHT",
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["font_size"] = 10,
-["main_frame_strata"] = "LOW",
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["use_spark"] = false,
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
+["author"] = "Details! Team",
 ["row_color"] = {
 0.443137254901961,
 0.592156862745098,
 1,
 0.480826139450073,
 },
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
 ["per_second"] = {
 ["enabled"] = false,
 ["point"] = "CENTER",
@@ -11016,30 +11012,38 @@ _detalhes_database = {
 ["font_shadow"] = true,
 ["y"] = -6.103515625e-05,
 ["x"] = 0.00311279296875,
-["attribute_type"] = 1,
-["update_speed"] = 0.05,
 ["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
 },
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["main_frame_strata"] = "LOW",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 ["y"] = -183.107162475586,
+["font_size"] = 10,
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["author"] = "Details! Team",
-["point"] = "RIGHT",
-["row_height"] = 18,
-["use_square_mode"] = false,
+["use_spark"] = false,
+["scale"] = 1,
+["main_frame_locked"] = true,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
 },
 },
-["benchmark_db"] = {
-["frame"] = {
 },
-},
-["announce_firsthit"] = {
-["enabled"] = true,
+["last_day"] = "08",
+["announce_prepots"] = {
+["enabled"] = false,
 ["channel"] = "SELF",
-},
-["character_data"] = {
-["logons"] = 50,
+["reverse"] = false,
 },
 ["local_instances_config"] = {
 {
@@ -11607,9 +11611,11 @@ false,
 },
 ["tipo"] = 9,
 },
-["classe"] = "HUNTER",
-["buff_uptime"] = 0,
 ["aID"] = "5266-026B513C",
+["pets"] = {
+"QM <Mq> <Mq>",
+},
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
 ["_ActorTable"] = {
 [5118] = {
@@ -11618,53 +11624,56 @@ false,
 },
 ["counter"] = 0,
 },
+[13163] = {
+["id"] = 13163,
+["targets"] = {
+},
+["counter"] = 0,
+},
 },
 ["tipo"] = 9,
 },
 ["debuff_uptime"] = 0,
-["debuff_uptime_targets"] = {
-},
+["nome"] = "Mq",
 ["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["pets"] = {
-"QM <Mq> <Mq>",
+["debuff_uptime_targets"] = {
 },
-["last_event"] = 0,
 ["tipo"] = 4,
+["buff_uptime"] = 0,
 ["serial"] = "Player-5266-026B513C",
-["nome"] = "Mq",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
+["aID"] = "Pet-0-5252-1-80-154-0100A6F426",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq> <Mq>",
 ["grupo"] = true,
-["tipo"] = 4,
-["aID"] = "Pet-0-5252-1-80-154-0100A6F426",
-["serial"] = "Pet-0-5252-1-80-154-0100A6F426",
 ["last_event"] = 0,
+["classe"] = "PET",
+["serial"] = "Pet-0-5252-1-80-154-0100A6F426",
+["tipo"] = 4,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["nome"] = "Fey Dragon",
-["monster"] = true,
-["last_event"] = 0,
 ["aID"] = "4016",
-["serial"] = "Creature-0-5252-1-80-4016-000057B4FA",
+["monster"] = true,
+["nome"] = "Fey Dragon",
+["fight_component"] = true,
+["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5252-1-80-4016-000057B4FA",
+["classe"] = "UNKNOW",
 },
 {
 ["flag_original"] = 4369,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [24423] = {
 ["id"] = 24423,
@@ -11673,96 +11682,136 @@ false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
 ["aID"] = "Pet-0-5252-1-80-154-0100A6F426",
-["debuff_uptime_targets"] = {
-},
 ["debuff_uptime"] = 0,
 ["nome"] = "QM <Mq>",
 ["grupo"] = true,
-["classe"] = "PET",
+["debuff_uptime_targets"] = {
+},
 ["tipo"] = 4,
+["last_event"] = 0,
 ["serial"] = "Pet-0-5252-1-80-154-0100A6F426",
-["last_event"] = 0,
+["classe"] = "PET",
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-5252-1-80-4026-000058DF14",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4026",
 ["nome"] = "Bloodfury Windcaller",
+["fight_component"] = true,
+["tipo"] = 4,
 ["last_event"] = 0,
+["serial"] = "Creature-0-5252-1-80-4026-000058DF14",
+["aID"] = "4026",
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-5252-1-80-4025-000058E929",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4025",
 ["nome"] = "Bloodfury Ambusher",
+["fight_component"] = true,
+["tipo"] = 4,
 ["last_event"] = 0,
+["serial"] = "Creature-0-5252-1-80-4025-000058E929",
+["aID"] = "4025",
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-5252-1-80-4036-000058CB2C",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4036",
 ["nome"] = "Rogue Flame Spirit",
+["fight_component"] = true,
+["tipo"] = 4,
 ["last_event"] = 0,
+["serial"] = "Creature-0-5252-1-80-4036-000058CB2C",
+["aID"] = "4036",
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-5252-1-80-4028-00005830A7",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4028",
 ["nome"] = "Charred Ancient",
+["fight_component"] = true,
+["tipo"] = 4,
 ["last_event"] = 0,
+["serial"] = "Creature-0-5252-1-80-4028-00005830A7",
+["aID"] = "4028",
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-5252-1-80-4013-000058ED8D",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4013",
 ["nome"] = "Pridewing Skyhunter",
+["fight_component"] = true,
+["tipo"] = 4,
 ["last_event"] = 0,
+["serial"] = "Creature-0-5252-1-80-4013-000058ED8D",
+["aID"] = "4013",
 },
 {
 ["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["monster"] = true,
+["nome"] = "Raging Cliff Stormer",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
 ["serial"] = "Creature-0-5252-1-80-4009-000057F8C8",
+["aID"] = "4009",
+},
+{
+["flag_original"] = 68168,
+["serial"] = "Creature-0-5252-1-80-4024-00005AB1A9",
 ["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["tipo"] = 4,
 ["monster"] = true,
-["aID"] = "4009",
-["nome"] = "Raging Cliff Stormer",
+["aID"] = "4024",
+["nome"] = "Bloodfury Slayer",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 68168,
+["serial"] = "Creature-0-5252-1-80-4023-00005AB160",
+["fight_component"] = true,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["tipo"] = 4,
+["monster"] = true,
+["aID"] = "4023",
+["nome"] = "Bloodfury Roguefeather",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 68168,
+["serial"] = "Creature-0-5252-1-80-4027-0000582E6F",
+["fight_component"] = true,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["tipo"] = 4,
+["monster"] = true,
+["aID"] = "4027",
+["nome"] = "Bloodfury Storm Witch",
 ["last_event"] = 0,
 },
 },
@@ -11844,9 +11893,9 @@ false,
 ["n"] = 1,
 },
 ["boss_hp"] = 1,
-["segments_added"] = {
-},
 ["frags"] = {
+},
+["segments_added"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
@@ -11872,27 +11921,21 @@ false,
 },
 ["combat_counter"] = 1563,
 },
-["announce_prepots"] = {
-["enabled"] = false,
+["character_data"] = {
+["logons"] = 51,
+},
+["announce_firsthit"] = {
+["enabled"] = true,
 ["channel"] = "SELF",
-["reverse"] = false,
 },
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
+["benchmark_db"] = {
+["frame"] = {
 },
-["last_day"] = "06",
+},
 ["announce_cooldowns"] = {
+["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
-["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -11900,7 +11943,9 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["cached_roles"] = {
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["cached_specs"] = {
 },

@@ -7,11 +7,11 @@ AUCTIONATOR_CONFIG = {
 ["enchant_tooltips"] = false,
 ["starting_price_percentage_2"] = 95,
 ["columns_buying_auctions_2"] = {
-["Unit Price"] = false,
-["Available"] = false,
-["Time Left"] = true,
 ["Stack Price"] = false,
+["Available"] = false,
 ["Seller(s)"] = true,
+["Unit Price"] = false,
+["Time Left"] = true,
 ["You?"] = false,
 },
 ["debug"] = false,
@@ -27,10 +27,10 @@ AUCTIONATOR_CONFIG = {
 ["Undercut?"] = false,
 ["Quantity"] = false,
 ["Bid Price"] = true,
-["Undercut Price"] = true,
+["Name"] = false,
 ["Unit Price"] = false,
 ["Time Left"] = false,
-["Name"] = false,
+["Undercut Price"] = true,
 },
 ["price_history_days"] = 21,
 ["selling_icon_size"] = 32,
@@ -42,9 +42,9 @@ AUCTIONATOR_CONFIG = {
 ["shopping_list_missing_terms"] = false,
 ["shopping_last_container_view"] = 1,
 ["selling_bag_selection_color"] = {
-["b"] = 0.086,
-["g"] = 0.592,
 ["r"] = 0.977,
+["g"] = 0.592,
+["b"] = 0.086,
 },
 ["selling_ignored_keys"] = {
 },
@@ -69,18 +69,18 @@ AUCTIONATOR_CONFIG = {
 ["columns_buying_historical_prices"] = {
 ["Date"] = false,
 ["Unit Price"] = false,
-["Available"] = false,
 ["Upper Unit Price"] = true,
+["Available"] = false,
 },
 ["selling_post_shortcut"] = "SPACE",
 ["shift_stack_tooltips"] = true,
 ["columns_shopping"] = {
-["Name"] = false,
-["Unit Price"] = false,
 ["Top?"] = true,
+["Stack Price"] = false,
+["Name"] = false,
 ["Available"] = false,
 ["Price"] = false,
-["Stack Price"] = false,
+["Unit Price"] = false,
 ["Owned?"] = true,
 ["You?"] = false,
 },
@@ -133,19 +133,19 @@ AUCTIONATOR_CONFIG = {
 ["5498"] = 1,
 ["3857"] = 1,
 ["2730"] = 1,
-["8391"] = 1,
-["4360"] = 6,
+["23436"] = 1,
+["12359"] = 5,
 ["44465"] = 1,
-["8924"] = 5,
-["10939"] = 1,
-["36926"] = 1,
+["2742"] = 1,
+["2930"] = 5,
+["2776"] = 1,
 ["2740"] = 1,
 ["13303"] = 1,
 ["34055"] = 1,
-["41594"] = 1,
+["13304"] = 1,
 ["7964"] = 5,
 ["12361"] = 1,
-["13304"] = 1,
+["11178"] = 1,
 ["11134"] = 1,
 ["34057"] = 1,
 ["36917"] = 5,
@@ -153,81 +153,81 @@ AUCTIONATOR_CONFIG = {
 ["8831"] = 1,
 ["35627"] = 1,
 ["21929"] = 1,
-["6657"] = 3,
-["36923"] = 5,
 ["22450"] = 1,
+["36923"] = 5,
+["6657"] = 3,
 ["23437"] = 1,
-["11178"] = 1,
+["41594"] = 1,
 ["35624"] = 1,
-["2776"] = 1,
-["2930"] = 5,
-["2742"] = 1,
-["12359"] = 5,
-["23436"] = 1,
+["36926"] = 1,
+["10939"] = 1,
+["8924"] = 5,
+["4360"] = 6,
+["8391"] = 1,
 ["207631"] = 1,
 },
-["selling_ignore_item_level"] = false,
-["selling_ignore_item_suffix"] = false,
-["selling_allow_global_quantity_override"] = true,
-["selling_group_by_item_key"] = true,
-["auction_age_tooltips"] = false,
-["selling_confirm_low_price"] = true,
-["selling_item_level_match_only"] = true,
-["selling_auto_select_next"] = true,
-["auction_duration"] = 24,
-["selling_post_stack_remainder"] = true,
-["selling_prev_shortcut"] = "BACKSPACE",
-["cancel_undercut_shortcut"] = "SPACE",
-["selling_favourite_keys_2"] = {
-},
-["columns_selling_search"] = {
-},
-["columns_selling_search_3"] = {
-},
-["save_last_duration_as_default"] = true,
-["undercut_static_value"] = 1,
-["crafting_info_show_cost"] = true,
-["selling_bag_select_shortcut"] = "alt left click",
-["show_selling_bid_price"] = true,
-["prospect_tooltips"] = false,
-["columns_shopping_historical_prices"] = {
-["Date"] = false,
-["Unit Price"] = false,
-["Available"] = false,
-["Upper Unit Price"] = true,
-},
-["auction_mean_tooltips"] = false,
-["default_list_2"] = "",
-["auto_list_search"] = false,
-["crafting_info_show_profit"] = true,
-["auction_chat_log"] = true,
-["mailbox_tooltips"] = true,
-["gear_vendor_price_multiplier"] = 0,
-["selling_bag_collapsed"] = false,
-["selling_groups_settings"] = {
-},
-["replicate_scan_2"] = true,
-["auction_sales_preference"] = "static",
-["selling_grey_post_button"] = true,
-["splash_screen_version"] = "10.1.6",
-["crafting_info_show"] = true,
-["selling_should_reselect_item"] = false,
 ["selling_reselect_item_2"] = {
 ["keyName"] = "k_Recipe",
 ["sortKey"] = "2553_Recipe: Elixir of Minor Agility_0_2_true",
 },
+["selling_ignore_item_suffix"] = false,
+["selling_allow_global_quantity_override"] = true,
+["selling_group_by_item_key"] = true,
+["selling_grey_post_button"] = true,
+["selling_confirm_low_price"] = true,
+["selling_item_level_match_only"] = true,
+["replicate_scan_2"] = true,
+["selling_groups_settings"] = {
+},
+["selling_bag_collapsed"] = false,
+["gear_vendor_price_multiplier"] = 0,
+["cancel_undercut_shortcut"] = "SPACE",
+["selling_favourite_keys_2"] = {
+},
+["auction_chat_log"] = true,
+["crafting_info_show_profit"] = true,
+["save_last_duration_as_default"] = true,
+["undercut_static_value"] = 1,
+["crafting_info_show_cost"] = true,
+["default_list_2"] = "",
+["show_selling_bid_price"] = true,
+["auction_mean_tooltips"] = false,
+["columns_shopping_historical_prices"] = {
+["Date"] = false,
+["Unit Price"] = false,
+["Upper Unit Price"] = true,
+["Available"] = false,
+},
+["prospect_tooltips"] = false,
+["selling_bag_select_shortcut"] = "alt left click",
+["auto_list_search"] = false,
+["columns_selling_search_3"] = {
+},
+["columns_selling_search"] = {
+},
+["mailbox_tooltips"] = true,
+["selling_prev_shortcut"] = "BACKSPACE",
+["selling_post_stack_remainder"] = true,
+["auction_duration"] = 24,
+["selling_auto_select_next"] = true,
+["auction_sales_preference"] = "static",
+["auction_age_tooltips"] = false,
+["splash_screen_version"] = "10.1.6",
+["crafting_info_show"] = true,
+["selling_should_reselect_item"] = false,
+["selling_ignore_item_level"] = false,
 }
 AUCTIONATOR_SAVEDVARS = {
 ["_50000"] = 500,
 ["_2000"] = 100,
-["STARTING_DISCOUNT"] = 5,
+["_500"] = 5,
 ["_200000"] = 1000,
-["LOG_DE_DATA_X"] = true,
+["TimeOfLastGetAllScan"] = 1696782805,
 ["_1000000"] = 2500,
 ["_5000000"] = 10000,
-["_500"] = 5,
+["LOG_DE_DATA_X"] = true,
 ["_10000"] = 200,
-["TimeOfLastGetAllScan"] = 1696782805,
+["STARTING_DISCOUNT"] = 5,
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 {
@@ -309,7 +309,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2842"] = "¤aa¡d1687	al¡d1687ôah¡d1687¸amô",
 ["3609"] = "¤aa€al€amTah¡d1696T",
 ["17057"] = "¤aa¡d1690al€amah¡d1690",
-["2598"] = "¤aa¡d1687al€ah¢d1696·d1687Wam·",
+["4238"] = "¤aa€al€am,ah¡d1696,",
 ["3576"] = "¤aa¡d1687”al¡d1687TamTah¡d1687Á",
 ["2458"] = "¤aa¡d1690al€amLah¡d1690L",
 ["2770"] = "¤aa¢d1686µd1687(al€ah¢d1686d1687FamF",
@@ -317,13 +317,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["3383"] = "¤aa¡d1690al€amah¡d1690",
 ["2455"] = "¤aa¡d1690al€am(ah¡d1690(",
 ["2886"] = "¤aa¡d1690al€amah¡d1690",
-["2318"] = "¤aa¢d1693d1687¯al¡d1687aam&ah¢d1693&d1687t",
-["7912"] = "¤aa¡d16876al€am‚ah¡d1687‚",
+["3470"] = "¤aa¡d1687al€ah¡d1687}am}",
+["5498"] = "¤aa¡d1696al¡d1696äah¡d1696åamä",
 ["2862"] = "¤aa¡d1690al€amah¡d1690",
 ["730"] = "¤aa¡d1687al€amah¡d1687",
-["3036"] = "¤aa¡d1687al€amÜah¡d1687Ü",
+["732"] = "¤aa¡d1690\nal€amah¡d1690",
 ["2841"] = "¤aa¡d1687lal¡d1687÷ah¡d1687øam÷",
-["2835"] = "¤aa£d1690d1687Nd1686´al€ah£d1690d1687dd1686am",
+["8951"] = "¤aa¡d1690al€amah¡d1690",
 ["6889"] = "¤aa¡d1688al€am1ah¡d16881",
 ["2296"] = "¤aa¡d1687	al€amÉah¡d1687É",
 ["774"] = "¤aa£d1690d1687%d1686al¡d1687$ah£d1690d1687Wd1686Vam",
@@ -332,7 +332,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2449"] = "¤aa¡d1693!al€amBah¡d1693B",
 ["2775"] = "¤aa¡d1687\ral€ah¡d1687æamæ",
 ["818"] = "¤aa¡d1696al¡d1696ñah¡d1696òamñ",
-["8951"] = "¤aa¡d1690al€amah¡d1690",
+["2553"] = "¤aa€al€am\"Äah¡d1696\"Ä",
 ["6342"] = "¤aa¡d1687al€amñah¡d1687ñ",
 ["785"] = "¤aa¡d1690*al€amah¡d1690",
 ["3391"] = "¤aa¡d16902al€am/ah¡d1690/",
@@ -343,11 +343,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2934"] = "¤aa¡d1690al€amah¡d1690",
 ["7070"] = "¤aa¡d1696al¡d1696amah¡d1696",
 ["2592"] = "¤aa¢d1693÷d1687_al€amêah¢d1693êd1687 ",
-["2553"] = "¤aa€al€am\"Äah¡d1696\"Ä",
-["732"] = "¤aa¡d1690\nal€amah¡d1690",
-["5498"] = "¤aa¡d1696al¡d1696äah¡d1696åamä",
-["3470"] = "¤aa¡d1687al€ah¡d1687}am}",
-["4238"] = "¤aa€al€am,ah¡d1696,",
+["2835"] = "¤aa£d1690d1687Nd1686´al€ah£d1690d1687dd1686am",
+["3036"] = "¤aa¡d1687al€amÜah¡d1687Ü",
+["7912"] = "¤aa¡d16876al€am‚ah¡d1687‚",
+["2318"] = "¤aa¢d1693d1687¯al¡d1687aam&ah¢d1693&d1687t",
+["2598"] = "¤aa¡d1687al€ah¢d1696·d1687Wam·",
 },
 ["Zandalar Tribe Alliance"] = "±d5071¤aa¡†al€amÖah¡†Öugr:10113:of the Eagle¤aa¡†al€améüah¡†éüe10105¤aa¡†al€am\000† ah¡†\000† d5069¤aa¡†al€amah¡†e11288¤aa¡†al€am ah¡† rgr:5215:of Healing¤aa¡†al€amÃPah¡†ÃPvgr:10105:of the Monkey¤aa¡†al€am\000† ah¡†\000† d5215¤aa¡†al€amÃPah¡†ÃPe11287¤aa¡†al€amÜah¡†Üd8186¤aa¡†al€am†ah¡††e10109¤aa¡†al€amœ@ah¡†œ@d5212¤aa¡†al€am¯ah¡†¯d8483¤aa¡†al€am	Àah¡†	Àe10113¤aa¡†al€améüah¡†éüsgr:10109:of the Owl¤aa¡†al€amœ@ah¡†œ@d5207¤aa¡†al€amah¡†d5213¤aa¡†al€am'	ah¡†'	",
 ["Golemagg Horde"] = "¹$ºe15115¤aa€al€amuah€e25292¤aa€al€am\000\r@ah€e33867¤aa€al€ah€amDe13867¤aa€al€am\0004Pah€e23867¤aa€al€ah€amGàig:9931:43¤aa€al€am\000!ah€e11152¤aa€al€ah€am\000ùe31152¤aa€al€ah€am\000©¤e23773¤aa€al€ah€am¾ig:6602:27¤aa€al€amN ah€ig:4786:20¤aa€al€ah€amVRjg:14428:44¤aa€al€ah€am¸Big:9820:31¤aa€al€ah€am\000Hhe25300¤aa€al€ah€am\000\"ße24047¤aa€al€ah€am\000©¶e14047¤aa€al€amhah€e32948¤aa€al€ah€amnïe14341¤aa€al€ah€amCig:7108:11¤aa€al€ah€amèe21023¤aa€al€ah€amüe24585¤aa€al€ah€am\000wre14585¤aa€al€ah€amu0e18661¤aa€al€ah€am\000ä<e24773¤aa€al€ah€am\000‚pjg:24808:81¤aa€al€ah€am\000pe12011¤aa€al€amµšah€e25047¤aa€al€ah€am\000ÔYe25078¤aa€al€ah€am\000Ajg:18699:57¤aa€al€ah€am\000§Pe22838¤aa€al€ah€am\000;óe25127¤aa€al€ah€am\000Ô«e15127¤aa€al€ah€amu0e13115¤aa€al€ah€am\000„«jg:15156:43¤aa€al€ah€amM¼e36918¤aa€al€am\000‚Vah€jg:10192:53¤aa€al€amtÌah€kg:31319:100¤aa€al€ah€am\000˜–{jg:10060:49¤aa€al€ah€amtÌjg:15497:19¤aa€al€ah€am2Èjg:21850:93¤aa€al€ah€am\0004¹e25011¤aa€al€ah€am\000	ëe10235¤aa€al€am\000¾²ah€e14123¤aa€al€ah€amO\\e12655¤aa€al€ah€amúe31879¤aa€al€ah€am\000pıe32655¤aa€al€ah€am\000:e15011¤aa€al€ah€am‡†e18639¤aa€al€ah€am\000B@jg:10332:35¤aa€al€ah€am\000	jg:14171:22¤aa€al€am@ah€ig:8121:47¤aa€al€amœ@ah€ig:7472:41¤aa€al€ah€am\000e31235¤aa€al€ah€am\000ze13948¤aa€al€ah€amœTe18300¤aa€al€ah€am%äig:9807:27¤aa€al€amxah€jg:11968:26¤aa€al€am©¬ah€ig:7479:42¤aa€al€am\000pah€jg:20820:22¤aa€al€ah€am&¬ig:9385:36¤aa€al€amºTah€e13000¤aa€al€ah€am\000!kg:32391:130¤aa€al€ah€am\000§±¯kg:32393:130¤aa€al€ah€am\000w¡\000e13011¤aa€al€ah€am\000.ge31339¤aa€al€ah€am\000yêğe22375¤aa€al€ah€am\000|we21948¤aa€al€ah€amGjg:14269:47¤aa€al€amNah€e11078¤aa€al€ah€am>ºe14907¤aa€al€ah€am\0007e24907¤aa€al€am\000æ.ah€e31227¤aa€al€ah€am\000}jg:14186:29¤aa€al€ah€am!fe15375¤aa€al€am\000$ah€e21867¤aa€al€am\000W+ah€e31867¤aa€al€ah€am\000<e24959¤aa€al€ah€am\000˜e24078¤aa€al€ah€am\0006Še10216¤aa€al€am\000pah€e14235¤aa€al€am'ah€jg:13083:62¤aa€al€am\000˜ah€jg:10191:51¤aa€al€amN ah€e16681¤aa€al€ah€am\000B?e11177¤aa€al€ah€am8¤e21177¤aa€al€ah€am e31177¤aa€al€ah€am\000òRc856¤aa€al€ah€am0ig:5110:18¤aa€al€ah€am¥Ÿe12227¤aa€al€ah€am\000†jg:12408:51¤aa€al€amu/ah€e32227¤aa€al€ah€am\000z\000jg:15330:25¤aa€al€ah€am'e14375¤aa€al€ah€amv(ig:1714:43¤aa€al€ah€am\000“àig:4071:31¤aa€al€ah€am‰Äe15235¤aa€al€am\000Šah€e25235¤aa€al€am\000hŒah€jg:24811:81¤aa€al€ah€am\000Ì_jg:15305:18¤aa€al€ah€am\"`jg:15646:55¤aa€al€ah€am\000Kœjg:13041:26¤aa€al€ah€am\000¿e24614¤aa€al€ah€amˆ¸e15681¤aa€al€am\000† ah€ig:1607:54¤aa€al€ah€am\000óPe13928¤aa€al€ah€amNig:7413:33¤aa€al€ah€am\000Èjg:14789:54¤aa€al€ah€am\000µe29536¤aa€al€ah€am\000&8`jg:11996:34¤aa€al€ah€am<Œjg:25078:99¤aa€al€ah€am\000Ae24834¤aa€al€ah€am\000“àig:4792:23¤aa€al€ah€am\000)Wig:4091:47¤aa€al€ah€am\000	'¾e27429¤aa€al€ah€amde15009¤aa€al€am/¨ah€e25009¤aa€al€ah€am\000«Ejg:25132:93¤aa€al€am\000ûĞah€e25324¤aa€al€am\000­°ah€ig:7556:40¤aa€al€ah€am.àe28536¤aa€al€ah€am\000§Çjg:15221:65¤aa€al€ah€am\000ÔÀjg:14536:61¤aa€al€ah€am\000[`ig:6575:20¤aa€al€ah€amS4e20879¤aa€al€ah€am\000W0ig:2825:42¤aa€al€ah€am\000-µ,ig:33855:1¤aa€al€ah€am\0009ËXig:6617:30¤aa€al€amÅ{ah€e10205¤aa€al€amN ah€jg:15542:32¤aa€al€am%Nah€jg:14209:33¤aa€al€am'ah€ig:2983:17¤aa€al€am7xah€e18948¤aa€al€ah€am\000Èe22795¤aa€al€ah€amBig:3643:14¤aa€al€ah€am	Äe15614¤aa€al€ah€amxljg:14376:22¤aa€al€ah€am&«e15743¤aa€al€ah€am/¡e27655¤aa€al€ah€am‰e32661¤aa€al€am\0005°ah€e22661¤aa€al€ah€am\000<áğkg:25096:111¤aa€al€am\000wah€jg:13097:29¤aa€al€ah€am\000‡÷kg:24116:114¤aa€al€ah€am\0003+e30032¤aa€al€ah€am\000Æ]@e39681¤aa€al€ah€amBìjg:10214:59¤aa€al€ah€amcœig:7378:37¤aa€al€ah€am'ig:4715:27¤aa€al€ah€amNckg:25239:120¤aa€al€ah€am\000ÔÀjg:14191:30¤aa€al€am®±ah€ig:7434:37¤aa€al€amŠzah€e24912¤aa€al€ah€am\000 GÄkg:24679:117¤aa€al€ah€am\000Ğe31292¤aa€al€ah€am\000|kg:21855:114¤aa€al€am\000Ô¿ah€e21953¤aa€al€ah€amÃPe14928¤aa€al€ah€am\000ìe24795¤aa€al€ah€am\000“àe24928¤aa€al€am\000Ù8ah€e27516¤aa€al€ah€amÌ€e20867¤aa€al€ah€am\000­©ig:2262:36¤aa€al€ah€am\000Ô¿jg:23093:63¤aa€al€ah€am\000ig:1997:34¤aa€al€ah€am:4e15918¤aa€al€am+\\ah€jg:15583:41¤aa€al€ah€am\000† jg:15945:18¤aa€al€ah€am(Lig:6580:23¤aa€al€am'ah€e39948¤aa€al€amœ6ah€e24879¤aa€al€ah€am\000Ş¨e15504¤aa€al€ah€amQËjg:28491:94¤aa€al€ah€am\000æ0ig:6552:19¤aa€al€ah€amN jg:31254:97¤aa€al€ah€am\000q°ig:4777:18¤aa€al€ah€am1.ig:6242:14¤aa€al€ah€amEe44504¤aa€al€ah€am\000õKe34504¤aa€al€ah€am\000™àe14504¤aa€al€ah€amN e24738¤aa€al€ah€am\000Be13009¤aa€al€ah€am\000¢se28464¤aa€al€ah€am\0002%ig:5958:21¤aa€al€ah€am'jg:25395:72¤aa€al€ah€amN jg:18344:59¤aa€al€ah€am\000¿ jg:24593:84¤aa€al€ah€am\000ÌRig:6553:18¤aa€al€ah€am*øjg:15561:36¤aa€al€amœ®ah€ig:3036:15¤aa€al€ah€am0µe14431¤aa€al€amN ah€e25073¤aa€al€am\000!ah€e16971¤aa€al€ah€amçe19440¤aa€al€ah€am\000IŒd7356¤aa€al€ah€am!4d3356¤aa€al€ah€amÈd9891¤aa€al€ah€am‚jg:15547:29¤aa€al€ah€am'e30419¤aa€al€ah€amb\ne17032¤aa€al€ah€am\000¯#e23199¤aa€al€ah€am\000÷Je35565¤aa€al€ah€am*ìe34722¤aa€al€am\r©ah€e15410¤aa€al€ah€am\000©Èe24722¤aa€al€ah€am\000“ßkg:24865:102¤aa€al€ah€am\000pe31882¤aa€al€ah€am\000	'¾e21882¤aa€al€ah€am\r`e13199¤aa€al€ah€am\000Ğ,ig:7052:35¤aa€al€ah€am&¬ig:3198:23¤aa€al€ah€am&¬d8256¤aa€al€am\000Ğah€d2256¤aa€al€ah€am\000† e25463¤aa€al€ah€am°ig:4385:30¤aa€al€ah€amÃPd7991¤aa€al€am\000Ğah€e10170¤aa€al€ah€am\000‚e24199¤aa€al€ah€am\000a¤e25426¤aa€al€ah€amÒe15388¤aa€al€amÃPah€e17722¤aa€al€ah€amtge14410¤aa€al€amu0ah€d7730¤aa€al€ah€am\000A×e31170¤aa€al€ah€am\000“àig:9926:43¤aa€al€ah€amN kg:24993:108¤aa€al€ah€am\000pe10086¤aa€al€ah€amu0e40086¤aa€al€am\000¿zah€jg:24627:96¤aa€al€ah€am\000pe15260¤aa€al€ah€am\000ig:3807:33¤aa€al€am>€ah€kg:31554:115¤aa€al€ah€am\000me12426¤aa€al€amèah€ig:7734:51¤aa€al€ah€am\000€e22902¤aa€al€am\000ÒÌah€kg:24671:114¤aa€al€ah€am\000“Şe32902¤aa€al€ah€am<d9830¤aa€al€am\000Âah€e31168¤aa€al€ah€am\000©e41168¤aa€al€ah€am\000=0e15971¤aa€al€ah€amIig:9998:41¤aa€al€ah€amV·e20408¤aa€al€ah€am5¾e10408¤aa€al€ah€am\000Ğig:1207:39¤aa€al€ah€am>ze27437¤aa€al€ah€am5èe16202¤aa€al€ah€am<íig:7060:38¤aa€al€am‚ah€d3830¤aa€al€ah€amze10514¤aa€al€ah€am\000•e31902¤aa€al€ah€am\0005gÜd7530¤aa€al€ah€amu0d6530¤aa€al€ah€amUjg:14101:54¤aa€al€ah€ams e20514¤aa€al€am\000Iïah€d3530¤aa€al€ah€am!ig:6604:26¤aa€al€ah€am'e16713¤aa€al€ah€am\000\n8d7491¤aa€al€amN ah€ig:9968:42¤aa€al€ah€am«™jg:25656:99¤aa€al€am\000¯\nah€ig:3203:28¤aa€al€ah€am\000O€d1491¤aa€al€ah€am\000dŠe25202¤aa€al€ah€am\000¿ e14902¤aa€al€ah€am\000Ae31290¤aa€al€ah€am\000še11734¤aa€al€ah€am<e14426¤aa€al€ah€am­Ôkg:24684:117¤aa€al€ah€am\000\r?ig:4253:27¤aa€al€ah€am\000\r:jg:13106:31¤aa€al€ah€am\000Ød6591¤aa€al€ah€amZıe27681¤aa€al€ah€ame12032¤aa€al€ah€am\0007fe14536¤aa€al€ah€am\000[`e24691¤aa€al€ah€am\000Ğd7330¤aa€al€amu0ah€e15426¤aa€al€amN ah€e24168¤aa€al€ah€am\000\n`e14199¤aa€al€ah€am'd8156¤aa€al€am:˜ah€jg:24853:96¤aa€al€ah€amê_ig:8214:45¤aa€al€amŠãah€e24813¤aa€al€am\000Ì_ah€kg:28542:114¤aa€al€am\000ûĞah€ig:1981:44¤aa€al€ah€am\000İe30324¤aa€al€ah€am\000ÄÓig:9857:34¤aa€al€ah€am\000	%e16722¤aa€al€am\0000ah€e11362¤aa€al€am'ah€d7430¤aa€al€ah€am'd3430¤aa€al€ah€amu0e25036¤aa€al€ah€am\000Ñd6056¤aa€al€ah€amÔâd3056¤aa€al€am17ah€kg:24904:117¤aa€al€ah€am\000ÈÀkg:25070:117¤aa€al€ah€am\000¶Àd9791¤aa€al€am&¬ah€e23437¤aa€al€ah€amyâe12202¤aa€al€ah€am{e23426¤aa€al€ah€am!1e32202¤aa€al€am\0004ùah€e21722¤aa€al€am\000>Xah€d4791¤aa€al€ah€am	Ãkg:24985:105¤aa€al€ah€am\000Üjg:15324:56¤aa€al€am\0008€ah€d4060¤aa€al€amNah€jg:10624:47¤aa€al€ah€am\000/ı»e24036¤aa€al€ah€am\000\n®^kg:24991:108¤aa€al€ah€am\000 ìe13942¤aa€al€ah€am¿]d4091¤aa€al€ah€am\000	'¾jg:30421:46¤aa€al€ah€amœ@jg:10408:32¤aa€al€ah€am\000Ğd2091¤aa€al€ah€am\000 Šd9060¤aa€al€ah€am\000zæe28491¤aa€al€ah€am\000æ0d7060¤aa€al€am‚ah€jg:22658:80¤aa€al€ah€am\0000-ûe20907¤aa€al€ah€amnig:6579:24¤aa€al€ah€amcje21713¤aa€al€am\000@@ah€ig:1982:44¤aa€al€ah€am\000q¯e13036¤aa€al€ah€am\000	Xe15519¤aa€al€ah€am#(ig:3040:19¤aa€al€ah€am:˜jg:13139:50¤aa€al€ah€am\000“ßjg:20821:20¤aa€al€ah€amôig:3787:40¤aa€al€am\0009Ğah€d7191¤aa€al€ah€amNe25867¤aa€al€ah€am\000\níig:8202:47¤aa€al€ah€am\000¦èig:7438:36¤aa€al€ah€ame12431¤aa€al€ah€am*ökg:31240:103¤aa€al€ah€am\000İĞe20882¤aa€al€ah€am\000\r?e31277¤aa€al€ah€am\000qãd6291¤aa€al€ah€am•d3291¤aa€al€ah€amUéd4291¤aa€al€ah€am\000+Ÿd2291¤aa€al€ah€am\000=ig:34828:1¤aa€al€ah€am\000\r¬\000ig:6591:27¤aa€al€ah€amZıd9260¤aa€al€ah€am	e13047¤aa€al€ah€am\000¡jg:13052:52¤aa€al€am\000Ğah€e10375¤aa€al€ah€am\000o0d6391¤aa€al€ah€am&¬d3391¤aa€al€ah€am+\\jg:10375:57¤aa€al€ah€am\000o0jg:12979:21¤aa€al€ah€am\000† d8160¤aa€al€ah€am\000‡”d8391¤aa€al€ah€amƒd7391¤aa€al€ah€am\000 e31907¤aa€al€ah€amÄ³ÿe12691¤aa€al€ah€am ig:7110:31¤aa€al€ah€am\000U‚kg:24797:117¤aa€al€ah€am\000ûĞjg:14190:31¤aa€al€am|¬ah€e15252¤aa€al€am\000_ah€jg:15600:42¤aa€al€am_áah€c776¤aa€al€ah€amöêÛe29902¤aa€al€ah€am\000lĞe10176¤aa€al€ah€amÃPe17922¤aa€al€ah€am#(jg:15655:56¤aa€al€ah€am\000œ¸jg:13087:33¤aa€al€ah€am\000+Úe16252¤aa€al€ah€am\0005@Ïjg:15528:26¤aa€al€ah€amlEig:1721:54¤aa€al€ah€am\000Ğig:1625:41¤aa€al€ambƒah€e15655¤aa€al€ah€am\000œ¸e24170¤aa€al€ah€am\000pe11176¤aa€al€ah€amig:8162:41¤aa€al€ah€amÂˆe31176¤aa€al€ah€am\000	ëig:6381:23¤aa€al€am#‹ah€jg:15177:49¤aa€al€ama§ah€jg:15298:13¤aa€al€amEÕah€e15485¤aa€al€ah€am:Be16655¤aa€al€ah€amjg:14380:28¤aa€al€ah€am~re13510¤aa€al€ah€am\000æ0ig:7465:39¤aa€al€ah€am\000<Djg:23199:65¤aa€al€ah€am\000÷Je24853¤aa€al€ah€amê_e12419¤aa€al€ah€am\000|jg:15329:24¤aa€al€am!4ah€jg:31154:26¤aa€al€ah€am'hg:864:38¤aa€al€ah€am`Üe22459¤aa€al€ah€ams e12643¤aa€al€ah€amTjg:14657:46¤aa€al€ah€am\000šjg:15481:13¤aa€al€am¦ah€e38277¤aa€al€ah€am\000mĞe25685¤aa€al€ah€am\000\r“de25117¤aa€al€ah€am\000q\000e10329¤aa€al€ah€am( jg:18676:61¤aa€al€ah€am\000|›e23441¤aa€al€ah€amœ@e15117¤aa€al€ah€am6°e31918¤aa€al€ah€am\000Ì\\e14452¤aa€al€am\000Õah€kg:25331:102¤aa€al€am\000Ğ,ah€e17200¤aa€al€am\000Ú0ah€e13123¤aa€al€am\000“ßah€d9803¤aa€al€amu0ah€e11979¤aa€al€ah€am\000æ0hg:9333:1¤aa€al€ah€am\000\nPÖjg:21851:99¤aa€al€ah€am\000Ğe18231¤aa€al€ah€am\0004Oe14564¤aa€al€ah€am·e14117¤aa€al€ah€am/kg:25304:105¤aa€al€ah€am\000­°e24508¤aa€al€ah€amçe15339¤aa€al€ah€am\000]pe24673¤aa€al€ah€am\000† e14508¤aa€al€ah€am\000ig:6386:30¤aa€al€am'ah€ig:9915:45¤aa€al€am\000ÎXah€e25275¤aa€al€ah€am\000ûĞe15275¤aa€al€ah€am\000€ig:9859:36¤aa€al€am:—ah€ig:7480:41¤aa€al€am\000­ah€e18648¤aa€al€ah€am½Mjg:24847:96¤aa€al€amê_ah€e35564¤aa€al€ah€am\000xe15564¤aa€al€ah€am&ig:9899:42¤aa€al€ah€amå¯e24818¤aa€al€ah€am\000Ì_hg:937:38¤aa€al€am\000ä<ah€jg:20538:63¤aa€al€ah€am\0005\000e25673¤aa€al€am\0007ah€e22452¤aa€al€ah€am\000>e25028¤aa€al€ah€am\000B@kg:24798:120¤aa€al€ah€am\000B@jg:23742:99¤aa€al€am\000ÔÀah€jg:24705:84¤aa€al€ah€amê`kg:25015:117¤aa€al€ah€am\000|e31178¤aa€al€am\000ah€jg:13036:57¤aa€al€ah€am\000	Xe11178¤aa€al€ah€am‹Ñe21933¤aa€al€ah€amBe25232¤aa€al€am\000Ğah€e15232¤aa€al€ah€am'e13452¤aa€al€ah€am*/kg:31258:103¤aa€al€ah€am\000ªõe32508¤aa€al€am\000?–ah€e24028¤aa€al€ah€am\000ße38807¤aa€al€amRVah€e16767¤aa€al€ah€am\000[#d5503¤aa€al€ah€amuig:7542:46¤aa€al€ah€amu0jg:15121:28¤aa€al€ah€am\"jg:31147:91¤aa€al€ah€am\000$jg:25087:84¤aa€al€ah€am\000W0d8225¤aa€al€ah€am\000†jg:31137:88¤aa€al€ah€am\000Fe20452¤aa€al€ah€am‰e25175¤aa€al€am\000¶Àah€e15175¤aa€al€ah€am\000›e10232¤aa€al€ah€am\000¿ e14192¤aa€al€ah€am<ïe24192¤aa€al€ah€am\000-Æºe23767¤aa€al€ah€am\000êe23807¤aa€al€ah€am\000\r@jg:25090:93¤aa€al€ah€am\000“`ig:4681:14¤aa€al€ah€am\000„~d2325¤aa€al€ah€amÌ€d4603¤aa€al€ah€am>e30745¤aa€al€am\000×aah€d6325¤aa€al€ah€am¸e41452¤aa€al€am=‡ah€e31275¤aa€al€ah€am\000Âxe24767¤aa€al€ah€am\000e40093¤aa€al€ah€amWkg:24911:120¤aa€al€am\000İĞah€d1703¤aa€al€ah€am\n(jg:14757:32¤aa€al€ah€am:—e43424¤aa€al€ah€amvd6425¤aa€al€ah€am\0008d5425¤aa€al€ah€am\0000d4425¤aa€al€ah€am“¨e22246¤aa€al€ah€am\000†1kg:23489:102¤aa€al€ah€am\000èe23514¤aa€al€ah€am\000ã`e29956¤aa€al€ah€am\000q°ig:4040:34¤aa€al€am\000pah€jg:15134:37¤aa€al€ah€amu0e19767¤aa€al€ah€am\000bèe12232¤aa€al€ah€am\000u	jg:15347:28¤aa€al€ah€amu0e14300¤aa€al€ah€am\000pe15178¤aa€al€ah€am\000Ú»e24300¤aa€al€ah€am\000W¸e32745¤aa€al€ah€am\000§e14761¤aa€al€am3ah€kg:25295:120¤aa€al€am\0005ah€kg:25235:108¤aa€al€am\000hŒah€ig:8210:44¤aa€al€ah€amŠâe31232¤aa€al€am\000[_ah€e25192¤aa€al€ah€am\000Iğig:7760:39¤aa€al€ah€amÂ‡e24807¤aa€al€ah€am\000$¬e10047¤aa€al€am\000ó;ah€kg:25690:113¤aa€al€ah€am\000q°d9903¤aa€al€ah€am\000Nig:7727:32¤aa€al€ah€am\000ùÛe12713¤aa€al€ah€am{eig:4788:20¤aa€al€amN ah€ig:1980:43¤aa€al€ah€am\000O€e23590¤aa€al€ah€am\000„3jg:15352:34¤aa€al€amÀ<ah€e25901¤aa€al€ah€am\000ìe10192¤aa€al€amtÌah€ig:7945:46¤aa€al€ah€am\000Ì^e11202¤aa€al€ah€am\000“ße31202¤aa€al€am\000ë¿ah€e15648¤aa€al€ah€am\000‡e15329¤aa€al€am!4ah€e25329¤aa€al€am\000Øah€jg:14603:41¤aa€al€ah€am¢€e14424¤aa€al€ah€am\000ïŸe14176¤aa€al€ah€am\000Ğkg:32661:115¤aa€al€am\0005°ah€e14514¤aa€al€ah€am\000|Ke15734¤aa€al€ah€amufjg:18712:50¤aa€al€ah€am\000(e24993¤aa€al€ah€am\000pjg:14199:33¤aa€al€ah€am'kg:25191:102¤aa€al€ah€am\000Iğe24956¤aa€al€ah€am\000\"àjg:15281:57¤aa€al€am\000†Ÿah€e25176¤aa€al€ah€am\000‚e14439¤aa€al€ah€amSûjg:15164:47¤aa€al€amÃPah€e24734¤aa€al€ah€amÃPkg:32582:141¤aa€al€ah€am.Àig:1121:24¤aa€al€ah€am\000½e32062¤aa€al€ah€am.nkg:25154:117¤aa€al€ah€am\000¡ig:2578:14¤aa€al€am|ah€ig:9848:36¤aa€al€ah€am3ôe39933¤aa€al€ah€amZ„e23439¤aa€al€ah€amøig:9827:30¤aa€al€ah€ama¨e31192¤aa€al€am\000lĞah€e13062¤aa€al€am\000hŸah€e22565¤aa€al€ah€am›Ükg:24795:117¤aa€al€ah€am\000“àe22901¤aa€al€ah€am\000„ªe16648¤aa€al€ah€am&e30036¤aa€al€ah€am\000yuÀe24979¤aa€al€ah€am\0008€e10036¤aa€al€ah€am\000Äig:4067:39¤aa€al€am2\\ah€e38933¤aa€al€ah€am%€ig:4564:13¤aa€al€ah€amojg:23197:65¤aa€al€ah€am\000¥Mkg:24641:102¤aa€al€ah€am\0004Pig:22279:1¤aa€al€am\000€ah€jg:24745:99¤aa€al€ah€amê`e21993¤aa€al€ah€am\000\re31901¤aa€al€ah€am\000jÏ¿e21901¤aa€al€ah€am\000vpig:9770:20¤aa€al€ah€amszjg:15262:46¤aa€al€ah€am\000îĞe22853¤aa€al€ah€am\000¿jg:11986:39¤aa€al€ah€am4¼jg:15189:60¤aa€al€amê`ah€e10202¤aa€al€ah€amN ig:9903:42¤aa€al€ah€am\000Ne18745¤aa€al€ah€am\000	Ojg:24077:83¤aa€al€am\000¹ ah€e29734¤aa€al€ah€am\000—ig:4567:16¤aa€al€ah€am¸ig:8274:51¤aa€al€ah€amÃPkg:31331:100¤aa€al€ah€am\0003<e12979¤aa€al€ah€am\000† e25223¤aa€al€ah€am\000Ğe36933¤aa€al€amÁSah€jg:15580:40¤aa€al€amäTah€jg:12419:58¤aa€al€ah€am\000|jg:12020:36¤aa€al€am9Ğah€ig:1777:22¤aa€al€ah€am+\\e14377¤aa€al€am:˜ah€jg:12974:31¤aa€al€ah€am\000oe16223¤aa€al€am\000\r» ah€e15381¤aa€al€ah€amÃPe13463¤aa€al€ah€am	`jg:24714:87¤aa€al€ah€amÃPe19818¤aa€al€ah€am\000ÇÃe24590¤aa€al€ah€am\000Í¸e14590¤aa€al€ah€amu0jg:14090:11¤aa€al€am'ah€kg:24780:111¤aa€al€ah€am\000vQe25288¤aa€al€ah€am\000Iğe15288¤aa€al€ah€am\000êêe12982¤aa€al€ah€am\000r?d9880¤aa€al€amu0ah€e14331¤aa€al€am\000† ah€ig:6583:21¤aa€al€ah€amÃPe15871¤aa€al€am'ah€e15568¤aa€al€am'ah€e10021¤aa€al€ah€am\000\r@jg:14750:28¤aa€al€ah€am'jg:15307:19¤aa€al€ah€amN e14563¤aa€al€ah€am†e22794¤aa€al€ah€am6Le22526¤aa€al€ah€am\"d2841¤aa€al€ah€am¤ig:2915:52¤aa€al€am\000\rğah€e11982¤aa€al€ah€am°*e15993¤aa€al€ah€am<‰e43331¤aa€al€amˆ³ah€ig:2317:20¤aa€al€amå¹ah€jg:38278:35¤aa€al€ah€am\000(De14568¤aa€al€ah€amœ>kg:32776:115¤aa€al€ah€am\000MÇ…e18651¤aa€al€ah€am\000ÍÒjg:13044:57¤aa€al€ah€am\000_jg:15944:12¤aa€al€am\r¬ah€ig:6538:19¤aa€al€ah€am'e19441¤aa€al€ah€ame21099¤aa€al€ah€am8Àe20828¤aa€al€ah€amĞjg:15172:47¤aa€al€ah€amN e25124¤aa€al€am\000î$ah€e15124¤aa€al€ah€am)e13084¤aa€al€ah€am\000Íe25302¤aa€al€ah€am\0002•jg:15894:25¤aa€al€ah€am0Ôd7941¤aa€al€ah€am\000dod9941¤aa€al€ah€am\000±¨e12989¤aa€al€ah€am\000S\000jg:10066:49¤aa€al€ah€am\000Zjg:15538:30¤aa€al€ah€am'e16645¤aa€al€ah€am¼jg:13865:57¤aa€al€ah€amN kg:25027:120¤aa€al€ah€am\000Iïjg:14188:27¤aa€al€am&ìah€ig:8141:44¤aa€al€ah€amFPe20871¤aa€al€ah€am\000™ jg:13008:52¤aa€al€ah€am\000\"àe24995¤aa€al€ah€am\0008€jg:15194:61¤aa€al€ah€amê`jg:10625:49¤aa€al€ah€am\000Şbd4341¤aa€al€ah€amZzd3341¤aa€al€ah€amœ@d3480¤aa€al€ah€am	^d4480¤aa€al€ah€amCd5480¤aa€al€ah€amèe19292¤aa€al€ah€amkÅËd7480¤aa€al€am\000­ah€e15526¤aa€al€ah€am:˜ig:2632:14¤aa€al€ah€amœ?e11084¤aa€al€ah€amñe13124¤aa€al€ah€am\000Ùèe24649¤aa€al€ah€am\0008€ig:9773:27¤aa€al€ah€am•æe10062¤aa€al€ah€amœ@d7909¤aa€al€am\000Jah€e20424¤aa€al€ah€amNjg:10121:56¤aa€al€amğiah€e10424¤aa€al€ah€am\000Ğhg:866:42¤aa€al€ah€amcœjg:14593:35¤aa€al€amê`ah€d2580¤aa€al€ah€am@d4580¤aa€al€ah€am\000|Ïd6580¤aa€al€am'ah€e14124¤aa€al€amiah€jg:13002:59¤aa€al€am ğah€e10822¤aa€al€ah€am\000„€jg:13131:29¤aa€al€ah€am\000OÌe32388¤aa€al€ah€am%áe22388¤aa€al€ah€am\000=+d7441¤aa€al€ah€amN jg:10518:45¤aa€al€ah€am\000öne15380¤aa€al€ah€amˆTd9809¤aa€al€am&¬ah€d4541¤aa€al€ah€amAd2680¤aa€al€amGah€jg:13119:39¤aa€al€ah€am\000­®e24851¤aa€al€ah€am\000pœe24982¤aa€al€ah€am\000Uôd4680¤aa€al€am\000¨tah€e14828¤aa€al€amu0ah€e24828¤aa€al€ah€am\000Ô\\e34828¤aa€al€ah€am\000\r¬\000d4020¤aa€al€am\000|ah€e15794¤aa€al€ah€am\000‚Te11302¤aa€al€ah€am\0001*Îe13871¤aa€al€ah€amm`ig:4045:42¤aa€al€ah€amÁ\\e15265¤aa€al€ah€am\000fe25265¤aa€al€ah€am\000ópjg:10203:52¤aa€al€ah€am\000pe33568¤aa€al€ah€amkd6541¤aa€al€ah€amPŒe14380¤aa€al€ah€am~re12424¤aa€al€ah€amœ?e12645¤aa€al€ah€am\000Cğe22645¤aa€al€ah€ampd3780¤aa€al€amœ@ah€e15331¤aa€al€ah€am\000e15086¤aa€al€ah€amèkd5780¤aa€al€ah€am\000@e14526¤aa€al€ah€am\000¤&ig:9869:35¤aa€al€ah€am'sd9780¤aa€al€ah€amFPe25331¤aa€al€am\000Ğ,ah€hg:6256:1¤aa€al€ah€am<‚e24871¤aa€al€ah€am\000ËFe13021¤aa€al€ah€am\000[`d1809¤aa€al€am=mah€jg:14654:44¤aa€al€ah€amÃPe22851¤aa€al€ah€am\000‚jg:18701:59¤aa€al€ah€am\000	ig:4826:26¤aa€al€ah€am\000*e12430¤aa€al€ah€am'¤ig:4075:34¤aa€al€ah€amke14753¤aa€al€ah€am\000ze24753¤aa€al€ah€am\000\r@jg:15477:11¤aa€al€am#(ah€d8170¤aa€al€ah€am)ge10099¤aa€al€ah€am\000Iğig:7608:21¤aa€al€amwÁah€ig:4068:40¤aa€al€am_Nah€d3041¤aa€al€ah€am¦ig:8211:45¤aa€al€ah€amŠãe41380¤aa€al€am\000HSah€d4041¤aa€al€amK\000ah€jg:15552:36¤aa€al€am'ah€jg:30422:53¤aa€al€ah€am_Pe10124¤aa€al€ah€am\000pd2070¤aa€al€ah€amvnd4070¤aa€al€amœ?ah€jg:15231:31¤aa€al€ah€am\"`kg:32397:130¤aa€al€ah€am\000¾•e10648¤aa€al€ah€am`ig:4088:47¤aa€al€ah€am\000›òe10380¤aa€al€ah€am\0000âkg:37646:200¤aa€al€ah€am\0004Gjg:13108:34¤aa€al€ah€am\000¦Njg:10056:43¤aa€al€ah€am&¬d7370¤aa€al€ah€amFPd6370¤aa€al€ah€amcØd4370¤aa€al€ah€amÌ€ig:6263:20¤aa€al€ah€amMVjg:15499:18¤aa€al€ah€am@e21851¤aa€al€ah€am\000Ğe10275¤aa€al€ah€am\0008€jg:10400:18¤aa€al€ah€am\000‚pe31331¤aa€al€ah€am\0003<d4241¤aa€al€ah€amHd6241¤aa€al€amdah€ig:5819:33¤aa€al€ah€am\000Güd6270¤aa€al€am\000ÂYah€e25180¤aa€al€am\000W0ah€jg:10172:55¤aa€al€ah€am\000¿ jg:24701:84¤aa€al€ah€am\000†Ÿe10178¤aa€al€ah€am\000Iğjg:15132:29¤aa€al€ah€am'e13099¤aa€al€ah€am\000„«e23099¤aa€al€ah€amCjg:25063:96¤aa€al€ah€amÃOig:9806:27¤aa€al€ah€amJ8e14955¤aa€al€ah€am\000Iğe11995¤aa€al€ah€am6¯jg:15507:19¤aa€al€ah€am9kg:24674:114¤aa€al€ah€am\000q°ig:9779:18¤aa€al€ah€am\"`e24989¤aa€al€ah€am\000VÉjg:23203:65¤aa€al€ah€am\000+ãd1720¤aa€al€ah€am\000‚Ôkg:24871:105¤aa€al€ah€am\000ËFkg:31562:115¤aa€al€ah€am\000AÜjg:16697:57¤aa€al€ah€am\000B?kg:25336:117¤aa€al€ah€am\000“àd4720¤aa€al€amLóah€ig:4720:33¤aa€al€amLóah€e10076¤aa€al€ah€amÃPig:9292:42¤aa€al€ah€am\000#òe12810¤aa€al€ah€amNd3820¤aa€al€ah€am“d9820¤aa€al€ah€am\000Hhkg:24874:105¤aa€al€ah€am\000‚ljg:12406:50¤aa€al€ah€am/:jg:14219:34¤aa€al€ah€ambpe15508¤aa€al€ah€amM¼ig:8309:61¤aa€al€ah€am\000\r•¤e15416¤aa€al€ah€amu/ig:9957:50¤aa€al€ah€amyig:34086:1¤aa€al€ah€am\000IŒjg:25216:93¤aa€al€am\0007ah€jg:31176:91¤aa€al€ah€am\000	ëd7920¤aa€al€am\000ÅÌah€d9920¤aa€al€am\000ah€ig:9922:46¤aa€al€ah€amN e31180¤aa€al€ah€am\000øjg:15331:23¤aa€al€ah€am\000e30810¤aa€al€ah€amÒe17307¤aa€al€ah€am\000tĞe38328¤aa€al€ah€amœ=ig:6400:31¤aa€al€am2`ah€jg:13110:36¤aa€al€am\0001ah€jg:15976:36¤aa€al€ah€amM'e15584¤aa€al€ah€am\000Óñjg:24697:81¤aa€al€ah€am\000	áxe12975¤aa€al€ah€am\000Ÿêjg:24611:90¤aa€al€ah€am\000=fg:35:2¤aa€al€ah€am\0000jg:14951:47¤aa€al€ah€am\000ã<kg:31158:109¤aa€al€ah€am\000&% e20748¤aa€al€ah€am\000©?jg:15275:54¤aa€al€ah€am\000€ig:7521:46¤aa€al€ah€am\000µjg:16681:57¤aa€al€ah€am\000B?e20855¤aa€al€ah€amøjg:24947:90¤aa€al€ah€am\000W/e16247¤aa€al€ah€am\000]pig:6795:32¤aa€al€ah€amÃPig:3647:23¤aa€al€amU‚ah€e25208¤aa€al€ah€am\000öe30748¤aa€al€am\000˜ah€e15492¤aa€al€ah€am|jg:16696:58¤aa€al€am\000óÛah€e15217¤aa€al€am\000†Ÿah€e11975¤aa€al€amÃPah€ig:8111:48¤aa€al€amœ@ah€jg:15165:42¤aa€al€am'ah€jg:13095:44¤aa€al€ah€am\000|Óig:4799:23¤aa€al€am€Gah€jg:14902:41¤aa€al€ah€am\000Ajg:25161:96¤aa€al€ah€am\000\"àjg:10119:57¤aa€al€amu0ah€e24217¤aa€al€ah€am\0001e32208¤aa€al€ah€am\000-ÆWe12208¤aa€al€ah€amËig:6593:26¤aa€al€ah€amhfe24975¤aa€al€ah€am\000pe29158¤aa€al€ah€amixjg:25185:84¤aa€al€am\000'İah€kg:25139:114¤aa€al€am\000\"àah€e38278¤aa€al€ah€am\000(De24035¤aa€al€ah€am\000ùØkg:24640:102¤aa€al€ah€am\000(—e14247¤aa€al€ah€am.àjg:14742:24¤aa€al€ah€am8¤e24881¤aa€al€amê`ah€jg:10062:51¤aa€al€ah€amœ@e25234¤aa€al€ah€am\000[¼e28538¤aa€al€am\000ÔÀah€ig:4077:35¤aa€al€ah€amMXjg:18709:50¤aa€al€am\000ópah€e25035¤aa€al€ah€am\000{kg:31282:106¤aa€al€ah€am\000\000àkg:24654:108¤aa€al€am\000V8ah€e25100¤aa€al€am\000eìah€gg:768:9¤aa€al€ah€amÃPe14234¤aa€al€ah€am\000ˆDig:7046:28¤aa€al€ah€amtgjg:10201:48¤aa€al€ah€am\000èe19943¤aa€al€ah€ame15330¤aa€al€ah€am'jg:24708:84¤aa€al€ah€am\000`Tig:4043:38¤aa€al€ah€am8@e25330¤aa€al€am\000­°ah€e31328¤aa€al€ah€am\000<áğig:5964:35¤aa€al€ah€am%Sig:3076:23¤aa€al€am\0008ah€kg:24790:117¤aa€al€ah€am\000	#Øe13027¤aa€al€ah€am\000	'Àe21217¤aa€al€ah€am\rFjg:15493:18¤aa€al€ah€am:—e17035¤aa€al€ah€am&e25307¤aa€al€ah€am\000hèig:2098:27¤aa€al€am\000;Jah€e15307¤aa€al€ah€amN hg:940:47¤aa€al€ah€am\000iÿe12257¤aa€al€am\000Cah€ig:9886:39¤aa€al€amo…ah€e25158¤aa€al€ah€am\000qœgg:140:1¤aa€al€ah€am\000´Æjg:16671:57¤aa€al€ah€am\000pkg:25657:108¤aa€al€ah€am\000_ig:1488:31¤aa€al€ah€am%d1jg:24854:99¤aa€al€am\000pah€e11978¤aa€al€ah€am\000Ú°e24307¤aa€al€am\000€—ah€e31254¤aa€al€ah€am\000q°e23346¤aa€al€ah€am\000R	Œe28100¤aa€al€ah€amëig:4080:45¤aa€al€ah€am\000Ie31234¤aa€al€ah€am\000ÿÖkg:24751:102¤aa€al€ah€am\000˜e32584¤aa€al€ah€am\000—¬e22539¤aa€al€ah€am\0004Ojg:12256:49¤aa€al€ah€am\000\n/~ig:3853:36¤aa€al€ah€am\000dojg:24730:93¤aa€al€ah€am\000lPe10978¤aa€al€ah€amIe31888¤aa€al€ah€am\000-©sjg:25035:96¤aa€al€ah€am\000{ig:7517:50¤aa€al€am\000é¨ah€kg:24864:102¤aa€al€ah€am\000lte31340¤aa€al€ah€am\000-Qig:6531:18¤aa€al€ah€am?jg:10404:30¤aa€al€amNah€e27855¤aa€al€ah€am”kg:34837:135¤aa€al€am'\rƒah€jg:13136:21¤aa€al€ah€am\000d¸jg:14795:53¤aa€al€ah€am\0008jg:15346:32¤aa€al€ah€amãie21340¤aa€al€am\000W0ah€e25328¤aa€al€ah€am\000˜e16802¤aa€al€ah€am\000	Se24878¤aa€al€ah€am\000Ae13888¤aa€al€ah€amÌ€e24066¤aa€al€ah€amÂëe14856¤aa€al€am\000›ûah€jg:14440:46¤aa€al€ah€am\000w·e12005¤aa€al€ah€am\000Ğe24856¤aa€al€ah€am\0008€e20539¤aa€al€ah€am\000y>Ae39235¤aa€al€ah€am\000	'½jg:15133:33¤aa€al€ah€am@te19235¤aa€al€ah€amp€e43340¤aa€al€ah€am‡ße19278¤aa€al€ah€am\000˜jg:13100:44¤aa€al€am\000˜ah€kg:25178:105¤aa€al€ah€am\000\"àe25066¤aa€al€ah€am\000Óòjg:25060:87¤aa€al€ah€am\000e31158¤aa€al€ah€am\000&% kg:25181:114¤aa€al€ah€am\000ÔÀig:9776:20¤aa€al€amôah€e15414¤aa€al€ah€am®ıjg:14282:50¤aa€al€ah€amN e25318¤aa€al€ah€am\000Aqe38943¤aa€al€am\000'¬.ah€jg:14587:32¤aa€al€ah€amu0e14158¤aa€al€amˆah€jg:10571:37¤aa€al€ah€am\000ÜHkg:24772:108¤aa€al€ah€am\000FLjg:15264:56¤aa€al€am\000éªah€e29584¤aa€al€ah€am\000\rX1jg:25214:87¤aa€al€ah€am\000Ò¨e15748¤aa€al€ah€am\000Eyig:8268:54¤aa€al€am\0008€ah€ig:9837:30¤aa€al€ah€amS3e12163¤aa€al€ah€am\000áUjg:14241:41¤aa€al€amN ah€ig:7545:45¤aa€al€ah€am\000.le27856¤aa€al€ah€amİjg:25284:87¤aa€al€ah€am\000e24748¤aa€al€amÂìah€jg:25313:90¤aa€al€ah€am\000­°kg:25265:114¤aa€al€ah€am\000ópkg:32403:130¤aa€al€ah€am\000nîpe17414¤aa€al€ah€amÂˆe15521¤aa€al€ah€am2Èe25521¤aa€al€ah€amÿÜe11163¤aa€al€ah€amp}e31163¤aa€al€ah€am\000<e41163¤aa€al€ah€am\0008ig:4322:33¤aa€al€am\000†Ÿah€ig:4072:30¤aa€al€ah€am|e11144¤aa€al€ah€am\000óšjg:15168:45¤aa€al€am¤ah€e12054¤aa€al€ah€am\000}ñig:1491:25¤aa€al€ah€am\000dŠe15278¤aa€al€ah€am\000€e22521¤aa€al€ah€am\000á$e21881¤aa€al€ah€ams7e13943¤aa€al€ah€am\0006†e31126¤aa€al€ah€am\000!‘Àe24163¤aa€al€ah€am\000[§e14163¤aa€al€ah€am+jg:24972:99¤aa€al€ah€amî¬jg:24590:84¤aa€al€ah€am\000Í¸e32753¤aa€al€ah€am\000õe10144¤aa€al€ah€am\000¡ kg:31940:115¤aa€al€am\000ªzah€jg:10726:47¤aa€al€ah€am\000–Ëkg:25333:108¤aa€al€ah€am\000¯e13521¤aa€al€ah€am\000>Xe20881¤aa€al€ah€am\000	§Îe24943¤aa€al€ah€am\000¿ jg:13101:59¤aa€al€ah€am\000“ßig:9940:50¤aa€al€am˜Xah€e31173¤aa€al€am\000zæah€jg:10331:38¤aa€al€ah€am|ig:4083:44¤aa€al€ah€amºQe10054¤aa€al€am\000_ah€jg:15972:24¤aa€al€ah€amgÉe19234¤aa€al€ah€am\000İĞig:7787:31¤aa€al€ah€amWjg:10170:56¤aa€al€ah€am\000‚kg:24646:105¤aa€al€am\000Ğah€e15420¤aa€al€ah€amsjg:24716:87¤aa€al€ah€am\000\r@d4731¤aa€al€am9Ïah€e10626¤aa€al€ah€am\000\n d3731¤aa€al€ah€am77e15093¤aa€al€amaİah€e16044¤aa€al€ah€am\000“Ûe32210¤aa€al€am\000-Æ¿ah€e15354¤aa€al€am\0004Øah€d9831¤aa€al€am#Zah€d8831¤aa€al€ah€am=¸e10716¤aa€al€ah€am\000\r»jg:13015:61¤aa€al€ah€am\000˜e25025¤aa€al€ah€am\000Iğe29729¤aa€al€ah€am\0005e14420¤aa€al€am‡lah€jg:14785:48¤aa€al€ah€amNe24682¤aa€al€ah€am\000Êe25044¤aa€al€ah€am\000F¢e31210¤aa€al€ah€am\000K˜e12694¤aa€al€ah€amÃNe14371¤aa€al€am{ah€jg:23092:63¤aa€al€ah€am\000d7931¤aa€al€amN ah€d9931¤aa€al€am\000!ah€e13083¤aa€al€am\000˜ah€ig:7473:42¤aa€al€ah€amu0e18357¤aa€al€ah€am\000wkjg:16724:59¤aa€al€am\000B?ah€d7490¤aa€al€ah€am\000'e23354¤aa€al€amÀah€jg:15568:33¤aa€al€am'ah€e13093¤aa€al€ah€am\000Ld6836¤aa€al€ah€am\000ç”d4836¤aa€al€am\000Dah€e24210¤aa€al€ah€am\000qªjg:38277:36¤aa€al€ah€am\000mĞe25371¤aa€al€ah€amN e15371¤aa€al€ah€amÔe13025¤aa€al€am\000Ô¿ah€e15357¤aa€al€ah€amu0jg:31150:91¤aa€al€ah€am\000©€ig:5426:20¤aa€al€ah€am\000E¬e25068¤aa€al€ah€am\000‚mjg:10274:63¤aa€al€ah€am\000òce15765¤aa€al€amœ@ah€jg:20964:42¤aa€al€ah€amM»e10922¤aa€al€ah€am\000Êğe31336¤aa€al€ah€am\000åËe22682¤aa€al€ah€am\0000he13044¤aa€al€ah€am\000_d7736¤aa€al€ah€am\000©€e12682¤aa€al€ah€amœ=ig:6411:41¤aa€al€ah€amRd4736¤aa€al€am\000mah€e25083¤aa€al€ah€am\000İĞjg:24939:87¤aa€al€ah€am\000Le24806¤aa€al€ah€am\000Ì_jg:10140:61¤aa€al€ah€am\000J<d7331¤aa€al€amM¼ah€d6331¤aa€al€ah€am\000ÔÀd1990¤aa€al€ah€am>€d2990¤aa€al€am$·ah€e24626¤aa€al€ah€am\000.pe27694¤aa€al€ah€am\000oe11288¤aa€al€ah€ame31288¤aa€al€ah€am\000ğ€ig:9771:25¤aa€al€ah€am'e13934¤aa€al€ah€am¤e15187¤aa€al€am\000Íah€d2236¤aa€al€ah€am\000\r@d4236¤aa€al€ah€amŠ¬e11208¤aa€al€am\000´ah€e10584¤aa€al€ah€am\000öe25322¤aa€al€ah€am\000Rÿjg:14945:45¤aa€al€ah€am•)e24716¤aa€al€ah€am\000\r@d7431¤aa€al€ah€amB?ig:4736:42¤aa€al€am\000mah€e28420¤aa€al€ah€am\"Äe23105¤aa€al€ah€am'jg:14126:23¤aa€al€ah€am3†e13105¤aa€al€ah€am\000Ÿóe10314¤aa€al€ah€amÂ„e14187¤aa€al€ah€am\000ÔÀjg:21849:93¤aa€al€ah€am\000Õ¨hg:890:24¤aa€al€ah€am\000|mkg:25697:114¤aa€al€ah€am\000+ïe15210¤aa€al€ah€am!˜e25210¤aa€al€ah€am\000¡ e16806¤aa€al€ah€am\000<å×kg:24892:111¤aa€al€ah€am\000	e29371¤aa€al€ah€am\000zd7531¤aa€al€ah€am\000—Òjg:15155:39¤aa€al€ah€amu0d3531¤aa€al€ah€am\000‰T@ig:1986:41¤aa€al€ah€am\000	ig:9928:45¤aa€al€am\000Ñxah€d9890¤aa€al€am&¬ah€e15694¤aa€al€am\000;ãah€e21934¤aa€al€ah€am&¬e14549¤aa€al€ah€am\000\n‡Pd7436¤aa€al€ah€am<Œjg:13000:62¤aa€al€ah€am\000!e25336¤aa€al€ah€am\000“àe15336¤aa€al€ah€amcœe16716¤aa€al€ah€amÃPe24922¤aa€al€ah€am\000vdjg:15120:26¤aa€al€ah€am!4e25105¤aa€al€ah€am\000Ğe21765¤aa€al€am†Äah€e15969¤aa€al€ah€amXd7990¤aa€al€ah€amÂ‡e24368¤aa€al€ah€am®şjg:13125:50¤aa€al€ah€am\000€jg:10384:65¤aa€al€ah€am\000“àd6386¤aa€al€am'ah€e25319¤aa€al€ah€am\000;ˆd3386¤aa€al€ah€am3ße10328¤aa€al€ah€am\000>Xkg:23824:112¤aa€al€ah€am\000-Ÿ°d9386¤aa€al€ah€am\000!‘¾e14246¤aa€al€ah€am\000Äve24246¤aa€al€ah€amig:6412:39¤aa€al€am\000†œah€e20969¤aa€al€ah€am\000[`jg:15684:64¤aa€al€ah€am\000Iğe32209¤aa€al€am\000-eah€e12209¤aa€al€ah€am¼e32229¤aa€al€ah€am\000!‘Àjg:13013:56¤aa€al€ah€am\000AÖe12229¤aa€al€ah€amìig:2164:45¤aa€al€ah€am\000B@ig:7523:46¤aa€al€ah€amixkg:25292:111¤aa€al€am\000\r@ah€jg:14768:44¤aa€al€amu/ah€jg:10081:50¤aa€al€ah€amœ@d4040¤aa€al€am\000pah€ig:3197:35¤aa€al€ah€am'ig:7532:47¤aa€al€ah€am\000mÈe12978¤aa€al€ah€am\000òSd4586¤aa€al€am’ah€ig:9880:40¤aa€al€amu0ah€d6586¤aa€al€amJ,ah€ig:4696:59¤aa€al€ah€amœ@ig:8299:59¤aa€al€ah€amä„kg:29507:105¤aa€al€am\000`Ôah€d8131¤aa€al€ah€amE$jg:15181:55¤aa€al€ah€amu0jg:24620:93¤aa€al€ah€am\000À¬e14742¤aa€al€ah€am8¤jg:25217:96¤aa€al€ah€am\000ÿGjg:21775:56¤aa€al€ah€am\000ˆ”e41119¤aa€al€am%\nah€ig:1639:49¤aa€al€ah€am\0008€ig:4397:40¤aa€al€ah€am\000	ôÒe20549¤aa€al€ah€am\000ze14209¤aa€al€am'ah€e24209¤aa€al€ah€am\000¡d5486¤aa€al€ah€am\000'ig:4251:26¤aa€al€ah€amWd3486¤aa€al€ah€am<kg:24645:105¤aa€al€ah€am\000	'¾d1486¤aa€al€ah€am\000B@d4231¤aa€al€ah€amûe18358¤aa€al€ah€am\000Òge10377¤aa€al€ah€am\000kg:24879:108¤aa€al€ah€am\000Ş¨e15742¤aa€al€ah€am\000rd7486¤aa€al€ah€am…,d8486¤aa€al€am\000„€ah€e24033¤aa€al€ah€am\000Ô»d4240¤aa€al€ah€am d3240¤aa€al€am2µah€jg:24722:90¤aa€al€ah€am\000“ße25653¤aa€al€ah€am\000Æe11969¤aa€al€am\000˜ah€jg:31138:88¤aa€al€ah€am\000\r@e31229¤aa€al€am\000\rğah€e10066¤aa€al€ah€am\000Zig:7730:34¤aa€al€ah€am\000A×d7786¤aa€al€ah€amÖ×d6786¤aa€al€ah€ami-d5786¤aa€al€ah€am%(d4786¤aa€al€ah€amVRjg:13035:49¤aa€al€ah€am\000%Âe32397¤aa€al€ah€am\000¾•d9786¤aa€al€ah€amjg:20967:39¤aa€al€ah€am¯Æe40246¤aa€al€am\000äá¿ah€e33855¤aa€al€ah€am\0009ËXkg:25085:120¤aa€al€ah€am\000]êe13307¤aa€al€ah€am'Ze16653¤aa€al€ah€am\nŒe28452¤aa€al€ah€am÷jg:24601:87¤aa€al€ah€am\0008e30420¤aa€al€ah€am#(ig:8186:26¤aa€al€ah€am&¬ig:9856:36¤aa€al€am:æah€e25090¤aa€al€ah€am\000“`e14855¤aa€al€am\000q~ah€e24855¤aa€al€ah€am\000	jg:12257:42¤aa€al€am\000Cah€e22307¤aa€al€am!—ah€jg:12011:41¤aa€al€amµšah€jg:15517:25¤aa€al€ah€am@d1986¤aa€al€ah€am\000	jg:18634:52¤aa€al€ah€am\000iÿd2986¤aa€al€ah€am;ÿe13035¤aa€al€ah€am\000%Âd6986¤aa€al€ah€am'e14090¤aa€al€am'ah€e14397¤aa€al€amN ah€kg:25020:117¤aa€al€ah€am\000–e24610¤aa€al€ah€am\000p5kg:25029:120¤aa€al€ah€am\000“İjg:10138:59¤aa€al€amİ|ah€jg:13040:56¤aa€al€ah€am\000öjg:10077:53¤aa€al€am\000ëMah€e25119¤aa€al€ah€am\000hŒe11371¤aa€al€ah€am½Øjg:15494:18¤aa€al€ah€am\\\rjg:10053:47¤aa€al€am\0005\rah€ig:1640:42¤aa€al€amœ?ah€e32420¤aa€al€ah€am\000Pìjg:11985:35¤aa€al€ah€am’e10035¤aa€al€ah€am\000Âwig:1715:44¤aa€al€ah€am\000æ0ig:4568:21¤aa€al€ah€amOtkg:25069:114¤aa€al€ah€am\000¥Pd9886¤aa€al€amo…ah€e22710¤aa€al€ah€am|kg:31303:115¤aa€al€ah€am\000\n®]e14119¤aa€al€ah€am>jg:20818:22¤aa€al€ah€amXe15229¤aa€al€ah€am\000† e25229¤aa€al€ah€am\0004e12014¤aa€al€am\000pÿah€e29539¤aa€al€ah€am\000=Ijg:12046:60¤aa€al€ah€am\000Šêjg:14422:40¤aa€al€ah€amN e14227¤aa€al€ah€am0oe14581¤aa€al€ah€am/¦e32392¤aa€al€ah€am\000'¿Çe24037¤aa€al€ah€am\000D6jg:15380:46¤aa€al€ah€amˆTe15308¤aa€al€am%ah€kg:32508:100¤aa€al€am\000?–ah€e25308¤aa€al€ah€am\000­°jg:24748:99¤aa€al€amÂìah€e31875¤aa€al€ah€am\000tjg:15529:29¤aa€al€ah€am'Ákg:24802:120¤aa€al€ah€am\000“ßig:1203:54¤aa€al€ah€am\000ä_jg:15912:23¤aa€al€amÏah€jg:13068:42¤aa€al€ah€am\000\rÚàe15412¤aa€al€ah€amajg:31233:91¤aa€al€ah€am\000lĞe24875¤aa€al€ah€am\000pşe25000¤aa€al€ah€am\000_kg:25671:105¤aa€al€ah€amóZe23100¤aa€al€ah€am8³jg:24618:93¤aa€al€ah€am\000˜e13100¤aa€al€am\000˜ah€jg:14176:26¤aa€al€ah€am\000Ğe15561¤aa€al€amœ®ah€e46378¤aa€al€ah€am›jg:11603:51¤aa€al€ah€amê_e24652¤aa€al€ah€am\000Âe14652¤aa€al€ah€am\000hg:811:57¤aa€al€ah€am\000\\e13308¤aa€al€ah€amê`jg:15628:48¤aa€al€amHDah€ig:9883:42¤aa€al€ah€amN e19275¤aa€al€ah€am\000\r>ig:6548:16¤aa€al€ah€am&He25227¤aa€al€am\000F¸ah€e30307¤aa€al€ah€am\000İĞe15227¤aa€al€ah€am\0008€e14561¤aa€al€am'ah€kg:24758:105¤aa€al€ah€am\000—©e32428¤aa€al€ah€am\000	œğig:4249:25¤aa€al€ah€am9Ğjg:16722:57¤aa€al€am\0000ah€jg:15638:49¤aa€al€amN ah€ig:9795:26¤aa€al€amJah€jg:24588:81¤aa€al€am\000_Yah€ig:9817:26¤aa€al€ah€am kg:24663:111¤aa€al€ah€am\000¿ kg:24266:105¤aa€al€ah€am\000Õxpjg:25345:72¤aa€al€am\000	ah€jg:16806:66¤aa€al€ah€am\000<å×e18356¤aa€al€ah€am\000Åkg:25193:108¤aa€al€ah€am\000Kc783¤aa€al€ah€amJig:7753:32¤aa€al€ah€am\000]›e20878¤aa€al€ah€am\000jg:15626:47¤aa€al€ah€am\000ıXjg:21931:15¤aa€al€ah€am e12247¤aa€al€ah€amÃPjg:24733:96¤aa€al€ah€am\000q\000ig:4721:35¤aa€al€am\000\r|ah€e14859¤aa€al€ah€am\000¿Àe24859¤aa€al€ah€am\000	e34859¤aa€al€ah€am\000úig:9844:38¤aa€al€ah€amN kg:23525:115¤aa€al€ah€am\000]pe31318¤aa€al€ah€am\000„€ig:9843:33¤aa€al€ah€amĞ e25207¤aa€al€ah€am\000nèjg:15255:57¤aa€al€am\0008€ah€e10118¤aa€al€ah€am\000†<e20875¤aa€al€ah€am\000A‹ig:6541:16¤aa€al€ah€amPŒjg:12042:42¤aa€al€ah€am\000(e12988¤aa€al€ah€amÜ*jg:15348:26¤aa€al€ah€am\"`ig:2865:21¤aa€al€ah€amµjg:24856:99¤aa€al€ah€am\0008€e15258¤aa€al€ah€am\000_ig:4732:37¤aa€al€amYØah€jg:20960:37¤aa€al€ah€am#(c863¤aa€al€ah€amWâe10318¤aa€al€ah€amN_ig:9775:19¤aa€al€ah€amN ig:4797:25¤aa€al€am'ah€e24207¤aa€al€ah€am\000\n e38561¤aa€al€amÒïah€e14207¤aa€al€ama¨ah€ig:5011:40¤aa€al€am\000›ah€jg:25669:84¤aa€al€am\0004Pah€ig:9941:49¤aa€al€ah€am\000±¨e14639¤aa€al€ah€am\000¬Õig:4837:30¤aa€al€ah€am\000îŒjg:14158:26¤aa€al€amˆah€ig:1318:23¤aa€al€ah€am\000%Á¢kg:25224:117¤aa€al€ah€am\000P`d3196¤aa€al€ah€amdd8196¤aa€al€ah€amÖØkg:24792:117¤aa€al€ah€am\000±˜jg:15291:51¤aa€al€am›xah€jg:14377:26¤aa€al€am:˜ah€e24988¤aa€al€ah€am\000×jg:24696:81¤aa€al€ah€am\000_jg:11990:55¤aa€al€am\000>©ah€jg:10111:57¤aa€al€ah€am\000Iğe31322¤aa€al€ah€am\000<ÿ;jg:10040:35¤aa€al€ah€am\000pQe15495¤aa€al€ah€amˆe24643¤aa€al€ah€am\000tig:7447:36¤aa€al€ah€am'jg:15226:37¤aa€al€ah€am)ÿkg:24897:114¤aa€al€ah€am\000â\000e14428¤aa€al€ah€am¸Be10105¤aa€al€am\000˜ah€e23440¤aa€al€ah€am®Ée25109¤aa€al€ah€am\0008e31258¤aa€al€ah€am\000ªõe16224¤aa€al€ah€am\000Lig:6466:18¤aa€al€ah€am'd3036¤aa€al€ah€am0µjg:24074:93¤aa€al€ah€am\000Ğjg:15269:24¤aa€al€ah€amXjg:25300:93¤aa€al€ah€am\000\"ße24934¤aa€al€ah€am\000’©jg:15184:54¤aa€al€am\000òah€kg:23513:115¤aa€al€ah€am\000+ïe25428¤aa€al€am\000B@ah€e14258¤aa€al€ah€amqHe14440¤aa€al€ah€am\000w·e24258¤aa€al€ah€am\000˜½jg:25061:90¤aa€al€ah€am\000‹ôe14109¤aa€al€ah€ampe34440¤aa€al€ah€am;^ig:9782:23¤aa€al€ah€amze39682¤aa€al€ah€am©±e14765¤aa€al€amtÌah€kg:31339:100¤aa€al€ah€am\000yêğe24765¤aa€al€ah€am\000† e20967¤aa€al€ah€am¯Æe29506¤aa€al€am\000-ÆÀah€kg:25180:111¤aa€al€am\000W0ah€e15511¤aa€al€ah€am¤íe13109¤aa€al€am\000øah€e23109¤aa€al€ah€amD¿e43109¤aa€al€am\000jõah€jg:15613:42¤aa€al€ah€am\000$øe25014¤aa€al€ah€am\000\r?e15014¤aa€al€ah€am_…jg:15515:25¤aa€al€ah€am'ig:9923:45¤aa€al€ah€am\000çêe23765¤aa€al€ah€am\000\\œe43428¤aa€al€ah€am kg:24886:111¤aa€al€am\000Ô¿ah€e25023¤aa€al€am\000Zìah€kg:30046:128¤aa€al€ah€am\000ÆG`jg:10276:56¤aa€al€am¯Èah€e24511¤aa€al€ah€am&«e13073¤aa€al€ah€am\000Iïjg:15173:46¤aa€al€ah€am\000_e27682¤aa€al€ah€amşe17682¤aa€al€ah€am&Gjg:15094:58¤aa€al€ah€amˆ¸kg:41168:200¤aa€al€ah€am\000=0ig:3195:18¤aa€al€ah€amokg:24891:111¤aa€al€ah€am\000pÿe10044¤aa€al€ah€am\000’,e18742¤aa€al€ah€am\000Ëûhg:812:54¤aa€al€ah€am\000\r»Ÿe13511¤aa€al€ah€am\000?ig:1744:20¤aa€al€ah€am&¬e16083¤aa€al€ah€amthjg:24852:96¤aa€al€ah€am\000Ãüe13014¤aa€al€ah€am\000¡ e24849¤aa€al€ah€am\000Ğig:5207:20¤aa€al€ah€am-e18652¤aa€al€ah€am\000*°e33448¤aa€al€ah€am2Åkg:24779:111¤aa€al€ah€am\000“Şkg:32659:115¤aa€al€ah€am\000	'ºe29549¤aa€al€ah€am\000e10258¤aa€al€ah€am\000~ljg:15310:18¤aa€al€ah€amÎhg:934:37¤aa€al€ah€am\000¸e29378¤aa€al€ah€am\000\r?e10109¤aa€al€ah€am\000È@e13495¤aa€al€ah€am\000Qig:6577:23¤aa€al€ah€amN e10561¤aa€al€ah€am$´e25849¤aa€al€ah€am\000ßte35682¤aa€al€ah€am\000	'e25682¤aa€al€ah€am\000›Dd7761¤aa€al€ah€am\000Üd1996¤aa€al€amTah€d2996¤aa€al€ah€amBkg:31328:100¤aa€al€ah€am\000<áğe15173¤aa€al€ah€am\000_d5996¤aa€al€ah€am}\000kg:28543:117¤aa€al€ah€am\000ÔÀjg:13126:53¤aa€al€ah€am\000fäe25147¤aa€al€ah€am\000Ğe16651¤aa€al€ah€amNèd1760¤aa€al€ah€amb…d9826¤aa€al€ah€am]Àd7760¤aa€al€ah€amÂ‡e23782¤aa€al€ah€am¶Ğe25054¤aa€al€ah€am\000E/hg:8177:7¤aa€al€ah€am\000˜d6826¤aa€al€amah€d3826¤aa€al€ah€am±îd4826¤aa€al€ah€am\000*e22849¤aa€al€ah€amsŸig:7534:45¤aa€al€ah€am¨Àkg:24688:120¤aa€al€ah€am\000Iïe32404¤aa€al€ah€ameÜe12404¤aa€al€ah€amÊjg:10068:51¤aa€al€ama¨ah€jg:24742:99¤aa€al€ah€am\000šğjg:25031:84¤aa€al€am\000\nccah€ig:2099:58¤aa€al€ah€am\000	ôÉd1726¤aa€al€ah€am\000Ì¨d3860¤aa€al€ah€amPe14510¤aa€al€ah€am\000Ojg:14025:17¤aa€al€am%ah€e16054¤aa€al€am\000yêğah€ig:3306:18¤aa€al€ah€am\000Ô½d4726¤aa€al€ah€am&Hd3726¤aa€al€am\000‰T@ah€e28495¤aa€al€ah€amÃNe11404¤aa€al€ah€am]¼jg:12426:59¤aa€al€amèah€ig:9845:35¤aa€al€ah€amË&e24616¤aa€al€ah€am\000µ€e23506¤aa€al€am\000°¥ah€kg:24905:117¤aa€al€ah€am\000\r?ig:3423:50¤aa€al€am\000­°ah€e10097¤aa€al€ah€am\000@d4461¤aa€al€ah€amÍjg:15648:56¤aa€al€ah€am\000‡e24651¤aa€al€ah€am\000Yfig:9924:48¤aa€al€ah€am\000#—e22842¤aa€al€ah€amtÌkg:32395:130¤aa€al€ah€am\000h…Ğjg:15187:54¤aa€al€am\000Íah€d7960¤aa€al€am\000æ”ah€e15846¤aa€al€ah€am‡æd9960¤aa€al€ah€am\000e25087¤aa€al€ah€am\000W0jg:15253:52¤aa€al€ah€am\000Iğkg:24754:102¤aa€al€am\000êèah€ig:8109:46¤aa€al€ah€am±Ajg:10035:35¤aa€al€ah€am\000Âwe15520¤aa€al€ah€am&¬e25651¤aa€al€ah€amÌ€e15651¤aa€al€am”~ah€e14782¤aa€al€ah€amù~d7526¤aa€al€ah€am’àjg:24934:87¤aa€al€ah€am\000’©e25719¤aa€al€ah€am'e10308¤aa€al€ah€amĞe32205¤aa€al€ah€am\000-*{jg:15614:45¤aa€al€ah€amxle12205¤aa€al€ah€am$ig:6595:28¤aa€al€amN ah€d6361¤aa€al€ah€am„e12703¤aa€al€ah€am\000Se23802¤aa€al€ah€am\000ÔEd4426¤aa€al€ah€am'd4661¤aa€al€ah€am\000<åd9426¤aa€al€ah€am\000*×ig:9378:38¤aa€al€am\000¡ah€d9360¤aa€al€ah€am\000¥Øe25022¤aa€al€ah€am\000¹³d7360¤aa€al€ah€amTjg:13071:45¤aa€al€ah€am\000d¸e13087¤aa€al€ah€am\000+Úe15340¤aa€al€ah€am$ad4360¤aa€al€ah€amÜkg:25166:111¤aa€al€am\000\r@ah€e21308¤aa€al€ah€am˜We31308¤aa€al€ah€am\000²Ød7461¤aa€al€am+\\ah€jg:14788:49¤aa€al€amKah€d4326¤aa€al€ah€amFd4361¤aa€al€ah€amXHjg:15222:19¤aa€al€ah€am/gd6326¤aa€al€ah€am\000(e15598¤aa€al€amu0ah€d7460¤aa€al€ah€amSše25097¤aa€al€ah€am\000pjg:25148:99¤aa€al€ah€am\000Iğd9298¤aa€al€ah€am'qig:6597:28¤aa€al€ah€am|e24205¤aa€al€ah€am\0001e25356¤aa€al€ah€am'ig:2246:58¤aa€al€ah€am\0000Œe24636¤aa€al€ah€am\000Ÿad6561¤aa€al€ah€am9Ïd3186¤aa€al€ah€am16e14097¤aa€al€ah€am\r1e24097¤aa€al€ah€am\000	\000°d8226¤aa€al€ah€am\000æCd8186¤aa€al€ah€am&¬jg:24843:93¤aa€al€ah€amÃPe24869¤aa€al€ah€am\0008d4560¤aa€al€ah€am\000„jg:13048:31¤aa€al€ah€am\000€Oe25205¤aa€al€ah€am\000½ñjg:10377:59¤aa€al€ah€am\000kg:32580:141¤aa€al€am\000¾¼ ah€e23636¤aa€al€am\000”ah€jg:10721:43¤aa€al€ah€am\000\n®`d3198¤aa€al€ah€am&¬d6661¤aa€al€ah€am\000ÄÖd4561¤aa€al€ah€amN e24594¤aa€al€ah€am\000Iğe23097¤aa€al€ah€amÒğkg:25025:120¤aa€al€ah€am\000Iğd7086¤aa€al€ah€am:˜e34087¤aa€al€ah€am\000_‹e14594¤aa€al€amœ@ah€hg:727:10¤aa€al€ah€amN d6660¤aa€al€ah€am\000r†e31187¤aa€al€ah€am\000ÿ”d6050¤aa€al€ah€am\rd7050¤aa€al€ah€amJe32217¤aa€al€am\000+ïah€e31878¤aa€al€ah€am\000õƒd4050¤aa€al€ah€amBgc833¤aa€al€ah€am\000®jg:24829:87¤aa€al€ah€am\000E¿e12217¤aa€al€ah€amÌ€jg:14580:27¤aa€al€amNÅah€jg:14172:23¤aa€al€am\000NRah€jg:25329:96¤aa€al€am\000Øah€d9061¤aa€al€ah€am\000_c943¤aa€al€ah€am\000¡ e12698¤aa€al€am\000±ah€e15346¤aa€al€ah€amãikg:31329:100¤aa€al€ah€am\000e`d4496¤aa€al€ah€amye32219¤aa€al€ah€am\0000…İjg:13128:47¤aa€al€ah€am\000İÊig:3784:37¤aa€al€am¿gah€e13129¤aa€al€ah€am\000ó€jg:15294:53¤aa€al€ah€am\000!e31869¤aa€al€ah€amÜ‹jg:24969:99¤aa€al€ah€am\0006Jig:6581:21¤aa€al€am\000pah€d8250¤aa€al€am\000† ah€d8161¤aa€al€am\000Ü&ah€kg:31286:109¤aa€al€ah€am\000\r»<b35¤aa€al€ah€am\0000jg:15492:15¤aa€al€ah€am|e21219¤aa€al€ah€am“d3396¤aa€al€am\0002¢ah€jg:20551:63¤aa€al€ah€am\000\rğjg:14667:53¤aa€al€amu0ah€d9396¤aa€al€ah€am\000˜–ig:7736:39¤aa€al€ah€am\000©€ig:2807:23¤aa€al€ah€am\000q°d8396¤aa€al€amqDah€jg:24715:87¤aa€al€ah€am\000Yˆjg:18743:59¤aa€al€ah€am\000uíe19271¤aa€al€ah€am\000„@jg:31227:91¤aa€al€ah€am\000}d8261¤aa€al€ah€am¿jg:12531:51¤aa€al€ah€am\000!ìe24698¤aa€al€am\000­°ah€jg:21765:48¤aa€al€am†Äah€jg:10401:18¤aa€al€ah€amN e25118¤aa€al€am\000ÔÀah€e15118¤aa€al€ah€am'jg:15175:51¤aa€al€ah€am\000›kg:32568:141¤aa€al€ah€am}x?kg:24691:120¤aa€al€ah€am\000Ğe10219¤aa€al€ah€am\000† ig:4324:30¤aa€al€amDVah€ig:9910:44¤aa€al€ah€am\000r8jg:14174:19¤aa€al€ah€am'kg:24880:108¤aa€al€ah€am\000	d4596¤aa€al€ah€am\000{š0jg:14246:44¤aa€al€ah€am\000Ävd6596¤aa€al€ah€am:˜d2596¤aa€al€am'ah€ig:9777:19¤aa€al€amôah€e14842¤aa€al€ah€am\000Ûme24842¤aa€al€ah€amœ@jg:31148:91¤aa€al€ah€am\000/e20520¤aa€al€ah€am\000$Ôe22448¤aa€al€ah€am€àkg:40246:213¤aa€al€am\000äá¿ah€e24271¤aa€al€ah€am\000üÇe21943¤aa€al€ah€amH¨e12207¤aa€al€ah€am#jg:10175:55¤aa€al€ah€am\000¤e16219¤aa€al€ah€am\0001jg:14762:37¤aa€al€amPºah€d9896¤aa€al€ah€amNkg:23514:114¤aa€al€ah€am\000ã`e10385¤aa€al€am\000\r%Pah€kg:24916:120¤aa€al€ah€am\000Éke13520¤aa€al€ah€am\000H\"Âjg:15230:25¤aa€al€ah€am'e15271¤aa€al€ah€am\0008€e25271¤aa€al€ah€am\000'ig:9290:42¤aa€al€am\000­ah€jg:15213:36¤aa€al€ah€am:—e25219¤aa€al€ah€am\000Od4796¤aa€al€ah€amLƒe14129¤aa€al€ah€am?d9796¤aa€al€ah€am,jg:10215:62¤aa€al€ah€am\000\n‡Pig:4362:10¤aa€al€ah€am†jg:15016:16¤aa€al€amÈah€kg:25309:120¤aa€al€ah€am\000“àe10404¤aa€al€amNah€e20404¤aa€al€ah€amFGjg:14193:31¤aa€al€ah€ama¨jg:25668:99¤aa€al€ah€am—ôe11166¤aa€al€ah€amRe14219¤aa€al€ah€ambpe24219¤aa€al€ah€am\000óig:8110:47¤aa€al€am\000Ó²ah€jg:15370:44¤aa€al€ah€amœ@e15352¤aa€al€amÀ<ah€e10100¤aa€al€ah€am\000EJig:2565:35¤aa€al€ah€am\000Ğd9926¤aa€al€ah€amN ig:1716:40¤aa€al€ah€am\000i,jg:25048:93¤aa€al€ah€am\000­°jg:31181:91¤aa€al€ah€am\000CÑe33872¤aa€al€ah€am+¶ig:8158:40¤aa€al€amODah€jg:13012:27¤aa€al€ah€am\000|jg:21766:50¤aa€al€ah€am\000Od2243¤aa€al€ah€am\000,˜Be15775¤aa€al€am\000† ah€kg:24087:109¤aa€al€ah€am\000	ç(d8143¤aa€al€ah€am\000DZjg:25283:84¤aa€al€ah€am\0000°e27422¤aa€al€ah€amQe14255¤aa€al€ah€am\000–Ad4733¤aa€al€ama¨ah€e24872¤aa€al€am\000¿Dah€jg:10097:57¤aa€al€ah€am\000@e10140¤aa€al€ah€am\000J<e24692¤aa€al€ah€am\000cje19817¤aa€al€ah€am+Àjg:14097:14¤aa€al€ah€am\r1e15012¤aa€al€ah€am”e25012¤aa€al€ah€am\000{ve18239¤aa€al€ah€am\000°ig:9748:15¤aa€al€ah€am9jg:24955:93¤aa€al€ah€am\000†9e14373¤aa€al€ah€amu/d4043¤aa€al€ah€am8@d6043¤aa€al€ah€am«Ìd5833¤aa€al€ah€amöig:8190:55¤aa€al€ah€am\000	#×e15255¤aa€al€am\0008€ah€kg:24789:114¤aa€al€ah€am\0004Pkg:31211:109¤aa€al€ah€am\000K˜jg:25312:87¤aa€al€ah€am\000_d1443¤aa€al€ah€am\000iÿjg:20966:36¤aa€al€ah€amŞ„jg:15178:47¤aa€al€ah€am\000Ú»jg:24938:87¤aa€al€ah€am\000Njg:20407:60¤aa€al€ah€am'e11207¤aa€al€ah€am\000\n¦ig:8265:56¤aa€al€ah€am\000Iíe15422¤aa€al€ah€amêe15373¤aa€al€am\0008€ah€jg:10238:52¤aa€al€ah€am\000† d7533¤aa€al€am\000q`ah€d6533¤aa€al€ah€am;e12958¤aa€al€ah€am\000'e12692¤aa€al€am\000\r»Ÿah€e15343¤aa€al€ah€am\000&e10207¤aa€al€ah€am\000ìhe17012¤aa€al€ah€amÃPig:7429:40¤aa€al€ah€am\000ó|kg:24080:113¤aa€al€am\000O€ah€hg:865:31¤aa€al€ah€amN e14422¤aa€al€ah€amN d4243¤aa€al€am:˜ah€ig:9937:48¤aa€al€ah€amÃPd5633¤aa€al€ah€am\000Jd2633¤aa€al€ah€am\000‰T@jg:24735:96¤aa€al€ah€am\000pig:4335:37¤aa€al€ah€am\000\r@e21775¤aa€al€ah€am\000ˆ”e23140¤aa€al€ah€am\000 jg:18711:50¤aa€al€ah€am\000Ö jg:25655:93¤aa€al€ah€am\000Ç¶e25239¤aa€al€ah€am\000ÔÀig:4698:21¤aa€al€ah€am;d8400¤aa€al€ah€am\000Ğjg:13046:50¤aa€al€ah€am\000	hd6400¤aa€al€am2`ah€e15602¤aa€al€ah€am\000“od4400¤aa€al€ah€am\000¥àd5543¤aa€al€ah€amÖd7543¤aa€al€ah€am\000\000=kg:29506:105¤aa€al€am\000-ÆÀah€ig:6267:12¤aa€al€ah€am'Be25029¤aa€al€ah€am\000“İd8223¤aa€al€ah€am\000-e24705¤aa€al€ah€amê`e15409¤aa€al€ah€am\000okg:31202:100¤aa€al€am\000ë¿ah€e14239¤aa€al€amN ah€d8500¤aa€al€ah€am\000¦e31140¤aa€al€ah€am\000B@kg:31292:112¤aa€al€ah€am\000|d5500¤aa€al€ah€amNe24602¤aa€al€ah€amÂée14602¤aa€al€ah€amNjg:15135:30¤aa€al€am;ah€jg:12024:50¤aa€al€ah€am\000÷d7443¤aa€al€ah€am{e31255¤aa€al€ah€am\000)e21872¤aa€al€ah€am\000*¹jg:25089:90¤aa€al€am\000† ah€kg:31305:115¤aa€al€ah€am\000lDe14409¤aa€al€amdah€e27692¤aa€al€ah€am\000zjg:10024:46¤aa€al€ah€amu/e16255¤aa€al€ah€amDÀkg:29372:108¤aa€al€ah€am\000zig:9396:39¤aa€al€ah€am\000˜–d3423¤aa€al€am\000­°ah€d5423¤aa€al€ah€am\000‰²d7423¤aa€al€ah€am\000ne15003¤aa€al€ah€am\000{™e16692¤aa€al€am\000Aah€hg:8181:9¤aa€al€ah€am:˜jg:14288:57¤aa€al€ah€amu0d5643¤aa€al€ah€am\000Ke22373¤aa€al€ah€am\"d3643¤aa€al€ah€am	Äig:9397:39¤aa€al€ah€am\000¦Nig:1935:24¤aa€al€ah€am\000H¡(ig:3855:37¤aa€al€ah€am\000óoe23515¤aa€al€ah€am\0000e10310¤aa€al€ah€am’àjg:10370:57¤aa€al€ah€amê`e12031¤aa€al€ah€amMXjg:25032:87¤aa€al€am\000ŒÕah€e11174¤aa€al€ah€am.ˆjg:10044:49¤aa€al€ah€am\000’,e39936¤aa€al€ah€amMüe24724¤aa€al€ah€am\000>“jg:15354:32¤aa€al€am\0004Øah€e24858¤aa€al€ah€am\000ŒÚe11022¤aa€al€ah€am0e21817¤aa€al€amNah€e31183¤aa€al€am\000€ah€jg:13121:38¤aa€al€ah€am\000†jg:10574:40¤aa€al€ah€am¶ó¶jg:12977:20¤aa€al€ah€am\000İškg:31326:100¤aa€al€ah€am\000„€jg:14252:45¤aa€al€ah€am\000Ñ&e17724¤aa€al€am\000däah€jg:15349:33¤aa€al€ah€amÃPig:3066:24¤aa€al€am'ah€jg:14724:16¤aa€al€am+Rah€e25290¤aa€al€am\000ÔÀah€e10602¤aa€al€ah€amÃPe23858¤aa€al€am\000wäah€e12022¤aa€al€ah€amN ig:8258:56¤aa€al€ah€ama¨e25434¤aa€al€ah€amÔig:2781:18¤aa€al€am ah€ig:7367:33¤aa€al€ah€amNe31332¤aa€al€ah€am\000ı$°e40031¤aa€al€ah€am\000¬çig:9287:41¤aa€al€ah€am\0008€jg:14446:48¤aa€al€ah€am\000xğe28290¤aa€al€ah€am9Ïe13022¤aa€al€ah€am\0003e11994¤aa€al€ah€amN e19768¤aa€al€ah€am\"kg:24862:102¤aa€al€am\000·ah€ig:4066:35¤aa€al€ah€am'ig:2580:12¤aa€al€ah€am@jg:25049:96¤aa€al€ah€am\000ÔYe15724¤aa€al€ah€am\000İke24750¤aa€al€ah€am\000êÃe10174¤aa€al€ah€am\000³¬kg:25195:114¤aa€al€ah€am\000† e18332¤aa€al€ah€am\000ÈŞjg:15111:21¤aa€al€ah€amÍáe14750¤aa€al€ah€am'e22602¤aa€al€ah€am\000„iig:5770:30¤aa€al€amıæah€e13465¤aa€al€ah€amıig:4063:43¤aa€al€ah€amœ@e18255¤aa€al€ah€amre11185¤aa€al€ah€amjg:15616:46¤aa€al€ah€am\000ÀŒjg:15259:25¤aa€al€ah€amXig:3836:34¤aa€al€ah€am’Ájg:31127:85¤aa€al€ah€am\000†¥jg:14565:21¤aa€al€ah€am¸e13422¤aa€al€ah€amŞjg:10584:36¤aa€al€ah€am\000öig:7437:36¤aa€al€amN ah€e20872¤aa€al€ah€am\000©€kg:25149:102¤aa€al€ah€am\000%¹ig:4661:26¤aa€al€ah€am\000<åjg:10161:61¤aa€al€ah€am\000œjg:15562:36¤aa€al€ah€amu0jg:14259:46¤aa€al€ah€am\000¶kg:25122:105¤aa€al€ah€am\000œùjg:25296:81¤aa€al€ah€am\000_jg:14293:55¤aa€al€ah€am\000ºğkg:29204:110¤aa€al€am\000$Kah€jg:13055:48¤aa€al€ah€am\000~ˆd2697¤aa€al€am\000¡ ah€e24290¤aa€al€ah€am'te24904¤aa€al€ah€am\000ÈÀe25332¤aa€al€am\000lĞah€jg:13122:55¤aa€al€am\000“İah€e15768¤aa€al€amu/ah€ig:4710:22¤aa€al€am\\0ah€ig:1713:45¤aa€al€ah€am\000Iğig:3814:39¤aa€al€ah€am)jg:24959:96¤aa€al€ah€am\000˜e30422¤aa€al€ah€am_Pig:4766:13¤aa€al€ah€am£Ûe29724¤aa€al€ah€am\0006e15130¤aa€al€ah€amu0e25146¤aa€al€ah€am\000Ì;e31185¤aa€al€ah€am\000CÑe24810¤aa€al€ah€am\000Te14810¤aa€al€ah€am\000~°e16705¤aa€al€ah€am\000Ôœe19698¤aa€al€ah€amig:4087:41¤aa€al€am\000Êyah€e24291¤aa€al€ah€am2ig:3485:30¤aa€al€ah€amÃPd9948¤aa€al€am\000x]ah€d8948¤aa€al€ah€amrñe10130¤aa€al€am8¤ah€ig:2140:11¤aa€al€amN ah€d8497¤aa€al€am\000˜–€ah€d4497¤aa€al€ah€am’rjg:28498:99¤aa€al€ah€am\000{e18046¤aa€al€ah€am\000zçe23810¤aa€al€ah€am\000“ßig:7373:33¤aa€al€ah€amL,e11965¤aa€al€ah€amSûe12233¤aa€al€ah€am\000Ğig:2964:10¤aa€al€amhah€d3870¤aa€al€am9ah€e25108¤aa€al€ah€am\000Rìe13001¤aa€al€am\000	'¿ah€e15010¤aa€al€am'ah€e25010¤aa€al€ah€am\000ë ig:9512:46¤aa€al€ah€am\000Í4Õd6597¤aa€al€ah€am|d4597¤aa€al€ah€amòe24916¤aa€al€ah€am\000Éke14916¤aa€al€am\000y¼ah€e24965¤aa€al€ah€am\000†<d2870¤aa€al€ah€am\000á€ig:21713:1¤aa€al€am\000@@ah€d2748¤aa€al€ah€amôd4604¤aa€al€ah€am%€e14108¤aa€al€am\000ô\000ah€d6604¤aa€al€ah€am'd1604¤aa€al€ah€am\000\\	e13453¤aa€al€ah€am¸jg:25146:93¤aa€al€ah€am\000Ì;e15233¤aa€al€amğ:ah€e10606¤aa€al€ah€am\000¹Cd3719¤aa€al€ah€amÇ8d4719¤aa€al€ah€amØÓig:9763:14¤aa€al€ah€am3ôjg:24631:99¤aa€al€ah€am\000Iğe31677¤aa€al€ah€am¨Àd9719¤aa€al€ah€am\000æàe22826¤aa€al€ah€amûójg:15382:45¤aa€al€ah€amDœe19283¤aa€al€ah€améüd3848¤aa€al€ah€am\000‚d5504¤aa€al€ah€am\000BBe23108¤aa€al€ah€am d9848¤aa€al€ah€am3ôjg:23494:96¤aa€al€ah€amä„e25001¤aa€al€ah€am\000SHjg:10180:52¤aa€al€ah€am\000ÔÀd9397¤aa€al€ah€am\000¦Njg:15936:55¤aa€al€am\000©ah€e17010¤aa€al€ah€am\000Úxd1819¤aa€al€ah€amJ8d3819¤aa€al€ah€amMd2819¤aa€al€ah€am„şd5819¤aa€al€ah€am\000Güd4397¤aa€al€ah€am\000	ôÒd9819¤aa€al€ah€am9Ğe23826¤aa€al€ah€am\000†Ÿe18283¤aa€al€ah€am\000-©te12010¤aa€al€ah€am'd6404¤aa€al€ah€amN d5770¤aa€al€amıæah€jg:15425:55¤aa€al€ah€amÃPig:8261:54¤aa€al€ah€am¿d4404¤aa€al€ah€amSe10001¤aa€al€ah€amökd3404¤aa€al€am\rªah€e15936¤aa€al€am\000©ah€jg:10164:58¤aa€al€am\0008€ah€e31916¤aa€al€ah€am\000\r>d9897¤aa€al€ah€am\000F[e23762¤aa€al€ah€am\000Ù jg:24737:96¤aa€al€ah€am\000,œd2770¤aa€al€ah€amÔd3770¤aa€al€ah€amKe15542¤aa€al€am%Nah€e34826¤aa€al€ah€am\000‘~d9304¤aa€al€ah€amd4470¤aa€al€ah€am?e11108¤aa€al€ah€amPojg:10027:46¤aa€al€ah€amœ@e24954¤aa€al€ah€amÃPe15387¤aa€al€amN ah€ig:3058:25¤aa€al€ah€am'e25031¤aa€al€am\000\nccah€d4304¤aa€al€ah€am\n'd3304¤aa€al€ah€am\000&% d2304¤aa€al€ah€am\000‰T@e24936¤aa€al€ah€am\000W0d5997¤aa€al€ah€am\000{™6d2997¤aa€al€ah€amãe20916¤aa€al€am\000Ğah€e40012¤aa€al€amñÈah€e24762¤aa€al€ah€améùe14762¤aa€al€amPºah€d1470¤aa€al€ah€amWäd1997¤aa€al€ah€am:4jg:13066:51¤aa€al€ah€am\000~îe22914¤aa€al€ah€am\000z\000e10108¤aa€al€ah€am\000d8204¤aa€al€am\000Ğah€jg:13111:54¤aa€al€ah€am\000W\\e21954¤aa€al€ah€am\000×d1204¤aa€al€ah€am\000vig:5009:36¤aa€al€am6Gah€e24031¤aa€al€ah€am\000	…~jg:31140:88¤aa€al€ah€am\000B@kg:24980:102¤aa€al€ah€am\000ÔÀe24164¤aa€al€ah€am\000º‚e16724¤aa€al€am\000B?ah€kg:24098:114¤aa€al€ah€am\000\n¤›jg:25072:81¤aa€al€ah€am\000	€e15762¤aa€al€ah€am£Ge13074¤aa€al€ah€am\000B?e14164¤aa€al€ah€am&¬e10233¤aa€al€amıèah€e43010¤aa€al€ah€amsd4296¤aa€al€amÄôah€d9296¤aa€al€ah€am\000e13031¤aa€al€amæxah€ig:6598:28¤aa€al€ah€am¼?d4797¤aa€al€am'ah€jg:15140:34¤aa€al€ah€am\000âHe14157¤aa€al€ah€amhêd9797¤aa€al€ah€am'jg:14283:54¤aa€al€amyYah€e24074¤aa€al€ah€am\000Ğd7148¤aa€al€ah€am\000DAe29453¤aa€al€ah€am\n'e25049¤aa€al€ah€am\000ÔYig:5182:20¤aa€al€ah€amŠkjg:11287:15¤aa€al€ah€am&¬d9943¤aa€al€ah€am\000Iğig:7443:37¤aa€al€ah€am{ig:7454:39¤aa€al€ah€am\000pãig:9386:36¤aa€al€ah€am\000!‘¾e24798¤aa€al€ah€am\000B@d4248¤aa€al€am˜Mah€e10019¤aa€al€am\000Úxah€hg:944:61¤aa€al€ah€am\000q¯ig:9420:37¤aa€al€ah€am\000`<d6219¤aa€al€ah€am·2jg:10149:61¤aa€al€amê`ah€d9843¤aa€al€ah€amĞ kg:25334:111¤aa€al€ah€am\000Iğe22542¤aa€al€am\000€ah€e12542¤aa€al€ah€am\0000­Kkg:31218:109¤aa€al€ah€am\0001óâe27698¤aa€al€ah€am\000Güjg:14162:23¤aa€al€am\"îah€e13049¤aa€al€am\000İ9ah€kg:31293:112¤aa€al€ah€am\000€Xkg:32662:115¤aa€al€ah€am\000	ëe12037¤aa€al€amvah€ig:2857:18¤aa€al€ah€am¸d3048¤aa€al€am2Çah€d4297¤aa€al€ah€amÓ8d4048¤aa€al€ah€amu0d7048¤aa€al€ah€am>d6048¤aa€al€ah€am\000”e31291¤aa€al€ah€am\000“İe18698¤aa€al€ah€am\000B?ig:1722:42¤aa€al€am\000Šıah€jg:15681:58¤aa€al€am\000† ah€e11291¤aa€al€ah€amÌe22840¤aa€al€ah€amFPe13037¤aa€al€ah€am\000\r?jg:10003:43¤aa€al€ah€am>€jg:14369:23¤aa€al€ah€ama§d6548¤aa€al€ah€am&He22012¤aa€al€ah€am\000†Ÿe12012¤aa€al€ah€amu/d7519¤aa€al€ah€amu/ig:4796:25¤aa€al€ah€amLƒjg:31177:91¤aa€al€ah€am\000òRkg:24665:111¤aa€al€ah€am\000	e24775¤aa€al€ah€am\000oe31894¤aa€al€ah€am\000[]e31910¤aa€al€ah€am\000Wse21894¤aa€al€ah€am\000¿kg:23523:114¤aa€al€ah€am\000&% e14775¤aa€al€ah€am\000ˆ3ig:9746:13¤aa€al€ah€am(ôjg:14245:41¤aa€al€amtÌah€e14840¤aa€al€am°\rah€e24840¤aa€al€ah€am\000† jg:13199:41¤aa€al€ah€am\000Ğ,kg:31340:100¤aa€al€ah€am\000-Qd9197¤aa€al€ah€am\000Y³d6348¤aa€al€ah€amÜd7348¤aa€al€amftah€e19233¤aa€al€ah€am˜Xe13019¤aa€al€am\000àKah€d4348¤aa€al€ah€amıèe20750¤aa€al€ah€amœ?jg:14325:61¤aa€al€ah€am¿hd3319¤aa€al€ah€amœ@e15994¤aa€al€ah€amig:6327:37¤aa€al€ah€am\000	?d2319¤aa€al€ah€ame25283¤aa€al€ah€am\0000°kg:31277:106¤aa€al€ah€am\000qãkg:25219:102¤aa€al€ah€am\000Od7448¤aa€al€ah€amc›e15291¤aa€al€am›xah€e25291¤aa€al€ah€am\000Iğe12019¤aa€al€ah€amÅĞd9904¤aa€al€ah€am\000·¯jg:25186:87¤aa€al€ah€am\000Ğjg:15062:60¤aa€al€ah€am\000\r»›d4419¤aa€al€ah€am&¬d3419¤aa€al€ah€am\000Íód6419¤aa€al€ah€am'jg:18744:58¤aa€al€ah€am\000.ôjg:21753:50¤aa€al€ah€am\000\n,*jg:14799:58¤aa€al€amŞ¨ah€e14283¤aa€al€amyYah€jg:10099:55¤aa€al€ah€am\000Iğd7419¤aa€al€ah€am!4ig:7446:36¤aa€al€ah€amWäe15935¤aa€al€ah€amN e25697¤aa€al€ah€am\000+ïe24986¤aa€al€ah€amê`c851¤aa€al€ah€am\000*€çe25273¤aa€al€ah€am\000„€jg:18948:32¤aa€al€ah€am\000Èe15493¤aa€al€ah€am:—kg:32774:100¤aa€al€am\000\n¤œah€e40015¤aa€al€am\000gah€jg:15979:42¤aa€al€am'ah€ig:1624:43¤aa€al€am\000k–ah€kg:24662:111¤aa€al€ah€am\000Iğe11986¤aa€al€ah€am4¼e24697¤aa€al€ah€am\000	áxe10240¤aa€al€ah€am\000† jg:10246:65¤aa€al€ah€am\000ì¤kg:24881:108¤aa€al€amê`ah€hg:935:20¤aa€al€ah€am\000È/e13935¤aa€al€ah€am,ig:3065:23¤aa€al€ah€am“şig:7357:34¤aa€al€améah€e10592¤aa€al€ah€am—áig:3488:13¤aa€al€ah€am:˜jg:24595:84¤aa€al€ah€am\000!e23805¤aa€al€ah€am\000Ö´e23493¤aa€al€am\000]œah€e20827¤aa€al€ah€amld6433¤aa€al€amÒah€d7433¤aa€al€amÀah€kg:25012:114¤aa€al€ah€am\000{ve16041¤aa€al€ah€am\000E)kg:24898:114¤aa€al€ah€am\000˜e24273¤aa€al€ah€am\000õÉjg:10064:53¤aa€al€ah€amu0e25015¤aa€al€ah€am\000|jg:24606:90¤aa€al€ah€am\000W.d9333¤aa€al€ah€am\000\nPÖjg:24585:81¤aa€al€ah€am\000wrjg:14898:40¤aa€al€am\000âÁah€jg:31186:97¤aa€al€ah€am\000Ğjg:14745:20¤aa€al€ah€am'ig:1824:23¤aa€al€ah€amN e24632¤aa€al€am\000“|ah€ig:6611:29¤aa€al€ah€am|ÿig:25861:3¤aa€al€ah€amNjg:15271:56¤aa€al€ah€am\0008€jg:25118:93¤aa€al€am\000ÔÀah€kg:29371:108¤aa€al€ah€am\000ze24249¤aa€al€ah€am\000še32675¤aa€al€ah€am\000”Öd4233¤aa€al€ah€am\njg:15584:41¤aa€al€ah€am\000Óñd9433¤aa€al€ah€am\000Ô¢e23484¤aa€al€am\000_ah€e39691¤aa€al€amSah€jg:15284:29¤aa€al€am\"Äah€kg:24088:101¤aa€al€ah€am\000\n®`jg:25257:90¤aa€al€ah€am\000V&jg:14314:58¤aa€al€ah€am\000µƒe23632¤aa€al€ah€am\000	'¸e15249¤aa€al€ah€amµ¼jg:14775:43¤aa€al€ah€am\000ˆ3e24781¤aa€al€ah€am\000’e14781¤aa€al€ah€amu/e27860¤aa€al€ah€amkg:32420:130¤aa€al€ah€am\000Pìe31343¤aa€al€ah€am\000[e23781¤aa€al€ah€am0pig:7786:30¤aa€al€ah€amÖ×jg:10071:49¤aa€al€ah€amÂìjg:24731:93¤aa€al€ah€am¶Jjg:11969:29¤aa€al€am\000˜ah€e27691¤aa€al€ah€am\0002e15555¤aa€al€ah€amhMkg:24876:105¤aa€al€ah€am\000Rµe14805¤aa€al€ah€amu0e24805¤aa€al€ah€amçœjg:15651:56¤aa€al€am”~ah€e25019¤aa€al€ah€am\000¥Pig:4778:19¤aa€al€ah€am-Oe13041¤aa€al€ah€am\000¿ig:6536:19¤aa€al€ah€amNjg:20909:30¤aa€al€am>€ah€ig:2244:56¤aa€al€ah€am\000\rmze15094¤aa€al€ah€amˆ¸e22830¤aa€al€ah€amê_ig:3184:20¤aa€al€amMXah€ig:20916:5¤aa€al€am\000Ğah€e12164¤aa€al€am&¬ah€jg:14604:45¤aa€al€ah€amu0jg:15093:56¤aa€al€amaİah€jg:18168:65¤aa€al€ah€am\000]…e10632¤aa€al€ah€am\000“àe10041¤aa€al€ah€am\000[`e31863¤aa€al€ah€am\000†<e21863¤aa€al€ah€am\000ze40041¤aa€al€am\0008>ah€e14094¤aa€al€ah€am@e24824¤aa€al€ah€am\000W+e12990¤aa€al€ah€am\000“àe24914¤aa€al€ah€am\000ée25334¤aa€al€ah€am\000Iğe11164¤aa€al€amu0ah€e19726¤aa€al€ah€am\000se29726¤aa€al€ah€am\000h ig:9359:45¤aa€al€ah€am\000æ/jg:15161:43¤aa€al€ah€am\000„wkg:21867:114¤aa€al€am\000W+ah€e24830¤aa€al€ah€amœ@jg:15179:57¤aa€al€ah€am\000@´ig:5002:30¤aa€al€ah€amñ¶e25103¤aa€al€ah€am\000wûig:8249:52¤aa€al€ah€am\000%*jg:13023:63¤aa€al€ah€am\000B?ig:9832:31¤aa€al€am.àah€jg:14929:54¤aa€al€ah€am\000†<e19162¤aa€al€ah€am\000B?jg:13043:49¤aa€al€ah€am\000ê[e24978¤aa€al€ah€am\000\"jg:31187:97¤aa€al€ah€am\000ÿ”jg:15311:22¤aa€al€ah€am%e17058¤aa€al€ah€am\"e23334¤aa€al€ah€amôe14103¤aa€al€ah€amu/e23827¤aa€al€ah€am\000­®jg:10055:47¤aa€al€am\000èHah€kg:31272:103¤aa€al€ah€am\000ÂHe31860¤aa€al€ah€am€èe21860¤aa€al€am\000pûah€jg:15536:34¤aa€al€ah€am2Çe31285¤aa€al€ah€am\000ëig:7420:33¤aa€al€ah€amœ@jg:14557:63¤aa€al€ah€am\r“jg:12978:20¤aa€al€ah€am\000òSe19273¤aa€al€ah€am\000ğŸe15965¤aa€al€ah€amu0jg:24944:90¤aa€al€ah€am\000ºîjg:13019:32¤aa€al€am\000àKah€e39914¤aa€al€am:”ah€kg:24978:102¤aa€al€ah€am\000\"e22827¤aa€al€ah€am¥ jg:25171:84¤aa€al€am\000W0ah€jg:13105:37¤aa€al€ah€am\000Ÿóe28493¤aa€al€ah€am\000«Åjg:13010:26¤aa€al€ah€am\000\râ°e20863¤aa€al€ah€am&¬kg:21862:114¤aa€al€am\000“ah€e24058¤aa€al€ah€am\000G$jg:15503:22¤aa€al€ah€am'ig:7544:44¤aa€al€ah€am\000'¸ig:4566:13¤aa€al€ah€am:—ig:8308:60¤aa€al€ah€amœ@e18334¤aa€al€am\000„ah€ig:2535:45¤aa€al€ah€amœ@ig:7535:46¤aa€al€am\000­°ah€e25162¤aa€al€ah€am\000İĞe15162¤aa€al€ah€am˜Xjg:10157:64¤aa€al€ah€am\000&ig:8748:30¤aa€al€amPœah€e13058¤aa€al€ah€am\0004òe34827¤aa€al€ah€am\000§¤e24935¤aa€al€ah€am\000)¶ig:8284:57¤aa€al€ah€am›xe20860¤aa€al€ah€amUŒe28103¤aa€al€ah€am*İjg:15149:36¤aa€al€amg4ah€d9881¤aa€al€am\000Œ¯ah€jg:25218:99¤aa€al€ah€am\000\r@d1981¤aa€al€ah€am\000İd2981¤aa€al€ah€am'e18257¤aa€al€ah€am\000˜–jg:20659:60¤aa€al€ah€amYØig:5751:25¤aa€al€ah€amu0kg:32540:105¤aa€al€ah€am\000yêğe11991¤aa€al€ah€am\000† e21991¤aa€al€ah€am18e13926¤aa€al€ah€am\000Åe16646¤aa€al€ah€am$kg:31197:103¤aa€al€am\000\riah€e20854¤aa€al€ah€am¸jg:25228:87¤aa€al€ah€am\000Iíe25052¤aa€al€ah€amÙe15556¤aa€al€ah€am\000† e37705¤aa€al€am›ah€e32213¤aa€al€ah€am\000³íe13462¤aa€al€ah€am&§e19257¤aa€al€ah€am\\Øïe12213¤aa€al€ah€amÜig:5069:12¤aa€al€ah€amôig:1760:27¤aa€al€ah€amb…e24991¤aa€al€ah€am\000 ìe15646¤aa€al€ah€am\000Kœe25008¤aa€al€ah€am\000_jg:14119:17¤aa€al€ah€am>e21830¤aa€al€ah€amK\000d7534¤aa€al€ah€am¨Àe20665¤aa€al€am\000Ğah€e15144¤aa€al€ah€am\000¸3e25144¤aa€al€ah€am\000S“e40058¤aa€al€ah€am\000ĞÂkg:25021:117¤aa€al€ah€am\000\r@jg:15263:50¤aa€al€amÎ6ah€e18781¤aa€al€ah€am\000Şig:2955:40¤aa€al€ah€am\000‰T@kg:25028:120¤aa€al€ah€am\000B@jg:13091:57¤aa€al€ah€am\000dùe16735¤aa€al€ah€am\000Œd9834¤aa€al€ah€am'jg:10129:50¤aa€al€ah€am\000† d3729¤aa€al€amnah€e14436¤aa€al€ah€amN d4729¤aa€al€ah€amMXe24963¤aa€al€ah€am\000pe24306¤aa€al€ah€am\000;Ÿ¬d1481¤aa€al€ah€am¤Øig:3206:28¤aa€al€ah€amÖÈjg:16705:59¤aa€al€ah€am\000Ôœe36926¤aa€al€amah€d3734¤aa€al€am Ïah€d4734¤aa€al€am\000/­ah€e13008¤aa€al€ah€am\000\"àjg:24927:84¤aa€al€ah€am\000àse37646¤aa€al€ah€am\0004Gd2734¤aa€al€ah€am…–d7995¤aa€al€ah€am\000•ƒkg:44504:200¤aa€al€ah€am\000õKe32665¤aa€al€ah€am\000ƒòkg:24755:102¤aa€al€ah€am\000³¾e25353¤aa€al€ah€amN e13144¤aa€al€ah€am\0000fig:7423:34¤aa€al€ah€am\000ne34052¤aa€al€ah€am\0005’kg:25153:114¤aa€al€ah€am\0002dd4829¤aa€al€ah€am{Še24816¤aa€al€ah€am\000˜ìe23436¤aa€al€ah€am™e23144¤aa€al€ah€am\000`Æig:8113:51¤aa€al€ah€am\000Iğd4234¤aa€al€ah€am·d2581¤aa€al€ah€am6e24642¤aa€al€ah€am\000!'e25222¤aa€al€ah€am\000Iğjg:14564:19¤aa€al€ah€am·e18986¤aa€al€ah€am\000P/e25174¤aa€al€ah€am\000W0e12436¤aa€al€am+gah€d6581¤aa€al€am\000pah€ig:4577:13¤aa€al€ah€amÛe25257¤aa€al€ah€am\000V&jg:10063:51¤aa€al€ah€am\000Pe18697¤aa€al€am\000*>ah€kg:21863:100¤aa€al€ah€am\000ze20824¤aa€al€ah€amÌ€d5134¤aa€al€ah€am\nÇe14926¤aa€al€ah€amÃPd4681¤aa€al€ah€am\000„~jg:31185:85¤aa€al€ah€am\000CÑe15287¤aa€al€ah€amu0e25287¤aa€al€ah€am\000­°jg:12254:44¤aa€al€am\000Şah€kg:24893:111¤aa€al€ah€am\000†Ÿig:7348:25¤aa€al€amftah€d9681¤aa€al€ah€amqkg:32665:115¤aa€al€ah€am\000ƒòig:2958:10¤aa€al€amXah€e33824¤aa€al€ah€am:˜ig:2292:25¤aa€al€ah€am\000e31213¤aa€al€am\000¡ ah€e25041¤aa€al€am\000_ah€d2781¤aa€al€am ah€e21213¤aa€al€ah€am\nğd4781¤aa€al€ah€amL*e15926¤aa€al€ah€am6°e10008¤aa€al€am\000«¯ah€e20008¤aa€al€ah€amu-e38830¤aa€al€am‹ah€jg:25301:96¤aa€al€ah€am\000ÔÀjg:14125:21¤aa€al€ah€amN e13941¤aa€al€ah€am[)e21990¤aa€al€ah€am•je11990¤aa€al€am\000>©ah€e17222¤aa€al€am'ah€jg:10123:57¤aa€al€ah€am\000† e30306¤aa€al€ah€am\000=£jg:14783:46¤aa€al€ah€amÖØd9781¤aa€al€ah€amD£d8949¤aa€al€ah€amÛe10213¤aa€al€am\0005”ah€d4334¤aa€al€ah€ama¨ig:9825:33¤aa€al€ah€amu0d1081¤aa€al€ah€am;e13287¤aa€al€am\000‚Zah€jg:15166:45¤aa€al€ah€am\000>jg:14166:19¤aa€al€ah€am‡e14174¤aa€al€ah€am'e24990¤aa€al€ah€am\000ÔÀe20816¤aa€al€ah€am€jg:13032:27¤aa€al€ah€am\000Ğe14257¤aa€al€ah€ama¨e24257¤aa€al€ah€am\000!ßàe24039¤aa€al€ah€amØ•jg:16710:57¤aa€al€am\000\r@ah€d5181¤aa€al€ah€am$jg:24695:81¤aa€al€am\000Ûah€jg:14676:58¤aa€al€ah€am\000†<d1181¤aa€al€ah€am kd7495¤aa€al€ah€am\000u\\e14898¤aa€al€am\000âÁah€e24898¤aa€al€ah€am\000˜d8181¤aa€al€ah€am:˜jg:11302:52¤aa€al€ah€am\0001*Îig:5267:63¤aa€al€ah€am\000ïĞe13039¤aa€al€am\000\nah€jg:11977:55¤aa€al€ah€am\000÷e16043¤aa€al€ah€am\000´ig:9932:44¤aa€al€ah€am\000Áøe24777¤aa€al€ah€am\000pe24760¤aa€al€ah€am\000pkg:25303:102¤aa€al€ah€am\0004Pig:1990:36¤aa€al€ah€am>€jg:14371:23¤aa€al€am{ah€ig:4044:40¤aa€al€ah€am/¨d9395¤aa€al€ah€amÃPd8395¤aa€al€ah€amÀc121¤aa€al€ah€am'ig:2951:36¤aa€al€ah€am\000\n%¨d4395¤aa€al€ah€am\000sd3395¤aa€al€ah€amU'jg:25231:96¤aa€al€ah€am\000Á8ig:6588:23¤aa€al€ah€amƒig:4576:21¤aa€al€ah€am›Ûe22642¤aa€al€ah€am\000{šÒjg:24821:84¤aa€al€ah€amÃPd6381¤aa€al€am#‹ah€e24817¤aa€al€ah€am\000¬åe25213¤aa€al€ah€am\000¾¼jg:13020:39¤aa€al€am\000ah€e20555¤aa€al€ah€am\000ópe27665¤aa€al€ah€am0 jg:31173:94¤aa€al€am\000zæah€jg:15351:30¤aa€al€amw¶ah€e11039¤aa€al€ah€amA d8129¤aa€al€ah€amôBe12697¤aa€al€ah€am'e24213¤aa€al€ah€am\000íe40029¤aa€al€amşah€ig:9830:32¤aa€al€am\000Âah€e25043¤aa€al€ah€am\000jg:14566:25¤aa€al€ah€amN jg:13034:41¤aa€al€ah€am\000˜e13760¤aa€al€ah€amKdjg:14857:54¤aa€al€ah€amŸ´e32409¤aa€al€ah€am\000.d9895¤aa€al€ah€am'jg:31151:94¤aa€al€ah€am\000ãEjg:11304:19¤aa€al€ah€am|6d1529¤aa€al€ah€am\000od7529¤aa€al€ah€amœ@c811¤aa€al€ah€am\000\\kg:24910:120¤aa€al€am\000\r@ah€hg:789:22¤aa€al€ah€am\r¬ig:4333:31¤aa€al€amÃPah€ig:9902:41¤aa€al€ah€amÑBkg:24648:105¤aa€al€ah€am\000åÉd2934¤aa€al€ah€amğd9795¤aa€al€amJah€jg:14962:54¤aa€al€ah€am\000Ğ¸d6795¤aa€al€ah€amÃPjg:15238:58¤aa€al€ah€am\0008€e13015¤aa€al€ah€am\000˜d4795¤aa€al€ah€am\000ig:1979:50¤aa€al€am\000G·^ah€jg:15557:37¤aa€al€ah€am/¨jg:14581:33¤aa€al€ah€am/¦e24937¤aa€al€ah€am\000“àig:6608:27¤aa€al€amL¸ah€e15140¤aa€al€ah€am\000âHig:24145:1¤aa€al€ah€am\000Rjg:31178:94¤aa€al€am\000ah€kg:24902:117¤aa€al€ah€am\000†<ig:3780:33¤aa€al€amœ@ah€ig:6512:13¤aa€al€ah€amb™e24675¤aa€al€ah€am\000xĞe12015¤aa€al€ah€amê`d4695¤aa€al€ah€amJe22926¤aa€al€ah€am\000¡jg:24597:87¤aa€al€ah€am\0008jg:15502:20¤aa€al€ah€amˆe14675¤aa€al€ah€am¦e16697¤aa€al€ah€am\000B?e15937¤aa€al€amu0ah€e13029¤aa€al€am\000B@ah€e31898¤aa€al€ah€am\000	ïe21898¤aa€al€ah€am\000D0d2595¤aa€al€ah€am\000j=d4595¤aa€al€amjah€d6429¤aa€al€amthah€e25306¤aa€al€am\000Ù|ah€jg:10263:63¤aa€al€ah€am\000kg:25022:120¤aa€al€ah€am\000¹³e13132¤aa€al€ah€am\000€6c940¤aa€al€ah€am\000iÿjg:14223:38¤aa€al€ah€am'd3713¤aa€al€ah€amtËd1713¤aa€al€ah€am\000Iğjg:15656:54¤aa€al€ah€amp€jg:24835:90¤aa€al€ah€am\000W*jg:14198:31¤aa€al€ah€am:˜e14196¤aa€al€ah€amBhe24196¤aa€al€ah€am\000\\¯e13103¤aa€al€ah€am\000_e23103¤aa€al€ah€amèd9813¤aa€al€ah€am¿]jg:14181:28¤aa€al€ah€am'e25439¤aa€al€ah€am7d1813¤aa€al€ah€amèd1203¤aa€al€ah€am\000ä_kg:25065:102¤aa€al€ah€am\000Zçd3203¤aa€al€ah€am\000O€e22578¤aa€al€ah€ame21892¤aa€al€ah€am\000}e31892¤aa€al€ah€am\000\n kg:24903:117¤aa€al€ah€am\000† jg:24919:81¤aa€al€ah€am\0008€e13488¤aa€al€ah€am\000“Şjg:12252:39¤aa€al€am\000¡ ah€e20664¤aa€al€ah€am\000Ğe19707¤aa€al€ah€amzÍe16051¤aa€al€am\000¡ ah€ig:1951:19¤aa€al€ah€am\000† hg:5956:1¤aa€al€ah€am&¬ig:2978:15¤aa€al€ah€amM¼ig:7408:33¤aa€al€ah€amtÌe24672¤aa€al€ah€am\000,€jg:24605:90¤aa€al€ah€amÂìd6303¤aa€al€ah€am'jg:18289:56¤aa€al€ah€am\000Œd9303¤aa€al€ah€am%jg:13866:59¤aa€al€ah€amøe32196¤aa€al€ah€am\000V«e19051¤aa€al€am\000\n\r¯ah€jg:14861:52¤aa€al€ah€amu0jg:15063:58¤aa€al€ah€am\000\r»e14132¤aa€al€ah€am\000_d6613¤aa€al€am:˜ah€d7613¤aa€al€ah€am\000$ød1613¤aa€al€ah€amÃPig:1728:65¤aa€al€ah€am\000LK@e31672¤aa€al€ah€am€d6403¤aa€al€ah€amu0jg:31179:91¤aa€al€ah€am\000H-åe17061¤aa€al€ah€am\000Ô¿ig:4695:18¤aa€al€ah€amJe25098¤aa€al€ah€am\000\n e31196¤aa€al€am\000\rEah€kg:31215:109¤aa€al€ah€am\000ã`kg:23554:105¤aa€al€ah€amO±€jg:15579:35¤aa€al€ah€am.àe16672¤aa€al€ah€am\000O€ig:2721:32¤aa€al€ah€am\000\r*ig:3037:34¤aa€al€ah€amôjg:14133:24¤aa€al€ah€am&¬e22609¤aa€al€am\000B@ah€ig:2078:18¤aa€al€ah€amN jg:14364:18¤aa€al€ah€am”jg:10724:45¤aa€al€ah€am\000ã_e13443¤aa€al€ah€am.ßc790¤aa€al€ah€amXc890¤aa€al€ah€am\000|me20433¤aa€al€ah€am\000Je25149¤aa€al€ah€am\000%¹ig:9867:33¤aa€al€ah€am'e24664¤aa€al€ah€am\0008€e17196¤aa€al€ah€am\000Ïñe25212¤aa€al€ah€am\000€e13043¤aa€al€ah€am\000ê[ig:3427:40¤aa€al€am\000÷1@ah€e15212¤aa€al€am:˜ah€e10103¤aa€al€ah€amN jg:15372:43¤aa€al€ah€amê`kg:25067:108¤aa€al€ah€am\000lĞe24892¤aa€al€ah€am\000	ig:8279:48¤aa€al€ah€am\000Ğe10132¤aa€al€ah€ama§e41103¤aa€al€ah€am\rjg:15232:33¤aa€al€ah€am'e41488¤aa€al€am\000†ah€kg:24906:117¤aa€al€ah€am\000lĞkg:24775:111¤aa€al€ah€am\000oe27439¤aa€al€ah€am16e12433¤aa€al€ah€am0ig:7460:34¤aa€al€ah€amSše32664¤aa€al€am\0006Ëah€e25196¤aa€al€am\000“àah€ig:3842:31¤aa€al€ah€am#nig:4734:43¤aa€al€am\000/­ah€e10578¤aa€al€ah€am\000	áekg:25335:114¤aa€al€ah€am\000	'Àe13076¤aa€al€ah€am\000{+jg:24815:84¤aa€al€ah€am\000W0ig:1521:44¤aa€al€ah€amàÿig:4343:10¤aa€al€amĞah€e23490¤aa€al€am\000\rdah€e15634¤aa€al€am¤ah€e31222¤aa€al€ah€am\000°e39938¤aa€al€ah€amJÿe27664¤aa€al€ah€amTe19262¤aa€al€ah€am\000Èsig:8746:33¤aa€al€am‘uah€e13490¤aa€al€ah€am‡ïjg:10409:32¤aa€al€ama¨ah€jg:10095:56¤aa€al€amÃPah€ig:4069:47¤aa€al€ah€am\000&e24076¤aa€al€am\000†<ah€ig:4699:18¤aa€al€amLah€e32222¤aa€al€ah€am\0005gŞjg:15010:11¤aa€al€am'ah€e24634¤aa€al€ah€am\000<©e14634¤aa€al€ah€amÃCe17201¤aa€al€ah€am\000äe16084¤aa€al€ah€am\000_e25061¤aa€al€ah€am\000‹ôd8109¤aa€al€ah€am±Ae18587¤aa€al€ah€am\000\nXpe25076¤aa€al€ah€am\000İĞe20746¤aa€al€ah€am\000{«Jkg:24793:117¤aa€al€ah€am\000Pjg:10155:61¤aa€al€ah€am\000İÓe10064¤aa€al€ah€amu0e23634¤aa€al€ah€am\000ºkg:31336:100¤aa€al€ah€am\000åËe15664¤aa€al€ah€amˆ¸d9295¤aa€al€ah€am­je25203¤aa€al€ah€am\000Åe10061¤aa€al€ah€amPe24478¤aa€al€ah€am¨e14222¤aa€al€am'ah€e24222¤aa€al€ah€am\000”e13018¤aa€al€ah€am\000„e28543¤aa€al€ah€am\000ÔÀd3195¤aa€al€ah€amojg:15389:53¤aa€al€ah€amu0e29426¤aa€al€ah€am³e17304¤aa€al€ah€am\000&e24203¤aa€al€ah€am\000ÈÜjg:15124:25¤aa€al€ah€am)jg:10047:15¤aa€al€am\000ó;ah€e12045¤aa€al€ah€amu0e14730¤aa€al€ama¨ah€e24730¤aa€al€ah€am\000lPjg:21755:44¤aa€al€ah€amÃPjg:14281:53¤aa€al€am\0008€ah€jg:25271:90¤aa€al€ah€am\000'e11098¤aa€al€ah€am\000Òxd2587¤aa€al€am\000H„ah€e13456¤aa€al€ah€amÈe25045¤aa€al€ah€am\0003Sjg:24946:90¤aa€al€ah€am\000}˜jg:10076:49¤aa€al€ah€amÃPig:7759:38¤aa€al€ah€am\000 8e24950¤aa€al€ah€amÂ…jg:24739:96¤aa€al€ah€amÃPig:7924:43¤aa€al€ah€am\000Ù!d4084¤aa€al€ah€am\000ô5jg:11974:46¤aa€al€ah€amˆ¸e18634¤aa€al€ah€am\000iÿjg:14165:25¤aa€al€ah€amde19814¤aa€al€ah€am\000iQe15982¤aa€al€ah€am\000}¨jg:13099:29¤aa€al€ah€am\000„«e15304¤aa€al€am¸ah€e25304¤aa€al€ah€am\000­°e18045¤aa€al€ah€amle24665¤aa€al€ah€am\000	e24960¤aa€al€ah€am\000pkg:25321:114¤aa€al€ah€am\000¶dig:8345:45¤aa€al€ah€am\000´§ig:4723:29¤aa€al€ah€amœ@d7084¤aa€al€ah€am\000\n±e14587¤aa€al€ah€amu0e24587¤aa€al€ah€am\000€d7971¤aa€al€ah€amtÌe25707¤aa€al€ah€am)ig:7552:44¤aa€al€ah€amš°ig:7519:47¤aa€al€ah€amu/d2971¤aa€al€ah€amTe24304¤aa€al€ah€am\000 d3387¤aa€al€ah€am	Ãe24267¤aa€al€ah€am\000LK?kg:24977:102¤aa€al€ah€am\0009d7487¤aa€al€ah€amœ@d8487¤aa€al€am\000Ğah€e10138¤aa€al€amİ|ah€kg:25016:117¤aa€al€ah€am\000ÔÀjg:13017:40¤aa€al€ah€am\000Ì`e23524¤aa€al€ah€am\000£€ig:3049:27¤aa€al€ah€am'e24707¤aa€al€am\000	Å¨ah€kg:25082:111¤aa€al€ah€am\000† e34490¤aa€al€am\000àah€e13304¤aa€al€ah€am'bjg:14810:59¤aa€al€ah€am\000~°e10302¤aa€al€am\000>àah€e29488¤aa€al€am\000\r‡8ah€e22456¤aa€al€ah€am\000_+e41098¤aa€al€ah€amójg:16692:59¤aa€al€am\000Aah€e24880¤aa€al€ah€am\000	e11138¤aa€al€ah€amjg:14582:28¤aa€al€ah€amu0d6377¤aa€al€ah€am\\şe14468¤aa€al€am\000Î‘ah€d4377¤aa€al€ah€am$e12162¤aa€al€ah€amMUjg:24965:96¤aa€al€ah€am\000†<jg:24623:96¤aa€al€ah€am\000Ùjg:15322:39¤aa€al€am\"`ah€jg:15379:48¤aa€al€ah€am\000*üd7919¤aa€al€amM²ah€jg:25286:93¤aa€al€ah€am\000† ig:7058:37¤aa€al€amœ@ah€e23771¤aa€al€ah€amÈskg:24992:108¤aa€al€ah€am\000æ/e32718¤aa€al€ah€am\000Ld9871¤aa€al€ah€am¾ d2877¤aa€al€am\000Çfah€e23736¤aa€al€ah€am4Xig:9428:35¤aa€al€ah€am\000—€d3871¤aa€al€am\000Ğah€d9877¤aa€al€ah€amu0d2871¤aa€al€ah€am?kg:32398:130¤aa€al€ah€am\000ÅÁ\000kg:31275:106¤aa€al€ah€am\000Âxd5624¤aa€al€ah€amEÁd4624¤aa€al€ah€amC0d1624¤aa€al€am\000k–ah€e22891¤aa€al€ah€am\000Ç!jg:16714:57¤aa€al€ah€am\000²e15746¤aa€al€ah€amê`e14771¤aa€al€ah€amkg:24895:114¤aa€al€ah€am\000\nŸ¨e31304¤aa€al€ah€am\000d·e22563¤aa€al€ah€am\000%îe32468¤aa€al€ah€amĞig:9951:47¤aa€al€ah€amÃPig:1315:51¤aa€al€ah€am\000Gd7085¤aa€al€ah€am'd4571¤aa€al€ah€amMXe14162¤aa€al€am\"îah€hg:6836:1¤aa€al€ah€am\000ç”e10121¤aa€al€amğiah€e32201¤aa€al€am\000	öÄah€e24253¤aa€al€ah€am\000ôhig:2969:17¤aa€al€ah€am:˜d7524¤aa€al€amÃPah€d2677¤aa€al€ah€am£Fig:4680:13¤aa€al€am\000¨tah€kg:24658:108¤aa€al€am\000]xah€e14483¤aa€al€ah€am\000Wig:4046:45¤aa€al€ah€am\000öe31162¤aa€al€am\000„ah€e24891¤aa€al€ah€am\000pÿd9424¤aa€al€ah€am\000Âë¿e15138¤aa€al€am\000&÷àah€kg:24990:108¤aa€al€ah€am\000ÔÀe31201¤aa€al€ah€am\000W/e25121¤aa€al€ah€am\000ÔÀe23113¤aa€al€ah€amÃPe13113¤aa€al€ah€am\0000Ğig:2073:15¤aa€al€ah€amÜd9771¤aa€al€ah€am'ig:9916:44¤aa€al€am\000¿ ah€d9777¤aa€al€amôah€e19820¤aa€al€ah€am\000Ñ°e24077¤aa€al€am\000¹ ah€d3771¤aa€al€ah€amnjg:31136:88¤aa€al€ah€am\000Ùæig:7939:49¤aa€al€ah€am\000“àe16113¤aa€al€ah€am¯Çjg:25092:99¤aa€al€am\000ÊĞah€jg:13093:37¤aa€al€ah€am\000Le24201¤aa€al€ah€am\000€˜jg:15249:26¤aa€al€ah€amµ¼ig:2072:27¤aa€al€ah€amY¸d4324¤aa€al€amDVah€e27736¤aa€al€ah€amã¹d6471¤aa€al€ah€am\nğd7471¤aa€al€ah€amM¼e13468¤aa€al€ah€am\000SŠe23077¤aa€al€ah€am'e13077¤aa€al€ah€am\0003*d4471¤aa€al€ah€amŠõd5471¤aa€al€ah€am1d6380¤aa€al€ah€amN jg:10287:26¤aa€al€ah€am\000­Ld8224¤aa€al€ah€am\000CÙd9224¤aa€al€ah€am„Äe15018¤aa€al€ah€am#(kg:24637:102¤aa€al€ah€am\000øig:9757:15¤aa€al€ah€am\000°jg:21764:47¤aa€al€ah€amBejg:14161:18¤aa€al€ah€am'd5784¤aa€al€ah€am×ig:4795:25¤aa€al€ah€am\000d8985¤aa€al€ah€am\000\nŠñe13121¤aa€al€ah€am\000†e23121¤aa€al€ah€am.ßkg:25052:105¤aa€al€ah€amÙe16736¤aa€al€ah€am\000Oïig:3011:36¤aa€al€ah€am\000­¯e23094¤aa€al€ah€am\000lV`d8171¤aa€al€ah€amNe14113¤aa€al€ah€am|jg:24957:93¤aa€al€ah€am\000¥¶jg:14113:15¤aa€al€ah€am|e31673¤aa€al€ah€am*øjg:14551:49¤aa€al€ah€am\000,¸e14121¤aa€al€ah€am\"_e24121¤aa€al€ah€am\000e29730¤aa€al€ah€am\000€ˆe41468¤aa€al€am`¬ah€e25077¤aa€al€ah€am\000‚	ig:9912:45¤aa€al€amœ@ah€jg:15210:16¤aa€al€ah€am!˜d3671¤aa€al€ah€am°De19267¤aa€al€ah€am\000í!¹d4371¤aa€al€ah€am¶d3371¤aa€al€ah€am\000B?d6371¤aa€al€ah€am…d3685¤aa€al€ah€amrjg:25047:90¤aa€al€ah€am\000ÔYkg:32586:141¤aa€al€ah€am\000‘ß¼e32212¤aa€al€am\000Ó<ah€e10179¤aa€al€ah€am\000EDe14342¤aa€al€ah€am”	jg:24823:87¤aa€al€ah€am\0000 d7080¤aa€al€ah€amld1180¤aa€al€ah€am1d1484¤aa€al€ah€am\0000jg:24575:81¤aa€al€ah€am\000±se20950¤aa€al€ah€amAŸd7484¤aa€al€ah€amqGe11139¤aa€al€ah€amBe10249¤aa€al€am\000˜ah€ig:7048:29¤aa€al€ah€am>d3484¤aa€al€amcœah€kg:24681:117¤aa€al€ah€am\000† ig:6266:13¤aa€al€ah€amAËd5071¤aa€al€ah€am)gd7077¤aa€al€ah€amd4585¤aa€al€ah€amjg:31242:88¤aa€al€am\000~ïah€d2077¤aa€al€ah€amUğe15309¤aa€al€ah€am@d4077¤aa€al€ah€amMXe31179¤aa€al€ah€am\000H-åjg:24828:87¤aa€al€ah€am\000Ô\\e31287¤aa€al€ah€am\000Ö\000d7071¤aa€al€ah€am'e10089¤aa€al€ah€amùIe15113¤aa€al€ah€am`Üd2080¤aa€al€ah€am'd4080¤aa€al€ah€am\000Ie11287¤aa€al€ah€am&¬ig:9813:25¤aa€al€ah€am¿]e25113¤aa€al€am\000²-ah€e31249¤aa€al€ah€am\0002ÜÕd9384¤aa€al€ah€am\000\r8d4384¤aa€al€ah€am&§d3384¤aa€al€ah€am\000–e10309¤aa€al€ah€am\000jg:14561:17¤aa€al€am'ah€d8177¤aa€al€ah€am\000˜e20406¤aa€al€ah€amÙc720¤aa€al€ah€am\000óNkg:24655:108¤aa€al€ah€am\000íœjg:12624:54¤aa€al€ah€am\000\n	te19483¤aa€al€ah€amB¿e29483¤aa€al€ah€am\000\nè÷ig:3475:65¤aa€al€ah€am}x@e10287¤aa€al€ah€am\000­Le24212¤aa€al€ah€am\000Ae14212¤aa€al€amL,ah€jg:10243:51¤aa€al€ah€amtÌig:7369:35¤aa€al€ah€am:˜kg:25263:108¤aa€al€ah€am\000e15269¤aa€al€ah€amXe24860¤aa€al€ah€am\000lôig:5212:17¤aa€al€ah€am¸d6271¤aa€al€ah€am$uc730¤aa€al€ah€amd5785¤aa€al€ah€amükg:29502:105¤aa€al€ah€am}Æ`d2271¤aa€al€ah€am\0008kg:34859:115¤aa€al€ah€am\000úkg:24882:108¤aa€al€ah€am\000W0d8180¤aa€al€ah€amÛjg:13085:51¤aa€al€ah€am\000\n_d2984¤aa€al€ah€am%d9785¤aa€al€ah€am”e14269¤aa€al€amNah€jg:14939:46¤aa€al€am\000°ah€ig:6590:29¤aa€al€ah€am'e21820¤aa€al€am\000†ah€e14757¤aa€al€ah€am:—e24757¤aa€al€ah€am\000_e25089¤aa€al€am\000† ah€ig:7282:19¤aa€al€ah€am!4jg:14727:19¤aa€al€ah€amN e18232¤aa€al€ah€amÌ€jg:14806:57¤aa€al€ah€am\000ÚOe16799¤aa€al€ah€am\000[e16253¤aa€al€am\000=[ah€kg:25010:114¤aa€al€ah€am\000ë e20820¤aa€al€ah€am&¬e16685¤aa€al€ah€amš°e15757¤aa€al€am\000øŒah€kg:24770:108¤aa€al€ah€am\000pc810¤aa€al€ah€am\000	m§jg:15363:42¤aa€al€ah€am\000€Ze15179¤aa€al€ah€am\000@´e25179¤aa€al€ah€am\000¼8ig:5071:14¤aa€al€ah€am)ge15242¤aa€al€ah€amÏxe23799¤aa€al€ah€am\000“àig:4074:36¤aa€al€am%ah€kg:25055:114¤aa€al€ah€am\000\nåig:7439:40¤aa€al€ah€am\000{te27685¤aa€al€ah€am¤d1485¤aa€al€ah€am\000~?e13089¤aa€al€ah€am\000Öig:4039:35¤aa€al€amC”ah€d2924¤aa€al€ah€am;d7924¤aa€al€ah€am\000Ù!jg:31235:91¤aa€al€ah€am\000ze31891¤aa€al€ah€am\000àÃe18253¤aa€al€ah€amle32249¤aa€al€ah€am\000ÔÀd9485¤aa€al€ah€am\000B?jg:24720:90¤aa€al€ah€am\000Zğd5485¤aa€al€am\000¡ ah€d3385¤aa€al€ah€am\000{˜Ãe24685¤aa€al€ah€am\000{üjg:10169:57¤aa€al€ah€am\0006e10938¤aa€al€ah€ame11736¤aa€al€ah€am\000$‹xe13757¤aa€al€ah€amAig:9508:31¤aa€al€ah€am	¦ÿc770¤aa€al€am+Tah€c870¤aa€al€am\000&% ah€d3824¤aa€al€ah€amèd4824¤aa€al€am\000Íah€jg:15362:39¤aa€al€ah€amÃPe19232¤aa€al€ah€amœ@d2824¤aa€al€ah€am\0003jg:31183:85¤aa€al€am\000€ah€d9385¤aa€al€amºTah€d6584¤aa€al€ah€amN jg:24222:57¤aa€al€ah€am\000”d9824¤aa€al€ah€am´zc937¤aa€al€am\000ä<ah€jg:15244:42¤aa€al€ah€amûÄe25215¤aa€al€ah€am\000Iğjg:12994:23¤aa€al€ah€am\000	'¿jg:18697:55¤aa€al€am\000*>ah€e13478¤aa€al€am&Hah€e25106¤aa€al€am\000ûĞah€d7523¤aa€al€ah€amixig:9851:37¤aa€al€ah€am\0008€d1523¤aa€al€ah€amŠ3e14792¤aa€al€ah€amœ@e24972¤aa€al€ah€amî¬ig:4020:49¤aa€al€am\000|ah€jg:18745:57¤aa€al€ah€am\000	Oe24792¤aa€al€ah€am\000±˜e12252¤aa€al€am\000¡ ah€c647¤aa€al€ah€am\000¡e24215¤aa€al€ah€am\000Œ*e12999¤aa€al€ah€amu/e10111¤aa€al€ah€am\000Iğe12432¤aa€al€ah€am\000{š”e15981¤aa€al€ah€am\000:Gd4623¤aa€al€ah€amtig:9889:40¤aa€al€ah€amÆÀig:4336:40¤aa€al€ah€amÃIjg:13072:60¤aa€al€am\000å³ah€e41432¤aa€al€ah€am\000t(e14500¤aa€al€ah€am\000lĞe13106¤aa€al€ah€am\000Øjg:23835:68¤aa€al€ah€am\000²3²e23106¤aa€al€ah€am9Ïjg:14421:42¤aa€al€am\000pah€jg:24734:96¤aa€al€ah€amÃPig:3048:26¤aa€al€am2Çah€d2723¤aa€al€ah€amÃOe25085¤aa€al€ah€am\000]êd4723¤aa€al€ah€amœ@jg:24810:81¤aa€al€ah€am\000Tig:6554:17¤aa€al€am¸ah€e11083¤aa€al€ah€ame29112¤aa€al€ah€amu/d9823¤aa€al€ah€am\n(e32215¤aa€al€ah€am\000Éig:3021:25¤aa€al€ah€am\000Zıe16111¤aa€al€ah€amUŠe19699¤aa€al€ah€am¥e17031¤aa€al€ah€am\000	Ç*d3823¤aa€al€ah€am=Pjg:15634:52¤aa€al€am¤ah€d3313¤aa€al€ah€amN d2313¤aa€al€amNah€e25111¤aa€al€ah€am\000â\000d8313¤aa€al€am\000â\000ah€kg:24750:102¤aa€al€ah€am\000êÃe13085¤aa€al€ah€am\000\n_e12359¤aa€al€ah€am˜kg:25026:120¤aa€al€ah€am\000† e22848¤aa€al€ah€am² e24984¤aa€al€ah€am\000æ0e23764¤aa€al€ah€am\000”jg:25215:90¤aa€al€ah€am\000Iğe15500¤aa€al€ah€am\000˜d6413¤aa€al€ah€amN kg:31281:106¤aa€al€ah€am\000³ jg:15083:52¤aa€al€am\000_ah€e11997¤aa€al€ama¨ah€jg:12990:23¤aa€al€ah€am\000“àe34085¤aa€al€am\000AÜah€e14111¤aa€al€ah€am\000~Ğe24145¤aa€al€ah€am\000Rkg:32401:130¤aa€al€ah€am\000§±°jg:28495:99¤aa€al€ah€amÃNe24764¤aa€al€ah€am\000Iğjg:15609:47¤aa€al€ama¨ah€ig:6409:34¤aa€al€ah€am/§e11972¤aa€al€amN ah€e23111¤aa€al€ah€amN€jg:24738:96¤aa€al€ah€am\000Bd5113¤aa€al€ah€amÆe10588¤aa€al€ah€am\000\rd8113¤aa€al€ah€am\000Iğjg:10221:58¤aa€al€ah€am\000De16112¤aa€al€ah€am\000†Ÿe13111¤aa€al€ah€am\000W\\e27500¤aa€al€ah€am\"_e21764¤aa€al€ah€amBee18238¤aa€al€ah€am\000	”+kg:24998:111¤aa€al€ah€am\000ó­e14252¤aa€al€ah€am\000Ñ&ig:1511:13¤aa€al€ah€amœ@e24252¤aa€al€ah€am\000-ÆÀe16215¤aa€al€ah€amÿ×d5213¤aa€al€am'ah€ig:7387:39¤aa€al€am\000hah€e16840¤aa€al€ah€am\000=ÿig:1447:46¤aa€al€ah€am\000T\000e15112¤aa€al€ah€am·e25112¤aa€al€ah€am\000åÌjg:18710:50¤aa€al€ah€am\000âHig:4571:17¤aa€al€ah€amMXjg:10054:46¤aa€al€am\000_ah€e24714¤aa€al€ah€amÃPig:4247:29¤aa€al€ah€am$jg:25077:96¤aa€al€ah€am\000‚	e11984¤aa€al€ah€ama¨e29487¤aa€al€ah€am\000B@e12997¤aa€al€ah€am\000«¼e31145¤aa€al€ah€am\000ÈÀjg:13004:58¤aa€al€ah€am\000ojg:10182:58¤aa€al€am\000B@ah€jg:25230:93¤aa€al€ah€am\000àe22390¤aa€al€am\000B=ah€kg:25225:120¤aa€al€am\000\"ßah€jg:12984:21¤aa€al€ah€am\000J kg:34622:100¤aa€al€ah€am\000¶óğe18487¤aa€al€ah€am\000Küjg:24819:84¤aa€al€ah€am\000.(e15997¤aa€al€ah€am+e23624¤aa€al€ah€am\000&%¤e21895¤aa€al€ah€am\000te31895¤aa€al€ah€am\000Oe29534¤aa€al€ah€am\000	C\re16714¤aa€al€ah€am\000²jg:25204:99¤aa€al€am\000¿iah€ig:7526:46¤aa€al€ah€am’àig:3849:32¤aa€al€am@tah€jg:10178:58¤aa€al€ah€am\000Iğe24588¤aa€al€am\000_Yah€e24997¤aa€al€am\000ÉËah€e18675¤aa€al€ah€amË§1e19714¤aa€al€ah€am‚e13145¤aa€al€ah€am\000ïÏig:2264:30¤aa€al€ah€am\000nje32599¤aa€al€am\000‰-0ah€e12984¤aa€al€ah€am\000J jg:23493:90¤aa€al€am\000]œah€kg:25068:111¤aa€al€ah€am\000‚me13895¤aa€al€ah€am?0ig:7538:48¤aa€al€amŠ±ah€e31865¤aa€al€ah€am\000.\000kg:24685:120¤aa€al€ah€am\000{üe21865¤aa€al€ah€am\000-Æ¿e18362¤aa€al€ah€am\000Ô¾jg:24820:84¤aa€al€am·˜ah€e25293¤aa€al€ah€am\0002€jg:14425:44¤aa€al€am\000Œxah€e15487¤aa€al€ah€amÃPd8923¤aa€al€ah€am\000{‚d9923¤aa€al€ah€am\000çêjg:15240:64¤aa€al€am\000ï_ah€e24804¤aa€al€ah€am\000Âe20865¤aa€al€ah€am\"`kg:31204:100¤aa€al€ah€am\000SGd5477¤aa€al€ah€amèe22522¤aa€al€ah€am»d3185¤aa€al€ah€am4ÿe24607¤aa€al€am\000 ah€jg:15664:60¤aa€al€ah€amˆ¸kg:25695:112¤aa€al€ah€am\000w@e11981¤aa€al€ah€am\000¨Ojg:25674:93¤aa€al€ah€am\000:Re25895¤aa€al€ah€am\000¿ªe39997¤aa€al€am\000\råah€e16243¤aa€al€ah€am\000¿ig:5542:19¤aa€al€ah€amƒ=e13865¤aa€al€ah€amN d3577¤aa€al€ah€am„d2577¤aa€al€amLïah€kg:31343:100¤aa€al€ah€am\000[d4577¤aa€al€ah€amÛe24848¤aa€al€am\000˜ah€e20500¤aa€al€ah€amÌ€jg:14856:54¤aa€al€am\000›ûah€e13487¤aa€al€am\000¨ah€jg:11290:35¤aa€al€am-õah€e10238¤aa€al€ah€am\000† e14848¤aa€al€amu0ah€e18588¤aa€al€ah€am‹°e23487¤aa€al€am\000˜4ah€e24895¤aa€al€ah€am\000\nŸ¨jg:14599:42¤aa€al€ah€amN kg:31230:100¤aa€al€am\000W0ah€d2277¤aa€al€ah€am\000íØig:6585:20¤aa€al€ah€amGe31238¤aa€al€ah€am\000Yig:9949:48¤aa€al€ah€am\000pjg:12043:47¤aa€al€amÃPah€ig:6421:38¤aa€al€amÖ×ah€e25167¤aa€al€ah€am\000ûĞe15167¤aa€al€am\000W0ah€hg:943:48¤aa€al€ah€am\000¡ jg:13863:55¤aa€al€amıèah€e24243¤aa€al€ah€am;`e14768¤aa€al€amu/ah€e15671¤aa€al€ah€amæxe25671¤aa€al€ah€amóZe24768¤aa€al€am\000ÔÀah€jg:10275:60¤aa€al€ah€am\0008€d9929¤aa€al€ah€am\000ñd2800¤aa€al€ah€am\000Îœd7609¤aa€al€am&¬ah€e25326¤aa€al€ah€am\000† e36920¤aa€al€am.İah€d4609¤aa€al€ah€am”d3609¤aa€al€ah€am`d4800¤aa€al€amôÈah€ig:7931:46¤aa€al€amN ah€jg:15510:20¤aa€al€am@ah€kg:31318:100¤aa€al€ah€am\000„€jg:25160:93¤aa€al€ah€am\000Ìjg:14928:55¤aa€al€ah€am\000ìig:6425:44¤aa€al€ah€am\0008e30804¤aa€al€ah€am\000$ñjg:25175:96¤aa€al€am\000¶Àah€jg:10122:55¤aa€al€ah€amÃPe24910¤aa€al€am\000\r@ah€e12190¤aa€al€ah€amjjg:13062:27¤aa€al€am\000hŸah€e24791¤aa€al€ah€am\000ÔÀkg:32660:115¤aa€al€ah€am\000~ğjg:13030:51¤aa€al€ah€am\000Šˆkg:25660:102¤aa€al€ah€amê_jg:10627:47¤aa€al€ah€am\000]e23804¤aa€al€ah€am\000Q¿jg:24626:96¤aa€al€ah€am\000.pjg:13076:48¤aa€al€ah€am\000{+e21818¤aa€al€ah€am\000¡ kg:25023:120¤aa€al€am\000Zìah€d6409¤aa€al€ah€am/§e25177¤aa€al€am\000äah€d8409¤aa€al€ah€am\000•„e31190¤aa€al€ah€am\000(Pd2409¤aa€al€ah€am¡d4409¤aa€al€ah€am‡d8184¤aa€al€amN ah€e14167¤aa€al€ah€amDe24167¤aa€al€ah€am\000s€e10390¤aa€al€ah€am\0009Me12804¤aa€al€ah€am±ºe25310¤aa€al€am\000ah€e15310¤aa€al€ah€amÎkg:25207:108¤aa€al€ah€am\000nèjg:15285:32¤aa€al€ah€am»e15362¤aa€al€ah€amÃPe21768¤aa€al€ah€am\000åe15238¤aa€al€ah€am\0008€e25238¤aa€al€am\000ÔÀah€e24938¤aa€al€ah€am\000Ne13442¤aa€al€ah€amœ?e13013¤aa€al€ah€am\000AÖjg:31190:97¤aa€al€ah€am\000(Pd8284¤aa€al€ah€am›xe25096¤aa€al€am\000wah€e36910¤aa€al€am^çah€ig:2824:53¤aa€al€ah€am\0003jg:16737:59¤aa€al€ah€am\000(fe20961¤aa€al€ah€amH?e31671¤aa€al€ah€am$¶d9894¤aa€al€am{Wah€jg:14426:39¤aa€al€ah€am­Ôe12434¤aa€al€ah€am'\njg:25050:99¤aa€al€ah€amèljg:12035:57¤aa€al€ah€am\000„8e25057¤aa€al€ah€am\000\r?kg:31224:103¤aa€al€ah€am\000>Xe10624¤aa€al€ah€am\000/ı»e31326¤aa€al€ah€am\000„€e12013¤aa€al€ah€am\000ìjg:14843:46¤aa€al€am\000‹ah€jg:19162:70¤aa€al€ah€am\000B?e41434¤aa€al€am\000†ah€kg:24249:112¤aa€al€ah€am\000še32671¤aa€al€am\000W0ah€e22449¤aa€al€ah€am\000$öd9794¤aa€al€ah€am/¨ig:2985:21¤aa€al€ah€amİig:5266:53¤aa€al€am\000õĞah€e10096¤aa€al€am\000˜ah€jg:16828:66¤aa€al€ah€am\000œ@e23768¤aa€al€ah€amOe38910¤aa€al€am\000	'¼ah€e25013¤aa€al€ah€am\000skg:24900:114¤aa€al€ah€am\000Á•ig:9962:48¤aa€al€am\000×Şah€ig:2819:28¤aa€al€ah€am„şe14746¤aa€al€ah€amN e24746¤aa€al€am\000‚pah€jg:20671:62¤aa€al€ah€am\000!“d7090¤aa€al€ah€amn(d4090¤aa€al€ah€am\000ô\000e13096¤aa€al€ah€am\000İÏe13057¤aa€al€am\000W0ah€e22624¤aa€al€ah€amœ@d5009¤aa€al€am6Gah€e12624¤aa€al€ah€am\000\n	tjg:12976:20¤aa€al€ah€am\000À\\d6600¤aa€al€ah€amu0kg:25053:108¤aa€al€ah€am\000† jg:10266:65¤aa€al€ah€am\000HÊjg:11306:32¤aa€al€ah€am\000{ƒig:4708:24¤aa€al€ah€ama§e23746¤aa€al€ah€am\000Ğe24671¤aa€al€ah€am\000“Şe24057¤aa€al€ah€am\000Î“e34057¤aa€al€ah€am\000,1d4309¤aa€al€ah€amd2309¤aa€al€amôah€d3309¤aa€al€ah€am'd8309¤aa€al€ah€am\000\r•¤e10326¤aa€al€ah€amœ@d6309¤aa€al€ah€amÍig:7941:42¤aa€al€ah€am\000dohg:833:56¤aa€al€ah€am\000®d8494¤aa€al€ah€amû8d9290¤aa€al€am\000­ah€e35953¤aa€al€am\000:íah€kg:31283:106¤aa€al€ah€am\000×>d2290¤aa€al€ah€am\\jg:14743:22¤aa€al€ah€am'ig:8196:43¤aa€al€ah€amÖØig:4725:40¤aa€al€ah€amê_e10149¤aa€al€amê`ah€d7418¤aa€al€ah€amNèjg:10100:57¤aa€al€ah€am\000EJd2494¤aa€al€am\000•jah€d6418¤aa€al€ah€am<ïkg:25307:114¤aa€al€ah€am\000hèjg:13028:61¤aa€al€ah€am\000_ig:6563:20¤aa€al€am-Oah€jg:20826:27¤aa€al€ah€am'd8394¤aa€al€amf·ah€d3394¤aa€al€ah€amYjg:15148:34¤aa€al€ah€am\000Ie10393¤aa€al€ah€am\000Iğd2013¤aa€al€ah€am\0005}e23112¤aa€al€ah€am‡e13112¤aa€al€am\000\"àah€e14433¤aa€al€am\000Iğah€jg:16799:66¤aa€al€ah€am\000[jg:18678:61¤aa€al€ah€am\000!Îóe20960¤aa€al€ah€am#(e15419¤aa€al€ah€ame15609¤aa€al€ama¨ah€d2100¤aa€al€am\000 ah€c117¤aa€al€ah€am3jg:14746:22¤aa€al€ah€amN e23449¤aa€al€ah€am½jg:14970:58¤aa€al€ah€am\000ÿŒjg:13123:62¤aa€al€am\000“ßah€e24699¤aa€al€am\000¿ ah€kg:25691:113¤aa€al€ah€am\000@e20970¤aa€al€ah€am\000Iïe10609¤aa€al€ah€am\000L6jg:24925:81¤aa€al€ah€amÃPe20671¤aa€al€ah€am\000!“c727¤aa€al€ah€amN d6390¤aa€al€ah€am'e24449¤aa€al€ah€am.d8390¤aa€al€amMWah€kg:23537:105¤aa€al€ah€am\000Hz°d3390¤aa€al€ah€am\000}Ûe22393¤aa€al€ah€am\000~Ïkg:25111:114¤aa€al€ah€am\000â\000d9300¤aa€al€ah€am\000„¬jg:14173:20¤aa€al€ah€am:˜e12607¤aa€al€ah€am\0008d9318¤aa€al€ampah€d2300¤aa€al€am'ah€kg:31223:103¤aa€al€ah€am\000	#td4300¤aa€al€ah€am d4318¤aa€al€ah€am2Èe10057¤aa€al€am\000œah€d2318¤aa€al€ah€ame24740¤aa€al€ah€am\000,öig:9878:41¤aa€al€ah€amé—d1718¤aa€al€ah€am\000sSe31215¤aa€al€ah€am\000ã`jg:15276:58¤aa€al€ah€am\000Iğjg:24744:99¤aa€al€ah€am\000Rÿig:9434:41¤aa€al€ah€am\000gXe13070¤aa€al€ah€am\000„¬d4818¤aa€al€am\000\"Şah€jg:14926:53¤aa€al€ah€amÃPjg:10171:54¤aa€al€ah€am\000	d3818¤aa€al€ah€am3ig:7553:48¤aa€al€am\000zah€e15740¤aa€al€ah€am\000xĞc787¤aa€al€amçah€jg:14584:35¤aa€al€ah€am\000Rvig:34085:1¤aa€al€am\000AÜah€kg:24259:105¤aa€al€ah€am\000‘ß¿e10215¤aa€al€ah€am\000\n‡Pe15342¤aa€al€ah€amN jg:13113:63¤aa€al€ah€am\0000Ğjg:25673:84¤aa€al€am\0007ah€ig:6571:22¤aa€al€am>€ah€kg:24994:108¤aa€al€ah€am\000~@jg:25327:90¤aa€al€ah€am\000rXig:3313:18¤aa€al€ah€amN ig:6614:28¤aa€al€amu0ah€e14970¤aa€al€ah€am\000ÿŒe24970¤aa€al€ah€amÃPe31319¤aa€al€ah€am\000˜–{kg:32541:105¤aa€al€ah€am\000 7 jg:20961:38¤aa€al€ah€amH?e15132¤aa€al€ah€am'e25132¤aa€al€am\000ûĞah€kg:24653:108¤aa€al€ah€amÆwjg:15295:55¤aa€al€ah€am³°e18699¤aa€al€ah€am\000§Pjg:13138:42¤aa€al€am\000Òah€e24609¤aa€al€ah€am\000,jg:14331:58¤aa€al€am\000† ah€ig:5107:14¤aa€al€ah€am_³jg:10504:49¤aa€al€ah€amÃPe15970¤aa€al€ah€am<2e24953¤aa€al€ah€amÂìe21850¤aa€al€ah€am\0004¹d4594¤aa€al€amˆah€jg:14946:43¤aa€al€ah€amÃPig:6582:22¤aa€al€ah€am'jg:20969:45¤aa€al€ah€am\000[`e25699¤aa€al€ah€amûe10190¤aa€al€ah€am‚xjg:12983:21¤aa€al€ah€am\000Ld4718¤aa€al€ah€am6°ig:9875:39¤aa€al€ah€amV·e22791¤aa€al€ah€am>€jg:10001:42¤aa€al€ah€amökig:9850:36¤aa€al€ah€am5çd2988¤aa€al€ah€am)d1988¤aa€al€ah€amDÀig:9781:22¤aa€al€ah€amD£jg:24591:84¤aa€al€ah€am\000¿ e25656¤aa€al€am\000¯\nah€e15656¤aa€al€ah€amp€ig:4829:29¤aa€al€ah€am{Škg:25112:117¤aa€al€ah€am\000åÌe24597¤aa€al€ah€am\0008ig:5961:23¤aa€al€ah€am'e24847¤aa€al€amê_ah€e24206¤aa€al€ah€am\000\ri˜d3576¤aa€al€ah€amÏd7445¤aa€al€ah€am:—d8959¤aa€al€ah€am¸d4576¤aa€al€ah€am›Ûd9959¤aa€al€ah€am\000ÔÀig:9894:41¤aa€al€am{Wah€d3745¤aa€al€ah€amd2745¤aa€al€ah€amd1688¤aa€al€am#`ah€ig:1978:27¤aa€al€ah€am\000B?e16656¤aa€al€ah€amİe24915¤aa€al€ah€am\000{ze24732¤aa€al€ah€am\000Hïd9911¤aa€al€ah€ama¨jg:15514:26¤aa€al€ah€amd¢d7911¤aa€al€ah€amIe25847¤aa€al€ah€am\000Şe25206¤aa€al€am\000Üah€e13870¤aa€al€am\000†ñah€e24676¤aa€al€ah€am\000I¬d6476¤aa€al€ah€amd2911¤aa€al€ah€am\000\r@jg:14771:39¤aa€al€ah€ame38082¤aa€al€ah€am\000äº°d4788¤aa€al€amN ah€d3645¤aa€al€ampãah€ig:7406:32¤aa€al€ah€am\000|e24298¤aa€al€ah€am\000Ÿ)e30809¤aa€al€ah€am¬e24886¤aa€al€am\000Ô¿ah€e24999¤aa€al€ah€am\000Iğe27656¤aa€al€ah€amBe24193¤aa€al€ah€am\000se16206¤aa€al€ah€am\000¦Eig:7488:42¤aa€al€ah€am\000Ø¨ig:8206:49¤aa€al€ah€ama¨e14298¤aa€al€amÃPah€e24870¤aa€al€ah€am\000I‰d2776¤aa€al€ah€amZd7759¤aa€al€ah€am\000 8kg:32655:105¤aa€al€ah€am\000:e25298¤aa€al€ah€am\000Iïe10305¤aa€al€ah€am€e32396¤aa€al€ah€am1ğe30305¤aa€al€ah€am\0003ôwe15999¤aa€al€ah€am\000)Ïjg:14722:17¤aa€al€ah€amN e39690¤aa€al€ah€amªğe15298¤aa€al€amEÕah€e31870¤aa€al€ah€am\000ce15220¤aa€al€ah€am\000Iğjg:25100:81¤aa€al€am\000eìah€d9788¤aa€al€ah€amCçjg:15118:26¤aa€al€ah€am'kg:24760:105¤aa€al€ah€am\000pe20823¤aa€al€ah€amôjg:14608:31¤aa€al€ama¨ah€e15114¤aa€al€am&¬ah€d6045¤aa€al€ah€am\000d3045¤aa€al€ah€amI`d4045¤aa€al€ah€amÁ\\kg:24673:114¤aa€al€ah€am\000† kg:25275:102¤aa€al€ah€am\000ûĞig:9958:50¤aa€al€amˆ¸ah€e10644¤aa€al€am\0008€ah€e25107¤aa€al€ah€am\0000 e21823¤aa€al€am\000	ëah€e25082¤aa€al€ah€am\000† d4066¤aa€al€ah€am'd3066¤aa€al€am'ah€kg:31203:103¤aa€al€ah€am\000!èe14114¤aa€al€ah€amig:9810:25¤aa€al€ah€amàÂe39911¤aa€al€ah€am0pig:2011:26¤aa€al€ah€am\000·d8345¤aa€al€ah€am\000´§e27690¤aa€al€ah€am\000…Øe10625¤aa€al€ah€am\000Şbjg:25316:99¤aa€al€ah€am\000† e27668¤aa€al€ah€amZd7366¤aa€al€ah€am:˜jg:25106:99¤aa€al€am\000ûĞah€jg:10085:52¤aa€al€am‡ah€e10171¤aa€al€ah€am\000	jg:31131:85¤aa€al€ah€am\000Ğe20870¤aa€al€ah€amœ@d4245¤aa€al€ah€amd5245¤aa€al€amu0ah€kg:24890:111¤aa€al€am\000‘Hah€ig:4765:14¤aa€al€amÀpah€e18298¤aa€al€ah€am\000\nße25069¤aa€al€ah€am\000¥Pjg:10021:45¤aa€al€ah€am\000\r@d6611¤aa€al€ah€am|ÿd7611¤aa€al€amVLah€e12206¤aa€al€ah€am	Âe20527¤aa€al€ah€am\000{Be32206¤aa€al€ah€am\000<õxd4088¤aa€al€ah€am\000›òd3611¤aa€al€ah€am\000wd4611¤aa€al€ah€am&He10360¤aa€al€amJ8ah€ig:9749:15¤aa€al€ah€amÛe14656¤aa€al€amœ?ah€e24656¤aa€al€ah€am\000Fe13082¤aa€al€am\000\r?ah€jg:24616:93¤aa€al€ah€am\000µ€kg:25237:114¤aa€al€am\000ah€ig:7554:19¤aa€al€ah€am(‡kg:25289:102¤aa€al€ah€am\000„€jg:24940:87¤aa€al€am\000«Kah€d2059¤aa€al€ah€am\000!=d1711¤aa€al€ah€amÓig:5752:26¤aa€al€am\000† ah€d3711¤aa€al€ah€amÂe25668¤aa€al€ah€am—ôe24401¤aa€al€ah€amÎe21952¤aa€al€ah€am\000Kd1121¤aa€al€ah€am\000½ig:2245:59¤aa€al€ah€am\000–jg:10209:50¤aa€al€ah€am\000^kg:25042:117¤aa€al€ah€am\000ù4e36927¤aa€al€amèdah€d8121¤aa€al€amœ@ah€kg:24788:114¤aa€al€ah€am\000d¼e23811¤aa€al€ah€amÂˆkg:24889:111¤aa€al€ah€am\0008€e15305¤aa€al€ah€am\"`e24836¤aa€al€ah€amœ@kg:25177:102¤aa€al€am\000äah€e15350¤aa€al€amu0ah€e24633¤aa€al€ah€am\000I‰hg:2774:7¤aa€al€amôah€d3021¤aa€al€ah€am\000Zıe40022¤aa€al€ah€am\000#ig:9765:15¤aa€al€ah€am@ig:8122:48¤aa€al€ah€amÃOe24726¤aa€al€ah€am\000™’e23836¤aa€al€am\000ˆ·ÿah€kg:23535:105¤aa€al€am\000n¿ah€e24171¤aa€al€ah€am\000À¨e14171¤aa€al€am@ah€d2321¤aa€al€ah€am\000;Ÿe13048¤aa€al€ah€am\000€Oe13053¤aa€al€ah€am\000`ïjg:14949:47¤aa€al€ah€amÃOe23114¤aa€al€ah€am&«e24787¤aa€al€ah€am\000ê¨ig:2013:26¤aa€al€ah€am\0005}e14530¤aa€al€am	Şah€jg:15223:24¤aa€al€ah€ame22836¤aa€al€ah€amôe32836¤aa€al€ah€am\000oe24961¤aa€al€ah€am\0008e12836¤aa€al€ah€am\000„¬d3488¤aa€al€ah€am:˜d5488¤aa€al€ah€amÚÀd7488¤aa€al€ah€am\000Ø¨e24053¤aa€al€ah€am\000a\\d9488¤aa€al€am\000ah€e23537¤aa€al€ah€am\000Hz°jg:24622:96¤aa€al€ah€am\000\rˆd1488¤aa€al€ah€am%d1d2459¤aa€al€ah€am&«jg:10626:50¤aa€al€ah€am\000\n e23530¤aa€al€ah€am\000ıàe21899¤aa€al€ah€am\000óke31899¤aa€al€ah€am\000I7kg:24995:108¤aa€al€ah€am\0008€d5267¤aa€al€ah€am\000ïĞig:7368:34¤aa€al€ah€amu/d8267¤aa€al€ah€am}Èe25048¤aa€al€ah€am\000­°kg:24689:120¤aa€al€am\000š'ah€e31915¤aa€al€ah€am\0008jg:31194:97¤aa€al€ah€am\000\n‡Pe31305¤aa€al€ah€am\000lDe21305¤aa€al€ah€am\000©Èe22787¤aa€al€ah€am\nQe11305¤aa€al€amê_ah€jg:14759:34¤aa€al€ah€amÛ®kg:32400:130¤aa€al€ah€amI<jg:11973:43¤aa€al€ah€amu.d6367¤aa€al€ah€am\000¥œd3288¤aa€al€ah€am:4jg:11999:46¤aa€al€ah€amu0e11303¤aa€al€amcœah€d7288¤aa€al€ah€amTd7414¤aa€al€ah€am\000–e44128¤aa€al€ah€am\000n¡jg:25044:81¤aa€al€ah€am\000F¢jg:13137:34¤aa€al€am\000g`ah€e15530¤aa€al€ah€am<.ig:3844:36¤aa€al€ah€am\000ópe25193¤aa€al€ah€am\000Kkg:25024:120¤aa€al€ah€am\000á¨e12811¤aa€al€ah€am\0008Àd4259¤aa€al€am&¬ah€jg:24076:99¤aa€al€am\000†<ah€d8259¤aa€al€ah€am\000Iğig:3308:15¤aa€al€ah€am?£e10726¤aa€al€ah€am\000–Ëe13128¤aa€al€ah€am\000İÊkg:25014:117¤aa€al€ah€am\000\r?d3388¤aa€al€ah€am\n¾e43102¤aa€al€ah€am\000øFe13120¤aa€al€ah€am\000,de23120¤aa€al€ah€amkĞe24303¤aa€al€ah€am\000-*e24927¤aa€al€ah€am\000àsjg:11289:31¤aa€al€ah€amN kg:25696:114¤aa€al€ah€am\000#Û°e15625¤aa€al€ah€am\000wHd6359¤aa€al€ah€amjg:14923:50¤aa€al€ah€amœ@d9359¤aa€al€ah€am\000æ/kg:23518:114¤aa€al€ah€am\000\r» kg:25223:114¤aa€al€ah€am\000Ğkg:25290:105¤aa€al€am\000ÔÀah€d6888¤aa€al€am¸ah€e14120¤aa€al€ah€amnÒe14048¤aa€al€amnah€e24048¤aa€al€ah€am\000Ã%e24305¤aa€al€ah€am\000Dªe10053¤aa€al€am\0005\rah€e23787¤aa€al€ah€am\000¹ e40053¤aa€al€am\0008ah€d3859¤aa€al€ah€amdkg:31234:103¤aa€al€ah€am\000ÿÖd9859¤aa€al€am:—ah€jg:13067:54¤aa€al€ah€am\000iàe23766¤aa€al€ah€am\000!šhkg:32756:105¤aa€al€ah€am\000•äe31148¤aa€al€ah€am\000/e14374¤aa€al€ah€am\000Gtd7472¤aa€al€ah€am\000e31228¤aa€al€ah€am\000Ühg:863:37¤aa€al€ah€amWâd9294¤aa€al€ah€am\nïd8294¤aa€al€amÂˆah€d2657¤aa€al€ah€amLjg:24930:84¤aa€al€ah€am\000Ršjg:10240:55¤aa€al€ah€am\000† d4294¤aa€al€ah€am&«d6657¤aa€al€ah€am”Ie24865¤aa€al€ah€am\000pe24067¤aa€al€ah€amĞd2572¤aa€al€ah€am”ig:6586:23¤aa€al€amJ,ah€e15374¤aa€al€ah€amnÄd6572¤aa€al€amœ<ah€e10228¤aa€al€ah€am\000j\000d5572¤aa€al€ah€amçe29530¤aa€al€am\000†Ÿah€e15644¤aa€al€ah€amNig:2575:10¤aa€al€ah€am[Td7757¤aa€al€ah€amä„d9757¤aa€al€ah€am\000°ig:9939:49¤aa€al€ah€amNe14683¤aa€al€ah€amYØe24683¤aa€al€ah€am\000W0jg:24966:99¤aa€al€ah€am\000Èe15067¤aa€al€ah€am\000ü\"e25067¤aa€al€ah€am\000lĞig:2577:10¤aa€al€amLïah€d2672¤aa€al€am˜ah€e15554¤aa€al€ama¨ah€e14923¤aa€al€ah€amœ@e18289¤aa€al€ah€am\000Œig:6337:12¤aa€al€am'Bah€e24923¤aa€al€ah€am\000Æig:9823:31¤aa€al€ah€am\n(d7457¤aa€al€amu0ah€ig:2870:29¤aa€al€ah€am\000á€d9783¤aa€al€ah€am|e24680¤aa€al€ah€am\0008€jg:28492:94¤aa€al€ah€am\000İĞig:3208:48¤aa€al€ah€am\000¹Hkg:32656:105¤aa€al€ah€am\000:d5772¤aa€al€ah€amïe25122¤aa€al€ah€am\000œùd9772¤aa€al€ah€am@d7557¤aa€al€amN ah€d6557¤aa€al€ah€am	Äe25071¤aa€al€ah€am\000Iğe15122¤aa€al€am'ah€ig:9828:31¤aa€al€ah€amØÌe23554¤aa€al€ah€amO±€ig:4076:35¤aa€al€am`|ah€ig:4454:26¤aa€al€ah€am\000B>e25153¤aa€al€ah€am\0002dd7521¤aa€al€ah€am\000µd3872¤aa€al€ah€am&«jg:18665:71¤aa€al€ah€am\000v&e15333¤aa€al€ah€am:—d5183¤aa€al€ah€am\000½d9872¤aa€al€ah€am'jg:15647:53¤aa€al€am¤ah€e19975¤aa€al€ah€amu0kg:25308:117¤aa€al€ah€am\000­°ig:7421:33¤aa€al€ah€am8@d5764¤aa€al€ah€amŒ d7421¤aa€al€ah€am8@d6421¤aa€al€amÖ×ah€e29460¤aa€al€ah€am\000”%d4421¤aa€al€ah€amèd3421¤aa€al€amæxah€d4083¤aa€al€ah€amºQd9972¤aa€al€amu/ah€d7972¤aa€al€ah€amÆjg:10101:58¤aa€al€ah€am\000ûĞjg:10105:60¤aa€al€am\000˜ah€e24721¤aa€al€ah€am\000¡€e10142¤aa€al€ah€amN kg:25659:108¤aa€al€ah€am\000_e37915¤aa€al€ah€am\000iCe22374¤aa€al€ah€am\000$êd2857¤aa€al€ah€am¸ig:9768:21¤aa€al€ah€amW·ig:7051:34¤aa€al€amÒlah€e15726¤aa€al€ah€am\000=`jg:25062:93¤aa€al€ah€amÃPig:4719:32¤aa€al€ah€amØÓd9857¤aa€al€ah€am\000	%d3857¤aa€al€ah€am¿kg:25196:117¤aa€al€am\000“àah€kg:30034:128¤aa€al€ah€am\000‡Xpkg:24769:108¤aa€al€ah€am\000Zùd2564¤aa€al€ah€amˆ·d6564¤aa€al€ah€am/gd4564¤aa€al€ah€amojg:25034:93¤aa€al€ah€am\000îüd2957¤aa€al€ah€am\nŒig:34827:1¤aa€al€ah€am\000§¤e16683¤aa€al€ah€am\000B?e31293¤aa€al€ah€am\000€Xd8188¤aa€al€ah€amLe31873¤aa€al€ah€am\000‚Lkg:24974:102¤aa€al€ah€am\0008€jg:10582:36¤aa€al€ah€am\000_e16676¤aa€al€am\000B?ah€jg:25226:81¤aa€al€am\000W0ah€e24644¤aa€al€ah€am\000\000Kd8162¤aa€al€ah€amÂˆe24800¤aa€al€ah€am\000“àd8159¤aa€al€am\000-Êah€ig:9769:27¤aa€al€am¸ah€jg:14182:28¤aa€al€am!fah€jg:13145:40¤aa€al€ah€am\000ïÏd6583¤aa€al€ah€amÃPe24690¤aa€al€ah€am\000ÔÀd4583¤aa€al€ah€amwd2583¤aa€al€ah€amÃPd7088¤aa€al€ah€am¯dig:7609:35¤aa€al€am&¬ah€jg:12550:53¤aa€al€ah€am\000³ğkg:31198:103¤aa€al€ah€am\000\r» d4262¤aa€al€am\000	M!ah€jg:23487:96¤aa€al€am\000˜4ah€d9262¤aa€al€ah€amLig:7530:46¤aa€al€ah€amu0e31289¤aa€al€ah€am\000\nÅĞd5483¤aa€al€am\000(Şah€d8483¤aa€al€amçah€d7483¤aa€al€ah€amˆ¸e16048¤aa€al€ah€am\000Æe11289¤aa€al€ah€amN d3483¤aa€al€amLah€jg:15593:42¤aa€al€ah€am˜Xe18676¤aa€al€ah€am\000|›ig:2984:18¤aa€al€ah€am%jg:12542:51¤aa€al€ah€am\0000­Kkg:28539:105¤aa€al€am\000Ğah€e22644¤aa€al€ah€am1ig:4706:24¤aa€al€am6°ah€e35557¤aa€al€ah€amM¼jg:14573:27¤aa€al€am\000¹ah€e15557¤aa€al€ah€am/¨e22786¤aa€al€ah€am–e31142¤aa€al€ah€am\000\\¿e23107¤aa€al€ah€amˆµe13107¤aa€al€am\000	'¿ah€ig:3809:32¤aa€al€amš”ah€d2964¤aa€al€amhah€ig:5425:20¤aa€al€ah€am\0000kg:24756:102¤aa€al€am\000ÔÀah€jg:24817:84¤aa€al€ah€am\000¬åjg:14130:61¤aa€al€am\000¿ ah€d5964¤aa€al€ah€am%Sjg:23497:93¤aa€al€am\000Iğah€ig:4332:27¤aa€al€ah€amê_d4062¤aa€al€am\000¸Sah€jg:10407:21¤aa€al€ah€amÃPe23786¤aa€al€ah€am\000Õ¸d9945¤aa€al€ah€am\000$ød3683¤aa€al€am\000¡ ah€d2683¤aa€al€ah€amWkg:25211:120¤aa€al€ah€am\000eºd2864¤aa€al€amN ah€e30042¤aa€al€am\000ÓñĞah€kg:23746:117¤aa€al€ah€am\000Ğd9864¤aa€al€amN ah€d3864¤aa€al€ah€am\000Ô¿ig:9406:35¤aa€al€ah€am\000\r» jg:13064:42¤aa€al€am\000dFah€jg:13870:53¤aa€al€am\000†ñah€d2983¤aa€al€am7xah€e15379¤aa€al€ah€am\000*ükg:25306:111¤aa€al€am\000Ù|ah€d8845¤aa€al€amU(ah€e20554¤aa€al€ah€am\000yìd9776¤aa€al€amôah€e10107¤aa€al€ah€am\000\000şe27676¤aa€al€ah€am°e13545¤aa€al€am6°ah€kg:25013:114¤aa€al€ah€am\000sjg:14397:32¤aa€al€amN ah€ig:3041:31¤aa€al€ah€am¦d2883¤aa€al€ah€amĞe25289¤aa€al€ah€am\000„€jg:15971:20¤aa€al€ah€amId9883¤aa€al€ah€amN e46379¤aa€al€ah€améÅjg:11994:25¤aa€al€ah€amN e14676¤aa€al€ah€am\000†<e12042¤aa€al€ah€am\000(ig:7531:46¤aa€al€ah€am\000—Òd7057¤aa€al€ah€amLe32597¤aa€al€ah€am\000pşd6057¤aa€al€ah€am+·d9383¤aa€al€ah€am\000<áğd4057¤aa€al€ah€am'e31676¤aa€al€ah€am\000€Ÿd6383¤aa€al€am†4ah€jg:15611:43¤aa€al€amN ah€e14446¤aa€al€ah€am\000xğd3383¤aa€al€ah€am	‚hg:4560:6¤aa€al€ah€am\000„kg:25323:120¤aa€al€ah€am\000Iğd7976¤aa€al€ah€am\000ûÏig:7471:42¤aa€al€ah€amM¼e20873¤aa€al€ah€am\000† hg:3328:9¤aa€al€ah€am\000\r?d8157¤aa€al€ah€am\000ÔÀig:7752:33¤aa€al€ah€am\000	e22557¤aa€al€ah€am\000!‘¾e14379¤aa€al€am'‡ah€d8545¤aa€al€ah€amxd7545¤aa€al€ah€am\000.ld6545¤aa€al€ah€amN e23446¤aa€al€ah€ame13446¤aa€al€ah€ame24725¤aa€al€ah€am\000Ô¿e14725¤aa€al€ah€amN d9869¤aa€al€ah€am'sjg:24736:96¤aa€al€ah€am\000†5e15747¤aa€al€ah€am‡ïe24992¤aa€al€ah€am\000æ/d4566¤aa€al€ah€am:—jg:24592:84¤aa€al€ah€am\000ûËig:34087:1¤aa€al€ah€am\000_‹e15893¤aa€al€ah€am.e30155¤aa€al€ah€amóe10155¤aa€al€ah€am\000İÓjg:24922:81¤aa€al€ah€am\000vde25893¤aa€al€ah€am\000¯jg:15519:23¤aa€al€ah€am#(e15725¤aa€al€ah€am\000ìe25725¤aa€al€ah€am\000“ßd7969¤aa€al€ah€amÃe24296¤aa€al€ah€am\0000Îd9969¤aa€al€amu0ah€jg:11989:51¤aa€al€ah€amœ@ig:1727:28¤aa€al€ah€am\000\r?e32747¤aa€al€ah€am\0001d3466¤aa€al€ah€am'd5466¤aa€al€ah€amÅd6466¤aa€al€ah€am'd3869¤aa€al€ah€amyjg:14196:32¤aa€al€ah€amBhig:9858:36¤aa€al€ah€am%e24893¤aa€al€ah€am\000†Ÿe32586¤aa€al€ah€am\000‘ß¼e24884¤aa€al€ah€am\000ÔYjg:14839:44¤aa€al€ah€amê`e32772¤aa€al€ah€am\000£e24198¤aa€al€ah€am\000øOjg:29160:58¤aa€al€ah€amèle24770¤aa€al€ah€am\000pe25007¤aa€al€ah€am\000† d4766¤aa€al€ah€am£Ûjg:14452:54¤aa€al€am\000Õah€d8766¤aa€al€ah€amád9766¤aa€al€ah€amNe11976¤aa€al€am\000	”ah€e14198¤aa€al€ah€am:˜d9769¤aa€al€am¸ah€e15992¤aa€al€ah€amSjg:15334:27¤aa€al€ah€am¦şe23772¤aa€al€ah€amdjg:14590:35¤aa€al€ah€amu0ig:3047:27¤aa€al€ah€am;jig:2622:37¤aa€al€am\000¥!ah€jg:24960:96¤aa€al€ah€am\000pjg:15067:54¤aa€al€ah€am\000ü\"jg:24609:90¤aa€al€ah€am\000,e10405¤aa€al€am\000†Ÿah€e18562¤aa€al€ah€am\000Iğe12976¤aa€al€ah€am\000À\\kg:25011:114¤aa€al€ah€am\000	ëe31917¤aa€al€ah€am\000$wäe24772¤aa€al€ah€am\000FLe15296¤aa€al€ah€am\000ÔÀe25296¤aa€al€ah€am\000_jg:13120:55¤aa€al€ah€am\000,de17007¤aa€al€ah€am\000Ğe31893¤aa€al€ah€am\0004¤kg:24773:111¤aa€al€ah€am\000‚pe21893¤aa€al€ah€am\000~ˆjg:25105:96¤aa€al€ah€am\000Ğjg:31196:97¤aa€al€am\000\rEah€jg:11975:49¤aa€al€amÃPah€jg:15323:50¤aa€al€amˆ¸ah€jg:24812:81¤aa€al€am\000Ì_ah€jg:14423:40¤aa€al€ah€amu0jg:10092:47¤aa€al€amÃPah€e24998¤aa€al€ah€am\000ó­hg:776:31¤aa€al€ah€amöêÛe25182¤aa€al€ah€am\000Ğe18296¤aa€al€ah€am\000¯7ig:6542:15¤aa€al€ah€am\0004˜e19821¤aa€al€ah€am\000Àïe15772¤aa€al€ah€am[gkg:31322:100¤aa€al€ah€am\000<ÿ;jg:12014:53¤aa€al€am\000pÿah€jg:13060:60¤aa€al€ah€am\000† e25312¤aa€al€ah€am\000_jg:24807:81¤aa€al€ah€am\000$¬e14259¤aa€al€ah€am\000¶jg:25299:90¤aa€al€ah€amêÄe12992¤aa€al€am\000–Óah€e20744¤aa€al€ah€am\000{œˆe13003¤aa€al€ah€am\000OYe14182¤aa€al€am!fah€d1169¤aa€al€ah€am\000~ğjg:31149:91¤aa€al€ah€am\000Ãig:9774:27¤aa€al€ah€am\"`ig:1602:39¤aa€al€am\000ó´ah€jg:24634:99¤aa€al€ah€am\000<©e15758¤aa€al€am\000Šˆah€e11992¤aa€al€ah€amĞüe15295¤aa€al€ah€am³°e25295¤aa€al€am\0005ah€jg:10176:54¤aa€al€ah€amÃPkg:25165:108¤aa€al€ah€am\000SÙe10269¤aa€al€ah€am\000Ñ\000d8178¤aa€al€ah€am'kg:24771:108¤aa€al€ah€amê`kg:23758:106¤aa€al€ah€am\000SHig:9812:22¤aa€al€ah€am?†e24758¤aa€al€ah€am\000—©e23535¤aa€al€am\000n¿ah€e24650¤aa€al€ah€am\000ÙFjg:12030:39¤aa€al€am\000¾Àah€ig:6596:28¤aa€al€ah€am:˜jg:15569:40¤aa€al€amtÌah€c955¤aa€al€ah€am\000{+e24821¤aa€al€ah€amÃPig:7432:38¤aa€al€ah€amIÔig:9833:33¤aa€al€ah€am\0008€kg:25126:117¤aa€al€am\000Îah€e27687¤aa€al€ah€am\000Se34535¤aa€al€ah€am\000˜ope25650¤aa€al€ah€am'¹kg:24785:114¤aa€al€ah€am\000‚¸ig:3211:19¤aa€al€am!3ah€c765¤aa€al€ah€amƒig:7461:36¤aa€al€am+\\ah€e11082¤aa€al€ah€am0Òkg:24759:105¤aa€al€ah€am\0008€e24403¤aa€al€am'ah€ig:8157:42¤aa€al€ah€am\000ÔÀig:6613:28¤aa€al€am:˜ah€e15578¤aa€al€amø7ah€e24637¤aa€al€ah€am\000øig:8251:54¤aa€al€am\000[¨ah€ig:4561:11¤aa€al€ah€amN kg:25097:114¤aa€al€ah€am\000pjg:10143:64¤aa€al€ah€am\0009Fig:8119:51¤aa€al€am\0008€ah€c935¤aa€al€ah€am\000È/e24122¤aa€al€am\000[{ìah€e14122¤aa€al€ah€amSPe12799¤aa€al€ah€amu0d4569¤aa€al€ah€am#jg:10280:59¤aa€al€am\000s0ah€e10082¤aa€al€amVğah€e14578¤aa€al€am:˜ah€jg:10002:42¤aa€al€am\000…Øah€kg:25009:114¤aa€al€ah€am\000«Ee25687¤aa€al€ah€am\000,Ète10003¤aa€al€ah€am>€e19709¤aa€al€ah€amÃKkg:24649:105¤aa€al€ah€am\0008€e23821¤aa€al€am\0005\000ah€ig:7555:45¤aa€al€ah€amN jg:10380:60¤aa€al€ah€am\0000âig:7436:35¤aa€al€ah€am<Œe27666¤aa€al€ah€am0pe10071¤aa€al€ah€amÂìjg:10245:53¤aa€al€am\000† ah€jg:14111:58¤aa€al€ah€am\000~Ğjg:14805:57¤aa€al€ah€amu0e24687¤aa€al€ah€am\000“ße20725¤aa€al€ah€am>yjg:10269:62¤aa€al€ah€am\000Ñ\000ig:9772:27¤aa€al€ah€am@jg:14242:43¤aa€al€amœ@ah€jg:24971:99¤aa€al€ah€amÃPe36923¤aa€al€am,­ah€jg:24728:93¤aa€al€ah€am\000(šig:7477:45¤aa€al€ah€amN d3369¤aa€al€am1ah€e21071¤aa€al€ah€am'd6369¤aa€al€ah€am\000f¯d7369¤aa€al€ah€am:˜d4369¤aa€al€ah€amthig:7440:39¤aa€al€ah€amUïe21884¤aa€al€ah€am\000†Ÿe31884¤aa€al€ah€am\000«†jg:15892:32¤aa€al€amu0ah€jg:15343:30¤aa€al€ah€am\000&ig:5963:34¤aa€al€am\0008€ah€ig:7491:43¤aa€al€amN ah€e33122¤aa€al€ah€am\000ä“ e13122¤aa€al€am\000“İah€d4357¤aa€al€ah€amÛe31155¤aa€al€ah€am\000W0e28101¤aa€al€ah€amhd5469¤aa€al€ah€amöig:6546:17¤aa€al€ah€am@tig:3185:34¤aa€al€ah€am4ÿkg:25332:105¤aa€al€am\000lĞah€e15613¤aa€al€ah€am\000$økg:21853:108¤aa€al€ah€am\000¯kg:31294:112¤aa€al€ah€am\000Kwe10051¤aa€al€ah€ama§e21766¤aa€al€ah€am\000Oe19269¤aa€al€ah€am\000\r?jg:30419:25¤aa€al€ah€amb\nkg:24915:120¤aa€al€ah€am\000{zig:8178:10¤aa€al€ah€am'jg:15537:28¤aa€al€am³	ah€kg:24767:108¤aa€al€ah€am\000d2969¤aa€al€ah€am:˜e24766¤aa€al€ah€am\000Ëüjg:15527:27¤aa€al€ah€amÈ¸e24613¤aa€al€ah€am”pig:2236:25¤aa€al€ah€am\000\r@e36917¤aa€al€am/¼ah€e24405¤aa€al€ah€am&¬c785¤aa€al€ah€amœig:2300:12¤aa€al€am'ah€jg:10281:58¤aa€al€ah€am\000kg:25167:114¤aa€al€ah€am\000ûĞe27435¤aa€al€ah€amRe30283¤aa€al€ah€am\000;‚_e31198¤aa€al€ah€am\000\r» kg:25238:117¤aa€al€am\000ÔÀah€ig:10036:1¤aa€al€ah€am\000Äjg:13132:43¤aa€al€ah€am\000€6e25297¤aa€al€ah€am\0004Pe11128¤aa€al€ah€am)Vd2838¤aa€al€ah€am	’d4838¤aa€al€am-Jah€d8173¤aa€al€am%İah€d5173¤aa€al€ah€amÌ€d3173¤aa€al€ah€am\000{š­jg:20408:60¤aa€al€ah€am5¾e18295¤aa€al€ah€am\000A¡\"e27503¤aa€al€ah€am\000ğd4364¤aa€al€ah€amTe25274¤aa€al€am\000_ah€d9287¤aa€al€ah€am\0008€e14133¤aa€al€ah€am&¬kg:39235:200¤aa€al€ah€am\000	'½ig:7546:46¤aa€al€ah€amˆ¸d2073¤aa€al€ah€amÜd9938¤aa€al€ah€am\000ÔÀd7938¤aa€al€ah€am\000„e10128¤aa€al€ah€am\000q\000e24783¤aa€al€ah€am\000¿e14783¤aa€al€ah€amÖØe15537¤aa€al€am³	ah€e11204¤aa€al€ah€am\000­¯e31204¤aa€al€ah€am\000SGd3287¤aa€al€ah€am:˜d2287¤aa€al€ah€amßjg:11980:64¤aa€al€ah€am\000â\000e24591¤aa€al€ah€am\000¿ d3355¤aa€al€ah€am­nd7387¤aa€al€am\000hah€d4387¤aa€al€ah€am$kg:31210:109¤aa€al€ah€am\000K˜e16110¤aa€al€ah€am\000\r?d2408¤aa€al€ah€am\rUd8387¤aa€al€améah€kg:24664:111¤aa€al€ah€am\0008€e13133¤aa€al€am\000÷Ÿah€jg:12019:32¤aa€al€ah€amÅĞd7408¤aa€al€ah€amtÌig:9780:20¤aa€al€ah€amFPjg:10588:47¤aa€al€ah€am\000\rd5773¤aa€al€ah€am\000\r@d9773¤aa€al€ah€am•æd9264¤aa€al€ah€am\000‰T?d6264¤aa€al€am\000`ah€jg:25212:81¤aa€al€ah€am\000€e16650¤aa€al€ah€amÆd3164¤aa€al€ah€am6e23101¤aa€al€ah€am„e13101¤aa€al€ah€am\000“ßd2164¤aa€al€ah€am\000B@e15110¤aa€al€ah€amu/d6887¤aa€al€ah€amôjg:10210:60¤aa€al€ah€am\000òd9508¤aa€al€ah€am	¦ÿe22558¤aa€al€ah€am\000-—Şe40048¤aa€al€ah€am\000e31133¤aa€al€ah€am\000æÈjg:14379:29¤aa€al€am'‡ah€jg:25120:99¤aa€al€ah€am\000àøe21854¤aa€al€am\000	ah€d8364¤aa€al€amcah€d2264¤aa€al€ah€am\000njd2982¤aa€al€ah€amFPig:9433:46¤aa€al€ah€am\000Ô¢ig:3419:20¤aa€al€ah€am\000Íóe24110¤aa€al€ah€am\000ã`e25053¤aa€al€ah€am\000† ig:9879:39¤aa€al€ah€amu0ig:9948:49¤aa€al€am\000x]ah€e10242¤aa€al€ah€amÃPig:8127:47¤aa€al€ah€amœ@ig:9766:22¤aa€al€ah€amNd7064¤aa€al€ah€am\000­³d2674¤aa€al€ah€amde14204¤aa€al€am\000µah€e19274¤aa€al€ah€am\000W0d4055¤aa€al€amu/ah€d3682¤aa€al€ah€am\000xĞig:6576:22¤aa€al€amRlah€e20821¤aa€al€ah€amôe11101¤aa€al€ah€am\000†’jg:14367:19¤aa€al€ah€amN e29732¤aa€al€ah€am\000òDkg:24254:112¤aa€al€ah€am\000©jg:25114:81¤aa€al€ah€am\000	e13051¤aa€al€ah€am\000ÜHjg:11978:58¤aa€al€ah€am\000Ú°d2687¤aa€al€ah€am\000‰T@jg:10082:51¤aa€al€amVğah€e25204¤aa€al€am\000¿iah€d4064¤aa€al€ah€amLkg:25019:117¤aa€al€ah€am\000¥Pd3782¤aa€al€am\000d°ah€d5782¤aa€al€ah€amÃPd4782¤aa€al€ah€amd3787¤aa€al€am\0009Ğah€d9782¤aa€al€ah€amze18359¤aa€al€ah€amıèkg:24872:105¤aa€al€am\000¿Dah€kg:24983:105¤aa€al€ah€am\000†<ig:8224:36¤aa€al€ah€am\000CÙkg:21864:100¤aa€al€ah€am\000~ïd7373¤aa€al€ah€amL,e24854¤aa€al€am\000pah€ig:8133:50¤aa€al€ah€am›Üd6373¤aa€al€ah€am#(d9908¤aa€al€am'ah€d3482¤aa€al€am Ğah€d1482¤aa€al€ah€am\000ğ/[d9774¤aa€al€ah€am\"`d7482¤aa€al€ah€am\000€0ig:3186:30¤aa€al€ah€am16jg:13027:53¤aa€al€ah€am\000	'Àig:9891:39¤aa€al€ah€am‚d3655¤aa€al€ah€am:ig:9917:44¤aa€al€ah€am[d4655¤aa€al€ah€am‰jg:24968:99¤aa€al€am\000ÔÀah€jg:15512:24¤aa€al€ah€am0pjg:24809:81¤aa€al€ah€am\000Èwjg:24806:81¤aa€al€ah€am\000Ì_jg:10088:45¤aa€al€amu0ah€d2774¤aa€al€amôah€ig:6537:15¤aa€al€ah€amXd7555¤aa€al€ah€amN jg:15125:29¤aa€al€ah€am#'d4582¤aa€al€amnah€e10110¤aa€al€ah€amÍ|c805¤aa€al€ah€am¸e30747¤aa€al€ah€am\000(úig:9930:43¤aa€al€am\000aGah€d2555¤aa€al€ah€amig:9881:41¤aa€al€am\000Œ¯ah€e14242¤aa€al€amœ@ah€d5973¤aa€al€ah€am™e24242¤aa€al€am	¿ah€e20862¤aa€al€ah€am\000ñe15360¤aa€al€ah€am\000EŞkg:31214:109¤aa€al€ah€am\000¡ d5069¤aa€al€ah€amôd8069¤aa€al€ah€am^d7069¤aa€al€ah€am*÷d4078¤aa€al€ah€amMNd7455¤aa€al€amu0ah€jg:16723:58¤aa€al€am\000¼2ah€d2078¤aa€al€ah€amN ig:8294:57¤aa€al€amÂˆah€d4455¤aa€al€ah€am¬#ig:7431:39¤aa€al€ah€amB?d2455¤aa€al€ah€amHe31242¤aa€al€am\000~ïah€d3873¤aa€al€ah€am're31862¤aa€al€ah€am«¶e21862¤aa€al€am\000“ah€e27854¤aa€al€ah€am»jg:15373:47¤aa€al€am\0008€ah€e13159¤aa€al€ah€amNd8169¤aa€al€ah€amd6474¤aa€al€ah€amK\000e12007¤aa€al€am\000±ah€d4069¤aa€al€ah€am\000&e31193¤aa€al€ah€am\000øe19228¤aa€al€ah€amcğùjg:15978:41¤aa€al€ah€am\000¿se15142¤aa€al€am°õah€ig:9791:29¤aa€al€am&¬ah€e31156¤aa€al€ah€am\000¡e32204¤aa€al€ah€am\000'¬>d4238¤aa€al€ah€am,jg:15555:33¤aa€al€ah€amhMig:7540:47¤aa€al€ama¨ah€e31079¤aa€al€ah€am\000a§e14744¤aa€al€ah€am\000IÍe24744¤aa€al€ah€am\000Rÿd7087¤aa€al€ah€am\000†Ÿjg:24937:87¤aa€al€ah€am\000“àjg:15532:26¤aa€al€am_ah€d4087¤aa€al€am\000Êyah€d9873¤aa€al€ah€amM»ig:7492:39¤aa€al€am0Ôah€jg:24855:99¤aa€al€ah€am\000	jg:24839:93¤aa€al€ah€am\000Iğjg:24958:96¤aa€al€ah€am\000Iğd6338¤aa€al€ah€am%e27657¤aa€al€ah€am&«e31295¤aa€al€am\000W0ah€jg:24743:99¤aa€al€ah€am\000†8e32540¤aa€al€ah€am\000yêğe22540¤aa€al€am\000Œah€e24919¤aa€al€ah€am\0008€ig:9876:40¤aa€al€ah€am\000Åig:4070:41¤aa€al€amœ?ah€d2955¤aa€al€ah€am\000‰T@d3187¤aa€al€ah€amœ=d5573¤aa€al€ah€am“jg:13063:34¤aa€al€ah€am\000[`e31297¤aa€al€ah€am\000“àig:6408:34¤aa€al€ah€am0Ôd7072¤aa€al€ah€amÁd7438¤aa€al€ah€amkg:32404:130¤aa€al€ah€ameÜd4072¤aa€al€ah€am|jg:24963:96¤aa€al€ah€am\000pe12809¤aa€al€ah€am\000èGe10067¤aa€al€ah€amN d9855¤aa€al€ah€amŸƒe23079¤aa€al€ah€amV·d6308¤aa€al€ah€am'\rd9308¤aa€al€ah€amĞd3855¤aa€al€ah€am\000óod7966¤aa€al€ah€amÇd9966¤aa€al€am\000‡jah€jg:31250:88¤aa€al€am\000˜ah€jg:25074:87¤aa€al€am\000lÏah€e18783¤aa€al€am\000­+ah€e24899¤aa€al€ah€am\000†d9172¤aa€al€ah€am—ód1974¤aa€al€ah€am\000f¢d3172¤aa€al€ah€ame25657¤aa€al€ah€am\000_d6538¤aa€al€ah€am'd9874¤aa€al€ah€am\000\r@e24976¤aa€al€ah€am\000†9ig:8175:41¤aa€al€am\000pah€d3874¤aa€al€ah€am­phg:2901:4¤aa€al€ah€am&©ig:4084:46¤aa€al€ah€am\000ô5d9866¤aa€al€ah€amê[e25899¤aa€al€ah€am\000Íig:7558:25¤aa€al€ah€am:˜e10159¤aa€al€am\000ªpah€d6272¤aa€al€am¯Áah€e23591¤aa€al€ah€am\000“tig:6600:27¤aa€al€ah€amu0ig:6399:30¤aa€al€ah€amœ@e15976¤aa€al€ah€amM'e18770¤aa€al€am\000B@ah€d7108¤aa€al€ah€amèe32067¤aa€al€ah€am|8e25079¤aa€al€ah€am\000† e10193¤aa€al€am\000H ah€e10858¤aa€al€ah€am\000•We20858¤aa€al€ah€am%~e18744¤aa€al€ah€am\000.ôe21886¤aa€al€ah€am¯Åd2738¤aa€al€ah€am3d7372¤aa€al€am–dah€e18360¤aa€al€ah€am\000<e20007¤aa€al€ah€am\000{²ig:4726:36¤aa€al€ah€am&Hd3608¤aa€al€ah€am®úe25189¤aa€al€am\000¤ ah€e15189¤aa€al€amê`ah€d6608¤aa€al€amL¸ah€e15546¤aa€al€amLah€d1608¤aa€al€ah€am\000pjg:15309:15¤aa€al€ah€am@e21858¤aa€al€ah€am\000=ûe25744¤aa€al€ah€am’kg:24660:108¤aa€al€ah€am\000DNd4339¤aa€al€ah€am0pkg:24884:108¤aa€al€ah€am\000ÔYe15498¤aa€al€ah€am‡e31670¤aa€al€ah€amÑe24825¤aa€al€ah€am\000Ğig:7469:44¤aa€al€ah€am\000Ó7e23758¤aa€al€ah€am\000SHig:9485:30¤aa€al€ah€am\000B?d6328¤aa€al€ah€amˆd3328¤aa€al€ah€am\000\r?e27662¤aa€al€ah€am¼ig:7422:32¤aa€al€ah€am2Èd3654¤aa€al€ah€amN jg:15225:33¤aa€al€ah€amu0jg:24702:84¤aa€al€am\000¿ ah€d7554¤aa€al€ah€am(‡d6554¤aa€al€am¸ah€e25006¤aa€al€ah€am\000Iğe10055¤aa€al€am\000èHah€jg:14758:31¤aa€al€amN ah€e22835¤aa€al€ah€amKce32670¤aa€al€ah€am\000Ëàjg:24813:81¤aa€al€am\000Ì_ah€d9428¤aa€al€ah€am\000—€d7428¤aa€al€ah€am„d6428¤aa€al€amu.ah€e27498¤aa€al€ah€am\000©Çe24987¤aa€al€ah€am\000¡ jg:15130:34¤aa€al€ah€amu0jg:11979:61¤aa€al€ah€am\000æ0e24905¤aa€al€ah€am\000\r?jg:10174:52¤aa€al€ah€am\000³¬d4454¤aa€al€ah€am\000B>jg:10107:54¤aa€al€ah€am\000\000şd6454¤aa€al€ah€am\000Ğd7454¤aa€al€ah€am\000pãjg:16716:58¤aa€al€ah€amÃPe22825¤aa€al€ah€am17jg:24610:90¤aa€al€ah€am\000p5e15264¤aa€al€am\000éªah€e10175¤aa€al€ah€am\000¤e28596¤aa€al€ah€am\000XÖe14272¤aa€al€ah€am:˜e24272¤aa€al€ah€am\000•°ig:6468:23¤aa€al€ah€amà›e24973¤aa€al€ah€am\000s‚d2454¤aa€al€ah€amd4239¤aa€al€ah€am\000{šbig:7462:37¤aa€al€ah€am'jg:15188:57¤aa€al€am\000ªLah€jg:14212:35¤aa€al€amL,ah€e24835¤aa€al€ah€am\000W*e33825¤aa€al€ah€am™èe18662¤aa€al€ah€am’d7228¤aa€al€ah€am\000‰T@e15272¤aa€al€ah€am\000~@jg:25244:93¤aa€al€am\000Iğah€d8244¤aa€al€am\000ah€jg:25258:93¤aa€al€ah€am\000Ğe14195¤aa€al€ah€am'd4344¤aa€al€ah€am&«kg:25210:117¤aa€al€ah€am\000¡ e24195¤aa€al€ah€am\000SÁfjg:24836:90¤aa€al€ah€amœ@kg:25220:105¤aa€al€ah€am\000&% ig:5245:34¤aa€al€amu0ah€e14759¤aa€al€ah€amÛ®e24759¤aa€al€ah€am\0008€d8028¤aa€al€am\000q\000ah€jg:13022:55¤aa€al€ah€am\0003d6344¤aa€al€am:ùah€d4044¤aa€al€ah€am/¨d6039¤aa€al€ah€amœQjg:13054:40¤aa€al€ah€am\000ãjg:24837:90¤aa€al€ah€amÃPkg:31321:100¤aa€al€ah€am\000LA|jg:15426:58¤aa€al€amN ah€c934¤aa€al€ah€am\000¸jg:10716:41¤aa€al€ah€am\000\r»d3039¤aa€al€ah€amZjd2039¤aa€al€ah€am\000\n,*e11737¤aa€al€ah€am&ªe21737¤aa€al€ah€am\000 Îne20758¤aa€al€ah€amNçjg:25184:81¤aa€al€ah€am\000Ä°d6044¤aa€al€am\000¡Ìah€e29727¤aa€al€ah€am\000#e12006¤aa€al€ah€am\000+µe16039¤aa€al€ah€am\000SHjg:15530:31¤aa€al€ah€am<.e24658¤aa€al€am\000]xah€jg:16683:57¤aa€al€ah€am\000B?d9144¤aa€al€ah€am«kg:25293:114¤aa€al€ah€am\0002€e18711¤aa€al€ah€am\000Ö jg:16736:58¤aa€al€ah€am\000Oïe28498¤aa€al€ah€am\000{e22532¤aa€al€ah€am\000$¨Äe25039¤aa€al€ah€am\000W0e10081¤aa€al€ah€amœ@e25195¤aa€al€ah€am\000† e24793¤aa€al€ah€am\000Pig:9904:41¤aa€al€ah€am\000·¯kg:23503:105¤aa€al€ah€am\000Ğe24670¤aa€al€ah€am\000\\kg:32571:141¤aa€al€ah€am <¬jg:15091:54¤aa€al€am\000_ah€e27658¤aa€al€ah€amºjg:10572:39¤aa€al€ah€am\000B@e10560¤aa€al€ah€amæxjg:24816:84¤aa€al€ah€am\000˜ìe13759¤aa€al€ah€am&¬jg:10219:60¤aa€al€ah€am\000† jg:24741:99¤aa€al€ah€am\000Øe13461¤aa€al€ah€ame19711¤aa€al€ah€amÃ0jg:24970:99¤aa€al€ah€amÃPe15532¤aa€al€am_ah€jg:24596:84¤aa€al€ah€am\000T\ne32905¤aa€al€ah€am	jg:24857:99¤aa€al€ah€am\000…øig:8317:54¤aa€al€amÃPah€jg:24967:99¤aa€al€ah€am\000_e24868¤aa€al€ah€am\000¥e23623¤aa€al€am\000\n ah€e31890¤aa€al€am}x@ah€c864¤aa€al€ah€am`Üe31941¤aa€al€ah€am\000\\¨e10601¤aa€al€am'ah€e10513¤aa€al€ah€am„e21941¤aa€al€ah€am\000+e20513¤aa€al€ah€am\000ñe31320¤aa€al€ah€am\000Œae20532¤aa€al€ah€amÃPe25155¤aa€al€am\000zah€e15155¤aa€al€ah€amu0jg:24599:87¤aa€al€am\000pah€ig:3310:18¤aa€al€ah€amDwjg:14218:37¤aa€al€amL,ah€e23868¤aa€al€amÁÀah€c774¤aa€al€ah€amGkg:23524:114¤aa€al€ah€am\000£€e19704¤aa€al€ah€amEig:5181:33¤aa€al€ah€am$kg:24781:114¤aa€al€ah€am\000’ig:9866:38¤aa€al€ah€amê[e29579¤aa€al€ah€am'ig:7111:37¤aa€al€am4¼ah€e20963¤aa€al€ah€améôkg:25322:117¤aa€al€ah€am\000Rÿd2034¤aa€al€am®qah€e15611¤aa€al€amN ah€e16006¤aa€al€ah€am\000~@jg:14765:38¤aa€al€amtÌah€e18658¤aa€al€ah€am\000vjg:15375:43¤aa€al€am\000$ah€c944¤aa€al€ah€am\000q¯e18704¤aa€al€ah€am\000jÏ¿kg:25234:105¤aa€al€ah€am\000[¼e32601¤aa€al€ah€am\000n¨d2928¤aa€al€ah€am\000ùíd9847¤aa€al€ah€am'd8928¤aa€al€ah€am\000¼yd9928¤aa€al€am\000Ñxah€e31905¤aa€al€ah€am\000Şxd3928¤aa€al€ah€am\\e14667¤aa€al€amu0ah€e24611¤aa€al€ah€am\000=c954¤aa€al€ah€am\nŒe37704¤aa€al€ah€amxd9947¤aa€al€ah€am\000Çe12550¤aa€al€ah€am\000³ğc754¤aa€al€ah€am\000Ğe23783¤aa€al€ah€am.jg:17007:51¤aa€al€ah€am\000Ğjg:14235:37¤aa€al€am'ah€jg:28536:96¤aa€al€ah€am\000§Çe23055¤aa€al€ah€am¼e13081¤aa€al€ah€am\000¶Àkg:25002:111¤aa€al€ah€am\000Le13055¤aa€al€ah€am\000~ˆjg:14569:22¤aa€al€ah€am!4e25890¤aa€al€ah€am\000€jg:30420:29¤aa€al€ah€am#(jg:14109:16¤aa€al€ah€ampd2728¤aa€al€ah€amCig:4242:15¤aa€al€amäah€e23503¤aa€al€ah€am\000Ğkg:25003:111¤aa€al€ah€am\000­¯d7728¤aa€al€ah€am\0006Œig:6416:38¤aa€al€ah€am&¬jg:14122:18¤aa€al€ah€amSPd1728¤aa€al€ah€am\000LK@e14513¤aa€al€ah€am\000\nü€e34055¤aa€al€ah€am\0006ae24055¤aa€al€ah€am\000çßig:9792:25¤aa€al€ah€amäpjg:14276:47¤aa€al€ah€am>€kg:25018:117¤aa€al€ah€am\000.d9839¤aa€al€ah€am\000\nd8839¤aa€al€ah€am\njg:15999:54¤aa€al€ah€am\000)Ïe10188¤aa€al€ah€am\000Iğd4828¤aa€al€ah€amiëd3828¤aa€al€ah€amãd9828¤aa€al€ah€amØÌe11175¤aa€al€ah€amÖpe15596¤aa€al€ah€am\000† jg:24845:93¤aa€al€ah€am\000¹Ìe13513¤aa€al€ah€am\000}Te23513¤aa€al€ah€am\000+ïjg:25102:87¤aa€al€am\000W0ah€e40043¤aa€al€ah€am\000ge11611¤aa€al€ah€am\000pe15156¤aa€al€ah€amM¼d7539¤aa€al€ah€amu0jg:15336:27¤aa€al€ah€amcœe23835¤aa€al€ah€am\000²3²jg:15374:44¤aa€al€ah€amnÄe23320¤aa€al€ah€am\000„d7528¤aa€al€ah€am\000~‰jg:16735:57¤aa€al€ah€am\000Œe24596¤aa€al€ah€am\000T\nkg:25037:102¤aa€al€ah€am\000‚pe24727¤aa€al€ah€amê`e15503¤aa€al€ah€am'e16737¤aa€al€ah€am\000(fjg:12022:41¤aa€al€ah€amN e12055¤aa€al€amF³ah€e22055¤aa€al€ah€am\0006”e14727¤aa€al€ah€amN e15415¤aa€al€ah€am e20498¤aa€al€ah€amÌ€e10498¤aa€al€ah€am/¼e25868¤aa€al€ah€am\000Š¦e31272¤aa€al€ah€am\000ÂHjg:24633:99¤aa€al€ah€am\000I‰kg:25294:117¤aa€al€ah€am\000	%Ìig:3490:25¤aa€al€am\000	ah€d7992¤aa€al€ah€am5†jg:15332:27¤aa€al€amáah€e17056¤aa€al€ah€amªkg:24868:102¤aa€al€ah€am\000¥e30477¤aa€al€ah€amÚ¾d6663¤aa€al€ah€am°jg:14907:48¤aa€al€ah€am\0007e28399¤aa€al€ah€amãig:3196:18¤aa€al€ah€amde20966¤aa€al€ah€amŞ„e15603¤aa€al€amu0ah€e15351¤aa€al€amw¶ah€e28056¤aa€al€ah€amde14574¤aa€al€ah€am¦•d6892¤aa€al€ah€am\000'ig:9846:35¤aa€al€ah€amœ@jg:10236:59¤aa€al€am\0008€ah€ig:8197:47¤aa€al€ah€amfiig:3210:30¤aa€al€ah€am/¨kg:24638:102¤aa€al€ah€am\000\r@d7922¤aa€al€amu/ah€jg:15383:48¤aa€al€amœ@ah€e24883¤aa€al€ah€am\0008€ig:3067:26¤aa€al€am:˜ah€d9922¤aa€al€ah€amN kg:24883:108¤aa€al€ah€am\0008€jg:24712:87¤aa€al€ah€am\000W/d2163¤aa€al€ah€am\000È0ig:7441:38¤aa€al€ah€amN d1992¤aa€al€ah€am\000Ğ,d4063¤aa€al€ah€amœ@jg:31134:85¤aa€al€ah€am\000Ş1e37603¤aa€al€am\000\rˆah€e24612¤aa€al€ah€am\000ôe25081¤aa€al€ah€am\000tkg:32396:130¤aa€al€ah€am1ğjg:10202:48¤aa€al€ah€amN jg:24707:84¤aa€al€am\000	Å¨ah€kg:24804:120¤aa€al€ah€am\000Âd3037¤aa€al€ah€amôd7363¤aa€al€ah€am\000Ïe15263¤aa€al€amÎ6ah€d4363¤aa€al€ah€amîèd6037¤aa€al€ah€am—e38844¤aa€al€am\000I³ah€d9892¤aa€al€ah€am'e18631¤aa€al€ah€am\0004e10320¤aa€al€ah€amM¸ig:9796:27¤aa€al€ah€am,jg:16684:59¤aa€al€ah€am\000È+kg:24777:111¤aa€al€ah€am\000pkg:29503:105¤aa€al€ah€am\000·\000e15489¤aa€al€am9¤ah€d6263¤aa€al€ah€amMVd6537¤aa€al€ah€amXd7537¤aa€al€ah€am\000äBd4537¤aa€al€ah€amkg:24912:120¤aa€al€ah€am\000 GÄe15188¤aa€al€am\000ªLah€jg:10124:57¤aa€al€ah€am\000pig:9900:40¤aa€al€ah€am:˜kg:31225:103¤aa€al€ah€am\000Èàd1263¤aa€al€ah€am\000\r6Ğkg:24768:108¤aa€al€am\000ÔÀah€e28533¤aa€al€ah€am\000\r@jg:13115:45¤aa€al€ah€am\000„«jg:24844:93¤aa€al€ah€amÃOe22611¤aa€al€ah€am\000škg:25689:114¤aa€al€ah€am\000z¼e29725¤aa€al€am\0007±ah€e11612¤aa€al€ah€am\000„¬ig:4309:14¤aa€al€ah€amjg:11981:20¤aa€al€ah€am\000¨Oe24890¤aa€al€am\000‘Hah€jg:15501:17¤aa€al€ah€am@jg:15582:40¤aa€al€ah€am\0002Àjg:15575:36¤aa€al€ah€amu0ig:9855:35¤aa€al€ah€amŸƒd2592¤aa€al€ah€am]d4592¤aa€al€ah€amcig:7331:34¤aa€al€amM¼ah€d6592¤aa€al€ah€am¸jg:13058:44¤aa€al€ah€am\0004òig:6407:33¤aa€al€améúah€e13489¤aa€al€am\000i\000Lah€c804¤aa€al€amUğah€d9792¤aa€al€ah€amäpig:8176:41¤aa€al€ah€amIpe24723¤aa€al€ah€am\000q\000d2622¤aa€al€am\000¥!ah€ig:1793:20¤aa€al€ah€amĞd6622¤aa€al€am\000øPah€e28291¤aa€al€ah€am\000[d4337¤aa€al€ah€ame13890¤aa€al€amĞah€jg:14559:18¤aa€al€ah€am&¬jg:25117:90¤aa€al€ah€am\000q\000jg:14797:51¤aa€al€ah€amvhe35562¤aa€al€ah€am%ãd2692¤aa€al€ah€am ´ig:7415:29¤aa€al€ah€amôe22574¤aa€al€ah€am\\e32574¤aa€al€ah€am\000xdPc814¤aa€al€ah€am‡e22600¤aa€al€ah€am\000Íjg:10103:54¤aa€al€ah€amN d1722¤aa€al€am\000Šıah€kg:21861:114¤aa€al€ah€am\000áùe15562¤aa€al€ah€amu0d7437¤aa€al€amN ah€jg:23491:93¤aa€al€am”pah€e32600¤aa€al€ah€am\000Iğig:6378:17¤aa€al€am'ah€jg:10207:49¤aa€al€ah€am\000ìhjg:24603:87¤aa€al€am\000\r@ah€jg:14117:16¤aa€al€ah€am/d4792¤aa€al€ah€am\000)We10586¤aa€al€ah€am\000Šˆe24709¤aa€al€ah€am\000?°e10195¤aa€al€amÈ\000ah€d3282¤aa€al€ah€am%jg:14103:55¤aa€al€ah€amu/jg:15138:60¤aa€al€am\000&÷àah€jg:14123:17¤aa€al€ah€amO\\e24169¤aa€al€am\000[^ah€e23631¤aa€al€am\000æ¸®ah€jg:10390:63¤aa€al€ah€am\0009Mjg:12247:32¤aa€al€ah€amÃPkg:24877:105¤aa€al€ah€am\000+jg:14217:36¤aa€al€ah€am¶+ig:3937:46¤aa€al€am\000Œah€hg:2494:8¤aa€al€am\000•jah€jg:31228:91¤aa€al€ah€am\000Üd8122¤aa€al€ah€amÃOd4382¤aa€al€ah€am;e18600¤aa€al€ah€amÀ.d5963¤aa€al€am\0008€ah€e10056¤aa€al€ah€am&¬kg:24251:112¤aa€al€am\000Çı,ah€jg:25073:84¤aa€al€am\000!ah€jg:24929:84¤aa€al€ah€am\000óØig:8006:39¤aa€al€am\000Ô¿ah€ig:2278:31¤aa€al€am\000ûah€d7082¤aa€al€ah€amkg:25682:112¤aa€al€ah€am\000›Dkg:24776:111¤aa€al€ah€am\000	d4082¤aa€al€amN ah€d9863¤aa€al€ah€amBhe31240¤aa€al€ah€am\000İĞe10562¤aa€al€ah€am.ßd2863¤aa€al€ah€amle13893¤aa€al€ah€am'jg:25091:96¤aa€al€ah€am\000ûĞe25259¤aa€al€am\000âüah€d9382¤aa€al€ah€am'kg:25095:108¤aa€al€am\000Í¶ah€e20844¤aa€al€ah€amÊe31195¤aa€al€am\000ã`ah€e12240¤aa€al€am\000D8ah€e15259¤aa€al€ah€amXjg:13144:53¤aa€al€ah€am\0000fd4322¤aa€al€am\000†Ÿah€ig:9860:34¤aa€al€ah€amNjg:15142:35¤aa€al€am°õah€e31562¤aa€al€ah€am\000AÜjg:15084:53¤aa€al€ah€am¥Ÿe15169¤aa€al€ah€am›xjg:14234:42¤aa€al€ah€am\000ˆDe25169¤aa€al€ah€am\000îÈig:24143:1¤aa€al€ah€am\0000$6jg:31153:94¤aa€al€ah€am\000OX€e20868¤aa€al€ah€amš¯e24477¤aa€al€ah€ambe25844¤aa€al€ah€am\000E<e24586¤aa€al€ah€am\000Ëíig:6404:35¤aa€al€ah€amN e25670¤aa€al€am\000†ah€e15600¤aa€al€am_áah€e10169¤aa€al€ah€am\0006jg:24709:87¤aa€al€ah€am\000?°jg:10241:53¤aa€al€am\000_ah€e13477¤aa€al€ah€am#'e22460¤aa€al€ah€am\000˜jg:24586:81¤aa€al€ah€am\000Ëíd6563¤aa€al€am-Oah€jg:15623:50¤aa€al€ah€am\000öDkg:24986:105¤aa€al€ah€amê`d9854¤aa€al€ah€am'e15240¤aa€al€am\000ï_ah€jg:14410:38¤aa€al€amu0ah€e32399¤aa€al€ah€am\000jœzig:1678:37¤aa€al€ah€am\000\nªxd7463¤aa€al€ah€am'e23491¤aa€al€am”pah€jg:15694:54¤aa€al€am\000;ãah€ig:9892:40¤aa€al€ah€am'kg:31222:100¤aa€al€ah€am\000°jg:25325:84¤aa€al€am\000vdah€jg:24834:90¤aa€al€ah€am\000“àd7754¤aa€al€ah€am\000Ø‰e28460¤aa€al€ah€am\000Lte24844¤aa€al€ah€amÃOig:2971:14¤aa€al€ah€amTe19263¤aa€al€ah€am\000†‘jg:12546:54¤aa€al€ah€am\000B?d5763¤aa€al€ah€am9ƒd9763¤aa€al€ah€am3ôig:7930:46¤aa€al€ah€amthig:9905:48¤aa€al€ah€am\000‚Äkg:25080:105¤aa€al€ah€am\000\n*Ğig:8201:44¤aa€al€ah€amu0jg:25130:87¤aa€al€ah€am\000† e24776¤aa€al€ah€am\000	d6349¤aa€al€ah€amĞd4349¤aa€al€ah€am\"Äjg:14571:21¤aa€al€ah€amAjg:24924:81¤aa€al€ah€am\000*d2901¤aa€al€ah€am&©d8349¤aa€al€am\000æ/ah€ig:7463:38¤aa€al€ah€am'jg:12997:24¤aa€al€ah€am\000«¼d7444¤aa€al€am.àah€e22572¤aa€al€ah€am.Ëig:2299:33¤aa€al€am\000zVah€ig:8226:31¤aa€al€ah€am\000æCig:9783:20¤aa€al€ah€am|e14398¤aa€al€amÃPah€e24925¤aa€al€ah€amÃPd2744¤aa€al€ah€amÕd7449¤aa€al€ah€am™èhg:2576:7¤aa€al€ah€am|âe12203¤aa€al€ah€amae22203¤aa€al€ah€am\000|W?e32203¤aa€al€ah€am\000æsjg:13871:56¤aa€al€ah€amm`kg:25005:111¤aa€al€amê`ah€d3174¤aa€al€ah€amd9801¤aa€al€am%ah€kg:25017:117¤aa€al€ah€am\000=aig:2572:10¤aa€al€ah€am”e31887¤aa€al€ah€am\000\nsÇig:4307:10¤aa€al€ah€amÈe21887¤aa€al€ah€am1d4701¤aa€al€amah€d2701¤aa€al€am\000¡ ah€d9858¤aa€al€ah€am%e23203¤aa€al€ah€am\000+ãe24897¤aa€al€ah€am\000â\000e20075¤aa€al€ah€am\000@^e10075¤aa€al€ah€amœ@d3858¤aa€al€ah€amW”jg:24841:93¤aa€al€ah€amá¸e24873¤aa€al€ah€am\000	ì¿e12693¤aa€al€ah€ama¤kg:25320:111¤aa€al€am\0004Pah€d4249¤aa€al€ah€am9Ğkg:31201:103¤aa€al€ah€am\000W/d9901¤aa€al€ah€am'jg:13037:32¤aa€al€ah€am\000\r?jg:15308:17¤aa€al€am%ah€e24887¤aa€al€ah€amê`ig:4054:35¤aa€al€am&¬ah€e24994¤aa€al€ah€am\000~@d8249¤aa€al€ah€am\000%*kg:24657:108¤aa€al€ah€am\000/Òe19230¤aa€al€amkÍah€e14364¤aa€al€ah€am”d5958¤aa€al€ah€am'e13897¤aa€al€ah€am\000¨€d8544¤aa€al€ah€amjg:15333:22¤aa€al€ah€am:—e15572¤aa€al€ah€am'd2958¤aa€al€amXah€d7422¤aa€al€ah€am2Èd6422¤aa€al€am\000˜ah€d4422¤aa€al€ah€am8@ig:7757:37¤aa€al€ah€amä„e31203¤aa€al€ah€am\000!èd7076¤aa€al€ah€am*/e11203¤aa€al€ah€am*øe31284¤aa€al€ah€am\000…Ñd3076¤aa€al€am\0008ah€d4076¤aa€al€am`|ah€d6522¤aa€al€ah€am”e22832¤aa€al€ah€amid1522¤aa€al€ah€amL,d4074¤aa€al€am%ah€jg:15539:30¤aa€al€ah€amH-jg:14909:45¤aa€al€ah€am\000pËe16049¤aa€al€ah€am\000à—jg:13070:58¤aa€al€ah€am\000„¬e24702¤aa€al€am\000¿ ah€d4601¤aa€al€am,ah€ig:9865:34¤aa€al€amN ah€d2601¤aa€al€ah€am¸d6049¤aa€al€ah€amA e31837¤aa€al€ah€am¬§jg:15513:25¤aa€al€amN ah€jg:25045:84¤aa€al€ah€am\0003Sjg:15186:55¤aa€al€am\0004Pah€jg:10108:53¤aa€al€ah€am\000jg:15974:26¤aa€al€ah€amLjg:15115:22¤aa€al€amuah€ig:7391:40¤aa€al€ah€am\000 e27693¤aa€al€ah€am\000Te37702¤aa€al€am[ah€ig:2868:25¤aa€al€ah€amOkg:25084:117¤aa€al€am\000\n¬£ah€ig:9927:42¤aa€al€ah€am¸e24641¤aa€al€ah€am\0004Pd2276¤aa€al€ah€am\0005\000e38873¤aa€al€am\000 Èah€ig:7543:47¤aa€al€ah€am\000\000=e34832¤aa€al€ah€amûe24832¤aa€al€ah€amØÌd8274¤aa€al€ah€amÃPd1274¤aa€al€am›ah€gg:121:1¤aa€al€ah€am'e16702¤aa€al€ah€am\000zèe21929¤aa€al€ah€amŒ›jg:24973:99¤aa€al€ah€am\000s‚e38909¤aa€al€amèhah€d8176¤aa€al€ah€amIpe15641¤aa€al€ah€am\000g¾jg:15498:20¤aa€al€ah€am‡e18364¤aa€al€ah€amrÖjg:14664:54¤aa€al€ah€am\000pe16723¤aa€al€am\000¼2ah€jg:13056:56¤aa€al€ah€am\000\"Şe22612¤aa€al€ah€am\000sßjg:12528:52¤aa€al€ah€am\0004e30483¤aa€al€ah€am\000\rod9937¤aa€al€ah€amÃPe24958¤aa€al€ah€am\000Iğe14567¤aa€al€amÈah€jg:10385:62¤aa€al€am\000\r%Pah€e25284¤aa€al€ah€am\000d3937¤aa€al€am\000Œah€e22641¤aa€al€ah€am0Óe42641¤aa€al€am<ƒah€e24615¤aa€al€ah€am\0008€e17723¤aa€al€ah€am\000ÔÀig:6422:39¤aa€al€am\000˜ah€e31570¤aa€al€ah€am\000]pig:2990:21¤aa€al€am$·ah€jg:15358:35¤aa€al€ah€amçÛjg:25176:99¤aa€al€ah€am\000‚e14951¤aa€al€ah€am\000ã<e24951¤aa€al€ah€am\000exe28496¤aa€al€ah€am\000ÔÀe32947¤aa€al€ah€am\000ne25056¤aa€al€ah€am\000;Ce31199¤aa€al€ah€am\000õ`e24621¤aa€al€am\000† ah€d3737¤aa€al€ah€am'd4737¤aa€al€ah€am\000[¶ig:3341:32¤aa€al€ah€amœ@jg:10061:51¤aa€al€ah€amPig:4793:24¤aa€al€ah€amÊe13496¤aa€al€ah€am\000­Jjg:24621:96¤aa€al€am\000† ah€ig:7475:41¤aa€al€am¯Èah€ig:1485:25¤aa€al€ah€am\000~?e14929¤aa€al€ah€am\000†<e24929¤aa€al€ah€am\000óØig:2567:23¤aa€al€ah€am\000å„e10413¤aa€al€ah€am\000\r@e13947¤aa€al€ah€am\000xĞjg:20955:33¤aa€al€ah€amu-e20832¤aa€al€ah€am\000G×ig:4059:37¤aa€al€ah€am5 jg:14578:29¤aa€al€am:˜ah€e10199¤aa€al€amÃPah€d4837¤aa€al€ah€am\000îŒe32398¤aa€al€ah€am\000ÅÁ\000e22603¤aa€al€ah€am\000ªYkg:24656:108¤aa€al€ah€am\000Fe24968¤aa€al€am\000ÔÀah€e12702¤aa€al€ah€am\000Eááig:2815:45¤aa€al€ah€am\000€e24143¤aa€al€ah€am\0000$6e14143¤aa€al€am\000kah€e31333¤aa€al€ah€am\000<Ø+ig:2579:14¤aa€al€amu/ah€e31230¤aa€al€am\000W0ah€ig:1169:46¤aa€al€ah€am\000~ğe24947¤aa€al€ah€am\000W/kg:31220:109¤aa€al€ah€am\000*¹€ig:4575:19¤aa€al€ah€am\000­°ig:9826:34¤aa€al€ah€am]Àd2749¤aa€al€ah€am¤e25228¤aa€al€ah€am\000Iíe15228¤aa€al€ah€am\000Iğe11603¤aa€al€ah€amê_jg:25200:87¤aa€al€ah€am\000‚pe32413¤aa€al€ah€am'd9749¤aa€al€ah€amÛe16717¤aa€al€am\000n¬ah€ig:6587:24¤aa€al€am\000\r}ah€jg:14438:48¤aa€al€ah€am†Äe15947¤aa€al€ah€am'e34850¤aa€al€am\000™ah€e24850¤aa€al€ah€am\000G•jg:14563:17¤aa€al€ah€am†jg:24943:90¤aa€al€ah€am\000¿ d8258¤aa€al€ah€ama¨hg:790:23¤aa€al€ah€amXig:7148:33¤aa€al€ah€am\000DAe10333¤aa€al€ah€amm_ig:3645:17¤aa€al€ampãah€jg:10578:38¤aa€al€ah€am\000	áed3849¤aa€al€am@tah€e24603¤aa€al€am\000\r@ah€e14603¤aa€al€ah€am¢€jg:18238:40¤aa€al€ah€am\000	”+d3358¤aa€al€ah€amLd4358¤aa€al€ah€amTd6358¤aa€al€ah€amüjg:14848:50¤aa€al€amu0ah€jg:12998:25¤aa€al€ah€am\0000e10143¤aa€al€ah€am\0009Fjg:21792:61¤aa€al€ah€am\000\"Ød2549¤aa€al€ah€am\0005\000d6549¤aa€al€ah€amqe15925¤aa€al€ah€am&He24717¤aa€al€ah€am\000Åig:9969:43¤aa€al€amu0ah€e31335¤aa€al€ah€am\000J›d2458¤aa€al€ah€amÃe16046¤aa€al€ah€am\000*°d7458¤aa€al€ah€amu0e25315¤aa€al€ah€am\000†8jg:12999:25¤aa€al€ah€amu/e40088¤aa€al€ah€am\000¼jg:15243:36¤aa€al€ah€am'jg:14370:19¤aa€al€ah€am\000e10572¤aa€al€ah€am\000B@jg:15570:36¤aa€al€am¯Èah€e10088¤aa€al€amu0ah€e12228¤aa€al€ah€amˆe30457¤aa€al€ah€amxjg:24861:99¤aa€al€amœ@ah€d8194¤aa€al€am\000¤êah€e15230¤aa€al€ah€am'jg:25202:93¤aa€al€ah€am\000¿ jg:13079:30¤aa€al€ah€am\000Le25230¤aa€al€ah€am\000àd2194¤aa€al€ah€am\000	Xd7558¤aa€al€ah€am:˜jg:14114:16¤aa€al€ah€amd3667¤aa€al€ah€amZe25102¤aa€al€am\000W0ah€e10230¤aa€al€ah€am\000	'Àd7114¤aa€al€ah€am\000Güe11188¤aa€al€ah€am4e41457¤aa€al€ah€amÃKe36905¤aa€al€ah€am3¾e29532¤aa€al€ah€amrØd7912¤aa€al€ah€amfe19183¤aa€al€ah€am(d9912¤aa€al€amœ@ah€d9253¤aa€al€ah€am¿e24737¤aa€al€ah€am\000,œe24823¤aa€al€ah€am\0000 d4253¤aa€al€ah€am\000\r:kg:31276:106¤aa€al€ah€am\000I­e25301¤aa€al€ah€am\000ÔÀd9767¤aa€al€am$ah€ig:7938:45¤aa€al€ah€am\000„e28102¤aa€al€ah€am\"Äe14188¤aa€al€am&ìah€e15363¤aa€al€ah€am\000€Zig:9872:37¤aa€al€ah€am'd2912¤aa€al€ah€am\000ze24666¤aa€al€ah€am\000Újg:14365:15¤aa€al€ah€am‡ig:8199:47¤aa€al€ah€am\000Iïd4553¤aa€al€ah€am#\\jg:13003:56¤aa€al€ah€am\000OYd6553¤aa€al€ah€am*ød7553¤aa€al€am\000zah€ig:8184:29¤aa€al€amN ah€e15737¤aa€al€ah€amtig:9767:23¤aa€al€am$ah€ig:6432:41¤aa€al€ah€amM¼e24050¤aa€al€ah€am\000.{jg:24923:81¤aa€al€ah€am\000Æd5467¤aa€al€ah€amÏe29531¤aa€al€am\000…zah€e36924¤aa€al€am«{ah€e11980¤aa€al€ah€am\000â\000ig:8267:54¤aa€al€ah€am}Èe27532¤aa€al€ah€am\000† jg:25162:99¤aa€al€ah€am\000İĞkg:25043:120¤aa€al€ah€am\000d4414¤aa€al€amTah€d3414¤aa€al€ah€am éúkg:24762:105¤aa€al€ah€améùe32737¤aa€al€ah€am\000@'d7053¤aa€al€ah€am‚jg:21767:52¤aa€al€ah€amèld3053¤aa€al€amah€d6053¤aa€al€ah€am\000od6567¤aa€al€ah€am7òd4567¤aa€al€ah€am¸jg:15518:30¤aa€al€amYØah€kg:25686:112¤aa€al€ah€am\000æÛe24980¤aa€al€ah€am\000ÔÀkg:21866:112¤aa€al€ah€am\000ze18944¤aa€al€ah€am4e22553¤aa€al€ah€am\000!T}e38944¤aa€al€am\000bah€kg:31304:115¤aa€al€ah€am\000d·d4314¤aa€al€ah€am8Àe25171¤aa€al€am\000W0ah€d9812¤aa€al€ah€am?†jg:24635:99¤aa€al€ah€am\000std7353¤aa€al€ah€am7wkg:25121:102¤aa€al€ah€am\000ÔÀd2567¤aa€al€ah€am\000å„e16050¤aa€al€ah€am\000•„e33823¤aa€al€ah€amËd4353¤aa€al€ah€am\000D7jg:25064:99¤aa€al€ah€am\000‚pe24924¤aa€al€ah€am\000*jg:14203:35¤aa€al€am:˜ah€ig:7355:31¤aa€al€am¿(ah€ig:7520:47¤aa€al€ah€am\000B@ig:9435:36¤aa€al€ah€am\000ö€e20263¤aa€al€am\000¯ah€e10263¤aa€al€ah€am\000jg:31168:82¤aa€al€ah€am\000©kg:24687:120¤aa€al€ah€am\000“ßig:6616:32¤aa€al€ah€amp€e15386¤aa€al€ah€am\000U”e15512¤aa€al€ah€am0pe33924¤aa€al€ah€am\000Ğjg:15599:44¤aa€al€ah€am‹®e32833¤aa€al€ah€amGe22833¤aa€al€ah€amÃNe12833¤aa€al€ah€am\0005Ød9292¤aa€al€ah€am\000#òd8292¤aa€al€am…Mah€e28279¤aa€al€ah€am\000B›d6292¤aa€al€ah€amˆd4292¤aa€al€ah€am*,d3292¤aa€al€ah€amÃOjg:14407:39¤aa€al€ah€am\000«úe10512¤aa€al€ah€am0d9867¤aa€al€ah€am'jg:24740:96¤aa€al€ah€am\000,öd3867¤aa€al€ah€am)ïd3612¤aa€al€ah€am² d6712¤aa€al€ah€am'jg:15573:38¤aa€al€am'ah€kg:23519:115¤aa€al€ah€am\000/ˆe14262¤aa€al€am\000pah€e15531¤aa€al€amRah€d3814¤aa€al€ah€am)kg:25279:114¤aa€al€am\000Ö ah€e14654¤aa€al€ah€amÃPe24654¤aa€al€am\000V8ah€jg:14398:33¤aa€al€amÃPah€d7967¤aa€al€ah€am\000İÏe13512¤aa€al€ah€am\000vd1712¤aa€al€ah€am:—d3712¤aa€al€ah€amÖe25091¤aa€al€ah€am\000ûĞe15091¤aa€al€am\000_ah€e19272¤aa€al€ah€am\000Gùjg:15387:50¤aa€al€amN ah€e24833¤aa€al€ah€am\000³d6714¤aa€al€ah€amÅd4714¤aa€al€amNah€d1714¤aa€al€ah€am\000“àe21947¤aa€al€ah€am\000ˆÊjg:15325:60¤aa€al€ah€am\0008€jg:15018:20¤aa€al€ah€am#(kg:31219:109¤aa€al€am\000Cah€ig:3778:31¤aa€al€amˆ³ah€ig:2034:25¤aa€al€am®qah€ig:6367:30¤aa€al€ah€am\000¥œe11973¤aa€al€ah€amu.ig:1993:36¤aa€al€ah€am:—e15560¤aa€al€ah€am‹ád3192¤aa€al€ah€amÜd7112¤aa€al€am\000LBah€jg:14409:33¤aa€al€amdah€jg:15367:39¤aa€al€ah€amßbjg:25287:96¤aa€al€ah€am\000­°e16654¤aa€al€amòah€ig:3287:12¤aa€al€ah€am:˜ig:9747:14¤aa€al€ah€amLe25042¤aa€al€ah€am\000ù4jg:11991:59¤aa€al€ah€am\000† ig:4818:24¤aa€al€am\000\"Şah€d3914¤aa€al€amtdah€e15279¤aa€al€ah€amœ@e29553¤aa€al€amah€e12046¤aa€al€ah€am\000Šêe25279¤aa€al€am\000Ö ah€ig:4727:38¤aa€al€ah€am9d9853¤aa€al€ah€amN jg:24619:93¤aa€al€ah€am\000Ì¨d3853¤aa€al€ah€am\000dod7392¤aa€al€ah€amjg:14841:44¤aa€al€ah€am\000¶„d4392¤aa€al€ah€am\000sd4312¤aa€al€amŸah€e15389¤aa€al€ah€amu0hg:2390:5¤aa€al€ah€am\000¡ jg:25371:66¤aa€al€ah€amN e18654¤aa€al€ah€am\000zèjg:14120:20¤aa€al€ah€amnÒjg:24953:93¤aa€al€ah€amÂìjg:11995:28¤aa€al€ah€am6¯e14560¤aa€al€ah€am/ge25654¤aa€al€am\000¸ah€d3012¤aa€al€ah€am:d2092¤aa€al€ah€amÃPjg:31180:97¤aa€al€ah€am\000øe14570¤aa€al€ah€amê`jg:24600:87¤aa€al€ah€amÃOe15944¤aa€al€am\r¬ah€kg:21865:100¤aa€al€ah€am\000-Æ¿e25183¤aa€al€ah€am\000\r@d3653¤aa€al€ah€am|jg:15918:38¤aa€al€am+\\ah€e32897¤aa€al€ah€am\000kg:31162:109¤aa€al€am\000„ah€d9844¤aa€al€ah€amN d3844¤aa€al€ah€am\000ópe25686¤aa€al€ah€am\000æÛjg:14859:57¤aa€al€ah€am\000¿Àe10279¤aa€al€ah€am\000«e15570¤aa€al€am¯Èah€d7413¤aa€al€ah€am\000Èe25139¤aa€al€am\000\"àah€e40089¤aa€al€ah€am\000eje12406¤aa€al€ah€am/:d7371¤aa€al€amÇ.ah€e11167¤aa€al€am\000­°ah€e40085¤aa€al€amÔah€e29958¤aa€al€ah€am\000püd9953¤aa€al€ah€am\000Üig:3336:29¤aa€al€ah€am&¬d2593¤aa€al€ah€am\000ì©e22793¤aa€al€ah€amu/ig:9836:33¤aa€al€ah€amíÅjg:10118:58¤aa€al€ah€am\000†<d9856¤aa€al€am:æah€d8953¤aa€al€amOçah€e16045¤aa€al€ah€am\000í‚jg:11305:35¤aa€al€amê_ah€e10252¤aa€al€ah€am\000† d5482¤aa€al€am\000ã`ah€e10050¤aa€al€ah€amMVe14177¤aa€al€ah€amAPig:8129:49¤aa€al€ah€amôBkg:25099:120¤aa€al€ah€am\000		‚jg:10382:62¤aa€al€ah€am\000Ï£kg:21854:111¤aa€al€am\000	ah€e24814¤aa€al€am\000\n+!ah€e22457¤aa€al€ah€am\000yûe32389¤aa€al€ah€amûe24600¤aa€al€ah€amÃOd2584¤aa€al€ah€am¸e39912¤aa€al€amT¡ah€jg:13146:58¤aa€al€ah€am\000De15177¤aa€al€ama§ah€d4071¤aa€al€ah€am‰Äe14253¤aa€al€ah€am\000YPd8067¤aa€al€ah€am\nd7067¤aa€al€ah€am&¬e18512¤aa€al€ah€amu0jg:24935:87¤aa€al€ah€am\000)¶e18363¤aa€al€ah€amÂ†d3067¤aa€al€am:˜ah€e18333¤aa€al€ah€am\000K4e13522¤aa€al€ah€am\000„€e24299¤aa€al€ah€am\000\r¨d2453¤aa€al€ah€amŒjg:14729:20¤aa€al€ah€am[d5484¤aa€al€ah€am\000'd7453¤aa€al€ah€am*/d6453¤aa€al€amV§ah€e25887¤aa€al€ah€am\000¡e13445¤aa€al€ah€amH¨kg:25319:108¤aa€al€ah€am\000;ˆjg:14129:20¤aa€al€ah€am?ig:6612:28¤aa€al€ah€amy¼e11968¤aa€al€am©¬ah€e22844¤aa€al€ah€amtÌe13457¤aa€al€ah€am˜;d8924¤aa€al€ah€am\0008€e25050¤aa€al€ah€amèlhg:867:42¤aa€al€ah€am\000W/e22279¤aa€al€am\000€ah€e14664¤aa€al€ah€am\000pjg:15278:60¤aa€al€ah€am\000€e32403¤aa€al€ah€am\000nîpd5007¤aa€al€amJCah€e10101¤aa€al€ah€am\000ûĞe14960¤aa€al€ah€amÃPig:4327:40¤aa€al€ah€am\000Ë=d8167¤aa€al€ah€am÷e14944¤aa€al€ah€amÃPe24944¤aa€al€ah€am\000ºîkg:25168:117¤aa€al€ah€am\000€jg:24921:81¤aa€al€ah€am\000† e20973¤aa€al€ah€am\000q\000jg:14124:20¤aa€al€amiah€jg:12025:54¤aa€al€ah€am\000îèe25299¤aa€al€ah€amêÄjg:13135:59¤aa€al€am\000† ah€jg:31184:85¤aa€al€ah€am\000dpjg:10265:62¤aa€al€ah€amœ@e22445¤aa€al€ah€am/3e10363¤aa€al€ah€am\000Mìig:4078:39¤aa€al€ah€amMNe22577¤aa€al€ah€am\"jg:15969:10¤aa€al€ah€amXig:9947:48¤aa€al€ah€am\000Çe32391¤aa€al€ah€am\000§±¯e24189¤aa€al€ah€am:–jg:10186:53¤aa€al€ah€amÃOe24686¤aa€al€ah€am\000İĞjg:13124:35¤aa€al€ah€am\000Ùèc140¤aa€al€ah€am\000´Æig:9794:25¤aa€al€ah€am/¨e14559¤aa€al€ah€am&¬e15359¤aa€al€ah€amšÑd6387¤aa€al€ah€amPljg:15982:51¤aa€al€ah€am\000}¨e22739¤aa€al€ah€am\000ÔŞe10034¤aa€al€ah€am\000ÔÀe24700¤aa€al€am\000€ah€jg:14763:32¤aa€al€amˆ¸ah€d5956¤aa€al€ah€am&¬ig:4369:21¤aa€al€ah€amthd1315¤aa€al€ah€am\000Gkg:31161:109¤aa€al€ah€am\000èPd3315¤aa€al€am6Mah€e10070¤aa€al€ah€amê`jg:25227:84¤aa€al€am\000F¸ah€d6587¤aa€al€am\000\r}ah€d6415¤aa€al€amJ3ah€e14593¤aa€al€amê`ah€e24593¤aa€al€ah€am\000ÌRjg:25404:69¤aa€al€ah€amœ@ig:4248:26¤aa€al€am˜Mah€d7477¤aa€al€ah€amN jg:15127:30¤aa€al€ah€amu0d6577¤aa€al€ah€amN ig:23346:2¤aa€al€ah€am\000R	Œjg:15359:41¤aa€al€ah€amšÑe14281¤aa€al€am\0008€ah€jg:15925:10¤aa€al€ah€am&Hd4999¤aa€al€ah€amˆjg:15794:10¤aa€al€ah€am\000‚Te23824¤aa€al€ah€am\000-Ÿ°jg:13021:47¤aa€al€ah€am\000[`d4700¤aa€al€amƒ¡ah€e25004¤aa€al€ah€am\000èGd7439¤aa€al€ah€am\000{td7734¤aa€al€ah€am\000€e19705¤aa€al€ah€ame15390¤aa€al€ah€am\000†<e24942¤aa€al€ah€am\000ÍLjg:20665:62¤aa€al€am\000Ğah€e12248¤aa€al€ah€am\000a`jg:14728:22¤aa€al€am”ah€ig:2989:21¤aa€al€ah€am'jg:13856:51¤aa€al€amu0ah€d6605¤aa€al€ah€ama¨d3415¤aa€al€ah€am\000\"\rĞe14172¤aa€al€am\000NRah€ig:7370:31¤aa€al€ah€amFPd8190¤aa€al€ah€am\000	#×d5966¤aa€al€amˆah€ig:6592:29¤aa€al€ah€am¸kg:24257:105¤aa€al€ah€am\000!ßàig:2549:27¤aa€al€ah€am\0005\000e31139¤aa€al€ah€am\000w@hg:7005:4¤aa€al€ah€am&e15515¤aa€al€ah€am'jg:20959:37¤aa€al€ah€am\000*jg:24826:87¤aa€al€ah€am\000”ëe23593¤aa€al€ah€am\000†Ÿe15253¤aa€al€ah€am\000Iğe24784¤aa€al€ah€am\000†<e24592¤aa€al€ah€am\000ûËe14185¤aa€al€ah€am'e29550¤aa€al€ah€am'ig:8298:57¤aa€al€am\000â\000ah€e18262¤aa€al€ah€amÿÜe17057¤aa€al€ah€am¶kg:25155:120¤aa€al€am\000zah€e24799¤aa€al€ah€am\000äÙd9434¤aa€al€ah€am\000gXd1639¤aa€al€ah€am\0008€jg:24718:90¤aa€al€ah€am\000†Ÿig:3740:24¤aa€al€ah€am*øe15552¤aa€al€am'ah€e22450¤aa€al€ah€am\000\"Üig:8115:48¤aa€al€ah€amœ@d4380¤aa€al€ah€amÌ€d5787¤aa€al€ah€am&De21547¤aa€al€ah€amÂˆd9799¤aa€al€ah€am:˜ig:8349:50¤aa€al€am\000æ/ah€d5215¤aa€al€am”pah€e22548¤aa€al€am\000D«ah€jg:24704:84¤aa€al€ah€am\000Ëød8215¤aa€al€ah€amŠãkg:25291:108¤aa€al€ah€am\000Iğjg:24630:99¤aa€al€ah€am\000† e31306¤aa€al€ah€am\000“ße12204¤aa€al€ah€am“jg:14304:55¤aa€al€am\000_ah€d4799¤aa€al€am€Gah€d9957¤aa€al€ah€amyd2799¤aa€al€ah€amCjg:10288:31¤aa€al€ah€amc;jg:25246:99¤aa€al€ah€am\0004Pkg:25194:111¤aa€al€ah€am\000ûĞd3481¤aa€al€am\000imah€e15417¤aa€al€ah€am‰Şd9949¤aa€al€ah€am\000pe32230¤aa€al€ah€am\000Œ-jg:10405:22¤aa€al€am\000†Ÿah€jg:14372:28¤aa€al€ah€amgre18256¤aa€al€ah€amÂìe31342¤aa€al€ah€am!ê¿ig:6567:25¤aa€al€ah€am7òe15215¤aa€al€am\000ah€jg:25315:96¤aa€al€ah€am\000†8e14276¤aa€al€ah€am>€ig:6420:39¤aa€al€ah€amšCig:7487:43¤aa€al€ah€amœ@d9899¤aa€al€ah€amå¯d9836¤aa€al€ah€amíÅe15593¤aa€al€ah€am˜Xkg:24982:105¤aa€al€ah€am\000Uôe12820¤aa€al€ah€am‡e15527¤aa€al€ah€amÈ¸e28542¤aa€al€am\000ûĞah€e39919¤aa€al€am.ßah€e23592¤aa€al€ah€amâe30034¤aa€al€ah€am\000‡Xpe11999¤aa€al€ah€amu0e24743¤aa€al€ah€am\000†8d4038¤aa€al€amĞ¶ah€e15281¤aa€al€am\000†Ÿah€e24276¤aa€al€ah€am\000SHjg:11997:38¤aa€al€ama¨ah€e31864¤aa€al€ah€am\000\"Me25245¤aa€al€am\000\n ah€e10285¤aa€al€ah€amÑe24981¤aa€al€ah€am\000°şe10276¤aa€al€am¯Èah€e10559¤aa€al€ah€am™ e15261¤aa€al€ah€ama¨e15741¤aa€al€ah€amácig:6418:37¤aa€al€ah€am<ïjg:24584:81¤aa€al€am\000á[ah€kg:24686:120¤aa€al€ah€am\000İĞig:1613:44¤aa€al€ah€amÃPig:6607:30¤aa€al€ah€amÚ&d3307¤aa€al€ah€am‡d2307¤aa€al€amah€jg:24833:90¤aa€al€ah€am\000³kg:24896:114¤aa€al€ah€am\000à0ig:9793:25¤aa€al€amÃPah€ig:7476:40¤aa€al€ah€am\000†e25070¤aa€al€ah€am\000¶Àe10646¤aa€al€ah€am\000Ò¿jg:14424:42¤aa€al€ah€am\000ïŸd9512¤aa€al€ah€am\000Í4Õe14950¤aa€al€ah€am\000m	jg:10026:46¤aa€al€amÃOah€ig:9953:50¤aa€al€ah€am\000Üig:6796:35¤aa€al€ah€am|e31276¤aa€al€ah€am\000I­d7081¤aa€al€ah€amèke32393¤aa€al€ah€am\000w¡\000e21548¤aa€al€ah€am\000ï…e32470¤aa€al€ah€am<e24245¤aa€al€ah€ame14245¤aa€al€amtÌah€kg:25071:120¤aa€al€ah€am\000Iğkg:24647:105¤aa€al€ah€am\000áe13079¤aa€al€ah€am\000Le10164¤aa€al€am\0008€ah€jg:15392:49¤aa€al€ah€ama¨jg:14942:42¤aa€al€ah€amœ@e25094¤aa€al€am\000† ah€kg:25206:105¤aa€al€am\000Üah€e14552¤aa€al€ah€am\000hèjg:13038:40¤aa€al€ah€am\000YDig:9871:37¤aa€al€ah€am¾ jg:10131:50¤aa€al€ah€amœ@jg:13011:27¤aa€al€ah€am\000.gjg:24614:93¤aa€al€ah€amˆ¸d1705¤aa€al€ah€amàöjg:14418:39¤aa€al€ah€amZåkg:32577:141¤aa€al€am\000yuÀah€ig:4693:14¤aa€al€ah€am\000Iğd2985¤aa€al€ah€amİjg:14594:37¤aa€al€amœ@ah€jg:15239:61¤aa€al€ah€am\000_ig:4822:23¤aa€al€ah€am\000(Je15111¤aa€al€ah€amÍád5212¤aa€al€ah€am¸d7729¤aa€al€ah€amÃPjg:15169:44¤aa€al€ah€am›xd8385¤aa€al€ah€am\000oe10290¤aa€al€ah€am—e33470¤aa€al€ah€am\r—jg:29584:19¤aa€al€ah€am\000\rX1kg:23762:112¤aa€al€ah€am\000Ù e14369¤aa€al€ah€ama§e10218¤aa€al€amê`ah€ig:5215:41¤aa€al€am”pah€e22606¤aa€al€am\000B@ah€e23785¤aa€al€ah€am\000Ød6573¤aa€al€amN ah€e22792¤aa€al€ah€amÍd2324¤aa€al€am˜ah€jg:24825:87¤aa€al€ah€am\000Ğd8748¤aa€al€amPœah€e24969¤aa€al€ah€am\0006Je29960¤aa€al€ah€am\000äáÀjg:15598:38¤aa€al€amu0ah€e22527¤aa€al€ah€amùjg:14605:43¤aa€al€ah€amÃPd4605¤aa€al€ah€amLjg:15303:14¤aa€al€am‡ah€d2605¤aa€al€ah€am²jg:15596:41¤aa€al€ah€am\000† e23784¤aa€al€ah€amUğd1824¤aa€al€ah€amN kg:25233:102¤aa€al€am\000ûĞah€e14722¤aa€al€ah€amN ig:4051:30¤aa€al€am¯Çah€d7930¤aa€al€ah€amthig:2075:12¤aa€al€ah€am‡d9297¤aa€al€ah€am\000B?e25034¤aa€al€ah€am\000îüjg:25260:99¤aa€al€ah€am\000Ğkg:31226:100¤aa€al€ah€am\000‰øe25093¤aa€al€ah€am\000\r@e12261¤aa€al€ah€am\0000e24789¤aa€al€ah€am\0004Pe29540¤aa€al€ah€am\000yPd4687¤aa€al€amƒah€d7052¤aa€al€ah€am&¬e31218¤aa€al€ah€am\0001óâig:7356:30¤aa€al€ah€am!4e24741¤aa€al€ah€am\000Øe12040¤aa€al€ah€am\000F¶d9805¤aa€al€ah€am e25848¤aa€al€ah€am\000ûĞig:9839:31¤aa€al€ah€am\000\ne24479¤aa€al€ah€am\000”(jg:24827:87¤aa€al€ah€am\000 {jg:15981:47¤aa€al€ah€am\000:Ge30746¤aa€al€am\000€ah€e19281¤aa€al€ah€am\000cjg:24850:96¤aa€al€ah€am\000G•e22785¤aa€al€ah€am	_d9030¤aa€al€ah€amĞe15972¤aa€al€ah€amgÉig:7529:47¤aa€al€ah€amœ@jg:16039:57¤aa€al€ah€am\000SHig:3305:16¤aa€al€ah€amâig:9960:47¤aa€al€ah€am\000d7412¤aa€al€ah€amtÌd6412¤aa€al€am\000†œah€jg:12424:53¤aa€al€ah€amœ?d4412¤aa€al€am\000àah€e12043¤aa€al€amÃPah€e21897¤aa€al€ah€am\000¶½e34829¤aa€al€ah€am\000cjg:15350:34¤aa€al€amu0ah€e25256¤aa€al€ah€am\000W0jg:14549:45¤aa€al€ah€am\000\n‡Pe24075¤aa€al€am\000¿ah€e16680¤aa€al€ah€am\000“àe16703¤aa€al€am\000B>ah€e15338¤aa€al€am@ah€e31334¤aa€al€ah€am\000˜„ìd1994¤aa€al€ah€am\000†Kig:3187:44¤aa€al€ah€amœ=d4232¤aa€al€ah€am*ig:3484:29¤aa€al€amcœah€ig:9967:43¤aa€al€ah€amm`jg:25103:90¤aa€al€ah€am\000wûe13467¤aa€al€ah€am\rDjg:10228:60¤aa€al€ah€am\000j\000e33954¤aa€al€ah€am\000˜’˜d3055¤aa€al€ah€amsìjg:15576:39¤aa€al€ah€amT¬jg:14204:36¤aa€al€am\000µah€d8271¤aa€al€ah€am\0008€ig:4731:39¤aa€al€am9Ïah€e10087¤aa€al€ah€amu0e11411¤aa€al€am\000†<ah€d8199¤aa€al€ah€am\000Iïe14423¤aa€al€ah€amu0d9930¤aa€al€am\000aGah€ig:3481:25¤aa€al€am\000imah€e14940¤aa€al€am\000˜Ôah€e25165¤aa€al€ah€am\000SÙig:1769:20¤aa€al€ah€am.|e13034¤aa€al€ah€am\000˜d7485¤aa€al€am\000/vah€jg:24851:96¤aa€al€ah€am\000pœe15518¤aa€al€amYØah€d9233¤aa€al€ah€amJ8e15262¤aa€al€ah€am\000îĞe10090¤aa€al€ah€am\000Üe19703¤aa€al€ah€amÍd4096¤aa€al€ah€amjg:10110:55¤aa€al€ah€amÍ|e13033¤aa€al€ah€am\000vjg:15338:28¤aa€al€am@ah€jg:24920:81¤aa€al€am\000Ì_ah€e13863¤aa€al€amıèah€e14467¤aa€al€ah€am'e20552¤aa€al€ah€am\000à€jg:15313:24¤aa€al€ah€am\000¡ejg:24822:87¤aa€al€ah€am¯Èig:8289:60¤aa€al€ah€amœ@jg:15241:26¤aa€al€ah€am!æd2299¤aa€al€am\000zVah€e31904¤aa€al€ah€am\000¶óğd4299¤aa€al€ah€amKÆe25395¤aa€al€ah€amN e21840¤aa€al€ah€am+¶e10068¤aa€al€ama¨ah€d8299¤aa€al€ah€amä„e39940¤aa€al€ah€am#'ig:9842:32¤aa€al€amu0ah€e24718¤aa€al€ah€am\000†Ÿe24809¤aa€al€ah€am\000Èwjg:12250:34¤aa€al€ah€am\000ûËe23635¤aa€al€ah€am\000äİØd9870¤aa€al€ah€am¬Èe10177¤aa€al€am\000¡ ah€ig:4714:27¤aa€al€amNah€d4328¤aa€al€ah€amu0e15477¤aa€al€am#(ah€kg:24867:102¤aa€al€ah€am\000	d2700¤aa€al€am\000¡ ah€jg:24711:87¤aa€al€ah€amÃPjg:10632:49¤aa€al€ah€am\000“àd9905¤aa€al€ah€am\000‚Äd2966¤aa€al€ah€amN e24926¤aa€al€am\000\nüah€e15580¤aa€al€amäTah€e14584¤aa€al€ah€am\000Rve25249¤aa€al€ah€am\000\r‘e10288¤aa€al€ah€amc;kg:25109:108¤aa€al€ah€am\0008jg:14187:28¤aa€al€ah€am\000ÔÀjg:15671:56¤aa€al€ah€amæxig:8160:40¤aa€al€ah€am\000‡”kg:32390:130¤aa€al€ah€am\000=‹5jg:14207:36¤aa€al€ama¨ah€d2292¤aa€al€ah€am\000jg:14439:47¤aa€al€ah€amSûe21792¤aa€al€ah€am\000\"Øe32423¤aa€al€ah€am\000† e29372¤aa€al€ah€am\000ze23559¤aa€al€ah€am4d8490¤aa€al€ah€am\000Ae14635¤aa€al€ah€am\000Èkg:25000:111¤aa€al€ah€am\000_e10630¤aa€al€ah€am\0003;Ke13518¤aa€al€ah€am\000B>e23518¤aa€al€ah€am\000\r» e18338¤aa€al€am\000“àah€jg:10133:52¤aa€al€ah€am\000\000e24864¤aa€al€ah€am\000lte25154¤aa€al€ah€am\000¡e18782¤aa€al€am\000¿ah€d9748¤aa€al€ah€am9e41453¤aa€al€am\000†ah€e21342¤aa€al€ah€am\000?d7939¤aa€al€ah€am\000“àe10243¤aa€al€ah€amtÌe15727¤aa€al€ah€am+Xe14580¤aa€al€amNÅah€e24580¤aa€al€ah€amÛÅe25337¤aa€al€ah€am\000Y¬e13423¤aa€al€ah€am´e15528¤aa€al€ah€amlEd7415¤aa€al€ah€amôe29548¤aa€al€ah€am[e10133¤aa€al€ah€am\000\000e20817¤aa€al€ah€amGd6511¤aa€al€am?ah€d7055¤aa€al€ah€am&¬kg:25081:108¤aa€al€ah€am\000td9927¤aa€al€ah€am¸d6046¤aa€al€ah€am\000&Tjg:24617:93¤aa€al€ah€am\000$be15243¤aa€al€ah€am'e13940¤aa€al€ah€amÀkg:24887:111¤aa€al€ah€amê`e24061¤aa€al€ah€am\000-êkg:31323:100¤aa€al€ah€am\000LA{ig:7050:32¤aa€al€ah€amJe24941¤aa€al€ah€am\000­°d7462¤aa€al€ah€am'e31244¤aa€al€ah€am\000êig:8225:36¤aa€al€ah€am\000†e20709¤aa€al€ah€am^jg:15304:16¤aa€al€am¸ah€d4822¤aa€al€ah€am\000(Je25802¤aa€al€ah€am\rôe16218¤aa€al€ah€am\000_jg:13051:44¤aa€al€ah€am\000ÜHd8392¤aa€al€amÏah€e24635¤aa€al€ah€am\000ste31912¤aa€al€ah€am\000Ë÷jg:14137:58¤aa€al€ah€am\000æ±e24802¤aa€al€ah€am\000“ße11165¤aa€al€ah€am\000\rˆig:9841:32¤aa€al€ah€amN e11040¤aa€al€ah€am!üe13088¤aa€al€ah€am\000pÀig:2584:16¤aa€al€ah€am¸d3827¤aa€al€ah€ame31165¤aa€al€ah€am\000Ì_jg:15540:34¤aa€al€ah€amL,e13125¤aa€al€ah€am\000€e20010¤aa€al€ah€amu0e10281¤aa€al€ah€am\000e27659¤aa€al€ah€am§jg:24928:84¤aa€al€am\000Ù8ah€e25233¤aa€al€am\000ûĞah€kg:31199:103¤aa€al€ah€am\000õ`kg:25007:114¤aa€al€ah€am\000† e18042¤aa€al€am<Zah€e25260¤aa€al€ah€am\000Ğig:7352:27¤aa€al€ah€amKÈjg:16717:59¤aa€al€am\000n¬ah€ig:6556:15¤aa€al€ah€amôe29560¤aa€al€amu“ah€jg:20539:63¤aa€al€ah€am\000y>Ad9261¤aa€al€ah€amîjg:14247:44¤aa€al€ah€am.àe25846¤aa€al€ah€am\000,Àjg:15486:12¤aa€al€am#(ah€ig:9897:42¤aa€al€ah€am\000F[e29528¤aa€al€ah€am\000¡jg:14451:53¤aa€al€ah€am\000rÏig:3193:21¤aa€al€ah€am%ig:1484:22¤aa€al€ah€am\0000e14203¤aa€al€am:˜ah€e14165¤aa€al€ah€amde15548¤aa€al€ah€amN e22837¤aa€al€ah€amu/e24165¤aa€al€ah€am\000ğe15744¤aa€al€ah€am\000#_ig:8292:58¤aa€al€am…Mah€jg:10067:49¤aa€al€ah€amN e10172¤aa€al€ah€am\000¿ e12808¤aa€al€ah€amYÖjg:10629:50¤aa€al€ah€am\000Ô„d2807¤aa€al€ah€am\000q°e12531¤aa€al€ah€am\000!ìe18678¤aa€al€ah€am\000!Îóig:4334:34¤aa€al€ah€ama¨d6362¤aa€al€ah€ammkg:39717:213¤aa€al€ah€am\000ì‚Ùe20959¤aa€al€ah€am\000*d4362¤aa€al€ah€am†jg:14831:43¤aa€al€amN ah€d4536¤aa€al€amæah€d1727¤aa€al€ah€am\000\r?e12219¤aa€al€ah€am$·ig:3042:33¤aa€al€ah€am\000e24796¤aa€al€ah€am\0008e34837¤aa€al€am'\rƒah€d9898¤aa€al€ah€amNig:1819:22¤aa€al€ah€amJ8kg:25098:117¤aa€al€ah€am\000\n ig:7444:37¤aa€al€am.àah€ig:6393:28¤aa€al€ah€am/¨ig:2879:22¤aa€al€ah€amu.d8317¤aa€al€amÃPah€ig:3291:13¤aa€al€ah€amUéjg:15215:45¤aa€al€am\000ah€jg:10181:58¤aa€al€ah€am\0002¤ig:9901:40¤aa€al€ah€am'e24896¤aa€al€ah€am\000à0jg:15279:51¤aa€al€ah€amœ@jg:18698:56¤aa€al€ah€am\000B?e31125¤aa€al€ah€am\000¥Pe18258¤aa€al€ah€am\000‡—ig:8193:46¤aa€al€ah€am8^e29505¤aa€al€ah€am\000Dƒig:4042:39¤aa€al€ah€am:˜e15268¤aa€al€ah€am'd7787¤aa€al€ah€amWe31321¤aa€al€ah€am\000LA|e30825¤aa€al€ah€am\000$ÿig:6388:30¤aa€al€am\"Âah€kg:24885:108¤aa€al€ah€am\0008€e24338¤aa€al€ah€am\000‰T@d8343¤aa€al€ah€am&ûjg:14683:59¤aa€al€ah€amYØe28053¤aa€al€amŠ¬ah€d3816¤aa€al€amÆúah€e20436¤aa€al€ah€am\000Je13486¤aa€al€ah€am\000Óöig:3414:27¤aa€al€ah€am éúd4727¤aa€al€ah€am9e31269¤aa€al€ah€am!4d4708¤aa€al€ah€ama§e20864¤aa€al€ah€amÀXd6662¤aa€al€ah€ame32216¤aa€al€ah€am\000g0e24661¤aa€al€ah€am\000ÔÀig:8293:56¤aa€al€ah€amœ@e15932¤aa€al€ah€am)Ze17725¤aa€al€ah€am\000xze43395¤aa€al€ah€amÑµjg:15371:41¤aa€al€ah€amÔe31281¤aa€al€ah€am\000³ e21281¤aa€al€ah€am\000Dª e25030¤aa€al€ah€am\0003+d4696¤aa€al€ah€amœ@e15224¤aa€al€ah€ame32411¤aa€al€ah€am\000B@e22913¤aa€al€ah€am\000‡\nMe10085¤aa€al€am‡ah€e27502¤aa€al€ah€am5e32228¤aa€al€ah€am\000“àe14224¤aa€al€ah€amœ¤d3182¤aa€al€ah€am¸e25116¤aa€al€ah€am\000fe23769¤aa€al€amİ[ah€d1716¤aa€al€ah€am\000i,e19261¤aa€al€ah€am\000[_d7411¤aa€al€ah€am:˜e24885¤aa€al€ah€am\0008€jg:13130:56¤aa€al€ah€am\000÷e25690¤aa€al€ah€am\000q°e15733¤aa€al€ah€am\000Ì¨e24985¤aa€al€ah€am\000Üd5082¤aa€al€ah€amWe14321¤aa€al€am\000Øah€e31225¤aa€al€ah€am\000Èàe32221¤aa€al€am\0007ah€d9851¤aa€al€ah€am\0008€e21957¤aa€al€ah€am\000Á2d5756¤aa€al€ah€am\000†<ig:1483:21¤aa€al€ah€am\000Iğig:9898:38¤aa€al€ah€amNe29507¤aa€al€am\000`Ôah€jg:25310:81¤aa€al€am\000ah€e25017¤aa€al€ah€am\000=ae24774¤aa€al€ah€am\000Ğkg:32584:141¤aa€al€ah€am\000—¬d6417¤aa€al€ah€amvàe24620¤aa€al€ah€am\000À¬d4417¤aa€al€ah€am\000‚´e32400¤aa€al€ah€amI<e28280¤aa€al€ah€am\000-ÆÀe14366¤aa€al€ah€am.àe14256¤aa€al€ah€am^e13118¤aa€al€ah€am\000Le23793¤aa€al€ah€amE‡ig:4330:22¤aa€al€ah€am#&e15017¤aa€al€ah€am7—d2407¤aa€al€ah€amwe16652¤aa€al€ah€am¸jg:24848:96¤aa€al€am\000˜ah€e10204¤aa€al€am\000C¦ah€e24749¤aa€al€am\000	ah€e10166¤aa€al€ah€amNe11977¤aa€al€ah€am\000÷e24733¤aa€al€ah€am\000q\000e25321¤aa€al€ah€am\000¶djg:24746:99¤aa€al€am\000‚pah€d9951¤aa€al€ah€amÃPkg:24784:114¤aa€al€ah€am\000†<jg:15252:49¤aa€al€am\000_ah€kg:24989:105¤aa€al€ah€am\000VÉjg:16676:59¤aa€al€am\000B?ah€e25060¤aa€al€ah€am\000ig:6387:29¤aa€al€ah€amPlhg:647:57¤aa€al€ah€am\000¡d1951¤aa€al€ah€am\000† e15063¤aa€al€ah€am\000\r»e25197¤aa€al€ah€am\000Iğe13494¤aa€al€ah€am\000Y´e25062¤aa€al€ah€amÃPe15062¤aa€al€ah€am\000\r»›e21944¤aa€al€ah€am\000lBjg:12012:45¤aa€al€ah€amu/e29571¤aa€al€ah€am\000B?e14137¤aa€al€ah€am\000æ±e34482¤aa€al€ah€am\000\\d4816¤aa€al€am\0000zah€e14482¤aa€al€ah€am\000\"e13004¤aa€al€ah€am\000oe12803¤aa€al€ah€am!Ÿe14571¤aa€al€ah€amAe32774¤aa€al€am\000\n¤œah€ig:7755:38¤aa€al€ah€am\000İëe12774¤aa€al€am\000“ßah€ig:3415:24¤aa€al€ah€am\000\"\rĞe31224¤aa€al€ah€am\000>Xd7416¤aa€al€ah€am\000‰·e14173¤aa€al€ah€am:˜jg:15110:20¤aa€al€ah€amu/e24689¤aa€al€am\000š'ah€e13071¤aa€al€ah€am\000d¸e10400¤aa€al€ah€am\000‚pkg:23520:115¤aa€al€ah€am\000&èğig:2988:19¤aa€al€ah€am)jg:13107:62¤aa€al€am\000	'¿ah€d9837¤aa€al€ah€amS3d8217¤aa€al€amu0ah€e23151¤aa€al€ah€am\000“ße24197¤aa€al€am\000\000òah€e14197¤aa€al€ah€am'd9902¤aa€al€ah€amÑBjg:25144:87¤aa€al€ah€am\000S“d6217¤aa€al€ah€am*”kg:25040:111¤aa€al€ah€am\000±àd5051¤aa€al€ah€amˆkg:24800:120¤aa€al€ah€am\000“àe24088¤aa€al€ah€am\000\n®`e15137¤aa€al€ah€amN jg:15012:16¤aa€al€ah€am”e15946¤aa€al€ah€ama¨e24769¤aa€al€ah€am\000Zùd6716¤aa€al€ah€am&Fig:6238:10¤aa€al€ah€am”e15571¤aa€al€ah€amu0e32749¤aa€al€ah€am\000~Îjg:10127:49¤aa€al€ah€amœ@d5571¤aa€al€amŒah€e22146¤aa€al€ah€am\000¬e30046¤aa€al€ah€am\000ÆG`jg:17055:50¤aa€al€ah€am\000]aig:8223:37¤aa€al€ah€am\000-d2317¤aa€al€amå¹ah€e17413¤aa€al€ah€amre17303¤aa€al€ah€am\000…«d9798¤aa€al€ah€am@kg:25125:114¤aa€al€ah€am\000äe29529¤aa€al€ah€amod1602¤aa€al€am\000ó´ah€d6602¤aa€al€amN ah€e24808¤aa€al€ah€am\000pd4602¤aa€al€am\000˜–€ah€d5602¤aa€al€ah€amÔe17062¤aa€al€ah€am%İe24052¤aa€al€ah€am\000~@e24906¤aa€al€ah€am\000lĞd9862¤aa€al€amAŸah€d4332¤aa€al€ah€amê_d6149¤aa€al€amIah€e17030¤aa€al€ah€am'Çe25317¤aa€al€ah€am\000­¯jg:25438:18¤aa€al€amhah€e14803¤aa€al€am\000k+ah€e33447¤aa€al€am,ah€ig:7448:36¤aa€al€ah€amc›e10321¤aa€al€ah€amœ@e14774¤aa€al€amÃPah€d9934¤aa€al€ah€amœ@e15912¤aa€al€amÏah€d7332¤aa€al€am¯‡ah€e10940¤aa€al€am\n0ah€e16060¤aa€al€amÃPah€d9293¤aa€al€ah€amMXd8293¤aa€al€ah€amœ@e15507¤aa€al€ah€am9e12689¤aa€al€ah€amBgig:34826:1¤aa€al€ah€am\000‘~d6451¤aa€al€ah€amçkg:24875:105¤aa€al€ah€am\000pşjg:12251:37¤aa€al€amÅQah€d7451¤aa€al€ah€am\000xĞe33803¤aa€al€ah€ame23803¤aa€al€am\000Gah€e30458¤aa€al€ah€am\000‚¸e13097¤aa€al€ah€am\000‡÷e15131¤aa€al€amœ@ah€e14913¤aa€al€ah€amÃPd9817¤aa€al€ah€am ig:4314:22¤aa€al€ah€am8Àd4407¤aa€al€ah€am\000ójg:24615:93¤aa€al€ah€am\0008€kg:25038:105¤aa€al€ah€am\000ce12256¤aa€al€ah€am\000\n/~e22251¤aa€al€ah€am\000€ig:4700:21¤aa€al€amƒ¡ah€jg:15233:39¤aa€al€amğ:ah€e25303¤aa€al€ah€am\0004Pkg:24803:120¤aa€al€ah€am\000·´d5116¤aa€al€ah€am†jg:14143:53¤aa€al€am\000kah€e24819¤aa€al€ah€am\000.(d8116¤aa€al€ah€amu0jg:31145:91¤aa€al€ah€am\000ÈÀe20749¤aa€al€ah€am\000´ïjg:20907:22¤aa€al€ah€amne25689¤aa€al€ah€am\000z¼kg:24114:102¤aa€al€ah€am\000Ì‚e15523¤aa€al€ah€amu0e24507¤aa€al€ah€am\000‰T@jg:20832:31¤aa€al€ah€am\000G×ig:6415:41¤aa€al€amJ3ah€d2802¤aa€al€ah€am\000† d7051¤aa€al€amÒlah€jg:13065:50¤aa€al€ah€am\000­¬jg:12015:57¤aa€al€ah€amê`e41458¤aa€al€amœ6ah€ig:8156:40¤aa€al€am:˜ah€e15486¤aa€al€am#(ah€d9802¤aa€al€ah€amàŸd5117¤aa€al€am9ah€e14469¤aa€al€ah€am\000î#e14831¤aa€al€amN ah€e24831¤aa€al€ah€am\000$Te34831¤aa€al€ah€am\000	ğe15502¤aa€al€ah€amˆe15383¤aa€al€amœ@ah€e13116¤aa€al€am\000qŸah€e23116¤aa€al€ah€am6­ig:6040:37¤aa€al€ah€am&¬e23819¤aa€al€ah€am\000UÊe25224¤aa€al€ah€am\000P`e24874¤aa€al€ah€am\000‚ld4416¤aa€al€ah€am,ˆjg:14675:56¤aa€al€ah€am¦d6416¤aa€al€ah€am&¬e34060¤aa€al€ah€am\000UÇe21885¤aa€al€ah€am\000„«e25416¤aa€al€ah€am/¨d3427¤aa€al€am\000÷1@ah€e10577¤aa€al€ah€am\000Ğig:9805:24¤aa€al€ah€am d5426¤aa€al€ah€am\000E¬e32224¤aa€al€am\000\nŞah€e15732¤aa€al€ah€amşKe15506¤aa€al€ah€am'e21849¤aa€al€ah€am\000Õ¨e25086¤aa€al€ah€amê`e24062¤aa€al€ah€amÁ¹d6617¤aa€al€amÅ{ah€e32678¤aa€al€ah€am\000e23386¤aa€al€ah€amÉ,e15125¤aa€al€ah€am#'d9962¤aa€al€am\000×Şah€e24030¤aa€al€ah€am\000	Ûhe40769¤aa€al€am\000è¸ah€ig:7419:30¤aa€al€ah€am!4e20769¤aa€al€ah€am\000¿Ç\000ig:5213:35¤aa€al€am'ah€e19268¤aa€al€am\000˜ah€e24583¤aa€al€am\000¹şah€e23482¤aa€al€ah€amÃPd5507¤aa€al€ah€am¸e23774¤aa€al€ah€am\000÷d4316¤aa€al€ah€ama¨kg:31291:112¤aa€al€ah€am\000“İd4343¤aa€al€amĞah€e24862¤aa€al€am\000·ah€ig:34829:1¤aa€al€ah€am\000cd4355¤aa€al€ah€am\000„ªe24957¤aa€al€ah€am\000¥¶jg:25245:96¤aa€al€am\000\n ah€e19264¤aa€al€ah€am\000\rıd2970¤aa€al€ah€amM¼e13060¤aa€al€ah€am\000† e15303¤aa€al€am‡ah€jg:14747:23¤aa€al€ah€am‚d1717¤aa€al€ah€am\000†d9861¤aa€al€ah€am'ig:7418:35¤aa€al€ah€amNèe24803¤aa€al€ah€am\000·´e13458¤aa€al€ah€am\000{œœe24894¤aa€al€ah€am\000Ô¿kg:24913:120¤aa€al€ah€am\000ópe14266¤aa€al€ah€amu0e38225¤aa€al€ah€am\000\"KLd4794¤aa€al€amN ah€e32218¤aa€al€ah€am\0005gße24622¤aa€al€ah€am\000\rˆe12218¤aa€al€am.àah€e31280¤aa€al€ah€am\000Œe13030¤aa€al€ah€am\000Šˆe22831¤aa€al€ah€am‡$e32571¤aa€al€ah€am <¬e14599¤aa€al€ah€amN e24599¤aa€al€am\000pah€d8402¤aa€al€ah€am\000Ğe33093¤aa€al€ah€amSújg:10070:55¤aa€al€ah€amê`ig:9384:36¤aa€al€ah€am\000\r8jg:14916:53¤aa€al€am\000y¼ah€e21819¤aa€al€ah€amê\\d9327¤aa€al€ah€am\000]Øe24966¤aa€al€ah€am\000Èe28494¤aa€al€ah€am\000lÏe22447¤aa€al€ah€am>€e13059¤aa€al€am\000~@ah€d4051¤aa€al€am¯Çah€e13885¤aa€al€ah€am'd6051¤aa€al€ah€ampe27689¤aa€al€ah€amÂìe24846¤aa€al€ah€amÀõe27677¤aa€al€ah€am$µjg:12989:22¤aa€al€ah€am\000S\000e17194¤aa€al€ah€am-Ke31151¤aa€al€ah€am\000ãEe21151¤aa€al€ah€ame11151¤aa€al€am\000ù\000ah€e19713¤aa€al€ah€amM¨e16216¤aa€al€ah€am\000ˆ	ig:8302:58¤aa€al€am\000_ah€e20002¤aa€al€ah€am¸e12030¤aa€al€am\000¾Àah€jg:14132:55¤aa€al€ah€am\000_e25314¤aa€al€ah€am\000\r@e10280¤aa€al€am\000s0ah€jg:15376:46¤aa€al€ah€am\000Re29486¤aa€al€am\000h„ah€e24059¤aa€al€ah€am\000\n¨e15599¤aa€al€ah€am‹®d9402¤aa€al€ah€am\000˜jg:15641:51¤aa€al€ah€am\000g¾ig:4396:40¤aa€al€ah€am\000Ôşe15945¤aa€al€ah€am(Le23447¤aa€al€ah€amGd6402¤aa€al€ah€am:—e24660¤aa€al€ah€am\000DNe36909¤aa€al€ah€am*İd6607¤aa€al€ah€amÚ&ig:4455:33¤aa€al€ah€am¬#e23571¤aa€al€ah€am\000ºîd4402¤aa€al€amãah€jg:15235:48¤aa€al€am\000Šah€d6346¤aa€al€ah€am\000«,d8151¤aa€al€ah€am²ig:8246:52¤aa€al€ah€am\000† e25033¤aa€al€am\000† ah€jg:10232:58¤aa€al€ah€am\000¿ jg:24962:96¤aa€al€ah€am\0008e25074¤aa€al€am\000lÏah€e24218¤aa€al€am\000q¯ah€e14218¤aa€al€amL,ah€d8495¤aa€al€ah€am\000ä–jg:14197:30¤aa€al€ah€am'jg:10249:61¤aa€al€am\000˜ah€e31154¤aa€al€ah€am'd3678¤aa€al€am\000¡ ah€e25906¤aa€al€ah€am\000vpjg:13134:49¤aa€al€ah€am\000\r.ñe25059¤aa€al€ah€am\000\r@kg:31306:115¤aa€al€ah€am\000“ße15166¤aa€al€ah€am\000>jg:10144:60¤aa€al€ah€am\000¡ ig:7459:38¤aa€al€ah€am%ig:7485:41¤aa€al€am\000/vah€e16221¤aa€al€ah€am\000ĞŒe15660¤aa€al€am\0008€ah€d2251¤aa€al€ah€amCd1251¤aa€al€ah€amÆe25909¤aa€al€am\000¿Ëah€c932¤aa€al€ah€am€èjg:24818:84¤aa€al€ah€am\000Ì_e31885¤aa€al€ah€am\000§æje10060¤aa€al€ah€amtÌe10157¤aa€al€ah€am\000&e21859¤aa€al€am\000\rÙ¯ah€d9251¤aa€al€ah€am“d8251¤aa€al€am\000[¨ah€jg:48933:80¤aa€al€ah€am\000W\\e29502¤aa€al€ah€am}Æ`jg:15268:16¤aa€al€ah€am'jg:25311:84¤aa€al€ah€am\000† ig:7490:42¤aa€al€ah€am\000'e25218¤aa€al€ah€am\000\r@d4732¤aa€al€amYØah€kg:31195:103¤aa€al€am\000ã`ah€e10147¤aa€al€amê`ah€e20030¤aa€al€ah€am\000Te10030¤aa€al€ah€amèlig:1482:24¤aa€al€ah€am\000ğ/[e25063¤aa€al€ah€amÃOjg:16703:57¤aa€al€am\000B>ah€d6532¤aa€al€ah€am'd4351¤aa€al€ah€amÃPe24952¤aa€al€ah€am\000{d9849¤aa€al€am.ßah€e25404¤aa€al€ah€amœ@ig:4562:10¤aa€al€ah€amN e24909¤aa€al€ah€am\000Iïe32660¤aa€al€ah€am\000~ğe31219¤aa€al€am\000Cah€e14909¤aa€al€ah€am\000pËe12029¤aa€al€ah€am\000&ìe25244¤aa€al€am\000Iğah€e15244¤aa€al€ah€amûÄe16059¤aa€al€amu-ah€kg:24651:105¤aa€al€ah€am\000Yfe13127¤aa€al€am\000\"àah€e43127¤aa€al€ah€am\000­le23154¤aa€al€ah€am\000	#Øjg:14163:26¤aa€al€ah€am+kg:32663:115¤aa€al€am\000\rÃjah€jg:17061:58¤aa€al€ah€am\000Ô¿e34207¤aa€al€ah€am\000	ëd4385¤aa€al€ah€amÃPd8398¤aa€al€ah€am&«e25258¤aa€al€ah€am\000Ğe22220¤aa€al€ah€am\000F	°e25225¤aa€al€am\000\"ßah€ig:8188:37¤aa€al€ah€amLe29578¤aa€al€ah€amLe31147¤aa€al€ah€am\000$jg:15926:17¤aa€al€ah€am6°e14945¤aa€al€ah€am•)ig:7435:38¤aa€al€ah€am'ig:8285:56¤aa€al€amu0ah€d9924¤aa€al€ah€am\000#—ig:2957:11¤aa€al€ah€am\nŒe24639¤aa€al€ah€am\000,äd2632¤aa€al€ah€amœ?ig:3835:33¤aa€al€ah€am*.ig:4312:16¤aa€al€amŸah€ig:7057:36¤aa€al€ah€amLd5216¤aa€al€ah€am\000*jg:15014:17¤aa€al€ah€am_…c812¤aa€al€ah€am\000\r»Ÿe20548¤aa€al€am\000¡ ah€e19931¤aa€al€ah€amÁÀjg:14826:41¤aa€al€amu0ah€e12528¤aa€al€ah€am\0004e22528¤aa€al€ah€amõig:7483:40¤aa€al€ah€amˆ¸d4608¤aa€al€amrah€d2678¤aa€al€amçah€ig:4310:17¤aa€al€am2\000ah€e16254¤aa€al€ah€am\000 ¼ig:3075:55¤aa€al€ah€am\000˜e15225¤aa€al€ah€amu0d7544¤aa€al€ah€am\000'¸e24794¤aa€al€ah€am\000 pe19774¤aa€al€ah€am|8e15620¤aa€al€ah€amÖØjg:14091:11¤aa€al€ah€am&¬d9916¤aa€al€am\000¿ ah€ig:5007:31¤aa€al€amJCah€d2732¤aa€al€ah€am\nğd1015¤aa€al€ah€am3ig:9382:38¤aa€al€ah€am'e13137¤aa€al€am\000g`ah€e23137¤aa€al€ah€am\000Üëig:4800:23¤aa€al€amôÈah€e11985¤aa€al€ah€am’d4544¤aa€al€amqah€d5470¤aa€al€ah€amjg:13024:29¤aa€al€ah€am\000¡ d5002¤aa€al€ah€amñ¶e24029¤aa€al€ah€am\000	uÂe23620¤aa€al€ah€am\000)mxe18660¤aa€al€ah€am\000g€d8115¤aa€al€ah€amœ@ig:7486:44¤aa€al€ah€am…,jg:10177:56¤aa€al€am\000¡ ah€d4699¤aa€al€amLah€jg:14585:32¤aa€al€ah€amu0jg:15602:45¤aa€al€ah€am\000“oe14839¤aa€al€ah€amê`jg:11982:23¤aa€al€ah€am°*e31197¤aa€al€am\000\riah€ig:6428:43¤aa€al€amu.ah€ig:3045:27¤aa€al€ah€amI`ig:2100:48¤aa€al€am\000 ah€e16023¤aa€al€am\000«¸ah€e13138¤aa€al€am\000Òah€e24116¤aa€al€ah€am\0003+e23147¤aa€al€ah€am\000 ¡d6330¤aa€al€ah€am\000zªe32568¤aa€al€ah€am}x?d3832¤aa€al€ah€am\000“d5140¤aa€al€ah€amúe10571¤aa€al€ah€am\000ÜHig:3302:15¤aa€al€am:˜ah€jg:15162:45¤aa€al€ah€am˜Xe12985¤aa€al€ah€am\000\r@e24945¤aa€al€ah€am\000mkg:24783:114¤aa€al€ah€am\000¿e31909¤aa€al€ah€am!êÀd9399¤aa€al€ah€am‹e32620¤aa€al€ah€am?e14557¤aa€al€ah€am\r“d8399¤aa€al€ah€am'e13309¤aa€al€amÃPah€d6399¤aa€al€ah€amœ@e20528¤aa€al€ah€am\000{Bd4399¤aa€al€ah€amÏîjg:24814:84¤aa€al€am\000\n+!ah€e22846¤aa€al€ah€amÀ0e10246¤aa€al€ah€am\000ì¤d6337¤aa€al€am'Bah€ig:3282:12¤aa€al€ah€am%jg:15312:20¤aa€al€ah€amN d4067¤aa€al€am2\\ah€c732¤aa€al€amôah€ig:7541:46¤aa€al€ah€amÃPjg:16713:58¤aa€al€ah€am\000\n8jg:12029:35¤aa€al€ah€am\000&ìjg:14214:34¤aa€al€ah€am:˜e12026¤aa€al€ah€am\000Iğe31181¤aa€al€ah€am\000CÑe31137¤aa€al€ah€am\000Fe13017¤aa€al€ah€am\000Ì`ig:9999:41¤aa€al€ah€am\000ûĞjg:14216:41¤aa€al€ah€am]Àe27697¤aa€al€am\000Iìah€e13945¤aa€al€ah€am›e11137¤aa€al€ah€am!-jg:24951:93¤aa€al€ah€am\000exd9932¤aa€al€ah€am\000Áød8932¤aa€al€ah€amoe22854¤aa€al€ah€am\000Ğig:7411:31¤aa€al€ah€am:˜d8499¤aa€al€ah€am,e20909¤aa€al€am>€ah€e44311¤aa€al€ah€am\000§Şig:15003:8¤aa€al€ah€am\000{™d4499¤aa€al€ah€amc8e23197¤aa€al€ah€am\000¥Mjg:10567:38¤aa€al€ah€am\000e¹ªd1499¤aa€al€am”ah€d2751¤aa€al€ah€am jg:14184:30¤aa€al€ah€amâjg:15288:61¤aa€al€ah€am\000êêd5751¤aa€al€ah€amu0ig:9785:17¤aa€al€ah€am”e34061¤aa€al€ah€am\000˜–jg:14253:43¤aa€al€ah€am\000YPjg:24700:81¤aa€al€am\000€ah€e24920¤aa€al€am\000Ì_ah€jg:14272:47¤aa€al€ah€am:˜kg:31255:103¤aa€al€ah€am\000)e19819¤aa€al€ah€am\000,de15964¤aa€al€ah€amê\\kg:31163:103¤aa€al€ah€am\000<e22148¤aa€al€am\\ah€jg:15554:33¤aa€al€ama¨ah€e11135¤aa€al€ah€am\n|e24839¤aa€al€ah€am\000Iğe10720¤aa€al€ah€am\000‡˜d1678¤aa€al€ah€am\000\nªxjg:24598:87¤aa€al€ah€am\000'xd2881¤aa€al€ah€amÀe24693¤aa€al€ah€am\000%öe12839¤aa€al€ah€am\000dpjg:18702:60¤aa€al€am\000Xah€e16250¤aa€al€ah€am\000v(e24815¤aa€al€ah€am\000W0ig:7493:40¤aa€al€amN ah€e13072¤aa€al€am\000å³ah€e31226¤aa€al€ah€am\000‰øjg:24713:87¤aa€al€ah€am\000† jg:15224:25¤aa€al€ah€amjg:24693:81¤aa€al€ah€am\000%öjg:15546:36¤aa€al€amLah€d2140¤aa€al€amN ah€jg:15112:20¤aa€al€ah€am·jg:23090:63¤aa€al€ah€am\000Èe23119¤aa€al€ah€amäkg:24917:120¤aa€al€ah€am\0004Pkg:24869:102¤aa€al€ah€am\0008ig:7754:30¤aa€al€ah€am\000Ø‰e13119¤aa€al€ah€am\000­®d9778¤aa€al€ah€amKe24735¤aa€al€ah€am\000pe31911¤aa€al€ah€am\0001äjg:24587:81¤aa€al€ah€am\000€e34330¤aa€al€ah€amrØjg:14366:17¤aa€al€ah€am.àd3778¤aa€al€amˆ³ah€d4778¤aa€al€ah€am-Oig:2039:29¤aa€al€ah€am\000\n,*d2778¤aa€al€amèah€e10518¤aa€al€ah€am\000öne14579¤aa€al€ah€am'd4721¤aa€al€am\000\r|ah€e16203¤aa€al€ah€am­œjg:16060:20¤aa€al€amÃPah€e23815¤aa€al€am\000OÌah€jg:31193:97¤aa€al€ah€am\000øe20518¤aa€al€ah€am\000{Be25311¤aa€al€ah€am\000† ig:9921:45¤aa€al€ah€am\000­°ig:10034:1¤aa€al€ah€am\000ÔÀd9088¤aa€al€ah€am›we14630¤aa€al€am\000†œah€e21358¤aa€al€am\000Œ|ah€e19280¤aa€al€ah€am\000\r@e29451¤aa€al€ah€amáòe23090¤aa€al€ah€am\000Èjg:16680:58¤aa€al€ah€am\000“àe13491¤aa€al€am¹(ah€e13466¤aa€al€ah€am&«jg:14222:37¤aa€al€am'ah€d9878¤aa€al€ah€amé—d1978¤aa€al€ah€am\000B?jg:14185:27¤aa€al€ah€am'jg:24078:83¤aa€al€ah€am\0006Še18401¤aa€al€ah€am\000>Wjg:15970:15¤aa€al€ah€am<2jg:25302:99¤aa€al€ah€am\0002•d2878¤aa€al€ah€am}Èe14372¤aa€al€ah€amgrjg:24624:96¤aa€al€ah€am\000^Åe22839¤aa€al€ah€am\000le25214¤aa€al€ah€am\000Ò¨e15214¤aa€al€amtÌah€jg:25116:87¤aa€al€ah€am\000fe25055¤aa€al€ah€am\000\nåig:1204:41¤aa€al€ah€am\000ve15576¤aa€al€ah€amT¬e10203¤aa€al€ah€am\000pjg:15983:52¤aa€al€am\000y³ah€e25345¤aa€al€am\000	ah€d9921¤aa€al€ah€am\000­°jg:25189:96¤aa€al€am\000¤ ah€e25072¤aa€al€ah€am\000	€e30817¤aa€al€amïah€jg:13042:41¤aa€al€am\000\r?ah€c414¤aa€al€am1‘ah€ig:2864:18¤aa€al€amN ah€kg:31289:109¤aa€al€ah€am\000\nÅĞig:9840:31¤aa€al€amN ah€e25026¤aa€al€ah€am\000† e31134¤aa€al€ah€am\000Ş1jg:13084:35¤aa€al€ah€am\000Íjg:15340:27¤aa€al€ah€am$ae25438¤aa€al€amhah€kg:31295:112¤aa€al€am\000W0ah€e13134¤aa€al€ah€am\000\r.ñe25659¤aa€al€ah€am\000_ig:9946:53¤aa€al€ah€amÃPe15172¤aa€al€ah€amN e15372¤aa€al€ah€amê`e11134¤aa€al€ah€am‘e24624¤aa€al€ah€am\000^Åd8302¤aa€al€am\000_ah€e14214¤aa€al€ah€am:˜e24214¤aa€al€ah€am\000+ ¬jg:13089:49¤aa€al€ah€am\000Öhg:2092:2¤aa€al€ah€amÃPe32576¤aa€al€ah€ame32659¤aa€al€ah€am\000	'ºe14604¤aa€al€ah€amu0e22576¤aa€al€ah€am\nëe30038¤aa€al€ah€am\000yêğe24345¤aa€al€ah€am\000	'Àe13002¤aa€al€am ğah€e40038¤aa€al€am\000­9ah€ig:6609:32¤aa€al€ah€am•ıe31149¤aa€al€ah€am\000Ãe24736¤aa€al€ah€am\000†5ig:7366:32¤aa€al€ah€am:˜jg:13029:43¤aa€al€am\000B@ah€e31127¤aa€al€ah€am\000†¥e10325¤aa€al€ah€am\000d1721¤aa€al€ah€am\000Ğd2721¤aa€al€ah€am\000\r*e24729¤aa€al€ah€am\000­°e25135¤aa€al€ah€am\000“àe15135¤aa€al€am;ah€jg:14776:43¤aa€al€ah€am\000rªe15347¤aa€al€ah€amu0jg:24724:90¤aa€al€ah€am\000>“kg:24794:117¤aa€al€ah€am\000 pe32598¤aa€al€amNah€jg:15571:35¤aa€al€ah€amu0ig:7455:39¤aa€al€amu0ah€d9302¤aa€al€ah€am\000<Dd9815¤aa€al€ah€am'd4049¤aa€al€ah€amtÌkg:24749:102¤aa€al€am\000	ah€d3821¤aa€al€ah€am\nŒjg:14840:47¤aa€al€am°\rah€d3302¤aa€al€am:˜ah€ig:9911:46¤aa€al€ah€ama¨jg:14108:57¤aa€al€am\000ô\000ah€ig:6622:63¤aa€al€am\000øPah€d2815¤aa€al€ah€am\000€e10127¤aa€al€ah€amœ@d4054¤aa€al€am&¬ah€e21931¤aa€al€ah€am e22222¤aa€al€ah€am\000Öig:1992:38¤aa€al€ah€am\000Ğ,e19221¤aa€al€ah€am\000‰T@kg:31335:100¤aa€al€ah€am\000J›jg:24699:81¤aa€al€am\000¿ ah€d6040¤aa€al€ah€am&¬e21844¤aa€al€ah€am\000ô\000e17026¤aa€al€ah€amL“e15579¤aa€al€ah€am.àjg:10166:54¤aa€al€ah€amNig:1809:26¤aa€al€am=mah€jg:21934:20¤aa€al€ah€am&¬ig:4368:20¤aa€al€ah€amYöig:4318:26¤aa€al€ah€am2Èe24852¤aa€al€ah€am\000Ãüig:7433:37¤aa€al€amÀah€e21843¤aa€al€ah€am\000zVe24841¤aa€al€ah€amá¸e14841¤aa€al€ah€am\000¶„e22834¤aa€al€ah€amg jg:25330:99¤aa€al€am\000­°ah€d4289¤aa€al€ah€am'e12361¤aa€al€ah€am0Îe15312¤aa€al€ah€amN e24262¤aa€al€ah€am\000˜–€d8154¤aa€al€ah€am?jg:15272:59¤aa€al€ah€am\000~@ig:9863:37¤aa€al€ah€amBhd1715¤aa€al€ah€am\000æ0d4715¤aa€al€ah€amNce24694¤aa€al€ah€am\000-Öjg:25353:66¤aa€al€ah€amN d8492¤aa€al€ah€am\000	'¿e19702¤aa€al€ah€am”e13896¤aa€al€am\000,EÒah€d8389¤aa€al€am\000Çah€jg:24950:93¤aa€al€ah€amÂ…d6571¤aa€al€am>€ah€ig:9490:29¤aa€al€ah€am\000\r@ig:1973:59¤aa€al€ah€am\000„~jg:12040:38¤aa€al€ah€am\000F¶e25027¤aa€al€ah€am\000Iïe21767¤aa€al€ah€amèld9845¤aa€al€ah€amË&e27696¤aa€al€am\000„†ah€ig:3786:39¤aa€al€am\000Dcah€e15358¤aa€al€ah€amçÛe24054¤aa€al€ah€am\000[=e20659¤aa€al€ah€amYØe10370¤aa€al€ah€amê`kg:25179:108¤aa€al€ah€am\000¼8jg:11972:40¤aa€al€amN ah€e32852¤aa€al€ah€am\0001d9254¤aa€al€ah€am\000o+ig:9920:44¤aa€al€am\000ah€e31214¤aa€al€ah€am\000¡ d8254¤aa€al€am\000† ah€ig:7445:38¤aa€al€ah€am:—d6615¤aa€al€ah€amª°ig:7478:43¤aa€al€ah€am›Ükg:24894:114¤aa€al€ah€am\000Ô¿e31940¤aa€al€am\000ªzah€e24826¤aa€al€ah€am\000”ëig:4047:43¤aa€al€ah€am•	e23489¤aa€al€ah€am\000èe29723¤aa€al€ah€am\000-ÆÀe10311¤aa€al€ah€am\000†<kg:24670:114¤aa€al€ah€am\000\\jg:24721:90¤aa€al€ah€am\000¡€e24275¤aa€al€ah€am\000	\rjg:10189:55¤aa€al€ah€am\000÷ e23630¤aa€al€ah€am\000\njg:15236:52¤aa€al€ah€am\000“Od8142¤aa€al€ah€am\000pe24027¤aa€al€ah€am\000?Õkg:24757:105¤aa€al€ah€am\000_e22841¤aa€al€ah€amâ*ig:4308:12¤aa€al€amĞah€e16696¤aa€al€am\000óÛah€jg:28493:94¤aa€al€ah€am\000«Åd6311¤aa€al€am\000/ah€e22824¤aa€al€ah€am)xig:9834:32¤aa€al€ah€am'e19813¤aa€al€ah€am\000~ûd8202¤aa€al€ah€am\000¦èjg:14167:19¤aa€al€ah€amDe10214¤aa€al€ah€amcœd3202¤aa€al€ah€am\000qDd7354¤aa€al€ah€amNig:2307:18¤aa€al€amah€ig:8254:53¤aa€al€am\000† ah€d4354¤aa€al€ah€am\000c.kg:24680:117¤aa€al€ah€am\0008€jg:14579:31¤aa€al€ah€am'ig:8161:40¤aa€al€am\000Ü&ah€e10301¤aa€al€ah€am\000p8kg:25108:105¤aa€al€ah€am\000Rìd2011¤aa€al€ah€am\000·ig:1486:24¤aa€al€ah€am\000B@e23093¤aa€al€ah€am\000e14325¤aa€al€ah€am¿he23517¤aa€al€ah€am\000Ÿd3836¤aa€al€ah€am’Ád4037¤aa€al€ah€am6¯e32716¤aa€al€am\000ûĞah€e10191¤aa€al€amN ah€e24623¤aa€al€ah€am\000Ùe17708¤aa€al€ah€am<‹e29957¤aa€al€ah€am\000\ná'e14418¤aa€al€ah€amZåe18650¤aa€al€ah€am\000“jg:12045:56¤aa€al€ah€amu0e20869¤aa€al€am\000w[ah€e23638¤aa€al€ah€am\000;Xe12695¤aa€al€ah€am`kg:24988:105¤aa€al€ah€am\000×jg:24859:99¤aa€al€ah€am\000	kg:31155:109¤aa€al€ah€am\000W0e30421¤aa€al€ah€amœ@jg:24075:93¤aa€al€am\000¿ah€e25161¤aa€al€ah€am\000\"àe13866¤aa€al€ah€amøe24202¤aa€al€ah€am\0005e14288¤aa€al€ah€amu0jg:24860:99¤aa€al€ah€am\000lôjg:15506:21¤aa€al€ah€am'e40008¤aa€al€am\000oah€e21301¤aa€al€ah€amNe12210¤aa€al€ah€amÊe24930¤aa€al€ah€am\000Rškg:30032:128¤aa€al€ah€am\000Æ]@e17720¤aa€al€ah€am\000uWe25125¤aa€al€ah€am\000äe11325¤aa€al€am\\ah€jg:24849:96¤aa€al€ah€am\000Ğjg:13109:49¤aa€al€am\000øah€e14130¤aa€al€am\000¿ ah€kg:24899:114¤aa€al€ah€am\000†ig:3653:15¤aa€al€ah€am|e11370¤aa€al€ah€amüe27695¤aa€al€ah€am\0004Oe15370¤aa€al€ah€amœ@jg:14779:49¤aa€al€amê`ah€ig:2310:13¤aa€al€ah€am\000{œig:2194:25¤aa€al€ah€am\000	Xjg:10028:47¤aa€al€ah€am\000…Øe24638¤aa€al€ah€am\000\r@kg:25083:114¤aa€al€ah€am\000İĞig:6603:30¤aa€al€ah€amtÌe31399¤aa€al€ah€am\000!pajg:13033:34¤aa€al€ah€am\000ve21852¤aa€al€am\000­¯ah€ig:7053:35¤aa€al€ah€am‚e36908¤aa€al€ah€am2Èig:7533:44¤aa€al€am\000q`ah€e15628¤aa€al€amHDah€ig:9942:50¤aa€al€ah€amu0e10113¤aa€al€amwŸah€e45628¤aa€al€am—şah€ig:8259:50¤aa€al€ah€am\000Iğd3927¤aa€al€am\000‰T@ah€e13930¤aa€al€am¿ah€e14217¤aa€al€ah€am¶+ig:4048:31¤aa€al€ah€amu0e23096¤aa€al€ah€am­pe25003¤aa€al€ah€am\000­¯ig:4041:39¤aa€al€amK\000ah€e23523¤aa€al€ah€am\000&% e31175¤aa€al€ah€am\000,6e12226¤aa€al€ah€am\000Le10063¤aa€al€ah€am\000Pd2278¤aa€al€am\000ûah€ig:9945:48¤aa€al€ah€am\000$øe21841¤aa€al€ah€am\000He31886¤aa€al€ah€am\000iİe10332¤aa€al€ah€am\000	e33866¤aa€al€ah€am&Fig:7064:42¤aa€al€ah€am\000­³ig:9797:28¤aa€al€ah€am'd4093¤aa€al€ah€amtjg:12026:59¤aa€al€ah€am\000Iğig:9868:35¤aa€al€am:˜ah€e24867¤aa€al€ah€am\000	d4336¤aa€al€ah€amÃId5565¤aa€al€ah€am\000­¯jg:13896:30¤aa€al€am\000,EÒah€e24756¤aa€al€am\000ÔÀah€e15501¤aa€al€ah€am@kg:33122:120¤aa€al€ah€am\000ä“ d7278¤aa€al€ah€am%e24812¤aa€al€am\000Ì_ah€jg:25439:18¤aa€al€ah€am7jg:24725:93¤aa€al€ah€am\000Ô¿e15514¤aa€al€ah€amd¢e12020¤aa€al€am9Ğah€ig:1988:38¤aa€al€ah€amDÀe15325¤aa€al€ah€am\0008€e25088¤aa€al€am·ôah€ig:6264:23¤aa€al€am\000`ah€ig:5423:20¤aa€al€ah€am\000‰²e25720¤aa€al€ah€am\000Iğe21864¤aa€al€ah€am\000~ïe24628¤aa€al€amÃPah€e27858¤aa€al€ah€amâe15392¤aa€al€ah€ama¨e32676¤aa€al€ah€am\000„e24584¤aa€al€am\000á[ah€jg:31133:85¤aa€al€ah€am\000æÈe24964¤aa€al€ah€am\0008€jg:24932:84¤aa€al€ah€am\000_e17038¤aa€al€amfah€d9915¤aa€al€am\000ÎXah€d9305¤aa€al€ah€am!˜ig:6564:21¤aa€al€ah€am/ge14529¤aa€al€amìah€ig:1443:60¤aa€al€ah€am\000iÿe13758¤aa€al€ah€amQe21945¤aa€al€ah€am\000]œjg:14157:24¤aa€al€ah€amhêd3305¤aa€al€ah€amâe14501¤aa€al€ah€am\000•cjg:10113:57¤aa€al€amwŸah€e23628¤aa€al€am\000-¼üah€e13020¤aa€al€am\000ah€c873¤aa€al€ah€am\000e¹ªe23884¤aa€al€ah€am\000L=”d2915¤aa€al€am\000\rğah€e25696¤aa€al€ah€am\000#Û°e15696¤aa€al€ah€am\000B?jg:21779:62¤aa€al€am\000I‹ah€jg:15092:55¤aa€al€ah€am›Øe24720¤aa€al€ah€am\000Zğjg:24694:81¤aa€al€ah€am\000-Öe32194¤aa€al€ah€am\000W¼ğe10186¤aa€al€ah€amÃOd7478¤aa€al€ah€am›Üd4278¤aa€al€ah€amˆjg:20549:63¤aa€al€ah€am\000zig:4827:28¤aa€al€ah€am\"we32207¤aa€al€am\000(m›ah€jg:21932:17¤aa€al€am‡ah€jg:15608:44¤aa€al€amN ah€jg:31125:85¤aa€al€ah€am\000¥Pe31164¤aa€al€ah€am\000	ëd8133¤aa€al€ah€am›Üe30815¤aa€al€ah€am«àe20815¤aa€al€ah€am\000›°e20475¤aa€al€ah€am\000|e22153¤aa€al€ah€am\000moe14421¤aa€al€am\000pah€jg:15947:28¤aa€al€ah€am'e21853¤aa€al€ah€am\000¯e14657¤aa€al€ah€am\000še32063¤aa€al€ah€am-×ig:8189:42¤aa€al€ah€amJ;e31908¤aa€al€ah€am\000åÏe31191¤aa€al€ah€am\000zd9405¤aa€al€ah€am\000\"ße22541¤aa€al€ah€am\000<ÿ<d9917¤aa€al€ah€am[e24696¤aa€al€ah€am\000_e10403¤aa€al€am\000ah€kg:24121:115¤aa€al€ah€am\000ig:2243:62¤aa€al€ah€am\000,˜Bjg:15572:39¤aa€al€ah€am'd8951¤aa€al€ah€amékg:29505:105¤aa€al€ah€am\000Dƒd9876¤aa€al€ah€am\000Åc159¤aa€al€ah€am„ig:1720:46¤aa€al€ah€am\000‚Ôig:9934:44¤aa€al€ah€amœ@jg:14094:11¤aa€al€ah€am@d9378¤aa€al€am\000¡ah€e25325¤aa€al€am\000vdah€d7378¤aa€al€ah€am'e10072¤aa€al€ah€amœ?e20501¤aa€al€am\000‚pah€e29739¤aa€al€ah€am6°e32225¤aa€al€ah€am\000¡ee42225¤aa€al€am\000¿Éah€e25185¤aa€al€am\000'İah€e27499¤aa€al€ah€amkg:25197:120¤aa€al€ah€am\000Iğd6406¤aa€al€ah€am+¿jg:14574:26¤aa€al€ah€am¦•d9406¤aa€al€ah€am\000\r» jg:15500:24¤aa€al€ah€am\000˜e14191¤aa€al€am®±ah€ig:4782:18¤aa€al€ah€amkg:24092:114¤aa€al€ah€am\000fÎÎe19276¤aa€al€am\0005gàah€jg:10019:45¤aa€al€am\000Úxah€e15759¤aa€al€ah€am:—e15120¤aa€al€ah€am!4e25120¤aa€al€ah€am\000àøjg:24918:81¤aa€al€am\0008ah€ig:6365:10¤aa€al€amŒah€e21855¤aa€al€am\000Ô¿ah€ig:7494:41¤aa€al€ah€am«cd3478¤aa€al€ah€am›ig:7332:45¤aa€al€am¯‡ah€e32720¤aa€al€ah€am\000½Pjg:31126:85¤aa€al€ah€am\000!‘Àe12720¤aa€al€am\000sæah€e15638¤aa€al€amN ah€jg:15625:47¤aa€al€ah€am\000wHe32756¤aa€al€ah€am\000•äe21072¤aa€al€ah€am\n(e31871¤aa€al€ah€am\000\nÊ‰d9375¤aa€al€am\000LK@ah€kg:31287:109¤aa€al€ah€am\000Ö\000jg:11971:37¤aa€al€ami7ah€e10627¤aa€al€ah€am\000]d1478¤aa€al€ah€amXe14166¤aa€al€ah€am‡jg:15248:20¤aa€al€ah€amLe24801¤aa€al€ah€am\000\rİ‰e32226¤aa€al€ah€am\000W'kg:24981:102¤aa€al€ah€am\000°şe11026¤aa€al€am\000W.ah€e31501¤aa€al€ah€am\000Dd9939¤aa€al€ah€amNjg:12031:44¤aa€al€ah€amMXig:4328:36¤aa€al€ah€amu0d4375¤aa€al€ah€am#jg:25198:81¤aa€al€ah€am\000U÷jg:14570:28¤aa€al€ah€amê`d6375¤aa€al€ah€amUğjg:17922:10¤aa€al€ah€am#(e20964¤aa€al€ah€amM»e20747¤aa€al€ah€amÎd2578¤aa€al€am|ah€d3208¤aa€al€ah€am\000¹Hhg:720:28¤aa€al€ah€am\000óNd5578¤aa€al€ah€am\000Ğd6578¤aa€al€ah€ampig:5111:15¤aa€al€ah€am2Èig:6549:14¤aa€al€ah€amqig:6615:29¤aa€al€ah€amª°ig:2970:16¤aa€al€ah€amM¼kg:24997:108¤aa€al€am\000ÉËah€e12364¤aa€al€ah€amoLjg:12982:21¤aa€al€ah€am\000r?e38908¤aa€al€am\000ópah€d5974¤aa€al€ah€amsjg:25036:99¤aa€al€ah€am\000Ñe15779¤aa€al€ah€ama¨ig:4569:14¤aa€al€ah€am#jg:12992:23¤aa€al€am\000–Óah€e12683¤aa€al€ah€am\000¿e13063¤aa€al€ah€am\000[`d6347¤aa€al€am‡ah€ig:4798:25¤aa€al€am\000‘ah€e31554¤aa€al€ah€am\000mkg:24863:102¤aa€al€ah€am\000ÔÀe24788¤aa€al€ah€am\000d¼kg:25205:102¤aa€al€ah€am\000½ñd4406¤aa€al€ah€am*e18168¤aa€al€ah€am\000]…e42780¤aa€al€ah€amŒd7406¤aa€al€ah€am\000|d3840¤aa€al€ah€amu0d2840¤aa€al€ah€amĞe27678¤aa€al€ah€am´ig:5969:23¤aa€al€ah€amzd8206¤aa€al€ah€ama¨hg:870:40¤aa€al€am\000&% ah€d9840¤aa€al€amN ah€d7075¤aa€al€ah€amŞ¨e13016¤aa€al€ah€am\000B@e14788¤aa€al€amKah€e25005¤aa€al€amê`ah€d2098¤aa€al€am\000;Jah€jg:24594:84¤aa€al€ah€am\000Iğjg:24747:99¤aa€al€ah€am\000‚pe18731¤aa€al€ah€amÂ‡jg:10233:57¤aa€al€amıèah€jg:10089:45¤aa€al€ah€amùId4247¤aa€al€ah€am$e38432¤aa€al€ah€am\000‰T@d2075¤aa€al€ah€am‡e20866¤aa€al€ah€amˆ¶d3239¤aa€al€am\000‰T@ah€jg:11992:63¤aa€al€ah€amĞüe20826¤aa€al€ah€am'd4244¤aa€al€amfOah€e18361¤aa€al€am\000Ô¿ah€jg:10205:49¤aa€al€amN ah€jg:15386:48¤aa€al€ah€am\000U”ig:9815:25¤aa€al€ah€am'd4306¤aa€al€ah€amDd6274¤aa€al€ah€amiwhg:936:38¤aa€al€am\000×Xah€ig:5780:18¤aa€al€ah€am\000@e14293¤aa€al€ah€am\000ºğjg:15522:29¤aa€al€ambah€e10106¤aa€al€am\000Ç;ah€jg:16702:58¤aa€al€ah€am\000zèe24646¤aa€al€am\000Ğah€d4340¤aa€al€ah€am'e29454¤aa€al€ah€am\000sd7538¤aa€al€amŠ±ah€d9940¤aa€al€am˜Xah€d2742¤aa€al€ah€amHig:3056:26¤aa€al€am17ah€e15770¤aa€al€ah€am\0008e10274¤aa€al€ah€am\000òcd4347¤aa€al€ah€am'd7742¤aa€al€ah€am\000ìe22604¤aa€al€ah€am\000Wee24669¤aa€al€ah€am\000¯jg:31247:88¤aa€al€am\000\r?ah€e35627¤aa€al€am)ah€e24678¤aa€al€am\000ÔÀah€c929¤aa€al€ah€am4ig:9801:25¤aa€al€am%ah€e10026¤aa€al€amÃOah€e21866¤aa€al€ah€am\000ze24731¤aa€al€ah€am¶Jhg:2852:9¤aa€al€ah€am'jg:23499:99¤aa€al€ah€am\000m¾d9806¤aa€al€ah€amJ8d3206¤aa€al€ah€amÖÈig:3292:13¤aa€al€ah€amÃOd9206¤aa€al€ah€am5èe16710¤aa€al€am\000\r@ah€d3575¤aa€al€ah€am¸d2889¤aa€al€am\000¡ ah€ig:8116:47¤aa€al€ah€amu0e31866¤aa€al€ah€amIĞjg:14900:40¤aa€al€ah€amê_ig:6402:36¤aa€al€ah€am:—d1206¤aa€al€ah€am\0007Êd6889¤aa€al€am\nŠah€d6407¤aa€al€améúah€d3842¤aa€al€ah€am#nd2842¤aa€al€ah€ame25021¤aa€al€ah€am\000\r@kg:24252:112¤aa€al€ah€am\000-ÆÀd6372¤aa€al€ah€am¨jg:13049:29¤aa€al€am\000İ9ah€e29160¤aa€al€ah€amèlkg:25337:120¤aa€al€ah€am\000Y¬ig:1974:22¤aa€al€ah€am\000f¢d3047¤aa€al€ah€am;jd4047¤aa€al€ah€am•	kg:23507:106¤aa€al€am\0004œah€d6047¤aa€al€ah€am\000Kte22866¤aa€al€ah€am\000e18780¤aa€al€am\000\r>ah€ig:1782:30¤aa€al€ah€am'e15168¤aa€al€am¤ah€e25168¤aa€al€ah€am\000€e19710¤aa€al€ah€amÃAjg:15504:22¤aa€al€ah€amQËig:9405:33¤aa€al€ah€am\000\"ßjg:14761:34¤aa€al€am3ah€jg:14224:39¤aa€al€ah€amœ¤jg:15009:11¤aa€al€am/¨ah€jg:12009:33¤aa€al€amu0ah€ig:7354:33¤aa€al€ah€amNig:2080:34¤aa€al€ah€am'e24695¤aa€al€am\000Ûah€d3340¤aa€al€am ah€e25237¤aa€al€am\000ah€jg:15508:19¤aa€al€ah€amM¼d3680¤aa€al€am\000¡ ah€e24908¤aa€al€ah€am\000˜d4542¤aa€al€ah€amWd5542¤aa€al€ah€amƒ=d6542¤aa€al€ah€am\0004˜jg:14568:23¤aa€al€ah€amœ>ig:9849:36¤aa€al€am.ßah€e29731¤aa€al€ah€am\000&çd6540¤aa€al€ah€amÇd7541¤aa€al€ah€amÃPe21723¤aa€al€am\000€—ah€jg:12005:62¤aa€al€ah€am\000Ğe21842¤aa€al€ah€am\000$”c789¤aa€al€ah€am\r¬kg:25066:105¤aa€al€ah€am\000Óòd1640¤aa€al€amœ?ah€jg:10184:52¤aa€al€ah€am\000Ëkg:25127:120¤aa€al€ah€am\000Ô«d5540¤aa€al€amĞKah€d3647¤aa€al€amU‚ah€e18710¤aa€al€ah€am\000âHe22850¤aa€al€ah€ams d6342¤aa€al€ah€amNkg:24907:117¤aa€al€am\000æ.ah€jg:15548:32¤aa€al€ah€amN e14367¤aa€al€ah€amN d7440¤aa€al€ah€amUïe25843¤aa€al€ah€am\000æ0ig:9808:28¤aa€al€ah€amN d3806¤aa€al€am…Rah€e24582¤aa€al€ah€am\000\r@e25669¤aa€al€am\0004Pah€d4342¤aa€al€ah€amûjg:12987:22¤aa€al€ah€am\000Ÿig:3055:26¤aa€al€ah€amsìe43674¤aa€al€améôah€jg:14436:46¤aa€al€ah€amN jg:10091:47¤aa€al€ah€amšnjg:29157:36¤aa€al€amyah€e21546¤aa€al€ah€am»€e24955¤aa€al€ah€am\000†9e15407¤aa€al€ah€am–Èe12711¤aa€al€am\0008‚ah€ig:3202:24¤aa€al€ah€am\000qDd3199¤aa€al€am?ah€d4333¤aa€al€amÃPah€ig:5966:38¤aa€al€amˆah€e13068¤aa€al€ah€am\000\rÚàig:6557:16¤aa€al€ah€am	Äjg:24949:90¤aa€al€ah€am\000È jg:15212:27¤aa€al€am:˜ah€ig:3020:33¤aa€al€ah€am\000Iïjg:15114:19¤aa€al€am&¬ah€e35581¤aa€al€ah€am\000YjŸe25309¤aa€al€ah€am\000“àd8197¤aa€al€ah€amfie35563¤aa€al€ah€am·jg:18986:52¤aa€al€ah€am\000P/d2882¤aa€al€ah€am&«d7540¤aa€al€ama¨ah€e15367¤aa€al€ah€amßbd4706¤aa€al€am6°ah€e31900¤aa€al€ah€am\0001FLe12684¤aa€al€ah€am\000sig:8307:60¤aa€al€ah€am\000Jêd5342¤aa€al€ah€am/ˆe24674¤aa€al€ah€am\000q°d7469¤aa€al€ah€am\000Ó7e22903¤aa€al€ah€am\000\nod9747¤aa€al€ah€amLjg:31139:88¤aa€al€ah€am\000w@e15186¤aa€al€am\0004Pah€e25186¤aa€al€ah€am\000Ğd8141¤aa€al€ah€amFPe14407¤aa€al€ah€am\000«úd6238¤aa€al€ah€am”e24843¤aa€al€ah€amÃPd7070¤aa€al€ah€amp€e34068¤aa€al€ah€am&¬c769¤aa€al€am¸ah€c869¤aa€al€ah€am\000&ş¢ig:9789:19¤aa€al€ah€am¸e22788¤aa€al€ah€amtËe38466¤aa€al€ah€amÀd5961¤aa€al€ah€am'e22451¤aa€al€ah€am\000†|jg:25158:87¤aa€al€ah€am\000qœig:1718:43¤aa€al€ah€am\000sSkg:31288:109¤aa€al€ah€am\000ğ€e32582¤aa€al€ah€am.Àig:9402:60¤aa€al€ah€am\000˜ig:4244:20¤aa€al€amfOah€e15623¤aa€al€ah€am\000öDe15016¤aa€al€amÈah€e35623¤aa€al€ah€amfİkg:24791:117¤aa€al€ah€am\000ÔÀe25016¤aa€al€ah€am\000ÔÀd7447¤aa€al€ah€am'kg:40347:213¤aa€al€am\000¾¼ah€e10079¤aa€al€am\000‘¹ah€d5266¤aa€al€am\000õĞah€e13005¤aa€al€ah€am\000†(e23519¤aa€al€ah€am\000/ˆe43367¤aa€al€ah€am4d5257¤aa€al€ah€am\000Íe24780¤aa€al€ah€am\000vQig:4062:45¤aa€al€am\000¸Sah€e24589¤aa€al€am\000(vah€ig:7728:34¤aa€al€ah€am\0006Œe34086¤aa€al€ah€am\000IŒe28282¤aa€al€ah€am\000:\"jg:15123:28¤aa€al€am\000Yêah€jg:15113:23¤aa€al€ah€am`Ükg:31338:100¤aa€al€am\000vh€ah€e24755¤aa€al€ah€am\000³¾e20295¤aa€al€ah€am\0001Z¯d2771¤aa€al€amŒŸah€ig:4718:35¤aa€al€ah€am6°jg:24698:81¤aa€al€am\000­°ah€jg:15217:54¤aa€al€am\000†Ÿah€e13007¤aa€al€ah€am\000Iğe14843¤aa€al€am\000‹ah€e15313¤aa€al€ah€am\000¡ed1447¤aa€al€ah€am\000T\000e25695¤aa€al€ah€am\000w@ig:4082:47¤aa€al€amN ah€e31157¤aa€al€ah€am\000	ësig:2583:19¤aa€al€ah€amÃPjg:14656:44¤aa€al€amœ?ah€e24627¤aa€al€ah€am\000pe24903¤aa€al€ah€am\000† jg:14602:39¤aa€al€ah€amNig:8250:52¤aa€al€am\000† ah€jg:17723:40¤aa€al€ah€am\000ÔÀe13454¤aa€al€ah€amu%e33782¤aa€al€ah€am\0004—e16712¤aa€al€am\000XUah€jg:10159:59¤aa€al€am\000ªpah€ig:4836:28¤aa€al€am\000Dah€e29292¤aa€al€ah€amse14565¤aa€al€ah€am¸ig:9809:28¤aa€al€am&¬ah€e22828¤aa€al€ah€am\000Gûd9790¤aa€al€ah€amN e32068¤aa€al€ah€am6©e28539¤aa€al€am\000Ğah€e12284¤aa€al€ah€am\000†ig:1168:59¤aa€al€ah€am\000¶¥Ïe25099¤aa€al€ah€am\000		‚kg:32392:130¤aa€al€ah€am\000'¿Çjg:14960:51¤aa€al€ah€amÃPe20451¤aa€al€ah€am\000	ojg:11983:26¤aa€al€ah€amN d3020¤aa€al€ah€am\000Iïe14376¤aa€al€ah€am&«jg:23836:70¤aa€al€am\000ˆ·ÿah€e10582¤aa€al€ah€am\000_ig:6511:11¤aa€al€am?ah€jg:10168:56¤aa€al€ah€am\000ÔÀig:1263:60¤aa€al€ah€am\000\r6Ğe18701¤aa€al€ah€am\000	e24946¤aa€al€ah€am\000}˜e14755¤aa€al€am\000ah€jg:15946:23¤aa€al€ah€ama¨e14946¤aa€al€ah€amÃPig:4079:40¤aa€al€amŠœah€e27674¤aa€al€ah€am\\e23098¤aa€al€ah€am$Ojg:13005:28¤aa€al€ah€am\000†(e14343¤aa€al€ah€amše18594¤aa€al€ah€am\000{¿°jg:15251:43¤aa€al€ah€am»{ig:9852:38¤aa€al€amEìah€kg:25093:102¤aa€al€ah€am\000\r@e19706¤aa€al€ah€amÜkg:24642:102¤aa€al€ah€am\000!'e10331¤aa€al€ah€am|jg:24842:93¤aa€al€ah€amœ@e12998¤aa€al€ah€am\0000e12239¤aa€al€ah€am\000ıse10558¤aa€al€ah€am¸ig:7474:40¤aa€al€amN ah€e10507¤aa€al€ah€am±qe10245¤aa€al€am\000† ah€d9155¤aa€al€ah€am\000{¨@ig:7409:33¤aa€al€ah€am,#kg:25169:120¤aa€al€ah€am\000îÈd7357¤aa€al€améah€jg:24583:81¤aa€al€am\000¹şah€ig:4326:37¤aa€al€ah€amFe14344¤aa€al€ah€amùqig:5540:23¤aa€al€amĞKah€e20818¤aa€al€ah€amXe20576¤aa€al€ah€am\000¡ e18743¤aa€al€ah€am\000uíe13946¤aa€al€ah€amÚ+kg:31212:109¤aa€al€am\000¡ ah€jg:12249:31¤aa€al€ah€am\000UÚe23445¤aa€al€ah€amhsd9833¤aa€al€ah€am\0008€d1982¤aa€al€ah€am\000q¯e24653¤aa€al€ah€amÆwe14155¤aa€al€ah€am\000Îâe20526¤aa€al€ah€am\000[°kg:28538:102¤aa€al€am\000ÔÀah€e24900¤aa€al€ah€am\000Á•e14900¤aa€al€ah€amê_e31250¤aa€al€am\000˜ah€jg:13133:61¤aa€al€am\000÷Ÿah€e29394¤aa€al€ah€am\000\n90ig:8194:43¤aa€al€am\000¤êah€ig:3053:28¤aa€al€amah€e18640¤aa€al€ah€amÃPd3204¤aa€al€amhah€ig:6572:23¤aa€al€amœ<ah€d8119¤aa€al€am\0008€ah€e23507¤aa€al€am\0004œah€e17706¤aa€al€ah€am\000\nI&kg:21859:106¤aa€al€am\000\rÙ¯ah€jg:12985:22¤aa€al€ah€am\000\r@e31299¤aa€al€ah€am\000?jg:10206:48¤aa€al€ah€am'jg:24628:96¤aa€al€amÃPah€e24820¤aa€al€am·˜ah€e24901¤aa€al€ah€am\000ge27501¤aa€al€ah€am®jg:10413:19¤aa€al€ah€am\000\r@e24711¤aa€al€ah€amÃPd2951¤aa€al€ah€am\000\n%¨jg:10581:40¤aa€al€ah€am¶¤øe25417¤aa€al€ah€amˆjg:18295:55¤aa€al€ah€am\000A¡\"e25674¤aa€al€ah€am\000:Rkg:24765:108¤aa€al€ah€am\000† jg:11303:16¤aa€al€amcœah€ig:7112:41¤aa€al€am\000LBah€e33053¤aa€al€ah€am=ig:4794:25¤aa€al€amN ah€jg:12013:49¤aa€al€ah€am\000ìjg:10087:46¤aa€al€ah€amu0e27669¤aa€al€ah€amFe24838¤aa€al€am¯Èah€e12250¤aa€al€ah€am\000ûËig:7412:32¤aa€al€ah€amtÌe16245¤aa€al€am\000~6ah€jg:10142:62¤aa€al€ah€amN kg:24097:114¤aa€al€ah€am\000	\000°e25130¤aa€al€ah€am\000† e31329¤aa€al€ah€am\000e`e20422¤aa€al€am\000İĞah€ig:4052:35¤aa€al€ah€amu/e25305¤aa€al€ah€am\0003·d5969¤aa€al€ah€amzig:9877:38¤aa€al€ah€amu0ig:1726:36¤aa€al€ah€am\000Ì¨d9906¤aa€al€ah€amu0ig:9798:29¤aa€al€ah€am@e11027¤aa€al€ah€am\000äêe14799¤aa€al€amŞ¨ah€jg:31269:18¤aa€al€ah€am!4d6512¤aa€al€ah€amb™e25217¤aa€al€ah€am\000ÿGe20538¤aa€al€ah€am\0005\000e23118¤aa€al€ah€amDİe27671¤aa€al€ah€am|e10180¤aa€al€ah€am\000ÔÀig:9853:34¤aa€al€ah€amN e32410¤aa€al€ah€am\000\r˜wjg:14262:45¤aa€al€am\000pah€ig:3654:14¤aa€al€ah€amN e23494¤aa€al€ah€amä„e10212¤aa€al€am\000\\üah€jg:10147:60¤aa€al€amê`ah€e15285¤aa€al€ah€am»e23499¤aa€al€ah€am\000m¾ig:5183:20¤aa€al€ah€am\000½d6796¤aa€al€ah€am|e10002¤aa€al€am\000…Øah€c867¤aa€al€ah€am\000W/ig:7055:35¤aa€al€ah€am&¬kg:25107:102¤aa€al€ah€am\0000 jg:15384:50¤aa€al€ah€am\000 ¬d4390¤aa€al€ah€am	ºe10603¤aa€al€ah€am\000õ‡e20745¤aa€al€ah€amÔäe15510¤aa€al€am@ah€e19279¤aa€al€ah€am\000Ì¦e13499¤aa€al€ah€am\000;d2079¤aa€al€ah€amÍkg:24675:114¤aa€al€ah€am\000xĞe31338¤aa€al€am\000vh€ah€e39005¤aa€al€ah€am\000\r»_e21833¤aa€al€am'ah€e24876¤aa€al€ah€am\000Rµjg:14160:19¤aa€al€ah€amEe19933¤aa€al€ah€am\",e19258¤aa€al€ah€am\000LK@jg:24706:84¤aa€al€ah€am¤e19712¤aa€al€ah€amœ2ig:2802:43¤aa€al€ah€am\000† e39900¤aa€al€amëah€jg:13897:10¤aa€al€ah€am\000¨€e25038¤aa€al€ah€am\000ce10593¤aa€al€ah€amMXd4784¤aa€al€amĞah€e27663¤aa€al€ah€am&d5576¤aa€al€ah€am'd6576¤aa€al€amRlah€jg:10132:51¤aa€al€ah€ama§e11081¤aa€al€am\000q¦ah€jg:25232:99¤aa€al€am\000Ğah€e13028¤aa€al€ah€am\000_ig:1717:30¤aa€al€ah€am\000†jg:16802:66¤aa€al€ah€am\000	Sig:9756:14¤aa€al€ah€ama¨e24703¤aa€al€amÌLah€d8298¤aa€al€am\000â\000ah€d6585¤aa€al€ah€amGe14499¤aa€al€ah€am\0008€d7068¤aa€al€ah€amOig:4707:26¤aa€al€ah€am\000Ğd8836¤aa€al€ah€amØjg:14782:45¤aa€al€ah€amù~e15761¤aa€al€ah€am™çe13056¤aa€al€ah€am\000\"Şe21940¤aa€al€ah€am\000lNe24648¤aa€al€ah€am\000åÉig:2982:20¤aa€al€ah€amFPc865¤aa€al€ah€amN e18712¤aa€al€ah€am\000(jg:10279:58¤aa€al€ah€am\000«d1645¤aa€al€ah€am,kg:31165:103¤aa€al€ah€am\000Ì_e24631¤aa€al€ah€am\000Iğig:9895:40¤aa€al€ah€am'e24092¤aa€al€ah€am\000fÎÎe17011¤aa€al€ah€am\000mig:9906:44¤aa€al€ah€amu0e23135¤aa€al€ah€am\000y(d9865¤aa€al€amN ah€kg:24678:117¤aa€al€am\000ÔÀah€e24739¤aa€al€ah€amÃPkg:24786:114¤aa€al€ah€am\000«Xe10237¤aa€al€ah€am£¬kg:32658:115¤aa€al€ah€am\000” kg:24682:117¤aa€al€ah€am\000Êe23621¤aa€al€ah€am\000ğig:2077:29¤aa€al€ah€amUğe23381¤aa€al€ah€am\000{œ}e15499¤aa€al€ah€am@e24250¤aa€al€ah€am\000\rĞæe13135¤aa€al€am\000† ah€e33208¤aa€al€ah€am\000ˆpe12628¤aa€al€ah€am\000rpßd6603¤aa€al€ah€amtÌjg:16059:20¤aa€al€amu-ah€jg:14302:56¤aa€al€amu0ah€ig:6419:38¤aa€al€ah€am'd7465¤aa€al€ah€am\000<Dd3485¤aa€al€ah€amÃPe31679¤aa€al€ah€am\000tjg:25314:93¤aa€al€ah€am\000\r@e18344¤aa€al€ah€am\000¿ e13146¤aa€al€ah€am\000De30308¤aa€al€ah€am\000¤ée13900¤aa€al€amwah€e25211¤aa€al€ah€am\000eºe13038¤aa€al€ah€am\000YDe14758¤aa€al€amN ah€ig:3204:26¤aa€al€amhah€e31237¤aa€al€ah€am\000Şe24754¤aa€al€am\000êèah€e25184¤aa€al€ah€am\000Ä°jg:24703:84¤aa€al€amÌLah€ig:3309:16¤aa€al€ah€am'd2740¤aa€al€ah€amd3740¤aa€al€ah€am*øe24742¤aa€al€ah€am\000šğd5740¤aa€al€ah€am\000$÷d2565¤aa€al€ah€am\000Ğe24575¤aa€al€ah€am\000±shg:942:52¤aa€al€ah€am\000kg:31298:115¤aa€al€ah€am\000Ú/e21992¤aa€al€ah€am\000oig:6578:23¤aa€al€ah€ampe38327¤aa€al€ah€amkig:3482:26¤aa€al€am Ğah€e36901¤aa€al€am$ah€d1725¤aa€al€ah€am\"^e15250¤aa€al€am'ah€ig:3480:22¤aa€al€ah€am	^kg:33173:115¤aa€al€ah€am\000Ú\000e10604¤aa€al€ah€amJ,e14211¤aa€al€am.àah€d9942¤aa€al€ah€amu0e25246¤aa€al€ah€am\0004Pjg:13895:60¤aa€al€ah€am?0ig:4717:34¤aa€al€ah€am&e10316¤aa€al€ah€am´Se10122¤aa€al€ah€amÃPjg:14168:20¤aa€al€ah€amb½d4825¤aa€al€ah€amUd3825¤aa€al€ah€am	Ãd2825¤aa€al€ah€am\000-µ,ig:1679:36¤aa€al€ah€ama¨e36921¤aa€al€am©rah€d5465¤aa€al€ah€ame41441¤aa€al€ah€amê_e15573¤aa€al€am'ah€e13931¤aa€al€ah€am*e25126¤aa€al€am\000Îah€e33457¤aa€al€ah€amfe19270¤aa€al€am\000IŒah€jg:14433:46¤aa€al€am\000Iğah€e15184¤aa€al€am\000òah€kg:24761:105¤aa€al€am\000ûah€e14939¤aa€al€am\000°ah€e24996¤aa€al€ah€am\000à0jg:10252:64¤aa€al€ah€am\000† jg:25273:96¤aa€al€ah€am\000„€jg:13016:26¤aa€al€ah€am\000B@d4625¤aa€al€ah€am'e15248¤aa€al€ah€amLkg:25208:111¤aa€al€ah€am\000ökg:24763:105¤aa€al€ah€amÉ*jg:14251:40¤aa€al€ah€am‚e12704¤aa€al€ah€amthe32715¤aa€al€am\000	Xah€d9825¤aa€al€ah€amu0e15092¤aa€al€ah€am›Øe25092¤aa€al€am\000ÊĞah€jg:31236:91¤aa€al€ah€am\000e15149¤aa€al€amg4ah€e41594¤aa€al€am\000½·ah€d4725¤aa€al€ah€amê_e24211¤aa€al€ah€am\0000Ç}d2725¤aa€al€ah€am\n(jg:31170:82¤aa€al€ah€am\000“àe23424¤aa€al€ah€am3•d8365¤aa€al€ah€am)e13939¤aa€al€ah€am\000¯e22573¤aa€al€ah€amûkg:25004:111¤aa€al€ah€am\000èGe25200¤aa€al€ah€am\000‚pd8214¤aa€al€amŠãah€jg:15995:52¤aa€al€ah€am\000\rce20876¤aa€al€ah€am\000ókig:2291:49¤aa€al€ah€am\000=e12996¤aa€al€ah€am\000oFig:7353:35¤aa€al€ah€am7wig:7524:44¤aa€al€amÃPah€jg:14270:45¤aa€al€am\000Xah€e31913¤aa€al€ah€am\000JÄ jg:14321:55¤aa€al€am\000Øah€d3465¤aa€al€ah€amÍe24939¤aa€al€ah€am\000Le14126¤aa€al€ah€am3†ig:3430:44¤aa€al€ah€amu0jg:19051:58¤aa€al€am\000\n\r¯ah€e31903¤aa€al€ah€am\000	¼e16055¤aa€al€ah€am\000LK?e28270¤aa€al€ah€am\000pÃ0jg:31191:94¤aa€al€ah€am\000zjg:14940:43¤aa€al€am\000˜Ôah€d6565¤aa€al€ah€amN jg:10213:58¤aa€al€am\0005”ah€d1625¤aa€al€ambƒah€jg:15229:55¤aa€al€ah€am\000† ig:8271:56¤aa€al€ah€am\0008€e24657¤aa€al€ah€am\000/Òig:4055:34¤aa€al€amu/ah€e41444¤aa€al€amˆ¶ah€e34861¤aa€al€ah€amÙjg:25255:84¤aa€al€ah€am\000Èig:8313:62¤aa€al€am\000â\000ah€e31876¤aa€al€ah€am\000mÈe21876¤aa€al€ah€am\0006»d9900¤aa€al€ah€am:˜ig:7456:38¤aa€al€ah€amJ8e12838¤aa€al€am\000“ßah€d9968¤aa€al€ah€am«™e24861¤aa€al€amœ@ah€e14861¤aa€al€ah€amu0d7476¤aa€al€ah€am\000†e13464¤aa€al€ah€am7d5765¤aa€al€am»€ah€e11223¤aa€al€ah€amÃPjg:13025:37¤aa€al€am\000Ô¿ah€e31223¤aa€al€ah€am\000	#td4765¤aa€al€amÀpah€d5788¤aa€al€ah€am\000†<e24200¤aa€al€ah€am\000-Ÿ¯ig:4090:46¤aa€al€ah€am\000ô\000e33092¤aa€al€ah€am\000{¯=e15575¤aa€al€ah€amu0kg:24888:111¤aa€al€ah€am\000ÈÀe23092¤aa€al€ah€am\000kg:25079:102¤aa€al€ah€am\000† e23427¤aa€al€ah€amUkg:23515:112¤aa€al€ah€am\0000d9768¤aa€al€ah€amW·ig:6406:34¤aa€al€ah€am+¿kg:25057:120¤aa€al€ah€am\000\r?e14573¤aa€al€am\000¹ah€ig:2878:30¤aa€al€ah€am}Èe38785¤aa€al€am%\"ah€ig:4735:41¤aa€al€ah€amÃNjg:24710:87¤aa€al€ah€am\000ÛÎig:9426:41¤aa€al€ah€am\000*×ig:4768:15¤aa€al€ah€am§ájg:15935:34¤aa€al€ah€amN jg:31192:94¤aa€al€am\000lĞah€jg:28496:99¤aa€al€ah€am\000ÔÀe23141¤aa€al€ah€am\000kg:25124:111¤aa€al€am\000î$ah€jg:15287:45¤aa€al€ah€amu0jg:14774:43¤aa€al€amÃPah€e32223¤aa€al€am\000Oah€e23152¤aa€al€ah€am\000:±e12223¤aa€al€ah€amWd3665¤aa€al€ah€am+jg:16712:59¤aa€al€am\000XUah€e25323¤aa€al€ah€am\000Iğig:7495:44¤aa€al€ah€am\000u\\jg:24926:84¤aa€al€am\000\nüah€d5525¤aa€al€ah€amSe32200¤aa€al€ah€am\000\n`;e10505¤aa€al€ah€ama¤jg:24824:87¤aa€al€ah€am\000W+e24797¤aa€al€ah€am\000ûĞhg:810:54¤aa€al€ah€am\000	m§ig:3201:28¤aa€al€ah€am#'d4335¤aa€al€ah€am\000\r@e18656¤aa€al€ah€am\000Zàe18647¤aa€al€ah€am\000·ne32381¤aa€al€ah€amìe31211¤aa€al€ah€am\000K˜e15270¤aa€al€ah€am\000† e10546¤aa€al€ah€am\0003œe11184¤aa€al€ah€am.àjg:15339:34¤aa€al€ah€am\000]pe10201¤aa€al€ah€am\000èjg:15282:60¤aa€al€ah€am\000üe10629¤aa€al€ah€am\000Ô„d9779¤aa€al€ah€am\"`e21845¤aa€al€ah€am\000'd6042¤aa€al€ah€am\000‰T@e10123¤aa€al€ah€am\000† e16861¤aa€al€ah€am\000'e36904¤aa€al€ah€am3d7676¤aa€al€ah€am.d4768¤aa€al€ah€am§áig:4035:31¤aa€al€am'ah€e14752¤aa€al€ah€am@e24752¤aa€al€am\000âtah€jg:25259:96¤aa€al€am\000âüah€jg:24732:93¤aa€al€ah€am\000Hïjg:24632:99¤aa€al€am\000“|ah€e14797¤aa€al€ah€amvhig:5257:37¤aa€al€ah€am\000Íe14327¤aa€al€ah€amN ig:6219:10¤aa€al€ah€am·2d7435¤aa€al€ah€am'e43126¤aa€al€ah€am6÷e32211¤aa€al€am\000\"™jah€e14223¤aa€al€ah€am'e40211¤aa€al€ah€amœ@ig:5001:27¤aa€al€am~ôah€kg:24914:120¤aa€al€ah€am\000éd4345¤aa€al€ah€amxig:4828:27¤aa€al€ah€amiëd1769¤aa€al€ah€am.|d9842¤aa€al€amu0ah€d9879¤aa€al€ah€amu0ig:4816:24¤aa€al€am\0000zah€d9868¤aa€al€am:˜ah€e48126¤aa€al€ah€am\000=ãe10939¤aa€al€ah€ame25861¤aa€al€ah€amNe14747¤aa€al€ah€am‚ig:6383:24¤aa€al€am†4ah€d3868¤aa€al€ah€am”‡hg:2389:5¤aa€al€am\000`Sah€jg:15495:15¤aa€al€ah€amˆd2868¤aa€al€ah€amOjg:24948:90¤aa€al€ah€am\000±6e15752¤aa€al€ah€amê`jg:10195:55¤aa€al€amÈ\000ah€hg:868:43¤aa€al€ah€am\000	ì\"kg:24909:117¤aa€al€ah€am\000Iïig:3483:27¤aa€al€amLah€ig:9788:18¤aa€al€ah€amCçe22575¤aa€al€ah€am?ig:9972:42¤aa€al€amu/ah€d2579¤aa€al€amu/ah€e15647¤aa€al€am¤ah€d9242¤aa€al€ah€am'e23444¤aa€al€ah€am<d6579¤aa€al€ah€amcjjg:15256:59¤aa€al€am\000† ah€d8265¤aa€al€ah€am\000Iíe14425¤aa€al€am\000Œxah€ig:4262:37¤aa€al€am\000	M!ah€e16647¤aa€al€ah€am	Ãe32656¤aa€al€ah€am\000:e38558¤aa€al€ah€amôd3345¤aa€al€ah€ame19236¤aa€al€ah€am\000†<e12184¤aa€al€ah€am&jg:10072:51¤aa€al€ah€amœ?d4568¤aa€al€ah€amOtd1679¤aa€al€ah€ama¨e15239¤aa€al€ah€am\000_e13126¤aa€al€ah€am\000fäe20861¤aa€al€ah€amq d8110¤aa€al€am\000Ó²ah€ig:4733:46¤aa€al€ama¨ah€d6365¤aa€al€amŒah€jg:24629:99¤aa€al€ah€am\000†8d4365¤aa€al€ah€amd9301¤aa€al€ah€am¾lig:7416:31¤aa€al€ah€am\000‰·e15996¤aa€al€am\000B@ah€e20955¤aa€al€ah€amu-jg:24931:84¤aa€al€ah€am\000vd4235¤aa€al€ah€am(Ÿjg:12628:57¤aa€al€ah€am\000rpßkg:31308:115¤aa€al€ah€am\000²Økg:24753:102¤aa€al€ah€am\000\r@d8165¤aa€al€ah€am{e14370¤aa€al€ah€am\000ig:7922:43¤aa€al€amu/ah€d3184¤aa€al€amMXah€jg:10270:63¤aa€al€ah€am\000$øe14270¤aa€al€am\000Xah€e13023¤aa€al€ah€am\000B?e23629¤aa€al€ah€am\000&/dd4265¤aa€al€ah€amvd2245¤aa€al€ah€am\000–e24270¤aa€al€ah€am\000\n‡Pkg:24999:111¤aa€al€ah€am\000Iğe12845¤aa€al€am\000†Ÿah€e22845¤aa€al€ah€am\000#e11971¤aa€al€ami7ah€e39998¤aa€al€am\000Šah€e31184¤aa€al€ah€am\000dpig:1608:47¤aa€al€ah€am\000pkg:24766:108¤aa€al€ah€am\000Ëüjg:16840:66¤aa€al€ah€am\000=ÿe31200¤aa€al€am\000nXah€e33042¤aa€al€am'ah€e24785¤aa€al€ah€am\000‚¸e14785¤aa€al€ah€amNd6266¤aa€al€ah€amAËe24629¤aa€al€ah€am\000†8d2879¤aa€al€ah€amu.hg:851:15¤aa€al€ah€am\000*€çig:2309:15¤aa€al€amôah€e15517¤aa€al€ah€am@e31877¤aa€al€ah€am\000öTjg:13103:38¤aa€al€ah€am\000_d4065¤aa€al€amNah€d4379¤aa€al€ah€amu0d3065¤aa€al€ah€am“şd4552¤aa€al€ah€am(äe19260¤aa€al€ah€am\000\nöèe14476¤aa€al€amèkah€e12425¤aa€al€ah€am`e25178¤aa€al€ah€am\000\"àe22861¤aa€al€ah€am\000Cğc866¤aa€al€ah€amcœig:1830:28¤aa€al€am\\Zah€e29204¤aa€al€am\000$Kah€e20971¤aa€al€ah€ams6jg:15017:19¤aa€al€ah€am7—d5368¤aa€al€am\000¡ah€d4368¤aa€al€ah€amYöjg:14744:28¤aa€al€ah€am\000IÍd6368¤aa€al€ah€am\000&jg:18510:62¤aa€al€ah€am\000.¸d8368¤aa€al€ah€am·e22617¤aa€al€ah€am\000Âëig:4049:28¤aa€al€ah€amtÌe36913¤aa€al€amSîah€e25655¤aa€al€ah€am\000Ç¶e20752¤aa€al€ah€amjg:18639:60¤aa€al€ah€am\000B@kg:24661:111¤aa€al€ah€am\000ÔÀe31270¤aa€al€ah€am\000Ußig:3194:21¤aa€al€ah€am\000àğjg:10104:59¤aa€al€am\000;urah€jg:24612:90¤aa€al€ah€am\000ôig:9861:35¤aa€al€ah€am'e13075¤aa€al€ah€am\000  d7479¤aa€al€am\000pah€d4479¤aa€al€ah€am\000‰T@d5479¤aa€al€amèah€d4320¤aa€al€ah€am\000áve14184¤aa€al€ah€amâd2320¤aa€al€ah€ame32679¤aa€al€ah€am\000B?ig:4243:17¤aa€al€am:˜ah€e12435¤aa€al€ah€amèe23425¤aa€al€ah€amZkg:25008:114¤aa€al€ah€am\000_kg:24901:114¤aa€al€ah€am\000gjg:25298:87¤aa€al€ah€am\000Iïig:9824:32¤aa€al€ah€am´zkg:24692:120¤aa€al€ah€am\000cjjg:25670:96¤aa€al€am\000†ah€e31861¤aa€al€ah€am\000?ªd6468¤aa€al€ah€amà›jg:13088:41¤aa€al€ah€am\000pÀd3194¤aa€al€ah€am\000àğe25907¤aa€al€ah€am\000\000öe14668¤aa€al€ah€amê`e12365¤aa€al€ah€amPe15348¤aa€al€ah€am\"`d1468¤aa€al€ah€am&ig:2271:23¤aa€al€ah€am\0008jg:15521:27¤aa€al€ah€am2Èd9420¤aa€al€ah€am\000`<jg:16861:66¤aa€al€ah€am\000'e15384¤aa€al€ah€am\000 ¬d7552¤aa€al€ah€amš°d6590¤aa€al€ah€am'd6420¤aa€al€ah€amšCd7420¤aa€al€ah€amœ@ig:6540:18¤aa€al€ah€amÇe14833¤aa€al€ah€amrBkg:25266:117¤aa€al€ah€am\000†¸e24921¤aa€al€ah€am\000† e33048¤aa€al€ah€amSkg:24801:120¤aa€al€ah€am\000\rİ‰e24822¤aa€al€ah€am¯Èkg:24667:111¤aa€al€ah€am\000ig:4320:25¤aa€al€ah€am\000ávc118¤aa€al€ah€ambig:6660:55¤aa€al€ah€am\000r†kg:21860:109¤aa€al€am\000pûah€e24962¤aa€al€ah€am\0008jg:10329:37¤aa€al€ah€am( d9490¤aa€al€ah€am\000\r@e10182¤aa€al€am\000B@ah€jg:25282:81¤aa€al€am\000ù¸ah€d5001¤aa€al€am~ôah€jg:15242:30¤aa€al€ah€amÏxe24617¤aa€al€ah€am\000$bd7520¤aa€al€ah€am\000B@jg:30544:65¤aa€al€ah€am\000-Æ\\ig:3806:37¤aa€al€am…Rah€e11974¤aa€al€ah€amˆ¸e39916¤aa€al€am•>ah€jg:25119:96¤aa€al€ah€am\000hŒig:1523:36¤aa€al€ah€amŠ3e44465¤aa€al€ah€am\000Hw@jg:12988:22¤aa€al€ah€amÜ*ig:2778:13¤aa€al€amèah€ig:4316:22¤aa€al€ah€ama¨d3212¤aa€al€am\000hĞah€d7279¤aa€al€ah€amSd8279¤aa€al€ah€am\000Ğe15566¤aa€al€ah€amœ@kg:24683:117¤aa€al€ah€am\000W0e15276¤aa€al€ah€am\000Iğe15513¤aa€al€amN ah€e13066¤aa€al€ah€am\000~îe24679¤aa€al€ah€am\000Ğjg:14096:16¤aa€al€amKah€e10270¤aa€al€ah€am\000$øe13064¤aa€al€am\000dFah€e10091¤aa€al€ah€amšne10210¤aa€al€ah€am\000òe21829¤aa€al€ah€am'e39934¤aa€al€amah€d8268¤aa€al€am\0008€ah€jg:10369:58¤aa€al€ah€ama¨d3382¤aa€al€ah€am¸ig:7458:37¤aa€al€ah€amu0e25020¤aa€al€ah€am\000–e39996¤aa€al€am\000ğ~ah€jg:15891:26¤aa€al€ah€am'kg:24805:120¤aa€al€ah€amçœjg:11965:20¤aa€al€ah€amSûd3473¤aa€al€ah€am0Ôjg:25174:93¤aa€al€ah€am\000W0d9036¤aa€al€ah€am#Œkg:31284:109¤aa€al€ah€am\000…Ñd8006¤aa€al€am\000Ô¿ah€d5976¤aa€al€ah€am\000njig:4737:44¤aa€al€ah€am\000[¶jg:10231:55¤aa€al€am\0008€ah€kg:31332:100¤aa€al€ah€am\000ı$°jg:24607:90¤aa€al€am\000 ah€e24918¤aa€al€am\0008ah€e14608¤aa€al€ama¨ah€e24608¤aa€al€ah€am©.d6588¤aa€al€ah€amƒe28459¤aa€al€ah€amÃPjg:13009:51¤aa€al€ah€am\000¢se25679¤aa€al€amu0ah€e41092¤aa€al€ah€amsŸkg:24668:111¤aa€al€ah€am\000æ0jg:10008:43¤aa€al€am\000«¯ah€e11732¤aa€al€ah€am\000SØe13091¤aa€al€ah€am\000dùd8218¤aa€al€am-Nah€e25282¤aa€al€am\000ù¸ah€e23091¤aa€al€ah€am\000\n,*e25084¤aa€al€am\000\n¬£ah€e14128¤aa€al€am\000\r3ah€ig:9854:38¤aa€al€ah€am'd4388¤aa€al€ah€am\000¶e24983¤aa€al€ah€am\000†<e31303¤aa€al€ah€am\000\n®]e23633¤aa€al€ah€am\0005\000c818¤aa€al€ah€amøig:3719:30¤aa€al€ah€amÇ8jg:15660:61¤aa€al€am\0008€ah€jg:25076:93¤aa€al€ah€am\000İĞe14512¤aa€al€am\000­¥ah€e10184¤aa€al€ah€am\000Ëe27425¤aa€al€ah€amçd7459¤aa€al€ah€am%e38837¤aa€al€am\000”Êah€e22562¤aa€al€ah€amìkg:24979:102¤aa€al€ah€am\0008€e14551¤aa€al€ah€am\000,¸e25294¤aa€al€ah€am\000	%Ìe32402¤aa€al€ah€am\000Æ60e10721¤aa€al€ah€am\000\n®`e15608¤aa€al€amN ah€jg:31270:18¤aa€al€ah€am\000Ußjg:10630:51¤aa€al€ah€am\0003;Ke25335¤aa€al€ah€am\000	'Àd6388¤aa€al€am\"Âah€jg:14652:45¤aa€al€ah€am\000jg:25274:99¤aa€al€am\000_ah€jg:14327:58¤aa€al€ah€amN kg:31213:109¤aa€al€am\000¡ ah€jg:14906:44¤aa€al€am¯âah€jg:14913:49¤aa€al€ah€amÃPkg:31399:115¤aa€al€ah€am\000!pae24948¤aa€al€ah€am\000±6e20551¤aa€al€ah€am\000\rğe11983¤aa€al€ah€amN d7409¤aa€al€ah€am,#e14160¤aa€al€ah€amEig:7611:46¤aa€al€amVLah€ig:7484:41¤aa€al€ah€amqGe23528¤aa€al€amÃPah€jg:15167:48¤aa€al€am\000W0ah€e13949¤aa€al€ah€am\000xĞe12009¤aa€al€amu0ah€ig:9424:41¤aa€al€ah€am\000Âë¿ig:7960:52¤aa€al€am\000æ”ah€e34054¤aa€al€ah€am6®e31298¤aa€al€ah€am\000Ú/e11610¤aa€al€ah€am™çkg:31299:115¤aa€al€ah€am\000?e13303¤aa€al€amÈah€jg:12006:22¤aa€al€ah€am\000+µd6055¤aa€al€ah€am\000S\000e10092¤aa€al€amÃPah€e43013¤aa€al€ah€am‘e15332¤aa€al€amáah€jg:15544:32¤aa€al€ah€am\0000e21942¤aa€al€ah€am\0008~e18335¤aa€al€ah€amFDe16204¤aa€al€ah€am7e15522¤aa€al€ambah€e31572¤aa€al€ah€am\000  d4330¤aa€al€ah€am#&e12644¤aa€al€ah€amøe15612¤aa€al€ah€amˆig:4065:36¤aa€al€amNah€e31160¤aa€al€am\000ã`ah€d4308¤aa€al€amĞah€e12983¤aa€al€ah€am\000Le24747¤aa€al€ah€am\000‚pe24715¤aa€al€ah€am\000Yˆkg:31570:115¤aa€al€ah€am\000]pe13067¤aa€al€ah€am\000iàe22622¤aa€al€ah€am\000Iòe20859¤aa€al€ah€am%äe15349¤aa€al€ah€amÃPkg:24262:105¤aa€al€ah€am\000˜–€e15425¤aa€al€ah€amÃPkg:24250:112¤aa€al€ah€am\000\rĞæe32577¤aa€al€am\000yuÀah€ig:1481:25¤aa€al€ah€am¤Øig:4570:15¤aa€al€ah€amôjg:15011:15¤aa€al€ah€am‡†d2699¤aa€al€am\000¡ ah€e25018¤aa€al€ah€am\000.e14025¤aa€al€am%ah€d5972¤aa€al€am*øah€e39905¤aa€al€am$§ah€e25894¤aa€al€ah€am\000\rı jg:14786:47¤aa€al€am\000˜ah€kg:24878:108¤aa€al€ah€am\000Ae18702¤aa€al€am\000Xah€e14091¤aa€al€ah€am&¬e27515¤aa€al€ah€amšõe10398¤aa€al€ah€am\000 e14186¤aa€al€ah€am!fe36916¤aa€al€ah€am8¢d8925¤aa€al€ah€am¤Ød7429¤aa€al€ah€am\000ó|jg:24858:99¤aa€al€ah€am\000ŒÚig:3039:23¤aa€al€ah€amZjig:3782:35¤aa€al€am\000d°ah€d2390¤aa€al€ah€am\000¡ jg:17050:52¤aa€al€ah€am\000¡ e17683¤aa€al€ah€ama¥jg:23490:99¤aa€al€am\000\rdah€e18365¤aa€al€ah€am\000>Xjg:24961:96¤aa€al€ah€am\0008e24663¤aa€al€ah€am\000¿ e24971¤aa€al€ah€amÃPe24877¤aa€al€ah€am\000+d3831¤aa€al€ah€amûód2457¤aa€al€ah€amÌ€e24056¤aa€al€ah€am\000òjg:14255:42¤aa€al€ah€am\000–Ae22728¤aa€al€ah€am\000† d8491¤aa€al€ah€am\0004şkg:32389:130¤aa€al€ah€amûe12800¤aa€al€ah€amu0e24933¤aa€al€ah€am\000¹d8952¤aa€al€ah€amjg:10130:50¤aa€al€am8¤ah€e15231¤aa€al€ah€am\"`e25231¤aa€al€ah€am\000Á8e14569¤aa€al€ah€am!4ig:9890:38¤aa€al€am&¬ah€e32390¤aa€al€ah€am\000=‹5e14949¤aa€al€ah€amÃOe24949¤aa€al€ah€am\000È jg:13102:47¤aa€al€ah€am\000Ì¨e31186¤aa€al€ah€am\000Ğe10024¤aa€al€ah€amu/d7752¤aa€al€ah€am\000	jg:18298:56¤aa€al€ah€am\000\nße20553¤aa€al€am\000æah€c858¤aa€al€ah€amd9852¤aa€al€amEìah€d3283¤aa€al€ah€am#(e11186¤aa€al€ah€am'jg:24964:96¤aa€al€ah€am\0008€e22608¤aa€al€ah€am¤\re10504¤aa€al€ah€amÃPe24917¤aa€al€ah€am\0004Pkg:24987:105¤aa€al€ah€am\000¡ e24032¤aa€al€ah€am\000:ijg:14266:47¤aa€al€ah€amu0e25191¤aa€al€ah€am\000Iğd1685¤aa€al€ah€amrØe16248¤aa€al€ah€ama;e24778¤aa€al€ah€am\000\n®`jg:25229:90¤aa€al€ah€am\0004e15979¤aa€al€am'ah€d1830¤aa€al€am\\Zah€d9841¤aa€al€ah€amN jg:24582:81¤aa€al€ah€am\000\r@e18294¤aa€al€ah€ampjg:11411:28¤aa€al€am\000†<ah€jg:10098:53¤aa€al€ah€am\000Hd1521¤aa€al€ah€amàÿe21902¤aa€al€ah€am\000øPe29533¤aa€al€ah€am\000òe10206¤aa€al€ah€am'e15974¤aa€al€ah€amLd5752¤aa€al€am\000† ah€d7945¤aa€al€ah€am\000Ì^e25286¤aa€al€ah€am\000† e15286¤aa€al€ah€am le39717¤aa€al€ah€am\000ì‚Ùjg:13047:58¤aa€al€ah€am\000¡d3730¤aa€al€ah€am‚c828¤aa€al€ah€amòkg:25317:102¤aa€al€ah€am\000­¯e22202¤aa€al€ah€amLe24080¤aa€al€am\000O€ah€e14962¤aa€al€ah€am\000Ğ¸e13032¤aa€al€ah€am\000Ğjg:13129:39¤aa€al€ah€am\000ó€jg:24604:87¤aa€al€ah€am\000“àe31294¤aa€al€ah€am\000Kwe15995¤aa€al€ah€am\000\rcjg:15137:33¤aa€al€ah€amN e25032¤aa€al€am\000ŒÕah€e10728¤aa€al€am\000×ğah€jg:20906:15¤aa€al€amÀah€e31889¤aa€al€ah€am\000\"KLd5631¤aa€al€ah€am!fe14566¤aa€al€ah€amN jg:14164:21¤aa€al€ah€am&¬e19259¤aa€al€ah€am\000Dkg:24778:111¤aa€al€ah€am\000\n®`ig:4998:24¤aa€al€ah€amÃPkg:31330:100¤aa€al€ah€am\00096{e24902¤aa€al€ah€am\000†<e27688¤aa€al€ah€am\000_d6452¤aa€al€ah€amãe28595¤aa€al€ah€am{jjg:25326:87¤aa€al€ah€am\000† e14942¤aa€al€ah€amœ@d2452¤aa€al€ah€am»jg:14560:19¤aa€al€ah€am/gjg:14950:46¤aa€al€ah€am\000m	e25691¤aa€al€ah€am\000@e33186¤aa€al€ah€am\000yêğig:7528:48¤aa€al€ah€am\000~‰e25080¤aa€al€ah€am\000\n*Ğjg:15965:49¤aa€al€ah€amu0d2553¤aa€al€ah€amEˆe10713¤aa€al€ah€am\000ƒwe32401¤aa€al€ah€am\000§±°kg:35682:183¤aa€al€ah€am\000	'e13902¤aa€al€ah€amN e25263¤aa€al€ah€am\000e11304¤aa€al€ah€am|6e24751¤aa€al€ah€am\000˜kg:31333:100¤aa€al€ah€am\000<Ø+e40094¤aa€al€amê¬ah€e24713¤aa€al€ah€am\000† e15894¤aa€al€ah€am0Ôjg:13096:60¤aa€al€ah€am\000İÏe15569¤aa€al€amtÌah€jg:24726:93¤aa€al€ah€am\000™’jg:13031:28¤aa€al€amæxah€e10069¤aa€al€ah€am¯Èe15236¤aa€al€ah€am\000“Oe24688¤aa€al€ah€am\000Iïe14806¤aa€al€ah€am\000ÚOe25236¤aa€al€am\000Œah€c728¤aa€al€am\000¡ ah€jg:25059:84¤aa€al€ah€am\000\r@e17020¤aa€al€ah€am'jg:15250:32¤aa€al€am'ah€kg:31572:115¤aa€al€ah€am\000  e41491¤aa€al€am\000mah€kg:25006:114¤aa€al€ah€am\000Iğjg:24838:93¤aa€al€am¯Èah€d4359¤aa€al€ah€amd7352¤aa€al€ah€amKÈe10286¤aa€al€amgah€e38862¤aa€al€amyÔah€ig:3304:14¤aa€al€ah€am\000&% d9746¤aa€al€ah€am(ôig:8215:50¤aa€al€ah€amŠãd4539¤aa€al€ah€amse20877¤aa€al€ah€am\000:Äe11290¤aa€al€am-õah€e14365¤aa€al€ah€am‡e24598¤aa€al€ah€am\000'xjg:15893:21¤aa€al€ah€am.kg:25685:106¤aa€al€ah€am\000\r“djg:20828:28¤aa€al€ah€amĞd8746¤aa€al€am‘uah€e11754¤aa€al€ah€am\rHe31914¤aa€al€am\000¤/@ah€e15282¤aa€al€ah€am\000üe15294¤aa€al€ah€am\000!e18510¤aa€al€ah€am\000.¸e25187¤aa€al€ah€am\000Iğd8201¤aa€al€ah€amu0e41479¤aa€al€ah€am\0008d2262¤aa€al€ah€am\000Ô¿ig:8131:50¤aa€al€ah€amE$jg:14128:60¤aa€al€am\000\r3ah€d3201¤aa€al€ah€am#'kg:25680:112¤aa€al€am\000Ğah€jg:15620:47¤aa€al€ah€amÖØe14795¤aa€al€ah€am\0008e22823¤aa€al€ah€am\000Ø^d7452¤aa€al€am\000“àah€e14444¤aa€al€ah€amœ@e19715¤aa€al€ah€am8?e10401¤aa€al€ah€amN e14505¤aa€al€am\000€ah€ig:6417:37¤aa€al€ah€amvàe10369¤aa€al€ah€ama¨jg:14420:38¤aa€al€am‡lah€jg:24933:84¤aa€al€ah€am\000¹e21752¤aa€al€ah€am3”kg:24764:105¤aa€al€ah€am\000Iğig:7729:33¤aa€al€ah€amÃPjg:31232:91¤aa€al€am\000[_ah€e24811¤aa€al€ah€am\000Ì_ig:4825:29¤aa€al€ah€amUe40032¤aa€al€am\000(ah€d7078¤aa€al€ah€amLe23520¤aa€al€ah€am\000&èğe12363¤aa€al€ah€am\000pe14282¤aa€al€ah€amN d4352¤aa€al€ah€amae36929¤aa€al€am9_ah€jg:13900:40¤aa€al€amwah€e25024¤aa€al€ah€am\000á¨e35566¤aa€al€ah€am\000“ße21949¤aa€al€ah€amŒ jg:10403:22¤aa€al€am\000ah€jg:10075:51¤aa€al€ah€amœ@d6329¤aa€al€am\000¡ ah€ig:3311:15¤aa€al€ah€am\000\n®`e14728¤aa€al€am”ah€e24595¤aa€al€ah€am\000!d3679¤aa€al€am\000¡ ah€e24728¤aa€al€ah€am\000(šc868¤aa€al€ah€am\000	ì\"c768¤aa€al€ah€amÃPe22446¤aa€al€ah€am¶¢d6614¤aa€al€amu0ah€ig:9938:48¤aa€al€ah€am\000ÔÀig:9959:45¤aa€al€ah€am\000ÔÀe10409¤aa€al€ama¨ah€jg:13001:61¤aa€al€am\000	'¿ah€e24866¤aa€al€ah€am\000† kg:24976:102¤aa€al€ah€am\000†9e39953¤aa€al€amXDah€e10104¤aa€al€am\000;urah€kg:23506:103¤aa€al€am\000°¥ah€kg:24643:102¤aa€al€ah€am\000te15164¤aa€al€amÃPah€ig:1522:36¤aa€al€ah€amL,e21861¤aa€al€ah€am\000áùig:7919:41¤aa€al€amM²ah€d8401¤aa€al€ah€am'e12974¤aa€al€ah€am\000od2244¤aa€al€ah€am\000\rmzd1318¤aa€al€ah€am\000%Á¢d4401¤aa€al€ah€am\000Òâkg:25039:108¤aa€al€ah€am\000W0d6401¤aa€al€ah€am\000Àjg:10258:60¤aa€al€ah€am\000~le31143¤aa€al€ah€am\000Güjg:15286:35¤aa€al€ah€am ljg:14914:46¤aa€al€ah€amN e15728¤aa€al€ah€am\000B?e21877¤aa€al€am2ah€e29157¤aa€al€amyah€d4059¤aa€al€ah€am5 d5110¤aa€al€ah€am¥Ÿd7368¤aa€al€ah€amu/e22658¤aa€al€ah€am\0000-ûe32658¤aa€al€ah€am\000” e13042¤aa€al€am\000\r?ah€ig:4037:30¤aa€al€ah€am6¯ig:1499:11¤aa€al€am”ah€e25905¤aa€al€ah€am\000‰ïe15545¤aa€al€ah€amÃPe33173¤aa€al€ah€am\000Ú\000e12231¤aa€al€ah€am\000d7470¤aa€al€ah€am\000…¢e32231¤aa€al€ah€am\000'¬@kg:30042:128¤aa€al€am\000ÓñĞah€jg:13867:61¤aa€al€am\0004Pah€ig:7527:50¤aa€al€amÃPah€ig:4379:26¤aa€al€ah€amu0d6552¤aa€al€ah€amN d7110¤aa€al€ah€am\000U‚jg:10080:50¤aa€al€amN ah€e25166¤aa€al€am\000\r@ah€d4481¤aa€al€ah€amÃPe24619¤aa€al€ah€am\000Ì¨jg:24602:87¤aa€al€ah€amÂéd4301¤aa€al€ah€am\000¡jg:14567:23¤aa€al€amÈah€jg:18296:56¤aa€al€ah€am\000¯7e27661¤aa€al€ah€amËd4242¤aa€al€amäah€ig:9802:26¤aa€al€ah€amàŸd6242¤aa€al€ah€amEe13444¤aa€al€ah€am!e20856¤aa€al€ah€am&Gd8150¤aa€al€ah€am†jg:21768:55¤aa€al€ah€am\000åjg:25324:81¤aa€al€am\000­°ah€ig:4687:14¤aa€al€amƒah€kg:24975:102¤aa€al€ah€am\000pjg:14833:44¤aa€al€ah€amrBe14304¤aa€al€am\000_ah€d1777¤aa€al€ah€am+\\hg:869:41¤aa€al€ah€am\000&ş¢jg:13057:28¤aa€al€am\000W0ah€d7450¤aa€al€am&Fah€e31282¤aa€al€ah€am\000\000àe32464¤aa€al€ah€am\nğd6450¤aa€al€ah€amId7758¤aa€al€ah€am\000“àd4394¤aa€al€ah€am\000ùƒf184937¤aa€al€am\000Ğah€kg:25305:108¤aa€al€ah€am\0003·e24974¤aa€al€ah€am\0008€jg:13014:53¤aa€al€ah€am\000¡ e10407¤aa€al€ah€amÃPe20407¤aa€al€ah€am'ig:2564:50¤aa€al€ah€amˆ·ig:9790:19¤aa€al€ah€amN e15323¤aa€al€amˆ¸ah€jg:20263:65¤aa€al€am\000¯ah€e11996¤aa€al€ah€am<Œe24647¤aa€al€ah€am\000áe25114¤aa€al€ah€am\000	d9435¤aa€al€ah€am\000ö€jg:15296:63¤aa€al€ah€am\000ÔÀd4035¤aa€al€am'ah€e32751¤aa€al€ah€am\000gd2450¤aa€al€ah€amñjg:15220:62¤aa€al€ah€am\000Iğig:9862:37¤aa€al€amAŸah€e16828¤aa€al€ah€am\000œ@jg:31142:88¤aa€al€ah€am\000\\¿kg:25041:114¤aa€al€am\000_ah€d3786¤aa€al€am\000Dcah€e23575¤aa€al€ah€am#Œe25220¤aa€al€ah€am\000&% e30282¤aa€al€ah€am\000[e10231¤aa€al€am\0008€ah€e38925¤aa€al€am\000-áïah€e10129¤aa€al€ah€am\000† ig:6527:13¤aa€al€ah€am<ğjg:14131:19¤aa€al€ah€am%kg:24253:112¤aa€al€ah€am\000ôhe48933¤aa€al€ah€am\000W\\e35624¤aa€al€ah€am\000\re16214¤aa€al€ah€am\000ñNpe15123¤aa€al€am\000Yêah€e24745¤aa€al€ah€amê`e14745¤aa€al€ah€am'e41146¤aa€al€ah€am\000Iîd5042¤aa€al€ah€am¯Àd4042¤aa€al€ah€am:˜d3042¤aa€al€ah€am\000d9179¤aa€al€ah€am'd6546¤aa€al€ah€am@td7546¤aa€al€ah€amˆ¸d3197¤aa€al€ah€am'e22797¤aa€al€ah€amfe11225¤aa€al€ah€am\000-•êe27651¤aa€al€ah€ampe23115¤aa€al€ah€amš°d1179¤aa€al€ah€am(jg:15260:38¤aa€al€ah€am\000jg:10226:61¤aa€al€ah€am\000©€jg:31249:88¤aa€al€ah€am\0002ÜÕig:8180:11¤aa€al€ah€amÛjg:14944:45¤aa€al€ah€amÃPkg:29378:108¤aa€al€ah€am\000\r?d7979¤aa€al€ah€am\000&hSjg:28497:99¤aa€al€ah€am\000pe12408¤aa€al€amu/ah€jg:24954:93¤aa€al€ah€amÃPe13754¤aa€al€ah€amâd1979¤aa€al€am\000G·^ah€kg:21852:102¤aa€al€am\000­¯ah€e12024¤aa€al€ah€am\000÷jg:25213:84¤aa€al€ah€am\000¾¼jg:24613:93¤aa€al€ah€am”pkg:24908:117¤aa€al€ah€am\000˜e10384¤aa€al€ah€am\000“àe15481¤aa€al€am¦ah€ig:1493:27¤aa€al€am\000W0ah€jg:10090:46¤aa€al€ah€am\000Üe22647¤aa€al€ah€am@Tig:3655:21¤aa€al€ah€am:d1465¤aa€al€ah€amL+e24640¤aa€al€ah€am\000(—e13479¤aa€al€ah€am\000òjg:10212:57¤aa€al€am\000\\üah€jg:31143:91¤aa€al€ah€am\000Güig:2256:24¤aa€al€ah€am\000† ig:4239:13¤aa€al€ah€am\000{šbe24761¤aa€al€am\000ûah€d2576¤aa€al€ah€am|âc936¤aa€al€am\000×Xah€d1168¤aa€al€ah€am\000¶¥Ïkg:24672:114¤aa€al€ah€am\000,€ig:9929:41¤aa€al€ah€am\000ñe15274¤aa€al€ah€am\000ue21114¤aa€al€ah€amd8350¤aa€al€ah€am\000\n®`ig:8143:46¤aa€al€ah€am\000DZe15121¤aa€al€ah€am\"e31233¤aa€al€ah€am\000lĞd8168¤aa€al€ah€amÖe14754¤aa€al€ah€am’pe13024¤aa€al€ah€am\000¡ e15211¤aa€al€ah€am@ig:3848:20¤aa€al€ah€am\000‚jg:32772:97¤aa€al€ah€am\000£ig:2912:32¤aa€al€ah€am\000ze11407¤aa€al€ah€amjg:13018:48¤aa€al€ah€am\000„e24931¤aa€al€ah€am\000vig:6413:37¤aa€al€ah€amN kg:24267:105¤aa€al€ah€am\000LK?d7446¤aa€al€ah€amWäe31283¤aa€al€ah€am\000×>e40347¤aa€al€am\000¾¼ah€e20974¤aa€al€am~ah€ig:7058:35¤aa€al€am˜ah€d6267¤aa€al€ah€am'Bd3610¤aa€al€ah€amKd6068¤aa€al€ah€aml˜jg:15131:32¤aa€al€amœ@ah€d4068¤aa€al€am_Nah€d7610¤aa€al€ah€amÃPd2750¤aa€al€ah€amfd7367¤aa€al€ah€amNig:1465:38¤aa€al€ah€amL+e10236¤aa€al€am\0008€ah€e18949¤aa€al€ah€am\000¶He24051¤aa€al€ah€am\000$Îjg:14431:44¤aa€al€amN ah€ig:9289:41¤aa€al€amê`ah€e13927¤aa€al€ah€am2=e13876¤aa€al€ah€am&¬d9850¤aa€al€ah€am5çd4350¤aa€al€ah€amÍjg:13059:52¤aa€al€am\000~@ah€ig:3212:26¤aa€al€am\000hĞah€jg:24580:66¤aa€al€ah€amÛÅe25051¤aa€al€ah€am¿gkg:25236:111¤aa€al€am\000Œah€d4386¤aa€al€ah€amÃPig:2059:24¤aa€al€ah€am\000!=e37663¤aa€al€ah€am\000\råjg:24941:87¤aa€al€ah€am\000­°ig:7407:35¤aa€al€ah€amO}ig:4999:27¤aa€al€ah€amˆd7079¤aa€al€ah€am( e14492¤aa€al€ah€am\000éig:1604:45¤aa€al€ah€am\000\\	e24889¤aa€al€ah€am\0008€d9765¤aa€al€ah€am@d4079¤aa€al€amŠœah€e24786¤aa€al€ah€am\000«Xd1710¤aa€al€ah€am°e48118¤aa€al€ah€am\000Ae19231¤aa€al€ah€am\000€Âd4710¤aa€al€am\\0ah€kg:25249:108¤aa€al€ah€am\000\r‘ig:2877:33¤aa€al€am\000Çfah€d2865¤aa€al€ah€amµjg:15214:40¤aa€al€amtÌah€e46377¤aa€al€amÖ;ah€e23104¤aa€al€ah€amfd8950¤aa€al€ah€am'jg:22661:80¤aa€al€ah€am\000<áğe18223¤aa€al€am$¸ah€kg:30825:114¤aa€al€ah€am\000$ÿig:4050:31¤aa€al€ah€amBgjg:14753:33¤aa€al€ah€am\000zjg:10242:52¤aa€al€ah€amÃPig:6433:43¤aa€al€amÒah€e24601¤aa€al€ah€am\0008e14786¤aa€al€am\000˜ah€e25680¤aa€al€am\000Ğah€e15324¤aa€al€am\0008€ah€e13889¤aa€al€ah€ama¨e10080¤aa€al€amN ah€e25316¤aa€al€ah€am\000† e31150¤aa€al€ah€am\000©€ig:20919:5¤aa€al€am\000“àah€ig:9395:34¤aa€al€ah€amÃPe25255¤aa€al€ah€am\000Èd8172¤aa€al€ah€am	`e20754¤aa€al€ah€am\0007¸jg:25653:70¤aa€al€ah€am\000Æjg:24719:90¤aa€al€ah€am\0005\000d9946¤aa€al€ah€amÃPkg:25001:111¤aa€al€ah€am\000SHkg:25687:112¤aa€al€ah€am\000,Ètjg:12010:37¤aa€al€ah€am'd9810¤aa€al€ah€amàÂd2880¤aa€al€ah€am'jg:15526:24¤aa€al€ah€am:˜d8838¤aa€al€ah€amjg:15929:37¤aa€al€amÎah€e15538¤aa€al€ah€am'jg:20664:65¤aa€al€ah€am\000Ğe17055¤aa€al€ah€am\000]ad1980¤aa€al€ah€am\000O€jg:15489:16¤aa€al€am9¤ah€d2852¤aa€al€ah€am'd6408¤aa€al€ah€am0Ôd4852¤aa€al€ah€amN ig:9778:20¤aa€al€ah€amKig:6405:36¤aa€al€ah€am:•e24668¤aa€al€ah€am\000æ0e24316¤aa€al€ah€am\000ñd3372¤aa€al€ah€am;`ig:2911:23¤aa€al€ah€am\000\r@e31080¤aa€al€ah€am\000:+jg:10030:48¤aa€al€ah€amèle32541¤aa€al€ah€am\000 7 e24706¤aa€al€ah€am¤e16649¤aa€al€ah€am¸e12828¤aa€al€am18ah€jg:24840:93¤aa€al€ah€am\000† jg:13114:30¤aa€al€ah€am\000vig:5216:45¤aa€al€ah€am\000*ig:9831:29¤aa€al€am#Zah€d9846¤aa€al€ah€amœ@d8846¤aa€al€ah€am=d7910¤aa€al€ah€am\0008}jg:10096:54¤aa€al€am\000˜ah€d9910¤aa€al€ah€am\000r8e11989¤aa€al€ah€amœ@e31236¤aa€al€ah€am\000jg:24625:96¤aa€al€ah€am\000EÈe10027¤aa€al€ah€amœ@e14743¤aa€al€ah€am'jg:11967:23¤aa€al€ah€am?e25327¤aa€al€ah€am\000rXkg:31200:100¤aa€al€am\000nXah€e13012¤aa€al€ah€am\000|jg:24942:90¤aa€al€ah€am\000ÍLig:1996:37¤aa€al€amTah€e32776¤aa€al€ah€am\000MÇ…jg:14552:55¤aa€al€ah€am\000hèe10028¤aa€al€ah€am\000…Ød7475¤aa€al€am¯Èah€d6475¤aa€al€ah€amS d9835¤aa€al€ah€am/¨jg:15270:46¤aa€al€ah€am\000† ig:9835:33¤aa€al€ah€am/¨d7755¤aa€al€ah€am\000İëe33459¤aa€al€ah€amÅe30156¤aa€al€ah€am\000yHd3835¤aa€al€ah€am*.e25649¤aa€al€ah€amød1475¤aa€al€ah€am/d2835¤aa€al€ah€amGd3475¤aa€al€ah€am}x@jg:14725:17¤aa€al€ah€amN d8386¤aa€al€ah€amD\\e19282¤aa€al€ah€am\000¥àe25226¤aa€al€am\000W0ah€ig:4838:26¤aa€al€am-Jah€jg:10216:58¤aa€al€am\000pah€e21779¤aa€al€am\000I‹ah€e14627¤aa€al€ah€am\000¡ jg:15274:52¤aa€al€ah€am\000ue10724¤aa€al€ah€am\000ã_jg:15228:53¤aa€al€ah€am\000Iğe13459¤aa€al€ah€amLŠjg:10188:56¤aa€al€ah€am\000Iğjg:14803:55¤aa€al€am\000k+ah€e15547¤aa€al€ah€am'ig:9864:36¤aa€al€amN ah€e24297¤aa€al€ah€am\000¤`jg:25187:90¤aa€al€ah€am\000Iğe15226¤aa€al€ah€am)ÿe10189¤aa€al€ah€am\000÷ d9775¤aa€al€ah€amN e15755¤aa€al€amtdah€d5528¤aa€al€am\000¡ ah€e12035¤aa€al€ah€am\000„8d1483¤aa€al€ah€am\000Iğe13492¤aa€al€ah€am\000©Ie15376¤aa€al€ah€am\000Rd4735¤aa€al€ah€amÃNd3735¤aa€al€ah€amod2735¤aa€al€ah€am$Iig:6241:10¤aa€al€amdah€d4775¤aa€al€ah€amTd5775¤aa€al€ah€amÃOd2775¤aa€al€ah€amèd3775¤aa€al€ah€am\000‰T@e15223¤aa€al€ah€amkg:25054:111¤aa€al€ah€am\000E/jg:10128:54¤aa€al€ah€am\000q\000e15256¤aa€al€am\000† ah€e23627¤aa€al€ah€am\000K\"âe25095¤aa€al€am\000Í¶ah€d2447¤aa€al€am_ah€e25313¤aa€al€ah€am\000­°e15731¤aa€al€ah€amMXkg:30036:128¤aa€al€ah€am\000yuÀe11813¤aa€al€am\000Iğah€e32193¤aa€al€ah€am\000qÜe19265¤aa€al€ah€am\000„¬jg:16672:59¤aa€al€ah€am\000O€e14226¤aa€al€am²èah€d4538¤aa€al€ah€am\000d6275¤aa€al€ah€am\000IŒe10300¤aa€al€ah€am8@e10312¤aa€al€ah€amævjg:15360:38¤aa€al€ah€am\000EŞd5635¤aa€al€ah€amğd9187¤aa€al€ah€am6ºd4606¤aa€al€ah€am¯d7474¤aa€al€amN ah€d5640¤aa€al€ah€am#‰ig:9873:37¤aa€al€ah€amM»e13065¤aa€al€ah€am\000­¬jg:24830:90¤aa€al€ah€amœ@d2072¤aa€al€ah€amY¸jg:15932:12¤aa€al€ah€am)Zd8275¤aa€al€ah€am\000\nLe24967¤aa€al€ah€am\000_d8308¤aa€al€ah€amœ@jg:15390:56¤aa€al€ah€am\000†<jg:24589:84¤aa€al€am\000(vah€d4540¤aa€al€ah€am2ig:8275:56¤aa€al€ah€am\000\nLe21900¤aa€al€ah€am\000me24645¤aa€al€ah€am\000	'¾d3866¤aa€al€am&«ah€d4960¤aa€al€ah€amXe24940¤aa€al€am\000«Kah€e28497¤aa€al€ah€am\000pe14241¤aa€al€amN ah€ig:2800:26¤aa€al€ah€am\000Îœe24114¤aa€al€ah€am\000Ì‚jg:14842:48¤aa€al€ah€am\000Ûme30544¤aa€al€ah€am\000-Æ\\d6575¤aa€al€ah€amS4jg:24952:93¤aa€al€ah€am\000{ig:4781:20¤aa€al€ah€amL*e19701¤aa€al€ah€am& kg:30038:128¤aa€al€ah€am\000yêğd9808¤aa€al€ah€amN d5642¤aa€al€ah€am\000|d7535¤aa€al€am\000­°ah€d2535¤aa€al€ah€amœ@jg:10057:55¤aa€al€am\000œah€jg:24832:90¤aa€al€ah€amØÌe14582¤aa€al€ah€amu0d2575¤aa€al€ah€am[Te11967¤aa€al€ah€am?d4575¤aa€al€ah€am\000­°d5575¤aa€al€am:˜ah€jg:20950:31¤aa€al€ah€amAŸe25320¤aa€al€am\0004Pah€kg:24690:120¤aa€al€ah€am\000ÔÀjg:14121:20¤aa€al€ah€am\"_kg:31342:100¤aa€al€ah€am!ê¿d9889¤aa€al€ah€amÆÀe14779¤aa€al€amê`ah€e24779¤aa€al€ah€am\000“Şe15241¤aa€al€ah€am!æig:7758:39¤aa€al€ah€am\000“àd7542¤aa€al€ah€amu0e34220¤aa€al€ah€am\000ıd7608¤aa€al€amwÁah€d1973¤aa€al€ah€am\000„~d9860¤aa€al€ah€amNe14466¤aa€al€am\000e\000ah€d4075¤aa€al€ah€amkd3075¤aa€al€ah€am\000˜e15582¤aa€al€ah€am\0002Àd5075¤aa€al€ah€am]J€e25065¤aa€al€ah€am\000Zçjg:15644:52¤aa€al€ah€amNe31161¤aa€al€ah€am\000èPe27859¤aa€al€am²ah€ig:2587:20¤aa€al€am\000H„ah€e15536¤aa€al€ah€am2Çig:7430:40¤aa€al€ah€am'e13117¤aa€al€ah€am\000B?kg:31334:100¤aa€al€ah€am\000˜„ìd2989¤aa€al€ah€am'jg:30804:23¤aa€al€ah€am\000$ñe14451¤aa€al€ah€am\000rÏig:6403:33¤aa€al€ah€amu0e24301¤aa€al€ah€am\000ùÜe15539¤aa€al€ah€amH-e27684¤aa€al€ah€am›jg:24945:90¤aa€al€ah€am\000mig:9908:43¤aa€al€am'ah€d7989¤aa€al€ah€am\000UÆe29547¤aa€al€ah€amóYc942¤aa€al€ah€am\000e12987¤aa€al€ah€am\000Ÿjg:15122:25¤aa€al€am'ah€ig:2163:53¤aa€al€ah€am\000È0e16220¤aa€al€ah€amre10323¤aa€al€ah€amœ@d9999¤aa€al€ah€am\000ûĞe30323¤aa€al€ah€am\000bçig:8159:40¤aa€al€am\000-Êah€e31323¤aa€al€ah€am\000LA{c729¤aa€al€ah€amue37701¤aa€al€ah€amìe24712¤aa€al€ah€am\000W/jg:14257:45¤aa€al€ah€ama¨kg:31942:115¤aa€al€ah€am\0005\000e10315¤aa€al€ah€amÒğig:3345:37¤aa€al€ah€ame24166¤aa€al€ah€am\000†ig:5756:37¤aa€al€ah€am\000†<ig:3816:36¤aa€al€amÆúah€e24065¤aa€al€ah€am¬Újg:20823:24¤aa€al€ah€amôd7375¤aa€al€ah€am\000ùUe25454¤aa€al€ah€am`àjg:14668:52¤aa€al€ah€amê`e14193¤aa€al€ah€ama¨d4039¤aa€al€amC”ah€e16684¤aa€al€ah€am\000È+jg:24723:90¤aa€al€ah€am\000q\000jg:15381:51¤aa€al€ah€amÃPd1205¤aa€al€ah€am	d3306¤aa€al€ah€am\000Ô½e41461¤aa€al€amÃGah€ig:4259:36¤aa€al€am&¬ah€e12994¤aa€al€ah€am\000	'¿e10161¤aa€al€ah€am\000œe28421¤aa€al€ah€am‰~ig:9375:38¤aa€al€am\000LK@ah€ig:2966:10¤aa€al€ah€amN jg:15265:58¤aa€al€ah€am\000fig:6429:44¤aa€al€amthah€jg:15545:30¤aa€al€ah€amÃPig:9486:28¤aa€al€ah€am\000‚e15616¤aa€al€ah€am\000ÀŒe24710¤aa€al€ah€am\000ÛÎe22376¤aa€al€ah€amÉ,d2406¤aa€al€ah€amêjg:10623:48¤aa€al€ah€am\000&% e24888¤aa€al€ah€am\000ÈÀd4789¤aa€al€amj~ah€d5789¤aa€al€ah€amC÷kg:24796:117¤aa€al€ah€am\0008jg:31152:94¤aa€al€ah€am\000©¤e13052¤aa€al€am\000Ğah€ig:8142:44¤aa€al€ah€am\000pkg:24652:105¤aa€al€ah€am\000Âkg:24650:105¤aa€al€ah€am\000ÙFe32663¤aa€al€am\000\rÃjah€kg:25051:102¤aa€al€ah€am¿ge10168¤aa€al€ah€am\000ÔÀjg:14373:25¤aa€al€ah€amu/e10567¤aa€al€ah€am\000e¹ªd9789¤aa€al€ah€am¸e15684¤aa€al€ah€am\000Iğd4305¤aa€al€ah€am}ig:9799:26¤aa€al€ah€am:˜jg:15261:40¤aa€al€ah€ama¨jg:20827:26¤aa€al€ah€amle10241¤aa€al€am\000_ah€jg:13077:57¤aa€al€ah€am\0003*e15311¤aa€al€ah€am%jg:12248:34¤aa€al€ah€am\000a`e24667¤aa€al€ah€am\000e10217¤aa€al€am\000\n§ah€e24302¤aa€al€ah€am\000&C,ig:7537:49¤aa€al€ah€am\000äBjg:13118:57¤aa€al€ah€am\000Ljg:10333:36¤aa€al€ah€amm_e15978¤aa€al€ah€am\000¿se32214¤aa€al€ah€am\000\"{³jg:15342:30¤aa€al€ah€amN d6378¤aa€al€am'ah€jg:25030:81¤aa€al€ah€am\0003+kg:32664:115¤aa€al€am\0006Ëah€kg:25135:102¤aa€al€ah€am\000“àd8175¤aa€al€am\000pah€ig:3307:15¤aa€al€ah€am‡kg:32402:130¤aa€al€ah€am\000Æ60jg:13082:46¤aa€al€am\000\r?ah€jg:14192:31¤aa€al€ah€am<ïig:7539:48¤aa€al€ah€amu0e15133¤aa€al€ah€am@tig:7470:42¤aa€al€ah€am\000…¢e24684¤aa€al€ah€am\000\r?jg:11970:34¤aa€al€amN ah€jg:14955:47¤aa€al€ah€am\000Iğjg:23482:90¤aa€al€ah€amÃPd4405¤aa€al€am¸ah€e19708¤aa€al€ah€amMvd6405¤aa€al€ah€am:•jg:10363:60¤aa€al€ah€am\000Mìe11733¤aa€al€ah€am\0006Še27667¤aa€al€ah€am.kg:23517:114¤aa€al€ah€am\000Ÿjg:25328:93¤aa€al€ah€am\000˜d3210¤aa€al€ah€am/¨e24704¤aa€al€ah€am\000Ëød1210¤aa€al€ah€am\000#Âjg:23484:90¤aa€al€am\000_ah€kg:24787:114¤aa€al€ah€am\000ê¨jg:14300:52¤aa€al€ah€am\000pjg:20830:30¤aa€al€ah€am6$d2589¤aa€al€ah€am2e13046¤aa€al€ah€am\000	hd4639¤aa€al€am\000ßêah€e31153¤aa€al€ah€am\000OX€e21153¤aa€al€ah€am`e13851¤aa€al€ah€amèd4589¤aa€al€ah€am	–jg:25088:87¤aa€al€am·ôah€jg:14177:26¤aa€al€ah€amAPe22529¤aa€al€amâah€e15083¤aa€al€am\000_ah€d5011¤aa€al€am\000›ah€e36930¤aa€al€amÛVah€e23525¤aa€al€ah€am\000]pe31896¤aa€al€ah€am\000Ñ;e21896¤aa€al€ah€am\000ëäjg:10041:50¤aa€al€ah€am\000[`e34105¤aa€al€am\000 hah€ig:3199:22¤aa€al€am?ah€d9210¤aa€al€ah€amˆ¸d8210¤aa€al€ah€amŠâe31868¤aa€al€ah€am\000\"Úd3809¤aa€al€amš”ah€e15161¤aa€al€ah€am\000„wd3310¤aa€al€ah€amDwd4310¤aa€al€am2\000ah€jg:18338:59¤aa€al€am\000“àah€d2310¤aa€al€ah€am\000{œd3308¤aa€al€ah€am?£jg:15496:21¤aa€al€ah€amN e25897¤aa€al€ah€am\000âõig:3421:10¤aa€al€amæxah€kg:24866:102¤aa€al€ah€am\000† e14724¤aa€al€am+Rah€kg:31164:103¤aa€al€ah€am\000	ëd2289¤aa€al€ah€am%´e24220¤aa€al€ah€am\000l¬d3011¤aa€al€ah€am\000­¯d7289¤aa€al€ah€am\000¡ d6289¤aa€al€ah€amšd9289¤aa€al€amê`ah€d8289¤aa€al€ah€amœ@e23529¤aa€al€ah€amš­d7517¤aa€al€am\000é¨ah€d6598¤aa€al€ah€am¼?jg:20295:60¤aa€al€ah€am\0001Z¯ig:8346:46¤aa€al€am\000[`ah€e13856¤aa€al€amu0ah€d2836¤aa€al€ah€amëe27438¤aa€al€ah€am'jg:10406:32¤aa€al€am\000q\000ah€d3490¤aa€al€am\000	ah€e14161¤aa€al€ah€am'e24911¤aa€al€am\000İĞah€ig:8204:45¤aa€al€am\000Ğah€d6310¤aa€al€ah€amÎjg:14298:56¤aa€al€amÃPah€e20975¤aa€al€ah€am#ğd4410¤aa€al€ah€aml˜jg:10179:54¤aa€al€ah€am\000EDd6536¤aa€al€ah€amNd5574¤aa€al€ah€am\000kg:30040:128¤aa€al€ah€am\000v`e15626¤aa€al€ah€am\000ıXe12025¤aa€al€ah€am\000îèjg:15520:26¤aa€al€ah€am&¬d2389¤aa€al€am\000`Sah€d3389¤aa€al€ah€amäd4389¤aa€al€ah€amçjg:10235:59¤aa€al€am\000¾²ah€e23153¤aa€al€ah€am\000Èd9451¤aa€al€amu0ah€ig:8256:52¤aa€al€am\000Ğah€d8211¤aa€al€ah€amŠãe25898¤aa€al€ah€am\000ŸJjg:15578:41¤aa€al€amø7ah€d3211¤aa€al€am!3ah€e22890¤aa€al€ah€am\000†ig:3840:32¤aa€al€ah€amu0d6211¤aa€al€ah€amê\\jg:25662:84¤aa€al€ah€am\000%ig:6605:28¤aa€al€ah€ama¨e10181¤aa€al€ah€am\0002¤e22829¤aa€al€ah€am>e14438¤aa€al€ah€am†Äe28501¤aa€al€ah€amÅd3336¤aa€al€ah€am&¬jg:15487:16¤aa€al€ah€amÃPd7494¤aa€al€ah€am«ce29728¤aa€al€ah€am\000 ºjg:20406:60¤aa€al€ah€amÙig:2981:21¤aa€al€ah€am'e25708¤aa€al€ah€am.Şig:9488:28¤aa€al€am\000ah€e15134¤aa€al€ah€amu0e31247¤aa€al€am\000\r?ah€e15322¤aa€al€am\"`ah€e23742¤aa€al€am\000ÔÀah€e20753¤aa€al€ah€amÏe23131¤aa€al€ah€am\000—Çe16052¤aa€al€ah€am\000zpig:3315:17¤aa€al€am6Mah€d4716¤aa€al€amwah€d4500¤aa€al€ah€am\000$éd7111¤aa€al€am4¼ah€e18653¤aa€al€ah€am\000dd5111¤aa€al€ah€am2Èkg:25113:120¤aa€al€am\000²-ah€e24259¤aa€al€ah€am\000‘ß¿ig:4824:27¤aa€al€am\000Íah€e22525¤aa€al€ah€amıd8111¤aa€al€amœ@ah€jg:24608:90¤aa€al€ah€am©.jg:15357:35¤aa€al€ah€amu0jg:12055:52¤aa€al€amF³ah€d9486¤aa€al€ah€am\000‚d4396¤aa€al€ah€am\000Ôşe10623¤aa€al€ah€am\000&% ig:9847:33¤aa€al€ah€am'd8153¤aa€al€ah€am‰ig:7482:42¤aa€al€ah€am\000€0kg:24676:114¤aa€al€ah€am\000I¬e10119¤aa€al€amu0ah€jg:23091:63¤aa€al€ah€am\000\n,*jg:15511:24¤aa€al€ah€am¤íd9154¤aa€al€ah€am˜d8496¤aa€al€ah€am\000Håe31330¤aa€al€ah€am\00096{e27635¤aa€al€ah€amvig:4060:40¤aa€al€amNah€e29733¤aa€al€ah€am\000&!\nd7434¤aa€al€amŠzah€e15148¤aa€al€ah€am\000Ie25148¤aa€al€ah€am\000Iğd3040¤aa€al€ah€am:˜e10226¤aa€al€ah€am\000©€jg:18700:58¤aa€al€ah€am\000áşd8498¤aa€al€ah€am}Q0ig:2276:37¤aa€al€ah€am\0005\000d6054¤aa€al€ah€amÀ÷e14125¤aa€al€ah€amN d4498¤aa€al€ah€amtd5498¤aa€al€ah€amÉd5634¤aa€al€ah€amRjg:10720:42¤aa€al€ah€am\000‡˜jg:13074:46¤aa€al€ah€am\000B?ig:5624:38¤aa€al€ah€amEÁe15284¤aa€al€am\"Äah€e30437¤aa€al€amu/ah€e10317¤aa€al€amš¬ah€e14826¤aa€al€amu0ah€e24630¤aa€al€ah€am\000† ig:9870:36¤aa€al€ah€am¬Èd9832¤aa€al€am.àah€d1744¤aa€al€ah€am&¬e16072¤aa€al€ah€amGße10620¤aa€al€ah€ame24604¤aa€al€ah€am\000“àe10098¤aa€al€ah€am\000Hd4408¤aa€al€ah€amMWe23883¤aa€al€ah€am\000\rÿüd4777¤aa€al€ah€am1.e24790¤aa€al€ah€am\000	#Ød2978¤aa€al€ah€amM¼jg:14444:52¤aa€al€ah€amœ@ig:9819:34¤aa€al€ah€am9Ğe11226¤aa€al€ah€am\000[Œƒkg:31156:109¤aa€al€ah€am\000¡ig:7920:42¤aa€al€am\000ÅÌah€e15334¤aa€al€ah€am¦şe14776¤aa€al€ah€am\000rªd4998¤aa€al€ah€amÃPjg:15566:35¤aa€al€ah€amœ@e27660¤aa€al€ah€am›d9998¤aa€al€ah€amV·e19284¤aa€al€ah€am\000Djg:15211:22¤aa€al€ah€am@d7282¤aa€al€ah€am!4d2604¤aa€al€ah€amV¸e25040¤aa€al€ah€am\000±àe23438¤aa€al€ah€amÁZe18945¤aa€al€ah€am,d3829¤aa€al€ah€am›Ûe14729¤aa€al€ah€am[e28104¤aa€al€ah€am\000{Ñ€ig:7330:33¤aa€al€amu0ah€e24708¤aa€al€ah€am\000`Te24605¤aa€al€ah€amÂìd6470¤aa€al€ah€amÁe25037¤aa€al€ah€am\000‚pkg:32399:130¤aa€al€ah€am\000jœzkg:32574:141¤aa€al€ah€am\000xdPd2598¤aa€al€ah€amUe15084¤aa€al€ah€am¥Ÿd6612¤aa€al€ah€amy¼ig:4064:30¤aa€al€ah€amLe14605¤aa€al€ah€amÃPjg:15254:54¤aa€al€ah€am\000„\000e31220¤aa€al€ah€am\000*¹€e23148¤aa€al€ah€am\000SPe29207¤aa€al€am\000\r<ah€jg:14752:27¤aa€al€ah€am@e10095¤aa€al€amÃPah€e16000¤aa€al€ah€amxhg:3319:9¤aa€al€ah€amœ@d9958¤aa€al€amˆ¸ah€e10307¤aa€al€ah€am	Ãd4698¤aa€al€ah€am;ig:7610:41¤aa€al€ah€amÃPe14181¤aa€al€ah€am'e23576¤aa€al€ah€am\000‰T@ig:6584:25¤aa€al€ah€amN jg:10193:55¤aa€al€am\000H ah€jg:14211:34¤aa€al€am.àah€jg:15117:24¤aa€al€ah€am6°e24655¤aa€al€ah€am\000íœkg:25056:117¤aa€al€ah€am\000;Ce15361¤aa€al€ah€amœ@d3013¤aa€al€ah€am±jg:14258:45¤aa€al€ah€amqHe15496¤aa€al€ah€amN jg:14179:24¤aa€al€ah€amN e24204¤aa€al€ah€am\000-Â×d2449¤aa€al€ah€amZe13310¤aa€al€ah€amu-d2698¤aa€al€am\000¡ ah€d1935¤aa€al€ah€am\000H¡(e24274¤aa€al€ah€am\000.vˆjg:21933:22¤aa€al€ah€amBjg:15361:37¤aa€al€ah€amœ@jg:24636:99¤aa€al€ah€am\000Ÿae32220¤aa€al€ah€am\000ˆOig:2277:35¤aa€al€ah€am\000íØe21753¤aa€al€ah€am\000\n,*e15529¤aa€al€ah€am'Áe13102¤aa€al€ah€am\000Ì¨d4398¤aa€al€ah€amÌ€jg:25086:81¤aa€al€ah€amê`e13095¤aa€al€ah€am\000|Óe23095¤aa€al€ah€ama¦e15213¤aa€al€ah€am:—e24618¤aa€al€ah€am\000˜e14314¤aa€al€ah€am\000µƒjg:14755:28¤aa€al€am\000ah€kg:25192:105¤aa€al€ah€am\000Iğe18688¤aa€al€ah€am\000*¹€jg:10109:54¤aa€al€ah€am\000È@ig:9966:45¤aa€al€am\000‡jah€e29740¤aa€al€ah€am.ßkg:25183:120¤aa€al€ah€am\000\r@e17050¤aa€al€ah€am\000¡ d7560¤aa€al€amu0ah€e35622¤aa€al€ah€amTd4798¤aa€al€am\000‘ah€e29535¤aa€al€ah€am\0009ûÀd5962¤aa€al€am.àah€e25266¤aa€al€ah€am\000†¸e15983¤aa€al€am\000y³ah€ig:5962:32¤aa€al€am.àah€jg:31229:91¤aa€al€am\000\rğah€e24763¤aa€al€ah€amÉ*e14763¤aa€al€amˆ¸ah€d1177¤aa€al€am'ah€jg:14754:29¤aa€al€ah€am’pkg:24669:114¤aa€al€ah€am\000¯e24662¤aa€al€ah€am\000Iğkg:24122:100¤aa€al€am\000[{ìah€d8346¤aa€al€am\000[`ah€kg:44311:200¤aa€al€ah€am\000§Şe15583¤aa€al€ah€am\000† jg:24846:96¤aa€al€ah€amÀõd4346¤aa€al€ah€am&He10209¤aa€al€ah€am\000^d1607¤aa€al€ah€am\000óPd4607¤aa€al€ah€am\000‰T@kg:35581:112¤aa€al€ah€am\000YjŸe20874¤aa€al€ah€am\000“ßkg:25094:105¤aa€al€am\000† ah€d4599¤aa€al€ah€am*ig:6562:21¤aa€al€ah€am#(kg:24644:102¤aa€al€ah€am\000\000Kjg:19292:34¤aa€al€ah€amkÅËe10548¤aa€al€ah€am\000Fig:3288:13¤aa€al€ah€am:4d6327¤aa€al€ah€am\000	?e34622¤aa€al€ah€am\000¶óğd4327¤aa€al€ah€am\000Ë=jg:31175:94¤aa€al€ah€am\000,6e36906¤aa€al€ah€amKe24266¤aa€al€ah€am\000Õxpe14507¤aa€al€ah€am\000\r>jg:13117:42¤aa€al€ah€am\000B?d8397¤aa€al€ah€am\000\r?e15494¤aa€al€ah€am\\\re24268¤aa€al€ah€amËhg:5976:1¤aa€al€ah€am\000nje25662¤aa€al€ah€am\000%e15497¤aa€al€ah€am2Èd8246¤aa€al€ah€am\000† e25002¤aa€al€ah€am\000Ld2246¤aa€al€ah€am\0000Œig:3192:12¤aa€al€ah€amÜe25181¤aa€al€ah€am\000ÔÀe15181¤aa€al€ah€amu0kg:31160:109¤aa€al€am\000ã`ah€jg:13073:52¤aa€al€ah€am\000Iïd7532¤aa€al€ah€am\000mÈe23448¤aa€al€ah€am\0008€ig:9786:16¤aa€al€ah€ame25216¤aa€al€am\0007ah€e15216¤aa€al€ah€am\000ôøjg:10217:61¤aa€al€am\000\n§ah€jg:24717:90¤aa€al€ah€am\000Åe36912¤aa€al€ah€am:Õkg:25222:111¤aa€al€ah€am\000Iğe29485¤aa€al€ah€am\000=Õkg:31297:112¤aa€al€ah€am\000“àe15254¤aa€al€ah€am\000„\000e14221¤aa€al€am›Ûah€e38864¤aa€al€am\0002Gah€e46376¤aa€al€ah€amå£d7432¤aa€al€ah€amIÔig:4729:39¤aa€al€ah€amMXe25660¤aa€al€ah€amê_jg:10204:55¤aa€al€am\000C¦ah€jg:18742:60¤aa€al€ah€am\000Ëûe24060¤aa€al€ah€am\000¯zjg:12996:23¤aa€al€ah€am\000oFd6432¤aa€al€ah€amM¼e25194¤aa€al€ah€am\000ûĞkg:31280:106¤aa€al€ah€am\000Œe22308¤aa€al€am\0005Şah€e28492¤aa€al€ah€am\000İĞd7407¤aa€al€ah€amO}jg:10577:41¤aa€al€ah€am\000Ğe12251¤aa€al€amÅQah€e31286¤aa€al€ah€am\000\r»<e25160¤aa€al€ah€am\000Ìd4293¤aa€al€ah€amâjg:10079:48¤aa€al€am\000‘¹ah€e32662¤aa€al€ah€am\000	ëe27857¤aa€al€ah€am&¬e15194¤aa€al€ah€amê`e14216¤aa€al€ah€am]Àd8127¤aa€al€ah€amœ@e33874¤aa€al€ah€amÕe29425¤aa€al€ah€am‚d2862¤aa€al€ah€amæjg:13112:48¤aa€al€am\000\"àah€e13447¤aa€al€ah€amse12254¤aa€al€am\000Şah€e45912¤aa€al€ah€am\000/te14906¤aa€al€am¯âah€e31883¤aa€al€ah€am\000$•<jg:11288:23¤aa€al€ah€ame23110¤aa€al€ah€amee31221¤aa€al€ah€am\000\"{%ig:1994:46¤aa€al€ah€am\000†Ke15763¤aa€al€ah€amÃOe24719¤aa€al€ah€am\0005\000e13455¤aa€al€ah€amÃPd4424¤aa€al€ah€amÃOe23497¤aa€al€am\000Iğah€e13497¤aa€al€ah€am\000† d3193¤aa€al€ah€am%kg:31290:109¤aa€al€ah€am\000šd4298¤aa€al€am\000† ah€d7561¤aa€al€am.ah€jg:14828:42¤aa€al€amu0ah€e14131¤aa€al€ah€am%ig:6573:23¤aa€al€amN ah€jg:12425:54¤aa€al€ah€am`d4717¤aa€al€ah€am&e24087¤aa€al€ah€am\000	ç(e24977¤aa€al€ah€am\0009d8193¤aa€al€ah€am8^jg:11976:52¤aa€al€am\000	”ah€d6562¤aa€al€ah€am#(jg:15612:44¤aa€al€ah€amˆd4562¤aa€al€ah€amN ig:4785:24¤aa€al€ah€amN e23637¤aa€al€ah€am\000ld6261¤aa€al€ah€am\000sd4251¤aa€al€ah€amWjg:14375:25¤aa€al€ah€amv(d1511¤aa€al€ah€amœ@e24701¤aa€al€ah€am\000†Ÿe30816¤aa€al€ah€am\000‰T@e31906¤aa€al€ah€am\0000e15544¤aa€al€ah€am\0000e23816¤aa€al€amMXah€e13932¤aa€al€ah€am\000{™¸d9756¤aa€al€ah€ama¨jg:24831:90¤aa€al€ah€am\000$Te25896¤aa€al€ah€am\000æÖjg:14226:37¤aa€al€am²èah€c422¤aa€al€ah€amd6411¤aa€al€ah€amRjg:25033:90¤aa€al€am\000† ah€d7753¤aa€al€ah€am\000]›e13131¤aa€al€ah€am\000OÌjg:29158:40¤aa€al€ah€amixjg:15086:56¤aa€al€ah€amèke24254¤aa€al€ah€am\000©ig:1813:18¤aa€al€ah€amèe12216¤aa€al€am'ah€ig:6380:18¤aa€al€ah€amN e15382¤aa€al€ah€amDœd7727¤aa€al€ah€am\000ùÛig:4701:16¤aa€al€amah€e31138¤aa€al€ah€am\000\r@e31874¤aa€al€ah€am\000Mùe18709¤aa€al€am\000ópah€kg:31237:103¤aa€al€ah€am\000Şjg:24727:93¤aa€al€ah€amê`e24913¤aa€al€ah€am\000ópe23625¤aa€al€ah€am\000-ÆÀjg:13007:58¤aa€al€ah€am\000Iğe24216¤aa€al€ah€am\000ŠÈhg:4344:7¤aa€al€ah€am&«e32395¤aa€al€ah€am\000h…Ğe32580¤aa€al€am\000¾¼ ah€e36932¤aa€al€am$ah€e10266¤aa€al€ah€am\000HÊjg:15531:30¤aa€al€amRah€jg:25356:66¤aa€al€ah€am'ig:6786:10¤aa€al€ah€ami-d4793¤aa€al€ah€amÊjg:15485:14¤aa€al€ah€am:Bd3311¤aa€al€ah€am\000\n®`d9793¤aa€al€amÃPah€jg:24936:87¤aa€al€ah€am\000W0e22790¤aa€al€ah€amåe15423¤aa€al€ah€am\000rs\"e13114¤aa€al€ah€am\000ve12360¤aa€al€ah€am\000Öd3727¤aa€al€amˆah€e12977¤aa€al€ah€am\000İšd1793¤aa€al€ah€amĞe23117¤aa€al€ah€am—”e16040¤aa€al€ah€am\000†e10221¤aa€al€ah€am\000Dd4827¤aa€al€ah€am\"we13136¤aa€al€ah€am\000d¸d3807¤aa€al€am>€ah€e22912¤aa€al€ah€am\000SGd8827¤aa€al€ah€amgd9827¤aa€al€ah€ama¨e24681¤aa€al€ah€am\000† d6807¤aa€al€ah€amàjg:25203:96¤aa€al€ah€am\000Åe21932¤aa€al€am‡ah€d7362¤aa€al€ah€am	ae15165¤aa€al€am'ah€d9807¤aa€al€amxah€d6531¤aa€al€ah€am?e32195¤aa€al€ah€am\000eG¸d8146¤aa€al€ah€ame41448¤aa€al€am\000ûÇah€e14494¤aa€al€ah€am:˜jg:14781:44¤aa€al€ah€amu/ig:9943:53¤aa€al€ah€am\000Iğig:6565:22¤aa€al€ah€amN jg:14792:50¤aa€al€ah€amœ@e17709¤aa€al€ah€am\000Ad4570¤aa€al€ah€amôd6616¤aa€al€ah€amp€e31131¤aa€al€ah€am\000Ğe16251¤aa€al€ah€am*0jg:14194:28¤aa€al€ah€am<d9770¤aa€al€ah€amszjg:14239:39¤aa€al€amN ah€d5527¤aa€al€ah€amjg:31238:94¤aa€al€ah€am\000Yd7527¤aa€al€amÃPah€d6527¤aa€al€ah€am<ğig:4057:36¤aa€al€ah€am'jg:25288:99¤aa€al€ah€am\000Iğig:6545:18¤aa€al€ah€amN jg:28533:87¤aa€al€ah€am\000\r@e10581¤aa€al€ah€am¶¤øig:5782:34¤aa€al€ah€amÃPig:7414:34¤aa€al€ah€am\000–jg:24729:93¤aa€al€ah€am\000­°e20906¤aa€al€amÀah€e24932¤aa€al€ah€am\000_e10265¤aa€al€ah€amœ@kg:31285:109¤aa€al€ah€am\000ëd7355¤aa€al€am¿(ah€d7046¤aa€al€ah€amtge15368¤aa€al€ah€am\000J—jg:12007:25¤aa€al€am\000±ah€d4046¤aa€al€ah€am\000öjg:10328:39¤aa€al€ah€am\000>Xe24837¤aa€al€ah€amÃPe31872¤aa€al€ah€am\000)—e14857¤aa€al€ah€amŸ´e24857¤aa€al€ah€am\000…øe10131¤aa€al€ah€amœ@d3357¤aa€al€ah€amÊjg:15964:44¤aa€al€ah€amê\\d1288¤aa€al€ah€am\re14096¤aa€al€amKah€e31212¤aa€al€am\000¡ ah€d3049¤aa€al€ah€am'e10040¤aa€al€ah€am\000pQd2099¤aa€al€ah€am\000	ôÉd9887¤aa€al€ah€amê`ig:7557:50¤aa€al€amN ah€e24829¤aa€al€ah€am\000E¿jg:28494:94¤aa€al€ah€am\000lÏe30040¤aa€al€ah€am\000v`d3073¤aa€al€ah€am\000Ájg:25147:96¤aa€al€ah€am\000Ğe22789¤aa€al€ah€amc8kg:24799:120¤aa€al€ah€am\000äÙe15301¤aa€al€ah€am\000† jg:13127:32¤aa€al€am\000\"àah€e11630¤aa€al€ah€am2d6595¤aa€al€amN ah€jg:15388:52¤aa€al€amÃPah€e24251¤aa€al€am\000Çı,ah€d7493¤aa€al€amN ah€e19978¤aa€al€ah€am\000 Xd1493¤aa€al€am\000W0ah€e25845¤aa€al€ah€am\000Sjg:11984:29¤aa€al€ah€ama¨jg:15216:51¤aa€al€ah€am\000ôøe11382¤aa€al€ah€am\000k¤e14168¤aa€al€ah€amb½ig:6561:21¤aa€al€ah€am9Ïig:9803:26¤aa€al€amu0ah€e24863¤aa€al€ah€am\000ÔÀe13108¤aa€al€ah€am\000¦Ne14251¤aa€al€ah€am‚e18254¤aa€al€ah€amëjg:15560:34¤aa€al€ah€am‹áe14914¤aa€al€ah€amN e13040¤aa€al€ah€am\000öe13130¤aa€al€ah€am\000÷ig:9874:43¤aa€al€ah€am\000\r@ig:8350:15¤aa€al€ah€am\000\n®`e22904¤aa€al€ah€am\000†•d3470¤aa€al€amRah€e30436¤aa€al€am\000Iïah€d5182¤aa€al€ah€amŠkjg:25256:87¤aa€al€ah€am\000W0e38863¤aa€al€am\000Ózah€kg:24258:105¤aa€al€ah€am\000˜½e13010¤aa€al€ah€am\000\râ°e24771¤aa€al€ah€amê`e19700¤aa€al€ah€am&d6393¤aa€al€ah€am/¨kg:24666:111¤aa€al€ah€am\000Úd8393¤aa€al€ah€am„kg:24110:113¤aa€al€ah€am\000ã`e33052¤aa€al€ah€am5 kg:31221:103¤aa€al€ah€am\000\"{%e13139¤aa€al€ah€am\000“ßd3393¤aa€al€ah€amsŸkg:24996:108¤aa€al€ah€am\000à0e10382¤aa€al€ah€am\000Ï£d4052¤aa€al€ah€amu/d5052¤aa€al€ah€am\0008€d6052¤aa€al€ah€amûe15251¤aa€al€ah€am»{kg:25318:105¤aa€al€ah€am\000Aqig:2986:20¤aa€al€ah€am;ÿjg:10086:49¤aa€al€ah€amu0e14179¤aa€al€ah€amN d4058¤aa€al€ah€am>€d3058¤aa€al€ah€am'jg:25297:84¤aa€al€ah€am\0004Pd7492¤aa€al€am0Ôah€jg:12774:55¤aa€al€am\000“ßah€jg:12975:20¤aa€al€ah€am\000Ÿêig:7761:38¤aa€al€ah€am\000Üe14789¤aa€al€ah€am\000µe10406¤aa€al€am\000q\000ah€e24882¤aa€al€ah€am\000W0d7556¤aa€al€ah€am.àd6556¤aa€al€ah€amôe18700¤aa€al€ah€am\000áşd7058¤aa€al€am˜ah€jg:13053:60¤aa€al€ah€am\000`ïd3448¤aa€al€amûah€jg:10106:56¤aa€al€am\000Ç;ah€d6256¤aa€al€ah€am<‚e15222¤aa€al€ah€am/gjg:16685:58¤aa€al€ah€amš°e10998¤aa€al€ah€am,äe15929¤aa€al€amÎah€e24677¤aa€al€ah€am\000ĞHkg:24677:117¤aa€al€ah€am\000ĞHjg:14855:55¤aa€al€am\000q~ah€e10077¤aa€al€am\000ëMah€kg:24870:105¤aa€al€ah€am\000I‰d8152¤aa€al€am%ah€e31942¤aa€al€ah€am\0005\000d1782¤aa€al€ah€am'e13054¤aa€al€ah€am\000ãd5637¤aa€al€ah€amhe10574¤aa€al€ah€am¶ó¶ig:3073:26¤aa€al€ah€am\000Ájg:25046:87¤aa€al€ah€am\000†<jg:31244:88¤aa€al€ah€am\000êe15891¤aa€al€ah€am'ig:9896:39¤aa€al€ah€amNd2456¤aa€al€ah€am.jg:10190:52¤aa€al€ah€am‚xkg:24774:111¤aa€al€ah€am\000Ğe13110¤aa€al€am\0001ah€e22919¤aa€al€ah€am\0002 :d7456¤aa€al€ah€amJ8jg:13039:48¤aa€al€am\000\nah€e25333¤aa€al€ah€am\000¯e24606¤aa€al€ah€am\000W.e24625¤aa€al€ah€am\000EÈd8307¤aa€al€ah€am\000Jêe10306¤aa€al€ah€am0jg:15556:32¤aa€al€ah€am\000† e25046¤aa€al€ah€am\000†<d7993¤aa€al€ah€am-Od7974¤aa€al€ah€am ig:4038:37¤aa€al€amĞ¶ah€d7005¤aa€al€ah€am&d5774¤aa€al€ah€am_Pkg:24752:102¤aa€al€am\000âtah€d1993¤aa€al€ah€am:—d9252¤aa€al€ah€am*ød4307¤aa€al€ah€amÈe19816¤aa€al€ah€am\000Kd3681¤aa€al€am\000¡ ah€d9875¤aa€al€ah€amV·kg:31320:100¤aa€al€ah€am\000Œae20755¤aa€al€ah€am\000Vëe11018¤aa€al€ah€am¥ig:2079:17¤aa€al€ah€amÍkg:24639:102¤aa€al€ah€am\000,äe15892¤aa€al€amu0ah€jg:15227:49¤aa€al€ah€am\0008€kg:24984:105¤aa€al€ah€am\000æ0e31136¤aa€al€ah€am\000Ùæe24827¤aa€al€ah€am\000 {e27699¤aa€al€ah€am\000v—d1708¤aa€al€ah€amjg:14374:24¤aa€al€ah€am\000Gtjg:15144:37¤aa€al€ah€am\000¸3e31248¤aa€al€ah€am\000B@jg:12054:24¤aa€al€ah€am\000}ñd4785¤aa€al€ah€amN jg:10237:58¤aa€al€ah€am£¬e33185¤aa€al€ah€am\000Ée12249¤aa€al€ah€am\000UÚe11306¤aa€al€ah€am\000{ƒkg:25182:117¤aa€al€ah€am\000Ğig:6331:36¤aa€al€ah€am\000ÔÀjg:13075:63¤aa€al€ah€am\000  d1207¤aa€al€ah€am>ze25064¤aa€al€ah€am\000‚pe24098¤aa€al€ah€am\000\n¤›d8189¤aa€al€ah€amJ;d5207¤aa€al€ah€am-ig:8107:47¤aa€al€ah€amtge21755¤aa€al€ah€amÃPig:3473:13¤aa€al€ah€am0Ôjg:12032:48¤aa€al€ah€am\0007fe18641¤aa€al€ah€am:˜kg:24873:105¤aa€al€ah€am\000	ì¿e20919¤aa€al€am\000“àah€e23866¤aa€al€ama§ah€e18665¤aa€al€ah€am\000v&e15760¤aa€al€ah€amÃPd6582¤aa€al€ah€am'e16671¤aa€al€ah€am\000pe25700¤aa€al€ah€amúe14190¤aa€al€am|¬ah€d3784¤aa€al€am¿gah€e20830¤aa€al€ah€am6$d8158¤aa€al€amODah€d8107¤aa€al€ah€amtgig:3283:13¤aa€al€ah€am#(d7473¤aa€al€ah€amu0d9967¤aa€al€ah€amm`e32739¤aa€al€ah€am\000­©ig:9383:40¤aa€al€ah€am\000<áğe24845¤aa€al€ah€am\000¹Ìe22248¤aa€al€ah€am\000«—e23737¤aa€al€ah€am9jg:25654:84¤aa€al€am\000¸ah€ig:9887:43¤aa€al€ah€amê`jg:10230:60¤aa€al€ah€am\000	'Àig:4716:32¤aa€al€amwah€d5107¤aa€al€ah€am_³jg:10218:62¤aa€al€amê`ah€d5771¤aa€al€ah€am\000ˆAjg:13081:38¤aa€al€ah€am\000¶Àjg:15258:65¤aa€al€ah€am\000_e32755¤aa€al€ah€am\000züe34113¤aa€al€ah€am\000Iæjg:31248:88¤aa€al€ah€am\000B@jg:15368:39¤aa€al€ah€am\000J—d7364¤aa€al€ah€am&¬jg:15523:27¤aa€al€ah€amu0d1477¤aa€al€ah€am'e23573¤aa€al€ah€am\000êkg:31157:109¤aa€al€ah€am\000	ësjg:10199:54¤aa€al€amÃPah€hg:873:40¤aa€al€ah€am\000e¹ªjg:15937:51¤aa€al€amu0ah€jg:14730:23¤aa€al€ama¨ah€d2675¤aa€al€ah€am`e14497¤aa€al€ah€am\000´§e25198¤aa€al€ah€am\000U÷d2730¤aa€al€ah€amKe20074¤aa€al€am'ah€e19277¤aa€al€ah€am\000Ï¢Nd4693¤aa€al€ah€am\000Iğd8956¤aa€al€ah€amÀ/e31194¤aa€al€ah€am\000\n‡Pig:4789:18¤aa€al€amj~ah€e12546¤aa€al€ah€am\000B?d4338¤aa€al€ah€am,àig:4058:41¤aa€al€ah€am>€jg:15301:13¤aa€al€ah€am\000† e14046¤aa€al€am÷ah€e14302¤aa€al€amu0ah€jg:14221:35¤aa€al€am›Ûah€e13755¤aa€al€ah€amŠHig:7457:37¤aa€al€amu0ah€d8285¤aa€al€amu0ah€d2772¤aa€al€ah€amge21309¤aa€al€ah€am\000õe15221¤aa€al€ah€am\000ÔÀd7975¤aa€al€ah€am6®jg:13116:61¤aa€al€am\000qŸah€e37700¤aa€al€ah€amìe27700¤aa€al€ah€am\000z‚e29503¤aa€al€ah€am\000·\000e17202¤aa€al€ah€amjg:10069:49¤aa€al€ah€am¯Èig:7375:35¤aa€al€ah€am\000ùUjg:14195:29¤aa€al€ah€am'e15408¤aa€al€ah€amBd6609¤aa€al€ah€am•ıhg:754:47¤aa€al€ah€am\000Ğd6593¤aa€al€ah€amhfe14101¤aa€al€ah€ams d4593¤aa€al€ah€ambd2594¤aa€al€am~ah€e14194¤aa€al€ah€am<e24194¤aa€al€ah€am\0006òfd1707¤aa€al€ampah€e15540¤aa€al€ah€amL,e11970¤aa€al€amN ah€d4707¤aa€al€ah€am\000Ğe22309¤aa€al€ah€am\0004üjg:15603:41¤aa€al€amu0ah€jg:24956:93¤aa€al€ah€am\000\"àe36860¤aa€al€ah€am\000x",
@@ -9793,11 +9793,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675511832,
 },
 },
-["2732"] = {
+["6348"] = {
 {
-["price"] = 896,
-["quantity"] = 3,
-["time"] = 1722369415,
+["price"] = 2999,
+["quantity"] = 1,
+["time"] = 1724417484,
 },
 },
 ["9850"] = {
@@ -9812,16 +9812,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722164577,
 },
 },
-["g:15331:23"] = {
+["g:15603:41"] = {
 {
-["price"] = 5500,
+["price"] = 30000,
 ["quantity"] = 2,
-["time"] = 1696613817,
-},
-{
-["price"] = 5500,
-["quantity"] = 1,
-["time"] = 1696668632,
+["time"] = 1645371578,
 },
 },
 ["gr:15260:of the Eagle"] = {
@@ -9848,11 +9843,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675511784,
 },
 },
-["4278"] = {
+["3685"] = {
 {
-["price"] = 2212,
-["quantity"] = 4,
-["time"] = 1722346674,
+["price"] = 893,
+["quantity"] = 1,
+["time"] = 1722346643,
+},
+{
+["price"] = 891,
+["quantity"] = 15,
+["time"] = 1722347477,
+},
+{
+["price"] = 876,
+["quantity"] = 18,
+["time"] = 1722354442,
 },
 },
 ["2749"] = {
@@ -9862,18 +9867,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1662283406,
 },
 },
-["gr:12019:of the Whale"] = {
+["3711"] = {
 {
-["price"] = 67700,
+["price"] = 9660,
 ["quantity"] = 1,
-["time"] = 1722016015,
+["time"] = 1722276305,
+},
+{
+["price"] = 9660,
+["quantity"] = 1,
+["time"] = 1722331132,
 },
 },
-["40347"] = {
+["4718"] = {
 {
-["price"] = 12499994,
+["price"] = 53200,
 ["quantity"] = 1,
-["time"] = 1675714762,
+["time"] = 1722255007,
+},
+{
+["price"] = 41600,
+["quantity"] = 1,
+["time"] = 1722331121,
 },
 },
 ["gr:2080:of the Monkey"] = {
@@ -9888,11 +9903,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722331118,
 },
 },
-["5116"] = {
+["gr:9849:of the Eagle"] = {
 {
-["price"] = 338,
-["quantity"] = 3,
-["time"] = 1722182487,
+["price"] = 113200,
+["quantity"] = 1,
+["time"] = 1722011789,
+},
+{
+["price"] = 19996,
+["quantity"] = 1,
+["time"] = 1722093739,
 },
 },
 ["g:15608:44"] = {
@@ -10019,21 +10039,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712564996,
 },
 },
-["7992"] = {
+["4245"] = {
 {
-["price"] = 29995,
+["price"] = 3810,
 ["quantity"] = 1,
-["time"] = 1722182486,
-},
-{
-["price"] = 19990,
-["quantity"] = 1,
-["time"] = 1722244739,
-},
-{
-["price"] = 15585,
-["quantity"] = 1,
-["time"] = 1722354460,
+["time"] = 1722346615,
 },
 },
 ["5498"] = {
@@ -10063,28 +10073,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1724417472,
 },
 },
-["5011"] = {
+["g:15348:26"] = {
 {
-["price"] = 14395,
+["price"] = 8876,
 ["quantity"] = 1,
-["time"] = 1713371341,
+["time"] = 1712829054,
 },
 },
-["gn:14951:Bloodforged Sabatons of the Bear:47"] = {
+["8924"] = {
 {
-["price"] = 17450,
-["quantity"] = 1,
-["time"] = 1713372314,
-},
-{
-["price"] = 17443,
-["quantity"] = 1,
-["time"] = 1713561180,
-},
-{
-["price"] = 17441,
-["quantity"] = 1,
-["time"] = 1713602273,
+["price"] = 9970,
+["quantity"] = 20,
+["time"] = 1722011872,
 },
 },
 ["3369"] = {
@@ -10139,21 +10139,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722016032,
 },
 },
-["g:4091:47"] = {
+["14291"] = {
 {
-["price"] = 999898,
+["price"] = 56400,
 ["quantity"] = 1,
-["time"] = 1713285674,
-},
-{
-["price"] = 499990,
-["quantity"] = 1,
-["time"] = 1713343751,
-},
-{
-["price"] = 319986,
-["quantity"] = 1,
-["time"] = 1713372682,
+["time"] = 1713372303,
 },
 },
 ["gn:14574:Bristlebark Britches:26"] = {
@@ -10262,28 +10252,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1706006061,
 },
 },
-["11972"] = {
+["g:15298:13"] = {
 {
-["price"] = 55783,
+["price"] = 1195,
 ["quantity"] = 1,
-["time"] = 1722011718,
-},
-{
-["price"] = 55783,
-["quantity"] = 1,
-["time"] = 1722093727,
-},
-{
-["price"] = 95783,
-["quantity"] = 1,
-["time"] = 1722164571,
+["time"] = 1701968986,
 },
 },
-["gn:15592:Steadfast Buckler of the Owl:43"] = {
+["g:8179:6"] = {
 {
-["price"] = 29997,
+["price"] = 149,
 ["quantity"] = 1,
-["time"] = 1713372211,
+["time"] = 1693416370,
+},
+{
+["price"] = 1598,
+["quantity"] = 1,
+["time"] = 1705844776,
 },
 },
 ["1477"] = {
@@ -10317,11 +10302,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713430117,
 },
 },
-["8923"] = {
+["11139"] = {
 {
-["price"] = 3721,
-["quantity"] = 6,
-["time"] = 1722011866,
+["price"] = 131,
+["quantity"] = 1,
+["time"] = 1674649969,
 },
 },
 ["g:10184:52"] = {
@@ -10348,135 +10333,80 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1663698822,
 },
 },
-["8167"] = {
+["2738"] = {
 {
-["price"] = 303,
-["quantity"] = 33,
-["time"] = 1713371383,
-},
-{
-["price"] = 378,
-["quantity"] = 66,
-["time"] = 1713372195,
-},
-{
-["price"] = 857,
-["quantity"] = 36,
-["time"] = 1713440418,
-},
-{
-["price"] = 936,
-["quantity"] = 27,
-["time"] = 1713560662,
-},
-{
-["price"] = 934,
-["quantity"] = 17,
-["time"] = 1713561254,
-},
-},
-["g:14183:30"] = {
-{
-["price"] = 4900,
+["price"] = 549,
 ["quantity"] = 1,
-["time"] = 1709053274,
+["time"] = 1697440616,
 },
 },
-["3740"] = {
+["21886"] = {
 {
-["price"] = 7303,
+["price"] = 44997,
 ["quantity"] = 1,
-["time"] = 1696613790,
+["time"] = 1662736369,
+},
+},
+["4594"] = {
+{
+["price"] = 360,
+["quantity"] = 40,
+["time"] = 1709897025,
+},
+{
+["price"] = 281,
+["quantity"] = 20,
+["time"] = 1709980035,
+},
+},
+["20404"] = {
+{
+["price"] = 17991,
+["quantity"] = 2,
+["time"] = 1647114305,
+},
+},
+["8402"] = {
+{
+["price"] = 19999,
+["quantity"] = 3,
+["time"] = 1645039458,
 },
 {
 ["price"] = 9999,
+["quantity"] = 2,
+["time"] = 1645443689,
+},
+{
+["price"] = 9797,
+["quantity"] = 2,
+["time"] = 1645616909,
+},
+},
+["g:14291:50"] = {
+{
+["price"] = 56400,
 ["quantity"] = 1,
-["time"] = 1709807862,
+["time"] = 1713372303,
 },
+},
+["g:14945:45"] = {
 {
-["price"] = 8896,
+["price"] = 32081,
 ["quantity"] = 1,
-["time"] = 1709895984,
-},
-},
-["2740"] = {
-{
-["price"] = 13997,
-["quantity"] = 4,
-["time"] = 1662283319,
+["time"] = 1713285682,
 },
 {
-["price"] = 896,
+["price"] = 32081,
 ["quantity"] = 1,
-["time"] = 1697440613,
+["time"] = 1713343754,
 },
+},
+["g:14401:33"] = {
 {
-["price"] = 858,
-["quantity"] = 3,
-["time"] = 1722369418,
-},
-},
-["g:14956:45"] = {
-{
-["price"] = 39985,
+["price"] = 10097,
 ["quantity"] = 1,
-["time"] = 1713379396,
-},
-{
-["price"] = 39985,
-["quantity"] = 1,
-["time"] = 1713440646,
-},
-{
-["price"] = 25075,
-["quantity"] = 1,
-["time"] = 1713561185,
-},
-{
-["price"] = 25072,
-["quantity"] = 1,
-["time"] = 1713602271,
-},
-{
-["price"] = 24062,
-["quantity"] = 1,
-["time"] = 1713646340,
-},
-{
-["price"] = 19980,
-["quantity"] = 1,
-["time"] = 1713780055,
-},
-},
-["21884"] = {
-{
-["price"] = 99999,
-["quantity"] = 1,
-["time"] = 1663236798,
-},
-},
-["4422"] = {
-{
-["price"] = 1499,
-["quantity"] = 1,
-["time"] = 1712565023,
-},
-{
-["price"] = 1146,
-["quantity"] = 1,
-["time"] = 1713371346,
-},
-},
-["gn:9857:Archer's Bracers of the Eagle:34"] = {
-{
-["price"] = 9836,
-["quantity"] = 1,
-["time"] = 1711571059,
-},
-{
-["price"] = 9836,
-["quantity"] = 1,
-["time"] = 1711618660,
+["time"] = 1712834191,
 },
 },
 ["9849"] = {
@@ -10498,26 +10428,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1676207792,
 },
 },
-["g:14263:48"] = {
+["gn:15274:Diviner Long Staff of the Owl:52"] = {
 {
-["price"] = 49897,
+["price"] = 89900,
 ["quantity"] = 1,
-["time"] = 1712958173,
-},
-{
-["price"] = 49897,
-["quantity"] = 1,
-["time"] = 1712998147,
-},
-{
-["price"] = 39892,
-["quantity"] = 1,
-["time"] = 1713085103,
-},
-{
-["price"] = 39887,
-["quantity"] = 1,
-["time"] = 1713124180,
+["time"] = 1713185771,
 },
 },
 ["3357"] = {
@@ -10579,26 +10494,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713372303,
 },
 },
-["g:14941:42"] = {
+["4091"] = {
 {
-["price"] = 15300,
+["price"] = 999898,
 ["quantity"] = 1,
-["time"] = 1713085192,
+["time"] = 1713285674,
 },
 {
-["price"] = 13499,
+["price"] = 499990,
 ["quantity"] = 1,
-["time"] = 1713116432,
+["time"] = 1713343751,
 },
 {
-["price"] = 13494,
+["price"] = 319986,
 ["quantity"] = 1,
-["time"] = 1713185732,
-},
-{
-["price"] = 13494,
-["quantity"] = 1,
-["time"] = 1713372320,
+["time"] = 1713372682,
 },
 },
 ["3358"] = {
@@ -10758,16 +10668,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1646851019,
 },
 },
-["g:5107:14"] = {
+["gr:11997:of the Boar"] = {
 {
-["price"] = 52298,
+["price"] = 123300,
 ["quantity"] = 1,
-["time"] = 1678641732,
+["time"] = 1722182552,
 },
 {
-["price"] = 292,
-["quantity"] = 2,
-["time"] = 1694164117,
+["price"] = 123300,
+["quantity"] = 1,
+["time"] = 1722244694,
 },
 },
 ["15223"] = {
@@ -10799,26 +10709,32 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1710881408,
 },
 },
-["gn:14791:Protector Cape:48"] = {
+["12208"] = {
 {
-["price"] = 18993,
-["quantity"] = 1,
-["time"] = 1713089218,
+["price"] = 557,
+["quantity"] = 12,
+["time"] = 1713372163,
 },
-{
-["price"] = 18984,
-["quantity"] = 1,
-["time"] = 1713123963,
 },
+["gn:14401:Resilient Cap:33"] = {
 {
-["price"] = 18976,
+["price"] = 10097,
 ["quantity"] = 1,
-["time"] = 1713185729,
+["time"] = 1712834191,
 },
+},
+["48118"] = {
 {
-["price"] = 17795,
+["price"] = 409998,
 ["quantity"] = 1,
-["time"] = 1713372326,
+["time"] = 1679932629,
+},
+},
+["3478"] = {
+{
+["price"] = 694,
+["quantity"] = 9,
+["time"] = 1695387601,
 },
 },
 ["3577"] = {
@@ -10873,27 +10789,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1721985467,
 },
 },
-["48118"] = {
-{
-["price"] = 409998,
-["quantity"] = 1,
-["time"] = 1679932629,
-},
-},
-["2598"] = {
-{
-["price"] = 2999,
-["quantity"] = 1,
-["time"] = 1724417499,
-},
-},
-["gn:14401:Resilient Cap:33"] = {
-{
-["price"] = 10097,
-["quantity"] = 1,
-["time"] = 1712834191,
-},
-},
 ["gn:14191:Raincaller Mitts of the Owl:30"] = {
 {
 ["price"] = 10096,
@@ -10906,11 +10801,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709577290,
 },
 },
-["3478"] = {
+["2598"] = {
 {
-["price"] = 694,
-["quantity"] = 9,
-["time"] = 1695387601,
+["price"] = 2999,
+["quantity"] = 1,
+["time"] = 1724417499,
 },
 },
 ["gn:14941:Warbringer's Armsplints of the Bear:42"] = {
@@ -10969,18 +10864,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713372211,
 },
 },
-["4861"] = {
+["gn:14121:Aboriginal Vest of the Eagle:20"] = {
 {
-["price"] = 1499,
+["price"] = 2422,
 ["quantity"] = 1,
-["time"] = 1693901907,
+["time"] = 1703681729,
 },
 },
-["g:7552:44"] = {
+["gn:2077:Magician Staff of the Whale:29"] = {
 {
-["price"] = 6497,
+["price"] = 9995,
 ["quantity"] = 1,
-["time"] = 1712430112,
+["time"] = 1708544829,
 },
 },
 ["gn:9766:Greenweave Sash of Intellect:22"] = {
@@ -11018,28 +10913,7 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643620279,
 },
 },
-["7552"] = {
-{
-["price"] = 6497,
-["quantity"] = 1,
-["time"] = 1712430112,
-},
-},
-["gn:4563:Billy Club:9"] = {
-{
-["price"] = 523,
-["quantity"] = 1,
-["time"] = 1705844764,
-},
-},
-["g:8178:10"] = {
-{
-["price"] = 572,
-["quantity"] = 1,
-["time"] = 1693901897,
-},
-},
-["gn:14263:Bloodwoven Mask of Fiery Wrath:48"] = {
+["14263"] = {
 {
 ["price"] = 49897,
 ["quantity"] = 1,
@@ -11061,21 +10935,76 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713124180,
 },
 },
-["11082"] = {
+["2452"] = {
 {
-["price"] = 4098,
-["quantity"] = 1,
-["time"] = 1693740964,
+["price"] = 1569,
+["quantity"] = 17,
+["time"] = 1705571118,
 },
 {
-["price"] = 4092,
-["quantity"] = 1,
-["time"] = 1693746728,
+["price"] = 1550,
+["quantity"] = 2,
+["time"] = 1705579383,
 },
 {
-["price"] = 2698,
+["price"] = 1198,
 ["quantity"] = 1,
-["time"] = 1693808314,
+["time"] = 1708448080,
+},
+{
+["price"] = 1574,
+["quantity"] = 2,
+["time"] = 1709733798,
+},
+{
+["price"] = 1848,
+["quantity"] = 2,
+["time"] = 1709807895,
+},
+{
+["price"] = 1474,
+["quantity"] = 6,
+["time"] = 1709896022,
+},
+{
+["price"] = 1471,
+["quantity"] = 2,
+["time"] = 1709971630,
+},
+{
+["price"] = 1489,
+["quantity"] = 2,
+["time"] = 1709991453,
+},
+{
+["price"] = 7979,
+["quantity"] = 5,
+["time"] = 1722011796,
+},
+{
+["price"] = 7995,
+["quantity"] = 4,
+["time"] = 1722016099,
+},
+},
+["g:8178:10"] = {
+{
+["price"] = 572,
+["quantity"] = 1,
+["time"] = 1693901897,
+},
+},
+["__dbversion"] = 1,
+["39912"] = {
+{
+["price"] = 49512,
+["quantity"] = 14,
+["time"] = 1674659729,
+},
+{
+["price"] = 39895,
+["quantity"] = 14,
+["time"] = 1674892717,
 },
 },
 ["16243"] = {
@@ -11132,21 +11061,56 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696794023,
 },
 },
-["g:4999:27"] = {
+["7067"] = {
 {
-["price"] = 10095,
-["quantity"] = 1,
-["time"] = 1709377381,
+["price"] = 1553,
+["quantity"] = 2,
+["time"] = 1722011840,
 },
 {
-["price"] = 11865,
-["quantity"] = 1,
-["time"] = 1709577327,
+["price"] = 512,
+["quantity"] = 2,
+["time"] = 1722093798,
 },
 {
-["price"] = 19999,
+["price"] = 473,
+["quantity"] = 2,
+["time"] = 1722102642,
+},
+{
+["price"] = 606,
+["quantity"] = 2,
+["time"] = 1722164602,
+},
+{
+["price"] = 839,
+["quantity"] = 352,
+["time"] = 1722182496,
+},
+{
+["price"] = 558,
+["quantity"] = 334,
+["time"] = 1722244749,
+},
+{
+["price"] = 595,
 ["quantity"] = 1,
-["time"] = 1711178673,
+["time"] = 1722276302,
+},
+{
+["price"] = 988,
+["quantity"] = 407,
+["time"] = 1722331186,
+},
+{
+["price"] = 2093,
+["quantity"] = 350,
+["time"] = 1722369431,
+},
+{
+["price"] = 796,
+["quantity"] = 350,
+["time"] = 1722411434,
 },
 },
 ["2728"] = {
@@ -11230,21 +11194,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711652483,
 },
 },
-["2835"] = {
+["221293"] = {
 {
-["price"] = 10,
-["quantity"] = 19,
-["time"] = 1706475543,
+["price"] = 1099998,
+["quantity"] = 1,
+["time"] = 1712345908,
 },
 {
-["price"] = 29,
-["quantity"] = 3,
-["time"] = 1709290312,
+["price"] = 999991,
+["quantity"] = 1,
+["time"] = 1712389389,
 },
 {
-["price"] = 22,
-["quantity"] = 6,
-["time"] = 1709377395,
+["price"] = 559985,
+["quantity"] = 1,
+["time"] = 1712430141,
+},
+{
+["price"] = 509994,
+["quantity"] = 1,
+["time"] = 1712475797,
+},
+{
+["price"] = 469996,
+["quantity"] = 1,
+["time"] = 1712565031,
 },
 },
 ["2277"] = {
@@ -11295,70 +11269,45 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1710146381,
 },
 },
-["15351"] = {
+["19708"] = {
 {
-["price"] = 8200,
+["price"] = 19996,
 ["quantity"] = 1,
-["time"] = 1711657439,
-},
-},
-["14047"] = {
-{
-["price"] = 6723,
-["quantity"] = 41,
-["time"] = 1677228833,
+["time"] = 1674553240,
 },
 {
-["price"] = 5999,
-["quantity"] = 8,
-["time"] = 1677231307,
-},
-{
-["price"] = 3881,
-["quantity"] = 271,
-["time"] = 1677241000,
-},
-{
-["price"] = 2498,
-["quantity"] = 9,
-["time"] = 1677518758,
-},
-{
-["price"] = 3399,
-["quantity"] = 23,
-["time"] = 1677842859,
-},
-{
-["price"] = 4585,
-["quantity"] = 52,
-["time"] = 1678112935,
-},
-{
-["price"] = 3486,
-["quantity"] = 52,
-["time"] = 1678269173,
-},
-{
-["price"] = 3148,
-["quantity"] = 28,
-["time"] = 1678368603,
-},
-{
-["price"] = 1896,
-["quantity"] = 50,
-["time"] = 1679310883,
-},
-{
-["price"] = 2041,
+["price"] = 43647,
 ["quantity"] = 2,
-["time"] = 1713123968,
+["time"] = 1675090854,
 },
-},
-["15747"] = {
 {
-["price"] = 35098,
+["price"] = 84998,
 ["quantity"] = 2,
-["time"] = 1647038638,
+["time"] = 1675679202,
+},
+{
+["price"] = 19832,
+["quantity"] = 1,
+["time"] = 1676975007,
+},
+{
+["price"] = 19830,
+["quantity"] = 1,
+["time"] = 1676977425,
+},
+},
+["gn:15126:Robust Leggings of Spirit:29"] = {
+{
+["price"] = 23200,
+["quantity"] = 1,
+["time"] = 1712829051,
+},
+},
+["14366"] = {
+{
+["price"] = 1479,
+["quantity"] = 1,
+["time"] = 1706540387,
 },
 },
 ["12435"] = {
@@ -11427,16 +11376,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712222655,
 },
 },
-["15243"] = {
+["19702"] = {
 {
-["price"] = 18571,
-["quantity"] = 1,
-["time"] = 1711539001,
+["price"] = 11965,
+["quantity"] = 36,
+["time"] = 1675003638,
 },
 {
-["price"] = 14950,
+["price"] = 11947,
+["quantity"] = 5,
+["time"] = 1675090839,
+},
+{
+["price"] = 8986,
+["quantity"] = 26,
+["time"] = 1675679231,
+},
+{
+["price"] = 370,
+["quantity"] = 33,
+["time"] = 1676551111,
+},
+{
+["price"] = 8492,
 ["quantity"] = 1,
-["time"] = 1711652483,
+["time"] = 1676729960,
 },
 },
 ["36917"] = {
@@ -11552,73 +11516,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722011830,
 },
 },
-["42641"] = {
+["41479"] = {
 {
-["price"] = 19971,
-["quantity"] = 375,
-["time"] = 1674729095,
-},
-{
-["price"] = 19365,
-["quantity"] = 320,
-["time"] = 1674761959,
-},
-{
-["price"] = 17497,
-["quantity"] = 130,
-["time"] = 1674808804,
-},
-{
-["price"] = 16989,
-["quantity"] = 190,
-["time"] = 1674916059,
-},
-{
-["price"] = 22484,
-["quantity"] = 80,
-["time"] = 1675158755,
-},
-{
-["price"] = 21969,
-["quantity"] = 30,
-["time"] = 1675327973,
-},
-{
-["price"] = 21964,
-["quantity"] = 30,
-["time"] = 1675336861,
-},
-{
-["price"] = 16496,
-["quantity"] = 100,
-["time"] = 1676686932,
-},
-{
-["price"] = 15491,
-["quantity"] = 70,
-["time"] = 1676801040,
+["price"] = 79999,
+["quantity"] = 8,
+["time"] = 1674896562,
 },
 },
-["14652"] = {
+["gn:7552:Falcon's Hook:44"] = {
 {
-["price"] = 9936,
+["price"] = 6497,
 ["quantity"] = 1,
-["time"] = 1712430092,
-},
-{
-["price"] = 69496,
-["quantity"] = 1,
-["time"] = 1712565002,
-},
-{
-["price"] = 15996,
-["quantity"] = 1,
-["time"] = 1712641058,
-},
-{
-["price"] = 15993,
-["quantity"] = 1,
-["time"] = 1712671741,
+["time"] = 1712430112,
 },
 },
 ["866"] = {
@@ -11726,11 +11635,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713343755,
 },
 },
-["37700"] = {
+["gn:15009:Primal Leggings of the Eagle:11"] = {
 {
-["price"] = 1516,
-["quantity"] = 2,
-["time"] = 1676551077,
+["price"] = 3586,
+["quantity"] = 1,
+["time"] = 1705078164,
 },
 },
 ["9881"] = {
@@ -11750,56 +11659,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712935608,
 },
 },
-["10939"] = {
+["39919"] = {
 {
-["price"] = 1815,
+["price"] = 11999,
 ["quantity"] = 1,
-["time"] = 1693909496,
-},
-{
-["price"] = 1503,
-["quantity"] = 1,
-["time"] = 1693933612,
-},
-{
-["price"] = 1584,
-["quantity"] = 1,
-["time"] = 1694082225,
-},
-{
-["price"] = 1349,
-["quantity"] = 5,
-["time"] = 1694284125,
-},
-{
-["price"] = 1642,
-["quantity"] = 4,
-["time"] = 1694413719,
-},
-{
-["price"] = 1498,
-["quantity"] = 4,
-["time"] = 1695035251,
-},
-{
-["price"] = 1499,
-["quantity"] = 6,
-["time"] = 1695387545,
-},
-{
-["price"] = 1530,
-["quantity"] = 12,
-["time"] = 1695393678,
-},
-{
-["price"] = 1497,
-["quantity"] = 2,
-["time"] = 1701969045,
-},
-{
-["price"] = 2061,
-["quantity"] = 2,
-["time"] = 1713372602,
+["time"] = 1674659500,
 },
 },
 ["6269"] = {
@@ -11809,16 +11673,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705571050,
 },
 },
-["41468"] = {
+["7436"] = {
 {
-["price"] = 24763,
+["price"] = 9700,
 ["quantity"] = 1,
-["time"] = 1674659529,
-},
-{
-["price"] = 24748,
-["quantity"] = 6,
-["time"] = 1674896565,
+["time"] = 1696613863,
 },
 },
 ["g:14090:11"] = {
@@ -11857,11 +11716,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713780067,
 },
 },
-["23438"] = {
+["gn:14755:Slayer's Sash:28"] = {
 {
-["price"] = 34397,
+["price"] = 5300,
 ["quantity"] = 1,
-["time"] = 1674575960,
+["time"] = 1711024460,
 },
 },
 ["gn:4565:Simple Dagger:6"] = {
@@ -11893,18 +11752,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1676628749,
 },
 },
-["gn:14755:Slayer's Sash:28"] = {
+["3667"] = {
 {
-["price"] = 5300,
+["price"] = 235,
+["quantity"] = 4,
+["time"] = 1722102506,
+},
+{
+["price"] = 176,
+["quantity"] = 4,
+["time"] = 1722164597,
+},
+},
+["g:13072:60"] = {
+{
+["price"] = 452019,
 ["quantity"] = 1,
-["time"] = 1711024460,
-},
-},
-["7533"] = {
-{
-["price"] = 78800,
-["quantity"] = 2,
-["time"] = 1643620288,
+["time"] = 1676195254,
 },
 },
 ["2840"] = {
@@ -11971,18 +11835,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647031937,
 },
 },
-["36905"] = {
+["9929"] = {
 {
-["price"] = 13246,
-["quantity"] = 3,
-["time"] = 1678046097,
+["price"] = 9998,
+["quantity"] = 1,
+["time"] = 1710171993,
+},
+{
+["price"] = 8998,
+["quantity"] = 1,
+["time"] = 1710321747,
+},
+{
+["price"] = 8998,
+["quantity"] = 1,
+["time"] = 1710515623,
 },
 },
-["13926"] = {
+["15274"] = {
 {
-["price"] = 87499,
-["quantity"] = 3,
-["time"] = 1645039465,
+["price"] = 89900,
+["quantity"] = 1,
+["time"] = 1713185771,
 },
 },
 ["8173"] = {
@@ -12021,38 +11895,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674896569,
 },
 },
-["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
+["13926"] = {
 {
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713560628,
-},
-{
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713646445,
-},
-{
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713780072,
+["price"] = 87499,
+["quantity"] = 3,
+["time"] = 1645039465,
 },
 },
-["9929"] = {
+["g:20408:60"] = {
 {
-["price"] = 9998,
-["quantity"] = 1,
-["time"] = 1710171993,
-},
-{
-["price"] = 8998,
-["quantity"] = 1,
-["time"] = 1710321747,
-},
-{
-["price"] = 8998,
-["quantity"] = 1,
-["time"] = 1710515623,
+["price"] = 13758,
+["quantity"] = 4,
+["time"] = 1647114202,
 },
 },
 ["15147"] = {
@@ -12114,18 +11968,68 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722346667,
 },
 },
-["g:7445:38"] = {
+["gr:9863:of the Whale"] = {
 {
-["price"] = 7800,
+["price"] = 32200,
 ["quantity"] = 1,
-["time"] = 1711539009,
+["time"] = 1722182559,
+},
+{
+["price"] = 32200,
+["quantity"] = 1,
+["time"] = 1722244706,
 },
 },
-["15274"] = {
+["36920"] = {
 {
-["price"] = 89900,
-["quantity"] = 1,
-["time"] = 1713185771,
+["price"] = 14763,
+["quantity"] = 24,
+["time"] = 1676838856,
+},
+{
+["price"] = 13994,
+["quantity"] = 73,
+["time"] = 1677689119,
+},
+{
+["price"] = 14452,
+["quantity"] = 79,
+["time"] = 1677788639,
+},
+{
+["price"] = 16196,
+["quantity"] = 134,
+["time"] = 1677915414,
+},
+{
+["price"] = 13917,
+["quantity"] = 5,
+["time"] = 1678030652,
+},
+{
+["price"] = 13897,
+["quantity"] = 100,
+["time"] = 1678036424,
+},
+{
+["price"] = 14898,
+["quantity"] = 60,
+["time"] = 1678356966,
+},
+{
+["price"] = 11999,
+["quantity"] = 80,
+["time"] = 1678562052,
+},
+{
+["price"] = 10789,
+["quantity"] = 100,
+["time"] = 1678896553,
+},
+{
+["price"] = 11997,
+["quantity"] = 172,
+["time"] = 1679045747,
 },
 },
 ["g:44311:200"] = {
@@ -12142,28 +12046,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1724417502,
 },
 },
-["gr:9863:of the Whale"] = {
+["gr:9850:of the Owl"] = {
 {
-["price"] = 32200,
+["price"] = 65600,
 ["quantity"] = 1,
-["time"] = 1722182559,
+["time"] = 1722102476,
 },
 {
-["price"] = 32200,
+["price"] = 65600,
 ["quantity"] = 1,
-["time"] = 1722244706,
+["time"] = 1722164577,
 },
 },
-["g:15116:26"] = {
+["7445"] = {
 {
-["price"] = 9994,
+["price"] = 7800,
 ["quantity"] = 1,
-["time"] = 1709807871,
-},
-{
-["price"] = 3994,
-["quantity"] = 1,
-["time"] = 1709896005,
+["time"] = 1711539009,
 },
 },
 ["213546"] = {
@@ -12183,28 +12082,33 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722346620,
 },
 },
-["gn:4567:Merc Sword of Stamina:16"] = {
+["3470"] = {
 {
-["price"] = 2662,
-["quantity"] = 1,
-["time"] = 1705417521,
+["price"] = 84,
+["quantity"] = 168,
+["time"] = 1643485593,
 },
 {
-["price"] = 2552,
-["quantity"] = 1,
-["time"] = 1705486195,
-},
-},
-["15336"] = {
-{
-["price"] = 22072,
-["quantity"] = 1,
-["time"] = 1709733791,
+["price"] = 289,
+["quantity"] = 112,
+["time"] = 1643702149,
 },
 {
-["price"] = 12072,
+["price"] = 70,
+["quantity"] = 32,
+["time"] = 1644569710,
+},
+{
+["price"] = 62,
+["quantity"] = 145,
+["time"] = 1695387597,
+},
+},
+["g:15019:21"] = {
+{
+["price"] = 2045,
 ["quantity"] = 1,
-["time"] = 1710411522,
+["time"] = 1706540392,
 },
 },
 ["15556"] = {
@@ -12228,56 +12132,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675082941,
 },
 },
-["3575"] = {
+["4789"] = {
 {
-["price"] = 1972,
-["quantity"] = 3,
-["time"] = 1712685753,
-},
-{
-["price"] = 1794,
-["quantity"] = 4,
-["time"] = 1713379552,
-},
-{
-["price"] = 1899,
-["quantity"] = 2,
-["time"] = 1713561221,
-},
-{
-["price"] = 1167,
-["quantity"] = 51,
-["time"] = 1722182462,
-},
-{
-["price"] = 791,
-["quantity"] = 55,
-["time"] = 1722244719,
-},
-{
-["price"] = 782,
-["quantity"] = 34,
-["time"] = 1722255020,
-},
-{
-["price"] = 774,
-["quantity"] = 73,
-["time"] = 1722276294,
-},
-{
-["price"] = 896,
-["quantity"] = 50,
-["time"] = 1722346642,
-},
-{
-["price"] = 895,
-["quantity"] = 19,
-["time"] = 1722347474,
-},
-{
-["price"] = 689,
-["quantity"] = 100,
-["time"] = 1722354422,
+["price"] = 3099,
+["quantity"] = 1,
+["time"] = 1694080921,
 },
 },
 ["g:15535:29"] = {
@@ -12292,11 +12151,26 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711022138,
 },
 },
-["8107"] = {
+["9874"] = {
 {
-["price"] = 29799,
-["quantity"] = 2,
-["time"] = 1645896274,
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1712935601,
+},
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1712998159,
+},
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1713085109,
+},
+{
+["price"] = 49884,
+["quantity"] = 1,
+["time"] = 1713124183,
 },
 },
 ["3576"] = {
@@ -12410,11 +12284,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722347483,
 },
 },
-["gn:2802:Blazing Emblem:43"] = {
+["gn:15309:Feral Cloak of the Eagle:15"] = {
 {
-["price"] = 198101,
+["price"] = 3565,
 ["quantity"] = 1,
-["time"] = 1710883032,
+["time"] = 1705497110,
 },
 },
 ["41458"] = {
@@ -12464,41 +12338,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709053281,
 },
 },
-["12655"] = {
+["15312"] = {
 {
-["price"] = 51500,
+["price"] = 3900,
 ["quantity"] = 1,
-["time"] = 1696671832,
+["time"] = 1703159544,
 },
 {
-["price"] = 49997,
+["price"] = 3496,
 ["quantity"] = 1,
-["time"] = 1696759528,
-},
-{
-["price"] = 39983,
-["quantity"] = 1,
-["time"] = 1696839484,
-},
-{
-["price"] = 34063,
-["quantity"] = 1,
-["time"] = 1696931002,
-},
-{
-["price"] = 30052,
-["quantity"] = 1,
-["time"] = 1697012167,
-},
-{
-["price"] = 27544,
-["quantity"] = 1,
-["time"] = 1697048525,
-},
-{
-["price"] = 26599,
-["quantity"] = 1,
-["time"] = 1709366239,
+["time"] = 1703249362,
 },
 },
 ["3287"] = {
@@ -12535,13 +12384,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 2399,
 ["quantity"] = 1,
 ["time"] = 1706006061,
-},
-},
-["gn:10413:Gloves of the Fang:19"] = {
-{
-["price"] = 978,
-["quantity"] = 1,
-["time"] = 1706540384,
 },
 },
 ["3355"] = {
@@ -12596,6 +12438,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722244712,
 },
 },
+["2553"] = {
+{
+["price"] = 8900,
+["quantity"] = 1,
+["time"] = 1724417542,
+},
+},
 ["15497"] = {
 {
 ["price"] = 1190,
@@ -12610,21 +12459,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709053274,
 },
 },
-["2934"] = {
+["g:4720:33"] = {
 {
-["price"] = 390,
-["quantity"] = 36,
-["time"] = 1713089226,
-},
-{
-["price"] = 381,
-["quantity"] = 25,
-["time"] = 1713094143,
-},
-{
-["price"] = 223,
-["quantity"] = 5,
-["time"] = 1713123971,
+["price"] = 15098,
+["quantity"] = 1,
+["time"] = 1712222642,
 },
 },
 ["3860"] = {
@@ -12693,21 +12532,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643789350,
 },
 },
-["39938"] = {
+["40012"] = {
 {
-["price"] = 19237,
-["quantity"] = 20,
-["time"] = 1674580873,
+["price"] = 77862,
+["quantity"] = 14,
+["time"] = 1674577914,
 },
 {
-["price"] = 19224,
-["quantity"] = 6,
-["time"] = 1674659850,
+["price"] = 76591,
+["quantity"] = 14,
+["time"] = 1674643580,
 },
 {
-["price"] = 19201,
-["quantity"] = 6,
-["time"] = 1674892753,
+["price"] = 61896,
+["quantity"] = 13,
+["time"] = 1674814660,
 },
 },
 ["g:2138:7"] = {
@@ -12729,21 +12568,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1646930006,
 },
 },
-["g:14161:18"] = {
+["39998"] = {
 {
-["price"] = 970,
-["quantity"] = 1,
-["time"] = 1706650886,
+["price"] = 1829943,
+["quantity"] = 7,
+["time"] = 1676207785,
 },
 {
-["price"] = 1998,
-["quantity"] = 1,
-["time"] = 1706698530,
+["price"] = 2202487,
+["quantity"] = 7,
+["time"] = 1676687074,
 },
 {
-["price"] = 9095,
+["price"] = 2104883,
 ["quantity"] = 1,
-["time"] = 1706883159,
+["time"] = 1676715349,
 },
 },
 ["929"] = {
@@ -12787,53 +12626,33 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713116430,
 },
 },
-["39998"] = {
+["4726"] = {
 {
-["price"] = 1829943,
-["quantity"] = 7,
-["time"] = 1676207785,
-},
-{
-["price"] = 2202487,
-["quantity"] = 7,
-["time"] = 1676687074,
-},
-{
-["price"] = 2104883,
+["price"] = 7018,
 ["quantity"] = 1,
-["time"] = 1676715349,
+["time"] = 1722346611,
 },
 },
-["g:13066:51"] = {
+["783"] = {
 {
-["price"] = 2809980,
+["price"] = 134,
 ["quantity"] = 1,
-["time"] = 1674916298,
-},
-{
-["price"] = 2499998,
-["quantity"] = 1,
-["time"] = 1675241183,
+["time"] = 1704447974,
 },
 {
-["price"] = 1279995,
-["quantity"] = 1,
-["time"] = 1675443109,
+["price"] = 196,
+["quantity"] = 6,
+["time"] = 1704453148,
 },
 {
-["price"] = 1599993,
-["quantity"] = 1,
-["time"] = 1675714558,
+["price"] = 159,
+["quantity"] = 4,
+["time"] = 1704457902,
 },
 {
-["price"] = 998998,
-["quantity"] = 1,
-["time"] = 1676142344,
-},
-{
-["price"] = 949998,
-["quantity"] = 1,
-["time"] = 1676291789,
+["price"] = 188,
+["quantity"] = 2,
+["time"] = 1712847273,
 },
 },
 ["40058"] = {
@@ -12877,13 +12696,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713094149,
 },
 },
-["g:3292:13"] = {
-{
-["price"] = 465,
-["quantity"] = 1,
-["time"] = 1693995877,
-},
-},
 ["g:14791:48"] = {
 {
 ["price"] = 18993,
@@ -12906,11 +12718,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713372326,
 },
 },
-["14241"] = {
+["g:3292:13"] = {
 {
-["price"] = 20000,
-["quantity"] = 2,
-["time"] = 1645371560,
+["price"] = 465,
+["quantity"] = 1,
+["time"] = 1693995877,
+},
+},
+["8846"] = {
+{
+["price"] = 6997,
+["quantity"] = 21,
+["time"] = 1646645255,
+},
+{
+["price"] = 7781,
+["quantity"] = 1,
+["time"] = 1699174601,
 },
 },
 ["3184"] = {
@@ -12954,85 +12778,30 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678046196,
 },
 },
-["gn:15592:Steadfast Buckler of Healing:43"] = {
+["gn:15116:Rigid Shoulders of the Boar:26"] = {
 {
-["price"] = 32300,
+["price"] = 9994,
 ["quantity"] = 1,
-["time"] = 1712958184,
+["time"] = 1709807871,
 },
 {
-["price"] = 32300,
+["price"] = 3994,
 ["quantity"] = 1,
-["time"] = 1712998152,
+["time"] = 1709896005,
 },
+},
+["g:40246:213"] = {
 {
-["price"] = 32300,
+["price"] = 14999999,
 ["quantity"] = 1,
-["time"] = 1713085106,
+["time"] = 1677608851,
 },
 },
-["41448"] = {
+["g:23203:65"] = {
 {
-["price"] = 129994,
+["price"] = 469987,
 ["quantity"] = 1,
-["time"] = 1674659915,
-},
-{
-["price"] = 129991,
-["quantity"] = 1,
-["time"] = 1674814771,
-},
-},
-["22448"] = {
-{
-["price"] = 17398,
-["quantity"] = 4,
-["time"] = 1674553186,
-},
-{
-["price"] = 11728,
-["quantity"] = 6,
-["time"] = 1675003586,
-},
-{
-["price"] = 27109,
-["quantity"] = 10,
-["time"] = 1675196971,
-},
-{
-["price"] = 24986,
-["quantity"] = 10,
-["time"] = 1675336799,
-},
-{
-["price"] = 23330,
-["quantity"] = 6,
-["time"] = 1675431532,
-},
-{
-["price"] = 17773,
-["quantity"] = 6,
-["time"] = 1675523168,
-},
-{
-["price"] = 32986,
-["quantity"] = 3,
-["time"] = 1675691252,
-},
-{
-["price"] = 26784,
-["quantity"] = 3,
-["time"] = 1675871424,
-},
-{
-["price"] = 25496,
-["quantity"] = 3,
-["time"] = 1675933813,
-},
-{
-["price"] = 32992,
-["quantity"] = 4,
-["time"] = 1678112941,
+["time"] = 1676195263,
 },
 },
 ["g:15255:57"] = {
@@ -13267,21 +13036,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1693817606,
 },
 },
-["39900"] = {
+["gn:3314:Ceremonial Leather Gloves:15"] = {
 {
-["price"] = 9979,
-["quantity"] = 16,
-["time"] = 1674659486,
-},
-{
-["price"] = 9768,
+["price"] = 1991,
 ["quantity"] = 1,
-["time"] = 1674814641,
-},
-{
-["price"] = 9458,
-["quantity"] = 9,
-["time"] = 1674892704,
+["time"] = 1707211154,
 },
 },
 ["g:3187:44"] = {
@@ -13320,11 +13079,26 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704447938,
 },
 },
-["gn:15115:Rigid Gloves of the Eagle:22"] = {
+["19712"] = {
 {
-["price"] = 6931,
+["price"] = 19989,
 ["quantity"] = 1,
-["time"] = 1709895992,
+["time"] = 1674553256,
+},
+{
+["price"] = 38699,
+["quantity"] = 1,
+["time"] = 1675090861,
+},
+{
+["price"] = 94998,
+["quantity"] = 1,
+["time"] = 1675679192,
+},
+{
+["price"] = 39986,
+["quantity"] = 2,
+["time"] = 1677228842,
 },
 },
 ["14436"] = {
@@ -13361,50 +13135,25 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1676729950,
 },
 },
-["gn:14366:Mystic's Bracelets:17"] = {
+["4715"] = {
 {
-["price"] = 1479,
+["price"] = 3996,
 ["quantity"] = 1,
-["time"] = 1706540387,
+["time"] = 1697117253,
 },
 },
-["4771"] = {
+["15019"] = {
 {
-["price"] = 1600,
+["price"] = 2045,
 ["quantity"] = 1,
-["time"] = 1706087449,
+["time"] = 1706540392,
 },
 },
-["10285"] = {
+["gn:14186:Raincaller Mantle of the Eagle:29"] = {
 {
-["price"] = 22812,
-["quantity"] = 4,
-["time"] = 1643789364,
-},
-{
-["price"] = 6498,
-["quantity"] = 4,
-["time"] = 1643977127,
-},
-{
-["price"] = 1007,
-["quantity"] = 4,
-["time"] = 1644569704,
-},
-{
-["price"] = 1489,
-["quantity"] = 2,
-["time"] = 1647114218,
-},
-{
-["price"] = 5096,
+["price"] = 9500,
 ["quantity"] = 1,
-["time"] = 1722102492,
-},
-{
-["price"] = 1094,
-["quantity"] = 1,
-["time"] = 1722164581,
+["time"] = 1711021798,
 },
 },
 ["19711"] = {
@@ -13533,62 +13282,42 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1706006057,
 },
 },
-["5500"] = {
+["38561"] = {
 {
-["price"] = 1499,
+["price"] = 18267,
+["quantity"] = 240,
+["time"] = 1676539668,
+},
+{
+["price"] = 53999,
+["quantity"] = 47,
+["time"] = 1678046156,
+},
+},
+["15975"] = {
+{
+["price"] = 7900,
 ["quantity"] = 1,
-["time"] = 1696613917,
+["time"] = 1710881430,
 },
 {
-["price"] = 2887,
+["price"] = 7900,
 ["quantity"] = 1,
-["time"] = 1713371367,
+["time"] = 1711022140,
 },
-{
-["price"] = 2833,
-["quantity"] = 2,
-["time"] = 1713372177,
 },
+["gn:8158:Jouster's Gauntlets:40"] = {
 {
-["price"] = 1099,
-["quantity"] = 2,
-["time"] = 1713430115,
-},
-{
-["price"] = 1075,
+["price"] = 6493,
 ["quantity"] = 1,
-["time"] = 1713440659,
+["time"] = 1712310013,
 },
 },
-["40022"] = {
+["gn:15527:Sentry's Gloves of the Boar:27"] = {
 {
-["price"] = 74498,
+["price"] = 9987,
 ["quantity"] = 1,
-["time"] = 1678269188,
-},
-},
-["g:9290:42"] = {
-{
-["price"] = 9996,
-["quantity"] = 1,
-["time"] = 1699266065,
-},
-},
-["19703"] = {
-{
-["price"] = 10402,
-["quantity"] = 8,
-["time"] = 1675090840,
-},
-{
-["price"] = 9244,
-["quantity"] = 3,
-["time"] = 1675679229,
-},
-{
-["price"] = 3789,
-["quantity"] = 1,
-["time"] = 1676729955,
+["time"] = 1709055045,
 },
 },
 ["39905"] = {
@@ -13642,50 +13371,120 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1662283261,
 },
 },
-["g:1994:46"] = {
+["23077"] = {
 {
-["price"] = 65400,
-["quantity"] = 2,
-["time"] = 1644087851,
+["price"] = 45441,
+["quantity"] = 21,
+["time"] = 1674574376,
+},
+{
+["price"] = 45438,
+["quantity"] = 10,
+["time"] = 1674575909,
+},
+{
+["price"] = 9999,
+["quantity"] = 5,
+["time"] = 1674916349,
 },
 },
-["gn:2632:Curved Dagger of Nature's Wrath:14"] = {
+["4235"] = {
 {
-["price"] = 2584,
+["price"] = 967,
 ["quantity"] = 1,
-["time"] = 1705078149,
-},
-},
-["g:2802:43"] = {
-{
-["price"] = 399998,
-["quantity"] = 2,
-["time"] = 1643789343,
+["time"] = 1709482528,
 },
 {
-["price"] = 399998,
-["quantity"] = 2,
-["time"] = 1643977124,
+["price"] = 493,
+["quantity"] = 4,
+["time"] = 1712678034,
 },
 {
-["price"] = 999999,
-["quantity"] = 2,
-["time"] = 1644569687,
+["price"] = 590,
+["quantity"] = 6,
+["time"] = 1712829102,
 },
 {
-["price"] = 299695,
-["quantity"] = 2,
-["time"] = 1644945765,
-},
-{
-["price"] = 299695,
-["quantity"] = 2,
-["time"] = 1645134273,
-},
-{
-["price"] = 198101,
+["price"] = 826,
 ["quantity"] = 1,
-["time"] = 1710883032,
+["time"] = 1712834210,
+},
+{
+["price"] = 557,
+["quantity"] = 3,
+["time"] = 1712935621,
+},
+{
+["price"] = 402,
+["quantity"] = 3,
+["time"] = 1712998163,
+},
+{
+["price"] = 553,
+["quantity"] = 3,
+["time"] = 1713247936,
+},
+{
+["price"] = 582,
+["quantity"] = 3,
+["time"] = 1713372168,
+},
+{
+["price"] = 535,
+["quantity"] = 3,
+["time"] = 1713430113,
+},
+{
+["price"] = 986,
+["quantity"] = 1,
+["time"] = 1713561233,
+},
+},
+["12361"] = {
+{
+["price"] = 78899,
+["quantity"] = 23,
+["time"] = 1674575805,
+},
+{
+["price"] = 11083,
+["quantity"] = 23,
+["time"] = 1674916508,
+},
+{
+["price"] = 29989,
+["quantity"] = 23,
+["time"] = 1675443134,
+},
+{
+["price"] = 10379,
+["quantity"] = 2,
+["time"] = 1676364483,
+},
+{
+["price"] = 14155,
+["quantity"] = 10,
+["time"] = 1676748613,
+},
+{
+["price"] = 12494,
+["quantity"] = 10,
+["time"] = 1676838247,
+},
+{
+["price"] = 52098,
+["quantity"] = 5,
+["time"] = 1695637692,
+},
+{
+["price"] = 259999,
+["quantity"] = 2,
+["time"] = 1696517928,
+},
+{
+["price"] = 249898,
+["quantity"] = 26,
+["time"] = 1709366236,
 },
 },
 ["gn:12006:Meadow Ring of the Wolf:22"] = {
@@ -13695,90 +13494,65 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704447888,
 },
 },
-["g:7448:36"] = {
+["30809"] = {
 {
-["price"] = 36700,
-["quantity"] = 2,
-["time"] = 1643472844,
+["price"] = 1025,
+["quantity"] = 7,
+["time"] = 1663431732,
 },
 {
-["price"] = 46700,
-["quantity"] = 2,
-["time"] = 1643702095,
+["price"] = 684,
+["quantity"] = 10,
+["time"] = 1663696193,
 },
+},
+["19704"] = {
 {
-["price"] = 46700,
-["quantity"] = 2,
-["time"] = 1644569689,
-},
-{
-["price"] = 36700,
-["quantity"] = 2,
-["time"] = 1644945772,
-},
-{
-["price"] = 36700,
-["quantity"] = 2,
-["time"] = 1645347696,
-},
-},
-["3864"] = {
-{
-["price"] = 34792,
-["quantity"] = 25,
-["time"] = 1678357618,
-},
-{
-["price"] = 34789,
-["quantity"] = 61,
-["time"] = 1678358105,
-},
-{
-["price"] = 24399,
-["quantity"] = 36,
-["time"] = 1678468740,
-},
-{
-["price"] = 44843,
+["price"] = 11968,
 ["quantity"] = 44,
-["time"] = 1678532338,
+["time"] = 1675003640,
 },
 {
-["price"] = 49472,
+["price"] = 11828,
+["quantity"] = 1,
+["time"] = 1675090844,
+},
+{
+["price"] = 9890,
+["quantity"] = 47,
+["time"] = 1675679215,
+},
+{
+["price"] = 489,
+["quantity"] = 41,
+["time"] = 1676551108,
+},
+{
+["price"] = 7493,
+["quantity"] = 1,
+["time"] = 1676729951,
+},
+},
+["11174"] = {
+{
+["price"] = 11912,
+["quantity"] = 1,
+["time"] = 1674649971,
+},
+{
+["price"] = 6995,
+["quantity"] = 1,
+["time"] = 1694153005,
+},
+{
+["price"] = 3748,
 ["quantity"] = 2,
-["time"] = 1678559378,
+["time"] = 1694413741,
 },
 {
-["price"] = 19991,
-["quantity"] = 45,
-["time"] = 1678642139,
-},
-{
-["price"] = 24998,
-["quantity"] = 61,
-["time"] = 1678885905,
-},
-{
-["price"] = 119999,
-["quantity"] = 1,
-["time"] = 1679136876,
-},
-{
-["price"] = 3096,
-["quantity"] = 1,
-["time"] = 1722011824,
-},
-{
-["price"] = 967,
-["quantity"] = 1,
-["time"] = 1722093786,
-},
-},
-["39717"] = {
-{
-["price"] = 15499993,
-["quantity"] = 1,
-["time"] = 1675862203,
+["price"] = 3742,
+["quantity"] = 2,
+["time"] = 1694421863,
 },
 },
 ["3314"] = {
@@ -13786,28 +13560,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 1991,
 ["quantity"] = 1,
 ["time"] = 1707211154,
-},
-},
-["765"] = {
-{
-["price"] = 195,
-["quantity"] = 2,
-["time"] = 1643789393,
-},
-{
-["price"] = 42,
-["quantity"] = 8,
-["time"] = 1693662588,
-},
-{
-["price"] = 180,
-["quantity"] = 3,
-["time"] = 1709807914,
-},
-{
-["price"] = 215,
-["quantity"] = 2,
-["time"] = 1713094150,
 },
 },
 ["34054"] = {
@@ -13862,6 +13614,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678100196,
 },
 },
+["7526"] = {
+{
+["price"] = 97600,
+["quantity"] = 2,
+["time"] = 1643619652,
+},
+{
+["price"] = 97600,
+["quantity"] = 2,
+["time"] = 1643813066,
+},
+},
 ["34052"] = {
 {
 ["price"] = 152991,
@@ -13914,31 +13678,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678368628,
 },
 },
-["gn:15241:Battle Knife of the Tiger:26"] = {
+["g:15132:29"] = {
 {
-["price"] = 4599,
+["price"] = 14997,
 ["quantity"] = 1,
-["time"] = 1704559589,
-},
-{
-["price"] = 15196,
-["quantity"] = 1,
-["time"] = 1710081790,
-},
-{
-["price"] = 13594,
-["quantity"] = 1,
-["time"] = 1710146375,
-},
-{
-["price"] = 9938,
-["quantity"] = 1,
-["time"] = 1710321687,
-},
-{
-["price"] = 9938,
-["quantity"] = 1,
-["time"] = 1710515593,
+["time"] = 1709053292,
 },
 },
 ["36910"] = {
@@ -13982,11 +13726,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674575946,
 },
 },
-["29425"] = {
+["7972"] = {
 {
-["price"] = 898,
-["quantity"] = 4,
-["time"] = 1662905846,
+["price"] = 461,
+["quantity"] = 6,
+["time"] = 1647031995,
 },
 },
 ["g:12987:22"] = {
@@ -13996,31 +13740,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1695835686,
 },
 },
-["211853"] = {
+["g:15009:11"] = {
 {
-["price"] = 814,
+["price"] = 2199,
 ["quantity"] = 1,
-["time"] = 1703095245,
+["time"] = 1702412060,
 },
 {
-["price"] = 768,
+["price"] = 3586,
 ["quantity"] = 1,
-["time"] = 1703159575,
-},
-{
-["price"] = 768,
-["quantity"] = 1,
-["time"] = 1705571066,
-},
-{
-["price"] = 10996,
-["quantity"] = 1,
-["time"] = 1710425524,
-},
-{
-["price"] = 8573,
-["quantity"] = 1,
-["time"] = 1711021802,
+["time"] = 1705078164,
 },
 },
 ["gn:15284:Long Battle Bow:29"] = {
@@ -14106,26 +13835,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1721977386,
 },
 },
-["gn:15503:Outrunner's Legguards of the Boar:22"] = {
+["14570"] = {
 {
-["price"] = 5993,
+["price"] = 12346,
 ["quantity"] = 1,
-["time"] = 1705571038,
+["time"] = 1709377358,
 },
 {
-["price"] = 3395,
+["price"] = 23294,
 ["quantity"] = 1,
-["time"] = 1705780508,
-},
-{
-["price"] = 2577,
-["quantity"] = 1,
-["time"] = 1707919673,
-},
-{
-["price"] = 4998,
-["quantity"] = 1,
-["time"] = 1707985251,
+["time"] = 1713247900,
 },
 },
 ["12205"] = {
@@ -14196,38 +13915,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709798904,
 },
 },
-["g:14566:25"] = {
+["5573"] = {
 {
-["price"] = 6900,
+["price"] = 1566,
 ["quantity"] = 1,
-["time"] = 1709798913,
+["time"] = 1702833555,
 },
 {
-["price"] = 4499,
+["price"] = 1883,
 ["quantity"] = 1,
-["time"] = 1709807867,
+["time"] = 1705497113,
 },
+},
+["15284"] = {
 {
-["price"] = 9899,
+["price"] = 4888,
 ["quantity"] = 1,
-["time"] = 1710081798,
-},
-},
-["15260"] = {
-{
-["price"] = 19981,
-["quantity"] = 1,
-["time"] = 1710171989,
-},
-{
-["price"] = 11265,
-["quantity"] = 1,
-["time"] = 1710321697,
-},
-{
-["price"] = 51265,
-["quantity"] = 1,
-["time"] = 1722346607,
+["time"] = 1708544826,
 },
 },
 ["10331"] = {
@@ -14259,41 +13963,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1710515589,
 },
 },
-["2318"] = {
+["3187"] = {
 {
-["price"] = 288,
-["quantity"] = 210,
-["time"] = 1647114467,
-},
-{
-["price"] = 24,
-["quantity"] = 21,
-["time"] = 1693416398,
-},
-{
-["price"] = 948,
-["quantity"] = 91,
-["time"] = 1712829081,
-},
-{
-["price"] = 1899,
-["quantity"] = 70,
-["time"] = 1712847254,
-},
-{
-["price"] = 598,
-["quantity"] = 17,
-["time"] = 1713089224,
-},
-{
-["price"] = 501,
-["quantity"] = 94,
-["time"] = 1713094134,
-},
-{
-["price"] = 736,
-["quantity"] = 3,
-["time"] = 1713247925,
+["price"] = 19998,
+["quantity"] = 1,
+["time"] = 1697018413,
 },
 },
 ["g:2632:14"] = {
@@ -14308,26 +13982,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705078149,
 },
 },
-["4363"] = {
+["gn:14205:Thistlefur Belt of the Whale:32"] = {
 {
-["price"] = 61160,
+["price"] = 9081,
 ["quantity"] = 1,
-["time"] = 1678949988,
+["time"] = 1710090654,
 },
 {
-["price"] = 1297,
+["price"] = 9081,
 ["quantity"] = 1,
-["time"] = 1695195414,
-},
-{
-["price"] = 283,
-["quantity"] = 1,
-["time"] = 1695282165,
-},
-{
-["price"] = 496,
-["quantity"] = 1,
-["time"] = 1696062589,
+["time"] = 1710146380,
 },
 },
 ["7411"] = {
@@ -14344,11 +14008,56 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712829045,
 },
 },
-["g:4575:19"] = {
+["2450"] = {
 {
-["price"] = 11995,
+["price"] = 512,
 ["quantity"] = 1,
-["time"] = 1697117228,
+["time"] = 1696062609,
+},
+{
+["price"] = 399,
+["quantity"] = 6,
+["time"] = 1696577615,
+},
+{
+["price"] = 485,
+["quantity"] = 2,
+["time"] = 1696613886,
+},
+{
+["price"] = 571,
+["quantity"] = 2,
+["time"] = 1696668665,
+},
+{
+["price"] = 98,
+["quantity"] = 3,
+["time"] = 1704559595,
+},
+{
+["price"] = 43,
+["quantity"] = 9,
+["time"] = 1705571077,
+},
+{
+["price"] = 210,
+["quantity"] = 1,
+["time"] = 1709971628,
+},
+{
+["price"] = 191,
+["quantity"] = 2,
+["time"] = 1712829086,
+},
+{
+["price"] = 642,
+["quantity"] = 6,
+["time"] = 1722011794,
+},
+{
+["price"] = 640,
+["quantity"] = 5,
+["time"] = 1722016019,
 },
 },
 ["12013"] = {
@@ -14365,45 +14074,70 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675196897,
 },
 },
-["43109"] = {
+["4412"] = {
 {
-["price"] = 129885,
+["price"] = 1994,
 ["quantity"] = 1,
-["time"] = 1675502480,
+["time"] = 1709798925,
 },
 },
-["gn:15016:Lupine Handwraps of the Eagle:16"] = {
+["3012"] = {
 {
-["price"] = 4095,
+["price"] = 1517,
 ["quantity"] = 1,
-["time"] = 1703681737,
+["time"] = 1705571067,
 },
+},
+["2836"] = {
 {
-["price"] = 2396,
-["quantity"] = 1,
-["time"] = 1703765675,
-},
-{
-["price"] = 1297,
-["quantity"] = 1,
-["time"] = 1704447904,
-},
-},
-["41434"] = {
-{
-["price"] = 179996,
-["quantity"] = 6,
-["time"] = 1674659512,
-},
-{
-["price"] = 184998,
-["quantity"] = 2,
-["time"] = 1674892601,
-},
-{
-["price"] = 99998,
+["price"] = 446,
 ["quantity"] = 4,
-["time"] = 1675342599,
+["time"] = 1697018430,
+},
+{
+["price"] = 125,
+["quantity"] = 7,
+["time"] = 1702483021,
+},
+{
+["price"] = 91,
+["quantity"] = 1,
+["time"] = 1702490042,
+},
+{
+["price"] = 159,
+["quantity"] = 20,
+["time"] = 1702582673,
+},
+{
+["price"] = 82,
+["quantity"] = 11,
+["time"] = 1706475545,
+},
+{
+["price"] = 290,
+["quantity"] = 6,
+["time"] = 1706650904,
+},
+{
+["price"] = 44,
+["quantity"] = 1,
+["time"] = 1721977565,
+},
+{
+["price"] = 148,
+["quantity"] = 3,
+["time"] = 1721985453,
+},
+{
+["price"] = 474,
+["quantity"] = 3,
+["time"] = 1722102500,
+},
+{
+["price"] = 114,
+["quantity"] = 3,
+["time"] = 1722164587,
 },
 },
 ["14230"] = {
@@ -14413,11 +14147,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712564996,
 },
 },
-["gn:4362:Rough Boomstick:10"] = {
+["8397"] = {
 {
-["price"] = 599,
-["quantity"] = 6,
-["time"] = 1705402635,
+["price"] = 4746,
+["quantity"] = 1,
+["time"] = 1710883090,
+},
+{
+["price"] = 3991,
+["quantity"] = 3,
+["time"] = 1712345893,
 },
 },
 ["gn:14956:Bloodforged Bindings of the Bear:45"] = {
@@ -14452,16 +14191,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713780055,
 },
 },
-["g:14730:23"] = {
+["g:14091:11"] = {
 {
-["price"] = 5993,
+["price"] = 795,
 ["quantity"] = 1,
-["time"] = 1698506214,
-},
-{
-["price"] = 2997,
-["quantity"] = 1,
-["time"] = 1698592742,
+["time"] = 1693995861,
 },
 },
 ["g:6269:12"] = {
@@ -14478,33 +14212,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705402648,
 },
 },
-["22449"] = {
+["10413"] = {
 {
-["price"] = 74998,
+["price"] = 978,
 ["quantity"] = 1,
-["time"] = 1676551065,
+["time"] = 1706540384,
 },
 },
-["gn:6412:Chief Brigadier Boots:39"] = {
+["g:15556:32"] = {
 {
-["price"] = 6390,
+["price"] = 5090,
 ["quantity"] = 1,
-["time"] = 1711539437,
-},
-{
-["price"] = 6381,
-["quantity"] = 1,
-["time"] = 1711571373,
-},
-{
-["price"] = 6374,
-["quantity"] = 1,
-["time"] = 1711618567,
-},
-{
-["price"] = 6355,
-["quantity"] = 1,
-["time"] = 1711738851,
+["time"] = 1708544835,
 },
 },
 ["g:4789:18"] = {
@@ -14514,16 +14233,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1694080921,
 },
 },
-["40029"] = {
+["gn:15111:Rigid Moccasins of the Gorilla:21"] = {
 {
-["price"] = 68985,
-["quantity"] = 5,
-["time"] = 1674643589,
-},
-{
-["price"] = 65040,
-["quantity"] = 2,
-["time"] = 1677531428,
+["price"] = 2687,
+["quantity"] = 1,
+["time"] = 1706540393,
 },
 },
 ["15386"] = {
@@ -14553,11 +14267,56 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712829057,
 },
 },
-["15124"] = {
+["7909"] = {
 {
-["price"] = 8825,
+["price"] = 2903,
 ["quantity"] = 1,
-["time"] = 1709896010,
+["time"] = 1712565030,
+},
+{
+["price"] = 3240,
+["quantity"] = 1,
+["time"] = 1712641080,
+},
+{
+["price"] = 2316,
+["quantity"] = 1,
+["time"] = 1712958115,
+},
+{
+["price"] = 1560,
+["quantity"] = 1,
+["time"] = 1712998166,
+},
+{
+["price"] = 7398,
+["quantity"] = 1,
+["time"] = 1713379426,
+},
+{
+["price"] = 9583,
+["quantity"] = 1,
+["time"] = 1713440663,
+},
+{
+["price"] = 2597,
+["quantity"] = 1,
+["time"] = 1721985672,
+},
+{
+["price"] = 1372,
+["quantity"] = 1,
+["time"] = 1722016114,
+},
+{
+["price"] = 1799,
+["quantity"] = 1,
+["time"] = 1722182484,
+},
+{
+["price"] = 8999,
+["quantity"] = 1,
+["time"] = 1722244736,
 },
 },
 ["gn:14825:Symbolic Crest:43"] = {
@@ -14582,31 +14341,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713343753,
 },
 },
-["19714"] = {
+["19710"] = {
 {
-["price"] = 37497,
-["quantity"] = 1,
-["time"] = 1675090863,
+["price"] = 22217,
+["quantity"] = 3,
+["time"] = 1674553248,
 },
 {
-["price"] = 58499,
+["price"] = 36567,
 ["quantity"] = 2,
-["time"] = 1675679187,
+["time"] = 1675090859,
 },
 {
-["price"] = 19373,
-["quantity"] = 2,
-["time"] = 1676974999,
+["price"] = 88398,
+["quantity"] = 4,
+["time"] = 1675679198,
 },
 {
-["price"] = 19371,
+["price"] = 17985,
 ["quantity"] = 1,
-["time"] = 1676977416,
+["time"] = 1676977421,
 },
 {
-["price"] = 33287,
+["price"] = 49985,
 ["quantity"] = 1,
-["time"] = 1677228838,
+["time"] = 1677228850,
 },
 },
 ["1411"] = {
@@ -14616,43 +14375,43 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704907061,
 },
 },
-["g:8199:47"] = {
+["gn:12008:Savannah Ring of the Monkey:28"] = {
 {
-["price"] = 100000,
+["price"] = 56945,
+["quantity"] = 1,
+["time"] = 1709578020,
+},
+{
+["price"] = 56945,
+["quantity"] = 1,
+["time"] = 1709719018,
+},
+{
+["price"] = 56944,
+["quantity"] = 1,
+["time"] = 1709798902,
+},
+},
+["10312"] = {
+{
+["price"] = 7999,
 ["quantity"] = 2,
-["time"] = 1645210226,
+["time"] = 1644185856,
 },
 {
-["price"] = 50000,
+["price"] = 19396,
+["quantity"] = 3,
+["time"] = 1644945880,
+},
+{
+["price"] = 19396,
 ["quantity"] = 2,
-["time"] = 1645443679,
+["time"] = 1645134305,
 },
 {
-["price"] = 66699,
-["quantity"] = 1,
-["time"] = 1713561169,
-},
-{
-["price"] = 36697,
-["quantity"] = 1,
-["time"] = 1713602279,
-},
-{
-["price"] = 59986,
-["quantity"] = 1,
-["time"] = 1713646337,
-},
-{
-["price"] = 59986,
-["quantity"] = 1,
-["time"] = 1713780084,
-},
-},
-["g:11995:28"] = {
-{
-["price"] = 10092,
-["quantity"] = 1,
-["time"] = 1710425522,
+["price"] = 9196,
+["quantity"] = 2,
+["time"] = 1645347702,
 },
 },
 ["15367"] = {
@@ -14667,41 +14426,56 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1710146384,
 },
 },
-["g:8194:43"] = {
+["4338"] = {
 {
-["price"] = 54400,
-["quantity"] = 2,
-["time"] = 1643485533,
+["price"] = 525,
+["quantity"] = 65,
+["time"] = 1713561243,
 },
 {
-["price"] = 54400,
-["quantity"] = 2,
-["time"] = 1643702099,
+["price"] = 490,
+["quantity"] = 1,
+["time"] = 1722011826,
 },
 {
-["price"] = 54400,
+["price"] = 503,
 ["quantity"] = 2,
-["time"] = 1643789322,
+["time"] = 1722093787,
 },
 {
-["price"] = 54400,
-["quantity"] = 2,
-["time"] = 1643977117,
+["price"] = 478,
+["quantity"] = 5,
+["time"] = 1722102518,
 },
 {
-["price"] = 54400,
+["price"] = 365,
 ["quantity"] = 2,
-["time"] = 1644569684,
+["time"] = 1722182478,
 },
 {
-["price"] = 44400,
-["quantity"] = 2,
-["time"] = 1644945757,
+["price"] = 603,
+["quantity"] = 1,
+["time"] = 1722237928,
 },
 {
-["price"] = 44400,
+["price"] = 491,
+["quantity"] = 19,
+["time"] = 1722244730,
+},
+{
+["price"] = 536,
+["quantity"] = 1,
+["time"] = 1722255023,
+},
+{
+["price"] = 435,
 ["quantity"] = 2,
-["time"] = 1645134268,
+["time"] = 1722276299,
+},
+{
+["price"] = 1313,
+["quantity"] = 2,
+["time"] = 1722346657,
 },
 },
 ["6540"] = {
@@ -14767,46 +14541,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704453072,
 },
 },
-["36924"] = {
+["gn:9770:Greenweave Cloak of the Owl:20"] = {
 {
-["price"] = 45286,
-["quantity"] = 7,
-["time"] = 1674580634,
-},
-{
-["price"] = 41786,
-["quantity"] = 5,
-["time"] = 1674643611,
-},
-{
-["price"] = 43790,
+["price"] = 3777,
 ["quantity"] = 1,
-["time"] = 1674659983,
-},
-{
-["price"] = 42896,
-["quantity"] = 7,
-["time"] = 1674760476,
-},
-{
-["price"] = 41981,
-["quantity"] = 17,
-["time"] = 1674893281,
-},
-{
-["price"] = 63297,
-["quantity"] = 4,
-["time"] = 1675280802,
-},
-{
-["price"] = 54974,
-["quantity"] = 1,
-["time"] = 1678030632,
-},
-{
-["price"] = 54398,
-["quantity"] = 20,
-["time"] = 1678036471,
+["time"] = 1704453136,
 },
 },
 ["2632"] = {
@@ -14821,11 +14560,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705078149,
 },
 },
-["g:6616:32"] = {
+["g:15111:21"] = {
 {
-["price"] = 8800,
+["price"] = 2687,
 ["quantity"] = 1,
-["time"] = 1710665582,
+["time"] = 1706540393,
 },
 },
 ["gn:14161:Pagan Cape of the Eagle:18"] = {
@@ -14845,11 +14584,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1706883159,
 },
 },
-["gn:7445:Sentinel Shoulders of the Eagle:38"] = {
+["g:866:42"] = {
 {
-["price"] = 7800,
+["price"] = 19997,
 ["quantity"] = 1,
-["time"] = 1711539009,
+["time"] = 1712345915,
 },
 },
 ["15186"] = {
@@ -14859,63 +14598,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647038527,
 },
 },
-["3356"] = {
+["g:7483:40"] = {
 {
-["price"] = 2874,
-["quantity"] = 3,
-["time"] = 1712847261,
+["price"] = 86600,
+["quantity"] = 2,
+["time"] = 1644087857,
 },
-{
-["price"] = 796,
-["quantity"] = 3,
-["time"] = 1712910886,
 },
+["gn:14214:Vital Boots of the Eagle:34"] = {
 {
-["price"] = 7981,
-["quantity"] = 10,
-["time"] = 1721985463,
-},
-{
-["price"] = 7973,
+["price"] = 69898,
 ["quantity"] = 1,
-["time"] = 1721987564,
+["time"] = 1709053287,
 },
 {
-["price"] = 6218,
-["quantity"] = 3,
-["time"] = 1722011815,
-},
-{
-["price"] = 1063,
-["quantity"] = 10,
-["time"] = 1722093774,
-},
-{
-["price"] = 969,
-["quantity"] = 5,
-["time"] = 1722102501,
-},
-{
-["price"] = 713,
-["quantity"] = 10,
-["time"] = 1722164592,
-},
-{
-["price"] = 972,
-["quantity"] = 13,
-["time"] = 1722182458,
-},
-{
-["price"] = 629,
+["price"] = 8998,
 ["quantity"] = 1,
-["time"] = 1722244713,
-},
-},
-["g:6395:29"] = {
-{
-["price"] = 3077,
-["quantity"] = 1,
-["time"] = 1696759539,
+["time"] = 1709122318,
 },
 },
 ["8153"] = {
@@ -14955,40 +14654,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713646456,
 },
 },
-["14125"] = {
+["9877"] = {
 {
-["price"] = 5501,
-["quantity"] = 1,
-["time"] = 1706540386,
-},
-{
-["price"] = 6997,
-["quantity"] = 1,
-["time"] = 1706883042,
+["price"] = 73400,
+["quantity"] = 2,
+["time"] = 1643619658,
 },
 {
-["price"] = 6999,
-["quantity"] = 1,
-["time"] = 1709971601,
+["price"] = 73400,
+["quantity"] = 2,
+["time"] = 1643813069,
 },
 },
-["gn:15245:Vorpal Dagger of the Monkey:50"] = {
+["727"] = {
 {
-["price"] = 99999,
+["price"] = 494,
 ["quantity"] = 1,
-["time"] = 1713560623,
+["time"] = 1693897973,
 },
 {
-["price"] = 59985,
+["price"] = 798,
 ["quantity"] = 1,
-["time"] = 1713646435,
-},
-},
-["gr:12009:of Agility"] = {
-{
-["price"] = 133200,
-["quantity"] = 1,
-["time"] = 1722237919,
+["time"] = 1702405297,
 },
 },
 ["3292"] = {
@@ -14996,6 +14683,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 465,
 ["quantity"] = 1,
 ["time"] = 1693995877,
+},
+},
+["gr:12009:of Agility"] = {
+{
+["price"] = 133200,
+["quantity"] = 1,
+["time"] = 1722237919,
 },
 },
 ["769"] = {
@@ -15012,13 +14706,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696865452,
 },
 },
-["g:12054:24"] = {
-{
-["price"] = 8091,
-["quantity"] = 1,
-["time"] = 1708544834,
-},
-},
 ["9298"] = {
 {
 ["price"] = 75499,
@@ -15029,6 +14716,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 54631,
 ["quantity"] = 1,
 ["time"] = 1712394134,
+},
+},
+["4362"] = {
+{
+["price"] = 599,
+["quantity"] = 6,
+["time"] = 1705402635,
 },
 },
 ["14205"] = {
@@ -15050,78 +14744,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709642063,
 },
 },
-["2841"] = {
+["1640"] = {
 {
-["price"] = 933,
-["quantity"] = 60,
-["time"] = 1708806794,
-},
-{
-["price"] = 924,
-["quantity"] = 100,
-["time"] = 1708807693,
-},
-{
-["price"] = 663,
-["quantity"] = 60,
-["time"] = 1708877029,
-},
-{
-["price"] = 662,
-["quantity"] = 100,
-["time"] = 1708877105,
-},
-{
-["price"] = 747,
-["quantity"] = 10,
-["time"] = 1709053325,
-},
-{
-["price"] = 653,
-["quantity"] = 80,
-["time"] = 1709056862,
-},
-{
-["price"] = 410,
-["quantity"] = 80,
-["time"] = 1709122368,
-},
-{
-["price"] = 607,
-["quantity"] = 60,
-["time"] = 1709284738,
-},
-{
-["price"] = 481,
-["quantity"] = 8,
-["time"] = 1709290325,
-},
-{
-["price"] = 493,
-["quantity"] = 60,
-["time"] = 1709365769,
-},
-},
-["gn:6569:Shimmering Robe of Spirit:25"] = {
-{
-["price"] = 5496,
+["price"] = 24700,
 ["quantity"] = 1,
-["time"] = 1712935598,
+["time"] = 1711016469,
 },
 {
-["price"] = 15496,
+["price"] = 13481,
 ["quantity"] = 1,
-["time"] = 1712998156,
+["time"] = 1711114800,
 },
-{
-["price"] = 15496,
-["quantity"] = 1,
-["time"] = 1713085108,
 },
+["4090"] = {
 {
-["price"] = 15493,
-["quantity"] = 1,
-["time"] = 1713124182,
+["price"] = 128000,
+["quantity"] = 3,
+["time"] = 1646580243,
 },
 },
 ["14791"] = {
@@ -15146,30 +14785,72 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713372326,
 },
 },
-["4087"] = {
+["14344"] = {
 {
-["price"] = 14394,
+["price"] = 45993,
 ["quantity"] = 1,
-["time"] = 1712829032,
+["time"] = 1675196946,
 },
-},
-["4090"] = {
 {
-["price"] = 128000,
-["quantity"] = 3,
-["time"] = 1646580243,
+["price"] = 38329,
+["quantity"] = 1,
+["time"] = 1675336786,
 },
-},
-["8152"] = {
 {
-["price"] = 799,
+["price"] = 44996,
+["quantity"] = 1,
+["time"] = 1676291898,
+},
+{
+["price"] = 48911,
+["quantity"] = 19,
+["time"] = 1677241287,
+},
+},
+["gn:6569:Shimmering Robe of Spirit:25"] = {
+{
+["price"] = 5496,
+["quantity"] = 1,
+["time"] = 1712935598,
+},
+{
+["price"] = 15496,
+["quantity"] = 1,
+["time"] = 1712998156,
+},
+{
+["price"] = 15496,
+["quantity"] = 1,
+["time"] = 1713085108,
+},
+{
+["price"] = 15493,
+["quantity"] = 1,
+["time"] = 1713124182,
+},
+},
+["g:12013:49"] = {
+{
+["price"] = 30000,
 ["quantity"] = 2,
-["time"] = 1643620328,
+["time"] = 1645896272,
+},
+},
+["gn:15330:Wrangler's Boots of the Falcon:25"] = {
+{
+["price"] = 10004,
+["quantity"] = 1,
+["time"] = 1709026187,
 },
 {
-["price"] = 893,
-["quantity"] = 2,
-["time"] = 1644569716,
+["price"] = 10001,
+["quantity"] = 1,
+["time"] = 1709055041,
+},
+{
+["price"] = 4902,
+["quantity"] = 1,
+["time"] = 1709122341,
 },
 },
 ["40008"] = {
@@ -15199,23 +14880,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678782419,
 },
 },
-["gn:15330:Wrangler's Boots of the Falcon:25"] = {
-{
-["price"] = 10004,
-["quantity"] = 1,
-["time"] = 1709026187,
-},
-{
-["price"] = 10001,
-["quantity"] = 1,
-["time"] = 1709055041,
-},
-{
-["price"] = 4902,
-["quantity"] = 1,
-["time"] = 1709122341,
-},
-},
 ["15016"] = {
 {
 ["price"] = 4095,
@@ -15233,38 +14897,78 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704447904,
 },
 },
-["g:14574:26"] = {
+["3818"] = {
 {
-["price"] = 15008,
+["price"] = 2251,
+["quantity"] = 26,
+["time"] = 1644087872,
+},
+{
+["price"] = 2099,
 ["quantity"] = 1,
-["time"] = 1709377368,
-},
-},
-["20725"] = {
-{
-["price"] = 19154,
-["quantity"] = 2,
-["time"] = 1675003579,
+["time"] = 1662736836,
 },
 {
-["price"] = 14497,
+["price"] = 468,
 ["quantity"] = 1,
-["time"] = 1675431514,
+["time"] = 1696931011,
 },
 {
-["price"] = 11499,
+["price"] = 339,
+["quantity"] = 7,
+["time"] = 1697012184,
+},
+{
+["price"] = 394,
+["quantity"] = 6,
+["time"] = 1697032454,
+},
+{
+["price"] = 1291,
 ["quantity"] = 1,
-["time"] = 1675523165,
+["time"] = 1699266079,
 },
 {
-["price"] = 49999,
-["quantity"] = 2,
-["time"] = 1675691244,
+["price"] = 491,
+["quantity"] = 1,
+["time"] = 1712168068,
 },
 {
-["price"] = 15993,
+["price"] = 2994,
 ["quantity"] = 2,
-["time"] = 1675871419,
+["time"] = 1722093780,
+},
+{
+["price"] = 3479,
+["quantity"] = 10,
+["time"] = 1722102508,
+},
+{
+["price"] = 1794,
+["quantity"] = 2,
+["time"] = 1722182464,
+},
+},
+["39681"] = {
+{
+["price"] = 32948,
+["quantity"] = 19,
+["time"] = 1675327938,
+},
+{
+["price"] = 29442,
+["quantity"] = 19,
+["time"] = 1675336810,
+},
+{
+["price"] = 14660,
+["quantity"] = 19,
+["time"] = 1675511829,
+},
+{
+["price"] = 17132,
+["quantity"] = 3,
+["time"] = 1677232753,
 },
 },
 ["g:14125:21"] = {
@@ -15365,68 +15069,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696759537,
 },
 },
-["2838"] = {
+["5507"] = {
 {
-["price"] = 128,
+["price"] = 3495,
+["quantity"] = 10,
+["time"] = 1705402741,
+},
+},
+["g:40347:213"] = {
+{
+["price"] = 12499994,
 ["quantity"] = 1,
-["time"] = 1712685752,
-},
-{
-["price"] = 121,
-["quantity"] = 1,
-["time"] = 1712739945,
-},
-{
-["price"] = 75,
-["quantity"] = 5,
-["time"] = 1713285694,
-},
-{
-["price"] = 131,
-["quantity"] = 5,
-["time"] = 1721977567,
-},
-{
-["price"] = 122,
-["quantity"] = 14,
-["time"] = 1721985455,
-},
-{
-["price"] = 76,
-["quantity"] = 5,
-["time"] = 1722011807,
-},
-{
-["price"] = 63,
-["quantity"] = 15,
-["time"] = 1722093762,
-},
-{
-["price"] = 144,
-["quantity"] = 22,
-["time"] = 1722182455,
-},
-{
-["price"] = 142,
-["quantity"] = 20,
-["time"] = 1722182561,
-},
-{
-["price"] = 64,
-["quantity"] = 4,
-["time"] = 1722244711,
-},
-},
-["8483"] = {
-{
-["price"] = 1639,
-["quantity"] = 8,
-["time"] = 1710915125,
-},
-{
-["price"] = 466,
-["quantity"] = 9,
-["time"] = 1722102532,
+["time"] = 1675714762,
 },
 },
 ["g:14783:46"] = {
@@ -15443,11 +15097,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678046175,
 },
 },
-["3731"] = {
+["g:4567:16"] = {
 {
-["price"] = 341,
+["price"] = 2662,
 ["quantity"] = 1,
-["time"] = 1711539030,
+["time"] = 1705417521,
+},
+{
+["price"] = 2552,
+["quantity"] = 1,
+["time"] = 1705486195,
 },
 },
 ["3827"] = {
@@ -15514,36 +15173,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711022138,
 },
 },
-["15511"] = {
+["31186"] = {
 {
-["price"] = 21632,
+["price"] = 249997,
 ["quantity"] = 1,
-["time"] = 1705571043,
-},
-{
-["price"] = 7095,
-["quantity"] = 1,
-["time"] = 1705780510,
-},
-{
-["price"] = 2398,
-["quantity"] = 1,
-["time"] = 1707919670,
-},
-{
-["price"] = 3898,
-["quantity"] = 1,
-["time"] = 1707985263,
-},
-{
-["price"] = 3898,
-["quantity"] = 1,
-["time"] = 1709807875,
-},
-{
-["price"] = 3893,
-["quantity"] = 1,
-["time"] = 1709896012,
+["time"] = 1662905782,
 },
 },
 ["5527"] = {
@@ -15553,11 +15187,26 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709804707,
 },
 },
-["g:7533:44"] = {
+["g:2277:35"] = {
 {
-["price"] = 78800,
-["quantity"] = 2,
-["time"] = 1643620288,
+["price"] = 499997,
+["quantity"] = 1,
+["time"] = 1699174595,
+},
+{
+["price"] = 219999,
+["quantity"] = 1,
+["time"] = 1699271969,
+},
+{
+["price"] = 179997,
+["quantity"] = 1,
+["time"] = 1699786132,
+},
+{
+["price"] = 179997,
+["quantity"] = 1,
+["time"] = 1700301917,
 },
 },
 ["44465"] = {
@@ -15597,23 +15246,33 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675714982,
 },
 },
-["31079"] = {
+["g:10413:19"] = {
 {
-["price"] = 287142,
+["price"] = 978,
 ["quantity"] = 1,
-["time"] = 1674575783,
-},
-{
-["price"] = 523705,
-["quantity"] = 1,
-["time"] = 1674576250,
+["time"] = 1706540384,
 },
 },
-["7414"] = {
+["12799"] = {
 {
-["price"] = 8997,
+["price"] = 83985,
+["quantity"] = 6,
+["time"] = 1674575839,
+},
+{
+["price"] = 129991,
 ["quantity"] = 1,
-["time"] = 1710665585,
+["time"] = 1676410690,
+},
+{
+["price"] = 69984,
+["quantity"] = 5,
+["time"] = 1676748630,
+},
+{
+["price"] = 64793,
+["quantity"] = 1,
+["time"] = 1677096792,
 },
 },
 ["15269"] = {
@@ -15623,43 +15282,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1697552697,
 },
 },
-["g:7438:36"] = {
+["36933"] = {
 {
-["price"] = 64400,
+["price"] = 43657,
+["quantity"] = 3,
+["time"] = 1674580618,
+},
+},
+["4238"] = {
+{
+["price"] = 298,
+["quantity"] = 1,
+["time"] = 1695974936,
+},
+{
+["price"] = 300,
 ["quantity"] = 2,
-["time"] = 1643619638,
-},
-{
-["price"] = 64400,
-["quantity"] = 2,
-["time"] = 1643813060,
-},
-{
-["price"] = 64400,
-["quantity"] = 2,
-["time"] = 1644003863,
-},
-},
-["12204"] = {
-{
-["price"] = 1963,
-["quantity"] = 4,
-["time"] = 1710090671,
-},
-{
-["price"] = 1943,
-["quantity"] = 4,
-["time"] = 1710146399,
-},
-{
-["price"] = 2133,
-["quantity"] = 4,
-["time"] = 1710321759,
-},
-{
-["price"] = 1882,
-["quantity"] = 4,
-["time"] = 1710515625,
+["time"] = 1724417526,
 },
 },
 ["15331"] = {
@@ -15674,11 +15313,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696668632,
 },
 },
-["20406"] = {
+["gn:2138:Sharpened Letter Opener:7"] = {
 {
-["price"] = 55566,
-["quantity"] = 4,
-["time"] = 1647114197,
+["price"] = 1700,
+["quantity"] = 1,
+["time"] = 1704907067,
 },
 },
 ["g:7414:34"] = {
@@ -15838,11 +15477,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722016109,
 },
 },
-["gn:2138:Sharpened Letter Opener:7"] = {
+["4561"] = {
 {
-["price"] = 1700,
+["price"] = 747,
 ["quantity"] = 1,
-["time"] = 1704907067,
+["time"] = 1702405292,
 },
 },
 ["2774"] = {
@@ -15852,13 +15491,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704907072,
 },
 },
-["20747"] = {
-{
-["price"] = 37435,
-["quantity"] = 17,
-["time"] = 1678016755,
-},
-},
 ["3309"] = {
 {
 ["price"] = 657,
@@ -15866,31 +15498,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1702235802,
 },
 },
-["15213"] = {
+["20747"] = {
 {
-["price"] = 13198,
-["quantity"] = 2,
-["time"] = 1644087843,
+["price"] = 37435,
+["quantity"] = 17,
+["time"] = 1678016755,
 },
-{
-["price"] = 42500,
-["quantity"] = 2,
-["time"] = 1644945750,
 },
+["g:4714:27"] = {
 {
-["price"] = 19798,
-["quantity"] = 2,
-["time"] = 1645347690,
-},
-{
-["price"] = 9998,
+["price"] = 6900,
 ["quantity"] = 1,
-["time"] = 1712238591,
+["time"] = 1709377377,
 },
 {
-["price"] = 244942,
+["price"] = 4498,
 ["quantity"] = 1,
-["time"] = 1712335919,
+["time"] = 1709577321,
+},
+{
+["price"] = 4498,
+["quantity"] = 1,
+["time"] = 1709641683,
 },
 },
 ["213544"] = {
@@ -15939,30 +15568,30 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1645134302,
 },
 },
-["9906"] = {
+["35682"] = {
 {
-["price"] = 142300,
+["price"] = 599835,
+["quantity"] = 1,
+["time"] = 1677232745,
+},
+},
+["14377"] = {
+{
+["price"] = 9988,
+["quantity"] = 1,
+["time"] = 1710331600,
+},
+{
+["price"] = 9989,
+["quantity"] = 1,
+["time"] = 1710515606,
+},
+},
+["g:7534:45"] = {
+{
+["price"] = 43200,
 ["quantity"] = 2,
-["time"] = 1643461402,
-},
-{
-["price"] = 92300,
-["quantity"] = 2,
-["time"] = 1643789355,
-},
-},
-["15603"] = {
-{
-["price"] = 30000,
-["quantity"] = 2,
-["time"] = 1645371578,
-},
-},
-["12431"] = {
-{
-["price"] = 10998,
-["quantity"] = 4,
-["time"] = 1647114317,
+["time"] = 1643789350,
 },
 },
 ["4714"] = {
@@ -15982,21 +15611,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709641683,
 },
 },
-["7432"] = {
+["805"] = {
 {
-["price"] = 72300,
-["quantity"] = 2,
-["time"] = 1643619630,
-},
-{
-["price"] = 72300,
-["quantity"] = 2,
-["time"] = 1643813057,
-},
-{
-["price"] = 72300,
-["quantity"] = 2,
-["time"] = 1644003861,
+["price"] = 396,
+["quantity"] = 1,
+["time"] = 1696498523,
 },
 },
 ["g:727:10"] = {
@@ -16035,6 +15654,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712935608,
 },
 },
+["9290"] = {
+{
+["price"] = 9996,
+["quantity"] = 1,
+["time"] = 1699266065,
+},
+},
 ["g:14570:28"] = {
 {
 ["price"] = 12346,
@@ -16047,25 +15673,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713247900,
 },
 },
-["9290"] = {
+["39914"] = {
 {
-["price"] = 9996,
+["price"] = 23389,
+["quantity"] = 9,
+["time"] = 1674659912,
+},
+{
+["price"] = 19999,
+["quantity"] = 3,
+["time"] = 1674814767,
+},
+{
+["price"] = 14996,
+["quantity"] = 6,
+["time"] = 1674892748,
+},
+},
+["g:6583:21"] = {
+{
+["price"] = 7693,
 ["quantity"] = 1,
-["time"] = 1699266065,
-},
-},
-["5137"] = {
-{
-["price"] = 680,
-["quantity"] = 35,
-["time"] = 1708544907,
-},
-},
-["4377"] = {
-{
-["price"] = 841,
-["quantity"] = 1,
-["time"] = 1695035305,
+["time"] = 1696613854,
 },
 },
 ["8838"] = {
@@ -16115,23 +15744,43 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1646930028,
 },
 },
-["10333"] = {
+["8831"] = {
 {
-["price"] = 17999,
-["quantity"] = 1,
-["time"] = 1699168586,
+["price"] = 13199,
+["quantity"] = 12,
+["time"] = 1645134278,
 },
 {
-["price"] = 3998,
-["quantity"] = 1,
-["time"] = 1712238606,
+["price"] = 15999,
+["quantity"] = 266,
+["time"] = 1645371705,
 },
-},
-["g:35682:183"] = {
 {
-["price"] = 599835,
+["price"] = 23832,
+["quantity"] = 63,
+["time"] = 1646580175,
+},
+{
+["price"] = 29199,
+["quantity"] = 12,
+["time"] = 1646667546,
+},
+{
+["price"] = 25797,
+["quantity"] = 48,
+["time"] = 1646728269,
+},
+{
+["price"] = 16169,
+["quantity"] = 48,
+["time"] = 1646930021,
+},
+},
+["12054"] = {
+{
+["price"] = 8091,
 ["quantity"] = 1,
-["time"] = 1677232745,
+["time"] = 1708544834,
 },
 },
 ["g:11983:26"] = {
@@ -16141,38 +15790,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1697552703,
 },
 },
-["6586"] = {
+["11175"] = {
 {
-["price"] = 4499,
-["quantity"] = 1,
-["time"] = 1698506211,
-},
-},
-["gn:7786:Headsplitter:30"] = {
-{
-["price"] = 54800,
-["quantity"] = 1,
-["time"] = 1712238601,
+["price"] = 54896,
+["quantity"] = 4,
+["time"] = 1674649977,
 },
 {
-["price"] = 32390,
+["price"] = 8571,
+["quantity"] = 2,
+["time"] = 1694444134,
+},
+},
+["g:14214:34"] = {
+{
+["price"] = 69898,
 ["quantity"] = 1,
-["time"] = 1712335921,
+["time"] = 1709053287,
 },
 {
-["price"] = 79995,
+["price"] = 8998,
 ["quantity"] = 1,
-["time"] = 1712671735,
-},
-{
-["price"] = 47792,
-["quantity"] = 1,
-["time"] = 1712739937,
-},
-{
-["price"] = 43986,
-["quantity"] = 1,
-["time"] = 1712829033,
+["time"] = 1709122318,
 },
 },
 ["12430"] = {
@@ -16182,31 +15821,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647114321,
 },
 },
-["3914"] = {
+["g:1752:21"] = {
 {
-["price"] = 51998,
-["quantity"] = 2,
-["time"] = 1643485518,
-},
-{
-["price"] = 39999,
-["quantity"] = 2,
-["time"] = 1643619678,
-},
-{
-["price"] = 39999,
-["quantity"] = 3,
-["time"] = 1645039413,
-},
-{
-["price"] = 29797,
-["quantity"] = 2,
-["time"] = 1647114205,
-},
-{
-["price"] = 109997,
+["price"] = 999,
 ["quantity"] = 1,
-["time"] = 1712430115,
+["time"] = 1703159557,
+},
+{
+["price"] = 896,
+["quantity"] = 1,
+["time"] = 1703249370,
 },
 },
 ["1181"] = {
@@ -16267,11 +15891,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1721977380,
 },
 },
-["g:4771:15"] = {
+["14421"] = {
 {
-["price"] = 1600,
-["quantity"] = 1,
-["time"] = 1706087449,
+["price"] = 95985,
+["quantity"] = 2,
+["time"] = 1645371575,
 },
 },
 ["g:13116:61"] = {
@@ -16333,28 +15957,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713561195,
 },
 },
-["15231"] = {
+["gn:8179:Cadet's Bow:6"] = {
 {
-["price"] = 7092,
+["price"] = 1598,
 ["quantity"] = 1,
-["time"] = 1697117249,
-},
-{
-["price"] = 7781,
-["quantity"] = 1,
-["time"] = 1709053263,
+["time"] = 1705844776,
 },
 },
-["7070"] = {
+["3393"] = {
 {
-["price"] = 1498,
+["price"] = 4395,
 ["quantity"] = 1,
-["time"] = 1716793024,
+["time"] = 1696614134,
 },
 {
-["price"] = 3099,
+["price"] = 3499,
 ["quantity"] = 1,
-["time"] = 1724417509,
+["time"] = 1696668673,
 },
 },
 ["g:15477:11"] = {
@@ -16430,11 +16049,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1707985251,
 },
 },
-["14898"] = {
+["g:14114:16"] = {
 {
-["price"] = 12200,
+["price"] = 1541,
 ["quantity"] = 1,
-["time"] = 1712345870,
+["time"] = 1705078155,
 },
 },
 ["13463"] = {
@@ -16476,16 +16095,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1663696159,
 },
 },
-["41453"] = {
+["g:14561:17"] = {
 {
-["price"] = 169995,
+["price"] = 1490,
 ["quantity"] = 2,
-["time"] = 1674659526,
-},
-{
-["price"] = 99998,
-["quantity"] = 2,
-["time"] = 1674892595,
+["time"] = 1704447895,
 },
 },
 ["14848"] = {
@@ -16493,6 +16107,234 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 30000,
 ["quantity"] = 2,
 ["time"] = 1646851019,
+},
+},
+["2455"] = {
+{
+["price"] = 115,
+["quantity"] = 4,
+["time"] = 1711021806,
+},
+},
+["g:15975:31"] = {
+{
+["price"] = 7900,
+["quantity"] = 1,
+["time"] = 1710881430,
+},
+{
+["price"] = 7900,
+["quantity"] = 1,
+["time"] = 1711022140,
+},
+},
+["18335"] = {
+{
+["price"] = 36592,
+["quantity"] = 1,
+["time"] = 1675178965,
+},
+{
+["price"] = 17988,
+["quantity"] = 1,
+["time"] = 1675691284,
+},
+},
+["8394"] = {
+{
+["price"] = 29999,
+["quantity"] = 26,
+["time"] = 1645987233,
+},
+},
+["g:15552:36"] = {
+{
+["price"] = 8899,
+["quantity"] = 1,
+["time"] = 1699174591,
+},
+},
+["g:9874:43"] = {
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1712935601,
+},
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1712998159,
+},
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1713085109,
+},
+{
+["price"] = 49884,
+["quantity"] = 1,
+["time"] = 1713124183,
+},
+},
+["g:15367:39"] = {
+{
+["price"] = 14300,
+["quantity"] = 1,
+["time"] = 1710090664,
+},
+{
+["price"] = 14300,
+["quantity"] = 1,
+["time"] = 1710146384,
+},
+},
+["4364"] = {
+{
+["price"] = 110,
+["quantity"] = 2,
+["time"] = 1695195419,
+},
+},
+["gn:15386:Rageclaw Shoulder Pads of the Eagle:48"] = {
+{
+["price"] = 31300,
+["quantity"] = 1,
+["time"] = 1712565015,
+},
+{
+["price"] = 31300,
+["quantity"] = 1,
+["time"] = 1712641064,
+},
+{
+["price"] = 31297,
+["quantity"] = 1,
+["time"] = 1712671745,
+},
+{
+["price"] = 31295,
+["quantity"] = 1,
+["time"] = 1712739939,
+},
+{
+["price"] = 31295,
+["quantity"] = 1,
+["time"] = 1712829057,
+},
+},
+["19700"] = {
+{
+["price"] = 11965,
+["quantity"] = 3,
+["time"] = 1675003632,
+},
+{
+["price"] = 2215,
+["quantity"] = 1,
+["time"] = 1675090832,
+},
+{
+["price"] = 8485,
+["quantity"] = 2,
+["time"] = 1675679235,
+},
+{
+["price"] = 9743,
+["quantity"] = 2,
+["time"] = 1676729966,
+},
+},
+["23118"] = {
+{
+["price"] = 17629,
+["quantity"] = 18,
+["time"] = 1674574438,
+},
+},
+["3013"] = {
+{
+["price"] = 221,
+["quantity"] = 2,
+["time"] = 1704907095,
+},
+},
+["g:3287:12"] = {
+{
+["price"] = 997,
+["quantity"] = 1,
+["time"] = 1702412062,
+},
+},
+["4496"] = {
+{
+["price"] = 236,
+["quantity"] = 3,
+["time"] = 1705656420,
+},
+},
+["41380"] = {
+{
+["price"] = 241807,
+["quantity"] = 10,
+["time"] = 1674580464,
+},
+{
+["price"] = 149587,
+["quantity"] = 4,
+["time"] = 1674760499,
+},
+},
+["g:9770:20"] = {
+{
+["price"] = 3777,
+["quantity"] = 1,
+["time"] = 1704453136,
+},
+},
+["2138"] = {
+{
+["price"] = 1700,
+["quantity"] = 1,
+["time"] = 1704907067,
+},
+},
+["8169"] = {
+{
+["price"] = 595,
+["quantity"] = 1,
+["time"] = 1712429932,
+},
+{
+["price"] = 532,
+["quantity"] = 2,
+["time"] = 1712829114,
+},
+{
+["price"] = 616,
+["quantity"] = 2,
+["time"] = 1713560663,
+},
+{
+["price"] = 796,
+["quantity"] = 2,
+["time"] = 1713646457,
+},
+{
+["price"] = 872,
+["quantity"] = 2,
+["time"] = 1713780041,
+},
+},
+["23112"] = {
+{
+["price"] = 34585,
+["quantity"] = 20,
+["time"] = 1674574420,
+},
+{
+["price"] = 34582,
+["quantity"] = 6,
+["time"] = 1674575926,
 },
 },
 ["41119"] = {
@@ -16547,234 +16389,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1676974992,
 },
 },
-["2455"] = {
-{
-["price"] = 115,
-["quantity"] = 4,
-["time"] = 1711021806,
-},
-},
-["18335"] = {
-{
-["price"] = 36592,
-["quantity"] = 1,
-["time"] = 1675178965,
-},
-{
-["price"] = 17988,
-["quantity"] = 1,
-["time"] = 1675691284,
-},
-},
-["8394"] = {
-{
-["price"] = 29999,
-["quantity"] = 26,
-["time"] = 1645987233,
-},
-},
-["8169"] = {
-{
-["price"] = 595,
-["quantity"] = 1,
-["time"] = 1712429932,
-},
-{
-["price"] = 532,
-["quantity"] = 2,
-["time"] = 1712829114,
-},
-{
-["price"] = 616,
-["quantity"] = 2,
-["time"] = 1713560663,
-},
-{
-["price"] = 796,
-["quantity"] = 2,
-["time"] = 1713646457,
-},
-{
-["price"] = 872,
-["quantity"] = 2,
-["time"] = 1713780041,
-},
-},
-["g:15367:39"] = {
-{
-["price"] = 14300,
-["quantity"] = 1,
-["time"] = 1710090664,
-},
-{
-["price"] = 14300,
-["quantity"] = 1,
-["time"] = 1710146384,
-},
-},
-["g:9874:43"] = {
-{
-["price"] = 49886,
-["quantity"] = 1,
-["time"] = 1712935601,
-},
-{
-["price"] = 49886,
-["quantity"] = 1,
-["time"] = 1712998159,
-},
-{
-["price"] = 49886,
-["quantity"] = 1,
-["time"] = 1713085109,
-},
-{
-["price"] = 49884,
-["quantity"] = 1,
-["time"] = 1713124183,
-},
-},
-["g:9770:20"] = {
-{
-["price"] = 3777,
-["quantity"] = 1,
-["time"] = 1704453136,
-},
-},
-["gn:15386:Rageclaw Shoulder Pads of the Eagle:48"] = {
-{
-["price"] = 31300,
-["quantity"] = 1,
-["time"] = 1712565015,
-},
-{
-["price"] = 31300,
-["quantity"] = 1,
-["time"] = 1712641064,
-},
-{
-["price"] = 31297,
-["quantity"] = 1,
-["time"] = 1712671745,
-},
-{
-["price"] = 31295,
-["quantity"] = 1,
-["time"] = 1712739939,
-},
-{
-["price"] = 31295,
-["quantity"] = 1,
-["time"] = 1712829057,
-},
-},
-["4496"] = {
-{
-["price"] = 236,
-["quantity"] = 3,
-["time"] = 1705656420,
-},
-},
-["g:3287:12"] = {
-{
-["price"] = 997,
-["quantity"] = 1,
-["time"] = 1702412062,
-},
-},
-["3013"] = {
-{
-["price"] = 221,
-["quantity"] = 2,
-["time"] = 1704907095,
-},
-},
-["23118"] = {
-{
-["price"] = 17629,
-["quantity"] = 18,
-["time"] = 1674574438,
-},
-},
-["19700"] = {
-{
-["price"] = 11965,
-["quantity"] = 3,
-["time"] = 1675003632,
-},
-{
-["price"] = 2215,
-["quantity"] = 1,
-["time"] = 1675090832,
-},
-{
-["price"] = 8485,
-["quantity"] = 2,
-["time"] = 1675679235,
-},
-{
-["price"] = 9743,
-["quantity"] = 2,
-["time"] = 1676729966,
-},
-},
-["41380"] = {
-{
-["price"] = 241807,
-["quantity"] = 10,
-["time"] = 1674580464,
-},
-{
-["price"] = 149587,
-["quantity"] = 4,
-["time"] = 1674760499,
-},
-},
-["4364"] = {
-{
-["price"] = 110,
-["quantity"] = 2,
-["time"] = 1695195419,
-},
-},
-["2138"] = {
-{
-["price"] = 1700,
-["quantity"] = 1,
-["time"] = 1704907067,
-},
-},
-["g:15552:36"] = {
-{
-["price"] = 8899,
-["quantity"] = 1,
-["time"] = 1699174591,
-},
-},
-["23112"] = {
-{
-["price"] = 34585,
-["quantity"] = 20,
-["time"] = 1674574420,
-},
-{
-["price"] = 34582,
-["quantity"] = 6,
-["time"] = 1674575926,
-},
-},
-["g:15975:31"] = {
-{
-["price"] = 7900,
-["quantity"] = 1,
-["time"] = 1710881430,
-},
-{
-["price"] = 7900,
-["quantity"] = 1,
-["time"] = 1711022140,
-},
-},
 ["8393"] = {
 {
 ["price"] = 9797,
@@ -16782,11 +16396,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1645987224,
 },
 },
-["g:14561:17"] = {
+["41453"] = {
 {
-["price"] = 1490,
+["price"] = 169995,
 ["quantity"] = 2,
-["time"] = 1704447895,
+["time"] = 1674659526,
+},
+{
+["price"] = 99998,
+["quantity"] = 2,
+["time"] = 1674892595,
 },
 },
 ["8395"] = {
@@ -16796,11 +16415,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722102529,
 },
 },
-["g:14114:16"] = {
+["14898"] = {
 {
-["price"] = 1541,
+["price"] = 12200,
 ["quantity"] = 1,
-["time"] = 1705078155,
+["time"] = 1712345870,
 },
 },
 ["6395"] = {
@@ -16810,30 +16429,35 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696759539,
 },
 },
-["3393"] = {
+["7070"] = {
 {
-["price"] = 4395,
+["price"] = 1498,
 ["quantity"] = 1,
-["time"] = 1696614134,
+["time"] = 1716793024,
 },
 {
-["price"] = 3499,
+["price"] = 3099,
 ["quantity"] = 1,
-["time"] = 1696668673,
+["time"] = 1724417509,
 },
 },
-["gn:8179:Cadet's Bow:6"] = {
+["15231"] = {
 {
-["price"] = 1598,
+["price"] = 7092,
 ["quantity"] = 1,
-["time"] = 1705844776,
+["time"] = 1697117249,
 },
-},
-["14421"] = {
 {
-["price"] = 95985,
-["quantity"] = 2,
-["time"] = 1645371575,
+["price"] = 7781,
+["quantity"] = 1,
+["time"] = 1709053263,
+},
+},
+["g:4771:15"] = {
+{
+["price"] = 1600,
+["quantity"] = 1,
+["time"] = 1706087449,
 },
 },
 ["4052"] = {
@@ -16848,79 +16472,84 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722093731,
 },
 },
-["g:1752:21"] = {
+["3914"] = {
 {
-["price"] = 999,
-["quantity"] = 1,
-["time"] = 1703159557,
-},
-{
-["price"] = 896,
-["quantity"] = 1,
-["time"] = 1703249370,
-},
-},
-["g:14214:34"] = {
-{
-["price"] = 69898,
-["quantity"] = 1,
-["time"] = 1709053287,
-},
-{
-["price"] = 8998,
-["quantity"] = 1,
-["time"] = 1709122318,
-},
-},
-["11175"] = {
-{
-["price"] = 54896,
-["quantity"] = 4,
-["time"] = 1674649977,
-},
-{
-["price"] = 8571,
+["price"] = 51998,
 ["quantity"] = 2,
-["time"] = 1694444134,
+["time"] = 1643485518,
 },
-},
-["12054"] = {
 {
-["price"] = 8091,
+["price"] = 39999,
+["quantity"] = 2,
+["time"] = 1643619678,
+},
+{
+["price"] = 39999,
+["quantity"] = 3,
+["time"] = 1645039413,
+},
+{
+["price"] = 29797,
+["quantity"] = 2,
+["time"] = 1647114205,
+},
+{
+["price"] = 109997,
 ["quantity"] = 1,
-["time"] = 1708544834,
+["time"] = 1712430115,
 },
 },
-["8831"] = {
+["gn:7786:Headsplitter:30"] = {
 {
-["price"] = 13199,
-["quantity"] = 12,
-["time"] = 1645134278,
-},
-{
-["price"] = 15999,
-["quantity"] = 266,
-["time"] = 1645371705,
+["price"] = 54800,
+["quantity"] = 1,
+["time"] = 1712238601,
 },
 {
-["price"] = 23832,
-["quantity"] = 63,
-["time"] = 1646580175,
+["price"] = 32390,
+["quantity"] = 1,
+["time"] = 1712335921,
 },
 {
-["price"] = 29199,
-["quantity"] = 12,
-["time"] = 1646667546,
+["price"] = 79995,
+["quantity"] = 1,
+["time"] = 1712671735,
 },
 {
-["price"] = 25797,
-["quantity"] = 48,
-["time"] = 1646728269,
+["price"] = 47792,
+["quantity"] = 1,
+["time"] = 1712739937,
 },
 {
-["price"] = 16169,
-["quantity"] = 48,
-["time"] = 1646930021,
+["price"] = 43986,
+["quantity"] = 1,
+["time"] = 1712829033,
+},
+},
+["6586"] = {
+{
+["price"] = 4499,
+["quantity"] = 1,
+["time"] = 1698506211,
+},
+},
+["g:35682:183"] = {
+{
+["price"] = 599835,
+["quantity"] = 1,
+["time"] = 1677232745,
+},
+},
+["10333"] = {
+{
+["price"] = 17999,
+["quantity"] = 1,
+["time"] = 1699168586,
+},
+{
+["price"] = 3998,
+["quantity"] = 1,
+["time"] = 1712238606,
 },
 },
 ["g:15231:31"] = {
@@ -16935,28 +16564,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709053263,
 },
 },
-["g:6583:21"] = {
+["4377"] = {
 {
-["price"] = 7693,
+["price"] = 841,
 ["quantity"] = 1,
-["time"] = 1696613854,
+["time"] = 1695035305,
 },
 },
-["39914"] = {
+["5137"] = {
 {
-["price"] = 23389,
-["quantity"] = 9,
-["time"] = 1674659912,
-},
-{
-["price"] = 19999,
-["quantity"] = 3,
-["time"] = 1674814767,
-},
-{
-["price"] = 14996,
-["quantity"] = 6,
-["time"] = 1674892748,
+["price"] = 680,
+["quantity"] = 35,
+["time"] = 1708544907,
 },
 },
 ["3058"] = {
@@ -16971,37 +16590,47 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1696668636,
 },
 },
-["805"] = {
+["7432"] = {
 {
-["price"] = 396,
-["quantity"] = 1,
-["time"] = 1696498523,
-},
-},
-["g:7534:45"] = {
-{
-["price"] = 43200,
+["price"] = 72300,
 ["quantity"] = 2,
-["time"] = 1643789350,
-},
-},
-["14377"] = {
-{
-["price"] = 9988,
-["quantity"] = 1,
-["time"] = 1710331600,
+["time"] = 1643619630,
 },
 {
-["price"] = 9989,
-["quantity"] = 1,
-["time"] = 1710515606,
+["price"] = 72300,
+["quantity"] = 2,
+["time"] = 1643813057,
 },
-},
-["35682"] = {
 {
-["price"] = 599835,
-["quantity"] = 1,
-["time"] = 1677232745,
+["price"] = 72300,
+["quantity"] = 2,
+["time"] = 1644003861,
+},
+},
+["12431"] = {
+{
+["price"] = 10998,
+["quantity"] = 4,
+["time"] = 1647114317,
+},
+},
+["15603"] = {
+{
+["price"] = 30000,
+["quantity"] = 2,
+["time"] = 1645371578,
+},
+},
+["9906"] = {
+{
+["price"] = 142300,
+["quantity"] = 2,
+["time"] = 1643461402,
+},
+{
+["price"] = 92300,
+["quantity"] = 2,
+["time"] = 1643789355,
 },
 },
 ["7081"] = {
@@ -17011,21 +16640,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647114292,
 },
 },
-["g:4714:27"] = {
+["15213"] = {
 {
-["price"] = 6900,
-["quantity"] = 1,
-["time"] = 1709377377,
+["price"] = 13198,
+["quantity"] = 2,
+["time"] = 1644087843,
 },
 {
-["price"] = 4498,
-["quantity"] = 1,
-["time"] = 1709577321,
+["price"] = 42500,
+["quantity"] = 2,
+["time"] = 1644945750,
 },
 {
-["price"] = 4498,
+["price"] = 19798,
+["quantity"] = 2,
+["time"] = 1645347690,
+},
+{
+["price"] = 9998,
 ["quantity"] = 1,
-["time"] = 1709641683,
+["time"] = 1712238591,
+},
+{
+["price"] = 244942,
+["quantity"] = 1,
+["time"] = 1712335919,
 },
 },
 ["3396"] = {
@@ -17052,30 +16691,50 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1645896277,
 },
 },
-["4561"] = {
+["20406"] = {
 {
-["price"] = 747,
-["quantity"] = 1,
-["time"] = 1702405292,
+["price"] = 55566,
+["quantity"] = 4,
+["time"] = 1647114197,
 },
 },
-["4238"] = {
+["12204"] = {
 {
-["price"] = 298,
-["quantity"] = 1,
-["time"] = 1695974936,
+["price"] = 1963,
+["quantity"] = 4,
+["time"] = 1710090671,
 },
 {
-["price"] = 300,
+["price"] = 1943,
+["quantity"] = 4,
+["time"] = 1710146399,
+},
+{
+["price"] = 2133,
+["quantity"] = 4,
+["time"] = 1710321759,
+},
+{
+["price"] = 1882,
+["quantity"] = 4,
+["time"] = 1710515625,
+},
+},
+["g:7438:36"] = {
+{
+["price"] = 64400,
 ["quantity"] = 2,
-["time"] = 1724417526,
+["time"] = 1643619638,
 },
-},
-["36933"] = {
 {
-["price"] = 43657,
-["quantity"] = 3,
-["time"] = 1674580618,
+["price"] = 64400,
+["quantity"] = 2,
+["time"] = 1643813060,
+},
+{
+["price"] = 64400,
+["quantity"] = 2,
+["time"] = 1644003863,
 },
 },
 ["g:37646:200"] = {
@@ -17090,88 +16749,133 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1678099329,
 },
 },
-["12799"] = {
+["7414"] = {
 {
-["price"] = 83985,
-["quantity"] = 6,
-["time"] = 1674575839,
-},
-{
-["price"] = 129991,
+["price"] = 8997,
 ["quantity"] = 1,
-["time"] = 1676410690,
+["time"] = 1710665585,
+},
+},
+["31079"] = {
+{
+["price"] = 287142,
+["quantity"] = 1,
+["time"] = 1674575783,
 },
 {
-["price"] = 69984,
+["price"] = 523705,
+["quantity"] = 1,
+["time"] = 1674576250,
+},
+},
+["g:7533:44"] = {
+{
+["price"] = 78800,
+["quantity"] = 2,
+["time"] = 1643620288,
+},
+},
+["15511"] = {
+{
+["price"] = 21632,
+["quantity"] = 1,
+["time"] = 1705571043,
+},
+{
+["price"] = 7095,
+["quantity"] = 1,
+["time"] = 1705780510,
+},
+{
+["price"] = 2398,
+["quantity"] = 1,
+["time"] = 1707919670,
+},
+{
+["price"] = 3898,
+["quantity"] = 1,
+["time"] = 1707985263,
+},
+{
+["price"] = 3898,
+["quantity"] = 1,
+["time"] = 1709807875,
+},
+{
+["price"] = 3893,
+["quantity"] = 1,
+["time"] = 1709896012,
+},
+},
+["3731"] = {
+{
+["price"] = 341,
+["quantity"] = 1,
+["time"] = 1711539030,
+},
+},
+["8483"] = {
+{
+["price"] = 1639,
+["quantity"] = 8,
+["time"] = 1710915125,
+},
+{
+["price"] = 466,
+["quantity"] = 9,
+["time"] = 1722102532,
+},
+},
+["2838"] = {
+{
+["price"] = 128,
+["quantity"] = 1,
+["time"] = 1712685752,
+},
+{
+["price"] = 121,
+["quantity"] = 1,
+["time"] = 1712739945,
+},
+{
+["price"] = 75,
 ["quantity"] = 5,
-["time"] = 1676748630,
+["time"] = 1713285694,
 },
 {
-["price"] = 64793,
-["quantity"] = 1,
-["time"] = 1677096792,
-},
-},
-["g:10413:19"] = {
-{
-["price"] = 978,
-["quantity"] = 1,
-["time"] = 1706540384,
-},
-},
-["g:2277:35"] = {
-{
-["price"] = 499997,
-["quantity"] = 1,
-["time"] = 1699174595,
+["price"] = 131,
+["quantity"] = 5,
+["time"] = 1721977567,
 },
 {
-["price"] = 219999,
-["quantity"] = 1,
-["time"] = 1699271969,
+["price"] = 122,
+["quantity"] = 14,
+["time"] = 1721985455,
 },
 {
-["price"] = 179997,
-["quantity"] = 1,
-["time"] = 1699786132,
+["price"] = 76,
+["quantity"] = 5,
+["time"] = 1722011807,
 },
 {
-["price"] = 179997,
-["quantity"] = 1,
-["time"] = 1700301917,
-},
-},
-["31186"] = {
-{
-["price"] = 249997,
-["quantity"] = 1,
-["time"] = 1662905782,
-},
-},
-["g:4567:16"] = {
-{
-["price"] = 2662,
-["quantity"] = 1,
-["time"] = 1705417521,
+["price"] = 63,
+["quantity"] = 15,
+["time"] = 1722093762,
 },
 {
-["price"] = 2552,
-["quantity"] = 1,
-["time"] = 1705486195,
+["price"] = 144,
+["quantity"] = 22,
+["time"] = 1722182455,
 },
-},
-["g:40347:213"] = {
 {
-["price"] = 12499994,
-["quantity"] = 1,
-["time"] = 1675714762,
+["price"] = 142,
+["quantity"] = 20,
+["time"] = 1722182561,
 },
-},
-["5507"] = {
 {
-["price"] = 3495,
-["quantity"] = 10,
-["time"] = 1705402741,
+["price"] = 64,
+["quantity"] = 4,
+["time"] = 1722244711,
 },
 },
 ["gn:9823:Durable Gloves of the Monkey:31"] = {
@@ -17195,78 +16899,38 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1645987217,
 },
 },
-["39681"] = {
+["20725"] = {
 {
-["price"] = 32948,
-["quantity"] = 19,
-["time"] = 1675327938,
-},
-{
-["price"] = 29442,
-["quantity"] = 19,
-["time"] = 1675336810,
-},
-{
-["price"] = 14660,
-["quantity"] = 19,
-["time"] = 1675511829,
-},
-{
-["price"] = 17132,
-["quantity"] = 3,
-["time"] = 1677232753,
-},
-},
-["3818"] = {
-{
-["price"] = 2251,
-["quantity"] = 26,
-["time"] = 1644087872,
-},
-{
-["price"] = 2099,
-["quantity"] = 1,
-["time"] = 1662736836,
-},
-{
-["price"] = 468,
-["quantity"] = 1,
-["time"] = 1696931011,
-},
-{
-["price"] = 339,
-["quantity"] = 7,
-["time"] = 1697012184,
-},
-{
-["price"] = 394,
-["quantity"] = 6,
-["time"] = 1697032454,
-},
-{
-["price"] = 1291,
-["quantity"] = 1,
-["time"] = 1699266079,
-},
-{
-["price"] = 491,
-["quantity"] = 1,
-["time"] = 1712168068,
-},
-{
-["price"] = 2994,
+["price"] = 19154,
 ["quantity"] = 2,
-["time"] = 1722093780,
+["time"] = 1675003579,
 },
 {
-["price"] = 3479,
-["quantity"] = 10,
-["time"] = 1722102508,
+["price"] = 14497,
+["quantity"] = 1,
+["time"] = 1675431514,
 },
 {
-["price"] = 1794,
+["price"] = 11499,
+["quantity"] = 1,
+["time"] = 1675523165,
+},
+{
+["price"] = 49999,
 ["quantity"] = 2,
-["time"] = 1722182464,
+["time"] = 1675691244,
+},
+{
+["price"] = 15993,
+["quantity"] = 2,
+["time"] = 1675871419,
+},
+},
+["g:14574:26"] = {
+{
+["price"] = 15008,
+["quantity"] = 1,
+["time"] = 1709377368,
 },
 },
 ["gn:15511:Grunt's Legguards of the Whale:24"] = {
@@ -17281,33 +16945,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709896012,
 },
 },
-["g:12013:49"] = {
+["8152"] = {
 {
-["price"] = 30000,
+["price"] = 799,
 ["quantity"] = 2,
-["time"] = 1645896272,
+["time"] = 1643620328,
 },
-},
-["14344"] = {
 {
-["price"] = 45993,
+["price"] = 893,
+["quantity"] = 2,
+["time"] = 1644569716,
+},
+},
+["4087"] = {
+{
+["price"] = 14394,
 ["quantity"] = 1,
-["time"] = 1675196946,
-},
-{
-["price"] = 38329,
-["quantity"] = 1,
-["time"] = 1675336786,
-},
-{
-["price"] = 44996,
-["quantity"] = 1,
-["time"] = 1676291898,
-},
-{
-["price"] = 48911,
-["quantity"] = 19,
-["time"] = 1677241287,
+["time"] = 1712829032,
 },
 },
 ["g:15351:30"] = {
@@ -17317,23 +16971,63 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711657439,
 },
 },
-["1640"] = {
+["2841"] = {
 {
-["price"] = 24700,
+["price"] = 933,
+["quantity"] = 60,
+["time"] = 1708806794,
+},
+{
+["price"] = 924,
+["quantity"] = 100,
+["time"] = 1708807693,
+},
+{
+["price"] = 663,
+["quantity"] = 60,
+["time"] = 1708877029,
+},
+{
+["price"] = 662,
+["quantity"] = 100,
+["time"] = 1708877105,
+},
+{
+["price"] = 747,
+["quantity"] = 10,
+["time"] = 1709053325,
+},
+{
+["price"] = 653,
+["quantity"] = 80,
+["time"] = 1709056862,
+},
+{
+["price"] = 410,
+["quantity"] = 80,
+["time"] = 1709122368,
+},
+{
+["price"] = 607,
+["quantity"] = 60,
+["time"] = 1709284738,
+},
+{
+["price"] = 481,
+["quantity"] = 8,
+["time"] = 1709290325,
+},
+{
+["price"] = 493,
+["quantity"] = 60,
+["time"] = 1709365769,
+},
+},
+["g:12054:24"] = {
+{
+["price"] = 8091,
 ["quantity"] = 1,
-["time"] = 1711016469,
-},
-{
-["price"] = 13481,
-["quantity"] = 1,
-["time"] = 1711114800,
-},
-},
-["4362"] = {
-{
-["price"] = 599,
-["quantity"] = 6,
-["time"] = 1705402635,
+["time"] = 1708544834,
 },
 },
 ["gn:15500:Outrunner's Chestguard of the Bear:24"] = {
@@ -17380,54 +17074,99 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713379431,
 },
 },
-["727"] = {
+["gn:15245:Vorpal Dagger of the Monkey:50"] = {
 {
-["price"] = 494,
+["price"] = 99999,
 ["quantity"] = 1,
-["time"] = 1693897973,
+["time"] = 1713560623,
 },
 {
-["price"] = 798,
+["price"] = 59985,
 ["quantity"] = 1,
-["time"] = 1702405297,
+["time"] = 1713646435,
 },
 },
-["9877"] = {
+["14125"] = {
 {
-["price"] = 73400,
-["quantity"] = 2,
-["time"] = 1643619658,
-},
-{
-["price"] = 73400,
-["quantity"] = 2,
-["time"] = 1643813069,
-},
-},
-["gn:14214:Vital Boots of the Eagle:34"] = {
-{
-["price"] = 69898,
+["price"] = 5501,
 ["quantity"] = 1,
-["time"] = 1709053287,
+["time"] = 1706540386,
 },
 {
-["price"] = 8998,
+["price"] = 6997,
 ["quantity"] = 1,
-["time"] = 1709122318,
+["time"] = 1706883042,
 },
-},
-["g:7483:40"] = {
 {
-["price"] = 86600,
-["quantity"] = 2,
-["time"] = 1644087857,
-},
-},
-["g:866:42"] = {
-{
-["price"] = 19997,
+["price"] = 6999,
 ["quantity"] = 1,
-["time"] = 1712345915,
+["time"] = 1709971601,
+},
+},
+["g:6395:29"] = {
+{
+["price"] = 3077,
+["quantity"] = 1,
+["time"] = 1696759539,
+},
+},
+["3356"] = {
+{
+["price"] = 2874,
+["quantity"] = 3,
+["time"] = 1712847261,
+},
+{
+["price"] = 796,
+["quantity"] = 3,
+["time"] = 1712910886,
+},
+{
+["price"] = 7981,
+["quantity"] = 10,
+["time"] = 1721985463,
+},
+{
+["price"] = 7973,
+["quantity"] = 1,
+["time"] = 1721987564,
+},
+{
+["price"] = 6218,
+["quantity"] = 3,
+["time"] = 1722011815,
+},
+{
+["price"] = 1063,
+["quantity"] = 10,
+["time"] = 1722093774,
+},
+{
+["price"] = 969,
+["quantity"] = 5,
+["time"] = 1722102501,
+},
+{
+["price"] = 713,
+["quantity"] = 10,
+["time"] = 1722164592,
+},
+{
+["price"] = 972,
+["quantity"] = 13,
+["time"] = 1722182458,
+},
+{
+["price"] = 629,
+["quantity"] = 1,
+["time"] = 1722244713,
+},
+},
+["gn:7445:Sentinel Shoulders of the Eagle:38"] = {
+{
+["price"] = 7800,
+["quantity"] = 1,
+["time"] = 1711539009,
 },
 },
 ["15118"] = {
@@ -17437,11 +17176,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711657424,
 },
 },
-["g:15111:21"] = {
+["g:6616:32"] = {
 {
-["price"] = 2687,
+["price"] = 8800,
 ["quantity"] = 1,
-["time"] = 1706540393,
+["time"] = 1710665582,
 },
 },
 ["4390"] = {
@@ -17451,11 +17190,46 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1697097913,
 },
 },
-["gn:9770:Greenweave Cloak of the Owl:20"] = {
+["36924"] = {
 {
-["price"] = 3777,
+["price"] = 45286,
+["quantity"] = 7,
+["time"] = 1674580634,
+},
+{
+["price"] = 41786,
+["quantity"] = 5,
+["time"] = 1674643611,
+},
+{
+["price"] = 43790,
 ["quantity"] = 1,
-["time"] = 1704453136,
+["time"] = 1674659983,
+},
+{
+["price"] = 42896,
+["quantity"] = 7,
+["time"] = 1674760476,
+},
+{
+["price"] = 41981,
+["quantity"] = 17,
+["time"] = 1674893281,
+},
+{
+["price"] = 63297,
+["quantity"] = 4,
+["time"] = 1675280802,
+},
+{
+["price"] = 54974,
+["quantity"] = 1,
+["time"] = 1678030632,
+},
+{
+["price"] = 54398,
+["quantity"] = 20,
+["time"] = 1678036471,
 },
 },
 ["gn:4714:Silver-thread Sash:27"] = {
@@ -17475,195 +17249,155 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709641683,
 },
 },
-["4338"] = {
+["g:8194:43"] = {
 {
-["price"] = 525,
-["quantity"] = 65,
-["time"] = 1713561243,
-},
-{
-["price"] = 490,
-["quantity"] = 1,
-["time"] = 1722011826,
-},
-{
-["price"] = 503,
+["price"] = 54400,
 ["quantity"] = 2,
-["time"] = 1722093787,
+["time"] = 1643485533,
 },
 {
-["price"] = 478,
+["price"] = 54400,
+["quantity"] = 2,
+["time"] = 1643702099,
+},
+{
+["price"] = 54400,
+["quantity"] = 2,
+["time"] = 1643789322,
+},
+{
+["price"] = 54400,
+["quantity"] = 2,
+["time"] = 1643977117,
+},
+{
+["price"] = 54400,
+["quantity"] = 2,
+["time"] = 1644569684,
+},
+{
+["price"] = 44400,
+["quantity"] = 2,
+["time"] = 1644945757,
+},
+{
+["price"] = 44400,
+["quantity"] = 2,
+["time"] = 1645134268,
+},
+},
+["g:11995:28"] = {
+{
+["price"] = 10092,
+["quantity"] = 1,
+["time"] = 1710425522,
+},
+},
+["g:8199:47"] = {
+{
+["price"] = 100000,
+["quantity"] = 2,
+["time"] = 1645210226,
+},
+{
+["price"] = 50000,
+["quantity"] = 2,
+["time"] = 1645443679,
+},
+{
+["price"] = 66699,
+["quantity"] = 1,
+["time"] = 1713561169,
+},
+{
+["price"] = 36697,
+["quantity"] = 1,
+["time"] = 1713602279,
+},
+{
+["price"] = 59986,
+["quantity"] = 1,
+["time"] = 1713646337,
+},
+{
+["price"] = 59986,
+["quantity"] = 1,
+["time"] = 1713780084,
+},
+},
+["19714"] = {
+{
+["price"] = 37497,
+["quantity"] = 1,
+["time"] = 1675090863,
+},
+{
+["price"] = 58499,
+["quantity"] = 2,
+["time"] = 1675679187,
+},
+{
+["price"] = 19373,
+["quantity"] = 2,
+["time"] = 1676974999,
+},
+{
+["price"] = 19371,
+["quantity"] = 1,
+["time"] = 1676977416,
+},
+{
+["price"] = 33287,
+["quantity"] = 1,
+["time"] = 1677228838,
+},
+},
+["15124"] = {
+{
+["price"] = 8825,
+["quantity"] = 1,
+["time"] = 1709896010,
+},
+},
+["40029"] = {
+{
+["price"] = 68985,
 ["quantity"] = 5,
-["time"] = 1722102518,
+["time"] = 1674643589,
 },
 {
-["price"] = 365,
+["price"] = 65040,
 ["quantity"] = 2,
-["time"] = 1722182478,
+["time"] = 1677531428,
 },
+},
+["gn:6412:Chief Brigadier Boots:39"] = {
 {
-["price"] = 603,
+["price"] = 6390,
 ["quantity"] = 1,
-["time"] = 1722237928,
+["time"] = 1711539437,
 },
 {
-["price"] = 491,
-["quantity"] = 19,
-["time"] = 1722244730,
-},
-{
-["price"] = 536,
+["price"] = 6381,
 ["quantity"] = 1,
-["time"] = 1722255023,
+["time"] = 1711571373,
 },
 {
-["price"] = 435,
-["quantity"] = 2,
-["time"] = 1722276299,
-},
-{
-["price"] = 1313,
-["quantity"] = 2,
-["time"] = 1722346657,
-},
-},
-["10312"] = {
-{
-["price"] = 7999,
-["quantity"] = 2,
-["time"] = 1644185856,
-},
-{
-["price"] = 19396,
-["quantity"] = 3,
-["time"] = 1644945880,
-},
-{
-["price"] = 19396,
-["quantity"] = 2,
-["time"] = 1645134305,
-},
-{
-["price"] = 9196,
-["quantity"] = 2,
-["time"] = 1645347702,
-},
-},
-["gn:12008:Savannah Ring of the Monkey:28"] = {
-{
-["price"] = 56945,
+["price"] = 6374,
 ["quantity"] = 1,
-["time"] = 1709578020,
+["time"] = 1711618567,
 },
 {
-["price"] = 56945,
+["price"] = 6355,
 ["quantity"] = 1,
-["time"] = 1709719018,
+["time"] = 1711738851,
 },
+},
+["22449"] = {
 {
-["price"] = 56944,
+["price"] = 74998,
 ["quantity"] = 1,
-["time"] = 1709798902,
-},
-},
-["19710"] = {
-{
-["price"] = 22217,
-["quantity"] = 3,
-["time"] = 1674553248,
-},
-{
-["price"] = 36567,
-["quantity"] = 2,
-["time"] = 1675090859,
-},
-{
-["price"] = 88398,
-["quantity"] = 4,
-["time"] = 1675679198,
-},
-{
-["price"] = 17985,
-["quantity"] = 1,
-["time"] = 1676977421,
-},
-{
-["price"] = 49985,
-["quantity"] = 1,
-["time"] = 1677228850,
-},
-},
-["7909"] = {
-{
-["price"] = 2903,
-["quantity"] = 1,
-["time"] = 1712565030,
-},
-{
-["price"] = 3240,
-["quantity"] = 1,
-["time"] = 1712641080,
-},
-{
-["price"] = 2316,
-["quantity"] = 1,
-["time"] = 1712958115,
-},
-{
-["price"] = 1560,
-["quantity"] = 1,
-["time"] = 1712998166,
-},
-{
-["price"] = 7398,
-["quantity"] = 1,
-["time"] = 1713379426,
-},
-{
-["price"] = 9583,
-["quantity"] = 1,
-["time"] = 1713440663,
-},
-{
-["price"] = 2597,
-["quantity"] = 1,
-["time"] = 1721985672,
-},
-{
-["price"] = 1372,
-["quantity"] = 1,
-["time"] = 1722016114,
-},
-{
-["price"] = 1799,
-["quantity"] = 1,
-["time"] = 1722182484,
-},
-{
-["price"] = 8999,
-["quantity"] = 1,
-["time"] = 1722244736,
-},
-},
-["gn:15111:Rigid Moccasins of the Gorilla:21"] = {
-{
-["price"] = 2687,
-["quantity"] = 1,
-["time"] = 1706540393,
-},
-},
-["g:15556:32"] = {
-{
-["price"] = 5090,
-["quantity"] = 1,
-["time"] = 1708544835,
-},
-},
-["10413"] = {
-{
-["price"] = 978,
-["quantity"] = 1,
-["time"] = 1706540384,
+["time"] = 1676551065,
 },
 },
 ["gn:14220:Geomancer's Cap of the Eagle:40"] = {
@@ -17673,160 +17407,130 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712345864,
 },
 },
-["g:14091:11"] = {
+["g:14730:23"] = {
 {
-["price"] = 795,
+["price"] = 5993,
 ["quantity"] = 1,
-["time"] = 1693995861,
+["time"] = 1698506214,
 },
-},
-["8397"] = {
 {
-["price"] = 4746,
+["price"] = 2997,
 ["quantity"] = 1,
-["time"] = 1710883090,
+["time"] = 1698592742,
+},
+},
+["gn:4362:Rough Boomstick:10"] = {
+{
+["price"] = 599,
+["quantity"] = 6,
+["time"] = 1705402635,
+},
+},
+["41434"] = {
+{
+["price"] = 179996,
+["quantity"] = 6,
+["time"] = 1674659512,
 },
 {
-["price"] = 3991,
-["quantity"] = 3,
-["time"] = 1712345893,
+["price"] = 184998,
+["quantity"] = 2,
+["time"] = 1674892601,
 },
-},
-["2836"] = {
 {
-["price"] = 446,
+["price"] = 99998,
 ["quantity"] = 4,
-["time"] = 1697018430,
+["time"] = 1675342599,
 },
-{
-["price"] = 125,
-["quantity"] = 7,
-["time"] = 1702483021,
 },
+["gn:15016:Lupine Handwraps of the Eagle:16"] = {
 {
-["price"] = 91,
+["price"] = 4095,
 ["quantity"] = 1,
-["time"] = 1702490042,
+["time"] = 1703681737,
 },
 {
-["price"] = 159,
-["quantity"] = 20,
-["time"] = 1702582673,
-},
-{
-["price"] = 82,
-["quantity"] = 11,
-["time"] = 1706475545,
-},
-{
-["price"] = 290,
-["quantity"] = 6,
-["time"] = 1706650904,
-},
-{
-["price"] = 44,
+["price"] = 2396,
 ["quantity"] = 1,
-["time"] = 1721977565,
+["time"] = 1703765675,
 },
 {
-["price"] = 148,
+["price"] = 1297,
+["quantity"] = 1,
+["time"] = 1704447904,
+},
+},
+["43109"] = {
+{
+["price"] = 129885,
+["quantity"] = 1,
+["time"] = 1675502480,
+},
+},
+["g:4575:19"] = {
+{
+["price"] = 11995,
+["quantity"] = 1,
+["time"] = 1697117228,
+},
+},
+["4363"] = {
+{
+["price"] = 61160,
+["quantity"] = 1,
+["time"] = 1678949988,
+},
+{
+["price"] = 1297,
+["quantity"] = 1,
+["time"] = 1695195414,
+},
+{
+["price"] = 283,
+["quantity"] = 1,
+["time"] = 1695282165,
+},
+{
+["price"] = 496,
+["quantity"] = 1,
+["time"] = 1696062589,
+},
+},
+["2318"] = {
+{
+["price"] = 288,
+["quantity"] = 210,
+["time"] = 1647114467,
+},
+{
+["price"] = 24,
+["quantity"] = 21,
+["time"] = 1693416398,
+},
+{
+["price"] = 948,
+["quantity"] = 91,
+["time"] = 1712829081,
+},
+{
+["price"] = 1899,
+["quantity"] = 70,
+["time"] = 1712847254,
+},
+{
+["price"] = 598,
+["quantity"] = 17,
+["time"] = 1713089224,
+},
+{
+["price"] = 501,
+["quantity"] = 94,
+["time"] = 1713094134,
+},
+{
+["price"] = 736,
 ["quantity"] = 3,
-["time"] = 1721985453,
-},
-{
-["price"] = 474,
-["quantity"] = 3,
-["time"] = 1722102500,
-},
-{
-["price"] = 114,
-["quantity"] = 3,
-["time"] = 1722164587,
-},
-},
-["3012"] = {
-{
-["price"] = 1517,
-["quantity"] = 1,
-["time"] = 1705571067,
-},
-},
-["4412"] = {
-{
-["price"] = 1994,
-["quantity"] = 1,
-["time"] = 1709798925,
-},
-},
-["2450"] = {
-{
-["price"] = 512,
-["quantity"] = 1,
-["time"] = 1696062609,
-},
-{
-["price"] = 399,
-["quantity"] = 6,
-["time"] = 1696577615,
-},
-{
-["price"] = 485,
-["quantity"] = 2,
-["time"] = 1696613886,
-},
-{
-["price"] = 571,
-["quantity"] = 2,
-["time"] = 1696668665,
-},
-{
-["price"] = 98,
-["quantity"] = 3,
-["time"] = 1704559595,
-},
-{
-["price"] = 43,
-["quantity"] = 9,
-["time"] = 1705571077,
-},
-{
-["price"] = 210,
-["quantity"] = 1,
-["time"] = 1709971628,
-},
-{
-["price"] = 191,
-["quantity"] = 2,
-["time"] = 1712829086,
-},
-{
-["price"] = 642,
-["quantity"] = 6,
-["time"] = 1722011794,
-},
-{
-["price"] = 640,
-["quantity"] = 5,
-["time"] = 1722016019,
-},
-},
-["gn:14205:Thistlefur Belt of the Whale:32"] = {
-{
-["price"] = 9081,
-["quantity"] = 1,
-["time"] = 1710090654,
-},
-{
-["price"] = 9081,
-["quantity"] = 1,
-["time"] = 1710146380,
-},
-},
-["3187"] = {
-{
-["price"] = 19998,
-["quantity"] = 1,
-["time"] = 1697018413,
+["time"] = 1713247925,
 },
 },
 ["1994"] = {
@@ -17836,134 +17540,229 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1644087851,
 },
 },
-["15284"] = {
+["15260"] = {
 {
-["price"] = 4888,
+["price"] = 19981,
 ["quantity"] = 1,
-["time"] = 1708544826,
+["time"] = 1710171989,
 },
-},
-["5573"] = {
 {
-["price"] = 1566,
+["price"] = 11265,
 ["quantity"] = 1,
-["time"] = 1702833555,
+["time"] = 1710321697,
 },
 {
-["price"] = 1883,
+["price"] = 51265,
 ["quantity"] = 1,
-["time"] = 1705497113,
+["time"] = 1722346607,
 },
 },
-["14570"] = {
+["g:14566:25"] = {
 {
-["price"] = 12346,
+["price"] = 6900,
 ["quantity"] = 1,
-["time"] = 1709377358,
+["time"] = 1709798913,
 },
 {
-["price"] = 23294,
+["price"] = 4499,
 ["quantity"] = 1,
-["time"] = 1713247900,
+["time"] = 1709807867,
 },
-},
-["g:15009:11"] = {
 {
-["price"] = 2199,
+["price"] = 9899,
 ["quantity"] = 1,
-["time"] = 1702412060,
+["time"] = 1710081798,
 },
+},
+["gn:15503:Outrunner's Legguards of the Boar:22"] = {
 {
-["price"] = 3586,
+["price"] = 5993,
 ["quantity"] = 1,
-["time"] = 1705078164,
+["time"] = 1705571038,
 },
-},
-["7972"] = {
 {
-["price"] = 461,
-["quantity"] = 6,
-["time"] = 1647031995,
-},
-},
-["g:15132:29"] = {
-{
-["price"] = 14997,
+["price"] = 3395,
 ["quantity"] = 1,
-["time"] = 1709053292,
+["time"] = 1705780508,
 },
-},
-["7526"] = {
 {
-["price"] = 97600,
+["price"] = 2577,
+["quantity"] = 1,
+["time"] = 1707919673,
+},
+{
+["price"] = 4998,
+["quantity"] = 1,
+["time"] = 1707985251,
+},
+},
+["211853"] = {
+{
+["price"] = 814,
+["quantity"] = 1,
+["time"] = 1703095245,
+},
+{
+["price"] = 768,
+["quantity"] = 1,
+["time"] = 1703159575,
+},
+{
+["price"] = 768,
+["quantity"] = 1,
+["time"] = 1705571066,
+},
+{
+["price"] = 10996,
+["quantity"] = 1,
+["time"] = 1710425524,
+},
+{
+["price"] = 8573,
+["quantity"] = 1,
+["time"] = 1711021802,
+},
+},
+["29425"] = {
+{
+["price"] = 898,
+["quantity"] = 4,
+["time"] = 1662905846,
+},
+},
+["gn:15241:Battle Knife of the Tiger:26"] = {
+{
+["price"] = 4599,
+["quantity"] = 1,
+["time"] = 1704559589,
+},
+{
+["price"] = 15196,
+["quantity"] = 1,
+["time"] = 1710081790,
+},
+{
+["price"] = 13594,
+["quantity"] = 1,
+["time"] = 1710146375,
+},
+{
+["price"] = 9938,
+["quantity"] = 1,
+["time"] = 1710321687,
+},
+{
+["price"] = 9938,
+["quantity"] = 1,
+["time"] = 1710515593,
+},
+},
+["765"] = {
+{
+["price"] = 195,
 ["quantity"] = 2,
-["time"] = 1643619652,
+["time"] = 1643789393,
 },
 {
-["price"] = 97600,
+["price"] = 42,
+["quantity"] = 8,
+["time"] = 1693662588,
+},
+{
+["price"] = 180,
+["quantity"] = 3,
+["time"] = 1709807914,
+},
+{
+["price"] = 215,
 ["quantity"] = 2,
-["time"] = 1643813066,
+["time"] = 1713094150,
 },
 },
-["11174"] = {
+["39717"] = {
 {
-["price"] = 11912,
+["price"] = 15499993,
 ["quantity"] = 1,
-["time"] = 1674649971,
+["time"] = 1675862203,
+},
+},
+["3864"] = {
+{
+["price"] = 34792,
+["quantity"] = 25,
+["time"] = 1678357618,
 },
 {
-["price"] = 6995,
-["quantity"] = 1,
-["time"] = 1694153005,
+["price"] = 34789,
+["quantity"] = 61,
+["time"] = 1678358105,
 },
 {
-["price"] = 3748,
-["quantity"] = 2,
-["time"] = 1694413741,
+["price"] = 24399,
+["quantity"] = 36,
+["time"] = 1678468740,
 },
 {
-["price"] = 3742,
-["quantity"] = 2,
-["time"] = 1694421863,
-},
-},
-["19704"] = {
-{
-["price"] = 11968,
+["price"] = 44843,
 ["quantity"] = 44,
-["time"] = 1675003640,
+["time"] = 1678532338,
 },
 {
-["price"] = 11828,
+["price"] = 49472,
+["quantity"] = 2,
+["time"] = 1678559378,
+},
+{
+["price"] = 19991,
+["quantity"] = 45,
+["time"] = 1678642139,
+},
+{
+["price"] = 24998,
+["quantity"] = 61,
+["time"] = 1678885905,
+},
+{
+["price"] = 119999,
 ["quantity"] = 1,
-["time"] = 1675090844,
+["time"] = 1679136876,
 },
 {
-["price"] = 9890,
-["quantity"] = 47,
-["time"] = 1675679215,
-},
-{
-["price"] = 489,
-["quantity"] = 41,
-["time"] = 1676551108,
-},
-{
-["price"] = 7493,
+["price"] = 3096,
 ["quantity"] = 1,
-["time"] = 1676729951,
-},
-},
-["30809"] = {
-{
-["price"] = 1025,
-["quantity"] = 7,
-["time"] = 1663431732,
+["time"] = 1722011824,
 },
 {
-["price"] = 684,
-["quantity"] = 10,
-["time"] = 1663696193,
+["price"] = 967,
+["quantity"] = 1,
+["time"] = 1722093786,
+},
+},
+["g:7448:36"] = {
+{
+["price"] = 36700,
+["quantity"] = 2,
+["time"] = 1643472844,
+},
+{
+["price"] = 46700,
+["quantity"] = 2,
+["time"] = 1643702095,
+},
+{
+["price"] = 46700,
+["quantity"] = 2,
+["time"] = 1644569689,
+},
+{
+["price"] = 36700,
+["quantity"] = 2,
+["time"] = 1644945772,
+},
+{
+["price"] = 36700,
+["quantity"] = 2,
+["time"] = 1645347696,
 },
 },
 ["7438"] = {
@@ -17983,158 +17782,108 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1644003863,
 },
 },
-["12361"] = {
+["g:2802:43"] = {
 {
-["price"] = 78899,
-["quantity"] = 23,
-["time"] = 1674575805,
-},
-{
-["price"] = 11083,
-["quantity"] = 23,
-["time"] = 1674916508,
-},
-{
-["price"] = 29989,
-["quantity"] = 23,
-["time"] = 1675443134,
-},
-{
-["price"] = 10379,
+["price"] = 399998,
 ["quantity"] = 2,
-["time"] = 1676364483,
+["time"] = 1643789343,
 },
 {
-["price"] = 14155,
-["quantity"] = 10,
-["time"] = 1676748613,
-},
-{
-["price"] = 12494,
-["quantity"] = 10,
-["time"] = 1676838247,
-},
-{
-["price"] = 52098,
-["quantity"] = 5,
-["time"] = 1695637692,
-},
-{
-["price"] = 259999,
+["price"] = 399998,
 ["quantity"] = 2,
-["time"] = 1696517928,
+["time"] = 1643977124,
 },
 {
-["price"] = 249898,
-["quantity"] = 26,
-["time"] = 1709366236,
+["price"] = 999999,
+["quantity"] = 2,
+["time"] = 1644569687,
 },
-},
-["4235"] = {
 {
-["price"] = 967,
+["price"] = 299695,
+["quantity"] = 2,
+["time"] = 1644945765,
+},
+{
+["price"] = 299695,
+["quantity"] = 2,
+["time"] = 1645134273,
+},
+{
+["price"] = 198101,
 ["quantity"] = 1,
-["time"] = 1709482528,
+["time"] = 1710883032,
 },
-{
-["price"] = 493,
-["quantity"] = 4,
-["time"] = 1712678034,
 },
+["gn:2632:Curved Dagger of Nature's Wrath:14"] = {
 {
-["price"] = 590,
-["quantity"] = 6,
-["time"] = 1712829102,
-},
-{
-["price"] = 826,
+["price"] = 2584,
 ["quantity"] = 1,
-["time"] = 1712834210,
+["time"] = 1705078149,
+},
+},
+["g:1994:46"] = {
+{
+["price"] = 65400,
+["quantity"] = 2,
+["time"] = 1644087851,
+},
+},
+["19703"] = {
+{
+["price"] = 10402,
+["quantity"] = 8,
+["time"] = 1675090840,
 },
 {
-["price"] = 557,
+["price"] = 9244,
 ["quantity"] = 3,
-["time"] = 1712935621,
+["time"] = 1675679229,
 },
 {
-["price"] = 402,
-["quantity"] = 3,
-["time"] = 1712998163,
-},
-{
-["price"] = 553,
-["quantity"] = 3,
-["time"] = 1713247936,
-},
-{
-["price"] = 582,
-["quantity"] = 3,
-["time"] = 1713372168,
-},
-{
-["price"] = 535,
-["quantity"] = 3,
-["time"] = 1713430113,
-},
-{
-["price"] = 986,
+["price"] = 3789,
 ["quantity"] = 1,
-["time"] = 1713561233,
+["time"] = 1676729955,
 },
 },
-["23077"] = {
+["g:9290:42"] = {
 {
-["price"] = 45441,
-["quantity"] = 21,
-["time"] = 1674574376,
-},
-{
-["price"] = 45438,
-["quantity"] = 10,
-["time"] = 1674575909,
-},
-{
-["price"] = 9999,
-["quantity"] = 5,
-["time"] = 1674916349,
-},
-},
-["gn:15527:Sentry's Gloves of the Boar:27"] = {
-{
-["price"] = 9987,
+["price"] = 9996,
 ["quantity"] = 1,
-["time"] = 1709055045,
+["time"] = 1699266065,
 },
 },
-["gn:8158:Jouster's Gauntlets:40"] = {
+["40022"] = {
 {
-["price"] = 6493,
+["price"] = 74498,
 ["quantity"] = 1,
-["time"] = 1712310013,
+["time"] = 1678269188,
 },
 },
-["15975"] = {
+["5500"] = {
 {
-["price"] = 7900,
+["price"] = 1499,
 ["quantity"] = 1,
-["time"] = 1710881430,
+["time"] = 1696613917,
 },
 {
-["price"] = 7900,
+["price"] = 2887,
 ["quantity"] = 1,
-["time"] = 1711022140,
-},
-},
-["38561"] = {
-{
-["price"] = 18267,
-["quantity"] = 240,
-["time"] = 1676539668,
+["time"] = 1713371367,
 },
 {
-["price"] = 53999,
-["quantity"] = 47,
-["time"] = 1678046156,
+["price"] = 2833,
+["quantity"] = 2,
+["time"] = 1713372177,
+},
+{
+["price"] = 1099,
+["quantity"] = 2,
+["time"] = 1713430115,
+},
+{
+["price"] = 1075,
+["quantity"] = 1,
+["time"] = 1713440659,
 },
 },
 ["39005"] = {
@@ -18205,47 +17954,57 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674916346,
 },
 },
-["gn:14186:Raincaller Mantle of the Eagle:29"] = {
+["10285"] = {
 {
-["price"] = 9500,
-["quantity"] = 1,
-["time"] = 1711021798,
-},
-},
-["15019"] = {
-{
-["price"] = 2045,
-["quantity"] = 1,
-["time"] = 1706540392,
-},
-},
-["4715"] = {
-{
-["price"] = 3996,
-["quantity"] = 1,
-["time"] = 1697117253,
-},
-},
-["19712"] = {
-{
-["price"] = 19989,
-["quantity"] = 1,
-["time"] = 1674553256,
+["price"] = 22812,
+["quantity"] = 4,
+["time"] = 1643789364,
 },
 {
-["price"] = 38699,
-["quantity"] = 1,
-["time"] = 1675090861,
+["price"] = 6498,
+["quantity"] = 4,
+["time"] = 1643977127,
 },
 {
-["price"] = 94998,
-["quantity"] = 1,
-["time"] = 1675679192,
+["price"] = 1007,
+["quantity"] = 4,
+["time"] = 1644569704,
 },
 {
-["price"] = 39986,
+["price"] = 1489,
 ["quantity"] = 2,
-["time"] = 1677228842,
+["time"] = 1647114218,
+},
+{
+["price"] = 5096,
+["quantity"] = 1,
+["time"] = 1722102492,
+},
+{
+["price"] = 1094,
+["quantity"] = 1,
+["time"] = 1722164581,
+},
+},
+["4771"] = {
+{
+["price"] = 1600,
+["quantity"] = 1,
+["time"] = 1706087449,
+},
+},
+["gn:14366:Mystic's Bracelets:17"] = {
+{
+["price"] = 1479,
+["quantity"] = 1,
+["time"] = 1706540387,
+},
+},
+["gn:15115:Rigid Gloves of the Eagle:22"] = {
+{
+["price"] = 6931,
+["quantity"] = 1,
+["time"] = 1709895992,
 },
 },
 ["1529"] = {
@@ -18300,11 +18059,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722244708,
 },
 },
-["gn:3314:Ceremonial Leather Gloves:15"] = {
+["39900"] = {
 {
-["price"] = 1991,
+["price"] = 9979,
+["quantity"] = 16,
+["time"] = 1674659486,
+},
+{
+["price"] = 9768,
 ["quantity"] = 1,
-["time"] = 1707211154,
+["time"] = 1674814641,
+},
+{
+["price"] = 9458,
+["quantity"] = 9,
+["time"] = 1674892704,
 },
 },
 ["7966"] = {
@@ -18398,42 +18167,92 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709895984,
 },
 },
-["g:23203:65"] = {
+["22448"] = {
 {
-["price"] = 469987,
+["price"] = 17398,
+["quantity"] = 4,
+["time"] = 1674553186,
+},
+{
+["price"] = 11728,
+["quantity"] = 6,
+["time"] = 1675003586,
+},
+{
+["price"] = 27109,
+["quantity"] = 10,
+["time"] = 1675196971,
+},
+{
+["price"] = 24986,
+["quantity"] = 10,
+["time"] = 1675336799,
+},
+{
+["price"] = 23330,
+["quantity"] = 6,
+["time"] = 1675431532,
+},
+{
+["price"] = 17773,
+["quantity"] = 6,
+["time"] = 1675523168,
+},
+{
+["price"] = 32986,
+["quantity"] = 3,
+["time"] = 1675691252,
+},
+{
+["price"] = 26784,
+["quantity"] = 3,
+["time"] = 1675871424,
+},
+{
+["price"] = 25496,
+["quantity"] = 3,
+["time"] = 1675933813,
+},
+{
+["price"] = 32992,
+["quantity"] = 4,
+["time"] = 1678112941,
+},
+},
+["41448"] = {
+{
+["price"] = 129994,
 ["quantity"] = 1,
-["time"] = 1676195263,
+["time"] = 1674659915,
 },
-},
-["g:40246:213"] = {
 {
-["price"] = 14999999,
+["price"] = 129991,
 ["quantity"] = 1,
-["time"] = 1677608851,
+["time"] = 1674814771,
 },
 },
-["gn:15116:Rigid Shoulders of the Boar:26"] = {
+["gn:15592:Steadfast Buckler of Healing:43"] = {
 {
-["price"] = 9994,
+["price"] = 32300,
 ["quantity"] = 1,
-["time"] = 1709807871,
+["time"] = 1712958184,
 },
 {
-["price"] = 3994,
+["price"] = 32300,
 ["quantity"] = 1,
-["time"] = 1709896005,
-},
-},
-["8846"] = {
-{
-["price"] = 6997,
-["quantity"] = 21,
-["time"] = 1646645255,
+["time"] = 1712998152,
 },
 {
-["price"] = 7781,
+["price"] = 32300,
 ["quantity"] = 1,
-["time"] = 1699174601,
+["time"] = 1713085106,
+},
+},
+["14241"] = {
+{
+["price"] = 20000,
+["quantity"] = 2,
+["time"] = 1645371560,
 },
 },
 ["gn:7111:Nightsky Armor:37"] = {
@@ -18448,50 +18267,70 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709971219,
 },
 },
-["783"] = {
+["g:13066:51"] = {
 {
-["price"] = 134,
+["price"] = 2809980,
 ["quantity"] = 1,
-["time"] = 1704447974,
+["time"] = 1674916298,
 },
 {
-["price"] = 196,
+["price"] = 2499998,
+["quantity"] = 1,
+["time"] = 1675241183,
+},
+{
+["price"] = 1279995,
+["quantity"] = 1,
+["time"] = 1675443109,
+},
+{
+["price"] = 1599993,
+["quantity"] = 1,
+["time"] = 1675714558,
+},
+{
+["price"] = 998998,
+["quantity"] = 1,
+["time"] = 1676142344,
+},
+{
+["price"] = 949998,
+["quantity"] = 1,
+["time"] = 1676291789,
+},
+},
+["g:14161:18"] = {
+{
+["price"] = 970,
+["quantity"] = 1,
+["time"] = 1706650886,
+},
+{
+["price"] = 1998,
+["quantity"] = 1,
+["time"] = 1706698530,
+},
+{
+["price"] = 9095,
+["quantity"] = 1,
+["time"] = 1706883159,
+},
+},
+["39938"] = {
+{
+["price"] = 19237,
+["quantity"] = 20,
+["time"] = 1674580873,
+},
+{
+["price"] = 19224,
 ["quantity"] = 6,
-["time"] = 1704453148,
+["time"] = 1674659850,
 },
 {
-["price"] = 159,
-["quantity"] = 4,
-["time"] = 1704457902,
-},
-{
-["price"] = 188,
-["quantity"] = 2,
-["time"] = 1712847273,
-},
-},
-["4726"] = {
-{
-["price"] = 7018,
-["quantity"] = 1,
-["time"] = 1722346611,
-},
-},
-["40012"] = {
-{
-["price"] = 77862,
-["quantity"] = 14,
-["time"] = 1674577914,
-},
-{
-["price"] = 76591,
-["quantity"] = 14,
-["time"] = 1674643580,
-},
-{
-["price"] = 61896,
-["quantity"] = 13,
-["time"] = 1674814660,
+["price"] = 19201,
+["quantity"] = 6,
+["time"] = 1674892753,
 },
 },
 ["4720"] = {
@@ -18501,18 +18340,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712222642,
 },
 },
-["g:4720:33"] = {
+["2934"] = {
 {
-["price"] = 15098,
-["quantity"] = 1,
-["time"] = 1712222642,
+["price"] = 390,
+["quantity"] = 36,
+["time"] = 1713089226,
+},
+{
+["price"] = 381,
+["quantity"] = 25,
+["time"] = 1713094143,
+},
+{
+["price"] = 223,
+["quantity"] = 5,
+["time"] = 1713123971,
 },
 },
-["2553"] = {
+["gn:10413:Gloves of the Fang:19"] = {
 {
-["price"] = 8900,
+["price"] = 978,
 ["quantity"] = 1,
-["time"] = 1724417542,
+["time"] = 1706540384,
 },
 },
 ["g:2962:10"] = {
@@ -18522,16 +18371,41 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1702235799,
 },
 },
-["15312"] = {
+["12655"] = {
 {
-["price"] = 3900,
+["price"] = 51500,
 ["quantity"] = 1,
-["time"] = 1703159544,
+["time"] = 1696671832,
 },
 {
-["price"] = 3496,
+["price"] = 49997,
 ["quantity"] = 1,
-["time"] = 1703249362,
+["time"] = 1696759528,
+},
+{
+["price"] = 39983,
+["quantity"] = 1,
+["time"] = 1696839484,
+},
+{
+["price"] = 34063,
+["quantity"] = 1,
+["time"] = 1696931002,
+},
+{
+["price"] = 30052,
+["quantity"] = 1,
+["time"] = 1697012167,
+},
+{
+["price"] = 27544,
+["quantity"] = 1,
+["time"] = 1697048525,
+},
+{
+["price"] = 26599,
+["quantity"] = 1,
+["time"] = 1709366239,
 },
 },
 ["12207"] = {
@@ -18578,11 +18452,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712671741,
 },
 },
-["gn:15309:Feral Cloak of the Eagle:15"] = {
+["gn:2802:Blazing Emblem:43"] = {
 {
-["price"] = 3565,
+["price"] = 198101,
 ["quantity"] = 1,
-["time"] = 1705497110,
+["time"] = 1710883032,
 },
 },
 ["8158"] = {
@@ -18592,180 +18466,215 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712310013,
 },
 },
-["9874"] = {
+["8107"] = {
 {
-["price"] = 49886,
+["price"] = 29799,
+["quantity"] = 2,
+["time"] = 1645896274,
+},
+},
+["3575"] = {
+{
+["price"] = 1972,
+["quantity"] = 3,
+["time"] = 1712685753,
+},
+{
+["price"] = 1794,
+["quantity"] = 4,
+["time"] = 1713379552,
+},
+{
+["price"] = 1899,
+["quantity"] = 2,
+["time"] = 1713561221,
+},
+{
+["price"] = 1167,
+["quantity"] = 51,
+["time"] = 1722182462,
+},
+{
+["price"] = 791,
+["quantity"] = 55,
+["time"] = 1722244719,
+},
+{
+["price"] = 782,
+["quantity"] = 34,
+["time"] = 1722255020,
+},
+{
+["price"] = 774,
+["quantity"] = 73,
+["time"] = 1722276294,
+},
+{
+["price"] = 896,
+["quantity"] = 50,
+["time"] = 1722346642,
+},
+{
+["price"] = 895,
+["quantity"] = 19,
+["time"] = 1722347474,
+},
+{
+["price"] = 689,
+["quantity"] = 100,
+["time"] = 1722354422,
+},
+},
+["15336"] = {
+{
+["price"] = 22072,
 ["quantity"] = 1,
-["time"] = 1712935601,
+["time"] = 1709733791,
 },
 {
-["price"] = 49886,
+["price"] = 12072,
 ["quantity"] = 1,
-["time"] = 1712998159,
+["time"] = 1710411522,
 },
+},
+["gn:4567:Merc Sword of Stamina:16"] = {
 {
-["price"] = 49886,
+["price"] = 2662,
 ["quantity"] = 1,
-["time"] = 1713085109,
+["time"] = 1705417521,
 },
 {
-["price"] = 49884,
+["price"] = 2552,
 ["quantity"] = 1,
-["time"] = 1713124183,
+["time"] = 1705486195,
 },
 },
-["4789"] = {
+["g:15116:26"] = {
 {
-["price"] = 3099,
+["price"] = 9994,
 ["quantity"] = 1,
-["time"] = 1694080921,
+["time"] = 1709807871,
 },
-},
-["g:15019:21"] = {
 {
-["price"] = 2045,
+["price"] = 3994,
 ["quantity"] = 1,
-["time"] = 1706540392,
+["time"] = 1709896005,
 },
 },
-["3470"] = {
-{
-["price"] = 84,
-["quantity"] = 168,
-["time"] = 1643485593,
-},
-{
-["price"] = 289,
-["quantity"] = 112,
-["time"] = 1643702149,
-},
-{
-["price"] = 70,
-["quantity"] = 32,
-["time"] = 1644569710,
-},
-{
-["price"] = 62,
-["quantity"] = 145,
-["time"] = 1695387597,
-},
-},
-["7445"] = {
+["g:7445:38"] = {
 {
 ["price"] = 7800,
 ["quantity"] = 1,
 ["time"] = 1711539009,
 },
 },
-["gr:9850:of the Owl"] = {
+["36905"] = {
 {
-["price"] = 65600,
+["price"] = 13246,
+["quantity"] = 3,
+["time"] = 1678046097,
+},
+},
+["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
+{
+["price"] = 39995,
 ["quantity"] = 1,
-["time"] = 1722102476,
+["time"] = 1713560628,
 },
 {
-["price"] = 65600,
+["price"] = 39995,
 ["quantity"] = 1,
-["time"] = 1722164577,
-},
-},
-["36920"] = {
-{
-["price"] = 14763,
-["quantity"] = 24,
-["time"] = 1676838856,
+["time"] = 1713646445,
 },
 {
-["price"] = 13994,
-["quantity"] = 73,
-["time"] = 1677689119,
+["price"] = 39995,
+["quantity"] = 1,
+["time"] = 1713780072,
+},
+},
+["7533"] = {
+{
+["price"] = 78800,
+["quantity"] = 2,
+["time"] = 1643620288,
+},
+},
+["23438"] = {
+{
+["price"] = 34397,
+["quantity"] = 1,
+["time"] = 1674575960,
+},
+},
+["41468"] = {
+{
+["price"] = 24763,
+["quantity"] = 1,
+["time"] = 1674659529,
 },
 {
-["price"] = 14452,
-["quantity"] = 79,
-["time"] = 1677788639,
+["price"] = 24748,
+["quantity"] = 6,
+["time"] = 1674896565,
+},
+},
+["10939"] = {
+{
+["price"] = 1815,
+["quantity"] = 1,
+["time"] = 1693909496,
 },
 {
-["price"] = 16196,
-["quantity"] = 134,
-["time"] = 1677915414,
+["price"] = 1503,
+["quantity"] = 1,
+["time"] = 1693933612,
 },
 {
-["price"] = 13917,
+["price"] = 1584,
+["quantity"] = 1,
+["time"] = 1694082225,
+},
+{
+["price"] = 1349,
 ["quantity"] = 5,
-["time"] = 1678030652,
+["time"] = 1694284125,
 },
 {
-["price"] = 13897,
-["quantity"] = 100,
-["time"] = 1678036424,
-},
-{
-["price"] = 14898,
-["quantity"] = 60,
-["time"] = 1678356966,
-},
-{
-["price"] = 11999,
-["quantity"] = 80,
-["time"] = 1678562052,
-},
-{
-["price"] = 10789,
-["quantity"] = 100,
-["time"] = 1678896553,
-},
-{
-["price"] = 11997,
-["quantity"] = 172,
-["time"] = 1679045747,
-},
-},
-["g:20408:60"] = {
-{
-["price"] = 13758,
+["price"] = 1642,
 ["quantity"] = 4,
-["time"] = 1647114202,
+["time"] = 1694413719,
 },
-},
-["g:13072:60"] = {
 {
-["price"] = 452019,
-["quantity"] = 1,
-["time"] = 1676195254,
-},
-},
-["3667"] = {
-{
-["price"] = 235,
+["price"] = 1498,
 ["quantity"] = 4,
-["time"] = 1722102506,
+["time"] = 1695035251,
 },
 {
-["price"] = 176,
-["quantity"] = 4,
-["time"] = 1722164597,
+["price"] = 1499,
+["quantity"] = 6,
+["time"] = 1695387545,
 },
-},
-["7436"] = {
 {
-["price"] = 9700,
-["quantity"] = 1,
-["time"] = 1696613863,
+["price"] = 1530,
+["quantity"] = 12,
+["time"] = 1695393678,
 },
-},
-["39919"] = {
 {
-["price"] = 11999,
-["quantity"] = 1,
-["time"] = 1674659500,
+["price"] = 1497,
+["quantity"] = 2,
+["time"] = 1701969045,
 },
-},
-["gn:15009:Primal Leggings of the Eagle:11"] = {
 {
-["price"] = 3586,
-["quantity"] = 1,
-["time"] = 1705078164,
+["price"] = 2061,
+["quantity"] = 2,
+["time"] = 1713372602,
+},
+},
+["37700"] = {
+{
+["price"] = 1516,
+["quantity"] = 2,
+["time"] = 1676551077,
 },
 },
 ["5107"] = {
@@ -18787,45 +18696,85 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1679743856,
 },
 },
-["gn:7552:Falcon's Hook:44"] = {
+["14652"] = {
 {
-["price"] = 6497,
+["price"] = 9936,
 ["quantity"] = 1,
-["time"] = 1712430112,
-},
-},
-["41479"] = {
-{
-["price"] = 79999,
-["quantity"] = 8,
-["time"] = 1674896562,
-},
-},
-["19702"] = {
-{
-["price"] = 11965,
-["quantity"] = 36,
-["time"] = 1675003638,
+["time"] = 1712430092,
 },
 {
-["price"] = 11947,
-["quantity"] = 5,
-["time"] = 1675090839,
-},
-{
-["price"] = 8986,
-["quantity"] = 26,
-["time"] = 1675679231,
-},
-{
-["price"] = 370,
-["quantity"] = 33,
-["time"] = 1676551111,
-},
-{
-["price"] = 8492,
+["price"] = 69496,
 ["quantity"] = 1,
-["time"] = 1676729960,
+["time"] = 1712565002,
+},
+{
+["price"] = 15996,
+["quantity"] = 1,
+["time"] = 1712641058,
+},
+{
+["price"] = 15993,
+["quantity"] = 1,
+["time"] = 1712671741,
+},
+},
+["42641"] = {
+{
+["price"] = 19971,
+["quantity"] = 375,
+["time"] = 1674729095,
+},
+{
+["price"] = 19365,
+["quantity"] = 320,
+["time"] = 1674761959,
+},
+{
+["price"] = 17497,
+["quantity"] = 130,
+["time"] = 1674808804,
+},
+{
+["price"] = 16989,
+["quantity"] = 190,
+["time"] = 1674916059,
+},
+{
+["price"] = 22484,
+["quantity"] = 80,
+["time"] = 1675158755,
+},
+{
+["price"] = 21969,
+["quantity"] = 30,
+["time"] = 1675327973,
+},
+{
+["price"] = 21964,
+["quantity"] = 30,
+["time"] = 1675336861,
+},
+{
+["price"] = 16496,
+["quantity"] = 100,
+["time"] = 1676686932,
+},
+{
+["price"] = 15491,
+["quantity"] = 70,
+["time"] = 1676801040,
+},
+},
+["15243"] = {
+{
+["price"] = 18571,
+["quantity"] = 1,
+["time"] = 1711539001,
+},
+{
+["price"] = 14950,
+["quantity"] = 1,
+["time"] = 1711652483,
 },
 },
 ["gn:14114:Aboriginal Footwraps of the Eagle:16"] = {
@@ -18887,72 +18836,87 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712957936,
 },
 },
-["14366"] = {
+["15747"] = {
 {
-["price"] = 1479,
-["quantity"] = 1,
-["time"] = 1706540387,
-},
-},
-["gn:15126:Robust Leggings of Spirit:29"] = {
-{
-["price"] = 23200,
-["quantity"] = 1,
-["time"] = 1712829051,
-},
-},
-["19708"] = {
-{
-["price"] = 19996,
-["quantity"] = 1,
-["time"] = 1674553240,
-},
-{
-["price"] = 43647,
+["price"] = 35098,
 ["quantity"] = 2,
-["time"] = 1675090854,
+["time"] = 1647038638,
+},
+},
+["14047"] = {
+{
+["price"] = 6723,
+["quantity"] = 41,
+["time"] = 1677228833,
 },
 {
-["price"] = 84998,
+["price"] = 5999,
+["quantity"] = 8,
+["time"] = 1677231307,
+},
+{
+["price"] = 3881,
+["quantity"] = 271,
+["time"] = 1677241000,
+},
+{
+["price"] = 2498,
+["quantity"] = 9,
+["time"] = 1677518758,
+},
+{
+["price"] = 3399,
+["quantity"] = 23,
+["time"] = 1677842859,
+},
+{
+["price"] = 4585,
+["quantity"] = 52,
+["time"] = 1678112935,
+},
+{
+["price"] = 3486,
+["quantity"] = 52,
+["time"] = 1678269173,
+},
+{
+["price"] = 3148,
+["quantity"] = 28,
+["time"] = 1678368603,
+},
+{
+["price"] = 1896,
+["quantity"] = 50,
+["time"] = 1679310883,
+},
+{
+["price"] = 2041,
 ["quantity"] = 2,
-["time"] = 1675679202,
+["time"] = 1713123968,
+},
+},
+["15351"] = {
+{
+["price"] = 8200,
+["quantity"] = 1,
+["time"] = 1711657439,
+},
+},
+["2835"] = {
+{
+["price"] = 10,
+["quantity"] = 19,
+["time"] = 1706475543,
 },
 {
-["price"] = 19832,
-["quantity"] = 1,
-["time"] = 1676975007,
+["price"] = 29,
+["quantity"] = 3,
+["time"] = 1709290312,
 },
 {
-["price"] = 19830,
-["quantity"] = 1,
-["time"] = 1676977425,
-},
-},
-["221293"] = {
-{
-["price"] = 1099998,
-["quantity"] = 1,
-["time"] = 1712345908,
-},
-{
-["price"] = 999991,
-["quantity"] = 1,
-["time"] = 1712389389,
-},
-{
-["price"] = 559985,
-["quantity"] = 1,
-["time"] = 1712430141,
-},
-{
-["price"] = 509994,
-["quantity"] = 1,
-["time"] = 1712475797,
-},
-{
-["price"] = 469996,
-["quantity"] = 1,
-["time"] = 1712565031,
+["price"] = 22,
+["quantity"] = 6,
+["time"] = 1709377395,
 },
 },
 ["15132"] = {
@@ -18962,56 +18926,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709053292,
 },
 },
-["7067"] = {
+["g:4999:27"] = {
 {
-["price"] = 1553,
-["quantity"] = 2,
-["time"] = 1722011840,
-},
-{
-["price"] = 512,
-["quantity"] = 2,
-["time"] = 1722093798,
-},
-{
-["price"] = 473,
-["quantity"] = 2,
-["time"] = 1722102642,
-},
-{
-["price"] = 606,
-["quantity"] = 2,
-["time"] = 1722164602,
-},
-{
-["price"] = 839,
-["quantity"] = 352,
-["time"] = 1722182496,
-},
-{
-["price"] = 558,
-["quantity"] = 334,
-["time"] = 1722244749,
-},
-{
-["price"] = 595,
+["price"] = 10095,
 ["quantity"] = 1,
-["time"] = 1722276302,
+["time"] = 1709377381,
 },
 {
-["price"] = 988,
-["quantity"] = 407,
-["time"] = 1722331186,
+["price"] = 11865,
+["quantity"] = 1,
+["time"] = 1709577327,
 },
 {
-["price"] = 2093,
-["quantity"] = 350,
-["time"] = 1722369431,
-},
-{
-["price"] = 796,
-["quantity"] = 350,
-["time"] = 1722411434,
+["price"] = 19999,
+["quantity"] = 1,
+["time"] = 1711178673,
 },
 },
 ["g:2077:29"] = {
@@ -19060,72 +18989,24 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713116430,
 },
 },
-["39912"] = {
+["11082"] = {
 {
-["price"] = 49512,
-["quantity"] = 14,
-["time"] = 1674659729,
-},
-{
-["price"] = 39895,
-["quantity"] = 14,
-["time"] = 1674892717,
-},
-},
-["__dbversion"] = 1,
-["2452"] = {
-{
-["price"] = 1569,
-["quantity"] = 17,
-["time"] = 1705571118,
-},
-{
-["price"] = 1550,
-["quantity"] = 2,
-["time"] = 1705579383,
-},
-{
-["price"] = 1198,
+["price"] = 4098,
 ["quantity"] = 1,
-["time"] = 1708448080,
+["time"] = 1693740964,
 },
 {
-["price"] = 1574,
-["quantity"] = 2,
-["time"] = 1709733798,
+["price"] = 4092,
+["quantity"] = 1,
+["time"] = 1693746728,
 },
 {
-["price"] = 1848,
-["quantity"] = 2,
-["time"] = 1709807895,
-},
-{
-["price"] = 1474,
-["quantity"] = 6,
-["time"] = 1709896022,
-},
-{
-["price"] = 1471,
-["quantity"] = 2,
-["time"] = 1709971630,
-},
-{
-["price"] = 1489,
-["quantity"] = 2,
-["time"] = 1709991453,
-},
-{
-["price"] = 7979,
-["quantity"] = 5,
-["time"] = 1722011796,
-},
-{
-["price"] = 7995,
-["quantity"] = 4,
-["time"] = 1722016099,
+["price"] = 2698,
+["quantity"] = 1,
+["time"] = 1693808314,
 },
 },
-["14263"] = {
+["gn:14263:Bloodwoven Mask of Fiery Wrath:48"] = {
 {
 ["price"] = 49897,
 ["quantity"] = 1,
@@ -19145,6 +19026,20 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 39887,
 ["quantity"] = 1,
 ["time"] = 1713124180,
+},
+},
+["gn:4563:Billy Club:9"] = {
+{
+["price"] = 523,
+["quantity"] = 1,
+["time"] = 1705844764,
+},
+},
+["7552"] = {
+{
+["price"] = 6497,
+["quantity"] = 1,
+["time"] = 1712430112,
 },
 },
 ["2453"] = {
@@ -19240,18 +19135,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705844781,
 },
 },
-["gn:2077:Magician Staff of the Whale:29"] = {
+["g:7552:44"] = {
 {
-["price"] = 9995,
+["price"] = 6497,
 ["quantity"] = 1,
-["time"] = 1708544829,
+["time"] = 1712430112,
 },
 },
-["gn:14121:Aboriginal Vest of the Eagle:20"] = {
+["4861"] = {
 {
-["price"] = 2422,
+["price"] = 1499,
 ["quantity"] = 1,
-["time"] = 1703681729,
+["time"] = 1693901907,
 },
 },
 ["211784"] = {
@@ -19294,23 +19189,38 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1697117251,
 },
 },
-["12208"] = {
+["gn:14791:Protector Cape:48"] = {
 {
-["price"] = 557,
-["quantity"] = 12,
-["time"] = 1713372163,
-},
-},
-["gr:11997:of the Boar"] = {
-{
-["price"] = 123300,
+["price"] = 18993,
 ["quantity"] = 1,
-["time"] = 1722182552,
+["time"] = 1713089218,
 },
 {
-["price"] = 123300,
+["price"] = 18984,
 ["quantity"] = 1,
-["time"] = 1722244694,
+["time"] = 1713123963,
+},
+{
+["price"] = 18976,
+["quantity"] = 1,
+["time"] = 1713185729,
+},
+{
+["price"] = 17795,
+["quantity"] = 1,
+["time"] = 1713372326,
+},
+},
+["g:5107:14"] = {
+{
+["price"] = 52298,
+["quantity"] = 1,
+["time"] = 1678641732,
+},
+{
+["price"] = 292,
+["quantity"] = 2,
+["time"] = 1694164117,
 },
 },
 ["g:15016:16"] = {
@@ -19330,7 +19240,241 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1704447904,
 },
 },
-["4091"] = {
+["g:14941:42"] = {
+{
+["price"] = 15300,
+["quantity"] = 1,
+["time"] = 1713085192,
+},
+{
+["price"] = 13499,
+["quantity"] = 1,
+["time"] = 1713116432,
+},
+{
+["price"] = 13494,
+["quantity"] = 1,
+["time"] = 1713185732,
+},
+{
+["price"] = 13494,
+["quantity"] = 1,
+["time"] = 1713372320,
+},
+},
+["15970"] = {
+{
+["price"] = 1699,
+["quantity"] = 1,
+["time"] = 1693995874,
+},
+},
+["g:14263:48"] = {
+{
+["price"] = 49897,
+["quantity"] = 1,
+["time"] = 1712958173,
+},
+{
+["price"] = 49897,
+["quantity"] = 1,
+["time"] = 1712998147,
+},
+{
+["price"] = 39892,
+["quantity"] = 1,
+["time"] = 1713085103,
+},
+{
+["price"] = 39887,
+["quantity"] = 1,
+["time"] = 1713124180,
+},
+},
+["gn:9857:Archer's Bracers of the Eagle:34"] = {
+{
+["price"] = 9836,
+["quantity"] = 1,
+["time"] = 1711571059,
+},
+{
+["price"] = 9836,
+["quantity"] = 1,
+["time"] = 1711618660,
+},
+},
+["4422"] = {
+{
+["price"] = 1499,
+["quantity"] = 1,
+["time"] = 1712565023,
+},
+{
+["price"] = 1146,
+["quantity"] = 1,
+["time"] = 1713371346,
+},
+},
+["21884"] = {
+{
+["price"] = 99999,
+["quantity"] = 1,
+["time"] = 1663236798,
+},
+},
+["g:14956:45"] = {
+{
+["price"] = 39985,
+["quantity"] = 1,
+["time"] = 1713379396,
+},
+{
+["price"] = 39985,
+["quantity"] = 1,
+["time"] = 1713440646,
+},
+{
+["price"] = 25075,
+["quantity"] = 1,
+["time"] = 1713561185,
+},
+{
+["price"] = 25072,
+["quantity"] = 1,
+["time"] = 1713602271,
+},
+{
+["price"] = 24062,
+["quantity"] = 1,
+["time"] = 1713646340,
+},
+{
+["price"] = 19980,
+["quantity"] = 1,
+["time"] = 1713780055,
+},
+},
+["2740"] = {
+{
+["price"] = 13997,
+["quantity"] = 4,
+["time"] = 1662283319,
+},
+{
+["price"] = 896,
+["quantity"] = 1,
+["time"] = 1697440613,
+},
+{
+["price"] = 858,
+["quantity"] = 3,
+["time"] = 1722369418,
+},
+},
+["3740"] = {
+{
+["price"] = 7303,
+["quantity"] = 1,
+["time"] = 1696613790,
+},
+{
+["price"] = 9999,
+["quantity"] = 1,
+["time"] = 1709807862,
+},
+{
+["price"] = 8896,
+["quantity"] = 1,
+["time"] = 1709895984,
+},
+},
+["g:14183:30"] = {
+{
+["price"] = 4900,
+["quantity"] = 1,
+["time"] = 1709053274,
+},
+},
+["8167"] = {
+{
+["price"] = 303,
+["quantity"] = 33,
+["time"] = 1713371383,
+},
+{
+["price"] = 378,
+["quantity"] = 66,
+["time"] = 1713372195,
+},
+{
+["price"] = 857,
+["quantity"] = 36,
+["time"] = 1713440418,
+},
+{
+["price"] = 936,
+["quantity"] = 27,
+["time"] = 1713560662,
+},
+{
+["price"] = 934,
+["quantity"] = 17,
+["time"] = 1713561254,
+},
+},
+["11166"] = {
+{
+["price"] = 313200,
+["quantity"] = 2,
+["time"] = 1643619764,
+},
+},
+["8923"] = {
+{
+["price"] = 3721,
+["quantity"] = 6,
+["time"] = 1722011866,
+},
+},
+["gn:15351:Headhunter's Bands of the Eagle:30"] = {
+{
+["price"] = 8200,
+["quantity"] = 1,
+["time"] = 1711657439,
+},
+},
+["gn:15592:Steadfast Buckler of the Owl:43"] = {
+{
+["price"] = 29997,
+["quantity"] = 1,
+["time"] = 1713372211,
+},
+},
+["11972"] = {
+{
+["price"] = 55783,
+["quantity"] = 1,
+["time"] = 1722011718,
+},
+{
+["price"] = 55783,
+["quantity"] = 1,
+["time"] = 1722093727,
+},
+{
+["price"] = 95783,
+["quantity"] = 1,
+["time"] = 1722164571,
+},
+},
+["g:14124:20"] = {
+{
+["price"] = 2589,
+["quantity"] = 1,
+["time"] = 1704453072,
+},
+},
+["g:4091:47"] = {
 {
 ["price"] = 999898,
 ["quantity"] = 1,
@@ -19347,169 +19491,45 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713372682,
 },
 },
-["15970"] = {
+["gn:14951:Bloodforged Sabatons of the Bear:47"] = {
 {
-["price"] = 1699,
+["price"] = 17450,
 ["quantity"] = 1,
-["time"] = 1693995874,
+["time"] = 1713372314,
 },
-},
-["gn:15274:Diviner Long Staff of the Owl:52"] = {
 {
-["price"] = 89900,
+["price"] = 17443,
 ["quantity"] = 1,
-["time"] = 1713185771,
+["time"] = 1713561180,
 },
-},
-["g:14401:33"] = {
 {
-["price"] = 10097,
+["price"] = 17441,
 ["quantity"] = 1,
-["time"] = 1712834191,
+["time"] = 1713602273,
 },
 },
-["g:14945:45"] = {
+["5011"] = {
 {
-["price"] = 32081,
+["price"] = 14395,
 ["quantity"] = 1,
-["time"] = 1713285682,
+["time"] = 1713371341,
 },
+},
+["7992"] = {
 {
-["price"] = 32081,
+["price"] = 29995,
 ["quantity"] = 1,
-["time"] = 1713343754,
+["time"] = 1722182486,
 },
-},
-["g:14291:50"] = {
 {
-["price"] = 56400,
+["price"] = 19990,
 ["quantity"] = 1,
-["time"] = 1713372303,
-},
-},
-["8402"] = {
-{
-["price"] = 19999,
-["quantity"] = 3,
-["time"] = 1645039458,
+["time"] = 1722244739,
 },
 {
-["price"] = 9999,
-["quantity"] = 2,
-["time"] = 1645443689,
-},
-{
-["price"] = 9797,
-["quantity"] = 2,
-["time"] = 1645616909,
-},
-},
-["20404"] = {
-{
-["price"] = 17991,
-["quantity"] = 2,
-["time"] = 1647114305,
-},
-},
-["4594"] = {
-{
-["price"] = 360,
-["quantity"] = 40,
-["time"] = 1709897025,
-},
-{
-["price"] = 281,
-["quantity"] = 20,
-["time"] = 1709980035,
-},
-},
-["21886"] = {
-{
-["price"] = 44997,
+["price"] = 15585,
 ["quantity"] = 1,
-["time"] = 1662736369,
-},
-},
-["2738"] = {
-{
-["price"] = 549,
-["quantity"] = 1,
-["time"] = 1697440616,
-},
-},
-["11166"] = {
-{
-["price"] = 313200,
-["quantity"] = 2,
-["time"] = 1643619764,
-},
-},
-["11139"] = {
-{
-["price"] = 131,
-["quantity"] = 1,
-["time"] = 1674649969,
-},
-},
-["gn:15351:Headhunter's Bands of the Eagle:30"] = {
-{
-["price"] = 8200,
-["quantity"] = 1,
-["time"] = 1711657439,
-},
-},
-["g:8179:6"] = {
-{
-["price"] = 149,
-["quantity"] = 1,
-["time"] = 1693416370,
-},
-{
-["price"] = 1598,
-["quantity"] = 1,
-["time"] = 1705844776,
-},
-},
-["g:15298:13"] = {
-{
-["price"] = 1195,
-["quantity"] = 1,
-["time"] = 1701968986,
-},
-},
-["g:14124:20"] = {
-{
-["price"] = 2589,
-["quantity"] = 1,
-["time"] = 1704453072,
-},
-},
-["14291"] = {
-{
-["price"] = 56400,
-["quantity"] = 1,
-["time"] = 1713372303,
-},
-},
-["8924"] = {
-{
-["price"] = 9970,
-["quantity"] = 20,
-["time"] = 1722011872,
-},
-},
-["g:15348:26"] = {
-{
-["price"] = 8876,
-["quantity"] = 1,
-["time"] = 1712829054,
-},
-},
-["4245"] = {
-{
-["price"] = 3810,
-["quantity"] = 1,
-["time"] = 1722346615,
+["time"] = 1722354460,
 },
 },
 ["gn:6415:Aurora Robe:41"] = {
@@ -19593,16 +19613,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1646851005,
 },
 },
-["gr:9849:of the Eagle"] = {
+["5116"] = {
 {
-["price"] = 113200,
-["quantity"] = 1,
-["time"] = 1722011789,
-},
-{
-["price"] = 19996,
-["quantity"] = 1,
-["time"] = 1722093739,
+["price"] = 338,
+["quantity"] = 3,
+["time"] = 1722182487,
 },
 },
 ["22577"] = {
@@ -19612,45 +19627,25 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1662736415,
 },
 },
-["4718"] = {
+["40347"] = {
 {
-["price"] = 53200,
+["price"] = 12499994,
 ["quantity"] = 1,
-["time"] = 1722255007,
+["time"] = 1675714762,
 },
+},
+["gr:12019:of the Whale"] = {
 {
-["price"] = 41600,
+["price"] = 67700,
 ["quantity"] = 1,
-["time"] = 1722331121,
+["time"] = 1722016015,
 },
 },
-["3711"] = {
+["4278"] = {
 {
-["price"] = 9660,
-["quantity"] = 1,
-["time"] = 1722276305,
-},
-{
-["price"] = 9660,
-["quantity"] = 1,
-["time"] = 1722331132,
-},
-},
-["3685"] = {
-{
-["price"] = 893,
-["quantity"] = 1,
-["time"] = 1722346643,
-},
-{
-["price"] = 891,
-["quantity"] = 15,
-["time"] = 1722347477,
-},
-{
-["price"] = 876,
-["quantity"] = 18,
-["time"] = 1722354442,
+["price"] = 2212,
+["quantity"] = 4,
+["time"] = 1722346674,
 },
 },
 ["g:15309:15"] = {
@@ -19660,11 +19655,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705497110,
 },
 },
-["g:15603:41"] = {
+["g:15331:23"] = {
 {
-["price"] = 30000,
+["price"] = 5500,
 ["quantity"] = 2,
-["time"] = 1645371578,
+["time"] = 1696613817,
+},
+{
+["price"] = 5500,
+["quantity"] = 1,
+["time"] = 1696668632,
 },
 },
 ["g:9877:38"] = {
@@ -19679,11 +19679,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643813069,
 },
 },
-["6348"] = {
+["2732"] = {
 {
-["price"] = 2999,
-["quantity"] = 1,
-["time"] = 1724417484,
+["price"] = 896,
+["quantity"] = 3,
+["time"] = 1722369415,
 },
 },
 }
@@ -20320,8 +20320,8 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["2389"] = 59,
 ["31356"] = 36000,
 ["29684"] = 80000,
-["18846"] = 13500,
-["44617"] = 1900,
+["16385"] = 11000,
+["8501"] = 5000,
 ["23143"] = 60000,
 ["2471"] = 15336,
 ["19764"] = 40000,
@@ -20332,56 +20332,56 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["3927"] = 400,
 ["20170"] = 61374,
 ["39684"] = 7200,
-["2595"] = 2000,
-["220830"] = 42395,
+["1707"] = 200,
+["43955"] = 19000000,
 ["2510"] = 41,
 ["30832"] = 454357,
 ["30765"] = 126608,
 ["19221"] = 50,
 ["44934"] = 72250000,
 ["20199"] = 134092,
-["44194"] = 297513,
+["3593"] = 5477,
 ["30355"] = 1600,
-["12239"] = 7000,
+["44248"] = 261832,
 ["17026"] = 900,
 ["20208"] = 85492,
-["44080"] = 8000000,
+["3423"] = 18000,
 ["18444"] = 30000,
 ["5485"] = 360,
 ["17038"] = 1800,
-["2372"] = 343,
-["13332"] = 360000,
+["18427"] = 5950,
+["3135"] = 0.34,
 ["21815"] = 0.9,
-["18447"] = 14235,
+["19780"] = 40000,
 ["17021"] = 630,
 ["50370"] = 1425000,
 ["20188"] = 13318,
 ["44258"] = 140035,
-["27700"] = 30000,
+["5740"] = 100,
 ["209"] = 60,
-["2697"] = 400,
-["4594"] = 200,
+["2379"] = 75,
+["35221"] = 9500,
 ["29698"] = 80000,
 ["211391"] = 18000,
-["8343"] = 2000,
+["216771"] = 18000,
 ["50368"] = 1350000,
 ["728"] = 200,
 ["40036"] = 142,
 ["11285"] = 5,
 ["29682"] = 80000,
-["8529"] = 700,
+["38427"] = 1120,
 ["2686"] = 50,
 ["20186"] = 103227,
 ["25873"] = 64,
 ["28468"] = 18000,
 ["40533"] = 40000,
 ["2398"] = 434,
-["3678"] = 400,
-["2889"] = 240,
-["226394"] = 45000,
-["2121"] = 50,
+["2123"] = 48,
+["226401"] = 4500,
+["220831"] = 42395,
+["20201"] = 13960,
 ["18567"] = 150000,
-["30830"] = 2254572,
+["211390"] = 18000,
 ["795"] = 280,
 ["17184"] = 34,
 ["20815"] = 680,
@@ -20391,28 +20391,28 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["35696"] = 237500,
 ["2369"] = 150,
 ["2380"] = 37,
-["226396"] = 45000,
+["2119"] = 24,
 ["195"] = 36,
 ["22181"] = 34200,
 ["44129"] = 600000,
 ["35947"] = 3200,
-["2429"] = 10138,
+["8591"] = 9000,
 ["18441"] = 20891,
-["20190"] = 71783,
-["33445"] = 2200,
+["213565"] = 5000,
+["216770"] = 18000,
 ["16377"] = 13000,
 ["41725"] = 32000,
 ["216764"] = 18000,
 ["22766"] = 47500,
-["20209"] = 24842,
-["2117"] = 36,
+["226403"] = 27000,
+["223160"] = 9512,
 ["35325"] = 114000,
-["17188"] = 2265,
+["223912"] = 2000,
 ["1849"] = 1388,
 ["216746"] = 18000,
 ["22918"] = 72000,
 ["22148"] = 1500,
-["2613"] = 546,
+["216740"] = 18000,
 ["29008"] = 64,
 ["29717"] = 120000,
 ["22908"] = 60000,
@@ -20423,97 +20423,97 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["18443"] = 40000,
 ["25838"] = 163038,
 ["216738"] = 18000,
-["25848"] = 100000,
+["219024"] = 29250,
 ["2469"] = 6334,
-["12229"] = 4500,
+["20164"] = 7526,
 ["20173"] = 21014,
-["20161"] = 25955,
+["210410"] = 2000,
 ["31392"] = 216000,
 ["35377"] = 138258,
-["210825"] = 30000,
-["44244"] = 716502,
+["5565"] = 4500,
+["210818"] = 30000,
 ["210654"] = 30000,
-["20205"] = 32999,
+["216748"] = 18000,
 ["5048"] = 45,
 ["18675"] = 90,
 ["16381"] = 10000,
 ["33148"] = 90000,
-["20160"] = 52306,
+["211392"] = 18000,
 ["18428"] = 27000,
-["838"] = 1128,
+["33151"] = 90000,
 ["38428"] = 1600,
 ["18436"] = 17086,
 ["16325"] = 15000,
-["20211"] = 50612,
-["44234"] = 170000000,
-["44140"] = 1425000,
-["20210"] = 16170,
+["8924"] = 90,
+["20174"] = 42652,
 ["20198"] = 25672,
-["16375"] = 2500,
-["3591"] = 1887,
-["6368"] = 360,
+["20210"] = 16170,
+["8094"] = 27290,
+["851"] = 2023,
+["414"] = 25,
+["840"] = 853,
 ["20163"] = 60191,
 ["23618"] = 54000,
-["4539"] = 180,
-["16387"] = 22000,
+["5976"] = 9000,
+["13334"] = 9000000,
 ["16352"] = 3000,
 ["44181"] = 228848,
-["2428"] = 20222,
+["16372"] = 12000,
 ["20162"] = 11211,
 ["29007"] = 27,
-["2424"] = 21461,
+["16072"] = 10000,
 ["44243"] = 280830,
 ["2437"] = 25101,
-["17034"] = 180,
+["28469"] = 18000,
 ["20153"] = 24557,
 ["11109"] = 25,
-["16388"] = 9000,
+["2698"] = 400,
 ["44618"] = 9500,
 ["41720"] = 32000,
-["2698"] = 400,
-["18635"] = 400,
+["24002"] = 54000,
+["16371"] = 9000,
 ["16378"] = 24000,
 ["20212"] = 127540,
 ["44935"] = 72250000,
 ["219022"] = 29250,
 ["43157"] = 9000,
-["13945"] = 19000,
+["20072"] = 41230,
 ["20207"] = 10613,
-["18434"] = 37468,
+["3771"] = 180,
 ["43232"] = 4500,
 ["20154"] = 128288,
-["2535"] = 55400,
-["35268"] = 475000,
+["202"] = 1714,
+["35269"] = 475000,
 ["28273"] = 60000,
 ["33155"] = 120000,
 ["1194"] = 104,
 ["6328"] = 400,
-["711"] = 25,
+["216769"] = 18000,
 ["211385"] = 18000,
-["6529"] = 50,
+["2207"] = 2390,
 ["35262"] = 475000,
 ["43155"] = 8000,
 ["206992"] = 18000,
-["16166"] = 4.4,
-["28056"] = 15,
+["2521"] = 30896,
+["35566"] = 15300,
 ["2880"] = 100,
 ["1840"] = 185,
 ["18853"] = 15000,
 ["2399"] = 217,
-["16341"] = 19282,
-["8766"] = 800,
+["18461"] = 38599,
 ["15906"] = 2138,
+["221512"] = 16000,
 ["44133"] = 800000,
 ["20204"] = 56148,
 ["5173"] = 90,
 ["210779"] = 67500,
-["228797"] = 45000,
+["44303"] = 390918,
 ["20202"] = 79348,
 ["159"] = 5,
 ["2364"] = 296,
-["1844"] = 728,
-["44245"] = 431534,
-["43156"] = 9500,
+["40585"] = 72250000,
+["35253"] = 475000,
+["3590"] = 578,
 ["42097"] = 32800,
 ["21116"] = 15230,
 ["1708"] = 200,
@@ -20521,32 +20521,32 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["19222"] = 10,
 ["4607"] = 200,
 ["3607"] = 148,
-["2596"] = 120,
+["22250"] = 1000,
 ["15326"] = 4,
 ["285"] = 3555,
-["19777"] = 40000,
-["2617"] = 9892,
+["2438"] = 18896,
+["2463"] = 13695,
 ["44297"] = 286718,
-["1835"] = 31,
-["35406"] = 203402,
+["30758"] = 103377,
+["22180"] = 24700,
 ["31780"] = 10000,
 ["44136"] = 800000,
-["44180"] = 364851,
-["3596"] = 23,
+["846"] = 1452,
+["210822"] = 30000,
 ["2446"] = 6182,
-["3592"] = 1894,
 ["13331"] = 360000,
-["19765"] = 40000,
-["34666"] = 437611,
+["17028"] = 630,
 ["44188"] = 194625,
-["20157"] = 13766,
+["34666"] = 437611,
+["2534"] = 45431,
+["2160"] = 3747,
 ["211387"] = 18000,
 ["21115"] = 28230,
-["849"] = 1326,
-["208773"] = 500,
+["17062"] = 2200,
+["2616"] = 2393,
 ["24183"] = 108000,
 ["16110"] = 11400,
-["2287"] = 22.4,
+["2159"] = 3733,
 ["35270"] = 475000,
 ["2156"] = 2769,
 ["23133"] = 60000,
@@ -20555,76 +20555,76 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["44510"] = 40000,
 ["16326"] = 900,
 ["25823"] = 312586,
-["13333"] = 360000,
-["1941"] = 815,
+["193"] = 48,
+["44216"] = 168730,
 ["44512"] = 40000,
 ["16168"] = 360,
-["44216"] = 168730,
-["19781"] = 40000,
+["1941"] = 815,
+["2507"] = 1576,
 ["8957"] = 800,
 ["16376"] = 8000,
 ["17351"] = 950,
-["21099"] = 500,
+["213088"] = 3626,
 ["3137"] = 1,
 ["25869"] = 72000,
 ["16362"] = 24000,
-["44167"] = 178772,
+["4399"] = 200,
 ["38328"] = 4275,
 ["44616"] = 1425,
-["44190"] = 206379,
+["2029"] = 4419,
 ["31402"] = 108000,
-["2131"] = 54,
+["4592"] = 4,
 ["239"] = 1413,
 ["42183"] = 40000,
-["44132"] = 600000,
 ["17183"] = 34,
-["3602"] = 145,
+["226402"] = 4500,
+["44183"] = 324485,
 ["20013"] = 40000,
-["10394"] = 5000,
-["2618"] = 23975,
 ["2427"] = 20146,
-["25861"] = 14,
+["2618"] = 23975,
+["10394"] = 5000,
+["5060"] = 1350,
 ["839"] = 566,
-["2467"] = 9430,
 ["44306"] = 414204,
-["29133"] = 569315,
+["2467"] = 9430,
+["923"] = 8743,
 ["16347"] = 6000,
 ["212590"] = 2185,
-["927"] = 6953,
+["17029"] = 900,
 ["2489"] = 342,
 ["33451"] = 1700,
 ["5484"] = 240,
 ["18794"] = 10000000,
 ["42099"] = 66098,
-["20214"] = 428268,
+["34200"] = 144000,
 ["7340"] = 475000,
-["44283"] = 227986,
-["27857"] = 952,
-["845"] = 1447,
+["29677"] = 80000,
+["8932"] = 800,
+["44199"] = 719446,
 ["35238"] = 475000,
 ["4340"] = 350,
 ["1836"] = 31,
 ["16532"] = 40322,
-["30637"] = 100000,
+["35242"] = 475000,
 ["4542"] = 100,
 ["2526"] = 17402,
-["29193"] = 950000,
-["212589"] = 1894,
+["8088"] = 13335,
+["2386"] = 77,
 ["19299"] = 100,
-["2130"] = 54,
+["2392"] = 413,
 ["35266"] = 475000,
 ["31390"] = 216000,
-["219023"] = 29250,
+["19769"] = 40000,
 ["2127"] = 60,
-["12228"] = 5000,
+["35264"] = 475000,
 ["44131"] = 600000,
 ["32070"] = 36000,
-["33452"] = 1700,
-["2370"] = 377,
+["28463"] = 18000,
+["2152"] = 5906,
 ["25526"] = 54000,
 ["35952"] = 3200,
 ["2440"] = 12689,
-["2024"] = 6078,
+["5665"] = 9000,
 ["22538"] = 180000,
 ["40042"] = 1425,
 ["2480"] = 72,
@@ -20632,26 +20632,26 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["2511"] = 1192,
 ["16363"] = 3000,
 ["23814"] = 54000,
-["17037"] = 1260,
+["15907"] = 8237,
 ["2391"] = 38,
-["10918"] = 50,
-["20752"] = 2700,
-["44204"] = 272326,
+["11362"] = 900,
+["44201"] = 352721,
+["33444"] = 1700,
 ["29173"] = 158357,
 ["3893"] = 24771,
 ["21747"] = 300,
 ["3682"] = 1600,
-["35245"] = 475000,
-["44192"] = 590731,
-["2381"] = 75,
-["18796"] = 90000,
+["2426"] = 32568,
+["6369"] = 2200,
+["3025"] = 17555,
+["799"] = 355,
 ["29165"] = 1871962,
 ["29155"] = 1940453,
 ["16380"] = 7000,
-["3894"] = 29986,
-["29132"] = 175952,
-["799"] = 355,
 ["2614"] = 1045,
+["10648"] = 500,
+["33124"] = 47500,
+["3894"] = 29986,
 ["35257"] = 475000,
 ["30777"] = 59255,
 ["2894"] = 50,
@@ -20664,14 +20664,14 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["29009"] = 170,
 ["18798"] = 90000,
 ["16390"] = 11000,
-["3681"] = 1600,
+["34678"] = 221114,
 ["33205"] = 228000,
-["35954"] = 1200,
+["20220"] = 504598,
 ["39505"] = 638,
 ["4540"] = 5,
-["216939"] = 13500,
-["117"] = 4.4,
 ["16302"] = 100,
+["25872"] = 27,
+["34674"] = 314324,
 ["4342"] = 2500,
 ["3024"] = 6388,
 ["2509"] = 373,
@@ -20679,23 +20679,23 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["6326"] = 40,
 ["43230"] = 4000,
 ["2153"] = 5927,
-["3421"] = 180,
+["42084"] = 33668,
 ["35254"] = 475000,
 ["35380"] = 190594,
-["30784"] = 50501,
+["25904"] = 120000,
 ["7342"] = 95000,
-["3680"] = 1600,
+["16386"] = 14000,
 ["18789"] = 90000,
 ["21558"] = 25,
 ["4541"] = 25,
 ["2373"] = 259,
 ["8090"] = 13439,
-["16386"] = 14000,
-["925"] = 7797,
+["3680"] = 1600,
+["29167"] = 501349,
 ["34780"] = 950,
-["221480"] = 16000,
+["2394"] = 416,
 ["16331"] = 600,
-["216703"] = 19568,
+["2395"] = 322,
 ["30634"] = 100000,
 ["2474"] = 15510,
 ["44205"] = 637840,
@@ -20709,302 +20709,302 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["226395"] = 45000,
 ["29125"] = 2080372,
 ["2146"] = 4328,
-["2530"] = 52219,
-["4606"] = 100,
-["45688"] = 10625000,
+["5441"] = 900,
+["22768"] = 47500,
+["3600"] = 24,
 ["25531"] = 850000,
 ["16318"] = 10000,
 ["28068"] = 57000,
-["2506"] = 285,
-["15903"] = 8117,
 ["29720"] = 54000,
-["35951"] = 3200,
+["15903"] = 8117,
+["2506"] = 285,
+["2928"] = 18,
 ["6949"] = 50,
 ["28053"] = 7.2,
 ["31804"] = 9000,
-["1198"] = 2676,
+["35695"] = 237500,
 ["25474"] = 425000,
 ["34671"] = 414501,
-["35695"] = 237500,
+["1198"] = 2676,
 ["2132"] = 102,
-["44086"] = 80000000,
+["34582"] = 47.5,
 ["33454"] = 1700,
 ["14526"] = 19000,
 ["2120"] = 50,
-["19301"] = 1330,
-["29180"] = 130288,
+["21557"] = 25,
+["46099"] = 9000,
 ["29171"] = 2391135,
 ["2126"] = 59,
-["10393"] = 4750,
+["4496"] = 450,
 ["2700"] = 400,
 ["17186"] = 243,
-["16360"] = 11000,
+["226397"] = 45000,
 ["16583"] = 9000,
-["2893"] = 150,
+["7341"] = 47500,
 ["16346"] = 2000,
 ["44174"] = 836838,
-["31359"] = 54000,
-["20844"] = 300,
+["24175"] = 108000,
+["2472"] = 30790,
 ["30834"] = 177775,
 ["44257"] = 278816,
-["3892"] = 19746,
+["30826"] = 120000,
 ["2527"] = 26420,
 ["17036"] = 720,
-["843"] = 1077,
+["20187"] = 29999,
 ["29152"] = 1439986,
 ["35953"] = 3200,
-["44203"] = 226100,
+["1132"] = 9000,
 ["44242"] = 160167,
-["44137"] = 1200000,
+["16316"] = 1500,
 ["29170"] = 711101,
-["3588"] = 12928,
-["922"] = 12038,
+["2209"] = 7115,
+["18046"] = 12000,
 ["35360"] = 200313,
-["6261"] = 1000,
+["2129"] = 77,
 ["15809"] = 14691,
 ["16322"] = 900,
-["2931"] = 950,
-["4341"] = 500,
+["31778"] = 9000,
+["24176"] = 120000,
 ["25735"] = 144000,
 ["27854"] = 1008,
-["27856"] = 1120,
+["2324"] = 25,
 ["10922"] = 800,
 ["928"] = 9860,
 ["2493"] = 701,
-["2324"] = 25,
+["27856"] = 1120,
 ["20189"] = 62809,
-["24176"] = 120000,
-["31778"] = 9000,
+["4341"] = 500,
+["2931"] = 950,
 ["2494"] = 401,
 ["2495"] = 504,
-["2129"] = 77,
-["18046"] = 12000,
-["2209"] = 7115,
+["6261"] = 1000,
+["922"] = 12038,
+["3588"] = 12928,
 ["2418"] = 15731,
-["16316"] = 1500,
-["1132"] = 9000,
-["20187"] = 29999,
+["44137"] = 1200000,
+["44203"] = 226100,
+["843"] = 1077,
 ["33159"] = 120000,
-["30826"] = 120000,
-["2472"] = 30790,
-["24175"] = 108000,
+["3892"] = 19746,
+["20844"] = 300,
+["31359"] = 54000,
 ["20156"] = 38412,
-["7341"] = 47500,
-["226397"] = 45000,
-["4496"] = 450,
-["46099"] = 9000,
-["21557"] = 25,
-["34582"] = 47.5,
+["2893"] = 150,
+["16360"] = 11000,
+["10393"] = 4750,
+["29180"] = 130288,
+["19301"] = 1330,
+["44086"] = 80000000,
 ["29700"] = 80000,
 ["211382"] = 4050,
 ["213407"] = 5000,
-["2928"] = 18,
+["35951"] = 3200,
 ["13946"] = 19000,
 ["35251"] = 475000,
 ["2393"] = 206,
-["3600"] = 24,
-["22768"] = 47500,
-["5441"] = 900,
+["45688"] = 10625000,
+["4606"] = 100,
+["2530"] = 52219,
 ["2070"] = 5,
 ["29013"] = 800,
-["2395"] = 322,
-["2394"] = 416,
-["29167"] = 501349,
+["216703"] = 19568,
+["221480"] = 16000,
+["925"] = 7797,
 ["28271"] = 72000,
-["25904"] = 120000,
-["42084"] = 33668,
+["30784"] = 50501,
+["3421"] = 180,
 ["2025"] = 5304,
 ["16389"] = 18000,
 ["85"] = 62,
-["25872"] = 27,
-["34674"] = 314324,
-["20220"] = 504598,
+["117"] = 4.4,
+["216939"] = 13500,
+["35954"] = 1200,
 ["33449"] = 1700,
-["34678"] = 221114,
+["3681"] = 1600,
 ["20194"] = 160616,
 ["21219"] = 5000,
 ["210820"] = 30000,
 ["2141"] = 4701,
-["10648"] = 500,
+["29132"] = 175952,
 ["2396"] = 215,
-["33124"] = 47500,
-["3025"] = 17555,
-["6369"] = 2200,
-["2426"] = 32568,
-["33444"] = 1700,
-["44201"] = 352721,
-["11362"] = 900,
+["18796"] = 90000,
+["2381"] = 75,
+["44192"] = 590731,
+["35245"] = 475000,
+["44204"] = 272326,
+["20752"] = 2700,
+["10918"] = 50,
 ["1853"] = 1690,
-["15907"] = 8237,
+["17037"] = 1260,
 ["18854"] = 15000,
 ["1200"] = 82,
 ["35767"] = 475000,
-["5665"] = 9000,
-["2152"] = 5906,
-["28463"] = 18000,
-["35264"] = 475000,
-["19769"] = 40000,
-["2392"] = 413,
-["2386"] = 77,
-["8088"] = 13335,
-["35242"] = 475000,
+["2024"] = 6078,
+["2370"] = 377,
+["33452"] = 1700,
+["12228"] = 5000,
+["219023"] = 29250,
+["2130"] = 54,
+["212589"] = 1894,
+["29193"] = 950000,
+["30637"] = 100000,
 ["221515"] = 16000,
-["44199"] = 719446,
-["8932"] = 800,
-["29677"] = 80000,
-["34200"] = 144000,
+["845"] = 1447,
+["27857"] = 952,
+["44283"] = 227986,
+["20214"] = 428268,
 ["20756"] = 32000,
 ["2390"] = 38,
-["17029"] = 900,
+["927"] = 6953,
 ["7338"] = 9500,
-["923"] = 8743,
+["29133"] = 569315,
 ["2150"] = 2930,
-["5060"] = 1350,
+["25861"] = 14,
 ["28465"] = 18000,
-["44183"] = 324485,
-["226402"] = 4500,
+["3602"] = 145,
+["44132"] = 600000,
 ["2208"] = 3650,
-["4592"] = 4,
-["2029"] = 4419,
+["2131"] = 54,
+["44190"] = 206379,
 ["201"] = 2278,
-["4399"] = 200,
+["44167"] = 178772,
 ["18791"] = 9000000,
-["213088"] = 3626,
+["21099"] = 500,
 ["7005"] = 82,
 ["8092"] = 20312,
-["2507"] = 1576,
+["19781"] = 40000,
 ["8089"] = 20081,
-["193"] = 48,
+["13333"] = 360000,
 ["211247"] = 67500,
 ["19770"] = 40000,
-["2159"] = 3733,
-["2616"] = 2393,
-["17062"] = 2200,
+["2287"] = 22.4,
+["208773"] = 500,
+["849"] = 1326,
 ["20755"] = 19000,
-["2160"] = 3747,
-["2534"] = 45431,
-["17028"] = 630,
+["20157"] = 13766,
+["19765"] = 40000,
+["3592"] = 1894,
 ["44570"] = 50,
-["210822"] = 30000,
-["846"] = 1452,
-["22180"] = 24700,
-["30758"] = 103377,
-["2463"] = 13695,
-["2438"] = 18896,
+["3596"] = 23,
+["44180"] = 364851,
+["35406"] = 203402,
+["1835"] = 31,
+["2617"] = 9892,
+["19777"] = 40000,
 ["20166"] = 15939,
-["22250"] = 1000,
+["2596"] = 120,
 ["16353"] = 7000,
-["3590"] = 578,
-["35253"] = 475000,
-["40585"] = 72250000,
+["43156"] = 9500,
+["44245"] = 431534,
+["1844"] = 728,
 ["44189"] = 164490,
-["44303"] = 390918,
-["221512"] = 16000,
-["18461"] = 38599,
+["228797"] = 45000,
+["8766"] = 800,
+["16341"] = 19282,
 ["31391"] = 216000,
 ["2529"] = 65031,
-["35566"] = 15300,
-["2521"] = 30896,
+["28056"] = 15,
+["16166"] = 4.4,
 ["24004"] = 9000,
-["2207"] = 2390,
+["6529"] = 50,
 ["25740"] = 144000,
-["216769"] = 18000,
+["711"] = 25,
 ["787"] = 5,
-["35269"] = 475000,
-["202"] = 1714,
+["35268"] = 475000,
+["2535"] = 55400,
 ["2473"] = 23178,
-["3771"] = 180,
+["18434"] = 37468,
 ["2158"] = 1859,
-["20072"] = 41230,
+["13945"] = 19000,
 ["203"] = 1147,
 ["25875"] = 170,
 ["4538"] = 90,
 ["209874"] = 7500,
-["16371"] = 9000,
-["24002"] = 54000,
+["18635"] = 400,
+["16388"] = 9000,
 ["287"] = 2441,
-["28469"] = 18000,
+["17034"] = 180,
 ["29451"] = 1600,
-["16072"] = 10000,
+["2424"] = 21461,
 ["35753"] = 237500,
-["16372"] = 12000,
+["2428"] = 20222,
 ["8953"] = 720,
-["13334"] = 9000000,
-["5976"] = 9000,
+["16387"] = 22000,
+["4539"] = 180,
 ["17352"] = 500,
-["840"] = 853,
-["414"] = 25,
-["851"] = 2023,
-["8094"] = 27290,
-["20174"] = 42652,
-["8924"] = 90,
-["33151"] = 90000,
-["211392"] = 18000,
+["6368"] = 360,
+["3591"] = 1887,
+["16375"] = 2500,
+["44140"] = 1425000,
+["44234"] = 170000000,
+["20211"] = 50612,
+["838"] = 1128,
+["20160"] = 52306,
 ["3107"] = 0.34,
 ["35271"] = 475000,
-["216748"] = 18000,
+["20205"] = 32999,
 ["29131"] = 226120,
-["210818"] = 30000,
-["5565"] = 4500,
-["210410"] = 2000,
+["44244"] = 716502,
+["210825"] = 30000,
+["20161"] = 25955,
 ["20159"] = 89016,
-["20164"] = 7526,
-["219024"] = 29250,
+["12229"] = 4500,
+["25848"] = 100000,
 ["5956"] = 18,
 ["2027"] = 3815,
 ["3027"] = 6349,
 ["16342"] = 44154,
 ["221517"] = 16000,
-["216740"] = 18000,
+["2613"] = 546,
 ["44250"] = 601732,
 ["3108"] = 1,
-["223912"] = 2000,
-["223160"] = 9512,
-["226403"] = 27000,
+["17188"] = 2265,
+["2117"] = 36,
+["20209"] = 24842,
 ["29177"] = 790112,
-["216770"] = 18000,
-["213565"] = 5000,
-["8591"] = 9000,
+["33445"] = 2200,
+["20190"] = 71783,
+["2429"] = 10138,
 ["34675"] = 358950,
-["2119"] = 24,
+["226396"] = 45000,
 ["10920"] = 150,
 ["20193"] = 42492,
 ["211386"] = 18000,
-["211390"] = 18000,
-["20201"] = 13960,
-["220831"] = 42395,
-["226401"] = 4500,
-["2123"] = 48,
+["30830"] = 2254572,
+["2121"] = 50,
+["226394"] = 45000,
+["2889"] = 240,
+["3678"] = 400,
 ["16383"] = 20000,
-["38427"] = 1120,
+["8529"] = 700,
 ["29168"] = 158357,
-["216771"] = 18000,
+["8343"] = 2000,
 ["3594"] = 5497,
-["35221"] = 9500,
-["2379"] = 75,
-["5740"] = 100,
+["4594"] = 200,
+["2697"] = 400,
+["27700"] = 30000,
 ["35250"] = 475000,
-["19780"] = 40000,
-["3135"] = 0.34,
-["18427"] = 5950,
+["18447"] = 14235,
+["13332"] = 360000,
+["2372"] = 343,
 ["3372"] = 36,
 ["221482"] = 16000,
-["3423"] = 18000,
+["44080"] = 8000000,
 ["4608"] = 400,
 ["33149"] = 90000,
-["44248"] = 261832,
+["12239"] = 7000,
 ["4593"] = 100,
-["3593"] = 5477,
+["44194"] = 297513,
 ["2593"] = 150,
-["43955"] = 19000000,
-["1707"] = 200,
+["220830"] = 42395,
+["2595"] = 2000,
 ["2594"] = 1500,
 ["4595"] = 300,
 ["3595"] = 23,
 ["35699"] = 237500,
 ["8926"] = 500,
-["8501"] = 5000,
-["16385"] = 11000,
+["44617"] = 1900,
+["18846"] = 13500,
 }
 AUCTIONATOR_RECENT_SEARCHES = {
 "lesser wa",
@@ -21041,9 +21041,9 @@ AUCTIONATOR_RECENT_SEARCHES = {
 AUCTIONATOR_SELLING_GROUPS = {
 ["CustomGroups"] = {
 {
-["name"] = "FAVOURITES",
-["type"] = 1,
 ["hidden"] = false,
+["type"] = 1,
+["name"] = "FAVOURITES",
 ["list"] = {
 },
 },
