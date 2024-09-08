@@ -216,12 +216,6 @@ if addon.class == "DRUID" then
 				["aura"] = 768,
 			},
 		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 1.8000,
-			},
-		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
@@ -254,54 +248,6 @@ if addon.class == "DRUID" then
 				["set"] = 214,
 				["pieces"] = 3,
 				["value"] = 0.15,
-			},
-		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 0.9000,
-			},
-			-- Talent: Feline Swiftness (Cat Form)
-			{
-				["tab"] = 2,
-				["num"] = 6,
-				["rank"] = {
-					2, 4,
-				},
-				["aura"] = 768,
-			},
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 0.9000,
-			},
-			-- Talent: Sharpened Claws (Cat Form)
-			{
-				["tab"] = 2,
-				["num"] = 8,
-				["rank"] = {
-					2, 4, 6,
-				},
-				["aura"] = 768,
-			},
-			-- Talent: Sharpened Claws (Bear Form)
-			{
-				["tab"] = 2,
-				["num"] = 8,
-				["rank"] = {
-					2, 4, 6,
-				},
-				["aura"] = 5487,
-			},
-			-- Talent: Sharpened Claws (Dire Bear Form)
-			{
-				["tab"] = 2,
-				["num"] = 8,
-				["rank"] = {
-					2, 4, 6,
-				},
-				["aura"] = 9634,
 			},
 		},
 		["MOD_ARMOR"] = {
@@ -431,12 +377,6 @@ elseif addon.class == "HUNTER" then
 				["aura"] = 409507,
 			},
 		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 3.6000,
-			},
-		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
@@ -454,66 +394,6 @@ elseif addon.class == "HUNTER" then
 				["value"] = 0.10 * 5/3,
 				["aura"] = 415423,
 				["rune"] = true,
-			},
-		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 0.0000,
-			},
-			-- Buff: Aspect of the Monkey
-			{
-				["value"] = 8,
-				["aura"] = 13163,
-			},
-			-- Talent: Improved Aspect of the Monkey (Aspect of the Monkey)
-			{
-				["tab"] = 1,
-				["num"] = 4,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-				["aura"] = 13163,
-			},
-			-- Buff: Deterrence
-			{
-				["value"] = 25,
-				["aura"] = 19263,
-			},
-			-- Rune: Catlike Reflexes
-			{
-				["known"] = 415428,
-				["rune"] = true,
-				["value"] = 20,
-			}
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 0.0000,
-			},
-			-- Talent: Lethal Shots (SoD-only)
-			{
-				["tab"] = 2,
-				["num"] = 4,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-				["rune"] = true,
-			},
-			-- Talent: Killer Instinct
-			{
-				["tab"] = 3,
-				["num"] = 13,
-				["rank"] = {
-					1, 2, 3,
-				},
-			},
-			-- Rune: Master Marksman
-			{
-				["known"] = 409428,
-				["rune"] = true,
-				["value"] = 5,
 			},
 		},
 		-- Hunter: Survivalist (Rank 5) - 3,8
@@ -595,18 +475,6 @@ elseif addon.class == "MAGE" then
 				["value"] = 1,
 			},
 		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 3.2000,
-			},
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 3.2000,
-			},
-		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
@@ -685,30 +553,6 @@ elseif addon.class == "MAGE" then
 				},
 			},
 		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 0.2000,
-			},
-			-- Rune: Burnout
-			{
-				["known"] = 412286,
-				["rune"] = true,
-				["value"] = 15,
-			},
-			-- Buff: Scroll of Arcane Power I
-			{
-				["aura"] = 430952,
-				["value"] = 1,
-			},
-			-- Rune: Molten Armor
-			{
-				["known"] = 428741,
-				["rune"] = true,
-				["value"] = 5,
-				["aura"] = 428741,
-			}
-		},
 		["MOD_SPI"] = {
 			-- Rune: Balefire Bolt
 			{
@@ -726,23 +570,6 @@ elseif addon.class == "PALADIN" then
 			-- Base
 			{
 				["value"] = 2,
-			},
-		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 3.5000,
-			},
-			-- Buff: Sanctified Orb
-			{
-				["aura"] = 24865,
-				["value"] = 3,
-			},
-		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 0.7000,
 			},
 		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
@@ -769,25 +596,6 @@ elseif addon.class == "PALADIN" then
 			-- Base
 			{
 				["value"] = 0.05,
-			},
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 0.7000,
-			},
-			-- Talent: Conviction
-			{
-				["tab"] = 3,
-				["num"] = 7,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-			},
-			-- Buff: Sanctified Orb
-			{
-				["aura"] = 24865,
-				["value"] = 3,
 			},
 		},
 		["MOD_AP"] = {
@@ -896,18 +704,6 @@ elseif addon.class == "PRIEST" then
 				["value"] = 1,
 			},
 		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 3.0000,
-			},
-		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 0.8000,
-			},
-		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
@@ -943,6 +739,12 @@ elseif addon.class == "PRIEST" then
 				["pieces"] = 3,
 				["value"] = 0.15,
 			},
+			-- Set: Dawn of Transcendence (SoD)
+			{
+				["set"] = 1812,
+				["pieces"] = 2,
+				["value"] = 0.15,
+			},
 		},
 		-- Priest: Spiritual Guidance (Rank 5) - 2,14
 		--         Increases spell damage and healing by up to 5%/10%/15%/20%/25% of your total Spirit.
@@ -964,17 +766,6 @@ elseif addon.class == "PRIEST" then
 				["rank"] = {
 					0.05, 0.1, 0.15, 0.2, 0.25,
 				},
-			},
-		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 3.0000,
-			},
-			-- Buff: Elune's Grace (Night Elf Priest Racial)
-			{
-				["value"] = 10,
-				["aura"] = 2651,
 			},
 		},
 		-- Priest: Mental Strength (Rank 5) - 1,12
@@ -1031,47 +822,22 @@ elseif addon.class == "ROGUE" then
 			{
 				["known"] = 400016,
 				["rune"] = true,
-				["value"] = 0.30,
+				["stack"] = 0.06,
+				["max_stacks"] = 5,
 				["aura"] = 400015,
 			},
 		},
-		["ADD_DODGE"] = {
-			-- Base
+		["MOD_ARMOR"] = {
+			-- Set: Bloodfang Battlearmor (Rolling with the Punches)
 			{
-				["value"] = 0.0000,
-			},
-			-- Talent: Lightning Reflexes
-			{
-				["tab"] = 2,
-				["num"] = 3,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-			},
-			-- Buff: Evasion
-			{
-				["value"] = 50,
-				["aura"] = 5277,
-			},
-			-- Buff: Ghostly Strike
-			{
-				["value"] = 15,
-				["aura"] = 14278,
+				["known"] = 400016,
+				["rune"] = true,
+				["stack"] = 0.20,
+				["max_stacks"] = 5,
+				["aura"] = 400015,
 			},
 		},
 		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 0.0000,
-			},
-			-- Talent: Malice
-			{
-				["tab"] = 1,
-				["num"] = 3,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-			},
 			-- Talent: Dagger Specialization
 			{
 				["tab"] = 2,
@@ -1092,6 +858,15 @@ elseif addon.class == "ROGUE" then
 				},
 				["weapon"] = {
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
+				},
+			},
+			-- Set: Madcap's Outfit (SoD)
+			{
+				["set"] = 1829,
+				["pieces"] = 3,
+				["value"] = 5,
+				["weapon"] = {
+					[Enum.ItemWeaponSubclass.Dagger] = true,
 				},
 			},
 		},
@@ -1139,12 +914,6 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 2,
 			},
 		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 2.3000,
-			},
-		},
 		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
@@ -1170,41 +939,15 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 0.05,
 			},
 		},
-		["ADD_DODGE"] = {
-			-- Base
+		["ADD_BLOCK_VALUE_MOD_SPELL_DMG"] = {
+			-- Set: Resolve of the Ten Storms (Elemental Shield) (SoD)
 			{
-				["value"] = 1.7000,
-			},
-			-- Talent: Anticipation
-			{
-				["tab"] = 2,
-				["num"] = 9,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
-			},
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 1.7000,
-			},
-			-- Talent: Elemental Devastation
-			{
-				["tab"] = 1,
-				["num"] = 11,
-				["aura"] = 30165,
-				["rank"] = {
-					3, 6, 9,
-				},
-			},
-			-- Talent: Thundering Strikes
-			{
-				["tab"] = 2,
-				["num"] = 4,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				},
+				["set"] = 1819,
+				["pieces"] = 4,
+				["stack"] = 0.10,
+				["max_stacks"] = 3,
+				["aura"] = 467910,
+				["rune"] = true,
 			},
 		},
 		["MOD_AP"] = {
@@ -1239,8 +982,7 @@ elseif addon.class == "SHAMAN" then
 			},
 		},
 		["MOD_BLOCK_VALUE"] = {
-			-- Shaman: Shield Specialization 5/5 - 2,2
-			--         Increases your chance to block attacks with a shield by 5% and increases the amount blocked by 5%/10%/15%/20%/25%.
+			-- Talent: Shield Specialization
 			{
 				["tab"] = 2,
 				["num"] = 2,
@@ -1248,8 +990,7 @@ elseif addon.class == "SHAMAN" then
 					0.05, 0.1, 0.15, 0.2, 0.25,
 				},
 			},
-			-- Shaman: Shield Mastery - Rune
-			--   You also always gain 10% increased chance to Block and 15% increased Block value.
+			-- Rune: Shield Mastery
 			{
 				["known"] = 408524,
 				["rune"] = true,
@@ -1352,44 +1093,6 @@ elseif addon.class == "WARLOCK" then
 				},
 			},
 		},
-		["ADD_SPELL_CRIT"] = {
-			-- Base
-			{
-				["value"] = 1.7000,
-			},
-			-- Rune: Demonic Tactics
-			{
-				["known"] = 412727,
-				["rune"] = true,
-				["value"] = 10,
-			},
-			-- Rune: Demonic Grace
-			{
-				["known"] = 425463,
-				["rune"] = true,
-				["value"] = 30,
-				["aura"] = 425463,
-			},
-		},
-		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 2.0000,
-			},
-			-- Rune: Demonic Tactics
-			{
-				["known"] = 412727,
-				["rune"] = true,
-				["value"] = 10,
-			},
-			-- Rune: Demonic Grace
-			{
-				["known"] = 425463,
-				["rune"] = true,
-				["value"] = 30,
-				["aura"] = 425463,
-			},
-		},
 		["MOD_ARMOR"] = {
 			-- Warlock: Metamorphosis - Rune
 			--   Transform into a Demon, increasing Armor by 500%
@@ -1399,26 +1102,6 @@ elseif addon.class == "WARLOCK" then
 				["value"] = 5.0,
 				["aura"] = 403789,
 			},
-		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 2.0000,
-			},
-			-- Rune: Demonic Grace
-			{
-				["known"] = 425463,
-				["rune"] = true,
-				["value"] = 30,
-				["aura"] = 425463,
-			},
-			-- Rune: Dance of the Wicked
-			{
-				["known"] = 412798,
-				["rune"] = true,
-				["aura"] = 412800,
-				["tooltip"] = true,
-			}
 		},
 		["ADD_DODGE_MOD_SPELL_CRIT"] = {
 			-- Rune: Dance of the Wicked
@@ -1529,12 +1212,6 @@ elseif addon.class == "WARRIOR" then
 				["value"] = 1,
 			},
 		},
-		["ADD_DODGE"] = {
-			-- Base
-			{
-				["value"] = 0.0000,
-			},
-		},
 		["ADD_NORMAL_HEALTH_REG_MOD_SPI"] = {
 			-- Base
 			{
@@ -1570,18 +1247,6 @@ elseif addon.class == "WARRIOR" then
 			}
 		},
 		[StatLogic.Stats.MeleeCrit] = {
-			-- Base
-			{
-				["value"] = 0.0000,
-			},
-			-- Talent: Cruelty
-			{
-				["tab"] = 2,
-				["num"] = 2,
-				["rank"] = {
-					1, 2, 3, 4, 5,
-				}
-			},
 			-- Talent: Axe Specialization
 			{
 				["tab"] = 1,
@@ -1604,16 +1269,6 @@ elseif addon.class == "WARRIOR" then
 				["weapon"] = {
 					[Enum.ItemWeaponSubclass.Polearm] = true,
 				},
-			},
-			-- Berserker Stance
-			{
-				["stance"] = "Interface\\Icons\\Ability_Racial_Avatar",
-				["value"] = 3,
-			},
-			-- Buff: Recklessness
-			{
-				["aura"] = 17538,
-				["value"] = 50,
 			},
 		},
 		["MOD_HEALTH"] = {
@@ -1655,16 +1310,6 @@ if addon.playerRace == "Dwarf" then
 				},
 				["group"] = addon.ExclusiveGroup.WeaponRacial,
 			}
-		},
-	}
-elseif addon.playerRace == "NightElf" then
-	StatLogic.StatModTable["NightElf"] = {
-		-- Night Elf : Quickness - Racial
-		--             Dodge chance increased by 1%.
-		["ADD_DODGE"] = {
-			{
-				["value"] = 1,
-			},
 		},
 	}
 elseif addon.playerRace == "Tauren" then
@@ -1970,128 +1615,6 @@ StatLogic.StatModTable["ALL"] = {
 			["value"] = 0.15,
 		},
 	},
-	[StatLogic.Stats.MeleeCrit] = {
-		-- Buff: Leader of the Pack
-		{
-			["aura"] = 24932,
-			["value"] = 3,
-		},
-		-- Buff: Rallying Cry of the Dragonslayer
-		{
-			["aura"] = 22888,
-			["value"] = 5,
-		},
-		-- Buff: Songflower Serenade
-		{
-			["aura"] = 15366,
-			["value"] = 5,
-		},
-		-- Buff: Fire Festival Fury
-		{
-			["aura"] = 29338,
-			["value"] = 3,
-		},
-		-- Buff: Elixir of the Mongoose
-		{
-			["aura"] = 17538,
-			["value"] = 2,
-		},
-		-- Buff: Boon of Blackfathom
-		{
-			["aura"] = 430947,
-			["value"] = 2,
-		},
-		-- Buff: Fervor of the Temple Explorer
-		{
-			["aura"] = 446695,
-			["rune"] = true,
-			["value"] = 5,
-		},
-		-- Set: Blood Tiger Harness
-		{
-			["set"] = 442,
-			["pieces"] = 2,
-			["value"] = 1,
-		},
-		-- Set: The Gladiator
-		{
-			["set"] = 1,
-			["pieces"] = 5,
-			["value"] = 1,
-		},
-		-- Set: The Defiler's Purpose
-		{
-			["set"] = 486,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Highlander's Purpose
-		{
-			["set"] = 471,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Defiler's Fortitude
-		{
-			["set"] = 484,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Defiler's Determination
-		{
-			["set"] = 483,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Highlander's Determination
-		{
-			["set"] = 469,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Defiler's Resolution
-		{
-			["set"] = 487,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Highlander's Resolution
-		{
-			["set"] = 467,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: The Highlander's Resolve
-		{
-			["set"] = 468,
-			["pieces"] = 3,
-			["value"] = 1,
-		},
-		-- Set: Lawbringer Armor
-		{
-			["set"] = 208,
-			["pieces"] = 5,
-			["value"] = 1,
-		},
-		-- Set: Black Dragon Mail
-		{
-			["set"] = 489,
-			["pieces"] = 3,
-			["value"] = 2,
-		},
-		-- Set: Irradiated Garments
-		{
-			["set"] = 1584,
-			["pieces"] = 2,
-			["value"] = 1,
-		},
-		-- Set: Insulated Leathers
-		{
-			["set"] = 1585,
-			["pieces"] = 2,
-			["value"] = 1,
-		},
-	},
 	[StatLogic.Stats.WeaponSkill] = {
 		-- Rune: Sword Specialization
 		{
@@ -2162,52 +1685,6 @@ StatLogic.StatModTable["ALL"] = {
 				[Enum.ItemWeaponSubclass.Polearm] = true,
 			},
 			["group"] = addon.ExclusiveGroup.WeaponRacial,
-		},
-	},
-	["ADD_SPELL_CRIT"] = {
-		-- Buff: Moonkin Aura
-		{
-			["aura"] = 24907,
-			["value"] = 3,
-		},
-		-- Buff: Rallying Cry of the Dragonslayer
-		{
-			["aura"] = 22888,
-			["value"] = 10,
-		},
-		-- Buff: Songflower Serenade
-		{
-			["aura"] = 15366,
-			["value"] = 5,
-		},
-		-- Buff: Slip'kik's Savvy
-		{
-			["aura"] = 22820,
-			["value"] = 3,
-		},
-		-- Buff: Fire Festival Fury
-		{
-			["aura"] = 29338,
-			["value"] = 3,
-		},
-		-- Buff: Spark of Inspiration
-		{
-			["aura"] = 438536,
-			["value"] = 4,
-		},
-		-- Buff: Fervor of the Temple Explorer
-		{
-			["aura"] = 446695,
-			["rune"] = true,
-			["value"] = 5,
-		},
-	},
-	["ADD_DODGE"] = {
-		-- Set: Overlord's Resolution
-		{
-			["set"] = 464,
-			["pieces"] = 2,
-			["value"] = 1,
 		},
 	},
 	["ADD_BLOCK_CHANCE_MOD_DEFENSE"] = {

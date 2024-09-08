@@ -1,10 +1,10 @@
 # RatingBuster
 
-## [1.18.2](https://github.com/raethkcj/RatingBuster/tree/1.18.2) (2024-08-25)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.18.1...1.18.2) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.18.3](https://github.com/raethkcj/RatingBuster/tree/1.18.3) (2024-09-08)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.18.2...1.18.3) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Breakdown substituted gems  
-- Fix Cata meta gem matches  
-- Prevent incorrect breakdowns on color sequences  
-- Pass stat mod contexts to ReforgingFrame (Fixes #187)  
-- Add final vanilla int conversion  
+- Add SoD Tier 2 set bonuses  
+- Fix SoD AP from Defense bug  
+- Bump tocs  
+- Remove unneeded vanilla crit/dodge stat mods  
+- Fix bonus armor color matching  

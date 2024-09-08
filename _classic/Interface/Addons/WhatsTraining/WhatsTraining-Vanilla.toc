@@ -1,6 +1,6 @@
-## Interface: 11502
+## Interface: 11503
 ## Title: What's Training?
-## Version: 6.0.1
+## Version: 6.0.2
 ## Author: Sveng
 ## Notes: Shows you what spells are available at your class trainer
 ## SavedVariables: WT_ShowIgnoreNotice, WT_ShowLearnedNotice
