@@ -1,3 +1,11 @@
+VER 3 0000000001000002 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Power Word: Shield
+END
+VER 3 0000000001000004 " " "134400"
+#showtooltip Shoot
+/cast !Shoot
+END
 VER 3 0000000001000001 " " "134400"
 #showtooltip
 /petattack
@@ -8,12 +16,4 @@ VER 3 0000000001000005 " " "134400"
 #showtooltip
 /startattack
 /cast Shadow Bolt
-END
-VER 3 0000000001000002 " " "134400"
-#showtooltip
-/cast [@mouseover,exists,help][] Power Word: Shield
-END
-VER 3 0000000001000004 " " "134400"
-#showtooltip Shoot
-/cast !Shoot
 END
