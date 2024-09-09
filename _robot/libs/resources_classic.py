@@ -118,7 +118,8 @@ data = {
         "main": [
             {"name": "trueshot aura", "type": "GetSpellTexture", "id": 19506, "key": "1", "modifier": "lalt"},
             {"name": "hunter's mark", "type": "GetSpellTexture", "id": 1130, "key": "3", "modifier": "lalt"},
-            {"name": "mongoose bite", "type": "GetSpellTexture", "id": 1495, "key": "5", "modifier": "lalt"},
+            # {"name": "mongoose bite", "type": "GetSpellTexture", "id": 1495, "key": "5", "modifier": "lalt"},
+            {"name": "mongoose bite", "type": "GetSpellTexture", "id": 1495, "key": "9"},
             {"name": "intimidation", "type": "GetSpellTexture", "id": 19577, "key": "t", "modifier": "lshift"},
             {"name": "auto shot", "type": "GetSpellTexture", "id": 6660, "key": "8"},
             {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "3"},
@@ -132,7 +133,7 @@ data = {
             {"name": "raptor strike", "type": "GetSpellTexture", "id": 2973, "key": "6"},
             {"name": "explosive shot", "type": "GetSpellTexture", "id": 409552, "key": "9"},
             {"name": "chimera shot", "type": "GetSpellTexture", "id": 409433, "key": "9"},
-            {"name": "carve", "type": "GetSpellTexture", "id": 425711, "key": "9"},
+            # {"name": "carve", "type": "GetSpellTexture", "id": 425711, "key": "9"},
             {"name": "flanking strike", "type": "GetSpellTexture", "id": 415320, "key": "k"},
             {"name": "kill command", "type": "GetSpellTexture", "id": 409379, "key": "k"},
             {"name": "bestial wrath", "type": "GetSpellTexture", "id": 19574, "key": "5"},

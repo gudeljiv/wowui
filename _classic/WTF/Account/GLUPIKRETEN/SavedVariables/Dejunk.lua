@@ -16,11 +16,11 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["exclusions"] = {
 },
 ["excludeEquipmentSets"] = false,
-["autoJunkFrame"] = false,
-["includePoorItems"] = true,
-["merchantButton"] = true,
-["excludeUnboundEquipment"] = false,
 ["includeBelowItemLevel"] = {
 ["value"] = 10,
 },
+["includePoorItems"] = true,
+["excludeUnboundEquipment"] = false,
+["merchantButton"] = true,
+["autoJunkFrame"] = false,
 }

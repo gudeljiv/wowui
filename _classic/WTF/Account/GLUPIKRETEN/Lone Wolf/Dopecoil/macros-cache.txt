@@ -1,8 +1,3 @@
-VER 3 0000000001000005 " " "134400"
-#showtooltip
-/startattack
-/cast Flame Shock
-END
 VER 3 0000000001000006 " " "134400"
 #showtooltip
 /cast [@mouseover,help,exists][]Lesser Healing Wave
@@ -24,6 +19,11 @@ END
 VER 3 0000000001000004 " " "134400"
 #showtooltip
 /cast [@mouseover,help,exists][]Cure Toxins
+END
+VER 3 0000000001000005 " " "134400"
+#showtooltip
+/startattack
+/cast Flame Shock
 END
 VER 3 0000000001000007 "TT Cast" "INV_MISC_QUESTIONMARK"
 #showtooltips
