@@ -42,6 +42,7 @@ TomTomDB = {
 ["Provokator - Jin'do"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
+["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
@@ -147,6 +148,7 @@ TomTomWaypointsM = {
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
+["Moolatz - Celebras"] = "Moolatz - Celebras",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
@@ -256,6 +258,8 @@ TomTomWaypointsM = {
 ["Dopebolt - Lone Wolf"] = {
 },
 ["Moolatz - Dreadnaught"] = {
+},
+["Moolatz - Celebras"] = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
 },

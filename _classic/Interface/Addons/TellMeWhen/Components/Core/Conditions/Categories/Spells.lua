@@ -35,7 +35,12 @@ local bit_band = bit.band
 local COMBATLOG_OBJECT_TYPE_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
 
 local GetSpellCooldown = TMW.COMMON.Cooldowns.GetSpellCooldown
+local GetSpellCharges = TMW.COMMON.Cooldowns.GetSpellCharges
+local GetSpellCastCount = TMW.COMMON.Cooldowns.GetSpellCastCount
 Env.GetSpellCooldown = GetSpellCooldown
+Env.GetSpellCharges = GetSpellCharges
+Env.GetSpellCastCount = GetSpellCastCount
+
 local GetSpellName = TMW.GetSpellName
 local GetSpellInfo = TMW.GetSpellInfo
 
@@ -45,22 +50,24 @@ function Env.CooldownDuration(spell, gcdAsUnusable)
 	if spell == "gcd" then
 		local cooldown = GetSpellCooldown(TMW.GCDSpell)
 		local duration = cooldown.duration
-		return duration == 0 and 0 or (duration - (TMW.time - cooldown.startTime))
+		return duration == 0 and 0 or ((duration - (TMW.time - cooldown.startTime)) / cooldown.modRate)
 	end
 
 	local cooldown = GetSpellCooldown(spell)
 	if cooldown then
 		local duration = cooldown.duration
-		return ((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or (duration - (TMW.time - cooldown.startTime))
+		return 
+			((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or 
+			((duration - (TMW.time - cooldown.startTime)) / cooldown.modRate)
 	end
 	return 0
 end
 
-local GetSpellCharges = TMW.GetSpellCharges
 function Env.RechargeDuration(spell)
-	local charges, maxCharges, start, duration = GetSpellCharges(spell)
-	if charges and charges ~= maxCharges then
-		return (duration == 0 and 0) or (duration - (TMW.time - start))
+	local charges = GetSpellCharges(spell)
+	if charges and charges.currentCharges ~= charges.maxCharges then
+		local duration = charges.cooldownDuration
+		return (duration == 0 and 0) or ((duration - (TMW.time - charges.cooldownStartTime)) / charges.chargeModRate)
 	end
 	return 0
 end
@@ -108,7 +115,7 @@ ConditionCategory:RegisterCondition(1,	 "SPELLCD", {
 	anticipate = function(c)
 		local str = [[
 			local cooldown = GetSpellCooldown(c.OwnSpells.First)
-			local VALUE = cooldown and cooldown.startTime + (cooldown.duration - c.Level) or huge
+			local VALUE = cooldown and cooldown.startTime + (cooldown.duration - (c.Level*cooldown.modRate)) or huge
 		]]
 		if TMW:GetSpells(c.Name).First == "gcd" then
 			str = str:gsub("c.OwnSpells.First", TMW.GCDSpell)
@@ -184,13 +191,17 @@ if TMW.isRetail then
 		icon = "Interface\\Icons\\ability_monk_roll",
 		tcoords = CNDT.COMMON.standardtcoords,
 		Env = {
-			GetSpellCharges = TMW.GetSpellCharges,
-			GetSpellCount = C_Spell.GetSpellCastCount or _G.GetSpellCount
+			GetSpellChargesOrCount = function(spell)
+				local charges = GetSpellCharges(spell)
+				if charges then return charges.currentCharges end
+				return GetSpellCastCount(spell)
+			end,
 		},
-		funcstr = [[(GetSpellCharges(c.OwnSpells.First) or GetSpellCount(c.OwnSpells.First)) c.Operator c.Level]],
+		funcstr = [[(GetSpellChargesOrCount(c.OwnSpells.First)) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
-				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_CHARGES")
+				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_CHARGES"),
+				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_COUNT")
 		end,	
 	})
 	ConditionCategory:RegisterCondition(2.6, "SPELLCHARGETIME", {
@@ -213,17 +224,14 @@ if TMW.isRetail then
 		end),
 		icon = "Interface\\Icons\\ability_warlock_handofguldan",
 		tcoords = CNDT.COMMON.standardtcoords,
-		Env = {
-			GetSpellCharges = TMW.GetSpellCharges,
-		},
 		funcstr = [[RechargeDuration(c.OwnSpells.First) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
 				ConditionObject:GenerateNormalEventString("TMW_SPELL_UPDATE_CHARGES")
 		end,
 		anticipate = [[
-			local _, _, start, duration = GetSpellCharges(c.OwnSpells.First)
-			local VALUE = duration and start + (duration - c.Level) or huge
+			local data = GetSpellCharges(c.OwnSpells.First)
+			local VALUE = data and data.cooldownDuration and data.cooldownStartTime + (data.cooldownDuration - (c.Level*data.chargeModRate)) or huge
 		]],
 	})
 end
@@ -313,6 +321,7 @@ end
 
 ConditionCategory:RegisterCondition(2.95, "SPELL_LEARNED", {
 	text = L["SPELL_LEARNED"],
+	tooltip = L["SPELL_LEARNED_DESC"],
 
 	bool = true,
 	
@@ -336,6 +345,42 @@ ConditionCategory:RegisterCondition(2.95, "SPELL_LEARNED", {
 			ConditionObject:GenerateNormalEventString("SPELLS_CHANGED")
 	end,
 })
+
+if C_Spell.GetOverrideSpell then
+ConditionCategory:RegisterCondition(2.97, "SPELL_OVERRIDE", {
+	text = L["SPELL_OVERRIDE"],
+	tooltip = L["SPELL_OVERRIDE_DESC"],
+
+	bool = true,
+	
+	name = function(editbox)
+		editbox:SetTexts(L["SPELL_OVERRIDE_BASE"], L["CNDT_ONLYFIRST"])
+	end,
+	name2 = function(editbox)
+		editbox:SetTexts(L["SPELL_OVERRIDE_TARGET"], L["CNDT_ONLYFIRST"])
+	end,
+	useSUG = true,
+	unit = false,
+	formatter = TMW.C.Formatter.BOOL,
+	icon = 1112939,
+	tcoords = CNDT.COMMON.standardtcoords,
+	Env = {
+		GetOverrideSpell = C_Spell.GetOverrideSpell,
+		GetSpellName = TMW.GetSpellName
+	},
+	funcstr = function(c)
+		if isNumber[c.Name2] then
+			return [[BOOLCHECK( GetOverrideSpell(c.Spells.First) == c.Spells2.First )]]
+		else
+			return [[BOOLCHECK( strlowerCache[GetSpellName(GetOverrideSpell(c.Spells.First) or "")] == c.Spells2.First )]]
+		end
+	end,
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GenerateNormalEventString("SPELLS_CHANGED")
+	end,
+})
+end
 
 ConditionCategory:RegisterCondition(3,	 "REACTIVE", {
 	text = L["SPELLREACTIVITY"],

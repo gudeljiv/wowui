@@ -10,6 +10,7 @@ RatingBusterDB = {
 },
 ["profileKeys"] = {
 ["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Moolatz - Celebras"] = "Druid",
 ["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
 ["Vbank - Celebras"] = "WARRIOR",
 ["Dopetrap - Lone Wolf"] = "HUNTER",
@@ -23,9 +24,9 @@ RatingBusterDB = {
 ["Battitude - Zandalar Tribe"] = "ROGUE",
 ["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Dopesnare - Stitches"] = "HUNTER",
+["Dopedot - Lone Wolf"] = "WARLOCK",
 ["Vermin - Celebras"] = "WARRIOR",
 ["Turbonac - Celebras"] = "Warlock",
-["Dopedot - Lone Wolf"] = "WARLOCK",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopesick - Stitches"] = "WARRIOR",
 ["Dopecoil - Lone Wolf"] = "SHAMAN",
@@ -43,17 +44,19 @@ RatingBusterDB = {
 },
 ["WARRIOR"] = {
 },
-["WARLOCK"] = {
-},
-["SHAMAN"] = {
-},
-["Warlock"] = {
-},
-["DRUID"] = {
-},
 ["ROGUE"] = {
 },
 ["PRIEST"] = {
+},
+["Warlock"] = {
+},
+["WARLOCK"] = {
+},
+["DRUID"] = {
+},
+["Druid"] = {
+},
+["SHAMAN"] = {
 },
 },
 }

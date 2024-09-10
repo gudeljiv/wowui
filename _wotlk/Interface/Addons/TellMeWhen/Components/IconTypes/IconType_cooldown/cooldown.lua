@@ -28,7 +28,7 @@ local spellTextureCache = TMW.spellTextureCache
 local IsUsableSpell = TMW.COMMON.SpellUsable.IsUsableSpell
 local GetSpellCharges = TMW.COMMON.Cooldowns.GetSpellCharges
 local GetSpellCooldown = TMW.COMMON.Cooldowns.GetSpellCooldown
-local GetSpellCount = C_Spell.GetSpellCastCount or _G.GetSpellCount
+local GetSpellCastCount = TMW.COMMON.Cooldowns.GetSpellCastCount
 local GetRuneCooldownDuration = TMW.GetRuneCooldownDuration
 
 local _, pclass = UnitClass("Player")
@@ -208,7 +208,7 @@ local function SpellCooldown_OnUpdate(icon, time)
 		
 		local cooldown = GetSpellCooldown(iName)
 		local charges = GetSpellCharges(iName)
-		local stack = charges and charges.currentCharges or GetSpellCount(iName)
+		local stack = charges and charges.currentCharges or GetSpellCastCount(iName)
 
 		
 		if cooldown then
@@ -292,12 +292,14 @@ local function SpellCooldown_OnUpdate(icon, time)
 	end
 	
 	if dataToUse then
+		local cooldown = dataToUse.cooldown
+		local charges = dataToUse.charges
 		icon:SetInfo(
-			"state; texture; start, duration; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
+			"state; texture; start, duration, modRate; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
 			dataToUse.state,
 			spellTextureCache[dataToUse.iName],
-			dataToUse.cooldown.startTime, dataToUse.cooldown.duration,
-			dataToUse.charges.currentCharges, dataToUse.charges.maxCharges, dataToUse.charges.cooldownStartTime, dataToUse.charges.cooldownDuration,
+			cooldown.startTime, cooldown.duration, cooldown.modRate,
+			charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration,
 			dataToUse.stack, dataToUse.stack,
 			dataToUse.iName
 		)

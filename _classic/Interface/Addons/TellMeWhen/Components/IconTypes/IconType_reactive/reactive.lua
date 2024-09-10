@@ -23,8 +23,8 @@ local GetSpellName = TMW.GetSpellName
 local GetSpellTexture = TMW.GetSpellTexture
 local GetSpellCharges = TMW.COMMON.Cooldowns.GetSpellCharges
 local GetSpellCooldown = TMW.COMMON.Cooldowns.GetSpellCooldown
+local GetSpellCastCount = TMW.COMMON.Cooldowns.GetSpellCastCount
 local IsUsableSpell = TMW.COMMON.SpellUsable.IsUsableSpell
-local GetSpellCount = C_Spell.GetSpellCastCount or _G.GetSpellCount
 
 local spellTextureCache = TMW.spellTextureCache
 local strlowerCache = TMW.strlowerCache
@@ -190,7 +190,7 @@ local function Reactive_OnUpdate(icon, time)
 
 		cooldown = GetSpellCooldown(iName)
 		charges = GetSpellCharges(iName) or emptyTable
-		stack = charges and charges.currentCharges or GetSpellCount(iName)
+		stack = charges and charges.currentCharges or GetSpellCastCount(iName)
 		
 		if cooldown then
 			local duration = cooldown.duration
@@ -231,10 +231,10 @@ local function Reactive_OnUpdate(icon, time)
 				usable = activationOverlayActive or usable
 			end
 			if usable and not CD and not noMana and inrange then --usable
-				icon:SetInfo("state; texture; start, duration; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
+				icon:SetInfo("state; texture; start, duration, modRate; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
 					STATE_USABLE,
 					spellTextureCache[iName],
-					cooldown.startTime, cooldown.duration,
+					cooldown.startTime, cooldown.duration, cooldown.modRate,
 					charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration,
 					stack, stack,
 					iName		
@@ -252,7 +252,7 @@ local function Reactive_OnUpdate(icon, time)
 
 		cooldown = GetSpellCooldown(NameFirst)
 		charges = GetSpellCharges(NameFirst) or emptyTable
-		stack = charges and charges.currentCharges or GetSpellCount(NameFirst)
+		stack = charges and charges.currentCharges or GetSpellCastCount(NameFirst)
 
 		if IgnoreRunes and (cooldown and cooldown.duration) == runeCD and NameFirst ~= mindfreeze and NameFirst ~= 47528 then
 			-- DK abilities that are on cooldown because of runes are always reported

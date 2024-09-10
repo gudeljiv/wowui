@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20240826034414"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20240908033743"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -103,7 +103,7 @@ DogTag:AddTag("Unit", "SimpleName", {
 	arg = {
 		'unit', 'string;undef', 'player'
 	},
-	ret = "string",
+	ret = "string;nil",
 	events = "UNIT_NAME_UPDATE#$unit",
 	doc = L["Return the name of unit"],
 	example = ('[SimpleName] => %q'):format(UnitName("player")),

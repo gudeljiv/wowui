@@ -16,7 +16,7 @@ GMMONEY = {
 },
 ["Lone Wolf"] = {
 ["Dopetrap"] = {
-["GOLD"] = 121732,
+["GOLD"] = 162966,
 ["CLASS"] = "HUNTER",
 },
 ["Dopeclaw"] = {
@@ -150,15 +150,19 @@ GMMONEY = {
 ["CLASS"] = "PRIEST",
 },
 ["Mq"] = {
-["GOLD"] = 58085,
+["GOLD"] = 44605,
 ["CLASS"] = "HUNTER",
+},
+["Moolatz"] = {
+["GOLD"] = 0,
+["CLASS"] = "DRUID",
 },
 ["Turbonac"] = {
 ["GOLD"] = 9939,
 ["CLASS"] = "WARLOCK",
 },
 ["Vbank"] = {
-["GOLD"] = 10901,
+["GOLD"] = 1001,
 ["CLASS"] = "WARRIOR",
 },
 ["Vermin"] = {

@@ -1,6 +1,6 @@
 
-## v11.0.7
-* Fix: #2217 error in item cooldown conditions
+## v11.0.9
+* Fix various Lua errors.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/0c836040ee7e730884835b6deef957de60856d02/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/e2ff3d9a1621ae20b2fed27a4f5edb91decf9e7c/CHANGELOG.md)

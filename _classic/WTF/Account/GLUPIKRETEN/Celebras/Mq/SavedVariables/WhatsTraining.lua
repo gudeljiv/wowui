@@ -7,12 +7,20 @@ WT_LearnedPetAbilities = {
 ["Charge"] = {
 ["Rank 1"] = true,
 },
+["Natural Armor"] = {
+["Rank 3"] = true,
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
 ["Great Stamina"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Natural Armor"] = {
+["Screech"] = {
+["Rank 1"] = true,
+},
+["Bite"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
@@ -21,14 +29,6 @@ WT_LearnedPetAbilities = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
-},
-["Bite"] = {
-["Rank 3"] = true,
-["Rank 1"] = true,
-["Rank 2"] = true,
-},
-["Screech"] = {
-["Rank 1"] = true,
 },
 }
 WT_NeedsToOpenBeastTraining = false

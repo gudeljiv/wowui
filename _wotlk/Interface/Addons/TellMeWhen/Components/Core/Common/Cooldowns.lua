@@ -18,8 +18,8 @@ local L = TMW.L
 local print = TMW.print
 local strlowerCache = TMW.strlowerCache
 
-local select, wipe, setmetatable 
-    = select, wipe, setmetatable
+local select, wipe, next, setmetatable 
+    = select, wipe, next, setmetatable
 
 TMW.COMMON.Cooldowns = CreateFrame("Frame")
 local Cooldowns = TMW.COMMON.Cooldowns
@@ -27,6 +27,7 @@ local Cooldowns = TMW.COMMON.Cooldowns
 local emptyCooldown = {}
 local CachedCooldowns = {}
 local CachedCharges = {}
+local CachedCounts = {}
 
 if C_Spell.GetSpellCooldown then
 	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown
@@ -98,11 +99,41 @@ else
             maxCharges = maxCharges,
             cooldownStartTime = cooldownStartTime,
             cooldownDuration = cooldownDuration,
+            chargeModRate = 1
         } or false
         CachedCharges[spell] = cached
         return cached
     end
 end
+
+
+
+
+if C_Spell.GetSpellCastCount then
+	local C_Spell_GetSpellCastCount = C_Spell.GetSpellCastCount
+
+    function Cooldowns.GetSpellCastCount(spell)
+        local cached = CachedCounts[spell]
+        if cached then return cached ~= false and cached or nil end
+
+        cached = C_Spell_GetSpellCastCount(spell) or false
+        CachedCounts[spell] = cached
+        return cached
+    end
+else
+    local GetSpellCount = _G.GetSpellCount
+
+    function Cooldowns.GetSpellCastCount(spell)
+        local cached = CachedCounts[spell]
+        if cached then return cached ~= false and cached or nil end
+        
+        local count = GetSpellCount(spell)
+        cached = count or false
+        CachedCounts[spell] = cached
+        return cached
+    end
+end
+
 
 
 ---------------------------------
@@ -112,12 +143,9 @@ end
 -- Rogue's Backstab. We don't need class spells anymore - any GCD spell works fine.
 local GCDSpell = 53
 TMW.GCDSpell = GCDSpell
-local GCD
+local Cooldowns_GetSpellCooldown = Cooldowns.GetSpellCooldown
 function TMW.GetGCD()
-	if not GCD then
-		GCD = Cooldowns.GetSpellCooldown(GCDSpell).duration
-	end
-	return GCD
+	return Cooldowns_GetSpellCooldown(GCDSpell).duration
 end
 local GetGCD = TMW.GetGCD
 
@@ -131,9 +159,8 @@ function TMW.OnGCD(d)
 		-- A cd of 1 (or less) is always a GCD (or at least isn't worth showing)
 		return true
 	else
-		-- If the duration passed in is the same as the GCD spell,
-		-- and the duration isnt zero, then it is a GCD
-		return GetGCD() == d and d > 0 
+		-- If the duration passed in is the same as the GCD spell then it is a GCD
+		return GetGCD() == d
 	end
 end
 
@@ -143,7 +170,13 @@ Cooldowns:RegisterEvent("SPELL_UPDATE_CHARGES")
 Cooldowns:SetScript("OnEvent", function(self, event, action, inRange, checksRange)
     if event == "SPELL_UPDATE_COOLDOWN" then
         wipe(CachedCooldowns)
-        GCD = nil
+
+        if next(CachedCounts) then
+            -- There's not a great event for GetSpellCastCount. Cooldown is the closest we can get.
+            wipe(CachedCounts)
+            TMW:Fire("TMW_SPELL_UPDATE_COUNT")
+        end
+
         TMW:Fire("TMW_SPELL_UPDATE_COOLDOWN")
 
     elseif event == "SPELL_UPDATE_CHARGES" then
@@ -154,7 +187,9 @@ Cooldowns:SetScript("OnEvent", function(self, event, action, inRange, checksRang
         -- Spells may have been learned/unlearned (e.g. pvp talents activating/deactivating)
         wipe(CachedCooldowns)
         wipe(CachedCharges)
+        wipe(CachedCounts)
         TMW:Fire("TMW_SPELL_UPDATE_COOLDOWN")
         TMW:Fire("TMW_SPELL_UPDATE_CHARGES")
+        TMW:Fire("TMW_SPELL_UPDATE_COUNT")
     end
 end)

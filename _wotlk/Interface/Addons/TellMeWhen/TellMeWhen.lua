@@ -24,7 +24,7 @@ local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "11.0.7" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "11.0.9" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -437,14 +437,8 @@ local avengingWrathName = GetSpellName(31884)
 function TMW.GetSpellTexture(spell)
 	if not spell then return end
 
-	local spellTex = GetSpellTexture(spell)
-	if spellTex and (spellTex ~= 135875 or GetSpellName(spell) == avengingWrathName) then
-		-- Workaround https://github.com/ascott18/TellMeWhen/issues/2114 - 
-		-- don't return avenging wrath texture if the input wasn't the avenging wrath spell.
-		return spellTex
-	end
-
 	return
+		GetSpellTexture(spell) or
 		SpellTexturesMetaIndex[spell] or
 		rawget(SpellTexturesMetaIndex, strlowerCache[spell])
 end
@@ -2871,12 +2865,10 @@ end
 -- TMW:Update() sets up all groups, icons, and anything else.
 function TMW:Update(forceCoroutine)
 
-	-- We check arena (and I threw BGs in as well)
-	-- in hopes of resolving https://wow.curseforge.com/projects/tellmewhen/issues/1572 -
-	-- a "script ran too long" error that appears to be happening outside of combat,
-	-- potentially when loading into an arena map.
-	local _, z = IsInInstance()
-	local needsCoroutineUpdate = forceCoroutine or InCombatLockdown() or z == "arena" or z == "pvp"
+	-- We check for instances to resolve https://github.com/ascott18/TellMeWhen/issues/1592
+	-- and https://github.com/ascott18/TellMeWhen/issues/2125 - "script ran too long" errors
+	-- that appears to be happening outside of combat when loading into an instance.
+	local needsCoroutineUpdate = forceCoroutine or InCombatLockdown() or IsInInstance()
 
 	if needsCoroutineUpdate then
 		TMW:UpdateViaCoroutine()

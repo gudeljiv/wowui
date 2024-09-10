@@ -167,6 +167,9 @@ function CooldownSweep:OnNewInstance(icon)
 
 	-- cooldown2 displays charges.
 	self.cooldown2 = CreateFrame("Cooldown", self:GetChildNameBase() .. "Cooldown2", icon, "CooldownFrameTemplate")
+	self.cooldown2:SetDrawSwipe(false)
+	self.cooldown2:SetDrawBling(false)
+	self.cooldown2.SetDrawBling = TMW.NULLFUNC -- Prevent Masque from messing with this
 	
 	-- Let OmniCC detect this as the charge cooldown frame.
 	-- https://github.com/ascott18/TellMeWhen/issues/1784
@@ -174,6 +177,44 @@ function CooldownSweep:OnNewInstance(icon)
 	
 	self:SetSkinnableComponent("Cooldown", self.cooldown)
 	self:SetSkinnableComponent("ChargeCooldown", self.cooldown2)
+
+	
+	-- Workaround https://github.com/ascott18/TellMeWhen/issues/2065,
+	-- and https://github.com/ascott18/TellMeWhen/issues/2219
+	-- Because the bling effect entirely ignores the alpha of its ancestor tree,
+	-- manually show and hide the bling when the icon alpha changes.
+	-- We have to override the function entirely to prevent Masque from
+	-- showing it when it shouldn't be shown.
+	local blingShown = self.cooldown:GetDrawBling()
+	local iconShown = icon:GetAlpha() > 0
+	local SetDrawBling_old = self.cooldown.SetDrawBling
+	self.cooldown.SetDrawBling = function(cd, shown)
+		local shouldShowBling = self.shouldShowBling
+		if icon.lmbGroup and not icon.lmbGroup.db.Pulse then
+			-- Respect Masque pulse settings if present.
+			-- This has to be read on demand because it could change at any time
+			-- and also because the masque group isn't available during the instantiation
+			-- or first-time setup of IconModule_CooldownSweep
+			shouldShowBling = false
+		end
+
+		if shown and iconShown and shouldShowBling then
+			SetDrawBling_old(cd, true)
+			blingShown = true
+		elseif blingShown then
+			SetDrawBling_old(cd, false)
+			blingShown = false
+		end
+	end
+	hooksecurefunc(icon, "SetAlpha", function(icon, alpha)
+		iconShown = alpha > 0
+		if not iconShown and blingShown then
+			self.cooldown:SetDrawBling(false)
+		elseif iconShown and not blingShown and self.shouldShowBling then
+			self.cooldown:SetDrawBling(true)
+		end
+	end)
+
 end
 
 local NeedsUpdate = {}
@@ -182,6 +223,7 @@ local NeedsUpdate = {}
 function CooldownSweep:OnDisable()
 	self.start = 0
 	self.duration = 0
+	self.modRate = 1
 	self.charges = 0
 	self.maxCharges = 0
 	self.chargeStart = 0
@@ -192,7 +234,6 @@ end
 
 local omnicc_loaded = IsAddOnLoaded("OmniCC")
 local tullacc_loaded = IsAddOnLoaded("tullaCC")
-local shouldShowBling
 
 function CooldownSweep:SetupForIcon(icon)
 	self.ShowTimer = icon.ShowTimer
@@ -231,33 +272,14 @@ function CooldownSweep:SetupForIcon(icon)
 	self.cooldown:SetHideCountdownNumbers(hideNumbers)
 	self.cooldown:SetDrawEdge(self.ShowTimer and TMW.db.profile.DrawEdge)
 	self.cooldown:SetDrawSwipe(self.ShowTimer)
-
-	shouldShowBling = not TMW.db.profile.HideBlizzCDBling
-	self.cooldown:SetDrawBling(shouldShowBling)
-	self.blingShown = shouldShowBling
-	if shouldShowBling and not self.hookedBling then
-		self.hookedBling = true
-
-		-- Workaround https://github.com/ascott18/TellMeWhen/issues/2065
-		-- because the bling effect entirely ignores the alpha of its ancestor tree.
-		-- So, hide the bling at the moment of CD finish if the icon is hidden.
-		self.cooldown:SetScript("OnCooldownDone", function()
-			if shouldShowBling and self.cooldown:GetEffectiveAlpha() > 0 then
-				if not self.blingShown then
-					self.blingShown = true
-					self.cooldown:SetDrawBling(true)
-				end
-			elseif self.blingShown then
-				self.blingShown = false
-				self.cooldown:SetDrawBling(false)
-			end
-		end)
-	end
+		
+	self.shouldShowBling = 
+		not TMW.db.profile.HideBlizzCDBling
+		and not self.icon.FakeHidden
+	self.cooldown:SetDrawBling(self.shouldShowBling)
 
 	self.cooldown2:SetHideCountdownNumbers(hideNumbers)
 	self.cooldown2:SetDrawEdge(self.ShowTimer)
-	self.cooldown2:SetDrawSwipe(false)
-	self.cooldown2:SetDrawBling(false)
 
 	-- https://github.com/ascott18/TellMeWhen/issues/1914:
 	-- If a meta icon switches between hidden/shown timer text
@@ -272,7 +294,7 @@ function CooldownSweep:SetupForIcon(icon)
 
 	local attributes = icon.attributes
 	
-	self:DURATION(icon, attributes.start, attributes.duration)
+	self:DURATION(icon, attributes.start, attributes.duration, attributes.modRate)
 	self:SPELLCHARGES(icon, attributes.charges, attributes.maxCharges, attributes.chargeStart, attributes.chargeDur)
 	self:REVERSE(icon, attributes.reverse)
 end
@@ -305,7 +327,7 @@ function CooldownSweep:UpdateCooldown()
 			cd:SetDrawSwipe(false)
 		end
 
-		cd:SetCooldown(mainStart, mainDuration)
+		cd:SetCooldown(mainStart, mainDuration, self.modRate)
 		cd:Show()
 	else
 		cd:SetCooldown(0, 0)
@@ -314,21 +336,22 @@ function CooldownSweep:UpdateCooldown()
 	-- Handle charges of spells that aren't completely depleted.
 	local cd2 = self.cooldown2
 	if otherDuration > 0 then
-		cd2:SetCooldown(otherStart, otherDuration)
+		cd2:SetCooldown(otherStart, otherDuration, self.modRate)
 		cd2:Show()
 	else
 		cd2:SetCooldown(0, 0)
 	end
 end
 
-function CooldownSweep:DURATION(icon, start, duration)
+function CooldownSweep:DURATION(icon, start, duration, modRate)
 	if (not self.ClockGCD and OnGCD(duration)) or (duration - (TMW.time - start)) <= 0 or duration <= 0 then
 		start, duration = 0, 0
 	end
 	
-	if self.start ~= start or self.duration ~= duration then
+	if self.start ~= start or self.duration ~= duration or self.modRate ~= modRate then
 		self.start = start
 		self.duration = duration
+		self.modRate = modRate
 		
 		NeedsUpdate[self] = true
 	end
@@ -357,7 +380,6 @@ CooldownSweep:SetDataListener("REVERSE")
 
 TMW:RegisterCallback("TMW_ONUPDATE_TIMECONSTRAINED_POST", function()
 	for module in pairs(NeedsUpdate) do
-		module.cooldown:Clear()
 		module:UpdateCooldown()
 	end
 	wipe(NeedsUpdate)

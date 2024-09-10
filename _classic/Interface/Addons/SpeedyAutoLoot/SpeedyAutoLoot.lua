@@ -11,45 +11,52 @@ local internal = {
   isHidden = true,
   ElvUI = false,
   ShowElvUILootFrame = nop,
+  isClassicEra = LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_CLASSIC,
   isClassic = (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE),
   audioChannel = "master",
   Dragonflight = 9,
   slotsLooted = {},
+  inventorySoundPlayed = false,
 };
 
--- Compat
-local LOOT_SLOT_ITEM = LOOT_SLOT_ITEM or Enum.LootSlotType.Item
-local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots
-local GetItemInfo = GetItemInfo or C_Item.GetItemInfo
-local GetItemFamily = GetItemFamily or C_Item.GetItemFamily
-local GetItemCount = GetItemCount or C_Item.GetItemCount
+local Blacklist = {
+
+}
+
+local LOOT_SLOT_ITEM = Enum.LootSlotType.Item
+local keyRing = Enum.BagIndex.Keyring
 
 ---@param itemLink ItemInfo
 ---@param itemQuantity number
 ---@return boolean itemFitsInBag
 function AutoLoot:ProcessLootItem(itemLink, itemQuantity)
-  local stackSize, _, _, _, classID, subclassID, _, _, _, isCraftingReagent = select(8, GetItemInfo(itemLink));
-  local itemFamily = GetItemFamily(itemLink);
+  local itemStackCount, _, _, _, classID, subclassID, _, _, _, isCraftingReagent = select(8, C_Item.GetItemInfo(itemLink));
+  local itemFamily = C_Item.GetItemFamily(itemLink);
+
+  if internal.isClassicEra and itemFamily == 256 then
+    local freeKeyringSlots = C_Container.GetContainerNumFreeSlots(keyRing)
+    if freeKeyringSlots > 0 then
+        return true;
+    end
+  end
+
+  local inventoryItemCount = C_Item.GetItemCount(itemLink);
+  if inventoryItemCount > 0 and itemStackCount > 1 then
+    if ((itemStackCount - inventoryItemCount) % itemStackCount) >= itemQuantity then
+      return true;
+    end
+  end
 
   for bagSlot = BACKPACK_CONTAINER, NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS do
-    local freeSlots, bagFamily = GetContainerNumFreeSlots(bagSlot);
-    if bagSlot == 5 then
-      if isCraftingReagent and freeSlots > 0 then
-        return true;
-      end
-      break;
+    local freeSlots, bagFamily = C_Container.GetContainerNumFreeSlots(bagSlot);
+    -- unclear if isCraftingReagent is 100% Reagent bag fitable.
+    if bagSlot == 5 and freeSlots > 0 and isCraftingReagent then
+      return true;
     end
     if freeSlots > 0 then
       if not bagFamily or bagFamily == 0 or (itemFamily and bit.band(itemFamily, bagFamily) > 0) then
         return true;
       end
-    end
-  end
-
-  local inventoryItemCount = GetItemCount(itemLink);
-  if inventoryItemCount > 0 and stackSize > 1 then
-    if ((stackSize - inventoryItemCount) % stackSize) >= itemQuantity then
-      return true;
     end
   end
 
@@ -64,6 +71,7 @@ function AutoLoot:LootSlot(slot)
   local lootQuantity, _, lootQuality, lootLocked, isQuestItem = select(3, GetLootSlotInfo(slot));
   if lootLocked or (lootQuality and lootQuality >= internal.lootThreshold) then
     internal.isAnyItemLocked = true;
+    return false;
   elseif slotType ~= LOOT_SLOT_ITEM or (not internal.isClassic and isQuestItem) or self:ProcessLootItem(itemLink, lootQuantity) then
     LootSlot(slot);
     internal.slotsLooted[slot] = true;
@@ -85,7 +93,6 @@ function AutoLoot:OnLootReady(autoLoot)
     self:ResetLootFrame();
     local numItems = GetNumLootItems();
     if numItems == 0 then
-      CloseLoot();
       return;
     end
 
@@ -111,15 +118,17 @@ end
 
 ---@param slot number
 function AutoLoot:OnBindConfirm(slot)
-  if LootSlotHasItem(slot) and internal.isLooting and internal.isHidden then
+  if LootSlotHasItem(slot) and internal.isLooting then
     ConfirmLootSlot(slot);
-    self:ShowLootFrame(true);
+    if internal.isHidden then
+      self:ShowLootFrame(true);
+    end
   end
 end
 
 ---@param slot number
 function AutoLoot:OnSlotChanged(slot)
-  -- was a working workaround for bugged stackables in wrath
+  -- was a working workaround for bugged stackables in wrath, but might still be useful to keep
   -- Check if we looted the slot internally and loot it again if it still has a item in the slot.
   -- this should block situations where that event fires but there is still something in the slot we previously looted resulting in unlooted stuff
   if internal.isLooting and internal.slotsLooted[slot] and LootSlotHasItem(slot) then
@@ -190,7 +199,8 @@ function AutoLoot:AnchorLootFrame()
     f:Raise();
   else
     if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then
-      f:ApplySystemAnchor();
+      local scale = f:GetScale();
+      f:SetPoint(f.systemInfo.anchorInfo.point, f.systemInfo.anchorInfo.relativeTo, f.systemInfo.anchorInfo.relativePoint, f.systemInfo.anchorInfo.offsetX / scale, f.systemInfo.anchorInfo.offsetY / scale);
     else
       f:ClearAllPoints();
       f:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 20, -125);
@@ -204,6 +214,7 @@ function AutoLoot:ShowLootFrame(delayed)
   internal.isHidden = false;
   if internal.ElvUI then
     internal.ShowElvUILootFrame();
+    return;
   elseif LootFrame:IsEventRegistered("LOOT_OPENED") then
       LootFrame:SetParent(UIParent);
       LootFrame:SetFrameStrata("HIGH");
@@ -251,8 +262,17 @@ function AutoLoot:OnAddonLoaded(name)
 end
 
 function AutoLoot:RegisterEvent(event, func)
-  internal._frame[event] = func;
-  internal._frame:RegisterEvent(event);
+  if not internal._frame:IsEventRegistered(event) then
+    internal._frame[event] = func;
+    internal._frame:RegisterEvent(event);
+  end
+end
+
+function AutoLoot:UnregisterEvent(event)
+  if internal._frame:IsEventRegistered(event) then
+    internal._frame[event] = nil;
+    internal._frame:UnregisterEvent(event);
+  end
 end
 
 function AutoLoot:OnInit()
@@ -264,7 +284,6 @@ function AutoLoot:OnInit()
   self:RegisterEvent("LOOT_OPENED", self.OnLootReady);
   self:RegisterEvent("LOOT_CLOSED", self.OnLootClosed);
   self:RegisterEvent("UI_ERROR_MESSAGE", self.OnErrorMessage);
-  --self:RegisterEvent("LOOT_SLOT_CLEARED", self.OnSlotCleared);
 
   if not internal.ElvUI and LootFrame:IsEventRegistered("LOOT_OPENED") then
     if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then
@@ -282,17 +301,15 @@ function AutoLoot:OnInit()
 end
 AutoLoot:OnInit();
 
-function AutoLoot:InitClassic()
-  self:RegisterEvent("LOOT_SLOT_CHANGED", self.OnSlotChanged);
-  self:RegisterEvent("LOOT_BIND_CONFIRM", self.OnBindConfirm);
+function AutoLoot:OnGroupJoined()
+  UIParent:RegisterEvent("LOOT_BIND_CONFIRM");
+end
+function AutoLoot:OnGroupLeft()
+  UIParent:UnregisterEvent("LOOT_BIND_CONFIRM");
+end
 
+function AutoLoot:AutoConfirmBop()
   if Config.global.autoConfirm then
-    function self:OnGroupJoined()
-      UIParent:RegisterEvent("LOOT_BIND_CONFIRM");
-    end
-    function self:OnGroupLeft()
-      UIParent:UnregisterEvent("LOOT_BIND_CONFIRM");
-    end
     self:RegisterEvent("GROUP_LEFT", self.OnGroupLeft);
     self:RegisterEvent("GROUP_JOINED", self.OnGroupJoined);
     -- group events don't fire on a /reload and probably also not when you login while already in a group
@@ -301,7 +318,18 @@ function AutoLoot:InitClassic()
     else
       self:OnGroupLeft();
     end
+  else
+    self:UnregisterEvent("GROUP_LEFT");
+    self:UnregisterEvent("GROUP_JOINED");
+    self:OnGroupJoined();
   end
+end
+
+function AutoLoot:InitClassic()
+  self:RegisterEvent("LOOT_SLOT_CHANGED", self.OnSlotChanged);
+  self:RegisterEvent("LOOT_BIND_CONFIRM", self.OnBindConfirm);
+
+  self:AutoConfirmBop()
 end
 
 local function AddMessage(...) _G.DEFAULT_CHAT_FRAME:AddMessage(strjoin(" ", tostringall(...))) end;
@@ -363,6 +391,7 @@ function AutoLoot:Help(msg)
       AddMessage(fName.."|cff37DB33Automatically confirm loot when solo enabled.");
     end
     Config.global.autoConfirm = not Config.global.autoConfirm
+    AutoLoot:AutoConfirmBop()
   end
 end
 

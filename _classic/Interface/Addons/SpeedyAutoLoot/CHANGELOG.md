@@ -1,3 +1,8 @@
+### 2.2.26
+- overdue proper keyring logic support for classic era/sod (fits into bag logic)
+- Some fixes for bop, did require a /reload to actually work.
+- Loot window should now show properly in combat when not-mouseover settings are used, instead of randomly breaking.
+
 ### 2.2.25
 - Fix inventory full sound playing on unlootable loot that requires rolling on retail.
 
