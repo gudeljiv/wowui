@@ -1,10 +1,10 @@
-tag f4a74eb58ce34cae1e5669ff8bd83e63ac9b8d99 v1.9.4
+tag 9c64117ec634f702f3308f411392e14df9782e50 v1.9.5
 Author:	skyler-code <skylerh15@github.com>
-Date:	Sat Aug 31 02:56:58 2024 -0500
+Date:	Tue Sep 10 11:04:34 2024 -0500
 
-commit eb493a9d5b7691ba9b5398704549e18fe125fcbf
+commit 1b779fe50a4584a5107870b15bdf92c08715f301
 Author: skyler-code <skylerh15@github.com>
-Date:   Sat Aug 31 02:56:50 2024 -0500
+Date:   Sun Sep 8 05:10:20 2024 -0500
 
-    Emergency fix to make sure our loop counter resets properly
+    Check if MethodWindow is still open rather than the reforge button
 

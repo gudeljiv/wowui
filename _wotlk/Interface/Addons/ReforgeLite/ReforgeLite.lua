@@ -6,7 +6,7 @@ local GetItemStats = C_Item.GetItemStats or GetItemStats
 local ReforgeLite = CreateFrame("Frame", addonName, UIParent, "BackdropTemplate")
 addonTable.ReforgeLite = ReforgeLite
 
-ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.4"
+ReforgeLite.isDev = C_AddOns.GetAddOnMetadata(addonName, "Version") == "v1.9.5"
 
 local L = addonTable.L
 local GUI = addonTable.GUI
@@ -2288,16 +2288,18 @@ function ReforgeLite:DoReforge()
 end
 
 function ReforgeLite:StopReforging()
-  reforgeCo = nil
+  if reforgeCo then
+    reforgeCo = nil
+    ClearReforgeWindow()
+    collectgarbage()
+  end
   if self.methodWindow then
     self.methodWindow.reforge:SetText(REFORGE)
   end
-  ClearReforgeWindow()
-  collectgarbage()
 end
 
 function ReforgeLite:ContinueReforge()
-  if not (self.pdb.method and self.methodWindow.reforge:IsShown() and ReforgeFrameIsVisible()) then
+  if not (self.pdb.method and self.methodWindow and self.methodWindow:IsShown() and ReforgeFrameIsVisible()) then
     self:StopReforging()
     return
   end
