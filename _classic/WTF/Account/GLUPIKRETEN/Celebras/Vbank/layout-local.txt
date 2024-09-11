@@ -314,13 +314,6 @@ X: -483
 Y: -279
 W: 330
 H: 113
-Frame: MerchantFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 336
-H: 444
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -328,3 +321,10 @@ X: -232
 Y: 134
 W: 30
 H: 30
+Frame: MerchantFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 336
+H: 444

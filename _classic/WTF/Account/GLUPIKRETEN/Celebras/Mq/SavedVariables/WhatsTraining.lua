@@ -7,12 +7,12 @@ WT_LearnedPetAbilities = {
 ["Charge"] = {
 ["Rank 1"] = true,
 },
-["Natural Armor"] = {
+["Claw"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Great Stamina"] = {
+["Natural Armor"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
@@ -25,7 +25,7 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Claw"] = {
+["Great Stamina"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
