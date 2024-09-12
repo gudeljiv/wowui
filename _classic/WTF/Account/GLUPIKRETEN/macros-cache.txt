@@ -22,11 +22,11 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2070
+/cast item:0
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:118
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -60,11 +60,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3667
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Innkeeper Keldamyr
-/targetexact Webwood Venomfang
-/targetexact Webwood Lurker
-/targetexact Strigid Owl
-/targetexact Nightsaber
+/targetexact Lord Melenas
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

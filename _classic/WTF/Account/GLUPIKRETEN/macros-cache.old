@@ -60,11 +60,11 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3667
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Foreman Stonebrow
-/targetexact Senator Mehr Stonehallow
-/targetexact Kazan Mogosh
-/targetexact Large Crag Boar
-/targetexact Crag Boar
+/targetexact Innkeeper Keldamyr
+/targetexact Webwood Venomfang
+/targetexact Webwood Lurker
+/targetexact Strigid Owl
+/targetexact Nightsaber
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

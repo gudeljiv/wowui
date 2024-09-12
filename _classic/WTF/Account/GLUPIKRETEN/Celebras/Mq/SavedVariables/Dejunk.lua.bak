@@ -14,13 +14,13 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["6889"] = true,
 },
 ["safeMode"] = false,
-["autoJunkFrame"] = false,
-["includeArtifactRelics"] = false,
-["includePoorItems"] = true,
-["excludeUnboundEquipment"] = false,
-["characterSpecificSettings"] = false,
 ["includeBelowItemLevel"] = {
 ["enabled"] = false,
 ["value"] = 0,
 },
+["includeArtifactRelics"] = false,
+["includePoorItems"] = true,
+["characterSpecificSettings"] = false,
+["excludeUnboundEquipment"] = false,
+["autoJunkFrame"] = false,
 }

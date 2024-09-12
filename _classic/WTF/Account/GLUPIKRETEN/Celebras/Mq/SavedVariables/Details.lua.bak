@@ -7,12 +7,11 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 1642,
 ["tipo"] = 2,
+["combatId"] = 1642,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006114,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -21,7 +20,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 330.006114,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -30,22 +31,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Fleshripper"] = 330,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725975872,
+["totalabsorbed"] = 0.006114,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Fleshripper"] = 60,
 },
@@ -66,14 +65,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 87,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Fleshripper"] = 87,
 },
@@ -94,20 +93,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 87,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 43.38760373372961,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975871,
 ["damage_taken"] = 19.006114,
 ["start_time"] = 1725975865,
 ["delay"] = 0,
-["last_event"] = 1725975871,
+["last_dps"] = 43.38760373372961,
 },
 {
 ["flag_original"] = 4369,
@@ -119,32 +119,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 183.004103,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-92-154-0100A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Fleshripper"] = true,
 },
 ["targets"] = {
 ["Fleshripper"] = 183,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725975872,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 34,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Fleshripper"] = 124,
 },
@@ -165,14 +164,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 34,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Fleshripper"] = 27,
 },
@@ -193,14 +192,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 32,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Fleshripper"] = 32,
 },
@@ -221,36 +220,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 32,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 24.0604921113996,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975871,
 ["damage_taken"] = 30.004103,
 ["start_time"] = 1725975865,
 ["delay"] = 0,
-["last_event"] = 1725975871,
+["last_dps"] = 24.0604921113996,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003369,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 49.003369,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 49.003369,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5210-0-92-1109-00005FB9FA",
-["aID"] = "1109",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -259,20 +258,21 @@ _detalhes_database = {
 ["Mq"] = 19,
 ["QM <Mq>"] = 30,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003369,
+["fight_component"] = true,
 ["end_time"] = 1725975872,
+["aID"] = "1109",
 ["nome"] = "Fleshripper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 19,
+["b_dmg"] = 9,
 ["targets"] = {
 ["Mq"] = 19,
 ["QM <Mq>"] = 30,
@@ -294,108 +294,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 9,
+["n_max"] = 19,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975870,
 ["damage_taken"] = 330.003369,
 ["start_time"] = 1725975864,
 ["delay"] = 0,
-["last_event"] = 1725975870,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1642,
 ["tipo"] = 3,
+["combatId"] = 1642,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1642,
 ["tipo"] = 7,
+["combatId"] = 1642,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1642,
 ["tipo"] = 9,
+["combatId"] = 1642,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 7,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 4,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 4,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725975872,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-92-154-0100A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-92-154-0100A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1642,
 ["tipo"] = 2,
+["combatId"] = 1642,
 ["_ActorTable"] = {
 },
 },
@@ -409,11 +409,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1663,
+["playing_solo"] = true,
 ["totals"] = {
 379,
 0,
@@ -427,10 +424,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -471,11 +468,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1642,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Fleshripper"] = 1,
 },
-["combat_counter"] = 1663,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 330,
 0,
@@ -489,10 +489,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -502,13 +502,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -520,18 +520,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 277861.12,
-["TimeData"] = {
-},
 ["contra"] = "Fleshripper",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1641,
 ["tipo"] = 2,
+["combatId"] = 1641,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002063,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -540,7 +539,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 278.002063,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -549,22 +550,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Astor Hadren"] = 278,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725975317,
+["totalabsorbed"] = 0.002063,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 71,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Astor Hadren"] = 71,
 },
@@ -585,14 +584,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 71,
 ["r_amt"] = 0,
 },
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 84,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Astor Hadren"] = 84,
 },
@@ -613,20 +612,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 84,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 64.32255043982613,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975317,
 ["damage_taken"] = 18.002063,
 ["start_time"] = 1725975313,
 ["delay"] = 0,
-["last_event"] = 1725975317,
+["last_dps"] = 64.32255043982613,
 },
 {
 ["flag_original"] = 4369,
@@ -638,31 +638,30 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 123.007475,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Astor Hadren"] = 123,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725975317,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 35,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Astor Hadren"] = 65,
 },
@@ -683,14 +682,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 35,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 32,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Astor Hadren"] = 32,
 },
@@ -711,14 +710,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 32,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Astor Hadren"] = 26,
 },
@@ -739,36 +738,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 18,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 28.46077626108534,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975317,
 ["damage_taken"] = 0.007475,
 ["start_time"] = 1725975313,
 ["delay"] = 0,
-["last_event"] = 1725975317,
+["last_dps"] = 28.46077626108534,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.006886,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 18.006886,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 18.006886,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5253-0-75-6497-00005C6DFC",
-["aID"] = "6497",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -776,20 +775,21 @@ _detalhes_database = {
 ["targets"] = {
 ["Mq"] = 18,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.006886,
+["fight_component"] = true,
 ["end_time"] = 1725975317,
+["aID"] = "6497",
 ["nome"] = "Astor Hadren",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 18,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mq"] = 18,
 ["QM"] = 0,
@@ -812,108 +812,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 18,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725975315,
 ["damage_taken"] = 278.006886,
 ["start_time"] = 1725975313,
 ["delay"] = 0,
-["last_event"] = 1725975315,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1641,
 ["tipo"] = 3,
+["combatId"] = 1641,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1641,
 ["tipo"] = 7,
+["combatId"] = 1641,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1641,
 ["tipo"] = 9,
+["combatId"] = 1641,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 4,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 4,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 4,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725975317,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1641,
 ["tipo"] = 2,
+["combatId"] = 1641,
 ["_ActorTable"] = {
 },
 },
@@ -928,11 +928,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1662,
+["playing_solo"] = true,
 ["totals"] = {
 296,
 0,
@@ -946,10 +943,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -989,11 +986,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1641,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Astor Hadren"] = 1,
 },
-["combat_counter"] = 1662,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 278,
 0,
@@ -1007,10 +1007,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1020,13 +1020,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1038,18 +1038,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 277308.912,
-["TimeData"] = {
-},
 ["contra"] = "Astor Hadren",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1640,
 ["tipo"] = 2,
+["combatId"] = 1640,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003646,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -1058,7 +1057,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1043.003646,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -1066,51 +1067,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Elder Gray Bear"] = 1043,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974973,
+["totalabsorbed"] = 0.003646,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[2] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 0,
-["targets"] = {
-["Elder Gray Bear"] = 0,
-},
-["n_total"] = 0,
-["n_min"] = 0,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 0,
-["c_max"] = 0,
-["MISS"] = 1,
-["id"] = 2,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 0,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 0,
 },
@@ -1132,14 +1102,43 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
+["n_max"] = 0,
+["r_amt"] = 0,
+},
+[2] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 0,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 2,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 70,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 516,
 },
@@ -1160,14 +1159,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
+["n_max"] = 70,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 72,
 },
@@ -1188,20 +1187,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 46.80924719515392,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974972,
 ["damage_taken"] = 0.003646,
 ["start_time"] = 1725974950,
 ["delay"] = 0,
-["last_event"] = 1725974972,
+["last_dps"] = 46.80924719515392,
 },
 {
 ["flag_original"] = 4369,
@@ -1213,32 +1213,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 455.002707,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Elder Gray Bear"] = true,
 },
 ["targets"] = {
 ["Elder Gray Bear"] = 455,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974973,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 3,
-["n_max"] = 37,
+["b_dmg"] = 24,
 ["targets"] = {
 ["Elder Gray Bear"] = 359,
 },
@@ -1247,12 +1246,12 @@ _detalhes_database = {
 ["g_dmg"] = 86,
 ["counter"] = 12,
 ["DODGE"] = 1,
-["total"] = 359,
-["c_max"] = 74,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["a_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 74,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1261,14 +1260,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 74,
 ["n_amt"] = 6,
-["b_dmg"] = 24,
-["r_amt"] = 0,
+["n_max"] = 37,
+["total"] = 359,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 34,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 34,
 },
@@ -1289,14 +1288,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 34,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 12,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 62,
 },
@@ -1317,36 +1316,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 12,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 20.42019149991273,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974972,
 ["damage_taken"] = 192.002707,
 ["start_time"] = 1725974950,
 ["delay"] = 0,
-["last_event"] = 1725974972,
+["last_dps"] = 20.42019149991273,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.006351,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 192.006351,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 192.006351,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2356-0000588A14",
-["aID"] = "2356",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -1354,20 +1353,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 192,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.006351,
+["fight_component"] = true,
 ["end_time"] = 1725974973,
+["aID"] = "2356",
 ["nome"] = "Elder Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 192,
 ["QM"] = 0,
@@ -1380,7 +1380,7 @@ _detalhes_database = {
 ["MISS"] = 1,
 ["total"] = 192,
 ["c_max"] = 0,
-["a_amt"] = 0,
+["r_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -1392,119 +1392,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 29,
+["a_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974970,
 ["damage_taken"] = 1043.006351,
 ["start_time"] = 1725974950,
 ["delay"] = 0,
-["last_event"] = 1725974970,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1640,
 ["tipo"] = 3,
+["combatId"] = 1640,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1640,
 ["tipo"] = 7,
+["combatId"] = 1640,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1640,
 ["tipo"] = 9,
+["combatId"] = 1640,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 22,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 22,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 22,
 ["debuff_uptime"] = 19,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725974973,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1640,
 ["tipo"] = 2,
+["combatId"] = 1640,
 ["_ActorTable"] = {
 },
 },
@@ -1519,11 +1519,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1661,
+["playing_solo"] = true,
 ["totals"] = {
 1235,
 0,
@@ -1537,10 +1534,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1582,11 +1579,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1640,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Elder Gray Bear"] = 1,
 },
-["combat_counter"] = 1661,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 1043,
 0,
@@ -1600,10 +1600,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1613,13 +1613,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1631,18 +1631,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276946.731,
-["TimeData"] = {
-},
 ["contra"] = "Elder Gray Bear",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1639,
 ["tipo"] = 2,
+["combatId"] = 1639,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006426,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -1651,7 +1650,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1695.006426,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -1661,22 +1662,20 @@ _detalhes_database = {
 ["Giant Moss Creeper"] = 721,
 ["Elder Gray Bear"] = 974,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974897,
+["totalabsorbed"] = 0.006426,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 52,
 },
@@ -1698,14 +1697,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 80,
 },
@@ -1726,14 +1725,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 72,
+["b_dmg"] = 57,
 ["targets"] = {
 ["Elder Gray Bear"] = 260,
 ["Giant Moss Creeper"] = 341,
@@ -1755,14 +1754,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["b_dmg"] = 57,
+["n_max"] = 72,
 ["r_amt"] = 0,
 },
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 89,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 89,
 },
@@ -1783,20 +1782,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 89,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 31.53265665813429,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974897,
 ["damage_taken"] = 36.006426,
 ["start_time"] = 1725974843,
 ["delay"] = 0,
-["last_event"] = 1725974897,
+["last_dps"] = 31.53265665813429,
 },
 {
 ["flag_original"] = 4369,
@@ -1808,11 +1808,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 873.007168,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Elder Gray Bear"] = true,
 ["Giant Moss Creeper"] = true,
@@ -1821,34 +1821,33 @@ _detalhes_database = {
 ["Giant Moss Creeper"] = 380,
 ["Elder Gray Bear"] = 493,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974897,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 3,
 ["b_amt"] = 1,
 ["g_amt"] = 6,
-["n_max"] = 38,
+["b_dmg"] = 24,
 ["targets"] = {
 ["Giant Moss Creeper"] = 363,
 ["Elder Gray Bear"] = 424,
 },
 ["n_total"] = 426,
-["a_amt"] = 0,
-["n_min"] = 24,
 ["g_dmg"] = 182,
+["n_min"] = 24,
+["a_amt"] = 0,
 ["counter"] = 27,
 ["DODGE"] = 1,
 ["total"] = 787,
 ["c_max"] = 63,
-["MISS"] = 1,
+["r_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -1860,14 +1859,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 179,
 ["n_amt"] = 14,
-["b_dmg"] = 24,
-["r_amt"] = 0,
+["n_max"] = 38,
+["MISS"] = 1,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 36,
 ["Giant Moss Creeper"] = 17,
@@ -1877,12 +1876,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 9,
 ["a_amt"] = 0,
-["total"] = 53,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 2,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1891,14 +1890,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 10,
+["total"] = 53,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 33,
 },
@@ -1919,36 +1918,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 16.24078520669524,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974896,
 ["damage_taken"] = 992.007168,
 ["start_time"] = 1725974843,
 ["delay"] = 0,
-["last_event"] = 1725974896,
+["last_dps"] = 16.24078520669524,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.006643,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 688.0066429999999,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 688.0066429999999,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2349-001757B4FC",
-["aID"] = "2349",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -1956,20 +1955,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 688,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.006643,
+["fight_component"] = true,
 ["end_time"] = 1725974897,
+["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 3,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 79,
 ["targets"] = {
 ["QM <Mq>"] = 644,
 ["QM"] = 0,
@@ -1992,14 +1992,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 25,
-["b_dmg"] = 79,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [3396] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 11,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 44,
 },
@@ -2019,36 +2019,35 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 11,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974896,
 ["damage_taken"] = 721.0066429999999,
 ["start_time"] = 1725974845,
 ["delay"] = 0,
-["last_event"] = 1725974896,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.006986,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 340.006986,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 340.006986,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2356-000957B4FC",
-["aID"] = "2356",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -2057,20 +2056,21 @@ _detalhes_database = {
 ["QM <Mq>"] = 304,
 ["Mq"] = 36,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.006986,
+["fight_component"] = true,
 ["end_time"] = 1725974897,
+["aID"] = "2356",
 ["nome"] = "Elder Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 36,
+["b_dmg"] = 27,
 ["targets"] = {
 ["QM <Mq>"] = 304,
 ["Mq"] = 36,
@@ -2081,12 +2081,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 14,
 ["a_amt"] = 0,
-["total"] = 340,
-["c_max"] = 49,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 49,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -2095,29 +2095,31 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 49,
 ["n_amt"] = 11,
-["b_dmg"] = 27,
-["r_amt"] = 0,
+["n_max"] = 36,
+["total"] = 340,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974873,
 ["damage_taken"] = 974.006986,
 ["start_time"] = 1725974867,
 ["delay"] = 1725974873,
-["last_event"] = 1725974873,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1639,
 ["tipo"] = 3,
+["combatId"] = 1639,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
+["targets_overheal"] = {
+},
 ["pets"] = {
 "QM <Mq>",
 },
@@ -2130,29 +2132,22 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 1,
 ["on_hold"] = false,
+["serial"] = "Player-5266-026B513C",
 ["totalabsorb"] = 0.004945,
 ["last_hps"] = 9.897029895457528,
-["aID"] = "5266-026B513C",
-["fight_component"] = true,
 ["targets"] = {
 ["QM <Mq>"] = 532,
 },
-["serial"] = "Player-5266-026B513C",
-["colocacao"] = 1,
 ["totalover_without_pet"] = 0.004945,
-["healing_from"] = {
-},
+["last_event"] = 1725974888,
 ["healing_taken"] = 0.004945,
-["grupo"] = true,
-["classe"] = "HUNTER",
+["fight_component"] = true,
 ["end_time"] = 1725974897,
-["targets_overheal"] = {
-},
-["start_time"] = 1725974870,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 [3111] = {
 ["c_amt"] = 0,
@@ -2168,31 +2163,38 @@ _detalhes_database = {
 ["counter"] = 14,
 ["overheal"] = 0,
 ["total"] = 532,
-["c_max"] = 0,
+["spellschool"] = 8,
 ["id"] = 3111,
 ["targets_absorbs"] = {
 },
 ["c_min"] = 0,
-["spellschool"] = 8,
+["c_max"] = 0,
 ["c_total"] = 0,
 ["totaldenied"] = 0,
 ["n_amt"] = 14,
 ["absorbed"] = 0,
 },
 },
+["tipo"] = 3,
 },
+["grupo"] = true,
+["healing_from"] = {
+},
+["start_time"] = 1725974870,
 ["custom"] = 0,
-["last_event"] = 1725974888,
+["tipo"] = 2,
 ["totaldenied"] = 0.004945,
 ["delay"] = 0,
-["tipo"] = 2,
+["classe"] = "HUNTER",
 },
 {
 ["flag_original"] = 4369,
+["targets_overheal"] = {
+},
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
-["heal_enemy_amt"] = 0,
+["classe"] = "PET",
 ["totalover"] = 0.001605,
 ["total_without_pet"] = 0.001605,
 ["total"] = 0.001605,
@@ -2200,124 +2202,122 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 2,
 ["on_hold"] = false,
-["aID"] = "",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
 ["totalabsorb"] = 0.001605,
 ["last_hps"] = 3.560179228960965e-05,
-["fight_component"] = true,
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
 ["targets"] = {
 },
-["grupo"] = true,
-["healing_from"] = {
-["Mq"] = true,
-},
-["totalover_without_pet"] = 0.001605,
 ["start_time"] = 1725974897,
+["totalover_without_pet"] = 0.001605,
 ["healing_taken"] = 532.0016049999999,
-["classe"] = "PET",
+["fight_component"] = true,
 ["end_time"] = 1725974897,
-["targets_overheal"] = {
-},
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 },
+["tipo"] = 3,
+},
+["grupo"] = true,
+["last_event"] = 0,
+["healing_from"] = {
+["Mq"] = true,
 },
 ["custom"] = 0,
-["last_event"] = 0,
+["tipo"] = 2,
 ["totaldenied"] = 0.001605,
 ["delay"] = 0,
-["tipo"] = 2,
+["heal_enemy_amt"] = 0,
 },
 },
 },
 {
-["combatId"] = 1639,
 ["tipo"] = 7,
+["combatId"] = 1639,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1639,
 ["tipo"] = 9,
+["combatId"] = 1639,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["serial"] = "Player-5266-026B513C",
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 3,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
+["buff_uptime"] = 53,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[5118] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 53,
+["id"] = 5118,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["debuff_uptime"] = 22,
+["nome"] = "Mq",
+["aID"] = "5266-026B513C",
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["buff_uptime_targets"] = {
 },
+["tipo"] = 4,
 ["pets"] = {
 "QM <Mq>",
 },
-["fight_component"] = true,
-["debuff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
-["grupo"] = true,
-["buff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
-["targets"] = {
-},
-["uptime"] = 53,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["buff_uptime"] = 53,
-["debuff_uptime"] = 22,
-["aID"] = "5266-026B513C",
-["nome"] = "Mq",
+["serial"] = "Player-5266-026B513C",
 ["last_event"] = 1725974897,
-["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
@@ -2325,38 +2325,36 @@ _detalhes_database = {
 },
 ["classe"] = "PET",
 ["fight_component"] = true,
-["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
+["grupo"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["aID"] = "",
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-0-77-2349-001757B4FC",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5208-0-77-2349-001757B4FC",
+["aID"] = "2349",
 },
 },
 },
 {
-["combatId"] = 1639,
 ["tipo"] = 2,
+["combatId"] = 1639,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 276946.341,
 ["tempo_start"] = 1725974843,
 ["last_events_tables"] = {
@@ -2365,9 +2363,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1660,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -2383,10 +2379,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2397,11 +2393,11 @@ _detalhes_database = {
 },
 ["frags_need_refresh"] = true,
 ["amountCasts"] = {
-["QM <Mq>"] = {
-["Growl"] = 1,
-},
 ["Giant Moss Creeper"] = {
 ["Corrosive Poison"] = 1,
+},
+["QM <Mq>"] = {
+["Growl"] = 1,
 },
 ["Mq"] = {
 ["Raptor Strike"] = 1,
@@ -2434,12 +2430,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1639,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Elder Gray Bear"] = 1,
 ["Giant Moss Creeper"] = 1,
 },
-["combat_counter"] = 1660,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 1695,
 532,
@@ -2453,18 +2451,23 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
+},
+["damage_section"] = {
 },
 ["heal_section"] = {
 },
@@ -2474,8 +2477,6 @@ _detalhes_database = {
 ["QM <Mq>"] = 0.001605,
 },
 },
-["damage_section"] = {
-},
 ["damage"] = {
 {
 ["Mq"] = 1695.006426,
@@ -2483,21 +2484,19 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 276839.568,
-["TimeData"] = {
-},
 ["contra"] = "Giant Moss Creeper",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 1638,
 ["tipo"] = 2,
+["combatId"] = 1638,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006865,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -2506,7 +2505,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 679.0068650000001,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -2514,50 +2515,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Giant Moss Creeper"] = 679,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974841,
+["totalabsorbed"] = 0.006865,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[2643] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 56,
-["targets"] = {
-["Giant Moss Creeper"] = 56,
-},
-["n_total"] = 56,
-["n_min"] = 56,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 56,
-["c_max"] = 0,
-["id"] = 2643,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 33,
 },
@@ -2578,14 +2549,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
+[2643] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Giant Moss Creeper"] = 56,
+},
+["n_total"] = 56,
+["n_min"] = 56,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 56,
+["c_max"] = 0,
+["id"] = 2643,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 58,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 277,
 },
@@ -2606,14 +2605,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 117,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 58,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 64,
 },
@@ -2634,20 +2633,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 42.90993838482929,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974840,
 ["damage_taken"] = 0.006865,
 ["start_time"] = 1725974825,
 ["delay"] = 0,
-["last_event"] = 1725974840,
+["last_dps"] = 42.90993838482929,
 },
 {
 ["flag_original"] = 4369,
@@ -2659,32 +2659,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 249.004673,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Giant Moss Creeper"] = true,
 },
 ["targets"] = {
 ["Giant Moss Creeper"] = 249,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974841,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 16,
 ["targets"] = {
 ["Giant Moss Creeper"] = 185,
 },
@@ -2706,14 +2705,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 16,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 51,
 },
@@ -2734,14 +2733,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 17,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 13,
+["b_dmg"] = 13,
 ["targets"] = {
 ["Giant Moss Creeper"] = 13,
 },
@@ -2762,36 +2761,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 13,
+["n_max"] = 13,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.73588681752807,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974839,
 ["damage_taken"] = 131.004673,
 ["start_time"] = 1725974825,
 ["delay"] = 0,
-["last_event"] = 1725974839,
+["last_dps"] = 15.73588681752807,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004071,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 131.004071,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 131.004071,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2349-002757B4FC",
-["aID"] = "2349",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -2799,20 +2798,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 131,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004071,
+["fight_component"] = true,
 ["end_time"] = 1725974841,
+["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 131,
 ["QM"] = 0,
@@ -2835,108 +2835,108 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974840,
 ["damage_taken"] = 679.0040710000001,
 ["start_time"] = 1725974826,
 ["delay"] = 0,
-["last_event"] = 1725974840,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1638,
 ["tipo"] = 3,
+["combatId"] = 1638,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1638,
 ["tipo"] = 7,
+["combatId"] = 1638,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1638,
 ["tipo"] = 9,
+["combatId"] = 1638,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 16,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 16,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974841,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1638,
 ["tipo"] = 2,
+["combatId"] = 1638,
 ["_ActorTable"] = {
 },
 },
@@ -2950,11 +2950,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1659,
+["playing_solo"] = true,
 ["totals"] = {
 810,
 0,
@@ -2968,10 +2965,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3014,11 +3011,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1638,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Giant Moss Creeper"] = 1,
 },
-["combat_counter"] = 1659,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 679,
 0,
@@ -3032,10 +3032,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3045,13 +3045,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3063,18 +3063,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276821.21,
-["TimeData"] = {
-},
 ["contra"] = "Giant Moss Creeper",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1637,
 ["tipo"] = 2,
+["combatId"] = 1637,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003132,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -3083,7 +3082,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 908.003132,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -3091,22 +3092,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 908,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974799,
+["totalabsorbed"] = 0.003132,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 132,
 },
@@ -3127,14 +3126,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 0,
 },
@@ -3156,14 +3155,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 56,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 346,
 },
@@ -3184,14 +3183,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [5116] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 0,
 },
@@ -3213,42 +3212,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
-},
-[13550] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Torn Fin Muckdweller"] = 140,
-},
-["n_total"] = 140,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 9,
-["total"] = 140,
-["c_max"] = 0,
-["id"] = 13550,
-["r_dmg"] = 12,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 9,
-["b_dmg"] = 0,
-["r_amt"] = 1,
 },
 [2643] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 58,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 58,
 },
@@ -3269,20 +3240,49 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 58,
 ["r_amt"] = 0,
 },
+[13550] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Torn Fin Muckdweller"] = 140,
+},
+["n_total"] = 140,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 9,
+["total"] = 140,
+["c_max"] = 0,
+["id"] = 13550,
+["r_dmg"] = 12,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 9,
+["n_max"] = 16,
+["r_amt"] = 1,
 },
 },
-["friendlyfire"] = {
+["tipo"] = 2,
 },
-["last_dps"] = 30.75787175230367,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974798,
 ["damage_taken"] = 0.003132,
 ["start_time"] = 1725974769,
 ["delay"] = 0,
-["last_event"] = 1725974798,
+["last_dps"] = 30.75787175230367,
 },
 {
 ["flag_original"] = 4369,
@@ -3294,32 +3294,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 232.007241,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Torn Fin Muckdweller"] = true,
 },
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 232,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974799,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 6,
-["n_max"] = 29,
+["b_dmg"] = 11,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 167,
 },
@@ -3341,14 +3340,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 11,
+["n_max"] = 29,
 ["r_amt"] = 0,
 },
 [14916] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 0,
 },
@@ -3358,26 +3357,26 @@ _detalhes_database = {
 ["counter"] = 3,
 ["total"] = 0,
 ["c_max"] = 0,
-["RESIST"] = 3,
+["spellschool"] = 1,
 ["id"] = 14916,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
+["RESIST"] = 3,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 26,
 },
@@ -3398,14 +3397,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Torn Fin Muckdweller"] = 39,
 },
@@ -3427,36 +3426,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 7.859057653871406,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974797,
 ["damage_taken"] = 127.007241,
 ["start_time"] = 1725974769,
 ["delay"] = 0,
-["last_event"] = 1725974797,
+["last_dps"] = 7.859057653871406,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007385,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 127.007385,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 127.007385,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2374-00005EE267",
-["aID"] = "2374",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -3464,20 +3463,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 127,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007385,
+["fight_component"] = true,
 ["end_time"] = 1725974799,
+["aID"] = "2374",
 ["nome"] = "Torn Fin Muckdweller",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 47,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 127,
 ["QM"] = 0,
@@ -3500,119 +3500,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 47,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974784,
 ["damage_taken"] = 908.007385,
 ["start_time"] = 1725974791,
 ["delay"] = 1725974784,
-["last_event"] = 1725974784,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1637,
 ["tipo"] = 3,
+["combatId"] = 1637,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1637,
 ["tipo"] = 7,
+["combatId"] = 1637,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1637,
 ["tipo"] = 9,
+["combatId"] = 1637,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 7,
-["appliedamt"] = 2,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 26,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 30,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 30,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 33,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 33,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974799,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1637,
 ["tipo"] = 2,
+["combatId"] = 1637,
 ["_ActorTable"] = {
 },
 },
@@ -3627,11 +3627,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1658,
+["playing_solo"] = true,
 ["totals"] = {
 1035,
 0,
@@ -3645,10 +3642,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3692,11 +3689,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1637,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Torn Fin Muckdweller"] = 1,
 },
-["combat_counter"] = 1658,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 908,
 0,
@@ -3710,10 +3710,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3723,13 +3723,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3741,18 +3741,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276765.411,
-["TimeData"] = {
-},
 ["contra"] = "Torn Fin Muckdweller",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1636,
 ["tipo"] = 2,
+["combatId"] = 1636,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005938,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -3761,7 +3760,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 729.005938,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -3769,22 +3770,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Giant Moss Creeper"] = 729,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974723,
+["totalabsorbed"] = 0.005938,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 66,
 },
@@ -3805,14 +3804,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 330,
 },
@@ -3833,14 +3832,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 113,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 44,
 },
@@ -3861,20 +3860,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 1,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 37.09953882947258,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974722,
 ["damage_taken"] = 0.005938,
 ["start_time"] = 1725974703,
 ["delay"] = 0,
-["last_event"] = 1725974722,
+["last_dps"] = 37.09953882947258,
 },
 {
 ["flag_original"] = 4369,
@@ -3886,32 +3886,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 289.007986,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Giant Moss Creeper"] = true,
 },
 ["targets"] = {
 ["Giant Moss Creeper"] = 289,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974723,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 29,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 238,
 },
@@ -3920,12 +3919,12 @@ _detalhes_database = {
 ["g_dmg"] = 50,
 ["counter"] = 10,
 ["MISS"] = 1,
-["total"] = 238,
-["c_max"] = 52,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 52,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -3934,14 +3933,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 52,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 29,
+["total"] = 238,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 25,
 },
@@ -3963,14 +3962,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 26,
 },
@@ -3991,36 +3990,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 14.70778554705637,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974721,
 ["damage_taken"] = 164.007986,
 ["start_time"] = 1725974703,
 ["delay"] = 0,
-["last_event"] = 1725974721,
+["last_dps"] = 14.70778554705637,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.003753,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 164.003753,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 164.003753,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2349-0003D7B4FA",
-["aID"] = "2349",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -4028,20 +4027,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 164,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003753,
+["fight_component"] = true,
 ["end_time"] = 1725974723,
+["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 28,
+["b_dmg"] = 19,
 ["targets"] = {
 ["QM <Mq>"] = 164,
 ["QM"] = 0,
@@ -4051,12 +4051,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 9,
 ["a_amt"] = 0,
-["total"] = 164,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -4065,14 +4065,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 19,
-["r_amt"] = 0,
+["n_max"] = 28,
+["total"] = 164,
 },
 [3396] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -4091,121 +4091,121 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974719,
 ["damage_taken"] = 729.003753,
 ["start_time"] = 1725974703,
 ["delay"] = 0,
-["last_event"] = 1725974719,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1636,
 ["tipo"] = 3,
+["combatId"] = 1636,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1636,
 ["tipo"] = 7,
+["combatId"] = 1636,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1636,
 ["tipo"] = 9,
+["combatId"] = 1636,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 20,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 20,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 20,
 ["debuff_uptime"] = 10,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725974723,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-0-77-2349-0003D7B4FA",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5208-0-77-2349-0003D7B4FA",
+["aID"] = "2349",
 },
 },
 },
 {
-["combatId"] = 1636,
 ["tipo"] = 2,
+["combatId"] = 1636,
 ["_ActorTable"] = {
 },
 },
@@ -4220,11 +4220,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1657,
+["playing_solo"] = true,
 ["totals"] = {
 893,
 0,
@@ -4238,10 +4235,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4252,11 +4249,11 @@ _detalhes_database = {
 },
 ["frags_need_refresh"] = true,
 ["amountCasts"] = {
-["QM <Mq>"] = {
-["Bite"] = 1,
-},
 ["Giant Moss Creeper"] = {
 ["Corrosive Poison"] = 1,
+},
+["QM <Mq>"] = {
+["Bite"] = 1,
 },
 ["Mq"] = {
 ["Auto Shot"] = 5,
@@ -4287,11 +4284,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1636,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Giant Moss Creeper"] = 1,
 },
-["combat_counter"] = 1657,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 729,
 0,
@@ -4305,10 +4305,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4318,13 +4318,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4336,18 +4336,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276699.197,
-["TimeData"] = {
-},
 ["contra"] = "Giant Moss Creeper",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1635,
 ["tipo"] = 2,
+["combatId"] = 1635,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001203,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -4356,7 +4355,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 957.001203,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -4365,134 +4366,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Elder Gray Bear"] = 957,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974694,
+["totalabsorbed"] = 0.001203,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[14261] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 80,
-["targets"] = {
-["Elder Gray Bear"] = 80,
-},
-["n_total"] = 80,
-["n_min"] = 80,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 80,
-["c_max"] = 0,
-["id"] = 14261,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 72,
-["targets"] = {
-["Elder Gray Bear"] = 404,
-},
-["n_total"] = 265,
-["n_min"] = 60,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 404,
-["c_max"] = 139,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 139,
-["successful_casted"] = 0,
-["c_total"] = 139,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2643] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 71,
-["targets"] = {
-["Elder Gray Bear"] = 71,
-},
-["n_total"] = 71,
-["n_min"] = 71,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 71,
-["c_max"] = 0,
-["id"] = 2643,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[13550] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Elder Gray Bear"] = 44,
-},
-["n_total"] = 44,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 44,
-["c_max"] = 0,
-["id"] = 13550,
-["r_dmg"] = 12,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 1,
-},
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 66,
 },
@@ -4513,20 +4400,133 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 404,
+},
+["n_total"] = 265,
+["n_min"] = 60,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 404,
+["c_max"] = 139,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 139,
+["successful_casted"] = 0,
+["c_total"] = 139,
+["n_amt"] = 4,
+["n_max"] = 72,
+["r_amt"] = 0,
+},
+[13550] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 44,
+},
+["n_total"] = 44,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 44,
+["c_max"] = 0,
+["id"] = 13550,
+["r_dmg"] = 12,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 16,
+["r_amt"] = 1,
+},
+[2643] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 71,
+},
+["n_total"] = 71,
+["n_min"] = 71,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 71,
+["c_max"] = 0,
+["id"] = 2643,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 71,
+["r_amt"] = 0,
+},
+[14261] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 80,
+},
+["n_total"] = 80,
+["n_min"] = 80,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 80,
+["c_max"] = 0,
+["id"] = 14261,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 80,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 50.65642615924082,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974694,
 ["damage_taken"] = 46.001203,
 ["start_time"] = 1725974676,
 ["delay"] = 0,
-["last_event"] = 1725974694,
+["last_dps"] = 50.65642615924082,
 },
 {
 ["flag_original"] = 4369,
@@ -4538,44 +4538,43 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 292.003819,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Elder Gray Bear"] = true,
 },
 ["targets"] = {
 ["Elder Gray Bear"] = 292,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974694,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
-["c_amt"] = 0,
+["DODGE"] = 1,
 ["b_amt"] = 2,
 ["g_amt"] = 2,
-["n_max"] = 37,
+["b_dmg"] = 44,
 ["targets"] = {
 ["Elder Gray Bear"] = 211,
 },
 ["n_total"] = 149,
-["a_amt"] = 0,
-["n_min"] = 22,
 ["g_dmg"] = 62,
+["n_min"] = 22,
+["a_amt"] = 0,
 ["counter"] = 10,
 ["MISS"] = 1,
 ["total"] = 211,
 ["c_max"] = 0,
-["DODGE"] = 1,
+["c_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -4587,14 +4586,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 44,
 ["r_amt"] = 0,
+["n_max"] = 37,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 34,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 34,
 },
@@ -4615,14 +4614,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 34,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 8,
 ["targets"] = {
 ["Elder Gray Bear"] = 47,
 },
@@ -4643,36 +4642,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 8,
 ["n_amt"] = 4,
-["b_dmg"] = 8,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.45647993860445,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974694,
 ["damage_taken"] = 174.003819,
 ["start_time"] = 1725974677,
 ["delay"] = 0,
-["last_event"] = 1725974694,
+["last_dps"] = 15.45647993860445,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004648,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 220.004648,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 220.004648,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2356-002457B4FC",
-["aID"] = "2356",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -4681,20 +4680,21 @@ _detalhes_database = {
 ["Mq"] = 46,
 ["QM <Mq>"] = 174,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004648,
+["fight_component"] = true,
 ["end_time"] = 1725974694,
+["aID"] = "2356",
 ["nome"] = "Elder Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 46,
+["b_dmg"] = 28,
 ["targets"] = {
 ["QM <Mq>"] = 174,
 ["Mq"] = 46,
@@ -4705,12 +4705,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 10,
 ["DODGE"] = 1,
-["total"] = 220,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["a_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -4719,119 +4719,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 28,
-["r_amt"] = 0,
+["n_max"] = 46,
+["total"] = 220,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974693,
 ["damage_taken"] = 957.004648,
 ["start_time"] = 1725974675,
 ["delay"] = 0,
-["last_event"] = 1725974693,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1635,
 ["tipo"] = 3,
+["combatId"] = 1635,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1635,
 ["tipo"] = 7,
+["combatId"] = 1635,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1635,
 ["tipo"] = 9,
+["combatId"] = 1635,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 19,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974694,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1635,
 ["tipo"] = 2,
+["combatId"] = 1635,
 ["_ActorTable"] = {
 },
 },
@@ -4846,11 +4846,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1656,
+["playing_solo"] = true,
 ["totals"] = {
 1177,
 0,
@@ -4864,10 +4861,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4911,11 +4908,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1635,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Elder Gray Bear"] = 1,
 },
-["combat_counter"] = 1656,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 957,
 0,
@@ -4929,10 +4929,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4942,13 +4942,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4960,18 +4960,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276671.227,
-["TimeData"] = {
-},
 ["contra"] = "Elder Gray Bear",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1634,
 ["tipo"] = 2,
+["combatId"] = 1634,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.0078,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -4980,7 +4979,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1071.0078,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -4989,22 +4990,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Elder Gray Bear"] = 1071,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974632,
+["totalabsorbed"] = 0.0078,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 36,
 },
@@ -5025,14 +5024,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
+},
+[13550] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Elder Gray Bear"] = 92,
+},
+["n_total"] = 92,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 6,
+["total"] = 92,
+["c_max"] = 0,
+["id"] = 13550,
+["r_dmg"] = 12,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["n_max"] = 16,
+["r_amt"] = 1,
 },
 [14261] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 96,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 96,
 },
@@ -5054,42 +5081,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 96,
 ["r_amt"] = 0,
-},
-[13550] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 16,
-["targets"] = {
-["Elder Gray Bear"] = 92,
-},
-["n_total"] = 92,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 6,
-["total"] = 92,
-["c_max"] = 0,
-["id"] = 13550,
-["r_dmg"] = 12,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 6,
-["b_dmg"] = 0,
-["r_amt"] = 1,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 62,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 360,
 },
@@ -5110,14 +5109,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 116,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 62,
 ["r_amt"] = 0,
 },
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 66,
 },
@@ -5138,20 +5137,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 40.04815465735555,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974631,
 ["damage_taken"] = 213.0078,
 ["start_time"] = 1725974605,
 ["delay"] = 0,
-["last_event"] = 1725974631,
+["last_dps"] = 40.04815465735555,
 },
 {
 ["flag_original"] = 4369,
@@ -5163,11 +5163,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 421.006593,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Elder Gray Bear"] = true,
 ["Giant Moss Creeper"] = true,
@@ -5175,21 +5175,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Elder Gray Bear"] = 421,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974632,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 3,
-["n_max"] = 35,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 346,
 },
@@ -5198,12 +5197,12 @@ _detalhes_database = {
 ["g_dmg"] = 82,
 ["counter"] = 14,
 ["a_amt"] = 0,
-["total"] = 346,
-["c_max"] = 68,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 3,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 68,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -5212,14 +5211,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 68,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 35,
+["total"] = 346,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 34,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 34,
 },
@@ -5240,14 +5239,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 34,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 11,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 41,
 },
@@ -5256,12 +5255,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 7,
 ["DODGE"] = 2,
-["total"] = 41,
-["c_max"] = 0,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["a_amt"] = 0,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 0,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -5270,36 +5269,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 11,
+["total"] = 41,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.74268380513228,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974631,
 ["damage_taken"] = 299.006593,
 ["start_time"] = 1725974605,
 ["delay"] = 0,
-["last_event"] = 1725974631,
+["last_dps"] = 15.74268380513228,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004965,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 501.004965,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 501.004965,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2356-00005F5405",
-["aID"] = "2356",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -5308,20 +5307,21 @@ _detalhes_database = {
 ["QM <Mq>"] = 288,
 ["Mq"] = 213,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004965,
+["fight_component"] = true,
 ["end_time"] = 1725974632,
+["aID"] = "2356",
 ["nome"] = "Elder Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 24,
 ["targets"] = {
 ["QM <Mq>"] = 288,
 ["Mq"] = 213,
@@ -5343,55 +5343,55 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 115,
 ["n_amt"] = 12,
-["b_dmg"] = 24,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974631,
 ["damage_taken"] = 1071.004965,
 ["start_time"] = 1725974606,
 ["delay"] = 0,
-["last_event"] = 1725974631,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.005778,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 11.005778,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 11.005778,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2349-000060231A",
-["aID"] = "2349",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 },
 ["targets"] = {
 ["QM <Mq>"] = 11,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005778,
+["fight_component"] = true,
 ["end_time"] = 1725974632,
+["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3396] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 11,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 11,
 },
@@ -5412,130 +5412,130 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 11,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974606,
 ["damage_taken"] = 0.005778,
 ["start_time"] = 1725974631,
 ["delay"] = 1725974606,
-["last_event"] = 1725974606,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1634,
 ["tipo"] = 3,
+["combatId"] = 1634,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1634,
 ["tipo"] = 7,
+["combatId"] = 1634,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1634,
 ["tipo"] = 9,
+["combatId"] = 1634,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 20,
-["appliedamt"] = 2,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [15571] = {
-["activedamt"] = 0,
-["id"] = 15571,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 15571,
 ["refreshamt"] = 3,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 27,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 27,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 34,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 34,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974632,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1634,
 ["tipo"] = 2,
+["combatId"] = 1634,
 ["_ActorTable"] = {
 },
 },
@@ -5550,11 +5550,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1655,
+["playing_solo"] = true,
 ["totals"] = {
 1583,
 0,
@@ -5568,10 +5565,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5614,11 +5611,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1634,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Elder Gray Bear"] = 1,
 },
-["combat_counter"] = 1655,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 1071,
 0,
@@ -5632,10 +5632,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5645,13 +5645,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5663,18 +5663,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276601.933,
-["TimeData"] = {
-},
 ["contra"] = "Elder Gray Bear",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1633,
 ["tipo"] = 2,
+["combatId"] = 1633,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006957,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -5683,7 +5682,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 725.006957,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -5691,22 +5692,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Giant Moss Creeper"] = 725,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974581,
+["totalabsorbed"] = 0.006957,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 99,
 },
@@ -5727,14 +5726,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 57,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 361,
 },
@@ -5755,14 +5754,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 57,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 48,
 },
@@ -5783,20 +5782,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 44.76733294224682,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974579,
 ["damage_taken"] = 0.006957,
 ["start_time"] = 1725974565,
 ["delay"] = 0,
-["last_event"] = 1725974579,
+["last_dps"] = 44.76733294224682,
 },
 {
 ["flag_original"] = 4369,
@@ -5808,32 +5808,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 217.003966,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Giant Moss Creeper"] = true,
 },
 ["targets"] = {
 ["Giant Moss Creeper"] = 217,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974581,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 164,
 },
@@ -5855,14 +5854,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 24,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 24,
 },
@@ -5883,14 +5882,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 24,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Giant Moss Creeper"] = 29,
 },
@@ -5911,36 +5910,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 13.39944217350456,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974579,
 ["damage_taken"] = 115.003966,
 ["start_time"] = 1725974565,
 ["delay"] = 0,
-["last_event"] = 1725974579,
+["last_dps"] = 13.39944217350456,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004181,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 115.004181,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 115.004181,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2349-000060231A",
-["aID"] = "2349",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -5948,20 +5947,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 115,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004181,
+["fight_component"] = true,
 ["end_time"] = 1725974581,
+["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 26,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 115,
 ["QM"] = 0,
@@ -5984,14 +5984,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 26,
 ["r_amt"] = 0,
 },
 [3396] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 },
 ["n_total"] = 0,
@@ -6010,132 +6010,132 @@ _detalhes_database = {
 ["successful_casted"] = 1,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974578,
 ["damage_taken"] = 725.004181,
 ["start_time"] = 1725974565,
 ["delay"] = 0,
-["last_event"] = 1725974578,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1633,
 ["tipo"] = 3,
+["combatId"] = 1633,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1633,
 ["tipo"] = 7,
+["combatId"] = 1633,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1633,
 ["tipo"] = 9,
+["combatId"] = 1633,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 16,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 16,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974581,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-0-77-2349-000060231A",
 ["classe"] = "UNKNOW",
-["fight_component"] = true,
 ["monster"] = true,
-["aID"] = "2349",
 ["nome"] = "Giant Moss Creeper",
+["fight_component"] = true,
 ["last_event"] = 0,
 ["tipo"] = 4,
+["serial"] = "Creature-0-5208-0-77-2349-000060231A",
+["aID"] = "2349",
 },
 },
 },
 {
-["combatId"] = 1633,
 ["tipo"] = 2,
+["combatId"] = 1633,
 ["_ActorTable"] = {
 },
 },
@@ -6150,11 +6150,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1654,
+["playing_solo"] = true,
 ["totals"] = {
 840,
 0,
@@ -6168,10 +6165,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6182,11 +6179,11 @@ _detalhes_database = {
 },
 ["frags_need_refresh"] = true,
 ["amountCasts"] = {
-["QM <Mq>"] = {
-["Bite"] = 1,
-},
 ["Giant Moss Creeper"] = {
 ["Corrosive Poison"] = 1,
+},
+["QM <Mq>"] = {
+["Bite"] = 1,
 },
 ["Mq"] = {
 ["Auto Shot"] = 6,
@@ -6216,11 +6213,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1633,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Giant Moss Creeper"] = 1,
 },
-["combat_counter"] = 1654,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 725,
 0,
@@ -6234,10 +6234,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6247,13 +6247,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6265,18 +6265,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276561.485,
-["TimeData"] = {
-},
 ["contra"] = "Giant Moss Creeper",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1632,
 ["tipo"] = 2,
+["combatId"] = 1632,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002828,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -6285,7 +6284,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 700.002828,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -6293,22 +6294,48 @@ _detalhes_database = {
 ["targets"] = {
 ["Starving Mountain Lion"] = 700,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974530,
+["totalabsorbed"] = 0.002828,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
+[14282] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Starving Mountain Lion"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 33,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 14282,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 33,
+["r_amt"] = 0,
+},
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 0,
 },
@@ -6330,42 +6357,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[14282] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 33,
-["targets"] = {
-["Starving Mountain Lion"] = 33,
-},
-["n_total"] = 33,
-["n_min"] = 33,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 33,
-["c_max"] = 0,
-["id"] = 14282,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 59,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 312,
 },
@@ -6386,14 +6385,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 101,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 59,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 48,
 },
@@ -6415,20 +6414,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 43.57316078430741,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974529,
 ["damage_taken"] = 0.002828,
 ["start_time"] = 1725974514,
 ["delay"] = 0,
-["last_event"] = 1725974529,
+["last_dps"] = 43.57316078430741,
 },
 {
 ["flag_original"] = 4369,
@@ -6440,32 +6440,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 307.004242,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Starving Mountain Lion"] = true,
 },
 ["targets"] = {
 ["Starving Mountain Lion"] = 307,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974530,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 31,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 219,
 },
@@ -6487,14 +6486,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 107,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 55,
 },
@@ -6515,14 +6514,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 55,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 33,
 },
@@ -6543,36 +6542,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 19.11013022097451,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974528,
 ["damage_taken"] = 142.004242,
 ["start_time"] = 1725974514,
 ["delay"] = 0,
-["last_event"] = 1725974528,
+["last_dps"] = 19.11013022097451,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002655,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 142.002655,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 142.002655,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2384-00006025B4",
-["aID"] = "2384",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -6580,20 +6579,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 142,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002655,
+["fight_component"] = true,
 ["end_time"] = 1725974530,
+["aID"] = "2384",
 ["nome"] = "Starving Mountain Lion",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 142,
 ["QM"] = 0,
@@ -6616,119 +6616,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974528,
 ["damage_taken"] = 700.002655,
 ["start_time"] = 1725974515,
 ["delay"] = 0,
-["last_event"] = 1725974528,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1632,
 ["tipo"] = 3,
+["combatId"] = 1632,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1632,
 ["tipo"] = 7,
+["combatId"] = 1632,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1632,
 ["tipo"] = 9,
+["combatId"] = 1632,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 2,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 12,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 16,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 16,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 14,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 14,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974530,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1632,
 ["tipo"] = 2,
+["combatId"] = 1632,
 ["_ActorTable"] = {
 },
 },
@@ -6743,11 +6743,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1653,
+["playing_solo"] = true,
 ["totals"] = {
 842,
 0,
@@ -6761,10 +6758,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6805,11 +6802,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1632,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Starving Mountain Lion"] = 1,
 },
-["combat_counter"] = 1653,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 700,
 0,
@@ -6823,10 +6823,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6836,13 +6836,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6854,18 +6854,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276510.621,
-["TimeData"] = {
-},
 ["contra"] = "Starving Mountain Lion",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1631,
 ["tipo"] = 2,
+["combatId"] = 1631,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007787,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -6874,7 +6873,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 660.007787,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -6882,22 +6883,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Starving Mountain Lion"] = 660,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974495,
+["totalabsorbed"] = 0.007787,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 376,
 },
@@ -6918,14 +6917,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 64,
 },
@@ -6946,20 +6945,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 39.75232108654394,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974493,
 ["damage_taken"] = 0.007787,
 ["start_time"] = 1725974478,
 ["delay"] = 0,
-["last_event"] = 1725974493,
+["last_dps"] = 39.75232108654394,
 },
 {
 ["flag_original"] = 4369,
@@ -6971,32 +6971,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 220.00892,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Starving Mountain Lion"] = true,
 },
 ["targets"] = {
 ["Starving Mountain Lion"] = 220,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974495,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 165,
 },
@@ -7018,14 +7017,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 51,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 10,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 27,
 },
@@ -7035,26 +7034,26 @@ _detalhes_database = {
 ["counter"] = 4,
 ["total"] = 27,
 ["c_max"] = 0,
-["BLOCK"] = 1,
+["spellschool"] = 1,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
+["BLOCK"] = 1,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 10,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 28,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 28,
 },
@@ -7075,36 +7074,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 28,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 13.25115461061031,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974491,
 ["damage_taken"] = 160.00892,
 ["start_time"] = 1725974478,
 ["delay"] = 0,
-["last_event"] = 1725974491,
+["last_dps"] = 13.25115461061031,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003818,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 160.003818,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 160.003818,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2384-00006025AF",
-["aID"] = "2384",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -7112,20 +7111,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 160,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003818,
+["fight_component"] = true,
 ["end_time"] = 1725974495,
+["aID"] = "2384",
 ["nome"] = "Starving Mountain Lion",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 2,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 26,
 ["targets"] = {
 ["QM <Mq>"] = 160,
 ["QM"] = 0,
@@ -7135,12 +7135,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 14,
 ["a_amt"] = 0,
-["total"] = 160,
-["c_max"] = 22,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 22,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -7149,119 +7149,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 22,
 ["n_amt"] = 11,
-["b_dmg"] = 26,
-["r_amt"] = 0,
+["n_max"] = 15,
+["total"] = 160,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974493,
 ["damage_taken"] = 660.003818,
 ["start_time"] = 1725974479,
 ["delay"] = 0,
-["last_event"] = 1725974493,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1631,
 ["tipo"] = 3,
+["combatId"] = 1631,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1631,
 ["tipo"] = 7,
+["combatId"] = 1631,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1631,
 ["tipo"] = 9,
+["combatId"] = 1631,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 17,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 17,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 17,
 ["debuff_uptime"] = 17,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725974495,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1631,
 ["tipo"] = 2,
+["combatId"] = 1631,
 ["_ActorTable"] = {
 },
 },
@@ -7276,11 +7276,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1652,
+["playing_solo"] = true,
 ["totals"] = {
 820,
 0,
@@ -7294,10 +7291,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7340,11 +7337,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1631,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Starving Mountain Lion"] = 1,
 },
-["combat_counter"] = 1652,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 660,
 0,
@@ -7358,10 +7358,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7371,13 +7371,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7389,18 +7389,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276474.516,
-["TimeData"] = {
-},
 ["contra"] = "Starving Mountain Lion",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1630,
 ["tipo"] = 2,
+["combatId"] = 1630,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001135,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -7409,7 +7408,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 668.001135,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -7417,50 +7418,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Starving Mountain Lion"] = 668,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974469,
+["totalabsorbed"] = 0.001135,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
-[14282] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 33,
-["targets"] = {
-["Starving Mountain Lion"] = 33,
-},
-["n_total"] = 33,
-["n_min"] = 33,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 33,
-["c_max"] = 0,
-["id"] = 14282,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 64,
 },
@@ -7481,14 +7452,42 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
+["n_max"] = 16,
+["r_amt"] = 0,
+},
+[14282] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
 ["b_dmg"] = 0,
+["targets"] = {
+["Starving Mountain Lion"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 33,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 14282,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 56,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 321,
 },
@@ -7509,14 +7508,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 56,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 0,
 },
@@ -7538,20 +7537,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 42.53158888321421,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974468,
 ["damage_taken"] = 0.001135,
 ["start_time"] = 1725974453,
 ["delay"] = 0,
-["last_event"] = 1725974468,
+["last_dps"] = 42.53158888321421,
 },
 {
 ["flag_original"] = 4369,
@@ -7563,32 +7563,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 250.006918,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Starving Mountain Lion"] = true,
 },
 ["targets"] = {
 ["Starving Mountain Lion"] = 250,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974469,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 2,
 ["g_amt"] = 0,
-["n_max"] = 31,
+["b_dmg"] = 31,
 ["targets"] = {
 ["Starving Mountain Lion"] = 232,
 },
@@ -7609,14 +7608,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["b_dmg"] = 31,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 18,
 },
@@ -7626,26 +7625,26 @@ _detalhes_database = {
 ["counter"] = 3,
 ["total"] = 18,
 ["c_max"] = 0,
-["BLOCK"] = 1,
+["spellschool"] = 1,
 ["id"] = 24423,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
+["BLOCK"] = 1,
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 0,
 },
@@ -7667,36 +7666,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 15.91792423277162,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974468,
 ["damage_taken"] = 159.006918,
 ["start_time"] = 1725974453,
 ["delay"] = 0,
-["last_event"] = 1725974468,
+["last_dps"] = 15.91792423277162,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005041,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 159.005041,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 159.005041,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2384-0000602580",
-["aID"] = "2384",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -7704,20 +7703,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 159,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005041,
+["fight_component"] = true,
 ["end_time"] = 1725974469,
+["aID"] = "2384",
 ["nome"] = "Starving Mountain Lion",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 13,
 ["targets"] = {
 ["QM <Mq>"] = 159,
 ["QM"] = 0,
@@ -7740,119 +7740,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 12,
-["b_dmg"] = 13,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974467,
 ["damage_taken"] = 668.005041,
 ["start_time"] = 1725974453,
 ["delay"] = 0,
-["last_event"] = 1725974467,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1630,
 ["tipo"] = 3,
+["combatId"] = 1630,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1630,
 ["tipo"] = 7,
+["combatId"] = 1630,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1630,
 ["tipo"] = 9,
+["combatId"] = 1630,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 16,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 16,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 18,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 18,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974469,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1630,
 ["tipo"] = 2,
+["combatId"] = 1630,
 ["_ActorTable"] = {
 },
 },
@@ -7867,11 +7867,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1651,
+["playing_solo"] = true,
 ["totals"] = {
 827,
 0,
@@ -7885,10 +7882,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7931,11 +7928,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1630,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Starving Mountain Lion"] = 1,
 },
-["combat_counter"] = 1651,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 668,
 0,
@@ -7949,10 +7949,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7962,13 +7962,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7980,18 +7980,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276449.51,
-["TimeData"] = {
-},
 ["contra"] = "Starving Mountain Lion",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1629,
 ["tipo"] = 2,
+["combatId"] = 1629,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006299,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -8000,7 +7999,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 817.006299,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -8008,22 +8009,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Vicious Gray Bear"] = 817,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974443,
+["totalabsorbed"] = 0.006299,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 99,
 },
@@ -8044,14 +8043,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 72,
+["b_dmg"] = 59,
 ["targets"] = {
 ["Vicious Gray Bear"] = 380,
 },
@@ -8072,14 +8071,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 59,
+["n_max"] = 72,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 48,
 },
@@ -8100,20 +8099,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 59.10057139772274,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974442,
 ["damage_taken"] = 0.006299,
 ["start_time"] = 1725974429,
 ["delay"] = 0,
-["last_event"] = 1725974442,
+["last_dps"] = 59.10057139772274,
 },
 {
 ["flag_original"] = 4369,
@@ -8125,32 +8125,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 290.004185,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Vicious Gray Bear"] = true,
 },
 ["targets"] = {
 ["Vicious Gray Bear"] = 290,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974443,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 35,
+["b_dmg"] = 21,
 ["targets"] = {
 ["Vicious Gray Bear"] = 218,
 },
@@ -8171,14 +8170,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 21,
+["n_max"] = 35,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 12,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 42,
 },
@@ -8199,14 +8198,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 12,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 30,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 30,
 },
@@ -8227,36 +8226,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 30,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 20.97831199368867,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974441,
 ["damage_taken"] = 137.004185,
 ["start_time"] = 1725974429,
 ["delay"] = 0,
-["last_event"] = 1725974441,
+["last_dps"] = 20.97831199368867,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002614,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 137.002614,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 137.002614,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2354-0000602547",
-["aID"] = "2354",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -8264,20 +8263,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 137,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002614,
+["fight_component"] = true,
 ["end_time"] = 1725974443,
+["aID"] = "2354",
 ["nome"] = "Vicious Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 24,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 137,
 ["QM"] = 0,
@@ -8287,12 +8287,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 7,
 ["MISS"] = 1,
-["total"] = 137,
-["c_max"] = 48,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 48,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -8301,119 +8301,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 48,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 24,
+["total"] = 137,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974441,
 ["damage_taken"] = 817.002614,
 ["start_time"] = 1725974429,
 ["delay"] = 0,
-["last_event"] = 1725974441,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1629,
 ["tipo"] = 3,
+["combatId"] = 1629,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1629,
 ["tipo"] = 7,
+["combatId"] = 1629,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1629,
 ["tipo"] = 9,
+["combatId"] = 1629,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 14,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974443,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1629,
 ["tipo"] = 2,
+["combatId"] = 1629,
 ["_ActorTable"] = {
 },
 },
@@ -8428,11 +8428,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1650,
+["playing_solo"] = true,
 ["totals"] = {
 954,
 0,
@@ -8446,10 +8443,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8492,11 +8489,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1629,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Vicious Gray Bear"] = 1,
 },
-["combat_counter"] = 1650,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 817,
 0,
@@ -8510,10 +8510,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8523,13 +8523,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8541,18 +8541,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276425.497,
-["TimeData"] = {
-},
 ["contra"] = "Vicious Gray Bear",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1628,
 ["tipo"] = 2,
+["combatId"] = 1628,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006398,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -8561,7 +8560,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 667.006398,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -8569,22 +8570,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Starving Mountain Lion"] = 667,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974401,
+["totalabsorbed"] = 0.006398,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 64,
 },
@@ -8605,14 +8604,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 57,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 324,
 },
@@ -8633,14 +8632,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 57,
 ["r_amt"] = 0,
 },
 [2] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 0,
 },
@@ -8662,20 +8661,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 43.36560678761215,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974400,
 ["damage_taken"] = 0.006398,
 ["start_time"] = 1725974385,
 ["delay"] = 0,
-["last_event"] = 1725974400,
+["last_dps"] = 43.36560678761215,
 },
 {
 ["flag_original"] = 4369,
@@ -8687,32 +8687,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 279.003647,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Starving Mountain Lion"] = true,
 },
 ["targets"] = {
 ["Starving Mountain Lion"] = 279,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974401,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["n_max"] = 31,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 230,
 },
@@ -8733,14 +8732,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 28,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 28,
 },
@@ -8761,14 +8760,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 28,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 7,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 21,
 },
@@ -8789,36 +8788,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 7,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 18.13949983746894,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974399,
 ["damage_taken"] = 168.003647,
 ["start_time"] = 1725974385,
 ["delay"] = 0,
-["last_event"] = 1725974399,
+["last_dps"] = 18.13949983746894,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00268,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 168.00268,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 168.00268,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2384-00006025A0",
-["aID"] = "2384",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -8826,20 +8825,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 168,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00268,
+["fight_component"] = true,
 ["end_time"] = 1725974401,
+["aID"] = "2384",
 ["nome"] = "Starving Mountain Lion",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 168,
 },
@@ -8860,119 +8860,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 12,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974399,
 ["damage_taken"] = 667.00268,
 ["start_time"] = 1725974385,
 ["delay"] = 0,
-["last_event"] = 1725974399,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1628,
 ["tipo"] = 3,
+["combatId"] = 1628,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1628,
 ["tipo"] = 7,
+["combatId"] = 1628,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1628,
 ["tipo"] = 9,
+["combatId"] = 1628,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 1,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 15,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 18,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 18,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974401,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1628,
 ["tipo"] = 2,
+["combatId"] = 1628,
 ["_ActorTable"] = {
 },
 },
@@ -8987,11 +8987,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1649,
+["playing_solo"] = true,
 ["totals"] = {
 835,
 0,
@@ -9005,10 +9002,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9050,11 +9047,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1628,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Starving Mountain Lion"] = 1,
 },
-["combat_counter"] = 1649,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 667,
 0,
@@ -9068,10 +9068,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9081,13 +9081,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -9099,18 +9099,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276381.838,
-["TimeData"] = {
-},
 ["contra"] = "Starving Mountain Lion",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1627,
 ["tipo"] = 2,
+["combatId"] = 1627,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006004,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -9119,7 +9118,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 841.0060040000001,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -9127,22 +9128,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Vicious Gray Bear"] = 841,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974376,
+["totalabsorbed"] = 0.006004,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 64,
 },
@@ -9163,14 +9162,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 71,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 455,
 },
@@ -9191,14 +9190,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 71,
 ["r_amt"] = 0,
 },
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 33,
 },
@@ -9219,20 +9218,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 54.67113072882417,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974374,
 ["damage_taken"] = 0.006004,
 ["start_time"] = 1725974360,
 ["delay"] = 0,
-["last_event"] = 1725974374,
+["last_dps"] = 54.67113072882417,
 },
 {
 ["flag_original"] = 4369,
@@ -9244,32 +9244,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 289.007023,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Vicious Gray Bear"] = true,
 },
 ["targets"] = {
 ["Vicious Gray Bear"] = 289,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974376,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 36,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 227,
 },
@@ -9290,14 +9289,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 36,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 33,
 },
@@ -9318,14 +9317,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 11,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Vicious Gray Bear"] = 29,
 },
@@ -9346,36 +9345,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 11,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 18.78742917509694,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974374,
 ["damage_taken"] = 147.007023,
 ["start_time"] = 1725974361,
 ["delay"] = 0,
-["last_event"] = 1725974374,
+["last_dps"] = 18.78742917509694,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.008914,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 147.008914,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 147.008914,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2354-0000602612",
-["aID"] = "2354",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Mq"] = true,
 ["QM <Mq>"] = true,
@@ -9383,20 +9382,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 147,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.008914,
+["fight_component"] = true,
 ["end_time"] = 1725974376,
+["aID"] = "2354",
 ["nome"] = "Vicious Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 24,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 147,
 ["QM"] = 0,
@@ -9419,119 +9419,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 24,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974374,
 ["damage_taken"] = 841.008914,
 ["start_time"] = 1725974360,
 ["delay"] = 0,
-["last_event"] = 1725974374,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1627,
 ["tipo"] = 3,
+["combatId"] = 1627,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1627,
 ["tipo"] = 7,
+["combatId"] = 1627,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1627,
 ["tipo"] = 9,
+["combatId"] = 1627,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 2,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 16,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 16,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 16,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 16,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974376,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1627,
 ["tipo"] = 2,
+["combatId"] = 1627,
 ["_ActorTable"] = {
 },
 },
@@ -9546,11 +9546,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1648,
+["playing_solo"] = true,
 ["totals"] = {
 988,
 0,
@@ -9564,10 +9561,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9608,11 +9605,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1627,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Vicious Gray Bear"] = 1,
 },
-["combat_counter"] = 1648,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 841,
 0,
@@ -9626,10 +9626,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9639,13 +9639,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -9657,18 +9657,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276356.737,
-["TimeData"] = {
-},
 ["contra"] = "Vicious Gray Bear",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1626,
 ["tipo"] = 2,
+["combatId"] = 1626,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006211,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -9677,7 +9676,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 621.006211,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -9685,22 +9686,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Starving Mountain Lion"] = 621,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974350,
+["totalabsorbed"] = 0.006211,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 33,
 },
@@ -9721,14 +9720,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 60,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 322,
 },
@@ -9749,14 +9748,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 98,
 ["n_amt"] = 4,
-["b_dmg"] = 0,
+["n_max"] = 60,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 48,
 },
@@ -9777,20 +9776,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 51.18323670967007,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974348,
 ["damage_taken"] = 0.006211,
 ["start_time"] = 1725974338,
 ["delay"] = 0,
-["last_event"] = 1725974348,
+["last_dps"] = 51.18323670967007,
 },
 {
 ["flag_original"] = 4369,
@@ -9802,32 +9802,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 218.00468,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Starving Mountain Lion"] = true,
 },
 ["targets"] = {
 ["Starving Mountain Lion"] = 218,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974350,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 2,
 ["g_amt"] = 0,
-["n_max"] = 31,
+["b_dmg"] = 31,
 ["targets"] = {
 ["Vicious Gray Bear"] = 0,
 ["Starving Mountain Lion"] = 177,
@@ -9850,14 +9849,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 59,
 ["n_amt"] = 5,
-["b_dmg"] = 31,
+["n_max"] = 31,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 25,
 },
@@ -9878,14 +9877,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["r_amt"] = 0,
 },
 [24423] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Starving Mountain Lion"] = 16,
 },
@@ -9906,36 +9905,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 17.9679123052376,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974360,
 ["damage_taken"] = 104.00468,
 ["start_time"] = 1725974338,
 ["delay"] = 0,
-["last_event"] = 1725974360,
+["last_dps"] = 17.9679123052376,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005859,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 104.005859,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 104.005859,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2384-00006025D4",
-["aID"] = "2384",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -9943,20 +9942,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 104,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005859,
+["fight_component"] = true,
 ["end_time"] = 1725974350,
+["aID"] = "2384",
 ["nome"] = "Starving Mountain Lion",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 1,
 ["g_amt"] = 0,
-["n_max"] = 15,
+["b_dmg"] = 12,
 ["targets"] = {
 ["QM <Mq>"] = 104,
 ["QM"] = 0,
@@ -9979,119 +9979,119 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 8,
-["b_dmg"] = 12,
+["n_max"] = 15,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974347,
 ["damage_taken"] = 621.005859,
 ["start_time"] = 1725974338,
 ["delay"] = 0,
-["last_event"] = 1725974347,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1626,
 ["tipo"] = 3,
+["combatId"] = 1626,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1626,
 ["tipo"] = 7,
+["combatId"] = 1626,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1626,
 ["tipo"] = 9,
+["combatId"] = 1626,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5116] = {
-["activedamt"] = 0,
-["id"] = 5116,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 3,
-["appliedamt"] = 1,
+["id"] = 5116,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 9,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["buff_uptime_targets"] = {
-},
-["classe"] = "HUNTER",
 ["buff_uptime"] = 12,
+["classe"] = "HUNTER",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 12,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 12,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 12,
-["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["last_event"] = 1725974350,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1626,
 ["tipo"] = 2,
+["combatId"] = 1626,
 ["_ActorTable"] = {
 },
 },
@@ -10106,11 +10106,8 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
+["combat_counter"] = 1647,
+["playing_solo"] = true,
 ["totals"] = {
 725,
 0,
@@ -10124,10 +10121,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10168,11 +10165,14 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1626,
 ["boss_hp"] = 1,
-["playing_solo"] = true,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Starving Mountain Lion"] = 1,
 },
-["combat_counter"] = 1647,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 621,
 0,
@@ -10186,10 +10186,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10199,13 +10199,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -10217,18 +10217,17 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 276334.082,
-["TimeData"] = {
-},
 ["contra"] = "Starving Mountain Lion",
+["playerTalents"] = {
+},
 },
 {
 {
-["combatId"] = 1625,
 ["tipo"] = 2,
+["combatId"] = 1625,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005668,
 ["pets"] = {
 "QM <Mq>",
 },
@@ -10237,7 +10236,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 965.005668,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-5266-026B513C",
 ["damage_from"] = {
@@ -10245,22 +10246,20 @@ _detalhes_database = {
 ["targets"] = {
 ["Elder Gray Bear"] = 965,
 },
-["colocacao"] = 1,
-["aID"] = "5266-026B513C",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974327,
+["totalabsorbed"] = 0.005668,
+["aID"] = "5266-026B513C",
 ["nome"] = "Mq",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [14282] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 33,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 66,
 },
@@ -10281,14 +10280,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 33,
 ["r_amt"] = 0,
 },
 [75] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 69,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 457,
 },
@@ -10309,14 +10308,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
+["n_max"] = 69,
 ["r_amt"] = 0,
 },
 [13550] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 16,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 80,
 },
@@ -10337,20 +10336,21 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 16,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 49.07723480648819,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974327,
 ["damage_taken"] = 0.005668,
 ["start_time"] = 1725974308,
 ["delay"] = 0,
-["last_event"] = 1725974327,
+["last_dps"] = 49.07723480648819,
 },
 {
 ["flag_original"] = 4369,
@@ -10362,32 +10362,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 362.006186,
-["on_hold"] = false,
+["colocacao"] = 2,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 ["Elder Gray Bear"] = true,
 },
 ["targets"] = {
 ["Elder Gray Bear"] = 362,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1725974327,
+["aID"] = "",
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 38,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 304,
 },
@@ -10396,12 +10395,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 10,
 ["a_amt"] = 0,
-["total"] = 304,
-["c_max"] = 64,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["DODGE"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 64,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -10410,14 +10409,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 64,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 38,
+["total"] = 304,
 },
 [24423] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 26,
 },
@@ -10439,14 +10438,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 18,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["r_amt"] = 0,
 },
 [17256] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 32,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Elder Gray Bear"] = 32,
 },
@@ -10467,36 +10466,36 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 32,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 18.4105266744643,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974326,
 ["damage_taken"] = 224.006186,
 ["start_time"] = 1725974308,
 ["delay"] = 0,
-["last_event"] = 1725974326,
+["last_dps"] = 18.4105266744643,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.008066,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 224.008066,
 ["last_dps_realtime"] = 0,
-["dps_started"] = false,
+["monster"] = true,
 ["total"] = 224.008066,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-0-77-2356-00005F4958",
-["aID"] = "2356",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["QM <Mq>"] = true,
 ["Mq"] = true,
@@ -10504,20 +10503,21 @@ _detalhes_database = {
 ["targets"] = {
 ["QM <Mq>"] = 224,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.008066,
+["fight_component"] = true,
 ["end_time"] = 1725974327,
+["aID"] = "2356",
 ["nome"] = "Elder Gray Bear",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 28,
+["b_dmg"] = 0,
 ["targets"] = {
 ["QM <Mq>"] = 224,
 ["QM"] = 0,
@@ -10527,12 +10527,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 10,
 ["a_amt"] = 0,
-["total"] = 224,
-["c_max"] = 52,
+["r_amt"] = 0,
+["spellschool"] = 1,
 ["MISS"] = 1,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["spellschool"] = 1,
+["c_max"] = 52,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -10541,114 +10541,112 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 52,
 ["n_amt"] = 7,
-["b_dmg"] = 0,
-["r_amt"] = 0,
+["n_max"] = 28,
+["total"] = 224,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["dps_started"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1725974327,
 ["damage_taken"] = 965.008066,
 ["start_time"] = 1725974310,
 ["delay"] = 0,
-["last_event"] = 1725974327,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 1625,
 ["tipo"] = 3,
+["combatId"] = 1625,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1625,
 ["tipo"] = 7,
+["combatId"] = 1625,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 1625,
 ["tipo"] = 9,
+["combatId"] = 1625,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [13550] = {
-["activedamt"] = 0,
-["id"] = 13550,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 13550,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["serial"] = "Player-5266-026B513C",
-["buff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 "QM <Mq>",
 },
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 19,
 ["classe"] = "HUNTER",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 19,
 ["debuff_uptime"] = 15,
-["aID"] = "5266-026B513C",
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["nome"] = "Mq",
 ["last_event"] = 1725974327,
+["aID"] = "5266-026B513C",
+["serial"] = "Player-5266-026B513C",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
-["classe"] = "PET",
 ["aID"] = "",
-["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
-["grupo"] = true,
 ["ownerName"] = "Mq",
 ["nome"] = "QM <Mq>",
-["last_event"] = 0,
+["grupo"] = true,
 ["tipo"] = 4,
+["classe"] = "PET",
+["serial"] = "Pet-0-5210-0-89-154-0200A6F426",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 1625,
 ["tipo"] = 2,
+["combatId"] = 1625,
 ["_ActorTable"] = {
 },
 },
-["raid_roster"] = {
-["Mq"] = "Player-5266-026B513C",
-},
+["boss_hp"] = 1,
 ["CombatStartedAt"] = 276332.16,
 ["tempo_start"] = 1725974308,
 ["last_events_tables"] = {
@@ -10657,9 +10655,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 1646,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -10675,10 +10671,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -10721,11 +10717,13 @@ _detalhes_database = {
 ["mapId"] = 0,
 ["combat_id"] = 1625,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["frags"] = {
 ["Elder Gray Bear"] = 1,
 },
-["combat_counter"] = 1646,
+["spells_cast_timeline"] = {
+},
 ["totals_grupo"] = {
 965,
 0,
@@ -10739,26 +10737,29 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
+},
+["raid_roster"] = {
+["Mq"] = "Player-5266-026B513C",
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -10767,22 +10768,21 @@ _detalhes_database = {
 },
 },
 },
-["spells_cast_timeline"] = {
-},
 ["start_time"] = 276303.861,
-["TimeData"] = {
-},
 ["contra"] = "Elder Gray Bear",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 },
 },
 ["ocd_tracker"] = {
-["show_title"] = true,
+["enabled"] = false,
 ["current_cooldowns"] = {
 },
 ["lines_per_column"] = 12,
 ["group_frames"] = true,
-["show_options"] = false,
+["width"] = 120,
 ["frames"] = {
 ["defensive-raid"] = {
 },
@@ -10797,12 +10797,12 @@ _detalhes_database = {
 ["defensive-personal"] = {
 },
 },
-["width"] = 120,
+["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
+["framme_locked"] = false,
 ["cooldowns"] = {
 },
-["height"] = 18,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -10810,12 +10810,12 @@ _detalhes_database = {
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["framme_locked"] = false,
+["height"] = 18,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["enabled"] = false,
+["show_title"] = true,
 ["filters"] = {
 ["itemutil"] = false,
 ["itempower"] = false,
@@ -10874,10 +10874,10 @@ _detalhes_database = {
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["playerKey"] = "total",
-["combatObjectContainer"] = 1,
 ["name"] = "Damage of Each Individual Player",
 ["playerOnly"] = true,
+["playerKey"] = "total",
+["combatObjectContainer"] = 1,
 },
 },
 ["totals"] = {
@@ -10910,14 +10910,20 @@ _detalhes_database = {
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["last_day"] = "10",
+["benchmark_db"] = {
+["frame"] = {
+},
+},
 ["mythic_plus_log"] = {
+},
+["last_day"] = "11",
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
-},
-["cached_roles"] = {
 },
 ["mythic_dungeon_currentsaved"] = {
 ["dungeon_name"] = "",
@@ -10930,110 +10936,10 @@ _detalhes_database = {
 ["dungeon_zone_id"] = 0,
 ["previous_boss_killed_at"] = 0,
 },
-["data_harvested_for_charts"] = {
+["cached_talents"] = {
 },
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["animate"] = false,
-["hide_pull_bar"] = false,
-["author"] = "Terciob",
-["playercolor"] = {
-1,
-1,
-1,
-},
-["usefocus"] = false,
-["updatespeed"] = 1,
-["playSound"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["useclasscolors"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["disable_gouge"] = false,
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["use_square_mode"] = false,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["point"] = "RIGHT",
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["author"] = "Details! Team",
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["font_size"] = 10,
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["main_frame_strata"] = "LOW",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["use_spark"] = false,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["y"] = -183.107162475586,
-["scale"] = 1,
-["main_frame_locked"] = true,
-["arrow_anchor_y"] = 0,
-},
-},
-["announce_prepots"] = {
-["enabled"] = false,
-["channel"] = "SELF",
-["reverse"] = false,
+["character_data"] = {
+["logons"] = 54,
 },
 ["local_instances_config"] = {
 {
@@ -11570,6 +11476,83 @@ false,
 {
 ["tipo"] = 9,
 ["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["debuff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[5116] = {
+["id"] = 5116,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[13550] = {
+["id"] = 13550,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[15571] = {
+["id"] = 15571,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+},
+["tipo"] = 4,
+["pets"] = {
+},
+["debuff_uptime_targets"] = {
+},
+["aID"] = "5266-026B513C",
+["grupo"] = true,
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[5118] = {
+["id"] = 5118,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+},
+["buff_uptime_targets"] = {
+},
+["debuff_uptime"] = 0,
+["buff_uptime"] = 0,
+["classe"] = "HUNTER",
+["nome"] = "Mq",
+["serial"] = "Player-5266-026B513C",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 4369,
+["tipo"] = 4,
+["pets"] = {
+},
+["classe"] = "PET",
+["grupo"] = true,
+["serial"] = "Pet-0-5210-0-92-154-0100A6F426",
+["aID"] = "",
+["nome"] = "QM <Mq>",
+["last_event"] = 0,
+},
+{
+["flag_original"] = 2632,
+["serial"] = "Creature-0-5208-0-77-2349-001757B4FC",
+["fight_component"] = true,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["tipo"] = 4,
+["monster"] = true,
+["aID"] = "2349",
+["nome"] = "Giant Moss Creeper",
+["last_event"] = 0,
+},
 },
 },
 {
@@ -11584,26 +11567,7 @@ false,
 },
 ["alternate_power"] = {
 },
-["totals_grupo"] = {
-0,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
+["segments_added"] = {
 },
 ["bossTimers"] = {
 },
@@ -11624,29 +11588,51 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 ["frags_total"] = 0,
 ["voidzone_damage"] = 0,
 },
-["player_last_events"] = {
+["totals_grupo"] = {
+0,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
 },
 ["frags_need_refresh"] = false,
 ["aura_timeline"] = {
 },
+["overall_refreshed"] = true,
 ["data_inicio"] = 0,
 ["amountCasts"] = {
 },
 ["mapId"] = 0,
+["zoneName"] = "Eastern Kingdoms",
+["player_last_events"] = {
+},
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["zoneName"] = "Eastern Kingdoms",
 ["boss_hp"] = 1,
 ["frags"] = {
 },
@@ -11660,11 +11646,11 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
-},
-["damage_section"] = {
 },
 ["damage"] = {
 },
@@ -11674,19 +11660,115 @@ false,
 },
 ["combat_counter"] = 1618,
 },
-["character_data"] = {
-["logons"] = 53,
+["announce_prepots"] = {
+["enabled"] = false,
+["channel"] = "SELF",
+["reverse"] = false,
 },
-["benchmark_db"] = {
-["frame"] = {
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["animate"] = false,
+["hide_pull_bar"] = false,
+["author"] = "Terciob",
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["updatespeed"] = 1,
+["disable_gouge"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["useclasscolors"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["playSound"] = false,
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["arrow_anchor_y"] = 0,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_x"] = 0,
+["scale"] = 1,
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["y"] = -183.107162475586,
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["attribute_type"] = 1,
+["update_speed"] = 0.05,
+["size"] = 32,
+},
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["use_spark"] = false,
+["font_size"] = 10,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["author"] = "Details! Team",
+["point"] = "RIGHT",
+["row_height"] = 18,
+["use_square_mode"] = false,
 },
 },
-["cached_talents"] = {
+["data_harvested_for_charts"] = {
 },
 ["announce_cooldowns"] = {
-["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
+["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -11694,9 +11776,7 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["cached_roles"] = {
 },
 ["cached_specs"] = {
 },
