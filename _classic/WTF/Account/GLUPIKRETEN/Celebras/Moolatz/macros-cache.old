@@ -82,3 +82,8 @@ VER 3 0000000001000017 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Regrowth
 END
+VER 3 0000000001000018 " " "134400"
+#showtooltip
+/startattack
+/cast wrath
+END

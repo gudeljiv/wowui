@@ -308,8 +308,20 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -345,20 +357,8 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
@@ -366,8 +366,9 @@ xVerminSavedData = {
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
 },
-["Ironspine"] = {
-"Rend",
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
 },
 ["Ruuzlu"] = {
 "Charge Stun",
@@ -384,9 +385,8 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Remote-Controlled Golem"] = {
+"Rend",
 },
 ["Rock Elemental"] = {
 "Serpent Sting",
@@ -406,13 +406,13 @@ xVerminSavedData = {
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
 },
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
-},
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
 "Entrapment",
+},
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -421,12 +421,12 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
+["Ironspine"] = {
+"Rend",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",

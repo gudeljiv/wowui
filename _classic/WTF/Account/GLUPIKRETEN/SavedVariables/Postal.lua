@@ -16,9 +16,9 @@ Postal3DB = {
 ["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
@@ -55,7 +55,7 @@ Postal3DB = {
 "Dopetrap|Lone Wolf|Horde|1|HUNTER",
 "Jutarnjedrvo|Lone Wolf|Horde|50|SHAMAN",
 "Lonac|Stitches|Horde|1|WARRIOR",
-"Moolatz|Celebras|Alliance|8|DRUID",
+"Moolatz|Celebras|Alliance|11|DRUID",
 "Mq|Celebras|Alliance|25|HUNTER",
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Turbonac|Celebras|Alliance|7|WARLOCK",
@@ -161,10 +161,6 @@ Postal3DB = {
 },
 },
 },
-["Dopedot - Lone Wolf"] = {
-},
-["Turbonac - Celebras"] = {
-},
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
@@ -173,6 +169,10 @@ Postal3DB = {
 "Dibsie-Celebras|Celebras|Alliance",
 },
 },
+},
+["Dopedot - Lone Wolf"] = {
+},
+["Turbonac - Celebras"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
