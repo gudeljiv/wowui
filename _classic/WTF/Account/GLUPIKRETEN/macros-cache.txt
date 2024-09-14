@@ -60,7 +60,9 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3667
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Young Reef Crawler
+/targetexact Pygmy Tide Crawler
+/targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip
