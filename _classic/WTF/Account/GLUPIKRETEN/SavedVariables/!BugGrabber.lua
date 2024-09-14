@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12732,
+["session"] = 12736,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -3764,14 +3764,6 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
-["message"] = "[string \"print(xRange(\"target\"))\"]:1: attempt to call global 'xRange' (a nil value)",
-["time"] = "2024/01/03 11:40:54",
-["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
-["stack"] = "[string \"print(xRange(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-["session"] = 12511,
-["counter"] = 3,
-},
-{
 ["message"] = "Interface/AddOns/LoonBestInSlot/LoonBestInSlot.lua:150: attempt to index local 'enchantSource' (a nil value)",
 ["time"] = "2024/07/27 17:11:29",
 ["locals"] = "self = <table> {\n SpellsByIdAndSpec = <table> {\n }\n ReCacheItem = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:184\n Startup = <function> defined @Interface/AddOns/LoonBestInSlot/LoonBestInSlot.lua:37\n DeepCopy = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:540\n SpellCache = <table> {\n }\n DebuggingItem = -1\n EventFrame = LoonBestInSlotEvents {\n }\n EnchantsBySpecAndId = <table> {\n }\n RegisterSpec = <function> defined @Interface/AddOns/LoonBestInSlot/LoonBestInSlot.lua:45\n IsDevItem = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:301\n GetItemIdFromLink = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:532\n CreateDropdown = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:384\n TierSources = <table> {\n }\n AddEnchant = <function> defined @Interface/AddOns/LoonBestInSlot/LoonBestInSlot.lua:133\n EnchantSources = <table> {\n }\n Error = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:30\n CacheItem = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:174\n CurrentPhase = 4\n CreateSettings = <function> defined @Interface/AddOns/LoonBestInSlot/Settings.lua:435\n AllItemsCached = false\n ENGLISH_CLASS = <table> {\n }\n MeasureCode = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:553\n Dump = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:501\n spairs = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:475\n L = <table> {\n }\n SetTooltipOnButton = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:421\n ClassSpec = <table> {\n }\n GetSpellInfo = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:343\n NameToSpecId = <table> {\n }\n ItemSources = <table> {\n }\n GetItemInfo = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:256\n RegisterEvent = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:98\n ItemsByIdAndSpec = <table> {\n }\n TableLength = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:220\n PreCacheItems = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:38\n AddItem = <function> defined @Interface/AddOns/LoonBestInSlot/LoonBestInSlot.lua:63\n FindInPhase = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:207\n GetPhaseNumbers = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:194\n ItemsBySpecAndId = <table> {\n }\n ConvertCustomList = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:157\n Debug = <function> defined @Interface/AddOns/LoonBestInSlot/Common.lua:20\n ReCacheDate = 1707951600\n Debugging = false\n}\nbisEntry = <table> {\n Phase = \"4\"\n Class = \"Druid\"\n Id = \"HealerDruid\"\n Spec = \"Healer\"\n}\nid = \"11644\"\nslot = \"Head\"\nenchantId = 11644\nenchantSource = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <table> {\n}\n(*temporary) = 4\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'enchantSource' (a nil value)\"\n",
@@ -4182,20 +4174,36 @@ BugGrabberDB = {
 ["counter"] = 13,
 },
 {
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
-["time"] = "2024/02/07 16:32:18",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
-["session"] = 12727,
-["counter"] = 54,
-},
-{
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RXPGuides' tried to call the protected function 'TargetUnit()'.",
 ["time"] = "2023/10/19 21:06:56",
 ["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 ["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/RXPGuides/Targeting.lua\"]:497: in function <Interface/AddOns/RXPGuides/Targeting.lua:474>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-["session"] = 12732,
-["counter"] = 106,
+["session"] = 12733,
+["counter"] = 107,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CheckInteractDistance()'.",
+["time"] = "2024/02/07 16:32:18",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/range.lua\"]:53: in function <...nterface/AddOns/ShadowedUnitFrames/modules/range.lua:33>",
+["session"] = 12736,
+["counter"] = 55,
+},
+{
+["message"] = "[string \"print(xRange(10))\"]:1: attempt to call global 'xRange' (a nil value)",
+["time"] = "2024/09/14 15:31:03",
+["locals"] = "(*temporary) = <function> defined @Interface/AddOns/Blizzard_PrintHandler/Blizzard_PrintHandler.lua:93\n(*temporary) = nil\n(*temporary) = 10\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
+["stack"] = "[string \"print(xRange(10))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:2240: in function `?'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:5016: in function `ChatEdit_ParseText'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:4674: in function `ChatEdit_SendText'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:4710: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 12736,
+["counter"] = 1,
+},
+{
+["message"] = "[string \"print(xRange(\"target\"))\"]:1: attempt to call global 'xRange' (a nil value)",
+["time"] = "2024/01/03 11:40:54",
+["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
+["stack"] = "[string \"print(xRange(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+["session"] = 12736,
+["counter"] = 4,
 },
 },
 }
