@@ -1,6 +1,41 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.3.2 (2024-09-15)
+
+New Spell Alert:
+- Hunter's Mongoose Bite (Era, TBC)
+
+Updated Glowing Button:
+- Shaman's Molten Blast no longer glows infinitely after leaving combat (SoD)
+
+Removed Effect:
+- Priest's Mind Spike has been removed temporarily until it is resolved (SoD)
+
+Bug Fixes
+- The options panel has been fixed for Firelands' PTR (Cataclysm)
+
+#### v2.3.1 (2024-08-04)
+
+New runes for Season of Discovery:
+- New SAO: Rogues's Cutthroat
+- New SAO: Warlock's Decimation
+- New SAO: Warrior's Sudden Death
+- New GAB: Rogues's Ambush, during Cutthroat
+- New GAB: Warlock's Drain Soul, with Soul Siphon rune
+- New GAB: Warlock's Soul Fire, during Decimation
+- New GAB: Warrior's Execute, during Sudden Death
+
+Updated runes for Season of Discovery:
+- Mage's Hot Streak triggers from Balefire Bolt
+- Mage's Hot Streak triggers from Overheat's Fire Blast
+- Warlock's Shadow Cleave glows during Shadow Trance (a.k.a. Nightfall)
+
+Bug Fixes
+- Mage's Hot Streak was not detected correctly since last patch of Classic Era
+
 #### v2.3.0 (2024-07-17)
+
+Bump in TOC file for Season of Discovery update (Classic Era)
 
 Mage
 - Mage's Impact effect is hidden when Fire Blast misses (Wrath, Cataclysm)
