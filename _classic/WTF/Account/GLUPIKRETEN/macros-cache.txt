@@ -3,7 +3,7 @@ VER 3 000000000000003C "assist" "132116"
 END
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:6451
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -18,15 +18,15 @@ VER 3 0000000000000039 "buff food" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1645
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:4599
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3928
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -38,7 +38,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:6149
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -55,17 +55,12 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:12208
 /cast feed pet
-/use item:3770
+/use item:12208
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Foreman Stonebrow
-/targetexact Senator Mehr Stonehallow
-/targetexact Kazan Mogosh
-/targetexact Large Crag Boar
-/targetexact Crag Boar
-/targetlasttarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip

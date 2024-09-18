@@ -53,10 +53,10 @@ ClassicCastbarsDB = {
 },
 ["frameLevel"] = 10,
 ["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-["width"] = 106,
+["showInterruptSchool"] = true,
 ["ignoreParentScale"] = false,
 ["frameStrata"] = "HIGH",
-["showInterruptSchool"] = true,
+["width"] = 106,
 ["position"] = {
 "CENTER",
 7.3,
