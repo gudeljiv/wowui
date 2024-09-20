@@ -12,10 +12,9 @@ VER 3 0000000001000009 " " "134400"
 #showtooltip
 /cast !Attack
 END
-VER 3 0000000001000002 "arcane" "134400"
+VER 3 0000000001000002 "aa" "132369"
 #showtooltip
 /startattack
-/petattack
 /cast !Auto Shot
 END
 VER 3 0000000001000006 "blast" "134400"

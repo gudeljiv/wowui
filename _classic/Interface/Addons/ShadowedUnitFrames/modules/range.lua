@@ -41,6 +41,11 @@ local rangeSpells = {}
 local function checkRange(self)
 	local frame = self.parent
 
+		-- if(frame.unit=="target") then 
+		-- 	local minRange, maxRange = RangeCheck:GetRange(frame.unit)
+		-- 	print(minRange, maxRange,frame.unit)
+		-- end
+
 	-- Check which spell to use
 	local spell
 	if( UnitCanAssist("player", frame.unit) ) then
@@ -60,12 +65,15 @@ local function checkRange(self)
 		frame:SetRangeAlpha(UnitInRange(frame.unit, "player") and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	-- Nope, fall back to interaction :(
 	else
-		frame:SetRangeAlpha(CheckInteractDistance(frame.unit, 4) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
+		-- frame:SetRangeAlpha(CheckInteractDistance(frame.unit, 4) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
+		frame:SetRangeAlpha(ShadowUF.db.profile.units[frame.unitType].range.inAlpha)
 
 		-- CheckInteractDistance was checking for 28 yards... inspect range so i put 30
 		-- local minRange, maxRange = RangeCheck:GetRange(frame.unit)
-		-- print(minRange, maxRange,frame.unit)
-		-- frame:SetRangeAlpha(maxRange and maxRange <= 30 and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
+		-- if(frame.unit=="pet") then 
+		-- 	print(minRange, maxRange,frame.unit)
+		-- end
+		-- frame:SetRangeAlpha((maxRange and maxRange <= 35) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	end
 end
 
