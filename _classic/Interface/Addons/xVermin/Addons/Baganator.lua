@@ -26,6 +26,8 @@ end
 -- local f = CreateFrame('frame')
 -- f:RegisterEvent('BAG_OPEN')
 -- f:RegisterEvent('BAG_UPDATE')
+-- f:RegisterEvent('BAG_UPDATE_DELAYED')
+-- f:RegisterEvent('BANKFRAME_OPENED')
 -- f:SetScript(
 -- 	'OnEvent',
 -- 	function(self, event, isInitialLogin, isReloadingUi)
@@ -42,14 +44,65 @@ end
 -- 		-- 	0.1
 -- 		-- )
 
--- 		for i = 1, 1000 do
--- 			local frame = 'BGRLiveItemButton' .. i
--- 			if _G[frame] then
--- 				_G[frame]:CreateBeautyBorder(8)
+-- 		for i = 1, 2000 do
+-- 			local frame_live = 'BGRLiveItemButton' .. i
+-- 			local frame_cached = 'BGRLiveItemButton' .. i
+-- 			-- print(frame)
+-- 			if _G[frame_live] then
+-- 				_G[frame_live]:CreateBeautyBorder(8)
+-- 			end
+-- 			if _G[frame_cached] then
+-- 				_G[frame_cached]:CreateBeautyBorder(8)
 -- 			end
 -- 		end
 -- 	end
 -- )
+
+
+-- local function update()
+-- 	for i = 1, 2000 do
+-- 		local frame_live = 'BGRLiveItemButton' .. i
+-- 		local frame_cached = 'BGRCachedItemButton' .. i
+-- 		if _G[frame_live] then
+-- 			_G[frame_live]:CreateBeautyBorder(8)
+-- 		end
+-- 		if _G[frame_cached] then
+-- 			_G[frame_cached]:CreateBeautyBorder(8)
+-- 		end
+-- 	end
+-- end
+
+Baganator_CategoryViewBackpackViewFrame:CreateBeautyBorder(8)
+Baganator_CategoryViewBankViewFrame:CreateBeautyBorder(8)
+
+-- Baganator_CategoryViewBackpackViewFrame:HookScript(
+-- 	'OnShow',
+-- 	function(self)
+-- 		update()
+-- 	end
+-- )
+
+-- Baganator_CategoryViewBackpackViewFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function(self)
+-- 		update()
+-- 	end
+-- )
+
+-- Baganator_CategoryViewBankViewFrame:HookScript(
+-- 	'OnShow',
+-- 	function(self)
+-- 		update()
+-- 	end
+-- )
+
+-- Baganator_CategoryViewBankViewFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function(self)
+-- 		update()
+-- 	end
+-- )
+
 
 
 

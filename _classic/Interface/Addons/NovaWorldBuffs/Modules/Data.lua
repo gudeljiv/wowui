@@ -32,6 +32,7 @@ local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetCont
 local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
 local GetGossipText = GetGossipText or C_GossipInfo.GetText;
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
+local GetItemCount = GetItemCount or C_Item.GetItemCount;
 local GetGuildInfo = GetGuildInfo;
 local GetGuildRosterInfo = GetGuildRosterInfo;
 local GetRaidRosterInfo = GetRaidRosterInfo;
@@ -2631,8 +2632,10 @@ function NWB:openTimerLogFrame()
 			NWBTimerLogFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NWBTimerLogFrame:SetFrameStrata("DIALOG")
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBTimerLogFrame:SetFrameStrata("DIALOG");
 		else
 			NWBTimerLogFrame:SetFrameStrata("HIGH")
 		end
@@ -3548,10 +3551,12 @@ function NWB:openLFrame()
 			NWBLFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
-			NWBLFrame:SetFrameStrata("DIALOG")
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBLFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBLFrame:SetFrameStrata("DIALOG");
 		else
-			NWBLFrame:SetFrameStrata("HIGH")
+			NWBLFrame:SetFrameStrata("HIGH");
 		end
 		if (next(NWB.layerBuffSpells)) then
 			if (GetServerTime() - lastOpenLayerFrame > 5) then

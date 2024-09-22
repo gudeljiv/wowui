@@ -41,6 +41,10 @@ NWB.latestRemoteVersion = version;
 NWB.prefixColor = "|cFFFF6900";
 local terokOffset = 2.7507;
 local GetGossipOptions = GetGossipOptions or C_GossipInfo.GetOptions;
+local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
+local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
+local GetItemCooldown = GetItemCooldown or C_Container.GetItemCooldown;
+local GetItemCount = GetItemCount or C_Item.GetItemCount;
 NWB.wgExpire = 259200;
 local yellPercent = NWB.yellPercent;
 local noWorldBuffTimers = NWB.noWorldBuffTimers;
@@ -1976,7 +1980,7 @@ end
 
 --This doesn't use the getSpellInfo() extra chronoboon args becaus they have been known to change order in the past.
 --This is a bit more sloppy but it works.
---At a later data I should add the GetSpellInfi() version as backup so they can be recorded for new installs that haven't booned yet as this only records when booning.
+--At a later data I should add the GetSpellInfo() version as backup so they can be recorded for new installs that haven't booned yet as this only records when booning.
 local tempStoredBuffs = {};
 function NWB:storeBuffs()
 	NWB:syncBuffsWithCurrentDuration();
@@ -2107,9 +2111,6 @@ end
 
 function NWB:recordChronoData(trade)
 	local found;
-	local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
-	local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
-	local GetItemCooldown = GetItemCooldown or C_Container.GetItemCooldown;
 	--GetItemCooldown is missing PTR.
 	if (not GetItemCooldown) then
 		return;
@@ -3799,6 +3800,8 @@ function NWB:createBroker()
 			elseif (button == "RightButton" and IsShiftKeyDown()) then
 				if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 					InterfaceOptionsFrame:Hide();
+				elseif (SettingsPanel and SettingsPanel:IsShown()) then
+					SettingsPanel:Hide();
 				else
 					NWB:openConfig();
 				end
@@ -3861,7 +3864,7 @@ function NWB:updateMinimapButton(tooltip, frame)
 		return;
 	end
 	tooltip:ClearLines();
-	tooltip:AddLine("NovaWorldBuffs");
+	tooltip:AddLine("Nova World Buffs");
 	local layerBuffSpells = NWB.layerBuffSpells;
 	if (NWB.isLayered) then
 		local msg = "";
@@ -8111,10 +8114,12 @@ function NWB:recalcCopyFrame()
 		NWBCopyFrame:SetVerticalScroll(0);
 	end)
 	--So interface options and this frame will open on top of each other.
-	if (InterfaceOptionsFrame:IsShown()) then
-		NWBCopyFrame:SetFrameStrata("DIALOG")
+	if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+		NWBCopyFrame:SetFrameStrata("DIALOG");
+	elseif (SettingsPanel and SettingsPanel:IsShown()) then
+		NWBCopyFrame:SetFrameStrata("DIALOG");
 	else
-		NWBCopyFrame:SetFrameStrata("HIGH")
+		NWBCopyFrame:SetFrameStrata("HIGH");
 	end
 end
 
@@ -8163,10 +8168,12 @@ function NWB:openLayerFrame()
 			NWBlayerFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
-			NWBlayerFrame:SetFrameStrata("DIALOG")
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBlayerFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBlayerFrame:SetFrameStrata("DIALOG");
 		else
-			NWBlayerFrame:SetFrameStrata("HIGH")
+			NWBlayerFrame:SetFrameStrata("HIGH");
 		end
 	end
 end
@@ -10134,10 +10141,12 @@ function NWB:openLayerMapFrame()
 			NWBLayerMapFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
-			NWBLayerMapFrame:SetFrameStrata("DIALOG")
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBLayerMapFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBLayerMapFrame:SetFrameStrata("DIALOG");
 		else
-			NWBLayerMapFrame:SetFrameStrata("HIGH")
+			NWBLayerMapFrame:SetFrameStrata("HIGH");
 		end
 	end
 end
@@ -10718,10 +10727,12 @@ function NWB:openVersionFrame()
 			NWBVersionFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
-			NWBVersionFrame:SetFrameStrata("DIALOG")
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBVersionFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBVersionFrame:SetFrameStrata("DIALOG");
 		else
-			NWBVersionFrame:SetFrameStrata("HIGH")
+			NWBVersionFrame:SetFrameStrata("HIGH");
 		end
 	end
 end

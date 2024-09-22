@@ -3664,10 +3664,12 @@ function NWB:openDMFListFrame()
 			NWBDMFListFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
-			NWBDMFListFrame:SetFrameStrata("DIALOG")
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBDMFListFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NWBDMFListFrame:SetFrameStrata("DIALOG");
 		else
-			NWBDMFListFrame:SetFrameStrata("HIGH")
+			NWBDMFListFrame:SetFrameStrata("HIGH");
 		end
 	end
 end

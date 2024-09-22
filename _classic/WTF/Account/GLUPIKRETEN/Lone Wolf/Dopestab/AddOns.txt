@@ -271,3 +271,5 @@ ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: enabled
 Baganator: enabled
+Baganator-NDui: disabled
+Baganator-Simple: enabled

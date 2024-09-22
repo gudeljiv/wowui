@@ -8,6 +8,7 @@ local addonName, addon = ...;
 local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local spellTypes = NWB.spellTypes;
+local GetItemInfo = GetItemInfo or C_Item.GetItemInfo;
 
 local NWBbuffListFrame = CreateFrame("ScrollFrame", "NWBbuffListFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBbuffListFrame:Hide();
@@ -439,7 +440,9 @@ function NWB:openBuffListFrame()
 			NWBbuffListFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NWBbuffListFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
 			NWBbuffListFrame:SetFrameStrata("DIALOG");
 		else
 			NWBbuffListFrame:SetFrameStrata("HIGH");

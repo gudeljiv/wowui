@@ -1,0 +1,8 @@
+## Interface: 11502, 40400, 100207, 110000
+## Title: Baganator (Simple Skin)
+## Version: 2
+## Author: plusmouse
+## RequiredDeps: Baganator
+
+Colors.lua
+Main.lua
