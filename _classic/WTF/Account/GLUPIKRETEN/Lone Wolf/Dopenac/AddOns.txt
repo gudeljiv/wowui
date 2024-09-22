@@ -6,7 +6,7 @@ SpellActivationOverlay: enabled
 !Beautycase: enabled
 !Colorz: enabled
 ACP: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags-ItemRackSets: enabled
 AdiBags_Config: enabled
 Align: enabled
@@ -19,7 +19,7 @@ AtlasLootClassic_DungeonsAndRaids: enabled
 AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 Auctionator: enabled
-Baganator: disabled
+Baganator: enabled
 BetterRunesFrame: disabled
 !BugGrabber: enabled
 BugSack: enabled
@@ -121,3 +121,4 @@ kExtraBossFrames: disabled
 ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
+AdiBags_Item_Sets: enabled

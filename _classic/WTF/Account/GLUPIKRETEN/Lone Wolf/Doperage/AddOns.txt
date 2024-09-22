@@ -14,7 +14,7 @@ WeakAuras: enabled
 xVermin: enabled
 RXPGuides: enabled
 ItemRackOptions: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 nMinimap: enabled
 nBuff: enabled
@@ -135,7 +135,7 @@ LibSharedMedia-3.0: enabled
 Scrap: enabled
 BrainDead: enabled
 SyLevel: enabled
-Baganator: disabled
+Baganator: enabled
 RXPGuides_Themes: enabled
 Blizzard_CombatText: enabled
 ElvUI_AuraBarsMovers: disabled
@@ -157,3 +157,4 @@ ElvUI: disabled
 ElvUI_Libraries: disabled
 ImprovedRuneEngravingUI: enabled
 RuneBar: enabled
+AdiBags_Item_Sets: enabled

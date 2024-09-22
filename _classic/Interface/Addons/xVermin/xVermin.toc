@@ -46,6 +46,7 @@ Experience/MobsToKill.lua
 Reputation/Reputation.lua
 
 Addons/AdiBags.lua
+Addons/Baganator.lua
 Addons/BISTooltip.lua
 Addons/ChocolateBar.lua
 Addons/ClassicCastbars.lua

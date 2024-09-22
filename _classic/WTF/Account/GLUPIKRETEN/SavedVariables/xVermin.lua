@@ -375,8 +375,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -403,8 +403,8 @@ xVerminSavedData = {
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
@@ -423,8 +423,8 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -433,8 +433,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",

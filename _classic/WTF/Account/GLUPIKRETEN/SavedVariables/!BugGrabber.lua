@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12766,
+["session"] = 12772,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -4260,6 +4260,36 @@ BugGrabberDB = {
 ["stack"] = "[string \"ChatFrame1:AddMessage('target orientation: ' .. dir2);\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:2240: in function `?'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:5016: in function `ChatEdit_ParseText'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:4674: in function `ChatEdit_SendText'\n[string \"@Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua\"]:3046: in function <.../AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua:3040>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/AddOns/Blizzard_FrameXML/Classic/SecureTemplates.lua\"]:350: in function `handler'\n[string \"@Interface/AddOns/Blizzard_FrameXML/Classic/SecureTemplates.lua\"]:633: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
 ["session"] = 12759,
 ["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/Baganator/Core/Main.lua:37: Use your addon website/client to install |cffd1b219Syndicator|r in order to use Baganator.",
+["time"] = "2024/09/22 17:01:17",
+["locals"] = "(*temporary) = \"Use your addon website/client to install |cffd1b219Syndicator|r in order to use Baganator.\"\n",
+["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/Baganator/Core/Main.lua\"]:37: in function <Interface/AddOns/Baganator/Core/Main.lua:28>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/Baganator/Core/Utilities.lua\"]:13: in function <Interface/AddOns/Baganator/Core/Utilities.lua:10>",
+["session"] = 12767,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/Baganator/API/Main.lua:40: attempt to index local 'ignored' (a nil value)",
+["time"] = "2024/09/22 17:01:17",
+["locals"] = "id = \"dejunk\"\ncurrentOption = \"poor_quality\"\nignored = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'ignored' (a nil value)\"\naddonTable = <table> {\n InventoryTracking = <table> {\n }\n Locales = <table> {\n }\n json = <table> {\n }\n Constants = <table> {\n }\n Transfers = <table> {\n }\n ItemViewCommon = <table> {\n }\n Help = <table> {\n }\n SlashCmd = <table> {\n }\n Skins = <table> {\n }\n ShowWelcome = <function> defined @Interface/AddOns/Baganator/Core/Welcome.lua:2\n BagTransfers = <table> {\n }\n InitializeOpenClose = <function> defined @Interface/AddOns/Baganator/ItemViewCommon/OpenClose.lua:106\n sortItemFieldMap = <table> {\n }\n ViewManagement = <table> {\n }\n ShowGoldSummaryAccount = <function> defined @Interface/AddOns/Baganator/ItemViewCommon/MoneyDisplay.lua:43\n SingleViews = <table> {\n }\n ShowGoldSummaryRealm = <function> defined @Interface/AddOns/Baganator/ItemViewCommon/MoneyDisplay.lua:3\n API = <table> {\n }\n ItemButtonUtil = <table> {\n }\n CustomiseDialog = <table> {\n }\n Core = <table> {\n }\n Config = <table> {\n }\n Search = <table> {\n }\n AddBagTransferActivationCallback = <function> defined @Interface/AddOns/Baganator/ItemViewCommon/BagTransfers.lua:5\n CallbackRegistry = <table> {\n }\n CategoryViews = <table> {\n }\n Utilities = <table> {\n }\n Sorting = <table> {\n }\n}\n",
+["stack"] = "[string \"@Interface/AddOns/Baganator/API/Main.lua\"]:40: in function <Interface/AddOns/Baganator/API/Main.lua:34>\n[string \"@Interface/AddOns/Baganator/API/Main.lua\"]:72: in function `RegisterJunkPlugin'\n[string \"@Interface/AddOns/Baganator/API/Junk.lua\"]:64: in function <Interface/AddOns/Baganator/API/Junk.lua:59>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/Baganator/Core/Utilities.lua\"]:13: in function <Interface/AddOns/Baganator/Core/Utilities.lua:10>",
+["session"] = 12767,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/Baganator.lua:24: unexpected symbol near '/'",
+["time"] = "2024/09/22 17:12:37",
+["locals"] = "",
+["stack"] = "",
+["session"] = 12770,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/Baganator.lua:1 Interface/AddOns/xVermin/Addons/Baganator.lua:24: unexpected symbol near '/'",
+["time"] = "2024/09/22 17:12:39",
+["session"] = 12770,
+["counter"] = 2,
 },
 },
 }

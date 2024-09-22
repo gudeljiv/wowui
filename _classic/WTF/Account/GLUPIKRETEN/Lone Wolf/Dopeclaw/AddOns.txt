@@ -1,7 +1,7 @@
 nPower: disabled
 nHealth: disabled
 Immersion: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 Sorted: disabled
 WeakAurasCompanion: enabled
@@ -265,3 +265,5 @@ kExtraBossFrames: disabled
 ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
+AdiBags_Item_Sets: enabled
+Baganator: enabled

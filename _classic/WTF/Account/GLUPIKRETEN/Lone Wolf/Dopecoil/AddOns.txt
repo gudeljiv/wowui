@@ -36,7 +36,7 @@ TacoTip: disabled
 GlobalIgnoreList: enabled
 aTotemBar: disabled
 nMainbar: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags-ItemRackSets: enabled
 AdiBags_Config: enabled
 Blizzard_CompactRaidFrames: enabled
@@ -139,3 +139,5 @@ kExtraBossFrames: disabled
 ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
+AdiBags_Item_Sets: enabled
+Baganator: enabled
