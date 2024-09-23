@@ -6,6 +6,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local lootReminderFrame, lootReminderListFrame;
 local lastLootNpcID, lastBossNpcID, lastBossTime;
 local tinsert = tinsert;
+local GetItemInfo = GetItemInfo or C_Item.GetItemInfo;
 
 local msgTimer, fadeTimer;
 local function hideMiddleMsg()
@@ -216,7 +217,7 @@ function NIT:argentDawnTrinketReminder()
 			end
 			if (not isEquipped) then
 				for k, v in ipairs(trinkets) do
-					local trinket = GetItemCount(v.itemID);
+					local trinket = C_Item.GetItemCount(v.itemID);
 					if (trinket and trinket > 0) then
 						local _, itemLink = C_Item.GetItemInfo(v.itemID);
 						local itemString;
@@ -543,7 +544,6 @@ local function combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 			destName, destFlags, destRaidFlags, _, spellName = CombatLogGetCurrentEventInfo();
 	if (subEvent == "UNIT_DIED" and NIT.inInstance and destGUID and string.match(destGUID, "Creature")) then
-		--If max level player then count mobs via death instead of xp.
 		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
 		npcID = tonumber(npcID);
 		local _, instanceType, difficultyID, _, _, _, _, instanceID = GetInstanceInfo();

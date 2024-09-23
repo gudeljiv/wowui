@@ -37,6 +37,7 @@ local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetCont
 local GetContainerItemLink = GetContainerItemLink or C_Container.GetContainerItemLink;
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
 local GetQuestInfo = C_QuestLog.GetQuestInfo or C_QuestLog.GetTitleForQuestID;
+local GetSpellInfo = NIT.GetSpellInfo;
 NIT.currentInstanceID = 0;
 --This is for a system that records before and after honor for bgs honor gained calced.
 --Didn't have to end up using it becaus another way was worked out that didn't work at the start of expansion.
@@ -115,6 +116,8 @@ function NIT:OnCommReceived(commPrefix, string, distribution, sender)
 	elseif (cmd == "instanceResetOther") then
 		--Instance reset from NWB user.
 		NIT:instanceResetOtherComm(data, sender, distribution);
+	elseif (cmd == "douse") then
+		NIT:receivedDouse(data, sender, distribution);
 	end
 	NIT:versionCheck(remoteVersion);
 end
@@ -175,7 +178,7 @@ function NIT:sendVersion(distribution)
 	if (distribution) then
 		NIT:sendComm(distribution, "version " .. version .. " check");
 	else
-		NIT:sendGroupComm("version " .. version .. " check")
+		NIT:sendGroupComm("version " .. version .. " check");
 	end
 end
 
@@ -252,6 +255,8 @@ if (NIT.isRetail) then
 	f:RegisterEvent("CHALLENGE_MODE_MAPS_UPDATE")
 	f:RegisterEvent("ITEM_CHANGED");
 	f:RegisterEvent("WEEKLY_REWARDS_UPDATE");
+	f:RegisterEvent("ACTIVE_DELVE_DATA_UPDATE");
+	f:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end
 f:RegisterEvent("UPDATE_INSTANCE_INFO");
 f:RegisterEvent("PLAYER_GUILD_UPDATE");
@@ -496,6 +501,16 @@ f:SetScript('OnEvent', function(self, event, ...)
 		end)
 	elseif (event == "PLAYER_GUILD_UPDATE") then
 		NIT:throddleEventByFunc(event, 1, "recordGuildInfo");
+	elseif( event == "ACTIVE_DELVE_DATA_UPDATE") then
+		if (C_PartyInfo and C_PartyInfo.IsDelveInProgress and C_PartyInfo.IsDelveInProgress() and not NIT.inInstance) then
+			NIT:enteredDelve();
+		end
+	elseif (event == "ZONE_CHANGED_NEW_AREA") then
+		if (C_PartyInfo and C_PartyInfo.IsDelveInProgress) then
+			if (NIT.inInstance and NIT.data.instances[1].type == "delve" and not C_PartyInfo.IsDelveInProgress()) then
+				NIT:leftDelve();
+			end
+		end
 	end
 end)
 
@@ -712,17 +727,21 @@ function NIT:chatMsgCombatFactionChange(...)
 			end
 		end
 	end
-	if (not repName or not repAmount) then
-		NIT:debug("Faction error:", text);
-		return;
-	end
-	if (not NIT.data.instances[1].rep[repName]) then
-		NIT.data.instances[1].rep[repName] = 0
-	end
-	if (decrease) then
-		NIT.data.instances[1].rep[repName] = NIT.data.instances[1].rep[repName] - repAmount;
+	if (NIT.data.instances[1].type == "delve") then
+		--Brann XP comes through in the rep event, could track this later.
 	else
-		NIT.data.instances[1].rep[repName] = NIT.data.instances[1].rep[repName] + repAmount;
+		if (not repName or not repAmount) then
+			NIT:debug("Faction error:", text);
+			return;
+		end
+		if (not NIT.data.instances[1].rep[repName]) then
+			NIT.data.instances[1].rep[repName] = 0
+		end
+		if (decrease) then
+			NIT.data.instances[1].rep[repName] = NIT.data.instances[1].rep[repName] - repAmount;
+		else
+			NIT.data.instances[1].rep[repName] = NIT.data.instances[1].rep[repName] + repAmount;
+		end
 	end
 end
 
@@ -1141,6 +1160,18 @@ end
 	RaidNotice_AddMessage(RaidWarningFrame, NIT.prefixColor .. "[NIT Reminder]:|r |cFF00FF00" .. string.format(L["autoGammaBuffReminder"], npcType), colorTable, 6);
 end]]
 
+function NIT:enteredDelve()
+	C_Timer.After(1, function()
+		if (not NIT.inInstance) then
+			NIT:enteredInstance();
+		end
+	end)
+end
+
+function NIT:leftDelve()
+	NIT:leftInstance();
+end
+
 local isGhost = false;
 NIT.lastInstanceName = "(Unknown Instance)";
 local doneFirstGUIDCheck;
@@ -1169,6 +1200,14 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 	if (checkAgain) then
 		NIT:debug("Rechecked Instance:", instance, "Type:", instanceType, NIT:isInArena(), UnitInBattleground("player"));
 	end
+	if (instance and instanceType == "scenario") then
+		--Check for delves.
+		local _, _, difficultyID = GetInstanceInfo();
+		if (difficultyID == 208) then
+			instanceType = "party";
+			type = "delve";
+		end
+	end
 	if (instance == true and ((instanceType == "party") or (instanceType == "raid")
 			or (type == "bg") or (type == "arena"))) then
 		local instanceName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty,
@@ -1189,6 +1228,8 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFFFF2222H|r|cFF9CD6DE)|r";
 		elseif (difficultyID == 8 or difficultyID == 16 or difficultyID == 23 or difficultyID == 40) then --Mythic retail.
 			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFFa335eeM|r|cFF9CD6DE)|r";
+		elseif (type == "delve") then
+			instanceNameMsg = instanceNameMsg .. " |cFF9CD6DE(|r|cFF00C800D|r|cFF9CD6DE)|r";
 		end
 		if (isGhost) then
 			--This never worked and doesn't need to anyway.
@@ -1281,6 +1322,15 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 							NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredRaid"], instanceNameMsg) .. "|h");
 						end)
 					end
+				elseif (type == "delve") then
+					local msg = string.format(L["enteredDungeon"], instanceNameMsg, "");
+					msg = string.gsub(msg, " , ", ", ")
+					C_Timer.After(0.5, function()
+						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
+						NIT:print("|HNITCustomLink:instancelog|h" .. msg .. "|h "
+								.. "|HNITCustomLink:deletelast|h" .. texture
+								.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
+					end)
 				elseif (isLogon) then
 					C_Timer.After(3, function()
 						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
@@ -1961,7 +2011,7 @@ function NIT:getInstanceLockoutInfo(char)
 	end
 	for k, v in ipairs(NIT.data.instances) do
 		if (not NIT.perCharOnly or target == v.playerName) then
-			if (v.isPvp or (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout)) then
+			if (v.isPvp or v.type == "delve" or (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout)) then
 				--NIT:debug("skipping raid", v.instanceID);
 			else
 				count = count + 1;
@@ -3092,11 +3142,7 @@ local tradeskillSpecs = {
 }
 --Cache all prof spec spell names.
 for k, v in pairs(tradeskillSpecs) do
-	if (C_Spell and C_Spell.GetSpellInfo) then
-		C_Spell.GetSpellInfo(k);
-	else
-		GetSpellInfo(k);
-	end
+	GetSpellInfo(k);
 end
 
 --By tab index.

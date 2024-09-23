@@ -80,7 +80,22 @@ NIT.prefixColor = "|cFFFF6900";
 NIT.perCharOnly = false; --Per char is gone in TBC, not sure how I didn't notice this earlier tbh, blizz never announced it.
 NIT.loadTime = GetServerTime();
 local GetGossipOptions = GetGossipOptions or C_GossipInfo.GetOptions;
+local GetItemInfo = GetItemInfo or C_Item.GetItemInfo;
 local floor = floor;
+
+--Temp function until classic era gets the new func and everything can be updated in the addon.
+function NIT.GetSpellInfo(spellIdentifier, bookType)
+	if (GetSpellInfo) then
+		--No need for bookType we don't use it anywhere and passing nil breaks the function, bit strange.
+		--return GetSpellInfo(spellIdentifier, bookType);
+		return GetSpellInfo(spellIdentifier);
+	else
+		local data = C_Spell.GetSpellInfo(spellIdentifier);
+		if (data) then --Second arg rank is always nil in original func.
+			return data.name, nil, data.iconID, data.castTime, data.minRange, data.maxRange, data.spellID, data.originalIconID;
+		end
+	end
+end
 
 function NIT:OnInitialize()
 	self:loadSpecificOptions();
@@ -689,17 +704,6 @@ function NIT:explode(div, str, count)
 end
 
 function NIT:openConfig()
-	--Opening the frame needs to be run twice to avoid a bug.
-	--[[InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
-	--Hack to fix the issue of interface options not opening to menus below the current scroll range.
-	--This addon name starts with N and will always be closer to the middle so just scroll to the middle when opening.
-	if (InterfaceOptionsFrameAddOnsListScrollBar) then
-		local min, max = InterfaceOptionsFrameAddOnsListScrollBar:GetMinMaxValues();
-		if (min < max) then
-			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
-		end
-	end
-	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");]]
 	Settings.OpenToCategory("NovaInstanceTracker");
 end
 
@@ -937,6 +941,8 @@ function NIT:createBroker()
 			elseif (button == "RightButton" and IsShiftKeyDown()) then
 				if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 					InterfaceOptionsFrame:Hide();
+				elseif (SettingsPanel and SettingsPanel:IsShown()) then
+					SettingsPanel:Hide();
 				else
 					NIT:openConfig();
 				end
@@ -986,7 +992,7 @@ function NIT:updateMinimapButton(tooltip, frame)
 		return;
 	end
 	tooltip:ClearLines()
-	tooltip:AddLine("NovaInstanceTracker");
+	tooltip:AddLine("Nova Instance Tracker");
 	if (NIT.inInstance) then
 		if (not tooltip.NITSeparator) then
 		    tooltip.NITSeparator = tooltip:CreateTexture(nil, "BORDER");
@@ -1010,7 +1016,28 @@ function NIT:updateMinimapButton(tooltip, frame)
 			if (data.isPvp) then
 				tooltip:AddLine("|cFFFFA500" .. data.instanceName);
 			else
-				tooltip:AddLine("|cFF00C800" .. data.instanceName);
+				local instanceDiff = "";
+				if (data.mythicPlus) then
+					local mythicData = data.mythicPlus;
+					if (mythicData.level) then
+						instanceDiff = " |cFF9CD6DE(|cFFa335eeM+" .. mythicData.level .. "|r)|r";
+					else
+						instanceDiff = " |cFF9CD6DE(|cFFa335eeM+|r)|r";
+					end
+				elseif (data.difficultyID == 174 or data.difficultyID == 2 or data.difficultyID == 5 or data.difficultyID == 6 or data.difficultyID == 11
+						 or data.difficultyID == 15 or data.difficultyID == 39 or data.difficultyID == 149) then
+					if (data.subDifficulty) then
+						--Display if gamma dung in wrath.
+						instanceDiff = " |cFF9CD6DE(|cFFFF2222" .. gsub(data.subDifficulty, "^%l", string.upper) .. "|r)|r";
+					else
+						instanceDiff = " |cFF9CD6DE(|cFFFF2222H|r)|r";
+					end
+				elseif (data.difficultyID == 8 or data.difficultyID == 16 or data.difficultyID == 23 or data.difficultyID == 40) then
+					instanceDiff = " |cFF9CD6DE(|cFFa335eeM|r)|r";
+				elseif (data.type == "delve") then
+					instanceDiff = " |cFF9CD6DE(|cFF00C800D|r)|r";
+				end
+				tooltip:AddLine("|cFF00C800" .. data.instanceName .. instanceDiff);
 			end
 			tooltip:AddLine("|cFF9CD6DE" .. timeInside);		
 			if (not data.isPvp) then
@@ -1064,7 +1091,22 @@ function NIT:updateMinimapButton(tooltip, frame)
 				end
 			end
 		end
-		if (NIT.getLootReminderMinimapString and NIT.db.global.lootReminderMinimap) then
+		if (NIT.currentInstanceID == 409 and NIT.getDousesMinimapString) then
+			local text = NIT:getDousesMinimapString();
+			if (text) then
+				if (not tooltip.NITSeparator3) then
+					tooltip.NITSeparator3 = tooltip:CreateTexture(nil, "BORDER");
+				    tooltip.NITSeparator3:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+				    tooltip.NITSeparator3:SetHeight(1);
+				    tooltip.NITSeparator3:SetPoint("LEFT", 10, 0);
+				    tooltip.NITSeparator3:SetPoint("RIGHT", -10, 0);
+			    end
+			    tooltip:AddLine(" ");
+				tooltip.NITSeparator3:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+				tooltip.NITSeparator3:Show();
+				tooltip:AddLine(text);
+			end
+		elseif (NIT.getLootReminderMinimapString and NIT.db.global.lootReminderMinimap) then
 			local text = NIT:getLootReminderMinimapString();
 			if (text) then
 				if (not tooltip.NITSeparator3) then
@@ -1219,7 +1261,7 @@ function NIT:getMinimapButtonNextExpires(char)
 		if (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
 			noLockout = true;
 		end
-		if (not v.isPvp and not noLockout and (not NIT.perCharOnly or char == v.playerName)) then
+		if (not v.isPvp and not noLockout and v.type ~= "delve" and (not NIT.perCharOnly or char == v.playerName)) then
 			if (v.leftTime and v.leftTime > (GetServerTime() - 3600)) then
 				local time = 3600 - (GetServerTime() - v.leftTime);
 				--msg = msg .. "\n|cFF9CD6DE" .. v.instanceName .. " expires in " .. NIT:getTimeString(time, true);
@@ -1779,6 +1821,8 @@ function NIT:openInstanceLogFrame()
 		--So interface options and this frame will open on top of each other.
 		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NITInstanceFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NITInstanceFrame:SetFrameStrata("DIALOG");
 		else
 			NITInstanceFrame:SetFrameStrata("HIGH");
 		end
@@ -2153,6 +2197,8 @@ function NIT:buildInstanceLineFrameString(v, count, logID)
 		end
 	elseif (v.difficultyID == 8 or v.difficultyID == 16 or v.difficultyID == 23 or v.difficultyID == 40) then
 		instance = instance .. " (|cFFa335eeM|r)";
+	elseif (v.type == "delve") then
+		instance = instance .. " (|cFF00C800D|r)";
 	end
 	local time = NIT:getTimeFormat(v.enteredTime, true, true);
 	local timeAgo = GetServerTime() - v.enteredTime;
@@ -2388,6 +2434,8 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			end
 		elseif (data.difficultyID == 8 or data.difficultyID == 16 or data.difficultyID == 23 or data.difficultyID == 40) then
 			heroicString = " (|cFFa335eeM|r)";
+		elseif (data.type == "delve") then
+			heroicString = " (|cFF00C800D|r)";
 		end
 		local text = timeColor .. L["Instance"] .. " " .. obj.count .. " (" .. data.instanceName .. heroicString .. ")|r";
 		if (not data.isPvp and data.instanceID and (NIT.noRaidLockouts and NIT.zones[data.instanceID] and NIT.zones[data.instanceID].noLockout)) then
@@ -3065,9 +3113,11 @@ function NIT:openTradeLogFrame()
 		end)
 		--So interface options and this frame will open on top of each other.
 		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
-			NITTradeLogFrame:SetFrameStrata("DIALOG")
+			NITTradeLogFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NITTradeLogFrame:SetFrameStrata("DIALOG");
 		else
-			NITTradeLogFrame:SetFrameStrata("HIGH")
+			NITTradeLogFrame:SetFrameStrata("HIGH");
 		end
 	end
 end
@@ -3389,9 +3439,11 @@ function NIT:openTradeCopyFrame()
 		end)
 		--So interface options and this frame will open on top of each other.
 		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
-			NITTradeCopyFrame:SetFrameStrata("DIALOG")
+			NITTradeCopyFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
+			NITTradeCopyFrame:SetFrameStrata("DIALOG");
 		else
-			NITTradeCopyFrame:SetFrameStrata("HIGH")
+			NITTradeCopyFrame:SetFrameStrata("HIGH");
 		end
 	end
 end
@@ -3766,6 +3818,8 @@ function NIT:openAltsFrame()
 		end)
 		--So interface options and this frame will open on top of each other.
 		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
+			NITAltsFrame:SetFrameStrata("DIALOG");
+		elseif (SettingsPanel and SettingsPanel:IsShown()) then
 			NITAltsFrame:SetFrameStrata("DIALOG");
 		else
 			NITAltsFrame:SetFrameStrata("HIGH");

@@ -615,7 +615,7 @@ NIT.options = {
 };
 
 function NIT:loadSpecificOptions()
-	if (NIT.expansionNum > 2) then
+	if (NIT.expansionNum == 3) then
 		NIT.options.args["autoGammaBuffHeader"] = {
 			type = "header",
 			name = L["autoGammaBuffDesc"],
