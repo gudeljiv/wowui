@@ -104,8 +104,8 @@ local function showFilteredSkills()
     end
 
     -- Hide blizzard default filters
-    TradeSkillInvSlotDropDown:Hide()
-    TradeSkillSubClassDropDown:Hide()
+    TradeSkillInvSlotDropdown:Hide()
+    TradeSkillSubClassDropdown:Hide()
 
     -- Get the current list of filtered skills
     local searchFilter = trim(TradeSkillFrame.SearchBox:GetText():lower())

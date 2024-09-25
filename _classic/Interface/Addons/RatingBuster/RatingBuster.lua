@@ -22,7 +22,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.18.3"
+RatingBuster.version = "1.18.4"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -1983,12 +1983,12 @@ function RatingBuster.ProcessTooltip(tooltip)
 
 	RatingBuster:EnableKeybindings(tooltip)
 
-	local profile = db:GetCurrentProfile()
-	local spec = RatingBuster:GetDisplayedSpec()
+	local itemMinLevel = select(5, C_Item.GetItemInfo(link))
 
 	local statModContext = StatLogic:NewStatModContext({
-		profile = profile,
-		spec = spec,
+		profile = db:GetCurrentProfile(),
+		spec = RatingBuster:GetDisplayedSpec(),
+		level = math.max(itemMinLevel, playerLevel)
 	})
 
 	---------------------
@@ -2056,7 +2056,7 @@ end
 function RatingBuster:ProcessLine(text, link, color, statModContext)
 	-- Get data from cache if available
 	local profileSpec = statModContext.profile .. statModContext.spec
-	local cacheID = text .. playerLevel
+	local cacheID = text .. statModContext.level
 	local cacheText = cache[profileSpec][cacheID]
 	if cacheText then
 		if cacheText ~= text then
@@ -2268,7 +2268,7 @@ do
 			-- Combat Ratings --
 			--------------------
 			-- Calculate stat value
-			local effect = StatLogic:GetEffectFromRating(value, statID, playerLevel)
+			local effect = StatLogic:GetEffectFromRating(value, statID, statModContext.level)
 			if statID == StatLogic.Stats.DefenseRating then
 				if db.profile.showDefenseFromDefenseRating then
 					infoTable["Decimal"] = effect
@@ -2862,7 +2862,7 @@ local specPrimaryStats = {
 
 ---@class SummaryCalcData
 ---@field option string
----@field name Stat
+---@field stat Stat
 ---@field func SummaryCalcFunction
 
 ---@type SummaryCalcData[]
@@ -2873,7 +2873,7 @@ local summaryCalcData = {
 	-- Strength - STR
 	{
 		option = "sumStr",
-		name = StatLogic.Stats.Strength,
+		stat = StatLogic.Stats.Strength,
 		func = function(sum)
 			return sum[StatLogic.Stats.Strength]
 		end,
@@ -2881,7 +2881,7 @@ local summaryCalcData = {
 	-- Agility - AGI
 	{
 		option = "sumAgi",
-		name = StatLogic.Stats.Agility,
+		stat = StatLogic.Stats.Agility,
 		func = function(sum)
 			return sum[StatLogic.Stats.Agility]
 		end,
@@ -2889,7 +2889,7 @@ local summaryCalcData = {
 	-- Stamina - STA
 	{
 		option = "sumSta",
-		name = StatLogic.Stats.Stamina,
+		stat = StatLogic.Stats.Stamina,
 		func = function(sum)
 			return sum[StatLogic.Stats.Stamina]
 		end,
@@ -2897,7 +2897,7 @@ local summaryCalcData = {
 	-- Intellect - INT
 	{
 		option = "sumInt",
-		name = StatLogic.Stats.Intellect,
+		stat = StatLogic.Stats.Intellect,
 		func = function(sum)
 			return sum[StatLogic.Stats.Intellect]
 		end,
@@ -2905,30 +2905,29 @@ local summaryCalcData = {
 	-- Spirit - SPI
 	{
 		option = "sumSpi",
-		name = StatLogic.Stats.Spirit,
+		stat = StatLogic.Stats.Spirit,
 		func = function(sum)
 			return sum[StatLogic.Stats.Spirit]
 		end,
 	},
 	{
 		option = "sumMastery",
-		name = StatLogic.Stats.Mastery,
+		stat = StatLogic.Stats.Mastery,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MasteryRating] * statModContext("ADD_MASTERY_MOD_MASTERY_RATING")
 		end,
 	},
 	{
 		option = "sumMasteryEffect",
-		name = StatLogic.Stats.MasteryEffect,
+		stat = StatLogic.Stats.MasteryEffect,
 		func = function(sum, statModContext)
 			return summaryFunc[StatLogic.Stats.Mastery](sum, statModContext) * statModContext("ADD_MASTERY_EFFECT_MOD_MASTERY")
 		end,
-		ispercent = true,
 	},
 	-- Health - HEALTH, STA
 	{
 		option = "sumHP",
-		name = StatLogic.Stats.Health,
+		stat = StatLogic.Stats.Health,
 		func = function(sum, statModContext)
 			return (sum[StatLogic.Stats.Health] + (sum[StatLogic.Stats.Stamina] * statModContext("ADD_HEALTH_MOD_STA"))) * statModContext("MOD_HEALTH")
 		end,
@@ -2936,7 +2935,7 @@ local summaryCalcData = {
 	-- Mana - MANA, INT
 	{
 		option = "sumMP",
-		name = StatLogic.Stats.Mana,
+		stat = StatLogic.Stats.Mana,
 		func = function(sum, statModContext)
 			return (sum[StatLogic.Stats.Mana] + (sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_MOD_INT"))) * statModContext("MOD_MANA")
 		end,
@@ -2944,7 +2943,7 @@ local summaryCalcData = {
 	-- Health Regen - HEALTH_REG
 	{
 		option = "sumHP5",
-		name = StatLogic.Stats.HealthRegen,
+		stat = StatLogic.Stats.HealthRegen,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.HealthRegen]
 				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
@@ -2954,7 +2953,7 @@ local summaryCalcData = {
 	-- Health Regen while Out of Combat - HEALTH_REG, SPI
 	{
 		option = "sumHP5OC",
-		name = StatLogic.Stats.HealthRegenOutOfCombat,
+		stat = StatLogic.Stats.HealthRegenOutOfCombat,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.HealthRegen]
 				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG")
@@ -2964,7 +2963,7 @@ local summaryCalcData = {
 	-- Mana Regen - MANA_REG, SPI, INT
 	{
 		option = "sumMP5",
-		name = StatLogic.Stats.ManaRegen,
+		stat = StatLogic.Stats.ManaRegen,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ManaRegen]
 				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_REG_MOD_INT")
@@ -2977,7 +2976,7 @@ local summaryCalcData = {
 	-- Mana Regen while Not casting - MANA_REG, SPI, INT
 	{
 		option = "sumMP5NC",
-		name = StatLogic.Stats.ManaRegenNotCasting,
+		stat = StatLogic.Stats.ManaRegenNotCasting,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ManaRegen]
 				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_REG_MOD_INT")
@@ -2993,7 +2992,7 @@ local summaryCalcData = {
 	-- Attack Power - AP, STR, AGI
 	{
 		option = "sumAP",
-		name = StatLogic.Stats.AttackPower,
+		stat = StatLogic.Stats.AttackPower,
 		func = function(sum, statModContext)
 			return statModContext("MOD_AP") * (
 				-- Feral Druid Predatory Strikes
@@ -3012,7 +3011,7 @@ local summaryCalcData = {
 	-- Ranged Attack Power - RANGED_AP, AP, AGI, INT
 	{
 		option = "sumRAP",
-		name = StatLogic.Stats.RangedAttackPower,
+		stat = StatLogic.Stats.RangedAttackPower,
 		func = function(sum, statModContext)
 			return (statModContext("MOD_RANGED_AP") + statModContext("MOD_AP") - 1) * (
 				sum[StatLogic.Stats.RangedAttackPower]
@@ -3027,17 +3026,16 @@ local summaryCalcData = {
 	-- Hit Chance - MELEE_HIT_RATING, WEAPON_SKILL
 	{
 		option = "sumHit",
-		name = StatLogic.Stats.MeleeHit,
+		stat = StatLogic.Stats.MeleeHit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeHit]
 				+ sum[StatLogic.Stats.MeleeHitRating] * statModContext("ADD_MELEE_HIT_MOD_MELEE_HIT_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Hit Rating - MELEE_HIT_RATING
 	{
 		option = "sumHitRating",
-		name = StatLogic.Stats.MeleeHitRating,
+		stat = StatLogic.Stats.MeleeHitRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.MeleeHitRating]
 		end,
@@ -3045,17 +3043,16 @@ local summaryCalcData = {
 	-- Ranged Hit Chance - MELEE_HIT_RATING, RANGED_HIT_RATING, AGI
 	{
 		option = "sumRangedHit",
-		name = StatLogic.Stats.RangedHit,
+		stat = StatLogic.Stats.RangedHit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedHit]
 				+ sum[StatLogic.Stats.RangedHitRating] * statModContext("ADD_RANGED_HIT_MOD_RANGED_HIT_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Ranged Hit Rating - RANGED_HIT_RATING
 	{
 		option = "sumRangedHitRating",
-		name = StatLogic.Stats.RangedHitRating,
+		stat = StatLogic.Stats.RangedHitRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.RangedHitRating]
 		end,
@@ -3063,18 +3060,17 @@ local summaryCalcData = {
 	-- Crit Chance - MELEE_CRIT, MELEE_CRIT_RATING, AGI
 	{
 		option = "sumCrit",
-		name = StatLogic.Stats.MeleeCrit,
+		stat = StatLogic.Stats.MeleeCrit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeCrit]
 				+ sum[StatLogic.Stats.MeleeCritRating] * statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
 				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_MELEE_CRIT_MOD_AGI")
 		end,
-		ispercent = true,
 	},
 	-- Crit Rating - MELEE_CRIT_RATING
 	{
 		option = "sumCritRating",
-		name = StatLogic.Stats.MeleeCritRating,
+		stat = StatLogic.Stats.MeleeCritRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.MeleeCritRating]
 		end,
@@ -3082,18 +3078,17 @@ local summaryCalcData = {
 	-- Ranged Crit Chance - MELEE_CRIT_RATING, RANGED_CRIT_RATING, AGI
 	{
 		option = "sumRangedCrit",
-		name = StatLogic.Stats.RangedCrit,
+		stat = StatLogic.Stats.RangedCrit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedCrit]
 				+ sum[StatLogic.Stats.RangedCritRating] * statModContext("ADD_RANGED_CRIT_MOD_RANGED_CRIT_RATING")
 				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_RANGED_CRIT_MOD_AGI")
 		end,
-		ispercent = true,
 	},
 	-- Ranged Crit Rating - RANGED_CRIT_RATING
 	{
 		option = "sumRangedCritRating",
-		name = StatLogic.Stats.RangedCritRating,
+		stat = StatLogic.Stats.RangedCritRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.RangedCritRating]
 		end,
@@ -3101,16 +3096,15 @@ local summaryCalcData = {
 	-- Haste - MELEE_HASTE_RATING
 	{
 		option = "sumHaste",
-		name = StatLogic.Stats.MeleeHaste,
+		stat = StatLogic.Stats.MeleeHaste,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeHasteRating] * statModContext("ADD_MELEE_HASTE_MOD_MELEE_HASTE_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Haste Rating - MELEE_HASTE_RATING
 	{
 		option = "sumHasteRating",
-		name = StatLogic.Stats.MeleeHasteRating,
+		stat = StatLogic.Stats.MeleeHasteRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.MeleeHasteRating]
 		end,
@@ -3118,23 +3112,22 @@ local summaryCalcData = {
 	-- Ranged Haste - RANGED_HASTE_RATING
 	{
 		option = "sumRangedHaste",
-		name = StatLogic.Stats.RangedHaste,
+		stat = StatLogic.Stats.RangedHaste,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedHasteRating] * statModContext("ADD_RANGED_HASTE_MOD_RANGED_HASTE_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Ranged Haste Rating - RANGED_HASTE_RATING
 	{
 		option = "sumRangedHasteRating",
-		name = StatLogic.Stats.RangedHasteRating,
+		stat = StatLogic.Stats.RangedHasteRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.RangedHasteRating]
 		end,
 	},
 	{
 		option = "sumWeaponSkill",
-		name = StatLogic.Stats.WeaponSkill,
+		stat = StatLogic.Stats.WeaponSkill,
 		func = function(sum)
 			return sum[StatLogic.Stats.WeaponSkill]
 		end,
@@ -3142,7 +3135,7 @@ local summaryCalcData = {
 	-- Expertise - EXPERTISE_RATING
 	{
 		option = "sumExpertise",
-		name = StatLogic.Stats.Expertise,
+		stat = StatLogic.Stats.Expertise,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.Expertise]
 				+ sum[StatLogic.Stats.ExpertiseRating] * statModContext("ADD_EXPERTISE_MOD_EXPERTISE_RATING")
@@ -3151,7 +3144,7 @@ local summaryCalcData = {
 	-- Expertise Rating - EXPERTISE_RATING
 	{
 		option = "sumExpertiseRating",
-		name = StatLogic.Stats.ExpertiseRating,
+		stat = StatLogic.Stats.ExpertiseRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.ExpertiseRating]
 		end,
@@ -3159,7 +3152,7 @@ local summaryCalcData = {
 	-- Dodge Reduction - EXPERTISE_RATING, WEAPON_SKILL
 	{
 		option = "sumDodgeNeglect",
-		name = StatLogic.Stats.DodgeReduction,
+		stat = StatLogic.Stats.DodgeReduction,
 		func = function(sum, statModContext)
 			local effect = summaryFunc[StatLogic.Stats.Expertise](sum, statModContext)
 			if addon.tocversion < 30000 then
@@ -3167,12 +3160,11 @@ local summaryCalcData = {
 			end
 			return effect * statModContext("ADD_DODGE_REDUCTION_MOD_EXPERTISE") + sum[StatLogic.Stats.WeaponSkill] * 0.1
 		end,
-		ispercent = true,
 	},
 	-- Parry Reduction - EXPERTISE_RATING
 	{
 		option = "sumParryNeglect",
-		name = StatLogic.Stats.ParryReduction,
+		stat = StatLogic.Stats.ParryReduction,
 		func = function(sum, statModContext)
 			local effect = summaryFunc[StatLogic.Stats.Expertise](sum, statModContext)
 			if addon.tocversion < 30000 then
@@ -3180,12 +3172,11 @@ local summaryCalcData = {
 			end
 			return effect * statModContext("ADD_PARRY_REDUCTION_MOD_EXPERTISE")
 		end,
-		ispercent = true,
 	},
 	-- Weapon Average Damage - StatLogic.Stats.MinWeaponDamage, StatLogic.Stats.MaxWeaponDamage
 	{
 		option = "sumWeaponAverageDamage",
-		name = StatLogic.Stats.AverageWeaponDamage,
+		stat = StatLogic.Stats.AverageWeaponDamage,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MinWeaponDamage] * statModContext("ADD_WEAPON_DAMAGE_AVERAGE_MOD_WEAPON_DAMAGE_MIN")
 				+ sum[StatLogic.Stats.MaxWeaponDamage] * statModContext("ADD_WEAPON_DAMAGE_AVERAGE_MOD_WEAPON_DAMAGE_MAX")
@@ -3194,7 +3185,7 @@ local summaryCalcData = {
 	-- Weapon DPS - DPS
 	{
 		option = "sumWeaponDPS",
-		name = StatLogic.Stats.WeaponDPS,
+		stat = StatLogic.Stats.WeaponDPS,
 		func = function(sum)
 			return sum[StatLogic.Stats.WeaponDPS]
 		end,
@@ -3202,7 +3193,7 @@ local summaryCalcData = {
 	-- Ignore Armor - IGNORE_ARMOR
 	{
 		option = "sumIgnoreArmor",
-		name = StatLogic.Stats.IgnoreArmor,
+		stat = StatLogic.Stats.IgnoreArmor,
 		func = function(sum)
 			return sum[StatLogic.Stats.IgnoreArmor]
 		end,
@@ -3210,16 +3201,15 @@ local summaryCalcData = {
 	-- Armor Penetration - ARMOR_PENETRATION_RATING
 	{
 		option = "sumArmorPenetration",
-		name = StatLogic.Stats.ArmorPenetration,
+		stat = StatLogic.Stats.ArmorPenetration,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ArmorPenetrationRating] * statModContext("ADD_ARMOR_PENETRATION_MOD_ARMOR_PENETRATION_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Armor Penetration Rating - ARMOR_PENETRATION_RATING
 	{
 		option = "sumArmorPenetrationRating",
-		name = StatLogic.Stats.ArmorPenetrationRating,
+		stat = StatLogic.Stats.ArmorPenetrationRating,
 		func = function(sum) return
 			sum[StatLogic.Stats.ArmorPenetrationRating]
 		end,
@@ -3230,7 +3220,7 @@ local summaryCalcData = {
 	-- Spell Damage - SPELL_DMG, STA, INT, SPI
 	{
 		option = "sumSpellDmg",
-		name = StatLogic.Stats.SpellDamage,
+		stat = StatLogic.Stats.SpellDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * (
 				sum[StatLogic.Stats.SpellDamage]
@@ -3248,7 +3238,7 @@ local summaryCalcData = {
 	-- Holy Damage - HOLY_SPELL_DMG, SPELL_DMG, INT, SPI
 	{
 		option = "sumHolyDmg",
-		name = StatLogic.Stats.HolyDamage,
+		stat = StatLogic.Stats.HolyDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.HolyDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3257,7 +3247,7 @@ local summaryCalcData = {
 	-- Arcane Damage - ARCANE_SPELL_DMG, SPELL_DMG, INT
 	{
 		option = "sumArcaneDmg",
-		name = StatLogic.Stats.ArcaneDamage,
+		stat = StatLogic.Stats.ArcaneDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.ArcaneDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3266,7 +3256,7 @@ local summaryCalcData = {
 	-- Fire Damage - FIRE_SPELL_DMG, SPELL_DMG, STA, INT
 	{
 		option = "sumFireDmg",
-		name = StatLogic.Stats.FireDamage,
+		stat = StatLogic.Stats.FireDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.FireDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3275,7 +3265,7 @@ local summaryCalcData = {
 	-- Nature Damage - NATURE_SPELL_DMG, SPELL_DMG, INT
 	{
 		option = "sumNatureDmg",
-		name = StatLogic.Stats.NatureDamage,
+		stat = StatLogic.Stats.NatureDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.NatureDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3284,7 +3274,7 @@ local summaryCalcData = {
 	-- Frost Damage - FROST_SPELL_DMG, SPELL_DMG, INT
 	{
 		option = "sumFrostDmg",
-		name = StatLogic.Stats.FrostDamage,
+		stat = StatLogic.Stats.FrostDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.FrostDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3293,7 +3283,7 @@ local summaryCalcData = {
 	-- Shadow Damage - SHADOW_SPELL_DMG, SPELL_DMG, STA, INT, SPI
 	{
 		option = "sumShadowDmg",
-		name = StatLogic.Stats.ShadowDamage,
+		stat = StatLogic.Stats.ShadowDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.ShadowDamage]
 				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
@@ -3302,7 +3292,7 @@ local summaryCalcData = {
 	-- Healing - HEAL, AGI, STR, INT, SPI, AP
 	{
 		option = "sumHealing",
-		name = StatLogic.Stats.HealingPower,
+		stat = StatLogic.Stats.HealingPower,
 		func = function(sum, statModContext)
 			return statModContext("MOD_HEALING") * (
 				sum[StatLogic.Stats.HealingPower]
@@ -3319,17 +3309,16 @@ local summaryCalcData = {
 	-- Spell Hit Chance - SPELL_HIT_RATING
 	{
 		option = "sumSpellHit",
-		name = StatLogic.Stats.SpellHit,
+		stat = StatLogic.Stats.SpellHit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHit]
 				+ summaryFunc[StatLogic.Stats.SpellHitRating](sum, statModContext) * statModContext("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Spell Hit Rating - SPELL_HIT_RATING
 	{
 		option = "sumSpellHitRating",
-		name = StatLogic.Stats.SpellHitRating,
+		stat = StatLogic.Stats.SpellHitRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHitRating]
 				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_SPELL_HIT_RATING_MOD_SPI")
@@ -3338,18 +3327,17 @@ local summaryCalcData = {
 	-- Spell Crit Chance - SPELL_CRIT_RATING, INT
 	{
 		option = "sumSpellCrit",
-		name = StatLogic.Stats.SpellCrit,
+		stat = StatLogic.Stats.SpellCrit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellCrit]
 				+ summaryFunc[StatLogic.Stats.SpellCritRating](sum, statModContext) * statModContext("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING")
 				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_SPELL_CRIT_MOD_INT")
 		end,
-		ispercent = true,
 	},
 	-- Spell Crit Rating - SPELL_CRIT_RATING
 	{
 		option = "sumSpellCritRating",
-		name = StatLogic.Stats.SpellCritRating,
+		stat = StatLogic.Stats.SpellCritRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellCritRating]
 				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_SPELL_CRIT_RATING_MOD_SPI")
@@ -3358,16 +3346,15 @@ local summaryCalcData = {
 	-- Spell Haste - SPELL_HASTE_RATING
 	{
 		option = "sumSpellHaste",
-		name = StatLogic.Stats.SpellHaste,
+		stat = StatLogic.Stats.SpellHaste,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHasteRating] * statModContext("ADD_SPELL_HASTE_MOD_SPELL_HASTE_RATING")
 		end,
-		ispercent = true,
 	},
 	-- Spell Haste Rating - SPELL_HASTE_RATING
 	{
 		option = "sumSpellHasteRating",
-		name = StatLogic.Stats.SpellHasteRating,
+		stat = StatLogic.Stats.SpellHasteRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.SpellHasteRating]
 		end,
@@ -3375,7 +3362,7 @@ local summaryCalcData = {
 	-- Spell Penetration - SPELLPEN
 	{
 		option = "sumPenetration",
-		name = StatLogic.Stats.SpellPenetration,
+		stat = StatLogic.Stats.SpellPenetration,
 		func = function(sum)
 			return sum[StatLogic.Stats.SpellPenetration]
 		end,
@@ -3386,7 +3373,7 @@ local summaryCalcData = {
 	-- Armor - ARMOR, ARMOR_BONUS, AGI, INT
 	{
 		option = "sumArmor",
-		name = StatLogic.Stats.Armor,
+		stat = StatLogic.Stats.Armor,
 		func = function(sum, statModContext)
 			return statModContext("MOD_ARMOR") * sum[StatLogic.Stats.Armor]
 				+ sum[StatLogic.Stats.BonusArmor]
@@ -3397,7 +3384,7 @@ local summaryCalcData = {
 	-- Dodge Chance Before DR - DODGE, DODGE_RATING, DEFENSE, AGI
 	{
 		option = "sumDodgeBeforeDR",
-		name = StatLogic.Stats.DodgeBeforeDR,
+		stat = StatLogic.Stats.DodgeBeforeDR,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.Dodge]
 				+ sum[StatLogic.Stats.DodgeRating] * statModContext("ADD_DODGE_MOD_DODGE_RATING")
@@ -3405,12 +3392,11 @@ local summaryCalcData = {
 				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_DODGE_MOD_AGI")
 				+ summaryFunc[StatLogic.Stats.SpellCrit](sum, statModContext) * statModContext("ADD_DODGE_MOD_SPELL_CRIT")
 		end,
-		ispercent = true,
 	},
 	-- Dodge Chance
 	{
 		option = "sumDodge",
-		name = StatLogic.Stats.Dodge,
+		stat = StatLogic.Stats.Dodge,
 		func = function(sum, statModContext, sumType)
 			local dodge = summaryFunc[StatLogic.Stats.DodgeBeforeDR](sum, statModContext)
 			if db.profile.enableAvoidanceDiminishingReturns then
@@ -3422,12 +3408,11 @@ local summaryCalcData = {
 			end
 			return dodge
 		 end,
-		ispercent = true,
 	},
 	-- Dodge Rating - DODGE_RATING
 	{
 		option = "sumDodgeRating",
-		name = StatLogic.Stats.DodgeRating,
+		stat = StatLogic.Stats.DodgeRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.DodgeRating]
 		end,
@@ -3435,7 +3420,7 @@ local summaryCalcData = {
 	-- Parry Chance Before DR - PARRY, PARRY_RATING, DEFENSE
 	{
 		option = "sumParryBeforeDR",
-		name = StatLogic.Stats.ParryBeforeDR,
+		stat = StatLogic.Stats.ParryBeforeDR,
 		func = function(sum, statModContext)
 			return GetParryChance() > 0 and (
 				sum[StatLogic.Stats.Parry]
@@ -3443,12 +3428,11 @@ local summaryCalcData = {
 				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_PARRY_MOD_DEFENSE")
 			) or 0
 		end,
-		ispercent = true,
 	},
 	-- Parry Chance
 	{
 		option = "sumParry",
-		name = StatLogic.Stats.Parry,
+		stat = StatLogic.Stats.Parry,
 		func = function(sum, statModContext, sumType)
 			local parry = summaryFunc[StatLogic.Stats.ParryBeforeDR](sum, statModContext)
 			if db.profile.enableAvoidanceDiminishingReturns then
@@ -3460,12 +3444,11 @@ local summaryCalcData = {
 			end
 			return parry
 		 end,
-		ispercent = true,
 	},
 	-- Parry Rating - PARRY_RATING
 	{
 		option = "sumParryRating",
-		name = StatLogic.Stats.ParryRating,
+		stat = StatLogic.Stats.ParryRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ParryRating]
 				+ sum[StatLogic.Stats.Strength] * statModContext("ADD_PARRY_RATING_MOD_STR")
@@ -3474,7 +3457,7 @@ local summaryCalcData = {
 	-- Block Chance - BLOCK, BLOCK_RATING, DEFENSE
 	{
 		option = "sumBlock",
-		name = StatLogic.Stats.BlockChance,
+		stat = StatLogic.Stats.BlockChance,
 		func = function(sum, statModContext)
 			return GetBlockChance() > 0 and (
 				sum[StatLogic.Stats.BlockChance]
@@ -3483,12 +3466,11 @@ local summaryCalcData = {
 				+ summaryFunc[StatLogic.Stats.MasteryEffect](sum, statModContext) * statModContext("ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT")
 			) or 0
 		end,
-		ispercent = true,
 	},
 	-- Block Rating - BLOCK_RATING
 	{
 		option = "sumBlockRating",
-		name = StatLogic.Stats.BlockRating,
+		stat = StatLogic.Stats.BlockRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.BlockRating]
 		end,
@@ -3496,7 +3478,7 @@ local summaryCalcData = {
 	-- Block Value - BLOCK_VALUE, STR
 	{
 		option = "sumBlockValue",
-		name = StatLogic.Stats.BlockValue,
+		stat = StatLogic.Stats.BlockValue,
 		func = function(sum, statModContext)
 			return GetBlockChance() > 0 and (
 				statModContext("MOD_BLOCK_VALUE") * (
@@ -3510,16 +3492,15 @@ local summaryCalcData = {
 	-- Hit Avoidance Before DR - DEFENSE
 	{
 		option = "sumHitAvoidBeforeDR",
-		name = StatLogic.Stats.MissBeforeDR,
+		stat = StatLogic.Stats.MissBeforeDR,
 		func = function(sum, statModContext)
 			return summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_MISS_MOD_DEFENSE")
 		end,
-		ispercent = true,
 	},
 	-- Hit Avoidance
 	{
 		option = "sumHitAvoid",
-		name = StatLogic.Stats.Miss,
+		stat = StatLogic.Stats.Miss,
 		func = function(sum, statModContext, sumType)
 			local missed = summaryFunc[StatLogic.Stats.MissBeforeDR](sum, statModContext)
 			if db.profile.enableAvoidanceDiminishingReturns then
@@ -3531,12 +3512,11 @@ local summaryCalcData = {
 			end
 			return missed
 		 end,
-		ispercent = true,
 	},
 	-- Defense - DEFENSE_RATING
 	{
 		option = "sumDefense",
-		name = StatLogic.Stats.Defense,
+		stat = StatLogic.Stats.Defense,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.Defense]
 				+ sum[StatLogic.Stats.DefenseRating] * statModContext("ADD_DEFENSE_MOD_DEFENSE_RATING")
@@ -3545,8 +3525,7 @@ local summaryCalcData = {
 	-- Avoidance - DODGE, PARRY, MELEE_HIT_AVOID, BLOCK(Optional)
 	{
 		option = "sumAvoidance",
-		name = StatLogic.Stats.Avoidance,
-		ispercent = true,
+		stat = StatLogic.Stats.Avoidance,
 		func = function(sum, statModContext, sumType, link)
 			local dodge = summaryFunc[StatLogic.Stats.Dodge](sum, statModContext, sumType, link)
 			local parry = summaryFunc[StatLogic.Stats.Parry](sum, statModContext, sumType, link)
@@ -3561,17 +3540,16 @@ local summaryCalcData = {
 	-- Crit Avoidance - RESILIENCE_RATING, DEFENSE
 	{
 		option = "sumCritAvoid",
-		name = StatLogic.Stats.CritAvoidance,
+		stat = StatLogic.Stats.CritAvoidance,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ResilienceRating] * statModContext("ADD_RESILIENCE_MOD_RESILIENCE_RATING") * statModContext("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
 				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_CRIT_AVOIDANCE_MOD_DEFENSE")
 		 end,
-		ispercent = true,
 	},
 	-- Resilience - RESILIENCE_RATING
 	{
 		option = "sumResilience",
-		name = StatLogic.Stats.ResilienceRating,
+		stat = StatLogic.Stats.ResilienceRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.ResilienceRating]
 		end,
@@ -3579,7 +3557,7 @@ local summaryCalcData = {
 	-- Arcane Resistance - ARCANE_RES
 	{
 		option = "sumArcaneResist",
-		name = StatLogic.Stats.ArcaneResistance,
+		stat = StatLogic.Stats.ArcaneResistance,
 		func = function(sum)
 			return sum[StatLogic.Stats.ArcaneResistance]
 		end,
@@ -3587,7 +3565,7 @@ local summaryCalcData = {
 	-- Fire Resistance - FIRE_RES
 	{
 		option = "sumFireResist",
-		name = StatLogic.Stats.FireResistance,
+		stat = StatLogic.Stats.FireResistance,
 		func = function(sum)
 			return sum[StatLogic.Stats.FireResistance]
 		end,
@@ -3595,7 +3573,7 @@ local summaryCalcData = {
 	-- Nature Resistance - NATURE_RES
 	{
 		option = "sumNatureResist",
-		name = StatLogic.Stats.NatureResistance,
+		stat = StatLogic.Stats.NatureResistance,
 		func = function(sum)
 			return sum[StatLogic.Stats.NatureResistance]
 		end,
@@ -3603,7 +3581,7 @@ local summaryCalcData = {
 	-- Frost Resistance - FROST_RES
 	{
 		option = "sumFrostResist",
-		name = StatLogic.Stats.FrostResistance,
+		stat = StatLogic.Stats.FrostResistance,
 		func = function(sum)
 			return sum[StatLogic.Stats.FrostResistance]
 		end,
@@ -3611,7 +3589,7 @@ local summaryCalcData = {
 	-- Shadow Resistance - SHADOW_RES
 	{
 		option = "sumShadowResist",
-		name = StatLogic.Stats.ShadowResistance,
+		stat = StatLogic.Stats.ShadowResistance,
 		func = function(sum)
 			return sum[StatLogic.Stats.ShadowResistance]
 		end,
@@ -3620,7 +3598,7 @@ local summaryCalcData = {
 
 -- Build summaryFunc
 for _, calcData in pairs(summaryCalcData) do
-	summaryFunc[calcData.name] = calcData.func
+	summaryFunc[calcData.stat] = calcData.func
 end
 
 local function sumSortAlphaComp(a, b)
@@ -3806,8 +3784,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 	for _, calcData in ipairs(summaryCalcData) do
 		if db.profile[calcData.option] then
 			local entry = {
-				name = calcData.name,
-				ispercent = calcData.ispercent,
+				stat = calcData.stat,
 			}
 			for statDataType, statTable in pairs(statData) do
 				entry[statDataType] = calcData.func(statTable, statModContext, statDataType, link)
@@ -3825,7 +3802,8 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 	local output = {}
 	output.numLines = numLines
 	for _, t in ipairs(summary) do
-		local n, s, d1, d2, ispercent = t.name, t.sum, t.diff1, t.diff2, t.ispercent
+		local stat, s, d1, d2 = t.stat, t.sum, t.diff1, t.diff2
+		local isPercent = stat.isPercent
 		local right, left
 		local skip
 		if not showZeroValueStat then
@@ -3835,11 +3813,11 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 		end
 		if not skip then
 			if calcSum and calcDiff then
-				local d = ((not s) or ((s - floor(s)) == 0)) and ((not d1) or ((d1 - floor(d1)) == 0)) and ((not d2) or ((d2 - floor(d2)) == 0)) and not ispercent
+				local d = ((not s) or ((s - floor(s)) == 0)) and ((not d1) or ((d1 - floor(d1)) == 0)) and ((not d2) or ((d2 - floor(d2)) == 0)) and not isPercent
 				if s then
 					if d then
 						s = ("%d"):format(s)
-					elseif ispercent then
+					elseif isPercent then
 						s = ("%.2f%%"):format(s)
 					else
 						s = ("%.1f"):format(s)
@@ -3847,7 +3825,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 					if d1 then
 						if d then
 							d1 = colorNum(("%+d"):format(d1), d1)
-						elseif ispercent then
+						elseif isPercent then
 							d1 = colorNum(("%+.2f%%"):format(d1), d1)
 						else
 							d1 = colorNum(("%+.1f"):format(d1), d1)
@@ -3855,7 +3833,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 						if d2 then
 							if d then
 								d2 = colorNum(("%+d"):format(d2), d2)
-							elseif ispercent then
+							elseif isPercent then
 								d2 = colorNum(("%+.2f%%"):format(d2), d2)
 							else
 								d2 = colorNum(("%+.1f"):format(d2), d2)
@@ -3871,7 +3849,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 					if d1 then
 						if d then
 							d1 = colorNum(("%+d"):format(d1), d1)
-						elseif ispercent then
+						elseif isPercent then
 							d1 = colorNum(("%+.2f%%"):format(d1), d1)
 						else
 							d1 = colorNum(("%+.1f"):format(d1), d1)
@@ -3879,7 +3857,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 						if d2 then
 							if d then
 								d2 = colorNum(("%+d"):format(d2), d2)
-							elseif ispercent then
+							elseif isPercent then
 								d2 = colorNum(("%+.2f%%"):format(d2), d2)
 							else
 								d2 = colorNum(("%+.1f"):format(d2), d2)
@@ -3894,7 +3872,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 				if s then
 					if (s - floor(s)) == 0 then
 						s = ("%d"):format(s)
-					elseif ispercent then
+					elseif isPercent then
 						s = ("%.2f%%"):format(s)
 					else
 						s = ("%.1f"):format(s)
@@ -3906,7 +3884,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 				if d1 then
 					if d then
 						d1 = colorNum(("%+d"):format(d1), d1)
-					elseif ispercent then
+					elseif isPercent then
 						d1 = colorNum(("%+.2f%%"):format(d1), d1)
 					else
 						d1 = colorNum(("%+.1f"):format(d1), d1)
@@ -3914,7 +3892,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 					if d2 then
 						if d then
 							d2 = colorNum(("%+d"):format(d2), d2)
-						elseif ispercent then
+						elseif isPercent then
 							d2 = colorNum(("%+.2f%%"):format(d2), d2)
 						else
 							d2 = colorNum(("%+.1f"):format(d2), d2)
@@ -3926,7 +3904,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 				end
 			end
 			if right then
-				left = L[n]
+				left = L[stat]
 				tinsert(output, {left, right})
 			end
 		end

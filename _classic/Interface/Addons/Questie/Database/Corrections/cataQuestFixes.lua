@@ -1211,6 +1211,9 @@ function CataQuestFixes.Load()
         [12869] = { -- Pushed Too Far
             [questKeys.preQuestSingle] = {},
         },
+        [13124] = { -- The Struggle Persists
+            [questKeys.startedBy] = {}, -- needs a fake NPC inside oculus
+        },
         [13125] = { -- The Air Stands Still
             [questKeys.preQuestSingle] = {},
         },
@@ -8420,6 +8423,27 @@ function CataQuestFixes.Load()
             [questKeys.requiredRaces] = raceKeys.HUMAN,
             [questKeys.zoneOrSort] = zoneIDs.ELWYNN_FOREST,
         },
+        [28798] = { -- Waters of Elune
+            [questKeys.requiredLevel] = 77,
+        },
+        [28799] = { -- Might of the Earthen
+            [questKeys.requiredLevel] = 80,
+        },
+        [28800] = { -- Whispers of the Djinn
+            [questKeys.requiredLevel] = 80,
+        },
+        [28801] = { -- Tol'vir Heiroglyphics
+            [questKeys.requiredLevel] = 83,
+        },
+        [28802] = { -- Map of the Architects
+            [questKeys.requiredLevel] = 83,
+        },
+        [28803] = { -- Vengeance of the Wildhammer
+            [questKeys.requiredLevel] = 83,
+        },
+        [28804] = { -- Dark Iron Contingency Plan
+            [questKeys.requiredLevel] = 77,
+        },
         [28805] = { -- The Eye of the Storm
             [questKeys.objectives] = {nil,{{207414}}},
         },
@@ -8835,6 +8859,7 @@ function CataQuestFixes.Load()
         },
         [29125] = { -- Between the Trees
             [questKeys.exclusiveTo] = {29101,29147,29161,29164},
+            [questKeys.objectives] = {{{52176,nil,Questie.ICON_TYPE_EVENT}}},
         },
         [29126] = { -- The Power of Malorne
             [questKeys.startedBy] = {{52669}},
@@ -8872,6 +8897,7 @@ function CataQuestFixes.Load()
             [questKeys.requiredClasses] = classKeys.SHAMAN + classKeys.PRIEST + classKeys.MAGE + classKeys.WARLOCK + classKeys.DRUID,
         },
         [29137] = { -- Breach in the Defenses
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29141,29142,29304},
         },
         [29138] = { -- Burn Victims
@@ -8880,16 +8906,20 @@ function CataQuestFixes.Load()
         },
         [29139] = { -- Aggressive Growth
             [questKeys.objectives] = {nil,{{208545}}},
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29143},
         },
         [29141] = { -- The Harder They Fall
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29137,29142,29304},
         },
         [29142] = { -- Traitors Return
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29137,29141,29304},
         },
         [29143] = { -- Wisp Away
             [questKeys.objectives] = {{{52531,nil,Questie.ICON_TYPE_EVENT}}},
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29139},
         },
         [29146] = { -- Ridin' the Rocketway
@@ -8965,6 +8995,9 @@ function CataQuestFixes.Load()
             [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_MOUNT_UP,l10n("Mount up"),0,{{"monster",40720},{"monster",40723}}}},
             [questKeys.objectives] = {nil,nil,nil,nil,{{{40650,40660},40650}}},
         },
+        [29179] = { -- Hostile Elements
+            [questKeys.preQuestSingle] = {29201},
+        },
         [29181] = { -- Druids of the Talon
             [questKeys.objectives] = {nil,{{460014}}},
         },
@@ -8983,6 +9016,7 @@ function CataQuestFixes.Load()
         },
         [29197] = { -- Caught Unawares
             [questKeys.objectives] = {{{52906,nil,Questie.ICON_TYPE_EVENT},{52907,nil,Questie.ICON_TYPE_EVENT}},nil,nil,nil,{{{52903,52904},52903,nil,Questie.ICON_TYPE_EVENT}}},
+            [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_SLAY,l10n("Defeat Raging Invader"),0,{{"monster",52557}}}},
         },
         [29199] = { -- Calling for Reinforcements
             [questKeys.objectives] = {nil,{{460014}}},
@@ -9119,6 +9153,12 @@ function CataQuestFixes.Load()
         [29257] = { -- Steal Magmolias
             [questKeys.exclusiveTo] = {29255,29299},
         },
+        [29261] = { -- Zul'Aman Voodoo
+            [questKeys.requiredLevel] = 85,
+        },
+        [29262] = { -- Zul'Gurub Voodoo
+            [questKeys.requiredLevel] = 85,
+        },
         [29267] = { -- Some Good Will Come
             [questKeys.parentQuest] = 29100,
             [questKeys.preQuestSingle] = {29121},
@@ -9157,6 +9197,7 @@ function CataQuestFixes.Load()
             [questKeys.exclusiveTo] = {29255,29257},
         },
         [29304] = { -- The Dogs of War
+            [questKeys.preQuestSingle] = {29201},
             [questKeys.exclusiveTo] = {29137,29141,29142},
         },
         [29317] = { -- Fish Head
@@ -9443,6 +9484,7 @@ function CataQuestFixes.Load()
             [questKeys.objectives] = {nil,{{460001}}},
             [questKeys.requiredSkill] = {profKeys.ALCHEMY,75},
             [questKeys.specialFlags] = 17,
+            [questKeys.requiredSourceItems] = {19299},
         },
         [29507] = { -- Fun for the Little Ones
             [questKeys.startedBy] = {{14847}},

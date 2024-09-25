@@ -1,10 +1,14 @@
 # RatingBuster
 
-## [1.18.3](https://github.com/raethkcj/RatingBuster/tree/1.18.3) (2024-09-08)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.18.2...1.18.3) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [1.18.4](https://github.com/raethkcj/RatingBuster/tree/1.18.4) (2024-09-24)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/1.18.3...1.18.4) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Add SoD Tier 2 set bonuses  
-- Fix SoD AP from Defense bug  
-- Bump tocs  
-- Remove unneeded vanilla crit/dodge stat mods  
-- Fix bonus armor color matching  
+- Update Cata DodgePerAgi  
+- SoD P5 Hotfixes  
+- Use isPercent from Stat class in summary generation  
+- Rename summaryFunc name to stat  
+- Update SoD Burn Rune  
+- Update SoD enchant localization (ZG Enchants, Law of Nature)  
+- Update Cata DodgePerAgi  
+- Use item min level for level-based stat mods  
+- Add Shaman's parry spell  
