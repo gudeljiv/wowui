@@ -3,6 +3,12 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="10.0.0"
 
 TMW.CHANGELOG = [==[
+## v11.0.10
+* Fix: #2228 - Cooldown bling appearing on groups with 0% opacity.
+* Fix: #2230 - Raised max value of Maelstrom condition.
+* Fix: #2231 - Some abilities not reflecting out-of-power state correctly.
+* Fix: #2232 - Spell Queued condition not working on retail WoW.
+
 ## v11.0.9
 * Fix various Lua errors.
 

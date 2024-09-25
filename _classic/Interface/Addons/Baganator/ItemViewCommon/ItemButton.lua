@@ -913,27 +913,9 @@ local function ApplyQualityBorderClassic(self, quality)
     color = BAG_ITEM_QUALITY_COLORS[quality]
   end
 
-  self:CreateBeautyBorder(8)
-
-  self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
-  self:SetBeautyBorderColor(1, 1, 1, 1)
-
   if color then
     self.IconBorder:Show()
-    -- self.IconBorder:SetVertexColor(color.r, color.g, color.b)
-	self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-	self:SetBeautyBorderColor(color.r, color.g, color.b, 1)
-
-	-- if itemRarity and itemRarity > 1 then
-	-- 	self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-	-- 	self:SetBeautyBorderColor(r or 1, g or 0, b or 0, 1)
-	-- end
-
-	-- if itemType and itemType == 'Quest' then
-	-- 	self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-	-- 	self:SetBeautyBorderColor(1, 0.964, 0, 1)
-	-- end
-
+    self.IconBorder:SetVertexColor(color.r, color.g, color.b)
   else
     self.IconBorder:Hide()
   end

@@ -24,7 +24,7 @@ local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "11.0.9" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "11.0.10" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -34,21 +34,19 @@ end
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
 
 local REVISION = 1
-if #TELLMEWHEN_VERSION > 6 or REVISION >= 100 then
+if #TELLMEWHEN_VERSION > 7 or REVISION >= 100 then
 	return error("TELLMEWHEN: UNEXPECTEDLY HIGH VERSION/REVISION")
 end
 
 -- This number is used for running migrations, showing the last changelog version,
 -- and communicating new versions to other players.
--- For a TOC version 10.2.3 and a REVISION=45, it'll be `102345`.
-TELLMEWHEN_VERSIONNUMBER = tonumber(TELLMEWHEN_VERSION:gsub("%.", "") .. ("%02d"):format(REVISION))
+-- For a TOC version 10.2.3 and a REVISION=45, it'll be `10020345`.
+TELLMEWHEN_VERSIONNUMBER = tonumber(
+	TELLMEWHEN_VERSION:gsub("%.(%d+)", function(x) return ("%02d"):format(tonumber(x)) end) .. 
+	("%02d"):format(REVISION)
+)
 
 TELLMEWHEN_FORCECHANGELOG = 86005 -- if the user hasn't seen the changelog until at least this version, show it to them.
-
-
-if TELLMEWHEN_VERSION_MINOR == "dev" and not strfind(TELLMEWHEN_VERSIONNUMBER, TELLMEWHEN_VERSION:gsub("%.", ""), nil) then
-	return error("TELLMEWHEN: TELLMEWHEN_VERSION DOESN'T AGREE WITH TELLMEWHEN_VERSIONNUMBER")
-end
 
 TELLMEWHEN_MAXROWS = 20
 
