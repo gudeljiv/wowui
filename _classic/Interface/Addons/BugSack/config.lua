@@ -10,7 +10,7 @@ local ldbi = LibStub("LibDBIcon-1.0")
 
 frame:SetScript("OnShow", function(frame)
 	local function newCheckbox(label, description, onClick)
-		local check = CreateFrame("CheckButton", "BugSackCheck" .. label, frame, "InterfaceOptionsCheckButtonTemplate")
+		local check = CreateFrame("CheckButton", "BugSackCheck" .. label, frame, "UICheckButtonTemplate")
 		check:SetScript("OnClick", function(self)
 			local tick = self:GetChecked()
 			onClick(self, tick and true or false)

@@ -83,7 +83,7 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 WideQuestLogPlus: disabled
 Deathlog: disabled
-RareScanner: disabled
+RareScanner: enabled
 SortBags: enabled
 TradeSkillMaster_AppHelper: enabled
 DugisGuideViewerZ: disabled

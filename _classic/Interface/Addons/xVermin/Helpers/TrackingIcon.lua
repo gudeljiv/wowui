@@ -173,11 +173,11 @@ f:SetScript(
 	end
 )
 
-MiniMapTrackingFrame:Hide()
-MiniMapTrackingFrame:HookScript(
+MiniMapTracking:Hide()
+MiniMapTracking:HookScript(
 	'OnShow',
 	function()
-		MiniMapTrackingFrame:Hide()
+		MiniMapTracking:Hide()
 	end
 )
 

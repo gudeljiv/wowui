@@ -331,12 +331,17 @@ function RingMenuOptions_SetupPanel()
                 lowLabel = lowLabel .. widget.labelSuffix
                 highLabel = highLabel .. widget.labelSuffix
             end
-            _G[widgetFrame:GetName().."Low"]:SetText(lowLabel)
-            _G[widgetFrame:GetName().."High"]:SetText(highLabel)
+			if _G[widgetFrame:GetName().."Low"] then
+            	_G[widgetFrame:GetName().."Low"]:SetText(lowLabel)
+			end
+			if _G[widgetFrame:GetName().."High"] then
+            	_G[widgetFrame:GetName().."High"]:SetText(highLabel)
+			end
+            -- _G[widgetFrame:GetName().."High"]:SetText(highLabel)
 
             widgetFrame:SetScript("OnValueChanged", sliderOnValueChanged)
         elseif widget.widgetType == "checkbox" then
-            widgetFrame = CreateFrame("CheckButton", ringPanel:GetName() .. "Widget" .. widget.name, ringPanel, "OptionsCheckButtonTemplate")
+            widgetFrame = CreateFrame("CheckButton", ringPanel:GetName() .. "Widget" .. widget.name, ringPanel, "UICheckButtonTemplate")
             widgetFrame:SetPoint("LEFT", label, "RIGHT", columnPadding - 2, 0)
             
             widgetFrame:SetScript("OnClick", checkboxOnClick)
@@ -415,5 +420,13 @@ function RingMenuOptions_SetupPanel()
     -- panel.okay
     -- panel.cancel
     -- panel.default
-    InterfaceOptions_AddCategory(panel)
+    -- InterfaceOptions_AddCategory(panel)
+
+	
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(panel)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(panel, panel.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end

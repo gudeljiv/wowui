@@ -57,7 +57,7 @@ Postal: enabled
 Questie: enabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
-RareScanner: disabled
+RareScanner: enabled
 RingMenu: enabled
 ShadowedUF_Options: enabled
 ShadowedUF_SmoothBars: enabled

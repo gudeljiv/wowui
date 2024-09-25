@@ -247,7 +247,13 @@ if Settings and Settings.RegisterCanvasLayoutCategory and Settings.RegisterAddOn
     category = Settings.RegisterCanvasLayoutCategory(frame, frame.name)
     Settings.RegisterAddOnCategory(category)
 else
-    InterfaceOptions_AddCategory(frame)
+    -- InterfaceOptions_AddCategory(frame)
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end
 
 local frame_config_base = CreateFrame("Frame", nil, InterfaceOptionsFramePanelContainer)
@@ -461,7 +467,13 @@ end)
 if Settings and Settings.RegisterCanvasLayoutSubcategory then
     local subcategory, layout = Settings.RegisterCanvasLayoutSubcategory(category, frame_config_base, frame_config_base.name, frame_config_base.name);
 else
-    InterfaceOptions_AddCategory(frame_config_base)
+    -- InterfaceOptions_AddCategory(frame_config_base)
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame_config_base)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame_config_base, frame_config_base.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end
 
 local customMacro = {}
@@ -1070,7 +1082,13 @@ end)
 if Settings and Settings.RegisterCanvasLayoutSubcategory then
     local subcategory, layout = Settings.RegisterCanvasLayoutSubcategory(category, frame_custom, frame_custom.name, frame_custom.name);
 else
-    InterfaceOptions_AddCategory(frame_custom)
+    -- InterfaceOptions_AddCategory(frame_custom)
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame_custom)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame_custom, frame_custom.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end
 
 

@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 24; -- bump on changes
+local LIB_MINOR = 32; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -62,13 +62,15 @@ end
 --         .CataC      = true/false for CataC
 --         .SL         = true/false for SL
 --         .DF         = true/false for DF
+--         .TWW        = true/false for TWW
 LibFroznFunctions.isWoWFlavor = {
 	ClassicEra = false,
 	BCC = false,
 	WotLKC = false,
 	CataC = false,
 	SL = false,
-	DF = false
+	DF = false,
+	TWW = false
 };
 
 if (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CLASSIC"]) then
@@ -82,8 +84,10 @@ elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CATACLYSM_CLASSIC"]) then
 else -- retail
 	if (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_SHADOWLANDS"]) then
 		LibFroznFunctions.isWoWFlavor.SL = true;
-	else
+	elseif (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_DRAGONFLIGHT"]) then
 		LibFroznFunctions.isWoWFlavor.DF = true;
+	else
+		LibFroznFunctions.isWoWFlavor.TWW = true;
 	end
 end
 
@@ -108,11 +112,14 @@ LFF_GEAR_SCORE_ALGORITHM = {
 --         .GameTooltipSetPaddingWithLeftAndTop                        = true/false if GameTooltip:SetPadding() has the optional left and top parameters (since BfA 8.2.0)
 --         .GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips         = true/false if GameTooltip:FadeOut() will not be called for worldframe unit tips (till wotlkc)
 --         .barMarginAdjustment                                        = bar margin adjustment (till wotlkc)
+--         .experienceBarFrame                                         = frame of experience bar
+--         .experienceBarDockedToInterfaceBar                          = true/false if experience bar is docked to interface bar (till df 10.0.0)
 --         .realGetSpellLinkAvailable                                  = true/false if the real GetSpellLink() is available (since bc 2.3.0). in classic era this function only returns the spell name instead of a spell link.
---         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expacID) (since Legion 7.1.0)
+--         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
 --         .defaultGearScoreAlgorithm                                  = default GearScore algorithm
 --         .optionsSliderTemplate                                      = options slider template ("OptionsSliderTemplate", since df 10.0.0 and catac 4.4.0 "UISliderTemplateWithLabels")
---         .dragonriding                                               = true/false if dragonriding is available (since df)
+--         .skyriding                                                  = true/false if skyriding is available (since df 10.0.2)
+--         .challengeMode                                              = true/false if challenge mode is available (since Legion 7.0.3)
 LibFroznFunctions.hasWoWFlavor = {
 	guildNameInPlayerUnitTip = true,
 	specializationAndClassTextInPlayerUnitTip = true,
@@ -124,14 +131,17 @@ LibFroznFunctions.hasWoWFlavor = {
 	roleIconAvailable = true,
 	specializationAvailable = true,
 	itemLevelOfFirstRaidTierSet = false,
-	barMarginAdjustment = 0,
 	GameTooltipSetPaddingWithLeftAndTop = true,
 	GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips = false,
+	barMarginAdjustment = 0,
+	experienceBarFrame = MainStatusTrackingBarContainer,
+	experienceBarDockedToInterfaceBar = false,
 	realGetSpellLinkAvailable = true,
 	relatedExpansionForItemAvailable = true,
 	defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TipTac,
 	optionsSliderTemplate = "UISliderTemplateWithLabels",
-	dragonriding = (GetAchievementInfo(15794) and true or false) -- see DRAGONRIDING_ACCOUNT_ACHIEVEMENT_ID in "Blizzard_DragonflightLandingPage.lua"
+	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false), -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
+	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false)
 };
 
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
@@ -158,6 +168,8 @@ if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.
 end
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip = false;
+	LibFroznFunctions.hasWoWFlavor.experienceBarFrame = MainMenuExpBar;
+	LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar = true;
 end
 if (LibFroznFunctions.isWoWFlavor.CataC) then
 	LibFroznFunctions.hasWoWFlavor.GetTalentTabInfoReturnValuesFromCataC = true;
@@ -165,41 +177,16 @@ end
 if (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 0;
 end
+if (LibFroznFunctions.isWoWFlavor.DF) then
+	LibFroznFunctions.hasWoWFlavor.skyriding = (GetAchievementInfo(15794) and true or false) -- see DRAGONRIDING_ACCOUNT_ACHIEVEMENT_ID in "Blizzard_DragonflightLandingPage.lua"
+end
 LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet = 
 	LibFroznFunctions.isWoWFlavor.ClassicEra and  66 or -- Cenarion Vestments (Druid, Tier 1)
 	LibFroznFunctions.isWoWFlavor.BCC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
 	LibFroznFunctions.isWoWFlavor.WotLKC     and 213 or -- Valorous Dreamwalker Robe (Druid, Tier 7)
 	LibFroznFunctions.isWoWFlavor.CataC      and 359 or -- Stormrider's Robes (Druid, Tier 11)
-	LibFroznFunctions.isWoWFlavor.DF         and 395;   -- Lost Landcaller's Robes (Druid, Tier 23)
-
--- get addon metadata
---
--- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (case insensitive)
--- @param  field        field name (case insensitive), e.g. "Title", "Version" or "Notes"
--- @return value of the field in TOC metadata of an addon
-function LibFroznFunctions:GetAddOnMetadata(indexOrName, field)
-	-- since df 10.1.0
-	if (C_AddOns) and (C_AddOns.GetAddOnMetadata) then
-		return C_AddOns.GetAddOnMetadata(indexOrName, field);
-	end
-	
-	-- before df 10.1.0
-	return GetAddOnMetadata(indexOrName, field);
-end
-
--- load addon
---
--- @param  indexOrName     index in the addon list (cannot query Blizzard addons by index) or name of the addon (case insensitive)
--- @return loaded, reason  if the addon is succesfully loaded or was already loaded. locale-independent reason why the addon could not be loaded e.g. "DISABLED", otherwise returns nil if the addon was loaded.
-function LibFroznFunctions:LoadAddOn(indexOrName)
-	-- since df 10.2.0
-	if (C_AddOns) and (C_AddOns.LoadAddOn) then
-		return C_AddOns.LoadAddOn(indexOrName);
-	end
-	
-	-- before df 10.2.0
-	return LoadAddOn(indexOrName);
-end
+	LibFroznFunctions.isWoWFlavor.DF         and 395 or -- Lost Landcaller's Robes (Druid, Tier 29)
+	LibFroznFunctions.isWoWFlavor.TWW        and 571;   -- Hide of the Greatlynx (Druid, Tier 32)
 
 -- aura filters, see "AuraUtil.lua"
 LFF_AURA_FILTERS = (AuraUtil) and (AuraUtil.AuraFilters) or {
@@ -562,6 +549,238 @@ function LibFroznFunctions:IsMountCollected(mountID)
 	end
 end
 
+-- get mouse focus
+--
+-- @return frame that currently has mouse focus
+function LibFroznFunctions:GetMouseFocus()
+	-- since tww 11.0.0
+	if (GetMouseFoci) then
+		local frames = GetMouseFoci();
+		
+		return frames and frames[1];
+	end
+	
+	-- before tww 11.0.0
+	return GetMouseFocus();
+end
+
+-- get spell info
+--
+-- @param  spellIdentifier  spell id, name, name(subtext) or link
+-- @return spellInfo
+function LibFroznFunctions:GetSpellInfo(spellIdentifier)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellInfo) then
+		if (not spellIdentifier) then
+			return nil;
+		end
+		
+		return C_Spell.GetSpellInfo(spellIdentifier);
+	end
+	
+	-- before tww 11.0.0
+	local name, rank, iconID, castTime, minRange, maxRange, spellID, originalIconID = GetSpellInfo(spellIdentifier); -- [18.07.19] 8.0/BfA: 2nd param "rank/nameSubtext" now returns nil
+	
+	return {
+		name = name,
+		iconID = iconID,
+		castTime = castTime,
+		minRange = minRange,
+		maxRange = maxRange,
+		spellID = spellID,
+		originalIconID = originalIconID
+	};
+end
+
+-- get spell subtext
+--
+-- @param  spellIdentifier  spell id, name, name(subtext) or link
+-- @return subtext
+function LibFroznFunctions:GetSpellSubtext(spellIdentifier)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellSubtext) then
+		if (not spellIdentifier) then
+			return nil;
+		end
+		
+		return C_Spell.GetSpellSubtext(spellIdentifier);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellSubtext(spellIdentifier);
+end
+
+-- get spell link
+--
+-- @param  spellIdentifier  spell id, name, name(subtext) or link
+-- @param  glyphID          optional. glyph id.
+-- @return spellLink
+function LibFroznFunctions:GetSpellLink(spellIdentifier, glyphID)
+	-- since tww 11.0.0
+	if (C_Spell) and (C_Spell.GetSpellLink) then
+		if (not spellIdentifier) then
+			return nil;
+		end
+		
+		return C_Spell.GetSpellLink(spellIdentifier, glyphID);
+	end
+	
+	-- before tww 11.0.0
+	if (not LibFroznFunctions.hasWoWFlavor.realGetSpellLinkAvailable) then
+		local spellInfo = self:GetSpellInfo(spellIdentifier);
+		
+		return format("|c%s|Hspell:%d:0|h[%s]|h|r", "FF71D5FF", spellInfo and spellInfo.spellID, spellInfo and spellInfo.name);
+	end
+	
+	return GetSpellLink(spellIdentifier);
+end
+
+-- get spell book item name
+--
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellName, spellSubName, spellID
+LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Player) or BOOKTYPE_SPELL; -- see SpellBookSpellBank in "SpellBookConstantsDocumentation.lua"
+LFF_BOOKTYPE_PET_OR_SPELLBANK_PET = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Pet) or BOOKTYPE_PET;
+
+function LibFroznFunctions:GetSpellBookItemName(index, bookTypeOrSpellBank)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) then
+		return C_SpellBook.GetSpellBookItemName(index, bookTypeOrSpellBank);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellBookItemName(index, bookTypeOrSpellBank);
+end
+
+-- get spell book item texture
+--
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellName, spellSubName, spellID
+function LibFroznFunctions:GetSpellBookItemTexture(index, bookTypeOrSpellBank)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemTexture) then
+		return C_SpellBook.GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+	end
+	
+	-- before tww 11.0.0
+	return GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+end
+
+-- get spell book item info
+--
+-- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+-- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
+-- @return spellBookItemInfo
+LFF_SPELLBOOK_ITEM_TYPE = Enum.SpellBookItemType; -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
+
+if (not LFF_SPELLBOOK_ITEM_TYPE) then
+	LFF_SPELLBOOK_ITEM_TYPE = {
+		None = 0,
+		Spell = 1,
+		FutureSpell = 2,
+		PetAction = 3,
+		Flyout = 4
+	};
+end
+
+function LibFroznFunctions:GetSpellBookItemInfo(index, bookTypeOrSpellBank)
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemInfo) then
+		return C_SpellBook.GetSpellBookItemInfo(index, bookTypeOrSpellBank);
+	end
+	
+	-- before tww 11.0.0
+	local spellType, id = GetSpellBookItemInfo(index, bookTypeOrSpellBank);
+	
+	local spellTypeToSpellBookItemTypeLookup = { -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
+		SPELL = LFF_SPELLBOOK_ITEM_TYPE.Spell,
+		FUTURESPELL = LFF_SPELLBOOK_ITEM_TYPE.FutureSpell,
+		PETACTION = LFF_SPELLBOOK_ITEM_TYPE.PetAction,
+		FLYOUT = LFF_SPELLBOOK_ITEM_TYPE.Flyout
+	};
+	
+	return {
+		actionID = id,
+		spellID = nil,
+		itemType = (spellTypeToSpellBookItemTypeLookup[spellType] or LFF_SPELLBOOK_ITEM_TYPE.None),
+		name = nil,
+		subName = nil,
+		iconID = nil,
+		isPassive = nil,
+		isOffSpec = nil,
+		skillLineIndex = nil
+	};
+end
+
+-- has pet spells
+--
+-- @return numPetSpells, petNameToken. returns numPetSpells = nil for feral spirit (shaman wolves) in wotlkc.
+function LibFroznFunctions:HasPetSpells()
+	-- since tww 11.0.0
+	if (C_SpellBook) and (C_SpellBook.HasPetSpells) then
+		return C_SpellBook.HasPetSpells();
+	end
+	
+	-- before tww 11.0.0
+	return HasPetSpells();
+end
+
+-- get quest currency info
+--
+-- @param  itemType       category of the currency to query. currently "reward" is the only category in use for currencies.
+-- @param  currencyIndex  index of the currency to query, in the range [1, before tww 11.0.0: GetNumRewardCurrencies(); since tww 11.0.0: #C_QuestInfoSystem.GetQuestRewardCurrencies()].
+-- @return questRewardCurrencyInfo
+function LibFroznFunctions:GetQuestCurrencyInfo(itemType, currencyIndex)
+	-- since tww 11.0.0
+	if (C_QuestOffer) and (C_QuestOffer.GetQuestRewardCurrencyInfo) then
+		return C_QuestOffer.GetQuestRewardCurrencyInfo(itemType, currencyIndex);
+	end
+	
+	-- before tww 11.0.0
+	local name, texture, quantity, quality = GetQuestCurrencyInfo(itemType, currencyIndex);
+	local currencyID = GetQuestCurrencyID(itemType, currencyIndex);
+	
+	return {
+		texture = texture,
+		name = name,
+		currencyID = currencyID,
+		quality = quality,
+		baseRewardAmount = nil,
+		bonusRewardAmount = nil,
+		totalRewardAmount = quantity,
+		questRewardContextFlags = nil
+	};
+end
+
+-- get quest log reward currency info
+--
+-- @param  questID        quest id
+-- @param  currencyIndex  index of the currency to query, in the range [1, before tww 11.0.0: GetNumQuestLogRewardCurrencies(); since tww 11.0.0: #C_QuestInfoSystem.GetQuestRewardCurrencies()].
+-- @param  isChoice       true if reward is choice reward
+-- @return questRewardCurrencyInfo
+function LibFroznFunctions:GetQuestLogRewardCurrencyInfo(questID, currencyIndex, isChoice)
+	-- since tww 11.0.0
+	if (C_QuestLog) and (C_QuestLog.GetQuestRewardCurrencyInfo) then
+		return C_QuestLog.GetQuestRewardCurrencyInfo(questID, currencyIndex, isChoice);
+	end
+	
+	-- before tww 11.0.0
+	local name, texture, quantity, currencyID, quality = GetQuestLogRewardCurrencyInfo(currencyIndex, questID, isChoice);
+	
+	return {
+		texture = texture,
+		name = name,
+		currencyID = currencyID,
+		quality = quality,
+		baseRewardAmount = nil,
+		bonusRewardAmount = nil,
+		totalRewardAmount = quantity,
+		questRewardContextFlags = nil
+	};
+end
+
 ----------------------------------------------------------------------------------------------------
 --                                        Helper Functions                                        --
 ----------------------------------------------------------------------------------------------------
@@ -716,17 +935,20 @@ end
 
 -- remove all items from table
 --
--- @param tab[]  table to remove all items from
-function LibFroznFunctions:RemoveAllFromTable(tab)
+-- @param tab[]    table to remove all items from
+-- @param shallow  optional. true if only values on the first level should be compared, false/nil if deeper nested values should also be compared.
+function LibFroznFunctions:RemoveAllFromTable(tab, shallow)
 	-- no table
 	if (type(tab) ~= "table") then
 		return;
 	end
 	
 	-- remove all items from table
-	for key, value in pairs(tab) do
-		if (type(value) == "table") then
-			self:RemoveAllFromTable(value);
+	if (not shallow) then
+		for key, value in pairs(tab) do
+			if (type(value) == "table") then
+				self:RemoveAllFromTable(value);
+			end
 		end
 	end
 	
@@ -1224,7 +1446,12 @@ function LibFroznFunctions:RegisterAddOnCategory(frame, categoryName, parentCate
 	frame.name = categoryName;
 	frame.parent = parentCategoryName;
 	
-	InterfaceOptions_AddCategory(frame);
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end
 
 -- open addon category
@@ -1234,15 +1461,37 @@ end
 function LibFroznFunctions:OpenAddOnCategory(categoryName, subcategoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
 	if (Settings) and (Settings.OpenToCategory) then
+		-- open category
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
-			for index, category in ipairs(tbl.categories) do
+			local categories = tbl.categories;
+			
+			for index, category in ipairs(categories) do
 				if (category:GetName() == categoryName) then
-					Settings.OpenToCategory(category:GetID(), category:GetName());
+					Settings.OpenToCategory(category:GetID());
 					
+					-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
+					local categoryList = SettingsPanel:GetCategoryList();
+					local categoryElementData = categoryList:FindCategoryElementData(category)
+					
+					if (categoryElementData) then
+						categoryList.ScrollBox:ScrollToElementData(categoryElementData, ScrollBoxConstants.AlignNearest);
+					end
+					
+					-- open subcategory
 					if (subcategoryName) then
-						for index, subcategory in ipairs(category:GetSubcategories()) do
+						local subCategories = category:GetSubcategories();
+						
+						for index, subcategory in ipairs(subCategories) do
 							if (subcategory:GetName() == subcategoryName) then
 								SettingsPanel:SelectCategory(subcategory);
+								
+								-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
+								local subCategoryElementData = categoryList:FindCategoryElementData(subcategory)
+								
+								if (subCategoryElementData) then
+									categoryList.ScrollBox:ScrollToElementData(subCategoryElementData, ScrollBoxConstants.AlignNearest);
+								end
+								
 								return;
 							end
 						end
@@ -1273,7 +1522,7 @@ end
 -- @param categoryName  name of category
 function LibFroznFunctions:ExpandAddOnCategory(categoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
-	if (Settings) and (Settings.CreateCategories) then
+	if (Settings) and (Settings.CreateCategory) then
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
 			for index, category in ipairs(tbl.categories) do
 				if (category:GetName() == categoryName) then
@@ -1363,10 +1612,10 @@ end
 
 -- is addon finished loading
 --
--- @param  indexOrName  index or name of the addon (as in TOC/folder filename), case insensitive
+-- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (as in TOC/folder filename, case insensitive)
 -- @return true if the addon finished loading, false otherwise.
 function LibFroznFunctions:IsAddOnFinishedLoading(indexOrName)
-	local loaded, finished = IsAddOnLoaded(indexOrName)
+	local loaded, finished = C_AddOns.IsAddOnLoaded(indexOrName)
 	
 	return loaded and finished;
 end
@@ -1935,6 +2184,26 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 	-- secondaryTooltip:SetShown(secondaryShown); -- removed
 end
 
+-- get cursor position
+--
+-- @return x coordinate, y coordinate (unaffected by UI scale)
+function LibFroznFunctions:GetCursorPosition()
+	-- get cursor position
+	local x, y = GetCursorPosition();
+	
+	-- workaround for blizzard bug (tested under tww 11.0.2): if centering of the cursor when mouse freelooking is enabled, GetCursorPosition() returns the real cursor position for the first frame instead of the centered position when left-clicking. reproduced with addon "Combat Mode". for more info, see: https://github.com/Stanzilla/WoWUIBugs/issues/504
+	if (IsMouselooking()) and (GetCVar("CursorFreelookCentering") == "1") then
+		local UIScale = UIParent:GetEffectiveScale();
+		local UIParentWidth = UIParent:GetWidth() * UIScale;
+		local UIParentHeight = UIParent:GetHeight() * UIScale;
+		
+		x, y = (UIParentWidth / 2), (UIParentHeight * tonumber(GetCVar("CursorCenteredYPos")));
+	end
+	
+	-- return cursor position
+	return x, y;
+end
+
 ----------------------------------------------------------------------------------------------------
 --                                             Frames                                             --
 ----------------------------------------------------------------------------------------------------
@@ -2011,7 +2280,7 @@ end
 --
 -- @param params               parameters
 --          .prompt              prompt to show
---          .text                text to show
+--          .lockedText          locked text to show
 --          .iconFile            optional. path to an icon (usually in Interface\\) or a FileDataID
 --          .iconTexCoord        optional.  coordinates for cropping the icon. object with four values:
 --            leftTexel            coordinate that identifies the left edge as a fraction of the image's width
@@ -2146,7 +2415,7 @@ function LibFroznFunctions:ShowPopupWithText(params)
 	
 	-- show popup with text
 	StaticPopup_Show(popupName, nil, nil, {
-		lockedEditBoxText = params.text,
+		lockedEditBoxText = params.lockedText,
 		iconFile = params.iconFile,
 		iconTexCoord = params.iconTexCoord,
 		onShowHandler = params.onShowHandler,
@@ -2581,7 +2850,7 @@ end
 --           .nameWithForeignServerSuffix  name of unit with additional foreign server suffix if needed, e.g. "Rugnaer (*)"
 --           .nameWithServerName           name with server name of unit, e.g. "Rugnaer-DunMorogh"
 --           .nameWithTitle                name with title of unit, e.g. "Sternenrufer Rugnaer". if the unit is currently not visible to the client, the title is missing and it only contains the unit name (.name).
---           .serverName                   server name of unit, e.g. "DunMorogh"
+--           .serverName                   server name of unit, e.g. "DunMorogh". nil if the unit is from the same realm.
 --           .sex                          sex of unit, e.g. 1 (neutrum / unknown), 2 (male) or 3 (female)
 --           .className                    localized class name of unit, e.g. "Warrior" or "Guerrier"
 --           .classFile                    locale-independent class file of unit, e.g. "WARRIOR"
@@ -3332,7 +3601,11 @@ function LibFroznFunctions:GetTalents(unitID)
 						if (treeCurrencyInfo) then
 							for _, treeCurrencyInfoItem in ipairs(treeCurrencyInfo) do
 								if (treeCurrencyInfoItem.spent) then
-									tinsert(pointsSpent, treeCurrencyInfoItem.spent);
+									local traitCurrencyFlags, traitCurrencyType, currencyTypesID, traitCurrencyIcon = C_Traits.GetTraitCurrencyInfo(treeCurrencyInfoItem.traitCurrencyID);
+									
+									if (LibFroznFunctions:ExistsInTable(traitCurrencyFlags, { Enum.TraitCurrencyFlag.UseClassIcon, Enum.TraitCurrencyFlag.UseSpecIcon })) and (treeCurrencyInfoItem.spent) then
+										tinsert(pointsSpent, treeCurrencyInfoItem.spent);
+									end
 								end
 							end
 						end
@@ -3656,7 +3929,7 @@ function LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGU
 	end
 	
 	if (not totalQualityColor) then
-		totalQualityColor = LibFroznFunctions:GetItemQualityColor(math.floor(totalQuality / totalItemsForQuality + 0.5), Enum.ItemQuality.Common);
+		totalQualityColor = LibFroznFunctions:GetItemQualityColor(Round(totalQuality / totalItemsForQuality), Enum.ItemQuality.Common);
 	end
 	
 	-- set GearScore and quality color

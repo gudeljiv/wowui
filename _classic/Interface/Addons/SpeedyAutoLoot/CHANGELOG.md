@@ -1,3 +1,6 @@
+### 2.2.27
+- Version Update
+
 ### 2.2.26
 - overdue proper keyring logic support for classic era/sod (fits into bag logic)
 - Some fixes for bop, did require a /reload to actually work.

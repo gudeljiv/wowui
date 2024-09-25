@@ -17,7 +17,7 @@ local LibFroznFunctions = LibStub:GetLibrary("LibFroznFunctions-1.0");
 local TipTac = _G[PARENT_MOD_NAME];
 
 if (TipTac) then
-	LibFroznFunctions:RegisterForGroupEvents(PARENT_MOD_NAME, ttt, "Talents");
+	LibFroznFunctions:RegisterForGroupEvents(PARENT_MOD_NAME, ttt, PARENT_MOD_NAME .. " - Talents Module");
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ local function GTT_OnTooltipSetUnit(self, ...)
 	local _, unitID = LibFroznFunctions:GetUnitFromTooltip(self);
 	
 	if (not unitID) then
-		local mouseFocus = GetMouseFocus();
+		local mouseFocus = LibFroznFunctions:GetMouseFocus();
 		if (mouseFocus) and (mouseFocus.unit) then
 			unitID = mouseFocus.unit;
 		end

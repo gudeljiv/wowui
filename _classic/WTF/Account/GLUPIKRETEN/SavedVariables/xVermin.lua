@@ -350,8 +350,8 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
@@ -372,8 +372,8 @@ xVerminSavedData = {
 "Living Bomb",
 "Molten Blast",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Ironspine"] = {
 "Rend",
@@ -397,11 +397,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",

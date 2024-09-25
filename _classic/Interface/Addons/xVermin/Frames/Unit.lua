@@ -121,31 +121,31 @@ f:SetScript(
 -- HONOR
 -----------------------------------------------------------------------------------------------------------------------------
 
-hc = CreateFrame('Frame', 'CustomContainer_CombatHonorCount', CustomContainer_Combat)
-hc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
-hc:SetWidth(10)
-hc:SetHeight(10)
-hc.text = hc:CreateFontString(nil, 'ARTWORK')
-hc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-hc.text:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 1, 3)
+-- hc = CreateFrame('Frame', 'CustomContainer_CombatHonorCount', CustomContainer_Combat)
+-- hc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+-- hc:SetWidth(10)
+-- hc:SetHeight(10)
+-- hc.text = hc:CreateFontString(nil, 'ARTWORK')
+-- hc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+-- hc.text:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 1, 3)
 
-local function GetHonor()
-	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(1901)
-	if CurrentAmount > 0 then
-		hc.text:SetText(xVermin.FormatNumber(CurrentAmount))
-	else
-		hc.text:SetText('')
-	end
-	hc.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-end
+-- local function GetHonor()
+-- 	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(1901)
+-- 	if CurrentAmount > 0 then
+-- 		hc.text:SetText(xVermin.FormatNumber(CurrentAmount))
+-- 	else
+-- 		hc.text:SetText('')
+-- 	end
+-- 	hc.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+-- end
 
-local f = CreateFrame('frame')
-f:RegisterEvent('CHAT_MSG_COMBAT_HONOR_GAIN')
-f:RegisterEvent('CURRENCY_DISPLAY_UPDATE')
-f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		GetHonor()
-	end
-)
+-- local f = CreateFrame('frame')
+-- f:RegisterEvent('CHAT_MSG_COMBAT_HONOR_GAIN')
+-- f:RegisterEvent('CURRENCY_DISPLAY_UPDATE')
+-- f:RegisterEvent('PLAYER_ENTERING_WORLD')
+-- f:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, isInitialLogin, isReloadingUi)
+-- 		GetHonor()
+-- 	end
+-- )

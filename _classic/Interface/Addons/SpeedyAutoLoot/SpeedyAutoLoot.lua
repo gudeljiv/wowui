@@ -19,10 +19,6 @@ local internal = {
   inventorySoundPlayed = false,
 };
 
-local Blacklist = {
-
-}
-
 local LOOT_SLOT_ITEM = Enum.LootSlotType.Item
 local keyRing = Enum.BagIndex.Keyring
 
@@ -50,10 +46,14 @@ function AutoLoot:ProcessLootItem(itemLink, itemQuantity)
   for bagSlot = BACKPACK_CONTAINER, NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS do
     local freeSlots, bagFamily = C_Container.GetContainerNumFreeSlots(bagSlot);
     -- unclear if isCraftingReagent is 100% Reagent bag fitable.
-    if bagSlot == 5 and freeSlots > 0 and isCraftingReagent then
-      return true;
-    end
     if freeSlots > 0 then
+      if bagSlot == 5 then
+        if isCraftingReagent then
+          return true
+        else
+          return false;
+        end
+      end
       if not bagFamily or bagFamily == 0 or (itemFamily and bit.band(itemFamily, bagFamily) > 0) then
         return true;
       end

@@ -12,7 +12,13 @@ function lib.new(parent, addonname, category)
 	if Settings and Settings.GetCategory and Settings.RegisterCanvasLayoutSubcategory then
 		local subcategory, layout = Settings.RegisterCanvasLayoutSubcategory(category, frame, frame.name, frame.name);
 	else
-		InterfaceOptions_AddCategory(frame)
+		-- InterfaceOptions_AddCategory(frame)
+		if InterfaceOptions_AddCategory then
+			InterfaceOptions_AddCategory(frame)
+		else
+			local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+			_G.Settings.RegisterAddOnCategory(category)
+		end
 	end
 	return frame
 end

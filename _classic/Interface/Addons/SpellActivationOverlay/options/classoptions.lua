@@ -94,7 +94,7 @@ end
 
 function SAO.AddOption(self, optionType, auraID, id, subValues, applyTextFunc, testFunc, firstAnchor)
     local classFile = self.CurrentClass.Intrinsics[2];
-    local cb = CreateFrame("CheckButton", nil, SpellActivationOverlayOptionsPanel, "InterfaceOptionsCheckButtonTemplate");
+    local cb = CreateFrame("CheckButton", nil, SpellActivationOverlayOptionsPanel, "UICheckButtonTemplate");
 
     local sb = nil;
     if (type(subValues) == 'table') then

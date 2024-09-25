@@ -125,7 +125,7 @@
           </OnHide>
         </Scripts>
       </Button>
-      <CheckButton name="$parentGlowingButtons" inherits="InterfaceOptionsCheckButtonTemplate">
+      <CheckButton name="$parentGlowingButtons" inherits="UICheckButtonTemplate">
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertSoundSlider" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -141,7 +141,7 @@
           </PostClick>
         </Scripts>
       </CheckButton>
-      <CheckButton name="$parentSpellAlertDebugButton" inherits="InterfaceOptionsCheckButtonTemplate">
+      <CheckButton name="$parentSpellAlertDebugButton" inherits="UICheckButtonTemplate">
         <Anchors>
           <Anchor point="BOTTOMLEFT" relativeTo="$parent" relativePoint="BOTTOMLEFT"/>
         </Anchors>
@@ -155,7 +155,7 @@
           </PostClick>
         </Scripts>
       </CheckButton>
-      <CheckButton name="$parentSpellAlertResponsiveButton" inherits="InterfaceOptionsCheckButtonTemplate">
+      <CheckButton name="$parentSpellAlertResponsiveButton" inherits="UICheckButtonTemplate">
         <Anchors>
           <Anchor point="BOTTOMLEFT" relativeTo="$parentSpellAlertDebugButton" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -173,7 +173,7 @@
           </PostClick>
         </Scripts>
       </CheckButton>
-      <CheckButton name="$parentDisableConditionButton" inherits="InterfaceOptionsCheckButtonTemplate" frameLevel="101" hidden="true">
+      <CheckButton name="$parentDisableConditionButton" inherits="UICheckButtonTemplate" frameLevel="101" hidden="true">
         <Anchors>
           <Anchor point="BOTTOMLEFT" relativeTo="$parentSpellAlertResponsiveButton" relativePoint="TOPLEFT"/>
         </Anchors>

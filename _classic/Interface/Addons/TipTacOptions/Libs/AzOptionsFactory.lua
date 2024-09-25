@@ -1,12 +1,12 @@
 --[[
-	覧覧覧覧覧覧覧覧 Rev 09 覧・	- Fixed GetChecked() now returning a boolean instead of nil/1
-	覧・16.07.23 覧・Rev 10 覧・7.0.3/Legion 覧・
+	隕ｧ隕ｧ隕ｧ隕ｧ隕ｧ隕ｧ隕ｧ隕ｧ Rev 09 隕ｧ繝ｻ	- Fixed GetChecked() now returning a boolean instead of nil/1
+	隕ｧ繝ｻ16.07.23 隕ｧ繝ｻRev 10 隕ｧ繝ｻ7.0.3/Legion 隕ｧ繝ｻ
 	- Changed SetTexture(r,g,b,a) -> SetColorTexture(r,g,b,a)
-	覧・18.08.12 覧・Rev 11 覧・8.0/BfA 覧・
+	隕ｧ繝ｻ18.08.12 隕ｧ繝ｻRev 11 隕ｧ繝ｻ8.0/BfA 隕ｧ繝ｻ
 	- Added native LSM support to the dropdown
 	- The building of the options page is now done internally, instead of in the client addon.
 	- Some code restructure.
-	覧・20.10.31 覧・Rev 12 覧・9.0.1/Shadowlands 覧・
+	隕ｧ繝ｻ20.10.31 隕ｧ繝ｻRev 12 隕ｧ繝ｻ9.0.1/Shadowlands 隕ｧ繝ｻ
 	- CreateFrame() now uses the "BackdropTemplate"
 	21.12.22 Rev 13 9.1.5/Shadowlands #frozn45
 	- fixed selecting of "None" for backdrop/border texture and saving this settings.
@@ -43,12 +43,18 @@
 	24.05.20 Rev 26 10.2.7/Dragonflight #frozn45
 	- made shure that evaluating the "enabled" property always returns a boolean value
 	- considered empty options for BuildOptionsPage()
-	24.05.xx Rev 27 10.2.7/Dragonflight #frozn45
+	24.05.26 Rev 27 10.2.7/Dragonflight #frozn45
 	- only set config value by TextEdit if text has changed
+	24.07.25 Rev 28 11.0.0/Dragonflight #frozn45
+	- fixed processing of OnEnter/OnLeave events for dropdown and slider
+	- aligned text of slider, color picker, TextEdit horizontally to left
+	- no build category page on OnTextChanged of TextEdit
+	24.08.18 Rev 29 11.0.2/The War Within #frozn45
+	- added an "hidden" property for all objects
 --]]
 
 -- create new library
-local REVISION = 27; -- bump on changes
+local REVISION = 29; -- bump on changes
 if (type(AzOptionsFactory) == "table") and (AzOptionsFactory.vers >= REVISION) then
 	return;
 end
@@ -149,8 +155,9 @@ function azof:BuildOptionsPage(options,anchor,left,top,restrictToken)
 			or (restrictType == "string" and restrictToken == option.restrict)
 			or (restrictType == "table" and tIndexOf(option.restrict,restrictToken))
 		);
+		local hidden = (not not option.hidden) and (not not option.hidden(self, option));
 
-		if (option.type) and (allowCreation) then
+		if (option.type) and (allowCreation) and (not hidden) then
 			local obj = self:GetObject(option.type);
 
 			obj.option = option;
@@ -218,9 +225,10 @@ end
 
 local function SliderEdit_OnLeave(self)
 	local frames = { self, self:GetChildren() };
+	local frameWithMouseFocus = LibFroznFunctions:GetMouseFocus();
 	
 	for _, frame in ipairs(frames) do
-		if (frame:IsMouseOver()) then
+		if (frame == frameWithMouseFocus) then
 			return;
 		end
 	end
@@ -328,6 +336,7 @@ azof.objects.Slider = {
 
 		f.text = _G[sliderName.."Text"];
 		f.text:SetTextColor(1.0,0.82,0);
+		f.text:SetJustifyH("LEFT");
 		f.low = _G[sliderName.."Low"];
 		f.low:ClearAllPoints();
 		f.low:SetPoint("BOTTOMLEFT",f.slider,"TOPLEFT",0,0);
@@ -632,7 +641,8 @@ azof.objects.Color = {
 
 		f.text = f:CreateFontString(nil,"ARTWORK","GameFontNormalSmall");
 		f.text:SetPoint("LEFT",f,"RIGHT",5,0); -- vertically centered to ColorButton (without text shadow and near to bottom in case of odd number of pixels) and 5px final visible padding to ColorButton - 0px visible padding right for text = 5px
-
+		f.text:SetJustifyH("LEFT");
+		
 		f.color = CreateColor();
 
 		return f;
@@ -661,9 +671,10 @@ end
 
 local function DropDown_OnLeave(self)
 	local frames = { self, self:GetChildren() };
+	local frameWithMouseFocus = LibFroznFunctions:GetMouseFocus();
 	
 	for _, frame in ipairs(frames) do
-		if (frame:IsMouseOver()) then
+		if (frame == frameWithMouseFocus) then
 			return;
 		end
 	end
@@ -874,7 +885,7 @@ local function TextEdit_OnTextChanged(self)
 	local newText = self:GetText():gsub("||","|");
 	
 	if (oldText ~= newText) then
-		self.factory:SetConfigValue(self.option.var,newText);
+		self.factory:SetConfigValue(self.option.var, newText, true);
 	end
 end
 
@@ -921,7 +932,8 @@ azof.objects.Text = {
 
 		f.text = f:CreateFontString(nil,"ARTWORK","GameFontNormalSmall");
 		f.text:SetPoint("LEFT",-121,0); -- vertically centered to TextEdit (without text shadow and near to bottom in case of odd number of pixels)
-
+		f.text:SetJustifyH("LEFT");
+		
 		return f;
 	end,
 };

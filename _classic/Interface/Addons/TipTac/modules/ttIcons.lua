@@ -14,7 +14,7 @@ local LibFroznFunctions = LibStub:GetLibrary("LibFroznFunctions-1.0");
 local tt = _G[MOD_NAME];
 local ttIcons = {};
 
-LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, ttIcons, "Icons");
+LibFroznFunctions:RegisterForGroupEvents(MOD_NAME, ttIcons, MOD_NAME .. " - Icons Module");
 
 ----------------------------------------------------------------------------------------------------
 --                                             Config                                             --
@@ -44,10 +44,6 @@ function ttIcons:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig)
 		icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 	end
 	
-	for _, icon in self.iconPool:EnumerateInactive() do
-		icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
-	end
-	
 	-- setup active tip's icons
 	local tipsProcessed = {};
 	
@@ -62,8 +58,8 @@ function ttIcons:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig)
 	end
 end
 
--- after unit tooltip has been styled and has the final size
-function ttIcons:OnUnitTipPostStyle(TT_CacheForFrames, tip, currentDisplayParams, first)
+-- unit tooltip is being styled
+function ttIcons:OnUnitTipStyle(TT_CacheForFrames, tip, currentDisplayParams, first)
 	-- setup tip's icon
 	self:SetupTipsIcon(tip);
 end
@@ -149,11 +145,13 @@ function ttIcons:DisplayTipsIcon(tip, currentDisplayParams, iconType, startingIc
 			icon = self.iconPool:Acquire();
 			
 			icon:SetParent(tip);
+			icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 			
 			-- set icon
 			icon.icon:SetTexture("Interface\\TargetingFrame\\UI-RaidTargetingIcons");
 			SetRaidTargetIconTexture(icon.icon, raidIconIndex);
 		end
+	
 	-- display tip's faction icon
 	elseif (iconType == "FACTION") then
 		if (UnitIsPVPFreeForAll(unitRecord.id)) then
@@ -163,6 +161,7 @@ function ttIcons:DisplayTipsIcon(tip, currentDisplayParams, iconType, startingIc
 			icon = self.iconPool:Acquire();
 			
 			icon:SetParent(tip);
+			icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 			
 			-- set icon
 			icon.icon:SetTexture("Interface\\TargetingFrame\\UI-PVP-FFA");
@@ -187,12 +186,14 @@ function ttIcons:DisplayTipsIcon(tip, currentDisplayParams, iconType, startingIc
 				icon = self.iconPool:Acquire();
 				
 				icon:SetParent(tip);
+				icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 				
 				-- set icon
 				icon.icon:SetTexture("Interface\\TargetingFrame\\UI-PVP-" .. englishFaction);
 				icon.icon:SetTexCoord(0, 0.62, 0, 0.62);
 			end
 		end
+	
 	-- display tip's combat icon
 	elseif (iconType == "COMBAT") then
 		if (UnitAffectingCombat(unitRecord.id)) then
@@ -202,11 +203,13 @@ function ttIcons:DisplayTipsIcon(tip, currentDisplayParams, iconType, startingIc
 			icon = self.iconPool:Acquire();
 			
 			icon:SetParent(tip);
+			icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 			
 			-- set icon
 			icon.icon:SetTexture("Interface\\CharacterFrame\\UI-StateIcon");
 			icon.icon:SetTexCoord(0.5, 1, 0, 0.5);
 		end
+	
 	-- display tip's class icon
 	elseif (iconType == "CLASS") then
 		if (unitRecord.isPlayer) then
@@ -216,6 +219,7 @@ function ttIcons:DisplayTipsIcon(tip, currentDisplayParams, iconType, startingIc
 			icon = self.iconPool:Acquire();
 			
 			icon:SetParent(tip);
+			icon:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
 			
 			-- set icon
 			local texCoord = CLASS_ICON_TCOORDS[unitRecord.classFile];

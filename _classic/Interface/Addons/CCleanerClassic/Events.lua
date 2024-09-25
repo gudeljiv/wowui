@@ -38,7 +38,7 @@ local function CreateInterfaceOptionsEntry()
 	txt:SetPoint("TOPLEFT", 16, -16);
 	frame.titleTextField = txt;
 	-- open button...
-	local btn = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+	local btn = CreateFrame("Button", nil, frame, "UIButtonTemplate");
 	btn:SetText("Open Options");
 	btn:SetWidth(125);
 	btn:SetHeight(25);
@@ -54,7 +54,12 @@ local function CreateInterfaceOptionsEntry()
 	txt:SetNonSpaceWrap(true);
 	txt:SetPoint("LEFT", btn, "RIGHT", 10, 0);	
 	-- blizzard calls to add...
-	InterfaceOptions_AddCategory(frame);
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 end
 
 ------------------

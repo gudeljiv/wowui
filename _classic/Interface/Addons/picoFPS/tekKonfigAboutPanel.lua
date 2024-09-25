@@ -8,7 +8,13 @@ function lib.new(parent, addonname)
 	frame.name, frame.parent, frame.addonname = parent and "About" or addonname, parent, addonname
 	frame:Hide()
 	frame:SetScript("OnShow", lib.OnShow)
-	InterfaceOptions_AddCategory(frame)
+	-- InterfaceOptions_AddCategory(frame)
+	if InterfaceOptions_AddCategory then
+		InterfaceOptions_AddCategory(frame)
+	else
+		local category, layout = _G.Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+		_G.Settings.RegisterAddOnCategory(category)
+	end
 	return frame
 end
 
