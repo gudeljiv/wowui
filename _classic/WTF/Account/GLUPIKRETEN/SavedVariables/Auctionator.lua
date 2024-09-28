@@ -142,10 +142,10 @@ AUCTIONATOR_CONFIG = {
 ["10939"] = 1,
 ["2740"] = 1,
 ["13303"] = 1,
-["12361"] = 1,
+["41594"] = 1,
 ["11178"] = 1,
 ["7964"] = 5,
-["41594"] = 1,
+["12361"] = 1,
 ["13304"] = 1,
 ["11134"] = 1,
 ["34057"] = 1,
@@ -221,14 +221,14 @@ AUCTIONATOR_CONFIG = {
 AUCTIONATOR_SAVEDVARS = {
 ["_50000"] = 500,
 ["_2000"] = 100,
-["TimeOfLastGetAllScan"] = 1696782805,
-["_200000"] = 1000,
 ["_500"] = 5,
-["_1000000"] = 2500,
 ["_5000000"] = 10000,
-["STARTING_DISCOUNT"] = 5,
+["TimeOfLastGetAllScan"] = 1696782805,
+["_1000000"] = 2500,
 ["_10000"] = 200,
 ["LOG_DE_DATA_X"] = true,
+["_200000"] = 1000,
+["STARTING_DISCOUNT"] = 5,
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 {
@@ -938,9 +938,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["21071"] = "¤aa€al€am\rah€",
 ["g:15147:33"] = "¤aa€al€ah€am/D",
 ["6450"] = "¤aa€al€ah€amå",
-["g:790:23"] = "¤aa€al€amah€",
-["gn:15556:Pillager's Bracers of Stamina:32"] = "¤aa€al€ah€amâ",
 ["g:9770:20"] = "¤aa€al€amÁah€",
+["gn:15556:Pillager's Bracers of Stamina:32"] = "¤aa€al€ah€amâ",
+["g:790:23"] = "¤aa€al€amah€",
 ["gn:14113:Aboriginal Sash of Intellect:15"] = "¤aa€al€ah€ami",
 ["gn:7552:Falcon's Hook:44"] = "¤aa€al€amaah€",
 ["7077"] = "¤aa€al€ah€amÆ",
@@ -1042,13 +1042,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["gn:4565:Simple Dagger:6"] = "¤aa€al€ah€amR",
 ["14429"] = "¤aa€al€amMah€",
 ["3667"] = "¤aa£d1672ad1669“d1670Ìal¢d1670°d1669ëam*ah£d1672*d1669ìd1670±",
-["gn:5956:Blacksmith Hammer:1"] = "¤aa€al€ah€amL",
+["5173"] = "¤aa£d1668Ed1669d1670al£d1668\nÏd1669\n°d1670kamkah£d1668\nÐd1669\n±d1670l",
 ["2840"] = "¤aa¢d1670×d1669ìal€am³ah¢d1670³d1669V",
-["12982"] = "¤aa€al€ah€amh",
+["2838"] = "¤aa¥d1672.d1671d1668=d1669®d1670@al¤d1668Ld1669?d1670Žd1671<ah¥d1672?d1671Ad1668„d1669@d1670‘am?",
 ["5634"] = "¤aa€al€am!ùah€",
 ["2996"] = "¤aa€al€am=ah€",
 ["gn:7458:Knight's Boots of the Bear:37"] = "¤aa€al€ah€aml",
-["5173"] = "¤aa£d1668Ed1669d1670al£d1668\nÏd1669\n°d1670kamkah£d1668\nÐd1669\n±d1670l",
+["gn:5956:Blacksmith Hammer:1"] = "¤aa€al€ah€amL",
 ["g:14825:43"] = "¤aa€al€am'ah€",
 ["13926"] = "¤aa€al€am\000eah€",
 ["9929"] = "¤aa€al€ah€am#&",
@@ -1057,22 +1057,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["5503"] = "¤aa€al€ah€amæ",
 ["15274"] = "¤aa€al€am\000_,ah€",
 ["gn:12006:Meadow Ring of the Wolf:22"] = "¤aa€al€ah€am\r©",
-["g:14089:10"] = "¤aa€al€amÈah€",
-["21822"] = "¤aa€al€améah€",
 ["1708"] = "¤aa£d1672=d1669d1671	al€amáah£d1672ád1669d1671ì",
+["gr:9850:of the Owl"] = "¤aa€al€am\000\000@ah¢d1670\000\000@d1669\000\000@",
+["g:14089:10"] = "¤aa€al€amÈah€",
 ["213546"] = "¤aa¡d1672\"al¡d1672ÛamÛah¡d1672Ü",
 ["14563"] = "¤aa€al€amNah€",
-["2553"] = "¤aa€al€ah€am«",
-["15556"] = "¤aa€al€ah€amâ",
+["6387"] = "¤aa€al€am%ah€",
+["g:6387:29"] = "¤aa€al€am%ah€",
 ["g:8177:7"] = "¤aa€al€ah€am0",
-["4306"] = "¤aa£d16729d1668­d1671›al£d1672´d1668®d1671Ÿam´ah£d1672Êd1668Íd1671Ö",
+["7938"] = "¤aa€al€am\000pûah€",
 ["3826"] = "¤aa€al€amuah€",
 ["g:15535:29"] = "¤aa€al€ah€am'",
 ["2073"] = "¤aa€al€ah€aml",
-["6387"] = "¤aa€al€am%ah€",
-["9767"] = "¤aa€al€ah€amè",
-["7938"] = "¤aa€al€am\000pûah€",
 ["g:14119:17"] = "¤aa€al€amKuah€",
+["gn:2310:Embossed Leather Cloak:13"] = "¤aa€al€ah€am/",
+["g:7938:45"] = "¤aa€al€am\000pûah€",
+["3355"] = "¤aa¤d1668fd1669¢d1670¶d1671òal¢d16681d1669ºah¤d1668/d1669»d1670Äd1671\"am\"",
 ["9814"] = "¤aa€al€ah€amo",
 ["2841"] = "¤aa¡d1669(al€am^ah¡d1669^",
 ["7918"] = "¤aa€al€am&†ah€",
@@ -1084,7 +1084,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2287"] = "¤aa€al€ah€am@",
 ["15303"] = "¤aa€al€ah€am	_",
 ["12207"] = "¤aa¡d1669al€am¾ah¡d1669¾",
-["3355"] = "¤aa¤d1668fd1669¢d1670¶d1671òal¢d16681d1669ºah¤d1668/d1669»d1670Äd1671\"am\"",
+["g:8199:47"] = "¤aa€al€amêRah€",
 ["15497"] = "¤aa€al€ah€am¦",
 ["gn:14214:Vital Boots of the Eagle:34"] = "¤aa€al€am#&ah€",
 ["gr:9863:of the Whale"] = "¤aa€al€ah¢d1670}Èd1671}Èam}È",
@@ -1110,16 +1110,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["4479"] = "¤aa€al€ah€amh",
 ["15869"] = "¤aa€al€ah€amÞ",
 ["21818"] = "¤aa€al€amìah€",
-["3164"] = "¤aa€al€am…ah€",
 ["210146"] = "¤aa€al€ah€am6<",
-["15124"] = "¤aa€al€ah€am\"y",
+["3164"] = "¤aa€al€am…ah€",
+["2842"] = "¤aa¢d1670d1669Ðal€am(ah¢d1670(d1669",
 ["1206"] = "¤aa¢d16724d1673)al¡d1672pam¼ah¢d1672qd1673¼",
 ["gn:15116:Rigid Shoulders of the Boar:26"] = "¤aa€al€ah€amš",
 ["gn:9770:Greenweave Cloak of the Owl:20"] = "¤aa€al€amÁah€",
 ["6409"] = "¤aa¡d1671al¡d1671\"·am\"·ah¡d1671\"¸",
-["2842"] = "¤aa¢d1670d1669Ðal€am(ah¢d1670(d1669",
+["15124"] = "¤aa€al€ah€am\"y",
 ["g:14230:42"] = "¤aa€al€am'ah€",
-["4461"] = "¤aa¡d1672 al€amÏah¡d1672Ï",
+["2164"] = "¤aa€al€am\000˜–pah€",
 ["g:14729:20"] = "¤aa€al€am“ah€",
 ["15110"] = "¤aa€al€ah€amÕ",
 ["17057"] = "¤aa€al€amÝah€",
@@ -1141,13 +1141,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["15019"] = "¤aa€al€amÆah€",
 ["15310"] = "¤aa€al€amJah€",
 ["4412"] = "¤aa€al€ah€amh",
-["2734"] = "¤aa€al€amYah€",
-["gn:3413:Doomspike:25"] = "¤aa€al€am\000lah€",
-["g:7919:41"] = "¤aa€al€am6™ah€",
-["3340"] = "¤aa€al€am;ah€",
-["8364"] = "¤aa€al€ah€amó",
-["5966"] = "¤aa€al€am\nah€",
 ["g:2802:43"] = "¤aa€al€am\000Õah€",
+["gn:3413:Doomspike:25"] = "¤aa€al€am\000lah€",
+["10546"] = "¤aa€al€ah€am$",
+["3340"] = "¤aa€al€am;ah€",
+["2734"] = "¤aa€al€amYah€",
+["g:7919:41"] = "¤aa€al€am6™ah€",
+["8364"] = "¤aa€al€ah€amó",
 ["gn:11288:Greater Magic Wand:23"] = "¤aa€al€ah€am¡",
 ["2962"] = "¤aa€al€ah€amÎ",
 ["4422"] = "¤aa€al€ah€am{",
@@ -1163,16 +1163,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["gn:15210:Raider Shortsword of Strength:16"] = "¤aa€al€ah€am¾",
 ["16050"] = "¤aa€al€ah€am}",
 ["17035"] = "¤aa€al€amýah€",
-["gn:15284:Long Battle Bow:29"] = "¤aa€al€ah€am",
-["gn:6405:Nightsky Trousers:36"] = "¤aa€al€am»ah€",
-["g:15548:32"] = "¤aa€al€amNah€",
 ["gn:6125:Brawler's Harness:1"] = "¤aa€al€am\000† ah€",
-["g:15132:29"] = "¤aa€al€am:•ah€",
+["gn:6405:Nightsky Trousers:36"] = "¤aa€al€am»ah€",
 ["gn:5216:Umbral Wand of the Eagle:45"] = "¤aa€al€ah€am\000ù",
+["gn:15284:Long Battle Bow:29"] = "¤aa€al€ah€am",
+["g:15132:29"] = "¤aa€al€am:•ah€",
+["g:3305:16"] = "¤aa€al€amah€",
 ["4234"] = "¤aa¢d1713ýd1726{al¢d1726ìd1713\000amìah¢d1713d1726í",
 ["2581"] = "¤aa€al€ah€am6",
-["g:3305:16"] = "¤aa€al€amah€",
-["14367"] = "¤aa€al€amwah€",
+["12205"] = "¤aa£d1668¥d1669µd1670Ual£d1668¥d1669õd1670\000ah£d1668!d1669öd1670am\000",
+["10331"] = "¤aa€al€ah€am'",
 ["g:9766:22"] = "¤aa€al€ah€am<",
 ["12008"] = "¤aa€al€ah€amu*",
 ["gn:7918:Heavy Mithril Shoulder:41"] = "¤aa€al€am&†ah€",
@@ -1188,14 +1188,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2865"] = "¤aa€al€am	°ah€",
 ["14048"] = "¤aa€al€am¼ah€",
 ["7067"] = "¤aa¢d1718zd1713Îal¡d1713'ah¢d1718hd1713(amh",
-["7909"] = "¤aa£d1668Qd16708d1671;al¢d1668]d1670am#(ah£d1668\n&d1670d1671#(",
+["4360"] = "¤aa€al€ah€amÅ",
 ["3012"] = "¤aa€al€ah€amí",
-["g:14367:19"] = "¤aa€al€amwah€",
+["14230"] = "¤aa€al€am'ah€",
 ["g:4577:13"] = "¤aa€al€am!ah€",
 ["gn:14956:Bloodforged Bindings of the Bear:45"] = "¤aa€al€amNah€",
-["g:5966:38"] = "¤aa€al€am\nah€",
+["12216"] = "¤aa€al€ah€am¨",
+["7909"] = "¤aa£d1668Qd16708d1671;al¢d1668]d1670am#(ah£d1668\n&d1670d1671#(",
 ["gn:2073:Dwarven Hatchet of Power:15"] = "¤aa€al€amlah€",
-["4360"] = "¤aa€al€ah€amÅ",
 ["14560"] = "¤aa€al€am%Ðah€",
 ["4721"] = "¤aa€al€ah€amÇ",
 ["g:6616:32"] = "¤aa€al€ah€am\"`",
@@ -1207,29 +1207,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["1411"] = "¤aa€al€amÏah€",
 ["3208"] = "¤aa€al€am›Úah€",
 ["g:3184:20"] = "¤aa€al€amah€",
-["15367"] = "¤aa€al€am7Üah€",
+["g:4344:7"] = "¤aa€al€am2ah€",
 ["g:2073:15"] = "¤aa€al€ah€aml",
 ["6540"] = "¤aa€al€ah€am'",
 ["g:3309:16"] = "¤aa€al€ah€am‘",
 ["4540"] = "¤aa€al€amCah€",
 ["14124"] = "¤aa€al€ah€am\n",
+["g:15222:19"] = "¤aa€al€ah€am¡",
 ["gn:6367:Big Iron Fishing Pole:30"] = "¤aa€al€am\000õ¬ah€",
 ["gn:9828:Scaled Leather Boots of the Eagle:31"] = "¤aa€al€am:˜ah€",
-["g:15222:19"] = "¤aa€al€ah€am¡",
 ["7971"] = "¤aa€al€amah€",
 ["3530"] = "¤aa€al€am!ah€",
 ["g:3291:13"] = "¤aa€al€amŠah€",
 ["7367"] = "¤aa€al€ah¡d1671ÃIamÃI",
-["9298"] = "¤aa€al€ah€amÕg",
+["4362"] = "¤aa€al€ah€am™",
 ["8153"] = "¤aa€al€ah€am\rF",
 ["gr:12009:of Agility"] = "¤aa€al€ah¡d1671\000Pam\000P",
-["4362"] = "¤aa€al€ah€am™",
+["1640"] = "¤aa€al€ah€am4©",
 ["3727"] = "¤aa€al€amØah€",
 ["14125"] = "¤aa€al€amWah€",
 ["769"] = "¤aa€al€ah€am^",
 ["2807"] = "¤aa€al€am#pah€",
-["gn:14723:War Paint Bindings:17"] = "¤aa€al€am¥ah€",
-["1640"] = "¤aa€al€ah€am4©",
+["gn:15494:Bloodspattered Shield of Agility:18"] = "¤aa€al€ah€am¼",
+["9298"] = "¤aa€al€ah€amÕg",
 ["14205"] = "¤aa€al€amah€",
 ["6362"] = "¤aa€al€amah€",
 ["2680"] = "¤aa€al€amah€",
@@ -1237,20 +1237,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["14791"] = "¤aa€al€ah€amEƒ",
 ["15143"] = "¤aa€al€am&Hah€",
 ["gn:6569:Shimmering Robe of Spirit:25"] = "¤aa€al€am<…ah€",
-["4606"] = "¤aa€al€am.ah€",
+["6373"] = "¤aa€al€am-8ah€",
 ["g:6238:10"] = "¤aa€al€amSah€",
 ["gn:15330:Wrangler's Boots of the Falcon:25"] = "¤aa€al€am&ah€",
 ["15016"] = "¤aa€al€am\\.ah€",
 ["727"] = "¤aa€al€ah€amƒ",
 ["3612"] = "¤aa€al€amˆah€",
-["6373"] = "¤aa€al€am-8ah€",
-["gn:15500:Outrunner's Chestguard of the Bear:24"] = "¤aa€al€ah€am",
+["g:14125:21"] = "¤aa€al€amWah€",
+["127"] = "¤aa€al€am\000† ah€",
 ["8146"] = "¤aa€al€ah€am~",
 ["gn:15147:Ghostwalker Cloak of Agility:33"] = "¤aa€al€ah€am/D",
-["11039"] = "¤aa€al€ah€amî",
+["gn:15500:Outrunner's Chestguard of the Bear:24"] = "¤aa€al€ah€am",
 ["9774"] = "¤aa€al€ah€amb",
 ["11134"] = "¤aa¢d1672Úd1673gal¢d1672_d1673DamDah¢d1672{d1673E",
-["gn:9829:Scaled Leather Bracers of the Eagle:29"] = "¤aa€al€ah€amô",
+["17222"] = "¤aa¡d1668Pal¡d1668	xah¡d1668\r am	x",
 ["g:15116:26"] = "¤aa€al€ah€amš",
 ["211855"] = "¤aa€al€amDah€",
 ["21816"] = "¤aa€al€am¶ah€",
@@ -1272,11 +1272,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["gn:5216:Umbral Wand of the Wolf:45"] = "¤aa€al€ah€am\000†<",
 ["g:7414:34"] = "¤aa€al€ah€am#%",
 ["2447"] = "¤aa€al€am;ah€",
-["7462"] = "¤aa€al€amÝah¢d1670Ýd1669Ý",
 ["1712"] = "¤aa€al€ah€am”",
-["3712"] = "¤aa¢d1668çd1669wal¡d1668kamRah¢d1668xd1669R",
+["7462"] = "¤aa€al€amÝah¢d1670Ýd1669Ý",
 ["6661"] = "¤aa€al€amtah€",
-["4561"] = "¤aa€al€ah€amƒ",
+["2774"] = "¤aa€al€am¦ah€",
+["gn:2138:Sharpened Letter Opener:7"] = "¤aa€al€am¤ah€",
 ["2624"] = "¤aa€al€am\000‚0ah¡d1671\000‚0",
 ["2309"] = "¤aa€al€ah€amÆ",
 ["3309"] = "¤aa€al€ah€am‘",
@@ -1301,16 +1301,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["gn:14291:Arachnidian Bracelets of Fiery Wrath:50"] = "¤aa€al€amÜPah€",
 ["9262"] = "¤aa€al€am	Âah€",
 ["2290"] = "¤aa€al€ah€am",
-["g:3778:31"] = "¤aa€al€amÌah€",
 ["gn:6136:Thug Shirt:1"] = "¤aa€al€am\000† ah€",
-["g:6367:30"] = "¤aa€al€am\000õ¬ah€",
-["1181"] = "¤aa€al€ah€amd",
+["g:3778:31"] = "¤aa€al€amÌah€",
 ["5069"] = "¤aa€al€am|ah€",
+["1181"] = "¤aa€al€ah€amd",
+["g:6367:30"] = "¤aa€al€am\000õ¬ah€",
 ["gn:2774:Rust-covered Blunderbuss:7"] = "¤aa€al€am¦ah€",
 ["7069"] = "¤aa¡d1668al¡d1668'\rah¡d1668'am'\r",
 ["g:15503:22"] = "¤aa€al€ah€am†",
 ["8924"] = "¤aa¡d1668al¡d1668&òam&òah¡d1668&ó",
-["5574"] = "¤aa€al€am	}ah€",
+["gn:14119:Aboriginal Loincloth of the Eagle:17"] = "¤aa€al€amKuah€",
 ["2598"] = "¤aa€al€ah€am9",
 ["2078"] = "¤aa€al€ah€am#",
 ["14898"] = "¤aa€al€ah€am/¨",
@@ -1331,10 +1331,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["g:15367:39"] = "¤aa€al€am7Üah€",
 ["gn:127:Trapper's Shirt:1"] = "¤aa€al€am\000† ah€",
 ["g:9874:43"] = "¤aa€al€amÂÜah€",
-["4496"] = "¤aa€al€amìah€",
+["g:3287:12"] = "¤aa€al€ah€amå",
 ["g:7921:42"] = "¤aa€al€amNah€",
-["3013"] = "¤aa€al€amUah€",
 ["10393"] = "¤aa€al€am\000† ah€",
+["3013"] = "¤aa€al€amUah€",
 ["14047"] = "¤aa¡d1671al€amah¡d1671",
 ["gn:9774:Greenweave Vest of the Eagle:27"] = "¤aa€al€ah€amb",
 ["g:12994:23"] = "¤aa€al€ah€am-",
@@ -1343,7 +1343,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["2835"] = "¤aa€al€ah€am",
 ["14725"] = "¤aa€al€ah€am©",
 ["2924"] = "¤aa€al€amah€",
-["g:3287:12"] = "¤aa€al€ah€amå",
+["4496"] = "¤aa€al€amìah€",
 ["8395"] = "¤aa€al€amoah¡d1669o",
 ["15243"] = "¤aa€al€am:fah€",
 ["g:14214:34"] = "¤aa€al€am#&ah€",
@@ -1358,7 +1358,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["g:15310:18"] = "¤aa€al€amJah€",
 ["g:15231:31"] = "¤aa€al€ameah€",
 ["g:4576:21"] = "¤aa€al€amFah€",
-["gn:14119:Aboriginal Loincloth of the Eagle:17"] = "¤aa€al€amKuah€",
+["5574"] = "¤aa€al€am	}ah€",
 ["117"] = "¤aa€al€ah€am",
 ["g:6520:9"] = "¤aa€al€amYah€",
 ["15486"] = "¤aa€al€ah€am¬",
@@ -1376,8 +1376,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["g:10413:19"] = "¤aa€al€amÒah€",
 ["14191"] = "¤aa€al€amŸah€",
 ["14193"] = "¤aa€al€am$ah€",
-["gn:2138:Sharpened Letter Opener:7"] = "¤aa€al€am¤ah€",
-["2774"] = "¤aa€al€am¦ah€",
+["4561"] = "¤aa€al€ah€amƒ",
+["3712"] = "¤aa¢d1668çd1669wal¡d1668kamRah¢d1668xd1669R",
 ["g:2807:23"] = "¤aa€al€am#pah€",
 ["gn:9823:Durable Gloves of the Monkey:31"] = "¤aa€al€ah€amô",
 ["gn:14375:Sanguine Cuffs:25"] = "¤aa€al€ah€am\r­",
@@ -1389,14 +1389,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["14344"] = "¤aa€al€ah€am\000î¾",
 ["g:15351:30"] = "¤aa€al€am ah€",
 ["gn:15367:Trickster's Protector of the Eagle:39"] = "¤aa€al€am7Üah€",
-["17222"] = "¤aa¡d1668Pal¡d1668	xah¡d1668\r am	x",
-["127"] = "¤aa€al€am\000† ah€",
+["gn:9829:Scaled Leather Bracers of the Eagle:29"] = "¤aa€al€ah€amô",
+["11039"] = "¤aa€al€ah€amî",
 ["8150"] = "¤aa€al€ah€am",
 ["gn:15245:Vorpal Dagger of the Monkey:50"] = "¤aa€al€ah€amêQ",
-["g:14125:21"] = "¤aa€al€amWah€",
+["4606"] = "¤aa€al€am.ah€",
 ["14377"] = "¤aa€al€am'ah€",
 ["gn:14562:Prospector's Chestpiece:23"] = "¤aa€al€ah€am\"",
-["gn:15494:Bloodspattered Shield of Agility:18"] = "¤aa€al€ah€am¼",
+["gn:14723:War Paint Bindings:17"] = "¤aa€al€am¥ah€",
 ["15118"] = "¤aa€al€amah€",
 ["g:5207:20"] = "¤aa€al€ah€am",
 ["g:14898:40"] = "¤aa€al€ah€am/¨",
@@ -1406,7 +1406,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["g:11995:28"] = "¤aa€al€ah€am'l",
 ["4278"] = "¤aa¡d1672tal€amXah¡d1672X",
 ["783"] = "¤aa€al€am5ah€",
-["g:4344:7"] = "¤aa€al€am2ah€",
+["15367"] = "¤aa€al€am7Üah€",
 ["gn:15111:Rigid Moccasins of the Gorilla:21"] = "¤aa€al€am\nah€",
 ["gn:6412:Chief Brigadier Boots:39"] = "¤aa€al€ah€amí",
 ["6616"] = "¤aa€al€ah€am\"`",
@@ -1416,18 +1416,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["7005"] = "¤aa€al€amÞah€",
 ["gn:15016:Lupine Handwraps of the Eagle:16"] = "¤aa€al€amah€",
 ["gn:15312:Feral Leggings of the Wolf:20"] = "¤aa€al€am©ah€",
-["12216"] = "¤aa€al€ah€am¨",
-["14230"] = "¤aa€al€am'ah€",
+["g:5966:38"] = "¤aa€al€am\nah€",
+["g:14367:19"] = "¤aa€al€amwah€",
 ["2318"] = "¤aa€al€ah€amà",
 ["g:4721:35"] = "¤aa€al€ah€amÇ",
 ["g:15115:22"] = "¤aa€al€amah€",
 ["5573"] = "¤aa€al€am[ah€",
 ["14570"] = "¤aa€al€amZþah€",
 ["g:11975:49"] = "¤aa€al€ah€amu.",
-["4480"] = "¤aa€al€amPah€",
+["14367"] = "¤aa€al€amwah€",
 ["gn:15241:Battle Knife of the Tiger:26"] = "¤aa€al€am&Òah€",
-["12205"] = "¤aa£d1668¥d1669µd1670Ual£d1668¥d1669õd1670\000ah£d1668!d1669öd1670am\000",
-["10331"] = "¤aa€al€ah€am'",
+["g:15548:32"] = "¤aa€al€amNah€",
+["4480"] = "¤aa€al€amPah€",
 ["g:15233:39"] = "¤aa€al€am\000† ah€",
 ["4596"] = "¤aa€al€am8ah€",
 ["4245"] = "¤aa¡d1672al¡d1672âamâah¡d1672ã",
@@ -1438,7 +1438,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["gn:5216:Umbral Wand of the Boar:45"] = "¤aa€al€ah€am\00089",
 ["15509"] = "¤aa€al€amÈah€",
 ["9852"] = "¤aa€al€am'ah€",
-["10546"] = "¤aa€al€ah€am$",
+["5966"] = "¤aa€al€am\nah€",
 ["7974"] = "¤aa¡d1669]al€ah¡d1669‹am‹",
 ["11995"] = "¤aa€al€ah€am'l",
 ["g:14160:19"] = "¤aa€al€ah€amï",
@@ -1453,10 +1453,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["g:3740:24"] = "¤aa€al€ah€am\"À",
 ["gn:15548:Thick Scale Gauntlets of Strength:32"] = "¤aa€al€amNah€",
 ["15147"] = "¤aa€al€ah€am/D",
-["g:789:22"] = "¤aa€al€am˜ah€",
-["2164"] = "¤aa€al€am\000˜–pah€",
-["gn:7111:Nightsky Armor:37"] = "¤aa€al€am¨ah€",
 ["gn:15592:Steadfast Buckler of Healing:43"] = "¤aa€al€ah€am~,",
+["4461"] = "¤aa¡d1672 al€amÏah¡d1672Ï",
+["gn:7111:Nightsky Armor:37"] = "¤aa€al€am¨ah€",
+["g:789:22"] = "¤aa€al€am˜ah€",
 ["213547"] = "¤aa€al€am·ah€",
 ["g:9902:41"] = "¤aa€al€amÃPah€",
 ["4720"] = "¤aa€al€ah€am:ú",
@@ -1469,15 +1469,15 @@ AUCTIONATOR_PRICE_DATABASE = {
 ["12360"] = "¤aa€al€ah€am\000r",
 ["8158"] = "¤aa€al€am,ah€",
 ["9874"] = "¤aa€al€amÂÜah€",
-["g:8199:47"] = "¤aa€al€amêRah€",
-["g:7938:45"] = "¤aa€al€am\000pûah€",
-["gn:2310:Embossed Leather Cloak:13"] = "¤aa€al€ah€am/",
-["g:6387:29"] = "¤aa€al€am%ah€",
-["gr:9850:of the Owl"] = "¤aa€al€am\000\000@ah¢d1670\000\000@d1669\000\000@",
+["2553"] = "¤aa€al€ah€am«",
+["4306"] = "¤aa£d16729d1668­d1671›al£d1672´d1668®d1671Ÿam´ah£d1672Êd1668Íd1671Ö",
+["9767"] = "¤aa€al€ah€amè",
+["15556"] = "¤aa€al€ah€amâ",
+["21822"] = "¤aa€al€améah€",
 ["gn:9852:Conjurer's Robe of the Owl:38"] = "¤aa€al€am'ah€",
 ["217398"] = "¤aa€al€am0Ðah€",
 ["10050"] = "¤aa€al€amBeah€",
-["2838"] = "¤aa¥d1672.d1671d1668=d1669®d1670@al¤d1668Ld1669?d1670Žd1671<ah¥d1672?d1671Ad1668„d1669@d1670‘am?",
+["12982"] = "¤aa€al€ah€amh",
 ["g:2164:45"] = "¤aa€al€am\000˜–pah€",
 ["g:15223:24"] = "¤aa€al€am'Éah€",
 ["g:2901:4"] = "¤aa€al€amZah€",
@@ -11083,11 +11083,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722331132,
 },
 },
-["4278"] = {
+["2749"] = {
 {
-["price"] = 2212,
-["quantity"] = 4,
-["time"] = 1722346674,
+["price"] = 8499,
+["quantity"] = 1,
+["time"] = 1662283406,
 },
 },
 ["4718"] = {
@@ -12904,16 +12904,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713780067,
 },
 },
-["3667"] = {
+["gn:14755:Slayer's Sash:28"] = {
 {
-["price"] = 235,
-["quantity"] = 4,
-["time"] = 1722102506,
-},
-{
-["price"] = 176,
-["quantity"] = 4,
-["time"] = 1722164597,
+["price"] = 5300,
+["quantity"] = 1,
+["time"] = 1711024460,
 },
 },
 ["gn:4565:Simple Dagger:6"] = {
@@ -12945,11 +12940,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1676628749,
 },
 },
-["gn:14755:Slayer's Sash:28"] = {
+["3667"] = {
 {
-["price"] = 5300,
-["quantity"] = 1,
-["time"] = 1711024460,
+["price"] = 235,
+["quantity"] = 4,
+["time"] = 1722102506,
+},
+{
+["price"] = 176,
+["quantity"] = 4,
+["time"] = 1722164597,
 },
 },
 ["7445"] = {
@@ -13023,63 +13023,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647031937,
 },
 },
-["g:20408:60"] = {
+["9929"] = {
 {
-["price"] = 13758,
-["quantity"] = 4,
-["time"] = 1647114202,
-},
-},
-["36920"] = {
-{
-["price"] = 14763,
-["quantity"] = 24,
-["time"] = 1676838856,
+["price"] = 9998,
+["quantity"] = 1,
+["time"] = 1710171993,
 },
 {
-["price"] = 13994,
-["quantity"] = 73,
-["time"] = 1677689119,
+["price"] = 8998,
+["quantity"] = 1,
+["time"] = 1710321747,
 },
 {
-["price"] = 14452,
-["quantity"] = 79,
-["time"] = 1677788639,
+["price"] = 8998,
+["quantity"] = 1,
+["time"] = 1710515623,
 },
-{
-["price"] = 16196,
-["quantity"] = 134,
-["time"] = 1677915414,
 },
+["15274"] = {
 {
-["price"] = 13917,
-["quantity"] = 5,
-["time"] = 1678030652,
-},
-{
-["price"] = 13897,
-["quantity"] = 100,
-["time"] = 1678036424,
-},
-{
-["price"] = 14898,
-["quantity"] = 60,
-["time"] = 1678356966,
-},
-{
-["price"] = 11999,
-["quantity"] = 80,
-["time"] = 1678562052,
-},
-{
-["price"] = 10789,
-["quantity"] = 100,
-["time"] = 1678896553,
-},
-{
-["price"] = 11997,
-["quantity"] = 172,
-["time"] = 1679045747,
+["price"] = 89900,
+["quantity"] = 1,
+["time"] = 1713185771,
 },
 },
 ["8173"] = {
@@ -13118,28 +13083,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674896569,
 },
 },
-["13926"] = {
+["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
 {
-["price"] = 87499,
-["quantity"] = 3,
-["time"] = 1645039465,
-},
-},
-["9929"] = {
-{
-["price"] = 9998,
+["price"] = 39995,
 ["quantity"] = 1,
-["time"] = 1710171993,
+["time"] = 1713560628,
 },
 {
-["price"] = 8998,
+["price"] = 39995,
 ["quantity"] = 1,
-["time"] = 1710321747,
+["time"] = 1713646445,
 },
 {
-["price"] = 8998,
+["price"] = 39995,
 ["quantity"] = 1,
-["time"] = 1710515623,
+["time"] = 1713780072,
+},
+},
+["g:20408:60"] = {
+{
+["price"] = 13758,
+["quantity"] = 4,
+["time"] = 1647114202,
 },
 },
 ["15147"] = {
@@ -13201,23 +13166,68 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722346667,
 },
 },
-["gr:9850:of the Owl"] = {
+["gr:9863:of the Whale"] = {
 {
-["price"] = 65600,
+["price"] = 32200,
 ["quantity"] = 1,
-["time"] = 1722102476,
+["time"] = 1722182559,
 },
 {
-["price"] = 65600,
+["price"] = 32200,
 ["quantity"] = 1,
-["time"] = 1722164577,
+["time"] = 1722244706,
 },
 },
-["15274"] = {
+["36920"] = {
 {
-["price"] = 89900,
-["quantity"] = 1,
-["time"] = 1713185771,
+["price"] = 14763,
+["quantity"] = 24,
+["time"] = 1676838856,
+},
+{
+["price"] = 13994,
+["quantity"] = 73,
+["time"] = 1677689119,
+},
+{
+["price"] = 14452,
+["quantity"] = 79,
+["time"] = 1677788639,
+},
+{
+["price"] = 16196,
+["quantity"] = 134,
+["time"] = 1677915414,
+},
+{
+["price"] = 13917,
+["quantity"] = 5,
+["time"] = 1678030652,
+},
+{
+["price"] = 13897,
+["quantity"] = 100,
+["time"] = 1678036424,
+},
+{
+["price"] = 14898,
+["quantity"] = 60,
+["time"] = 1678356966,
+},
+{
+["price"] = 11999,
+["quantity"] = 80,
+["time"] = 1678562052,
+},
+{
+["price"] = 10789,
+["quantity"] = 100,
+["time"] = 1678896553,
+},
+{
+["price"] = 11997,
+["quantity"] = 172,
+["time"] = 1679045747,
 },
 },
 ["g:44311:200"] = {
@@ -13234,16 +13244,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1724417502,
 },
 },
-["gr:9863:of the Whale"] = {
+["gr:9850:of the Owl"] = {
 {
-["price"] = 32200,
+["price"] = 65600,
 ["quantity"] = 1,
-["time"] = 1722182559,
+["time"] = 1722102476,
 },
 {
-["price"] = 32200,
+["price"] = 65600,
 ["quantity"] = 1,
-["time"] = 1722244706,
+["time"] = 1722164577,
 },
 },
 ["3470"] = {
@@ -13590,27 +13600,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1702412062,
 },
 },
-["2553"] = {
-{
-["price"] = 8900,
-["quantity"] = 1,
-["time"] = 1724417542,
-},
-},
-["15303"] = {
-{
-["price"] = 2399,
-["quantity"] = 1,
-["time"] = 1706006061,
-},
-},
-["g:4720:33"] = {
-{
-["price"] = 15098,
-["quantity"] = 1,
-["time"] = 1712222642,
-},
-},
 ["3355"] = {
 {
 ["price"] = 621,
@@ -13661,6 +13650,27 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 289,
 ["quantity"] = 1,
 ["time"] = 1722244712,
+},
+},
+["15303"] = {
+{
+["price"] = 2399,
+["quantity"] = 1,
+["time"] = 1706006061,
+},
+},
+["g:4720:33"] = {
+{
+["price"] = 15098,
+["quantity"] = 1,
+["time"] = 1712222642,
+},
+},
+["2553"] = {
+{
+["price"] = 8900,
+["quantity"] = 1,
+["time"] = 1724417542,
 },
 },
 ["15497"] = {
@@ -13801,11 +13811,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1646930006,
 },
 },
-["4726"] = {
+["39998"] = {
 {
-["price"] = 7018,
+["price"] = 1829943,
+["quantity"] = 7,
+["time"] = 1676207785,
+},
+{
+["price"] = 2202487,
+["quantity"] = 7,
+["time"] = 1676687074,
+},
+{
+["price"] = 2104883,
 ["quantity"] = 1,
-["time"] = 1722346611,
+["time"] = 1676715349,
 },
 },
 ["929"] = {
@@ -13849,21 +13869,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713116430,
 },
 },
-["39998"] = {
+["4726"] = {
 {
-["price"] = 1829943,
-["quantity"] = 7,
-["time"] = 1676207785,
-},
-{
-["price"] = 2202487,
-["quantity"] = 7,
-["time"] = 1676687074,
-},
-{
-["price"] = 2104883,
+["price"] = 7018,
 ["quantity"] = 1,
-["time"] = 1676715349,
+["time"] = 1722346611,
 },
 },
 ["g:13066:51"] = {
@@ -13951,11 +13961,26 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1699174601,
 },
 },
-["g:3292:13"] = {
+["g:14791:48"] = {
 {
-["price"] = 465,
+["price"] = 18993,
 ["quantity"] = 1,
-["time"] = 1693995877,
+["time"] = 1713089218,
+},
+{
+["price"] = 18984,
+["quantity"] = 1,
+["time"] = 1713123963,
+},
+{
+["price"] = 18976,
+["quantity"] = 1,
+["time"] = 1713185729,
+},
+{
+["price"] = 17795,
+["quantity"] = 1,
+["time"] = 1713372326,
 },
 },
 ["gn:15116:Rigid Shoulders of the Boar:26"] = {
@@ -14826,32 +14851,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1694421863,
 },
 },
-["7526"] = {
-{
-["price"] = 97600,
-["quantity"] = 2,
-["time"] = 1643619652,
-},
-{
-["price"] = 97600,
-["quantity"] = 2,
-["time"] = 1643813066,
-},
-},
-["3314"] = {
-{
-["price"] = 1991,
-["quantity"] = 1,
-["time"] = 1707211154,
-},
-},
-["g:15132:29"] = {
-{
-["price"] = 14997,
-["quantity"] = 1,
-["time"] = 1709053292,
-},
-},
 ["34054"] = {
 {
 ["price"] = 13010,
@@ -14902,6 +14901,32 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 13998,
 ["quantity"] = 31,
 ["time"] = 1678100196,
+},
+},
+["3314"] = {
+{
+["price"] = 1991,
+["quantity"] = 1,
+["time"] = 1707211154,
+},
+},
+["g:15132:29"] = {
+{
+["price"] = 14997,
+["quantity"] = 1,
+["time"] = 1709053292,
+},
+},
+["7526"] = {
+{
+["price"] = 97600,
+["quantity"] = 2,
+["time"] = 1643619652,
+},
+{
+["price"] = 97600,
+["quantity"] = 2,
+["time"] = 1643813066,
 },
 },
 ["34052"] = {
@@ -15433,21 +15458,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712345893,
 },
 },
-["41434"] = {
+["14230"] = {
 {
-["price"] = 179996,
-["quantity"] = 6,
-["time"] = 1674659512,
-},
-{
-["price"] = 184998,
-["quantity"] = 2,
-["time"] = 1674892601,
-},
-{
-["price"] = 99998,
-["quantity"] = 4,
-["time"] = 1675342599,
+["price"] = 9999,
+["quantity"] = 1,
+["time"] = 1712564996,
 },
 },
 ["g:14091:11"] = {
@@ -15588,11 +15603,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722244736,
 },
 },
-["22449"] = {
+["15386"] = {
 {
-["price"] = 74998,
+["price"] = 31300,
 ["quantity"] = 1,
-["time"] = 1676551065,
+["time"] = 1712565015,
+},
+{
+["price"] = 31300,
+["quantity"] = 1,
+["time"] = 1712641064,
+},
+{
+["price"] = 31297,
+["quantity"] = 1,
+["time"] = 1712671745,
+},
+{
+["price"] = 31295,
+["quantity"] = 1,
+["time"] = 1712739939,
+},
+{
+["price"] = 31295,
+["quantity"] = 1,
+["time"] = 1712829057,
 },
 },
 ["19710"] = {
@@ -15999,6 +16034,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1702405297,
 },
 },
+["gr:12009:of Agility"] = {
+{
+["price"] = 133200,
+["quantity"] = 1,
+["time"] = 1722237919,
+},
+},
 ["3292"] = {
 {
 ["price"] = 465,
@@ -16023,30 +16065,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709971601,
 },
 },
-["gr:12009:of Agility"] = {
-{
-["price"] = 133200,
-["quantity"] = 1,
-["time"] = 1722237919,
-},
-},
 ["769"] = {
 {
 ["price"] = 605,
 ["quantity"] = 15,
 ["time"] = 1713094153,
-},
-},
-["9298"] = {
-{
-["price"] = 75499,
-["quantity"] = 1,
-["time"] = 1712319905,
-},
-{
-["price"] = 54631,
-["quantity"] = 1,
-["time"] = 1712394134,
 },
 },
 ["4362"] = {
@@ -16066,6 +16089,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 13481,
 ["quantity"] = 1,
 ["time"] = 1711114800,
+},
+},
+["9298"] = {
+{
+["price"] = 75499,
+["quantity"] = 1,
+["time"] = 1712319905,
+},
+{
+["price"] = 54631,
+["quantity"] = 1,
+["time"] = 1712394134,
 },
 },
 ["14205"] = {
@@ -16271,31 +16306,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722182464,
 },
 },
-["40008"] = {
+["gn:15330:Wrangler's Boots of the Falcon:25"] = {
 {
-["price"] = 82984,
-["quantity"] = 38,
-["time"] = 1676207779,
+["price"] = 10004,
+["quantity"] = 1,
+["time"] = 1709026187,
 },
 {
-["price"] = 76991,
-["quantity"] = 15,
-["time"] = 1676312046,
+["price"] = 10001,
+["quantity"] = 1,
+["time"] = 1709055041,
 },
 {
-["price"] = 69898,
-["quantity"] = 12,
-["time"] = 1676364517,
-},
-{
-["price"] = 59984,
-["quantity"] = 10,
-["time"] = 1676410295,
-},
-{
-["price"] = 128789,
-["quantity"] = 6,
-["time"] = 1678782419,
+["price"] = 4902,
+["quantity"] = 1,
+["time"] = 1709122341,
 },
 },
 ["15016"] = {
@@ -16381,21 +16406,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709971601,
 },
 },
-["17222"] = {
+["g:6565:22"] = {
 {
-["price"] = 1117,
-["quantity"] = 25,
-["time"] = 1709805905,
-},
-{
-["price"] = 1595,
-["quantity"] = 25,
-["time"] = 1709897019,
-},
-{
-["price"] = 1387,
-["quantity"] = 15,
-["time"] = 1709980030,
+["price"] = 7496,
+["quantity"] = 1,
+["time"] = 1696613838,
 },
 },
 ["8146"] = {
@@ -16412,11 +16427,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1712834197,
 },
 },
-["g:6565:22"] = {
+["17222"] = {
 {
-["price"] = 7496,
-["quantity"] = 1,
-["time"] = 1696613838,
+["price"] = 1117,
+["quantity"] = 25,
+["time"] = 1709805905,
+},
+{
+["price"] = 1595,
+["quantity"] = 25,
+["time"] = 1709897019,
+},
+{
+["price"] = 1387,
+["quantity"] = 15,
+["time"] = 1709980030,
 },
 },
 ["9774"] = {
@@ -16932,13 +16957,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722093883,
 },
 },
-["4582"] = {
-{
-["price"] = 1125,
-["quantity"] = 1,
-["time"] = 1709924132,
-},
-},
 ["7086"] = {
 {
 ["price"] = 9999,
@@ -16954,6 +16972,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 16999,
 ["quantity"] = 2,
 ["time"] = 1645134302,
+},
+},
+["7081"] = {
+{
+["price"] = 59499,
+["quantity"] = 2,
+["time"] = 1647114292,
 },
 },
 ["14377"] = {
@@ -16975,13 +17000,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643789350,
 },
 },
-["805"] = {
-{
-["price"] = 396,
-["quantity"] = 1,
-["time"] = 1696498523,
-},
-},
 ["4714"] = {
 {
 ["price"] = 6900,
@@ -16997,6 +17015,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 4498,
 ["quantity"] = 1,
 ["time"] = 1709641683,
+},
+},
+["805"] = {
+{
+["price"] = 396,
+["quantity"] = 1,
+["time"] = 1696498523,
 },
 },
 ["7432"] = {
@@ -17069,16 +17094,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674892748,
 },
 },
-["g:14570:28"] = {
+["9290"] = {
 {
-["price"] = 12346,
+["price"] = 9996,
 ["quantity"] = 1,
-["time"] = 1709377358,
-},
-{
-["price"] = 23294,
-["quantity"] = 1,
-["time"] = 1713247900,
+["time"] = 1699266065,
 },
 },
 ["g:6583:21"] = {
@@ -17534,16 +17554,26 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1695195419,
 },
 },
-["g:15367:39"] = {
+["g:9874:43"] = {
 {
-["price"] = 14300,
+["price"] = 49886,
 ["quantity"] = 1,
-["time"] = 1710090664,
+["time"] = 1712935601,
 },
 {
-["price"] = 14300,
+["price"] = 49886,
 ["quantity"] = 1,
-["time"] = 1710146384,
+["time"] = 1712998159,
+},
+{
+["price"] = 49886,
+["quantity"] = 1,
+["time"] = 1713085109,
+},
+{
+["price"] = 49884,
+["quantity"] = 1,
+["time"] = 1713124183,
 },
 },
 ["g:9770:20"] = {
@@ -17642,26 +17672,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674760499,
 },
 },
-["g:9874:43"] = {
+["g:15367:39"] = {
 {
-["price"] = 49886,
+["price"] = 14300,
 ["quantity"] = 1,
-["time"] = 1712935601,
+["time"] = 1710090664,
 },
 {
-["price"] = 49886,
+["price"] = 14300,
 ["quantity"] = 1,
-["time"] = 1712998159,
-},
-{
-["price"] = 49886,
-["quantity"] = 1,
-["time"] = 1713085109,
-},
-{
-["price"] = 49884,
-["quantity"] = 1,
-["time"] = 1713124183,
+["time"] = 1710146384,
 },
 },
 ["2138"] = {
@@ -17984,11 +18004,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1708544907,
 },
 },
-["9290"] = {
+["g:14570:28"] = {
 {
-["price"] = 9996,
+["price"] = 12346,
 ["quantity"] = 1,
-["time"] = 1699266065,
+["time"] = 1709377358,
+},
+{
+["price"] = 23294,
+["quantity"] = 1,
+["time"] = 1713247900,
 },
 },
 ["3058"] = {
@@ -18029,11 +18054,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643789355,
 },
 },
-["7081"] = {
+["4582"] = {
 {
-["price"] = 59499,
-["quantity"] = 2,
-["time"] = 1647114292,
+["price"] = 1125,
+["quantity"] = 1,
+["time"] = 1709924132,
 },
 },
 ["3309"] = {
@@ -18319,21 +18344,31 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709377368,
 },
 },
-["gn:15330:Wrangler's Boots of the Falcon:25"] = {
+["40008"] = {
 {
-["price"] = 10004,
-["quantity"] = 1,
-["time"] = 1709026187,
+["price"] = 82984,
+["quantity"] = 38,
+["time"] = 1676207779,
 },
 {
-["price"] = 10001,
-["quantity"] = 1,
-["time"] = 1709055041,
+["price"] = 76991,
+["quantity"] = 15,
+["time"] = 1676312046,
 },
 {
-["price"] = 4902,
-["quantity"] = 1,
-["time"] = 1709122341,
+["price"] = 69898,
+["quantity"] = 12,
+["time"] = 1676364517,
+},
+{
+["price"] = 59984,
+["quantity"] = 10,
+["time"] = 1676410295,
+},
+{
+["price"] = 128789,
+["quantity"] = 6,
+["time"] = 1678782419,
 },
 },
 ["gn:15511:Grunt's Legguards of the Whale:24"] = {
@@ -18655,31 +18690,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1709896010,
 },
 },
-["15386"] = {
+["22449"] = {
 {
-["price"] = 31300,
+["price"] = 74998,
 ["quantity"] = 1,
-["time"] = 1712565015,
-},
-{
-["price"] = 31300,
-["quantity"] = 1,
-["time"] = 1712641064,
-},
-{
-["price"] = 31297,
-["quantity"] = 1,
-["time"] = 1712671745,
-},
-{
-["price"] = 31295,
-["quantity"] = 1,
-["time"] = 1712739939,
-},
-{
-["price"] = 31295,
-["quantity"] = 1,
-["time"] = 1712829057,
+["time"] = 1676551065,
 },
 },
 ["40029"] = {
@@ -18737,11 +18752,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1705402635,
 },
 },
-["14230"] = {
+["41434"] = {
 {
-["price"] = 9999,
-["quantity"] = 1,
-["time"] = 1712564996,
+["price"] = 179996,
+["quantity"] = 6,
+["time"] = 1674659512,
+},
+{
+["price"] = 184998,
+["quantity"] = 2,
+["time"] = 1674892601,
+},
+{
+["price"] = 99998,
+["quantity"] = 4,
+["time"] = 1675342599,
 },
 },
 ["43109"] = {
@@ -19511,26 +19536,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713085106,
 },
 },
-["g:14791:48"] = {
+["g:3292:13"] = {
 {
-["price"] = 18993,
+["price"] = 465,
 ["quantity"] = 1,
-["time"] = 1713089218,
-},
-{
-["price"] = 18984,
-["quantity"] = 1,
-["time"] = 1713123963,
-},
-{
-["price"] = 18976,
-["quantity"] = 1,
-["time"] = 1713185729,
-},
-{
-["price"] = 17795,
-["quantity"] = 1,
-["time"] = 1713372326,
+["time"] = 1693995877,
 },
 },
 ["gn:7111:Nightsky Armor:37"] = {
@@ -19799,28 +19809,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711539009,
 },
 },
+["13926"] = {
+{
+["price"] = 87499,
+["quantity"] = 3,
+["time"] = 1645039465,
+},
+},
 ["36905"] = {
 {
 ["price"] = 13246,
 ["quantity"] = 3,
 ["time"] = 1678046097,
-},
-},
-["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
-{
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713560628,
-},
-{
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713646445,
-},
-{
-["price"] = 39995,
-["quantity"] = 1,
-["time"] = 1713780072,
 },
 },
 ["7533"] = {
@@ -20907,11 +20907,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1675714762,
 },
 },
-["2749"] = {
+["4278"] = {
 {
-["price"] = 8499,
-["quantity"] = 1,
-["time"] = 1662283406,
+["price"] = 2212,
+["quantity"] = 4,
+["time"] = 1722346674,
 },
 },
 ["gr:15260:of the Eagle"] = {
@@ -21785,8 +21785,8 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["2463"] = 13695,
 ["30758"] = 103377,
 ["40585"] = 72250000,
-["221512"] = 16000,
 ["15906"] = 2138,
+["221512"] = 16000,
 ["44133"] = 800000,
 ["20204"] = 56148,
 ["5173"] = 90,
@@ -21801,7 +21801,7 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["42097"] = 32800,
 ["2160"] = 3747,
 ["1708"] = 200,
-["22180"] = 24700,
+["16167"] = 25,
 ["19222"] = 10,
 ["4607"] = 200,
 ["3607"] = 148,
@@ -21819,10 +21819,10 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["193"] = 48,
 ["2617"] = 9892,
 ["3592"] = 1894,
-["17028"] = 700,
-["2534"] = 45431,
-["34666"] = 437611,
+["13331"] = 360000,
 ["44188"] = 194625,
+["34666"] = 437611,
+["2534"] = 45431,
 ["20157"] = 13766,
 ["211387"] = 18000,
 ["849"] = 1326,
@@ -21845,8 +21845,8 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["16168"] = 400,
 ["1941"] = 815,
 ["44183"] = 324485,
-["16376"] = 8000,
 ["21099"] = 500,
+["16376"] = 8000,
 ["5060"] = 1350,
 ["2029"] = 4419,
 ["44167"] = 178772,
@@ -21912,18 +21912,18 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["2391"] = 38,
 ["20752"] = 2700,
 ["2480"] = 72,
-["2511"] = 1192,
 ["44204"] = 272326,
+["2511"] = 1192,
 ["16363"] = 3000,
 ["23814"] = 54000,
 ["35245"] = 475000,
 ["44192"] = 590731,
 ["34678"] = 221114,
 ["3025"] = 18478,
-["2426"] = 32568,
+["21747"] = 300,
 ["29173"] = 158357,
 ["3893"] = 24771,
-["21747"] = 300,
+["2426"] = 32568,
 ["3682"] = 1600,
 ["18796"] = 90000,
 ["10648"] = 500,
@@ -21940,13 +21940,13 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["30777"] = 59255,
 ["25904"] = 120000,
 ["3894"] = 29986,
-["20220"] = 504598,
-["20824"] = 21250,
+["18798"] = 90000,
+["33205"] = 228000,
 ["19776"] = 40000,
 ["2134"] = 82,
 ["18633"] = 25,
 ["29009"] = 170,
-["18798"] = 90000,
+["20220"] = 504598,
 ["29167"] = 501349,
 ["25872"] = 27,
 ["3024"] = 7098,
@@ -21955,19 +21955,19 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["4540"] = 5,
 ["16390"] = 11000,
 ["35954"] = 1200,
-["34674"] = 314324,
+["16302"] = 100,
 ["4342"] = 2500,
-["42084"] = 33668,
+["6326"] = 40,
 ["2509"] = 373,
 ["43230"] = 4000,
-["6326"] = 40,
+["42084"] = 33668,
 ["925"] = 7797,
-["5441"] = 900,
+["7342"] = 95000,
 ["2394"] = 416,
 ["35254"] = 475000,
 ["35380"] = 190594,
 ["2395"] = 322,
-["7342"] = 95000,
+["5441"] = 900,
 ["16386"] = 14000,
 ["18789"] = 90000,
 ["21558"] = 25,
@@ -21980,11 +21980,11 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["30634"] = 100000,
 ["16331"] = 600,
 ["2434"] = 5165,
-["22768"] = 47500,
+["2612"] = 147,
 ["2474"] = 15510,
 ["44205"] = 637840,
 ["3606"] = 147,
-["2612"] = 147,
+["22768"] = 47500,
 ["35265"] = 475000,
 ["3600"] = 24,
 ["29194"] = 900000,
@@ -22004,7 +22004,7 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["6949"] = 50,
 ["24175"] = 108000,
 ["2472"] = 30790,
-["46099"] = 9000,
+["28053"] = 7.2,
 ["30826"] = 120000,
 ["4496"] = 500,
 ["25474"] = 425000,
@@ -22022,8 +22022,8 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["2893"] = 150,
 ["2700"] = 400,
 ["17186"] = 243,
-["1132"] = 9000,
 ["16583"] = 10000,
+["1132"] = 9000,
 ["2209"] = 7115,
 ["18046"] = 12000,
 ["44174"] = 836838,
@@ -22077,7 +22077,7 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["16360"] = 11000,
 ["10393"] = 4750,
 ["16318"] = 10000,
-["28053"] = 7.2,
+["46099"] = 9000,
 ["45688"] = 10625000,
 ["29700"] = 80000,
 ["211382"] = 4050,
@@ -22096,13 +22096,13 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["216939"] = 13500,
 ["28271"] = 72000,
 ["3681"] = 1600,
-["16302"] = 100,
+["34674"] = 314324,
 ["2025"] = 5304,
 ["16389"] = 18000,
 ["85"] = 62,
 ["117"] = 4.4,
 ["10918"] = 50,
-["33205"] = 228000,
+["20824"] = 21250,
 ["33449"] = 1700,
 ["29195"] = 1000000,
 ["20194"] = 160616,
@@ -22163,7 +22163,7 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["19770"] = 40000,
 ["35406"] = 203402,
 ["1835"] = 31,
-["13331"] = 360000,
+["17028"] = 700,
 ["20755"] = 19000,
 ["285"] = 3555,
 ["18853"] = 15000,
@@ -22173,7 +22173,7 @@ AUCTIONATOR_VENDOR_PRICE_CACHE = {
 ["219022"] = 29250,
 ["20202"] = 79348,
 ["228797"] = 45000,
-["16167"] = 25,
+["22180"] = 24700,
 ["19777"] = 40000,
 ["20166"] = 15939,
 ["2596"] = 120,

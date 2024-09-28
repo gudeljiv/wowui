@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12822,
+["session"] = 12824,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -4602,10 +4602,18 @@ BugGrabberDB = {
 ["counter"] = 20,
 },
 {
+["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:1325: attempt to call method 'GetName' (a nil value)",
+["time"] = "2024/09/28 14:05:23",
+["locals"] = "frame = <table> {\n 1 = PaperDollFrame {\n }\n}\n(*temporary) = nil\n(*temporary) = <table> {\n 1 = PaperDollFrame {\n }\n}\n(*temporary) = \"attempt to call method 'GetName' (a nil value)\"\n",
+["stack"] = "[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:1325: in function `func'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:1011: in function `OnUpdate'\n[string \"*ItemRack.xml:7_OnUpdate\"]:1: in function <[string \"*ItemRack.xml:7_OnUpdate\"]:1>",
+["session"] = 12823,
+["counter"] = 1638,
+},
+{
 ["message"] = "Interface/AddOns/Blizzard_FrameXML/DeprecatedTemplates.xml:37 Couldn't find inherited node: UISliderTemplateWithLabels",
 ["time"] = "2024/09/25 19:17:19",
-["session"] = 12822,
-["counter"] = 195,
+["session"] = 12824,
+["counter"] = 201,
 },
 },
 }

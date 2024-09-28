@@ -98,8 +98,8 @@ BAGANATOR_CONFIG = {
 ["show_buttons_on_alt"] = false,
 ["main_view_position"] = {
 "RIGHT",
--312.70068359375,
-123.1744995117188,
+-350.796142578125,
+166.9839477539063,
 },
 ["bank_only_view_show_bag_slots"] = false,
 ["icon_bottom_left_corner_array"] = {
@@ -129,30 +129,16 @@ BAGANATOR_CONFIG = {
 ["hide_special_container"] = {
 ["keyring"] = true,
 },
-["character_select_position"] = {
-"RIGHT",
-"Baganator_CategoryViewBackpackViewFrame",
-"LEFT",
-0,
-0,
-},
 ["enable_equipment_set_info_2"] = true,
+["bag_empty_space_at_top"] = true,
 ["show_guild_banks_in_tooltips"] = true,
 ["category_horizontal_spacing_2"] = 0.4,
 ["bag_view_type"] = "category",
-["tooltips_faction_only"] = false,
+["category_default_import"] = 2,
 ["debug_categories"] = false,
 ["show_recents_tabs_main_view"] = true,
 ["icon_grey_junk"] = true,
 ["show_character_race_icons"] = true,
-["guild_bank_sort_method"] = "unset",
-["guild_view_position"] = {
-"LEFT",
-20,
-0,
-},
-["show_tooltips_on_shift"] = false,
-["category_migration"] = 4,
 ["show_inventory_tooltips"] = true,
 ["category_modifications"] = {
 ["1"] = {
@@ -163,6 +149,7 @@ BAGANATOR_CONFIG = {
 ["i:3575"] = true,
 ["i:3860"] = true,
 ["i:2776"] = true,
+["i:2771"] = true,
 ["i:2775"] = true,
 },
 },
@@ -172,21 +159,18 @@ BAGANATOR_CONFIG = {
 },
 },
 },
-["enable_bank_view"] = true,
 ["category_section_toggled"] = {
 ["Crafting"] = false,
 },
+["category_migration"] = 4,
+["recent_timeout"] = 15,
+["guild_bank_sort_method"] = "unset",
+["warband_bank_view_width"] = 14,
+["sort_ignore_slots_at_end"] = true,
 ["add_to_category_buttons_2"] = "drag",
 ["view_type"] = "unset",
-["show_guild_bank_button"] = true,
-["currencies_tracked"] = {
-["Doperage-LoneWolf"] = {
-},
-["Dopeclaw-LoneWolf"] = {
-},
-["Dopesnare-LoneWolf"] = {
-},
-},
+["show_tooltips_on_shift"] = false,
+["icon_text_quality_colors"] = false,
 ["show_reagents"] = true,
 ["icon_text_font_size"] = 10,
 ["recent_characters_main_view"] = {
@@ -200,9 +184,9 @@ BAGANATOR_CONFIG = {
 "Dopemend-LoneWolf",
 "Dopecoil-LoneWolf",
 },
-["recent_timeout"] = 15,
-["view_alpha"] = 0.9,
 ["setting_anchors"] = false,
+["view_alpha"] = 0.9,
+["bag_view_width"] = 12,
 ["sort_ignore_slots_count_2"] = {
 ["Doperage-LoneWolf"] = 0,
 ["Dopestab-LoneWolf"] = 0,
@@ -210,13 +194,24 @@ BAGANATOR_CONFIG = {
 ["Dopesnare-LoneWolf"] = 0,
 },
 ["debug_keywords"] = false,
-["bag_view_width"] = 12,
+["show_guild_bank_button"] = true,
 ["tooltips_character_limit"] = 4,
 ["enable_guild_view"] = true,
 ["auto_sort_on_open"] = true,
-["sort_ignore_slots_at_end"] = true,
-["warband_bank_view_width"] = 14,
-["icon_text_quality_colors"] = false,
+["guild_view_position"] = {
+"LEFT",
+20,
+0,
+},
+["enable_bank_view"] = true,
+["currencies_tracked"] = {
+["Doperage-LoneWolf"] = {
+},
+["Dopeclaw-LoneWolf"] = {
+},
+["Dopesnare-LoneWolf"] = {
+},
+},
 ["debug_timers"] = false,
 ["guild_view_dialog_position"] = {
 "BOTTOM",
@@ -225,13 +220,19 @@ BAGANATOR_CONFIG = {
 0,
 0,
 },
-["category_default_import"] = 2,
+["tooltips_faction_only"] = false,
 ["bank_only_view_position"] = {
 "LEFT",
 995.87255859375,
 374.6029663085938,
 },
-["bag_empty_space_at_top"] = true,
+["character_select_position"] = {
+"RIGHT",
+"Baganator_CategoryViewBackpackViewFrame",
+"LEFT",
+0,
+0,
+},
 ["show_sort_button_2"] = true,
 ["inverted_bag_shortcuts"] = false,
 ["custom_categories"] = {

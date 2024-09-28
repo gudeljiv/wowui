@@ -26,7 +26,7 @@ VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1710
+/cast item:929
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
