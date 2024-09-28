@@ -2,7 +2,7 @@ nPower: disabled
 nHealth: disabled
 Immersion: enabled
 AdiBags: disabled
-AdiBags_Config: enabled
+AdiBags_Config: disabled
 Sorted: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
@@ -150,7 +150,7 @@ BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 VuhDo: disabled
-AdiBags-ItemRackSets: enabled
+AdiBags-ItemRackSets: disabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
@@ -265,5 +265,5 @@ kExtraBossFrames: disabled
 ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
-AdiBags_Item_Sets: enabled
+AdiBags_Item_Sets: disabled
 Baganator: enabled

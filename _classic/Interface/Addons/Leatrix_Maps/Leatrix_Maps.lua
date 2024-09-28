@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.15.50 (25th September 2024)
+	-- 	Leatrix Maps 1.15.51 (26th September 2024)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList, LeaLockList = {}, {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.15.50"
+	LeaMapsLC["AddonVer"] = "1.15.51"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -260,17 +260,13 @@
 			tinsert(mapEasternString, 1, {L["Eastern Kingdoms"], 1})
 			tinsert(mapEasternTable, 1, {zonename = L["Eastern Kingdoms"], mapid = 1415})
 
-			-- Add battlegrounds
-			tinsert(mapEasternString,  {L["Alterac Valley"], #mapEasternTable + 1})
-			tinsert(mapEasternTable,  {zonename = L["Alterac Valley"], mapid = 1459})
-			tinsert(mapEasternString,  {L["Arathi Basin"], #mapEasternTable + 1})
-			tinsert(mapEasternTable,  {zonename = L["Arathi Basin"], mapid = 1461})
-
 			local ekdd = LeaMapsLC:CreateDropdown("ZoneMapEasternMenu", nil, 184, "TOPLEFT", outerFrame, "TOPLEFT", 184, -20, mapEasternString)
 			ekdd:SetFrameLevel(30)
 
 			LeaMapsCB["ZoneMapEasternMenu"]:RegisterCallback("OnUpdate", function()
-				WorldMapFrame:SetMapID(mapEasternTable[LeaMapsLC["ZoneMapEasternMenu"]].mapid)
+				if not IsInInstance() then
+					WorldMapFrame:SetMapID(mapEasternTable[LeaMapsLC["ZoneMapEasternMenu"]].mapid)
+				end
 			end)
 
 			-- Create Kalimdor dropdown menu
@@ -290,15 +286,13 @@
 			tinsert(mapKalimdorString, 1, {L["Kalimdor"], 1})
 			tinsert(mapKalimdorTable, 1, {zonename = L["Kalimdor"], mapid = 1414})
 
-			-- Add battlegrounds
-			tinsert(mapKalimdorString,  {L["Warsong Gulch"], #mapKalimdorTable + 1})
-			tinsert(mapKalimdorTable,  {zonename = L["Warsong Gulch"], mapid = 1460})
-
 			local kmdd = LeaMapsLC:CreateDropdown("ZoneMapKalimdorMenu", nil, 184, "TOPLEFT", outerFrame, "TOPLEFT", 184, -20, mapKalimdorString)
 			kmdd:SetFrameLevel(30)
 
 			LeaMapsCB["ZoneMapKalimdorMenu"]:RegisterCallback("OnUpdate", function()
-				WorldMapFrame:SetMapID(mapKalimdorTable[LeaMapsLC["ZoneMapKalimdorMenu"]].mapid)
+				if not IsInInstance() then
+					WorldMapFrame:SetMapID(mapKalimdorTable[LeaMapsLC["ZoneMapKalimdorMenu"]].mapid)
+				end
 			end)
 
 			-- Create continent dropdown menu
@@ -318,15 +312,17 @@
 
 			LeaMapsCB["ZoneMapContinentMenu"]:RegisterCallback("OnUpdate", function()
 				ekdd:Hide(); kmdd:Hide(); nodd:Hide()
-				if LeaMapsLC["ZoneMapContinentMenu"] == 1 then
-					ekdd:Show()
-					WorldMapFrame:SetMapID(mapEasternTable[LeaMapsLC["ZoneMapEasternMenu"]].mapid)
-				elseif LeaMapsLC["ZoneMapContinentMenu"] == 2 then
-					kmdd:Show()
-					WorldMapFrame:SetMapID(mapKalimdorTable[LeaMapsLC["ZoneMapKalimdorMenu"]].mapid)
-				elseif LeaMapsLC["ZoneMapContinentMenu"] == 3 then
-					nodd:Show()
-					WorldMapFrame:SetMapID(947)
+				if not IsInInstance() then
+					if LeaMapsLC["ZoneMapContinentMenu"] == 1 then
+						ekdd:Show()
+						WorldMapFrame:SetMapID(mapEasternTable[LeaMapsLC["ZoneMapEasternMenu"]].mapid)
+					elseif LeaMapsLC["ZoneMapContinentMenu"] == 2 then
+						kmdd:Show()
+						WorldMapFrame:SetMapID(mapKalimdorTable[LeaMapsLC["ZoneMapKalimdorMenu"]].mapid)
+					elseif LeaMapsLC["ZoneMapContinentMenu"] == 3 then
+						nodd:Show()
+						WorldMapFrame:SetMapID(947)
+					end
 				end
 			end)
 
@@ -393,15 +389,10 @@
 				local E, S = LeaMapsLC.ElvUI
 				local S = E:GetModule('Skins')
 				if E.private.skins.blizzard.enable and E.private.skins.blizzard.worldmap then
-					S:HandleDropDownBox(ekdd.dd); ekdd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
-					S:HandleDropDownBox(kmdd.dd); kmdd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
-					S:HandleDropDownBox(cond.dd); cond.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
-					S:HandleDropDownBox(nodd.dd); nodd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
-					outerFrame:SetWidth(380)
-					ekdd.btn:SetHitRectInsets(ekdd.btn:GetHitRectInsets() - 10, 0, 0, 0)
-					kmdd.btn:SetHitRectInsets(kmdd.btn:GetHitRectInsets() - 10, 0, 0, 0)
-					cond.btn:SetHitRectInsets(cond.btn:GetHitRectInsets() - 10, 0, 0, 0)
-					nodd.btn:SetHitRectInsets(nodd.btn:GetHitRectInsets() - 10, 0, 0, 0)
+					S:HandleDropDownBox(cond)
+					S:HandleDropDownBox(ekdd); ekdd:ClearAllPoints(); ekdd:SetPoint("LEFT", cond, "RIGHT", 4, 0)
+					S:HandleDropDownBox(kmdd); kmdd:ClearAllPoints(); kmdd:SetPoint("LEFT", cond, "RIGHT", 4, 0)
+					S:HandleDropDownBox(nodd); nodd:ClearAllPoints(); nodd:SetPoint("LEFT", cond, "RIGHT", 4, 0)
 				end
 			end
 
@@ -3466,6 +3457,12 @@
 					end
 				end
 			end
+
+			-- Lock and disable use default map option due to a bug in the game which prevents map movement
+			LeaMapsLC:LockItem(LeaMapsCB["UseDefaultMap"], true)
+			LeaMapsCB["UseDefaultMap"].tiptext = LeaMapsCB["UseDefaultMap"].tiptext .. "|n|n|cff00AAFF" .. "This setting cannot be used at the moment."
+			LeaMapsLC["UseDefaultMap"] = "Off"
+			LeaMapsDB["UseDefaultMap"] = "Off"
 
 		elseif event == "PLAYER_ENTERING_WORLD" then
 			-- Run main function

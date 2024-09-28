@@ -37,8 +37,8 @@ GlobalIgnoreList: enabled
 aTotemBar: disabled
 nMainbar: enabled
 AdiBags: disabled
-AdiBags-ItemRackSets: enabled
-AdiBags_Config: enabled
+AdiBags-ItemRackSets: disabled
+AdiBags_Config: disabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
 Myslot: enabled
@@ -161,4 +161,4 @@ LibSpellRange-1.0: enabled
 LibClassicDurations: enabled
 Clique: enabled
 LibClassicCasterino: enabled
-AdiBags_Item_Sets: enabled
+AdiBags_Item_Sets: disabled

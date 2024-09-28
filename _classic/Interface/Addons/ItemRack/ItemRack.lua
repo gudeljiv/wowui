@@ -1321,7 +1321,7 @@ function ItemRack.WriteMenuCooldowns()
 end
 
 function ItemRack.MenuMouseover()
-	local frame = GetMouseFocus()
+	local frame = GetMouseFoci()
 	if MouseIsOver(ItemRackMenuFrame) or IsShiftKeyDown() or (frame and frame:GetName() and frame:IsVisible() and ItemRack.MenuMouseoverFrames[frame:GetName()]) then
 		return -- keep menu open if mouse over menu, shift is down or mouse is immediately over a mouseover frame
 	end

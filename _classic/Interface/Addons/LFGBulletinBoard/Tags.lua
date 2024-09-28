@@ -121,6 +121,13 @@ local dungeonTags = {
 		zhTW = nil,
 		zhCN = nil,
 	},
+	CRY = { -- Crystal vale
+		enGB = "crystal vale thunderan thunderaan",
+		ruRU = nil,  
+		frFR = nil,  
+		zhTW = nil,
+		zhCN = nil,
+	},
 	AZN = { -- Azjol-Nerub
 		enGB = "azn an nerub",
 		deDE = nil,
