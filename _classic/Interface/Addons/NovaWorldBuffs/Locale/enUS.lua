@@ -1046,3 +1046,6 @@ L["blueShamansTitle"] = "Blue Shamans";
 L["blueShamansDesc"] = "Show shamans as blue on this addon in classic.";
 
 L["Battle Shout"] = "Battle Shout";
+
+L["dmfBuffDroppedNoCooldown"] = "Darkmoon Faire buff %s received, no cooldown in this game version.";
+L["chronoboonReleasedNoCooldown"] = "You have chronoboon released a Darkmoon Faire buff, no cooldown in this game version.";

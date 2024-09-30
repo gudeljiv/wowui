@@ -288,9 +288,9 @@ W: 714
 H: 560
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
-Anchor: RIGHT
-X: -337
-Y: 228
+Anchor: CENTER
+X: 0
+Y: 50
 W: 325
 H: 375
 Frame: TellMeWhen_ConfigWarning

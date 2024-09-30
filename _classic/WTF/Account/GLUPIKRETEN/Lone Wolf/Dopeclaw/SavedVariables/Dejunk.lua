@@ -1,7 +1,8 @@
 
 __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
-["includeUnsuitableEquipment"] = false,
+["characterSpecificSettings"] = false,
 ["autoSell"] = false,
+["includeByQuality"] = true,
 ["exclusions"] = {
 },
 ["excludeEquipmentSets"] = true,
@@ -9,13 +10,50 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["inclusions"] = {
 },
 ["safeMode"] = false,
-["autoJunkFrame"] = false,
-["includeArtifactRelics"] = false,
-["includePoorItems"] = true,
-["excludeUnboundEquipment"] = false,
-["characterSpecificSettings"] = false,
+["excludeWarbandEquipment"] = false,
 ["includeBelowItemLevel"] = {
 ["enabled"] = false,
 ["value"] = 0,
 },
+["includeArtifactRelics"] = false,
+["includeUnsuitableEquipment"] = false,
+["itemQualityCheckBoxes"] = {
+["includeUnsuitableEquipment"] = {
+["poor"] = true,
+["epic"] = true,
+["common"] = true,
+["uncommon"] = true,
+["rare"] = true,
+},
+["excludeWarbandEquipment"] = {
+["poor"] = true,
+["epic"] = true,
+["common"] = true,
+["uncommon"] = true,
+["rare"] = true,
+},
+["includeByQuality"] = {
+["poor"] = true,
+["epic"] = false,
+["common"] = false,
+["uncommon"] = false,
+["rare"] = false,
+},
+["excludeUnboundEquipment"] = {
+["poor"] = true,
+["epic"] = true,
+["common"] = true,
+["uncommon"] = true,
+["rare"] = true,
+},
+["includeBelowItemLevel"] = {
+["poor"] = true,
+["epic"] = true,
+["common"] = true,
+["uncommon"] = true,
+["rare"] = true,
+},
+},
+["excludeUnboundEquipment"] = false,
+["autoJunkFrame"] = false,
 }

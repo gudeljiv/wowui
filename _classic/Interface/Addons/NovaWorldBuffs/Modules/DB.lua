@@ -62,10 +62,11 @@ NWB.buffDropSpamCooldownSoD = 300; --Longer cooldown for the spammy SoD buff dro
 if (NWB.isSOD) then
 	NWB.noWorldBuffTimers = true; --Hides timers on certain frames and minimap button tooltip, should be used if all rend/ony/nef cooldown times are set to 0 like in SoD.
 	NWB.noGuildBuffDroppedMsgs = true; --With no timers tracked the drops are alot more often and spammy, this removes the 2nd msg "buff dropped" and just keep the drop in few seconds warning.
-	NWB.buffDropSpamCooldown = 600; --Spam control cooldown time between msgs for buff drops, might of stormwind has it's own longer delay in WorldBuffs.lua (as of now might of stormwind never sends a msg becaus no need)
+	NWB.buffDropSpamCooldown = 900; --Spam control cooldown time between msgs for buff drops, might of stormwind has it's own longer delay in WorldBuffs.lua (as of now might of stormwind never sends a msg becaus no need)
 	NWB.rendCooldownTime = 0;
 	NWB.onyCooldownTime = 0;
 	NWB.nefCooldownTime = 0;
+	NWB.noDmfCooldown = true;
 elseif (NWB.isClassic) then
 	NWB.nefCooldownTime = 0;
 end

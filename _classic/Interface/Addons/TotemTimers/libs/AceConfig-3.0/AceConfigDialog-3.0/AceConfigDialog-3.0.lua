@@ -2022,12 +2022,7 @@ function AceConfigDialog:AddToBlizOptions(appName, name, parent, ...)
 			end
 		else
 			group:SetName(name or appName, parent)
-			if InterfaceOptions_AddCategory then
-				InterfaceOptions_AddCategory(group.frame)
-			else
-				local category, layout = _G.Settings.RegisterCanvasLayoutCategory(group.frame, group.frame.name)
-				_G.Settings.RegisterAddOnCategory(category)
-			end
+			InterfaceOptions_AddCategory(group.frame)
 		end
 		return group.frame, group.frame.name
 	else

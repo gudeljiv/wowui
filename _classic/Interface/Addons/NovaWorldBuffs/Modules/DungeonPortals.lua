@@ -102,6 +102,8 @@ local function checkMapsLoaded(usingWorldmap)
 				NWB:createKazzakMarker();
 			elseif (mapID == 1440 and NWB.createDemonfallMarker) then
 				NWB:createDemonfallMarker();
+			elseif (mapID == 1451 and NWB.createThunderaanMarker) then
+				NWB:createThunderaanMarker();
 			end
 		end
 	else
@@ -114,6 +116,8 @@ local function checkMapsLoaded(usingWorldmap)
 			NWB:createKazzakMarker();
 		elseif (zone == 1440 and NWB.createDemonfallMarker) then
 			NWB:createDemonfallMarker();
+		elseif (zone == 1451 and NWB.createThunderaanMarker) then
+			NWB:createThunderaanMarker();
 		end
 	end
 end
@@ -273,6 +277,24 @@ function NWB:createDemonfallMarker()
 			zone = 1440,
 			x = 0.84471679297417,
 			y = 0.73532787093496,
+		},
+	};
+	NWB:createExtraMarker(markers);
+	demonfallLoaded = true;
+end
+
+function NWB:createThunderaanMarker()
+	if (demonfallLoaded) then
+		return;
+	end
+	local markers = {
+		[1] = {
+			markerName = "DFC",
+			icon = "Interface\\Icons\\Achievement_boss_forgemaster",
+			tooltip = "The Crystal Vale",
+			zone = 1451,
+			x = 0.22007650688238,
+			y = 0.079368435921647,
 		},
 	};
 	NWB:createExtraMarker(markers);

@@ -71,12 +71,12 @@ LBISSettings = {
 ["Phase 3"] = true,
 ["Phase 4"] = true,
 },
-["PriorityList"] = {
-},
+["SelectedSlot"] = "Ranged/Relic",
 ["SelectedRank"] = "All",
 ["HideObsolete"] = false,
 ["SelectedSourceType"] = "All",
-["SelectedSlot"] = "Ranged/Relic",
 ["ShowCustom"] = false,
+["PriorityList"] = {
+},
 ["SelectedPhase"] = "Phase 1",
 }

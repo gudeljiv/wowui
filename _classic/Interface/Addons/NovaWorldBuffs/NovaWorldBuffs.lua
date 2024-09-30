@@ -46,6 +46,17 @@ local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetCont
 local GetItemCooldown = GetItemCooldown or C_Container.GetItemCooldown;
 local GetItemCount = GetItemCount or C_Item.GetItemCount;
 NWB.wgExpire = 259200;
+local layerExpireTime = 10800; --Also set in Data.lua.
+do
+	local megaServers = {
+		["Crusader Strike"] = true,
+		["Living Flame"] = true,
+		["Wild Growth"] = true,
+	};
+	if (megaServers[NWB.realm]) then
+		layerExpireTime = 3600;
+	end
+end
 local yellPercent = NWB.yellPercent;
 local noWorldBuffTimers = NWB.noWorldBuffTimers;
 function NWB:loadSODPhases()
@@ -107,6 +118,7 @@ function NWB:OnInitialize()
 	self.lastOnlineCache = NWB.data.myChars[UnitName("player")].lo;
 	--self:loadTbCache();
 	self:ticker();
+	self:minuteTicker();
 	self:yellTicker();
 	self:createBroker();
 	self:convertSettings();
@@ -896,7 +908,7 @@ function NWB:ticker()
 		NWB.data.myChars[UnitName("player")].dmfCooldown = NWB.data.myChars[UnitName("player")].dmfCooldown - 1;
 		if (lastDmfTick >= 1 and NWB.data.myChars[UnitName("player")].dmfCooldown <= 0 and NWB.data.myChars[UnitName("player")].dmfCooldown > -99990) then
 			if (NWB.isDmfUp or NWB.isAlwaysDMF) then
-				if (not NWB:isDMFBooned()) then
+				if (not NWB:isDMFBooned() and not NWB.noDmfCooldown) then
 					NWB:print(L["dmfBuffReset"]);
 				end
 			end
@@ -957,6 +969,14 @@ function NWB:ticker()
 	end
 	C_Timer.After(1, function()
 		NWB:ticker();
+	end)
+end
+
+--Trying some stuff with layer removal, seems like something recently changed and layers are being added/removed a lot more often.
+function NWB:minuteTicker()
+	NWB:removeOldLayersTicker();
+	C_Timer.After(60, function()
+		NWB:minuteTicker();
 	end)
 end
 
@@ -1765,7 +1785,11 @@ function NWB:trackNewBuff(spellName, type, npcID)
 		end
 	end
 	if (type == "dmf") then
-		NWB:print(string.format(L["dmfBuffDropped"], spellName));
+		if (NWB.noDmfCooldown) then
+			NWB:print(string.format(L["dmfBuffDroppedNoCooldown"], spellName));
+		else
+			NWB:print(string.format(L["dmfBuffDropped"], spellName));
+		end
 		NWB:addDmfCooldown();
 	end
 	--NWB:debug(GetServerTime(), "Tracking new buff", type, spellName);
@@ -1808,6 +1832,9 @@ local function getMaxDurationByType(type)
 end
 
 function NWB:getDmfCooldown()
+	if (NWB.noDmfCooldown) then
+		return 0;
+	end
 	if (NWB.data.myChars[UnitName("player")].dmfCooldown) then
 		return NWB.data.myChars[UnitName("player")].dmfCooldown, NWB.data.myChars[UnitName("player")].dmfCooldownNoMsgs;
 	else
@@ -1822,7 +1849,11 @@ function NWB:getDmfCooldown()
 end
 
 function NWB:addDmfCooldown()
-	NWB.data.myChars[UnitName("player")].dmfCooldown = 14400;
+	if (NWB.noDmfCooldown) then
+		NWB.data.myChars[UnitName("player")].dmfCooldown = 0;
+	else
+		NWB.data.myChars[UnitName("player")].dmfCooldown = 14400;
+	end
 end
 
 function NWB:resetDmfCooldown()
@@ -1836,7 +1867,11 @@ function NWB:dmfChronoCheck()
 			if (v.type == "dmf") then
 				NWB:addDmfCooldown();
 				if (NWB.isDmfUp or NWB.isAlwaysDMF) then
-					NWB:print(L["chronoboonReleased"]);
+					if (NWB.noDmfCooldown) then
+						NWB:print(L["chronoboonReleasedNoCooldown"]);
+					else 
+						NWB:print(L["chronoboonReleased"]);
+					end
 				end
 				return;
 			end
@@ -8289,8 +8324,38 @@ function NWB:createNewLayer(zoneID, GUID, isFromNpc)
 	end
 end
 
+--This is called more often than the original removeOldLayers() but does less stuff, only checks timeout of active layers.
+function NWB:removeOldLayersTicker()
+	--NWB:debug("Checking old layers to remove ticker.");
+	local expireTime = layerExpireTime;
+	local removed;
+	if (NWB.data.layers and next(NWB.data.layers)) then
+		for k, v in pairs(NWB.data.layers) do
+			if (v.lastSeenNPC and GetServerTime() - v.lastSeenNPC > expireTime) then
+				NWB.data.layers[k] = nil;
+				removed = true;
+				NWB:debug("Removed old layer ticker", k, v.lastSeenNPC, GetServerTime() - v.lastSeenNPC);
+			end
+		end
+	end
+	--Check disabled layer also.
+	if (NWB.data.layersDisabled and next(NWB.data.layersDisabled)) then
+		for k, v in pairs(NWB.data.layersDisabled) do
+			if (v.lastSeenNPC and GetServerTime() - v.lastSeenNPC > expireTime) then
+				NWB.data.layersDisabled[k] = nil;
+				removed = true;
+				NWB:debug("Removed old disabled layer ticker", k);
+			end
+		end
+	end
+	if (removed) then
+		NWB:refreshWorldbuffMarkers();
+	end
+end
+
 function NWB:removeOldLayers()
-	local expireTime = 21600;
+	--NWB:debug("Checking old layers to remove.");
+	local expireTime = layerExpireTime;
 	--local expireTime = 10800; --Seems to be a lot of world crashes during tbc launch, shorten old layer expire time for a few weeks.
 	local removed;
 	if (NWB.data.layers and next(NWB.data.layers)) then
@@ -8374,9 +8439,9 @@ function NWB:removeOldLayers()
 	end
 	if (NWB.data.layerMapBackups and NWB.data.layers and next(NWB.data.layers)) then
 		for k, v in pairs(NWB.data.layerMapBackups) do
-			--Remove layermap backups older than 6 days.
+			--Remove layermap backups older than 4 days.
 			--These backups are just there to be restored when a layer disappears because no timers for a long time (like overnight).
-			if (not v.created or (GetServerTime() - v.created) > 518400) then
+			if (not v.created or (GetServerTime() - v.created) > 345600) then
 				--NWB:debug("removed layermap", GetServerTime() - v.created)
 				NWB.data.layerMapBackups[k] = nil;
 			end
@@ -8773,6 +8838,18 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 					msg = msg .. texture .. L["wintergraspTimer"] .. ": " .. L["noCurrentTimer"] .. ".";
 				end
 				text = text .. msg .. "\n";
+			end
+			if (NWB.debug) then
+				if (v.lastSeenNPC) then
+					text = text .. "|cFF9CD6DELast seen:|r " .. NWB:getTimeString(GetServerTime() - v.lastSeenNPC, true) .. " ago.\n";
+					if (v.lastSeenNPC < v.created) then
+						text = text .. "|cFF9CD6DEActive for:|r Unknown.\n";
+					else
+						text = text .. "|cFF9CD6DEActive for:|r " .. NWB:getTimeString(v.lastSeenNPC - v.created, true) .. ".\n";
+					end
+				else
+					text = text .. "|cFF9CD6DEWarning:|r Missing last seen NPC time.\n";
+				end
 			end
 			if ((v.rendTimer + 3600) > (GetServerTime() - NWB.rendCooldownTime)
 					or (v.onyTimer + 3600) > (GetServerTime() - NWB.onyCooldownTime)
@@ -9599,6 +9676,8 @@ function NWB:setCurrentLayerText(unit)
 				--So when you join a group you can't get another valid zoneID from the same layer and then phase over after it bringing the wrong zoneID with you.
 				NWB.lastCurrentZoneID = tonumber(zoneID);
 				NWB.data.layers[k].lastSeenNPC = GetServerTime();
+				NWB.data.layers[k].GUID = GUID;
+				NWB.data.layers[k].npcID = tonumber(npcID);
 				NWB.lastKnownLayerMapID_Mapping = tonumber(zoneID);
 			end
 			return;
@@ -11043,8 +11122,11 @@ f:SetScript('OnEvent', function(self, event, ...)
 			--Orb of command GameObject-0-4671-0-29-179879-00005F974A
 			--if (npcID == "179879" and string.match(g1, "Place my hand on the orb")) then
 			if (npcID == "179879") then
-				SelectGossipOption(1);
-				return;
+				--There was an issue with shaman class quest and this auto gossip? Not sure if true but now we ignore if on the quest, and also check for single dialogue option.
+				if (#C_GossipInfo.GetOptions() == 1 and not C_QuestLog.IsOnQuest(85556) and not C_QuestLog.IsOnQuest(85557)) then
+					SelectGossipOption(1);
+					return;
+				end
 			end
 		end
 	end

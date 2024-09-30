@@ -38,6 +38,17 @@ local GetGuildRosterInfo = GetGuildRosterInfo;
 local GetRaidRosterInfo = GetRaidRosterInfo;
 local strmatch = strmatch;
 local connectedRealms = {};
+local layerExpireTime = 10800;
+do
+	local megaServers = {
+		["Crusader Strike"] = true,
+		["Living Flame"] = true,
+		["Wild Growth"] = true,
+	};
+	if (megaServers[NWB.realm]) then
+		layerExpireTime = 3600;
+	end
+end
 if (GetAutoCompleteRealms and next(GetAutoCompleteRealms())) then
 	NWB.isConnectedRealm = true;
 	for k, v in pairs(GetAutoCompleteRealms()) do
@@ -869,7 +880,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	if (not lastSendLayerMap[distribution]) then
 		lastSendLayerMap[distribution] = 0;
 	end
-	if (not NWB.isClassic) then
+	if (NWB.isSOD or not NWB.isClassic) then
 		noLogs = true;
 	end
 	--if (NWB.isTBC and firstLayeredYell and distribution == "YELL") then
@@ -1057,12 +1068,12 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 							data.layers[layer].layerMap = NWB.data.layers[layer].layerMap;
 						end
 						--Don't share created time for now.
-						data.layers[layer].layerMap.created = nil;
+						--data.layers[layer].layerMap.created = nil;
 					end
 				end
 			end
 			if (not foundTimer and NWB.data.layers[layer].lastSeenNPC
-					and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 7200) then
+					and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - layerExpireTime) then
 				--If no timer data to share then check when we last saw a valid NPC in city for this layer.
 				--Trying to keep layers valid after long periods overnight when no timers drop, but not persist too long after server restarts.
 				if (not data.layers) then
@@ -1077,7 +1088,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 					data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
 				end]]
 			end
-			if (foundTimer and NWB.data.layers[layer].lastSeenNPC and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 86400) then
+			if (foundTimer and NWB.data.layers[layer].lastSeenNPC and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - layerExpireTime) then
 				--=Attemtping to fix a bug that sometimes makes last weeks layer stick around if a zone in layermaps have the same zoneid.
 				if (not data.layers) then
 					data.layers = {};
@@ -1090,6 +1101,27 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 						and not NWB.krRealms[NWB.realm]) then
 					data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
 				end]]
+			end
+			--Testing on my realm, will be disabled again soon.
+			--[[if (NWB.realm == "Crusader Strike" and NWB.data.layers[layer].GUID and NWB.data.layers[layer].guid ~= "other"
+					and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - layerExpireTime) then
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer].GUID = NWB.data.layers[layer].GUID;
+			end]]
+			if (NWB.realm == "Crusader Strike" and NWB.data.layers[layer].npcID
+					and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - layerExpireTime) then
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer].npcID = NWB.data.layers[layer].npcID;
 			end
 		end
 		if (type ~= "wintergrasp") then
@@ -1144,7 +1176,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 				data.wintergraspFaction = NWB.data.wintergraspFaction;
 			end
 		end
-		if (NWB.isSOD) then
+		--[[if (NWB.isSOD) then
 			--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
 			--	data.ashenvale = NWB.data.ashenvale;
 			--	data.ashenvaleTime = NWB.data.ashenvaleTime;
@@ -1160,7 +1192,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 					data.stvData = stvData;
 				end
 			end
-		end
+		end]]
 		if (distribution == "GUILD" and not forceLayerMap) then
 			--Include settings with timer data for guild.
 			local settings = NWB:createSettings(distribution);
@@ -1448,7 +1480,7 @@ end
 
 --Add received data to our database.
 --This is super ugly for layered stuff, but it's meant to work with all diff versions at once, will be cleaned up later.
-local maxLayerTime = 43200;
+--local maxLayerTime = 43200;
 local lastHasNewData = 0;
 function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 	local deserializeResult, data = NWB.serializer:Deserialize(dataReceived);
@@ -1513,7 +1545,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 		end
 		for layer, vv in NWB:pairsByKeys(data.layers) do
 			--Temp fix, some of this can be removed soon.
-			if (type(vv) ~= "table" or not vv.lastSeenNPC or GetServerTime() - vv.lastSeenNPC > maxLayerTime or
+			if (type(vv) ~= "table" or not vv.lastSeenNPC or GetServerTime() - vv.lastSeenNPC > layerExpireTime or
 					(((not vv.rendTimer or vv.rendTimer == 0) and (not vv.onyTimer or vv.onyTimer == 0)
 					and (not vv.nefTimer or vv.nefTimer == 0) and (not vv.onyNpcDied or vv.onyNpcDied == 0)
 					and (not vv.nefNpcDied or vv.nefNpcDied == 0) and (not vv.lastSeenNPC or vv.lastSeenNPC == 0)
@@ -1571,6 +1603,12 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						end
 						if (NWB.data.layers[layer]) then
 							NWB:fixLayer(layer);
+							--if (vv.GUID and vv.GUID ~= "other") then
+							--	NWB.data.layers[layer].GUID = vv.GUID;
+							--end
+							if (vv.npcID and tonumber(vv.npcID)) then
+								NWB.data.layers[layer].npcID = vv.npcID;
+							end
 							if (vv.rendTimer and tonumber(vv.rendTimer) and
 									(not vv.rendYell or vv.rendTimer < (GetServerTime() - NWB.rendCooldownTime)
 									or vv.rendYell < (vv.rendTimer - 120) or vv.rendYell > (vv.rendTimer + 120))) then
@@ -1606,7 +1644,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 										or (not NWB.db.global.receiveGuildDataOnly)
 										or (NWB.db.global.receiveGuildDataOnly and distribution == "GUILD"))
 										and (NWB.isClassic or distribution == "GUILD" or time > 5)) then
-									if (NWB.validKeys[k] and tonumber(v)) then
+									if (NWB.validKeys[k] and tonumber(v) and k ~= "npcID") then
 										--If data is numeric (a timestamp) then check it's newer than our current timer.
 										if (v ~= nil) then
 											if (not NWB.data.layers[layer][k] or not tonumber(NWB.data.layers[layer][k])) then
@@ -1692,6 +1730,11 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 															else
 																NWB.data.layers[layer][k] = v;
 															end
+														elseif (k == "created") then
+															if (NWB.data.layers[layer] and not NWB.data.layers[layer].created) then
+																--Don't overwrite if we have this timestamp already, we want earliest created timestamp possible.
+																NWB.data.layers[layer][k] = v;
+															end
 														else
 															--Ignore data if we've set this buff type to 0 cooldown.
 															local type = strmatch(k, "(%a+)Timer$");
@@ -1703,11 +1746,11 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 																and not string.match(k, "hellfireRep")) then
 															hasNewData = true;
 														end
-														if (string.match(k, "flower")) then
+														--if (string.match(k, "flower")) then
 															--Flowers can help layers persist when no other timers drop.
 															--Update created timestamp for the removeOldLayers() func.
-															NWB.data.layers[layer].created = GetServerTime();
-														end
+														--	NWB.data.layers[layer].created = GetServerTime();
+														--end
 													else
 														--NWB:debug("Rejecting data ", layer, k, v);
 													end
@@ -1732,7 +1775,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 												end
 											end
 										end
-									elseif (v ~= nil and k ~= "layers") then
+									elseif (v ~= nil and k ~= "layers" and k ~= "npcID") then
 										if (not NWB.validKeys[k]) then
 											--NWB:debug(data)
 											NWB:debug("Invalid key received:", k, v);
@@ -2176,6 +2219,7 @@ local shortKeys = {
 	["ab"] = "ashenvaleTime",
 	["ac"] = "lastAshenvaleGuildMsg",
 	["ad"] = "stvData",
+	["ae"] = "npcID",
 	["f1"] = "flower1",
 	["f2"] = "flower2",
 	["f3"] = "flower3",

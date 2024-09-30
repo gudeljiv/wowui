@@ -10,10 +10,10 @@ ExtendedCharacterStats = {
 },
 ["statsWindowClosedOnOpen"] = false,
 ["addColorsToStatTexts"] = true,
-["headerFontSize"] = 11,
-["showQualityColors"] = false,
-["profileVersion"] = 19,
 ["statFontSize"] = 10,
+["showQualityColors"] = false,
+["headerFontSize"] = 11,
+["profileVersion"] = 19,
 },
 ["profile"] = {
 ["ranged"] = {
@@ -64,14 +64,8 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedHitBossLevel",
 ["textColor"] = "85bb5c",
 },
+["isSubGroup"] = true,
 ["display"] = true,
-["sameLevel"] = {
-["statColor"] = "558b2f",
-["display"] = true,
-["text"] = "Miss",
-["refName"] = "RangedHitSameLevel",
-["textColor"] = "85bb5c",
-},
 ["rating"] = {
 ["text"] = "Rating",
 ["statColor"] = "558b2f",
@@ -80,7 +74,13 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedHitRating",
 ["textColor"] = "85bb5c",
 },
-["isSubGroup"] = true,
+["sameLevel"] = {
+["statColor"] = "558b2f",
+["display"] = true,
+["text"] = "Miss",
+["refName"] = "RangedHitSameLevel",
+["textColor"] = "85bb5c",
+},
 ["text"] = "Hit",
 ["refName"] = "RangedHitHeader",
 ["bonus"] = {
@@ -184,13 +184,10 @@ ExtendedCharacterStats = {
 },
 },
 ["spell"] = {
-["hasteBonus"] = {
-["text"] = "Haste Bonus",
-["statColor"] = "ffd740",
+["penetration"] = {
 ["display"] = true,
-["isTbcOnly"] = true,
-["refName"] = "SpellHasteBonus",
-["textColor"] = "c8a600",
+["text"] = "Penetration",
+["refName"] = "SpellPenetration",
 },
 ["refName"] = "SpellHeader",
 ["hasteRating"] = {
@@ -201,10 +198,40 @@ ExtendedCharacterStats = {
 ["refName"] = "SpellHasteRating",
 ["textColor"] = "c8a600",
 },
-["penetration"] = {
+["hit"] = {
+["bossLevel"] = {
+["statColor"] = "558b2f",
 ["display"] = true,
-["text"] = "Penetration",
-["refName"] = "SpellPenetration",
+["text"] = "Miss (Lvl + 3)",
+["refName"] = "SpellHitBossLevel",
+["textColor"] = "85bb5c",
+},
+["isSubGroup"] = true,
+["display"] = true,
+["rating"] = {
+["text"] = "Rating",
+["statColor"] = "558b2f",
+["display"] = true,
+["isTbcOnly"] = true,
+["refName"] = "SpellHitRating",
+["textColor"] = "85bb5c",
+},
+["sameLevel"] = {
+["statColor"] = "558b2f",
+["display"] = true,
+["text"] = "Miss",
+["refName"] = "SpellHitSameLevel",
+["textColor"] = "85bb5c",
+},
+["text"] = "Hit",
+["refName"] = "SpellHitHeader",
+["bonus"] = {
+["statColor"] = "558b2f",
+["display"] = true,
+["text"] = "Bonus",
+["refName"] = "SpellHitBonus",
+["textColor"] = "85bb5c",
+},
 },
 ["display"] = true,
 ["text"] = "Spell",
@@ -215,40 +242,13 @@ ExtendedCharacterStats = {
 ["refName"] = "SpellCritChance",
 ["textColor"] = "ff6659",
 },
-["hit"] = {
-["bossLevel"] = {
-["statColor"] = "558b2f",
-["display"] = true,
-["text"] = "Miss (Lvl + 3)",
-["refName"] = "SpellHitBossLevel",
-["textColor"] = "85bb5c",
-},
-["display"] = true,
-["sameLevel"] = {
-["statColor"] = "558b2f",
-["display"] = true,
-["text"] = "Miss",
-["refName"] = "SpellHitSameLevel",
-["textColor"] = "85bb5c",
-},
-["rating"] = {
-["text"] = "Rating",
-["statColor"] = "558b2f",
+["hasteBonus"] = {
+["text"] = "Haste Bonus",
+["statColor"] = "ffd740",
 ["display"] = true,
 ["isTbcOnly"] = true,
-["refName"] = "SpellHitRating",
-["textColor"] = "85bb5c",
-},
-["isSubGroup"] = true,
-["text"] = "Hit",
-["refName"] = "SpellHitHeader",
-["bonus"] = {
-["statColor"] = "558b2f",
-["display"] = true,
-["text"] = "Bonus",
-["refName"] = "SpellHitBonus",
-["textColor"] = "85bb5c",
-},
+["refName"] = "SpellHasteBonus",
+["textColor"] = "c8a600",
 },
 },
 ["spellBonus"] = {
@@ -417,7 +417,7 @@ ExtendedCharacterStats = {
 ["refName"] = "GlanceHitChanceBossLevel",
 ["textColor"] = "A8A8A8",
 },
-["display"] = true,
+["isSubGroup"] = true,
 ["damageSameLevel"] = {
 ["statColor"] = "FFFFFF",
 ["display"] = true,
@@ -432,9 +432,6 @@ ExtendedCharacterStats = {
 ["refName"] = "GlanceDamageBossLevel",
 ["textColor"] = "A8A8A8",
 },
-["isSubGroup"] = true,
-["text"] = "Glancing Blow",
-["refName"] = "GlanceChanceHeader",
 ["sameLevel"] = {
 ["statColor"] = "FFFFFF",
 ["display"] = true,
@@ -442,6 +439,9 @@ ExtendedCharacterStats = {
 ["refName"] = "GlanceHitChanceSameLevel",
 ["textColor"] = "A8A8A8",
 },
+["text"] = "Glancing Blow",
+["refName"] = "GlanceChanceHeader",
+["display"] = true,
 },
 ["attackSpeed"] = {
 ["offHand"] = {
@@ -451,10 +451,7 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeAttackSpeedOffHand",
 ["textColor"] = "009688",
 },
-["display"] = true,
 ["isSubGroup"] = true,
-["text"] = "Attack Speed",
-["refName"] = "MeleeAttackSpeedHeader",
 ["mainHand"] = {
 ["statColor"] = "00766c",
 ["display"] = true,
@@ -462,6 +459,9 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeAttackSpeedMainHand",
 ["textColor"] = "009688",
 },
+["text"] = "Attack Speed",
+["refName"] = "MeleeAttackSpeedHeader",
+["display"] = true,
 },
 ["hasteBonus"] = {
 ["text"] = "Haste Bonus",
@@ -516,14 +516,8 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeHitBossLevel",
 ["textColor"] = "85bb5c",
 },
+["isSubGroup"] = true,
 ["display"] = true,
-["sameLevel"] = {
-["statColor"] = "558b2f",
-["display"] = true,
-["text"] = "Miss",
-["refName"] = "MeleeHitSameLevel",
-["textColor"] = "85bb5c",
-},
 ["rating"] = {
 ["text"] = "Rating",
 ["statColor"] = "558b2f",
@@ -532,7 +526,13 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeHitRating",
 ["textColor"] = "85bb5c",
 },
-["isSubGroup"] = true,
+["sameLevel"] = {
+["statColor"] = "558b2f",
+["display"] = true,
+["text"] = "Miss",
+["refName"] = "MeleeHitSameLevel",
+["textColor"] = "85bb5c",
+},
 ["text"] = "Hit",
 ["refName"] = "MeleeHitHeader",
 ["bonus"] = {
