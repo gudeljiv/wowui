@@ -9,42 +9,56 @@ RatingBusterDB = {
 },
 },
 ["profileKeys"] = {
-["Vermin - Zandalar Tribe"] = "WARRIOR",
-["Moolatz - Celebras"] = "Druid",
-["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Mxzq - Golemagg"] = "HUNTER",
+["Dopeclaw - Living Flame"] = "Druid",
 ["Vbank - Celebras"] = "WARRIOR",
-["Dopetrap - Lone Wolf"] = "HUNTER",
+["Dopesick - Stitches"] = "WARRIOR",
 ["Dopenac - Lone Wolf"] = "PRIEST",
-["Dopede - Stitches"] = "SHAMAN",
-["Vermins - Stitches"] = "WARRIOR",
-["Mq - Celebras"] = "HUNTER",
+["Dopetrap - Living Flame"] = "Hunter",
 ["Dopecure - Stitches"] = "PRIEST",
 ["Dopemend - Lone Wolf"] = "PRIEST",
-["Doperage - Lone Wolf"] = "WARRIOR",
-["Battitude - Zandalar Tribe"] = "ROGUE",
-["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Dopesnare - Stitches"] = "HUNTER",
-["Vermin - Celebras"] = "WARRIOR",
-["Turbonac - Celebras"] = "Warlock",
 ["Dopedot - Lone Wolf"] = "WARLOCK",
-["Battlenac - Zandalar Tribe"] = "PRIEST",
-["Mxzq - Golemagg"] = "HUNTER",
 ["Dopecoil - Lone Wolf"] = "SHAMAN",
-["Dopesnare - Lone Wolf"] = "HUNTER",
 ["Lonac - Stitches"] = "WARRIOR",
-["Dopesick - Stitches"] = "WARRIOR",
-["Dopestab - Lone Wolf"] = "ROGUE",
-["Dopeah - Stitches"] = "SHAMAN",
-["Dopeclaw - Stitches"] = "DRUID",
+["Dopestab - Living Flame"] = "Rogue",
 ["Dopebolt - Lone Wolf"] = "MAGE",
 ["Battlenac - Celebras"] = "PRIEST",
+["Moolatz - Celebras"] = "Druid",
+["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Dopesnare - Lone Wolf"] = "HUNTER",
+["Dopesnare - Living Flame"] = "Hunter",
+["Mq - Celebras"] = "HUNTER",
+["Vermins - Stitches"] = "WARRIOR",
+["Battitude - Zandalar Tribe"] = "ROGUE",
+["Doperage - Living Flame"] = "Warrior",
+["Vermin - Celebras"] = "WARRIOR",
+["Dopetrap - Lone Wolf"] = "HUNTER",
+["Turbonac - Celebras"] = "Warlock",
+["Battlenac - Zandalar Tribe"] = "PRIEST",
+["Dopeah - Stitches"] = "SHAMAN",
+["Dopebolt - Living Flame"] = "Mage",
+["Dopede - Stitches"] = "SHAMAN",
+["Dopeclaw - Lone Wolf"] = "DRUID",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Dopestab - Lone Wolf"] = "ROGUE",
+["Dopemend - Living Flame"] = "Priest",
+["Dopeclaw - Stitches"] = "DRUID",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
 },
 ["profiles"] = {
 ["HUNTER"] = {
 },
 ["WARRIOR"] = {
 },
+["Shaman"] = {
+},
 ["ROGUE"] = {
+},
+["Rogue"] = {
+},
+["Mage"] = {
 },
 ["PRIEST"] = {
 },
@@ -52,9 +66,13 @@ RatingBusterDB = {
 },
 ["WARLOCK"] = {
 },
-["DRUID"] = {
+["Warrior"] = {
 },
 ["SHAMAN"] = {
+},
+["DRUID"] = {
+},
+["Hunter"] = {
 },
 ["Druid"] = {
 },

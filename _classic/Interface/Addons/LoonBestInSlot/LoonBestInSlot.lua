@@ -13,7 +13,7 @@ LBIS.SpellCache = {};
 LBIS.Debugging = false;
 LBIS.DebuggingItem = -1;
 LBIS.AllItemsCached = false;
-LBIS.CurrentPhase = 4;
+LBIS.CurrentPhase = 5;
 
 LBIS.EventFrame = CreateFrame("FRAME",addonName.."Events")
 
@@ -74,10 +74,6 @@ function LBIS:AddItem(bisEntry, id, slot, bis)
 	
 	if not LBIS.ItemsByIdAndSpec[itemId] then
 		LBIS.ItemsByIdAndSpec[itemId] = {}
-	end
-	
-	if zone == nil then
-		zone = "";
 	end
 
 	if bisEntry.Phase == "0" then

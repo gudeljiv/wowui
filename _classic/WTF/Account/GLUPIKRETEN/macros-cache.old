@@ -22,11 +22,11 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000035 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3927
+/cast item:4602
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1710
+/cast item:0
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -60,11 +60,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:12037
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Witherbark Venomblood
-/targetexact Witherbark Hideskinner
-/targetexact Witherbark Zealot
-/targetexact Witherbark Scalper
-/targetexact Witherbark Sadist
+/targetexact Witch Doctor Uzer'i
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"

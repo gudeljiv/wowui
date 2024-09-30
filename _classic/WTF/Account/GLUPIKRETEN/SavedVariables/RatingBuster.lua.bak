@@ -9,35 +9,43 @@ RatingBusterDB = {
 },
 },
 ["profileKeys"] = {
-["Vermin - Zandalar Tribe"] = "WARRIOR",
-["Moolatz - Celebras"] = "Druid",
-["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Mxzq - Golemagg"] = "HUNTER",
+["Dopeclaw - Living Flame"] = "Druid",
 ["Vbank - Celebras"] = "WARRIOR",
-["Dopetrap - Lone Wolf"] = "HUNTER",
+["Dopesick - Stitches"] = "WARRIOR",
 ["Dopenac - Lone Wolf"] = "PRIEST",
-["Dopede - Stitches"] = "SHAMAN",
-["Vermins - Stitches"] = "WARRIOR",
-["Mq - Celebras"] = "HUNTER",
+["Dopetrap - Living Flame"] = "Hunter",
 ["Dopecure - Stitches"] = "PRIEST",
 ["Dopemend - Lone Wolf"] = "PRIEST",
-["Doperage - Lone Wolf"] = "WARRIOR",
-["Battitude - Zandalar Tribe"] = "ROGUE",
-["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Dopesnare - Stitches"] = "HUNTER",
 ["Dopedot - Lone Wolf"] = "WARLOCK",
-["Vermin - Celebras"] = "WARRIOR",
+["Dopecoil - Lone Wolf"] = "SHAMAN",
+["Lonac - Stitches"] = "WARRIOR",
+["Dopestab - Living Flame"] = "Rogue",
+["Dopebolt - Lone Wolf"] = "MAGE",
+["Battlenac - Celebras"] = "PRIEST",
+["Moolatz - Celebras"] = "Druid",
+["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Dopesnare - Lone Wolf"] = "HUNTER",
+["Dopesnare - Living Flame"] = "Hunter",
+["Mq - Celebras"] = "HUNTER",
+["Vermins - Stitches"] = "WARRIOR",
+["Battitude - Zandalar Tribe"] = "ROGUE",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Dopetrap - Lone Wolf"] = "HUNTER",
 ["Turbonac - Celebras"] = "Warlock",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
-["Dopesick - Stitches"] = "WARRIOR",
-["Dopecoil - Lone Wolf"] = "SHAMAN",
-["Dopesnare - Lone Wolf"] = "HUNTER",
-["Lonac - Stitches"] = "WARRIOR",
-["Mxzq - Golemagg"] = "HUNTER",
+["Dopede - Stitches"] = "SHAMAN",
+["Dopebolt - Living Flame"] = "Mage",
+["Dopemend - Living Flame"] = "Priest",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Dopestab - Lone Wolf"] = "ROGUE",
 ["Dopeah - Stitches"] = "SHAMAN",
 ["Dopeclaw - Stitches"] = "DRUID",
-["Dopebolt - Lone Wolf"] = "MAGE",
-["Battlenac - Celebras"] = "PRIEST",
+["Vermin - Celebras"] = "WARRIOR",
+["Doperage - Living Flame"] = "Warrior",
 },
 ["profiles"] = {
 ["HUNTER"] = {
@@ -46,17 +54,25 @@ RatingBusterDB = {
 },
 ["ROGUE"] = {
 },
+["Rogue"] = {
+},
+["Mage"] = {
+},
 ["PRIEST"] = {
 },
 ["Warlock"] = {
 },
 ["WARLOCK"] = {
 },
-["DRUID"] = {
-},
 ["Druid"] = {
 },
+["DRUID"] = {
+},
+["Hunter"] = {
+},
 ["SHAMAN"] = {
+},
+["Warrior"] = {
 },
 },
 }

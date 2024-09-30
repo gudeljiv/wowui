@@ -131,6 +131,7 @@ xVerminSavedData = {
 "Lightning Shield",
 "Chain Lightning",
 "Serpent Sting",
+"Earth Shock",
 },
 ["Splinterbone Centurion"] = {
 "Intimidating Shout",
@@ -357,8 +358,8 @@ xVerminSavedData = {
 "Living Bomb",
 "Molten Blast",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
@@ -367,8 +368,8 @@ xVerminSavedData = {
 ["Sandfury Shadowcaster"] = {
 "Earthbind",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Ironspine"] = {
 "Rend",
@@ -392,11 +393,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",

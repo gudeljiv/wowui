@@ -8,8 +8,8 @@ local addonName, addon = ...;
 local NWB = addon.a;
 local _, _, _, tocVersion = GetBuildInfo();
 NWB.LSM = LibStub("LibSharedMedia-3.0");
-NWB.dragonLib = LibStub("HereBeDragons-2.0");
-NWB.dragonLibPins = LibStub("HereBeDragons-Pins-2.0");
+NWB.dragonLib = LibStub("HereBeDragons-2.0-NovaTemp");
+NWB.dragonLibPins = LibStub("HereBeDragons-Pins-2.0-NovaTemp");
 NWB.candyBar = LibStub("LibCandyBar-3.0");
 NWB.LibRealmInfo = LibStub("LibRealmInfo");
 NWB.commPrefix = "NWB";
@@ -2564,7 +2564,9 @@ f:SetScript("OnEvent", function(self, event, ...)
 		--if (IsInGuild()) then
 			--C_ChatInfo.SendAddonMessage(NWB.commPrefix, NWB.serializer:Serialize("ping " .. version), "GUILD");
 		--end
-		NWB:requestData("GUILD", nil, "ALERT");
+		C_Timer.After(0.01, function()
+			NWB:requestData("GUILD", nil, "ALERT");
+		end)
 		self:RegisterEvent("CHAT_MSG_GUILD");
 		C_Timer.After(30, function()
 			NWB:syncBuffsWithCurrentDuration();
@@ -12264,9 +12266,16 @@ if (NWB.isClassic) then
 			NWB.dmfAutoResButton:SetHitRectInsets(0, 0, -10, 7);
 		end
 		if (not NWB.dmfAutoResSlider) then
-			NWB.dmfAutoResSlider = CreateFrame("Slider", "NWBDMFAutoResSlider", NWBDmfFrame, "OptionsSliderTemplate");
+			NWB.dmfAutoResSlider = CreateFrame("Slider", "NWBDMFAutoResSlider", NWBDmfFrame, "UISliderTemplate");
+			--Slider template currently bugged, need to create some elements ourself.
+			NWB.dmfAutoResSlider.High = NWB.dmfAutoResSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+			NWB.dmfAutoResSlider.High:SetPoint("TOPRIGHT", NWB.dmfAutoResSlider, "BOTTOMRIGHT");
+			NWB.dmfAutoResSlider.Low = NWB.dmfAutoResSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+			NWB.dmfAutoResSlider.Low:SetPoint("TOPLEFT", NWB.dmfAutoResSlider, "BOTTOMLEFT");
+			NWB.dmfAutoResSlider.Text = NWB.dmfAutoResSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlight");
+			NWB.dmfAutoResSlider.Text:SetPoint("BOTTOM", NWB.dmfAutoResSlider, "TOP");
 			NWB.dmfAutoResSlider:SetPoint("BOTTOM", 0, 50);
-			NWBDMFAutoResSliderText:SetText("Auto Resurrect Seconds Left");
+			NWBDMFAutoResSlider.Text:SetText("Auto Resurrect Seconds Left");
 			NWB.dmfAutoResSlider.tooltipText = "How many seconds left on logout/stuck will we auto resurrect at?";
 			--NWB.dmfAutoResSlider:SetFrameStrata("HIGH");
 			--NWB.dmfAutoResSlider:SetFrameLevel(5);
@@ -12277,8 +12286,8 @@ if (NWB.isClassic) then
 			NWB.dmfAutoResSlider:SetValueStep(0.5);
 			NWB.dmfAutoResSlider:SetStepsPerPage(0.5);
 			NWB.dmfAutoResSlider:SetValue(NWB.db.global.dmfAutoResTime);
-			NWBDMFAutoResSliderLow:SetText("1");
-			NWBDMFAutoResSliderHigh:SetText("5");
+			NWBDMFAutoResSlider.Low:SetText("1");
+			NWBDMFAutoResSlider.High:SetText("5");
 			NWBDMFAutoResSlider:HookScript("OnValueChanged", function(self, value)
 				NWB.db.global.dmfAutoResTime = value;
 				NWB.dmfAutoResSlider.editBox:SetText(value);

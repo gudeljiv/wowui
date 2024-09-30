@@ -255,9 +255,16 @@ function NWB:createBuffsListExtraButtons()
 		end)
 	end
 	if (not NWB.charsMinLevelSlider) then
-		NWB.charsMinLevelSlider = CreateFrame("Slider", "NWBCharsMinLevelSlider", NWBbuffListFrame.EditBox, "OptionsSliderTemplate");
+		NWB.charsMinLevelSlider = CreateFrame("Slider", "NWBCharsMinLevelSlider", NWBbuffListFrame.EditBox, "UISliderTemplate");
+		--Slider template currently bugged, need to create some elements ourself.
+		NWB.charsMinLevelSlider.High = NWB.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NWB.charsMinLevelSlider.High:SetPoint("TOPRIGHT", NWB.charsMinLevelSlider, "BOTTOMRIGHT");
+		NWB.charsMinLevelSlider.Low = NWB.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NWB.charsMinLevelSlider.Low:SetPoint("TOPLEFT", NWB.charsMinLevelSlider, "BOTTOMLEFT");
+		NWB.charsMinLevelSlider.Text = NWB.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlight");
+		NWB.charsMinLevelSlider.Text:SetPoint("BOTTOM", NWB.charsMinLevelSlider, "TOP");
 		NWB.charsMinLevelSlider:SetPoint("TOPRIGHT", 8, -47);
-		NWBCharsMinLevelSliderText:SetText(L["Min Level"]);
+		NWBCharsMinLevelSlider.Text:SetText(L["Min Level"]);
 		--NWB.charsMinLevelSlider.tooltipText = "Minimum level alts to show?";
 		--NWB.charsMinLevelSlider:SetFrameStrata("HIGH");
 		NWB.charsMinLevelSlider:SetFrameLevel(5);
@@ -268,8 +275,8 @@ function NWB:createBuffsListExtraButtons()
 	    NWB.charsMinLevelSlider:SetValueStep(1);
 	    NWB.charsMinLevelSlider:SetStepsPerPage(1);
 		NWB.charsMinLevelSlider:SetValue(NWB.db.global.buffsFrameMinLevel);
-		NWBCharsMinLevelSliderLow:SetText("1");
-		NWBCharsMinLevelSliderHigh:SetText(NWB.maxLevel > 59 and NWB.maxLevel or 60);
+		NWBCharsMinLevelSlider.Low:SetText("1");
+		NWBCharsMinLevelSlider.High:SetText(NWB.maxLevel > 59 and NWB.maxLevel or 60);
 		NWBCharsMinLevelSlider:HookScript("OnValueChanged", function(self, value)
 			NWB.db.global.buffsFrameMinLevel = value;
 			NWB.charsMinLevelSlider.editBox:SetText(value);
