@@ -177,7 +177,7 @@ else
   defaultHiddenFrames["MultiBar6"] = true
   defaultHiddenFrames["MultiBar7"] = true
   defaultHiddenFrames["MultiBar8"] = true
-  defaultHiddenFrames["ExtraActionBarFrame"] = true
+  defaultHiddenFrames["ExtraAbilityContainer"] = true
   defaultHiddenFrames["MainMenuBarVehicleLeaveButton"] = true
   defaultHiddenFrames["MicroButtonAndBagsBar"] = true
   defaultHiddenFrames["MultiCastActionBarFrame"] = true
@@ -622,6 +622,8 @@ end
 local function FadeOutFrame(frame, duration, targetIgnoreParentAlpha, targetAlpha)
 
   if not frame or targetIgnoreParentAlpha == nil then return end
+  
+  
 
   -- If another addon is already handling this, we don't touch it.
   if frame.ludius_alreadyOnIt ~= nil and frame.ludius_alreadyOnIt ~= folderName then
