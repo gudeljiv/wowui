@@ -196,6 +196,9 @@ function CataItemFixes.Load()
         [46696] = { -- Panther Figurine
             [itemKeys.class] = itemClasses.QUEST,
         },
+        [46698] = { -- Moon-kissed Clay
+            [itemKeys.npcDrops] = {},
+        },
         [46702] = { -- Ancient Device Fragment
             [itemKeys.class] = itemClasses.QUEST,
         },
@@ -470,6 +473,9 @@ function CataItemFixes.Load()
         },
         [55280] = { -- Deepmoss Venom Sac
             [itemKeys.npcDrops] = {41185,4005,4006,4007},
+        },
+        [55807] = { -- Alliance's Proposal
+            [itemKeys.npcDrops] = {41196},
         },
         [55808] = { -- Horde's Proposal
             [itemKeys.npcDrops] = {41199},
