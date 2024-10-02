@@ -132,7 +132,6 @@ BAGANATOR_CONFIG = {
 ["hide_special_container"] = {
 ["keyring"] = true,
 },
-["bag_empty_space_at_top"] = true,
 ["character_select_position"] = {
 "RIGHT",
 "Baganator_CategoryViewBackpackViewFrame",
@@ -140,47 +139,23 @@ BAGANATOR_CONFIG = {
 0,
 0,
 },
+["enable_equipment_set_info_2"] = true,
 ["show_guild_banks_in_tooltips"] = true,
 ["category_horizontal_spacing_2"] = 0.4,
-["tooltips_faction_only"] = false,
 ["category_default_import"] = 2,
+["tooltips_faction_only"] = false,
 ["debug_categories"] = false,
 ["show_recents_tabs_main_view"] = true,
 ["debug_timers"] = false,
 ["show_character_race_icons"] = true,
-["show_inventory_tooltips"] = true,
-["enable_bank_view"] = true,
-["sort_ignore_slots_at_end"] = true,
-["category_migration"] = 4,
 ["icon_text_quality_colors"] = false,
-["category_modifications"] = {
-["1"] = {
-["showGroupPrefix"] = true,
-["priority"] = 0,
-["addedItems"] = {
-["i:7912"] = true,
-["i:3575"] = true,
-["i:3860"] = true,
-["i:2776"] = true,
-["i:2771"] = true,
-["i:2775"] = true,
-},
-},
-["default_questitem"] = {
-["addedItems"] = {
-["i:209874"] = true,
-},
-},
-},
 ["warband_bank_view_width"] = 14,
 ["guild_view_position"] = {
 "LEFT",
 20,
 0,
 },
-["add_to_category_buttons_2"] = "drag",
-["view_type"] = "unset",
-["show_tooltips_on_shift"] = false,
+["category_migration"] = 4,
 ["currencies_tracked"] = {
 ["Jutarnjedrvo-LivingFlame"] = {
 },
@@ -205,12 +180,22 @@ BAGANATOR_CONFIG = {
 ["Dopesnare-LivingFlame"] = {
 },
 },
+["guild_bank_sort_method"] = "unset",
+["enable_bank_view"] = true,
+["category_section_toggled"] = {
+["Equipment"] = false,
+["Crafting"] = false,
+},
+["add_to_category_buttons_2"] = "drag",
+["view_type"] = "unset",
+["show_inventory_tooltips"] = true,
+["show_tooltips_on_shift"] = false,
 ["show_reagents"] = true,
 ["icon_text_font_size"] = 10,
 ["tooltips_character_limit"] = 4,
-["bag_view_width"] = 12,
-["view_alpha"] = 0.9,
 ["show_guild_bank_button"] = true,
+["view_alpha"] = 0.9,
+["setting_anchors"] = false,
 ["debug_keywords"] = false,
 ["sort_ignore_slots_count_2"] = {
 ["Jutarnjedrvo-LoneWolf"] = 0,
@@ -219,7 +204,7 @@ BAGANATOR_CONFIG = {
 ["Doperage-LoneWolf"] = 0,
 ["Dopestab-LoneWolf"] = 0,
 },
-["setting_anchors"] = false,
+["bag_view_width"] = 12,
 ["recent_characters_main_view"] = {
 "Dopetrap-LivingFlame",
 "Dopesnare-LivingFlame",
@@ -241,11 +226,26 @@ BAGANATOR_CONFIG = {
 },
 ["enable_guild_view"] = true,
 ["auto_sort_on_open"] = true,
-["category_section_toggled"] = {
-["Equipment"] = false,
-["Crafting"] = false,
+["sort_ignore_slots_at_end"] = true,
+["category_modifications"] = {
+["1"] = {
+["showGroupPrefix"] = true,
+["priority"] = 0,
+["addedItems"] = {
+["i:7912"] = true,
+["i:3575"] = true,
+["i:3860"] = true,
+["i:2776"] = true,
+["i:2771"] = true,
+["i:2775"] = true,
 },
-["guild_bank_sort_method"] = "unset",
+},
+["default_questitem"] = {
+["addedItems"] = {
+["i:209874"] = true,
+},
+},
+},
 ["recent_timeout"] = 15,
 ["icon_grey_junk"] = true,
 ["guild_view_dialog_position"] = {
@@ -261,7 +261,7 @@ BAGANATOR_CONFIG = {
 995.87255859375,
 374.6029663085938,
 },
-["enable_equipment_set_info_2"] = true,
+["bag_empty_space_at_top"] = true,
 ["show_transfer_button"] = true,
 ["inverted_bag_shortcuts"] = false,
 ["category_group_empty_slots"] = true,

@@ -31,9 +31,9 @@ RatingBusterDB = {
 ["Mq - Celebras"] = "HUNTER",
 ["Vermins - Stitches"] = "WARRIOR",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
-["Vermin - Celebras"] = "WARRIOR",
 ["Dopetrap - Lone Wolf"] = "HUNTER",
 ["Doperage - Living Flame"] = "Warrior",
+["Vermin - Celebras"] = "WARRIOR",
 ["Turbonac - Celebras"] = "Warlock",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopeah - Stitches"] = "SHAMAN",
@@ -70,9 +70,9 @@ RatingBusterDB = {
 },
 ["SHAMAN"] = {
 },
-["Hunter"] = {
-},
 ["DRUID"] = {
+},
+["Hunter"] = {
 },
 ["Druid"] = {
 },

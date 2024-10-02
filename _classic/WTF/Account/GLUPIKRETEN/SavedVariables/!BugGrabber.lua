@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 12854,
+["session"] = 12856,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -4636,8 +4636,8 @@ BugGrabberDB = {
 {
 ["message"] = "Interface/AddOns/Blizzard_FrameXML/DeprecatedTemplates.xml:37 Couldn't find inherited node: UISliderTemplateWithLabels",
 ["time"] = "2024/09/25 19:17:19",
-["session"] = 12854,
-["counter"] = 291,
+["session"] = 12856,
+["counter"] = 297,
 },
 },
 }

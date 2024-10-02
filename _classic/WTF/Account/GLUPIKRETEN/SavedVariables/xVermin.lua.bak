@@ -343,16 +343,6 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Jade Sludge"] = {
-"Concussive Shot",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
 ["Klaxxi"] = {
 "Big Bronze Bomb",
 "Flanking Strike",
@@ -363,6 +353,28 @@ xVerminSavedData = {
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+},
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Ironspine"] = {
 "Rend",
@@ -386,11 +398,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -419,20 +431,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",

@@ -369,8 +369,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                 if not found_class:
                     time.sleep(0.5)
                     pyautogui.hotkey(pause and "end" or "home")
-                    if hex != "#000000":
-                        print(found_class, wow_class, hex)
+                    # if hex != "#000000":
+                    # print(found_class, wow_class, hex)
                     continue
 
                 # loading skills for a class if changed
