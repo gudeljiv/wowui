@@ -2,7 +2,7 @@ Bagnon_ItemLevel_Vermin: disabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled
 !Beautycase: enabled
 !Colorz: enabled
 ACP: enabled

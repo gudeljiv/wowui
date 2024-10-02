@@ -143,4 +143,4 @@ ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
 Baganator: enabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled

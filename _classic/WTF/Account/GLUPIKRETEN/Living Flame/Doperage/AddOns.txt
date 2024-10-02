@@ -158,4 +158,4 @@ ElvUI_Libraries: disabled
 ImprovedRuneEngravingUI: enabled
 RuneBar: enabled
 AdiBags_Item_Sets: disabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled

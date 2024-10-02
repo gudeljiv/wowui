@@ -162,4 +162,4 @@ LibClassicDurations: enabled
 Clique: enabled
 LibClassicCasterino: enabled
 AdiBags_Item_Sets: disabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled

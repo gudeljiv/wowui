@@ -11,12 +11,9 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 },
 ["safeMode"] = false,
 ["excludeWarbandEquipment"] = false,
-["includeBelowItemLevel"] = {
-["enabled"] = false,
-["value"] = 0,
-},
+["autoJunkFrame"] = false,
 ["includeArtifactRelics"] = false,
-["includeUnsuitableEquipment"] = false,
+["excludeUnboundEquipment"] = false,
 ["itemQualityCheckBoxes"] = {
 ["includeUnsuitableEquipment"] = {
 ["poor"] = true,
@@ -54,6 +51,9 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["rare"] = true,
 },
 },
-["excludeUnboundEquipment"] = false,
-["autoJunkFrame"] = false,
+["includeUnsuitableEquipment"] = false,
+["includeBelowItemLevel"] = {
+["enabled"] = false,
+["value"] = 0,
+},
 }

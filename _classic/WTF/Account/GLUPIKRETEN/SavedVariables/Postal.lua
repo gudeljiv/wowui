@@ -1,44 +1,5 @@
 
 Postal3DB = {
-["profileKeys"] = {
-["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-["Dopeclaw - Living Flame"] = "Dopeclaw - Living Flame",
-["Vbank - Celebras"] = "Vbank - Celebras",
-["Dopesick - Stitches"] = "Dopesick - Stitches",
-["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
-["Dopetrap - Living Flame"] = "Dopetrap - Living Flame",
-["Dopecure - Stitches"] = "Dopecure - Stitches",
-["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
-["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
-["Lonac - Stitches"] = "Lonac - Stitches",
-["Dopestab - Living Flame"] = "Dopestab - Living Flame",
-["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
-["Moolatz - Celebras"] = "Moolatz - Celebras",
-["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Dopesnare - Living Flame"] = "Dopesnare - Living Flame",
-["Mq - Celebras"] = "Mq - Celebras",
-["Vermins - Stitches"] = "Vermins - Stitches",
-["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
-["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
-["Dopede - Stitches"] = "Dopede - Stitches",
-["Vermin - Celebras"] = "Vermin - Celebras",
-["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
-["Dopeah - Stitches"] = "Dopeah - Stitches",
-["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
-["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
-["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Dopemend - Living Flame"] = "Dopemend - Living Flame",
-["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
-["Jutarnjedrvo - Living Flame"] = "Jutarnjedrvo - Living Flame",
-},
 ["global"] = {
 ["BlackBook"] = {
 ["alts"] = {
@@ -81,6 +42,45 @@ Postal3DB = {
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
 },
+},
+["profileKeys"] = {
+["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+["Dopeclaw - Living Flame"] = "Dopeclaw - Living Flame",
+["Vbank - Celebras"] = "Vbank - Celebras",
+["Dopesick - Stitches"] = "Dopesick - Stitches",
+["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
+["Dopetrap - Living Flame"] = "Dopetrap - Living Flame",
+["Dopecure - Stitches"] = "Dopecure - Stitches",
+["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+["Lonac - Stitches"] = "Lonac - Stitches",
+["Dopestab - Living Flame"] = "Dopestab - Living Flame",
+["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Moolatz - Celebras"] = "Moolatz - Celebras",
+["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+["Dopesnare - Living Flame"] = "Dopesnare - Living Flame",
+["Mq - Celebras"] = "Mq - Celebras",
+["Vermins - Stitches"] = "Vermins - Stitches",
+["Battitude - Zandalar Tribe"] = "Battitude - Zandalar Tribe",
+["Jutarnjedrvo - Living Flame"] = "Jutarnjedrvo - Living Flame",
+["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+["Vermin - Celebras"] = "Vermin - Celebras",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
+["Dopemend - Living Flame"] = "Dopemend - Living Flame",
+["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
+["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+["Dopeah - Stitches"] = "Dopeah - Stitches",
+["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+["Dopede - Stitches"] = "Dopede - Stitches",
+["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 },
 ["profiles"] = {
 ["Mxzq - Golemagg"] = {
@@ -197,26 +197,14 @@ Postal3DB = {
 },
 ["Battitude - Zandalar Tribe"] = {
 },
-["Dopesnare - Lone Wolf"] = {
+["Jutarnjedrvo - Living Flame"] = {
+},
+["Dopeclaw - Lone Wolf"] = {
 ["BlackBook"] = {
 ["recent"] = {
 "Dopemend|Lone Wolf|Horde",
-"Dopestab|Lone Wolf|Horde",
-"Sulfuraddict|Lone Wolf|Horde",
 "Dopedot|Lone Wolf|Horde",
-},
-["contacts"] = {
-"Dopemend",
-},
-},
-},
-["Turbonac - Celebras"] = {
-},
-["Dopede - Stitches"] = {
-["BlackBook"] = {
-["recent"] = {
-"Dopesnare|Stitches|Horde",
-"Dopesick|Stitches|Horde",
+"Tooblock|Lone Wolf|Horde",
 },
 },
 },
@@ -229,23 +217,19 @@ Postal3DB = {
 },
 },
 },
+["Turbonac - Celebras"] = {
+},
 ["Battlenac - Zandalar Tribe"] = {
 },
-["Dopeah - Stitches"] = {
-["BlackBook"] = {
-["recent"] = {
-"Dopesnare|Stitches|Horde",
-"Dopesick|Stitches|Horde",
-},
-},
+["Dopemend - Living Flame"] = {
 },
 ["Dopebolt - Living Flame"] = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
-["Vermin - Zandalar Tribe"] = {
-},
 ["Doperage - Living Flame"] = {
+},
+["Vermin - Zandalar Tribe"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 ["BlackBook"] = {
@@ -255,7 +239,13 @@ Postal3DB = {
 },
 },
 },
-["Dopemend - Living Flame"] = {
+["Dopeah - Stitches"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopesnare|Stitches|Horde",
+"Dopesick|Stitches|Horde",
+},
+},
 },
 ["Dopeclaw - Stitches"] = {
 ["BlackBook"] = {
@@ -264,16 +254,26 @@ Postal3DB = {
 },
 },
 },
-["Dopeclaw - Lone Wolf"] = {
+["Dopede - Stitches"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopesnare|Stitches|Horde",
+"Dopesick|Stitches|Horde",
+},
+},
+},
+["Dopesnare - Lone Wolf"] = {
 ["BlackBook"] = {
 ["recent"] = {
 "Dopemend|Lone Wolf|Horde",
+"Dopestab|Lone Wolf|Horde",
+"Sulfuraddict|Lone Wolf|Horde",
 "Dopedot|Lone Wolf|Horde",
-"Tooblock|Lone Wolf|Horde",
+},
+["contacts"] = {
+"Dopemend",
 },
 },
-},
-["Jutarnjedrvo - Living Flame"] = {
 },
 },
 }

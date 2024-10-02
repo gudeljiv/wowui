@@ -273,4 +273,4 @@ AdiBags_Item_Sets: disabled
 Baganator: enabled
 Baganator-NDui: disabled
 Baganator-Simple: enabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled
