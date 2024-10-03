@@ -52,8 +52,8 @@ TomTomDB = {
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
 ["Battlenac - Celebras"] = "Default",
-["Mq - Celebras"] = "Default",
 ["Mxys - Golemagg"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Mxzq - Golemagg"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
@@ -64,8 +64,8 @@ TomTomDB = {
 ["Moolatz - Golemagg"] = "Default",
 ["Vermins - Stonespine"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
-["Vermin - Celebras"] = "Default",
 ["Battlearm - Hydraxian Waterlords"] = "Default",
+["Vermin - Celebras"] = "Default",
 ["Wells - Jin'do"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
 ["Dopebolt - Living Flame"] = "Default",
@@ -166,8 +166,8 @@ TomTomWaypointsM = {
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Battlenac - Celebras"] = "Battlenac - Celebras",
-["Mq - Celebras"] = "Mq - Celebras",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
+["Mq - Celebras"] = "Mq - Celebras",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
@@ -178,8 +178,8 @@ TomTomWaypointsM = {
 ["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 ["Vermins - Stonespine"] = "Vermins - Stonespine",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
@@ -295,9 +295,9 @@ TomTomWaypointsM = {
 },
 ["Battlenac - Celebras"] = {
 },
-["Mq - Celebras"] = {
-},
 ["Mxys - Golemagg"] = {
+},
+["Mq - Celebras"] = {
 },
 ["Mxzq - Golemagg"] = {
 },
@@ -344,9 +344,9 @@ TomTomWaypointsM = {
 },
 },
 },
-["Vermin - Celebras"] = {
-},
 ["Battlearm - Hydraxian Waterlords"] = {
+},
+["Vermin - Celebras"] = {
 },
 ["Wells - Jin'do"] = {
 },

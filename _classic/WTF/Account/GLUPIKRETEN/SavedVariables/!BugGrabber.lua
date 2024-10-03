@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 12859,
+["session"] = 12861,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -4638,6 +4638,14 @@ BugGrabberDB = {
 ["session"] = 12858,
 ["time"] = "2024/09/25 19:17:19",
 ["counter"] = 303,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/Baganator.lua:75: attempt to index global 'Baganator_CategoryViewBackpackViewFrame' (a nil value)",
+["time"] = "2024/10/03 16:42:30",
+["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n WaitTimeUntillAddonLoaded = 30\n IsClassic = true\n R6_Occupied = false\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Color = <table> {\n }\n IsWotlk = false\n Class = \"HUNTER\"\n IsTBC = false\n IsSoD = false\n MaxPlayerLevel = 60\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'Baganator_CategoryViewBackpackViewFrame' (a nil value)\"\n",
+["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/Baganator.lua\"]:75: in main chunk",
+["session"] = 12860,
+["counter"] = 1,
 },
 },
 }

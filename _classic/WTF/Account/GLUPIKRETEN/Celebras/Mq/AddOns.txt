@@ -5,3 +5,5 @@ Blizzard_CombatText: enabled
 ItemRackOptions: enabled
 RXPGuides: disabled
 ImprovedRuneEngravingUI: disabled
+Baganator: enabled
+WagoAnalytics: enabled

@@ -29,19 +29,19 @@ WT_LearnedPetAbilities = {
 ["Nature Resistance"] = {
 ["Rank 1"] = true,
 },
-["Natural Armor"] = {
-["Rank 3"] = true,
-["Rank 4"] = true,
+["Arcane Resistance"] = {
 ["Rank 1"] = true,
-["Rank 2"] = true,
 },
 ["Claw"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Arcane Resistance"] = {
+["Natural Armor"] = {
+["Rank 3"] = true,
+["Rank 4"] = true,
 ["Rank 1"] = true,
+["Rank 2"] = true,
 },
 ["Growl"] = {
 ["Rank 3"] = true,

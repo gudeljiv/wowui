@@ -156,6 +156,10 @@ xVerminSavedData = {
 ["Scalding Elemental"] = {
 "Rend",
 },
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
+},
 ["Shredder 9000"] = {
 "Serpent Sting",
 "Drain Life",
@@ -343,16 +347,6 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
 ["Klaxxi"] = {
 "Big Bronze Bomb",
 "Flanking Strike",
@@ -363,6 +357,28 @@ xVerminSavedData = {
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Ironspine"] = {
 "Rend",
@@ -375,9 +391,8 @@ xVerminSavedData = {
 "Charge Stun",
 "Impact",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Dust Devil"] = {
+"Serpent Sting",
 },
 ["Enraged Stone Spirit"] = {
 "Rend",
@@ -386,11 +401,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
-},
 ["Sea Elemental"] = {
 "Frost Shock",
+},
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -419,20 +434,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
