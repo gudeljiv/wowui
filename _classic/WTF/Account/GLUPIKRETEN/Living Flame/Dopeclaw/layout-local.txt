@@ -20,6 +20,13 @@ X: 5
 Y: -75
 W: 784
 H: 260
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: CENTER
+X: -46
+Y: 114
+W: 920
+H: 724
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -293,13 +300,6 @@ X: -26
 Y: -275
 W: 330
 H: 113
-Frame: SettingsPanel
-FrameLevel: 1
-Anchor: CENTER
-X: -46
-Y: 114
-W: 920
-H: 724
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

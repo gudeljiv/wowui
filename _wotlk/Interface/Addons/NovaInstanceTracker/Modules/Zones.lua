@@ -170,6 +170,12 @@ NIT.zones = {
 		expansion = "classic",
 		noLockout = true,
 	},
+	[2804] = {
+		name = L["The Crystal Vale"],
+		type = "raid",
+		expansion = "classic",
+		noLockout = true,
+	},
 }
 
 --Add expansions dungeons seperately so we can overwrite duplicate zoneids (like naxx) for later expansions.

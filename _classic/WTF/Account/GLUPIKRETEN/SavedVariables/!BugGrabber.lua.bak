@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 12855,
+["session"] = 12857,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -4635,9 +4635,9 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_FrameXML/DeprecatedTemplates.xml:37 Couldn't find inherited node: UISliderTemplateWithLabels",
-["session"] = 12855,
+["session"] = 12857,
 ["time"] = "2024/09/25 19:17:19",
-["counter"] = 294,
+["counter"] = 300,
 },
 },
 }

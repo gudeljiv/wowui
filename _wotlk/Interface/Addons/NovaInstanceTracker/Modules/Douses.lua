@@ -62,6 +62,16 @@ local function getDataForBoss(name)
 	end
 end
 
+local function hasAnyID(ids)
+	if (NIT.data.instances[1].douses) then
+		for k, v in pairs(ids) do
+			if (NIT.data.instances[1].douses[k]) then
+				return true;
+			end
+		end
+	end
+end
+
 local function getIDsForBoss(name)
 	local ids = {};
 	for k, v in pairs(bosses) do
@@ -181,12 +191,12 @@ local function gossipShow()
 								for id, _ in pairs(ids) do
 									--Just insert both ids if none are found for that boss it doesn't matter, still displays correctly.
 									if (not NIT.data.instances[1].douses[id]) then
-										if (not hasAnyID[id]) then
+										--if (not hasAnyID[id]) then
 											NIT.data.instances[1].douses[id] = {
 												name = "",
 												time = GetServerTime();
 											};
-										end
+										--end
 									end
 								end
 							end
@@ -225,6 +235,7 @@ local function unitSpellcastSucceeded(...)
 			end
 			local name = UnitName(unit);
 			local _, class = UnitClass(unit);
+			--If last npc was shaz but shaz is done then use baron id
 			if (unit == "player") then
 				if (lastTargetBoss and lastTargetBossTime and GetTime() - lastTargetBossTime < 20) then
 					--If we mouseover a boss and then douse we must be close to it so lock that in as the right boss.

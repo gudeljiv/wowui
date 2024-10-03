@@ -3348,9 +3348,16 @@ function NIT:createTradeCopyFormatButtons()
 		NIT.copyTradeTimeAgoButton:SetHitRectInsets(0, 0, -10, 7);
 	end
 	if (not NIT.copyTradeRecordsSlider) then
-		NIT.copyTradeRecordsSlider = CreateFrame("Slider", "NITCopyTradeRecordsSlider", NITTradeCopyDragFrame, "OptionsSliderTemplate");
+		NIT.copyTradeRecordsSlider = CreateFrame("Slider", "NITCopyTradeRecordsSlider", NITTradeCopyDragFrame, "UISliderTemplate");
+		--Slider template currently bugged, need to create some elements ourself.
+		NIT.copyTradeRecordsSlider.High = NIT.copyTradeRecordsSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NIT.copyTradeRecordsSlider.High:SetPoint("TOPRIGHT", NIT.copyTradeRecordsSlider, "BOTTOMRIGHT");
+		NIT.copyTradeRecordsSlider.Low = NIT.copyTradeRecordsSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NIT.copyTradeRecordsSlider.Low:SetPoint("TOPLEFT", NIT.copyTradeRecordsSlider, "BOTTOMLEFT");
+		NIT.copyTradeRecordsSlider.Text = NIT.copyTradeRecordsSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlight");
+		NIT.copyTradeRecordsSlider.Text:SetPoint("BOTTOM", NIT.copyTradeRecordsSlider, "TOP");
 		NIT.copyTradeRecordsSlider:SetPoint("BOTTOM", 0, 40);
-		NITCopyTradeRecordsSliderText:SetText(L["Records"]);
+		NITCopyTradeRecordsSlider.Text:SetText(L["Records"]);
 		NIT.copyTradeRecordsSlider.tooltip = L["How many trade records to show?"];
 		--NIT.copyTradeRecordsSlider:SetFrameStrata("HIGH");
 		NIT.copyTradeRecordsSlider:SetFrameLevel(5);
@@ -3361,8 +3368,8 @@ function NIT:createTradeCopyFormatButtons()
 	    NIT.copyTradeRecordsSlider:SetValueStep(1);
 	    NIT.copyTradeRecordsSlider:SetStepsPerPage(1);
 		NIT.copyTradeRecordsSlider:SetValue(NIT.db.global.copyTradeRecords);
-	    NITCopyTradeRecordsSliderLow:SetText("1");
-	    NITCopyTradeRecordsSliderHigh:SetText("100");
+	    NITCopyTradeRecordsSlider.Low:SetText("1");
+	    NITCopyTradeRecordsSlider.High:SetText("100");
 		NITCopyTradeRecordsSlider:HookScript("OnValueChanged", function(self, value)
 			NIT.db.global.copyTradeRecords = value;
 			NIT.copyTradeRecordsSlider.editBox:SetText(value);
@@ -3674,9 +3681,16 @@ end
 
 function NIT:createAltsFrameSlider()
 	if (not NIT.charsMinLevelSlider) then
-		NIT.charsMinLevelSlider = CreateFrame("Slider", "NITCharsMinLevelSlider", NITAltsFrame.EditBox, "OptionsSliderTemplate");
+		NIT.charsMinLevelSlider = CreateFrame("Slider", "NITCharsMinLevelSlider", NITAltsFrame.EditBox, "UISliderTemplate");
+		--Slider template currently bugged, need to create some elements ourself.
+		NIT.charsMinLevelSlider.High = NIT.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NIT.charsMinLevelSlider.High:SetPoint("TOPRIGHT", NIT.charsMinLevelSlider, "BOTTOMRIGHT");
+		NIT.charsMinLevelSlider.Low = NIT.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+		NIT.charsMinLevelSlider.Low:SetPoint("TOPLEFT", NIT.charsMinLevelSlider, "BOTTOMLEFT");
+		NIT.charsMinLevelSlider.Text = NIT.charsMinLevelSlider:CreateFontString(nil, "ARTWORK", "GameFontHighlight");
+		NIT.charsMinLevelSlider.Text:SetPoint("BOTTOM", NIT.charsMinLevelSlider, "TOP");
 		NIT.charsMinLevelSlider:SetPoint("TOPRIGHT", -22, -11);
-		NITCharsMinLevelSliderText:SetText(L["Min Level"]);
+		NITCharsMinLevelSlider.Text:SetText(L["Min Level"]);
 		--NIT.charsMinLevelSlider.tooltipText = "Minimum level alts to show?";
 		--NIT.charsMinLevelSlider:SetFrameStrata("HIGH");
 		NIT.charsMinLevelSlider:SetFrameLevel(5);
@@ -3687,8 +3701,8 @@ function NIT:createAltsFrameSlider()
 	    NIT.charsMinLevelSlider:SetValueStep(1);
 	    NIT.charsMinLevelSlider:SetStepsPerPage(1);
 		NIT.charsMinLevelSlider:SetValue(NIT.db.global.charsMinLevel);
-		NITCharsMinLevelSliderLow:SetText("1");
-		NITCharsMinLevelSliderHigh:SetText(NIT.maxLevel);
+		NITCharsMinLevelSlider.Low:SetText("1");
+		NITCharsMinLevelSlider.High:SetText(NIT.maxLevel);
 		NITCharsMinLevelSlider:HookScript("OnValueChanged", function(self, value)
 			NIT.db.global.charsMinLevel = value;
 			NIT.charsMinLevelSlider.editBox:SetText(value);

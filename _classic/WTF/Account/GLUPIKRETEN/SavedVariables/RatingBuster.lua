@@ -34,7 +34,7 @@ RatingBusterDB = {
 ["Jutarnjedrvo - Living Flame"] = "Shaman",
 ["Vermin - Zandalar Tribe"] = "WARRIOR",
 ["Turbonac - Celebras"] = "Warlock",
-["Doperage - Living Flame"] = "Warrior",
+["Vermin - Celebras"] = "WARRIOR",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopemend - Living Flame"] = "Priest",
 ["Dopebolt - Living Flame"] = "Mage",
@@ -44,7 +44,7 @@ RatingBusterDB = {
 ["Dopestab - Lone Wolf"] = "ROGUE",
 ["Dopeah - Stitches"] = "SHAMAN",
 ["Dopeclaw - Stitches"] = "DRUID",
-["Vermin - Celebras"] = "WARRIOR",
+["Doperage - Living Flame"] = "Warrior",
 ["Dopetrap - Lone Wolf"] = "HUNTER",
 },
 ["profiles"] = {
@@ -68,9 +68,9 @@ RatingBusterDB = {
 },
 ["Druid"] = {
 },
-["Hunter"] = {
-},
 ["DRUID"] = {
+},
+["Hunter"] = {
 },
 ["SHAMAN"] = {
 },

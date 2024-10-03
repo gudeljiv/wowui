@@ -1,4 +1,7 @@
-﻿1.15.52 - 30th September 2024
+﻿1.15.53 - 2nd October 2024
+- Game API updates.
+
+1.15.52 - 30th September 2024
 - Fixed a compatibility issue with Questie.
 
 1.15.51 - 26th September 2024

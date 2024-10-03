@@ -1,8 +1,8 @@
-## Interface: 11503, 40400, 110002
+## Interface: 11504, 40400, 110002
 ## Notes: Instance lockout tracking with mob count/xp/gold/trade logs, battleground/arena logs, and much more.
 ## Title: Nova Instance Tracker
 ## Author: Novaspark-Arugal OCE
-## Version: 1.78
+## Version: 1.79
 ## SavedVariables: NITdatabase
 
 embeds.xml

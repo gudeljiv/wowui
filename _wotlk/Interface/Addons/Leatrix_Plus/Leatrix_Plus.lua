@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 4.0.26 (25th September 2024)
+-- 	Leatrix Plus 4.0.27 (2nd October 2024)
 ----------------------------------------------------------------------
 
 --	01:Functions  02:Locks    03:Restart  40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "4.0.26"
+	LeaPlusLC["AddonVer"] = "4.0.27"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -3209,7 +3209,7 @@
 
 			-- Set style when a drop menu is selected (procs when the list is hidden)
 			if LeaPlusLC.NewPatch then
-				LeaPlusCB["PlayerChainMenu"]:RegisterCallback("OnUpdate", SetChainStyle)
+				LeaPlusCB["PlayerChainMenu"]:RegisterCallback("OnMenuClose", SetChainStyle)
 			else
 				LeaPlusCB["ListFramePlayerChainMenu"]:HookScript("OnHide", SetChainStyle)
 			end
@@ -5492,6 +5492,21 @@
 						myButton:HookScript("OnLeave", function()
 							GameTooltip:Hide()
 						end)
+						if ZGV_Notification_Entry_Template_Mixin then
+							-- Fix notification system entry height
+							hooksecurefunc(ZGV_Notification_Entry_Template_Mixin, "UpdateHeight", function(self)
+								self:Show()
+								local height = 46
+								if ZGV and ZGV.db and ZGV.db.profile and ZGV.db.profile.nc_size and ZGV.db.profile.nc_size == 1 then height = 36 end
+								height = height + (self.time:IsVisible() and self.time:GetStringHeight()+0 or 0)
+								height = height + (self.title:IsVisible() and self.title:GetStringHeight()+3 or 0)
+								height = height + (self.text:IsVisible() and self.text:GetStringHeight()+3 or 0)
+								height = height + (self.SpecialButton and self.SpecialButton:IsVisible() and self.SpecialButton:GetHeight()+8 or 0)
+								if (self.single or self.special) then height = max(height,25) end
+								self:SetHeight(height)
+								self:Hide()
+							end)
+						end
 					elseif name == "BtWQuestsMinimapButton"				-- BtWQuests
 						or name == "TomCats-MinimapButton"				-- TomCat's Tours
 						or name == "LibDBIcon10_MethodRaidTools"		-- Method Raid Tools
@@ -9010,7 +9025,11 @@
 
 				-- Functions
 				local function CreateAuctionCB(name, anchor, x, y, text)
-					LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "OptionsCheckButtonTemplate")
+					if LeaPlusLC.NewPatch then
+						LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "ChatConfigCheckButtonTemplate")
+					else
+						LeaPlusCB[name] = CreateFrame("CheckButton", nil, AuctionFrameAuctions, "OptionsCheckButtonTemplate")
+					end
 					LeaPlusCB[name]:SetFrameStrata("HIGH")
 					LeaPlusCB[name]:SetSize(20, 20)
 					LeaPlusCB[name]:SetPoint(anchor, x, y)
@@ -10271,6 +10290,9 @@
 				_G[chtfrm .. "ButtonFrameUpButton"]:Hide()
 				_G[chtfrm .. "ButtonFrameDownButton"]:Hide()
 				_G[chtfrm .. "ButtonFrame"]:SetSize(0.1,0.1)
+				if LeaPlusLC.NewPatch then
+					_G[chtfrm .. "MinimizeButton"]:SetParent(tframe)
+				end
 			end
 
 			FriendsMicroButton:Hide()
@@ -11148,7 +11170,7 @@
 
 			-- Set controls when anchor dropdown menu is changed and on startup
 			if LeaPlusLC.NewPatch then
-				LeaPlusCB["TooltipAnchorMenu"]:RegisterCallback("OnUpdate", SetAnchorControls)
+				LeaPlusCB["TooltipAnchorMenu"]:RegisterCallback("OnMenuClose", SetAnchorControls)
 			else
 				LeaPlusCB["ListFrameTooltipAnchorMenu"]:HookScript("OnHide", SetAnchorControls)
 			end

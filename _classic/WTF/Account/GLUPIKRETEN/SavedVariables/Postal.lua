@@ -86,6 +86,11 @@ Postal3DB = {
 ["Mxzq - Golemagg"] = {
 },
 ["Dopeclaw - Living Flame"] = {
+["BlackBook"] = {
+["recent"] = {
+"Doperage|Living Flame|Horde",
+},
+},
 },
 ["Vbank - Celebras"] = {
 ["BlackBook"] = {

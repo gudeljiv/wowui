@@ -262,7 +262,7 @@ local turBosses = {
 	[11032] = {name = "Malor the Zealous", instanceID = 329, order = 5},
 	[10997] = {name = "Cannon Master Willey", instanceID = 329, order = 6},
 	[10811] = {name = "Archivist Galford", instanceID = 329, order = 7},
-	[10813] = {name = "Balnazzar", instanceID = 329, order = 8},
+	[10812] = {name = "Balnazzar", instanceID = 329, order = 8}, --Balnazaar is Grand Crusader Dathrohan npcID when it dies and as Balnazzar corpse.
 	[-101] = {header = true, title = "Undead Side", instanceID = 329, order = 10},
 	[10437] = {name = "Nerub'enkan", instanceID = 329, order = 14},
 	[10436] = {name = "Baroness Anastari", instanceID = 329, order = 12},
@@ -356,6 +356,24 @@ local turBosses = {
 	[10268] = {name = "Gizrul the Slavener", instanceID = 229, order = 18},
 	[9568] = {name = "Overlord Wyrmthalak", instanceID = 229, order = 19},
 };
+
+--Bosses with a lockout like the world bosses and ony, no need to track coins just send a loot reminder when they die.
+local turBossesNoRecord = {
+	[6109] = {name = "Azuregos", instanceID = 2791},
+	[230302] = {name = "Lord Kazzak", instanceID = 2789},
+	[10184] = {name = "Onyxia", instanceID = 249},
+};
+
+--[[local function isTurLockoutInstance()
+	local instanceID = NIT.currentInstanceID;
+	if (instanceID) then
+		for k, v in pairs(turBossesNoRecord) do
+			if (instanceID == v.instanceID) then
+				return true;
+			end
+		end
+	end
+end]]
 
 local function getBossCount(instanceID)
 	local count, headerCount = 0, 0;
@@ -464,40 +482,42 @@ local function chatMsgLoot(...)
 	    		itemID = tonumber(itemID);
 	    		if (itemID == 226404) then
 	    			hideMiddleMsg();
-	    			if (lastLootNpcID) then
-	    				NIT:debug("Using lastLootNpcID:", lastBossNpcID);
-			    		local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID]) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID] = {};
+	    			if (NIT.currentInstanceID and dungeons[NIT.currentInstanceID]) then
+		    			if (lastLootNpcID) then
+		    				NIT:debug("Using lastLootNpcID:", lastBossNpcID);
+				    		local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID]) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID] = {};
+							end
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted = {};
+							end
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime or
+									(NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime < GetServerTime() - 300)) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;
+								NIT:debug("Missing boss kill reset time", lastLootNpcID); --Possiblly if a boss not on the list drops a token?
+							end
+							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted[itemID] = true;
+						elseif (lastBossNpcID) then
+							NIT:debug("Using backup lastBossNpcID:", lastBossNpcID);
+							local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID]) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID] = {};
+							end
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted = {};
+							end
+							if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime or
+									(NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime < GetServerTime() - 300)) then
+								NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime = resetTime;
+								NIT:debug("Missing boss kill reset time", lastBossNpcID); --Possiblly if a boss not on the list drops a token?
+							end
+							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted[itemID] = true;
+						else
+							NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
 						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime or
-								(NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime < GetServerTime() - 300)) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].resetTime = resetTime;
-							NIT:debug("Missing boss kill reset time", lastLootNpcID); --Possiblly if a boss not on the list drops a token?
-						end
-						NIT.data.myChars[UnitName("player")].bossKills[lastLootNpcID].looted[itemID] = true;
-					elseif (lastBossNpcID) then
-						NIT:debug("Using backup lastBossNpcID:", lastBossNpcID);
-						local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilDailyReset();
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID]) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID] = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted = {};
-						end
-						if (not NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime or
-								(NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime < GetServerTime() - 300)) then
-							NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].resetTime = resetTime;
-							NIT:debug("Missing boss kill reset time", lastBossNpcID); --Possiblly if a boss not on the list drops a token?
-						end
-						NIT.data.myChars[UnitName("player")].bossKills[lastBossNpcID].looted[itemID] = true;
-					else
-						NIT:debug("Loot ID error:", itemID, lastLootNpcID, lastBossNpcID);
+						lastLootNpcID = nil;
 					end
-					lastLootNpcID = nil;
 	    		end
 	    	end
     	end
@@ -559,6 +579,8 @@ local function combatLogEventUnfiltered(...)
 				lastBossNpcID = npcID;
 				lastBossTime = GetServerTime();
 			end
+		elseif (turBossesNoRecord[npcID] and turBossesNoRecord[npcID].instanceID == NIT.currentInstanceID) then
+			addMsg(L["Loot the Tarnished Undermine Real"] .. "!", 10);
 		end
 	end
 end
