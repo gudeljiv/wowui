@@ -910,26 +910,26 @@ function BaganatorRetailLiveWarbandItemButtonMixin:SetItemFiltered(text)
 end
 
 local function ApplyQualityBorderClassic(self, quality)
-  local color
-
-  if quality and quality >= LE_ITEM_QUALITY_UNCOMMON and BAG_ITEM_QUALITY_COLORS[quality] then
-    color = BAG_ITEM_QUALITY_COLORS[quality]
+	local color
+  
+	if quality and quality >= LE_ITEM_QUALITY_UNCOMMON and BAG_ITEM_QUALITY_COLORS[quality] then
+	  color = BAG_ITEM_QUALITY_COLORS[quality]
+	end
+  
+	self:CreateBeautyBorder(8)
+	self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
+	self:SetBeautyBorderColor(1, 1, 1, 1)
+  
+	if color then
+	  -- self.IconBorder:Show()
+	  -- self.IconBorder:SetVertexColor(color.r, color.g, color.b)
+	  self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
+	  self:SetBeautyBorderColor(color.r or 1, color.g or 0, color.b or 0, 1)
+	else
+	  self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
+	  self:SetBeautyBorderColor(1, 1, 1, 1)
+	end
   end
-
-  self:CreateBeautyBorder(8)
-  self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
-  self:SetBeautyBorderColor(1, 1, 1, 1)
-
-  if color then
-    -- self.IconBorder:Show()
-    -- self.IconBorder:SetVertexColor(color.r, color.g, color.b)
-    self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-    self:SetBeautyBorderColor(color.r or 1, color.g or 0, color.b or 0, 1)
-  else
-    self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
-    self:SetBeautyBorderColor(1, 1, 1, 1)
-  end
-end
 
 BaganatorClassicCachedItemButtonMixin = {}
 

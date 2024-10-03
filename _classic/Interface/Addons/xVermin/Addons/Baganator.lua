@@ -72,8 +72,19 @@ end
 -- 	end
 -- end
 
-Baganator_CategoryViewBackpackViewFrame:CreateBeautyBorder(8)
-Baganator_CategoryViewBankViewFrame:CreateBeautyBorder(8)
+xVermin.CheckIfLoadedWithTimer(
+	'Baganator_CategoryViewBackpackViewFrame',
+	function()
+		Baganator_CategoryViewBackpackViewFrame:CreateBeautyBorder(8)
+	end
+)
+
+xVermin.CheckIfLoadedWithTimer(
+	'Baganator_CategoryViewBankViewFrame',
+	function()
+		Baganator_CategoryViewBankViewFrame:CreateBeautyBorder(8)
+	end
+)
 
 -- Baganator_CategoryViewBackpackViewFrame:HookScript(
 -- 	'OnShow',
