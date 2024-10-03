@@ -55,9 +55,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12037
+#showtooltip item:4599
 /cast feed pet
-/use item:12037
+/use item:4599
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets

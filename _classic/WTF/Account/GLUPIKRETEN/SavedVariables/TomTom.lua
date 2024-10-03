@@ -51,32 +51,32 @@ TomTomDB = {
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
-["Dopemend - Living Flame"] = "Default",
-["Doperage - Living Flame"] = "Default",
+["Battlenac - Celebras"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Mxys - Golemagg"] = "Default",
-["Turbonac - Celebras"] = "Default",
+["Mxzq - Golemagg"] = "Default",
 ["Vermins - Stitches"] = "Default",
-["Pitchwise - Dreadnaught"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
-["Vermin - Golemagg"] = "Default",
+["Grgur - Golemagg"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Verminz - Golemagg"] = "Default",
 ["Moolatz - Golemagg"] = "Default",
 ["Vermins - Stonespine"] = "Default",
-["Dopesnare - Stitches"] = "Default",
-["Wells - Jin'do"] = "Default",
-["Battlearm - Hydraxian Waterlords"] = "Default",
-["Vermin - Celebras"] = "Default",
 ["Dopecoil - Lone Wolf"] = "Default",
+["Vermin - Celebras"] = "Default",
+["Battlearm - Hydraxian Waterlords"] = "Default",
+["Wells - Jin'do"] = "Default",
+["Dopesnare - Stitches"] = "Default",
 ["Dopebolt - Living Flame"] = "Default",
 ["Jaroslav - Golemagg"] = "Default",
 ["Battlearm - Jin'do"] = "Default",
-["Grgur - Golemagg"] = "Default",
+["Vermin - Golemagg"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
-["Vermin - Zandalar Tribe"] = "Default",
-["Mxzq - Golemagg"] = "Default",
-["Mq - Celebras"] = "Default",
-["Battlenac - Celebras"] = "Default",
+["Pitchwise - Dreadnaught"] = "Default",
+["Turbonac - Celebras"] = "Default",
+["Doperage - Living Flame"] = "Default",
+["Dopemend - Living Flame"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -165,32 +165,32 @@ TomTomWaypointsM = {
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-["Dopemend - Living Flame"] = "Dopemend - Living Flame",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Mq - Celebras"] = "Mq - Celebras",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Vermins - Stitches"] = "Vermins - Stitches",
-["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-["Vermin - Golemagg"] = "Vermin - Golemagg",
+["Grgur - Golemagg"] = "Grgur - Golemagg",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Verminz - Golemagg"] = "Verminz - Golemagg",
 ["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 ["Vermins - Stonespine"] = "Vermins - Stonespine",
-["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-["Wells - Jin'do"] = "Wells - Jin'do",
-["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+["Vermin - Celebras"] = "Vermin - Celebras",
+["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+["Wells - Jin'do"] = "Wells - Jin'do",
+["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
 ["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-["Grgur - Golemagg"] = "Grgur - Golemagg",
+["Vermin - Golemagg"] = "Vermin - Golemagg",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-["Mq - Celebras"] = "Mq - Celebras",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Dopemend - Living Flame"] = "Dopemend - Living Flame",
 },
 ["profiles"] = {
 ["Dopeclaw - Lone Wolf"] = {
@@ -293,21 +293,21 @@ TomTomWaypointsM = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
-["Dopemend - Living Flame"] = {
+["Battlenac - Celebras"] = {
 },
-["Doperage - Living Flame"] = {
+["Mq - Celebras"] = {
 },
 ["Mxys - Golemagg"] = {
 },
-["Turbonac - Celebras"] = {
+["Mxzq - Golemagg"] = {
 },
 ["Vermins - Stitches"] = {
 },
-["Pitchwise - Dreadnaught"] = {
+["Vermin - Zandalar Tribe"] = {
 },
 ["Doperage - Lone Wolf"] = {
 },
-["Vermin - Golemagg"] = {
+["Grgur - Golemagg"] = {
 },
 ["Dopedot - Lone Wolf"] = {
 },
@@ -316,14 +316,6 @@ TomTomWaypointsM = {
 ["Moolatz - Golemagg"] = {
 },
 ["Vermins - Stonespine"] = {
-},
-["Dopesnare - Stitches"] = {
-},
-["Wells - Jin'do"] = {
-},
-["Battlearm - Hydraxian Waterlords"] = {
-},
-["Vermin - Celebras"] = {
 },
 ["Dopecoil - Lone Wolf"] = {
 [1412] = {
@@ -342,9 +334,9 @@ TomTomWaypointsM = {
 ["callbacks"] = {
 ["distance"] = {
 },
-["minimap"] = {
-},
 ["world"] = {
+},
+["minimap"] = {
 },
 },
 ["minimap"] = true,
@@ -352,23 +344,31 @@ TomTomWaypointsM = {
 },
 },
 },
+["Vermin - Celebras"] = {
+},
+["Battlearm - Hydraxian Waterlords"] = {
+},
+["Wells - Jin'do"] = {
+},
+["Dopesnare - Stitches"] = {
+},
 ["Dopebolt - Living Flame"] = {
 },
 ["Jaroslav - Golemagg"] = {
 },
 ["Battlearm - Jin'do"] = {
 },
-["Grgur - Golemagg"] = {
+["Vermin - Golemagg"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
-["Vermin - Zandalar Tribe"] = {
+["Pitchwise - Dreadnaught"] = {
 },
-["Mxzq - Golemagg"] = {
+["Turbonac - Celebras"] = {
 },
-["Mq - Celebras"] = {
+["Doperage - Living Flame"] = {
 },
-["Battlenac - Celebras"] = {
+["Dopemend - Living Flame"] = {
 },
 },
 }

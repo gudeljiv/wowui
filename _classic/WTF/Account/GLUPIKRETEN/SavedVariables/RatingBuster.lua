@@ -31,21 +31,21 @@ RatingBusterDB = {
 ["Mq - Celebras"] = "HUNTER",
 ["Vermins - Stitches"] = "WARRIOR",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
-["Jutarnjedrvo - Living Flame"] = "Shaman",
-["Vermin - Zandalar Tribe"] = "WARRIOR",
-["Turbonac - Celebras"] = "Warlock",
+["Dopetrap - Lone Wolf"] = "HUNTER",
+["Doperage - Living Flame"] = "Warrior",
 ["Vermin - Celebras"] = "WARRIOR",
+["Turbonac - Celebras"] = "Warlock",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
-["Dopemend - Living Flame"] = "Priest",
+["Dopeah - Stitches"] = "SHAMAN",
 ["Dopebolt - Living Flame"] = "Mage",
 ["Dopede - Stitches"] = "SHAMAN",
-["Doperage - Lone Wolf"] = "WARRIOR",
 ["Dopeclaw - Lone Wolf"] = "DRUID",
+["Doperage - Lone Wolf"] = "WARRIOR",
 ["Dopestab - Lone Wolf"] = "ROGUE",
-["Dopeah - Stitches"] = "SHAMAN",
+["Dopemend - Living Flame"] = "Priest",
 ["Dopeclaw - Stitches"] = "DRUID",
-["Doperage - Living Flame"] = "Warrior",
-["Dopetrap - Lone Wolf"] = "HUNTER",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
 },
 ["profiles"] = {
 ["HUNTER"] = {
@@ -66,15 +66,15 @@ RatingBusterDB = {
 },
 ["WARLOCK"] = {
 },
-["Druid"] = {
+["Warrior"] = {
+},
+["SHAMAN"] = {
 },
 ["DRUID"] = {
 },
 ["Hunter"] = {
 },
-["SHAMAN"] = {
-},
-["Warrior"] = {
+["Druid"] = {
 },
 },
 }
