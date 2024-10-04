@@ -1,8 +1,44 @@
 
 __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 	["includeUnsuitableEquipment"] = false,
-	["autoSell"] = true,
-	["itemIcons"] = false,
+	["merchantButton"] = true,
+	["itemQualityCheckBoxes"] = {
+		["includeUnsuitableEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["excludeWarbandEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["includeByQuality"] = {
+			["poor"] = true,
+			["epic"] = false,
+			["common"] = false,
+			["uncommon"] = false,
+			["rare"] = false,
+		},
+		["excludeUnboundEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["includeBelowItemLevel"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+	},
 	["autoRepair"] = true,
 	["inclusions"] = {
 	},
@@ -13,13 +49,41 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 	["minimapIcon"] = {
 		["hide"] = true,
 	},
+	["includeByQuality"] = true,
 	["exclusions"] = {
 	},
 	["excludeEquipmentSets"] = true,
 	["autoJunkFrame"] = false,
-	["includePoorItems"] = true,
-	["merchantButton"] = true,
+	["points"] = {
+		["mainWindow"] = {
+			["offsetX"] = 0,
+			["offsetY"] = 50,
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+		},
+		["merchantButton"] = {
+			["offsetX"] = 75,
+			["offsetY"] = -145,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+		},
+		["transportFrame"] = {
+			["offsetX"] = 0,
+			["offsetY"] = 50,
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+		},
+		["junkFrame"] = {
+			["offsetX"] = 0,
+			["offsetY"] = 50,
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+		},
+	},
+	["autoSell"] = true,
 	["excludeUnboundEquipment"] = false,
+	["excludeWarbandEquipment"] = false,
+	["itemIcons"] = false,
 	["includeBelowItemLevel"] = {
 		["enabled"] = false,
 		["value"] = 0,

@@ -1,135 +1,8 @@
 
 Blizzard_Console_SavedVars = {
 ["version"] = 3,
+["height"] = 299.9999694824219,
 ["messageHistory"] = {
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9335, effect aura: 124, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
-0,
-},
-{
-"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 124, which is wrong",
-0,
-},
 {
 "CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9331, effect aura: 99, which is wrong",
 0,
@@ -4130,10 +4003,93 @@ Blizzard_Console_SavedVars = {
 "Level: 0d 0h 30m 50s",
 0,
 },
+{
+"-------------------------------------------------- Previous Session --------------------------------------------------",
+0,
 },
-["height"] = 299.9999694824219,
-["fontHeight"] = 14,
+{
+"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0",
+0,
+},
+{
+"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Spell|r |cffffff00GetSpellLink|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Spell|r |cffffff00GetSpellInfo|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Container|r |cffffff00GetContainerItemDurability|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Container|r |cffffff00ContainerIDToInventoryID|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Item|r |cffffff00GetItemSpell|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Item|r |cffffff00GetItemIcon|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Item|r |cffffff00GetItemIconByID|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Item|r |cffffff00GetItemInfoInstant|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_Minimap|r |cffffff00SetTracking|r",
+0,
+},
+{
+"|cff99999916:44:06|r |cff20b0ffHizurosSharedTools|r: |cff00ff00<debug>|r |cffff6060deprecated-api (era)|r |cff44ffffC_CurrencyInfo|r |cffffff00GetCoinTextureString|r",
+0,
+},
+{
+"Time played:",
+0,
+},
+{
+"Total: 1d 5h 27m 9s",
+0,
+},
+{
+"Level: 0d 0h 32m 26s",
+0,
+},
+{
+"Skill 45 increased from 125 to 126",
+0,
+},
+{
+"Got new connection 3",
+0,
+},
+{
+"Weather changed to 0, intensity 0.000000\n",
+0,
+},
+{
+"Skill 136 increased from 118 to 119",
+0,
+},
+{
+"Skill 182 increased from 166 to 167",
+0,
+},
+},
 ["isShown"] = false,
+["fontHeight"] = 14,
 ["commandHistory"] = {
 },
 }
