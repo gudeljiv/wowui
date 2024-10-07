@@ -434,7 +434,7 @@ end
 
 
 ---This stv boss stuff is still experimental and not added in options yet, needs testing with real data.
-local lastGuildMsg, lastGroupMsg = {}, {};
+--[[local lastGuildMsg, lastGroupMsg = {}, {};
 local function validateStv(zoneID)
 	for k, v in NWB:pairsByKeys(NWB.data.layers) do
 		if (v.layerMap) then
@@ -532,7 +532,7 @@ function NWB:parseStvData(data)
 end
 
 function NWB:sendStvPos(distribution, zoneID, x, y)
-	--[[if (not NWB.stvRunning) then
+	if (not NWB.stvRunning) then
 		return;
 	end
 	if (zoneID and x and y) then
@@ -573,11 +573,11 @@ function NWB:sendStvPos(distribution, zoneID, x, y)
 				lastGroupMsg[zoneID] = GetServerTime();
 			end
 		end
-	end]]
+	end
 end
 
 function NWB:receivedStvPos(distribution, zoneID, x, y)
-	--[[if (not NWB.stvRunning) then
+	if (not NWB.stvRunning) then
 		return;
 	end
 	if (zoneID and x and y) then
@@ -605,7 +605,7 @@ function NWB:receivedStvPos(distribution, zoneID, x, y)
 		if (validateStv(zoneID)) then
 			NWB:updateStvBoss(zoneID, x, y);
 		end
-	end]]
+	end
 end
 
 --If we get randomly layered during the event or we have data and the map isn't showing just refresh the marker when we get a zoneID from inside the zone.
@@ -624,7 +624,7 @@ local function refreshStvBossMarker(zoneID, fromLayerCalc)
 				end
 			end
 		end
-		if (layerZoneID) then
+		if (layerZoneID and NWB.data.layers[layerZoneID] and NWB.data.layers[layerZoneID].layerMap) then
 			for k, v in NWB:pairsByKeys(NWB.data.layers[layerZoneID].layerMap) do
 				if (v == 1434) then
 					stvZoneID = k;
@@ -680,7 +680,7 @@ local function parseGUID(unit)
 			end
 		end
 	end
-end
+end]]
 
 if (NWB.isSOD) then
 	--This boss stuff has been disabled in p4.
@@ -693,12 +693,12 @@ if (NWB.isSOD) then
 	f:SetScript('OnEvent', function(self, event, ...)
 		if (event == "CHAT_MSG_LOOT") then
 			chatMsgLoot(...)
-		elseif (event == "UNIT_TARGET" or event == "PLAYER_TARGET_CHANGED") then
+		--[[elseif (event == "UNIT_TARGET" or event == "PLAYER_TARGET_CHANGED") then
 			parseGUID("target");
 		elseif (event == "UPDATE_MOUSEOVER_UNIT") then
 			parseGUID("mouseover");
 		elseif (event == "NAME_PLATE_UNIT_ADDED") then
-			parseGUID("nameplate1");
+			parseGUID("nameplate1");]]
 		end
 	end)
 end

@@ -1,5 +1,8 @@
-## v4.14.17 Changes
+## v4.14.18 Changes
 
-* [Classic] Updated for patch 1.15.4
+* [Retail] Support for concentration
+* [Retail] Various auction house system message improvements
+* [Retail] Fixed gathering not taking items in the warbank into account
+* [Retail] Fixed various errors when buying auctions
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -174,13 +174,6 @@ X: -29
 Y: -210
 W: 330
 H: 113
-Frame: CharacterFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: LootFrame
 FrameLevel: 10
 Anchor: CENTER
@@ -188,6 +181,13 @@ X: 480
 Y: 254
 W: 170
 H: 240
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

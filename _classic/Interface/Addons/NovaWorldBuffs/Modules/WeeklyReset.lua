@@ -104,3 +104,23 @@ function NWB:getThreeDayReset()
 	local lastReset = nextReset - 259200;
 	return nextReset, lastReset;
 end
+
+function NWB:getMonthlyReset() --Work in progress.
+	local serverTime = C_DateAndTime.GetServerTimeLocal();
+	local currentMonth = date("!%m", serverTime);
+	local currentYear = date("!%Y", serverTime);
+	local month = currentMonth == 12 and 1 or currentMonth + 1;
+	local year = currentMonth == 12 and currentYear + 1 or currentYear;
+	local timeTable = {year = year, month = month, day = 1, hour = 0, min = 0, sec = 0};
+	local resetTime = time(timeTable);
+	--print(month, year, resetTime)
+end
+
+function NWB:getBiWeeklyReset()
+	local weeklyReset = C_DateAndTime.GetSecondsUntilWeeklyReset();
+	if (weeklyReset < 259200) then
+		return GetServerTime() + weeklyReset;
+	else
+		return GetServerTime() + (weeklyReset - 259200);
+	end
+end

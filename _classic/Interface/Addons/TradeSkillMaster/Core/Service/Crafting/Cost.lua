@@ -59,11 +59,11 @@ function Cost.GetCraftingCostByCraftString(craftString, optionalMats, qualityMat
 		qualityMats = TempTable.Acquire()
 		releaseQualityMats = true
 	end
-	local cost = private.GetCraftingCostHelper(craftString, nil, optionalMats, qualityMats)
+	local cost, concentration = private.GetCraftingCostHelper(craftString, nil, optionalMats, qualityMats)
 	if releaseQualityMats then
 		TempTable.Release(qualityMats)
 	end
-	return cost
+	return cost, concentration
 end
 
 function Cost.GetCraftedItemValue(itemString)
@@ -86,10 +86,10 @@ function Cost.GetProfitByRecipeString(recipeString)
 end
 
 function Cost.GetCostsByCraftString(craftString)
-	local craftingCost = Cost.GetCraftingCostByCraftString(craftString)
+	local craftingCost, concentration = Cost.GetCraftingCostByCraftString(craftString)
 	local itemString = TSM.Crafting.GetItemString(craftString)
 	local craftedItemValue = itemString and Cost.GetCraftedItemValue(itemString) or nil
-	return craftingCost, craftedItemValue, craftingCost and craftedItemValue and (craftedItemValue - craftingCost) or nil
+	return craftingCost, craftedItemValue, craftingCost and craftedItemValue and (craftedItemValue - craftingCost) or nil, concentration
 end
 
 function Cost.GetCostsByRecipeString(recipeString)
@@ -250,6 +250,7 @@ function private.GetCraftingCostHelper(craftString, recipeString, optionalMats, 
 		wipe(mats)
 	end
 	TSM.Crafting.GetMatsAsTable(craftString, mats)
+	local concentration = 0
 	if recipeString then
 		assert(not optionalMats)
 		for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
@@ -265,14 +266,16 @@ function private.GetCraftingCostHelper(craftString, recipeString, optionalMats, 
 			end
 		end
 	elseif TSM.Crafting.IsQualityCraft(craftString) then
-		local canCraft = TSM.Crafting.Quality.GetOptionalMats(craftString, mats, qualityMats)
-		if not canCraft then
+		local canCraft, craftConcentration = TSM.Crafting.Quality.GetOptionalMats(craftString, mats, qualityMats)
+		if canCraft then
+			concentration = craftConcentration
+		else
 			if mats == private.matsTemp then
 				private.matsTempInUse = false
 			else
 				TempTable.Release(mats)
 			end
-			return nil
+			return nil, nil
 		end
 		for _, itemString in ipairs(qualityMats) do
 			mats[itemString] = mats[qualityMats[itemString]]
@@ -315,8 +318,8 @@ function private.GetCraftingCostHelper(craftString, recipeString, optionalMats, 
 		TempTable.Release(mats)
 	end
 	if not cost or not hasMats then
-		return nil
+		return nil, nil
 	end
 	cost = Math.Round(cost / TSM.Crafting.GetNumResult(craftString))
-	return cost > 0 and cost or nil
+	return cost > 0 and cost or nil, concentration
 end

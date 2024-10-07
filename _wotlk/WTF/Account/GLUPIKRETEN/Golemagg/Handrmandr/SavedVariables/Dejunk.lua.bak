@@ -1,25 +1,59 @@
 
 __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
-	["includeUnsuitableEquipment"] = false,
+	["characterSpecificSettings"] = false,
 	["autoSell"] = false,
-	["itemIcons"] = false,
+	["includeByQuality"] = true,
+	["exclusions"] = {
+	},
+	["excludeEquipmentSets"] = true,
 	["autoRepair"] = false,
 	["inclusions"] = {
 	},
 	["safeMode"] = false,
-	["itemTooltips"] = true,
+	["excludeWarbandEquipment"] = false,
+	["autoJunkFrame"] = false,
 	["includeArtifactRelics"] = false,
-	["chatMessages"] = true,
-	["characterSpecificSettings"] = false,
 	["excludeUnboundEquipment"] = false,
-	["exclusions"] = {
+	["itemQualityCheckBoxes"] = {
+		["includeUnsuitableEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["excludeWarbandEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["includeByQuality"] = {
+			["poor"] = true,
+			["epic"] = false,
+			["common"] = false,
+			["uncommon"] = false,
+			["rare"] = false,
+		},
+		["excludeUnboundEquipment"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
+		["includeBelowItemLevel"] = {
+			["poor"] = true,
+			["epic"] = true,
+			["common"] = true,
+			["uncommon"] = true,
+			["rare"] = true,
+		},
 	},
-	["excludeEquipmentSets"] = true,
-	["includePoorItems"] = true,
+	["includeUnsuitableEquipment"] = false,
 	["includeBelowItemLevel"] = {
 		["enabled"] = false,
 		["value"] = 0,
 	},
-	["merchantButton"] = true,
-	["autoJunkFrame"] = false,
 }

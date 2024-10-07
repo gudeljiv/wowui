@@ -8,8 +8,8 @@ local addonName, addon = ...;
 local NWB = addon.a;
 local _, _, _, tocVersion = GetBuildInfo();
 NWB.LSM = LibStub("LibSharedMedia-3.0");
-NWB.dragonLib = LibStub("HereBeDragons-2.0-NovaTemp");
-NWB.dragonLibPins = LibStub("HereBeDragons-Pins-2.0-NovaTemp");
+NWB.dragonLib = LibStub("HereBeDragons-2.0");
+NWB.dragonLibPins = LibStub("HereBeDragons-Pins-2.0");
 NWB.candyBar = LibStub("LibCandyBar-3.0");
 NWB.LibRealmInfo = LibStub("LibRealmInfo");
 NWB.commPrefix = "NWB";
@@ -7711,6 +7711,22 @@ function NWB:addDMFMinimapString(tooltip)
 		tooltip:AddLine(text .. dateString);
 	end
 	if (NWB.isSOD) then
+		--Bundle bi-weekly day reset with dmf minimap tooltip.
+		local biWeeklyReset = NWB:getBiWeeklyReset();
+		if (biWeeklyReset) then
+			local biWeeklyDateString = "";
+			if (IsShiftKeyDown()) then
+				if (NWB.db.global.timeStampFormat == 12) then
+					biWeeklyDateString = " (" .. date("%A", biWeeklyReset) .. " " .. gsub(date("%I:%M", biWeeklyReset), "^0", "")
+							.. string.lower(date("%p", biWeeklyReset)) .. ")";
+				else
+					biWeeklyDateString = " (" .. date("%A %H:%M", biWeeklyReset) .. ")";
+				end
+			end
+			tooltip:AddLine(L["Bi-Weekly raid reset"] .. ":|r |cFF9CD6DE" .. NWB:getTimeString(biWeeklyReset - GetServerTime(), true, "short")
+					.. "|r" .. biWeeklyDateString .. "|r");
+		end
+	elseif (NWB.isClassic) then
 		--Bundle 3 day reset with dmf minimap tooltip.
 		local threeDayReset = NWB:getThreeDayReset();
 		if (threeDayReset) then
@@ -8841,7 +8857,7 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 				end
 				text = text .. msg .. "\n";
 			end
-			if (NWB.debug) then
+			if (NWB.isDebug) then
 				if (v.lastSeenNPC) then
 					text = text .. "|cFF9CD6DELast seen:|r " .. NWB:getTimeString(GetServerTime() - v.lastSeenNPC, true) .. " ago.\n";
 					if (v.lastSeenNPC < v.created) then
@@ -8851,6 +8867,15 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 					end
 				else
 					text = text .. "|cFF9CD6DEWarning:|r Missing last seen NPC time.\n";
+				end
+				if (v.npcID) then
+					if (NWB.orgrimmarCreatures[v.npcID]) then
+						text = text .. "|cFF9CD6DENPC:|r " .. NWB.orgrimmarCreatures[v.npcID] .. " (" .. v.npcID .. ")\n";
+					elseif (NWB.stormwindCreatures[v.npcID]) then
+						text = text .. "|cFF9CD6DENPC:|r " .. NWB.stormwindCreatures[v.npcID] .. " (" .. v.npcID .. ")\n";
+					else
+						text = text .. "|cFF9CD6DENPC:|r " .. v.npcID .. "\n";
+					end
 				end
 			end
 			if ((v.rendTimer + 3600) > (GetServerTime() - NWB.rendCooldownTime)
@@ -10566,10 +10591,10 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 				NWB.lastKnownLayerTime = GetServerTime();
 				layerNum = count;
 				foundLayer = true;
-				if (NWB.stvRunning and zone ~= 1434) then
+				--if (NWB.stvRunning and zone ~= 1434) then
 					--Only from outside STV.
-					NWB:refreshStvBossMarker(NWB.lastKnownLayerMapZoneID, true);
-				end
+				--	NWB:refreshStvBossMarker(NWB.lastKnownLayerMapZoneID, true);
+				--end
 			end
 		end
 	end
