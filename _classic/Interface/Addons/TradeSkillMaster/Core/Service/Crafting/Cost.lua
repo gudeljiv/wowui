@@ -121,8 +121,8 @@ function Cost.GetLowestCostByItem(itemString, optionalMats, qualityMats)
 		optionalMats = TempTable.Acquire()
 	end
 	private.GetOptionalMats(itemString, optionalMats)
-	local lowestCost, lowestCraftString = nil, nil
-	local cdCost, cdSpellId = nil, nil
+	local lowestCost, lowestCraftString, lowestConcentration = nil, nil, nil
+	local cdCost, cdSpellId, cdConcentration = nil, nil, nil
 	local numSpells = 0
 	local singleCraftString = nil
 	local relItemLevel = nil
@@ -150,12 +150,13 @@ function Cost.GetLowestCostByItem(itemString, optionalMats, qualityMats)
 				end
 				numSpells = numSpells + 1
 				wipe(tempQualityMats)
-				local cost = Cost.GetCraftingCostByCraftString(craftString, optionalMats, tempQualityMats)
+				local cost, concentration = Cost.GetCraftingCostByCraftString(craftString, optionalMats, tempQualityMats)
 				if cost and (not lowestCost or cost < lowestCost) then
 					-- Exclude spells with cooldown if option to ignore is enabled and there is more than one way to craft
 					if hasCD then
 						cdCost = cost
 						cdSpellId = craftString
+						cdConcentration = concentration
 					else
 						if qualityMats then
 							wipe(qualityMats)
@@ -165,6 +166,7 @@ function Cost.GetLowestCostByItem(itemString, optionalMats, qualityMats)
 						end
 						lowestCost = cost
 						lowestCraftString = craftString
+						lowestConcentration = concentration
 					end
 				end
 			end
@@ -185,8 +187,9 @@ function Cost.GetLowestCostByItem(itemString, optionalMats, qualityMats)
 		end
 		lowestCost = cdCost
 		lowestCraftString = cdSpellId
+		lowestConcentration = cdConcentration
 	end
-	return lowestCost, lowestCraftString or singleCraftString
+	return lowestCost, lowestCraftString or singleCraftString, lowestConcentration
 end
 
 
