@@ -83,13 +83,6 @@ X: 16
 Y: -116
 W: 336
 H: 444
-Frame: LootFrame
-FrameLevel: 10
-Anchor: CENTER
-X: 480
-Y: 254
-W: 170
-H: 240
 Frame: ItemTextFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -195,6 +188,13 @@ X: -7
 Y: -212
 W: 330
 H: 113
+Frame: LootFrame
+FrameLevel: 10
+Anchor: CENTER
+X: 480
+Y: 254
+W: 170
+H: 240
 Frame: CharacterFrame
 FrameLevel: 1
 Anchor: TOPLEFT
