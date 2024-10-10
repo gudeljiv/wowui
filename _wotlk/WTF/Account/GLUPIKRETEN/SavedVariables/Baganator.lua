@@ -17,13 +17,13 @@ BAGANATOR_CONFIG = {
 		["default_special_empty"] = true,
 		["default_consumable"] = true,
 		["default_tradegoods"] = true,
-		["default_gem"] = true,
-		["default_questitem"] = true,
+		["default_weapon"] = true,
+		["default_key"] = true,
 		["default_auto_equipment_sets"] = true,
 		["default_container"] = true,
 		["default_reagent"] = true,
-		["default_key"] = true,
-		["default_weapon"] = true,
+		["default_questitem"] = true,
+		["default_gem"] = true,
 	},
 	["debug_categories_search"] = false,
 	["bank_view_width"] = 18,
@@ -34,12 +34,12 @@ BAGANATOR_CONFIG = {
 		["void_storage"] = false,
 		["guild_bank"] = true,
 		["merchant"] = true,
-		["trade_partner"] = true,
+		["forge_of_bonds"] = false,
 		["scrapping_machine"] = true,
 		["tradeskill"] = true,
 		["mail"] = true,
 		["sockets"] = true,
-		["forge_of_bonds"] = false,
+		["trade_partner"] = true,
 		["bank"] = true,
 	},
 	["icon_corners_auto_insert_applied"] = {
@@ -126,32 +126,38 @@ BAGANATOR_CONFIG = {
 	},
 	["add_to_category_buttons_2"] = "drag",
 	["view_type"] = "unset",
-	["bag_empty_space_at_top"] = false,
+	["recent_timeout"] = 15,
 	["icon_text_quality_colors"] = false,
-	["currency_headers_collapsed"] = {
+	["custom_categories"] = {
 	},
 	["icon_text_font_size"] = 12,
-	["sort_start_at_bottom"] = false,
-	["bag_icon_size"] = 34,
+	["category_group_empty_slots"] = true,
+	["guild_view_position"] = {
+		"LEFT", -- [1]
+		20, -- [2]
+		0, -- [3]
+	},
 	["view_alpha"] = 1,
 	["bag_view_width"] = 12,
-	["icon_equipment_set_border"] = true,
+	["lock_frames"] = false,
 	["sort_ignore_slots_at_end"] = false,
+	["currencies_tracked_imported"] = {
+	},
 	["recent_characters_main_view"] = {
 		"Handrmandr-Golemagg", -- [1]
 		"Battitude-Golemagg", -- [2]
 	},
-	["debug_keywords"] = false,
-	["sort_ignore_slots_count_2"] = {
-		["Battitude-Golemagg"] = 0,
+	["currencies_tracked"] = {
+		["Battitude-Golemagg"] = {
+		},
+		["Handrmandr-Golemagg"] = {
+		},
 	},
 	["auto_sort_on_open"] = false,
 	["show_buttons_on_alt"] = false,
-	["sort_ignore_bank_slots_count"] = {
-		["Battitude-Golemagg"] = 0,
-	},
+	["guild_current_tab"] = 0,
 	["setting_anchors"] = false,
-	["upgrade_plugin"] = "none",
+	["guild_bank_sort_method"] = "unset",
 	["guild_view_dialog_position"] = {
 		"BOTTOM", -- [1]
 		"Baganator_GuildViewFrame", -- [2]
@@ -159,22 +165,20 @@ BAGANATOR_CONFIG = {
 		0, -- [4]
 		0, -- [5]
 	},
-	["guild_bank_sort_method"] = "unset",
+	["upgrade_plugin"] = "none",
 	["bank_only_view_position"] = {
 		"LEFT", -- [1]
 		1214.920532226563, -- [2]
 		209.5236206054688, -- [3]
 	},
-	["guild_current_tab"] = 0,
+	["sort_ignore_bank_slots_count"] = {
+		["Battitude-Golemagg"] = 0,
+	},
 	["show_sort_button_2"] = true,
-	["currencies_tracked"] = {
-		["Handrmandr-Golemagg"] = {
-		},
-		["Battitude-Golemagg"] = {
-		},
+	["sort_ignore_slots_count_2"] = {
+		["Battitude-Golemagg"] = 0,
 	},
-	["currencies_tracked_imported"] = {
-	},
+	["debug_keywords"] = false,
 	["currency_panel_position"] = {
 		"RIGHT", -- [1]
 		"Baganator_CategoryViewBackpackViewFrame", -- [2]
@@ -182,15 +186,11 @@ BAGANATOR_CONFIG = {
 		0, -- [4]
 		0, -- [5]
 	},
-	["lock_frames"] = false,
-	["guild_view_position"] = {
-		"LEFT", -- [1]
-		20, -- [2]
-		0, -- [3]
+	["icon_equipment_set_border"] = true,
+	["bag_icon_size"] = 34,
+	["sort_start_at_bottom"] = false,
+	["currency_headers_collapsed"] = {
 	},
-	["category_group_empty_slots"] = true,
-	["custom_categories"] = {
-	},
-	["recent_timeout"] = 15,
+	["bag_empty_space_at_top"] = false,
 }
 BAGANATOR_DATA = nil

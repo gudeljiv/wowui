@@ -25,26 +25,26 @@ TomTomDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
-		["Battlearm - Jin'do"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Mxym - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -108,26 +108,26 @@ TomTomWaypointsM = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Grgur - Golemagg"] = "Grgur - Golemagg",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -178,13 +178,13 @@ TomTomWaypointsM = {
 		},
 		["Kaonac - Jin'do"] = {
 		},
-		["Tadibey - Golemagg"] = {
+		["Miqa - Golemagg"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Mxym - Golemagg"] = {
 		},
-		["Grgur - Golemagg"] = {
+		["Tudum - Jin'do"] = {
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Tandaram - Jin'do"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
@@ -192,7 +192,7 @@ TomTomWaypointsM = {
 		},
 		["Dotwise - Golemagg"] = {
 		},
-		["Battlearm - Jin'do"] = {
+		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
@@ -204,19 +204,19 @@ TomTomWaypointsM = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Battlearm - Jin'do"] = {
 		},
 		["Poklopac - Mirage Raceway"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Tandaram - Jin'do"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
-		["Tudum - Jin'do"] = {
+		["Grgur - Golemagg"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Dmitar - Golemagg"] = {
 		},
-		["Miqa - Golemagg"] = {
+		["Tadibey - Golemagg"] = {
 		},
 	},
 }
