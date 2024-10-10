@@ -2,7 +2,7 @@
 ReforgeLiteDB = {
 	["windowHeight"] = 564,
 	["windowY"] = 1215.968139648438,
-	["windowX"] = 1029.206420898438,
+	["reforgeCheat"] = 3.991333246231079,
 	["openOnReforge"] = true,
 	["speed"] = 100000,
 	["updateTooltip"] = true,
@@ -14,16 +14,6 @@ ReforgeLiteDB = {
 	["profiles"] = {
 		["Handrmandr - Golemagg"] = {
 			["spellHaste"] = true,
-			["weights"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-				0, -- [5]
-				0, -- [6]
-				0, -- [7]
-				0, -- [8]
-			},
 			["caps"] = {
 				{
 					["stat"] = 0,
@@ -50,6 +40,16 @@ ReforgeLiteDB = {
 			},
 			["targetLevel"] = 3,
 			["darkIntent"] = false,
+			["weights"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+			},
 			["buffs"] = {
 			},
 			["itemsLocked"] = {
@@ -881,6 +881,10 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
+			["buffs"] = {
+			},
+			["itemsLocked"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -890,10 +894,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["itemsLocked"] = {
-			},
-			["buffs"] = {
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -1373,6 +1373,17 @@ ReforgeLiteDB = {
 			},
 		},
 		["Battlemoo - Golemagg"] = {
+			["spellHaste"] = true,
+			["weights"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+			},
 			["caps"] = {
 				{
 					["stat"] = 0,
@@ -1398,16 +1409,7 @@ ReforgeLiteDB = {
 				}, -- [2]
 			},
 			["targetLevel"] = 3,
-			["weights"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-				0, -- [5]
-				0, -- [6]
-				0, -- [7]
-				0, -- [8]
-			},
+			["darkIntent"] = false,
 			["buffs"] = {
 			},
 			["itemsLocked"] = {
@@ -1558,6 +1560,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1567,8 +1571,6 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1687,5 +1689,5 @@ ReforgeLiteDB = {
 		0, -- [2]
 		0, -- [3]
 	},
-	["reforgeCheat"] = 3.991333246231079,
+	["windowX"] = 1029.206420898438,
 }

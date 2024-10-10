@@ -143,10 +143,7 @@ BAGANATOR_CONFIG = {
 	["sort_ignore_slots_at_end"] = false,
 	["currencies_tracked_imported"] = {
 	},
-	["recent_characters_main_view"] = {
-		"Handrmandr-Golemagg", -- [1]
-		"Battitude-Golemagg", -- [2]
-	},
+	["debug_keywords"] = false,
 	["currencies_tracked"] = {
 		["Battitude-Golemagg"] = {
 		},
@@ -178,7 +175,10 @@ BAGANATOR_CONFIG = {
 	["sort_ignore_slots_count_2"] = {
 		["Battitude-Golemagg"] = 0,
 	},
-	["debug_keywords"] = false,
+	["recent_characters_main_view"] = {
+		"Handrmandr-Golemagg", -- [1]
+		"Battitude-Golemagg", -- [2]
+	},
 	["currency_panel_position"] = {
 		"RIGHT", -- [1]
 		"Baganator_CategoryViewBackpackViewFrame", -- [2]

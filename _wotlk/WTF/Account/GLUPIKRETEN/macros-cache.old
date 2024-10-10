@@ -1,3 +1,12 @@
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Abyssal Seahorse
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 0000000000000029 " " "132152"
 #showtooltip
 /dismount
@@ -12,30 +21,21 @@ VER 3 000000000000002A " " "132328"
 /petfollow
 /petpassive
 END
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/cast Abyssal Seahorse
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
-END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000036 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
 /cast item:0
 END
 VER 3 0000000000000038 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:44750
+/cast item:0
 END
 VER 3 0000000000000037 "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33449
+/cast item:0
 END
 VER 3 0000000000000033 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33447
+/cast item:13446
 END
 VER 3 0000000000000035 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -47,10 +47,12 @@ VER 3 000000000000000E "inspect" "136106"
 END
 VER 3 0000000000000034 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:33448
+/cast item:0
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Koltira Deathweaver
+/targetexact Ravandwyr
+/targetexact Nether-Stalker Khay'ji
+/targetexact Innkeeper Remi Dodoso
 /targetlasttarget [dead]
 END
 VER 3 0000000000000039 "solo raid" "134400"

@@ -137,11 +137,11 @@ BAGANATOR_CONFIG = {
 	["bag_view_width"] = 12,
 	["icon_equipment_set_border"] = true,
 	["sort_ignore_slots_at_end"] = false,
+	["debug_keywords"] = false,
 	["recent_characters_main_view"] = {
 		"Handrmandr-Golemagg", -- [1]
 		"Battitude-Golemagg", -- [2]
 	},
-	["debug_keywords"] = false,
 	["sort_ignore_slots_count_2"] = {
 		["Battitude-Golemagg"] = 0,
 	},
