@@ -6,7 +6,7 @@ ReforgeLiteDB = {
 		0.5, -- [3]
 	},
 	["windowY"] = 1215.968139648438,
-	["reforgeCheat"] = 3.991333246231079,
+	["windowX"] = 1029.206420898438,
 	["openOnReforge"] = true,
 	["speed"] = 100000,
 	["activeWindowTitle"] = {
@@ -789,6 +789,8 @@ ReforgeLiteDB = {
 				},
 			},
 			["targetLevel"] = 3,
+			["buffs"] = {
+			},
 			["weights"] = {
 				0, -- [1]
 				150, -- [2]
@@ -798,8 +800,6 @@ ReforgeLiteDB = {
 				10, -- [6]
 				60, -- [7]
 				90, -- [8]
-			},
-			["buffs"] = {
 			},
 			["itemsLocked"] = {
 			},
@@ -1592,10 +1592,6 @@ ReforgeLiteDB = {
 					0, -- [8]
 				},
 			},
-			["buffs"] = {
-			},
-			["itemsLocked"] = {
-			},
 			["weights"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1605,6 +1601,10 @@ ReforgeLiteDB = {
 				130, -- [6]
 				0, -- [7]
 				120, -- [8]
+			},
+			["itemsLocked"] = {
+			},
+			["buffs"] = {
 			},
 		},
 		["Tadibey - Golemagg"] = {
@@ -1686,7 +1686,7 @@ ReforgeLiteDB = {
 			},
 		},
 	},
-	["windowX"] = 1029.206420898438,
+	["reforgeCheat"] = 3.991333246231079,
 	["updateTooltip"] = true,
 	["customPresets"] = {
 	},

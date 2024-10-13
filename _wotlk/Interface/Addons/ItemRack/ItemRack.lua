@@ -1227,6 +1227,47 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 					icon:SetDesaturated(true)
 				end
 			end
+
+
+			button:CreateBeautyBorder(8)
+			local iid
+
+			if (ItemRack.Menu[i] and ItemRack.Menu[i] ~= 0) then
+				iid = string.match(ItemRack.Menu[i], '%d+')
+			end
+			if iid then
+				local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(iid)
+				if (itemQuality and itemQuality > 1) then
+					local r, g, b = GetItemQualityColor(itemQuality)
+					button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
+					button:SetBeautyBorderColor(r, g, b)
+				else
+					button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+					button:SetBeautyBorderColor(1, 1, 1)
+				end
+
+				if not button.ItemLevelText then
+					button.ItemLevelText = button:CreateFontString(nil, 'ARTWORK')
+					button.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					button.ItemLevelText:SetShadowOffset(0, 0)
+					button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
+					button.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+
+				if itemLevel then
+					button.ItemLevelText:SetText(itemLevel)
+				else
+					button.ItemLevelText:SetText('')
+				end
+			else
+				if button.ItemLevelText then
+					button.ItemLevelText:SetText('')
+				end
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
+
+
 		end
 		if showButtonMenu then
 			table.remove(ItemRack.Menu)
