@@ -8,39 +8,6 @@ local ejTable = Details222.EncounterJournalDump
 
 --maybe also cache old expansions and perhaps current expansion dungeons that aren't in the current mythic+ season
 
----@class details_encounterinfo : table
----@field name string
----@field mapId number
----@field instanceId number
----@field dungeonEncounterId number
----@field journalEncounterId number
----@field journalInstanceId number
----@field creatureName string
----@field creatureIcon string
----@field creatureId number
----@field creatureDisplayId number
----@field creatureUIModelSceneId number
-
----@class details_instanceinfo : table
----@field name string
----@field bgImage string
----@field mapId number
----@field instanceId number
----@field journalInstanceId number
----@field encountersArray details_encounterinfo[]
----@field encountersByName table<string, details_encounterinfo>
----@field encountersByDungeonEncounterId table<number, details_encounterinfo>
----@field encountersByJournalEncounterId table<number, details_encounterinfo>
----@field icon string
----@field iconSize table<number, number>
----@field iconCoords table<number, number, number, number>
----@field iconLore string
----@field iconLoreSize table<number, number>
----@field iconLoreCoords table<number, number, number, number>
----@field iconTexture string
----@field iconTextureSize table<number, number>
----@field iconTextureCoords table<number, number, number, number>
-
 ---@return details_encounterinfo?
 function Details:GetEncounterInfo(id)
     if (not Details222.EJCache.CacheCreated) then
@@ -257,7 +224,7 @@ function Details222.EJCache.CreateEncounterJournalDump()
 
                     --get information about the bosses in the raid
                     for encounterIndex = 1, maxRaidBosses do
-                        local encounterName, encounterDescription, journalEncounterID, rootSectionID, link, journalInstanceID, dungeonEncounterID, instanceID = EJ_GetEncounterInfoByIndex(encounterIndex, journalInstanceID)
+                        local encounterName, encounterDescription, journalEncounterID, rootSectionID, link, journalInstanceID, dungeonEncounterID = EJ_GetEncounterInfoByIndex(encounterIndex, journalInstanceID) --, instanceID
 
                         if (encounterName) then
                             local encounterData = {
@@ -269,9 +236,16 @@ function Details222.EJCache.CreateEncounterJournalDump()
                                 journalInstanceId = journalInstanceID,
                             }
 
+                            if (not dungeonEncounterID) then
+                                --dungeonEncounterID and instanceID are nil in mop
+                            end
+
                             Details222.EJCache.CurrentContent[encounterName] = true
                             Details222.EJCache.CurrentContent[journalEncounterID] = true
-                            Details222.EJCache.CurrentContent[dungeonEncounterID] = true
+
+                            if (dungeonEncounterID) then --mists of pandaria isn't returning this value
+                                Details222.EJCache.CurrentContent[dungeonEncounterID] = true
+                            end
 
                             local journalEncounterCreatureId, creatureName, creatureDescription, creatureDisplayID, iconImage, uiModelSceneID = EJ_GetCreatureInfo(1, journalEncounterID)
                             if (journalEncounterCreatureId) then
@@ -285,14 +259,16 @@ function Details222.EJCache.CreateEncounterJournalDump()
                             instanceData.encountersArray[#instanceData.encountersArray+1] = encounterData
                             instanceData.encountersByName[encounterName] = encounterData
                             --print(instanceName, encounterName, journalEncounterID, journalInstanceID, dungeonEncounterID, instanceID)
-                            instanceData.encountersByDungeonEncounterId[dungeonEncounterID] = encounterData
+                            if (dungeonEncounterID) then
+                                instanceData.encountersByDungeonEncounterId[dungeonEncounterID] = encounterData
+                                Details222.EJCache.CacheEncountersBy_EncounterId[dungeonEncounterID] = encounterData
+                                id_to_journalInstanceID[dungeonEncounterID] = journalInstanceID
+                            end
+                            
                             instanceData.encountersByJournalEncounterId[journalEncounterID] = encounterData
                             Details222.EJCache.CacheEncountersBy_EncounterName[encounterName] = encounterData
-                            Details222.EJCache.CacheEncountersBy_EncounterId[dungeonEncounterID] = encounterData
                             Details222.EJCache.CacheEncountersBy_JournalEncounterId[journalEncounterID] = encounterData
-
                             id_to_journalInstanceID[encounterName] = journalInstanceID
-                            id_to_journalInstanceID[dungeonEncounterID] = journalInstanceID
                             id_to_journalInstanceID[journalEncounterID] = journalInstanceID
                         end
                     end

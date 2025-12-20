@@ -2,17 +2,20 @@
 local Data = ECSLoader:ImportModule("Data")
 ---@type DataUtils
 local DataUtils = ECSLoader:ImportModule("DataUtils")
+---@type Utils
+local Utils = ECSLoader:ImportModule("Utils")
 
 local _SpellHit = {}
+local _, _, classId = UnitClass("player")
 
-function Data:SpellMissChanceSameLevel()
+---@param school number
+---@return string
+function Data:SpellMissChanceSameLevel(school)
     local missChance = ECS.IsWotlk and 3 or 4
 
-    missChance = missChance - _SpellHit:GetTalentSpellHitBonus()
-    local mod = _SpellHit:GetSpellHitBonus()
-    if mod then
-        missChance = missChance - mod
-    end
+    missChance = missChance - _SpellHit:GetTalentSpellHitBonus(school)
+    local mod = _SpellHit:GetSpellHitBonus(school)
+    missChance = missChance - mod
 
     if ECS.IsWotlk and missChance < 0 then
         missChance = 0
@@ -25,14 +28,14 @@ function Data:SpellMissChanceSameLevel()
     return DataUtils:Round(missChance, 2) .. "%"
 end
 
-function Data:SpellMissChanceBossLevel()
+---@param school number
+---@return string
+function Data:SpellMissChanceBossLevel(school)
     local missChance = 17
 
-    missChance = missChance - _SpellHit:GetTalentSpellHitBonus()
-    local mod = _SpellHit:GetSpellHitBonus()
-    if mod then
-        missChance = missChance - mod
-    end
+    missChance = missChance - _SpellHit:GetTalentSpellHitBonus(school)
+    local mod = _SpellHit:GetSpellHitBonus(school)
+    missChance = missChance - mod
 
     if ECS.IsWotlk and missChance < 0 then
         missChance = 0
@@ -45,21 +48,22 @@ function Data:SpellMissChanceBossLevel()
     return DataUtils:Round(missChance, 2) .. "%"
 end
 
-function _SpellHit:GetTalentSpellHitBonus()
-    local _, _, classId = UnitClass("player")
+---@param school number
+---@return number
+function _SpellHit:GetTalentSpellHitBonus(school)
     local bonus = 0
 
     if classId == Data.PRIEST then
         if ECS.IsWotlk then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
             bonus = points -- 0-3% from Shadow Focus
-        else
+        elseif school == Data.SHADOW_SCHOOL then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
             bonus = points * 2 -- 0-10% from Shadow Focus
         end
     end
 
-    if classId == Data.PALADIN and (not ECS.IsWotlk) then
+    if ECS.IsTBC and classId == Data.PALADIN then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
         bonus = points * 1 -- 0-3% Precision
     end
@@ -68,20 +72,18 @@ function _SpellHit:GetTalentSpellHitBonus()
         if ECS.IsWotlk then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 17)
             bonus = points * 1 -- 0-3% from Elemental Precision
-        else
+        elseif school == Data.FIRE_SCHOOL or school == Data.FROST_SCHOOL then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 17)
             bonus = points * 2 -- 0-6% from Elemental Precision
+        elseif school == Data.ARCANE_SCHOOL then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 3)
+            bonus = points * 2 -- 0-10% from Arcane Focus
         end
     end
 
-    if classId == Data.SHAMAN then
-        if ECS.IsWotlk then
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 16)
-            bonus = points -- 0-3% from Elemental Precision
-        else
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
-            bonus = points * 1 -- 0-3% Nature's Guidance
-        end
+    if ECS.IsWotlk and classId == Data.SHAMAN then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 16)
+        bonus = points -- 0-3% from Elemental Precision
     end
 
     if ECS.IsWotlk and classId == Data.DRUID then
@@ -98,11 +100,12 @@ function _SpellHit:GetTalentSpellHitBonus()
 end
 
 ---@return number
-function _SpellHit:GetSpellHitBonus()
+function _SpellHit:GetSpellHitBonus(school)
     if CR_HIT_SPELL then
         return GetCombatRatingBonus(CR_HIT_SPELL) + _SpellHit:GetSpellHitFromBuffs()
     end
-    return GetSpellHitModifier()
+    -- GetSpellHitModifier returns nil on dungeon entering/teleport
+    return (GetSpellHitModifier() or 0) + _SpellHit.GetHitFromRunes(school)
 end
 
 function _SpellHit:GetSpellHitFromBuffs()
@@ -132,13 +135,41 @@ function _SpellHit:GetSpellHitFromBuffs()
     return mod
 end
 
----@return string
-function Data:SpellHitBonus()
-    local hit = _SpellHit:GetTalentSpellHitBonus()
-    local mod = _SpellHit:GetSpellHitBonus()
-    if mod then
-        hit = hit + mod
+---@param school number
+---@return number
+function _SpellHit.GetHitFromRunes(school)
+    local mod = 0
+
+    if (not ECS.IsSoD) then
+        return mod
     end
+
+    local finger1Rune = DataUtils.GetRuneForEquipSlot(Utils.CHAR_EQUIP_SLOTS.Finger1)
+    local finger2Rune = DataUtils.GetRuneForEquipSlot(Utils.CHAR_EQUIP_SLOTS.Finger2)
+
+    if school == Data.ARCANE_SCHOOL and (finger1Rune == 7514 or finger2Rune == 7514) then
+        mod = mod + 6 -- 6% from Arcane Combat Specialization Rune
+    elseif school == Data.FIRE_SCHOOL and (finger1Rune == 7515 or finger2Rune == 7515) then
+        mod = mod + 6 -- 6% from Fire Specialization Rune
+    elseif school == Data.FROST_SCHOOL and (finger1Rune == 7516 or finger2Rune == 7516) then
+        mod = mod + 6 -- 6% from Frost Specialization Rune
+    elseif school == Data.NATURE_SCHOOL and (finger1Rune == 7517 or finger2Rune == 7517) then
+        mod = mod + 6 -- 6% from Frost Specialization Rune
+    elseif school == Data.SHADOW_SCHOOL and (finger1Rune == 7518 or finger2Rune == 7518) then
+        mod = mod + 6 -- 6% from Shadow Specialization Rune
+    elseif school == Data.HOLY_SCHOOL and (finger1Rune == 7519 or finger2Rune == 7519) then
+        mod = mod + 6 -- 6% from Holy Specialization Rune
+    end
+
+    return mod
+end
+
+---@param school number
+---@return string
+function Data.SpellHitBonus(school)
+    local hit = _SpellHit:GetTalentSpellHitBonus(school)
+    local mod = _SpellHit:GetSpellHitBonus(school)
+    hit = hit + mod
 
     return DataUtils:Round(hit, 2) .. "%"
 end

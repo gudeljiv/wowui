@@ -31,80 +31,72 @@ Module.noMin = true
 Module.showColorHelp = false
 Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
 
-Module.stances = (TMW.isWrath or TMW.isCata) and {
-	WARRIOR = {
-		[2457] = 	GetSpellName(2457), 	-- Battle Stance
-		[71] = 		GetSpellName(71),		-- Defensive Stance
-		[2458] = 	GetSpellName(2458), 	-- Berserker Stance
-	},
-	DRUID = {
-		[5487] = 	GetSpellName(5487), 	-- Bear Form
-		[9634] = 	GetSpellName(9634), 	-- Dire Bear Form
-		[768] = 	GetSpellName(768),		-- Cat Form
-		[783] = 	GetSpellName(783),		-- Travel Form
-		[1066] = 	GetSpellName(1066),		-- Aquatic Form
-		[24858] = 	GetSpellName(24858), 	-- Moonkin Form
-		[33891] = 	GetSpellName(33891), 	-- Tree of Life
-		[33943] = 	GetSpellName(33943), 	-- Flight Form
-		[40120] = 	GetSpellName(40120), 	-- Swift Flight Form	
-	},
-	PRIEST = {
-		[15473] = 	GetSpellName(15473), 	-- Shadowform	
-	},
-	ROGUE = {
-		[1784] = 	GetSpellName(1784), 	-- Stealth	
-	},
-	PALADIN = {
-		[19746] = 	GetSpellName(19746), 	-- Concentration Aura
-		[32223] = 	GetSpellName(32223), 	-- Crusader Aura
-		[465] = 	GetSpellName(465),		-- Devotion Aura
-		[19900] = 	GetSpellName(19891), 	-- Fire Resistance Aura
-		[19898] = 	GetSpellName(19891), 	-- Frost Resistance Aura
-		[19896] = 	GetSpellName(19891), 	-- Shadow Resistance Aura
-		[7294] = 	GetSpellName(7294),		-- Retribution Aura	
-	},
-	DEATHKNIGHT = {
-		[48266] = 	GetSpellName(48266), 	-- Blood
-		[48263] = 	GetSpellName(48263), 	-- Frost
-		[48265] = 	GetSpellName(48265), 	-- Unholy
-	},
-} or TMW.isClassic and {
-	WARRIOR = {
-		[2457] = 	GetSpellName(2457), 	-- Battle Stance
-		[71] = 		GetSpellName(71),		-- Defensive Stance
-		[2458] = 	GetSpellName(2458), 	-- Berserker Stance
-	},
-	DRUID = {
-		[5487] = 	GetSpellName(5487), 	-- Bear Form
-		[768] = 	GetSpellName(768),		-- Cat Form
-		[783] = 	GetSpellName(783),		-- Travel Form
-		[24858] = 	GetSpellName(24858), 	-- Moonkin Form
-	},
-	PRIEST = {
-		[15473] = 	GetSpellName(15473), 	-- Shadowform	
-	},
-	ROGUE = {
-		[1784] = 	GetSpellName(1784), 	-- Stealth	
-	},
-} or {
-	DRUID = {
-		[5487] = 	GetSpellName(5487), 	-- Bear Form
-		[768] = 	GetSpellName(768),		-- Cat Form
-		[783] = 	GetSpellName(783),		-- Travel Form
-		[24858] = 	GetSpellName(24858), 	-- Moonkin Form
-		[33891] = 	GetSpellName(33891), 	-- Incarnation: Tree of Life
-		[171745] = 	GetSpellName(171745), 	-- Claws of Shirvallah	
-	},
-	ROGUE = {
-		[1784] = 	GetSpellName(1784), 	-- Stealth	
-	},
+Module.stances = {
+	[2457] = 	GetSpellName(2457), 	-- Battle Stance
+	[71] = 		GetSpellName(71),		-- Defensive Stance
+	[2458] = 	GetSpellName(2458), 	-- Berserker Stance
+	[386164] = 	GetSpellName(386164), 	-- Battle Stance (dragonflight)
+	[386208] = 	GetSpellName(386208),	-- Defensive Stance (dragonflight)
+	[386196] = 	GetSpellName(386196), 	-- Berserker Stance (dragonflight)
+	[412513] =  GetSpellName(412513),   -- Gladiator Stance (SOD)
+	
+	[5487] = 	GetSpellName(5487), 	-- Bear Form
+	[768] = 	GetSpellName(768),		-- Cat Form
+	[1066] = 	GetSpellName(1066), 	-- Aquatic Form
+	[783] = 	GetSpellName(783),		-- Travel Form
+	[24858] = 	GetSpellName(24858), 	-- Moonkin Form
+	[33891] = 	GetSpellName(33891), 	-- Tree of Life
+	[33943] = 	GetSpellName(33943), 	-- Flight Form
+	[40120] = 	GetSpellName(40120), 	-- Swift Flight Form	
+	[9634] = 	GetSpellName(9634), 	-- Dire Bear Form
+	[171745] = 	GetSpellName(171745), 	-- Claws of Shirvallah	
+
+	[1784] = 	GetSpellName(1784), 	-- Stealth	
+
+	[13165] = 	GetSpellName(13165), 	-- Aspect of the Hawk
+	[109260] = 	GetSpellName(109260), 	-- Aspect of the Iron Hawk
+	[5118] = 	GetSpellName(5118), 	-- Aspect of the Cheetah
+	[13159] = 	GetSpellName(13159), 	-- Aspect of the Pack
+
+	[48263] = 	GetSpellName(48263), 	-- Blood Presence
+	[48266] = 	GetSpellName(48266), 	-- Frost Presence
+	[48265] = 	GetSpellName(48265), 	-- Unholy Presence	
+
+	[103958] = 	GetSpellName(103958),	-- Metamorphosis
+	[403789] =  GetSpellName(403789),   -- Metamorphosis (SOD)
+	[114168] = 	GetSpellName(114168),	-- Dark Apotheosis
+
+	[15473] = 	GetSpellName(15473), 	-- Shadowform	
+
+	[115069] = 	GetSpellName(115069),	-- Sturdy Ox
+	[115070] = 	GetSpellName(115070),	-- Wise Serpent
+	[103985] = 	GetSpellName(103985),	-- Fierce Tiger
+
+	[105361] = 	GetSpellName(105361), 	-- Seal of Command
+	[20165] = 	GetSpellName(20165), 	-- Seal of Insight
+	[20164] = 	GetSpellName(20164),	-- Seal of Justice
+	[20154] = 	GetSpellName(20154), 	-- Seal of Righteousness
+	[31801] = 	GetSpellName(31801),	-- Seal of Truth
+	[19746] = 	GetSpellName(19746), 	-- Concentration Aura
+	[32223] = 	GetSpellName(32223), 	-- Crusader Aura
+	[465] = 	GetSpellName(465),		-- Devotion Aura
+	[19900] = 	GetSpellName(19891), 	-- Fire Resistance Aura
+	[19898] = 	GetSpellName(19891), 	-- Frost Resistance Aura
+	[19896] = 	GetSpellName(19891), 	-- Shadow Resistance Aura
+	[7294] = 	GetSpellName(7294),		-- Retribution Aura	
 }
+
 function Module:Table_Get()
-	return self.stances[pclass]
+	local allStances = {}
+	for spellID, name in pairs(Module.stances) do
+		allStances[spellID] = name
+	end
+	return allStances
 end
 function Module:Entry_AddToList_1(f, spellID)
 	if spellID == 0 then
 		f.Name:SetText(NONE)
+		f.ID:SetText(nil)
 
 		f.tooltiptitle = NONE
 
@@ -115,11 +107,13 @@ function Module:Entry_AddToList_1(f, spellID)
 		local name, _, tex = GetSpellInfo(spellID)
 
 		f.Name:SetText(name)
+		f.ID:SetText(spellID)
 
 		f.tooltipmethod = TMW.GameTooltip_SetSpellByIDWithClassIcon
 		f.tooltiparg = spellID
 
-		f.insert = name
+		f.insert = SUG.inputType == "number" and spellID or name
+		f.insert2 = SUG.inputType ~= "number" and spellID or name
 
 		f.Icon:SetTexture(tex)
 	end

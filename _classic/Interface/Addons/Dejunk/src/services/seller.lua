@@ -1,6 +1,7 @@
 local Addon = select(2, ...) ---@type Addon
 local E = Addon:GetModule("Events")
 local EventManager = Addon:GetModule("EventManager")
+local GetCoinTextureString = C_CurrencyInfo and C_CurrencyInfo.GetCoinTextureString or GetCoinTextureString
 local Items = Addon:GetModule("Items")
 local JunkFilter = Addon:GetModule("JunkFilter")
 local L = Addon:GetModule("Locale")
@@ -49,18 +50,22 @@ end)
 -- Local Functions
 -- ============================================================================
 
+local function handlePopup(popup)
+  if popup and popup:IsShown() and popup.which == "CONFIRM_MERCHANT_TRADE_TIMER_REMOVAL" then
+    local button = popup.GetButton1 and popup:GetButton1() or popup.button1
+    button:Click()
+  end
+end
+
 local function handleStaticPopup()
   if Addon.IS_VANILLA then return end
 
-  local popup
-  for i = 1, STATICPOPUP_NUMDIALOGS do
-    popup = _G["StaticPopup" .. i]
-    if popup and
-        popup:IsShown() and
-        popup.which == "CONFIRM_MERCHANT_TRADE_TIMER_REMOVAL"
-    then
-      popup.button1:Click()
-      return
+  if type(StaticPopup_ForEachShownDialog) == "function" then
+    StaticPopup_ForEachShownDialog(handlePopup)
+  else
+    for i = 1, STATICPOPUP_NUMDIALOGS do
+      local popup = _G["StaticPopup" .. i]
+      handlePopup(popup)
     end
   end
 end
@@ -89,7 +94,7 @@ function Seller:Start(auto)
   -- Don't start if busy.
   if Addon:IsBusy() then return end
   -- Don't start without merchant.
-  if not (MerchantFrame and MerchantFrame:IsShown()) then
+  if not Addon:IsAtMerchant() then
     return Addon:Print(L.CANNOT_SELL_WITHOUT_MERCHANT)
   end
 
@@ -122,7 +127,7 @@ end
 function Seller:HandleItem(item)
   if Addon:IsBusy() then return end
 
-  if not (MerchantFrame and MerchantFrame:IsShown()) then
+  if not Addon:IsAtMerchant() then
     return Addon:Print(L.CANNOT_SELL_WITHOUT_MERCHANT)
   end
 

@@ -8,12 +8,21 @@ local localeText = {
         NOTLEVEL_HEADER = "Not Yet Available",
         MISSINGTALENT_HEADER = "Missing Required Talents",
         IGNORED_HEADER = "Ignored",
+        IGNORED_PET_HEADER = "Ignored (Pet)",
         KNOWN_HEADER = "Already Known",
         KNOWN_PET_HEADER = "Already Known (Pet)",
         PET_HEADER = "Pet Abilities",
         COST_FORMAT = "Cost: %s",
         TOTALCOST_FORMAT = "Total Cost: %s",
         TOTALSAVINGS_FORMAT = "Total Savings: %s",
+        TOTALSPENT_FORMAT = "Total Spent: %s",
+        BROKER_HEADER_HIDDEN_FORMAT = "%s shown (%s total)",
+        BROKER_HIDDEN_FORMAT = "And another %d that cost %s",
+        BROKER_NOTHING = "Nothing left to learn!",
+        BROKER_CLICK_BEAST_TRAIN = "Hint: Shift-Click to open the Beast Training UI",
+        BROKER_CLICK_OPEN = "Hint: Click to open spellbook.",
+        BROKER_OPEN_IN_COMBAT = "Can't open spellbook while in combat",
+        OPEN_BEAST_IN_COMBAT = "Can't open Beast Training while in combat",
         LEVEL_FORMAT = "Level %s",
         TAB_TEXT = "What can I train?",
         OPEN_BEAST_TRAINING = "Please open the Beast Training UI",
@@ -24,7 +33,10 @@ local localeText = {
         NEW_IGNORE_FEATURE = "Right-click to ignore abilities",
         CLICK_TO_DISMISS = "Click header to dismiss",
         IGNORED_TT = "Ignored",
-        IGNORE_ALL_TT = "Ignore all ranks"
+        IGNORE_ALL_TT = "Ignore all ranks",
+        SEARCH_NO_RESULTS = "No results found",
+        INCUBUS = "Incubus",
+        NOT_KNOWN = "Not known"
     },
     frFR = {
         AVAILABLE_HEADER = "Disponible",
@@ -120,7 +132,7 @@ local localeText = {
 
 wt.L = localeText["enUS"]
 local locale = GetLocale()
-if (locale == "enUS" or locale == "enGB" or localeText[locale] == nil) then
+if locale == "enUS" or locale == "enGB" or localeText[locale] == nil then
     return
 end
 for k, v in pairs(localeText[locale]) do

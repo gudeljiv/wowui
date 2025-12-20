@@ -1,12 +1,36 @@
 local AddonName, SAO = ...
 local Module = "shutdown"
 
+-- Fix of options functions, also seen in options\InterfaceOptionsPanels.lua
+local InterfaceOptionsFrame_OpenToCategory = InterfaceOptionsFrame_OpenToCategory
+if Settings and Settings.RegisterCanvasLayoutCategory then
+    -- Deprecated. Use Settings.OpenToCategory().
+    InterfaceOptionsFrame_OpenToCategory = function(categoryIDOrFrame)
+        if type(categoryIDOrFrame) == "table" then
+            local categoryID = categoryIDOrFrame.name;
+            return Settings.OpenToCategory(categoryID);
+        else
+            return Settings.OpenToCategory(categoryIDOrFrame);
+        end
+    end
+end
+
 local Categories = {
     UNSUPPORTED_CLASS = {
-        Priority = 1,
+        Priority = 0,
         Get = function()
             return {
                 Reason = SAO:unsupportedClass(),
+                Button = nil, -- There are no obvious action to suggest
+                DisableCondition = nil, -- There are no conditions: disabling is absolute
+            }
+        end,
+    },
+    DISABLED_CLASS = {
+        Priority = 1,
+        Get = function()
+            return {
+                Reason = SAO:disabledClass():gsub(" %%s", ""):gsub("%%s",""):gsub(" :%)", ""),
                 Button = nil, -- There are no obvious action to suggest
                 DisableCondition = nil, -- There are no conditions: disabling is absolute
             }

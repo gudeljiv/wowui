@@ -208,6 +208,17 @@ local function createOptions(id, data)
       order = 26,
       hidden = function() return not data.api end
     },
+    alpha = {
+      type = "range",
+      control = "WeakAurasSpinBox",
+      width = WeakAuras.normalWidth,
+      name = L["Alpha"],
+      order = 50,
+      min = 0,
+      max = 1,
+      bigStep = 0.01,
+      isPercent = true
+    },
     endHeader = {
       type = "header",
       order = 100,
@@ -288,7 +299,7 @@ end
 
 local function createIcon()
   local data = {
-    model_fileId = WeakAuras.IsClassic() and "165589" or "122968", -- spells/arcanepower_state_chest.m2 & Creature/Arthaslichking/arthaslichking.m2
+    model_fileId = "122968", -- spells/arcanepower_state_chest.m2 & Creature/Arthaslichking/arthaslichking.m2
     modelIsUnit = false,
     model_x = 0,
     model_y = 0,

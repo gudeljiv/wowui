@@ -8,7 +8,7 @@ local time = time
 local C_Timer = _G.C_Timer
 local unpack = _G.unpack
 local GetTime = _G.GetTime
-local tremove = _G.tremove
+
 local GetInstanceInfo = _G.GetInstanceInfo
 
 local Loc = _G.LibStub("AceLocale-3.0"):GetLocale("Details")
@@ -62,7 +62,7 @@ function DetailsMythicPlusFrame.BossDefeated(this_is_end_end, encounterID, encou
 end
 
 --this function is called 2 seconds after the event COMBAT_MYTHICDUNGEON_END
-function DetailsMythicPlusFrame.MythicDungeonFinished(fromZoneLeft)
+function DetailsMythicPlusFrame.MythicDungeonFinished(bFromZoneLeft)
     if (DetailsMythicPlusFrame.IsDoingMythicDungeon) then
         if (DetailsMythicPlusFrame.DevelopmentDebug) then
             print("Details!", "MythicDungeonFinished() > the dungeon was a Mythic+ and just ended.")
@@ -88,7 +88,7 @@ function DetailsMythicPlusFrame.MythicDungeonFinished(fromZoneLeft)
         Details222.MythicPlus.LogStep("MythicDungeonFinished() | merge_boss_trash = " .. (bCanMergeBossTrash and "true" or "false"))
 
         --check if there's trash after the last boss, if does, merge it with the trash of the last boss defeated
-        if (bCanMergeBossTrash and not Details.MythicPlus.IsRestoredState and not fromZoneLeft) then
+        if (bCanMergeBossTrash and not Details.MythicPlus.IsRestoredState) then -- and not bFromZoneLeft
             --is the current combat not a boss fight?
             --this mean a combat was opened after the last boss of the dungeon was killed
             if (not Details.tabela_vigente.is_boss and Details.tabela_vigente:GetCombatTime() > 5) then
@@ -100,7 +100,7 @@ function DetailsMythicPlusFrame.MythicDungeonFinished(fromZoneLeft)
         end
 
         --merge segments
-        if (Details.mythic_plus.make_overall_when_done and not Details.MythicPlus.IsRestoredState and not fromZoneLeft) then
+        if (not Details.MythicPlus.IsRestoredState) then -- and not bFromZoneLeft
             if (DetailsMythicPlusFrame.DevelopmentDebug) then
                 print("Details!", "MythicDungeonFinished() > not in combat, creating overall segment now")
             end
@@ -111,10 +111,12 @@ function DetailsMythicPlusFrame.MythicDungeonFinished(fromZoneLeft)
 
 		--the run is valid, schedule to open the chart window
 		Details.mythic_plus.delay_to_show_graphic = 1
-		C_Timer.After(Details.mythic_plus.delay_to_show_graphic, mythicDungeonFrames.ShowEndOfMythicPlusPanel)
+        if (not bFromZoneLeft) then
+		    C_Timer.After(Details.mythic_plus.delay_to_show_graphic, mythicDungeonFrames.ShowEndOfMythicPlusPanel)
+        end
 
         --shutdown parser for a few seconds to avoid opening new segments after the run ends
-        if (not fromZoneLeft) then
+        if (not bFromZoneLeft) then
             Details:CaptureSet(false, "damage", false, 15)
             Details:CaptureSet(false, "energy", false, 15)
             Details:CaptureSet(false, "aura", false, 15)
@@ -131,7 +133,7 @@ function DetailsMythicPlusFrame.MythicDungeonStarted()
     --this counter is individual for each character
     Details.mythic_dungeon_id = Details.mythic_dungeon_id + 1
 
-    local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo()
+    local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo and C_ChallengeMode.GetActiveKeystoneInfo()
     local zoneName, _, _, _, _, _, _, currentZoneID = GetInstanceInfo()
 
     local mapID = C_Map.GetBestMapForUnit("player")
@@ -184,7 +186,7 @@ function DetailsMythicPlusFrame.OnChallengeModeStart()
     else
         --print("D! mythic dungeon was already started!")
         --from zone changed
-        local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo()
+        local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo and C_ChallengeMode.GetActiveKeystoneInfo()
         local zoneName, _, _, _, _, _, _, currentZoneID = GetInstanceInfo()
 
         if (not Details.MythicPlus.Started and Details.MythicPlus.DungeonID == currentZoneID and Details.MythicPlus.Level == mythicLevel) then
@@ -225,7 +227,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
                 if (not combatObject.is_boss.killed) then
                     local encounterName = combatObject.is_boss.encounter
                     local zoneName = combatObject.is_boss.zone
-                    local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo()
+                    local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo and C_ChallengeMode.GetActiveKeystoneInfo()
 
                     local currentCombat = Details:GetCurrentCombat()
 
@@ -315,7 +317,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 			end
 		end
 
-        local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo()
+        local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo and C_ChallengeMode.GetActiveKeystoneInfo()
         local zoneName, _, _, _, _, _, _, currentZoneID = GetInstanceInfo()
 		Details222.MythicPlus.LogStep("COMBAT_MYTHICDUNGEON_START | settings: " .. result .. " | level: " .. mythicLevel .. " | zone: " .. zoneName .. " | zoneId: " .. currentZoneID)
 
@@ -332,6 +334,71 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 
     elseif (event == "COMBAT_MYTHICPLUS_OVERALL_READY") then
         DetailsMythicPlusFrame.SaveMythicPlusStats(...)
+
+        C_Timer.After(1, function()
+            local okay, errorText = pcall(function()
+                local recentPlayers = Details:GetRecentPlayers()
+                local recentType = "mplus"
+
+                --create a list of character names in the friends list, so we don't add character that already in the friends list
+                local friendsCharacters = {}
+                local BnetFriends = BNGetNumFriends()
+                for i = 1, BnetFriends do
+                    local bNetFriend = C_BattleNet.GetFriendAccountInfo(i)
+                    if (bNetFriend) then
+                        local gameAccountInfo = bNetFriend.gameAccountInfo
+                        if (gameAccountInfo) then
+                            local isOnline = gameAccountInfo.isOnline
+                            local characterName = gameAccountInfo.characterName
+                            if (isOnline and characterName and string.len(characterName) >= 2) then
+                                friendsCharacters[gameAccountInfo.characterName] = true
+                            end
+                        end
+                    end
+                end
+
+                for i = 1, GetNumGroupMembers() - 1 do
+                    local unitId = "party" .. i
+                    local playerName = UnitName(unitId)
+
+                    if (playerName and not friendsCharacters[playerName] and not C_FriendList.GetFriendInfo(playerName)) then
+                        local classId = select(3, UnitClass(unitId)) or 0
+                        local specId = Details.cached_specs[UnitGUID(unitId)] or 0
+                        local timeWhen = time()
+                        local challengeMapId = Details222.MythicPlus.MapID or 0
+                        local mapId = Details222.MythicPlus.InstanceMapID or 0
+                        local level = Details222.MythicPlus.Level
+                        local onTime = Details222.MythicPlus.OnTime
+
+                        --check if the player is already in the recent players table
+                        local found = false
+                        for j = 1, #recentPlayers do
+                            local thisTable = recentPlayers[j]
+                            if (thisTable[3] == playerName) then
+                                table.remove(recentPlayers, j)
+                                table.insert(recentPlayers, 1, thisTable)
+                                thisTable[7] = thisTable[7] + 1 --increment the played together amount
+                                found = true
+                                break
+                            end
+                        end
+
+                        local runId = 0
+                        if (DetailsMythicPlus) then
+                            runId = DetailsMythicPlus.GetLatestRunId() or 0
+                        end
+
+                        if (not found) then
+                            recentPlayers[#recentPlayers + 1] = {recentType, timeWhen, playerName, classId, specId, mapId, 1, challengeMapId, level, onTime, runId}
+                        end
+                    end
+                end
+            end) --pcall end
+
+            if (not okay) then
+                Details:Msg("add recent friend resulted in an error:", errorText)
+            end
+        end) --c_timer end
     end
 end
 
@@ -353,6 +420,40 @@ local playerLeftDungeonZoneTimer_Callback = function()
             DetailsMythicPlusFrame.ZoneLeftTimer = nil
         end
     end
+end
+
+function Details:GetRecentPlayers()
+    return Details.recent_players
+end
+
+---usage: local recentType, timeWhen, playerName, classId, specId, mapId, param1, param2, param3, param4 = Details:UnpackRecentPlayerTable(recentPlayerTable)
+---@param recentPlayerTable table
+---@return string recentType
+---@return number timeWhen
+---@return string playerName
+---@return number classId
+---@return number specId
+---@return number mapId
+---@return number playedTogetherAmount --amount of times the player played with this player
+---@return number param1 --for mplus this is challengeMapId
+---@return number param2 --for mplus this is level
+---@return boolean param3 --for mplus this is onTime
+---@return number param4 --for mplus this is runId
+function Details:UnpackRecentPlayerTable(recentPlayerTable)
+    local from = recentPlayerTable[1] --string, e.g. "mplus"
+    local when = recentPlayerTable[2] --time()
+    local playerName = recentPlayerTable[3] --string
+    local classId = recentPlayerTable[4] --number
+    local specId = recentPlayerTable[5] --number
+    local mapId = recentPlayerTable[6] --number
+    local playedTogetherAmount = recentPlayerTable[7] --number
+
+    local challengeMapId = recentPlayerTable[8] --number
+    local level = recentPlayerTable[9] --number
+    local onTime = recentPlayerTable[10] --boolean
+    local runId = recentPlayerTable[11] --number
+
+    return from, when, playerName, classId, specId, mapId, playedTogetherAmount, challengeMapId, level, onTime, runId
 end
 
 DetailsMythicPlusFrame:SetScript("OnEvent", function(_, event, ...)
@@ -396,7 +497,21 @@ end)
 
 ---@param combatObject combat
 function DetailsMythicPlusFrame.SaveMythicPlusStats(combatObject)
-    local mapChallengeModeID, mythicLevel, time, onTime, keystoneUpgradeLevels, practiceRun, oldOverallDungeonScore, newOverallDungeonScore, IsMapRecord, IsAffixRecord, PrimaryAffix, isEligibleForScore, members = C_ChallengeMode.GetCompletionInfo()
+    local completionInfo = C_ChallengeMode.GetChallengeCompletionInfo()
+    local mapChallengeModeID = C_ChallengeMode.GetActiveChallengeMapID()
+    local PrimaryAffix = 0
+    local upgradeMembers = completionInfo.members
+    local mythicLevel = completionInfo.level
+    local time = completionInfo.time
+    local onTime = completionInfo.onTime
+    local keystoneUpgradeLevels = completionInfo.keystoneUpgradeLevels
+    local practiceRun = completionInfo.practiceRun
+    local isAffixRecord = completionInfo.isAffixRecord
+    local isMapRecord = completionInfo.isMapRecord
+    local isEligibleForScore = completionInfo.isEligibleForScore
+    local oldDungeonScore = completionInfo.oldOverallDungeonScore
+    local newDungeonScore = completionInfo.newOverallDungeonScore
+
     if (mapChallengeModeID) then
         local statName = "mythicdungeoncompletedDF2"
 
@@ -450,7 +565,7 @@ function DetailsMythicPlusFrame.SaveMythicPlusStats(combatObject)
 
         statsForLevel.history = statsForLevel.history or {}
 
-        local amountDeaths = C_ChallengeMode.GetDeathCount() or 0
+        local amountDeaths = C_ChallengeMode.GetDeathCount and C_ChallengeMode.GetDeathCount() or 0
 
         ---@type mythicplusrunstats
         local runStats = {
@@ -460,7 +575,17 @@ function DetailsMythicPlusFrame.SaveMythicPlusStats(combatObject)
             deaths = amountDeaths,
             affix = PrimaryAffix,
             combatTime = combatObject:GetCombatTime(),
+            playerNames = {},
         }
+
+        local damagerContainer = combatObject:GetContainer(DETAILS_ATTRIBUTE_DAMAGE)
+        if (damagerContainer) then
+            for _, playerObject in damagerContainer:ListActors() do
+                if (playerObject:IsPlayer()) then
+                    table.insert(runStats.playerNames, playerObject.nome)
+                end
+            end
+        end
 
         table.insert(statsForLevel.history, runStats)
 

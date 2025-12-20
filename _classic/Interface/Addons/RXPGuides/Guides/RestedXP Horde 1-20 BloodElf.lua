@@ -2147,7 +2147,7 @@ step << Undead Warlock
     .train 705 >> Train your class spells
     .target Richard Kerwin
     .xp <12,1
-step << Undead Warlock
+step << skip --Logout skip Undead Warlock
     #completewith next
     .goto Undercity,82.36,15.31
     .goto Undercity,67.90,15.29,30 >> |cRXP_WARN_Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in|r
@@ -10191,7 +10191,7 @@ step << Paladin
     .train 5588 >>Train your class spells
 	.target Champion Cyssa Dawnrose
     .xp <24,1
-step
+step << skip --logout skip
     #completewith ExitUC
     .goto Undercity,55.20,90.91
     .goto Undercity,67.88,14.97,30 >>|cRXP_WARN_Go to the edge of the main platform in the Royal Quarter. Perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in|r

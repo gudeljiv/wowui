@@ -21,14 +21,12 @@ local strfind, strlower, pairs
     = strfind, strlower, pairs
 local InCombatLockdown, C_TradeSkillUI
     = InCombatLockdown, C_TradeSkillUI
+local debugprofilestop = debugprofilestop
 
 local GetSpellTexturePlain = C_Spell and C_Spell.GetSpellTexture or GetSpellTexture
 local GetSpellInfo = TMW.GetSpellInfo
 local GetSpellName = TMW.GetSpellName
 
-local debugprofilestop = debugprofilestop_SAFE
-
-local clientVersion = select(4, GetBuildInfo())
 local clientBuild = select(2, GetBuildInfo())
 
 local SpellCache = TMW:NewModule("SpellCache", "AceEvent-3.0", "AceTimer-3.0")
@@ -47,10 +45,12 @@ SpellCache.CONST = {
 	-- after retail spells, in the IDs around 430000.
 	-- Since we save ranges of invalid IDs to skip, this won't matter for perf at all
 	-- in any spell scan where SpellCacheInvalidRanges has nonstale data.
-	MAX_SPELLID_GUESS = 440000,
+	MAX_SPELLID_GUESS = 1232790,
 	
 	-- Maximum number of non-existant spellIDs that will be checked before the cache is declared complete.
-	MAX_FAILED_SPELLS = 10000,
+	-- This used to be a much smaller number, but Blizzard went off the rails around 11.0.7 and put huge gaps in the SpellIDs.
+	-- The biggest known gap at the time of this comment is a gap of 379444 at ID 556607.
+	MAX_FAILED_SPELLS = 500000,
 	
 	WHITELIST = {
 		-- A list of spells that will fail other filters, but are still desired
@@ -145,8 +145,8 @@ TMW.IE:RegisterUpgrade(71016, {
 })
 
 -- Force a re-cache - If a re-cache is needed, just update this version num to the latest version.
--- 102101 - Updated spell ID range for Classic SOD.
-TMW.IE:RegisterUpgrade(102101, {
+-- 11010101 - Increased MAX_FAILED_SPELLS to handle huge gaps in spellIDs 
+TMW.IE:RegisterUpgrade(11010101, {
 	locale = function(self, locale)
 		locale.SpellCacheWoWVersion = 0
 	end,
@@ -257,6 +257,7 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 	-- The most recent failed spellID that was seen after a success.
 	-- nil if the last spellID was a success.
 	local lastFail = nil
+	local excludeEffect = ClassicExpansionAtLeast(LE_EXPANSION_MISTS_OF_PANDARIA)
 
 	local function SpellCacher()
 		local numToCheck = InCombatLockdown() and 10 or NumCachePerFrame
@@ -329,9 +330,8 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 								(strfind(name, "vehicle") and strfind(name, "%f[%a]vehicle%f[%A]")) or
 								(strfind(name, "credit") and strfind(name, "%f[%a]credit%f[%A]")) or
 								
-								-- 'effect' is used quite bit in classic for lots of real things. Don't blacklist it.
-								-- (note: not sure if this is still true in wrath classic.)
-								(TMW.isRetail and strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
+								-- 'effect' is used quite bit in older expansions for lots of real things.
+								(excludeEffect and strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
 
 								(strfind(name, "camera") and strfind(name, "%f[%a]camera%f[%A]")) or
 								-- "ph" was removed because it is so short and non-specific

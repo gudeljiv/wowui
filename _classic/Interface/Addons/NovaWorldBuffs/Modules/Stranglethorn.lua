@@ -22,6 +22,8 @@ local region = NWB:GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707264000; --Date and time (GMT): Wednesday, February 7, 2024 12:00:00 AM
+	--Temp changing this to US to test new calc func.
+	isUS = true;
 elseif (region == 1) then
 	--US.
 	isUS = true;
@@ -43,25 +45,59 @@ calcStart = calcStart - 3600; --Stv runs 1 hour before ashenvale.
 --Trying to fix some issues with the timer not being exact, why is GetServerTime() not accurate?
 calcStart = calcStart + 30;
 
-local function getTimeLeft()
-	local timeLeft, type;
-	if (calcStart) then
-		local start = calcStart;
-		local isDST = NWB:isDST();
-		if (isDST) then
-			if (isUS) then
-				start = start + 3600;
+local getTimeLeft;
+if (not isUS) then
+	function getTimeLeft()
+		local timeLeft, type;
+		if (calcStart) then
+			local start = calcStart;
+			local isDST = NWB:isDST();
+			if (isDST) then
+				if (isUS) then
+					start = start + 3600;
+				else
+					start = start - 3600;
+				end
+			end
+			local utc = GetServerTime();
+			local secondsSinceFirstReset = utc - start;
+			local timestamp = start + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
+			local timeLeft = timestamp - utc;
+			local realTimeLeft = timeLeft;
+			if (timeLeft > 9000) then
+				--If more than 2.5h left then it's running, return tim left on current event instead.
+				type = "running";
+				timeLeft = timeLeft - 9000;
+				timestamp = timestamp - 9000;
+				NWB.stvRunning = true;
 			else
-				start = start - 3600;
+				if (isBossShown) then
+					NWB:updateStvBoss(nil, nil, nil, true);
+					isBossShown = nil;
+				end
+				NWB.stvRunning = false;
+			end
+			return timeLeft, type, timestamp, realTimeLeft;
+		end
+	end
+else
+	local intervals = {10800, 21600, 32400, 43200, 54000, 64800, 75600, 86400, 97200};
+	function getTimeLeft()
+		local hours, minutes = GetGameTime();
+		local seconds = (hours * 3600) + (minutes * 60);
+		local timestamp = GetServerTime() + seconds;
+		--3h intervalls, include an extra 27h interval on the end just incase things doens't line up exactly right at midnight and we go over 86400 seconds.
+		local timeLeft = 0;
+		local type;
+		for k, v in ipairs(intervals) do
+			if (v > seconds) then
+				timeLeft = v - seconds;
+				break;
 			end
 		end
-		local utc = GetServerTime();
-		local secondsSinceFirstReset = utc - start;
-		local timestamp = start + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
-		local timeLeft = timestamp - utc;
 		local realTimeLeft = timeLeft;
 		if (timeLeft > 9000) then
-			--If more than 2.5h left then it's running, return tim left on current event instead.
+			--If more than 2.5h left then it's running, return time left on current event instead.
 			type = "running";
 			timeLeft = timeLeft - 9000;
 			timestamp = timestamp - 9000;
@@ -423,7 +459,8 @@ local function chatMsgLoot(...)
     	local itemLink, amount = strmatch(msg, string.gsub(LOOT_ITEM_CREATED_SELF, "%%s", "(.+)"));
     end
     if (itemLink) then --Copper Blood Coin and Copper Massacre Coin.
-    	if (string.match(itemLink, "item:213168") or string.match(itemLink, "item:221364") or string.match(itemLink, "item:228323")) then
+    	if (string.match(itemLink, "item:213168") or string.match(itemLink, "item:221364") or string.match(itemLink, "item:228323")
+    			 or string.match(itemLink, "item:233791")) then
     		if (amount) then
 	    		amount = tonumber(amount);
 	    	end

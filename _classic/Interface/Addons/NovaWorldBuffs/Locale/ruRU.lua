@@ -662,3 +662,21 @@ L["Temple of Atal'Hakkar"] = "храме Атал'Хаккар";
 L["Might of Stormwind"] = "Мощь Штормграда";
 
 L["Battle Shout"] = "Боевой крик";
+
+L["Molten Core"] = "Огненные Недра";
+L["Onyxia's Lair"] = "Логово Ониксии";
+L["Blackwing Lair"] = "Логово Крыла Тьмы";
+L["Naxxramas"] = "Наксрамас";
+L["Karazhan"] = "Каражан";
+L["The Shattered Halls"] = "Разрушенные залы";
+L["Serpentshrine Cavern"] = "Змеиное святилище";
+L["The Arcatraz"] = "Аркатрац";
+L["Black Morass"] = "Чёрные топи";
+L["Battle of Mount Hyjal"] = "Битва за гору Хиджал";
+L["Black Temple"] = "Чёрный храм";
+L["Hellfire Citadel"] = "Цитадель Адского Пламени";
+L["Coilfang Reservoir"] = "Резервуар Кривого Клыка";
+L["Shadow Labyrinth"] = "Темный лабиринт";
+L["Auchindoun"] = "Аукиндон";
+L["Tempest Keep"] = "Крепость Бурь";
+L["Caverns of Time"] = "Пещеры Времени";

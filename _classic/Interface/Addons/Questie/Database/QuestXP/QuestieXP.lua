@@ -2,6 +2,9 @@
 ---@class QuestXP
 local QuestXP = QuestieLoader:CreateModule("QuestXP")
 
+---@type Expansions
+local Expansions = QuestieLoader:ImportModule("Expansions")
+
 ---@type table<QuestId,table<Level,XP>> -- { questId={level, xp}, ..... }
 QuestXP.db = {}
 
@@ -11,8 +14,10 @@ local UnitLevel = UnitLevel
 local globalXPMultiplier = 1
 local isDiscovererDelightActive = false
 
+local _GetBuffMultiplier
+
 function QuestXP.Init()
-    if (Questie.IsWotlk or Questie.IsSoD) and globalXPMultiplier == 1 then
+    if Questie.IsSoD or Expansions.Current >= Expansions.Wotlk and globalXPMultiplier == 1 then
         for i = 1, 40 do
             local _, _, _, _, _, _, _, _, _, buffSpellId = UnitBuff("player", i)
 
@@ -28,6 +33,15 @@ function QuestXP.Init()
                 isDiscovererDelightActive = true
                 break
             end
+        end
+    end
+
+    if Expansions.Current >= Expansions.Wotlk then
+        -- Handle Fast Track "Guild Perk"
+        -- We don't check for Rank 1, because Blizzard made Rank 2 active for all characters
+        local isFastTrackActive = IsSpellKnown(78632) -- Fast Track (Rank 2)
+        if isFastTrackActive then
+            globalXPMultiplier = globalXPMultiplier + 0.1 -- 10% bonus XP
         end
     end
 end
@@ -62,7 +76,7 @@ local function getAdjustedXP(xp, qLevel, ignorePlayerLevel)
         xp = 50 * floor((xp + 25) / 50)
     end
 
-    return floor(xp * globalXPMultiplier)
+    return floor(xp * (globalXPMultiplier + _GetBuffMultiplier()))
 end
 
 
@@ -102,4 +116,26 @@ function QuestXP.GetQuestRewardMoney(questId)
         modifier = 3
     end
     return floor(GetQuestLogRewardMoney(questId) * modifier)
+end
+
+---Check for temporary buffs being active that give XP bonuses.
+---@return number
+_GetBuffMultiplier = function()
+    local buffMultiplier = 0
+    for i = 1, 40 do
+        local _, _, _, _, _, _, _, _, _, spellId, _ = UnitAura("player", i, "HELPFUL")
+        if spellId == nil then
+            break
+        end
+
+        if spellId == 46668 then
+            buffMultiplier = buffMultiplier + 0.1 -- 10% bonus reputation from Darkmoon Faire buff
+        elseif spellId == 95987 then
+            buffMultiplier = buffMultiplier + 0.1 -- 10% bonus reputation from Unburdened (Hallow's End Alliance)
+        elseif spellId == 24705 then
+            buffMultiplier = buffMultiplier + 0.1 -- 10% bonus reputation from Grim Visage (Hallow's End Horde)
+        end
+    end
+
+    return buffMultiplier
 end

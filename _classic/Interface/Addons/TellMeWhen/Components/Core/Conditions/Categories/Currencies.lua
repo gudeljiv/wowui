@@ -20,7 +20,7 @@ local print = TMW.print
 local CNDT = TMW.CNDT
 local Env = CNDT.Env
 
-local GetCurrencyInfo = _G.GetCurrencyInfo or function(id)
+local GetCurrencyInfo = (C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo and function(id)
 	local info = C_CurrencyInfo.GetCurrencyInfo(id)
 	if info then
 		return
@@ -34,7 +34,7 @@ local GetCurrencyInfo = _G.GetCurrencyInfo or function(id)
 			info.quality 
 	end
 	return nil
-end
+end) or _G.GetCurrencyInfo
 
 
 local currencies = {
@@ -154,9 +154,9 @@ TMW:RegisterCallback("TMW_INITIALIZE", function()
 	local id = 1
 	local addedSpace = false
 	-- put an absolute cap of 10000 of the id just in case of weird infinite loop cases happening if this API changes.
-	while numFailed < 1000 and id < 10000 do
+	while numFailed < 3000 and id < 10000 do
 		local name, _, tex, _, _, _, hasSeen = GetCurrencyInfo(id)
-		if name and hasSeen then
+		if name then
 			name = strlower(name)
 
 			local shouldAdd = true
@@ -213,6 +213,9 @@ TMW:RegisterCallback("TMW_INITIALIZE", function()
 				local name, amount, texture, _, _, totalMax, hasSeen = GetCurrencyInfo(id)
 				ConditionCategory:RegisterCondition(i, "CURRENCY" .. id, {
 					text = name,
+					tooltipFunc = function()
+						GameTooltip:SetCurrencyByID(id)
+					end,
 					icon = texture,
 					min = 0,
 					range = 500,

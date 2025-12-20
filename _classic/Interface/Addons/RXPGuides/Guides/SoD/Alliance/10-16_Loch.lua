@@ -66,7 +66,7 @@ step
     .goto 1426,62.538,46.195
     >>Kill |cRXP_ENEMY_Vagash|r. Loot him for his |cRXP_LOOT_Fang|r
     >>|cRXP_WARN_Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him|r
-    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be solo'd on any class|r
+    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be soloed on any class|r
     .link https://youtu.be/70PX093soq4?si=-cIoU8WWdbC0IdHZ&t=3193 >> |cRXP_WARN_Click here for video reference|r << Mage
     .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> |cRXP_WARN_Click here for video reference|r << !Mage
     .complete 314,1 --Collect Fang of Vagash (1)
@@ -121,6 +121,7 @@ step
     .goto Dun Morogh,69.084,56.330
     .target Senator Mehr Stonehallow
     .target Foreman Stonebrow
+    .xp >12,1,QuarryEnd
 step << !Human Rogue
     #season 2
     #loop
@@ -308,6 +309,7 @@ step
 step
     #optional
     #completewith next
+    #label QuarryEnd
     .goto 1426,77.189,48.816,50,0
     .goto 1426,81.252,42.650,50,0
     .goto Dun Morogh,83.892,39.188,20 >> Travel toward |cRXP_FRIENDLY_Pilot Hammerfoot|r
@@ -459,7 +461,7 @@ step << Human
     .goto Loch Modan,34.8,48.6
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yanni Stoutheart|r inside
     .vendor >> |cRXP_BUY_Vendor trash, buy up to four|r |T133634:0|t[Small Brown Pouches] |cRXP_BUY_if you still need|r
-    .target Yanni Stoutheart 
+    .target Yanni Stoutheart
 step << Dwarf/Gnome
     #label ThelsaHS
     .goto Loch Modan,35.534,48.404
@@ -503,7 +505,7 @@ step << Hunter
 	.goto Loch Modan,33.9,54.0
     .goto Loch Modan,36.6,53.2,0
     .goto Loch Modan,30.0,53.5,0
-    .train 172551 >> Tame a Forest Lurker 
+    .train 172551 >> Tame a Forest Lurker
     >>|cRXP_WARN_It's the highest DPS pet easily available to dwarven hunters, you will eventually aim to replace it with a raptor from Wetlands|r
     .unitscan Forest Lurker
 step << Human
@@ -657,7 +659,7 @@ step << Gnome Mage
     .goto Ironforge,27.0,8.2
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bink|r
     .trainer >> Train your class spells
-    .target Bink   
+    .target Bink
 step << Gnome Mage
     #season 2
     .goto Ironforge,19.197,56.094
@@ -1023,7 +1025,7 @@ step << !Human
     .goto Loch Modan,34.8,48.6
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yanni Stoutheart|r inside
     .vendor >> |cRXP_BUY_Vendor trash, buy up to four|r |T133634:0|t[Small Brown Pouches] |cRXP_BUY_if you still need|r
-    .target Yanni Stoutheart 
+    .target Yanni Stoutheart
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -1149,13 +1151,8 @@ step << Mage
     #season 2
     .collect 211779,1 >>You need a |T135933:0|t[Comprehension Charm] from a |cRXP_FRIENDLY_Reagent Vendor|r to use the item.
     .train 415936 >>|T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes|r] to learn |T236220:0|t[Living Bomb]
+    .train 415936,1
     .use 208854
-step << Mage
-    #season 2
-    #optional
-    #completewith next
-    .train 415936,3
-    .engrave 9,400613 >> Open your character sheet and engrave your gloves with |T236220:0|t[Living Bomb.]
 step
 #loop
     .goto Loch Modan,34.7,71.6,0
@@ -1423,6 +1420,7 @@ step
     .goto Loch Modan,34.828,49.283
     .turnin 418 >> Turn in Thelsamar Blood Sausages
 step << Human
+    #requires ratcatching
     .hs >> Hearth to Stormwind
 step << !Human
     #requires ratcatching
@@ -1502,8 +1500,10 @@ step << !Human
     .goto Ironforge,78.00,51.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Monty|r on the Ironforge side of the tram and then |cRXP_FRIENDLY_Nipsy|r on the Stormwind side
     .zone Stormwind City >>Enter the Deeprun Tram and take the Tram to Stormwind
-    .accept 6662 >> Accept Me Brother, Nipsy from |cRXP_FRIENDLY_Monty|r before taking the tram
-    .turnin 6662 >> Turn in Me Brother, Nipsy to |cRXP_FRIENDLY_Nipsy|r after taking the tram
+    .accept 6662 >> Accept Me Brother, Nipsy
+    >>before taking the tram
+    .turnin 6662 >> Turn in Me Brother, Nipsy
+    >>after taking the tram
     .isQuestAvailable 6662
     .target Monty
     .target Nipsy

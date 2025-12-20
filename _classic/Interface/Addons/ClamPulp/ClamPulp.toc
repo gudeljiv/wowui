@@ -1,6 +1,0 @@
-## Interface: 11504
-## Title: Clam Pulp
-## Author: <PULP>
-## Version: 1.0
-
-ClamPulp.lua

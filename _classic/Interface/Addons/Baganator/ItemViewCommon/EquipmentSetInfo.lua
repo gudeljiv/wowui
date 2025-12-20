@@ -1,8 +1,8 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 
-function addonTable.ItemViewCommon.GetEquipmentSetInfo(location, itemLink)
-  local guid = C_Item.DoesItemExist(location) and C_Item.GetItemGUID(location) or nil
-
+-- Assumes C_Item.DoesItemExist(location) is true
+function addonTable.ItemViewCommon.GetEquipmentSetInfo(location, guid, itemLink)
   local results = {}
   for _, source in ipairs(addonTable.API.ItemSetSources) do
     local new = source.getItemSetInfo(location, guid, itemLink)

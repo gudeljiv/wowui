@@ -24,6 +24,9 @@ function LibStub:NewLibrary(major, minor)end
 function LibStub:GetLibrary(major, silent)end
 function LibStub:IterateLibraries()end
 
+CLASS_ICON_TCOORDS = {}
+MAX_NUM_TALENTS = 0
+
 --uiobject: is an object that represents a UI element, such as a frame, a texture, or a button. UIObjects are the base class for all UI elements in the WoW API.
 --3D World: is an object which is placed behind|below all UI elements, cannot be parent of any object, in the 3D World object is where the game world is rendered
 --size: corresponds to the height and height of an object, it is measure in pixels, must be bigger than zero.
@@ -269,6 +272,57 @@ function LibStub:IterateLibraries()end
 ---| "INCLUDE_NAME_PLATE_ONLY"
 ---| "MAW"
 
+---@class pvpscoreinfo : table
+---@field name string 	
+---@field guid string
+---@field killingBlows number 	
+---@field honorableKills number 	
+---@field deaths number 	
+---@field honorGained number 	
+---@field faction number 	
+---@field raceName string 	
+---@field className string 	
+---@field classToken string 	
+---@field damageDone number 	
+---@field healingDone number 	
+---@field rating number 	
+---@field ratingChange number 	
+---@field prematchMMR number 	
+---@field mmrChange number 	
+---@field postmatchMMR number 	10.1.0
+---@field talentSpec string 	
+---@field honorLevel number 	
+---@field roleAssigned number 	
+---@field stats pvpstatinfo[] 	
+
+---@class pvpstatinfo : table
+---@field pvpStatID number
+---@field pvpStatValue number
+---@field orderIndex number
+---@field name string
+---@field tooltip string
+---@field iconName string
+
+---@class pvppostmatchitemreward : table
+---@field type string
+---@field link string
+---@field quantity number
+---@field specID number
+---@field sex number
+---@field isUpgraded boolean
+
+---@class pvppostmatchcurrencyreward
+---@field currencyType number
+---@field quantityChanged number
+
+---@class matchpvpstatcolumn : table
+---@field pvpStatID number
+---@field columnHeaderID number
+---@field orderIndex number
+---@field name string
+---@field tooltipTitle string
+---@field tooltip string
+
 ---@class backdrop : table
 ---@field bgFile string?
 ---@field edgeFile string?
@@ -357,6 +411,633 @@ function LibStub:IterateLibraries()end
 ---@field tilesHorizontally boolean?
 ---@field tilesVertically boolean?
 
+---@class challengecompletioninfo : table
+---@field mapChallengeModeID number
+---@field level number
+---@field time number
+---@field onTime boolean
+---@field keystoneUpgradeLevels number
+---@field practiceRun boolean
+---@field oldOverallDungeonScore number?
+---@field newOverallDungeonScore number?
+---@field isMapRecord boolean
+---@field isAffixRecord boolean
+---@field isEligibleForScore boolean
+---@field members table
+
+---@class challengemodecompletionmemberinfo : table
+---@field memberGUID guid
+---@field name string
+
+---@class addons : table
+---@field DisableAddOn fun(name: string, character: string?)
+---@field DisableAllAddOns fun(character: string?)
+---@field DoesAddOnExist fun(name: string) : boolean
+---@field DoesAddOnHaveLoadError fun(name: string) : boolean
+---@field EnableAddOn fun(name: string, character: string?)
+---@field EnableAllAddOns fun(character: string?)
+---@field GetAddOnDependencies fun(name: string) : ...
+---@field GetAddOnEnableState fun(name: string, character: string?) : number
+---@field GetAddOnInfo fun(name: string) : string, string, string, boolean, string, string
+---@field GetAddOnInterfaceVersion fun(name: string) : number
+---@field GetAddOnLocalTable fun(name: string) : any
+---@field GetAddOnMetadata fun(name: string, variable: string) : string
+---@field GetAddOnName fun(index: number) : string
+---@field GetAddOnNotes fun(name: string) : string
+---@field GetAddOnOptionalDependencies fun(name: string) : ...
+---@field GetAddOnSecurity fun(name: string) : number
+---@field GetAddOnTitle fun(name: string) : string
+---@field GetNumAddOns fun() : number
+---@field GetScriptsDisallowedForBeta fun() : boolean
+---@field IsAddOnDefaultEnabled fun(name: string) : boolean
+---@field IsAddOnLoadOnDemand fun(name: string) : boolean
+---@field IsAddOnLoadable fun(name: string, character: string?, demandLoaded: boolean?) : boolean, string
+---@field IsAddOnLoaded fun(name: string) : boolean, boolean
+---@field IsAddonVersionCheckEnabled fun() : boolean
+---@field LoadAddOn fun(name: string) : boolean?, string?
+---@field ResetAddOns fun()
+---@field ResetDisabledAddOns fun()
+---@field SaveAddOns fun()
+---@field SetAddonVersionCheck fun(enabled: boolean)
+
+---@type addons
+C_AddOns = {
+    DisableAddOn = function(name, character) end,
+    DisableAllAddOns = function(character) end,
+    DoesAddOnExist = function(name) return false end,
+    DoesAddOnHaveLoadError = function(name) return false end,
+    EnableAddOn = function(name, character) end,
+    EnableAllAddOns = function(character) end,
+    GetAddOnDependencies = function(name) return nil end,
+    GetAddOnEnableState = function(name, character) return 0 end,
+    GetAddOnInfo = function(name) return "", "", "", false, "", "" end,
+    GetAddOnInterfaceVersion = function(name) return 0 end,
+    GetAddOnLocalTable = function(name) return nil end,
+    GetAddOnMetadata = function(name, variable) return "" end,
+    GetAddOnName = function(index) return "" end,
+    GetAddOnNotes = function(name) return "" end,
+    GetAddOnOptionalDependencies = function(name) return nil end,
+    GetAddOnSecurity = function(name) return 0 end,
+    GetAddOnTitle = function(name) return "" end,
+    GetNumAddOns = function() return 0 end,
+    GetScriptsDisallowedForBeta = function() return false end,
+    IsAddOnDefaultEnabled = function(name) return false end,
+    IsAddOnLoadOnDemand = function(name) return false end,
+    IsAddOnLoadable = function(name, character, demandLoaded) return false, "" end,
+    IsAddOnLoaded = function(name) return false, false end,
+    IsAddonVersionCheckEnabled = function() return false end,
+    LoadAddOn = function(name) return false, "" end,
+    ResetAddOns = function() end,
+    ResetDisabledAddOns = function() end,
+    SaveAddOns = function() end,
+    SetAddonVersionCheck = function(enabled) end,
+}
+
+---@alias addonevents
+---| "ADDON_LOADED" arguments: addOnName:string, containsBindings:bool
+---| "ADDONS_UNLOADING" arguments: closingClient:bool
+---| "SAVED_VARIABLES_TOO_LARGE" arguments: addOnName:string
+
+---@class addonenabledstate : number
+---@field None 0
+---@field Some 1
+---@field All 2
+
+---@class addonsecuritystatus : number
+---@field Secure 0
+---@field Insecure 1
+---@field Banned 2
+---@field NotAvailable 3
+
+---@class addoninfo : table
+---@field name string
+---@field title string
+---@field notes string
+---@field loadable boolean
+---@field reason string
+---@field security string
+
+---@class cvar : table
+---@field GetCVar fun(name: string): string|nil
+---@field GetCVarBitfield fun(name: string, index: number): boolean|nil
+---@field GetCVarBool fun(name: string): boolean|nil
+---@field GetCVarDefault fun(name: string): string|nil
+---@field SetCVar fun(name: string, value: string|number|boolean): boolean
+---@field SetCVarBitfield fun(name: string, index: number, value: boolean): boolean
+---@field ResetCVar fun(name: string): boolean
+---@field GetCVarInfo fun(name: string): cvarinfo|nil
+---@field RegisterCVar fun(name: string, value: string|nil): boolean
+
+---@class cvarinfo : table
+---@field value string
+---@field defaultValue string
+---@field isStoredServerAccount boolean
+---@field isStoredServerCharacter boolean
+---@field isLockedFromUser boolean
+---@field isSecure boolean
+---@field isReadOnly boolean
+
+---@type cvar
+C_CVar = {
+    GetCVar = function(name) return "" end,
+    GetCVarBitfield = function(name, index) return false end,
+    GetCVarBool = function(name) return false end,
+    GetCVarDefault = function(name) return "" end,
+    SetCVar = function(name, value) return false end,
+    SetCVarBitfield = function(name, index, value) return false end,
+    ResetCVar = function(name) return false end,
+    GetCVarInfo = function(name) return {} end,
+    RegisterCVar = function(name, value) return false end,
+}
+
+
+--C_ClassTalents
+
+---@class c_classtalents : table
+---@field CanChangeTalents fun(): boolean, boolean, string?
+---@field CanCreateNewConfig fun(): boolean
+---@field CanEditTalents fun(): boolean, cstring
+---@field CommitConfig fun(savedConfigID: number?): boolean
+---@field DeleteConfig fun(configID: number): boolean
+---@field GetActiveConfigID fun(): number?
+---@field GetActiveHeroTalentSpec fun(): number?
+---@field GetConfigIDsBySpecID fun(specID: number?): number[]
+---@field GetHasStarterBuild fun(): boolean
+---@field GetHeroTalentSpecsForClassSpec fun(configID: number?, classSpecID: number?): number[]?, number?
+---@field GetLastSelectedSavedConfigID fun(specID: number): number?
+---@field GetNextStarterBuildPurchase fun(): number?, number?
+---@field GetStarterBuildActive fun(): boolean
+---@field GetTraitTreeForSpec fun(specID: number): number?
+---@field HasUnspentHeroTalentPoints fun(): boolean, number
+---@field HasUnspentTalentPoints fun(): boolean, number, number
+---@field ImportLoadout fun(configID: number, entries: importloadoutentryinfo[], name: string, importString: string?): boolean, cstring
+---@field InitializeViewLoadout fun(specID: number, level: number)
+---@field IsConfigPopulated fun(configID: number): boolean
+---@field LoadConfig fun(configID: number, autoApply: boolean): loadconfigresult, string?, number[]
+---@field RenameConfig fun(configID: number, name: string): boolean
+---@field RequestNewConfig fun(name: string): boolean
+---@field SaveConfig fun(configID: number): boolean
+---@field SetStarterBuildActive fun(active: boolean): loadconfigresult
+---@field SetUsesSharedActionBars fun(configID: number, usesShared: boolean)
+---@field UpdateLastSelectedSavedConfigID fun(specID: number, configID: number?)
+---@field ViewLoadout fun(entries: importloadoutentryinfo[], importString: string?): boolean
+
+---@type c_classtalents
+C_ClassTalents = {
+    CanChangeTalents = function() return false, false, nil end,
+    CanCreateNewConfig = function() return false end,
+    CanEditTalents = function() return false, "" end,
+    CommitConfig = function(savedConfigID) return false end,
+    DeleteConfig = function(configID) return false end,
+    GetActiveConfigID = function() return nil end,
+    GetActiveHeroTalentSpec = function() return nil end,
+    GetConfigIDsBySpecID = function(specID) return {} end,
+    GetHasStarterBuild = function() return false end,
+    GetHeroTalentSpecsForClassSpec = function(configID, classSpecID) return nil, nil end,
+    GetLastSelectedSavedConfigID = function(specID) return nil end,
+    GetNextStarterBuildPurchase = function() return nil, nil end,
+    GetStarterBuildActive = function() return false end,
+    GetTraitTreeForSpec = function(specID) return nil end,
+    HasUnspentHeroTalentPoints = function() return false, 0 end,
+    HasUnspentTalentPoints = function() return false, 0, 0 end,
+    ImportLoadout = function(configID, entries, name, importString) return false, "" end,
+    InitializeViewLoadout = function(specID, level) end,
+    IsConfigPopulated = function(configID) return false end,
+    LoadConfig = function(configID, autoApply) return {}, nil, {} end,
+    RenameConfig = function(configID, name) return false end,
+    RequestNewConfig = function(name) return false end,
+    SaveConfig = function(configID) return false end,
+    SetStarterBuildActive = function(active) return {} end,
+    SetUsesSharedActionBars = function(configID, usesShared) end,
+    UpdateLastSelectedSavedConfigID = function(specID, configID) end,
+    ViewLoadout = function(entries, importString) return false end,
+}
+
+---@alias classtalentsevents
+---| "ACTIVE_COMBAT_CONFIG_CHANGED" arguments: configID:number
+---| "SELECTED_LOADOUT_CHANGED"
+---| "SPECIALIZATION_CHANGE_CAST_FAILED"
+---| "STARTER_BUILD_ACTIVATION_FAILED"
+
+---@class loadconfigresult : number
+---@field Error 0
+---@field NoChangesNecessary 1
+---@field LoadInProgress 2
+---@field Ready 3
+
+---@class importloadoutentryinfo : table
+---@field nodeID number
+---@field ranksGranted number
+---@field ranksPurchased number
+---@field selectionEntryID number
+
+
+---@class talenttraits : table C_Traits namespace functions
+---@field CanEditConfig fun(configID: number): boolean, cstring
+---@field CanPurchaseRank fun(configID: number, nodeID: number, nodeEntryID: number): boolean
+---@field CanRefundRank fun(configID: number, nodeID: number): boolean
+---@field CascadeRepurchaseRanks fun(configID: number, nodeID: number, entryID: number?): boolean
+---@field ClearCascadeRepurchaseHistory fun(configID: number)
+---@field CloseTraitSystemInteraction fun()
+---@field CommitConfig fun(configID: number): boolean
+---@field ConfigHasStagedChanges fun(configID: number): boolean
+---@field GenerateImportString fun(configID: number): string
+---@field GenerateInspectImportString fun(target: cstring): string
+---@field GetConditionInfo fun(configID: number, condID: number): traitcondinfo?
+---@field GetConfigIDBySystemID fun(systemID: number): number?
+---@field GetConfigIDByTreeID fun(treeID: number): number?
+---@field GetConfigInfo fun(configID: number): traitconfiginfo?
+---@field GetConfigVariationID fun(systemID: number): number?
+---@field GetConfigsByType fun(configType: traitconfigtype): number[]
+---@field GetDefinitionInfo fun(definitionID: number): traitdefinitioninfo?
+---@field GetEntryInfo fun(configID: number, entryID: number): traitentryinfo?
+---@field GetNodeInfo fun(configID: number, nodeID: number): traitnodeinfo?
+---@field PurchaseRank fun(configID: number, nodeID: number, nodeEntryID: number): boolean
+---@field RefundRank fun(configID: number, nodeID: number): boolean
+---@field GetIncreasedTraitData fun(nodeID: number, entryID: number): increasedtraitdata[]?
+---@field GetLoadoutSerializationVersion fun(): number
+---@field GetNodeCost fun(configID: number, nodeID: number): traitcurrencycost[]
+---@field GetStagedChanges fun(configID: number): number[]?, number[]?, number[]?
+---@field GetStagedChangesCost fun(configID: number): traitcurrencycost[]
+---@field GetSubTreeInfo fun(configID: number, subTreeID: number): traitsubtreeinfo?
+---@field GetSystemIDByTreeID fun(treeID: number): number?
+---@field GetTraitCurrencyInfo fun(traitCurrencyID: number): flags:number, type:number, currencyTypesID:number?, icon:number?
+---@field GetTraitDescription fun(nodeID: number, entryID: number): string
+---@field GetTraitSystemFlags fun(configID: number): number
+---@field GetTraitSystemWidgetSetID fun(configID: number): number?
+---@field GetTreeCurrencyInfo fun(configID: number, treeID: number, excludeStagedChanges: boolean): treecurrencyinfo
+---@field GetTreeHash fun(treeID: number): number[]
+---@field GetTreeInfo fun(configID: number, treeID: number): traittreeinfo?
+---@field GetTreeNodes fun(treeID: number): number[]?
+---@field HasValidInspectData fun(): boolean
+---@field IsReadyForCommit fun(): boolean
+---@field PurchaseAllRanks fun(configID: number, nodeID: number, ignoreCost: boolean): boolean
+---@field RefundAllRanks fun(configID: number, nodeID: number): boolean
+---@field ResetTree fun(configID: number, treeID: number): boolean
+---@field ResetTreeByCurrency fun(configID: number, treeID: number, traitCurrencyID: number): boolean
+---@field RollbackConfig fun(configID: number): boolean
+---@field SetSelection fun(configID: number, nodeID: number, nodeEntryID: number?, clearEdges: boolean?): boolean
+---@field StageConfig fun(configID: number): boolean
+---@field TalentTestUnlearnSpells fun()
+---@field TryPurchaseAllRanks fun(configID: number, nodeID: number): boolean
+---@field TryPurchaseToNode fun(configID: number, nodeID: number): boolean
+---@field TryRefundToNode fun(configID: number, nodeID: number, entryID: number): boolean
+
+---@type talenttraits
+C_Traits = {
+    CanEditConfig = function(configID) return false, "" end,
+    CanPurchaseRank = function(configID, nodeID, nodeEntryID) return false end,
+    CanRefundRank = function(configID, nodeID) return false end,
+    CascadeRepurchaseRanks = function(configID, nodeID, entryID) return false end,
+    ClearCascadeRepurchaseHistory = function(configID) end,
+    CloseTraitSystemInteraction = function() end,
+    CommitConfig = function(configID) return false end,
+    ConfigHasStagedChanges = function(configID) return false end,
+    GenerateImportString = function(configID) return "" end,
+    GenerateInspectImportString = function(target) return "" end,
+    GetConditionInfo = function(configID, condID) return nil end,
+    GetConfigIDBySystemID = function(systemID) return nil end,
+    GetConfigIDByTreeID = function(treeID) return nil end,
+    GetConfigInfo = function(configID) return nil end,
+    GetConfigVariationID = function(systemID) return nil end,
+    GetConfigsByType = function(configType) return {} end,
+    GetEntryInfo = function(configID, entryID) return nil end,
+    GetNodeInfo = function(configID, nodeID) return nil end,
+    PurchaseRank = function(configID, nodeID, nodeEntryID) return false end,
+    RefundRank = function(configID, nodeID) return false end,
+    GetIncreasedTraitData = function(nodeID, entryID) return nil end,
+    GetLoadoutSerializationVersion = function() return 0 end,
+    GetNodeCost = function(configID, nodeID) return {} end,
+    GetStagedChanges = function(configID) return nil, nil, nil end,
+    GetStagedChangesCost = function(configID) return {} end,
+    GetSubTreeInfo = function(configID, subTreeID) return nil end,
+    GetSystemIDByTreeID = function(treeID) return nil end,
+    GetTraitCurrencyInfo = function(traitCurrencyID) return 0, 0, nil, nil end,
+    GetTraitDescription = function(nodeID, entryID) return "" end,
+    GetDefinitionInfo = function(definitionID) return  end,
+    GetTraitSystemFlags = function(configID) return 0 end,
+    GetTraitSystemWidgetSetID = function(configID) return nil end,
+    GetTreeCurrencyInfo = function(configID, treeID, excludeStagedChanges) return {} end,
+    GetTreeHash = function(treeID) return {} end,
+    GetTreeInfo = function(configID, treeID) return nil end,
+    GetTreeNodes = function(treeID) return nil end,
+    HasValidInspectData = function() return false end,
+    IsReadyForCommit = function() return false end,
+    PurchaseAllRanks = function(configID, nodeID, ignoreCost) return false end,
+    RefundAllRanks = function(configID, nodeID) return false end,
+    ResetTree = function(configID, treeID) return false end,
+    ResetTreeByCurrency = function(configID, treeID, traitCurrencyID) return false end,
+    RollbackConfig = function(configID) return false end,
+    SetSelection = function(configID, nodeID, nodeEntryID, clearEdges) return false end,
+    StageConfig = function(configID) return false end,
+    TalentTestUnlearnSpells = function() end,
+    TryPurchaseAllRanks = function(configID, nodeID) return false end,
+    TryPurchaseToNode = function(configID, nodeID) return false end,
+    TryRefundToNode = function(configID, nodeID, entryID) return false end
+}
+
+---@alias talenttraistevents
+---| "CONFIG_COMMIT_FAILED" arguments: configID:number
+---| "TRAIT_COND_INFO_CHANGED" arguments: condID:number
+---| "TRAIT_CONFIG_CREATED" arguments: configInfo:TraitConfigInfo
+---| "TRAIT_CONFIG_DELETED" arguments: configID:number
+---| "TRAIT_CONFIG_LIST_UPDATED"
+---| "TRAIT_CONFIG_UPDATED" arguments: configID:number
+---| "TRAIT_NODE_CHANGED" arguments: nodeID:number
+---| "TRAIT_NODE_CHANGED_PARTIAL" arguments: ID:number, info:TraitNodeInfoPartial
+---| "TRAIT_NODE_ENTRY_UPDATED" arguments: nodeEntryID:number
+---| "TRAIT_SUB_TREE_CHANGED" arguments: subTreeID:number
+---| "TRAIT_SYSTEM_INTERACTION_STARTED" arguments: treeID:number
+---| "TRAIT_SYSTEM_NPC_CLOSED"
+---| "TRAIT_TREE_CHANGED" arguments: treeID:number
+---| "TRAIT_TREE_CURRENCY_INFO_UPDATED" arguments: treeID:number
+---| "TRY_PURCHASE_TO_NODE_PARTIAL_SUCCESS" arguments: nodeFinishedOn:number
+
+---@class increasedtraitdata : table
+---@field itemNameIncreasing string
+---@field itemQualityIncreasing ItemQuality
+---@field numPointsIncreased number
+
+---@class traitcondinfo : table
+---@field condID number
+---@field ranksGranted number|nil
+---@field isAlwaysMet boolean
+---@field isMet boolean True if the source for the condition has been fulfilled.
+---@field isGate boolean
+---@field isSufficient boolean True if meeting the requirements for the condition means any nodes using this
+---@field type number The value from the TraitConditionType enum the condition uses.
+---@field questID number|nil
+---@field achievementID number|nil
+---@field specSetID number|nil
+---@field playerLevel number|nil
+---@field traitCurrencyID number|nil
+---@field spentAmountRequired number|nil
+---@field tooltipFormat string|nil
+---@field traitCondAccountElementID number|nil
+
+---@class traitconfiginfo : table
+---@field ID number
+---@field type traitconfigtype
+---@field name string
+---@field treeIDs number[]
+---@field usesSharedActionBars boolean
+
+---@class traitcurrencycost : table
+---@field ID number
+---@field amount number
+
+---@class traitdefinitioninfo : table
+---@field spellID number|nil
+---@field overrideName string|nil
+---@field overrideSubtext string|nil
+---@field overrideDescription string|nil
+---@field overrideIcon number|nil
+---@field overriddenSpellID number|nil
+---@field subType traitdefinitionsubtype|nil
+
+---@class traitentryinfo : table
+---@field definitionID number|nil Nil on SubTreeSelection Node Entries
+---@field subTreeID number|nil Populated only on SubTreeSelection Node Entries; This
+---@field type traitnodeentrytype
+---@field maxRanks number
+---@field isAvailable boolean
+---@field isDisplayError boolean True if this entry fails the TRAIT_CONDITION_TYPE_DISPLAY_ERROR
+---@field conditionIDs number[]
+
+---@class traitentryrankinfo : table
+---@field entryID number
+---@field rank number
+---@class traitgateinfo : table
+---@field topLeftNodeID number
+---@field conditionID number
+---@class traitnodeinfo : table
+---@field ID number
+---@field posX number
+---@field posY number
+---@field flags number
+---@field entryIDs number[]
+---@field entryIDsWithCommittedRanks number[]
+---@field canPurchaseRank boolean
+---@field canRefundRank boolean
+---@field isAvailable boolean
+---@field isVisible boolean
+---@field isDisplayError boolean True if this node fails the TRAIT_CONDITION_TYPE_DISPLAY_ERROR condition check. Used to communicate a problem with the node to the player (e.g. A prerequisite node has not been purchased.) but will not prevent the player from spending points on the node.
+---@field ranksPurchased number
+---@field ranksIncreased number
+---@field entryIDToRanksIncreased LuaValueVariant A map of the entry IDs on this
+---@field activeRank number
+---@field currentRank number
+---@field activeEntry traitentryrankinfo|nil
+---@field nextEntry traitentryrankinfo|nil
+---@field maxRanks number
+---@field type traitnodetype
+---@field visibleEdges traitoutedgeinfo[]
+---@field meetsEdgeRequirements boolean
+---@field groupIDs number[]
+---@field conditionIDs number[]
+---@field isCascadeRepurchasable boolean
+---@field cascadeRepurchaseEntryID number|nil
+---@field subTreeID number|nil The SubTree this Node belongs to; Nil if it is not part of a SubTree
+---@field subTreeActive boolean|nil True if this node has a SubTreeID, and
+
+---@class traitnodeinfopartial : table
+---@field canPurchaseRank boolean|nil
+---@field canRefundRank boolean|nil
+---@field isAvailable boolean|nil
+---@field isVisible boolean|nil
+---@field ranksPurchased number|nil
+---@field activeRank number|nil
+---@field currentRank number|nil
+---@field meetsEdgeRequirements boolean|nil
+---@field isCascadeRepurchasable boolean|nil
+---@field activeEntryID number|nil
+---@field subTreeActive boolean|nil
+
+---@class traitoutedgeinfo : table
+---@field targetNode number
+---@field type number
+---@field visualStyle number
+---@field isActive boolean
+---@class traitsubtreeinfo : table
+---@field ID number
+---@field name string|nil
+---@field description string|nil
+---@field iconElementID textureAtlas|nil
+---@field traitCurrencyID number|nil
+---@field isActive boolean
+---@field subTreeSelectionNodeIDs number[] SubTreeSelectionNodes whose choice entries include this Sub
+---@field posX number Center X node position calculated from the posX values of all of this subTree's nodes
+---@field posY number Topmost Y node position taken from the posY values of all of this subTree's nodes
+---@class traittreeinfo : table
+---@field ID number
+---@field gates traitgateinfo[]
+---@field hideSingleRankNumbers boolean
+---@field rootNodeID number|nil
+---@class treecurrencyinfo : table
+---@field traitCurrencyID number
+---@field quantity number
+---@field maxQuantity number|nil
+---@field spent number
+
+---@class nodeopfailurereason : number
+---@field None 0
+---@field MissingEdgeConnection 1
+---@field RequiredForEdge 2
+---@field MissingRequiredEdge 3
+---@field HasMutuallyExclusiveEdge 4
+---@field NotEnoughSourcedCurrencySpent 5
+---@field NotEnoughCurrencySpent 6
+---@field NotEnoughGoldSpent 7
+---@field MissingAchievement 8
+---@field MissingQuest 9
+---@field WrongSpec 10
+---@field WrongSelection 11
+---@field MaxRank 12
+---@field DataError 13
+---@field NotEnoughSourcedCurrency 14
+---@field NotEnoughCurrency 15
+---@field NotEnoughGold 16
+---@field SameSelection 17
+---@field NodeNotFound 18
+---@field EntryNotFound 19
+---@field RequiredForCondition 20
+---@field WrongTreeID 21
+---@field LevelTooLow 22
+---@field TreeFlaggedNoRefund 23
+---@field NodeNeverPurchasable 24
+---@field AccountDataNoMatch 25
+
+---@class sharedstringflag : number
+---@field InternalOnly 1
+
+---@class traitcombatconfigflags : number
+---@field ActiveForSpec 1
+---@field StarterBuild 2
+---@field SharedActionBars 4
+
+---@class traitcondflag : number
+---@field IsGate 1
+---@field IsAlwaysMet 2
+---@field IsSufficient 4
+
+---@class traitconditiontype : number
+---@field Available 0
+---@field Visible 1
+---@field Granted 2
+---@field Increased 3
+---@field DisplayError 4
+
+---@class traitconfigdbstate : number
+---@field Ready 0
+---@field Created 1
+---@field Removed 2
+---@field Deleted 3
+
+---@class traitconfigtype : number
+---@field Invalid 0
+---@field Combat 1
+---@field Profession 2
+---@field Generic 3
+
+---@class traitcurrencyflag : number
+---@field ShowQuantityAsSpent 1
+---@field TraitSourcedShowMax 2
+---@field UseClassIcon 4
+---@field UseSpecIcon 8
+
+---@class traitcurrencytype : number
+---@field Gold 0
+---@field CurrencyTypesBased 1
+---@field TraitSourced 2
+---@field TraitSourcedPlayerDataElement 3
+
+---@class traitdefinitionsubtype : number
+---@field DragonflightRed 0
+---@field DragonflightBlue 1
+---@field DragonflightGreen 2
+---@field DragonflightBronze 3
+---@field DragonflightBlack 4
+
+---@class traitedgetype : number
+---@field VisualOnly 0
+---@field DeprecatedRankConnection 1
+---@field SufficientForAvailability 2
+---@field RequiredForAvailability 3
+---@field MutuallyExclusive 4
+---@field DeprecatedSelectionOption 5
+
+---@class traitedgevisualstyle : number
+---@field None 0
+---@field Straight 1
+
+---@class traitnodeentrytype : number
+---@field SpendHex 0
+---@field SpendSquare 1
+---@field SpendCircle 2
+---@field SpendSmallCircle 3
+---@field DeprecatedSelect 4
+---@field DragAndDrop 5
+---@field SpendDiamond 6
+---@field ProfPath 7
+---@field ProfPerk 8
+---@field ProfPathUnlock 9
+---@field SpendInfinite 10
+
+---@class traitnodeflag : number
+---@field ShowMultipleIcons 1
+---@field NeverPurchasable 2
+---@field TestPositionLocked 4
+---@field TestGridPositioned 8
+---@field ActiveAtFirstRank 16
+---@field ShowExpandedSelection 32
+---@field HideMaxRank 64
+
+---@class traitnodegroupflag : number
+---@field AvailableByDefault 1
+
+---@class traitnodetype : number
+---@field Single 0
+---@field Tiered 1
+---@field Selection 2
+---@field SubTreeSelection 3
+
+---@class traitpointsoperationtype : number
+---@field None -1
+---@field Set 0
+---@field Multiply 1
+
+---@class traitsystemflag : number
+---@field AllowMultipleLoadoutsPerTree 1
+---@field ShowSpendConfirmation 2
+---@field AllowEditInCombat 4
+---@field AllowEditInChallengeMode 8
+
+---@class traitsystemvariationtype : number
+---@field None 0
+---@field Spec 1
+
+---@class traittreeflag : number
+---@field CannotRefund 1
+---@field HideSingleRankNumbers 2
+
+---@class traitconsts : table
+---@field MAX_COMBAT_TRAIT_CONFIGS number
+---@field COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID number
+---@field INSPECT_TRAIT_CONFIG_ID number
+---@field STARTER_BUILD_TRAIT_CONFIG_ID number
+---@field VIEW_TRAIT_CONFIG_ID number
+
+TraitConsts = {
+    MAX_COMBAT_TRAIT_CONFIGS = 40,
+    COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID = 384255,
+    INSPECT_TRAIT_CONFIG_ID = -1,
+    STARTER_BUILD_TRAIT_CONFIG_ID = -2,
+    VIEW_TRAIT_CONFIG_ID = -3,
+}
+
+---@alias spellid number integer each spell in the game has a unique spell id, this id can be used to identify a spell.
+---@alias unitname string name of a unit
+---@alias unitguid string unique id of a unit (GUID)
 
 ---@alias width number property that represents the horizontal size of a UI element, such as a frame or a texture. Gotten from the first result of GetWidth() or from the first result of GetSize(). It is expected a GetWidth() or GetSize() when the type 'height' is used.
 ---@alias height number property that represents the vertical size of a UI element, such as a frame or a texture. Gotten from the first result of GetHeight() or from the second result of GetSize(). It is expected a GetHeight() or GetSize() when the type 'height' is used.
@@ -373,13 +1054,11 @@ function LibStub:IterateLibraries()end
 ---@alias encountername string encounter name received by the event ENCOUNTER_START and ENCOUNTER_END also used by the encounter journal
 ---@alias encounterdifficulty number difficulty of the encounter received by the event ENCOUNTER_START and ENCOUNTER_END
 ---@alias instancename string localized name of an instance (e.g. "The Nighthold")
----@alias spellid number each spell in the game has a unique spell id, this id can be used to identify a spell.
----@alias unitname string name of a unit
----@alias unitguid string unique id of a unit (GUID)
 ---@alias actorname string name of a unit
 ---@alias petname string refers to a pet's name
 ---@alias ownername string refers to the pet's owner name
 ---@alias spellname string name of a spell
+---@alias classid number the ID of a class
 ---@alias spellschool number each spell in the game has a school, such as fire, frost, shadow and many others. This value can be used to identify the school of a spell.
 ---@alias actorid string unique id of a unit (GUID)
 ---@alias serial string unique id of a unit (GUID)
@@ -467,7 +1146,10 @@ BackdropTemplateMixin = {}
 ---@field GetPoint fun(self: uiobject, index: number): string, frame, string, number, number
 ---@field GetCenter fun(self: uiobject): number, number
 ---@field GetLeft fun(self: uiobject): number
----@field SetPoint fun(self: uiobject, point: anchorpoint, relativeFrame: uiobject, relativePoint: anchorpoint, xOffset: number, yOffset: number)
+---@field GetRight fun(self: uiobject): number
+---@field GetTop fun(self: uiobject): number
+---@field GetBottom fun(self: uiobject): number
+---@field SetPoint fun(self: uiobject, point: anchorpoint, relativeFrame: uiobject?, relativePoint: anchorpoint?, xOffset: number?, yOffset: number?)
 ---@field ClearAllPoints fun(self: uiobject)
 ---@field CreateAnimationGroup fun(self: uiobject, name: string|nil, templateName: string|nil) : animationgroup
 ---@field SetIgnoreParentAlpha fun(self: region, ignore: boolean)
@@ -564,7 +1246,7 @@ BackdropTemplateMixin = {}
 ---@field SetClampRectInsets fun(self: frame, left: number, right: number, top: number, bottom: number)
 ---@field SetMovable fun(self: frame, movable: boolean)
 ---@field SetUserPlaced fun(self: frame, userPlaced: boolean)
----@field SetBackdrop fun(self: frame, backdrop: backdrop|table)
+---@field SetBackdrop fun(self: frame, backdrop: backdrop|table|nil)
 ---@field SetBackdropColor fun(self: frame, red: red|number, green: green|number, blue: blue|number, alpha: alpha|number?)
 ---@field SetBackdropBorderColor fun(self: frame, red: red|number, green: green|number, blue: blue|number, alpha: alpha|number?)
 ---@field GetBackdrop fun(self: frame) : backdrop
@@ -590,17 +1272,66 @@ BackdropTemplateMixin = {}
 ---@field GetChildren fun(self: frame) : frame[]
 ---@field GetRegions fun(self: frame) : region[]
 ---@field CreateTexture fun(self: frame, name: string?, layer: drawlayer, inherits: string?, subLayer: number?) : texture
----@field CreateMaskTexture fun(self: frame, name: string?, layer: drawlayer, inherits: string?, subLayer: number?) : texture
+---@field CreateMaskTexture fun(self: frame, name: string?, layer: drawlayer?, inherits: string?, subLayer: number?) : texture
 ---@field CreateFontString fun(self: frame, name: string?, layer: drawlayer, inherits: string?, subLayer: number?) : fontstring
 ---@field EnableMouse fun(self: frame, enable: boolean) enable mouse interaction
 ---@field SetResizable fun(self: frame, enable: boolean) enable resizing of the frame
 ---@field EnableMouseWheel fun(self: frame, enable: boolean) enable mouse wheel scrolling
 ---@field RegisterForDrag fun(self: frame, button: string) register the frame for drag events, allowing it to be dragged by the mouse
+---@field Raise fun() raise the frame to the top of its strata
 ---@field SetResizeBounds fun(self: frame, minWidth: number, minHeight: number, maxWidth: number, maxHeight: number) set the minimum and maximum size of the frame
 ---@field RegisterEvent fun(self: frame, event: string) register for an event, trigers "OnEvent" script when the event is fired
 ---@field RegisterUnitEvent fun(self: frame, event: string, unitId: unit) register for an event, trigers "OnEvent" only if the event occurred for the registered unit
 ---@field UnregisterEvent fun(self: frame, event: string) unregister for an event
 ---@field HookScript fun(self: frame, event: string, handler: function) run a function after the frame's script has been executed, carrying the same arguments
+---@field CanChangeProtectedState fun(self: frame) : boolean
+---@field CollapsesLayout fun(self: frame) : boolean
+---@field EnableMouseMotion fun(self: frame, enable: boolean)
+---@field GetBottom fun(self: frame) : number
+---@field GetCenter fun(self: frame) : number, number
+---@field GetHeight fun(self: frame, ignoreRect: boolean?) : number
+---@field GetLeft fun(self: frame) : number
+---@field GetRect fun(self: frame) : number, number, number, number
+---@field GetRight fun(self: frame) : number
+---@field GetScaledRect fun(self: frame) : number, number, number, number
+---@field GetSize fun(self: frame, ignoreRect: boolean?) : number, number
+---@field GetSourceLocation fun(self: frame) : string
+---@field GetTop fun(self: frame) : number
+---@field GetWidth fun(self: frame, ignoreRect: boolean?) : number
+---@field Hide fun(self: frame)
+---@field IsCollapsed fun(self: frame) : boolean
+---@field SetCollapsesLayout fun(self: frame, collapsesLayout: boolean)
+---@field IsAnchoringRestricted fun(self: frame) : boolean
+---@field IsDragging fun(self: frame) : boolean
+---@field IsMouseClickEnabled fun(self: frame) : boolean
+---@field IsMouseMotionEnabled fun(self: frame) : boolean
+---@field IsMouseMotionFocus fun(self: frame) : boolean
+---@field IsMouseOver fun(self: frame, offsetTop: number?, offsetBottom: number?, offsetLeft: number?, offsetRight: number?) : boolean
+---@field IsMouseWheelEnabled fun(self: frame) : boolean
+---@field IsProtected fun(self: frame) : boolean, boolean
+---@field IsRectValid fun(self: frame) : boolean
+---@field IsShown fun(self: frame) : boolean
+---@field IsVisible fun(self: frame) : boolean
+---@field SetMouseMotionEnabled fun(self: frame, enabled: boolean)
+---@field SetParent fun(self: frame, parent: frame?)
+---@field SetPassThroughButtons fun(self: frame, button1: string?, ...)
+---@field SetPropagateMouseClicks fun(self: frame, propagate: boolean)
+---@field SetPropagateMouseMotion fun(self: frame, propagate: boolean)
+---@field SetShown fun(self: frame, show: boolean)
+---@field Show fun(self: frame)
+---@field AdjustPointsOffset fun(self: frame, x: number, y: number)
+---@field ClearAllPoints fun(self: frame)
+---@field ClearPoint fun(self: frame, point: string)
+---@field ClearPointsOffset fun(self: frame)
+---@field GetPoint fun(self: frame, anchorIndex: number?, resolveCollapsed: boolean?) : string, frame, string, number, number
+---@field GetPointByName fun(self: frame, point: string, resolveCollapsed: boolean?) : string, frame, string, number, number
+---@field SetAllPoints fun(self: frame, relativeTo: uiobject?, doResize: boolean?)
+---@field SetHeight fun(self: frame, height: number)
+---@field SetSize fun(self: frame, x: number, y: number)
+---@field SetWidth fun(self: frame, width: number)
+---@field CreateAnimationGroup fun(self: frame, name: string?, templateName: string?) : animationgroup
+---@field GetAnimationGroups fun(self: frame) : animationgroup[]
+---@field StopAnimating fun(self: frame)
 
 ---@class cooldown : frame
 ---@field Clear fun(self: cooldown)
@@ -737,6 +1468,7 @@ BackdropTemplateMixin = {}
 
 ---@class texture : region
 ---@field AddMaskTexture fun(self: texture, maskTexture: texture)
+---@field GetDrawLayer  fun(self: texture) : drawlayer, number
 ---@field SetDrawLayer fun(self: texture, layer: drawlayer, subLayer: number?)
 ---@field GetTexture fun(self: texture) : any
 ---@field SetTexture fun(self: texture, path: textureid|texturepath?, horizontalWrap: texturewrap?, verticalWrap: texturewrap?, filter: texturefilter?)
@@ -796,10 +1528,11 @@ BackdropTemplateMixin = {}
 ---@field SetFont fun(self: editbox, font: string, size: number, flags: string)
 ---@field SetFontObject fun(self: editbox, fontString: fontstring)
 ---@field GetFont fun(self: editbox) : string, number, string
+---@field ClearFocus fun(self:editbox) clear the editing focus
 ---@field SetTextColor fun(self: editbox, r: red|number, g: green|number, b: blue|number, a: alpha|number?)
 ---@field SetJustifyH fun(self:editbox, alignment:string)
 ---@field SetTextInsets fun(self:editbox, left:number, right:number, top:number, bottom:number)
----@field SetFocus fun(self:editbox, focus:boolean)
+---@field SetFocus fun(self:editbox)
 ---@field HasFocus fun(self:editbox) : boolean return true if the editbox has focus
 ---@field HighlightText fun(self:editbox, start:number?, finish:number?) select a portion of the text, passing zero will select the entire text
 
@@ -816,6 +1549,123 @@ BackdropTemplateMixin = {}
 ---@field SetThumbTexture fun(self: slider, texture: textureid|texturepath)
 ---@field SetStepsPerPage fun(self: slider, steps: number)
 
+---@class damagemetertype : table
+---@field DamageDone number
+---@field Dps number
+---@field HealingDone number
+---@field Hps number
+---@field Absorbs number
+---@field Interrupts number
+---@field Dispels number
+---@field DamageTaken number
+
+---return is the value passed is a secret
+---@param value any
+---@return boolean
+function issecretvalue(value) return false end
+
+---return is the value passed is a secret
+---@param value any
+---@return boolean
+function issecrettable(value) return false end
+
+---@class enum : table
+---@field DamageMeterType damagemetertype
+---@field CompressionMethod compressionmethod
+
+---@class compressionmethod : table
+---@field Deflate number 0
+---@field Zlib number 1
+---@field Gzip number 2
+
+---@type enum
+---@diagnostic disable-next-line: missing-fields
+Enum = {
+    DamageMeterType = {
+        DamageDone = 0,
+        Dps = 1,
+        HealingDone = 2,
+        Hps = 3,
+        Absorbs = 4,
+        Interrupts = 5,
+        Dispels = 6,
+        DamageTaken = 7,
+    },
+    CompressionMethod = {
+        Deflate = 0,
+        Zlib = 1,
+        Gzip = 2,
+    },
+}
+
+---@class encodingutil : table
+---@field EncodeHex fun(self: encodingutil, str: string) : string
+---@field DecodeHex fun(self: encodingutil, str: string) : string
+---@field EncodeBase64 fun(self: encodingutil, str: string, variant: string?) : string
+---@field DecodeBase64 fun(self: encodingutil, str: string, variant: string?) : string
+---@field CompressString fun(self: encodingutil, str: string, method: string?, level: string?) : string
+---@field DecompressString fun(self: encodingutil, str: string, method: string?) : string
+---@field SerializeJSON fun(self: encodingutil, value: any, options: table?) : string
+---@field DeserializeJSON fun(self: encodingutil, str: string) : any
+---@field SerializeCBOR fun(self: encodingutil, value: any, options: table?) : string
+---@field DeserializeCBOR fun(self: encodingutil, str: string) : any
+
+C_EncodingUtil = {}
+
+---@param source string
+---@param method string?
+---@param level string?
+---@return string
+function C_EncodingUtil.CompressString(source, method, level) return "" end
+
+---@param source string
+---@param variant string?
+---@return string
+function C_EncodingUtil.DecodeBase64(source, variant) return "" end
+
+---@param source string
+---@return string
+function C_EncodingUtil.DecodeHex(source) return "" end
+
+---@param source string
+---@param method string?
+---@return string
+function C_EncodingUtil.DecompressString(source, method) return "" end
+
+---@param source string
+---@return any
+function C_EncodingUtil.DeserializeCBOR(source) return nil end
+
+---@param source string
+---@return any
+function C_EncodingUtil.DeserializeJSON(source) return nil end
+
+---@param source string
+---@param variant string?
+---@return string
+function C_EncodingUtil.EncodeBase64(source, variant) return "" end
+
+---@param source string
+---@return string
+function C_EncodingUtil.EncodeHex(source) return "" end
+
+---@param value any
+---@param options table?
+---@return string
+function C_EncodingUtil.SerializeCBOR(value, options) return "" end
+
+---@param value any
+---@param options table?
+---@return string
+function C_EncodingUtil.SerializeJSON(value, options) return "" end
+
+
+---get all frames under the cursor that has mouse focus
+---@return uiobject[]
+function GetMouseFoci()
+    return {}
+end
+
 ---@return number
 function debugprofilestop() return 0 end
 
@@ -825,6 +1675,16 @@ LE_PARTY_CATEGORY_INSTANCE = true
 
 --functions
 C_ChatInfo = true
+
+---@class classinfo : table
+---@field classID number
+---@field className string
+---@field classFile string
+
+C_CreatureInfo = {}
+---@param classId number
+---@return classinfo
+function C_CreatureInfo.GetClassInfo(classId) return {} end
 
 C_Item = {}
 function C_Item.PickupItem() end
@@ -1095,6 +1955,15 @@ function C_UnitAuras.IsAuraFilteredOutByInstanceID(unitToken, auraInstanceID, fi
 ---@return boolean
 function C_UnitAuras.WantsAlteredForm(unitToken) return true end
 
+---return true if the unit has assistant privileges in the raid group
+---@param unitToken unit
+---@return boolean
+UnitIsGroupAssistant = function(unitToken) return true end
+
+---return true if the unit is the leader of the group
+---@param unitToken unit
+---@return boolean
+UnitIsGroupLeader = function(unitToken) return true end
 
 
 ---linearly interpolates between two values. Example: Lerp(1, 2, 0.5) return 1.5
@@ -1400,21 +2269,8 @@ function C_ChallengeMode.GetActiveChallengeMapID() return 0 end
 ---@return boolean wasActive Whether the keystone was active.
 function C_ChallengeMode.GetActiveKeystoneInfo() return 0, {}, true end
 
----return the completion information for the current challenge mode.
----@return number mapChallengeModeID The map id of the challenge mode.
----@return number level The keystone level of the challenge mode.
----@return number time The time taken to complete the challenge mode.
----@return boolean onTime Whether the challenge mode was completed within the time limit.
----@return number keystoneUpgradeLevels The number of keystone upgrade levels.
----@return boolean practiceRun Whether the challenge mode was a practice run.
----@return number oldOverallDungeonScore The old overall dungeon score.
----@return number newOverallDungeonScore The new overall dungeon score.
----@return boolean isMapRecord Whether the completion is a map record.
----@return boolean isAffixRecord Whether the completion is an affix record.
----@return number primaryAffix The primary affix id.
----@return boolean isEligibleForScore Whether the completion is eligible for a score.
----@return ChallengeModeCompletionMemberInfo[] members The members of the group.
-function C_ChallengeMode.GetCompletionInfo() return 0, 0, 0, true, 0, true, 0, 0, true, true, 0, true, {} end
+---@return challengecompletioninfo
+function C_ChallengeMode.GetChallengeCompletionInfo() return {} end
 
 ---return the death count for the current challenge mode.
 ---@return number numDeaths The number of deaths.
@@ -1447,7 +2303,10 @@ function C_ChallengeMode.GetMapTable() return {} end
 ---@param mapChallengeModeID number The map id for the challenge mode.
 ---@return string name The name of the challenge mode map.
 ---@return number id The id of the challenge mode map.
-function C_ChallengeMode.GetMapUIInfo(mapChallengeModeID) return "", 0 end
+---@return number timeLimit The time limit for the challenge mode map.
+---@return number texture The texture for the challenge mode map.
+---@return number backgroundTexture The background texture for the challenge mode map.
+function C_ChallengeMode.GetMapUIInfo(mapChallengeModeID) return "", 0, 0, 0, 0 end
 
 ---return the affix information for the challenge mode.
 ---@param affixID number The affix id for the challenge mode.
@@ -1747,7 +2606,7 @@ function GetServerTime() return 0 end
 
 C_Spell = {}
 
----@param spellID number
+---@param spellID number|string
 ---@return spellinfo
 function C_Spell.GetSpellInfo(spellID) return {} end
 
@@ -1817,7 +2676,7 @@ function floor(x) return 0 end
 ---@param table table
 ---@param index number?
 ---@return any
-function tremove(table, index) return nil end
+function table.remove(table, index) return nil end
 
 --loads a string and output a function in lua.
 ---@param code string The Lua code string to be executed.
@@ -1894,7 +2753,7 @@ GetSpecializationInfo = function(specIndex, isInspect, isPet, sex, level) return
 ---@return string name
 ---@return string description
 ---@return string icon
----@return number role
+---@return string role
 ---@return ...
 GetSpecializationInfoByID = function(specID, isInspect, isPet, inspectTarget) return 0, "", "", "", 0, "" end
 
@@ -1905,7 +2764,7 @@ GetSpecializationInfoByID = function(specID, isInspect, isPet, inspectTarget) re
 ---@return string specName The name of the specialization.
 ---@return string specDescription The description of the specialization.
 ---@return string icon The icon of the specialization.
----@return number role The role of the specialization.
+---@return string role The role of the specialization.
 ---@return boolean recommended Whether the specialization is recommended.
 ---@return boolean allowedForBoost Whether the specialization is allowed for boost.
 ---@return number masterySpell1 The ID of the first mastery spell.
@@ -2170,6 +3029,9 @@ UseSoulstone = function(type) end
 CanSolveArtifact = function() return true end
 
 UIParent = {}
+
+---@return number
+GetNumClasses = function() return 0 end
 
 ---@param raceIndex number
 ---@return number, string, string, number, number, number, number, number
@@ -5006,9 +5868,10 @@ GetRealNumRaidMembers = function() return 0 end
 ---@return string, string
 GetPartyAssignment = function(unit) return "", "" end
 
+---return name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML, combatRole
 ---@param raidID number
----@return string, string
-GetRaidRosterInfo = function(raidID) return "", "" end
+---@return string, number, number, number, string, string, string, boolean, boolean, string, boolean, string
+GetRaidRosterInfo = function(raidID) return "", 0, 0, 0, "", "", "", true, true, "", true, "" end
 
 ---@param unit string
 ---@return number
@@ -5044,13 +5907,13 @@ SetAllowLowLevelRaid = function(enabled) end
 ---@param index number
 SetRaidRosterSelection = function(index) end
 
----@param unit string
----@param subgroup number
-SetRaidSubgroup = function(unit, subgroup) end
+---@param unitNumber number
+---@param subGroup number
+SetRaidSubgroup = function(unitNumber, subGroup) end
 
----@param unit1 string
----@param unit2 string
-SwapRaidSubgroup = function(unit1, unit2) end
+---@param unitNumber1 number
+---@param unitNumber2 number
+SwapRaidSubgroup = function(unitNumber1, unitNumber2) end
 
 ---@param unit string
 ---@param raidTargetIndex number
@@ -5376,8 +6239,9 @@ SpellTargetUnit = function(unit) end
 
 ToggleSpellAutocast = function() end
 
+---@param unit string
 ---@return string, string, number, number, boolean, string
-UnitCastingInfo = function() return "", "", 0, 0, false, "" end
+UnitCastingInfo = function(unit) return "", "", 0, 0, false, "" end
 
 ---@param unit string
 ---@return string, string, number, number, boolean, string
@@ -5834,8 +6698,8 @@ function UnitCanAttack(unit) return true end
 function UnitCanCooperate(unit) return true end
 
 ---@param unit string
----@return string, string
-function UnitClass(unit) return "", "" end
+---@return string, string, number
+function UnitClass(unit) return "", "", 0 end
 
 ---@param unit string
 ---@return string

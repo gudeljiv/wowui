@@ -382,7 +382,7 @@ function Scanner.GetResultItem(craftString)
 	else
 		spellId = private.classicSpellIdLookup[spellId] or spellId
 		local itemLink, indirectSpellId = TradeSkill.GetResult(spellId)
-		if LibTSMService.IsCataClassic() then
+		if LibTSMService.IsPandaClassic() then
 			local itemString = Data.GetIndirectCraftResult(indirectSpellId)
 			itemLink = itemString and ItemInfo.GetLink(itemString) or itemLink
 		end
@@ -605,17 +605,15 @@ function private.ScanProfession()
 						local result = TradeSkill.GetResult(spellId)
 						if type(result) == "table" then
 							numResultItems = #result
-						else
-							if ItemString.GetBase(result) then
-								local ilvlBonuses = info.qualityIlvlBonuses
-								if ilvlBonuses then
-									numResultItems = #ilvlBonuses
-								else
-									numResultItems = 1
-								end
+						elseif ItemString.GetBase(result) then
+							local ilvlBonuses = info.qualityIlvlBonuses
+							if ilvlBonuses and #ilvlBonuses > 0 then
+								numResultItems = #ilvlBonuses
 							else
 								numResultItems = 1
 							end
+						else
+							numResultItems = 1
 						end
 					end
 					if not info.supportsQualities or info.isSalvageRecipe then
@@ -804,7 +802,7 @@ function private.BulkInsertMats(craftString)
 		end
 	end
 
-	if LibTSMService.IsCataClassic() and TradeSkill.IsEnchant(spellIdOrIndex) then
+	if LibTSMService.IsPandaClassic() and TradeSkill.IsEnchant(spellIdOrIndex) then
 		-- Add a vellum to the list of mats
 		local vellumItemString = Scanner.GetVellumItemString(craftString)
 		if vellumItemString then
@@ -828,31 +826,33 @@ function private.BulkInsertMats(craftString)
 		if salvageItems then
 			local matString = MatString.Create(MatString.TYPE.REQUIRED, 1, salvageItems)
 			private.matDB:BulkInsertNewRow(craftString, matString, salvageQuantityMin, "")
-		else
-			for _, matType, quantityRequired, dataSlotIndex, slotTextOrId, reagents in TradeSkill.SpecialMatIterator(spellId, level, categorySkillLevel) do
-				assert(not next(private.matStringItemsTemp))
-				for _, craftingReagent in ipairs(reagents) do
-					tinsert(private.matStringItemsTemp, craftingReagent.itemID)
-				end
-				local matStringType = nil
-				if matType == TradeSkill.MAT_TYPE.REQUIRED then
-					matStringType = MatString.TYPE.REQUIRED
-				elseif matType == TradeSkill.MAT_TYPE.QUALITY then
-					matStringType = MatString.TYPE.QUALITY
-				elseif matType == TradeSkill.MAT_TYPE.OPTIONAL then
-					matStringType = MatString.TYPE.OPTIONAL
-				elseif matType == TradeSkill.MAT_TYPE.FINISHING then
-					matStringType = MatString.TYPE.FINISHING
-				else
-					error("Unexpected mat type: "..tostring(matType))
-				end
-				if type(slotTextOrId) == "number" then
-					slotTextOrId = ItemInfo.GetName("i:"..slotTextOrId) or ""
-				end
-				local matString = MatString.Create(matStringType, dataSlotIndex, private.matStringItemsTemp)
-				wipe(private.matStringItemsTemp)
-				private.matDB:BulkInsertNewRow(craftString, matString, quantityRequired, slotTextOrId)
+		end
+		for _, matType, quantityRequired, dataSlotIndex, slotTextOrId, reagents in TradeSkill.SpecialMatIterator(spellId, level, categorySkillLevel) do
+			assert(not next(private.matStringItemsTemp))
+			for _, craftingReagent in ipairs(reagents) do
+				tinsert(private.matStringItemsTemp, craftingReagent.itemID)
 			end
+			local matStringType = nil
+			if matType == TradeSkill.MAT_TYPE.REQUIRED then
+				matStringType = MatString.TYPE.REQUIRED
+			elseif matType == TradeSkill.MAT_TYPE.QUALITY then
+				matStringType = MatString.TYPE.QUALITY
+			elseif matType == TradeSkill.MAT_TYPE.OPTIONAL then
+				matStringType = MatString.TYPE.OPTIONAL
+			elseif matType == TradeSkill.MAT_TYPE.FINISHING then
+				matStringType = MatString.TYPE.FINISHING
+			else
+				error("Unexpected mat type: "..tostring(matType))
+			end
+			if type(slotTextOrId) == "number" then
+				slotTextOrId = ItemInfo.GetName("i:"..slotTextOrId) or ""
+			end
+			if salvageItems then
+				dataSlotIndex = dataSlotIndex + 1
+			end
+			local matString = MatString.Create(matStringType, dataSlotIndex, private.matStringItemsTemp)
+			wipe(private.matStringItemsTemp)
+			private.matDB:BulkInsertNewRow(craftString, matString, quantityRequired, slotTextOrId)
 		end
 	end
 

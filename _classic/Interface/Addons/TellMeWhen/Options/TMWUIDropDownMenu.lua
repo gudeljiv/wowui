@@ -338,6 +338,7 @@ function DD:AddButton(info, level)
 	button.keepShownOnClick = info.keepShownOnClick;
 	button.tooltipTitle = info.tooltipTitle;
 	button.tooltipText = info.tooltipText;
+	button.tooltipFunc = info.tooltipFunc;
 	button.tooltipWrap = info.tooltipWrap;
 	button.arg1 = info.arg1;
 	button.arg2 = info.arg2;
@@ -740,8 +741,7 @@ function DD:GetScrollable()
 	return self.scrollable
 end
 
-
-WorldFrame:HookScript("OnMouseDown", function()
+TMW:RegisterCallback("TMW_WORLD_FRAME_MOUSE_DOWN", function()
 	DD:CloseDropDownMenus()
 end)
 

@@ -1,10 +1,12 @@
 local _,addon = ...
-if addon.game ~= "CATA" or addon.player.faction ~= 'Alliance' then return end
+if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
 RXPGuides.RegisterGuide([[
 
 #version 1
-#group RXP Cataclysm 1-80 (A)
+#group RXP Cataclysm 1-80 (A) << cata
+#group RXP MoP 1-60 (A) << mop
 #cata
+#mop
 #name 20-25 Duskwood
 #displayname 21-26 Duskwood
 #next 25-30 Northern Stranglethorn
@@ -167,6 +169,9 @@ step
     .accept 26689 >>Accept The Rotting Orchard
 	.target Calor
 step
+    #optional
+    .maxlevel 25,endOfTheGuide
+step
     .goto 47,79.53,47.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Viktori|r
     .accept 26683 >>Accept Look To The Stars
@@ -239,6 +244,9 @@ step
     .turnin 26645 >>Turn in The Night Watch
     .accept 26686 >>Accept Bones That Walk
 	.target Commander Althea Ebonlocke
+step
+    #optional
+    .maxlevel 25,endOfTheGuide
 step
 #optional
 	#completewith next
@@ -340,6 +348,9 @@ step
     .accept 26680 >>Accept Ogre Thieves
 	.target Abercrombie
 step
+    #optional
+    .maxlevel 25,endOfTheGuide
+step
     #completewith JPages
     >>Kill |cRXP_ENEMY_Nightbane Vile Fangs|r and |cRXP_ENEMY_Nightbane Tainted Ones|r
     .complete 26690,1 --8/8 Nightbane Vile Fang slain
@@ -432,6 +443,9 @@ step
     .goto 47,44.92,67.43
 	.target +Apprentice Fess
 step
+    #optional
+    .maxlevel 25,endOfTheGuide
+step
     #completewith next
     >>Kill |cRXP_ENEMY_Corpseweeds|r. Loot them for their |cRXP_LOOT_Corpseweed|r
     .complete 26707,1 --5/5 Corpseweed
@@ -504,12 +518,12 @@ step
 	.target +Watcher Dodds
 step
     .goto 47,20.015,57.884
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Elsington|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Elsington|r
     .target Sister Elsington
     .accept 26777 >>Accept Soothing Spirits
 step
     .goto 47,18.628,58.335
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jitters|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jitters|r
     .accept 26721 >>Accept The Jitters-Bugs
     .target Jitters
 step
@@ -578,6 +592,9 @@ step
 	.target Sven Yorgen
 	.target Sister Elsington
 step
+    #optional
+    .maxlevel 25,endOfTheGuide
+step
     .goto Duskwood,21.08,56.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_John Shelby|r
     .target John Shelby
@@ -633,6 +650,9 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
     .turnin 26680 >>Turn in Ogre Thieves
 	.target Abercrombie
+step
+    #optional
+    .maxlevel 25,endOfTheGuide
 step
     .goto 47,87.43,35.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
@@ -855,6 +875,9 @@ step
     .target Sister Elsington
     .turnin 26778 >>Turn in The Cries of the Dead
     .accept 26838 >>Accept Rebels Without a Clue
+step
+    #optional
+    #label endOfTheGuide
 step
     .goto 50,51.88,12.10
     .zone 50 >> Travel to Northern Stranglethorn

@@ -4,56 +4,34 @@ if not L then return end
 
 --[[Translation missing --]]
 L["A broker plugin to toggle a bar."] = "A broker plugin to toggle a bar."
---[[Translation missing --]]
-L["Adjust Blizzard Frames"] = "Adjust Blizzard Frames"
---[[Translation missing --]]
-L["Adjust the size of the tiles."] = "Adjust the size of the tiles."
---[[Translation missing --]]
-L["Advanced Textures"] = "Advanced Textures"
---[[Translation missing --]]
-L["Alignment"] = "Alignment"
---[[Translation missing --]]
-L["Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."] = "Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."
---[[Translation missing --]]
-L["Autohide"] = "Autohide"
---[[Translation missing --]]
-L["Automatically disable new plugins of type:"] = "Automatically disable new plugins of type:"
---[[Translation missing --]]
-L["Background Texture"] = "Background Texture"
---[[Translation missing --]]
-L["Bar Right Click"] = "Bar Right Click"
---[[Translation missing --]]
-L["Bar Settings"] = "Bar Settings"
---[[Translation missing --]]
-L["Bar Size"] = "Bar Size"
+L["Adjust Blizzard Frames"] = "Ajustar Janelas da Blizzard"
+L["Adjust the size of the tiles."] = "Ajustar o tamanho dos títulos."
+L["Advanced Textures"] = "Texturas Avançadas"
+L["Alignment"] = "Alinhamento"
+L["Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."] = "Sempre ajustar o grupo central baseado na largura atual dos plugins. Desative isso para alinhar o grupo central baseado apenas no número de plugins."
+L["Autohide"] = "Esconder Automaticamente"
+L["Automatically disable new plugins of type:"] = "Automaticamente desativar novos plugins do tipo:"
+L["Background Texture"] = "Texturas de Fundo"
+L["Bar Right Click"] = "Clique Direito na Barra"
+L["Bar Settings"] = "Configurações da Barra"
+L["Bar Size"] = "Tamanho da Barra"
 --[[Translation missing --]]
 L["Bar Strata"] = "Bar Strata"
---[[Translation missing --]]
-L["Bar Width"] = "Bar Width"
---[[Translation missing --]]
-L["Bars"] = "Bars"
---[[Translation missing --]]
-L["Blizzard Options"] = "Blizzard Options"
---[[Translation missing --]]
-L["Border Color/Alpha"] = "Border Color/Alpha"
---[[Translation missing --]]
-L["Center"] = "Center"
---[[Translation missing --]]
-L["ChocolateBar Options"] = "ChocolateBar Options"
+L["Bar Width"] = "Largura da Barra"
+L["Bars"] = "Barras"
+L["Blizzard Options"] = "Opções da Blizzard"
+L["Border Color/Alpha"] = "Cor/Alpha da Borda"
+L["Center"] = "Centro"
+L["ChocolateBar Options"] = "Opções do ChocolateBar"
 --[[Translation missing --]]
 L["Colorize frames during drag & drop."] = "Colorize frames during drag & drop."
 --[[Translation missing --]]
 L["Colorized Dragging"] = "Colorized Dragging"
---[[Translation missing --]]
-L["Could not load ChocolateBar_Options, make sure it's installed."] = "Could not load ChocolateBar_Options, make sure it's installed."
---[[Translation missing --]]
-L["Create Bar"] = "Create Bar"
---[[Translation missing --]]
-L["Create New Bar"] = "Create New Bar"
---[[Translation missing --]]
-L["Create New Placeholder"] = "Create New Placeholder"
---[[Translation missing --]]
-L["Create Placeholder"] = "Create Placeholder"
+L["Could not load ChocolateBar_Options, make sure it's installed."] = "Não foi possível carregar o ChocolateBar_Options, verifique se está instalado."
+L["Create Bar"] = "Criar Barra"
+L["Create New Bar"] = "Criar Nova Barra"
+L["Create New Placeholder"] = "Criar Novo Marcador de Posição"
+L["Create Placeholder"] = "Criar Marcador de Posição"
 --[[Translation missing --]]
 L["Creates a new plugin to use as a placeholder."] = "Creates a new plugin to use as a placeholder."
 --[[Translation missing --]]
@@ -62,78 +40,47 @@ L["Data Source"] = "Data Source"
 L["Debug"] = "Debug"
 --[[Translation missing --]]
 L["Default text color of a plugin. This will not overwrite plugins that use own colors."] = "Default text color of a plugin. This will not overwrite plugins that use own colors."
---[[Translation missing --]]
-L["Defaults"] = "Defaults"
---[[Translation missing --]]
-L["Delay"] = "Delay"
+L["Defaults"] = "Padrões"
+L["Delay"] = "Atraso"
 --[[Translation missing --]]
 L["Desaturated Icons"] = "Desaturated Icons"
---[[Translation missing --]]
-L["Disable All"] = "Disable All"
---[[Translation missing --]]
-L["Disable all Launchers"] = "Disable all Launchers"
---[[Translation missing --]]
-L["Disable all the bad guy's:)"] = "Disable all the bad guy's:)"
---[[Translation missing --]]
-L["Disable Clicking"] = "Disable Clicking"
---[[Translation missing --]]
-L["Disable Options"] = "Disable Options"
---[[Translation missing --]]
-L["Disable options dialog on right click"] = "Disable options dialog on right click"
---[[Translation missing --]]
-L["Disable Plugin"] = "Disable Plugin"
---[[Translation missing --]]
-L["Disable Tooltips"] = "Disable Tooltips"
---[[Translation missing --]]
-L["Disabled"] = "Disabled"
+L["Disable All"] = "Desativar Todos"
+L["Disable all Launchers"] = "Desativar Todos os Launchers"
+L["Disable all the bad guy's:)"] = "Desativar todos caras maus:)"
+L["Disable Clicking"] = "Desativar Clique"
+L["Disable Options"] = "Desativar Opções"
+L["Disable options dialog on right click"] = "Desativar Opções de Diálogo com o Clique Direito"
+L["Disable Plugin"] = "Desativar Plugin"
+L["Disable Tooltips"] = "Desativar Dicas"
+L["Disabled"] = "Desativado"
 --[[Translation missing --]]
 L["Eat a whole chocolate bar, oh my.."] = "Eat a whole chocolate bar, oh my.."
 --[[Translation missing --]]
 L["Eat all the chocolate at once, uff..."] = "Eat all the chocolate at once, uff..."
---[[Translation missing --]]
-L["Enable All"] = "Enable All"
---[[Translation missing --]]
-L["Enable free placement for this bar"] = "Enable free placement for this bar"
---[[Translation missing --]]
-L["Enabled"] = "Enabled"
---[[Translation missing --]]
-L["Fixed"] = "Fixed"
---[[Translation missing --]]
-L["Fixed/Max Text Width"] = "Fixed/Max Text Width"
---[[Translation missing --]]
-L["Font"] = "Font"
---[[Translation missing --]]
-L["Font Size"] = "Font Size"
---[[Translation missing --]]
-L["Fonts and Textures"] = "Fonts and Textures"
---[[Translation missing --]]
-L["Force Text Color"] = "Force Text Color"
---[[Translation missing --]]
-L["Free"] = "Free"
---[[Translation missing --]]
-L["Free Placement"] = "Free Placement"
---[[Translation missing --]]
-L["Gap"] = "Gap"
---[[Translation missing --]]
-L["General"] = "General"
---[[Translation missing --]]
-L["Get back my plugins!"] = "Get back my plugins!"
---[[Translation missing --]]
-L["Hide Bars"] = "Hide Bars"
---[[Translation missing --]]
-L["Hide Bars during a Pet Battle."] = "Hide Bars during a Pet Battle."
---[[Translation missing --]]
-L["Hide Bars in Pet Battle"] = "Hide Bars in Pet Battle"
---[[Translation missing --]]
-L["Hide In Combat"] = "Hide In Combat"
+L["Enable All"] = "Ativar Todos"
+L["Enable free placement for this bar"] = "Ativar posicionamento livre para esta barra"
+L["Enabled"] = "Ativado"
+L["Fixed"] = "Fixado"
+L["Fixed/Max Text Width"] = "Fixado/Largura de Texto Máxima"
+L["Font"] = "Fonte"
+L["Font Size"] = "Tamanho da Fonte"
+L["Fonts and Textures"] = "Fontes e Texturas"
+L["Force Text Color"] = "Forçar Cor do Texto"
+L["Free"] = "Livre"
+L["Free Placement"] = "Posicionamento Livre"
+L["Gap"] = "Brecha"
+L["General"] = "Geral"
+L["Get back my plugins!"] = "Devolva meus plugins!"
+L["Hide Bars"] = "Esconder Barras"
+L["Hide Bars during a Pet Battle."] = "Esconder barras durante batalhas de mascotes."
+L["Hide Bars in Pet Battle"] = "Esconder barras em batalhas de pets"
+L["Hide In Combat"] = "Esconder em Combate"
 --[[Translation missing --]]
 L["Hide Order Hall Bar"] = "Hide Order Hall Bar"
---[[Translation missing --]]
-L["Hide this bar during combat."] = "Hide this bar during combat."
+L["Hide this bar during combat."] = "Esconder essa barra durante o combate."
 --[[Translation missing --]]
 L["Hides the command bar displayed at the Class/Order Hall."] = "Hides the command bar displayed at the Class/Order Hall."
---[[Translation missing --]]
-L["Highlight"] = "Highlight"
+L["Highlight"] = "Realçar"
 --[[Translation missing --]]
 L["Hold alt key to drag a plugin."] = "Hold alt key to drag a plugin."
 --[[Translation missing --]]
@@ -148,46 +95,29 @@ L["Icon size in relation to the bar height."] = "Icon size in relation to the ba
 L["If enabled new plugins of type data source will automatically be disabled."] = "If enabled new plugins of type data source will automatically be disabled."
 --[[Translation missing --]]
 L["If enabled new plugins of type launcher will automatically be disabled."] = "If enabled new plugins of type launcher will automatically be disabled."
---[[Translation missing --]]
-L["In Combat"] = "In Combat"
---[[Translation missing --]]
+L["In Combat"] = "Em Combate"
 L["Launcher"] = "Launcher"
---[[Translation missing --]]
-L["Left"] = "Left"
---[[Translation missing --]]
-L["Lock Plugins"] = "Lock Plugins"
---[[Translation missing --]]
-L["Locked"] = "Locked"
+L["Left"] = "Esquerda"
+L["Lock Plugins"] = "Travar Plugins"
+L["Locked"] = "Travado"
 --[[Translation missing --]]
 L["Look and Feel"] = "Look and Feel"
---[[Translation missing --]]
-L["Manage this Bar"] = "Manage this Bar"
+L["Manage this Bar"] = "Gerenciar essa Barra"
 --[[Translation missing --]]
 L["Managed Placement"] = "Managed Placement"
---[[Translation missing --]]
-L["Max"] = "Max"
---[[Translation missing --]]
-L["Modules"] = "Modules"
+L["Max"] = "Máximo"
+L["Modules"] = "Módulos"
 --[[Translation missing --]]
 L["Move Blizzard frames above/below bars"] = "Move Blizzard frames above/below bars"
---[[Translation missing --]]
-L["Move Down"] = "Move Down"
---[[Translation missing --]]
-L["Move Up"] = "Move Up"
---[[Translation missing --]]
-L["None"] = "None"
---[[Translation missing --]]
-L["none"] = "none"
---[[Translation missing --]]
-L["Opacity"] = "Opacity"
---[[Translation missing --]]
-L["Options"] = "Options"
---[[Translation missing --]]
-L["Other"] = "Other"
---[[Translation missing --]]
-L["Overwrite Icon Size"] = "Overwrite Icon Size"
---[[Translation missing --]]
-L["Overwrite Text Offset"] = "Overwrite Text Offset"
+L["Move Down"] = "Mover para Baixo"
+L["Move Up"] = "Mover para Cima"
+L["None"] = "Nenhum"
+L["none"] = "nenhum"
+L["Opacity"] = "Opacidade"
+L["Options"] = "Opções"
+L["Other"] = "Outro"
+L["Overwrite Icon Size"] = "Sobrescrever Tamanho do Icone"
+L["Overwrite Text Offset"] = "Sobrescrever Deslocamento do Texto"
 --[[Translation missing --]]
 L["Placeholder"] = "Placeholder"
 --[[Translation missing --]]

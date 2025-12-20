@@ -82,7 +82,7 @@ function SAO.StringVariantValue(self, items, valuePrefix, getTextFunc)
 
     if #items == 1 then
         value = tostring(items[1]);
-        text = string.format(RACE_CLASS_ONLY, getTextFunc(items[1]));
+        text = self:OnlyFor(getTextFunc(items[1]));
     elseif #items > 1 then
         for _, item in ipairs(items) do
             value = value == "" and tostring(item) or value.."/"..tostring(item);
@@ -104,8 +104,7 @@ end
 function SAO.SpecVariantValue(self, specs)
     return self:StringVariantValue(specs, "spec:",
     function(spec)
-        local selector = self.IsCata() and 2 or 1;
-        return select(selector, GetTalentTabInfo(spec));
+        return SAO:GetSpecName(spec);
     end);
 end
 
@@ -113,7 +112,7 @@ end
 function SAO.SpellVariantValue(self, spellIDs)
     return self:StringVariantValue(spellIDs, "spell:",
     function(spellID)
-        return select(1, GetSpellInfo(spellID));
+        return (select(1, GetSpellInfo(spellID)));
     end);
 end
 

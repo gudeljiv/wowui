@@ -1,4 +1,167 @@
-﻿1.15.54 - 9th October 2024
+﻿1.15.114 - 18th December 2025
+- For 'Enhance minimap' ('Interface'), the 'Hide the clock' setting will now work as intended.
+
+1.15.111 - 26th November 2025
+- PTR (2.5.5): The 'Enhance minimap' option ('Interface') is now available.
+- PTR (2.5.5): The 'Enhance professions' option ('Interface') is now available.
+- PTR (2.5.5): The 'Show vanity controls' option ('Interface') is now available.
+- PTR (2.5.5): The 'Show player chain' option ('Interface') is now available.
+- PTR (2.5.5): The 'Show druid power bar' option (Interface') is now available.
+- PTR (2.5.5): The 'Filter chat messages' option ('Chat') is not currently available.
+- PTR (2.5.5): For 'Enhance tooltip' ('Interface'), fixed the tooltip layout and colors.
+- PTR (2.5.5): For 'Class colored frames' ('Frames'), fixed an issue which caused a Lua error when toggling the target frame setting.
+- PTR (2.5.5): For 'Media', added sound tracks and movies for Burning Crusade Classic Anniversary.
+- The 'Show flight times' ('System') option has been moved to the 'System' menu.  The contribute setting is not currently available.
+- Updated slider controls and scroll bars used throughout the addon.
+- Fixed an issue where a help button in the configuration panel would overlap the adjacent reset button for non-English locales.
+
+1.15.110 - 20th November 2025
+- PTR (2.5.5): Preliminary update for Burning Crusade Classic Anniversary.  A few options are currently not available.
+
+1.15.106 - 29th October 2025
+- For 'Enhance minimap' ('Interface'), fixed an issue which caused the north tag to be visible.
+
+1.15.105 - 23rd October 2025
+- Fixed a situational issue which may have caused world frame mouse events to not work for some users.
+
+1.15.104 - 23rd October 2025
+- For 'Party from friends' ('Social'), fixed an issue with caused a Lua error when automatically accepting a party invite.
+- For 'Enhance tooltip' ('Interface'), fixed the issue with hide tooltips for world units during combat.
+- For 'Enhance dressup' ('Interface'), fixed an issue which caused the dressing room model to be truncated.
+- Updated deprecated functions.
+
+1.15.103 - 22nd October 2025
+- Updated for game version 1.15.8.
+- Added a new option called 'Use English language'.  If enabled, text used throughout the addon will be shown in English regardless of your game locale.
+
+1.15.98 - 24th September 2025
+- For 'Show vendor price' ('System'), removed the workaround for the Phoenix Bindings sell price as the game bug appears to be fixed.
+
+1.15.95 - 3rd September 2025
+- For 'Enhance minimap' ('Interface'), you can now set the square minimap border width.
+
+1.15.87 - 6th May 2025
+- Added flight times.
+
+1.15.86 - 30th April 2025
+- Added flight times.
+
+1.15.85 - 23rd April 2025
+- Added flight times.
+
+1.15.84 - 16th April 2025
+- For 'Enhance tooltip' ('Interface'), fixed an issue with 'Hide tooltips during combat'.
+- Added flight times.
+
+1.15.83 - 9th April 2025
+- Updated for game version 1.15.7.
+- For 'Show Wowhead links' and web link, added support for Mexico (mx.wowhead.com) and traditional Chinese (tw.wowhead.com).
+- Added flight times.
+
+1.15.82 - 2nd April 2025
+- Added flight times.
+
+1.15.81 - 27th March 2025
+- Added flight times.
+
+1.15.80 - 20th March 2025
+- Fixed a Lua error issue with /ltp con.
+- Added flight times.
+
+1.15.79 - 14th March 2025
+- PTR (1.15.7): Preliminary update for game patch 1.15.7.
+- Added flight times.
+
+1.15.77 - 28th February 2025
+- Added flight times.
+
+1.15.76 - 21st February 2025
+- For 'Enhance quest log', the 'Map' button now has a global name of LeaPlusGlobalQuestLogMapButton.
+- Added flight times.
+
+1.15.75 - 12th February 2025
+- Added flight times.
+
+1.15.74 - 5th February 2025
+- For 'Use class colors in chat' ('Chat'), class colors will now be applied to voice chat transcription too.
+- For 'Mute mount sounds' ('System'), the horse footsteps setting will now mute footsteps on snow too.
+- Added flight times.
+
+1.15.73 - 29th January 2025
+- Updated for game version 1.15.6.
+- For 'Sell junk automatically', fixed an issue where selling would continue for vendors that refuse to buy items or where the player has reached the gold limit.
+- Added flight times.
+
+1.15.72 - 22nd January 2025
+- Added flight times.
+
+1.15.71 - 15th January 2025
+- The 'Show player chain' option ('Interface') now works with the Easy Frames addon.
+- The 'Class colored frames' option ('Frames') will now be locked out if you have Easy Frames installed.
+- Added flight times.
+
+1.15.70 - 8th January 2025
+- Updated friend checking code to match retail.  Friend checks will now be done using global unique identifiers (if available) as well as realm-stripped character names.  This affects 'Invite from whispers', 'Party from friends' and 'Block party invites' ('Social').
+- Added flight times.
+
+1.15.69 - 1st January 2025
+- Happy New Year!
+- Added a new option 'Hide raid group labels' ('Text').  If checked, the player frame group indicator and the group labels displayed above the compact raid frames and the pullout raid frames will be hidden.
+- For 'Mute game sounds' ('System'), added a new setting to mute horse footsteps.
+- Fixed an issue with 'Invite from whispers' ('Automation') which caused the invite request to fail on some annivsary realms.  This issue was caused by a game bug with those realms.
+- Updated translations.
+- Added flight times.
+
+1.15.68 - 25th December 2024
+- Merry Christmas!
+- Updated translations.
+- Added flight times.
+
+1.15.67 - 18th December 2024
+- Updated translations.
+- Added flight times.
+
+1.15.66 - 12th December 2024
+- The 'Keep audio sync' ('System') option will no longer sync audio while a cinematic is playing.
+- Updated translations.
+- Added flight times.
+
+1.15.65 - 8th December 2024
+- All versions of Leatrix Plus (The War Within, Cataclysm Classic and Classic Era) are now under the same CurseForge project.  If you use Leatrix Plus for Cataclysm Classic or Classic Era, you need to remove the addon, find it again on CurseForge and install it again as the project IDs have changed and there will be no more updates for the old project.  There is no change for The War Within.
+- Note that there are still 3 different versions of Leatrix Plus (The War Within, Cataclysm Classic and Classic Era) but they are now under the same CurseForge project.
+- The new combined project is at https://www.curseforge.com/wow/addons/leatrix-plus.
+- Added flight times.
+
+1.15.64 - 6th December 2024
+- For 'Enhance minimap' ('Interface'), added a new setting that lets you hide the Looking for Group button while you are not queued.  This only applies to game realms with the Looking for Group feature.
+- The 'Party from friends' and 'Invite from whispers' options ('Social') now check to ensure you are not queued in the Looking for Group feature.  On realms without the Looking for Group feature, the options only ensure you are not queued for a battleground as before.
+- The 'Enable viewport' option ('System') is now 'Show borders' ('Interface') mirroring retail.  The new option does not have a screen resize button.
+- Added flight times.
+
+1.15.62 - 20th November 2024
+- For 'Enhance minimap' ('Interface'), fixed the position and scale of the new SoD and anniversary LFG minimap button when using the square minimap setting.
+- Added flight times.
+
+1.15.61 - 20th November 2024
+- Updated for game version 1.15.5.
+- Added flight times.
+
+1.15.59 - 13th November 2024
+- Game API updates.
+- For 'Enhance minimap' ('Interface'), fixed an issue with 'Hide the clock' which sometimes caused the setting to be ignored.
+- Added flight times.
+
+1.15.58 - 6th November 2024
+- For 'Show player chain' ('Interface'), fixed an issue which caused the rare elite chain level indiciator texture to be wider than intended.
+- Added flight times.
+
+1.15.57 - 30th October 2024
+- Added flight times.
+
+1.15.56 - 23rd October 2024
+- Added flight times.
+
+1.15.54 - 9th October 2024
 - For 'Enhance minimap' ('Interface'), improved compatibility with Zygor minimap button notifications.
 
 1.15.53 - 2nd October 2024

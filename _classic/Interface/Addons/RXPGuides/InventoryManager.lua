@@ -18,11 +18,13 @@ local UseContainerItem = C_Container and C_Container.UseContainerItem or _G.UseC
 --local GetContainerItemLink = C_Container and C_Container.GetContainerItemLink or _G.GetContainerItemLink
 --local GetItemCount = C_Item and C_Item.GetItemCount or _G.GetItemCount
 
+local GetCoinTextureString = C_CurrencyInfo and C_CurrencyInfo.GetCoinTextureString or _G.GetCoinTextureString
+
 inventoryManager.bagHook = _G.ContainerFrame_Update
 
 local GetContainerItemInfo
 
-if C_Container.GetContainerItemInfo then
+if C_Container and C_Container.GetContainerItemInfo then
     GetContainerItemInfo = function(...)
         local itemTable = C_Container.GetContainerItemInfo(...)
         if itemTable then
@@ -121,9 +123,9 @@ local function SortQuiver()
     local colour = addon.guideTextColors["RXP_WARN_"]
     if inventoryManager.manualDelete then
         inventoryManager.manualDelete = false
-        print(format(L("RXPGuides: |c%sSorting arrows/bullets|r"),colour))
+        addon.comms.PrettyPrint(L("|c%sSorting arrows/bullets|r"), colour)
     elseif t - sortTimer > 3 then
-        print(format(L("RXPGuides: |c%sInventory is full, sorting arrows/bullets|r"),colour))
+        addon.comms.PrettyPrint(L("|c%sInventory is full, sorting arrows/bullets|r"), colour)
     end
     sortTimer = t
 
@@ -168,12 +170,16 @@ local function SortQuiver()
 
 end
 
+local exceptions = {
+    [6196] = true,
+}
+
 local function IsJunk(id)
     if not id then return end
     local discard = RXPCData.discardPile[id]
     if discard == nil then
         local _, _, quality = GetItemInfo(id)
-        if quality == Enum.ItemQuality.Poor then
+        if quality == Enum.ItemQuality.Poor and not exceptions[id] then
             return true
             --TODO: add an option that ignores auto selling grays if item is an upgrade
         end
@@ -192,9 +198,9 @@ local function ToggleJunk(id,bag,slot)
     local colour = addon.guideTextColors["RXP_WARN_"]
     RXPCData.discardPile[id] = not junk
     if junk then
-        print(format(L("%s: |c%sSet %s as useful|r"),addonName,colour,link))
+        addon.comms.PrettyPrint(L("|c%sSet %s as useful|r"), colour, link)
     else
-        print(format(L("%s: |c%sSet %s as junk|r"),addonName,colour,link))
+        addon.comms.PrettyPrint(L("|c%sSet %s as junk|r"), colour, link)
     end
     inventoryManager.UpdateAllBags()
     addon:SendEvent("RXP_JUNK", id, bag, slot)
@@ -286,6 +292,8 @@ local function FindJunk(deleteItem)
     elseif bestBag and bestSlot then
         inventoryManager.deleteBag = bestBag
         inventoryManager.deleteSlot = bestSlot
+    elseif inventoryManager.clickFrame then
+        inventoryManager.clickFrame:Hide()
     end
     --print(bestBag,bestSlot)
 end
@@ -303,9 +311,9 @@ local function DeleteItems()
         local _,stack,_,_,_,_,link = GetContainerItemInfo(inventoryManager.deleteBag,inventoryManager.deleteSlot)
         if link then
             if inventoryManager.manualDelete then
-                print(format(L("RXPGuides: |c%sDeleting %sx%s|r"),colour,link,stack))
+               addon.comms.PrettyPrint(L("|c%sDeleting %sx%s|r"),colour,link,stack)
             else
-                print(format(L("RXPGuides: |c%sInventory is full, deleting %sx%s|r"),colour,link,stack))
+                addon.comms.PrettyPrint(L("|c%sInventory is full, deleting %sx%s|r"),colour,link,stack)
             end
         end
         inventoryManager.deleteBag = nil
@@ -353,14 +361,51 @@ _G["BINDING_NAME_CLICK RXPInventory_DeleteJunk:LeftButton"] =
     L("Delete Cheapest Junk Item")
 
 local bagEvent = "BAG_UPDATE_DELAYED"
-local WorldFrameHook = function()
+local WorldFrameHook = function(self,...)
+    --local n = self and self:GetName()
+    --print(n,...)
     if inventoryManager.IsBagAutomationEnabled() then
         DeleteItems()
     end
     OpenItems()
 end
-local f = inventoryManager.DeleteJunkFrame or CreateFrame("Frame","RXPDeleteJunk",WorldFrame)
+local f = inventoryManager.DeleteJunkFrame or CreateFrame("Frame","RXPDeleteJunk",UIParent)
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
+
+local clickFrame
+
+if f.SetPassThroughButtons then
+    --post patch 1.15.7 workaround
+    clickFrame = CreateFrame("Frame","RXPJunkHandler",UIParent)
+    inventoryManager.clickFrame = clickFrame
+    clickFrame:SetAllPoints(UIParent)
+    clickFrame:SetScript("OnMouseDown", function(self)
+        WorldFrameHook()
+        if GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE") then
+            for i = GetNumLootItems(), 1, -1 do
+                LootSlot(i)
+            end
+        end
+        clickFrame:Hide()
+    end)
+
+    local button = "LootButton"
+    local current = _G["LootButton1"]
+    local i = 1
+    while current and i < 10 do
+        current:HookScript("OnClick",WorldFrameHook)
+        i = i + 1
+        current = _G[button .. i]
+    end
+
+    clickFrame:EnableMouse(false)
+    clickFrame:SetMouseClickEnabled(true)
+    clickFrame:EnableMouseMotion(false)
+    clickFrame:EnableMouseWheel(false)
+    clickFrame:SetFrameStrata("BACKGROUND")
+    clickFrame:SetFrameLevel(0)
+    clickFrame:Hide()
+end
 
 --You can only delete items on a hardware input, so we hook every keyboard input and mouse click to our item deletion function
 
@@ -368,7 +413,18 @@ f:SetScript("OnEvent",function(self)
     inventoryManager.bagUpdated = true
     self:RegisterEvent(bagEvent)
     self:RegisterEvent("LOOT_READY")
-    self:SetScript("OnEvent",function()
+    self:RegisterEvent("UI_ERROR_MESSAGE")
+
+    self:SetScript("OnEvent",function(self,event,flag,msg)
+        if clickFrame then
+            if inventoryManager.IsBagAutomationEnabled() then
+                if event == "UI_ERROR_MESSAGE" and flag == 3 and msg == INVENTORY_FULL and LootFrame:IsShown() then
+                    clickFrame:Show()
+                end
+            else
+                clickFrame:Hide()
+            end
+        end
         if inventoryManager.IsBagAutomationEnabled() then
             FindJunk()
         end
@@ -416,7 +472,7 @@ local function ShowJunkIcon(frame)
         table.insert(junkIcons,texture)
         texture:SetTexture("Interface/Buttons/UI-GroupLoot-Coin-Up")
         texture:SetSize(16,16)
-        texture:SetPoint("TOPLEFT", 1, -1)
+        texture:SetPoint(inventoryManager.alignment, 1, -1)
         frame.RXPJunkIcon = texture
     end
 
@@ -484,6 +540,7 @@ end
 inventoryManager.containerPattern = "%sItem%d"
 inventoryManager.containerName = "ContainerFrame%d"
 inventoryManager.containerIndex = -1
+inventoryManager.alignment = "TOPLEFT"
 
 local function DetectBagMods()
     if _G["BagnonContainerItem1"] then
@@ -505,6 +562,10 @@ local function DetectBagMods()
         inventoryManager.containerName = "ARKINV_Frame1ScrollContainerBag%d"
     elseif _G["BaudBagSubBag0"] then
         inventoryManager.containerName = "BaudBagSubBag%d"
+    elseif _G["Baganator"] then
+        inventoryManager.containerName = "BGRLiveItemButton%d"
+        inventoryManager.containerPattern = "%s"
+        inventoryManager.alignment = "TOPRIGHT"
     end
 end
 
@@ -536,7 +597,9 @@ inventoryManager.UpdateAllBags = UpdateAllBags
 local invUpdate = CreateFrame("Frame")
 invUpdate:RegisterEvent("ITEM_LOCKED")
 invUpdate:RegisterEvent("ITEM_UNLOCKED")
-invUpdate:RegisterEvent("BAG_CONTAINER_UPDATE")
+if C_EventUtils and C_EventUtils.IsEventValid("BAG_CONTAINER_UPDATE") then
+    invUpdate:RegisterEvent("BAG_CONTAINER_UPDATE")
+end
 invUpdate:RegisterEvent("BAG_UPDATE_DELAYED")
 invUpdate:RegisterEvent("MERCHANT_SHOW")
 invUpdate:RegisterEvent("PLAYER_MONEY")
@@ -646,7 +709,7 @@ local function ProcessJunk(sellWares,override)
             local value = GetMoney() - inventoryManager.sellGoods
             local colour = addon.guideTextColors["RXP_WARN_"]
             if value > 0 then
-                print(format(L("RXPGuides: |c%sSold junk items for|r %s"),colour,GetCoinTextureString(value)))
+                addon.comms.PrettyPrint(L("|c%sSold junk items for|r %s"), colour, GetCoinTextureString(value))
             end
             inventoryManager.sellGoods = false
         end

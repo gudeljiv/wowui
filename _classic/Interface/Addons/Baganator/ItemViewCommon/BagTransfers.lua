@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 
 addonTable.BagTransfers = {}
 local activationCallbacks = {}
@@ -30,7 +31,6 @@ do
     "BANKFRAME_CLOSED",
   })
   BankCheck:SetScript("OnEvent", function(_, event)
-    warbandPrevEmptySlots = nil
     isBankOpen = event == "BANKFRAME_OPENED"
     CallActivationCallbacks()
   end)
@@ -38,71 +38,80 @@ end
 
 local TransferToBank
 if Syndicator and Syndicator.Constants.WarbandBankActive then
-  local warbandPrevEmptySlots = nil
+  local warbandPrevCounts = nil
 
   TransferToBank = function(matches, characterName, callback)
-    local emptyBankSlots
-    if BankFrame:GetActiveBankType() == Enum.BankType.Character then
-      emptyBankSlots = addonTable.Transfers.GetEmptyBagsSlots(Syndicator.API.GetCharacter(characterName).bank, Syndicator.Constants.AllBankIndexes)
-    elseif BankFrame:GetActiveBankType() == Enum.BankType.Account then
+    local bankSlots = addonTable.Transfers.GetCurrentBankSlots()
+    local bankIndexes
+    if addonTable.Config.Get(addonTable.Config.Options.BANK_CURRENT_TAB) == addonTable.Constants.BankTabType.Character then
+      bankIndexes = Syndicator.Constants.AllBankIndexes
+    elseif addonTable.Config.Get(addonTable.Config.Options.BANK_CURRENT_TAB) == addonTable.Constants.BankTabType.Warband then
+      bankIndexes = Syndicator.Constants.AllWarbandIndexes
+      local oldCount = #matches
+      local missing = 0
       matches = tFilter(matches, function(m)
         local location = ItemLocation:CreateFromBagAndSlot(m.bagID, m.slotID)
-        return C_Item.DoesItemExist(location) and C_Bank.IsItemAllowedInBankType(Enum.BankType.Account, location)
+        if not C_Item.DoesItemExist(location) then
+          missing = missing + 1
+          return false
+        end
+        return C_Bank.IsItemAllowedInBankType(Enum.BankType.Account, location)
       end, true)
-      local tabIndex = addonTable.Config.Get(addonTable.Config.Options.WARBAND_CURRENT_TAB)
-      if tabIndex > 0 then
-        local bagsData = {Syndicator.API.GetWarband(1).bank[tabIndex].slots}
-        local indexes = {Syndicator.Constants.AllWarbandIndexes[tabIndex]}
-        emptyBankSlots = addonTable.Transfers.GetEmptyBagsSlots(bagsData, indexes)
+      if oldCount ~= #matches + missing then
+        UIErrorsFrame:AddMessage(ERR_NO_SOULBOUND_ITEM_IN_ACCOUNT_BANK, 1.0, 0.1, 0.1, 1.0)
+      end
+      local counts = addonTable.Transfers.CountByItemIDs(bankSlots)
+      -- Only move more items if the last set moved in, or the last transfer
+      -- completed.
+      if warbandPrevCounts and tCompare(counts, warbandPrevCounts, 2) then
+        callback(addonTable.Constants.SortStatus.WaitingMove)
+        return
       else
-        local bagsData = {}
-        local indexes = Syndicator.Constants.AllWarbandIndexes
-        for i, tab in ipairs(Syndicator.API.GetWarband(1).bank) do
-          table.insert(bagsData, tab.slots)
+        -- Limit to the first 5 items (avoids slots locking up)
+        local newMatches = {}
+        for i = 1, 5 do
+          table.insert(newMatches, matches[i])
         end
-        emptyBankSlots = addonTable.Transfers.GetEmptyBagsSlots(bagsData, indexes)
-        -- Only move more items if the last set moved in, or the last transfer
-        -- completed.
-        if #emptyBankSlots > 0 and #emptyBankSlots == warbandPrevEmptySlots then
-          callback(addonTable.Constants.SortStatus.WaitingMove)
-          return
-        else
-          -- Limit to the first 5 items (avoids slots locking up)
-          local newMatches = {}
-          for i = 1, 5 do
-            table.insert(newMatches, matches[i])
-          end
-          matches = newMatches
-          warbandPrevEmptySlots = #emptyBankSlots
-        end
+        matches = newMatches
+        warbandPrevCounts = counts
       end
     else
       error("unrecognised bank type")
     end
 
-    local status = addonTable.Transfers.FromBagsToBags(matches, Syndicator.Constants.AllBankIndexes, emptyBankSlots)
+    local status = addonTable.Transfers.FromBagsToBags(matches, Syndicator.Constants.AllBankIndexes, bankSlots)
 
     if status == addonTable.Constants.SortStatus.Complete then
-      warbandPrevEmptySlots = nil
+      warbandPrevCounts = nil
     end
 
     callback(status)
   end
 else
   TransferToBank = function(matches, characterName, callback)
-    local emptyBankSlots = addonTable.Transfers.GetEmptyBagsSlots(Syndicator.API.GetCharacter(characterName).bank, Syndicator.Constants.AllBankIndexes)
-    local status = addonTable.Transfers.FromBagsToBags(matches, Syndicator.Constants.AllBankIndexes, emptyBankSlots)
+    local bankSlots = addonTable.Transfers.GetBagsSlots(Syndicator.API.GetCharacter(characterName).bank, Syndicator.Constants.AllBankIndexes)
+    local status = addonTable.Transfers.FromBagsToBags(matches, Syndicator.Constants.AllBankIndexes, bankSlots)
     callback(status)
   end
 end
 
 RegisterBagTransfer(
-  function(button) return isBankOpen end,
+  function()
+    if not isBankOpen then
+      return false
+    end
+    local bankFrame = addonTable.ViewManagement.GetBankFrame()
+    return bankFrame.Character:IsShown() or (bankFrame.Warband and bankFrame.Warband:IsShown() and not bankFrame.Warband.isLocked)
+  end,
   TransferToBank,
-  true, BAGANATOR_L_TRANSFER_MAIN_VIEW_BANK_TOOLTIP_TEXT
+  true, addonTable.Locales.TRANSFER_MAIN_VIEW_BANK_TOOLTIP_TEXT
 )
 
-local function TransferToMail(matches, characterName, callback)
+addonTable.CallbackRegistry:RegisterCallback("BankViewChanged", function()
+  CallActivationCallbacks()
+end)
+
+local function TransferToMail(matches, _, callback)
   local status = addonTable.Transfers.AddToMail(matches)
   callback(status)
 end
@@ -116,10 +125,10 @@ end)
 RegisterBagTransfer(
   function() return C_PlayerInteractionManager.IsInteractingWithNpcOfType(Enum.PlayerInteractionType.MailInfo) and sendMailShowing end,
   TransferToMail,
-  false, BAGANATOR_L_TRANSFER_MAIN_VIEW_MAIL_TOOLTIP_TEXT
+  false, addonTable.Locales.TRANSFER_MAIN_VIEW_MAIL_TOOLTIP_TEXT
 )
 
-local function AddToScrapper(matches, characterName, callback)
+local function AddToScrapper(matches, _, callback)
   local waiting = #matches
   local loopFinished = false
 
@@ -148,7 +157,7 @@ end
 RegisterBagTransfer(
   function() return C_PlayerInteractionManager.IsInteractingWithNpcOfType(Enum.PlayerInteractionType.ScrappingMachine) end,
   AddToScrapper,
-  false, BAGANATOR_L_TRANSFER_MAIN_VIEW_SCRAPPER_TOOLTIP_TEXT
+  false, addonTable.Locales.TRANSFER_MAIN_VIEW_SCRAPPER_TOOLTIP_TEXT
 )
 
 RegisterBagTransfer(
@@ -157,7 +166,7 @@ RegisterBagTransfer(
     local status = addonTable.Transfers.VendorItems(matches)
     callback(status)
   end,
-  true, BAGANATOR_L_TRANSFER_MAIN_VIEW_MERCHANT_TOOLTIP_TEXT_2
+  true, addonTable.Locales.TRANSFER_MAIN_VIEW_VENDOR_TOOLTIP_TEXT
 )
 
 RegisterBagTransfer(
@@ -166,7 +175,7 @@ RegisterBagTransfer(
     local status = addonTable.Transfers.AddToTrade(matches)
     callback(status)
   end,
-  false, BAGANATOR_L_TRANSFER_MAIN_VIEW_TRADE_TOOLTIP_TEXT
+  false, addonTable.Locales.TRANSFER_MAIN_VIEW_TRADE_TOOLTIP_TEXT
 )
 
 RegisterBagTransfer(
@@ -174,11 +183,11 @@ RegisterBagTransfer(
   function() return C_PlayerInteractionManager.IsInteractingWithNpcOfType(Enum.PlayerInteractionType.GuildBanker) and (select(4, GetGuildBankTabInfo(GetCurrentGuildBankTab()))) and addonTable.Config.Get(addonTable.Config.Options.GUILD_CURRENT_TAB) ~= 0 end,
   function(matches, characterName, callback)
     local guildTab = addonTable.Config.Get(addonTable.Config.Options.GUILD_CURRENT_TAB)
-    local emptyGuildSlots = addonTable.Transfers.GetEmptyGuildSlots(Syndicator.API.GetGuild(Syndicator.API.GetCurrentGuild()).bank[guildTab], guildTab)
-    local status, modes = addonTable.Transfers.FromBagsToGuild(matches, emptyGuildSlots)
+    local guildSlots = addonTable.Transfers.GetGuildSlots(Syndicator.API.GetGuild(Syndicator.API.GetCurrentGuild()).bank[guildTab], guildTab)
+    local status, modes = addonTable.Transfers.FromBagsToGuild(matches, guildSlots)
     callback(status, modes)
   end,
-  true, BAGANATOR_L_TRANSFER_MAIN_VIEW_GUILD_TOOLTIP_TEXT
+  true, addonTable.Locales.TRANSFER_MAIN_VIEW_GUILD_TOOLTIP_TEXT
 )
 
 if Syndicator then

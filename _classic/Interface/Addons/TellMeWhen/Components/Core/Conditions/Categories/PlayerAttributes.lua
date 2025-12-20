@@ -32,6 +32,7 @@ local GetPetActionInfo = GetPetActionInfo
 	  
 local ConditionCategory = CNDT:GetCategory("ATTRIBUTES_PLAYER", 2, L["CNDTCAT_ATTRIBUTES_PLAYER"], false, false)
 
+local GetSpecialization = C_SpecializationInfo and C_SpecializationInfo.GetSpecialization or _G.GetSpecialization
 
 
 
@@ -140,7 +141,7 @@ if C_PvP.IsWarModeDesired then
 		funcstr = [[BOOLCHECK( IsWarModeDesired() )]],
 		events = function(ConditionObject, c)
 			return
-				ConditionObject:GenerateNormalEventString("PLAYER_FLAGS_CHANGED")
+			ConditionObject:GenerateNormalEventString("PLAYER_FLAGS_CHANGED")
 		end,
 	})
 end
@@ -154,21 +155,9 @@ end)
 
 ConditionCategory:RegisterSpacer(5.5)
 
-local FirstStances = not TMW.isRetail and {
-	DRUID = 5487, 		-- Bear Form
-	PRIEST = 15473, 	-- Shadowform
-	ROGUE = 1784, 		-- Stealth
-	WARRIOR = 2457, 	-- Battle Stance
-	PALADIN = 19746, 	-- Concentration Aura
-	DEATHKNIGHT = 48266,-- Blood Presence
-} or {
-	DRUID = 5487, 		-- Bear Form
-	ROGUE = 1784, 		-- Stealth
-}
 ConditionCategory:RegisterCondition(6,	 "STANCE", {
-	text = 	pclass == "DRUID" and L["SHAPESHIFT"] or
-			L["STANCE"],
-
+	text = L["STANCE"],
+	
 	bool = true,
 	
 	name = function(editbox)
@@ -178,35 +167,47 @@ ConditionCategory:RegisterCondition(6,	 "STANCE", {
 	useSUG = "stances",
 	allowMultipleSUGEntires = true,
 	unit = PLAYER,
-	icon = function()
-		return GetSpellTexture(FirstStances[pclass] or FirstStances.WARRIOR) or GetSpellTexture(FirstStances.WARRIOR)
-	end,
+	icon = "Interface\\Icons\\Ability_warrior_offensivestance",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		GetShapeshiftForm = function()
+		StanceHelper = function(spellSet)
 			-- very hackey function because of inconsistencies in blizzard's GetShapeshiftForm
 			local i = GetShapeshiftForm()
-			if pclass == "ROGUE" and i > 1 then	--vanish and shadow dance return 3 when active, vanish returns 2 when shadow dance isnt learned. Just treat everything as stealth
+			if pclass == "ROGUE" and i > 1 then
+				--vanish and shadow dance return 3 when active, vanish returns 2 when shadow dance isnt learned. Just treat everything as stealth
 				i = 1
 			end
-			if i > NumShapeshiftForms then 	--many Classes return an invalid number on login, but not anymore!
+			if i > NumShapeshiftForms then
+				--many Classes return an invalid number on login
 				i = 0
 			end
 
 			if i == 0 then
-				return strlowerCache[NONE]
+				local matchAny = not spellSet or spellSet.Name == ""
+				local Hash = not matchAny and spellSet.Hash
+				local noneLower = strlowerCache[NONE]
+				return matchAny or Hash[noneLower] or Hash[0]
 			else
 				local icons, active, catable, spellID = GetShapeshiftFormInfo(i)
-				return spellID and strlowerCache[GetSpellName(spellID)] or ""
+				if not spellID then
+					return false
+				end
+				
+				local spellName = GetSpellName(spellID)
+				local spellNameLower = strlowerCache[spellName]
+				
+				local matchAny = not spellSet or spellSet.Name == ""
+				local Hash = not matchAny and spellSet.Hash
+				
+				return matchAny or Hash[spellNameLower] or Hash[spellID]
 			end
 		end
 	},
-	funcstr = [[BOOLCHECK(c.Spells.StringHash[GetShapeshiftForm() or ""])]],
+	funcstr = [[BOOLCHECK( StanceHelper(c.Spells) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("UPDATE_SHAPESHIFT_FORM")
 	end,
-	hidden = not FirstStances[pclass],
 })
 
 ConditionCategory:RegisterSpacer(6.5)
@@ -263,13 +264,13 @@ ConditionCategory:RegisterCondition(13.1, "PETMODE2", {
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_TYPES"],
 	bitFlags = {
 		[0] = L["CONDITIONPANEL_PETMODE_NONE"],
-		[1] = not TMW.isRetail and PET_MODE_AGRESSIVE or PET_MODE_ASSIST,
+		[1] = ClassicExpansionAtMost(LE_EXPANSION_WRATH_OF_THE_LICH_KING) and PET_MODE_AGRESSIVE or PET_MODE_ASSIST,
 		[2] = PET_MODE_DEFENSIVE,
 		[3] = PET_MODE_PASSIVE
 	},
 
 	unit = false,
-	icon = not TMW.isRetail and PET_PASSIVE_TEXTURE or PET_ASSIST_TEXTURE,
+	icon = ClassicExpansionAtMost(LE_EXPANSION_WRATH_OF_THE_LICH_KING) and PET_PASSIVE_TEXTURE or PET_ASSIST_TEXTURE,
 	tcoords = CNDT.COMMON.standardtcoords,
 
 	Env = {
@@ -438,3 +439,40 @@ if C_EquipmentSet then
 		end,
 	})
 end
+
+local GetInventoryItemDurability = GetInventoryItemDurability
+local INVSLOT_FIRST_EQUIPPED = INVSLOT_FIRST_EQUIPPED
+local INVSLOT_LAST_EQUIPPED = INVSLOT_LAST_EQUIPPED
+ConditionCategory:RegisterCondition(19, "ARMORREPAIR", {
+	text = L["CONDITIONPANEL_ARMORREPAIR"],
+	tooltip = L["CONDITIONPANEL_ARMORREPAIR_DESC"],
+
+	percent = true,
+	formatter = TMW.C.Formatter.PERCENT,
+	min = 0,
+	max = 100,
+	
+	unit = PLAYER,
+	icon = "Interface\\Icons\\trade_blacksmithing",
+	tcoords = CNDT.COMMON.standardtcoords,
+	Env = {
+		GetLowestArmorRepair = function()
+			local lowest = 1
+			for slot = INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
+				local current, max = GetInventoryItemDurability(slot)
+				if current and max and max > 0 then
+					local percent = (current / max)
+					if percent < lowest then
+						lowest = percent
+					end
+				end
+			end
+			return lowest
+		end,
+	},
+	funcstr = [[GetLowestArmorRepair() c.Operator c.Level]],
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GenerateNormalEventString("UPDATE_INVENTORY_DURABILITY")
+	end,
+})

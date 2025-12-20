@@ -268,19 +268,38 @@ local function createDropDowns(window)
     window.SlotDropDown = LBIS:CreateDropdown(slot_opts, 90);
     window.SlotDropDown:SetPoint("TOPLEFT", window, 195, -28);
 
-    local phase_opts = {
-        ['name']='phase',
-        ['parent']=window,
-        ['title']='Phase:',
-        ['items']= { LBIS.L["All"], LBIS.L["PreRaid"], LBIS.L["Phase 1"], LBIS.L["Phase 2"], LBIS.L["Phase 3"], LBIS.L["Phase 4"], LBIS.L["Phase 5"], "BIS" }, 
-        ['defaultVal']=LBISSettings.SelectedPhase,
-        ['changeFunc']=function(dropdown_frame, dropdown_val)
-            LBISSettings.SelectedPhase = dropdown_val;
-            LBIS.BrowserWindow:RefreshItems();
-        end
-    }
-    window.PhaseDropDown = LBIS:CreateDropdown(phase_opts, 70);
-    window.PhaseDropDown:SetPoint("TOPLEFT", window, 330, -28);
+    if LBIS.IsSOD then
+        local phase_opts = {
+            ['name']='phase',
+            ['parent']=window,
+            ['title']='Phase:',
+            ['items']= { LBIS.L["All"], LBIS.L["PreRaid"], LBIS.L["Phase 1"], LBIS.L["Phase 2"], LBIS.L["Phase 3"], 
+                LBIS.L["Phase 4"], LBIS.L["Phase 5"], LBIS.L["Phase 6"], LBIS.L["Phase 7"], LBIS.L["Phase 8"], "BIS" },
+            ['defaultVal']=LBISSettings.SelectedPhase,
+            ['changeFunc']=function(dropdown_frame, dropdown_val)
+                LBISSettings.SelectedPhase = dropdown_val;
+                LBIS.BrowserWindow:RefreshItems();
+            end
+        }
+        window.PhaseDropDown = LBIS:CreateDropdown(phase_opts, 70);
+        window.PhaseDropDown:SetPoint("TOPLEFT", window, 330, -28);
+    else
+        local phase_opts = {
+            ['name']='phase',
+            ['parent']=window,
+            ['title']='Phase:',
+            ['items']= { LBIS.L["All"], 
+            LBIS.L["PreRaid"], LBIS.L["Phase 1"], LBIS.L["Phase 2"], LBIS.L["Phase 3"], 
+            LBIS.L["Phase 4"], LBIS.L["Phase 5"], LBIS.L["Phase 6"], "BIS" }, 
+            ['defaultVal']=LBISSettings.SelectedPhase,
+            ['changeFunc']=function(dropdown_frame, dropdown_val)
+                LBISSettings.SelectedPhase = dropdown_val;
+                LBIS.BrowserWindow:RefreshItems();
+            end
+        }
+        window.PhaseDropDown = LBIS:CreateDropdown(phase_opts, 70);
+        window.PhaseDropDown:SetPoint("TOPLEFT", window, 330, -28);
+    end
 
     local rank_opts = {
         ['name']='rank',
@@ -311,23 +330,51 @@ local function createDropDowns(window)
     window.SourceDropDown = LBIS:CreateDropdown(source_opts, 110);
     window.SourceDropDown:SetPoint("TOPLEFT", window, 450, -28);
 
-    local zone_opts = {
-        ['name']='zone',
-        ['parent']=window,
-        ['title']='Zone:',
-        ['items']= { LBIS.L["All"], LBIS.L["Ragefire Chasm"], LBIS.L["Wailing Caverns"], LBIS.L["The Deadmines"], LBIS.L["Shadowfang Keep"], 
-            LBIS.L["Blackfathom Deeps"], LBIS.L["The Stockade"], LBIS.L["Razorfen Kraul"], LBIS.L["Scarlet Monastery"], LBIS.L["Razorfen Downs"], 
-            LBIS.L["Uldaman"], LBIS.L["Gnomeregan"], LBIS.L["Zul'Farrak"], LBIS.L["Maraudon"], LBIS.L["Blackrock Depths"], LBIS.L["Sunken Temple"],
-            LBIS.L["Scholomance"], LBIS.L["Blackrock Spire"], LBIS.L["Stratholme"], LBIS.L["Dire Maul"], LBIS.L["Molten Core"], LBIS.L["Onyxia's Lair"],
-            LBIS.L["Blackwing Lair"], LBIS.L["Zul'Gurub"]},
-        ['defaultVal']= LBISSettings.SelectedZone,
-        ['changeFunc']=function(dropdown_frame, dropdown_val)
-            LBISSettings.SelectedZone = dropdown_val;
-            LBIS.BrowserWindow:RefreshItems();
-        end
-    }
-    window.RaidDropDown = LBIS:CreateDropdown(zone_opts, 160);
-    window.RaidDropDown:SetPoint("TOPLEFT", window, 600, -28);
+    
+    if LBIS.IsSOD then
+        local zone_opts = {
+            ['name']='zone',
+            ['parent']=window,
+            ['title']='Zone:',
+            ['items']= { LBIS.L["All"], LBIS.L["Ragefire Chasm"], LBIS.L["Wailing Caverns"], LBIS.L["The Deadmines"], LBIS.L["Shadowfang Keep"], 
+                LBIS.L["Blackfathom Deeps"], LBIS.L["The Stockade"], LBIS.L["Razorfen Kraul"], LBIS.L["Scarlet Monastery"], LBIS.L["Razorfen Downs"], 
+                LBIS.L["Uldaman"], LBIS.L["Gnomeregan"], LBIS.L["Zul'Farrak"], LBIS.L["Maraudon"], LBIS.L["Blackrock Depths"], LBIS.L["Sunken Temple"],
+                LBIS.L["Scholomance"], LBIS.L["Blackrock Spire"], LBIS.L["Stratholme"], LBIS.L["Dire Maul"], LBIS.L["Molten Core"], LBIS.L["Onyxia's Lair"],
+                LBIS.L["Blackwing Lair"], LBIS.L["Zul'Gurub"],
+                LBIS.L["Ruins of Ahn'Qiraj"], LBIS.L["Ahn'Qiraj"],
+                LBIS.L["Naxxramas"], LBIS.L["Karazhan Crypts"],
+                LBIS.L["Scarlet Enclave"],                 
+            },
+            ['defaultVal']= LBISSettings.SelectedZone,
+            ['changeFunc']=function(dropdown_frame, dropdown_val)
+                LBISSettings.SelectedZone = dropdown_val;
+                LBIS.BrowserWindow:RefreshItems();
+            end
+        }
+        window.RaidDropDown = LBIS:CreateDropdown(zone_opts, 160);
+        window.RaidDropDown:SetPoint("TOPLEFT", window, 600, -28);
+    else
+        local zone_opts = {
+            ['name']='zone',
+            ['parent']=window,
+            ['title']='Zone:',
+            ['items']= { LBIS.L["All"], LBIS.L["Blackrock Depths"], LBIS.L["Scholomance"], LBIS.L["Blackrock Spire"], 
+                LBIS.L["Stratholme"], LBIS.L["Dire Maul"],
+                LBIS.L["Molten Core"], LBIS.L["Onyxia's Lair"],
+                LBIS.L["Blackwing Lair"], 
+                LBIS.L["Zul'Gurub"],
+                LBIS.L["Ruins of Ahn'Qiraj"], LBIS.L["Ahn'Qiraj"],
+                LBIS.L["Naxxramas"],
+            },
+            ['defaultVal']= LBISSettings.SelectedZone,
+            ['changeFunc']=function(dropdown_frame, dropdown_val)
+                LBISSettings.SelectedZone = dropdown_val;
+                LBIS.BrowserWindow:RefreshItems();
+            end
+        }
+        window.RaidDropDown = LBIS:CreateDropdown(zone_opts, 160);
+        window.RaidDropDown:SetPoint("TOPLEFT", window, 600, -28);
+    end
 
 end
 
@@ -398,7 +445,11 @@ function LBIS.BrowserWindow:CreateBrowserWindow()
     window:RegisterForDrag("LeftButton");
 
     local header = window:CreateFontString(nil, nil, "GameFontHighlightMed2");
-    header:SetText(LBIS.L["Loon Best In Slot Browser (SOD)"]);
+    if LBIS.IsSOD then
+        header:SetText(LBIS.L["Loon Best In Slot Browser (SOD)"]);
+    else
+        header:SetText(LBIS.L["Loon Best In Slot Browser (Classic)"]);
+    end
     header:SetPoint("TOP", window, -5, -5);
 
     local topLine = window:CreateLine();

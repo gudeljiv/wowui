@@ -1,73 +1,51 @@
-# [5.17.2](https://github.com/WeakAuras/WeakAuras2/tree/5.17.2) (2024-10-07)
+# [5.20.7](https://github.com/WeakAuras/WeakAuras2/tree/5.20.7) (2025-11-27)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.17.1...5.17.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.20.6...5.20.7)
 
 ## Highlights
 
- - Action Useable Trigger: Add a "Ignore Spell Cooldown" mode
-- Add a mounted load condition
-- Classic updates
-- Template updates 
+- Basic support for Wrath Titan (thanks WoW CN community)
+- Support for new Masque version
+- Various bug fixes
 
 ## Commits
 
-InfusOnWoW (28):
+Copilot (1):
 
-- Item input: Improve display of exact id matches
-- Progress Texture: Add crop_x and crop_y conditions
-- Cycle Check for Anchoring
-- Spell triggers: Allow spell names in GetEffectiveSpellId
-- Item Equipped: Allow checking for a specific id
-- Spell Input Widgets: Allow invalid spell ids
-- Update Atlas File List from wago.tools
-- Try fixing the PR packager v2
-- Fix PR workflow to actually create a package
-- Tweak Default Collapse setting on display tab
-- Fix Spell Cast Success trigger for Smart Groups
-- Templates: Arms add Colossus Smash
-- Fix Item in Range condition of Item Cooldown Trigger
-- Classic Combo Points: Fix total combo points
-- Templates: Add correct Shadow Priest Debuff templates
-- Item Type trigger: Set multiNoSingle to force multi selection
-- Update Atlas File List from wago.tools
+- Fix allstates:Get to return false instead of nil
+
+InfusOnWoW (6):
+
+- Masque Support: Support new masque version
+- Profiling: Add an inherit font
+- BT Multi Target mode: add warnings on it, and if it's missing a filter
 - Update Discord List
-- Update Atlas File List from wago.tools
-- Fix Ready Time for Cooldown Progress type triggers
-- Fix error message "Attempt to call table value"
-- Add a version check to WeakAurasOptions
-- Add a mounted load condition
-- Action Useable Trigger: Add a "Ignore Spell Cooldown" mode
-- Update Discord List
-- Remove dead code
-- Templates: Fix Totem templates
+- Fix regression in Abbreviate numbers on retail
 - Update Discord List
 
-Nightwarden24 (1):
+NoM0Re (6):
 
-- Use fonts from official sources
+- Titan: Replace encounter data with phase 1 raids & bosses
+- Titan: remove neutral faction group
+- Titan: fix repair dialog text assignment
+- Glyph Load: Only show in Mists of Pandaria
+- Remove atlas file from Wrath Titan Reforge
+- Add Wrath Titan Reforged support
 
-Stanzilla (5):
+Stanzilla (4):
 
 - Update WeakAurasModelPaths from wago.tools
 - Update WeakAurasModelPaths from wago.tools
 - Update WeakAurasModelPaths from wago.tools
 - Update WeakAurasModelPaths from wago.tools
-- Update WeakAurasModelPaths from wago.tools
 
-emptyrivers (2):
+dependabot[bot] (2):
 
-- consider wagoID as metadata
-- improvements to background tasks
+- Bump actions/checkout from 5 to 6
+- Bump actions/upload-artifact from 4 to 5
 
-mrbuds (9):
+mrbuds (2):
 
-- Upgrade CLEU spammy_event_warning to error level
-- update toc files for 1.15.04
-- Don't show url link with chinse simplified locale as profanity filter do not allow it
-- Linking an aura can't add url in chat for China region
-- Location load & trigger: check on WA_DELAYED_PLAYER_ENTERING_WORLD
-- Fix Instance Size Type load option for Molten Core & Onyxia on SoD
-- Make CorrectSpellName also use SpellCache
-- TextEditor: fix ctrl-z/y doubling vertical bars
-- TextEditor does not show errors
+- Remove atlas files
+- Model's Icon set to sword guy on classic, fixes #6075
 

@@ -1,0 +1,9 @@
+## Interface: 50502
+## Title: Dejunk
+## Version: 2.0.9
+## Author: https://github.com/moody
+## Notes: Simple junk selling and destroying.
+## SavedVariables: __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__
+## SavedVariablesPerCharacter: __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__
+
+Dejunk.xml

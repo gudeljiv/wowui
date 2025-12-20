@@ -1,7 +1,8 @@
-## Interface: 100207,110000,110002
+## Interface: 110200,110205
+
 ## Title: RangeDisplay
 ## Author: mitch0
-## Version: v6.1.4
+## Version: v6.2.3
 ## Notes: Estimated range display. Type /rangedisplay for config
 ## Notes-ruRU: Дисплей с указанием расстояния до цели. Введите /rangedisplay для справки
 ## LoadManagers: AddonLoader

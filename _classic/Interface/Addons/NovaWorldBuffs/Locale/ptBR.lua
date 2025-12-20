@@ -128,7 +128,7 @@ L["noTimer"] = "Sem temporizador"; --No timer
 L["noCurrentTimer"] = "Não há temporizador atual"; --No current timer
 L["noActiveTimers"] = "Sem temporizadores ativos"; --No active timers
 L["newBuffCanBeDropped"] = "Agora é possível obter um novo bônus de %s";
-L["buffResetsIn"] = "%s será redefinido em %s";
+L["buffResetsIn"] = "%s será reiniciado em %s";
 L["rendFirstYellMsg"] = "Laceral cairá em 6 segundos.";
 L["onyxiaFirstYellMsg"] = "Onyxia cairá em 14 segundos.";
 L["nefarianFirstYellMsg"] = "Nefarian cairá em 15 segundos.";
@@ -725,8 +725,8 @@ L["buffHelpersTextDesc5"] = "Bônus de Ony/Laceral";
 L["cityGotBuffSummonTitle"] = "Convocação de Ony/Laceral";
 L["cityGotBuffSummonDesc"] = "Aceita automaticamente qualquer convocação pendente quando você obtém um bônus de Onyxia/Nefarian/Laceral.";
 
-L["heraldFoundCrossroads"] = "Arauto encontrado! Bônus de Laceral em A Encruzilhada cairá em 20 segundos.";
-L["heraldFoundTimerMsg"] = "Bônus de Laceral em A Encruzilhada" --DBM/Bigwigs timer bar text.
+L["heraldFoundCrossroads"] = "Arauto encontrado! Laceral em A Encruzilhada cairá em 20 segundos.";
+L["heraldFoundTimerMsg"] = "Laceral Encruzilhada"; --DBM/Bigwigs timer bar text.
 
 L["guildNpcWalkingTitle"] = "NPC em movimento";
 L["guildNpcWalkingDesc"] = "Envia uma mensagem para a guilda e reproduz um som quando você ativa ou recebe um alerta de movimento de NPC? (Abra o diálogo de chat com os NPCs de Onyxia/Nefarian em Orgrimmar e espere alguém entregar a cabeça para ativar este alerta antecipado).";
@@ -1039,13 +1039,143 @@ L["cappingSupportDesc"] = "Inicia uma barra de temporizador para Vale Gris/Selva
 L["Tol Barad"] = "Tol Barad";
 L["eventIsRunning"] = "%s está ativo"; 
 
-L["Blackrock"] = "Blackrock";
-L["blackrockEventRunning"] = "Blackrock running: %s";
-L["blackrockEventStartsIn"] = "Blackrock starts in %s";
-L["blackrockStartSoon"] = "Blackrock event starts in %s"; --Guild chat msg.
-L["Blackrock PvP Event"] = "Blackrock PvP Event";
-L["Total honor this event"] = "Total honor this event";
+L["overlayShowBlackrockTitle"] = "Rocha Negra";
+L["overlayShowBlackrockDesc"] = "Mostra a sobreposição do temporizador de Rocha Negra?";
+
+L["printStvCoinsTitle"] = "Imprimir moedas";
+L["printStvCoinsDesc"] = "Imprime no bate-papo um contador de quantas moedas de Selva do Espinhaço foram obtidas durante o evento.";
+
+L["printBlackrockHonorTitle"] = "Imprimir honra";
+L["printBlackrockHonorDesc"] = "Imprime no bate-papo um contador de quanta honra da Erupção da Rocha Negra foi obtida durante o evento.";
+
+L["chatOnlyInCityTitle"] = "Apenas na cidade";
+L["chatOnlyInCityDesc"] = "Apenas imprime mensagens de temporizador e de queda de bônus no bate-papo quando você estiver na cidade principal onde os bônus caem (Selva do Espinhaço incluído para o bônus de Zandalar).";
+
+L["middleOnlyInCityTitle"] = "Apenas na cidade";
+L["middleOnlyInCityDesc"] = "Apenas mostra mensagens no meio da tela do temporizador e de queda de bônus quando você estiver na cidade principal onde os bônus caem (Selva do Espinhaço incluído para o bônus de Zandalar).";
+
+L["flashOnlyInCityTitle"] = "Apenas na cidade";
+L["flashOnlyInCityDesc"] = "Apenas ilumina enquanto minimizado quando você estiver na cidade principal onde os bônus caem (Selva do Espinhaço incluído para o bônus de Zandalar).";
+
+L["blueShamansTitle"] = "Xamãs azuis";
+L["blueShamansDesc"] = "Mostra xamãs como azuis neste addon no clássico.";
+
+L["Blackrock"] = "A Erupção da Rocha Negra";
+L["blackrockEventRunning"] = "A Erupção da Rocha Negra está em progresso: %s";
+L["blackrockEventStartsIn"] = "A Erupção da Rocha Negra começará em %s";
+L["blackrockStartSoon"] = "A Erupção da Rocha Negra começará em %s"; --Guild chat msg.
+L["Blackrock PvP Event"] = "A Erupção da Rocha Negra começará em";
+L["Total honor this event"] = "Total de honra ganha neste evento";
+
+L["Bi-Weekly raid reset"] = "Reinício bissemanal de raide";
 
 L["Might of Stormwind"] = "Poder de Ventobravo";
 
 L["Battle Shout"] = "Brado de Batalha";
+
+L["dmfBuffDroppedNoCooldown"] = "Bônus da Feira de Negraluna %s recebido, sem tempo de recarga nesta versão do jogo.";
+L["chronoboonReleasedNoCooldown"] = "Você liberou um bônus da Feira de Negraluna com Dádiva do Tempo, sem tempo de recarga nesta versão do jogo.";
+
+L["skipDmfCookieTitle"] = "Pular sorte";
+L["skipDmfCookieDesc"] = "Ativa isto para pular o recebimento da Sorte da Feira de Negraluna após obter o bônus da Feira de Negraluna.";
+
+L["No layers found yet."] = "Nenhuma camada encontrada ainda.";
+
+L["Min Level"] = "Nível mínimo";
+L["Rend handed in by"] = "Laceral entregue por";
+L["ago"] = "atrás";
+L["Dropped"] = "Caiu";
+L["Yes"] = "Sim";
+L["No"] = "Não";
+L["Delete buff data?"] = "Excluir dados de bônus?";
+L["No characters with buffs found."] = "Nenhum personagem com bônus encontrado.";
+L["Unknown Layer"] = "Camada desconhecida";
+
+L["Active"] = "Ativo";
+L["noZonesMappedYet"] = "Nenhuma zona foi mapeada desde a reinicialização do servidor.";
+L["Rend log adjusted"] = "Registro de Laceral ajustado";
+
+L["flashDisableRendTitle"] = "Desativar iluminação de Rend";
+L["flashDisableRendDesc"] = "Substitui para desativar todos os eventos de iluminação do cliente relacionados a Rend.";
+
+L["flashDisableOnyTitle"] = "Desativar iluminação de Ony";
+L["flashDisableOnyDesc"] = "Substitui para desativar todos os eventos de iluminação do cliente relacionados a Ony/Nef.";
+
+L["flashDisableZanTitle"] = "Desativar iluminação de Zan";
+L["flashDisableZanDesc"] = "Substitui para desativar todos os eventos de iluminação do cliente relacionados a Zandalar.";
+
+L["soundsFirstYellTitle"] = "Outros bônus entrantes";
+L["soundsFirstYellDesc"] = "Som reproduzido quando os bônus de zand/outros são entregues e há alguns segundos antes do bônus ser ativado (primeiro grito do NPC).";
+
+L["soundsFirstYellRendTitle"] = "Bônus de Rend entrante";
+L["soundsFirstYellRendDesc"] = "Som reproduzido quando a cabeça de Rend é entregue e há alguns segundos antes do bônus ser ativado (primeiro grito do NPC).";
+
+L["soundsFirstYellOnyTitle"] = "Bônus de Ony/Nef entrante";
+L["soundsFirstYellOnyDesc"] = "Som reproduzido quando a cabeça da Ony/Nef é entregue e há alguns segundos antes do bônus ser ativado (primeiro grito do NPC).";
+
+L["showDisableLayerButtonsTitle"] = "Mostrar botão de desativar camada"
+L["showDisableLayerButtonsDesc"] = "Mostra o botão de desativar camada na janela de temporizadores/camadas.";
+
+L["Show Quest Handins Only"] = "Mostrar entregas de missões";
+L["showQuestHandinsTooltip"] = "Mostra apenas entradas do registro ao entregar a missão de Rend.";
+
+L["resetFramesTitle"] = "Redefinir janelas";
+L["resetFramesDesc"] = "Clique aqui para redefinir todas as janelas para o centro da tela.";
+
+L["buffHasNoCooldown"] = "Este bônus não ativa um tempo de recarga";
+L["noCooldown"] = "Sem tempo de recarga";
+
+L["Molten Core"] = "Núcleo Derretido";
+L["Onyxia's Lair"] = "Covil da Onyxia";
+L["Blackwing Lair"] = "Covil Asa Negra";
+L["Naxxramas"] = "Naxxramas";
+L["Karazhan"] = "Karazhan";
+L["The Shattered Halls"] = "Salões Despedaçados";
+L["Serpentshrine Cavern"] = "Caverna do Serpentário";
+L["The Arcatraz"] = "Arcatraz";
+L["Black Morass"] = "Lamaçal Negro";
+L["Battle of Mount Hyjal"] = "Batalha pelo Monte Hyjal";
+L["Black Temple"] = "Templo Negro";
+L["Hellfire Citadel"] = "Cidadela Fogo do Inferno";
+L["Coilfang Reservoir"] = "Reservatório Presacurva";
+L["Shadow Labyrinth"] = "Labirinto Soturno";
+L["Auchindoun"] = "Auchindoun";
+L["Tempest Keep"] = "Bastilha da Tormenta";
+L["Caverns of Time"] = "Cavernas do Tempo";
+
+L["shortLayerPrefix"] = "C";
+L["expired"] = "expirado";
+
+L["layersHeaderDesc"] = "Opções de camadas";
+
+L["minimapLayerZoneIDTitle"] = "ID da zona no minimapa";
+L["minimapLayerZoneIDDesc"] = "Mostra o ID da sua zona atual ao lado do número da camada atual.";
+
+L["minimapLayerZoneIDTooltipTitle"] = "Dica de ID da zona do minimapa";
+L["minimapLayerZoneIDTooltipDesc"] = "Isso fará com que a dica ao passar o mouse exiba todos os ID da zona de camada da sua zona atual para que você possa compará-los com seu alternativo em outra facção ou por qualquer outro motivo.";
+
+L["Unknown"] = "Desconhecido";
+
+--Abbreviated days/months.
+L["Mon"] = "Seg";
+L["Tue"] = "Ter";
+L["Wed"] = "Qua";
+L["Thu"] = "Qui";
+L["Fri"] = "Sex";
+L["Sat"] = "Sáb";
+L["Sun"] = "Dom";
+
+L["Jan"] = "Jan";
+L["Feb"] = "Fev";
+L["Mar"] = "Mar";
+L["Apr"] = "Abr";
+L["May"] = "Mai";
+L["Jun"] = "Jun";
+L["Jul"] = "Jul";
+L["Aug"] = "Ago";
+L["Sep"] = "Set";
+L["Oct"] = "Out";
+L["Nov"] = "Nov";
+L["Dec"] = "Dez";
+
+L["for"] = "por";

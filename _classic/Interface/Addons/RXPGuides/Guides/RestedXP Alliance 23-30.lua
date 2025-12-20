@@ -1660,6 +1660,7 @@ step
 step
     .goto Wetlands,15.5,23.5
     >>Kill Captain Halyndor by entering the ship through the broken mast
+    >>|cRXP_WARN_Be careful he can cast|r |T136232:0|t[Ward of the Eye]|cRXP_WARN_ making him|r |cRXP_ENEMY_REFLECT SPELLS|r |cRXP_WARN_for 6 seconds|r
     .complete 290,1 --Collect Intrepid Strongbox Key (x1)
 step
     .goto Wetlands,14.4,24.0
@@ -1753,7 +1754,7 @@ step
 >>Talk to |cRXP_FRIENDLY_Foggy MacKreel|r
     .accept 647 >> Accept MacKreel's Moonshine
     >>You can still get this quest if you don't have any kind of speed increase or slow fall
-    .link https://www.twitch.tv/videos/646111384 >>Click here for reference
+    .link https://youtu.be/EmcLDfGL_xg >>Click here for reference
 step
 #xprate <1.5
     .goto Arathi Highlands,44.3,93.0
@@ -4254,7 +4255,7 @@ step
 >>Talk to |cRXP_FRIENDLY_Foggy MacKreel|r
     .accept 647 >> Accept MacKreel's Moonshine
     >>You can still get this quest if you don't have any kind of speed increase or slow fall
-    .link https://www.twitch.tv/videos/646111384 >>Click here for reference
+    .link https://youtu.be/EmcLDfGL_xg >>Click here for reference
     .timer 900,Moonshine Expiration Time
 step
     .goto Arathi Highlands,44.3,93.0

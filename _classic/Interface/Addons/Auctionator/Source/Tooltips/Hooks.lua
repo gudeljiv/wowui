@@ -28,6 +28,13 @@ TooltipHandlers["SetBuybackItem"] = function(tip, slotIndex)
   Auctionator.Tooltip.ShowTipWithPricing(tip, itemLink, itemCount)
 end
 
+local GetMerchantItemInfo = GetMerchantItemInfo or function(index)
+  local info = C_MerchantFrame.GetItemInfo(index);
+  if info then
+    return info.name, info.texture, info.price, info.stackCount, info.numAvailable, info.isPurchasable, info.isUsable, info.hasExtendedCost, info.currencyID, info.spellID;
+  end
+end
+
 -- This is called when mousing over an item in a merchant window (Merchant Pane)
 TooltipHandlers["SetMerchantItem"] = function(tip, index)
   local itemLink = GetMerchantItemLink(index)
@@ -54,7 +61,7 @@ TooltipHandlers["SetGuildBankItem"] = function(tip, tab, slot)
   Auctionator.Tooltip.ShowTipWithPricing(tip, itemLink, itemCount)
 end
 
-if GameTooltip.SetRecipeReagentItem then -- Dragonflight
+if GameTooltip.SetRecipeReagentItem then -- Dragonflight onwards
   -- Reagent in Dragonflight recipe tradeskill page, only for reagents without a
   -- quality rating.
   TooltipHandlers["SetRecipeReagentItem"] = function( tip, recipeID, slotID )
@@ -79,7 +86,7 @@ if GameTooltip.SetRecipeReagentItem then -- Dragonflight
   end
 end
 
-if GameTooltip.SetRecipeResultItem then -- Dragonflight
+if GameTooltip.SetRecipeResultItem then -- Dragonflight onwards
   TooltipHandlers["SetRecipeResultItem"] = function(tip, recipeID, reagents, allocations, recipeLevel, qualityID)
     local outputInfo = C_TradeSkillUI.GetRecipeOutputItemData(recipeID, reagents, allocations, qualityID)
     local outputLink = outputInfo and outputInfo.hyperlink
@@ -87,7 +94,17 @@ if GameTooltip.SetRecipeResultItem then -- Dragonflight
     if outputLink then
       local recipeSchematic = C_TradeSkillUI.GetRecipeSchematic(recipeID, false, recipeLevel)
 
-      Auctionator.Tooltip.ShowTipWithPricing(GameTooltip, outputLink, recipeSchematic.quantityMin)
+      Auctionator.Tooltip.ShowTipWithPricing(tip, outputLink, recipeSchematic.quantityMin)
+    end
+  end
+end
+
+if GameTooltip.SetItemByGUID then
+  TooltipHandlers["SetItemByGUID"] = function(tip, guid)
+    local itemLink = C_Item.GetItemLinkByGUID(guid)
+
+    if itemLink then
+      Auctionator.Tooltip.ShowTipWithPricing(tip, itemLink, 1)
     end
   end
 end
@@ -250,18 +267,23 @@ end
 
 if GameTooltip.SetItemKey then
   TooltipHandlers["SetItemKey"] = function(tip, itemID, itemLevel, itemSuffix)
-    local info = C_TooltipInfo.GetItemKey(itemID, itemLevel, itemSuffix)
-    if info == nil then
-      return
+    local itemLink
+    if C_TooltipInfo then
+      local info = C_TooltipInfo and C_TooltipInfo.GetItemKey(itemID, itemLevel, itemSuffix)
+      if info == nil then
+        return
+      end
+      itemLink = info.hyperlink
+    else
+      itemLink = select(2, tip:GetItem())
     end
-    if info.hyperlink then
-      local hyperlink = info.hyperlink
+    if itemLink then
       -- Necessary as for recipes the crafted item is returned info.hyperlink,
       -- so we check we actually got the recipe item
-      if C_Item.GetItemInfoInstant(info.hyperlink) ~= itemID then
-        hyperlink = select(2, C_Item.GetItemInfo(itemID))
+      if C_Item.GetItemInfoInstant(itemLink) ~= itemID then
+        itemLink = select(2, C_Item.GetItemInfo(itemID))
       end
-      Auctionator.Tooltip.ShowTipWithPricing(tip, hyperlink, 1)
+      Auctionator.Tooltip.ShowTipWithPricing(tip, itemLink, 1)
     end
   end
 end
@@ -308,3 +330,38 @@ else
     hooksecurefunc(GameTooltip, func, handler)
   end
 end
+
+EventUtil.ContinueOnAddOnLoaded("Blizzard_ProfessionsTemplates", function()
+  local function QualityTooltip(slot, transaction, noInstruction)
+    local display = {}
+    local quantities = Professions.GetQuantitiesAllocated(transaction, slot:GetReagentSlotSchematic())
+    for index, reagentDetails in ipairs(slot:GetReagentSlotSchematic().reagents) do
+      table.insert(display, {
+        itemID = reagentDetails.itemID,
+        quality = C_TradeSkillUI.GetItemReagentQualityByItemInfo(reagentDetails.itemID),
+        itemCount = quantities[index],
+      })
+    end
+    table.sort(display, function(a, b)
+      return a.quality < b.quality
+    end)
+
+    Auctionator.Tooltip.AddReagentsAuctionTip(GameTooltip, display)
+  end
+  local function OptionalTooltip(item)
+  end
+  if Professions.SetupQualityReagentTooltip then
+    hooksecurefunc(Professions, "SetupQualityReagentTooltip", QualityTooltip)
+    hooksecurefunc(Professions, "AddCommonOptionalTooltipInfo", function(item)
+      Auctionator.Tooltip.AddReagentsAuctionTip(GameTooltip, {{itemID = item:GetItemID(), itemCount = 1}})
+    end)
+  elseif Professions.SetupReagentQualityPickerTooltip then
+    hooksecurefunc(Professions, "SetupReagentQualityPickerTooltip", QualityTooltip)
+    hooksecurefunc(Professions, "SetupOptionalReagentTooltip", function(slot, transaction)
+      local reagent = slot.Button:GetReagent()
+      if reagent and reagent.itemID then
+        Auctionator.Tooltip.AddReagentsAuctionTip(GameTooltip, {{itemID = reagent.itemID, itemCount = 1}})
+      end
+    end)
+  end
+end)

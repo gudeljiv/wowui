@@ -3,22 +3,9 @@ local addonName, addon = ...
 ---@class StatLogic
 local StatLogic = LibStub(addonName)
 
-function StatLogic:argCheck(argument, number, ...)
-	local arg = {...}
-	local validTypeString = table.concat(arg, ", ")
-	local t = type(argument)
-	assert(
-		arg[1] == t or
-		arg[2] == t or
-		arg[3] == t or
-		arg[4] == t or
-		arg[5] == t,
-		"Bad argument #"..tostring(number).." ("..validTypeString.." expected, got "..t..")"
-	)
-end
 
 -- Tooltip with syntactic sugar
----@class StatLogicTooltip : GameTooltip
+---@class StatLogicTooltip : ClassicGameTooltip
 local tip = CreateFrame("GameTooltip", "StatLogicTooltip", nil, "GameTooltipTemplate") --[[@as GameTooltip]]
 tip:SetOwner(WorldFrame, "ANCHOR_NONE")
 
@@ -77,20 +64,23 @@ local pairs = pairs
 local ipairs = ipairs
 local type = type
 local GetInventoryItemLink = GetInventoryItemLink
+local GetSpellName = C_Spell.GetSpellName
 local IsUsableSpell = IsUsableSpell
 local UnitStat = UnitStat
 local GetShapeshiftForm = GetShapeshiftForm
 local GetShapeshiftFormInfo = GetShapeshiftFormInfo
-local GetTalentInfo = GetTalentInfo
-local tocversion = select(4, GetBuildInfo())
+local GetActiveTalentGroup = GetActiveTalentGroup or C_SpecializationInfo.GetActiveSpecGroup
+local GetPrimaryTalentTree = GetPrimaryTalentTree or C_SpecializationInfo.GetSpecialization
+local GetSpecializationInfo = GetSpecializationInfo or C_SpecializationInfo.GetSpecializationInfo
+addon.tocversion = select(4, GetBuildInfo())
 
 ---------------
 -- Lua Tools --
 ---------------
 -- metatable for stat tables
 local statTableMetatable = {
-	__index = function(t, k)
-		if k ~= "subclassID" then
+	__index = function(_, k)
+		if k ~= "weaponSubclass" then
 			return 0
 		end
 	end,
@@ -163,8 +153,9 @@ end
 
 ---@class StatTable
 ---@field link string
----@field numLines number
+---@field numLines integer
 ---@field inventoryType string
+---@field weaponSubclass Enum.ItemWeaponSubclass?
 ---@field [Stat] number
 
 -- New table
@@ -184,19 +175,11 @@ local function newPooledTable(...)
 end
 
 -- New stat table
-local function newStatTable(...)
+---@return StatTable
+local function newStatTable()
 	local t = next(pool) or {}
 	pool[t] = nil
 	setmetatable(t, statTableMetatable)
-
-	for i = 1, select('#', ...), 2 do
-		local k = select(i, ...)
-		if k then
-			t[k] = select(i+1, ...)
-		else
-			break
-		end
-	end
 	return t
 end
 
@@ -264,13 +247,13 @@ setmetatable(log_level_colors, {
 	end
 })
 
----@param output string|table
+---@param output string
 ---@param log_level? log_level
 ---@param prefix? string
 local function log(output, log_level, prefix)
 	if DEBUG and output ~= "" then
 		local prefix_color, text_color = unpack(log_level_colors[log_level])
-		local text = type(output) == "table" and ("    " .. table.concat(output, ", ")) or output
+		local text = output
 		if prefix then
 			print(prefix_color:WrapTextInColorCode("  " .. prefix), text_color:WrapTextInColorCode("\"" .. text .. "\""))
 		else
@@ -279,19 +262,9 @@ local function log(output, log_level, prefix)
 	end
 end
 
--- SetTip("item:3185:0:0:0:0:0:1957")
-function SetTip(item)
-	local _, link = C_Item.GetItemInfo(item)
-	ItemRefTooltip:ClearLines()
-	ItemRefTooltip:SetHyperlink(link)
-	ItemRefTooltip:Show()
-end
-
 ----------------
 -- Stat Tools --
 ----------------
-StatLogic.ExtraHasteClasses = {}
-
 StatLogic.GenericStatMap = {
 	[StatLogic.Stats.AllStats] = {
 		StatLogic.Stats.Strength,
@@ -302,17 +275,20 @@ StatLogic.GenericStatMap = {
 	}
 }
 
+---@class StatModInfo
+-- 0: inter-mod operations are done with addition,
+-- 1: inter-mod operations are done with multiplication,
+---@field initialValue 0 | 1
+-- Added to the final result after combining two statMods,
+-- so we can adjust the result to be used with additive or multiplicative modifiers.
+-- Additive: initialValue + finalAdjust = 0
+-- Multiplicative: initialValue + finalAdjust = 1
+---@field finalAdjust 0 | 1
+---@field add string?
+---@field mod string?
+
+---@type { [Stat|string]: StatModInfo }
 StatLogic.StatModInfo = {
-	------------------------------------------------------------------------------
-	-- initialValue: sets the initial value for the stat mod
-	-- if initialValue == 0, inter-mod operations are done with addition,
-	-- if initialValue == 1, inter-mod operations are done with multiplication,
-	------------------------------------------------------------------------------
-	-- finalAdjust: added to the final result before returning,
-	-- so we can adjust the return value to be used in addition or multiplication
-	-- for addition: initialValue + finalAdjust = 0
-	-- for multiplication: initialValue + finalAdjust = 1
-	------------------------------------------------------------------------------
 	-- ADD_MELEE_CRIT, _SPELL_CRIT, and _DODGE modifiers are used to reverse engineer conversion rates of AGI and INT,
 	-- but only before max level. When adding them to StatModTables, there's no need to be exhaustive;
 	-- only add mods that would reasonably be active while leveling, which are primarily talents.
@@ -331,6 +307,10 @@ StatLogic.StatModInfo = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
+	["ADD_PARRY"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
 	["ADD_SPELL_CRIT"] = {
 		initialValue = 0,
 		finalAdjust = 0,
@@ -343,11 +323,15 @@ StatLogic.StatModInfo = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
-	["ADD_AP_MOD_FERAL_AP"] = {
+	["ADD_AP_MOD_FERAL_ATTACK_POWER"] = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
-	["ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT"] = {
+	["ADD_AP_MOD_GENERIC_ATTACK_POWER"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	["ADD_RANGED_AP_MOD_GENERIC_ATTACK_POWER"] = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
@@ -359,6 +343,18 @@ StatLogic.StatModInfo = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
+	["ADD_RANGED_HIT_RATING_MOD_HIT_RATING"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	["ADD_RANGED_CRIT_RATING_MOD_CRIT_RATING"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
+	["ADD_RANGED_HASTE_RATING_MOD_HASTE_RATING"] = {
+		initialValue = 0,
+		finalAdjust = 0,
+	},
 	["ADD_WEAPON_DAMAGE_AVERAGE_MOD_WEAPON_DAMAGE_MIN"] = {
 		initialValue = 0,
 		finalAdjust = 0,
@@ -367,25 +363,21 @@ StatLogic.StatModInfo = {
 		initialValue = 0,
 		finalAdjust = 0,
 	},
-	["MOD_AGI"] = {
-		initialValue = 1,
-		finalAdjust = 0,
-	},
-	["MOD_AP"] = {
-		initialValue = 0,
-		finalAdjust = 1,
-	},
-	["MOD_ARMOR"] = {
-		initialValue = 1,
-		finalAdjust = 0,
-	},
 	["MOD_BLOCK_VALUE"] = {
 		initialValue = 0,
 		finalAdjust = 1,
 	},
-	["MOD_FERAL_AP"] = {
-		initialValue = 0,
-		finalAdjust = 1,
+	["MOD_CRIT_RATING"] = {
+		initialValue = 1,
+		finalAdjust = 0,
+	},
+	["MOD_DODGE"] = {
+		initialValue = 1,
+		finalAdjust = 0,
+	},
+	["MOD_HASTE_RATING"] = {
+		initialValue = 1,
+		finalAdjust = 0,
 	},
 	["MOD_HEALING"] = {
 		initialValue = 0,
@@ -395,11 +387,11 @@ StatLogic.StatModInfo = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
-	["MOD_NORMAL_HEALTH_REG"] = {
+	["MOD_MASTERY_RATING"] = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
-	["MOD_INT"] = {
+	["MOD_NORMAL_HEALTH_REG"] = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
@@ -407,7 +399,7 @@ StatLogic.StatModInfo = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
-	["MOD_NORMAL_MANA_REG"] = {
+	["MOD_NORMAL_MANA_REGEN"] = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
@@ -419,53 +411,25 @@ StatLogic.StatModInfo = {
 		initialValue = 1,
 		finalAdjust = 0,
 	},
-	["MOD_RANGED_AP"] = {
-		initialValue = 0,
-		finalAdjust = 1,
-	},
 	["MOD_SPELL_DMG"] = {
 		initialValue = 0,
 		finalAdjust = 1,
 	},
-	["MOD_SPI"] = {
-		initialValue = 1,
-		finalAdjust = 0,
-	},
-	["MOD_STA"] = {
-		initialValue = 1,
-		finalAdjust = 0,
-	},
-	["MOD_STR"] = {
-		initialValue = 1,
-		finalAdjust = 0,
+	["MOD_WEAPON_ATTACK_POWER"] = {
+		initialValue = 0,
+		finalAdjust = 1,
 	},
 }
 
 -- StatMods used by RatingBuster to dynamically add options for stat breakdowns
 local addedInfoMods = {
 	{
-		add = "AP",
-		mod = "AGI",
-	},
-	{
-		add = "AP",
-		mod = "STR",
-	},
-	{
-		add = "NORMAL_HEALTH_REG",
-		mod = "HEALTH",
-	},
-	{
-		add = "NORMAL_HEALTH_REG",
-		mod = "SPI",
-	},
-	{
-		add = "NORMAL_MANA_REG",
+		add = "AGI",
 		mod = "INT",
 	},
 	{
-		add = "NORMAL_MANA_REG",
-		mod = "SPI",
+		add = "AP",
+		mod = "AGI",
 	},
 	{
 		add = "AP",
@@ -481,7 +445,23 @@ local addedInfoMods = {
 	},
 	{
 		add = "AP",
+		mod = "SPELL_POWER",
+	},
+	{
+		add = "AP",
 		mod = "STA",
+	},
+	{
+		add = "AP",
+		mod = "STR",
+	},
+	{
+		add = "BLOCK_CHANCE",
+		mod = "MASTERY_EFFECT",
+	},
+	{
+		add = "BLOCK_CHANCE",
+		mod = "DEFENSE",
 	},
 	{
 		add = "BLOCK_VALUE",
@@ -500,20 +480,52 @@ local addedInfoMods = {
 		mod = "INT",
 	},
 	{
-		add = "MELEE_CRIT",
-		mod = "AGI",
+		add = "CRIT_AVOIDANCE",
+		mod = "DEFENSE",
 	},
 	{
-		add = "RANGED_CRIT",
-		mod = "AGI",
+		add = "CRIT_AVOIDANCE",
+		mod = "RESILIENCE",
+	},
+	{
+		add = "CRIT_DAMAGE_REDUCTION",
+		mod = "RESILIENCE",
+	},
+	{
+		add = "CRIT_RATING",
+		mod = "DODGE_RATING",
+	},
+	{
+		add = "CRIT_RATING",
+		mod = "PARRY_RATING",
 	},
 	{
 		add = "DODGE",
 		mod = "AGI",
+	},
+	{
+		add = "DODGE",
+		mod = "DEFENSE",
 	},
 	{
 		add = "DODGE",
 		mod = "SPELL_CRIT",
+	},
+	{
+		add = "DODGE_REDUCTION",
+		mod = "EXPERTISE",
+	},
+	{
+		add = "EXPERTISE_RATING",
+		mod = "SPI",
+	},
+	{
+		add = "GENERIC_MANA_REGEN",
+		mod = "INT",
+	},
+	{
+		add = "GENERIC_MANA_REGEN",
+		mod = "MANA",
 	},
 	{
 		add = "HEALING",
@@ -533,6 +545,10 @@ local addedInfoMods = {
 	},
 	{
 		add = "HEALING",
+		mod = "SPELL_POWER",
+	},
+	{
+		add = "HEALING",
 		mod = "SPI",
 	},
 	{
@@ -545,31 +561,119 @@ local addedInfoMods = {
 	},
 	{
 		add = "HEALTH_REG",
+		mod = "HEALTH",
+	},
+	{
+		add = "HEALTH_REG",
 		mod = "NORMAL_HEALTH_REG",
+	},
+	{
+		add = "HIT_RATING",
+		mod = "SPI",
 	},
 	{
 		add = "MANA",
 		mod = "INT",
 	},
 	{
-		add = "MANA_REG",
-		mod = "INT",
+		add = "MANA_REGEN",
+		mod = "GENERIC_MANA_REGEN"
 	},
 	{
-		add = "MANA_REG",
-		mod = "MANA",
+		add = "MANA_REGEN_NOT_CASTING",
+		mod = "GENERIC_MANA_REGEN"
 	},
 	{
-		add = "MANA_REG",
-		mod = "NORMAL_MANA_REG",
+		add = "MANA_REGEN_OUT_OF_COMBAT",
+		mod = "GENERIC_MANA_REGEN"
+	},
+	{
+		add = "MANA_REGEN",
+		mod = "NORMAL_MANA_REGEN"
+	},
+	{
+		add = "MANA_REGEN_NOT_CASTING",
+		mod = "NORMAL_MANA_REGEN"
+	},
+	{
+		add = "MANA_REGEN_OUT_OF_COMBAT",
+		mod = "NORMAL_MANA_REGEN"
 	},
 	{
 		add = "MASTERY_EFFECT",
 		mod = "MASTERY",
 	},
 	{
+		add = "MELEE_HIT_RATING",
+		mod = "HIT_RATING",
+	},
+	{
+		add = "SPELL_HIT_RATING",
+		mod = "HIT_RATING",
+	},
+	{
+		add = "MELEE_CRIT_RATING",
+		mod = "CRIT_RATING",
+	},
+	{
+		add = "SPELL_CRIT_RATING",
+		mod = "CRIT_RATING",
+	},
+	{
+		add = "MELEE_HASTE_RATING",
+		mod = "HASTE_RATING",
+	},
+	{
+		add = "SPELL_HASTE_RATING",
+		mod = "HASTE_RATING",
+	},
+	{
+		add = "MELEE_CRIT",
+		mod = "AGI",
+	},
+	{
+		add = "MISS",
+		mod = "DEFENSE",
+	},
+	{
+		add = "NATURE_DAMAGE",
+		mod = "AGI",
+	},
+	{
+		add = "NORMAL_HEALTH_REG",
+		mod = "HEALTH",
+	},
+	{
+		add = "NORMAL_HEALTH_REG",
+		mod = "SPI",
+	},
+	{
+		add = "NORMAL_MANA_REGEN",
+		mod = "INT",
+	},
+	{
+		add = "NORMAL_MANA_REGEN",
+		mod = "SPI",
+	},
+	{
+		add = "PARRY",
+		mod = "DEFENSE",
+	},
+	{
+		add = "PARRY",
+		mod = "STR",
+	},
+	{
 		add = "PARRY_RATING",
 		mod = "STR",
+	},
+	{
+		add = "PARRY_REDUCTION",
+		mod = "EXPERTISE",
+	},
+	{
+		add = "PVP_DAMAGE_REDUCTION",
+		mod = "RESILIENCE",
 	},
 	{
 		add = "RANGED_AP",
@@ -580,15 +684,15 @@ local addedInfoMods = {
 		mod = "INT",
 	},
 	{
+		add = "RANGED_CRIT",
+		mod = "AGI",
+	},
+	{
 		add = "SPELL_CRIT",
 		mod = "INT",
 	},
 	{
 		add = "SPELL_CRIT_RATING",
-		mod = "SPI",
-	},
-	{
-		add = "SPELL_HIT_RATING",
 		mod = "SPI",
 	},
 	{
@@ -617,6 +721,10 @@ local addedInfoMods = {
 	},
 	{
 		add = "SPELL_DMG",
+		mod = "SPELL_POWER",
+	},
+	{
+		add = "SPELL_DMG",
 		mod = "SPI",
 	},
 	{
@@ -628,54 +736,75 @@ local addedInfoMods = {
 		mod = "STR",
 	},
 	{
-		add = "DODGE_REDUCTION",
+		add = "SPELL_HIT",
 		mod = "EXPERTISE",
 	},
 	{
-		add = "PARRY_REDUCTION",
-		mod = "EXPERTISE",
+		add = "SPELL_HIT_RATING",
+		mod = "SPI",
 	},
 	{
-		add = "BLOCK_CHANCE",
+		add = "SPELL_POWER",
+		mod = "AP",
+	},
+	{
+		add = "SPELL_POWER",
+		mod = "INT",
+	},
+	{
+		add = "STR",
 		mod = "DEFENSE",
 	},
 	{
-		add = "CRIT_AVOIDANCE",
-		mod = "DEFENSE",
+		mod = "AGI",
+		initialValue = 1,
 	},
 	{
-		add = "DODGE",
-		mod = "DEFENSE",
+		mod = "AP",
+		finalAdjust = 1,
 	},
 	{
-		add = "MISS",
-		mod = "DEFENSE",
+		mod = "ARMOR",
+		initialValue = 1,
 	},
 	{
-		add = "PARRY",
-		mod = "DEFENSE",
+		mod = "INT",
+		initialValue = 1,
 	},
 	{
-		add = "CRIT_AVOIDANCE",
-		mod = "RESILIENCE",
-
+		mod = "RANGED_AP",
+		finalAdjust = 1,
 	},
 	{
-		add = "CRIT_DAMAGE_REDUCTION",
-		mod = "RESILIENCE",
-
+		mod = "SPELL_POWER",
+		finalAdjust = 1,
 	},
 	{
-		add = "PVP_DAMAGE_REDUCTION",
-		mod = "RESILIENCE",
-
+		mod = "SPI",
+		initialValue = 1,
+	},
+	{
+		mod = "STA",
+		initialValue = 1,
+	},
+	{
+		mod = "STR",
+		initialValue = 1,
 	},
 }
 
 for _, statMod in ipairs(addedInfoMods) do
-	local name = ("ADD_%s_MOD_%s"):format(statMod.add, statMod.mod)
-	statMod.initialValue = 0
-	statMod.finalAdjust = 0
+	local name = ""
+	if statMod.add then
+		name = ("ADD_%s_"):format(statMod.add)
+	end
+	name = name .. ("MOD_%s"):format(statMod.mod)
+	if not statMod.initialValue then
+		statMod.initialValue = 0
+	end
+	if not statMod.finalAdjust then
+		statMod.finalAdjust = 0
+	end
 	StatLogic.StatModInfo[name] = statMod
 end
 
@@ -684,56 +813,10 @@ end
 --------------------
 
 do
-	-- Aura Cache is a cache of our actual auras, wiped on UNIT_AURA
-	-- and not populated until we try to access it. This is for
-	-- performance during combat, when many auras will be updating,
-	-- but the user is unlikely to be checking item tooltips.
-	local aura_cache = {}
 	-- Auras whose StatMod requires scanning the tooltip to get a dynamic value
-	local tooltip_auras = {}
-	local rank_auras = {}
-
-	local needs_update = true
-	local f = CreateFrame("Frame")
-	f:RegisterUnitEvent("UNIT_AURA", "player")
-	f:SetScript("OnEvent", function()
-		wipe(aura_cache)
-		needs_update = true
-	end)
-
-	-- AuraInfo is a layer on top of aura_cache to hold Always Buffed settings.
-	local always_buffed_aura_info = {}
-	function StatLogic:SetupAuraInfo(always_buffed_ns)
-		self.always_buffed_ns = always_buffed_ns
-		for _, modList in pairs(StatLogic.StatModTable) do
-			for _, mods in pairs(modList) do
-				for _, mod in ipairs(mods) do
-					if mod.aura then -- if we got a buff
-						local name = GetSpellInfo(mod.aura)
-						if name then
-							local aura = {}
-							if not mod.tab and mod.rank then
-								-- Not a talent, so the rank is the buff rank
-								aura.rank = #(mod.rank)
-								rank_auras[name] = true
-							end
-
-							if mod.stack then
-								aura.stacks = mod.max_stacks
-							end
-
-							always_buffed_aura_info[name] = aura
-							if mod.tooltip then
-								tooltip_auras[name] = true
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-
-	local GetSpellSubtext = C_Spell.GetSpellSubtext or GetSpellSubtext
+	local tooltipAuras = {}
+	local rankAuras = {}
+	local exactAuras = {}
 
 	---@class AuraInfo
 	---@field spellId integer
@@ -741,72 +824,119 @@ do
 	---@field tooltip integer?
 	---@field rank integer?
 
-	--- Returns information about a buff or debuff on the player, including fake auras from AlwaysBuffed settings
-	---@param auraName string
-	---@param ignoreAlwaysBuffed boolean? Set to true to ignore the AlwaysBuffed settings
-	---@return AuraInfo
-	function StatLogic:GetAuraInfo(auraName, ignoreAlwaysBuffed)
-		if not ignoreAlwaysBuffed and self.always_buffed_ns.profile[auraName] then
-			return always_buffed_aura_info[auraName]
-		else
-			if needs_update then
-				local i = 1
-				repeat
-					local auraData = C_UnitAuras.GetBuffDataByIndex("player", i)
-					if auraData then
-						local buffName = auraData.name
-						local auraInfo = {
-							spellId = auraData.spellId,
-							stacks = auraData.applications,
-						}
-						aura_cache[buffName] = auraInfo
-
-						if tooltip_auras[buffName] then
-							tip:SetUnitBuff("player", i)
-							local numString = tip.sides.left[2]:GetText():match("%d+")
-							local value = numString and tonumber(numString) or 0
-							auraInfo.tooltip = value
-						end
-
-						if rank_auras[buffName] then
-							local subtext = GetSpellSubtext(auraInfo.spellId)
-							if subtext then
-								auraInfo.rank = tonumber(subtext:match("%d+") or "") or 1
+	-- A layer on top of auraCache to hold Always Buffed settings.
+	---@type { [string|integer]: AuraInfo }
+	local alwaysBuffedAuraInfo = {}
+	function StatLogic:SetupAuraInfo(alwaysBuffedNamespace)
+		self.always_buffed_ns = alwaysBuffedNamespace
+		for _, modList in pairs(StatLogic.StatModTable) do
+			for _, mods in pairs(modList) do
+				for _, mod in ipairs(mods) do
+					if mod.aura then
+						local key = mod.exact and mod.aura or GetSpellName(mod.aura)
+						if key then
+							local aura = {
+								spellId = mod.aura
+							}
+							if not mod.tab and mod.rank then
+								-- Not a talent, so the rank is the buff rank
+								aura.rank = #(mod.rank)
+								rankAuras[key] = true
 							end
+
+							if mod.stack then
+								aura.stacks = mod.max_stacks
+							end
+
+							if mod.tooltip then
+								tooltipAuras[key] = true
+							end
+
+							if mod.exact then
+								exactAuras[key] = true
+							end
+
+							alwaysBuffedAuraInfo[key] = aura
 						end
 					end
-					i = i+1
-				until not auraData
-				i = 1
-				repeat
-					local auraData = C_UnitAuras.GetDebuffDataByIndex("player", i)
-					if auraData then
-						local debuffName = auraData.name
-						local auraInfo = {
-							spellId = auraData.spellId,
-							stacks = auraData.applications,
-						}
-						aura_cache[debuffName] = auraInfo
-
-						if tooltip_auras[debuffName] then
-							tip:SetUnitDebuff("player", i)
-							local numString = tip.sides.left[2]:GetText():match("%d+")
-							local value = numString and tonumber(numString) or 0
-							auraInfo.tooltip = value
-						end
-
-						if rank_auras[debuffName] then
-							local subtext = GetSpellSubtext(auraInfo.spellId)
-							if subtext then
-								auraInfo.rank = tonumber(subtext:match("%d+") or "") or 1
-							end
-						end
-					end
-					i = i+1
-				until not auraData
-				needs_update = false
+				end
 			end
-			return aura_cache[auraName]
+		end
+	end
+
+	-- Aura Cache is a cache of our actual auras, wiped on UNIT_AURA
+	-- and not populated until we try to access it. This is for
+	-- performance during combat, when many auras will be updating,
+	-- but the user is unlikely to be checking item tooltips.
+	---@type { [string|integer]: AuraInfo }
+	local auraCache = {}
+	local needsUpdate = true
+	local f = CreateFrame("Frame")
+	f:RegisterUnitEvent("UNIT_AURA", "player")
+	f:SetScript("OnEvent", function()
+		wipe(auraCache)
+		needsUpdate = true
+	end)
+
+	local GetSpellSubtext = C_Spell.GetSpellSubtext or GetSpellSubtext
+
+	local AuraGettersSetters = {
+		[C_UnitAuras.GetBuffDataByIndex] = "SetUnitBuff",
+		[C_UnitAuras.GetDebuffDataByIndex] = "SetUnitDebuff",
+	}
+
+	local function UpdateAuras()
+		for GetAuraDataByIndex, SetTooltipAura in pairs(AuraGettersSetters) do
+			local i = 1
+			repeat
+				local auraData = GetAuraDataByIndex("player", i)
+				if auraData then
+					local auraName = auraData.name
+					local auraInfo = {
+						spellId = auraData.spellId,
+						stacks = auraData.applications,
+					}
+					auraCache[auraName] = auraInfo
+
+					if tooltipAuras[auraName] then
+						tip[SetTooltipAura]("player", i)
+						local numString = tip.sides.left[2]:GetText():match("%d+")
+						local value = numString and tonumber(numString) or 0
+						auraInfo.tooltip = value
+					end
+
+					if rankAuras[auraName] then
+						local subtext = GetSpellSubtext(auraInfo.spellId)
+						if subtext then
+							auraInfo.rank = tonumber(subtext:match("%d+") or "") or 1
+						end
+					end
+
+					if exactAuras[auraData.spellId] then
+						auraCache[auraData.spellId] = auraInfo
+					end
+				end
+				i = i + 1
+			until not auraData
+		end
+		needsUpdate = false
+	end
+
+	--- Returns information about a buff or debuff on the player, including fake auras from AlwaysBuffed settings
+	---@param auraSpellID integer
+	---@param ignoreAlwaysBuffed boolean? Set to true to ignore the AlwaysBuffed settings
+	---@param requireExactSpell boolean? Match an aura with exactly auraSpellID, rather than just a matching name
+	---@return AuraInfo auraInfo, boolean usedAlwaysBuffed
+	function StatLogic:GetAuraInfo(auraSpellID, ignoreAlwaysBuffed, requireExactSpell)
+		local auraName = GetSpellName(auraSpellID)
+		local key = requireExactSpell and auraSpellID or auraName
+		if not ignoreAlwaysBuffed and self.always_buffed_ns.profile[auraName] then
+			return alwaysBuffedAuraInfo[key], true
+		else
+			if needsUpdate then
+				UpdateAuras()
+			end
+			return auraCache[key], false
 		end
 	end
 end
@@ -818,12 +948,12 @@ function addon.GenerateWeaponSubclassStats()
 	for _, modList in pairs(StatLogic.StatModTable) do
 		for stat, cases in pairs(modList) do
 			for _, case in ipairs(cases) do
-				if case.weapon then
-					for subclassID in pairs(case.weapon) do
-						if not addon.WeaponSubclassStats[subclassID] then
-							addon.WeaponSubclassStats[subclassID] = {}
+				if case.weaponSubclass then
+					for weaponSubclass in pairs(case.weaponSubclass) do
+						if not addon.WeaponSubclassStats[weaponSubclass] then
+							addon.WeaponSubclassStats[weaponSubclass] = {}
 						end
-						addon.WeaponSubclassStats[subclassID][stat] = true
+						addon.WeaponSubclassStats[weaponSubclass][stat] = true
 					end
 				end
 			end
@@ -870,6 +1000,7 @@ do
 		SHAMAN = Enum.ItemArmorSubclass.Mail,
 		ROGUE = Enum.ItemArmorSubclass.Leather,
 		DRUID = Enum.ItemArmorSubclass.Leather,
+		MONK = Enum.ItemArmorSubclass.Leather,
 	}
 
 	local armor_spec_slots = {
@@ -910,7 +1041,7 @@ do
 		end
 
 		-- Armor Specialization
-		if tocversion >= 40000 and class_armor_specs[addon.class] then
+		if addon.tocversion >= 40000 and class_armor_specs[addon.class] then
 			if event == "PLAYER_ENTERING_WORLD" or not slot then
 				for inv_slot in pairs(armor_spec_slots) do
 					update_armor_slot(inv_slot)
@@ -929,6 +1060,7 @@ end
 -- Ignore Stat Mods that are only used for reverse-engineering agi/int conversion rates
 StatLogic.StatModIgnoresAlwaysBuffed = {
 	["ADD_DODGE"] = true,
+	["ADD_PARRY"] = true,
 	[StatLogic.Stats.MeleeCrit] = true,
 	["ADD_SPELL_CRIT"] = true,
 }
@@ -942,8 +1074,7 @@ addon.StatModValidators = {
 	armorspec = {
 		validate = function(case, _, statModContext)
 			if armor_spec_active then
-				-- TODO: May be replaced by GetSpecialization, check on Cata Beta launch
-				return case.armorspec[GetPrimaryTalentTree(false, false, statModContext.spec) or 0]
+				return case.armorspec[GetPrimaryTalentTree(false, false, statModContext.specGroup) or 0]
 			else
 				return false
 			end
@@ -955,7 +1086,7 @@ addon.StatModValidators = {
 	},
 	aura = {
 		validate = function(case, statModName)
-			return not not StatLogic:GetAuraInfo(GetSpellInfo(case.aura), StatLogic.StatModIgnoresAlwaysBuffed[statModName])
+			return not not StatLogic:GetAuraInfo(case.aura, StatLogic.StatModIgnoresAlwaysBuffed[statModName], case.exact)
 		end,
 		events = {
 			["UNIT_AURA"] = "player",
@@ -982,7 +1113,7 @@ addon.StatModValidators = {
 			end
 
 			for i = 1, NUM_GLYPH_SLOTS do
-				local _, _, _, glyphSpellID = GetGlyphSocketInfo(i, statModContext.spec)
+				local _, _, _, glyphSpellID = GetGlyphSocketInfo(i, statModContext.specGroup)
 				if case.glyph == glyphSpellID then
 					return true
 				end
@@ -996,9 +1127,35 @@ addon.StatModValidators = {
 			["GLYPH_REMOVED"] = true,
 		}
 	},
+	itemClass = {
+		validate = function(case, _, statModContext)
+			local itemClass = statModContext and statModContext.itemClass
+			return itemClass and case.itemClass[itemClass] or false
+		end,
+		events = {
+			["UNIT_INVENTORY_CHANGED"] = "player",
+		}
+	},
 	known = {
-		validate = function(case)
-			return not not FindSpellBookSlotBySpellID(case.known)
+		validate = function(case, _, statModContext)
+			if addon.tocversion >= 50000 then
+				local spec = GetPrimaryTalentTree(false, false, statModContext.specGroup)
+				local specID = GetSpecializationInfo(spec)
+				for i = 1, GetNumSpellTabs() do
+					local offset, numSlots, _, _, _, tabSpecID = select(3, GetSpellTabInfo(i))
+					for slot = offset + 1, offset + numSlots do
+						local spellType, id = GetSpellBookItemInfo(slot, BOOKTYPE_SPELL)
+						if id == case.known and spellType == "SPELL" and (not tabSpecID or tabSpecID == specID) then
+							-- We don't early-return false on a matching spell ID with mismatched spec ID,
+							-- because the spec ID might match in a later tab
+							return true
+						end
+					end
+				end
+				return false
+			else
+				return not not FindSpellBookSlotBySpellID(case.known)
+			end
 		end,
 		events = {
 			["SPELLS_CHANGED"] = true,
@@ -1007,6 +1164,11 @@ addon.StatModValidators = {
 	level = {
 		events = {
 			["PLAYER_LEVEL_UP"] = true,
+		},
+	},
+	mastery = {
+		events = {
+			["UNIT_STATS"] = "player",
 		},
 	},
 	meta = {
@@ -1051,7 +1213,7 @@ addon.StatModValidators = {
 	},
 	spec = {
 		validate = function(case, _, statModContext)
-			return case.spec == GetPrimaryTalentTree(false, false, statModContext.spec)
+			return case.spec == GetPrimaryTalentTree(false, false, statModContext.specGroup)
 		end,
 		events = {
 			["PLAYER_TALENT_UPDATE"] = true,
@@ -1076,18 +1238,18 @@ addon.StatModValidators = {
 			["PLAYER_TALENT_UPDATE"] = true,
 		},
 	},
-	weapon = {
+	weaponSubclass = {
 		validate = function(case, _, statModContext)
-			local subclassID
+			local weaponSubclass
 			if statModContext then
-				subclassID = statModContext.overrideStats.subclassID
+				weaponSubclass = statModContext.overrideStats.weaponSubclass
 			else
 				local weapon = GetInventoryItemID("player", INVSLOT_MAINHAND)
 				if weapon then
-					subclassID = select(7, C_Item.GetItemInfoInstant(weapon))
+					weaponSubclass = select(7, C_Item.GetItemInfoInstant(weapon))
 				end
 			end
-			return subclassID and case.weapon[subclassID]
+			return weaponSubclass and case.weaponSubclass[weaponSubclass] or false
 		end,
 		events = {
 			["UNIT_INVENTORY_CHANGED"] = "player",
@@ -1147,7 +1309,7 @@ do
 end
 
 local function ValidateStatMod(statModName, case, statModContext)
-	if statModContext.overrideStats.subclassID and not case.weapon then
+	if statModContext.overrideStats.weaponSubclass and not case.weaponSubclass then
 		-- If we're passed a weapon type, we're only interested in StatMods with weapon cases
 		return false
 	end
@@ -1163,7 +1325,7 @@ local function ValidateStatMod(statModName, case, statModContext)
 					end
 					addon.StatModCacheInvalidators[key] = addon.StatModCacheInvalidators[key] or {}
 					table.insert(addon.StatModCacheInvalidators[key], statModName)
-					if case.weapon then
+					if case.weaponSubclass then
 						WeaponSubclassInvalidators[key] = true
 					end
 				end
@@ -1183,7 +1345,12 @@ end
 -- and keep StatModTables human-readable.
 local orderedTalentCache = {}
 function StatLogic:GetOrderedTalentInfo(tab, num, ...)
-	return GetTalentInfo(tab, orderedTalentCache[tab][num], ...)
+	if addon.tocversion < 50000 then
+		local ordered_num = orderedTalentCache[tab][num]
+		return GetTalentInfo(tab, ordered_num, ...)
+	else
+		return C_SpecializationInfo.GetTalentInfo({ tier = tab, column = num })
+	end
 end
 
 local talentCacheExists = false
@@ -1191,7 +1358,7 @@ function StatLogic:TalentCacheExists()
 	return talentCacheExists
 end
 
-do
+if addon.tocversion < 50000 then
 	local function GenerateOrderedTalents()
 		local temp = {}
 		local numTabs = GetNumTalentTabs()
@@ -1237,6 +1404,8 @@ do
 		end
 		self:UnregisterEvent("SPELLS_CHANGED")
 	end)
+else
+	talentCacheExists = true
 end
 
 do
@@ -1247,6 +1416,12 @@ do
 		Armor = 4,
 		Feral = 5,
 		WeaponRacial = 6,
+		PredatoryStrikes = 7,
+		Zandalar = 8,
+		Moxie = 9,
+		SetBonus = 10,
+		Aspect = 11,
+		Stamina = 12,
 	}
 	local ExclusiveGroupCache = {}
 
@@ -1277,20 +1452,29 @@ do
 
 		local newValue
 		if case.tab and case.num then
-			-- Talent Rank
-			local r = select(5, StatLogic:GetOrderedTalentInfo(case.tab, case.num, false, false, context.spec))
-			if case.rank then
-				newValue = case.rank[r]
-			elseif r > 0 then
-				newValue = case.value
+			if addon.tocversion < 50000 then
+				-- Vanilla-style talents with tabs and ranks
+				local r = select(5, StatLogic:GetOrderedTalentInfo(case.tab, case.num, false, false, context.spec))
+				if case.rank then
+					newValue = case.rank[r]
+				elseif r > 0 then
+					newValue = case.value
+				end
+			else
+				-- Mists-style talents with rows, columns and no ranks
+				local selected = select(4, StatLogic:GetOrderedTalentInfo(case.tab, case.num, context.spec))
+				if selected then
+					newValue = case.value
+				end
 			end
 		elseif case.aura and case.rank then
-			local aura = StatLogic:GetAuraInfo(GetSpellInfo(case.aura))
+			local aura = StatLogic:GetAuraInfo(case.aura, false, case.exact)
 			local rank = aura.rank
 			newValue = case.rank[rank]
 		elseif case.aura and case.stack then
-			local aura = StatLogic:GetAuraInfo(GetSpellInfo(case.aura))
-			newValue = case.stack * aura.stacks
+			local aura, usedAlwaysBuffed = StatLogic:GetAuraInfo(case.aura, false, case.exact)
+			local stacks = usedAlwaysBuffed and case.max_stacks or aura.stacks
+			newValue = case.stack * stacks
 		elseif case.regen then
 			newValue = case.regen(level)
 		elseif case.value then
@@ -1298,8 +1482,10 @@ do
 		elseif case.level then
 			newValue = case.level[level]
 		elseif case.tooltip then
-			local aura = StatLogic:GetAuraInfo(GetSpellInfo(case.aura))
+			local aura = StatLogic:GetAuraInfo(case.aura, false, case.exact)
 			newValue = aura.tooltip
+		elseif case.mastery then
+			newValue = GetMasteryEffect() / 100
 		end
 
 		if newValue then
@@ -1322,13 +1508,15 @@ do
 
 	---@class StatModContextArgs
 	---@field profile? string
-	---@field spec? integer
+	---@field specGroup? integer
 	---@field level? integer
+	---@field itemClass? Enum.ItemClass
 	---@field overrideStats? StatTable
 
 	-- Helper object for repeatedly calling GetStatMod for varying StatMods but consistent other parameters
 	---@class StatModContext : StatModContextArgs
 	local StatModContext = {}
+	StatModContext.__index = StatModContext
 
 	---@param statMod string|Stat
 	---@return number
@@ -1336,6 +1524,15 @@ do
 		return StatLogic:GetStatMod(statMod, self)
 	end
 
+	---@return string
+	function StatModContext:CacheKey()
+		return table.concat({
+			self.profile,
+			self.specGroup,
+			self.level,
+			self.itemClass == Enum.ItemClass.Weapon and "w" or "n"
+		})
+	end
 
 	---@param context? StatModContextArgs
 	---@return StatModContext
@@ -1346,8 +1543,8 @@ do
 		if not context.profile then
 			context.profile = ""
 		end
-		if not context.spec then
-			context.spec = GetActiveTalentGroup()
+		if not context.specGroup then
+			context.specGroup = GetActiveTalentGroup()
 		end
 		if not context.level then
 			context.level = UnitLevel("player")
@@ -1368,17 +1565,17 @@ do
 		if not context then
 			context = self:NewStatModContext()
 		end
-		local profileSpec = context.profile .. context.spec
+		local cacheKey = context:CacheKey()
 
 		if context.level == UnitLevel("player") and not next(context.overrideStats) then
-			value = StatModCache[statMod][profileSpec]
+			value = StatModCache[statMod][cacheKey]
 		end
 
 		if not value then
 			wipe(ExclusiveGroupCache)
 			local statModInfo = StatLogic.StatModInfo[statMod]
 			if not statModInfo then
-				StatModCache[statMod][profileSpec] = 0
+				StatModCache[statMod][cacheKey] = 0
 				return 0
 			end
 			value = statModInfo.initialValue
@@ -1392,7 +1589,7 @@ do
 
 			value = value + statModInfo.finalAdjust
 			if context.level == UnitLevel("player") then
-				StatModCache[statMod][profileSpec] = value
+				StatModCache[statMod][cacheKey] = value
 			end
 		end
 
@@ -1411,7 +1608,7 @@ do
 
 	local totalEquippedStatCache = setmetatable({}, {
 		__index = function(t, stat)
-			if tocversion >= 20000 or not trackedTotalStats[stat] then return 0 end
+			if addon.tocversion >= 20000 or not trackedTotalStats[stat] then return 0 end
 
 			for trackedStat in pairs(trackedTotalStats) do
 				t[trackedStat] = 0
@@ -1433,7 +1630,7 @@ do
 		end
 	})
 
-	if tocversion < 20000 then
+	if addon.tocversion < 20000 then
 		local f = CreateFrame("Frame")
 		f:RegisterUnitEvent("UNIT_INVENTORY_CHANGED", "player")
 		f:SetScript("OnEvent", function()
@@ -1456,9 +1653,9 @@ end
 
 local function GetTotalWeaponSkill(unit)
 	if addon.class == "DRUID" and (
-		StatLogic:GetAuraInfo(GetSpellInfo(768), true)
-		or StatLogic:GetAuraInfo(GetSpellInfo(5487), true)
-		or StatLogic:GetAuraInfo(GetSpellInfo(9634), true)
+		StatLogic:GetAuraInfo(768, true)
+		or StatLogic:GetAuraInfo(5487, true)
+		or StatLogic:GetAuraInfo(9634, true)
 	) then
 		return UnitLevel("player") * 5
 	else
@@ -1503,26 +1700,19 @@ local Level34Ratings = {
 function StatLogic:GetEffectFromRating(rating, stat, level)
 	-- check for invalid input
 	if type(rating) ~= "number" or not StatLogic.RatingBase[stat] then return 0 end
+
 	-- defaults to player level if not given
 	level = level or UnitLevel("player")
 	if level < 34 and Level34Ratings[stat] then
 		level = 34
 	end
-	if level >= 80 then
-		local H = 15.2545
-		if stat == StatLogic.Stats.ResilienceRating then
-			H = 9.18109
-		end
-		return rating/StatLogic.RatingBase[stat]/((5371/1638)*H^((level-80)/10))
-	elseif level >= 70 then
-		return rating/StatLogic.RatingBase[stat]/((82/52)*(131/63)^((level-70)/10))
-	elseif level >= 60 then
-		return rating/StatLogic.RatingBase[stat]*((-3/82)*level+(131/41))
-	elseif level >= 10 then
-		return rating/StatLogic.RatingBase[stat]/((1/52)*level-(8/52))
-	else
-		return rating/StatLogic.RatingBase[stat]/((1/52)*10-(8/52))
+
+	local scalar = StatLogic.RatingBase[stat] * addon.GetRatingScalar(stat, level)
+	if level > 85 then
+		scalar = math.floor(scalar)
 	end
+
+	return rating / scalar
 end
 
 if not CR_DODGE then CR_DODGE = 3 end;
@@ -1606,12 +1796,13 @@ do
 	end
 
 	local EmptySocketLookup = {
-		[EMPTY_SOCKET_RED] = 0, -- EMPTY_SOCKET_RED = "Red Socket";
-		[EMPTY_SOCKET_YELLOW] = 0, -- EMPTY_SOCKET_YELLOW = "Yellow Socket";
-		[EMPTY_SOCKET_BLUE] = 0, -- EMPTY_SOCKET_BLUE = "Blue Socket";
-		[EMPTY_SOCKET_META] = 0, -- EMPTY_SOCKET_META = "Meta Socket";
-		[EMPTY_SOCKET_PRISMATIC] = 0, -- EMPTY_SOCKET_PRISMATIC = "Prismatic Socket";
+		[EMPTY_SOCKET_RED] = 0,
+		[EMPTY_SOCKET_YELLOW] = 0,
+		[EMPTY_SOCKET_BLUE] = 0,
+		[EMPTY_SOCKET_META] = 0,
+		[EMPTY_SOCKET_PRISMATIC] = 0,
 	}
+
 	-- Returns a modified link with all empty sockets replaced with the specified gems,
 	-- sockets already gemmed will remain.
 	---@param link string itemLink
@@ -1647,25 +1838,29 @@ do
 		EmptySocketLookup[EMPTY_SOCKET_META] = meta
 		EmptySocketLookup[EMPTY_SOCKET_PRISMATIC] = prismatic
 
-		-- Build socket list
-		local arguments = {"%1"}
-		-- Start parsing
+		-- Since this is passed to gsub, the first entry is
+		-- the capture group containing the item and enchant IDs
+		local gemIDs = { "%1" }
+
 		tip:ClearLines()
 		tip:SetHyperlink(link)
 		for i = 2, tip:NumLines() do
 			local text = tip.sides.left[i]:GetText()
-			local socketFound = EmptySocketLookup[text]
-			arguments[#arguments+1] = socketFound
+			local gemID = EmptySocketLookup[text]
+			gemIDs[#gemIDs+1] = gemID
 		end
-		-- If there are no sockets
-		if #arguments == 1 then
+
+		if #gemIDs == 1 then
+			-- No sockets found
 			return link
 		else
-			for i = #arguments + 1, 5 do
-				arguments[i] = ""
+			-- Pad up to 4 empty gems so we create a valid item link
+			for i = #gemIDs + 1, 5 do
+				gemIDs[i] = ""
 			end
-			local repl = table.concat(arguments, ":")
-			-- This will not replace anything if *any* of the four gem sockets is filled
+			local repl = table.concat(gemIDs, ":")
+			-- Since we only match 0 or empty, this will not replace anything
+			-- if the item link contains *any* real gems
 			return (link:gsub("(item:%d+:%d*):0?:0?:0?:0?", repl))
 		end
 	end
@@ -1716,6 +1911,42 @@ function StatLogic:GetGemID(item)
 	end
 end
 
+do
+	local baseItemLink = "item:9333:"
+	C_Item.RequestLoadItemDataByID(baseItemLink)
+
+	local function GetBaseItemText()
+		tip:ClearLines()
+		tip:SetHyperlink(baseItemLink)
+		local itemText = {}
+		for i = 1, tip:NumLines() do
+			local text = tip.sides.left[i]:GetText()
+			if text then
+				itemText[i] = text
+			end
+		end
+		return itemText
+	end
+	local baseItemText
+
+	---@param enchantID integer
+	---@return string
+	function StatLogic:GetEnchantText(enchantID)
+		if not baseItemText then
+			baseItemText = GetBaseItemText()
+		end
+		tip:ClearLines()
+		tip:SetHyperlink(baseItemLink .. enchantID)
+		for i = 1, tip:NumLines() do
+			local text = tip.sides.left[i]:GetText()
+			if text and baseItemText[i] ~= text then
+				return text
+			end
+		end
+		return ""
+	end
+end
+
 local function ConvertGenericStats(table)
 	for generic, ratings in pairs(StatLogic.GenericStatMap) do
 		if table[generic] then
@@ -1733,31 +1964,231 @@ function StatLogic:GetItemTooltipNumLines(link)
 	return tip:NumLines()
 end
 
--- ================== --
+------------------------
 -- Stat Summarization --
--- ================== --
+------------------------
 do
-	local statTable, currentColor
-
 	local large_sep = LARGE_NUMBER_SEPERATOR:gsub("[-.]", "%%%1")
 	local dec_sep = DECIMAL_SEPERATOR:gsub("[-.]", "%%%1")
-	local number_pattern = "[+-]?[%d." .. large_sep .. dec_sep .. "]+%f[%D]"
+	local numberPattern = "([+-]?[%d." .. large_sep .. dec_sep .. "]+%f[%D])()"
 
-	local function AddStat(id, value, currentStats)
-		if id == StatLogic.Stats.Armor then
-			local base, bonus = StatLogic:GetArmorDistribution(statTable.link, value, currentColor)
-			value = base
-			AddStat(StatLogic.Stats.BonusArmor, bonus, currentStats)
+	---@alias StatGroup Stat[] | false
+
+	---@class StatGroupValues
+	---@field ignoreSum boolean
+	---@field [number] { statGroup: StatGroup, value: number, position: number? }
+
+	---@param statGroups StatGroupValues
+	---@param statGroup StatGroup
+	---@param value integer
+	---@param itemLink string
+	---@param color ColorMixin
+	local function AddStat(statGroups, statGroup, value, itemLink, color, position)
+		if type(statGroup) == "table" then
+			if tContains(statGroup, StatLogic.Stats.Armor) then
+				local base, bonus = StatLogic:GetArmorDistribution(itemLink, value, color, statGroups.ignoreSum)
+				value = base
+				AddStat(statGroups, { StatLogic.Stats.BonusArmor }, bonus, itemLink, color, position)
+			end
+
+			if tContains(statGroup, StatLogic.Stats.WeaponDPS) and LARGE_NUMBER_SEPERATOR == "." then
+				-- Workaround for Blizzard forgetting to use DECIMAL_SEPERATOR for Weapon DPS
+				value = value / 10
+			end
 		end
 
-		if id == StatLogic.Stats.WeaponDPS and LARGE_NUMBER_SEPERATOR == "." then
-			-- Workaround for Blizzard forgetting to use DECIMAL_SEPERATOR for Weapon DPS
-			value = value / 10
-		end
-
-		statTable[id] = (statTable[id] or 0) + tonumber(value)
-		table.insert(currentStats, tostring(id) .. "=" .. tostring(value))
+		table.insert(statGroups, {
+			statGroup = statGroup,
+			value = value,
+			position = position
+		})
 	end
+
+	-- Removes each of the prefixes from text, and returns the modified text and the total number of removed characters
+	---@param text string
+	---@param prefixes table<string, true>
+	---@return string
+	---@return integer
+	local function trimPrefixes(text, prefixes)
+		for prefix in pairs(prefixes) do
+			local _, length = text:find(prefix)
+			if length then
+				text = text:sub(length + 1)
+				return text, length
+			end
+		end
+		return text, 0
+	end
+
+	---@param statGroupValues StatGroupValues
+	local function logStatGroups(statGroupValues)
+		if not DEBUG then return end
+		local outputText = {}
+		for _, statGroupValue in ipairs(statGroupValues) do
+			local statGroupText
+			if statGroupValue.statGroup then
+				local statText = {}
+				for _, stat in ipairs(statGroupValue.statGroup) do
+					table.insert(statText, tostring(stat))
+				end
+				statGroupText = table.concat(statText, ",")
+			else
+				statGroupText = tostring(statGroupValue.statGroup)
+			end
+			table.insert(outputText, statGroupText .. "=" .. tostring(statGroupValue.value))
+		end
+		if statGroupValues.ignoreSum then
+			table.insert(outputText, "ignoreSum=true")
+		end
+		local output = "    " .. table.concat(outputText, ", ")
+		log(output)
+	end
+
+	--- Given a line of text and its color from a tooltip, returns the stat values it represents,
+	--- grouped and ordered by the literal digits in the text that they belong to
+	---@param text string
+	---@param itemLink string
+	---@param color ColorMixin
+	---@return StatGroupValues
+	function StatLogic:GetStatGroupValues(text, itemLink, color)
+		---@type StatGroupValues
+		local statGroups = { ignoreSum = false }
+		local found = not text or text == ""
+		local length, offset = 0, 0
+
+		if not found then
+			-- Strip color codes
+			local count
+			text, count = text:gsub("|c%x%x%x%x%x%x%x%x", "")
+			offset = offset + count * 10
+			text = text:gsub("|r", "")
+		end
+		local rawText = text
+
+		-----------------------
+		-- Whole Text Lookup --
+		-----------------------
+		-- Strings without numbers; mainly used for enchants or easy exclusions
+		if not found then
+			-- Limit to one line
+			text = text:gsub("\n.*", "")
+			-- Strip leading "Equip: ", "Socket Bonus: ", trailing ".", and lowercase
+			text, length = trimPrefixes(text, addon.TrimmedPrefixes)
+			offset = offset + length
+			text = text:trim()
+			text = text:gsub("%.$", "")
+			text = text:utf8lower()
+
+			---@type WholeTextEntry
+			local statList = addon.WholeTextLookup[text]
+			if statList ~= nil then
+				found = true
+				if statList then
+					log(rawText, "Success", "WholeText")
+					for stat, value in pairs(statList) do
+						AddStat(statGroups, { stat }, value, itemLink, color)
+					end
+					logStatGroups(statGroups)
+				else
+					log(rawText, "Exclude", "WholeText")
+				end
+			end
+		end
+
+		-------------------------
+		-- Substitution Lookup --
+		-------------------------
+		if not found then
+			text, length = trimPrefixes(text, addon.IgnoreSum)
+			offset = offset + length
+			if length > 0 then
+				text = text:gsub(addon.OnUseCooldown, ""):trim():gsub("%.$", "")
+				statGroups.ignoreSum = true
+			else
+				text = text:gsub(addon.ReforgeSuffix, "")
+			end
+
+			-- Replace numbers with %s
+			local valuePositions = {}
+			local statText, count = text:gsub(numberPattern, function(match, position)
+				match = match:gsub(large_sep, ""):gsub(dec_sep, ".")
+				local value = tonumber(match)
+				if value then
+					valuePositions[#valuePositions + 1] = { value, position - 1 + offset }
+					return "%s"
+				end
+			end)
+			if count > 0 then
+				statText = statText:trim()
+				-- Lookup exact sanitized string in StatIDLookup
+				---@type SubstitutionEntry
+				local statList = addon.StatIDLookup[statText]
+				if statList then
+					found = true
+					log(rawText, "Success", "Substitution")
+					for i, valuePosition in ipairs(valuePositions) do
+						local statGroup = statList[i]
+						local value, position = unpack(valuePosition)
+						if statList.reduction then
+							value = value * -1
+						end
+						AddStat(statGroups, statGroup, value, itemLink, color, position)
+					end
+					if statList.ignoreSum then
+						statGroups.ignoreSum = true
+					end
+					logStatGroups(statGroups)
+				end
+			else
+				-- Contained no numbers, so we can exclude it
+				found = true
+				log(rawText, "Exclude", "Substitution")
+			end
+		end
+
+		-- Reduce noise while debugging missing patterns
+		if DEBUG then
+			-- Exclude strings by 3-5 character prefixes
+			if not found then
+				if addon.PrefixExclude[rawText:utf8sub(1, addon.PrefixExcludeLength)] or rawText:sub(1, 1) == '"' then
+					found = true
+					log(rawText, "Exclude", "Prefix")
+				end
+			end
+
+			-- Exclude lines that are not white, green, or "normal" (normal for Frozen Wrath etc.)
+			if not found then
+				local _, g, b = color:GetRGB()
+				if g < 0.8 or (b < 0.99 and b > 0.1) then
+					found = true
+					log(rawText, "Exclude", "Color")
+				end
+			end
+
+			-- Iterates a few obvious patterns, matching the whole string
+			if not found then
+				for pattern in pairs(addon.PreScanPatterns) do
+					if rawText:find(pattern) then
+						found = true
+						log(rawText, "Exclude", "PreScan")
+						break
+					end
+				end
+			end
+
+			-- If the string contains a number and was not excluded,
+			-- it might be a missing stat we want to add.
+			if not found then
+				log(rawText, "Fail", "Missed")
+			end
+		end
+
+		return statGroups
+	end
+end
+
+do
+	local statTable
 
 	-- Calculates the sum of all stats for a specified item.
 	---@param item? string itemLink of target item
@@ -1799,7 +2230,7 @@ do
 			if not statModContext then
 				statModContext = StatLogic:NewStatModContext()
 			end
-			statModContext.overrideStats["subclassID"] = itemSubclass
+			statModContext.overrideStats["weaponSubclass"] = itemSubclass
 			local statMods = addon.WeaponSubclassStats[itemSubclass]
 			if statMods then
 				for statMod in pairs(statMods) do
@@ -1808,7 +2239,7 @@ do
 				end
 			end
 			-- Unset afterwards to prevent interference with ValidateStatMod
-			statModContext.overrideStats["subclassID"] = nil
+			statModContext.overrideStats["weaponSubclass"] = nil
 		end
 
 		log(link)
@@ -1816,124 +2247,21 @@ do
 			for _, side in pairs(tip.sides) do
 				local fontString = side[i]
 				local text = fontString:GetText()
-				local found = not text or text == ""
-
-				if not found then
-					-- Strip color codes
-					text = text:gsub("|c%x%x%x%x%x%x%x%x", "")
-					text = text:gsub("|r", "")
-				end
-				local rawText = text
-
-				-----------------------
-				-- Whole Text Lookup --
-				-----------------------
-				-- Strings without numbers; mainly used for enchants or easy exclusions
-				if not found then
-					-- Limit to one line
-					text = text:gsub("\n.*", "")
-					-- Strip leading "Equip: ", "Socket Bonus: ", trailing ".", and lowercase
-					text = text:gsub(ITEM_SPELL_TRIGGER_ONEQUIP, "")
-					text = text:gsub(ITEM_SOCKET_BONUS:format(""), "")
-					text = text:trim()
-					text = text:gsub("%.$", "")
-					text = text:utf8lower()
-
-					currentColor = CreateColor(fontString:GetTextColor())
-
-					local idTable = addon.WholeTextLookup[text]
-					if idTable ~= nil then
-						found = true
-						if idTable then
-							log(rawText, "Success", "WholeText")
-							local currentStats = {}
-							for id, value in pairs(idTable) do
-								AddStat(id, value, currentStats)
+				local color = CreateColor(fontString:GetTextColor())
+				local statGroupValues = StatLogic:GetStatGroupValues(text, link, color)
+				if not statGroupValues.ignoreSum then
+					for _, statGroupValue in ipairs(statGroupValues) do
+						local statGroup = statGroupValue.statGroup
+						if type(statGroup) == "table" then
+							for _, stat in ipairs(statGroup) do
+								---@diagnostic disable-next-line: need-check-nil
+								statTable[stat] = statTable[stat] + statGroupValue.value
 							end
-							log(currentStats)
 						else
-							log(rawText, "Exclude", "WholeText")
+							-- statGroup is a single stat
+							---@diagnostic disable-next-line: need-check-nil
+							statTable[statGroup] = statTable[statGroup] + statGroupValue.value
 						end
-					end
-				end
-
-				-------------------------
-				-- Substitution Lookup --
-				-------------------------
-				if not found then
-					-- Replace numbers with %s
-					local values = {}
-					local statText, count = text:gsub(number_pattern, function(match)
-						match = match:gsub(large_sep, ""):gsub(dec_sep, ".")
-						local value = tonumber(match)
-						if value then
-							values[#values + 1] = value
-							return "%s"
-						end
-					end)
-					if count > 0 then
-						statText = statText:trim()
-						-- Lookup exact sanitized string in StatIDLookup
-						local stats = addon.StatIDLookup[statText]
-						if stats then
-							found = true
-							log(rawText, "Success", "Substitution")
-							local currentStats = {}
-							for j, value in ipairs(values) do
-								local idTable = stats[j]
-								if type(idTable) == "table" and #idTable > 0 then
-									for _, id in ipairs(idTable) do
-										if id then
-											AddStat(id, value, currentStats)
-										end
-									end
-								elseif idTable then
-									AddStat(idTable, value, currentStats)
-								end
-							end
-							log(currentStats)
-						end
-					else
-						-- Contained no numbers, so we can exclude it
-						found = true
-						log(rawText, "Exclude", "Substitution")
-					end
-				end
-
-				-- Reduce noise while debugging missing patterns
-				if DEBUG then
-					-- Exclude strings by 3-5 character prefixes
-					if not found then
-						if addon.PrefixExclude[rawText:utf8sub(1, addon.PrefixExcludeLength)] or rawText:sub(1, 1) == '"' then
-							found = true
-							log(rawText, "Exclude", "Prefix")
-						end
-					end
-
-					-- Exclude lines that are not white, green, or "normal" (normal for Frozen Wrath etc.)
-					if not found then
-						local _, g, b = currentColor:GetRGB()
-						if g < 0.8 or (b < 0.99 and b > 0.1) then
-							found = true
-							log(rawText, "Exclude", "Color")
-						end
-					end
-
-					-- Iterates a few obvious patterns, matching the whole string
-					if not found then
-						for pattern in pairs(addon.PreScanPatterns) do
-							if rawText:find(pattern) then
-								found = true
-								log(rawText, "Exclude", "PreScan")
-								break
-							end
-						end
-					end
-
-					-- If the string contains a number and was not excluded,
-					-- it might be a missing stat we want to add.
-					if not found then
-						log(rawText, "Fail", "Missed")
 					end
 				end
 			end
@@ -1957,15 +2285,19 @@ end
 ---@param item string
 ---@param value integer
 ---@param color ColorMixin
+---@param ignoreSum boolean?
 ---@return integer armor
 ---@return integer bonusArmor
-function StatLogic:GetArmorDistribution(item, value, color)
+function StatLogic:GetArmorDistribution(item, value, color, ignoreSum)
 	local name, _, itemQuality, itemLevel, _, _, _, _, itemEquipLoc, _, _, _, armorSubclass = C_Item.GetItemInfo(item)
 
 	local armor = value
 	local bonusArmor = 0
 
-	if name then
+	if ignoreSum then
+		armor = 0
+		bonusArmor = value
+	elseif name then
 		if addon.bonusArmorItemEquipLoc and addon.bonusArmorItemEquipLoc[itemEquipLoc] then
 			armor = 0
 			bonusArmor = value
@@ -1984,37 +2316,37 @@ function StatLogic:GetArmorDistribution(item, value, color)
 end
 
 local getSlotID = {
-	INVTYPE_AMMO           = 0,
-	INVTYPE_GUNPROJECTILE  = 0,
-	INVTYPE_BOWPROJECTILE  = 0,
-	INVTYPE_HEAD           = 1,
-	INVTYPE_NECK           = 2,
-	INVTYPE_SHOULDER       = 3,
-	INVTYPE_BODY           = 4,
-	INVTYPE_CHEST          = 5,
-	INVTYPE_ROBE           = 5,
-	INVTYPE_WAIST          = 6,
-	INVTYPE_LEGS           = 7,
-	INVTYPE_FEET           = 8,
-	INVTYPE_WRIST          = 9,
-	INVTYPE_HAND           = 10,
-	INVTYPE_FINGER         = {11,12},
-	INVTYPE_TRINKET        = {13,14},
-	INVTYPE_CLOAK          = 15,
-	INVTYPE_WEAPON         = {16,17},
-	INVTYPE_2HWEAPON       = 16+17,
-	INVTYPE_WEAPONMAINHAND = 16,
-	INVTYPE_WEAPONOFFHAND  = 17,
-	INVTYPE_SHIELD         = 17,
-	INVTYPE_HOLDABLE       = 17,
-	INVTYPE_RANGED         = 18,
-	INVTYPE_RANGEDRIGHT    = 18,
-	INVTYPE_RELIC          = 18,
-	INVTYPE_GUN            = 18,
-	INVTYPE_CROSSBOW       = 18,
-	INVTYPE_WAND           = 18,
-	INVTYPE_THROWN         = 18,
-	INVTYPE_TABARD         = 19,
+	INVTYPE_AMMO           = INVSLOT_AMMO,
+	INVTYPE_GUNPROJECTILE  = INVSLOT_AMMO,
+	INVTYPE_BOWPROJECTILE  = INVSLOT_AMMO,
+	INVTYPE_HEAD           = INVSLOT_HEAD,
+	INVTYPE_NECK           = INVSLOT_NECK,
+	INVTYPE_SHOULDER       = INVSLOT_SHOULDER,
+	INVTYPE_BODY           = INVSLOT_BODY,
+	INVTYPE_CHEST          = INVSLOT_CHEST,
+	INVTYPE_ROBE           = INVSLOT_CHEST,
+	INVTYPE_WAIST          = INVSLOT_WAIST,
+	INVTYPE_LEGS           = INVSLOT_LEGS,
+	INVTYPE_FEET           = INVSLOT_FEET,
+	INVTYPE_WRIST          = INVSLOT_WRIST,
+	INVTYPE_HAND           = INVSLOT_HAND,
+	INVTYPE_FINGER         = {INVSLOT_FINGER1, INVSLOT_FINGER2},
+	INVTYPE_TRINKET        = {INVSLOT_TRINKET1, INVSLOT_TRINKET2},
+	INVTYPE_CLOAK          = INVSLOT_BACK,
+	INVTYPE_WEAPON         = {INVSLOT_MAINHAND, INVSLOT_OFFHAND},
+	INVTYPE_2HWEAPON       = INVSLOT_MAINHAND + INVSLOT_OFFHAND,
+	INVTYPE_WEAPONMAINHAND = INVSLOT_MAINHAND,
+	INVTYPE_WEAPONOFFHAND  = INVSLOT_OFFHAND,
+	INVTYPE_SHIELD         = INVSLOT_OFFHAND,
+	INVTYPE_HOLDABLE       = INVSLOT_OFFHAND,
+	INVTYPE_RANGED         = addon.tocversion >= 50000 and INVSLOT_MAINHAND or INVSLOT_RANGED,
+	INVTYPE_RANGEDRIGHT    = addon.tocversion >= 50000 and INVSLOT_MAINHAND or INVSLOT_RANGED,
+	INVTYPE_RELIC          = INVSLOT_RANGED,
+	INVTYPE_GUN            = addon.tocversion >= 50000 and INVSLOT_MAINHAND or INVSLOT_RANGED,
+	INVTYPE_CROSSBOW       = addon.tocversion >= 50000 and INVSLOT_MAINHAND or INVSLOT_RANGED,
+	INVTYPE_WAND           = addon.tocversion >= 50000 and INVSLOT_MAINHAND or INVSLOT_RANGED,
+	INVTYPE_THROWN         = INVSLOT_RANGED,
+	INVTYPE_TABARD         = INVSLOT_TABARD,
 }
 
 local function HasTitansGrip()
@@ -2057,15 +2389,15 @@ function StatLogic:GetDiffID(item, ignoreEnchant, ignoreGems, ignoreExtraSockets
 
 	-- 1h weapon, check if player can dual wield, check for 2h equipped
 	if inventoryType == "INVTYPE_WEAPON" then
-		linkDiff1 = GetInventoryItemLink("player", 16) or "NOITEM"
+		linkDiff1 = GetInventoryItemLink("player", INVSLOT_MAINHAND) or "NOITEM"
 		-- If player can Dual Wield, calculate offhand difference
-		if IsUsableSpell(GetSpellInfo(674)) then		-- ["Dual Wield"]
+		if IsUsableSpell(GetSpellName(674)) then		-- ["Dual Wield"]
 			local _, _, _, _, _, _, _, _, eqItemType = C_Item.GetItemInfo(linkDiff1)
 			-- If 2h is equipped, copy diff1 to diff2
 			if eqItemType == "INVTYPE_2HWEAPON" and not HasTitansGrip() then
 				linkDiff2 = linkDiff1
 			else
-				linkDiff2 = GetInventoryItemLink("player", 17) or "NOITEM"
+				linkDiff2 = GetInventoryItemLink("player", INVSLOT_OFFHAND) or "NOITEM"
 			end
 		end
 	-- Ring or trinket
@@ -2075,15 +2407,15 @@ function StatLogic:GetDiffID(item, ignoreEnchant, ignoreGems, ignoreExtraSockets
 		linkDiff2 = GetInventoryItemLink("player", slotID[2]) or "NOITEM"
 	-- 2h weapon, so we calculate the difference with equipped main hand and off hand
 	elseif inventoryType == "INVTYPE_2HWEAPON" then
-		linkDiff1 = GetInventoryItemLink("player", 16) or "NOITEM"
-		linkDiff2= GetInventoryItemLink("player", 17) or "NOITEM"
+		linkDiff1 = GetInventoryItemLink("player", INVSLOT_MAINHAND) or "NOITEM"
+		linkDiff2= GetInventoryItemLink("player", INVSLOT_OFFHAND) or "NOITEM"
 	-- Off hand slot, check if we have 2h equipped
-	elseif slotID == 17 then
-		linkDiff1 = GetInventoryItemLink("player", 16) or "NOITEM"
+	elseif slotID == INVSLOT_OFFHAND then
+		linkDiff1 = GetInventoryItemLink("player", INVSLOT_MAINHAND) or "NOITEM"
 		-- If 2h is equipped
 		local _, _, _, _, _, _, _, _, eqItemType = C_Item.GetItemInfo(linkDiff1)
 		if eqItemType ~= "INVTYPE_2HWEAPON" then
-			linkDiff1 = GetInventoryItemLink("player", 17) or "NOITEM"
+			linkDiff1 = GetInventoryItemLink("player", INVSLOT_OFFHAND) or "NOITEM"
 		end
 	-- Single slot item
 	else
@@ -2225,19 +2557,33 @@ function StatLogic:GetDiff(item, diff1, diff2, ignoreEnchant, ignoreGems, ignore
 	return diff1, diff2
 end
 
--- Telemetry for agi/int conversions, will delete at the send of SoD.
-if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS" then
+function addon.conversionFallback(classTable, conversionFunc)
+	return setmetatable({}, { __index = function(_, level)
+		return classTable[level] or level == UnitLevel("player") and conversionFunc(StatLogic) or 0
+	end })
+end
+
+-- Telemetry for agi/int conversions. Only used for new game versions while data is missing.
+local regions = {
+	[1]  = true, -- NA
+	[72] = true, -- PTR
+	[90] = true, -- Beta
+}
+
+if regions[GetCurrentRegion()] and GetLocale() == "enUS" then
 	local commsVersion = 1
 	local prefix = addonName .. commsVersion
 	local codec = LibStub("LibDeflate"):CreateCodec("\000", "\255", "")
 
 	local function InitializeComms()
 		local target
-		if GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Horde" and tocversion >= 30000 then
+		if GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Horde" and addon.tocversion >= 50000 then
 			target = "Pinstripe"
-		elseif GetNormalizedRealmName() == "Whitemane" and UnitFactionGroup("player") == "Alliance" and tocversion >= 30000 then
-			target = "Astriea"
 		end
+
+		--[==[@debug@
+		target = UnitName("player")
+		--@end-debug@]==]
 
 		if target then
 			-- Hide system message spam if offline
@@ -2253,7 +2599,7 @@ if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS"
 			end)
 
 			local sending = false
-			local function cleanUp(delay)
+			local function cleanUp()
 				-- Wait to see if whispers failed to send
 				C_Timer.After(2, function()
 					if not failure then
@@ -2269,17 +2615,10 @@ if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS"
 			local function SendStoredData()
 				if failure or sending or UnitName("player") == target then return end
 				local data = RatingBuster.conversion_data.global
-				local send = false
-				for i = 0, 4 do
-					if data[i] then
-						send = true
-						break
-					end
-				end
-				if send then
+				if data and next(data) then
 					sending = true
 					local serialized = LibStub("LibSerialize"):Serialize(data)
-					local encoded = codec:Encode(serialized)
+					local encoded = codec and codec:Encode(serialized) or ""
 					LibStub("AceComm-3.0"):SendCommMessage(prefix, encoded, "WHISPER", target, "BULK", cleanUp, true)
 				end
 			end
@@ -2288,27 +2627,35 @@ if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS"
 			local store = CreateFrame("Frame")
 			store:RegisterEvent("PLAYER_LEVEL_UP")
 
+			local function storeConversionValues()
+				local level = UnitLevel("player")
+				local expansion = RatingBuster.conversion_data.global[LE_EXPANSION_LEVEL_CURRENT]
+				local rounding = 10 ^ 4
+				if addon.tocversion >= 40000 then
+					rounding = 10 ^ 8
+				end
+				if not rawget(addon.CritPerAgi[addon.class], level) and addon.CritPerAgi[addon.class] ~= addon.zero then
+					local critPerAgi = floor(StatLogic:GetCritPerAgi() * rounding + 0.5) / rounding
+					expansion.CritPerAgi[addon.class][level] = critPerAgi
+				end
+				if not rawget(addon.DodgePerAgi[addon.class], level) and addon.DodgePerAgi[addon.class] ~= addon.zero then
+					local dodgePerAgi = floor(StatLogic:GetDodgePerAgi() * rounding + 0.5) / rounding
+					expansion.DodgePerAgi[addon.class][level] = dodgePerAgi
+				end
+				if not rawget(addon.SpellCritPerInt[addon.class], level) and addon.SpellCritPerInt[addon.class] ~= addon.zero then
+					local spellCritPerInt = floor(StatLogic:GetSpellCritPerInt() * rounding + 0.5) / rounding
+					expansion.SpellCritPerInt[addon.class][level] = spellCritPerInt
+				end
+				if addon.tocversion >= 50000 and not rawget(addon.ParryPerStr[addon.class], level) and addon.ParryPerStr[addon.class] ~= addon.zero then
+					local parryPerStr = floor(StatLogic:GetParryPerStr() * rounding + 0.5) / rounding
+					expansion.ParryPerStr[addon.class][level] = parryPerStr
+				end
+				SendStoredData()
+			end
+
 			store:SetScript("OnEvent", function()
 				if StatLogic:TalentCacheExists() and RatingBuster.conversion_data then
-					local level = UnitLevel("player")
-					local expansion = RatingBuster.conversion_data.global[LE_EXPANSION_LEVEL_CURRENT]
-					local rounding = 10 ^ 4
-					if tocversion >= 40000 then
-						rounding = 10 ^ 8
-					end
-					if not rawget(addon.CritPerAgi[addon.class], level) and addon.CritPerAgi[addon.class] ~= addon.zero then
-						local critPerAgi = floor(StatLogic:GetCritPerAgi() * rounding + 0.5) / rounding
-						expansion.CritPerAgi[addon.class][level] = critPerAgi
-					end
-					if not rawget(addon.DodgePerAgi[addon.class], level) and addon.DodgePerAgi[addon.class] ~= addon.zero then
-						local dodgePerAgi = floor(StatLogic:GetDodgePerAgi() * rounding + 0.5) / rounding
-						expansion.DodgePerAgi[addon.class][level] = dodgePerAgi
-					end
-					if not rawget(addon.SpellCritPerInt[addon.class], level) and addon.SpellCritPerInt[addon.class] ~= addon.zero then
-						local spellCritPerInt = floor(StatLogic:GetSpellCritPerInt() * rounding + 0.5) / rounding
-						expansion.SpellCritPerInt[addon.class][level] = spellCritPerInt
-					end
-					SendStoredData()
+					C_Timer.After(2, storeConversionValues)
 				else
 					C_Timer.After(2, function()
 						store:GetScript("OnEvent")("PLAYER_LEVEL_UP")
@@ -2339,7 +2686,7 @@ if GetCurrentRegion() == 1 or GetCurrentRegion() == 72 and GetLocale() == "enUS"
 	--[==[@debug@
 	local receive = {}
 	function receive:OnCommReceived(_, message)
-		local decoded = codec:Decode(message)
+		local decoded = codec and codec:Decode(message)
 		if not decoded then return end
 		local success, data = LibStub("LibSerialize"):Deserialize(decoded)
 		if not success then return end

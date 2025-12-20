@@ -8,19 +8,23 @@ local internal = {
   lootThreshold = 10,
   isAnyItemLocked = false,
   isLooting = false,
+  lastNumLoot = nil,
+  lootFailure = false,
   isHidden = true,
   ElvUI = false,
   ShowElvUILootFrame = nop,
-  isClassicEra = LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_CLASSIC,
   isClassic = (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE),
+  isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC or WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC,
   audioChannel = "master",
-  Dragonflight = 9,
+  hasEditMode = LE_EXPANSION_LEVEL_CURRENT >= 9,
   slotsLooted = {},
   inventorySoundPlayed = false,
+  lootTicker = nil,
 };
 
-local LOOT_SLOT_ITEM = Enum.LootSlotType.Item
-local keyRing = Enum.BagIndex.Keyring
+local EnumLootSlotItem = Enum.LootSlotType.Item
+local EnumLootSlotTypeNone = Enum.LootSlotType.None
+local EnumBagIndexKeyring = Enum.BagIndex.Keyring
 
 ---@param itemLink ItemInfo
 ---@param itemQuantity number
@@ -30,7 +34,7 @@ function AutoLoot:ProcessLootItem(itemLink, itemQuantity)
   local itemFamily = C_Item.GetItemFamily(itemLink);
 
   if internal.isClassicEra and itemFamily == 256 then
-    local freeKeyringSlots = C_Container.GetContainerNumFreeSlots(keyRing)
+    local freeKeyringSlots = C_Container.GetContainerNumFreeSlots(EnumBagIndexKeyring)
     if freeKeyringSlots > 0 then
         return true;
     end
@@ -45,7 +49,7 @@ function AutoLoot:ProcessLootItem(itemLink, itemQuantity)
 
   for bagSlot = BACKPACK_CONTAINER, NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS do
     local freeSlots, bagFamily = C_Container.GetContainerNumFreeSlots(bagSlot);
-    -- unclear if isCraftingReagent is 100% Reagent bag fitable.
+    -- unclear if isCraftingReagent is 100% Reagent bag fitable, seems to be.
     if freeSlots > 0 then
       if bagSlot == 5 then
         if isCraftingReagent then
@@ -66,16 +70,22 @@ end
 ---@param slot number
 ---@return boolean success
 function AutoLoot:LootSlot(slot)
-  local itemLink = GetLootSlotLink(slot);
   local slotType = GetLootSlotType(slot);
+  if slotType == EnumLootSlotTypeNone then
+    return true
+  end
+
+  local itemLink = GetLootSlotLink(slot);
   local lootQuantity, _, lootQuality, lootLocked, isQuestItem = select(3, GetLootSlotInfo(slot));
   if lootLocked or (lootQuality and lootQuality >= internal.lootThreshold) then
     internal.isAnyItemLocked = true;
     return false;
-  elseif slotType ~= LOOT_SLOT_ITEM or (not internal.isClassic and isQuestItem) or self:ProcessLootItem(itemLink, lootQuantity) then
+  elseif slotType ~= EnumLootSlotItem or (not internal.isClassic and isQuestItem) or self:ProcessLootItem(itemLink, lootQuantity) then
     LootSlot(slot);
-    internal.slotsLooted[slot] = true;
     if internal.isClassic then
+      if internal.isClassicEra then
+        internal.slotsLooted[slot] = true;
+      end
       if Config.global.autoConfirm and not (GetNumGroupMembers() > 1) then
         ConfirmLootSlot(slot)
       end
@@ -86,40 +96,82 @@ function AutoLoot:LootSlot(slot)
   return false
 end
 
+function AutoLoot:SetLootThreshold()
+  if not internal.isClassic then return end
+
+  if C_PartyInfo and C_PartyInfo.GetLootMethod then
+    local lootMethod = C_PartyInfo.GetLootMethod();
+    internal.lootThreshold = (IsInGroup() and (lootMethod==Enum.LootMethod.Group or lootMethod==Enum.LootMethod.Needbeforegreed or lootMethod==Enum.LootMethod.Masterlooter)) and GetLootThreshold()--[[@as integer]] or 10;
+  else
+    local lootMethod = GetLootMethod();
+    internal.lootThreshold = (IsInGroup() and (lootMethod=="group" or lootMethod=="needbeforegreed" or lootMethod=="master")) and GetLootThreshold()--[[@as integer]] or 10;
+  end
+end
+
+function AutoLoot:CancelLootTicker()
+  if internal.lootTicker then
+      internal.lootTicker:Cancel()
+  end
+end
+
+---@param numItems number
+function AutoLoot:StartLooting(numItems)
+    self:CancelLootTicker()
+    local currentLootSlot = numItems
+
+    internal.lootTicker = C_Timer.NewTicker(0.033, function()
+        if currentLootSlot >= 1 then
+          local success = self:LootSlot(currentLootSlot)
+          if not success then
+            internal.lootFailure = true
+          end
+          currentLootSlot = currentLootSlot - 1
+        else
+          if internal.lootFailure then
+            self:ShowLootFrame();
+          end
+          -- not really nessecary as the iterations end here
+          self:CancelLootTicker()
+        end
+    end, numItems + 1)
+end
+
 ---@param autoLoot boolean
 function AutoLoot:OnLootReady(autoLoot)
-  if not internal.isLooting then
-    internal.isLooting = true;
-    self:ResetLootFrame();
-    local numItems = GetNumLootItems();
-    if numItems == 0 then
-      return;
-    end
+  internal.isLooting = true;
 
-    if IsFishingLoot() and not Config.global.fishingSoundDisabled then
-      PlaySound(SOUNDKIT.FISHING_REEL_IN, internal.audioChannel);
-    end
-
-    if autoLoot or (autoLoot == nil and GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE")) then
-      local lootMethod = GetLootMethod();
-      internal.lootThreshold = (internal.isClassic and IsInGroup() and (lootMethod=="group" or lootMethod=="needbeforegreed" or lootMethod=="master")) and GetLootThreshold() or 10;
-      for slot = numItems, 1, -1 do
-        numItems = self:LootSlot(slot) and numItems - 1 or numItems;
-      end
-
-      if numItems > 0 then
-        self:ShowLootFrame();
-      end
-    else
-      self:ShowLootFrame();
-    end
+  -- Spamy LOOT_READY autoLoot value can swap states if you spam click, but we already know the 'true' state from the first LOOT_READY event and that's what we really care about
+  if not internal.initialAutoLootState then
+    internal.initialAutoLootState = autoLoot or (not autoLoot and GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE"));
   end
+
+  local numItems = GetNumLootItems()
+  if numItems == 0 or internal.lastNumLoot == numItems then
+    return;
+  end
+
+  if IsFishingLoot() and not Config.global.fishingSoundDisabled then
+    PlaySound(SOUNDKIT.FISHING_REEL_IN, internal.audioChannel);
+  end
+
+  if internal.initialAutoLootState then
+    self:SetLootThreshold()
+    self:StartLooting(numItems)
+  else
+    self:ShowLootFrame();
+  end
+
+  internal.lastNumLoot = numItems;
 end
 
 ---@param slot number
 function AutoLoot:OnBindConfirm(slot)
   if LootSlotHasItem(slot) and internal.isLooting then
-    ConfirmLootSlot(slot);
+    if internal.isClassic then
+      if Config.global.autoConfirm and not (GetNumGroupMembers() > 1) then
+        ConfirmLootSlot(slot);
+      end
+    end
     if internal.isHidden then
       self:ShowLootFrame(true);
     end
@@ -149,13 +201,18 @@ function AutoLoot:OnLootClosed()
   internal.isHidden = true;
   internal.isAnyItemLocked = false;
   internal.inventorySoundPlayed = false;
-  if self.isClassic then
-    wipe(internal.slotsLooted);
-  end
+  internal.lastNumLoot = nil;
+  internal.initialAutoLootState = false;
+  internal.lootFailure = false;
+  self:CancelLootTicker()
   self:ResetLootFrame();
   -- Workaround for TSM Destroy issue
   if TSMDestroyBtn and TSMDestroyBtn:IsVisible() then
     C_Timer.NewTicker(0, function() SlashCmdList.TSM("destroy") end, 2);
+  end
+
+  if internal.isClassicEra then
+    wipe(internal.slotsLooted);
   end
 end
 
@@ -166,7 +223,7 @@ function AutoLoot:OnErrorMessage(gameErrorIndex, message)
     if internal.isLooting and internal.isHidden then
       self:ShowLootFrame(true);
     end
-    if message ~= ERR_LOOT_ROLL_PENDING then
+    if internal.isLooting and message ~= ERR_LOOT_ROLL_PENDING then
       self:PlayInventoryFullSound();
     end
   end
@@ -186,7 +243,7 @@ function AutoLoot:AnchorLootFrame()
     local x, y = GetCursorPosition();
     f:ClearAllPoints();
 
-    if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then
+    if internal.hasEditMode then
       x = x / (f:GetEffectiveScale()) - 30;
       y = math.max((y / f:GetEffectiveScale()) + 50, 350);
       f:SetPoint("TOPLEFT", nil, "BOTTOMLEFT", x, y);
@@ -198,7 +255,7 @@ function AutoLoot:AnchorLootFrame()
     end
     f:Raise();
   else
-    if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then
+    if internal.hasEditMode then
       local scale = f:GetScale();
       f:SetPoint(f.systemInfo.anchorInfo.point, f.systemInfo.anchorInfo.relativeTo, f.systemInfo.anchorInfo.relativePoint, f.systemInfo.anchorInfo.offsetX / scale, f.systemInfo.anchorInfo.offsetY / scale);
     else
@@ -251,12 +308,9 @@ function AutoLoot:OnAddonLoaded(name)
         internal.ElvUI = true;
         local elvOnLootOpened = ElvUI[1]:GetModule("Misc").LOOT_OPENED;
         ElvUI[1]:GetModule("Misc").LOOT_OPENED = nop;
-        internal.ShowElvUILootFrame = function(autoLoot)
-          elvOnLootOpened(autoLoot);
-        end
+        internal.ShowElvUILootFrame = elvOnLootOpened
       end
-
-      self:ResetLootFrame();
+      C_Timer.After(5, function() self:ResetLootFrame(); end)
     end)
   end
 end
@@ -286,7 +340,7 @@ function AutoLoot:OnInit()
   self:RegisterEvent("UI_ERROR_MESSAGE", self.OnErrorMessage);
 
   if not internal.ElvUI and LootFrame:IsEventRegistered("LOOT_OPENED") then
-    if LE_EXPANSION_LEVEL_CURRENT >= internal.Dragonflight then
+    if internal.hasEditMode then
       hooksecurefunc(LootFrame, "UpdateShownState", function(self)
         if self.isInEditMode then
           self:SetParent(UIParent)
@@ -326,9 +380,10 @@ function AutoLoot:AutoConfirmBop()
 end
 
 function AutoLoot:InitClassic()
-  self:RegisterEvent("LOOT_SLOT_CHANGED", self.OnSlotChanged);
   self:RegisterEvent("LOOT_BIND_CONFIRM", self.OnBindConfirm);
-
+  if internal.isClassicEra then
+    self:RegisterEvent("LOOT_SLOT_CHANGED", self.OnSlotChanged);
+  end
   self:AutoConfirmBop()
 end
 

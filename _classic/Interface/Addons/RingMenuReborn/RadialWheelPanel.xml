@@ -1,0 +1,70 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="RadialWheelSettingsPanel" hidden="true">
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString name="$parentHeader" inherits="GameFontNormalLarge" justifyH="LEFT" justifyV="TOP" text="RingMenu Reborn">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="16" y="-16"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentDescription" inherits="GameFontHighlightSmall" justifyH="LEFT" justifyV="TOP" nonspacewrap="true" text="Create and customize radial action wheels. Each wheel has its own keybinding and appearance settings.">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parentHeader" relativePoint="BOTTOMLEFT" y="-8"/>
+                        <Anchor point="RIGHT" x="-32"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame name="$parentSelector" inherits="UIDropDownMenuTemplate" enableMouse="true">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentDescription" relativePoint="BOTTOMLEFT" x="-15" y="-24"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <FontString inherits="GameFontNormal" text="Select Wheel">
+                            <Anchors>
+                                <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" x="16" y="3"/>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <Button name="$parentNewWheel" inherits="UIPanelButtonTemplate" text="+">
+                <Size x="15" y="17"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentSelector" relativePoint="RIGHT" x="-8" y="3"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>RadialWheelPanel_AddWheel()</OnClick>
+                </Scripts>
+            </Button>
+            <Button name="$parentDeleteWheel" inherits="UIPanelButtonTemplate" text="–">
+                <Size x="15" y="17"/>
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parentNewWheel" relativePoint="RIGHT" x="4"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>RadialWheelPanel_RemoveWheel()</OnClick>
+                </Scripts>
+            </Button>
+            <Frame name="$parentConfig" inherits="BackdropTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentSelector" relativePoint="BOTTOMLEFT" x="15" y="-2"/>
+                    <Anchor point="BOTTOMRIGHT" relativeTo="$parent" relativePoint="BOTTOMRIGHT" x="-15" y="15"/>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        self:SetBackdrop({
+                            bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+                            edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+                            tile = true, tileEdge = true, tileSize = 16, edgeSize = 16,
+                            insets = { left = 3, right = 3, top = 3, bottom = 3 },
+                        })
+                        self:SetBackdropColor(0, 0, 0, 0.5)
+                    </OnLoad>
+                </Scripts>
+            </Frame>
+        </Frames>
+    </Frame>
+</Ui>

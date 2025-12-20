@@ -26,8 +26,8 @@ local TT_ExtendedConfig;
 local TT_CacheForFrames;
 
 -- constants
-local TT_GTT_BARS_MARGIN_X = 7 + LibFroznFunctions.hasWoWFlavor.barMarginAdjustment;
-local TT_GTT_BARS_MARGIN_Y = 8 + LibFroznFunctions.hasWoWFlavor.barMarginAdjustment;
+local TT_GTT_BARS_MARGIN_X = 11 + LibFroznFunctions.hasWoWFlavor.barMarginAdjustment;
+local TT_GTT_BARS_MARGIN_Y = 11 + LibFroznFunctions.hasWoWFlavor.barMarginAdjustment;
 local TT_GTT_BARS_SPACING = 7;
 local TT_GTT_BARS_TEXT_OFFSET_X = 8;
 local TT_GTT_BARS_FADING_TIME = 0.5; -- fading time for bars in seconds
@@ -143,18 +143,17 @@ local function setExtraPaddingRightForMinimumWidth(self, TT_CacheForFrames, tip,
 	
 	for _, barsPool in pairs(self.barPools) do
 		for bar, _ in barsPool:EnumerateActive() do
-			if (bar:GetParent() == tip) then
-				local tipCenterWidth = tip.NineSlice.Center:GetWidth() - (currentDisplayParams.extraPaddingRightForMinimumWidth or 0);
+			if (bar:GetParent() == tip) and (bar:IsShown()) then
+				local newExtraPaddingRightForMinimumWidth = cfg.barTipMinimumWidth - bar:GetWidth() + (currentDisplayParams.extraPaddingRightForMinimumWidth or 0);
 				
-				if (tipCenterWidth < cfg.barTipMinimumWidth) then
-					local newExtraPaddingRightForMinimumWidth = cfg.barTipMinimumWidth - tipCenterWidth;
-					local tipEffectiveScale = tip:GetEffectiveScale();
-					
-					if (not currentDisplayParams.extraPaddingRightForMinimumWidth) or (math.abs((newExtraPaddingRightForMinimumWidth - currentDisplayParams.extraPaddingRightForMinimumWidth) * tipEffectiveScale) > 0.5) then
-						currentDisplayParams.extraPaddingRightForMinimumWidth = newExtraPaddingRightForMinimumWidth;
-					end
-				else
-					currentDisplayParams.extraPaddingRightForMinimumWidth = nil;
+				if (newExtraPaddingRightForMinimumWidth <= 0) then
+					newExtraPaddingRightForMinimumWidth = nil;
+				end
+				
+				local tipEffectiveScale = tip:GetEffectiveScale();
+				
+				if (not newExtraPaddingRightForMinimumWidth) or (not currentDisplayParams.extraPaddingRightForMinimumWidth) or (math.abs((newExtraPaddingRightForMinimumWidth - currentDisplayParams.extraPaddingRightForMinimumWidth) * tipEffectiveScale) > 0.5) then
+					currentDisplayParams.extraPaddingRightForMinimumWidth = newExtraPaddingRightForMinimumWidth;
 				end
 				
 				breakFor = true;
@@ -250,8 +249,8 @@ function ttBars:DisplayUnitTipsBar(barsPool, frameParams, tip, unitRecord, offse
 		-- initialize anchoring position and color
 		bar:ClearAllPoints();
 		
-		bar:SetPoint("BOTTOMLEFT", tip.NineSlice.Center, TT_ExtendedConfig.tipPaddingForGameTooltip.left + TT_GTT_BARS_MARGIN_X, TT_ExtendedConfig.tipPaddingForGameTooltip.bottom + offsetY);
-		bar:SetPoint("BOTTOMRIGHT", tip.NineSlice.Center, -TT_ExtendedConfig.tipPaddingForGameTooltip.right + -TT_GTT_BARS_MARGIN_X, TT_ExtendedConfig.tipPaddingForGameTooltip.bottom + offsetY);
+		bar:SetPoint("BOTTOMLEFT", tip, TT_ExtendedConfig.tipPaddingForGameTooltip.left + TT_GTT_BARS_MARGIN_X, TT_ExtendedConfig.tipPaddingForGameTooltip.bottom + offsetY);
+		bar:SetPoint("BOTTOMRIGHT", tip, -TT_ExtendedConfig.tipPaddingForGameTooltip.right + -TT_GTT_BARS_MARGIN_X, TT_ExtendedConfig.tipPaddingForGameTooltip.bottom + offsetY);
 		
 		newOffsetY = newOffsetY + cfg.barHeight + TT_GTT_BARS_SPACING;
 		

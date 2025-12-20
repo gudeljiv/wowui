@@ -1,4 +1,12 @@
 
+--[=[
+	callback format:
+	function(blizzardButton, clickType, param1, param2)
+	end
+
+	Use .MyObject to get the framework button object
+--]=]
+
 local detailsFramework = _G["DetailsFramework"]
 
 if (not detailsFramework or not DetailsFrameworkCanLoad) then
@@ -304,6 +312,15 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 		end
 	end
 
+	function ButtonMetaFunctions:SetParameters(param1, param2)
+		if (param1 ~= nil) then
+			rawset(self, "param1", param1)
+		end
+		if (param2 ~= nil) then
+			rawset(self, "param2", param2)
+		end
+	end
+
 	---set the text shown on the button
 	---@param text string
 	function ButtonMetaFunctions:SetText(text)
@@ -493,7 +510,6 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 	---enable the button making it clickable and not grayed out
 	---@return unknown
 	function ButtonMetaFunctions:Enable()
-
 		return self.button:Enable()
 	end
 
@@ -504,6 +520,15 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 			self.color_texture:SetVertexColor(0.14, 0.14, 0.14)
 		end
 		return self.button:Disable()
+	end
+
+	---@param enable boolean
+	function ButtonMetaFunctions:SetEnabled(enable)
+		if (enable) then
+			self:Enable()
+		else
+			self:Disable()
+		end
 	end
 
 	---simulate a click on the button
@@ -631,7 +656,7 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 
 		if (object.capsule_textalign) then
 			if (object.icon) then
-				object.icon:SetPoint("left", button, "left", 5 + (object.icon.leftpadding or 0), -1)
+				object.icon:SetPoint("left", button, "left", 5 + (object.icon.leftPadding or 0), -1)
 
 			elseif (object.capsule_textalign == "left") then
 				button.text:SetPoint("left", button, "left", 3, -1)
@@ -644,7 +669,7 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 			end
 		else
 			if (object.icon) then
-				object.icon:SetPoint("left", button, "left", 5 + (object.icon.leftpadding or 0), -1)
+				object.icon:SetPoint("left", button, "left", 5 + (object.icon.leftPadding or 0), -1)
 			else
 				button.text:SetPoint("center", button,"center", 1, -1)
 			end
@@ -692,7 +717,7 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 				if (object.is_mouse_over) then
 					button.texture:SetTexCoord(unpack(button.texture.coords.Highlight))
 				else
-					button.texture:SetTexCoord(unpack(coords.Normal))
+					--button.texture:SetTexCoord(unpack(coords.Normal))
 				end
 			else
 				if (object.is_mouse_over) then
@@ -705,7 +730,7 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 
 		if (object.capsule_textalign) then
 			if (object.icon) then
-				object.icon:SetPoint("left", button, "left", 4 + (object.icon.leftpadding or 0), 0)
+				object.icon:SetPoint("left", button, "left", 4 + (object.icon.leftPadding or 0), 0)
 
 			elseif (object.capsule_textalign == "left") then
 				button.text:SetPoint("left", button, "left", 2, 0)
@@ -718,7 +743,7 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 			end
 		else
 			if (object.icon) then
-				object.icon:SetPoint("left", button, "left", 4 + (object.icon.leftpadding or 0), 0)
+				object.icon:SetPoint("left", button, "left", 4 + (object.icon.leftPadding or 0), 0)
 			else
 				button.text:SetPoint("center", button,"center", 0, 0)
 			end
@@ -737,9 +762,9 @@ detailsFramework:Mixin(ButtonMetaFunctions, detailsFramework.ScriptHookMixin)
 
 		if ((x == button.x and y == button.y) or (button.mouse_down + 0.5 > GetTime() and button:IsMouseOver())) then
 			if (buttonType == "LeftButton") then
-				detailsFramework:CoreDispatch((button:GetName() or "Button") .. ":OnMouseUp()", object.func, button, buttonType, object.param1, object.param2)
+				xpcall(object.func, geterrorhandler(), button, buttonType, object.param1, object.param2)
 			else
-				detailsFramework:CoreDispatch((button:GetName() or "Button") .. ":OnMouseUp()", object.funcright, button, buttonType, object.param1, object.param2)
+				xpcall(object.funcright, geterrorhandler(), button, buttonType, object.param1, object.param2)
 			end
 		end
 	end
@@ -804,7 +829,7 @@ function ButtonMetaFunctions:SetTemplate(template)
 
 	if (template.icon) then
 		local iconInfo = template.icon
-		self:SetIcon(iconInfo.texture, iconInfo.width, iconInfo.height, iconInfo.layout, iconInfo.texcoord, iconInfo.color, iconInfo.textdistance, iconInfo.leftpadding)
+		self:SetIcon(iconInfo.texture, iconInfo.width, iconInfo.height, iconInfo.layout, iconInfo.texcoord, iconInfo.color, iconInfo.textdistance, iconInfo.leftPadding)
 	end
 
 	if (template.textsize) then
@@ -873,8 +898,13 @@ end
 		self:SetScript("OnEnable", onEnableFunc)
 	end
 
+	---@class df_blizzbutton : button
+	---@field text fontstring
+	---@field MyObject df_button
+
 	---@class df_button : button, df_scripthookmixin, df_widgets
-	---@field widget button
+	---@field widget df_blizzbutton
+	---@field button df_blizzbutton
 	---@field tooltip string
 	---@field shown boolean
 	---@field width number
@@ -895,6 +925,7 @@ end
 	---@field Exec fun(self: df_button) execute the button function for the left button
 	---@field Disable fun(self: df_button) disable the button
 	---@field Enable fun(self: df_button) enable the button
+	---@field SetEnabled fun(self: df_button, enable: boolean) enable or disable the button
 	---@field IsEnabled fun(self: df_button) : boolean returns true if the button is enabled
 	---@field SetIcon fun(self: df_button,texture: string|number, width: number|nil, height: number|nil, layout: string|nil, texcoord: table|nil, overlay: table|nil, textDistance: number|nil, leftPadding: number|nil, textHeight: number|nil, shortMethod: any|nil)
 	---@field GetIconTexture fun(self: df_button) : string returns the texture path of the button icon
@@ -904,6 +935,7 @@ end
 	---@field SetTextColor fun(self: df_button, color: any) set the button text color
 	---@field SetText fun(self: df_button, text: string) set the button text
 	---@field SetTextTruncated fun(self: df_button, text: string, maxWidth: number) set the button text and truncate it if it's too long
+	---@field SetParameters fun(self: df_button, param1: any, param2: any) set the parameters for the button callback function
 	---@field SetClickFunction fun(self: df_button, func: function, param1: any, param2: any, clickType: "left"|"right"|nil)
 	---@field SetIconFilterMode fun(self: df_button, filterMode: any) set the filter mode for the icon, execute after SetIcon()
 
@@ -984,10 +1016,38 @@ end
 		buttonObject.disabled_overlay = _G[name .. "_TextureDisabled"]
 
 		texture = texture or ""
-		buttonObject.button:SetNormalTexture(texture)
-		buttonObject.button:SetPushedTexture(texture)
-		buttonObject.button:SetDisabledTexture(texture)
-		buttonObject.button:SetHighlightTexture(texture, "ADD")
+		
+		--check for atlas
+		local bSetTexture = false
+		if (type(texture) == "string") then
+			local isAtlas = C_Texture.GetAtlasInfo(texture)
+			if (isAtlas) then
+				buttonObject.button:SetNormalTexture("")
+				buttonObject.button:GetNormalTexture():SetAtlas(texture)
+				buttonObject.button:SetPushedTexture("")
+				buttonObject.button:GetPushedTexture():SetAtlas(texture)
+				buttonObject.button:SetDisabledTexture("")
+				buttonObject.button:GetDisabledTexture():SetAtlas(texture)
+				buttonObject.button:SetHighlightTexture("")
+				buttonObject.button:GetHighlightTexture():SetAtlas(texture)
+				bSetTexture = true
+
+			elseif (detailsFramework:IsHtmlColor(texture)) then
+				local r, g, b, a = detailsFramework:ParseColors(texture)
+				self.icon:SetColorTexture(r, g, b, a)
+				bSetTexture = true
+
+			elseif (texture == "") then
+				bSetTexture = true -- setting textures with an empty string causes green rectangles
+			end
+		end
+
+		if (not bSetTexture) then
+			buttonObject.button:SetNormalTexture(texture)
+			buttonObject.button:SetPushedTexture(texture)
+			buttonObject.button:SetDisabledTexture(texture)
+			buttonObject.button:SetHighlightTexture(texture, "ADD")
+		end
 
 		local locTable = text
 		detailsFramework.Language.SetTextWithLocTableWithDefault(buttonObject.button.text, locTable, text)

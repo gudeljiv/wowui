@@ -1,6 +1,6 @@
 function Auctionator.Utilities.BasicDBKeyFromLink(itemLink)
   if itemLink ~= nil then
-    local _, _, itemString = string.find(itemLink, "^|c%x+|H(.+)|h%[.*%]")
+    local _, _, itemString = string.find(itemLink, "^|c%w+:?|H(.+)|h%[.*%]")
     if itemString == nil and string.find(itemLink, "^item") then
       itemString = itemLink
     end
@@ -30,7 +30,7 @@ function Auctionator.Utilities.DBKeyFromLink(itemLink, callback)
   end
 
   if IsGear(itemLink) then
-    if Auctionator.Constants.IsClassic then
+    if Auctionator.Constants.IsLegacyAH then
       local suffix = tonumber((itemLink:match("item:.-:.-:.-:.-:.-:.-:(.-):")))
       local suffixStringID = Auctionator.Utilities.SuffixIDToSuffixStringID[suffix]
       local suffixString = Auctionator.Utilities.SuffixStringIDTOSuffixString[suffixStringID]

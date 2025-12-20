@@ -7,6 +7,24 @@ local NWB = addon.a;
 --A list of layered realms, split up between classic era and TBC.
 function NWB:setRealmData()
 	if (NWB.expansionNum > 1) then
+		if (NWB.expansionNum > 4) then
+			NWB.megaServers = {
+				--US MoP mega server linked realms.
+				["Pagle"] = true,
+				["Nazgrim"] = true,
+				["Galakras"] = true,
+				["Ra-den"] = true,
+				["Lei Shen"] = true,
+				["Immerseus"] = true,
+				--EU MoP mega server linked realms.
+				["Mirage Raceway"] = true,
+				["Shek'zeer"] = true,
+				["Garalon"] = true,
+				["Norushen"] = true,
+				["Hoptallus"] = true,
+			};
+		end
+	
 		NWB.usRealms = {
 			--OCE.
 			["Arugal"] = true,

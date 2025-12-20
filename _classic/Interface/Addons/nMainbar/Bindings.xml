@@ -1,8 +1,8 @@
 <Bindings>
-    <Binding name="NBAGS_TOGGLE" header="NBAGS" category="nMainbar">
+    <!-- <Binding name="NBAGS_TOGGLE" header="NBAGS" category="nMainbar">
         ToggleBags()
-    </Binding>
-	<Binding name="EXTRABARBUTTON1" header="EXTRABAR" category="ADDONS" />
+    </Binding> -->
+	<!-- <Binding name="EXTRABARBUTTON1" header="EXTRABAR" category="ADDONS" />
 	<Binding name="EXTRABARBUTTON2" category="ADDONS" />
 	<Binding name="EXTRABARBUTTON3" category="ADDONS" />
 	<Binding name="EXTRABARBUTTON4" category="ADDONS" />
@@ -13,5 +13,5 @@
 	<Binding name="EXTRABARBUTTON9" category="ADDONS" />
 	<Binding name="EXTRABARBUTTON10" category="ADDONS" />
 	<Binding name="EXTRABARBUTTON11" category="ADDONS" />
-	<Binding name="EXTRABARBUTTON12" category="ADDONS" />
+	<Binding name="EXTRABARBUTTON12" category="ADDONS" /> -->
 </Bindings>

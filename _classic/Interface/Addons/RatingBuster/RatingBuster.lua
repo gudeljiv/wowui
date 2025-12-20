@@ -2,7 +2,6 @@ local addonName, addon = ...
 
 --[[
 Name: RatingBuster
-Revision: $Revision: 78903 $
 Author: Whitetooth, raethkcj
 Description: Converts combat ratings in tooltips into normal percentages.
 ]]
@@ -22,21 +21,20 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.18.5"
+RatingBuster.version = "2.0.7"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
 --@end-debug@]==]
 local addonNameWithVersion = ("%s %s"):format(addonName, RatingBuster.version)
-RatingBuster.date = ("$Date: 2008-07-22 15:35:19 +0800 (星期二, 22 七月 2008) $"):gsub("^.-(%d%d%d%d%-%d%d%-%d%d).-$", "%1")
 
 -----------
 -- Cache --
 -----------
 local cache = setmetatable({}, {
-	__index = function(t, profileSpec)
-		t[profileSpec] = setmetatable({}, { __mode = "kv" })
-		return t[profileSpec]
+	__index = function(t, k)
+		t[k] = setmetatable({}, { __mode = "kv" })
+		return t[k]
 	end,
 })
 
@@ -54,13 +52,14 @@ local ipairs = ipairs
 local type = type
 local select = select
 local tinsert = tinsert
-local tremove = tremove
 local tsort = table.sort
-local unpack = unpack
-local tonumber = tonumber
 
 local GetParryChance = GetParryChance
 local GetBlockChance = GetBlockChance
+
+local GetActiveTalentGroup = GetActiveTalentGroup or C_SpecializationInfo.GetActiveSpecGroup
+local GetSpecialization = GetSpecialization or C_SpecializationInfo.GetSpecialization
+local GetSpecializationInfo = GetSpecializationInfo or C_SpecializationInfo.GetSpecializationInfo
 
 ---------------------------
 -- Slash Command Options --
@@ -91,20 +90,11 @@ end
 
 local function setGem(info, value)
 	if value == "" then
-		db.profile[info[#info]].itemID = nil
-		db.profile[info[#info]].gemID = nil
-		db.profile[info[#info]].gemName = nil
-		db.profile[info[#info]].gemLink = nil
+		wipe(db.profile[info[#info]])
 		return
 	end
 	local gemID, gemText = StatLogic:GetGemID(value)
 	if gemID and gemText then
-		local name, link = C_Item.GetItemInfo(value)
-		local itemID = link:match("item:(%d+)")
-		db.profile[info[#info]].itemID = itemID
-		db.profile[info[#info]].gemID = gemID
-		db.profile[info[#info]].gemName = name
-		db.profile[info[#info]].gemLink = link
 		-- Trim spaces
 		gemText = gemText:trim()
 		-- Strip color codes
@@ -114,7 +104,15 @@ local function setGem(info, value)
 		if gemText:sub(1, 10):find("|c%x%x%x%x%x%x%x%x") then
 			gemText = gemText:sub(11)
 		end
-		db.profile[info[#info]].gemText = gemText
+		local name, link = C_Item.GetItemInfo(value)
+		local itemID = link:match("item:(%d+)")
+		db.profile[info[#info]] = {
+			gemText = gemText,
+			itemID = itemID,
+			gemID = gemID,
+			gemName = name,
+			gemLink = link,
+		}
 		RatingBuster:ClearCache()
 		local socket = "EMPTY_SOCKET_" .. info[#info]:sub(7):upper()
 		if not debugstack():find("AceConsole") then
@@ -198,28 +196,6 @@ local options = {
 					order = 1,
 					width = "full",
 				},
-				ratingPhysical = {
-					type = 'toggle',
-					name = L["Show Physical Hit/Haste"],
-					desc = L["Show Physical Hit/Haste from Hit/Haste Rating"],
-					order = 2,
-					width = "full",
-					hidden = function()
-						local genericHit = StatLogic.GenericStatMap[StatLogic.Stats.HitRating]
-						return (not genericHit)
-					end
-				},
-				ratingSpell = {
-					type = 'toggle',
-					name = L["Show Spell Hit/Haste"],
-					desc = L["Show Spell Hit/Haste from Hit/Haste Rating"],
-					order = 3,
-					width = "full",
-					hidden = function()
-						local genericHit = StatLogic.GenericStatMap[StatLogic.Stats.HitRating]
-						return (not genericHit) or (not tContains(genericHit, StatLogic.Stats.SpellHitRating))
-					end
-				},
 				enableAvoidanceDiminishingReturns = {
 					type = 'toggle',
 					name = L["Enable Avoidance Diminishing Returns"],
@@ -298,36 +274,29 @@ local options = {
 					args = {},
 					hidden = true,
 				},
-				spell_crit = {
+				hit = {
 					type = 'group',
-					name = L[StatLogic.Stats.SpellCrit],
-					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.SpellCrit]),
+					name = L[StatLogic.Stats.HitRating],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.HitRating]),
+					width = "full",
+					order = 8,
+					args = {},
+					hidden = true,
+				},
+				crit = {
+					type = 'group',
+					name = L[StatLogic.Stats.CritRating],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.CritRating]),
 					width = "full",
 					order = 9,
 					args = {},
 					hidden = true,
 				},
-				health = {
+				haste = {
 					type = 'group',
-					name = L[StatLogic.Stats.Health],
-					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.Health]),
+					name = L[StatLogic.Stats.HasteRating],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.HasteRating]),
 					width = "full",
-					order = 9,
-					args = {},
-					hidden = true,
-				},
-				ap = {
-					type = 'group',
-					name = L[StatLogic.Stats.AttackPower],
-					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.AttackPower]),
-					order = 10,
-					args = {},
-					hidden = true,
-				},
-				spell_dmg = {
-					type = 'group',
-					name = L[StatLogic.Stats.SpellDamage],
-					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.SpellDamage]),
 					order = 10,
 					args = {},
 					hidden = true,
@@ -340,11 +309,37 @@ local options = {
 					args = {},
 					hidden = true,
 				},
+				health = {
+					type = 'group',
+					name = L[StatLogic.Stats.Health],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.Health]),
+					width = "full",
+					order = 12,
+					args = {},
+					hidden = true,
+				},
+				mana_regen = {
+					type = 'group',
+					name = L[StatLogic.Stats.ManaRegen],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.ManaRegen]),
+					width = "full",
+					order = 13,
+					args = {},
+					hidden = true,
+				},
+				ap = {
+					type = 'group',
+					name = L[StatLogic.Stats.AttackPower],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.AttackPower]),
+					order = 14,
+					args = {},
+					hidden = true,
+				},
 				weaponskill = {
 					type = 'group',
 					name = L[StatLogic.Stats.WeaponSkill],
 					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.WeaponSkill]),
-					order = 12,
+					order = 15,
 					hidden = true,
 					--[[
 					hidden = function()
@@ -364,31 +359,64 @@ local options = {
 					type = 'group',
 					name = L[StatLogic.Stats.ExpertiseRating],
 					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.ExpertiseRating]),
-					order = 13,
+					order = 16,
 					hidden = true,
 					args = {},
 				},
-				defense = {
+				spell_power = {
 					type = 'group',
-					name = L[StatLogic.Stats.Defense],
-					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.Defense]),
-					order = 14,
-					hidden = true,
+					name = L[StatLogic.Stats.SpellPower],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.SpellPower]),
+					order = 17,
 					args = {},
+					hidden = true,
+				},
+				spell_dmg = {
+					type = 'group',
+					name = L[StatLogic.Stats.SpellDamage],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.SpellDamage]),
+					order = 18,
+					args = {},
+					hidden = true,
+				},
+				spell_crit = {
+					type = 'group',
+					name = L[StatLogic.Stats.SpellCrit],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.SpellCrit]),
+					width = "full",
+					order = 19,
+					args = {},
+					hidden = true,
 				},
 				armor = {
 					type = 'group',
 					name = L[StatLogic.Stats.Armor],
 					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.Armor]),
-					order = 15,
+					order = 20,
 					args = {},
 					hidden = true,
+				},
+				defense = {
+					type = 'group',
+					name = L[StatLogic.Stats.Defense],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.Defense]),
+					order = 21,
+					hidden = true,
+					args = {},
 				},
 				resilience = {
 					type = 'group',
 					name = L[StatLogic.Stats.ResilienceRating],
 					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.ResilienceRating]),
-					order = 16,
+					order = 22,
+					args = {},
+					hidden = true,
+				},
+				pvp_power = {
+					type = 'group',
+					name = L[StatLogic.Stats.PvpPowerRating],
+					desc = L["Changes the display of %s"]:format(L[StatLogic.Stats.PvpPowerRating]),
+					order = 23,
 					args = {},
 					hidden = true,
 				},
@@ -587,17 +615,29 @@ local options = {
 							desc = L["Mana <- Mana, Intellect"],
 							order = 2,
 						},
-						sumMP5 = {
+						sumManaRegen = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.ManaRegen]),
 							desc = L["Mana Regen <- Mana Regen, Spirit"],
 							order = 3,
 						},
-						sumMP5NC = {
+						sumManaRegenNotCasting = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.ManaRegenNotCasting]),
 							desc = L["Mana Regen while not casting <- Spirit"],
 							order = 4,
+							hidden = function()
+								return StatLogic:GetStatMod("ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN") == 0
+							end,
+						},
+						sumManaRegenOutOfCombat = {
+							type = 'toggle',
+							name = L["Sum %s"]:format(L[StatLogic.Stats.ManaRegenOutOfCombat]),
+							desc = L["Mana Regen while not casting <- Spirit"],
+							order = 4,
+							hidden = function()
+								return StatLogic:GetStatMod("ADD_MANA_REGEN_OUT_OF_COMBAT_MOD_NORMAL_MANA_REGEN") == 0
+							end,
 						},
 						sumHP5 = {
 							type = 'toggle',
@@ -838,6 +878,11 @@ local options = {
 					name = L["Stat - Spell"],
 					desc = L["Choose spell damage and healing stats for summary"],
 					args = {
+						sumSpellPower = {
+							type = 'toggle',
+							name = L["Sum %s"]:format(L[StatLogic.Stats.SpellPower]),
+							desc = L[StatLogic.Stats.SpellPower],
+						},
 						sumSpellDmg = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.SpellDamage]),
@@ -1023,33 +1068,44 @@ local options = {
 						},
 						sumResilience = {
 							type = 'toggle',
-							name = L["Sum %s"]:format(L[StatLogic.Stats.ResilienceRating]),
+							name = L["Sum %s"]:format(L[StatLogic.Stats.Resilience]),
 							order = 14,
+							hidden = function()
+								return addon.tocversion < 20000
+							end,
+						},
+						sumPvpPower = {
+							type = 'toggle',
+							name = L["Sum %s"]:format(L[StatLogic.Stats.PvpPower]),
+							order = 15,
+							hidden = function()
+								return addon.tocversion < 50000
+							end,
 						},
 						sumArcaneResist = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.ArcaneResistance]),
-							order = 15,
+							order = 16,
 						},
 						sumFireResist = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.FireResistance]),
-							order = 16,
+							order = 17,
 						},
 						sumNatureResist = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.NatureResistance]),
-							order = 17,
+							order = 18,
 						},
 						sumFrostResist = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.FrostResistance]),
-							order = 18,
+							order = 19,
 						},
 						sumShadowResist = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.ShadowResistance]),
-							order = 19,
+							order = 20,
 						},
 					},
 				},
@@ -1116,13 +1172,17 @@ local options = {
 			order = 5,
 			get = function(info)
 				local db = RatingBuster.db:GetNamespace("AlwaysBuffed")
-				return db.profile[info[#info]]
+				if db then
+					return db.profile[info[#info]]
+				end
 			end,
 			set = function(info, v)
 				local db = RatingBuster.db:GetNamespace("AlwaysBuffed")
-				db.profile[info[#info]] = v
-				RatingBuster:ClearCache()
-				StatLogic:InvalidateEvent("UNIT_AURA", "player")
+				if db then
+					db.profile[info[#info]] = v
+					RatingBuster:ClearCache()
+					StatLogic:InvalidateEvent("UNIT_AURA", "player")
+				end
 			end,
 			args = {
 				description = {
@@ -1195,37 +1255,33 @@ local defaults = {
 		wpnBreakDown = false,
 		showStats = true,
 		sumAvoidWithBlock = false,
-		--[[
-		Str -> AP, Block
-		Agi -> Crit, Dodge, AP, RAP, Armor
-		Sta -> Health
-		Int -> Mana, SpellCrit, MP5NC
-		Spi -> MP5NC, HP5
-		--]]
+
 		-- Base stat conversions
-		showAPFromStr = false,
 		showBlockValueFromStr = false,
 
-		showCritFromAgi = true,
-		showDodgeFromAgi = true,
-		showAPFromAgi = false,
 		showRAPFromAgi = false,
 		showArmorFromAgi = false,
 
 		showHealthFromSta = false,
 
 		showManaFromInt = false,
+		showManaRegenNotCastingFromManaRegen = false,
+		showManaRegenOutOfCombatFromManaRegen = false,
 		showSpellCritFromInt = true,
-		showMP5NCFromInt = false,
 
-		showMP5NCFromSpi = false,
-		showHP5NCFromSpi = false,
+		showModifiedRangedAttackPower = false,
 
 		showHP5NCFromHealth = false,
 
+		showMeleeHitFromHitRating = false,
+		showMeleeCritFromCritRating = false,
+		showMeleeHasteFromHasteRating = false,
+		showSpellHitFromHitRating = false,
+		showSpellCritFromCritRating = false,
+		showSpellHasteFromHasteRating = false,
+
 		showDefenseFromDefenseRating = false,
-		showDodgeReductionFromExpertise = false,
-		showParryReductionFromExpertise = false,
+		showExpertiseFromExpertiseRating = false,
 		showCritAvoidanceFromResilience = false,
 		showCritDamageReductionFromResilience = false,
 		showPvpDamageReductionFromResilience = false,
@@ -1236,8 +1292,9 @@ local defaults = {
 		-- Basic
 		sumHP = true,
 		sumMP = true,
-		sumMP5 = true,
-		sumMP5NC = false,
+		sumManaRegen = true,
+		sumManaRegenNotCasting = false,
+		sumManaRegenOutOfCombat = false,
 		sumHP5 = false,
 		sumHP5OC = false,
 		sumStr = false,
@@ -1280,20 +1337,20 @@ local defaults = {
 		sumHolyDmg = false,
 		sumHealing = false,
 		sumSpellHit = false,
-		sumSpellHitRating = false, -- new
+		sumSpellHitRating = false,
 		sumSpellCrit = false,
-		sumSpellCritRating = false, -- new
-		sumSpellHaste = false, -- new
-		sumSpellHasteRating = false, -- new
-		sumPenetration = false, -- new
+		sumSpellCritRating = false,
+		sumSpellHaste = false,
+		sumSpellHasteRating = false,
+		sumPenetration = false,
 		-- Tank
 		sumArmor = false,
 		sumDodge = false,
-		sumDodgeRating = false, -- new
+		sumDodgeRating = false,
 		sumParry = false,
-		sumParryRating = false, -- new
+		sumParryRating = false,
 		sumBlock = false,
-		sumBlockRating = false, -- new
+		sumBlockRating = false,
 		sumBlockValue = false,
 		sumHitAvoid = false,
 		sumCritAvoid = false,
@@ -1302,7 +1359,8 @@ local defaults = {
 		sumNatureResist = false,
 		sumFireResist = false,
 		sumShadowResist = false,
-		sumResilience = true, -- new
+		sumResilience = true,
+		sumPvpPower = true,
 		sumDefense = false,
 		sumAvoidance = false,
 		sumMasteryEffect = true,
@@ -1341,15 +1399,18 @@ if class == "DEATHKNIGHT" then
 	defaults.profile.sumAvoidance = true
 	defaults.profile.sumArmor = true
 	defaults.profile.sumMP = false
-	defaults.profile.sumMP5 = false
+	defaults.profile.sumManaRegen = false
 	defaults.profile.sumAP = true
 	defaults.profile.sumHit = true
 	defaults.profile.sumCrit = true
 	defaults.profile.sumHaste = true
 	defaults.profile.sumExpertise = true
 	defaults.profile.showSpellCritFromInt = false
-	defaults.profile.ratingPhysical = true
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
 	defaults.profile.sumArmorPenetration = true
+	defaults.profile.showSpellHitFromExpertise = false
 elseif class == "DRUID" then
 	defaults.profile.sumAP = true
 	defaults.profile.sumHit = true
@@ -1358,13 +1419,23 @@ elseif class == "DRUID" then
 	defaults.profile.sumExpertise = true
 	defaults.profile.sumAvoidance = true
 	defaults.profile.sumArmor = true
-	defaults.profile.sumSpellDmg = true
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
-	defaults.profile.sumHealing = true
-	defaults.profile.ratingPhysical = true
-	defaults.profile.ratingSpell = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumSpellDmg = true
+		defaults.profile.sumHealing = true
+	end
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
 	defaults.profile.sumArmorPenetration = true
 elseif class == "HUNTER" then
 	defaults.profile.sumWeaponAverageDamage = true
@@ -1373,18 +1444,62 @@ elseif class == "HUNTER" then
 	defaults.profile.sumRangedHit = true
 	defaults.profile.sumRangedCrit = true
 	defaults.profile.sumRangedHaste = true
+	defaults.profile.showModifiedRangedAttackPower = true
 	defaults.profile.showDodgeFromAgi = false
+	defaults.profile.showAPFromAgi = false
+	defaults.profile.showRAPFromAgi = true
 	defaults.profile.showSpellCritFromInt = false
-	defaults.profile.ratingPhysical = true
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
 	defaults.profile.sumArmorPenetration = true
+	defaults.profile.showSpellHitFromExpertise = false
+	defaults.profile.showParryReductionFromExpertise = false
 elseif class == "MAGE" then
-	defaults.profile.sumSpellDmg = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumSpellDmg = true
+		defaults.profile.sumHealing = true
+	end
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
 	defaults.profile.showCritFromAgi = false
 	defaults.profile.showDodgeFromAgi = false
-	defaults.profile.ratingSpell = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
+	defaults.profile.showDodgeReductionFromExpertise = false
+	defaults.profile.showParryReductionFromExpertise = false
+	defaults.profile.showAPFromStr = false
+elseif class == "MONK" then
+	defaults.profile.sumAP = true
+	defaults.profile.sumHit = true
+	defaults.profile.sumCrit = true
+	defaults.profile.sumHaste = true
+	defaults.profile.sumExpertise = true
+	defaults.profile.sumAvoidance = true
+	defaults.profile.sumArmor = true
+	defaults.profile.sumSpellHit = true
+	defaults.profile.sumSpellCrit = true
+	defaults.profile.sumSpellHaste = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumSpellDmg = true
+		defaults.profile.sumHealing = true
+	end
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
 elseif class == "PALADIN" then
 	defaults.profile.sumWeaponAverageDamage = true
 	defaults.profile.sumWeaponSkill = true
@@ -1394,35 +1509,59 @@ elseif class == "PALADIN" then
 	defaults.profile.sumCrit = true
 	defaults.profile.sumHaste = true
 	defaults.profile.sumExpertise = true
-	defaults.profile.sumHolyDmg = true
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
-	defaults.profile.sumHealing = true
-	defaults.profile.ratingPhysical = true
-	defaults.profile.ratingSpell = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumHolyDmg = true
+		defaults.profile.sumHealing = true
+	end
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
 elseif class == "PRIEST" then
-	defaults.profile.sumSpellDmg = true
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
-	defaults.profile.sumHealing = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumShadowDmg = true
+		defaults.profile.sumHealing = true
+	end
 	defaults.profile.showCritFromAgi = false
 	defaults.profile.showDodgeFromAgi = false
-	defaults.profile.ratingSpell = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
+	defaults.profile.showDodgeReductionFromExpertise = false
+	defaults.profile.showParryReductionFromExpertise = false
+	defaults.profile.showAPFromStr = false
 elseif class == "ROGUE" then
 	defaults.profile.sumWeaponAverageDamage = true
 	defaults.profile.sumWeaponSkill = true
 	defaults.profile.sumMP = false
-	defaults.profile.sumMP5 = false
+	defaults.profile.sumManaRegen = false
 	defaults.profile.sumAP = true
 	defaults.profile.sumHit = true
 	defaults.profile.sumCrit = true
 	defaults.profile.sumHaste = true
 	defaults.profile.sumExpertise = true
 	defaults.profile.showSpellCritFromInt = false
-	defaults.profile.ratingPhysical = true
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
 	defaults.profile.sumArmorPenetration = true
+	defaults.profile.showSpellHitFromExpertise = false
 elseif class == "SHAMAN" then
 	defaults.profile.sumWeaponAverageDamage = true
 	defaults.profile.sumWeaponSkill = true
@@ -1430,37 +1569,86 @@ elseif class == "SHAMAN" then
 	defaults.profile.sumCrit = true
 	defaults.profile.sumHaste = true
 	defaults.profile.sumExpertise = true
-	defaults.profile.sumSpellDmg = true
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
-	defaults.profile.sumHealing = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumSpellDmg = true
+		defaults.profile.sumHealing = true
+	end
 	defaults.profile.showDodgeFromAgi = false
-	defaults.profile.ratingPhysical = true
-	defaults.profile.ratingSpell = true
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
 elseif class == "WARLOCK" then
-	defaults.profile.sumSpellDmg = true
+	if addon.tocversion >= 30000 then
+		defaults.profile.sumSpellPower = true
+		defaults.profile.showSpellDmgFromSpellPower = false
+		defaults.profile.showHealingFromSpellPower = false
+	else
+		defaults.profile.sumSpellDmg = true
+		defaults.profile.sumHealing = true
+	end
 	defaults.profile.sumSpellHit = true
 	defaults.profile.sumSpellCrit = true
 	defaults.profile.sumSpellHaste = true
 	defaults.profile.showCritFromAgi = false
 	defaults.profile.showDodgeFromAgi = false
-	defaults.profile.ratingSpell = true
+	defaults.profile.showSpellHitFromHitRating = true
+	defaults.profile.showSpellCritFromCritRating = true
+	defaults.profile.showSpellHasteFromHasteRating = true
+	defaults.profile.showDodgeReductionFromExpertise = false
+	defaults.profile.showParryReductionFromExpertise = false
+	defaults.profile.showAPFromStr = false
 elseif class == "WARRIOR" then
 	defaults.profile.sumWeaponAverageDamage = true
 	defaults.profile.sumWeaponSkill = true
 	defaults.profile.sumAvoidance = true
 	defaults.profile.sumArmor = true
 	defaults.profile.sumMP = false
-	defaults.profile.sumMP5 = false
+	defaults.profile.sumManaRegen = false
 	defaults.profile.sumAP = true
 	defaults.profile.sumHit = true
 	defaults.profile.sumCrit = true
 	defaults.profile.sumHaste = true
 	defaults.profile.sumExpertise = true
 	defaults.profile.showSpellCritFromInt = false
-	defaults.profile.ratingPhysical = true
+	defaults.profile.showMeleeHitFromHitRating = true
+	defaults.profile.showMeleeCritFromCritRating = true
+	defaults.profile.showMeleeHasteFromHasteRating = true
 	defaults.profile.sumArmorPenetration = true
+	defaults.profile.showSpellHitFromExpertise = false
+end
+
+do
+	local migrationOptions = {
+		sumMP5   = { "sumManaRegen" },
+		sumMP5NC = { "sumManaRegenNotCasting", "sumManaRegenOutOfCombat" },
+		showMP5FromInt = { "showManaRegenFromInt", "showManaRegenFromManaRegen" },
+		showMP5FromSpi = { "showManaRegenFromSpi", "showManaRegenFromManaRegen" },
+		showMP5NCFromInt = { "showManaRegenNotCastingFromManaRegen", "showManaRegenOutOfCombatFromManaRegen" },
+		showMP5NCFromSpi = { "showManaRegenNotCastingFromManaRegen", "showManaRegenOutOfCombatFromManaRegen" },
+		ratingPhysical = { "showMeleeHitFromHitRating", "showMeleeCritFromCritRating", "showMeleeHasteFromHasteRating" },
+		ratingSpell = { "showSpellHitFromHitRating", "showSpellCritFromCritRating", "showSpellHasteFromHasteRating" },
+	}
+
+	function addon.MigrateOptions(db)
+		for old, newOptions in pairs(migrationOptions) do
+			if db.profile[old] ~= nil then
+				for _, new in ipairs(newOptions) do
+					db.profile[new] = db.profile[old]
+				end
+				db.profile[old] = nil
+			end
+		end
+	end
 end
 
 -- Generate options from expansion-specific StatModTables in StatLogic
@@ -1468,8 +1656,6 @@ do
 	-- Backwards compatibility
 	local statToOptionKey = setmetatable({
 		["AP"] = "AP",
-		["MANA_REG"] = "MP5",
-		["NORMAL_MANA_REG"] = "MP5NC",
 		["HEALTH_REG"] = "HP5",
 		["NORMAL_HEALTH_REG"] = "HP5NC",
 		["RANGED_AP"] = "RAP",
@@ -1489,15 +1675,18 @@ do
 
 	-- Backwards compatibility
 	local statStringToStat = setmetatable({
+		["AGI"] = StatLogic.Stats.Agility,
 		["AP"] = StatLogic.Stats.AttackPower,
-		["RANGED_AP"] = StatLogic.Stats.RangedAttackPower,
-		["MANA_REG"] = StatLogic.Stats.ManaRegen,
-		["NORMAL_MANA_REG"] = StatLogic.Stats.ManaRegenNotCasting,
-		["HEALTH_REG"] = StatLogic.Stats.HealthRegen,
-		["NORMAL_HEALTH_REG"] = StatLogic.Stats.HealthRegenOutOfCombat,
-		["SPELL_DMG"] = StatLogic.Stats.SpellDamage,
 		["HEALING"] = StatLogic.Stats.HealingPower,
+		["HEALTH_REG"] = StatLogic.Stats.HealthRegen,
+		["INT"] = StatLogic.Stats.Intellect,
+		["NORMAL_HEALTH_REG"] = StatLogic.Stats.HealthRegenOutOfCombat,
 		["PVP_DAMAGE_REDUCTION"] = StatLogic.Stats.PvPDamageReduction,
+		["RANGED_AP"] = StatLogic.Stats.RangedAttackPower,
+		["SPELL_DMG"] = StatLogic.Stats.SpellDamage,
+		["SPI"] = StatLogic.Stats.Spirit,
+		["STA"] = StatLogic.Stats.Stamina,
+		["STR"] = StatLogic.Stats.Strength,
 	},
 	{
 		__index = function(_, stat)
@@ -1512,9 +1701,21 @@ do
 		end
 	})
 
+	local statModSources = {}
+
+	---@param add string?
+	---@param mod string
+	---@param sources { [string]: true }
 	local addStatModOption = function(add, mod, sources)
 		-- Override groups that are hidden by default
-		local groupID, rating = tostring(mod):lower():gsub("_rating$", "")
+		local groupID, rating = mod:lower():gsub("_rating$", "")
+		if mod == "RANGED_AP" then
+			groupID = "ap"
+		end
+		if mod == "MASTERY_EFFECT" then
+			groupID = "mastery"
+		end
+
 		local group = options.args.stat.args[groupID]
 		if not group then return end
 		group.hidden = false
@@ -1525,8 +1726,16 @@ do
 			group.desc = L["Changes the display of %s"]:format(L[mod_stat])
 		end
 
-		-- ADD_HEALING_MOD_INT -> showHealingFromInt
-		local key = "show" .. statToOptionKey[add] .. "From" .. statToOptionKey[mod]
+		local key, name
+		if add then
+			-- ADD_HEALING_MOD_INT -> showHealingFromInt
+			key = "show" .. statToOptionKey[add] .. "From" .. statToOptionKey[mod]
+			name = L["Show %s"]:format(L[statStringToStat[add]])
+		else
+			key = "showModified" .. tostring(statStringToStat[mod])
+			name = L["Show Modified %s"]:format(L[statStringToStat[mod]])
+		end
+
 		if defaults.profile[key] == nil then
 			defaults.profile[key] = true
 		end
@@ -1536,20 +1745,35 @@ do
 			option = {
 				type = "toggle",
 				width = "full",
-				order = rating == 1 and 1 or nil,
+				-- Prioritize direct results of rating conversion,
+				-- as well as "modified" options
+				order = (rating == 1 or not add) and 1 or nil,
 			}
-		else
-			sources = option.desc .. ", " .. sources
 		end
 
-		option.name = L["Show %s"]:format(L[statStringToStat[add]])
-		option.desc = sources
+		option.name = name
+
+		if next(sources) then
+			-- First, add to a set to ensure uniqueness among multiple statModTypes
+			for source in pairs(sources) do
+				statModSources[mod] = statModSources[mod] or {}
+				statModSources[mod][add or mod] = statModSources[mod][add or mod] or {}
+				statModSources[mod][add or mod][source] = true
+			end
+
+			-- Second, convert to an array just so we can use table.concat
+			local sources_array = {}
+			for source in pairs(statModSources[mod][add or mod]) do
+				table.insert(sources_array, source)
+			end
+			option.desc = table.concat(sources_array, "\n")
+		end
 
 		group.args[key] = option
 	end
 
 	local season = C_Seasons and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()
-	local showRunes =  season and (season ~= Enum.SeasonID.NoSeason and season ~= Enum.SeasonID.Hardcore)
+	local showRunes = season and season == Enum.SeasonID.SeasonOfDiscovery
 
 	local function GenerateStatModOptions()
 		local statModContext = StatLogic:NewStatModContext()
@@ -1558,64 +1782,72 @@ do
 				local add = StatLogic.StatModInfo[statMod].add
 				local mod = StatLogic.StatModInfo[statMod].mod
 
-				if add and mod then
-					local sources = ""
-					local firstSource = true
-					local show = false
+				if mod then
+					local sources = {}
+					local showMod = false
 					for _, case in ipairs(cases) do
+						local showCase = false
 						if not case.rune or showRunes then
-							show = true
+							showMod = true
+							showCase = true
 						end
-						if not firstSource then
-							sources = sources .. ", "
+						if showCase then
+							local name, icon
+							local sourceSpell = case.aura or case.glyph or case.known or case.spellid
+							if sourceSpell then
+								local sourceSpellInfo = C_Spell.GetSpellInfo(sourceSpell)
+								if sourceSpellInfo then
+									name = sourceSpellInfo.name
+									icon = sourceSpellInfo.iconID
+								end
+							elseif case.tab then
+								name, icon = StatLogic:GetOrderedTalentInfo(case.tab, case.num)
+							elseif case.set then
+								name = C_Item.GetItemSetInfo(case.set)
+								icon = [[Interface/PaperDollInfoFrame/UI-EquipmentManager-Toggle]]
+							elseif case.enchant then
+								name = StatLogic:GetEnchantText(case.enchant)
+								-- Currently, all enchant statMods are Death Knight Runeforges
+								icon = [[Interface/ICONS/Spell_DeathKnight_FrozenRuneWeapon]]
+							end
+							if name and icon then
+								local source = "|T"..icon..":20|t"..name
+								sources[source] = true
+							end
 						end
-						local source = ""
-						if case.aura then
-							source = GetSpellInfo(case.aura) or source
-						elseif case.tab then
-							source = StatLogic:GetOrderedTalentInfo(case.tab, case.num)
-						elseif case.glyph then
-							source = GetSpellInfo(case.glyph) or source
-						elseif case.known then
-							source = GetSpellInfo(case.known) or source
-						elseif case.spellid then
-							source = GetSpellInfo(case.spellid) or source
-						end
-						sources = sources .. source
-						firstSource = false
 					end
 
-					if show then
-						-- Molten Armor and Forceful Deflection give rating,
-						-- but we show it to the user as the converted stat
-						add = add:gsub("_RATING", "")
+					if showMod then
+						if add then
+							-- Molten Armor and Forceful Deflection give rating,
+							-- but we show it to the user as the converted stat
+							add = add:gsub("_RATING", "")
 
-						-- We want to show the user Armor, regardless of where it comes from
-						if add == "BONUS_ARMOR" then
-							add = StatLogic.Stats.Armor
-						end
-
-						if mod == "NORMAL_MANA_REG" then
-							mod = "SPI"
-							if statModContext("ADD_NORMAL_MANA_REG_MOD_INT") > 0 then
-								-- "Normal mana regen" is added from both int and spirit
-								addStatModOption(add, "INT", sources)
+							-- We want to show the user Armor, regardless of where it comes from
+							if add == "BONUS_ARMOR" then
+								add = "ARMOR"
 							end
-						elseif mod == "NORMAL_HEALTH_REG" then
-							if statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") > 0 then
-								-- Vanilla through Wrath
-								mod = "SPI"
-							elseif statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") > 0 then
-								-- Cata onwards
-								mod = "HEALTH"
-							end
-						elseif mod == "MANA" then
-							mod = "INT"
-						end
 
-						-- Demonic Knowledge technically scales with pet stats,
-						-- but we compute the scaling from player's stats
-						mod = mod:gsub("^PET_", "")
+							if add == "GENERIC_MANA_REGEN" or add == "NORMAL_MANA_REGEN" then
+								add = "MANA_REGEN"
+							elseif mod == "GENERIC_MANA_REGEN" or mod == "NORMAL_MANA_REGEN" then
+								mod = "MANA_REGEN"
+							elseif mod == "NORMAL_HEALTH_REG" then
+								if statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") > 0 then
+									-- Vanilla through Wrath
+									mod = "SPI"
+								elseif statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") > 0 then
+									-- Cata onwards
+									mod = "HEALTH"
+								end
+							elseif mod == "MANA" then
+								mod = "INT"
+							end
+
+							-- Demonic Knowledge technically scales with pet stats,
+							-- but we compute the scaling from player's stats
+							mod = mod:gsub("^PET_", "")
+						end
 
 						addStatModOption(add, mod, sources)
 					end
@@ -1630,8 +1862,9 @@ do
 				if not StatLogic.StatModIgnoresAlwaysBuffed[modName] then
 					for _, mod in ipairs(mods) do
 						if mod.aura and (not mod.rune or showRunes) then
-							local name, _, icon = GetSpellInfo(mod.aura)
-							if name then
+							local spellInfo = C_Spell.GetSpellInfo(mod.aura)
+							if spellInfo then
+								local name, icon = spellInfo.name, spellInfo.iconID
 								local option = {
 									type = 'toggle',
 									name = "|T"..icon..":25:25:-2:0|t"..name,
@@ -1642,12 +1875,14 @@ do
 								-- If it's a spell the player knows, use the highest rank for the description
 								local spellId = mod.spellid or mod.known or mod.aura
 								if IsPlayerSpell(spellId) then
-									spellId = select(7,GetSpellInfo(name)) or spellId
+									spellId = C_Spell.GetSpellIDForSpellIdentifier(name) or spellId
 								end
 								local spell = Spell:CreateFromSpellID(spellId)
-								spell:ContinueOnSpellLoad(function()
-									option.desc = spell:GetSpellDescription()
-								end)
+								if not spell:IsSpellEmpty() then
+									spell:ContinueOnSpellLoad(function()
+										option.desc = spell:GetSpellDescription()
+									end)
+								end
 							end
 						end
 					end
@@ -1679,32 +1914,6 @@ do
 		end
 		f:UnregisterEvent("SPELLS_CHANGED")
 	end)
-end
-
------------
--- Tools --
------------
--- copyTable
-local function copyTable(to, from)
-	if to then
-		for k in pairs(to) do
-			to[k] = nil
-		end
-		setmetatable(to, nil)
-	else
-		to = {}
-	end
-	for k,v in pairs(from) do
-		if type(k) == "table" then
-			k = copyTable({}, k)
-		end
-		if type(v) == "table" then
-			v = copyTable({}, v)
-		end
-		to[k] = v
-	end
-	setmetatable(to, getmetatable(from))
-	return to
 end
 
 local function AddProfileSwapOptions(profileOptions, db)
@@ -1803,10 +2012,16 @@ function RatingBuster:InitializeDatabase()
 		if ReforgingFrame then
 			ReforgingFrame_Update(ReforgingFrame)
 		end
+		addon.MigrateOptions(db)
 	end)
-	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileCopied", "ClearCache")
+	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileCopied", function()
+		RatingBuster:ClearCache()
+		addon.MigrateOptions(db)
+	end)
 	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileReset", "ClearCache")
 	db = RatingBuster.db
+
+	addon.MigrateOptions(db)
 
 	options.args.profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(RatingBuster.db)
 	options.args.profiles.order = 5
@@ -1826,6 +2041,7 @@ function RatingBuster:InitializeDatabase()
 		}
 	})
 	StatLogic:SetupAuraInfo(always_buffed)
+
 	local conversion_data = RatingBuster.db:RegisterNamespace("ConversionData", {
 		global = {
 			[LE_EXPANSION_LEVEL_CURRENT] = {
@@ -1868,10 +2084,10 @@ function RatingBuster:OnDisable()
 end
 
 do
-	local spec = GetActiveTalentGroup()
+	local specGroup = GetActiveTalentGroup()
 
-	function RatingBuster:GetDisplayedSpec()
-		return spec
+	function RatingBuster:GetDisplayedSpecGroup()
+		return specGroup
 	end
 
 	local f = CreateFrame("Button", addonName .. "ProfileSwap")
@@ -1879,10 +2095,10 @@ do
 	f:SetScript("OnClick", function()
 		if db.IsDualSpecEnabled and db:IsDualSpecEnabled() then
 			-- Toggle between 1 and 2
-			spec = 3 - spec
-			db:SetProfile(db:GetDualSpecProfile(spec))
+			specGroup = 3 - specGroup
+			db:SetProfile(db:GetDualSpecProfile(specGroup))
 		else
-			spec = GetActiveTalentGroup()
+			specGroup = GetActiveTalentGroup()
 			local currentProfile = db:GetCurrentProfile()
 			if currentProfile ~= db.char.primaryProfile then
 				db:SetProfile(db.char.primaryProfile or currentProfile)
@@ -1915,7 +2131,7 @@ do
 		if event == "PLAYER_REGEN_DISABLED" then
 			ClearOverrideBindings(self)
 		elseif event == "ACTIVE_TALENT_GROUP_CHANGED" then
-			spec = ...
+			specGroup = ...
 		end
 	end)
 end
@@ -1935,24 +2151,13 @@ function RatingBuster:UNIT_AURA(units)
 	end
 end
 
---------------------------
--- Process Tooltip Core --
---------------------------
---[[
-"+15 Agility"
--> "+15 Agility (+0.46% Crit)"
-"+15 Crit Rating"
--> "+15 Crit Rating (+1.20%)"
-"Equip: Increases your hit rating by 10."
--> "Equip: Increases your hit rating by 10 (+1.20%)."
---]]
 -- Empty Sockets
 local EmptySocketLookup = {
-	[EMPTY_SOCKET_RED] = "sumGemRed", -- EMPTY_SOCKET_RED = "Red Socket";
-	[EMPTY_SOCKET_YELLOW] = "sumGemYellow", -- EMPTY_SOCKET_YELLOW = "Yellow Socket";
-	[EMPTY_SOCKET_BLUE] = "sumGemBlue", -- EMPTY_SOCKET_BLUE = "Blue Socket";
-	[EMPTY_SOCKET_META] = "sumGemMeta", -- EMPTY_SOCKET_META = "Meta Socket";
-	[EMPTY_SOCKET_PRISMATIC] = "sumGemPrismatic", -- EMPTY_SOCKET_PRISMATIC = "Prismatic Socket";
+	[EMPTY_SOCKET_RED] = "sumGemRed",
+	[EMPTY_SOCKET_YELLOW] = "sumGemYellow",
+	[EMPTY_SOCKET_BLUE] = "sumGemBlue",
+	[EMPTY_SOCKET_META] = "sumGemMeta",
+	[EMPTY_SOCKET_PRISMATIC] = "sumGemPrismatic",
 }
 
 -- Avoidance Diminishing Returns
@@ -1961,14 +2166,15 @@ local summaryFunc = {}
 local equippedSum = setmetatable({}, {
 	__index = function() return 0 end
 })
-local equippedDodge, equippedParry, equippedMissed
-local processedDodge, processedParry, processedMissed, processedResilience
+local equippedBlock, equippedDodge, equippedParry, equippedMiss, equippedResilience
+local processedBlock, processedDodge, processedParry, processedMiss, processedResilience
 
 local scanningTooltipOwners = {
 	["WorldFrame"] = true,
 	["UIParent"] = true,
 }
 
+---@param tooltip ClassicGameTooltip
 function RatingBuster.ProcessTooltip(tooltip)
 	-- Do nothing if the tooltip is being used as a hidden scanning tooltip
 	if tooltip:GetAnchorType() == "ANCHOR_NONE" and (not tooltip:GetOwner() or scanningTooltipOwners[tooltip:GetOwner():GetName()]) then
@@ -1983,12 +2189,13 @@ function RatingBuster.ProcessTooltip(tooltip)
 
 	RatingBuster:EnableKeybindings(tooltip)
 
-	local itemMinLevel = select(5, C_Item.GetItemInfo(link))
+	local itemMinLevel, _, _, _, _, _, _, itemClass = select(5, C_Item.GetItemInfo(link))
 
 	local statModContext = StatLogic:NewStatModContext({
 		profile = db:GetCurrentProfile(),
-		spec = RatingBuster:GetDisplayedSpec(),
-		level = math.max(itemMinLevel, playerLevel)
+		specGroup = RatingBuster:GetDisplayedSpecGroup(),
+		level = math.max(itemMinLevel, playerLevel),
+		itemClass = itemClass,
 	})
 
 	---------------------
@@ -2004,20 +2211,26 @@ function RatingBuster.ProcessTooltip(tooltip)
 		StatLogic:GetSum(difflink1, equippedSum, statModContext)
 		equippedSum[StatLogic.Stats.Strength] = equippedSum[StatLogic.Stats.Strength] * statModContext("MOD_STR")
 		equippedSum[StatLogic.Stats.Agility] = equippedSum[StatLogic.Stats.Agility] * statModContext("MOD_AGI")
+		equippedBlock = summaryFunc[StatLogic.Stats.BlockChanceBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
 		equippedDodge = summaryFunc[StatLogic.Stats.DodgeBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
 		equippedParry = summaryFunc[StatLogic.Stats.ParryBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
-		equippedMissed = summaryFunc[StatLogic.Stats.MissBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
-		processedDodge = equippedDodge
-		processedParry = equippedParry
-		processedMissed = equippedMissed
-		processedResilience = equippedSum[StatLogic.Stats.ResilienceRating] * -1
+		equippedMiss = summaryFunc[StatLogic.Stats.MissBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
+		equippedResilience = summaryFunc[StatLogic.Stats.ResilienceBeforeDR](equippedSum, statModContext, "sum", difflink1) * -1
+		processedBlock = GetBlockChance() > 0 and equippedBlock or 0
+		processedDodge = GetDodgeChance() > 0 and equippedDodge or 0
+		processedParry = GetParryChance() > 0 and equippedParry or 0
+		processedMiss = equippedMiss
+		processedResilience = equippedResilience
 	else
+		equippedBlock = 0
 		equippedDodge = 0
 		equippedParry = 0
-		equippedMissed = 0
+		equippedMiss = 0
+		equippedResilience = 0
+		processedBlock = 0
 		processedDodge = 0
 		processedParry = 0
-		processedMissed = 0
+		processedMiss = 0
 		processedResilience = 0
 	end
 	-- Loop through tooltip lines starting at line 2
@@ -2053,613 +2266,825 @@ function RatingBuster.ProcessTooltip(tooltip)
 	tooltip:Show()
 end
 
+---@param text string
+---@param stat Stat
+---@param startPosition integer
+---@param endPosition integer
+---@return integer
+local function getBreakdownPosition(text, stat, startPosition, endPosition)
+	local patterns = L["statPatterns"][stat]
+	if patterns then
+		local lowerText = text:utf8lower()
+		for _, pattern in ipairs(patterns) do
+			local _, newPosition = lowerText:find(pattern, startPosition)
+			if newPosition and newPosition <= endPosition then
+				return newPosition
+			end
+		end
+	end
+
+	local numberSuffix = L["numberSuffix"]
+	if numberSuffix ~= "" then
+		local _, newPosition = text:find(numberSuffix, startPosition)
+		if newPosition and newPosition <= endPosition then
+			return newPosition
+		end
+	end
+
+	return startPosition
+end
+
+---@param text string
+---@param link string
+---@param color ColorMixin
+---@param statModContext StatModContext
+---@return string
 function RatingBuster:ProcessLine(text, link, color, statModContext)
-	-- Get data from cache if available
-	local profileSpec = statModContext.profile .. statModContext.spec
-	local cacheID = text .. statModContext.level
-	local cacheText = cache[profileSpec][cacheID]
+	local cacheKey = statModContext:CacheKey()
+	local cacheID = text
+	local cacheText = cache[cacheKey][cacheID]
 	if cacheText then
-		if cacheText ~= text then
-			return cacheText
-		end
-	elseif EmptySocketLookup[text] and db.profile[EmptySocketLookup[text]].gemText then -- Replace empty sockets with gem text
+		return cacheText
+	elseif EmptySocketLookup[text] then
 		local gemText = db.profile[EmptySocketLookup[text]].gemText
-		text = RatingBuster:ProcessLine(gemText, link, color, statModContext)
-		cache[profileSpec][cacheID] = text
-		return text
-	elseif text:find("%d") then -- do nothing if we don't find a number
-		-- Temporarily replace exclusions
-		local exclusions = false
-		for exclusion, replacement in pairs(L["exclusions"]) do
-			local count
-			text, count = text:gsub(exclusion, replacement)
-			if count > 0 then
-				exclusions = true
-			end
+		if gemText then
+			text = RatingBuster:ProcessLine(gemText, link, color, statModContext)
 		end
-		-- Initial pattern check, do nothing if not found
-		-- Check for separators and bulid separatorTable
-		local separatorTable = {}
-		for _, sep in ipairs(L["separators"]) do
-			if text:find(sep) then
-				tinsert(separatorTable, sep)
-			end
-		end
-		-- RecursivelySplitLine
-		text = RatingBuster:RecursivelySplitLine(text, separatorTable, link, color, statModContext)
-		-- Revert exclusions
-		if exclusions then
-			for exclusion, replacement in pairs(L["exclusions"]) do
-				text = text:gsub(replacement, exclusion)
-			end
-		end
-		cache[profileSpec][cacheID] = text
-		-- SetText
-		return text
 	else
-		cache[profileSpec][cacheID] = text
-		return text
-	end
-end
+		local addedCharacters = 0
+		local statGroupValues = StatLogic:GetStatGroupValues(text, link, color)
+		for i, statGroupValue in ipairs(statGroupValues) do
+			local statGroup = statGroupValue.statGroup
+			if statGroup then
+				local breakdownStats = StatLogic.StatTable.new()
+				local position = statGroupValue.position
+				local isBaseStat = true
+				if position then
+					position = position + addedCharacters
+				else
+					-- WholeTextLookup
+					position = #text
+					isBaseStat = false
+				end
+				local nextStatGroupValue = statGroupValues[i + 1]
+				local nextPosition = nextStatGroupValue and nextStatGroupValue.position or #text
+				for _, stat in ipairs(statGroup) do
+					RatingBuster:ProcessStat(stat, statGroupValue.value, breakdownStats, link, color, statModContext, false, isBaseStat, false)
+					position = getBreakdownPosition(text, stat, position, nextPosition)
+				end
 
----------------------------------------------------------------------------------
--- Recursive algorithm that divides a string into pieces using the separators in separatorTable,
--- processes them separately, then joins them back together
----------------------------------------------------------------------------------
--- text = "+24 Agility/+4 Stamina and +4 Spell Crit/+5 Spirit"
--- separatorTable = {"/", " and ", ","}
--- RatingBuster:RecursivelySplitLine("+24 Agility/+4 Stamina, +4 Dodge and +4 Spell Crit/+5 Spirit", {"/", " and ", ",", "%. ", " for ", "&"})
--- RatingBuster:RecursivelySplitLine("+6法術傷害及5耐力", {"/", "和", ",", "。", " 持續 ", "&", "及",})
-function RatingBuster:RecursivelySplitLine(text, separatorTable, link, color, statModContext)
-	if type(separatorTable) == "table" and table.maxn(separatorTable) > 0 then
-		local sep = tremove(separatorTable, 1)
-		text = text:gsub(sep, "@")
-		text = strsplittable("@", text)
-		local processedText = {}
-		local tempTable = {}
-		for _, t in ipairs(text) do
-			copyTable(tempTable, separatorTable)
-			tinsert(processedText, self:RecursivelySplitLine(t, tempTable, link, color, statModContext))
-		end
-		-- Remove frontier patterns, as they get printed oddly in the repl of a gsub
-		sep = sep:gsub("%%f%[.-%]", "")
-		-- Join text
-		return (table.concat(processedText, "@"):gsub("@", sep))
-	else
-		return self:ProcessText(text, link, color, statModContext)
-	end
-end
-
-local escaped_large_number_sep = LARGE_NUMBER_SEPERATOR:gsub("[-.]", "%%%1")
-
-function RatingBuster:ProcessText(text, link, color, statModContext)
-	-- Convert text to lower so we don't have to worry about same ratings with different cases
-	local lowerText = text:lower()
-	-- Check if text has a matching pattern
-	for _, numPattern in ipairs(L["numberPatterns"]) do
-		-- Capture the stat value
-		local _, insertionPoint, value = lowerText:find(numPattern)
-		if value then
-			-- Capture the stat name
-			for _, statPattern in ipairs(L["statList"]) do
-				local pattern, stat = unpack(statPattern)
-				if lowerText:find(pattern) then
-					value = value:gsub(escaped_large_number_sep, "")
-					value = tonumber(value)
-					if not value then return text end
-					local infoTable = StatLogic.StatTable.new()
-					RatingBuster:ProcessStat(stat, value, infoTable, link, color, statModContext)
-					local effects = {}
-					-- Group effects with identical values
-					for statID, effect in pairs(infoTable) do
-						if  type(statID) == "table" and statID.isPercent or statID == "Spell" then
-							effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
-							effects[effect] = effects[effect] or {}
-							tinsert(effects[effect], S[statID])
-						elseif statID == "Percent" then
-							effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
-							effects[effect] = effects[effect] or {}
-						else
-							if floor(abs(effect) * 10 + 0.5) > 0 then
-								effect = ("%+.1f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".")
-							elseif floor(abs(effect) + 0.5) > 0 then
-								effect = ("%+.0f"):format(effect)
-							else
-								-- Effect is too small to show
-								effect = false
-							end
-
-							if effect then
-								effects[effect] = effects[effect] or {}
-								if statID ~= "Decimal" then
-									tinsert(effects[effect], S[statID])
-								end
-							end
-						end
-					end
-					local info = {}
-					for effect, stats in pairs(effects) do
-						if #stats > 0 then
-							effect = effect .. " " .. table.concat(stats, ", ")
-						end
-						tinsert(info, tostring(effect))
-					end
-					table.sort(info, function(a, b)
-						return #a < #b
-					end)
-					local infoString = table.concat(info, ", ")
-					if infoString ~= "" then
-						-- Change insertion point if necessary
-						local _, statInsertionPoint = lowerText:find(pattern)
-						if statInsertionPoint > insertionPoint then
-							insertionPoint = statInsertionPoint
-						end
-
-						-- Backwards Compatibility
-						if not db.global.textColor.GenerateHexColorMarkup then
-							local old = db.global.textColor
-							if type(old) == "table" and old.r and old.g and old.b then
-								db.global.textColor = CreateColor(old.r, old.g, old.b)
-							else
-								db.global.textColor = defaults.global.textColor
-							end
-						end
-
-						-- Insert info into text. table.concat should be more efficient than many .. concats
-						return table.concat({
-							text:sub(1, insertionPoint),
-							" ",
-							db.global.textColor:GenerateHexColorMarkup(),
-							"(",
-							infoString,
-							")",
-							"|r",
-							text:sub(insertionPoint + 1)
-						})
-					else
-						return text
-					end
+				local breakdownText = RatingBuster:GetBreakdownText(breakdownStats)
+				if breakdownText ~= "" then
+					local length = #text
+					text = RatingBuster:InsertBreakdownText(text, breakdownText, position)
+					addedCharacters = addedCharacters + #text - length
 				end
 			end
 		end
 	end
+
+	cache[cacheKey][cacheID] = text
 	return text
 end
 
-do
-	local RatingType = {
-		Melee = {
-			[StatLogic.Stats.MeleeHitRating] = true,
-			[StatLogic.Stats.MeleeCritRating] = true,
-			[StatLogic.Stats.MeleeHasteRating] = true,
-		},
-		Ranged = {
-			[StatLogic.Stats.RangedHitRating] = true,
-			[StatLogic.Stats.RangedCritRating] = true,
-			[StatLogic.Stats.RangedHasteRating] = true,
-		},
-		Spell = {
-			[StatLogic.Stats.SpellHitRating] = true,
-			[StatLogic.Stats.SpellCritRating] = true,
-			[StatLogic.Stats.SpellHasteRating] = true,
-		},
-		Decimal = {
-			[StatLogic.Stats.DefenseRating] = true,
-			[StatLogic.Stats.ExpertiseRating] = true,
-		}
-	}
-
-	---@param statID Stat
-	---@param value number
-	---@param infoTable table
-	---@param link string
-	---@param color any
-	---@param statModContext StatModContext
-	function RatingBuster:ProcessStat(statID, value, infoTable, link, color, statModContext)
-		if StatLogic.GenericStatMap[statID] then
-			local statList = StatLogic.GenericStatMap[statID]
-			for _, convertedStatID in ipairs(statList) do
-				if not RatingType.Ranged[convertedStatID] then
-					RatingBuster:ProcessStat(convertedStatID, value, infoTable, link, color, statModContext)
-				end
+---@param breakdownStats StatTable
+---@return string
+function RatingBuster:GetBreakdownText(breakdownStats)
+	local effects = {}
+	-- Group effects with identical values
+	for statID, effect in pairs(breakdownStats) do
+		if type(statID) == "table" and statID.isPercent or statID == "Spell" then
+			if floor(abs(effect) * 100 + 0.5) > 0 then
+				effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
+				effects[effect] = effects[effect] or {}
+				tinsert(effects[effect], S[statID])
 			end
-		elseif StatLogic.RatingBase[statID] and db.profile.showRatings then
-			--------------------
-			-- Combat Ratings --
-			--------------------
-			-- Calculate stat value
-			local effect = StatLogic:GetEffectFromRating(value, statID, statModContext.level)
-			if statID == StatLogic.Stats.DefenseRating then
-				if db.profile.showDefenseFromDefenseRating then
-					infoTable["Decimal"] = effect
-				end
-				self:ProcessStat(StatLogic.Stats.Defense, effect, infoTable, link, color, statModContext)
-			elseif statID == StatLogic.Stats.DodgeRating and db.profile.enableAvoidanceDiminishingReturns then
-				infoTable["Percent"] = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge + effect) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge)
-				processedDodge = processedDodge + effect
-			elseif statID == StatLogic.Stats.ParryRating and db.profile.enableAvoidanceDiminishingReturns then
-				infoTable["Percent"] = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry + effect) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry)
-				processedParry = processedParry + effect
-			elseif statID == StatLogic.Stats.ExpertiseRating then
-				if addon.tocversion < 30000 then
-					-- Expertise is truncated in TBC but not in Wrath
-					effect = floor(effect)
-				end
-				if db.profile.showExpertiseFromExpertiseRating then
-					infoTable["Decimal"] = effect
-				end
-				if db.profile.showDodgeReductionFromExpertise then
-					local dodgeReduction = effect * -statModContext("ADD_DODGE_REDUCTION_MOD_EXPERTISE")
-					infoTable[StatLogic.Stats.DodgeReduction] = infoTable[StatLogic.Stats.DodgeReduction] + dodgeReduction
-				end
-				if db.profile.showParryReductionFromExpertise then
-					local parryReduction = effect * -statModContext("ADD_PARRY_REDUCTION_MOD_EXPERTISE")
-					infoTable[StatLogic.Stats.ParryReduction] = infoTable[StatLogic.Stats.ParryReduction] + parryReduction
-				end
-			elseif statID == StatLogic.Stats.ResilienceRating then
-				if db.profile.enableAvoidanceDiminishingReturns and StatLogic.GetResilienceEffectGainAfterDR then
-					effect = StatLogic:GetResilienceEffectGainAfterDR(processedResilience + value, processedResilience)
-					processedResilience = processedResilience + value
-				end
-
-				if db.profile.showResilienceFromResilienceRating then
-					infoTable["Percent"] = effect
-				end
-				local critAvoidance = effect * statModContext("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
-				if db.profile.showCritAvoidanceFromResilience then
-					infoTable[StatLogic.Stats.CritAvoidance] = infoTable[StatLogic.Stats.CritAvoidance] + critAvoidance
-				end
-				local critDmgReduction = effect * statModContext("ADD_CRIT_DAMAGE_REDUCTION_MOD_RESILIENCE")
-				if db.profile.showCritDamageReductionFromResilience then
-					infoTable[StatLogic.Stats.CritDamageReduction] = infoTable[StatLogic.Stats.CritDamageReduction] + critDmgReduction
-				end
-				local pvpDmgReduction = effect * statModContext("ADD_PVP_DAMAGE_REDUCTION_MOD_RESILIENCE")
-				if db.profile.showPvpDamageReductionFromResilience then
-					infoTable[StatLogic.Stats.PvPDamageReduction] = infoTable[StatLogic.Stats.PvPDamageReduction] + pvpDmgReduction
-				end
-			elseif statID == StatLogic.Stats.MasteryRating then
-				if db.profile.showMasteryFromMasteryRating then
-					infoTable["Decimal"] = infoTable[StatLogic.Stats.Mastery] + effect
-				end
-				if db.profile.showMasteryEffectFromMastery then
-					effect = effect * statModContext("ADD_MASTERY_EFFECT_MOD_MASTERY")
-					infoTable["Percent"] = infoTable[StatLogic.Stats.MasteryEffect] + effect
-				end
+		elseif statID == "Percent" then
+			if floor(abs(effect) * 100 + 0.5) > 0 then
+				effect = ("%+.2f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".") .. "%"
+				effects[effect] = effects[effect] or {}
+			end
+		else
+			if floor(abs(effect) * 10 + 0.5) > 0 then
+				effect = ("%+.1f"):format(effect):gsub("(%.%d-)0+$", "%1"):trim(".")
+			elseif floor(abs(effect) + 0.5) > 0 then
+				effect = ("%+.0f"):format(effect)
 			else
-				local show = false
-				local displayType = "Percent"
-				if RatingType.Melee[statID] then
-					if db.profile.ratingPhysical then
-						show = true
-					end
-				elseif RatingType.Spell[statID] then
-					if db.profile.ratingSpell then
-						if not db.profile.ratingPhysical then
-							show = true
-						elseif ( statID == StatLogic.Stats.SpellHitRating or (statID == StatLogic.Stats.SpellHasteRating and StatLogic.ExtraHasteClasses[class])) then
-							show = true
-							displayType = "Spell"
-						end
-					end
-				elseif RatingType.Decimal[statID] then
-					show = true
-					displayType = "Decimal"
-				else
-					show = true
+				-- Effect is too small to show
+				effect = false
+			end
+
+			if effect then
+				effects[effect] = effects[effect] or {}
+				if statID ~= "Decimal" then
+					tinsert(effects[effect], S[statID])
 				end
-
-				if show then
-					infoTable[displayType] = effect
-				end
-			end
-		elseif statID == StatLogic.Stats.Strength and db.profile.showStats then
-			--------------
-			-- Strength --
-			--------------
-			value = value * statModContext("MOD_STR")
-			local attackPower = value * statModContext("ADD_AP_MOD_STR")
-			self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, infoTable, link, color, statModContext)
-			if db.profile.showAPFromStr then
-				local effect = attackPower * statModContext("MOD_AP")
-				infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-			end
-			if db.profile.showBlockValueFromStr then
-				local effect = value * statModContext("ADD_BLOCK_VALUE_MOD_STR")
-				infoTable[StatLogic.Stats.BlockValue] = infoTable[StatLogic.Stats.BlockValue] + effect
-			end
-			local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_STR")
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromStr then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-			if db.profile.showHealingFromStr then
-				local effect = value * statModContext("MOD_HEALING") * statModContext("ADD_HEALING_MOD_STR")
-				infoTable[StatLogic.Stats.HealingPower] = infoTable[StatLogic.Stats.HealingPower] + effect
-			end
-			-- Death Knight: Forceful Deflection - Passive
-			if db.profile.showParryFromStr then
-				local rating = value * statModContext("ADD_PARRY_RATING_MOD_STR")
-				local effect = rating * statModContext("ADD_PARRY_MOD_PARRY_RATING")
-				if db.profile.enableAvoidanceDiminishingReturns then
-					local effectNoDR = effect
-					effect = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry + effect) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry)
-					processedParry = processedParry + effectNoDR
-				end
-				infoTable[StatLogic.Stats.Parry] = infoTable[StatLogic.Stats.Parry] + effect
-			else
-				local rating = value * statModContext("ADD_PARRY_RATING_MOD_STR")
-				local effect = rating * statModContext("ADD_PARRY_MOD_PARRY_RATING")
-				processedParry = processedParry + effect
-			end
-		elseif statID == StatLogic.Stats.Agility and db.profile.showStats then
-			-------------
-			-- Agility --
-			-------------
-			value = value * statModContext("MOD_AGI")
-			local attackPower = value * statModContext("ADD_AP_MOD_AGI")
-			self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, infoTable, link, color, statModContext)
-			if db.profile.showAPFromAgi then
-				local effect = attackPower * statModContext("MOD_AP")
-				infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-			end
-			if db.profile.showRAPFromAgi then
-				local effect = value * statModContext("ADD_RANGED_AP_MOD_AGI") * statModContext("MOD_RANGED_AP")
-				infoTable[StatLogic.Stats.RangedAttackPower] = infoTable[StatLogic.Stats.RangedAttackPower] + effect
-			end
-			if db.profile.showMeleeCritFromAgi then
-				local effect = value * statModContext("ADD_MELEE_CRIT_MOD_AGI")
-				infoTable[StatLogic.Stats.MeleeCrit] = infoTable[StatLogic.Stats.MeleeCrit] + effect
-			end
-			if db.profile.showDodgeFromAgi then
-				local effect = value * statModContext("ADD_DODGE_MOD_AGI")
-				if db.profile.enableAvoidanceDiminishingReturns then
-					local effectNoDR = effect
-					effect = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge + effect) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge)
-					processedDodge = processedDodge + effectNoDR
-				end
-				infoTable[StatLogic.Stats.Dodge] = infoTable[StatLogic.Stats.Dodge] + effect
-			end
-			local bonusArmor = value * statModContext("ADD_BONUS_ARMOR_MOD_AGI")
-			self:ProcessStat(StatLogic.Stats.BonusArmor, bonusArmor, infoTable, link, color, statModContext)
-			if db.profile.showArmorFromAgi then
-				infoTable[StatLogic.Stats.Armor] = infoTable[StatLogic.Stats.Armor] + bonusArmor
-			end
-			if db.profile.showHealingFromAgi then
-				local effect = value * statModContext("MOD_HEALING") * statModContext("ADD_HEALING_MOD_AGI")
-				infoTable[StatLogic.Stats.HealingPower] = infoTable[StatLogic.Stats.HealingPower] + effect
-			end
-		elseif statID == StatLogic.Stats.Stamina and db.profile.showStats then
-			-------------
-			-- Stamina --
-			-------------
-			value = value * statModContext("MOD_STA")
-			local health = value * statModContext("ADD_HEALTH_MOD_STA")
-			self:ProcessStat(StatLogic.Stats.Health, health, infoTable, link, color, statModContext)
-			if db.profile.showHealthFromSta then
-				local effect = health * statModContext("MOD_HEALTH")
-				infoTable[StatLogic.Stats.Health] = infoTable[StatLogic.Stats.Health] + effect
-			end
-
-			local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_STA")
-				+ statModContext("ADD_SPELL_DMG_MOD_PET_STA") * statModContext("MOD_PET_STA") * statModContext("ADD_PET_STA_MOD_STA")
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromSta then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-
-			if db.profile.showAPFromSta then
-				local effect = value * statModContext("ADD_AP_MOD_STA") * statModContext("MOD_AP")
-				infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-			end
-		elseif statID == StatLogic.Stats.Intellect and db.profile.showStats then
-			---------------
-			-- Intellect --
-			---------------
-			value = value * statModContext("MOD_INT")
-			if db.profile.showManaFromInt then
-				local effect = value * statModContext("ADD_MANA_MOD_INT") * statModContext("MOD_MANA")
-				infoTable[StatLogic.Stats.Mana] = infoTable[StatLogic.Stats.Mana] + effect
-			end
-			local spellCrit = value * statModContext("ADD_SPELL_CRIT_MOD_INT")
-			self:ProcessStat(StatLogic.Stats.SpellCrit, spellCrit, infoTable, link, color, statModContext)
-			if db.profile.showSpellCritFromInt then
-				infoTable[StatLogic.Stats.SpellCrit] = infoTable[StatLogic.Stats.SpellCrit] + spellCrit
-			end
-
-			local spellDamage = value * (
-				statModContext("ADD_SPELL_DMG_MOD_INT")
-				+ statModContext("ADD_SPELL_DMG_MOD_PET_INT") * statModContext("MOD_PET_INT") * statModContext("ADD_PET_INT_MOD_INT")
-				+ statModContext("ADD_SPELL_DMG_MOD_MANA") * statModContext("MOD_MANA") * statModContext("ADD_MANA_MOD_INT")
-			)
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromInt then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-
-			if db.profile.showHealingFromInt then
-				local effect = value * statModContext("MOD_HEALING") * (
-					statModContext("ADD_HEALING_MOD_INT")
-					+ statModContext("ADD_HEALING_MOD_MANA") * statModContext("MOD_MANA") * statModContext("ADD_MANA_MOD_INT")
-				)
-				infoTable[StatLogic.Stats.HealingPower] = infoTable[StatLogic.Stats.HealingPower] + effect
-			end
-			if db.profile.showMP5FromInt then
-				local effect = value * statModContext("ADD_MANA_REG_MOD_INT")
-					+ value * statModContext("ADD_NORMAL_MANA_REG_MOD_INT") * statModContext("MOD_NORMAL_MANA_REG") * math.min(statModContext("ADD_MANA_REG_MOD_NORMAL_MANA_REG"), 1)
-					+ value * statModContext("ADD_MANA_MOD_INT") * statModContext("MOD_MANA") * statModContext("ADD_MANA_REG_MOD_MANA") -- Replenishment
-				infoTable[StatLogic.Stats.ManaRegen] = infoTable[StatLogic.Stats.ManaRegen] + effect
-			end
-			if db.profile.showMP5NCFromInt then
-				local effect = value * statModContext("ADD_MANA_REG_MOD_INT")
-					+ value * statModContext("ADD_NORMAL_MANA_REG_MOD_INT") * statModContext("MOD_NORMAL_MANA_REG")
-					+ value * statModContext("ADD_MANA_MOD_INT") * statModContext("MOD_MANA") * statModContext("ADD_MANA_REG_MOD_MANA") -- Replenishment
-				infoTable[StatLogic.Stats.ManaRegenNotCasting] = infoTable[StatLogic.Stats.ManaRegenNotCasting] + effect
-			end
-			if db.profile.showRAPFromInt then
-				local effect = value * statModContext("ADD_RANGED_AP_MOD_INT") * statModContext("MOD_RANGED_AP")
-				infoTable[StatLogic.Stats.RangedAttackPower] = infoTable[StatLogic.Stats.RangedAttackPower] + effect
-			end
-			if db.profile.showArmorFromInt then
-				local effect = value * statModContext("ADD_BONUS_ARMOR_MOD_INT")
-				infoTable[StatLogic.Stats.Armor] = infoTable[StatLogic.Stats.Armor] + effect
-			end
-			local attackPower = value * statModContext("ADD_AP_MOD_INT")
-			self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, infoTable, link, color, statModContext)
-			if db.profile.showAPFromInt then
-				local effect = attackPower * statModContext("MOD_AP")
-				infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-			end
-		elseif statID == StatLogic.Stats.Spirit and db.profile.showStats then
-			------------
-			-- Spirit --
-			------------
-			value = value * statModContext("MOD_SPI")
-			if db.profile.showMP5FromSpi then
-				local effect = value * statModContext("ADD_NORMAL_MANA_REG_MOD_SPI") * statModContext("MOD_NORMAL_MANA_REG") * math.min(statModContext("ADD_MANA_REG_MOD_NORMAL_MANA_REG"), 1)
-				infoTable[StatLogic.Stats.ManaRegen] = infoTable[StatLogic.Stats.ManaRegen] + effect
-			end
-			if db.profile.showMP5NCFromSpi then
-				local effect = value * statModContext("ADD_NORMAL_MANA_REG_MOD_SPI") * statModContext("MOD_NORMAL_MANA_REG")
-				infoTable[StatLogic.Stats.ManaRegenNotCasting] = infoTable[StatLogic.Stats.ManaRegenNotCasting] + effect
-			end
-			if db.profile.showHP5FromSpi then
-				local effect = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
-				infoTable[StatLogic.Stats.HealthRegen] = infoTable[StatLogic.Stats.HealthRegen] + effect
-			end
-			if db.profile.showHP5NCFromSpi then
-				local effect = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG")
-				infoTable[StatLogic.Stats.HealthRegenOutOfCombat] = infoTable[StatLogic.Stats.HealthRegenOutOfCombat] + effect
-			end
-
-			local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_SPI")
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromSpi then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-
-			if db.profile.showHealingFromSpi then
-				local effect = value * statModContext("ADD_HEALING_MOD_SPI") * statModContext("MOD_HEALING")
-				infoTable[StatLogic.Stats.HealingPower] = infoTable[StatLogic.Stats.HealingPower] + effect
-			end
-			if db.profile.showSpellHitFromSpi then
-				local rating = value * statModContext("ADD_SPELL_HIT_RATING_MOD_SPI")
-				local effect = rating * statModContext("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING")
-				infoTable[StatLogic.Stats.SpellHit] = infoTable[StatLogic.Stats.SpellHit] + effect
-			end
-			if db.profile.showSpellCritFromSpi then
-				local rating = value * statModContext("ADD_SPELL_CRIT_RATING_MOD_SPI")
-				local effect = rating * statModContext("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING")
-				infoTable[StatLogic.Stats.SpellCrit] = infoTable[StatLogic.Stats.SpellCrit] + effect
-			end
-		elseif statID == StatLogic.Stats.Health and db.profile.showStats then
-			value = value * statModContext("MOD_HEALTH")
-			if db.profile.showHP5FromHealth then
-				local effect = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
-				infoTable[StatLogic.Stats.HealthRegen] = infoTable[StatLogic.Stats.HealthRegen] + effect
-			end
-			if db.profile.showHP5NCFromHealth then
-				local effect = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") * statModContext("MOD_NORMAL_HEALTH_REG")
-				infoTable[StatLogic.Stats.HealthRegenOutOfCombat] = infoTable[StatLogic.Stats.HealthRegenOutOfCombat] + effect
-			end
-		elseif statID == StatLogic.Stats.SpellCrit then
-			if db.profile.showDodgeFromSpellCrit then
-				local effect = value * statModContext("ADD_DODGE_MOD_SPELL_CRIT")
-				infoTable[StatLogic.Stats.Dodge] = infoTable[StatLogic.Stats.Dodge] + effect
-			end
-		elseif statID == StatLogic.Stats.Defense then
-			local blockChance = value * statModContext("ADD_BLOCK_CHANCE_MOD_DEFENSE")
-			if db.profile.showBlockChanceFromDefense then
-				infoTable[StatLogic.Stats.BlockChance] = infoTable[StatLogic.Stats.BlockChance] + blockChance
-			end
-
-			local critAvoidance = value * statModContext("ADD_CRIT_AVOIDANCE_MOD_DEFENSE")
-			if db.profile.showCritAvoidanceFromDefense then
-				infoTable[StatLogic.Stats.CritAvoidance] = infoTable[StatLogic.Stats.CritAvoidance] + critAvoidance
-			end
-
-			local dodge = value * statModContext("ADD_DODGE_MOD_DEFENSE")
-			if dodge > 0 then
-				if db.profile.enableAvoidanceDiminishingReturns then
-					processedDodge = processedDodge + dodge
-					dodge = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge - dodge)
-				end
-				if db.profile.showDodgeFromDefense then
-					infoTable[StatLogic.Stats.Dodge] = infoTable[StatLogic.Stats.Dodge] + dodge
-				end
-			end
-
-			local miss = value * statModContext("ADD_MISS_MOD_DEFENSE")
-			if miss > 0 then
-				if db.profile.enableAvoidanceDiminishingReturns then
-					processedMissed = processedMissed + miss
-					miss = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, processedMissed) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, processedMissed - miss)
-				end
-				if db.profile.showMissFromDefense then
-					infoTable[StatLogic.Stats.Miss] = infoTable[StatLogic.Stats.Miss] + miss
-				end
-			end
-
-			local parry = value * statModContext("ADD_PARRY_MOD_DEFENSE")
-			if parry > 0 then
-				if db.profile.enableAvoidanceDiminishingReturns then
-					processedParry = processedParry + parry
-					parry = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry - parry)
-				end
-				if db.profile.showParryFromDefense then
-					infoTable[StatLogic.Stats.Parry] = infoTable[StatLogic.Stats.Parry] + parry
-				end
-			end
-
-			local attackPower = value * statModContext("ADD_AP_MOD_DEFENSE")
-			self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, infoTable, link, color, statModContext)
-			if db.profile.showAPFromDefense then
-				local effect = attackPower * statModContext("MOD_AP")
-				infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-			end
-
-			local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_DEFENSE")
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromDefense then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-		elseif statID == StatLogic.Stats.Armor then
-			local base, bonus = StatLogic:GetArmorDistribution(link, value, color)
-			value = base * statModContext("MOD_ARMOR") + bonus
-			self:ProcessStat(StatLogic.Stats.BonusArmor, value, infoTable, link, color, statModContext)
-		elseif db.profile.showAPFromArmor and statID == StatLogic.Stats.BonusArmor then
-			local effect = value * statModContext("ADD_AP_MOD_ARMOR") * statModContext("MOD_AP")
-			infoTable[StatLogic.Stats.AttackPower] = infoTable[StatLogic.Stats.AttackPower] + effect
-		elseif statID == StatLogic.Stats.AttackPower then
-			------------------
-			-- Attack Power --
-			------------------
-			value = value * statModContext("MOD_AP")
-
-			local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_AP")
-			self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, infoTable, link, color, statModContext)
-			if db.profile.showSpellDmgFromAP then
-				local effect = spellDamage * statModContext("MOD_SPELL_DMG")
-				infoTable[StatLogic.Stats.SpellDamage] = infoTable[StatLogic.Stats.SpellDamage] + effect
-			end
-
-			if db.profile.showHealingFromAP then
-				local effect = value * statModContext("ADD_HEALING_MOD_AP") * statModContext("MOD_HEALING")
-				infoTable[StatLogic.Stats.HealingPower] = infoTable[StatLogic.Stats.HealingPower] + effect
-			end
-		elseif statID == StatLogic.Stats.SpellDamage then
-			value = value * statModContext("MOD_SPELL_DMG")
-			if db.profile.showBlockValueFromSpellDmg then
-				local effect = value * statModContext("ADD_BLOCK_VALUE_MOD_SPELL_DMG") * statModContext("MOD_BLOCK_VALUE")
-				infoTable[StatLogic.Stats.BlockValue] = infoTable[StatLogic.Stats.BlockValue] + effect
 			end
 		end
 	end
+	local info = {}
+	for effect, stats in pairs(effects) do
+		if #stats > 0 then
+			effect = effect .. " " .. table.concat(stats, ", ")
+		end
+		tinsert(info, tostring(effect))
+	end
+	table.sort(info, function(a, b)
+		return #a < #b
+	end)
+	local infoString = table.concat(info, ", ")
+	return infoString
 end
+
+---@param text string
+---@param breakdown string
+---@param position integer
+---@return string
+function RatingBuster:InsertBreakdownText(text, breakdown, position)
+	-- Backwards Compatibility
+	if not db.global.textColor.GenerateHexColorMarkup then
+		local old = db.global.textColor
+		if type(old) == "table" and old.r and old.g and old.b then
+			db.global.textColor = CreateColor(old.r, old.g, old.b)
+		else
+			db.global.textColor = defaults.global.textColor
+		end
+	end
+
+	return table.concat({
+		text:sub(1, position),
+		" ",
+		db.global.textColor:GenerateHexColorMarkup(),
+		"(",
+		breakdown,
+		")|r",
+		text:sub(position + 1)
+	})
+end
+
+---@param stat Stat
+---@param value number
+---@param breakdownStats StatTable
+---@param link string
+---@param color ColorMixin
+---@param statModContext StatModContext
+---@param isParentModified boolean
+---@param isBaseStat boolean
+---@param show boolean
+function RatingBuster:ProcessStat(stat, value, breakdownStats, link, color, statModContext, isParentModified, isBaseStat, show)
+	if value == 0 then return end
+	if StatLogic.GenericStatMap[stat] then
+		local statList = StatLogic.GenericStatMap[stat]
+		for _, convertedStatID in ipairs(statList) do
+			RatingBuster:ProcessStat(convertedStatID, value, breakdownStats, link, color, statModContext, true, false, true)
+		end
+	elseif stat == StatLogic.Stats.HitRating then
+		local meleeHitRating = value * statModContext("ADD_MELEE_HIT_RATING_MOD_HIT_RATING")
+		self:ProcessStat(StatLogic.Stats.MeleeHitRating, meleeHitRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMeleeHitFromHitRating)
+
+		local spellHitRating = value * statModContext("ADD_SPELL_HIT_RATING_MOD_HIT_RATING")
+		self:ProcessStat(StatLogic.Stats.SpellHitRating, spellHitRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showSpellHitFromHitRating)
+	elseif stat == StatLogic.Stats.CritRating then
+		value = value * statModContext("MOD_CRIT_RATING")
+
+		local meleeCritRating = value * statModContext("ADD_MELEE_CRIT_RATING_MOD_CRIT_RATING")
+		self:ProcessStat(StatLogic.Stats.MeleeCritRating, meleeCritRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMeleeCritFromCritRating)
+
+		local spellCritRating = value * statModContext("ADD_SPELL_CRIT_RATING_MOD_CRIT_RATING")
+		self:ProcessStat(StatLogic.Stats.SpellCritRating, spellCritRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showSpellCritFromCritRating)
+	elseif stat == StatLogic.Stats.HasteRating then
+		value = value * statModContext("MOD_HASTE_RATING")
+
+		local meleeHasteRating = value * statModContext("ADD_MELEE_HASTE_RATING_MOD_HASTE_RATING")
+		self:ProcessStat(StatLogic.Stats.MeleeHasteRating, meleeHasteRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMeleeHasteFromHasteRating)
+
+		local spellHasteRating = value * statModContext("ADD_SPELL_HASTE_RATING_MOD_HASTE_RATING")
+		self:ProcessStat(StatLogic.Stats.SpellHasteRating, spellHasteRating, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showSpellHasteFromHasteRating)
+	elseif StatLogic.RatingBase[stat] and db.profile.showRatings then
+		--------------------
+		-- Combat Ratings --
+		--------------------
+		-- Calculate stat value
+		local effect = StatLogic:GetEffectFromRating(value, stat, statModContext.level)
+		if stat == StatLogic.Stats.DefenseRating then
+			self:ProcessStat(StatLogic.Stats.Defense, effect, breakdownStats, link, color, statModContext, true, false, db.profile.showDefenseFromDefenseRating)
+		elseif stat == StatLogic.Stats.DodgeRating then
+			self:ProcessStat(StatLogic.Stats.Dodge, effect, breakdownStats, link, color, statModContext, true, isBaseStat, show or isBaseStat)
+
+			local critRating = value * statModContext("ADD_CRIT_RATING_MOD_DODGE_RATING")
+			self:ProcessStat(StatLogic.Stats.CritRating, critRating, breakdownStats, link, color, statModContext, true, false, db.profile.showCritFromDodgeRating)
+		elseif stat == StatLogic.Stats.ParryRating then
+			self:ProcessStat(StatLogic.Stats.Parry, effect, breakdownStats, link, color, statModContext, true, isBaseStat, show or isBaseStat)
+
+			local critRating = value * statModContext("ADD_CRIT_RATING_MOD_PARRY_RATING")
+			self:ProcessStat(StatLogic.Stats.CritRating, critRating, breakdownStats, link, color, statModContext, true, false, db.profile.showCritFromParryRating)
+		elseif stat == StatLogic.Stats.BlockRating then
+			self:ProcessStat(StatLogic.Stats.BlockChance, effect, breakdownStats, link, color, statModContext, true, isBaseStat, true)
+		elseif stat == StatLogic.Stats.MeleeHitRating then
+			self:ProcessStat(StatLogic.Stats.MeleeHit, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMeleeHitFromHitRating)
+		elseif stat == StatLogic.Stats.RangedHitRating then
+			self:ProcessStat(StatLogic.Stats.RangedHit, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showRangedHitFromHitRating)
+		elseif stat == StatLogic.Stats.SpellHitRating then
+			self:ProcessStat(StatLogic.Stats.SpellHit, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showSpellHitFromHitRating)
+		elseif stat == StatLogic.Stats.MeleeCritRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_CRIT_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.MeleeCrit, effect, breakdownStats, link, color, statModContext, true, false, db.profile.showMeleeCritFromCritRating)
+		elseif stat == StatLogic.Stats.RangedCritRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_CRIT_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.RangedCrit, effect, breakdownStats, link, color, statModContext, true, false, db.profile.showRangedCritFromCritRating)
+		elseif stat == StatLogic.Stats.SpellCritRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_CRIT_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.SpellCrit, effect, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellCritFromCritRating)
+		elseif stat == StatLogic.Stats.MeleeHasteRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_HASTE_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.MeleeHaste, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMeleeHasteFromHasteRating)
+		elseif stat == StatLogic.Stats.RangedHasteRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_HASTE_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.RangedHaste, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showRangedHasteFromHasteRating)
+		elseif stat == StatLogic.Stats.SpellHasteRating then
+			if not isParentModified then
+				effect = effect * statModContext("MOD_HASTE_RATING")
+			end
+			self:ProcessStat(StatLogic.Stats.SpellHaste, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showSpellHasteFromHasteRating)
+		elseif stat == StatLogic.Stats.ExpertiseRating then
+			if addon.tocversion < 30000 then
+				-- Expertise is truncated in TBC but not in Wrath
+				effect = floor(effect)
+			end
+			self:ProcessStat(StatLogic.Stats.Expertise, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showExpertiseFromExpertiseRating)
+		elseif stat == StatLogic.Stats.ArmorPenetrationRating then
+			self:ProcessStat(StatLogic.Stats.ArmorPenetration, effect, breakdownStats, link, color, statModContext, true, isBaseStat, show)
+		elseif stat == StatLogic.Stats.ResilienceRating then
+			self:ProcessStat(StatLogic.Stats.Resilience, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showResilienceFromResilienceRating)
+		elseif stat == StatLogic.Stats.MasteryRating then
+			effect = effect * statModContext("MOD_MASTERY_RATING")
+			self:ProcessStat(StatLogic.Stats.Mastery, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showMasteryFromMasteryRating)
+		elseif stat == StatLogic.Stats.PvpPowerRating then
+			self:ProcessStat(StatLogic.Stats.PvpPower, effect, breakdownStats, link, color, statModContext, true, isBaseStat, db.profile.showPvpPowerFromPvpPowerRating)
+		end
+	elseif stat == StatLogic.Stats.Strength and db.profile.showStats then
+		local mod = statModContext("MOD_STR")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedStrength then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local attackPower = value * statModContext("ADD_AP_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromStr)
+
+		local blockValue = value * statModContext("ADD_BLOCK_VALUE_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.BlockValue, blockValue, breakdownStats, link, color, statModContext, true, false, db.profile.showBlockValueFromStr)
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromStr)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromStr)
+
+		local parryRating = value * statModContext("ADD_PARRY_RATING_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.ParryRating, parryRating, breakdownStats, link, color, statModContext, true, false, db.profile.showParryFromStr)
+
+		local parry = value * statModContext("ADD_PARRY_MOD_STR")
+		self:ProcessStat(StatLogic.Stats.Parry, parry, breakdownStats, link, color, statModContext, true, false, db.profile.showParryFromStr)
+	elseif stat == StatLogic.Stats.Agility and db.profile.showStats then
+		local mod = statModContext("MOD_AGI")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedAgility then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local attackPower = value * statModContext("ADD_AP_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromAgi)
+
+		local rangedAttackPower = value * statModContext("ADD_RANGED_AP_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.RangedAttackPower, rangedAttackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showRAPFromAgi)
+
+		local meleeCrit = value * statModContext("ADD_MELEE_CRIT_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.MeleeCrit, meleeCrit, breakdownStats, link, color, statModContext, true, false, db.profile.showMeleeCritFromAgi)
+
+		local dodge = value * statModContext("ADD_DODGE_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.Dodge, dodge, breakdownStats, link, color, statModContext, true, false, db.profile.showDodgeFromAgi)
+
+		local bonusArmor = value * statModContext("ADD_BONUS_ARMOR_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.BonusArmor, bonusArmor, breakdownStats, link, color, statModContext, true, false, db.profile.showArmorFromAgi)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_AGI")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromAgi)
+	elseif stat == StatLogic.Stats.Stamina and db.profile.showStats then
+		local mod = statModContext("MOD_STA")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedStamina then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local health = value * statModContext("ADD_HEALTH_MOD_STA")
+		self:ProcessStat(StatLogic.Stats.Health, health, breakdownStats, link, color, statModContext, true, false, db.profile.showHealthFromSta)
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_STA")
+			+ statModContext("ADD_SPELL_DMG_MOD_PET_STA") * statModContext("MOD_PET_STA") * statModContext("ADD_PET_STA_MOD_STA")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromSta)
+
+		local attackPower = value * statModContext("ADD_AP_MOD_STA")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromSta)
+	elseif stat == StatLogic.Stats.Intellect and db.profile.showStats then
+		local mod = statModContext("MOD_INT")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedIntellect then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local mana = value * statModContext("ADD_MANA_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.Mana, mana, breakdownStats, link, color, statModContext, true, false, db.profile.showManaFromInt)
+
+		local spellCrit = value * statModContext("ADD_SPELL_CRIT_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.SpellCrit, spellCrit, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellCritFromInt)
+
+		local spellPower = value * statModContext("ADD_SPELL_POWER_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.SpellPower, spellPower, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellPowerFromInt)
+
+		local spellDamage = value * (
+			statModContext("ADD_SPELL_DMG_MOD_INT")
+			+ statModContext("ADD_SPELL_DMG_MOD_PET_INT") * statModContext("MOD_PET_INT") * statModContext("ADD_PET_INT_MOD_INT")
+		)
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromInt)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromInt)
+
+		local genericManaRegen = value * statModContext("ADD_GENERIC_MANA_REGEN_MOD_INT")
+		-- TODO: Options key using wrong dest stat
+		self:ProcessStat(StatLogic.Stats.GenericManaRegen, genericManaRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showManaRegenFromInt)
+
+		local normalManaRegen = value * statModContext("ADD_NORMAL_MANA_REGEN_MOD_INT")
+		-- TODO: Options key using wrong dest stat
+		self:ProcessStat(StatLogic.Stats.NormalManaRegen, normalManaRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showManaRegenFromInt)
+
+		local rangedAttackPower = value * statModContext("ADD_RANGED_AP_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.RangedAttackPower, rangedAttackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showRAPFromInt)
+
+		local bonusArmor = value * statModContext("ADD_BONUS_ARMOR_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.BonusArmor, bonusArmor, breakdownStats, link, color, statModContext, true, false, db.profile.showArmorFromInt)
+
+		local attackPower = value * statModContext("ADD_AP_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromInt)
+
+		local agility = value * statModContext("ADD_AGI_MOD_INT")
+		self:ProcessStat(StatLogic.Stats.Agility, agility, breakdownStats, link, color, statModContext, true, false, db.profile.showAgiFromInt)
+	elseif stat == StatLogic.Stats.Spirit and db.profile.showStats then
+		local mod = statModContext("MOD_SPI")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedSpirit then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local normalManaRegen = value * statModContext("ADD_NORMAL_MANA_REGEN_MOD_SPI")
+		-- TODO: Options key using wrong dest stat
+		self:ProcessStat(StatLogic.Stats.NormalManaRegen, normalManaRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showManaRegenFromSpi)
+
+		local healthRegenOutOfCombat = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.HealthRegenOutOfCombat, healthRegenOutOfCombat, breakdownStats, link, color, statModContext, true, false, db.profile.showHP5NCFromSpi)
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromSpi)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromSpi)
+
+		local hitRating = value * statModContext("ADD_HIT_RATING_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.HitRating, hitRating, breakdownStats, link, color, statModContext, true, false, db.profile.showHitFromSpi)
+
+		local expertiseRating = value * statModContext("ADD_EXPERTISE_RATING_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.ExpertiseRating, expertiseRating, breakdownStats, link, color, statModContext, true, false, db.profile.showExpertiseFromSpi)
+
+		local spellHitRating = value * statModContext("ADD_SPELL_HIT_RATING_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.SpellHitRating, spellHitRating, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellHitFromSpi)
+
+		local spellCritRating = value * statModContext("ADD_SPELL_CRIT_RATING_MOD_SPI")
+		self:ProcessStat(StatLogic.Stats.SpellCritRating, spellCritRating, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellCritFromSpi)
+	elseif stat == StatLogic.Stats.Health then
+		local mod = statModContext("MOD_HEALTH")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedHealth then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local healthRegenOutOfCombat = value * statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH")
+		self:ProcessStat(StatLogic.Stats.HealthRegenOutOfCombat, healthRegenOutOfCombat, breakdownStats, link, color, statModContext, true, false, db.profile.showHP5NCFromHealth)
+
+		local healthRegen = value * statModContext("ADD_HEALTH_REG_MOD_HEALTH")
+		self:ProcessStat(StatLogic.Stats.HealthRegen, healthRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showHP5FromHealth)
+	elseif stat == StatLogic.Stats.HealthRegenOutOfCombat then
+		local mod = statModContext("MOD_NORMAL_HEALTH_REG")
+		value = value * mod
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		-- TODO: Options key using wrong source stat
+		local healthRegen = value * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
+		self:ProcessStat(StatLogic.Stats.HealthRegen, healthRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showHP5FromHealth or db.profile.showHP5FromSpi)
+	elseif stat == StatLogic.Stats.HealthRegen then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Mana then
+		local mod = statModContext("MOD_MANA")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedMana then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_MANA")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromInt)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_MANA")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromInt)
+
+		local genericManaRegen = value * statModContext("ADD_GENERIC_MANA_REGEN_MOD_MANA")
+		-- TODO: Options key using wrong dest AND source stats
+		self:ProcessStat(StatLogic.Stats.GenericManaRegen, genericManaRegen, breakdownStats, link, color, statModContext, true, false, db.profile.showManaRegenFromInt)
+	elseif stat == StatLogic.Stats.NormalManaRegen then
+		local mod = statModContext("MOD_NORMAL_MANA_REGEN")
+		value = value * mod
+
+		local manaRegen = value * math.min(statModContext("ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"), 1)
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegen, manaRegen, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenFromManaRegen)
+
+		local manaRegenNotCasting = value * statModContext("ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegenNotCasting, manaRegenNotCasting, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenNotCastingFromManaRegen)
+
+		local manaRegenOutOfCombat = value * statModContext("ADD_MANA_REGEN_OUT_OF_COMBAT_MOD_NORMAL_MANA_REGEN")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegenOutOfCombat, manaRegenOutOfCombat, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenOutOfCombatFromManaRegen)
+	elseif stat == StatLogic.Stats.GenericManaRegen then
+		local manaRegen = value * statModContext("ADD_MANA_REGEN_MOD_GENERIC_MANA_REGEN")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegen, manaRegen, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenFromManaRegen)
+
+		local manaRegenNotCasting = value * statModContext("ADD_MANA_REGEN_NOT_CASTING_MOD_GENERIC_MANA_REGEN")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegenNotCasting, manaRegenNotCasting, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenNotCastingFromManaRegen)
+
+		local manaRegenOutOfCombat = value * statModContext("ADD_MANA_REGEN_OUT_OF_COMBAT_MOD_GENERIC_MANA_REGEN")
+		-- TODO: Options key using wrong source stat
+		self:ProcessStat(StatLogic.Stats.ManaRegenOutOfCombat, manaRegenOutOfCombat, breakdownStats, link, color, statModContext, true, false, show and db.profile.showManaRegenOutOfCombatFromManaRegen)
+	elseif stat == StatLogic.Stats.ManaRegen then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.ManaRegenNotCasting then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.ManaRegenOutOfCombat then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Defense then
+		if show and isBaseStat then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = value
+		end
+		local blockChance = value * statModContext("ADD_BLOCK_CHANCE_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.BlockChance, blockChance, breakdownStats, link, color, statModContext, true, false, db.profile.showBlockChanceFromDefense)
+
+		local critAvoidance = value * statModContext("ADD_CRIT_AVOIDANCE_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.CritAvoidance, critAvoidance, breakdownStats, link, color, statModContext, true, false, db.profile.showCritAvoidanceFromDefense)
+
+		local dodge = value * statModContext("ADD_DODGE_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.Dodge, dodge, breakdownStats, link, color, statModContext, true, false, db.profile.showDodgeFromDefense)
+
+		local miss = value * statModContext("ADD_MISS_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.Miss, miss, breakdownStats, link, color, statModContext, true, false, db.profile.showMissFromDefense)
+
+		local parry = value * statModContext("ADD_PARRY_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.Parry, parry, breakdownStats, link, color, statModContext, true, false, db.profile.showParryFromDefense)
+
+		local strength = value * statModContext("ADD_STR_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.Strength, strength, breakdownStats, link, color, statModContext, true, false, db.profile.showStrFromDefense)
+
+		local attackPower = value * statModContext("ADD_AP_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromDefense)
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_DEFENSE")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromDefense)
+	elseif stat == StatLogic.Stats.BlockChance then
+		if db.profile.enableAvoidanceDiminishingReturns then
+			processedBlock = processedBlock + value
+			value = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.BlockChance, processedBlock) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.BlockChance, processedBlock - value)
+		end
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.CritAvoidance then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Miss then
+		if db.profile.enableAvoidanceDiminishingReturns then
+			processedMiss = processedMiss + value
+			value = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, processedMiss) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, processedMiss - value)
+		end
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.CritDamageReduction then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.PvPDamageReduction then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.PvpPower then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Dodge then
+		if db.profile.enableAvoidanceDiminishingReturns then
+			processedDodge = processedDodge + value
+			value = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, processedDodge - value)
+		end
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Parry then
+		if db.profile.enableAvoidanceDiminishingReturns then
+			processedParry = processedParry + value
+			value = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, processedParry - value)
+		end
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.MeleeHit then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.SpellHit then
+		if show and isBaseStat then
+			local displayType = "Percent"
+			if (
+				db.profile.showMeleeHitFromHitRating
+				and statModContext("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING") ~= statModContext("ADD_MELEE_HIT_MOD_MELEE_HIT_RATING")
+			) then
+				displayType = "Spell"
+			end
+			breakdownStats[displayType] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.MeleeCrit then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.SpellCrit then
+		if show and isBaseStat then
+			local displayType = "Percent"
+			if (
+				db.profile.showMeleeCritFromCritRating
+				and statModContext("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING") ~= statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
+			) then
+				displayType = "Spell"
+			end
+			breakdownStats[displayType] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local dodge = value * statModContext("ADD_DODGE_MOD_SPELL_CRIT")
+		self:ProcessStat(StatLogic.Stats.Dodge, dodge, breakdownStats, link, color, statModContext, true, false, db.profile.showDodgeFromSpellCrit)
+	elseif stat == StatLogic.Stats.MeleeHaste then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.SpellHaste then
+		if show and isBaseStat then
+			local displayType = "Percent"
+			if (
+				db.profile.showMeleeHasteFromHasteRating
+				and statModContext("ADD_SPELL_HASTE_MOD_SPELL_HASTE_RATING") ~= statModContext("ADD_MELEE_HASTE_MOD_MELEE_HASTE_RATING")
+			) then
+				displayType = "Spell"
+			end
+			breakdownStats[displayType] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Expertise then
+		if show and isBaseStat then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local dodgeReduction = value * -statModContext("ADD_DODGE_REDUCTION_MOD_EXPERTISE")
+		self:ProcessStat(StatLogic.Stats.DodgeReduction, dodgeReduction, breakdownStats, link, color, statModContext, true, false, db.profile.showDodgeReductionFromExpertise)
+
+		local parryReduction = value * -statModContext("ADD_PARRY_REDUCTION_MOD_EXPERTISE")
+		self:ProcessStat(StatLogic.Stats.ParryReduction, parryReduction, breakdownStats, link, color, statModContext, true, false, db.profile.showParryReductionFromExpertise)
+
+		local spellHit = value * statModContext("ADD_SPELL_HIT_MOD_EXPERTISE")
+		self:ProcessStat(StatLogic.Stats.SpellHit, spellHit, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellHitFromExpertise)
+	elseif stat == StatLogic.Stats.ArmorPenetration then
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Resilience then
+		if db.profile.enableAvoidanceDiminishingReturns and addon.tocversion >= 40000 then
+			processedResilience = processedResilience + value
+			value = StatLogic:GetResilienceEffectGainAfterDR(processedResilience) - StatLogic:GetResilienceEffectAfterDR(processedResilience - value)
+		end
+
+		if show and isBaseStat then
+			breakdownStats["Percent"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local critAvoidance = value * statModContext("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
+		self:ProcessStat(StatLogic.Stats.CritAvoidance, critAvoidance, breakdownStats, link, color, statModContext, true, false, db.profile.showCritAvoidanceFromResilience)
+
+		local critDmgReduction = value * statModContext("ADD_CRIT_DAMAGE_REDUCTION_MOD_RESILIENCE")
+		self:ProcessStat(StatLogic.Stats.CritDamageReduction, critDmgReduction, breakdownStats, link, color, statModContext, true, false, db.profile.showCritDamageReductionFromResilience)
+
+		local pvpDmgReduction = value * statModContext("ADD_PVP_DAMAGE_REDUCTION_MOD_RESILIENCE")
+		self:ProcessStat(StatLogic.Stats.PvPDamageReduction, pvpDmgReduction, breakdownStats, link, color, statModContext, true, false, db.profile.showPvpDamageReductionFromResilience)
+	elseif stat == StatLogic.Stats.DodgeReduction then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.ParryReduction then
+		if show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.Mastery then
+		if show and isBaseStat then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+		local masteryEffect = value * statModContext("ADD_MASTERY_EFFECT_MOD_MASTERY")
+		self:ProcessStat(StatLogic.Stats.MasteryEffect, masteryEffect, breakdownStats, link, color, statModContext, true, false, db.profile.showMasteryEffectFromMastery)
+	elseif stat == StatLogic.Stats.MasteryEffect then
+		if show then
+			-- Always use Percent for now. Ideally we'd set up localizations to map MasteryEffect to invididual Mastery names
+			breakdownStats["Percent"] = breakdownStats[stat] + value
+		end
+		local blockChance = value * statModContext("ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT")
+		self:ProcessStat(StatLogic.Stats.BlockChance, blockChance, breakdownStats, link, color, statModContext, true, false, db.profile.showBlockChanceFromMasteryEffect)
+	elseif stat == StatLogic.Stats.Armor then
+		local base, bonus = StatLogic:GetArmorDistribution(link, value, color)
+		local mod = statModContext("MOD_ARMOR")
+		value = base * mod + bonus
+		self:ProcessStat(StatLogic.Stats.BonusArmor, value, breakdownStats, link, color, statModContext, true, true, false)
+	elseif stat == StatLogic.Stats.BonusArmor then
+		local mod = statModContext("MOD_ARMOR")
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedArmor then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		-- TODO: Options key using wrong source stat
+		local attackPower = value * statModContext("ADD_AP_MOD_ARMOR")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromArmor)
+	elseif stat == StatLogic.Stats.GenericAttackPower then
+		local attackPower = value * statModContext("ADD_AP_MOD_GENERIC_ATTACK_POWER")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, true, false)
+
+		local rangedAttackPower = value * statModContext("ADD_RANGED_AP_MOD_GENERIC_ATTACK_POWER")
+		self:ProcessStat(StatLogic.Stats.RangedAttackPower, rangedAttackPower, breakdownStats, link, color, statModContext, true, true, false)
+	elseif stat == StatLogic.Stats.AttackPower then
+		local mod = statModContext("MOD_AP")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedAttackPower then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local spellPower = value * statModContext("ADD_SPELL_POWER_MOD_AP")
+		self:ProcessStat(StatLogic.Stats.SpellPower, spellPower, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellPowerFromAP)
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_AP")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromAP)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_AP")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromAP)
+	elseif stat == StatLogic.Stats.RangedAttackPower then
+		local mod = statModContext("MOD_RANGED_AP")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedRangedAttackPower then
+			breakdownStats[stat] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.SpellPower then
+		local mod = statModContext("MOD_SPELL_POWER")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedSpellPower then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local spellDamage = value * statModContext("ADD_SPELL_DMG_MOD_SPELL_POWER")
+		self:ProcessStat(StatLogic.Stats.SpellDamage, spellDamage, breakdownStats, link, color, statModContext, true, false, db.profile.showSpellDmgFromSpellPower)
+
+		local healingPower = value * statModContext("ADD_HEALING_MOD_SPELL_POWER")
+		self:ProcessStat(StatLogic.Stats.HealingPower, healingPower, breakdownStats, link, color, statModContext, true, false, db.profile.showHealingFromSpellPower)
+
+		local attackPower = value * statModContext("ADD_AP_MOD_SPELL_POWER")
+		self:ProcessStat(StatLogic.Stats.AttackPower, attackPower, breakdownStats, link, color, statModContext, true, false, db.profile.showAPFromSpellPower)
+	elseif stat == StatLogic.Stats.SpellDamage then
+		local mod = statModContext("MOD_SPELL_DMG")
+		if not isParentModified then
+			mod = mod * statModContext("MOD_SPELL_POWER")
+		end
+		value = value * mod
+		if isBaseStat and mod ~= 1 and (db.profile.showModifiedSpellDamage or db.profile.showModifiedSpellPower) then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+
+		local blockValue = value * statModContext("ADD_BLOCK_VALUE_MOD_SPELL_DMG")
+		self:ProcessStat(StatLogic.Stats.BlockValue, blockValue, breakdownStats, link, color, statModContext, true, false, db.profile.showBlockValueFromSpellDmg)
+	elseif stat == StatLogic.Stats.HealingPower then
+		local mod = statModContext("MOD_HEALING")
+		if not isParentModified then
+			mod = mod * statModContext("MOD_SPELL_POWER")
+		end
+		value = value * mod
+		if isBaseStat and mod ~= 1 and (db.profile.showModifiedSpellDamage or db.profile.showModifiedSpellPower) then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	elseif stat == StatLogic.Stats.BlockValue then
+		local mod = statModContext("MOD_BLOCK_VALUE")
+		value = value * mod
+		if isBaseStat and mod ~= 1 and db.profile.showModifiedBlockValue then
+			breakdownStats["Decimal"] = value
+		elseif show then
+			breakdownStats[stat] = breakdownStats[stat] + value
+		end
+	end
+end
+
 ------------------
 -- Reforging UI --
 ------------------
@@ -2669,9 +3094,9 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_ReforgingUI", function()
 		fontString.SetText = function(self, text, ...)
 			local statModContext = StatLogic:NewStatModContext({
 				profile = db:GetCurrentProfile(),
-				spec = RatingBuster:GetDisplayedSpec()
+				specGroup = RatingBuster:GetDisplayedSpecGroup()
 			})
-			og_SetText(self, RatingBuster:ProcessText(text, nil, nil, statModContext), ...)
+			og_SetText(self, RatingBuster:ProcessLine(text, "", {}, statModContext), ...)
 		end
 	end
 
@@ -2771,6 +3196,9 @@ local classArmorTypes = {
 	MAGE = {
 		[Enum.ItemArmorSubclass.Cloth] = true,
 	},
+	MONK = {
+		[Enum.ItemArmorSubclass.Leather] = true,
+	},
 	WARLOCK = {
 		[Enum.ItemArmorSubclass.Cloth] = true,
 	},
@@ -2805,63 +3233,10 @@ local armorTypes = {
 	[Enum.ItemArmorSubclass["Cloth"]] = true,
 }
 
-local specPrimaryStats = {
-	WARRIOR = {
-		StatLogic.Stats.Strength,
-		StatLogic.Stats.Strength,
-		StatLogic.Stats.Strength,
-	},
-	PALADIN = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Strength,
-		StatLogic.Stats.Strength,
-	},
-	HUNTER = {
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Agility,
-	},
-	ROGUE = {
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Agility,
-	},
-	PRIEST = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-	},
-	DEATHKNIGHT = {
-		StatLogic.Stats.Strength,
-		StatLogic.Stats.Strength,
-		StatLogic.Stats.Strength,
-	},
-	SHAMAN = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Intellect,
-	},
-	MAGE = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-	},
-	WARLOCK = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Intellect,
-	},
-	DRUID = {
-		StatLogic.Stats.Intellect,
-		StatLogic.Stats.Agility,
-		StatLogic.Stats.Intellect,
-	},
-}
-
 ---@alias SummaryCalcFunction fun(sum: StatTable, statModContext: StatModContext, sumType?, link?): number
 
 ---@class SummaryCalcData
----@field option string
+---@field option string?
 ---@field stat Stat
 ---@field func SummaryCalcFunction
 
@@ -2874,47 +3249,59 @@ local summaryCalcData = {
 	{
 		option = "sumStr",
 		stat = StatLogic.Stats.Strength,
-		func = function(sum)
-			return sum[StatLogic.Stats.Strength]
+		func = function(sum, statModContext)
+			return statModContext("MOD_STR") * (
+				sum[StatLogic.Stats.Strength]
+				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_STR_MOD_DEFENSE")
+			)
 		end,
 	},
 	-- Agility - AGI
 	{
 		option = "sumAgi",
 		stat = StatLogic.Stats.Agility,
-		func = function(sum)
-			return sum[StatLogic.Stats.Agility]
+		func = function(sum, statModContext)
+			return statModContext("MOD_AGI") * (
+				sum[StatLogic.Stats.Agility]
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_AGI_MOD_INT")
+			)
 		end,
 	},
 	-- Stamina - STA
 	{
 		option = "sumSta",
 		stat = StatLogic.Stats.Stamina,
-		func = function(sum)
-			return sum[StatLogic.Stats.Stamina]
+		func = function(sum, statModContext)
+			return statModContext("MOD_STA") * sum[StatLogic.Stats.Stamina]
 		end,
 	},
 	-- Intellect - INT
 	{
 		option = "sumInt",
 		stat = StatLogic.Stats.Intellect,
-		func = function(sum)
-			return sum[StatLogic.Stats.Intellect]
+		func = function(sum, statModContext)
+			return statModContext("MOD_INT") * sum[StatLogic.Stats.Intellect]
 		end,
 	},
 	-- Spirit - SPI
 	{
 		option = "sumSpi",
 		stat = StatLogic.Stats.Spirit,
-		func = function(sum)
-			return sum[StatLogic.Stats.Spirit]
+		func = function(sum, statModContext)
+			return statModContext("MOD_SPI") * sum[StatLogic.Stats.Spirit]
+		end,
+	},
+	{
+		stat = StatLogic.Stats.MasteryRating,
+		func = function(sum, statModContext)
+			return statModContext("MOD_MASTERY_RATING") * sum[StatLogic.Stats.MasteryRating]
 		end,
 	},
 	{
 		option = "sumMastery",
 		stat = StatLogic.Stats.Mastery,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.MasteryRating] * statModContext("ADD_MASTERY_MOD_MASTERY_RATING")
+			return summaryFunc[StatLogic.Stats.MasteryRating](sum, statModContext) * statModContext("ADD_MASTERY_MOD_MASTERY_RATING")
 		end,
 	},
 	{
@@ -2929,7 +3316,7 @@ local summaryCalcData = {
 		option = "sumHP",
 		stat = StatLogic.Stats.Health,
 		func = function(sum, statModContext)
-			return (sum[StatLogic.Stats.Health] + (sum[StatLogic.Stats.Stamina] * statModContext("ADD_HEALTH_MOD_STA"))) * statModContext("MOD_HEALTH")
+			return (sum[StatLogic.Stats.Health] + (summaryFunc[StatLogic.Stats.Stamina](sum, statModContext) * statModContext("ADD_HEALTH_MOD_STA"))) * statModContext("MOD_HEALTH")
 		end,
 	},
 	-- Mana - MANA, INT
@@ -2937,7 +3324,7 @@ local summaryCalcData = {
 		option = "sumMP",
 		stat = StatLogic.Stats.Mana,
 		func = function(sum, statModContext)
-			return (sum[StatLogic.Stats.Mana] + (sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_MOD_INT"))) * statModContext("MOD_MANA")
+			return (sum[StatLogic.Stats.Mana] + (summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_MANA_MOD_INT"))) * statModContext("MOD_MANA")
 		end,
 	},
 	-- Health Regen - HEALTH_REG
@@ -2946,8 +3333,11 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.HealthRegen,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.HealthRegen]
-				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
-				+ summaryFunc[StatLogic.Stats.Health](sum, statModContext) * statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
+				+ summaryFunc[StatLogic.Stats.Health](sum, statModContext) * (
+					statModContext("ADD_HEALTH_REG_MOD_HEALTH")
+					+ statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") * statModContext("MOD_NORMAL_HEALTH_REG") * statModContext("ADD_HEALTH_REG_MOD_NORMAL_HEALTH_REG")
+				)
 		end,
 	},
 	-- Health Regen while Out of Combat - HEALTH_REG, SPI
@@ -2956,55 +3346,72 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.HealthRegenOutOfCombat,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.HealthRegen]
-				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG")
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_NORMAL_HEALTH_REG_MOD_SPI") * statModContext("MOD_NORMAL_HEALTH_REG")
 				+ summaryFunc[StatLogic.Stats.Health](sum, statModContext) * statModContext("ADD_NORMAL_HEALTH_REG_MOD_HEALTH") * statModContext("MOD_NORMAL_HEALTH_REG")
 		end,
 	},
-	-- Mana Regen - MANA_REG, SPI, INT
 	{
-		option = "sumMP5",
-		stat = StatLogic.Stats.ManaRegen,
+		option = "sumGenericManaRegen",
+		stat = StatLogic.Stats.GenericManaRegen,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.ManaRegen]
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_REG_MOD_INT")
-				+ math.min(statModContext("ADD_MANA_REG_MOD_NORMAL_MANA_REG"), 1) * statModContext("MOD_NORMAL_MANA_REG") * (
-					sum[StatLogic.Stats.Intellect] * statModContext("ADD_NORMAL_MANA_REG_MOD_INT")
-					+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_MANA_REG_MOD_SPI")
-				) + summaryFunc[StatLogic.Stats.Mana](sum, statModContext) * statModContext("ADD_MANA_REG_MOD_MANA")
+			return sum[StatLogic.Stats.GenericManaRegen]
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_GENERIC_MANA_REGEN_MOD_INT")
+				+ summaryFunc[StatLogic.Stats.Mana](sum, statModContext) * statModContext("ADD_GENERIC_MANA_REGEN_MOD_MANA")
 		end,
 	},
-	-- Mana Regen while Not casting - MANA_REG, SPI, INT
 	{
-		option = "sumMP5NC",
+		option = "sumNormalManaRegen",
+		stat = StatLogic.Stats.NormalManaRegen,
+		func = function(sum, statModContext)
+			return statModContext("MOD_NORMAL_MANA_REGEN") * (
+				summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_NORMAL_MANA_REGEN_MOD_INT")
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_NORMAL_MANA_REGEN_MOD_SPI")
+			)
+		end,
+	},
+	{
+		option = "sumManaRegen",
+		stat = StatLogic.Stats.ManaRegen,
+		func = function(sum, statModContext)
+			return summaryFunc[StatLogic.Stats.GenericManaRegen](sum, statModContext) * statModContext("ADD_MANA_REGEN_MOD_GENERIC_MANA_REGEN")
+				+ summaryFunc[StatLogic.Stats.NormalManaRegen](sum, statModContext) * math.min(statModContext("ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"), 1)
+		end,
+	},
+	{
+		option = "sumManaRegenNotCasting",
 		stat = StatLogic.Stats.ManaRegenNotCasting,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.ManaRegen]
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_MANA_REG_MOD_INT")
-				+ statModContext("MOD_NORMAL_MANA_REG") * (
-					sum[StatLogic.Stats.Intellect] * statModContext("ADD_NORMAL_MANA_REG_MOD_INT")
-					+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_NORMAL_MANA_REG_MOD_SPI")
-				) + summaryFunc[StatLogic.Stats.Mana](sum, statModContext) * statModContext("ADD_MANA_REG_MOD_MANA")
+			return summaryFunc[StatLogic.Stats.GenericManaRegen](sum, statModContext) * statModContext("ADD_MANA_REGEN_NOT_CASTING_MOD_GENERIC_MANA_REGEN")
+				+ summaryFunc[StatLogic.Stats.NormalManaRegen](sum, statModContext) * statModContext("ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN")
+		end,
+	},
+	{
+		option = "sumManaRegenOutOfCombat",
+		stat = StatLogic.Stats.ManaRegenOutOfCombat,
+		func = function(sum, statModContext)
+			return summaryFunc[StatLogic.Stats.GenericManaRegen](sum, statModContext) * statModContext("ADD_MANA_REGEN_OUT_OF_COMBAT_MOD_GENERIC_MANA_REGEN")
+				+ summaryFunc[StatLogic.Stats.NormalManaRegen](sum, statModContext) * statModContext("ADD_MANA_REGEN_OUT_OF_COMBAT_MOD_NORMAL_MANA_REGEN")
 		end,
 	},
 	---------------------
 	-- Physical Damage --
 	---------------------
-	-- Attack Power - AP, STR, AGI
 	{
 		option = "sumAP",
 		stat = StatLogic.Stats.AttackPower,
 		func = function(sum, statModContext)
+			local apPerSP = statModContext("ADD_AP_MOD_SPELL_POWER")
 			return statModContext("MOD_AP") * (
-				-- Feral Druid Predatory Strikes
-				(sum[StatLogic.Stats.FeralAttackPower] > 0 and statModContext("MOD_FERAL_AP") or 1) * (
-					sum[StatLogic.Stats.AttackPower]
-					+ sum[StatLogic.Stats.FeralAttackPower] * statModContext("ADD_AP_MOD_FERAL_AP")
-				) + sum[StatLogic.Stats.Strength] * statModContext("ADD_AP_MOD_STR")
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_AP_MOD_AGI")
-				+ sum[StatLogic.Stats.Stamina] * statModContext("ADD_AP_MOD_STA")
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_AP_MOD_INT")
+				sum[StatLogic.Stats.AttackPower]
+				+ sum[StatLogic.Stats.GenericAttackPower] * statModContext("ADD_AP_MOD_GENERIC_ATTACK_POWER")
+				+ sum[StatLogic.Stats.FeralAttackPower] * statModContext("ADD_AP_MOD_FERAL_ATTACK_POWER")
+				+ summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_AP_MOD_STR")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_AP_MOD_AGI")
+				+ summaryFunc[StatLogic.Stats.Stamina](sum, statModContext) * statModContext("ADD_AP_MOD_STA")
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_AP_MOD_INT")
 				+ summaryFunc[StatLogic.Stats.Armor](sum, statModContext) * statModContext("ADD_AP_MOD_ARMOR")
 				+ sum[StatLogic.Stats.Defense] * statModContext("ADD_AP_MOD_DEFENSE")
+				+ (apPerSP == 0 and 0 or apPerSP * summaryFunc[StatLogic.Stats.SpellPower](sum, statModContext))
 			)
 		end,
 	},
@@ -3013,14 +3420,21 @@ local summaryCalcData = {
 		option = "sumRAP",
 		stat = StatLogic.Stats.RangedAttackPower,
 		func = function(sum, statModContext)
-			return (statModContext("MOD_RANGED_AP") + statModContext("MOD_AP") - 1) * (
+			return statModContext("MOD_RANGED_AP") * (
 				sum[StatLogic.Stats.RangedAttackPower]
-				+ sum[StatLogic.Stats.AttackPower]
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_RANGED_AP_MOD_AGI")
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_RANGED_AP_MOD_INT")
-				+ sum[StatLogic.Stats.Stamina] * statModContext("ADD_AP_MOD_STA")
+				+ sum[StatLogic.Stats.GenericAttackPower] * statModContext("ADD_RANGED_AP_MOD_GENERIC_ATTACK_POWER")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_RANGED_AP_MOD_AGI")
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_RANGED_AP_MOD_INT")
+				+ summaryFunc[StatLogic.Stats.Stamina](sum, statModContext) * statModContext("ADD_AP_MOD_STA")
 				+ summaryFunc[StatLogic.Stats.Armor](sum, statModContext) * statModContext("ADD_AP_MOD_ARMOR")
 			)
+		end,
+	},
+	{
+		stat = StatLogic.Stats.HitRating,
+		func = function(sum, statModContext)
+			return sum[StatLogic.Stats.HitRating]
+				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_HIT_RATING_MOD_SPI")
 		end,
 	},
 	-- Hit Chance - MELEE_HIT_RATING, WEAPON_SKILL
@@ -3029,15 +3443,16 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.MeleeHit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeHit]
-				+ sum[StatLogic.Stats.MeleeHitRating] * statModContext("ADD_MELEE_HIT_MOD_MELEE_HIT_RATING")
+				+ summaryFunc[StatLogic.Stats.MeleeHitRating](sum, statModContext) * statModContext("ADD_MELEE_HIT_MOD_MELEE_HIT_RATING")
 		end,
 	},
 	-- Hit Rating - MELEE_HIT_RATING
 	{
 		option = "sumHitRating",
 		stat = StatLogic.Stats.MeleeHitRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeHitRating]
+				+ summaryFunc[StatLogic.Stats.HitRating](sum, statModContext) * statModContext("ADD_MELEE_HIT_RATING_MOD_HIT_RATING")
 		end,
 	},
 	-- Ranged Hit Chance - MELEE_HIT_RATING, RANGED_HIT_RATING, AGI
@@ -3046,15 +3461,26 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.RangedHit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedHit]
-				+ sum[StatLogic.Stats.RangedHitRating] * statModContext("ADD_RANGED_HIT_MOD_RANGED_HIT_RATING")
+				+ summaryFunc[StatLogic.Stats.RangedHitRating](sum, statModContext) * statModContext("ADD_RANGED_HIT_MOD_RANGED_HIT_RATING")
 		end,
 	},
 	-- Ranged Hit Rating - RANGED_HIT_RATING
 	{
 		option = "sumRangedHitRating",
 		stat = StatLogic.Stats.RangedHitRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedHitRating]
+				+ summaryFunc[StatLogic.Stats.HitRating](sum, statModContext) * statModContext("ADD_RANGED_HIT_RATING_MOD_HIT_RATING")
+		end,
+	},
+	{
+		stat = StatLogic.Stats.CritRating,
+		func = function (sum, statModContext)
+			return statModContext("MOD_CRIT_RATING") * (
+				sum[StatLogic.Stats.CritRating]
+				+ summaryFunc[StatLogic.Stats.DodgeRating](sum, statModContext) * statModContext("ADD_CRIT_RATING_MOD_DODGE_RATING")
+				+ summaryFunc[StatLogic.Stats.ParryRating](sum, statModContext) * statModContext("ADD_CRIT_RATING_MOD_PARRY_RATING")
+			)
 		end,
 	},
 	-- Crit Chance - MELEE_CRIT, MELEE_CRIT_RATING, AGI
@@ -3064,15 +3490,17 @@ local summaryCalcData = {
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeCrit]
 				+ sum[StatLogic.Stats.MeleeCritRating] * statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_MELEE_CRIT_MOD_AGI")
+				+ summaryFunc[StatLogic.Stats.MeleeCritRating](sum, statModContext) * statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_MELEE_CRIT_MOD_AGI")
 		end,
 	},
 	-- Crit Rating - MELEE_CRIT_RATING
 	{
 		option = "sumCritRating",
 		stat = StatLogic.Stats.MeleeCritRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeCritRating]
+				+ summaryFunc[StatLogic.Stats.CritRating](sum, statModContext) * statModContext("ADD_MELEE_CRIT_RATING_MOD_CRIT_RATING")
 		end,
 	},
 	-- Ranged Crit Chance - MELEE_CRIT_RATING, RANGED_CRIT_RATING, AGI
@@ -3081,16 +3509,23 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.RangedCrit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedCrit]
-				+ sum[StatLogic.Stats.RangedCritRating] * statModContext("ADD_RANGED_CRIT_MOD_RANGED_CRIT_RATING")
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_RANGED_CRIT_MOD_AGI")
+				+ summaryFunc[StatLogic.Stats.RangedCritRating](sum, statModContext) * statModContext("ADD_RANGED_CRIT_MOD_RANGED_CRIT_RATING")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_RANGED_CRIT_MOD_AGI")
 		end,
 	},
 	-- Ranged Crit Rating - RANGED_CRIT_RATING
 	{
 		option = "sumRangedCritRating",
 		stat = StatLogic.Stats.RangedCritRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedCritRating]
+				+ summaryFunc[StatLogic.Stats.CritRating](sum, statModContext) * statModContext("ADD_RANGED_CRIT_RATING_MOD_CRIT_RATING")
+		end,
+	},
+	{
+		stat = StatLogic.Stats.HasteRating,
+		func = function (sum, statModContext)
+			return statModContext("MOD_HASTE_RATING") * sum[StatLogic.Stats.HasteRating]
 		end,
 	},
 	-- Haste - MELEE_HASTE_RATING
@@ -3098,15 +3533,17 @@ local summaryCalcData = {
 		option = "sumHaste",
 		stat = StatLogic.Stats.MeleeHaste,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.MeleeHasteRating] * statModContext("ADD_MELEE_HASTE_MOD_MELEE_HASTE_RATING")
+			return sum[StatLogic.Stats.MeleeHaste]
+				+ summaryFunc[StatLogic.Stats.MeleeHasteRating](sum, statModContext) * statModContext("ADD_MELEE_HASTE_MOD_MELEE_HASTE_RATING")
 		end,
 	},
 	-- Haste Rating - MELEE_HASTE_RATING
 	{
 		option = "sumHasteRating",
 		stat = StatLogic.Stats.MeleeHasteRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeHasteRating]
+				+ summaryFunc[StatLogic.Stats.HasteRating](sum, statModContext) * statModContext("ADD_MELEE_HASTE_RATING_MOD_HASTE_RATING")
 		end,
 	},
 	-- Ranged Haste - RANGED_HASTE_RATING
@@ -3114,15 +3551,17 @@ local summaryCalcData = {
 		option = "sumRangedHaste",
 		stat = StatLogic.Stats.RangedHaste,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.RangedHasteRating] * statModContext("ADD_RANGED_HASTE_MOD_RANGED_HASTE_RATING")
+			return sum[StatLogic.Stats.RangedHaste]
+				+ summaryFunc[StatLogic.Stats.RangedHasteRating](sum, statModContext) * statModContext("ADD_RANGED_HASTE_MOD_RANGED_HASTE_RATING")
 		end,
 	},
 	-- Ranged Haste Rating - RANGED_HASTE_RATING
 	{
 		option = "sumRangedHasteRating",
 		stat = StatLogic.Stats.RangedHasteRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.RangedHasteRating]
+				+ summaryFunc[StatLogic.Stats.HasteRating](sum, statModContext) * statModContext("ADD_RANGED_HASTE_RATING_MOD_HASTE_RATING")
 		end,
 	},
 	{
@@ -3138,15 +3577,16 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.Expertise,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.Expertise]
-				+ sum[StatLogic.Stats.ExpertiseRating] * statModContext("ADD_EXPERTISE_MOD_EXPERTISE_RATING")
+				+ summaryFunc[StatLogic.Stats.ExpertiseRating](sum, statModContext) * statModContext("ADD_EXPERTISE_MOD_EXPERTISE_RATING")
 		end,
 	},
 	-- Expertise Rating - EXPERTISE_RATING
 	{
 		option = "sumExpertiseRating",
 		stat = StatLogic.Stats.ExpertiseRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ExpertiseRating]
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_EXPERTISE_RATING_MOD_SPI")
 		end,
 	},
 	-- Dodge Reduction - EXPERTISE_RATING, WEAPON_SKILL
@@ -3158,7 +3598,9 @@ local summaryCalcData = {
 			if addon.tocversion < 30000 then
 				effect = floor(effect)
 			end
-			return effect * statModContext("ADD_DODGE_REDUCTION_MOD_EXPERTISE") + sum[StatLogic.Stats.WeaponSkill] * 0.1
+			return sum[StatLogic.Stats.DodgeReduction]
+				+ effect * statModContext("ADD_DODGE_REDUCTION_MOD_EXPERTISE")
+				+ sum[StatLogic.Stats.WeaponSkill] * 0.1
 		end,
 	},
 	-- Parry Reduction - EXPERTISE_RATING
@@ -3170,7 +3612,8 @@ local summaryCalcData = {
 			if addon.tocversion < 30000 then
 				effect = floor(effect)
 			end
-			return effect * statModContext("ADD_PARRY_REDUCTION_MOD_EXPERTISE")
+			return sum[StatLogic.Stats.ParryReduction]
+				+ effect * statModContext("ADD_PARRY_REDUCTION_MOD_EXPERTISE")
 		end,
 	},
 	-- Weapon Average Damage - StatLogic.Stats.MinWeaponDamage, StatLogic.Stats.MaxWeaponDamage
@@ -3219,17 +3662,30 @@ local summaryCalcData = {
 	------------------------------
 	-- Spell Damage - SPELL_DMG, STA, INT, SPI
 	{
+		option = "sumSpellPower",
+		stat = StatLogic.Stats.SpellPower,
+		func = function(sum, statModContext)
+			local spPerAP = statModContext("ADD_SPELL_POWER_MOD_AP")
+			return statModContext("MOD_SPELL_POWER") * (
+				sum[StatLogic.Stats.SpellPower]
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_SPELL_POWER_MOD_INT")
+				+ (spPerAP == 0 and 0 or spPerAP * summaryFunc[StatLogic.Stats.AttackPower](sum, statModContext))
+			)
+		end,
+	},
+	{
 		option = "sumSpellDmg",
 		stat = StatLogic.Stats.SpellDamage,
 		func = function(sum, statModContext)
 			return statModContext("MOD_SPELL_DMG") * (
 				sum[StatLogic.Stats.SpellDamage]
-				+ sum[StatLogic.Stats.Strength] * statModContext("ADD_SPELL_DMG_MOD_STR")
-				+ sum[StatLogic.Stats.Stamina] * (statModContext("ADD_SPELL_DMG_MOD_STA") + statModContext("ADD_SPELL_DMG_MOD_PET_STA") * statModContext("MOD_PET_STA") * statModContext("ADD_PET_STA_MOD_STA"))
-				+ sum[StatLogic.Stats.Intellect] * (
+				+ summaryFunc[StatLogic.Stats.SpellPower](sum, statModContext) * statModContext("ADD_SPELL_DMG_MOD_SPELL_POWER")
+				+ summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_SPELL_DMG_MOD_STR")
+				+ summaryFunc[StatLogic.Stats.Stamina](sum, statModContext) * (statModContext("ADD_SPELL_DMG_MOD_STA") + statModContext("ADD_SPELL_DMG_MOD_PET_STA") * statModContext("MOD_PET_STA") * statModContext("ADD_PET_STA_MOD_STA"))
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * (
 					(statModContext("ADD_SPELL_DMG_MOD_INT") + statModContext("ADD_SPELL_DMG_MOD_PET_INT") * statModContext("MOD_PET_INT") * statModContext("ADD_PET_INT_MOD_INT"))
 					+ statModContext("ADD_SPELL_DMG_MOD_MANA") * statModContext("MOD_MANA") * statModContext("ADD_MANA_MOD_INT")
-				) + sum[StatLogic.Stats.Spirit] * statModContext("ADD_SPELL_DMG_MOD_SPI")
+				) + summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_SPELL_DMG_MOD_SPI")
 				+ summaryFunc[StatLogic.Stats.AttackPower](sum, statModContext) * statModContext("ADD_SPELL_DMG_MOD_AP")
 				+ sum[StatLogic.Stats.Defense] * statModContext("ADD_SPELL_DMG_MOD_DEFENSE")
 			)
@@ -3267,8 +3723,10 @@ local summaryCalcData = {
 		option = "sumNatureDmg",
 		stat = StatLogic.Stats.NatureDamage,
 		func = function(sum, statModContext)
-			return statModContext("MOD_SPELL_DMG") * sum[StatLogic.Stats.NatureDamage]
-				+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
+			return statModContext("MOD_SPELL_DMG") * (
+				sum[StatLogic.Stats.NatureDamage]
+				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_NATURE_DAMAGE_MOD_AGI")
+			) + summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext)
 		 end,
 	},
 	-- Frost Damage - FROST_SPELL_DMG, SPELL_DMG, INT
@@ -3296,12 +3754,13 @@ local summaryCalcData = {
 		func = function(sum, statModContext)
 			return statModContext("MOD_HEALING") * (
 				sum[StatLogic.Stats.HealingPower]
-				+ (sum[StatLogic.Stats.Strength] * statModContext("ADD_HEALING_MOD_STR"))
-				+ (sum[StatLogic.Stats.Agility] * statModContext("ADD_HEALING_MOD_AGI"))
-				+ (sum[StatLogic.Stats.Intellect] * (
+				+ summaryFunc[StatLogic.Stats.SpellPower](sum, statModContext) * statModContext("ADD_HEALING_MOD_SPELL_POWER")
+				+ (summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_HEALING_MOD_STR"))
+				+ (summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_HEALING_MOD_AGI"))
+				+ (summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * (
 					statModContext("ADD_HEALING_MOD_INT"))
 					+ statModContext("ADD_HEALING_MOD_MANA") * statModContext("MOD_MANA") * statModContext("ADD_MANA_MOD_INT")
-				) + (sum[StatLogic.Stats.Spirit] * statModContext("ADD_HEALING_MOD_SPI"))
+				) + (summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_HEALING_MOD_SPI"))
 				+ (summaryFunc[StatLogic.Stats.AttackPower](sum, statModContext) * statModContext("ADD_HEALING_MOD_AP"))
 			)
 		end,
@@ -3313,6 +3772,7 @@ local summaryCalcData = {
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHit]
 				+ summaryFunc[StatLogic.Stats.SpellHitRating](sum, statModContext) * statModContext("ADD_SPELL_HIT_MOD_SPELL_HIT_RATING")
+				+ summaryFunc[StatLogic.Stats.Expertise](sum, statModContext) * statModContext("ADD_SPELL_HIT_MOD_EXPERTISE")
 		end,
 	},
 	-- Spell Hit Rating - SPELL_HIT_RATING
@@ -3321,7 +3781,8 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.SpellHitRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHitRating]
-				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_SPELL_HIT_RATING_MOD_SPI")
+				+ summaryFunc[StatLogic.Stats.HitRating](sum, statModContext) * statModContext("ADD_SPELL_HIT_RATING_MOD_HIT_RATING")
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_SPELL_HIT_RATING_MOD_SPI")
 		end,
 	},
 	-- Spell Crit Chance - SPELL_CRIT_RATING, INT
@@ -3331,7 +3792,7 @@ local summaryCalcData = {
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellCrit]
 				+ summaryFunc[StatLogic.Stats.SpellCritRating](sum, statModContext) * statModContext("ADD_SPELL_CRIT_MOD_SPELL_CRIT_RATING")
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_SPELL_CRIT_MOD_INT")
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_SPELL_CRIT_MOD_INT")
 		end,
 	},
 	-- Spell Crit Rating - SPELL_CRIT_RATING
@@ -3340,7 +3801,8 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.SpellCritRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellCritRating]
-				+ sum[StatLogic.Stats.Spirit] * statModContext("ADD_SPELL_CRIT_RATING_MOD_SPI")
+				+ summaryFunc[StatLogic.Stats.CritRating](sum, statModContext) * statModContext("ADD_SPELL_CRIT_RATING_MOD_CRIT_RATING")
+				+ summaryFunc[StatLogic.Stats.Spirit](sum, statModContext) * statModContext("ADD_SPELL_CRIT_RATING_MOD_SPI")
 		end,
 	},
 	-- Spell Haste - SPELL_HASTE_RATING
@@ -3348,15 +3810,17 @@ local summaryCalcData = {
 		option = "sumSpellHaste",
 		stat = StatLogic.Stats.SpellHaste,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.SpellHasteRating] * statModContext("ADD_SPELL_HASTE_MOD_SPELL_HASTE_RATING")
+			return sum[StatLogic.Stats.SpellHaste]
+				+ summaryFunc[StatLogic.Stats.SpellHasteRating](sum, statModContext) * statModContext("ADD_SPELL_HASTE_MOD_SPELL_HASTE_RATING")
 		end,
 	},
 	-- Spell Haste Rating - SPELL_HASTE_RATING
 	{
 		option = "sumSpellHasteRating",
 		stat = StatLogic.Stats.SpellHasteRating,
-		func = function(sum)
+		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.SpellHasteRating]
+				+ summaryFunc[StatLogic.Stats.HasteRating](sum, statModContext) * statModContext("ADD_SPELL_HASTE_RATING_MOD_HASTE_RATING")
 		end,
 	},
 	-- Spell Penetration - SPELLPEN
@@ -3377,8 +3841,8 @@ local summaryCalcData = {
 		func = function(sum, statModContext)
 			return statModContext("MOD_ARMOR") * sum[StatLogic.Stats.Armor]
 				+ sum[StatLogic.Stats.BonusArmor]
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_BONUS_ARMOR_MOD_AGI")
-				+ sum[StatLogic.Stats.Intellect] * statModContext("ADD_BONUS_ARMOR_MOD_INT")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_BONUS_ARMOR_MOD_AGI")
+				+ summaryFunc[StatLogic.Stats.Intellect](sum, statModContext) * statModContext("ADD_BONUS_ARMOR_MOD_INT")
 		 end,
 	},
 	-- Dodge Chance Before DR - DODGE, DODGE_RATING, DEFENSE, AGI
@@ -3386,11 +3850,9 @@ local summaryCalcData = {
 		option = "sumDodgeBeforeDR",
 		stat = StatLogic.Stats.DodgeBeforeDR,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.Dodge]
-				+ sum[StatLogic.Stats.DodgeRating] * statModContext("ADD_DODGE_MOD_DODGE_RATING")
+			return sum[StatLogic.Stats.DodgeRating] * statModContext("ADD_DODGE_MOD_DODGE_RATING")
 				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_DODGE_MOD_DEFENSE")
-				+ sum[StatLogic.Stats.Agility] * statModContext("ADD_DODGE_MOD_AGI")
-				+ summaryFunc[StatLogic.Stats.SpellCrit](sum, statModContext) * statModContext("ADD_DODGE_MOD_SPELL_CRIT")
+				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_DODGE_MOD_AGI")
 		end,
 	},
 	-- Dodge Chance
@@ -3406,7 +3868,11 @@ local summaryCalcData = {
 					dodge = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, equippedDodge + dodge) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Dodge, equippedDodge)
 				end
 			end
-			return dodge
+			return statModContext("MOD_DODGE") * (
+				dodge
+				+ sum[StatLogic.Stats.Dodge]
+				+ summaryFunc[StatLogic.Stats.SpellCrit](sum, statModContext) * statModContext("ADD_DODGE_MOD_SPELL_CRIT")
+			)
 		 end,
 	},
 	-- Dodge Rating - DODGE_RATING
@@ -3422,11 +3888,9 @@ local summaryCalcData = {
 		option = "sumParryBeforeDR",
 		stat = StatLogic.Stats.ParryBeforeDR,
 		func = function(sum, statModContext)
-			return GetParryChance() > 0 and (
-				sum[StatLogic.Stats.Parry]
-				+ summaryFunc[StatLogic.Stats.ParryRating](sum, statModContext) * statModContext("ADD_PARRY_MOD_PARRY_RATING")
+			return summaryFunc[StatLogic.Stats.ParryRating](sum, statModContext) * statModContext("ADD_PARRY_MOD_PARRY_RATING")
 				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_PARRY_MOD_DEFENSE")
-			) or 0
+				+ summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_PARRY_MOD_STR")
 		end,
 	},
 	-- Parry Chance
@@ -3442,7 +3906,10 @@ local summaryCalcData = {
 					parry = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, equippedParry + parry) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Parry, equippedParry)
 				end
 			end
-			return parry
+			return GetParryChance() > 0 and (
+				parry
+				+ sum[StatLogic.Stats.Parry]
+			) or 0
 		 end,
 	},
 	-- Parry Rating - PARRY_RATING
@@ -3451,19 +3918,34 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.ParryRating,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.ParryRating]
-				+ sum[StatLogic.Stats.Strength] * statModContext("ADD_PARRY_RATING_MOD_STR")
+				+ summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_PARRY_RATING_MOD_STR")
+		end,
+	},
+	{
+		option = "sumBlockChanceBeforeDR",
+		stat = StatLogic.Stats.BlockChanceBeforeDR,
+		func = function(sum, statModContext)
+			return sum[StatLogic.Stats.BlockRating] * statModContext("ADD_BLOCK_MOD_BLOCK_RATING")
+				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_BLOCK_CHANCE_MOD_DEFENSE")
+				+ summaryFunc[StatLogic.Stats.MasteryEffect](sum, statModContext) * statModContext("ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT")
 		end,
 	},
 	-- Block Chance - BLOCK, BLOCK_RATING, DEFENSE
 	{
 		option = "sumBlock",
 		stat = StatLogic.Stats.BlockChance,
-		func = function(sum, statModContext)
+		func = function(sum, statModContext, sumType)
+			local blockChance = summaryFunc[StatLogic.Stats.BlockChanceBeforeDR](sum, statModContext)
+			if db.profile.enableAvoidanceDiminishingReturns then
+				if (sumType == "diff1") or (sumType == "diff2") then
+					blockChance = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.BlockChance, blockChance)
+				elseif sumType == "sum" then
+					blockChance = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.BlockChance, equippedBlock + blockChance) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.BlockChance, equippedBlock)
+				end
+			end
 			return GetBlockChance() > 0 and (
-				sum[StatLogic.Stats.BlockChance]
-				+ sum[StatLogic.Stats.BlockRating] * statModContext("ADD_BLOCK_MOD_BLOCK_RATING")
-				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_BLOCK_CHANCE_MOD_DEFENSE")
-				+ summaryFunc[StatLogic.Stats.MasteryEffect](sum, statModContext) * statModContext("ADD_BLOCK_CHANCE_MOD_MASTERY_EFFECT")
+				blockChance
+				+ sum[StatLogic.Stats.BlockChance]
 			) or 0
 		end,
 	},
@@ -3483,7 +3965,7 @@ local summaryCalcData = {
 			return GetBlockChance() > 0 and (
 				statModContext("MOD_BLOCK_VALUE") * (
 					sum[StatLogic.Stats.BlockValue]
-					+ sum[StatLogic.Stats.Strength] * statModContext("ADD_BLOCK_VALUE_MOD_STR")
+					+ summaryFunc[StatLogic.Stats.Strength](sum, statModContext) * statModContext("ADD_BLOCK_VALUE_MOD_STR")
 					+ summaryFunc[StatLogic.Stats.SpellDamage](sum, statModContext) * statModContext("ADD_BLOCK_VALUE_MOD_SPELL_DMG")
 				)
 			) or 0
@@ -3502,15 +3984,15 @@ local summaryCalcData = {
 		option = "sumHitAvoid",
 		stat = StatLogic.Stats.Miss,
 		func = function(sum, statModContext, sumType)
-			local missed = summaryFunc[StatLogic.Stats.MissBeforeDR](sum, statModContext)
+			local miss = summaryFunc[StatLogic.Stats.MissBeforeDR](sum, statModContext)
 			if db.profile.enableAvoidanceDiminishingReturns then
 				if (sumType == "diff1") or (sumType == "diff2") then
-					missed = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, missed)
+					miss = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, miss)
 				elseif sumType == "sum" then
-					missed = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, equippedMissed + missed) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, equippedMissed)
+					miss = StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, equippedMiss + miss) - StatLogic:GetAvoidanceGainAfterDR(StatLogic.Stats.Miss, equippedMiss)
 				end
 			end
-			return missed
+			return miss
 		 end,
 	},
 	-- Defense - DEFENSE_RATING
@@ -3529,12 +4011,12 @@ local summaryCalcData = {
 		func = function(sum, statModContext, sumType, link)
 			local dodge = summaryFunc[StatLogic.Stats.Dodge](sum, statModContext, sumType, link)
 			local parry = summaryFunc[StatLogic.Stats.Parry](sum, statModContext, sumType, link)
-			local missed = summaryFunc[StatLogic.Stats.Miss](sum, statModContext, sumType, link)
+			local miss = summaryFunc[StatLogic.Stats.Miss](sum, statModContext, sumType, link)
 			local block = 0
 			if db.profile.sumAvoidWithBlock then
 				block = summaryFunc[StatLogic.Stats.BlockChance](sum, statModContext, sumType, link)
 			end
-			return parry + dodge + missed + block
+			return parry + dodge + miss + block
 		end,
 	},
 	-- Crit Avoidance - RESILIENCE_RATING, DEFENSE
@@ -3542,17 +4024,51 @@ local summaryCalcData = {
 		option = "sumCritAvoid",
 		stat = StatLogic.Stats.CritAvoidance,
 		func = function(sum, statModContext)
-			return sum[StatLogic.Stats.ResilienceRating] * statModContext("ADD_RESILIENCE_MOD_RESILIENCE_RATING") * statModContext("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
+			return summaryFunc[StatLogic.Stats.Resilience](sum, statModContext) * statModContext("ADD_CRIT_AVOIDANCE_MOD_RESILIENCE")
 				+ summaryFunc[StatLogic.Stats.Defense](sum, statModContext) * statModContext("ADD_CRIT_AVOIDANCE_MOD_DEFENSE")
 		 end,
 	},
 	-- Resilience - RESILIENCE_RATING
 	{
-		option = "sumResilience",
+		option = "sumResilienceRating",
 		stat = StatLogic.Stats.ResilienceRating,
 		func = function(sum)
 			return sum[StatLogic.Stats.ResilienceRating]
 		end,
+	},
+	{
+		stat = StatLogic.Stats.ResilienceBeforeDR,
+		func = function(sum, statModContext)
+			return summaryFunc[StatLogic.Stats.ResilienceRating](sum, statModContext) * statModContext("ADD_RESILIENCE_MOD_RESILIENCE_RATING")
+		end,
+	},
+	{
+		option = "sumResilience",
+		stat = StatLogic.Stats.Resilience,
+		func = function(sum, statModContext, sumType)
+			local resilience = summaryFunc[StatLogic.Stats.ResilienceBeforeDR](sum, statModContext)
+			if db.profile.enableAvoidanceDiminishingReturns then
+				if (sumType == "diff1") or (sumType == "diff2") then
+					resilience = StatLogic:GetResilienceEffectGainAfterDR(resilience)
+				elseif sumType == "sum" then
+					resilience = StatLogic:GetResilienceEffectGainAfterDR(equippedResilience + resilience) - StatLogic:GetResilienceEffectGainAfterDR(equippedResilience)
+				end
+			end
+			return resilience
+		 end,
+	},
+	{
+		stat = StatLogic.Stats.PvpPowerRating,
+		func = function(sum)
+			return sum[StatLogic.Stats.PvpPowerRating]
+		end,
+	},
+	{
+		option = "sumPvpPower",
+		stat = StatLogic.Stats.PvpPower,
+		func = function(sum, statModContext)
+			return summaryFunc[StatLogic.Stats.PvpPowerRating](sum, statModContext) * statModContext("ADD_PVP_POWER_MOD_PVP_POWER_RATING")
+		 end,
 	},
 	-- Arcane Resistance - ARCANE_RES
 	{
@@ -3639,6 +4155,91 @@ local function WriteSummary(tooltip, output)
 	if db.global.sumBlankLineAfter then
 		tooltip:AddLine(" ")
 	end
+end
+
+local primaryStats = {
+	StatLogic.Stats.Strength,
+	StatLogic.Stats.Agility,
+	StatLogic.Stats.Stamina,
+	StatLogic.Stats.Intellect,
+	StatLogic.Stats.Spirit,
+}
+
+local primaryStatsByClassAndSpec = {
+	ROGUE = {
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+	},
+	HUNTER = {
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Agility,
+	},
+	WARRIOR = {
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	DEATHKNIGHT = {
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	PRIEST = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	MAGE = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	WARLOCK = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Intellect,
+	},
+	DRUID = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Intellect,
+	},
+	PALADIN = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Strength,
+		StatLogic.Stats.Strength,
+	},
+	SHAMAN = {
+		StatLogic.Stats.Intellect,
+		StatLogic.Stats.Agility,
+		StatLogic.Stats.Intellect,
+	},
+}
+
+local function GetInferredPrimaryStat()
+	local _, class = UnitClass("player")
+	local spec = GetPrimaryTalentTree()
+	if not class or not spec then
+		return nil
+	end
+	return primaryStatsByClassAndSpec[class][spec]
+end
+
+local function GetPrimaryStat()
+	if addon.tocversion < 40000 then
+		return nil
+	end
+	if not GetSpecialization or not GetSpecializationInfo then
+		return GetInferredPrimaryStat()
+	end
+	local spec = GetSpecialization()
+	if not spec then
+		return nil
+	end
+	local specPrimaryStat = select(6, GetSpecializationInfo(spec))
+	return primaryStats[specPrimaryStat]
 end
 
 function RatingBuster:StatSummary(tooltip, link, statModContext)
@@ -3731,8 +4332,8 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 	local numLines = StatLogic:GetItemTooltipNumLines(link)
 
 	-- Check Cache
-	local profileSpec = statModContext.profile .. statModContext.spec
-	local cached = cache[profileSpec][id]
+	local cacheKey = statModContext:CacheKey()
+	local cached = cache[cacheKey][id]
 	if cached and cached.numLines == numLines then
 		if table.maxn(cached) == 0 then return end
 		WriteSummary(tooltip, cached)
@@ -3748,13 +4349,10 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 		statData.sum = nil
 	end
 
-	if db.global.sumIgnoreNonPrimaryStat and addon.tocversion >= 40000 then
-		local spec = GetPrimaryTalentTree()
-		if spec then
-			local primaryStat = specPrimaryStats[class][spec]
-			if statData.sum[primaryStat] == 0 then
-				return
-			end
+	if db.global.sumIgnoreNonPrimaryStat then
+		local primaryStat = GetPrimaryStat()
+		if primaryStat and statData.sum[primaryStat] == 0 then
+			return
 		end
 	end
 
@@ -3770,14 +4368,6 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 		else
 			statData.diff1, statData.diff2 = StatLogic:GetDiff(link, nil, nil, db.global.sumIgnoreEnchant, db.global.sumIgnoreGems, db.global.sumIgnoreExtraSockets, red, yellow, blue, meta)
 		end
-	end
-	-- Apply Base Stat Mods
-	for _, v in pairs(statData) do
-		v[StatLogic.Stats.Strength] = (v[StatLogic.Stats.Strength] or 0) * statModContext("MOD_STR")
-		v[StatLogic.Stats.Agility] = (v[StatLogic.Stats.Agility] or 0) * statModContext("MOD_AGI")
-		v[StatLogic.Stats.Stamina] = (v[StatLogic.Stats.Stamina] or 0) * statModContext("MOD_STA")
-		v[StatLogic.Stats.Intellect] = (v[StatLogic.Stats.Intellect] or 0) * statModContext("MOD_INT")
-		v[StatLogic.Stats.Spirit] = (v[StatLogic.Stats.Spirit] or 0) * statModContext("MOD_SPI")
 	end
 
 	local summary = {}
@@ -3914,7 +4504,7 @@ function RatingBuster:StatSummary(tooltip, link, statModContext)
 		tsort(output, sumSortAlphaComp)
 	end
 	-- Write cache
-	cache[profileSpec][id] = output
+	cache[cacheKey][id] = output
 	if table.maxn(output) == 0 then return end
 	WriteSummary(tooltip, output)
 end
@@ -3929,7 +4519,7 @@ function RatingBuster:PerformanceProfile()
 	for i = INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
 		GameTooltip:SetOwner(UIParent, "ANCHOR_PRESERVE")
 		GameTooltip:SetInventoryItem("player", i)
-		self.ProcessTooltip(GameTooltip)
+		self.ProcessTooltip(GameTooltip --[[@as ClassicGameTooltip]])
 		GameTooltip:Hide()
 	end
 

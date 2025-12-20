@@ -4,6 +4,9 @@
 
     <Script file="Source\Debug\ErrorHandler.lua" />
 
+    <Script file="Source\UI\Theme.lua" />
+    <Script file="Source\UI\ChatMessage.lua" />
+
     <Script file="Source\Vendor\Classes\Buy.lua" />
     <Script file="Source\Vendor\Classes\BuyScanner.lua" />
     <Script file="Source\Vendor\Classes\BuybackScanner.lua" />
@@ -21,6 +24,7 @@
     <Script file="Source\Auction\Classes\Scanner.lua" />
     <Script file="Source\Auction\Classes\Expiring.lua" />
     <Script file="Source\Auction\Classes\SaleHint.lua" />
+    <Script file="Source\Auction\Classes\FullScan.lua" />
     <Script file="Source\Auction\Auction.lua" />
 
     <Script file="Source\Mail\Classes\Util.lua" />
@@ -40,8 +44,6 @@
     <Script file="Source\Profession\Classes\CategoryCache.lua" />
     <Script file="Source\Profession\Profession.lua" />
 
-    <Script file="Source\UI\Theme.lua" />
-    <Script file="Source\UI\ChatMessage.lua" />
     <Script file="Source\UI\SyntaxHelpers.lua" />
     <Script file="Source\UI\TextureAtlas.lua" />
     <Script file="Source\UI\TooltipBuilder.lua" />

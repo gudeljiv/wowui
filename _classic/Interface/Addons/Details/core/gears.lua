@@ -29,11 +29,11 @@ end
 
 ---@alias raid_difficulty_eng_name_lowercase "normal" | "heroic" | "mythic" | "raidfinder"
 
-
+--health and max heal cahces
 
 ------------------------------------------------------------------------------------------------------------
 
-function Details:SetDeathLogLimit(limitAmount)
+function Details:SetDeathLogLimit(limitAmount) --the temporary limit function is inside the parser as it need to deal with upvalues
 	if (limitAmount and type(limitAmount) == "number" and limitAmount >= 8) then
 		Details.deadlog_events = limitAmount
 
@@ -705,6 +705,7 @@ function ilvl_core:CalcItemLevel(unitid, guid, shout)
 
 			--------------------------------------------------------------------------------------------------------
 
+			--[=[
 			for i = 1, 7 do
 				for o = 1, 3 do
 					--need to review this in classic
@@ -720,6 +721,7 @@ function ilvl_core:CalcItemLevel(unitid, guid, shout)
 				Details.cached_talents [guid] = talents
 				Details:SendEvent("UNIT_TALENTS", nil, unitid, talents, guid)
 			end
+			--]=]
 		end
 
 		--------------------------------------------------------------------------------------------------------
@@ -1637,7 +1639,7 @@ function Details.GenerateSpecSpellList()
 	local sharedSpellsBetweenSpecs = {}
 	local specNames = {}
 
-	local amountSpecs = GetNumSpecializationsForClassID(classId)
+	local amountSpecs = C_SpecializationInfo.GetNumSpecializationsForClassID(classId)
 
 	local totalTimeToWait = 0
 	DetailsFramework.Schedules.NewTimer(0, function() SetSpecialization(1) end)
@@ -1901,6 +1903,7 @@ function Details.GetPlayTimeOnClassString()
     return "|cffffff00Time played this class(" .. expansionName .. "): " .. days .. " " .. hours .. " " .. minutes
 end
 
+--[=[
 hooksecurefunc("ChatFrame_DisplayTimePlayed", function()
 	if (Details.played_class_time) then
 		C_Timer.After(0, function()
@@ -1921,6 +1924,7 @@ hooksecurefunc("ChatFrame_DisplayTimePlayed", function()
 		end)
 	end
 end)
+--]=]
 
 --game freeze prevention, there are people calling UpdateAddOnMemoryUsage() making the game client on the end user to freeze, this is bad, really bad.
 --Details! replace the function call with one that do the same thing, but warns the player if the function freezes the client too many times.

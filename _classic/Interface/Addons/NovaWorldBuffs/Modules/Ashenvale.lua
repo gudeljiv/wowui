@@ -20,6 +20,8 @@ local region = NWB:GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707264000; --Date and time (GMT): Wednesday, February 7, 2024 12:00:00 AM
+	--Temp changing this to US to test new calc func.
+	isUS = true;
 elseif (region == 1) then
 	--US.
 	isUS = true;
@@ -40,24 +42,56 @@ end
 --Trying to fix some issues with the timer not being exact, why is GetServerTime() not accurate?
 calcStart = calcStart + 30;
 --/dump date("%c", GetServerTime())
-_G["calcStart"] = calcStart;
+--G["calcStart"] = calcStart;
 
-local function getTimeLeft()
-	local timeLeft, type;
-	if (calcStart) then
-		local start = calcStart;
-		local isDST = NWB:isDST();
-		if (isDST) then
-			if (isUS) then
-				start = start + 3600;
-			else
-				start = start - 3600;
+
+local getTimeLeft;
+if (not isUS) then
+	function getTimeLeft()
+		local timeLeft, type;
+		if (calcStart) then
+			local start = calcStart;
+			local isDST = NWB:isDST();
+			if (isDST) then
+				if (isUS) then
+					start = start + 3600;
+				else
+					start = start - 3600;
+				end
+			end
+			local utc = GetServerTime();
+			local secondsSinceFirstReset = utc - start;
+			local timestamp = start + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
+			local timeLeft = timestamp - utc;
+			--Commented out, no static end time for ashenvale so don't show "is running" timer.
+			--if (timeLeft > 9000) then
+				--If more than 2.5h left then it's running, return time left on current event instead.
+			--	type = "running";
+			--	timeLeft = timeLeft - 9000;
+			--end
+			return timeLeft, type, timestamp;
+		end
+	end
+else
+	--3h intervalls, include an extra 27h interval on the end just incase things doens't line up exactly right at midnight and we go over 86400 seconds.
+	local intervals = {10800, 21600, 32400, 43200, 54000, 64800, 75600, 86400, 97200};
+	--Easier to just adjust the numbers by 2h for copy paste reasons across mdoules.
+	for k, v in pairs(intervals) do
+		intervals[k] = v - 7200;
+	end
+	function getTimeLeft()
+		local hours, minutes = GetGameTime();
+		local seconds = (hours * 3600) + (minutes * 60);
+		local timestamp = GetServerTime() + seconds;
+		local timeLeft = 0;
+		local type;
+		for k, v in ipairs(intervals) do
+			if (v > seconds) then
+				timeLeft = v - seconds;
+				break;
 			end
 		end
-		local utc = GetServerTime();
-		local secondsSinceFirstReset = utc - start;
-		local timestamp = start + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
-		local timeLeft = timestamp - utc;
+		--local realTimeLeft = timeLeft;
 		--Commented out, no static end time for ashenvale so don't show "is running" timer.
 		--if (timeLeft > 9000) then
 			--If more than 2.5h left then it's running, return time left on current event instead.

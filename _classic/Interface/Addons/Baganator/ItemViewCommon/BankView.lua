@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 BaganatorItemViewCommonBankViewMixin = {}
 
 function BaganatorItemViewCommonBankViewMixin:OnLoad()
@@ -17,38 +18,48 @@ function BaganatorItemViewCommonBankViewMixin:OnLoad()
 
   self.Tabs = {}
 
-  self.Character = CreateFrame("Frame", nil, self, self.characterTemplate)
-  self.Character:SetPoint("TOPLEFT")
+  if self.characterTabsTemplate and Syndicator.Constants.CharacterBankTabsActive then
+    self.Character = CreateFrame("Frame", nil, self, self.characterTabsTemplate)
+    self.Character:SetPoint("TOPLEFT")
+  else
+    self.Character = CreateFrame("Frame", nil, self, self.characterTemplate)
+    self.Character:SetPoint("TOPLEFT")
+  end
   self:InitializeWarband(self.warbandTemplate)
 
   self.currentTab = self.Character
+  if addonTable.Config.Get(addonTable.Config.Options.BANK_CURRENT_TAB) == addonTable.Constants.BankTabType.Warband then
+    self:SetTab(addonTable.Constants.BankTabType.Warband)
+  end
 
-  Syndicator.CallbackRegistry:RegisterCallback("BagCacheUpdate",  function(_, character, updatedBags)
+  Syndicator.CallbackRegistry:RegisterCallback("BagCacheUpdate",  function()
     self.hasCharacter = true
   end)
 
-  addonTable.CallbackRegistry:RegisterCallback("SettingChanged",  function(_, settingName)
-    if tIndexOf(addonTable.Config.VisualsFrameOnlySettings, settingName) ~= nil then
-      if self:IsShown() then
-        addonTable.Utilities.ApplyVisuals(self)
-      end
-    end
-  end)
-
-  self.confirmTransferAllDialogName = "addonTable.ConfirmTransferAll_" .. self:GetName()
-  StaticPopupDialogs[self.confirmTransferAllDialogName] = {
-    text = BAGANATOR_L_CONFIRM_TRANSFER_ALL_ITEMS_FROM_BANK,
-    button1 = YES,
-    button2 = NO,
-    OnAccept = function()
-      self.currentTab:RemoveSearchMatches(function() end)
-    end,
-    timeout = 0,
-    hideOnEscape = 1,
-  }
   self:UpdateTransferButton()
 
   addonTable.Skins.AddFrame("ButtonFrame", self, {"bank"})
+end
+
+function BaganatorItemViewCommonBankViewMixin:SetTab(index)
+  self.SearchWidget:OnHide()
+  self.currentTab:Hide()
+  addonTable.Config.Set(addonTable.Config.Options.BANK_CURRENT_TAB, index)
+
+  if index == addonTable.Constants.BankTabType.Character then
+    self.currentTab = self.Character
+  elseif index == addonTable.Constants.BankTabType.Warband then
+    self.currentTab = self.Warband
+  end
+
+  self.currentTab:Show()
+
+  if self:IsVisible() then
+    PanelTemplates_SetTab(self, index)
+    addonTable.Config.Set(addonTable.Config.Options.BANK_CURRENT_TAB, index)
+    self:UpdateView()
+    addonTable.CallbackRegistry:TriggerEvent("BankViewChanged")
+  end
 end
 
 function BaganatorItemViewCommonBankViewMixin:InitializeWarband(template)
@@ -59,25 +70,17 @@ function BaganatorItemViewCommonBankViewMixin:InitializeWarband(template)
 
     local characterTab = self.tabPool:Acquire()
     addonTable.Skins.AddFrame("TabButton", characterTab)
-    characterTab:SetText(BAGANATOR_L_CHARACTER)
+    characterTab:SetText(addonTable.Locales.CHARACTER)
     characterTab:Show()
     characterTab:SetScript("OnClick", function()
-      self.currentTab:Hide()
-      self.currentTab = self.Character
-      self.currentTab:Show()
-      PanelTemplates_SetTab(self, 1)
-      self:UpdateView()
+      self:SetTab(1)
     end)
 
     local warbandTab = self.tabPool:Acquire()
-    warbandTab:SetText(BAGANATOR_L_WARBAND)
+    warbandTab:SetText(addonTable.Locales.WARBAND)
     warbandTab:Show()
     warbandTab:SetScript("OnClick", function()
-      self.currentTab:Hide()
-      self.currentTab = self.Warband
-      self.currentTab:Show()
-      PanelTemplates_SetTab(self, 2)
-      self:UpdateView()
+      self:SetTab(2)
     end)
     addonTable.Skins.AddFrame("TabButton", warbandTab)
 
@@ -87,7 +90,7 @@ function BaganatorItemViewCommonBankViewMixin:InitializeWarband(template)
 end
 
 function BaganatorItemViewCommonBankViewMixin:UpdateTransferButton()
-  if not self.currentTab.isLive then
+  if not self.currentTab.isLive or self.currentTab.isLocked then
     self.TransferButton:Hide()
     return
   end
@@ -100,6 +103,10 @@ function BaganatorItemViewCommonBankViewMixin:UpdateTransferButton()
   end
 
   self.TransferButton:Show()
+end
+
+function BaganatorItemViewCommonBankViewMixin:IsTransferActive()
+  return self.TransferButton:IsShown()
 end
 
 function BaganatorItemViewCommonBankViewMixin:OnDragStart()
@@ -133,9 +140,7 @@ end
 function BaganatorItemViewCommonBankViewMixin:OnShow()
   if Syndicator.Constants.WarbandBankActive then
     if C_PlayerInteractionManager.IsInteractingWithNpcOfType(Enum.PlayerInteractionType.AccountBanker) then
-      self.currentTab = self.Warband
-      self.Warband:Show()
-      self.Character:Hide()
+      self:SetTab(2)
       for _, tab in ipairs(self.Tabs) do
         tab:Hide()
       end
@@ -158,18 +163,23 @@ function BaganatorItemViewCommonBankViewMixin:OnShow()
   end
 end
 
-function BaganatorItemViewCommonBankViewMixin:OnHide(eventName)
+function BaganatorItemViewCommonBankViewMixin:OnHide()
   if C_Bank then
     C_Bank.CloseBankFrame()
   else
     CloseBankFrame()
   end
 
+  if Syndicator.Constants.CharacterBankTabsActive then
+    BankFrame.BankPanel:Hide()
+  end
+
   addonTable.CallbackRegistry:TriggerEvent("SearchTextChanged", "")
+  addonTable.CallbackRegistry:TriggerEvent("ItemContextChanged")
 end
 
 function BaganatorItemViewCommonBankViewMixin:UpdateViewToCharacter(characterName)
-  self.Character.lastCharacter = characterName
+  addonTable.CallbackRegistry:TriggerEvent("CharacterSelect", characterName)
   if not self.Character:IsShown() then
     self.Tabs[1]:Click()
   else
@@ -177,7 +187,7 @@ function BaganatorItemViewCommonBankViewMixin:UpdateViewToCharacter(characterNam
   end
 end
 
-function BaganatorItemViewCommonBankViewMixin:UpdateViewToWarband(warbandIndex, tabIndex)
+function BaganatorItemViewCommonBankViewMixin:UpdateViewToWarband(_, tabIndex)
   self.Warband:SetCurrentTab(tabIndex)
   if not self.Warband:IsShown() then
     self.Tabs[2]:Click()
@@ -187,15 +197,15 @@ function BaganatorItemViewCommonBankViewMixin:UpdateViewToWarband(warbandIndex, 
 end
 
 function BaganatorItemViewCommonBankViewMixin:UpdateView()
+  addonTable.ReportEntry()
+
   self.start = debugprofilestop()
 
   if Syndicator.Constants.WarbandBankActive and not C_PlayerInteractionManager.IsInteractingWithNpcOfType(Enum.PlayerInteractionType.AccountBanker) then
     self.Tabs[1]:Show()
   end
 
-  addonTable.Utilities.ApplyVisuals(self)
-
-  local sideSpacing, topSpacing = addonTable.Utilities.GetSpacing()
+  local sideSpacing = addonTable.Utilities.GetSpacing()
 
   if self.Tabs[1] then
     self.Tabs[1]:SetPoint("LEFT", sideSpacing + addonTable.Constants.ButtonFrameOffset, 0)
@@ -204,11 +214,17 @@ function BaganatorItemViewCommonBankViewMixin:UpdateView()
   self.SearchWidget:SetSpacing(sideSpacing)
 
   self.currentTab:UpdateView()
+
+  if Syndicator.Constants.CharacterBankTabsActive then
+    BankFrame.BankPanel:SetShown(self.currentTab.isLive)
+  end
+
+  addonTable.CallbackRegistry:TriggerEvent("ItemContextChanged")
 end
 
 
 function BaganatorItemViewCommonBankViewMixin:OnTabFinished()
-  self.SortButton:SetShown(self.currentTab.isLive and addonTable.Utilities.ShouldShowSortButton())
+  self.SortButton:SetShown(self.currentTab.isLive and not self.currentTab.isLocked and addonTable.Utilities.ShouldShowSortButton())
   self:UpdateTransferButton()
 
   self.ButtonVisibility:Update()
@@ -222,7 +238,9 @@ end
 
 function BaganatorItemViewCommonBankViewMixin:Transfer()
   if self.SearchWidget.SearchBox:GetText() == "" then
-    StaticPopup_Show(self.confirmTransferAllDialogName)
+    addonTable.Dialogs.ShowConfirm(addonTable.Locales.CONFIRM_TRANSFER_ALL_ITEMS_FROM_BANK, YES, NO, function()
+      self.currentTab:RemoveSearchMatches(function() end)
+    end)
   else
     self.currentTab:RemoveSearchMatches()
   end

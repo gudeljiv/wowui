@@ -16,6 +16,8 @@ local region = NWB:GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707264000; --Date and time (GMT): Wednesday, February 7, 2024 12:00:00 AM
+	--Temp changing this to US to test new calc func.
+	isUS = true;
 elseif (region == 1) then
 	--US.
 	isUS = true;
@@ -37,22 +39,56 @@ end
 --Trying to fix some issues with the timer not being exact, why is GetServerTime() not accurate?
 --calcStart = calcStart + 30;
 
-local function getTimeLeft()
-	local timeLeft, type;
-	if (calcStart) then
-		local start = calcStart;
-		local isDST = NWB:isDST();
-		if (isDST) then
-			if (isUS) then
-				start = start + 3600;
+local getTimeLeft;
+if (not isUS) then
+	function getTimeLeft()
+		local timeLeft, type;
+		if (calcStart) then
+			local start = calcStart;
+			local isDST = NWB:isDST();
+			if (isDST) then
+				if (isUS) then
+					start = start + 3600;
+				else
+					start = start - 3600;
+				end
+			end
+			local utc = GetServerTime();
+			local secondsSinceFirstReset = utc - start;
+			local timestamp = start + ((math.floor(secondsSinceFirstReset / 7200) + 1) * 7200);
+			local timeLeft = timestamp - utc;
+			local realTimeLeft = timeLeft;
+			if (timeLeft > 3600) then
+				--If more than 1h left then it's running, return tim left on current event instead.
+				type = "running";
+				timeLeft = timeLeft - 3600;
+				timestamp = timestamp - 3600;
+				NWB.blackrockRunning = true;
 			else
-				start = start - 3600;
+				--if (NWB.blackrockRunning and timeLeft > 7620) then
+				if (NWB.blackrockRunning) then
+					NWB:blackrockEnded();
+				end
+				NWB.blackrockRunning = false;
+			end
+			return timeLeft, type, timestamp, realTimeLeft;
+		end
+	end
+else
+	local intervals = {7200, 14400, 21600, 28800, 36000, 43200, 50400, 57600, 72000, 79200, 86400, 93600};
+	function getTimeLeft()
+		local hours, minutes = GetGameTime();
+		local seconds = (hours * 3600) + (minutes * 60);
+		local timestamp = GetServerTime() + seconds;
+		--3h intervalls, include an extra 27h interval on the end just incase things doens't line up exactly right at midnight and we go over 86400 seconds.
+		local timeLeft = 0;
+		local type;
+		for k, v in ipairs(intervals) do
+			if (v > seconds) then
+				timeLeft = v - seconds;
+				break;
 			end
 		end
-		local utc = GetServerTime();
-		local secondsSinceFirstReset = utc - start;
-		local timestamp = start + ((math.floor(secondsSinceFirstReset / 7200) + 1) * 7200);
-		local timeLeft = timestamp - utc;
 		local realTimeLeft = timeLeft;
 		if (timeLeft > 3600) then
 			--If more than 1h left then it's running, return tim left on current event instead.

@@ -3,8 +3,6 @@ local TrackerHeaderFrame = QuestieLoader:CreateModule("TrackerHeaderFrame")
 -------------------------
 --Import QuestieTracker modules.
 -------------------------
----@type QuestieTracker
-local QuestieTracker = QuestieLoader:ImportModule("QuestieTracker")
 ---@type TrackerBaseFrame
 local TrackerBaseFrame = QuestieLoader:ImportModule("TrackerBaseFrame")
 ---@type TrackerFadeTicker
@@ -26,11 +24,13 @@ local QuestLogCache = QuestieLoader:ImportModule("QuestLogCache")
 local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+
 local LSM30 = LibStub("LibSharedMedia-3.0")
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 
 local headerFrame, trackerBaseFrame
 
-function TrackerHeaderFrame.Initialize(baseFrame)
+function TrackerHeaderFrame.Initialize(baseFrame, OnTrackedQuestClick)
     trackerBaseFrame = baseFrame
     headerFrame = CreateFrame("Button", "Questie_HeaderFrame", trackerBaseFrame)
 
@@ -52,11 +52,11 @@ function TrackerHeaderFrame.Initialize(baseFrame)
     questieIcon:SetScript("OnClick", function(_, button)
         if button == "LeftButton" then
             if QuestieJourney:IsShown() then
-                QuestieJourney.ToggleJourneyWindow()
+                QuestieJourney:ToggleJourneyWindow()
             end
 
             QuestieCombatQueue:Queue(function()
-                QuestieOptions:OpenConfigWindow()
+                QuestieOptions:ToggleConfigWindow()
             end)
 
             return
@@ -66,7 +66,7 @@ function TrackerHeaderFrame.Initialize(baseFrame)
             end
 
             QuestieCombatQueue:Queue(function()
-                QuestieJourney.ToggleJourneyWindow()
+                QuestieJourney:ToggleJourneyWindow()
             end)
 
             return
@@ -162,7 +162,7 @@ function TrackerHeaderFrame.Initialize(baseFrame)
         end
 
         QuestieCombatQueue:Queue(function()
-            QuestieTracker:Update()
+            OnTrackedQuestClick()
         end)
     end)
 
@@ -175,7 +175,7 @@ function TrackerHeaderFrame.Initialize(baseFrame)
 
     headerFrame.trackedQuests = trackedQuests
 
-    if Questie.db.profile.trackerHeaderEnabled or (not QuestieTracker:HasQuest()) then
+    if Questie.db.profile.trackerHeaderEnabled or (not TrackerUtils.HasQuest()) then
         headerFrame:SetSize(1, Questie.db.profile.trackerFontSizeHeader) -- Width is updated later on
     else
         headerFrame:SetSize(1, 1)
@@ -194,7 +194,7 @@ function TrackerHeaderFrame:Update()
     local trackerFontSizeHeader = Questie.db.profile.trackerFontSizeHeader
     local trackerFontSizeZone = Questie.db.profile.trackerFontSizeZone
 
-    if Questie.db.profile.trackerHeaderEnabled or (not QuestieTracker:HasQuest()) then
+    if Questie.db.profile.trackerHeaderEnabled or (not TrackerUtils.HasQuest()) then
         headerFrame:ClearAllPoints()
         headerFrame.questieIcon.texture:SetWidth(trackerFontSizeHeader)
         headerFrame.questieIcon.texture:SetHeight(trackerFontSizeHeader)

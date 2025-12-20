@@ -3,8 +3,32 @@
   <Script file="InterfaceOptionsPanels.lua"/>
 
   <Frame name="SpellActivationOverlayOptionsPanel" hidden="true" parent="UIParent">
+    <Layers>
+      <Layer level="ARTWORK">
+        <FontString name="$parentBuildInfo" text="" inherits="GameFontNormal" justifyH="CENTER" justifyV="CENTER">
+          <Anchors>
+            <Anchor point="BOTTOMRIGHT">
+              <Offset>
+                <AbsDimension x="-16" y="56"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+        </FontString>
+      </Layer>
+      <Layer level="ARTWORK">
+        <FontString name="$parentClassInfo" text="" inherits="GameFontNormalLarge" justifyH="CENTER" justifyV="CENTER">
+          <Anchors>
+            <Anchor point="BOTTOM" relativeTo="$parentBuildInfo" relativePoint="TOP">
+              <Offset>
+                <AbsDimension x="0" y="8"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+        </FontString>
+      </Layer>
+    </Layers>
     <Frames>
-      <Slider name="$parentSpellAlertOpacitySlider" inherits="FixOptionsSliderTemplate">
+      <Slider name="$parentSpellAlertOpacitySlider" inherits="OptionsSliderTemplate">
         <Anchors>
           <Anchor point="TOPLEFT">
             <Offset>
@@ -32,7 +56,7 @@
           </OnValueChanged>
         </Scripts>
       </Slider>
-      <Slider name="$parentSpellAlertScaleSlider" inherits="FixOptionsSliderTemplate">
+      <Slider name="$parentSpellAlertScaleSlider" inherits="OptionsSliderTemplate">
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertOpacitySlider" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -48,7 +72,7 @@
           </OnValueChanged>
         </Scripts>
       </Slider>
-      <Slider name="$parentSpellAlertOffsetSlider" inherits="FixOptionsSliderTemplate">
+      <Slider name="$parentSpellAlertOffsetSlider" inherits="OptionsSliderTemplate">
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertScaleSlider" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -64,7 +88,7 @@
           </OnValueChanged>
         </Scripts>
       </Slider>
-      <Slider name="$parentSpellAlertTimerSlider" inherits="FixOptionsSliderTemplate">
+      <Slider name="$parentSpellAlertTimerSlider" inherits="OptionsSliderTemplate">
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertOffsetSlider" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -84,7 +108,7 @@
           </OnValueChanged>
         </Scripts>
       </Slider>
-      <Slider name="$parentSpellAlertSoundSlider" inherits="FixOptionsSliderTemplate">
+      <Slider name="$parentSpellAlertSoundSlider" inherits="OptionsSliderTemplate">
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertTimerSlider" relativePoint="BOTTOMLEFT">
             <Offset>
@@ -105,6 +129,7 @@
         </Scripts>
       </Slider>
       <Button name="$parentSpellAlertTestButton" inherits="UIPanelButtonTemplate">
+        <Size x="96" y="22"/>
         <Anchors>
           <Anchor point="TOPLEFT" relativeTo="$parentSpellAlertOpacitySlider" relativePoint="TOPRIGHT">
             <Offset>
@@ -155,11 +180,29 @@
           </PostClick>
         </Scripts>
       </CheckButton>
+      <CheckButton name="$parentSpellAlertReportButton" inherits="InterfaceOptionsCheckButtonTemplate">
+        <Anchors>
+          <Anchor point="BOTTOMLEFT" relativeTo="$parentSpellAlertDebugButton" relativePoint="BOTTOMLEFT">
+            <Offset>
+              <AbsDimension x="0" y="20"/>
+            </Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <PostClick>
+            if (self:GetChecked()) then
+              SpellActivationOverlayDB.report = nil;
+            else
+              SpellActivationOverlayDB.report = false;
+            end
+          </PostClick>
+        </Scripts>
+      </CheckButton>
       <CheckButton name="$parentSpellAlertResponsiveButton" inherits="InterfaceOptionsCheckButtonTemplate">
         <Anchors>
           <Anchor point="BOTTOMLEFT" relativeTo="$parentSpellAlertDebugButton" relativePoint="BOTTOMLEFT">
             <Offset>
-              <AbsDimension x="256" y="0"/>
+              <AbsDimension x="300" y="0"/>
             </Offset>
           </Anchor>
         </Anchors>
@@ -169,6 +212,22 @@
               SpellActivationOverlayDB.responsiveMode = true;
             else
               SpellActivationOverlayDB.responsiveMode = nil;
+            end
+          </PostClick>
+        </Scripts>
+      </CheckButton>
+      <CheckButton name="$parentSpellAlertAskDisableGameAlertButton" inherits="InterfaceOptionsCheckButtonTemplate">
+        <Anchors>
+          <Anchor point="BOTTOMLEFT" relativeTo="$parentSpellAlertResponsiveButton" relativePoint="BOTTOMLEFT">
+            <Offset>
+              <AbsDimension x="0" y="20"/>
+            </Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <PostClick>
+            if (self.OnValueChanged) then
+              self:OnValueChanged(self:GetChecked());
             end
           </PostClick>
         </Scripts>
@@ -257,7 +316,7 @@
         </FontString>
       </Layer>
       <Layer level="ARTWORK">
-        <FontString name="$parentSpellAlertNone" text="" inherits="GameFontHighlight" justifyH="LEFT" justifyV="TOP" parentKey="glowNone">
+        <FontString name="$parentGlowingButtonNone" text="" inherits="GameFontHighlight" justifyH="LEFT" justifyV="TOP" parentKey="glowNone">
           <Anchors>
             <Anchor point="TOPLEFT" relativeTo="$parentGlowingButtons" relativePoint="BOTTOMLEFT">
               <Offset>

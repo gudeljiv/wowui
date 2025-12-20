@@ -17,33 +17,55 @@ UIWidgetBelowMinimapContainerFrame:HookScript(
 	end
 )
 
-MiniMapWorldMapButton:HookScript(
-	'OnShow',
-	function(self)
-		MiniMapWorldMapButton:Hide()
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_LOGIN")
+f:SetScript("OnEvent", function()
+	if MiniMapWorldMapButton then
+		MiniMapWorldMapButton:HookScript(
+			"OnShow",
+			function(self)
+				self:Hide()
+			end
+		)
 	end
-)
+end)
 
-MiniMapLFGFrame:HookScript(
-	'OnUpdate',
-	function(self)
-		if MiniMapBattlefieldFrame and MiniMapBattlefieldFrame:IsVisible() then
-			MiniMapLFGFrame:ClearAllPoints()
-			MiniMapLFGFrame:SetPoint('BOTTOM', MiniMapBattlefieldFrame, 'BOTTOM', -1, 30)
-		else
-			MiniMapLFGFrame:ClearAllPoints()
-			MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', MinimapCluster, 'BOTTOMRIGHT', -40, -7)
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_LOGIN")
+f:SetScript("OnEvent", function()
+	if not MiniMapLFGFrame then return end
+
+	MiniMapLFGFrame:HookScript(
+		"OnUpdate",
+		function(self)
+			if MiniMapBattlefieldFrame and MiniMapBattlefieldFrame:IsVisible() then
+				self:ClearAllPoints()
+				self:SetPoint("BOTTOM", MiniMapBattlefieldFrame, "BOTTOM", -1, 30)
+			elseif MinimapCluster then
+				self:ClearAllPoints()
+				self:SetPoint("BOTTOMRIGHT", MinimapCluster, "BOTTOMRIGHT", -40, -7)
+			end
 		end
-	end
-)
+	)
+end)
 
-MiniMapBattlefieldFrame:HookScript(
-	'OnUpdate',
-	function(self)
-		MiniMapBattlefieldFrame:ClearAllPoints()
-		MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', MinimapCluster, 'BOTTOMRIGHT', -40, -7)
+
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_LOGIN")
+f:SetScript("OnEvent", function()
+	if not MiniMapBattlefieldFrame or not MinimapCluster then
+		return
 	end
-)
+
+	MiniMapBattlefieldFrame:HookScript(
+		"OnUpdate",
+		function(self)
+			self:ClearAllPoints()
+			self:SetPoint("BOTTOMRIGHT", MinimapCluster, "BOTTOMRIGHT", -40, -7)
+		end
+	)
+end)
+
 
 if GameTimeFrame then
 	GameTimeFrame:HookScript(

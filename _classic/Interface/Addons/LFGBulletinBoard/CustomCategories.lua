@@ -24,7 +24,9 @@ local CHARACTER_SPECIFIC_SYMBOL = "\42" -- "*"
 
 local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local isCataclysm = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
+local isMists = WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC
 local isSoD = isClassicEra and C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfDiscovery
+local ExpansionEnum  = (Addon.Enum --[[@as AddonEnum]]).Expansions
 
 ---@alias Locale "enUS"|"enGB"|"deDE"|"ruRU"|"frFR"|"zhTW"|"zhCN"|"ptBR"|"esES"|"koKR"
 
@@ -36,13 +38,15 @@ local isSoD = isClassicEra and C_Seasons.GetActiveSeason() == Enum.SeasonID.Seas
 ---@field sortIdx number # ties broken by key alphabetically. preset value is relatively arbitrary.
 ---@field isHidden boolean? # `true` if the filter should be hidden from UI. (used instead of deletion for saved presets)
 ---@field isDisabled boolean # `true` if the preset should be completely disabled for the current client (used by presets only)
+---@field includeItemLinks boolean? # `true` if the filter should parse item links for keys words
+---@field isolateCategory boolean? # `true` if the filter should be isolated from other categories in the bulletin board
 
 ---@type {[string]: CustomFilter}
 local presets = {
-    RDF = { -- Random Dungeon Finder
+    RDF = { -- Random Dungeon Finder (Wotlk+)
         name = LFG_TYPE_RANDOM_DUNGEON,
         tags = {
-            enUS = "rdf random dungeons spam heroics gamma gammas",
+            enUS = "rdf random dungeons spam heroics gamma gammas celestial",
             -- deDE = nil,
             -- ruRU = nil,
             -- frFR = nil,
@@ -53,8 +57,18 @@ local presets = {
         },
         key = "RDF",
         levels = CopyTable(HIDDEN_LEVEL_RANGE),
-        isDisabled = not isCataclysm,
+        isDisabled = ExpansionEnum.Current < ExpansionEnum.Wrath,
         sortIdx = 1,
+    },
+    CHALLENGE_MODES = { -- Mists Challenge Mode dungeons
+        name = CHALLENGE_MODE,
+        tags = {
+            enUS = "challenge cm",
+        },
+        key = "CHALLENGE_MODES",
+        levels = CopyTable(HIDDEN_LEVEL_RANGE),
+        isDisabled = ExpansionEnum.Current ~= ExpansionEnum.Mists,
+        sortIdx = 2,
     },
     BLOOD = { -- Bloodmoon Event (SoD)
         name = "Bloodmoon",
@@ -310,7 +324,7 @@ local removeFilterFromRequestList = function(key) ---@param key string
     end
     if anyRemoved then
         Addon.RequestList = requestList
-        Addon.UpdateList()
+        Addon.ChatRequests.UpdateRequestList()
     end
 end
 
@@ -340,33 +354,33 @@ StaticPopupDialogs["GBB_CREATE_CATEGORY"] = {
     text = ENTER_FILTER_NAME,
     button1 = CREATE,
     button2 = CANCEL,
-    OnButton1 = function(self, data)
+    OnButton1 = function(dialog, data)
         PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
-		local name = strtrim(self.editBox:GetText());
+		local name = strtrim(dialog:GetEditBox():GetText());
 		AddNewFilterToStore(name);
         updateRelatedAddonData(nil, true) -- skips inserting tags (none yet)
         Addon.UpdateAdditionalFiltersPanel(data.panel)
     end,
-    EditBoxOnTextChanged = function(self)
-		if (strtrim(self:GetText()) == "" ) then
-			self:GetParent().button1:Disable();
+    EditBoxOnTextChanged = function(editBox)
+		if (strtrim(editBox:GetText()) == "" ) then
+			editBox:GetParent():GetButton1():Disable();
 		else
-			self:GetParent().button1:Enable();
+			editBox:GetParent():GetButton1():Enable();
 		end
 	end,
-    EditBoxOnEnterPressed = function(self)
-		local name = strtrim(self:GetText());
+    EditBoxOnEnterPressed = function(editBox)
+		local name = strtrim(editBox:GetText());
         if name == "" then return end
         PlaySound(SOUNDKIT.IG_MAINMENU_OPEN);
 		AddNewFilterToStore(name);
         updateRelatedAddonData(nil, true)
-        Addon.UpdateAdditionalFiltersPanel(self:GetParent().data.panel)
-		self:GetParent():Hide();
+        Addon.UpdateAdditionalFiltersPanel(editBox:GetParent().data.panel)
+		editBox:GetParent():Hide();
 	end,
-    OnShow = function(self)
-        self.button1:SetEnabled(false)
+    OnShow = function(dialog)
+        dialog:GetButton1():SetEnabled(false)
     end,
-    EditBoxOnEscapePressed = function(self) self:GetParent():Hide() end,
+    EditBoxOnEscapePressed = function(editBox) editBox:GetParent():Hide() end,
 	hideOnEscape = 1,
 	hasEditBox = 1,
 	maxLetters = 31
@@ -375,45 +389,45 @@ StaticPopupDialogs["GBB_RENAME_CATEGORY"] = {
     text = ENTER_FILTER_NAME,
     button1 = PET_RENAME,
     button2 = CANCEL,
-    OnButton1 = function(self, data)
+    OnButton1 = function(dialog, data)
         ---@cast data {settings: FilterSettingsPool, key: string, options: Frame}
         local entry = GroupBulletinBoardDB.CustomFilters[data.key]
 		if not entry then return end
-		local name = strtrim(self.editBox:GetText());
+		local name = strtrim(dialog:GetEditBox():GetText());
         if name == "" then return end
         entry.name = name
         data.settings:UpdateFilterState(data.options, entry)
         updateRelatedAddonData(nil, true) -- skips inserting tags (none changed)
     end,
-    EditBoxOnTextChanged = function(self)
-		if (strtrim(self:GetText()) == "" ) then
-			self:GetParent().button1:Disable();
+    EditBoxOnTextChanged = function(editBox)
+		if (strtrim(editBox:GetText()) == "" ) then
+			editBox:GetParent():GetButton1():Disable();
 		else
-			self:GetParent().button1:Enable();
+			editBox:GetParent():GetButton1():Enable();
 		end
 	end,
-    EditBoxOnEnterPressed = function(self)
-		local name = strtrim(self:GetText());
+    EditBoxOnEnterPressed = function(editBox)
+		local name = strtrim(editBox:GetText());
         if name == "" then return end
         ---@type {settings: FilterSettingsPool, key: string, options: Frame}
-        local data = self:GetParent().data
+        local data = editBox:GetParent().data
         local entry = GroupBulletinBoardDB.CustomFilters[data.key]
         if not entry then return end
         entry.name = name
         data.settings:UpdateFilterState(data.options, entry)
         updateRelatedAddonData(nil, true)
-        self:GetParent():Hide();
+        editBox:GetParent():Hide();
 	end,
-    OnShow = function(self)
-        self.button1:SetEnabled(false)
-        local preset = presets[self.data.key]
+    OnShow = function(dialog)
+        dialog:GetButton1():SetEnabled(false)
+        local preset = presets[dialog.data.key]
         if preset then
-            self.editBox:SetText(preset.name)
-            self.editBox:HighlightText()
-            self.editBox:SetCursorPosition(0)
+            dialog:GetEditBox():SetText(preset.name)
+            dialog:GetEditBox():HighlightText()
+            dialog:GetEditBox():SetCursorPosition(0)
         end
     end,
-    EditBoxOnEscapePressed = function(self) self:GetParent():Hide() end,
+    EditBoxOnEscapePressed = function(editBox) editBox:GetParent():Hide() end,
 	hideOnEscape = true,
 	hasEditBox = 1,
 	maxLetters = 31
@@ -458,6 +472,34 @@ local createMoveFilterButton = function(parent, direction)
     button:SetPushedTexture([[Interface\ChatFrame\UI-ChatIcon-Scroll]].. direction .. "-Down");
     button:SetDisabledTexture([[Interface\ChatFrame\UI-ChatIcon-Scroll]].. direction .. "-Disabled");
     button:SetHighlightTexture([[Interface\Buttons\UI-Common-MouseHilight]], "ADD");
+    return button;
+end
+local createSettingsDropdownButton = function(parent)
+    local buttonName = "$parentSettingsDropdownButton"
+    local button = CreateFrame("DropdownButton", buttonName, parent);
+    button.menuMixin = MenuStyle2Mixin
+    Mixin(button, ButtonStateBehaviorMixin)
+    button:SetSize(15, 15);
+    button:SetScript("OnMouseDown", button.OnMouseDown)
+    button:SetScript("OnMouseUp", button.OnMouseUp)
+    button:SetScript("OnEnable", button.OnEnable)
+    button:SetScript("OnDisable", button.OnDisable)
+    button.icon = button:CreateTexture("$parentIcon", "OVERLAY")
+    button.icon:SetAtlas("OptionsIcon-Brown")
+    button.icon:SetAllPoints()
+    button:SetDisplacedRegions(1, -1, button.icon)
+    button:SetupMenu(function(_, rootDescription)
+        local categoryData = GroupBulletinBoardDB.CustomFilters[button.filterKey]
+        if not categoryData then return end
+        rootDescription:CreateCheckbox(Addon.L.IGNORE_ITEM_LINKS,
+            function() return not categoryData.includeItemLinks end, -- note; this option is inverted.
+            function() categoryData.includeItemLinks = not categoryData.includeItemLinks end
+        )
+        rootDescription:CreateCheckbox(Addon.L.ISOLATE_CATEGORY,
+            function() return categoryData.isolateCategory end,
+            function() categoryData.isolateCategory = not categoryData.isolateCategory end
+        )
+    end)
     return button;
 end
 local displayLocales = {"enUS", "deDE", "ruRU", "frFR", "zhTW", "zhCN", "esES", "ptBR"}
@@ -509,6 +551,9 @@ local FilterSettingsPool = {
             parent:HookScript("OnShow", function()
                 Addon.UpdateAdditionalFiltersPanel(parent)
             end)
+            ---@type DropdownButton|{icon: Texture, filterKey: string}
+            options.settingsDropdown = createSettingsDropdownButton(options)
+            options.settingsDropdown:SetPoint("LEFT", options.header, "RIGHT", 4, 1)
             self.entries[key] = options
         end
         return self:InitFilterOptions(self.entries[key])
@@ -568,6 +613,8 @@ local FilterSettingsPool = {
        
         options.header:SetText(dbEntry.name)
         options.header:SetTextColor(hColor:GetRGBA())
+        options.settingsDropdown:SetShown(filterEnabled)
+        options.settingsDropdown.filterKey = dbEntry.key
         options.rename:SetScript("OnClick", function()
             StaticPopup_Show("GBB_RENAME_CATEGORY", nil, nil, {
                 settings = self,
@@ -690,7 +737,7 @@ local FilterSettingsPool = {
         local createBtn = self.create 
             or CreateFrame("Button", "$parentCreateFilter", parent, "UIPanelButtonTemplate");
         ---@cast createBtn UIPanelButtonTemplate
-        createBtn:SetText(CREATE)
+        createBtn:SetText(CREATE or ADD)
         createBtn:FitToText()
         createBtn:SetScript("OnClick", function()
             StaticPopup_Show("GBB_CREATE_CATEGORY", nil, nil, {panel = parent})

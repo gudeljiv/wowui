@@ -26,8 +26,8 @@ local default = function(parentType)
     model_st_rz = 0,
     model_st_us = 40,
 
-    model_fileId = WeakAuras.IsClassic() and "165589" or "235338",
-    bar_model_clip = true
+    model_fileId = "235338",
+    bar_model_attach = true
   }
 end
 
@@ -67,7 +67,7 @@ local function PreShow(self)
       data.model_st_us / 1000);
   else
     self:SetPosition(data.model_z, data.model_x, data.model_y);
-    self:SetFacing(0);
+    self:SetFacing(rad(data.rotation))
   end
   self:SetModelAlpha(self.region.alpha)
 end
@@ -93,8 +93,12 @@ local function AcquireModel(region, data)
 
   local anchor
   if region.parentType == "aurabar" then
-    if data.bar_model_clip and WeakAuras.IsTWW() then
-      anchor = region.parent.bar.fgMask
+    if data.bar_model_attach then
+      if data.bar_model_stretch then
+        anchor = region.parent.bar.fgMask
+      else
+        anchor = region.parent.bar
+      end
     else
       anchor = region.parent.bar
     end
@@ -102,8 +106,9 @@ local function AcquireModel(region, data)
     anchor = region.parent
   end
 
+
   local extra_width, extra_height = 0, 0
-  if not(data.bar_model_clip and region.parentType == "aurabar") then
+  if not(data.bar_model_attach and region.parentType == "aurabar") then
     extra_width = data.extra_width or 0
     extra_height = data.extra_height or 0
   end
@@ -130,7 +135,7 @@ local function AcquireModel(region, data)
       data.model_st_us / 1000);
   else
     model:SetPosition(data.model_z, data.model_x, data.model_y);
-    model:SetFacing(0);
+    model:SetFacing(rad(data.rotation))
   end
   return model
 end
@@ -194,9 +199,7 @@ local funcs = {
 local function create()
   local subRegion = CreateFrame("Frame", nil, UIParent)
   subRegion:SetFlattensRenderLayers(true)
-  if not WeakAuras.IsTWW() then
-    subRegion:SetClipsChildren(true)
-  end
+  subRegion:SetClipsChildren(true)
 
   for k, v in pairs(funcs) do
     subRegion[k] = v
@@ -228,7 +231,7 @@ local function modify(parent, region, parentData, data, first)
 
   local anchor
   if parentData.regionType == "aurabar" then
-    if data.bar_model_clip then
+    if data.bar_model_attach then
       anchor = parent.bar.fgMask
     else
       anchor = parent.bar
@@ -238,7 +241,7 @@ local function modify(parent, region, parentData, data, first)
   end
 
   local extra_width, extra_height = 0, 0
-  if not(data.bar_model_clip and parentData.regionType == "aurabar") then
+  if not(data.bar_model_attach and parentData.regionType == "aurabar") then
     extra_width = data.extra_width or 0
     extra_height = data.extra_height or 0
   end
@@ -261,6 +264,7 @@ local function supports(regionType)
          or regionType == "icon"
          or regionType == "aurabar"
          or regionType == "text"
+         or regionType == "empty"
 end
 
 WeakAuras.RegisterSubRegionType("submodel", L["Model"], supports, create, modify, onAcquire, onRelease, default, nil, properties);

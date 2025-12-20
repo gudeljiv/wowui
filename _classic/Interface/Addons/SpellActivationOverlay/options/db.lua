@@ -1,6 +1,36 @@
 local AddonName, SAO = ...
 local Module = "db"
 
+local applyDefaultClassData = function(classData, defaultClassData)
+    for optionType, optionData in pairs(defaultClassData) do
+        if (not classData[optionType]) then
+            classData[optionType] = CopyTable(optionData);
+        else
+            for auraID, auraData in pairs(optionData) do
+                if (not classData[optionType][auraID]) then
+                    classData[optionType][auraID] = CopyTable(auraData);
+                else
+                    for hashID, hashData in pairs(auraData) do
+                        if (type(classData[optionType][auraID][hashID]) == 'nil') then
+                            if (type(hashData) == 'table') then
+                                classData[optionType][auraID][hashID] = CopyTable(hashData);
+                            else
+                                classData[optionType][auraID][hashID] = hashData;
+                            end
+                        elseif (type(classData[optionType][auraID][hashID]) == "table" and type(hashData) == 'table') then
+                            for id, value in pairs(hashData) do
+                                if (type(classData[optionType][auraID][hashID][id]) == 'nil') then
+                                    classData[optionType][auraID][hashID][id] = value;
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
 -- Migrate from pre-091 to 091 or higher
 local function migrateTo091(db)
 
@@ -21,7 +51,7 @@ local function migrateTo091(db)
         db.classes["MAGE"]["alert"][12536][0] = SAO.defaults.classes["MAGE"]["alert"][12536][0];
     end
 
-    SAO:Info(Module, "Migrated options from pre-0.9.1 to 0.9.1");
+    SAO:Info(Module, SAO:migratedOptions("0.9.1"));
 end
 
 -- Migrate from pre-091 to 091 or higher
@@ -36,7 +66,7 @@ local function migrateTo112(db)
         db.classes["ROGUE"]["glow"][riposte][riposte] = SAO.defaults.classes["ROGUE"]["glow"][riposte][riposte];
     end
 
-    SAO:Info(Module, "Migrated options from pre-1.1.2 to 1.1.2");
+    SAO:Info(Module, SAO:migratedOptions("1.1.2"));
 end
 
 local function transferOption(db, classFile, optionType, oldAuraID, oldNodeID, newAuraID, newNodeID)
@@ -64,7 +94,7 @@ local function migrateTo131(db)
     transferOption(db, "MAGE", "glow", fingersOfFrostWrath, iceLance, fingersOfFrostCata, iceLance);
     transferOption(db, "MAGE", "glow", fingersOfFrostWrath, deepFreeze, fingersOfFrostCata, deepFreeze);
 
-    SAO:Info(Module, "Migrated options from pre-1.3.1 to 1.3.1");
+    SAO:Info(Module, SAO:migratedOptions("1.3.1"));
 end
 
 -- Migrate from pre-140 to 140 or higher
@@ -81,7 +111,7 @@ local function migrateTo140(db)
     transferOption(db, "PRIEST", "glow", serendipityWrath, greaterHeal, serendipityCata, greaterHeal);
     transferOption(db, "PRIEST", "glow", serendipityWrath, prayerOfHealing, serendipityCata, prayerOfHealing);
 
-    SAO:Info(Module, "Migrated options from pre-1.4.0 to 1.4.0");
+    SAO:Info(Module, SAO:migratedOptions("1.4.0"));
 end
 
 -- Migrate from pre-143 to 143 or higher
@@ -94,12 +124,37 @@ local function migrateTo143(db)
     local flashHealNoMana = 101062;
     transferOption(db, "PRIEST", "glow", surgeOfLightWrath, flashHeal, surgeOfLightCata, flashHealNoMana);
 
-    SAO:Info(Module, "Migrated options from pre-1.4.3 to 1.4.3");
+    SAO:Info(Module, SAO:migratedOptions("1.4.3"));
+end
+
+-- Migrate from pre-250 to 250 or higher
+local function migrateTo250(db)
+
+    -- Priest's Surge of Lightning in Mists of Pandaria triggers again the normal Flash Heal, but uses another buff
+    local surgeOfLightCata = 88688;
+    local surgeOfLightMoP = 114255;
+    local flashHealNoMana = 101062;
+    local flashHeal = 2061;
+    transferOption(db, "PRIEST", "alert", surgeOfLightCata, 0, surgeOfLightMoP, 0);
+    transferOption(db, "PRIEST", "glow", surgeOfLightCata, flashHealNoMana, surgeOfLightMoP, flashHeal);
+
+    SAO:Info(Module, SAO:migratedOptions("2.5.0"));
+end
+
+-- Migrate from pre-257 to 257 or higher
+local function migrateTo257(db)
+
+    -- Shaman's Lava Burst glowing button should be disabled by default starting from Mists of Pandaria
+    if SAO.IsProject(SAO.MOP_AND_ONWARD) then
+        db.classes["SHAMAN"]["glow"][51505][51505] = false; -- 51505 = Lava Burst
+    end
+
+    SAO:Info(Module, SAO:migratedOptions("2.5.7"));
 end
 
 -- Load database and use default values if needed
 function SAO.LoadDB(self)
-    local currentversion = 220;
+    local currentversion = 257;
     local db = SpellActivationOverlayDB or {};
 
     if not db.alert then
@@ -124,7 +179,7 @@ function SAO.LoadDB(self)
     end
     if (type(db.alert.sound) == "nil") then
         -- Enable sound by default in Cataclysm, where the "PowerAura" sound effect was added
-        db.alert.sound = self.IsCata() and 1 or 0;
+        db.alert.sound = not self.IsProject(SAO.ERA + SAO.TBC + SAO.WRATH) and 1 or 0;
     end
 
     if not db.glow then
@@ -143,35 +198,18 @@ function SAO.LoadDB(self)
             if (not db.classes[classFile]) then
                 db.classes[classFile] = CopyTable(classData);
             else
-                for optionType, optionData in pairs(classData) do
-                    if (not db.classes[classFile][optionType]) then
-                        db.classes[classFile][optionType] = CopyTable(optionData);
-                    else
-                        for auraID, auraData in pairs(optionData) do
-                            if (not db.classes[classFile][optionType][auraID]) then
-                                db.classes[classFile][optionType][auraID] = CopyTable(auraData);
-                            else
-                                for hashID, hashData in pairs(auraData) do
-                                    if (type(db.classes[classFile][optionType][auraID][hashID]) == 'nil') then
-                                        if (type(hashData) == 'table') then
-                                            db.classes[classFile][optionType][auraID][hashID] = CopyTable(hashData);
-                                        else
-                                            db.classes[classFile][optionType][auraID][hashID] = hashData;
-                                        end
-                                    elseif (type(db.classes[classFile][optionType][auraID][hashID]) == "table" and type(hashData) == 'table') then
-                                        for id, value in pairs(hashData) do
-                                            if (type(db.classes[classFile][optionType][auraID][hashID][id]) == 'nil') then
-                                                db.classes[classFile][optionType][auraID][hashID][id] = value;
-                                            end
-                                        end
-                                    end
-                                end
-                            end
-                        end
-                    end
-                end
+                applyDefaultClassData(db.classes[classFile], classData);
             end
         end
+    end
+
+    -- Apply shared class data to each known class so far
+    for classFile, classData in pairs(db.classes) do
+        applyDefaultClassData(classData, SAO.defaults.shared);
+    end
+
+    if not db.questions then
+        db.questions = {};
     end
 
     -- Migration from older versions
@@ -190,23 +228,50 @@ function SAO.LoadDB(self)
     if not db.version or db.version < 143 then
         migrateTo143(db);
     end
+    if not db.version or db.version < 250 then
+        migrateTo250(db);
+    end
+    if not db.version or db.version < 257 then
+        migrateTo257(db);
+    end
 
     db.version = currentversion;
     SpellActivationOverlayDB = db;
 
     -- At the very end, register the class
     -- This must be done after db init because registering may need options from db
-    if (self.CurrentClass) then
-        self.CurrentClass.Register(SAO);
+    for _, classDef in ipairs({ SAO.CurrentClass, SAO.SharedClass }) do -- Iteration may fail if CurrentClass is nil and SharedClass is not, but this shouldn't happen
+        if classDef then
+            classDef.Register(SAO);
+        end
     end
 end
 
 -- Utility frame dedicated to react to variable loading
 local loader = CreateFrame("Frame", "SpellActivationOverlayDBLoader");
+local loadingState = {
+    loaded = false,
+    questionsAsked = false,
+    variablesApplied = false,
+    optionsPanelInitialized = false,
+};
 loader:RegisterEvent("VARIABLES_LOADED");
 loader:SetScript("OnEvent", function (self, event)
     SAO:LoadDB();
+    loadingState.loaded = true;
+
+    SAO:AskQuestionsAtStart();
+    loadingState.questionsAsked = true;
+
     SAO:ApplyAllVariables();
+    loadingState.variablesApplied = true;
+
     SpellActivationOverlayOptionsPanel_Init(SAO.OptionsPanel);
+    loadingState.optionsPanelInitialized = true;
+
     loader:UnregisterEvent("VARIABLES_LOADED");
 end);
+
+function SAO:GetDatabaseLoadingState()
+    return loadingState;
+end

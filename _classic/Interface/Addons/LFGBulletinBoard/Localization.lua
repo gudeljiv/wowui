@@ -29,6 +29,8 @@ local preLocalizedFallbacks = {
 		local localizedName = C_ChatInfo.GetChannelShortcutForChannelID(lfgChannelID)
 		return localizedName
 	end)(),
+	-- default global string includes an unwanted colon at the end
+	ADD_GUILDRANK_LABEL = ADD_GUILDRANK_LABEL:gsub("%p", ""),
 	["world_channel"] = CHANNEL_CATEGORY_WORLD,
 	["GuildChannel"] = GUILD_CHAT,
 	["msgLevelRange"] = LFD_LEVEL_FORMAT_RANGE:gsub("%(", ("(%s "):format(LEVEL)),
@@ -71,8 +73,189 @@ local preLocalizedFallbacks = {
 	-- Language checkboxes 
 	["CboxTagsPortuguese"] = LFG_LIST_LANGUAGE_PTBR,
 	["CboxTagsSpanish"] = LFG_LIST_LANGUAGE_ESES,
+	-- Mists of Pandaria world bosses
+	-- note: these globals only exist in mop classic client, but its the only place they should be used.
+	SHA_OF_ANGER = WORLD_BOSS_SHA_OF_ANGER or "Sha of Anger",
+	GALLEON = WORLD_BOSS_GALLEON or "Galleon",
+	NALAK = WORLD_BOSS_NALAK or "Nalak",
+	OONDASTA = WORLD_BOSS_OONDASTA or "Oondasta",
+	FOUR_CELESTIALS = WORLD_BOSS_FOUR_CELESTIALS or "The Four Celestials",
+	ORDOS = WORLD_BOSS_ORDOS or "Ordos",
 }
 
+-- localized strings keyed by string identifier key
+local localizedAddonDisplayStrings = {
+	FILTER_OPTIONS = {
+		enUS = "Filter Options",
+		deDE = "Filter Optionen",
+		esMX = "Opciones de filtro",
+		frFR = "Options de filtre",
+		ptBR = "Opções de filtro",
+		ruRU = "Опции фильтра",
+		zhCN = "过滤器选项",
+		zhTW = "過濾器選項",
+	},
+	DISMISS_REQUEST = {
+		enUS = "Dismiss Request",
+		deDE = "Anfrage löschen",
+		esMX = "Retira solicitud",
+		frFR = "Supprimer la demande",
+		ptBR = "Descarte solicitação",
+		ruRU = "Удалить запрос",
+		zhCN = "删除请求",
+		zhTW = "刪除要求",
+	},
+	IGNORE_ITEM_LINKS = {
+		enUS = "Ignore Item Links",
+		deDE = "Gegenstandslinks ignorieren",
+		esMX = "Ignorar enlaces de objetos",
+		frFR = "Ignorer les liens d’objets",
+		ptBR = "Ignorar links de itens",
+		ruRU = "Игнорировать ссылки на предметы",
+		zhCN = "忽略物品链接",
+		zhTW = "忽略物品連結",
+	},
+	ISOLATE_CATEGORY = {
+		enUS ="Isolate Requests",
+		deDE = "Anfragen isolieren",
+		esMX = "Aislar solicitudes",
+		frFR = "Isoler les demandes",
+		ptBR = "Isolar solicitações",
+		ruRU = "Изолировать запросы",
+		zhCN = "隔离请求",
+		zhTW = "隔離請求",
+	},
+	JOIN_REQUEST_HEADER = {
+        enUS = "Alt+Click to Request to Join Group",
+        deDE = "Alt+Klick, um Beitritt zur Gruppe anzufragen",
+        esMX = "Alt+clic para solicitar unirse al grupo",
+        frFR = "Alt+clic pour demander à rejoindre le groupe",
+        ptBR = "Alt+Clique para solicitar entrada no grupo",
+        ruRU = "Alt+щелчок, чтобы отправить запрос на вступление в группу",
+        zhCN = "按住Alt+点击以申请加入队伍",
+        zhTW = "按住Alt+鍵點擊以申請加入團隊",
+    },
+	JOIN_REQUEST_REPLACEMENTS_TIP = {
+        enUS = "Available replacements:|n%role - Role |n%class - Class |n%level - Level |n%dungeon - Dungeon",
+		deDE = "Verfügbare Ersetzungen:|n%role - Rolle |n%class - Klasse |n%level - Stufe |n%dungeon - Dungeon",
+        esMX = "Sustituciones disponibles:|n%role - Función |n%class - Clase |n%level - Nivel |n%dungeon - Calabozo",
+        frFR = "Remplacements disponibles:|n%role - Rôle |n%class - Classe |n%level - Niveau |n%dungeon - Donjon",
+        ptBR = "Substituições disponíveis:|n%role - Função |n%class - Classe |n%level - Nível |n%dungeon - Masmorra",
+        ruRU = "Доступные замены:|n%role - Роль |n%class - Класс |n%level - Уровень |n%dungeon - Подземелье",
+        zhCN = "可用替换：|n%role - 职责 |n%class - 职业 |n%level - 等级 |n%dungeon - 地下城",
+        zhTW = "適用的替代項目：|n%role - 角色類型 |n%class - 職業 |n%level - 等級 |n%dungeon - 地城",
+	},
+	LAYOUT_OPTIONS = {
+		enUS = "Layout Options",
+		deDE = "Layout Optionen",
+		esMX = "Opciones de diseño",
+		frFR = "Options de disposition",
+		ptBR = "Opções de layout",
+		ruRU = "Опции макета",
+		zhCN = "布局选项",
+		zhTW = "佈局選項",
+	},
+	MOVE_TABS_TO_TOP = {
+		enUS = "Move Tabs to Top",
+		deDE = "Reiter nach oben verschieben",
+		esMX = "Mover pestañas arriba",
+		frFR = "Déplacer les onglets en haut",
+		ptBR = "Mover abas para o topo",
+		ruRU = "Переместить вкладки наверх",
+		zhCN = "移动标签页到顶部",
+		zhTW = "移動欄頁至頂部",
+	},
+	MOVE_TABS_TO_BOTTOM = {
+		enUS = "Move Tabs to Bottom",
+		deDE = "Reiter nach unten verschieben",
+		esMX = "Mover pestañas hacia abajo",
+		frFR = "Déplacer les onglets vers le bas",
+		ptBR = "Mover Abas para Baixo",
+		ruRU = "Переместить вкладки вниз",
+		zhCN = "移动标签页到底部",
+		zhTW = "移動欄頁到底部",
+	},
+	DISPLAY_LFG_ANNOUNCEMENT_BAR = {
+		enUS = "Display LFG Announcement Bar",
+		deDE = "SNG-Ankündigungsleiste anzeigen",
+		esMX = "Mostrar barra de anuncios de BDG",
+		frFR = "Afficher la barre d'annonce de la RdG",
+		ptBR = "Exibir barra de anúncio de PrG",
+		ruRU = "Показать панель объявлений ПГ",
+		zhCN = "显示寻求组队公告栏",
+		zhTW = "顯示尋求組隊公告欄",
+	},
+	REQUESTS_SETTINGS = {
+		enUS = "Requests Settings",
+		deDE = "Anfragen Einstellungen",
+		esMX = "Configuración de solicitudes",
+		frFR = "Paramètres des demandes",
+		ptBR = "Configurações de pedidos",
+		ruRU = "Настройки запросов",
+		zhCN = "请求设置",
+		zhTW = "請求設定",
+	},
+	RIGHT_CLICK_FOR_MORE_OPTIONS = {
+		enUS = "Right-click for more options",
+		deDE = "Rechtsklick für weitere Optionen",
+		esMX = "Haga clic derecho para más opciones",
+		frFR = "Cliquez droit pour plus d'options",
+		ptBR = "Clique com o botão direito para mais opções",
+		ruRU = "Нажмите правой кнопкой мыши для дополнительных параметров",
+		zhCN = "右键点击获取更多选项",
+		zhTW = "右鍵點擊以獲取更多選項",
+	},
+	WINDOW_SETTINGS = {
+		enUS = "Window Settings",
+		deDE = "Fenster Einstellungen",
+		esMX = "Configuración de ventana",
+		frFR = "Paramètres de la fenêtre",
+		ptBR = "Configurações da janela",
+		ruRU = "Настройки окна",
+		zhCN = "窗口设置",
+		zhTW = "視窗設定",
+	},
+	WORLD_BOSSES = {
+		enUS = "World Bosses",
+        deDE = "Weltbosse",
+        esMX = "Jefes de mundo",
+        frFR = "Boss hors instance",
+        ptBR = "Chefes Mundiais",
+        ruRU = "Боссы вне подземелий",
+        zhCN = "世界首领们",
+        zhTW = "世界首領們",
+	},
+	LORD_KAZZAK = {
+		enUS = "Lord Kazzak",
+		deDE = "Lord Kazzak",
+		esMX = "Lord Kazzak",
+		frFR = "Seigneur Kazzak",
+		ptBR = "Lorde Kazzak",
+		ruRU = "Владыка Каззак",
+		zhCN = "卡扎克",
+		zhTW = "卡札克領主",
+	},
+	AZUREGOS = {
+		enUS = "Azuregos",
+		deDE = "Azuregos",
+		esMX = "Azuregos",
+		frFR = "Azuregos",
+		ptBR = "Azuregos",
+		ruRU = "Азурегос",
+		zhCN = "艾索雷葛斯",
+		zhTW = "艾索雷苟斯",
+	},
+	THUNDERAAN = {
+		enUS = "Prince Thunderaan",
+		deDE = "Prinz Donneraan",
+		esMX = "Príncipe Thunderaan",
+		frFR = "Prince Tonneraan",
+		ptBR = "Príncipe Trovejardus",
+		ruRU = "Принц Громораан",
+		zhCN = "桑德兰王子",
+		zhTW = "桑德蘭王子",
+	},
+}
 ---Localized addon strings, keyed by locale
 GBB.locales = {
 	enGB = {
@@ -100,8 +283,7 @@ GBB.locales = {
 		["normalAbr"]="N",
 		["raidAbr"]="R",
 		["msgFontSize"] = "Font Size (Requires /reload)",
-		["msgLeaderOutbound"]="Please invite for %s, I am a %s.",
-
+		["JOIN_REQUEST_MESSAGE"]="Please invite for %dungeon. Level %level %class %role.",
 		-- option panel
 
 		["HeaderSettings"]="Settings",
@@ -147,7 +329,6 @@ GBB.locales = {
 		["CboxUseAllInLFG"]="Show all messages from lfg-channel",
 		["CboxEscapeQuit"]="ESC close main window (Restart needed)",
 		["CboxEnableShowOnly"]="Show a fixed number of requests per dungeon",
-		["CboxDisplayLFG"] = "Display LFG Bar (requires /reload)",
 		["CboxChatStyle"]="Use more chat style design",
 		["CboxCharDontFilterOwn"]="Don't filter own request",
 		["CboxCharHeroicOnly"]="Heroic only filter",
@@ -326,7 +507,7 @@ GBB.locales = {
 		NO_FILTERS_SELECTED = "¡No hay resultados!|nModifica las mazmorras y bandas rastreadas en la configuración de filtros del addon.",
 		-- ["lfg_channel"]="BuscarGrupo", -- uses fallback
 		["world_channel"] = "Mundo",
-		["SAVE_ON_ENTER"] = ("Pulse \"%strings\" para guardar los cambios."):format(KEY_ENTER),
+		["SAVE_ON_ENTER"] = ("Pulse \"%s\" para guardar los cambios."):format(KEY_ENTER),
 	},
 	frFR = {
 	NO_FILTERS_SELECTED = "Aucun résultat!|nModifiez les donjons et raids suivis dans les paramètres de filtre de l'addon.",
@@ -352,7 +533,7 @@ GBB.locales = {
 	["normalAbr"]="N",
 	["raidAbr"]="R",
 	["msgFontSize"] = "Taille de fonte (nécéssite un /reload)",
-	["msgLeaderOutbound"]="Je cherche un groupe pour %s, Je suis %s.",
+	["JOIN_REQUEST_MESSAGE"]="Je cherche un groupe pour %dungeon, Je suis %role.",
 	["HeaderSettings"]="Réglages",
 	["PanelFilter"]="Filtres Vanilla",
 	["TBCPanelFilter"]="Filtres BC",
@@ -394,7 +575,6 @@ GBB.locales = {
 	["CboxUseAllInLFG"]="Afficher tous les messages du canal lfg",
 	["CboxEscapeQuit"]="ESC fermer la fenêtre principale (Redémarrage nécessaire)",
 	["CboxEnableShowOnly"]="Afficher un nombre fixe de demandes par donjon",
-	["CboxDisplayLFG"] = "Afficher la barre LFG (nécessite /reload)",
 	["CboxChatStyle"]="Utiliser un style de chat plus design",
 	["CboxCharDontFilterOwn"]="Ne pas filtrer sa propre requête",
 	["CboxCharHeroicOnly"]="Filtre uniquement les héroïques",
@@ -627,7 +807,6 @@ GBB.locales = {
 		["CboxUseAllInLFG"]="顯示來自組隊頻道的所有訊息",
 		["CboxEscapeQuit"]="ESC 關閉主視窗 (需要重啟)",
 		["CboxEnableShowOnly"]="在每個地下城顯示尋求組隊的數量",
-		["CboxDisplayLFG"] = "顯示組隊條 (需要 /reload)",
 		["CboxChatStyle"]="使用聊天樣式設計",
 		["CboxCharDontFilterOwn"]="不要過濾自己的請求",
 		["CboxCharHeroicOnly"]="只顯示英雄",
@@ -758,7 +937,6 @@ GBB.locales = {
 		["CboxUseAllInLFG"]="显示來自组队频道的所有讯息",
 		["CboxEscapeQuit"]="ESC 关闭主窗口 (需要重启)",
 		["CboxEnableShowOnly"]="在每个地下城显示寻求组队的數量",
-		["CboxDisplayLFG"] = "显示组队条 (需要 /reload)",
 		["CboxChatStyle"]="使用聊天样式设计",
 		["CboxCharDontFilterOwn"]="不要过滤自 己的请求",
 		["CboxCharHeroicOnly"]="只显示英雄",
@@ -834,7 +1012,12 @@ GBB.locales.enUS=GBB.locales.enGB
 function GBB.LocalizationInit()
 	local locale = GetLocale()
 	local localizedStrings = GBB.locales[locale] or {};
-	
+	for key, l10nTable in pairs(localizedAddonDisplayStrings) do
+		l10nTable.esES = l10nTable.esES or l10nTable.esMX
+		if localizedStrings[key] == nil then
+			localizedStrings[key] = l10nTable[locale] or l10nTable.enUS
+		end
+	end
 	if GroupBulletinBoardDB
 	and type(GroupBulletinBoardDB.CustomLocales) == "table"
 	then

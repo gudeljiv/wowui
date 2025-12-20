@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 function addonTable.SingleViews.GetCollapsingBagDetails(character, section, indexes, slotsCount)
   local characterInfo = Syndicator.API.GetCharacter(character)
   if characterInfo.containerInfo == nil or characterInfo.containerInfo[section] == nil then
@@ -123,7 +124,11 @@ function addonTable.SingleViews.ArrangeCollapsibles(activeCollapsibles, originBa
     local hidden = addonTable.Config.Get(addonTable.Config.Options.HIDE_SPECIAL_CONTAINER)[key]
     local divider = originCollapsibles[index].divider
     divider:SetShown(not hidden)
-    layout:SetShown(not hidden)
+    layout:ClearAllPoints()
+    if hidden then
+      layout:SetPoint("TOPLEFT", UIParent, "TOPRIGHT", 2000, 0)
+    end
+    layout:Show()
     if not hidden then
       divider:SetPoint("BOTTOM", layout, "TOP", 0, topSpacing / 2 + dividerOffset)
       divider:SetPoint("LEFT", layout)

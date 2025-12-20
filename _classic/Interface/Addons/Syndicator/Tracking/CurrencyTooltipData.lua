@@ -1,7 +1,10 @@
-function Syndicator.Tracking.GetCurrencyTooltipData(currencyID, sameConnectedRealm, sameFaction)
+---@class addonTableSyndicator
+local addonTable = select(2, ...)
+
+function addonTable.Tracking.GetCurrencyTooltipData(currencyID, sameConnectedRealm, sameFaction)
   local matchingRealms
   if sameConnectedRealm then
-    local realms = Syndicator.Utilities.GetConnectedRealms()
+    local realms = addonTable.Utilities.GetConnectedRealms()
 
     matchingRealms = {}
     for _, r in ipairs(realms) do
@@ -12,7 +15,8 @@ function Syndicator.Tracking.GetCurrencyTooltipData(currencyID, sameConnectedRea
   local currentFaction = UnitFactionGroup("player")
 
   local summary = {}
-  for character, info in pairs(SYNDICATOR_DATA.Characters) do
+  for _, character in pairs(Syndicator.API.GetAllCharacters()) do
+    local info = Syndicator.API.GetCharacter(character)
     if not info.details.hidden and (not sameConnectedRealm or matchingRealms[info.details.realmNormalized]) and (not sameFaction or info.details.faction == currentFaction) then
       if info.currencies and info.currencies[currencyID] and info.currencies[currencyID] > 0 then
         table.insert(summary, {

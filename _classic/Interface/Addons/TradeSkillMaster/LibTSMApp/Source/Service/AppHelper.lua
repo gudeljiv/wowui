@@ -21,6 +21,7 @@ local Log = LibTSMApp:From("LibTSMUtil"):Include("Util.Log")
 local Hash = LibTSMApp:From("LibTSMUtil"):Include("Util.Hash")
 local Analytics = LibTSMApp:From("LibTSMUtil"):Include("Util.Analytics")
 local Table = LibTSMApp:From("LibTSMUtil"):Include("Lua.Table")
+local BinarySearch = LibTSMApp:From("LibTSMUtil"):Include("Util.BinarySearch")
 local LibRealmInfo = LibStub("LibRealmInfo")
 local private = {
 	settings = nil,
@@ -55,6 +56,7 @@ local AUCTIONDB_COMMODITY_TAGS = {
 }
 local LOGOUT_TIME_WARNING_THRESHOLD = 0.02
 local MAX_ANALYTICS_AGE = 14 * 24 * 60 * 60 -- 2 weeks
+local MAX_FULL_SCAN_AGE = 12 * 60 * 60 -- 12 hours
 local APP_DB_GLOBAL_NAME = "TradeSkillMaster_AppHelperDB"
 
 
@@ -158,10 +160,13 @@ AppHelper:OnModuleLoad(function()
 		elseif ClientInfo.IsVanillaClassic() and SessionInfo.IsSeasonOfDiscovery() then
 			private.addonRegion = region.."-SoD"
 			private.appDataRegion = "SoD-"..region
+		elseif ClientInfo.IsVanillaClassic() and SessionInfo.IsFresh() then
+			private.addonRegion = region.."-Fresh"
+			private.appDataRegion = "Fresh-"..region
 		elseif ClientInfo.IsVanillaClassic() then
 			private.addonRegion = region.."-Classic"
 			private.appDataRegion = "Classic-"..region
-		elseif ClientInfo.IsCataClassic() then
+		elseif ClientInfo.IsPandaClassic() then
 			private.addonRegion = region.."-BCC"
 			private.appDataRegion = "BCC-"..region
 		else
@@ -262,9 +267,21 @@ function private.HandleLogin()
 		StaticPopupDialog.ShowWithOk(private.appInfo.message.msg)
 	end
 
-	if LibTSMApp.GetTime() - private.appInfo.lastSync > 60 * 60 then
+	local isAppRunning = LibTSMApp.GetTime() - private.appInfo.lastSync <= 60 * 60
+	if not isAppRunning then
 		-- The app hasn't been running for over an hour
 		StaticPopupDialog.ShowWithOk(L["TSM is missing important information from the TSM Desktop Application. Please ensure the TSM Desktop Application is running and is properly configured."])
+	end
+
+	if LibTSMApp.IsPandaClassic() then
+		-- Only enable the full scan if this user hasn't scanned in the last hour and their app is running
+		local appDB = _G[APP_DB_GLOBAL_NAME]
+		local lastFullScanTime = appDB and appDB.fullScan and appDB.fullScan.updateTime or 0
+		if isAppRunning and LibTSMApp.GetTime() - lastFullScanTime > 60 * 60 then
+			Auction.EnableFullScan()
+		end
+	else
+		Auction.EnableFullScan()
 	end
 	return true
 end
@@ -308,6 +325,7 @@ function private.SaveAppData()
 	ErrorHandler.SaveReports(appDB)
 	private.SaveBlackMarket(appDB)
 	private.SaveAnalytics(appDB)
+	private.SaveFullScan(appDB)
 end
 
 function private.SaveBlackMarket(appDB)
@@ -329,14 +347,37 @@ function private.SaveAnalytics(appDB)
 
 	-- Remove entries which are too old
 	local minTime = LibTSMApp.GetTime() - MAX_ANALYTICS_AGE
-	for i = #appDB.analytics.data, 1, -1 do
-		if Analytics.GetEntryTime(appDB.analytics.data[i]) < minTime then
-			tremove(appDB.analytics.data, i)
-		end
+	local index, insertIndex = BinarySearch.Table(appDB.analytics.data, minTime, Analytics.GetEntryTime)
+	local removeEndIndex = index or (insertIndex - 1)
+	if removeEndIndex > 0 then
+		Table.RemoveRange(appDB.analytics.data, 1, removeEndIndex)
 	end
 
 	-- Add new entries
 	for _, eventStr in Analytics.EventIterator() do
 		tinsert(appDB.analytics.data, eventStr)
 	end
+end
+
+function private.SaveFullScan(appDB)
+	appDB.fullScan = appDB.fullScan or {updateTime=0, data={}}
+
+	-- Remove entries which are too old
+	local minTime = LibTSMApp.GetTime() - MAX_FULL_SCAN_AGE
+	for i = #appDB.fullScan.data, 1, -1 do
+		if appDB.fullScan.data[i].scanTime < minTime then
+			tremove(appDB.fullScan.data, i)
+		end
+	end
+
+	-- Save the new data (if available)
+	local data, scanTime = Auction.GetFullScanData()
+	if not data then
+		return
+	end
+	appDB.fullScan.updateTime = scanTime
+	tinsert(appDB.fullScan.data, {
+		data = data,
+		scanTime = scanTime,
+	})
 end

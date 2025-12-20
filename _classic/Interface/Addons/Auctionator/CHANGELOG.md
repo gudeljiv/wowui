@@ -1,6 +1,6 @@
 # Auctionator
 
-## [11.0.12](https://github.com/Auctionator/Auctionator/tree/11.0.12) (2024-09-25)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/11.0.11...11.0.12) 
+## [306](https://github.com/TheMouseNest/Auctionator/tree/306) (2025-12-18)
+[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/305...306) 
 
-- Vanilla Classic: Update toc for 1.15.4  
+- Tag as supporting 5.5.3  

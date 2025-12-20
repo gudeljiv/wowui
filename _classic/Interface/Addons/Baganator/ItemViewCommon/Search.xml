@@ -7,20 +7,10 @@
     </Scripts>
     <Frames>
       <EditBox parentKey="SearchBox" inherits="SearchBoxTemplate" autoFocus="false" frameLevel="700">
-        <Size x="300" y="22"/>
-        <Anchors>
-          <Anchor point="RIGHT" x="-77" y="0"/>
-        </Anchors>
+        <Size y="22"/>
       </EditBox>
-      <Button parentKey="HelpButton" inherits="BaganatorHelpButtonTemplate">
-        <Anchors>
-          <Anchor point="RIGHT" x="-45" y="0"/>
-        </Anchors>
-      </Button>
+      <Button parentKey="HelpButton" inherits="BaganatorHelpButtonTemplate"/>
       <Button parentKey="GlobalSearchButton" inherits="BaganatorMegaSearchButtonTemplate">
-        <Anchors>
-          <Anchor point="RIGHT" x="-13" y="0"/>
-        </Anchors>
         <Scripts>
           <OnClick>
             local text = self:GetParent().SearchBox:GetText()
@@ -28,6 +18,8 @@
           </OnClick>
         </Scripts>
       </Button>
+      <DropdownButton parentKey="SavedSearchesButton" inherits="BaganatorSavedSearchesButtonTemplate">
+      </DropdownButton>
     </Frames>
   </Frame>
 </Ui>

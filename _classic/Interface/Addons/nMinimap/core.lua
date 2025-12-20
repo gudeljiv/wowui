@@ -48,8 +48,8 @@ MinimapZoomIn:UnregisterAllEvents()
 MinimapZoomOut:Hide()
 MinimapZoomOut:UnregisterAllEvents()
 
-MiniMapWorldMapButton:Hide()
-MiniMapWorldMapButton:UnregisterAllEvents()
+-- MiniMapWorldMapButton:Hide()
+-- MiniMapWorldMapButton:UnregisterAllEvents()
 
 MinimapNorthTag:SetAlpha(0)
 

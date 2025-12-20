@@ -1,25 +1,30 @@
-### 2.2.27
-- Version Update
+# Changelog
 
-### 2.2.26
-- overdue proper keyring logic support for classic era/sod (fits into bag logic)
-- Some fixes for bop, did require a /reload to actually work.
-- Loot window should now show properly in combat when not-mouseover settings are used, instead of randomly breaking.
+## 110
+- TBC Era support
 
-### 2.2.25
-- Fix inventory full sound playing on unlootable loot that requires rolling on retail.
+## 109
+- Version update
 
-### 2.2.24
-- Ops, fixed error on classic
+## 108
+- Version update
 
-### 2.2.23
-- For classic added a /sal bop to auto confirm pickups when solo, but is untested as i don't play it
+## 107
+- Version update
 
-### 2.2.21
-- Support TWW
+## 106
+- Version update
 
-### 2.2.20
-- Version Update
+## 105
+- Version update
 
-### 2.2.19
-- Cata support
+## 104
+- Version update
+
+## 103
+- Version update
+
+## 102
+- Changed looting to be independent of user framerate.
+- Items should fully loot now
+- Support 11.2.0

@@ -917,9 +917,11 @@ L["UIPANEL_OPENCPUPROFILE_DESC"] = [[View detailed CPU usage metrics about each 
 
 Also accessible via '/tmw cpu']]
 L["UIPANEL_UPDATEINTERVAL"] = "Update Interval"
+L["UIPANEL_UPDATEINTERVAL_UPS"] = [[%s sec. 
+(≤ %s UPS)]]
 L["UIPANEL_TOOLTIP_UPDATEINTERVAL"] = [[Sets how often (in seconds) icons are checked for show/hide, alpha, conditions, etc.
 
-Zero is as fast as possible (every frame). Lower values may have a slight impact on framerate for low-end computers.]]
+Updates occur at most once per frame. Lower values may have a slight impact on framerate for low-end computers.]]
 L["UIPANEL_EFFTHRESHOLD"] = "Buff Efficiency Threshold"
 L["UIPANEL_EFFTHRESHOLD_DESC"] = [[Sets a threshold based on the number of buffs/debuffs configured to be checked by buff/debuff icons.
 
@@ -1408,8 +1410,8 @@ L["CONDITIONPANEL_UNITSPEC_CHOOSEMENU"] = "Choose Specs..."
 
 L["CONDITIONPANEL_UNITSPEC_DESC"] = [[This condition ONLY works for:
 |cff7fffff-|r Yourself
-|cff7fffff-|r Battleground enemies
-|cff7fffff-|r Arena enemies
+|cff7fffff-|r Battleground enemies (Retail WoW only)
+|cff7fffff-|r Arena enemies (MoP+ only)
 
 It does NOT work for: |TInterface/AddOns/TellMeWhen/Textures/Alert:0:2|t
 |cff7fffff-|r Group members
@@ -1457,8 +1459,13 @@ L["CONDITIONPANEL_LASTCAST"] = "Last Ability Used"
 L["CONDITIONPANEL_LASTCAST_ISSPELL"] = "Matches"
 L["CONDITIONPANEL_LASTCAST_ISNTSPELL"] = "Doesn't Match"
 
-L["CONDITIONPANEL_OVERLAYED"] = "Spell activation overlay"
+L["CONDITIONPANEL_OVERLAYED"] = "Spell Activation Overlay"
 L["CONDITIONPANEL_OVERLAYED_DESC"] = "Checks if a given spell has the activation overlay effect (the sparkly yellow border on your action bars)."
+
+L["CONDITIONPANEL_ASSISTANTSPELL"] = "Spell is Assistant Highlight"
+L["CONDITIONPANEL_ASSISTANTSPELL_DESC"] = "Checks if any of the given spells is the current spell for the Blizzard Combat Assistant Highlight feature. This can only track abilities that are present on your actionbars."
+L["CONDITIONPANEL_ASSISTANTBUTTON"] = "Spell is Assistant Button action"
+L["CONDITIONPANEL_ASSISTANTBUTTON_DESC"] = "Checks if any of the given spells is the current spell for the Blizzard Single-Button Assistant feature. This works best if the Single-Button Assistant button is placed on your action bars."
 
 L["CONDITIONPANEL_CURRENTSPELL"] = "Spell Queued"
 L["CONDITIONPANEL_CURRENTSPELL_DESC"] = "Checks if a given next-swing spell is currently activated."
@@ -1466,7 +1473,8 @@ L["CONDITIONPANEL_CURRENTSPELL_DESC"] = "Checks if a given next-swing spell is c
 L["CONDITIONPANEL_AUTOSPELL"] = "Spell Autocasting"
 L["CONDITIONPANEL_AUTOSPELL_DESC"] = "Checks if a given spell or ability is autocasting."
 
-L["CONDITIONPANEL_INTERRUPTIBLE"] = "Interruptible"
+L["CONDITIONPANEL_CAST_PRESENT"] = "Casting"
+L["CONDITIONPANEL_CAST_ABSENT"] = "Not Casting"
 L["CONDITIONPANEL_NAME"] = "Unit Name"
 L["CONDITIONPANEL_NAMETOMATCH"] = "Name to Match"
 L["CONDITIONPANEL_NAMETOOLTIP"] = "You can enter multiple names to be matched by separating each one with a semicolon (;). The condition will pass if any names are matched."
@@ -1522,6 +1530,8 @@ L["CONDITIONPANEL_BLIZZEQUIPSET_INPUT"] = "Equipment set name"
 L["CONDITIONPANEL_BLIZZEQUIPSET_INPUT_DESC"] = [[Enter the name of the Blizzard equipment set that you wish to check.
 
 Only one equipment set may be entered, and it is |cFFFF5959CASE SENSITIVE|r]]
+L["CONDITIONPANEL_ARMORREPAIR"] = "Armor Repair Level"
+L["CONDITIONPANEL_ARMORREPAIR_DESC"] = "Checks the lowest durability percentage of any equipped gear."
 L["EQUIPSETTOCHECK"] = "Equipment set to check (|cFFFF5959CASE SENSITIVE|r)"
 L["ONLYCHECKMINE"] = "Only Cast By Me"
 L["ONLYCHECKMINE_DESC"] = "Check this to cause this condition to only check for buffs/debuffs that you cast"
@@ -1685,6 +1695,8 @@ L["PET_TYPE_TENACITY"] = "Tenacity"
 L["PET_TYPE_FEROCITY"] = "Ferocity"
 
 L["SWINGTIMER"] = "Swing Timer"
+L["RANGEDHASTE"] = "Ranged Haste"
+L["RANGEDCRIT"] = "Ranged Crit"
 L["ITEMINBAGS"] = "Item count (includes charges)"
 L["ITEMEQUIPPED"] = "Item is equipped"
 L["ITEMSPELL"] = "Item has on use effect"
@@ -2865,56 +2877,70 @@ L["IMPORT_LUA_DENY"] = "Abort import operation"
 -- EQUIVS
 -- --------
 
-L["CrowdControl"] = "Crowd Control"
-L["Bleeding"] = "Bleeding"
-L["Feared"] = "Fear"
-L["Incapacitated"] = "Incapacitated"
-L["Stunned"] = "Stunned"
-L["Slowed"] = "Slowed"
-L["ImmuneToStun"] = "Immune To Stun"
-L["ImmuneToMagicCC"] = "Immune To Magic CC"
-L["Disoriented"] = "Disoriented"
-L["Silenced"] = "Silenced"
-L["Rooted"] = "Rooted"
-L["Shatterable"] = "Shatterable"
-L["DamageShield"] = "Damage Shield"
---L["BurstHaste"] = "Heroism/Bloodlust" -- defined in static formats
-L["ReducedHealing"] = "Reduced Healing"
-L["DefensiveBuffs"] = "Defensive Buffs"
-L["DefensiveBuffsSingle"] = "Targeted Defensive Buffs"
-L["DefensiveBuffsAOE"] = "AOE Defensive Buffs"
-L["SpeedBoosts"] = "Speed Boosts"
-L["DamageBuffs"] = "Damage Buffs"
-L["ImmuneToInterrupts"] = "Immunity to Interrupt Spells"
-L["ImmuneToSlows"] = "Immunity to Slows"
 
--- Deprecated
---L["IncreasedVersatility"] = "Increased Versatility"
---L["IncreasedMultistrike"] = "Increased Multistrike"
---L["IncreasedStats"] = "Increased Stats"
---L["IncreasedCrit"] = "Increased Crit Chance"
---L["IncreasedMastery"] = "Increased Mastery"
---L["IncreasedAP"] = "Increased Attack Power"
---L["IncreasedSP"] = "Increased Spellpower"
---L["IncreasedHaste"] = "Increased Haste"
---L["BonusStamina"] = "Increased Stamina"
--- L["BurstManaRegen"] = "Burst Mana Regen"
+
+--L["BurstHaste"] = "Heroism/Bloodlust" -- defined in static formats
 --L["DontMelee"] = "Don't Melee"
---L["MovementSlowed"] = "Movement Slowed"
---L["ReducedCastingSpeed"] = "Reduced Casting Speed"
---L["ReducedPhysicalDone"] = "Reduced Physical Damage Done"
---L["SpellDamageTaken"] = "Increased Spell Damage Taken"
---L["ReducedArmor"] = "Reduced Armor"
--- L["Disarmed"] = "Disarmed"
 --L["IncreasedSPsix"] = "Increased Spellpower (6%)"
 --L["IncreasedSPten"] = "Increased Spellpower (10%)"
---L["IncreasedPhysHaste"] = "Increased Physical Haste"
---L["IncreasedSpellHaste"] = "Increased Spell Haste"
---L["PhysicalDmgTaken"] = "Physical Damage Taken"
---L["MiscHelpfulBuffs"] = "Misc. Helpful Buffs"
---L["PvPSpells"] = "PvP Crowd Control, etc."
-
+--L["MovementSlowed"] = "Movement Slowed"
+L["Bleeding"] = "Bleeding"
+L["BonusStamina"] = "Increased Stamina"
+L["BurstManaRegen"] = "Burst Mana Regen"
+L["CrowdControl"] = "Crowd Control"
+L["DamageBuffs"] = "Damage Buffs"
+L["DamageReflect"] = "Damage Reflect"
+L["DamageShield"] = "Damage Shield"
+L["DarkFortune"] = "Dark Fortune"
+L["DefensiveBuffs"] = "Defensive Buffs"
+L["DefensiveBuffsAOE"] = "AOE Defensive Buffs"
+L["DefensiveBuffsSingle"] = "Targeted Defensive Buffs"
+L["Disarmed"] = "Disarmed"
+L["Disoriented"] = "Disoriented"
+L["Feared"] = "Fear"
+L["FlaskBuffs"] = "Flask Buffs"
+L["FoodBuffs"] = "Food Buffs"
 L["Heals"] = "Player Heals"
+L["HealthRegeneration"] = "Health Regeneration"
+L["ImmuneToInterrupts"] = "Immunity to Interrupt Spells"
+L["ImmuneToMagicCC"] = "Immune To Magic CC"
+L["ImmuneToSlows"] = "Immunity to Slows"
+L["ImmuneToStun"] = "Immune To Stun"
+L["Incapacitated"] = "Incapacitated"
+L["IncreasedAgility"] = "Increased Agility"
+L["IncreasedAP"] = "Increased Attack Power"
+L["IncreasedArmor"] = "Increased Armor"
+L["IncreasedCrit"] = "Increased Crit Chance"
+L["IncreasedHaste"] = "Increased Haste"
+L["IncreasedHealth"] = "Increased Health"
+L["IncreasedIntellect"] = "Increased Intellect"
+L["IncreasedMastery"] = "Increased Mastery"
+L["IncreasedMultistrike"] = "Increased Multistrike"
+L["IncreasedPhysHaste"] = "Increased Physical Haste"
+L["IncreasedSP"] = "Increased Spellpower"
+L["IncreasedSpellHaste"] = "Increased Spell Haste"
+L["IncreasedSpirit"] = "Increased Spirit"
+L["IncreasedStats"] = "Increased Stats"
+L["IncreasedStrength"] = "Increased Strength"
+L["IncreasedVersatility"] = "Increased Versatility"
+L["MiscHelpfulBuffs"] = "Misc. Helpful Buffs"
+L["PhysicalDmgTaken"] = "Physical Damage Taken"
+L["PvPSpells"] = "PvP Crowd Control, etc."
+L["ReducedArmor"] = "Reduced Armor"
+L["ReducedCastingSpeed"] = "Reduced Casting Speed"
+L["ReducedHealing"] = "Reduced Healing"
+L["ReducedPhysicalDone"] = "Reduced Physical Damage Done"
+L["Resistances"] = "Spell Resistance"
+L["Rooted"] = "Rooted"
+L["Shatterable"] = "Shatterable"
+L["Silenced"] = "Silenced"
+L["Slowed"] = "Slowed"
+L["SpeedBoosts"] = "Speed Boosts"
+L["SpellDamageTaken"] = "Increased Spell Damage Taken"
+L["Stunned"] = "Stunned"
+L["WaterBreathing"] = "Water Breathing"
+L["WaterWalking"] = "Water Walking"
+L["Zanza"] = "Zanza"
 
 L["GCD"] = "Global Cooldown"
 
@@ -2953,6 +2979,7 @@ L["DR-ShortDisorient"] = "Short Mesmerizes/Disorients"
 L["DR-Disarm"] = "Disarms"
 L["DR-RandomRoot"] = "Short/Random roots"
 L["DR-ControlledRoot"] = "Controlled roots"
+L["DR-KidneyShot"] = "Kidney Shot"
 L["DR-Charge"] = "Charge"
 L["DR-CheapShot"] = "Cheap Shot / Pounce"
 L["DR-Hibernate"] = "Hibernate"

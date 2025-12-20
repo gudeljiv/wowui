@@ -16,8 +16,6 @@
 
 local _, Core = ...
 
-if not Core.WOW_RETAIL then return end
-
 ----------------------------------------
 -- Internal
 ---
@@ -26,40 +24,43 @@ if not Core.WOW_RETAIL then return end
 local L = Core.Locale
 
 -- @ Skins\Skins
-local Hidden = Core.__Hidden
+local Hidden = Core._Hidden
+
+----------------------------------------
+-- Locals
+---
+
+local SkinID = "Blizzard Modern"
 
 ----------------------------------------
 -- Blizzard Modern
 ---
-
-local SkinID = "Blizzard Modern"
 
 local Skin = {
 	API_VERSION = Core.API_VERSION,
 	Shape = "Blizzard",
 	SkinID = SkinID,
 
-	-- Info
-	Description = L["The default Dragonflight button style."],
-	Version = Core.Version,
+	-- [ Info]
 	Author = "|cff0099ffBlizzard Entertainment|r",
+	Description = L["The default modern button style."],
+	Version = Core.Version,
 
-	-- Skin
+	-- [ Skin]
 	Mask = {
-		-- Key = "IconMask",
-		Atlas = "UI-HUD-ActionBar-IconFrame-Mask",
-		UseAtlasSize = false,
+		-- Atlas = "UI-HUD-ActionBar-IconFrame-Mask",
+		-- UseAtlasSize = false,
+		Texture = [[Interface/AddOns/Masque/Textures/Modern/Mask]],
 		WrapH = "CLAMPTOBLACKADDITIVE",
 		WrapV = "CLAMPTOBLACKADDITIVE",
-		Width = 51,
-		Height = 51,
+		Width = 33,
+		Height = 33,
 		Anchor = "Icon",
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
 		OffsetY = 0,
 		BagSlot = {
-			-- Key = "CircleMask",
 			Texture = [[Interface\CharacterFrame\TempPortraitAlphaMask]],
 			WrapH = "CLAMPTOBLACKADDITIVE",
 			WrapV = "CLAMPTOBLACKADDITIVE",
@@ -77,9 +78,9 @@ local Skin = {
 		-- Color = {1, 1, 1, 1},
 		BlendMode = "BLEND",
 		DrawLayer = "BACKGROUND",
-		DrawLevel = -1,
-		Width = 36,
-		Height = 36,
+		DrawLevel = -1, -- 0
+		Width = 36, -- 45
+		Height = 36, -- 45
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
@@ -88,7 +89,7 @@ local Skin = {
 		-- UseColor = nil,
 		Backpack = Hidden,
 		BagSlot = {
-			-- Atlas = "bags-item-slot64",
+			-- Atlas = "Bags-Item-Slot64",
 			-- UseAtlasSize = false,
 			Texture = [[Interface\Addons\Masque\Textures\Backdrop\Slot-Modern]],
 			--Color = {1, 1, 1, 0.8},
@@ -106,7 +107,7 @@ local Skin = {
 			-- UseColor = nil,
 		},
 		Item = {
-			Atlas = "bags-item-slot64",
+			Atlas = "Bags-Item-Slot64",
 			UseAtlasSize = false,
 			-- Color = {1, 1, 1, 1},
 			BlendMode = "BLEND",
@@ -124,8 +125,8 @@ local Skin = {
 	},
 	Icon = {
 		-- TexCoords = {0, 1, 0, 1},
-		Width = 36,
-		Height = 36,
+		Width = 36, -- 45
+		Height = 36, -- 45
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
@@ -165,7 +166,6 @@ local Skin = {
 			-- SetAllPoints = nil,
 		},
 	},
-	SlotIcon = Hidden,
 	Shadow = Hidden,
 	Normal = {
 		Atlas = "UI-HUD-ActionBar-IconFrame",
@@ -176,18 +176,18 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "ARTWORK",
 		DrawLevel = 0,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 1,
-		OffsetY = -0.5,
+		Width = 37, -- 46
+		Height = 36, --45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 1, -- 0
+		OffsetY = -0.5, -- 0
 		-- SetAllPoints = nil,
 		-- UseStates = true,
 		Aura = Hidden,
 		Backpack = {
-			Atlas = "bag-main",
-			-- EmptyAtlas = "bag-main",
+			Atlas = "Bag-Main",
+			-- EmptyAtlas = "Bag-Main",
 			UseAtlasSize = false,
 			-- Color = {1, 1, 1, 1},
 			-- EmptyColor = {1, 1, 1, 1},
@@ -204,8 +204,8 @@ local Skin = {
 			UseStates = true,
 		},
 		BagSlot = {
-			Atlas = "bag-border",
-			-- EmptyAtlas = "bag-border-empty",
+			Atlas = "Bag-Border",
+			-- EmptyAtlas = "Bag-Border-Empty",
 			UseAtlasSize = false,
 			-- Color = {1, 1, 1, 1},
 			-- EmptyColor = {1, 1, 1, 1},
@@ -241,8 +241,8 @@ local Skin = {
 			UseStates = true,
 		},
 		ReagentBag = {
-			Atlas = "bag-reagent-border",
-			-- EmptyAtlas = "bag-reagent-border-empty",
+			Atlas = "Bag-Reagent-Border",
+			-- EmptyAtlas = "Bag-Reagent-Border-Empty",
 			UseAtlasSize = false,
 			-- Color = {1, 1, 1, 1},
 			-- EmptyColor = {1, 1, 1, 1},
@@ -267,12 +267,12 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "ARTWORK",
 		DrawLevel = 0,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 1,
-		OffsetY = -0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 1, -- 0
+		OffsetY = -0.5, -- 0
 		-- SetAllPoints = nil,
 		-- UseColor = nil,
 		Backpack = {
@@ -345,11 +345,11 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "ARTWORK",
 		DrawLevel = 1,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 		-- UseColor = nil,
@@ -370,78 +370,6 @@ local Skin = {
 			-- UseColor = nil,
 		},
 	},
-	HotKey = {
-		JustifyH = "RIGHT",
-		JustifyV = "MIDDLE",
-		DrawLayer = "OVERLAY",
-		Width = 32,
-		Height = 0,
-		Anchor = "Icon",
-		Point = "TOPRIGHT",
-		RelPoint = "TOPRIGHT",
-		OffsetX = -4,
-		OffsetY = -4,
-		Pet = {
-			JustifyH = "RIGHT",
-			JustifyV = "MIDDLE",
-			DrawLayer = "ARTWORK",
-			Width = 36,
-			Height = 0,
-			Anchor = "Icon",
-			Point = "TOPRIGHT",
-			RelPoint = "TOPRIGHT",
-			OffsetX = -3,
-			OffsetY = -3,
-		},
-	},
-	Count = {
-		JustifyH = "RIGHT",
-		JustifyV = "MIDDLE",
-		DrawLayer = "OVERLAY",
-		Width = 0,
-		Height = 0,
-		Anchor = "Icon",
-		Point = "BOTTOMRIGHT",
-		RelPoint = "BOTTOMRIGHT",
-		OffsetX = -5,
-		OffsetY = 5,
-		Aura = {
-			JustifyH = "RIGHT",
-			JustifyV = "MIDDLE",
-			DrawLayer = "ARTWORK",
-			Width = 36,
-			Height = 0,
-			Anchor = "Icon",
-			Point = "BOTTOMRIGHT",
-			RelPoint = "BOTTOMRIGHT",
-			OffsetX = -2,
-			OffsetY = 2,
-		},
-		Item = {
-			JustifyH = "RIGHT",
-			JustifyV = "MIDDLE",
-			DrawLayer = "ARTWORK",
-			Width = 0,
-			Height = 0,
-			Anchor = "Icon",
-			Point = "BOTTOMRIGHT",
-			RelPoint = "BOTTOMRIGHT",
-			OffsetX = -5,
-			OffsetY = 2,
-		},
-	},
-	Duration = {
-		JustifyH = "CENTER",
-		JustifyV = "MIDDLE",
-		DrawLayer = "OVERLAY",
-		Width = 36,
-		Height = 0,
-		Anchor = "Icon",
-		Point = "TOP",
-		RelPoint = "BOTTOM",
-		OffsetX = 0,
-		OffsetY = 0,
-	},
 	Checked = {
 		Atlas = "UI-HUD-ActionBar-IconFrame-Mouseover",
 		UseAtlasSize = false,
@@ -449,13 +377,44 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 0,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
+		Backpack = {
+			Atlas = "bag-main-highlight",
+			UseAtlasSize = false,
+			-- Color = {1, 1, 1, 1},
+			BlendMode = "BLEND",
+			DrawLayer = "ARTWORK",
+			DrawLevel = 0,
+			Width = 36,
+			Height = 36,
+			Point = "CENTER",
+			RelPoint = "CENTER",
+			OffsetX = 0,
+			OffsetY = 0,
+			-- SetAllPoints = nil,
+		},
+		BagSlot = {
+			Atlas = "bag-border-highlight",
+			UseAtlasSize = false,
+			-- Color = {1, 1, 1, 1},
+			BlendMode = "BLEND",
+			DrawLayer = "ARTWORK",
+			DrawLevel = 0,
+			Width = 36,
+			Height = 36,
+			Point = "CENTER",
+			RelPoint = "CENTER",
+			OffsetX = 0,
+			OffsetY = 0,
+			SetAllPoints = true,
+			-- UseColor = nil,
+		},
 	},
 	SlotHighlight = {
 		Atlas = "bag-border-highlight",
@@ -487,18 +446,6 @@ local Skin = {
 			-- SetAllPoints = nil,
 		},
 	},
-	Name = {
-		JustifyH = "CENTER",
-		JustifyV = "MIDDLE",
-		DrawLayer = "OVERLAY",
-		Width = 36,
-		Height = 0,
-		Anchor = "Icon",
-		Point = "BOTTOM",
-		RelPoint = "BOTTOM",
-		OffsetX = 0,
-		OffsetY = 2,
-	},
 	Border = {
 		Atlas = "UI-HUD-ActionBar-IconFrame-Border",
 		UseAtlasSize = false, -- true
@@ -506,11 +453,11 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 0,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 		Debuff = {
@@ -545,7 +492,7 @@ local Skin = {
 			OffsetY = 0,
 			-- SetAllPoints = nil,
 		},
-		Item = {
+		Item = { -- Still necessary for some add-ons.
 			Texture = [[Interface\Common\WhiteIconFrame]],
 			-- TexCoords = {0, 1, 0, 1},
 			-- Color = {1, 1, 1, 1},
@@ -617,11 +564,11 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 1,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
@@ -632,27 +579,27 @@ local Skin = {
 		BlendMode = "ADD",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 1,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
-	AutoCastable = {
-		Texture = [[Interface\Buttons\UI-AutoCastableOverlay]],
-		-- TexCoords = {0, 1, 0, 1},
+	UpgradeIcon = {
+		Atlas = "Bags-GreenArrow",
+		UseAtlasSize = true,
 		-- Color = {1, 1, 1, 1},
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 1,
-		Width = 64,
-		Height = 64,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
-		OffsetY = -0.5,
+		Width = 20,
+		Height = 22,
+		Point = "TOPLEFT",
+		RelPoint = "TOPLEFT",
+		OffsetX = 0,
+		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
 	IconOverlay = {
@@ -670,26 +617,26 @@ local Skin = {
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
-	UpgradeIcon = {
-		Atlas = "bags-greenarrow",
-		UseAtlasSize = true,
-		-- Color = {1, 1, 1, 1},
-		BlendMode = "BLEND",
-		DrawLayer = "OVERLAY",
-		DrawLevel = 1,
-		Width = 20,
-		Height = 22,
-		Point = "TOPLEFT",
-		RelPoint = "TOPLEFT",
-		OffsetX = 0,
-		OffsetY = 0,
-		-- SetAllPoints = nil,
-	},
 	IconOverlay2 = {
 		Atlas = "ConduitIconFrame-Corners",
 		UseAtlasSize = false,
 		-- Color = {1, 1, 1, 1},
 		BlendMode = "BLEND",
+		DrawLayer = "OVERLAY",
+		DrawLevel = 2,
+		Width = 37,
+		Height = 37,
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = 0,
+		OffsetY = 0,
+		-- SetAllPoints = nil,
+	},
+	NewItem = {
+		Atlas = "Bags-Glow-White",
+		UseAtlasSize = true,
+		-- Color = {1, 1, 1, 1},
+		BlendMode = "ADD",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 2,
 		Width = 37,
@@ -715,20 +662,22 @@ local Skin = {
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
-	NewItem = {
-		Atlas = "bags-glow-white",
-		UseAtlasSize = true,
-		-- Color = {1, 1, 1, 1},
-		BlendMode = "ADD",
+	ContextOverlay = {
+		-- Texture = nil,
+		-- TexCoords = {0, 1, 0, 1},
+		Color = {0, 0, 0, 0.8},
+		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
-		DrawLevel = 2,
+		DrawLevel = 4,
 		Width = 37,
 		Height = 37,
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
 		OffsetY = 0,
-		-- SetAllPoints = nil,
+		-- SetAllPoints = true,
+		UseColor = true,
+		UseMask = true,
 	},
 	SearchOverlay = {
 		-- Texture = nil,
@@ -747,25 +696,8 @@ local Skin = {
 		UseColor = true,
 		UseMask = true,
 	},
-	ContextOverlay = {
-		-- Texture = nil,
-		-- TexCoords = {0, 1, 0, 1},
-		Color = {0, 0, 0, 0.8},
-		BlendMode = "BLEND",
-		DrawLayer = "OVERLAY",
-		DrawLevel = 4,
-		Width = 37,
-		Height = 37,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0,
-		OffsetY = 0,
-		-- SetAllPoints = true,
-		UseColor = true,
-		UseMask = true,
-	},
 	JunkIcon = {
-		Atlas = "bags-junkcoin",
+		Atlas = "Bags-JunkCoin",
 		UseAtlasSize = true,
 		-- Color = {1, 1, 1, 1},
 		BlendMode = "BLEND",
@@ -779,6 +711,30 @@ local Skin = {
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 	},
+	Name = {
+		JustifyH = "CENTER",
+		JustifyV = "BOTTOM",
+		DrawLayer = "OVERLAY",
+		Width = 36,
+		Height = 0, -- 10
+		Anchor = "Icon",
+		Point = "BOTTOM",
+		RelPoint = "BOTTOM",
+		OffsetX = 0,
+		OffsetY = 2,
+	},
+	Duration = {
+		JustifyH = "CENTER",
+		JustifyV = "TOP",
+		DrawLayer = "OVERLAY",
+		Width = 36,
+		Height = 0,
+		Anchor = "Icon",
+		Point = "TOP",
+		RelPoint = "BOTTOM",
+		OffsetX = 0,
+		OffsetY = 0,
+	},
 	Highlight = {
 		Atlas = "UI-HUD-ActionBar-IconFrame-Mouseover",
 		UseAtlasSize = false,
@@ -786,16 +742,16 @@ local Skin = {
 		BlendMode = "ADD",
 		DrawLayer = "HIGHLIGHT",
 		DrawLevel = 0,
-		Width = 37,
-		Height = 36,
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 0.5,
+		Width = 37, -- 46
+		Height = 36, -- 45
+		Point = "CENTER", -- TOPLEFT
+		RelPoint = "CENTER", -- TOPLEFT
+		OffsetX = 0.5, -- 0
 		OffsetY = 0,
 		-- SetAllPoints = nil,
 		-- UseColor = nil,
 		Backpack = {
-			Atlas = "bag-main-highlight",
+			Atlas = "Bag-Main-Highlight",
 			UseAtlasSize = false,
 			Color = {1, 1, 1, 0.4},
 			BlendMode = "ADD",
@@ -811,7 +767,7 @@ local Skin = {
 			-- UseColor = nil,
 		},
 		BagSlot = {
-			Atlas = "bag-border-highlight",
+			Atlas = "Bag-Border-Highlight",
 			UseAtlasSize = false,
 			Color = {1, 1, 1, 0.4},
 			BlendMode = "ADD",
@@ -843,14 +799,96 @@ local Skin = {
 			-- UseColor = nil,
 		},
 	},
+	-- [ TextOverlayContainer ]
+	HotKey = {
+		JustifyH = "RIGHT",
+		JustifyV = "TOP",
+		DrawLayer = "OVERLAY",
+		Width = 32,
+		Height = 0, -- 10
+		Anchor = "Icon",
+		Point = "TOPRIGHT",
+		RelPoint = "TOPRIGHT",
+		OffsetX = -4, -- -5
+		OffsetY = -4, -- -5
+		Pet = {
+			JustifyH = "RIGHT",
+			JustifyV = "TOP",
+			DrawLayer = "OVERLAY", -- ARTWORK
+			Width = 36,
+			Height = 0,
+			Anchor = "Icon",
+			Point = "TOPRIGHT",
+			RelPoint = "TOPRIGHT",
+			OffsetX = -3,
+			OffsetY = -3,
+		},
+	},
+	Count = {
+		JustifyH = "RIGHT",
+		JustifyV = "BOTTOM",
+		DrawLayer = "OVERLAY",
+		Width = 0,
+		Height = 0,
+		Anchor = "Icon",
+		Point = "BOTTOMRIGHT",
+		RelPoint = "BOTTOMRIGHT",
+		OffsetX = -3,
+		OffsetY = 3,
+		Aura = {
+			JustifyH = "RIGHT",
+			JustifyV = "BOTTOM",
+			DrawLayer = "OVERLAY", -- ARTWORK
+			Width = 36,
+			Height = 0,
+			Anchor = "Icon",
+			Point = "BOTTOMRIGHT",
+			RelPoint = "BOTTOMRIGHT",
+			OffsetX = -2,
+			OffsetY = 2,
+		},
+		Item = {
+			JustifyH = "RIGHT",
+			JustifyV = "BOTTOM",
+			DrawLayer = "OVERLAY", -- ARTWORK
+			Width = 0,
+			Height = 0,
+			Anchor = "Icon",
+			Point = "BOTTOMRIGHT",
+			RelPoint = "BOTTOMRIGHT",
+			OffsetX = -5,
+			OffsetY = 2,
+		},
+	},
+	-- [ AutoCastShine (Classic) ]
+	AutoCastable = {
+		Texture = [[Interface\Buttons\UI-AutoCastableOverlay]],
+		-- TexCoords = {0, 1, 0, 1},
+		-- Color = {1, 1, 1, 1},
+		BlendMode = "BLEND",
+		DrawLayer = "OVERLAY",
+		DrawLevel = 1,
+		Width = 64,
+		Height = 64,
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = 0.5,
+		OffsetY = -0.5,
+		-- SetAllPoints = nil,
+	},
+	AutoCastShine = {
+		Width = 33, -- 40/28
+		Height = 33, -- 40/28
+		Point = "CENTER",
+		RelPoint = "CENTER",
+		OffsetX = 1,
+		OffsetY = -0.5,
+		-- SetAllPoints = nil,
+	},
 	-- [ AutoCastOverlay (Retail) ]
-	-- AB (45) / SAB (30) = 1.5
-	-- Lua @ SAB: 31 * 1.5 = 46.5
-	-- Masque: 46.5 / 1.25 = 37.2
-	-- Multiplier = 1.2 (1.5 / 1.25)
 	AutoCast_Frame = {
-		Width = 37, -- 31
-		Height = 37, -- 31
+		Width = 37,
+		Height = 37,
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
@@ -864,8 +902,8 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 0,
-		Width = 49, -- 41
-		Height = 49, -- 41
+		Width = 49,
+		Height = 49,
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
@@ -873,10 +911,11 @@ local Skin = {
 		-- SetAllPoints = nil,
 	},
 	AutoCast_Mask = {
-		Atlas = "UI-HUD-ActionBar-PetAutoCast-Mask",
-		UseAtlasSize = false,
-		Width = 28, -- 23
-		Height = 28, -- 23
+		-- Atlas = "UI-HUD-ActionBar-PetAutoCast-Mask",
+		-- UseAtlasSize = false,
+		Texture = [[Interface\AddOns\Masque\Textures\Modern\AutoCast-Mask]],
+		Width = 30,
+		Height = 30,
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
@@ -890,28 +929,18 @@ local Skin = {
 		BlendMode = "BLEND",
 		DrawLayer = "OVERLAY",
 		DrawLevel = 1,
-		Width = 37, -- 31
-		Height = 37, -- 31
+		Width = 36,
+		Height = 36,
 		Point = "CENTER",
 		RelPoint = "CENTER",
 		OffsetX = 0,
 		OffsetY = 0,
 		SetAllPoints = true,
 	},
-	-- [ AutoCastShine (Classic) ]
-	AutoCastShine = {
-		Width = 33, -- 40/28
-		Height = 33, -- 40/28
-		Point = "CENTER",
-		RelPoint = "CENTER",
-		OffsetX = 1,
-		OffsetY = -0.5,
-		-- SetAllPoints = nil,
-	},
 	-- [ Cooldowns ]
 	Cooldown = {
 		Texture = [[Interface\AddOns\Masque\Textures\Modern\Mask]],
-		EdgeTexture = [[Interface\Cooldown\UI-HUD-ActionBar-SecondaryCooldown]],
+		EdgeTexture = [[Interface\AddOns\Masque\Textures\Modern\Edge]],
 		PulseTexture = [[Interface\Cooldown\star4]],
 		Color = {0, 0, 0, 0.8},
 		Width = 31,
@@ -924,15 +953,43 @@ local Skin = {
 		-- SetAllPoints = nil,
 	},
 	ChargeCooldown = "Cooldown",
-	-- [ SpellAlert ]
+	-- [ SpellAlerts ]
 	-- SpellAlert = Default.SpellAlert,
+	-- AssistedCombatHighlight = Default.AssistedCombatHighlight,
+	-- [ SpellAlerts ]
+	SpellAlert = {
+		Height = 38,
+		Width = 38,
+		AltGlow = {
+			Height = 45,
+			Width = 45,
+		},
+		Classic = {
+			Height = 30,
+			Width = 30,
+		},
+		Modern = {
+			Height = 32,
+			Width = 32,
+		},
+		["Modern-Lite"] = {
+			Height = 32,
+			Width = 32,
+		},
+	},
+	AssistedCombatHighlight = {
+		Width = 45,
+		Height = 45,
+	},
 }
 
 ----------------------------------------
 -- Core
 ---
 
-Core.AddSkin(SkinID, Skin, true)
+Core.AddSkin(SkinID, Skin, true, true)
 
-Core.DEFAULT_SKIN = Skin
-Core.DEFAULT_SKIN_ID = SkinID
+if Core.WOW_RETAIL then
+	Core.DEFAULT_SKIN = Skin
+	Core.DEFAULT_SKIN_ID = SkinID
+end

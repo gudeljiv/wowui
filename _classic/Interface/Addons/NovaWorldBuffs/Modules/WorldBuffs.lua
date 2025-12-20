@@ -22,6 +22,9 @@ end
 
 --Adding a central place to control whether an event should fire, things are changing a lot recently in classic with buff cooldowns etc and this just make it easier to change things in one place.
 function NWB:checkEventStatus(event, type, subEvent, channel)
+	if (type == "rendCrossroads") then
+		type = "rend";
+	end
 	if (event == subEvent) then
 		--Just incase I'm writing code half asleep one day...
 		NWB:debug("ERROR: NWB:checkEventStatus() events could cause an endless loop. (" .. event .. ")");
@@ -40,7 +43,18 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 	end]]
 	--Other specific events.
 	--NWB:debug("event check", event, type, subEvent, channel);
-	if (event == "sendGuildMsg") then
+	if (event == "doWarning") then
+		--doWarning are all timer countdown msgs.
+		if (type == "rend") then
+			--Only show rend timer warnings if there's only 1 layer on classic era, rend layer detection is too broken now.
+			if (NWB:GetLayerCount() < 2) then
+				return true;
+			end
+			return;
+		else
+			return true;
+		end
+	elseif (event == "sendGuildMsg") then
 		--NWB:debug("guild msg check", type, subEvent, channel);
 		--Blanket match all guild chat events attached to a buff type.
 		if (type == "rend") then
@@ -59,6 +73,7 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 		--Some of these guild msgs basically match the event types below that would send a guild msg.
 		--This is so the sender can ignore those events ineeded even if the player that saw the event isn;t up to date with the addon version.
 		--type here can also be used to pass a an extra arg for the "sendGuildMsg" event.
+		--There are only 1 and 10 minute guild msgs.
 		if (subEvent == "timer1" or subEvent == "timer10") then
 			return NWB:checkEventStatus("guildTimerMsg", type);
 		elseif (subEvent == "guildCommand") then
@@ -131,6 +146,9 @@ function NWB:checkEventStatus(event, type, subEvent, channel)
 		if (NWB.isSOD and not NWB:isCapitalCityAction(type)) then
 			return;
 		end
+		if (type == "rend" and NWB.faction == "Alliance" and not NWB.db.global.allianceEnableRend) then
+			return;
+		end
 		--These are checked in thier parent functions atm, like yell/buff drop etc.
 		return true;
 	else
@@ -173,10 +191,8 @@ local function monsterYell(...)
 			and (string.match(msg, L["Rend Blackhand, has fallen"]) or skipStringCheck)) then
 		--6 seconds between first rend yell and buff applied.
 		NWB.data.rendYell = GetServerTime();
-		NWB:doFirstYell("rend", layerNum);
 		--Send first yell msg to guild so people in org see it, needed because 1 person online only will send msg.
 		local _, _, zone = NWB:GetPlayerZonePosition();
-		NWB:sendYell("GUILD", "rend", nil, layerNum);
 		if  (name == L["Herald of Thrall"]) then
 			--If it was herald we may we in the barrens but not in crossraods to receive buff, set buff timer.
 			if (not NWB.isLayered) then
@@ -191,6 +207,11 @@ local function monsterYell(...)
 					end)
 				end]]
 			end
+			NWB:doFirstYell("rendCrossroads", layerNum);
+			NWB:sendYell("GUILD", "rendCrossroads", nil, layerNum);
+		else
+			NWB:doFirstYell("rend", layerNum);
+			NWB:sendYell("GUILD", "rend", nil, layerNum);
 		end
 		if (NWB.isLayered and (zone == 1454 or zone == 1413) and NWB.faction == "Alliance") then
 			--Testing tracking rend for alliance here by attaching it to the layermap.
@@ -338,6 +359,11 @@ end
 --Basically is lands missing 10 or so seconds on my realm.
 local yellOneOffset = 30;
 local yellTwoOffset = 30;
+if (NWB.isClassic and not NWB.isSOD) then
+	--Account for new strat to delay rend drop in era.
+	yellOneOffset = 80;
+	yellTwoOffset = 80;
+end
 local buffLag, dl1, dl2 = 15;
 NWB.lastZanBuffGained = 0;
 NWB.lastDmfBuffGained = 0;
@@ -557,11 +583,11 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
 			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (expirationTime >= (7199.5  - buffLag)) then
-				if (((not NWB.noGUID or NWB.currentZoneID > 0) and (zone == 1453 or zone == 1454))
+				if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
 						or not NWB.isLayered) then
 					if (NWB.noGUID) then
-						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneID, "noSourceGUID");
-						NWB:setNefBuff("self", UnitName("player"), NWB.currentZoneID, "noSourceGUID");
+						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+						NWB:setNefBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
 					elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
 						NWB:setNefBuff("self", UnitName("player"), zoneID, sourceGUID);
 					end
@@ -598,11 +624,11 @@ local function combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
 			local _, _, zone = NWB:GetPlayerZonePosition();
 			if (expirationTime >= (7199.5 - buffLag)) then
-				if (((not NWB.noGUID or NWB.currentZoneID > 0) and (zone == 1453 or zone == 1454))
+				if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
 					or not NWB.isLayered) then
 					if (NWB.noGUID) then
-						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneID, "noSourceGUID");
-						NWB:setOnyBuff("self", UnitName("player"), NWB.currentZoneID, "noSourceGUID");
+						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+						NWB:setOnyBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
 					elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
 						NWB:setOnyBuff("self", UnitName("player"), zoneID, sourceGUID);
 					end
@@ -1042,7 +1068,7 @@ function NWB:setRendBuff(source, sender, zoneID, GUID, isAllianceAndLayered)
 					return;
 				end
 			else
-				if (GUID) then
+				if (GUID and NWB.isClassic) then
 					if (not NWB.data.layers[zoneID]) then
 						NWB:createNewLayer(zoneID, GUID);
 					end
@@ -1165,7 +1191,7 @@ function NWB:setOnyBuff(source, sender, zoneID, GUID, isSapped)
 			count = count + 1;
 		end
 		if (count <= NWB.limitLayerCount) then
-			if (not NWB.data.layers[zoneID]) then
+			if (zoneID and not NWB.data.layers[zoneID] and NWB.isClassic) then
 				NWB:createNewLayer(zoneID, GUID);
 			end
 			if (NWB.data.layers[zoneID]) then
@@ -1256,7 +1282,7 @@ function NWB:setNefBuff(source, sender, zoneID, GUID)
 			count = count + 1;
 		end
 		if (count <= NWB.limitLayerCount) then
-			if (not NWB.data.layers[zoneID]) then
+			if (zoneID and not NWB.data.layers[zoneID] and NWB.isClassic) then
 				NWB:createNewLayer(zoneID, GUID);
 			end
 			if (NWB.data.layers[zoneID]) then
@@ -1351,6 +1377,29 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 				end
 				NWB:playSound("soundsFirstYell", "rend");
 				NWB:sendBigWigs(6, "[NWB] " .. L["rend"], type);
+			end
+			rendFirstYell = GetServerTime();
+		end
+	elseif (type == "rendCrossroads") then
+		type = "rend"; --Treat this as a rend drop for shared cooldown etc.
+		if ((GetServerTime() - rendFirstYell) > 40) then
+			local crossroadsMsg = "(" .. L["Crossroads"] .. ") ";
+			--6 seconds from rend first yell to buff drop.
+			if (source == "self") then
+				NWB.data.rendYell = GetServerTime();
+			end
+			if (NWB:checkEventStatus("firstYell", type)) then
+				if (NWB.db.global.guildNpcDialogue == 1 and (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend)) then
+					NWB:sendGuildMsg(crossroadsMsg .. L["rendFirstYellMsg"] .. layerMsg, "guildNpcDialogue", "rend");
+				end
+				if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
+					NWB:startFlash("flashFirstYell", type);
+					if (NWB.db.global.middleBuffWarning and (not NWB.db.global.chatOnlyInCity or NWB:isCapitalCityAction(type))) then
+						NWB:middleScreenMsg("rendFirstYell", crossroadsMsg .. L["rendFirstYellMsg"] .. layerMsg, nil, 5);
+					end
+				end
+				NWB:playSound("soundsFirstYell", "rend");
+				NWB:sendBigWigs(6, "[NWB] " .. crossroadsMsg .. L["rend"], type);
 			end
 			rendFirstYell = GetServerTime();
 		end
@@ -1643,4 +1692,51 @@ function NWB:doHandIn(id, layer, sender)
 	end
 end
 
---/run NWB:sendBigWigs(14, "[NWB] Rallying Cry of the Dragonslayer", "ony");
+--Places where timers are displayed on the UI check this now so we can check the rend log for adjustments.
+--Regular timer funcs that don't need to display stuff still use the old regular timers.
+--All this is doing is changing what's displayed to the user based on people with the addon handing in rend buffs.
+function NWB:getRendTimer(layer)
+	if (NWB.isLayered) then
+		if (NWB:GetLayerCount() == 1) then
+			return NWB.data.layers[layer].rendTimer
+		end
+		if (layer and NWB.data.layers[layer]) then
+			local handinsOnly = {}
+			local count = 0;
+			table.sort(NWB.data.timerLog, function(a, b) return a.timestamp > b.timestamp end);
+			for k, v in ipairs(NWB.data.timerLog) do
+				if (v.type == "q") then
+					count = count + 1;
+				    table.insert(handinsOnly, v);
+				    if (count == 10) then
+						break;
+					end
+				end
+			end
+			for k, v in ipairs(handinsOnly) do
+				if (v.layerID == layer and v.type == "q" and v.timestamp > (GetServerTime() - NWB.rendCooldownTime)) then
+					--Timstamp returned is when it dropped not when it resets.
+					return v.timestamp + 15, true; --Seems to be 13 seconds between quets handin and drop, so add 15 seconds for 2 seconds leeway.
+				end
+			end
+			--Return 0  and show no timer if it this layer closely matches another layers timer log entry? This would mean it's very likely a false timer.
+			local timestamp = NWB.data.layers[layer].rendTimer;
+			if (timestamp) then
+				--13ish seconds difference between handin time and actual buff drop time.
+				timestamp = timestamp - 13;
+				for k, v in ipairs(handinsOnly) do
+					--5 second leeway.
+					if (v.timestamp > (timestamp - 20) and v.timestamp < (timestamp + 20) and GetServerTime() - v.timestamp < 43200) then
+						return 0;
+					end
+				end
+			end
+			--Lastly return the normally recorded timer that's usually inaccurate since the api changes anyway.
+			return NWB.data.layers[layer].rendTimer
+		else
+		 	return 0;
+		end
+	else
+		return NWB.data.rendTimer;
+	end
+end

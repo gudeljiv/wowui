@@ -8,6 +8,106 @@ function Plater.GetChangelogTable()
 	if (not Plater.ChangeLogTable) then
 		Plater.ChangeLogTable = {
 
+			{1764718947, "Backend Change", "Dec 3rd, 2025", "More support for Midnight (work in progress).", "cont1nuity"},
+			
+			{1764011311, "Backend Change", "Oct 21st, 2025", "Initial support for Midnight (work in progress).", "cont1nuity"},
+			{1764011311, "Bug Fix", "Oct 22nd, 2025", "Fixing nameplate alpha for nameplates which are in the fade-in animation when being shown.", "cont1nuity"},
+			
+			{1758569637, "Bug Fix", "Sept 26th, 2025", "Fixing soft-interact icons on classic and era.", "cont1nuity"},
+			{1758569637, "New Feature", "Sept 22nd, 2025", "Adding combat auto toggle option for 'Always Show Nameplates'.", "cont1nuity"},
+			{1758569637, "Bug Fix", "Sept 14th, 2025", "Adding 'Dispatch' as rogue execute in MoP.", "cont1nuity"},
+			{1758569637, "New Feature", "Sept 4th, 2025", "Adding possiblitly to add new NPCs via '/plater add <npcID>' with automatic name but 'UNKNOWN' zone.", "cont1nuity"},
+			{1758569637, "Bug Fix", "Sept 3rd, 2025", "Removing 'Twist of Fate' as 35% execute for priests. Use a mod if you need this.", "cont1nuity"},
+			
+			{1755715831, "Backend Change", "Aug 25th, 2025", "Fixing texture artifacts and unifying to tga.", "cont1nuity"},
+			{1755715831, "Backend Change", "Aug 25th, 2025", "Correction to tank recognition adjustments for MoP.", "cont1nuity"},
+			{1755715831, "Bug Fix", "Aug 25th, 2025", "Recognizing 'Twist of Fate' as 35% execute for priests.", "cont1nuity"},
+			{1755715831, "Bug Fix", "Aug 25th, 2025", "Fixing send to party/raid functionality.", "cont1nuity"},
+			
+			{1754345972, "Backend Change", "Aug 10th, 2025", "MoP has spec specific ghost auras.", "cont1nuity"},
+			{1754345972, "Bug Fix", "Aug 9th, 2025", "Recognizing 'Deathspeaker' as 35% execute for priests.", "cont1nuity"},
+			{1754345972, "Backend Change", "Aug 5th, 2025", "NpcColorPanels: Add Remove All Renames Button.", "Wtz_LASR"},
+			{1754345972, "Backend Change", "Aug 5th, 2025", "Improve/fix the cast bar script previews.", "gareth3001"},
+			{1754345972, "Backend Change", "Aug 4th, 2025", "Updated the wording of the priority tooltip.", "Lynn"},
+			{1754345972, "Backend Change", "Aug 3rd, 2025", "Tank recognition adjustments for MoP.", "cont1nuity"},
+			
+			{1750963632, "Backend Change", "July 19th, 2025", "Changing Drain Soul execute for MoP classic.", "cont1nuity"},
+			{1750963632, "Bug Fix", "July 5th, 2025", "Fixing an error in quest tracking for MoP for certain units.", "cont1nuity"},
+			{1750963632, "Backend Change", "July 4th, 2025", "Changing SW:D execute for MoP classic.", "cont1nuity"},
+			{1750963632, "Backend Change", "June 30th, 2025", "Adding 'Soul Reaper' as DK execute for MoP classic.", "cont1nuity"},
+			{1750963632, "Backend Change", "June 26th, 2025", "Enabling absorb shields when available (MoP classic prep).", "cont1nuity"},
+			
+			{1750232667, "Backend Change", "June 18th, 2025", "Fixing broken glow.", "cont1nuity"},
+			{1750232667, "Backend Change", "June 18th, 2025", "Fixing broken load conditions for affixes.", "cont1nuity"},
+			{1750232667, "Backend Change", "May 31st, 2025", "Adding option to only show buffs on the personal bar which would show on the default one.", "cont1nuity"},
+			{1750232667, "Backend Change", "May 22nd, 2025", "Adding 'resetcvar(s)' command.", "cont1nuity"},
+			
+			{1746914849, "Backend Change", "May 6th, 2025", "Enable 'Shadowburn' for WL execute in classic.", "cont1nuity"},
+			{1746914849, "Backend Change", "Apr 27th, 2025", "Bug fixes for Mists and framework updates.", "Terciob"},
+			{1746914849, "Backend Change", "Apr 27th, 2025", "Preparation for Mists.", "cont1nuity"},
+			{1746914849, "Backend Change", "Apr 23rd, 2025", "Enable support for native compression API for import/export, when available.", "cont1nuity"},
+			
+			{1745324223, "Bug Fix", "Apr 22nd, 2025", "Fixing healthbar animation.", "cont1nuity"},
+			{1745324223, "Backend Change", "Apr 16th, 2025", "Disable garbage collection profiling in preparation for 11.1.5.", "cont1nuity"},
+			
+			{1744789951, "Bug Fix", "Apr 16th, 2025", "Fixing an issue with wrong mods/scripts being retained in some cases when updating through companion apps.", "cont1nuity"},
+			{1744789951, "Backend Change", "Apr 9th, 2025", "Ensure blizzard nameplate font override is applying properly.", "cont1nuity"},
+			{1744789951, "Backend Change", "Apr 9th, 2025", "Register some nameplate events earlier.", "cont1nuity"},
+			{1744789951, "Backend Change", "Apr 5th, 2025", "Framework updates.", "Terciob"},
+			
+			{1743358777, "Backend Change", "Mar 30th, 2025", "Ensure to register DBM / BW events on the fly when loaded and ensure registration happens.", "cont1nuity"},
+			{1743358777, "Backend Change", "Mar 30th, 2025", "Resizing the column sizes on the Cast Colors and Names tab for better readability.", "cont1nuity"},
+			{1743358777, "Backend Change", "Mar 30th, 2025", "Execute indicator is now showing on the exact percentage.", "cont1nuity"},
+			{1743358777, "Backend Change", "Mar 24th, 2025", "Re-enabling LibClassicCasterino support to track channelled spells.", "cont1nuity"},
+			{1743358777, "Bug Fix", "Mar 24th, 2025", "Improving tracking of chanelled spells for the Cast Colors tab.", "cont1nuity"},
+			{1743358777, "New Feature", "Mar 16th, 2025", "Adding auto toggle option for 'always show nameplates'.", "cont1nuity"},
+			{1743358777, "New Feature", "Mar 1st, 2025", "Adding aura auto tracking options for 'debuffs by the npc' and 'auras from other NPCs'.", "cont1nuity"},
+			
+			{1740518781, "Backend Change", "Feb 27th, 2025", "Fixing an issue with green texutures in the options (through DetailsFramework update).", "cont1nuity"},
+			
+			{1740518781, "Backend Change", "Feb 25th, 2025", "Locale updates and preparation.", "cont1nuity"},
+			{1740518781, "Bug Fix", "Feb 3rd, 2025", "Fixing Combo Points for low level rogues.", "cont1nuity"},
+			{1740518781, "Bug Fix", "Jan 29th, 2025", "Fixing execute recognition for Hunter Black Arrow.", "cont1nuity"},
+			{1740518781, "Bug Fix", "Jan 21st, 2025", "Fixing several issues on the Mod Load Conditions panel.", "cont1nuity"},
+			{1740518781, "Bug Fix", "Jan 13th, 2025", "Fixing an issue with profiling if stop was not used but results should be shown.", "cont1nuity"},
+			
+			{1736722279, "Bug Fix", "Jan 11th, 2025", "Fixing broken nameplate anchoring for WAs on forced blizzard nameplates (via LibGetFrame).", "cont1nuity"},
+			{1736722279, "Bug Fix", "Jan 10th, 2025", "Fixing range check for Dark Ranger hunters (via LibRangeCheck).", "cont1nuity"},
+			{1736722279, "Bug Fix", "Jan 10th, 2025", "Fixing range check for cases when no range can be selected.", "cont1nuity"},
+			
+			{1735420632, "Backend Change", "Dec 19th, 2024", "Framework updates.", "Terciob"},
+			{1735420632, "Backend Change", "Dec 18th, 2024", "Retail TOC update.", "cont1nuity"},
+			{1735420632, "New Feature", "Dec 18th, 2024", "Adding Blizzard addon profiling information to profiler.", "cont1nuity"},
+			
+			{1734100705, "Bug Fix", "Dec 4th, 2024", "Reset Boss-Mod integration icon glow properly.", "cont1nuity"},
+			{1734100705, "Backend Change", "Dec 13th, 2024", "Framework updates.", "Terciob"},
+			{1734100705, "Bug Fix", "Dec 4th, 2024", "Fixing an issue with spell-name truncation.", "cont1nuity"},
+			{1734100705, "Backend Change", "Nov 20th, 2024", "Toc bump for classic.", "cont1nuity"},
+			
+			{1732096266, "Bug Fix", "Nov 19th, 2024", "Fixing erros on the cast npc color dropdowns.", "Terciob"},
+			{1732096266, "Bug Fix", "Nov 15th, 2024", "Added missing references to castBar.InterruptSourceName and castBar.InterruptSourceGUID in scripting panels.", "Linaori"},
+			{1732096266, "Backend Change", "Nov 14th, 2024", "Changed default values for DBM boss mod support and enabled it by default.", "cont1nuity"},
+			{1732096266, "New Feature", "Nov 14th, 2024", "Added glow options for expiring DBM boss mod icons.", "cont1nuity"},
+			{1732096266, "New Feature", "Nov 7th, 2024", "Added castBar.SpellNameRenamed, which contains either the customized or boss mods spell rename.", "Linaori"},
+			{1732096266, "Bug Fix", "Nov 3rd, 2024", "Fixing issue with aura swipe texture in cata high-res.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 29th, 2024", "Fixing profile reset values for fine tune scale.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 23rd, 2024", "Fixing Hunter execute with Black Arrow.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 23rd, 2024", "Fixing performance units.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 23rd, 2024", "Fixing aura frame 1 frame levels.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 22nd, 2024", "Fixing DBM integration.", "cont1nuity"},
+			{1732096266, "Bug Fix", "Oct 22nd, 2024", "Fixing default 'Countdown' and 'Fixate on you' scripts.", "cont1nuity"},
+			{1732096266, "New Feature", "Oct 21st, 2024", "Adding LibCustomGlow 'proc' glow support.", "cont1nuity"},
+			{1732096266, "New Feature", "Oct 21st, 2024", "Adding override flags for performance units to re-enable specific updates (threat, casts, auras).", "cont1nuity"},
+			
+			{1728642912, "Bug Fix", "Oct 11th, 2024", "Fixing error on health animations preview.", "cont1nuity"},
+			{1728642912, "Bug Fix", "Oct 10th, 2024", "Fixing mod/script error handling.", "cont1nuity"},
+			{1728642912, "Bug Fix", "Oct 10th, 2024", "Fixing show/remove of DBM timer icons not working properly in some conidtions.", "cont1nuity"},
+			{1728642912, "New Feature", "Oct 8th, 2024", "Adding 'Larger Nameplates' and the corresponding base nameplate scale optiosn to the advanced tab.", "cont1nuity"},
+			{1728642912, "Backend Change", "Oct 7th, 2024", "Cleanup of old unused aura update code.", "cont1nuity"},
+			{1728642912, "Backend Change", "Oct 7th, 2024", "Removing LibClassicDuration as it was no longer in use.", "cont1nuity"},
+			{1728642912, "Backend Change", "Oct 7th, 2024", "Less frequent group unit updates for tank scanning against event spam.", "cont1nuity"},
+			{1728642912, "Backend Change", "Oct 7th, 2024", "Adding additional performance units for Palace.", "cont1nuity"},
+			
 			{1727794055, "Bug Fix", "Oct 1st, 2024", "Ensure soft-interact options work on all client versions now.", "cont1nuity"},
 			{1727794055, "Bug Fix", "Sept 25th, 2024", "Don't cache game objects in the npc-cache.", "cont1nuity"},
 			{1727794055, "Bug Fix", "Sept 25th, 2024", "Fix Warlock execute.", "cont1nuity"},

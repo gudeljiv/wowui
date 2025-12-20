@@ -25,14 +25,12 @@ ClientInfo.FEATURES = EnumType.New("FEATURES", {
 	COMMODITY_ITEMS = EnumType.NewValue(),
 	CRAFTING_QUALITY = EnumType.NewValue(),
 	C_TRADE_SKILL_UI = EnumType.NewValue(),
+	TRADE_SKILL_FILTERS = EnumType.NewValue(),
 	C_TOOLTIP_INFO = EnumType.NewValue(),
-	REAGENT_BANK = EnumType.NewValue(),
 	BLACK_MARKET_AH = EnumType.NewValue(),
 	REGION_WIDE_TRADING = EnumType.NewValue(),
 	CRAFTING_ORDERS = EnumType.NewValue(),
 	CHARACTER_SPECIALIZATION = EnumType.NewValue(),
-	C_ITEM = EnumType.NewValue(),
-	C_SPELL = EnumType.NewValue(),
 	WARBAND_BANK = EnumType.NewValue(),
 })
 local private = {
@@ -49,29 +47,27 @@ ClientInfo:OnModuleLoad(function()
 	private.features = {
 		[ClientInfo.FEATURES.REAGENT_BAG] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.CONNECTED_FACTION_AH] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.HONOR_POINTS] = LibTSMWoW.IsCataClassic(),
+		[ClientInfo.FEATURES.HONOR_POINTS] = LibTSMWoW.IsPandaClassic(),
 		[ClientInfo.FEATURES.SUB_PROFESSION_NAMES] = not LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.AH_COPPER] = not LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.AH_STACKS] = not LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.AH_UNCOLLECTED_FILTER] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.AH_STACKS] = LibTSMWoW.IsVanillaClassic(),
+		[ClientInfo.FEATURES.AH_UNCOLLECTED_FILTER] = not LibTSMWoW.IsVanillaClassic(),
 		[ClientInfo.FEATURES.AH_UPGRADES_FILTER] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.AH_LIFO] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.AH_SELLERS] = not LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.BATTLE_PETS] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.AH_LIFO] = not LibTSMWoW.IsVanillaClassic(),
+		[ClientInfo.FEATURES.AH_SELLERS] = LibTSMWoW.IsVanillaClassic(),
+		[ClientInfo.FEATURES.BATTLE_PETS] = LibTSMWoW.IsRetail() or LibTSMWoW.IsPandaClassic(),
 		[ClientInfo.FEATURES.GARRISON] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.GUILD_BANK] = not LibTSMWoW.IsVanillaClassic(),
-		[ClientInfo.FEATURES.C_AUCTION_HOUSE] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.COMMODITY_ITEMS] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.C_AUCTION_HOUSE] = not LibTSMWoW.IsVanillaClassic(),
+		[ClientInfo.FEATURES.COMMODITY_ITEMS] = not LibTSMWoW.IsVanillaClassic(),
 		[ClientInfo.FEATURES.CRAFTING_QUALITY] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.C_TRADE_SKILL_UI] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.TRADE_SKILL_FILTERS] = LibTSMWoW.IsPandaClassic(),
 		[ClientInfo.FEATURES.C_TOOLTIP_INFO] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.REAGENT_BANK] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.BLACK_MARKET_AH] = LibTSMWoW.IsRetail(),
+		[ClientInfo.FEATURES.BLACK_MARKET_AH] = LibTSMWoW.IsRetail() or LibTSMWoW.IsPandaClassic(),
 		[ClientInfo.FEATURES.REGION_WIDE_TRADING] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.CRAFTING_ORDERS] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.CHARACTER_SPECIALIZATION] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.C_ITEM] = LibTSMWoW.IsRetail(),
-		[ClientInfo.FEATURES.C_SPELL] = LibTSMWoW.IsRetail(),
 		[ClientInfo.FEATURES.WARBAND_BANK] = LibTSMWoW.IsRetail(),
 	}
 end)
@@ -88,16 +84,16 @@ function ClientInfo.IsRetail()
 	return LibTSMWoW.IsRetail()
 end
 
+---Returns whether or not we're running within the Panda Classic version of the game.
+---@return boolean
+function ClientInfo.IsPandaClassic()
+	return LibTSMWoW.IsPandaClassic()
+end
+
 ---Returns whether or not we're running within the Vanilla Classic version of the game.
 ---@return boolean
 function ClientInfo.IsVanillaClassic()
 	return LibTSMWoW.IsVanillaClassic()
-end
-
----Returns whether or not we're running within the Cata Classic version of the game.
----@return boolean
-function ClientInfo.IsCataClassic()
-	return LibTSMWoW.IsCataClassic()
 end
 
 ---Checks whether or not a features is available in the current game version.

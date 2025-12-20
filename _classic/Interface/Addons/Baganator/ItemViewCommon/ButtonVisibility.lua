@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 BaganatorItemViewButtonVisibilityMixin = {}
 
 local hiddenParent = CreateFrame("Frame")
@@ -52,6 +53,7 @@ function BaganatorItemViewButtonVisibilityMixin:Update()
   if addonTable.Config.Get(addonTable.Config.Options.SHOW_BUTTONS_ON_ALT) and not IsAltKeyDown() then
     shown = false
   end
+  addonTable.CallbackRegistry:TriggerEvent("SetButtonsShown", shown)
 
   for _, button in ipairs(AllButtons) do
     if shown and button:GetParent() == hiddenParent then

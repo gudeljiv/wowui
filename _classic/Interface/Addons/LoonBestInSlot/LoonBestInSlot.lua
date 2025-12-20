@@ -13,7 +13,14 @@ LBIS.SpellCache = {};
 LBIS.Debugging = false;
 LBIS.DebuggingItem = -1;
 LBIS.AllItemsCached = false;
-LBIS.CurrentPhase = 5;
+
+LBIS.IsSOD = C_Seasons and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfDiscovery;
+
+if LBIS.IsSOD then
+	LBIS.CurrentPhase = 8;
+else
+	LBIS.CurrentPhase = 6;
+end
 
 LBIS.EventFrame = CreateFrame("FRAME",addonName.."Events")
 
@@ -149,7 +156,7 @@ function LBIS:AddEnchant(bisEntry, id, slot)
 	local item = { Id = enchantId, Slot = slot, Phase = "", Bis = "" };
 
 	if enchantSource.IsSpell == "False" then
-	
+
 		if not LBIS.ItemsByIdAndSpec[enchantId] then
 			LBIS.ItemsByIdAndSpec[enchantId] = {}
 		end

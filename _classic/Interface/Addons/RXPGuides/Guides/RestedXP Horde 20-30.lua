@@ -2802,7 +2802,8 @@ step
     .goto The Barrens,46.0,81.2,50,0
 .target Gann Stonespire
 >>Talk to |cRXP_FRIENDLY_Gann Stonespire|r
-    .accept 843 >> Accept Gann's Reclamation. He patrols along the road.
+    .accept 843 >> Accept Gann's Reclamation
+    >>He patrols along the road.
     .unitscan Gann Stonespire
     .maxlevel 28
 step
@@ -8163,7 +8164,9 @@ step << Shaman
     .complete 1534,1 --Filled Blue Waterskin (1)
     .use 7767
 step
+    #loop
     .line Ashenvale,39.81,62.94,39.65,63.74,39.77,65.40,40.22,66.23,41.41,66.56,41.46,67.44,41.55,67.71,41.79,68.28,42.08,68.71,42.46,68.39,42.96,68.43,43.33,68.09,43.78,68.86
+    .goto Ashenvale,41.46,67.44,0
     .goto Ashenvale,39.81,62.94,40,0
     .goto Ashenvale,39.65,63.74,40,0
     .goto Ashenvale,39.77,65.40,40,0
@@ -10741,7 +10744,7 @@ step << Undead Mage
     .itemcount 17031,<20
     .train 3563,3
     .target Hannah Akeley
-step << Undead Mage
+step << skip --Logout skip Undead Mage
     #completewith next
     .goto Undercity,82.28,15.47
     .goto Undercity,67.90,15.29,30 >>|cRXP_WARN_Perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in|r

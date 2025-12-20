@@ -2,6 +2,7 @@ local LibStub = LibStub
 local addonName = Broker_MicroMenuEmbeddedName or "Broker_MicroMenu"
 local L = LibStub("AceLocale-3.0"):GetLocale("Broker_MicroMenu")
 local Broker_MicroMenu = LibStub:GetLibrary("LibDataBroker-1.1",true):GetDataObjectByName(addonName)
+local GetAddOnMetadata = GetAddOnMetadata or (C_AddOns and C_AddOns.GetAddOnMetadata)
 local version = GetAddOnMetadata("Broker_MicroMenu","X-Curse-Packaged-Version") or ""
 local db
 local _G = _G

@@ -1,7 +1,6 @@
 
 local addon, ns = ...;
 local L = ns.L;
-local IsAddOnLoaded = IsAddOnLoaded or C_AddOns.IsAddOnLoaded;
 local playerDot_textures = {
 	["blizz"]         = L["Blizzards player arrow"],
 	["blizz-smaller"] = L["Blizzards player arrow (smaller)"],
@@ -17,16 +16,16 @@ local TrackingValues = {
 }
 local dbDefaults = {
 	hud_scale=1.4, text_scale=1.4, hud_size=1,
-	gathercircle_show=true,gathercircle_color={0,1,0,0.5},
 	cardinalpoints_show=true,cardinalpoints_color1={1,0.82,0,0.7},cardinalpoints_color2={1,0.82,0,0.7},cardinalpoints_radius=0.47,
 	coords_show=true,coords_bottom=false,coords_color={1,0.82,0,0.7},coords_radius=0.51,
 	buttons_show=false,buttons_buttom=false,buttons_alpha=0.6,buttons_radius=0.56,
 	time_show=true, time_server=true, time_local=true, time_radius = 0.48, time_bottom=false, time_color={1,0.82,0,0.7},
 	mouseoverinfo_color={1,0.82,0,0.7},
-	player_dot="blizz", background_alpha=0, holdKeyForMouseOn = "_none",
+	player_dot="blizz", holdKeyForMouseOn = "_none",
 	rotation=true, SuperTrackedQuest = true, showDummy = true, showDummyBg = true,
 	QuestArrowInfoMsg = false,
-	healcircle_show=true,healcircle_color={0,.7,1,0.5},
+	hideInInstance=false, hideInCombat=false,
+	background_alpha=0, background_alpha2=0.5, background_alpha_toggle=true, background_alpha_default=true,
 }
 local modDB = {};
 local excludeFrames = {}
@@ -192,29 +191,25 @@ local options = {
 				hud_size = {
 					type = "range", order = 12,
 					name = L["HudSize"], desc = L["HudSizeDesc"],
-					min = 0.4, max = 1, step = 0.1, isPercent = true
+					min = 0.1, max = 1, step = 0.1, isPercent = true
 				},
 				text_scale = {
 					type = "range", order = 13,
 					name = L["TextScale"], desc = L["TextScaleDesc"],
 					min = 1, max = 2.5, step = 0.1, isPercent = true
 				},
-				background_alpha = {
-					type = "range", order = 14,
-					name = L["BgTransparency"], --desc = L["BgTransparencyDesc"]
-					min = 0.0, max = 1, step = 0.1, isPercent = true,
-					get = function()
-						return 1-FarmHudDB.background_alpha
-					end,
-					set = function(info,value)
-						FarmHudDB.background_alpha = 1-value;
-						FarmHud:UpdateOptions("background_alpha");
-					end
-				},
 				player_dot = {
 					type = "select", order = 15,
 					name = L["PlayerDot"], desc = L["PlayerDotDesc"],
 					values = playerDot_textures
+				},
+				autohide = {
+					type="group", order = 20, inline=true,
+					name = L["AutoHide"],
+					args = {
+						hideInInstance = {type="toggle", order=1, name=L["HideInInstance"], desc=L["HideInInstanceDesc"]},
+						hideInCombat = {type="toggle", order=2, name=L["hideInCombat"], desc=L["hideInCombatDesc"]},
+					}
 				},
 				placeholder = {
 					type = "group", order = 98, inline = true,
@@ -269,6 +264,45 @@ local options = {
 			}
 		},
 		----------------------------------------------
+		background = {
+			type="group", order = 1,
+			name=L["BgMinimap"],
+			args={
+				desc = {
+					type="description", order=0,
+					name=L["BgMinimapDesc"]
+				},
+				background_alpha = {
+					type = "range", order = 1,
+					name = L["BgTransparency1"], desc = L["BgTransparencyDesc1"],
+					min = 0.0, max = 1, step = 0.1, isPercent = true,
+					get = function()
+						return 1-FarmHudDB.background_alpha
+					end,
+					set = function(info,value)
+						FarmHudDB.background_alpha = 1-value;
+						FarmHud:UpdateOptions("background_alpha");
+					end
+				},
+				background_alpha2 = {
+					type = "range", order = 2,
+					name = L["BgTransparency2"], desc = L["BgTransparencyDesc2"],
+					min = 0.0, max = 1, step = 0.1, isPercent = true,
+					get = function()
+						return 1-FarmHudDB.background_alpha2
+					end,
+					set = function(info,value)
+						FarmHudDB.background_alpha2 = 1-value;
+						FarmHud:UpdateOptions("background_alpha2");
+					end
+				},
+				background_alpha_default = {
+					type = "toggle", order = 4,
+					name = L["BgAlphaDefault"],
+					desc = L["BgAlphaDefaultDesc"]
+				}
+			}
+		},
 		SuperTrackedQuest = {
 			type = "group", order = 1,
 			name = L["QuestArrow"],
@@ -288,8 +322,8 @@ local options = {
 				}
 			}
 		},
-		rangecircles = {
-			type = "group", order = 2,
+		rangecircles_old = {
+			type = "group", order = 2, hidden=true,
 			name = L["RangeCircles"],
 			args = {
 				-- gathercircle
@@ -336,45 +370,6 @@ local options = {
 					type = "execute", order = 24,
 					name = L["ResetColor"], --desc = L["ResetColorDesc"]
 				},
-			}
-		},
-		cardinalpoints = {
-			type = "group", order = 3,
-			name = L["CardinalPoints"],
-			args = {
-				cardinalpoints_show = {
-					type = "toggle", order = 1, width = "double",
-					name = L["CardinalPointsShow"], desc = L["CardinalPointsShowDesc"],
-				},
-				cardinalpoints_radius = {
-					type = "range", order = 2,
-					name = L["ChangeRadius"], desc = L["ChangeRadiusDesc"],
-					min = 0.1, max = 0.9, step=0.005, isPercent=true
-				},
-				cardinalpoints_header1 = {
-					type = "header", order = 3,
-					name = L["CardinalPointsGroup1"]
-				},
-				cardinalpoints_color1 = {
-					type = "color", order = 4, hasAlpha = true,
-					name = COLOR, desc = L["CardinalPointsColorDesc"]:format(L["CardinalPointsGroup1"])
-				},
-				cardinalpoints_resetcolor1 = {
-					type = "execute", order = 5,
-					name = L["ResetColor"], desc = L["CardinalPointsColorResetDesc"]:format(L["CardinalPointsGroup1"])
-				},
-				cardinalpoints_header2 = {
-					type = "header", order = 6,
-					name = L["CardinalPointsGroup2"]
-				},
-				cardinalpoints_color2 = {
-					type = "color", order = 7, hasAlpha = true,
-					name = COLOR, desc = L["CardinalPointsColorDesc"]:format(L["CardinalPointsGroup2"])
-				},
-				cardinalpoints_resetcolor2 = {
-					type = "execute", order = 8,
-					name = L["ResetColor"], desc = L["CardinalPointsColorResetDesc"]:format(L["CardinalPointsGroup2"])
-				}
 			}
 		},
 		coords = {

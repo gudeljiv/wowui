@@ -1,10 +1,14 @@
-## Interface: @toc-version-retail@
+## Interface: @toc-version-retail@, @toc-version-midnight@
+#@debug@
+## Interface: 120000
+#@end-debug@>
 ## Interface-Retail: @toc-version-retail@
 ## Interface-Classic: @toc-version-classic@
 ## Interface-BCC: @toc-version-bcc@
 ## Interface-Wrath: @toc-version-wrath@
+## Interface-Mists: @toc-version-mists@
 ## Title: Broker: |cff00ff00MicroMenu|r
-## Version: v.1.7.7
+## Version: v2.1.1
 ## Notes: Shows the micro menu and game menu in a clickable broker tooltip.
 ## Author: github.com/Kiatra
 ## OptionalDeps: LibQTip-1.0

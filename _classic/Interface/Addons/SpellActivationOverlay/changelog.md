@@ -1,6 +1,452 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.6.0 (2025-11-10)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- Jokke, COI3RA79 and Cowmance for reporting Classic Era issues at start
+
+Bump in TOC file for routine updates (Classic Era, Mists of Pandaria)
+Bump in TOC file for Throne of Thunder patch (Mists of Pandaria PTR)
+
+New Spell Alert
+- Druid's Mangle! (Mists of Pandaria)
+
+New Glowing Button
+- Druid's Mangle (Bear form), during Mangle! (Mists of Pandaria)
+
+Bug Fixes
+- Checking talents at start triggered an error (Classic Era)
+- The question asked at start triggered an error (Mists of Pandaria PTR)
+
+#### v2.6.0-rc2 (2025-08-06)
+
+New Spell Alert
+- Warlock's Mannoroth's Fury (Mists of Pandaria)
+
+New Glowing Buttons
+- Warlock's Hellfire during Mannoroth's Fury (Mists of Pandaria)
+- Warlock's Rain of Fire during Mannoroth's Fury (Mists of Pandaria)
+- Warlock's Seed of Corruption during Mannoroth's Fury (Mists of Pandaria)
+
+#### v2.6.0-rc1 (2025-07-22)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- Yume and Amanthuul for helping on the unorthodox Leap of Faith
+- Fractale, luitzifa, bambitten and Valto for reporting unsupported effects
+
+This release introduces a new type of Spell Alert: Shared Spell Alerts
+- Usually, Spell Alerts are exclusive to the player's class toolkit
+- For example, Hot Streak is a Mage alert, and only Mages can have it
+- Shared Spell Alerts, on the other hand, are available to all classes
+- For example, Leap of Faith is cast by Priests but anyone can be the recipient
+
+New Shared Spell Alerts
+- Priest's Leap of Faith (Mists of Pandaria)
+- Druid's Leap of Faith (Mists of Pandaria)
+
+#### v2.5.7 (2025-07-15)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- Jumpsuitpally for sending feedback about Paladin and Monk
+- Krablord for sending feedback about Rogue and Shaman
+- Bruni for reporting an issue that triggered false positive unknown effects
+- omeletteman91, Adal4, Yume and Nait292 for reporting unsupported effects
+- Fractale for helping on resolving an unsupported effect
+
+Options Panel
+- In Mists of Pandaria, players are asked to disable game's spell alerts
+- This question is answered at first start and the addon remembers the answer
+- If the player disabled game's spell alerts, the addon will re-check later
+- But if the player asked to keep them, the question is gone forever
+- There is now a checkbox in the Options Panel to check again at each start
+- Checking at each start will *not* necessarily ask the question every time
+- It will only ask the question again when the addon detects a conflict
+
+New Spell Alerts
+- Hunter's Focus Fire (Mists of Pandaria)
+- Monk's Vital Mists (Mists of Pandaria)
+
+Updated Spell Alerts
+- Monk's Blackout Kick is now only displayed right (Mists of Pandaria)
+- Monk's Tiger Palm is now green-ish and displayed left (Mists of Pandaria)
+- Paladin's Infusion of Light now uses Daybreak visuals\* (Mists of Pandaria)
+- Paladin's Daybreak now uses Sun-like visuals\* (Mists of Pandaria)
+
+\* With these changes, Infusion of Light now matches the reference client
+
+New Glowing Buttons
+- Rogue's Dispatch, when the target has less than 35% hp (Mists of Pandaria)
+- Shaman's Lava Burst, as combat-only counter (Mists of Pandaria)
+
+Removed Glowing Buttons\*\*
+- Paladin's Hammer of Wrath (Mists of Pandaria)
+- Paladin's Holy Shock, during Daybreak (Mists of Pandaria)
+- Paladin's Divine Light, during Infusion of Light (Mists of Pandaria)
+- Paladin's Holy Light, during Infusion of Light (Mists of Pandaria)
+- Paladin's Holy Radiance, during Infusion of Light (Mists of Pandaria)
+- Paladin's Avenger's Shield, during Grand Crusader (Mists of Pandaria)
+
+\*\* These buttons are already glowing by the game client
+
+Bug Fixes
+- Text from the lower-right box of the Options Panel could display squares
+- This affected non-ASCII characters e.g., accents or non-Latin characters
+- Known effects should no longer be reported as unknown (Mists of Pandaria)
+- In very rare cases, glowing a button could trigger a Lua error
+
+Ghosts\*\*\* Busted
+- Hunter's Mongoose Bite (Classic Era, The Burning Crusade)
+- Hunter's Flanking Strike (Season of Discovery)
+- Shaman's Rolling Thunder  (Season of Discovery, The Burning Crusade)
+- Shaman's Molten Blast (Season of Discovery)
+- Shaman's Fulmination (Cataclysm, Mists of Pandaria)
+- Shaman's Lava Surge (Cataclysm, Mists of Pandaria)
+
+\*\*\*A Ghost is an overlay that fades out then reappears out of nowhere
+
+Miscellaneous
+- All checkboxes are now translated at the bottom of the Options Panel
+
+#### v2.5.6 (2025-07-05)
+
+Thank you to our amazing contributors for reporting issues. Thanks!
+- jokke and mistik911 for reporting the Warrior's Overpower issue
+- Adal4 for reporting the Paladin's The Art of War issue
+- Amanthuul and kakukembo for reporting the Druid's Eclipse issue
+
+New Spell Alert
+- Paladin's The Art of War (Mists of Pandaria)
+
+Bug Fixes
+- Druids no longer get Eclipse textures errors at start (Mists of Pandaria)
+- Counters would not always glow at Rank 2 and higher (Era, TBC, Wrath)
+
+Here is the complete list of counters affected by the latter issue
+- Hunter's Counterattack (Era, TBC, Wrath)
+- Hunter's Kill Shot (Wrath)
+- Hunter's Mongoose Bite (Era, TBC)
+- Paladin's Exorcism (Era, TBC, Wrath)
+- Paladin's Hammer of Wrath (Era, TBC, Wrath)
+- Paladin's Holy Shock (Era, TBC, Wrath)
+- Warrior's Execute (Era, TBC, Wrath)
+- Warrior's Overpower (Era, TBC)
+- Warrior's Revenge (Era, TBC, Wrath)
+
+#### v2.5.5 (2025-07-01)
+
+There is now a Universal build that works for all flavors: Era, Cataclysm, etc.
+Players are still encouraged to install optimized build for each flavor
+Universal is provided for convenience to players who install addons manually
+
+New Spell Alerts
+- Soulburn (Cataclysm)
+- Demonic Rebirth (Cataclysm)
+
+Miscellaneous
+- The addon's license has been updated
+
+#### v2.5.4 (2025-06-23)
+
+Thank you to our amazing contributors for sending feedback. Thanks!
+- Amanthuul
+- TeamRemix
+- Jumpsuitpally
+- Optimizer2347
+
+Options Panel
+- The class name is now displayed once in the options panel
+
+New Spell Alerts
+- Warlock's Eye of Kilrogg
+- Warlock's Nightfall (Mists of Pandaria)
+- Warlock's Soulburn (Mists of Pandaria)
+- Warlock's Molten Core (Mists of Pandaria)
+- Warlock's Demonic Rebirth (Mists of Pandaria)
+- Warlock's Backlash (Mists of Pandaria)
+- Warlock's Fire and Brimstone (Mists of Pandaria)
+- Warrior's Victory Rush (Mists of Pandaria)
+- Warrior's Taste for Blood (Mists of Pandaria)
+- Warrior's Sudden Death (Mists of Pandaria)
+- Warrior's Bloodsurge (Mists of Pandaria)
+- Warrior's Sword and Board (Mists of Pandaria)
+- Warrior's Ultimatum (Mists of Pandaria)
+
+New Glowing Buttons
+- Warlocks's Drain Soul, when the target has 20% health or less (MoP)
+- Warlocks's Incinerate, during Backdraft (Mists of Pandaria)
+- Warlocks's Chaos Bolt, during Backdraft (Mists of Pandaria)
+- Warlocks's Incinerate, during Fire and Brimstone (Mists of Pandaria)
+- Warlocks's Immolate, during Fire and Brimstone (Mists of Pandaria)
+- Warlocks's Conflagrate, during Fire and Brimstone (Mists of Pandaria)
+- Warlocks's Curse of the Elements, during Fire and Brimstone (MoP)
+- Warlocks's Curse of Enfeeblement, during Fire and Brimstone (MoP)
+- Warrior's Overpower, during Taste for Blood (Mists of Pandaria)
+- Warrior's Victory Rush, during Victorious (Mists of Pandaria)
+- Warrior's Impending Victory, during Victorious (Mists of Pandaria)
+
+Bug Fixes
+- Restored options to disable buttons of Mage's Freeze (Mists of Pandaria)
+- Fixed animations of Shaman's Fulmination (Cataclysm, Mists of Pandaria)
+- Fixed animations of Shaman's Rolling Thunder (Season of Discovery)
+
+Miscellaneous
+- Spell alerts disappear after leaving combat for more than 60 secs, up from 30
+
+#### v2.5.3 (2025-06-17)
+
+SpellActivationOverlay vs. SpellActivationOverlay
+- The game's spell alert options are now checked at start (Mists of Pandaria)
+- You will be asked to disable the game's spell alert to avoid conflicts
+- With the current state of the game, it is best to disable them for now
+
+Unsupported Spell Alerts (Mists of Pandaria)
+- A message is displayed when detecting an unsupported spell alert
+- You are encouraged to report them, thank you in advance for your help :)
+- Such messages are enabled by default and can be disabled in the options panel
+
+New Spell Alerts
+- Monk's Combo Breaker: Blackout Kick
+- Monk's Combo Breaker: Tiger Palm
+- Rogue's Blindside (Mists of Pandaria)
+
+Internationalization
+- Traditional Chinese (zh-TW) is now fully supported
+- This does not include Debug messages which are almost always in English
+- This does not include Necrosis warnings, which are not supposed to happen
+
+Miscellaneous
+- The addon flavor is now displayed in the options panel
+- Players are warned when they install the wrong flavor for their game client
+
+#### v2.5.2 (2025-06-13)
+
+Thank you to Bison for sending feedback about Feral druids. Thanks!
+
+Options Panel
+- 'Toggle Test' now previews spell alerts on top of the options panel
+- Moving the mouse over a spell alert in the options panel also previews on top
+
+New Spell Alerts
+- Dream of Cenarius, in Guardian specialization (Mists of Pandaria)
+- Dream of Cenarius, in Feral specialization (Mists of Pandaria)
+- Hunter's Master Marksman (Mists of Pandaria)
+- Hunter's Lock and Load (Mists of Pandaria)
+- Hunter's Thrill of the Hunt (Mists of Pandaria)
+
+Updated Spell Alerts
+- Druid's Omen of Clarity (Feral) has been scaled down (Mists of Pandaria)
+- Hunter's Lock and Load is slightly dimmer at 1 stack (Wrath, Cataclysm)
+
+Bug Fixes
+- The addon should no longer conflict with the game client (Mists of Pandaria)
+- Hunter's Lock and Load no longer plays a sound at 1 stack (Wrath, Cataclysm)
+- Paladins no longer have an error at start about Eternal Flame (Cataclysm)
+
+Miscellaneous
+- The addon is now capable of overlapping spell alerts with a predictable order
+
+#### v2.5.1 (2025-06-10)
+
+Thank you to Siegester03 for helping a great deal with Mage. Many thanks!
+
+New Spell Alerts
+- Druid's Lunar Eclipse and Solar Eclipse (Mists of Pandaria)
+- Druid's Shooting Stars (Mists of Pandaria)
+- Druid's Tooth and Claw (Mists of Pandaria)
+- Druid's Predatory Swiftness (Mists of Pandaria)
+- Druid's Omen of Clarity, for Feral and Restoration (Mists of Pandaria)
+- Mage's Arcane Missiles (Mists of Pandaria)
+- Mage's Heating Up (Mists of Pandaria)
+- Mage's Hot Streak (Mists of Pandaria)
+- Mage's Brain Freeze (Mists of Pandaria)
+- Mage's Fingers of Frost (Mists of Pandaria)
+
+New Glowing Buttons
+- Druid's Entangling Roots, during Predatory Swiftness (Mists of Pandaria)
+- Druid's Healing Touch, during Predatory Swiftness (Mists of Pandaria)
+- Druid's Hibernate, during Predatory Swiftness (Mists of Pandaria)
+- Druid's Rebirth, during Predatory Swiftness (Mists of Pandaria)
+- Mage's Arcane Missiles, during Arcane Missiles (Mists of Pandaria)
+- Mage's Inferno Blast, during Heating Up (Mists of Pandaria)
+- Mage's Pyroblast, during Hot Streak (Mists of Pandaria)
+- Mage's Frostfire Bolt, during Brain Freeze (Mists of Pandaria)
+- Mage's Deep Freeze, during Fingers of Frost (Mists of Pandaria)
+- Mage's Ice Lance, during Fingers of Frost (Mists of Pandaria)
+- Priest's Devouring Plague, at 3 Shadow Orbs (Mists of Pandaria)
+
+Known Limitations
+- Priest's Devouring Plague may glow up to 30 seconds after leaving combat
+
+#### v2.5.0 (2025-06-08)
+
+Thank you to Katalina for sending feedback and testing Paladin. Appreciated!
+
+New Spell Alerts
+- Paladin's charges of Holy Power (Mists of Pandaria)
+- Paladin's Infusion of Light (Mists of Pandaria)
+- Paladin's Daybreak (Mists of Pandaria)
+- Paladin's Grand Crusader (Mists of Pandaria)
+- Paladin's Divine Purpose (Mists of Pandaria)
+- Priest's Divine Insight: Discipline (Mists of Pandaria)
+- Priest's Divine Insight: Holy (Mists of Pandaria)
+- Priest's Divine Insight: Shadow (Mists of Pandaria)
+- Priest's Surge of Light (Mists of Pandaria)
+- Priest's Surge of Darkness (Mists of Pandaria)
+
+New Glowing Buttons
+- Paladin's Divine Storm, at 3 charges of Holy Power (Mists of Pandaria)
+- Paladin's Eternal Flame, at 3 charges of Holy Power (Mists of Pandaria)
+- Paladin's Inquisition, at 3 charges of Holy Power (Mists of Pandaria)
+- Paladin's Light of Dawn, at 3 Holy Power (Mists of Pandaria)
+- Paladin's Shield of the Righteous, at 3 Holy Power (Mists of Pandaria)
+- Paladin's Templar's Verdict, at 3 Holy Power (Mists of Pandaria)
+- Paladin's Word of Glory, at 3 Holy Power (Mists of Pandaria)
+- Paladin's Divine Light, during Infusion of Light (Mists of Pandaria)
+- Paladin's Holy Light, during Infusion of Light (Mists of Pandaria)
+- Paladin's Holy Radiance, during Infusion of Light (Mists of Pandaria)
+- Paladin's Holy Shock, during Daybreak (Mists of Pandaria)
+- Paladin's Avenger's Shield, during Grand Crusader (Mists of Pandaria)
+- Paladin's Divine Storm, during Divine Purpose (Mists of Pandaria)
+- Paladin's Eternal Flame, during Divine Purpose (Mists of Pandaria)
+- Paladin's Inquisition, during Divine Purpose (Mists of Pandaria)
+- Paladin's Light of Dawn, during Divine Purpose (Mists of Pandaria)
+- Paladin's Shield of the Righteous, during Divine Purpose (Mists of Pandaria)
+- Paladin's Templar's Verdict, during Divine Purpose (Mists of Pandaria)
+- Paladin's Word of Glory, during Divine Purpose (Mists of Pandaria)
+- Paladin's Flash of Light, during Supplication (Mists of Pandaria)
+- Priest's Greater Heal, at 2 stacks of Serendipity (Mists of Pandaria)
+- Priest's Prayer of Healing, at 2 stacks of Serendipity (Mists of Pandaria)
+- Priest's Flash Heal, during Surge of Light (Mists of Pandaria)
+- Priest's Mind Spike, during Surge of Darkness (Mists of Pandaria)
+- Priest's Mind Blast, during Glyph of Mind Spike (Mists of Pandaria)
+
+Bug Fixes
+- When glowing duplicate buttons, all buttons should now glow (Cataclysm)
+- Buttons which switch instantly are now un-glowed when the effect is lost
+- Buttons that stop glowing should no longer have a brief re-glow effect
+- ElvUI users now benefit from ElvUI's Action Button Glow settings
+- Mage's Pyroblast un-glows when cast during Hot Streak (Cataclysm)
+- Priest's Flash Heal un-glows when cast during Surge of Light (Cataclysm)
+- Priests should no longer have an error at start about Shadowform
+
+#### v2.4.3 (2024-06-02)
+
+Bug Fixes
+- Buttons now un-glow as intended when effects end (Classic Era, Cataclysm)
+
+#### v2.4.2 (2025-06-02)
+
+Special thanks to Amanthuul once again for his work on the Shaman class. Kudos!
+
+New Spell Alerts
+- Shaman's Elemental Focus (Mists of Pandaria)
+- Shaman's Fulmination, with 7 Lightning Shield stacks (Mists of Pandaria)
+- Shaman's Lava Surge (Mists of Pandaria)
+- Shaman's Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Tidal Waves (Mists of Pandaria)
+
+New Glowing Buttons
+- Death Knight's Death Strike, during Glyph of Dark Succor (Cataclysm)
+- Shaman's Earth Shock, with 7 Lightning Shield stacks (Mists of Pandaria)
+- Shaman's Elemental Blast, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Chain Heal, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Chain Lightning, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Greater Healing Wave, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Healing Rain, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Healing Surge, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Healing Wave, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Hex, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Lightning Bolt, during Maelstrom Weapon (Mists of Pandaria)
+- Shaman's Greater Healing Wave, during Tidal Waves (Mists of Pandaria)
+- Shaman's Healing Surge, during Tidal Waves (Mists of Pandaria)
+- Shaman's Healing Wave, during Tidal Waves (Mists of Pandaria)
+
+Bug Fixes
+- Glowing Buttons no longer conflict with the game client's glow (MoP)
+- Death Knight's Dark Tranformation now displays the overlay as intended (MoP)
+- During Dark Succor, Death Strike button only glows in Frost/Unholy presence
+
+#### v2.4.1 (2025-05-29)
+
+Shout-out to Flow who designed Shaman's 6-10 Maelstrom Weapon textures. Thanks!
+
+New Spell Alert
+- Warrior's Regicide (Season of Discovery)
+
+New Glowing Buttons
+- Warrior's Execute, during Regicide (Season of Discovery)
+- Warrior's Heroic Strike, during Incite (Cataclysm)
+
+Introducting Mists of Pandaria flavor!
+- The addon is still in very early stage
+- Support for Death Knight's Crimson Scourge
+- Support for Death Knight's Will of the Necropolis
+- Support for Death Knight's Rime
+- Support for Death Knight's Killing Machine
+- Support for Death Knight's Dark Transformation
+- Support for Death Knight's Sudden Doom
+- Support for Death Knight's Glyph of Dark Succor
+- Support for Mage's Freeze debuff
+- Support for Paladin's Hammer of Wrath
+- Support for Paladin's Exorcism
+- Support for Paladin's Holy Shock
+- Support for Priest's Shadowform
+- Support for Warrior's Overpower
+- Support for Warrior's Execute
+- Support for Warrior's Revenge
+- Support for Warrior's Victory Rush
+- Support for Warrior's Glyph of Incite
+
+Known Limitations
+- Dark Transformation does not display an overlay, due to a game client issue
+- Dark Succor will glow Death Strike in all presences, including Blood Presence
+- Mage's Freeze debuff does not track Shaman's Freeze debuff, from Frozen Power
+
+There were significant changes which, hopefully, should not break anything.
+But in case it did break something, please to report issues. Thank you :)
+
+#### v2.4.0 (2025-05-11)
+
+Shout-out to fellow developers Skyward, Vanheden and Adal4. Thanks!
+Special thanks to Amanthuul once again for his work on the Shaman class. Kudos!
+
+Bump in TOC file for Scarlet Enclave update (Classic Era)
+Bump in TOC file for Dragon Soul patch (Cataclysm)
+
+New Spell Alert
+- Druid's Swiftbloom (Scarlet Enclave 2pc, Season of Discovery)
+- Hunter's Burning Adrenaline (Firelands 4pc, Cataclysm)
+- Shaman's Maelstrom Weapon can stack up to 10 times (Season of Discovery)
+
+New Glowing Buttons
+- Druid's Nourish, during Fury of Stormrage (Season of Discovery)
+- Druid's Healing Touch, during Swiftbloom (Season of Discovery)
+- Druid's Nourish, during Swiftbloom (Season of Discovery)
+- Druid's Regrowth, during Swiftbloom (Season of Discovery)
+- Priest's Binding Heal, during Surge of Light (Season of Discovery)
+- Shaman's Chain Heal, during Power Surge\* (Season of Discovery)
+
+Removed Glowing Button
+- Shaman's Chain Heal, during Power Surge\* (Season of Discovery)
+
+\* Chain Heal has been moved from Power Surge DPS buff to Healer buff
+
+Miscellaneous
+- The 'Recently Updated' option note has been withdrawn from old updates
+
+#### v2.3.4 (2025-12-06)
+
+Bump in TOC file for Anniversary update (Classic Era)
+Bump in TOC file for Firelands patch (Cataclysm)
+
+Bug Fixes:
+- Restored size of "Toggle Test" button in options panel
+- Loading both SpellActivationOverlay and Necrosis could cause a Lua error
+- Prevent taint from (unofficial) Cataclysm release of v2.3.3
+
 #### v2.3.3 (2024-09-28)
+
+Bump in TOC file for Season of Discovery update (Classic Era)
 
 Bug Fixes
 - The options panel was broken since last patch (Classic Era)
@@ -8,13 +454,13 @@ Bug Fixes
 
 #### v2.3.2 (2024-09-15)
 
-New Spell Alert:
+New Spell Alert
 - Hunter's Mongoose Bite (Era, TBC)
 
-Updated Glowing Button:
+Updated Glowing Button
 - Shaman's Molten Blast no longer glows infinitely after leaving combat (SoD)
 
-Removed Effect:
+Removed Effect
 - Priest's Mind Spike has been removed temporarily until it is resolved (SoD)
 
 Bug Fixes
@@ -48,8 +494,8 @@ Mage
 
 Shaman
 - Shaman's Molten Blast option was displayed twice (Season of Discovery)
-- Shaman's Maelstorm Weapon no longer empowers Chain Heal (SoD)
-- Shaman's Maelstorm Weapon no longer empowers Healing Wave (SoD)
+- Shaman's Maelstrom Weapon no longer empowers Chain Heal (SoD)
+- Shaman's Maelstrom Weapon no longer empowers Healing Wave (SoD)
 
 Bug Fixes
 - Lua errors caused by action buttons should no longer happen

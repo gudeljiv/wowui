@@ -180,7 +180,7 @@ addon.SpellCritPerInt = {
 StatLogic.StatModTable = {}
 if addon.class == "DRUID" then
 	StatLogic.StatModTable["DRUID"] = {
-		["ADD_AP_MOD_FERAL_AP"] = {
+		["ADD_AP_MOD_FERAL_ATTACK_POWER"] = {
 			-- Cat Form
 			{
 				["value"] = 1,
@@ -213,7 +213,7 @@ if addon.class == "DRUID" then
 				["aura"] = 768,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -224,7 +224,7 @@ if addon.class == "DRUID" then
 				["value"] = 0.0625 * 5,
 			},
 		},
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			-- Talent: Reflection
 			{
 				["tab"] = 3,
@@ -235,7 +235,6 @@ if addon.class == "DRUID" then
 			},
 			-- Rune: Dreamstate
 			{
-				["known"] = 408258,
 				["rune"] = true,
 				["value"] = 0.5,
 				["aura"] = 408261,
@@ -374,7 +373,7 @@ elseif addon.class == "HUNTER" then
 				["aura"] = 409507,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -385,7 +384,7 @@ elseif addon.class == "HUNTER" then
 				["value"] = 0.125 * 5,
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Buff: Aspect of the Viper
 			{
 				["value"] = 0.10 * 5/3,
@@ -463,6 +462,26 @@ elseif addon.class == "HUNTER" then
 				["value"] = 0.1,
 			},
 		},
+		["MOD_AP"] = {
+			-- Set: Dawnstalker Armor (Wicked Shot)
+			{
+				["set"] = 1937,
+				["pieces"] = 4,
+				["value"] = 0.25,
+				["aura"] = 1226136,
+				["rune"] = true,
+			},
+		},
+		["MOD_RANGED_AP"] = {
+			-- Set: Dawnstalker Armor (Wicked Shot)
+			{
+				["set"] = 1937,
+				["pieces"] = 4,
+				["value"] = 0.25,
+				["aura"] = 1226136,
+				["rune"] = true,
+			},
+		},
 	}
 elseif addon.class == "MAGE" then
 	StatLogic.StatModTable["MAGE"] = {
@@ -472,7 +491,7 @@ elseif addon.class == "MAGE" then
 				["value"] = 1,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -494,7 +513,7 @@ elseif addon.class == "MAGE" then
 				},
 			},
 		},
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			-- Talent: Arcane Meditation
 			{
 				["tab"] = 1,
@@ -514,6 +533,16 @@ elseif addon.class == "MAGE" then
 				["pieces"] = 6,
 				["value"] = 0.15,
 				["aura"] = 6117,
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive (Soul of the Magical Armorer)
+			{
+				["known"] = 1220166,
+				["value"] = 0.15,
+				["aura"] = 6117,
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 			-- Rune: Enlightenment
 			{
@@ -530,7 +559,7 @@ elseif addon.class == "MAGE" then
 				["aura"] = 425124,
 			},
 		},
-		["MOD_NORMAL_MANA_REG"] = {
+		["MOD_NORMAL_MANA_REGEN"] = {
 			-- Arcane Surge
 			{
 				["known"] = 425124,
@@ -569,7 +598,7 @@ elseif addon.class == "PALADIN" then
 				["value"] = 2,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -580,7 +609,7 @@ elseif addon.class == "PALADIN" then
 				["value"] = 0.125 * 5,
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Rune: Guarded by the Light
 			{
 				["known"] = 415059,
@@ -605,7 +634,16 @@ elseif addon.class == "PALADIN" then
 				},
 				["aura"] = 440668,
 				["rune"] = true,
-			}
+			},
+			-- Set: Inquisition Warplate
+			{
+				["set"] = 1940,
+				["pieces"] = 6,
+				["stack"] = 0.15,
+				["max_stacks"] = 3,
+				["aura"] = 1226464,
+				["rune"] = true,
+			},
 		},
 		-- Paladin: Toughness (Rank 5) - 2,5
 		--          Increases your armor value from items by 2%/4%/6%/8%/10%.
@@ -618,15 +656,81 @@ elseif addon.class == "PALADIN" then
 				},
 			},
 		},
-		-- Paladin: Divine Strength (Rank 5) - 1,1
-		--          Increases your total Strength by 2%/4%/6%/8%/10%.
 		["MOD_STR"] = {
+			-- Talent: Divine Strength
 			{
 				["tab"] = 1,
 				["num"] = 1,
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
+			},
+			-- Set: Avenger's Will (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["set"] = 1844,
+				["pieces"] = 2,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Ironclad (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["known"] = 1220192,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+		},
+		["MOD_AGI"] = {
+			-- Set: Avenger's Will (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["set"] = 1844,
+				["pieces"] = 2,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Ironclad (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["known"] = 1220192,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+		},
+		["MOD_STA"] = {
+			-- Set: Avenger's Will (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["set"] = 1844,
+				["pieces"] = 2,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Ironclad (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["known"] = 1220192,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		-- Paladin: Divine Intellect (Rank 5) - 1,2
@@ -638,6 +742,50 @@ elseif addon.class == "PALADIN" then
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
+			},
+			-- Set: Avenger's Will (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["set"] = 1844,
+				["pieces"] = 2,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Ironclad (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["known"] = 1220192,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+		},
+		["MOD_SPI"] = {
+			-- Set: Avenger's Will (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["set"] = 1844,
+				["pieces"] = 2,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Ironclad (Blessing of Sanctuary)
+			{
+				["rune"] = true,
+				["known"] = 1220192,
+				["value"] = 0.10,
+				["tab"] = 2,
+				["num"] = 12,
+				["aura"] = 20911,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		["ADD_SPELL_DMG_MOD_INT"] = {
@@ -658,8 +806,7 @@ elseif addon.class == "PALADIN" then
 			},
 		},
 		["MOD_BLOCK_VALUE"] = {
-			-- Paladin: Shield Specialization (Rank 3) - 2,8
-			--          Increases the amount of damage absorbed by your shield by 10%/20%/30%.
+			-- Talent: Shield Specialization
 			{
 				["tab"] = 2,
 				["num"] = 8,
@@ -667,13 +814,28 @@ elseif addon.class == "PALADIN" then
 					0.1, 0.2, 0.3,
 				},
 			},
-			-- Paladin: Aegis - Rune
-			--   Increases your block value by 30%
+			-- Rune: Aegis
 			{
 				["known"] = 425589,
 				["rune"] = true,
 				["value"] = 0.3,
-			}
+			},
+			-- Set: Inquisition Bulwark (Righteous Shield)
+			{
+				["set"] = 1942,
+				["pieces"] = 2,
+				["value"] = 0.3,
+				["aura"] = 1226466,
+				["rune"] = true,
+			},
+			-- Set: Inquisition Bulwark (Avenging Shield)
+			{
+				["set"] = 1942,
+				["pieces"] = 6,
+				["value"] = 0.3,
+				["aura"] = 1233525,
+				["rune"] = true,
+			},
 		},
 		["ADD_SPELL_DMG_MOD_DEFENSE"] = {
 			-- Buff: Defender's Resolve
@@ -692,6 +854,17 @@ elseif addon.class == "PALADIN" then
 				["aura"] = 460200,
 			},
 		},
+		["MOD_SPELL_DMG"] = {
+			-- Set: Inquisition Shockplate
+			{
+				["set"] = 1963,
+				["pieces"] = 6,
+				["stack"] = 0.15,
+				["max_stacks"] = 3,
+				["aura"] = 1240574,
+				["rune"] = true,
+			},
+		},
 	}
 elseif addon.class == "PRIEST" then
 	StatLogic.StatModTable["PRIEST"] = {
@@ -701,7 +874,7 @@ elseif addon.class == "PRIEST" then
 				["value"] = 1,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -712,7 +885,7 @@ elseif addon.class == "PRIEST" then
 				["value"] = 0.041667 * 5,
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Rune: Dispersion
 			{
 				["known"] = 425294,
@@ -721,7 +894,7 @@ elseif addon.class == "PRIEST" then
 				["aura"] = 425294,
 			},
 		},
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			-- Talent: Meditation
 			{
 				["tab"] = 1,
@@ -741,6 +914,15 @@ elseif addon.class == "PRIEST" then
 				["set"] = 1812,
 				["pieces"] = 2,
 				["value"] = 0.15,
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Faithful
+			{
+				["known"] = 1220112,
+				["value"] = 0.15,
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		-- Priest: Spiritual Guidance (Rank 5) - 2,14
@@ -803,9 +985,8 @@ elseif addon.class == "ROGUE" then
 				["value"] = 0.333333 * 5,
 			},
 		},
-		-- Rogue: Deadliness (Rank 5) - 3,16
-		--        Increases your attack power by 2%/4%/6%/8%/10%.
 		["MOD_AP"] = {
+			-- Talent: Deadliness
 			{
 				["tab"] = 3,
 				["num"] = 16,
@@ -819,19 +1000,43 @@ elseif addon.class == "ROGUE" then
 			{
 				["known"] = 400016,
 				["rune"] = true,
-				["stack"] = 0.06,
+				["stack"] = 0.05,
 				["max_stacks"] = 5,
 				["aura"] = 400015,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Set: Duskwraith Leathers (Rolling with the Punches)
+			{
+				["set"] = 1935,
+				["pieces"] = 6,
+				["known"] = 400016,
+				["rune"] = true,
+				["stack"] = 0.07,
+				["max_stacks"] = 5,
+				["aura"] = 400015,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		["MOD_ARMOR"] = {
 			-- Set: Bloodfang Battlearmor (Rolling with the Punches)
 			{
+				["set"] = 1815,
+				["pieces"] = 4,
 				["known"] = 400016,
 				["rune"] = true,
 				["stack"] = 0.20,
 				["max_stacks"] = 5,
 				["aura"] = 400015,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Black Belt (Rolling with the Punches)
+			{
+				["known"] = 1220023,
+				["rune"] = true,
+				["stack"] = 0.20,
+				["max_stacks"] = 5,
+				["aura"] = 400015,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		[StatLogic.Stats.MeleeCrit] = {
@@ -842,7 +1047,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Dagger] = true,
 				},
 			},
@@ -853,7 +1058,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
 				},
 			},
@@ -862,9 +1067,21 @@ elseif addon.class == "ROGUE" then
 				["set"] = 1829,
 				["pieces"] = 3,
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Dagger] = true,
 				},
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Shiv Savant
+			{
+				["known"] = 1220010,
+				["value"] = 5,
+				["weaponSubclass"] = {
+					[Enum.ItemWeaponSubclass.Dagger] = true,
+				},
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		[StatLogic.Stats.WeaponSkill] = {
@@ -875,7 +1092,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Mace1H] = true,
 				},
 			},
@@ -886,7 +1103,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					3, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Sword1H] = true,
 					[Enum.ItemWeaponSubclass.Dagger] = true,
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
@@ -902,6 +1119,14 @@ elseif addon.class == "ROGUE" then
 				["aura"] = 462230,
 			}
 		},
+		["MOD_DODGE"] = {
+			-- Rune: Just a Flesh Wound
+			{
+				["known"] = 400014,
+				["rune"] = true,
+				["value"] = -0.50,
+			},
+		},
 	}
 elseif addon.class == "SHAMAN" then
 	StatLogic.StatModTable["SHAMAN"] = {
@@ -911,7 +1136,7 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 2,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -927,11 +1152,11 @@ elseif addon.class == "SHAMAN" then
 			{
 				["known"] = 415231,
 				["rune"] = true,
-				["value"] = 1,
+				["value"] = 1.5,
 				["aura"] = 454042,
 			},
 		},
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			-- Rune: Power Surge
 			{
 				["known"] = 415100,
@@ -954,6 +1179,16 @@ elseif addon.class == "SHAMAN" then
 				["max_stacks"] = 3,
 				["aura"] = 467910,
 				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the Spiritual Bulwark (Elemental Shield)
+			{
+				["known"] = 1220240,
+				["stack"] = 0.10,
+				["max_stacks"] = 3,
+				["aura"] = 467910,
+				["rune"] = true,
+				["group"] = addon.ExclusiveGroup.SetBonus,
 			},
 		},
 		["MOD_AP"] = {
@@ -962,7 +1197,7 @@ elseif addon.class == "SHAMAN" then
 				["known"] = 436364,
 				["rune"] = true,
 				["aura"] = 436365,
-				["value"] = 0.15,
+				["value"] = 0.10,
 			},
 		},
 		-- Shaman: Toughness (Rank 5) - 2,11
@@ -1003,7 +1238,7 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 0.15,
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Shaman: Water Shield - Rune
 			--   The caster is surrounded by 3 globes of water, granting 1% of your maximum mana per 5 sec.
 			{
@@ -1021,21 +1256,37 @@ elseif addon.class == "SHAMAN" then
 			},
 		},
 		["MOD_HEALTH"] = {
-			-- Shaman: Way of Earth: Rune
-			--   While Rockbiter Weapon is active on your main hand weapon, you gain 30% increased health
+			-- Rune: Way of Earth
 			{
 				["known"] = 408531,
 				["rune"] = true,
-				["value"] = 0.3,
-				["aura"] = 408680
-			}
+				["value"] = 0.25,
+				["aura"] = 408680,
+			},
+			-- Set: Stormcaller's Resolve (Pack Leader)
+			{
+				["rune"] = true,
+				["set"] = 1852,
+				["pieces"] = 4,
+				["aura"] = 1213939,
+				["value"] = 0.5,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Passive: Soul of the True Alpha (Pack Leader)
+			{
+				["rune"] = true,
+				["known"] = 1220246,
+				["aura"] = 1213939,
+				["value"] = 0.5,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
 		},
 		["ADD_AP_MOD_INT"] = {
 			-- Rune: Mental Dexterity
 			{
 				["known"] = 415140,
 				["rune"] = true,
-				["value"] = 1.00,
+				["value"] = 1.50,
 				["aura"] = 415144,
 			},
 		},
@@ -1053,7 +1304,7 @@ elseif addon.class == "SHAMAN" then
 			{
 				["known"] = 408524,
 				["rune"] = true,
-				["value"] = 2,
+				["value"] = 4,
 				["aura"] = 460200,
 			}
 		},
@@ -1066,7 +1317,7 @@ elseif addon.class == "WARLOCK" then
 				["value"] = 1,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
@@ -1115,7 +1366,7 @@ elseif addon.class == "WARLOCK" then
 				["known"] = 412798,
 				["rune"] = true,
 				["aura"] = 412800,
-				["value"] = 1,
+				["value"] = 0.7,
 			}
 		},
 		-- Warlock: Demonic Pact - Rune
@@ -1194,12 +1445,19 @@ elseif addon.class == "WARLOCK" then
 				["value"] = 0.30,
 				["aura"] = 426195,
 			},
+			-- Rune: Metamorphosis
+			{
+				["known"] = 403789,
+				["rune"] = true,
+				["value"] = 0.15,
+				["aura"] = 403789,
+			}
 		},
 		["ADD_SPELL_DMG_MOD_DEFENSE"] = {
 			-- Rune: Metamorphosis (Defender's Resolve)
 			{
 				["rune"] = true,
-				["value"] = 2,
+				["value"] = 4,
 				["aura"] = 460200,
 			}
 		},
@@ -1250,7 +1508,17 @@ elseif addon.class == "WARRIOR" then
 				["stance"] = "interface\\icons\\achievement_featsofstrength_gladiator_08",
 				["rune"] = true,
 				["value"] = -0.30,
-			}
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
+			-- Set: Lightbreaker's Battlegear
+			{
+				["set"] = 1933,
+				["pieces"] = 6,
+				["stance"] = "interface\\icons\\achievement_featsofstrength_gladiator_08",
+				["rune"] = true,
+				["value"] = 0,
+				["group"] = addon.ExclusiveGroup.SetBonus,
+			},
 		},
 		[StatLogic.Stats.MeleeCrit] = {
 			-- Talent: Axe Specialization
@@ -1260,7 +1528,7 @@ elseif addon.class == "WARRIOR" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 				},
@@ -1272,7 +1540,7 @@ elseif addon.class == "WARRIOR" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Polearm] = true,
 				},
 			},
@@ -1291,8 +1559,8 @@ elseif addon.class == "WARRIOR" then
 			{
 				["known"] = 426940,
 				["rune"] = true,
-				["aura"] = 426942,
-				["value"] = 0.10,
+				["aura"] = 426940,
+				["value"] = 0.15,
 			},
 		},
 		["ADD_AP_MOD_DEFENSE"] = {
@@ -1303,6 +1571,16 @@ elseif addon.class == "WARRIOR" then
 				["aura"] = 460171,
 			}
 		},
+		["ADD_STR_MOD_DEFENSE"] = {
+			-- Set: Lightbreaker's Battlegear (Recklessness)
+			{
+				["set"] = 1933,
+				["pieces"] = 4,
+				["value"] = 0.5,
+				["aura"] = 1234031,
+				["rune"] = true,
+			},
+		}
 	}
 end
 
@@ -1311,7 +1589,7 @@ if addon.playerRace == "Dwarf" then
 		[StatLogic.Stats.WeaponSkill] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Guns] = true,
 				},
 				["group"] = addon.ExclusiveGroup.WeaponRacial,
@@ -1350,7 +1628,7 @@ elseif addon.playerRace == "Human" then
 		[StatLogic.Stats.WeaponSkill] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Mace1H] = true,
 					[Enum.ItemWeaponSubclass.Mace2H] = true,
 					[Enum.ItemWeaponSubclass.Sword1H] = true,
@@ -1365,7 +1643,7 @@ elseif addon.playerRace == "Orc" then
 		[StatLogic.Stats.WeaponSkill] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 				},
@@ -1393,7 +1671,7 @@ elseif addon.playerRace == "Troll" then
 		[StatLogic.Stats.WeaponSkill] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Bows] = true,
 					[Enum.ItemWeaponSubclass.Thrown] = true,
 				},
@@ -1420,8 +1698,7 @@ StatLogic.StatModTable["ALL"] = {
 		},
 	},
 	["MOD_ARMOR"] = {
-		-- Paladin: Lay on Hands (Rank 1/2) - Buff
-		--          Armor increased by 15%/30%.
+		-- Buff: Lay on Hands
 		{
 			["rank"] = {
 				0.15, 0.30,
@@ -1429,8 +1706,7 @@ StatLogic.StatModTable["ALL"] = {
 			["aura"] = 20236,
 			["spellid"] = 20235,
 		},
-		-- Priest: Inspiration (Rank 1/2/3) - Buff
-		--         Increases armor by 8%/16%/25%.
+		-- Buff: Inspiration
 		{
 			["rank"] = {
 				0.08, 0.16, 0.25,
@@ -1438,8 +1714,7 @@ StatLogic.StatModTable["ALL"] = {
 			["aura"] = 15363,
 			["group"] = addon.ExclusiveGroup.Armor,
 		},
-		-- Shaman: Ancestral Fortitude (Rank 1/2/3) - Buff
-		--         Increases your armor value by 8%/16%/25%.
+		-- Buff: Ancestral Fortitude
 		{
 			["rank"] = {
 				0.08, 0.16, 0.25,
@@ -1466,6 +1741,14 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.15,
 			["aura"] = 24425,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Dreams of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 473476,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Zandalar,
 		},
 		-- Buff: Heart of the Lion
 		{
@@ -1498,6 +1781,14 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.15,
 			["aura"] = 24425,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Dreams of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 473476,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Zandalar,
 		},
 		-- Buff: Heart of the Lion
 		{
@@ -1526,17 +1817,38 @@ StatLogic.StatModTable["ALL"] = {
 			["aura"] = 25898,
 			["group"] = addon.ExclusiveGroup.AllStats,
 		},
-		-- Buff: Spirit of Zandalar
-		{
-			["value"] = 0.15,
-			["aura"] = 24425,
-		},
 		-- Buff: Heart of the Lion
 		{
 			["value"] = 0.1,
 			["aura"] = 409583,
 			["group"] = addon.ExclusiveGroup.AllStats,
 			["rune"] = true,
+		},
+		-- Buff: Spirit of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 24425,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Dreams of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 473476,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Mol'dar's Moxie
+		{
+			["value"] = 0.15,
+			["aura"] = 22818,
+			["group"] = addon.ExclusiveGroup.Moxie,
+		},
+		-- Buff: Blessing of Neptulon
+		{
+			["value"] = 0.15,
+			["aura"] = 473403,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Moxie,
 		},
 		-- Buff: Fervor of the Temple Explorer
 		{
@@ -1562,6 +1874,14 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.15,
 			["aura"] = 24425,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Dreams of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 473476,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Zandalar,
 		},
 		-- Buff: Heart of the Lion
 		{
@@ -1594,6 +1914,14 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["value"] = 0.15,
 			["aura"] = 24425,
+			["group"] = addon.ExclusiveGroup.Zandalar,
+		},
+		-- Buff: Dreams of Zandalar
+		{
+			["value"] = 0.15,
+			["aura"] = 473476,
+			["rune"] = true,
+			["group"] = addon.ExclusiveGroup.Zandalar,
 		},
 		-- Buff: Heart of the Lion
 		{
@@ -1617,7 +1945,19 @@ StatLogic.StatModTable["ALL"] = {
 			["rune"] = true,
 		},
 	},
-	["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_GENERIC_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 		-- Green Dragon Mail
 		{
 			["set"] = 490,
@@ -1630,13 +1970,18 @@ StatLogic.StatModTable["ALL"] = {
 			["pieces"] = 3,
 			["value"] = 0.15,
 		},
+		-- Aura of the Blue Dragon
+		{
+			["aura"] = 23684,
+			["value"] = 1.00,
+		},
 	},
 	[StatLogic.Stats.WeaponSkill] = {
 		-- Rune: Sword Specialization
 		{
 			["rune"] = 51232,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Sword1H] = true,
 				[Enum.ItemWeaponSubclass.Sword2H] = true,
 			},
@@ -1646,7 +1991,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51233,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Axe1H] = true,
 				[Enum.ItemWeaponSubclass.Axe2H] = true,
 			},
@@ -1656,7 +2001,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51234,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Mace1H] = true,
 				[Enum.ItemWeaponSubclass.Mace2H] = true,
 			},
@@ -1666,7 +2011,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51235,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Dagger] = true,
 			},
 			["group"] = addon.ExclusiveGroup.WeaponRacial,
@@ -1675,7 +2020,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51236,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Unarmed] = true,
 			},
 			["group"] = addon.ExclusiveGroup.WeaponRacial,
@@ -1684,7 +2029,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51237,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Bows] = true,
 				[Enum.ItemWeaponSubclass.Guns] = true,
 				[Enum.ItemWeaponSubclass.Crossbow] = true,
@@ -1696,7 +2041,7 @@ StatLogic.StatModTable["ALL"] = {
 		{
 			["rune"] = 51238,
 			["value"] = 5,
-			["weapon"] = {
+			["weaponSubclass"] = {
 				[Enum.ItemWeaponSubclass.Staff] = true,
 				[Enum.ItemWeaponSubclass.Polearm] = true,
 			},

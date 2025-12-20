@@ -26,7 +26,7 @@ step << Priest !NightElf
     .goto StormwindClassic,20.8,50.2
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nara Meideros|r
     .target Nara Meideros
-    .accept 78194 >> Accept Secrets of Elune
+    .accept 78195 >> Accept Secrets of Elune
 step << Human Paladin
     #optional
     .goto StormwindClassic,39.80,29.77
@@ -82,7 +82,7 @@ step << Priest !NightElf
     .goto StormwindClassic,20.8,50.2
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nara Meideros|r
     .target Nara Meideros
-    .train >> Train your class spells
+    .trainer >> Train your class spells
 step << Warlock
     #completewith next
     .goto StormwindClassic,29.2,74.0,20,0
@@ -915,9 +915,14 @@ step << Rogue
     .accept 2360 >> Accept Mathias and the Defias
     .goto StormwindClassic,75.78,59.84
     .target Master Mathias Shaw
-step
+step << !Rogue
+.dungeon DM
+    .goto Redridge Mountains,30.590,59.410
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ariena Stormfeather|r
+    .fly Westfall >> Fly to Westfall
+    .target Ariena Stormfeather
+step << Rogue
 #completewith next
-.dungeon DM << !Rogue
     .goto StormwindClassic,66.277,62.137
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dungar Longdrink|r
     .fly Westfall >> Fly to Westfall
@@ -1433,6 +1438,8 @@ step
     .goto Dun Morogh,53.48,37.50,30,0
     .goto Dun Morogh,54.04,38.60,30,0
     .goto Dun Morogh,59.43,42.85,150 >> Travel to the skip spot. Hug the left side of the mountain en route
+    .subzoneskip 150 -- Skips if already in menethil
+    .subzoneskip 2104 -- Skips if already in menethil inn
 step
     .goto Dun Morogh,60.18,43.01,12,0
     .goto Dun Morogh,60.42,43.75,12,0
@@ -1459,6 +1466,8 @@ step
     .link https://youtu.be/QcEUvwu49KI?t=73 >> |cRXP_WARN_CLICK HERE for reference (it is HEAVILY advised you do so)|r
     .goto Dun Morogh,60.65,11.38,20 >>Carefully drop down the mountain side
     .isQuestAvailable 983
+    .subzoneskip 150 -- Skips if already in menethil
+    .subzoneskip 2104 -- Skips if already in menethil inn
 step
     .goto Dun Morogh,60.80,10.33,10,0
     .goto Dun Morogh,60.61,9.73,8,0
@@ -1480,4 +1489,6 @@ step
     .mob Bluegill Raider
     .unitscan Sludginn
     .isQuestAvailable 983
+    .subzoneskip 150 -- Skips if already in menethil
+    .subzoneskip 2104 -- Skips if already in menethil inn
 ]])

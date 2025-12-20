@@ -23,14 +23,19 @@ local lineInfo = LibFroznFunctions:CreatePushArray();
 local lineTargetedBy = LibFroznFunctions:CreatePushArray();
 
 -- String Constants
-local TT_LevelMatch = "^"..TOOLTIP_UNIT_LEVEL:gsub("%%[^s ]*s",".+"); -- Was changed to match other localizations properly, used to match: "^"..LEVEL.." .+" -- Doesn't actually match the level line on the russian client! [14.02.24] Doesn't match for Italian client either. [18.07.27] changed the pattern, might match non-english clients now
-local TT_LevelMatchPet = "^"..TOOLTIP_WILDBATTLEPET_LEVEL_CLASS:gsub("%%[^s ]*s",".+");	-- "^Pet Level .+ .+"
+local TT_LevelMatch = "^"..TOOLTIP_UNIT_LEVEL:gsub("%%[^s ]*s",".+"); -- "Level %s" -> "^Level .+" Was changed to match other localizations properly, used to match: "^"..LEVEL.." .+" -- Doesn't actually match the level line on the russian client! [14.02.24] Doesn't match for Italian client either. [18.07.27] changed the pattern, might match non-english clients now
+local TT_LevelMatchPet = "^"..TOOLTIP_WILDBATTLEPET_LEVEL_CLASS:gsub("%%[^s ]*s",".+");	-- "Pet Level %s %s" -> "^Pet Level .+ .+"
 local TT_Unknown = UNKNOWN; -- "Unknown"
 local TT_UnknownObject = UNKNOWNOBJECT; -- "Unknown"
 local TT_Targeting = BINDING_HEADER_TARGETING;	-- "Targeting"
 local TT_TargetedBy = LibFroznFunctions:GetGlobalString("TIPTAC_TARGETED_BY") or "Targeted by"; -- "Targeted by"
+local TT_PlayerMap = BRAWL_TOOLTIP_MAP; -- "Map"
+local TT_PlayerZone = FRIENDS_LIST_ZONE; -- "Zone: "
+local TT_PlayerSubzone = LibFroznFunctions:GetGlobalString("TIPTAC_SUBZONE") or "Subzone"; -- "Subzone"
 local TT_MythicPlusDungeonScore = CHALLENGE_COMPLETE_DUNGEON_SCORE; -- "Mythic+ Rating: %s"
 local TT_Mount = LibFroznFunctions:GetGlobalString("RENOWN_REWARD_MOUNT_NAME_FORMAT") or "Mount: %s"; -- "Mount: %s"
+local TT_PlayerGuildMemberNote = GUILD .. " " .. LABEL_NOTE; -- "Guild" "Note"
+local TT_PlayerGuildOfficerNote = GUILD .. " " .. OFFICER_NOTE_COLON; -- "Guild" "Officer's Note"
 local TT_ReactionIcon = {
 	[LFF_UNIT_REACTION_INDEX.hostile] = "unit_reaction_hostile",             -- Hostile
 	[LFF_UNIT_REACTION_INDEX.caution] = "unit_reaction_caution",             -- Unfriendly
@@ -65,18 +70,15 @@ local TT_COLOR = {
 		targetedBy = HIGHLIGHT_FONT_COLOR, -- white
 		guildRank = CreateColor(0.8, 0.8, 0.8, 1), -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
 		unitSpeed = CreateColor(0.8, 0.8, 0.8, 1), -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
+		mythicPlusPercentMaxCountEnemyForces = LIGHTYELLOW_FONT_COLOR,
 		mountName = HIGHLIGHT_FONT_COLOR, -- white
 		mountSpeed = LIGHTYELLOW_FONT_COLOR,
+		mountSource = LIGHTYELLOW_FONT_COLOR,
+		mountLore = LIGHTYELLOW_FONT_COLOR,
 		tipTacDeveloper = RED_FONT_COLOR,
 		tipTacDeveloperTipTac = EPIC_PURPLE_COLOR
 	}
 };
-
-local TT_COLOR_TEXT = HIGHLIGHT_FONT_COLOR; -- white
-local TT_COLOR_TEXT_TARGETING = CreateColor(0.8, 0.8, 0.8, 1); -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
-local TT_COLOR_TEXT_TARGETED_BY = CreateColor(0.8, 0.8, 0.8, 1); -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
-local TT_COLOR_TEXT_GUILD_RANK = CreateColor(0.8, 0.8, 0.8, 1); -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
-local TT_COLOR_TEXT_UNIT_SPEED = CreateColor(0.8, 0.8, 0.8, 1); -- light+ grey (QUEST_OBJECTIVE_FONT_COLOR)
 
 --------------------------------------------------------------------------------------------------------
 --                                         Style Unit Tooltip                                         --
@@ -121,45 +123,47 @@ local TT_COLOR_TEXT_UNIT_SPEED = CreateColor(0.8, 0.8, 0.8, 1); -- light+ grey (
 --
 -- GameTooltip lines of pet (determined via: not UnitIsPlayer(unitID) and UnitPlayerControlled(unitID)):
 --
--- content                                                                     color                                                                    example
--- --------------------------------------------------------------------------  -----------------------------------------------------------------------  ------------------------------------------
---  1. <name>                                                                  white (HIGHLIGHT_FONT_COLOR), color based on reaction if PvP is enabled  "Grimkresh" or "Wildwichtel"
--- [2. <reaction, only colorblind mode>]                                       white (HIGHLIGHT_FONT_COLOR)                                             "Freundlich"
---  3. <"Diener von" or "Wächter von"> <name of controlling player>[-<realm>]  white (HIGHLIGHT_FONT_COLOR)                                             "Diener von Eliyanna-Alleria" or "Wächter von Nijra-Alleria"
---  4. <level>                                                                 white (HIGHLIGHT_FONT_COLOR)                                             "Stufe 69"
--- [5. PvP]                                                                    white (HIGHLIGHT_FONT_COLOR)
+-- content                                                                                        color                                                                    example
+-- ---------------------------------------------------------------------------------------------  -----------------------------------------------------------------------  ------------------------------------------
+--  1. <name>                                                                                     white (HIGHLIGHT_FONT_COLOR), color based on reaction if PvP is enabled  "Grimkresh" or "Wildwichtel"
+-- [2. <reaction, only colorblind mode>]                                                          white (HIGHLIGHT_FONT_COLOR)                                             "Freundlich"
+--  3. <"Diener von" or "Wächter von" or "Begleiter von"> <name of controlling player>[-<realm>]  white (HIGHLIGHT_FONT_COLOR)                                             "Diener von Eliyanna-Alleria" or "Wächter von Nijra-Alleria"
+--  4. <level>                                                                                    white (HIGHLIGHT_FONT_COLOR)                                             "Stufe 69"
+-- [5. PvP]                                                                                       white (HIGHLIGHT_FONT_COLOR)
 --
 -- GameTooltip lines of battle pet (determined via: UnitIsBattlePetCompanion(unitID)):
 --
--- content                                                                     color                         example
--- --------------------------------------------------------------------------  ----------------------------  ------------------------------------------
---  1. <name>                                                                  color based on quality        "Schössling von Teldrassil"
--- [2. <reaction, only colorblind mode>]                                       white (HIGHLIGHT_FONT_COLOR)  "Freundlich"
---  3. Gefährte von <name of controlling player>[-<realm>]                     white (HIGHLIGHT_FONT_COLOR)  "Gefährte von Camassea"
---  4. <level>, <type>                                                         white (HIGHLIGHT_FONT_COLOR)  "Haustierstufe 1, Elementar"
+-- content                                                  color                         example
+-- -------------------------------------------------------  ----------------------------  ------------------------------------------
+--  1. <name>                                               color based on quality        "Schössling von Teldrassil"
+-- [2. <reaction, only colorblind mode>]                    white (HIGHLIGHT_FONT_COLOR)  "Freundlich"
+--  3. Gefährte von <name of controlling player>[-<realm>]  white (HIGHLIGHT_FONT_COLOR)  "Gefährte von Camassea"
+--  4. <level>, <type>                                      white (HIGHLIGHT_FONT_COLOR)  "Haustierstufe 1, Elementar"
 --
 -- GameTooltip lines of wild/tameable battle pet (determined via: UnitIsWildBattlePet(unitID)):
 --
--- content                                                                     color                         example
--- --------------------------------------------------------------------------  ----------------------------  ------------------------------------------
---  1. <name>                                                                  color based on reaction       "Kaninchen"
--- [2. <reaction, only colorblind mode>]                                       white (HIGHLIGHT_FONT_COLOR)  "Neutral"
---  3. <level>, <type>                                                         white (HIGHLIGHT_FONT_COLOR)  "Haustierstufe 1, Kleintier"
+-- content                                color                         example
+-- -------------------------------------  ----------------------------  ------------------------------------------
+--  1. <name>                             color based on reaction       "Kaninchen"
+-- [2. <reaction, only colorblind mode>]  white (HIGHLIGHT_FONT_COLOR)  "Neutral"
+--  3. <level>, <type>                    white (HIGHLIGHT_FONT_COLOR)  "Haustierstufe 1, Kleintier"
 --
 
 -- remove unwanted lines from tip, such as "Alliance", "Horde", "PvP" and "Shadow Priest".
 function ttStyle:RemoveUnwantedLinesFromTip(tip, unitRecord)
-	local creatureFamily, creatureType = UnitCreatureFamily(unitRecord.id), UnitCreatureType(unitRecord.id);
+	local creatureFamily = UnitCreatureFamily(unitRecord.id);
+	local creatureType = UnitCreatureType(unitRecord.id);
 	
 	local hideCreatureTypeIfNoCreatureFamily = ((not unitRecord.isPlayer) or (unitRecord.isWildBattlePet)) and (not creatureFamily) and (creatureType);
-	local hideSpecializationAndClassText = (cfg.hideSpecializationAndClassText) and (unitRecord.isPlayer) and (LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip);
+	local hideSpecializationAndClassText = (cfg.hideSpecializationAndClassText) and (unitRecord.isPlayer) and (LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip) and (unitRecord.className);
+	local hideRightClickForFrameSettingsTextInUnitTip = (cfg.hideRightClickForFrameSettingsTextInUnitTip) and (LibFroznFunctions.hasWoWFlavor.rightClickForFrameSettingsTextInUnitTip) and (UNIT_POPUP_RIGHT_CLICK);
 	
 	local specNames = LibFroznFunctions:CreatePushArray();
 	
 	if (hideSpecializationAndClassText) then
-		local numSpecs = GetNumSpecializationsForClassID(unitRecord.classID);
+		local specCount = C_SpecializationInfo.GetNumSpecializationsForClassID(unitRecord.classID);
 		
-		for i = 1, numSpecs do
+		for i = 1, specCount do
 			local specID, specName = GetSpecializationInfoForClassID(unitRecord.classID, i, unitRecord.sex);
 			
 			specNames:Push(specName);
@@ -170,13 +174,21 @@ function ttStyle:RemoveUnwantedLinesFromTip(tip, unitRecord)
 		local gttLine = _G["GameTooltipTextLeft" .. i];
 		local gttLineText = gttLine:GetText();
 		
-		if (type(gttLineText) == "string") and
-				(((gttLineText == FACTION_ALLIANCE) or (gttLineText == FACTION_HORDE) or (gttLineText == FACTION_NEUTRAL)) or
-				(cfg.hidePvpText) and (gttLineText == PVP_ENABLED) or
-				(hideCreatureTypeIfNoCreatureFamily) and (gttLineText == creatureType) or
-				(hideSpecializationAndClassText) and ((gttLineText == unitRecord.className) or (specNames:Contains(gttLineText:match("^(.+) " .. unitRecord.className .. "$"))))) then
+		if (type(gttLineText) == "string") then
+			local isGttLineTextUnitPopupRightClick = (hideRightClickForFrameSettingsTextInUnitTip) and (gttLineText == UNIT_POPUP_RIGHT_CLICK);
 			
-			gttLine:SetText(nil);
+			if (isGttLineTextUnitPopupRightClick) or
+					((gttLineText == FACTION_ALLIANCE) or (gttLineText == FACTION_HORDE) or (gttLineText == FACTION_NEUTRAL)) or
+					(cfg.hidePvpText) and (gttLineText == PVP_ENABLED) or
+					(hideCreatureTypeIfNoCreatureFamily) and (gttLineText == creatureType) or
+					(hideSpecializationAndClassText) and ((gttLineText == unitRecord.className) or (specNames:Contains(gttLineText:match("^(.+) " .. unitRecord.className .. "$")))) then
+				
+				gttLine:SetText(nil);
+				
+				if (isGttLineTextUnitPopupRightClick) and (i > 1) then
+					_G["GameTooltipTextLeft" .. (i - 1)]:SetText(nil);
+				end
+			end
 		end
 	end
 end
@@ -332,9 +344,9 @@ function ttStyle:HighlightTipTacDeveloper(tip, currentDisplayParams, unitRecord,
 	end
 	
 	-- add text to level
-	-- local tipTacDeveloperText = (CreateAtlasMarkup("UI-QuestPoiLegendary-QuestBang") .. " " .. TT_TipTacDeveloper .. " " .. CreateAtlasMarkup("UI-QuestPoiLegendary-QuestBang")); -- available in DF, but not available in WotLKC
-	local tipScale = tip:GetScale();
-	local tipTacDeveloperText = (CreateTextureMarkup("Interface\\AddOns\\" .. MOD_NAME .. "\\media\\QuestLegendaryMapIcons", 32, 32, 0, 0, 0.261719, 0.386719, 0.0078125, 0.257812, -2.5 * tipScale, 1.5 * tipScale) .. " " .. TT_TipTacDeveloper .. " " .. CreateTextureMarkup("Interface\\AddOns\\" .. MOD_NAME .. "\\media\\QuestLegendaryMapIcons", 32, 32, 0, 0, 0.261719, 0.386719, 0.0078125, 0.257812, -1 * tipScale, 1.5 * tipScale));
+	-- local tipTacDeveloperIcon = CreateAtlasMarkup("UI-QuestPoiLegendary-QuestBang"); -- available in DF, but not available in WotLKC
+	local tipTacDeveloperIcon = CreateTextureMarkup("Interface\\AddOns\\" .. MOD_NAME .. "\\media\\QuestLegendaryMapIcons", 256, 128, nil, nil, 0.26953125, 0.37890625, 0.0390625, 0.2421875);
+	local tipTacDeveloperText = (tipTacDeveloperIcon .. " " .. TT_TipTacDeveloper .. " " .. tipTacDeveloperIcon);
 	local modNameText = TT_COLOR.text.tipTacDeveloperTipTac:WrapTextInColorCode(MOD_NAME);
 	
 	lineLevel:Push(TT_COLOR.text.tipTacDeveloper:WrapTextInColorCode(tipTacDeveloperText:format(modNameText)));
@@ -352,24 +364,21 @@ function ttStyle:GeneratePlayerLines(tip, currentDisplayParams, unitRecord, firs
 		end
 	end
 	-- race
-	local race = UnitRace(unitRecord.id);
-	if (not race) then
-		race = TT_Unknown;
-	end
+	local race = UnitRace(unitRecord.id) or TT_Unknown;
 	lineLevel:Push(" ");
 	lineLevel:Push(CreateColor(unpack(cfg.colorRace)):WrapTextInColorCode(race));
 	-- class
 	local classColor = LibFroznFunctions:GetClassColor(unitRecord.classID, 5, cfg.enableCustomClassColors and TT_ExtendedConfig.customClassColors or nil);
 	lineLevel:Push(" ");
-	lineLevel:Push(classColor:WrapTextInColorCode(unitRecord.className));
+	lineLevel:Push(classColor:WrapTextInColorCode(unitRecord.className or TT_Unknown));
 	-- name
 	local nameColor = (cfg.colorNameByClass and classColor) or unitRecord.nameColor;
 	local name = (cfg.nameType == "marysueprot" and unitRecord.rpName) or (cfg.nameType == "original" and unitRecord.originalName) or (cfg.nameType == "title" and unitRecord.nameWithTitle) or unitRecord.name;
-	if (unitRecord.serverName) and (unitRecord.serverName ~= "") and (cfg.showRealm ~= "none") then
+	if (unitRecord.normalizedForeignRealmName) and (cfg.showRealm ~= "none") then
 		if (cfg.showRealm == "show") then
-			name = name .. " - " .. unitRecord.serverName;
+			name = name .. " - " .. unitRecord.normalizedForeignRealmName;
 		elseif (cfg.showRealm == "showInNewLine") then
-			lineRealm:Push(nameColor:WrapTextInColorCode(unitRecord.serverName));
+			lineRealm:Push(nameColor:WrapTextInColorCode(unitRecord.normalizedForeignRealmName));
 		else
 			name = name .. " (*)";
 		end
@@ -382,22 +391,83 @@ function ttStyle:GeneratePlayerLines(tip, currentDisplayParams, unitRecord, firs
 			lineName:Push(HIGHLIGHT_FONT_COLOR:WrapTextInColorCode(status));
 		end
 	end
+	-- map, zone and subzone
+	if (cfg.showPlayerLocation ~= "none") then
+		-- determine map, zone and subzone text
+		local mapText, zoneText, subzoneText;
+		
+		if (unitRecord.map) and (LibFroznFunctions:ExistsInTable(cfg.showPlayerLocation, { "mapAndZoneAndSubzone", "mapAndZone", "map" })) then
+			mapText = unitRecord.map;
+		end
+		
+		if (not unitRecord.isSelf) and (cfg.showPlayerLocationOnlyForeignMap) then
+			local playerUnitRecord = LibFroznFunctions:GetUnitRecordFromCache("player");
+			
+			if (playerUnitRecord) and (mapText == playerUnitRecord.map) then
+				mapText = nil;
+			end
+		end
+		
+		if (unitRecord.zone) and (LibFroznFunctions:ExistsInTable(cfg.showPlayerLocation, { "mapAndZoneAndSubzone", "mapAndZone", "zoneAndSubzone", "zone" })) then
+			zoneText = unitRecord.zone;
+			
+			if (unitRecord.subzone) and (LibFroznFunctions:ExistsInTable(cfg.showPlayerLocation, { "mapAndZoneAndSubzone", "zoneAndSubzone" })) then
+				subzoneText = unitRecord.subzone;
+			end
+		end
+		
+		-- add map, zone and subzone text
+		if (mapText) and (mapText ~= zoneText) then
+			if (lineInfo:GetCount() > 0) then
+				lineInfo:Push("\n");
+			end
+			
+			lineInfo:Push("|cffffd100");
+			lineInfo:Push(TT_PlayerMap .. ": " .. TT_COLOR.text.default:WrapTextInColorCode(mapText));
+		end
+		
+		if (zoneText) then
+			if (lineInfo:GetCount() > 0) then
+				lineInfo:Push("\n");
+			end
+			
+			lineInfo:Push("|cffffd100");
+			lineInfo:Push(TT_PlayerZone .. TT_COLOR.text.default:WrapTextInColorCode(zoneText));
+			
+			if (subzoneText) then
+				lineInfo:Push("\n");
+				lineInfo:Push(TT_PlayerSubzone .. ": " .. TT_COLOR.text.default:WrapTextInColorCode(subzoneText));
+			end
+		end
+	end
 	-- guild
-	-- local guild, guildRank = GetGuildInfo(unitRecord.id);
-	local guildName, guildRankName, guildRankIndex, realm = GetGuildInfo(unitRecord.id);
+	local guildName, guildRankName, guildRankIndex, guildRealm = GetGuildInfo(unitRecord.id);
 	if (guildName) then
+		local playerGuildName, playerGuildRankName, playerGuildRankIndex, playerGuildRealm = GetGuildInfo("player");
+		local isPlayerGuild = (guildName == playerGuildName) and (guildRealm == playerGuildRealm);
 		if (cfg.showGuild) then -- show guild
-			local playerGuildName = GetGuildInfo("player");
-			local guildColor = (guildName == playerGuildName and CreateColor(unpack(cfg.colorSameGuild)) or cfg.colorGuildByReaction and unitRecord.reactionColor or CreateColor(unpack(cfg.colorGuild)));
-			local text = guildColor:WrapTextInColorCode(format("<%s>", guildName));
+			local textGuildRealm = "";
+			if (guildRealm) and (cfg.showGuildRealm ~= "none") then
+				if (cfg.showGuildRealm == "show") then
+					textGuildRealm = " - " .. guildRealm;
+				elseif (cfg.showGuildRealm == "asterisk") then
+					textGuildRealm = " (*)";
+				end
+			end
+			local guildColor = (isPlayerGuild and CreateColor(unpack(cfg.colorSameGuild)) or cfg.colorGuildByReaction and unitRecord.reactionColor or CreateColor(unpack(cfg.colorGuild)));
+			local text = guildColor:WrapTextInColorCode(format("<%s>", guildName .. textGuildRealm));
+			
 			if (cfg.showGuildRank and guildRankName) then
 				if (cfg.guildRankFormat == "title") then
-					text = text .. TT_COLOR.text.guildRank:WrapTextInColorCode(format(" %s", guildRankName));
+					text = text .. " " .. TT_COLOR.text.guildRank:WrapTextInColorCode(format("%s", guildRankName));
 				elseif (cfg.guildRankFormat == "both") then
-					text = text .. TT_COLOR.text.guildRank:WrapTextInColorCode(format(" %s (%s)", guildRankName, guildRankIndex));
+					text = text .. " " .. TT_COLOR.text.guildRank:WrapTextInColorCode(format("%s (%s)", guildRankName, guildRankIndex));
 				elseif (cfg.guildRankFormat == "level") then
-					text = text .. TT_COLOR.text.guildRank:WrapTextInColorCode(format(" %s", guildRankIndex));
+					text = text .. " " .. TT_COLOR.text.guildRank:WrapTextInColorCode(format("%s", guildRankIndex));
 				end
+			end
+			if (guildRealm) and (cfg.showGuildRealm == "showInNewLine") then
+				text = text .. "\n" .. guildColor:WrapTextInColorCode(guildRealm);
 			end
 			currentDisplayParams.mergeLevelLineWithGuildName = false;
 			if (not LibFroznFunctions.hasWoWFlavor.guildNameInPlayerUnitTip) then -- no separate line for guild name. merge with reaction (only color blind mode) or level line.
@@ -417,6 +487,32 @@ function ttStyle:GeneratePlayerLines(tip, currentDisplayParams, unitRecord, firs
 				lineLevel.Index = (lineLevel.Index + 1);
 			end
 		end
+		-- show member/officer note for player guild
+		if (isPlayerGuild) and ((cfg.showGuildMemberNote) or (cfg.showGuildOfficerNote)) then
+			local playerGuildClubMemberInfo = LibFroznFunctions:GetPlayerGuildClubMemberInfo(unitRecord.guid);
+			
+			if (playerGuildClubMemberInfo) then
+				if (cfg.showGuildMemberNote) and (playerGuildClubMemberInfo.memberNote) then
+					if (lineInfo:GetCount() > 0) then
+						lineInfo:Push("\n");
+					end
+					lineInfo:Push("|cffffd100");
+					lineInfo:Push(TT_PlayerGuildMemberNote);
+					lineInfo:Push(": ");
+					lineInfo:Push(TT_COLOR.text.default:WrapTextInColorCode(playerGuildClubMemberInfo.memberNote));
+				end
+				
+				if (cfg.showGuildOfficerNote) and (playerGuildClubMemberInfo.officerNote) then
+					if (lineInfo:GetCount() > 0) then
+						lineInfo:Push("\n");
+					end
+					lineInfo:Push("|cffffd100");
+					lineInfo:Push(TT_PlayerGuildOfficerNote);
+					lineInfo:Push(": ");
+					lineInfo:Push(TT_COLOR.text.default:WrapTextInColorCode(playerGuildClubMemberInfo.officerNote));
+				end
+			end
+		end
 	end
 end
 
@@ -428,26 +524,17 @@ function ttStyle:GeneratePetLines(tip, currentDisplayParams, unitRecord, first)
 	lineLevel:Push(CreateColor(unpack(cfg.colorRace)):WrapTextInColorCode(_G["BATTLE_PET_NAME_"..petType] or TT_Unknown));
 
 	if (unitRecord.isWildBattlePet) then
-		local race = UnitCreatureFamily(unitRecord.id) or UnitCreatureType(unitRecord.id);
-		if (not race) then
-			race = TT_Unknown;
-		end
+		local race = UnitCreatureFamily(unitRecord.id) or UnitCreatureType(unitRecord.id) or TT_Unknown;
 		lineLevel:Push(" ");
 		lineLevel:Push(CreateColor(unpack(cfg.colorRace)):WrapTextInColorCode(race));
-	else
-		if (not currentDisplayParams.petLineLevelIndex) then
-			for i = 2, GameTooltip:NumLines() do
-				local gttLineText = _G["GameTooltipTextLeft"..i]:GetText();
-				if (type(gttLineText) == "string") and (gttLineText:find(TT_LevelMatchPet)) then
-					currentDisplayParams.petLineLevelIndex = i;
-					break;
-				end
+	else -- unitRecord.isBattlePetCompanion
+		if (unitRecord.petOrBattlePetOrNPCTitle) and (unitRecord.petOrBattlePetOrNPCTitle ~= " ") then -- since WoD, npc title can be a single space character
+			lineLevel.Index = currentDisplayParams.petLineLevelIndex or 3;
+			local expectedLine = 2 + (unitRecord.isColorBlind and 1 or 0);
+			if (lineLevel.Index > expectedLine) then
+				local gttLine = unitRecord.isColorBlind and GameTooltipTextLeft3 or GameTooltipTextLeft2;
+				gttLine:SetText(unitRecord.nameColor:WrapTextInColorCode(format("<%s>",unitRecord.petOrBattlePetOrNPCTitle)));
 			end
-		end
-		lineLevel.Index = currentDisplayParams.petLineLevelIndex or 2;
-		local expectedLine = 3 + (unitRecord.isColorBlind and 1 or 0);
-		if (lineLevel.Index > expectedLine) then
-			GameTooltipTextLeft2:SetText(unitRecord.nameColor:WrapTextInColorCode(format("<%s>",unitRecord.petOrBattlePetOrNPCTitle)));
 		end
 	end
 end
@@ -457,8 +544,8 @@ function ttStyle:GenerateNpcLines(tip, currentDisplayParams, unitRecord, first)
 	-- name
 	lineName:Push(unitRecord.nameColor:WrapTextInColorCode(unitRecord.name));
 
-	-- guild/title -- since WoD, npc title can be a single space character
-	if (unitRecord.petOrBattlePetOrNPCTitle) and (unitRecord.petOrBattlePetOrNPCTitle ~= " ") then
+	-- guild/title
+	if (unitRecord.petOrBattlePetOrNPCTitle) and (unitRecord.petOrBattlePetOrNPCTitle ~= " ") then -- since WoD, npc title can be a single space character
 		-- Az: this doesn't work with "Mini Diablo" or "Mini Thor", which has the format: 1) Mini Diablo 2) Lord of Terror 3) Player's Pet 4) Level 1 Non-combat Pet
 		local gttLine = unitRecord.isColorBlind and GameTooltipTextLeft3 or GameTooltipTextLeft2;
 		gttLine:SetText(unitRecord.nameColor:WrapTextInColorCode(format("<%s>",unitRecord.petOrBattlePetOrNPCTitle)));
@@ -466,15 +553,23 @@ function ttStyle:GenerateNpcLines(tip, currentDisplayParams, unitRecord, first)
 	end
 
 	-- race
-	local race = UnitCreatureFamily(unitRecord.id) or UnitCreatureType(unitRecord.id);
-	if (not race) then
-		race = TT_Unknown;
-	end
+	local creatureFamily = UnitCreatureFamily(unitRecord.id);
+	local creatureType = UnitCreatureType(unitRecord.id);
+	local race = creatureFamily or creatureType or TT_Unknown;
 	lineLevel:Push(" ");
 	lineLevel:Push(CreateColor(unpack(cfg.colorRace)):WrapTextInColorCode(race));
+	
+	-- creature type
+	if (unitRecord.isPet) and (creatureFamily) and (creatureType) then
+		lineLevel:Push("\n");
+		lineLevel:Push(HIGHLIGHT_FONT_COLOR:WrapTextInColorCode(creatureType));
+	end
 end
 
 -- Modify Tooltip Lines (name + info)
+local mapChallengeModeIDToDungeonIndexLookup = {};
+local npcIDToEnemyIdxLookup = {};
+
 function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 	-- obtain unit properties
 	unitRecord.reactionColor = CreateColor(unpack(cfg["colorReactText" .. unitRecord.reactionIndex]));
@@ -527,19 +622,9 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 
 	-- Faction Text
 	if (unitRecord.isPlayer) and (cfg.factionText) then
-		local englishFaction, localizedFaction = UnitFactionGroup(unitRecord.id);
+		local englishFaction, localizedFaction = LibFroznFunctions:GetUnitFactionGroup(unitRecord.id);
 		
 		if (englishFaction) then
-			if (LibFroznFunctions:UnitIsMercenary(unitRecord.id)) then
-				if (englishFaction == "Horde") then
-					englishFaction = "Alliance";
-					localizedFaction = FACTION_ALLIANCE;
-				elseif (englishFaction == "Alliance") then
-					englishFaction = "Horde";
-					localizedFaction = FACTION_HORDE;
-				end
-			end
-			
 			local factionTextColor = (cfg.enableColorFaction and cfg["colorFaction" .. englishFaction] and CreateColor(unpack(cfg["colorFaction" .. englishFaction]))) or TT_COLOR.text.default;
 			
 			lineLevel:Push("\n");
@@ -561,23 +646,23 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 				end
 			end
 			
-			local mythicPlusText = LibFroznFunctions:CreatePushArray();
+			local mythicPlusDungeonScoreText = LibFroznFunctions:CreatePushArray();
 			if (cfg.mythicPlusDungeonScoreFormat == "highestSuccessfullRun") then
 				if (mythicPlusBestRunLevel) then
-					mythicPlusText:Push(TT_COLOR.text.default:WrapTextInColorCode("+" .. mythicPlusBestRunLevel));
+					mythicPlusDungeonScoreText:Push(TT_COLOR.text.default:WrapTextInColorCode("+" .. mythicPlusBestRunLevel));
 				end
 			else
 				if (mythicPlusDungeonScore > 0) then
 					local mythicPlusDungeonScoreColor = (C_ChallengeMode.GetDungeonScoreRarityColor(mythicPlusDungeonScore) or TT_COLOR.text.default);
-					mythicPlusText:Push(mythicPlusDungeonScoreColor:WrapTextInColorCode(mythicPlusDungeonScore));
+					mythicPlusDungeonScoreText:Push(mythicPlusDungeonScoreColor:WrapTextInColorCode(mythicPlusDungeonScore));
 				end
 			end
-			if (mythicPlusText:GetCount() > 0) then
+			if (mythicPlusDungeonScoreText:GetCount() > 0) then
 				if (lineInfo:GetCount() > 0) then
 					lineInfo:Push("\n");
 				end
 				lineInfo:Push("|cffffd100");
-				lineInfo:Push(TT_MythicPlusDungeonScore:format(mythicPlusText:Concat()));
+				lineInfo:Push(TT_MythicPlusDungeonScore:format(mythicPlusDungeonScoreText:Concat()));
 				
 				if (cfg.mythicPlusDungeonScoreFormat == "both") and (mythicPlusBestRunLevel) then
 					lineInfo:Push(" |cffffff99(+" .. mythicPlusBestRunLevel .. ")|r");
@@ -586,7 +671,88 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 		end
 	end
 
+	-- Mythic+ Forces from addon "Mythic Dungeon Tools" (MDT) for NPCs
+	if (MDT) and (unitRecord.isNPC) and (cfg.showMythicPlusForcesFromMDT) and (C_MythicPlus.IsMythicPlusActive()) and (UnitCanAttack("player", unitRecord.id)) then
+		local mapChallengeModeID = C_ChallengeMode.GetActiveChallengeMapID();
+		
+		if (mapChallengeModeID) then
+			local dungeonIndex = mapChallengeModeIDToDungeonIndexLookup[mapChallengeModeID];
+			
+			if (not dungeonIndex) and (type(MDT.mapInfo) == "table") then
+				for _dungeonIndex, mapInfo in pairs(MDT.mapInfo) do
+					if (mapInfo.mapID == mapChallengeModeID) then
+						dungeonIndex = _dungeonIndex;
+						mapChallengeModeIDToDungeonIndexLookup[mapChallengeModeID] = dungeonIndex;
+						break;
+					end
+				end
+			end
+			
+			if (dungeonIndex) and (type(MDT.dungeonEnemies) == "table") then
+				local dungeonEnemies = MDT.dungeonEnemies[dungeonIndex];
+				
+				if (dungeonEnemies) then
+					local enemyIdx = (npcIDToEnemyIdxLookup[mapChallengeModeID] and npcIDToEnemyIdxLookup[mapChallengeModeID][unitRecord.npcID]);
+					
+					if (not enemyIdx) then
+						for _enemyIdx, _dungeonEnemy in pairs(dungeonEnemies) do
+							if (_dungeonEnemy.id == unitRecord.npcID) then
+								enemyIdx = _enemyIdx;
+								
+								if (not npcIDToEnemyIdxLookup[mapChallengeModeID]) then
+									npcIDToEnemyIdxLookup[mapChallengeModeID] = {};
+								end
+								
+								npcIDToEnemyIdxLookup[mapChallengeModeID][unitRecord.npcID] = enemyIdx;
+								
+								break;
+							end
+						end
+					end
+					
+					if (enemyIdx) then
+						local dungeonEnemy = MDT.dungeonEnemies[dungeonIndex][enemyIdx];
+						
+						if (dungeonEnemy) then
+							local dungeonTotalCount = (type(MDT.dungeonTotalCount) == "table") and MDT.dungeonTotalCount[dungeonIndex];
+							local isTeeming = false;
+							local activeKeystoneLevel, activeAffixIDs, wasActiveKeystoneCharged = C_ChallengeMode.GetActiveKeystoneInfo();
+							
+							if (activeAffixIDs) then
+								for _, activeAffixID in ipairs(activeAffixIDs) do
+									if (activeAffixID == 5) then -- teeming
+										isTeeming = true;
+										break;
+									end
+								end
+							end
+							
+							local countEnemyForces = (isTeeming and dungeonEnemy.teemingCount or dungeonEnemy.count);
+							local maxCountEnemyForces = (dungeonTotalCount) and (isTeeming and dungeonTotalCount.teeming or dungeonTotalCount.normal);
+							
+							if (countEnemyForces) and (MDT.L) and (MDT.L["Forces"]) then
+								if (lineInfo:GetCount() > 0) then
+									lineInfo:Push("\n");
+								end
+								
+								lineInfo:Push("|cffffd100");
+								lineInfo:Push(MDT.L["Forces"] .. " (MDT): " .. TT_COLOR.text.default:WrapTextInColorCode(countEnemyForces));
+								
+								if (maxCountEnemyForces) and (maxCountEnemyForces > 0) then
+									lineInfo:Push(TT_COLOR.text.mythicPlusPercentMaxCountEnemyForces:WrapTextInColorCode(format(" (%.2f%%)", (countEnemyForces / maxCountEnemyForces) * 100)));
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
 	-- Mount
+	local lineMount = LibFroznFunctions:CreatePushArray();
+	local lineMountLore = LibFroznFunctions:CreatePushArray();
+	
 	if (unitRecord.isPlayer) and (cfg.showMount) then
 		local unitID, filter = unitRecord.id, LFF_AURA_FILTERS.Helpful;
 		local index = 0;
@@ -600,14 +766,19 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 				local mountID = LibFroznFunctions:GetMountFromSpell(spellID);
 				
 				if (mountID) then
+					-- determine if mount has already been collected
 					local mountText = LibFroznFunctions:CreatePushArray();
 					local spacer;
+					local mountIsCollected;
 					local mountNameAdded = false;
+					local mountSourceAdded = false;
+					
+					if (cfg.showMountCollected) or (cfg.showMountSourceIfNotCollected) then
+						mountIsCollected = LibFroznFunctions:IsMountCollected(mountID);
+					end
 					
 					if (cfg.showMountCollected) then
-						local isCollected = LibFroznFunctions:IsMountCollected(mountID);
-						
-						if (isCollected) then
+						if (mountIsCollected) then
 							-- mountText:Push(CreateAtlasMarkup("common-icon-checkmark")); -- available in DF, but not available in WotLKC
 							mountText:Push(CreateTextureMarkup("Interface\\AddOns\\" .. MOD_NAME .. "\\media\\CommonIcons", 64, 64, 0, 0, 0.000488281, 0.125488, 0.504883, 0.754883));
 						else
@@ -616,10 +787,12 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 						end
 					end
 					
+					-- determine mount icon
 					if (cfg.showMountIcon) and (unitAuraInfo.icon) then
 						mountText:Push(CreateTextureMarkup(unitAuraInfo.icon, 64, 64, 0, 0, 0.07, 0.93, 0.07, 0.93));
 					end
 					
+					-- determine mount name
 					if (cfg.showMountText) and (unitAuraInfo.name) then
 						spacer = (mountText:GetCount() > 0) and " " or "";
 						
@@ -628,6 +801,7 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 						mountNameAdded = true;
 					end
 					
+					-- determine mount speed
 					if (cfg.showMountSpeed) then
 						spacer = (mountText:GetCount() > 0) and " " or "";
 						
@@ -654,13 +828,66 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 						end
 					end
 					
-					-- show mount text
-					if (mountText:GetCount() > 0) then
-						if (lineInfo:GetCount() > 0) then
-							lineInfo:Push("\n");
+					-- determine mount source and lore
+					if (cfg.showMountSourceIfNotCollected) or (cfg.showMountSource) or (cfg.showMountLore) then
+						local _, description, source = C_MountJournal.GetMountInfoExtraByID(mountID);
+						
+						spacer = string.rep(" ", 4);
+						
+						if (cfg.showMountSourceIfNotCollected) and (not mountIsCollected) or (cfg.showMountSource) then
+							local cleanedSource = "";
+							
+							if (type(source) == "string") then
+								cleanedSource = strtrim(source);
+								
+								if (cleanedSource ~= "") then
+									cleanedSource = LibFroznFunctions:RemovePatternFromEndOfTextMultipleTimes(cleanedSource, "|n");
+									cleanedSource = LibFroznFunctions:RemoveColorsFromText(cleanedSource);
+								end
+							end
+							
+							if (cleanedSource ~= "") then
+								if (mountText:GetCount() > 0) then
+									mountText:Push("\n");
+								end
+								
+								mountText:Push(spacer .. TT_COLOR.text.mountSource:WrapTextInColorCode(cleanedSource:gsub("|n", "|n" .. spacer)));
+								
+								mountSourceAdded = true;
+							end
 						end
 						
-						lineInfo:Push(TT_Mount:format(mountText:Concat()));
+						if (cfg.showMountLore) then
+							local cleanedDescription = "";
+							
+							if (type(description) == "string") then
+								cleanedDescription = strtrim(description);
+								
+								if (cleanedDescription ~= "") then
+									cleanedDescription = LibFroznFunctions:RemovePatternFromEndOfTextMultipleTimes(cleanedDescription, "|n");
+									cleanedDescription = LibFroznFunctions:RemoveColorsFromText(cleanedDescription);
+								end
+							end
+							
+							if (cleanedDescription ~= "") then
+								local mountLoreText = TT_COLOR.text.mountLore:WrapTextInColorCode(cleanedDescription:gsub("|n", "|n" .. spacer));
+								
+								if (mountText:GetCount() > 0) then
+									if (mountSourceAdded) then
+										lineMountLore:Push("\n" .. spacer .. mountLoreText);
+									else
+										lineMountLore:Push(spacer .. mountLoreText);
+									end
+								else
+									lineMountLore:Push(TT_Mount:format(mountLoreText));
+								end
+							end
+						end
+					end
+					
+					-- set mount text
+					if (mountText:GetCount() > 0) then
+						lineMount:Push(TT_Mount:format(mountText:Concat()));
 					end
 					
 					return true;
@@ -729,6 +956,38 @@ function ttStyle:ModifyUnitTooltip(tip, currentDisplayParams, unitRecord, first)
 		_G["GameTooltipTextLeft" .. currentDisplayParams.tipLineInfoIndex]:SetText(nil);
 	end
 	
+	-- Mount Line
+	if (lineMount:GetCount() > 0) then
+		local tipLineMountText = lineMount:Concat();
+		
+		if (currentDisplayParams.tipLineMountIndex) then
+			_G["GameTooltipTextLeft" .. currentDisplayParams.tipLineMountIndex]:SetText(tipLineMountText);
+		else
+			GameTooltip:AddLine(tipLineMountText);
+			currentDisplayParams.tipLineMountIndex = GameTooltip:NumLines();
+		end
+		
+		lineMount:Clear();
+	elseif (currentDisplayParams.tipLineMountIndex) then
+		_G["GameTooltipTextLeft" .. currentDisplayParams.tipLineMountIndex]:SetText(nil);
+	end
+	
+	-- Mount Lore Line
+	if (lineMountLore:GetCount() > 0) then
+		local tipLineMountLoreText = lineMountLore:Concat();
+		
+		if (currentDisplayParams.tipLineMountLoreIndex) then
+			_G["GameTooltipTextLeft" .. currentDisplayParams.tipLineMountLoreIndex]:SetText(tipLineMountLoreText);
+		else
+			GameTooltip:AddLine(tipLineMountLoreText, nil, nil, nil, true);
+			currentDisplayParams.tipLineMountLoreIndex = GameTooltip:NumLines();
+		end
+		
+		lineMountLore:Clear();
+	elseif (currentDisplayParams.tipLineMountLoreIndex) then
+		_G["GameTooltipTextLeft" .. currentDisplayParams.tipLineMountLoreIndex]:SetText(nil);
+	end
+	
 	-- Targeted By Line
 	if (lineTargetedBy:GetCount() > 0) then
 		local tipLineTargetedByText = format(TT_TargetedBy .. " (" .. TT_COLOR.text.default:WrapTextInColorCode(format("%d", lineTargetedBy:GetCount())) .. "): %s", TT_COLOR.text.default:WrapTextInColorCode(lineTargetedBy:Concat(", ")));
@@ -759,6 +1018,8 @@ end
 function ttStyle:OnTipSetCurrentDisplayParams(TT_CacheForFrames, tip, currentDisplayParams, tipContent)
 	-- set current display params for unit appearance
 	currentDisplayParams.tipLineInfoIndex = nil;
+	currentDisplayParams.tipLineMountIndex = nil;
+	currentDisplayParams.tipLineMountLoreIndex = nil;
 	currentDisplayParams.tipLineTargetedByIndex = nil;
 	currentDisplayParams.petLineLevelIndex = nil;
 	currentDisplayParams.mergeLevelLineWithGuildName = nil;
@@ -776,16 +1037,47 @@ function ttStyle:OnUnitTipStyle(TT_CacheForFrames, tip, currentDisplayParams, fi
 	local unitRecord = currentDisplayParams.unitRecord;
 	
 	if (first) then
+		-- get unit tooltip data because current unit tip may already have been manipulated (e.g. by addon "ElvUI")
+		local unitTooltipData = LibFroznFunctions:GetTooltipInfo("GetUnit", unitRecord.id)
+		
+		unitRecord.isColorBlind = (GetCVar("colorblindMode") == "1");
+		unitRecord.originalName = (unitTooltipData) and (unitTooltipData.lines[1]) and (unitTooltipData.lines[1].leftText);
+		
 		-- find pet, battle pet or NPC title
 		if (unitRecord.isPet) or (unitRecord.isBattlePet) or (unitRecord.isNPC) then
-			unitRecord.petOrBattlePetOrNPCTitle = (unitRecord.isColorBlind and GameTooltipTextLeft3 or GameTooltipTextLeft2):GetText();
-			if (unitRecord.petOrBattlePetOrNPCTitle) and (unitRecord.petOrBattlePetOrNPCTitle:find(TT_LevelMatch)) then
+			unitRecord.petOrBattlePetOrNPCTitle = nil;
+			
+			if (unitTooltipData) then
+				if (unitRecord.isColorBlind) then
+					if (unitTooltipData.lines[3]) then
+						unitRecord.petOrBattlePetOrNPCTitle = unitTooltipData.lines[3].leftText;
+					end
+				else
+					if (unitTooltipData.lines[2]) then
+						unitRecord.petOrBattlePetOrNPCTitle = unitTooltipData.lines[2].leftText;
+					end
+				end
+			end
+			
+			if (type(unitRecord.petOrBattlePetOrNPCTitle) == "string") and (unitRecord.petOrBattlePetOrNPCTitle:find(TT_LevelMatch)) then
 				unitRecord.petOrBattlePetOrNPCTitle = nil;
 			end
 		end
+		
+		-- find battle pet companion level line
+		if (unitRecord.isBattlePetCompanion) then
+			for i = 2, min(#unitTooltipData.lines, 4) do
+				local gttLineText = unitTooltipData.lines[i].leftText;
+				if (type(gttLineText) == "string") and (gttLineText:find(TT_LevelMatchPet)) then
+					currentDisplayParams.petLineLevelIndex = i;
+					break;
+				end
+			end
+		end
+
 		-- remember reaction in color blind mode if there is no separate line for guild name
-		if (not LibFroznFunctions.hasWoWFlavor.guildNameInPlayerUnitTip) and (unitRecord.isColorBlind) then
-			unitRecord.reactionTextInColorBlindMode = GameTooltipTextLeft2:GetText();
+		if (not LibFroznFunctions.hasWoWFlavor.guildNameInPlayerUnitTip) and (unitRecord.isColorBlind) and (unitTooltipData) and (unitTooltipData.lines[2]) then
+			unitRecord.reactionTextInColorBlindMode = unitTooltipData.lines[2].leftText;
 		end
 	end
 
@@ -803,6 +1095,8 @@ function ttStyle:OnTipResetCurrentDisplayParams(TT_CacheForFrames, tip, currentD
 	
 	-- reset current display params for unit appearance
 	currentDisplayParams.tipLineInfoIndex = nil;
+	currentDisplayParams.tipLineMountIndex = nil;
+	currentDisplayParams.tipLineMountLoreIndex = nil;
 	currentDisplayParams.tipLineTargetedByIndex = nil;
 	currentDisplayParams.petLineLevelIndex = nil;
 	currentDisplayParams.mergeLevelLineWithGuildName = nil;

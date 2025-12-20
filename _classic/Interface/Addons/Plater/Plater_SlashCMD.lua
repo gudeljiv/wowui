@@ -141,10 +141,59 @@ function SlashCmdList.PLATER (msg, editbox)
 
 	elseif (msg == "npcs" or msg == "ids") then
 
+	elseif (msg == "editmode") then
+		--Plater.ToggleDesignerWindow() --not yet
+		return
 
-
-	elseif (msg == "add" or msg == "addnpc") then
-
+	--elseif (msg == "add" or msg == "addnpc") then
+	elseif (msg and (msg:find("^add") or msg:find("^addnpc"))) then
+		local idStr = msg:gsub("^addnpc ?", ""):gsub("^add ?", "")
+		local id = tonumber(idStr)
+		if id then
+			if Plater.db.profile.npc_cache[id] then
+				print("ID", id, "already added.")
+				return
+			end
+			-- get npc info and add, zone unknown
+			local function GetCreatureNameFromID(npcID)
+				if C_TooltipInfo then
+					local info = C_TooltipInfo.GetHyperlink(("unit:Creature-0-0-0-0-%d"):format(npcID))
+					local leftText = info and info.lines and info.lines[1] and info.lines[1].leftText
+					if leftText and leftText ~= _G.UNKNOWN then
+						return leftText
+					end
+				else
+					local tooltipFrame = GetCreatureNameFromIDFinderTooltip or CreateFrame ("GameTooltip", "GetCreatureNameFromIDFinderTooltip", nil, "GameTooltipTemplate")
+					tooltipFrame:SetOwner (WorldFrame, "ANCHOR_NONE")
+					tooltipFrame:SetHyperlink (("unit:Creature-0-0-0-0-%d"):format(npcID))
+					local npcNameLine = _G ["GetCreatureNameFromIDFinderTooltipTextLeft1"]
+					return npcNameLine and npcNameLine:GetText()
+				end
+			end
+			
+			local translator = {}
+			translator.retries = 0
+			local translate = function()
+				translator.retries = translator.retries + 1
+				if translator.retries > 10 then return end
+				local npcName = GetCreatureNameFromID(id)
+				if npcName then
+					print("Adding", id, "as", npcName)
+					Plater.db.profile.npc_cache[id] = {npcName, "UNKNOWN", Plater.Locale or "enUS"}
+				else
+					print("Adding:,", id, "try fetching name again...")
+					C_Timer.After(0.25, translator.translate)
+				end
+			end
+			translator.translate = function()
+				translate()
+			end
+			
+			translator.translate()
+			
+			return
+		end
+		
 		local plateFrame = C_NamePlate.GetNamePlateForUnit ("target")
 
 		if (plateFrame) then
@@ -241,6 +290,10 @@ function SlashCmdList.PLATER (msg, editbox)
 	elseif (msg and msg:find("^cvar[s]?")) then
 		Plater.DebugCVars(msg:gsub("^cvar[s]? ?", ""))
 		return
+	
+	elseif (msg and msg:find("^resetcvar[s]?")) then
+		Plater.ResetCVars(msg:gsub("^cvar[s]? ?", ""))
+		return
 
 	elseif msg ~= "" then
 		local usage = "Usage Info:"
@@ -253,7 +306,8 @@ function SlashCmdList.PLATER (msg, editbox)
 		usage = usage .. "\n|cffffaeae/plater|r |cffffff33colors|r: Opens the Plater color palette"
 		usage = usage .. "\n|cffffaeae/plater|r |cffffff33minimap|r: Toggle the Plater minimap icon"
 		usage = usage .. "\n|cffffaeae/plater|r |compartment|r: Toggle the Plater addon compartment icon"
-		usage = usage .. "\n|cffffaeae/plater|r |cffffff33cvar <cvar name>|r: Print information about a cvar value stored in the profile."
+		usage = usage .. "\n|cffffaeae/plater|r |cffffff33cvar <cvar name>|r: Print information about a cvar value stored in the profile"
+		usage = usage .. "\n|cffffaeae/plater|r |cffffff33resetcvar(s) <cvar name>|r: Resets the given or all relevant cvars to default value for this session"
 		usage = usage .. "\n|cffffaeaeVersion:|r |cffffff33" .. Plater.GetVersionInfo() .. "|r"
 		Plater:Msg(usage)
 		return

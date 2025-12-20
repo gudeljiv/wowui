@@ -1,19 +1,69 @@
 local _,addon = ...
-if addon.game ~= "CATA" or addon.player.faction ~= 'Alliance' then return end
+if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
 
 RXPGuides.RegisterGuide([[
 
 #version 1
-#group RXP Cataclysm 1-80 (A)
+#group RXP Cataclysm 1-80 (A) << cata
+#group RXP MoP 1-60 (A) << mop
 #cata
+#mop
 #name 10-20 Loch Modan
 #displayname 10-18 Loch Modan
 #next 15-20 Redridge
-#defaultfor Human/Dwarf/Gnome
+#defaultfor Human/Dwarf/Gnome/Pandaren
 
 <<Alliance
 
-
+step
+    #optional
+    .maxlevel 20,endOfTheGuide
+step << Pandaren
+    .goto 84,70.94,72.47
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dungar Longdrink|r
+    .fly Gol'Bolar Quarry >> Fly to Gol'Bolar Quarry
+	.target Dungar Longdrink
+    .zoneskip Dun Morogh
+    .zoneskip Loch Modan
+step << Pandaren
+    #optional
+    #completewith next
+    .goto 27,87.534,48.059,20,0
+    .goto 27,88.331,47.792,12,0
+    .goto 27,88.873,48.312,12,0
+    .goto 48,12.138,54.947,20,0
+    .goto 48,14.025,56.641,12 >> |cRXP_WARN_Travel up the mountain, then carefully drop down toward|r |cRXP_FRIENDLY_Pilot Hammerfoot|r
+    .noflyable
+step << Pandaren
+    .goto 48,14.006,56.485
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pilot Hammerfoot|r
+    .accept 26854 >>Accept The Lost Pilot
+    .target Pilot Hammerfoot
+step << Pandaren
+    #optional
+    #completewith next
+    .goto 48,12.639,58.419,20,0
+    .goto 27,89.543,51.716,20,0
+    >>Travel toward |cRXP_PICK_A Dwarven Corpse|r on the ground
+    .noflyable
+step << Pandaren
+    .goto 27,87.633,50.139
+    >>Click |cRXP_PICK_A Dwarven Corpse|r on the ground
+    >>|cRXP_WARN_This will make |cRXP_ENEMY_Mangeclaw|r start running towards you|r
+    .turnin 26854 >>Turn in The Lost Pilot
+    .accept 26855 >>Accept A Pilot's Revenge
+step << Pandaren
+    .goto 27,87.421,50.013,0
+    .goto 27,87.357,49.213
+    >>Kill |cRXP_ENEMY_Mangeclaw|r. Loot him for his |cRXP_LOOT_Mangy Claw|r
+    .complete 26855,1 --Mangy Claw (1)
+    .unitscan Mangeclaw
+step << Pandaren
+    .goto 48,14.006,56.485
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pilot Hammerfoot|r
+    .turnin 26855 >>Turn in A Pilot's Revenge
+    .accept 13635 >>Accept South Gate Status Report
+    .target Pilot Hammerfoot
 step
     #completewith next
     .goto 48,21.398,66.390,30,0
@@ -43,24 +93,12 @@ step << Warrior/Paladin
 step << Rogue/Shaman
     .goto 48,23.673,74.329
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thorvald Deepforge|r
-    >>|cRXP_BUY_Buy a|r |T135346:0|t[Cutlass] |cRXP_BUY_from him|r
-    .collect 851,1 -- Cutlass (1)
-    .money <0.1618
-    .itemStat 16,QUALITY,<7
-    .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<6.7
-    .target Thorvald Deepforge
-    .xp >11,1
-    .xp <10,1
-step << Rogue/Shaman
-    .goto 48,23.673,74.329
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thorvald Deepforge|r
     >>|cRXP_BUY_Buy a|r |T132402:0|t[Hatchet] |cRXP_BUY_from him|r
     .collect 853,1 -- Hatchet (1)
     .money <0.1927
     .itemStat 16,QUALITY,<7
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<7.1
     .target Thorvald Deepforge
-    .xp >12,1
     .xp <11,1
 step << Warrior/Paladin
     #optional
@@ -70,14 +108,6 @@ step << Warrior/Paladin
     .itemcount 1198,1
     .itemStat 16,QUALITY,<7
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<9.0
-step << Rogue/Shaman
-    #optional
-    #completewith end
-    +|cRXP_WARN_Equip the|r |T135346:0|t[Cutlass] |cRXP_WARN_in your mainhand|r
-    .use 851
-    .itemcount 851,1
-    .itemStat 16,QUALITY,<7
-    .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<6.7
 step << Rogue/Shaman
     #optional
     #completewith end
@@ -109,6 +139,7 @@ step
     .mob Stonesplinter Trogg
     .mob Stonesplinter Scout
 step
+#xprate <1.3
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r, |cRXP_FRIENDLY_Mountaineer Cobbleflint|r and |cRXP_FRIENDLY_Captain Wallbang|r
     .turnin 26146 >>Turn in In Defense of the King's Lands
     .accept 26148 >>Accept A Decisive Strike
@@ -121,6 +152,16 @@ step
     .target +Mountaineer Wallbang
     .goto 48,23.298,75.054
 step
+#xprate >1.299
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r, |cRXP_FRIENDLY_Mountaineer Cobbleflint|r and |cRXP_FRIENDLY_Captain Wallbang|r
+    .turnin 26146 >>Turn in In Defense of the King's Lands
+    .target +Captain Rugelfuss
+    .goto 48,23.359,74.990
+    .turnin 26145 >>Turn in The Trogg Threat
+    .target +Mountaineer Cobbleflint
+    .goto 48,23.332,74.927
+step
+#xprate <1.3
 #sticky
 #label troggcave1
 #loop
@@ -139,11 +180,13 @@ step
     .mob Stonesplinter Shaman
     .mob Stonesplinter Bonesnapper
 step
+#xprate <1.3
     >>Go to the very end of the cave and kill |cRXP_ENEMY_Grawmug|r
     .goto 48,34.289,61.146
     .complete 26148,1 --|1/1 Grawmug slain
     .mob Grawmug
 step
+#xprate <1.3
 #requires troggcave1
     .goto 48,23.321,75.013
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r and |cRXP_FRIENDLY_Captain Wallbang|r
@@ -163,9 +206,12 @@ step
     .goto 48,35.079,46.663
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Kadrell|r
     .target Mountaineer Kadrell
-    .turnin 26176 >>Turn in Onward to Thelsamar
+    .turnin -26176 >>Turn in Onward to Thelsamar
     .accept 26842 >>Accept Out of Gnoll-where
     .accept 13636 >>Accept Stormpike's Orders
+step
+    #optional
+    .maxlevel 20,endOfTheGuide
 step
     .goto 48,35.536,48.404
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Hearthstove|r
@@ -173,45 +219,45 @@ step
     .target Innkeeper Hearthstove
 step
     .goto 48,34.849,49.177
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vidra Hearthstove|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vidra Hearthstove|r
     .target Vidra Hearthstove
     .accept 26860 >>Accept Thelsamar Blood Sausages
-step << Paladin
+step << Paladin cata
     .goto 48,35.374,48.810
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faldoc Stonefaith|r
     .trainer >> Train your class spells
     .target Faldoc Stonefaith
-step << Rogue
+step << Rogue cata
     .goto 48,34.935,48.483
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Galda Bronzeblade|r
     .trainer >> Train your class spells
     .target Galda Bronzeblade
-step << Mage
+step << Mage cata
     .goto 48,35.012,48.445
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gindle the Green|r
     .trainer >> Train your class spells
     .target Gindle the Green
-step << Hunter
+step << Hunter cata
     .goto 48,34.553,48.117
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Belda Wildheart|r
     .trainer >> Train your class spells
-    .target Belda Wildheart    
-step << Warrior
+    .target Belda Wildheart
+step << Warrior cata
     .goto 48,33.951,46.768
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grendin Swiftaxe|r
     .trainer >> Train your class spells
     .target Grendin Swiftaxe
-step << Shaman
+step << Shaman cata
     .goto 48,36.596,48.341
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grenhild Darktalon|r
     .trainer >> Train your class spells
     .target Grenhild Darktalon
-step << Warlock
+step << Warlock cata
     .goto 48,35.879,46.199
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solbin Shadowcog|r
     .trainer >> Train your class spells
     .target Solbin Shadowcog
-step << Priest
+step << Priest cata
     .goto 48,36.108,45.893
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Baerla|r
     .trainer >> Train your class spells
@@ -222,7 +268,7 @@ step
     .accept 13648 >>Accept WANTED: The Dark Iron Spy
 step
     .goto 48,35.960,44.028
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dakk Blunderblast|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dakk Blunderblast|r
     .target Dakk Blunderblast
     .accept 25118 >>Accept Looking for Lurkers
 step
@@ -384,47 +430,50 @@ step
     .turnin 26860 >>Turn in Thelsamar Blood Sausages
     .target +Vidra Hearthstove
     .goto 48,34.827,49.285
-step << Paladin
+step
+    #optional
+    .maxlevel 20,endOfTheGuide
+step << Paladin cata
     .goto 48,35.374,48.810
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faldoc Stonefaith|r
     .trainer >> Train your class spells
     .target Faldoc Stonefaith
-step << Rogue
+step << Rogue cata
     .goto 48,34.935,48.483
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Galda Bronzeblade|r
     .trainer >> Train your class spells
     .target Galda Bronzeblade
-step << Mage
+step << Mage cata
     .goto 48,35.012,48.445
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gindle the Green|r
     .trainer >> Train your class spells
     .target Gindle the Green
-step << Hunter
+step << Hunter cata
     .goto 48,34.553,48.117
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Belda Wildheart|r
     .trainer >> Train your class spells
-    .target Belda Wildheart    
-step << Warrior
+    .target Belda Wildheart
+step << Warrior cata
     .goto 48,33.951,46.768
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grendin Swiftaxe|r
     .trainer >> Train your class spells
     .target Grendin Swiftaxe
 step
     .goto 48,35.079,46.663
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Kadrell|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Kadrell|r
     .target Mountaineer Kadrell
     .accept 26932 >>Accept Buzz Off
-step << Shaman
+step << Shaman cata
     .goto 48,36.596,48.341
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grenhild Darktalon|r
     .trainer >> Train your class spells
     .target Grenhild Darktalon
-step << Warlock
+step << Warlock cata
     .goto 48,35.879,46.199
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solbin Shadowcog|r
     .trainer >> Train your class spells
     .target Solbin Shadowcog
-step << Priest
+step << Priest cata
     .goto 48,36.108,45.893
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Baerla|r
     .trainer >> Train your class spells
@@ -506,6 +555,9 @@ step
     .turnin 13655 >>Turn in Explorers' League Document (2 of 6)
     .target Torren Squarejaw
 step
+    #optional
+    .maxlevel 20,endOfTheGuide
+step
     .isOnQuest 26868
     .use 60681 >> |cRXP_WARN_Open|r |T133639:0|t[Cannary's Cache] |cRXP_WARN_for the|r |T237425:0|t[|cRXP_LOOT_Clever Plant Disguise Kit|r] |cRXP_WARN_and|r |T134839:0|t[|cRXP_LOOT_Potent Murloc Pheromones|r]
     .collect 60502,1,26868,1 -- Clever Plant Disguise Kit (1)
@@ -531,7 +583,7 @@ step
     .target Cannary Caskshot
 step
     .goto 48,36.992,47.016
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jern Hornhelm|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jern Hornhelm|r
     .accept 13639 >>Accept Resupplying the Excavation
     .target Jern Hornhelm
 step
@@ -555,7 +607,7 @@ step
     .accept 13657 >>Accept Explorers' League Document (3 of 6)
 step
     .goto 48,64.896,66.659
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magmar Fellhew|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magmar Fellhew|r
     .target Magmar Fellhew
     .accept 26961 >>Accept Gathering Idols
 step
@@ -611,22 +663,22 @@ step
     .subzoneskip 147
 step
     .goto 48,82.789,63.459
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Safety Warden Pipsy|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Safety Warden Pipsy|r
     .target Safety Warden Pipsy
     .accept 27025 >>Accept Thistle While You Work
 step
     .goto 48,83.428,65.309
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryl the Youngling|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryl the Youngling|r
     .target Daryl the Youngling
     .accept 27016 >>Accept The Joy of Boar Hunting
 step
     .goto 48,81.944,64.505
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vyrin Swiftwind|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vyrin Swiftwind|r
     .target Vyrin Swiftwind
     .home >>Set your Hearthstone to Farstrider Lodge
 step
     .goto 48,81.647,64.750
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bingles Blastenheimer|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bingles Blastenheimer|r
     .target Bingles Blastenheimer
     .accept 27031 >>Accept Wing Nut
 step
@@ -708,7 +760,7 @@ step
     #loop
     .goto 48,52.298,39.499,40,0
     .goto 48,56.479,31.679,40,0
-    .goto 48,58.179,44.704,40,0  
+    .goto 48,58.179,44.704,40,0
     .goto 48,52.298,39.499,0
     .goto 48,56.479,31.679,0
     .goto 48,58.179,44.704,0
@@ -720,7 +772,7 @@ step
     #loop
     .goto 48,52.298,39.499,40,0
     .goto 48,56.479,31.679,40,0
-    .goto 48,58.179,44.704,40,0  
+    .goto 48,58.179,44.704,40,0
     .goto 48,52.298,39.499,0
     .goto 48,56.479,31.679,0
     .goto 48,58.179,44.704,0
@@ -751,7 +803,7 @@ step
     .turnin 27030 >>Turn in Foxtails By The Handful
 step
     .goto 48,81.910,64.618
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vyrin Swiftwind|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vyrin Swiftwind|r
     .target Vyrin Swiftwind
     .accept 27036 >>Accept Vyrin's Revenge
 step
@@ -760,6 +812,9 @@ step
     .target Bingles Blastenheimer
     .turnin 27031 >>Turn in Wing Nut
     .accept 27032 >>Accept Bird is the Word
+step
+    #optional
+    .maxlevel 20,endOfTheGuide
 step
     #completewith next
     >>Kill |cRXP_ENEMY_Bobcats|r
@@ -854,42 +909,45 @@ step
     .turnin 13659 >>Turn in Explorers' League Document (6 of 6)
     .accept 13661 >>Accept Heartfelt Appreciation
     .turnin 13661 >>Turn in Heartfelt Appreciation
-step << Paladin
+step
+    #optional
+    #label endOfTheGuide
+step << Paladin cata
     .goto 48,35.374,48.810
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faldoc Stonefaith|r
     .trainer >> Train your class spells
     .target Faldoc Stonefaith
-step << Rogue
+step << Rogue cata
     .goto 48,34.935,48.483
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Galda Bronzeblade|r
     .trainer >> Train your class spells
     .target Galda Bronzeblade
-step << Mage
+step << Mage cata
     .goto 48,35.012,48.445
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gindle the Green|r
     .trainer >> Train your class spells
     .target Gindle the Green
-step << Hunter
+step << Hunter cata
     .goto 48,34.553,48.117
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Belda Wildheart|r
     .trainer >> Train your class spells
-    .target Belda Wildheart    
-step << Warrior
+    .target Belda Wildheart
+step << Warrior cata
     .goto 48,33.951,46.768
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grendin Swiftaxe|r
     .trainer >> Train your class spells
     .target Grendin Swiftaxe
-step << Shaman
+step << Shaman cata
     .goto 48,36.596,48.341
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grenhild Darktalon|r
     .trainer >> Train your class spells
     .target Grenhild Darktalon
-step << Warlock
+step << Warlock cata
     .goto 48,35.879,46.199
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solbin Shadowcog|r
     .trainer >> Train your class spells
     .target Solbin Shadowcog
-step << Priest
+step << Priest cata
     .goto 48,36.108,45.893
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Baerla|r
     .trainer >> Train your class spells
@@ -910,7 +968,7 @@ step
 step
 #questguide
     .goto 48,50.532,23.802
-    >>Kill |cRXP_ENEMY_Twilight Landshaper|r 
+    >>Kill |cRXP_ENEMY_Twilight Landshaper|r
     .complete 27035,1 --|1/1 Twilight Landshaper destroyed
     .mob Twilight Landshaper
 step

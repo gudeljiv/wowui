@@ -4,6 +4,7 @@ if (not L) then
 end
 
 --Spanish translations by Cruzluz.
+--Spanish (AL)
 
 --Rend buff aura name.
 L["Warchief's Blessing"] = "Bendición del Jefe de Guerra";
@@ -188,7 +189,7 @@ L["Resist Fire"] = "Resistir al Fuego"; -- LBRS fire resist buff.
 L["Blessing of Blackfathom"] = "Bendición de Brazanegra";
 
 L["zan"] = "Zandalar";
-L["zanFirstYellMsg"] = "Zandalar realizará en %s segundos.";
+L["zanFirstYellMsg"] = "Zandalar caerá en %s segundos.";
 L["zanBuffDropped"] = "Espíritu de Zandalar (Hakkar) ha realizado.";
 L["singleSongflowerMsg"] = "Cantaflor en %s aparecerá en %s."; -- Songflower at Bloodvenom Post spawns at 1pm.
 L["spawn"] = "Aparición"; --Used in Felwood map marker tooltip (03:46pm spawn).
@@ -713,8 +714,8 @@ L["buffHelpersTextDesc5"] = "Beneficio de Ony/Rend";
 L["cityGotBuffSummonTitle"] = "Invocación Ony/Rend";
 L["cityGotBuffSummonDesc"] = "Acepta automáticamente cualquier invocación pendiente cuando obtienes un beneficio de Ony/Nef/Rend.";
 
-L["heraldFoundCrossroads"] = "¡Heraldo encontrado! Beneficio de Rend en El Cruce caerá en 20 segundos.";
-L["heraldFoundTimerMsg"] = "Beneficio de Rend en El Cruce"; --DBM/Bigwigs timer bar text.
+L["heraldFoundCrossroads"] = "¡Heraldo encontrado! Rend en El Cruce caerá en 20 segundos.";
+L["heraldFoundTimerMsg"] = "Rend El Cruce"; --DBM/Bigwigs timer bar text.
 
 L["guildNpcWalkingTitle"] = "PNJ caminando";
 L["guildNpcWalkingDesc"] = "¿Envia un mensaje a la hermandad y reproduce un sonido cuando activas o recibes una alerta de caminata de NPJ? (Abre el diálogo de chat con los PNJs de Ony/Nef en Orgrimmar y espera a que alguien entregue la cabeza para activar esta alerta temprana).";
@@ -1022,13 +1023,143 @@ L["cappingSupportDesc"] = "¿Inicia una barra de temporizador para Vallefresno/T
 L["Tol Barad"] = "Tol Barad";
 L["eventIsRunning"] = "%s está activo";
 
-L["Blackrock"] = "Blackrock";
-L["blackrockEventRunning"] = "Blackrock running: %s";
-L["blackrockEventStartsIn"] = "Blackrock starts in %s";
-L["blackrockStartSoon"] = "Blackrock event starts in %s"; --Guild chat msg.
-L["Blackrock PvP Event"] = "Blackrock PvP Event";
-L["Total honor this event"] = "Total honor this event";
+L["overlayShowBlackrockTitle"] = "Roca Negra";
+L["overlayShowBlackrockDesc"] = "¿Muestra la superposición del temporizador de Roca Negra?";
+
+L["printStvCoinsTitle"] = "Imprimir moneda";
+L["printStvCoinsDesc"] = "Imprime en el chat un contador de cuántas monedas de Tuercespina se ganaron durante el evento.";
+
+L["printBlackrockHonorTitle"] = "Imprimir honor";
+L["printBlackrockHonorDesc"] = "Imprime en el chat un contador de cuánto honor de Roca Negra se ganaron durante el evento.";
+
+L["chatOnlyInCityTitle"] = "Solo en ciudad";
+L["chatOnlyInCityDesc"] = "Solo imprime mensajes de temporizador y de caída de beneficios en el chat cuando estés en la ciudad principal donde caen los beneficios (incluye Valle de Tuercespina para el beneficio de Zandalar).";
+
+L["middleOnlyInCityTitle"] = "Solo en ciudad";
+L["middleOnlyInCityDesc"] = "Solo muestra mensajes en el centro de la pantalla del temporizador y de caída de beneficios cuando estés en la ciudad principal donde caen los beneficios (incluye Valle de Tuercespina para el beneficio de Zandalar).";
+
+L["flashOnlyInCityTitle"] = "Solo en ciudad";
+L["flashOnlyInCityDesc"] = "Solo ilumina mientras esté minimizado cuando estés en la ciudad principal donde caen los beneficios (incluye Valle de Tuercespina para el beneficio de Zandalar).";
+
+L["blueShamansTitle"] = "Chamanes azules";
+L["blueShamansDesc"] = "Muestra chamanes en azul en este addon en clásico.";
+
+L["Blackrock"] = "La erupción de Roca Negra";
+L["blackrockEventRunning"] = "La erupción de Roca Negra está en progreso: %s";
+L["blackrockEventStartsIn"] = "La erupción de Roca Negra comenzará en %s";
+L["blackrockStartSoon"] = "La erupción de Roca Negra comenzará en %s"; --Guild chat msg.
+L["Blackrock PvP Event"] = "La erupción de Roca Negra";
+L["Total honor this event"] = "Honor total en este evento";
+
+L["Bi-Weekly raid reset"] = "Reinicio bisemanal de banda";
 
 L["Might of Stormwind"] = "Poderío de Ventormenta";
 
 L["Battle Shout"] = "Grito de batalla";
+
+L["dmfBuffDroppedNoCooldown"] = "Has recibido el beneficio de la Feria de la Luna Negra %s, sin tiempo de reutilización en esta versión del juego.";
+L["chronoboonReleasedNoCooldown"] = "Has liberado un beneficio de la Feria de la Luna Negra con cronobeneficio, sin tiempo de reutilización en esta versión del juego.";
+
+L["skipDmfCookieTitle"] = "Omitir fortuna";
+L["skipDmfCookieDesc"] = "Activa esto para omitir recibir la fortuna de la Feria de la Luna Negra después de obtener el beneficio de la Feria de la Luna Negra.";
+
+L["No layers found yet."] = "No se encontraron capas aún.";
+
+L["Min Level"] = "Nivel mínimo";
+L["Rend handed in by"] = "Rend entregado por";
+L["ago"] = "atrás";
+L["Dropped"] = "Cayó";
+L["Yes"] = "Sí";
+L["No"] = "No";
+L["Delete buff data?"] = "¿Eliminar datos de beneficios?";
+L["No characters with buffs found."] = "No se encontraron personajes con beneficios.";
+L["Unknown Layer"] = "Capa desconocida";
+
+L["Active"] = "Activo";
+L["noZonesMappedYet"] = "Aún no se han mapeado zonas desde el reinicio del servidor.";
+L["Rend log adjusted"] = "Registro de Rend ajustado";
+
+L["flashDisableRendTitle"] = "Desactivar destello de Rend";
+L["flashDisableRendDesc"] = "Anular para desactivar todos los eventos de destello del cliente relacionados con Rend.";
+
+L["flashDisableOnyTitle"] = "Desactivar destello de Ony";
+L["flashDisableOnyDesc"] = "Anular para desactivar todos los eventos de destello del cliente relacionados con Ony/Nef.";
+
+L["flashDisableZanTitle"] = "Desactivar destello de Zan";
+L["flashDisableZanDesc"] = "Anular para desactivar todos los eventos de destello del cliente relacionados con Zandalar.";
+
+L["soundsFirstYellTitle"] = "Otros beneficios entrantes";
+L["soundsFirstYellDesc"] = "Sonido que se reproduce cuando se entregan beneficios de Zandalar/otros y tienes unos segundos antes de que se active el beneficio (primer grito del PNJ).";
+
+L["soundsFirstYellRendTitle"] = "Beneficio de Rend entrante";
+L["soundsFirstYellRendDesc"] = "Sonido que se reproduce cuando se entrega la cabeza de Rend y tienes unos segundos antes de que se active el beneficio (primer grito del PNJ).";
+
+L["soundsFirstYellOnyTitle"] = "Beneficio de Ony/Nef entrante";
+L["soundsFirstYellOnyDesc"] = "Sonido que se reproduce cuando se entrega la cabeza de Ony/Nef y tienes unos segundos antes de que se active el beneficio (primer grito del PNJ).";
+
+L["showDisableLayerButtonsTitle"] = "Mostrar botón para desactivar capa"
+L["showDisableLayerButtonsDesc"] = "Muestra el botón para desactivar capa en el marco de temporizadores/capas.";
+
+L["Show Quest Handins Only"] = "Mostrar entregas de misiones";
+L["showQuestHandinsTooltip"] = "Muestra solo entradas del registro al entregar la misión de Rend.";
+
+L["resetFramesTitle"] = "Restablecer ventanas";
+L["resetFramesDesc"] = "Haz clic aquí para restablecer todas las posiciones de las ventanas al centro de la pantalla.";
+
+L["buffHasNoCooldown"] = "Este beneficio no activa un tiempo de reutilización";
+L["noCooldown"] = "Sin tiempo de reutilización";
+
+L["Molten Core"] = "Núcleo de Magma";
+L["Onyxia's Lair"] = "Guarida de Onyxia";
+L["Blackwing Lair"] = "Guarida de Alanegra";
+L["Naxxramas"] = "Naxxramas";
+L["Karazhan"] = "Karazhan";
+L["The Shattered Halls"] = "Las Salas Arrasadas";
+L["Serpentshrine Cavern"] = "Caverna Santuario Serpiente";
+L["The Arcatraz"] = "El Arcatraz";
+L["Black Morass"] = "La Ciénaga Negra";
+L["Battle of Mount Hyjal"] = "Batalla del Monte Hyjal";
+L["Black Temple"] = "Templo Oscuro";
+L["Hellfire Citadel"] = "Ciudadela del Fuego Infernal";
+L["Coilfang Reservoir"] = "Reserva Colmillo Torcido";
+L["Shadow Labyrinth"] = "Laberinto de las Sombras";
+L["Auchindoun"] = "Auchindoun";
+L["Tempest Keep"] = "El Castillo de la Tempestad";
+L["Caverns of Time"] = "Cavernas del Tiempo";
+
+L["shortLayerPrefix"] = "C";
+L["expired"] = "caducado";
+
+L["layersHeaderDesc"] = "Opciones de capas";
+
+L["minimapLayerZoneIDTitle"] = "ID de zona en minimapa";
+L["minimapLayerZoneIDDesc"] = "Muestra el ID de tu zona actual junto al número de capa actual.";
+
+L["minimapLayerZoneIDTooltipTitle"] = "Tooltip de ID de zona";
+L["minimapLayerZoneIDTooltipDesc"] = "Esto hará que el tooltip al pasar el ratón muestre todos los ID de zona de capa de tu zona actual para que puedas compararlos con tu personaje alternativo en otra facción o por cualquier otro motivo.";
+
+L["Unknown"] = "Desconocido";
+
+--Abbreviated days/months.
+L["Mon"] = "Lun";
+L["Tue"] = "Mart";
+L["Wed"] = "Miérc";
+L["Thu"] = "Juev";
+L["Fri"] = "Vier";
+L["Sat"] = "Sáb";
+L["Sun"] = "Dom";
+
+L["Jan"] = "Ene";
+L["Feb"] = "Feb";
+L["Mar"] = "Mar";
+L["Apr"] = "Abr";
+L["May"] = "May";
+L["Jun"] = "Jun";
+L["Jul"] = "Jul";
+L["Aug"] = "Ago";
+L["Sep"] = "Sep";
+L["Oct"] = "Oct";
+L["Nov"] = "Nov";
+L["Dec"] = "Dic";
+
+L["for"] = "por";

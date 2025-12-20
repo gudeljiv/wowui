@@ -1,9 +1,10 @@
-## Interface: 11504
-## Title: |TInterface/Icons/Spell_Frost_Stun:16:16:0:0:512:512:64:448:64:448|t SpellActivationOverlay |cffdb550d2.3.3|r
-## Notes: Mimic Spell Activation Overlays from Modern World of Warcraft
+## Interface: 11508
+## Title: |TInterface/Icons/Spell_Frost_Stun:16:16:0:0:512:512:64:448:64:448|t SpellActivationOverlay |cffffffff2.6.0|r |TInterface/Icons/inv_misc_food_31:16:16:0:0:512:512:32:480:32:480|t
+## Notes: Display overlays and glow buttons to improve your gameplay!
 ## Author: Vinny/Ennvina
-## Version: 2.3.3
+## Version: 2.6.0
 ## SavedVariables: SpellActivationOverlayDB
+## X-SAO-Build: vanilla
 
 # SpellActivationOverlay.lua, SpellActivationOverlay.xml and all textures were created by Blizzard Entertainment, Inc.
 #
@@ -15,11 +16,14 @@
 #
 # World of Warcraft®: Warlords of Draenor™
 # ©2014 Blizzard Entertainment, Inc. All rights reserved. Warlords of Draenor is a trademark, and World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+#
 
 #@no-lib-strip@
 libs\LibStub\LibStub.lua
 libs\LibButtonGlow-1.0\LibButtonGlow-1.0.lua
 #@end-no-lib-strip@
+
+components\project.lua
 
 components\aura.lua
 components\bucket.lua
@@ -31,11 +35,11 @@ components\glow.lua
 components\hash.lua
 components\item.lua
 components\overlay.lua
-components\project.lua
 components\rune.lua
 components\shutdown.lua
 components\sound.lua
 components\spell.lua
+components\tr.lua
 components\trigger.lua
 components\util.lua
 components\variable.lua
@@ -43,6 +47,8 @@ components\variable.lua
 variables\actionusable.lua
 variables\aurastacks.lua
 variables\execute.lua
+variables\itemset.lua
+variables\stance.lua
 variables\talent.lua
 
 textures\texname.lua
@@ -58,11 +64,9 @@ classes\shaman.lua
 classes\warlock.lua
 classes\warrior.lua
 
-options\fix\Backdrop.lua
-options\fix\SharedUIPanelTemplates.xml
-
 options\defaults.lua
 options\db.lua
+options\questions.lua
 options\variables.lua
 options\InterfaceOptionsPanels.lua
 options\InterfaceOptionsPanels.xml

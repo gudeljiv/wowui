@@ -18,6 +18,7 @@ local LABEL_TEXT_FORMAT = Colors.Grey("(%s/%s)"):format(Colors.White("%s"), Colo
 --- @class MerchantButtonWidget : ButtonWidget
 local frame = Widgets:Button({
   name = ADDON_NAME .. "_MerchantButton",
+  parent = _G.MerchantFrame,
   width = 108,
   labelText = LABEL_TEXT_FORMAT:format(0, 0),
   labelColor = Colors.Blue,
@@ -112,7 +113,7 @@ end)
 -- ============================================================================
 
 TickerManager:NewTicker(0.01, function()
-  if MerchantFrame and MerchantFrame:IsShown() and StateManager:GetGlobalState().merchantButton then
+  if Addon:IsAtMerchant() and StateManager:GetGlobalState().merchantButton then
     frame:Show()
   else
     frame:Hide()

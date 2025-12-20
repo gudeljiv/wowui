@@ -174,7 +174,7 @@ function NWB:addTolBaradMinimapString(tooltip, noTopSeperator, noBottomSeperator
 	return true;
 end
 
-function NWB:checkTolBaradTimer(test)
+--[[function NWB:checkTolBaradTimer(test)
 	local timeLeft, running, timestamp  = getTimeLeft();
 	if (timeLeft and timeLeft <= 600 and timeLeft >= 590 and GetTime() - lastSendGuild > 900) then
 		lastSendGuild = GetTime();
@@ -187,7 +187,7 @@ function NWB:checkTolBaradTimer(test)
 			end
 		end
 	end
-end
+end]]
 
 
 

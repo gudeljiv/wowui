@@ -31,22 +31,18 @@ _G["BINDING_NAME_" .. "CLICK RXPTargetFrame_EnemyButton3:LeftButton"] =
 _G["BINDING_NAME_" .. "CLICK RXPTargetFrame_EnemyButton4:LeftButton"] =
     "Cible ennemie 4"
 
--- Words
-L.words = {["Accept"] = _G.ACCEPT, ["Kill"] = "Tuer"}
+--Words
+L.words = {["Accept"] = _G.ACCEPT, ["Kill"] = "Tuez"}
 
 
--- ActiveItemFrame.lua file
+--ActiveItemFrame.lua file
 
-
--- Communications.lua file
-
+--Communications.lua file
 L["Give Feedback for step"] = "Faire un commentaire sur cette étape"
-L["I just leveled from %d to %d in %s"] = "Je viens de gagner un niveau depuis %d vers %d en %s"
+L["I just leveled from %d to %d in %s"] = "Je viens de passer du niveau %d à %d en %s"
 L["I just leveled up to %d"] = "Je viens de monter au niveau %d"
 L["There's a new addon version (%s) available"] = "Une nouvelle version (%s) de l'addon est disponible"
 L["There's a new version (%s) available for %s"] = "Il y'a une nouvelle version (%s) disponible pour %s"
-L["Completed step %d - %s"] = "Étape terminée %d - %s"
-L["Collected step %d - %s"] = "Étape collectée %d - %s"
 L["Flying to %s ETA %s"] = "Vol vers %s ETA %s"
 L["Describe your issue:"] = "Décrivez votre problème"
 L["Do not edit below this line"] = "Ne rien modifier sous cette ligne"
@@ -61,8 +57,7 @@ L["minutes"] = "minutes"
 L["second"] = "seconde"
 L["seconds"] = "secondes"
 
--- functions.lua file
-
+--functions.lua file
 L["Objective Complete"] = "Objectif terminé"
 L["Error parsing guide"] = "Erreur lors de l'analyse du guide"
 L["Missing pre-requisites"] = "Dépendances manquantes"
@@ -90,8 +85,7 @@ L["Attempting to withdraw"] = "Tentative de retrait"
 L["Skip to step %d if you are level %d or above"] = "Passez à l'étape %d si votre niveau est égal ou supérieur à %d"
 L["(Skip this step if you are level %d or above)"] = "(Sautez cette étape si votre niveau est égal ou supérieur à %d)"
 
--- GuideLoader.lua file
-
+--GuideLoader.lua file
 L["Failed to ReadCacheData"] = "Échec lors de la lecture du cache des données"
 L["Incomplete or invalid encoded string"] = "Chaîne de caractères chiffrée incomplète ou invalide"
 L["Total guides loaded: %d/%s"] = "Guides totaux chargés : %d/%s"
@@ -99,8 +93,7 @@ L["Loading Guides"] = "Chargement des guides"
 L["Guides Loaded Successfully"] = "Guides chargés avec succès"
 L["Guide has no name"] = "Ce guide n'a pas de nom"
 
--- GuideWindow.lua file
-
+--GuideWindow.lua file
 L["Step %d"] = "Étape %d"
 L["Welcome to RestedXP Guides\nRight click to pick a guide"] = "Bienvenue sur RestedXP Guides\nFaites un clic droit pour choisir un guide"
 L["Go to step"] = "Aller à l'étape"
@@ -117,17 +110,18 @@ L["Import guide"] = "Importer un guide"
 L["Leveling report"] = "Rapport de niveau"
 L["Open Feedback Form"] = "Ouvrir le formulaire de commentaire"
 
--- Help.lua file
+--Help.lua file
 
 
--- HSBatching.lua file
+--HSBatching.lua file
 
 
--- LevelingTracker.lua file
-
+--LevelingTracker.lua file
+L["RestedXP Leveling Report"] = "RestedXP Rapport de Leveling"
 L["Resetting level %d start time to now!"] = "Reset du chrono du niveau %d maintenant !"
 L["Max"] = "Max"
-L["Reached Level"] = "Niveau atteint"
+L["Reached Level "] = "Niveau atteint "
+L["Reached max level"] = "Niveau max atteint"
 L["In-progress"] = "En cours"
 L["Time spent"] = "Temps écoulé"
 L["Zones & Dungeons"] = "Zones & Donjons"
@@ -138,6 +132,19 @@ L["Unable to retrieve report for"] = "Impossible de récupérer le rapport pour"
 L["Missing data"] = "Données manquantes"
 L["Level"] = "Niveau"
 L["Level Splits"] = "Splits des niveaux"
+L["Started level "] = "Niveau de départ "
+L["%d to %d"] = "%d à %d"
+L["* Group: %s"] = "* Groupe: %s"
+L["* Group: %d%%"] = "* Groupe: %d%%"
+L["* Group: %.2f%%"] = "* Groupe: %.2f%%"
+L["* Quests: %s"] = "* Quêtes: %s"
+L["* Quests: %d%%"] = "* Quêtes: %d%%"
+L["* Quests: %.2f%%"] = "* Quêtes: %.2f%%"
+L["* Killing: %s"] = "* Mob tuer: %s"
+L["* Killing: %.2f%%"] = "* Mob tuer: %.2f%%"
+L["* Killing: %d%%"] = "* Mob tuer: %d%%"
+L["Deaths"] = "Morts"
+L["Experience/hour"] = "Expérience/heure"
 L["Temporarily hide, use '/rxp splits' to show again"] = "Fenêtre cachée temporairement, utilisez '/rxp splits' pour ré-afficher"
 L["Export"] = "Exporter"
 L["Import"] = "Importer"
@@ -147,23 +154,20 @@ L["Time to"] = "Durée avant"
 L["Total Time"] = "Durée total"
 L["Level %d time"] = "Durée %d du niveau"
 
--- Locale.lua file
+--Locale.lua file
 
 
--- map.lua file
+--map.lua file
 
 
--- QuestLog.lua file
-
+--QuestLog.lua file
 L["Quest is being picked up at"] = "La quête commence avec"
 L["Quest is being turned in at"] = "La quête se valide avec"
 
--- RXPGuides.lua file
-
+--RXPGuides.lua file
 L["Development"] = "Développement"
 
--- SettingsPanel.lua file
-
+--SettingsPanel.lua file
 L["Please restart your game client and try again"] = "Veuillez redémarrer votre client de jeu et réessayez"
 L["Failed to Import Guides: Invalid Import String"] = "Échec lors de l'importation du guide : chaîne de caractères invalide"
 L["Guide Import"] = "Importer un guide"
@@ -180,6 +184,8 @@ L["Loaded %d characters into import buffer, %d shown"] = "%d personnages chargé
 L["Loaded %d characters into import buffer"] = "%d personnages chargés dans le buffer d'importation"
 L["This requires a reload to take effect, continue?"] = "Ceci nécessite un rechargement de l'IU pour prendre effet, continuer ?"
 L["Join Discord"] = "Rejoindre Discord"
+L["Run Guide Configurator"] = "Lancer Configurateur du Guide"
+L["Emergency Actions"] = "Actions d'urgence"
 L["Show unused guides"] = "Afficher les guides inutilisés"
 L["Displays guides that are not applicable for your class/race such as starting zones for other races"] = "Afficher les guides non pertinent à votre classe/race tel que les zones de départ des autres races"
 L["Auto load starting zone guides"] = "Charger automatiquement les guides de zones de départ"
@@ -318,14 +324,13 @@ L["Announce Level Ups (Party Chat)"] = "Annoncer montée de niveau (chat de grou
 L["Announce in party chat when you level up"] = "Annonce une montée de niveau dans le canal de groupe"
 L["Announce Level Ups (Guild Chat)"] = "Annoncer montée de niveau (chat de guilde)"
 L["Announce in guild chat when you level up"] = "Annonce une montée de niveau dans le canal de guilde"
-L["Group coordination"] = "Coordination du groupe"
 L["Send announcements without another RXP user in group"] = "Envoie les annonces même s'il n'y a pas d'autres utilisateurs de RXP dans le groupe"
 L["Without this checked we will only send announcements if another RestedXP User is in your group"] = "Si cette option est désactivée, les annonces ne seront envoyées que s'il y'a au moins un utilisateur de RestedXP dans le groupe"
-L["Announce when Quest Step is completed"] = "Annoncer les étapes de quêtes"
+L["Announce Step completion"] = "Annoncer les étapes de quêtes"
 L["Announce in party chat when you complete certain quests (.complete)"] = "Annonce dans le groupe quand vous terminez certaines quêtes (.complete)"
-L["Announce when all Step items are collected"] = "Annoncer les objets de quêtes collectés"
+L["Announce Step collection"] = "Annoncer les objets de quêtes collectés"
 L["Announce in party chat when you collect all the items relevant to a quest (.collect)"] = "Annonce dans le groupe quand vous avez collecté tous les objets de la quête (.collect)"
-L["Announce Flying Step timers"] = "Annoncer le temps de trajet en vol"
+L["Announce Step flying timers"] = "Annoncer le temps de trajet en vol"
 L["Announce in party chat where you're flying and how long until you arrive"] = "Annonce dans le groupe si vous prenez un vol ainsi que sa durée"
 L["Enable Addon Version Checks"] = "Activer la vérification de version de RXP"
 L["Advertises and compares addon versions with all RXP users in party"] = "Publie et compare les versions des utilisateurs de RXP dans le groupe"
@@ -340,14 +345,150 @@ L["Adjusts the batching window tolerance, used for hearthstone batching"] = "Adj
 L["Skip quests with missing pre-requisites"] = "Sauter les quêtes dont les pré-requis sont manquantes"
 L["Automatically skip tasks in which you don't have the required quest pre-requisites\n(Requires Questie)"] = "Saute automatiquement les quêtes si vous n'avez pas les pré-requis\n(requiert Questie)"
 L["Experience rate change detected, reloading guide for %.2fx"] = "Changement du bonus d'exp détecté, rechargement du guide pour %.2fx"
+L["Check for Addon Incompatibility"] = "Vérification de l'incompatibilité des addons complémentaires"
+L["Check loaded addons for known compatibility issues with RXP"] = "Vérification des addons complémentaires chargés connus pour des problèmes de compatibilité avec RXP"
+L["Show Flight Timers"] = "Afficher le Temps de Vol."
+L["Look and Feel"] = "Apparence"
+L["Requires Reload to take effect"] = "Nécessite un rechargement pour prendre effet"
+L["Show junk item indicator"] = "Afficher l'indicateur d'objet gris"
+L["Auto Sell Junk"] = "Vente Auto Objet Gris"
+L["Automatically sell all gray items and all other items that you set as junk"] = "Vendez automatiquement tous les articles gris et tous les autres articles que vous définissez comme indésirables"
+L["Any items marked as junk will display a gold coin icon on the top left corner of the item icon within your bags"] = "Tous les articles marqués comme indésirables afficheront une icône d'une pièce d'or dans le coin supérieur gauche de l'article dans vos sacs"
+L["Enable Talents Guides"] = "Activer Guides des Talents"
+L["Enable Talent Previews"] = "Activer Aperçus des Talents"
+L["Enable Talent Plan"] = "Activer Plan des Talents"
+L["Highlight or list levels for each talent"] = "Mettre en surbrillance ou afficher les niveaux pour chaque point de talent"
+L["Talent Plan Number"] = "Points de Talent à afficher"
+L["Sets maximum number of talents to layout"] = "Règle le nombre maximum de points talents à afficher"
+L["Toggle junk with modified right click"] = "Basculer indésirables avec un clic droit modifié"
+L["Allows you to toggle items as junk by clicking on it with CTRL+RightClick or ALT+RightClick"] = "Vous permet de basculer les éléments comme indésirables en cliquant dessus avec CTRL + clic droit ou ALT + clic droit"
+L["Discard junk items if bag is full"] = "Jetez les objets indésirables si le sac est plein"
+L["Automatically attempts to discard the cheapest junk item from your bags if your inventory is full"] = "Tente automatiquement de jeter l'objet indésirable le moins cher de vos sacs si votre inventaire est plein"
+L["Right Click Modifier"] = "Modificateur de Clic Droit"
+L["Delete Cheapest Junk Item Keybind"] = "Raccourci Clavier Suppression de l'objet indésirable le moins cher"
+L["Click to set a keybind"] = "Cliquez pour définir un raccourci clavier"
+L["Detect Season"] = "Détecter la saison"
+L["Dungeons"] = "Donjons"
+L["Season"] = "Saison"
+L["Season of Discovery"] = "Saison de la Découverte"
+L["Auto detects seasonal buffs and adjust the routes accordingly"] = "Détecte automatiquement les buffs saisonniers et ajuste les itinéraires en conséquence"
+L["Show Group Quests"] = "Afficher les quêtes de groupe"
+L["Guides that support this feature:\n"] = "Guides prenant en charge cette fonctionnalité:\n"
+L["Solo Self Found Mode"] = "Mode Solo"
+L["If this option is enabled, it disables all steps involving trading or Auction House"] = "Si cette option est activée, elle désactive toutes les étapes impliquant l'achat à l'hôtel des ventes"
+L["Adjust the leveling routes to the current season"] = "Ajuster les itinéraires de leveling à la saison en cours"
+L["Routes in quests for the selected dungeon\nGuides that support this feature:\n"] = "Itinéraires des quêtes du donjon sélectionné\nGuides prenant en charge cette fonctionnalité :\n"
+L["Mark Enemy Mobs"] = "Marquer les Monstres Ennemies"
+L["Mark enemy mobs with skull, cross, and square"] = "Marquez les monstres ennemies avec un crâne, une croix ou un carré"
+L["Reset Window Position"] = "Réinitialiser la position de la fenêtre"
+L["Show Total Time Split"] = "Afficher le temps total Split"
+L["When comparing, show total time difference"] = "Lors de la comparaison, afficher la différence de temps totale"
+L["Tips"] = "Astuces"
+L["Enable Tips"] = "Activer les astuces"
+L["Quest Sellable Recommendation"] = "Recommandation vente objet de quête"
+L["Displays the best sellable quest reward"] = "Montre la meilleure récompense de quête à vendre"
+L["Enable Warning"] = "Activer l'Avertissement"
+L["Enable Warning Sound"] = "Activer l'Avertissement Sonore"
+L["Threshold"] = "Seuil"
+L["Enable Animations"] = "Activer les animations"
+L["Flashes the screen corners when in danger of drowning"] = "Fait clignoter les coins de l'écran en cas de danger de noyade"
+L["Flashes the screen corners when an emergency action is recommended"] = "Fait clignoter les coins de l'écran lorsqu'une action d'urgence est recommandée"
+L["Track Mobs on Map"] = "Afficher les monstres sur la carte"
+L["Displays dangerous mobs and patrols on your map (WIP)"] = "Affiche les monstres et les patrouilles dangereuses sur votre carte (WIP)"
+L["Scan for dangerous mobs"] = "Scanner les monstres dangereux"
+L["Displays dangerous mobs and patrols on the targeting window (WIP)"] = "Affiche les monstres et les patrouilles dangereuses dans la fenêtre de ciblage (WIP)"
+L["Calculates item upgrades with Tactics' effective power weights"] = "Calcule les améliorations d'objets avec les bonus de puissance effective de Tactics."
+L["Quest Reward Recommendation"] = "Recommandation de récompense de quête"
+L["Displays the best calculated item upgrade"] = "Affiche la meilleure amélioration d'objet calculée"
+L["Quest Reward Automation"] = "Automatisation des récompenses de quête"
+L["Automatically chooses the best calculated quest reward"] = "Choisit automatiquement la meilleure récompense de quête calculée"
+L["Always Show Total EP"] = "Toujours afficher le total EP"
+L["Mark special enemy targets with moon"] = "Marque les cibles ennemies avec la l'icone lune"
+L["Flashes the screen corners when enemy target found"] = "Fait clignoter les coins de l'écran lorsqu'une cible ennemie est trouvée"
+L["Choose Theme"] = "Choix du thème"
+L["Set primary background"] = "Définir l'arrière-plan principal"
+L["Step List Background"] = "Arrière-plande la liste des étapes"
+L["Step Highlight"] = "Étape en surbrillance"
+L["Step mouseover highlight color"] = "Couleur de surbrillance au survol de la souris"
+L["Map Pins"] = "Points sur la carte"
+L["Map Pin color"] = "Couleur du point la carte"
+L["Tooltip"] = "Info-bulle"
+L["RGB hex color code"] = "Code couleur hexadécimal RVB"
+L["Font"] = "Police de caractères"
+L["Font Path"] = "Chemin vers la police de caractères"
+L["Text Color"] = "Couleur du texte"
+L["Preview Changes"] = "Aperçu des modifications"
+L["Preview theme changes"] = "Aperçu des modifications du thème"
+L["Warning"] = "Alerte"
+L["Pick Up"] = "Ramasser"
+L["Buy"] = "Acheter"
+L["Disable Colors"] = "Désactiver les couleurs"
+L["Guide Window"] = "Fenêtre du Guide"
+L["Active Items"] = "Objets Actifs"
+L["Hide Background"] = "Masquer l'arrière-plan"
+L["Choose active theme"] = "Choisissez le thème actif"
+L["Hearthstone batching"] = "Regroupement des pierres de foyer"
+L["Enables the automation of the innkeeper prompt, where you can set your home location in the same server tick you're teleporting away"] = "Permet l'automatisation de la fenêtre de l'aubergiste, où vous pouvez définir votre emplacement d'origine dans le même serveur que celui où vous vous téléportez"
+L["Batching window size (ms)"] = "Taille de la fenêtre de Regroupement (ms)"
+L["Pre load all data"] = "Précharger toutes les données"
+L["Loads all addon data upfront, instead of loading the data slowly over time. This increases loading screen times, only enable this option if you are experiencing frame rate drops"] = "Charge toutes les données des addons complémentaires en amont, au lieu de les charger progressivement. Cela augmente le temps de chargement de l'écran. N'activez cette option qu'en cas de baisse de fps"
+L["Update Frequency (ms)"] = "Fréquence de Mise à Jour (ms)"
+L["Defines how often the addon updates in milliseconds, increase this if you're having performance issues"] = "Définit la fréquence de mise à jour des addons complémentaire en millisecondes. Augmentez cette fréquence si vous rencontrez des problèmes de performances."
+L["Adjusts the batching window tolerance, used for hearthstone batching. Increase this value if you're experiencing framerate drops when using your Hearthstone"] = "Ajuste la tolérance de la fenêtre de regroupement, utilisée pour le traitement par lots de pierre de foyer. Augmentez cette valeur si vous subissez des chutes de fps lors de l'utilisation de la pierre de foyer."
+L["Set current profile as default"] = "Définir le profil actuel par défaut"
 
--- Targeting.lua file
-
+--Targeting.lua file
 L["No enabled RXP frames for targeting functionality"] = "Pas de cadre RXP actif pour la fonctionnalité de ciblage"
 L["Targeting macro updated with (%s)"] = "Macro de ciblage mise à jour avec (%s)"
 L["current step has no configured targets"] = "l'étape actuelle n'a pas de cible configurée"
 L["A macro has been automatically built to aid in leveling. Please move %s to your action bars."] = "Une macro a été automatiquement créée pour aider au leveling. Veuillez ajouter %s à votre barre d'actions"
-L["Rare Found! %s is nearby."] = "Mob rare trouvé ! %s est proche"
+L["Rare Found! %s is nearby."] = "Mob rare trouvé ! %s est proche de vous !"
 
--- Timers.lua file
+--Timers.lua file
 
+--GuideWindow.lua file
+L["Welcome to RestedXP Guides\nRight click to pick a guide"] = "Bienvenue dans RestedXP Guides\nCliquez avec le bouton droit pour choisir un guide"
+L["Available Guides"] = "Guides disponibles"
+
+--HardcoreIntroUI.lua.lua file
+L["NEW FEATURE"] = "NOUVELLE FONCTIONNALITÉ"
+L["ULTIMATE HARDCORE\nSURVIVAL GUIDE"]= "GUIDE DE SURVIE\nHARDCORE ULTIME"
+L["Check out the new Ultimate Hardcore Surivival Guide,\nspecifically crafted to level your character as safe as\n possible. |cff228B22Including new features.|r"] = "Découvrez le nouveau Guide de survie hardcore ultime,\nspécialement conçu pour faire évoluer votre personnage de la manière la plus sûre possible. |cff228B22Inclut de nouvelles fonctionnalités.|r"
+L["Select Survival Guide"] = "Sélectionnez Guide Survie"
+L["SPEEDRUN GUIDE"] = "GUIDE SPEEDRUN"
+L["Experience the fastest and most efficient Leveling Routes.\nHand-crafted and maintained by the best Speedrunners in\nthe Classic WoW Community."] = "Découvrez les guides les plus rapides et les plus efficaces. Fabriqué à la main et mise à jour par les meilleurs Speedrunner de la communauté de WoW Classic."
+L["Select Speedrun Guide"] = "Sélectionnez Guide Speedrun"
+L["WELCOME\nADVENTURER"] = "BIENVENUE\nAVENTURIER"
+L["Select your desired features to configure your Guide.\nLet's Go!"] = "Sélectionnez les fonctionnalités souhaitées pour configurer votre guide.\nC'est parti!"
+L["Enable Hostile Enemy Warning"] = "Activer l'avertissement d'ennemi"
+L["Alerts when a dangerous entity is nearby and shows patrolling elites on the world map."] = "Alerte lorsqu'un ennemi dangereux est a proximite et affiche les elites en patrouille sur la carte du monde."
+L["Enable Auction House"] = "Activer l'hotel des ventes"
+L["Considers quests that require items that are obtained through trading with other players."] = "Permet l'achat d'objet de quetes grace a l'hotel des ventes"
+L["Enable Group Quests"] = "Activer les quetes de groupe"
+L["Show elite quests and routes difficult quests early in the guide. Leave unchecked, if you prefer a solo experience."] = "Affichez les quetes elite et les itineraires difficiles des le debut du guide. Laissez cette option decochee si vous preferez une experience solo."
+L["Enable Dungeons"] = "Activer les donjons"
+L["Adds Dungeon Quests to your route. This is helpful to avoid longer grinding sessions."] = "Ajoute des quetes en donjon a votre guide. Cela permet d'eviter des longues sessions de farm."
+L["DUNGEON\nCONFIGURATION"] = "CONFIGURATION\nDONJON"
+L["Add Dungeons to your route. The guide will adjust to\n your selection accordingly."] = "Ajoutez des donjons, Le guide s'adaptera à votre sélection."
+L["Select all Dungeons"] = "Selectionnez tous les donjons"
+L["Factor all of your available Dungeons to your levelling route"] = "Integrez tous les donjons disponibles a votre guide"
+L["Select Recommended Dungeons"] = "Selectionnez les donjons"
+L["Factor only the high impact dungeons into the route"] = "Ne prenez en compte que les donjons a fort impact dans le guide"
+L["Location: "] = "Zone: "
+L["\n\nProfessions that benefit:"] = "\n\nProfessions qui en bénéficient"
+L["Back"] = "Retour"
+L["Submit & Continue"] = "Soumettre et Continuer"
+
+--classic\db.lua
+L["Travel Speed: %s"] = "Temps Voyage: %s"
+L["Quest XP: %s"] = "XP Quete: %s"
+L["Terrible"] = "Terrible"
+L["Bad"] = "Mauvais"
+L["Good"] = "Bon"
+L["Excellent"] = "Excellent"
+L["Skinning"] = "Depecage"
+L["Herbalism"] = "Herboristerie"
+L["Mining"] = "Minage"
+L["Enchanting"] = "Enchantement"
+L["Engineering"] = "Ingenierie"
+L["Leatherworking"] = "Travail du cuir"

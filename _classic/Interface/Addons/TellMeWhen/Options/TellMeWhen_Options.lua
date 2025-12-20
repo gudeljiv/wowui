@@ -13,8 +13,6 @@
 
 if not TMW then return end
 
-local clientVersion = select(4, GetBuildInfo())
-
 ---------- Libraries ----------
 local LSM = LibStub("LibSharedMedia-3.0")
 local LMB = LibStub("Masque", true) or (LibMasque and LibMasque("Button"))
@@ -200,10 +198,11 @@ local function hook_ChatEdit_InsertLink(text)
 	return false
 end
 
-hooksecurefunc("ChatEdit_InsertLink", function(...)
-	TMW.safecall(hook_ChatEdit_InsertLink, ...)
-end)
-
+if ChatFrameUtil and ChatFrameUtil.InsertLink then
+	hooksecurefunc(ChatFrameUtil, "InsertLink", function(...) TMW.safecall(hook_ChatEdit_InsertLink, ...) end)
+elseif ChatEdit_InsertLink then
+	hooksecurefunc("ChatEdit_InsertLink", function(...) TMW.safecall(hook_ChatEdit_InsertLink, ...) end)
+end
 
 
 
@@ -267,8 +266,8 @@ function IE:OnInitialize()
 		-- WoW 11.0+
 		hooksecurefunc(C_SpellBook, "PickupSpellBookItem", function(...) IE.DraggingInfo = {...} end)
 	end
-
-	WorldFrame:HookScript("OnMouseDown", function()
+	
+	TMW:RegisterCallback("TMW_WORLD_FRAME_MOUSE_DOWN", function()
 		IE.DraggingInfo = nil
 	end)
 	hooksecurefunc("ClearCursor", IE.BAR_HIDEGRID)
@@ -1584,6 +1583,10 @@ TMW:NewClass("Config_Panel", "Config_Frame"){
 		local lastCheckButton
 		local numFrames = 0
 		local numPerRow = allData.numPerRow or min(#allData, 2)
+		if numPerRow == 0 then
+			return
+		end
+		
 		self.checks = {}
 		for i, data in ipairs(allData) do
 			if data then -- skip over falses (dont freak out about them, they are probably intentional)
@@ -2979,7 +2982,7 @@ TMW:NewClass("Config_ColorButton", "Button", "Config_Frame"){
 	end,
 }
 
-if TMW.isCata or TMW.isWrath then 
+if ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING) and ClassicExpansionAtMost(LE_EXPANSION_WARLORDS_OF_DRAENOR) then 
 	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
 		-- Constructor
 		Runes = {
@@ -3020,7 +3023,7 @@ if TMW.isCata or TMW.isWrath then
 			end
 		end,
 	}
-elseif TMW.isRetail then
+elseif ClassicExpansionAtLeast(LE_EXPANSION_LEGION) then
 	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
 		-- Constructor
 

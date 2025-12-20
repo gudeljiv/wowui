@@ -218,7 +218,7 @@ function Options.SetScale(x) Options.scale = x; end
 ---@param parent Frame
 ---@param name string
 local CreateScrollFrames = function(parent, name)
-	local scrollBox = CreateFrame("Frame", name, parent, "WowScrollBox") --[[@as WowScrollBox]]
+	local scrollBox = CreateFrame("Frame", name, parent, "WowScrollBox") --[[@as WowScrollBox|Frame]]
 	local scrollBar = CreateFrame("EventFrame", name.."ScrollBar", parent, "MinimalScrollBar")
 	local barPadding = 12
 	scrollBar:SetPoint("RIGHT", parent, "RIGHT", -barPadding, 0)
@@ -234,13 +234,14 @@ local CreateScrollFrames = function(parent, name)
 	scrollChild:SetHeight(100) -- initial arbitrary height
 	scrollChild.ScrollBox = scrollBox;
 	scrollChild.ScrollBar = scrollBar;
-	-- Updates the canvas's resizable height and the scroll parent to match.
-	scrollChild.UpdateScrollLayout = function()
-		scrollChild:Layout() -- ResizeLayoutFrame:Layout()
-		scrollBox:Update(true) -- WowScrollBox:Update()
+	-- Updates the canvas's resizable layout height, and then the scroll parent to match.
+	function scrollChild.UpdateScrollLayout()
+		scrollChild:Layout()
+		scrollBox:FullUpdate(true)
 	end
 	local scrollView = CreateScrollBoxLinearView();
 	scrollView:SetPadding(0, 25) -- pad bottom of view with 25px
+	scrollView:SetPanExtent(50) -- scroll step
 	ScrollUtil.InitScrollBoxWithScrollBar(scrollBox, scrollBar, scrollView);
 	ScrollUtil.AddManagedScrollBarVisibilityBehavior(scrollBox, scrollBar); -- adds autohide to scrollbar
 	return scrollBox, scrollChild
@@ -386,15 +387,15 @@ function Options.AddCheckBoxToCurrentPanel(dbTable,key,default,labelText,width)
 	if dbTable ~= nil and key ~= nil then
 		-- note: RegisterFrameWithSavedVar has been set up to also initialize first time saved vars.
 		if dbTable[key] == nil then dbTable[key] = default end
-		checkButton = Options.RegisterFrameWithSavedVar(checkButton, dbTable, key, default)
+		local checkButton, sVarHandle = Options.RegisterFrameWithSavedVar(checkButton, dbTable, key, default)
 		checkButton:SetChecked(checkButton:GetSavedValue())
 		--`.func` is called in the `OnClick` handler for the template.
 		-- see https://github.com/Gethe/wow-ui-source/blob/classic_era/Interface/FrameXML/ChatConfigFrame.xml#L177
 		checkButton.func = function(self, isChecked)
 			checkButton:SetSavedValue(isChecked)
 		end
-		checkButton:OnSavedVarUpdate(function(newValue)
-			checkButton:SetChecked(newValue)
+		sVarHandle:AddUpdateHook(function(isChecked)
+			checkButton:SetChecked(isChecked)
 		end)
 		checkButton:SetScript("OnMouseDown", RegisteredFrame_OnShiftRightClick)
 	end
@@ -417,6 +418,13 @@ function Options.AddCheckBoxToCurrentPanel(dbTable,key,default,labelText,width)
 		checkButton:SetPoint('LEFT', Options.LineRelativ..'Text', 'RIGHT', 10, 0)
 		Options.LineRelativ = buttonName
 	end
+	local updateDisabledState = function()
+		local isDisabled = not checkButton:IsEnabled()
+		local r, g, b = (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		checkButton.Text:SetTextColor(r, g, b)
+	end
+	checkButton:HookScript("OnDisable", updateDisabledState)
+	checkButton:HookScript("OnEnable", updateDisabledState)
 	if dbTable == nil and key == nil then 
 		checkButton:Hide()
 	end
@@ -438,9 +446,11 @@ function Options.AddColorSwatchToCurrentPanel(dbTable,key,default,labelText,widt
 	textFrame:AdjustPointsOffset(0, textFrame:GetHeight() - size) -- move text down a bit for bigger swatch buttons
 	local swatchButtonName = Options.Prefix..'ColorSwatch'..frameIdx
 	-- Initialize Button
+	---@class SwatchButton
 	local swatchButton = CreateFrame('Button', swatchButtonName, Options.CurrentPanel)
 	swatchButton:SetNormalTexture('Interface\\ChatFrame\\ChatFrameColorSwatch')
 	swatchButton.Bg = swatchButton:GetNormalTexture()
+	swatchButton.Label = textFrame
 	swatchButton:SetWidth(size)
 	swatchButton:SetHeight(size)
 	swatchButton:ClearAllPoints()
@@ -464,13 +474,13 @@ function Options.AddColorSwatchToCurrentPanel(dbTable,key,default,labelText,widt
 	
 	-- Register button with saved var handler
 	---@class SwatchButton:RegisteredFrameMixin, Button
-	swatchButton = Options.RegisterFrameWithSavedVar(swatchButton, dbTable, key, default)
+	local swatchButton, sVarHandle = Options.RegisterFrameWithSavedVar(swatchButton, dbTable, key, default)
 	local syncWithSavedVar = function()
-		local color = swatchButton:GetSavedValue() -- method from RegisterFrameWithSavedVar
+		local color = sVarHandle:GetValue()
 		swatchButton.Bg:SetVertexColor(color.r, color.g, color.b, color.a)
 	end
-	swatchButton:OnSavedVarUpdate(syncWithSavedVar);
 	syncWithSavedVar() -- run once to set the initial color
+	sVarHandle:AddUpdateHook(syncWithSavedVar)
 	local onSwatchColorChange = function() -- passed to ColorPickerFrame handlers.
 		local a = 1.0 - OpacitySliderFrame:GetValue()
 		local r, g, b = ColorPickerFrame:GetColorRGB()
@@ -490,91 +500,81 @@ function Options.AddColorSwatchToCurrentPanel(dbTable,key,default,labelText,widt
 		ColorPickerFrame:Hide()
 		ColorPickerFrame:Show()
 	end)
+	local updateDisabledState = function()
+		local isDisabled = not swatchButton:IsEnabled()
+		local r, g, b = (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		swatchButton.Highlight:SetVertexColor(r, g, b)
+		swatchButton.Label:SetTextColor(r, g, b)
+	end
+	swatchButton:HookScript("OnDisable", updateDisabledState)
+	swatchButton:HookScript("OnEnable", updateDisabledState)
 	return swatchButton
 end
 
 ---@param dbTable table
 ---@param key string
----@param default string|number|boolean 
+---@param default string|number|boolean
 ---@param menuButtons string[]|{value: string|number|boolean, text: string?}[]
-function Options.AddDropdownToCurrentPanel(dbTable,key,default,menuButtons) 
+function Options.AddRadioDropdownToCurrentPanel(dbTable,key,default,menuButtons)
 	local frameIdx = Options.Frames.count + 1
 	Options.Frames.count = frameIdx
 	local dropdownName = Options.Prefix..'DropDownMenu'..frameIdx
-	
-	---@class Dropdown: UIDropDownMenu, RegisteredFrameMixin, Frame
-	local dropdownFrame = CreateFrame('Frame', dropdownName, Options.CurrentPanel, 'UIDropDownMenuTemplate')
-	--note: defaulting for uninitialized saved vars now done in RegisterFrameWithSavedVar
-	Options.RegisterFrameWithSavedVar(dropdownFrame, dbTable, key, default)
-	dropdownFrame.Button:SetScript("OnMouseDown", function(self, button)
-		RegisteredFrame_OnShiftRightClick(dropdownFrame, button) -- Default on right-click of the dropdown toggle
+
+	---@class RadioDropdown: WowStyle1DropdownTemplate, RegisteredFrameMixin, Button
+	local dropdownButton = CreateFrame('DropdownButton', dropdownName, Options.CurrentPanel, 'WowStyle1DropdownTemplate')
+	dropdownButton:RegisterForMouse("AnyUp", "AnyDown")
+	dropdownButton:HookScript("OnMouseDown", function(self, button)
+		RegisteredFrame_OnShiftRightClick(dropdownButton, button) -- Default on right-click of the dropdown toggle
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
 	end)
-	
-	local maxWidth = 0; -- find widest button in the dropdown
-	local fontString = dropdownFrame:CreateFontString(nil, 'OVERLAY', 'GameFontNormal');
+
+	local maxWidth = 60; -- find widest button in the dropdown
 	for _, data in pairs(menuButtons) do
 		if type(data) == 'string' then
-			fontString:SetText(data);
+			dropdownButton.Text:SetText(data)
 		else
-			fontString:SetText(data.text or tostring(data.value));
+			dropdownButton.Text:SetText(data.text or tostring(data.value));
 		end
-		maxWidth = max(maxWidth, (fontString:GetStringWidth() + 20))
+		maxWidth = max(maxWidth, (dropdownButton.Text:GetUnboundedStringWidth() + 20))
 	end
-	---@type fun(button: UIDropDownMenuButton) Dropdown menu button's on click handler
-	local dropdownButtonOnClick = function(button)
-		dropdownFrame:SetSavedValue(button.value)
-		UIDropDownMenu_SetSelectedValue(dropdownFrame, button.value)
-		UIDropDownMenu_SetText(dropdownFrame, button.text or button.value)
-	end
-	-- syncs dropdown display with the text that matches the passed value (expects the current saved variable)
-	local syncDropDownWithValue = function(value)
-		for _, data in pairs(menuButtons) do
-			if type(data) == 'string' and data == value then
-				UIDropDownMenu_SetText(dropdownFrame, data)
-				break;
-			elseif type(data) == 'table' and (data.value == value) then
-				UIDropDownMenu_SetText(dropdownFrame, data.text or data.value)
-				break;
+	dropdownButton:SetWidth(maxWidth + (dropdownButton.Arrow and dropdownButton.Arrow:GetWidth() or 0));
+	-- Alternatively, use auto resize feature of the mixin
+	-- dropdownButton.resizeToText = true
+	-- dropdownButton.resizeToTextPadding = (dropdownButton.Arrow and dropdownButton.Arrow:GetWidth() or 0) + 20
+
+	-- Setup the dropdown menu radio button generator func
+	local _, setting = Options.RegisterFrameWithSavedVar(dropdownButton, dbTable, key, default)
+	local function isSelected(value) return value == setting:GetValue(); end
+	local function setSelected(value) setting:SetValue(value); end
+	local function menuGenerator(dropdown, rootDescription)
+		for index = 1, #menuButtons do
+			local info = menuButtons[index]
+			if type(info) == "table" then
+				rootDescription:CreateRadio(info.text or tostring(info.value), isSelected, setSelected, info.value);
+			else -- info == (value and display text)
+				rootDescription:CreateRadio(info, isSelected, setSelected, info);
 			end
 		end
 	end
-	dropdownFrame:OnSavedVarUpdate(syncDropDownWithValue);
-	UIDropDownMenu_SetWidth(dropdownFrame, maxWidth);
-	syncDropDownWithValue(dropdownFrame:GetSavedValue()); -- set initial text
-	-- Create and bind the initialization function to the dropdown menu
-	UIDropDownMenu_Initialize(dropdownFrame, function(self, level, menuList)
-		local buttonInfo = UIDropDownMenu_CreateInfo()
-		for _, buttonData in ipairs(menuButtons) do
-			if type(buttonData) == 'string' then
-				buttonInfo.text = buttonData
-				buttonInfo.value = buttonData
-			else
-				assert(buttonData.value ~= nil, 'data.value is required for button data table', 'data=q', buttonData);
-				for key, value in pairs(buttonData) do
-					buttonInfo[key] = value
-				end
-				buttonInfo.text = buttonData.text or tostring(buttonData.value)
-			end
-			buttonInfo.checked = function(button)
-				return dropdownFrame:GetSavedValue() == button.value
-			end
-			buttonInfo.func = dropdownButtonOnClick
-			UIDropDownMenu_AddButton(buttonInfo)
-		end
-	end)
+	local generateMenu = function() dropdownButton:SetupMenu(menuGenerator) end
+	setting:AddUpdateHook(generateMenu) -- syncs dropdown display when saved var externally updated
+	generateMenu() -- call once to initialize
+
+	local leftOffset, topOffset = 9, -4 -- tweaks to make up for bg texture
 	if not Options.inLine or not Options.LineRelativ then
-		dropdownFrame:SetPoint('TOPLEFT', Options.NextRelativ, 'BOTTOMLEFT', Options.NextRelativX, Options.NextRelativY)
-		Options.NextRelativ = dropdownName
-		Options.LineRelativ = dropdownName
+		dropdownButton:SetPoint('TOPLEFT', Options.NextRelativ, 'BOTTOMLEFT',
+			(Options.NextRelativX or 0) + leftOffset, (Options.NextRelativY or 0) + topOffset
+		);
+		Options.NextRelativ = dropdownButton.Background
+		Options.LineRelativ = dropdownButton.Background
 		Options.NextRelativX = 0
 		Options.NextRelativY = 0
 	else
-		dropdownFrame:SetPoint('TOP', Options.LineRelativ, 'TOP', 0, 0)
-		dropdownFrame:SetPoint('LEFT', Options.LineRelativ..'Text', 'RIGHT', 0, 3)
-		Options.LineRelativ = dropdownName
+		dropdownButton:SetPoint('TOP', Options.LineRelativ, 'TOP', 0, 0)
+		dropdownButton:SetPoint('LEFT', Options.LineRelativ..'Text', 'RIGHT', leftOffset, 3)
+		Options.LineRelativ = dropdownButton.Background
 	end
-	return dropdownFrame
+	return dropdownButton
 end
 
 ---@param checkBox CheckButton|{Text: FontString, func: function}
@@ -617,25 +617,26 @@ function Options.AddTextToCurrentPanel(text,width,center)
 	textFrame:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-2)
 	textFrame:SetScale(Options.scale)
 
-	if width==nil or width==0 then 
-		textFrame:SetWidth(textFrame:GetStringWidth())
-	elseif width<0 then
-		if string.sub(Options.CurrentPanel:GetName(),  -11) == "ScrollChild" then
-			-- edge case for scrollable frames
-			textFrame:SetPoint("RIGHT",Options.CurrentPanel:GetParent():GetParent(),"RIGHT",width,0)
-		else
-			textFrame:SetPoint("RIGHT",width,0)
-		end
-		if not center then 
-			textFrame:SetJustifyH("LEFT")
-			textFrame:SetJustifyV("TOP")
+	-- if no width then; set to min(max string width, panel width minus padding)
+	-- if negative width then: set width as if no width but use given width as right offset
+	if not width or width <= 0 then
+		local parentFrame = string.sub(Options.CurrentPanel:GetName(), -11) == "ScrollChild"
+			and Options.CurrentPanel:GetParent():GetParent() -- edge case for scrollable frames
+			or Options.CurrentPanel
+		local textFrameWidth = math.min(
+			textFrame:GetStringWidth(),
+			SettingsPanel.Container.SettingsCanvas:GetWidth() - 20
+		)
+		textFrame:SetWidth(textFrameWidth)
+		if width and width < 0 then
+			textFrame:SetPoint("RIGHT", parentFrame, "RIGHT", width, 0)
 		end
 	else
 		textFrame:SetWidth(width)
-		if not center then 
-			textFrame:SetJustifyH("LEFT")
-			textFrame:SetJustifyV("TOP")
-		end
+	end
+	if not center then
+		textFrame:SetJustifyH("LEFT")
+		textFrame:SetJustifyV("TOP")
 	end
 	Options.NextRelativ=textFrame
 	Options.NextRelativX=0
@@ -695,13 +696,14 @@ function Options.AddEditBoxToCurrentPanel(dbTable,key,default,labelText,width,la
 		label:SetJustifyH('LEFT')
 		label:SetJustifyV('TOP')
 	end
-	---@type EditBox|{Instructions: FontString} # Create the edit box
+	---@type EditBox|{Instructions: FontString, Label: FontString} # Create the edit box
 	local editBox = CreateFrame('EditBox', editBoxName, Options.CurrentPanel, 'InputBoxInstructionsTemplate')
 	editBox:SetPoint('TOPLEFT', label, 'TOPRIGHT', 5, 5)
 	editBox:SetScale(Options.scale)
 	editBox:SetWidth(width)
 	editBox:SetHeight(20)
 	label:SetHeight(editBox:GetHeight() - 10)
+	editBox.Label = label
 	editBox:SetNumeric(isNumeric)
 	editBox:SetAutoFocus(false)
 	editBox:SetFontObject('ChatFontNormal') -- matches InputBoxTemplate font
@@ -745,6 +747,14 @@ function Options.AddEditBoxToCurrentPanel(dbTable,key,default,labelText,width,la
 		end)
 		editBox:SetScript('OnLeave', GameTooltip_Hide)
 	end
+	local updateDisabledState = function()
+		local isDisabled = not editBox:IsEnabled()
+		local r, g, b =  (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		editBox:SetTextColor(r, g, b)
+		editBox.Label:SetTextColor(r, g, b)
+	end
+	editBox:HookScript("OnEnable", updateDisabledState)
+	editBox:HookScript("OnDisable", updateDisabledState)
 	Options.NextRelativ=labelName
 	Options.NextRelativX=0
 	Options.NextRelativY=-10

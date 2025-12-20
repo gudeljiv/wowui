@@ -1,0 +1,11 @@
+## Interface: 11506
+## Title: RingMenu Reborn
+## Notes: A radial action menu system with customizable wheels that appear at your cursor.
+## Author: Sleepy
+## Version: 1.0.0
+## SavedVariablesPerCharacter: RadialWheelDB, RadialWheelProfiles
+## OptionalDeps: Masque
+libs/LibStub.lua
+Core.lua
+Settings.lua
+RadialWheelPanel.xml

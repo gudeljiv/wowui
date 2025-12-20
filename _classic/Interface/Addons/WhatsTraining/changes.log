@@ -1,3 +1,55 @@
+* 8.3.0
+    - Fix spell frame api change in 1.15.8
+    - Remove Cata data
+    - Update ToC version
+
+* 8.2.3
+    - Add Summon Incubus to Cata data
+
+* 8.2.2
+    - Update ToC versions
+
+* 8.2.1
+    - Update Classic Era ToC version
+
+* 8.2.0
+    - Warlock pets are now scanned for learned spells when active, not only at a tome vendor
+    - Ignored pet spells are now in their own category
+    - Known and ignored warlock tomes now display the summon icon for the pet instead of the tome icon
+    - Known spell header money spent always colored red
+
+* 8.1.0
+    - <Shift>Click spells or tomes to link them in chat
+    - Ignored header total no longer reflects player money; now always green
+
+* 8.0.1
+    - Fix sayaad icons appearing on non-tome vendor windows
+
+* 8.0.0
+    - Warlock pets tomes are split by type
+    - Can now ignore all ranks of a specific tome
+    - Succubus/Incubus tomes now track each minion separately
+    - Change the color of ignored tomes at vendor
+    - Show the actual spell a tome trains at both the vendor and in the spell list
+
+* 7.1.1
+    - Fix warlock tomes not being filtered by search
+
+* 7.1.0
+    - Add search box to Classic Era
+    - Add notification to broker tooltip informining hunters to open beast training when necessary
+    - Fix attempting to open spellbook or beast training ui when in combat
+    - Fix page buttons in Cata
+    - Fix right-click ignore in Cata
+
+* 7.0.1
+    - Update Classic Era ToC version
+
+* 7.0.0
+    - Add libdatabroker plugin to show spells in TitanPanel/ChocolateBar/etc.
+    - Fix issue where spell ranks would not load correctly when logging in
+    - Update Cata ToC version
+
 * 6.1.0
     - Fix broken right-click when ClassTrainerPlus is active in 1.15.4
 

@@ -73,6 +73,7 @@ local CLASSIC_SUB_NAMES = {
 	[MASTER] = true,
 	[GRAND_MASTER] = true,
 	[ILLUSTRIOUS] = true,
+	[ZEN_MASTER] = true,
 	["大师级"] = true, -- zhCN ARTISAN
 	["Мастеровой"] = true, -- ruRU ARTISAN
 }
@@ -268,6 +269,23 @@ function TradeSkill.ClearFilters()
 	end
 end
 
+---Sets the default filter values.
+function TradeSkill.SetDefaultFilters()
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI) then
+		Professions.SetDefaultFilters()
+	else
+		ExpandTradeSkillSubClass(0)
+		SetTradeSkillInvSlotFilter(0, 1, 0)
+		SetTradeSkillSubClassFilter(0, 1, 0)
+		if ClientInfo.HasFeature(ClientInfo.FEATURES.TRADE_SKILL_FILTERS) then
+			SetTradeSkillItemNameFilter(nil)
+			SetTradeSkillItemLevelFilter(0, 0)
+			TradeSkillOnlyShowSkillUps(false)
+			TradeSkillOnlyShowMakeable(false)
+		end
+	end
+end
+
 ---Gets the result item(s) of a recipe.
 ---@param spellId number The recipe spell ID
 ---@return string|number[] items
@@ -281,7 +299,7 @@ function TradeSkill.GetResult(spellId)
 		local indirectResultId = nil
 		-- Filter out invalid item links
 		itemLink = not strfind(itemLink or "", "item::") and itemLink or nil
-		if LibTSMWoW.IsCataClassic() then
+		if LibTSMWoW.IsPandaClassic() then
 			itemLink = itemLink or GetTradeSkillRecipeLink(spellId)
 		end
 		local indirectSpellId = strmatch(itemLink, "enchant:(%d+)")
@@ -368,7 +386,8 @@ end
 ---@return number[]? qualityIlvlBonuses
 function TradeSkill.GetItemLevelBonuses(spellId)
 	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI))
-	return C_TradeSkillUI.GetRecipeInfo(spellId).qualityIlvlBonuses
+	local bonusTable = C_TradeSkillUI.GetRecipeInfo(spellId).qualityIlvlBonuses
+	return (bonusTable and #bonusTable > 0) and bonusTable or nil
 end
 
 ---Gets the range of quantities crafted by a recipe.
@@ -509,8 +528,18 @@ function TradeSkill.CategoryInfo(categoryId)
 		wipe(private.categoryInfoTemp)
 		return name, numIndents, parentCategoryId, currentSkillLevel, maxSkillLevel
 	else
-		local name = TradeSkill.IsClassicCrafting() and GetCraftDisplaySkillLine() or (categoryId and GetTradeSkillInfo(categoryId) or nil)
-		return name, 0, nil, nil, nil
+		if categoryId and categoryId ~= 0 then
+			local name, skillType, _, _, _, _, numIndents = GetTradeSkillInfo(categoryId)
+			if skillType == "subheader" then
+				local parentCategoryId = private.GetParentCategory(categoryId)
+				return name, numIndents, parentCategoryId, nil, nil
+			else
+				return name or GetTradeSkillLine(), 0, nil, nil, nil
+			end
+		else
+			local name = TradeSkill.IsClassicCrafting() and GetCraftDisplaySkillLine() or GetTradeSkillLine()
+			return name, 0, nil, nil, nil
+		end
 	end
 end
 
@@ -725,10 +754,10 @@ function TradeSkill.Craft(spellId, quantity, optionalMats, level, enchantSlotId,
 			private.itemLocation:SetBagAndSlot(SlotId.Split(enchantSlotId))
 			C_TradeSkillUI.CraftEnchant(spellId, quantity, optionalMats, private.itemLocation, applyConcentration)
 		elseif salvageSlotId then
-			assert(not level and not next(optionalMats))
+			assert(not level)
 			if TradeSkill.IsValiMatSlotId(salvageSlotId) then
 				private.itemLocation:SetBagAndSlot(SlotId.Split(salvageSlotId))
-				C_TradeSkillUI.CraftSalvage(spellId, quantity, private.itemLocation, nil, applyConcentration)
+				C_TradeSkillUI.CraftSalvage(spellId, quantity, private.itemLocation, optionalMats, applyConcentration)
 			end
 		else
 			C_TradeSkillUI.CraftRecipe(spellId, quantity, optionalMats, level, nil, applyConcentration)
@@ -809,6 +838,15 @@ function private.IsRegularMat(data)
 	return data.dataSlotType == Enum.TradeskillSlotDataType.Reagent or data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
 end
 
+function private.GetParentCategory(categoryId)
+	for i = categoryId - 1, 1, -1 do
+		local name, skillType = GetTradeSkillInfo(i)
+		if name and name ~= "" and skillType == "header" then
+			return i
+		end
+	end
+end
+
 function private.RecipeIterator(context, index)
 	while true do
 		index = index + 1
@@ -837,9 +875,12 @@ function private.RecipeIterator(context, index)
 				end
 				name, skillType = GetTradeSkillInfo(index)
 			end
-			if skillType == "header" then
-				context.lastHeaderIndex = index
-			elseif name then
+			if skillType == "header" or skillType == "subheader" then
+				-- Ignore categories with no name as they are bugged (i.e. Tinkers in Cata)
+				if name ~= "" then
+					context.lastHeaderIndex = index
+				end
+			elseif type(name) == "string" and name ~= "" then
 				return index, name, context.lastHeaderIndex, private.MapDifficulty(skillType)
 			end
 		end

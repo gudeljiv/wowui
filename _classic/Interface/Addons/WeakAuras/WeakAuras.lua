@@ -3,7 +3,7 @@ local AddonName = ...
 ---@class Private
 local Private = select(2, ...)
 
-local internalVersion = 78
+local internalVersion = 87
 
 -- Lua APIs
 local insert = table.insert
@@ -114,7 +114,7 @@ do
     if data then
       Private.AuraWarnings.UpdateWarning(data.uid, "LuaError", "error",
         L["This aura has caused a Lua error."] .. "\n" .. L["Install the addons BugSack and BugGrabber for detailed error logs."], true)
-      table.insert(juicedMessage, L["Lua error in aura '%s': %s"]:format(data.id, currentErrorHandlerContext or L["unknown location"]))
+      table.insert(juicedMessage, L["Lua error in Aura '%s': %s"]:format(data.id, currentErrorHandlerContext or L["unknown location"]))
     else
       table.insert(juicedMessage, L["Lua error"])
     end
@@ -204,6 +204,8 @@ function SlashCmdList.WEAKAURAS(input)
     WeakAuras.PrintProfile();
   elseif msg == "pcancel" then
     WeakAuras.CancelScheduledProfile()
+  elseif msg == "pshow" or msg == "profiling" then
+    WeakAurasProfilingFrame:Toggle()
   elseif msg == "minimap" then
     WeakAuras.ToggleMinimap();
   elseif msg == "help" then
@@ -600,7 +602,8 @@ end
 ---@param name string
 ---@param createFunction function
 ---@param description string
-function WeakAuras.RegisterSubRegionOptions(name, createFunction, description)
+---@param getAnchors function?
+function WeakAuras.RegisterSubRegionOptions(name, createFunction, description, getAnchors)
   if not(name) then
     error("Improper arguments to WeakAuras.RegisterSubRegionOptions - name is not defined", 2);
   elseif(type(name) ~= "string") then
@@ -609,11 +612,14 @@ function WeakAuras.RegisterSubRegionOptions(name, createFunction, description)
     error("Improper arguments to WeakAuras.RegisterSubRegionOptions - creation function is not defined", 2);
   elseif(type(createFunction) ~= "function") then
     error("Improper arguments to WeakAuras.RegisterSubRegionOptions - creation function is not a function", 2);
+  elseif(getAnchors and type(getAnchors) ~= "function") then
+    error("Improper arguments to WeakAuras.RegisterSubRegionOptions - getAnchors function is not a function", 2);
   elseif(subRegionOptions[name]) then
     error("Improper arguments to WeakAuras.RegisterSubRegionOptions - region type \""..name.."\" already defined", 2);
   else
     subRegionOptions[name] = {
       create = createFunction,
+      getAnchors = getAnchors,
       description = description,
     };
   end
@@ -929,31 +935,41 @@ local function LoadCustomActionFunctions(data)
   Private.customActionsFunctions[id] = {};
 
   if (data.actions) then
-    if (data.actions.init and data.actions.init.do_custom and data.actions.init.custom) then
-      local func = WeakAuras.LoadFunction("return function() "..(data.actions.init.custom).."\n end");
-      Private.customActionsFunctions[id]["init"] = func;
+    if data.actions.init then
+      if data.actions.init.do_custom and data.actions.init.custom then
+        local func = WeakAuras.LoadFunction("return function() "..(data.actions.init.custom).."\n end", data.id);
+        Private.customActionsFunctions[id]["init"] = func
+      end
+      if data.actions.init.do_custom_load and data.actions.init.customOnLoad then
+        local func = WeakAuras.LoadFunction("return function() "..(data.actions.init.customOnLoad).."\n end", data.id);
+        Private.customActionsFunctions[id]["load"] = func
+      end
+      if data.actions.init.do_custom_unload and data.actions.init.customOnUnload then
+        local func = WeakAuras.LoadFunction("return function() "..(data.actions.init.customOnUnload).."\n end", data.id);
+        Private.customActionsFunctions[id]["unload"] = func
+      end
     end
 
     if (data.actions.start) then
       if (data.actions.start.do_custom and data.actions.start.custom) then
-        local func = WeakAuras.LoadFunction("return function() "..(data.actions.start.custom).."\n end");
+        local func = WeakAuras.LoadFunction("return function() "..(data.actions.start.custom).."\n end", data.id);
         Private.customActionsFunctions[id]["start"] = func;
       end
 
       if (data.actions.start.do_message and data.actions.start.message_custom) then
-        local func = WeakAuras.LoadFunction("return "..(data.actions.start.message_custom));
+        local func = WeakAuras.LoadFunction("return "..(data.actions.start.message_custom), data.id);
         Private.customActionsFunctions[id]["start_message"] = func;
       end
     end
 
     if (data.actions.finish) then
       if (data.actions.finish.do_custom and data.actions.finish.custom) then
-        local func = WeakAuras.LoadFunction("return function() "..(data.actions.finish.custom).."\n end");
+        local func = WeakAuras.LoadFunction("return function() "..(data.actions.finish.custom).."\n end", data.id);
         Private.customActionsFunctions[id]["finish"] = func;
       end
 
       if (data.actions.finish.do_message and data.actions.finish.message_custom) then
-        local func = WeakAuras.LoadFunction("return "..(data.actions.finish.message_custom));
+        local func = WeakAuras.LoadFunction("return "..(data.actions.finish.message_custom), data.id);
         Private.customActionsFunctions[id]["finish_message"] = func;
       end
     end
@@ -967,16 +983,18 @@ local function CreateTalentCache()
 
   Private.talent_types_specific[player_class] = Private.talent_types_specific[player_class] or {};
 
-  if WeakAuras.IsClassicOrCata() then
+  if WeakAuras.IsClassicOrWrathOrCata() then
     for tab = 1, GetNumTalentTabs() do
       for num_talent = 1, GetNumTalents(tab) do
-        local talentName, talentIcon = GetTalentInfo(tab, num_talent);
+        local talentName, talentIcon = Private.ExecEnv.GetTalentInfo(tab, num_talent);
         local talentId = (tab - 1) * MAX_NUM_TALENTS + num_talent
         if (talentName and talentIcon) then
           Private.talent_types_specific[player_class][talentId] = "|T"..talentIcon..":0|t "..talentName
         end
       end
     end
+  elseif WeakAuras.IsMists() then
+    -- unused
   else
     local spec = GetSpecialization()
     Private.talent_types_specific[player_class][spec] = Private.talent_types_specific[player_class][spec] or {};
@@ -984,7 +1002,7 @@ local function CreateTalentCache()
     for tier = 1, MAX_TALENT_TIERS do
       for column = 1, NUM_TALENT_COLUMNS do
         -- Get name and icon info for the current talent of the current class and save it
-        local _, talentName, talentIcon = GetTalentInfo(tier, column, 1)
+        local _, talentName, talentIcon = Private.ExecEnv.GetTalentInfo(tier, column, 1)
         local talentId = (tier-1)*3+column
         -- Get the icon and name from the talent cache and record it in the table that will be used by WeakAurasOptions
         if (talentName and talentIcon) then
@@ -1335,9 +1353,9 @@ else
   loadedFrame:RegisterEvent("CHARACTER_POINTS_CHANGED");
   loadedFrame:RegisterEvent("SPELLS_CHANGED");
 end
-loadedFrame:SetScript("OnEvent", function(self, event, addon)
+loadedFrame:SetScript("OnEvent", function(self, event, ...)
   if(event == "ADDON_LOADED") then
-    if(addon == ADDON_NAME) then
+    if(... == ADDON_NAME) then
       ---@type WeakAurasSaved
       WeakAurasSaved = WeakAurasSaved or {};
       db = WeakAurasSaved;
@@ -1358,14 +1376,14 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
       db.migrationCutoff = db.migrationCutoff or 730
       db.historyCutoff = db.historyCutoff or 730
 
-      Private.UpdateCurrentInstanceType();
       Private.SyncParentChildRelationships();
       local isFirstUIDValidation = db.dbVersion == nil or db.dbVersion < 26;
       Private.ValidateUniqueDataIds(isFirstUIDValidation);
 
       if db.lastArchiveClear == nil then
         db.lastArchiveClear = time();
-      elseif db.lastArchiveClear < time() - 86400 then
+      elseif db.lastArchiveClear < time() - 2505600 --[[29 days]] then
+        db.lastArchiveClear = time();
         Private.CleanArchive(db.historyCutoff, db.migrationCutoff);
       end
       db.minimap = db.minimap or { hide = false };
@@ -1403,6 +1421,7 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
   else
     local callback
     if(event == "PLAYER_ENTERING_WORLD") then
+      local isInitialLogin, isReloadingUi = ...
       -- Schedule events that need to be handled some time after login
       local now = GetTime()
       callback = function()
@@ -1412,10 +1431,11 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
           timer:ScheduleTimer(function() squelch_actions = false; end, remainingSquelch); -- No sounds while loading
         end
         CreateTalentCache() -- It seems that GetTalentInfo might give info about whatever class was previously being played, until PLAYER_ENTERING_WORLD
-        Private.UpdateCurrentInstanceType();
         Private.InitializeEncounterAndZoneLists()
       end
-      Private.PostAddCompanion()
+      if isInitialLogin or isReloadingUi then
+        Private.PostAddCompanion()
+      end
     elseif(event == "PLAYER_PVP_TALENT_UPDATE") then
       callback = CreatePvPTalentCache;
     elseif(event == "ACTIVE_TALENT_GROUP_CHANGED" or event == "CHARACTER_POINTS_CHANGED" or event == "SPELLS_CHANGED") then
@@ -1540,48 +1560,6 @@ local function CreateEncounterTable(encounter_id)
   return WeakAuras.CurrentEncounter
 end
 
-local encounterScriptsDeferred = {}
-local function LoadEncounterInitScriptsImpl(id)
-  if (currentInstanceType ~= "raid") then
-    return
-  end
-  if (id) then
-    local data = db.displays[id]
-    if (data and data.load.use_encounterid and not Private.IsEnvironmentInitialized(id) and data.actions.init and data.actions.init.do_custom) then
-      Private.ActivateAuraEnvironment(id)
-      Private.ActivateAuraEnvironment(nil)
-    end
-    encounterScriptsDeferred[id] = nil
-  else
-    for id, data in pairs(db.displays) do
-      if (data.load.use_encounterid and not Private.IsEnvironmentInitialized(id) and data.actions.init and data.actions.init.do_custom) then
-        Private.ActivateAuraEnvironment(id)
-        Private.ActivateAuraEnvironment(nil)
-      end
-    end
-  end
-end
-
-local function LoadEncounterInitScripts(id)
-  if not WeakAuras.IsLoginFinished() then
-    if encounterScriptsDeferred[id] then
-      return
-    end
-    loginQueue[#loginQueue + 1] = {LoadEncounterInitScriptsImpl, {id}}
-    encounterScriptsDeferred[id] = true
-    return
-  end
-  LoadEncounterInitScriptsImpl(id)
-end
-
-function Private.UpdateCurrentInstanceType(instanceType)
-  if (not IsInInstance()) then
-    currentInstanceType = "none"
-  else
-    currentInstanceType = instanceType or select (2, GetInstanceInfo())
-  end
-end
-
 local pausedOptionsProcessing = false;
 function Private.pauseOptionsProcessing(enable)
   pausedOptionsProcessing = enable;
@@ -1605,8 +1583,12 @@ local function GetInstanceTypeAndSize()
   local size, difficulty
   local inInstance, Type = IsInInstance()
   local _, instanceType, difficultyIndex, _, _, _, _, instanceId = GetInstanceInfo()
-  if (inInstance) then
+  if inInstance or instanceType ~= "none" then
     size = Type
+    -- WORKAROUND Tol'Viron arena returning a difficulty index of 1
+    if Type == "arena" or Type == "pvp" then
+      difficultyIndex = 0
+    end
     local difficultyInfo = Private.difficulty_info[difficultyIndex]
     if difficultyInfo then
       size, difficulty = difficultyInfo.size, difficultyInfo.difficulty
@@ -1625,7 +1607,7 @@ local function GetInstanceTypeAndSize()
     end
     return size, difficulty, instanceType, instanceId, difficultyIndex
   end
-  return "none", "none", nil, nil, nil
+  return "none", "none", nil, nil, 0
 end
 
 ---@return string instanceType
@@ -1679,6 +1661,7 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
   end
 
   local player, realm, zone = UnitName("player"), GetRealmName(), GetRealZoneText()
+  local guild = GetGuildInfo("player")
   --- @type boolean|number|nil, boolean|string|nil, boolean|string|nil, boolean|string
   local specId, role, position, raidRole = false, false, false, false
   --- @type boolean, boolean, boolean
@@ -1706,41 +1689,43 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
   end
 
   local mounted = IsMounted()
-  if WeakAuras.IsClassicOrCata() then
+  if WeakAuras.IsClassicOrWrathOrCataOrMists() then
     local raidID = UnitInRaid("player")
     if raidID then
       raidRole = select(10, GetRaidRosterInfo(raidID))
     end
     role = "none"
-    if WeakAuras.IsCataClassic() then
-      vehicle = UnitInVehicle('player') or UnitOnTaxi('player') or false
-      vehicleUi = UnitHasVehicleUI('player') or HasOverrideActionBar() or HasVehicleActionBar() or false
-    else
-      vehicle = UnitOnTaxi('player')
+    if WeakAuras.IsWrathClassic() then
+      role = UnitGroupRolesAssigned("player")
+      if role == "NONE" then
+        role = GetTalentGroupRole(GetActiveTalentGroup()) or "NONE"
+      end
     end
-  else
-    dragonriding = Private.IsDragonriding()
-    inPetBattle = C_PetBattles.IsInBattle()
+  end
+  if WeakAuras.IsClassicEra() then
+    vehicle = UnitOnTaxi('player')
+  end
+  if WeakAuras.IsWrathOrCataOrMistsOrRetail() then
     vehicle = UnitInVehicle('player') or UnitOnTaxi('player') or false
     vehicleUi = UnitHasVehicleUI('player') or HasOverrideActionBar() or HasVehicleActionBar() or false
   end
-
-  if WeakAuras.IsCataOrRetail() then
+  if WeakAuras.IsCataOrMistsOrRetail() then
     specId, role, position = Private.LibSpecWrapper.SpecRolePositionForUnit("player")
   end
+  if WeakAuras.IsMistsOrRetail() then
+    inPetBattle = C_PetBattles.IsInBattle()
+  end
+  if WeakAuras.IsRetail() then
+    dragonriding = Private.IsDragonriding()
+  end
 
-  local size, difficulty, instanceType, instanceId, difficultyIndex= GetInstanceTypeAndSize()
-  Private.UpdateCurrentInstanceType(instanceType)
+  local size, difficulty, instanceType, instanceId, difficultyIndex = GetInstanceTypeAndSize()
 
   if (WeakAuras.CurrentEncounter) then
     if (instanceId ~= WeakAuras.CurrentEncounter.zone_id and not inCombat) then
       encounter_id = 0
       DestroyEncounterTable()
     end
-  end
-
-  if (event == "ZONE_CHANGED_NEW_AREA") then
-    LoadEncounterInitScripts();
   end
 
   local group = Private.ExecEnv.GroupType()
@@ -1751,6 +1736,17 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
     effectiveLevel = UnitEffectiveLevel("player")
     affixes = C_ChallengeMode.IsChallengeModeActive() and select(2, C_ChallengeMode.GetActiveKeystoneInfo())
     warmodeActive = C_PvP.IsWarModeDesired();
+  end
+
+  local hardcore, runeEngraving = false, false
+  if WeakAuras.IsClassicEra() then
+    hardcore = C_GameRules.IsHardcoreActive()
+    runeEngraving = C_Engraving.IsEngravingEnabled()
+  end
+
+  local pvp = false
+  if WeakAuras.IsWrathClassic() then
+    pvp = UnitIsPVPFreeForAll("player") or UnitIsPVP("player")
   end
 
   local changed = 0;
@@ -1765,14 +1761,20 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
       local loadFunc = loadFuncs[id];
       local loadOpt = loadFuncsForOptions[id];
       if WeakAuras.IsClassicEra() then
-        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, vehicle, mounted, class, player, realm, race, faction, playerLevel, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size)
-        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, vehicle, mounted, class, player, realm, race, faction, playerLevel, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size)
+        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, vehicle, mounted, hardcore, runeEngraving, class, player, realm, guild, race, faction, playerLevel, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size)
+        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, vehicle, mounted, hardcore, runeEngraving, class, player, realm, guild, race, faction, playerLevel, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size)
+      elseif WeakAuras.IsWrathClassic() then
+        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, pvp, vehicle, vehicleUi, mounted, class, player, realm, guild, race, faction, playerLevel, role, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
+        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, pvp, vehicle, vehicleUi, mounted, class, player, realm, guild, race, faction, playerLevel, role, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
       elseif WeakAuras.IsCataClassic() then
-        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, vehicle, vehicleUi, mounted, class, specId, player, realm, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
-        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, vehicle, vehicleUi, mounted, class, specId, player, realm, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
+        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, vehicle, vehicleUi, mounted, class, specId, player, realm, guild, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
+        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, vehicle, vehicleUi, mounted, class, specId, player, realm, guild, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
+      elseif WeakAuras.IsMists() then
+        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, inPetBattle, vehicle, vehicleUi, mounted, class, specId, player, realm, guild, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
+        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, inPetBattle, vehicle, vehicleUi, mounted, class, specId, player, realm, guild, race, faction, playerLevel, role, position, raidRole, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex)
       elseif WeakAuras.IsRetail() then
-        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, warmodeActive, inPetBattle, vehicle, vehicleUi, dragonriding, mounted, specId, player, realm, race, faction, playerLevel, effectiveLevel, role, position, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex, affixes)
-        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, warmodeActive, inPetBattle, vehicle, vehicleUi, dragonriding, mounted, specId, player, realm, race, faction, playerLevel, effectiveLevel, role, position, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex, affixes)
+        shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, inEncounter, warmodeActive, inPetBattle, vehicle, vehicleUi, dragonriding, mounted, specId, player, realm, guild, race, faction, playerLevel, effectiveLevel, role, position, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex, affixes)
+        couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, inEncounter, warmodeActive, inPetBattle, vehicle, vehicleUi, dragonriding, mounted, specId, player, realm, guild, race, faction, playerLevel, effectiveLevel, role, position, group, groupSize, raidMemberType, zone, zoneId, zonegroupId, instanceId, minimapText, encounter_id, size, difficulty, difficultyIndex, affixes)
       end
 
       if(shouldBeLoaded and not loaded[id]) then
@@ -1873,10 +1875,15 @@ else
   loadFrame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 end
 
-if WeakAuras.IsCataClassic() then
+if WeakAuras.IsWrathOrCataOrMists() then
   loadFrame:RegisterEvent("VEHICLE_UPDATE");
   loadFrame:RegisterEvent("UPDATE_VEHICLE_ACTIONBAR")
   loadFrame:RegisterEvent("UPDATE_OVERRIDE_ACTIONBAR");
+end
+
+if WeakAuras.IsMists() then
+  loadFrame:RegisterEvent("PET_BATTLE_OPENING_START");
+  loadFrame:RegisterEvent("PET_BATTLE_CLOSE");
 end
 loadFrame:RegisterEvent("GROUP_ROSTER_UPDATE");
 loadFrame:RegisterEvent("ZONE_CHANGED");
@@ -1894,6 +1901,7 @@ loadFrame:RegisterEvent("PLAYER_ALIVE")
 loadFrame:RegisterEvent("PLAYER_UNGHOST")
 loadFrame:RegisterEvent("PARTY_LEADER_CHANGED")
 loadFrame:RegisterEvent("PLAYER_MOUNT_DISPLAY_CHANGED")
+loadFrame:RegisterEvent("PLAYER_GUILD_UPDATE")
 
 if WeakAuras.IsRetail() then
   Private.callbacks:RegisterCallback("WA_DRAGONRIDING_UPDATE", function ()
@@ -1907,7 +1915,7 @@ local unitLoadFrame = CreateFrame("Frame");
 Private.frames["Display Load Handling 2"] = unitLoadFrame;
 
 unitLoadFrame:RegisterUnitEvent("UNIT_FLAGS", "player");
-if WeakAuras.IsCataOrRetail() then
+if WeakAuras.IsWrathOrCataOrMistsOrRetail() then
   unitLoadFrame:RegisterUnitEvent("UNIT_ENTERED_VEHICLE", "player");
   unitLoadFrame:RegisterUnitEvent("UNIT_EXITED_VEHICLE", "player");
   unitLoadFrame:RegisterUnitEvent("PLAYER_FLAGS_CHANGED", "player");
@@ -1976,6 +1984,15 @@ local function UnloadAll()
   for _, triggerSystem in pairs(triggerSystems) do
     triggerSystem.UnloadAll();
   end
+
+  for id in pairs(loaded) do
+    local func = Private.customActionsFunctions[id] and Private.customActionsFunctions[id]["unload"]
+    if func then
+      Private.ActivateAuraEnvironment(id)
+      xpcall(func, Private.GetErrorHandlerId(id, "onUnload"))
+      Private.ActivateAuraEnvironment(nil)
+    end
+  end
   wipe(loaded);
 end
 
@@ -2011,9 +2028,9 @@ function Private.LoadDisplays(toLoad, ...)
     local uid = WeakAuras.GetData(id).uid
     Private.RegisterForGlobalConditions(uid);
     triggerState[id].triggers = {};
+    triggerState[id].activationTime = {}
     triggerState[id].triggerCount = 0;
     triggerState[id].show = false;
-    triggerState[id].activeTrigger = nil;
     triggerState[id].activatedConditions = {};
     if Private.DebugLog.IsEnabled(uid) then
       WeakAuras.prettyPrint(L["Debug Logging enabled for '%s'"]:format(id))
@@ -2023,22 +2040,38 @@ function Private.LoadDisplays(toLoad, ...)
   for _, triggerSystem in pairs(triggerSystems) do
     triggerSystem.LoadDisplays(toLoad, ...);
   end
+  for id in pairs(toLoad) do
+    local func = Private.customActionsFunctions[id] and Private.customActionsFunctions[id]["load"]
+    if func then
+      Private.ActivateAuraEnvironment(id)
+      xpcall(func, Private.GetErrorHandlerId(id, "onLoad"))
+      Private.ActivateAuraEnvironment(nil)
+    end
+  end
 end
 
 function Private.UnloadDisplays(toUnload, ...)
+  for id in pairs(toUnload) do
+    local func = Private.customActionsFunctions[id] and Private.customActionsFunctions[id]["unload"]
+    if func then
+      Private.ActivateAuraEnvironment(id)
+      xpcall(func, Private.GetErrorHandlerId(id, "onUnload"))
+      Private.ActivateAuraEnvironment(nil)
+    end
+  end
   for _, triggerSystem in pairs(triggerSystems) do
     triggerSystem.UnloadDisplays(toUnload, ...);
   end
 
   for id in pairs(toUnload) do
-
-    for i = 1, triggerState[id].numTriggers do
-      if (triggerState[id][i]) then
-        wipe(triggerState[id][i]);
+    if triggerState[id] then
+      for i = 1, triggerState[id].numTriggers do
+        if (triggerState[id][i]) then
+          wipe(triggerState[id][i])
+        end
       end
+      triggerState[id].show = nil
     end
-    triggerState[id].show = nil;
-    triggerState[id].activeTrigger = nil;
 
     if (timers[id]) then
       for _, trigger in pairs(timers[id]) do
@@ -2089,10 +2122,16 @@ end
 
 ---@private
 function WeakAuras.Delete(data)
+  Private.TimeMachine:DestroyTheUniverse(data.id)
   local id = data.id;
   local uid = data.uid
   local parentId = data.parent
   local parentUid = data.parent and db.displays[data.parent].uid
+
+
+  if loaded[id] then
+    Private.UnloadDisplays({[id] = true})
+  end
 
   Private.callbacks:Fire("AboutToDelete", uid, id, parentUid, parentId)
 
@@ -2183,6 +2222,7 @@ function WeakAuras.Delete(data)
 end
 
 function WeakAuras.Rename(data, newid)
+  -- since we Add() later in this function, we need to destroy the universe first
   local oldid = data.id
   if(data.parent) then
     local parentData = db.displays[data.parent];
@@ -2285,6 +2325,7 @@ function WeakAuras.Rename(data, newid)
 end
 
 function Private.Convert(data, newType)
+  Private.TimeMachine:DestroyTheUniverse(data.id)
   local id = data.id;
   Private.FakeStatesFor(id, false)
 
@@ -2400,10 +2441,11 @@ StaticPopupDialogs["WEAKAURAS_CONFIRM_REPAIR"] = {
     local AutomaticRepairText = L["WeakAuras has detected that it has been downgraded.\nYour saved auras may no longer work properly.\nWould you like to run the |cffff0000EXPERIMENTAL|r repair tool? This will overwrite any changes you have made since the last database upgrade.\nLast upgrade: %s\n\n|cffff0000You should BACKUP your WTF folder BEFORE pressing this button.|r"]
     local ManualRepairText = L["Are you sure you want to run the |cffff0000EXPERIMENTAL|r repair tool?\nThis will overwrite any changes you have made since the last database upgrade.\nLast upgrade: %s"]
 
+    local text = WeakAuras.IsWrathClassic() and self.Text or self.text
     if self.data.reason == "user" then
-      self.text:SetText(ManualRepairText:format(LastUpgrade()))
+      text:SetText(ManualRepairText:format(LastUpgrade()))
     else
-      self.text:SetText(AutomaticRepairText:format(LastUpgrade()))
+      text:SetText(AutomaticRepairText:format(LastUpgrade()))
     end
   end,
   OnCancel = function(self)
@@ -2414,7 +2456,7 @@ StaticPopupDialogs["WEAKAURAS_CONFIRM_REPAIR"] = {
   whileDead = true,
   showAlert = true,
   timeout = 0,
-  preferredindex = STATICPOPUP_NUMDIALOGS
+  preferredindex = 4
 }
 
 function Private.ValidateUniqueDataIds(silent)
@@ -2643,14 +2685,22 @@ function Private.AddMany(tbl, takeSnapshots)
       copies[data.uid] = CopyTable(data)
       coroutine.yield(200, "addmany prepare snapshot")
     end
-    Private.Threads:Add("snapshot", coroutine.create(function()
-      prettyPrint(L["WeakAuras is creating a rollback snapshot of your auras. This snapshot will allow you to revert to the current state of your auras if something goes wrong. This process may cause your framerate to drop until it is complete."])
-      for uid, data in pairs(copies) do
-        Private.SetMigrationSnapshot(uid, data)
-        coroutine.yield(200, "snapshot")
+    if #order > 0 then
+      Private.Threads:Add("snapshot", coroutine.create(function()
+        prettyPrint(L["WeakAuras is creating a rollback snapshot of your auras. This snapshot will allow you to revert to the current state of your auras if something goes wrong. This process may cause your framerate to drop until it is complete."])
+        for uid, data in pairs(copies) do
+          Private.SetMigrationSnapshot(uid, data)
+          coroutine.yield(200, "snapshot")
+        end
+        prettyPrint(L["Rollback snapshot is complete. Thank you for your patience!"])
+      end), 'normal')
+    else
+      if next(WeakAuras.LoadFromArchive("Repository", "migration").stores) ~= nil then
+        C_Timer.After(1, function()
+          prettyPrint(L["WeakAuras has detected empty settings. If this is unexpected, ask for assitance on https://discord.gg/weakauras."])
+        end)
       end
-      prettyPrint(L["Rollback snapshot is complete. Thank you for your patience!"])
-    end), 'normal')
+    end
   end
 
   local groups = {}
@@ -2703,7 +2753,7 @@ function Private.AddMany(tbl, takeSnapshots)
           Private.regions[data.id].region:ReloadControlledChildren()
         end
       else
-        WeakAuras.Add(data)
+        Private.Add(data)
       end
     end
     coroutine.yield(1000, "addmany reload dynamic group");
@@ -2963,6 +3013,7 @@ local oldDataStub2 = {
   conditions = {},
 }
 
+--- @type fun(data: auraData)
 function Private.UpdateSoundIcon(data)
   local function testConditions()
     local sound, tts
@@ -3011,6 +3062,48 @@ function Private.UpdateSoundIcon(data)
   else
     Private.AuraWarnings.UpdateWarning(data.uid, "tts_condition")
   end
+end
+
+function Private.ClearSounds(uid, severity)
+  local data = Private.GetDataByUID(uid)
+
+  for child in Private.TraverseLeafsOrAura(data) do
+    local changed = false
+    if child.conditions then
+      for _, condition in ipairs(child.conditions) do
+        for changeIndex = #condition.changes, 1, -1 do
+          local change = condition.changes[changeIndex]
+          if change.property == "sound" and severity == "sound" then
+            tremove(condition.changes, changeIndex)
+            changed = true
+          elseif change.property == "chat" and change.value and change.value.message_type == "TTS" and severity == "tts" then
+            tremove(condition.changes, changeIndex)
+            changed = true
+          end
+        end
+      end
+    end
+
+    if severity == "sound" and (child.actions.start.do_sound or child.actions.finish.do_sound) then
+      child.actions.start.do_sound = false
+      child.actions.finish.do_sound = false
+      changed = true
+    elseif severity == "tts" then
+      if child.actions.start.do_message and child.actions.start.message_type == "TTS" then
+        child.actions.start.do_message = false
+        changed = true
+      end
+      if child.actions.finish.do_message and child.actions.finish.message_type == "TTS" then
+        child.actions.finish.do_message = false
+        changed = true
+      end
+    end
+    if changed then
+      WeakAuras.Add(child)
+    end
+  end
+  WeakAuras.ClearAndUpdateOptions(data.id, true)
+  WeakAuras.FillOptions()
 end
 
 function WeakAuras.PreAdd(data, snapshot)
@@ -3176,11 +3269,11 @@ function pAdd(data, simpleChange)
       loadEvents["SCAN_ALL"][id] = true
 
       local loadForOptionsFuncStr = ConstructFunction(load_prototype, data.load, true);
-      local loadFunc = Private.LoadFunction(loadFuncStr);
-      local loadForOptionsFunc = Private.LoadFunction(loadForOptionsFuncStr);
+      local loadFunc = Private.LoadFunction(loadFuncStr, id);
+      local loadForOptionsFunc = Private.LoadFunction(loadForOptionsFuncStr, id);
       local triggerLogicFunc;
       if data.triggers.disjunctive == "custom" then
-        triggerLogicFunc = WeakAuras.LoadFunction("return "..(data.triggers.customTriggerLogic or ""));
+        triggerLogicFunc = WeakAuras.LoadFunction("return "..(data.triggers.customTriggerLogic or ""), data.id);
       end
 
       LoadCustomActionFunctions(data);
@@ -3212,11 +3305,10 @@ function pAdd(data, simpleChange)
         activeTriggerMode = data.triggers.activeTriggerMode or Private.trigger_modes.first_active,
         triggerLogicFunc = triggerLogicFunc,
         triggers = {},
+        activationTime = {},
         triggerCount = 0,
         activatedConditions = {},
       };
-
-      LoadEncounterInitScripts(id);
 
       if (WeakAuras.IsOptionsOpen()) then
         Private.FakeStatesFor(id, visible)
@@ -3232,8 +3324,7 @@ function pAdd(data, simpleChange)
   end
 end
 
----@private
-function WeakAuras.Add(data, simpleChange)
+function Private.Add(data, simpleChange)
   local oldSnapshot
   if Private.ModernizeNeedsOldSnapshot(data) then
     oldSnapshot = Private.GetMigrationSnapshot(data.uid)
@@ -3245,6 +3336,11 @@ function WeakAuras.Add(data, simpleChange)
   if ok then
     pAdd(data, simpleChange)
   end
+end
+
+function WeakAuras.Add(data, simpleChange)
+  Private.TimeMachine:DestroyTheUniverse(data.id)
+  Private.Add(data, simpleChange)
 end
 
 function Private.AddParents(data)
@@ -3311,9 +3407,10 @@ function Private.SetRegion(data, cloneId)
       Private.validate(data, regionTypes[regionType].default);
 
       local parent = WeakAurasFrame;
-      if(data.parent) then
-        if WeakAuras.GetData(data.parent) then
-          parent = Private.EnsureRegion(data.parent)
+      if data.parent then
+        local parentRegion = Private.EnsureRegion(data.parent)
+        if parentRegion then
+          parent = parentRegion
         else
           data.parent = nil;
         end
@@ -3382,6 +3479,10 @@ local function EnsureRegion(id)
       local data = WeakAuras.GetData(id)
       tinsert(aurasToCreate, data.id)
       id = data.parent
+
+      if WeakAuras.GetRegion(id) then
+        break
+      end
     end
 
     for _, toCreateId in ipairs_reverse(aurasToCreate) do
@@ -3465,24 +3566,19 @@ function Private.ReleaseClone(id, cloneId, regionType)
   end
 end
 
-function Private.HandleChatAction(message_type, message, message_dest, message_dest_isunit, message_channel, r, g, b, region, customFunc, when, formatters, voice)
+function Private.HandleChatAction(message_type, message, message_dest, message_dest_isunit, message_channel, r, g, b, region, customCache, when, formatters)
   local useHiddenStates = when == "finish"
   if (message:find('%%')) then
-    message = Private.ReplacePlaceHolders(message, region, customFunc, useHiddenStates, formatters);
+    message = Private.ReplacePlaceHolders(message, region, customCache, useHiddenStates, formatters);
   end
   if(message_type == "PRINT") then
     DEFAULT_CHAT_FRAME:AddMessage(message, r or 1, g or 1, b or 1);
   elseif message_type == "TTS" then
-    local validVoice = voice and Private.tts_voices[voice]
     if not Private.SquelchingActions() then
       pcall(function()
-        C_VoiceChat.SpeakText(
-          validVoice and voice or next(Private.tts_voices) or 0,
-          message,
-          1,
-          C_TTSSettings and C_TTSSettings.GetSpeechRate() or 0,
-          C_TTSSettings and C_TTSSettings.GetSpeechVolume() or 100
-        );
+        local voice = TextToSpeech_GetSelectedVoice(Enum.TtsVoiceType.Standard)
+        if not voice then return end
+        TextToSpeech_Speak(message, voice)
       end)
     end
   elseif message_type == "ERROR" then
@@ -3494,7 +3590,7 @@ function Private.HandleChatAction(message_type, message, message_dest, message_d
   elseif(message_type == "WHISPER") then
     if(message_dest) then
       if (message_dest:find('%%')) then
-        message_dest = Private.ReplacePlaceHolders(message_dest, region, customFunc, useHiddenStates, formatters);
+        message_dest = Private.ReplacePlaceHolders(message_dest, region, customCache, useHiddenStates, formatters);
       end
       if message_dest_isunit == true then
         message_dest = GetUnitName(message_dest, true)
@@ -3771,7 +3867,7 @@ function Private.PerformActions(data, when, region)
 
   if(actions.do_message and actions.message_type and actions.message) then
     local customFunc = Private.customActionsFunctions[data.id][when .. "_message"];
-    Private.HandleChatAction(actions.message_type, actions.message, actions.message_dest, actions.message_dest_isunit, actions.message_channel, actions.r, actions.g, actions.b, region, customFunc, when, formatters, actions.message_tts_voice);
+    Private.HandleChatAction(actions.message_type, actions.message, actions.message_dest, actions.message_dest_isunit, actions.message_channel, actions.r, actions.g, actions.b, region, {customFunc = customFunc}, when, formatters);
   end
 
   if (actions.stop_sound) then
@@ -4057,6 +4153,24 @@ function Private.GetTriggerConditions(data)
           return (state and state.id and triggerState[state.id].triggers[i] or false) == (needle == 1);
         end
       }
+      conditions[i].activationTime = {
+        display = L["Since Active"],
+        type = "elapsedTimer",
+        operator_types = "without_equal",
+
+        test = function(state, needle, op)
+          if state and state.id and triggerState[state.id] and triggerState[state.id].activationTime[i] then
+            local activationTime = triggerState[state.id].activationTime[i]
+            return (GetTime() <= activationTime + needle) == (op == "<=")
+          end
+        end,
+        recheckTime = function(state, needle)
+          if state and state.id and triggerState[state.id] and triggerState[state.id].activationTime[i] then
+            return triggerState[state.id].activationTime[i] + needle
+          end
+        end,
+
+      }
     end
   end
   return conditions;
@@ -4074,6 +4188,7 @@ local function CreateFallbackState(id, triggernum)
   local triggerSystem = GetTriggerSystem(data, triggernum);
   if (triggerSystem) then
     triggerSystem.CreateFallbackState(data, triggernum, state)
+    state.id = id
     state.trigger = data.triggers[triggernum].trigger
     state.triggernum = triggernum
   else
@@ -4522,7 +4637,9 @@ function WeakAuras.GetTriggerStateForTrigger(id, triggernum)
   if (triggernum == -1) then
     return Private.GetGlobalConditionState();
   end
-  triggerState[id][triggernum] = triggerState[id][triggernum] or {}
+  if triggerState[id][triggernum] == nil then
+    triggerState[id][triggernum] = setmetatable({}, Private.allstatesMetatable)
+  end
   return triggerState[id][triggernum];
 end
 
@@ -4561,10 +4678,16 @@ do
       local changed = false
       for triggernum, triggerData in ipairs(triggers) do
         for id, state in pairs(triggerData) do
-          if state.progressType == "timed" and state.expirationTime and state.expirationTime < t and state.duration and state.duration > 0 then
-            state.expirationTime = t + state.duration
-            state.changed = true
-            changed = true
+          if state.progressType == "timed" then
+            local expirationTime = state.expirationTime
+            local duration = state.duration
+            if expirationTime and type(expirationTime) == "number" and expirationTime < t
+               and duration and type(duration) == "number" and duration > 0
+            then
+              state.expirationTime = t + state.duration
+              state.changed = true
+              changed = true
+            end
           end
         end
       end
@@ -4688,7 +4811,7 @@ local function startStopTimers(id, cloneId, triggernum, state)
       timer:CancelTimer(record.handle);
     end
 
-    if expirationTime then
+    if expirationTime and type(expirationTime) == "number" then
       record.handle = timer:ScheduleTimerFixed(
         function()
           if (state.show ~= false and state.show ~= nil) then
@@ -4699,7 +4822,6 @@ local function startStopTimers(id, cloneId, triggernum, state)
             if Private.watched_trigger_events[id] and Private.watched_trigger_events[id][triggernum] then
               Private.AddToWatchedTriggerDelay(id, triggernum)
             end
-
             Private.UpdatedTriggerState(id);
           end
         end,
@@ -4712,7 +4834,7 @@ end
 
 local function ApplyStateToRegion(id, cloneId, region, parent)
   -- Force custom text function to be run again
-  region.values.lastCustomTextUpdate = nil
+  region.values.customTextUpdated = false
   region:Update();
 
   region.subRegionEvents:Notify("Update", region.state, region.states)
@@ -4732,12 +4854,12 @@ local function applyToTriggerStateTriggers(stateShown, id, triggernum)
   if (stateShown and not triggerState[id].triggers[triggernum]) then
     triggerState[id].triggers[triggernum] = true;
     triggerState[id].triggerCount = triggerState[id].triggerCount + 1;
-
+    triggerState[id].activationTime[triggernum] = GetTime()
     return true;
   elseif (not stateShown and triggerState[id].triggers[triggernum]) then
     triggerState[id].triggers[triggernum] = false;
     triggerState[id].triggerCount = triggerState[id].triggerCount - 1;
-
+    triggerState[id].activationTime[triggernum] = nil
     return true;
   end
 
@@ -4830,6 +4952,9 @@ Private.callbacks:RegisterCallback("Rename", function(_, uid, oldId, newId)
 end)
 
 function Private.SendDelayedWatchedTriggers()
+  if WeakAuras.IsOptionsOpen() then
+    return
+  end
   for id in pairs(delayed_watched_trigger) do
     local watched = delayed_watched_trigger[id]
     -- Since the observers are themselves observable, we set the list of observers to
@@ -4846,7 +4971,7 @@ function Private.UpdatedTriggerState(id)
 
   local changed = false;
   for triggernum = 1, triggerState[id].numTriggers do
-    triggerState[id][triggernum] = triggerState[id][triggernum] or {};
+    triggerState[id][triggernum] = triggerState[id][triggernum] or setmetatable({}, Private.allstatesMetatable)
 
     local anyStateShown = false;
 
@@ -4884,7 +5009,6 @@ function Private.UpdatedTriggerState(id)
   end
 
   local oldShow = triggerState[id].show;
-  triggerState[id].activeTrigger = newActiveTrigger;
   triggerState[id].show = show;
   triggerState[id].fallbackStates = nil
 
@@ -4937,7 +5061,6 @@ function Private.UpdatedTriggerState(id)
   end
 
   for triggernum = 1, triggerState[id].numTriggers do
-    triggerState[id][triggernum] = triggerState[id][triggernum] or {};
     for cloneId, state in pairs(triggerState[id][triggernum]) do
       if (not state.show) then
         triggerState[id][triggernum][cloneId] = nil;
@@ -4983,17 +5106,23 @@ function Private.RunCustomTextFunc(region, customFunc)
   return custom
 end
 
-local function ReplaceValuePlaceHolders(textStr, region, customFunc, state, formatter, trigger)
+local function ReplaceValuePlaceHolders(textStr, region, customCache, state, formatter, trigger)
   local value;
-  if string.sub(textStr, 1, 1) == "c" then
+
+  local customIndexSubStr = textStr:match("^c(%d*)$")
+
+  if customIndexSubStr then
     local custom
-    if customFunc then
-      custom = Private.RunCustomTextFunc(region, customFunc)
+    if customCache then
+      if not customCache.custom then
+        customCache.custom = Private.RunCustomTextFunc(region, customCache.customFunc)
+      end
+      custom = customCache.custom
     else
       custom = region.values.custom
     end
 
-    local index = tonumber(textStr:match("^c(%d+)$") or 1)
+    local index = tonumber(customIndexSubStr) or 1
 
     if custom then
       value = custom[index]
@@ -5142,7 +5271,7 @@ end
 
 Private.ContainsPlaceHoldersPredicate = ContainsPlaceHolders
 
-local function ValueForSymbol(symbol, region, customFunc, regionState, regionStates, useHiddenStates, formatters)
+local function ValueForSymbol(symbol, region, customCache, regionState, regionStates, useHiddenStates, formatters)
   local triggerNum, sym = string.match(symbol, "(.+)%.(.+)")
   triggerNum = triggerNum and tonumber(triggerNum)
   if triggerNum and sym then
@@ -5156,7 +5285,7 @@ local function ValueForSymbol(symbol, region, customFunc, regionState, regionSta
             return tostring(value) or ""
           end
         else
-          local value = ReplaceValuePlaceHolders(sym, region, customFunc, regionStates[triggerNum], formatters[symbol], triggerNum);
+          local value = ReplaceValuePlaceHolders(sym, region, customCache, regionStates[triggerNum], formatters[symbol], triggerNum);
           return value or ""
         end
       end
@@ -5166,26 +5295,25 @@ local function ValueForSymbol(symbol, region, customFunc, regionState, regionSta
     if(useHiddenStates or regionState.show) then
       local value = regionState[symbol]
       if formatters[symbol] then
-        return tostring(formatters[symbol](value, regionState, triggerState[regionState.id].activeTrigger) or "") or ""
+        return tostring(formatters[symbol](value, regionState, regionState.triggernum) or "") or ""
       else
         return tostring(value) or ""
       end
     end
     return ""
   else
-    local activeTrigger = triggerState[regionState.id].activeTrigger
     local value = (useHiddenStates or regionState.show)
-                  and ReplaceValuePlaceHolders(symbol, region, customFunc, regionState, formatters[symbol], activeTrigger)
+                  and ReplaceValuePlaceHolders(symbol, region, customCache, regionState, formatters[symbol], regionState.triggernum)
     return value or ""
   end
 end
 
-function Private.ReplacePlaceHolders(textStr, region, customFunc, useHiddenStates, formatters)
+function Private.ReplacePlaceHolders(textStr, region, customCache, useHiddenStates, formatters)
   local regionValues = region.values;
   local regionState = region.state or {};
   local regionStates = region.states or {};
   if (not regionState and not regionValues) then
-    return;
+    return ""
   end
   local endPos = textStr:len();
   if (endPos < 2) then
@@ -5193,13 +5321,13 @@ function Private.ReplacePlaceHolders(textStr, region, customFunc, useHiddenState
     return textStr;
   end
 
-  if (endPos == 2) then
-    if string.byte(textStr, 1) == 37 then
+  if (endPos == 2) then -- Two byte string, quickly check for all cases
+    if string.byte(textStr, 1) == 37 then -- "%"
       local symbol = string.sub(textStr, 2)
       if symbol == "%" then
         return "%" -- Double % input
       end
-      local value = ValueForSymbol(symbol, region, customFunc, regionState, regionStates, useHiddenStates, formatters);
+      local value = ValueForSymbol(symbol, region, customCache, regionState, regionStates, useHiddenStates, formatters);
       if (value) then
         textStr = tostring(value);
       end
@@ -5232,7 +5360,7 @@ function Private.ReplacePlaceHolders(textStr, region, customFunc, useHiddenState
         -- 0-9a-zA-Z or dot character
       else -- End of variable
         local symbol = string.sub(textStr, start, currentPos - 1)
-        result = result .. ValueForSymbol(symbol, region, customFunc, regionState, regionStates, useHiddenStates, formatters)
+        result = result .. ValueForSymbol(symbol, region, customCache, regionState, regionStates, useHiddenStates, formatters)
 
         if char == 37 then
           -- Do nothing
@@ -5243,7 +5371,7 @@ function Private.ReplacePlaceHolders(textStr, region, customFunc, useHiddenState
     elseif state == 3 then
       if char == 125 then -- } closing brace
         local symbol = string.sub(textStr, start, currentPos - 1)
-        result = result .. ValueForSymbol(symbol, region, customFunc, regionState, regionStates, useHiddenStates, formatters)
+        result = result .. ValueForSymbol(symbol, region, customCache, regionState, regionStates, useHiddenStates, formatters)
         start = currentPos + 1
       end
     end
@@ -5255,7 +5383,7 @@ function Private.ReplacePlaceHolders(textStr, region, customFunc, useHiddenState
     result = result .. string.sub(textStr, start, currentPos - 1)
   elseif state == 2 and currentPos > start then
     local symbol = string.sub(textStr, start, currentPos - 1)
-    result = result .. ValueForSymbol(symbol, region, customFunc, regionState, regionStates, useHiddenStates, formatters)
+    result = result .. ValueForSymbol(symbol, region, customCache, regionState, regionStates, useHiddenStates, formatters)
   elseif state == 1 then
     result = result .. "%"
   end
@@ -5309,6 +5437,59 @@ function Private.ParseTextStr(textStr, symbolCallback)
     local symbol = string.sub(textStr, start, currentPos - 1)
     symbolCallback(symbol)
   end
+end
+
+function Private.SetDefaultFormatters(data, input, keyPrefix, metaData)
+  local seenSymbols = {}
+  local setDefaultFormatters = function(symbol)
+    if not data[keyPrefix .. symbol .. "_format"] and not seenSymbols[symbol] then
+      local trigger, sym = string.match(symbol, "(.+)%.(.+)")
+      sym = sym or symbol
+
+      local formatter, args = Private.DefaultFormatterFor(metaData, trigger, sym)
+      data[keyPrefix .. symbol .. "_format"] = formatter
+      for arg, value in pairs(args or {}) do
+        data[keyPrefix .. symbol .. "_" .. arg] = value
+      end
+    end
+    seenSymbols[symbol] = true
+  end
+  Private.ParseTextStr(input, setDefaultFormatters)
+end
+
+function Private.DefaultFormatterFor(stateMetaData, trigger, sym)
+  local formatter
+  local args = {}
+  if sym == "p" or sym == "t" then
+    return "timed", { time_dynamic_threshold = 3 }
+  end
+
+  trigger = tonumber(trigger)
+  if trigger then
+    local metaData = stateMetaData[trigger] and stateMetaData[trigger][sym]
+    if metaData then
+      formatter = metaData.formatter
+      if metaData.formatterArgs then
+        for arg, value in pairs(metaData.formatterArgs) do
+          args[arg] = value
+        end
+      end
+    end
+  else
+    for index, perTriggerData in pairs(stateMetaData) do
+      if perTriggerData[sym] then
+        if not formatter then
+          formatter = perTriggerData[sym].formatter
+        else
+          if formatter ~= perTriggerData[sym].formatter then
+            return "none"
+          end
+        end
+      end
+    end
+  end
+
+  return formatter or "none", args
 end
 
 function Private.CreateFormatters(input, getter, withoutColor, data)
@@ -5366,12 +5547,6 @@ function WeakAuras.IsAuraActive(id)
   local active = triggerState[id]
 
   return active and active.show
-end
-
-function Private.ActiveTrigger(uid)
-  local id = Private.UIDtoID(uid)
-
-  return triggerState[id] and triggerState[id].activeTrigger
 end
 
 -- Attach to Cursor/Frames code
@@ -6412,11 +6587,11 @@ function Private.SortOrderForValues(values)
     local aValue = values[aKey]
     local bValue = values[bKey]
 
-    if aValue:sub(1, #WeakAuras.newFeatureString) == WeakAuras.newFeatureString then
+    if type(aValue) == "string" and aValue:sub(1, #WeakAuras.newFeatureString) == WeakAuras.newFeatureString then
       aValue = aValue:sub(#WeakAuras.newFeatureString + 1)
     end
 
-    if bValue:sub(1, #WeakAuras.newFeatureString) == WeakAuras.newFeatureString then
+    if type(bValue) == "string" and bValue:sub(1, #WeakAuras.newFeatureString) == WeakAuras.newFeatureString then
       bValue = bValue:sub(#WeakAuras.newFeatureString + 1)
     end
 

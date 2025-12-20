@@ -1,11 +1,11 @@
 -- HereBeDragons-Pins is a library to show pins/icons on the world map and minimap
 
-local MAJOR, MINOR = "HereBeDragonsQuestie-Pins-2.0", 14
+local MAJOR, MINOR = "HereBeDragonsQuestie-Pins-2.0", 15
 assert(LibStub, MAJOR .. " requires LibStub")
 
 ---@class HereBeDragonsQuestie-Pins-2.0
 ---@field MinimapGroup Frame
-local pins, _oldversion = LibStub:NewLibrary(MAJOR, MINOR)
+local pins, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
 if not pins then return end
 
 local HBD = LibStub("HereBeDragonsQuestie-2.0")
@@ -26,10 +26,16 @@ pins.worldmapPinRegistry  = pins.worldmapPinRegistry or {}
 pins.worldmapProvider     = pins.worldmapProvider or CreateFromMixins(MapCanvasDataProviderMixin)
 pins.worldmapProviderPin  = pins.worldmapProviderPin or CreateFromMixins(MapCanvasPinMixin)
 
+-- make sure the pool is refreshed
+if oldversion and oldversion < 15 and pins.worldmapProvider and CreateUnsecuredRegionPoolInstance then
+    pins.worldmapProvider:RemoveAllData()
+    pins.worldmapPinsPool = nil
+end
+
 if not pins.worldmapPinsPool then
     -- new frame pools in WoW 11.x
     if CreateUnsecuredRegionPoolInstance then
-        pins.worldmapPinsPool = CreateUnsecuredRegionPoolInstance("HereBeDragonsPinsTemplate")
+        pins.worldmapPinsPool = CreateUnsecuredRegionPoolInstance("HereBeDragonsPinsTemplateQuestie")
     else
         pins.worldmapPinsPool = CreateFramePool("FRAME")
     end
@@ -253,7 +259,7 @@ local function UpdateMinimapPins(force)
         end
 
         for pin, data in pairs(minimapPins) do
-            if instanceID == data.instanceID and math.abs(x-data.x) + math.abs(y-data.y) < 500 then -- questie specific fix
+            if data.instanceID == instanceID and math.abs(x-data.x) + math.abs(y-data.y) < 500 then -- questie specific fix
                 activeMinimapPins[pin] = data
                 data.keep = true
                 -- draw the pin (this may reset data.keep if outside of the map)
@@ -430,8 +436,14 @@ function worldmapProvider:HandlePin(icon, data)
         -- should this pin show on the world map?
         if uiMapID ~= data.uiMapID and data.worldMapShowFlag ~= HBD_PINS_WORLDMAP_SHOW_WORLD then return end
 
-        -- translate to the world map
-        x, y = HBD:GetAzerothWorldMapCoordinatesFromWorld(data.x, data.y, data.instanceID)
+        -- Questie modification
+        -- Icons which already have world map coordinates are not handled correctly by GetAzerothWorldMapCoordinatesFromWorld, so we use them directly.
+        if icon.UiMapID == WORLD_MAP_ID then
+            x, y = icon.x / 100, icon.y / 100
+        else
+            -- translate to the world map
+            x, y = HBD:GetAzerothWorldMapCoordinatesFromWorld(data.x, data.y, data.instanceID)
+        end
     else
         -- check that it matches the instance
         if not HBD.mapData[uiMapID] or HBD.mapData[uiMapID].instance ~= data.instanceID then return end
@@ -822,4 +834,10 @@ function pins:GetVectorToIcon(icon)
     if not x or not y or instance ~= data.instanceID then return nil end
 
     return HBD:GetWorldVector(instance, x, y, data.x, data.y)
+end
+
+if oldversion then
+    if WorldMapFrame:IsShown() then
+        worldmapProvider:RefreshAllData(false)
+    end
 end

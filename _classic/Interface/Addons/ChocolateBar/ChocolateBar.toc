@@ -1,12 +1,13 @@
-## Interface: 110002
+## Interface: 110205, 110207
 ## Title: ChocolateBar
 ## Notes: A display for LibDataBroker-1.1
 ## Author: Kiatra - github.com/Kiatra/ChocolateBar/
-## Version: v3.14
+## Version: v4.2.2
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
 ## X-WoWI-ID: 12326
 ## X-Curse-Project-ID: 17424
 ## SavedVariables: ChocolateBarDB, CB_PlayedTime
+## IconTexture: Interface/AddOns/ChocolateBar/pics/ChocolatePiece
 
 #@no-lib-strip@
 libs\libs.xml
@@ -25,8 +26,8 @@ localization\ptBR.lua
 localization\ruRU.lua
 
 Core.lua
-Jostle.lua
-Jostle2.lua
+JostleClassic.lua
+JostleEditMode.lua
 DragAndDrop.lua
 Chocolate.lua
 Bar.lua

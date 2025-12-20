@@ -16,7 +16,7 @@ NWB.options = {
 	args = {
 		titleText = {
 			type = "description",
-			name = "        " .. NWB.prefixColor .. "NovaWorldBuffs (v" .. NWB.version .. ")",
+			name = "        " .. NWB.prefixColor .. "NovaWorldBuffs (v" .. string.format("%.2f", NWB.version) .. ")",
 			fontSize = "large",
 			order = 1,
 		},
@@ -25,6 +25,80 @@ NWB.options = {
 			name = "|TInterface\\AddOns\\NovaWorldBuffs\\Media\\logo32:32:32:0:20|t |cFF9CD6DEby Novaspark-Arugal|r  |cFF00C800-|r  |cFFFFFF00For help or suggestions discord.gg/RTKMfTmkdj|r",
 			fontSize = "medium",
 			order = 2,
+		},
+		layersHeader = {
+			type = "header",
+			name = NWB.prefixColor .. L["layersHeaderDesc"],
+			order = 80,
+		},
+		minimapLayerFrame = {
+			type = "toggle",
+			name = L["minimapLayerFrameTitle"],
+			desc = L["minimapLayerFrameDesc"],
+			order = 81,
+			get = "getMinimapLayerFrame",
+			set = "setMinimapLayerFrame",
+		},
+		minimapLayerHover = {
+			type = "toggle",
+			name = L["minimapLayerHoverTitle"],
+			desc = L["minimapLayerHoverDesc"],
+			order = 82,
+			get = "getMinimapLayerHover",
+			set = "setMinimapLayerHover",
+		},
+		minimapLayerFrameReset = {
+			type = "execute",
+			name = L["minimapLayerFrameResetTitle"],
+			desc = L["minimapLayerFrameResetDesc"],
+			func = "resetMinimapLayerFrame",
+			order = 83,
+		},
+		minimapLayerZoneID = {
+			type = "toggle",
+			name = L["minimapLayerZoneIDTitle"],
+			desc = L["minimapLayerZoneIDDesc"],
+			order = 84,
+			get = "getMinimapLayerZoneID",
+			set = "setMinimapLayerZoneID",
+		},
+		minimapLayerZoneIDTooltip = {
+			type = "toggle",
+			name = L["minimapLayerZoneIDTooltipTitle"],
+			desc = L["minimapLayerZoneIDTooltipDesc"],
+			order = 85,
+			get = "getMinimapLayerZoneIDTooltip",
+			set = "setMinimapLayerZoneIDTooltip",
+			width = 2,
+		},
+		minimapLayerFont = {
+			type = "select",
+			name = L["minimapLayerFontTitle"],
+			desc = L["minimapLayerFontDesc"],
+			values = NWB.LSM:HashTable("font"),
+			dialogControl = "LSM30_Font",
+			order = 86,
+			get = "getMinimapLayerFont",
+			set = "setMinimapLayerFont",
+		},
+		minimapLayerFontSize = {
+			type = "range",
+			name = L["minimapLayerFontSizeTitle"],
+			desc = L["minimapLayerFontSizeDesc"],
+			order = 87,
+			get = "getMinimapLayerFontSize",
+			set = "setMinimapLayerFontSize",
+			min = 6,
+			max = 20,
+			softMin = 6,
+			softMax = 20,
+			step = 1,
+			width = 1.5,
+		},
+		generalHeader = {
+			type = "header",
+			name = NWB.prefixColor .. L["generalHeaderDesc"],
+			order = 100,
 		},
 		mainText = {
 			type = "description",
@@ -55,11 +129,6 @@ NWB.options = {
 			func = "openBuffListFrame",
 			order = 106,
 			width = 1,
-		},
-		generalHeader = {
-			type = "header",
-			name = NWB.prefixColor .. L["generalHeaderDesc"],
-			order = 100,
 		},
 		showWorldMapMarkers = {
 			type = "toggle",
@@ -167,14 +236,6 @@ NWB.options = {
 			get = "getMinimapButton",
 			set = "setMinimapButton",
 		},
-		minimapLayerHover = {
-			type = "toggle",
-			name = L["minimapLayerHoverTitle"],
-			desc = L["minimapLayerHoverDesc"],
-			order = 122,
-			get = "getMinimapLayerHover",
-			set = "setMinimapLayerHover",
-		},
 		showBuffStats = {
 			type = "toggle",
 			name = L["showBuffStatsTitle"],
@@ -280,30 +341,7 @@ NWB.options = {
 			set = "setShowNaxxMinimapMarkers",
 		},
 		--Shat world markers TBC order = 133.
-		minimapLayerFont = {
-			type = "select",
-			name = L["minimapLayerFontTitle"],
-			desc = L["minimapLayerFontDesc"],
-			values = NWB.LSM:HashTable("font"),
-			dialogControl = "LSM30_Font",
-			order = 134,
-			get = "getMinimapLayerFont",
-			set = "setMinimapLayerFont",
-		},
-		minimapLayerFontSize = {
-			type = "range",
-			name = L["minimapLayerFontSizeTitle"],
-			desc = L["minimapLayerFontSizeDesc"],
-			order = 135,
-			get = "getMinimapLayerFontSize",
-			set = "setMinimapLayerFontSize",
-			min = 6,
-			max = 20,
-			softMin = 6,
-			softMax = 20,
-			step = 1,
-			width = 1.5,
-		},
+		
 		--This needs further work since changing the scale messes up the position.
 		--[[minimapLayerScale = {
 			type = "range",
@@ -326,16 +364,32 @@ NWB.options = {
 			get = "getBigWigsSupport",
 			set = "setBigWigsSupport",
 		},
+		showDisableLayerButtons = {
+			type = "toggle",
+			name = L["showDisableLayerButtonsTitle"],
+			desc = L["showDisableLayerButtonsDesc"],
+			order = 139,
+			get = "getShowDisableLayerButtons",
+			set = "setShowDisableLayerButtons",
+		},
+		resetFrames = {
+			type = "execute",
+			name = L["resetFramesTitle"],
+			desc = L["resetFramesDesc"],
+			func = "resetFrames",
+			order = 140,
+			width = 1,
+		},
 		logonHeader = {
 			type = "header",
 			name = NWB.prefixColor .. L["logonHeaderDesc"],
-			order = 140,
+			order = 143,
 		},
 		logonPrint = {
 			type = "toggle",
 			name = L["logonPrintTitle"],
 			desc = L["logonPrintDesc"],
-			order = 141,
+			order = 144,
 			get = "getLogonPrint",
 			set = "setLogonPrint",
 		},
@@ -343,7 +397,7 @@ NWB.options = {
 			type = "toggle",
 			name = L["logonRendTitle"],
 			desc = L["logonRendDesc"],
-			order = 142,
+			order = 145,
 			get = "getLogonRend",
 			set = "setLogonRend",
 		},
@@ -351,7 +405,7 @@ NWB.options = {
 			type = "toggle",
 			name = L["logonOnyTitle"],
 			desc = L["logonOnyDesc"],
-			order = 143,
+			order = 146,
 			get = "getLogonOny",
 			set = "setLogonOny",
 		},
@@ -359,7 +413,7 @@ NWB.options = {
 			type = "toggle",
 			name = L["logonNefTitle"],
 			desc = L["logonNefDesc"],
-			order = 144,
+			order = 147,
 			get = "getLogonNef",
 			set = "setLogonNef",
 		},
@@ -367,7 +421,7 @@ NWB.options = {
 			type = "toggle",
 			name = L["logonDmfSpawnTitle"],
 			desc = L["logonDmfSpawnDesc"],
-			order = 145,
+			order = 148,
 			get = "getLogonDmfSpawn",
 			set = "setLogonDmfSpawn",
 		},
@@ -375,7 +429,7 @@ NWB.options = {
 			type = "toggle",
 			name = L["logonDmfBuffCooldownTitle"],
 			desc = L["logonDmfBuffCooldownDesc"],
-			order = 146,
+			order = 149,
 			get = "getLogonDmfBuffCooldown",
 			set = "setLogonDmfBuffCooldown",
 		},
@@ -838,18 +892,26 @@ NWB.options = {
 			get = "getAutoDmfBuffType",
 			set = "setAutoDmfBuffType",
 		},
+		skipDmfCookie = {
+			type = "toggle",
+			name = L["skipDmfCookieTitle"],
+			desc = L["skipDmfCookieDesc"],
+			order = 285,
+			get = "getSkipDmfCookie",
+			set = "setSkipDmfCookie",
+		},
 		autoBuffsText = {
 			type = "description",
 			name = "|cFFFF0000" .. L["note"] .. " |cFF9CD6DE" .. L["dmfConfigWarning"],
 			fontSize = "medium",
-			order = 285,
+			order = 286,
 		},
 		dmfSettingsList = {
 			type = "execute",
 			name = L["dmfSettingsListTitle"],
 			desc = L["dmfSettingsListDesc"],
 			func = "openDMFListFrame",
-			order = 286,
+			order = 287,
 		},
 		guildChatFilterHeader = {
 			type = "header",
@@ -969,6 +1031,29 @@ NWB.options = {
 			order = 326,
 			get = "getSoundsDisableInBattlegrounds",
 			set = "setSoundsDisableInBattlegrounds",
+			width = 2,
+		},
+		soundsFirstYellRend = {
+			type = "select",
+			name = L["soundsFirstYellRendTitle"],
+			desc = L["soundsFirstYellRendDesc"],
+			values = function()
+				return NWB:getSounds();
+			end,
+			order = 327,
+			get = "getsoundsFirstYellRend",
+			set = "setsoundsFirstYellRend",
+		},
+		soundsFirstYellOny = {
+			type = "select",
+			name = L["soundsFirstYellOnyTitle"],
+			desc = L["soundsFirstYellOnyDesc"],
+			values = function()
+				return NWB:getSounds();
+			end,
+			order = 328,
+			get = "getsoundsFirstYellOny",
+			set = "setsoundsFirstYellOny",
 		},
 		soundsFirstYell = {
 			type = "select",
@@ -977,7 +1062,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds();
 			end,
-			order = 327,
+			order = 329,
 			get = "getSoundsFirstYell",
 			set = "setSoundsFirstYell",
 		},
@@ -988,7 +1073,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds();
 			end,
-			order = 228,
+			order = 230,
 			get = "getSoundsOneMinute",
 			set = "setSoundsOneMinute",
 		},
@@ -999,7 +1084,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("rend");
 			end,
-			order = 329,
+			order = 331,
 			get = "getSoundsRendDrop",
 			set = "setSoundsRendDrop",
 		},
@@ -1010,7 +1095,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("ony");
 			end,
-			order = 330,
+			order = 332,
 			get = "getSoundsOnyDrop",
 			set = "setSoundsOnyDrop",
 		},
@@ -1021,7 +1106,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("nef");
 			end,
-			order = 331,
+			order = 333,
 			get = "getSoundsNefDrop",
 			set = "setSoundsNefDrop",
 		},
@@ -1032,7 +1117,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("zan");
 			end,
-			order = 332,
+			order = 334,
 			get = "getSoundsZanDrop",
 			set = "setSoundsZanDrop",
 		},
@@ -1043,7 +1128,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("npcKilled");
 			end,
-			order = 333,
+			order = 335,
 			get = "getSoundsNpcKilled",
 			set = "setSoundsNpcKilled",
 		},
@@ -1054,7 +1139,7 @@ NWB.options = {
 			values = function()
 				return NWB:getSounds("npcWalking");
 			end,
-			order = 334,
+			order = 336,
 			get = "getSoundsNpcWalking",
 			set = "setSoundsNpcWalking",
 		},
@@ -1102,6 +1187,30 @@ NWB.options = {
 			order = 365,
 			get = "getFlashOnlyInCity",
 			set = "setFlashOnlyInCity",
+		},
+		flashDisableRend = {
+			type = "toggle",
+			name = L["flashDisableRendTitle"],
+			desc = L["flashDisableRendDesc"],
+			order = 366,
+			get = "getFlashDisableRend",
+			set = "setFlashDisableRend",
+		},
+		flashDisableOny = {
+			type = "toggle",
+			name = L["flashDisableOnyTitle"],
+			desc = L["flashDisableOnyDesc"],
+			order = 367,
+			get = "getFlashDisableOny",
+			set = "setFlashDisableOny",
+		},
+		flashDisableZan = {
+			type = "toggle",
+			name = L["flashDisableZanTitle"],
+			desc = L["flashDisableZanDesc"],
+			order = 368,
+			get = "getFlashDisableZan",
+			set = "setFlashDisableZan",
 		},
 		dispelsHeader = {
 			type = "header",
@@ -1223,7 +1332,7 @@ NWB.options = {
 			type = "description",
 			name = "|cFF9CD6DE".. L["trimDataText2Desc"],
 			fontSize = "medium",
-			order = 434,
+			order = 435,
 		},
 		trimDataCharInput = {
 			type = "input",
@@ -1231,7 +1340,7 @@ NWB.options = {
 			desc = L["trimDataCharInputDesc"],
 			get = "getTrimDataCharInput",
 			set = "setTrimDataCharInput",
-			order = 435,
+			order = 436,
 			--width = 1.7,
 			confirm = function(self, input)
 				return string.format(L["trimDataCharInputConfirm"], "|cFFFFFF00" .. input .. "|r");
@@ -1575,23 +1684,6 @@ function NWB:loadSpecificOptions()
 			set = "setGuildNpcWalking",
 		};
 	end
-	if (NWB.isLayered) then
-		NWB.options.args["minimapLayerFrame"] = {
-			type = "toggle",
-			name = L["minimapLayerFrameTitle"],
-			desc = L["minimapLayerFrameDesc"],
-			order = 118,
-			get = "getMinimapLayerFrame",
-			set = "setMinimapLayerFrame",
-		};
-		NWB.options.args["minimapLayerFrameReset"] = {
-			type = "execute",
-			name = L["minimapLayerFrameResetTitle"],
-			desc = L["minimapLayerFrameResetDesc"],
-			func = "resetMinimapLayerFrame",
-			order = 119,
-		};
-	end
 	if (NWB.isSOD) then
 		NWB.options.args["sodHeader"] = {
 			type = "header",
@@ -1795,7 +1887,7 @@ NWB.optionDefaults = {
 		middleBuffWarning = true,
 		middleHideCombat = false,
 		middleHideRaid = false,
-		middleHideBattlegrounds = false,
+		middleHideBattlegrounds = true,
 		middleNpcKilled = true,
 		middleHandInMsg = true,
 		middleHandInMsgWhenOnCooldown = true,
@@ -1865,6 +1957,8 @@ NWB.optionDefaults = {
 		soundsDisableInInstances = true,
 		soundsDisableInBattlegrounds = false,
 		soundsFirstYell = "NWB - Electronic",
+		soundsFirstYellRend = "NWB - Electronic",
+		soundsFirstYellOny = "NWB - Electronic",
 		soundsOneMinute = "None",
 		soundsRendDrop = "NWB - Zelda",
 		soundsOnyDrop = "NWB - Zelda",
@@ -1881,6 +1975,9 @@ NWB.optionDefaults = {
 		flashFirstYellZan = true,
 		flashNpcKilled = true,
 		flashOnlyInCity = true,
+		flashDisableRend = false,
+		flashDisableOny = false,
+		flashDisableZan = false,
 		dispelsMine = true,
 		dispelsMineWBOnly = true,
 		dispelsAll = false,
@@ -1894,10 +1991,13 @@ NWB.optionDefaults = {
 		showBuffStats = false,
 		showBuffAllStats = false,
 		minimapLayerHover = false,
+		minimapLayerZoneID = false,
+		minimapLayerZoneIDTooltip = true,
 		timerLogShowRend = true,
 		timerLogShowOny = true,
 		timerLogShowNef = true,
 		timerLogMergeLayers = true,
+		timerLogHandInOnly = true,
 		copyFormatDiscord = false,
 		trimDataBelowLevel = 1,
 		showUnbuffedAlts = false,
@@ -1926,7 +2026,7 @@ NWB.optionDefaults = {
 		dmfAutoRes = false,
 		dmfAutoResTime = 3,
 		dmfChatCountdown = true,
-		resetLayers14 = true, --Reset layers one time (sometimes needed when upgrading from old version.
+		resetLayers17 = true, --Reset layers one time (sometimes needed when upgrading from old version.
 		resetDailyData = true;
 		resetSongflowers = true, --Reset songflowers one time.
 		beta = false, --Enable features being tested on occasion.
@@ -1948,6 +2048,8 @@ NWB.optionDefaults = {
 		minimapLayerFontSize = 10,
 		minimapLayerScale = 1,
 		buffsFrameMinLevel = 2,
+		skipDmfCookie = true,
+		showDisableLayerButtons = false,
 		
 		--TBC options
 		disableSoundsAboveMaxBuffLevel = true,
@@ -1983,6 +2085,14 @@ NWB.optionDefaults = {
 		printBlackrockHonor = true,
 	},
 };
+
+if (NWB.classic) then
+	NWB.optionDefaults.global.minimapLayerZoneIDTooltip = true;
+end
+
+function NWB:resetMinimapPosition()
+	NWB.db.global.minimapIcon = NWB.optionDefaults.global.minimapIcon;
+end
 
 --Configuraton options are shared but buff data is realm and faction specific so I store timer data seperately.
 --Config options = NWB.db.global (ace3)
@@ -2142,58 +2252,58 @@ function NWB:convertSettings()
 	end
 end
 
-local linesVersion, newVersionFrame;
-local function loadNewVersionFrame()
-	if (not newVersionFrame) then
-		local frame = CreateFrame("Frame", "NWB_NewVersionFrame", UIParent, "BackdropTemplate");
-		frame.scrollFrame = CreateFrame("ScrollFrame", "$parentScrollFrame", frame, "UIPanelScrollFrameTemplate");
-		--frame.scrollFrame:SetAllPoints();
-		frame.scrollChild = CreateFrame("Frame", "$parentScrollChild", frame.scrollFrame);
-		frame.scrollFrame:SetScrollChild(frame.scrollChild);
-		--frame.scrollChild:SetWidth(frame:GetWidth() - 30);
-		frame.scrollChild:SetAllPoints();
-		frame.scrollChild:SetPoint("RIGHT", -40, 0);
-		frame.scrollChild:SetPoint("TOP", 0, -20);
-		frame.scrollChild:SetHeight(1);
-		frame.scrollChild:SetScript("OnSizeChanged", function(self,event)
-			frame.scrollChild:SetWidth(self:GetWidth())
-		end)
-		frame.scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -8);
-		frame.scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 8);
-		
-		frame:SetBackdrop({
-			bgFile = "Interface\\Buttons\\WHITE8x8",
-			insets = {top = 4, left = 4, bottom = 4, right = 4},
-			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-			tileEdge = true,
-			edgeSize = 16,
-		});
-		frame:SetBackdropColor(0, 0, 0, 0.9);
-		frame:SetBackdropBorderColor(1, 1, 1, 0.7);
-		frame.scrollFrame.ScrollBar:ClearAllPoints();
-		frame.scrollFrame.ScrollBar:SetPoint("TOPRIGHT", -5, -(frame.scrollFrame.ScrollBar.ScrollDownButton:GetHeight()) + 1);
-		frame.scrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", -5, frame.scrollFrame.ScrollBar.ScrollUpButton:GetHeight());
+local function loadNewVersionFrame(version, notes, title, icon, x, y)
+ 	if (not _G[addonName .. "UpdateNotesFrame"]) then
+ 		local frame = CreateFrame("Frame", _G[addonName .. "UpdateNotesFrame"], UIParent, "BackdropTemplate");
 		frame:SetToplevel(true);
 		frame:SetMovable(true);
 		frame:EnableMouse(true);
 		frame:SetUserPlaced(false);
-		frame:SetPoint("CENTER", UIParent, 0, 100);
-		frame:SetSize(600, 670);
 		frame:SetFrameStrata("HIGH");
-		frame:SetFrameLevel(140);
+		frame:SetSize(500, 500);
+		frame:SetPoint("TOP", UIParent, "CENTER", x, y);
+		frame:SetBackdrop({
+			bgFile = "Interface\\Buttons\\WHITE8x8",
+			edgeFile = [[Interface/Buttons/WHITE8X8]],
+			edgeSize = 1,
+			insets = {top = 4, left = 4, bottom = 4, right = 4},
+		});
+		frame:SetBackdropColor(0, 0, 0, 1);
+		frame:SetBackdropBorderColor(1, 1, 1, 0.5);
+		frame.title = frame:CreateFontString("$parentFS", "ARTWORK");
+		frame.title:SetFontObject(Game15Font);
+		frame.title:SetPoint("TOP", 0, -8);
+		frame.title2 = frame:CreateFontString("$parentFS", "ARTWORK");
+		frame.title2:SetFontObject(Game15Font);
+		frame.title2:SetPoint("TOP", 0, -24);
+		frame.fs = frame:CreateFontString("$parentFS", "ARTWORK");
+		frame.fs:SetFontObject(Game13Font);
+		frame.fs:SetPoint("TOPLEFT", 15, -52);
+		frame.fs:SetPoint("TOPRIGHT", -15, -52);
+		frame.fs:SetJustifyH("LEFT");
+		frame.texture = frame:CreateTexture(nil, "ARTWORK");
+		--frame.texture:SetPoint("TOPLEFT", 10, -10);
+		frame.texture:SetPoint("TOPRIGHT", frame.title, "TOPLEFT", -10, 0);
+		frame.texture:SetSize(30, 30);
+		frame.closeButton = CreateFrame("Button", "$parentClose", frame, "UIPanelCloseButton");
+		frame.closeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -1, -1);
+		frame.closeButton:SetWidth(26);
+		frame.closeButton:SetHeight(26);
+		frame.closeButton:SetFrameLevel(15);
+		frame.closeButton:SetScript("OnClick", function(self, arg)
+			frame:Hide();
+		end)
 		frame:SetScript("OnMouseDown", function(self, button)
 			if (button == "LeftButton" and not self.isMoving) then
 				self:StartMoving();
 				self.isMoving = true;
-				if (notSpecialFrames) then
-					self:SetUserPlaced(false);
-				end
 			end
 		end)
 		frame:SetScript("OnMouseUp", function(self, button)
 			if (button == "LeftButton" and self.isMoving) then
 				self:StopMovingOrSizing();
 				self.isMoving = false;
+				frame:SetUserPlaced(false);
 			end
 		end)
 		frame:SetScript("OnHide", function(self)
@@ -2201,118 +2311,40 @@ local function loadNewVersionFrame()
 				self:StopMovingOrSizing();
 				self.isMoving = false;
 			end
-		end)
-		frame.scrollChild:EnableMouse(true);
-		--frame.scrollChild:SetHyperlinksEnabled(true);
-		--frame.scrollChild:SetScript("OnHyperlinkClick", ChatFrame_OnHyperlinkShow);
-		--Set all fonts in the module using the frame.
-		--Header string.
-		frame.scrollChild.fs = frame.scrollChild:CreateFontString("NWB_NewVersionFrameFS", "ARTWORK");
-		frame.scrollChild.fs:SetPoint("TOP", 0, -0);
-		--The main display string.
-		frame.scrollChild.fs2 = frame.scrollChild:CreateFontString("NWB_NewVersionFrameFS2", "ARTWORK");
-		frame.scrollChild.fs2:SetPoint("TOPLEFT", 10, -24);
-		frame.scrollChild.fs2:SetJustifyH("LEFT");
-		--Bottom string.
-		frame.scrollChild.fs3 = frame.scrollChild:CreateFontString("NWB_NewVersionFrameFS3", "ARTWORK");
-		frame.scrollChild.fs3:SetPoint("BOTTOM", 0, -20);
-		--frame.scrollChild.fs3:SetFont(NWB.regionFont, 14);
-		--Top right X close button.
-		frame.close = CreateFrame("Button", "NWB_NewVersionFrameClose", frame, "UIPanelCloseButton");
-		frame.close:SetPoint("TOPRIGHT", -22, -4);
-		frame.close:SetWidth(20);
-		frame.close:SetHeight(20);
-		frame.close:SetScript("OnClick", function(self, arg)
-			frame:Hide();
-		end)
-		frame.close:GetNormalTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetHighlightTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetPushedTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame.close:GetDisabledTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
-		frame:SetFrameStrata("HIGH");
-		frame:SetClampedToScreen(true);
-		frame.scrollChild.fs:SetFont(NWB.regionFont, 14);
-		frame.scrollChild.fs2:SetFontObject(Game15Font);
-		frame.scrollChild.fs3:SetFont(NWB.regionFont, 14);
-		frame.scrollChild.fs:ClearAllPoints();
-		frame.scrollChild.fs2:ClearAllPoints();
-		frame.scrollChild.fs3:ClearAllPoints();
-		frame.scrollChild.fs:SetPoint("TOP", 0, -5);
-		frame.scrollChild.fs2:SetPoint("TOP", 0, -25);
-		frame.scrollChild.fs3:SetPoint("TOPLEFT", 10, -48);
-		frame.scrollChild.fs3:SetPoint("RIGHT", 0, -48);
-		frame.scrollChild.fs3:SetJustifyH("LEFT");
-		frame.scrollChild.fs3:CanWordWrap(true);
-		frame.scrollChild.fs3:CanNonSpaceWrap(true);
-		frame.scrollChild.fs3:SetNonSpaceWrap(true);
-		frame.scrollChild.fs3:SetWordWrap(true);
-		frame.scrollChild.fs:SetText("|TInterface\\Icons\\inv_misc_head_dragon_01:14:14:0:0|t  |cFFFFFF00Nova World Buffs");
-		frame.scrollChild.fs2:SetText("|cFFFFFF00New in version|r |cFFFF6900" .. string.format("%.2f", NWB.version));
-		frame:Hide();
-		newVersionFrame = frame;
-	end
-	linesVersion = 2.85;
-	local lines = {
-		--" ",
-		"|cFFFF6900[Era]|r",
-		"- Re-enabled buff timers on Era realms with Blizzard reversing the decision to remove them.",
-		"- Removed nef hand in cooldown timer on Era realms, it's been broken and without a cooldown since SoD release and wasn't fixed when they re-added timers to era today so I'm guessing it won't get fixed any time soon (or maybe they don't realize it's been broken?).",
-		"- Added option to disable minimized client flashes for buff drops when not in a capital city (or other place a buff can drop), enabled by default.",
-		"- Started re-writing a lot of the addon so if Blizzard changes buff timers in the future it can be easily changed in the addon just by modifying a settings file, everything should still be working properly but please let me know if any new bugs pop up.",
-		" ",
-		"|cFFFF6900[SoD Only]|r",
-		"- Removed Rend guild chat msgs on SoD realms since there are so many handins with no cooldown atm, might take a week or so for enough people to update before they completely disappear from guild chat.",
-		"- All buff drop msgs/sounds now have a 10 minute cooldown on a per buff type basis.",
-		"- Fixed EU Blackrock pvp event spawn timer.",
-		" ",
-		" ",
-		"|cFFFFFF00|cFFFF6900Reminder:|r There's an old feature that |cFF00FF00Guild Masters|r can use if they wanted to disable guild chat msgs from this addon for the entire guild, just put any of the following #hashtags anywhere in your public guild note (can add multiple at the same time).|r\n|cFF9CD6DE#nwb1 = Disable ALL msgs at once.\n#nwb2 = Disable timers msgs.\n#nwb3 = Disable buff dropped msgs.\n#nwb4 = Disable !wb command.\n#nwb5 = Disable Songflowers msgs.\n#nwb6 = Disable all timer data from outside the guild.\n#nwb7 = Disable NPC was killed msgs.\n#nwb8 = Disable NPC has started walking msgs.|r",
-		"This list can always be found on the curseforge NWB page.",
-	};
-	--[[if (NWB.realm == "Arugal" or NWB.realm == "Remulos" or NWB.realm == "Yojamba") then
-		lines = {
-			" ",
-			"Added Tol Barad timer to the minimap button mouseover tooltip and guild 10 minute warning.",
-			" ",
-			"|cFFFF6900Note for |cFF00FF00OCE|r:|r |cFF9CD6DEThis version includes a fix for the timers on the Tol Barad/Wintergrasp pvp queueing frame for us so we don't keep seeing timers like \"15 hours left\". If Blizzard ever fixes the OCE timers that's been broken since Wrath launch then I'll remove this queue frame fix.|r",
-		};
-	end]]
-	local text = "";
-	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
-	--Not sure what causes some frame lines to render thicker than others and some not render at all.
-	--[[local separatorText = "-";
-	while (newVersionFrame.scrollFrame:GetWidth() - 55 > newVersionFrame.scrollChild.fs3:GetStringWidth()) do
-		separatorText = separatorText .. "-";
-		newVersionFrame.scrollChild.fs3:SetText(separatorText);
-	end
-	text = text .. separatorText .. "\n";]]
-	text = text .. "\n";
-	if (lines) then
-		for k, v in ipairs(lines) do
-			if (k % 2 == 0) then
-				text = text .. "|cFFFFFFFF" .. v .. "|r\n";
-			else
-				text = text .. "|cFF9CD6DE" .. v .. "|r\n";
-			end
-			--text = text .. separatorText .. "\n";
-			newVersionFrame.scrollChild.fs3:SetText(text);
+	end)
+		_G[addonName .. "UpdateNotesFrame"] = frame;
+ 	end
+ 	local frame = _G[addonName .. "UpdateNotesFrame"];
+ 	frame.texture:SetTexture(icon);
+ 	frame.title:SetText("|cFFFFFF00" .. title);
+	frame.title2:SetText("|cFF00FF00New in|r |cFFFF6900v" .. string.format("%.2f", version) .. "");
+ 	local text = "";
+	if (notes) then
+		for k, v in ipairs(notes) do
+			text = text .. "|TInterface\\QUESTFRAME\\UI-Quest-BulletPoint:12:12:0:0|t |cFFFFFFFF" .. v .. "|r\n\n";
 		end
 	end
-	newVersionFrame:SetSize(600, 50 + newVersionFrame.scrollChild.fs:GetStringHeight() + newVersionFrame.scrollChild.fs2:GetStringHeight() + newVersionFrame.scrollChild.fs3:GetStringHeight());
-	if (text ~= "" and linesVersion == NWB.version) then
-		newVersionFrame.scrollChild.fs3:SetText(text);
-		newVersionFrame:Show();
+	if (text ~= "") then
+		frame.fs:SetText(text);
+		local height = frame.fs:GetStringHeight();
+		frame:SetHeight(height + 75);
+		frame:Show();
 	end
 end
 
+
 function NWB:checkNewVersion()
-	--loadNewVersionFrame();
-	if (NWB.version and NWB.version ~= 9999) then
+	--NWB.db.global.versions = {};
+	local newVersionNotes = 3.17;
+	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isClassic) then
-				--Only show this update for cata users.
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
-					loadNewVersionFrame();
+					local notes = {
+						"The early rend warning when Herald spawned in crossroads has been broken by an API chanhge in the recent patch. The early warning has been changed to detect the nameplate instead, this means you must be waiting within nameplate range of the spawn point at the toip of the tower. If you're Horde you need to turn on friendy nameplates while at the spot for it to work. Everthing should work the same it just means you need to be a lot closer to the spawn now, let me know of any issues.",
+						"Some small layering fixes.",
+					};
+					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end
 			end
 			--Wipe old data.
@@ -2321,6 +2353,20 @@ function NWB:checkNewVersion()
 			NWB.db.global.versions[NWB.version] = GetServerTime();
 		end
 	end
+end
+
+function NWB:resetFrames()
+	NWBlayerFrame:ClearAllPoints();
+	NWBlayerFrame:SetPoint("CENTER", UIParent, 0, 100);
+	NWBbuffListFrame:ClearAllPoints();
+	NWBbuffListFrame:SetPoint("CENTER", UIParent, 20, 120);
+	NWBLFrame:ClearAllPoints();
+	NWBLFrame:SetPoint("CENTER", UIParent, 0, 100);
+	NWBTimerLogFrame:ClearAllPoints();
+	NWBTimerLogFrame:SetPoint("CENTER", UIParent, 0, 100);
+	NWBLayerMapFrame:ClearAllPoints();
+	NWBLayerMapFrame:SetPoint("CENTER", UIParent, 0, 100);
+	NWB:print("Resetting frame positions.");
 end
 
 --Print timers to chat window at logon time.
@@ -2437,7 +2483,8 @@ end
 --Reset colors.
 function NWB:resetMinimapLayerFrame(info)
 	MinimapLayerFrame:ClearAllPoints();
-	MinimapLayerFrame:SetPoint("BOTTOM", Minimap, 2, 4);
+	--MinimapLayerFrame:SetPoint("BOTTOM", Minimap, 2, 4);
+	MinimapLayerFrame:SetPoint("BOTTOM", Minimap, "BOTTOM", 0, 4);
 end
 --Colorize chat prefix in all chat channels.
 function NWB:setColorizePrefixLinks(info, value)
@@ -2523,6 +2570,33 @@ end
 
 function NWB:getFlashOnlyInCity(info)
 	return self.db.global.flashOnlyInCity;
+end
+
+--Flash disable rend.
+function NWB:setFlashDisableRend(info, value)
+	self.db.global.flashDisableRend = value;
+end
+
+function NWB:getFlashDisableRend(info)
+	return self.db.global.flashDisableRend;
+end
+
+--Flash disable ony.
+function NWB:setFlashDisableOny(info, value)
+	self.db.global.flashDisableOny = value;
+end
+
+function NWB:getFlashDisableOny(info)
+	return self.db.global.flashDisableOny;
+end
+
+--Flash disable zan.
+function NWB:setFlashDisableZan(info, value)
+	self.db.global.flashDisableZan = value;
+end
+
+function NWB:getFlashDisableZan(info)
+	return self.db.global.flashDisableZan;
 end
 
 --Minimap button
@@ -3182,7 +3256,7 @@ local sounds = {
 	["NWB - MGS"] = "Interface\\AddOns\\NovaWorldBuffs\\Media\\MGS.ogg",
 	["NWB - MGS2"] = "Interface\\AddOns\\NovaWorldBuffs\\Media\\MGS2.ogg",
 	["NWB - WT"] = "Interface\\AddOns\\NovaWorldBuffs\\Media\\WT.ogg",
-}
+};
 
 function NWB:registerSounds()
 	for k, v in pairs(sounds) do
@@ -3200,7 +3274,7 @@ function NWB:getSounds(type)
 		for k, v in NWB:pairsByKeys(sounds) do
 			NWB.sounds[k] = k;
 		end
-		NWB.sounds["None"] = "None";
+		NWB.sounds["None"] = NONE;
 	end
 	if (type == "rend") then
 		NWB.sounds["NWB - Rend Voice"] = "NWB - Rend Voice";
@@ -3262,18 +3336,40 @@ end
 function NWB:setSoundsFirstYell(info, value)
 	self.db.global.soundsFirstYell = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsFirstYell(info)
 	return self.db.global.soundsFirstYell;
 end
 
+--First yell sound rend.
+function NWB:setsoundsFirstYellRend(info, value)
+	self.db.global.soundsFirstYellRend = value;
+	local soundFile = NWB.LSM:Fetch("sound", value);
+	PlaySoundFile(soundFile, "Master");
+end
+
+function NWB:getsoundsFirstYellRend(info)
+	return self.db.global.soundsFirstYellRend;
+end
+
+--First yell sound ony/nef.
+function NWB:setsoundsFirstYellOny(info, value)
+	self.db.global.soundsFirstYellOny = value;
+	local soundFile = NWB.LSM:Fetch("sound", value);
+	PlaySoundFile(soundFile, "Master");
+end
+
+function NWB:getsoundsFirstYellOny(info)
+	return self.db.global.soundsFirstYellOny;
+end
+
 --One minute warning sound.
 function NWB:setSoundsOneMinute(info, value)
 	self.db.global.soundsOneMinute = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsOneMinute(info)
@@ -3287,7 +3383,7 @@ function NWB:setSoundsRendDrop(info, value)
 		PlaySoundFile("Interface\\AddOns\\NovaWorldBuffs\\Media\\RendDropped.ogg", "Master");
 	else
 		local soundFile = NWB.LSM:Fetch("sound", value);
-		PlaySoundFile(soundFile);
+		PlaySoundFile(soundFile, "Master");
 	end
 end
 
@@ -3302,7 +3398,7 @@ function NWB:setSoundsOnyDrop(info, value)
 		PlaySoundFile("Interface\\AddOns\\NovaWorldBuffs\\Media\\OnyxiaDropped.ogg", "Master");
 	else
 		local soundFile = NWB.LSM:Fetch("sound", value);
-		PlaySoundFile(soundFile);
+		PlaySoundFile(soundFile, "Master");
 	end
 end
 
@@ -3319,7 +3415,7 @@ function NWB:setSoundsNefDrop(info, value)
 		PlaySoundFile("Interface\\AddOns\\NovaWorldBuffs\\Media\\OnyxiaDropped.ogg", "Master");
 	else
 		local soundFile = NWB.LSM:Fetch("sound", value);
-		PlaySoundFile(soundFile);
+		PlaySoundFile(soundFile, "Master");
 	end
 end
 
@@ -3334,7 +3430,7 @@ function NWB:setSoundsZanDrop(info, value)
 		PlaySoundFile("Interface\\AddOns\\NovaWorldBuffs\\Media\\ZandalarDropped.ogg", "Master");
 	else
 		local soundFile = NWB.LSM:Fetch("sound", value);
-		PlaySoundFile(soundFile);
+		PlaySoundFile(soundFile, "Master");
 	end
 end
 
@@ -3346,7 +3442,7 @@ end
 function NWB:setSoundsNpcKilled(info, value)
 	self.db.global.soundsNpcKilled = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsNpcKilled(info)
@@ -3357,7 +3453,7 @@ end
 function NWB:setSoundsDispelsMine(info, value)
 	self.db.global.soundsDispelsMine = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsDispelsMine(info)
@@ -3368,7 +3464,7 @@ end
 function NWB:setSoundsDispelsAll(info, value)
 	self.db.global.soundsDispelsAll = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsDispelsAll(info)
@@ -3437,6 +3533,15 @@ function NWB:getAutoDmfBuffType(info)
 	end
 end
 
+--DMF skip cookie.
+function NWB:setSkipDmfCookie(info, value)
+	self.db.global.skipDmfCookie = value;
+end
+
+function NWB:getSkipDmfCookie(info)
+	return self.db.global.skipDmfCookie;
+end
+
 --Auto get Dire Maul buff.
 function NWB:setAutoDireMaulBuff(info, value)
 	self.db.global.autoDireMaulBuff = value;
@@ -3467,6 +3572,26 @@ end
 
 function NWB:getMinimapLayerHover(info)
 	return self.db.global.minimapLayerHover;
+end
+
+--Show minimap zoneID.
+function NWB:setMinimapLayerZoneID(info, value)
+	self.db.global.minimapLayerZoneID = value;
+	NWB:updateMinimapLayerFrameTextFromCache();
+end
+
+function NWB:getMinimapLayerZoneID(info)
+	return self.db.global.minimapLayerZoneID;
+end
+
+--Show minimap zoneID tooltip.
+function NWB:setMinimapLayerZoneIDTooltip(info, value)
+	self.db.global.minimapLayerZoneIDTooltip = value;
+	NWB:updateMinimapLayerFrameTextFromCache();
+end
+
+function NWB:getMinimapLayerZoneIDTooltip(info)
+	return self.db.global.minimapLayerZoneIDTooltip;
 end
 
 --Trim data of characters below this level.
@@ -3865,6 +3990,18 @@ function NWB:config(i)
 	end
 	local m, ke = {}, {};
 	for k, v in pairs(i) do
+		if (type(k) == "table") then
+			NWB:debug("Data table error found.");
+			if (NWB.isDebug) then
+				print(i);
+				print(k, v);
+				UIParentLoadAddOn("Blizzard_DebugTools");
+				DevTools_Dump(i);
+			end
+			NWB:debug(k, v);
+			NWB:debug(i);
+			return;
+		end
 		if (string.match(k, "r%d")) then
 			table.insert(m, v, k);
 		end
@@ -3947,6 +4084,18 @@ function NWB:getBigWigsSupport(info)
 	return self.db.global.bigWigsSupport;
 end
 
+--Show disable layer buttons.
+function NWB:setShowDisableLayerButtons(info, value)
+	self.db.global.showDisableLayerButtons = value;
+	if (_G["NWBlayerFrame"] and _G["NWBlayerFrame"]:IsShown()) then
+		NWB:recalclayerFrame();
+	end
+end
+
+function NWB:getShowDisableLayerButtons(info)
+	return self.db.global.showDisableLayerButtons;
+end
+
 --Capping support.
 function NWB:setCappingSupport(info, value)
 	self.db.global.cappingSupport = value;
@@ -3960,7 +4109,7 @@ end
 function NWB:setSoundsNpcWalking(info, value)
 	self.db.global.soundsNpcWalking = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsNpcWalking(info)
@@ -4188,7 +4337,7 @@ end
 function NWB:setSoundsBlackfathomBoon(info, value)
 	self.db.global.soundsBlackfathomBoon = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsBlackfathomBoon(info)
@@ -4198,7 +4347,7 @@ end
 function NWB:setSoundsAshenvaleStartsSoon(info, value)
 	self.db.global.soundsAshenvaleStartsSoon = value;
 	local soundFile = NWB.LSM:Fetch("sound", value);
-	PlaySoundFile(soundFile);
+	PlaySoundFile(soundFile, "Master");
 end
 
 function NWB:getSoundsAshenvaleStartsSoon(info)

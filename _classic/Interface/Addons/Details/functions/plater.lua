@@ -3,6 +3,8 @@
 local Details = _G.Details
 local addonName, Details222 = ...
 
+---@type detailsframework
+local detailsFramework = DetailsFramework
 
 local plater_integration_frame = CreateFrame("frame", "DetailsPlaterFrame", UIParent, "BackdropTemplate")
 plater_integration_frame.DamageTaken = {}
@@ -43,12 +45,12 @@ plater_integration_frame.OnTickFrameFunc = function(self, deltaTime)
 			table.insert(damageTable.RealTimeBufferFromPlayer, 1, damageOnThisUpdateFromPlayer)
 			
 			--remove the damage from the buffer
-			local damageRemoved = tremove(damageTable.RealTimeBuffer, CONST_BUFFER_SIZE + 1)
+			local damageRemoved = table.remove(damageTable.RealTimeBuffer, CONST_BUFFER_SIZE + 1)
 			if (damageRemoved) then
 				damageTable.CurrentDamage = max(damageTable.CurrentDamage - damageRemoved, 0)
 			end
 			
-			local damageRemovedFromPlayer = tremove(damageTable.RealTimeBufferFromPlayer, CONST_BUFFER_SIZE + 1)
+			local damageRemovedFromPlayer = table.remove(damageTable.RealTimeBufferFromPlayer, CONST_BUFFER_SIZE + 1)
 			if (damageRemovedFromPlayer) then
 				damageTable.CurrentDamageFromPlayer = max(damageTable.CurrentDamageFromPlayer - damageRemovedFromPlayer, 0)
 			end
@@ -117,7 +119,9 @@ function Details:RefreshPlaterIntegration()
 		Details:Destroy(plater_integration_frame.DamageTaken)
 		
 		--read cleu events
-		plater_integration_frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+		if (detailsFramework.IsWarWowOrBelow()) then
+			plater_integration_frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+		end
 		
 		--start the real time dps updater
 		plater_integration_frame.OnTickFrame.NextUpdate = CONST_REALTIME_UPDATE_TIME
@@ -143,7 +147,9 @@ function Details:RefreshPlaterIntegration()
 		
 	else
 		--unregister the cleu
-		plater_integration_frame:UnregisterEvent ("COMBAT_LOG_EVENT_UNFILTERED")
+		if (detailsFramework.IsWarWowOrBelow()) then
+			plater_integration_frame:UnregisterEvent ("COMBAT_LOG_EVENT_UNFILTERED")
+		end
 		
 		--stop the real time updater
 		plater_integration_frame.OnTickFrame:SetScript("OnUpdate", nil)

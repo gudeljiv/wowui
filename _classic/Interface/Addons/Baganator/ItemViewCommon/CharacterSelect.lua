@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 BaganatorCharacterSelectMixin = {}
 
 local arrowLeft = CreateTextureMarkup("Interface\\AddOns\\Baganator\\Assets\\arrow", 22, 22, 18, 18, 0, 1, 0, 1)
@@ -30,15 +31,7 @@ function BaganatorCharacterSelectMixin:OnLoad()
   addonTable.Skins.AddFrame("ButtonFrame", self)
   addonTable.Skins.AddFrame("Button", self.ManageCharactersButton)
 
-  addonTable.CallbackRegistry:RegisterCallback("SettingChanged",  function(_, settingName)
-    if tIndexOf(addonTable.Config.VisualsFrameOnlySettings, settingName) ~= nil then
-      if self:IsVisible() then
-        addonTable.Utilities.ApplyVisuals(self)
-      end
-    end
-  end)
-
-  self:SetTitle(BAGANATOR_L_ALL_CHARACTERS)
+  self:SetTitle(addonTable.Locales.ALL_CHARACTERS)
 
   local function UpdateForSelection(frame)
     if frame.fullName ~= self.selectedCharacter then
@@ -113,7 +106,6 @@ function BaganatorCharacterSelectMixin:UpdateList()
   local characters = addonTable.Utilities.GetAllCharacters(self.SearchBox:GetText())
   local currentCharacter = Syndicator.API.GetCurrentCharacter()
   local connectedRealms = Syndicator.Utilities.GetConnectedRealms()
-  local currentCharacterData
   local currentRealms = {}
   local everythingElse = {}
   for _, data in ipairs(characters) do
@@ -131,7 +123,6 @@ function BaganatorCharacterSelectMixin:UpdateList()
 end
 
 function BaganatorCharacterSelectMixin:OnShow()
-  addonTable.Utilities.ApplyVisuals(self)
   self:UpdateList()
 end
 
@@ -145,6 +136,6 @@ end
 function BaganatorCharacterSelectMixin:OnDragStop()
   self:StopMovingOrSizing()
   self:SetUserPlaced(false)
-  local point, _, relativePoint, x, y = self:GetPoint(1)
+  local point, _, _, x, y = self:GetPoint(1)
   addonTable.Config.Set(addonTable.Config.Options.CHARACTER_SELECT_POSITION, {point, x, y})
 end

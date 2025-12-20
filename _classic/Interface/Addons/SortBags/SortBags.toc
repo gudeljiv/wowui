@@ -1,6 +1,6 @@
-## Interface: 11504
+## Interface: 11507
 ## Title: SortBags
-## Version: v1.3.6
+## Version: v1.3.8
 ## Notes: Sorts and stacks your items
 ## Author: shirsig
 ## SavedVariablesPerCharacter: SortBagsRightToLeft

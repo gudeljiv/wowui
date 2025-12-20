@@ -1,9 +1,5 @@
----@class QuestieDB
+---@class QuestieDB : QuestieModule
 local QuestieDB = QuestieLoader:CreateModule("QuestieDB")
-
----@type QuestieDBPrivate
-QuestieDB.private = QuestieDB.private or {}
-
 ---@class QuestieDBPrivate
 local _QuestieDB = QuestieDB.private
 
@@ -52,124 +48,78 @@ local QUEST_FLAGS_WEEKLY = 32768
 -- Pre calculated 2 * QUEST_FLAGS, for testing a bit flag
 local QUEST_FLAGS_DAILY_X2 = 2 * QUEST_FLAGS_DAILY
 local QUEST_FLAGS_WEEKLY_X2 = 2 * QUEST_FLAGS_WEEKLY
---- COMPATIBILITY ---
-local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted
 
---- Tag corrections for quests for which the API returns the wrong values.
---- Strucute: [questId] = {tagId, "questType"}
----@type table<number, {[1]: number, [2]: string}>
-local questTagCorrections = {
-    [373] = {81, "Dungeon"},
-    [4146] = {81, "Dungeon"},
-    [5342] = {0, ""},
-    [5344] = {0, ""},
-    [6846] = {41, "PvP"},
-    [6901] = {41, "PvP"},
-    [7001] = {41, "PvP"},
-    [7027] = {41, "PvP"},
-    [7161] = {41, "PvP"},
-    [7162] = {41, "PvP"},
-    [7841] = {0, ""},
-    [7842] = {0, ""},
-    [7843] = {0, ""},
-    [8122] = {41, "PvP"},
-    [8367] = {41, "PvP"},
-    [8371] = {41, "PvP"},
-    [8385] = {41, "PvP"},
-    [8386] = {41, "PvP"},
-    [8388] = {41, "PvP"},
-    [8404] = {41, "PvP"},
-    [8405] = {41, "PvP"},
-    [8406] = {41, "PvP"},
-    [8407] = {41, "PvP"},
-    [8408] = {41, "PvP"},
-    [12170] = {41, "PvP"},
-    [12244] = {41, "PvP"},
-    [12268] = {41, "PvP"},
-    [12270] = {41, "PvP"},
-    [12280] = {41, "PvP"},
-    [12284] = {41, "PvP"},
-    [12288] = {41, "PvP"},
-    [12289] = {41, "PvP"},
-    [12296] = {41, "PvP"},
-    [12314] = {41, "PvP"},
-    [12315] = {41, "PvP"},
-    [12316] = {41, "PvP"},
-    [12317] = {41, "PvP"},
-    [12323] = {41, "PvP"},
-    [12324] = {41, "PvP"},
-    [12432] = {41, "PvP"},
-    [12433] = {41, "PvP"},
-    [12434] = {41, "PvP"},
-    [12437] = {41, "PvP"},
-    [12443] = {41, "PvP"},
-    [12446] = {41, "PvP"},
-    [13129] = {81, "Dungeon"},
-    [13199] = {41, "PvP"},
-    [29135] = {62, "Raid"},
-    [78680] = {1, "Elite"},
-    [78681] = {1, "Elite"},
-    [78684] = {1, "Elite"},
-    [80098] = {1, "Elite"},
-    [80147] = {1, "Elite"},
-    [80148] = {1, "Elite"},
-    [80149] = {1, "Elite"},
-    [80150] = {1, "Elite"},
-    [80151] = {1, "Elite"},
-    [80152] = {1, "Elite"},
-    [90014] = {1, "Elite"},
-    [90054] = {1, "Elite"},
-    [90070] = {1, "Elite"},
-    [90081] = {1, "Elite"},
-    [90091] = {1, "Elite"},
-    [90094] = {1, "Elite"},
-    [90113] = {1, "Elite"},
-    [90114] = {1, "Elite"},
-    [90116] = {1, "Elite"},
-    [90119] = {1, "Elite"},
-    [90122] = {1, "Elite"},
-    [90151] = {1, "Elite"},
-    [90152] = {1, "Elite"},
-    [90159] = {1, "Elite"},
-    [90163] = {1, "Elite"},
-    [90166] = {1, "Elite"},
-    [90169] = {1, "Elite"},
-    [90175] = {1, "Elite"},
-    [90190] = {1, "Elite"},
-    [90202] = {1, "Elite"},
-    [90204] = {1, "Elite"},
-    [90221] = {1, "Elite"},
-    [90225] = {1, "Elite"},
-    [90230] = {1, "Elite"},
-    [90269] = {1, "Elite"},
-    [90271] = {1, "Elite"},
-    [90281] = {1, "Elite"},
-    [90282] = {1, "Elite"},
-    [90287] = {1, "Elite"},
-    [90288] = {1, "Elite"},
-    [90289] = {1, "Elite"},
-    [90308] = {1, "Elite"},
-    [90312] = {1, "Elite"},
+---@enum QuestTagIds
+QuestieDB.questTagIds = {
+    ELITE = 1,
+    CLASS = 21,
+    PVP = 41,
+    RAID = 62,
+    DUNGEON = 81,
+    LEGENDARY = 83,
+    HEROIC = 85,
+    RAID_10 = 88,
+    RAID_25 = 89,
+    SCENARIO = 98,
+    ACCOUNT = 102,
+    CELESTIAL = 294,
 }
 
--- race bitmask data, for easy access
+-- * race bitmask data, for easy access
+-- ? The PlayableRaceBit can be found in ChrRaces.dbc
+-- ? https://wago.tools/db2/ChrRaces?build=5.5.0.60802&filter[PlayableRaceBit]=>-1
+-- ? The values below are calculated by 2^PlayableRaceBit
+---@class RaceKeys
 QuestieDB.raceKeys = {
-    ALL_ALLIANCE = Questie.IsClassic and 77 or Questie.IsCata and 2098253 or 1101,
-    ALL_HORDE = Questie.IsClassic and 178 or Questie.IsCata and 946 or 690,
+    -- Allow all alliance races
+    ALL_ALLIANCE = (function()
+        if Questie.IsClassic then
+            return 77
+        elseif Questie.IsTBC or Questie.IsWotlk then
+            return 1101
+        elseif Questie.IsCata then
+            return 2098253
+        elseif Questie.IsMoP then
+            return 18875469
+        else
+            print("Unknown expansion for ALL_ALLIANCE")
+            return 77
+        end
+    end)(),
+    -- ALlow all horde races
+    ALL_HORDE = (function()
+        if Questie.IsClassic then
+            return 178
+        elseif Questie.IsTBC or Questie.IsWotlk then
+            return 690
+        elseif Questie.IsCata then
+            return 946
+        elseif Questie.IsMoP then
+            return 33555378
+        else
+            print("Unknown expansion for ALL_HORDE")
+            return 178
+        end
+    end)(),
+    -- Allow all races (No limit on allowed races)
     NONE = 0,
 
-    HUMAN = 1,
-    ORC = 2,
-    DWARF = 4,
-    NIGHT_ELF = 8,
-    UNDEAD = 16,
-    TAUREN = 32,
-    GNOME = 64,
-    TROLL = 128,
-    GOBLIN = 256,
-    BLOOD_ELF = 512,
-    DRAENEI = 1024,
-    WORGEN = 2097152, -- lol
+    --[[PlayableRaceBit]]
+    --[[ 0]] HUMAN = 1,
+    --[[ 1]] ORC  = 2,
+    --[[ 2]] DWARF = 4,
+    --[[ 3]] NIGHT_ELF = 8,
+    --[[ 4]] UNDEAD = 16,
+    --[[ 5]] TAUREN = 32,
+    --[[ 6]] GNOME = 64,
+    --[[ 7]] TROLL = 128,
+    --[[ 8]] GOBLIN = 256,                  -- Cata
+    --[[ 9]] BLOOD_ELF = 512,               -- TBC
+    --[[10]] DRAENEI = 1024,                -- TBC
+    --[[21]] WORGEN = 2097152,              -- Cata
+    --[[23]] PANDAREN = 8388608,            -- MoP
+    --[[24]] PANDAREN_ALLIANCE = 16777216,  -- MoP
+    --[[25]] PANDAREN_HORDE = 33554432,     -- MoP
 }
 
 -- Combining these with "and" makes the order matter
@@ -186,6 +136,7 @@ QuestieDB.classKeys = {
     SHAMAN = 64,
     MAGE = 128,
     WARLOCK = 256,
+    MONK = 512,
     DRUID = 1024
 }
 
@@ -249,6 +200,8 @@ function QuestieDB:Initialize()
         hideOnEscape = false,
         preferredIndex = 3
     }
+
+    _QuestieDB.InitializeQuestTagInfoCorrections()
 
     -- For now we store both, the SoD database and the Era/HC database
     local npcBin, npcPtrs, questBin, questPtrs, objBin, objPtrs, itemBin, itemPtrs
@@ -317,6 +270,8 @@ function QuestieDB:Initialize()
     Questiedbcharhidden = Questie.db.char.hidden
 end
 
+---@param objectId ObjectId
+---@return Object|nil
 function QuestieDB:GetObject(objectId)
     if not objectId then
         return nil
@@ -345,6 +300,8 @@ function QuestieDB:GetObject(objectId)
     return obj;
 end
 
+---@param itemId ItemId
+---@return Item|nil
 function QuestieDB:GetItem(itemId)
     if (not itemId) or (itemId == 0) then
         return nil
@@ -427,30 +384,65 @@ end
 
 ---@param questId number
 ---@return boolean
+function QuestieDB.IsCelestialQuest(questId)
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.CELESTIAL
+end
+
+---@param questId number
+---@return boolean
+function QuestieDB.IsAccountQuest(questId)
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.ACCOUNT
+end
+
+---@param questId number
+---@return boolean
+function QuestieDB.IsScenarioQuest(questId)
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.SCENARIO
+end
+
+---@param questId number
+---@return boolean
+function QuestieDB.IsHeroicQuest(questId)
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.HEROIC
+end
+
+---@param questId number
+---@return boolean
+function QuestieDB.IsLegendaryQuest(questId)
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.LEGENDARY
+end
+
+---@param questId number
+---@return boolean
 function QuestieDB.IsDungeonQuest(questId)
-    local questType, _ = QuestieDB.GetQuestTagInfo(questId)
-    return questType == 81
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.DUNGEON
 end
 
 ---@param questId number
 ---@return boolean
 function QuestieDB.IsRaidQuest(questId)
-    local questType, _ = QuestieDB.GetQuestTagInfo(questId)
-    return questType == 62
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.RAID or questTagId == QuestieDB.questTagIds.RAID_10 or questTagId == QuestieDB.questTagIds.RAID_25
 end
 
 ---@param questId number
 ---@return boolean
 function QuestieDB.IsPvPQuest(questId)
-    local questType, _ = QuestieDB.GetQuestTagInfo(questId)
-    return questType == 41
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.PVP
 end
 
 ---@param questId number
 ---@return boolean
 function QuestieDB.IsGroupQuest(questId)
-    local questType, _ = QuestieDB.GetQuestTagInfo(questId)
-    return questType == 1
+    local questTagId, _ = QuestieDB.GetQuestTagInfo(questId)
+    return questTagId == QuestieDB.questTagIds.ELITE
 end
 
 --[[ Commented out because not used anywhere
@@ -472,23 +464,25 @@ local questTagInfoCache = {}
 --- Wrapper function for the GetQuestTagInfo API to correct
 --- quests that are falsely marked by Blizzard and cache the results.
 ---@param questId number
----@return number|nil questType, string|nil questTag
+---@return number|nil questTagId
+---@return string|nil questTagName
 function QuestieDB.GetQuestTagInfo(questId)
     if questTagInfoCache[questId] then
         return questTagInfoCache[questId][1], questTagInfoCache[questId][2]
     end
 
-    local questType, questTag
+    local questTagCorrections = _QuestieDB.questTagCorrections
+    local questTagId, questTagName
     if questTagCorrections[questId] then
-        questType, questTag = questTagCorrections[questId][1], questTagCorrections[questId][2]
+        questTagId, questTagName = questTagCorrections[questId][1], questTagCorrections[questId][2]
     else
-        questType, questTag = GetQuestTagInfo(questId)
+        questTagId, questTagName = GetQuestTagInfo(questId)
     end
 
     -- cache the result to avoid hitting the API throttling limit
-    questTagInfoCache[questId] = {questType, questTag}
+    questTagInfoCache[questId] = {questTagId, questTagName}
 
-    return questType, questTag
+    return questTagId, questTagName
 end
 
 ---@param questId number
@@ -584,7 +578,15 @@ function QuestieDB.IsDoable(questId, debugPrint)
     -- quest in the DB in order to update icons, while
     -- IsDoableVerbose is only called manually by the user.
 
+    local completedQuests = Questie.db.char.complete
+    local currentQuestlog = QuestiePlayer.currentQuestlog
+
     -- These are localized in the init function
+    if completedQuests[questId] then
+        if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Quest " .. questId .. " is already finished!") end
+        return false
+    end
+
     if QuestieCorrectionshiddenQuests[questId] then
         if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Quest " .. questId .. " is hidden automatically!") end
         return false
@@ -670,7 +672,7 @@ function QuestieDB.IsDoable(questId, debugPrint)
 
     local nextQuestInChain = QuestieDB.QueryQuestSingle(questId, "nextQuestInChain")
     if nextQuestInChain and nextQuestInChain ~= 0 then
-        if Questie.db.char.complete[nextQuestInChain] or QuestiePlayer.currentQuestlog[nextQuestInChain] then
+        if completedQuests[nextQuestInChain] or currentQuestlog[nextQuestInChain] then
             if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Follow up quests already completed or in the quest log for quest " .. questId) end
             return false
         end
@@ -681,7 +683,7 @@ function QuestieDB.IsDoable(questId, debugPrint)
     local ExclusiveQuestGroup = QuestieDB.QueryQuestSingle(questId, "exclusiveTo")
     if ExclusiveQuestGroup then -- fix (DO NOT REVERT, tested thoroughly)
         for _, v in pairs(ExclusiveQuestGroup) do
-            if Questie.db.char.complete[v] or QuestiePlayer.currentQuestlog[v] then
+            if completedQuests[v] or currentQuestlog[v] then
                 if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player has completed a quest exclusive with quest " .. questId) end
                 return false
             end
@@ -695,7 +697,7 @@ function QuestieDB.IsDoable(questId, debugPrint)
 
     local requiredSpecialization = QuestieDB.QueryQuestSingle(questId, "requiredSpecialization")
     if (requiredSpecialization) and (requiredSpecialization > 0) then
-        local hasSpecialization = QuestieProfessions:HasSpecialization(requiredSpecialization)
+        local hasSpecialization = QuestieProfessions.HasSpecialization(requiredSpecialization)
         if (not hasSpecialization) then
             if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet profession specialization requirements for quest " .. questId) end
             return false
@@ -706,11 +708,11 @@ function QuestieDB.IsDoable(questId, debugPrint)
     if (requiredSpell) and (requiredSpell ~= 0) then
         local hasSpell = IsSpellKnownOrOverridesKnown(math.abs(requiredSpell))
         local hasProfSpell = IsPlayerSpell(math.abs(requiredSpell))
-        if (requiredSpell > 0) and (not hasSpell) and (not hasProfSpell) then --if requiredSpell is positive, we make the quest ineligible if the player does NOT have the spell
+        if (requiredSpell > 0) and (not hasSpell) and (not hasProfSpell) then -- if requiredSpell is positive, we make the quest ineligible if the player does NOT have the spell
             if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet learned spell requirements for quest " .. questId) end
             return false
-        elseif (requiredSpell < 0) and (hasSpell or hasProfSpell) then --if requiredSpell is negative, we make the quest ineligible if the player DOES  have the spell
-            if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet unlearned spell requirements for quest " .. questId) end
+        elseif (requiredSpell < 0) and (hasSpell or hasProfSpell) then -- if requiredSpell is negative, we make the quest ineligible if the player DOES have the spell
+            if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet not learned spell requirements for quest " .. questId) end
             return false
         end
     end
@@ -721,6 +723,40 @@ function QuestieDB.IsDoable(questId, debugPrint)
         return false
     end
 
+    -- Check if this quest is a breadcrumb
+    local breadcrumbForQuestId = QuestieDB.QueryQuestSingle(questId, "breadcrumbForQuestId")
+    if breadcrumbForQuestId and breadcrumbForQuestId ~= 0 then
+        -- Check the target quest of this breadcrumb
+        if completedQuests[breadcrumbForQuestId] or currentQuestlog[breadcrumbForQuestId] then
+            if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Target of breadcrumb quest already completed or in the quest log for quest " .. questId) end
+            return false
+        end
+        -- Check if the other breadcrumbs are active
+        local otherBreadcrumbs = QuestieDB.QueryQuestSingle(breadcrumbForQuestId, "breadcrumbs")
+        for _, breadcrumbId in ipairs(otherBreadcrumbs or {}) do -- TODO: Remove `or {}` when we have a validation for the breadcrumb data
+            if breadcrumbId ~= questId and currentQuestlog[breadcrumbId] then
+                if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Alternative breadcrumb quest in the quest log for quest " .. questId) end
+                return false
+            end
+        end
+    end
+
+    -- Check if this quest has active breadcrumbs
+    local breadcrumbs = QuestieDB.QueryQuestSingle(questId, "breadcrumbs")
+    if breadcrumbs then
+        for _, breadcrumbId in ipairs(breadcrumbs) do
+            if QuestiePlayer.currentQuestlog[breadcrumbId] then
+                if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Breadcrumb quest in the quest log for quest " .. questId) end
+                return false
+            end
+        end
+    end
+
+    if DailyQuests.ShouldBeHidden(questId, completedQuests, currentQuestlog) then
+        if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Daily quest " .. questId .. " is not active") end
+        return false
+    end
+
     return true
 end
 
@@ -728,7 +764,7 @@ end
 ---@param debugPrint boolean? -- if true, IsDoable will print conclusions to debug channel
 ---@param returnText boolean? -- if true, IsDoable will return plaintext explanation instead of true/false
 ---@param returnBrief boolean? -- if true and returnText is true, IsDoable will return a very brief explanation instead of a verbose one
----@return boolean
+---@return string
 function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
 
     --!  Before changing any logic in QuestieDB.IsDoable, make sure
@@ -745,6 +781,17 @@ function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
     -- because IsDoable is often called in a loop through every
     -- quest in the DB in order to update icons, while
     -- IsDoableVerbose is only called manually by the user.
+
+    local completedQuests = Questie.db.char.complete
+    local currentQuestlog = QuestiePlayer.currentQuestlog
+
+    if completedQuests[questId] then
+        if returnText and returnBrief then
+            return "Ineligible: Already complete"
+        elseif returnText then
+            return "Player has already completed quest " .. questId .. "!"
+        end
+    end
 
     if C_QuestLog.IsOnQuest(questId) == true then
         local msg = "Quest " .. questId .. " is active!"
@@ -896,10 +943,10 @@ function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
 
     local nextQuestInChain = QuestieDB.QueryQuestSingle(questId, "nextQuestInChain")
     if nextQuestInChain and nextQuestInChain ~= 0 then
-        if Questie.db.char.complete[nextQuestInChain] or QuestiePlayer.currentQuestlog[nextQuestInChain] then
+        if completedQuests[nextQuestInChain] or currentQuestlog[nextQuestInChain] then
             local msg = "Follow up quests already completed or in the quest log for quest " .. questId
             if returnText and returnBrief then
-                return "Ineligible: Later quest completed"
+                return "Ineligible: Later quest completed or active " .. nextQuestInChain
             elseif returnText and not returnBrief then
                 return msg
             end
@@ -911,10 +958,17 @@ function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
     local ExclusiveQuestGroup = QuestieDB.QueryQuestSingle(questId, "exclusiveTo")
     if ExclusiveQuestGroup then -- fix (DO NOT REVERT, tested thoroughly)
         for _, v in pairs(ExclusiveQuestGroup) do
-            if Questie.db.char.complete[v] or QuestiePlayer.currentQuestlog[v] then
-                local msg = "Player has completed a quest exclusive with quest " .. questId
+            if completedQuests[v] then
+                local msg = "Player has completed exclusive quest " .. v
                 if returnText and returnBrief then
                     return "Ineligible: Exclusive quest completed"
+                elseif returnText and not returnBrief then
+                    return msg
+                end
+            elseif currentQuestlog[v] then
+                local msg = "Player has exclusive quest " .. v .. " in their quest log"
+                if returnText and returnBrief then
+                    return "Ineligible: Exclusive quest in quest log"
                 elseif returnText and not returnBrief then
                     return msg
                 end
@@ -933,7 +987,7 @@ function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
 
     local requiredSpecialization = QuestieDB.QueryQuestSingle(questId, "requiredSpecialization")
     if (requiredSpecialization) and (requiredSpecialization > 0) then
-        local hasSpecialization = QuestieProfessions:HasSpecialization(requiredSpecialization)
+        local hasSpecialization = QuestieProfessions.HasSpecialization(requiredSpecialization)
         if (not hasSpecialization) then
             local msg = "Player does not meet profession specialization requirements for quest " .. questId
             if returnText and returnBrief then
@@ -975,16 +1029,54 @@ function QuestieDB.IsDoableVerbose(questId, debugPrint, returnText, returnBrief)
         end
     end
 
-    if returnText then
-        if IsQuestFlaggedCompleted(questId) then
-            if returnBrief then
-                return "Already complete"
-            else
-                return "Player has already completed quest " .. questId .. "!"
+    -- Check if this quest is a breadcrumb
+    local breadcrumbForQuestId = QuestieDB.QueryQuestSingle(questId, "breadcrumbForQuestId")
+    if breadcrumbForQuestId and breadcrumbForQuestId ~= 0 then
+        -- Check the target quest of this breadcrumb
+        if completedQuests[breadcrumbForQuestId] or currentQuestlog[breadcrumbForQuestId] then
+            if returnText and returnBrief then
+                return "Ineligible: Breadcrumb target " .. breadcrumbForQuestId .. " active or finished"
+            elseif returnText and not returnBrief then
+                return "Target of breadcrumb quest " .. breadcrumbForQuestId .. " already completed or in the quest log for quest " .. questId
             end
-        else
-            return "Player is eligible for quest " .. questId .. "!"
         end
+        -- Check if the other breadcrumbs are active
+        local otherBreadcrumbs = QuestieDB.QueryQuestSingle(breadcrumbForQuestId, "breadcrumbs")
+        for _, breadcrumbId in ipairs(otherBreadcrumbs) do
+            if breadcrumbId ~= questId and currentQuestlog[breadcrumbId] then
+                if returnText and returnBrief then
+                    return "Ineligible: Another breadcrumb is active: " .. breadcrumbId
+                elseif returnText and not returnBrief then
+                    return "Alternative breadcrumb quest " .. breadcrumbId .." in the quest log for quest " .. questId
+                end
+            end
+        end
+    end
+
+    -- Check if this quest has active breadcrumbs
+    local breadcrumbs = QuestieDB.QueryQuestSingle(questId, "breadcrumbs")
+    if breadcrumbs then
+        for _, breadcrumbId in ipairs(breadcrumbs) do
+            if currentQuestlog[breadcrumbId] then
+                if returnText and returnBrief then
+                    return "Ineligible: A breadcrumb is active: " .. breadcrumbId
+                elseif returnText and not returnBrief then
+                    return "A breadcrumb quest " .. breadcrumbId .." is in the quest log for quest " .. questId
+                end
+            end
+        end
+    end
+
+    if DailyQuests.ShouldBeHidden(questId, completedQuests, currentQuestlog) then
+        if returnText and returnBrief then
+            return "Ineligible: Daily quest not active"
+        elseif returnText then
+            return "Daily quest " .. questId .. " is not active"
+        end
+    end
+
+    if returnText then
+        return "Player is eligible for quest " .. questId .. "!"
     else
         return ""
     end
@@ -994,7 +1086,7 @@ end
 ---@return number @Complete = 1, Failed = -1, Incomplete = 0
 function QuestieDB.IsComplete(questId)
     local questLogEntry = QuestLogCache.questLog_DO_NOT_MODIFY[questId] -- DO NOT MODIFY THE RETURNED TABLE
-    local noQuestItem = not QuestieQuest:CheckQuestSourceItem(questId)
+    local noQuestItem = not QuestieQuest:CheckQuestSourceItem(questId, false)
 
     --[[ pseudo:
     if no questLogEntry then return 0
@@ -1087,6 +1179,10 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
     ---@field public reputationReward ReputationPair[]
     ---@field public extraObjectives ExtraObjective[]
     ---@field public requiredMaxLevel Level
+    ---@field public isComplete boolean
+    ---@field public Color Color
+    ---@field public breacrumbForQuestId number
+    ---@field public breacrumbs QuestId[]
     local QO = {
         Id = questId
     }
@@ -1103,7 +1199,8 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
 
     ---@type StartedBy
     local startedBy = QO.startedBy
-    QO.Starts = {
+    ---@type Starters
+    QO.Starts = { -- TODO: Rename to Starters
         NPC = startedBy[1],
         GameObject = startedBy[2],
         Item = startedBy[3],
@@ -1118,30 +1215,11 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
 
     ---@type FinishedBy
     local finishedBy = QO.finishedBy
-    if finishedBy[1] then
-        for _, id in pairs(finishedBy[1]) do
-            if id then
-                QO.Finisher = {
-                    Type = "monster",
-                    Id = id,
-                    ---@type Name @We have to hard-type it here because of the function
-                    Name = QuestieDB.QueryNPCSingle(id, "name")
-                }
-            end
-        end
-    end
-    if finishedBy[2] then
-        for _, id in pairs(finishedBy[2]) do
-            if id then
-                QO.Finisher = {
-                    Type = "object",
-                    Id = id,
-                    ---@type Name @We have to hard-type it here because of the function
-                    Name = QuestieDB.QueryObjectSingle(id, "name")
-                }
-            end
-        end
-    end
+    ---@type Finisher
+    QO.Finisher = {
+        NPC = finishedBy[1],
+        GameObject = finishedBy[2],
+    }
 
     --- to differentiate from the current quest log info.
     --- Quest objectives generated from DB+Corrections.
@@ -1201,6 +1279,10 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
                         Text = itemObjective[2],
                         Icon = itemObjective[3]
                     }
+                    if QuestieCorrections.itemObjectiveFirst[questId] then
+                        tinsert(QO.ObjectiveData, 1, QO.ObjectiveData[#QO.ObjectiveData])
+                        tremove(QO.ObjectiveData)
+                    end
                 end
             end
         end
@@ -1226,7 +1308,7 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
                     Icon = creditObjective[4]
                 }
 
-                --? There are quest(s) which have the killCredit at first so we need to switch them
+                --? There are quest(s) which have the killCredit first so we need to switch them
                 -- Place the kill credit objective first
                 if QuestieCorrections.killCreditObjectiveFirst[questId] then
                     tinsert(QO.ObjectiveData, 1, killCreditObjective);
@@ -1247,6 +1329,14 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
                     }
                     QO.SpellItemId = spellObjective[3]
                 end
+
+                --? There are quest(s) which have the spellObjective first so we need to switch them
+                -- Place the spell objective first
+                if QuestieCorrections.spellObjectiveFirst[questId] then
+                    tinsert(QO.ObjectiveData, 1, spellObjective);
+                else
+                    tinsert(QO.ObjectiveData, spellObjective);
+                end
             end
         end
     end
@@ -1260,6 +1350,10 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
             Text = triggerEnd[1],
             Coordinates = triggerEnd[2]
         }
+        if QuestieCorrections.eventObjectiveFirst[questId] then
+            tinsert(QO.ObjectiveData, 1, QO.ObjectiveData[#QO.ObjectiveData])
+            tremove(QO.ObjectiveData)
+        end
     end
 
     --- Quest objectives generated from quest log in QuestieQuest.lua -> QuestieQuest:PopulateQuestLogInfo(quest)
@@ -1274,6 +1368,7 @@ function QuestieDB.GetQuest(questId) -- /dump QuestieDB.GetQuest(867)
     if requiredSourceItems then
         for _, itemId in pairs(requiredSourceItems) do
             if itemId then
+                -- TODO: This is not required anymore since we validate the database for this case
                 -- Make sure requiredSourceItems aren't already an objective
                 local itemObjPresent = false
                 if objectives[3] then
@@ -1382,8 +1477,8 @@ function QuestieDB:GetCreatureLevels(quest)
     return creatureLevels
 end
 
----@param npcId number
----@return table
+---@param npcId NpcId
+---@return NPC|nil
 function QuestieDB:GetNPC(npcId)
     if not npcId then
         return nil
@@ -1448,6 +1543,96 @@ end
 ---------------------------------------------------------------------------------------------------
 -- Modifications to questDB
 
+local questsRequiringNewbieAchievement = {
+    [31316] = true, -- Julia, The Pet Tamer -- Alliance
+    [31812] = true, -- Zunta, The Pet Tamer -- Horde
+    [32008] = true, -- Audrey Burnhep -- Alliance
+    [32009] = true, -- Varzok -- Horde
+}
+
+local questsRequiringTamingKalimdorAchievement = {
+    [31818] = true, -- Zunta
+    [31819] = true, -- Dagra the Fierce
+    [31854] = true, -- Analynn
+    [31862] = true, -- Zonya the Sadist
+    [31871] = true, -- Traitor Gluk
+    [31872] = true, -- Merda Stronghoof
+    [31904] = true, -- Cassandra Kaboom
+    [31905] = true, -- Grazzle the Great
+    [31906] = true, -- Kela Grimtotem
+    [31907] = true, -- Zoltan
+    [31908] = true, -- Elena Flutterfly
+}
+
+local questsRequiringTamingEasternKingdomsAchievement = {
+    [31693] = true, -- Julia Stevens
+    [31780] = true, -- Old MacDonald
+    [31781] = true, -- Lindsay
+    [31850] = true, -- Eric Davidson
+    [31851] = true, -- Bill Buckler
+    [31852] = true, -- Steven Lisbane
+    [31910] = true, -- David Kosse
+    [31911] = true, -- Deiza Plaguehorn
+    [31912] = true, -- Kortas Darkhammer
+    [31913] = true, -- Everessa
+    [31914] = true, -- Durin Darkhammer
+}
+
+local questsRequiringTamingOutlandAchievement = {
+    [31922] = true, -- Nicki Tinytech
+    [31923] = true, -- Ras'an
+    [31924] = true, -- Narrok
+    [31925] = true, -- Morulu The Elder
+    [31926] = true, -- Grand Master Antari
+}
+
+local questsRequiringTamingNorthrendAchievement = {
+    [31931] = true, -- Beegle Blastfuse
+    [31932] = true, -- Nearly Headless Jacob
+    [31933] = true, -- Okrut Dragonwaste
+    [31934] = true, -- Gutretch
+    [31935] = true, -- Grand Master Payne
+}
+
+local questsRequiringTamingCataclysmAchievement = {
+    [31971] = true, -- Grand Master Obalis
+    [31972] = true, -- Brok
+    [31973] = true, -- Bordin Steadyfist
+    [31974] = true, -- Goz Banefury
+}
+
+local questsRequiringTamingPandariaAchievement = {
+    [31953] = true, -- Grand Master Hyuna
+    [31954] = true, -- Grand Master Mo'ruk
+    [31955] = true, -- Grand Master Nishi
+    [31956] = true, -- Grand Master Yon
+    [31957] = true, -- Grand Master Shu
+    [31958] = true, -- Grand Master Aki
+    [31991] = true, -- Grand Master Zusshi
+    [33222] = true, -- Little Tommy Newcomer
+}
+
+local questsRequiringPandarenSpiritTamerAchievement = {
+    [32434] = true, -- Burning Pandaren Spirit
+    [32439] = true, -- Flowing Pandaren Spirit
+    [32440] = true, -- Whispering Pandaren Spirit
+    [32441] = true, -- Thundering Pandaren Spirit
+}
+
+local questsRequiringFabledPandarenTamerAchievement = {
+    [32604] = true, -- Beasts of Fable Book I
+    [32868] = true, -- Beasts of Fable Book II
+    [32869] = true, -- Beasts of Fable Book III
+}
+
+local questsRequiringFriendsOnTheFarmAchievement = {
+    [31312] = true, -- The Old Map
+}
+
+local questsRequiringAllGrownsUpAchievement = {
+    [32863] = true, -- What We've Been Training For
+}
+
 function _QuestieDB:CheckAchievementRequirements(questId)
     -- So far the only Quests that we know of that requires an earned Achievement are the ones offered by:
     -- https://www.wowhead.com/wotlk/npc=35094/crusader-silverdawn
@@ -1462,6 +1647,50 @@ function _QuestieDB:CheckAchievementRequirements(questId)
         end
 
         return false
+    end
+
+    if questsRequiringNewbieAchievement[questId] then
+        return select(13, GetAchievementInfo(7433)) -- Newbie
+    end
+
+    if questsRequiringTamingKalimdorAchievement[questId] then
+        return select(13, GetAchievementInfo(6602)) -- Taming Kalimdor
+    end
+
+    if questsRequiringTamingEasternKingdomsAchievement[questId] then
+        return select(13, GetAchievementInfo(6603)) -- Taming Eastern Kingdoms
+    end
+
+    if questsRequiringTamingOutlandAchievement[questId] then
+        return select(13, GetAchievementInfo(6604)) -- Taming Outland
+    end
+
+    if questsRequiringTamingNorthrendAchievement[questId] then
+        return select(13, GetAchievementInfo(6605)) -- Taming Northrend
+    end
+
+    if questsRequiringTamingCataclysmAchievement[questId] then
+        return select(13, GetAchievementInfo(7525)) -- Taming Cataclysm
+    end
+
+    if questsRequiringTamingPandariaAchievement[questId] then
+        return select(13, GetAchievementInfo(6606)) -- Taming Pandaria
+    end
+
+    if questsRequiringPandarenSpiritTamerAchievement[questId] then
+        return select(13, GetAchievementInfo(7936)) -- Pandaren Spirit Tamer
+    end
+
+    if questsRequiringFabledPandarenTamerAchievement[questId] then
+        return select(13, GetAchievementInfo(8080)) -- Beasts of Fable
+    end
+
+    if questsRequiringFriendsOnTheFarmAchievement[questId] then
+        return select(13, GetAchievementInfo(6552)) -- Friends On The Farm
+    end
+
+    if questsRequiringAllGrownsUpAchievement[questId] then
+        return select(13, GetAchievementInfo(6570)) -- All Growns Up!
     end
 end
 

@@ -34,11 +34,15 @@
 	<Include file="normal_bar.xml"/>
 	<Script file="scrollbox.lua"/>
 	<Include file="panel.xml"/>
+	<Script file="line_indicator.lua"/>
+	<Script file="elapsedtime.lua"/>
 	<Script file="timeline.lua"/>
 	
+	<Script file="ejournal.lua"/>
 	<Script file="buildmenu.lua"/>
 	<Script file="loadconditions.lua"/>
 	<Include file="unitframe.lua"/>
+	<Include file="unitframe_midnight.lua"/>
 	<Script file="icon.lua"/>
 	<Script file="icongeneric.lua"/>
 	<Script file="pictureedit.lua"/>

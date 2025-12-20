@@ -289,6 +289,113 @@ local segmentTypeToString = {
 		return self.amountCasts[actorName] and self.amountCasts[actorName][spellName] or 0
 	end
 
+	---return the amount of casts of crowd control spell by an actor
+	---@param self combat
+	---@param actorName string
+	---@return table<spellid, number>
+	---@return number
+	function classCombat:GetCrowdControlSpells(actorName)
+		local spellsCastedByThisActor = self:GetSpellCastTable(actorName)
+		local amountOfCCCastsByThisActor = self:GetCCCastAmount(actorName)
+		local ccSpellIds = Details.CrowdControlSpellIdsCache
+
+		---@type table<spellid, number>
+		local crowdControlSpellsUsed = {}
+
+		for spellId in pairs(ccSpellIds) do
+			local spellInfo = C_Spell.GetSpellInfo(spellId)
+			if (spellInfo and spellsCastedByThisActor[spellInfo.name]) then
+				local amountOfCasts = spellsCastedByThisActor[spellInfo.name]
+				if (amountOfCasts > 0) then
+					if (Details.debug_spell_cast) then
+						print("GetCrowdControlSpells > ", actorName, spellId, spellInfo.name, amountOfCasts)
+					end
+					crowdControlSpellsUsed[spellId] = amountOfCasts
+				end
+			end
+		end
+
+		return crowdControlSpellsUsed, amountOfCCCastsByThisActor
+	end
+
+	---@class spell_hit_player : table
+	---@field spellId number
+	---@field amount number
+	---@field damagerName string
+
+	---return the amount of damage taken by spells from an actor
+	---@param self combat
+	---@param actorName string
+	---@return spell_hit_player[]
+	function classCombat:GetDamageTakenBySpells(actorName)
+        ---@type actordamage?
+		local actor = self:GetActor(DETAILS_ATTRIBUTE_DAMAGE, actorName)
+		if (not actor) then
+			return {}
+		end
+
+		---@type spell_hit_player[]
+		local spellsThatHitThisPlayer = {}
+
+		for damagerName in pairs (actor.damage_from) do
+			local damagerObject = self:GetActor(DETAILS_ATTRIBUTE_DAMAGE, damagerName)
+			if (damagerObject) then
+				for spellId, spellTable in pairs(damagerObject:GetSpellList()) do
+					if (spellTable.targets and spellTable.targets[actor:Name()]) then
+						local amount = spellTable.targets[actor:Name()]
+						if (amount > 0) then
+							---@type spell_hit_player
+							local spellThatHitThePlayer = {
+								spellId = spellId,
+								amount = amount,
+								damagerName = damagerObject:Name(),
+							}
+							spellsThatHitThisPlayer[#spellsThatHitThisPlayer+1] = spellThatHitThePlayer
+						end
+					end
+				end
+			end
+		end
+
+		table.sort(spellsThatHitThisPlayer, function(t1, t2) return t1.amount > t2.amount end)
+
+		return spellsThatHitThisPlayer
+	end
+
+	function classCombat:GetInterruptCastAmount(actorName)
+		local interruptSpellNames = Details.InterruptSpellNamesCache
+		local playerCasts = self.amountCasts[actorName]
+		if (not playerCasts) then
+			return 0
+		end
+
+		local totalInterruptCasts = 0
+		for spellName, amount in pairs(playerCasts) do
+			if (interruptSpellNames[spellName]) then
+				totalInterruptCasts = totalInterruptCasts + amount
+			end
+		end
+
+		return totalInterruptCasts
+	end
+
+	function classCombat:GetCCCastAmount(actorName)
+		local ccSpellNames = Details.CrowdControlSpellNamesCache
+		local playerCasts = self.amountCasts[actorName]
+		if (not playerCasts) then
+			return 0
+		end
+
+		local totalCC = 0
+		for spellName, amount in pairs(playerCasts) do
+			if (ccSpellNames[spellName]) then
+				totalCC = totalCC + amount
+			end
+		end
+
+		return totalCC
+	end
+
 	---return the cast amount table
 	---@param self combat
 	---@param actorName string|nil
@@ -1230,6 +1337,8 @@ function classCombat:NovaTabela(bTimeStarted, overallCombatObject, combatId, ...
 	combatObject.data_inicio = 0
 	combatObject.tempo_start = _tempo
 
+	combatObject.compressed_charts = {}
+
 	combatObject.boss_hp = 1
 
 	C_Timer.After(0.5, getBossName)
@@ -1362,7 +1471,14 @@ end
 	function classCombat:CreateLastEventsTable(playerName)
 		local lastEventsTable = {}
 
-		for i = 1, Details.deadlog_events do
+		local amountOfIndexes = Details.deadlog_events
+		if (Details.temp_deathlog_limit) then
+			if (Details.temp_deathlog_limit > Details.deadlog_events) then
+				amountOfIndexes = Details.temp_deathlog_limit
+			end
+		end
+
+		for i = 1, amountOfIndexes do
 			lastEventsTable[i] = {}
 		end
 
@@ -1512,6 +1628,14 @@ end
 		local customCombat
 		if (combatRecevingTheSum ~= Details.tabela_overall) then
 			customCombat = combatRecevingTheSum
+		end
+
+		if (combatToAdd.bloodlust and combatToAdd.timeStart) then
+			for i = 1, #combatToAdd.bloodlust do
+				local bloodlust = combatToAdd.bloodlust[i]
+				combatRecevingTheSum.bloodlust_overall = combatRecevingTheSum.bloodlust_overall or {}
+				combatRecevingTheSum.bloodlust_overall[#combatRecevingTheSum.bloodlust_overall+1] = combatToAdd.timeStart + bloodlust
+			end
 		end
 
 		local bRefreshActor = false

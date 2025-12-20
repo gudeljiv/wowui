@@ -1,8 +1,11 @@
 # ClassicCastbars
 
-## [v1.8.1](https://github.com/wardz/ClassicCastbars/tree/v1.8.1) (2024-10-07)
-[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.8.0...v1.8.1) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
+## [v1.8.8](https://github.com/wardz/ClassicCastbars/tree/v1.8.8) (2025-12-17)
+[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.8.7...v1.8.8) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
 
 - bump toc versions  
-- minor optimization  
-- fix/improvement for #85  
+- GetSchoolString to C\_Spell.GetSchoolString  
+- use unsecured framepool instead  
+- minor cleanup  
+- Fix Eye Beam showing as uninterruptible for Giant Eye Tentacle  
+- bump toc versions  

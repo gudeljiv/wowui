@@ -103,11 +103,19 @@ local function CreateSpellOverrideMap()
             local skillLineInfo = C_SpellBook.GetSpellBookSkillLineInfo(skillLineIndex)
             for i = 1, skillLineInfo.numSpellBookItems do
                 local spellIndex = skillLineInfo.itemIndexOffset + i
-                local _, spellId = C_SpellBook.GetSpellBookItemType(spellIndex, Enum.SpellBookSpellBank.Player)
+                local spellType, id, spellId = C_SpellBook.GetSpellBookItemType(spellIndex, Enum.SpellBookSpellBank.Player)
                 if spellId then
                     local newid = C_Spell.GetOverrideSpell(spellId)
                     if newid ~= spellId then
                         spellOverride[newid] = spellId
+                    end
+                elseif spellType == Enum.SpellBookItemType.Flyout then
+                    local _, _, numSlots, isKnown = GetFlyoutInfo(id);
+                    if isKnown and (numSlots > 0) then
+                        for k = 1, numSlots do
+                            local spellID, overrideSpellID = GetFlyoutSlotInfo(id, k)
+                            spellOverride[overrideSpellID] = spellID
+                        end
                     end
                 end
             end
@@ -390,7 +398,7 @@ function MySlot:Export(opt)
     end
 
     msg.petslot = {}
-    if not opt.ignorePetActionBar then
+    if not opt.ignorePetActionBar and IsPetActive() then
         for i = 1, NUM_PET_ACTION_SLOTS, 1 do
             local m = self:GetPetActionInfo(i)
             if m then
@@ -744,6 +752,14 @@ function MySlot:RecoverData(msg, opt)
                             end
                         end
 
+                        -- another fallback option - try to get base spell
+                        if not GetCursorInfo() and FindBaseSpellByID then
+                            local baseSpellId = FindBaseSpellByID(index)
+                            if baseSpellId then
+                                PickupSpell(baseSpellId)
+                            end
+                        end
+
                         if not GetCursorInfo() then
                             MySlot:Print(L["Ignore unlearned skill [id=%s], %s"]:format(index, GetSpellLink(index) or ""))
                         end
@@ -761,7 +777,7 @@ function MySlot:RecoverData(msg, opt)
                         PickupSpell(index)
 
                         if not GetCursorInfo() then
-                            MySlot:Print(L["Ignore unattained companion [id=%s], %s"]:format(index), GetSpellLink(index) or "")
+                            MySlot:Print(L["Ignore unattained companion [id=%s], %s"]:format(index, GetSpellLink(index) or ""))
                         end
                     elseif slotType == MYSLOT_ITEM then
                         PickupItem(index)
@@ -824,7 +840,13 @@ function MySlot:RecoverData(msg, opt)
                     key = b.key1.keycode
                 end
                 key = (mod ~= "NONE" and (mod .. "-") or "") .. key
-                SetBinding(key, command, 1)
+                local bindingContext = 1
+
+                if C_KeyBindings and C_KeyBindings.GetBindingContextForAction then
+                     bindingContext = C_KeyBindings.GetBindingContextForAction(command)
+                end
+
+                SetBinding(key, command, bindingContext)
             end
 
             if b.key2 then
@@ -833,14 +855,19 @@ function MySlot:RecoverData(msg, opt)
                     key = b.key2.keycode
                 end
                 local key = (mod ~= "NONE" and (mod .. "-") or "") .. key
-                SetBinding(key, command, 1)
+                local bindingContext = 1
+
+                if C_KeyBindings and C_KeyBindings.GetBindingContextForAction then
+                     bindingContext = C_KeyBindings.GetBindingContextForAction(command)
+                end
+                SetBinding(key, command, bindingContext)
             end
         end
         SaveBindings(GetCurrentBindingSet())
     end
 
 
-    if not opt.actionOpt.ignorePetActionBar then
+    if not opt.actionOpt.ignorePetActionBar and IsPetActive() then
         local pettoken = {}
         for i = 1, NUM_PET_ACTION_SLOTS, 1 do
             local name, _, isToken = GetPetActionInfo(i)
@@ -892,11 +919,16 @@ function MySlot:Clear(what, opt)
         end
     elseif what == "BINDING" then
         for i = 1, GetNumBindings() do
-            local _, _, key1, key2 = GetBinding(i)
+            local action, _, key1, key2 = GetBinding(i)
 
             for _, key in pairs({ key1, key2 }) do
                 if key then
-                    SetBinding(key, nil, 1)
+                    local bindingContext = 1
+
+                    if C_KeyBindings and C_KeyBindings.GetBindingContextForAction then
+                        bindingContext = C_KeyBindings.GetBindingContextForAction(action)
+                    end
+                    SetBinding(key, nil, bindingContext)
                 end
             end
         end

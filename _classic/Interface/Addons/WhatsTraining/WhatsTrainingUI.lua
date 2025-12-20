@@ -1,10 +1,7 @@
 local _, wt = ...
 local ignoreStore = LibStub:GetLibrary("FusionIgnoreStore-1.0")
 
-local isCata;
-if (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC) then
-   isCata = true;
-end
+local hasNewSpellbook = WOW_PROJECT_ID >= WOW_PROJECT_CATACLYSM_CLASSIC
 
 local BOOKTYPE_SPELL = BOOKTYPE_SPELL
 
@@ -22,41 +19,36 @@ local TAB_TEXTURE_FILEID = GetFileIDFromPath(
 
 local tooltip = CreateFrame("GameTooltip", "WhatsTrainingTooltip", UIParent,
                             "GameTooltipTemplate")
+
 local function setTooltip(spellInfo)
-    if (spellInfo.isItem) then
-        tooltip:SetItemByID(spellInfo.id)
-    elseif (spellInfo.id) then
+    if spellInfo.isItem then
+        local taughtSpellId = wt.TomeTaughtSpells[spellInfo.itemId]
+        if taughtSpellId then 
+            tooltip:SetSpellByID(taughtSpellId)
+        else
+            print('no taught spell found for tome', spellInfo.itemId)
+        end
+        tooltip:AddLine(spellInfo.formattedFullName, 1, 1, 1)
+    elseif spellInfo.id then
         tooltip:SetSpellByID(spellInfo.id)
     else
         tooltip:ClearLines()
     end
-    if (spellInfo.cost > 0) then
-        local coloredCoinString = spellInfo.formattedCost or
-                                      GetCoinTextureString(spellInfo.cost)
-        if (GetMoney() < spellInfo.cost) then
-            coloredCoinString = RED_FONT_COLOR_CODE .. coloredCoinString ..
-                                    FONT_COLOR_CODE_CLOSE
-        end
-        local formatString = spellInfo.isHeader and
-                                 (spellInfo.costFormat or wt.L.TOTALCOST_FORMAT) or
-                                 wt.L.COST_FORMAT
-
-        tooltip:AddLine(HIGHLIGHT_FONT_COLOR_CODE ..
-                            format(formatString, coloredCoinString) ..
-                            FONT_COLOR_CODE_CLOSE)
+    if spellInfo.cost > 0 then
+        tooltip:AddLine(wt.formatSpellCost(spellInfo))
     end
-    if (spellInfo.tooltip) then tooltip:AddLine(spellInfo.tooltip) end
+    if spellInfo.tooltip then tooltip:AddLine(spellInfo.tooltip) end
     tooltip:Show()
 end
 
 local menuFrame = CreateFrame("Frame", "WTRightClickFrame", UIParent,
                               "UIDropDownMenuTemplate")
 local function setRowSpell(row, spell)
-    if (spell == nil) then
+    if spell == nil then
         row.currentSpell = nil
         row:Hide()
         return
-    elseif (spell.isHeader) then
+    elseif spell.isHeader then
         row.spell:Hide()
         row.header:Show()
         row.header:SetText(spell.formattedName)
@@ -70,7 +62,7 @@ local function setRowSpell(row, spell)
         rowSpell:Show()
         rowSpell.label:SetText(spell.name)
         rowSpell.subLabel:SetText(spell.formattedSubText)
-        if (not spell.hideLevel) then
+        if not spell.hideLevel then
             rowSpell.level:Show()
             rowSpell.level:SetText(spell.formattedLevel)
             local color = spell.levelColor
@@ -78,15 +70,27 @@ local function setRowSpell(row, spell)
         else
             rowSpell.level:Hide()
         end
-        row:SetID(spell.id)
-        rowSpell.icon:SetTexture(spell.icon)
+        row:SetID(spell.itemId or spell.id)
+        rowSpell.icon:SetTexture(spell.useAltIcon and spell.altIcon or spell.icon)
     end
     if spell.click then
         row:SetScript("OnClick", spell.click)
-    elseif (not spell.isHeader) then
+    elseif not spell.isHeader then
         row:SetScript("OnClick", function(_, button)
-            if (not wt.ClickHook) then return end
-            if (button == "RightButton") then
+            if button == "LeftButton" and IsShiftKeyDown() then
+                local link = spell.link
+                if spell.taughtSpell then
+                    link = link..' '..spell.taughtSpell.link
+                end
+                local window = ChatEdit_GetActiveWindow()
+                if window then
+                    window:Insert(link)
+                else
+                    ChatFrame_OpenChat(link)
+                end
+            end
+            if not wt.ClickHook then return end
+            if button == "RightButton" then
                 wt.ClickHook(spell, function()
                     wt:RebuildData()
                 end, row)
@@ -106,7 +110,7 @@ local lastOffset = -1
 function wt.Update(frame, forceUpdate)
     local scrollBar = frame.scrollBar
     local offset = FauxScrollFrame_GetOffset(scrollBar)
-    if (offset == lastOffset and not forceUpdate) then return end
+    if offset == lastOffset and not forceUpdate then return end
     for i, row in ipairs(frame.rows) do
         local spellIndex = i + offset
         local spell = wt.data[spellIndex]
@@ -133,9 +137,21 @@ function wt.CreateFrame()
     right:SetWidth(128)
     right:SetHeight(512)
     right:SetPoint("TOPRIGHT", mainFrame)
+    if not hasNewSpellbook then
+        local search = CreateFrame("EditBox", "$parentSearchBox", mainFrame, "SearchBoxTemplate")
+        search:SetWidth(124)
+        search:SetHeight(32)
+        search:SetPoint("TOPLEFT", mainFrame, "TOPLEFT", 81, -34)
+        search:SetScript("OnTextChanged", function (self)
+            SearchBoxTemplate_OnTextChanged(self)
+            local oldFilter = wt.filter
+            wt.filter = strlower(self:GetText())
+            if wt.filter ~= oldFilter then wt:RebuildData() end
+        end)
+    end
     mainFrame:Hide()
     
-    if (isCata) then
+    if hasNewSpellbook then
     	left:SetWidth(350)
     	left:SetHeight(536)
     	left:SetPoint("TOPLEFT", mainFrame, 72, 8)
@@ -154,28 +170,47 @@ function wt.CreateFrame()
         then
             SpellBookFrame.selectedSkillLine = SKILL_LINE_TAB
             if SpellBookFrame:IsVisible() then
-                SpellBookFrame_Update()
+                SpellBookFrame:Update()
             end
         end
     end)
+    function wt.Open()
+        SpellBookFrame.selectedSkillLine = SKILL_LINE_TAB
+        if SpellBookFrame:IsVisible() then
+            SpellBookFrame:Update()
+        else
+            ToggleSpellBook("spell")
+        end
+    end
 
     local skillLineTab = _G["SpellBookSkillLineTab" .. SKILL_LINE_TAB]
-    hooksecurefunc("SpellBookFrame_UpdateSkillLineTabs", function()
+    hooksecurefunc(SpellBookFrame, "UpdateSkillLineTabs", function()
         skillLineTab:SetNormalTexture(TAB_TEXTURE_FILEID)
         skillLineTab.tooltip = wt.L.TAB_TEXT
         skillLineTab:Show()
-        if (SpellBookFrame.selectedSkillLine == SKILL_LINE_TAB) then
+        if SpellBookFrame.selectedSkillLine == SKILL_LINE_TAB then
             skillLineTab:SetChecked(true)
             mainFrame:Show()
+            if hasNewSpellbook then
+                SpellBookPrevPageButton:Disable()
+                SpellBookNextPageButton:Disable()
+                SpellBookPageText:SetText('')
+            else
+                ShowAllSpellRanksCheckbox:Hide()
+            end
         else
             skillLineTab:SetChecked(false)
             mainFrame:Hide()
+            local _, class = UnitClass("player")
+            if not hasNewSpellbook and class ~= "ROGUE" and class ~= "WARRIOR" then
+                ShowAllSpellRanksCheckbox:Show()
+            end
         end
     end)
-    hooksecurefunc("SpellBookFrame_Update", function()
-        if (SpellBookFrame.bookType ~= BOOKTYPE_SPELL) then
+    hooksecurefunc(SpellBookFrame, "Update", function()
+        if SpellBookFrame.bookType ~= BOOKTYPE_SPELL then
             mainFrame:Hide()
-        elseif (SpellBookFrame.selectedSkillLine == SKILL_LINE_TAB) then
+        elseif SpellBookFrame.selectedSkillLine == SKILL_LINE_TAB then
             mainFrame:Show()
         end
         C_Timer.After(0, function()
@@ -192,7 +227,7 @@ function wt.CreateFrame()
                                          function() wt.Update(mainFrame) end)
     end)
     scrollBar:SetScript("OnShow", function()
-        if (not hasFrameShown) then
+        if not hasFrameShown then
             wt:RebuildData()
             hasFrameShown = true
         end
@@ -261,8 +296,8 @@ function wt.CreateFrame()
         row.header = headerLabel
         row.spell = spell
 
-        if (rows[i - 1] == nil) then
-        	if (isCata) then
+        if rows[i - 1] == nil then
+        	if hasNewSpellbook then
         		row:SetPoint("TOPLEFT", mainFrame, 110, -78)
         	else
             	row:SetPoint("TOPLEFT", mainFrame, 26, -78)
@@ -278,124 +313,66 @@ function wt.CreateFrame()
     wt.MainFrame = mainFrame
 end
 
+function addIgnoreLines(rootDescription, config)
+    rootDescription:CreateTitle(config.title)
+    rootDescription:CreateCheckbox(wt.L.IGNORED_TT, function() return config.isIgnored end, function() 
+        PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
+        ignoreStore:Flip(config.id)
+        config.afterClick()
+        return MenuResponse.Close
+    end)
+
+    local allRanks = wt:AllRanks(config.id)
+    if allRanks and #allRanks > 1 then
+        local allIgnored = true
+        for _, id in ipairs(allRanks) do
+            allIgnored = allIgnored and ignoreStore:IsIgnored(id)
+        end
+        rootDescription:CreateCheckbox(wt.L.IGNORE_ALL_TT, function() return allIgnored end, function ()
+            PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
+            ignoreStore:UpdateMany(allRanks, not allIgnored)
+            config.afterClick()
+            return MenuResponse.Close
+        end)
+    end
+end
 
 wt.ClickHook = function(spell, afterClick, row)
-    local tomeId = spell.id
-    if (not wt.TomeIds or not wt.TomeIds[tomeId]) then
+    if not wt.TomeIds or not wt.TomeIds[spell.itemId or spell.id] then
         PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
         local isIgnored = ignoreStore:IsIgnored(spell.id)
-        local menuTitle = spell.formattedFullName
-        if (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC) then
-            local menu = {
-                {text = menuTitle, isTitle = true, classicChecks = true},
-                {
-                    text = wt.L.IGNORED_TT,
-                    checked = isIgnored,
-                    func = function()
-                        PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                        ignoreStore:Flip(spell.id)
-                        afterClick()
-                    end,
-                    isNotRadio = true
-                    -- classicChecks = true
-                }
-            }
-    
-            local allRanks = wt:AllRanks(spell.id)
-    
-            if allRanks and #allRanks > 1 then
-                local allIgnored = true
-                for _, id in ipairs(allRanks) do
-                    allIgnored = allIgnored and ignoreStore:IsIgnored(id)
-                end
-                tinsert(menu, {
-                    text = wt.L.IGNORE_ALL_TT,
-                    checked = allIgnored,
-                    func = function()
-                        PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                        ignoreStore:UpdateMany(allRanks, not allIgnored)
-                        afterClick()
-                    end,
-                    isNotRadio = true,
-                })
-            end
-    
-            EasyMenu(menu, menuFrame, "cursor", 10, 35, "MENU")
-        else
-            MenuUtil.CreateContextMenu(row, function(owner, rootDescription) 
-                rootDescription:CreateTitle(menuTitle)
-                rootDescription:CreateCheckbox(wt.L.IGNORED_TT, function() return isIgnored end, function() 
-                    PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                    ignoreStore:Flip(spell.id)
-                    afterClick()
-                    return MenuResponse.Close
-                end)
-    
-                local allRanks = wt:AllRanks(spell.id)
-                if allRanks and #allRanks > 1 then
-                    local allIgnored = true
-                    for _, id in ipairs(allRanks) do
-                        allIgnored = allIgnored and ignoreStore:IsIgnored(id)
-                    end
-                    rootDescription:CreateCheckbox(wt.L.IGNORE_ALL_TT, function() return allIgnored end, function ()
-                        PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                        ignoreStore:UpdateMany(allRanks, not allIgnored)
-                        afterClick()
-                        return MenuResponse.Close
-                    end)
-                end
-            end)
-        end
+        MenuUtil.CreateContextMenu(row, function(owner, rootDescription)
+            addIgnoreLines(rootDescription, {
+                title = spell.formattedFullName,
+                isIgnored = isIgnored,
+                id = spell.id,
+                afterClick = afterClick
+            })
+        end)
         
         return
     end
 
-    local checked = wt.learnedPetAbilityMap[tomeId]
+    local checked = wt:IsPetAbilityLearned(spell.id)
     PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
     local isIgnored = ignoreStore:IsIgnored(spell.id)
-    if (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC) then
-        local menu = {
-            {text = wt.L.TOME_HEADER, isTitle = true, classicChecks = true},
-            {
-                text = wt.L.TOME_LEARNED,
-                checked = checked,
-                func = function()
-                    PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                    wt.learnedPetAbilityMap[tomeId] = not checked
-                    afterClick()
-                end,
-                isNotRadio = true
-            },
-            {text = spell.name, isTitle = true, classicChecks = true},
-            {
-                text = wt.L.IGNORED_TT,
-                checked = isIgnored,
-                func = function()
-                    PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                    ignoreStore:Flip(spell.id)
-                    afterClick()
-                end,
-                isNotRadio = true
-                -- classicChecks = true
-            }
-        }
-        EasyMenu(menu, menuFrame, "cursor", 10, 35, "MENU")
-    else
-        MenuUtil.CreateContextMenu(row, function(owner, rootDescription)
+    MenuUtil.CreateContextMenu(row, function(owner, rootDescription)
+        if wt.SayaadTomes[spell.itemId] then
+            rootDescription:CreateTitle(string.format("%s — %s", wt.L.TOME_HEADER, spell.localFamily))
+        else
             rootDescription:CreateTitle(wt.L.TOME_HEADER)
-            rootDescription:CreateCheckbox(wt.L.TOME_LEARNED, function() return checked end, function() 
-                PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                wt.learnedPetAbilityMap[tomeId] = not checked
-                afterClick()
-                return MenuResponse.Close
-            end)
-            rootDescription:CreateTitle(spell.name)
-            rootDescription:CreateCheckbox(wt.L.IGNORED_TT, function() return isIgnored end, function() 
-                PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
-                ignoreStore:Flip(spell.id)
-                afterClick()
-                return MenuResponse.Close
-            end)
+        end
+        rootDescription:CreateCheckbox(wt.L.TOME_LEARNED, function() return checked end, function() 
+            PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
+            wt:SetPetAbilityStatus(spell.id, not checked)
+            afterClick()
+            return MenuResponse.Close
         end)
-    end
+        addIgnoreLines(rootDescription, {
+            title = spell.formattedFullName,
+            isIgnored = isIgnored,
+            id = spell.id,
+            afterClick = afterClick
+        })
+    end)
 end

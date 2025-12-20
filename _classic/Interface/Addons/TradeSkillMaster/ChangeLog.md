@@ -1,6 +1,5 @@
-## v4.14.19 Changes
+## v4.14.48 Changes
 
-* [Retail] Removed restocking of crafts which require concentration
-* [Retail] Added concentration to the detailed crafting cost tooltip
+* [Retail] More crafting related fixes/updates
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

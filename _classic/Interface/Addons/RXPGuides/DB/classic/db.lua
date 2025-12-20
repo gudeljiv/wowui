@@ -14,6 +14,7 @@ addon.skipPreReq = {
 
 local _,class = UnitClass("player")
 
+--[[
 addon.defaultGuideList = {
     ["Elwynn Forest"] = "RestedXP Alliance 1-20\\01-06 Northshire",
     ["Teldrassil"] = "RestedXP Alliance 1-20\\01-06 Shadowglen",
@@ -22,6 +23,10 @@ addon.defaultGuideList = {
     ["Mulgore"] = "RestedXP Horde 1-30\\01-06 Red Cloud Mesa",
     ["Tirisfal Glades"] = "RestedXP Horde 1-30\\01-11 Tirisfal Glades",
 }
+if class == "HUNTER" then
+    addon.defaultGuideList["Dun Morogh"] = "RestedXP Alliance 1-20\\1-6 Coldridge Valley (Hunter)"
+end
+]]
 
 if faction == "Horde" then
     addon.defaultGroup = "RestedXP Speedrun Guide (H)"
@@ -31,9 +36,6 @@ elseif faction == "Alliance" then
     addon.defaultGroupHC = "RestedXP Survival Guide (A)"
 end
 
-if class == "HUNTER" then
-    addon.defaultGuideList["Dun Morogh"] = "RestedXP Alliance 1-20\\1-6 Coldridge Valley (Hunter)"
-end
 
 addon.questConversion = {
 }
@@ -226,6 +228,56 @@ addon.professionID = {
     lockpicking = {1804},
     poisons = {2842},
 }
+
+local professionGuides = {
+L"Mining & Engineering",
+L"Mining & Blacksmithing",
+L"Herbalism & Alchemy",
+L"Skinning & Leatherworking",
+L"Mining & Skinning",
+L"Mining & Herbalism",
+L"Herbalism & Skinning",
+L"Skinning",
+L"Herbalism",
+L"Mining ",
+}
+
+local professionGuideIndex = {
+ ["mining-engineering"] = 1,
+ ["engineering-mining"] = 1,
+ ["mining-blacksmithing"] = 2,
+ ["blacksmithing-mining"] = 2,
+ ["herbalism-alchemy"] = 3,
+ ["alchemy-herbalism"] = 3,
+ ["skinning-leatherworking"] = 4,
+ ["leatherworking-skinning"] = 4,
+ ["mining-skinning"] = 5,
+ ["skinning-mining"] = 5,
+ ["mining-herbalism"] = 6,
+ ["herbalism-mining"] = 6,
+ ["herbalism-skinning"] = 7,
+ ["skinning-herbalism"] = 7,
+ ["skinning"] = 8,
+ ["herbalism"] = 9,
+ ["mining "] = 10,
+
+}
+
+function addon.GetProfessionId(tag)
+    return tag and professionGuideIndex[tag]
+end
+
+function addon.GenerateProfessionTable()
+    local entries = addon.professions
+    RXPCData.guideMetaData.enabledProfessions[addon.player
+                            .faction] = addon.professions
+    local t = {[0] = L("None")}
+    if type(entries) ~= "table" then return t end
+    for i,v in ipairs(professionGuides) do
+        if entries[i] then t[i] = v end
+    end
+    return t
+end
 
 C_Spell.RequestLoadSpellData(2575) -- mining
 C_Spell.RequestLoadSpellData(9134) -- herbalism

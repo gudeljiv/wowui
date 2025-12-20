@@ -1,3 +1,31 @@
+__ New in 4.23 - By Rottenbeer  __
+* Fix TOC for Cata by Adal4
+
+__ New in 4.22 - By Rottenbeer  __
+* cloudbells: Fix xml errors
+
+__ New in 4.21 - By Rottenbeer  __
+* Fixes the cata bank slots
+
+__ New in 4.2 - By Rottenbeer  __
+* Fix SoD runes by romracer
+* Fix "calling 'GetName' on bad self" by romracer
+* Fixed item stuck on cursor when unequipping set by romracer
+* Fix itemrack set matching in tooltips by romracer
+
+__ New in 4.11 - By Rottenbeer  __
+* Fix versioning
+
+__ New in 4.10 - By mikinho __
+* Fixes for SOD
+
+__ New in 4.00 - By Rottenbeer  __
+* Add Cata CI release
+
+__ New in 3.78 - By Roadblock __
+* Release Cata version
+* Maybe fix for missing keybinds
+
 __ New in 3.77 - By Rottenbeer __
 * Fix curseforge release, don't commit before 10am
 

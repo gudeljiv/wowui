@@ -102,8 +102,9 @@ local function formatValueForAssignment(vType, value, pathToCustomFunction, path
   elseif (vType == "string" or vType == "texture") then
     if type(value) == "string" then
       return string.format("%s", Private.QuotedString(value))
+    else
+      return '""'
     end
-    return "nil"
   elseif(vType == "color") then
     if (value and type(value) == "table") then
       return string.format("{%s, %s, %s, %s}",
@@ -214,7 +215,7 @@ end
 
 function Private.ExecEnv.CallCustomConditionTest(uid, testFunctionNumber, ...)
   local ok, result = xpcall(Private.ExecEnv.conditionHelpers[uid].customTestFunctions[testFunctionNumber],
-                            Private.GetErrorHandlerUid(uid, L["Condition Custom Text"]), ...)
+                            Private.GetErrorHandlerUid(uid, L["Condition Custom Test"]), ...)
   if (ok) then
     return result
   end
@@ -259,6 +260,7 @@ local function CreateTestForCondition(data, input, allConditionsTemplate, usedSt
     local conditionTemplate = allConditionsTemplate[trigger] and allConditionsTemplate[trigger][variable];
     local cType = conditionTemplate and conditionTemplate.type;
     local test = conditionTemplate and conditionTemplate.test;
+    local recheckTime = conditionTemplate and conditionTemplate.recheckTime
     local preamble = conditionTemplate and conditionTemplate.preamble;
     local progressSource
     local modRateProperty
@@ -299,7 +301,7 @@ local function CreateTestForCondition(data, input, allConditionsTemplate, usedSt
       end
     elseif (cType == "customcheck") then
       if value then
-        local customCheck = WeakAuras.LoadFunction("return " .. value)
+        local customCheck = WeakAuras.LoadFunction("return " .. value, data.id)
         if customCheck then
           Private.ExecEnv.conditionHelpers[uid] = Private.ExecEnv.conditionHelpers[uid] or {}
           Private.ExecEnv.conditionHelpers[uid].customTestFunctions
@@ -335,9 +337,9 @@ local function CreateTestForCondition(data, input, allConditionsTemplate, usedSt
             or ""
 
       if (op == "==") then
-        check = stateCheck .. stateVariableCheck .. "abs((" .. remainingTime .. "-" .. value .. ")" .. divideModRate .. ") < 0.05"
+        check = stateCheck .. stateVariableCheck .. varString .. "~= 0 and " .. "abs((" .. remainingTime .. "-" .. value .. ")" .. divideModRate .. ") < 0.05"
       else
-        check = stateCheck .. stateVariableCheck .. remainingTime .. divideModRate .. op .. value
+        check = stateCheck .. stateVariableCheck .. varString .. "~= 0 and " .. remainingTime .. divideModRate .. op .. value
       end
     elseif (cType == "elapsedTimer" and value and op) then
       if (op == "==") then
@@ -390,7 +392,7 @@ local function CreateTestForCondition(data, input, allConditionsTemplate, usedSt
         fn = fn:format(input.op_range, input.range, op, value)
       end
       if fn then
-        local customCheck = WeakAuras.LoadFunction(fn)
+        local customCheck = WeakAuras.LoadFunction(fn, data.id)
         if customCheck then
           Private.ExecEnv.conditionHelpers[uid] = Private.ExecEnv.conditionHelpers[uid] or {}
           Private.ExecEnv.conditionHelpers[uid].customTestFunctions
@@ -409,18 +411,33 @@ local function CreateTestForCondition(data, input, allConditionsTemplate, usedSt
     elseif (cType == "string" and value) then
       if(op == "==") then
         check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable)
-                .. " == [[" .. value .. "]]";
+                .. string.format(" == %q", value)
       elseif (op  == "find('%s')") then
         check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable)
-                .. ":find([[" .. value .. "]], 1, true)";
+                .. string.format(":find(%q, 1, true)", value)
       elseif (op == "match('%s')") then
         check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]",  variable)
-                .. ":match([[" .. value .. "]], 1, true)";
+                .. string.format(":match(%q, 1, true)", value)
       end
     end
     -- If adding a new condition type, don't forget to adjust the validator in the options code
 
-    if (cType == "timer" and value) then
+    if recheckTime then
+      if (value) then
+        Private.ExecEnv.conditionHelpers[uid] = Private.ExecEnv.conditionHelpers[uid] or {}
+        Private.ExecEnv.conditionHelpers[uid].customTestFunctions
+          = Private.ExecEnv.conditionHelpers[uid].customTestFunctions or {}
+        tinsert(Private.ExecEnv.conditionHelpers[uid].customTestFunctions, recheckTime);
+        local testFunctionNumber = #(Private.ExecEnv.conditionHelpers[uid].customTestFunctions);
+        local valueString = type(value) == "string" and string.format("%q", value) or value;
+
+        recheckCode = string.format("  nextTime = Private.ExecEnv.CallCustomConditionTest(%q, %s, state[%s], %s) \n",
+                                    uid, testFunctionNumber, trigger, valueString)
+        recheckCode = recheckCode .. "  if (nextTime and (not recheckTime or nextTime < recheckTime) and nextTime >= now) then\n"
+        recheckCode = recheckCode .. "    recheckTime = nextTime\n";
+        recheckCode = recheckCode .. "  end\n"
+      end
+    elseif (cType == "timer" and value) then
       local variableString =  "state[" .. trigger .. "]" .. string.format("[%q]",  variable)
       local multiplyModRate = modRateProperty
             and  " * (state[" .. trigger .. "]" .. string.format("[%q]",  modRateProperty) .. " or 1.0)"
@@ -654,7 +671,7 @@ function Private.LoadConditionPropertyFunctions(data)
             else
               prefix, suffix = "return function()", "\nend";
             end
-            local customFunc = WeakAuras.LoadFunction(prefix .. custom .. suffix);
+            local customFunc = WeakAuras.LoadFunction(prefix .. custom .. suffix, data.id);
             if (customFunc) then
               Private.ExecEnv.customConditionsFunctions[id][conditionNumber] = Private.ExecEnv.customConditionsFunctions[id][conditionNumber] or {};
               Private.ExecEnv.customConditionsFunctions[id][conditionNumber].changes = Private.ExecEnv.customConditionsFunctions[id][conditionNumber].changes or {};
@@ -835,7 +852,7 @@ function Private.LoadConditionFunction(data)
   CancelTimers(data.uid)
 
   local checkConditionsFuncStr = ConstructConditionFunction(data);
-  local checkConditionsFunc = checkConditionsFuncStr and Private.LoadFunction(checkConditionsFuncStr)
+  local checkConditionsFunc = checkConditionsFuncStr and Private.LoadFunction(checkConditionsFuncStr, data.id)
 
   checkConditions[data.uid] = checkConditionsFunc;
 end
@@ -843,7 +860,7 @@ end
 function Private.RunConditions(region, uid, hideRegion)
   if (checkConditions[uid]) then
     Private.ActivateAuraEnvironmentForRegion(region)
-    checkConditions[uid](region, hideRegion);
+    xpcall(checkConditions[uid], Private.GetErrorHandlerUid(uid, L["Execute Conditions"]), region, hideRegion);
     Private.ActivateAuraEnvironment()
   end
 end

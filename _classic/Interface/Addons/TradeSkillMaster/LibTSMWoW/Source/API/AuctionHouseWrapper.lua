@@ -108,6 +108,7 @@ local API_EVENT_INFO = not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_H
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_WRAPPED_ITEM] = { result = false },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_BAG] = { result = false },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_NOT_ENOUGH_MONEY] = { result = false },
+			["AUCTION_HOUSE_POST_ERROR"] = { result = false },
 		}
 	} or
 	{ -- Retail
@@ -157,13 +158,13 @@ local API_EVENT_INFO = not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_H
 			BIDS_UPDATED = { result = true },
 		},
 		CancelAuction = {
-			AUCTION_CANCELED = { result = true, eventArgIndex = 1, apiArgIndex = 1, compareFunc = function(eventArg, apiArg) return eventArg == 0 or apiArg == eventArg end },
+			AUCTION_CANCELED = { result = true },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_ITEM_NOT_FOUND] = { result = false },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_NOT_ENOUGH_MONEY] = { result = false },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_DATABASE_ERROR] = { result = false },
 		},
 		StartCommoditiesPurchase = {
-			COMMODITY_PRICE_UPDATED = { result = function(apiArgs, _, totalPrice) return Math.Ceil((totalPrice / apiArgs[2]), COPPER_PER_SILVER) == apiArgs[3] and totalPrice or nil end },
+			COMMODITY_PRICE_UPDATED = { result = function(apiArgs, _, totalPrice) return Math.Ceil((totalPrice / apiArgs[2]), ClientInfo.HasFeature(ClientInfo.FEATURES.AH_COPPER) and 1 or COPPER_PER_SILVER) == apiArgs[3] and totalPrice or nil end },
 			COMMODITY_PRICE_UNAVAILABLE = { result = false },
 		},
 		ConfirmCommoditiesPurchase = {
@@ -177,7 +178,7 @@ local API_EVENT_INFO = not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_H
 		},
 		PlaceBid = {
 			BIDS_UPDATED = { result = true },
-			AUCTION_CANCELED = { result = true, eventArgIndex = 1, apiArgIndex = 1 },
+			AUCTION_CANCELED = { result = true },
 			["CHAT_MSG_SYSTEM"..GENERIC_EVENT_SEP..ERR_AUCTION_BID_PLACED] = { result = true },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_DATABASE_ERROR] = { result = false },
 			["UI_ERROR_MESSAGE"..GENERIC_EVENT_SEP..ERR_AUCTION_HIGHER_BID] = { result = false },
@@ -258,6 +259,14 @@ AuctionHouseWrapper:OnModuleLoad(function()
 	else
 		private.canSendAuctionQueryTimer = DelayTimer.New("CHECK_CAN_SEND_AUCTION_QUERY", private.CheckCanSendAuctionQuery)
 		private.canSendAuctionQueryTimer:RunForTime(0.1)
+		if AUCTION_POSTING_ERROR_TEXT then
+			local function PostErrorHandler()
+				-- Just display once per session
+				print(AUCTION_POSTING_ERROR_TEXT)
+				Event.Unregister("AUCTION_HOUSE_POST_ERROR", PostErrorHandler)
+			end
+			Event.Register("AUCTION_HOUSE_POST_ERROR", PostErrorHandler)
+		end
 	end
 end)
 
@@ -530,8 +539,10 @@ function AuctionHouseWrapper.PostAuction(bag, slot, duration, stackSize, numAuct
 		return nil
 	end
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
-		bid = Math.Round(bid, COPPER_PER_SILVER)
-		buyout = Math.Round(buyout, COPPER_PER_SILVER)
+		if not ClientInfo.HasFeature(ClientInfo.FEATURES.AH_COPPER) then
+			bid = Math.Round(bid, COPPER_PER_SILVER)
+			buyout = Math.Round(buyout, COPPER_PER_SILVER)
+		end
 		private.itemLocation:SetBagAndSlot(bag, slot)
 		local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
 		if commodityStatus == Enum.ItemCommodityStatus.Item then
@@ -552,7 +563,7 @@ function AuctionHouseWrapper.PostAuction(bag, slot, duration, stackSize, numAuct
 		ClearCursor()
 		Container.PickupItem(bag, slot)
 		ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-		local result = private.wrappers.PostAuction:Start(bid, buyout, duration, stackSize, numAuctions)
+		local result = private.wrappers.PostAuction:Start(bid, buyout, duration, stackSize, numAuctions, true)
 		ClearCursor()
 		return result
 	end
@@ -580,7 +591,7 @@ end
 ---@param useEmptySorts boolean Use an empty sorts list
 ---@return boolean
 function AuctionHouseWrapper.SetSort(useEmptySorts)
-	if ClientInfo.IsRetail() then
+	if not LibTSMWoW.IsVanillaClassic() then
 		return true
 	end
 
@@ -739,7 +750,7 @@ function APIWrapper:_HandleAPICall(...)
 	local timeout = nil
 	if not DefaultUI.IsAuctionHouseVisible() then
 		timeout = 0
-	elseif self._name == "QueryAuctionItems" and select(7, ...) then
+	elseif (self._name == "QueryAuctionItems" and select(7, ...)) or self._name == "ReplicateItems" then
 		timeout = GET_ALL_TIMEOUT
 	else
 		timeout = API_TIMEOUT

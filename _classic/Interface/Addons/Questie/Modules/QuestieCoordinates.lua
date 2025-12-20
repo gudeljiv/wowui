@@ -17,6 +17,8 @@ local GetMinimapZoneText = GetMinimapZoneText;
 local IsInInstance = IsInInstance;
 local format = format;
 
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
+
 
 local function GetMapTitleText()
     local regions = {WorldMapFrame.BorderFrame:GetRegions()}
@@ -98,7 +100,7 @@ function QuestieCoords:WriteCoords()
     end
 end
 
----@return table<{x: number, y: number}>, number | nil
+---@return Coordinates|nil, number | nil
 function QuestieCoords.GetPlayerMapPosition()
     local mapID = GetBestMapForUnit("player")
     if (not mapID) then
@@ -122,7 +124,7 @@ end
 
 function QuestieCoords:Update()
     if (Questie.db.profile.minimapCoordinatesEnabled) or (Questie.db.profile.mapCoordinatesEnabled) then
-        QuestieCoords.WriteCoords();
+        QuestieCoords:WriteCoords();
     end
 end
 

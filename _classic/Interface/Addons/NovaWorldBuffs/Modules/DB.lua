@@ -5,16 +5,17 @@
 --Slowly moving all settings and buff data in to this file so things are easier to change around and add new buffs as classic/sod keeps getting changes.
 
 local addonName, addon = ...;
+--local addonName, NWB = ...;
 addon.a = LibStub("AceAddon-3.0"):NewAddon("NovaWorldBuffs", "AceComm-3.0");
 local NWB = addon.a;
 --local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 NWB.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NWB.isClassic = true;
-	if (C_Engraving and C_Engraving.IsEngravingEnabled()) then
+	if (C_Seasons and C_Seasons.GetActiveSeason() == 2) then
 		NWB.isSOD = true;
 	end
-	if (C_Seasons and C_Seasons.GetActiveSeason() == 3) then
+	if (C_GameRules and C_GameRules.IsHardcoreActive()) then
 		NWB.isHardcore = true;
 	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
@@ -63,7 +64,7 @@ if (NWB.isSOD) then
 	NWB.noWorldBuffTimers = true; --Hides timers on certain frames and minimap button tooltip, should be used if all rend/ony/nef cooldown times are set to 0 like in SoD.
 	NWB.noGuildBuffDroppedMsgs = true; --With no timers tracked the drops are alot more often and spammy, this removes the 2nd msg "buff dropped" and just keep the drop in few seconds warning.
 	NWB.buffDropSpamCooldown = 900; --Spam control cooldown time between msgs for buff drops, might of stormwind has it's own longer delay in WorldBuffs.lua (as of now might of stormwind never sends a msg becaus no need)
-	NWB.rendCooldownTime = 0;
+	NWB.rendCooldownTime = 0; --0 means timer is disabled.
 	NWB.onyCooldownTime = 0;
 	NWB.nefCooldownTime = 0;
 	NWB.noDmfCooldown = true;

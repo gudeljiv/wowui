@@ -26,25 +26,12 @@ local Range = {
 ShadowUF:RegisterModule(Range, "range", ShadowUF.L["Range indicator"])
 
 local LSR = LibStub("SpellRange-1.0")
-local RangeCheck = LibStub('LibRangeCheck-3.0')
-RangeCheck.RegisterCallback(
-	RangeCheck, 
-	RangeCheck.CHECKERS_CHANGED, 
-	function() 
-		-- print("need to refresh my stored checkers") 
-	end
-)
 
 local playerClass = select(2, UnitClass("player"))
 local rangeSpells = {}
 
 local function checkRange(self)
 	local frame = self.parent
-
-		-- if(frame.unit=="target") then 
-		-- 	local minRange, maxRange = RangeCheck:GetRange(frame.unit)
-		-- 	print(minRange, maxRange,frame.unit)
-		-- end
 
 	-- Check which spell to use
 	local spell
@@ -54,8 +41,6 @@ local function checkRange(self)
 		spell = rangeSpells.hostile
 	end
 
-	-- print(spell)
-
 	if( not UnitIsConnected(frame.unit) or not UnitInPhase(frame.unit) ) then
 		frame:SetRangeAlpha(ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	elseif( spell ) then
@@ -63,17 +48,9 @@ local function checkRange(self)
 	-- That didn't work, but they are grouped lets try the actual API for this, it's a bit flaky though and not that useful generally
 	elseif( UnitInRaid(frame.unit) or UnitInParty(frame.unit) ) then
 		frame:SetRangeAlpha(UnitInRange(frame.unit, "player") and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
-	-- Nope, fall back to interaction :(
+	-- Nope, just show in range :(
 	else
-		-- frame:SetRangeAlpha(CheckInteractDistance(frame.unit, 4) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 		frame:SetRangeAlpha(ShadowUF.db.profile.units[frame.unitType].range.inAlpha)
-
-		-- CheckInteractDistance was checking for 28 yards... inspect range so i put 30
-		-- local minRange, maxRange = RangeCheck:GetRange(frame.unit)
-		-- if(frame.unit=="pet") then 
-		-- 	print(minRange, maxRange,frame.unit)
-		-- end
-		-- frame:SetRangeAlpha((maxRange and maxRange <= 35) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
 	end
 end
 

@@ -3,6 +3,10 @@
 QuestieCompat = {}
 
 local errorMsg = "Questie tried to call a blizzard API function that does not exist..."
+local INDIZES_AVAILABLE = 7
+local INDIZES_ACTIVE = 6
+
+local tinsert = table.insert
 
 ------------------------------------------
 -- Older client compatibility (pre 1.14.1)
@@ -60,53 +64,67 @@ function QuestieCompat.SetResizeBounds(frame, minWidth, minHeight, maxWidth, max
     error(errorMsg, 2)
 end
 
----[Documentation](https://wowpedia.fandom.com/wiki/API_C_GossipInfo.GetAvailableQuests)
 ---Returns the available quests at a quest giver.
----@return GossipQuestUIInfo[] info
+---@return GossipQuestUIInfo[]
 function QuestieCompat.GetAvailableQuests()
     if C_GossipInfo and C_GossipInfo.GetAvailableQuests then
-        local info = C_GossipInfo.GetAvailableQuests()
-        local availableQuests = {}
-        local index = 1
-        for _, availableQuest in pairs(info) do
-            availableQuests[index] = availableQuest.title
-            availableQuests[index + 1] = availableQuest.questLevel
-            availableQuests[index + 2] = availableQuest.isTrivial
-            availableQuests[index + 3] = availableQuest.frequency
-            availableQuests[index + 4] = availableQuest.repeatable
-            availableQuests[index + 5] = availableQuest.isLegendary
-            availableQuests[index + 6] = availableQuest.isIgnored
-            index = index + 7
-        end
-        return unpack(availableQuests)
+        return C_GossipInfo.GetAvailableQuests()
     elseif GetGossipAvailableQuests then
-        return GetGossipAvailableQuests() -- https://wowpedia.fandom.com/wiki/API_GetGossipAvailableQuests
+        local info = {GetGossipAvailableQuests()}
+        local availableQuests = {}
+        for i = 1, #info, INDIZES_AVAILABLE do
+            local quest = {
+                title = info[i],
+                questLevel = info[i + 1],
+                isTrivial = info[i + 2],
+                frequency = info[i + 3],
+                repeatable = info[i + 4],
+                isLegendary = info[i + 5],
+                isIgnored = info[i + 6],
+                isImportant = false, -- Not available from GetGossipAvailableQuests
+                isMeta = false, -- Not available from GetGossipAvailableQuests
+                questID = 0, -- Not available from GetGossipAvailableQuests
+            }
+            tinsert(availableQuests, quest)
+        end
+        return availableQuests
     end
     error(errorMsg, 2)
 end
 
----[Documentation](https://wowpedia.fandom.com/wiki/API_C_GossipInfo.GetActiveQuests)
 ---Returns the quests which can be turned in at a quest giver.
----@return GossipQuestUIInfo[] info
+---@return GossipQuestUIInfo[]
 function QuestieCompat.GetActiveQuests()
     if C_GossipInfo and C_GossipInfo.GetActiveQuests then
         -- QuestieDB needs to be loaded locally, otherwise it will be an empty module
         local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
-        local info = C_GossipInfo.GetActiveQuests()
-        local activeQuests = {}
-        local index = 1
-        for _, activeQuest in pairs(info) do
-            activeQuests[index] = activeQuest.title
-            activeQuests[index + 1] = activeQuest.questLevel
-            activeQuests[index + 2] = activeQuest.isTrivial
-            activeQuests[index + 3] = activeQuest.isComplete or QuestieDB.IsComplete(activeQuest.questID) == 1
-            activeQuests[index + 4] = activeQuest.isLegendary
-            activeQuests[index + 5] = activeQuest.isIgnored
-            index = index + 6
+
+        local activeQuests = C_GossipInfo.GetActiveQuests()
+        for _, quest in pairs(activeQuests) do
+            quest.isComplete = quest.isComplete or QuestieDB.IsComplete(quest.questID) == 1
         end
-        return unpack(activeQuests)
+        return activeQuests
     elseif GetGossipActiveQuests then
-        return GetGossipActiveQuests() -- https://wowpedia.fandom.com/wiki/API_GetGossipActiveQuests
+        local info = {GetGossipActiveQuests()}
+        local activeQuests = {}
+
+        for i = 1, #info, INDIZES_ACTIVE do
+            local quest = {
+                title = info[i],
+                questLevel = info[i + 1],
+                isTrivial = info[i + 2],
+                isComplete = info[i + 3],
+                isLegendary = info[i + 4],
+                isIgnored = info[i + 5],
+                frequency = nil, -- Not available from GetGossipActiveQuests
+                repeatable = false, -- Not available from GetGossipActiveQuests
+                isImportant = false, -- Not available from GetGossipAvailableQuests
+                isMeta = false, -- Not available from GetGossipAvailableQuests
+                questID = 0, -- Not available from GetGossipActiveQuests
+            }
+            tinsert(activeQuests, quest)
+        end
+        return activeQuests
     end
     error(errorMsg, 2)
 end
@@ -170,19 +188,19 @@ function QuestieCompat.GetContainerItemInfo(bagID, slot)
         local containerInfo = C_Container.GetContainerItemInfo(bagID, slot)
         if containerInfo then
             return containerInfo.iconFileID,
-                   containerInfo.stackCount,
-                   containerInfo.isLocked,
-                   containerInfo.quality,
-                   containerInfo.isReadable,
-                   containerInfo.hasLoot,
-                   containerInfo.hyperlink,
-                   containerInfo.isFiltered,
-                   containerInfo.hasNoValue,
-                   containerInfo.itemID,
-                   containerInfo.isBound
-       else
+                containerInfo.stackCount,
+                containerInfo.isLocked,
+                containerInfo.quality,
+                containerInfo.isReadable,
+                containerInfo.hasLoot,
+                containerInfo.hyperlink,
+                containerInfo.isFiltered,
+                containerInfo.hasNoValue,
+                containerInfo.itemID,
+                containerInfo.isBound
+        else
             return nil
-       end
+        end
     elseif GetContainerItemInfo then
         return GetContainerItemInfo(bagID, slot)
     end
@@ -201,4 +219,42 @@ function QuestieCompat.GetItemCooldown(itemID)
     else
         return GetItemCooldown(itemID)
     end
+end
+
+--- Returns the frame that is currently under the mouse cursor.
+function QuestieCompat.GetMouseFocus()
+    if GetMouseFoci then
+        return GetMouseFoci()[1]
+    else
+        --- Old version (still used in WotLK client)
+        return GetMouseFocus()
+    end
+end
+
+---@class CalendarTime
+---@field monthDay number
+---@field month number
+---@field year number
+---@field weekday number
+---@field hour number
+---@field minute number
+
+---[Documentation](https://wowpedia.fandom.com/wiki/API_C_DateAndTime.GetCurrentCalendarTime)
+---Returns the current date and time information.
+---@return CalendarTime
+function QuestieCompat.GetCurrentCalendarTime()
+    if C_DateAndTime and C_DateAndTime.GetCurrentCalendarTime then
+        return C_DateAndTime.GetCurrentCalendarTime()
+    elseif C_DateAndTime and C_DateAndTime.GetTodaysDate then
+        local today = C_DateAndTime.GetTodaysDate()
+        return {
+            monthDay = today.day,
+            month = today.month,
+            year = today.year,
+            weekday = today.weekDay,
+            hour = 0,
+            minute = 0,
+        }
+    end
+    error(errorMsg, 2)
 end

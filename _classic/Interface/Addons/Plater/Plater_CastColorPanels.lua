@@ -6,6 +6,8 @@ local DF = DetailsFramework
 local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
 local _
 
+local L = DF.Language.GetLanguageTable(addonId)
+
 ---@alias spellid number
 ---@alias soundpath string
 
@@ -199,6 +201,37 @@ function Plater.SetCastBarColorForScript(castBar, canUseScriptColor, scriptColor
     end
 end
 
+--priority for user cast color >> can't interrupt script color >> script color
+function Plater.SetCastBarColorsForScript(castBar, canUseScriptColor, scriptColor, scriptNoInterruptColor, envTable) --exposed
+    --user set cast bar color into the Cast Colors tab in the options panel
+    local colorByUser = Plater.GetSpellCustomColor(envTable._SpellID)
+    if (colorByUser) then
+        castBar:SetColor(Plater:ParseColors(colorByUser))
+        return
+    end
+
+    if (not envTable._CanInterrupt) then
+        --if is uninterruptible and don't have a custom user color, set the script color
+        if (canUseScriptColor and scriptNoInterruptColor) then
+            if (type(scriptNoInterruptColor) == "table" or (type(scriptNoInterruptColor) == "string") and DF:IsHtmlColor(scriptNoInterruptColor)) then
+                castBar:SetColor(Plater:ParseColors(scriptNoInterruptColor))
+                return
+            end
+        end
+
+        --don't change the color of non-interruptible casts
+        castBar:SetColor(Plater:ParseColors(Plater.db.profile.cast_statusbar_color_nointerrupt))
+        return
+    end
+
+    --if is interruptible and don't have a custom user color, set the script color
+    if (canUseScriptColor and scriptColor) then
+        if (type(scriptColor) == "table" or (type(scriptColor) == "string") and DF:IsHtmlColor(scriptColor)) then
+            castBar:SetColor(Plater:ParseColors(scriptColor))
+        end
+    end
+end
+
 function Plater.CreateCastColorOptionsFrame(castColorFrame)
     local castFrame = CreateFrame("frame", castColorFrame:GetName() .. "ColorFrame", castColorFrame)
     castFrame:SetPoint("topleft", castColorFrame, "topleft", 5, -140)
@@ -234,11 +267,11 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
     local headerTable = {
         {text = "", width = 40}, --1
         {text = "", width = 20}, --2
-        {text = "Spell Id", width = 50}, --3
-        {text = "Spell Name", width = 140}, --4
-        {text = "Rename To", width = 110}, --5
-        {text = "Npc Name", width = 110}, --6
-        {text = "Send To Raid", width = 80}, --7
+        {text = "Spell Id", width = 60}, --3
+        {text = "Spell Name", width = 120}, --4
+        {text = "Rename To", width = 120}, --5
+        {text = "Npc Name", width = 120}, --6
+        {text = "Send To Raid", width = 75}, --7
         {text = "Play Sound", width = 110}, --8
         {text = "Color", width = 110}, --9
         {text = "Add Animation", width = 270}, --10
@@ -427,7 +460,7 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
             local desc
             if (currentSelected) then
                 local currentSelectedCueName = audioFileNameToCueName[currentSelected]
-                desc = "Hold Shift to change the sound of all casts with the audio |cFFFFFF00" .. currentSelectedCueName .. "|r to |cFFFFDD00" .. cueName .. "|r."
+                desc = string.format(L["Hold Shift to change the sound of all casts with the audio %s to %s"], "|cFFFFFF00" .. currentSelectedCueName .. "|r", "|cFFFFDD00" .. cueName .. "|r.")
             else
                 desc = nil
             end
@@ -680,15 +713,15 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
     --receives a spellId and verify if this spellId is a trigger of any script
     local hasScriptWithPreviewSpellId = function(spellId)
         local previewSpellId = spellId or CONST_PREVIEW_SPELLID
-        local defaultCastScripts = platerInternal.Scripts.DefaultCastScripts
+        local currentCastScripts = platerInternal.Scripts.CurrentCastScripts
         local GetScriptObjectByName = platerInternal.Scripts.GetScriptObjectByName
         local find = DF.table.find
 
-        for i = 1, #defaultCastScripts do
-            local scriptName = defaultCastScripts[i]
+        for i = 1, #currentCastScripts do
+            local scriptName = currentCastScripts[i]
             ---@type scriptdata
             local scriptObject = GetScriptObjectByName(scriptName)
-            if (scriptObject) then
+            if (scriptObject and scriptObject.Enabled) then
                 local index = find(scriptObject.SpellIds, previewSpellId)
                 if (index) then
                     return true
@@ -697,18 +730,36 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
         end
     end
 
-    local castBarPreviewTexture = "" --[[Interface\AddOns\Plater\Images\cast_bar_scripts_preview]]
-    local eachCastBarButtonHeight = PlaterOptionsPanelContainerCastColorManagementColorFrameScriptPreviewPanel:GetHeight() / #platerInternal.Scripts.DefaultCastScripts
-
+    --we want to have all the default scripts show up last in the list, so temporarily put any default script into a separate table
+    local currentCastScripts = platerInternal.Scripts.CurrentCastScripts
+    local defaultCastScripts = platerInternal.Scripts.DefaultCastScripts
+    local defaultCastScriptsNames = {}
+    local scriptsDefault = {}
     local scriptsToShow = {}
-    for i = 1, #platerInternal.Scripts.DefaultCastScripts do
-        local scriptName = platerInternal.Scripts.DefaultCastScripts[i]
 
+    for i = 1, #defaultCastScripts do
+        defaultCastScriptsNames[defaultCastScripts[i]] = true
+    end
+
+    for i = 1, #currentCastScripts do
+        local scriptName = currentCastScripts[i]
         local scriptObject = platerInternal.Scripts.GetScriptObjectByName(scriptName)
-        if (scriptObject) then
-            scriptsToShow[#scriptsToShow + 1] = scriptName
+        if (scriptObject and scriptObject.Enabled) then
+            if (defaultCastScriptsNames[scriptName]) then
+                table.insert(scriptsDefault, scriptName)
+            else
+                table.insert(scriptsToShow, scriptName)
+            end
         end
     end
+
+    --sort both lists, and then append the default scripts to the full preview list
+    table.sort(scriptsToShow)
+    table.sort(scriptsDefault)
+    DF.table.append(scriptsToShow, scriptsDefault)
+
+    local castBarPreviewTexture = "" --[[Interface\AddOns\Plater\Images\cast_bar_scripts_preview]]
+    local eachCastBarButtonHeight = PlaterOptionsPanelContainerCastColorManagementColorFrameScriptPreviewPanel:GetHeight() / math.max(#scriptsToShow, 12)
 
     for i = 1, #scriptsToShow do
         local scriptName = scriptsToShow[i]
@@ -817,8 +868,8 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
 
     function castColorFrame.SelectScriptForSpellId(spellId)
         local foundScriptWithThisSpellId = false
-        for i = 1, #platerInternal.Scripts.DefaultCastScripts do
-            local scriptName = platerInternal.Scripts.DefaultCastScripts[i]
+        for i = 1, #platerInternal.Scripts.CurrentCastScripts do
+            local scriptName = platerInternal.Scripts.CurrentCastScripts[i]
             local scriptObject = platerInternal.Scripts.GetScriptObjectByName(scriptName)
             if (scriptObject) then
                 local hasTrigger = platerInternal.Scripts.DoesScriptHasTrigger(scriptObject, spellId)
@@ -898,8 +949,8 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
     end
 
     function spFrame.RemovePreviewTriggerFromAllScripts()
-        for i = 1, #platerInternal.Scripts.DefaultCastScripts do
-            local scriptName = platerInternal.Scripts.DefaultCastScripts[i]
+        for i = 1, #platerInternal.Scripts.CurrentCastScripts do
+            local scriptName = platerInternal.Scripts.CurrentCastScripts[i]
             local scriptObject = platerInternal.Scripts.GetScriptObjectByName(scriptName)
             if (scriptObject) then
                 platerInternal.Scripts.RemoveSpellFromScriptTriggers(scriptObject, CONST_PREVIEW_SPELLID)

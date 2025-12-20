@@ -1,26 +1,17 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 if not Syndicator then
   return
 end
 
 local CONTAINER_TYPE_TO_MESSAGE = {
-  equipped = BAGANATOR_L_THAT_ITEM_IS_EQUIPPED,
-  auctions = BAGANATOR_L_THAT_ITEM_IS_LISTED_ON_THE_AUCTION_HOUSE,
-  mail = BAGANATOR_L_THAT_ITEM_IS_IN_A_MAILBOX,
-  void = BAGANATOR_L_THAT_ITEM_IS_IN_VOID_STORAGE,
-}
-
-local dialogName = "Baganator_InventoryItemInX"
-StaticPopupDialogs[dialogName] = {
-  text = "",
-  button1 = OKAY,
-  timeout = 0,
-  hideOnEscape = 1,
+  equipped = addonTable.Locales.THAT_ITEM_IS_EQUIPPED,
+  auctions = addonTable.Locales.THAT_ITEM_IS_LISTED_ON_THE_AUCTION_HOUSE,
+  mail = addonTable.Locales.THAT_ITEM_IS_IN_A_MAILBOX,
+  void = addonTable.Locales.THAT_ITEM_IS_IN_VOID_STORAGE,
 }
 
 Syndicator.API.RegisterShowItemLocation(function(mode, entity, container, itemLink, searchText)
-  StaticPopup_Hide(dialogName)
-
   local self = {}
 
   addonTable.CallbackRegistry:RegisterCallback("ViewComplete", function()
@@ -40,8 +31,7 @@ Syndicator.API.RegisterShowItemLocation(function(mode, entity, container, itemLi
       addonTable.CallbackRegistry:TriggerEvent("BankShow", entity)
       addonTable.CallbackRegistry:TriggerEvent("SearchTextChanged", searchText)
     else
-      StaticPopupDialogs[dialogName].text = CONTAINER_TYPE_TO_MESSAGE[container]
-      StaticPopup_Show(dialogName)
+      addonTable.Dialogs.ShowAcknowledge(CONTAINER_TYPE_TO_MESSAGE[container])
       addonTable.CallbackRegistry:UnregisterCallback("ViewComplete", self)
       return
     end
@@ -66,9 +56,34 @@ Syndicator.API.RegisterShowItemLocation(function(mode, entity, container, itemLi
   end
 end)
 
+local function SaveSearch(label, search)
+  local list = addonTable.Config.Get(addonTable.Config.Options.SAVED_SEARCHES)
+  local oldIndex = FindInTableIf(list, function(a) return a.label == label end)
+  if oldIndex then
+    list[oldIndex].search = search
+  else
+    table.insert(list, {label = label, search = search})
+    table.sort(list, function(a, b)
+      if a.label == b.label then
+        return a.search < b.search
+      else
+        return a.label < b.label
+      end
+    end)
+  end
+end
+
 BaganatorSearchWidgetMixin = {}
 
 function BaganatorSearchWidgetMixin:OnLoad()
+  self:SetShown(addonTable.Config.Get(addonTable.Config.Options.SHOW_SEARCH_BOX))
+  addonTable.CallbackRegistry:RegisterCallback("SettingChanged",  function(_, settingName)
+    if settingName == addonTable.Config.Options.SHOW_SEARCH_BOX then
+      self:SetShown(addonTable.Config.Get(addonTable.Config.Options.SHOW_SEARCH_BOX))
+    end
+  end)
+
+  self.SearchBox.Instructions:SetWordWrap(false)
   self.SearchBox:HookScript("OnTextChanged", function(_, isUserInput)
     if isUserInput and not self.SearchBox:IsInIMECompositionMode() then
       local text = self.SearchBox:GetText()
@@ -105,7 +120,56 @@ function BaganatorSearchWidgetMixin:OnLoad()
     addonTable.Help.ShowSearchDialog()
   end)
 
+  self.SavedSearchesButton:SetupMenu(function(menu, rootDescription)
+    local list = addonTable.Config.Get(addonTable.Config.Options.SAVED_SEARCHES)
+    for _, details in ipairs(list) do
+      local button = rootDescription:CreateButton(details.label, function()
+        addonTable.CallbackRegistry:TriggerEvent("SearchTextChanged", details.search)
+      end)
+      button:AddInitializer(function(button, description, menu)
+        local delete = MenuTemplates.AttachAutoHideButton(button, "transmog-icon-remove")
+        delete:SetPoint("RIGHT")
+        delete:SetSize(16, 16)
+        delete.Texture:SetAtlas("transmog-icon-remove")
+        delete:SetScript("OnClick", function()
+          local list = addonTable.Config.Get(addonTable.Config.Options.SAVED_SEARCHES)
+          local oldIndex = FindInTableIf(list, function(a) return a.label == details.label end)
+          if oldIndex then
+            table.remove(list, oldIndex)
+          end
+          menu:Close()
+        end)
+        MenuUtil.HookTooltipScripts(delete, function(tooltip)
+          GameTooltip_SetTitle(tooltip, DELETE);
+        end);
+      end)
+    end
+    if #list > 0 then
+      rootDescription:CreateDivider()
+    end
+    if self.SearchBox:GetText() == "" then
+      local text = rootDescription:CreateTitle(GRAY_FONT_COLOR:WrapTextInColorCode(addonTable.Locales.SAVE_SEARCH))
+      text:SetTooltip(function(tooltip)
+        tooltip:AddLine(addonTable.Locales.NOTHING_TO_SAVE)
+      end)
+    else
+      local button = rootDescription:CreateButton(NORMAL_FONT_COLOR:WrapTextInColorCode(addonTable.Locales.SAVE_SEARCH), function()
+        addonTable.Dialogs.ShowEditBox(addonTable.Locales.CHOOSE_A_LABEL_FOR_THIS_SEARCH, ACCEPT, CANCEL, function(name)
+          SaveSearch(name, self.SearchBox:GetText())
+        end)
+      end)
+    end
+  end)
+
   addonTable.Skins.AddFrame("SearchBox", self.SearchBox)
+
+  addonTable.CallbackRegistry:RegisterCallback("SetButtonsShown", function(_, shown)
+    self.showButtons = shown
+    if self:IsVisible() and self.sideSpacing then
+      self:SetSpacing(self.sideSpacing)
+    end
+  end, self)
+  self.showButtons = true
 end
 
 function BaganatorSearchWidgetMixin:OnShow()
@@ -120,11 +184,29 @@ function BaganatorSearchWidgetMixin:OnHide()
 end
 
 function BaganatorSearchWidgetMixin:SetSpacing(sideSpacing)
-  self.SearchBox:ClearAllPoints()
-  self.SearchBox:SetPoint("RIGHT", self:GetParent(), -sideSpacing - 71, 0)
-  self.SearchBox:SetPoint("TOPLEFT", self:GetParent(), "TOPLEFT", sideSpacing + addonTable.Constants.ButtonFrameOffset + 5, - 28)
-  self.GlobalSearchButton:ClearAllPoints()
-  self.GlobalSearchButton:SetPoint("LEFT", self.SearchBox, "RIGHT", 3, 0)
-  self.HelpButton:ClearAllPoints()
-  self.HelpButton:SetPoint("LEFT", self.GlobalSearchButton, "RIGHT", 3, 0)
+  self.sideSpacing = sideSpacing
+
+  if self.showButtons then
+    self.SearchBox:ClearAllPoints()
+    self.SearchBox:SetPoint("RIGHT", self:GetParent(), -sideSpacing - 106, 0)
+    self.SearchBox:SetPoint("TOPLEFT", self:GetParent(), "TOPLEFT", sideSpacing + addonTable.Constants.ButtonFrameOffset + 5, - 28)
+    self.SavedSearchesButton:ClearAllPoints()
+    self.SavedSearchesButton:SetPoint("LEFT", self.SearchBox, "RIGHT", 3, 0)
+    self.GlobalSearchButton:ClearAllPoints()
+    self.GlobalSearchButton:SetPoint("LEFT", self.SavedSearchesButton, "RIGHT", 3, 0)
+    self.HelpButton:ClearAllPoints()
+    self.HelpButton:SetPoint("LEFT", self.GlobalSearchButton, "RIGHT", 3, 0)
+
+    self.SavedSearchesButton:Show()
+    self.GlobalSearchButton:Show()
+    self.HelpButton:Show()
+  else
+    self.SearchBox:ClearAllPoints()
+    self.SearchBox:SetPoint("RIGHT", self:GetParent(), -sideSpacing, 0)
+    self.SearchBox:SetPoint("TOPLEFT", self:GetParent(), "TOPLEFT", sideSpacing + addonTable.Constants.ButtonFrameOffset + 5, - 28)
+
+    self.SavedSearchesButton:Hide()
+    self.GlobalSearchButton:Hide()
+    self.HelpButton:Hide()
+  end
 end

@@ -28,7 +28,7 @@ local RSRoutines = private.ImportLib("RareScannerRoutines")
 -- Handle entities without vignette
 ---============================================================================
 
-local function HandleEntityWithoutVignette(rareScannerButton, unitID)
+local function HandleEntityWithoutVignette(rareScannerButton, unitID, trackingSystem)
 	if (not unitID) then
 		return
 	end
@@ -51,7 +51,7 @@ local function HandleEntityWithoutVignette(rareScannerButton, unitID)
 			local npcInfo = RSNpcDB.GetInternalNpcInfo(npcID)
 			if (npcInfo and npcInfo.zoneID and private.DUNGEONS_IDS[npcInfo.zoneID]) then
 				local nameplateUnitName, _ = UnitName(unitID)
-				rareScannerButton:SimulateRareFound(npcID, unitGuid, nameplateUnitName, 0, 0, RSConstants.NPC_VIGNETTE)
+				rareScannerButton:SimulateRareFound(npcID, unitGuid, nameplateUnitName, 0, 0, RSConstants.NPC_VIGNETTE, trackingSystem)
 			end
 			
 			return
@@ -65,7 +65,7 @@ local function HandleEntityWithoutVignette(rareScannerButton, unitID)
 			end
 			
 			local x, y = RSNpcDB.GetBestInternalNpcCoordinates(npcID, mapID)
-			rareScannerButton:SimulateRareFound(npcID, unitGuid, nameplateUnitName, x, y, RSConstants.NPC_VIGNETTE)
+			rareScannerButton:SimulateRareFound(npcID, unitGuid, nameplateUnitName, x, y, RSConstants.NPC_VIGNETTE, trackingSystem)
 		end
 	elseif (unitType == "Object") then
 		local containerID = entityID and tonumber(entityID) or nil
@@ -86,7 +86,7 @@ end
 
 local function OnNamePlateUnitAdded(rareScannerButton, namePlateID)
 	if (namePlateID and not UnitIsUnit("player", namePlateID)) then
-		HandleEntityWithoutVignette(rareScannerButton, namePlateID)
+		HandleEntityWithoutVignette(rareScannerButton, namePlateID, RSConstants.TRACKING_SYSTEM.NAMEPLATE_MOUSEOVER)
 	end
 end
 
@@ -97,7 +97,7 @@ end
 
 local function OnUpdateMouseoverUnit(rareScannerButton)
 	if (not UnitIsUnit("player", "mouseover") and not UnitIsDead("mouseover")) then
-		HandleEntityWithoutVignette(rareScannerButton, "mouseover")
+		HandleEntityWithoutVignette(rareScannerButton, "mouseover", RSConstants.TRACKING_SYSTEM.NAMEPLATE_MOUSEOVER)
 	end
 end
 
@@ -123,24 +123,17 @@ end
 ---============================================================================
 
 local function OnPlayerTargetChanged(rareScannerButton)
-	if (UnitExists("target")) then
+	if (UnitExists("target") and not UnitIsUnit("player", "target") and not UnitIsDead("target")) then
+		HandleEntityWithoutVignette(rareScannerButton, "target", RSConstants.TRACKING_SYSTEM.UNIT_TARGET)
+		
+		-- Update coordinates if the NPC doesnt have a vignette
 		local targetUid = UnitGUID("target")
-		local npcType, _, _, _, _, id = strsplit("-", targetUid)
-		local npcID = id and tonumber(id) or nil
-
-		-- Ignore rare hunter pets
-		if (npcType == "Pet") then
-			return
-		end
+		local _, _, _, _, _, npcID = strsplit("-", targetUid)
+		local npcInfo = RSNpcDB.GetInternalNpcInfo(tonumber(npcID))
+		local playerMapID = C_Map.GetBestMapForUnit("player")
 		
-		-- Ignore if no ID found
-		if (not npcID) then
-			return
-		end
-		
-		-- Simulate found
-		if (RSNpcDB.GetInternalNpcInfo(npcID)) then
-			HandleEntityWithoutVignette(rareScannerButton, "target")
+		if (not InCombatLockdown() and CheckInteractDistance("unit", 4)) then
+			RSGeneralDB.UpdateAlreadyFoundEntityPlayerPosition(tonumber(npcID))
 		end
 	end
 end

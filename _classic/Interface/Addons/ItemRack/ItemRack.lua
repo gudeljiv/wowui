@@ -3,7 +3,17 @@ _G[addonName] = addon
 
 local _
 
+local wowver, wowbuild, wowbuilddate, wowtoc = GetBuildInfo()
 ItemRack.Version = GetAddOnMetadata(addonName, "Version")
+
+-- by Mikinho - Fix for latest update for Classic Era/SoD v11504
+local GetMouseFocus = GetMouseFocus
+if not GetMouseFocus and GetMouseFoci then
+    local GetMouseFoci = GetMouseFoci
+          GetMouseFocus = function()
+          return GetMouseFoci()[1]
+      end
+end
 
 function ItemRack.IsClassic()
 	return WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
@@ -14,11 +24,46 @@ function ItemRack.IsBCC()
 end
 
 function ItemRack.IsWrath()
-	return WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
+	return (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) and not ItemRack.IsCata()
 end
 
+function ItemRack.IsCata()
+	return wowtoc > 40000 and wowtoc < 50000
+end
+
+-- [[ Season of Discovery Runes ]]
 function ItemRack.IsEngravingActive()
 	return C_Engraving and C_Engraving.IsEngravingEnabled()
+end
+
+do
+	if ItemRack.IsEngravingActive() then
+		function ItemRack.AppendRuneID(bag, slot)
+			if slot then
+				if C_Engraving.IsInventorySlotEngravable(bag, slot) then
+					local rune_info = C_Engraving.GetRuneForInventorySlot(bag, slot)
+					if rune_info then
+						return ":runeid:"..tostring(rune_info.skillLineAbilityID)
+					else
+						return ":runeid:0"
+					end
+				else
+					return ""
+				end
+			else
+				if C_Engraving.IsEquipmentSlotEngravable(bag) then
+					local rune_info = C_Engraving.GetRuneForEquipmentSlot(bag)
+					if rune_info then
+						return ":runeid:"..tostring(rune_info.skillLineAbilityID)
+					else
+						return ":runeid:0"
+					end
+				else
+					return ""
+				end
+			end
+		end
+	end
 end
 
 local GetContainerNumSlots, GetContainerItemLink, GetContainerItemID, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID
@@ -114,7 +159,7 @@ ItemRack.Menu = {}
 ItemRack.LockList = {} -- index -2 to 11, flag whether item is tagged already for swap
 if ItemRack.IsClassic() then
 	ItemRack.BankSlots = { -1,5,6,7,8,9,10 }
-elseif ItemRack.IsBCC() or ItemRack.IsWrath() then
+elseif ItemRack.IsBCC() or ItemRack.IsWrath() or ItemRack.IsCata() then
 	ItemRack.BankSlots = { -1,5,6,7,8,9,10,11 }
 end
 ItemRack.KnownItems = {} -- cache of known item locations for fast lookup
@@ -446,11 +491,11 @@ function ItemRack.UpdateClassSpecificStuff()
 end
 
 function ItemRack.OnSetBagItem(tooltip, bag, slot)
-	ItemRack.ListSetsHavingItem(tooltip, ItemRack.GetID(bag, slot))
+	ItemRack.ListSetsHavingItem(tooltip, ItemRack.GetID(bag, slot), true)
 end
 
 function ItemRack.OnSetInventoryItem(tooltip, unit, inv_slot)
-	ItemRack.ListSetsHavingItem(tooltip, ItemRack.GetID(inv_slot))
+	ItemRack.ListSetsHavingItem(tooltip, ItemRack.GetID(inv_slot), true)
 end
 
 function ItemRack.OnSetHyperlink(tooltip, link)
@@ -460,16 +505,23 @@ end
 do
 	local data = {}
 
-	function ItemRack.ListSetsHavingItem(tooltip, id)
+	function ItemRack.ListSetsHavingItem(tooltip, id, exact)
 		if ItemRackSettings.ShowSetInTooltip ~= "ON" then
 			return
 		end
-		local same_ids = ItemRack.SameID
 		if not id or id == 0 then return end
+		local same_ids = ItemRack.SameID
 		for name, set in pairs(ItemRackUser.Sets) do
 			for _, item in pairs(set.equip) do
-				if same_ids(item, id) then
-					data[name] = true
+				if exact then
+					item = ItemRack.UpdateIRString(item)
+					if item==id then
+						data[name] = true
+					end
+				else
+					if same_ids(item, id) then
+						data[name] = true
+					end
 				end
 			end
 		end
@@ -627,30 +679,6 @@ function ItemRack.GetIRString(inputString,baseid,regular)
 	return string.match(inputString or "", (baseid and (regular and ItemRack.iSPatternBaseIDFromRegular or ItemRack.iSPatternBaseIDFromIR) or ItemRack.iSPatternRegularToIR)) or 0
 end
 
--- [[ Season of Discovery Runes ]]
-if ItemRack.IsEngravingActive() then
-	function ItemRack.AppendRuneID(bag, slot)
-		local inv_slot
-		if slot then
-			local item_id = GetContainerItemID(bag, slot)
-			if item_id then
-				inv_slot = C_Item.GetItemInventoryTypeByID(item_id)
-			end
-		else
-			inv_slot = bag
-		end
-		if inv_slot and C_Engraving.IsEquipmentSlotEngravable(inv_slot) then
-			local rune_info = C_Engraving.GetRuneForEquipmentSlot(inv_slot)
-			if rune_info then
-				return ":runeid:"..tostring(rune_info.skillLineAbilityID)
-			else
-				return ":runeid:0"
-			end
-		end
-		return ""
-	end
-end
-
 -- itemrack itemstring updater.
 -- takes a saved ItemRack-style ID and returns an updated version with the latest player level and spec injected, which helps us update outdated IDs saved when the player was lower level or different spec
 function ItemRack.UpdateIRString(itemRackID)
@@ -680,7 +708,11 @@ function ItemRack.GetID(bag,slot)
 	if ItemRack.AppendRuneID then
 		runeSuffix = ItemRack.AppendRuneID(bag,slot)
 	end
-	return ItemRack.GetIRString(itemLink)..runeSuffix
+	if runeSuffix ~= ""	then
+		return ItemRack.GetIRString(itemLink)..runeSuffix
+	else
+		return ItemRack.GetIRString(itemLink)
+	end
 end
 
 -- takes two ItemRack-style IDs (one or both of the parameters can be a baseID instead if needed) and returns true if those items share the same base itemID
@@ -950,6 +982,7 @@ function ItemRack.PopulateKnownItems()
 			end
 		end
 	end
+	ItemRack.KnownItems = known
 end
 
 --[[ Timers ]]
@@ -1195,6 +1228,7 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 				end
 			end
 
+
 			button:CreateBeautyBorder(8)
 			local iid
 
@@ -1233,7 +1267,6 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 				button:SetBeautyBorderColor(1, 1, 1)
 			end
 
-			
 		end
 		if showButtonMenu then
 			table.remove(ItemRack.Menu)
@@ -1321,8 +1354,14 @@ function ItemRack.WriteMenuCooldowns()
 end
 
 function ItemRack.MenuMouseover()
-	local frame = GetMouseFoci()[1]
-	if MouseIsOver(ItemRackMenuFrame) or IsShiftKeyDown() or (frame and frame:GetName() and frame:IsVisible() and ItemRack.MenuMouseoverFrames[frame:GetName()]) then
+	local frame = GetMouseFocus()
+	local frameName = nil
+	local frameVisible = nil
+	local IRmouseOverFrame = nil
+	if frame then frameName = frame:GetName() end
+	if frame then frameVisible = frame:IsVisible() end
+	if frameName then IRmouseOverFrame = ItemRack.MenuMouseoverFrames[frameName] end
+	if MouseIsOver(ItemRackMenuFrame) or IsShiftKeyDown() or (frame and frameName and frameVisible and IRmouseOverFrame) then
 		return -- keep menu open if mouse over menu, shift is down or mouse is immediately over a mouseover frame
 	end
 	for i in pairs(ItemRack.MenuMouseoverFrames) do

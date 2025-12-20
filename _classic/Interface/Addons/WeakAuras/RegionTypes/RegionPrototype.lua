@@ -25,25 +25,44 @@ end
 
 local screenWidth, screenHeight = math.ceil(GetScreenWidth() / 20) * 20, math.ceil(GetScreenHeight() / 20) * 20;
 
-function Private.GetAnchorsForData(parentData, type)
-  local result
-  if not parentData.controlledChildren then
-    if not Private.regionOptions[parentData.regionType] then
+function Private.GetAnchorsForData(data, filter)
+  local result = {}
+  if not data.controlledChildren then
+    if not Private.regionOptions[data.regionType] then
       return
     end
 
     local anchors
-    if Private.regionOptions[parentData.regionType].getAnchors then
-      anchors = Private.regionOptions[parentData.regionType].getAnchors(parentData)
+    if Private.regionOptions[data.regionType].getAnchors then
+      anchors = Private.regionOptions[data.regionType].getAnchors(data)
     else
       anchors = Private.default_types_for_anchor
     end
+
     for anchorId, anchorData in pairs(anchors) do
-      if anchorData.type == type then
-        result = result or {}
+      if anchorData.type == filter then
         result[anchorId] = anchorData.display
       end
     end
+
+    local subElementTypeCounter = {}
+    for i, subRegion in ipairs(data.subRegions) do
+      subElementTypeCounter[subRegion.type] = (subElementTypeCounter[subRegion.type] or 0) + 1
+      local getAnchors = Private.subRegionOptions[subRegion.type].getAnchors
+      if getAnchors then
+        local subRegionTypeData = Private.subRegionTypes[subRegion.type]
+
+        local anchors = getAnchors(subRegion)
+        for key, anchorData in pairs(anchors) do
+          if anchorData.type == filter then
+            local subElementName = subRegionTypeData.displayName .. " " .. subElementTypeCounter[subRegion.type]
+            local anchorId = "sub." .. i .. "." ..  key
+            result[anchorId] = {subElementName, anchorData.display}
+          end
+        end
+      end
+    end
+
   end
   return result
 end
@@ -221,7 +240,7 @@ local function SendChat(self, options)
   if (not options or WeakAuras.IsOptionsOpen()) then
     return
   end
-  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_dest_isunit, options.message_channel, options.r, options.g, options.b, self, options.message_custom, nil, options.message_formaters, options.message_voice);
+  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_dest_isunit, options.message_channel, options.r, options.g, options.b, self, {customFunc = options.message_custom}, nil, options.message_formaters);
 end
 
 local function RunCode(self, func)
@@ -389,7 +408,22 @@ local function UpdateProgressFromState(self, minMaxConfig, state, progressSource
   local remainingProperty = progressSource[8]
   local useAdditionalProgress = progressSource[9]
 
-  if progressType == "number" then
+  if not state then
+    self.minProgress, self.maxProgress = nil, nil
+    self.progressType = "timed"
+    self.duration = 0
+    self.expirationTime = math.huge
+    self.modRate = nil
+    self.inverse = false
+    self.paused = true
+    self.remaining = math.huge
+    if self.UpdateTime then
+      self:UpdateTime()
+    end
+    if self.SetAdditionalProgress then
+      self:SetAdditionalProgress(nil)
+    end
+  elseif progressType == "number" then
     local value = state[property]
     if type(value) ~= "number" then value = 0 end
     local total = totalProperty and state[totalProperty]
@@ -444,6 +478,9 @@ local function UpdateProgressFromState(self, minMaxConfig, state, progressSource
     end
 
     local duration = totalProperty and state[totalProperty] or 0
+    if type(duration) ~= "number" then
+      duration = 0
+    end
     local modRate = modRateProperty and state[modRateProperty] or nil
     local adjustMin
     if minMaxConfig.adjustedMin then
@@ -502,6 +539,7 @@ local function UpdateProgressFromState(self, minMaxConfig, state, progressSource
     else
       max = duration
     end
+
     self.minProgress, self.maxProgress = adjustMin, max
     self.progressType = "timed"
     self.duration = max - adjustMin
@@ -591,13 +629,14 @@ local function UpdateProgressFrom(self, progressSource, minMaxConfig, state, sta
   elseif trigger == 0 then
     UpdateProgressFromManual(self, minMaxConfig, state, progressSource[3], progressSource[4])
   else
-    UpdateProgressFromState(self, minMaxConfig, states[trigger] or {}, progressSource)
+    UpdateProgressFromState(self, minMaxConfig, states and states[trigger] or {}, progressSource)
   end
 end
 
 -- For regions
 local function UpdateProgress(self)
   UpdateProgressFrom(self, self.progressSource, self, self.state, self.states)
+  self.subRegionEvents:Notify("UpdateProgress", self.state, self.states)
 end
 
 Private.UpdateProgressFrom = UpdateProgressFrom
@@ -633,21 +672,37 @@ end
 
 local function Tick(self)
   Private.StartProfileAura(self.id)
-  self.values.lastCustomTextUpdate = nil
+  self.values.customTextUpdated = false
   self.subRegionEvents:Notify("FrameTick")
   Private.StopProfileAura(self.id)
 end
 
-local function AnchorSubRegion(self, subRegion, anchorType, selfPoint, anchorPoint, anchorXOffset, anchorYOffset)
-  subRegion:ClearAllPoints()
+local function ForwardAnchorToSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+  local nextdot = anchorPoint:find(".", 5, true)
+  local index = tonumber(anchorPoint:sub(5, nextdot - 1))
+  local subElement = index and self.subRegions[index] or nil
+  if subElement then
+    local key = anchorPoint:sub(nextdot + 1)
+    if subElement.AnchorSubRegion then
+      subElement:AnchorSubRegion(subRegion, anchorType, key, selfPoint, anchorXOffset, anchorYOffset)
+    end
+  end
+end
 
+local function AnchorSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+  if anchorPoint and anchorPoint:sub(1, 4) == "sub." then
+    self:ForwardAnchorToSubRegion(subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+    return
+  end
   if anchorType == "point" then
+    subRegion:ClearAllPoints()
     local xOffset = anchorXOffset or 0
     local yOffset = anchorYOffset or 0
     subRegion:SetPoint(Private.point_types[selfPoint] and selfPoint or "CENTER",
                        self, Private.point_types[anchorPoint] and anchorPoint or "CENTER",
                        xOffset, yOffset)
   else
+    subRegion:ClearAllPoints()
     anchorXOffset = anchorXOffset or 0
     anchorYOffset = anchorYOffset or 0
     subRegion:SetPoint("bottomleft", self, "bottomleft", -anchorXOffset, -anchorYOffset)
@@ -702,27 +757,16 @@ function Private.regionPrototype.create(region)
   region.UpdateTick = UpdateTick
   region.Tick = Tick
 
+
   region.subRegionEvents = Private.CreateSubscribableObject()
   region.AnchorSubRegion = AnchorSubRegion
+  region.ForwardAnchorToSubRegion = ForwardAnchorToSubRegion
   region.values = {} -- For SubText
 
   region:SetPoint("CENTER", UIParent, "CENTER")
 end
 
-function Private.regionPrototype.modify(parent, region, data)
-  region.state = nil
-  region.states = nil
-  region.subRegionEvents:ClearSubscribers()
-  region.subRegionEvents:ClearCallbacks()
-  Private.FrameTick:RemoveSubscriber("Tick", region)
-
-  local defaultsForRegion = Private.regionTypes[data.regionType] and Private.regionTypes[data.regionType].default;
-
-  if region.SetRegionAlpha then
-    region:SetRegionAlpha(data.alpha)
-  end
-
-  local hasProgressSource = defaultsForRegion and defaultsForRegion.progressSource
+function Private.regionPrototype.AddMinMaxProgressSource(hasProgressSource, region, parentData, data)
   local hasAdjustedMin = hasProgressSource and data.useAdjustededMin and data.adjustedMin
   local hasAdjustedMax = hasProgressSource and data.useAdjustededMax and data.adjustedMax
 
@@ -733,7 +777,7 @@ function Private.regionPrototype.modify(parent, region, data)
   region.adjustedMaxRelPercent = nil
 
   if hasProgressSource then
-    region.progressSource = Private.AddProgressSourceMetaData(data, data.progressSource)
+    region.progressSource = Private.AddProgressSourceMetaData(parentData, data.progressSource)
   end
 
   if (hasAdjustedMin) then
@@ -752,13 +796,31 @@ function Private.regionPrototype.modify(parent, region, data)
       region.adjustedMax = tonumber(data.adjustedMax)
     end
   end
+end
+
+function Private.regionPrototype.modify(parent, region, data)
+  region.state = nil
+  region.states = nil
+  region.subRegionEvents:ClearSubscribers()
+  region.subRegionEvents:ClearCallbacks()
+  Private.FrameTick:RemoveSubscriber("Tick", region)
+
+  local defaultsForRegion = Private.regionTypes[data.regionType] and Private.regionTypes[data.regionType].default;
+
+  if region.SetRegionAlpha then
+    region:SetRegionAlpha(data.alpha)
+  end
+
+  local hasProgressSource = defaultsForRegion and defaultsForRegion.progressSource
+
+  Private.regionPrototype.AddMinMaxProgressSource(hasProgressSource, region, data, data)
 
   region:SetOffset(data.xOffset or 0, data.yOffset or 0);
   region:SetOffsetRelative(0, 0)
   region:SetOffsetAnim(0, 0);
 
   if data.anchorFrameType == "CUSTOM" and data.customAnchor then
-    region.customAnchorFunc = WeakAuras.LoadFunction("return " .. data.customAnchor)
+    region.customAnchorFunc = WeakAuras.LoadFunction("return " .. data.customAnchor, data.id)
   else
     region.customAnchorFunc = nil
   end
@@ -824,6 +886,13 @@ function Private.regionPrototype.modifyFinish(parent, region, data)
         tinsert(region.subRegions, subRegion)
       end
     end
+
+    for index, subRegion in pairs(region.subRegions) do
+      if subRegion.Anchor then
+        subRegion:Anchor()
+      end
+    end
+
   end
 
   region.subRegionEvents:SetOnSubscriptionStatusChanged("FrameTick", function()
@@ -1106,12 +1175,6 @@ function Private.SetTextureOrAtlas(texture, path, wrapModeH, wrapModeV)
   if texture.IsAtlas then
     return texture:SetAtlas(path);
   else
-    if (texture.wrapModeH and texture.wrapModeH ~= wrapModeH) or (texture.wrapModeV and texture.wrapModeV ~= wrapModeV) then
-      -- WORKAROUND https://github.com/Stanzilla/WoWUIBugs/issues/250
-      texture:SetTexture(nil)
-    end
-    texture.wrapModeH = wrapModeH
-    texture.wrapModeV = wrapModeV
     return texture:SetTexture(path, wrapModeH, wrapModeV);
   end
 end

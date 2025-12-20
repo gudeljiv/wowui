@@ -1,4 +1,64 @@
-﻿1.15.53 - 2nd October 2024
+﻿1.15.113 - 12th December 2025
+- PTR (2.5.5): Added additional points of interest icons for the new zones added in Burning Crusade Classic Anniversary.
+
+1.15.111 - 26th November 2025
+- Updated slider controls used throughout the addon.
+
+1.15.110 - 20th November 2025
+- PTR (2.5.5): Preliminary update for Burning Crusade Classic Anniversary.
+
+1.15.103 - 27th October 2025
+- Fixed an issue which may have caused a Lua error when moving or resizing the map.
+
+1.15.102 - 22nd October 2025
+- Updated for game version 1.15.8.
+- Added a new option called 'Use English language'.  If enabled, text used throughout the addon will be shown in English regardless of your game locale.
+
+1.15.88 - 7th May 2025
+- Fixed an issue with map scaling which affected users using a non-standard UI scale.
+
+1.15.87 - 6th May 2025
+- Toggling 'Enlarge player arrow' and 'Show points of interest' now requires a UI reload.
+- The 'Sticky map frame' option has been removed.
+
+1.15.83 - 9th April 2025
+- Updated for game version 1.15.7.
+
+1.15.79 - 14th March 2025
+- Added two zone crossings for The Overlook Cliffs in The Hinterlands.
+- PTR (1.15.7): Preliminary update for game patch 1.15.7.
+
+1.15.73 - 29th January 2025
+- Updated for game version 1.15.6.
+
+1.15.71 - 15th January 2025
+- Added a zone crossing for Faldir's Cove in Arathi Highlands.
+- Updated translations.
+
+1.15.69 - 1st January 2025
+- Added a zone crossing for the Sun Rock Retreat mountain pass in Stonetalon Mountains.
+- Updated translations.
+
+1.15.68 - 25th December 2024
+- Merry Christmas!
+- The 'Use default map' option has returned.  Note that enabling this option will lock out some of the other options.
+- Updated translations.
+
+1.15.67 - 18th December 2024
+- Updated translations.
+
+1.15.66 - 12th December 2024
+- Updated translations.
+1.15.64 - 5th December 2024
+- All versions of Leatrix Maps (The War Within, Cataclysm and Classic Era) are now under the same CurseForge project.  If you use Leatrix Maps for Cataclysm Classic or Classic Era, you need to remove the addon, find it again on CurseForge and install it again as the project IDs have changed and there will be no more updates for the old project.  There is no change for The War Within.
+
+1.15.61 - 20th November 2024
+- Updated for game version 1.15.5.
+
+1.15.59 - 13th November 2024
+- Game API updates.
+
+1.15.53 - 2nd October 2024
 - Game API updates.
 
 1.15.52 - 30th September 2024

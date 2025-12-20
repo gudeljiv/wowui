@@ -1,5 +1,5 @@
 ---@type QuestieJourney
-local QuestieJourney = QuestieLoader:CreateModule("QuestieJourney")
+local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney")
 local _QuestieJourney = QuestieJourney.private
 -------------------------
 --Import modules.
@@ -8,12 +8,29 @@ local _QuestieJourney = QuestieJourney.private
 local QuestieJourneyUtils = QuestieLoader:ImportModule("QuestieJourneyUtils")
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
+---@type QuestieReputation
+local QuestieReputation = QuestieLoader:ImportModule("QuestieReputation")
 ---@type QuestieLib
 local QuestieLib = QuestieLoader:ImportModule("QuestieLib")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
 local AceGUI = LibStub("AceGUI-3.0")
+
+---@param questId QuestId
+---@return string|nil
+function _QuestieJourney:GetReputationRewardString(questId)
+    if not questId then
+        return nil
+    end
+
+    local reputationRewards = QuestieReputation.GetReputationReward(questId)
+    if not reputationRewards or not next(reputationRewards) then
+        return nil
+    end
+
+    return QuestieReputation.GetReputationRewardString(reputationRewards)
+end
 
 
 -- TODO remove again once the call in manageZoneTree was removed
@@ -26,7 +43,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
     QuestieJourneyUtils:Spacer(container)
 
     local obj = AceGUI:Create("Label")
-    obj:SetText(_QuestieJourney:CreateObjectiveText(quest.Description))
+    obj:SetText(QuestieJourneyUtils.CreateObjectiveText(quest.Description))
     obj:SetFullWidth(true)
     container:AddChild(obj)
 
@@ -49,6 +66,13 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
 
     local questIdLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Quest ID: '), 'yellow') .. quest.Id, true)
     container:AddChild(questIdLabel)
+
+    local reputationRewardString = _QuestieJourney:GetReputationRewardString(quest.Id)
+    if reputationRewardString then
+        local labelText = Questie:Colorize(l10n('Reputation Reward: '), 'yellow') .. Questie:Colorize(reputationRewardString, "reputationBlue")
+        local reputationRewardLabel = _QuestieJourney:CreateLabel(labelText, true)
+        container:AddChild(reputationRewardLabel)
+    end
 
     QuestieJourneyUtils:Spacer(container)
 
@@ -87,7 +111,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
         if startindex == 0 then
             return
         end
-        
+
         local continent = QuestieJourneyUtils:GetZoneName(startindex)
 
         startNPCZoneLabel:SetText(l10n(continent))
@@ -126,7 +150,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
                 if v ~= quest.Id then
                     startQuests[counter] = {}
                     local startQuest = QuestieDB.GetQuest(v)
-                    local label = _QuestieJourney:GetInteractiveQuestLabel(startQuest)
+                    local label = QuestieJourneyUtils.GetInteractiveQuestLabel(startQuest)
                     startQuests[counter].frame = label
                     startQuests[counter].quest = startQuest
                     startNPCGroup:AddChild(label)
@@ -210,7 +234,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
                     if v ~= quest.Id then
                         startQuests[counter] = {}
                         local startQuest = QuestieDB.GetQuest(v)
-                        local label = _QuestieJourney:GetInteractiveQuestLabel(startQuest)
+                        local label = QuestieJourneyUtils.GetInteractiveQuestLabel(startQuest)
                         startQuests[counter].frame = label
                         startQuests[counter].quest = startQuest
                         startObjectGroup:AddChild(label)
@@ -232,7 +256,9 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
 
     QuestieJourneyUtils:Spacer(container)
 
-    if quest.Finisher and quest.Finisher.Name and quest.Finisher.Type == "monster" then
+    -- TODO: There can be multiple finishers
+    -- TODO: There can be object finishers
+    if quest.Finisher.NPC then
         local endNPCGroup = AceGUI:Create("InlineGroup")
         endNPCGroup:SetLayout("Flow")
         endNPCGroup:SetTitle(l10n('Quest Turn-in NPC Information'))
@@ -240,7 +266,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
         container:AddChild(endNPCGroup)
         QuestieJourneyUtils:Spacer(endNPCGroup)
 
-        local endNPC = QuestieDB:GetNPC(quest.Finisher.Id)
+        local endNPC = QuestieDB:GetNPC(quest.Finisher.NPC[1])
 
         local endNPCNameLabel = AceGUI:Create("Label")
         endNPCNameLabel:SetText(endNPC.name)
@@ -259,7 +285,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
         end
 
         local continent = QuestieJourneyUtils:GetZoneName(endindex)
-        
+
         endNPCZoneLabel:SetText(l10n(continent))
         endNPCZoneLabel:SetFullWidth(true)
         endNPCGroup:AddChild(endNPCZoneLabel)
@@ -297,7 +323,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
                 if v ~= quest.Id then
                     endQuests[counter] = {}
                     local endQuest = QuestieDB.GetQuest(v)
-                    local label = _QuestieJourney:GetInteractiveQuestLabel(endQuest)
+                    local label = QuestieJourneyUtils.GetInteractiveQuestLabel(endQuest)
                     endQuests[counter].frame = label
                     endQuests[counter].quest = endQuest
                     endNPCGroup:AddChild(label)
@@ -382,7 +408,7 @@ function _QuestieJourney:CreatePreQuestGroup(quest)
         for _, v in pairs(quest.preQuestSingle) do
             if v ~= quest.Id then
                 local preQuest = QuestieDB.GetQuest(v)
-                local label = _QuestieJourney:GetInteractiveQuestLabel(preQuest)
+                local label = QuestieJourneyUtils.GetInteractiveQuestLabel(preQuest)
                 preQuestInlineGroup:AddChild(label)
                 preQuestCounter = preQuestCounter + 1
             end
@@ -391,9 +417,10 @@ function _QuestieJourney:CreatePreQuestGroup(quest)
 
     if (quest.preQuestGroup and next(quest.preQuestGroup)) then
         for _, v in pairs(quest.preQuestGroup) do
+            v = math.abs(v)
             if v ~= quest.Id then
                 local preQuest = QuestieDB.GetQuest(v)
-                local label = _QuestieJourney:GetInteractiveQuestLabel(preQuest)
+                local label = QuestieJourneyUtils.GetInteractiveQuestLabel(preQuest)
                 preQuestInlineGroup:AddChild(label)
                 preQuestCounter = preQuestCounter + 1
             end
@@ -401,23 +428,4 @@ function _QuestieJourney:CreatePreQuestGroup(quest)
     end
 
     return preQuestCounter, preQuestInlineGroup
-end
-
----@param quest Quest
----@return AceInteractiveLabel
-function _QuestieJourney:GetInteractiveQuestLabel(quest)
-    ---@class AceInteractiveLabel
-    local label = AceGUI:Create("InteractiveLabel")
-    local questId = quest.Id
-
-    label:SetText(QuestieLib:GetColoredQuestName(questId, Questie.db.profile.enableTooltipsQuestLevel, false, true))
-    label:SetUserData('id', questId)
-    label:SetUserData('name', quest.name)
-    label:SetCallback("OnClick", function()
-        ItemRefTooltip:SetHyperlink("%|Hquestie:" .. questId .. ":.*%|h", "%[%[" .. quest.level .. "%] " .. quest.name .. " %(" .. questId .. "%)%]")
-    end)
-    label:SetCallback("OnEnter", _QuestieJourney.ShowJourneyTooltip)
-    label:SetCallback("OnLeave", _QuestieJourney.HideJourneyTooltip)
-
-    return label
 end

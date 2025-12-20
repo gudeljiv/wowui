@@ -1,12 +1,14 @@
 local _,addon = ...
-if addon.game ~= "CATA" or addon.player.faction ~= 'Alliance' then return end
+if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
 
 
 RXPGuides.RegisterGuide([[
 
 #version 1
-#group RXP Cataclysm 1-80 (A)
+#group RXP Cataclysm 1-80 (A) << cata
+#group RXP MoP 1-60 (A) << mop
 #cata
+#mop
 #name 10-18 Darkshore
 #next 15-20 Redridge
 #defaultfor NightElf/Worgen/Draenei
@@ -131,6 +133,10 @@ step
     .turnin 13527 >>Turn in No Accounting for Taste
     .accept 13528 >>Accept Buzzbox 723
 	.target Wizbang Cranktoggle
+step
+    #xprate >1.59
+    #optional
+    .maxlevel 18,DarkshoreEnd
 step
     .goto 62,50.90,18.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serendia Oakwhisper|r |cFFfa9602patrolling up and down the stairs in the Inn.|r
@@ -259,12 +265,12 @@ step
 	.target +Tharnariun Treetender
     .goto 62,51.134,19.709
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Volcor|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Volcor|r
     .target Volcor
     .accept 13564 >>Accept A Lost Companion
     .goto 62,50.943,18.026
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerellean Whiteclaw|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerellean Whiteclaw|r
     .target Cerellean Whiteclaw
     .accept 13563 >>Accept A Love Eternal
     .goto 62,50.821,17.884
@@ -276,7 +282,7 @@ step
     .accept 13562 >>Accept The Final Flame of Bashal'Aran
 step
     .goto 62,46.807,33.281
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arya Autumnlight|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arya Autumnlight|r
     .target Arya Autumnlight
     .accept 13561 >>Accept Solace for the Highborne
 step
@@ -305,7 +311,7 @@ step
     .mob +Writhing Highborne
 step
     .goto 62,46.807,33.281
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arya Autumnlight|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arya Autumnlight|r
     .target Arya Autumnlight
     .turnin 13561 >>Turn in Solace for the Highborne
 step
@@ -317,7 +323,7 @@ step
     .accept 13598 >>Accept Unsavory Remedies
 step
     .goto 62,42.932,38.958
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seraphine|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seraphine|r
     .target Seraphine
     .accept 13565 >>Accept Twice Removed
 step
@@ -367,7 +373,7 @@ step
 step
     #requires janira
     .goto 62,42.932,38.958
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seraphine|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seraphine|r
     .target Seraphine
     .turnin 13565 >>Turn in Twice Removed
 step
@@ -406,6 +412,10 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alinya|r
     .target Priestess Alinya
     .turnin 13601 >>Turn in In Aid of the Refugees
+step
+    #xprate >1.59
+    #optional
+    .maxlevel 18,DarkshoreEnd
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Selarin|r and |cRXP_FRIENDLY_Corvine Moonrise|r
     .accept 13542 >>Accept Against the Wind
@@ -557,7 +567,7 @@ step
     .turnin 13579 >>Turn in Protector of Ameth'Aran
     .accept 13584 >>Accept Calming the Earth
 step
-#loop    
+#loop
     .goto 62,43.922,59.006,0
     .goto 62,45.281,58.363,40,0
     .goto 62,42.966,60.120,40,0
@@ -652,7 +662,7 @@ step
 step << skip
 #requires glynda2
     .goto 62,50.986,19.229
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorbold Steelhand|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorbold Steelhand|r
     .target Gorbold Steelhand
     .accept 13560 >>Accept An Ocean Not So Deep
 step << skip--terrible xp/hr
@@ -692,17 +702,15 @@ step << Warrior
     .goto 62,50.831,18.787
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Moonwing|r
     .trainer >> Train your class spells
-    .target Sentinel Moonwing  
+    .target Sentinel Moonwing
 step << Druid
     .goto 62,50.120,19.495
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dular|r
     .trainer >> Train your class spells
     .target Dular
-
 step
     #optional
     .maxlevel 18,DarkshoreEnd
-
 step
 #requires glynda2
     .goto 62,58.912,19.448
@@ -799,7 +807,7 @@ step
     >>|cRXP_WARN_Escort|r |cRXP_FRIENDLY_Sentinel Aynasha|r
     .complete 13510,1
     .target Sentinel Aynasha
-step 
+step
 #loop
     .goto 62,62.929,8.213,30,0
     .goto 62,61.720,11.021,30,0
@@ -828,10 +836,10 @@ step
     .goto 62,58.880,19.530
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .accept 13513 >>Accept On the Brink
-    .target Balthule Shadowstrike   
+    .target Balthule Shadowstrike
 step
     .goto 62,59.154,19.624
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r
     .target Mathas Wildwood
     .accept 13844 >>Accept The Looting of Althalaxx
 step
@@ -868,14 +876,14 @@ step
 step--TODO: Fix this bit
 #requires shamans
     .goto 1439/1,-804.20001,7376.39990
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r
     .target Mathas Wildwood
     .turnin 13844 >>Turn in The Looting of Althalaxx
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .goto 1439/1,-791.50000,7381.60010
     .turnin 13513 >>Turn in On the Brink
-    .target Balthule Shadowstrike  
+    .target Balthule Shadowstrike
 step
     .goto 1439/1,-792.79999,7384.80029
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
@@ -994,7 +1002,7 @@ step << Druid
     .target Dular
 step
     #optional
-    .maxlevel 18,DarkshoreEnd
+    #label DarkshoreEnd
 
 --NORTHERN DARKSHORE END
 step
@@ -1007,20 +1015,20 @@ step
 step
 #questguide
     .goto 62,45.141,75.174
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foriel Broadleaf|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foriel Broadleaf|r
     .target Foriel Broadleaf
     .accept 13525 >>Accept What's Happening to the Blackwood Furbolg?
 step
 #questguide
     .goto 62,45.311,75.131
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r
     .target Balren of the Claw
     .turnin -13902 >>Turn in Mounting the Offensive
     .accept 13892 >>Accept Leave No Tracks
 step
 #questguide
     .goto 62,45.198,74.627
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kathrena Winterwisp|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kathrena Winterwisp|r
     .target Kathrena Winterwisp
     .accept 13881 >>Accept Consumed
 step
@@ -1124,7 +1132,7 @@ step
     .complete 13544,1
 step
 #questguide
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r and |cRXP_FRIENDLY_Larien|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r and |cRXP_FRIENDLY_Larien|r
     .turnin 13948 >>Turn in Stepping Up Surveillance
     .target +Balren of the Claw
     .goto 62,45.284,75.170
@@ -1242,13 +1250,13 @@ step
 step
 #questguide
     .goto 62,37.747,82.932
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .target Jr. Archaeologist Ferd
     .accept 13912 >>Accept Swamped Secrets
 step
 #questguide
     .goto 62,37.695,82.932
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Remtravel|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Remtravel|r
     .target Prospector Remtravel
     .accept 13911 >>Accept The Absent-Minded Prospector
     >>|cRXP_WARN_This will start an escort quest|r
@@ -1268,7 +1276,7 @@ step
 step
 #questguide
     .goto 62,37.747,82.932
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .target Jr. Archaeologist Ferd
     .turnin 13911 >>Turn in The Absent-Minded Prospector
 step
@@ -1298,7 +1306,7 @@ step
 step
 #questguide
     .goto 62,37.747,82.932
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .target Jr. Archaeologist Ferd
     .turnin 13912 >>Turn in Swamped Secrets
     .accept 13918 >>Accept The Titans' Terminal
@@ -1340,7 +1348,7 @@ step
     .complete 13918,1
 step
 #questguide
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archaeologist Groff|r and |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archaeologist Groff|r and |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .turnin 13909 >>Turn in Got Some Flotsam?
     .accept 13910 >>Accept A New Home
     .target +Archaeologist Groff
@@ -1375,7 +1383,7 @@ step
 step
 #questguide
     .goto 62,45.405,74.864
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Onu|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Onu|r
     .target Onu
     .accept 13895 >>Accept The Slumbering Ancients
 step
@@ -1387,7 +1395,7 @@ step
 step
 #questguide
     .goto 62,45.568,71.637
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darkscale Assassin|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darkscale Assassin|r
     .target Darkscale Assassin
     .accept 13953 >>Accept Naga In Our Midst
 step
@@ -1446,13 +1454,13 @@ step
 #questguide
     #completewith next
     .goto 62,45.031,79.192
-    .cast 65207 >> |cRXP_WARN_Use the|r |T133749:0|t[Lifebringer Sapling] |cRXP_WARN_at the |cRXP_PICK_Devouring Artifact|r underwater to summon|r |cRXP_ENEMY_Yoth'al the Devourer|r 
+    .cast 65207 >> |cRXP_WARN_Use the|r |T133749:0|t[Lifebringer Sapling] |cRXP_WARN_at the |cRXP_PICK_Devouring Artifact|r underwater to summon|r |cRXP_ENEMY_Yoth'al the Devourer|r
     .timer 10,The Devourer of Darkshore RP
     .use 46370
 step
 #questguide
     .goto 62,45.031,79.192
-    .use 46370 >> Kill |cRXP_ENEMY_Yoth'al the Devourer|r 
+    .use 46370 >> Kill |cRXP_ENEMY_Yoth'al the Devourer|r
     .complete 13891,1
     .mob Yoth'al the Devourer
 step

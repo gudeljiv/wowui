@@ -1194,15 +1194,6 @@ typeControlAdders = {
         return not option.useName
       end
     }
-    args[prefix .. "noMerge"] = {
-      type = "toggle",
-      name = name(option, "noMerge", L["Prevent Merging"]),
-      desc = desc(option, "noMerge", L["If checked, then this separator will not merge with other separators when selecting multiple auras."]),
-      order = order(),
-      width = WeakAuras.doubleWidth,
-      get = get(option, "noMerge"),
-      set = set(data, option, "noMerge"),
-    }
   end,
   group = function(options, args, data, order, prefix, i)
     local option = options[i]
@@ -2512,8 +2503,6 @@ local function mergeOptions(mergedOptions, data, options, config, prepath, paren
           break
         end
       end
-    else
-      nextInsert = #mergedOptions + 1
     end
     -- now we know at what point to add nextToMerge
     if shouldMerge then
@@ -2569,6 +2558,7 @@ local function mergeOptions(mergedOptions, data, options, config, prepath, paren
         end
       end
     else
+      nextInsert = #mergedOptions + 1
       -- can't merge, should insert instead
       local newOption = CopyTable(nextToMerge)
       initReferences(newOption, data, options, i, config, path, parent)

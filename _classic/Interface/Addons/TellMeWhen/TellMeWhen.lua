@@ -24,7 +24,7 @@ local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "11.0.10" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "11.2.8" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -80,6 +80,23 @@ This can happen especially if you use the Twitch app - ensure "Install Libraries
 
 	-- Stop trying to load TMW.
 	return
+elseif _G.GetLib and (not LibStub.libs or not pcall(LibStub.NewLibrary, LibStub, "__TMW_GetLib_test", "20250806041923")) then
+	local _, fault = issecurevariable("GetLib");
+	StaticPopupDialogs["TMW_MISSINGLIB"] = {
+		text = ([[TellMeWhen:
+
+You appear to have installed an AddOn that includes a piece of poorly functioning code called "RasuForge-GetLib". 
+
+This code attempts to replace LibStub, the registry of shared AddOn library code that is used by nearly every WoW AddOn for almost 20 years. Unfortunately, it is poorly made and interferes with the way that LibStub normally functions.
+
+TellMeWhen's best guess at where this came from is the addon %q. TellMeWhen will not function properly while this addon is installed and enabled.]]):format(fault), 
+		button1 = OKAY,
+		timeout = 0,
+		showAlert = true,
+		whileDead = true,
+		preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
+	}
+	StaticPopup_Show("TMW_MISSINGLIB")
 end
 
 local L = LibStub("AceLocale-3.0"):GetLocale("TellMeWhen", true)
@@ -96,12 +113,6 @@ local TMW = LibOO:GetNamespace("TellMeWhen"):NewClass("TMW", "Frame"):New("Frame
 _G.TMW = LibStub("AceAddon-3.0"):NewAddon(TMW, "TellMeWhen", "AceEvent-3.0", "AceTimer-3.0", "AceConsole-3.0", "AceComm-3.0", "AceSerializer-3.0")
 _G.TellMeWhen = _G.TMW
 local TMW = _G.TMW
-
-local tocVersion = select(4, GetBuildInfo());
-TMW.isClassic = tocVersion <= 19999
-TMW.isWrath = tocVersion >= 30400 and tocVersion <= 30499
-TMW.isCata = tocVersion >= 40400 and tocVersion <= 40499
-TMW.isRetail = tocVersion >= 90000
 
 
 local DogTag = LibStub("LibDogTag-3.0", true)
@@ -164,8 +175,8 @@ end)
 
 ---------- Upvalues ----------
 local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or GetSpellTexture
-local InCombatLockdown, GetTalentInfo =
-	  InCombatLockdown, GetTalentInfo
+local InCombatLockdown =
+	  InCombatLockdown
 local IsInGuild, IsInGroup, IsInInstance =
 	  IsInGuild, IsInGroup, IsInInstance
 local tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, select, wipe, rawget, rawset, assert, pcall, error, getmetatable, setmetatable, loadstring, unpack, debugstack =
@@ -175,6 +186,7 @@ local strfind, strmatch, format, gsub, gmatch, strsub, strtrim, strsplit, strlow
 local _G, coroutine, table, GetTime, CopyTable =
 	  _G, coroutine, table, GetTime, CopyTable
 local tostringall = tostringall
+local debugprofilestop = debugprofilestop
 
 ---------- Locals ----------
 local Locked
@@ -613,22 +625,6 @@ function TMW:ValidateType(argN, methodName, var, reqType)
 		error(("Bad argument %s to %q. %s expected, got %s (%s)"):format(argN, methodName, reqType, varTypeName, tostring(var) or "[noval]"), 3)
 	end
 end
-
--- This code is here to prevent other addons from resetting
--- the high-precision timer. It isn't fool-proof (if someone upvalues debugprofilestart
--- then this won't have an effect on calls to that upvalue), but it helps.
-local start_old = debugprofilestart
-local lastReset = 0
-function _G.debugprofilestart()
-	lastReset = lastReset + debugprofilestop()
-
-	return start_old()
-end
-
-function _G.debugprofilestop_SAFE()
-	return debugprofilestop() + lastReset    
-end
-local debugprofilestop = debugprofilestop_SAFE
 
 
 
@@ -1087,10 +1083,9 @@ function TMW:PLAYER_LOGIN()
 	-- end
 	
 
+	safecall(TMW.UpdateTalentTextureCache, TMW)
 
-	TMW:UpdateTalentTextureCache()
-
-
+	TMW:RegisterEvent("GLOBAL_MOUSE_DOWN")
 	
 	if C_BarberShop then
 		TMW:RegisterEvent("BARBER_SHOP_OPEN")
@@ -1098,12 +1093,9 @@ function TMW:PLAYER_LOGIN()
 	end
 	TMW:RegisterEvent("PLAYER_TALENT_UPDATE", "PLAYER_SPECIALIZATION_CHANGED")
 	TMW:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
-	if TMW.isRetail then
-		TMW:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
-		TMW:RegisterEvent("TRAIT_CONFIG_UPDATED", "PLAYER_SPECIALIZATION_CHANGED")
-	else
-		TMW:RegisterEvent("CHARACTER_POINTS_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
-	end
+	TMW:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("TRAIT_CONFIG_UPDATED", "PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("CHARACTER_POINTS_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
 
 
 
@@ -1611,63 +1603,6 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 
 		[80005] = {
 			group = function(self, gs, domain, groupID)
-				if domain == "profile" and GetSpecialization then
-					local expectedProfileName = UnitName("player") .. " - " .. GetRealmName()
-					if expectedProfileName == TMW.db:GetCurrentProfile() or TMW.db.profile.Version > 70001 then
-						-- If the current profile is named after the current character,
-						-- or if the version is after 70001 (which is the all-profiles upgrade)
-						-- we can safely pull the player's current talents to get rid of these settings.
-
-						-- If neither of these things are the case, then just kill the settings without trying to upgrade.
-						-- The user will have to re-configure those groups that will now be showing when they shouldn't be.
-
-
-						-- Normalize these with their old default values to make this easier.
-						if gs.PrimarySpec == nil then
-							gs.PrimarySpec = true
-						end
-						if gs.SecondarySpec == nil then
-							gs.SecondarySpec = true
-						end
-
-						-- Only do anything if only one of these was enabled.
-						-- If both were enabled, don't disable anything (duh),
-						-- and if both were disabled, then.... why? Silly user!
-						if (gs.PrimarySpec and not gs.SecondarySpec)
-						or (not gs.PrimarySpec and gs.SecondarySpec)
-						then
-							local enabledSpec 
-							if gs.PrimarySpec then
-								enabledSpec = GetSpecialization(false, false, 1)
-							else
-								enabledSpec = GetSpecialization(false, false, 2)
-							end
-
-							-- Disable any specs that aren't the one that was enabled.
-							for i = 1, 4 do
-								if i ~= enabledSpec then
-									gs["Tree" .. i] = false
-								end
-							end
-						end
-
-
-						-- Now, upgrade the Tree settings. These are moving from being stored in one key per tree
-						-- to a table that stores specIDs. This prevents the stuff we had to go through for this upgrade:
-						-- the old settings we context-sensitive (on the player's class), while the new settings are not.
-
-						for treeID = 1, GetNumSpecializations() do
-							local specID = GetSpecializationInfo(treeID)
-							local specEnabled = gs["Tree" .. treeID]
-							if specEnabled == nil then
-								specEnabled = true
-							end
-
-							gs.EnabledSpecs[specID] = specEnabled
-						end
-					end
-				end
-
 				-- We're done with these now. Goodbye!
 				gs.PrimarySpec = nil
 				gs.SecondarySpec = nil
@@ -2892,28 +2827,16 @@ function TMW:ScheduleUpdate(delay)
 end
 
 function TMW:UpdateTalentTextureCache()
-	if MAX_TALENT_TIERS then
-		for tier = 1, MAX_TALENT_TIERS do
-			for column = 1, NUM_TALENT_COLUMNS do
-				local id, name, tex = GetTalentInfo(tier, column, 1)
+	for _, talentInfoQuery in TMW.GetTalentQueries() do
+		local talentInfo = C_SpecializationInfo.GetTalentInfo(talentInfoQuery);
+		if talentInfo then
+			local name = talentInfo.name
+			local tex = talentInfo.fileID
 
-				local lower = name and strlowerCache[name]
-				
-				if lower then
-					SpellTexturesMetaIndex[lower] = tex
-				end
-			end
-		end
-	elseif GetNumTalentTabs then
-		for tab = 1, GetNumTalentTabs() do
-			for index = 1, GetNumTalents(tab) do
-				local name, iconTexture = GetTalentInfo(tab, index)
+			local lower = name and strlowerCache[name]
 
-				local lower = name and strlowerCache[name]
-				
-				if lower then
-					SpellTexturesMetaIndex[lower] = iconTexture
-				end
+			if lower then
+				SpellTexturesMetaIndex[lower] = tex
 			end
 		end
 	end
@@ -2970,7 +2893,12 @@ function TMW:BARBER_SHOP_CLOSE()
 	TMW:Show()
 end
 
-
+function TMW:GLOBAL_MOUSE_DOWN(button)
+	local mouseFocus = TMW.GetMouseFocus()
+	if not mouseFocus or mouseFocus == WorldFrame then
+		TMW:Fire("TMW_WORLD_FRAME_MOUSE_DOWN", button)
+	end
+end
 
 
 

@@ -14,6 +14,7 @@ if Utility.IsRetail and GetLocale() == "frFR" then
     local Locales = {}
 
     Locales.ThousandSeparator = " "
+    Locales.DecimalSeparator = ","
 
     Locales.KeyWords = {}
     Locales.KeyWords.Use = "Utiliser"
@@ -26,6 +27,8 @@ if Utility.IsRetail and GetLocale() == "frFR" then
     Locales.KeyWords.WellFed = "bien nourri"
     Locales.KeyWords.ToxicPotion = "horrible décoction"
     Locales.KeyWords.OverTime = "par seconde pendant"
+
+    Locales.KeyWords.QuietContemplation = "Contemplation paisible"
 
     Locales.Patterns = {}
     Locales.Patterns.OverTime = "pendant (%d+) s%."
@@ -41,25 +44,32 @@ if Utility.IsRetail and GetLocale() == "frFR" then
 
     Locales.Patterns.HealthAndMana = {
         {
-            pattern = "([%d%.]+)%%.-de vie et de mana",
+            pattern = "([%d,%.]+)%%.-de vie et de mana",
             healthIndex = 1,
             manaIndex = 1,
             pct = true
         },
         {
-            pattern = "([%d%s%.]+).-de vie et de mana",
+            pattern = "([%d%s,%.]+).-de vie et de mana",
             healthIndex = 1,
             manaIndex = 1,
             pct = false
         },
         {
-            pattern = " ([%d%.]+)%% .-vie.- ([%d%.]+)%% .-mana",
+            pattern = " ([%d,%.]+)%% .-vie.- ([%d,%.]+)%% .-mana",
             healthIndex = 1,
             manaIndex = 2,
             pct = true
         },
         {
-            pattern = " ([%d%s%.]+) .-vie.- ([%d%s%.]+) .-mana",
+            pattern = " ([%d%s,%.]+) .-million.- vie.- ([%d%s,%.]+) .-mana",
+            healthIndex = 1,
+            manaIndex = 2,
+            pct = false,
+            healthFactor = 1000000
+        },
+        {
+            pattern = " ([%d%s,%.]+) .-vie.- ([%d%s,%.]+) .-mana",
             healthIndex = 1,
             manaIndex = 2,
             pct = false
@@ -68,13 +78,20 @@ if Utility.IsRetail and GetLocale() == "frFR" then
 
     Locales.Patterns.Health = {
         {
-            pattern = "([%d%.]+)%%.-vie",
+            pattern = "([%d,%.]+)%%.-vie",
             healthIndex = 1,
             manaIndex = nil,
             pct = true
         },
         {
-            pattern = "([%d%s%.]+) .-vie",
+            pattern = "([%d%s,%.]+) .-million.- vie",
+            healthIndex = 1,
+            manaIndex = nil,
+            pct = false,
+            factor = 1000000
+        },
+        {
+            pattern = "([%d%s,%.]+) .-vie",
             healthIndex = 1,
             manaIndex = nil,
             pct = false
@@ -83,13 +100,20 @@ if Utility.IsRetail and GetLocale() == "frFR" then
 
     Locales.Patterns.Mana = {
         {
-            pattern = "([%d%.]+)%%.-mana",
+            pattern = "([%d,%.]+)%%.-mana",
             healthIndex = nil,
             manaIndex = 1,
             pct = true
         },
         {
-            pattern = "([%d%s%.]+) .-mana",
+            pattern = "([%d%s,%.]+) .-million.- mana",
+            healthIndex = 1,
+            manaIndex = nil,
+            pct = false,
+            factor = 1000000
+        },
+        {
+            pattern = "([%d%s,%.]+) .-mana",
             healthIndex = nil,
             manaIndex = 1,
             pct = false

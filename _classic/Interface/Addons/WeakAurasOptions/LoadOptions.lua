@@ -651,7 +651,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
             hidden = disabled or hidden,
             image = function()
               local value = getValue(trigger, "use_"..realname, realname, multiEntry, entryNumber)
-              if value then
+              if type(value) == "number" or type(value) == "string" then
                 if(arg.type == "aura") then
                   local icon = spellCache.GetIcon(value);
                   return icon and tostring(icon) or "", 18, 18;
@@ -665,7 +665,15 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
                       end
                     end
                   end
-                  local icon = OptionsPrivate.Private.ExecEnv.GetSpellIcon(value);
+                  local name, _, icon = OptionsPrivate.Private.ExecEnv.GetSpellInfo(value)
+                  if arg.noValidation then
+                    -- GetSpellInfo and other wow apis are case insensitive, but the later matching we do
+                    -- isn't. For validted inputs, we automatically correct the casing via GetSpellName
+                    -- Since we don't do that for noValidation, we are extra picky on the input
+                    if type(value) == "string" and name ~= value then
+                      return "", 18, 18
+                    end
+                  end
                   return icon and tostring(icon) or "", 18, 18;
                 elseif(arg.type == "item") then
                   local _, _, _, _, _, _, _, _, _, icon = C_Item.GetItemInfo(value);
@@ -677,6 +685,9 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
             end,
             disabled = function()
               local value = getValue(trigger, nil, realname, multiEntry, entryNumber)
+              if type(value) ~= "number" and type(value) ~= "string" then
+                return true
+              end
               return not ((arg.type == "aura" and value and spellCache.GetIcon(value)) or (arg.type == "spell" and value and OptionsPrivate.Private.ExecEnv.GetSpellName(value)) or (arg.type == "item" and value and C_Item.GetItemIconByID(value or '')))
             end
           };
@@ -692,6 +703,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
               local value = getValue(trigger, "use_"..realname, realname, multiEntry, entryNumber)
               if(arg.type == "item") then
                 local useExactSpellId = (arg.showExactOption and getValue(trigger, nil, "use_exact_"..realname, multiEntry, entryNumber))
+                                        or arg.only_exact
                 if value and value ~= "" then
                   if useExactSpellId then
                     local itemId = tonumber(value)
@@ -714,7 +726,8 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
                 end
               elseif(arg.type == "spell") then
                 local useExactSpellId = (arg.showExactOption and getValue(trigger, nil, "use_exact_"..realname, multiEntry, entryNumber))
-                if value and value ~= "" then
+                                        or arg.only_exact
+                if value and value ~= "" and (type(value) == "number" or type(value) == "string") then
                   local spellID = WeakAuras.SafeToNumber(value)
                   if spellID then
                     if arg.negativeIsEJ and WeakAuras.IsRetail() and spellID < 0 then
@@ -909,7 +922,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
               values = WeakAuras[arg.values];
             end
           end
-          local sortOrder = arg.sorted and OptionsPrivate.Private.SortOrderForValues(values) or nil
+          local sortOrder = arg.sorted and (arg.sortOrder or OptionsPrivate.Private.SortOrderForValues(values)) or nil
           options[name..suffix] = {
             type = "select",
             width = WeakAuras.normalWidth,
@@ -981,6 +994,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
                 v = arg.multiConvertKey(trigger, v)
               end
               if v then
+                trigger[realname] = trigger[realname] or {}
                 trigger[realname].multi = trigger[realname].multi or {};
                 if (calledFromSetAll or arg.multiTristate) then
                   trigger[realname].multi[v] = calledFromSetAll;
@@ -1111,13 +1125,13 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
   end
   if prototype.timedrequired then
     options.unevent = {
-      type = "select",
+      type = "toggle",
+      disabled = true,
       width = WeakAuras.normalWidth,
-      name = L["Hide"],
+      name = L["Hide After"],
       order = order,
-      values = OptionsPrivate.Private.timedeventend_types,
       get = function()
-        return "timed"
+        return true
       end,
       set = function(info, v)
         -- unevent is no longer used

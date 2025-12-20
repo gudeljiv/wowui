@@ -21,20 +21,7 @@ StatLogic.RatingBase = {
 	[StatLogic.Stats.ExpertiseRating] = 2.5,
 }
 
-StatLogic.GenericStatMap[StatLogic.Stats.HitRating] = {
-	StatLogic.Stats.MeleeHitRating,
-	StatLogic.Stats.RangedHitRating,
-}
-StatLogic.GenericStatMap[StatLogic.Stats.CritRating] = {
-	StatLogic.Stats.MeleeCritRating,
-	StatLogic.Stats.RangedCritRating,
-}
-StatLogic.GenericStatMap[StatLogic.Stats.HasteRating] = {
-	StatLogic.Stats.MeleeHasteRating,
-	StatLogic.Stats.RangedHasteRating,
-}
-
--- Numbers reverse engineered by Whitetooth@Cenarius(US) (hotdogee [at] gmail [dot] com)
+-- Extracted from the client at GameTables/RegenMPPerSpt.txt via wow.tools.local
 local BaseManaRegenPerSpi = {
 	0.034965, 0.034191, 0.033465, 0.032526, 0.031661, 0.031076, 0.030523, 0.029994, 0.029307, 0.028661,
 	0.027584, 0.026215, 0.025381, 0.024300, 0.023345, 0.022748, 0.021958, 0.021386, 0.020790, 0.020121,
@@ -58,7 +45,7 @@ local NormalManaRegenPerInt = function(level)
 	return (spi * BaseManaRegenPerSpi[level] / (2 * (int ^ 0.5))) * 5
 end
 
--- Numbers reverse engineered by Whitetooth@Cenarius(US) (hotdogee [at] gmail [dot] com)
+-- Extracted from gtChanceToMeleeCrit.db2 or from gametables/chancetomeleecrit.txt via wow.tools or wago.tools
 addon.CritPerAgi = {
 	["WARRIOR"] = {
 		0.2500, 0.2381, 0.2381, 0.2273, 0.2174, 0.2083, 0.2083, 0.2000, 0.1923, 0.1923,
@@ -143,7 +130,7 @@ addon.CritPerAgi = {
 	},
 }
 
--- Numbers reverse engineered by Whitetooth (hotdogee [at] gmail [dot] com)
+-- Extracted from gtChanceToSpellCrit.db2 or from gametables/chancetospellcrit.txt via wow.tools or wago.tools
 addon.SpellCritPerInt = {
 	["WARRIOR"] = addon.zero,
 	["PALADIN"] = {
@@ -212,13 +199,73 @@ addon.SpellCritPerInt = {
 	},
 }
 
--- TODO Gather data if TBC comes back
-addon.DodgePerAgi = {}
+local DodgePerCrit = {
+	["WARRIOR"]     = 0.848,
+	["PALADIN"]     = 1.000,
+	["HUNTER"]      = 1.600,
+	["ROGUE"]       = 2.000,
+	["PRIEST"]      = 1.000,
+	["SHAMAN"]      = 1.000,
+	["MAGE"]        = 1.000,
+	["WARLOCK"]     = 0.988,
+	["DRUID"]       = 1.700,
+}
+
+-- These are likely all static conversions and can use DodgePerCrit
+-- without any hardcoded values.
+-- TODO Confirm DodgePerCrit remains accurate from 61-70; if so,
+-- delete the following class-specific tables, leaving the metatable.
+addon.DodgePerAgi = setmetatable({
+	["WARRIOR"] = {
+		[1]  = 0.2121,
+		[60] = 0.0424,
+	},
+	["PALADIN"] = {
+		[1]  = 0.2174,
+		[60] = 0.0512,
+	},
+	["HUNTER"] = {
+		[1]  = 0.4543,
+		[60] = 0.0482,
+	},
+	["ROGUE"] = {
+		[1]  = 0.8952,
+		[60] = 0.0710,
+	},
+	["PRIEST"] = {
+		[1]  = 0.0909,
+		[60] = 0.0454,
+	},
+	["SHAMAN"] = {
+		[1]  = 0.1663,
+		[60] = 0.0512,
+	},
+	["MAGE"] = {
+		[1]  = 0.0771,
+		[60] = 0.0441,
+	},
+	["WARLOCK"] = {
+		[1]  = 0.1483,
+		[60] = 0.0494,
+	},
+	["DRUID"] = {
+		[1]  = 0.3436,
+		[60] = 0.0838,
+	},
+}, {
+	__index = function (t, class)
+		t[class] = setmetatable({}, {__index = function(classTable, level)
+			classTable[level] = DodgePerCrit[class] * addon.CritPerAgi[class][level]
+			return classTable[level]
+		end })
+		return t[class]
+	end
+})
 
 StatLogic.StatModTable = {}
 if addon.class == "DRUID" then
 	StatLogic.StatModTable["DRUID"] = {
-		["ADD_AP_MOD_FERAL_AP"] = {
+		["ADD_AP_MOD_FERAL_ATTACK_POWER"] = {
 			-- Cat Form
 			{
 				["value"] = 1,
@@ -257,12 +304,12 @@ if addon.class == "DRUID" then
 				["aura"] = 768,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -309,7 +356,7 @@ if addon.class == "DRUID" then
 		},
 		-- Druid: Intensity (Rank 3) - 3,6
 		--        Allows 10/20/30% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 10 rage.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 3,
 				["num"] = 6,
@@ -320,7 +367,7 @@ if addon.class == "DRUID" then
 		},
 		-- Druid: Dreamstate (Rank 3) - 1,17
 		--        Regenerate mana equal to 4%/7%/10% of your Intellect every 5 sec, even while casting.
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			{
 				["tab"] = 1,
 				["num"] = 17,
@@ -447,17 +494,15 @@ if addon.class == "DRUID" then
 				},
 			},
 		},
-		-- Druid: Heart of the Wild (Rank 5) - 2,15
-		--        Increases your Intellect by 4%/8%/12%/16%/20%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4%/8%/12%/16%/20% and while in Cat Form your Strength is increased by 4%/8%/12%/16%/20%.
-		-- 2.3.0 This talent no longer provides 4/8/12/16/20% bonus Strength in Cat Form. Instead it provides 2/4/6/8/10% bonus attack power.
 		["MOD_AP"] = {
+			-- Talent: Heart of the Wild (Cat Form)
 			{
 				["tab"] = 2,
 				["num"] = 15,
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
-				["aura"] = 32356,		-- ["Cat Form"],
+				["aura"] = 32356,
 			},
 		},
 		-- Druid: Survival of the Fittest (Rank 3) - 2,16
@@ -532,12 +577,12 @@ elseif addon.class == "HUNTER" then
 				["value"] = 1,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -559,7 +604,7 @@ elseif addon.class == "HUNTER" then
 		-- that margin, it will be less effective. The mana regained never drops
 		-- below 10% of intellect every 5 sec. or goes above 50% of intellect
 		-- every 5 sec.
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			{
 				["value"] = 0.25,
 				["aura"] = 34074,			-- ["Aspect of the Viper"],
@@ -576,9 +621,8 @@ elseif addon.class == "HUNTER" then
 				},
 			},
 		},
-		-- Hunter: Survival Instincts (Rank 2) - 3,14
-		--         Reduces all damage taken by 2%/4% and increases attack power by 2%/4%.
 		["MOD_AP"] = {
+			-- Talent: Survival Instincts
 			{
 				["tab"] = 3,
 				["num"] = 14,
@@ -587,11 +631,8 @@ elseif addon.class == "HUNTER" then
 				}
 			},
 		},
-		-- Hunter: Master Marksman (Rank 5) - 2,19
-		--         Increases your ranged attack power by 2%/4%/6%/8%/10%.
-		-- Hunter: Survival Instincts (Rank 2) - 3,14
-		--         Reduces all damage taken by 2%/4% and increases attack power by 2%/4%.
 		["MOD_RANGED_AP"] = {
+			-- Talent: Master Marksman
 			{
 				["tab"] = 2,
 				["num"] = 19,
@@ -599,6 +640,7 @@ elseif addon.class == "HUNTER" then
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
 			},
+			-- Talent: Survival Instincts
 			{
 				["tab"] = 3,
 				["num"] = 14,
@@ -717,12 +759,12 @@ elseif addon.class == "MAGE" then
 				["value"] = 3.4575,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -747,7 +789,7 @@ elseif addon.class == "MAGE" then
 		},
 		-- Mage: Arcane Meditation (Rank 3) - 1,12
 		--       Allows 10/20/30% of your Mana regeneration to continue while casting.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 1,
 				["num"] = 12,
@@ -797,12 +839,12 @@ elseif addon.class == "PALADIN" then
 				["value"] = 0.6520,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -920,12 +962,12 @@ elseif addon.class == "PRIEST" then
 				["value"] = 3.1830,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -938,7 +980,7 @@ elseif addon.class == "PRIEST" then
 		},
 		-- Priest: Meditation (Rank 3) - 1,9
 		--         Allows 10/20/30% of your Mana regeneration to continue while casting.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 1,
 				["num"] = 9,
@@ -1085,9 +1127,8 @@ elseif addon.class == "ROGUE" then
 				["value"] = 0.333333 * 5,
 			},
 		},
-		-- Rogue: Deadliness (Rank 5) - 3,17
-		--        Increases your attack power by 2%/4%/6%/8%/10%.
 		["MOD_AP"] = {
+			-- Talent: Deadliness
 			{
 				["tab"] = 3,
 				["num"] = 17,
@@ -1159,7 +1200,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Dagger] = true,
 				},
 			},
@@ -1170,7 +1211,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
 				},
 			},
@@ -1184,12 +1225,12 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 2,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -1230,7 +1271,7 @@ elseif addon.class == "SHAMAN" then
 		},
 		-- Shaman: Unrelenting Storm (Rank 5) - 1,14
 		--         Regenerate mana equal to 2%/4%/6%/8%/10% of your Intellect every 5 sec, even while casting.
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			{
 				["tab"] = 1,
 				["num"] = 14,
@@ -1323,12 +1364,12 @@ elseif addon.class == "WARLOCK" then
 				["value"] = 2.0350,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -1347,11 +1388,6 @@ elseif addon.class == "WARLOCK" then
 			},
 		},
 		["MOD_PET_STA"] = {
-			-- Blessing of Kings
-			--{
-			--	["value"] = 0.1,
-			--	["condition"] = "UnitBuff('pet', GetSpellInfo(20217)) or UnitBuff('pet', GetSpellInfo(25898))",
-			--},
 			-- Warlock: Fel Stamina (Rank 3) - 2,9
 			--          Increases the Stamina of your Imp, Voidwalker, Succubus, and Felhunter and Felguard by 5%/10%/15% and increases your maximum health and mana by 1%/2%/3%.
 			{
@@ -1383,11 +1419,6 @@ elseif addon.class == "WARLOCK" then
 			},
 		},
 		["MOD_PET_INT"] = {
-			-- Blessing of Kings
-			--{
-			--	["value"] = 0.1,
-			--	["condition"] = "UnitBuff('pet', GetSpellInfo(20217)) or UnitBuff('pet', GetSpellInfo(25898))",
-			--},
 			-- Warlock: Fel Intellect (Rank 3) - 2,6
 			--          Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 1%/2%/3%.
 			{
@@ -1488,16 +1519,14 @@ elseif addon.class == "WARRIOR" then
 				["value"] = BLOCK_PER_STRENGTH,
 			},
 		},
-		-- Warrior: Improved Berserker Stance (Rank 5) - 2,20 - Stance
-		--          Increases attack power by 2%/4%/6%/8%/10% while in Berserker Stance.
 		["MOD_AP"] = {
+			-- Talent: Improved Berserker Stance
 			{
 				["tab"] = 2,
 				["num"] = 20,
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
-				["stance"] = "Interface\\Icons\\Ability_Racial_Avatar",
 			},
 		},
 		-- Warrior: Toughness (Rank 5) - 3,5
@@ -1561,7 +1590,7 @@ elseif addon.class == "WARRIOR" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 					[Enum.ItemWeaponSubclass.Polearm] = true,
@@ -1576,7 +1605,7 @@ if addon.playerRace == "Dwarf" then
 		[StatLogic.Stats.RangedCrit] = {
 			{
 				["value"] = 1,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Guns] = true,
 				}
 			}
@@ -1624,7 +1653,7 @@ elseif addon.playerRace == "Human" then
 		[StatLogic.Stats.Expertise] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Mace1H] = true,
 					[Enum.ItemWeaponSubclass.Mace2H] = true,
 					[Enum.ItemWeaponSubclass.Sword1H] = true,
@@ -1638,7 +1667,7 @@ elseif addon.playerRace == "Orc" then
 		[StatLogic.Stats.Expertise] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 				}
@@ -1665,7 +1694,7 @@ elseif addon.playerRace == "Troll" then
 		[StatLogic.Stats.RangedCrit] = {
 			{
 				["value"] = 1,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Bows] = true,
 					[Enum.ItemWeaponSubclass.Thrown] = true,
 				}
@@ -1675,6 +1704,41 @@ elseif addon.playerRace == "Troll" then
 end
 
 StatLogic.StatModTable["ALL"] = {
+	["ADD_MELEE_HIT_RATING_MOD_HIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_HIT_RATING_MOD_HIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MELEE_CRIT_RATING_MOD_CRIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_CRIT_RATING_MOD_CRIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MELEE_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_SPELL_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
 	["ADD_HEALTH_MOD_STA"] = {
 		{
 			["value"] = 10,
@@ -1814,13 +1878,29 @@ StatLogic.StatModTable["ALL"] = {
 			["value"] = 0.07,
 		},
 	},
-	-- Primal Mooncloth
-	-- Allow 5% of your Mana regeneration to continue while casting.
-	["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_GENERIC_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
+		-- Set: Primal Mooncloth
 		{
 			["set"] = 554,
 			["pieces"] = 3,
 			["value"] = 0.05,
+		},
+		-- Aura of the Blue Dragon
+		{
+			["aura"] = 23684,
+			["value"] = 1.00,
 		},
 	},
 	["ADD_DODGE_REDUCTION_MOD_EXPERTISE"] = {

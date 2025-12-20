@@ -5,9 +5,9 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
 local L = AceLocale:NewLocale("Broker_MicroMenu", "enUS", true)
 
 if L then
+	L["Use %s key for Game Menu and Shop."] = true
 	L["Enable this if you want to fine tune the displayed text."] = true
 	L["Custom Text"] = true
-	
 	L["Show FPS"] = true
 	L["Show frames per second."] = true
 	L["Show World Latency"] = true

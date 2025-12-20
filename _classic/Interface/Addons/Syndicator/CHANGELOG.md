@@ -1,6 +1,6 @@
 # Syndicator
 
-## [125](https://github.com/Baganator/Syndicator/tree/125) (2024-09-25)
-[Full Changelog](https://github.com/Baganator/Syndicator/compare/124...125) 
+## [253](https://github.com/TheMouseNest/Syndicator/tree/253) (2025-12-18)
+[Full Changelog](https://github.com/TheMouseNest/Syndicator/compare/252...253) 
 
-- Vanilla Classic: Update toc for 1.15.4  
+- Update supported versions to include 5.5.3  

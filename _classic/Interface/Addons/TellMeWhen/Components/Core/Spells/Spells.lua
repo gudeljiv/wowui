@@ -24,6 +24,11 @@ local GetSpellName = TMW.GetSpellName
 local GetSpellInfo = TMW.GetSpellInfo
 local GetSpellTexture = TMW.GetSpellTexture
 
+local IsPlayerSpell = _G.IsPlayerSpell or function(spellID)
+	local spellBank = Enum.SpellBookSpellBank.Player;
+	return C_SpellBook.IsSpellKnown(spellID, spellBank);
+end
+
 local strlowerCache = TMW.strlowerCache
 
 local _, pclass = UnitClass("player")
@@ -161,6 +166,13 @@ local fixSpellMap = {
 	end,
 }
 
+local assistantSpell
+local assistantSpellNameLower
+local function loadAssistantSpell()
+	assistantSpell = C_AssistedCombat and C_AssistedCombat.GetActionSpell and C_AssistedCombat.GetActionSpell()
+	assistantSpellNameLower = assistantSpell and TMW.strlowerCache[GetSpellName(assistantSpell)]
+end
+
 local function getSpellNames(setting, doLower, firstOnly, convert, hash, allowRenaming)
 	local spells = parseSpellsString(setting, doLower, false)
 
@@ -182,7 +194,9 @@ local function getSpellNames(setting, doLower, firstOnly, convert, hash, allowRe
 			if C_Spell and C_Spell.GetOverrideSpell then
 				local spellID = C_Spell.GetOverrideSpell(v or "")
 				if spellID and spellID ~= 0 then
-					if fixSpellMap[spellID] then
+					if spellID == assistantSpell then
+						spells[k] = TMW.AssistantButtonSpell
+					elseif fixSpellMap[spellID] then
 						-- Attempt to fix blizzard bugs like https://github.com/Stanzilla/WoWUIBugs/issues/354
 						local newSpell = fixSpellMap[spellID]()
 						if newSpell then
@@ -309,6 +323,10 @@ local __index_old = nil
 local RenamingSpellSetInstances = {}
 setmetatable(RenamingSpellSetInstances, {__mode='kv'})
 
+local hasSetupAssistantSpellUpdates = false
+local AssistedSpellSetInstances = {}
+setmetatable(AssistedSpellSetInstances, {__mode='kv'})
+
 TMW:NewClass("SpellSet"){
 	OnFirstInstance = function(self)
 		self:MakeInstancesWeak()
@@ -330,6 +348,11 @@ TMW:NewClass("SpellSet"){
 		self.AllowRenaming = allowRenaming
 		if allowRenaming then
 			RenamingSpellSetInstances[self] = true
+			local spells = parseSpellsString(name, true, false)
+			if TMW.tContains(spells, assistantSpell) or TMW.tContains(spells, assistantSpellNameLower) then
+				AssistedSpellSetInstances[self] = true
+				TMW:RequestAssistantSpellUpdates()
+			end
 		end
 		setmetatable(self, self.betterMeta)
 	end,
@@ -381,10 +404,60 @@ if C_Spell and C_Spell.GetOverrideSpell then
 	-- This used to work automatically through GetSpellCooldown prior to WoW 11.0,
 	-- but now we have to manage spell overrides ourselves.
 	TMW:RegisterEvent("SPELLS_CHANGED", function()
+		loadAssistantSpell()
 		for instance in pairs(RenamingSpellSetInstances) do
 			instance:Wipe()
 		end
 	end)
+end
+
+local assistantUpdatesRegistered = false
+function TMW:RequestAssistantSpellUpdates()
+	if assistantUpdatesRegistered then return true end
+
+	if not C_AssistedCombat or not C_AssistedCombat.GetNextCastSpell then return false end
+
+	loadAssistantSpell()
+
+	-- An action slot that currently holds the assistant button spell,
+	-- so that we can pull the current recommended spell from that action slot.
+	local action
+	TMW:RegisterCallback("TMW_ACTIONS_UPDATED", function()
+		local actions = C_ActionBar.FindAssistedCombatActionButtons()
+		action = actions and actions[1] or nil
+	end)
+
+	TMW:RegisterCallback("TMW_ONUPDATE_TIMECONSTRAINED_PRE", function()
+		-- Note: C_AssistedCombat:GetNextCastSpell only returns spells on the player's action bars
+		-- (the first parameter to this function, "checkForVisibleButton", seems to have no impact)
+		local highlightNextCast = C_AssistedCombat:GetNextCastSpell(false)
+
+		if highlightNextCast ~= TMW.AssistantHighlightSpell then
+			TMW.AssistantHighlightSpell = highlightNextCast
+			TMW.AssistantHighlightSpellName = highlightNextCast and strlowerCache[GetSpellName(highlightNextCast)]
+
+			TMW:Fire("TMW_ASSISTANT_HIGHLIGHT_SPELL_UPDATE", highlightNextCast)
+		end
+
+		-- Pull the one-button assistant next spell from the action bar if we can
+		-- in order to overcome the above described limitations of GetNextCastSpell
+		local oneButtonNextCast = (action and C_ActionBar.GetSpell(action)) or highlightNextCast
+		if oneButtonNextCast ~= TMW.AssistantButtonSpell then
+			TMW.AssistantButtonSpell = oneButtonNextCast
+			TMW.AssistantButtonSpellName = oneButtonNextCast and strlowerCache[GetSpellName(oneButtonNextCast)]
+
+			for instance in pairs(AssistedSpellSetInstances) do
+				instance:Wipe()
+			end
+
+			TMW:Fire("TMW_ASSISTANT_BUTTON_SPELL_UPDATE", oneButtonNextCast)
+			-- Firing TMW_SPELL_UPDATE_COOLDOWN will allow all cooldown-like dependencies to update
+			TMW:Fire("TMW_SPELL_UPDATE_COOLDOWN")
+		end
+	end)
+
+	assistantUpdatesRegistered = true
+	return true
 end
 
 
@@ -566,7 +639,7 @@ TMW:MakeSingleArgFunctionCached(TMW, "EquivToTable")
 ---------------------------------
 -- Constant spell data
 ---------------------------------
-if TMW.isCata then
+if ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM) and ClassicExpansionAtMost(LE_EXPANSION_WARLORDS_OF_DRAENOR) then
 	if pclass == "PALADIN" then
 		local name = GetSpellName(26573) 
 		TMW.COMMON.CurrentClassTotems = {
@@ -656,7 +729,7 @@ if TMW.isCata then
 		}
 	end
 
-elseif not TMW.isRetail then
+elseif ClassicExpansionAtMost(LE_EXPANSION_WRATH_OF_THE_LICH_KING) then
 	TMW.COMMON.CurrentClassTotems = {
 		name = L["ICONMENU_TOTEM"],
 		desc = L["ICONMENU_TOTEM_DESC"],
@@ -710,10 +783,6 @@ elseif not TMW.isRetail then
 		
 		data.spellName = GetSpellName(spellID)
 		if not data.spellName then
-			if not TMW.isClassic then
-				-- don't debug on classic - we use wrath's data and filter out totems that don't exist
-				TMW:Debug("Bad totem ID: " .. spellID)
-			end
 			return
 		end
 		data.spellNameLower = strlower(data.spellName)
@@ -732,7 +801,7 @@ elseif not TMW.isRetail then
 		end
 	end
 
-	if TMW.isClassic then
+	if ClassicExpansionAtMost(LE_EXPANSION_CLASSIC) then
 		Totem(1535, 1)  -- Fire Nova Totem
 		Totem(8498, 2)  -- Fire Nova Totem
 		Totem(8499, 3)  -- Fire Nova Totem

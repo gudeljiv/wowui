@@ -42,8 +42,32 @@ local function isInEnabledPhase(phaseText)
 			return true;
 		end
 	end
-	
+	if LBISSettings.PhaseTooltip[LBIS.L["Phase 6"]] then
+		if LBIS:FindInPhase(phaseText, "6") then
+			return true;
+		end
+	end
+	if LBISSettings.PhaseTooltip[LBIS.L["Phase 7"]] then
+		if LBIS:FindInPhase(phaseText, "7") then
+			return true;
+		end
+	end
+	if LBISSettings.PhaseTooltip[LBIS.L["Phase 8"]] then
+		if LBIS:FindInPhase(phaseText, "8") then
+			return true;
+		end
+	end
+
 	return false;
+end
+
+local function IsClassTooltip(classSpec)
+
+	if LBIS.IsSOD then
+		return LBISSettings.Tooltip[classSpec];
+	else
+		return LBISSettings.Tooltip["ERA_"..classSpec];
+	end
 end
 
 local function buildCombinedTooltip(entry, combinedTooltip, foundCustom)
@@ -52,7 +76,7 @@ local function buildCombinedTooltip(entry, combinedTooltip, foundCustom)
 	local combinedSpecs = {};
 
 	for k, v in pairs(entry) do
-		if LBISSettings.Tooltip[k] and isInEnabledPhase(v.Phase) and foundCustom[k] == nil then
+		if IsClassTooltip(k) and isInEnabledPhase(v.Phase) and foundCustom[k] == nil then
 			local classSpec = LBIS.ClassSpec[k]
 
 			classCount[classSpec.Class..v.Bis..v.Phase] = (classCount[classSpec.Class..v.Bis..v.Phase] or 0) + 1;
@@ -101,7 +125,9 @@ local function buildTooltip(tooltip, combinedTooltip)
 
 	for k, v in pairs(combinedTooltip) do
 		local class = LBIS.ENGLISH_CLASS[v.Class]:upper()
-		local color = RAID_CLASS_COLORS[class]
+		local classColors = CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS
+
+		local color = classColors[class]
 		local coords = CLASS_ICON_TCOORDS[class]
 		local classfontstring = "|T" .. iconpath .. ":14:14:::256:256:" .. iconOffset(coords[1] * 4, coords[3] * 4) .. "|t"
 		

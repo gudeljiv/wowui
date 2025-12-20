@@ -716,7 +716,8 @@ L["buffHelpersTextDesc5"] = "Buff de Ony/Rend";
 L["cityGotBuffSummonTitle"] = "Invocation de Ony/Rend";
 L["cityGotBuffSummonDesc"] = "Acceptez-vous automatiquement toute invitation en attente lorsque vous obtenez un buff de Ony/Nef/Rend.";
 
-L["heraldFoundCrossroads"] = "Héraut trouvé ! Le buff de Rend à La Croisée va poser dans 20 secondes.";
+L["heraldFoundCrossroads"] = "Héraut trouvé ! Rend dans La Croisée va être posé dans 20 secondes.";
+L["heraldFoundTimerMsg"] = "Rend La Croisée";
 
 L["guildNpcWalkingTitle"] = "PNJ en marche";
 L["guildNpcWalkingDesc"] = "Envoie un message à la guilde et joue un son lorsque vous activez ou recevez une alerte de déplacement de PNJ ? (Ouvre la fenêtre de discussion avec les PNJ d'Ony/Nef à Orgrimmar et attendez que quelqu'un remette la tête pour activer cette alerte précoce).";
@@ -978,7 +979,7 @@ L["Offline"] = "Hors ligne";
 L["Rested"] = "Reposé";
 L["Not Rested"] = "Non reposé";
 L["No zones mapped for this layer yet."] = "Aucune zone n'a encore été cartographiée pour ce couche.";
-L["Cooldown"] = "Temps de recharge";
+L["Cooldown"] = "Recharge";
 L["dmfLogonBuffResetMsg"] = "Ces personnages ont été déconnectés pendant plus de 8 heures dans une zone de repos et le temps de recharge du buff de la Foire de Sombrelune a été réinitialisé";
 L["dmfOfflineStatusTooltip"] = "Temps de recharge de la Foire de Sombrelune de plus de 8 heures hors ligne dans une zone de repos";
 L["chronoboonReleased"] = "Le Déplaceur de chronochance surchargé a restauré le buff de la Foire de Sombrelune. Un nouveau temps de recharge de 4 heures a commencé.";
@@ -1029,13 +1030,121 @@ L["cappingSupportDesc"] = "Commence une barre de minuteur pour Ashenvale/Strangl
 L["Tol Barad"] = "Tol Barad";
 L["eventIsRunning"] = "%s est active";
 
-L["Blackrock"] = "Blackrock";
-L["blackrockEventRunning"] = "Blackrock running: %s";
-L["blackrockEventStartsIn"] = "Blackrock starts in %s";
-L["blackrockStartSoon"] = "Blackrock event starts in %s"; --Guild chat msg.
-L["Blackrock PvP Event"] = "Blackrock PvP Event";
-L["Total honor this event"] = "Total honor this event";
+L["overlayShowBlackrockTitle"] = "Blackrock";
+L["overlayShowBlackrockDesc"] = "Affiche le minutage de Blackrock en superposition ?";
+
+L["printStvCoinsTitle"] = "Afficher les pièces";
+L["printStvCoinsDesc"] = "Affiche dans la discussion un compteur du nombre de pièces de Strangleronce gagnées pendant l’événement.";
+
+L["printBlackrockHonorTitle"] = "Afficher l’honneur";
+L["printBlackrockHonorDesc"] = "Affiche dans la discussion un compteur de l’honneur gagné lors de L’éruption de Blackrock pendant l’événement.";
+
+L["chatOnlyInCityTitle"] = "Uniquement en ville";
+L["chatOnlyInCityDesc"] = "Affiche uniquement les messages de minuteur et de chute des buffs dans la discussion lorsque vous êtes dans la ville principale où les buffs tombent (Vallée de Strangleronce inclus pour le buff Zandalar).";
+
+L["middleOnlyInCityTitle"] = "Uniquement en ville";
+L["middleOnlyInCityDesc"] = "Affiche uniquement les messages au centre de l'écran pour le minuteur et la chute des buffs lorsque vous êtes dans la ville principale où les buffs tombent (Vallée de Strangleronce inclus pour le buff Zandalar).";
+
+L["flashOnlyInCityTitle"] = "Uniquement en ville";
+L["flashOnlyInCityDesc"] = "Illumine uniquement lorsque l’application est réduite si vous êtes dans la ville principale où les buffs tombent (Vallée de Strangleronce inclus pour le buff Zandalar).";
+
+L["blueShamansTitle"] = "Chamans bleus";
+L["blueShamansDesc"] = "Affiche les chamans en bleu dans cet add-on en classique.";
+
+L["Blackrock"] = "L'éruption de Blackrock";
+L["blackrockEventRunning"] = "L'éruption de Blackrock est en cours : %s";
+L["blackrockEventStartsIn"] = "L'éruption de Blackrock commencera dans %s";
+L["blackrockStartSoon"] = "L'éruption de Blackrock commencera dans %s"; --Guild chat msg.
+L["Blackrock PvP Event"] = "L'éruption de Blackrock";
+L["Total honor this event"] = "Total d'honneur dans cet événement";
+
+L["Bi-Weekly raid reset"] = "Réinitialisation bihebdomadaire de raid";
 
 L["Might of Stormwind"] = "Puissance de Hurlevent";
 
 L["Battle Shout"] = "Cri de guerre";
+
+L["dmfBuffDroppedNoCooldown"] = "Buff de la Foire de Sombrelune %s reçu, aucun temps de recharge dans cette version du jeu.";
+L["chronoboonReleasedNoCooldown"] = "Vous avez relâché un buff de la Foire de Sombrelune avec chronochance, aucun temps de recharge dans cette version du jeu.";
+
+L["skipDmfCookieTitle"] = "Ignorer la prédiction";
+L["skipDmfCookieDesc"] = "Activez ceci pour ignorer la réception de la prédiction de la Foire de Sombrelune après avoir reçu le buff de la Foire de Sombrelune.";
+
+L["No layers found yet."] = "Aucune couche trouvée pour le moment.";
+
+L["Min Level"] = "Niveau minimum";
+L["Rend handed in by"] = "Rend remis par";
+L["ago"] = "il y a";
+L["Dropped"] = "Posé";
+L["Yes"] = "Oui";
+L["No"] = "Non";
+L["Delete buff data?"] = "Supprimer les données de buffs ?";
+L["No characters with buffs found."] = "Aucun personnage avec des buffs trouvé.";
+L["Unknown Layer"] = "Couche inconnue";
+
+L["Active"] = "Actif";
+L["noZonesMappedYet"] = "Aucune zone n’a encore été cartographiée depuis le redémarrage du serveur.";
+L["Rend log adjusted"] = "Journal de Rend ajusté";
+
+L["flashDisableRendTitle"] = "Désactiver l’illumination de Rend";
+L["flashDisableRendDesc"] = "Forcer la désactivation de tous les événements d’illumination client liés à Rend.";
+
+L["flashDisableOnyTitle"] = "Désactiver l’illumination d’Ony";
+L["flashDisableOnyDesc"] = "Forcer la désactivation de tous les événements d’illumination client liés à Ony/Nef.";
+
+L["flashDisableZanTitle"] = "Désactiver l’illumination de Zan";
+L["flashDisableZanDesc"] = "Forcer la désactivation de tous les événements d’illumination client liés à Zandalar.";
+
+L["soundsFirstYellTitle"] = "Autres buffs en approche";
+L["soundsFirstYellDesc"] = "Son joué lorsque les buffs zand / autres sont remises, avec quelques secondes avant l’apparition du buff (premier cri du PNJ).";
+
+L["soundsFirstYellRendTitle"] = "Buff de Rend en approche";
+L["soundsFirstYellRendDesc"] = "Son joué lorsque la tête de Rend est remise, avec quelques secondes avant l’apparition du buff (premier cri du PNJ).";
+
+L["soundsFirstYellOnyTitle"] = "Buff Ony/Nef en approche";
+L["soundsFirstYellOnyDesc"] = "Son joué lorsque la tête d’Ony/Nef est remise, avec quelques secondes avant l’apparition du buff (premier cri du PNJ).";
+
+L["showDisableLayerButtonsTitle"] = "Afficher le bouton de désactivation de couche"
+L["showDisableLayerButtonsDesc"] = "Affiche le bouton de désactivation de couche sur la fenêtre des minuteries / couches.";
+
+L["Show Quest Handins Only"] = "Afficher les remises de quêtes";
+L["showQuestHandinsTooltip"] = "Affiche uniquement les entrées du journal lors de la remise de la quête de Rend.";
+
+L["resetFramesTitle"] = "Réinitialiser les fenêtres";
+L["resetFramesDesc"] = "Cliquez ici pour réinitialiser toutes les fenêtres au centre de l’écran.";
+
+L["buffHasNoCooldown"] = "Ce buff ne déclenche pas de temps de recharge";
+L["noCooldown"] = "Pas de temps de recharge";
+
+L["Molten Core"] = "Cœur du Magma";
+L["Onyxia's Lair"] = "Repaire d'Onyxia";
+L["Blackwing Lair"] = "Repaire de l'Aile noire";
+L["Naxxramas"] = "Naxxramas";
+L["Karazhan"] = "Karazhan";
+L["The Shattered Halls"] = "Les Salles brisées";
+L["Serpentshrine Cavern"] = "Caverne du sanctuaire du Serpent";
+L["The Arcatraz"] = "L'Arcatraz";
+L["Black Morass"] = "Le Noir Marécage";
+L["Battle of Mount Hyjal"] = "La bataille du mont Hyjal";
+L["Black Temple"] = "Temple noir";
+L["Hellfire Citadel"] = "Citadelle des Flammes infernales";
+L["Coilfang Reservoir"] = "Réservoir de Glissecroc";
+L["Shadow Labyrinth"] = "Labyrinthe des ombres";
+L["Auchindoun"] = "Auchindoun";
+L["Tempest Keep"] = "Donjon de la Tempête";
+L["Caverns of Time"] = "Grottes du temps";
+
+L["shortLayerPrefix"] = "C";
+L["expired"] = "expiré";
+
+L["layersHeaderDesc"] = "Options de couches";
+
+L["minimapLayerZoneIDTitle"] = "ID de zone sur la minicarte";
+L["minimapLayerZoneIDDesc"] = "Affiche l’ID de la zone actuelle à côté du numéro de couche actuel.";
+
+L["minimapLayerZoneIDTooltipTitle"] = "Infobulle des ID de zones";
+L["minimapLayerZoneIDTooltipDesc"] = "Fait en sorte que l’infobulle au survol affiche tous les ID de couches de la zone actuelle pour que tu puisses les comparer avec ton personnage secondaire d’une autre faction ou pour toute autre raison.";
+
+L["Unknown"] = "Inconnu";
+
+L["for"] = "depuis";

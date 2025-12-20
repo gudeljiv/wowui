@@ -147,6 +147,11 @@ function ttAuras:DisplayUnitTipsAuras(tip, currentDisplayParams, auraType, start
 	
 	-- queries auras of the specific auraType, sets up the aura frame and anchors it in the desired place.
 	local aurasPerRow = floor((tip:GetWidth() - 4) / (cfg.auraSize + 2)); -- auras we can fit into one row based on the current size of the tooltip
+	
+	if (aurasPerRow <= 0) then
+		aurasPerRow = 1;
+	end
+	
 	local xOffsetBasis = (auraType == "HELPFUL" and 1 or -1);             -- is +1 or -1 based on horz anchoring
 	
 	local queryIndex = 0;                              -- aura query index for this auraType
@@ -258,6 +263,7 @@ ttAuras.aurasPool = CreateFramePool("Frame", nil, nil, nil, false, function(aura
 	aura.cooldown:SetReverse(1);
 	aura.cooldown:SetAllPoints();
 	aura.cooldown:SetFrameLevel(aura:GetFrameLevel());
+	aura.cooldown:SetHideCountdownNumbers(true);
 	
 	aura.border = aura:CreateTexture(nil, "OVERLAY");
 	aura.border:SetPoint("TOPLEFT", -1, 1);

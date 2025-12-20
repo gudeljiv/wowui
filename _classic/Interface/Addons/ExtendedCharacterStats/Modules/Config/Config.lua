@@ -82,7 +82,7 @@ _GeneralTab = function()
                 get = function () return ExtendedCharacterStats.general.addColorsToStatTexts; end,
                 set = function (_, value)
                     ExtendedCharacterStats.general.addColorsToStatTexts = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             statColorSelection = {
@@ -105,7 +105,7 @@ _GeneralTab = function()
                 end,
                 set = function(_, selection)
                     ExtendedCharacterStats.general.statColorSelection = selection
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             showQualityColors = {
@@ -120,9 +120,24 @@ _GeneralTab = function()
                     ExtendedCharacterStats.general.showQualityColors = value
                 end,
             },
-            headerFontSize = {
+            qualityColorsIntensity = {
                 type = "range",
                 order = 4,
+                name = function() return i18n("Quality Colors' Intensity") end,
+                desc = function() return i18n("Changes the intensity of the colored frames' glow.") end,
+                width = "double",
+                min = 0.10,
+                max = 1.00,
+                step = 0.01,
+                get = function() return ExtendedCharacterStats.general.qualityColorsIntensity; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.general.qualityColorsIntensity = value
+                    GearInfos.UpdateGearColorFrames()
+                end,
+            },
+            headerFontSize = {
+                type = "range",
+                order = 5,
                 name = function() return i18n("Header Font Size") end,
                 desc = function() return i18n("Changes the font size of the headers (e.g. Melee)") end,
                 width = "double",
@@ -132,12 +147,12 @@ _GeneralTab = function()
                 get = function() return ExtendedCharacterStats.general.headerFontSize; end,
                 set = function (_, value)
                     ExtendedCharacterStats.general.headerFontSize = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             statFontSize = {
                 type = "range",
-                order = 5,
+                order = 6,
                 name = function() return i18n("Stat Font Size") end,
                 desc = function() return i18n("Changes the font size of the stat lines (e.g. Crit)") end,
                 width = "double",
@@ -147,12 +162,12 @@ _GeneralTab = function()
                 get = function() return ExtendedCharacterStats.general.statFontSize; end,
                 set = function (_, value)
                     ExtendedCharacterStats.general.statFontSize = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             windowWidth = {
                 type = "range",
-                order = 6,
+                order = 7,
                 name = function() return i18n("Window Width") end,
                 desc = function() return i18n("Changes the width of the stats window") end,
                 width = "double",
@@ -167,7 +182,7 @@ _GeneralTab = function()
             },
             language = {
                 type = "select",
-                order = 7,
+                order = 8,
                 values = {
                     ["auto"] = "Auto",
                     ["enUS"] = "English",
@@ -193,19 +208,19 @@ _GeneralTab = function()
                 set = function(_, lang)
                     i18n:SetLanguage(lang)
 
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                     Stats:UpdateSettingsButtonText()
                 end,
             },
             resetSpacer = {
                 type = "description",
-                order = 8,
+                order = 9,
                 name = " ",
                 width = "full"
             },
             reset = {
                 type = "execute",
-                order = 8.1,
+                order = 9.1,
                 name = function() return i18n("Reset ECS") end,
                 desc = function() return i18n("Restores all default values of ECS."); end,
                 func = function(_, _)
@@ -233,8 +248,8 @@ _StatsTab = function ()
             rangeGroup = _Config:LoadRangeSection(),
             defenseGroup = _Config:LoadDefenseSection(),
             mp5Group = _Config:LoadManaSection(),
+            spellSchoolGroup = _Config:SpellSchoolsSection(),
             spellGroup = _Config:LoadSpellSection(),
-            spellBonusGroup = _Config:SpellBonusSection(),
         }
     }
 end

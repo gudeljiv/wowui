@@ -7,6 +7,9 @@ if (not DF) then
 	return
 end
 
+--this table is used to share local variables between files
+platerInternal.VarSharing = {}
+
 local LibSharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
 
 LibSharedMedia:Register ("statusbar", "DGround", [[Interface\AddOns\Plater\images\bar_background]])
@@ -151,6 +154,9 @@ PLATER_DEFAULT_SETTINGS = {
 		},
 
 		click_space = {140, 28}, --classic: {132, 32}, retail: {110, 45},
+		click_space_scale = {1, 1},
+		click_space_scale_minor = {1, 1},
+		click_space_scale_pet = {1, 1},
 		click_space_friendly = {140, 28}, --classic: {132, 32}, retail: {110, 45},
 		click_space_always_show = false,
 		hide_friendly_castbars = false,
@@ -780,7 +786,7 @@ PLATER_DEFAULT_SETTINGS = {
 		health_cutoff_extra_glow = false,
 		health_cutoff_hide_divisor = false,
 		
-		update_throttle = 0.120,
+		update_throttle = 0.25,
 		culling_distance = 100,
 		use_playerclass_color = true, --friendly player
 		
@@ -803,7 +809,6 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_cooldown_edge_texture = [[Interface\AddOns\Plater\images\cooldown_edge_2]],
 		
 		aura_enabled = true,
-		auras_experimental_update_classic_era = true,
 		aura_show_tooltip = false,
 		aura_width = 26,
 		aura_height = 16,
@@ -901,8 +906,9 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_show_buffs_personal = false,
 		aura_show_debuffs_personal = true,
 		aura_show_all_duration_buffs_personal = false,
+		aura_show_only_important_buffs_personal = false,
 		
-		aura_show_important = true,
+		aura_show_important = false,
 		aura_show_dispellable = true,
 		aura_show_only_short_dispellable_on_players = false,
 		aura_show_enrage = false,
@@ -910,6 +916,8 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_show_aura_by_the_player = true,
 		aura_show_aura_by_other_players = false,
 		aura_show_buff_by_the_unit = true,
+		aura_show_debuff_by_the_unit = true,
+		aura_show_aura_by_other_npcs = true,
 		aura_border_colors_by_type = false,
 		aura_show_crowdcontrol = false,
 		aura_show_offensive_cd = false,
@@ -949,15 +957,19 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		bossmod_support_enabled = true,
 		bossmod_castrename_enabled = true,
-		bossmod_support_bars_enabled = false,
+		bossmod_castrename_priority = false,
+		bossmod_support_bars_enabled = true,
 		bossmod_support_bars_text_enabled = true,
-		bossmod_aura_height = 32,
-		bossmod_aura_width = 32,
+		bossmod_aura_height = 24,
+		bossmod_aura_width = 24,
 		bossmod_cooldown_text_size = 16,
 		bossmod_cooldown_text_enabled = true,
-		bossmod_icons_anchor = {side = 8, x = 0, y = 30},
+		bossmod_icons_anchor = {side = 2, x = -5, y = 25},
+		bossmod_aura_glow_cooldown = true,
 		bossmod_aura_glow_important_only = true,
-		bossmod_aura_glow_expiring = true,
+		bossmod_aura_glow_casts = true,
+		bossmod_aura_glow_casts_glow_type = 4,
+		bossmod_aura_glow_cooldown_glow_type = 1,
 		
 		not_affecting_combat_enabled = false,
 		not_affecting_combat_alpha = 0.6,
@@ -1019,6 +1031,15 @@ PLATER_DEFAULT_SETTINGS = {
 			["world"] =  true,
 			["cities"] = false,
 		},
+		
+		auto_toggle_always_show_enabled = false,
+		auto_toggle_always_show = {
+			["party"] = true,
+			["raid"] = true,
+			["arena"] = true,
+			["world"] =  true,
+			["cities"] = true,
+		},
 
 		auto_inside_raid_dungeon = {
 			hide_enemy_player_pets = false,
@@ -1033,6 +1054,8 @@ PLATER_DEFAULT_SETTINGS = {
 			enemy_ooc = false,
 			blizz_healthbar_ic = false,
 			blizz_healthbar_ooc = false,
+			always_show_ic = false,
+			always_show_ooc = false,
 		},
 
 		spell_animations = true,

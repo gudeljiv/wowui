@@ -7,6 +7,8 @@ local QuestieLib = QuestieLoader:CreateModule("QuestieLib")
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 ---@type QuestiePlayer
 local QuestiePlayer = QuestieLoader:ImportModule("QuestiePlayer")
+---@type QuestieEvent
+local QuestieEvent = QuestieLoader:ImportModule("QuestieEvent")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
@@ -34,14 +36,14 @@ local textWrapFrameObject = _G["QuestLogObjectivesText"] or _G["QuestInfoObjecti
     Green: 3 - GetQuestGreenRange() level below player (GetQuestGreenRange() changes on specific player levels)
     Gray: More than GetQuestGreenRange() below player
 --]]
-function QuestieLib:PrintDifficultyColor(level, text, isDailyQuest, isEventQuest, isPvPQuest)
+function QuestieLib:PrintDifficultyColor(level, text, isRepeatableQuest, isEventQuest, isPvPQuest)
     if isEventQuest == true then
         return "|cFF6ce314" .. text .. "|r" -- Lime
     end
     if isPvPQuest == true then
         return "|cFFE35639" .. text .. "|r" -- Maroon
     end
-    if isDailyQuest == true then
+    if isRepeatableQuest == true then
         return "|cFF21CCE7" .. text .. "|r" -- Blue
     end
 
@@ -127,13 +129,12 @@ end
 ---@param questId number
 ---@param showLevel number @ Whether the quest level should be included
 ---@param showState boolean @ Whether to show (Complete/Failed)
----@param blizzLike boolean @True = [40+], false/nil = [40D/R]
-function QuestieLib:GetColoredQuestName(questId, showLevel, showState, blizzLike)
+function QuestieLib:GetColoredQuestName(questId, showLevel, showState)
     local name = QuestieDB.QueryQuestSingle(questId, "name")
     local level, _ = QuestieLib.GetTbcLevel(questId);
 
     if showLevel then
-        name = QuestieLib:GetLevelString(questId, level, blizzLike) .. name
+        name = QuestieLib:GetLevelString(questId, level) .. name
     end
 
     if Questie.db.profile.enableTooltipsQuestID then
@@ -154,7 +155,7 @@ function QuestieLib:GetColoredQuestName(questId, showLevel, showState, blizzLike
         end
     end
 
-    return QuestieLib:PrintDifficultyColor(level, name, QuestieDB.IsRepeatable(questId), QuestieDB.IsActiveEventQuest(questId), QuestieDB.IsPvPQuest(questId))
+    return QuestieLib:PrintDifficultyColor(level, name, QuestieDB.IsRepeatable(questId), QuestieEvent.IsEventQuest(questId), QuestieDB.IsPvPQuest(questId))
 end
 
 local colors = {
@@ -227,51 +228,47 @@ end
 
 ---@param questId QuestId
 ---@param level Level @The quest level
----@param blizzLike boolean @True = [40+], false/nil = [40D/R]
 ---@return string levelString @String of format "[40+]"
-function QuestieLib:GetLevelString(questId, level, blizzLike)
-    local questType, questTag = QuestieDB.GetQuestTagInfo(questId)
+function QuestieLib:GetLevelString(questId, level)
+    local questTagId, questTagName = QuestieDB.GetQuestTagInfo(questId)
+    local levelString = tostring(level)
 
-    local retLevel = tostring(level)
-    if questType and questTag then
-        local char = "+"
-        if (not blizzLike) then
-            char = stringSub(questTag, 1, 1)
-        end
-        -- the string.sub above doesn't work for multi byte characters in Chinese
-        local langCode = l10n:GetUILocale()
-        if questType == 1 then
-            -- Elite quest
-            retLevel = "[" .. retLevel .. "+" .. "] "
-        elseif questType == 81 then
-            if langCode == "zhCN" or langCode == "zhTW" or langCode == "koKR" or langCode == "ruRU" then
-                char = "D"
-            end
-            -- Dungeon quest
-            retLevel = "[" .. retLevel .. char .. "] "
-        elseif questType == 62 then
-            if langCode == "zhCN" or langCode == "zhTW" or langCode == "koKR" or langCode == "ruRU" then
-                char = "R"
-            end
-            -- Raid quest
-            retLevel = "[" .. retLevel .. char .. "] "
-        elseif questType == 41 then
-            -- Which one? This is just default.
-            retLevel = "[" .. retLevel .. "] "
-            -- PvP quest
-            -- name = "[" .. level .. questTag .. "] " .. name
-        elseif questType == 83 then
-            -- Legendary quest
-            retLevel = "[" .. retLevel .. "++" .. "] "
-        else
-            -- Some other irrelevant type
-            retLevel = "[" .. retLevel .. "] "
-        end
-    else
-        retLevel = "[" .. retLevel .. "] "
+    if (not questTagId) or (not questTagName) then
+        return "[" .. levelString .. "] "
     end
 
-    return retLevel
+    local questTagIds = QuestieDB.questTagIds
+
+    local char = stringSub(questTagName, 1, 1)
+    local langCode = l10n:GetUILocale()
+    -- the string.sub above doesn't work for multi byte characters
+    local isMultiByteLocale = langCode == "zhCN" or langCode == "zhTW" or langCode == "koKR" or langCode == "ruRU"
+
+    if questTagId == questTagIds.ELITE then
+        char = "+"
+    elseif questTagId == questTagIds.PVP or questTagId == questTagIds.CLASS then
+        char = ""
+    elseif questTagId == questTagIds.LEGENDARY then
+        char = "++"
+    elseif isMultiByteLocale then
+        if questTagId == questTagIds.RAID or questTagId == questTagIds.RAID_10 or questTagId == questTagIds.RAID_25 then
+            char = "R"
+        elseif questTagId == questTagIds.DUNGEON then
+            char = "D"
+        elseif questTagId == questTagIds.HEROIC then
+            char = "H"
+        elseif questTagId == questTagIds.SCENARIO then
+            char = "S"
+        elseif questTagId == questTagIds.ACCOUNT then
+            char = "A"
+        elseif questTagId == questTagIds.CELESTIAL then
+            char = "C"
+        else
+            char = ""
+        end
+    end
+
+    return "[" .. levelString .. char .. "] "
 end
 
 function QuestieLib:GetRaceString(raceMask)
@@ -340,7 +337,7 @@ function QuestieLib:CacheItemNames(questId)
     end
 end
 
-function QuestieLib:Euclid(x, y, i, e)
+function QuestieLib.Euclid(x, y, i, e)
     -- No need for absolute values as these are used only as squared
     local xd = x - i
     local yd = y - e
@@ -417,32 +414,6 @@ function QuestieLib:SortQuestIDsByLevel(quests)
     table.sort(sortedQuestsByLevel, compareTablesByIndex)
 
     return sortedQuestsByLevel
-end
-
-local randomSeed = 0
-function QuestieLib:MathRandomSeed(seed)
-    randomSeed = seed
-end
-
-function QuestieLib:MathRandom(low_or_high_arg, high_arg)
-    local low
-    local high
-    if low_or_high_arg ~= nil then
-        if high_arg ~= nil then
-            low = low_or_high_arg
-            high = high_arg
-        else
-            low = 1
-            high = low_or_high_arg
-        end
-    end
-
-    randomSeed = (randomSeed * 214013 + 2531011) % 2 ^ 32
-    local rand = (math.floor(randomSeed / 2 ^ 16) % 2 ^ 15) / 0x7fff
-    if not high then
-        return rand
-    end
-    return low + math.floor(rand * high)
 end
 
 function QuestieLib:UnpackBinary(val)
@@ -544,7 +515,7 @@ end
 --- Wow's own unpack stops at first nil. this version is not speed optimized.
 --- Supports just above QuestieLib.tpack func as it requires the 'n' field.
 ---@param tbl table A table packed with QuestieLib.tpack
----@return table 'n' values of the tbl
+---@return table|nil 'n' values of the tbl
 function QuestieLib.tunpack(tbl)
     if tbl.n == 0 then
         return nil
@@ -688,6 +659,49 @@ function QuestieLib.GetSpawnDistance(spawnA, spawnB)
     local distanceY = y1 - y2
 
     return math_sqrt(distanceX * distanceX + distanceY * distanceY)
+end
+
+---@param quest Quest
+---@return number iconType The number representing the type of icon
+function QuestieLib.GetQuestIcon(quest)
+    if Questie.IsSoD and QuestieDB.IsSoDRuneQuest(quest.Id) then
+        return Questie.ICON_TYPE_SODRUNE
+    elseif QuestieDB.IsActiveEventQuest(quest.Id) then
+        return Questie.ICON_TYPE_EVENTQUEST
+    end
+    if QuestieDB.IsPvPQuest(quest.Id) then
+        return Questie.ICON_TYPE_PVPQUEST
+    end
+    if quest.requiredLevel > QuestiePlayer.GetPlayerLevel() then
+        return Questie.ICON_TYPE_AVAILABLE_GRAY
+    end
+    if quest.IsRepeatable then
+        return Questie.ICON_TYPE_REPEATABLE
+    end
+    if QuestieDB.IsTrivial(quest.level) then
+        return Questie.ICON_TYPE_AVAILABLE_GRAY
+    end
+    return Questie.ICON_TYPE_AVAILABLE
+end
+
+--- Checks if a daily reset has occurred since the player's last login.
+---@return boolean True if a daily reset has occurred, false otherwise.
+function QuestieLib.DidDailyResetHappenSinceLastLogin()
+    local realmName = GetRealmName()
+    local lastKnownDailyReset = Questie.db.global.lastKnownDailyReset[realmName]
+
+    if (not lastKnownDailyReset) then
+        return true -- No previous login recorded, assume a reset has occurred
+    end
+
+    return GetServerTime() >= lastKnownDailyReset
+end
+
+--- Updates the last known daily reset time to the next reset time.
+function QuestieLib.UpdateLastKnownDailyReset()
+    local realmName = GetRealmName()
+
+    Questie.db.global.lastKnownDailyReset[realmName] = GetServerTime() + GetQuestResetTime()
 end
 
 return QuestieLib

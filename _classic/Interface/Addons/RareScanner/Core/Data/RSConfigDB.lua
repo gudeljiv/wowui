@@ -284,6 +284,14 @@ function RSConfigDB.SetScanningWhileOnTaxi(value)
 	private.db.general.scanOnTaxi = value
 end
 
+function RSConfigDB.IsScanningWithMacro()
+	return private.db.general.scanWithMacro
+end
+
+function RSConfigDB.SetScanningWithMacro(value)
+	private.db.general.scanWithMacro = value
+end
+
 function RSConfigDB.IsScanningForNpcs()
 	return private.db.general.scanRares
 end
@@ -314,6 +322,14 @@ end
 
 function RSConfigDB.SetScanningTargetUnit(value)
 	private.db.general.scanTargetUnit = value
+end
+
+function RSConfigDB.IsMutingTargetUnitSound()
+	return private.db.general.muteTargetUnit
+end
+
+function RSConfigDB.SetMutingTargetUnitSound(value)
+	private.db.general.muteTargetUnit = value
 end
 
 ---============================================================================

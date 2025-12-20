@@ -11,6 +11,7 @@ local tremove = _G.tremove
 local CreateFrame = _G.CreateFrame
 local tinsert = _G.tinsert
 local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
+local IsBetaBuild = IsBetaBuild or function() return false end
 
 ---@class searchdata : table
 ---@field [1] number data index within the profile.script_data table
@@ -257,12 +258,15 @@ Plater.NameplateComponents = {
 		"unit",
 		"ThrottleUpdate",
 		"SpellName",
+		"SpellNameRenamed",
 		"SpellID",
 		"SpellTexture",
 		"SpellStartTime",
 		"SpellEndTime",
 		"CanInterrupt",
 		"IsInterrupted",
+		"InterruptSourceName",
+		"InterruptSourceGUID",
 	},
 	
 	["castBar - Frames"] = {
@@ -803,7 +807,7 @@ end
 		wipe(stashData)
 		
 		for slug, entry in pairs(stash) do
-			local isAlreadyImported = is_wago_stash_slug_already_imported(slug)
+			local isAlreadyImported, isScipt, isMod, isProfile = is_wago_stash_slug_already_imported(slug)
 			
 			if not isAlreadyImported then
 				local newScriptObject = { -- Dummy data --~prototype ~new ~create ñew
@@ -1561,7 +1565,7 @@ end
 		local script_prio_label = DF:CreateLabel (parent, "Priority:", DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
 		local script_prio_entry = DF:CreateSlider (parent, 191, 20, 1, 99, 1, 99, false, "ScriptPrioritySlider", _, _, options_slider_template, _)
 		script_prio_entry:SetPoint ("topleft", script_prio_label, "bottomleft", 0, -2)
-		script_prio_entry.tooltip = "Lower number -> higher priority.\nRight Click to Type the Value"
+		script_prio_entry.tooltip = "Lower number -> higher priority.\nHigher priority runs before lower priority.\nRight Click to Type the Value"
 		mainFrame.ScriptPrioSlideEntry = script_prio_entry
 
 		--options button
@@ -3192,7 +3196,9 @@ function Plater.CreateScriptingPanel()
 			end
 		end
 
-		DF:LoadSpellCache(Plater.SpellHashTable, Plater.SpellIndexTable, Plater.SpellSameNameTable)
+		if not IsBetaBuild() then
+			DF:LoadSpellCache(Plater.SpellHashTable, Plater.SpellIndexTable, Plater.SpellSameNameTable)
+		end
 	end)
 	
 	scriptingFrame:SetScript ("OnHide", function()
@@ -4818,3 +4824,4 @@ function Plater.CreateScriptingPanel()
 end
 
 --endd ends
+

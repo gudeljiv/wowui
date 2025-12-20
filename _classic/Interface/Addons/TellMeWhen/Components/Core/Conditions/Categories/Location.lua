@@ -61,7 +61,7 @@ ConditionCategory:RegisterCondition(1,	 "INSTANCE2", {
 
 	unit = false,
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_TYPES"],
-	bitFlags = not TMW.isRetail and {
+	bitFlags = ClassicExpansionAtMost(LE_EXPANSION_WRATH_OF_THE_LICH_KING) and {
 		[01] = {order=01, text=L["CONDITIONPANEL_INSTANCETYPE_NONE"],                                space=true,   }, -- None (Outside)
 		[02] = {order=02, text=BATTLEGROUND,                                                                       }, -- Battleground
 		[03] = {order=03, text=ARENA,                                                                space=true,   }, -- Arena
@@ -88,7 +88,8 @@ ConditionCategory:RegisterCondition(1,	 "INSTANCE2", {
 
 
 		[14] = {order=17, text=GUILD_CHALLENGE_TYPE4,                                                              }, -- Normal scenario
-		[13] = {order=18, text=HEROIC_SCENARIO,                                                      space=true,   }, -- Heroic scenario
+		[13] = {order=18, text=HEROIC_SCENARIO,                                                                    }, -- Heroic scenario
+		[208] = {order=19, text=DELVE_LABEL,                                                         space=true,   }, -- Delves
 
 
 		[18] = {order=21, text=format("%s (%s)", PLAYER_DIFFICULTY3, FLEX_RAID),                                   }, -- Warlords LFR Flex
@@ -230,7 +231,7 @@ ConditionCategory:RegisterCondition(1.2, "GROUPSIZE", {
 	end,
 })
 
-
+local GetZonePVPInfo = C_PvP and C_PvP.GetZonePVPInfo or GetZonePVPInfo;
 ConditionCategory:RegisterCondition(1.5, "ZONEPVP", {
 	text = L["CONDITIONPANEL_ZONEPVP"],
 	tooltip = L["CONDITIONPANEL_ZONEPVP_DESC"],

@@ -2,13 +2,16 @@ local addonName, addon = ...
 ---@class StatLogic
 local StatLogic = LibStub:GetLibrary(addonName)
 
--- 3.1.0
+-- Patch 3.1.0
 -- Haste Rating: Shamans, Paladins, Druids, and Death Knights now receive 30% more melee haste from Haste Rating.
-StatLogic.ExtraHasteClasses["PALADIN"] = true
-StatLogic.ExtraHasteClasses["DEATHKNIGHT"] = true
-StatLogic.ExtraHasteClasses["SHAMAN"] = true
-StatLogic.ExtraHasteClasses["DRUID"] = true
-local extraHaste = StatLogic.ExtraHasteClasses[addon.class] and 1.3 or 1
+-- These rates can be extracted from the client at GameTables/OCTClassCombatRatingScalar.txt
+local ExtraHasteClasses = {
+	PALADIN = true,
+	DEATHKNIGHT = true,
+	SHAMAN = true,
+	DRUID = true,
+}
+local extraHaste = ExtraHasteClasses[addon.class] and 1.3 or 1
 
 -- Level 60 rating base
 StatLogic.RatingBase = {
@@ -28,22 +31,6 @@ StatLogic.RatingBase = {
 	[StatLogic.Stats.SpellHasteRating] = 10,
 	[StatLogic.Stats.ExpertiseRating] = 2.5,
 	[StatLogic.Stats.ArmorPenetrationRating] = 4.69512176513672 / 1.1,
-}
-
-StatLogic.GenericStatMap[StatLogic.Stats.HitRating] = {
-	StatLogic.Stats.MeleeHitRating,
-	StatLogic.Stats.RangedHitRating,
-	StatLogic.Stats.SpellHitRating,
-}
-StatLogic.GenericStatMap[StatLogic.Stats.CritRating] = {
-	StatLogic.Stats.MeleeCritRating,
-	StatLogic.Stats.RangedCritRating,
-	StatLogic.Stats.SpellCritRating,
-}
-StatLogic.GenericStatMap[StatLogic.Stats.HasteRating] = {
-	StatLogic.Stats.MeleeHasteRating,
-	StatLogic.Stats.RangedHasteRating,
-	StatLogic.Stats.SpellHasteRating,
 }
 
 -- Extracted from the client at GameTables/RegenMPPerSpt.txt via wow.tools.local
@@ -240,7 +227,7 @@ local function NormalHealthRegenPerSpi(level)
 	return data[addon.class][level] * 5
 end
 
--- Numbers reverse engineered by Whitetooth (hotdogee [at] gmail [dot] com)
+-- Extracted from gtChanceToMeleeCrit.db2 or from gametables/chancetomeleecrit.txt via wow.tools or wago.tools
 addon.CritPerAgi = {
 	["WARRIOR"] = {
 		0.2587, 0.2264, 0.2264, 0.2264, 0.2264, 0.2012, 0.2012, 0.2012, 0.2012, 0.2012,
@@ -344,7 +331,7 @@ addon.CritPerAgi = {
 	},
 }
 
--- Numbers reverse engineered by Whitetooth (hotdogee [at] gmail [dot] com)
+-- Extracted from gtChanceToSpellCrit.db2 or from gametables/chancetospellcrit.txt via wow.tools or wago.tools
 addon.SpellCritPerInt = {
 	["WARRIOR"] = addon.zero,
 	["PALADIN"] = {
@@ -442,26 +429,20 @@ addon.DodgePerAgi = setmetatable({
 		0.2456, 0.2164, 0.1975, 0.1817, 0.1652, 0.1567, 0.1466, 0.1356, 0.1280, 0.1196,
 		0.1150, 0.1082, 0.1033, 0.0977, 0.0937, 0.0900, 0.0857, 0.0826, 0.0790, 0.0757,
 		0.0739, 0.0710, 0.0683, 0.0663, 0.0640, 0.0622, 0.0602, 0.0582, 0.0564, 0.0551,
-		0.0538, 0.0522, 0.0508, 0.0494, 0.0481, 0.0471, 0.0459, 0.0445, 0.0435, nil,
-		[67] = 0.0258,
-		[68] = 0.0253,
-		[69] = 0.0247,
-		[70] = 0.0241,
-		[75] = 0.0167,
-		[76] = 0.0155,
-		[77] = 0.0144,
-		[78] = 0.0134,
-		[80] = 0.0116,
+		0.0538, 0.0522, 0.0508, 0.0494, 0.0481, 0.0471, 0.0459, 0.0445, 0.0435, 0.0426,
+		0.0418, 0.0409, 0.0400, 0.0389, 0.0381, 0.0375, 0.0366, 0.0360, 0.0351, 0.0344,
+		0.0323, 0.0312, 0.0299, 0.0287, 0.0278, 0.0268, 0.0258, 0.0253, 0.0247, 0.0241,
+		0.0225, 0.0209, 0.0194, 0.0180, 0.0167, 0.0155, 0.0144, 0.0134, 0.0124, 0.0116,
 	},
 	["WARLOCK"] = {
-		0.1289, 0.1289, 0.1228, 0.1228, nil,    nil,    nil,    0.1172, 0.1121, 0.1121,
+		0.1289, 0.1289, 0.1228, 0.1228, 0.1228, 0.1172, 0.1172, 0.1172, 0.1121, 0.1121,
 		0.1074, 0.1074, 0.1074, 0.1031, 0.0992, 0.0955, 0.0955, 0.0955, 0.0921, 0.0889,
 		0.0859, 0.0859, 0.0832, 0.0832, 0.0781, 0.0781, 0.0781, 0.0758, 0.0758, 0.0716,
 		0.0716, 0.0697, 0.0697, 0.0678, 0.0661, 0.0645, 0.0629, 0.0629, 0.0614, 0.0600,
 		0.0586, 0.0586, 0.0573, 0.0573, 0.0549, 0.0537, 0.0537, 0.0526, 0.0516, 0.0506,
 		0.0496, 0.0496, 0.0486, 0.0477, 0.0469, 0.0460, 0.0452, 0.0445, 0.0445, 0.0430,
 		0.0416, 0.0414, 0.0404, 0.0391, 0.0385, 0.0374, 0.0374, 0.0365, 0.0356, 0.0348,
-		0.0323, 0.0300, 0.0279, 0.0260, nil,    nil,    nil,    nil,    nil,    0.0167,
+		0.0323, 0.0300, 0.0279, 0.0260, 0.0241, 0.0224, 0.0208, 0.0193, 0.0180, 0.0167,
 	},
 }, {
 	__index = function (t, class)
@@ -904,7 +885,7 @@ addon.baseArmorTable = {
 			},
 		},
 	},
-	[Enum.ItemQuality.Good] = {
+	[Enum.ItemQuality.Good or Enum.ItemQuality.Uncommon] = {
 		[WRISTSLOT] = {
 			[Enum.ItemArmorSubclass.Mail] = {
 				[33] = 91,
@@ -987,7 +968,7 @@ addon.baseArmorTable = {
 			},
 		},
 	},
-	[Enum.ItemQuality.Standard] = {
+	[Enum.ItemQuality.Standard or Enum.ItemQuality.Common] = {
 		[SECONDARYHANDSLOT] = {
 			[Enum.ItemArmorSubclass.Shield] = {
 				[1] = 10,
@@ -1009,7 +990,7 @@ addon.baseArmorTable = {
 StatLogic.StatModTable = {}
 if addon.class == "DRUID" then
 	StatLogic.StatModTable["DRUID"] = {
-		["ADD_AP_MOD_FERAL_AP"] = {
+		["ADD_AP_MOD_FERAL_ATTACK_POWER"] = {
 			-- Cat Form
 			{
 				["value"] = 1,
@@ -1034,6 +1015,77 @@ if addon.class == "DRUID" then
 				["aura"] = 24858,
 				["group"] = addon.ExclusiveGroup.Feral,
 			},
+			-- Talent: Predatory Strikes (Cat Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 32356,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+			},
+			-- Talent: Predatory Strikes (Bear Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 32357,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+			},
+			-- Talent: Predatory Strikes (Dire Bear Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 9634,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+			},
+		},
+		["ADD_AP_MOD_GENERIC_ATTACK_POWER"] = {
+			-- Talent: Predatory Strikes (Cat Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 32356,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+				["itemClass"] = {
+					[Enum.ItemClass.Weapon] = true,
+				}
+			},
+			-- Talent: Predatory Strikes (Bear Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 32357,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+				["itemClass"] = {
+					[Enum.ItemClass.Weapon] = true,
+				}
+			},
+			-- Talent: Predatory Strikes (Dire Bear Form)
+			{
+				["tab"] = 2,
+				["num"] = 10,
+				["rank"] = {
+					0.07, 0.14, 0.20,
+				},
+				["aura"] = 9634,
+				["group"] = addon.ExclusiveGroup.PredatoryStrikes,
+				["itemClass"] = {
+					[Enum.ItemClass.Weapon] = true,
+				}
+			},
 		},
 		["ADD_AP_MOD_STR"] = {
 			-- Base
@@ -1048,12 +1100,12 @@ if addon.class == "DRUID" then
 				["aura"] = 768,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -1121,7 +1173,7 @@ if addon.class == "DRUID" then
 		},
 		-- Druid: Intensity (Rank 3) - 3,6
 		--        Allows 17/33/50% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 10 rage.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 3,
 				["num"] = 7,
@@ -1132,7 +1184,7 @@ if addon.class == "DRUID" then
 		},
 		-- Druid: Dreamstate (Rank 3) - 1,15
 		--        Regenerate mana equal to 4%/7%/10% of your Intellect every 5 sec, even while casting.
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			{
 				["tab"] = 1,
 				["num"] = 15,
@@ -1252,35 +1304,6 @@ if addon.class == "DRUID" then
 				["aura"] = 9634,		-- ["Dire Bear Form"],
 			},
 		},
-		-- Druid: Predatory Strikes (Rank 3) - 2,10
-		--   Increases your melee attack power in Cat, Bear and Dire Bear Forms by
-		--   7,14,20% of any attack power on your equipped weapon.
-		["MOD_FERAL_AP"] = {
-			{
-				["tab"] = 2,
-				["num"] = 10,
-				["rank"] = {
-					0.07, 0.14, 0.20,
-				},
-				["aura"] = 32356,		-- ["Cat Form"],
-			},
-			{
-				["tab"] = 2,
-				["num"] = 10,
-				["rank"] = {
-					0.07, 0.14, 0.20,
-				},
-				["aura"] = 32357,		-- ["Bear Form"],
-			},
-			{
-				["tab"] = 2,
-				["num"] = 10,
-				["rank"] = {
-					0.07, 0.14, 0.20,
-				},
-				["aura"] = 9634,		-- ["Dire Bear Form"],
-			},
-		},
 		-- Druid: Survival Instincts - Buff
 		--        Health increased by 30% of maximum while in Bear Form, Cat Form, or Dire Bear Form.
 		--        Patch 3.0.8: The extra health from this ability now persists in all forms,
@@ -1370,38 +1393,33 @@ if addon.class == "DRUID" then
 				},
 			},
 		},
-		-- Druid: Improved Mark of the Wild (Rank 2) - 3,1
-		--        increases all of your total attributes by 1/2%.
-		-- Druid: Heart of the Wild (Rank 5) - 2,17
-		--        Increases your Intellect by 4%/8%/12%/16%/20%. In addition,
-		--        while in Bear or Dire Bear Form your Stamina is increased by 2/4/6/8/10% and
-		--        while in Cat Form your attack power is increased by 2/4/6/8/10%.
-		-- Druid: Protector of the Pack (Rank 5) - 2,22
-		--        Increases your attack power in Bear Form and Dire Bear Form by 2%/4%/6%, and for each friendly player in your party when you enter Bear Form or Dire Bear Form, damage you take is reduced while in Bear Form and Dire Bear Form by 1%/2%/3%.
 		["MOD_AP"] = {
+			-- Talent: Heart of the Wild (Cat Form)
 			{
 				["tab"] = 2,
 				["num"] = 17,
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
-				["aura"] = 32356,		-- ["Cat Form"],
+				["aura"] = 32356,
 			},
+			-- Talent: Protector of the Pack: Bear Form
 			{
 				["tab"] = 2,
 				["num"] = 22,
 				["rank"] = {
 					0.02, 0.04, 0.06,
 				},
-				["aura"] = 32357,		-- ["Bear Form"],
+				["aura"] = 32357,
 			},
+			-- Talent: Protector of the Pack: Dire Bear Form
 			{
 				["tab"] = 2,
 				["num"] = 22,
 				["rank"] = {
 					0.02, 0.04, 0.06,
 				},
-				["aura"] = 9634,		-- ["Dire Bear Form"],
+				["aura"] = 9634,
 			},
 		},
 		-- Druid: Improved Mark of the Wild (Rank 2) - 3,1
@@ -1703,17 +1721,17 @@ elseif addon.class == "HUNTER" then
 				["aura"] = 34501,
 			}
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Buff: Aspect of the Viper
 			{
 				["aura"] = 34074,
@@ -1872,12 +1890,12 @@ elseif addon.class == "MAGE" then
 				["value"] = 3.6587,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -1935,7 +1953,7 @@ elseif addon.class == "MAGE" then
 		--       Your Mage Armor spell grants an additional 20% mana regeneration while casting.
 		-- Mage: Pyromaniac (Rank 3) - 2,19
 		--       Increases chance to critically hit by 1%/2%/3% and allows 17/33/50% of your mana regeneration to continue while casting.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 1,
 				["num"] = 13,
@@ -2026,12 +2044,12 @@ elseif addon.class == "PALADIN" then
 				["value"] = 2,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -2200,17 +2218,17 @@ elseif addon.class == "PRIEST" then
 				["value"] = 3.4178,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
 		},
-		["MOD_NORMAL_MANA_REG"] = {
+		["MOD_NORMAL_MANA_REGEN"] = {
 			-- Priest: Holy Concentration (Rank 3) - 2,17
 			--   Your mana regeneration from spirit is increased by 16/32/50%
 			{
@@ -2224,7 +2242,7 @@ elseif addon.class == "PRIEST" then
 		},
 		-- Priest: Meditation (Rank 3) - 1,7
 		--         Allows 17/33/50% of your Mana regeneration to continue while casting.
-		["ADD_MANA_REG_MOD_NORMAL_MANA_REG"] = {
+		["ADD_MANA_REGEN_MOD_NORMAL_MANA_REGEN"] = {
 			{
 				["tab"] = 1,
 				["num"] = 7,
@@ -2251,7 +2269,7 @@ elseif addon.class == "PRIEST" then
 				},
 			},
 		},
-		["ADD_MANA_REG_MOD_MANA"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
 			-- Talent: Dispersion
 			{
 				["tab"] = 3,
@@ -2399,11 +2417,8 @@ elseif addon.class == "ROGUE" then
 				["value"] = 1,
 			},
 		},
-		-- Rogue: Deadliness (Rank 5) - 3,18
-		--        Increases your attack power by 2%/4%/6%/8%/10%.
-		-- Rogue: Savage Combat (Rank 2) - 2,26
-		--        Increases your total attack power by 2%/4%.
 		["MOD_AP"] = {
+			-- Talent: Deadliness
 			{
 				["tab"] = 3,
 				["num"] = 18,
@@ -2411,6 +2426,7 @@ elseif addon.class == "ROGUE" then
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
 			},
+			-- Talent: Savage Combat
 			{
 				["tab"] = 2,
 				["num"] = 26,
@@ -2473,7 +2489,7 @@ elseif addon.class == "ROGUE" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Dagger] = true,
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
 				},
@@ -2494,12 +2510,12 @@ elseif addon.class == "SHAMAN" then
 				["value"] = 1,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -2547,7 +2563,7 @@ elseif addon.class == "SHAMAN" then
 		},
 		-- Shaman: Unrelenting Storm (Rank 3) - 1,13
 		--         Regenerate mana equal to 4%/8%/12% of your Intellect every 5 sec, even while casting.
-		["ADD_MANA_REG_MOD_INT"] = {
+		["ADD_GENERIC_MANA_REGEN_MOD_INT"] = {
 			{
 				["tab"] = 1,
 				["num"] = 13,
@@ -2618,12 +2634,12 @@ elseif addon.class == "WARLOCK" then
 				["value"] = 2.4211,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_SPI"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_SPI"] = {
 			{
 				["regen"] = NormalManaRegenPerSpi,
 			},
 		},
-		["ADD_NORMAL_MANA_REG_MOD_INT"] = {
+		["ADD_NORMAL_MANA_REGEN_MOD_INT"] = {
 			{
 				["regen"] = NormalManaRegenPerInt,
 			},
@@ -2706,13 +2722,6 @@ elseif addon.class == "WARLOCK" then
 			},
 		},
 		["MOD_PET_STA"] = {
-			-- 3.3.0 Imp stam total 233: pet base 118, player base 90, pet sta from player sta 0.75, pet kings 1.1, fel vitality 1.15
-			-- /dump floor((118+floor(90*0.75))*1.1)*1.05 = 233.45 match
-			-- /dump (118+floor(90*0.75))*1.1*1.05 = 224.025 wrong
-			--{
-			--	["value"] = 0.1, -- BoK, BoSanc
-			--	["condition"] = "UnitBuff('pet', GetSpellInfo(20217)) or UnitBuff('pet', GetSpellInfo(25898)) or UnitBuff('pet', GetSpellInfo(20911)) or UnitBuff('pet', GetSpellInfo(25899))",
-			--},
 			-- Warlock: Fel Vitality (Rank 3) - 2,7
 			--          Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 1%/2%/3%.
 			{
@@ -2744,11 +2753,6 @@ elseif addon.class == "WARLOCK" then
 			},
 		},
 		["MOD_PET_INT"] = {
-			-- Blessings on pet
-			--{
-			--	["value"] = 0.1,
-			--	["condition"] = "UnitBuff('pet', GetSpellInfo(20217)) or UnitBuff('pet', GetSpellInfo(25898)) or UnitBuff('pet', GetSpellInfo(20911)) or UnitBuff('pet', GetSpellInfo(25899))",
-			--},
 			-- Warlock: Fel Vitality (Rank 3) - 2,7
 			--          Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 1%/2%/3%.
 			{
@@ -2939,7 +2943,7 @@ elseif addon.class == "WARRIOR" then
 				["rank"] = {
 					1, 2, 3, 4, 5,
 				},
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 					[Enum.ItemWeaponSubclass.Polearm] = true,
@@ -2954,7 +2958,7 @@ if addon.playerRace == "Dwarf" then
 		[StatLogic.Stats.Expertise] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Mace1H] = true,
 					[Enum.ItemWeaponSubclass.Mace2H] = true,
 				}
@@ -2963,7 +2967,7 @@ if addon.playerRace == "Dwarf" then
 		[StatLogic.Stats.RangedCrit] = {
 			{
 				["value"] = 1,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Guns] = true,
 				}
 			}
@@ -2993,7 +2997,7 @@ elseif addon.playerRace == "Human" then
 		[StatLogic.Stats.Expertise] = {
 			{
 				["value"] = 3,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Mace1H] = true,
 					[Enum.ItemWeaponSubclass.Mace2H] = true,
 					[Enum.ItemWeaponSubclass.Sword1H] = true,
@@ -3007,7 +3011,7 @@ elseif addon.playerRace == "Orc" then
 		[StatLogic.Stats.Expertise] = {
 			{
 				["value"] = 5,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Axe1H] = true,
 					[Enum.ItemWeaponSubclass.Axe2H] = true,
 					[Enum.ItemWeaponSubclass.Unarmed] = true,
@@ -3035,7 +3039,7 @@ elseif addon.playerRace == "Troll" then
 		[StatLogic.Stats.RangedCrit] = {
 			{
 				["value"] = 1,
-				["weapon"] = {
+				["weaponSubclass"] = {
 					[Enum.ItemWeaponSubclass.Bows] = true,
 					[Enum.ItemWeaponSubclass.Thrown] = true,
 				}
@@ -3045,6 +3049,51 @@ elseif addon.playerRace == "Troll" then
 end
 
 StatLogic.StatModTable["ALL"] = {
+	["ADD_MELEE_HIT_RATING_MOD_HIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_HIT_RATING_MOD_HIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_SPELL_HIT_RATING_MOD_HIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MELEE_CRIT_RATING_MOD_CRIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_CRIT_RATING_MOD_CRIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_SPELL_CRIT_RATING_MOD_CRIT_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MELEE_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_RANGED_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_SPELL_HASTE_RATING_MOD_HASTE_RATING"] = {
+		{
+			["value"] = 1.0,
+		},
+	},
 	["ADD_HEALTH_MOD_STA"] = {
 		{
 			["value"] = 10,
@@ -3073,20 +3122,23 @@ StatLogic.StatModTable["ALL"] = {
 			["aura"] = 69127,		-- ["Chill of the Throne"],
 		},
 	},
-	-- Replenishment - Buff
-	--   Replenishes 1% of maximum mana per 5 sec.
-	-- Priest: Vampiric Touch
-	--         Priest's party or raid members gain 1% of their maximum mana per 5 sec when the priest deals damage from Mind Blast.
-	-- Paladin: Judgements of the Wise
-	--          Your damaging Judgement spells have a 100% chance to grant the Replenishment effect to
-	--          up to 10 party or raid members mana regeneration equal to 1% of their maximum mana per 5 sec for 15 sec
-	-- Hunter: Hunting Party
-	--         Your Arcane Shot, Explosive Shot and Steady Shot critical strikes have a 100% chance to
-	--         grant up to 10 party or raid members mana regeneration equal to 1% of the maximum mana per 5 sec.
-	["ADD_MANA_REG_MOD_MANA"] = {
+	["ADD_GENERIC_MANA_REGEN_MOD_MANA"] = {
+		-- Buff: Replenishment
 		{
 			["value"] = 0.01,
-			["aura"] = 57669,		-- ["Replenishment"],
+			["aura"] = 57669,
+		},
+	},
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_NORMAL_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
+		},
+	},
+	["ADD_MANA_REGEN_NOT_CASTING_MOD_GENERIC_MANA_REGEN"] = {
+		-- Base
+		{
+			["value"] = 1.0,
 		},
 	},
 	-- MetaGem: Eternal Earthsiege Diamond - 41396
@@ -3112,15 +3164,13 @@ StatLogic.StatModTable["ALL"] = {
 		},
 	},
 	["MOD_AP"] = {
-		-- Hunter: Trueshot Aura - Buff
-		--         Attack power increased by 10%.
+		-- Buff: Trueshot Aura
 		{
 			["value"] = 0.1,
 			["aura"] = 19506,
 			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
-		-- Death Knight: Abomination's Might - Buff
-		--               Attack power increased by 5/10%.
+		-- Buff: Abomination's Might
 		{
 			["rank"] = {
 				0.05, 0.1,
@@ -3128,8 +3178,31 @@ StatLogic.StatModTable["ALL"] = {
 			["aura"] = 53138,
 			["group"] = addon.ExclusiveGroup.AttackPower,
 		},
-		-- Shaman: Unleashed Rage - Buff
-		--         Melee attack power increased by 4/7/10%.
+		-- Buff: Unleashed Rage
+		{
+			["rank"] = {
+				0.04, 0.07, 0.1,
+			},
+			["aura"] = 30809,
+			["group"] = addon.ExclusiveGroup.AttackPower,
+		},
+	},
+	["MOD_RANGED_AP"] = {
+		-- Buff: Trueshot Aura
+		{
+			["value"] = 0.1,
+			["aura"] = 19506,
+			["group"] = addon.ExclusiveGroup.AttackPower,
+		},
+		-- Buff: Abomination's Might
+		{
+			["rank"] = {
+				0.05, 0.1,
+			},
+			["aura"] = 53138,
+			["group"] = addon.ExclusiveGroup.AttackPower,
+		},
+		-- Buff: Unleashed Rage
 		{
 			["rank"] = {
 				0.04, 0.07, 0.1,
@@ -3356,36 +3429,11 @@ StatLogic.StatModTable["ALL"] = {
 	},
 }
 
---=====================================--
--- Avoidance stats diminishing returns --
---=====================================--
--- Formula reverse engineered by Whitetooth (hotdogee [at] gmail [dot] com)
---[[---------------------------------
-This includes
-1. Dodge from Dodge Rating, Defense, Agility.
-2. Parry from Parry Rating, Defense.
-3. Chance to be missed from Defense.
-
-The following is the result of hours of work gathering data from beta servers and then spending even more time running multiple regression analysis on the data.
-
-1. DR for Dodge, Parry, Missed are calculated separately.
-2. Base avoidances are not affected by DR, (ex: Dodge from base Agility)
-3. Death Knight's Parry from base Strength is affected by DR, base for parry is 5%.
-4. Direct avoidance gains from talents and spells(ex: Evasion) are not affected by DR.
-5. Indirect avoidance gains from talents and spells(ex: +Agility from Kings) are affected by DR
-6. c and k values depend on class but does not change with level.
-
-7. The DR formula:
-
-1/x' = 1/c+k/x
-
-x' is the diminished stat before converting to IEEE754.
-x is the stat before diminishing returns.
-c is the cap of the stat, and changes with class.
-k is is a value that changes with class.
------------------------------------]]
+-----------------------------------
+-- Avoidance diminishing returns --
+-----------------------------------
 -- The following K, C_p, C_d are calculated by Whitetooth (hotdogee [at] gmail [dot] com)
-local K = {
+addon.K = {
 	["WARRIOR"]     = 0.956,
 	["PALADIN"]     = 0.956,
 	["HUNTER"]      = 0.988,
@@ -3397,7 +3445,8 @@ local K = {
 	["WARLOCK"]     = 0.983,
 	["DRUID"]       = 0.972,
 }
-local C_p = {
+
+addon.C_p = {
 	["WARRIOR"]     = 1/0.021275,
 	["PALADIN"]     = 1/0.021275,
 	["HUNTER"]      = 1/0.006870,
@@ -3409,7 +3458,8 @@ local C_p = {
 	["WARLOCK"]     = 0, --use tank stats
 	["DRUID"]       = 0, --use tank stats
 }
-local C_d = {
+
+addon.C_d = {
 	["WARRIOR"]     = 1/0.011347,
 	["PALADIN"]     = 1/0.011347,
 	["HUNTER"]      = 1/0.006870,
@@ -3425,235 +3475,12 @@ local C_d = {
 -- I've done extensive tests that show the miss cap is 16% for warriors.
 -- Because the only tank I have with 150 pieces of epic gear required for the tests is a warrior,
 -- Until someone that has the will and gear to preform the tests for other classes, I'm going to assume the cap is the same(which most likely isn't)
-local C_m = setmetatable({}, {
-	__index = function()
-		return 16
-	end
-})
+addon.C_m = setmetatable({}, { __index = function()
+	return 16
+end })
 
-function StatLogic:GetMissedChanceBeforeDR()
-	local baseDefense, additionalDefense = UnitDefense("player")
-	local defenseFromDefenseRating = floor(GetCombatRatingBonus(CR_DEFENSE_SKILL))
-	local modMissed = defenseFromDefenseRating * 0.04
-	local drFreeMissed = 5 + (baseDefense + additionalDefense - defenseFromDefenseRating) * 0.04
-	return modMissed, drFreeMissed
-end
-
-local ModAgiClasses = {
+addon.ModAgiClasses = {
 	["DRUID"] = true,
 	["HUNTER"] = true,
 	["ROGUE"] = true,
 }
-
---[[
-Formula by Whitetooth (hotdogee [at] gmail [dot] com)
-Calculates the dodge percentage per agility for your current class and level.
-Only works for your currect class and current level, does not support class and level args.
-Calculations got a bit more complicated with the introduction of the avoidance DR in WotLK, these are the values we know or can be calculated easily:
-* D'=Total Dodge% after DR
-* D_r=Dodge from Defense and Dodge Rating before DR
-* D_b=Dodge unaffected by DR (BaseDodge + Dodge from talent/buffs + Lower then normal defense correction)
-* A=Total Agility
-* A_b=Base Agility (This is what you have with no gear on)
-* A_g=Total Agility - Base Agility
-* Let d be the Dodge/Agi value we are going to calculate.
-
-```
- 1     1     k
---- = --- + ---
- x'    c     x
-
-x'=D'-D_b-A_b*d
-x=A_g*d+D_r
-
-1/(D'-D_b-A_b*d)=1/C_d+k/(A_g*d+D_r)=(A_g*d+D_r+C_d*k)/(C_d*A_g*d+C_d*D_r)
-
-C_d*A_g*d+C_d*D_r=[(D'-D_b)-A_b*d]*[Ag*d+(D_r+C_d*k)]
-```
-After rearranging the terms, we get an equation of type `a*d^2+b*d+c` where
-```
-a=-A_g*A_b
-b=A_g(D'-D_b)-A_b(D_r+C_d*k)-C_dA_g
-c=(D'-D_b)(D_r+C_d*k)-C_d*D_r
-Dodge/Agi=(-b-(b^2-4ac)^0.5)/(2a)
-```
-]]
----@return number dodge Dodge percentage per agility
-function StatLogic:GetDodgePerAgi()
-	local level = UnitLevel("player")
-	-- Collect data
-	local D_dr = GetDodgeChance()
-	if D_dr == 0 then
-		return 0
-	end
-	local dodgeFromDodgeRating = GetCombatRatingBonus(CR_DODGE)
-	local baseDefense, modDefense = UnitDefense("player")
-	local dodgeFromModDefense = modDefense * 0.04
-	local D_r = dodgeFromDodgeRating + dodgeFromModDefense
-	local D_b = self:GetStatMod("ADD_DODGE") + (baseDefense - level * 5) * 0.04
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
-	local modAgi = 1
-	if ModAgiClasses[addon.class] then
-		modAgi = self:GetStatMod("MOD_AGI")
-		-- Talents that modify Agi will not add to posBuff, so we need to calculate baseAgi
-		-- But Agi from Kings etc. will add to posBuff, so we subtract those if present
-		for _, case in ipairs(StatLogic.StatModTable["ALL"]["MOD_AGI"]) do
-			if case.group == addon.ExclusiveGroup.AllStats then
-				if StatLogic:GetAuraInfo(case.aura) then
-					modAgi = modAgi - case.value
-				end
-			end
-		end
-	end
-	local A = effectiveStat
-	local A_b = ceil((stat - posBuff - negBuff) / modAgi)
-	local A_g = A - A_b
-	local C = C_d[addon.class]
-	local k = K[addon.class]
-	-- Solve a*x^2+b*x+c
-	local a = -A_g*A_b
-	local b = A_g*(D_dr-D_b)-A_b*(D_r+C*k)-C*A_g
-	local c = (D_dr-D_b)*(D_r+C*k)-C*D_r
-
-	local dodgePerAgi
-	if a == 0 then
-		dodgePerAgi = -c / b
-	else
-		dodgePerAgi = (-b-(b^2-4*a*c)^0.5)/(2*a)
-	end
-
-	return dodgePerAgi
-end
-
---[[
-Calculates your current Dodge% before diminishing returns.
-Dodge% = modDodge + drFreeDodge
-
-drFreeDodge includes:
-* Base dodge
-* Dodge from base agility
-* Dodge modifier from base defense
-* Dodge modifers from talents or spells
-
-modDodge includes
-* Dodge from dodge rating
-* Dodge from additional defense
-* Dodge from additional dodge
-]]
----@return number modDodge The part that is affected by diminishing returns.
----@return number drFreeDodge The part that isn't affected by diminishing returns.
-function StatLogic:GetDodgeChanceBeforeDR()
-	local stat, effectiveStat, posBuff, negBuff = UnitStat("player", LE_UNIT_STAT_AGILITY)
-	local baseAgi = stat - posBuff - negBuff
-	local dodgePerAgi = self:GetDodgePerAgi()
-	local dodgeFromDodgeRating = GetCombatRatingBonus(CR_DODGE)
-	local dodgeFromDefenceRating = floor(GetCombatRatingBonus(CR_DEFENSE_SKILL)) * 0.04
-	local dodgeFromAdditionalAgi = dodgePerAgi * (effectiveStat - baseAgi)
-	local modDodge = dodgeFromDodgeRating + dodgeFromDefenceRating + dodgeFromAdditionalAgi
-
-	local drFreeDodge = GetDodgeChance() - self:GetAvoidanceAfterDR(StatLogic.Stats.Dodge, modDodge)
-
-	return modDodge, drFreeDodge
-end
-
---[[
-Calculates your current Parry% before diminishing returns.
-Parry% = modParry + drFreeParry
-
-drFreeParry includes:
-* Base parry
-* Parry from base agility
-* Parry modifier from base defense
-* Parry modifers from talents or spells
-
-modParry includes
-* Parry from parry rating
-* Parry from additional defense
-* Parry from additional parry
-]]
----@return number modParry The part that is affected by diminishing returns.
----@return number drFreeParry The part that isn't affected by diminishing returns.
-function StatLogic:GetParryChanceBeforeDR()
-	-- Defense is floored
-	local parryFromParryRating = GetCombatRatingBonus(CR_PARRY)
-	local parryFromDefenceRating = floor(GetCombatRatingBonus(CR_DEFENSE_SKILL)) * 0.04
-	local modParry = parryFromParryRating + parryFromDefenceRating
-
-	-- drFreeParry
-	local drFreeParry = GetParryChance() - self:GetAvoidanceAfterDR(StatLogic.Stats.Parry, modParry)
-
-	return modParry, drFreeParry
-end
-
---[[
-Avoidance DR formula and k, C_p, C_d constants derived by Whitetooth (hotdogee [at] gmail [dot] com)
-avoidanceBeforeDR is the part that is affected by diminishing returns.
-See :GetClassIdOrName(class) for valid class values.
-
-Calculates the avoidance after diminishing returns, this includes:
-* Dodge from Dodge Rating, Defense, Agility.
-* Parry from Parry Rating, Defense.
-* Chance to be missed from Defense.
-
-The DR formula: 1/x' = 1/c+k/x
-* x' is the diminished stat before converting to IEEE754.
-* x is the stat before diminishing returns.
-* c is the cap of the stat, and changes with class.
-* k is is a value that changes with class.
-
-Formula details:
-* DR for Dodge, Parry, Missed are calculated separately.
-* Base avoidances are not affected by DR, (ex: Dodge from base Agility)
-* Death Knight's Parry from base Strength is affected by DR, base for parry is 5%.
-* Direct avoidance gains from talents and spells(ex: Evasion) are not affected by DR.
-* Indirect avoidance gains from talents and spells(ex: +Agility from Kings) are affected by DR
-* c and k values depend on class but does not change with level.
-]]
----@param stat `StatLogic.Stats.Dodge`|`StatLogic.Stats.Parry`|`StatLogic.Stats.Miss`
----@param avoidanceBeforeDR number Amount of avoidance before diminishing returns in percentages.
----@return number avoidanceAfterDR Avoidance after diminishing returns in percentages.
-function StatLogic:GetAvoidanceAfterDR(stat, avoidanceBeforeDR)
-	-- argCheck for invalid input
-	self:argCheck(stat, 2, "table")
-	self:argCheck(avoidanceBeforeDR, 3, "number")
-
-	local C = C_d
-	if stat == StatLogic.Stats.Parry then
-		C = C_p
-	elseif stat == StatLogic.Stats.Miss then
-		C = C_m
-	end
-
-	if avoidanceBeforeDR > 0 then
-		local class = addon.class
-		return 1 / (1 / C[class] + K[class] / avoidanceBeforeDR)
-	else
-		return 0
-	end
-end
-
--- Calculates the avoidance gain after diminishing returns with player's current stats.
----@param stat `StatLogic.Stats.Dodge`|`StatLogic.Stats.Parry`|`StatLogic.Stats.Miss`
----@param gainBeforeDR number Avoidance gain before diminishing returns in percentages.
----@return number gainAfterDR Avoidance gain after diminishing returns in percentages.
-function StatLogic:GetAvoidanceGainAfterDR(stat, gainBeforeDR)
-	-- argCheck for invalid input
-	self:argCheck(gainBeforeDR, 2, "number")
-
-	if stat == StatLogic.Stats.Parry then
-		local modAvoidance, drFreeAvoidance = self:GetParryChanceBeforeDR()
-		local newAvoidanceChance = self:GetAvoidanceAfterDR(stat, modAvoidance + gainBeforeDR) + drFreeAvoidance
-		if newAvoidanceChance < 0 then newAvoidanceChance = 0 end
-		return newAvoidanceChance - GetParryChance()
-	elseif stat == StatLogic.Stats.Dodge then
-		local modAvoidance, drFreeAvoidance = self:GetDodgeChanceBeforeDR()
-		local newAvoidanceChance = self:GetAvoidanceAfterDR(stat, modAvoidance + gainBeforeDR) + drFreeAvoidance
-		if newAvoidanceChance < 0 then newAvoidanceChance = 0 end -- because GetDodgeChance() is 0 when negative
-		return newAvoidanceChance - GetDodgeChance()
-	elseif stat == StatLogic.Stats.Miss then
-		local modAvoidance = self:GetMissedChanceBeforeDR()
-		return self:GetAvoidanceAfterDR(stat, modAvoidance + gainBeforeDR) - self:GetAvoidanceAfterDR(stat, modAvoidance)
-	else
-		return gainBeforeDR
-	end
-end

@@ -33,15 +33,20 @@ local lastSelectedPlayerPerSegment = {}
 local lastSelectedPlayerName = ""
 
 local onPlayerSelected = function(breakdownWindowFrame, playerObject)
+	local mainAttribute, subAttribute = Details:GetDisplayTypeFromBreakdownWindow()
+
 	---@type instance
 	local instanceObject = Details:GetActiveWindowFromBreakdownWindow()
-	Details:OpenBreakdownWindow(instanceObject, playerObject, false, true)
 
 	--cache the latest selected player for this combat
 	---@type combat
 	local combatObject = instanceObject:GetCombat()
+
 	---@type actorname
 	local playerName = playerObject:Name()
+
+	Details:OpenSpecificBreakdownWindow(combatObject, playerName, mainAttribute, subAttribute)
+	--Details:OpenBreakdownWindow(instanceObject, playerObject, false, true)
 
 	lastSelectedPlayerPerSegment[combatObject:GetCombatUID()] = playerName
 	lastSelectedPlayerName = playerName
@@ -59,23 +64,23 @@ local getActorToShowInBreakdownWindow = function(combatObject)
 	---@type uniquecombatid
 	local combatUID = combatObject:GetCombatUID()
 
-	local displayId, subDisplayId = instanceObject:GetDisplay()
+	local mainAttribute, subAttribute = Details:GetDisplayTypeFromBreakdownWindow()
 
 	---@type actorname
 	local playerName = lastSelectedPlayerPerSegment[combatUID]
 
 	if (playerName) then
 		---@type actor
-		local playerObject = combatObject:GetActor(displayId, playerName)
+		local playerObject = combatObject:GetActor(mainAttribute, playerName)
 		return playerObject
 	else
 		---@type actor
-		local playerObject = combatObject:GetActor(displayId, lastSelectedPlayerName)
+		local playerObject = combatObject:GetActor(mainAttribute, lastSelectedPlayerName)
 		if (playerObject) then
 			lastSelectedPlayerPerSegment[combatUID] = playerObject:Name()
 			return playerObject
 		else
-			playerObject = combatObject:GetActor(displayId, Details.playername)
+			playerObject = combatObject:GetActor(mainAttribute, Details.playername)
 			if (playerObject) then
 				lastSelectedPlayerPerSegment[combatUID] = playerObject:Name()
 				return playerObject
@@ -83,7 +88,7 @@ local getActorToShowInBreakdownWindow = function(combatObject)
 
 			--get the top player from the combat display and subDisplay and select it
 			---@type actor
-			local actorObject = instanceObject:GetActorBySubDisplayAndRank(displayId, subDisplayId, 1)
+			local actorObject = instanceObject:GetActorBySubDisplayAndRank(mainAttribute, subAttribute, 1)
 			if (actorObject) then
 				lastSelectedPlayerPerSegment[combatUID] = actorObject:Name()
 				return actorObject
@@ -141,6 +146,9 @@ local createPlayerScrollBox = function(breakdownWindowFrame, breakdownSideMenu, 
 
 		---@type combat
 		local combatObject = Details:GetCombatFromBreakdownWindow()
+		if (not combatObject) then
+			return
+		end
 		local encounterId = combatObject:GetEncounterCleuID()
 		local difficultyId = combatObject:GetDifficulty()
 
@@ -259,7 +267,7 @@ local createPlayerScrollBox = function(breakdownWindowFrame, breakdownSideMenu, 
 		local combatObject = self.combatObject
 
 		--warcraftlogs percentile
-		if (self.playerObject.tipo == DETAILS_ATTRIBUTE_DAMAGE) then
+		if (self.playerObject.tipo == DETAILS_ATTRIBUTE_DAMAGE and combatObject) then
 			local actorDPS = self.playerObject.total / combatObject:GetCombatTime()
 
 			local parsePercent = Details222.WarcraftLogs.GetDamageParsePercent(encounterId, difficultyId, actorSpecId, actorDPS)
@@ -469,6 +477,9 @@ local createSegmentsScrollBox = function(breakdownWindowFrame, breakdownSideMenu
 
 		--current breakdown combat
 		local currentBKCombat = Details:GetCombatFromBreakdownWindow()
+		if (not currentBKCombat) then
+			return
+		end
 		--unique combat id from the combat the breakdown window is using
 		local currentBKCombatUniqueID = currentBKCombat:GetCombatUID()
 
@@ -737,7 +748,10 @@ function breakdownWindowPlayerList.CreatePlayerListFrame()
 		end
 
 		local selectedPlayerName = Details:GetActorObjectFromBreakdownWindow():Name()
-		lastSelectedPlayerPerSegment[Details:GetCombatFromBreakdownWindow():GetCombatUID()] = selectedPlayerName
+		local combatObject = Details:GetCombatFromBreakdownWindow()
+		if (combatObject) then
+			lastSelectedPlayerPerSegment[combatObject:GetCombatUID()] = selectedPlayerName
+		end
 		lastSelectedPlayerName = selectedPlayerName
 
 		local playerLineHeight = player_line_height+1 --the +1 is the space between the lines

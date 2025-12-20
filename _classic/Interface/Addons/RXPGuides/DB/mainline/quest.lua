@@ -3,6 +3,7 @@ local _,addon = ...
 --Quest IDs that you want to disable the quest automation entirely:
 addon.disabledQuestList = {
     31967,
+    37819,
     31966,
     31902,
     31903,
@@ -21,6 +22,18 @@ addon.disabledQuestList = {
     31780,
     38934,
     66458,
+    31781,
+    31819,
+    84519,
+    84520,
+    55509,
+    13181,
+    13183,
+    55508,
+    55510,
+    13177,
+    13179,
+    55510,
 }
 
 addon.skipPreReq = {

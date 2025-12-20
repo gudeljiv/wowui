@@ -1,22 +1,5 @@
-local _, addonTable = ...
-
-local errorDialog = "Baganator_Categories_Search_Error"
-StaticPopupDialogs[errorDialog] = {
-  text = "",
-  button1 = OKAY,
-  timeout = 0,
-  hideOnEscape = 1,
-  hasEditBox = 1,
-  OnShow = function(self)
-    self.editBox:SetText("https://discord.gg/TtSN6DxSky")
-    self.editBox:HighlightText()
-  end,
-  EditBoxOnEnterPressed = function(self)
-    self:GetParent():Hide()
-  end,
-  EditBoxOnEscapePressed = StaticPopup_StandardEditBoxOnEscapePressed,
-  editBoxWidth = 230,
-}
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 
 BaganatorCategoryViewsCategoryFilterMixin = {}
 
@@ -53,10 +36,12 @@ function BaganatorCategoryViewsCategoryFilterMixin:ApplySearches(composed, every
   self.callback = callback
 
   self.results = {}
+  local indexMap = {}
   self.searchPending = nil
-  for _, entry in ipairs(composed.details) do
+  for index, entry in ipairs(composed.details) do
     if entry.search then
       self.results[entry.search] = entry.results
+      indexMap[entry.search] = index
     end
   end
 
@@ -72,20 +57,22 @@ function BaganatorCategoryViewsCategoryFilterMixin:ApplySearches(composed, every
   end
 
   local superAttachedItems = {}
-  for _, details in ipairs(composed.details) do
+  for _, search in ipairs(self.searches) do
+    local details = composed.details[indexMap[search]]
     local items = details.attachedItems
     local search = details.search
     if items then
       for key, hit in pairs(items) do
-        if hit and not superAttachedItems[key] then
+        if hit and not superAttachedItems[key] and not superAttachedItems[hit] then
           superAttachedItems[key] = search
         end
       end
     end
   end
+
   for key, pendingForKey in pairs(self.pending) do
     local attachmentKey = addonTable.CategoryViews.Utilities.GetAddedItemData(pendingForKey[1].itemID, pendingForKey[1].itemLink)
-    local match = superAttachedItems[attachmentKey] or superAttachedItems[key]
+    local match = superAttachedItems[key] or superAttachedItems[attachmentKey]
     if match then
       for _, i in ipairs(self.pending[key]) do
         rawset(i, "addedDirectly", true)
@@ -113,8 +100,7 @@ function BaganatorCategoryViewsCategoryFilterMixin:ApplySearches(composed, every
       else
         items = "unknown failure"
       end
-      StaticPopupDialogs[errorDialog].text = BAGANATOR_L_CATEGORIES_FAILED_WARNING:format(self.searches[self.searchIndex] or "$$$", items)
-      StaticPopup_Show(errorDialog)
+      addonTable.Dialogs.ShowCopy(addonTable.Locales.CATEGORIES_FAILED_WARNING:format(self.searches[self.searchIndex] or "$$$", items))
     end)
   end
   self:DoSearch()
@@ -142,6 +128,14 @@ function BaganatorCategoryViewsCategoryFilterMixin:DoSearch()
     for key in pairs(self.pending) do
       self.searchPending[key] = true
     end
+  end
+
+  if addonTable.CheckTimeout() then
+    self:SetScript("OnUpdate", function()
+      addonTable.ReportEntry()
+      self:DoSearch()
+    end)
+    return
   end
 
   local search = self.searches[self.searchIndex]
@@ -172,6 +166,9 @@ function BaganatorCategoryViewsCategoryFilterMixin:DoSearch()
     self.searchPending = nil
     self:DoSearch()
   else
-    self:SetScript("OnUpdate", self.DoSearch)
+    self:SetScript("OnUpdate", function()
+      addonTable.ReportEntry()
+      self:DoSearch()
+    end)
   end
 end

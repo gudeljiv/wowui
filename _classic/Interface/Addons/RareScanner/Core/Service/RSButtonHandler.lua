@@ -33,12 +33,14 @@ local RSTomtom = private.ImportLib("RareScannerTomtom")
 
 -- Timers
 local BUTTON_TIMER
+local PREFOUND_TIMER
 
 ---============================================================================
 -- Queue found alerts
 ---============================================================================
 
 local foundAlerts = {}
+local preFoundAlerts = {}
 
 ---============================================================================
 -- Auxiliar functions
@@ -357,11 +359,29 @@ function RSButtonHandler.AddAlert(button, vignetteInfo, isNavigating)
 		return
 	end
 	
+	-- Avoid alerting for the same entity detected by different systems at the same time
+	if (not isNavigating) then
+		local trackingSystem = vignetteInfo.trackingSystem
+		if (not vignetteInfo.simulated) then
+			trackingSystem = RSConstants.TRACKING_SYSTEM.VIGNETTE
+		end
+		if (preFoundAlerts[entityID]) then
+			--RSLogger:PrintDebugMessage(string.format("prefound existente para [%s] con sistema [%s] y nuevamente con sistema [%s] .", entityID, preFoundAlerts[entityID].trackingSystem, trackingSystem))
+			if (preFoundAlerts[entityID].trackingSystem ~= trackingSystem) then
+				RSLogger:PrintDebugMessageEntityID(entityID, string.format("Ignorada alerta de [%s] por haberse detectado con otro sistema en menos de 5 segundos.", entityID))
+				return
+			end
+		else
+			preFoundAlerts[entityID] = { trackingSystem = trackingSystem, expireTime = time() + RSConstants.PREFOUND_TIMER }
+		end
+	end
+	
+	-- Apply filters
 	local mapID = RSGeneralDB.GetBestMapForUnit(entityID, vignetteInfo.atlasName)
 	local isInstance, _ = IsInInstance()
 	
 	-- Check if we have already found this vignette in a short period of time
-	if (RSNotificationTracker.IsAlreadyNotificated(vignetteInfo.id, isNavigating, entityID)) then
+	if (RSNotificationTracker.IsAlreadyNotificated(vignetteInfo.id, isNavigating, entityID, vignetteInfo.trackingSystem)) then
 		--RSLogger:PrintDebugMessage(string.format("La entidad [%s] se ignora porque se ha avisado de esta hace menos de %s minutos", entityID, RSConfigDB.GetRescanTimer()))
 		return
 	-- disable scanning for every entity that is not treasure, event or rare
@@ -385,6 +405,15 @@ function RSButtonHandler.AddAlert(button, vignetteInfo, isNavigating)
 		if (not BUTTON_TIMER or BUTTON_TIMER:IsCancelled()) then
 			BUTTON_TIMER = C_Timer.NewTimer(RSConstants.BUTTON_TIMER, function()
 				ShowAlerts(button)
+			end)
+		end
+		if (not PREFOUND_TIMER) then
+			PREFOUND_TIMER = C_Timer.NewTicker(RSConstants.PREFOUND_TIMER, function()
+				for entityID, info in pairs(preFoundAlerts) do
+					if (info.expireTime < time()) then
+						preFoundAlerts[entityID] = nil
+					end
+				end
 			end)
 		end
 	end

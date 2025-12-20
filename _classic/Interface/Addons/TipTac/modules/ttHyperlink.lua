@@ -65,6 +65,7 @@ end
 -- config settings need to be applied
 local eventsForChatFrameHooked = false;
 local eventsForCommunitiesChatFrameHooked = false;
+local eventsForWIMCallModuleFunctionHooked = false;
 
 local function hookChatFrameFn(chatFrame)
 	chatFrame:HookScript("OnHyperlinkEnter", function(...)
@@ -78,6 +79,8 @@ end
 
 function ttHyperlink:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig)
 	-- hook chat frames for hovering over hyperlinks
+	
+	--  default chat frame
 	if (not eventsForChatFrameHooked) then
 		for i = 1, NUM_CHAT_WINDOWS do
 			local chatFrame = _G["ChatFrame" .. i];
@@ -88,14 +91,32 @@ function ttHyperlink:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig)
 		eventsForChatFrameHooked = true;
 	end
 	
-	if (not eventsForCommunitiesChatFrameHooked) then
-		if (LibFroznFunctions:IsAddOnFinishedLoading("Blizzard_Communities")) then
-			local chatFrame = CommunitiesFrame.Chat.MessageFrame;
+	-- guild & communities chat frame
+	if (not eventsForCommunitiesChatFrameHooked) and (LibFroznFunctions:IsAddOnFinishedLoading("Blizzard_Communities")) then
+		local chatFrame = CommunitiesFrame.Chat.MessageFrame;
+		
+		hookChatFrameFn(chatFrame);
+		
+		eventsForCommunitiesChatFrameHooked = true;
+	end
+	
+	-- addon "WIM" chat frames
+	if (not eventsForWIMCallModuleFunctionHooked) and (LibFroznFunctions:IsAddOnFinishedLoading("WIM")) then
+		local winsForWIMhooked = {};
+		
+		hooksecurefunc(WIM, "CallModuleFunction", function(funcName, win)
+			if (funcName ~= "OnWindowShow") or (winsForWIMhooked[win]) then
+				return;
+			end
+			
+			local chatFrame = win.widgets.chat_display;
 			
 			hookChatFrameFn(chatFrame);
 			
-			eventsForCommunitiesChatFrameHooked = true;
-		end
+			winsForWIMhooked[win] = true;
+		end);
+		
+		eventsForWIMCallModuleFunctionHooked = true;
 	end
 end
 
@@ -157,6 +178,12 @@ end
 
 -- show tip for hyperlink type "battlepet"
 function ttHyperlink:ShowTipForTypeBattlepet(chatFrame, refString, text)
+	-- BattlePetToolTip_ShowLink doesn't exist, e.g. in catac 4.4.1.
+	if (not BattlePetToolTip_ShowLink) then
+		return;
+	end
+	
+	-- show tip for hyperlink type "battlepet"
 	showingTooltip = BattlePetTooltip;
 	
 	BattlePetToolTip_ShowLink(text);
@@ -375,8 +402,8 @@ function ttHyperlink:ShowTipForTypeTransmogset(chatFrame, refString, text)
 	if (waitingOnQuality) then
 		GameTooltip:SetText(RETRIEVING_ITEM_INFO, RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b);
 	else
-		local setQuality = (numTotalSlots > 0 and totalQuality > 0) and Round(totalQuality / numTotalSlots) or Enum.ItemQuality.Common;
-		local color = ITEM_QUALITY_COLORS[setQuality];
+		local setQuality = (numTotalSlots > 0 and totalQuality > 0) and Round(totalQuality / numTotalSlots) or LFF_ITEM_QUALITY.Common;
+		local color = LibFroznFunctions:GetItemQualityColor(setQuality);
 		local setInfo = C_TransmogSets.GetSetInfo(setID);
 		
 		GameTooltip:SetText(setInfo.name, color.r, color.g, color.b);

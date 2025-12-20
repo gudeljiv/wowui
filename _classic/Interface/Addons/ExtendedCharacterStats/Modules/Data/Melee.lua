@@ -2,6 +2,8 @@
 local Data = ECSLoader:ImportModule("Data")
 ---@type DataUtils
 local DataUtils = ECSLoader:ImportModule("DataUtils")
+---@type Utils
+local Utils = ECSLoader:ImportModule("Utils")
 
 local _Melee = {}
 local _, _, classId = UnitClass("player")
@@ -44,7 +46,8 @@ function _Melee:GetHitRatingBonus()
     if CR_HIT_MELEE then
         return GetCombatRatingBonus(CR_HIT_MELEE) + _Melee:GetHitTalentBonus() + _Melee:GetHitFromBuffs()
     end
-    return GetHitModifier()
+    -- GetHitModifier returns nil on dungeon entering/teleport
+    return (GetHitModifier() or 0) + _Melee.GetHitFromRunes()
 end
 
 function _Melee:GetHitTalentBonus()
@@ -114,6 +117,23 @@ function _Melee:GetHitFromBuffs()
     return mod
 end
 
+function _Melee.GetHitFromRunes()
+    local mod = 0
+
+    if (not ECS.IsSoD) then
+        return mod
+    end
+
+    local finger1Rune = DataUtils.GetRuneForEquipSlot(Utils.CHAR_EQUIP_SLOTS.Finger1)
+    local finger2Rune = DataUtils.GetRuneForEquipSlot(Utils.CHAR_EQUIP_SLOTS.Finger2)
+
+    if classId == Data.DRUID and (finger1Rune == 7520 or finger2Rune == 7520) and DataUtils:IsShapeshifted() then
+        mod = mod + 3 -- 3% from Feral Combat Specialization Rune
+    end
+
+    return mod
+end
+
 ---@return string
 function Data:MeleeHitMissChanceSameLevel()
     local mainBase, mainMod, _, _ = UnitAttackBothHands("player")
@@ -124,7 +144,7 @@ function Data:MeleeHitMissChanceSameLevel()
     if DataUtils:IsShapeshifted() then
         missChance = 5
     else
-        missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
+        missChance = DataUtils.GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
 
     if Data:GetMeleeAttackSpeedOffHand() > 0 then
@@ -132,9 +152,7 @@ function Data:MeleeHitMissChanceSameLevel()
     end
 
     local hitValue = _Melee:GetHitRatingBonus()
-    if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
-        missChance = missChance - hitValue
-    end
+    missChance = missChance - hitValue
 
     if missChance < 0 then
         missChance = 0
@@ -155,7 +173,7 @@ function Data:MeleeHitMissChanceBossLevel()
     if DataUtils:IsShapeshifted() then
         missChance = ECS.IsWotlk and 8 or 9
     else
-        missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
+        missChance = DataUtils.GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
 
     if Data:GetMeleeAttackSpeedOffHand() > 0 then
@@ -163,9 +181,7 @@ function Data:MeleeHitMissChanceBossLevel()
     end
 
     local hitValue = _Melee:GetHitRatingBonus()
-    if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
-        missChance = missChance - hitValue
-    end
+    missChance = missChance - hitValue
 
     if missChance < 0 then
         missChance = 0

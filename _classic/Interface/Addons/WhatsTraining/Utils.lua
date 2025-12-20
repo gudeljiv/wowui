@@ -51,3 +51,38 @@ end
 function wt:IsPetAbility(spellId)
     return self.PetAbilityIds ~= nil and self.PetAbilityIds[spellId]
 end
+function wt:IsPetAbilityLearned(key)
+    return self.learnedPetAbilityMap[key] == true
+end
+-- returns a bool indicating if the value changed
+function wt:SetPetAbilityStatus(key, learned)
+    local prior = self.learnedPetAbilityMap[key]
+    self.learnedPetAbilityMap[key] = learned
+    return prior ~= learned
+end
+
+function wt.formatSpellCost(spellInfo, fontHeight)
+    local coloredCoinString = spellInfo.formattedCost or
+                                    GetCoinTextureString(spellInfo.cost, fontHeight)
+    if spellInfo.costColor then
+        coloredCoinString = spellInfo.costColor .. coloredCoinString .. FONT_COLOR_CODE_CLOSE
+    elseif (GetMoney() < spellInfo.cost) then
+        coloredCoinString = RED_FONT_COLOR_CODE .. coloredCoinString .. FONT_COLOR_CODE_CLOSE
+    end
+    local formatString = spellInfo.isHeader and
+        (spellInfo.costFormat or wt.L.TOTALCOST_FORMAT) or
+        (spellInfo.costFormat or wt.L.COST_FORMAT)
+
+    return HIGHLIGHT_FONT_COLOR_CODE .. format(formatString, coloredCoinString) .. FONT_COLOR_CODE_CLOSE
+end
+
+local BEAST_TRAINING_SPELL = 5149
+function wt.needsBeastTraining()
+    return WT_NeedsToOpenBeastTraining == true and wt.hasBeastTraining()
+end
+function wt.hasBeastTraining()
+    return IsPlayerSpell(BEAST_TRAINING_SPELL)
+end
+function wt.openBeastTraining()
+    CastSpellByID(BEAST_TRAINING_SPELL)
+end

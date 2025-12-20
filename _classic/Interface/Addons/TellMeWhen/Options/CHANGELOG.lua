@@ -3,6 +3,88 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="10.0.0"
 
 TMW.CHANGELOG = [==[
+## v11.2.8
+* Fix #2310 spec checking broken below level 10 on Classic Era.
+
+## v11.2.7
+* Fix #2309 Additional assorted talent/spec errors on Classic Era.
+
+## v11.2.6
+* Fix #2307 C_SpecializationInfo.GetTalent: query.specializationIndex must be specified.
+
+## v11.2.5
+* New condition: Armor Repair Level - Checks the lowest durability percentage of any equipped gear.
+* Meta Icons and Icon Shown conditions now use pure event-driven updates. This is made possible by dynamic, dependency-aware ordering of icon update checks. If you have circular dependencies between icons, you may find that some updates may be delayed by at least one update interval. 
+* While Condition Set Passing and On Condition Set Passing triggers for notifications no longer evaluate while their icon's group is not shown/active. This now matches the behavior of all other notification triggers.
+* Unit Conditions no longer evaluate while the icon that requested them is not shown/active.
+
+## v11.2.4
+* Fix Spells.lua:27: attempt to index field "SpellBookSpellBank" (a nil value)
+
+## v11.2.3
+* Fix missing Spell Activation Overlay condition in MoP.
+
+## v11.2.2
+* Add detection and warning of malfunctioning code in MetaTracker addon that breaks TMW.
+* #2297: Shapeshift condition can now check by spellID.
+* #2294: Add Delves to instance type condition
+* Fix: #2298 Missing entry for 'DR-KidneyShot'
+* Fix: #2293 Rune icon type config not loading in MoP
+
+
+## v11.2.1
+* Fix missing font in WoW 11.2
+
+## v11.2.0
+* Version Bump for WoW 11.2
+
+## v11.1.9
+* Fix: #2286 - Incorrect DR categories for MoP Classic
+* Fix: #2285 - Perform extra spell cost calculations for monks to workaround bad data from Blizzard APIs while rolling.
+
+## v11.1.8
+* Fix: #2284 "Single-Button Assistant" cooldown tracking only worked after performing a `/reload`.
+* Improve "Single-Button Assistant" to include abilities not on the action bar.
+* New condition: Spell is Assistant Button action
+
+## v11.1.5
+* Added support for tracking "Single-Button Assistant" (1229376) as a cooldown. Note that all suggestible abilities should be on your action bars for proper functioning.
+* Add missing localizations for some MoP spell equivalency groups
+
+## v11.1.4
+* Fix: #2276, #2277 broken Rune Cooldown configuration for Cata Classic
+
+## v11.1.3
+* Basic support for MoP Classic.
+* New Condition: Spell is Assistant Suggestion (integration with 11.1.7 Combat Assist feature)
+* Fix: #2274 Unit Class condition missing/incorrect classes in Classic/SoD.
+* Fix: #2275 Activation Border animation not working in WoW 11.1.7
+* Fix: The missing duration warning was sometimes showing at the wrong time.
+
+## v11.1.2
+* TOC bump for WoW 11.1.5
+* Fix #2269 - [string "*Help.xml:44_OnLoad"]:10: attempt to index field 'arrow' (a nil value)
+
+## v11.1.1
+* Added support to new WoW 11.1.5 spell range events
+* Fix: Adjust some parameters to better handle the 7 digit spellIDs that Blizzard started adding in 11.0.7
+* Fix: #2266 Occasional incorrect cooldown duration for haste-affected cooldowns, especially those that have or can have charges, due to Blizzard not firing events.
+
+## v11.1.0
+* Fixes for WoW 11.1
+* Fix: #2258 - Error when changing icon sorting within a group
+* Fix: #2256 - Some currency conditions missing on characters that have never encountered a particular currency.
+* Fix: #2253 - Listen to better events to pick up all weapon enchant changes
+
+## v11.0.13
+* Fix: #2250 - Currency checking error in Cata clasic
+
+## v11.0.12
+* Fix: #2248 - Error on characters with no talents learned.
+
+## v11.0.11
+* Fix: #2239 - Talent API issues on era and classic.
+
 ## v11.0.10
 * Fix: #2228 - Cooldown bling appearing on groups with 0% opacity.
 * Fix: #2230 - Raised max value of Maelstrom condition.

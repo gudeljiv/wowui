@@ -1,4 +1,7 @@
 
+--this code has been deprecated and won't receive updates anymore.
+--the mythic+ focus has been shifted to the MythicPlusBreakdown addon, which is a standalone addon.
+
 local Details = _G.Details
 local debugmode = false --print debug lines
 local verbosemode = false --auto open the chart panel
@@ -77,103 +80,6 @@ end
 --debug
 _G.MythicDungeonFrames = mythicDungeonFrames
 --/run _G.MythicDungeonFrames.ShowEndOfMythicPlusPanel()
-
----@class animatedtexture : texture, df_frameshake
----@field CreateRandomBounceSettings function
----@field BounceFrameShake df_frameshake
-
----@class playerbanner : frame
----@field index number
----@field BackgroundBannerMaskTexture texture
----@field BackgroundBannerGradient texture
----@field FadeInAnimation animationgroup
----@field BackgroundShowAnim animationgroup
----@field DungeonBackdropShowAnim animationgroup
----@field BackgroundGradientAnim animationgroup
----@field BackgroundBannerFlashTextureColorAnimation animationgroup
----@field BounceFrameShake df_frameshake
----@field NextLootSquare number
----@field LootSquares details_lootsquare[]
----@field LevelUpFrame frame
----@field LevelUpTextFrame frame
----@field WaitingForLootLabel df_label
----@field RantingLabel df_label
----@field LevelFontString fontstring
----@field KeyStoneDungeonTexture texture
----@field DungeonBorderTexture texture
----@field FlashTexture texture
----@field LootSquare frame
----@field LootIcon texture
----@field LootIconBorder texture
----@field LootItemLevel fontstring
----@field unitId string
----@field unitName string
----@field PlayerNameFontString fontstring
----@field PlayerNameBackgroundTexture texture
----@field DungeonBackdropTexture texture
----@field BackgroundBannerTexture animatedtexture
----@field BackgroundBannerFlashTexture animatedtexture
----@field RoleIcon texture
----@field Portrait texture
----@field Border texture
----@field Name fontstring
----@field AnimIn animationgroup
----@field AnimOut animationgroup
----@field StartTextDotAnimation fun(self:playerbanner)
----@field StopTextDotAnimation fun(self:playerbanner)
----@field ClearLootSquares fun(self:playerbanner)
----@field GetLootSquare fun(self:playerbanner):details_lootsquare
-
----@class details_lootsquare : frame
----@field LootIcon texture
----@field LootIconBorder texture
----@field LootItemLevel fontstring
----@field LootItemLevelBackgroundTexture texture
----@field itemLink string
----@field ShadowTexture texture
-
----@class details_loot_cache : table
----@field playerName string
----@field itemLink string
----@field effectiveILvl number
----@field itemQuality number
----@field itemID number
----@field time number
-
----@class lootframe : frame
----@field LootCache details_loot_cache[]
-
----@class details_mplus_endframe : frame
----@field unitCacheByName playerbanner[]
----@field entryAnimationDuration number
----@field AutoCloseTimeBar df_timebar
----@field OpeningAnimation animationgroup
----@field HeaderFadeInAnimation animationgroup
----@field HeaderTexture texture
----@field TopFrame frame
----@field ContentFrame frame
----@field ContentFrameFadeInAnimation animationgroup
----@field YellowSpikeCircle texture
----@field YellowFlash texture
----@field Level fontstring
----@field leftFiligree texture
----@field rightFiligree texture
----@field bottomFiligree texture
----@field CloseButton df_closebutton
----@field ConfigButton df_button
----@field ShowBreakdownButton df_button
----@field ShowChartButton df_button
----@field PlayerBanners playerbanner[]
----@field YouBeatTheTimerLabel fontstring
----@field RantingLabel df_label
----@field ElapsedTimeIcon texture
----@field ElapsedTimeText fontstring
----@field OutOfCombatIcon texture
----@field OutOfCombatText fontstring
----@field SandTimeIcon texture
----@field KeylevelText fontstring
----@field StrongArmIcon texture
-
 
 --frame to handle loot events
 local lootFrame = CreateFrame("frame", "DetailsEndOfMythicLootFrame", UIParent)
@@ -399,7 +305,7 @@ local createLootSquare = function(playerBanner, name, parent, lootIndex)
 	return lootSquare
 end
 
-local createPlayerBanner = function(parent, name, index)
+function Details:CreatePlayerPortrait(parent, name)
 	if (not C_AddOns.IsAddOnLoaded("Blizzard_ChallengesUI")) then
 		C_AddOns.LoadAddOn("Blizzard_ChallengesUI")
 	end
@@ -407,12 +313,19 @@ local createPlayerBanner = function(parent, name, index)
 	--this template is from Blizzard_ChallengesUI.xml
     local template = "ChallengeModeBannerPartyMemberTemplate"
 
-	---@type playerbanner
-    local playerBanner = CreateFrame("frame", name, parent, template)
-	playerBanner.index = index
+	local playerBanner = CreateFrame("frame", name, parent, template)
+
 	playerBanner:SetAlpha(1)
 	playerBanner:EnableMouse(true)
 	playerBanner:SetFrameLevel(parent:GetFrameLevel()+2)
+
+	return playerBanner
+end
+
+local createPlayerBanner = function(parent, name, index)
+	---@type playerbanner
+    local playerBanner = Details:CreatePlayerPortrait(parent, name)
+	playerBanner.index = index
 	--size is set on the template
 
 	--make an fade in animation
@@ -1110,6 +1023,93 @@ function mythicDungeonFrames.ShowEndOfMythicPlusPanel()
 		backgroundGradient:SetPoint("bottomright", readyFrame, "bottomright", 0, 0)
 		backgroundGradient:SetWidth(readyFrame:GetWidth())
 
+		--this is a frame that will be placed above the readyFrame with a full opaque background.
+		--the goal of the frame is to tell the player to download the details! mythic plus addon.
+		--the frame will also have a button to disable the message by setting 'Details.mythic_plus.show_damage_graphic' to false
+		local downloadFrame = CreateFrame("frame", "$DownloadFrame", readyFrame)
+		downloadFrame:SetSize(readyFrame:GetWidth(), readyFrame:GetHeight())
+		downloadFrame:SetPoint("topleft", readyFrame, "topleft", 0, 0)
+		downloadFrame:SetPoint("bottomright", readyFrame, "bottomright", 0, 0)
+		downloadFrame:SetFrameStrata("FULLSCREEN_DIALOG")
+
+		local backgroundTexture = downloadFrame:CreateTexture("$parentBackgroundTexture", "background", nil, 0)
+		backgroundTexture:SetColorTexture(0.2, 0.2, 0.2, 1)
+		backgroundTexture:SetAllPoints()
+		downloadFrame.BackgroundTexture = backgroundTexture
+
+		local downloadText = downloadFrame:CreateFontString("$parentDownloadText", "overlay", "GameFontNormal")
+		downloadText:SetSize(readyFrame:GetWidth() - 20, 200)
+		downloadText:SetTextColor(unpack(textColor))
+		detailsFramework:SetFontSize(downloadText, 16)
+		downloadText:SetText("YOUR M+ PANEL LEVELED UP!\n\nDownload\n|cFFFFFFFFDetails! Damage Meter Mythic+|r\n addon to see a complete overview of your runs!")
+		downloadText:SetPoint("center", downloadFrame, "center", 0, 135)
+		downloadFrame.DownloadText = downloadText
+
+--/run _G.MythicDungeonFrames.ShowEndOfMythicPlusPanel()
+
+		local downloadButton = detailsFramework:CreateButton(downloadFrame, function()
+			readyFrame:Hide()
+			Details.mythic_plus.show_damage_graphic = false
+			Details:CopyPaste("Details! Damage Meter Mythic+")
+		end, readyFrame:GetWidth()-20, 40, "Click to copy addon name and don't show this again.")
+		downloadButton:SetPoint("center", downloadFrame, "center", 0, -142)
+		DetailsFramework:AddRoundedCornersToFrame(downloadButton.widget, Details.PlayerBreakdown.RoundedCornerPreset)
+		downloadButton.textsize = 12
+		downloadFrame.DownloadButton = downloadButton
+
+		local previewImage = downloadFrame:CreateTexture("$parentPreviewImage", "overlay")
+		previewImage:SetTexture([[Interface\AddOns\Details\images\mythicp_plugin_panel.png]], nil, nil, "TRILINEAR")
+		previewImage:SetSize(readyFrame:GetWidth() - 20, 160)
+		previewImage:SetPoint("bottomright", downloadButton.widget, "topright", 0, 36)
+
+		local clickToEnlargeText = downloadFrame:CreateFontString("$parentClickToEnlargeText", "overlay", "GameFontNormal")
+		clickToEnlargeText:SetTextColor(1, 1, 1)
+		detailsFramework:SetFontSize(clickToEnlargeText, 11)
+		clickToEnlargeText:SetText("Click to enlarge the preview image")
+		clickToEnlargeText:SetPoint("top", previewImage, "bottom", 0, -5)
+		downloadFrame.ClickToEnlargeText = clickToEnlargeText
+
+		local isExpanded = false
+		local expandPreviewTextureButton = detailsFramework:CreateButton(downloadFrame, function()
+			--expand the preview image to show the full size
+			if (not isExpanded) then
+				previewImage:SetSize(1506, 672)
+				isExpanded = true
+			else
+				previewImage:SetSize(readyFrame:GetWidth() - 20, 160)
+				isExpanded = false
+			end
+		end, readyFrame:GetWidth()-20, 40, "")
+		expandPreviewTextureButton:SetAllPoints(previewImage)
+
+		local deprecatedText = downloadFrame:CreateFontString("$parentDeprecatedText", "overlay", "GameFontNormal")
+		deprecatedText:SetTextColor(1, 0.7, 0.7, 1)
+		detailsFramework:SetFontSize(deprecatedText, 11)
+		deprecatedText:SetText("this panel will be removed on 11.2")
+		deprecatedText:SetPoint("bottom", downloadFrame, "bottom", 0, 7)
+
+		local whyFrame = CreateFrame("frame", nil, downloadFrame)
+		whyFrame:SetSize(80, 30)
+		whyFrame:SetPoint("bottomright", downloadFrame, "bottomright", -2, -2)
+		whyFrame:SetScript("OnEnter", function()
+			GameCooltip:Preset(2)
+			GameCooltip:SetOwner(whyFrame, "bottom", "top", 0, 5)
+			GameCooltip:AddLine("We made the decision to expand the features of this panel and for that to happen we need more developers.")
+			GameCooltip:AddLine("Having to learn how the old code of this panel works and make implementations on it would be madness.")
+			GameCooltip:AddLine("Because of that, we decided to rewrite the entire thing and build from the ground up.")
+			GameCooltip:AddLine("This panel won't receive more updates which means it'll break when 11.2 patch is released.")
+			GameCooltip:Show()
+		end)
+		whyFrame:SetScript("OnLeave", function()
+			GameCooltip:Hide()
+		end)
+
+		local whyText = whyFrame:CreateFontString(nil, "overlay", "GameFontNormal")
+		whyText:SetTextColor(1, 1, 1)
+		detailsFramework:SetFontSize(whyText, 11)
+		whyText:SetText("why?")
+		whyText:SetPoint("center", whyFrame, "center", 0, 0)
+
 		---@type playerbanner[]
 		readyFrame.unitCacheByName = {}
 
@@ -1404,6 +1404,8 @@ function mythicDungeonFrames.ShowEndOfMythicPlusPanel()
 	local readyFrame = mythicDungeonFrames.ReadyFrame
 	readyFrame:Show()
 
+	do return end
+
 	readyFrame.TopFrame:Show()
 	--readyFrame.YellowSpikeCircle.OnShowAnimation:Play()
 
@@ -1526,26 +1528,5 @@ function mythicDungeonFrames.ShowEndOfMythicPlusPanel()
 end
 
 Details222.MythicPlus.IsMythicPlus = function()
-	return C_ChallengeMode and C_ChallengeMode.GetActiveKeystoneInfo() and true or false
+	return C_ChallengeMode and C_ChallengeMode.GetActiveKeystoneInfo and C_ChallengeMode.GetActiveKeystoneInfo() and true or false
 end
-
-
-		--[=[
-		Details222.MythicPlus.MapID = mapID
-		Details222.MythicPlus.Level = level --level of the key just finished
-		Details222.MythicPlus.OnTime = onTime
-		Details222.MythicPlus.KeystoneUpgradeLevels = keystoneUpgradeLevels
-		Details222.MythicPlus.PracticeRun = practiceRun
-		Details222.MythicPlus.OldDungeonScore = oldDungeonScore
-		Details222.MythicPlus.NewDungeonScore = newDungeonScore
-		Details222.MythicPlus.IsAffixRecord = isAffixRecord
-		Details222.MythicPlus.IsMapRecord = isMapRecord
-		Details222.MythicPlus.PrimaryAffix = primaryAffix
-		Details222.MythicPlus.IsEligibleForScore = isEligibleForScore
-		Details222.MythicPlus.UpgradeMembers = upgradeMembers
-		Details222.MythicPlus.DungeonName = dungeonName
-		Details222.MythicPlus.DungeonID = id
-		Details222.MythicPlus.TimeLimit = timeLimit
-		Details222.MythicPlus.Texture = texture
-		Details222.MythicPlus.BackgroundTexture = backgroundTexture
-		--]=]

@@ -16,6 +16,7 @@ local private = {
 	postHookFuncs = {},
 	itemPostedCallbacks = {},
 	purchaseHookFuncs = {},
+	getAllHookFuncs = {},
 	lastPurchase = {
 		link = nil,
 		name = nil,
@@ -175,8 +176,8 @@ function AuctionHouse.GetOwnedInfo(index)
 			duration = time() + duration
 		end
 	elseif saleStatus == 1 then
-		if not currentBid and LibTSMWoW.IsRetail() then
-			-- Sometimes wow doesn't tell us the current bid on sold auctions on retail
+		if not currentBid and not LibTSMWoW.IsVanillaClassic() then
+			-- Sometimes wow doesn't tell us the current bid on sold auctions
 			currentBid = 0
 		end
 		duration = time() + duration
@@ -215,6 +216,30 @@ end
 ---@param func fun(itemLink: string?, quantity: number?, price: number?) The function to call
 function AuctionHouse.SecureHookPurchase(func)
 	tinsert(private.purchaseHookFuncs, func)
+end
+
+---Register a secure hook function for when a GetAll scan is started
+---@param func fun() The function to call
+function AuctionHouse.SecureHookGetAllScan(func)
+	if #private.getAllHookFuncs == 0 then
+		if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
+			hooksecurefunc(C_AuctionHouse, "ReplicateItems", private.GetAllScanHook)
+		else
+			hooksecurefunc("QueryAuctionItems", function(_, _, _, _, _, _, isGetAll)
+				if not isGetAll then
+					return
+				end
+				private.GetAllScanHook()
+			end)
+		end
+	end
+	tinsert(private.getAllHookFuncs, func)
+end
+
+---Starts a GetAll scan.
+function AuctionHouse.StartGetAllScan()
+	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
+	C_AuctionHouse.ReplicateItems()
 end
 
 ---Gets info on the last purchase made.
@@ -297,6 +322,17 @@ function AuctionHouse.GetNumAuctions()
 	return numAuctions
 end
 
+---Gets the number of auctions for a GetAll scan.
+---@return number
+function AuctionHouse.GetNumGetAllAuctions()
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
+		return C_AuctionHouse.GetNumReplicateItems()
+	else
+		local numAuctions = GetNumAuctionItems("list")
+		return numAuctions
+	end
+end
+
 ---Gets the number of pages of browse results.
 ---@return number
 function AuctionHouse.GetNumPages()
@@ -339,6 +375,23 @@ function AuctionHouse.GetBrowseResult(index)
 		seller = sellerFull
 	end
 	return rawName, itemLink, stackSize, timeLeft, buyout, seller, minIncrement, minBid, bid, isHighBidder
+end
+
+---Gets a limited subset of browse query result data appropriate for a GetAll scan.
+---@param index number The result index
+---@return string? itemLink
+---@return number? stackSize
+---@return number? buyout
+function AuctionHouse.GetGetAllResult(index)
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
+		local itemLink = C_AuctionHouse.GetReplicateItemLink(index - 1)
+		local _, _, stackSize, _, _, _, _, _, _, buyout = C_AuctionHouse.GetReplicateItemInfo(index - 1)
+		return itemLink, stackSize, buyout
+	else
+		local itemLink = GetAuctionItemLink("list", index)
+		local _, _, stackSize, _, _, _, _, _, _, buyout = GetAuctionItemInfo("list", index)
+		return itemLink, stackSize, buyout
+	end
 end
 
 ---Gets the search result info.
@@ -424,7 +477,7 @@ end
 function AuctionHouse.IsPurchaseMessage(msg, name, quantity)
 	if msg == AuctionHouse.GetPurchaseMessage(name) then
 		return true
-	elseif quantity and ClientInfo.IsRetail() and msg == format(ERR_AUCTION_COMMODITY_WON_S, name, quantity) then
+	elseif quantity and not LibTSMWoW.IsVanillaClassic() and msg == format(ERR_AUCTION_COMMODITY_WON_S, name, quantity) then
 		return true
 	end
 	return false
@@ -551,5 +604,11 @@ end
 function private.HandleCommodityNotification(_, _, quantity)
 	for _, callback in ipairs(private.notificationCallbacks) do
 		callback(NOTIFICATION.BUY, quantity)
+	end
+end
+
+function private.GetAllScanHook()
+	for _, func in ipairs(private.getAllHookFuncs) do
+		func()
 	end
 end

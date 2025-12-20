@@ -703,6 +703,19 @@ unitNameTitles[#unitNameTitles+1] = unitNameTitles[1]:gsub(PET_TYPE_PET, PET_TYP
 						end
 					end
 
+					if (Details.zone_type == "party" and actorObject.tipo == DETAILS_ATTRIBUTE_DAMAGE) then
+						local role = UnitGroupRolesAssigned and UnitGroupRolesAssigned(actorName) or "DAMAGER"
+						if (role == "NONE") then
+							role = "DAMAGER"
+						end
+						actorObject.role = role
+
+						if (C_PlayerInfo and C_PlayerInfo.GetPlayerMythicPlusRatingSummary) then
+							local dungeonPlayerInfo = C_PlayerInfo.GetPlayerMythicPlusRatingSummary(actorName) or {}
+							actorObject.mrating = dungeonPlayerInfo.currentSeasonScore or 0
+						end
+					end
+
 					if (zoneType == "arena") then
 						--local my_team_color = GetBattlefieldArenaFaction and GetBattlefieldArenaFaction() or 0
 
@@ -894,7 +907,7 @@ unitNameTitles[#unitNameTitles+1] = unitNameTitles[1]:gsub(PET_TYPE_PET, PET_TYP
 			end
 
 		--this actor isn't in the pet cache
-		elseif (not petBlackList[actorSerial]) then --check if is a pet
+		elseif ( (issecretvalue and not issecretvalue(actorSerial)) and not petBlackList[actorSerial]) then --check if is a pet
 			--try to find the owner
 			if (actorFlags and bitBand(actorFlags, OBJECT_TYPE_PETGUARDIAN) ~= 0) then
 				--hashName is "petName <ownerName>"
@@ -1035,6 +1048,10 @@ unitNameTitles[#unitNameTitles+1] = unitNameTitles[1]:gsub(PET_TYPE_PET, PET_TYP
 		--only happens with npcs from immersion feature
 		if (forceClass) then
 			newActor.classe = forceClass
+		end
+
+		if (Details.is_in_arena) then
+			Details:ArenaPlayerCreated(newActor)
 		end
 
 		return newActor, petOwnerObject, actorName

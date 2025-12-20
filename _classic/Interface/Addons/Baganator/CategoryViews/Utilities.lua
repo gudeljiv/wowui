@@ -1,4 +1,5 @@
-local _, addonTable = ...
+---@class addonTableBaganator
+local addonTable = select(2, ...)
 addonTable.CategoryViews.Utilities = {}
 
 -- Gets a table describing an item to be used in custom category's list of added
@@ -33,16 +34,13 @@ function addonTable.CategoryViews.Utilities.GetBagTypes(characterData, section, 
   return result
 end
 
-function addonTable.CategoryViews.Utilities.GetItemsFromComposed(composed, index, source, groupLabel)
-  if not composed or not composed.details[index] or composed.details[index].type ~= "category" or composed.details[index].source ~= source or composed.details[index].groupLabel ~= groupLabel then
-    return {}
-  else
-    return tFilter(composed.details[index].results, function(a) return a.itemLink ~= nil end, true)
-  end
-end
-
 function addonTable.CategoryViews.Utilities.GetAddButtonsState()
   return addonTable.Config.Get(addonTable.Config.Options.ADD_TO_CATEGORY_BUTTONS) == "drag" or (
     addonTable.Config.Get(addonTable.Config.Options.ADD_TO_CATEGORY_BUTTONS) == "drag+alt" and IsAltKeyDown()
   )
+end
+
+function addonTable.CategoryViews.Utilities.GetMinWidth(rowWidth)
+  local iconPadding, iconSize = addonTable.ItemButtonUtil.GetPaddingAndSize()
+  return math.min(350, rowWidth * (iconSize + iconPadding) - iconPadding)
 end

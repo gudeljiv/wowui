@@ -88,7 +88,7 @@ local properties = {
     setter = "SetCooldownEdge",
     type = "bool",
   },
-  cooldownText = {
+  cooldownTextDisabled = {
     display = { L["Cooldown"], L["Hide Timer Text"]},
     setter = "SetHideCountdownNumbers",
     type = "bool",
@@ -156,10 +156,15 @@ local function GetTexCoord(region, texWidth, aspectRatio, xOffset, yOffset)
   return unpack(region.currentCoord)
 end
 
-local function AnchorSubRegion(self, subRegion, anchorType, selfPoint, anchorPoint, anchorXOffset, anchorYOffset)
+local function AnchorSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+  if type(anchorPoint) == "string" and anchorPoint:sub(1, 4) == "sub." then
+    Private.regionPrototype.AnchorSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+    return
+  end
+
   if anchorType == "area" then
     Private.regionPrototype.AnchorSubRegion(selfPoint == "region" and self or self.icon,
-                    subRegion, anchorType, selfPoint, anchorPoint, anchorXOffset, anchorYOffset)
+                    subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
   else
     subRegion:ClearAllPoints()
     anchorPoint = anchorPoint or "CENTER"
@@ -429,13 +434,16 @@ local function modify(parent, region, data)
   region:SetInverse(data.inverse)
 
   function region:SetHideCountdownNumbers(cooldownTextDisabled)
-    cooldown:SetHideCountdownNumbers(cooldownTextDisabled);
     if OmniCC and OmniCC.Cooldown and OmniCC.Cooldown.SetNoCooldownCount then
+      cooldown:SetHideCountdownNumbers(true)
       OmniCC.Cooldown.SetNoCooldownCount(cooldown, cooldownTextDisabled)
     elseif ElvUI and ElvUI[1] and ElvUI[1].CooldownEnabled
            and ElvUI[1].ToggleCooldown and ElvUI[1]:CooldownEnabled()
     then
+      cooldown:SetHideCountdownNumbers(true)
       ElvUI[1]:ToggleCooldown(cooldown, not cooldownTextDisabled);
+    else
+      cooldown:SetHideCountdownNumbers(cooldownTextDisabled);
     end
   end
   region:SetHideCountdownNumbers(data.cooldownTextDisabled)

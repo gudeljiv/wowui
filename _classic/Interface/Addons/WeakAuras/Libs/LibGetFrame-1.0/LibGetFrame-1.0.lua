@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibGetFrame-1.0"
-local MINOR_VERSION = 62
+local MINOR_VERSION = 69
 if not LibStub then
   error(MAJOR_VERSION .. " requires LibStub.")
 end
@@ -40,6 +40,7 @@ local defaultFramePriorities = {
   "^LUFHeaderraid", -- luf
   "^AshToAshUnit%d+Unit%d+", -- AshToAsh
   "^Cell", -- Cell
+  "^XPerl_Raid_Grp", -- xperl
   -- party frames
   "^AleaUI_GroupHeader", -- Alea
   "^SUFHeaderparty", --suf
@@ -47,17 +48,26 @@ local defaultFramePriorities = {
   "^ElvUF_PartyGroup", -- elv
   "^oUF_.-Party", -- generic oUF
   "^PitBull4_Groups_Party", -- pitbull4
+  "^XPerl_party%d", -- xperl
   "^CompactRaid", -- blizz
   "^CompactParty", -- blizz
   "^PartyFrame",
+  -- boss frames
+  "^ElvUF_Boss%d$", -- elv
+  "^SUFHeaderbossUnitButton%d$", -- suf
+  "^LUFHeaderbossUnitButton%d$", -- luf
+  "^Boss%dTargetFrame$", -- blizz
+  "^UUF_Boss%d$", -- unhalted
   -- player frame
-  "^InvenUnitFrames_Player",
-  "^SUFUnitplayer",
-  "^LUFUnitplayer",
-  "^PitBull4_Frames_Player",
-  "^ElvUF_Player",
-  "^oUF_.-Player",
-  "^PlayerFrame",
+  "^InvenUnitFrames_Player$",
+  "^SUFUnitplayer$",
+  "^LUFUnitplayer$",
+  "^PitBull4_Frames_Player$",
+  "^ElvUF_Player$",
+  "^oUF_.-Player$",
+  "^XPerl_Player$",
+  "^UUF_Player$",
+  "^PlayerFrame$",
 }
 local getDefaultFramePriorities = function()
   return CopyTable(defaultFramePriorities)
@@ -65,42 +75,49 @@ end
 lib.getDefaultFramePriorities = getDefaultFramePriorities
 
 local defaultPlayerFrames = {
-  "^InvenUnitFrames_Player",
-  "SUFUnitplayer",
-  "LUFUnitplayer",
-  "PitBull4_Frames_Player",
-  "ElvUF_Player",
-  "oUF_.-Player",
-  "oUF_PlayerPlate",
-  "PlayerFrame",
+  "^InvenUnitFrames_Player$",
+  "^SUFUnitplayer$",
+  "^LUFUnitplayer$",
+  "^PitBull4_Frames_Player$",
+  "^ElvUF_Player$",
+  "^oUF_.-Player$",
+  "^oUF_PlayerPlate$",
+  "^XPerl_Player$",
+  "^UUF_Player$",
+  "^PlayerFrame$",
 }
 local getDefaultPlayerFrames = function()
   return CopyTable(defaultPlayerFrames)
 end
 lib.getDefaultPlayerFrames = getDefaultPlayerFrames
 local defaultTargetFrames = {
-  "^InvenUnitFrames_Target",
-  "SUFUnittarget",
-  "LUFUnittarget",
-  "PitBull4_Frames_Target",
-  "ElvUF_Target",
-  "oUF_.-Target",
-  "TargetFrame",
-  "^hbExtra_HealUnit",
+  "^InvenUnitFrames_Target$",
+  "^SUFUnittarget$",
+  "^LUFUnittarget$",
+  "^PitBull4_Frames_Target$",
+  "^ElvUF_Target$",
+  "^oUF_.-Target$",
+  "^TargetFrame$",
+  "^hbExtra_HealUnit$",
+  "^UUF_Target$",
+  "^XPerl_Target$"
 }
 local getDefaultTargetFrames = function()
   return CopyTable(defaultTargetFrames)
 end
 lib.getDefaultTargetFrames = getDefaultTargetFrames
 local defaultTargettargetFrames = {
-  "^InvenUnitFrames_TargetTarget",
-  "SUFUnittargetarget",
-  "LUFUnittargetarget",
-  "PitBull4_Frames_Target's target",
-  "ElvUF_TargetTarget",
-  "oUF_.-TargetTarget",
-  "oUF_ToT",
-  "TargetTargetFrame",
+  "^InvenUnitFrames_TargetTarget$",
+  "^SUFUnittargettarget$",
+  "^LUFUnittargettarget$",
+  "^PitBull4_Frames_Target's target$",
+  "^ElvUF_TargetTarget$",
+  "^oUF_.-TargetTarget$",
+  "^oUF_ToT$",
+  "^UUF_TargetTarget$",
+  "^TargetTargetFrame$",
+  "^XPerl_TargetTarget$",
+  "^TargetFrameToT$"
 }
 local getDefaultTargettargetFrames = function()
   return CopyTable(defaultTargettargetFrames)
@@ -114,6 +131,7 @@ local defaultPartyFrames = {
   "^ElvUF_PartyGroup",
   "^oUF_.-Party",
   "^PitBull4_Groups_Party",
+  "^XPerl_party%d",
   "^PartyFrame",
   "^CompactParty",
 }
@@ -123,17 +141,21 @@ end
 lib.getDefaultPartyFrames = getDefaultPartyFrames
 local defaultPartyTargetFrames = {
   "SUFChildpartytarget%d",
+  "XPerl_party%dtargetFrame"
 }
 local getDefaultPartyTargetFrames = function()
   return CopyTable(defaultPartyTargetFrames)
 end
 lib.getDefaultPartyTargetFrames = getDefaultPartyTargetFrames
 local defaultFocusFrames = {
-  "^InvenUnitFrames_Focus",
-  "ElvUF_FocusTarget",
-  "LUFUnitfocus",
-  "FocusFrame",
-  "^hbExtra_HealUnit",
+  "^InvenUnitFrames_Focus$",
+  "^ElvUF_FocusTarget$",
+  "^SUFUnitfocus$",
+  "^LUFUnitfocus$",
+  "^FocusFrame$",
+  "^hbExtra_HealUnit$",
+  "^UUF_Focus$",
+  "^XPerl_Focus$"
 }
 local getDefaultFocusFrames = function()
   return CopyTable(defaultFocusFrames)
@@ -154,12 +176,24 @@ local defaultRaidFrames = {
   "^LimeGroup",
   "^SUFHeaderraid",
   "^LUFHeaderraid",
+  "^XPerl_Raid_Grp",
   "^CompactRaid",
 }
 local getDefaultRaidFrames = function()
   return CopyTable(defaultRaidFrames)
 end
 lib.getDefaultRaidFrames = getDefaultRaidFrames
+local defaultBossFrames = {
+  "^ElvUF_Boss%d$",
+  "^SUFHeaderbossUnitButton%d$",
+  "^LUFHeaderbossUnitButton%d$",
+  "^UUF_Boss%d$",
+  "^Boss%dTargetFrame$",
+}
+local getDefaultBossFrames = function()
+  return CopyTable(defaultBossFrames)
+end
+lib.getDefaultBossFrames = getDefaultBossFrames
 
 --
 local CacheMonitorMixin = {}
@@ -492,6 +526,7 @@ local defaultOptions = {
   ignorePartyTargetFrame = true,
   ignoreFocusFrame = true,
   ignoreRaidFrame = false,
+  ignoreBossFrame = false,
   playerFrames = defaultPlayerFrames,
   targetFrames = defaultTargetFrames,
   targettargetFrames = defaultTargettargetFrames,
@@ -499,6 +534,7 @@ local defaultOptions = {
   partyTargetFrames = defaultPartyTargetFrames,
   focusFrames = defaultFocusFrames,
   raidFrames = defaultRaidFrames,
+  bossFrames = defaultBossFrames,
   ignoreFrames = {
     "PitBull4_Frames_Target's target's target",
     "ElvUF_PartyGroup%dUnitButton%dTarget",
@@ -580,7 +616,11 @@ function lib.GetUnitFrame(target, opt)
   if type(GetFramesCacheListener) ~= "table" then
     Init(true)
   end
-  opt = opt or {}
+  local defaultOpt
+  if not opt then
+    opt = {}
+    defaultOpt = true
+  end
   setmetatable(opt, { __index = defaultOptions })
 
   if not target then
@@ -593,12 +633,12 @@ function lib.GetUnitFrame(target, opt)
       tinsert(ignoredFrames, v)
     end
   end
-  if opt.ignoreTargetFrame then
+  if opt.ignoreTargetFrame and not (defaultOpt and target == "target") then
     for _, v in pairs(opt.targetFrames) do
       tinsert(ignoredFrames, v)
     end
   end
-  if opt.ignoreTargettargetFrame then
+  if opt.ignoreTargettargetFrame and not (defaultOpt and target == "targettarget") then
     for _, v in pairs(opt.targettargetFrames) do
       tinsert(ignoredFrames, v)
     end
@@ -613,13 +653,18 @@ function lib.GetUnitFrame(target, opt)
       tinsert(ignoredFrames, v)
     end
   end
-  if opt.ignoreFocusFrame then
+  if opt.ignoreFocusFrame and not (defaultOpt and target == "focus") then
     for _, v in pairs(opt.focusFrames) do
       tinsert(ignoredFrames, v)
     end
   end
   if opt.ignoreRaidFrame then
     for _, v in pairs(opt.raidFrames) do
+      tinsert(ignoredFrames, v)
+    end
+  end
+  if opt.ignoreBossFrame then
+    for _, v in pairs(opt.bossFrames) do
       tinsert(ignoredFrames, v)
     end
   end
@@ -665,9 +710,10 @@ function lib.GetUnitNameplate(unit)
     if nameplate.unitFrame and nameplate.unitFrame.Health then
       -- elvui
       return nameplate.unitFrame.Health
-    elseif nameplate.unitFramePlater and nameplate.unitFramePlater.healthBar then
+    elseif nameplate.unitFramePlater then
       -- plater
-      return nameplate.unitFramePlater.healthBar
+      -- use plater anchor frame (with fallback options).
+      return nameplate.PlaterAnchorFrame or nameplate.unitFramePlater.healthBar or (nameplate.UnitFrame and nameplate.UnitFrame.healthBar) or nameplate
     elseif nameplate.kui and nameplate.kui.HealthBar then
       -- kui
       return nameplate.kui.HealthBar

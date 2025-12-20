@@ -1,8 +1,6 @@
 # ChocolateBar
 
-## [v3.14](https://github.com/Kiatra/ChocolateBar/tree/v3.14) (2024-08-17)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v3/13...v3.14) 
+## [v4.2.2](https://github.com/Kiatra/ChocolateBar/tree/v4.2.2) (2025-11-20)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v1.4.1...v4.2.2) 
 
-- Merge pull request #38 from icbat/master  
-    Fixes reference to GetAddOnMetadata for 11.0.2  
-- Fixes reference to GetAddOnMetadata for 11.0.2  
+- add Midnight  

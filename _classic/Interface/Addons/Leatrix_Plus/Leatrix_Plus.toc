@@ -1,23 +1,35 @@
-## Interface: 11504
+## Interface: 11508, 20505
 
 ## Title: Leatrix Plus
 ## Title-zhCN: Leatrix Plus [|cffeda55f功能百宝箱|r]
 ## Title-zhTW: Leatrix Plus [|cffeda55f功能百寶箱|r]
 
-## Notes: Quality of life addon.
-## Notes-zhCN: 哆啦A梦的百宝袋
-## Notes-zhTW: 哆啦A夢的百寶袋
+## Notes: curseforge.com/wow/addons/leatrix-plus
+## Notes-deDE: curseforge.com/wow/addons/leatrix-plus
+## Notes-frFR: curseforge.com/wow/addons/leatrix-plus
+## Notes-esES: curseforge.com/wow/addons/leatrix-plus
+## Notes-esMX: curseforge.com/wow/addons/leatrix-plus
+## Notes-ptBR: curseforge.com/wow/addons/leatrix-plus
+## Notes-itIT: curseforge.com/wow/addons/leatrix-plus
+## Notes-ruRU: curseforge.com/wow/addons/leatrix-plus
+## Notes-koKR: curseforge.com/wow/addons/leatrix-plus
+## Notes-zhTW: curseforge.com/wow/addons/leatrix-plus
+## Notes-zhCN: curseforge.com/wow/addons/leatrix-plus
 
-## Version: 1.15.55
+## Version: 1.15.114
 ## Author: Leatrix
 ## SavedVariables: LeaPlusDB
+## LoadSavedVariablesFirst: true
 
-## OptionalDeps: Leatrix_enUS, ElvUI, Glass, CharacterStatsClassic, ClassicProfessionFilter, TitanClassic, totalRP3
+## IconTexture: Interface\HELPFRAME\ReportLagIcon-Movement
 
-## X-Curse-Project-ID: 322362
+## OptionalDeps: Leatrix_enUS, ElvUI
+
+## X-Curse-Project-ID: 94855
 
 Leatrix_Plus_Library.lua
 Leatrix_Plus_Locale.lua
+Leatrix_Plus_Media.lua
 Leatrix_Plus_Flight_Alliance.lua
 Leatrix_Plus_Flight_Horde.lua
 Leatrix_Plus.xml

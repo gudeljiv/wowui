@@ -1,5 +1,5 @@
 local TOCNAME, 
-	---@class Addon_Tags: Addon_Dungeons
+	---@class Addon_Tags: Addon_DungeonData
 	GBB = ...;
 
 local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
@@ -80,7 +80,7 @@ local heroicTags = {
 --- Dungeon Tags: for identifying dungeons related to messages.
 local dungeonTags = {
 	AQ20 = { -- Ahn'Qiraj Ruins
-		enGB = "ruins aq20",
+		enGB = "ruins aq20 aqr",
 		deDE = nil,
 		ruRU = "руины ра20 ак20 аку20",
 		frFR = nil,
@@ -90,7 +90,7 @@ local dungeonTags = {
 		ptBR = ""
 	},
 	AQ40 = { -- Ahn'Qiraj Temple
-		enGB = "aq40",
+		enGB = "aq40 aqt",
 		deDE = nil,
 		ruRU = "ан40 ак40 аку40",
 		frFR = nil,
@@ -113,20 +113,11 @@ local dungeonTags = {
 		zhTW = "地穴",
 		zhCN = "地穴",
 	},
-	WB = { -- World Bosses
-		enGB = "azu azuregos azregos world bosses wboss kazzak kaz",
-		deDE = nil,
-		ruRU = nil,
-		frFR = nil,
-		zhTW = nil,
-		zhCN = nil,
+	AZGS = { -- Azuregos
+		enGB = "azu azuregos azregos",
 	},
-	CRY = { -- Crystal vale
-		enGB = "crystal vale thunderan thunderaan",
-		ruRU = nil,  
-		frFR = nil,  
-		zhTW = nil,
-		zhCN = nil,
+	KAZK = { -- Lord Kazzak
+		enGB = "kazzak kaz",
 	},
 	AZN = { -- Azjol-Nerub
 		enGB = "azn an nerub",
@@ -208,14 +199,6 @@ local dungeonTags = {
 		zhTW = nil,
 		zhCN = nil,
 	},
-	DFC = { -- Demon Fall Canyon
-		enGB = "demonfall dfc demon fall canyon",
-		deDE = nil,
-		ruRU = nil,
-		frFR = nil,
-		zhTW = nil,
-		zhCN = nil,
-	},
 	DM = { -- Deadmines
 		enGB = "deadmines vc vancleef dead mines mine",
 		deDE = "todesminen todesmine tm",
@@ -224,7 +207,6 @@ local dungeonTags = {
 		zhTW = "死亡礦坑 死況 死礦",
 		zhCN = "死亡矿坑 死矿",
 	},
-
 	-- When changing tag strings for diremaul dungeons make sure to consider
 	-- other versions of the game since the wings might be referred to differently. 
 	DMW = { -- Dire Maul - Capital Gardens (DMW pre-cata)
@@ -236,7 +218,7 @@ local dungeonTags = {
 		zhCN = "厄运西",
 	},
 	DMN = { -- Dire Maul - Gordok Commons (DMN pre-cata)
-		enGB = "dmn dmnorth north tribute",
+		enGB = "dmn dmnorth north tribute dmt",
 		deDE = "tribut dbn nord dbnord",
 		ruRU = "дмн дмсевер север трибут трибьют",
 		frFR = "tribut nord",
@@ -251,9 +233,8 @@ local dungeonTags = {
 		zhTW = "厄東 惡東 噩東",
 		zhCN = "厄运东",
 	},
-
-	NULL = { -- Dragon Soul
-
+	DS = { -- Dragon Soul
+		enGB = "ds deathwing",
 	},
 	DTK = { -- Drak'Tharon Keep
 		enGB = "dtk drak draktharon drak'tharon",
@@ -624,7 +605,7 @@ local dungeonTags = {
 		zhCN = "禁魔监狱",
 	},	
 	BOT2 = { -- The Bastion of Twilight
-		enGB = "bot bastion twilight bot10 bot25",
+		enGB = "bot bastion bot10 bot25",
 		deDE = nil,
 		ruRU = "сб",
 		frFR = nil,
@@ -960,6 +941,61 @@ local dungeonTags = {
 	NULL = { -- Prince Sarsarun
 	},
 
+	-- Mists of Pandaria specific dungeons/raids
+	MSV = { -- "Mogu'shan Vaults"
+		enGB = "mgsv msv vaults elegon",
+    },
+    NIUZAO_TEMPLE = { -- "Siege of Niuzao Temple"
+		enGB = "niu niuzao temple nt",
+    },
+    SETTING_SUN = { -- "Gate of the Setting Sun"
+		enGB = "goss gate",
+    },
+	SCARLET_HALLS = { -- "Scarlet Halls"
+		enGB = "scarlet halls sh",
+    },
+    TOT = { -- "Throne of Thunder"
+		enGB = "tot tot10 tot25 thunder",
+    },
+    MSP = { -- "Mogu'shan Palace"
+		enGB = "mogu palace msp",
+    },
+    TOTJS = { -- "Temple of the Jade Serpent"
+		enGB = "jade serpent totjs",
+    },
+    SPM = { -- "Shado-Pan Monastery"
+		enGB = "shadopan monastery spm",
+    },
+    BREWERY = { -- "Stormstout Brewery"
+		enGB = "brewery stormstout sb brew",
+    },
+    TERRACE = { -- "Terrace of Endless Spring"
+		enGB = "terrace tes toes",
+    },
+    HEART_OF_FEAR = { -- "Heart of Fear"
+		enGB = "heart hof",
+    },
+
+	-- Mists of Pandaria World Bosses
+	SHA_OF_ANGER = { -- Sha of Anger
+		enGB = "sha shanger",
+	},
+	GALLEON = { -- Galleon
+		enGB = "galleon gal",
+	},
+	NALAK = { -- Nalak
+		enGB = "nalak nal",
+	},
+	OONDASTA = { -- Oondasta
+		enGB = "oondasta ond oond",
+	},
+	ORDOS = { -- Ordos
+		enGB = "ordos ord",
+	},
+	-- FOUR_CELESTIALS = { -- Four Celestials (Unused)
+	-- 	enGB = "chiji xuen yulon niuzao celestials",
+	-- },
+
 	-- PvP
 	RBG = { -- 10v10 Rated Battleground
 		enGB = "rbgs rbg rated",
@@ -1032,15 +1068,64 @@ local dungeonTags = {
 		frFR = nil,
 		zhTW = nil,
 		zhCN = nil,
-	}
+	},
+	SSM = { -- Silvershard Mines
+		enGB = "ssm silvershard",
+		deDE = nil,
+		ruRU = nil,
+		frFR = nil,
+		zhTW = nil,
+		zhCN = nil,
+	},
+	KOTMOGU = { -- Temple of Kotmogu
+		enGB = "kotmogu",
+		deDE = nil,
+		ruRU = nil,
+		frFR = nil,
+		zhTW = nil,
+		zhCN = nil,
+	},
 }
+if isSoD then
+	local sodSpecificTags = { -- appended to associated dungeonTags
+		KARA = { -- Karazhan Crypts
+			enGB = "kc crypts",
+		},
+		AQ20 = { -- Ruins of Ahn'Qiraj
+			enGB = "aq10",
+		},
+		CRY = { -- Crystal vale (Thunderaan)
+			enGB = "crystal vale thunderan thunderaan",
+		},
+		NMG = { -- Nightmare Grove (Emerald Dragons)
+			enGB = "grove nmg dragons",
+		},
+		DFC = { -- Demonfall Canyon
+			enGB = "demonfall dfc demon fall canyon",
+		},
+		ENCLAVE = { -- Scarlet Enclave
+			enGB = "enclave scarlet se",
+		}
+	}
+	for key, tagsByLoc in pairs(sodSpecificTags) do
+		if not dungeonTags[key] then
+			dungeonTags[key] = tagsByLoc
+		else for locale, tag in pairs(tagsByLoc) do
+			if not dungeonTags[key][locale] then
+				dungeonTags[key][locale] = tag
+			else
+				dungeonTags[key][locale] = strjoin(" ", dungeonTags[key][locale], tag)
+			end
+		end end
+	end
+end
 dungeonTags["DEADMINES"] = { enGB = "dm" } -- should normalize "DM" to "DEADMINES" at somepoint.
 
 --- Misc. categeories tags (these are core to the addon) 
 -- see `CustomCategories.lua` for additional user-editable categories/tags
 local miscTags = {
 	TRADE = { -- Trade Services
-	  enGB = "buy buying sell selling wts wtb hitem henchant htrade enchanter",
+	  enGB = "buy buying sell selling wts wtb hitem henchant htrade enchanter wtt",
 	  deDE = "kaufe verkauf kauf verkaufe ah vk tg trinkgeld trinkgold vz schneider verzauberer verzaubere schliesskassetten schließkassetten kassetten schlossknacken schloßknacken alchimie",
 	  ruRU = "куплю продам втс втб чантера чант энчантера скрафчу сделаю чарю чары",
 	  frFR = "achete vends enchanteur vend",
@@ -1055,9 +1140,11 @@ local miscTags = {
 	  zhTW = nil,
 	  zhCN = nil,
 	},
+	MISC = { --[[Misc messages, no defined tags. see getRequestDungeons in RequestList.lua]]},
 }
 
---- Secondary Dungeon Tags: related to identifying dungeon or activity name from a message.
+--- Secondary Dungeon Tags: used for groupable categories such as Scarlet Monastery
+--- note: DEADMINES entry used for an edge case in categorizing between Dire Maul and Deadmines
 local dungeonSecondTags = {
 	["DEADMINES"] = { "DM", "-DMW", "-DME", "-DMN" },
 	["SM2"] = { "SMG", "SML", "SMA", "SMC" },
@@ -1082,31 +1169,32 @@ for _, categoryTags in pairs({dungeonTags, miscTags}) do
 	end
 end
 
-GBB.dungeonTagsLoc = dungeonTagsLoc
 GBB.dungeonSecondTags = dungeonSecondTags
 GBB.suffixTagsLoc = langSplit(suffixTags)
 GBB.searchTagsLoc = langSplit(searchTags)
 GBB.badTagsLoc = langSplit(badTags)
 GBB.heroicTagsLoc = langSplit(heroicTags)
+GBB.Misc = (function() local t = {}; for k, _ in pairs(miscTags) do table.insert(t,k); end return t; end)()
+
+GBB.dungeonTagsLoc = dungeonTagsLoc
+
+-- todo: this is a hack to only use this system for Cata+ clients
+if WOW_PROJECT_ID >= WOW_PROJECT_CATACLYSM_CLASSIC then
+	GBB.Dungeons.ProcessActivityInfo()
+end
 
 -- Remove any unused dungeon tags based on game version
+local clientDungeonKeys = GBB.GetSortedDungeonKeys() -- includes raids/bgs/dungeons for all valid expansions.
+assert(next(clientDungeonKeys), "No client dungeons found. Was `ProcessActivityInfo()` called?")
 
--- Passing no specific dungeonType or ExpansionID will yeild all available.
--- This includes raids/bgs/arenas/dungeons from classic up to current expansion
-local validDungeonKeys = GBB.GetSortedDungeonKeys()
-local validGameVersionKeys = {}
-for _, key in ipairs(validDungeonKeys) do
-	validGameVersionKeys[key] = true
-end
--- manually add MISC entries to validGameVersionKeys, this is kinda hacky atm.
-for _, key in ipairs(GBB.Misc) do	
-	validGameVersionKeys[key] = true
-end
+clientDungeonKeys = (function() ---@type table<string, boolean> convert to map
+	local t = {}; for _, key in ipairs(clientDungeonKeys) do t[key] = true; end return t;
+end)()
 -- iterate over all locales and `nil` out any entries for dungeons not in current client
 for locale, dungeonTags in pairs(GBB.dungeonTagsLoc) do
 	for dungeonKey, _ in pairs(dungeonTags) do
-		if not (validGameVersionKeys[dungeonKey] 
-			or GBB.dungeonSecondTags[dungeonKey]
+		if not (clientDungeonKeys[dungeonKey]
+			or dungeonSecondTags[dungeonKey]
 			or miscTags[dungeonKey])
 		then
 			GBB.dungeonTagsLoc[locale][dungeonKey] = nil

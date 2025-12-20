@@ -32,7 +32,7 @@
       <Button parentKey="BuyReagentBankButton" inherits="UIPanelDynamicResizeButtonTemplate" text="BAGANATOR_L_BUY_REAGENT_BANK" parentArray="LiveButtons">
         <Scripts>
           <OnClick>
-            StaticPopup_Show("CONFIRM_BUY_REAGENTBANK_TAB")
+            self:GetParent():BuyReagentBank()
           </OnClick>
         </Scripts>
       </Button>
@@ -47,7 +47,7 @@
       <Layer level="BACKGROUND">
         <FontString parentKey="BankMissingHint" inherits="GameFontHighlight" text="BAGANATOR_L_BANK_DATA_MISSING_HINT">
           <Anchors>
-            <Anchor point="LEFT" x="20" y="-10"/>
+            <Anchor point="LEFT" x="20"/>
           </Anchors>
         </FontString>
       </Layer>

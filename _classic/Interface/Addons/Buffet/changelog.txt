@@ -1,3 +1,61 @@
+### 130
+
++ Added ruRU translation for Retail (thanks to ZamestoTV)
+* Updated LibBabble-SubZone
+
+
+### 129
+
+* Fixed other detection issues of potions over 1 million points
+
+
+### 128
+
+* Fixed detection of potions over 1 million points
+
+
+### 127
+
+* Properly fixed issue #80 for all game version
+* Fixed potential issue with old wow api functions
+
+
+### 126_Beta
+
+* Hopefully fixed issue #80: ignore-list not being saved properly
+
+
+### 125_Beta
+
+* Fixed issue #74: Added Earthen Race Support
+
+
+### 124
+
+* Fixed issue #80: ignore-list not being saved properly
+
+
+### 123_Beta
+
++ Added support for Mists of Pandaria
+* Updated TOC
+
+
+### 122
+
+* Updated TOC
+
+
+### 121
+
+* Updated TOC
+
+
+### 120
+
+* Fixed issue with demonic and dark runes
+
+
 ### 119
 
 * Added missing unsupported number format using the word million (Retail, enUS)

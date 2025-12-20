@@ -1,19 +1,23 @@
-## Interface: 11504, 40400
+## Interface: 11508, 40402, 50502
 ## Notes: World buff timers and much more.
+## Notes-esES: Temporizadores de beneficios del mundo y mucho más.
+## Notes-esMX: Temporizadores de beneficios del mundo y mucho más.
+## Notes-frFR: Minuteurs des buff mondiaux et bien plus encore.
+## Notes-ptBR: Temporizadores de bônus mundiais e muito mais.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.96
+## Version: 3.18
 ## SavedVariables: NWBdatabase
 
 embeds.xml
 Locale\Locales.xml
 Modules\DB.lua
+Modules\Realms.lua
 NovaWorldBuffs.lua
 Modules\Options.lua
 Modules\Help.lua
 Modules\Data.lua
 Modules\Creatures.lua
-Modules\Realms.lua
 Modules\GuildFilter.lua
 Modules\WorldBuffs.lua
 Modules\WeeklyReset.lua

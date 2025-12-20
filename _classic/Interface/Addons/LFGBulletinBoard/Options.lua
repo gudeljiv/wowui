@@ -4,21 +4,17 @@ local TOCNAME,
 local ChannelIDs
 local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local isCataclysm = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
-local PROJECT_EXPANSION_ID = {
-	[WOW_PROJECT_CLASSIC] = GBB.Enum.Expansions.Classic,
-	[WOW_PROJECT_BURNING_CRUSADE_CLASSIC] = GBB.Enum.Expansions.BurningCrusade,
-	[WOW_PROJECT_WRATH_CLASSIC] = GBB.Enum.Expansions.Wrath,
-	-- note: global not defined in classic era client
-	[WOW_PROJECT_CATACLYSM_CLASSIC or 0] = GBB.Enum.Expansions.Cataclysm,
-}
-local EXPANSION_PROJECT_ID = tInvert(PROJECT_EXPANSION_ID)
+
+local Expansions = GBB.Enum.Expansions
+
 ---hack to remove "World of Warcraft: " from classic on esES/esMX clients
 local EXPANSION_NAME0 = EXPANSION_NAME0:gsub("World of Warcraft: ", "")
 local EXPANSION_FILTER_NAME = {
-	[GBB.Enum.Expansions.Classic] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME0),
-	[GBB.Enum.Expansions.BurningCrusade] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME1),
-	[GBB.Enum.Expansions.Wrath] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME2),
-	[GBB.Enum.Expansions.Cataclysm] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME3),
+	[Expansions.Classic] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME0),
+	[Expansions.BurningCrusade] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME1),
+	[Expansions.Wrath] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME2),
+	[Expansions.Cataclysm] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME3),
+	[Expansions.Mists] = SUBTITLE_FORMAT:format(FILTERS, EXPANSION_NAME4),
 }
 
 ---@type {[number]: CheckButton[]} # Used by GetNumActiveFilters
@@ -27,9 +23,9 @@ local filtersByExpansionID = {}
 -- Locals/helpers
 --------------------------------------------------------------------------------
 
----@type fun(Var: string, Init: boolean): CheckButton|RegisteredFrameMixin # Create account-wide Settings checkbox
-local function CheckBox (Var,Init)
-	return GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB,Var,Init,GBB.L["Cbox"..Var])
+---@type fun(Var: string, Init: boolean, displayText: string?): CheckButton|RegisteredFrameMixin # Create account-wide Settings checkbox
+local function CheckBox (Var,Init, displayText)
+	return GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB,Var,Init,(displayText or GBB.L["Cbox"..Var]))
 end
 ---@type fun(Var: string, Init: boolean): CheckButton|RegisteredFrameMixin # Create character-specific Settings checkbox
 local function CheckBoxChar (Var,Init)
@@ -105,8 +101,8 @@ local function fixSecondaryTagFilters()
 end
 
 local function ResetFilters()
-	if GBB.ShouldReset and (not GBB.DBChar["ResetVersion"] or GBB.DBChar["ResetVersion"] ~= GBB.Version) then
-		GBB.DBChar["ResetVersion"] = GBB.Version
+	if GBB.ShouldReset and (not GBB.DBChar["ResetVersion"] or GBB.DBChar["ResetVersion"] ~= GBB.Metadata.Version) then
+		GBB.DBChar["ResetVersion"] = GBB.Metadata.Version
 		for k, _ in pairs(GBB.dungeonSort) do
 			if GBB.DBChar["FilterDungeon"..k] ~= nil then
 				GBB.DBChar["FilterDungeon"..k] = nil
@@ -136,7 +132,7 @@ end
 ---@param expansionID ExpansionID
 local function GenerateExpansionPanel(expansionID)
 	GBB.OptionsBuilder.AddNewCategoryPanel(EXPANSION_FILTER_NAME[expansionID], false, true)
-	local isCurrentXpac = expansionID == PROJECT_EXPANSION_ID[WOW_PROJECT_ID];
+	local isCurrentXpac = expansionID == Expansions.Current;
 	local filters = {} ---@type CheckButton[]
 	filtersByExpansionID[expansionID] = filters
 	local dungeons = GBB.GetSortedDungeonKeys(
@@ -170,6 +166,20 @@ local function GenerateExpansionPanel(expansionID)
 		tinsert(filters, CheckBoxFilter(key, enabled))
 	end
 
+	-- World Bosses
+	if expansionID == Expansions.Classic
+	or expansionID == Expansions.Mists
+	then
+		local bosses = GBB.GetSortedDungeonKeys(expansionID, GBB.Enum.DungeonType.WorldBoss)
+		if #bosses > 0 then
+			GBB.OptionsBuilder.Indent(-10)
+			GBB.OptionsBuilder.AddHeaderToCurrentPanel(GBB.L.WORLD_BOSSES)
+			GBB.OptionsBuilder.Indent(10)
+			for _, key in pairs(bosses) do
+				tinsert(filters, CheckBoxFilter(key, enabled))
+			end
+		end
+	end
 	-- Battlegrounds (bg are all consider part of latest expansion atm)
 	if #bgs > 0 then
 		if isCurrentXpac and not isClassicEra then
@@ -231,7 +241,6 @@ local function GenerateExpansionPanel(expansionID)
 				if newValue == true and mutualBox:GetSavedValue() == true then
 					mutualBox:SetSavedValue(false)
 				end
-				updatedBox:SetChecked(newValue)
 			end
 		end
 		heroicOnly:OnSavedVarUpdate(exclusiveUpdateHandler(heroicOnly, normalOnly))
@@ -249,8 +258,8 @@ local function GenerateExpansionPanel(expansionID)
 		allFilterSetChecked(false)
 	end)
 
+	GBB.OptionsBuilder.AddRadioDropdownToCurrentPanel(GBB.DB,"InviteRole", "DPS", {"DPS", "Tank", "Healer"})
 	-- Role Filters
-	GBB.OptionsBuilder.AddDropdownToCurrentPanel(GBB.DB,"InviteRole", "DPS", {"DPS", "Tank", "Healer"})
 	GBB.OptionsBuilder.EndInLine()
 	
 	-- Chat Channel Filters (only show for current xpac)
@@ -268,7 +277,7 @@ function GBB.OptionsUpdate()
 	fixSecondaryTagFilters()
 	GBB.CreateTagList()
 	GBB.MinimapButton.UpdatePosition()
-	GBB.ClearNeeded = true
+	GBB.ChatRequests.UpdateRequestList(true)
 end
 
 --- Setup the options panels, creating and initializing settings widgets and their saved variables.
@@ -301,8 +310,8 @@ function GBB.OptionsInit ()
 	----------------------------------------------------------
 	-- Main/General settings panel
 	----------------------------------------------------------
-	GBB.OptionsBuilder.AddNewCategoryPanel(GBB.Title,false,true)
-	--GBB.OptionsBuilder.AddVersion('|cff00c0ff' .. GBB.Version .. '|r')
+	GBB.OptionsBuilder.AddNewCategoryPanel(GBB.Metadata.Title,false,true)
+	--GBB.OptionsBuilder.AddVersion('|cff00c0ff' .. GBB.Metadata.Version .. '|r')
 	GBB.OptionsBuilder.AddHeaderToCurrentPanel(GBB.L["HeaderSettings"])
 	GBB.OptionsBuilder.Indent(10)
 	GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB.MinimapButton,"visible",true,GBB.L["Cboxshowminimapbutton"])
@@ -317,7 +326,6 @@ function GBB.OptionsInit ()
 		local updateHook = function(useLibDBIcon)
 			lockDistCheckbox:SetChecked(useLibDBIcon or  GBB.DB.MinimapButton.lockDistance)
 			lockDistCheckbox:SetEnabled(not useLibDBIcon)
-			lockDistCheckbox.Text:SetTextColor(unpack(useLibDBIcon and {GRAY_FONT_COLOR:GetRGB()} or {WHITE_FONT_COLOR:GetRGB()}))
 		end
 		GBB.OptionsBuilder.GetSavedVarHandle(GBB.DB.MinimapButton, 'UseLibDBIcon'):AddUpdateHook(updateHook);
 		updateHook(GBB.DB.MinimapButton.UseLibDBIcon) -- run once to sync the checkbox state.
@@ -328,74 +336,165 @@ function GBB.OptionsInit ()
 	CheckBox("HeadersStartFolded",false)
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	GBB.OptionsBuilder.AddTextToCurrentPanel(FONT_SIZE, -20)
-	GBB.OptionsBuilder.AddDropdownToCurrentPanel(GBB.DB,"FontSize", "GameFontNormal", {"GameFontNormalSmall", "GameFontNormal", "GameFontNormalLarge"}) 
+	GBB.OptionsBuilder.AddRadioDropdownToCurrentPanel(GBB.DB,"FontSize", "GameFontNormal", {"GameFontNormalSmall", "GameFontNormal", "GameFontNormalLarge"})
 
 	CheckBox("CombineSubDungeons",false)
 	CheckBox("IsolateTravelServices",true)
 	GBB.OptionsBuilder.AddSpacerToPanel()
-	CheckBox("NotifySound",false)
-	CheckBox("NotifyChat",false)
-	GBB.OptionsBuilder.Indent(20)
-	CheckBox("NotfiyInnone",true)
-	CheckBox("NotfiyInpvp",false)
-	CheckBox("NotfiyInparty",true)
-	CheckBox("NotfiyInraid",false)
-	CheckBox("OneLineNotification",false)
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"NotifyColor",{r=1,g=1,b=1,a=1},GBB.L["BtnNotifyColor"])
-	GBB.OptionsBuilder.Indent(-20)	
+	do -- Chat/Sound Notification for New Chat Requests
+		local notifySound = CheckBox("NotifySound",false)
+		local notifyChat = CheckBox("NotifyChat",false)
+		GBB.OptionsBuilder.Indent(20)
+		local channelLabel = GBB.OptionsBuilder.AddTextToCurrentPanel(SOUND_CHANNELS, -20)
+		local soundChannel = GBB.OptionsBuilder.AddRadioDropdownToCurrentPanel(
+			GBB.DB, "NotifySoundChannel", "Master", {
+				{value = "Master", text = MASTER_VOLUME},
+				{value = "Music", text = MUSIC_VOLUME},
+				{value = "SFX", text = FX_VOLUME},
+				{value = "Ambience", text = AMBIENCE_VOLUME},
+				{value = "Dialog", text = DIALOG_VOLUME},
+			}
+		)
+		local sharedOpts = {
+			CheckBox("NotfiyInnone",true),
+			CheckBox("NotfiyInpvp",false),
+			CheckBox("NotfiyInparty",true),
+			CheckBox("NotfiyInraid",false),
+			CheckBox("OneLineNotification",false),
+		}
+		local chatColor = GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(
+			GBB.DB, "NotifyColor", {r=1,g=1,b=1,a=1}, GBB.L["BtnNotifyColor"]
+		)
+		local updateChildren = function()
+			local notifyChat, notifySound = notifyChat:GetSavedValue(), notifySound:GetSavedValue()
+			for _, option in ipairs(sharedOpts) do
+				option:SetEnabled(notifyChat or notifySound)
+			end
+			chatColor:SetEnabled(notifyChat)
+			channelLabel:SetTextColor((notifySound and NORMAL_FONT_COLOR or DISABLED_FONT_COLOR):GetRGB())
+			soundChannel:SetEnabled(notifySound)
+		end
+		notifyChat:OnSavedVarUpdate(updateChildren)
+		notifySound:OnSavedVarUpdate(updateChildren)
+		updateChildren()
+		GBB.OptionsBuilder.Indent(-20)
+	end
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	CheckBox("ColorOnLevel",true)
 	CheckBox("UseAllInLFG",true)
 	CheckBox("EscapeQuit",true)
-	CheckBox("DisplayLFG",false)
+	CheckBox("DisplayLFG",false, GBB.L.DISPLAY_LFG_ANNOUNCEMENT_BAR)
 	GBB.OptionsBuilder.AddSpacerToPanel()
-	GBB.OptionsBuilder.InLine()
-	CheckBox("ColorByClass",true)
-	CheckBox("ShowClassIcon",true)
-	GBB.OptionsBuilder.EndInLine()
-	CheckBox("RemoveRaidSymbols",true)	
-	CheckBox("RemoveRealm",false)
-	local chatStyleBox = CheckBox('ChatStyle', false)
-	local compactStyleBox = CheckBox('CompactStyle', false)
-	-- setup mutually exclusive updates when enabled (previously done in `GBB.OptionsInit()`)
-	local exclusiveUpdateHandler = function(updatedBox, mutualBox)
-		return function(selection)
-			if selection == true -- both options can be  toggled off at the same time, but not on.
-			and mutualBox:GetSavedValue() == true
-			then mutualBox:SetSavedValue(false) end;
-			updatedBox:SetChecked(selection)
+	do -- Bulletin board request entry display settings
+		GBB.OptionsBuilder.InLine()
+		CheckBox("ColorByClass",true)
+		CheckBox("ShowClassIcon",true)
+		GBB.OptionsBuilder.EndInLine()
+		CheckBox("RemoveRaidSymbols",true)
+		CheckBox("RemoveRealm",false)
+		local chatStyleBox = CheckBox('ChatStyle', false)
+		local compactStyleBox = CheckBox('CompactStyle', false)
+		-- setup mutually exclusive updates when enabled (previously done in `GBB.OptionsInit()`)
+		local exclusiveUpdateHandler = function(updatedBox, mutualBox)
+			return function(selection)
+				if selection == true -- both options can be  toggled off at the same time, but not on.
+				and mutualBox:GetSavedValue() == true
+				then mutualBox:SetSavedValue(false) end;
+			end
 		end
+		chatStyleBox:OnSavedVarUpdate(exclusiveUpdateHandler(chatStyleBox, compactStyleBox))
+		compactStyleBox:OnSavedVarUpdate(exclusiveUpdateHandler(compactStyleBox, chatStyleBox))
+		CheckBox("DontTrunicate",false)
+		do -- "Show fixed num requests per category" setting
+			local limitRequests = CheckBox("EnableShowOnly",false)
+			GBB.OptionsBuilder.Indent(30)
+			local editLimit = CreateEditBoxNumber("ShowOnlyNb", 4, 50)
+			local updateChild = function(value)
+				editLimit:SetEnabled(value)
+			end
+			limitRequests:OnSavedVarUpdate(function(value)
+				limitRequests:SetChecked(value)
+				updateChild(value)
+			end)
+			updateChild(limitRequests:GetSavedValue())
+			GBB.OptionsBuilder.Indent(-30)
+		end
+		GBB.OptionsBuilder.AddSpacerToPanel(0.2)
+		local timeOutSetting = CreateEditBoxNumber("TimeOut",150,50)
+		local savedVarHandle = GBB.OptionsBuilder.GetSavedVarHandle(GBB.DB, "TimeOut")
+		-- override the default `SetSavedValue` behavior to clamp the TimeOut value above 30s
+		function timeOutSetting:SetSavedValue(value)
+			savedVarHandle:SetValue(Clamp(value, 30, math.huge))
+		end
+
+		GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"EntryColor",{r=1,g=1,b=1,a=1},GBB.L["BtnEntryColor"])
+		GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"HeroicDungeonColor",{r=1,g=0,b=0,a=1},GBB.L["BtnHeroicDungeonColor"])
+		GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"NormalDungeonColor",{r=0,g=1,b=0,a=1},GBB.L["BtnNormalDungeonColor"])
+		GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"TimeColor",{r=1,g=1,b=1,a=1},GBB.L["BtnTimeColor"])
 	end
-	chatStyleBox:OnSavedVarUpdate(exclusiveUpdateHandler(chatStyleBox, compactStyleBox))
-	compactStyleBox:OnSavedVarUpdate(exclusiveUpdateHandler(compactStyleBox, chatStyleBox))
-	CheckBox("DontTrunicate",false)
-	CheckBox("EnableShowOnly",false)		
-	GBB.OptionsBuilder.Indent(30)
-	CreateEditBoxNumber("ShowOnlyNb",4,50)	
-	GBB.OptionsBuilder.Indent(-30)
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"EntryColor",{r=1,g=1,b=1,a=1},GBB.L["BtnEntryColor"])
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"HeroicDungeonColor",{r=1,g=0,b=0,a=1},GBB.L["BtnHeroicDungeonColor"])
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"NormalDungeonColor",{r=0,g=1,b=0,a=1},GBB.L["BtnNormalDungeonColor"])
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"TimeColor",{r=1,g=1,b=1,a=1},GBB.L["BtnTimeColor"])
 	GBB.OptionsBuilder.AddSpacerToPanel()
-	--override the default `SetSavedValue` behavior to clamp the TimeOut value above 30s (previously done in `GBB.OptionsUpdate()`)
-	local timeOutSetting = CreateEditBoxNumber("TimeOut",150,50)
-	local savedVarHandle = GBB.OptionsBuilder.GetSavedVarHandle(GBB.DB, "TimeOut")
-	function timeOutSetting:SetSavedValue(value) 
-		savedVarHandle:SetValue(Clamp(value, 30, math.huge))
+	do -- "Request To Join Group" message settings
+		local checkbox = GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB, "EnableJoinRequestMessage",
+			true, GBB.L.JOIN_REQUEST_HEADER
+		)
+		GBB.OptionsBuilder.Indent(20)
+		checkbox.Text:SetTextColor(NORMAL_FONT_COLOR:GetRGB())
+		GBB.OptionsBuilder.AddSpacerToPanel(0.1)
+		local editbox = GBB.OptionsBuilder.AddEditBoxToCurrentPanel(GBB.DB, "JoinRequestMessage",
+			GBB.L.JOIN_REQUEST_MESSAGE, '', 450, 0, false, GBB.L.JOIN_REQUEST_REPLACEMENTS_TIP, GBB.L.JOIN_REQUEST_MESSAGE
+		)
+		editbox:SetText(editbox:GetSavedValue())
+		local onFocusChanged = function(self) ---@cast self EditBox
+			local isFocused = self:HasFocus()
+			checkbox.Text:SetText(isFocused and GBB.L.SAVE_ON_ENTER or GBB.L.JOIN_REQUEST_HEADER)
+			checkbox.Text:SetTextColor((isFocused and RED_FONT_COLOR or NORMAL_FONT_COLOR):GetRGB())
+		end
+		editbox:HookScript("OnEditFocusGained", onFocusChanged)
+		editbox:HookScript("OnEditFocusLost", onFocusChanged)
+		editbox:OnSavedVarUpdate(function(value) ---@cast value string?
+			if not value or strlenutf8(value) == 0 then
+				editbox:SetSavedValue(GBB.L.JOIN_REQUEST_MESSAGE)
+				editbox:SetText(GBB.L.JOIN_REQUEST_MESSAGE)
+			end
+		end)
+		local updateChild = function(value)
+			editbox:SetEnabled(value)
+		end
+		updateChild(checkbox:GetSavedValue())
+		checkbox:OnSavedVarUpdate(updateChild)
+		GBB.OptionsBuilder.Indent(-20)
 	end
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	CheckBox("AdditionalInfo",false)
-	CheckBox("EnableGroup",false)
-	GBB.OptionsBuilder.Indent(30)
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"PlayerNoteColor",{r=1,g=0.8,b=0.2,a=1},GBB.L["BtnPlayerNoteColor"])
-	GBB.OptionsBuilder.Indent(-30)
+	do -- "Remember Past Group Members" setting
+		local mainChkbox = CheckBox("EnableGroup",false)
+		GBB.OptionsBuilder.Indent(30)
+		local childColorBox = GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"PlayerNoteColor",{r=1,g=0.8,b=0.2,a=1},GBB.L["BtnPlayerNoteColor"])
+		local updateChild = function(value)
+			childColorBox:SetEnabled(value)
+		end
+		mainChkbox:OnSavedVarUpdate(updateChild)
+		updateChild(mainChkbox:GetSavedValue())
+		GBB.OptionsBuilder.Indent(-30)
+	end
 	GBB.OptionsBuilder.AddSpacerToPanel()
-	
-	CheckBox("EnableGuild",false)
-	GBB.OptionsBuilder.Indent(30)
-	GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB,"ColorGuild",{a=1,r=.2,g=1,b=.2},GBB.L["BtnColorGuild"])
-	GBB.OptionsBuilder.Indent(-30)
+	do -- update the nested setting widgets based on EnableGuild checkbox state.
+		local mainChkbox = CheckBox("EnableGuild",false)
+		GBB.OptionsBuilder.Indent(30)
+		local rankChkbox = GBB.OptionsBuilder.AddCheckBoxToCurrentPanel(GBB.DB, "EnableGuildRank",
+			false, GBB.L.ADD_GUILDRANK_LABEL
+		);
+		local colorBox = GBB.OptionsBuilder.AddColorSwatchToCurrentPanel(GBB.DB, "ColorGuild",
+			{a = 1, r = .2, g = 1, b = .2}, GBB.L['BtnColorGuild']
+		)
+		GBB.OptionsBuilder.Indent(-30)
+		local updateSubOptions = function(mainSetting)
+			rankChkbox:SetEnabled(mainSetting)
+			colorBox:SetEnabled(mainSetting)
+		end
+		updateSubOptions(mainChkbox:GetSavedValue())
+		mainChkbox:OnSavedVarUpdate(updateSubOptions)
+	end
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	CheckBox("OnDebug",false)
 
@@ -406,17 +505,11 @@ function GBB.OptionsInit ()
 	----------------------------------------------------------
 	-- Expansion specific filters
 	----------------------------------------------------------
-	if not isClassicEra then 
-		--- Cata Filters
-		GenerateExpansionPanel(GBB.Enum.Expansions.Cataclysm)
-		--- Wrath Filters
-		GenerateExpansionPanel(GBB.Enum.Expansions.Wrath)
-		--- TBC Filters
-		GenerateExpansionPanel(GBB.Enum.Expansions.BurningCrusade)
+	-- generate panels from current client expansion down to classic era.
+	-- note: if both limits are 0, this lua loop should still run with `expansionID == 0`.
+	for expansionID = Expansions.Current, Expansions.Classic, -1 do
+		GenerateExpansionPanel(expansionID)
 	end
-	-- Vanilla Filters
-	GenerateExpansionPanel(GBB.Enum.Expansions.Classic)
-		
 	----------------------------------------------------------
 	-- Custom Filters/Categories
 	----------------------------------------------------------
@@ -478,18 +571,20 @@ function GBB.OptionsInit ()
 	saveText:SetAlpha(0.75)
 	GBB.OptionsBuilder.AddSpacerToPanel()
 	local locales= GBB.locales.enGB
-	local t={}
-	for key, _ in pairs(locales) do 
-		table.insert(t,key)
+	local displayStrKeys = {}
+	for key, _ in pairs(locales) do
+		table.insert(displayStrKeys, key)
 	end
-	table.sort(t)
-	for _,key in ipairs(t) do 
-		
-		local col=GBB.L[key]~=nil and "|cffffffff" or "|cffff4040"
-		local txt=GBB.L[key.."_org"]~="["..key.."_org]" and GBB.L[key.."_org"] or GBB.L[key]
-				
-		GBB.OptionsBuilder.AddEditBoxToCurrentPanel(GBB.DB.CustomLocales,key,"",col.."["..key.."]",450,200,false,locales[key],txt)
-		
+	table.sort(displayStrKeys)
+	for _,key in ipairs(displayStrKeys) do
+		-- _org suffix is used for saving the original value if changed by user.
+		if not key:find("_org") then
+			local labelTxt = WrapTextInColorCode(('[%s]'):format(key), GBB.L[key]~=nil and "ffffffff" or "ffff4040")
+			local sampleTxt = (GBB.L[key] and GBB.L[key]~="") and GBB.L[key] or GBB.L[key.."_org"]
+			GBB.OptionsBuilder.AddEditBoxToCurrentPanel(GBB.DB.CustomLocales, key,
+				"", labelTxt, 450, 200, false,locales[key], sampleTxt
+			)
+		end
 	end
 	--locales dungeons
 	GBB.OptionsBuilder.AddSpacerToPanel()
@@ -520,14 +615,11 @@ function GBB.OptionsInit ()
 	-- About panel
 	----------------------------------------------------------
 	GBB.OptionsBuilder.AddNewCategoryPanel(GBB.L["PanelAbout"])
-	local addonMetadata = function(field) -- move from deprecated `GetAddOnMetadata`
-		return C_AddOns.GetAddOnMetadata(TOCNAME, field)
-	end
 	GBB.OptionsBuilder.AddHeaderToCurrentPanel(WrapTextInColorCode(('%s %s by %s'), 'FFFF1C1C')
-		:format(addonMetadata("Title"), addonMetadata("Version"), addonMetadata("Author"))
+		:format(GBB.Metadata.Title, GBB.Metadata.Version, GBB.Metadata.Author)
 	);
 	GBB.OptionsBuilder.Indent(10)
-	GBB.OptionsBuilder.AddTextToCurrentPanel(addonMetadata("Notes"))		
+	GBB.OptionsBuilder.AddTextToCurrentPanel(GBB.Metadata.Notes)
 	GBB.OptionsBuilder.Indent(-10)
 	
 	GBB.OptionsBuilder.AddHeaderToCurrentPanel(GBB.L["HeaderInfo"])

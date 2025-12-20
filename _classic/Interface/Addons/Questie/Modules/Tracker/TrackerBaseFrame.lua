@@ -5,6 +5,8 @@ local TrackerBaseFrame = QuestieLoader:CreateModule("TrackerBaseFrame")
 -------------------------
 ---@type QuestieTracker
 local QuestieTracker = QuestieLoader:ImportModule("QuestieTracker")
+---@type TrackerUtils
+local TrackerUtils = QuestieLoader:ImportModule("TrackerUtils")
 ---@type TrackerFadeTicker
 local TrackerFadeTicker = QuestieLoader:ImportModule("TrackerFadeTicker")
 -------------------------
@@ -129,7 +131,7 @@ function TrackerBaseFrame.Initialize()
 
         if (not result) then
             Questie.db.profile.TrackerLocation = nil
-            print(l10n("Error: Questie tracker in invalid location, resetting..."))
+            Questie:Print(l10n("Questie tracker in invalid location, resetting..."))
             Questie:Debug(Questie.DEBUG_CRITICAL, "Resetting reason:", reason)
 
             if WatchFrame then
@@ -151,7 +153,7 @@ function TrackerBaseFrame.Initialize()
 
             if not result then
                 Questie.db.profile.TrackerLocation = nil
-                print(l10n("Error: Questie tracker in invalid location, resetting..."))
+                Questie:Print(l10n("Questie tracker in invalid location, resetting..."))
                 Questie:Debug(Questie.DEBUG_CRITICAL, "Resetting reason:", reason)
                 TrackerBaseFrame:SetSafePoint()
             end
@@ -171,7 +173,7 @@ function TrackerBaseFrame.Initialize()
 end
 
 function TrackerBaseFrame:Update()
-    if Questie.db.char.isTrackerExpanded and QuestieTracker:HasQuest() then
+    if Questie.db.char.isTrackerExpanded and TrackerUtils.HasQuest() then
         if Questie.db.profile.trackerBackdropEnabled then
             if Questie.db.profile.trackerBorderEnabled then
                 if not Questie.db.profile.trackerBackdropFader then

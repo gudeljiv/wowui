@@ -711,20 +711,20 @@ RegEvent("ADDON_LOADED", function()
 
         StaticPopupDialogs["MYSLOT_EXPORT_TITLE"].OnShow = function(self)
             local c = popctx.current
-
+            local editBox = self.GetEditBox and self:GetEditBox() or self.editBox
             if c and exports[c] then
-                self.editBox:SetText(exports[c].name or "")
+                editBox:SetText(exports[c].name or "")
             end
-            self.editBox:SetFocus()
+            editBox:SetFocus()
         end
 
 
         StaticPopupDialogs["MYSLOT_EXPORT_TITLE"].OnAccept = function(self)
             local c = popctx.current
-
+            local editBox = self.GetEditBox and self:GetEditBox() or self.editBox
             -- if c then rename
             if c and exports[c] then
-                local n = self.editBox:GetText()
+                local n = editBox:GetText()
                 if n ~= "" then
                     exports[c].name = n
                     UIDropDownMenu_SetText(t, n)
@@ -732,7 +732,7 @@ RegEvent("ADDON_LOADED", function()
                 return
             end
 
-            if create(self.editBox:GetText()) then
+            if create(editBox:GetText()) then
                 onclick({value = #exports})
             end
         end
@@ -873,7 +873,34 @@ SlashCmdList["MYSLOT"] = function(msg, editbox)
         end
 
     elseif cmd == "clear" then
-        Settings.OpenToCategory(MySlot.settingcategory.ID)
+        opt = {
+            [1] = true,
+            [2] = true,
+            [3] = true,
+            [4] = true,
+            [5] = true,
+            [6] = true,
+            [7] = true,
+            [8] = true,
+            [9] = true,
+            [10] = true,
+            [11] = true,
+            [12] = true,
+            [13] = true,
+            [14] = true,
+            [15] = true,
+            ["ACCOUNT"] = true,
+            ["CHARACTOR"] = true,
+        }
+        if what == "action" then
+            MySlot:Clear("ACTION", opt)
+        elseif what == "macro" then
+            MySlot:Clear("MACRO", opt)
+        elseif what == "binding" then
+            MySlot:Clear("BINDING", opt)
+        else
+            Settings.OpenToCategory(MySlot.settingcategory.ID)
+        end
     elseif cmd == "trim" then
         if not MyslotExports then
             MyslotExports = {}

@@ -11,19 +11,31 @@
 #  --------------------
 
 
-## Interface: 110002
+## Interface: 110205, 50500, 40402, 11507
 
 ## Title: TellMeWhen
 ## X-Curse-Project-ID: 8025
 ## X-WoWI-ID: 10855
 ## X-Wago-ID: ZQ6aZqKW
 
-## Version: 11.0.10
+## Version: 11.2.8
 ## Author: Cybeloras of Aerie Peak
 ## IconTexture: Interface\Addons\TellMeWhen\Textures\LDB Icon
 ## AddonCompartmentFunc: TellMeWhen_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: TellMeWhen_AddonCompartmentFuncOnEnter
 ## AddonCompartmentFuncOnLeave: TellMeWhen_AddonCompartmentFuncOnLeave
+
+## Category-enUS: Combat
+## Category-deDE: Kampf
+## Category-esES: Combate
+## Category-esMX: Combate
+## Category-frFR: Combat
+## Category-itIT: Combattimento
+## Category-koKR: 전투
+## Category-ptBR: Combate
+## Category-ruRU: Бой
+## Category-zhCN: 战斗
+## Category-zhTW: 戰鬥
 
 ## Notes: Provides visual, auditory, and textual notifications about cooldowns, buffs, and pretty much every other element of combat.
 ## Notes-zhCN: 为冷却、增益\减益及其他各个方面提供视觉、听觉以及文字上的通知。
@@ -42,11 +54,17 @@
 
 includes.xml
 
-# Components\Core\Spells\includes.core.xml
-Components\Core\Spells\Equivalencies-Retail.lua
-Components\Core\Spells\ClassSpellCache-Retail.lua
-Components\Core\Conditions\Categories\PlayerCombatStats-Retail.lua
+# vanilla tbc wrath cata mists standard
 
-Components\IconTypes\IconType_runes\runes-Retail.lua
-Components\IconTypes\IconType_losecontrol\losecontrol.lua
+Components\Core\Spells\Equivalencies-[Game].lua
+Components\Core\Spells\ClassSpellCache-[Game].lua
+Components\Core\Spells\ClassSpellCache-Cata.lua [AllowLoadGameType cata]
 
+Components\Core\Conditions\Categories\PlayerCombatStats-Retail.lua [AllowLoadGameType standard]
+Components\Core\Conditions\Categories\PlayerCombatStats-Wrath.lua [AllowLoadGameType vanilla, tbc, wrath, cata, mists]
+
+Components\IconTypes\IconType_runes\runes-Retail.lua [AllowLoadGameType standard]
+Components\IconTypes\IconType_runes\runes-Wrath.lua [AllowLoadGameType wrath, cata, mists]
+
+Components\IconTypes\IconType_losecontrol\losecontrol.lua [AllowLoadGameType standard, cata, mists]
+Components\IconTypes\IconType_lightwell\lightwell.lua [AllowLoadGameType cata, mists]

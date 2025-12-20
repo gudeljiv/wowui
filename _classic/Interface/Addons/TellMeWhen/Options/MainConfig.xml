@@ -421,7 +421,7 @@
 
 						self:SetMinMaxValues(0, 0.5)
 						self:SetValueStep(0.01)
-						self:SetTextFormatter(TMW.C.Formatter.S_SECONDS, TMW.C.Formatter.F_1)
+						self:SetTextFormatter(TMW.C.Formatter.S_SECONDS_UPS, TMW.C.Formatter.F_1)
 					</OnLoad>
 				</Scripts>
 			</Slider>
@@ -517,7 +517,7 @@
 						self:SetLabel(TMW.L["SOUND_CHANNEL"])
 
 						local values = {
-							SFX = SOUND_VOLUME,
+							SFX = SOUND_VOLUME or FX_VOLUME,
 							Music = MUSIC_VOLUME,
 							Ambience = AMBIENCE_VOLUME,
 							Dialog = DIALOG_VOLUME,

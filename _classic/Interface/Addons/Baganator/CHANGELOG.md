@@ -1,7 +1,6 @@
 # Baganator
 
-## [500](https://github.com/Baganator/Baganator/tree/500) (2024-10-12)
-[Full Changelog](https://github.com/Baganator/Baganator/compare/499...500) 
+## [774](https://github.com/TheMouseNest/Baganator/tree/774) (2025-12-18)
+[Full Changelog](https://github.com/TheMouseNest/Baganator/compare/773...774) 
 
-- Cata: Fix tracking/untracking currencies  
-- Fix currency panel hiding after hovering over warband transferable icon  
+- Update supported versions to include 5.5.3  

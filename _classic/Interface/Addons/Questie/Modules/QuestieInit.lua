@@ -4,9 +4,13 @@ local _QuestieInit = QuestieInit.private
 
 ---@type ThreadLib
 local ThreadLib = QuestieLoader:ImportModule("ThreadLib")
+---@type Expansions
+local Expansions = QuestieLoader:ImportModule("Expansions")
 
 ---@type QuestEventHandler
 local QuestEventHandler = QuestieLoader:ImportModule("QuestEventHandler")
+---@type QuestieAPI
+local QuestieAPI = QuestieLoader:ImportModule("QuestieAPI")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 ---@type ZoneDB
@@ -39,8 +43,8 @@ local Townsfolk = QuestieLoader:ImportModule("Townsfolk")
 local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest")
 ---@type IsleOfQuelDanas
 local IsleOfQuelDanas = QuestieLoader:ImportModule("IsleOfQuelDanas")
----@type QuestieEventHandler
-local QuestieEventHandler = QuestieLoader:ImportModule("QuestieEventHandler")
+---@type EventHandler
+local EventHandler = QuestieLoader:ImportModule("EventHandler")
 ---@type QuestieJourney
 local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney")
 ---@type HBDHooks
@@ -67,10 +71,14 @@ local QuestieTooltips = QuestieLoader:ImportModule("QuestieTooltips");
 local QuestieDBMIntegration = QuestieLoader:ImportModule("QuestieDBMIntegration");
 ---@type TrackerQuestTimers
 local TrackerQuestTimers = QuestieLoader:ImportModule("TrackerQuestTimers")
+---@type ChallengeModeTimer
+local ChallengeModeTimer = QuestieLoader:ImportModule("ChallengeModeTimer")
 ---@type QuestieCombatQueue
 local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
 ---@type QuestieSlash
 local QuestieSlash = QuestieLoader:ImportModule("QuestieSlash")
+---@type QuestieEvent
+local QuestieEvent = QuestieLoader:ImportModule("QuestieEvent")
 ---@type QuestXP
 local QuestXP = QuestieLoader:ImportModule("QuestXP")
 ---@type Tutorial
@@ -81,12 +89,16 @@ local Phasing = QuestieLoader:ImportModule("Phasing")
 local WorldMapButton = QuestieLoader:ImportModule("WorldMapButton")
 ---@type AvailableQuests
 local AvailableQuests = QuestieLoader:ImportModule("AvailableQuests")
+---@type DailyQuests
+local DailyQuests = QuestieLoader:ImportModule("DailyQuests")
 ---@type SeasonOfDiscovery
 local SeasonOfDiscovery = QuestieLoader:ImportModule("SeasonOfDiscovery")
 ---@type WatchFrameHook
 local WatchFrameHook = QuestieLoader:ImportModule("WatchFrameHook")
 ---@type QuestLogCache
 local QuestLogCache = QuestieLoader:ImportModule("QuestLogCache")
+---@type ContentPhases
+local ContentPhases = QuestieLoader:ImportModule("ContentPhases")
 
 local coYield = coroutine.yield
 
@@ -176,9 +188,6 @@ QuestieInit.Stages[1] = function() -- run as a coroutine
         QuestieCorrections:MinimalInit()
     end
 
-    Tutorial.Initialize()
-    coYield()
-
     local dbCompiledCount = Questie.IsSoD and Questie.db.global.sod.dbCompiledCount or Questie.db.global.dbCompiledCount
 
     if (not Questie.db.char.townsfolk) or (dbCompiledCount ~= Questie.db.char.townsfolkVersion) or (Questie.db.char.townsfolkClass ~= UnitClass("player")) then
@@ -187,8 +196,13 @@ QuestieInit.Stages[1] = function() -- run as a coroutine
         Townsfolk:BuildCharacterTownsfolk()
     end
 
+    QuestieEvent.Initialize()
+
     coYield()
     QuestieDB:Initialize()
+
+    Tutorial.Initialize()
+    coYield()
 
     --? Only run the validator on recompile if debug is enabled, otherwise it's a waste of time.
     if Questie.db.profile.debugEnabled and dbCompiled then
@@ -231,11 +245,11 @@ end
 QuestieInit.Stages[3] = function() -- run as a coroutine
     Questie:Debug(Questie.DEBUG_INFO, "[QuestieInit:Stage3] Stage 3 start.")
 
-    -- register events that rely on questie being initialized
-    QuestieEventHandler:RegisterLateEvents()
-
     QuestieTooltips:Initialize()
     TrackerQuestTimers:Initialize()
+    if Expansions.Current >= Expansions.MoP then
+        ChallengeModeTimer.Initialize()
+    end
     QuestieComms:Initialize()
 
     coYield()
@@ -257,11 +271,8 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     local cacheMiss, _, questIdsChecked = QuestLogCache.CheckForChanges(nil)
 
     if cacheMiss then
-        -- We really want to wait for the cache to be filled before we continue.
-        -- Other addons (e.g. ATT) can interfere with the cache and we need to make sure it's correct.
-        coYield()
-        local _, _, newQuestIdsChecked = QuestLogCache.CheckForChanges(nil)
-        questIdsChecked = newQuestIdsChecked
+        Questie:Debug(Questie.DEBUG_CRITICAL, "QuestieInit: Game Cache did not fill in time, waiting for valid cache.")
+        questIdsChecked = QuestieInit.WaitForValidGameCache()
     end
 
     QuestEventHandler.InitQuestLogStates(questIdsChecked)
@@ -271,7 +282,7 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     QuestieQuest:GetAllQuestIds()
     coYield()
 
-    QuestEventHandler:RegisterEvents()
+    QuestEventHandler:Initialize()
 
     coYield()
     QuestieCombatQueue.Initialize()
@@ -281,20 +292,23 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     QuestieTracker.Initialize()
     Hooks:HookQuestLogTitle()
     coYield()
-    ChatFilter:RegisterEvents()
+    -- TODO: Re-enable for every expansion once Blizzard fixes their issues on TBC
+    if (not Questie.IsTBC) then
+        ChatFilter:RegisterEvents()
+    end
 
     local dateToday = date("%y-%m-%d")
 
-    if Questie.db.profile.showAQWarEffortQuests and ((not Questie.db.profile.aqWarningPrintDate) or (Questie.db.profile.aqWarningPrintDate < dateToday)) then
+    if (not Questie.IsSoD) and Questie.db.profile.showAQWarEffortQuests and ((not Questie.db.profile.aqWarningPrintDate) or (Questie.db.profile.aqWarningPrintDate < dateToday)) then
         Questie.db.profile.aqWarningPrintDate = dateToday
         C_Timer.After(2, function()
             print("|cffff0000-----------------------------|r")
-            Questie:Print("|cffff0000The AQ War Effort quests are shown for you. If your server is done you can hide those quests in the General settings of Questie!|r");
+            Questie:Print("|cffff0000" .. l10n("The AQ War Effort quests are shown for you. If your server is done you can hide those quests in the Icons settings of Questie!") .. "|r");
             print("|cffff0000-----------------------------|r")
         end)
     end
 
-    if Questie.IsTBC and (not Questie.db.profile.isIsleOfQuelDanasPhaseReminderDisabled) then
+    if Questie.IsTBC and ContentPhases.activePhases.TBC == 5 and (not Questie.db.profile.isIsleOfQuelDanasPhaseReminderDisabled) then
         C_Timer.After(2, function()
             Questie:Print(l10n("Current active phase of Isle of Quel'Danas is '%s'. Check the General settings to change the phase or disable this message.", IsleOfQuelDanas.localizedPhaseNames[Questie.db.global.isleOfQuelDanasPhase]))
         end)
@@ -304,12 +318,22 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     QuestieMenu:OnLogin()
 
     coYield()
+    DailyQuests.Initialize()
+
+    coYield()
     if Questie.db.profile.debugEnabled then
         QuestieLoader:PopulateGlobals()
     end
 
     Questie.started = true
 
+    -- We only update this if Questie fully loads to make sure we don't update it on crashes/fast reloads
+    QuestieLib.UpdateLastKnownDailyReset()
+
+    -- register events that rely on questie being initialized
+    EventHandler:RegisterLateEvents()
+
+    -- ! Never implemented
     if (Questie.IsWotlk or Questie.IsTBC) and QuestiePlayer.IsMaxLevel() then
         local lastRequestWasYesterday = Questie.db.global.lastDailyRequestDate ~= date("%d-%m-%y"); -- Yesterday or some day before
         local isPastDailyReset = Questie.db.global.lastDailyRequestResetTime < GetQuestResetTime();
@@ -323,7 +347,11 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     -- We do this last because it will run for a while and we don't want to block the rest of the init
     AvailableQuests.CalculateAndDrawAll()
 
-    Questie:Debug(Questie.DEBUG_INFO, "[QuestieInit:Stage3] Questie init done.")
+    -- Let other addons know that Questie is ready
+    Questie.API.isReady = true
+    QuestieAPI.PropagateOnReady()
+
+    Questie:Debug(Questie.DEBUG_CRITICAL, "[QuestieInit:Stage3] Questie init done.")
 end
 
 -- End of QuestieInit.Stages ******************************************************
@@ -341,7 +369,7 @@ function QuestieInit:LoadDatabase(key)
         end
         QuestieDB[key] = func
         coYield()
-        QuestieDB[key] = QuestieDB[key]()           -- execute the function (returns the table)
+        QuestieDB[key] = QuestieDB[key]() -- execute the function (returns the table)
     else
         Questie:Debug(Questie.DEBUG_DEVELOP, "Database is missing, this is likely do to era vs tbc: ", key)
     end
@@ -372,9 +400,7 @@ function QuestieInit.OnAddonLoaded()
 
         IsleOfQuelDanas.Initialize() -- This has to happen before option init
         QuestieOptions.Initialize()
-
-        ZoneDB.Initialize()
-    end, 0,"Error during AddonLoaded initialization!")
+    end, 0, "Error during AddonLoaded initialization!")
 
     MinimapIcon:Init()
 
@@ -382,6 +408,8 @@ function QuestieInit.OnAddonLoaded()
 
     Migration:Migrate()
 
+    ZoneDB.Initialize()
+    AvailableQuests.Initialize()
     QuestieProfessions:Init()
     QuestXP.Init()
     Phasing.Initialize()
@@ -399,7 +427,7 @@ function QuestieInit:Init()
         -- This needs to be called ASAP otherwise tracked Achievements in the Blizzard WatchFrame shows upon login
         WatchFrameHook.Hide()
 
-        if (not Questie.IsWotlk) and (not Questie.IsCata) then
+        if Expansions.Current < Expansions.Wotlk then
             -- Need to hook this ASAP otherwise the scroll bars show up
             hooksecurefunc("ScrollFrame_OnScrollRangeChanged", function()
                 if TrackedQuestsScrollFrame then
@@ -412,4 +440,33 @@ function QuestieInit:Init()
             end)
         end
     end
+end
+
+--- We really want to wait for the cache to be filled before we continue.
+--- Other addons (e.g. ATT) can interfere with the cache and we need to make sure it's correct.
+---@return table<number>
+function QuestieInit.WaitForValidGameCache()
+    local doWait = true
+    local retries = 0
+    local questIdsChecked
+
+    local timer
+    timer = C_Timer.NewTicker(1, function()
+        local cacheMiss, _, newQuestIdsChecked = QuestLogCache.CheckForChanges(nil)
+        if (not cacheMiss) or retries >= 3 then
+            if retries == 3 then
+                Questie:Debug(Questie.DEBUG_CRITICAL, "QuestieInit: Game Cache did not become valid in 3 seconds, continuing with initialization.")
+            end
+            doWait = false
+            timer:Cancel()
+        end
+        questIdsChecked = newQuestIdsChecked
+        retries = retries + 1
+    end)
+
+    while doWait do
+        coYield()
+    end
+
+    return questIdsChecked
 end

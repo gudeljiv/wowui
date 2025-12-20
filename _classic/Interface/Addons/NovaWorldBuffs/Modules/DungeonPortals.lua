@@ -14,7 +14,7 @@ end
 ---All these marklers are changed to load on demand instead of when addon is loaded to try lessen taint issues with classic maps.
 
 function NWB:createNaxxMarkers()
-	if (naxxLoaded) then
+	if (naxxLoaded or NWB.expansionNum > 2) then
 		return;
 	end
 	naxxLoaded = true;

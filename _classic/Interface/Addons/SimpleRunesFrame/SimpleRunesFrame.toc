@@ -1,7 +1,0 @@
-## Interface: 11504
-## Auther: Cado
-## Version: 1.04
-## Title: Simplified Runes Frame
-## Notes: Improvements to the Season of Discovery runes frame
-
-SimpleRunesFrame.lua

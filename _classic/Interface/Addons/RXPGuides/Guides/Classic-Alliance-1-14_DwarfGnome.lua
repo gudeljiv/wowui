@@ -211,9 +211,9 @@ step << Priest/Mage/Warlock
     .goto 1426,20.627,70.415,0
     >>Kill |cRXP_ENEMY_Rockjaw Troggs|r and |cRXP_ENEMY_Burly Rockjaw Troggs|r
     .complete 170,1 --Kill Rockjaw Trogg (x6)
+    .mob +Rockjaw Trogg
     .complete 170,2 --Kill Burly Rockjaw Trogg (x6)
-    .mob Rockjaw Trogg
-    .mob Burly Rockjaw Trogg
+    .mob +Burly Rockjaw Trogg
 step << Priest
     #season 2
     .goto Dun Morogh,26.733,72.552
@@ -324,9 +324,10 @@ step << Warlock
     >>Kill |cRXP_ENEMY_Rockjaw Troggs|r, |cRXP_ENEMY_Burly Rockjaw Troggs|r, |cRXP_ENEMY_Ragged Young Wolves|r, and |cRXP_ENEMY_Ragged Timber Wolves|r en route
     >>|cRXP_WARN_Try to avoid|r |cRXP_ENEMY_Frostmane Troll Whelps|r
     .complete 170,1 --Kill Rockjaw Trogg (x6)
+    .mob +Rockjaw Trogg
     .complete 170,2 --Kill Burly Rockjaw Trogg (x6)
-    .mob Rockjaw Trogg
-    .mob Burly Rockjaw Trogg
+    .mob +Rockjaw Trogg
+    .mob +Burly Rockjaw Trogg
     .mob Ragged Young Wolf
     .mob Ragged Timber Wolf
 step << Warlock
@@ -419,9 +420,9 @@ step
     .goto 1426,20.627,70.415,0
     >>Kill |cRXP_ENEMY_Rockjaw Troggs|r and |cRXP_ENEMY_Burly Rockjaw Troggs|r
     .complete 170,1 --Kill Rockjaw Trogg (x6)
+    .mob +Rockjaw Trogg
     .complete 170,2 --Kill Burly Rockjaw Trogg (x6)
-    .mob Rockjaw Trogg
-    .mob Burly Rockjaw Trogg
+    .mob +Burly Rockjaw Trogg
 step
 #season 0,1
     #label Talin
@@ -481,9 +482,9 @@ step << Paladin/Warlock/Hunter
     .goto 1426,29.280,75.500,50,0
     >>Kill |cRXP_ENEMY_Rockjaw Troggs|r and |cRXP_ENEMY_Burly Rockjaw Troggs|r
     .complete 170,1 --Kill Rockjaw Trogg (x6)
+    .mob +Rockjaw Trogg
     .complete 170,2 --Kill Burly Rockjaw Trogg (x6)
-    .mob Rockjaw Trogg
-    .mob Burly Rockjaw Trogg
+    .mob +Burly Rockjaw Trogg
 step << Paladin/Warlock
     #xprate <1.5
     #loop
@@ -673,9 +674,9 @@ step << !Paladin !Warlock !Hunter
     .waypoint 1426,29.303,77.337,55,0
     >>Kill |cRXP_ENEMY_Rockjaw Troggs|r and |cRXP_ENEMY_Burly Rockjaw Troggs|r
     .complete 170,1 --Kill Rockjaw Trogg (x6)
+    .mob +Rockjaw Trogg
     .complete 170,2 --Kill Burly Rockjaw Trogg (x6)
-    .mob Rockjaw Trogg
-    .mob Burly Rockjaw Trogg
+    .mob +Burly Rockjaw Trogg
 step << Warrior/Paladin
     #season 2
     #completewith Observations
@@ -1996,6 +1997,8 @@ step << Warrior/Paladin/Rogue
     >>Kill |cRXP_ENEMY_Crag Boars|r and |cRXP_ENEMY_Large Crag Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r and |cRXP_LOOT_Crag Boar Ribs|r
     >>Kill |cRXP_ENEMY_Young Black Bears|r. Loot them for their |cRXP_LOOT_Fur|r
     .complete 317,1 --Collect Chunk of Boar Meat (x4)
+    .mob +Crag Boar
+    .mob +Large Crag Boar
     .goto 1426,43.704,65.296,0
     .goto 1426,47.657,64.039,0
     .goto 1426,46.285,59.797,0
@@ -2012,6 +2015,7 @@ step << Warrior/Paladin/Rogue
     .collect 2886,6,384,1 --Collect Crag Boar Rib (x6)
     .disablecheckbox
     .complete 317,2 --Collect Thick Bear Fur (x2)
+    .mob +Young Black Bear
     .goto 1426,43.452,58.760,0
     .goto 1426,44.898,50.142,0
     .goto 1426,50.555,51.778,0
@@ -2024,7 +2028,6 @@ step << Warrior/Paladin/Rogue
     .goto 1426,48.092,49.904,60,0
     .goto 1426,49.177,51.013,60,0
     .goto 1426,50.555,51.778,60,0
-    .mob Young Black Bear
     .mob Crag Boar
     .mob Large Crag Boar
 step << Warrior/Paladin/Rogue
@@ -3415,6 +3418,7 @@ step
     >>Kill |cRXP_ENEMY_Elder Crag Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
     >>|cRXP_WARN_This will be used to level your|r |T133971:0|t[Cooking] |cRXP_WARN_later|r
     >>|cRXP_WARN_You need 50|r |T133971:0|t[Cooking] |cRXP_WARN_for a quest in Darkshire later|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Elder Crag Boar
 --  .skill cooking,<10,1
@@ -3455,7 +3459,7 @@ step
     .goto 1426,62.538,46.195
     >>Kill |cRXP_ENEMY_Vagash|r. Loot him for his |cRXP_LOOT_Fang|r
     >>|cRXP_WARN_Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him|r
-    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be solo'd on any class|r
+    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be soloed on any class|r
     .link https://youtu.be/70PX093soq4?si=-cIoU8WWdbC0IdHZ&t=3193 >> |cRXP_WARN_Click here for video reference|r << Mage
     .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> |cRXP_WARN_Click here for video reference|r << !Mage
     .complete 314,1 --Collect Fang of Vagash (1)
@@ -3497,6 +3501,7 @@ step
     #completewith QuarryStart
     .goto 1426,66.356,51.02,0
     >>Kill |cRXP_ENEMY_Large Crag Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Large Crag Boar
 --  .skill cooking,<10,1
@@ -3525,29 +3530,11 @@ step
     #label QuarryStart
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senator Mehr Stonehallow|r and |cRXP_FRIENDLY_Foreman Stonebrow|r
     .accept 433 >> Accept The Public Servant
+    .target +Senator Mehr Stonehallow
     .goto Dun Morogh,68.671,55.969
     .accept 432 >> Accept Those Blasted Troggs!
     .goto Dun Morogh,69.084,56.330
-    .target Senator Mehr Stonehallow
-    .target Foreman Stonebrow
-step << Warrior
-    #season 2
-    #completewith RockjawEnd
-    >>Kill |cRXP_ENEMY_Rockjaw Troggs|r. Loot them for their |cRXP_LOOT_Pristine Trogg Heart|r
-    .collect 208158,1 -- Pristine Trogg Heart (1)
-    .mob Rockjaw Ambusher
-    .mob Rockjaw Skullthumper
-    .mob Rockjaw Bonesnapper
-    .train 403475,1
-step << Rogue
-    #season 2
-    #completewith RockjawEnd
-    >>|T133644:0|t[Pick Pocket] the |cRXP_ENEMY_Rockjaw Skullthumpers|r and |cRXP_ENEMY_Rockjaw Bonesnappers|r. Loot them for the |T134327:0|t[|cRXP_LOOT_Top-Left Map Piece]|r
-    >>|cRXP_WARN_You must be in|r |T132320:0|t[Stealth] |cRXP_WARN_to use|r |T133644:0|t[Pick Pocket]
-    .collect 208215,1 -- Top-Left Map Piece (1)
-    .mob Rockjaw Skullthumper
-    .mob Rockjaw Bonesnapper
-    .train 398196,1
+    .target +Foreman Stonebrow
 step << Dwarf Paladin
     #xprate >1.49
     #sticky
@@ -3615,33 +3602,15 @@ step
     #label RockjawEnd
     #requires Skullthumpers
 --XXREQ Placeholder invis step until multiple requires per step
-step << Rogue
-    #season 2
-    .goto Dun Morogh,70.8,56.0
-    >>|T133644:0|t[Pick Pocket] the |cRXP_ENEMY_Rockjaw Skullthumpers|r and |cRXP_ENEMY_Rockjaw Bonesnappers|r. Loot them for the |T134327:0|t[|cRXP_LOOT_Top-Left Map Piece]|r
-    >>|cRXP_WARN_You must be in|r |T132320:0|t[Stealth] |cRXP_WARN_to use|r |T133644:0|t[Pick Pocket]
-    .collect 208215,1 -- Top-Left Map Piece (1)
-    .mob Rockjaw Skullthumper
-    .mob Rockjaw Bonesnapper
-    .train 398196,1
-step << Warrior
-    #season 2
-    >>Kill |cRXP_ENEMY_Rockjaw Troggs|r. Loot them for their |cRXP_LOOT_Pristine Trogg Heart|r
-    .collect 208158,1 -- Pristine Trogg Heart (1)
-    .goto Dun Morogh,70.6,56.6
-    .mob Rockjaw Ambusher
-    .mob Rockjaw Skullthumper
-    .mob Rockjaw Bonesnapper
-    .train 403475,1
 step
     #requires PalaCloth << Paladin -->1.49 or higher
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r and |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
     .turnin 432 >> Turn in Those Blasted Troggs!
+    .target +Senator Mehr Stonehallow
     .goto Dun Morogh,69.084,56.330
     .turnin 433 >> Turn in The Public Servant
     .goto Dun Morogh,68.671,55.969
-    .target Senator Mehr Stonehallow
-    .target Foreman Stonebrow
+    .target +Foreman Stonebrow
 step
     #optional
     #loop
@@ -3771,6 +3740,7 @@ step
     .goto 1426,81.040,43.456,0
     .goto 1426,80.583,36.040,0
     >>Kill |cRXP_ENEMY_Scarred Crag Boars|r and |cRXP_ENEMY_Elder Crag Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Scarred Crag Boar
     .mob Elder Crag Boar
@@ -3988,6 +3958,7 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
     >>|cRXP_WARN_This will be used to level your|r |T133971:0|t[Cooking] |cRXP_WARN_later|r
     >>|cRXP_WARN_You need 50|r |T133971:0|t[Cooking] |cRXP_WARN_for a quest in Darkshire later|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Mountain Boar
 --  .skill cooking,<10,1
@@ -4000,13 +3971,13 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Spider Ichor|r
     .collect 3172,3,418,1 --Collect Boar Intestines (x3)
+    .mob +Mountain Boar
     .collect 3173,3,418,1 --Collect Bear Meat (x3)
+    .mob +Elder Black Bear
     .collect 3174,3,418,1 --Collect Spider Ichor (x3)
+    .mob +Forest Lurker
     >>|cRXP_WARN_Save any|r |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r |cRXP_WARN_to use for leveling |T133971:0|t[Cooking] |cRXP_WARN_later|r
     >>|cRXP_WARN_Don't go out of your way to complete this right now. You'll come back to Loch Modan soon|r
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
     .isOnQuest 418
     .subzoneskip 925 --Algaz Station
 step
@@ -4487,11 +4458,11 @@ step << Warrior
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bixi Wobblebonk|r and |cRXP_FRIENDLY_Buliwyf Stonehand|r
     >>Train Thrown and 2h Maces if you didn't earlier
     .train 2567 >> Train Thrown
+    .target +Bixi Wobblebonk
     .goto Ironforge,62.237,89.628
     .train 199 >> Train 2h Maces
     .goto Ironforge,61.177,89.508
-    .target Bixi Wobblebonk
-    .target Buliwyf Stonehand
+    .target +Buliwyf Stonehand
 step << Warrior
     .goto 1455,62.378,88.671
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brenwyn Wintersteel|r downstairs
@@ -4944,6 +4915,7 @@ step << Warlock
     .goto 1429,61.911,78.274,0
     .goto 1429,65.619,78.388,0
     >>Kill |cRXP_ENEMY_Rockhide Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Rockhide Boar
 --  .skill cooking,<10,1
@@ -4978,6 +4950,7 @@ step << Warlock
     .goto 1429,89.657,75.373,0
     .goto 1429,87.250,75.853,0
     >>Kill |cRXP_ENEMY_Prowlers|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Stringy Wolf Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the wolves you're passing by|r
     .collect 2672,50,86,1,0x20,cooking --Stringy Wolf Meat (10-50)
     .mob Prowler
 --  .skill cooking,<10,1
@@ -5304,11 +5277,11 @@ step << Paladin
     .train 410015,3
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ma Stonefield|r and |cRXP_FRIENDLY_"Auntie" Bernice Stonefield|r
-    .target Ma Stonefield
-    .target "Auntie" Bernice Stonefield
     .accept 88 >> Accept Princess Must Die!
+    .target +Ma Stonefield
     .goto Elwynn Forest,34.660,84.483
     .accept 85 >> Accept Lost Necklace
+    .target +"Auntie" Bernice Stonefield
     .goto Elwynn Forest,34.486,84.252
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Billy Maclure|r
@@ -5430,9 +5403,9 @@ step
     >>Kill |cRXP_ENEMY_Prowlers|r and |cRXP_ENEMY_Young Forest Bears|r
     >>|cRXP_WARN_Prioritize killing any |cRXP_ENEMY_Young Forest Bears|r you see|r
     .complete 52,1 --Kill Prowler (x8)
+    .mob +Prowler
     .complete 52,2 --Kill Young Forest Bear (x5)
-    .mob Prowler
-    .mob Young Forest Bear
+    .mob +Young Forest Bear
 step
     #era
     >>Click |cRXP_PICK_A half-eaten body|r on the ground
@@ -5471,9 +5444,9 @@ step
     .goto Elwynn Forest,86.99,64.83
     >>Kill |cRXP_ENEMY_Prowlers|r and |cRXP_ENEMY_Young Forest Bears|r
     .complete 52,1 --Kill Prowler (x8)
+    .mob +Prowler
     .complete 52,2 --Kill Young Forest Bear (x5)
-    .mob Prowler
-    .mob Young Forest Bear
+    .mob +Young Forest Bear
 step
     #era
     .goto Elwynn Forest,76.8,62.4,40,0
@@ -5521,9 +5494,9 @@ step << Warlock
     >>|cRXP_WARN_Focus on killing |cRXP_ENEMY_Surena Caledon|r very quickly|r
     >>|cRXP_WARN_Cast|r |T136183:0|t[Fear] |cRXP_WARN_on |cRXP_ENEMY_Morgan the Collector|r continously|r
     .complete 1688,1 --Surena's Choker (1)
+    .mob +Surena Caledon
     .complete 147,1 -- The Collector's Ring (1)
-    .mob Surena Caledon
-    .mob Morgan the Collector
+    .mob +Morgan the Collector
 step << Warlock
     .goto Elwynn Forest,71.10,80.66
     >>Kill |cRXP_ENEMY_Surena Caledon|r. Loot her for her |cRXP_LOOT_Choker|r
@@ -5768,12 +5741,12 @@ step
     #label WestEntry
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Furlbrow|r and |cRXP_FRIENDLY_Verna Furlbrow|r
     .accept 64 >> Accept The Forgotten Heirloom
+    .target +Farmer Furlbrow
     .goto Westfall,59.95,19.35
     .accept 151 >> Accept Poor Old Blanchy
     .accept 36 >> Accept Westfall Stew
     .goto Westfall,59.92,19.42
-    .target Farmer Furlbrow
-	.target Verna Furlbrow
+	.target +Verna Furlbrow
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Saldean|r
     .target Farmer Saldean
@@ -5968,81 +5941,11 @@ step
     .fp Stormwind >> Get the Stormwind City flight path
     .target Dungar Longdrink
     .dungeon !DM
-step << Paladin
-    #xprate >1.49
-    #season 2
-    #completewith next
-    .zone Elwynn Forest >> Exit Stormwind
-    .zoneskip Stormwind City,1
-    .train 410015,1
-    .itemcount 205864,1 --Charred Note (1)
-step << Paladin
-    #xprate >1.49
-    #season 2
-    #completewith next
-    #label Island
-    .goto Duskwood,4.33,28.26,50 >>Travel toward |cRXP_FRIENDLY_Ada Gelhardt|r on the island in Duskwood
-    .train 410015,1
-    .itemcount 205864,1 --Charred Note (1)
-step << Paladin
-    #xprate >1.49
-    #season 2
-    #completewith next
-    .goto Duskwood,4.33,28.26
-    .gossipoption 109610 >>Talk to |cRXP_FRIENDLY_Ada Gelhardt|r to start a fight
-    .target Ada Gelhardt
-    .skipgossip 205153,1
-    .train 410015,1
-    .itemcount 205864,1 --Charred Note (1)
---XX 109612 "As one candle is snuffed out, another is lit"
---XX 109611 "I've been sent by brother Romulus. Please, Ada, return with me to the Cathedral of Light"
---XX 109610 "I see. I'm sorry it has come to this, sister. (Fight Ada)"
-step << Paladin
-    #xprate >1.49
-    #season 2
-    #requires Island
-    .goto Duskwood,4.33,28.26
-    >>Defeat |cRXP_ENEMY_Ada Gelhardt|r
-    >>|cRXP_WARN_Remember to pre-cast|r |T135924:0|t[Seal of the Crusader] |cRXP_WARN_on her|r
-    >>|cRXP_WARN_Be careful as she casts|r |T136197:0|t[Shadow Shock] |cRXP_WARN_(instantly deals 45 shadow damage. Costs her 75 mana. You should kill her quick enough for her to only cast it 3 times)|r
-    >>|cRXP_WARN_After defeating |cRXP_ENEMY_Ada Gelhardt|r:|r
-    >>Talk to |cRXP_FRIENDLY_Ada Gelhardt|r again to receive the |T134419:0|t[Rune of Martyrdom]
-    .collect 205897,1 --Rune of Martyrdom (1)
-    .target Ada Gelhardt
-    .skipgossip 205153,1
-    .train 410015,1
-    .itemcount 205864,1 --Charred Note (1)
---XX Must have had the Charred Note to unlock the dialogue
-step << Paladin
-    #xprate >1.49
-    #season 2
-    #sticky
-    .destroy 205864 >> Delete the |T134939:0|t[Charred Note] from your bags, as it's no longer needed
-step << Paladin
-    #xprate >1.49
-    #season 2
-    .cast 402265 >>|cRXP_WARN_Use the|r |T134419:0|t[Rune of Martyrdom] |cRXP_WARN_to learn|r |T133815:0|t[Engrave Chest - Seal of Martyrdom]
-    .use 205897
-    .itemcount 205897,1 --Rune of Martyrdom (1)
-    .train 410015,1
-step << Paladin
-    #xprate >1.49
-    #season 2
-    .goto Westfall,36.24,54.52
-    .engrave 5 >>|cRXP_WARN_Engrave your|r |T134596:0|t|cRXP_LOOT_[Chest]|r with|r |T133815:0|t[Engrave Chest - Seal of Martyrdom]
-    >>|cRXP_WARN_Remember to put|r |T135961:0|t[Seal of Martyrdom] |cRXP_WARN_onto your action bars. It is better than both|r |T132325:0|t[Seal of Righteousness] |cRXP_WARN_and|r |T132347:0|t[Seal of Command] |cRXP_WARN_(until you get|r |T133815:0|t[Engrave Chest - Divine Storm]|cRXP_WARN_)|r
-    .train 410015,3
 step
     #season 0,1 << Paladin
     #xprate >1.49
     .hs >> Hearth to Loch Modan
     .cooldown item,6948,>180--wait for cd if <3min
-    .zoneskip Loch Modan
-    .zoneskip Wetlands
-step << Paladin
-    #season 2
-    #xprate >1.49
-    .hs >> Hearth to Loch Modan
     .zoneskip Loch Modan
     .zoneskip Wetlands
 step
@@ -6198,110 +6101,6 @@ step << Dwarf/Gnome
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brock Stoneseeker|r
     .turnin 6392 >> Turn in Return to Brock
     .target Brock Stoneseeker
-step << Rogue
-    #season 2
-    #optional
-    #label BoarMeatLochRogue
-    #completewith SaberSlash1
-    .goto 1426,70.845,51.784,0
-    .goto 1426,73.533,50.850,0
-    .goto 1426,75.353,48.533,0
-    .goto 1426,79.881,46.805,0
-    .goto 1426,81.040,43.456,0
-    .goto 1426,80.583,36.040,0
-    >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
-    .collect 769,10,2178,1,0x20,cooking --Chunk of Boar Meat (1-10)
-    .mob Mountain Boar
-    .skill cooking,10,1 --XX Shows if cooking skill is <10
-    .subzoneskip 146 --Stonewrought Dam
-    .subzoneskip 149 --Silver Stream Mine
-step << Rogue
-    #season 2
-    #optional
-    #requires BoarMeatLochRogue
-    #completewith SaberSlash1
-    .goto 1426,70.845,51.784,0
-    .goto 1426,73.533,50.850,0
-    .goto 1426,75.353,48.533,0
-    .goto 1426,79.881,46.805,0
-    .goto 1426,81.040,43.456,0
-    .goto 1426,80.583,36.040,0
-    >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
-    .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
-    .mob Mountain Boar
---  .skill cooking,<10,1
-    .skill cooking,50,1 --XX Shows if cooking skill is between 1-50
-    .subzoneskip 146 --Stonewrought Dam
-    .subzoneskip 149 --Silver Stream Mine
-step << Rogue
-    #season 2
-    #optional
-    #completewith SaberSlash1
-    >>Kill |cRXP_ENEMY_Elder Black Bears|r. Loot them for their |cRXP_LOOT_Bear Meat|r
-    >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
-    >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
-    .collect 3172,3,418,1 --Collect Boar Intestines (x3)
-    .collect 3173,3,418,1 --Collect Bear Meat (x3)
-    .collect 3174,3,418,1 --Collect Spider Ichor (x3)
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
-    .subzoneskip 146 --Stonewrought Dam
-    .subzoneskip 149 --Silver Stream Mine
-step << Rogue
-    #season 2
-    #completewith SaberSlash1
-    #optional
-    #loop
-    .goto Loch Modan,25.05,30.19,0
-    .goto Loch Modan,26.06,43.44,0
-    .goto Loch Modan,37.71,16.84,0
-    .waypoint Loch Modan,37.71,16.84,50,0
-    .waypoint Loch Modan,35.48,16.82,50,0
-    .waypoint Loch Modan,25.05,30.19,50,0
-    .waypoint Loch Modan,26.06,43.44,50,0
-    >>Kill |cRXP_ENEMY_Tunnel Rats|r. Loot them for their |cRXP_LOOT_Ears|r
-    .complete 416,1 --Collect Tunnel Rat Ear (x12)
-    .mob Tunnel Rat Scout
-    .mob Tunnel Rat Vermin
-    .mob Tunnel Rat Forager
-    .mob Tunnel Rat Geomancer
-    .mob Tunnel Rat Digger
-    .mob Tunnel Rat Surveyor
-    .subzoneskip 146 --Stonewrought Dam
-step << Rogue
-    #season 2
-    #optional
-    #label SaberSlash1
-    #completewith SaberSlashEnd
-    .goto 1432,40.875,13.760
-    .subzone 146 >> Travel toward the Stonewrought Dam
-    .train 424785,1
-step << Rogue
-    #season 2
-    #requires SaberSlash1
-    #completewith SaberSlashEnd
-    .goto 1432,40.875,13.760,40,0
-    .goto 1432,42.876,10.879,40,0
-    .goto Loch Modan,46.20,13.15,10 >> |cRXP_WARN_Walk along the Stonewrought Dam. Carefully drop down onto the ledge in the center of the dam. Follow the arrow|r
-    .train 424785,1
-step << Rogue
-    #season 2
-    #label SaberSlashEnd
-    .goto Loch Modan,46.373,12.666
-    >>Open the |cRXP_PICK_Stonemason's Toolbox|r on the ledge. Loot it for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Saber Slash|r]
-    .collect 208772,1 -- Rune of Saber Slash (1)
-    .train 424785,1
-step << Rogue
-    #season 2
-    .cast 402265 >> |cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Saber Slash|r]
-    .use 208772 -- Rune of Saber Slash (1)
-    .train 424785,1
-step << Rogue
-    #season 2
-    .goto Loch Modan,45.823,12.652
-    .cast 6477 >> Click the |cRXP_PICK_Escape Rope|r to return to the top
-    .subzoneskip 146,1
 step
     #optional
     #label BoarMeatLoch3
@@ -6329,6 +6128,7 @@ step
     .goto 1426,81.040,43.456,0
     .goto 1426,80.583,36.040,0
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Mountain Boar
 --  .skill cooking,<10,1
@@ -6342,11 +6142,11 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
     .collect 3172,3,418,1 --Collect Boar Intestines (x3)
+    .mob +Mountain Boar
     .collect 3173,3,418,1 --Collect Bear Meat (x3)
+    .mob +Elder Black Bear
     .collect 3174,3,418,1 --Collect Spider Ichor (x3)
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
+    .mob +Forest Lurker
     .subzoneskip 146 --Stonewrought Dam
     .subzoneskip 149 --Silver Stream Mine
 step
@@ -6388,24 +6188,6 @@ step
     .mob Tunnel Rat Geomancer
     .mob Tunnel Rat Digger
     .mob Tunnel Rat Surveyor
-step << Priest
-    #season 2
-    #label OffCoin1
-    #completewith Gear
-    >>Kill |cRXP_ENEMY_Tunnel Rat Geomancers|r, |cRXP_ENEMY_Tunnel Rat Diggers|r, and |cRXP_ENEMY_Tunnel Rat Surveyors|r. Loot them for an |T237281:0|t[|cRXP_LOOT_Offering Coin|r]
-    .collect 208823,1 -- Offering Coin (1)
-    .mob Tunnel Rat Geomancer
-    .mob Tunnel Rat Digger
-    .mob Tunnel Rat Surveyor
-    .train 425215,1
-step << Priest
-    #season 2
-    #requires OffCoin1
-    #completewith Gear
-    .goto Loch Modan,36.689,20.964
-    .use 208823 >> |cRXP_WARN_Use the|r |T237281:0|t[|cRXP_LOOT_Offering Coin|r] |cRXP_WARN_at the well inside of the Silverstream Mine|r |cRXP_WARN_to receive the|r |T136222:0|t[|cRXP_FRIENDLY_Memory of a Devout Champion|r]
-    .collect 205905,1 -- Memory of a Devout Champion (1)
-    .train 425215,1
 step
     #optional
     #label SilverMine
@@ -6424,36 +6206,6 @@ step << !Paladin !Warrior
     >>Open the |cRXP_PICK_Miners' League Crates|r inside the mine. Loot them for the |cRXP_LOOT_Miners' Gear|r
     .complete 307,1 --Miners' Gear (4)
 --XX Gear label location changes depending on Paladin/Warrior vendor, Priest SoD rune, Mage SoD 1.5x+ Runes
-step << Mage
-    #xprate <1.49
-    #season 2
-    #label Gear
-    .goto Loch Modan,35.93,22.55
-    >>Open the |cRXP_PICK_Miners' League Crates|r inside the mine. Loot them for the |cRXP_LOOT_Miners' Gear|r
-    .complete 307,1 --Miners' Gear (4)
-step << Priest
-    #season 2
-    .goto Loch Modan,35.6,20.6
-    >>Kill |cRXP_ENEMY_Tunnel Rat Geomancers|r, |cRXP_ENEMY_Tunnel Rat Diggers|r, and |cRXP_ENEMY_Tunnel Rat Surveyors|r. Loot them for an |T237281:0|t[|cRXP_LOOT_Offering Coin|r]
-    .collect 208823,1 -- Offering Coin (1)
-    .mob Tunnel Rat Geomancer
-    .mob Tunnel Rat Digger
-    .mob Tunnel Rat Surveyor
-    .train 425215,1
-step << Priest
-    #season 2
-    #label Gear
-    .goto Loch Modan,36.689,20.964
-    .use 208823 >> |cRXP_WARN_Use the|r |T237281:0|t[|cRXP_LOOT_Offering Coin|r] |cRXP_WARN_at the well inside of the Silverstream Mine|r |cRXP_WARN_to receive the|r |T136222:0|t[|cRXP_FRIENDLY_Memory of a Devout Champion|r]
-    .collect 205905,1 -- Memory of a Devout Champion (1)
-    .train 425215,1
-step << Priest
-    #season 2
-    #completewith PawsDelivery
-    .train 425215 >> |cRXP_WARN_Use the|r |T136222:0|t[|cRXP_FRIENDLY_Memory of a Devout Champion|r] |cRXP_WARN_to train|r |T237566:0|t[Twisted Faith]
-    >>|cRXP_WARN_You must have a|r |T135934:0|t|T136057:0|t[Meditation] |cRXP_WARN_buff by typing /kneel in a holy area such as, Northshire Abbey, Stormwind Cathedral, the Altars of Light in Anvilmar, Loch Modan or the Mystic Ward in Ironforge|r
-    .use 205905
-    .itemcount 205905,1
 step << Paladin/Warrior
     #ssf
     #label Gear
@@ -6500,62 +6252,6 @@ step << Paladin/Warrior
     .itemcount 4777,1
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<11.7
     .xp <13,1
-step << Mage
-    #xprate >1.49
-    #season 2
-    #optional
-    #completewith next
-    #label Gear
-    .goto 1432,47.798,19.495,80 >> Swim toward the Trogg Islands
-step << Mage
-    #xprate >1.49
-    #season 2
-    #loop
-    .goto 1432,47.798,19.495,0
-    .goto 1432,48.910,29.948,0
-    .goto 1432,50.491,23.953,0
-    .goto 1432,47.798,19.495,60,0
-    .goto 1432,47.614,21.080,60,0
-    .goto 1432,49.113,20.970,60,0
-    .goto 1432,48.910,29.948,60,0
-    .goto 1432,49.590,29.896,60,0
-    .goto 1432,50.384,26.997,60,0
-    .goto 1432,50.491,23.953,60,0
-    >>Kill |cRXP_ENEMY_Stonesplinter Seers|r. Loot them for the |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes]|r
-    .collect 208854,1
-    .mob Stonesplinter Seer
-    .train 415936,1
-step << Mage
-    #xprate >1.49
-    #season 2
-    #completewith Regeneration
-    .collect 211779,1 >>You need a |T135933:0|t[Comprehension Charm] from a |cRXP_FRIENDLY_Reagent Vendor|r to use the |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes]|r
-    .train 415936 >>|cRXP_WARN_Use the|r |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes|r] |cRXP_WARN_to train|r |T236220:0|t[Living Bomb]
-    .use 208854
-step << Mage
-    #xprate >1.49
-    #season 2
-    #optional
-    #completewith next
-    .goto 1432,54.33,26.82,5 >> Enter the tent
-    .train 401767,1
-step << Mage
-    #xprate >1.49
-    #season 2
-    .goto 1432,54.33,26.82,5,0
-    .goto 1432,54.17,27.03
-    >>Open the |cRXP_PICK_Pile of Stolen Books|r inside. Loot them for the |T134939:0|t|cRXP_LOOT_[Spell Notes: TENGI RONEERA]|r
-    .collect 208754,1 --Spell Notes: TENGI RONEERA (1)
-    .train 401767,1
-step << Mage
-    #xprate >1.49
-    #season 2
-    #completewith PawsDelivery
-    #label Regeneration
-    .collect 211779,1 >>You need a |T135933:0|t[Comprehension Charm] from a |cRXP_FRIENDLY_Reagent Vendor|r to use the |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes]|r
-    .train 401767 >>|cRXP_WARN_Use the|r |T134939:0|t|cRXP_LOOT_[Spell Notes: TENGI RONEERA]|r |cRXP_WARN_to learn|r |T133815:0|t[Engrave Chest - Regeneration]
-    .use 208754
-    .itemcount 208754,1 --Spell Notes: TENGI RONEERA (1)
 step
     #xprate >1.59
     #loop
@@ -6620,6 +6316,7 @@ step
     .goto 1426,81.040,43.456,0
     .goto 1426,80.583,36.040,0
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Mountain Boar
 --  .skill cooking,<10,1
@@ -6631,12 +6328,12 @@ step
     >>Kill |cRXP_ENEMY_Elder Black Bears|r. Loot them for their |cRXP_LOOT_Bear Meat|r
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
-    .collect 3173,3,418,1 --Bear Meat (3)
-    .collect 3172,3,418,1 --Boar Intestines (3)
-    .collect 3174,3,418,1 --Spider Ichor (3)
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
+    .collect 3172,3,418,1 --Collect Boar Intestines (x3)
+    .mob +Mountain Boar
+    .collect 3173,3,418,1 --Collect Bear Meat (x3)
+    .mob +Elder Black Bear
+    .collect 3174,3,418,1 --Collect Spider Ichor (x3)
+    .mob +Forest Lurker
     .subzoneskip 925 --Algaz Station
 step
     #optional
@@ -6684,6 +6381,7 @@ step
     .goto 1426,81.040,43.456,0
     .goto 1426,80.583,36.040,0
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r
+    >>|cRXP_WARN_Don't go out of your way to farm this now. Simply kill and loot all the boars you're passing by|r
     .collect 769,50,2178,1,0x20,cooking --Chunk of Boar Meat (10-50)
     .mob Mountain Boar
 --  .skill cooking,<10,1
@@ -6695,6 +6393,7 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
     .collect 3173,3,418,1 --Bear Meat (3)
+    .mob +Elder Black Bear
     .goto Loch Modan,26.9,10.7,90,0
     .goto Loch Modan,30.9,10.6,90,0
     .goto Loch Modan,28.6,15.4,90,0
@@ -6709,6 +6408,7 @@ step
     .goto Loch Modan,39.4,33.3,90,0
     .goto Loch Modan,26.9,10.7
     .collect 3172,3,418,1 --Boar Intestines (3)
+    .mob +Mountain Boar
     .goto Loch Modan,38.0,34.9,90,0
     .goto Loch Modan,37.1,39.8,90,0
     .goto Loch Modan,29.8,35.9,90,0
@@ -6721,6 +6421,7 @@ step
     .goto Loch Modan,28.6,22.6,90,0
     .goto Loch Modan,38.0,34.9
     .collect 3174,3,418,1 --Spider Ichor (3)
+    .mob +Forest Lurker
     .goto Loch Modan,31.9,16.4,90,0
     .goto Loch Modan,28.0,20.6,90,0
     .goto Loch Modan,33.8,40.5,90,0
@@ -6732,9 +6433,6 @@ step
     .goto Loch Modan,36.2,30.9,90,0
     .goto Loch Modan,39.0,32.1,90,0
     .goto Loch Modan,31.9,16.4
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
 step
     #xprate <1.59
     .line Loch Modan,36.72,41.97,37.24,43.19,37.33,45.63,36.77,46.20,35.19,46.88,32.67,49.71,35.19,46.88,36.77,46.20,37.33,45.63,37.24,43.19,36.72,41.97
@@ -6780,22 +6478,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vidra Hearthstove|r
     .turnin 418 >> Turn in Thelsamar Blood Sausages
     .target Vidra Hearthstove
-step << Mage
-    #season 2 --XX If SoD mages have living bomb, you're fine to abandon trogg qs
-    #optional
-    #sticky
-    #label DefenseAbandon
-    .abandon 224 >> Abandon In Defense of the King's Lands
-    .train 415936,3 --Living Bomb Trained
-    .xp <14,1
-step << Mage
-    #season 2
-    #optional
-    #sticky
-    #label TroggAbandon
-    .abandon 267 >> Abandon The Trogg Threat
-    .train 415936,3 --Living Bomb Trained
-    .xp <14,1 --Show if player is 14+
 step << !Dwarf/!Paladin --XX Dwarf palas need to do class q
     #season 0,1 << Warrior/Mage --SoD warriors and mages need to do rune (Quick Strike, Living Bomb)
     #optional
@@ -6836,152 +6518,14 @@ step
     >>|cRXP_WARN_Be careful as |cRXP_ENEMY_Stonesplinter Scouts|r cast|r |T132222:0|t[Shoot] |cRXP_WARN_(Ranged Cast: Deals 14-20 damage)|r
     >>|cRXP_WARN_This is a hyperspawn area. You should not need to move from here|r
     .complete 224,1 --Kill Stonesplinter Trogg (x10)
+    .mob +Stonesplinter Trogg
     .complete 224,2 --Kill Stonesplinter Scout (x10)
+    .mob +Stonesplinter Scout
     .complete 267,1 --Collect Trogg Stone Tooth (x8)
-    .mob Stonesplinter Trogg
-    .mob Stonesplinter Scout
+    .mob +Stonesplinter Trogg
+    .mob +Stonesplinter Scout
     .isOnQuest 224
     .isOnQuest 267
-step << Mage
-    #xprate >1.49
-    #season 2
-    .goto Loch Modan,26.67,56.94
-    >>Kill |cRXP_ENEMY_Stonesplinter Troggs|r and |cRXP_ENEMY_Stonesplinter Scouts|r. Loot them for their |cRXP_LOOT_Trogg Stone Teeth|r
-    >>|cRXP_WARN_Be careful as |cRXP_ENEMY_Stonesplinter Scouts|r cast|r |T132222:0|t[Shoot] |cRXP_WARN_(Ranged Cast: Deals 14-20 damage)|r
-    >>|cRXP_WARN_This is a hyperspawn area. You should not need to move from here|r
-    .complete 224,1 --Kill Stonesplinter Trogg (x10)
-    .complete 224,2 --Kill Stonesplinter Scout (x10)
-    .complete 267,1 --Collect Trogg Stone Tooth (x8)
-    .mob Stonesplinter Trogg
-    .mob Stonesplinter Scout
-    .isOnQuest 224
-    .isOnQuest 267
-step << Warrior
-    #season 2
-    #sticky
-    #label Geode
-    #loop
-    .goto Loch Modan,27.01,48.74,0
-    .goto Loch Modan,27.68,56.83,0
-    .goto Loch Modan,33.35,71.59,0
-    .goto Loch Modan,31.54,74.96,0
-    .waypoint Loch Modan,27.01,48.74,50,0
-    .waypoint Loch Modan,27.68,56.83,50,0
-    .waypoint Loch Modan,33.35,71.59,50,0
-    .waypoint Loch Modan,31.54,74.96,50,0
-    .waypoint Loch Modan,33.88,76.58,50,0
-    >>Kill |cRXP_ENEMY_Troggs|r. Loot them for a |cRXP_LOOT_Skull-Shaped Geode|r
-    .collect 208847,1 -- Skull-Shaped Geode (1)
-    .mob Stonesplinter Scout
-    .mob Stonesplinter Trogg
-    .train 425443,1
-step << Mage/Warrior
-    #xprate <1.5 << Mage
-    #season 2
-    #loop
-    .goto Loch Modan,27.01,48.74,0
-    .goto Loch Modan,27.68,56.83,0
-    .goto Loch Modan,33.35,71.59,0
-    .goto Loch Modan,31.54,74.96,0
-    .goto Loch Modan,27.01,48.74,50,0
-    .goto Loch Modan,27.68,56.83,50,0
-    .goto Loch Modan,33.35,71.59,50,0
-    .goto Loch Modan,31.54,74.96,50,0
-    .goto Loch Modan,33.88,76.58,50,0
-    >>Kill |cRXP_ENEMY_Stonesplinter Troggs|r and |cRXP_ENEMY_Stonesplinter Scouts|r. Loot them for their |cRXP_LOOT_Teeth|r
-    .complete 224,1 --Kill Stonesplinter Trogg (x10)
-    .complete 224,2 --Kill Stonesplinter Scout (x10)
-    .complete 267,1 --Collect Trogg Stone Tooth (x8)
-    .mob Stonesplinter Trogg
-    .mob Stonesplinter Scout
-    .isOnQuest 224
-    .isOnQuest 267
-step << Mage
-    #xprate <1.5
-    #season 2
-    .goto Loch Modan,29.2,81.2,50,0
-    .goto Loch Modan,28.8,83.4,50,0
-    .goto Loch Modan,30.0,83.8,50,0
-    .goto Loch Modan,32.2,87.2,50,0
-    .goto Loch Modan,33.8,88.6,50,0
-    .goto Loch Modan,36.0,88.0,50,0
-    .goto Loch Modan,36.6,81.2,50,0
-    .goto Loch Modan,36.6,79.6
-    >>Kill |cRXP_ENEMY_Stonesplinter Seers|r. Loot them for the |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes]|r
-    .collect 208854,1
-    .mob Stonesplinter Seer
-    .train 415936,1
-step << Mage
-    #xprate <1.5
-    #season 2
-    #completewith TroggEnd
-    .collect 211779,1 >>You need a |T135933:0|t[Comprehension Charm] from a |cRXP_FRIENDLY_Reagent Vendor|r to use the |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes]|r
-    .train 415936 >>|cRXP_WARN_Use the|r |T134939:0|t[|cRXP_FRIENDLY_Chewed Spell Notes|r] |cRXP_WARN_to train|r |T236220:0|t[Living Bomb]
-    .use 208854
-step << Warrior
-    #season 2
-    #requires Geode
-    .goto Loch Modan,33.2,73.8
-    >>Attack a |cRXP_ENEMY_Stonesplinter Skullthumper|r
-    >>|cRXP_WARN_During combat it'll hit you, turning the |cRXP_LOOT_Skull-Shaped Geode|r into a|r |T236489:0|t[|cRXP_LOOT_Cracked Skull-Shaped Geode|r]
-    .collect 208848,1 -- Cracked Skull-Shaped Geode (1)
-    .mob Stonesplinter Skullthumper
-    .train 425443,1
-step << Warrior
-    #season 2
-    .use 208848 >>|cRXP_WARN_Use the|r |T236489:0|t[|cRXP_LOOT_Cracked Skull-Shaped Geode|r] |cRXP_WARN_to receive the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Quick Strike|r]
-    .collect 208778,1 -- Rune of Quick Strike (1)
-    .train 425443,1
-step << Warrior
-    #season 2
-    .train 425443 >> |cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Quick Strike|r] |cRXP_WARN_to train|r |T132394:0|t[Quick Strike]
-    .use 208778
-    .itemcount 208778,1
-step << Mage/Warrior
-    #season 2
-    #xprate <1.5
-    #optional
-    #loop
-    .goto Loch Modan,27.01,48.74,0
-    .goto Loch Modan,27.68,56.83,0
-    .goto Loch Modan,33.35,71.59,0
-    .goto Loch Modan,31.54,74.96,0
-    .goto Loch Modan,27.01,48.74,50,0
-    .goto Loch Modan,27.68,56.83,50,0
-    .goto Loch Modan,33.35,71.59,50,0
-    .goto Loch Modan,31.54,74.96,50,0
-    .goto Loch Modan,33.88,76.58,50,0
-    .xp 13+9600 >> Grind to 9600+/11400xp
-step << Warrior
-    #season 2
-    #xprate 1.49-1.59
-    #optional
-    #loop
-    .goto Loch Modan,27.01,48.74,0
-    .goto Loch Modan,27.68,56.83,0
-    .goto Loch Modan,33.35,71.59,0
-    .goto Loch Modan,31.54,74.96,0
-    .goto Loch Modan,27.01,48.74,50,0
-    .goto Loch Modan,27.68,56.83,50,0
-    .goto Loch Modan,33.35,71.59,50,0
-    .goto Loch Modan,31.54,74.96,50,0
-    .goto Loch Modan,33.88,76.58,50,0
-    .xp 13+8700 >> Grind to 8700+/11400xp
-step << Warrior
-    #season 2
-    #xprate >1.59
-    #optional
-    #loop
-    .goto Loch Modan,27.01,48.74,0
-    .goto Loch Modan,27.68,56.83,0
-    .goto Loch Modan,33.35,71.59,0
-    .goto Loch Modan,31.54,74.96,0
-    .goto Loch Modan,27.01,48.74,50,0
-    .goto Loch Modan,27.68,56.83,50,0
-    .goto Loch Modan,33.35,71.59,50,0
-    .goto Loch Modan,31.54,74.96,50,0
-    .goto Loch Modan,33.88,76.58,50,0
-    .xp 13+7800 >> Grind to 7800+/11400xp
 step
     #season 0,1 << Warrior/Mage
     #xprate <1.5
@@ -8019,8 +7563,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #group RestedXP Alliance 1-20
 #name 6-11 Dun Morogh (Hunter)
-#displayname 6-11 Dun Morogh << !SoD
-#displayname 6-12 Dun Morogh << SoD
+#displayname 6-11 Dun Morogh
 #next 11-13 Loch Modan (Hunter)
 #defaultfor Dwarf Hunter
 
@@ -8052,6 +7595,11 @@ step
     .target Tannok Frosthammer
     .goto Dun Morogh,47.217,52.195
     .turnin 2160 >> Turn in Supplies to Tannok
+step
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Belm|r inside
+    .target Innkeeper Belm
+    .goto Dun Morogh,47.377,52.523
+    .home >> Set your Hearthstone to Kharanos
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tharek Blackstone|r
     .target Tharek Blackstone
@@ -8111,11 +7659,13 @@ step << !Paladin !Warrior !Rogue
     >>Kill |cRXP_ENEMY_Young Black Bears|r. Loot them for their |cRXP_LOOT_Fur|r
     >>Kill |cRXP_ENEMY_Crag Boars|r and |cRXP_ENEMY_Large Crag Boars|r. Loot them for their |T133970:0|t|cRXP_LOOT_[Chunks of Boar Meat]|r and |cRXP_LOOT_Crag Boar Ribs|r
     .complete 317,2 --Collect Thick Bear Fur (x2)
+    .mob +Young Black Bear
     .complete 317,1 --Collect Chunk of Boar Meat (x4)
+    .mob +Crag Boar
+    .mob +Large Crag Boar
     .collect 2886,6,384,1,1 --Collect Crag Boar Rib (x6)
-    .mob Crag Boar
-    .mob Large Crag Boar
-    .mob Young Black Bear
+    .mob +Crag Boar
+    .mob +Large Crag Boar
 step
     #completewith BoarRibs2
     >>Kill |cRXP_ENEMY_Crag Boars|r and |cRXP_ENEMY_Large Crag Boars|r. Loot them for their |cRXP_LOOT_Crag Boar Ribs|r
@@ -8225,11 +7775,11 @@ step
     .goto Dun Morogh,28.7,43.7
     >>Kill |cRXP_ENEMY_Ice Claw Bears|r, |cRXP_ENEMY_Elder Crag Boars|r and |cRXP_ENEMY_Snow Leopards|r
     .complete 319,1 --Kill Ice Claw Bear (x6)
+    .mob +Ice Claw Bear
     .complete 319,2 --Kill Elder Crag Boar (x8)
+    .mob +Elder Crag Boar
     .complete 319,3 --Kill Snow Leopard (x8)
-    .mob Ice Claw Bear
-    .mob Elder Crag Boar
-    .mob Snow Leopard
+    .mob +Snow Leopard
 step
     #xprate <1.5
     .goto Dun Morogh,46.726,53.826
@@ -8303,11 +7853,6 @@ step
     .turnin 310 >> Turn in Bitter Rivals
     .accept 311 >> Accept Return to Marleth
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Belm|r inside
-    .target Innkeeper Belm
-    .goto Dun Morogh,47.377,52.523
-    .home >> Set your Hearthstone to Kharanos
-step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ragnar Thunderbrew|r outside
     .target Ragnar Thunderbrew
     .goto Dun Morogh,46.825,52.361
@@ -8328,11 +7873,11 @@ step
     #completewith FinishShimmerweed
     >>Kill |cRXP_ENEMY_Ice Claw Bears|r, |cRXP_ENEMY_Elder Crag Boars|r and |cRXP_ENEMY_Snow Leopards|r
     .complete 319,1 --Kill Ice Claw Bear (x6)
+    .mob +Ice Claw Bear
     .complete 319,2 --Kill Elder Crag Boar (x8)
+    .mob +Elder Crag Boar
     .complete 319,3 --Kill Snow Leopard (x8)
-    .mob Ice Claw Bear
-    .mob Elder Crag Boar
-    .mob Snow Leopard
+    .mob +Snow Leopard
 step
     #completewith Rudra
     #label Dirt
@@ -8364,7 +7909,7 @@ step
     .goto 1426,62.538,46.195
     >>Kill |cRXP_ENEMY_Vagash|r. Loot him for his |cRXP_LOOT_Fang|r
     >>|cRXP_WARN_Kite him to the guard south of the ranch. Make sure you do 51%+ damage to him|r
-    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be solo'd on any class|r
+    >>|cRXP_WARN_Watch the video below before you attempt to kill |cRXP_ENEMY_Vagash|r. It can be soloed on any class|r
     .link https://youtu.be/Zg4FNWw-P5k?t=3815 >> |cRXP_WARN_Click here for video reference|r << Mage
     .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> |cRXP_WARN_Click here for video reference|r << !Mage
     .complete 314,1 --Collect Fang of Vagash (1)
@@ -8380,10 +7925,10 @@ step
     .goto Dun Morogh,63.082,49.851
     .turnin 314 >> Turn in Protecting the Herd
 step
-    .goto Dun Morogh,68.671,55.969
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
-    .accept 433 >> Accept The Public Servant
-    .target Senator Mehr Stonehallow
+    .goto Dun Morogh,69.084,56.330
+    .target Foreman Stonebrow
+    >>Talk to |cRXP_FRIENDLY_Foreman Stonebrow|r
+    .accept 432 >> Accept Those Blasted Troggs!
 step
 #loop
     .goto Dun Morogh,67.5,59.4,40,0
@@ -8394,10 +7939,10 @@ step
     .complete 432,1 --Kill Rockjaw Skullthumper (x6)
     .mob Rockjaw Skullthumper
 step
-    .goto Dun Morogh,68.671,55.969
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
-    .turnin 433 >> Turn in The Public Servant
-    .target Senator Mehr Stonehallow
+    .goto Dun Morogh,69.084,56.330
+    .target Foreman Stonebrow
+    >>Talk to |cRXP_FRIENDLY_Foreman Stonebrow|r
+    .turnin 432 >> Turn in Those Blasted Troggs!
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pilot Hammerfoot|r
     .target Pilot Hammerfoot
@@ -8408,12 +7953,6 @@ step
     .goto Dun Morogh,79.672,36.171
     .turnin 419 >> Turn in The Lost Pilot
     .accept 417 >> Accept A Pilot's Revenge
-step << Hunter
-    #season 2
-    #completewith next
-    >>Kill |cRXP_ENEMY_Mangeclaw|r. Loot him for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Explosive Shot|r]
-    .collect 206169,1 -- Rune of Explosive Shot (1)
-    .train 410123,1
 step
     >>Kill |cRXP_ENEMY_Mangeclaw|r. Loot him for his |cRXP_LOOT_Claw|r
     .goto Dun Morogh,78.97,37.14
@@ -8424,11 +7963,6 @@ step
     .target Pilot Hammerfoot
     .goto Dun Morogh,83.892,39.188
     .turnin 417 >> Turn in A Pilot's Revenge
-step << Hunter
-    #season 2
-    .train 410123 >> |cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Explosive Shot|r] |cRXP_WARN_to train|r |T236178:0|t[Explosive Shot]
-    .use 206169
-    .itemcount 206169,1
 step
     #hardcore
     .hs >> Hearth to Kharanos
@@ -8538,11 +8072,11 @@ step
     .goto Dun Morogh,28.7,43.7
     >>Kill |cRXP_ENEMY_Ice Claw Bears|r, |cRXP_ENEMY_Elder Crag Boars|r and |cRXP_ENEMY_Snow Leopards|r
     .complete 319,1 --Kill Ice Claw Bear (x6)
+    .mob +Ice Claw Bear
     .complete 319,2 --Kill Elder Crag Boar (x8)
+    .mob +Elder Crag Boar
     .complete 319,3 --Kill Snow Leopard (x8)
-    .mob Ice Claw Bear
-    .mob Elder Crag Boar
-    .mob Snow Leopard
+    .mob +Snow Leopard
 step << Hunter
     #season 2
     .goto Dun Morogh,28.852,49.859
@@ -8694,27 +8228,18 @@ step
     .accept 433 >> Accept The Public Servant
     .target Senator Mehr Stonehallow
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r
-    .accept 432 >> Accept Those Blasted Troggs!
-    .goto Dun Morogh,69.084,56.330
-    .target Foreman Stonebrow
-step
     .goto Dun Morogh,70.7,56.4,40,0
     .goto Dun Morogh,70.62,52.39,25,0
     .goto Dun Morogh,70.7,56.4
-    >>Kill |cRXP_ENEMY_Rockjaw Skullthumpers|r and |cRXP_ENEMY_Rockjaw Bonesnappers|r
-    .complete 432,1 --Kill Rockjaw Skullthumper (x6)
+    >>Kill |cRXP_ENEMY_Rockjaw Bonesnappers|r
     .complete 433,1 --Kill Rockjaw Bonesnapper (x10)
-    .mob Rockjaw Skullthumper
-    .mob Rockjaw Bonesnapper
+    .mob +Rockjaw Bonesnapper
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r and |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
-    .turnin 432 >> Turn in Those Blasted Troggs!
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
     .goto Dun Morogh,69.084,56.330
     .turnin 433 >> Turn in The Public Servant
+    .target +Senator Mehr Stonehallow
     .goto Dun Morogh,68.671,55.969
-    .target Senator Mehr Stonehallow
-    .target Foreman Stonebrow
 step << skip
     .goto Dun Morogh,68.4,54.5
     .train 2550 >> Train Cooking from Ghilm
@@ -8854,11 +8379,11 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
     .collect 3172,3,418,1 --Collect Boar Intestines (x3)
+    .mob +Mountain Boar
     .collect 3173,3,418,1 --Collect Bear Meat (x3)
-    .collect 3174,3,418,1 --Collect Spider Ichor (x3)
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
+    .mob +Elder Black Bear
+    .collect 3174,3,418,1 --Collect Spider Ichor (x3)  
+    .mob +Forest Lurker
 step
     #completewith next
     .goto Loch Modan,23.85,17.92,100 >> Travel north to the Algaz Station
@@ -8903,11 +8428,11 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
     .collect 3172,3,418,1 --Collect Boar Intestines (x3)
+    .mob +Mountain Boar
     .collect 3173,3,418,1 --Collect Bear Meat (x3)
-    .collect 3174,3,418,1 --Collect Spider Ichor (x3)
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
+    .mob +Elder Black Bear
+    .collect 3174,3,418,1 --Collect Spider Ichor (x3) 
+    .mob +Forest Lurker
 step
     .goto Loch Modan,24.77,18.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Stormpike|r
@@ -8938,6 +8463,7 @@ step
     >>Kill |cRXP_ENEMY_Mountain Boars|r. Loot them for their |cRXP_LOOT_Boar Intestines|r
     >>Kill |cRXP_ENEMY_Forest Lurkers|r. Loot them for their |cRXP_LOOT_Ichor|r
     .collect 3173,3,418,1 --Bear Meat (3)
+    .mob +Elder Black Bear
     .goto Loch Modan,26.9,10.7,90,0
     .goto Loch Modan,30.9,10.6,90,0
     .goto Loch Modan,28.6,15.4,90,0
@@ -8952,6 +8478,7 @@ step
     .goto Loch Modan,39.4,33.3,90,0
     .goto Loch Modan,26.9,10.7
     .collect 3172,3,418,1 --Boar Intestines (3)
+    .mob +Mountain Boar
     .goto Loch Modan,38.0,34.9,90,0
     .goto Loch Modan,37.1,39.8,90,0
     .goto Loch Modan,29.8,35.9,90,0
@@ -8964,6 +8491,7 @@ step
     .goto Loch Modan,28.6,22.6,90,0
     .goto Loch Modan,38.0,34.9
     .collect 3174,3,418,1 --Spider Ichor (3)
+    .mob +Forest Lurker
     .goto Loch Modan,31.9,16.4,90,0
     .goto Loch Modan,28.0,20.6,90,0
     .goto Loch Modan,33.8,40.5,90,0
@@ -8975,9 +8503,6 @@ step
     .goto Loch Modan,36.2,30.9,90,0
     .goto Loch Modan,39.0,32.1,90,0
     .goto Loch Modan,31.9,16.4
-    .mob Elder Black Bear
-    .mob Mountain Boar
-    .mob Forest Lurker
 step
     #sticky
     .line Loch Modan,36.72,41.97,37.24,43.19,37.33,45.63,36.77,46.20,35.19,46.88,32.67,49.71,35.19,46.88,36.77,46.20,37.33,45.63,37.24,43.19,36.72,41.97
@@ -9009,10 +8534,12 @@ step
     .goto Loch Modan,33.88,76.58
     >>Kill |cRXP_ENEMY_Stonesplinter Troggs|r and |cRXP_ENEMY_Stonesplinter Scouts|r. Loot them for their |cRXP_LOOT_Teeth|r
     .complete 224,1 --Kill Stonesplinter Trogg (x10)
+    .mob +Stonesplinter Trogg
     .complete 224,2 --Kill Stonesplinter Scout (x10)
+    .mob +Stonesplinter Scout
     .complete 267,1 --Collect Trogg Stone Tooth (x8)
-    .mob Stonesplinter Trogg
-    .mob Stonesplinter Scout
+    .mob +Stonesplinter Trogg
+    .mob +Stonesplinter Scout
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Cobbleflint|r
     .target Mountaineer Cobbleflint

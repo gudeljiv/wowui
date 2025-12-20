@@ -203,7 +203,7 @@ L["Reset Data"] = "Reset Data"; --A button to Reset buffs window data.
 
 ---New translations to do---
 L["layerFrameMsgOne"] = "Old layers will still show for a few hours after server restarts."; --Msg at bottom of layer timers frame.
-L["layerFrameMsgTwo"] = "Layers will disappear from here 6 hours after not existing."; --Msg at bottom of layer timers frame.
+L["layerFrameMsgTwo"] = "Layers will disappear from here within a few hours after not existing."; --Msg at bottom of layer timers frame.
 L["You are currently on"] = "You are currently on"; --You are currently on [Layer 2]
 
 
@@ -454,9 +454,6 @@ L["soundOnlyInCityDesc"] = "Only play buff sounds when you are in the main city 
 
 L["soundsDisableInInstancesTitle"] = "Disable In Instances";
 L["soundsDisableInInstancesDesc"] = "Disable sounds while in raids and instances.";
-
-L["soundsFirstYellTitle"] = "Buff Coming";
-L["soundsFirstYellDesc"] = "Sound to play when head is handed in and you have a few seconds before buff will drop (First NPC Yell).";
 
 L["soundsOneMinuteTitle"] = "One Minute Warning";
 L["soundsOneMinuteDesc"] = "Sound to play for 1 minute left timer warning.";
@@ -994,7 +991,7 @@ L["overlayShowStranglethornTitle"] = "Overlay Stranglethorn";
 L["overlayShowStranglethornDesc"] = "Show overlay stranglethorn timer?";
 
 L["overlayShowBlackrockTitle"] = "Overlay Blackrock";
-L["overlayShowBlackrockDesc"] = "Show overlay stranglethornblackrock timer?";
+L["overlayShowBlackrockDesc"] = "Show overlay blackrock timer?";
 
 L["sodMiddleScreenWarningTitle"] = "Middle Screen Warning";
 L["sodMiddleScreenWarningDesc"] = "Show a 15/30 mins warning in the middle of the screen for SoD events like STV etc.";
@@ -1049,3 +1046,86 @@ L["Battle Shout"] = "Battle Shout";
 
 L["dmfBuffDroppedNoCooldown"] = "Darkmoon Faire buff %s received, no cooldown in this game version.";
 L["chronoboonReleasedNoCooldown"] = "You have chronoboon released a Darkmoon Faire buff, no cooldown in this game version.";
+
+L["skipDmfCookieTitle"] = "Skip Fortune Cookie";
+L["skipDmfCookieDesc"] = "Enable this to skip getting the Fortune Cookie after you get DMF buff.";
+
+L["No layers found yet."] = "No layers found yet.";
+L["Bi-Weekly raid reset"] = "Bi-Weekly raid reset";
+
+L["Min Level"] = "Min Level";
+L["Rend handed in by"] = "Rend handed in by";
+L["ago"] = "ago";
+L["Dropped"] = "Dropped";
+L["Yes"] = "Yes";
+L["No"] = "No";
+L["Delete buff data?"] = "Delete buff data?";
+L["No characters with buffs found."] = "No characters with buffs found.";
+L["Unknown Layer"] = "Unknown Layer";
+
+L["Active"] = "Active";
+L["noZonesMappedYet"] = "No zones have been mapped yet since server restart.";
+L["Rend log adjusted"] = "Adjusted by Rend Log";
+
+L["flashDisableRendTitle"] = "Disable Rend Flash";
+L["flashDisableRendDesc"] = "Override to disable all Rend related client flash events.";
+
+L["flashDisableOnyTitle"] = "Disable Ony Flash";
+L["flashDisableOnyDesc"] = "Override to disable all Ony/Nef related client flash events.";
+
+L["flashDisableZanTitle"] = "Disable Zan Flash";
+L["flashDisableZanDesc"] = "Override to disable all Zandalar related client flash events.";
+
+L["soundsFirstYellTitle"] = "Other Buffs Coming";
+L["soundsFirstYellDesc"] = "Sound to play when zand/other buffs are handed in and you have a few seconds before buff will drop (First NPC Yell).";
+
+L["soundsFirstYellRendTitle"] = "Rend Buff Coming";
+L["soundsFirstYellRendDesc"] = "Sound to play when rend head is handed in and you have a few seconds before buff will drop (First NPC Yell).";
+
+L["soundsFirstYellOnyTitle"] = "Ony/Nef Buff Coming";
+L["soundsFirstYellOnyDesc"] = "Sound to play when ony/nef head is handed in and you have a few seconds before buff will drop (First NPC Yell).";
+
+L["resetFramesTitle"] = "Reset Windows";
+L["resetFramesDesc"] = "Click here to reset all window positions back to middle of the screen.";
+
+L["buffHasNoCooldown"] = "This drop doesn't trigger a cooldown";
+L["noCooldown"] = "No cooldown";
+
+L["showDisableLayerButtonsTitle"] = "Show Disable Layer Button"
+L["showDisableLayerButtonsDesc"] = "Show disable layer button on the timers/layers frame.";
+
+L["Show Quest Handins Only"] = "Show Quest Handins Only";
+L["showQuestHandinsTooltip"] = "Only display log entries of rend quest being handed in.";
+
+L["Molten Core"] = "Molten Core";
+L["Onyxia's Lair"] = "Onyxia's Lair";
+L["Blackwing Lair"] = "Blackwing Lair";
+L["Naxxramas"] = "Naxxramas";
+L["Karazhan"] = "Karazhan";
+L["The Shattered Halls"] = "The Shattered Halls";
+L["Serpentshrine Cavern"] = "Serpentshrine Cavern";
+L["The Arcatraz"] = "The Arcatraz";
+L["Black Morass"] = "Black Morass";
+L["Battle of Mount Hyjal"] = "Battle of Mount Hyjal";
+L["Black Temple"] = "Black Temple";
+L["Hellfire Citadel"] = "Hellfire Citadel";
+L["Coilfang Reservoir"] = "Coilfang Reservoir";
+L["Shadow Labyrinth"] = "Shadow Labyrinth";
+L["Auchindoun"] = "Auchindoun";
+L["Tempest Keep"] = "Tempest Keep";
+L["Caverns of Time"] = "Caverns of Time";
+
+L["layersHeaderDesc"] = "Layer Options";
+
+L["minimapLayerZoneIDTitle"] = "Show Minimap ZoneID";
+L["minimapLayerZoneIDDesc"] = "This will display the zoneID for your current zone beside your current layer number.";
+
+L["minimapLayerZoneIDTooltipTitle"] = "Minimap ZoneIDs Tooltip";
+L["minimapLayerZoneIDTooltipDesc"] = "This will make the mouseover tooltip show all layer zoneID's for your current zone so you can compare it with your alt on another faction or whatever reason.";
+			
+L["Unknown"] = "Unknown";
+
+L["shortLayerPrefix"] = "L";
+L["expired"] = "expired";
+L["for"] = "for";
+L["Crossroads"] = "Crossroads";

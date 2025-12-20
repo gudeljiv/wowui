@@ -11,6 +11,7 @@ local DelayTimer = LibTSMService:From("LibTSMWoW"):IncludeClassType("DelayTimer"
 local AuctionHouse = LibTSMService:From("LibTSMWoW"):Include("API.AuctionHouse")
 local Event = LibTSMService:From("LibTSMWoW"):Include("Service.Event")
 local DefaultUI = LibTSMService:From("LibTSMWoW"):Include("UI.DefaultUI")
+local ClientInfo = LibTSMService:From("LibTSMWoW"):Include("Util.ClientInfo")
 local ItemString = LibTSMService:From("LibTSMTypes"):Include("Item.ItemString")
 local FSM = LibTSMService:From("LibTSMUtil"):Include("FSM")
 local Future = LibTSMService:From("LibTSMUtil"):IncludeClassType("Future")
@@ -32,6 +33,7 @@ local private = {
 	fsm = nil,
 	retryTimer = nil,
 	doneTimer = nil,
+	updateTimer = nil,
 	missingItemIds = {},
 }
 local BROWSE_MISSING_INFO_RETRY_DELAY = 0.5
@@ -51,12 +53,17 @@ local SORT_RETRY_DELAY = 0.5
 Scanner:OnModuleLoad(function()
 	private.retryTimer = DelayTimer.New("AUCTION_SCANNER_RETRY", private.RetryHandler)
 	private.doneTimer = DelayTimer.New("AUCTION_SCANNER_DONE", private.RequestDoneHandler)
+	private.updateTimer = DelayTimer.New("AUCTION_SCANNER_RETRY", function()
+		private.fsm:SetLoggingEnabled(false)
+		private.fsm:ProcessEvent("EV_BROWSE_RESULTS_UPDATED")
+		private.fsm:SetLoggingEnabled(true)
+	end)
 	private.requestFuture:SetScript("OnCleanup", function()
 		private.doneTimer:Cancel()
 		private.fsm:ProcessEvent("EV_CANCEL")
 	end)
 
-	if LibTSMService.IsRetail() then
+	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
 		Event.Register("COMMODITY_SEARCH_RESULTS_UPDATED", function()
 			private.fsm:ProcessEvent("EV_SEARCH_RESULTS_UPDATED")
 		end)
@@ -70,9 +77,7 @@ Scanner:OnModuleLoad(function()
 		end)
 	else
 		Event.Register("AUCTION_ITEM_LIST_UPDATE", function()
-			private.fsm:SetLoggingEnabled(false)
-			private.fsm:ProcessEvent("EV_BROWSE_RESULTS_UPDATED")
-			private.fsm:SetLoggingEnabled(true)
+			private.updateTimer:RunForFrames(0)
 		end)
 	end
 
@@ -104,7 +109,7 @@ Scanner:OnModuleLoad(function()
 				return "ST_BROWSE_SORT"
 			end)
 			:AddEvent("EV_START_BROWSE_NO_SCAN", function(_, query, itemKeys, callback)
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				assert(not private.query)
 				private.query = query
 				private.browseId = private.browseId + 1
@@ -117,7 +122,7 @@ Scanner:OnModuleLoad(function()
 				return "ST_BROWSE_CHECKING"
 			end)
 			:AddEvent("EV_START_SEARCH", function(_, query, resolveSellers, useCachedData, searchRow, callback)
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				assert(not private.query)
 				private.query = query
 				private.resolveSellers = resolveSellers
@@ -150,7 +155,7 @@ Scanner:OnModuleLoad(function()
 			:AddTransition("ST_BROWSE_CHECKING")
 			:AddTransition("ST_CANCELING")
 			:AddEvent("EV_FUTURE_SUCCESS", function()
-				if LibTSMService.IsRetail() then
+				if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
 					for _, result in ipairs(AuctionHouse.GetBrowseResults()) do
 						local baseItemString = ItemString.GetBaseFromItemKey(result.itemKey)
 						private.query:_ProcessBrowseResult(baseItemString, result.itemKey, result.minPrice, result.totalQuantity)
@@ -216,7 +221,7 @@ Scanner:OnModuleLoad(function()
 			:AddTransition("ST_BROWSE_CHECKING")
 			:AddTransition("ST_CANCELING")
 			:AddEvent("EV_FUTURE_SUCCESS", function(_, ...)
-				if LibTSMService.IsRetail() then
+				if ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
 					local newResults = ...
 					for _, result in ipairs(newResults) do
 						local baseItemString = ItemString.GetBaseFromItemKey(result.itemKey)
@@ -242,7 +247,7 @@ Scanner:OnModuleLoad(function()
 		)
 		:AddState(FSM.NewState("ST_SEARCH_GET_KEY")
 			:SetOnEnter(function()
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				if not private.searchRow:SearchIsReady() then
 					private.retryTimer:RunForTime(SEARCH_NOT_READY_RETRY_DELAY)
 					return
@@ -258,7 +263,7 @@ Scanner:OnModuleLoad(function()
 		)
 		:AddState(FSM.NewState("ST_SEARCH_SEND")
 			:SetOnEnter(function()
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				if not DefaultUI.IsAuctionHouseVisible() then
 					return "ST_CANCELING"
 				end
@@ -286,7 +291,7 @@ Scanner:OnModuleLoad(function()
 		)
 		:AddState(FSM.NewState("ST_SEARCH_REQUEST_MORE")
 			:SetOnEnter(function()
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				local baseItemString = private.searchRow:GetBaseItemString()
 				-- Get if the item is a commodity or not
 				local isCommodity = ItemInfo.IsCommodity(baseItemString)
@@ -313,7 +318,7 @@ Scanner:OnModuleLoad(function()
 		)
 		:AddState(FSM.NewState("ST_SEARCH_CHECKING")
 			:SetOnEnter(function()
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				private.retryTimer:Cancel()
 				private.searchRow:PopulateSubRows(private.browseId)
 
@@ -325,7 +330,7 @@ Scanner:OnModuleLoad(function()
 					elseif private.resolveSellers and not subRow:HasOwners() and not private.query:_IsFiltered(subRow, true) then
 						-- Waiting for owner info
 						-- Currently can't rely on owner info as of 9.2.7, so limit the retries for it
-						if not LibTSMService.IsRetail() or private.retryCount <= 10 then
+						if not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) or private.retryCount <= 10 then
 							missingInfo = true
 						end
 					end
@@ -365,7 +370,7 @@ Scanner:OnModuleLoad(function()
 		)
 		:AddState(FSM.NewState("ST_SEARCH_DONE")
 			:SetOnEnter(function(_, result)
-				assert(LibTSMService.IsRetail())
+				assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 				private.HandleRequestDone(result)
 				return "ST_INIT"
 			end)
@@ -404,7 +409,7 @@ end
 ---@param callback fun(query: AuctionQuery, row: AuctionRow) A function to call with results
 ---@return Future
 function Scanner.BrowseNoScan(query, itemKeys, callback)
-	assert(LibTSMService.IsRetail())
+	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 	private.requestFuture:Start()
 	private.fsm:ProcessEvent("EV_START_BROWSE_NO_SCAN", query, itemKeys, callback)
 	return private.requestFuture
@@ -418,7 +423,7 @@ end
 ---@param callback fun(query: AuctionQuery, row: AuctionRow) A function to call with results
 ---@return Future
 function Scanner.Search(query, resolveSellers, useCachedData, browseRow, callback)
-	assert(LibTSMService.IsRetail())
+	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE))
 	private.requestFuture:Start()
 	private.fsm:ProcessEvent("EV_START_SEARCH", query, resolveSellers, useCachedData, browseRow, callback)
 	return private.requestFuture
@@ -473,7 +478,7 @@ function private.HandleRequestDone(result)
 end
 
 function private.CheckBrowseResults()
-	if not LibTSMService.IsRetail() then
+	if not ClientInfo.HasFeature(ClientInfo.FEATURES.C_AUCTION_HOUSE) then
 		-- Process as many auctions as we can
 		local numAuctions = AuctionHouse.GetNumAuctions()
 		for i = #private.browsePendingIndexes, 1, -1 do
@@ -495,16 +500,20 @@ function private.CheckBrowseResults()
 		end
 	end
 
-	-- Check if there's data still pending
+	-- Attempt to populate the browse results
 	wipe(private.missingItemIds)
-	if private.query:_PopulateBrowseData(private.missingItemIds) then
+	local populated, numRemoved = private.query:_PopulateBrowseData(private.missingItemIds)
+	if numRemoved > 0 then
+		Log.Info("Removed %d results while populing data", numRemoved)
+	end
+	if not populated then
 		return false
 	end
 
 	-- Filter the results
-	local numRemoved = private.query:_FilterBrowseResults()
+	numRemoved = private.query:_FilterBrowseResults()
 	if numRemoved > 0 then
-		Log.Info("Removed %d results", numRemoved)
+		Log.Info("Removed %d filtered results", numRemoved)
 	end
 
 	return true

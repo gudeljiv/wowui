@@ -1,5 +1,43 @@
 # Changelog
 
+## [2.0.9] - 2025-11-05
+
+### Fixed
+
+- Junk icons not appearing with Bagnon ([#250](https://github.com/moody/Dejunk/issues/250))
+
+## [2.0.8] - 2025-08-06
+
+### Fixed
+
+- Error when selling tradable items in Retail ([#248](https://github.com/moody/Dejunk/issues/248))
+
+## [2.0.7] - 2025-08-05
+
+### Fixed
+
+- Resolved errors with popup code for 11.2.0
+
+## [2.0.6] - 2025-08-02
+
+- Updated suitable items table for MoP Classic
+
+## [2.0.5] - 2025-07-08
+
+- Version updates
+
+## [2.0.4] - 2025-03-01
+
+### Changed
+
+- Updated the Merchant Button to be attached to the merchant frame ([#236](https://github.com/moody/Dejunk/issues/236))
+
+## [2.0.3] - 2024-12-24
+
+### Fixed
+
+- Addon out of date errors
+
 ## [2.0.2] - 2024-10-03
 
 ### Fixed

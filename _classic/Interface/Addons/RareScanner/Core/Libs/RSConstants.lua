@@ -24,8 +24,8 @@ RSConstants.LOOT_ITEM_ID = nil
 -- Current versions
 ---============================================================================
 
-RSConstants.CURRENT_DB_VERSION = 8
-RSConstants.CURRENT_LOOT_DB_VERSION = 10
+RSConstants.CURRENT_DB_VERSION = 11
+RSConstants.CURRENT_LOOT_DB_VERSION = 13
 
 ---============================================================================
 -- Current maps (newer)
@@ -50,8 +50,9 @@ RSConstants.CHECK_RESET_RECENTLY_SEEN_TIMER = 5 --5 seconds
 RSConstants.RECENTLY_SEEN_RESET_TIMER = 120 --2 minutes
 RSConstants.RECENTLY_SEEN_PING_ANIMATION_TIMER = 5 --5 seconds
 RSConstants.CHECK_RESET_NOTIFICATIONS_TIMER = 10 --10 seconds
-RSConstants.CHECK_TARGETS_TIMER = 2 --2 seconds
+RSConstants.CHECK_TARGETS_TIMER = 1 --1 seconds
 RSConstants.BUTTON_TIMER = 1 --1 seconds
+RSConstants.PREFOUND_TIMER = 5 --5 seconds
 
 ---============================================================================
 -- Collections enumerators
@@ -79,6 +80,17 @@ RSConstants.MAP_ANIMATIONS_ON_CLICK = 2
 RSConstants.MAP_ANIMATIONS_ON_BOTH = 3
 
 ---============================================================================
+-- Tracking systems
+---============================================================================
+
+RSConstants.TRACKING_SYSTEM = {
+	VIGNETTE = 1,
+	NAMEPLATE_MOUSEOVER = 2,
+	UNIT_TARGET = 3,
+	CHAT_EMOTE = 4
+}
+
+---============================================================================
 -- Addons default settings
 ---============================================================================
 
@@ -91,7 +103,7 @@ RSConstants.PROFILE_DEFAULTS = {
 			scanChatAlerts = true,
 			scanInstances = false,
 			scanOnTaxi = true,
-			scanTargetUnit = false,
+			scanWithMacro = false,
 			showMaker = true,
 			marker = 8,
 			enableTomtomSupport = false,
@@ -203,6 +215,16 @@ RSConstants.PROFILE_DEFAULTS = {
 }
 
 ---============================================================================
+-- Macro settings
+---============================================================================
+
+RSConstants.RARESCANNER_MACRO_NAME = "RS_MACRO"
+RSConstants.RARESCANNER_MACRO_ICON = "Interface/Icons/inv_misc_bone_skull_01"
+RSConstants.RARESCANNER_MACRO_TARGET_MAX_DISTANCE = 0.1 --map distance
+RSConstants.RARESCANNER_MACRO_UPDATE_NPCS_DISTANCE = 0.05 --map distance
+RSConstants.RARESCANNER_MACRO_REFRESH_TIMER = 5 --seconds
+
+---============================================================================
 -- Name of the RareScanner's button
 ---============================================================================
 
@@ -226,6 +248,8 @@ RSConstants.DEFAULT_SOUNDS = {
 }
 
 RSConstants.EXTERNAL_SOUND_FOLDER = "Interface\\AddOns\\%s\\%s"
+RSConstants.ERROR_SOUND_CLOSE_ID = 567464 --(close), 567490 (open)
+RSConstants.ERROR_SOUND_OPEN_ID = 567490 --(close), 567490 (open)
 
 ---============================================================================
 -- CMD commands

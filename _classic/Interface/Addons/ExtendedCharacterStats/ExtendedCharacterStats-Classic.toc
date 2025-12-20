@@ -1,10 +1,13 @@
-## Interface: 11503
-## Title: Extended Character Stats v3.3.6
-## Version: 3.3.6
+## Interface: 11508
+## Title: Extended Character Stats v4.3.2
+## Version: 4.3.2
 ## Author: BreakBB, Ethulu
 ## Notes: Displays an extra window with more information about your characters stats ( Crit/Hit/Block etc )
 ## Notes-esMX: Muestra una ventana adicional con más información sobre las estadísticas de tus personajes (Crítico/Golpe/Bloqueo, etc.)
 ## Notes-esES: Muestra una ventana adicional con más información sobre las estadísticas de tus personajes (Crítico/Golpe/Bloqueo, etc.)
+## Notes-ptBR: Mostra uma janela extra com mais informações sobre as estatísticas do seu personagem (Crítico/Acerto/Bloqueio, etc.)
+## Notes-frFR: Affiche une fenêtre supplémentaire avec plus d'informations sur les statistiques de votre personnage (Critique/Toucher/Blocage, etc.)
+## Notes-ruRU: Отображает окно с дополнительной информацией о характеристиках ваших персонажей (крит. удар, меткость, блокирование и др.)
 ## OptionalDeps: Ace3, CallbackHandler-1.0, LibStub
 ## SavedVariablesPerCharacter: ExtendedCharacterStats
 ## DefaultState: enabled
@@ -47,8 +50,8 @@ Modules\Config\MeleeSection.lua
 Modules\Config\RangeSection.lua
 Modules\Config\DefenseSection.lua
 Modules\Config\ManaSection.lua
+Modules\Config\SpellSchoolsSection.lua
 Modules\Config\SpellSection.lua
-Modules\Config\SpellBonusSection.lua
 
 # i18n
 Modules\i18n\i18n.lua
@@ -61,6 +64,7 @@ Modules\i18n\translations\ConfigTranslations\ManaConfigTranslations.lua
 Modules\i18n\translations\ConfigTranslations\MeleeConfigTranslations.lua
 Modules\i18n\translations\ConfigTranslations\RangedConfigTranslations.lua
 Modules\i18n\translations\ConfigTranslations\SpellConfigTranslations.lua
+Modules\i18n\translations\ConfigTranslations\SpellSchoolsConfigTranslations.lua
 
 # Main
 ECS.lua

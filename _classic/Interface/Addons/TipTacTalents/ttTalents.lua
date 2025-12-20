@@ -34,6 +34,7 @@ local TTT_DefaultConfig = {
 	t_enable = true,                      -- "main switch", addon does nothing if false
 	t_showTalents = true,                 -- show talents
 	t_talentOnlyInParty = false,          -- only show talents/AIL for party/raid members
+	t_talentDontShowOutOfRange = false,   -- don't show talents/AIL for players out of range
 	
 	t_showRoleIcon = true,                -- show role icon
 	t_showTalentIcon = true,              -- show talent icon
@@ -106,12 +107,8 @@ ttt:RegisterEvent("ADDON_LOADED");
 
 -- setup config
 function ttt:SetupConfig()
-	-- use TipTac config if installed
-	if (TipTac_Config) then
-		cfg = LibFroznFunctions:ChainTables(TipTac_Config, TTT_DefaultConfig);
-	else
-		cfg = TTT_DefaultConfig;
-	end
+	-- Use TipTac config if installed
+	cfg = select(2, LibFroznFunctions:CreateDbWithLibAceDB("TipTac_Config", TTT_DefaultConfig));
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -151,7 +148,7 @@ local function GTT_OnTooltipSetUnit(self, ...)
 		return;
 	end
 	
-	-- check if only talents for people in your party/raid should be shown
+	-- check if only talents/AIL for people in your party/raid should be shown
 	if (cfg.t_talentOnlyInParty) and (not UnitInParty(unitID)) and (not UnitInRaid(unitID)) then
 		return;
 	end
@@ -215,7 +212,10 @@ function TTT_UpdateTooltip(unitCacheRecord)
 			if (unitCacheRecord.canInspect) then
 				specText:Push(TTT_TEXT.loading);
 			else
-				specText:Push(TTT_TEXT.outOfRange);
+				-- check if talents/AIL for people out of range shouldn't be shown
+				if (not cfg.t_talentDontShowOutOfRange) then
+					specText:Push(TTT_TEXT.outOfRange);
+				end
 			end
 		
 		-- no talents available
@@ -237,7 +237,9 @@ function TTT_UpdateTooltip(unitCacheRecord)
 			end
 			
 			if (cfg.t_showTalentIcon) and (unitCacheRecord.talents.iconFileID) then
-				specText:Push(LibFroznFunctions:CreateMarkupForClassIcon(unitCacheRecord.talents.iconFileID));
+				spacer = (specText:GetCount() > 0) and " " or "";
+
+				specText:Push(spacer .. LibFroznFunctions:CreateMarkupForClassIcon(unitCacheRecord.talents.iconFileID));
 			end
 			
 			if (cfg.t_showTalentText) and ((talentFormat == 1) or (talentFormat == 2)) and (unitCacheRecord.talents.name) then
@@ -290,7 +292,10 @@ function TTT_UpdateTooltip(unitCacheRecord)
 			if (unitCacheRecord.canInspect) then
 				ailAndGSText:Push(TTT_TEXT.loading);
 			else
-				ailAndGSText:Push(TTT_TEXT.outOfRange);
+				-- check if talents/AIL for people out of range shouldn't be shown
+				if (not cfg.t_talentDontShowOutOfRange) then
+					ailAndGSText:Push(TTT_TEXT.outOfRange);
+				end
 			end
 		
 		-- no average item level available

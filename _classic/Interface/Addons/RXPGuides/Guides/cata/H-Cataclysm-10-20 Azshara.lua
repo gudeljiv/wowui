@@ -1,69 +1,72 @@
 local _,addon = ...
-if addon.game ~= "CATA" or addon.player.faction ~= 'Horde' then return end
+if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
 
 RXPGuides.RegisterGuide([[
 #cata
+#mop
 << Horde
 #name 10-22 Azshara
-#displayname 11-22 Azshara << Goblin
+#displayname 11-22 Azshara << Goblin/Pandaren
 #next 22-27 Ashenvale
 #version 1
---#group RXP Cataclysm (H)
-#group RXP Cataclysm 1-80 (H)
+--#group RXP Cataclysm (H) << cata
+
+#group RXP Cataclysm 1-80 (H) << cata
+#group RXP MoP 1-60 (H) << mop
 #subweight 10000
 
-step << Rogue/Warlock/Mage
+step << Rogue Cata/Warlock Cata/Mage Cata
     #completewith next
     .goto 1454,45.81,66.88,40 >> Travel toward the Cleft of Shadow
-step << Priest/Paladin
+step << Priest Cata/Paladin Cata
     #completewith next
     .goto 1454,49.88,75.54,30 >> Enter Grommash Hold
-step << Shaman/Druid
+step << Shaman Cata/Druid Cata
     #completewith next
     .goto 1454,44.84,75.46,40,0
     .goto 1454,41.53,60.64,40 >> Travel to the Valley of Wisdom
-step << Rogue
+step << Rogue Cata
     .goto 1454,44.65,61.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gordul|r
     .train 61922 >> Train your class spells
     .target Gordul
-step << Rogue
+step << Rogue Cata
     .goto 1454,29.60,50.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rekkul|r.
     >>|cRXP_BUY_Buy|r |T132273:0|t[Instant Poison] |cRXP_BUY_from him|r
     .collect 6947,20,14129,1 --Instant Poison (20)
     .target Rekkul
-step << Shaman
+step << Shaman Cata
     .goto 1454,44.64,52.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sahi|r
     .train 3599 >> Train your class spells
     .target Sahi Cloudsinger
     .xp <10,1
-step << Druid
+step << Druid Cata
     .goto 1454,44.79,51.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shalla|r
     .train 5215 >> Train your class spells
     .target Shalla Whiteleaf
     .xp <10,1
-step << Mage
+step << Mage Cata
     .goto 1454,48.45,62.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marud|r
     .train 5505 >> Train your class spells
     .target Marud
     .xp <10,1
-step << Priest
+step << Priest Cata
     .goto 1454,49.17,70.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tyelis|r
     .train 8092 >> Train your class spells
     .target Tyelis
     .xp <10,1
-step << Warlock
+step << Warlock Cata
     .goto 1454,54.49,39.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mirket|r
     .train 1120 >> Train your class spells
     .target Mirket
     .xp <10,1
-step << Paladin
+step << Paladin Cata
     .goto 1454,49.27,71.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pyreanor|r
     .train 82242 >> Train your class spells
@@ -84,7 +87,7 @@ step << !Warrior !Paladin !Rogue !Hunter !Shaman
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kiro|r
     .vendor >> Vendor and Repair
     .target Kiro
-step << Warrior
+step << Warrior Cata
     .goto 1454,73.71,45.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ronakada|r
     .train 71 >> Train your class spells
@@ -230,7 +233,7 @@ step << Rogue
     .itemcount 851,1
     .itemStat 16,QUALITY,<7
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<6.7
-step << Hunter
+step << Hunter Cata
     .goto 1454,63.87,32.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormak Grimshot|r
     .train 1978 >> Train your class spells
@@ -239,7 +242,7 @@ step << Hunter
 step
     #completewith RunawayShredder
     .goto 1454,75.39,4.15,0
-    .zone Azshara >> Enter Azshara through the Northern exit
+    .zone Azshara >> Enter Azshara through the northern exit
 step
     #optional
     .goto 76,26.81,76.96
@@ -343,71 +346,21 @@ step
     .goto 76,21.506,75.870
     >>Kill the |cRXP_ENEMY_Talrendis Ancient|r to the west
     >>|cRXP_WARN_If you lost your Shredder, mount a|r |cRXP_FRIENDLY_Backup Shredder|r |cRXP_WARN_instead|r
+    >>|cRXP_WARN_Cast|r |T132489:0|t[Recharge] |cRXP_WARN_if your |cRXP_FRIENDLY_Shredder|r gets low health|r
     .complete 14155,1 --Talrendis Ancient (1)
     .unitscan Talrendis Ancient
     .target Backup Shredder
 step
-    #loop
-    .goto 76,21.966,74.436,0
-    .goto 76,30.679,74.065,0
-    .waypoint 76,21.966,74.436,60,0
-    .waypoint 76,23.589,74.546,60,0
-    .waypoint 76,25.579,74.477,60,0
-    .waypoint 76,27.129,74.676,60,0
-    .waypoint 76,29.138,74.328,60,0
-    .waypoint 76,30.679,74.065,60,0
+    #completewith next
     >>Kill |cRXP_ENEMY_Talrendis Scouts|r. They are stealthed
     >>Kill |cRXP_ENEMY_Weakened Mosshoof Stags|r. Loot them for their |cRXP_LOOT_Slab of Venison|r
     >>|cRXP_ENEMY_Talrendis Scouts|r |cRXP_WARN_can jump you as you're killing|r |cRXP_ENEMY_Weakened Mosshoof Stags|r
+    >>|cRXP_WARN_Skip this step if you're not almost done at this point|r
     .complete 14117,1 --Talrendis Scout (8)
     .complete 14118,1 --Slab of Venison (15)
     .disablecheckbox
     .unitscan Talrendis Scout
     .mob Weakened Mosshoof Stag
-step
-    #completewith ArborcideTurnin
-    >>If you looted the |T133464:0|t[Scout's Orders], use the item to accept the quest
-    .collect 47039,1,14127 --Scout's Orders (1)
-    .accept 14127 >>Accept Return of the Highborne?
-    .use 47039
-    .itemcount 47039,1
-step
-    #completewith ArborcideTurnin
-    >>Kill |cRXP_ENEMY_Weakened Mosshoof Stags|r. Loot them for their |cRXP_LOOT_Slab of Venison|r
-    >>|cRXP_WARN_Skip this step if you are not close to finishing it at this point|r
-    .complete 14118,1 --Slab of Venison (15)
-    .mob Weakened Mosshoof Stag
-step
-    #optional
-    .goto 76,26.83,76.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .turnin 14117 >>Turn in The Eyes of Ashenvale
-    .turnin 14118 >>Turn in Venison for the Troops
-    .turnin 14127 >>Turn in Return of the Highborne?
-    .target Ag'tor Bloodfist
-    .isQuestComplete 14118
-    .isOnQuest 14127
-step
-    #optional
-    .goto 76,26.83,76.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .turnin 14117 >>Turn in The Eyes of Ashenvale
-    .turnin 14127 >>Turn in Return of the Highborne?
-    .target Ag'tor Bloodfist
-    .isOnQuest 14127
-step
-    #optional
-    .goto 76,26.83,76.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .turnin 14117 >>Turn in The Eyes of Ashenvale
-    .turnin 14118 >>Turn in Venison for the Troops
-    .target Ag'tor Bloodfist
-    .isQuestComplete 14118
-step
-    .goto 76,26.83,76.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .turnin 14117 >>Turn in The Eyes of Ashenvale
-    .target Ag'tor Bloodfist
 step
     #label ArborcideTurnin
     .goto 76,27.00,77.07
@@ -419,27 +372,34 @@ step
     #optional
     .goto 76,26.83,76.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .turnin 14118 >>Turn in Venison for the Troops
+    .collect 47039,1,14127 --Scout's Orders (1)
+    .accept 14127 >>Accept Return of the Highborne?
+    .turnin 14127 >>Turn in Return of the Highborne?
+    .use 47039
+    .itemcount 47039,1
     .target Ag'tor Bloodfist
-    .isQuestComplete 14118
+step
+    #optional
+    .goto 76,26.83,76.97
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
+    .turnin 14117 >>Turn in The Eyes of Ashenvale
+    .target Ag'tor Bloodfist
+    .isQuestComplete 14117
 step
     #optional
     .goto 76,26.83,76.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
     .turnin 14127 >>Turn in Return of the Highborne?
     .target Ag'tor Bloodfist
-    .isOnQuest 14127
-step
-    #optional
-    .goto 76,26.83,76.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor|r
-    .accept 14128 >>Accept Return of the Highborne?
-    .target Ag'tor Bloodfist
-    .isQuestTurnedIn 14127
+    .isQuestComplete 14118
 step
     #completewith Horzak1
     #optional
     .abandon 14118 >>Abandon Venison for the Troops
+step
+    #completewith Horzak1
+    #optional
+    .abandon 14117 >>Abandon in The Eyes of Ashenvale
 step
     #completewith Horzak1
     .subzone 4830 >>Travel to the Orgrimmar Rocketway Exchange
@@ -450,18 +410,16 @@ step
     .target Malynea Skyreaver
     .isOnQuest 14128
 step
-    .goto 76,29.12,66.16
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fisk|r
-    .accept 14197 >>Accept A Quota to Meet
-    .target Foreman Fisk
-step
     #label Horzak1
-    .goto 76,29.15,66.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horzak|r
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horzak|r and |cRXP_FRIENDLY_Foreman Fisk|r
     .turnin 14162 >>Turn in Report to Horzak
     .accept 14161 >>Accept Basilisk Bashin'
     .accept 14165 >>Accept Stone Cold
-    .target Horzak Zignibble
+    .target +Horzak Zignibble
+    .goto 76,29.15,66.25
+    .accept 14197 >>Accept A Quota to Meet
+    .target +Foreman Fisk
+    .goto Azshara,29.07,66.25
 step
     #completewith next
     .subzone 4744 >>Travel West to the Mountainfoot Stripmine
@@ -598,12 +556,12 @@ step
     .target Dead Soldier
     .target Sergeant Dynamo
 step
-    >>Kill |cRXP_ENEMY_Warlord Krellian|r. Loot him for the |cRXP_LOOT_SFG|r
+    >>Kill |cRXP_ENEMY_Warlord Krellian|r. Loot the |cRXP_LOOT_SFG|r on the ground after
     .complete 14470,1 --Warlord Krellian (1)
+    .mob +Warlord Krellian
     .goto 76,27.562,52.010
     .complete 14470,2 --SFG (1)
     .goto 76,27.693,51.903
-    .mob Warlord Krellian
 step
     #loop
     .goto 76,29.619,53.022,0
@@ -1169,22 +1127,22 @@ step
     .timer 59,A Hello to Arms RP
     .target Friz Groundspin
     .isOnQuest 24458
-step << Shaman
+step << Shaman Cata
     .goto 76,56.671,49.531
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maxx Avalanche|r
     .trainer >> Train your class spells
     .target Maxx Avalanche
-step << Mage
+step << Mage Cata
     .goto 76,56.919,49.598
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fizz Lighter|r
     .trainer >> Train your class spells
     .target Fizz Lighter
-step << Warlock
+step << Warlock Cata
     .goto 76,56.708,49.283
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Evol Fingers|r
     .trainer >> Train your class spells
     .target Evol Fingers
-step << Priest
+step << Priest Cata
     .goto 76,56.852,50.279
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Goldskimmer|r
     .trainer >> Train your class spells
@@ -1198,17 +1156,18 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grimy Greasefingers|r
     .home >> Set your hearthstone to Bilgewater Harbor
     .target Grimy Greasefingers
-step << Rogue
+    .subzoneskip 4821,1
+step << Rogue Cata
     .goto 76,56.884,50.575
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stinky Shapshiv|r
     .trainer >> Train your class spells
     .target Stinky Shapshiv
-step << Hunter
+step << Hunter Cata
     .goto 76,56.914,50.709
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bamm Megabomb|r
     .trainer >> Train your class spells
     .target Bamm Megabomb
-step << Warrior
+step << Warrior Cata
     .goto 76,57.167,50.105
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warrior-Matic NX-01|r upstairs
     .trainer >> Train your class spells
@@ -1457,10 +1416,14 @@ step
     .turnin 24449 >>Turn in Shore Leave
     .target Uncle Bedlam
 step
-    .maxlevel 18,NorthAzsharaSkip
     .goto 76,55.49,52.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r
     .turnin 14407 >>Turn in Azshara Blues
+    .target Kalec
+step
+    .maxlevel 18,NorthAzsharaSkip
+    .goto 76,55.49,52.13
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r
     .accept 14130 >>Accept Friends Come In All Colors
     .target Kalec
 step
@@ -1588,7 +1551,7 @@ step
     .turnin 14345 >>Turn in Wash Out
     .accept 14340 >>Accept Dressed to Impress
     .target Sorata Firespinner
-step 
+step
     #xprate <1.2
     .goto 76,42.61,23.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Andorel Sunsworn|r
@@ -2142,7 +2105,7 @@ step
     .goto 76,25.93,49.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Bilgewater Rocket-jockey|r
     .gossipoption 112442 >>Take the rocketride to the Northern Rocketway Terminus
-    .timer 83,Northern Rocketway Terminus 
+    .timer 83,Northern Rocketway Terminus
     .target Bilgewater Rocket-jockey
     .isOnQuest 14391
 step
@@ -2150,6 +2113,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Blitz Blastospazz|r
     .fp >>Get the Bitter Reaches Flight Path
     .target Blitz Blastospazz
+    .isQuestAvailable 14261
 step
     .goto 76,66.551,20.368
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r
@@ -2235,11 +2199,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Azuregos|r
     .accept 14392 >>Accept Farewell, Minnow
     .target Azuregos
-step << Druid
+step << Druid Cata
     #completewith DruidTraining1
     .cast 18960 >>Cast |T135758:0|t[Teleport: Moonglade]
     .zoneskip Moonglade
-step << Druid
+step << Druid Cata
     #label DruidTraining1
     .goto 1450/1,-2593.69995,7867.39990
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r
@@ -2250,37 +2214,37 @@ step
     .hs >>Hearth to Bilgewater Harbor
     .use 6948
     .subzoneskip 4821
-step << Shaman
+step << Shaman Cata
     .goto 76,56.671,49.531
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Max Avalanche|r
     .trainer >> Train your class spells
     .target Max Avalanche
-step << Mage
+step << Mage Cata
     .goto 76,56.919,49.598
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fizz Lighter|r
     .trainer >> Train your class spells
     .target Fizz Lighter
-step << Warlock
+step << Warlock Cata
     .goto 76,56.708,49.283
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Evol Fingers|r
     .trainer >> Train your class spells
     .target Evol Fingers
-step << Priest
+step << Priest Cata
     .goto 76,56.852,50.279
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Goldskimmer|r
     .trainer >> Train your class spells
     .target Sister Goldskimmer
-step << Rogue
+step << Rogue Cata
     .goto 76,56.884,50.575
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stinky Shapshiv|r
     .trainer >> Train your class spells
     .target Stinky Shapshiv
-step << Hunter
+step << Hunter Cata
     .goto 76,56.914,50.709
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bamm Megabomb|r
     .trainer >> Train your class spells
     .target Bamm Megabomb
-step << Warrior
+step << Warrior Cata
     .goto 76,57.167,50.105
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warrior-Matic NX-01|r upstairs
     .trainer >> Train your class spells
@@ -2524,6 +2488,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kroum|r
     .fly Orgrimmar >> Fly to Orgrimmar
     .target Kroum
+    .zoneskip Orgrimmar
 step
     .goto 1454/1,-4356.80029,1799.59998
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maztha|r
@@ -2622,14 +2587,14 @@ step << Tauren !Paladin
 	.target Harb Clawhoof
 	.mountcount 75-150,<1
     .xp <20,1
-step << Warlock
+step << Warlock Cata
     #label FelsteedTraining
     .goto 1454,54.49,39.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mirket|r
     .train 5784 >>Train |T136103:0|t[Felsteed]
     .target Mirket
     .mountcount 75-150,<1
-step << Paladin
+step << Paladin Cata
     #label WarhorseTraining
     .goto 1454/1,-4292.50000,1863.70007
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Atohmo|r
@@ -2638,6 +2603,7 @@ step << Paladin
     .target Sunwalker Atohmo
     .mountcount 75-150,<1
 step << !Orc !Goblin !Warlock !Paladin
+    #optional
     #completewith FlyValormok
     .hs >>Hearth to Orgrimmar
     .use 6948
@@ -2730,7 +2696,6 @@ step << Rogue
     .itemcount 2209,1
     .itemStat 16,QUALITY,<7
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<10.9
-
 step
     #label FlyValormok
     .goto 1454/1,-4370.00000,1799.90002
@@ -2754,6 +2719,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kulg Gorespatter|r
     .gossipoption 111683 >>Fly to The Mor'Shan Ramparts
     .target Kulg Gorespatter
+    .subzoneskip 2457,1
     .isOnQuest 13866
 step
     #optional

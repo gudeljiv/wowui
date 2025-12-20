@@ -71,7 +71,9 @@ Core.firstRun = true
 Core.scanning = false
 Core.itemCache = {}
 Core.ignoredItemCache = {}
+Core.ignoredItems = {}
 Core.customMacros = {}
+Core.QuietContemplationSpellName = ""
 
 local Buffet = CreateFrame("frame")
 Core.Buffet = Buffet
@@ -97,7 +99,9 @@ function Buffet:ADDON_LOADED(event, addon)
     -- load saved variables
     BuffetItemDB = setmetatable(BuffetItemDB or {}, { __index = Const.ItemDBdefaults })
     BuffetDB = setmetatable(BuffetDB or {}, { __index = Const.DBdefaults })
+
     Core.db = BuffetDB
+    Core.ignoredItems = BuffetDB.ignoredItems or {}
 
     local _, build = GetBuildInfo()
     local currBuild, prevBuild, buffetVersion = tonumber(build), BuffetItemDB.build, BuffetItemDB.version
@@ -159,6 +163,8 @@ function Buffet:PLAYER_LOGIN()
     Core.playerLevel = UnitLevel("player")
     Core.playerHealth = UnitHealthMax("player")
     Core.playerMana = UnitPowerMax("player")
+    _, _, Core.playerRaceId = UnitRace("player")
+
 
     Utility.LoadProfessions()
 
@@ -174,8 +180,11 @@ function Buffet:PLAYER_LOGIN()
         Utility.Debug("WLK mode enabled")
     elseif Utility.IsCataclysm then
         Utility.Debug("Cataclysm mode enabled")
+    elseif Utility.IsMists then
+        Utility.Debug("Mists mode enabled")
     elseif Utility.IsRetail then
         Utility.Debug("Retail mode enabled")
+        Core.QuietContemplationSpellName = C_Spell.GetSpellName(461063) or Locales.KeyWords.QuietContemplation
     end
 
     Core:QueueScan()
@@ -183,14 +192,17 @@ end
 
 function Buffet:PLAYER_LOGOUT()
     -- Save BuffetDB
-    for i, v in pairs(Const.DBdefaults) do
-        if Core.db[i] == v then
-            Core.db[i] = nil
+    for k, v in pairs(Const.DBdefaults) do
+        if Core.db[k] == v then
+            Core.db[k] = nil
         end
     end
-    for i, _ in pairs(Core.db) do
-        if Const.DBdefaults[i] == nil then
-            Core.db[i] = nil
+
+    BuffetDB.ignoredItems = Core.ignoredItems
+
+    for k, _ in pairs(Core.db) do
+        if Const.DBdefaults[k] == nil then
+            Core.db[k] = nil
         end
     end
 
@@ -311,7 +323,7 @@ function Core:Scan()
             local itemId = C_Container_GetContainerItemId(bag, slot)
             -- slot not empty
             if itemId then
-                if not Core.ignoredItemCache[itemId] and not Core.db.ignoredItems[itemId] then
+                if not Core.ignoredItemCache[itemId] and not Core.ignoredItems[itemId] then
                     if not itemIds[itemId] then
                         -- get total count for this item id
                         itemIds[itemId] = C_Item_GetItemCount(itemId)
@@ -333,7 +345,7 @@ function Core:Scan()
         itemMinLevel = itemMinLevel or 0
 
         -- treat only interesting items
-        if itemLink and (itemMinLevel <= self.playerLevel) and (Engine.IsValidItemClasses(itemClassId, itemSubClassId)) then
+        if (itemId ~= 12662) and (itemId ~= 20520) and itemLink and (itemMinLevel <= self.playerLevel) and (Engine.IsValidItemClasses(itemClassId, itemSubClassId)) then
             local itemData = self:MakeNewItemData(itemId, itemClassId, itemSubClassId)
 
             local itemFoundInCache = false
@@ -447,8 +459,11 @@ function Core:Scan()
             if Utility.IsClassic or Utility.IsTBC or Utility.IsWLK or Utility.IsCataclysm then
                 runeValue = 1200
             end
+            if Utility.IsMists then
+                runeValue = 1210
+            end
             if Utility.IsRetail then
-                runeValue = 550
+                runeValue = 688
             end
             self:SetBest(Const.BestCategories.rune, 12662, runeValue, itemIds[12662])
             self:SetAvailable(Const.BestCategories.rune, 12662, runeValue, itemIds[12662])
@@ -463,8 +478,11 @@ function Core:Scan()
             if Utility.IsClassic or Utility.IsTBC or Utility.IsWLK or Utility.IsCataclysm then
                 runeValue = 1199 -- health set to 1199 to prioritize demonic rune over dark rune
             end
+            if Utility.IsMists then
+                runeValue = 1200
+            end
             if Utility.IsRetail then
-                runeValue = 364
+                runeValue = 546
             end
             self:SetBest(Const.BestCategories.rune, 20520, runeValue, itemIds[20520])
             self:SetAvailable(Const.BestCategories.rune, 20520, runeValue, itemIds[20520])
@@ -725,11 +743,15 @@ function Core:EditDefault(name, substring, food, conjured, pot, mod)
         end
     end
 
-    if food then
-        cast = cast .. "item:" .. food
+    if Utility.IsRetail and Core.db.quietContemplation and (Core.PlayerRaceId == 84 or Core.playerRaceId == 85) then
+        cast = cast .. Core.QuietContemplationSpellName
     else
-        if Core.db.hearthstone then
-            cast = cast .. "item:6948"
+        if food then
+            cast = cast .. "item:" .. food
+        else
+            if Core.db.hearthstone then
+                cast = cast .. "item:6948"
+            end
         end
     end
 
@@ -880,13 +902,13 @@ function Core:SlashHandler(message, editbox)
     elseif cmd == "ignore-add" then
         local itemString = args or nil
         if itemString and itemString ~= "" then
-            local _, itemLink = GetItemInfo(itemString)
+            local _, itemLink = C_Item_GetItemInfo(itemString)
             if itemLink then
                 local itemId = string_match(itemLink, "item:([%d]+)")
                 if itemId then
                     itemId = tonumber(itemId)
-                    if not Core.db.ignoredItems[itemId] then
-                        Core.db.ignoredItems[itemId] = itemLink
+                    if not Core.ignoredItems[itemId] then
+                        Core.ignoredItems[itemId] = itemLink
                         Utility.Print(itemLink .. " added to ignore list")
                         self:QueueScan()
                     else
@@ -900,13 +922,13 @@ function Core:SlashHandler(message, editbox)
     elseif cmd == "ignore-remove" then
         local itemString = args or nil
         if itemString and itemString ~= "" then
-            local _, itemLink = GetItemInfo(itemString)
+            local _, itemLink = C_Item_GetItemInfo(itemString)
             if itemLink then
                 local itemId = string_match(itemLink, "item:([%d]+)")
                 if itemId then
                     itemId = tonumber(itemId)
-                    if Core.db.ignoredItems[itemId] then
-                        Core.db.ignoredItems[itemId] = nil
+                    if Core.ignoredItems[itemId] then
+                        Core.ignoredItems[itemId] = nil
                         Utility.Print(itemLink .. " removed from ignore list")
                         self:QueueScan()
                     else
@@ -918,13 +940,13 @@ function Core:SlashHandler(message, editbox)
             Utility.Print("Invalid argument")
         end
     elseif cmd == "ignore-clear" then
-        Core.db.ignoredItems = {}
+        Core.ignoredItems = {}
         Utility.Print("The ignore list has been emptied.")
         self:QueueScan()
     elseif cmd == "ignore-list" then
-        if Utility.TableCount(Core.db.ignoredItems) > 0 then
+        if Utility.TableCount(Core.ignoredItems) > 0 then
             Utility.Print("The following items are in the ignore list:")
-            for k,v in pairs(Core.db.ignoredItems) do
+            for k,v in pairs(Core.ignoredItems) do
                 Utility.Print(v)
             end
         else
@@ -933,7 +955,7 @@ function Core:SlashHandler(message, editbox)
     elseif cmd == "info" then
         local itemString = args or nil
         if itemString then
-            local _, itemLink = GetItemInfo(itemString)
+            local _, itemLink = C_Item_GetItemInfo(itemString)
             if itemLink then
                 local itemId = string_match(itemLink, "item:([%d]+)")
                 if itemId then

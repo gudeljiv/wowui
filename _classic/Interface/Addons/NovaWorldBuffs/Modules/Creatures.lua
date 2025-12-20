@@ -33,7 +33,7 @@ NWB.orgrimmarCreatures = {
 	[5885] = "Deino",
 	[15006] = "Deze Snowbane",
 	[12351] = "Dire Riding Wolf",
-	[3310] = "Doras",
+	--[3310] = "Doras",
 	[5613] = "Doyo'da",
 	[6986] = "Dran Droffers",
 	[3144] = "Eitrigg",
@@ -123,7 +123,7 @@ NWB.orgrimmarCreatures = {
 	[3317] = "Ollanus",
 	[3312] = "Olvia",
 	--[15467] = "Omen",
-	[3296] = "Orgrimmar Grunt", --Can be in durotar also, but can't comment this out we need it in org.
+	--[3296] = "Orgrimmar Grunt", --Can be in durotar also, but can't comment this out we need it in org.
 	[3352] = "Ormak Grimshot",
 	[3328] = "Ormok",
 	[16007] = "Orok Deathbane",
@@ -287,7 +287,7 @@ NWB.stormwindCreatures = {
 	--[2532] = "Donna",
 	[2504] = "Donyal Tovald",
 	[1314] = "Duncan Cullen",
-	[352] = "Dungar Longdrink",
+	--[352] = "Dungar Longdrink",
 	[6171] = "Duthorian Rall",
 	[1286] = "Edna Mullby",
 	[5515] = "Einris Brightspear",
@@ -519,6 +519,23 @@ NWB.dalaranCreatures = {
 	[30607] = "Teller Plushner",
 	[32689] = "Adorean Lew",
 	[32690] = "Bitty Frostflinger",
+};
+
+--Have a couple npcs ready to go incase layering start point is pandaria.
+NWB.pandariaCreatures = {
+	--Horde.
+	--[62996] = "Madam Vee Luo",
+	--[64041] = "Mifan",
+	--[64044] = "Warpweaver Shafiee",
+	--[64045] = "Thaumaturge Anjool",
+	[67130] = "D.E.N.T", --Trying just the AH npc for now to work out the ghost layer issue.
+	
+	--Alliance.
+	--[64149] = "Matron Vi Vinh",
+	--[64076] = "Bonni Chang",
+	--[64573] = "Warpweaver Ramahesh",
+	--[64045] = "Thaumaturge Faraket",
+	[65599] = "H.A.R.V.E.Y.",
 };
 
 NWB.companionCreatures = {
@@ -858,18 +875,42 @@ if (NWB.isWrath) then
 	for k, v in pairs(NWB.dalaranCreatures) do
 		NWB.npcs[k] = v;
 	end
+elseif (NWB.isMOP) then
+	NWB.map = 390;
+	NWB.mapName = L["Vale of Eternal Blossoms"];
+	for k, v in pairs(NWB.pandariaCreatures) do
+		NWB.npcs[k] = v;
+	end
 else
 	if (NWB.faction == "Horde") then
-		NWB.map = 1454;
+		if (NWB.expansionNum > 4) then
+			--Seems a bunch of map IDs changed with MoP.
+			--This may need changing to the new padaria capitals like with wrath the layering start point was moved to the new expanion continent by blizz.
+			NWB.map = 85;
+		else
+			NWB.map = 1454;
+		end
 		NWB.mapName = L["Orgrimmar"];
 		for k, v in pairs(NWB.orgrimmarCreatures) do
 			NWB.npcs[k] = v;
 		end
 	else
-		NWB.map = 1453;
+		if (NWB.expansionNum > 4) then
+			NWB.map = 84;
+		else
+			NWB.map = 1453;
+		end
 		NWB.mapName = L["Stormwind"];
 		for k, v in pairs(NWB.stormwindCreatures) do
 			NWB.npcs[k] = v;
 		end
 	end
 end
+
+--[[function NWB:getContinentMapIds()
+	--As of mop beta, these ids could change again, some strange choices here to only have some change and not others.
+	--12 kalimdor, 13 eastern kingdoms, outlands, 1467, 113 northrend, 424 Pandaria
+	for k, v in ipairs(C_Map.GetMapChildrenInfo(424)) do
+		print("NWB.layerMapWhitelist[" .. v.mapID .. "] = \"" .. v.name .. "\";");
+	end
+end]]

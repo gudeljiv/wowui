@@ -125,6 +125,21 @@ namespace.uninterruptibleList = {
     [28089] = true, -- Polarity Shift
     [28785] = true, -- Locust Swarm
     [18159] = true, -- Curse of the Fallen Magram
+    [23511] = true, -- Demoralizing Shout
+    [17238] = true, -- Drain Life
+    [17243] = true, -- Drain Mana
+    [17503] = true, -- Frostbolt
+    [16869] = true, -- Ice Tomb
+    [16788] = true, -- Fireball
+    [16419] = true, -- Flamestrike
+    [16390] = true, -- Flame Breath
+    [13899] = true, -- Fire Storm
+    [15668] = true, -- Fiery Burst
+    [17235] = true, -- Raise Undead Scarab
+    [4962] = true, -- Encasing Webs
+    [16418] = true, -- Crypt Scarabs
+    [18327] = true, -- Silence
+    [7121] = true, -- Anti-Magic Shield
 
     -- Spells with duplicate versions/ranks that doesn't need to be tied to NPC ids
     [GetSpellInfo(10436)] = true,-- Attack (Totems)
@@ -140,7 +155,6 @@ namespace.uninterruptibleList = {
     [GetSpellInfo(22539)] = true, -- Shadow Flame
     [GetSpellInfo(16868)] = true, -- Banshee Wail
     [GetSpellInfo(22479)] = true, -- Frost Breath
-    [GetSpellInfo(26134)] = true, -- Eye Beam
     [GetSpellInfo(26103)] = true, -- Sweep
     [GetSpellInfo(30732)] = true, -- Worm Sweep
     [GetSpellInfo(15847)] = true, -- Tail Sweep
@@ -169,6 +183,44 @@ elseif CLIENT_IS_TBC then
 end
 
 if CLIENT_IS_CLASSIC_ERA then
+    -- Skip pushback calculation for these spells since they
+    -- have chance to ignore pushback when talented, or is always immune.
+    namespace.pushbackBlacklist = {
+        [GetSpellInfo(1064)] = 1,       -- Chain Heal
+        [GetSpellInfo(25357)] = 1,      -- Healing Wave
+        [GetSpellInfo(8004)] = 1,       -- Lesser Healing Wave
+        [GetSpellInfo(2061)] = 1,       -- Flash Heal
+        [GetSpellInfo(2054)] = 1,       -- Heal
+        [GetSpellInfo(2050)] = 1,       -- Lesser Heal
+        [GetSpellInfo(596)] = 1,        -- Prayer of Healing
+        [GetSpellInfo(25314)] = 1,      -- Greater Heal
+        [GetSpellInfo(19750)] = 1,      -- Flash of Light
+        [GetSpellInfo(635)] = 1,        -- Holy Light
+        -- Druid heals are afaik many times not talented so ignoring them for now
+
+        [GetSpellInfo(19821)] = 1,      -- Arcane Bomb
+        [GetSpellInfo(4068)] = 1,       -- Iron Grenade
+        [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
+        [GetSpellInfo(13808)] = 1,      -- M73 Frag Grenade
+        [GetSpellInfo(4069)] = 1,       -- Big Iron Bomb
+        [GetSpellInfo(12543)] = 1,      -- Hi-Explosive Bomb
+        [GetSpellInfo(4064)] = 1,       -- Rough Copper Bomb
+        [GetSpellInfo(12421)] = 1,      -- Mithril Frag Bomb
+        [GetSpellInfo(19784)] = 1,      -- Dark Iron Bomb
+        [GetSpellInfo(4067)] = 1,       -- Big Bronze Bomb
+        [GetSpellInfo(4066)] = 1,       -- Small Bronze Bomb
+        [GetSpellInfo(4065)] = 1,       -- Large Copper Bomb
+        [GetSpellInfo(4061)] = 1,       -- Coarse Dynamite
+        [GetSpellInfo(4054)] = 1,       -- Rough Dynamite
+        [GetSpellInfo(8331)] = 1,       -- EZ-Thro Dynamite
+        [GetSpellInfo(23000)] = 1,      -- EZ-Thro Dynamite II
+        [GetSpellInfo(4062)] = 1,       -- Heavy Dynamite
+        [GetSpellInfo(23063)] = 1,      -- Dense Dynamite
+        [GetSpellInfo(12419)] = 1,      -- Solid Dynamite
+        [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray
+        [GetSpellInfo(20589)] = 1,      -- Escape Artist
+    }
+
     -- NPC spells that can't be interrupted, tied to npcIDs unlike `uninterruptibleList` above.
     -- Atm this only accepts npcID + spellName, not spellIDs as idk the correct ones.
     namespace.npcID_uninterruptibleList = {
@@ -226,6 +278,25 @@ if CLIENT_IS_CLASSIC_ERA then
         ["212969" .. GetSpellInfo(429825)] = true, -- Kazragore Chain Lightning
         ["213334" .. GetSpellInfo(429168)] = true, -- Aku'mai Corrosive Blast
         ["213334" .. GetSpellInfo(429356)] = true, -- Aku'mai Void Blast
+        ["4543" .. GetSpellInfo(9613)] = true, -- Bloodmage Thalnos Shadow Bolt
+        ["4543" .. GetSpellInfo(8814)] = true, -- Bloodmage Thalnos Flame Spike
+        ["3977" .. GetSpellInfo(9481)] = true, -- High Inquisitor Whitemane Holy Smite
+        ["3977" .. GetSpellInfo(12039)] = true, -- High Inquisitor Whitemane Heal
+        ["3977" .. GetSpellInfo(9232)] = true, -- High Inquisitor Whitemane Scarlet Resurrection
+        ["7358" .. GetSpellInfo(15530)] = true, -- Amnennar the Coldbringer Frostbolt
+        ["11487" .. GetSpellInfo(7645)] = true, -- Magister Kalendris Dominate Mind
+        ["11487" .. GetSpellInfo(7645)] = true, -- Magister Kalendris Mind Blast
+        ["11487" .. GetSpellInfo(15407)] = true, -- Magister Kalendris Mind Flay
+        ["1853" .. GetSpellInfo(18702)] = true, -- Darkmaster Gandling Curse of the Darkmaster
+        ["1853" .. GetSpellInfo(5143)] = true, -- Darkmaster Gandling Arcane Missiles
+        ["10502" .. GetSpellInfo(14515)] = true, -- Lady Illucia Barov Dominate Mind
+        ["10502" .. GetSpellInfo(12528)] = true, -- Lady Illucia Barov Silence
+        ["10502" .. GetSpellInfo(12542)] = true, -- Lady Illucia Barov Fear
+        ["10440" .. GetSpellInfo(17393)] = true, -- Baron Rivendare Shadow Bolt
+        ["9029" .. GetSpellInfo(15245)] = true, -- Eviscerator Shadow Bolt Volley
+        ["8983" .. GetSpellInfo(15305)] = true, -- Golem Lord Argelmach Chain Lightning
+        ["15589" .. GetSpellInfo(26134)] = true, -- Eye of C'thun Eye Beam
+        ["15727" .. GetSpellInfo(26134)] = true, -- C'thun Eye Beam
     }
 
     -- UnitChannelInfo() currently doesn't work in Classic Era 1.15.0, but the channel events still work for the current target.

@@ -1,3 +1,9 @@
+-- create addon
+local MOD_NAME = ...;
+local PARENT_MOD_NAME = "TipTac";
+local ttif = CreateFrame("Frame", MOD_NAME);
+
+-- upvalues
 local AceHook = LibStub:GetLibrary("AceHook-3.0");
 local format = string.format;
 local unpack = unpack;
@@ -14,10 +20,16 @@ local ejtt = EncounterJournalTooltip;
 -- get libs
 local LibFroznFunctions = LibStub:GetLibrary("LibFroznFunctions-1.0");
 
-local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
-
-if (not C_CurrencyInfo_GetCurrencyLink) then
-	C_CurrencyInfo_GetCurrencyLink = GetCurrencyLink;
+local function C_CurrencyInfo_GetCurrencyLink(currencyID, currencyAmount)
+	local _currencyAmount = (currencyAmount or 0);
+	
+	-- since sl 9.0.1
+	if (C_CurrencyInfo) and (C_CurrencyInfo.GetCurrencyLink) then
+		return C_CurrencyInfo.GetCurrencyLink(currencyID, _currencyAmount);
+	end
+	
+	-- before sl 9.0.1
+	return GetCurrencyLink(currencyID, _currencyAmount);
 end
 
 local C_QuestLog_GetSelectedQuest = C_QuestLog.GetSelectedQuest;
@@ -29,11 +41,6 @@ if (not C_QuestLog_GetSelectedQuest) then
 		return questID;
 	end
 end
-
--- Addon
-local MOD_NAME = ...;
-local PARENT_MOD_NAME = "TipTac";
-local ttif = CreateFrame("Frame", MOD_NAME);
 
 -- Register with TipTac core addon if available
 local TipTac = _G[PARENT_MOD_NAME];
@@ -51,6 +58,8 @@ local TTIF_DefaultConfig = {
 	if_showItemId = false,
 	if_showExpansionIcon = false,
 	if_showExpansionName = false,
+	if_showItemEnchantId = false,
+	if_showItemEnchantInfo = true,
 	if_showKeystoneRewardLevel = true,
 	if_showKeystoneTimeLimit = true,
 	if_showKeystoneAffixInfo = true,
@@ -98,6 +107,7 @@ local TTIF_DefaultConfig = {
 	
 	if_showIcon = true,
 	if_smartIcons = true,
+	if_smartIconsShowStackCount = true,
 	if_stackCountToTooltip = "none",
 	if_showIconId = false,
 	if_borderlessIcons = false,
@@ -105,7 +115,15 @@ local TTIF_DefaultConfig = {
 	if_iconAnchor = "BOTTOMLEFT",
 	if_iconTooltipAnchor = "TOPLEFT",
 	if_iconOffsetX = 2.5,
-	if_iconOffsetY = -2.5
+	if_iconOffsetY = -2.5,
+	
+	if_modifyShoppingTooltipCH = "doNothing",
+	if_modifyIconOffsetForCH = true,
+	if_iconOffsetX_CH = 0,
+	if_iconOffsetX_CH_addCHWidth = true,
+	if_iconOffsetY_CH = -2.5,
+	
+	if_hideClickForSettingsTextInCurrencyTip = true
 };
 local cfg;
 local TT_ExtendedConfig;
@@ -311,17 +329,33 @@ local function ttifGetOutputStackCount(stackCount)
 end
 
 -- Add stack count to tooltip
-local function ttifAddStackCount(tooltip, stackCount)
-	if (cfg.if_stackCountToTooltip == "always") or (cfg.if_stackCountToTooltip == "noicon") and ((not tooltip.ttIcon) or (not tooltip.ttIcon:IsShown())) then
-		local outputStackCount = ttifGetOutputStackCount(stackCount);
-		if (outputStackCount) then
-			tooltip:AddLine(format("Stacks to %d", outputStackCount), unpack(cfg.if_infoColor));
+local function ttifAddStackCount(tooltip, outputStackCount)
+	if (outputStackCount) and ((cfg.if_stackCountToTooltip == "always") or (cfg.if_stackCountToTooltip == "noicon") and ((not tooltip.ttIcon) or (not tooltip.ttIcon:IsShown()))) then
+		tooltip:AddLine(format("Stacks to %d", outputStackCount), unpack(cfg.if_infoColor));
+	end
+end
+
+-- Set Point
+local function ttSetIconPoint(tooltip, onlyAdjustForCHWidth)
+	if (onlyAdjustForCHWidth) and ((not tooltip.ttIcon) or (not tooltip.ttIcon:IsShown())) then
+		return;
+	end
+	
+	if (cfg.if_modifyIconOffsetForCH) and (tooltip.CompareHeader) then
+		if (onlyAdjustForCHWidth) and (not cfg.if_iconOffsetX_CH_addCHWidth) then
+			return;
 		end
+		
+		tooltip.ttIcon:ClearAllPoints();
+		tooltip.ttIcon:SetPoint(cfg.if_iconAnchor, tooltip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX_CH + (cfg.if_iconOffsetX_CH_addCHWidth and tooltip.CompareHeader:GetWidth() or 0), cfg.if_iconOffsetY_CH);
+	elseif (not onlyAdjustForCHWidth) then
+		tooltip.ttIcon:ClearAllPoints();
+		tooltip.ttIcon:SetPoint(cfg.if_iconAnchor, tooltip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX, cfg.if_iconOffsetY);
 	end
 end
 
 -- Set Texture and Text
-local function ttSetIconTextureAndText(self, texture, stackCount)
+local function ttSetIconTextureAndText(self, texture, outputStackCount)
 	-- check if insecure interaction with the tip is currently forbidden
 	if (self:IsForbidden()) then
 		return;
@@ -330,7 +364,6 @@ local function ttSetIconTextureAndText(self, texture, stackCount)
 	-- Set Texture and Text
 	if (texture) then
 		self.ttIcon:SetTexture(texture ~= "" and texture or "Interface\\Icons\\INV_Misc_QuestionMark");
-		local outputStackCount = ttifGetOutputStackCount(stackCount);
 		if (outputStackCount) then
 			self.ttCount:SetText(outputStackCount);
 		else
@@ -346,7 +379,7 @@ end
 -- Create Icon with Counter Text for Tooltip
 function ttif:CreateTooltipIcon(tip)
 	tip.ttIcon = tip:CreateTexture(nil, "BACKGROUND");
-	tip.ttIcon:SetPoint(cfg.if_iconAnchor,tip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX, cfg.if_iconOffsetY);
+	ttSetIconPoint(tip);
 	tip.ttIcon:Hide();
 
 	tip.ttCount = tip:CreateFontString(nil, "ARTWORK");
@@ -399,13 +432,9 @@ function ttif:VARIABLES_LOADED(event)
 		tipsToModify = TipTac.tipsToModify;
 	end
 
-	-- Use TipTac settings if installed
-	if (TipTac_Config) then
-		cfg = LibFroznFunctions:ChainTables(TipTac_Config, TTIF_DefaultConfig);
-	else
-		cfg = TTIF_DefaultConfig;
-	end
-
+	-- Use TipTac config if installed
+	cfg = select(2, LibFroznFunctions:CreateDbWithLibAceDB("TipTac_Config", TTIF_DefaultConfig));
+	
 	-- Hook Tips & Apply Settings
 	self:HookTips();
 	self:OnApplyConfig(TT_CacheForFrames, cfg, TT_ExtendedConfig);
@@ -439,8 +468,7 @@ function ttif:OnApplyConfig(_TT_CacheForFrames, _cfg, _TT_ExtendedConfig)
 				else
 					tip.ttIcon:SetTexCoord(0, 1, 0, 1);
 				end
-				tip.ttIcon:ClearAllPoints();
-				tip.ttIcon:SetPoint(cfg.if_iconAnchor, tip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX, cfg.if_iconOffsetY);
+				ttSetIconPoint(tip);
 			elseif (tip.ttSetIconTextureAndText) then
 				tip.ttIcon:Hide();
 				tip.ttSetIconTextureAndText = nil;
@@ -636,9 +664,9 @@ function ttif:SetHyperlink_Hook(self, hyperlink)
 end
 
 -- HOOK: SetUnitAura + SetUnitBuff + SetUnitDebuff
-local function SetUnitAura_Hook(self, unit, index, filter)
+local function SetUnitAura_Hook(self, alternateFilterIfNotDefined, unit, index, filter)
 	if (cfg.if_enable) and (not tipDataAdded[self]) then
-		local auraData = LibFroznFunctions:GetAuraDataByIndex(unit, index, filter); -- [18.07.19] 8.0/BfA: "dropped second parameter"
+		local auraData = LibFroznFunctions:GetAuraDataByIndex(unit, index, filter or alternateFilterIfNotDefined); -- [18.07.19] 8.0/BfA: "dropped second parameter"
 		if (auraData) and (auraData.spellId) then
 			local link = LibFroznFunctions:GetSpellLink(auraData.spellId);
 			if (link) then
@@ -789,14 +817,51 @@ local function SetAction_Hook(self, slot)
 			tipDataAdded[self] = "flyout";
 			CustomTypeFuncs.flyout(self, nil, "flyout", id, icon);
 		elseif (actionType == "macro") then
-			local spellID = GetMacroSpell(id);
-			if (spellID) then
-				local link = LibFroznFunctions:GetSpellLink(spellID);
-				if (link) then
-					local linkType, _spellID = link:match("H?(%a+):(%d+)");
-					if (_spellID) then
-						tipDataAdded[self] = linkType;
-						LinkTypeFuncs.spell(self, false, nil, link, linkType, _spellID);
+			if (subType == "spell") then
+				local spellID = id;
+				if (spellID) then
+					local link = LibFroznFunctions:GetSpellLink(spellID);
+					if (link) then
+						local linkType, _spellID = link:match("H?(%a+):(%d+)");
+						if (_spellID) then
+							tipDataAdded[self] = linkType;
+							LinkTypeFuncs.spell(self, false, nil, link, linkType, _spellID);
+						end
+					end
+				end
+			elseif (subType == "item") then
+				local line = _G[self:GetName().."TextLeft1"]; -- id is wrong. as a workaround find item in macro by name.
+				local name = line and (line:GetText() or "");
+				if (name ~= "") then
+					local _, link = GetItemInfo(name);
+					if (link) then
+						local linkType, itemID = link:match("H?(%a+):(%d+)");
+						if (itemID) then
+							tipDataAdded[self] = linkType;
+							LinkTypeFuncs.item(self, link, linkType, itemID);
+							
+							-- apply workaround for first mouseover if item is a toy
+							if (C_ToyBox) then
+								local _itemID, toyName, icon, isFavorite, hasFanfare, itemQuality = C_ToyBox.GetToyInfo(itemID);
+								
+								if (_itemID) then
+									ttif:ApplyWorkaroundForFirstMouseover(self, false, nil, link, linkType, itemID);
+								end
+							end
+						end
+					end
+				end
+			elseif (subType == "MOUNT") then
+				local line = _G[self:GetName().."TextLeft1"]; -- id is wrong. as a workaround find spell in macro by name.
+				local name = line and (line:GetText() or "");
+				if (name ~= "") then
+					local link = LibFroznFunctions:GetSpellLink(name);
+					if (link) then
+						local linkType, spellID = link:match("H?(%a+):(%d+)");
+						if (spellID) then
+							tipDataAdded[self] = linkType;
+							LinkTypeFuncs.spell(self, false, nil, link, linkType, spellID);
+						end
 					end
 				end
 			end
@@ -1284,6 +1349,13 @@ local function OnTooltipSetItem(self, ...)
 			end
 		end
 	end
+
+	if (self.CompareHeader) and
+		((cfg.if_modifyShoppingTooltipCH == "alwaysHideCH") or
+			(cfg.if_modifyShoppingTooltipCH == "hideCHIfIcon") and (self.ttIcon) and (self.ttIcon:IsShown())) then
+			
+		self.CompareHeader:Hide();
+	end
 end
 
 -- OnTooltipSetSpell
@@ -1535,6 +1607,36 @@ local function TDM_OnEnter_Hook(self)
 				if (_spellID) then
 					tipDataAdded[gtt] = linkType;
 					LinkTypeFuncs.spell(gtt, false, nil, link, linkType, _spellID);
+				end
+			end
+		end
+	end
+end
+
+-- HOOK: TokenEntryMixin:ShowCurrencyTooltip
+local function TEM_ShowCurrencyTooltip_Hook(self)
+	if (cfg.if_enable) and (gtt:IsShown()) then
+		-- Remove Unwanted Lines
+		local hideClickForSettingsTextInCurrencyTip = (cfg.if_hideClickForSettingsTextInCurrencyTip) and (LibFroznFunctions.hasWoWFlavor.clickForSettingsTextInCurrencyTip) and (CURRENCY_BUTTON_TOOLTIP_CLICK_INSTRUCTION);
+		
+		if (hideClickForSettingsTextInCurrencyTip) then
+			for i = 2, gtt:NumLines() do
+				local gttLine = _G["GameTooltipTextLeft" .. i];
+				local gttLineText = gttLine:GetText();
+				
+				if (type(gttLineText) == "string") then
+					local isGttLineTextCurrencyButtonTooltipClickInstruction = (hideClickForSettingsTextInCurrencyTip) and (gttLineText == CURRENCY_BUTTON_TOOLTIP_CLICK_INSTRUCTION);
+					
+					if (isGttLineTextCurrencyButtonTooltipClickInstruction) then
+						gttLine:SetText(nil);
+						
+						if (isGttLineTextCurrencyButtonTooltipClickInstruction) and (i > 1) then
+							_G["GameTooltipTextLeft" .. (i - 1)]:SetText(nil);
+						end
+						
+						gtt:Show();
+						break;
+					end
 				end
 			end
 		end
@@ -1881,9 +1983,15 @@ function ttif:ApplyHooksToTips(tips, resolveGlobalNamedObjects, addToTipsToModif
 				hooksecurefunc(tip, "SetHyperlink", function(self, ...)
 					ttif:SetHyperlink_Hook(self, ...)
 				end);
-				hooksecurefunc(tip, "SetUnitAura", SetUnitAura_Hook);
-				hooksecurefunc(tip, "SetUnitBuff", SetUnitAura_Hook);
-				hooksecurefunc(tip, "SetUnitDebuff", SetUnitAura_Hook);
+				hooksecurefunc(tip, "SetUnitAura", function(self, ...)
+					SetUnitAura_Hook(self, nil, ...);
+				end);
+				hooksecurefunc(tip, "SetUnitBuff", function(self, ...)
+					SetUnitAura_Hook(self, LFF_AURA_FILTERS.Helpful, ...);
+				end);
+				hooksecurefunc(tip, "SetUnitDebuff", function(self, ...)
+					SetUnitAura_Hook(self, LFF_AURA_FILTERS.Harmful, ...);
+				end);
 				hooksecurefunc(tip, "SetAction", SetAction_Hook);
 				hooksecurefunc(tip, "SetSpellBookItem", SetSpellBookItem_Hook);
 				hooksecurefunc(tip, "SetPetAction", SetPetAction_Hook);
@@ -1936,6 +2044,8 @@ function ttif:ApplyHooksToTips(tips, resolveGlobalNamedObjects, addToTipsToModif
 					LibFroznFunctions:HookSecureFuncIfExists(DressUpOutfitDetailsSlotMixin, "OnEnter", DUODSM_OnEnter_Hook);
 					-- since df
 					LibFroznFunctions:HookSecureFuncIfExists(TalentDisplayMixin, "OnEnter", TDM_OnEnter_Hook);
+					-- since tww
+					LibFroznFunctions:HookSecureFuncIfExists(TokenEntryMixin, "ShowCurrencyTooltip", TEM_ShowCurrencyTooltip_Hook);
 				end
 				tipHooked = true;
 			else
@@ -2162,17 +2272,19 @@ function ttif:ADDON_LOADED(event, addOnName, containsBindings)
 	end
 	-- now PVPRewardTemplate exists
 	if (addOnName == "Blizzard_PVPUI") or ((addOnName == MOD_NAME) and (LibFroznFunctions:IsAddOnFinishedLoading("Blizzard_PVPUI")) and (not addOnsLoaded['Blizzard_PVPUI'])) then
-		-- Function to apply necessary hooks to PVPRewardTemplate, see HonorFrameBonusFrame_Update() in "Blizzard_PVPUI/Blizzard_PVPUI.lua"
-		local buttons = {
-			HonorFrame.BonusFrame.RandomBGButton,
-			HonorFrame.BonusFrame.Arena1Button,
-			HonorFrame.BonusFrame.RandomEpicBGButton,
-			HonorFrame.BonusFrame.BrawlButton,
-			HonorFrame.BonusFrame.BrawlButton2
-		};
-		
-		for i, button in pairs(buttons) do
-			button.Reward.EnlistmentBonus:HookScript("OnEnter", HFBFB_OnEnter);
+		if (HonorFrame) and (HonorFrame.BonusFrame) then -- frame "HonorFrame.BonusFrame" doesn't exist in mopc
+			-- Function to apply necessary hooks to PVPRewardTemplate, see HonorFrameBonusFrame_Update() in "Blizzard_PVPUI/Blizzard_PVPUI.lua"
+			local buttons = {
+				HonorFrame.BonusFrame.RandomBGButton,
+				HonorFrame.BonusFrame.Arena1Button,
+				HonorFrame.BonusFrame.RandomEpicBGButton,
+				HonorFrame.BonusFrame.BrawlButton,
+				HonorFrame.BonusFrame.BrawlButton2
+			};
+			
+			for i, button in pairs(buttons) do
+				button.Reward.EnlistmentBonus:HookScript("OnEnter", HFBFB_OnEnter);
+			end
 		end
 		
 		if (addOnName == MOD_NAME) then
@@ -2364,6 +2476,17 @@ end
 local isSettingBackdropBorderColor = false;
 
 function ttif:SetBackdropBorderColorLocked(tip, r, g, b, a)
+	-- check if insecure interaction with the tip is currently forbidden
+	if (tip:IsForbidden()) then
+		return;
+	end
+	
+	-- check if function tip:SetBackdropBorderColor() exists
+	if (not tip.SetBackdropBorderColor) then
+		return;
+	end
+	
+	-- set backdrop border color locked to tip
 	local aMultiplied = (a or 1) * ((cfg.tipBorderColor and cfg.tipBorderColor[4]) or 1);
 	
 	if (TipTac) then
@@ -2407,8 +2530,9 @@ function LinkTypeFuncs:item(link, linkType, id)
 	end
 	
 	local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice, classID, subClassID, bindType, expansionID, setID, isCraftingReagent = C_Item.GetItemInfo(link);
+	local refString = link:match("|H([^|]+)|h") or link;
+	local splits = StringSplitIntoTable(":", refString);
 	if (classID == 5) and (subClassID == 1) then -- keystone
-		local splits = StringSplitIntoTable(":", link);
 		local mapID = splits[17];
 		local keystoneLevel = splits[19];
 		LinkTypeFuncs.keystone(self, link, linkType, id, mapID, keystoneLevel, select(21, unpack(splits))); -- modifierID1, modifierID2, modifierID3, modifierID4
@@ -2422,13 +2546,15 @@ function LinkTypeFuncs:item(link, linkType, id)
 	local mountID = LibFroznFunctions:GetMountFromItem(id);
 	local expansionIcon = expansionID and TTIF_ExpansionIcon[expansionID];
 	local expansionName = expansionID and _G["EXPANSION_NAME" .. expansionID];
+	local enchantID = splits[3];
 	
 	-- Icon
-	local showIcon = (not self.IsEmbedded) and (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or SmartIconEvaluation(self,linkType));
 	local stackCount = (itemStackCount and itemStackCount > 1 and (itemStackCount == 0x7FFFFFFF and "#" or itemStackCount) or "");
+	local outputStackCount = ttifGetOutputStackCount(stackCount);
+	local showIcon = (not self.IsEmbedded) and (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or (cfg.if_smartIconsShowStackCount and outputStackCount) or SmartIconEvaluation(self,linkType));
 	
 	if (showIcon) then
-		self:ttSetIconTextureAndText(itemTexture, stackCount);
+		self:ttSetIconTextureAndText(itemTexture, outputStackCount);
 	end
 	
 	-- Stack Count
@@ -2437,14 +2563,17 @@ function LinkTypeFuncs:item(link, linkType, id)
 		targetTooltip = self.Item1.tooltip;
 	end
 	
-	ttifAddStackCount(targetTooltip, stackCount);
+	ttifAddStackCount(targetTooltip, outputStackCount);
+	
+	-- Set Point
+	ttSetIconPoint(targetTooltip, true);
 	
 	-- Quality Border
 	if (not self.IsEmbedded) and (cfg.if_itemQualityBorder) then
 		local quality = tonumber(itemRarity);
 		
 		if (quality) then
-			local itemQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality)));
+			local itemQualityColor = LibFroznFunctions:GetItemQualityColor(quality);
 			ttif:SetBackdropBorderColorLocked(self, itemQualityColor:GetRGBA());
 		end
 	end
@@ -2456,6 +2585,8 @@ function LinkTypeFuncs:item(link, linkType, id)
 	local showIconID = (cfg.if_showIconId and itemTexture);
 	local showExpansionIcon = (cfg.if_showExpansionIcon and expansionIcon);
 	local showExpansionName = (cfg.if_showExpansionName and expansionName);
+	local showItemEnchantID = (cfg.if_showItemEnchantId and enchantID and (enchantID ~= ""));
+	local showItemEnchantInfo = (cfg.if_showItemEnchantInfo and enchantID and (enchantID ~= ""));
 	local linePadding = 2;
 
 	if (showLevel or showId) then
@@ -2543,6 +2674,21 @@ function LinkTypeFuncs:item(link, linkType, id)
 		self:AddLine(format("Expansion: %s", (expansionIconTextureMarkup and expansionIconTextureMarkup or "") .. (showExpansionIcon and showExpansionName and " " or "") .. (showExpansionName and expansionName or "")), unpack(cfg.if_infoColor));
 	end
 	
+	if (showItemEnchantID) then
+		self:AddLine(format("EnchantID: %d", enchantID), unpack(cfg.if_infoColor));
+	end
+	
+	if (showItemEnchantInfo) then
+		local enchant = LibFroznFunctions:GetItemEnchant(enchantID);
+		
+		if (enchant) and (enchant ~= LFF_ENCHANT.none) and (enchant ~= LFF_ENCHANT.available) then
+			self:AddLine(format("Enchant Description: %s", ((enchant.spellIconID ~= 136235) and (CreateTextureMarkup(enchant.spellIconID, 64, 64, 0, 0, 0.07, 0.93, 0.07, 0.93) .. " ") or "") .. GREEN_FONT_COLOR:WrapTextInColorCode(enchant.spellName)), cfg.if_infoColor[1], cfg.if_infoColor[2], cfg.if_infoColor[3]); -- 136235 = Samwise Didier Icon aka missing icon
+			if (enchant.description) then
+				self:AddLine(enchant.description, cfg.if_infoColor[1], cfg.if_infoColor[2], cfg.if_infoColor[3], true);
+			end
+		end
+	end
+	
 	targetTooltip:Show();	-- call Show() to resize tip after adding lines. only necessary for items in toy box.
 end
 
@@ -2564,22 +2710,23 @@ function LinkTypeFuncs:keystone(link, linkType, itemID, mapID, keystoneLevel, ..
 	local expansionName = expansionID and _G["EXPANSION_NAME" .. expansionID];
 	
 	-- Icon
-	local showIcon = (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or SmartIconEvaluation(self,linkType));
 	local stackCount = (itemStackCount and itemStackCount > 1 and (itemStackCount == 0x7FFFFFFF and "#" or itemStackCount) or "");
+	local outputStackCount = ttifGetOutputStackCount(stackCount);
+	local showIcon = (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or (cfg.if_smartIconsShowStackCount and outputStackCount) or SmartIconEvaluation(self,linkType));
 	
 	if (showIcon) then
-		self:ttSetIconTextureAndText(itemTexture, stackCount);
+		self:ttSetIconTextureAndText(itemTexture, outputStackCount);
 	end
 	
 	-- Stack Count
-	ttifAddStackCount(self, stackCount);
+	ttifAddStackCount(self, outputStackCount);
 	
 	-- Quality Border
 	if (cfg.if_itemQualityBorder) then
 		local quality = tonumber(itemRarity);
 		
 		if (quality) then
-			local itemQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality)));
+			local itemQualityColor = LibFroznFunctions:GetItemQualityColor(quality);
 			ttif:SetBackdropBorderColorLocked(self, itemQualityColor:GetRGBA());
 		end
 	end
@@ -2653,7 +2800,8 @@ function LinkTypeFuncs:keystone(link, linkType, itemID, mapID, keystoneLevel, ..
 				if (modifierID) then
 					local modifierName, modifierDescription, fileDataID = C_ChallengeMode.GetAffixInfo(modifierID);
 					if (modifierName and modifierDescription) then
-						self:AddLine(format("%s %s\n%s", CreateTextureMarkup(fileDataID, 64, 64, 0, 0, 0.07, 0.93, 0.07, 0.93), GREEN_FONT_COLOR:WrapTextInColorCode(modifierName), modifierDescription), cfg.if_infoColor[1], cfg.if_infoColor[2], cfg.if_infoColor[3], true);
+						self:AddLine(format("%s %s", CreateTextureMarkup(fileDataID, 64, 64, 0, 0, 0.07, 0.93, 0.07, 0.93), GREEN_FONT_COLOR:WrapTextInColorCode(modifierName)), cfg.if_infoColor[1], cfg.if_infoColor[2], cfg.if_infoColor[3]);
+						self:AddLine(modifierDescription, cfg.if_infoColor[1], cfg.if_infoColor[2], cfg.if_infoColor[3], true);
 					end
 				end
 			end
@@ -2688,7 +2836,7 @@ function LinkTypeFuncs:spell(isAura, source, link, linkType, spellID)
 		if (linkMawPower) then
 			local _linkType, _mawPowerID = linkMawPower:match("H?(%a+):(%d+)");
 			mawPowerID = _mawPowerID;
-			if (not LFF_MAWPOWERID_TO_MAWPOWER_LOOKUP[mawPowerID]) then -- possible internal blizzard bug: C_Spell.GetMawPowerLinkBySpellID() e.g. returns mawPowerID 1453 for battle shout with spellID 6673, which doesn't exist in table MawPower (from https://wow.tools/dbc/?dbc=mawpower)
+			if (not LibFroznFunctions:GetMawPower(mawPowerID)) then -- possible internal blizzard bug: C_Spell.GetMawPowerLinkBySpellID() e.g. returns mawPowerID 1453 for battle shout with spellID 6673, which doesn't exist in table MawPower (from https://wago.tools/db2/MawPower)
 				mawPowerID = nil;
 			end
 		end
@@ -2766,10 +2914,10 @@ function LinkTypeFuncs:spell(isAura, source, link, linkType, spellID)
 			local rarityAtlas = C_Spell.GetMawPowerBorderAtlasBySpellID(spellID);
 			if (rarityAtlas) then
 				local rarityAtlasColors = { -- see table UiTextureAtlasElement name "jailerstower-animapowerlist-powerborder*"
-					["jailerstower-animapowerlist-powerborder-white"] = ITEM_QUALITY_COLORS[Enum.ItemQuality.Common],
-					["jailerstower-animapowerlist-powerborder-green"] = ITEM_QUALITY_COLORS[Enum.ItemQuality.Uncommon],
-					["jailerstower-animapowerlist-powerborder-blue"] = ITEM_QUALITY_COLORS[Enum.ItemQuality.Rare],
-					["jailerstower-animapowerlist-powerborder-purple"] = ITEM_QUALITY_COLORS[Enum.ItemQuality.Epic]
+					["jailerstower-animapowerlist-powerborder-white"] = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Common),
+					["jailerstower-animapowerlist-powerborder-green"] = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Uncommon),
+					["jailerstower-animapowerlist-powerborder-blue"] = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Rare),
+					["jailerstower-animapowerlist-powerborder-purple"] = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Epic)
 				};
 				if (rarityAtlasColors[rarityAtlas]) then
 					spellColor = rarityAtlasColors[rarityAtlas].color;
@@ -2788,8 +2936,12 @@ end
 -- maw power
 function LinkTypeFuncs:mawpower(link, linkType, mawPowerID)
 	local spellID = nil;
-	if (mawPowerID and LFF_MAWPOWERID_TO_MAWPOWER_LOOKUP[mawPowerID]) then
-		spellID = LFF_MAWPOWERID_TO_MAWPOWER_LOOKUP[mawPowerID].spellID;
+	if (mawPowerID) then
+		local mawPower = LibFroznFunctions:GetMawPower(mawPowerID);
+		
+		if (mawPower) then
+			spellID = mawPower.spellID;
+		end
 	end
 	
 	local spellInfo = LibFroznFunctions:GetSpellInfo(spellID);
@@ -2833,13 +2985,13 @@ function LinkTypeFuncs:mawpower(link, linkType, mawPowerID)
 			local rarityAtlas = C_Spell.GetMawPowerBorderAtlasBySpellID(spellID);
 			if (rarityAtlas) then
 				if (rarityAtlas == "jailerstower-animapowerlist-powerborder-white") then -- see table UiTextureAtlasElement name "jailerstower-animapowerlist-powerborder*"
-					spellColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(1)));
+					spellColor = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Common);
 				elseif (rarityAtlas == "jailerstower-animapowerlist-powerborder-green") then
-					spellColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(2)));
+					spellColor = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Uncommon);
 				elseif (rarityAtlas == "jailerstower-animapowerlist-powerborder-blue") then
-					spellColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(3)));
+					spellColor = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Rare);
 				elseif (rarityAtlas == "jailerstower-animapowerlist-powerborder-purple") then
-					spellColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(4)));
+					spellColor = LibFroznFunctions:GetItemQualityColor(LFF_ITEM_QUALITY.Epic);
 				end
 			end
 		end
@@ -2926,7 +3078,7 @@ function LinkTypeFuncs:currency(link, linkType, currencyID, quantity)
 		quality = tonumber(quality);
 		
 		if (quality) then
-			local currencyQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality)));
+			local currencyQualityColor = LibFroznFunctions:GetItemQualityColor(quality);
 			ttif:SetBackdropBorderColorLocked(self, currencyQualityColor:GetRGBA());
 		end
 	end
@@ -3046,14 +3198,13 @@ end
 
 -- unit
 function LinkTypeFuncs:unit(link, linkType, unitID)
-	local unitGUID = UnitGUID(unitID);
-	local npcID = (not UnitIsPlayer(unitID)) and unitGUID and tonumber(unitGUID:match("-(%d+)-%x+$"));
+	local unitRecord = LibFroznFunctions:GetUnitRecordFromCache(unitID);
 	
 	-- NpcID -- Only alter the tip if we got a valid "npcID"
-	local showId = (npcID and cfg.if_showNpcId);
+	local showId = (unitRecord and unitRecord.npcID and cfg.if_showNpcId);
 	
 	if (showId) then
-		self:AddLine(format("NpcID: %d", tonumber(npcID)), unpack(cfg.if_infoColor));
+		self:AddLine(format("NpcID: %d", tonumber(unitRecord.npcID)), unpack(cfg.if_infoColor));
 	end
 end
 
@@ -3073,7 +3224,7 @@ function LinkTypeFuncs:battlepet(link, linkType, speciesID, level, breedQuality,
 		local quality = tonumber(breedQuality);
 		
 		if (quality) then
-			local battlePetQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality)));
+			local battlePetQualityColor = LibFroznFunctions:GetItemQualityColor(quality);
 			ttif:SetBackdropBorderColorLocked(self, battlePetQualityColor:GetRGBA());
 		end
 	end
@@ -3274,7 +3425,7 @@ function LinkTypeFuncs:conduit(link, linkType, conduitID, conduitRank)
 		local conduitQuality = C_Soulbinds.GetConduitQuality(conduitID, conduitRank);
 		
 		if (conduitQuality) then
-			local conduitQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(conduitQuality)));
+			local conduitQualityColor = LibFroznFunctions:GetItemQualityColor(conduitQuality);
 			ttif:SetBackdropBorderColorLocked(self, conduitQualityColor:GetRGBA());
 		end
 	end
@@ -3298,15 +3449,16 @@ function LinkTypeFuncs:transmogappearance(link, linkType, sourceID)
 	end
 
 	-- Icon
-	local showIcon = (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or SmartIconEvaluation(self,linkType));
 	local stackCount = (itemStackCount and itemStackCount > 1 and (itemStackCount == 0x7FFFFFFF and "#" or itemStackCount) or "");
+	local outputStackCount = ttifGetOutputStackCount(stackCount);
+	local showIcon = (self.ttSetIconTextureAndText) and (not cfg.if_smartIcons or (cfg.if_smartIconsShowStackCount and outputStackCount) or SmartIconEvaluation(self,linkType));
 	
 	if (showIcon) then
-		self:ttSetIconTextureAndText(itemTexture, stackCount);
+		self:ttSetIconTextureAndText(itemTexture, outputStackCount);
 	end
 	
 	-- Stack Count
-	ttifAddStackCount(self, stackCount);
+	ttifAddStackCount(self, outputStackCount);
 	
 	-- ItemID + IconID
 	local showItemID = cfg.if_showTransmogAppearanceItemId;
@@ -3326,7 +3478,7 @@ function LinkTypeFuncs:transmogappearance(link, linkType, sourceID)
 		local quality = tonumber(itemRarity);
 		
 		if (quality) then
-			local itemQualityColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality)));
+			local itemQualityColor = LibFroznFunctions:GetItemQualityColor(quality);
 			ttif:SetBackdropBorderColorLocked(self, itemQualityColor:GetRGBA());
 		end
 	end
@@ -3428,7 +3580,7 @@ function LinkTypeFuncs:transmogset(link, linkType, setID)
 		local setQuality = (numTotalSlots > 0 and totalQuality > 0) and Round(totalQuality / numTotalSlots) or nil;
 		
 		if (setQuality) then
-			local setColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(setQuality)));
+			local setColor = LibFroznFunctions:GetItemQualityColor(setQuality);
 			ttif:SetBackdropBorderColorLocked(self, setColor:GetRGBA());
 		end
 	end
@@ -3465,7 +3617,7 @@ function LinkTypeFuncs:azessence(link, linkType, essenceID, essenceRank)
 		local quality = tonumber(essenceRank);
 		
 		if (quality) then
-			local essenceColor = LibFroznFunctions:CreateColorFromHexString(select(4, C_Item.GetItemQualityColor(quality + 1)));
+			local essenceColor = LibFroznFunctions:GetItemQualityColor(quality + 1);
 			ttif:SetBackdropBorderColorLocked(self, essenceColor:GetRGBA());
 		end
 	end

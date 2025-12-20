@@ -1,6 +1,6 @@
 # FarmHud
 
-## [9.2.16-release](https://github.com/HizurosWoWAddOns/FarmHud/tree/9.2.16-release) (2024-08-28)
-[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/9.2.16-release) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
+## [10.1.6-release](https://github.com/HizurosWoWAddOns/FarmHud/tree/10.1.6-release) (2025-08-09)
+[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/10.1.6-release) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
 
-- Fix tracking options  
+- Update toc file  

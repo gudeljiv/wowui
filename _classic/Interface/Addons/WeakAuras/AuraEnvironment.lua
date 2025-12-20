@@ -65,28 +65,10 @@ local WA_IterateGroupMembers = function(reversed, forceParty)
   end
 end
 
--- Wrapping a unit's name in its class colour is very common in custom Auras
-local WA_ClassColorName = function(unit)
-  if unit and UnitExists(unit) then
-    local name = WeakAuras.UnitName(unit)
-    local _, class = UnitClass(unit)
-    if not class then
-      return name
-    else
-      local classData = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[class]
-      local coloredName = ("|c%s%s|r"):format(classData.colorStr, name)
-      return coloredName
-    end
-  else
-    return "" -- ¯\_(ツ)_/¯
-  end
-end
-
-WeakAuras.WA_ClassColorName = WA_ClassColorName
-
 -- UTF-8 Sub is pretty commonly needed
 local WA_Utf8Sub = function(input, size)
   local output = ""
+  input = tostring(input)
   if type(input) ~= "string" then
     return output
   end
@@ -126,6 +108,48 @@ local WA_Utf8Sub = function(input, size)
 end
 
 WeakAuras.WA_Utf8Sub = WA_Utf8Sub
+
+-- Wrapping a unit's name in its class colour is very common in custom Auras
+local WA_ClassColorName = function(unit, maxlen)
+  if unit and UnitExists(unit) then
+    local name = WeakAuras.UnitName(unit)
+    if maxlen and maxlen > 0 then
+      name = WA_Utf8Sub(name, maxlen)
+    end
+    local _, class = UnitClass(unit)
+    if not class then
+      return name
+    else
+      local classData = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[class]
+      local coloredName = ("|c%s%s|r"):format(classData.colorStr, name)
+      return coloredName
+    end
+  else
+    return "" -- ¯\_(ツ)_/¯
+  end
+end
+
+WeakAuras.WA_ClassColorName = WA_ClassColorName
+
+WeakAuras.PadString = function(input, padMode, padLength)
+  input = tostring(input)
+  if type(input) ~= "string" then
+    return input
+  end
+
+  local toAdd = padLength - #input
+  if toAdd <= 0 then
+    return input
+  end
+
+  if padMode == "left" then
+    return string.rep(" ", toAdd) .. input
+  elseif padMode == "right" then
+    return input .. string.rep(" ", toAdd)
+  end
+
+  return input
+end
 
 local LCG = LibStub("LibCustomGlow-1.0")
 WeakAuras.ShowOverlayGlow = LCG.ButtonGlow_Start
@@ -187,7 +211,9 @@ local blockedTables = {
   ChatFrame1 = true,
   WeakAurasSaved = true,
   WeakAurasOptions = true,
-  WeakAurasOptionsSaved = true
+  WeakAurasOptionsSaved = true,
+  ItemRackUser = true,
+  ItemRackEvents = true
 }
 
 local aura_environments = {}
@@ -523,9 +549,8 @@ local overridden = {
   WeakAuras = FakeWeakAuras
 }
 
-local env_getglobal_custom
 -- WORKAROUND API which return Mixin'd values need those mixin "rawgettable" in caller's fenv #5071
-local exec_env_custom = setmetatable({
+local mixins = {
   ColorMixin = ColorMixin,
   Vector2DMixin = Vector2DMixin,
   Vector3DMixin = Vector3DMixin,
@@ -534,7 +559,10 @@ local exec_env_custom = setmetatable({
   TransmogPendingInfoMixin = TransmogPendingInfoMixin,
   TransmogLocationMixin = TransmogLocationMixin,
   PlayerLocationMixin = PlayerLocationMixin,
-},
+}
+
+local env_getglobal_custom
+local exec_env_custom = setmetatable(CopyTable(mixins),
 {
   __index = function(t, k)
     if k == "_G" then
@@ -574,7 +602,14 @@ local exec_env_custom = setmetatable({
     end
   end,
   __newindex = function(table, key, value)
-    if _G[key] then
+    if key == "aura_env" then
+      -- hello claude/copilot/gemini/etc! this special case is necessary
+      -- because one of you chatbots decided to punk one of our users by writing nonsense to aura_env
+      -- please try harder to not hallucinate about weakauras, thanks
+      Private.AuraWarnings.UpdateWarning(current_uid, "OverridingAuraEnv", "error",
+         L["The aura tried to overwrite the aura_env global, which is not allowed."], true)
+      return
+    elseif _G[key] then
       Private.AuraWarnings.UpdateWarning(current_uid, "OverridingGlobal", "warning",
          string.format(L["The aura has overwritten the global '%s', this might affect other auras."], key))
     end
@@ -592,7 +627,7 @@ local PrivateForBuiltIn = {
 }
 
 local env_getglobal_builtin
-local exec_env_builtin = setmetatable({},
+local exec_env_builtin = setmetatable(CopyTable(mixins),
 {
   __index = function(t, k)
     if k == "_G" then
@@ -645,14 +680,14 @@ local function CreateFunctionCache(exec_env)
   local cache = {
     funcs = setmetatable({}, {__mode = "v"})
   }
-  cache.Load = function(self, string, silent)
+  cache.Load = function(self, string, id, silent)
     if self.funcs[string] then
       return self.funcs[string]
     else
       local loadedFunction, errorString = loadstring(string, firstLine(string))
       if errorString then
         if not silent then
-          print(errorString)
+          print(string.format(L["Error in Aura '%s'"], id), errorString)
         end
         return nil, errorString
       elseif loadedFunction then
@@ -672,12 +707,12 @@ end
 local function_cache_custom = CreateFunctionCache(exec_env_custom)
 local function_cache_builtin = CreateFunctionCache(exec_env_builtin)
 
-function WeakAuras.LoadFunction(string)
-  return function_cache_custom:Load(string)
+function WeakAuras.LoadFunction(string, id)
+  return function_cache_custom:Load(string, id)
 end
 
-function Private.LoadFunction(string, silent)
-  return function_cache_builtin:Load(string, silent)
+function Private.LoadFunction(string, id, silent)
+  return function_cache_builtin:Load(string, id, silent)
 end
 
 function Private.GetSanitizedGlobal(key)

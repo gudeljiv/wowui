@@ -2293,6 +2293,180 @@ function Private.Modernize(data, oldSnapshot)
     end
   end
 
+  if data.internalVersion < 79 then
+    if data.triggers then
+      for _, triggerData in ipairs(data.triggers) do
+        local trigger = triggerData.trigger
+        if trigger and trigger.type == "unit" and trigger.event == "Unit Characteristics" then
+          if trigger.use_ignoreDead then
+            if trigger.unit == "group" or trigger.unit == "raid" or trigger.unit == "party" then
+              trigger.use_dead = false
+            else
+              -- since this option was previously only available for group units,
+              -- nil it out if the unit isn't group to avoid surprises from vestigial data
+              trigger.use_dead = nil
+            end
+          end
+          trigger.use_ignoreDead = nil
+        end
+      end
+    end
+  end
+
+
+  if data.internalVersion < 80 then
+    -- Use common names for anchor areas/points so
+    -- that up/down of sub regions can adapt that
+
+    local conversions = {
+      subborder = {
+        border_anchor = "anchor_area",
+      },
+      subglow = {
+        glow_anchor = "anchor_area"
+      },
+      subtext = {
+        text_anchorPoint = "anchor_point"
+      }
+    }
+
+    if data.subRegions then
+      for index, subRegionData in ipairs(data.subRegions) do
+        if conversions[subRegionData.type] then
+          for oldKey, newKey in pairs(conversions[subRegionData.type]) do
+            subRegionData[newKey] = subRegionData[oldKey]
+            subRegionData[oldKey] = nil
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 81 then
+    -- Rename 'progressSources' to 'progressSource' for Linear/CircularProgressTexture/StopMotion sub elements
+    local conversions = {
+      sublineartexture = {
+        progressSources = "progressSource",
+      },
+      subcirculartexture = {
+        progressSources = "progressSource",
+      },
+      substopmotion = {
+        progressSources = "progressSource",
+      }
+    }
+    if data.subRegions then
+      for index, subRegionData in ipairs(data.subRegions) do
+        if conversions[subRegionData.type] then
+          for oldKey, newKey in pairs(conversions[subRegionData.type]) do
+            subRegionData[newKey] = subRegionData[oldKey]
+            subRegionData[oldKey] = nil
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 82 then
+    -- noMerge for separator custom option doesn't make sense,
+    -- and groups achieve the desired effect better,
+    -- so drop the feature
+    if data.authorOptions then
+      for _, optionData in ipairs(data.authorOptions) do
+        if optionData.type == "header" then
+          optionData.noMerge = nil
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 83 then
+    local propertyRenames = {
+      cooldownText = "cooldownTextDisabled",
+    }
+
+    if data.conditions then
+      for conditionIndex, condition in ipairs(data.conditions) do
+        for changeIndex, change in ipairs(condition.changes) do
+          if propertyRenames[change.property] then
+            change.property = propertyRenames[change.property]
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 84 then
+    if data.triggers then
+      for _, triggerData in ipairs(data.triggers) do
+        local trigger = triggerData.trigger
+        if trigger and trigger.type == "addons" then
+          if trigger.event == "Boss Mod Timer" or trigger.event == "BigWigs Timer" or trigger.event == "DBM Timer" then
+            -- if trigger don't filter bars, show only those active in the addon config for triggers made before this option was added
+            -- show disabled bars when looking for specific ids/name
+            if not (trigger.use_message or trigger.use_spellId) then
+              trigger.use_isBarEnabled = true
+            end
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 85 then
+    if data.triggers then
+      local eventTypes = {
+        ["Unit Characteristics"] = true,
+        ["Health"] = true,
+        ["Power"] = true,
+        ["Alternate Power"] = true,
+        ["Cast"] = true
+      }
+      for _, triggerData in ipairs(data.triggers) do
+        local trigger = triggerData.trigger
+        if trigger and trigger.type == "unit" then
+          if eventTypes[trigger.event] then
+            local rt = trigger.raidMarkIndex
+            if type(rt) == "number" then
+              trigger.raidMarkIndex = {
+                single = rt
+              }
+            end
+            if trigger.use_raidMarkIndex == false then
+              trigger.use_raidMarkIndex = nil
+            end
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 86 then
+    if data.subRegions then
+      for index, subRegionData in ipairs(data.subRegions) do
+        if subRegionData.type == "submodel" then
+          subRegionData.bar_model_attach = subRegionData.bar_model_clip
+          subRegionData.bar_model_clip = nil
+          if subRegionData.bar_model_attach then
+            subRegionData.bar_model_stretch = true
+          end
+        end
+      end
+    end
+  end
+
+  if data.internalVersion < 87 then
+    if data.conditions then
+      for conditionIndex, condition in ipairs(data.conditions) do
+        for changeIndex, change in ipairs(condition.changes) do
+          if change.property == "icon_visible" then
+            change.property = "icon"
+          end
+        end
+      end
+    end
+  end
+
   data.internalVersion = max(data.internalVersion or 0, WeakAuras.InternalVersion())
 end
 

@@ -10,6 +10,7 @@ local WoWClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 local WoWBC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 local WoWWrath = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC)
 local WoWCata = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC)
+local WoWMists = (WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC)
 local SaveBindings = SaveBindings or AttemptToSaveBindings
 
 local HiddenArchaeology = (select(4, GetBuildInfo()) < 40400)
@@ -395,6 +396,8 @@ local sortedFilter = setmetatable({}, {__index = function(t, k)
 			elseif WoWWrath and expansion and expansion[map[name]] > 3 then
 				-- skip
 			elseif WoWCata and expansion and expansion[map[name]] > 4 then
+				-- skip
+			elseif WoWMists and expansion and expansion[map[name]] > 5 then
 				-- skip
 			else
 				local idx = #new+1
@@ -1017,7 +1020,7 @@ ImportHelper.db_tables = WoWClassic and {
 	["Fish"] = L["Fishing"],
 	["Treasure"] = L["Treasure"],
 }
-or WoWCata and
+or (WoWCata or WoWMists) and
 {
 	["Herbs"] = L["Herbalism"],
 	["Mines"] = L["Mining"],
@@ -1038,8 +1041,8 @@ ImportHelper.expac_data = {
 	["TBC"] = L["The Burning Crusades"],
 	["WRATH"] = L["Wrath of the Lich King"],
 	["CATACLYSM"] = L["Cataclysm"],
-	--[[
 	["MISTS"] = L["Mists of Pandaria"],
+	--[[
 	["WOD"] = L["Warlords of Draenor"],
 	["LEGION"] = L["Legion"],
 	]]
@@ -1050,8 +1053,8 @@ importOptions.args.GatherMateData = {
 	name = "GatherMate2Data", -- addon name to import from, don't localize
 	handler = ImportHelper,
 	disabled = function()
-		local name, title, notes, loadable, reason, security, newVersion = GetAddOnInfo("GatherMate2_Data")
-		local enabled = GetAddOnEnableState(UnitName("player"), "GatherMate2_Data") > 0
+		local name, title, notes, loadable, reason, security, newVersion = C_AddOns.GetAddOnInfo("GatherMate2_Data")
+		local enabled = C_AddOns.GetAddOnEnableState("GatherMate2_Data", UnitName("player")) > 0
 		-- disable if the addon is not enabled, or
 		-- disable if there is a reason why it can't be loaded ("MISSING" or "DISABLED")
 		return not enabled or (reason ~= nil and reason ~= "" and reason ~= "DEMAND_LOADED")
@@ -1123,7 +1126,7 @@ importOptions.args.GatherMateData = {
 			desc = L["Load GatherMate2Data and import the data to your database."],
 			type = "execute",
 			func = function()
-				local loaded, reason = LoadAddOn("GatherMate2_Data")
+				local loaded, reason = C_AddOns.LoadAddOn("GatherMate2_Data")
 				local GatherMateData = LibStub("AceAddon-3.0"):GetAddon("GatherMate2_Data")
 				if loaded and GatherMateData.generatedVersion then
 					local dataVersion = tonumber(GatherMateData.generatedVersion:match("%d+"))
@@ -1151,7 +1154,7 @@ importOptions.args.GatherMateData = {
 				if not WoWClassic then
 					if db["importers"]["GatherMate2_Data"].Databases["Gases"] then cm = 1 end
 				end
-				if WoWCata then
+				if WoWCata or WoWMists then
 					if db["importers"]["GatherMate2_Data"].Databases["Archaeology"] then cm = 1 end
 				end
 				return imported["GatherMate2_Data"] or (cm == 0 and not imported["GatherMate2_Data"])
@@ -1180,26 +1183,13 @@ local faqOptions = {
 local acr = LibStub("AceConfigRegistry-3.0")
 local acd = LibStub("AceConfigDialog-3.0")
 
-local function findPanel(name, parent)
-	for i, button in next, InterfaceOptionsFrameAddOns.buttons do
-		if button.element then
-			if name and button.element.name == name then return button
-			elseif parent and button.element.parent == parent then return button
-			end
-		end
-	end
-end
 function Config:OnInitialize()
 	db = GatherMate.db.profile
 
 	self.importHelper = ImportHelper
 
 	acr:RegisterOptionsTable("GatherMate 2", generalOptions)
-	local options = acd:AddToBlizOptions("GatherMate 2", "GatherMate 2")
-	options:HookScript("OnShow", function()
-		local p = findPanel("GatherMate 2")
-		if p and p.element.collapsed then OptionsListButtonToggle_OnClick(p.toggle) end
-	end)
+	acd:AddToBlizOptions("GatherMate 2", "GatherMate 2")
 
 	acr:RegisterOptionsTable("GM2/Minimap", minimapOptions)
 	acd:AddToBlizOptions("GM2/Minimap", "Minimap", "GatherMate 2")
@@ -1220,7 +1210,11 @@ function Config:OnInitialize()
 	acd:AddToBlizOptions("GM2/FAQ", "FAQ", "GatherMate 2")
 
 	local function openOptions()
-		InterfaceOptionsFrame_OpenToCategory("GatherMate 2")
+		if Settings and Settings.OpenToCategory then
+			Settings.OpenToCategory("GatherMate 2")
+		else
+			InterfaceOptionsFrame_OpenToCategory("GatherMate 2")
+		end
 	end
 
 	SLASH_GatherMate21 = "/gathermate"
@@ -1270,11 +1264,11 @@ end
 
 function Config:CheckAutoImport()
 	for k,v in pairs(db.importers) do
-		local verline = GetAddOnMetadata(k, "X-Generated-Version")
+		local verline = C_AddOns.GetAddOnMetadata(k, "X-Generated-Version")
 		if verline and v["autoImport"] then
 			local dataVersion = tonumber(verline:match("%d+"))
 			if dataVersion and dataVersion > v["lastImport"] then
-				local loaded, reason = LoadAddOn(k)
+				local loaded, reason = C_AddOns.LoadAddOn(k)
 				if loaded then
 					local addon = LibStub("AceAddon-3.0"):GetAddon(k)
 					local filter = nil

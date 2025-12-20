@@ -13,6 +13,9 @@ local RSGeneralOptions = private.NewLib("RareScannerGeneralOptions")
 -- RareScanner database libraries
 local RSConfigDB = private.ImportLib("RareScannerConfigDB")
 
+-- RareScanner services
+local RSMacro = private.ImportLib("RareScannerMacro")
+
 -- RareScanner internal libraries
 local RSConstants = private.ImportLib("RareScannerConstants")
 
@@ -160,18 +163,27 @@ function RSGeneralOptions.GetGeneralOptions()
 					end,
 					width = "full",
 				},
-				scanTargetUnit = {
+				scanWithMacro = {
 					order = 6,
-					name = AL["ENABLE_SCAN_TARGET_UNIT"],
-					desc = AL["ENABLE_SCAN_TARGET_UNIT_DESC"],
+					name = AL["ENABLE_SCAN_MACRO"],
+					desc = AL["ENABLE_SCAN_MACRO_DESC"],
 					type = "toggle",
-					get = function() return RSConfigDB.IsScanningTargetUnit() end,
+					get = function() return RSConfigDB.IsScanningWithMacro() end,
 					set = function(_, value)
+						RSConfigDB.SetScanningWithMacro(value)
 						if (value) then
-							LibDialog:Spawn(RSConstants.TARGET_UNIT_WARNING)
+							RSMacro.CreateMacro()
 						else
-							RSConfigDB.SetScanningTargetUnit(value)
+							RSMacro.DeleteMacro()
 						end
+					end,
+					validate = function(_, value)
+						-- Check numer of macros
+						if (not RSMacro.IsAvailableMacroSlot()) then
+							return AL["ENABLE_SCAN_MACRO_ERROR"]
+						end
+						
+						return true
 					end,
 					width = "full",
 				},
@@ -200,18 +212,13 @@ function RSGeneralOptions.GetGeneralOptions()
 					width = "normal",
 					disabled = function() return not RSConfigDB.IsDisplayingMarkerOnTarget() end,
 				},
-				separatorWaypoints = {
-					order = 9,
-					type = "header",
-					name = AL["INGAME_WAYPOINTS"],
-				},
 				separatorTomtomWaypoints = {
-					order = 10,
+					order = 9,
 					type = "header",
 					name = AL["TOMTOM_WAYPOINTS"],
 				},
 				enableTomtomSupport = {
-					order = 11,
+					order = 10,
 					name = AL["ENABLE_TOMTOM_SUPPORT"],
 					desc = AL["ENABLE_TOMTOM_SUPPORT_DESC"],
 					type = "toggle",
@@ -226,7 +233,7 @@ function RSGeneralOptions.GetGeneralOptions()
 					disabled = function() return not TomTom end,
 				},
 				autoTomtomWaypoints = {
-					order = 12,
+					order = 11,
 					name = AL["ENABLE_AUTO_TOMTOM_WAYPOINTS"],
 					desc = AL["ENABLE_AUTO_TOMTOM_WAYPOINTS_DESC"],
 					type = "toggle",
