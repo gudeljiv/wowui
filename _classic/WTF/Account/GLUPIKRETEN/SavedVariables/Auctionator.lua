@@ -220,12 +220,12 @@ AUCTIONATOR_SAVEDVARS = {
 ["_50000"] = 500,
 ["_2000"] = 100,
 ["LOG_DE_DATA_X"] = true,
-["_5000000"] = 10000,
+["_10000"] = 200,
 ["STARTING_DISCOUNT"] = 5,
 ["_1000000"] = 2500,
-["_10000"] = 200,
-["TimeOfLastGetAllScan"] = 1696782805,
 ["_200000"] = 1000,
+["TimeOfLastGetAllScan"] = 1696782805,
+["_5000000"] = 10000,
 ["_500"] = 5,
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -12004,13 +12004,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1647031937,
 },
 },
-["13926"] = {
-{
-["price"] = 87499,
-["quantity"] = 3,
-["time"] = 1645039465,
-},
-},
 ["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
 {
 ["price"] = 39995,
@@ -12026,6 +12019,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 39995,
 ["quantity"] = 1,
 ["time"] = 1713780072,
+},
+},
+["36905"] = {
+{
+["price"] = 13246,
+["quantity"] = 3,
+["time"] = 1678046097,
 },
 },
 ["8173"] = {
@@ -12064,11 +12064,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674896569,
 },
 },
-["36905"] = {
+["13926"] = {
 {
-["price"] = 13246,
+["price"] = 87499,
 ["quantity"] = 3,
-["time"] = 1678046097,
+["time"] = 1645039465,
 },
 },
 ["g:20408:60"] = {
@@ -14955,20 +14955,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1713646435,
 },
 },
-["gr:12009:of Agility"] = {
-{
-["price"] = 133200,
-["quantity"] = 1,
-["time"] = 1722237919,
-},
-},
-["3292"] = {
-{
-["price"] = 465,
-["quantity"] = 1,
-["time"] = 1693995877,
-},
-},
 ["14125"] = {
 {
 ["price"] = 5501,
@@ -14984,6 +14970,20 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 6999,
 ["quantity"] = 1,
 ["time"] = 1709971601,
+},
+},
+["gr:12009:of Agility"] = {
+{
+["price"] = 133200,
+["quantity"] = 1,
+["time"] = 1722237919,
+},
+},
+["3292"] = {
+{
+["price"] = 465,
+["quantity"] = 1,
+["time"] = 1693995877,
 },
 },
 ["769"] = {
@@ -15007,16 +15007,16 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1708544834,
 },
 },
-["1640"] = {
+["9298"] = {
 {
-["price"] = 24700,
+["price"] = 75499,
 ["quantity"] = 1,
-["time"] = 1711016469,
+["time"] = 1712319905,
 },
 {
-["price"] = 13481,
+["price"] = 54631,
 ["quantity"] = 1,
-["time"] = 1711114800,
+["time"] = 1712394134,
 },
 },
 ["14205"] = {
@@ -15908,28 +15908,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722093883,
 },
 },
-["7086"] = {
-{
-["price"] = 9999,
-["quantity"] = 2,
-["time"] = 1644185853,
-},
-{
-["price"] = 17199,
-["quantity"] = 3,
-["time"] = 1644945886,
-},
-{
-["price"] = 16999,
-["quantity"] = 2,
-["time"] = 1645134302,
-},
-},
 ["7081"] = {
 {
 ["price"] = 59499,
 ["quantity"] = 2,
 ["time"] = 1647114292,
+},
+},
+["4582"] = {
+{
+["price"] = 1125,
+["quantity"] = 1,
+["time"] = 1709924132,
 },
 },
 ["9906"] = {
@@ -17005,11 +16995,21 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1710515606,
 },
 },
-["4582"] = {
+["7086"] = {
 {
-["price"] = 1125,
-["quantity"] = 1,
-["time"] = 1709924132,
+["price"] = 9999,
+["quantity"] = 2,
+["time"] = 1644185853,
+},
+{
+["price"] = 17199,
+["quantity"] = 3,
+["time"] = 1644945886,
+},
+{
+["price"] = 16999,
+["quantity"] = 2,
+["time"] = 1645134302,
 },
 },
 ["35682"] = {
@@ -17325,23 +17325,23 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711657439,
 },
 },
+["1640"] = {
+{
+["price"] = 24700,
+["quantity"] = 1,
+["time"] = 1711016469,
+},
+{
+["price"] = 13481,
+["quantity"] = 1,
+["time"] = 1711114800,
+},
+},
 ["4362"] = {
 {
 ["price"] = 599,
 ["quantity"] = 6,
 ["time"] = 1705402635,
-},
-},
-["9298"] = {
-{
-["price"] = 75499,
-["quantity"] = 1,
-["time"] = 1712319905,
-},
-{
-["price"] = 54631,
-["quantity"] = 1,
-["time"] = 1712394134,
 },
 },
 ["gn:15500:Outrunner's Chestguard of the Bear:24"] = {

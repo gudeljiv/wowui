@@ -220,12 +220,12 @@ AUCTIONATOR_SAVEDVARS = {
 ["_50000"] = 500,
 ["_2000"] = 100,
 ["TimeOfLastGetAllScan"] = 1696782805,
-["_10000"] = 200,
+["_200000"] = 1000,
 ["_500"] = 5,
 ["_1000000"] = 2500,
-["_200000"] = 1000,
-["STARTING_DISCOUNT"] = 5,
 ["_5000000"] = 10000,
+["STARTING_DISCOUNT"] = 5,
+["_10000"] = 200,
 ["LOG_DE_DATA_X"] = true,
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -11913,11 +11913,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1674896569,
 },
 },
-["36905"] = {
+["13926"] = {
 {
-["price"] = 13246,
+["price"] = 87499,
 ["quantity"] = 3,
-["time"] = 1678046097,
+["time"] = 1645039465,
 },
 },
 ["9929"] = {
@@ -14794,6 +14794,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1702405297,
 },
 },
+["3292"] = {
+{
+["price"] = 465,
+["quantity"] = 1,
+["time"] = 1693995877,
+},
+},
 ["14125"] = {
 {
 ["price"] = 5501,
@@ -14818,30 +14825,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722237919,
 },
 },
-["3292"] = {
-{
-["price"] = 465,
-["quantity"] = 1,
-["time"] = 1693995877,
-},
-},
 ["769"] = {
 {
 ["price"] = 605,
 ["quantity"] = 15,
 ["time"] = 1713094153,
-},
-},
-["1640"] = {
-{
-["price"] = 24700,
-["quantity"] = 1,
-["time"] = 1711016469,
-},
-{
-["price"] = 13481,
-["quantity"] = 1,
-["time"] = 1711114800,
 },
 },
 ["9298"] = {
@@ -14861,6 +14849,18 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 599,
 ["quantity"] = 6,
 ["time"] = 1705402635,
+},
+},
+["1640"] = {
+{
+["price"] = 24700,
+["quantity"] = 1,
+["time"] = 1711016469,
+},
+{
+["price"] = 13481,
+["quantity"] = 1,
+["time"] = 1711114800,
 },
 },
 ["14205"] = {
@@ -15727,18 +15727,28 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1722093883,
 },
 },
-["7081"] = {
-{
-["price"] = 59499,
-["quantity"] = 2,
-["time"] = 1647114292,
-},
-},
 ["4582"] = {
 {
 ["price"] = 1125,
 ["quantity"] = 1,
 ["time"] = 1709924132,
+},
+},
+["7086"] = {
+{
+["price"] = 9999,
+["quantity"] = 2,
+["time"] = 1644185853,
+},
+{
+["price"] = 17199,
+["quantity"] = 3,
+["time"] = 1644945886,
+},
+{
+["price"] = 16999,
+["quantity"] = 2,
+["time"] = 1645134302,
 },
 },
 ["14377"] = {
@@ -16814,21 +16824,11 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1643789355,
 },
 },
-["7086"] = {
+["7081"] = {
 {
-["price"] = 9999,
+["price"] = 59499,
 ["quantity"] = 2,
-["time"] = 1644185853,
-},
-{
-["price"] = 17199,
-["quantity"] = 3,
-["time"] = 1644945886,
-},
-{
-["price"] = 16999,
-["quantity"] = 2,
-["time"] = 1645134302,
+["time"] = 1647114292,
 },
 },
 ["3309"] = {
@@ -18594,6 +18594,13 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["time"] = 1711539009,
 },
 },
+["36905"] = {
+{
+["price"] = 13246,
+["quantity"] = 3,
+["time"] = 1678046097,
+},
+},
 ["gn:10184:Swashbuckler's Bracers of the Whale:52"] = {
 {
 ["price"] = 39995,
@@ -18609,13 +18616,6 @@ AUCTIONATOR_POSTING_HISTORY = {
 ["price"] = 39995,
 ["quantity"] = 1,
 ["time"] = 1713780072,
-},
-},
-["13926"] = {
-{
-["price"] = 87499,
-["quantity"] = 3,
-["time"] = 1645039465,
 },
 },
 ["7533"] = {

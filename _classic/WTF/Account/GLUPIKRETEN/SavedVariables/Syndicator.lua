@@ -1548,12 +1548,12 @@ SYNDICATOR_DATA = {
 {
 {
 ["itemCount"] = 1,
-["itemID"] = 6948,
-["isBound"] = true,
+["itemID"] = 7073,
+["isBound"] = false,
 ["hasLoot"] = false,
-["quality"] = 1,
-["itemLink"] = "|cffffffff|Hitem:6948::::::::1::::::::::|h[Hearthstone]|h|r",
-["iconTexture"] = 134414,
+["quality"] = 0,
+["itemLink"] = "|cff9d9d9d|Hitem:7073::::::::1::::::::::|h[Broken Fang]|h|r",
+["iconTexture"] = 133725,
 },
 {
 ["itemCount"] = 4,
@@ -1574,7 +1574,7 @@ SYNDICATOR_DATA = {
 ["iconTexture"] = 132794,
 },
 {
-["itemCount"] = 1,
+["itemCount"] = 3,
 ["itemID"] = 4865,
 ["isBound"] = false,
 ["hasLoot"] = false,
@@ -1592,8 +1592,22 @@ SYNDICATOR_DATA = {
 ["iconTexture"] = 133762,
 },
 {
+["itemCount"] = 1,
+["itemID"] = 1367,
+["isBound"] = false,
+["hasLoot"] = false,
+["quality"] = 0,
+["itemLink"] = "|cff9d9d9d|Hitem:1367::::::::1::::::::::|h[Ragged Leather Boots]|h|r",
+["iconTexture"] = 132540,
 },
 {
+["itemCount"] = 1,
+["itemID"] = 7074,
+["isBound"] = false,
+["hasLoot"] = false,
+["quality"] = 0,
+["itemLink"] = "|cff9d9d9d|Hitem:7074::::::::1::::::::::|h[Chipped Claw]|h|r",
+["iconTexture"] = 133723,
 },
 {
 },
@@ -11622,13 +11636,13 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 1,
 ["bank"] = 0,
 },
-["item:212160"] = {
+["item:8066"] = {
 ["mail"] = 0,
-["bags"] = 3,
+["bags"] = 0,
 ["void"] = 0,
 ["auctions"] = 0,
 ["equipped"] = 0,
-["bank"] = 0,
+["bank"] = 1,
 },
 ["item:4614"] = {
 ["mail"] = 0,
@@ -11638,9 +11652,9 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 0,
 ["bank"] = 0,
 },
-["item:4628"] = {
+["item:212160"] = {
 ["mail"] = 0,
-["bags"] = 1,
+["bags"] = 3,
 ["void"] = 0,
 ["auctions"] = 0,
 ["equipped"] = 0,
@@ -11726,13 +11740,13 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 1,
 ["bank"] = 0,
 },
-["item:8066"] = {
+["item:4628"] = {
 ["mail"] = 0,
-["bags"] = 0,
+["bags"] = 1,
 ["void"] = 0,
 ["auctions"] = 0,
 ["equipped"] = 0,
-["bank"] = 1,
+["bank"] = 0,
 },
 ["item:5530"] = {
 ["mail"] = 0,
@@ -12466,7 +12480,7 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 0,
 ["bank"] = 0,
 },
-["item:3967"] = {
+["item:6149"] = {
 ["mail"] = 0,
 ["bags"] = 1,
 ["void"] = 0,
@@ -12474,9 +12488,9 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 0,
 ["bank"] = 0,
 },
-["item:8831"] = {
+["item:3967"] = {
 ["mail"] = 0,
-["bags"] = 3,
+["bags"] = 1,
 ["void"] = 0,
 ["auctions"] = 0,
 ["equipped"] = 0,
@@ -12634,9 +12648,9 @@ SYNDICATOR_SUMMARIES = {
 ["equipped"] = 1,
 ["bank"] = 0,
 },
-["item:6149"] = {
+["item:8831"] = {
 ["mail"] = 0,
-["bags"] = 1,
+["bags"] = 3,
 ["void"] = 0,
 ["auctions"] = 0,
 ["equipped"] = 0,
@@ -16041,59 +16055,83 @@ SYNDICATOR_SUMMARIES = {
 ["Thunderstrike"] = {
 ["Dopecoil"] = {
 ["item:6129"] = {
-["mail"] = 0,
-["bags"] = 0,
 ["void"] = 0,
 ["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 0,
 ["equipped"] = 1,
 ["bank"] = 0,
 },
-["item:59"] = {
-["mail"] = 0,
-["bags"] = 0,
+["item:2092"] = {
 ["void"] = 0,
 ["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 0,
 ["equipped"] = 1,
 ["bank"] = 0,
 },
-["item:159"] = {
-["mail"] = 0,
-["bags"] = 2,
+["item:1376"] = {
 ["void"] = 0,
 ["auctions"] = 0,
-["equipped"] = 0,
-["bank"] = 0,
-},
-["item:6948"] = {
 ["mail"] = 0,
 ["bags"] = 1,
-["void"] = 0,
-["auctions"] = 0,
 ["equipped"] = 0,
 ["bank"] = 0,
 },
 ["item:4604"] = {
-["mail"] = 0,
-["bags"] = 4,
 ["void"] = 0,
 ["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 4,
 ["equipped"] = 0,
 ["bank"] = 0,
 },
-["item:2092"] = {
-["mail"] = 0,
-["bags"] = 0,
+["item:1367"] = {
 ["void"] = 0,
 ["auctions"] = 0,
-["equipped"] = 1,
+["mail"] = 0,
+["bags"] = 1,
+["equipped"] = 0,
+["bank"] = 0,
+},
+["item:4865"] = {
+["void"] = 0,
+["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 2,
+["equipped"] = 0,
 ["bank"] = 0,
 },
 ["item:1396"] = {
-["mail"] = 0,
-["bags"] = 0,
 ["void"] = 0,
 ["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 0,
 ["equipped"] = 1,
+["bank"] = 0,
+},
+["item:59"] = {
+["void"] = 0,
+["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 0,
+["equipped"] = 1,
+["bank"] = 0,
+},
+["item:7074"] = {
+["void"] = 0,
+["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 1,
+["equipped"] = 0,
+["bank"] = 0,
+},
+["item:159"] = {
+["void"] = 0,
+["auctions"] = 0,
+["mail"] = 0,
+["bags"] = 2,
+["equipped"] = 0,
 ["bank"] = 0,
 },
 },

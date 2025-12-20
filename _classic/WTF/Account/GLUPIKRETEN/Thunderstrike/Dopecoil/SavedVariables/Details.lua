@@ -7,6 +7,1038 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
+["combatId"] = 345,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.007016,
+["pets"] = {
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 56.007016,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 56.007016,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BEF",
+["damage_from"] = {
+["Duskbat"] = true,
+},
+["targets"] = {
+["Duskbat"] = 56,
+},
+["colocacao"] = 1,
+["aID"] = "6111-04889BEF",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[64] = 56,
+},
+["end_time"] = 1766251234,
+["nome"] = "Dopecoil",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Duskbat"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[686] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Duskbat"] = 51,
+},
+["n_total"] = 51,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 51,
+["c_max"] = 0,
+["id"] = 686,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 7.174867537700704,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.007016,
+["start_time"] = 1766251226,
+["delay"] = 0,
+["last_event"] = 1766251233,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.001698,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.001698,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.001698,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-0-1046-1512-000046D855",
+["aID"] = "1512",
+["damage_from"] = {
+["Dopecoil"] = true,
+},
+["targets"] = {
+["Dopecoil"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766251234,
+["nome"] = "Duskbat",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Dopecoil"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 2,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 56.001698,
+["start_time"] = 1766251231,
+["delay"] = 0,
+["last_event"] = 1766251231,
+},
+},
+},
+{
+["combatId"] = 345,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 345,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 345,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["pets"] = {
+},
+["serial"] = "Player-6111-04889BEF",
+["buff_uptime_targets"] = {
+},
+["classe"] = "WARLOCK",
+["buff_uptime_spells"] = {
+["tipo"] = 9,
+["_ActorTable"] = {
+[687] = {
+["activedamt"] = 1,
+["id"] = 687,
+["targets"] = {
+},
+["uptime"] = 8,
+["appliedamt"] = 1,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+},
+["buff_uptime"] = 8,
+["grupo"] = true,
+["aID"] = "6111-04889BEF",
+["nome"] = "Dopecoil",
+["last_event"] = 1766251234,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 345,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopecoil"] = "Player-6111-04889BEF",
+},
+["tempo_start"] = 1766251226,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+58,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopecoil"] = {
+["Shadow Bolt"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:20:34",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Duskbat",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 938832.1410000001,
+["CombatEndedAt"] = 938832.1410000001,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "18:20:27",
+["end_time"] = 938832.1410000001,
+["mapId"] = 0,
+["combat_id"] = 345,
+["timeStart"] = 1766251227,
+["timeEnd"] = 1766251234,
+["playing_solo"] = true,
+["is_challenge"] = false,
+["frags"] = {
+["Duskbat"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 1469,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Dopecoil"] = 56.007016,
+},
+},
+},
+["start_time"] = 938824.335,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 344,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 55.003024,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 55.003024,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BEF",
+["damage_from"] = {
+["Duskbat"] = true,
+},
+["targets"] = {
+["Duskbat"] = 55,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[64] = 55,
+},
+["end_time"] = 1766251097,
+["totalabsorbed"] = 0.003024,
+["aID"] = "6111-04889BEF",
+["nome"] = "Dopecoil",
+["spells"] = {
+["_ActorTable"] = {
+[686] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Duskbat"] = 55,
+},
+["n_total"] = 55,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 55,
+["c_max"] = 0,
+["id"] = 686,
+["r_dmg"] = 0,
+["spellschool"] = 32,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 14,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766251095,
+["damage_taken"] = 1.003024,
+["start_time"] = 1766251090,
+["delay"] = 0,
+["last_dps"] = 8.820241180196325,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 1.002199,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 1.002199,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-0-1046-1512-000046D7FC",
+["damage_from"] = {
+["Dopecoil"] = true,
+},
+["targets"] = {
+["Dopecoil"] = 1,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "1512",
+["fight_component"] = true,
+["end_time"] = 1766251097,
+["totalabsorbed"] = 0.002199,
+["nome"] = "Duskbat",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopecoil"] = 1,
+},
+["n_total"] = 1,
+["n_min"] = 1,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 1,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 1,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766251094,
+["damage_taken"] = 55.002199,
+["start_time"] = 1766251094,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 344,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 344,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 344,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["pets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["aID"] = "6111-04889BEF",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[687] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 6,
+["id"] = 687,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Dopecoil",
+["grupo"] = true,
+["buff_uptime"] = 6,
+["tipo"] = 4,
+["classe"] = "WARLOCK",
+["serial"] = "Player-6111-04889BEF",
+["last_event"] = 1766251097,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 344,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopecoil"] = "Player-6111-04889BEF",
+},
+["CombatStartedAt"] = 938822.956,
+["tempo_start"] = 1766251090,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+56,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+55,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopecoil"] = {
+["Shadow Bolt"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:18:17",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Duskbat",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 938694.959,
+["CombatEndedAt"] = 938694.959,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "18:18:11",
+["end_time"] = 938694.959,
+["mapId"] = 0,
+["combat_id"] = 344,
+["timeStart"] = 1766251091,
+["timeEnd"] = 1766251097,
+["frags"] = {
+["Duskbat"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 1468,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopecoil"] = 55.003024,
+},
+},
+},
+["start_time"] = 938688.723,
+["TimeData"] = {
+},
+["playing_solo"] = true,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 343,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "WARLOCK",
+["total_without_pet"] = 61.001305,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 61.001305,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BEF",
+["damage_from"] = {
+["Duskbat"] = true,
+},
+["targets"] = {
+["Duskbat"] = 61,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[64] = 61,
+},
+["end_time"] = 1766250308,
+["totalabsorbed"] = 0.001305,
+["aID"] = "6111-04889BEF",
+["nome"] = "Dopecoil",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 2,
+["b_dmg"] = 0,
+["targets"] = {
+["Duskbat"] = 7,
+},
+["n_total"] = 5,
+["n_min"] = 2,
+["g_dmg"] = 2,
+["counter"] = 4,
+["total"] = 7,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 3,
+["r_amt"] = 0,
+},
+[686] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Duskbat"] = 54,
+},
+["n_total"] = 54,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 54,
+["c_max"] = 0,
+["spellschool"] = 32,
+["id"] = 686,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["RESIST"] = 1,
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 16,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766250306,
+["damage_taken"] = 12.001305,
+["start_time"] = 1766250290,
+["delay"] = 0,
+["last_dps"] = 3.464998863939856,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 14.005307,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 14.005307,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-0-1046-1512-000046D4B8",
+["damage_from"] = {
+["Allisha"] = true,
+["Dopecoil"] = true,
+},
+["targets"] = {
+["Allisha"] = 2,
+["Dopecoil"] = 12,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "1512",
+["fight_component"] = true,
+["end_time"] = 1766251090,
+["totalabsorbed"] = 0.005307,
+["nome"] = "Duskbat",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Allisha"] = 2,
+["Dopecoil"] = 12,
+},
+["n_total"] = 14,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 8,
+["total"] = 14,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 7,
+["n_max"] = 2,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766250370,
+["damage_taken"] = 117.005307,
+["start_time"] = 1766251014,
+["delay"] = 1766250370,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 343,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 343,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 343,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["pets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["aID"] = "6111-04889BEF",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[687] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 11,
+["id"] = 687,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Dopecoil",
+["grupo"] = true,
+["buff_uptime"] = 11,
+["tipo"] = 4,
+["classe"] = "WARLOCK",
+["serial"] = "Player-6111-04889BEF",
+["last_event"] = 1766250301,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 343,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopecoil"] = "Player-6111-04889BEF",
+},
+["CombatStartedAt"] = 938687.456,
+["tempo_start"] = 1766250290,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+131,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+61,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopecoil"] = {
+["Shadow Bolt"] = 4,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "18:05:09",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Duskbat",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 937906.4280000001,
+["CombatEndedAt"] = 937906.4280000001,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "18:04:51",
+["end_time"] = 937906.4280000001,
+["mapId"] = 0,
+["combat_id"] = 343,
+["timeStart"] = 1766250291,
+["timeEnd"] = 1766250309,
+["frags"] = {
+["Duskbat"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 1467,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopecoil"] = 61.001305,
+},
+},
+},
+["start_time"] = 937888.823,
+["TimeData"] = {
+},
+["playing_solo"] = true,
+},
+{
+{
 ["tipo"] = 2,
 ["combatId"] = 342,
 ["_ActorTable"] = {
@@ -180,6 +1212,7 @@ _detalhes_database = {
 ["raid_roster"] = {
 ["Dopecoil"] = "Player-6111-04889BEF",
 },
+["CombatStartedAt"] = 937887.5380000001,
 ["tempo_start"] = 1766249854,
 ["last_events_tables"] = {
 },
@@ -518,11 +1551,8 @@ _detalhes_database = {
 ["frame"] = {
 },
 },
-["nick_tag_cache"] = {
-["nextreset"] = 1767543448,
-["last_version"] = 16,
-},
-["combat_counter"] = 1466,
+["combat_counter"] = 1469,
+["last_realversion"] = 166,
 ["combat_log"] = {
 ["merge_gemstones_1007"] = false,
 ["inverse_deathlog_raid"] = false,
@@ -545,134 +1575,25 @@ _detalhes_database = {
 ["Player-4465-042617A5"] = "TANK",
 ["Player-4465-045F44E8"] = "HEALER",
 },
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["only_my_group"] = false,
-["animate"] = false,
-["usefocus"] = false,
-["hide_pull_bar"] = false,
-["useclasscolors"] = false,
-["playercolor"] = {
-1,
-1,
-1,
+["mythic_plus_log"] = {
 },
-["show_party_pets"] = false,
-["updatespeed"] = 1,
-["disable_gouge"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["playSound"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["author"] = "Terciob",
-},
-["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-["enabled"] = true,
-["encounter_timers_bw"] = {
-},
-["max_emote_segments"] = 3,
-["last_section_selected"] = "main",
-["author"] = "Terciob",
-["window_scale"] = 1,
-["hide_on_combat"] = false,
-["show_icon"] = 5,
-["opened"] = 0,
-["encounter_timers_dbm"] = {
-},
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["use_square_mode"] = false,
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["scale"] = 1,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["point"] = "RIGHT",
-["main_frame_strata"] = "LOW",
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["use_spark"] = false,
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["author"] = "Details! Team",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["font_size"] = 10,
-["y"] = -183.107162475586,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["main_frame_locked"] = true,
-["arrow_anchor_y"] = 0,
-},
-},
-["last_realversion"] = 166,
 ["character_data"] = {
-["logons"] = 135,
+["logons"] = 143,
 },
-["force_font_outline"] = "",
+["last_instance_time"] = 1678889909,
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
 },
 ["arena_data_compressed"] = {
 },
+["nick_tag_cache"] = {
+["nextreset"] = 1767543448,
+["last_version"] = 16,
+},
 ["last_day"] = "20",
 ["on_death_menu"] = false,
-["combat_id"] = 342,
+["combat_id"] = 345,
 ["savedStyles"] = {
 {
 ["show_statusbar"] = false,
@@ -693,7 +1614,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -873,13 +1794,13 @@ false,
 },
 },
 ["micro_displays_side"] = 2,
-["version"] = 3,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -902,7 +1823,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -918,11 +1839,15 @@ false,
 0.07058823529411765,
 },
 },
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
 ["menu_anchor_down"] = {
 16,
 -3,
 },
-["bars_grow_direction"] = 1,
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -939,13 +1864,9 @@ false,
 1,
 1,
 },
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
-},
+["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["row_info"] = {
 ["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -1058,7 +1979,7 @@ false,
 ["textR_separator"] = "NONE",
 ["texture_custom_file"] = "Interface\\",
 },
-["name"] = "vermin",
+["bg_alpha"] = 0,
 ["hide_in_combat"] = false,
 ["switch_damager"] = {
 1,
@@ -1140,10 +2061,9 @@ false,
 ["flag_original"] = 1047,
 ["pets"] = {
 },
-["aID"] = "6111-04889BEF",
-["serial"] = "Player-6111-04889BEF",
+["nome"] = "Dopecoil",
+["classe"] = "WARLOCK",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [687] = {
 ["id"] = 687,
@@ -1152,15 +2072,16 @@ false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["tipo"] = 4,
 ["buff_uptime_targets"] = {
 },
-["buff_uptime"] = 0,
-["classe"] = "WARLOCK",
-["nome"] = "Dopecoil",
 ["grupo"] = true,
+["buff_uptime"] = 0,
 ["last_event"] = 0,
+["aID"] = "6111-04889BEF",
+["serial"] = "Player-6111-04889BEF",
+["tipo"] = 4,
 },
 },
 },
@@ -1171,17 +2092,16 @@ false,
 },
 ["raid_roster"] = {
 },
-["segments_added"] = {
-},
 ["tempo_start"] = 1766249854,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
 },
-["bossTimers"] = {
-},
 ["trinketProcs"] = {
 },
+["bossTimers"] = {
+},
+["combat_counter"] = 1465,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -1207,18 +2127,6 @@ false,
 ["frags_total"] = 0,
 ["voidzone_damage"] = 0,
 },
-["player_last_events"] = {
-},
-["overall_refreshed"] = true,
-["frags_need_refresh"] = false,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["data_inicio"] = 0,
-["amountCasts"] = {
-},
-["mapId"] = 0,
 ["totals_grupo"] = {
 0,
 0,
@@ -1240,18 +2148,30 @@ false,
 ["dead"] = 0,
 },
 },
-["zoneName"] = "Eastern Kingdoms",
+["compressed_charts"] = {
+},
+["frags_need_refresh"] = false,
+["aura_timeline"] = {
+},
+["overall_refreshed"] = true,
+["data_inicio"] = 0,
+["amountCasts"] = {
+},
+["mapId"] = 0,
 ["cleu_events"] = {
 ["n"] = 1,
 },
+["zoneName"] = "Eastern Kingdoms",
 ["boss_hp"] = 1,
+["spells_cast_timeline"] = {
+},
 ["is_challenge"] = false,
-["frags"] = {
+["segments_added"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
 },
 ["PhaseData"] = {
 {
@@ -1270,13 +2190,126 @@ false,
 ["start_time"] = 0,
 ["TimeData"] = {
 },
-["combat_counter"] = 1465,
+["player_last_events"] = {
 },
-["mythic_plus_log"] = {
+},
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["only_my_group"] = false,
+["animate"] = false,
+["usefocus"] = false,
+["hide_pull_bar"] = false,
+["useclasscolors"] = false,
+["playercolor"] = {
+1,
+1,
+1,
+},
+["show_party_pets"] = false,
+["updatespeed"] = 1,
+["disable_gouge"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["playSound"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["author"] = "Terciob",
+},
+["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+["enabled"] = true,
+["encounter_timers_bw"] = {
+},
+["max_emote_segments"] = 3,
+["last_section_selected"] = "main",
+["author"] = "Terciob",
+["window_scale"] = 1,
+["hide_on_combat"] = false,
+["show_icon"] = 5,
+["opened"] = 0,
+["encounter_timers_dbm"] = {
+},
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["use_square_mode"] = false,
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["scale"] = 1,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["row_height"] = 18,
+["arrow_anchor_x"] = 0,
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["point"] = "RIGHT",
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["use_spark"] = false,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["author"] = "Details! Team",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["y"] = -183.107162475586,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_y"] = 0,
+},
 },
 ["arena_data_headers"] = {
 },
-["last_instance_time"] = 1678889909,
+["force_font_outline"] = "",
 ["announce_cooldowns"] = {
 ["enabled"] = false,
 ["ignored_cooldowns"] = {

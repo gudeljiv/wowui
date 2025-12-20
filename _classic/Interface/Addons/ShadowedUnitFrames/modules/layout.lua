@@ -488,8 +488,14 @@ end
 
 -- Setup the bar barOrder/info
 local currentConfig
+-- local function sortOrder(a, b)
+-- 	return currentConfig[a].order < currentConfig[b].order
+-- end
+
 local function sortOrder(a, b)
-	return currentConfig[a].order < currentConfig[b].order
+    local orderA = currentConfig[a].order or 99
+    local orderB = currentConfig[b].order or 99
+    return orderA < orderB
 end
 
 local barOrder = {}
@@ -509,6 +515,10 @@ function Layout:PositionWidgets(frame, config)
 			table.insert(barOrder, key)
 
 			config[key].order = config[key].order or 99
+
+			if( type(config[key].order) ~= "number" ) then
+				config[key].order = 99
+			end
 
 			-- Decide whats full sized
 			if( not frame.visibility.portrait or config.portrait.isBar or config[key].order < config.portrait.fullBefore or config[key].order > config.portrait.fullAfter ) then
@@ -577,7 +587,7 @@ function Layout:PositionWidgets(frame, config)
 		end
 
 		-- Figure out where the portrait is going to be anchored to
-		if( not portraitAnchor and config[key].order >= config.portrait.fullBefore ) then
+		if( not portraitAnchor and config[key].order and config.portrait.fullBefore and config[key].order >= config.portrait.fullBefore ) then
 			portraitAnchor = bar
 		end
 

@@ -2635,7 +2635,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -2645,6 +2644,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -2772,7 +2772,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -2782,6 +2781,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3082,7 +3082,6 @@ nil,
 },
 ["ROGUE"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Version"] = 11001001,
 ["Groups"] = {
 {
@@ -4337,6 +4336,7 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
 },
 ["MAGE"] = {
 ["Groups"] = {
@@ -5022,7 +5022,6 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -6374,6 +6373,7 @@ nil,
 },
 },
 ["Version"] = 101600,
+["NumGroups"] = 5,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -9488,7 +9488,6 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -11361,6 +11360,7 @@ nil,
 },
 },
 ["Version"] = 11001001,
+["NumGroups"] = 5,
 },
 ["Dopetrap - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -11385,7 +11385,6 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
-["Version"] = 11001001,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -13630,6 +13629,7 @@ nil,
 },
 },
 },
+["Version"] = 11001001,
 },
 ["Dopesnare - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -13639,7 +13639,6 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
-["Version"] = 100900,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -15327,12 +15326,12 @@ nil,
 },
 },
 },
+["Version"] = 100900,
 },
 ["Battitude - Zandalar Tribe"] = {
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
-["NumGroups"] = 5,
 ["Version"] = 101600,
 ["Groups"] = {
 {
@@ -18753,6 +18752,7 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
 },
 ["PRIEST"] = {
 ["Groups"] = {
@@ -20164,7 +20164,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMin"] = 15,
 ["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
@@ -20174,6 +20173,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20262,7 +20262,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMin"] = 15,
 ["DurationMinEnabled"] = true,
 ["Conditions"] = {
 {
@@ -20272,6 +20271,7 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -20377,14 +20377,14 @@ nil,
 ["NumGroups"] = 6,
 ["TextureName"] = "xVerminClean",
 },
+["Doperage - Living Flame"] = {
+["Version"] = 11001001,
+},
 ["Turbonac - Celebras"] = {
 ["Version"] = 110701,
 },
 ["Vermin - Celebras"] = {
 ["Version"] = 110401,
-},
-["Doperage - Living Flame"] = {
-["Version"] = 11001001,
 },
 ["Battlenac - Zandalar Tribe"] = {
 ["Version"] = 110301,

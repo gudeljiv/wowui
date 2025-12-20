@@ -89,17 +89,17 @@ BAGANATOR_CONFIG = {
 ["1"] = false,
 },
 ["show_sort_button_2"] = true,
-["guild_current_tab"] = 1,
+["category_group_empty_slots"] = true,
 ["currencies_tracked_imported"] = {
 },
-["category_group_empty_slots"] = true,
+["icon_top_left_corner_array"] = {
+"item_level",
+},
 ["icon_context_fading"] = true,
 ["warband_current_tab"] = 1,
 ["category_item_grouping"] = false,
 ["main_view_show_bag_slots"] = false,
-["icon_top_left_corner_array"] = {
-"item_level",
-},
+["guild_current_tab"] = 1,
 ["recent_timeout"] = 15,
 ["category_display_order"] = {
 "default_auto_recents",
@@ -172,13 +172,7 @@ BAGANATOR_CONFIG = {
 ["setting_anchors"] = false,
 ["tooltips_character_limit"] = 4,
 ["recent_include_owned"] = false,
-["character_select_position"] = {
-"RIGHT",
-"Baganator_CategoryViewBackpackViewFramedark",
-"LEFT",
-0,
-0,
-},
+["enable_equipment_set_info_2"] = true,
 ["category_default_import"] = 3,
 ["guild_view_position_2"] = {
 "TOPLEFT",
@@ -198,7 +192,7 @@ BAGANATOR_CONFIG = {
 ["Doperage-LoneWolf"] = 0,
 ["Dopestab-LoneWolf"] = 0,
 },
-["enable_equipment_set_info_2"] = true,
+["bag_empty_space_at_top"] = true,
 ["disabled_skins"] = {
 },
 ["category_horizontal_spacing_2"] = 0.4,
@@ -285,26 +279,15 @@ BAGANATOR_CONFIG = {
 ["show_inventory_tooltips"] = true,
 ["view_alpha"] = 0.9,
 ["show_guild_bank_button"] = true,
-["bag_empty_space_at_top"] = true,
+["character_select_position"] = {
+"RIGHT",
+"Baganator_CategoryViewBackpackViewFramedark",
+"LEFT",
+0,
+0,
+},
 ["bag_view_width"] = 12,
 ["debug_timers"] = false,
-["debug_keywords"] = false,
-["enable_guild_view"] = true,
-["auto_sort_on_open"] = true,
-["skins"] = {
-["blizzard"] = {
-["no_frame_borders"] = false,
-["view_transparency"] = 0,
-["empty_slot_background"] = false,
-},
-["dark"] = {
-["no_frame_borders"] = false,
-["square_icons"] = false,
-["view_transparency"] = 0.3,
-["empty_slot_background"] = false,
-},
-},
-["category_sort_method"] = "item-level",
 ["recent_characters_main_view"] = {
 "Dopecoil-Thunderstrike",
 "Mq-Celebras",
@@ -325,6 +308,23 @@ BAGANATOR_CONFIG = {
 "Dopenac-LoneWolf",
 "Dopemend-LoneWolf",
 "Dopecoil-LoneWolf",
+},
+["enable_guild_view"] = true,
+["auto_sort_on_open"] = true,
+["debug_keywords"] = false,
+["category_sort_method"] = "item-level",
+["skins"] = {
+["blizzard"] = {
+["no_frame_borders"] = false,
+["view_transparency"] = 0,
+["empty_slot_background"] = false,
+},
+["dark"] = {
+["no_frame_borders"] = false,
+["square_icons"] = false,
+["view_transparency"] = 0.3,
+["empty_slot_background"] = false,
+},
 },
 ["show_guild_banks_in_tooltips"] = true,
 ["guild_view_dialog_position"] = {
