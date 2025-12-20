@@ -22,8 +22,8 @@ function NugKeyFeedback:CreateFeedbackButton(autoKeyup)
     mirror.NormalTexture:SetPoint("TOPLEFT", -15, 15)
     mirror.NormalTexture:SetPoint("BOTTOMRIGHT", 15, -15)
 
-    mirror.cooldown:SetEdgeTexture("Interface\\Cooldown\\edge");
-    mirror.cooldown:SetSwipeColor(0, 0, 0);
+    -- mirror.cooldown:SetEdgeTexture("Interface\\Cooldown\\edge");
+    -- mirror.cooldown:SetSwipeColor(0, 0, 0);
     mirror.cooldown:SetHideCountdownNumbers(false);
 
     if Masque then
@@ -65,6 +65,7 @@ function NugKeyFeedback:CreateFeedbackButton(autoKeyup)
         self:GetParent():Hide()
     end)
 
+	db.enablePushEffect = false
     if db.enablePushEffect then
         local pushedCircle = CreateFrame("Frame", nil, mirror)
         local size = db.mirrorSize

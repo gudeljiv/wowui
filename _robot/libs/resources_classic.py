@@ -117,7 +117,7 @@ data = {
     "hunter": {
         "main": [
             # {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "1", "modifier": "lalt"},
-            {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "8"},
+            # {"name": "auto attack", "type": "GetSpellTexture", "id": 674, "key": "8"},
             # {"name": "auto shot", "type": "GetSpellTexture", "id": 6660, "key": "2", "modifier": "lalt"},
             {"name": "auto shot", "type": "GetSpellTexture", "id": 6660, "key": "8"},
             {"name": "trueshot aura", "type": "GetSpellTexture", "id": 19506, "key": "1", "modifier": "lalt"},

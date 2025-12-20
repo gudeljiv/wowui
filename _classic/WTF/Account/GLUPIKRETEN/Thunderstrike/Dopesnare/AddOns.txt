@@ -50,7 +50,7 @@ Masque_Raeli: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
 Myslot: enabled
-NugKeyFeedback: enabled
+NugKeyFeedback: disabled
 OmniCC: enabled
 OmniCC_Config: enabled
 picoFPS: enabled

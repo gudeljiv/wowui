@@ -68,6 +68,7 @@ Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/RingMenu.lua
 Addons/RXPGuide.lua
+Addons/TellMeWhen.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua
 

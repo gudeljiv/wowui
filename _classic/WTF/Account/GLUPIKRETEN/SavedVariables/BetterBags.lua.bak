@@ -1,6 +1,7 @@
 
 BetterBagsDB = {
 ["profileKeys"] = {
+["Dopesnare - Thunderstrike"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 },
@@ -33,6 +34,16 @@ true,
 ["itemList"] = {
 },
 ["name"] = "Consumable",
+["dynamic"] = true,
+},
+["Ammo"] = {
+["enabled"] = {
+true,
+[0] = true,
+},
+["itemList"] = {
+},
+["name"] = "Ammo",
 ["dynamic"] = true,
 },
 ["Recent Items"] = {
@@ -72,14 +83,14 @@ true,
 },
 },
 ["customCategoryIndex"] = {
-[6472] = "Set: saber",
 [6220] = "Sets: muti, saber",
-[2236] = "Set: muti",
+[6472] = "Set: saber",
 [14176] = "BoE",
-[3047] = "BoE",
-[15527] = "BoE",
+[2236] = "Set: muti",
 [14193] = "BoE",
 [14183] = "BoE",
+[3047] = "BoE",
+[15527] = "BoE",
 },
 ["firstTimeMenu"] = false,
 ["categoryOptions"] = {
@@ -87,6 +98,9 @@ true,
 ["shown"] = true,
 },
 ["Consumable"] = {
+["shown"] = true,
+},
+["Ammo"] = {
 ["shown"] = true,
 },
 ["Miscellaneous"] = {
@@ -148,11 +162,11 @@ true,
 [0] = true,
 },
 ["itemList"] = {
-[14176] = true,
-[3047] = true,
 [15527] = true,
-[14183] = true,
 [14193] = true,
+[14176] = true,
+[14183] = true,
+[3047] = true,
 },
 ["name"] = "BoE",
 },

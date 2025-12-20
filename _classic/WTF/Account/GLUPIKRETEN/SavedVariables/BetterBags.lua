@@ -2,6 +2,7 @@
 BetterBagsDB = {
 ["profileKeys"] = {
 ["Dopecoil - Thunderstrike"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 },
 ["profiles"] = {
@@ -45,6 +46,16 @@ true,
 ["name"] = "Recent Items",
 ["dynamic"] = true,
 },
+["Ammo"] = {
+["enabled"] = {
+true,
+[0] = true,
+},
+["itemList"] = {
+},
+["name"] = "Ammo",
+["dynamic"] = true,
+},
 ["Junk"] = {
 ["enabled"] = {
 true,
@@ -72,14 +83,14 @@ true,
 },
 },
 ["customCategoryIndex"] = {
-[14183] = "BoE",
-[6472] = "Set: saber",
-[14193] = "BoE",
 [15527] = "BoE",
-[3047] = "BoE",
-[2236] = "Set: muti",
-[14176] = "BoE",
 [6220] = "Sets: muti, saber",
+[3047] = "BoE",
+[14183] = "BoE",
+[14193] = "BoE",
+[14176] = "BoE",
+[2236] = "Set: muti",
+[6472] = "Set: saber",
 },
 ["categoryOptions"] = {
 ["Free Space"] = {
@@ -92,6 +103,9 @@ true,
 ["shown"] = true,
 },
 ["Recent Items"] = {
+["shown"] = true,
+},
+["Ammo"] = {
 ["shown"] = true,
 },
 ["Junk"] = {
@@ -128,11 +142,11 @@ true,
 [0] = true,
 },
 ["itemList"] = {
-[14193] = true,
 [3047] = true,
-[14176] = true,
-[14183] = true,
+[14193] = true,
 [15527] = true,
+[14183] = true,
+[14176] = true,
 },
 ["name"] = "BoE",
 },
@@ -159,8 +173,8 @@ true,
 },
 ["positions"] = {
 [0] = {
-["y"] = 281.2695922851563,
-["x"] = -382.874755859375,
+["y"] = 253.9679260253906,
+["x"] = -363.192626953125,
 ["point"] = "RIGHT",
 ["scale"] = 1,
 },

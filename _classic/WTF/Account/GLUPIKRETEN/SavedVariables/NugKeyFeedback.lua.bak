@@ -1,3 +1,4 @@
 
 NugKeyFeedbackDB = {
+["enablePushEffect"] = false,
 }
