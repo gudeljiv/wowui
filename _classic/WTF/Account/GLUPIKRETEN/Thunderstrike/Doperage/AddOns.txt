@@ -39,7 +39,7 @@ CharacterStatsClassic: enabled
 ChocolateBar: enabled
 ClassicCastbars: enabled
 ClassicCastbars_Options: enabled
-Dejunk: enabled
+Dejunk: disabled
 Details: enabled
 Details_DataStorage: enabled
 Details_Streamer: enabled
@@ -73,7 +73,7 @@ ShadowedUF_SmoothBars: enabled
 ShadowedUnitFrames: enabled
 SharedMedia: enabled
 SharedMedia_xVermin: enabled
-TacoTip: disabled
+TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
 ThreatClassic2: enabled

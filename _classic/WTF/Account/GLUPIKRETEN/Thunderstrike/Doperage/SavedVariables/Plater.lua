@@ -7,6 +7,7 @@ PlaterDBChr = {
 ["buffsBanned"] = {
 },
 ["first_run3"] = {
+["Player-6111-04889C3C"] = true,
 ["Player-5220-01BE1C20"] = true,
 ["Player-5826-022011CD"] = true,
 ["Player-5220-01B31D12"] = true,

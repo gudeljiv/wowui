@@ -96,3 +96,4 @@ Prat-3.0_Libraries: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
+Baganator-Simple: disabled

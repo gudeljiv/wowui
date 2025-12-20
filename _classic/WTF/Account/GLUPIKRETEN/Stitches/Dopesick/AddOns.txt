@@ -116,3 +116,4 @@ Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
 Blizzard_CombatText: enabled
+Baganator-Simple: disabled

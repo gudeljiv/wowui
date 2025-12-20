@@ -1,31 +1,21 @@
-VER 3 0100000001000003 " " "INV_MISC_QUESTIONMARK"
+VER 3 0100000001000006 " " "134400"
 #showtooltip
-/stopcasting
-/cast [@focus,exists,harm][] Earth Shock
+/cast [@mouseover,harm,exists][]Corruption
 END
 VER 3 0100000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,exists][]Healing Wave
+/cast [@mouseover,harm,exists][]Fear
 END
 VER 3 0100000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Lightning Bolt
+/cast Shadow Bolt
 END
 VER 3 0100000001000004 " " "134400"
 #showtooltip
-/cast [@mouseover,help,exists][]Cure Toxins
+/cast [@mouseover,harm,exists][]Immolate
 END
 VER 3 0100000001000005 " " "134400"
 #showtooltip
-/startattack
-/cast Flame Shock
-END
-VER 3 0100000001000006 " " "134400"
-#showtooltip
-/cast [@mouseover,help,exists][]Lesser Healing Wave
-END
-VER 3 0100000001000007 "TT Cast" "INV_MISC_QUESTIONMARK"
-#showtooltips
-/castsequence reset=combat/15 Stoneclaw Totem(Rank 1)
+/cast [@mouseover,harm,exists][]Curse of Agony
 END

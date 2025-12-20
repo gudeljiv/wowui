@@ -11,3 +11,4 @@ ElvUI: enabled
 Demodal: enabled
 Carbonite: enabled
 Blizzard_CombatText: enabled
+Baganator-Simple: disabled

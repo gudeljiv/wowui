@@ -5,10 +5,10 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["itemQualityCheckBoxes"] = {
 ["includeUnsuitableEquipment"] = {
 ["poor"] = true,
-["epic"] = true,
-["common"] = true,
-["uncommon"] = true,
-["rare"] = true,
+["epic"] = false,
+["common"] = false,
+["uncommon"] = false,
+["rare"] = false,
 },
 ["excludeWarbandEquipment"] = {
 ["poor"] = true,
@@ -33,13 +33,13 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 },
 ["includeBelowItemLevel"] = {
 ["poor"] = true,
-["epic"] = true,
-["common"] = true,
-["uncommon"] = true,
-["rare"] = true,
+["epic"] = false,
+["common"] = false,
+["uncommon"] = false,
+["rare"] = false,
 },
 },
-["autoRepair"] = false,
+["autoRepair"] = true,
 ["inclusions"] = {
 },
 ["safeMode"] = false,
@@ -53,19 +53,27 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["exclusions"] = {
 },
 ["excludeEquipmentSets"] = false,
-["autoJunkFrame"] = false,
-["points"] = {
-["mainWindow"] = {
-["offsetX"] = 0,
-["offsetY"] = 50,
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
+["includeBelowItemLevel"] = {
+["value"] = 10,
+["enabled"] = false,
 },
+["itemIcons"] = true,
+["excludeWarbandEquipment"] = false,
+["excludeUnboundEquipment"] = false,
+["autoSell"] = true,
+["points"] = {
 ["merchantButton"] = {
 ["offsetX"] = 75,
 ["offsetY"] = -145,
 ["point"] = "TOPLEFT",
 ["relativePoint"] = "TOPLEFT",
+},
+["mainWindow"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["offsetY"] = -260.158935546875,
+["offsetX"] = 646.2141723632812,
 },
 ["transportFrame"] = {
 ["offsetX"] = 0,
@@ -80,11 +88,5 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["relativePoint"] = "CENTER",
 },
 },
-["autoSell"] = true,
-["excludeUnboundEquipment"] = false,
-["excludeWarbandEquipment"] = false,
-["itemIcons"] = false,
-["includeBelowItemLevel"] = {
-["value"] = 10,
-},
+["autoJunkFrame"] = false,
 }

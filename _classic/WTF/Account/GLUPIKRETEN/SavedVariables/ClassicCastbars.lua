@@ -307,7 +307,7 @@ ClassicCastbarsDB = {
 0,
 1,
 },
-["timerTextPositionX"] = 26,
+["timerTextPositionX"] = -15,
 ["frameLevel"] = 10,
 ["castBorder"] = "",
 ["showInterruptSchool"] = true,

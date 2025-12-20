@@ -202,7 +202,7 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
-TacoTip: disabled
+TacoTip: enabled
 GlobalIgnoreList: enabled
 ShadowedUFFacade: enabled
 Masque_Brownstone: enabled

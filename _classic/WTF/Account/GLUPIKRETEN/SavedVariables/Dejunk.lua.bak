@@ -5,10 +5,10 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["itemQualityCheckBoxes"] = {
 ["includeUnsuitableEquipment"] = {
 ["poor"] = true,
-["epic"] = true,
-["common"] = true,
-["uncommon"] = true,
-["rare"] = true,
+["epic"] = false,
+["common"] = false,
+["uncommon"] = false,
+["rare"] = false,
 },
 ["excludeWarbandEquipment"] = {
 ["poor"] = true,
@@ -33,13 +33,13 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 },
 ["includeBelowItemLevel"] = {
 ["poor"] = true,
-["epic"] = true,
-["common"] = true,
-["uncommon"] = true,
-["rare"] = true,
+["epic"] = false,
+["common"] = false,
+["uncommon"] = false,
+["rare"] = false,
 },
 },
-["autoRepair"] = false,
+["autoRepair"] = true,
 ["inclusions"] = {
 },
 ["safeMode"] = false,
@@ -53,25 +53,20 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["exclusions"] = {
 },
 ["excludeEquipmentSets"] = false,
-["includeBelowItemLevel"] = {
-["value"] = 10,
-},
-["itemIcons"] = false,
-["excludeWarbandEquipment"] = false,
-["excludeUnboundEquipment"] = false,
-["autoSell"] = true,
+["autoJunkFrame"] = false,
 ["points"] = {
+["mainWindow"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["offsetY"] = -260.158935546875,
+["offsetX"] = 646.2141723632812,
+},
 ["merchantButton"] = {
 ["point"] = "TOPLEFT",
 ["offsetY"] = -145,
 ["offsetX"] = 75,
 ["relativePoint"] = "TOPLEFT",
-},
-["mainWindow"] = {
-["point"] = "CENTER",
-["offsetY"] = 50,
-["offsetX"] = 0,
-["relativePoint"] = "CENTER",
 },
 ["transportFrame"] = {
 ["point"] = "CENTER",
@@ -86,5 +81,12 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 ["relativePoint"] = "CENTER",
 },
 },
-["autoJunkFrame"] = false,
+["autoSell"] = true,
+["excludeUnboundEquipment"] = false,
+["excludeWarbandEquipment"] = false,
+["itemIcons"] = true,
+["includeBelowItemLevel"] = {
+["value"] = 10,
+["enabled"] = false,
+},
 }

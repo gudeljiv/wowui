@@ -46,27 +46,28 @@ TomTomDB = {
 ["Koloman - Golemagg"] = "Default",
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
-["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
+["Dopebolt - Lone Wolf"] = "Default",
 ["Battlenac - Celebras"] = "Default",
+["Mxzq - Golemagg"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
-["Mxzq - Golemagg"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
-["Mq - Celebras"] = "Default",
-["Vermin - Zandalar Tribe"] = "Default",
-["Mxys - Golemagg"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
+["Mxys - Golemagg"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Pitchwise - Dreadnaught"] = "Default",
 ["Grgur - Golemagg"] = "Default",
 ["Vermin - Golemagg"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Verminz - Golemagg"] = "Default",
-["Dopecoil - Lone Wolf"] = "Default",
-["Vermins - Stonespine"] = "Default",
 ["Vermin - Celebras"] = "Default",
+["Vermins - Stonespine"] = "Default",
+["Dopecoil - Lone Wolf"] = "Default",
 ["Wells - Jin'do"] = "Default",
 ["Battlearm - Hydraxian Waterlords"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
@@ -163,27 +164,28 @@ TomTomWaypointsM = {
 ["Koloman - Golemagg"] = "Koloman - Golemagg",
 ["Antun - Golemagg"] = "Antun - Golemagg",
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
-["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
+["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Moolatz - Celebras"] = "Moolatz - Celebras",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-["Mq - Celebras"] = "Mq - Celebras",
-["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
-["Mxys - Golemagg"] = "Mxys - Golemagg",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
+["Mxys - Golemagg"] = "Mxys - Golemagg",
+["Mq - Celebras"] = "Mq - Celebras",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
 ["Vermin - Golemagg"] = "Vermin - Golemagg",
 ["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 ["Verminz - Golemagg"] = "Verminz - Golemagg",
-["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
-["Vermins - Stonespine"] = "Vermins - Stonespine",
 ["Vermin - Celebras"] = "Vermin - Celebras",
+["Vermins - Stonespine"] = "Vermins - Stonespine",
+["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 ["Wells - Jin'do"] = "Wells - Jin'do",
 ["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 ["Dopesnare - Stitches"] = "Dopesnare - Stitches",
@@ -289,29 +291,31 @@ TomTomWaypointsM = {
 },
 ["Provokator - Jin'do"] = {
 },
-["Dopebolt - Lone Wolf"] = {
-},
 ["Moolatz - Dreadnaught"] = {
 },
+["Dopebolt - Lone Wolf"] = {
+},
 ["Battlenac - Celebras"] = {
+},
+["Mxzq - Golemagg"] = {
 },
 ["Moolatz - Celebras"] = {
 },
 ["Jutarnjedrvo - Lone Wolf"] = {
 },
-["Mxzq - Golemagg"] = {
+["Vermin - Zandalar Tribe"] = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
-["Mq - Celebras"] = {
+["Doperage - Thunderstrike"] = {
 },
-["Vermin - Zandalar Tribe"] = {
+["Dopeclaw - Thunderstrike"] = {
 },
 ["Mxys - Golemagg"] = {
 },
-["Dopeclaw - Thunderstrike"] = {
+["Mq - Celebras"] = {
 },
 ["Vermins - Stitches"] = {
 },
@@ -324,6 +328,10 @@ TomTomWaypointsM = {
 ["Dopedot - Lone Wolf"] = {
 },
 ["Verminz - Golemagg"] = {
+},
+["Vermin - Celebras"] = {
+},
+["Vermins - Stonespine"] = {
 },
 ["Dopecoil - Lone Wolf"] = {
 [1412] = {
@@ -351,10 +359,6 @@ TomTomWaypointsM = {
 ["world"] = true,
 },
 },
-},
-["Vermins - Stonespine"] = {
-},
-["Vermin - Celebras"] = {
 },
 ["Wells - Jin'do"] = {
 },

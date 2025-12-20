@@ -24,20 +24,21 @@ RatingBusterDB = {
 ["Dopesnare - Living Flame"] = "Hunter",
 ["Mq - Celebras"] = "HUNTER",
 ["Vermins - Stitches"] = "WARRIOR",
+["Doperage - Thunderstrike"] = "Warrior",
 ["Dopesnare - Thunderstrike"] = "Hunter",
 ["Dopetrap - Lone Wolf"] = "HUNTER",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
-["Doperage - Lone Wolf"] = "WARRIOR",
 ["Dopeah - Stitches"] = "SHAMAN",
 ["Dopeclaw - Thunderstrike"] = "Druid",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Doperage - Living Flame"] = "Warrior",
 ["Turbonac - Celebras"] = "Warlock",
-["Vermin - Celebras"] = "WARRIOR",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopecoil - Thunderstrike"] = "Warlock",
 ["Dopebolt - Living Flame"] = "Mage",
 ["Dopede - Stitches"] = "SHAMAN",
+["Vermin - Celebras"] = "WARRIOR",
 ["Dopeclaw - Lone Wolf"] = "DRUID",
-["Doperage - Living Flame"] = "Warrior",
 ["Dopestab - Lone Wolf"] = "ROGUE",
 ["Dopemend - Living Flame"] = "Priest",
 ["Dopeclaw - Stitches"] = "DRUID",
@@ -67,9 +68,9 @@ RatingBusterDB = {
 },
 ["SHAMAN"] = {
 },
-["DRUID"] = {
-},
 ["Hunter"] = {
+},
+["DRUID"] = {
 },
 ["Druid"] = {
 },
