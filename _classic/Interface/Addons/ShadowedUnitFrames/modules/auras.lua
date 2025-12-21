@@ -99,6 +99,9 @@ local positionData = setmetatable({}, {
 local function positionButton(id,  group, config)
 	local position = positionData[group.forcedAnchorPoint or config.anchorPoint]
 	local button = group.buttons[id]
+
+	button:CreateBeautyBorder(8)
+
 	button.isAuraAnchor = nil
 
 	-- Alright, in order to find out where an aura group is going to be anchored to certain buttons need

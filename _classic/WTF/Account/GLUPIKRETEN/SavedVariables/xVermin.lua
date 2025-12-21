@@ -274,17 +274,9 @@ xVerminSavedData = {
 "Cheap Shot",
 "Mutilate",
 },
-["Larsera"] = {
+["Ambershard Crusher"] = {
+"Chain Lightning",
 "Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -361,8 +353,8 @@ xVerminSavedData = {
 "Living Bomb",
 "Molten Blast",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
 ["Ironspine"] = {
 "Rend",
@@ -374,8 +366,8 @@ xVerminSavedData = {
 ["Sandfury Shadowcaster"] = {
 "Earthbind",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Remote-Controlled Golem"] = {
 "Rend",
@@ -399,11 +391,11 @@ xVerminSavedData = {
 "Lightning Shield",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Rock Elemental"] = {
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -450,9 +442,17 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
+["Larsera"] = {
 "Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
 },
 ["Wailing Highborne"] = {
 "Rend",

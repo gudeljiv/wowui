@@ -39,7 +39,7 @@ CharacterStatsClassic: enabled
 ChocolateBar: enabled
 ClassicCastbars: enabled
 ClassicCastbars_Options: enabled
-Dejunk: disabled
+Dejunk: enabled
 Details: enabled
 Details_DataStorage: enabled
 Details_Streamer: enabled

@@ -14,13 +14,13 @@ if xVermin.Class == 'HUNTER' or xVermin.Class == 'ROGUE' or xVermin.Class == 'WA
 	ac.text:SetText('')
 
 	xVermin.CheckIfLoadedWithTimer(
-	'CharacterAmmoSlotCount',
-	function()
-		-- ako zelim hide mora ici OnShow --> Hide()
-		-- CharacterAmmoSlotCount:Hide()
-		CharacterAmmoSlotCount:SetScale(0.7)
-	end
-)
+		'CharacterAmmoSlotCount',
+		function()
+			-- ako zelim hide mora ici OnShow --> Hide()
+			-- CharacterAmmoSlotCount:Hide()
+			CharacterAmmoSlotCount:SetScale(0.7)
+		end
+	)
 
 	local f = CreateFrame('Frame')
 	f:RegisterEvent('PLAYER_ENTERING_WORLD')
@@ -41,6 +41,40 @@ if xVermin.Class == 'HUNTER' or xVermin.Class == 'ROGUE' or xVermin.Class == 'WA
 				count = 0;
 			end
 
+			ac.text:SetText(count > 0 and count or "")
+		end
+	)
+end
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-- Unit (Player) shard count
+-----------------------------------------------------------------------------------------------------------------------------
+if xVermin.Class == 'WARLOCK' then
+	local ac = CreateFrame('Frame', 'CustomContainer_AmmoCount', CustomContainer_Combat)
+	ac:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+	ac:SetWidth(1)
+	ac:SetHeight(1)
+	ac.text = ac:CreateFontString(nil, 'ARTWORK')
+	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+	ac.text:SetText('')
+
+	local f = CreateFrame('Frame')
+	f:RegisterEvent('PLAYER_ENTERING_WORLD')
+	f:RegisterEvent('PLAYER_REGEN_DISABLED')
+	f:RegisterEvent('PLAYER_REGEN_ENABLED')
+	f:RegisterEvent('UNIT_INVENTORY_CHANGED')
+	f:RegisterEvent('PLAYER_EQUIPMENT_CHANGED')
+	f:RegisterEvent('BAG_UPDATE')
+	f:RegisterEvent('BAG_UPDATE_DELAYED')
+
+	local SOUL_SHARD_ID = 6265
+
+	f:SetScript(
+		'OnEvent',
+		function(self, event, isInitialLogin, isReloadingUi)
+			local count = GetItemCount(SOUL_SHARD_ID, false, false)
 			ac.text:SetText(count > 0 and count or "")
 		end
 	)

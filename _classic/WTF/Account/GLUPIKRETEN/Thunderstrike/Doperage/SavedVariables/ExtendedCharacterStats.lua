@@ -10,11 +10,11 @@ ExtendedCharacterStats = {
 },
 ["statsWindowClosedOnOpen"] = false,
 ["addColorsToStatTexts"] = true,
+["qualityColorsIntensity"] = 0.75,
 ["headerFontSize"] = 11,
-["profileVersion"] = 21,
 ["showQualityColors"] = false,
 ["statFontSize"] = 10,
-["qualityColorsIntensity"] = 0.75,
+["profileVersion"] = 21,
 },
 ["profile"] = {
 ["ranged"] = {
@@ -65,6 +65,7 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedHitBossLevel",
 ["textColor"] = "85bb5c",
 },
+["display"] = true,
 ["sameLevel"] = {
 ["statColor"] = "558b2f",
 ["display"] = true,
@@ -72,9 +73,8 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedHitSameLevel",
 ["textColor"] = "85bb5c",
 },
-["isSubGroup"] = true,
 ["text"] = "Hit",
-["display"] = true,
+["isSubGroup"] = true,
 ["rating"] = {
 ["isTbcOnly"] = true,
 ["statColor"] = "558b2f",
@@ -93,7 +93,6 @@ ExtendedCharacterStats = {
 },
 },
 ["display"] = true,
-["refName"] = "RangedHeader",
 ["crit"] = {
 ["statColor"] = "d32f2f",
 ["display"] = true,
@@ -101,6 +100,7 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedCritChance",
 ["textColor"] = "ff6659",
 },
+["refName"] = "RangedHeader",
 ["penetration"] = {
 ["isTbcOnly"] = true,
 ["statColor"] = "00766c",
@@ -138,12 +138,26 @@ ExtendedCharacterStats = {
 ["text"] = "Parry Chance",
 ["refName"] = "ParryChance",
 },
+["armor"] = {
 ["display"] = true,
+["text"] = "Armor",
+["refName"] = "Armor",
+},
 ["critReduction"] = {
 ["display"] = true,
 ["isTbcOnly"] = true,
 ["refName"] = "CritReduction",
 ["text"] = "Crit Reduction",
+},
+["avoidance"] = {
+["display"] = true,
+["text"] = "Avoidance",
+["refName"] = "Avoidance",
+},
+["dodge"] = {
+["display"] = true,
+["text"] = "Dodge Chance",
+["refName"] = "DodgeChance",
 },
 ["defenseRating"] = {
 ["display"] = true,
@@ -151,21 +165,7 @@ ExtendedCharacterStats = {
 ["refName"] = "DefenseRating",
 ["text"] = "Defense Rating",
 },
-["dodge"] = {
 ["display"] = true,
-["text"] = "Dodge Chance",
-["refName"] = "DodgeChance",
-},
-["avoidance"] = {
-["display"] = true,
-["text"] = "Avoidance",
-["refName"] = "Avoidance",
-},
-["armor"] = {
-["display"] = true,
-["text"] = "Armor",
-["refName"] = "Armor",
-},
 ["refName"] = "DefenseHeader",
 ["resilience"] = {
 ["display"] = true,
@@ -200,13 +200,7 @@ ExtendedCharacterStats = {
 ["refName"] = "GlanceHitChanceBossLevel",
 ["textColor"] = "A8A8A8",
 },
-["sameLevel"] = {
-["statColor"] = "FFFFFF",
 ["display"] = true,
-["text"] = "Chance",
-["refName"] = "GlanceHitChanceSameLevel",
-["textColor"] = "A8A8A8",
-},
 ["text"] = "Glancing Blow",
 ["damageBossLevel"] = {
 ["statColor"] = "FFFFFF",
@@ -215,7 +209,7 @@ ExtendedCharacterStats = {
 ["refName"] = "GlanceDamageBossLevel",
 ["textColor"] = "A8A8A8",
 },
-["display"] = true,
+["isSubGroup"] = true,
 ["damageSameLevel"] = {
 ["statColor"] = "FFFFFF",
 ["display"] = true,
@@ -224,7 +218,13 @@ ExtendedCharacterStats = {
 ["textColor"] = "A8A8A8",
 },
 ["refName"] = "GlanceChanceHeader",
-["isSubGroup"] = true,
+["sameLevel"] = {
+["statColor"] = "FFFFFF",
+["display"] = true,
+["text"] = "Chance",
+["refName"] = "GlanceHitChanceSameLevel",
+["textColor"] = "A8A8A8",
+},
 },
 ["attackSpeed"] = {
 ["offHand"] = {
@@ -234,6 +234,10 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeAttackSpeedOffHand",
 ["textColor"] = "009688",
 },
+["display"] = true,
+["isSubGroup"] = true,
+["text"] = "Attack Speed",
+["refName"] = "MeleeAttackSpeedHeader",
 ["mainHand"] = {
 ["statColor"] = "00766c",
 ["display"] = true,
@@ -241,10 +245,6 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeAttackSpeedMainHand",
 ["textColor"] = "009688",
 },
-["display"] = true,
-["text"] = "Attack Speed",
-["refName"] = "MeleeAttackSpeedHeader",
-["isSubGroup"] = true,
 },
 ["hasteBonus"] = {
 ["isTbcOnly"] = true,
@@ -255,13 +255,11 @@ ExtendedCharacterStats = {
 ["textColor"] = "c8a600",
 },
 ["text"] = "Melee",
-["hasteRating"] = {
-["isTbcOnly"] = true,
-["statColor"] = "ffd740",
+["expertiseRating"] = {
 ["display"] = true,
-["text"] = "Haste Rating",
-["refName"] = "MeleeHasteRating",
-["textColor"] = "c8a600",
+["isTbcOnly"] = true,
+["refName"] = "ExpertiseRating",
+["text"] = "Expertise Rating",
 },
 ["crit"] = {
 ["statColor"] = "d32f2f",
@@ -270,19 +268,19 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeCritChance",
 ["textColor"] = "ff6659",
 },
-["penetrationRating"] = {
-["isTbcOnly"] = true,
-["statColor"] = "00766c",
+["expertise"] = {
 ["display"] = true,
-["text"] = "Armor Pen. Rating",
-["refName"] = "MeleeArmorPenetrationRating",
-["textColor"] = "009688",
+["isTbcOnly"] = true,
+["refName"] = "Expertise",
+["text"] = "Expertise",
 },
-["expertiseRating"] = {
-["display"] = true,
+["hasteRating"] = {
 ["isTbcOnly"] = true,
-["refName"] = "ExpertiseRating",
-["text"] = "Expertise Rating",
+["statColor"] = "ffd740",
+["display"] = true,
+["text"] = "Haste Rating",
+["refName"] = "MeleeHasteRating",
+["textColor"] = "c8a600",
 },
 ["hit"] = {
 ["bossLevel"] = {
@@ -292,6 +290,7 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeHitBossLevel",
 ["textColor"] = "85bb5c",
 },
+["display"] = true,
 ["sameLevel"] = {
 ["statColor"] = "558b2f",
 ["display"] = true,
@@ -299,9 +298,8 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeHitSameLevel",
 ["textColor"] = "85bb5c",
 },
-["isSubGroup"] = true,
 ["text"] = "Hit",
-["display"] = true,
+["isSubGroup"] = true,
 ["rating"] = {
 ["isTbcOnly"] = true,
 ["statColor"] = "558b2f",
@@ -329,11 +327,13 @@ ExtendedCharacterStats = {
 ["textColor"] = "009688",
 },
 ["refName"] = "MeleeHeader",
-["expertise"] = {
-["display"] = true,
+["penetrationRating"] = {
 ["isTbcOnly"] = true,
-["refName"] = "Expertise",
-["text"] = "Expertise",
+["statColor"] = "00766c",
+["display"] = true,
+["text"] = "Armor Pen. Rating",
+["refName"] = "MeleeArmorPenetrationRating",
+["textColor"] = "009688",
 },
 },
 ["regen"] = {
@@ -453,13 +453,27 @@ ExtendedCharacterStats = {
 },
 ["refName"] = "SpellHeader",
 ["text"] = "Spell",
+["arcane"] = {
+["display"] = true,
+},
+["nature"] = {
+["display"] = true,
+},
 ["penetration"] = {
 ["display"] = true,
 ["text"] = "Penetration",
 ["refName"] = "SpellPenetration",
 },
-["nature"] = {
+["frost"] = {
 ["display"] = true,
+},
+["hasteRating"] = {
+["isTbcOnly"] = true,
+["statColor"] = "ffd740",
+["display"] = true,
+["text"] = "Haste Rating",
+["refName"] = "SpellHasteRating",
+["textColor"] = "c8a600",
 },
 ["hit"] = {
 ["bossLevel"] = {
@@ -490,6 +504,13 @@ ExtendedCharacterStats = {
 ["refName"] = "SpellHitSameLevel",
 ["textColor"] = "85bb5c",
 },
+["frostMissChance"] = {
+["statColor"] = "00b0ff",
+["display"] = true,
+["text"] = "Frost Miss",
+["refName"] = "FrostMissChance",
+["textColor"] = "69e2ff",
+},
 ["physicalHitBonus"] = {
 ["statColor"] = "cfcfcf",
 ["display"] = true,
@@ -503,13 +524,6 @@ ExtendedCharacterStats = {
 ["text"] = "Shadow Miss",
 ["refName"] = "ShadowMissChance",
 ["textColor"] = "e254ff",
-},
-["frostMissChance"] = {
-["statColor"] = "00b0ff",
-["display"] = true,
-["text"] = "Frost Miss",
-["refName"] = "FrostMissChance",
-["textColor"] = "69e2ff",
 },
 ["frostMissChanceBoss"] = {
 ["statColor"] = "00b0ff",
@@ -525,13 +539,7 @@ ExtendedCharacterStats = {
 ["refName"] = "ShadowHitBonus",
 ["textColor"] = "e254ff",
 },
-["physicalMissChance"] = {
-["statColor"] = "cfcfcf",
 ["display"] = true,
-["text"] = "Physical Miss",
-["refName"] = "PhysicalMissChance",
-["textColor"] = "9e9e9e",
-},
 ["rating"] = {
 ["isTbcOnly"] = true,
 ["statColor"] = "558b2f",
@@ -568,7 +576,13 @@ ExtendedCharacterStats = {
 ["refName"] = "NatureHitBonus",
 ["textColor"] = "9cff57",
 },
-["isSubGroup"] = true,
+["physicalMissChance"] = {
+["statColor"] = "cfcfcf",
+["display"] = true,
+["text"] = "Physical Miss",
+["refName"] = "PhysicalMissChance",
+["textColor"] = "9e9e9e",
+},
 ["fireMissChance"] = {
 ["statColor"] = "d50000",
 ["display"] = true,
@@ -591,12 +605,12 @@ ExtendedCharacterStats = {
 ["refName"] = "FrostHitBonus",
 ["textColor"] = "69e2ff",
 },
-["physicalMissChanceBoss"] = {
-["statColor"] = "cfcfcf",
+["shadowMissChanceBoss"] = {
+["statColor"] = "aa00ff",
 ["display"] = true,
-["text"] = "Physical Miss (Lvl + 3)",
-["refName"] = "PhysicalMissChanceBoss",
-["textColor"] = "9e9e9e",
+["text"] = "Shadow Miss (Lvl + 3)",
+["refName"] = "ShadowMissChanceBoss",
+["textColor"] = "e254ff",
 },
 ["fireHitBonus"] = {
 ["statColor"] = "d50000",
@@ -612,12 +626,12 @@ ExtendedCharacterStats = {
 ["refName"] = "HolyMissChance",
 ["textColor"] = "ff9e40",
 },
-["shadowMissChanceBoss"] = {
-["statColor"] = "aa00ff",
+["physicalMissChanceBoss"] = {
+["statColor"] = "cfcfcf",
 ["display"] = true,
-["text"] = "Shadow Miss (Lvl + 3)",
-["refName"] = "ShadowMissChanceBoss",
-["textColor"] = "e254ff",
+["text"] = "Physical Miss (Lvl + 3)",
+["refName"] = "PhysicalMissChanceBoss",
+["textColor"] = "9e9e9e",
 },
 ["natureMissChanceBoss"] = {
 ["statColor"] = "64dd17",
@@ -626,7 +640,7 @@ ExtendedCharacterStats = {
 ["refName"] = "NatureMissChanceBoss",
 ["textColor"] = "9cff57",
 },
-["display"] = true,
+["isSubGroup"] = true,
 ["holyHitBonus"] = {
 ["statColor"] = "ffd600",
 ["display"] = true,
@@ -642,20 +656,6 @@ ExtendedCharacterStats = {
 ["refName"] = "NatureMissChance",
 ["textColor"] = "9cff57",
 },
-},
-["frost"] = {
-["display"] = true,
-},
-["hasteRating"] = {
-["isTbcOnly"] = true,
-["statColor"] = "ffd740",
-["display"] = true,
-["text"] = "Haste Rating",
-["refName"] = "SpellHasteRating",
-["textColor"] = "c8a600",
-},
-["arcane"] = {
-["display"] = true,
 },
 ["display"] = true,
 ["fire"] = {

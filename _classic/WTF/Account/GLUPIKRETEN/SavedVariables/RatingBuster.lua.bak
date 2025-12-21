@@ -12,6 +12,7 @@ RatingBusterDB = {
 ["Dopecure - Stitches"] = "PRIEST",
 ["Dopemend - Lone Wolf"] = "PRIEST",
 ["Dopesnare - Stitches"] = "HUNTER",
+["Dopecure - Thunderstrike"] = "Priest",
 ["Dopedot - Lone Wolf"] = "WARLOCK",
 ["Dopecoil - Lone Wolf"] = "SHAMAN",
 ["Lonac - Stitches"] = "WARRIOR",
@@ -60,15 +61,17 @@ RatingBusterDB = {
 },
 ["PRIEST"] = {
 },
+["Druid"] = {
+},
 ["Warlock"] = {
 },
 ["WARLOCK"] = {
 },
-["Druid"] = {
+["DRUID"] = {
+},
+["Priest"] = {
 },
 ["Hunter"] = {
-},
-["DRUID"] = {
 },
 ["SHAMAN"] = {
 },
