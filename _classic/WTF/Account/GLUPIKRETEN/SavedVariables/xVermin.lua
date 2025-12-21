@@ -338,6 +338,24 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+},
+["Ironspine"] = {
+"Rend",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -352,19 +370,6 @@ xVerminSavedData = {
 "Lightning Shield",
 "Living Bomb",
 "Molten Blast",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
-["Ironspine"] = {
-"Rend",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
@@ -424,13 +429,8 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",

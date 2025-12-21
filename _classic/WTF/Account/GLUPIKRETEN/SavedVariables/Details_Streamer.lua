@@ -75,7 +75,12 @@ Details_StreamerDB = {
 },
 ["profiles"] = {
 ["Mxyz - Golemagg"] = {
-["use_square_mode"] = false,
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
 ["is_first_run"] = false,
 ["grow_direction"] = "right",
 ["arrow_color"] = {
@@ -84,8 +89,11 @@ Details_StreamerDB = {
 1,
 0.5,
 },
-["scale"] = 1,
-["arrow_anchor_y"] = 0,
+["use_square_mode"] = false,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
@@ -93,16 +101,16 @@ Details_StreamerDB = {
 },
 ["row_height"] = 18,
 ["arrow_anchor_x"] = 0,
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
+["point"] = "RIGHT",
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["point"] = "RIGHT",
-["main_frame_strata"] = "LOW",
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["author"] = "Details! Team",
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
@@ -114,12 +122,7 @@ Details_StreamerDB = {
 0,
 0,
 },
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
+["main_frame_strata"] = "LOW",
 ["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 ["per_second"] = {
 ["enabled"] = false,
@@ -137,12 +140,9 @@ Details_StreamerDB = {
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
 ["y"] = -183.107162475586,
-["author"] = "Details! Team",
+["scale"] = 1,
 ["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
+["arrow_anchor_y"] = 0,
 },
 },
 }

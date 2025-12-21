@@ -118,7 +118,7 @@ BAGANATOR_CONFIG = {
 ["warband_current_tab"] = 1,
 ["category_item_grouping"] = false,
 ["recent_timeout"] = 0,
-["category_group_empty_slots"] = true,
+["guild_current_tab"] = 1,
 ["main_view_show_bag_slots"] = false,
 ["category_display_order"] = {
 "default_auto_recents",
@@ -147,45 +147,6 @@ BAGANATOR_CONFIG = {
 "default_special_empty",
 },
 ["show_guild_banks_in_tooltips"] = true,
-["skins"] = {
-["blizzard"] = {
-["no_frame_borders"] = false,
-["view_transparency"] = 0,
-["empty_slot_background"] = false,
-},
-["dark"] = {
-["no_frame_borders"] = false,
-["square_icons"] = false,
-["view_transparency"] = 0.3,
-["empty_slot_background"] = false,
-},
-},
-["show_currency_tooltips"] = true,
-["current_skin"] = "dark",
-["category_sort_method"] = "item-level",
-["debug_keywords"] = false,
-["hide_boe_on_common"] = false,
-["bank_view_type"] = "category",
-["show_buttons_on_alt"] = false,
-["main_view_position"] = {
-"RIGHT",
--350.796142578125,
-166.9839477539063,
-},
-["bank_only_view_show_bag_slots"] = false,
-["sort_start_at_bottom"] = false,
-["icon_top_right_corner_array"] = {
-},
-["icon_bottom_right_corner_array"] = {
-"quantity",
-},
-["tooltips_sort_by_name"] = false,
-["bank_view_position"] = {
-"BOTTOMLEFT",
-1224.920654296875,
-839.28515625,
-},
-["bag_view_width"] = 12,
 ["recent_characters_main_view"] = {
 "Dopecoil-Thunderstrike",
 "Mq-Celebras",
@@ -207,8 +168,43 @@ BAGANATOR_CONFIG = {
 "Dopemend-LoneWolf",
 "Dopecoil-LoneWolf",
 },
-["recent_include_owned"] = false,
-["debug_timers"] = false,
+["show_currency_tooltips"] = true,
+["current_skin"] = "dark",
+["category_sort_method"] = "item-level",
+["skins"] = {
+["blizzard"] = {
+["no_frame_borders"] = false,
+["view_transparency"] = 0,
+["empty_slot_background"] = false,
+},
+["dark"] = {
+["no_frame_borders"] = false,
+["square_icons"] = false,
+["view_transparency"] = 0.3,
+["empty_slot_background"] = false,
+},
+},
+["hide_boe_on_common"] = false,
+["bank_view_type"] = "category",
+["show_buttons_on_alt"] = false,
+["main_view_position"] = {
+"RIGHT",
+-350.796142578125,
+166.9839477539063,
+},
+["bank_only_view_show_bag_slots"] = false,
+["sort_start_at_bottom"] = false,
+["icon_top_right_corner_array"] = {
+},
+["icon_bottom_right_corner_array"] = {
+"quantity",
+},
+["tooltips_sort_by_name"] = false,
+["bank_view_position"] = {
+"BOTTOMLEFT",
+1224.920654296875,
+839.28515625,
+},
 ["sort_ignore_slots_count_2"] = {
 ["Jutarnjedrvo-LoneWolf"] = 0,
 ["Dopeclaw-LoneWolf"] = 0,
@@ -216,16 +212,16 @@ BAGANATOR_CONFIG = {
 ["Doperage-LoneWolf"] = 0,
 ["Dopestab-LoneWolf"] = 0,
 },
+["debug_keywords"] = false,
+["recent_include_owned"] = false,
+["debug_timers"] = false,
+["bag_view_width"] = 12,
 ["guild_view_position_2"] = {
 "TOPLEFT",
 30,
 -235,
 },
-["character_select_position"] = {
-"CENTER",
-339.9679260253906,
-146.3571014404297,
-},
+["bag_empty_space_at_top"] = true,
 ["category_sections"] = {
 ["1"] = {
 ["name"] = "EQUIPMENT",
@@ -238,8 +234,12 @@ BAGANATOR_CONFIG = {
 ["hide_special_container"] = {
 ["keyring"] = true,
 },
-["setting_anchors"] = false,
-["enable_equipment_set_info_2"] = true,
+["show_guild_bank_button"] = true,
+["character_select_position"] = {
+"CENTER",
+339.9679260253906,
+146.3571014404297,
+},
 ["view_alpha"] = 0.9,
 ["category_horizontal_spacing_2"] = 0.4,
 ["show_inventory_tooltips"] = true,
@@ -322,14 +322,14 @@ BAGANATOR_CONFIG = {
 ["icon_text_quality_colors"] = false,
 ["disabled_skins"] = {
 },
-["show_guild_bank_button"] = true,
+["setting_anchors"] = false,
 ["bag_view_position"] = {
 "BOTTOMRIGHT",
 -282.06494140625,
 705.9527587890625,
 },
 ["tooltips_faction_only"] = false,
-["bag_empty_space_at_top"] = true,
+["enable_equipment_set_info_2"] = true,
 ["tooltips_character_limit"] = 4,
 ["enable_guild_view"] = true,
 ["auto_sort_on_open"] = true,
@@ -352,15 +352,15 @@ BAGANATOR_CONFIG = {
 0,
 0,
 },
-["guild_current_tab"] = 1,
+["icon_top_left_corner_array"] = {
+"item_level",
+},
 ["bank_only_view_position"] = {
 "LEFT",
 995.87255859375,
 374.6029663085938,
 },
-["icon_top_left_corner_array"] = {
-"item_level",
-},
+["category_group_empty_slots"] = true,
 ["show_sort_button_2"] = true,
 ["inverted_bag_shortcuts"] = false,
 ["new_items_flashing"] = true,

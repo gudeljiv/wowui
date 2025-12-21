@@ -58,7 +58,7 @@ GMMONEY = {
 ["CLASS"] = "WARLOCK",
 },
 ["Dopesnare"] = {
-["GOLD"] = 133,
+["GOLD"] = 165,
 ["CLASS"] = "HUNTER",
 },
 },

@@ -267,10 +267,11 @@ xVermin.GetRange = function(unit)
 	unit = unit or 'target'
 	if UnitExists(unit) then
 		minRange, maxRange = RangeCheck:GetRange(unit)
-		return minRange, maxRange
-	else
-		return -1, -1
+		if minRange and maxRange and minRange >= 0 and maxRange >= 0 then
+			return minRange, maxRange
+		end
 	end
+	return -1, -1
 end
 xGetRange = xVermin.GetRange
 
