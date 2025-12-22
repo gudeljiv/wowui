@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 54; -- bump on changes
+local LIB_MINOR = 55; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -2193,6 +2193,43 @@ end
 --                                           Anchoring                                            --
 ----------------------------------------------------------------------------------------------------
 
+-- get anchor points
+--
+-- @return anchorPoints[] (point, relativeTo, relativePoint, offsetX, offsetY). returns nil for currently forbidden frames.
+function LibFroznFunctions:GetAnchorPoints(frame)
+	-- check if insecure interaction with the frame is currently forbidden
+	if (frame:IsForbidden()) then
+		return;
+	end
+	
+	-- get anchor points
+	local anchorPoints = {};
+	
+	for pointIndex = 1, frame:GetNumPoints() do
+		tinsert(anchorPoints, { frame:GetPoint(pointIndex) });
+	end
+	
+	return anchorPoints;
+end
+
+-- set anchor points
+--
+-- @param frame           frame to set anchorm points for
+-- @param anchorPoints[]  anchor points (anchor point: point, relativeTo, relativePoint, offsetX, offsetY)
+function LibFroznFunctions:SetAnchorPoints(frame, anchorPoints)
+	-- check if insecure interaction with the frame is currently forbidden
+	if (frame:IsForbidden()) then
+		return;
+	end
+	
+	-- set anchor points
+	frame:ClearAllPoints();
+	
+	for _, anchorPoint in ipairs(anchorPoints) do
+		frame:SetPoint(unpack(anchorPoint));
+	end
+end
+
 -- get anchor point side
 --
 -- @param  anchorPoint  anchor point, e.g. "TOP" or "BOTTOMRIGHT"
@@ -2423,7 +2460,7 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 		local primaryTooltipPoint1 = (primaryTooltip:GetNumPoints() >= 1) and select(2, primaryTooltip:GetPoint(1));
 		local secondaryTooltipPoint1 = (secondaryTooltip:GetNumPoints() >= 1) and select(2, secondaryTooltip:GetPoint(1));
 		
-		self = { 
+		self = {
 			tooltip = primaryTooltip:GetOwner(),
 			anchorFrame = (primaryTooltipPoint1 ~= secondaryTooltip) and primaryTooltipPoint1 or (primaryTooltipPoint1 == secondaryTooltip) and secondaryTooltipPoint1 or primaryTooltip:GetOwner(),
 			comparisonItem = (primaryTooltip:IsShown())
@@ -2445,13 +2482,25 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 		sideAnchorFrame = self.anchorFrame:GetParent():GetParent();
 	end
 	
+	-- recalculate size of tip, side anchor frame and shopping tips to ensure that they have the correct dimensions -- added start
+	LibFroznFunctions:RecalculateSizeOfGameTooltip(tooltip);
+	LibFroznFunctions:RecalculateSizeOfGameTooltip(sideAnchorFrame);
+	
+	if (primaryShown) then
+		LibFroznFunctions:RecalculateSizeOfGameTooltip(primaryTooltip);
+	end
+	
+	if (secondaryShown) then
+		LibFroznFunctions:RecalculateSizeOfGameTooltip(secondaryTooltip);
+	end -- added end
+	
+	-- sometimes the sideAnchorFrame is an actual tooltip, and sometimes it's a script region, so make sure we're getting the actual anchor type
+	local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType(); -- moved here
+	
 	-- local leftPos = sideAnchorFrame:GetLeft(); -- removed
 	-- local rightPos = sideAnchorFrame:GetRight(); -- removed
 	local leftPos = (sideAnchorFrame:GetLeft() ~= nil) and (sideAnchorFrame:GetLeft() * sideAnchorFrame:GetEffectiveScale()); -- added
 	local rightPos = (sideAnchorFrame:GetRight() ~= nil) and (sideAnchorFrame:GetRight() * sideAnchorFrame:GetEffectiveScale()); -- added
-	
-	-- recalculate size of tip to ensure that it has the correct dimensions
-	LibFroznFunctions:RecalculateSizeOfGameTooltip(tooltip);
 	
 	-- local selfLeftPos = tooltip:GetLeft(); -- removed
 	-- local selfRightPos = tooltip:GetRight(); -- removed
@@ -2468,7 +2517,7 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 	end
 	
 	-- sometimes the sideAnchorFrame is an actual tooltip, and sometimes it's a script region, so make sure we're getting the actual anchor type
-	local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType();
+	-- local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType(); -- moved to top
 	
 	local totalWidth = 0;
 	if primaryShown then
@@ -2503,12 +2552,31 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 		elseif ( (side == "right") and (rightPos + totalWidth) >  screenWidth ) then
 			slideAmount = screenWidth - (rightPos + totalWidth);
 		end
-
+		if sideAnchorFrame.SetAnchorType then -- added start
+			slideAmount = slideAmount / sideAnchorFrame:GetEffectiveScale();
+		else
+			slideAmount = slideAmount / tooltip:GetEffectiveScale();
+		end -- added end
+		
 		if slideAmount ~= 0 then -- if we calculated a slideAmount, we need to slide
+			local anchorPoints; -- added
+			
 			if sideAnchorFrame.SetAnchorType then
-				sideAnchorFrame:SetAnchorType(anchorType, slideAmount, 0);
+				-- sideAnchorFrame:SetAnchorType(anchorType, slideAmount, 0); -- removed. calling SetAnchorType() results in not visible ChatFrame hover tooltips with anchor type ANCHOR_NONE. additionally the current slide amount isn't considered, too.
+				anchorPoints = LibFroznFunctions:GetAnchorPoints(sideAnchorFrame); -- added start
+				
+				newOriginalSlideAmount = anchorPoints[1][4];
+				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount;
+				
+				LibFroznFunctions:SetAnchorPoints(sideAnchorFrame, anchorPoints); -- added end
 			else
-				tooltip:SetAnchorType(anchorType, slideAmount, 0);
+				-- tooltip:SetAnchorType(anchorType, slideAmount, 0); -- removed. calling SetAnchorType() results in not visible ChatFrame hover tooltips with anchor type ANCHOR_NONE. additionally the current slide amount isn't considered, too.
+				anchorPoints = LibFroznFunctions:GetAnchorPoints(tooltip); -- added start
+				
+				newOriginalSlideAmount = anchorPoints[1][4];
+				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount;
+				
+				LibFroznFunctions:SetAnchorPoints(tooltip, anchorPoints); -- added end
 			end
 		end
 	end

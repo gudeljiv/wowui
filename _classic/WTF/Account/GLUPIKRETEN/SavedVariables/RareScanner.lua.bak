@@ -3721,13 +3721,13 @@ RareScannerDB = {
 4,
 1,
 },
-[9770] = {
-"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r",
-2,
-"INVTYPE_CLOAK",
-133769,
+[8747] = {
+"|cff9d9d9d|Hitem:8747::::::::32:::::::::|h[Hardened Leather Helm]|h|r",
+0,
+"INVTYPE_HEAD",
+133117,
 4,
-1,
+2,
 },
 [9746] = {
 "|cffffffff|Hitem:9746::::::::13:::::::::|h[Simple Gloves]|h|r",
@@ -3753,13 +3753,13 @@ RareScannerDB = {
 4,
 3,
 },
-[2958] = {
-"|cff1eff00|Hitem:2958::::::::18:::::::::|h[Journeyman's Pants]|h|r",
+[204912] = {
+"|cff1eff00|Hitem:204912::::::::8:::::::::|h[Rune of Grace]|h|r",
 2,
-"INVTYPE_LEGS",
-134590,
-4,
-1,
+"",
+134419,
+0,
+0,
 },
 [4893] = {
 "|cffffffff|Hitem:4893::::::::14:::::::::|h[Savannah Lion Tusk]|h|r",
@@ -7569,21 +7569,21 @@ RareScannerDB = {
 4,
 1,
 },
-[204912] = {
-"|cff1eff00|Hitem:204912::::::::8:::::::::|h[Rune of Grace]|h|r",
+[2958] = {
+"|cff1eff00|Hitem:2958::::::::18:::::::::|h[Journeyman's Pants]|h|r",
 2,
-"",
-134419,
-0,
-0,
-},
-[8747] = {
-"|cff9d9d9d|Hitem:8747::::::::32:::::::::|h[Hardened Leather Helm]|h|r",
-0,
-"INVTYPE_HEAD",
-133117,
+"INVTYPE_LEGS",
+134590,
 4,
+1,
+},
+[9770] = {
+"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r",
 2,
+"INVTYPE_CLOAK",
+133769,
+4,
+1,
 },
 [4759] = {
 "|cffffffff|Hitem:4759::::::::3:::::::::|h[Plainstrider Talon]|h|r",

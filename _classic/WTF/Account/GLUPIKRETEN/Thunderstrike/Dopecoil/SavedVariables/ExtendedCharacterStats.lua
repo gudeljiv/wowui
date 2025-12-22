@@ -101,7 +101,6 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedArmorPenetration",
 ["textColor"] = "009688",
 },
-["refName"] = "RangedHeader",
 ["crit"] = {
 ["statColor"] = "d32f2f",
 ["display"] = true,
@@ -109,6 +108,7 @@ ExtendedCharacterStats = {
 ["refName"] = "RangedCritChance",
 ["textColor"] = "ff6659",
 },
+["refName"] = "RangedHeader",
 },
 ["defense"] = {
 ["critImmunity"] = {
@@ -139,11 +139,10 @@ ExtendedCharacterStats = {
 ["text"] = "Parry Chance",
 ["refName"] = "ParryChance",
 },
-["defenseRating"] = {
+["avoidance"] = {
 ["display"] = true,
-["isTbcOnly"] = true,
-["refName"] = "DefenseRating",
-["text"] = "Defense Rating",
+["text"] = "Avoidance",
+["refName"] = "Avoidance",
 },
 ["critReduction"] = {
 ["display"] = true,
@@ -151,21 +150,22 @@ ExtendedCharacterStats = {
 ["refName"] = "CritReduction",
 ["text"] = "Crit Reduction",
 },
-["armor"] = {
 ["display"] = true,
-["text"] = "Armor",
-["refName"] = "Armor",
-},
 ["dodge"] = {
 ["display"] = true,
 ["text"] = "Dodge Chance",
 ["refName"] = "DodgeChance",
 },
+["armor"] = {
 ["display"] = true,
-["avoidance"] = {
+["text"] = "Armor",
+["refName"] = "Armor",
+},
+["defenseRating"] = {
 ["display"] = true,
-["text"] = "Avoidance",
-["refName"] = "Avoidance",
+["isTbcOnly"] = true,
+["refName"] = "DefenseRating",
+["text"] = "Defense Rating",
 },
 ["refName"] = "DefenseHeader",
 ["blockValue"] = {
@@ -295,12 +295,12 @@ ExtendedCharacterStats = {
 ["refName"] = "ShadowHitBonus",
 ["textColor"] = "e254ff",
 },
-["shadowMissChance"] = {
-["statColor"] = "aa00ff",
+["frostMissChance"] = {
+["statColor"] = "00b0ff",
 ["display"] = true,
-["text"] = "Shadow Miss",
-["refName"] = "ShadowMissChance",
-["textColor"] = "e254ff",
+["text"] = "Frost Miss",
+["refName"] = "FrostMissChance",
+["textColor"] = "69e2ff",
 },
 ["frostMissChanceBoss"] = {
 ["statColor"] = "00b0ff",
@@ -369,19 +369,19 @@ ExtendedCharacterStats = {
 ["textColor"] = "ff9e40",
 },
 ["text"] = "Hit",
-["shadowMissChanceBoss"] = {
-["statColor"] = "aa00ff",
-["display"] = true,
-["text"] = "Shadow Miss (Lvl + 3)",
-["refName"] = "ShadowMissChanceBoss",
-["textColor"] = "e254ff",
-},
 ["physicalMissChanceBoss"] = {
 ["statColor"] = "cfcfcf",
 ["display"] = true,
 ["text"] = "Physical Miss (Lvl + 3)",
 ["refName"] = "PhysicalMissChanceBoss",
 ["textColor"] = "9e9e9e",
+},
+["shadowMissChanceBoss"] = {
+["statColor"] = "aa00ff",
+["display"] = true,
+["text"] = "Shadow Miss (Lvl + 3)",
+["refName"] = "ShadowMissChanceBoss",
+["textColor"] = "e254ff",
 },
 ["holyMissChance"] = {
 ["statColor"] = "ffd600",
@@ -426,12 +426,12 @@ ExtendedCharacterStats = {
 ["textColor"] = "ff9e40",
 },
 ["refName"] = "SpellHitHeader",
-["frostMissChance"] = {
-["statColor"] = "00b0ff",
+["shadowMissChance"] = {
+["statColor"] = "aa00ff",
 ["display"] = true,
-["text"] = "Frost Miss",
-["refName"] = "FrostMissChance",
-["textColor"] = "69e2ff",
+["text"] = "Shadow Miss",
+["refName"] = "ShadowMissChance",
+["textColor"] = "e254ff",
 },
 },
 ["nature"] = {
@@ -636,13 +636,6 @@ ExtendedCharacterStats = {
 ["textColor"] = "c8a600",
 },
 ["text"] = "Melee",
-["expertise"] = {
-["display"] = true,
-["isTbcOnly"] = true,
-["refName"] = "Expertise",
-["text"] = "Expertise",
-},
-["refName"] = "MeleeHeader",
 ["penetrationRating"] = {
 ["text"] = "Armor Pen. Rating",
 ["statColor"] = "00766c",
@@ -651,13 +644,18 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeArmorPenetrationRating",
 ["textColor"] = "009688",
 },
-["hasteRating"] = {
-["text"] = "Haste Rating",
-["statColor"] = "ffd740",
+["refName"] = "MeleeHeader",
+["expertise"] = {
 ["display"] = true,
 ["isTbcOnly"] = true,
-["refName"] = "MeleeHasteRating",
-["textColor"] = "c8a600",
+["refName"] = "Expertise",
+["text"] = "Expertise",
+},
+["expertiseRating"] = {
+["display"] = true,
+["isTbcOnly"] = true,
+["refName"] = "ExpertiseRating",
+["text"] = "Expertise Rating",
 },
 ["hit"] = {
 ["bossLevel"] = {
@@ -710,11 +708,13 @@ ExtendedCharacterStats = {
 ["refName"] = "MeleeCritChance",
 ["textColor"] = "ff6659",
 },
-["expertiseRating"] = {
+["hasteRating"] = {
+["text"] = "Haste Rating",
+["statColor"] = "ffd740",
 ["display"] = true,
 ["isTbcOnly"] = true,
-["refName"] = "ExpertiseRating",
-["text"] = "Expertise Rating",
+["refName"] = "MeleeHasteRating",
+["textColor"] = "c8a600",
 },
 },
 },

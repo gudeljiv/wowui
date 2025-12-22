@@ -4589,7 +4589,10 @@ function MopNpcFixes.Load()
             [npcKeys.zoneID] = zoneIDs.KRASARANG_WILDS,
         },
         [67660] = { -- Archmage Aethas Sunreaver
-            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{32.63,32.88,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY}}},
+                [zoneIDs.ISLE_OF_THUNDER] = {
+                    {33,52.8,phases.IOT_HORDE_BOAT}, -- needs better coords
+                    {46.87,66.91,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY},
+                },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
         [67662] = { -- High Arcanist Savor
@@ -5838,7 +5841,8 @@ function MopNpcFixes.Load()
         [69371] = { -- Amalia Penshire
             [npcKeys.spawns] = {
                 [zoneIDs.ISLE_OF_THUNDER] = {
-                    {32.54,33.02,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY},
+                    {33,52.8,phases.IOT_HORDE_BOAT}, -- needs better coords
+                    {47.01,66.73,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY},
                 },
             },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
@@ -5867,11 +5871,17 @@ function MopNpcFixes.Load()
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
         [69425] = { -- Sunwalker Dezco
-            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{32.68,32.79,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY}}},
+                [zoneIDs.ISLE_OF_THUNDER] = {
+                    {33,52.8,phases.IOT_HORDE_BOAT}, -- needs better coords
+                    {46.72,66.75,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY},
+                },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
         [69433] = { -- Magistrix Saia
-            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{32.78,32.67,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY}}},
+                [zoneIDs.ISLE_OF_THUNDER] = {
+                    {33,52.8,phases.IOT_HORDE_BOAT}, -- needs better coords
+                    {46.92,66.89,phases.IOT_HORDE_DAWNSEEKER_PROMONTORY},
+                },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
         [69617] = { -- Lor'themar Theron
@@ -5891,6 +5901,9 @@ function MopNpcFixes.Load()
             [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{44.01,68.91}}},
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
+        [69666] = { -- Zur'chaka the Bonecrafter
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{41.93,79.47}}},
+        },
         [69668] = { -- Danara Silverglass
             [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{40.15,59.29}}},
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
@@ -5903,7 +5916,7 @@ function MopNpcFixes.Load()
             [npcKeys.spawns] = {
                 [zoneIDs.ISLE_OF_THUNDER] = {
                     {31.46,83.24,phases.IOT_ALLIANCE_BOAT},
-                    {63.31,72.01,phases.IOT_ALLIANCE_VIOLET_RISE},
+                    {42.15,66.44,phases.IOT_ALLIANCE_VIOLET_RISE},
                 },
             },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
@@ -5912,7 +5925,7 @@ function MopNpcFixes.Load()
             [npcKeys.spawns] = {
                 [zoneIDs.ISLE_OF_THUNDER] = {
                     {31.66,83.21,phases.IOT_ALLIANCE_BOAT},
-                    {63.41,72.06,phases.IOT_ALLIANCE_VIOLET_RISE},
+                    {42.3,66.3,phases.IOT_ALLIANCE_VIOLET_RISE},
                 },
             },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
@@ -6263,7 +6276,7 @@ function MopNpcFixes.Load()
             [npcKeys.spawns] = {
                 [zoneIDs.ISLE_OF_THUNDER] = {
                     {31.46,83.24,phases.IOT_ALLIANCE_BOAT},
-                    {63.37,72.29,phases.IOT_ALLIANCE_VIOLET_RISE},
+                    {42.22,66.33,phases.IOT_ALLIANCE_VIOLET_RISE},
                 },
             },
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,

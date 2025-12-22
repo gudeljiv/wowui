@@ -10,8 +10,8 @@ nMainbar: enabled
 nMinimap: enabled
 !Beautycase: enabled
 !Colorz: enabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 Align: enabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic_Collections: enabled
@@ -88,7 +88,7 @@ SpeedyAutoLoot: enabled
 BagBrother: enabled
 Bagnon: enabled
 Bagnon_Config: enabled
-AdiBags-ItemRackSets: disabled
+AdiBags-ItemRackSets: enabled
 Bagnon_Masque: enabled
 ClassicBestiary: enabled
 LFGBulletinBoard: enabled
@@ -144,6 +144,7 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: enabled
+Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
+Buffet: enabled

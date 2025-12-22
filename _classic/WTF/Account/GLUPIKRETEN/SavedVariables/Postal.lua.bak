@@ -24,12 +24,12 @@ Postal3DB = {
 "Dopenac|Lone Wolf|Horde|16|PRIEST",
 "Doperage|Living Flame|Horde|42|WARRIOR",
 "Doperage|Lone Wolf|Horde|42|WARRIOR",
-"Doperage|Thunderstrike|Horde|5|WARRIOR",
+"Doperage|Thunderstrike|Horde|6|WARRIOR",
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Living Flame|Horde|49|HUNTER",
 "Dopesnare|Lone Wolf|Horde|49|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopesnare|Thunderstrike|Horde|3|HUNTER",
+"Dopesnare|Thunderstrike|Horde|6|HUNTER",
 "Dopestab|Living Flame|Horde|41|ROGUE",
 "Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Living Flame|Horde|1|HUNTER",
@@ -148,6 +148,12 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopecoil|Thunderstrike|Horde",
+"Dopesnare|Thunderstrike|Horde",
+},
+},
 },
 ["Dopedot - Lone Wolf"] = {
 },
@@ -264,6 +270,11 @@ Postal3DB = {
 ["Battlenac - Zandalar Tribe"] = {
 },
 ["Dopecoil - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopeclaw|Thunderstrike|Horde",
+},
+},
 },
 ["Dopebolt - Living Flame"] = {
 },
@@ -297,8 +308,18 @@ Postal3DB = {
 },
 },
 ["Dopesnare - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopeclaw|Thunderstrike|Horde",
+},
+},
 },
 ["Doperage - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopecure|Thunderstrike|Horde",
+},
+},
 },
 },
 }

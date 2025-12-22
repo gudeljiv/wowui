@@ -100,6 +100,9 @@ local SimpleLayeredRegion = addon:GetClass("SimpleLayeredRegion")
 local bagSlots = {}
 
 function containerProto:OnCreate(name, isBank, bagObject)
+
+	self:CreateBeautyBorder(8)
+
 	self:SetParent(UIParent)
 	containerParentProto.OnCreate(self)
 	Mixin(self, BackdropTemplateMixin)
@@ -200,6 +203,7 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	searchBox:SetFrameLevel(frameLevel)
 	headerRightRegion:AddWidget(searchBox, -10, 130, 0, -1)
 	tinsert(_G.ITEM_SEARCHBAR_LIST, searchBox:GetName())
+	searchBox:Hide()
 
 	local title = self:CreateFontString(self:GetName().."Title","OVERLAY")
 	self.Title = title

@@ -2697,13 +2697,13 @@ RareScannerDB = {
 15,
 0,
 },
-[8747] = {
-"|cff9d9d9d|Hitem:8747::::::::32:::::::::|h[Hardened Leather Helm]|h|r",
-0,
-"INVTYPE_HEAD",
-133117,
-4,
+[9770] = {
+"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r",
 2,
+"INVTYPE_CLOAK",
+133769,
+4,
+1,
 },
 [4861] = {
 "|cff1eff00|Hitem:4861::::::::5:::::::::|h[Sleek Feathered Tunic]|h|r",
@@ -2721,13 +2721,13 @@ RareScannerDB = {
 15,
 0,
 },
-[204912] = {
-"|cff1eff00|Hitem:204912::::::::8:::::::::|h[Rune of Grace]|h|r",
+[2958] = {
+"|cff1eff00|Hitem:2958::::::::18:::::::::|h[Journeyman's Pants]|h|r",
 2,
-"",
-134419,
-0,
-0,
+"INVTYPE_LEGS",
+134590,
+4,
+1,
 },
 [9850] = {
 "|cff1eff00|Hitem:9850::::::::36:::::::::|h[Conjurer's Mantle]|h|r",
@@ -2761,13 +2761,13 @@ RareScannerDB = {
 4,
 3,
 },
-[9770] = {
-"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r",
-2,
-"INVTYPE_CLOAK",
-133769,
+[8747] = {
+"|cff9d9d9d|Hitem:8747::::::::32:::::::::|h[Hardened Leather Helm]|h|r",
+0,
+"INVTYPE_HEAD",
+133117,
 4,
-1,
+2,
 },
 [4893] = {
 "|cffffffff|Hitem:4893::::::::14:::::::::|h[Savannah Lion Tusk]|h|r",
@@ -6569,13 +6569,13 @@ RareScannerDB = {
 4,
 3,
 },
-[2958] = {
-"|cff1eff00|Hitem:2958::::::::18:::::::::|h[Journeyman's Pants]|h|r",
+[204912] = {
+"|cff1eff00|Hitem:204912::::::::8:::::::::|h[Rune of Grace]|h|r",
 2,
-"INVTYPE_LEGS",
-134590,
-4,
-1,
+"",
+134419,
+0,
+0,
 },
 [1478] = {
 "|cffffffff|Hitem:1478::::::::25:::::::::|h[Scroll of Protection II]|h|r",

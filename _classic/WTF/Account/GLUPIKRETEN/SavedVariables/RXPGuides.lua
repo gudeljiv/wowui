@@ -861,25 +861,7 @@ nil,
 ["Dopecure - Thunderstrike"] = {
 ["enableGroupQuests"] = false,
 ["soloSelfFound"] = true,
-["showDangerousMobsMap"] = false,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-84.80022430419922,
-43.00002288818359,
-},
-},
+["frameHeight"] = 125.0000228881836,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -913,13 +895,31 @@ nil,
 "CENTER",
 nil,
 "CENTER",
-441.284912109375,
-2.06388258934021,
+441.0000305175781,
+2,
 },
+},
+},
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+84.80022430419922,
+43.00002288818359,
 },
 },
 ["itemUpgradeSpec"] = "Discipline ",
-["frameHeight"] = 125.0000228881836,
+["showDangerousMobsMap"] = false,
 },
 ["Dopedot - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
@@ -2683,14 +2683,14 @@ nil,
 nil,
 "CENTER",
 467.602294921875,
--13.73038768768311,
+-13.73038864135742,
 },
 },
 },
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 84.80022430419922,
-68.00004577636719,
+18.00000190734863,
 },
 ["RXPFrame"] = {
 235.0001068115234,

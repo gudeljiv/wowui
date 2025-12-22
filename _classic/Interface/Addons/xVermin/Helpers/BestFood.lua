@@ -147,55 +147,57 @@ function NeedsFoodBadly:UpdateMacros()
 	best.healthstone = self:Sorted(best.healthstone, self.BetterHealthstone)
 	best.manaGem = self:Sorted(best.manaGem, self.BetterManaGem)
 	best.bandage = self:Sorted(best.bandage, self.BetterBandage)
-	local foodMacro =
-		defaultFoodMacro:gsub(
-		'<%a+>',
-		{
-			['<food>'] = 'item:' .. tostring(best.food[1] and best.food[1].id or 00),
-			['<buffFood>'] = 'item:' .. tostring(best.buffFood[1] and best.buffFood[1].id or 0),
-			['<bandage>'] = 'item:' .. tostring(best.bandage[1] and best.bandage[1].id or 0),
-			['<hPotions>'] = self:BuildSequence(best.healthstone, best.hPotion)
-		}
-	)
-	local drinkMacro =
-		defaultDrinkMacro:gsub(
-		'<%a+>',
-		{
-			['<drink>'] = 'item:' .. tostring(best.drink[1] and best.drink[1].id or 0),
-			['<buffDrink>'] = 'item:' .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
-			['<manaBuff>'] = 'item:' .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
-			['<mPotions>'] = self:BuildSequence(best.manaGem, best.mPotion)
-			--["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
-		}
-	)
-	local healthstoneMacro =
-		defaultHealthstoneMacro:gsub(
-		'<%a+>',
-		{
-			['<healthstone>'] = 'item:' .. tostring(best.healthstone[1] and best.healthstone[1].id or 0)
-		}
-	)
-	local healthPotionMacro =
-		defaultHealthPotionMacro:gsub(
-		'<%a+>',
-		{
-			['<hPotion>'] = 'item:' .. tostring(best.hPotion[1] and best.hPotion[1].id or 0)
-		}
-	)
-	local millingMacro =
-		defaultMillingMacro:gsub(
-		'<%a+>',
-		{
-			['<herb>'] = 'item:' .. tostring(best.herb[1] and best.herb[1].id or 0)
-		}
-	)
-	local prospectingMacro =
-		defaultProspectingMacro:gsub(
-		'<%a+>',
-		{
-			['<ore>'] = 'item:' .. tostring(best.ore[1] and best.ore[1].id or 0)
-		}
-	)
+
+	
+	-- local foodMacro =
+	-- 	defaultFoodMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<food>'] = 'item:' .. tostring(best.food[1] and best.food[1].id or 00),
+	-- 		['<buffFood>'] = 'item:' .. tostring(best.buffFood[1] and best.buffFood[1].id or 0),
+	-- 		['<bandage>'] = 'item:' .. tostring(best.bandage[1] and best.bandage[1].id or 0),
+	-- 		['<hPotions>'] = self:BuildSequence(best.healthstone, best.hPotion)
+	-- 	}
+	-- )
+	-- local drinkMacro =
+	-- 	defaultDrinkMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<drink>'] = 'item:' .. tostring(best.drink[1] and best.drink[1].id or 0),
+	-- 		['<buffDrink>'] = 'item:' .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
+	-- 		['<manaBuff>'] = 'item:' .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
+	-- 		['<mPotions>'] = self:BuildSequence(best.manaGem, best.mPotion)
+	-- 		--["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
+	-- 	}
+	-- )
+	-- local healthstoneMacro =
+	-- 	defaultHealthstoneMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<healthstone>'] = 'item:' .. tostring(best.healthstone[1] and best.healthstone[1].id or 0)
+	-- 	}
+	-- )
+	-- local healthPotionMacro =
+	-- 	defaultHealthPotionMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<hPotion>'] = 'item:' .. tostring(best.hPotion[1] and best.hPotion[1].id or 0)
+	-- 	}
+	-- )
+	-- local millingMacro =
+	-- 	defaultMillingMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<herb>'] = 'item:' .. tostring(best.herb[1] and best.herb[1].id or 0)
+	-- 	}
+	-- )
+	-- local prospectingMacro =
+	-- 	defaultProspectingMacro:gsub(
+	-- 	'<%a+>',
+	-- 	{
+	-- 		['<ore>'] = 'item:' .. tostring(best.ore[1] and best.ore[1].id or 0)
+	-- 	}
+	-- )
 
 	-- CreateOrUpdateMacro('Food', foodMacro)
 	-- CreateOrUpdateMacro('Drink', drinkMacro)
