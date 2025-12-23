@@ -304,6 +304,12 @@ function MopQuestFixes.Load()
             [questKeys.objectives] = {{{44937}},nil,nil,nil,nil,{{172}}},
             [questKeys.extraObjectives] = {},
         },
+        [10277] = { -- The Caverns of Time
+            [questKeys.triggerEnd] = {"Caverns of Time Explained", {[zoneIDs.CAVERNS_OF_TIME]={{44.31,38.73}}}},
+        },
+        [12515] = { -- Nice Hat...
+            [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.NIGHT_ELF + raceIDs.DRAENEI + raceIDs.TROLL + raceIDs.TAUREN + raceIDs.UNDEAD + raceIDs.BLOOD_ELF + raceIDs.GOBLIN + raceIDs.WORGEN + raceIDs.PANDAREN,
+        },
         [13408] = { -- Hellfire Fortifications
             [questKeys.requiredClasses] = 2015, -- all classes except DK
         },
@@ -497,6 +503,10 @@ function MopQuestFixes.Load()
         [25037] = { -- Crab Fishin'
             [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.MAGE + classIDs.WARLOCK + classIDs.ROGUE + classIDs.PRIEST + classIDs.HUNTER + classIDs.DRUID + classIDs.SHAMAN + classIDs.MONK,
             [questKeys.preQuestSingle] = {24643,24755,24763,24769,24775,24781,24787,26277,31163},
+        },
+        [25047] = { -- Broken Panther Figurine
+            [questKeys.requiredClasses] = classIDs.HUNTER + classIDs.ROGUE + classIDs.SHAMAN + classIDs.DRUID + classIDs.MONK,
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [25064] = { -- Moraya
             [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.MAGE + classIDs.WARLOCK + classIDs.ROGUE + classIDs.PRIEST + classIDs.HUNTER + classIDs.DRUID + classIDs.SHAMAN + classIDs.MONK,
@@ -812,6 +822,22 @@ function MopQuestFixes.Load()
         [28756] = { -- Aberrations of Bone
             [questKeys.objectives] = {{{59153}}},
             [questKeys.zoneOrSort] = zoneIDs.SCHOLOMANCE_MOP,
+        },
+        [28775] = { -- Broken Serpent Figurine
+            [questKeys.requiredClasses] = classIDs.PALADIN + classIDs.PRIEST + classIDs.SHAMAN + classIDs.MAGE + classIDs.WARLOCK + classIDs.DRUID + classIDs.MONK,
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
+        },
+        [28776] = { -- Broken Earthen Figurine
+            [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.PALADIN + classIDs.DEATH_KNIGHT + classIDs.DRUID + classIDs.MONK,
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
+        },
+        [28777] = { -- Broken Owl Figurine
+            [questKeys.requiredClasses] = classIDs.PALADIN + classIDs.PRIEST + classIDs.SHAMAN + classIDs.DRUID + classIDs.MONK,
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
+        },
+        [28778] = { -- Broken Boar Figurine
+            [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.PALADIN + classIDs.DEATH_KNIGHT,
+            [questKeys.requiredSkill] = {profKeys.JEWELCRAFTING,475},
         },
         [28798] = { -- Waters of Elune
             [questKeys.requiredSkill] = {},
