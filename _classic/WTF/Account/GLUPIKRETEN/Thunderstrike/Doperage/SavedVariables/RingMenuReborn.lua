@@ -5,10 +5,11 @@ RadialWheelDB = {
 }
 RadialWheelProfiles = {
 {
-["rotation"] = 0,
-["dismissOnUse"] = true,
-["bgSize"] = 1.5,
+["dismissOnUse"] = false,
 ["slotStart"] = 13,
+["bgSize"] = 1.5,
+["rotation"] = 0,
+["binding"] = "J",
 ["bgTint"] = {
 ["red"] = 0,
 ["blue"] = 0,
