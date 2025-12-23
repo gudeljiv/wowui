@@ -9,10 +9,17 @@ DriftPoints = {
 },
 ["AuctionFrame"] = {
 ["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -103.4711837768555,
+["xOfs"] = 280.95263671875,
+},
+["AddonList"] = {
+["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
-["yOfs"] = 133.3461608886719,
-["xOfs"] = -23.15311431884766,
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
 },
 ["PlayerTalentFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -35,12 +42,12 @@ DriftPoints = {
 ["yOfs"] = -87.59791564941406,
 ["xOfs"] = -0,
 },
-["SideDressUpFrame"] = {
+["GossipFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -156.3387756347656,
-["xOfs"] = -94.64599609375,
+["yOfs"] = -147.9153289794922,
+["xOfs"] = 294.1165466308594,
 },
 ["CraftFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -49,12 +56,12 @@ DriftPoints = {
 ["yOfs"] = -64.31731414794922,
 ["xOfs"] = -297.497314453125,
 },
-["ColorPickerFrame"] = {
+["MacroFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
-["yOfs"] = 99.68265533447266,
-["xOfs"] = 479.9994812011719,
+["point"] = "TOPRIGHT",
+["relativePoint"] = "TOPRIGHT",
+["yOfs"] = -134.5184936523438,
+["xOfs"] = -193.5973510742188,
 },
 ["QuestFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -70,19 +77,19 @@ DriftPoints = {
 ["yOfs"] = -87.59791564941406,
 ["xOfs"] = 6.349202632904053,
 },
-["GossipFrame"] = {
+["ColorPickerFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 99.68265533447266,
+["xOfs"] = 479.9994812011719,
+},
+["SideDressUpFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -147.9153289794922,
-["xOfs"] = 294.1165466308594,
-},
-["AddonList"] = {
-["relativeTo"] = "UIParent",
-["point"] = "LEFT",
-["relativePoint"] = "LEFT",
-["yOfs"] = 173.2061920166016,
-["xOfs"] = 196.9841613769531,
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
 },
 }
 DriftScales = {
@@ -93,18 +100,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["windowsDisabled"] = false,
+["scaleCtrlKeyEnabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["scaleCtrlKeyEnabled"] = false,
-["bagsDisabled"] = true,
-["objectivesDisabled"] = true,
-["miscellaneousDisabled"] = true,
-["arenaDisabled"] = true,
-["dragCtrlKeyEnabled"] = false,
-["buttonsDisabled"] = true,
-["dragShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
 ["scaleShiftKeyEnabled"] = false,
+["windowsDisabled"] = false,
+["objectivesDisabled"] = true,
+["frameScaleIsLocked"] = false,
+["miscellaneousDisabled"] = true,
+["dragCtrlKeyEnabled"] = false,
+["dragShiftKeyEnabled"] = false,
+["buttonsDisabled"] = true,
+["arenaDisabled"] = true,
+["bagsDisabled"] = true,
 ["minimapDisabled"] = true,
 }

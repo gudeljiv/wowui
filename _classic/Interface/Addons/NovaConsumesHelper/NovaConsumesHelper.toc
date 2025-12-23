@@ -1,0 +1,20 @@
+## Interface: 11508, 40402, 50502
+## Notes: Raid consumes helper with one click buff applications via custom hotbar.
+## Title: Nova Consumes Helper
+## Author: Novaspark-Arugal OCE
+## Version: 1.30
+## SavedVariables: NCHdatabase
+
+embeds.xml
+Media\Templates.xml
+Locale\Locales.xml
+NovaConsumesHelper.lua
+DB\Classic_DB.lua
+DB\TBC_DB.lua
+DB\Wrath_DB.lua
+DB\Cata_DB.lua
+DB\MOP_DB.lua
+Modules\Options.lua
+Modules\UI.lua
+Modules\Consumes.lua
+Modules\Protection.lua

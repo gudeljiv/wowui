@@ -1,0 +1,30 @@
+
+NCHdatabase = {
+["namespaces"] = {
+},
+["global"] = {
+["NCHMainFrameAnchor_y"] = -146.0567626953125,
+["NCHMainFrameAnchor_point"] = "LEFT",
+["NCHProtFrameAnchor_y"] = -96.53288269042969,
+["versions"] = {
+},
+["minimapButton"] = false,
+["NCHProtFrameAnchor_point"] = "LEFT",
+["NCHProtFrameAnchor_x"] = -64.69855499267578,
+["minimapIcon"] = {
+["minimapPos"] = 197.7239961858749,
+["hide"] = true,
+},
+["NCHProtFrameAnchor_relativePoint"] = "LEFT",
+["NCHMainFrameAnchor_relativePoint"] = "LEFT",
+["NCHMainFrameAnchor_x"] = -43.11091232299805,
+["buttonsWide"] = 6,
+},
+["profileKeys"] = {
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
+},
+["profiles"] = {
+["Dopeclaw - Thunderstrike"] = {
+},
+},
+}
