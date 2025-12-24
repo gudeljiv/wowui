@@ -2638,8 +2638,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -2648,6 +2646,8 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -2775,8 +2775,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -2785,6 +2783,8 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3085,8 +3085,6 @@ nil,
 },
 ["ROGUE"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
-["Version"] = 11001001,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -4340,6 +4338,8 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
+["Version"] = 11001001,
 },
 ["MAGE"] = {
 ["Groups"] = {
@@ -5025,6 +5025,7 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
+["Version"] = 101600,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -6376,7 +6377,6 @@ nil,
 },
 },
 },
-["Version"] = 101600,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -6398,6 +6398,7 @@ nil,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Version"] = 11020801,
 ["Groups"] = {
 {
@@ -9475,7 +9476,6 @@ nil,
 ["OnlyInCombat"] = true,
 },
 },
-["NumGroups"] = 5,
 },
 ["Dopemend - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -9503,6 +9503,7 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
+["Version"] = 11001001,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -11375,7 +11376,6 @@ nil,
 },
 },
 },
-["Version"] = 11001001,
 },
 ["Dopetrap - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -11400,8 +11400,6 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
-["Version"] = 100900,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -13088,6 +13086,8 @@ nil,
 },
 },
 },
+["Version"] = 100900,
+["NumGroups"] = 5,
 },
 ["PRIEST"] = {
 ["Groups"] = {
@@ -14499,6 +14499,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -14508,7 +14509,6 @@ nil,
 ["n"] = 1,
 },
 ["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -14597,6 +14597,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -14606,7 +14607,6 @@ nil,
 ["n"] = 1,
 },
 ["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -18189,8 +18189,6 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
-["NumGroups"] = 5,
-["Version"] = 101600,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -21610,6 +21608,8 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
+["Version"] = 101600,
 },
 ["Doperage - Living Flame"] = {
 ["Version"] = 11001001,
@@ -21634,8 +21634,6 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
-["Version"] = 11020801,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -23878,6 +23876,8 @@ nil,
 },
 },
 },
+["Version"] = 11020801,
+["NumGroups"] = 5,
 },
 ["Dopede - Stitches"] = {
 ["Version"] = 101600,

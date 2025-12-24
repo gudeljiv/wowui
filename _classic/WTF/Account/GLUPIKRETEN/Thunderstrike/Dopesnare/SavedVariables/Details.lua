@@ -7,12 +7,3129 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 809,
 ["tipo"] = 2,
+["combatId"] = 816,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003771,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 139.001222,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 139.001222,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Drudge"] = true,
+},
+["targets"] = {
+["Kolkar Drudge"] = 139,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766583237,
+["totalabsorbed"] = 0.001222,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 11,
+["targets"] = {
+["Kolkar Drudge"] = 38,
+},
+["n_total"] = 28,
+["n_min"] = 8,
+["g_dmg"] = 10,
+["counter"] = 9,
+["total"] = 38,
+["c_max"] = 0,
+["MISS"] = 5,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Kolkar Drudge"] = 29,
+},
+["n_total"] = 29,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 29,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 4,
+["targets"] = {
+["Kolkar Drudge"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Kolkar Drudge"] = 39,
+},
+["n_total"] = 39,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 39,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 13,
+["targets"] = {
+["Kolkar Drudge"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 13,
+["c_max"] = 0,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766583236,
+["damage_taken"] = 58.001222,
+["start_time"] = 1766583213,
+["delay"] = 0,
+["last_dps"] = 5.79364879959982,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 58.002782,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 58.002782,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-00004BEAE2",
+["on_hold"] = false,
+["damage_from"] = {
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 58,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.002782,
+["fight_component"] = true,
+["end_time"] = 1766583237,
+["aID"] = "3119",
+["nome"] = "Kolkar Drudge",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 9,
+["targets"] = {
+["Dopesnare"] = 58,
+},
+["n_total"] = 58,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 9,
+["MISS"] = 1,
+["total"] = 58,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 7,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[7272] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 0,
+["total"] = 0,
+["c_max"] = 0,
+["id"] = 7272,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 1,
+["c_total"] = 0,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["monster"] = true,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766583234,
+["damage_taken"] = 139.002782,
+["start_time"] = 1766583218,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 816,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 816,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 816,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 15,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
+["nome"] = "Dopesnare",
+["last_event"] = 1766583228,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["nome"] = "Kolkar Drudge",
+["monster"] = true,
+["tipo"] = 4,
+["aID"] = "3119",
+["serial"] = "Creature-0-5210-1-108-3119-00004BEAE2",
+["last_event"] = 0,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 816,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["tempo_start"] = 1766583213,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9456,
+["playerTalents"] = {
+},
+["totals"] = {
+336,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Kolkar Drudge"] = {
+["Dust Cloud"] = 1,
+},
+["Dopesnare"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 3,
+["Arcane Shot"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:33:58",
+["timeEnd"] = 1766583238,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Drudge",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2430.134,
+["CombatEndedAt"] = 2430.134,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 139.001222,
+},
+},
+},
+["end_time"] = 2430.134,
+["mapId"] = 1,
+["combat_id"] = 816,
+["timeStart"] = 1766583213,
+["playing_solo"] = true,
+["contra"] = "Kolkar Drudge",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+139,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:33:33",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Drudge"] = 1,
+},
+["start_time"] = 2405.826,
+["TimeData"] = {
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 815,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 122.008043,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 122.008043,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Drudge"] = true,
+},
+["targets"] = {
+["Kolkar Drudge"] = 122,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582981,
+["totalabsorbed"] = 0.008043,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 38,
+},
+["n_total"] = 38,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 38,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 16,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 54,
+},
+["n_total"] = 27,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 54,
+["c_max"] = 27,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 27,
+["successful_casted"] = 0,
+["c_total"] = 27,
+["n_amt"] = 2,
+["n_max"] = 14,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582980,
+["damage_taken"] = 73.008043,
+["start_time"] = 1766582966,
+["delay"] = 1766582952,
+["last_dps"] = 3.821349379854687,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 118.001507,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 118.001507,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-0000CBEA78",
+["friendlyfire"] = {
+},
+["damage_from"] = {
+["Nokyal"] = true,
+["Caligu"] = true,
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Caligu"] = 45,
+["Dopesnare"] = 73,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.001507,
+["fight_component"] = true,
+["end_time"] = 1766583213,
+["aID"] = "3119",
+["nome"] = "Kolkar Drudge",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Caligu"] = 45,
+["Dopesnare"] = 73,
+},
+["n_total"] = 118,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 17,
+["total"] = 118,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 17,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+[7272] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 0,
+["total"] = 0,
+["c_max"] = 0,
+["id"] = 7272,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 1,
+["c_total"] = 0,
+["n_amt"] = 0,
+["n_max"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766583069,
+["damage_taken"] = 333.001507,
+["start_time"] = 1766583096,
+["delay"] = 1766583069,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 815,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 815,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 815,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["pets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["aID"] = "6111-04889BA2",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 33,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Dopesnare",
+["grupo"] = true,
+["buff_uptime"] = 33,
+["tipo"] = 4,
+["classe"] = "HUNTER",
+["serial"] = "Player-6111-04889BA2",
+["last_event"] = 1766582981,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3119",
+["monster"] = true,
+["nome"] = "Kolkar Drudge",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-0000CBEA78",
+["classe"] = "UNKNOW",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 815,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 2405.028,
+["tempo_start"] = 1766582948,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9455,
+["playerTalents"] = {
+},
+["totals"] = {
+451,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Kolkar Drudge"] = {
+["Dust Cloud"] = 1,
+},
+["Dopesnare"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:29:41",
+["timeEnd"] = 1766582981,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Drudge",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2174.128,
+["CombatEndedAt"] = 2174.128,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 122.008043,
+},
+},
+},
+["end_time"] = 2174.128,
+["mapId"] = 1,
+["combat_id"] = 815,
+["timeStart"] = 1766582949,
+["playing_solo"] = true,
+["contra"] = "Kolkar Drudge",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+122,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:29:09",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Drudge"] = 1,
+},
+["start_time"] = 2141.772,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 814,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 152.002903,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 152.002903,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Outrunner"] = true,
+},
+["targets"] = {
+["Kolkar Outrunner"] = 152,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582883,
+["totalabsorbed"] = 0.002903,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Outrunner"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Outrunner"] = 26,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 26,
+["c_max"] = 26,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 26,
+["successful_casted"] = 0,
+["c_total"] = 26,
+["n_amt"] = 0,
+["n_max"] = 0,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["b_dmg"] = 7,
+["targets"] = {
+["Kolkar Outrunner"] = 110,
+},
+["n_total"] = 110,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 9,
+["total"] = 110,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 9,
+["n_max"] = 14,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582882,
+["damage_taken"] = 27.002903,
+["start_time"] = 1766582866,
+["delay"] = 0,
+["last_dps"] = 9.971326620309835,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 27.007644,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 27.007644,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3120-0000CBEA23",
+["on_hold"] = false,
+["damage_from"] = {
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 27,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.007644,
+["fight_component"] = true,
+["end_time"] = 1766582883,
+["aID"] = "3120",
+["nome"] = "Kolkar Outrunner",
+["spells"] = {
+["_ActorTable"] = {
+[6660] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopesnare"] = 27,
+},
+["n_total"] = 27,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 27,
+["c_max"] = 0,
+["id"] = 6660,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 3,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582878,
+["damage_taken"] = 152.007644,
+["start_time"] = 1766582871,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 814,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 814,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 814,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 15,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["buff_uptime"] = 16,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 16,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["nome"] = "Dopesnare",
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["debuff_uptime_targets"] = {
+},
+["last_event"] = 1766582883,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3120",
+["monster"] = true,
+["nome"] = "Kolkar Outrunner",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-5210-1-108-3120-0000CBEA23",
+["classe"] = "UNKNOW",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 814,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 2140.977,
+["tempo_start"] = 1766582866,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9454,
+["playerTalents"] = {
+},
+["totals"] = {
+179,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Kolkar Outrunner"] = {
+["Shoot"] = 3,
+},
+["Dopesnare"] = {
+["Auto Shot"] = 8,
+["Arcane Shot"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:28:04",
+["timeEnd"] = 1766582884,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Outrunner",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2076.428,
+["CombatEndedAt"] = 2076.428,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 152.002903,
+},
+},
+},
+["end_time"] = 2076.428,
+["mapId"] = 1,
+["combat_id"] = 814,
+["timeStart"] = 1766582867,
+["playing_solo"] = true,
+["contra"] = "Kolkar Outrunner",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+152,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:27:47",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Outrunner"] = 1,
+},
+["start_time"] = 2059.932,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 813,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 134.007337,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 134.007337,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Outrunner"] = true,
+},
+["targets"] = {
+["Kolkar Outrunner"] = 134,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582839,
+["totalabsorbed"] = 0.007337,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Outrunner"] = 12,
+},
+["n_total"] = 12,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 12,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Outrunner"] = 26,
+},
+["n_total"] = 26,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 26,
+["c_max"] = 0,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Outrunner"] = 96,
+},
+["n_total"] = 74,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 7,
+["total"] = 96,
+["c_max"] = 22,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 22,
+["successful_casted"] = 0,
+["c_total"] = 22,
+["n_amt"] = 6,
+["n_max"] = 14,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582839,
+["damage_taken"] = 14.007337,
+["start_time"] = 1766582827,
+["delay"] = 0,
+["last_dps"] = 11.21963638647023,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 14.005409,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 14.005409,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3120-00004BEA23",
+["on_hold"] = false,
+["damage_from"] = {
+["Zelenel"] = true,
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 14,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.005409,
+["fight_component"] = true,
+["end_time"] = 1766582839,
+["aID"] = "3120",
+["nome"] = "Kolkar Outrunner",
+["spells"] = {
+["_ActorTable"] = {
+[6660] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopesnare"] = 14,
+},
+["n_total"] = 14,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 14,
+["c_max"] = 0,
+["id"] = 6660,
+["r_dmg"] = 0,
+["MISS"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 3,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 7,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582836,
+["damage_taken"] = 154.005409,
+["start_time"] = 1766582833,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 813,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 813,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 813,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 12,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["buff_uptime"] = 12,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 12,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 12,
+["nome"] = "Dopesnare",
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["debuff_uptime_targets"] = {
+},
+["last_event"] = 1766582839,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3120",
+["monster"] = true,
+["nome"] = "Kolkar Outrunner",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-5210-1-108-3120-00004BEA23",
+["classe"] = "UNKNOW",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 813,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 2059.178,
+["tempo_start"] = 1766582827,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9453,
+["playerTalents"] = {
+},
+["totals"] = {
+168,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Kolkar Outrunner"] = {
+["Shoot"] = 3,
+},
+["Dopesnare"] = {
+["Auto Shot"] = 6,
+["Arcane Shot"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:27:20",
+["timeEnd"] = 1766582840,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Outrunner",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2032.411,
+["CombatEndedAt"] = 2032.411,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 134.007337,
+},
+},
+},
+["end_time"] = 2032.411,
+["mapId"] = 1,
+["combat_id"] = 813,
+["timeStart"] = 1766582827,
+["playing_solo"] = true,
+["contra"] = "Kolkar Outrunner",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+134,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:27:07",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Outrunner"] = 1,
+},
+["start_time"] = 2020.151,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 812,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 123.008519,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 123.008519,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Drudge"] = true,
+},
+["targets"] = {
+["Kolkar Drudge"] = 123,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582820,
+["totalabsorbed"] = 0.008519,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 2,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 40,
+},
+["n_total"] = 19,
+["n_min"] = 8,
+["g_dmg"] = 21,
+["counter"] = 4,
+["total"] = 40,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 11,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 15,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 13,
+["c_max"] = 0,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 24,
+},
+["n_total"] = 24,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 24,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582819,
+["damage_taken"] = 18.008519,
+["start_time"] = 1766582806,
+["delay"] = 0,
+["last_dps"] = 9.457828617561065,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 18.00634,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 18.00634,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-00004BE9CB",
+["on_hold"] = false,
+["damage_from"] = {
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 18,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00634,
+["fight_component"] = true,
+["end_time"] = 1766582820,
+["aID"] = "3119",
+["nome"] = "Kolkar Drudge",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopesnare"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 6,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 18,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 6,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582816,
+["damage_taken"] = 123.00634,
+["start_time"] = 1766582810,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 812,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 812,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 812,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 13,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["buff_uptime"] = 14,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 14,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 13,
+["nome"] = "Dopesnare",
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["debuff_uptime_targets"] = {
+},
+["last_event"] = 1766582820,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 812,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 2019.427,
+["tempo_start"] = 1766582806,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9452,
+["playerTalents"] = {
+},
+["totals"] = {
+219,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopesnare"] = {
+["Auto Shot"] = 1,
+["Raptor Strike"] = 2,
+["Arcane Shot"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:27:01",
+["timeEnd"] = 1766582821,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Drudge",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 2013.809,
+["CombatEndedAt"] = 2013.809,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 123.008519,
+},
+},
+},
+["end_time"] = 2013.809,
+["mapId"] = 1,
+["combat_id"] = 812,
+["timeStart"] = 1766582807,
+["playing_solo"] = true,
+["contra"] = "Kolkar Drudge",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+123,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:26:47",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Drudge"] = 1,
+},
+["start_time"] = 1999.541,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 811,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 146.002853,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 146.002853,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Drudge"] = true,
+},
+["targets"] = {
+["Kolkar Drudge"] = 146,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582730,
+["totalabsorbed"] = 0.002853,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 51,
+},
+["n_total"] = 44,
+["n_min"] = 7,
+["g_dmg"] = 7,
+["counter"] = 6,
+["total"] = 51,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["n_max"] = 11,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 25,
+},
+["n_total"] = 25,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 25,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 14,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 13,
+["c_max"] = 0,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 37,
+},
+["n_total"] = 37,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 37,
+["c_max"] = 0,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582728,
+["damage_taken"] = 34.002853,
+["start_time"] = 1766582710,
+["delay"] = 0,
+["last_dps"] = 8.081189627497645,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 34.00566,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 34.00566,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-00004BE8DE",
+["on_hold"] = false,
+["damage_from"] = {
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 34,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00566,
+["fight_component"] = true,
+["end_time"] = 1766582730,
+["aID"] = "3119",
+["nome"] = "Kolkar Drudge",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopesnare"] = 34,
+},
+["n_total"] = 34,
+["n_min"] = 8,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 34,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 9,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582724,
+["damage_taken"] = 146.00566,
+["start_time"] = 1766582716,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 811,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 811,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 811,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 15,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["buff_uptime"] = 19,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 19,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 15,
+["nome"] = "Dopesnare",
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["debuff_uptime_targets"] = {
+},
+["last_event"] = 1766582730,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 811,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 1998.986,
+["tempo_start"] = 1766582710,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9451,
+["playerTalents"] = {
+},
+["totals"] = {
+261,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopesnare"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 2,
+["Arcane Shot"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:25:30",
+["timeEnd"] = 1766582730,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Drudge",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 1922.923,
+["CombatEndedAt"] = 1922.923,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 146.002853,
+},
+},
+},
+["end_time"] = 1922.923,
+["mapId"] = 1,
+["combat_id"] = 811,
+["timeStart"] = 1766582711,
+["playing_solo"] = true,
+["contra"] = "Kolkar Drudge",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+146,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:25:11",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Drudge"] = 1,
+},
+["start_time"] = 1903.706,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 810,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "HUNTER",
+["total_without_pet"] = 126.004309,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 126.004309,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6111-04889BA2",
+["damage_from"] = {
+["Kolkar Drudge"] = true,
+},
+["targets"] = {
+["Kolkar Drudge"] = 126,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1766582694,
+["totalabsorbed"] = 0.004309,
+["aID"] = "6111-04889BA2",
+["nome"] = "Dopesnare",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 39,
+},
+["n_total"] = 29,
+["n_min"] = 8,
+["g_dmg"] = 10,
+["counter"] = 5,
+["total"] = 39,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 11,
+["r_amt"] = 0,
+},
+[1978] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 1978,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 4,
+["r_amt"] = 0,
+},
+[2973] = {
+["c_amt"] = 0,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["b_dmg"] = 10,
+["targets"] = {
+["Kolkar Drudge"] = 10,
+},
+["n_total"] = 10,
+["n_min"] = 10,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 10,
+["c_max"] = 0,
+["id"] = 2973,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 10,
+["r_amt"] = 0,
+},
+[3044] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 13,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 13,
+["c_max"] = 0,
+["id"] = 3044,
+["r_dmg"] = 0,
+["spellschool"] = 64,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+[75] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Kolkar Drudge"] = 48,
+},
+["n_total"] = 25,
+["n_min"] = 12,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 48,
+["c_max"] = 23,
+["id"] = 75,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 23,
+["successful_casted"] = 0,
+["c_total"] = 23,
+["n_amt"] = 2,
+["n_max"] = 13,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582692,
+["damage_taken"] = 12.004309,
+["start_time"] = 1766582679,
+["delay"] = 0,
+["last_dps"] = 9.53206059459881,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 12.006206,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 12.006206,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-5210-1-108-3119-0000CBE97B",
+["on_hold"] = false,
+["damage_from"] = {
+["Dopesnare"] = true,
+},
+["targets"] = {
+["Dopesnare"] = 12,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.006206,
+["fight_component"] = true,
+["end_time"] = 1766582694,
+["aID"] = "3119",
+["nome"] = "Kolkar Drudge",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Dopesnare"] = 12,
+},
+["n_total"] = 12,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 12,
+["c_max"] = 0,
+["DODGE"] = 3,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 7,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766582692,
+["damage_taken"] = 126.006206,
+["start_time"] = 1766582684,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 810,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 810,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 810,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1978] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 0,
+["uptime"] = 13,
+["id"] = 1978,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["buff_uptime"] = 15,
+["classe"] = "HUNTER",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[13163] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 15,
+["id"] = 13163,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["debuff_uptime"] = 13,
+["nome"] = "Dopesnare",
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["debuff_uptime_targets"] = {
+},
+["last_event"] = 1766582694,
+["tipo"] = 4,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 810,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
+["CombatStartedAt"] = 1902.884,
+["tempo_start"] = 1766582679,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["combat_counter"] = 9450,
+["playerTalents"] = {
+},
+["totals"] = {
+138,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["player_last_events"] = {
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Dopesnare"] = {
+["Auto Shot"] = 2,
+["Raptor Strike"] = 1,
+["Arcane Shot"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "14:24:54",
+["timeEnd"] = 1766582694,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Kolkar Drudge",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 1886.895,
+["CombatEndedAt"] = 1886.895,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Dopesnare"] = 126.004309,
+},
+},
+},
+["end_time"] = 1886.895,
+["mapId"] = 1,
+["combat_id"] = 810,
+["timeStart"] = 1766582680,
+["playing_solo"] = true,
+["contra"] = "Kolkar Drudge",
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["totals_grupo"] = {
+126,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["data_inicio"] = "14:24:40",
+["cleu_events"] = {
+["n"] = 1,
+},
+["frags"] = {
+["Kolkar Drudge"] = 1,
+},
+["start_time"] = 1872.475,
+["TimeData"] = {
+},
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 809,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -20,6 +3137,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 120.003771,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -29,16 +3147,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Drudge"] = 120,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581970,
+["totalabsorbed"] = 0.003771,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -181,20 +3297,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 9.925870223325129,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581969,
 ["damage_taken"] = 20.003771,
 ["start_time"] = 1766581958,
 ["delay"] = 0,
-["last_event"] = 1766581969,
+["last_dps"] = 9.925870223325129,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00593,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -202,25 +3319,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 20.00593,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3119-0001CBE6A3",
-["aID"] = "3119",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 20,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00593,
+["fight_component"] = true,
 ["end_time"] = 1766581970,
+["aID"] = "3119",
 ["nome"] = "Kolkar Drudge",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -251,75 +3369,76 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581967,
 ["damage_taken"] = 120.00593,
 ["start_time"] = 1766581963,
 ["delay"] = 0,
-["last_event"] = 1766581967,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 809,
 ["tipo"] = 3,
+["combatId"] = 809,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 809,
 ["tipo"] = 7,
+["combatId"] = 809,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 809,
 ["tipo"] = 9,
+["combatId"] = 809,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 11,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 11,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581969,
 ["tipo"] = 4,
+["last_event"] = 1766581969,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 },
 },
 {
-["combatId"] = 809,
 ["tipo"] = 2,
+["combatId"] = 809,
 ["_ActorTable"] = {
 },
 },
 ["boss_hp"] = 1,
+["CombatStartedAt"] = 1871.62,
 ["tempo_start"] = 1766581958,
 ["last_events_tables"] = {
 },
@@ -343,10 +3462,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -384,13 +3503,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -403,9 +3522,7 @@ _detalhes_database = {
 ["combat_id"] = 809,
 ["timeStart"] = 1766581958,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Drudge",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -422,10 +3539,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -438,18 +3555,19 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 1,
 },
 ["start_time"] = 1151.033,
-["contra"] = "Kolkar Drudge",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 808,
 ["tipo"] = 2,
+["combatId"] = 808,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002489,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -457,6 +3575,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 295.002489,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -468,16 +3587,14 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 151,
 ["Kolkar Outrunner"] = 144,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581935,
+["totalabsorbed"] = 0.002489,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -623,20 +3740,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 9.222862783717911,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581935,
 ["damage_taken"] = 73.002489,
 ["start_time"] = 1766581903,
 ["delay"] = 0,
-["last_event"] = 1766581935,
+["last_dps"] = 9.222862783717911,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004169,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -644,25 +3762,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 35.004169,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3119-00004BE667",
-["aID"] = "3119",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 35,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004169,
+["fight_component"] = true,
 ["end_time"] = 1766581935,
+["aID"] = "3119",
 ["nome"] = "Kolkar Drudge",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -694,20 +3813,19 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581918,
 ["damage_taken"] = 151.004169,
 ["start_time"] = 1766581924,
 ["delay"] = 1766581918,
-["last_event"] = 1766581918,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.00895,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -715,11 +3833,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 76.00895,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-00004BE667",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Kiteks"] = true,
 ["Dopesnare"] = true,
@@ -728,14 +3846,15 @@ _detalhes_database = {
 ["Kiteks"] = 38,
 ["Dopesnare"] = 38,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00895,
+["fight_component"] = true,
 ["end_time"] = 1766581958,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -767,84 +3886,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581941,
 ["damage_taken"] = 376.00895,
 ["start_time"] = 1766581925,
 ["delay"] = 1766581941,
-["last_event"] = 1766581941,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 808,
 ["tipo"] = 3,
+["combatId"] = 808,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 808,
 ["tipo"] = 7,
+["combatId"] = 808,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 808,
 ["tipo"] = 9,
+["combatId"] = 808,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 31,
-["appliedamt"] = 3,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 31,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 31,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581935,
 ["tipo"] = 4,
+["last_event"] = 1766581935,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-00004BE627",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-00004BE627",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 808,
 ["tipo"] = 2,
+["combatId"] = 808,
 ["_ActorTable"] = {
 },
 },
@@ -873,10 +3992,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -918,13 +4037,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -937,9 +4056,7 @@ _detalhes_database = {
 ["combat_id"] = 808,
 ["timeStart"] = 1766581904,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Drudge",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -956,10 +4073,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -973,18 +4090,19 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 1,
 },
 ["start_time"] = 1096.391,
-["contra"] = "Kolkar Drudge",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 807,
 ["tipo"] = 2,
+["combatId"] = 807,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005617,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -992,6 +4110,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 284.005617,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -1001,16 +4120,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 284,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581867,
+["totalabsorbed"] = 0.005617,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [1978] = {
 ["c_amt"] = 0,
@@ -1098,20 +4215,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.584379669931069,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581866,
 ["damage_taken"] = 94.005617,
 ["start_time"] = 1766581833,
 ["delay"] = 0,
-["last_event"] = 1766581866,
+["last_dps"] = 8.584379669931069,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003882,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1119,25 +4237,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 94.003882,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-0000CBE646",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 94,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003882,
+["fight_component"] = true,
 ["end_time"] = 1766581867,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -1167,25 +4286,28 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581865,
 ["damage_taken"] = 284.003882,
 ["start_time"] = 1766581834,
 ["delay"] = 0,
-["last_event"] = 1766581865,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 807,
 ["tipo"] = 3,
+["combatId"] = 807,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
+["healing_from"] = {
+["Dopesnare"] = true,
+},
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
@@ -1197,30 +4319,23 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 1,
 ["on_hold"] = false,
+["serial"] = "Player-6111-04889BA2",
 ["totalabsorb"] = 0.008368,
 ["last_hps"] = 2.18358858761396,
-["aID"] = "6111-04889BA2",
-["fight_component"] = true,
 ["targets"] = {
 ["Dopesnare"] = 74,
 },
-["serial"] = "Player-6111-04889BA2",
-["colocacao"] = 1,
 ["totalover_without_pet"] = 0.008368,
-["healing_from"] = {
-["Dopesnare"] = true,
-},
+["tipo"] = 2,
 ["healing_taken"] = 74.008368,
-["grupo"] = true,
-["classe"] = "HUNTER",
+["fight_component"] = true,
 ["end_time"] = 1766581867,
 ["targets_overheal"] = {
 },
-["start_time"] = 1766581859,
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 [439] = {
 ["c_amt"] = 0,
@@ -1248,75 +4363,79 @@ _detalhes_database = {
 ["absorbed"] = 0,
 },
 },
+["tipo"] = 3,
 },
+["grupo"] = true,
+["start_time"] = 1766581859,
+["classe"] = "HUNTER",
 ["custom"] = 0,
 ["last_event"] = 1766581859,
 ["totaldenied"] = 0.008368,
 ["delay"] = 0,
-["tipo"] = 2,
+["aID"] = "6111-04889BA2",
 },
 },
 },
 {
-["combatId"] = 807,
 ["tipo"] = 7,
+["combatId"] = 807,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 807,
 ["tipo"] = 9,
+["combatId"] = 807,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 29,
-["appliedamt"] = 2,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["debuff_uptime_targets"] = {
 },
 ["classe"] = "HUNTER",
 ["fight_component"] = true,
-["grupo"] = true,
 ["debuff_uptime"] = 29,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
+["grupo"] = true,
 ["last_event"] = 1766581865,
+["aID"] = "6111-04889BA2",
+["serial"] = "Player-6111-04889BA2",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-0000CBE646",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-0000CBE646",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 807,
 ["tipo"] = 2,
+["combatId"] = 807,
 ["_ActorTable"] = {
 },
 },
@@ -1345,10 +4464,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1364,8 +4483,8 @@ _detalhes_database = {
 },
 ["Dopesnare"] = {
 ["Auto Shot"] = 16,
-["Healing Potion"] = 1,
 ["Serpent Sting"] = 1,
+["Healing Potion"] = 1,
 ["Arcane Shot"] = 4,
 },
 },
@@ -1390,14 +4509,14 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 ["Dopesnare"] = 74.008368,
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1410,9 +4529,7 @@ _detalhes_database = {
 ["combat_id"] = 807,
 ["timeStart"] = 1766581834,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -1429,10 +4546,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1445,18 +4562,19 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 2,
 },
 ["start_time"] = 1026.776,
-["contra"] = "Kolkar Outrunner",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 806,
 ["tipo"] = 2,
+["combatId"] = 806,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002787,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -1464,6 +4582,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 134.002787,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -1473,16 +4592,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Drudge"] = 134,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581830,
+["totalabsorbed"] = 0.002787,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1626,20 +4743,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.745205703843908,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581829,
 ["damage_taken"] = 26.002787,
 ["start_time"] = 1766581814,
 ["delay"] = 0,
-["last_event"] = 1766581829,
+["last_dps"] = 8.745205703843908,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004276,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1647,25 +4765,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 26.004276,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3119-00004BE627",
-["aID"] = "3119",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 26,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004276,
+["fight_component"] = true,
 ["end_time"] = 1766581830,
+["aID"] = "3119",
 ["nome"] = "Kolkar Drudge",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1697,71 +4816,71 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581826,
 ["damage_taken"] = 134.004276,
 ["start_time"] = 1766581818,
 ["delay"] = 0,
-["last_event"] = 1766581826,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 806,
 ["tipo"] = 3,
+["combatId"] = 806,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 806,
 ["tipo"] = 7,
+["combatId"] = 806,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 806,
 ["tipo"] = 9,
+["combatId"] = 806,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581829,
 ["tipo"] = 4,
+["last_event"] = 1766581829,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 },
 },
 {
-["combatId"] = 806,
 ["tipo"] = 2,
+["combatId"] = 806,
 ["_ActorTable"] = {
 },
 },
@@ -1790,10 +4909,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1831,13 +4950,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1850,9 +4969,7 @@ _detalhes_database = {
 ["combat_id"] = 806,
 ["timeStart"] = 1766581814,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Drudge",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -1869,10 +4986,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1885,18 +5002,19 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 1,
 },
 ["start_time"] = 1007.141,
-["contra"] = "Kolkar Drudge",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 805,
 ["tipo"] = 2,
+["combatId"] = 805,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006487,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -1904,6 +5022,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 143.006487,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -1913,16 +5032,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Drudge"] = 143,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581799,
+["totalabsorbed"] = 0.006487,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2066,20 +5183,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.644009127175964,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581798,
 ["damage_taken"] = 33.006487,
 ["start_time"] = 1766581782,
 ["delay"] = 0,
-["last_event"] = 1766581798,
+["last_dps"] = 8.644009127175964,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005788,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2087,25 +5205,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 33.005788,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3119-0001CBE5C4",
-["aID"] = "3119",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 33,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005788,
+["fight_component"] = true,
 ["end_time"] = 1766581799,
+["aID"] = "3119",
 ["nome"] = "Kolkar Drudge",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2163,84 +5282,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581794,
 ["damage_taken"] = 143.005788,
 ["start_time"] = 1766581786,
 ["delay"] = 0,
-["last_event"] = 1766581794,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 805,
 ["tipo"] = 3,
+["combatId"] = 805,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 805,
 ["tipo"] = 7,
+["combatId"] = 805,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 805,
 ["tipo"] = 9,
+["combatId"] = 805,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581797,
 ["tipo"] = 4,
+["last_event"] = 1766581797,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3119-0001CBE5C4",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3119",
+["fight_component"] = true,
 ["nome"] = "Kolkar Drudge",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3119-0001CBE5C4",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 805,
 ["tipo"] = 2,
+["combatId"] = 805,
 ["_ActorTable"] = {
 },
 },
@@ -2269,10 +5388,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2313,13 +5432,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2332,9 +5451,7 @@ _detalhes_database = {
 ["combat_id"] = 805,
 ["timeStart"] = 1766581783,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Drudge",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -2351,10 +5468,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2367,18 +5484,19 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 1,
 },
 ["start_time"] = 975.165,
-["contra"] = "Kolkar Drudge",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 804,
 ["tipo"] = 2,
+["combatId"] = 804,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002071,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -2386,6 +5504,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 138.002071,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -2395,16 +5514,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 138,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581771,
+["totalabsorbed"] = 0.002071,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [1978] = {
 ["c_amt"] = 0,
@@ -2520,20 +5637,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 9.86222189666258,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581770,
 ["damage_taken"] = 22.002071,
 ["start_time"] = 1766581756,
 ["delay"] = 0,
-["last_event"] = 1766581770,
+["last_dps"] = 9.86222189666258,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00406,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2541,25 +5659,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 22.00406,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-00004BE5E8",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 22,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00406,
+["fight_component"] = true,
 ["end_time"] = 1766581771,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -2589,84 +5708,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581768,
 ["damage_taken"] = 138.00406,
 ["start_time"] = 1766581760,
 ["delay"] = 0,
-["last_event"] = 1766581768,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 804,
 ["tipo"] = 3,
+["combatId"] = 804,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 804,
 ["tipo"] = 7,
+["combatId"] = 804,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 804,
 ["tipo"] = 9,
+["combatId"] = 804,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 14,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 14,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 14,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581770,
 ["tipo"] = 4,
+["last_event"] = 1766581770,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-00004BE5E8",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-00004BE5E8",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 804,
 ["tipo"] = 2,
+["combatId"] = 804,
 ["_ActorTable"] = {
 },
 },
@@ -2695,10 +5814,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2738,13 +5857,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2757,9 +5876,7 @@ _detalhes_database = {
 ["combat_id"] = 804,
 ["timeStart"] = 1766581757,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -2776,10 +5893,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2792,18 +5909,19 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 1,
 },
 ["start_time"] = 949.581,
-["contra"] = "Kolkar Outrunner",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 803,
 ["tipo"] = 2,
+["combatId"] = 803,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005942,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -2811,6 +5929,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 132.005942,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -2820,16 +5939,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 132,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581736,
+["totalabsorbed"] = 0.005942,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [3044] = {
 ["c_amt"] = 0,
@@ -2945,20 +6062,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.702349660491803,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581735,
 ["damage_taken"] = 27.005942,
 ["start_time"] = 1766581720,
 ["delay"] = 0,
-["last_event"] = 1766581735,
+["last_dps"] = 8.702349660491803,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007554,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2966,25 +6084,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 27.007554,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-0000CBE58E",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 27,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007554,
+["fight_component"] = true,
 ["end_time"] = 1766581736,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -3014,84 +6133,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581731,
 ["damage_taken"] = 132.007554,
 ["start_time"] = 1766581721,
 ["delay"] = 0,
-["last_event"] = 1766581731,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 803,
 ["tipo"] = 3,
+["combatId"] = 803,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 803,
 ["tipo"] = 7,
+["combatId"] = 803,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 803,
 ["tipo"] = 9,
+["combatId"] = 803,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581735,
 ["tipo"] = 4,
+["last_event"] = 1766581735,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-0000CBE58E",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-0000CBE58E",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 803,
 ["tipo"] = 2,
+["combatId"] = 803,
 ["_ActorTable"] = {
 },
 },
@@ -3120,10 +6239,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3163,13 +6282,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3182,9 +6301,7 @@ _detalhes_database = {
 ["combat_id"] = 803,
 ["timeStart"] = 1766581721,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -3201,10 +6318,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3217,18 +6334,19 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 1,
 },
 ["start_time"] = 913.322,
-["contra"] = "Kolkar Outrunner",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 802,
 ["tipo"] = 2,
+["combatId"] = 802,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.004242,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -3236,6 +6354,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 150.004242,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -3245,16 +6364,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 150,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581718,
+["totalabsorbed"] = 0.004242,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [1978] = {
 ["c_amt"] = 0,
@@ -3341,20 +6458,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 9.705243400621178,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581718,
 ["damage_taken"] = 33.004242,
 ["start_time"] = 1766581702,
 ["delay"] = 0,
-["last_event"] = 1766581718,
+["last_dps"] = 9.705243400621178,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003205,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3362,25 +6480,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 33.003205,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-00014BE4D1",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 33,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003205,
+["fight_component"] = true,
 ["end_time"] = 1766581718,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -3410,84 +6529,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581716,
 ["damage_taken"] = 150.003205,
 ["start_time"] = 1766581703,
 ["delay"] = 0,
-["last_event"] = 1766581716,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 802,
 ["tipo"] = 3,
+["combatId"] = 802,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 802,
 ["tipo"] = 7,
+["combatId"] = 802,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 802,
 ["tipo"] = 9,
+["combatId"] = 802,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581717,
 ["tipo"] = 4,
+["last_event"] = 1766581717,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-00014BE4D1",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-00014BE4D1",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 802,
 ["tipo"] = 2,
+["combatId"] = 802,
 ["_ActorTable"] = {
 },
 },
@@ -3516,10 +6635,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3559,13 +6678,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3578,9 +6697,7 @@ _detalhes_database = {
 ["combat_id"] = 802,
 ["timeStart"] = 1766581703,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -3597,10 +6714,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3613,18 +6730,19 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 1,
 },
 ["start_time"] = 895.4970000000001,
-["contra"] = "Kolkar Outrunner",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 801,
 ["tipo"] = 2,
+["combatId"] = 801,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007705,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -3632,6 +6750,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 157.007705,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -3641,16 +6760,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 157,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581699,
+["totalabsorbed"] = 0.007705,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [1978] = {
 ["c_amt"] = 0,
@@ -3737,20 +6854,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 9.859815687013326,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581699,
 ["damage_taken"] = 25.007705,
 ["start_time"] = 1766581683,
 ["delay"] = 0,
-["last_event"] = 1766581699,
+["last_dps"] = 9.859815687013326,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00325,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3758,25 +6876,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 25.00325,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-0000CBE479",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 25,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00325,
+["fight_component"] = true,
 ["end_time"] = 1766581699,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -3807,84 +6926,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581695,
 ["damage_taken"] = 157.00325,
 ["start_time"] = 1766581687,
 ["delay"] = 0,
-["last_event"] = 1766581695,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 801,
 ["tipo"] = 3,
+["combatId"] = 801,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 801,
 ["tipo"] = 7,
+["combatId"] = 801,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 801,
 ["tipo"] = 9,
+["combatId"] = 801,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581698,
 ["tipo"] = 4,
+["last_event"] = 1766581698,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-0000CBE479",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-0000CBE479",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 801,
 ["tipo"] = 2,
+["combatId"] = 801,
 ["_ActorTable"] = {
 },
 },
@@ -3913,10 +7032,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3956,13 +7075,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3975,9 +7094,7 @@ _detalhes_database = {
 ["combat_id"] = 801,
 ["timeStart"] = 1766581684,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -3994,10 +7111,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4010,18 +7127,19 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 1,
 },
 ["start_time"] = 876.154,
-["contra"] = "Kolkar Outrunner",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 800,
 ["tipo"] = 2,
+["combatId"] = 800,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001131,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -4029,6 +7147,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 148.001131,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -4038,16 +7157,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Drudge"] = 148,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581651,
+["totalabsorbed"] = 0.001131,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4190,20 +7307,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.358812323506202,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581651,
 ["damage_taken"] = 43.001131,
 ["start_time"] = 1766581633,
 ["delay"] = 0,
-["last_event"] = 1766581651,
+["last_dps"] = 8.358812323506202,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004989,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4211,11 +7329,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 80.004989,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3119-00004BE55C",
-["aID"] = "3119",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Heilusgeilus"] = true,
 ["Dopesnare"] = true,
@@ -4224,14 +7342,15 @@ _detalhes_database = {
 ["Heilusgeilus"] = 37,
 ["Dopesnare"] = 43,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004989,
+["fight_component"] = true,
 ["end_time"] = 1766581651,
+["aID"] = "3119",
 ["nome"] = "Kolkar Drudge",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4290,84 +7409,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581648,
 ["damage_taken"] = 252.004989,
 ["start_time"] = 1766581637,
 ["delay"] = 0,
-["last_event"] = 1766581648,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 800,
 ["tipo"] = 3,
+["combatId"] = 800,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 800,
 ["tipo"] = 7,
+["combatId"] = 800,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 800,
 ["tipo"] = 9,
+["combatId"] = 800,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581648,
 ["tipo"] = 4,
+["last_event"] = 1766581648,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3119-0000CBE55C",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3119",
+["fight_component"] = true,
 ["nome"] = "Kolkar Drudge",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3119-0000CBE55C",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 800,
 ["tipo"] = 2,
+["combatId"] = 800,
 ["_ActorTable"] = {
 },
 },
@@ -4396,10 +7515,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4440,13 +7559,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4459,9 +7578,7 @@ _detalhes_database = {
 ["combat_id"] = 800,
 ["timeStart"] = 1766581634,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Drudge",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -4478,10 +7595,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4494,18 +7611,19 @@ _detalhes_database = {
 ["Kolkar Drudge"] = 2,
 },
 ["start_time"] = 826.3870000000001,
-["contra"] = "Kolkar Drudge",
 ["TimeData"] = {
 },
+["raid_roster"] = {
+["Dopesnare"] = "Player-6111-04889BA2",
+},
 },
 {
 {
-["combatId"] = 799,
 ["tipo"] = 2,
+["combatId"] = 799,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002354,
 ["pets"] = {
 },
 ["classe"] = "HUNTER",
@@ -4513,6 +7631,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 132.002354,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6111-04889BA2",
@@ -4522,16 +7641,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Kolkar Outrunner"] = 132,
 },
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1766581619,
+["totalabsorbed"] = 0.002354,
+["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [2] = {
 ["c_amt"] = 0,
@@ -4647,20 +7764,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 8.505306314433,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581618,
 ["damage_taken"] = 32.002354,
 ["start_time"] = 1766581603,
 ["delay"] = 0,
-["last_event"] = 1766581618,
+["last_dps"] = 8.262540936404607,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007613,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4668,25 +7786,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 32.007613,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-5208-1-608-3120-00014BE36E",
-["aID"] = "3120",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Dopesnare"] = true,
 },
 ["targets"] = {
 ["Dopesnare"] = 32,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007613,
+["fight_component"] = true,
 ["end_time"] = 1766581619,
+["aID"] = "3120",
 ["nome"] = "Kolkar Outrunner",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [6660] = {
 ["c_amt"] = 0,
@@ -4716,84 +7835,84 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1766581616,
 ["damage_taken"] = 132.007613,
 ["start_time"] = 1766581604,
 ["delay"] = 0,
-["last_event"] = 1766581616,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 799,
 ["tipo"] = 3,
+["combatId"] = 799,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 799,
 ["tipo"] = 7,
+["combatId"] = 799,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 799,
 ["tipo"] = 9,
+["combatId"] = 799,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 1978,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["serial"] = "Player-6111-04889BA2",
 ["classe"] = "HUNTER",
+["debuff_uptime"] = 15,
 ["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 15,
-["aID"] = "6111-04889BA2",
 ["nome"] = "Dopesnare",
-["last_event"] = 1766581618,
 ["tipo"] = 4,
+["last_event"] = 1766581618,
+["serial"] = "Player-6111-04889BA2",
+["aID"] = "6111-04889BA2",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-5208-1-608-3120-00014BE36E",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3120",
+["fight_component"] = true,
 ["nome"] = "Kolkar Outrunner",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-5208-1-608-3120-00014BE36E",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 799,
 ["tipo"] = 2,
+["combatId"] = 799,
 ["_ActorTable"] = {
 },
 },
@@ -4822,10 +7941,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4865,13 +7984,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4884,9 +8003,7 @@ _detalhes_database = {
 ["combat_id"] = 799,
 ["timeStart"] = 1766581603,
 ["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
+["contra"] = "Kolkar Outrunner",
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
@@ -4903,10 +8020,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4919,2920 +8036,10 @@ _detalhes_database = {
 ["Kolkar Outrunner"] = 1,
 },
 ["start_time"] = 795.815,
-["contra"] = "Kolkar Outrunner",
-["TimeData"] = {
-},
-},
-{
-{
-["combatId"] = 798,
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["totalabsorbed"] = 0.001121,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 133.001121,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 133.001121,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Kolkar Outrunner"] = true,
-},
-["targets"] = {
-["Kolkar Outrunner"] = 133,
-},
-["colocacao"] = 1,
-["aID"] = "6111-04889BA2",
-["grupo"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766581596,
-["nome"] = "Dopesnare",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Kolkar Outrunner"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[3044] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Kolkar Outrunner"] = 26,
-},
-["n_total"] = 26,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 26,
-["c_max"] = 0,
-["id"] = 3044,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Kolkar Outrunner"] = 95,
-},
-["n_total"] = 95,
-["n_min"] = 10,
-["g_dmg"] = 0,
-["counter"] = 8,
-["total"] = 95,
-["c_max"] = 0,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 8,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 9.534130537634455,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 17.001121,
-["start_time"] = 1766581581,
-["delay"] = 0,
-["last_event"] = 1766581595,
-},
-{
-["flag_original"] = 68168,
-["totalabsorbed"] = 0.00834,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 17.00834,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 17.00834,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5208-1-608-3120-0000CBE4D1",
-["aID"] = "3120",
-["fight_component"] = true,
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 17,
-},
-["monster"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766581596,
-["nome"] = "Kolkar Outrunner",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-[6660] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 6,
-["targets"] = {
-["Dopesnare"] = 17,
-},
-["n_total"] = 17,
-["n_min"] = 5,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 17,
-["c_max"] = 0,
-["id"] = 6660,
-["r_dmg"] = 0,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 3,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 133.00834,
-["start_time"] = 1766581583,
-["delay"] = 0,
-["last_event"] = 1766581591,
-},
-},
-},
-{
-["combatId"] = 798,
-["tipo"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 798,
-["tipo"] = 7,
-["_ActorTable"] = {
-},
-},
-{
-["combatId"] = 798,
-["tipo"] = 9,
-["_ActorTable"] = {
-{
-["flag_original"] = 68168,
-["pets"] = {
-},
-["serial"] = "Creature-0-5208-1-608-3120-0000CBE4D1",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
-["aID"] = "3120",
-["nome"] = "Kolkar Outrunner",
-["last_event"] = 0,
-["tipo"] = 4,
-},
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["tipo"] = 9,
-["_ActorTable"] = {
-[1978] = {
-["activedamt"] = 0,
-["id"] = 1978,
-["targets"] = {
-},
-["uptime"] = 11,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-},
-["pets"] = {
-},
-["serial"] = "Player-6111-04889BA2",
-["classe"] = "HUNTER",
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["debuff_uptime"] = 11,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["last_event"] = 1766581595,
-["tipo"] = 4,
-},
-},
-},
-{
-["combatId"] = 798,
-["tipo"] = 2,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 795.231,
-["tempo_start"] = 1766581581,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9438,
-["playerTalents"] = {
-},
-["totals"] = {
-150,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Kolkar Outrunner"] = {
-["Shoot"] = 3,
-},
-["Dopesnare"] = {
-["Auto Shot"] = 7,
-["Arcane Shot"] = 2,
-["Serpent Sting"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "14:06:36",
-["timeEnd"] = 1766581596,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Kolkar Outrunner",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 789.144,
-["CombatEndedAt"] = 789.144,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage_section"] = {
-},
-["damage"] = {
-{
-["Dopesnare"] = 133.001121,
-},
-},
-},
-["end_time"] = 789.144,
-["mapId"] = 1,
-["combat_id"] = 798,
-["timeStart"] = 1766581582,
-["playing_solo"] = true,
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-["is_challenge"] = false,
-["spells_cast_timeline"] = {
-},
-["totals_grupo"] = {
-133,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["debuff_uptime"] = 0,
-["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
-["dispell"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "14:06:22",
-["cleu_events"] = {
-["n"] = 1,
-},
-["frags"] = {
-["Kolkar Outrunner"] = 1,
-},
-["start_time"] = 774.5600000000001,
-["contra"] = "Kolkar Outrunner",
-["TimeData"] = {
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 797,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 126.002759,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 126.002759,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Pygmy Surf Crawler"] = true,
-},
-["targets"] = {
-["Pygmy Surf Crawler"] = 126,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766418089,
-["totalabsorbed"] = 0.002759,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Pygmy Surf Crawler"] = 39,
-},
-["n_total"] = 21,
-["n_min"] = 9,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 39,
-["c_max"] = 18,
-["DODGE"] = 1,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 18,
-["successful_casted"] = 0,
-["c_total"] = 18,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Pygmy Surf Crawler"] = 28,
-},
-["n_total"] = 28,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 28,
-["c_max"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Pygmy Surf Crawler"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Pygmy Surf Crawler"] = 34,
-},
-["n_total"] = 34,
-["n_min"] = 11,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 34,
-["c_max"] = 0,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[3044] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Pygmy Surf Crawler"] = 13,
-},
-["n_total"] = 13,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 13,
-["c_max"] = 0,
-["id"] = 3044,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766418088,
-["damage_taken"] = 31.002759,
-["start_time"] = 1766418074,
-["delay"] = 0,
-["last_dps"] = 8.613217513159386,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["aID"] = "3106",
-["total_without_pet"] = 31.004242,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 31.004242,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3106-0000496606",
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 31,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["end_time"] = 1766418089,
-["totalabsorbed"] = 0.004242,
-["nome"] = "Pygmy Surf Crawler",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 7,
-["targets"] = {
-["Dopesnare"] = 31,
-},
-["n_total"] = 31,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 31,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766418088,
-["damage_taken"] = 126.004242,
-["start_time"] = 1766418080,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 797,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 797,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 797,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 12,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 12,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766418088,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 797,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 773.808,
-["tempo_start"] = 1766418074,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9437,
-["playing_solo"] = true,
-["totals"] = {
-177,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 2,
-["Raptor Strike"] = 2,
-["Serpent Sting"] = 1,
-["Arcane Shot"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:41:30",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Pygmy Surf Crawler",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15577.278,
-["CombatEndedAt"] = 15577.278,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 126.002759,
-},
-},
-},
-["end_time"] = 15577.278,
-["mapId"] = 1,
-["combat_id"] = 797,
-["timeStart"] = 1766418074,
-["timeEnd"] = 1766418090,
-["spells_cast_timeline"] = {
-},
-["is_challenge"] = false,
-["frags"] = {
-["Pygmy Surf Crawler"] = 1,
-},
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-["totals_grupo"] = {
-126,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:41:14",
-["cleu_events"] = {
-["n"] = 1,
-},
-["start_time"] = 15561.407,
-["TimeData"] = {
-},
-["playerTalents"] = {
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 796,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 105.006467,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 105.006467,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-},
-["targets"] = {
-["Pygmy Surf Crawler"] = 105,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766418040,
-["totalabsorbed"] = 0.006467,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Pygmy Surf Crawler"] = 14,
-},
-["n_total"] = 14,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 14,
-["c_max"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Pygmy Surf Crawler"] = 8,
-},
-["n_total"] = 8,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 8,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[3044] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 0,
-["targets"] = {
-["Pygmy Surf Crawler"] = 26,
-},
-["n_total"] = 0,
-["n_min"] = 0,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 26,
-["c_max"] = 26,
-["id"] = 3044,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 26,
-["successful_casted"] = 0,
-["c_total"] = 26,
-["n_amt"] = 0,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Pygmy Surf Crawler"] = 57,
-},
-["n_total"] = 27,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 57,
-["c_max"] = 30,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 30,
-["successful_casted"] = 0,
-["c_total"] = 30,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766418039,
-["damage_taken"] = 0.006467,
-["start_time"] = 1766418032,
-["delay"] = 0,
-["last_dps"] = 13.65671309663101,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["aID"] = "3106",
-["total_without_pet"] = 0.007521,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 0.007521,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3106-00004965C1",
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["end_time"] = 1766418040,
-["totalabsorbed"] = 0.007521,
-["nome"] = "Pygmy Surf Crawler",
-["spells"] = {
-["_ActorTable"] = {
-},
-["tipo"] = 2,
-},
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 0,
-["damage_taken"] = 105.007521,
-["start_time"] = 1766418040,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 796,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 796,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 796,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 7,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 7,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766418039,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 796,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 15560.478,
-["tempo_start"] = 1766418032,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9436,
-["playing_solo"] = true,
-["totals"] = {
-105,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 2,
-["Raptor Strike"] = 1,
-["Arcane Shot"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:40:40",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Pygmy Surf Crawler",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15527.502,
-["CombatEndedAt"] = 15527.502,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 105.006467,
-},
-},
-},
-["end_time"] = 15527.502,
-["mapId"] = 1,
-["combat_id"] = 796,
-["timeStart"] = 1766418032,
-["timeEnd"] = 1766418040,
-["spells_cast_timeline"] = {
-},
-["is_challenge"] = false,
-["frags"] = {
-["Pygmy Surf Crawler"] = 1,
-},
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-["totals_grupo"] = {
-105,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:40:32",
-["cleu_events"] = {
-["n"] = 1,
-},
-["start_time"] = 15519.57,
-["TimeData"] = {
-},
-["playerTalents"] = {
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 795,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 102.005252,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 102.005252,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Pygmy Surf Crawler"] = true,
-},
-["targets"] = {
-["Pygmy Surf Crawler"] = 102,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766418019,
-["totalabsorbed"] = 0.005252,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Pygmy Surf Crawler"] = 42,
-},
-["n_total"] = 21,
-["n_min"] = 8,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 42,
-["c_max"] = 21,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 21,
-["successful_casted"] = 0,
-["c_total"] = 21,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Pygmy Surf Crawler"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Pygmy Surf Crawler"] = 34,
-},
-["n_total"] = 34,
-["n_min"] = 11,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 34,
-["c_max"] = 0,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Pygmy Surf Crawler"] = 14,
-},
-["n_total"] = 14,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 14,
-["c_max"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766418018,
-["damage_taken"] = 8.005251999999999,
-["start_time"] = 1766418008,
-["delay"] = 0,
-["last_dps"] = 9.900538872173264,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["aID"] = "3106",
-["total_without_pet"] = 8.002932000000001,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 8.002932000000001,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3106-000049635A",
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 8,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["end_time"] = 1766418019,
-["totalabsorbed"] = 0.002932,
-["nome"] = "Pygmy Surf Crawler",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Dopesnare"] = 8,
-},
-["n_total"] = 8,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 8,
-["c_max"] = 0,
-["DODGE"] = 1,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766418016,
-["damage_taken"] = 102.002932,
-["start_time"] = 1766418012,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 795,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 795,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 795,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 10,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 10,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766418018,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 795,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 15518.862,
-["tempo_start"] = 1766418008,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9435,
-["playing_solo"] = true,
-["totals"] = {
-110,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 2,
-["Raptor Strike"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:40:19",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Pygmy Surf Crawler",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15506.445,
-["CombatEndedAt"] = 15506.445,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 102.005252,
-},
-},
-},
-["end_time"] = 15506.445,
-["mapId"] = 1,
-["combat_id"] = 795,
-["timeStart"] = 1766418008,
-["timeEnd"] = 1766418019,
-["spells_cast_timeline"] = {
-},
-["is_challenge"] = false,
-["frags"] = {
-["Pygmy Surf Crawler"] = 1,
-},
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-["totals_grupo"] = {
-102,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:40:08",
-["cleu_events"] = {
-["n"] = 1,
-},
-["start_time"] = 15495.424,
-["TimeData"] = {
-},
-["playerTalents"] = {
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 794,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 137.004909,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 137.004909,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Makrura Clacker"] = true,
-},
-["targets"] = {
-["Makrura Clacker"] = 137,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766418000,
-["totalabsorbed"] = 0.004909,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 1,
-["g_amt"] = 2,
-["n_max"] = 7,
-["targets"] = {
-["Makrura Clacker"] = 25,
-},
-["n_total"] = 10,
-["n_min"] = 3,
-["g_dmg"] = 15,
-["counter"] = 4,
-["total"] = 25,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 3,
-["r_amt"] = 0,
-},
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Makrura Clacker"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 12,
-["c_max"] = 0,
-["a_amt"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["PARRY"] = 1,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Makrura Clacker"] = 20,
-},
-["n_total"] = 20,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 20,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 11,
-["targets"] = {
-["Makrura Clacker"] = 54,
-},
-["n_total"] = 54,
-["n_min"] = 10,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 54,
-["c_max"] = 0,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[3044] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Makrura Clacker"] = 26,
-},
-["n_total"] = 26,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 26,
-["c_max"] = 0,
-["id"] = 3044,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417999,
-["damage_taken"] = 25.004909,
-["start_time"] = 1766417979,
-["delay"] = 0,
-["last_dps"] = 6.691653267558802,
-},
-{
-["flag_original"] = 68168,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 25.008618,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 25.008618,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3103-0000496606",
-["on_hold"] = false,
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 25,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["totalabsorbed"] = 0.008618,
-["fight_component"] = true,
-["end_time"] = 1766418000,
-["aID"] = "3103",
-["nome"] = "Makrura Clacker",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Dopesnare"] = 25,
-},
-["n_total"] = 25,
-["n_min"] = 7,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 25,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["monster"] = true,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417995,
-["damage_taken"] = 137.008618,
-["start_time"] = 1766417991,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 794,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 794,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 794,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 15,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 15,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766417994,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 794,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 15494.68,
-["tempo_start"] = 1766417979,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9434,
-["playerTalents"] = {
-},
-["totals"] = {
-162,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 4,
-["Raptor Strike"] = 2,
-["Arcane Shot"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:40:01",
-["timeEnd"] = 1766418001,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Makrura Clacker",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15488.276,
-["CombatEndedAt"] = 15488.276,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 137.004909,
-},
-},
-},
-["end_time"] = 15488.276,
-["mapId"] = 1,
-["combat_id"] = 794,
-["timeStart"] = 1766417979,
-["playing_solo"] = true,
-["contra"] = "Makrura Clacker",
-["is_challenge"] = false,
-["spells_cast_timeline"] = {
-},
-["totals_grupo"] = {
-137,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:39:39",
-["cleu_events"] = {
-["n"] = 1,
-},
-["frags"] = {
-["Makrura Clacker"] = 1,
-},
-["start_time"] = 15467.003,
 ["TimeData"] = {
 },
 ["raid_roster"] = {
 ["Dopesnare"] = "Player-6111-04889BA2",
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 793,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 129.007989,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 129.007989,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Makrura Clacker"] = true,
-},
-["targets"] = {
-["Makrura Clacker"] = 129,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766417968,
-["totalabsorbed"] = 0.007989,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 9,
-["targets"] = {
-["Makrura Clacker"] = 27,
-},
-["n_total"] = 27,
-["n_min"] = 9,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 27,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Makrura Clacker"] = 26,
-},
-["n_total"] = 26,
-["n_min"] = 12,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 26,
-["c_max"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Makrura Clacker"] = 20,
-},
-["n_total"] = 20,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 5,
-["total"] = 20,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 5,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 12,
-["targets"] = {
-["Makrura Clacker"] = 43,
-},
-["n_total"] = 43,
-["n_min"] = 10,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 43,
-["c_max"] = 0,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[3044] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 13,
-["targets"] = {
-["Makrura Clacker"] = 13,
-},
-["n_total"] = 13,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 2,
-["total"] = 13,
-["c_max"] = 0,
-["MISS"] = 1,
-["id"] = 3044,
-["r_dmg"] = 0,
-["spellschool"] = 64,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417967,
-["damage_taken"] = 6.007989,
-["start_time"] = 1766417946,
-["delay"] = 0,
-["last_dps"] = 6.055860160540285,
-},
-{
-["flag_original"] = 68168,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 6.002131,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 6.002131,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3103-0000496486",
-["on_hold"] = false,
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 6,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["totalabsorbed"] = 0.002131,
-["fight_component"] = true,
-["end_time"] = 1766417968,
-["aID"] = "3103",
-["nome"] = "Makrura Clacker",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 6,
-["targets"] = {
-["Dopesnare"] = 6,
-},
-["n_total"] = 6,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 6,
-["c_max"] = 0,
-["DODGE"] = 2,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["monster"] = true,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417962,
-["damage_taken"] = 129.002131,
-["start_time"] = 1766417962,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 793,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 793,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 793,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 15,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 15,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766417963,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 793,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 15466.329,
-["tempo_start"] = 1766417946,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9433,
-["playerTalents"] = {
-},
-["totals"] = {
-198,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 3,
-["Raptor Strike"] = 2,
-["Arcane Shot"] = 2,
-["Serpent Sting"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:39:28",
-["timeEnd"] = 1766417968,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Makrura Clacker",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15455.895,
-["CombatEndedAt"] = 15455.895,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 129.007989,
-},
-},
-},
-["end_time"] = 15455.895,
-["mapId"] = 1,
-["combat_id"] = 793,
-["timeStart"] = 1766417946,
-["playing_solo"] = true,
-["contra"] = "Makrura Clacker",
-["is_challenge"] = false,
-["spells_cast_timeline"] = {
-},
-["totals_grupo"] = {
-129,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:39:06",
-["cleu_events"] = {
-["n"] = 1,
-},
-["frags"] = {
-["Makrura Clacker"] = 1,
-},
-["start_time"] = 15433.319,
-["TimeData"] = {
-},
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 792,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["total_without_pet"] = 110.008032,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 110.008032,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6111-04889BA2",
-["damage_from"] = {
-["Pygmy Surf Crawler"] = true,
-},
-["targets"] = {
-["Pygmy Surf Crawler"] = 110,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1766417936,
-["totalabsorbed"] = 0.008032,
-["aID"] = "6111-04889BA2",
-["nome"] = "Dopesnare",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 11,
-["targets"] = {
-["Pygmy Surf Crawler"] = 30,
-},
-["n_total"] = 30,
-["n_min"] = 8,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 30,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[1978] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 4,
-["targets"] = {
-["Pygmy Surf Crawler"] = 12,
-},
-["n_total"] = 12,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 12,
-["c_max"] = 0,
-["id"] = 1978,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[75] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 15,
-["targets"] = {
-["Pygmy Surf Crawler"] = 54,
-},
-["n_total"] = 29,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 54,
-["c_max"] = 25,
-["id"] = 75,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 25,
-["successful_casted"] = 0,
-["c_total"] = 25,
-["n_amt"] = 2,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2973] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 14,
-["targets"] = {
-["Pygmy Surf Crawler"] = 14,
-},
-["n_total"] = 14,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 14,
-["c_max"] = 0,
-["id"] = 2973,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417935,
-["damage_taken"] = 13.008032,
-["start_time"] = 1766417925,
-["delay"] = 0,
-["last_dps"] = 9.720600159053527,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["aID"] = "3106",
-["total_without_pet"] = 13.00414,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 13.00414,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-5210-1-915-3106-00004961A6",
-["damage_from"] = {
-["Dopesnare"] = true,
-},
-["targets"] = {
-["Dopesnare"] = 13,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["end_time"] = 1766417936,
-["totalabsorbed"] = 0.00414,
-["nome"] = "Pygmy Surf Crawler",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 5,
-["targets"] = {
-["Dopesnare"] = 13,
-},
-["n_total"] = 13,
-["n_min"] = 4,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 13,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1766417933,
-["damage_taken"] = 110.00414,
-["start_time"] = 1766417929,
-["delay"] = 0,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 792,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 792,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 792,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["debuff_uptime_spells"] = {
-["_ActorTable"] = {
-[1978] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 0,
-["uptime"] = 10,
-["id"] = 1978,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["pets"] = {
-},
-["classe"] = "HUNTER",
-["debuff_uptime"] = 10,
-["debuff_uptime_targets"] = {
-},
-["grupo"] = true,
-["nome"] = "Dopesnare",
-["last_event"] = 1766417935,
-["tipo"] = 4,
-["serial"] = "Player-6111-04889BA2",
-["aID"] = "6111-04889BA2",
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 792,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 15432.364,
-["tempo_start"] = 1766417925,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["combat_counter"] = 9432,
-["playing_solo"] = true,
-["totals"] = {
-123,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Dopesnare"] = {
-["Auto Shot"] = 2,
-["Raptor Strike"] = 1,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "16:38:56",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Pygmy Surf Crawler",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 15423.56,
-["CombatEndedAt"] = 15423.56,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Dopesnare"] = 110.008032,
-},
-},
-},
-["end_time"] = 15423.56,
-["mapId"] = 1,
-["combat_id"] = 792,
-["timeStart"] = 1766417925,
-["timeEnd"] = 1766417936,
-["spells_cast_timeline"] = {
-},
-["is_challenge"] = false,
-["frags"] = {
-["Pygmy Surf Crawler"] = 1,
-},
-["raid_roster"] = {
-["Dopesnare"] = "Player-6111-04889BA2",
-},
-["totals_grupo"] = {
-110,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["data_inicio"] = "16:38:45",
-["cleu_events"] = {
-["n"] = 1,
-},
-["start_time"] = 15412.243,
-["TimeData"] = {
-},
-["playerTalents"] = {
 },
 },
 },
@@ -7938,10 +8145,18 @@ _detalhes_database = {
 ["active_profile"] = "xVermin",
 ["last_realversion"] = 166,
 ["ignore_nicktag"] = false,
-["arena_data_compressed"] = {
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
 },
-["data_harvested_for_charts"] = {
-},
+["force_font_outline"] = "",
 ["combat_log"] = {
 ["merge_gemstones_1007"] = false,
 ["inverse_deathlog_raid"] = false,
@@ -7957,119 +8172,8 @@ _detalhes_database = {
 },
 ["mythic_plus_log"] = {
 },
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["only_my_group"] = false,
-["animate"] = false,
-["show_party_pets"] = false,
-["hide_pull_bar"] = false,
-["author"] = "Terciob",
-["playercolor"] = {
-1,
-1,
-1,
+["cached_talents"] = {
 },
-["usefocus"] = false,
-["updatespeed"] = 1,
-["disable_gouge"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["playSound"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["useclasscolors"] = false,
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["use_square_mode"] = false,
-["arrow_anchor_y"] = 0,
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["point"] = "RIGHT",
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["author"] = "Details! Team",
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["main_frame_strata"] = "LOW",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
-["font_size"] = 10,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["use_spark"] = false,
-["scale"] = 1,
-["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-},
-},
-["last_day"] = "24",
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
-},
-["force_font_outline"] = "",
 ["local_instances_config"] = {
 {
 ["modo"] = 2,
@@ -8142,6 +8246,111 @@ _detalhes_database = {
 },
 },
 },
+["data_harvested_for_charts"] = {
+},
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["only_my_group"] = false,
+["animate"] = false,
+["show_party_pets"] = false,
+["hide_pull_bar"] = false,
+["author"] = "Terciob",
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["updatespeed"] = 1,
+["disable_gouge"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["playSound"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["useclasscolors"] = false,
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["use_square_mode"] = false,
+["arrow_anchor_y"] = 0,
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["row_height"] = 18,
+["arrow_anchor_x"] = 0,
+["point"] = "RIGHT",
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["author"] = "Details! Team",
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["use_spark"] = false,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["main_frame_strata"] = "LOW",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["y"] = -183.107162475586,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["scale"] = 1,
+["main_frame_locked"] = true,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+},
+},
+["character_data"] = {
+["logons"] = 623,
+},
 ["benchmark_db"] = {
 ["frame"] = {
 },
@@ -8150,7 +8359,7 @@ _detalhes_database = {
 ["enabled"] = true,
 ["channel"] = "SELF",
 },
-["combat_id"] = 809,
+["combat_id"] = 816,
 ["savedStyles"] = {
 {
 ["show_statusbar"] = false,
@@ -8171,7 +8380,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["micro_displays_locked"] = false,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -8351,13 +8560,13 @@ false,
 },
 },
 ["micro_displays_side"] = 2,
-["version"] = 3,
+["bg_alpha"] = 0,
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["name"] = "vermin",
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -8380,7 +8589,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["skin_custom"] = "vermin",
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -8396,11 +8605,12 @@ false,
 0.07058823529411765,
 },
 },
-["menu_anchor_down"] = {
-16,
--3,
-},
 ["bars_grow_direction"] = 1,
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -8417,13 +8627,12 @@ false,
 1,
 1,
 },
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
+["menu_anchor_down"] = {
+16,
+-3,
 },
 ["auto_current"] = true,
-["micro_displays_locked"] = false,
+["bars_sort_direction"] = 1,
 ["row_info"] = {
 ["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -8536,7 +8745,7 @@ false,
 ["textR_separator"] = "NONE",
 ["texture_custom_file"] = "Interface\\",
 },
-["name"] = "vermin",
+["version"] = 3,
 ["hide_in_combat"] = false,
 ["switch_damager"] = {
 1,
@@ -8591,7 +8800,7 @@ false,
 ["channel"] = "SELF",
 ["reverse"] = false,
 },
-["combat_counter"] = 9449,
+["combat_counter"] = 9456,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -8630,7 +8839,7 @@ false,
 },
 ["tipo"] = 9,
 },
-["debuff_uptime_targets"] = {
+["buff_uptime_targets"] = {
 },
 ["buff_uptime"] = 0,
 ["classe"] = "HUNTER",
@@ -8652,9 +8861,9 @@ false,
 ["tipo"] = 9,
 },
 ["debuff_uptime"] = 0,
-["buff_uptime_targets"] = {
-},
 ["nome"] = "Dopesnare",
+["debuff_uptime_targets"] = {
+},
 ["grupo"] = true,
 ["pets"] = {
 },
@@ -8747,6 +8956,32 @@ false,
 ["serial"] = "Creature-0-5210-1-915-3099-000049614D",
 ["tipo"] = 4,
 },
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["aID"] = "3120",
+["monster"] = true,
+["nome"] = "Kolkar Outrunner",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-5208-1-608-3120-00004BE627",
+["classe"] = "UNKNOW",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3119",
+["monster"] = true,
+["nome"] = "Kolkar Drudge",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-5208-1-608-3119-0001CBE5C4",
+["classe"] = "UNKNOW",
+},
 },
 },
 {
@@ -8827,15 +9062,15 @@ false,
 },
 ["zoneName"] = "Kalimdor",
 ["boss_hp"] = 1,
-["segments_added"] = {
+["frags"] = {
 },
 ["is_challenge"] = false,
-["frags"] = {
+["spells_cast_timeline"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["spells_cast_timeline"] = {
+["segments_added"] = {
 },
 ["PhaseData"] = {
 {
@@ -8857,12 +9092,10 @@ false,
 ["player_last_events"] = {
 },
 },
-["cached_talents"] = {
-},
+["last_day"] = "24",
 ["arena_data_headers"] = {
 },
-["character_data"] = {
-["logons"] = 619,
+["arena_data_compressed"] = {
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

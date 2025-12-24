@@ -361,6 +361,22 @@ xVerminSavedData = {
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
 },
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
+},
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -375,17 +391,6 @@ xVerminSavedData = {
 "Lightning Shield",
 "Living Bomb",
 "Molten Blast",
-},
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
@@ -447,13 +452,8 @@ xVerminSavedData = {
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",
