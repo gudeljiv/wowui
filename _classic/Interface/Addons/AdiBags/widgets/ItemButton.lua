@@ -398,33 +398,6 @@ function buttonProto:UpdateCount()
 	end
 end
 
-function buttonProto:UpdateItemLevel()
-	if not self.itemLink then
-		if self.text then
-			self.text:Hide()
-		end
-		return
-	end
-	if not self.text then
-		self.text = self:CreateFontString(nil, 'ARTWORK')
-		self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
-		self.text:SetTextColor(1, 1, 0)
-		self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
-		self.text:Hide()
-	else
-		self.text:Hide()
-	end
-
-	itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
-
-	if itemLevel and itemEquipLoc and itemEquipLoc ~= '' then
-		self.text:SetText(itemLevel)
-		self.text:Show()
-	else
-		self.text:Hide()
-	end
-end
-
 function buttonProto:UpdateLock(isolatedEvent)
 	if addon.globalLock then
 		SetItemButtonDesaturated(self, true)
@@ -486,26 +459,6 @@ if addon.isRetail then
 	end
 end
 
-local function GetBorder(quality, isQuestItem, questId, isQuestActive, settings)
-	if addon.isRetail or addon.isWrath or addon.isCata then
-		if settings.questIndicator then
-			if questId and not isQuestActive then
-				return TEXTURE_ITEM_QUEST_BANG
-			end
-			if questId or isQuestItem then
-				return TEXTURE_ITEM_QUEST_BORDER
-			end
-		end
-	end
-	if not settings.qualityHighlight then
-		return
-	end
-	local color = quality ~= ITEM_QUALITY_COMMON and BAG_ITEM_QUALITY_COLORS[quality]
-	if color then
-		return [[Interface\Buttons\UI-ActionButton-Border]], color.r, color.g, color.b, settings.qualityOpacity, 14/64, 49/64, 15/64, 50/64, "ADD"
-	end
-end
-
 -- Bugfix: This fixes a bug where hasItem might be set to 1 by
 -- some internal Blizzard code.
 local function hasItem(i)
@@ -514,35 +467,8 @@ end
 
 function buttonProto:UpdateBorder(isolatedEvent)
 	local texture, r, g, b, a, x1, x2, y1, y2, blendMode, quality
-
-	self:CreateBeautyBorder(8)
-	self:UpdateItemLevel()
-
 	local settings = addon.db.profile
 	local isQuestItem, questId, isQuestActive
-	if hasItem(self.hasItem) then
-		quality = addon:GetContainerItemQuality(self.bag, self.slot)
-		isQuestItem, questId, isQuestActive = addon:GetContainerItemQuestInfo(self.bag, self.slot)
-		texture, r, g, b, a, x1, x2, y1, y2, blendMode = GetBorder(quality, isQuestItem, questId, isQuestActive, settings)
-		itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
-
-		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
-		self:SetBeautyBorderColor(1, 1, 1, 1)
-
-		if itemRarity and itemRarity > 1 then
-			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-			self:SetBeautyBorderColor(r or 1, g or 0, b or 0, 1)
-		end
-
-		if itemType and itemType == 'Quest' then
-			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
-			self:SetBeautyBorderColor(1, 0.964, 0, 1)
-		end
-	else
-		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
-		self:SetBeautyBorderColor(1, 1, 1, 1)
-	end
-
 	local layer = (settings.questIndicator and (isQuestItem or questId)) and self.IconQuestTexture or self.IconBorder
 	if not texture then
 		layer:Hide()

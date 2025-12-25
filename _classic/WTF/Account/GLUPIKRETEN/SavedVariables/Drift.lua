@@ -18,8 +18,8 @@ DriftPoints = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -124.1059875488281,
-["xOfs"] = -216.8038177490234,
+["yOfs"] = -147.9154052734375,
+["xOfs"] = -246.4333801269531,
 },
 ["AddonList"] = {
 ["relativeTo"] = "UIParent",

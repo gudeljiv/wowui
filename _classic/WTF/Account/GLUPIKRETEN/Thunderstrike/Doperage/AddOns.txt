@@ -30,7 +30,7 @@ AtlasLootClassic_Data: enabled
 AtlasLootClassic_DungeonsAndRaids: enabled
 AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
-Auctionator: disabled
+Auctionator: enabled
 BlizzMove: disabled
 BlizzMove_Debug: enabled
 !BugGrabber: enabled
@@ -161,3 +161,4 @@ AdiBags_Item_Sets: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: disabled
+Drift: enabled

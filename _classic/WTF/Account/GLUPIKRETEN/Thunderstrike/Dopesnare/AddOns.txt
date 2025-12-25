@@ -148,3 +148,4 @@ Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 Buffet: enabled
+Drift: enabled

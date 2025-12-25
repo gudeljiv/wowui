@@ -100,3 +100,4 @@ NovaWorldBuffs: enabled
 Blizzard_CombatText: enabled
 Baganator-Simple: disabled
 Drift: enabled
+Baganator: disabled

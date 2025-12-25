@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+["session"] = 13092,
 ["lastSanitation"] = 3,
-["session"] = 13045,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near '�'",
-["session"] = 10254,
 ["time"] = "2023/09/07 16:02:46",
+["session"] = 10254,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near '�'",
-["session"] = 10254,
 ["time"] = "2023/09/07 16:02:46",
+["session"] = 10254,
 ["counter"] = 1,
 },
 {
@@ -81,14 +81,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near '�'",
-["session"] = 10256,
 ["time"] = "2023/09/07 16:04:17",
+["session"] = 10256,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near '�'",
-["session"] = 10256,
 ["time"] = "2023/09/07 16:04:17",
+["session"] = 10256,
 ["counter"] = 1,
 },
 {
@@ -173,14 +173,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-["session"] = 10304,
 ["time"] = "2023/09/08 20:53:46",
+["session"] = 10304,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-["session"] = 10304,
 ["time"] = "2023/09/08 20:53:46",
+["session"] = 10304,
 ["counter"] = 1,
 },
 {
@@ -289,14 +289,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-["time"] = "2023/09/09 20:42:15",
 ["session"] = 10351,
+["time"] = "2023/09/09 20:42:15",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-["time"] = "2023/09/09 20:42:15",
 ["session"] = 10351,
+["time"] = "2023/09/09 20:42:15",
 ["counter"] = 1,
 },
 {
@@ -477,14 +477,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-["session"] = 10438,
 ["time"] = "2023/09/15 14:05:59",
+["session"] = 10438,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-["session"] = 10438,
 ["time"] = "2023/09/15 14:05:59",
+["session"] = 10438,
 ["counter"] = 1,
 },
 {
@@ -529,14 +529,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-["session"] = 10456,
 ["time"] = "2023/09/16 12:30:04",
+["session"] = 10456,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-["session"] = 10456,
 ["time"] = "2023/09/16 12:30:04",
+["session"] = 10456,
 ["counter"] = 1,
 },
 {
@@ -677,14 +677,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-["time"] = "2023/09/25 11:41:10",
 ["session"] = 10571,
+["time"] = "2023/09/25 11:41:10",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-["time"] = "2023/09/25 11:41:10",
 ["session"] = 10571,
+["time"] = "2023/09/25 11:41:10",
 ["counter"] = 1,
 },
 {
@@ -761,14 +761,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-["session"] = 10630,
 ["time"] = "2023/09/29 10:14:29",
+["session"] = 10630,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-["session"] = 10630,
 ["time"] = "2023/09/29 10:14:29",
+["session"] = 10630,
 ["counter"] = 1,
 },
 {
@@ -781,14 +781,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-["session"] = 10634,
 ["time"] = "2023/09/29 10:40:13",
+["session"] = 10634,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-["session"] = 10634,
 ["time"] = "2023/09/29 10:40:13",
+["session"] = 10634,
 ["counter"] = 1,
 },
 {
@@ -969,38 +969,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-["session"] = 10752,
 ["time"] = "2023/10/11 10:26:33",
+["session"] = 10752,
 ["counter"] = 2,
 },
 {
@@ -1013,14 +1013,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-["session"] = 10768,
 ["time"] = "2023/10/12 13:05:29",
+["session"] = 10768,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-["session"] = 10768,
 ["time"] = "2023/10/12 13:05:29",
+["session"] = 10768,
 ["counter"] = 1,
 },
 {
@@ -1153,14 +1153,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-["session"] = 10843,
 ["time"] = "2023/10/24 10:11:42",
+["session"] = 10843,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-["session"] = 10843,
 ["time"] = "2023/10/24 10:11:42",
+["session"] = 10843,
 ["counter"] = 2,
 },
 {
@@ -1237,14 +1237,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-["session"] = 10877,
 ["time"] = "2023/10/27 10:26:52",
+["session"] = 10877,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-["session"] = 10877,
 ["time"] = "2023/10/27 10:26:52",
+["session"] = 10877,
 ["counter"] = 2,
 },
 {
@@ -1321,14 +1321,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0-3/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-["session"] = 10932,
 ["time"] = "2023/11/18 11:01:21",
+["session"] = 10932,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-["session"] = 10932,
 ["time"] = "2023/11/18 11:01:21",
+["session"] = 10932,
 ["counter"] = 1,
 },
 {
@@ -1373,14 +1373,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-["session"] = 11014,
 ["time"] = "2023/12/15 11:10:59",
+["session"] = 11014,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-["session"] = 11014,
 ["time"] = "2023/12/15 11:10:59",
+["session"] = 11014,
 ["counter"] = 1,
 },
 {
@@ -2113,14 +2113,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["time"] = "2024/01/19 11:37:15",
 ["session"] = 11383,
+["time"] = "2024/01/19 11:37:15",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["time"] = "2024/01/19 11:37:15",
 ["session"] = 11383,
+["time"] = "2024/01/19 11:37:15",
 ["counter"] = 1,
 },
 {
@@ -2317,14 +2317,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["time"] = "2024/01/21 18:11:39",
 ["session"] = 11425,
+["time"] = "2024/01/21 18:11:39",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["time"] = "2024/01/21 18:11:39",
 ["session"] = 11425,
+["time"] = "2024/01/21 18:11:39",
 ["counter"] = 1,
 },
 {
@@ -2561,14 +2561,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["time"] = "2024/01/27 20:37:53",
 ["session"] = 11521,
+["time"] = "2024/01/27 20:37:53",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["time"] = "2024/01/27 20:37:53",
 ["session"] = 11521,
+["time"] = "2024/01/27 20:37:53",
 ["counter"] = 1,
 },
 {
@@ -2637,14 +2637,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["time"] = "2024/02/24 19:15:41",
 ["session"] = 11661,
+["time"] = "2024/02/24 19:15:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["time"] = "2024/02/24 19:15:41",
 ["session"] = 11661,
+["time"] = "2024/02/24 19:15:41",
 ["counter"] = 1,
 },
 {
@@ -2849,14 +2849,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["time"] = "2024/03/07 11:31:22",
 ["session"] = 11847,
+["time"] = "2024/03/07 11:31:22",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["time"] = "2024/03/07 11:31:22",
 ["session"] = 11847,
+["time"] = "2024/03/07 11:31:22",
 ["counter"] = 1,
 },
 {
@@ -2893,14 +2893,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["session"] = 11923,
 ["time"] = "2024/03/16 18:39:55",
+["session"] = 11923,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["session"] = 11923,
 ["time"] = "2024/03/16 18:39:55",
+["session"] = 11923,
 ["counter"] = 2,
 },
 {
@@ -2993,38 +2993,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["session"] = 12007,
 ["time"] = "2024/01/21 08:27:20",
+["session"] = 12007,
 ["counter"] = 10,
 },
 {
@@ -3157,14 +3157,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["time"] = "2024/04/02 13:37:38",
 ["session"] = 12085,
+["time"] = "2024/04/02 13:37:38",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["time"] = "2024/04/02 13:37:38",
 ["session"] = 12085,
+["time"] = "2024/04/02 13:37:38",
 ["counter"] = 1,
 },
 {
@@ -3665,14 +3665,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["time"] = "2024/04/20 17:32:12",
 ["session"] = 12411,
+["time"] = "2024/04/20 17:32:12",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["time"] = "2024/04/20 17:32:12",
 ["session"] = 12411,
+["time"] = "2024/04/20 17:32:12",
 ["counter"] = 3,
 },
 {
@@ -3757,26 +3757,26 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Engraver/Engraver.toc:1 Couldn't open Interface/AddOns/Engraver/Engraver.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Couldn't open Interface/AddOns/Engraver/Bindings.xml",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/RuneBar/RuneBar.toc:1 Couldn't open Interface/AddOns/RuneBar/RuneBar.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc:1 Couldn't open Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc",
-["time"] = "2024/07/29 09:47:42",
 ["session"] = 12529,
+["time"] = "2024/07/29 09:47:42",
 ["counter"] = 2,
 },
 {
@@ -3877,20 +3877,20 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMWoW/LibTSMWoW.xml:14 Error loading Interface/AddOns/TradeSkillMaster/Source/UI/SoundAlert.lua",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMUI/LibTSMUI.xml:153 Error loading Interface/AddOns/TradeSkillMaster/Source/Settings/SoundDropdown.lua",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/TradeSkillMaster.toc:31 Couldn't open Interface/AddOns/TradeSkillMaster/LibTSMApp/LibTSMApp.xml",
-["session"] = 12542,
 ["time"] = "2024/07/30 09:32:52",
+["session"] = 12542,
 ["counter"] = 2,
 },
 {
@@ -4007,8 +4007,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:72: ')' expected near '~'",
-["session"] = 12622,
 ["time"] = "2024/08/14 18:30:23",
+["session"] = 12622,
 ["counter"] = 2,
 },
 {
@@ -4109,14 +4109,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/includes.xml:27 Couldn't open Interface/AddOns/TellMeWhen/Lib/LibCustomGlow-1.0-20/LibCustomGlow-1.0.xml",
-["time"] = "2024/09/10 14:37:02",
 ["session"] = 12711,
+["time"] = "2024/09/10 14:37:02",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/WeakAuras/WeakAuras_Vanilla.toc:81 Error loading Interface/AddOns/WeakAuras/DiscordList.lua",
-["time"] = "2024/09/10 14:37:02",
 ["session"] = 12711,
+["time"] = "2024/09/10 14:37:02",
 ["counter"] = 2,
 },
 {
@@ -4233,8 +4233,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/Baganator.lua:1 Interface/AddOns/xVermin/Addons/Baganator.lua:24: unexpected symbol near '/'",
-["session"] = 12770,
 ["time"] = "2024/09/22 17:12:39",
+["session"] = 12770,
 ["counter"] = 2,
 },
 {
@@ -4271,8 +4271,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:1 .../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
-["session"] = 12799,
 ["time"] = "2024/08/12 16:12:58",
+["session"] = 12799,
 ["counter"] = 10,
 },
 {
@@ -4453,8 +4453,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/SpellActivationOverlay/options/InterfaceOptionsPanels.xml:128 Couldn't find inherited node: InterfaceUICheckButtonTemplate",
-["time"] = "2024/09/25 19:42:08",
 ["session"] = 12813,
+["time"] = "2024/09/25 19:42:08",
 ["counter"] = 1,
 },
 {
@@ -4595,8 +4595,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_FrameXML/DeprecatedTemplates.xml:37 Couldn't find inherited node: UISliderTemplateWithLabels",
-["session"] = 12858,
 ["time"] = "2024/09/25 19:17:19",
+["session"] = 12858,
 ["counter"] = 303,
 },
 {
@@ -4745,8 +4745,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "nil",
-["time"] = "2025/12/20 17:21:10",
 ["session"] = 12863,
+["time"] = "2025/12/20 17:21:10",
 ["counter"] = 7,
 },
 {
@@ -4831,62 +4831,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML: Backdrop",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: bgFile",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: edgeFile",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: tile",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:18 Unrecognized XML: BackgroundInsets",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML: AbsInset",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: left",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: right",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: top",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: bottom",
-["session"] = 12869,
 ["time"] = "2025/12/20 17:25:24",
+["session"] = 12869,
 ["counter"] = 5,
 },
 {
@@ -4923,62 +4923,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML: Offset",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML: AbsDimension",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML attribute: x",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML attribute: y",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML: Backdrop",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: name",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: bgFile",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: edgeFile",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: tile",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:18 Unrecognized XML: EdgeSize",
-["session"] = 12874,
 ["time"] = "2025/12/20 17:34:14",
+["session"] = 12874,
 ["counter"] = 5,
 },
 {
@@ -4991,26 +4991,26 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML: Binding",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12876,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: name",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12876,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: header",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12876,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: category",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12876,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 2,
 },
 {
@@ -5023,122 +5023,122 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML: Binding",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: name",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: header",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: category",
-["time"] = "2025/12/20 17:45:32",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:45:32",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML: Binding",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:46:06",
+["session"] = 12877,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML attribute: name",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:46:06",
+["session"] = 12877,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML attribute: category",
-["time"] = "2025/12/20 17:55:01",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:55:01",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML: Binding",
-["time"] = "2025/12/20 17:55:01",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:55:01",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML attribute: name",
-["time"] = "2025/12/20 17:55:01",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:55:01",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML attribute: category",
-["time"] = "2025/12/20 17:55:01",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:55:01",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML: Size",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML attribute: x",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML attribute: y",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML: Size",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML attribute: x",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML attribute: y",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML: Backdrop",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: bgFile",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: edgeFile",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: tile",
-["session"] = 12878,
 ["time"] = "2025/12/20 17:58:46",
+["session"] = 12878,
 ["counter"] = 1,
 },
 {
@@ -5484,6 +5484,118 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:109: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
 ["session"] = 13044,
 ["counter"] = 5,
+},
+{
+["message"] = "Interface/AddOns/AdiBags/widgets/ItemButton.lua:546: attempt to index global 'settings' (a nil value)",
+["time"] = "2025/12/25 22:41:05",
+["locals"] = "self = AdiBagsItemButton85 {\n bag = 0\n BattlepayItemTexture = Texture {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton85IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton85Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton85IconTexture {\n }\n subicon = AdiBagsItemButton85SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton85Stock {\n }\n slot = 2\n stack = AdiBagsStackButton1 {\n }\n NormalTexture = AdiBagsItemButton85NormalTexture {\n }\n Count = AdiBagsItemButton85Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton85SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton85IconQuestTexture {\n }\n}\nisolatedEvent = nil\ntexture = nil\nr = nil\ng = nil\nb = nil\na = nil\nx1 = nil\nx2 = nil\ny1 = nil\ny2 = nil\nblendMode = nil\nquality = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'settings' (a nil value)\"\nITEM_QUALITY_POOR = 0\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {\n }\n}\n",
+["stack"] = "[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:546: in function 'UpdateBorder'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:373: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:742: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:674: in function 'AddSlot'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:881: in function 'CreateItemButton'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:895: in function 'DispatchItem'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:947: in function 'UpdateButtons'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:518: in function 'RefreshContents'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:503: in function 'ResumeUpdates'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:483: in function <Interface/AddOns/AdiBags/widgets/ContainerFrame.lua:475>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13053,
+["counter"] = 3,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:104: attempt to call method 'Getname' (a nil value)",
+["time"] = "2025/12/25 23:24:37",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton64 {\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton64IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton64Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton64IconTexture {\n }\n subicon = AdiBagsItemButton64SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton64Stock {\n }\n slot = 1\n stack = AdiBagsStackButton1 {\n }\n NormalTexture = AdiBagsItemButton64NormalTexture {\n }\n Count = AdiBagsItemButton64Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton64SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton64IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = nil\ntext = nil\n(*temporary) = nil\n(*temporary) = AdiBagsItemButton64 {\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton64IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton64Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton64IconTexture {\n }\n subicon = AdiBagsItemButton64SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton64Stock {\n }\n slot = 1\n stack = AdiBagsStackButton1 {\n }\n NormalTexture = AdiBagsItemButton64NormalTexture {\n }\n Count = AdiBagsItemButton64Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton64SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton64IconQuestTexture {\n }\n}\n(*temporary) = \"attempt to call method 'Getname' (a nil value)\"\n",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:104: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:741: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:673: in function 'AddSlot'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:881: in function 'CreateItemButton'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:895: in function 'DispatchItem'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:947: in function 'UpdateButtons'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:518: in function 'RefreshContents'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:503: in function 'ResumeUpdates'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:483: in function <Interface/AddOns/AdiBags/widgets/ContainerFrame.lua:475>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13060,
+["counter"] = 10,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:104: attempt to call method 'match' (a nil value)",
+["time"] = "2025/12/25 23:25:42",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton18 {\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton18IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton18Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton18IconTexture {\n }\n subicon = AdiBagsItemButton18SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton18Stock {\n }\n slot = 1\n stack = AdiBagsStackButton1 {\n }\n NormalTexture = AdiBagsItemButton18NormalTexture {\n }\n Count = AdiBagsItemButton18Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton18SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton18IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = nil\ntext = nil\n(*temporary) = nil\n(*temporary) = AdiBagsItemButton18 {\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton18IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton18Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton18IconTexture {\n }\n subicon = AdiBagsItemButton18SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton18Stock {\n }\n slot = 1\n stack = AdiBagsStackButton1 {\n }\n NormalTexture = AdiBagsItemButton18NormalTexture {\n }\n Count = AdiBagsItemButton18Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton18SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton18IconQuestTexture {\n }\n}\n(*temporary) = \"Button%-(%d+)%-(%d+)\"\n(*temporary) = \"attempt to call method 'match' (a nil value)\"\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:104: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:741: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:673: in function 'AddSlot'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:881: in function 'CreateItemButton'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:895: in function 'DispatchItem'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:947: in function 'UpdateButtons'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:518: in function 'RefreshContents'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:503: in function 'ResumeUpdates'\n[Interface/AddOns/AdiBags/widgets/ContainerFrame.lua]:483: in function <Interface/AddOns/AdiBags/widgets/ContainerFrame.lua:475>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13062,
+["counter"] = 10,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:107: attempt to call method 'match' (a nil value)",
+["time"] = "2025/12/25 23:26:07",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton125 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton125IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton125Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton125IconTexture {\n }\n subicon = AdiBagsItemButton125SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton125Stock {\n }\n slot = 8\n section = AdiBagsSection1 {\n }\n filterName = \"Quest Items\"\n texture = 134939\n itemLink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\n itemId = 3017\n NormalTexture = AdiBagsItemButton125NormalTexture {\n }\n Count = AdiBagsItemButton125Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton125SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton125IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\ntext = nil\n(*temporary) = nil\n(*temporary) = AdiBagsItemButton125 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton125IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton125Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton125IconTexture {\n }\n subicon = AdiBagsItemButton125SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton125Stock {\n }\n slot = 8\n section = AdiBagsSection1 {\n }\n filterName = \"Quest Items\"\n texture = 134939\n itemLink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\n itemId = 3017\n NormalTexture = AdiBagsItemButton125NormalTexture {\n }\n Count = AdiBagsItemButton125Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton125SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton125IconQuestTexture {\n }\n}\n(*temporary) = \"Button%-(%d+)%-(%d+)\"\n(*temporary) = \"attempt to call method 'match' (a nil value)\"\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <ta",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:107: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13063,
+["counter"] = 6,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:108: attempt to call method 'match' (a nil value)",
+["time"] = "2025/12/25 23:27:15",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton2 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton2IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton2Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton2IconTexture {\n }\n subicon = AdiBagsItemButton2SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton2Stock {\n }\n slot = 8\n section = AdiBagsSection1 {\n }\n filterName = \"Quest Items\"\n texture = 134939\n itemLink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\n itemId = 3017\n NormalTexture = AdiBagsItemButton2NormalTexture {\n }\n Count = AdiBagsItemButton2Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton2SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton2IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\ntext = nil\n(*temporary) = nil\n(*temporary) = AdiBagsItemButton2 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton2IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton2Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton2IconTexture {\n }\n subicon = AdiBagsItemButton2SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton2Stock {\n }\n slot = 8\n section = AdiBagsSection1 {\n }\n filterName = \"Quest Items\"\n texture = 134939\n itemLink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\n itemId = 3017\n NormalTexture = AdiBagsItemButton2NormalTexture {\n }\n Count = AdiBagsItemButton2Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton2SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton2IconQuestTexture {\n }\n}\n(*temporary) = \"Button%-(%d+)%-(%d+)\"\n(*temporary) = \"attempt to call method 'match' (a nil value)\"\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defau",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:108: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13064,
+["counter"] = 6,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:107: attempt to call global 'hasItem' (a nil value)",
+["time"] = "2025/12/25 23:29:36",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton14 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton14IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton14Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton14IconTexture {\n }\n subicon = AdiBagsItemButton14SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton14Stock {\n }\n slot = 1\n section = AdiBagsSection1 {\n }\n filterName = \"Equipment\"\n texture = 135144\n itemLink = \"|cff1eff00|Hitem:11288::::::::10::::::::::|h[Greater Magic Wand]|h|r\"\n itemId = 11288\n NormalTexture = AdiBagsItemButton14NormalTexture {\n }\n Count = AdiBagsItemButton14Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton14SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton14IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = \"|cff1eff00|Hitem:11288::::::::10::::::::::|h[Greater Magic Wand]|h|r\"\ntext = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to call global 'hasItem' (a nil value)\"\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {\n }\n}\n",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:107: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13066,
+["counter"] = 6,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:109: attempt to call global 'hasItem' (a nil value)",
+["time"] = "2025/12/25 23:30:20",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_ClassicItemLevel\"\n orderedModules = <table> {\n }\n uiName = \"Classic item level\"\n db = <table> {\n }\n baseName = \"AdiBags-ClassicItemLevel\"\n enabledState = true\n uiDesc = \"Adds Classic-compatable item level text to items\"\n defaultModuleState = true\n moduleName = \"ClassicItemLevel\"\n}\nevent = \"AdiBags_UpdateButton\"\nbutton = AdiBagsItemButton106 {\n bag = 1\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton106IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton106Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n ExtendedOverlay2 = Texture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton106IconTexture {\n }\n subicon = AdiBagsItemButton106SubIconTexture {\n }\n count = 1\n Stock = AdiBagsItemButton106Stock {\n }\n slot = 8\n section = AdiBagsSection1 {\n }\n filterName = \"Quest Items\"\n texture = 134939\n itemLink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\n itemId = 3017\n NormalTexture = AdiBagsItemButton106NormalTexture {\n }\n Count = AdiBagsItemButton106Count {\n }\n timeSinceUpgradeCheck = 0\n flashAnim = AnimationGroup {\n }\n searchOverlay = AdiBagsItemButton106SearchOverlay {\n }\n JunkIcon = Texture {\n }\n IconQuestTexture = AdiBagsItemButton106IconQuestTexture {\n }\n}\nsettings = <table> {\n ignoreJunk = true\n equippableOnly = true\n minLevel = 1\n}\nlink = \"|cffffffff|Hitem:3017::::::::10::::::::::|h[Sevren's Orders]|h|r\"\ntext = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to call global 'hasItem' (a nil value)\"\naddon = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {\n }\n}\n",
+["stack"] = "[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:109: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:387: in function 'Update'\n[Interface/AddOns/AdiBags/widgets/ItemButton.lua]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[C]: in function 'Show'\n[Interface/AddOns/AdiBags/core/Bags.lua]:96: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13067,
+["counter"] = 6,
+},
+{
+["message"] = "...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:28: attempt to call method 'CreateBeautyBorder' (a nil value)",
+["time"] = "2025/12/25 23:39:47",
+["locals"] = "",
+["stack"] = "[tail call]: ?\n[Interface/AddOns/AdiBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua]:28: in function <...diBags-ClassicItemLevel/AdiBags-ClassicItemLevel.lua:19>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua]:494: in function 'InitializeAddon'\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0-13/AceAddon-3.0.lua]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>",
+["session"] = 13077,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/AdiBags.lua:261: attempt to index global 'AdiBagsContainer1' (a nil value)",
+["time"] = "2025/12/25 23:46:16",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13080,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/AdiBags.lua:144: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
+["time"] = "2025/12/26 00:06:10",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13086,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/AdiBags.lua:144: hooksecurefunc(): OnCreate is not a function",
+["time"] = "2025/12/26 00:06:37",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13087,
+["counter"] = 1,
+},
+{
+["message"] = "[string \"AdiBags:CreateBeautyBorder(8)\"]:1: attempt to index global 'AdiBags' (a nil value)",
+["time"] = "2025/12/26 00:07:19",
+["locals"] = "msg = \"AdiBags:CreateBeautyBorder(8)\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 13088,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/AdiBags.lua:147: attempt to index global 'AdiBagsContainer2' (a nil value)",
+["time"] = "2025/12/26 00:14:40",
+["locals"] = "self = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {\n }\n}\nname = \"Backpack\"\nisBank = false\nbagObject = <table> {\n isBank = false\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_Backpack\"\n orderedModules = <table> {\n }\n bagIds = <table> {\n }\n baseName = \"AdiBags\"\n order = 10\n bagName = \"Backpack\"\n hooks = <table> {\n }\n enabledState = true\n defaultModuleState = true\n moduleName = \"Backpack\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AdiBagsContainer2' (a nil value)\"\n",
+["stack"] = "[Interface/AddOns/xVermin/Addons/AdiBags.lua]:147: in function <Interface/AddOns/xVermin/Addons/AdiBags.lua:144>\n[C]: in function 'CreateContainerFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:144: in function 'CreateFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:136: in function 'GetFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:90: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[tail call]: ?\n[tail call]: ?\n[TOGGLEBACKPACK]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+["session"] = 13090,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/AdiBags.lua:146: attempt to index global 'AdiBagsContainer2' (a nil value)",
+["time"] = "2025/12/26 00:15:37",
+["locals"] = "self = <table> {\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n defaultModulePrototype = <table> {\n }\n hooks = <table> {\n }\n isClassic = true\n db = <table> {\n }\n fonts = <table> {\n }\n BACKDROP = <table> {\n }\n isBCC = false\n TOP_PADDING = 32\n hookedBags = <table> {\n }\n EXPANSION_MAP = <table> {\n }\n name = \"AdiBags\"\n ItemDatabase = <table> {\n }\n L = <table> {\n }\n ITEM_SIZE = 37\n DEFAULT_SETTINGS = <table> {\n }\n isCata = false\n FAMILY_ICONS = <table> {\n }\n baseName = \"AdiBags\"\n BagFontDefault = <table> {\n }\n atBank = true\n anchor = AdiBagsAnchor1 {\n }\n defaultModuleState = false\n itemParentFrames = <table> {\n }\n HEADER_SIZE = 18\n enabledState = true\n globalLock = false\n filterProto = <table> {\n }\n BAG_IDS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n modules = <table> {\n }\n SECTION_SPACING = 16.333333\n orderedModules = <table> {\n }\n isRetail = false\n bagProto = <table> {\n }\n BAG_INSET = 8\n EMPTY_SLOT_FILE = \"Interface\\BUTTONS\\UI-EmptySlot\"\n ITEM_SPACING = 4\n isWrath = false\n moduleProto = <table> {\n }\n TRADESKILL_MAP = <table> {\n }\n}\nname = \"Bank\"\nisBank = true\nbagObject = <table> {\n isBank = true\n modules = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n name = \"AdiBags_Bank\"\n baseName = \"AdiBags\"\n orderedModules = <table> {\n }\n bagIds = <table> {\n }\n order = 20\n bagName = \"Bank\"\n hooks = <table> {\n }\n enabledState = true\n defaultModuleState = true\n moduleName = \"Bank\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AdiBagsContainer2' (a nil value)\"\n",
+["stack"] = "[Interface/AddOns/xVermin/Addons/AdiBags.lua]:146: in function <Interface/AddOns/xVermin/Addons/AdiBags.lua:144>\n[C]: in function 'CreateContainerFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:144: in function 'CreateFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:136: in function 'GetFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:90: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:275: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/core/Core.lua]:448: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49>\n[tail call]: ?",
+["session"] = 13091,
+["counter"] = 1,
 },
 },
 }

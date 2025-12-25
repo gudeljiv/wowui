@@ -48,7 +48,7 @@ TradeSkillMaster_AppHelper: enabled
 unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
-Drift: disabled
+Drift: enabled
 Bagnon_ItemLevel_Vermin: disabled
 nBuff: enabled
 nMinimap: enabled
@@ -143,3 +143,4 @@ AdiBags_Item_Sets: disabled
 Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
+AdiBags-ClassicItemLevel: disabled

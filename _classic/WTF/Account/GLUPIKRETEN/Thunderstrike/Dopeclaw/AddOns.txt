@@ -270,3 +270,4 @@ Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: disabled
+Drift: enabled
