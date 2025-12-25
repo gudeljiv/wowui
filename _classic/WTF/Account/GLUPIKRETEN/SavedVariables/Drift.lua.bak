@@ -16,10 +16,10 @@ DriftPoints = {
 },
 ["AuctionFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -103.4711837768555,
-["xOfs"] = 280.95263671875,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -124.1059875488281,
+["xOfs"] = -216.8038177490234,
 },
 ["SideDressUpFrame"] = {
 ["relativeTo"] = "UIParent",
