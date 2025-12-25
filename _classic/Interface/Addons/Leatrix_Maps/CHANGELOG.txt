@@ -1,4 +1,7 @@
-﻿1.15.113 - 12th December 2025
+﻿1.15.115 - 24th December 2025
+- Merry Christmas!
+
+1.15.113 - 12th December 2025
 - PTR (2.5.5): Added additional points of interest icons for the new zones added in Burning Crusade Classic Anniversary.
 
 1.15.111 - 26th November 2025

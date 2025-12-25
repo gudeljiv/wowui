@@ -1,4 +1,7 @@
-﻿1.15.113 - 12th December 2025
+﻿1.15.115 - 24th December 2025
+- Merry Christmas!
+
+1.15.113 - 12th December 2025
 - Sounds updated to game version 1.15.8.64858 (Dec 9 2025) (11508).
 - PTR (2.5.5): Sounds updated to game version 2.5.5.64796 (Dec 5 2025) (20505).
 

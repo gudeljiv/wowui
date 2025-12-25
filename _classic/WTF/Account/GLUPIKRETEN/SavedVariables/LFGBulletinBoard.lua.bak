@@ -4,7 +4,7 @@ GroupBulletinBoardDB = {
 ["HeadersStartFolded"] = true,
 ["CustomFilters"] = {
 ["BLOOD"] = {
-["sortIdx"] = 1,
+["sortIdx"] = 2,
 ["levels"] = {
 0,
 100,
@@ -17,8 +17,21 @@ GroupBulletinBoardDB = {
 ["isHidden"] = true,
 ["key"] = "BLOOD",
 },
+["BOOSTS"] = {
+["sortIdx"] = 3,
+["levels"] = {
+0,
+100,
+},
+["name"] = "Boosting Services",
+["tags"] = {
+["enUS"] = "boost boosting",
+["enGB"] = "boost boosting",
+},
+["key"] = "BOOSTS",
+},
 ["BRE"] = {
-["sortIdx"] = 1,
+["sortIdx"] = 2,
 ["levels"] = {
 0,
 100,
@@ -31,21 +44,21 @@ GroupBulletinBoardDB = {
 ["isHidden"] = true,
 ["key"] = "BRE",
 },
-["BOOSTS"] = {
-["sortIdx"] = 2,
+["USER_CATEGORY_1"] = {
+["sortIdx"] = 1,
 ["levels"] = {
 0,
 100,
 },
-["name"] = "Boosting Services",
+["name"] = "Leveling",
 ["tags"] = {
-["enUS"] = "boost boosting",
-["enGB"] = "boost boosting",
+["enGB"] = "leveling lvling",
+["enUS"] = "leveling lvling",
 },
-["key"] = "BOOSTS",
+["key"] = "USER_CATEGORY_1",
 },
 ["INCUR"] = {
-["sortIdx"] = 2,
+["sortIdx"] = 3,
 ["levels"] = {
 0,
 100,
@@ -463,9 +476,9 @@ GroupBulletinBoardDB = {
 ["BFD"] = "",
 ["HOLLOW"] = "",
 ["ONY"] = "",
-["ZA"] = "",
+["TOTC"] = "",
 ["BWL"] = "",
-["DMW"] = "",
+["ZA"] = "",
 ["EYE"] = "",
 ["RAMPS"] = "",
 ["VOA"] = "",
@@ -487,7 +500,7 @@ GroupBulletinBoardDB = {
 ["CRYPTS"] = "",
 ["MECH"] = "",
 ["MAG"] = "",
-["TOTC"] = "",
+["DMW"] = "",
 ["UK"] = "",
 ["OHB"] = "",
 ["AV"] = "",

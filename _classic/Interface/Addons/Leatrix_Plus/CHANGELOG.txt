@@ -1,4 +1,7 @@
-﻿1.15.114 - 18th December 2025
+﻿1.15.115 - 24th December 2025
+- Merry Christmas!
+
+1.15.114 - 18th December 2025
 - For 'Enhance minimap' ('Interface'), the 'Hide the clock' setting will now work as intended.
 
 1.15.111 - 26th November 2025

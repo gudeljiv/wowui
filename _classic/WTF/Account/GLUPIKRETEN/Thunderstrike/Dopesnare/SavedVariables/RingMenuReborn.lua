@@ -6,17 +6,17 @@ RadialWheelDB = {
 RadialWheelProfiles = {
 {
 ["rotation"] = 0,
-["dismissOnUse"] = true,
-["bgSize"] = 1.5,
+["dismissOnUse"] = false,
+["slotCount"] = 12,
 ["slotStart"] = 13,
 ["bgTint"] = {
-["red"] = 0,
-["blue"] = 0,
-["alpha"] = 0.5,
 ["green"] = 0,
+["alpha"] = 0.5,
+["blue"] = 0,
+["red"] = 0,
 },
 ["quickCast"] = false,
-["slotCount"] = 12,
-["size"] = 100,
+["bgSize"] = 1.5,
+["size"] = 110,
 },
 }

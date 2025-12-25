@@ -435,9 +435,9 @@ PlaterDB = {
 },
 [3237] = {
 ["isChanneled"] = false,
-["source"] = "Rot Hide Mystic",
+["source"] = "Rot Hide Graverobber",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1773,
+["npcID"] = 1941,
 },
 [412800] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -685,9 +685,9 @@ PlaterDB = {
 },
 [72] = {
 ["isChanneled"] = false,
-["source"] = "Theramore Marine",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3385,
+["source"] = "Lieutenant Benedict",
+["npcID"] = 3192,
 },
 [7057] = {
 ["isChanneled"] = false,
@@ -1520,11 +1520,11 @@ PlaterDB = {
 ["source"] = "Brother Malach",
 ["npcID"] = 5661,
 },
-[2608] = {
+[20816] = {
 ["isChanneled"] = false,
+["source"] = "Witherbark Shadowcaster",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Bloodfury Ambusher",
-["npcID"] = 4025,
+["npcID"] = 2553,
 },
 [642] = {
 ["encounterName"] = "Commander Springvale",
@@ -1672,13 +1672,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 647,
 },
-[15531] = {
-["encounterName"] = "Amnennar the Coldbringer",
-["source"] = "Amnennar the Coldbringer",
-["encounterID"] = 2785,
+[2608] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7358,
+["source"] = "Bloodfury Ambusher",
+["npcID"] = 4025,
 },
 [12470] = {
 ["encounterName"] = "Bloodmage Thalnos",
@@ -2431,11 +2429,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 1114,
 },
-[19731] = {
+[17685] = {
 ["isChanneled"] = false,
-["source"] = "Traalum",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 417,
+["source"] = "Ambereye Reaver",
+["npcID"] = 11786,
 },
 [13446] = {
 ["isChanneled"] = false,
@@ -2443,11 +2441,11 @@ PlaterDB = {
 ["source"] = "Deeprot Stomper",
 ["npcID"] = 13141,
 },
-[5708] = {
+[446639] = {
 ["isChanneled"] = false,
+["source"] = "Vengeful Ancient",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Wiry Swoop",
-["npcID"] = 2969,
+["npcID"] = 221263,
 },
 [45] = {
 ["isChanneled"] = false,
@@ -2461,11 +2459,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5676,
 },
-[17685] = {
+[15500] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Ambereye Reaver",
-["npcID"] = 11786,
+["source"] = "Twilight Dark Shaman",
+["npcID"] = 222044,
 },
 [6589] = {
 ["isChanneled"] = false,
@@ -2523,11 +2521,13 @@ PlaterDB = {
 ["source"] = "Quilguard Champion",
 ["npcID"] = 4623,
 },
-[12551] = {
+[9482] = {
+["encounterName"] = "Galgann Firehammer",
+["source"] = "Galgann Firehammer",
+["npcID"] = 7291,
 ["isChanneled"] = false,
-["source"] = "Zerillis",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 10082,
+["encounterID"] = 552,
 },
 [15588] = {
 ["source"] = "Vanndar Stormpike",
@@ -2541,11 +2541,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 416,
 },
-[15620] = {
+[7814] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Baelog",
-["npcID"] = 6906,
+["source"] = "Lynna",
+["npcID"] = 1863,
 },
 [7810] = {
 ["isChanneled"] = false,
@@ -2553,13 +2553,11 @@ PlaterDB = {
 ["source"] = "Tanggore",
 ["npcID"] = 1860,
 },
-[9482] = {
-["encounterName"] = "Galgann Firehammer",
-["source"] = "Galgann Firehammer",
-["npcID"] = 7291,
+[12551] = {
 ["isChanneled"] = false,
+["source"] = "Zerillis",
 ["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 552,
+["npcID"] = 10082,
 },
 [13582] = {
 ["isChanneled"] = false,
@@ -2760,11 +2758,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3633,
 },
-[23840] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Unknown",
-["npcID"] = 417,
+[8014] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Kolkar Invader",
+["npcID"] = 9524,
 },
 [64495] = {
 ["encounterName"] = "Kel'Thuzad",
@@ -2780,11 +2778,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 942,
 },
-[17143] = {
+[7107] = {
 ["isChanneled"] = false,
-["source"] = "Scarlet Champion",
+["source"] = "Shadowfang Wolfguard",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4302,
+["npcID"] = 3854,
 },
 [9906] = {
 ["isChanneled"] = false,
@@ -2822,11 +2820,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3203,
 },
-[3010] = {
+[6016] = {
 ["isChanneled"] = false,
-["source"] = "Bear",
+["source"] = "Wrathtail Razortail",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 5274,
+["npcID"] = 3712,
 },
 [744] = {
 ["isChanneled"] = false,
@@ -2870,17 +2868,17 @@ PlaterDB = {
 ["source"] = "Stone Keeper",
 ["npcID"] = 4857,
 },
-[22817] = {
+[23840] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
-["source"] = "Guard Fengus",
-["npcID"] = 14321,
+["source"] = "Unknown",
+["npcID"] = 417,
 },
-[7107] = {
+[12160] = {
 ["isChanneled"] = false,
-["source"] = "Shadowfang Wolfguard",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3854,
+["source"] = "Grimtotem Sorcerer",
+["npcID"] = 11913,
 },
 [420825] = {
 ["isChanneled"] = false,
@@ -2948,11 +2946,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4543,
 },
-[12024] = {
+[3010] = {
 ["isChanneled"] = false,
-["source"] = "Kolkar Wrangler",
+["source"] = "Bear",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3272,
+["npcID"] = 5274,
 },
 [7043] = {
 ["isChanneled"] = false,
@@ -3055,11 +3053,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 3475,
 },
-[12160] = {
+[17143] = {
 ["isChanneled"] = false,
+["source"] = "Scarlet Champion",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Grimtotem Sorcerer",
-["npcID"] = 11913,
+["npcID"] = 4302,
 },
 [8134] = {
 ["isChanneled"] = false,
@@ -3209,11 +3207,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 4306,
 },
-[13375] = {
-["isChanneled"] = false,
-["source"] = "Azzere the Skyblade",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 5834,
+[4134] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Burning Blade Bruiser",
+["npcID"] = 3379,
 },
 [8268] = {
 ["isChanneled"] = false,
@@ -3382,8 +3380,8 @@ PlaterDB = {
 [6268] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Bloodtalon Taillasher",
-["npcID"] = 3122,
+["source"] = "Kul Tiras Sailor",
+["npcID"] = 3128,
 },
 [3148] = {
 ["isChanneled"] = false,
@@ -3567,13 +3565,11 @@ PlaterDB = {
 ["source"] = "Dark Iron Sapper",
 ["npcID"] = 1222,
 },
-[6408] = {
-["encounterName"] = "Mr. Smite",
-["type"] = "BUFF",
-["source"] = "Defias Blackguard",
-["encounterID"] = 2745,
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 636,
+[9739] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Palemane Tanner",
+["npcID"] = 2949,
 },
 [6536] = {
 ["isChanneled"] = false,
@@ -3685,11 +3681,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 1860,
 },
-[16555] = {
-["source"] = "Plague Monstrosity",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 8522,
+[6960] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Sister Hatelash",
+["npcID"] = 5785,
 },
 [20805] = {
 ["isChanneled"] = false,
@@ -3918,11 +3914,13 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 2406,
 },
-[2589] = {
+[21687] = {
+["encounterName"] = "Noxxion",
+["source"] = "Noxxion",
+["encounterID"] = 422,
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sickly Refugee",
-["npcID"] = 2054,
+["npcID"] = 13282,
 },
 [19367] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -3966,11 +3964,11 @@ PlaterDB = {
 ["source"] = "Owl",
 ["npcID"] = 7097,
 },
-[19479] = {
-["source"] = "Wraathun",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 417,
+[6668] = {
+["isChanneled"] = false,
+["source"] = "Wrenix's Gizmotronic Apparatus",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 7166,
 },
 [20792] = {
 ["isChanneled"] = false,
@@ -4002,13 +4000,11 @@ PlaterDB = {
 ["source"] = "Unknown",
 ["npcID"] = 416,
 },
-[13009] = {
-["encounterName"] = "Amnennar the Coldbringer",
-["source"] = "Amnennar the Coldbringer",
-["encounterID"] = 2785,
+[4974] = {
 ["isChanneled"] = false,
+["source"] = "Witherbark Troll",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7358,
+["npcID"] = 2552,
 },
 [8269] = {
 ["isChanneled"] = false,
@@ -4110,11 +4106,11 @@ PlaterDB = {
 ["source"] = "Defias Cutpurse",
 ["npcID"] = 94,
 },
-[12258] = {
+[13281] = {
 ["isChanneled"] = false,
-["source"] = "Skeletal Summoner",
+["source"] = "Grimtotem Stomper",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7342,
+["npcID"] = 10759,
 },
 [21909] = {
 ["encounterName"] = "Princess Theradras",
@@ -4124,13 +4120,13 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 429,
 },
-[21687] = {
-["encounterName"] = "Noxxion",
-["source"] = "Noxxion",
-["encounterID"] = 422,
+[5174] = {
+["encounterName"] = "Cookie",
+["source"] = "Cookie",
+["encounterID"] = 2746,
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 13282,
+["npcID"] = 645,
 },
 [25010] = {
 ["isChanneled"] = false,
@@ -4194,17 +4190,17 @@ PlaterDB = {
 ["source"] = "Putridus Satyr",
 ["npcID"] = 11790,
 },
-[7947] = {
-["isChanneled"] = false,
-["source"] = "Deviate Viper",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 5755,
+[19480] = {
+["source"] = "Unknown",
+["type"] = "BUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 417,
 },
-[9532] = {
-["isChanneled"] = false,
-["source"] = "Bristleback Shaman",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2953,
+[6816] = {
+["source"] = "Foulweald Warrior",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3743,
 },
 [113] = {
 ["isChanneled"] = false,
@@ -4218,11 +4214,11 @@ PlaterDB = {
 ["source"] = "Deviate Crocolisk",
 ["npcID"] = 5053,
 },
-[865] = {
+[11762] = {
 ["isChanneled"] = false,
-["source"] = "Slitherblade Tidehunter",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4716,
+["source"] = "Ziltog",
+["npcID"] = 416,
 },
 [3600] = {
 ["isChanneled"] = false,
@@ -4230,11 +4226,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 2630,
 },
-[57566] = {
-["source"] = "Unknown",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 417,
+[14919] = {
+["isChanneled"] = false,
+["source"] = "Cat",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 2734,
 },
 [24259] = {
 ["source"] = "Traalum",
@@ -4268,11 +4264,11 @@ PlaterDB = {
 ["source"] = "Marsh Inkspewer",
 ["npcID"] = 750,
 },
-[20823] = {
+[1753] = {
 ["isChanneled"] = false,
-["source"] = "Gordunni Mage-Lord",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 5239,
+["source"] = "Xevin",
+["npcID"] = 3241,
 },
 [13321] = {
 ["isChanneled"] = false,
@@ -4305,31 +4301,17 @@ PlaterDB = {
 ["source"] = "Futureman",
 ["npcID"] = 3619,
 },
-[8645] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Twiggy Flathead",
-["npcID"] = 6248,
+[10691] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Bloodmage Lynnore",
+["npcID"] = 7506,
 },
-[11962] = {
+[4962] = {
 ["isChanneled"] = false,
-["source"] = "Burning Blade Cultist",
+["source"] = "Plains Creeper",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3199,
-},
-[11970] = {
-["encounterName"] = "Taragaman the Hungerer",
-["source"] = "Taragaman the Hungerer",
-["npcID"] = 11520,
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 2733,
-},
-[3584] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Old Murk-Eye",
-["npcID"] = 391,
+["npcID"] = 2563,
 },
 [15039] = {
 ["isChanneled"] = false,
@@ -4337,17 +4319,29 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 217392,
 },
-[13281] = {
+[3584] = {
 ["isChanneled"] = false,
-["source"] = "Grimtotem Stomper",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 10759,
+["source"] = "Old Murk-Eye",
+["npcID"] = 391,
 },
-[11762] = {
+[1755] = {
 ["isChanneled"] = false,
+["source"] = "CarolBaskin",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Ziltog",
-["npcID"] = 416,
+["npcID"] = 2732,
+},
+[5110] = {
+["isChanneled"] = false,
+["source"] = "Defias Magician",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1726,
+},
+[865] = {
+["isChanneled"] = false,
+["source"] = "Slitherblade Tidehunter",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4716,
 },
 [11770] = {
 ["isChanneled"] = false,
@@ -4367,11 +4361,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3821,
 },
-[19480] = {
-["source"] = "Unknown",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 417,
+[7947] = {
+["isChanneled"] = false,
+["source"] = "Deviate Viper",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 5755,
 },
 [7951] = {
 ["isChanneled"] = false,
@@ -4385,11 +4379,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5708,
 },
-[17227] = {
+[7] = {
 ["isChanneled"] = false,
-["source"] = "Shadowclaw",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2175,
+["source"] = "Desert Mirage",
+["npcID"] = 209742,
 },
 [3472] = {
 ["isChanneled"] = false,
@@ -4411,11 +4405,11 @@ PlaterDB = {
 ["source"] = "Rock Borer",
 ["npcID"] = 11787,
 },
-[14919] = {
-["isChanneled"] = false,
-["source"] = "Cat",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2734,
+[57566] = {
+["source"] = "Unknown",
+["type"] = "BUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 417,
 },
 [415004] = {
 ["isChanneled"] = false,
@@ -4492,11 +4486,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4663,
 },
-[438536] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Nogg",
-["npcID"] = 219663,
+[20823] = {
+["isChanneled"] = false,
+["source"] = "Gordunni Mage-Lord",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 5239,
 },
 [1754] = {
 ["isChanneled"] = false,
@@ -4504,11 +4498,13 @@ PlaterDB = {
 ["source"] = "Cat",
 ["npcID"] = 4126,
 },
-[1755] = {
+[11970] = {
+["encounterName"] = "Taragaman the Hungerer",
+["source"] = "Taragaman the Hungerer",
+["npcID"] = 11520,
 ["isChanneled"] = false,
-["source"] = "CarolBaskin",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2732,
+["encounterID"] = 2733,
 },
 [24963] = {
 ["isChanneled"] = false,
@@ -4516,11 +4512,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 15350,
 },
-[11986] = {
+[14032] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Ragefire Shaman",
-["npcID"] = 11319,
+["source"] = "Sandfury Shadowcaster",
+["npcID"] = 5648,
 },
 [1758] = {
 ["isChanneled"] = false,
@@ -4558,11 +4554,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 202391,
 },
-[7] = {
+[8151] = {
 ["isChanneled"] = false,
+["source"] = "Crag Stalker",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Desert Mirage",
-["npcID"] = 209742,
+["npcID"] = 4126,
 },
 [8147] = {
 ["encounterName"] = "Lord Pythas",
@@ -4580,13 +4576,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 448,
 },
-[6077] = {
-["encounterName"] = "Charlga Razorflank",
-["source"] = "Charlga Razorflank",
-["npcID"] = 4421,
+[415013] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 2778,
+["source"] = "Lunar Stone",
+["npcID"] = 207577,
 },
 [23109] = {
 ["isChanneled"] = false,
@@ -4632,11 +4626,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4038,
 },
-[415013] = {
+[1777] = {
 ["isChanneled"] = false,
+["source"] = "Bluegill Muckdweller",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Lunar Stone",
-["npcID"] = 207577,
+["npcID"] = 1028,
 },
 [1776] = {
 ["isChanneled"] = false,
@@ -4644,11 +4638,13 @@ PlaterDB = {
 ["source"] = "Sickly Refugee",
 ["npcID"] = 2054,
 },
-[1777] = {
+[6077] = {
+["encounterName"] = "Charlga Razorflank",
+["source"] = "Charlga Razorflank",
+["npcID"] = 4421,
 ["isChanneled"] = false,
-["source"] = "Bluegill Muckdweller",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1028,
+["encounterID"] = 2778,
 },
 [11131] = {
 ["encounterName"] = "Gahz'rilla",
@@ -4690,11 +4686,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 2529,
 },
-[8151] = {
+[17227] = {
 ["isChanneled"] = false,
-["source"] = "Crag Stalker",
+["source"] = "Shadowclaw",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4126,
+["npcID"] = 2175,
 },
 [7132] = {
 ["isChanneled"] = false,
@@ -4722,11 +4718,11 @@ PlaterDB = {
 ["source"] = "September",
 ["npcID"] = 2732,
 },
-[4974] = {
+[11986] = {
 ["isChanneled"] = false,
-["source"] = "Witherbark Troll",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2552,
+["source"] = "Ragefire Shaman",
+["npcID"] = 11319,
 },
 [5106] = {
 ["isChanneled"] = false,
@@ -4734,11 +4730,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5419,
 },
-[5110] = {
+[12258] = {
 ["isChanneled"] = false,
-["source"] = "Defias Magician",
+["source"] = "Skeletal Summoner",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1726,
+["npcID"] = 7342,
 },
 [7160] = {
 ["isChanneled"] = false,
@@ -4748,21 +4744,21 @@ PlaterDB = {
 },
 [7164] = {
 ["isChanneled"] = false,
-["source"] = "Lieutenant Benedict",
 ["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Lieutenant Benedict",
 ["npcID"] = 3192,
 },
-[4962] = {
+[11962] = {
 ["isChanneled"] = false,
-["source"] = "Plains Creeper",
+["source"] = "Burning Blade Cultist",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2563,
+["npcID"] = 3199,
 },
-[1753] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Xevin",
-["npcID"] = 3241,
+[438536] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Nogg",
+["npcID"] = 219663,
 },
 [10252] = {
 ["encounterName"] = "Archaedas",
@@ -4784,11 +4780,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 636,
 },
-[6960] = {
+[1742] = {
 ["isChanneled"] = false,
+["source"] = "Cat",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sister Hatelash",
-["npcID"] = 5785,
+["npcID"] = 3035,
 },
 [16460] = {
 ["source"] = "Plagued Insect",
@@ -4802,11 +4798,13 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4117,
 },
-[14032] = {
+[13009] = {
+["encounterName"] = "Amnennar the Coldbringer",
+["source"] = "Amnennar the Coldbringer",
+["encounterID"] = 2785,
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sandfury Shadowcaster",
-["npcID"] = 5648,
+["npcID"] = 7358,
 },
 [8262] = {
 ["isChanneled"] = false,
@@ -4836,13 +4834,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 2774,
 },
-[5174] = {
-["encounterName"] = "Cookie",
-["source"] = "Cookie",
-["encounterID"] = 2746,
+[2589] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 645,
+["source"] = "Sickly Refugee",
+["npcID"] = 2054,
 },
 [2591] = {
 ["isChanneled"] = false,
@@ -4856,11 +4852,11 @@ PlaterDB = {
 ["source"] = "Rogue Flame Spirit",
 ["npcID"] = 4036,
 },
-[10691] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Bloodmage Lynnore",
-["npcID"] = 7506,
+[8645] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Twiggy Flathead",
+["npcID"] = 6248,
 },
 [7891] = {
 ["isChanneled"] = false,
@@ -4868,11 +4864,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 6523,
 },
-[1742] = {
-["isChanneled"] = false,
-["source"] = "Cat",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3035,
+[16555] = {
+["source"] = "Plague Monstrosity",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 8522,
 },
 [2601] = {
 ["isChanneled"] = false,
@@ -4880,11 +4876,11 @@ PlaterDB = {
 ["source"] = "Scarlet Evoker",
 ["npcID"] = 4289,
 },
-[6816] = {
-["source"] = "Foulweald Warrior",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3743,
+[9532] = {
+["isChanneled"] = false,
+["source"] = "Vile Fin Minor Oracle",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1544,
 },
 [11427] = {
 ["isChanneled"] = false,
@@ -4894,9 +4890,9 @@ PlaterDB = {
 },
 [2607] = {
 ["isChanneled"] = false,
-["source"] = "Vile Fin Minor Oracle",
+["source"] = "Deeb",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1544,
+["npcID"] = 1911,
 },
 [12466] = {
 ["encounterName"] = "Mordresh Fire Eye",
@@ -5004,11 +5000,13 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["encounterID"] = 1114,
 },
-[6668] = {
+[10259] = {
+["encounterName"] = "Archaedas",
+["source"] = "Archaedas",
+["npcID"] = 2748,
 ["isChanneled"] = false,
-["source"] = "Wrenix's Gizmotronic Apparatus",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7166,
+["encounterID"] = 554,
 },
 [10251] = {
 ["isChanneled"] = false,
@@ -5086,17 +5084,15 @@ PlaterDB = {
 },
 [3242] = {
 ["isChanneled"] = false,
+["source"] = "Greater Duskbat",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Vampiric Duskbat",
-["npcID"] = 1554,
+["npcID"] = 1553,
 },
-[10259] = {
-["encounterName"] = "Archaedas",
-["source"] = "Archaedas",
-["npcID"] = 2748,
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 554,
+[19479] = {
+["source"] = "Wraathun",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 417,
 },
 [18267] = {
 ["encounterName"] = "Jergosh the Invoker",
@@ -5130,11 +5126,11 @@ PlaterDB = {
 ["source"] = "Thistlefur Ursa",
 ["npcID"] = 3921,
 },
-[9739] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Palemane Tanner",
-["npcID"] = 2949,
+[1604] = {
+["source"] = "Deviate Coiler",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3630,
 },
 [5337] = {
 ["isChanneled"] = false,
@@ -5142,11 +5138,13 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4387,
 },
-[1604] = {
-["source"] = "Deviate Coiler",
-["type"] = "DEBUFF",
+[6408] = {
+["encounterName"] = "Mr. Smite",
+["type"] = "BUFF",
+["source"] = "Defias Blackguard",
+["encounterID"] = 2745,
 ["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3630,
+["npcID"] = 636,
 },
 [19030] = {
 ["isChanneled"] = false,
@@ -5200,18 +5198,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3976,
 },
-[4134] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Burning Blade Bruiser",
-["npcID"] = 3379,
-},
-[467] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Razormane Thornweaver",
-["npcID"] = 3268,
-},
 [8260] = {
 ["encounterName"] = "Herod",
 ["source"] = "Herod",
@@ -5219,6 +5205,18 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 448,
+},
+[467] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Razormane Thornweaver",
+["npcID"] = 3268,
+},
+[13375] = {
+["isChanneled"] = false,
+["source"] = "Azzere the Skyblade",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 5834,
 },
 [14920] = {
 ["isChanneled"] = false,
@@ -5288,11 +5286,11 @@ PlaterDB = {
 ["source"] = "Mudsnout Shaman",
 ["npcID"] = 2373,
 },
-[6016] = {
+[12024] = {
 ["isChanneled"] = false,
-["source"] = "Wrathtail Razortail",
+["source"] = "Kolkar Wrangler",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3712,
+["npcID"] = 3272,
 },
 [20793] = {
 ["isChanneled"] = false,
@@ -5314,11 +5312,11 @@ PlaterDB = {
 ["source"] = "Dark Rider",
 ["npcID"] = 218931,
 },
-[8014] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Kolkar Invader",
-["npcID"] = 9524,
+[22817] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Guard Fengus",
+["npcID"] = 14321,
 },
 [11971] = {
 ["isChanneled"] = false,
@@ -5439,11 +5437,11 @@ PlaterDB = {
 ["source"] = "Kolkar Invader",
 ["npcID"] = 9524,
 },
-[7814] = {
+[15620] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Lynna",
-["npcID"] = 1863,
+["source"] = "Baelog",
+["npcID"] = 6906,
 },
 [5164] = {
 ["isChanneled"] = false,
@@ -5477,17 +5475,17 @@ PlaterDB = {
 ["source"] = "Jugkar Grim'rod",
 ["npcID"] = 5771,
 },
-[15500] = {
+[5708] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Twilight Dark Shaman",
-["npcID"] = 222044,
+["source"] = "Wiry Swoop",
+["npcID"] = 2969,
 },
-[446639] = {
+[19731] = {
 ["isChanneled"] = false,
-["source"] = "Vengeful Ancient",
+["source"] = "Traalum",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 221263,
+["npcID"] = 417,
 },
 [12187] = {
 ["source"] = "Undercity Guardian",
@@ -5849,11 +5847,13 @@ PlaterDB = {
 ["source"] = "Baelog",
 ["npcID"] = 6906,
 },
-[20816] = {
+[15531] = {
+["encounterName"] = "Amnennar the Coldbringer",
+["source"] = "Amnennar the Coldbringer",
+["encounterID"] = 2785,
 ["isChanneled"] = false,
-["source"] = "Witherbark Shadowcaster",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2553,
+["npcID"] = 7358,
 },
 [11431] = {
 ["isChanneled"] = false,
@@ -6128,8 +6128,8 @@ PlaterDB = {
 },
 [11972] = {
 ["isChanneled"] = false,
-["source"] = "Kul Tiras Marine",
 ["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Kul Tiras Marine",
 ["npcID"] = 3129,
 },
 [11980] = {
@@ -9838,21 +9838,21 @@ PlaterDB = {
 [51963] = {
 ["npcID"] = 27829,
 },
-[52219] = {
-["source"] = "Har'koa",
-["event"] = "SPELL_CAST_START",
-["npcID"] = 28401,
+[12551] = {
+["npcID"] = 8920,
 },
 [54138] = {
 ["encounterName"] = "Xevozz",
 ["encounterID"] = 2661,
 ["npcID"] = 29266,
 },
+[52219] = {
+["source"] = "Har'koa",
+["event"] = "SPELL_CAST_START",
+["npcID"] = 28401,
+},
 [33796] = {
 ["npcID"] = 16896,
-},
-[12551] = {
-["npcID"] = 8920,
 },
 [5262] = {
 ["npcID"] = 3197,
@@ -10397,22 +10397,20 @@ PlaterDB = {
 [34019] = {
 ["npcID"] = 19422,
 },
-[57725] = {
-["encounterName"] = "Salram the Fleshcrafter",
-["source"] = "Salramm the Fleshcrafter",
-["encounterID"] = 294,
-["event"] = "SPELL_CAST_START",
-["npcID"] = 26530,
+[51584] = {
+["npcID"] = 26283,
 },
 [59708] = {
 ["encounterName"] = "Ingvar the Plunderer",
 ["encounterID"] = 575,
 ["npcID"] = 23954,
 },
-[66290] = {
+[49537] = {
+["encounterName"] = "The Prophet Tharon'ja",
+["source"] = "The Prophet Tharon'ja",
+["encounterID"] = 375,
 ["event"] = "SPELL_CAST_START",
-["source"] = "Gjalerbron Sleep-Watcher",
-["npcID"] = 23989,
+["npcID"] = 26632,
 },
 [446639] = {
 ["source"] = "Vengeful Ancient",
@@ -11367,15 +11365,17 @@ PlaterDB = {
 [12890] = {
 ["npcID"] = 5709,
 },
-[49537] = {
-["encounterName"] = "The Prophet Tharon'ja",
-["source"] = "The Prophet Tharon'ja",
-["encounterID"] = 375,
+[66290] = {
 ["event"] = "SPELL_CAST_START",
-["npcID"] = 26632,
+["source"] = "Gjalerbron Sleep-Watcher",
+["npcID"] = 23989,
 },
-[51584] = {
-["npcID"] = 26283,
+[57725] = {
+["encounterName"] = "Salram the Fleshcrafter",
+["source"] = "Salramm the Fleshcrafter",
+["encounterID"] = 294,
+["event"] = "SPELL_CAST_START",
+["npcID"] = 26530,
 },
 [55814] = {
 ["encounterName"] = "Eck the Ferocious",
@@ -17787,7 +17787,7 @@ PlaterDB = {
 ["nameplateMotionSpeed"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateGlobalScale"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateShowEnemyMinions"] = "Interface/AddOns/xVermin/Frames/CustomContainers.lua:35",
-["nameplateShowEnemyPets"] = "Interface/AddOns/Plater/Plater.lua:4431",
+["nameplateShowEnemyPets"] = "Interface/AddOns/Plater/Plater.lua:4393",
 ["nameplateShowFriendlyNPCs"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateSelectedScale"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateMinAlphaDistance"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
@@ -17798,11 +17798,11 @@ PlaterDB = {
 ["nameplateOtherTopInset"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateTargetRadialPosition"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateLargeTopInset"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
-["nameplateShowEnemyTotems"] = "Interface/AddOns/Plater/Plater.lua:4431",
+["nameplateShowEnemyTotems"] = "Interface/AddOns/Plater/Plater.lua:4393",
 ["nameplateShowFriendlyGuardians"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
-["nameplateOccludedAlphaMult"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateShowEnemyGuardians"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["NamePlateHorizontalScale"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
+["nameplateOccludedAlphaMult"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateShowOnlyNames"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 ["nameplateRemovalAnimation"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:1574: in function <Interface/AddOns/Plater/Plater.lua:1555>\n",
 },
@@ -20634,22 +20634,22 @@ nil,
 "Mechanar Tinkerer",
 "Tempest Keep: The Mechanar",
 },
+[16067] = {
+"Deathcharger Steed",
+"Naxxramas",
+},
 [21891] = {
 "Avian Ripper",
 "Auchindoun: Sethekk Halls",
-},
-[7012] = {
-"Earthen Sculptor",
-"Uldaman",
-"enUS",
 },
 [19876] = {
 "Lord Robin Daris",
 "Karazhan",
 },
-[16067] = {
-"Deathcharger Steed",
-"Naxxramas",
+[7012] = {
+"Earthen Sculptor",
+"Uldaman",
+"enUS",
 },
 [30111] = {
 "Twilight Worshipper",
@@ -20929,13 +20929,13 @@ nil,
 "Ahn'kahar Guardian",
 "Ahn'kahet: The Old Kingdom",
 },
+[8983] = {
+"Golem Lord Argelmach",
+"Blackrock Depths",
+},
 [11030] = {
 "Mindless Undead",
 "Stratholme",
-},
-[17958] = {
-"Coilfang Defender",
-"Coilfang: The Slave Pens",
 },
 [17990] = {
 "Underbog Mushroom",
@@ -21464,9 +21464,9 @@ nil,
 "Weapon Technician",
 "Blackrock Depths",
 },
-[32353] = {
-"Archavon Warder",
-"Vault of Archavon",
+[9016] = {
+"Bael'Gar",
+"Blackrock Depths",
 },
 [30178] = {
 "Ahn'kahar Swarmer ",
@@ -21480,18 +21480,17 @@ nil,
 "Coilfang Soothsayer",
 "Coilfang: The Slave Pens",
 },
+[9032] = {
+"Hedrum the Creeper",
+"Blackrock Depths",
+},
+[32353] = {
+"Archavon Warder",
+"Vault of Archavon",
+},
 [30338] = {
 "Ahn'kahar Swarmer",
 "Ahn'kahet: The Old Kingdom",
-},
-[4510] = {
-"Heralath Fallowbrook",
-"Razorfen Kraul",
-"enUS",
-},
-[34049] = {
-"Tempest Minion",
-"Vault of Archavon",
 },
 [4526] = {
 "Wind Howler",
@@ -22108,13 +22107,13 @@ nil,
 "Twilight Loreseeker",
 "Blackfathom Deeps",
 },
+[26918] = {
+"Chaotic Rift",
+"The Nexus",
+},
 [5710] = {
 "Jammal'an the Prophet",
 "Sunken Temple",
-},
-[28965] = {
-"Titanium Thunderer",
-"Halls of Lightning",
 },
 [222573] = {
 "Delirious Ancient",
@@ -22451,9 +22450,9 @@ nil,
 "Scarlet Monastery",
 "enUS",
 },
-[27655] = {
-"Mage-Lord Urom",
-"The Oculus",
+[23561] = {
+"Soldier of the Frozen Wastes",
+"Naxxramas",
 },
 [19307] = {
 "Nexus Terror",
@@ -22471,13 +22470,13 @@ nil,
 "Creeping Ooze",
 "Hellfire Citadel: The Shattered Halls",
 },
+[27655] = {
+"Mage-Lord Urom",
+"The Oculus",
+},
 [17420] = {
 "Shattered Hand Heathen",
 "Hellfire Citadel: The Shattered Halls",
-},
-[23561] = {
-"Soldier of the Frozen Wastes",
-"Naxxramas",
 },
 [133912] = {
 "Bloodsworn Defiler",
@@ -22575,13 +22574,13 @@ nil,
 "Apothecary Hummel",
 "Shadowfang Keep",
 },
-[26824] = {
-"Drakkari Raptor Mount",
-"Drak'Tharon Keep",
+[18636] = {
+"Cabal Assassin",
+"Auchindoun: Shadow Labyrinth",
 },
-[9178] = {
-"Burning Spirit",
-"Blackrock Depths",
+[26536] = {
+"Mindless Servant",
+"Utgarde Pinnacle",
 },
 [26696] = {
 "Ymirjar Berserker",
@@ -22592,13 +22591,13 @@ nil,
 "Ragefire Chasm",
 "enUS",
 },
-[24777] = {
-"Sunblade Sentinel",
-"Magister's Terrace",
+[26824] = {
+"Drakkari Raptor Mount",
+"Drak'Tharon Keep",
 },
-[28583] = {
-"Blistering Steamrager",
-"Halls of Lightning",
+[9178] = {
+"Burning Spirit",
+"Blackrock Depths",
 },
 [30662] = {
 "Azure Spellbreaker",
@@ -22625,13 +22624,13 @@ nil,
 "Mage Hunter Initiate",
 "The Nexus",
 },
-[18636] = {
-"Cabal Assassin",
-"Auchindoun: Shadow Labyrinth",
+[24777] = {
+"Sunblade Sentinel",
+"Magister's Terrace",
 },
-[26792] = {
-"Crystalline Protector",
-"The Nexus",
+[24745] = {
+"Pure Energy",
+"Magister's Terrace",
 },
 [30918] = {
 "Azure Binder",
@@ -22920,9 +22919,9 @@ nil,
 "Black Guard Sentry",
 "Stratholme",
 },
-[29096] = {
-"Anub'ar Champion",
-"Azjol-Nerub",
+[20908] = {
+"Akkiris Lightning-Waker",
+"Tempest Keep: The Arcatraz",
 },
 [22891] = {
 "Second Fragment Guardian",
@@ -22933,10 +22932,9 @@ nil,
 "Wailing Caverns",
 "enUS",
 },
-[3640] = {
-"Evolving Ectoplasm",
-"Wailing Caverns",
-"enUS",
+[29096] = {
+"Anub'ar Champion",
+"Azjol-Nerub",
 },
 [29128] = {
 "Anub'ar Prime Guard",
@@ -23128,9 +23126,9 @@ nil,
 "Bony Construct",
 "Naxxramas",
 },
-[15464] = {
-"Strength of Earth Totem V",
-"Auchindoun: Sethekk Halls",
+[11370] = {
+"Razzashi Broodwidow",
+"Zul'Gurub",
 },
 [18318] = {
 "Sethekk Initiate",
@@ -23148,22 +23146,22 @@ nil,
 "Garaxxas",
 "Magister's Terrace",
 },
-[11370] = {
-"Razzashi Broodwidow",
-"Zul'Gurub",
+[15464] = {
+"Strength of Earth Totem V",
+"Auchindoun: Sethekk Halls",
 },
 [11338] = {
 "Hakkari Shadowcaster",
 "Zul'Gurub",
 },
-[3868] = {
-"Blood Seeker",
-"Shadowfang Keep",
-"enUS",
+[18638] = {
+"Cabal Zealot",
+"Auchindoun: Shadow Labyrinth",
 },
-[24683] = {
-"Sunblade Mage Guard",
-"Magister's Terrace",
+[11322] = {
+"Searing Blade Cultist",
+"Ragefire Chasm",
+"enUS",
 },
 [24715] = {
 "High Explosive Sheep",
@@ -23174,9 +23172,10 @@ nil,
 "Shadowfang Keep",
 "enUS",
 },
-[18638] = {
-"Cabal Zealot",
-"Auchindoun: Shadow Labyrinth",
+[3868] = {
+"Blood Seeker",
+"Shadowfang Keep",
+"enUS",
 },
 [3872] = {
 "Deathsworn Captain",
@@ -23214,19 +23213,18 @@ nil,
 "Ormorok the Tree-Shaper",
 "The Nexus",
 },
-[11322] = {
-"Searing Blade Cultist",
-"Ragefire Chasm",
-"enUS",
+[26730] = {
+"Mage Slayer",
+"The Nexus",
 },
 [5775] = {
 "Verdan the Everliving",
 "Wailing Caverns",
 "enUS",
 },
-[26730] = {
-"Mage Slayer",
-"The Nexus",
+[24683] = {
+"Sunblade Mage Guard",
+"Magister's Terrace",
 },
 [33998] = {
 "Tempest Minion",
@@ -23317,9 +23315,10 @@ nil,
 "Zul'Farrak",
 "enUS",
 },
-[20908] = {
-"Akkiris Lightning-Waker",
-"Tempest Keep: The Arcatraz",
+[3640] = {
+"Evolving Ectoplasm",
+"Wailing Caverns",
+"enUS",
 },
 [16024] = {
 "Embalming Slime",
@@ -23435,9 +23434,9 @@ nil,
 "Anomalus",
 "The Nexus",
 },
-[24745] = {
-"Pure Energy",
-"Magister's Terrace",
+[11353] = {
+"Gurubashi Blood Drinker",
+"Zul'Gurub",
 },
 [18639] = {
 "Cabal Spellbinder",
@@ -23447,13 +23446,13 @@ nil,
 "Soul Weaver",
 "Naxxramas",
 },
-[26536] = {
-"Mindless Servant",
-"Utgarde Pinnacle",
+[28583] = {
+"Blistering Steamrager",
+"Halls of Lightning",
 },
-[11353] = {
-"Gurubashi Blood Drinker",
-"Zul'Gurub",
+[26792] = {
+"Crystalline Protector",
+"The Nexus",
 },
 [10411] = {
 "Eye of Naxxramas",
@@ -23645,9 +23644,9 @@ nil,
 "Negaton Warp-Master",
 "Tempest Keep: The Arcatraz",
 },
-[26918] = {
-"Chaotic Rift",
-"The Nexus",
+[28965] = {
+"Titanium Thunderer",
+"Halls of Lightning",
 },
 [8889] = {
 "Anvilrage Overseer",
@@ -23912,13 +23911,14 @@ nil,
 "Mennu's Healing Ward",
 "Coilfang: The Slave Pens",
 },
-[9032] = {
-"Hedrum the Creeper",
-"Blackrock Depths",
+[34049] = {
+"Tempest Minion",
+"Vault of Archavon",
 },
-[9016] = {
-"Bael'Gar",
-"Blackrock Depths",
+[4510] = {
+"Heralath Fallowbrook",
+"Razorfen Kraul",
+"enUS",
 },
 [12203] = {
 "Landslide",
@@ -24144,9 +24144,9 @@ nil,
 "Stonevault Pillager",
 "Uldaman",
 },
-[8983] = {
-"Golem Lord Argelmach",
-"Blackrock Depths",
+[17958] = {
+"Coilfang Defender",
+"Coilfang: The Slave Pens",
 },
 [17938] = {
 "Coilfang Observer",
@@ -24538,7 +24538,6 @@ nil,
 ["aura_cooldown_edge_texture"] = "Interface\\AddOns\\Plater\\images\\transparent",
 ["castbar_icon_x_offset"] = 1,
 ["debuff_show_cc"] = false,
-["extra_icon_height"] = 28,
 ["transparency_behavior"] = 2,
 ["aura_consolidate"] = true,
 ["extra_icon_width"] = 28,
@@ -24608,12 +24607,12 @@ nil,
 ["nameplateSelectedScale"] = "1.15",
 ["nameplatePersonalShowAlways"] = "1",
 ["nameplateMinAlphaDistance"] = "-158489.31924611",
-["nameplateShowEnemyGuardians"] = "0",
+["nameplateSelfAlpha"] = "1",
 ["nameplateShowFriends"] = "0",
 ["nameplateMotion"] = "1",
-["NamePlateHorizontalScale"] = "1",
+["nameplateShowEnemyGuardians"] = "0",
 ["nameplateMinScale"] = "1",
-["nameplateSelfAlpha"] = "1",
+["NamePlateHorizontalScale"] = "1",
 ["nameplateOtherTopInset"] = "0.085",
 ["nameplateRemovalAnimation"] = "0",
 ["nameplateSelfBottomInset"] = "0.32596862792969",
@@ -24625,7 +24624,7 @@ nil,
 ["nameplateTargetRadialPosition"] = "1",
 ["nameplateShowFriendlyPets"] = "0",
 },
-["login_counter"] = 12126,
+["login_counter"] = 12130,
 ["extra_icon_caster_name"] = false,
 ["aura_cooldown_show_swipe"] = false,
 ["show_aggro_flash"] = true,
@@ -24744,8 +24743,8 @@ nil,
 ["big_actortitle_text_size"] = 10,
 ["percent_text_font"] = "Accidental Presidency",
 ["buff_frame_y_offset"] = 0,
-["percent_text_outline"] = "NONE",
-["level_text_alpha"] = 1,
+["quest_enabled"] = true,
+["spellname_text_size"] = 6,
 ["health_incombat"] = {
 120,
 12,
@@ -24755,9 +24754,9 @@ nil,
 12,
 },
 ["percent_text_enabled"] = true,
-["quest_enabled"] = true,
+["level_text_alpha"] = 1,
 ["percent_show_health"] = true,
-["spellname_text_size"] = 6,
+["percent_text_outline"] = "NONE",
 ["level_text_enabled"] = true,
 },
 ["friendlynpc"] = {
@@ -27738,16 +27737,16 @@ nil,
 ["Add - Explode on Die [P]"] = 1,
 ["Aura While Casting [P]"] = 1,
 ["Cast - Big Alert"] = 14,
-["Cast - Stop Casting"] = 4,
-["Color Change"] = 1,
 ["Cast - On Going Cast [P]"] = 2,
 ["Spiteful Affix"] = 3,
+["Countdown"] = 12,
 ["Auto Set Skull"] = 11,
+["Color Change"] = 1,
 ["Cast - Glowing [P]"] = 10,
 ["Add - Non Elite Trash [P]"] = 4,
 ["Unit - Important"] = 11,
 ["Aura Border Color"] = 1,
-["Countdown"] = 12,
+["Cast - Stop Casting"] = 4,
 ["Fixate by Unit Buff [P]"] = 2,
 ["Cast - Frontal Cone"] = 15,
 ["Fixate"] = 11,
@@ -27780,6 +27779,7 @@ nil,
 },
 },
 ["cast_statusbar_texture"] = "xVerminClean",
+["extra_icon_height"] = 28,
 ["first_run3"] = true,
 ["auto_toggle_stacking"] = {
 ["party"] = false,
@@ -27850,9 +27850,9 @@ nil,
 ["Spiteful Affix"] = 3,
 ["Cast - Shield Interrupt"] = 2,
 ["Add - Non Elite Trash [P]"] = 4,
-["Cast - On Going Cast [P]"] = 2,
 ["Cast - Stop Casting"] = 4,
 ["Countdown"] = 12,
+["Cast - On Going Cast [P]"] = 2,
 ["Fixate by Unit Buff [P]"] = 2,
 ["Cast - Frontal Cone"] = 15,
 ["Add - Explode on Die [P]"] = 1,
@@ -33081,13 +33081,13 @@ nil,
 ["Options"] = {
 },
 ["Author"] = "Kastfall-Azralon",
-["version"] = -1,
+["Name"] = "Reorder Nameplate [Plater]",
 ["Desc"] = "Function Plater.UpdatePlateSize from Plater.lua exported to scritps.",
 ["Hooks"] = {
 ["Nameplate Added"] = "\n\n-- exported function Plater.UpdatePlateSize() from Plater.lua\n--this is for advanced users which wants to reorder the nameplate frame at their desire\n\n\n\nfunction (self, unitId, unitFrame, envTable)\n    \n    --check if there's a type of unit on this nameplate\n    local plateFrame = unitFrame:GetParent()\n    if (not plateFrame.actorType) then\n        return\n    end\n    \n    --get all the frames and cache some variables\n    local ACTORTYPE_ENEMY_PLAYER = \"enemyplayer\"\n    local profile = Plater.db.profile\n    local DB_PLATE_CONFIG = profile.plate_config\n    local isInCombat = Plater.IsInCombat()\n    local actorType = plateFrame.actorType\n    \n    local unitFrame = plateFrame.unitFrame\n    local healthBar = unitFrame.healthBar\n    local castBar = unitFrame.castBar\n    local powerBar = unitFrame.powerBar\n    local buffFrame1 = unitFrame.BuffFrame\n    local buffFrame2 = unitFrame.BuffFrame2\n    \n    --use in combat bars when in pvp\n    if (plateFrame.actorType == ACTORTYPE_ENEMY_PLAYER) then\n        if ((Plater.ZoneInstanceType == \"pvp\" or Plater.ZoneInstanceType == \"arena\") and DB_PLATE_CONFIG.player.pvp_always_incombat) then\n            isInCombat = true\n        end\n    end\n    \n    --get the config for this actor type\n    local plateConfigs = DB_PLATE_CONFIG [actorType]\n    --get the config key based if the player is in combat\n    local castBarConfigKey, healthBarConfigKey, manaConfigKey = Plater.GetHashKey (isInCombat)\n    \n    --get the width and height from what the user set in the options panel\n    local healthBarWidth, healthBarHeight = unitFrame.customHealthBarWidth or plateConfigs [healthBarConfigKey][1], unitFrame.customHealthBarHeight or plateConfigs [healthBarConfigKey][2]\n    local castBarWidth, castBarHeight = unitFrame.customCastBarWidth or plateConfigs [castBarConfigKey][1], unitFrame.customCastBarHeight or plateConfigs [castBarConfigKey][2]\n    local powerBarWidth, powerBarHeight = unitFrame.customPowerBarHeight or plateConfigs [manaConfigKey][1], unitFrame.customPowerBarHeight or plateConfigs [manaConfigKey][2]\n    \n    --calculate the offset for the cast bar, this is done due to the cast bar be anchored to topleft and topright\n    local castBarOffSetX = (healthBarWidth - castBarWidth) / 2\n    local castBarOffSetY = plateConfigs.castbar_offset\n    \n    --calculate offsets for the power bar\n    local powerBarOffSetX = (healthBarWidth - powerBarWidth) / 2\n    local powerBarOffSetY = 0\n    \n    --calculate the size deviation for pets\n    local unitType = Plater.GetUnitType (plateFrame)\n    if (unitType == \"pet\") then\n        healthBarHeight = healthBarHeight * Plater.db.profile.pet_height_scale\n        healthBarWidth = healthBarWidth * Plater.db.profile.pet_width_scale\n        \n    elseif (unitType == \"minus\") then\n        healthBarHeight = healthBarHeight * Plater.db.profile.minor_height_scale\n        healthBarWidth = healthBarWidth * Plater.db.profile.minor_width_scale\n    end\n    \n    --unit frame - is set to be the same size as the plateFrame\n    unitFrame:ClearAllPoints()\n    unitFrame:SetAllPoints()\n    \n    --calculates the health bar anchor points\n    --it will always be placed in the center of the nameplate area (where it accepts mouse clicks) \n    local xOffSet = (plateFrame:GetWidth() - healthBarWidth) / 2\n    local yOffSet = (plateFrame:GetHeight() - healthBarHeight) / 2\n    \n    --set the health bar point\n    healthBar:ClearAllPoints()\n    PixelUtil.SetPoint (healthBar, \"topleft\", unitFrame, \"topleft\", xOffSet + profile.global_offset_x, -yOffSet + profile.global_offset_y)\n    PixelUtil.SetPoint (healthBar, \"bottomright\", unitFrame, \"bottomright\", -xOffSet + profile.global_offset_x, yOffSet + profile.global_offset_y)\n    \n    --set the cast bar point and size\n    castBar:ClearAllPoints()\n    PixelUtil.SetPoint (castBar, \"topleft\", healthBar, \"bottomleft\", castBarOffSetX, castBarOffSetY)\n    PixelUtil.SetPoint (castBar, \"topright\", healthBar, \"bottomright\", -castBarOffSetX, castBarOffSetY)\n    PixelUtil.SetHeight (castBar, castBarHeight)\n    PixelUtil.SetSize (castBar.Icon, castBarHeight, castBarHeight)\n    PixelUtil.SetSize (castBar.BorderShield, castBarHeight * 1.4, castBarHeight * 1.4)\n    \n    --set the power bar point and size\n    powerBar:ClearAllPoints()\n    PixelUtil.SetPoint (powerBar, \"topleft\", healthBar, \"bottomleft\", powerBarOffSetX, powerBarOffSetY)\n    PixelUtil.SetPoint (powerBar, \"topright\", healthBar, \"bottomright\", -powerBarOffSetX, powerBarOffSetY)\n    PixelUtil.SetHeight (powerBar, powerBarHeight)\n    \n    --power bar are hidden by default, show it if there's a custom size for it\n    if (unitFrame.customPowerBarWidth and unitFrame.customPowerBarHeight) then\n        powerBar:SetUnit (unitFrame.unit)\n    end\n    \n    --aura frames\n    local bf1Anchor = Plater.db.profile.aura_frame1_anchor\n    Plater.SetAnchor (buffFrame1, {side = bf1Anchor.side, x = bf1Anchor.x, y = bf1Anchor.y + plateConfigs.buff_frame_y_offset}, unitFrame.healthBar, (Plater.db.profile.aura_grow_direction or 2) == 2)\n    \n    local bf2Anchor = Plater.db.profile.aura_frame2_anchor\n    Plater.SetAnchor (buffFrame2, {side = bf2Anchor.side, x = bf2Anchor.x, y = bf2Anchor.y + plateConfigs.buff_frame_y_offset}, unitFrame.healthBar, (Plater.db.profile.aura2_grow_direction or 2) == 2)\n    \nend\n\n\n",
 },
-["Name"] = "Reorder Nameplate [Plater]",
 ["Time"] = 1596791840,
+["version"] = -1,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -33452,15 +33452,15 @@ nil,
 },
 },
 ["Author"] = "Ditador-Azralon",
-["version"] = -1,
+["Name"] = "Cast Bar Icon Settings [P]",
 ["Desc"] = "Move the icon of the spell cast to the left or right side of the nameplate.",
 ["Hooks"] = {
 ["Cast Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.UpdateIconPosition (unitFrame)\n    self.ThrottleUpdate = -1\n    \nend\n\n\n",
 ["Cast Start"] = "function (self, unitId, unitFrame, envTable)\n    \n    unitFrame.castBar.BorderShield:SetDrawLayer(\"artwork\")\n    envTable.UpdateIconPosition (unitFrame)\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 ["Constructor"] = "function (self, unitId, unitFrame, envTable, modTable)\n    \n    --private:\n    function envTable.UpdateIconPosition (unitFrame)\n        local castBar = unitFrame.castBar\n        local icon = castBar.Icon\n        local noInterruptTexture = castBar.BorderShield\n        \n        if (modTable.config.showIcon) then\n            icon:ClearAllPoints()\n            \n            if (modTable.config.iconOnLeftSide) then\n                if (modTable.config.useFullSize) then\n                    icon:SetPoint (\"topright\", unitFrame.healthBar, \"topleft\", modTable.config.iconPadding, modTable.config.iconSizeOffset)\n                    icon:SetPoint (\"bottomright\", unitFrame.castBar, \"bottomleft\", modTable.config.iconPadding, -modTable.config.iconSizeOffset)\n                    \n                else\n                    \n                    icon:SetPoint (\"topright\", unitFrame.castBar, \"topleft\", modTable.config.iconPadding, modTable.config.iconSizeOffset)\n                    icon:SetPoint (\"bottomright\", unitFrame.castBar, \"bottomleft\", modTable.config.iconPadding, -modTable.config.iconSizeOffset)\n                end\n                \n            else\n                if (modTable.config.useFullSize) then\n                    icon:SetPoint (\"topleft\", unitFrame.healthBar, \"topright\", modTable.config.iconPadding, modTable.config.iconSizeOffset)\n                    icon:SetPoint (\"bottomleft\", unitFrame.castBar, \"bottomright\", modTable.config.iconPadding, -modTable.config.iconSizeOffset)\n                    \n                else\n                    \n                    icon:SetPoint (\"topleft\", unitFrame.castBar, \"topright\", modTable.config.iconPadding, modTable.config.iconSizeOffset)\n                    icon:SetPoint (\"bottomleft\", unitFrame.castBar, \"bottomright\", modTable.config.iconPadding, -modTable.config.iconSizeOffset)\n                end\n            end\n            \n            icon:SetWidth (icon:GetHeight())\n            icon:Show()\n        else\n            icon:Hide()\n        end\n        \n        if (modTable.config.showTexture and not castBar.canInterrupt) then\n            noInterruptTexture:Show()\n            \n            local texturePath = modTable.config.iconTexturePath\n            texturePath = texturePath:gsub(\"//\", \"/\")\n            texturePath = texturePath:gsub(\"\\\\\", \"/\")\n            \n            noInterruptTexture:SetTexture (texturePath)\n            noInterruptTexture:SetTexCoord (0, 1, 0, 1)\n            \n            if (modTable.config.desaturatedTexture) then\n                noInterruptTexture:SetDesaturated (modTable.config.desaturatedTexture)\n            else\n                noInterruptTexture:SetVertexColor (DetailsFramework:ParseColors (modTable.config.textureColor))\n            end\n            \n            noInterruptTexture:SetSize (modTable.config.textureWidth, castBar:GetHeight() + modTable.config.textureHeightMod)\n            noInterruptTexture:ClearAllPoints()\n            noInterruptTexture:SetPoint (\"center\", castBar, \"left\", modTable.config.texturePosition, 0)\n            noInterruptTexture:SetAlpha (modTable.config.textureAlpha)\n        else\n            noInterruptTexture:Hide()\n        end\n    end\nend",
 },
-["Name"] = "Cast Bar Icon Settings [P]",
 ["Time"] = 1597097268,
+["version"] = -1,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -33576,14 +33576,14 @@ nil,
 },
 },
 ["Author"] = "Kastfall-Azralon",
-["version"] = -1,
+["Name"] = "Attacking Specific Unit [Plater]",
 ["Desc"] = "Change the nameplate color if the unit is attacking a specific unit like Monk's Ox Statue or Druid's Treants. You may edit which units it track in the constructor script.",
 ["Hooks"] = {
 ["Initialization"] = "function (modTable)\n    --list of npcs and their colors, can be inserted:\n    --name of the unit\n    --name of the unit in lower case\n    --npcID of the unit\n    \n    --color can be added as:\n    --color names: \"red\", \"yellow\"\n    --color hex: \"#FF0000\", \"#FFFF00\"\n    --color table: {1, 0, 0}, {1, 1, 0}    \n    \n    modTable.changeBarColor = modTable.config.changeBarColor\n    modTable.changeBorderColor = modTable.config.changeBorderColor\n    modTable.resetColors = modTable.config.resetColors\n    \n    modTable.ListOfNpcs = {\n        [61146] = modTable.config.color, --\"olive\", --monk statue npcID\n        [103822] = modTable.config.color, --\"olive\", --druid treant npcID\n        [15352] = modTable.config.color, --\"olive\", --shaman elemental\n        [95072] = modTable.config.color, --\"olive\", --shaman greater earth elemental npcID\n        [61056] = modTable.config.color, --\"olive\", --shaman primal earth elemental npcID\n        \n    }\nend\n\n\n",
 ["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if not unitId then\n        return\n    end\n    --get the GUID of the target of the unit\n    local targetGUID = UnitGUID (unitId .. \"target\")\n    \n    if (targetGUID) then\n        \n        --get the npcID of the target\n        local npcID = Plater.GetNpcIDFromGUID (targetGUID)\n        local unitName = UnitName (unitId .. \"target\")\n        local unitNameLower = string.lower (unitName)\n        \n        --check if the npcID of this unit is in the npc list \n        local color = modTable.ListOfNpcs [npcID] or modTable.ListOfNpcs [unitName] or modTable.ListOfNpcs [unitNameLower]\n        \n        if color then\n            if modTable.changeBarColor then\n                Plater.SetNameplateColor (unitFrame, color)\n            end\n            if modTable.changeBorderColor then\n                Plater.SetBorderColor (unitFrame, color)\n            end\n            unitFrame.attackingSpecificUnitFromMod = true\n        elseif unitFrame.attackingSpecificUnitFromMod and modTable.resetColors then\n            if modTable.changeBorderColor then\n                Plater.SetBorderColor (unitFrame)\n            end\n            if modTable.changeBarColor then\n                Plater.RefreshNameplateColor (unitFrame)\n            end\n            unitFrame.attackingSpecificUnitFromMod = false\n        end\n    end\nend",
 },
-["Name"] = "Attacking Specific Unit [Plater]",
 ["Time"] = 1620377377,
+["version"] = -1,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -33620,7 +33620,7 @@ nil,
 ["Options"] = {
 },
 ["Author"] = "Izimode-Azralon",
-["version"] = -1,
+["Name"] = "Combo Points [Plater]",
 ["Desc"] = "Show combo points above the nameplate for Druid Feral and Rogues.",
 ["Hooks"] = {
 ["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
@@ -33632,8 +33632,8 @@ nil,
 ["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
 ["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {0/128, 21/128, 101/128, 122/128},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {3/128, 18/128, 81/128, 96/128},\n    }\n    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then\n        textures = {\n            backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n            \n            comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n        }\n    end\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = GetComboPoints(\"player\", \"target\")\n            --UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = (namePlateWidth - sizes.width * comboPoints)  / comboPoints \n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                if i == 1 then\n                    comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace/2, 0)\n                else\n                    comboPoint:SetPoint (\"left\", envTable.ComboPoints[i-1], \"right\", reservedSpace, 0)\n                end\n                \n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
 },
-["Name"] = "Combo Points [Plater]",
 ["Time"] = 1621935143,
+["version"] = -1,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -33675,13 +33675,13 @@ nil,
 ["Options"] = {
 },
 ["Author"] = "Ditador-Azralon",
-["version"] = -1,
+["Name"] = "Aura Reorder [Plater]",
 ["Desc"] = "Reorder buffs and debuffs following the settings set in the constructor.",
 ["Hooks"] = {
 ["Initialization"] = "function (modTable)\n    \n    --ATTENTION: after enabling this mod, you may have to adjust the anchor point at the Buff Settings tab\n    \n    local sortByTime = false\n    local invertSort = false\n    \n    --which auras goes first, assign a value (any number), bigger value goes first\n    local priority = {\n        [\"Vampiric Touch\"] = 50,\n        [\"Shadow Word: Pain\"] = 22,\n        [\"Mind Flay\"] = 5,\n        [\"Pistol Shot\"] = 50,\n        [\"Marked for Death\"] = 99,\n    }\n    \n    -- Sort function - do not touch\n    Plater.db.profile.aura_sort = true\n    \n    \n    function Plater.AuraIconsSortFunction (aura1, aura2)\n        local p1 = priority[aura1.SpellId] or priority[aura1.SpellName] or 1\n        local p2 = priority[aura2.SpellId] or priority[aura2.SpellName] or 1\n        \n        if sortByTime and p1 == p2 then\n            if invertSort then\n                return (aura1.Duration == 0 and 99999999 or aura1.RemainingTime or 0) > (aura2.Duration == 0 and 99999999 or aura2.RemainingTime or 0)\n            else\n                return (aura1.Duration == 0 and 99999999 or aura1.RemainingTime or 0) < (aura2.Duration == 0 and 99999999 or aura2.RemainingTime or 0)\n            end\n        else\n            if invertSort then\n                 return p1 < p2\n            else\n                return p1 > p2\n            end\n        end\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 },
-["Name"] = "Aura Reorder [Plater]",
 ["Time"] = 1608663128,
+["version"] = -1,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -38983,14 +38983,14 @@ nil,
 ["Dont Have Aura"] = 1,
 ["Players Targetting Amount"] = 4,
 ["Color Automation"] = 1,
-["Hide Neutral Units"] = 1,
+["Extra Border"] = 2,
 ["Cast Bar Icon Config"] = 2,
 ["Aura Reorder"] = 3,
-["Combo Points"] = 6,
+["Hide Neutral Units"] = 1,
 ["Attacking Specific Unit"] = 2,
 ["Target Color"] = 3,
 ["Execute Range"] = 1,
-["Extra Border"] = 2,
+["Combo Points"] = 6,
 },
 ["aura_tracker"] = {
 ["buff_tracked"] = {
@@ -39016,6 +39016,10 @@ PlaterLanguage = {
 }
 PlaterLogs = {
 ["_general_logs"] = {
+"2025-12-25 11:37:14 | INIT | Plater-v620-Vanilla | Framework v647 | 1.15.8 | enUS | Dopecoil",
+"2025-12-25 11:12:58 | INIT | Plater-v620-Vanilla | Framework v647 | 1.15.8 | enUS | Dopesnare",
+"2025-12-25 11:08:19 | INIT | Plater-v620-Vanilla | Framework v647 | 1.15.8 | enUS | Dopesnare",
+"2025-12-25 10:47:33 | INIT | Plater-v620-Vanilla | Framework v647 | 1.15.8 | enUS | Dopesnare",
 "2025-12-24 14:38:18 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopesnare",
 "2025-12-24 14:34:47 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopesnare",
 "2025-12-24 14:32:16 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopesnare",
@@ -39031,10 +39035,6 @@ PlaterLogs = {
 "2025-12-23 18:00:27 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Doperage",
 "2025-12-23 17:55:24 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Doperage",
 "2025-12-23 17:54:02 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Doperage",
-"2025-12-23 17:38:05 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopecure",
-"2025-12-23 17:18:39 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Doperage",
-"2025-12-23 15:47:16 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopecoil",
-"2025-12-23 15:44:11 | INIT | Plater-v620-Vanilla | Framework v642 | 1.15.8 | enUS | Dopecoil",
 },
 ["_error_logs"] = {
 },
