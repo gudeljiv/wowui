@@ -8,7 +8,7 @@ local _, xVermin = ...
 
 -- 		if not cast.isUninterruptible then
 -- 			_G.UnitCastingInteruptible = true
--- 		else 
+-- 		else
 -- 			_G.UnitCastingInteruptible = false
 -- 		end
 -- 	end
@@ -22,11 +22,9 @@ local _, xVermin = ...
 -- 	HandleCast(data, unitID, cast, spell_id)
 -- end)
 
-
 -- hooksecurefunc(ClassicCastbars, "PLAYER_TARGET_CHANGED", function(data, unitID, cast, spell_id)
 -- 	HandleCast(data, unitID, cast, spell_id)
 -- end)
-
 
 -- hooksecurefunc(ClassicCastbars, "UNIT_SPELLCAST_START", HandleCast)
 -- hooksecurefunc(ClassicCastbars, "UNIT_SPELLCAST_CHANNEL_START", HandleCast)
@@ -36,7 +34,6 @@ local _, xVermin = ...
 -- hooksecurefunc(ClassicCastbars, "UNIT_SPELLCAST_STOP", function(...) _G.UnitCastingInteruptible = false end)
 -- hooksecurefunc(ClassicCastbars, "UNIT_SPELLCAST_CHANNEL_STOP", function(...) _G.UnitCastingInteruptible = false end)
 -- hooksecurefunc(ClassicCastbars, "UNIT_SPELLCAST_FAILED", function(...) _G.UnitCastingInteruptible = false end)
-
 
 -- hooksecurefunc(ClassicCastbars, "DisplayCastbar", function(...)
 -- 	local arg = {...}
@@ -60,7 +57,6 @@ local _, xVermin = ...
 -- 	end
 -- end)
 
-
 -- local function HandleCast(data, castbar, unitID)
 -- 	-- print("start cast", unitID, castbar, not castbar.isUninterruptible)
 -- 	if unitID == "target" then
@@ -76,9 +72,9 @@ local _, xVermin = ...
 -- 	'ClassicCastbars',
 -- 	function()
 -- 		hooksecurefunc(ClassicCastbars, "DisplayCastbar", HandleCast)
--- 		hooksecurefunc(ClassicCastbars, "HideCastbar", function() 
+-- 		hooksecurefunc(ClassicCastbars, "HideCastbar", function()
 -- 			-- print("stop cast")
--- 			_G.UnitCastingInteruptible = false 
+-- 			_G.UnitCastingInteruptible = false
 -- 		end)
 -- 	end
 -- )

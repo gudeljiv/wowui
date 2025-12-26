@@ -5,7 +5,8 @@ function LBI()
 		for slot = 1, GetContainerNumSlots(bagID) do
 			texture, itemCount, locked, quality, readable, lootable, itemLink = GetContainerItemInfo(bagID, slot)
 			if itemLink then
-				itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(itemLink)
+				itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice =
+					GetItemInfo(itemLink)
 				itemID = GetItemInfoInstant(itemName)
 
 				print(itemCount, itemID, itemName, itemLevel, itemType, itemSubType)
@@ -21,7 +22,6 @@ function LBI()
 			-- end
 		end
 	end
-	
 end
 
 -- local f = CreateFrame('frame')
@@ -59,7 +59,6 @@ end
 -- 	end
 -- )
 
-
 -- local function update()
 -- 	for i = 1, 2000 do
 -- 		local frame_live = 'BGRLiveItemButton' .. i
@@ -73,19 +72,13 @@ end
 -- 	end
 -- end
 
-xVermin.CheckIfLoadedWithTimer(
-	'Baganator_CategoryViewBackpackViewFrame',
-	function()
-		Baganator_CategoryViewBackpackViewFrame:CreateBeautyBorder(8)
-	end
-)
+xVermin.CheckIfLoadedWithTimer("Baganator_CategoryViewBackpackViewFrame", function()
+	Baganator_CategoryViewBackpackViewFrame:CreateBeautyBorder(8)
+end)
 
-xVermin.CheckIfLoadedWithTimer(
-	'Baganator_CategoryViewBankViewFrame',
-	function()
-		Baganator_CategoryViewBankViewFrame:CreateBeautyBorder(8)
-	end
-)
+xVermin.CheckIfLoadedWithTimer("Baganator_CategoryViewBankViewFrame", function()
+	Baganator_CategoryViewBankViewFrame:CreateBeautyBorder(8)
+end)
 
 -- Baganator_CategoryViewBackpackViewFrame:HookScript(
 -- 	'OnShow',
@@ -114,8 +107,3 @@ xVermin.CheckIfLoadedWithTimer(
 -- 		update()
 -- 	end
 -- )
-
-
-
-
-

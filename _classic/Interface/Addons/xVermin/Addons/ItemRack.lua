@@ -26,27 +26,20 @@ local irbf
 -- 	end
 -- )
 
-xVermin.CheckIfLoadedWithTimer(
-	'LibDBIcon10_ItemRack',
-	function()
-		LibDBIcon10_ItemRack:Hide()
-	end
-)
+xVermin.CheckIfLoadedWithTimer("LibDBIcon10_ItemRack", function()
+	LibDBIcon10_ItemRack:Hide()
+end)
 
-xVermin.CheckIfLoadedWithTimer(
-	'ItemRack',
-	function()
-		hooksecurefunc(ItemRack, "BuildMenu", function() 
-			for i = 1, 30 do
-				local child = _G['ItemRackMenu' .. i .. 'Count']
-				local parent = _G['ItemRackMenu' .. i]
-				if parent and child then
-					child:SetScale(0.7)
-					child:ClearAllPoints()
-					child:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -3, -4)
-				end
+xVermin.CheckIfLoadedWithTimer("ItemRack", function()
+	hooksecurefunc(ItemRack, "BuildMenu", function()
+		for i = 1, 30 do
+			local child = _G["ItemRackMenu" .. i .. "Count"]
+			local parent = _G["ItemRackMenu" .. i]
+			if parent and child then
+				child:SetScale(0.7)
+				child:ClearAllPoints()
+				child:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -3, -4)
 			end
-		end)
-	end
-)
-
+		end
+	end)
+end)
