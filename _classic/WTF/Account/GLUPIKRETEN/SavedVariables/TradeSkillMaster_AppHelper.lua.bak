@@ -511,7 +511,11 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.48\",1766742697294,0,5,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]",
 "[\"AC\",\"v4.14.48\",1766742698339,0,6,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/my_auctions\"]",
 "[\"AC\",\"v4.14.48\",1766742700045,0,7,\"UI_NAVIGATION\",\"auction/my_auctions\",\"\"]",
+"[\"AC\",\"v4.14.48\",1766742998290,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766743000357,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766749695413,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766749699270,0,2,\"ADDON_ENABLE\",0]",
 },
-["updateTime"] = 1766742700.045304,
+["updateTime"] = 1766749699.2702,
 },
 }

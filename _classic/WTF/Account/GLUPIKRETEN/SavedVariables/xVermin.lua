@@ -263,9 +263,6 @@ xVerminSavedData = {
 "Cheap Shot",
 "Mutilate",
 },
-["Befouled Water Elemental"] = {
-"Serpent Sting",
-},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -273,6 +270,9 @@ xVerminSavedData = {
 "Lava Lash",
 "Deep Wound",
 "Explosive Trap Effect",
+},
+["Befouled Water Elemental"] = {
+"Serpent Sting",
 },
 ["Scarlet Commander Mograine"] = {
 "Charge Stun",
@@ -301,9 +301,17 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
+["Larsera"] = {
 "Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
 },
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
@@ -313,48 +321,6 @@ xVerminSavedData = {
 },
 ["Rusty Harvest Golem"] = {
 "Rend",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
-},
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
-},
-["Stone Rumbler"] = {
-"Lightning Shield",
-},
-["Ambereye Basilisk"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Serpent Sting",
-},
-["Galgann Firehammer"] = {
-"War Stomp",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-},
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
-},
-["Ironspine"] = {
-"Rend",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",
@@ -371,12 +337,45 @@ xVerminSavedData = {
 "Living Bomb",
 "Molten Blast",
 },
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
+},
+["Stone Rumbler"] = {
+"Lightning Shield",
+},
+["Ambereye Basilisk"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Serpent Sting",
+},
+["Galgann Firehammer"] = {
+"War Stomp",
+},
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
-["Cracked Skull Soldier"] = {
+["Remote-Controlled Golem"] = {
 "Rend",
-"Fear",
+"Deep Wound",
+},
+["Ironspine"] = {
+"Rend",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -400,8 +399,9 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
 ["Enraged Voidwalker"] = {
 "Poison Cloud",
@@ -419,9 +419,8 @@ xVerminSavedData = {
 "Lightning Shield",
 "Rend",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -430,14 +429,23 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
+"Serpent Sting",
+"Thunder Clap",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",
@@ -446,17 +454,9 @@ xVerminSavedData = {
 "Blackout",
 "Impact",
 },
-["Larsera"] = {
+["Ambershard Crusher"] = {
+"Chain Lightning",
 "Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
 },
 ["Wailing Highborne"] = {
 "Rend",
