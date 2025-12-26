@@ -11,7 +11,7 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:159
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
@@ -53,8 +53,8 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:2677
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Adult Plainstrider
-/targetexact Prairie Wolf
+/targetexact Windfury Harpy
+/targetexact Windfury Wind Witch
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"
