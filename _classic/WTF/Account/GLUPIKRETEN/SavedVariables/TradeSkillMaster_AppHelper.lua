@@ -499,8 +499,17 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.48\",1766704614568,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.48\",1766704668512,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.48\",1766704669581,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766742642328,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766742646017,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766742697284,0,3,\"UI_NAVIGATION\",\"\",\"auction\"]",
+"[\"AC\",\"v4.14.48\",1766742697294,0,4,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]",
+"[\"AC\",\"v4.14.48\",1766742697294,0,5,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]",
+"[\"AC\",\"v4.14.48\",1766742698339,0,6,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/my_auctions\"]",
+"[\"AC\",\"v4.14.48\",1766742700045,0,7,\"UI_NAVIGATION\",\"auction/my_auctions\",\"\"]",
+"[\"AC\",\"v4.14.48\",1766742998290,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766743000357,0,2,\"ADDON_ENABLE\",0]",
 },
-["updateTime"] = 1766704669.581496,
+["updateTime"] = 1766743000.35764,
 },
 ["fullScan"] = {
 ["data"] = {
