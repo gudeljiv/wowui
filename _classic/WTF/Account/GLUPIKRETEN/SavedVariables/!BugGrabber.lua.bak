@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 13097,
+["session"] = 13107,
 ["errors"] = {
 {
 ["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -5596,6 +5596,22 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/xVermin/Addons/AdiBags.lua]:146: in function <Interface/AddOns/xVermin/Addons/AdiBags.lua:144>\n[C]: in function 'CreateContainerFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:144: in function 'CreateFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:136: in function 'GetFrame'\n[Interface/AddOns/AdiBags/core/Bags.lua]:90: in function 'Open'\n[Interface/AddOns/AdiBags/core/Bags.lua]:275: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function 'SendMessage'\n[Interface/AddOns/AdiBags/core/Core.lua]:448: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua]:54: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:49>\n[tail call]: ?",
 ["session"] = 13091,
 ["counter"] = 1,
+},
+{
+["message"] = "[string \"LFGMinimapFrame.Hide()\"]:1: bad argument #1 to 'Hide' (Usage: self:Hide())",
+["time"] = "2025/12/26 22:57:06",
+["locals"] = "msg = \"LFGMinimapFrame.Hide()\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 13102,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/Minimap.lua:78: attempt to index global 'LFGMinimapFrame' (a nil value)",
+["time"] = "2025/12/26 22:58:08",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13105,
+["counter"] = 2,
 },
 },
 }

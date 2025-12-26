@@ -1,18 +1,11 @@
 
 DriftPoints = {
-["WorldMapFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -11.05635070800781,
-["xOfs"] = -1.36847710609436,
-},
 ["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -138.2498016357422,
-["xOfs"] = 247.0901947021484,
+["point"] = "TOPRIGHT",
+["relativePoint"] = "TOPRIGHT",
+["yOfs"] = -100.1546249389648,
+["xOfs"] = -110.8673858642578,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -28,20 +21,6 @@ DriftPoints = {
 ["yOfs"] = -147.9154052734375,
 ["xOfs"] = -246.4333801269531,
 },
-["SideDressUpFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.8732299804688,
-["xOfs"] = 272.5481872558594,
-},
-["PlayerTalentFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -89.7143325805664,
-["xOfs"] = 3.145813025184907e-06,
-},
 ["SettingsPanel"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "LEFT",
@@ -56,19 +35,12 @@ DriftPoints = {
 ["yOfs"] = -87.59791564941406,
 ["xOfs"] = -0,
 },
-["ColorPickerFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
-["yOfs"] = 99.68265533447266,
-["xOfs"] = 479.9994812011719,
-},
-["CraftFrame"] = {
+["LFGParentFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -64.31731414794922,
-["xOfs"] = -297.497314453125,
+["yOfs"] = -138.3915252685547,
+["xOfs"] = -238.1584777832031,
 },
 ["MacroFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -77,12 +49,26 @@ DriftPoints = {
 ["yOfs"] = -138.7513122558594,
 ["xOfs"] = 272.6356811523438,
 },
-["QuestFrame"] = {
+["GossipFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -130.4550323486328,
-["xOfs"] = 254.4337463378906,
+["yOfs"] = -147.9153289794922,
+["xOfs"] = 294.1165466308594,
+},
+["WorldMapFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -11.05635070800781,
+["xOfs"] = -1.36847710609436,
+},
+["PlayerTalentFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -89.7143325805664,
+["xOfs"] = 3.145813025184907e-06,
 },
 ["SpellBookFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -91,12 +77,33 @@ DriftPoints = {
 ["yOfs"] = -87.59791564941406,
 ["xOfs"] = 6.349202632904053,
 },
-["GossipFrame"] = {
+["CraftFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -147.9153289794922,
-["xOfs"] = 294.1165466308594,
+["yOfs"] = -64.31731414794922,
+["xOfs"] = -297.497314453125,
+},
+["QuestFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -130.4550323486328,
+["xOfs"] = 254.4337463378906,
+},
+["SideDressUpFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
+},
+["ColorPickerFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 99.68265533447266,
+["xOfs"] = 479.9994812011719,
 },
 ["AddonList"] = {
 ["relativeTo"] = "UIParent",
@@ -117,15 +124,15 @@ DriftOptions = {
 ["windowsDisabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["bagsDisabled"] = true,
 ["scaleCtrlKeyEnabled"] = false,
-["scaleShiftKeyEnabled"] = false,
-["arenaDisabled"] = true,
+["bagsDisabled"] = true,
+["objectivesDisabled"] = true,
 ["miscellaneousDisabled"] = true,
+["arenaDisabled"] = true,
 ["dragCtrlKeyEnabled"] = false,
 ["buttonsDisabled"] = true,
 ["dragShiftKeyEnabled"] = false,
 ["frameScaleIsLocked"] = false,
-["objectivesDisabled"] = true,
+["scaleShiftKeyEnabled"] = false,
 ["minimapDisabled"] = true,
 }

@@ -74,3 +74,10 @@ end
 MinimapCompassTexture:HookScript("OnShow", function(self)
 	MinimapCompassTexture:Hide()
 end)
+
+xVermin.CheckIfLoadedWithTimer("LFGMinimapFrame", function()
+	LFGMinimapFrame:Hide()
+	LFGMinimapFrame:HookScript("OnShow", function(self)
+		LFGMinimapFrame:Hide()
+	end)
+end)

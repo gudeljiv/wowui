@@ -298,22 +298,6 @@ xVerminSavedData = {
 "Cheap Shot",
 "Mutilate",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
-["Fire Elemental"] = {
-"Flametongue Attack",
-"Magma Totem",
-"Serpent Sting",
-"Lava Lash",
-"Deep Wound",
-"Explosive Trap Effect",
-},
-["Lord Vyletongue"] = {
-"Blackout",
-"Impact",
-},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -326,6 +310,17 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
+["Befouled Water Elemental"] = {
+"Serpent Sting",
+},
+["Lord Vyletongue"] = {
+"Blackout",
+"Impact",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
 ["Scarlet Chaplain"] = {
 "Weakened Soul",
 },
@@ -334,6 +329,12 @@ xVerminSavedData = {
 },
 ["Rusty Harvest Golem"] = {
 "Rend",
+},
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
 },
 ["Theradrim Guardian"] = {
 "Lightning Shield",
@@ -344,12 +345,6 @@ xVerminSavedData = {
 "Chimera Shot",
 "Serpent Sting",
 "Thunder Clap",
-},
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -362,13 +357,8 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -382,26 +372,20 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
 },
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Ironspine"] = {
 "Rend",
@@ -416,16 +400,16 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
 "Rend",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
 ["Rock Elemental"] = {
 "Serpent Sting",
@@ -443,9 +427,8 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -454,11 +437,23 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",
@@ -490,8 +485,13 @@ xVerminSavedData = {
 "Wrath",
 "Lightning Shield",
 },
-["Befouled Water Elemental"] = {
+["Fire Elemental"] = {
+"Flametongue Attack",
+"Magma Totem",
 "Serpent Sting",
+"Lava Lash",
+"Deep Wound",
+"Explosive Trap Effect",
 },
 ["Wailing Highborne"] = {
 "Rend",

@@ -12,7 +12,7 @@ Postal3DB = {
 "Dopeclaw|Living Flame|Horde|38|DRUID",
 "Dopeclaw|Lone Wolf|Horde|38|DRUID",
 "Dopeclaw|Stitches|Horde|1|DRUID",
-"Dopeclaw|Thunderstrike|Horde|6|DRUID",
+"Dopeclaw|Thunderstrike|Horde|10|DRUID",
 "Dopecoil|Lone Wolf|Horde|9|SHAMAN",
 "Dopecoil|Thunderstrike|Horde|10|WARLOCK",
 "Dopecure|Stitches|Horde|11|PRIEST",
@@ -29,7 +29,7 @@ Postal3DB = {
 "Dopesnare|Living Flame|Horde|49|HUNTER",
 "Dopesnare|Lone Wolf|Horde|49|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopesnare|Thunderstrike|Horde|8|HUNTER",
+"Dopesnare|Thunderstrike|Horde|9|HUNTER",
 "Dopestab|Living Flame|Horde|41|ROGUE",
 "Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Living Flame|Horde|1|HUNTER",
@@ -78,13 +78,13 @@ Postal3DB = {
 ["Dopemend - Living Flame"] = "Dopemend - Living Flame",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Doperage - Living Flame"] = "Doperage - Living Flame",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Vermin - Celebras"] = "Vermin - Celebras",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Dopede - Stitches"] = "Dopede - Stitches",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 ["Dopeah - Stitches"] = "Dopeah - Stitches",
@@ -257,9 +257,16 @@ Postal3DB = {
 },
 ["Vermin - Zandalar Tribe"] = {
 },
-["Doperage - Living Flame"] = {
+["Vermin - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vbank|Celebras|Alliance",
+"Mq|Celebras|Alliance",
+"Dibsie-Celebras|Celebras|Alliance",
 },
-["Turbonac - Celebras"] = {
+},
+},
+["Doperage - Living Flame"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
@@ -275,14 +282,7 @@ Postal3DB = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
-["Vermin - Celebras"] = {
-["BlackBook"] = {
-["recent"] = {
-"Vbank|Celebras|Alliance",
-"Mq|Celebras|Alliance",
-"Dibsie-Celebras|Celebras|Alliance",
-},
-},
+["Turbonac - Celebras"] = {
 },
 ["Dopede - Stitches"] = {
 ["BlackBook"] = {
