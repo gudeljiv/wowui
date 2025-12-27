@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 13118,
+["session"] = 13120,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -1161,14 +1161,6 @@ BugGrabberDB = {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/MapLine/MapLine.lua:1 (null)",
 ["time"] = "2023/10/24 10:11:42",
 ["session"] = 10843,
-["counter"] = 2,
-},
-{
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AutoEquipCursorItem()'.",
-["time"] = "2023/10/08 15:40:50",
-["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `AutoEquipCursorItem'\n[string \"*PaperDollFrame.xml:277_OnMouseUp\"]:4: in function `oldCharacterModelFrame_OnMouseUp'\n[string \"@Interface/AddOns/ItemRack/ItemRackButtons.lua\"]:105: in function <Interface/AddOns/ItemRack/ItemRackButtons.lua:101>\n[string \"=[C]\"]: ?",
-["session"] = 10847,
 ["counter"] = 2,
 },
 {
@@ -5676,6 +5668,14 @@ BugGrabberDB = {
 ["stack"] = "[tail call]: ?\n[C]: in function 'IsSpellInSpellBook'\n[Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua]:19: in function 'IsSpellKnown'\n[return xAOE(10) < 3 and IsSpellKnown(xSpellID(\"mangle\"))]:1: in function 'LF_0000027CAF443C80'\n[Condition_DEBUFFDUR_RAGE_BUFFDUR_BUFFDUR_STANCE_LUA_BUFFDUR]:8: in function 'CheckFunction'\n[Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua]:266: in function <...eWhen/Components/Core/Conditions/ConditionObject.lua:260>\n[tail call]: ?\n[C]: ?\n[safecall Dispatcher[1]]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[tail call]: ?\n[Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua]:235: in function 'RegisterForUpdating'\n[Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua]:319: in function 'DeclareExternalUpdater'\n...[Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua]:992: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:979>\n[Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua]:992: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:979>\n[Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua]:1021: in function 'CScriptTunnel'\n[Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua]:820: in function 'SaveSettings'\n[Interface/AddOns/TellMeWhen/Options/IconConfig.lua]:113: in function 'LoadIcon'\n[Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_IconEditorLoader/module.lua]:38: in function <...s/IconModules/IconModule_IconEditorLoader/module.lua:24>\n[Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_IconEditorLoader/module.lua]:104: in function <...s/IconModules/IconModule_IconEditorLoader/module.lua:88>\n[Interface/AddOns/TellMeWhen/Components/Core/BaseClasses/ObjectModule.lua]:42: in function <...lMeWhen/Components/Core/BaseClasses/ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
 ["session"] = 13117,
 ["counter"] = 1034,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AutoEquipCursorItem()'.",
+["time"] = "2023/10/08 15:40:50",
+["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `AutoEquipCursorItem'\n[string \"*PaperDollFrame.xml:277_OnMouseUp\"]:4: in function `oldCharacterModelFrame_OnMouseUp'\n[string \"@Interface/AddOns/ItemRack/ItemRackButtons.lua\"]:105: in function <Interface/AddOns/ItemRack/ItemRackButtons.lua:101>\n[string \"=[C]\"]: ?",
+["session"] = 13119,
+["counter"] = 3,
 },
 },
 }
