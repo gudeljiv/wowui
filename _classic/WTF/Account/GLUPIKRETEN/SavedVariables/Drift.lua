@@ -1,11 +1,11 @@
 
 DriftPoints = {
-["TradeSkillFrame"] = {
+["SideDressUpFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPRIGHT",
-["relativePoint"] = "TOPRIGHT",
-["yOfs"] = -100.1546249389648,
-["xOfs"] = -110.8673858642578,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -91,12 +91,19 @@ DriftPoints = {
 ["yOfs"] = -130.4550323486328,
 ["xOfs"] = 254.4337463378906,
 },
-["SideDressUpFrame"] = {
+["AddonList"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.8732299804688,
-["xOfs"] = 272.5481872558594,
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
+},
+["TradeSkillFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -63.11758804321289,
+["xOfs"] = 157.6721496582031,
 },
 ["ColorPickerFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -104,13 +111,6 @@ DriftPoints = {
 ["relativePoint"] = "CENTER",
 ["yOfs"] = 99.68265533447266,
 ["xOfs"] = 479.9994812011719,
-},
-["AddonList"] = {
-["relativeTo"] = "UIParent",
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
-["yOfs"] = 177.6506805419922,
-["xOfs"] = -80.6351089477539,
 },
 }
 DriftScales = {
@@ -121,18 +121,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["windowsDisabled"] = false,
+["scaleCtrlKeyEnabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["scaleCtrlKeyEnabled"] = false,
-["bagsDisabled"] = true,
-["objectivesDisabled"] = true,
-["miscellaneousDisabled"] = true,
-["arenaDisabled"] = true,
-["dragCtrlKeyEnabled"] = false,
-["buttonsDisabled"] = true,
-["dragShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
 ["scaleShiftKeyEnabled"] = false,
+["windowsDisabled"] = false,
+["objectivesDisabled"] = true,
+["frameScaleIsLocked"] = false,
+["miscellaneousDisabled"] = true,
+["dragCtrlKeyEnabled"] = false,
+["dragShiftKeyEnabled"] = false,
+["buttonsDisabled"] = true,
+["arenaDisabled"] = true,
+["bagsDisabled"] = true,
 ["minimapDisabled"] = true,
 }

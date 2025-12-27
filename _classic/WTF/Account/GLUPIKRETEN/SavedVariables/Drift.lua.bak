@@ -1,19 +1,5 @@
 
 DriftPoints = {
-["LFGParentFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -138.3915252685547,
-["xOfs"] = -238.1584777832031,
-},
-["SideDressUpFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.8732299804688,
-["xOfs"] = 272.5481872558594,
-},
 ["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOPRIGHT",
@@ -28,12 +14,47 @@ DriftPoints = {
 ["yOfs"] = -109.1216812133789,
 ["xOfs"] = 93.77789306640625,
 },
-["AddonList"] = {
+["AuctionFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
-["yOfs"] = 177.6506805419922,
-["xOfs"] = -80.6351089477539,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.9154052734375,
+["xOfs"] = -246.4333801269531,
+},
+["SettingsPanel"] = {
+["relativeTo"] = "UIParent",
+["point"] = "LEFT",
+["relativePoint"] = "LEFT",
+["yOfs"] = 135.4369659423828,
+["xOfs"] = 249.8049468994141,
+},
+["CharacterFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -87.59791564941406,
+["xOfs"] = -0,
+},
+["LFGParentFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -138.3915252685547,
+["xOfs"] = -238.1584777832031,
+},
+["MacroFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -138.7513122558594,
+["xOfs"] = 272.6356811523438,
+},
+["GossipFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.9153289794922,
+["xOfs"] = 294.1165466308594,
 },
 ["WorldMapFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -49,26 +70,12 @@ DriftPoints = {
 ["yOfs"] = -89.7143325805664,
 ["xOfs"] = 3.145813025184907e-06,
 },
-["SettingsPanel"] = {
-["relativeTo"] = "UIParent",
-["point"] = "LEFT",
-["relativePoint"] = "LEFT",
-["yOfs"] = 135.4369659423828,
-["xOfs"] = 249.8049468994141,
-},
 ["SpellBookFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOPLEFT",
 ["relativePoint"] = "TOPLEFT",
 ["yOfs"] = -87.59791564941406,
 ["xOfs"] = 6.349202632904053,
-},
-["AuctionFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.9154052734375,
-["xOfs"] = -246.4333801269531,
 },
 ["CraftFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -77,13 +84,6 @@ DriftPoints = {
 ["yOfs"] = -64.31731414794922,
 ["xOfs"] = -297.497314453125,
 },
-["MacroFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -138.7513122558594,
-["xOfs"] = 272.6356811523438,
-},
 ["QuestFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
@@ -91,12 +91,12 @@ DriftPoints = {
 ["yOfs"] = -130.4550323486328,
 ["xOfs"] = 254.4337463378906,
 },
-["GossipFrame"] = {
+["SideDressUpFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -147.9153289794922,
-["xOfs"] = 294.1165466308594,
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
 },
 ["ColorPickerFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -105,12 +105,12 @@ DriftPoints = {
 ["yOfs"] = 99.68265533447266,
 ["xOfs"] = 479.9994812011719,
 },
-["CharacterFrame"] = {
+["AddonList"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -87.59791564941406,
-["xOfs"] = -0,
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
 },
 }
 DriftScales = {
@@ -121,18 +121,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["bagsDisabled"] = true,
+["windowsDisabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
+["scaleCtrlKeyEnabled"] = false,
+["bagsDisabled"] = true,
 ["objectivesDisabled"] = true,
-["windowsDisabled"] = false,
-["scaleShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
+["miscellaneousDisabled"] = true,
 ["arenaDisabled"] = true,
 ["dragCtrlKeyEnabled"] = false,
-["dragShiftKeyEnabled"] = false,
 ["buttonsDisabled"] = true,
-["miscellaneousDisabled"] = true,
-["scaleCtrlKeyEnabled"] = false,
+["dragShiftKeyEnabled"] = false,
+["frameScaleIsLocked"] = false,
+["scaleShiftKeyEnabled"] = false,
 ["minimapDisabled"] = true,
 }
