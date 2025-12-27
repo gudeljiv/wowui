@@ -8,11 +8,6 @@ TradeSkillMaster_AppHelperDB = {
 },
 ["updateTime"] = 0,
 },
-["fullScan"] = {
-["data"] = {
-},
-["updateTime"] = 1766415296,
-},
 ["analytics"] = {
 ["data"] = {
 "[\"AC\",\"v4.14.19\",1766247465258,0,1,\"ADDON_INITIALIZE\",0]",
@@ -623,7 +618,26 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.48\",1766835132714,0,42,\"AH_API_TIME\",\"EU-Fresh-Thunderstrike\",\"PlaceAuctionBid\",179]",
 "[\"AC\",\"v4.14.48\",1766835133781,0,43,\"AH_API_TIME\",\"EU-Fresh-Thunderstrike\",\"PlaceAuctionBid\",102]",
 "[\"AC\",\"v4.14.48\",1766835134417,0,44,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"\"]",
+"[\"AC\",\"v4.14.48\",1766850007288,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766850011179,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766850832553,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766850833626,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766850871546,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766850872648,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766850962545,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766850963789,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766850984508,0,3,\"UI_NAVIGATION\",\"\",\"auction\"]",
+"[\"AC\",\"v4.14.48\",1766850984517,0,4,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]",
+"[\"AC\",\"v4.14.48\",1766850984518,0,5,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]",
+"[\"AC\",\"v4.14.48\",1766850987866,0,6,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"\"]",
+"[\"AC\",\"v4.14.48\",1766855487538,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766855490323,0,2,\"ADDON_ENABLE\",0]",
 },
-["updateTime"] = 1766835134.417358,
+["updateTime"] = 1766855490.323899,
+},
+["fullScan"] = {
+["data"] = {
+},
+["updateTime"] = 1766415296,
 },
 }
