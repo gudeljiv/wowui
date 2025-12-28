@@ -8,6 +8,11 @@ TradeSkillMaster_AppHelperDB = {
 },
 ["updateTime"] = 0,
 },
+["fullScan"] = {
+["data"] = {
+},
+["updateTime"] = 1766415296,
+},
 ["analytics"] = {
 ["data"] = {
 "[\"AC\",\"v4.14.19\",1766247465258,0,1,\"ADDON_INITIALIZE\",0]",
@@ -640,12 +645,9 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.48\",1766863478587,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.48\",1766873295537,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.48\",1766873298372,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1766875726534,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1766875729168,0,2,\"ADDON_ENABLE\",0]",
 },
-["updateTime"] = 1766873298.372072,
-},
-["fullScan"] = {
-["data"] = {
-},
-["updateTime"] = 1766415296,
+["updateTime"] = 1766875729.168885,
 },
 }

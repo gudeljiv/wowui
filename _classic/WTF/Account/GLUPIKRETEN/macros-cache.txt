@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1251
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
