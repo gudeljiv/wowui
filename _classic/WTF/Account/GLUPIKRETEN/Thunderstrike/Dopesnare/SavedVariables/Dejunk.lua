@@ -9,23 +9,20 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["excludeEquipmentSets"] = true,
 ["autoRepair"] = false,
 ["inclusions"] = {
-["2924"] = true,
 ["2450"] = true,
-["12037"] = true,
+["2924"] = true,
+["2318"] = true,
 ["17056"] = true,
 ["5116"] = true,
 ["729"] = true,
-["2318"] = true,
+["12037"] = true,
 ["765"] = true,
 },
 ["safeMode"] = false,
 ["excludeWarbandEquipment"] = false,
-["includeBelowItemLevel"] = {
-["enabled"] = false,
-["value"] = 0,
-},
+["autoJunkFrame"] = false,
 ["includeArtifactRelics"] = false,
-["includeUnsuitableEquipment"] = false,
+["excludeUnboundEquipment"] = false,
 ["itemQualityCheckBoxes"] = {
 ["includeUnsuitableEquipment"] = {
 ["poor"] = true,
@@ -63,6 +60,9 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 ["rare"] = true,
 },
 },
-["excludeUnboundEquipment"] = false,
-["autoJunkFrame"] = false,
+["includeUnsuitableEquipment"] = false,
+["includeBelowItemLevel"] = {
+["enabled"] = false,
+["value"] = 0,
+},
 }

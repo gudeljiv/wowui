@@ -1,11 +1,11 @@
 
 DriftPoints = {
-["SideDressUpFrame"] = {
+["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.8732299804688,
-["xOfs"] = 272.5481872558594,
+["point"] = "TOPRIGHT",
+["relativePoint"] = "TOPRIGHT",
+["yOfs"] = -107.0331192016602,
+["xOfs"] = -204.5187377929688,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -14,12 +14,12 @@ DriftPoints = {
 ["yOfs"] = -109.1216812133789,
 ["xOfs"] = 93.77789306640625,
 },
-["AddonList"] = {
+["AuctionFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "CENTER",
-["relativePoint"] = "CENTER",
-["yOfs"] = 177.6506805419922,
-["xOfs"] = -80.6351089477539,
+["point"] = "TOPLEFT",
+["relativePoint"] = "TOPLEFT",
+["yOfs"] = -112.9947814941406,
+["xOfs"] = 270.3706359863281,
 },
 ["SettingsPanel"] = {
 ["relativeTo"] = "UIParent",
@@ -91,26 +91,26 @@ DriftPoints = {
 ["yOfs"] = -130.4550323486328,
 ["xOfs"] = 254.4337463378906,
 },
-["AuctionFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -112.9947814941406,
-["xOfs"] = 270.3706359863281,
-},
-["TradeSkillFrame"] = {
-["relativeTo"] = "UIParent",
-["point"] = "TOPRIGHT",
-["relativePoint"] = "TOPRIGHT",
-["yOfs"] = -107.0331192016602,
-["xOfs"] = -204.5187377929688,
-},
 ["ColorPickerFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
 ["yOfs"] = 156.8253631591797,
 ["xOfs"] = -234.9205474853516,
+},
+["SideDressUpFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
+},
+["AddonList"] = {
+["relativeTo"] = "UIParent",
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
 },
 }
 DriftScales = {
@@ -121,18 +121,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["bagsDisabled"] = true,
+["windowsDisabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
+["scaleCtrlKeyEnabled"] = false,
+["bagsDisabled"] = true,
 ["objectivesDisabled"] = true,
-["windowsDisabled"] = false,
-["scaleShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
+["miscellaneousDisabled"] = true,
 ["arenaDisabled"] = true,
 ["dragCtrlKeyEnabled"] = false,
-["dragShiftKeyEnabled"] = false,
 ["buttonsDisabled"] = true,
-["miscellaneousDisabled"] = true,
-["scaleCtrlKeyEnabled"] = false,
+["dragShiftKeyEnabled"] = false,
+["frameScaleIsLocked"] = false,
+["scaleShiftKeyEnabled"] = false,
 ["minimapDisabled"] = true,
 }
