@@ -1,4 +1,8 @@
-﻿1.15.115 - 24th December 2025
+﻿1.15.116 - 31st December 2025
+- Happy New Year!
+- For 'Show druid power bar' ('Interface'), added a new setting that let's you specify whether status text should be shown in the druid power bar.
+
+1.15.115 - 24th December 2025
 - Merry Christmas!
 
 1.15.114 - 18th December 2025

@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.115 (24th December 2025)
+-- 	Leatrix Plus 1.15.116 (31st December 2025)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.115"
+	LeaPlusLC["AddonVer"] = "1.15.116"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -556,6 +556,7 @@
 		LeaPlusLC:LockOption("ShowCooldowns", "CooldownsButton", true)				-- Show cooldowns
 		LeaPlusLC:LockOption("ShowBorders", "ModBordersBtn", true)					-- Show borders
 		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)				-- Show player chain
+		LeaPlusLC:LockOption("ShowDruidPowerBar", "ShowDruidPowerBarBtn", true)		-- Show druid power bar
 		LeaPlusLC:LockOption("ShowWowheadLinks", "ShowWowheadLinksBtn", true)		-- Show Wowhead links
 		LeaPlusLC:LockOption("ShowFlightTimes", "ShowFlightTimesBtn", true)			-- Show flight times
 		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)				-- Manage frames
@@ -633,6 +634,7 @@
 		or	(LeaPlusLC["ShowPlayerChain"]		~= LeaPlusDB["ShowPlayerChain"])		-- Show player chain
 		or	(LeaPlusLC["ShowReadyTimer"]		~= LeaPlusDB["ShowReadyTimer"])			-- Show ready timer
 		or	(LeaPlusLC["ShowDruidPowerBar"]		~= LeaPlusDB["ShowDruidPowerBar"])		-- Show druid power bar
+		or	(LeaPlusLC["ShowDruidStatusText"]	~= LeaPlusDB["ShowDruidStatusText"])	-- Show druid power bar status text
 		or	(LeaPlusLC["ShowWowheadLinks"]		~= LeaPlusDB["ShowWowheadLinks"])		-- Show Wowhead links
 		or	(LeaPlusLC["ShowFlightTimes"]		~= LeaPlusDB["ShowFlightTimes"])		-- Show flight times
 
@@ -6969,9 +6971,43 @@
 			local void, class = UnitClass("player")
 			if class == "DRUID" then
 
-				RunScript('ADDITIONAL_POWER_BAR_NAME = "MANA"')
-				RunScript('ADDITIONAL_POWER_BAR_INDEX = 0')
-				RunScript('ALT_MANA_BAR_PAIR_DISPLAY_INFO = {DRUID = {[Enum.PowerType.Rage] = true; [Enum.PowerType.Energy] = true}}')
+				-- Create configuration panel
+				local DruidBarPanel = LeaPlusLC:CreatePanel("Show druid power bar", "DruidBarPanel")
+
+				-- Add checkboxes
+				LeaPlusLC:MakeTx(DruidBarPanel, "Settings", 16, -72)
+				LeaPlusLC:MakeCB(DruidBarPanel, "ShowDruidStatusText", "Show druid power bar status text", 16, -92, true, "If checked, status text will be shown in the druid power bar as long as status text is enabled in the game settings interface display panel.")
+
+				-- Back button handler
+				DruidBarPanel.b:SetScript("OnClick", function()
+					DruidBarPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page5"]:Show()
+					return
+				end)
+
+				-- Reset button handler
+				DruidBarPanel.r.tiptext = DruidBarPanel.r.tiptext .. "|n|n" .. L["Note that this will not reset settings that require a UI reload."]
+				DruidBarPanel.r:SetScript("OnClick", function()
+
+					-- Refresh configuration panel
+					DruidBarPanel:Hide(); DruidBarPanel:Show()
+
+				end)
+
+				-- Show configuration panel when options panel button is clicked
+				LeaPlusCB["ShowDruidPowerBarBtn"]:SetScript("OnClick", function()
+					if IsShiftKeyDown() and IsControlKeyDown() then
+						-- Preset profile
+					else
+						-- Show configuration panel
+						DruidBarPanel:Show()
+						LeaPlusLC:HideFrames()
+					end
+				end)
+
+				-- Create druid power bar
+				local ADDITIONAL_POWER_BAR_NAME = "MANA"
+				local ADDITIONAL_POWER_BAR_INDEX = 0
+				local ALT_MANA_BAR_PAIR_DISPLAY_INFO = {DRUID = {[Enum.PowerType.Rage] = true; [Enum.PowerType.Energy] = true}}
 
 				-- Create local copies of Shadowlands functions (from Blizzard code AlternatePowerBar.lua)
 
@@ -7093,14 +7129,16 @@
 					bar.DefaultBorderRight:SetVertexColor(chainR, chainG, chainB)
 				end
 
-				bar.TextString = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
-				bar.TextString:SetPoint("CENTER")
+				if LeaPlusLC["ShowDruidStatusText"] == "On" then
+					bar.TextString = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
+					bar.TextString:SetPoint("CENTER")
 
-				bar.LeftText = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
-				bar.LeftText:SetPoint("LEFT")
+					bar.LeftText = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
+					bar.LeftText:SetPoint("LEFT")
 
-				bar.RightText = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
-				bar.RightText:SetPoint("RIGHT")
+					bar.RightText = bar:CreateFontString(nil, "OVERLAY", "TextStatusBarText")
+					bar.RightText:SetPoint("RIGHT")
+				end
 
 				bar:SetScript("OnEvent", AlternatePowerBar_OnEvent)
 				bar:SetScript("OnUpdate", AlternatePowerBar_OnUpdate)
@@ -12955,6 +12993,7 @@
 				LeaPlusLC:LoadVarChk("ShowReadyTimer", "Off")				-- Show ready timer
 				LeaPlusLC:LoadVarNum("PlayerChainMenu", 2, 1, 3)			-- Player chain dropdown value
 				LeaPlusLC:LoadVarChk("ShowDruidPowerBar", "Off")			-- Show druid power bar
+				LeaPlusLC:LoadVarChk("ShowDruidStatusText", "On")			-- Show druid power bar status text
 				LeaPlusLC:LoadVarChk("ShowWowheadLinks", "Off")				-- Show Wowhead links
 				LeaPlusLC:LoadVarChk("WowheadLinkComments", "Off")			-- Show Wowhead links to comments
 
@@ -13354,6 +13393,7 @@
 			LeaPlusDB["PlayerChainMenu"]		= LeaPlusLC["PlayerChainMenu"]
 			LeaPlusDB["ShowReadyTimer"]			= LeaPlusLC["ShowReadyTimer"]
 			LeaPlusDB["ShowDruidPowerBar"]		= LeaPlusLC["ShowDruidPowerBar"]
+			LeaPlusDB["ShowDruidStatusText"]	= LeaPlusLC["ShowDruidStatusText"]
 			LeaPlusDB["ShowWowheadLinks"]		= LeaPlusLC["ShowWowheadLinks"]
 			LeaPlusDB["WowheadLinkComments"]	= LeaPlusLC["WowheadLinkComments"]
 
@@ -15464,6 +15504,7 @@
 				LeaPlusDB["PlayerChainMenu"] = 3				-- Player chain style
 				LeaPlusDB["ShowReadyTimer"] = "On"				-- Show ready timer
 				LeaPlusDB["ShowDruidPowerBar"] = "On"			-- Show druid power bar
+				LeaPlusDB["ShowDruidStatusText"] = "On"			-- Show druid power bar status text
 				LeaPlusDB["ShowWowheadLinks"] = "On"			-- Show Wowhead links
 				LeaPlusDB["WowheadLinkComments"] = "On"			-- Show Wowhead links to comments
 
@@ -15881,6 +15922,7 @@
 	LeaPlusLC:CfgBtn("CooldownsButton", LeaPlusCB["ShowCooldowns"])
 	LeaPlusLC:CfgBtn("ModBordersBtn", LeaPlusCB["ShowBorders"])
 	LeaPlusLC:CfgBtn("ModPlayerChain", LeaPlusCB["ShowPlayerChain"])
+	LeaPlusLC:CfgBtn("ShowDruidPowerBarBtn", LeaPlusCB["ShowDruidPowerBar"])
 	LeaPlusLC:CfgBtn("ShowWowheadLinksBtn", LeaPlusCB["ShowWowheadLinks"])
 
 ----------------------------------------------------------------------

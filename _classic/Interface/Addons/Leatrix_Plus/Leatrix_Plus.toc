@@ -16,7 +16,7 @@
 ## Notes-zhTW: curseforge.com/wow/addons/leatrix-plus
 ## Notes-zhCN: curseforge.com/wow/addons/leatrix-plus
 
-## Version: 1.15.115
+## Version: 1.15.116
 ## Author: Leatrix
 ## SavedVariables: LeaPlusDB
 ## LoadSavedVariablesFirst: true

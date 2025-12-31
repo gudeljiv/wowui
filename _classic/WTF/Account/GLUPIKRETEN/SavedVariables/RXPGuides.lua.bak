@@ -2640,10 +2640,10 @@ nil,
 },
 ["activeTargetFrame"] = {
 84.80022430419922,
-18.00000190734863,
+43.00002288818359,
 },
 },
-["itemUpgradeSpec"] = "Feral Combat",
+["itemUpgradeSpec"] = "Warrior",
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {

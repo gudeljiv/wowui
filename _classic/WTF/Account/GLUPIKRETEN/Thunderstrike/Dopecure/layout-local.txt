@@ -370,13 +370,6 @@ X: -488
 Y: -327
 W: 330
 H: 113
-Frame: MailFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424
 Frame: AuctionFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -384,6 +377,13 @@ X: 270
 Y: -113
 W: 832
 H: 447
+Frame: MailFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

@@ -16,7 +16,7 @@
 ## Notes-zhTW: curseforge.com/wow/addons/leatrix-sounds
 ## Notes-zhCN: curseforge.com/wow/addons/leatrix-sounds
 
-## Version: 1.15.115
+## Version: 1.15.116
 ## Author: Leatrix
 ## SavedVariables: LeaSoundsDB
 ## LoadSavedVariablesFirst: true

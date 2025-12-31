@@ -859,6 +859,9 @@ nil,
 ["enableMinimapButton"] = false,
 },
 ["Dopecure - Thunderstrike"] = {
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["frameHeight"] = 125.0000228881836,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -916,10 +919,7 @@ nil,
 },
 },
 ["itemUpgradeSpec"] = "Discipline ",
-["soloSelfFound"] = true,
 ["showDangerousMobsMap"] = false,
-["enableGroupQuests"] = false,
-["frameHeight"] = 125.0000228881836,
 },
 ["Dopedot - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
@@ -2649,7 +2649,6 @@ nil,
 ["macroAnnounced"] = true,
 },
 ["Default"] = {
-["frameHeight"] = 209.4445343017578,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -2688,6 +2687,7 @@ nil,
 },
 },
 },
+["lockFrames"] = false,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 84.80022430419922,
@@ -2706,8 +2706,8 @@ nil,
 31.99995613098145,
 },
 },
-["itemUpgradeSpec"] = "Feral Combat",
-["lockFrames"] = false,
+["itemUpgradeSpec"] = "Hunter",
+["frameHeight"] = 209.4445343017578,
 },
 ["Dopestab - Lone Wolf"] = {
 ["frameSizes"] = {
