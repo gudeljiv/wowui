@@ -7,16 +7,16 @@ RadialWheelProfiles = {
 {
 ["rotation"] = 0,
 ["dismissOnUse"] = false,
-["slotCount"] = 12,
+["bgSize"] = 1.5,
 ["slotStart"] = 13,
 ["bgTint"] = {
-["green"] = 0,
-["alpha"] = 0.5,
-["blue"] = 0,
 ["red"] = 0,
+["blue"] = 0,
+["alpha"] = 0.5,
+["green"] = 0,
 },
 ["quickCast"] = false,
-["bgSize"] = 1.5,
+["slotCount"] = 12,
 ["size"] = 110,
 },
 }
