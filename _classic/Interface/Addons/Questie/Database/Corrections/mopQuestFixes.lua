@@ -124,7 +124,9 @@ QuestieCorrections.killCreditObjectiveFirst[31947] = true
 QuestieCorrections.killCreditObjectiveFirst[31949] = true
 QuestieCorrections.killCreditObjectiveFirst[32247] = true
 QuestieCorrections.killCreditObjectiveFirst[32250] = true
+QuestieCorrections.killCreditObjectiveFirst[32282] = true
 QuestieCorrections.objectObjectiveFirst[32333] = true
+QuestieCorrections.killCreditObjectiveFirst[32551] = true
 QuestieCorrections.killCreditObjectiveFirst[32643] = true
 QuestieCorrections.killCreditObjectiveFirst[32646] = true
 QuestieCorrections.killCreditObjectiveFirst[32648] = true
@@ -266,6 +268,9 @@ function MopQuestFixes.Load()
         },
         [8564] = { -- Priest Training
             [questKeys.requiredLevel] = 2,
+        },
+        [8788] = {
+            [questKeys.requiredClasses] = classIDs.PRIEST + classIDs.WARLOCK + classIDs.MAGE + classIDs.SHAMAN + classIDs.DRUID + classIDs.MONK,
         },
         [9392] = { -- Rogue Training
             [questKeys.requiredLevel] = 2,
@@ -8065,7 +8070,11 @@ function MopQuestFixes.Load()
         [32207] = { -- Saur Loser
             [questKeys.preQuestSingle] = {32259},
         },
+        [32208] = { -- Maximum Capacitor
+            [questKeys.objectives] = {{{69316,nil,Questie.ICON_TYPE_OBJECT},{69319,nil,Questie.ICON_TYPE_OBJECT},{69320,nil,Questie.ICON_TYPE_OBJECT},{69326}}},
+        },
         [32209] = { -- Save Our Scouts!
+            [questKeys.objectives] = {{{69357,nil,Questie.ICON_TYPE_INTERACT},{69356,nil,Questie.ICON_TYPE_INTERACT},{69355,nil,Questie.ICON_TYPE_INTERACT},{69326}}},
             [questKeys.questFlags] = questFlags.DAILY,
         },
         [32212] = { -- The Assault on Zeb'tula
@@ -8335,8 +8344,12 @@ function MopQuestFixes.Load()
         },
         [32276] = { -- Tear Down This Wall!
             [questKeys.preQuestSingle] = {32212},
+            [questKeys.objectives] = {{{67990,nil,Questie.ICON_TYPE_TALK},{69755}}},
+            [questKeys.reputationReward] = {{factionIDs.SUNREAVER_ONSLAUGHT,12}},
         },
         [32277] = { -- To the Skies!
+            [questKeys.finishedBy] = {{67990}},
+            [questKeys.objectives] = {{{67990,nil,Questie.ICON_TYPE_TALK},{69923}}},
             [questKeys.preQuestSingle] = {32276},
         },
         [32278] = { -- Decisive Action
@@ -8369,6 +8382,9 @@ function MopQuestFixes.Load()
             [questKeys.preQuestSingle] = {32258},
             [questKeys.reputationReward] = {{factionIDs.SUNREAVER_ONSLAUGHT,4}},
         },
+        [32292] = { -- Forge Ahead!
+            [questKeys.preQuestSingle] = {32208,32209},
+        },
         [32293] = { -- Among the Bones
             -- [questKeys.preQuestSingle] = {32680}, -- stage 1, replaced in stage 2
             [questKeys.preQuestSingle] = {32259}, -- further handled in questHubs
@@ -8389,6 +8405,8 @@ function MopQuestFixes.Load()
         [32298] = { -- Dino Might
             [questKeys.preQuestSingle] = {32259},
             [questKeys.questFlags] = questFlags.DAILY,
+            [questKeys.requiredSourceItems] = {93668},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{58071,67576,69183,69207},67576,nil,Questie.ICON_TYPE_INTERACT}}},
         },
         [32300] = { -- Disarming Irony
             [questKeys.preQuestSingle] = {32258},
@@ -9010,6 +9028,14 @@ function MopQuestFixes.Load()
             [questKeys.preQuestSingle] = {32259},
             [questKeys.reputationReward] = {{factionIDs.SUNREAVER_ONSLAUGHT,4}},
         },
+        [32505] = { -- The Crumbled Chamberlain
+            [questKeys.preQuestSingle] = {32680,32681},
+            [questKeys.requiredLevel] = 90,
+            [questKeys.questLevel] = 90,
+            [questKeys.questFlags] = questFlags.WEEKLY,
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
+            [questKeys.objectives] = {nil,nil,{{93795},{93793},{93794},{93796}}},
+        },
         [32506] = { -- A Wing to Fly On
             [questKeys.preQuestSingle] = {32259},
             [questKeys.questFlags] = questFlags.DAILY,
@@ -9193,6 +9219,8 @@ function MopQuestFixes.Load()
         [32554] = { -- Dino Might
             [questKeys.preQuestSingle] = {32260},
             [questKeys.questFlags] = questFlags.DAILY,
+            [questKeys.requiredSourceItems] = {93668},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{58071,67576,69180,69183,69207},67576,nil,Questie.ICON_TYPE_INTERACT}}},
         },
         [32555] = { -- Centuries in Sentries
             [questKeys.preQuestSingle] = {32260},
@@ -9246,6 +9274,7 @@ function MopQuestFixes.Load()
         [32571] = { -- A Wing to Fly On
             [questKeys.preQuestSingle] = {32260},
             [questKeys.reputationReward] = {{factionIDs.KIRIN_TOR_OFFENSIVE,4}},
+            [questKeys.questFlags] = questFlags.DAILY,
         },
         [32572] = { -- The Sleepless Legion
             [questKeys.preQuestSingle] = {32260},
@@ -9301,6 +9330,16 @@ function MopQuestFixes.Load()
         [32585] = { -- Encroaching Force
             [questKeys.preQuestSingle] = {32681},
         },
+        [32586] = { -- Maximum Capacitor
+            [questKeys.objectives] = {{{69316,nil,Questie.ICON_TYPE_OBJECT},{69319,nil,Questie.ICON_TYPE_OBJECT},{69320,nil,Questie.ICON_TYPE_OBJECT},{69326}}},
+        },
+        [32587] = { -- Forge Ahead!
+            [questKeys.preQuestSingle] = {32586,32588},
+        },
+        [32588] = { -- On Her Magic-ey Secret Service
+            [questKeys.objectives] = {{{69751,nil,Questie.ICON_TYPE_INTERACT},{69752,nil,Questie.ICON_TYPE_INTERACT},{69754,nil,Questie.ICON_TYPE_INTERACT},{69326}}},
+            [questKeys.questFlags] = questFlags.DAILY,
+        },
         [32589] = { -- Life Blood
             [questKeys.preQuestSingle] = {32680}, -- wowhead comments say available without progressing IoT
             [questKeys.reputationReward] = {{factionIDs.SUNREAVER_ONSLAUGHT,8}},
@@ -9322,6 +9361,7 @@ function MopQuestFixes.Load()
         },
         [32593] = { -- The Thunder Forge
             [questKeys.startedBy] = {{69782}},
+            [questKeys.objectives] = {{{70093},{70438,nil,Questie.ICON_TYPE_TALK}}},
             [questKeys.preQuestGroup] = {32591,32592},
         },
         [32599] = { -- Securing A Future
@@ -9351,10 +9391,10 @@ function MopQuestFixes.Load()
             [questKeys.reputationReward] = {{factionIDs.KIRIN_TOR_OFFENSIVE,4}},
         },
         [32607] = { -- Extended Shore Leave
-            [questKeys.preQuestSingle] = {32681},
+            [questKeys.preQuestGroup] = {32655,32587},
         },
         [32608] = { -- Raiding the Vault
-            [questKeys.preQuestSingle] = {32681},
+            [questKeys.preQuestGroup] = {32655,32587},
         },
         [32616] = { -- A Large Pile of Giant Dinosaur Bones
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
@@ -9465,6 +9505,8 @@ function MopQuestFixes.Load()
             [questKeys.objectives] = {nil,nil,{{74840}},nil,{{{58567,60113,63157},58567,nil,Questie.ICON_TYPE_INTERACT}}},
         },
         [32652] = { -- To the Skies!
+            [questKeys.finishedBy] = {{67992}},
+            [questKeys.objectives] = {{{67992,nil,Questie.ICON_TYPE_TALK},{69923}}},
             [questKeys.preQuestSingle] = {32654}, -- TODO - double check
         },
         [32653] = { -- Work Order: The August Celestials I
@@ -9476,7 +9518,9 @@ function MopQuestFixes.Load()
             [questKeys.nextQuestInChain] = 0,
         },
         [32654] = { -- Tear Down This Wall!
-            [questKeys.preQuestSingle] = {32644}, -- TODO - double check
+            [questKeys.preQuestSingle] = {32644},
+            [questKeys.objectives] = {{{67992,nil,Questie.ICON_TYPE_TALK},{69755}}},
+            [questKeys.reputationReward] = {{factionIDs.KIRIN_TOR_OFFENSIVE,12}},
         },
         [32655] = { -- A Bold Idea
             [questKeys.preQuestSingle] = {32652}, -- TODO - double check
@@ -9553,6 +9597,12 @@ function MopQuestFixes.Load()
         },
         [32675] = { -- I Believe You Can Fly
             [questKeys.requiredLevel] = 60,
+        },
+        [32676] = { -- Extended Shore Leave
+            [questKeys.preQuestGroup] = {32278,32292},
+        },
+        [32677] = { -- Raiding the Vault
+            [questKeys.preQuestGroup] = {32278,32292},
         },
         [32678] = { -- Thunder Calls
             [questKeys.nextQuestInChain] = 0,
@@ -9706,6 +9756,9 @@ function MopQuestFixes.Load()
         [33222] = { -- Little Tommy Newcomer
             [questKeys.requiredSpell] = 119467,
             [questKeys.objectives] = {{{73626,nil,Questie.ICON_TYPE_PET_BATTLE}}},
+        },
+        [33252] = { -- A Winter Veil Gift
+            [questKeys.startedBy] = {nil,{187236}},
         },
         [33336] = { -- The Essence of Time
             [questKeys.preQuestSingle] = {33161},

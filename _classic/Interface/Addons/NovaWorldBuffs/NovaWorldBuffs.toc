@@ -1,4 +1,4 @@
-## Interface: 11508, 40402, 50502
+## Interface: 11508, 20505, 40402, 50503
 ## Notes: World buff timers and much more.
 ## Notes-esES: Temporizadores de beneficios del mundo y mucho más.
 ## Notes-esMX: Temporizadores de beneficios del mundo y mucho más.
@@ -6,7 +6,7 @@
 ## Notes-ptBR: Temporizadores de bônus mundiais e muito mais.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 3.18
+## Version: 3.19
 ## SavedVariables: NWBdatabase
 
 embeds.xml
@@ -28,4 +28,5 @@ Modules\TolBarad.lua
 Modules\Wintergrasp.lua
 Modules\Overlay.lua
 Modules\BuffsWindow.lua
+Modules\DMFHelper.lua
 Modules\DungeonPortals.lua

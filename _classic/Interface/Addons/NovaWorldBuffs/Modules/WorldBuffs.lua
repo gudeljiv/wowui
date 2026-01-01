@@ -12,6 +12,7 @@ local rendDropMsg, onyDropMsg, nefDropMsg = 0, 0, 0;
 NWB.firstYells = {rend = 0, ony = 0, nef = 0, zan = 0}; --Npc yells, shared guild cooldown.
 NWB.buffDrops = {rend = 0, ony = 0, nef = 0, zan = 0}; --Full duration buff applications, personal cooldown.
 NWB.lastSets = {rend = 0, ony = 0, nef = 0, zan = 0}; --Buff drops actual being set in the addon, if it meets all checks after buff applications.
+local isClassic = NWB.isClassic;
 
 --5 second leeway for funcs sharing the same cooldown, this is for buff drops that have a 1 minute server cooldown anyway.
 local function isOnCooldown(cooldownType, type)
@@ -318,7 +319,7 @@ local function monsterYell(...)
 			if (not layer or layer == 0) then
 				layer = NWB.lastKnownLayerMapIDBackup;
 			end
-			if (layer and layer > 0) then
+			if (layer and layer > 0 and NWB.data.layers[layer]) then
 				NWB.data.layers[layer].hellfireRep = GetServerTime();
 			end
 		else
@@ -479,7 +480,7 @@ local function combatLogEventUnfiltered(...)
 		local unitType, _, _, _, zoneID, npcID = strsplit("-", sourceGUID);
 		local destUnitType, _, _, _, destZoneID, destNpcID = strsplit("-", destGUID);
 		zoneID = tonumber(zoneID);
-		if (destName == UnitName("player")) then
+		if (isClassic and destName == UnitName("player")) then
 			NWB:countDebuffs();
 		end
 		--[[if (NWB.isDebug) then

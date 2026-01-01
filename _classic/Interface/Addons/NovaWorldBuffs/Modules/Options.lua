@@ -2335,14 +2335,17 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.17;
+	local newVersionNotes = 3.19;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isClassic) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"The early rend warning when Herald spawned in crossroads has been broken by an API chanhge in the recent patch. The early warning has been changed to detect the nameplate instead, this means you must be waiting within nameplate range of the spawn point at the toip of the tower. If you're Horde you need to turn on friendy nameplates while at the spot for it to work. Everthing should work the same it just means you need to be a lot closer to the spawn now, let me know of any issues.",
-						"Some small layering fixes.",
+						"Added a command /dmfhelper to manually open the helper window when at sage, it should usually open auto when in a pvp zone at opposite factions sayge and a ghost. This command is a backup for if the dmf week is wrong or it doesn't show for whatever.",
+						"Fixed the set interact keybind button on the dmf helper.",
+						"Added minutes display even when showing days in the layer uptime display (left click minimap) this is for people looking for ways to determine layer on horde and alliance.",
+						"Changed layer timeout to 2h instead of 1h to help people out questing that don't get data updates too often and unguilded people, this means they'll take an extra hour to disappear after server restarts.",
+						"Updated for TBC, but may need more updating once it launches and we see where the layers are created from in that version (they may only layer outlands this time round if it's like what they did with wrath/mop).",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end
