@@ -8,6 +8,11 @@ TradeSkillMaster_AppHelperDB = {
 },
 ["updateTime"] = 0,
 },
+["fullScan"] = {
+["data"] = {
+},
+["updateTime"] = 1766944415,
+},
 ["analytics"] = {
 ["data"] = {
 "[\"AC\",\"v4.14.19\",1766247465258,0,1,\"ADDON_INITIALIZE\",0]",
@@ -684,12 +689,16 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.48\",1767199138498,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.48\",1767279231371,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.48\",1767279235357,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1767291053522,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1767291056272,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1767294019515,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1767294021918,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1767294488549,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.48\",1767294491274,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.48\",1767294594226,0,3,\"UI_NAVIGATION\",\"\",\"crafting\"]",
+"[\"AC\",\"v4.14.48\",1767294594244,0,4,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]",
+"[\"AC\",\"v4.14.48\",1767294609645,0,5,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]",
 },
-["updateTime"] = 1767279235.357479,
-},
-["fullScan"] = {
-["data"] = {
-},
-["updateTime"] = 1766944415,
+["updateTime"] = 1767294609.645788,
 },
 }

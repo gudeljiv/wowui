@@ -1,7 +1,3 @@
-VER 3 0100000001000004 " " "134400"
-#showtooltip Shoot
-/cast !Shoot
-END
 VER 3 0100000001000001 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,help][] Lesser Heal
@@ -13,4 +9,8 @@ END
 VER 3 0100000001000003 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,help][] Renew
+END
+VER 3 0100000001000004 " " "134400"
+#showtooltip Shoot
+/cast !Shoot
 END
