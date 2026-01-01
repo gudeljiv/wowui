@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1251
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -11,7 +11,7 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:159
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
@@ -19,7 +19,7 @@ VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:118
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
