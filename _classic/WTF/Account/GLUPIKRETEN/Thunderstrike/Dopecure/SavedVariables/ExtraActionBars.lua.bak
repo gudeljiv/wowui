@@ -1,0 +1,2 @@
+
+CustomActionBarsCharDB = nil

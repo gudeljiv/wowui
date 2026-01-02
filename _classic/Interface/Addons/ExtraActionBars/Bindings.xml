@@ -1,0 +1,53 @@
+<Bindings>
+    Bar 6 (Buttons 1-12)
+    <Binding name="CLICK CustomBar6Button1:LeftButton" header="EXTRAACTIONBARS" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button2:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button3:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button4:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button5:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button6:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button7:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button8:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button9:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button10:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button11:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar6Button12:LeftButton" >
+    </Binding>
+    
+    <!-- Bar 7 (Buttons 1-12) -->
+    <Binding name="CLICK CustomBar7Button1:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button2:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button3:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button4:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button5:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button6:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button7:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button8:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button9:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button10:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button11:LeftButton" >
+    </Binding>
+    <Binding name="CLICK CustomBar7Button12:LeftButton" >
+    </Binding>
+</Bindings>

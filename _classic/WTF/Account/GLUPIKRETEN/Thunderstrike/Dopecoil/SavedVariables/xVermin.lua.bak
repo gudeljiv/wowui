@@ -1,17 +1,17 @@
 
 xKillCount = {
 ["show"] = false,
-["killLog"] = {
-},
-["experience"] = {
-["totaltotal"] = 332450,
-["pulltotal"] = 2425,
-},
 ["position"] = {
 ["y"] = -350,
 ["x"] = 5,
 ["to"] = "TOPLEFT",
 ["from"] = "TOPLEFT",
 ["anchor"] = "UIParent",
+},
+["experience"] = {
+["pulltotal"] = 136,
+["totaltotal"] = 333410,
+},
+["killLog"] = {
 },
 }

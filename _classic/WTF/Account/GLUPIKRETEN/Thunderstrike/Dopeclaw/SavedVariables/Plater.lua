@@ -11,8 +11,8 @@ PlaterDBChr = {
 ["Player-6111-04889C0E"] = true,
 ["Player-5826-021A02B4"] = true,
 ["Player-5220-01E441AD"] = true,
-["Player-5220-01D1CB49"] = true,
 ["Player-4465-02B843FA"] = true,
+["Player-5220-01D1CB49"] = true,
 },
 ["minimap"] = {
 ["hide"] = true,
