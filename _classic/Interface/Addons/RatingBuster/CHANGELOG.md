@@ -1,6 +1,13 @@
 # RatingBuster
 
-## [2.0.7](https://github.com/raethkcj/RatingBuster/tree/2.0.7) (2025-12-02)
-[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/2.0.6...2.0.7) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
+## [2.0.8](https://github.com/raethkcj/RatingBuster/tree/2.0.8) (2026-01-02)
+[Full Changelog](https://github.com/raethkcj/RatingBuster/compare/2.0.7...2.0.8) [Previous Releases](https://github.com/raethkcj/RatingBuster/releases)
 
-- Add icon  
+- Merge branch 'foodstuffs'  
+- Handle plurals in time duration strings  
+- Prefer non-reduction patterns in stat pattern collisions (Fixes #226)  
+- Lowercase duration format strings  
+- Use appropriate duration format strings  
+- Pass spell durations to text mapper  
+- Fetch spell durations  
+- Fetch all spell duration formats  
