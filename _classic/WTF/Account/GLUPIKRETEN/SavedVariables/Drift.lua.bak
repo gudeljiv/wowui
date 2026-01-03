@@ -4,8 +4,8 @@ DriftPoints = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOPRIGHT",
 ["relativePoint"] = "TOPRIGHT",
-["yOfs"] = -107.0331192016602,
-["xOfs"] = -204.5187377929688,
+["yOfs"] = -101.2130432128906,
+["xOfs"] = -212.4547729492188,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",

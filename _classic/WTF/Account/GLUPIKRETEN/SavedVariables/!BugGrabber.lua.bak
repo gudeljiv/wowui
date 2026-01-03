@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 13178,
+["session"] = 13186,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -5924,6 +5924,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'Show'\n[Interface/AddOns/xVermin/Helpers/Buffs.lua]:147: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:98>\n[C]: ?",
 ["session"] = 13169,
 ["counter"] = 2,
+},
+{
+["message"] = "...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:566: Usage: SendCommMessage(addon, \"prefix\", \"text\", \"distribution\"[, \"target\"[, \"prio\"[, callbackFn, callbackarg]]])",
+["time"] = "2026/01/03 20:54:14",
+["locals"] = "self = <table> {\n}\nprefix = \"PITB\"\ntext = \"c1MGAA==\"\ndistribution = nil\ntarget = nil\nprio = \"NORMAL\"\ncallbackFn = nil\ncallbackArg = nil\nCTL = <table> {\n bChoking = false\n avail = 3788\n securelyHookedBNGameData = true\n securelyHookedLogged = true\n MSG_OVERHEAD = 40\n BlockedQueuesDelay = 0\n BURST = 4000\n MIN_FPS = 20\n securelyHooked = true\n MAX_CPS = 800\n LastAvailUpdate = 333306.716000\n OnUpdateDelay = 0\n nBypass = 784\n Prio = <table> {\n }\n version = 31\n nTotalSent = 0\n Frame = Frame {\n }\n HardThrottlingBeginTime = 328871.635000\n}\nMSG_MULTI_FIRST = \"\"\nMSG_MULTI_NEXT = \"\"\nMSG_MULTI_LAST = \"\"\n",
+["stack"] = "[Interface/AddOns/BugSack/Libs/AceComm-3.0-14/AceComm-3.0.lua]:91: in function 'SendCommMessage'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:566: in function 'SendData'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:395: in function 'SetSendingFullUpdate'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:1333: in function <...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:1326>\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:1343: in function <...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:1342>",
+["session"] = 13179,
+["counter"] = 1,
 },
 },
 }
