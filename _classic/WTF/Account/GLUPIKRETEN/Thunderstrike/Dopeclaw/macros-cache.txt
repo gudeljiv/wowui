@@ -1,6 +1,7 @@
 VER 3 010000000100000B "AA" "134400"
 #showtooltip
 /startattack [form:1][form:3]
+/cast [mod:alt]Regrowth
 /cast [stealth] Pounce; [form:1] Maul; [form:3]Claw; [@mouseover,help,nodead][]Regrowth
 END
 VER 3 0100000001000005 "AP" "136068"

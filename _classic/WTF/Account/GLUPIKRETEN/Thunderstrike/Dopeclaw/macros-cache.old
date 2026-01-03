@@ -62,11 +62,11 @@ VER 3 0100000001000006 "RC" "134400"
 END
 VER 3 0100000001000017 "RG" "136085"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Regrowth
+/cast [@mouseover,exists,nodead,help][help][] Regrowth
 END
 VER 3 0100000001000012 "RJ" "134400"
 #showtooltip [stealth] Ravage; Rejuvenation
-/cast [stealth] Ravage;  [@mouseover,exists,nodead][help][] Rejuvenation
+/cast [stealth] Ravage;  [@mouseover,exists,nodead,help][help][] Rejuvenation
 END
 VER 3 0100000001000004 "W" "134400"
 #showtooltip [stealth]Pounce;[form:0][form:4]Wrath;[form:1]Maul;[form:3]Claw
