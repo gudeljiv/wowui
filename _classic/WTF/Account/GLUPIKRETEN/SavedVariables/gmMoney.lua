@@ -42,11 +42,11 @@ GMMONEY = {
 },
 ["Thunderstrike"] = {
 ["Dopeclaw"] = {
-["GOLD"] = 74698,
+["GOLD"] = 74776,
 ["CLASS"] = "DRUID",
 },
 ["Dopecure"] = {
-["GOLD"] = 341010,
+["GOLD"] = 376236,
 ["CLASS"] = "PRIEST",
 },
 ["Doperage"] = {

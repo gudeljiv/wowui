@@ -2335,12 +2335,13 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.19;
+	local newVersionNotes = 3.20;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isClassic) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
+						"Re-enabled rend log for alliance side after 3.19 disabled it.",
 						"Added a command /dmfhelper to manually open the helper window when at sage, it should usually open auto when in a pvp zone at opposite factions sayge and a ghost. This command is a backup for if the dmf week is wrong or it doesn't show for whatever.",
 						"Fixed the set interact keybind button on the dmf helper.",
 						"Added minutes display even when showing days in the layer uptime display (left click minimap) this is for people looking for ways to determine layer on horde and alliance.",

@@ -1,10 +1,10 @@
 local _, xVermin = ...
 
 local shift = -38
+local buffs = {}
 
-xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
-	local buffs = {}
-
+local loadSpells = function()
+	buffs = {}
 	if xVermin.Class == "PRIEST" then
 		buffs = {
 			{
@@ -53,6 +53,20 @@ xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
 			},
 		}
 	end
+end
+
+loadSpells()
+
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_LEVEL_UP")
+f:SetScript("OnEvent", function(self, event, newLevel)
+	if event == "PLAYER_LEVEL_UP" then
+		loadSpells()
+	end
+end)
+
+xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
+	loadSpells()
 
 	if not buffs or #buffs == 0 then
 		return
@@ -70,7 +84,7 @@ xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
 				)
 				frame:SetAttribute("type1", "macro")
 				frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
-				frame:SetFrameStrata("LOW")
+				frame:SetFrameStrata("MEDIUM")
 				frame:CreateBeautyBorder(6)
 				frame:SetSize(36, 36)
 				frame:RegisterForClicks("AnyUp")

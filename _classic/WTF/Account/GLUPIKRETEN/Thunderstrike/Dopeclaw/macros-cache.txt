@@ -2,7 +2,7 @@ VER 3 010000000100000B "AA" "134400"
 #showtooltip
 /startattack [form:1][form:3]
 /cast [mod:alt]Regrowth
-/cast [stealth] Pounce; [form:1] Maul; [form:3]Claw; [@mouseover,help,nodead][]Regrowth
+/cast [stealth] Pounce; [form:1] Maul; [form:2]Claw; [@mouseover,help,nodead][]Regrowth
 END
 VER 3 0100000001000005 "AP" "136068"
 #showtooltip
@@ -50,12 +50,12 @@ VER 3 0100000001000013 "prowl" "134400"
 /cast Prowl
 END
 VER 3 0100000001000009 "rav" "134400"
-#showtooltip [stealth]Ravage;[form:1]Swipe;[form:3]Shred;[form:0][form:4]Moonfire
+#showtooltip [stealth]Ravage;[form:1]Swipe;[form:2]Shred;[form:0][form:4]Moonfire
 /cast [stealth] Ravage
 /cast [form:0][form:4] Moonfire
 /cast [form:1] Swipe
 /cast [form:1] Enrage
-/cast [form:3] Shred
+/cast [form:2] Shred
 END
 VER 3 0100000001000006 "RC" "134400"
 #showtooltip
@@ -70,11 +70,11 @@ VER 3 0100000001000012 "RJ" "134400"
 /cast [stealth] Ravage;  [@mouseover,exists,nodead,help][help][] Rejuvenation
 END
 VER 3 0100000001000004 "W" "134400"
-#showtooltip [stealth]Pounce;[form:0][form:4]Wrath;[form:1]Maul;[form:3]Claw
+#showtooltip [stealth]Pounce;[form:0][form:4]Wrath;[form:1]Maul;[form:2]Claw
 /startattack [form:0][form:1][form:3]
 /cast [stealth] Pounce
 /cast [form:0][form:4] Wrath
 /cast [form:1] Maul
 /cast [form:1] Enrage
-/cast [form:3] Claw
+/cast [form:2] Claw
 END

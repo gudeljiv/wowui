@@ -2757,8 +2757,7 @@ end
 function NWB:recalcTimerLogFrame()
 	NWBTimerLogFrame.EditBox:SetText("\n\n\n");
 	if (NWB.faction == "Alliance") then
-		NWBTimerLogFrame.EditBox:Insert("\n\n|cffFFFF00Rend timer log for quest handins can only be recorded on the horde side.\n");
-		return;
+		NWBTimerLogFrame.EditBox:Insert("|cFF9CD6DERend quest handins can only be shown on the horde side.\n");
 	end
 	if (type(NWB.data.timerLog) ~= "table" or not next(NWB.data.timerLog)) then
 		NWBTimerLogFrame.EditBox:Insert("\n\|cffFFFF00" .. L["No timer logs found."] .. "\n");
