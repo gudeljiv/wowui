@@ -4,8 +4,8 @@ DriftPoints = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOPRIGHT",
 ["relativePoint"] = "TOPRIGHT",
-["yOfs"] = -101.2130432128906,
-["xOfs"] = -212.4547729492188,
+["yOfs"] = -104.2126693725586,
+["xOfs"] = -195.4571990966797,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -46,8 +46,8 @@ DriftPoints = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOPLEFT",
 ["relativePoint"] = "TOPLEFT",
-["yOfs"] = -67.85202026367188,
-["xOfs"] = 118.6676177978516,
+["yOfs"] = -70.49761199951172,
+["xOfs"] = 103.8527908325195,
 },
 ["GossipFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -115,7 +115,7 @@ DriftPoints = {
 }
 DriftScales = {
 ["CharacterFrame"] = 1.200000047683716,
-["TradeSkillFrame"] = 1.200000047683716,
+["TradeSkillFrame"] = 1.269999980926514,
 ["GameMenuFrame"] = 1.200000047683716,
 }
 DriftOptions = {

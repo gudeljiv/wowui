@@ -150,6 +150,12 @@ xVerminSavedData = {
 ["Boiling Elemental"] = {
 "Instant Poison",
 },
+["Sneed's Shredder"] = {
+"Rend",
+"Deep Wound",
+"Garrote",
+"Serpent Sting",
+},
 ["Whirlwind Stormwalker"] = {
 "Deep Wound",
 },
@@ -158,29 +164,6 @@ xVerminSavedData = {
 },
 ["Scalding Elemental"] = {
 "Rend",
-},
-["Sneed's Shredder"] = {
-"Rend",
-"Deep Wound",
-"Garrote",
-"Serpent Sting",
-},
-["Shredder 9000"] = {
-"Serpent Sting",
-"Drain Life",
-"Crippling Poison",
-"Void Plague",
-"Instant Poison III",
-},
-["Freezing Spirit"] = {
-"Deep Wound",
-},
-["Amnennar the Coldbringer"] = {
-"Intimidation",
-},
-["Shadowshard Smasher"] = {
-"Lightning Shield",
-"Chain Lightning",
 },
 ["Herod"] = {
 "Arcane Shot",
@@ -213,6 +196,23 @@ xVerminSavedData = {
 "Pounce",
 "Starfire Stun",
 },
+["Shredder 9000"] = {
+"Serpent Sting",
+"Drain Life",
+"Crippling Poison",
+"Void Plague",
+"Instant Poison III",
+},
+["Freezing Spirit"] = {
+"Deep Wound",
+},
+["Amnennar the Coldbringer"] = {
+"Intimidation",
+},
+["Shadowshard Smasher"] = {
+"Lightning Shield",
+"Chain Lightning",
+},
 ["Stone Behemoth"] = {
 "Rend",
 },
@@ -223,6 +223,10 @@ xVerminSavedData = {
 "Intercept Stun",
 "Intimidation",
 "Crippling Poison",
+},
+["Burning Destroyer"] = {
+"Lava Lash",
+"Serpent Sting",
 },
 ["Landslide"] = {
 "Blackout",
@@ -244,10 +248,6 @@ xVerminSavedData = {
 "Rend",
 "Serpent Sting",
 },
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
-},
 ["Bristleback Geomancer"] = {
 "Firebolt",
 "Incinerate",
@@ -267,11 +267,15 @@ xVerminSavedData = {
 "Earth Shock",
 "Intimidation",
 },
+["Unfettered Spirit"] = {
+"Deep Wound",
+},
 ["Primordial Behemoth"] = {
 "Concussive Shot",
 },
-["Unfettered Spirit"] = {
-"Deep Wound",
+["Dianastalion"] = {
+"Stormstrike",
+"Mutilate",
 },
 ["Shadowshard Rumbler"] = {
 "Lightning Shield",
@@ -279,10 +283,6 @@ xVerminSavedData = {
 },
 ["XT:9"] = {
 "Serpent Sting",
-},
-["Dianastalion"] = {
-"Stormstrike",
-"Mutilate",
 },
 ["Whirling Tempest"] = {
 "Lightning Shield",
@@ -298,9 +298,12 @@ xVerminSavedData = {
 "Cheap Shot",
 "Mutilate",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
+["Scarlet Chaplain"] = {
+"Weakened Soul",
+},
+["Lord Vyletongue"] = {
+"Blackout",
+"Impact",
 },
 ["Fire Elemental"] = {
 "Flametongue Attack",
@@ -309,10 +312,6 @@ xVerminSavedData = {
 "Lava Lash",
 "Deep Wound",
 "Explosive Trap Effect",
-},
-["Lord Vyletongue"] = {
-"Blackout",
-"Impact",
 },
 ["Larsera"] = {
 "Serpent Sting",
@@ -326,14 +325,9 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Scarlet Chaplain"] = {
-"Weakened Soul",
-},
-["Sea Spray"] = {
-"Frost Shock",
-},
-["Rusty Harvest Golem"] = {
-"Rend",
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
 },
 ["Theradrim Guardian"] = {
 "Lightning Shield",
@@ -344,6 +338,15 @@ xVerminSavedData = {
 "Chimera Shot",
 "Serpent Sting",
 "Thunder Clap",
+},
+["Sea Spray"] = {
+"Frost Shock",
+},
+["Rusty Harvest Golem"] = {
+"Rend",
+},
+["Verdan the Everliving"] = {
+"Charge Stun",
 },
 ["Gahz'rilla"] = {
 "Impact",
@@ -362,13 +365,8 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -382,20 +380,13 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
@@ -456,9 +447,28 @@ xVerminSavedData = {
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",

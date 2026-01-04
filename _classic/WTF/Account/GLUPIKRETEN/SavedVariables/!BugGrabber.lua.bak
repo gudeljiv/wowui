@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 13194,
+["session"] = 13210,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -5940,6 +5940,54 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
 ["session"] = 13190,
 ["counter"] = 1,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Myslot' tried to call the protected function 'UNKNOWN()'.",
+["time"] = "2026/01/04 13:57:37",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"Myslot\"\naddonFunc = \"UNKNOWN()\"\nname = \"Myslot\"\nbadAddons = <table> {\n Myslot = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: ?\n[C]: in function 'Search'\n[Interface/AddOns/Blizzard_GroupFinder_VanillaStyle/Blizzard_LFGVanilla_Browse.lua]:250: in function 'LFGBrowse_DoSearch'\n[Interface/AddOns/Blizzard_GroupFinder_VanillaStyle/Blizzard_LFGVanilla_Browse.lua]:189: in function 'SearchActiveEntry'\n[Interface/AddOns/Blizzard_GroupFinder_VanillaStyle/Blizzard_LFGVanilla_ParentFrame.lua]:95: in function 'LFGParentFrame_SearchActiveEntry'\n[Interface/AddOns/Blizzard_GroupFinder_VanillaStyle/Blizzard_LFGVanilla_Listing.lua]:77: in function <...pFinder_VanillaStyle/Blizzard_LFGVanilla_Listing.lua:54>",
+["session"] = 13195,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:137: attempt to index field '?' (a nil value)",
+["time"] = "2026/01/04 18:06:41",
+["locals"] = "name = nil\nduration = nil\nexpirationTime = nil\nplayer_buffs = <table> {\n}\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(for control) = 2\nindex = 2\nbuff = <table> {\n found = true\n name = \"Thorns\"\n spell_id = 782\n timeRemaining = 330.948000\n short_name = \"thorns\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"thorns\"\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = 782\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbuffs = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n_ = nil\nshift = -38\n",
+["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:137: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:107>\n[C]: ?",
+["session"] = 13196,
+["counter"] = 1260,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:138: attempt to index field '?' (a nil value)",
+["time"] = "2026/01/04 18:09:56",
+["locals"] = "name = nil\nduration = nil\nexpirationTime = nil\nplayer_buffs = <table> {\n}\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(for control) = 2\nindex = 2\nbuff = <table> {\n found = true\n name = \"Thorns\"\n spell_id = 782\n timeRemaining = 136.505000\n short_name = \"thorns\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"thorns\"\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = 782\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbuffs = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n_ = nil\nshift = -38\n",
+["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:138: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:107>\n[C]: ?",
+["session"] = 13199,
+["counter"] = 624,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:139: attempt to index field '?' (a nil value)",
+["time"] = "2026/01/04 18:11:27",
+["locals"] = "name = nil\nduration = nil\nexpirationTime = nil\nplayer_buffs = <table> {\n}\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(for control) = 2\nindex = 2\nbuff = <table> {\n found = true\n name = \"Thorns\"\n spell_id = 782\n timeRemaining = 44.675000\n short_name = \"thorns\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"thorns\"\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = 782\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = true\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbuffs = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n_ = nil\nshift = -38\n",
+["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:139: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:108>\n[C]: ?",
+["session"] = 13201,
+["counter"] = 177,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:146: attempt to index field '?' (a nil value)",
+["time"] = "2026/01/04 18:11:42",
+["locals"] = "name = nil\nduration = nil\nexpirationTime = nil\nplayer_buffs = <table> {\n 1 = \"thorns\"\n}\n(for state) = <table> {\n 1 = \"thorns\"\n}\n(for control) = 1\ni = 1\nbuff = \"thorns\"\nx = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"thorns\"\n(*temporary) = false\n(*temporary) = false\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = false\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbuffs = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n_ = nil\nshift = -38\n",
+["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:146: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:108>\n[C]: ?",
+["session"] = 13201,
+["counter"] = 1421,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:148: attempt to index field '?' (a nil value)",
+["time"] = "2026/01/04 18:16:08",
+["locals"] = "name = nil\nduration = nil\nexpirationTime = nil\nplayer_buffs = <table> {\n 1 = \"motw\"\n 2 = \"thorns\"\n}\n(for state) = <table> {\n 1 = \"motw\"\n 2 = \"thorns\"\n}\n(for control) = 2\ni = 2\nshort_name = \"thorns\"\nx = -38\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"thorns\"\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbuffs = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n_ = nil\nshift = -38\n",
+["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:148: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:109>\n[C]: ?",
+["session"] = 13205,
+["counter"] = 2218,
 },
 },
 }
