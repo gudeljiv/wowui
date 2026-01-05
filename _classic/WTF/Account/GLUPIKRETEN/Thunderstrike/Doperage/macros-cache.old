@@ -49,6 +49,7 @@ VER 3 010000000100001D "over" "134400"
 /startattack
 /cast [nostance:1] Battle Stance;
 /cast Overpower
+/cast Bloodrage
 END
 VER 3 0100000001000021 "rend" "134400"
 #showtooltip
