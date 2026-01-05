@@ -30,13 +30,13 @@ Postal3DB = {
 ["Dopeah - Stitches"] = "Dopeah - Stitches",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 ["Dopede - Stitches"] = "Dopede - Stitches",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Dopemend - Living Flame"] = "Dopemend - Living Flame",
@@ -68,12 +68,12 @@ Postal3DB = {
 "Dopenac|Lone Wolf|Horde|16|PRIEST",
 "Doperage|Living Flame|Horde|42|WARRIOR",
 "Doperage|Lone Wolf|Horde|42|WARRIOR",
-"Doperage|Thunderstrike|Horde|13|WARRIOR",
+"Doperage|Thunderstrike|Horde|16|WARRIOR",
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Living Flame|Horde|49|HUNTER",
 "Dopesnare|Lone Wolf|Horde|49|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopesnare|Thunderstrike|Horde|18|HUNTER",
+"Dopesnare|Thunderstrike|Horde|19|HUNTER",
 "Dopestab|Living Flame|Horde|41|ROGUE",
 "Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Living Flame|Horde|1|HUNTER",
@@ -222,8 +222,8 @@ Postal3DB = {
 ["Doperage - Thunderstrike"] = {
 ["BlackBook"] = {
 ["recent"] = {
-"Dopeclaw|Thunderstrike|Horde",
 "Dopecure|Thunderstrike|Horde",
+"Dopeclaw|Thunderstrike|Horde",
 },
 },
 },
@@ -275,16 +275,9 @@ Postal3DB = {
 },
 },
 },
+["Doperage - Living Flame"] = {
+},
 ["Turbonac - Celebras"] = {
-},
-["Vermin - Celebras"] = {
-["BlackBook"] = {
-["recent"] = {
-"Vbank|Celebras|Alliance",
-"Mq|Celebras|Alliance",
-"Dibsie-Celebras|Celebras|Alliance",
-},
-},
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
@@ -300,7 +293,14 @@ Postal3DB = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
-["Doperage - Living Flame"] = {
+["Vermin - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vbank|Celebras|Alliance",
+"Mq|Celebras|Alliance",
+"Dibsie-Celebras|Celebras|Alliance",
+},
+},
 },
 ["Vermin - Zandalar Tribe"] = {
 },

@@ -27,10 +27,6 @@ VER 3 0100000001000025 "heal" "134400"
 /cast enraged regeneration
 /cast bloodrage
 END
-VER 3 0100000001000026 "hook" "134400"
-#showtooltip
-/cast [@mouseover,exists][] Meathook
-END
 VER 3 0100000001000011 "hs" "134400"
 #showtooltip
 /startattack
