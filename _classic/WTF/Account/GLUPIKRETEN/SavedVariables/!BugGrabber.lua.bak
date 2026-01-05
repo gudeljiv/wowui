@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-["session"] = 13212,
+["session"] = 13222,
 ["lastSanitation"] = 3,
 ["errors"] = {
 {
@@ -5988,6 +5988,30 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/xVermin/Helpers/Buffs.lua]:148: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:109>\n[C]: ?",
 ["session"] = 13205,
 ["counter"] = 2218,
+},
+{
+["message"] = "[string \"print(_G[\"ChatConfigChatSettingsLeftCheckBo...\"]:1: attempt to concatenate global 'i' (a nil value)",
+["time"] = "2026/01/05 10:01:20",
+["locals"] = "msg = \"print(_G[\"ChatConfigChatSettingsLeftCheckBox\" .. i .. \"ColorClasses\"]:GetParent().type)\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 13221,
+["counter"] = 1,
+},
+{
+["message"] = "[string \"print(_G[\"ChatConfigChatSettingsLeftCheckBo...\"]:1: attempt to index field 'ChatConfigChatSettingsLeftCheckBox1ColorClasses' (a nil value)",
+["time"] = "2026/01/05 10:01:33",
+["locals"] = "msg = \"print(_G[\"ChatConfigChatSettingsLeftCheckBox1ColorClasses\"]:GetParent().type)\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 13221,
+["counter"] = 2,
+},
+{
+["message"] = "...lizzard_ChatFrame/Classic/ChatConfigFrame_Shared.lua:2562: Usage: SetChatColorNameByClass(chatType, colorNameByClass)",
+["time"] = "2026/01/05 10:02:59",
+["locals"] = "checked = true\ngroup = nil\ninfo = nil\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrame/Classic/ChatConfigFrame_Shared.lua]:2562: in function 'ToggleChatColorNamesByClassGroup'\n[ToggleChatColorNamesByClassGroup(true)]:1: in main chunk\n[C]: in function 'RunScript'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
+["session"] = 13221,
+["counter"] = 1,
 },
 },
 }

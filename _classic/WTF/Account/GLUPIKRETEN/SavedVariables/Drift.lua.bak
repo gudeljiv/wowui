@@ -1,11 +1,11 @@
 
 DriftPoints = {
-["TradeSkillFrame"] = {
+["SideDressUpFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPRIGHT",
-["relativePoint"] = "TOPRIGHT",
-["yOfs"] = -104.2126693725586,
-["xOfs"] = -195.4571990966797,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -147.8732299804688,
+["xOfs"] = 272.5481872558594,
 },
 ["InspectFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -16,10 +16,10 @@ DriftPoints = {
 },
 ["AuctionFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -112.9947814941406,
-["xOfs"] = 270.3706359863281,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -93.94723510742188,
+["xOfs"] = -257.0154724121094,
 },
 ["SettingsPanel"] = {
 ["relativeTo"] = "UIParent",
@@ -48,6 +48,13 @@ DriftPoints = {
 ["relativePoint"] = "TOPLEFT",
 ["yOfs"] = -70.49761199951172,
 ["xOfs"] = 103.8527908325195,
+},
+["ChatConfigFrame"] = {
+["relativeTo"] = "UIParent",
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 77.46043395996094,
+["xOfs"] = -126.9841537475586,
 },
 ["GossipFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -98,12 +105,12 @@ DriftPoints = {
 ["yOfs"] = 156.8253631591797,
 ["xOfs"] = -234.9205474853516,
 },
-["SideDressUpFrame"] = {
+["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -147.8732299804688,
-["xOfs"] = 272.5481872558594,
+["point"] = "TOPRIGHT",
+["relativePoint"] = "TOPRIGHT",
+["yOfs"] = -104.2126693725586,
+["xOfs"] = -195.4571990966797,
 },
 ["AddonList"] = {
 ["relativeTo"] = "UIParent",
@@ -124,15 +131,15 @@ DriftOptions = {
 ["windowsDisabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["scaleCtrlKeyEnabled"] = false,
 ["bagsDisabled"] = true,
-["objectivesDisabled"] = true,
-["miscellaneousDisabled"] = true,
+["scaleCtrlKeyEnabled"] = false,
+["scaleShiftKeyEnabled"] = false,
 ["arenaDisabled"] = true,
+["miscellaneousDisabled"] = true,
 ["dragCtrlKeyEnabled"] = false,
 ["buttonsDisabled"] = true,
 ["dragShiftKeyEnabled"] = false,
 ["frameScaleIsLocked"] = false,
-["scaleShiftKeyEnabled"] = false,
+["objectivesDisabled"] = true,
 ["minimapDisabled"] = true,
 }
