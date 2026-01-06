@@ -7,6 +7,7 @@ CHANNELS
 2 0 2 1
 22 0 3 1
 24 0 4 1
+Layer 1 6 3
 END
 
 ZONECHANNELS 0
@@ -218,6 +219,7 @@ MESSAGES
 END
 
 CHANNELS
+layer
 LookingForGroup
 END
 
