@@ -84,6 +84,6 @@ VER 3 010000000100000F "taunt" "134400"
 END
 VER 3 010000000100001C "tc" "134400"
 #showtooltip Thunder Clap
-/cast [nostance:1,nocombat] Battle Stance;
+/cast [nostance:1] Battle Stance;
 /cast Thunder Clap
 END

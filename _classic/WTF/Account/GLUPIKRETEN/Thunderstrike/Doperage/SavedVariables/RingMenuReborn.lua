@@ -10,14 +10,14 @@ RadialWheelProfiles = {
 ["bgSize"] = 1.5,
 ["rotation"] = 0,
 ["binding"] = "J",
-["bgTint"] = {
-["red"] = 0,
-["blue"] = 0,
-["alpha"] = 0.5,
-["green"] = 0,
-},
-["quickCast"] = false,
 ["slotCount"] = 12,
+["quickCast"] = false,
+["bgTint"] = {
+["green"] = 0,
+["alpha"] = 0.5,
+["blue"] = 0,
+["red"] = 0,
+},
 ["size"] = 100,
 },
 }

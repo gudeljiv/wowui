@@ -219,7 +219,7 @@ MESSAGES
 END
 
 CHANNELS
-layer
+Layer
 LookingForGroup
 END
 
