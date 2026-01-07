@@ -140,16 +140,13 @@ SAO.Bucket = {
                 if oldHash == nil or oldHash == 0 then
                     local shortStrHashAfter, longStrHashAfter = describeHash(newHash);
                     SAO:Debug(Module, prefix.."Setting hash to "..shortStrHashAfter.." for "..self.description);
-                    SAO:Trace(Module, prefix.."Setting hash to "..longStrHashAfter.." for "..self.description);
                 elseif newHash == 0 then
                     local _, longStrHashBefore = describeHash(oldHash);
                     SAO:Debug(Module, prefix.."Resetting hash for "..self.description);
-                    SAO:Trace(Module, prefix.."Resetting hash from "..longStrHashBefore.." for "..self.description);
                 else
                     local shortStrHashBefore, longStrHashBefore = describeHash(oldHash);
                     local shortStrHashAfter, longStrHashAfter = describeHash(newHash);
                     SAO:Debug(Module, prefix.."Changing hash from "..shortStrHashBefore.." to "..shortStrHashAfter.." for "..self.description);
-                    SAO:Trace(Module, prefix.."Changing hash from "..longStrHashBefore.." to "..longStrHashAfter.." for "..self.description);
                 end
             end
 

@@ -27,7 +27,6 @@ local function initRuneMapping()
             foundRune = true;
         end
     end
-    SAO:Trace(Module, "initRuneMapping foundRune == "..tostring(foundRune));
     runeMapping.initialized = foundRune;
 end
 
@@ -45,7 +44,7 @@ end
 if SAO.IsSoD() then
     -- Check rune updates when the RUNE_UPDATED event is triggered
     local RuneUpdateTracker = CreateFrame("FRAME");
-    RuneUpdateTracker:RegisterEvent("RUNE_UPDATED");
+    SAO:RegisterEventHandler(RuneUpdateTracker, "RUNE_UPDATED", "Static initializer: "..Module);
     RuneUpdateTracker:SetScript("OnEvent", function(self, event, rune)
         if runeMapping.initialized and rune then
             addRuneMapping(rune);

@@ -28,6 +28,7 @@ local shadowburn = 17877;
 local shadowCleave = 403841;
 local seedOfCorruption = 27285;
 local soulFire = 6353;
+local soulSwap = 86121;
 
 -- Pre-MoP buffs
 local moltenCoreBuff = { 47383, 71162, 71165 };
@@ -199,6 +200,19 @@ local function useSoulburn(self)
     );
 end
 
+local function useSoulSwap(self)
+    self:CreateEffect(
+        "soul_swap",
+        SAO.MOP,
+        86211, -- Soul Swap (buff)
+        "aura",
+        {
+            overlay = { texture = "sudden_doom", position = "Left + Right (Flipped)", scale = 1.25 },
+            button = soulSwap,
+        }
+    );
+end
+
 local function registerMoltenCore(self, rank)
     local moltenCoreName = { "molten_core_low", "molten_core_medium", "molten_core_high" };
     local overlayOption = (rank == 3) and { setupHash = SAO:HashNameFromStacks(0), testHash = SAO:HashNameFromStacks(3) };
@@ -313,7 +327,7 @@ local function unitAura(self, unitTarget, updateInfo)
                     local bucket = self:GetBucketBySpellID(auraData.spellId);
                     if bucket then
                         bucket:refresh();
-                        self:Debug(Module, string.format("Refreshing the %dth stack of %d", auraData.applications, auraData.spellId));
+                        SAO:Debug(Module, string.format("Refreshing the %dth stack of %d", auraData.applications, auraData.spellId));
                     end
                 end
             end
@@ -563,6 +577,7 @@ local function registerClass(self)
     -- Affliction
     useNightfall(self); -- a.k.a. Shadow Trance
     useSoulburn(self);
+    useSoulSwap(self);
 
     -- Demonology
     useMoltenCore(self);

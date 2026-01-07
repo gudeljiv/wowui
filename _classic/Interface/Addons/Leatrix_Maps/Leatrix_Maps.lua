@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.15.116 (31st December 2025)
+	-- 	Leatrix Maps 1.15.117 (7th January 2026)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList, LeaLockList = {}, {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.15.116"
+	LeaMapsLC["AddonVer"] = "1.15.117"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...

@@ -136,7 +136,6 @@ local GlowEngine = SAO.IsProject(SAO.CATA_AND_ONWARD) and {
     end,
 
     BeginSAOGlow = function(self, frame, glowID)
-        SAO:Trace(Module, "BeginSAOGlow("..self:ParamName(frame, glowID)..")");
 
         -- First, look if this glow ID is already known
         local saoGlowForGlowID = self.SAOGlows[glowID];
@@ -166,7 +165,6 @@ local GlowEngine = SAO.IsProject(SAO.CATA_AND_ONWARD) and {
     end,
 
     EndSAOGlow = function(self, frame, glowID)
-        SAO:Trace(Module, "EndSAOGlow("..self:ParamName(frame, glowID)..")");
 
         -- Basic security measure: un-glow first, then ask questions
         self:EndGlowFinally(frame);
@@ -192,7 +190,6 @@ local GlowEngine = SAO.IsProject(SAO.CATA_AND_ONWARD) and {
     end,
 
     BeginNativeGlow = function(self, glowID)
-        SAO:Trace(Module, "BeginNativeGlow("..self:SpellInfo(glowID)..")");
 
         if self.NativeGlows[glowID] then
             return; -- This action is already known
@@ -214,7 +211,6 @@ local GlowEngine = SAO.IsProject(SAO.CATA_AND_ONWARD) and {
     end,
 
     EndNativeGlow = function(self, glowID)
-        SAO:Trace(Module, "EndNativeGlow("..self:SpellInfo(glowID)..")");
 
         if not self.NativeGlows[glowID] then
             return; -- This action is not in the list of Native glowing buttons
@@ -246,8 +242,8 @@ local GlowEngine = SAO.IsProject(SAO.CATA_AND_ONWARD) and {
 
 if SAO.IsProject(SAO.CATA_AND_ONWARD) then
     local GlowEngineFrame = CreateFrame("Frame", "SpellActivationOverlayGlowEngineFrame");
-    GlowEngineFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW");
-    GlowEngineFrame:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE");
+    SAO:RegisterEventHandler(GlowEngineFrame, "SPELL_ACTIVATION_OVERLAY_GLOW_SHOW", "Static initializer: "..Module);
+    SAO:RegisterEventHandler(GlowEngineFrame, "SPELL_ACTIVATION_OVERLAY_GLOW_HIDE", "Static initializer: "..Module);
     GlowEngineFrame:SetScript("OnEvent", function (self, event, spellID)
         if event == "SPELL_ACTIVATION_OVERLAY_GLOW_SHOW" then
             GlowEngine:BeginNativeGlow(spellID);
@@ -380,7 +376,9 @@ local function HookActionButton_Update(button)
     end
     SAO:UpdateActionButton(button);
 end
-hooksecurefunc("ActionButton_Update", HookActionButton_Update);
+if not SAO.IsTBC() then -- UI has changed in TBC Classic Anniversary, avoid hooking ActionButton_Update for now
+    hooksecurefunc("ActionButton_Update", HookActionButton_Update);
+end
 
 -- Grab buttons in the stance bar
 local function HookStanceBar_UpdateState()
@@ -406,7 +404,12 @@ local function HookStanceBar_UpdateState()
         SAO:UpdateActionButton(button);
     end
 end
-hooksecurefunc("StanceBar_UpdateState", HookStanceBar_UpdateState);
+if select(2, UnitClass("player")) == "PRIEST" then
+    -- Only Priests require hooking to StanceBar_UpdateState, for Shadowform
+    if not SAO.IsTBC() then -- UI has changed in TBC Classic Anniversary, but Shadow Priests do not even have 'stances' anyway
+        hooksecurefunc("StanceBar_UpdateState", HookStanceBar_UpdateState);
+    end
+end
 
 -- Awake dormant buttons associated to a spellID
 function SAO.AwakeButtonsBySpellID(self, spellID)
@@ -430,13 +433,13 @@ function SAO.AddGlowNumber(self, spellID, glowID)
         for _, frame in pairs(actionButtons or {}) do
             if (not SpellActivationOverlayDB or not SpellActivationOverlayDB.glow or SpellActivationOverlayDB.glow.enabled) then
                 if not frame.__sao then
-                    self:Debug(Module, "Action Button "..tostring(frame:GetName()).." does not have __sao, glow may fail");
+                    SAO:Debug(Module, "Action Button "..tostring(frame:GetName()).." does not have __sao, glow may fail");
                 elseif not frame.__sao.GetGlowID() then
-                    self:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a nil __sao.GetGlowID, glow may fail");
+                    SAO:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a nil __sao.GetGlowID, glow may fail");
                 elseif not frame.__sao.lastGlowID then
-                    self:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a nil __sao.lastGlowID, glow may fail");
+                    SAO:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a nil __sao.lastGlowID, glow may fail");
                 elseif frame.__sao.GetGlowID() ~= frame.__sao.lastGlowID then
-                    self:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a different __sao.GetGlowID ("..tostring(frame.__sao.GetGlowID())..") vs. __sao.lastGlowID ("..tostring(frame.__sao.lastGlowID).."), glow may fail");
+                    SAO:Debug(Module, "Action Button "..tostring(frame:GetName()).." has a different __sao.GetGlowID ("..tostring(frame.__sao.GetGlowID())..") vs. __sao.lastGlowID ("..tostring(frame.__sao.lastGlowID).."), glow may fail");
                 end
                 EnableGlow(frame, frame.__sao and (frame.__sao.GetGlowID() or frame.__sao.lastGlowID) or glowID, "direct activation");
             end
@@ -560,13 +563,6 @@ function SAO.RemoveGlow(self, spellID, glowIDs)
             local actionButtons = self.ActionButtons[glowSpellID];
             for _, frame in pairs(actionButtons or {}) do
                 DisableGlow(frame, glowSpellID, "direct deactivation");
-                if SAO:HasTrace(Module) then
-                    local oldGlowID, newGlowID = glowSpellID, (frame.__sao and frame.__sao.GetGlowID());
-                    local frameName = tostring(frame and frame.GetName and frame:GetName());
-                    if oldGlowID ~= newGlowID then
-                        SAO:Trace(Module, "RemoveGlow deactivates button "..frameName.." which had glowID "..tostring(oldGlowID).." but its glow ID is now "..tostring(newGlowID));
-                    end
-                end
             end
         end
     end

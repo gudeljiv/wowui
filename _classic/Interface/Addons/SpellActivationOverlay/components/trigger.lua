@@ -79,7 +79,6 @@ SAO.Trigger = {
         if bit.band(self.informed, flag) == flag then
             return;
         end
-        SAO:Trace(Module, "Informing trigger "..name.." for "..self.parent.description);
 
         self.informed = bit.bor(self.informed, flag);
     end,
@@ -93,7 +92,6 @@ SAO.Trigger = {
             SAO:Debug(Module, "De-informing unactive trigger "..name.." for "..self.parent.description);
             return;
         end
-        SAO:Trace(Module, "De-informing trigger "..name.." for "..self.parent.description);
 
         self.informed = bit.band(self.informed, bit.bnot(flag));
     end,

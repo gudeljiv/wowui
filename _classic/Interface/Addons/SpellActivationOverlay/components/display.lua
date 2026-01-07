@@ -199,6 +199,11 @@ SAO.Display = {
         if oldStatus == newStatus then
             return;
         end
+        -- if true then
+        --     -- Disable display updates for testing purposes
+        --     self.status = newStatus;
+        --     return;
+        -- end
 
         local statusChanged = false;
         if oldStatus == 'off' and newStatus == 'hard' then

@@ -1,5 +1,34 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.6.2 (2026-01-07)
+
+Bug Fixes
+- The addon should no longer cause Lua errors at start
+
+#### v2.6.1 (2026-01-06)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- COl3RA79 and user_lomdxj6j146bfugc for reporting the Riposte issue
+- lecrabby for reporting the Mongoose Bite issue
+
+Bump in TOC file for Throne of Thunder patch (Mists of Pandaria)
+
+This release is focused on optimizing code
+- Messages for developers are no longer called in non-developer builds
+- Improved performance for classes with several stances, such as Druid
+- The deprecated Counter system, used in pre-2.0, has been terminated
+- Less CPU is used to dispatch game events to intended recipients
+
+New Spell Alert
+- Warlock's Soul Swap (Mists of Pandaria)
+
+New Glowing Button
+- Warlock's Soul Swap: Exhale, during Soul Swap (Mists of Pandaria)
+
+Bug Fixes
+- Hunter's Mongoose Bite should now always trigger as intended (Classic Era)
+- Rogue's Riposte should now trigger as intended (Classic Era)
+
 #### v2.6.0 (2025-11-10)
 
 Thank you to our amazing contributors for helping out. Thanks!
