@@ -8,6 +8,11 @@ TradeSkillMaster_AppHelperDB = {
 },
 ["updateTime"] = 0,
 },
+["fullScan"] = {
+["data"] = {
+},
+["updateTime"] = 1766944415,
+},
 ["analytics"] = {
 ["data"] = {
 "[\"AC\",\"v4.14.48\",1766656065365,0,1,\"ADDON_INITIALIZE\",0]",
@@ -671,12 +676,12 @@ TradeSkillMaster_AppHelperDB = {
 "[\"AC\",\"v4.14.49\",1767790952570,0,2,\"ADDON_ENABLE\",0]",
 "[\"AC\",\"v4.14.49\",1767806466538,0,1,\"ADDON_INITIALIZE\",0]",
 "[\"AC\",\"v4.14.49\",1767806469364,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.49\",1767820489558,0,1,\"ADDON_INITIALIZE\",0]",
+"[\"AC\",\"v4.14.49\",1767820492311,0,2,\"ADDON_ENABLE\",0]",
+"[\"AC\",\"v4.14.49\",1767822349123,0,3,\"UI_NAVIGATION\",\"\",\"mailing\"]",
+"[\"AC\",\"v4.14.49\",1767822349130,0,4,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]",
+"[\"AC\",\"v4.14.49\",1767822357259,0,5,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]",
 },
-["updateTime"] = 1767806469.364768,
-},
-["fullScan"] = {
-["data"] = {
-},
-["updateTime"] = 1766944415,
+["updateTime"] = 1767822357.259625,
 },
 }
