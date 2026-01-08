@@ -81,7 +81,8 @@ if IsAddOnLoaded("AdiBags") then
 	end
 
 	local function UpdateItemLevel(button)
-		if not button.itemLink then
+		print(button:GetName(), button.itemLink, button.hasItem)
+		if not button.hasItem then
 			if button.text then
 				button.text:Hide()
 			end
