@@ -1,3 +1,15 @@
+VER 3 0100000001000005 " " "134400"
+#showtooltip
+/cast [@mouseover,harm,exists][]Curse of Agony
+END
+VER 3 0100000001000008 " " "134400"
+#showtooltip Shoot
+/castsequence reset=2 !Shoot, null
+END
+VER 3 0100000001000006 " " "134400"
+#showtooltip
+/cast [@mouseover,harm,exists][]Corruption
+END
 VER 3 0100000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,harm,exists][]Fear
@@ -18,12 +30,4 @@ VER 3 0100000001000007 " " "134400"
 /cast !Auto Shot
 /stopattack
 /cast Drain Soul
-END
-VER 3 0100000001000005 " " "134400"
-#showtooltip
-/cast [@mouseover,harm,exists][]Curse of Agony
-END
-VER 3 0100000001000006 " " "134400"
-#showtooltip
-/cast [@mouseover,harm,exists][]Corruption
 END

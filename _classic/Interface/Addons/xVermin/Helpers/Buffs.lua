@@ -146,11 +146,25 @@ local function Refresh()
 end
 
 local ev = CreateFrame("Frame")
+local pendingRefresh = false
 ev:RegisterEvent("PLAYER_LOGIN")
 ev:RegisterEvent("SPELLS_CHANGED")
 ev:RegisterEvent("LEARNED_SPELL_IN_TAB")
 ev:RegisterEvent("PLAYER_LEVEL_UP")
+ev:RegisterEvent("PLAYER_REGEN_ENABLED")
 
-ev:SetScript("OnEvent", function()
-	C_Timer.After(0.5, Refresh)
+ev:SetScript("OnEvent", function(self, event)
+	if event == "PLAYER_REGEN_ENABLED" then
+		if pendingRefresh then
+			pendingRefresh = false
+			C_Timer.After(0.5, Refresh)
+		end
+		return
+	end
+
+	if InCombatLockdown() then
+		pendingRefresh = true
+	else
+		C_Timer.After(0.5, Refresh)
+	end
 end)

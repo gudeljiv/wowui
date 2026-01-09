@@ -4,7 +4,7 @@ VER 3 000000000000003F " " "134400"
 END
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,19 +15,19 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1205
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:4538
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:929
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:5512
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -57,7 +57,10 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:5503
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Undertaker Mordo
+/targetexact Gazrog
+/targetexact Sergra Darkthorn
+/targetexact Tonga Runetotem
+/targetexact Mankrik
 /targetlasttarget [dead]
 END
 VER 3 0000000000000024 "sharp" "134400"
@@ -67,7 +70,9 @@ VER 3 0000000000000024 "sharp" "134400"
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run ToggleChatColorNamesByClassGroup(true,"ChatConfigChatSettingsLeftCheckBox1ColorClasses")
+/run print(UnitExists("pet"))
+/run print(UnitExists("pettarget"))
+/run print(UnitExists("target"))
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

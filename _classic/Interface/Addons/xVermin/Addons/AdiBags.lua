@@ -81,7 +81,6 @@ if IsAddOnLoaded("AdiBags") then
 	end
 
 	local function UpdateItemLevel(button)
-		print(button:GetName(), button.itemLink, button.hasItem)
 		if not button.hasItem then
 			if button.text then
 				button.text:Hide()
@@ -117,6 +116,13 @@ if IsAddOnLoaded("AdiBags") then
 		button:CreateBeautyBorder(8)
 		button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
 		button:SetBeautyBorderColor(1, 1, 1, 1)
+
+		if not button.hasItem then
+			if button.text then
+				button.text:Hide()
+			end
+			return
+		end
 
 		if link then
 			if button.hasItem then

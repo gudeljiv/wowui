@@ -303,29 +303,6 @@ xVerminSavedData = {
 ["Befouled Water Elemental"] = {
 "Serpent Sting",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
 ["Klaxxi"] = {
 "Big Bronze Bomb",
 "Flanking Strike",
@@ -333,6 +310,13 @@ xVerminSavedData = {
 "Psychic Scream",
 "Raptor Strike",
 "Void Plague",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -372,16 +356,31 @@ xVerminSavedData = {
 "Lava Lash",
 "Flame Shock",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
@@ -406,8 +405,9 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Cracked Skull Soldier"] = {
 "Rend",
@@ -432,9 +432,9 @@ xVerminSavedData = {
 "Lightning Shield",
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Nelyz"] = {
 "Concussive Shot",
