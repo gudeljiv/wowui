@@ -44,10 +44,10 @@ DriftPoints = {
 },
 ["MacroFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOPLEFT",
-["relativePoint"] = "TOPLEFT",
-["yOfs"] = -70.49761199951172,
-["xOfs"] = 103.8527908325195,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+["yOfs"] = -78.4341812133789,
+["xOfs"] = -245.6655883789063,
 },
 ["ChatConfigFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -98,12 +98,12 @@ DriftPoints = {
 ["yOfs"] = -130.4550323486328,
 ["xOfs"] = 254.4337463378906,
 },
-["AddonList"] = {
+["ColorPickerFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
-["yOfs"] = 177.6506805419922,
-["xOfs"] = -80.6351089477539,
+["yOfs"] = 165.7144012451172,
+["xOfs"] = -45.71454238891602,
 },
 ["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -112,12 +112,12 @@ DriftPoints = {
 ["yOfs"] = -70.59929656982422,
 ["xOfs"] = -138.5011596679688,
 },
-["ColorPickerFrame"] = {
+["AddonList"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
-["yOfs"] = 165.7144012451172,
-["xOfs"] = -45.71454238891602,
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
 },
 }
 DriftScales = {
@@ -128,18 +128,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["bagsDisabled"] = true,
+["windowsDisabled"] = false,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["objectivesDisabled"] = true,
-["windowsDisabled"] = false,
-["scaleShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
-["arenaDisabled"] = true,
-["dragCtrlKeyEnabled"] = false,
-["dragShiftKeyEnabled"] = false,
-["buttonsDisabled"] = true,
-["miscellaneousDisabled"] = true,
+["bagsDisabled"] = true,
 ["scaleCtrlKeyEnabled"] = false,
+["scaleShiftKeyEnabled"] = false,
+["arenaDisabled"] = true,
+["miscellaneousDisabled"] = true,
+["dragCtrlKeyEnabled"] = false,
+["buttonsDisabled"] = true,
+["dragShiftKeyEnabled"] = false,
+["frameScaleIsLocked"] = false,
+["objectivesDisabled"] = true,
 ["minimapDisabled"] = true,
 }

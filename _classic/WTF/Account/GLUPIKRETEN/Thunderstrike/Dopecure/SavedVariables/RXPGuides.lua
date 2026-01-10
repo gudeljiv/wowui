@@ -1,17 +1,82 @@
 
 RXPCData = {
 ["completedWaypoints"] = {
-[3] = {
+[2] = {
 },
 },
-["currentStep"] = 3,
+["currentStep"] = 2,
 ["questObjectivesCache"] = {
-[3901] = {
+[0] = 16,
+[788] = {
 {
 ["type"] = "monster",
-["numRequired"] = 12,
-["text"] = "Rattlecage Skeleton slain: 0/12",
+["numRequired"] = 10,
 ["finished"] = false,
+["text"] = "Mottled Boar slain: 0/10",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[789] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["finished"] = false,
+["text"] = "Scorpid Worker Tail: 0/10",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[364] = {
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Mindless Zombie slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Wretched Zombie slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[790] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["finished"] = false,
+["text"] = "Sarkoth's Mangled Claw: 0/1",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[380] = {
+{
+["type"] = "monster",
+["numRequired"] = 6,
+["text"] = "Young Night Web Spider slain: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Night Web Spider slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[4402] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["finished"] = false,
+["text"] = "Cactus Apple: 0/10",
 ["numFulfilled"] = 0,
 },
 ["finished"] = false,
@@ -26,11 +91,31 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[3902] = {
+[6394] = {
 {
 ["type"] = "item",
-["numRequired"] = 6,
-["text"] = "Scavenged Goods: 0/6",
+["numRequired"] = 1,
+["finished"] = false,
+["text"] = "Thazz'ril's Pick: 0/1",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[5441] = {
+{
+["type"] = "monster",
+["numRequired"] = 5,
+["finished"] = false,
+["text"] = "Peons Awoken: 0/5",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[382] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Scarlet Crusade Documents: 0/1",
 ["finished"] = false,
 ["numFulfilled"] = 0,
 },
@@ -63,47 +148,42 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[380] = {
-{
-["type"] = "monster",
-["numRequired"] = 6,
-["text"] = "Young Night Web Spider slain: 0/10",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-{
-["type"] = "monster",
-["numRequired"] = 8,
-["text"] = "Night Web Spider slain: 0/8",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[0] = 8,
-[364] = {
-{
-["type"] = "monster",
-["numRequired"] = 8,
-["text"] = "Mindless Zombie slain: 0/8",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-{
-["type"] = "monster",
-["numRequired"] = 8,
-["text"] = "Wretched Zombie slain: 0/8",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[382] = {
+[794] = {
 {
 ["type"] = "item",
 ["numRequired"] = 1,
-["text"] = "Scarlet Crusade Documents: 0/1",
 ["finished"] = false,
+["text"] = "Burning Blade Medallion: 0/1",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[3901] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["text"] = "Rattlecage Skeleton slain: 0/12",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[3902] = {
+{
+["type"] = "item",
+["numRequired"] = 6,
+["text"] = "Scavenged Goods: 0/6",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[792] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["finished"] = false,
+["text"] = "Vile Familiar slain: 0/12",
 ["numFulfilled"] = 0,
 },
 ["finished"] = false,
@@ -113,15 +193,24 @@ RXPCData = {
 ["flightPaths"] = {
 },
 ["questNameCache"] = {
-[3901] = "Rattling the Rattlecages",
+[4641] = "Your Place In The World",
+[363] = "Rude Awakening",
+[788] = "Cutting Teeth",
+[789] = "Sting of the Scorpid",
+[364] = "The Mindless Ones",
+[790] = "Sarkoth",
+[380] = "Night Web's Hollow",
+[4402] = "Galgar's Cactus Apple Surprise",
 [381] = "The Scarlet Crusade",
-[3902] = "Scavenging Deathknell",
+[6394] = "Thazz'ril's Pick",
+[5441] = "Lazy Peons",
+[382] = "The Red Messenger",
 [6395] = "Marla's Last Wish",
 [376] = "The Damned",
-[380] = "Night Web's Hollow",
-[363] = "Rude Awakening",
-[364] = "The Mindless Ones",
-[382] = "The Red Messenger",
+[794] = "Burning Blade Medallion",
+[3901] = "Rattling the Rattlecages",
+[3902] = "Scavenging Deathknell",
+[792] = "Vile Familiars",
 },
 ["guideMetaData"] = {
 ["RestedXP Horde 40-50||49-50 Feralas"] = {
@@ -1726,12 +1815,11 @@ RXPCData = {
 ["discardPile"] = {
 [6948] = true,
 },
-["currentGuideName"] = "01-06 Tirisfal Glades",
+["currentGuideName"] = "01-06 Durotar",
 ["stepSkip"] = {
 true,
-true,
 },
-["currentStepId"] = 256773494,
+["currentStepId"] = 2939554465,
 ["guideDisabled"] = {
 26748,
 44351,

@@ -6,7 +6,7 @@ RadialWheelDB = {
 RadialWheelProfiles = {
 {
 ["rotation"] = 0,
-["dismissOnUse"] = true,
+["dismissOnUse"] = false,
 ["slotCount"] = 12,
 ["slotStart"] = 13,
 ["bgTint"] = {

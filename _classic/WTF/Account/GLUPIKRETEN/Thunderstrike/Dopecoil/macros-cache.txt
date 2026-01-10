@@ -1,3 +1,11 @@
+VER 3 0100000001000007 " " "134400"
+#showtooltip Drain Soul
+/assist [@pet,exists,noharm][@pet,exists,dead] pet
+/stopcasting
+/cast !Auto Shot
+/stopattack
+/cast Drain Soul
+END
 VER 3 0100000001000005 " " "134400"
 #showtooltip
 /cast [@mouseover,harm,exists][]Curse of Agony
@@ -23,11 +31,11 @@ VER 3 0100000001000004 " " "134400"
 #showtooltip
 /cast [@mouseover,harm,exists][]Immolate
 END
-VER 3 0100000001000007 " " "134400"
-#showtooltip Drain Soul
-/assist [@pet,exists,noharm][@pet,exists,dead] pet
-/stopcasting
-/cast !Auto Shot
-/stopattack
-/cast Drain Soul
+VER 3 0100000001000009 " " "134400"
+#showtooltip
+/cast Consume Shadows
+END
+VER 3 010000000100000A " " "134400"
+#showtooltip
+/cast Sacrifice
 END

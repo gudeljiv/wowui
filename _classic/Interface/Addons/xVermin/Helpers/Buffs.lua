@@ -44,14 +44,25 @@ local loadSpells = function()
 		}
 	end
 	if xVermin.Class == "WARLOCK" then
-		buffs = {
-			{
-				["spell_id"] = xVermin.GetSpellID("Demon Skin"),
-				["short_name"] = "demonskin",
-				["name"] = "Demon Skin",
-				["found"] = false,
-			},
-		}
+		if IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Demon Armor")) then
+			buffs = {
+				{
+					["spell_id"] = xVermin.GetSpellID("Demon Armor"),
+					["short_name"] = "demonarmor",
+					["name"] = "Demon Armor",
+					["found"] = false,
+				},
+			}
+		elseif IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Demon Skin")) then
+			buffs = {
+				{
+					["spell_id"] = xVermin.GetSpellID("Demon Skin"),
+					["short_name"] = "demonskin",
+					["name"] = "Demon Skin",
+					["found"] = false,
+				},
+			}
+		end
 	end
 end
 
@@ -65,8 +76,7 @@ local function Refresh()
 		end
 
 		for index, buff in pairs(buffs) do
-			-- print(buff.short_name, buff.spell_id, IsSpellKnown(buff.spell_id))
-			if IsSpellKnown(buff.spell_id) then
+			if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 				local frame = _G["buffbutton_" .. buff.short_name]
 				if not frame then
 					-- print("buffbutton_" .. buff.short_name .. " created")
@@ -107,7 +117,7 @@ local function Refresh()
 			end
 
 			for index, buff in pairs(buffs) do
-				if IsSpellKnown(buff.spell_id) then
+				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 					buff.found = false
 					for i = 1, 40 do
 						name, _, _, _, duration, expirationTime = UnitBuff("player", i)
@@ -125,7 +135,7 @@ local function Refresh()
 
 			for index, buff in pairs(buffs) do
 				-- print(buff.short_name .. " found: " .. tostring(buff.found), buff.spell_id)
-				if IsSpellKnown(buff.spell_id) then
+				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 					if not buff.found then
 						table.insert(player_buffs, buff.short_name)
 					else
@@ -136,10 +146,12 @@ local function Refresh()
 
 			for i, short_name in pairs(player_buffs) do
 				local x = (i - 1) * shift
-				-- print("buffbutton_" .. short_name .. " show at " .. x)
-				_G["buffbutton_" .. short_name]:ClearAllPoints()
-				_G["buffbutton_" .. short_name]:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
-				_G["buffbutton_" .. short_name]:Show()
+				local f = _G["buffbutton_" .. short_name]
+				if f then
+					f:ClearAllPoints()
+					f:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
+					f:Show()
+				end
 			end
 		end)
 	end)
