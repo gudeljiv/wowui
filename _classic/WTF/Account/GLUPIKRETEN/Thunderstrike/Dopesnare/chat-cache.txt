@@ -218,6 +218,7 @@ MESSAGES
 END
 
 CHANNELS
+Layer
 LookingForGroup
 END
 

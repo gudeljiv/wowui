@@ -525,7 +525,20 @@ end
 addonTable.Search.GetTooltipInfoLink = GetTooltipInfoLink
 addonTable.Search.GetTooltipInfoSpell = GetTooltipInfoSpell
 
-local JUNK_PATTERN = "^" .. SELL_PRICE
+local SELL_PATTERN = "^" .. SELL_PRICE
+local function VendorCheck(details)
+  GetTooltipInfoSpell(details)
+
+  if details.tooltipInfoSpell then
+    for _, row in ipairs(details.tooltipInfoSpell.lines) do
+      if row.type and row.type == Enum.TooltipDataLineType.SellPrice or not row.type and row.leftText:match(SELL_PATTERN) then
+        return true
+      end
+    end
+    return false
+  end
+end
+
 local function JunkCheck(details)
   if details.isJunk ~= nil then
     return details.isJunk
@@ -535,16 +548,7 @@ local function JunkCheck(details)
     return false
   end
 
-  GetTooltipInfoSpell(details)
-
-  if details.tooltipInfoSpell then
-    for _, row in ipairs(details.tooltipInfoSpell.lines) do
-      if row.leftText:match(JUNK_PATTERN) then
-        return false
-      end
-    end
-    return true
-  end
+  return addonTable.Constants.IsClassic or VendorCheck(details)
 end
 
 local function UpgradeCheck(details)
@@ -1113,6 +1117,7 @@ if addonTable.Constants.IsRetail then
     AddKeywordManual(ITEM_ACCOUNTBOUND_UNTIL_EQUIP:lower(), "warbound until equipped", WarboundUntilEquippedCheck, addonTable.Locales.GROUP_BINDING_TYPE)
     AddKeywordLocalised("KEYWORD_WUE", WarboundUntilEquippedCheck, addonTable.Locales.GROUP_BINDING_TYPE)
   end
+  AddKeywordLocalised("KEYWORD_VENDOR", VendorCheck, addonTable.Locales.GROUP_ITEM_DETAIL)
 end
 
 local sockets = {

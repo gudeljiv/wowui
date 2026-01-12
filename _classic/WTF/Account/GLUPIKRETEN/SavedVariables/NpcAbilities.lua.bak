@@ -1,0 +1,88 @@
+
+NpcAbilitiesOptions = {
+["DISPLAY_ABILITY_MECHANIC"] = true,
+["SELECTED_ABILITY_MECHANIC_DISPLAY_MODE"] = "separate",
+["HIDE_ABILITIES_IN_INSTANCE"] = false,
+["AVAILABLE_LANGUAGES"] = {
+{
+["value"] = "en",
+["text"] = "English",
+},
+{
+["value"] = "es",
+["text"] = "Spanish",
+},
+{
+["value"] = "ru",
+["text"] = "Russian",
+},
+{
+["value"] = "fr",
+["text"] = "French",
+},
+{
+["value"] = "de",
+["text"] = "German",
+},
+{
+["value"] = "pt",
+["text"] = "Portuguese",
+},
+{
+["value"] = "ko",
+["text"] = "Korean",
+},
+{
+["value"] = "cn",
+["text"] = "Chinese",
+},
+},
+["DISPLAY_ABILITY_CAST_TIME"] = true,
+["ABILITY_DISPLAY_LOCATION"] = "tooltip",
+["SELECTED_HOTKEY"] = "OEM5",
+["SELECTED_LANGUAGE"] = "en",
+["AVAILABLE_HOTKEY_MODES"] = {
+{
+["value"] = "toggle",
+["text"] = "Toggle",
+},
+{
+["value"] = "hold",
+["text"] = "Hold",
+},
+},
+["SELECTED_ABILITY_DISPEL_TYPE_DISPLAY_MODE"] = "title",
+["SELECTED_HOTKEY_MODE"] = "toggle",
+["DISPLAY_ABILITY_COOLDOWN"] = true,
+["AVAILABLE_ABILITY_FIELD_DISPLAY_MODES"] = {
+{
+["value"] = "title",
+["text"] = "After ability name",
+},
+{
+["value"] = "separate",
+["text"] = "As separate line",
+},
+},
+["DISPLAY_ABILITY_DISPEL_TYPE"] = false,
+["SELECTED_ABILITY_CAST_TIME_DISPLAY_MODE"] = "separate",
+["SELECTED_ABILITY_RANGE_DISPLAY_MODE"] = "separate",
+["DELAYED_TOOLTIP_LOADING"] = false,
+["DISPLAY_PRIORITY_INDICATORS"] = true,
+["SELECTED_ABILITY_COOLDOWN_DISPLAY_MODE"] = "separate",
+["DISPLAY_ABILITY_RANGE"] = true,
+["AVAILABLE_DISPLAY_LOCATIONS"] = {
+{
+["value"] = "tooltip",
+["text"] = "Tooltip only",
+},
+{
+["value"] = "target_frame",
+["text"] = "Target frame only",
+},
+{
+["value"] = "both",
+["text"] = "Both",
+},
+},
+}

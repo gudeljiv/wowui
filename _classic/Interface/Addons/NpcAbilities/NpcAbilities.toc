@@ -1,0 +1,32 @@
+## Interface: 11508
+## Title: NpcAbilities
+## Notes: Add abilities to the NPC GameTooltip
+## Author: Ruben Zantingh
+## Version: 1.4.1
+## SavedVariables: NpcAbilitiesOptions
+## OptionalDeps: LibStub, LibUIDropDownMenu
+
+embeds.xml
+
+Libs/!LibUIDropDownMenu/LibUIDropDownMenu/LibUIDropDownMenu.xml
+
+Database/npcs.lua
+
+Database/abilities.lua
+Database/Abilities/enUS.lua
+Database/Abilities/esES.lua
+Database/Abilities/deDE.lua
+Database/Abilities/frFR.lua
+Database/Abilities/ptBR.lua
+Database/Abilities/ruRU.lua
+Database/Abilities/zhCN.lua
+Database/Abilities/koKR.lua
+
+Database/priorities.lua
+
+Localization/Translations.lua
+
+Frames/NpcAbilitiesOptionsFrame.lua
+
+NpcAbilities.lua
+

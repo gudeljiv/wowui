@@ -149,6 +149,7 @@ L["KEYWORD_MISCELLANEOUS_WEAPON"] = "miscellaneous weapon"
 L["KEYWORD_ARMOR_STAT"] = "armor stat"
 L["KEYWORD_CURRENT_EXPANSION"] = "current expansion"
 L["KEYWORD_QUEST"] = "quest"
+L["KEYWORD_VENDOR"] = "vendor"
 
 L["GROUP_ARMOR_TYPE"] = "Armor Type"
 L["GROUP_HOUSING"] = "Housing"

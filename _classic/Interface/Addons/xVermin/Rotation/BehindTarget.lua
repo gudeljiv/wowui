@@ -33,25 +33,26 @@ local _, xVermin = ...
 
 -- return true
 
-local bt = CreateFrame('BUTTON', 'BehindTarget')
+local bt = CreateFrame("BUTTON", "BehindTarget")
+BehindTarget:SetPoint("CENTER", UIParent, "CENTER", 0, 100)
+bt:SetSize(30, 30)
+bt:CreateBeautyBorder(8)
+bt:Hide()
 local indicator = false
 xAOErotation = indicator
 
-bt:SetScript(
-	'OnClick',
-	function(self, event)
-		indicator = not indicator
-		xAOErotation = indicator
-		if indicator then
-			RotationFrame4:SetBackdropColor(0, 0, 1, 1)
-		else
-			RotationFrame4:SetBackdropColor(1, 1, 1, 1)
-		end
+bt:SetScript("OnClick", function(self, event)
+	indicator = not indicator
+	xAOErotation = indicator
+	if indicator then
+		RotationFrame4:SetBackdropColor(0, 0, 1, 1)
+	else
+		RotationFrame4:SetBackdropColor(1, 1, 1, 1)
 	end
-)
+end)
 
 xVermin.BehindTarget = function()
-	if UnitExists('target') then
+	if UnitExists("target") then
 		return indicator
 	else
 		return false

@@ -44,10 +44,10 @@ DriftPoints = {
 },
 ["MacroFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "TOP",
-["relativePoint"] = "TOP",
-["yOfs"] = -78.4341812133789,
-["xOfs"] = -245.6655883789063,
+["point"] = "LEFT",
+["relativePoint"] = "LEFT",
+["yOfs"] = 107.4494323730469,
+["xOfs"] = 383.2176818847656,
 },
 ["ChatConfigFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -98,12 +98,12 @@ DriftPoints = {
 ["yOfs"] = -130.4550323486328,
 ["xOfs"] = 254.4337463378906,
 },
-["ColorPickerFrame"] = {
+["AddonList"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
-["yOfs"] = 165.7144012451172,
-["xOfs"] = -45.71454238891602,
+["yOfs"] = 177.6506805419922,
+["xOfs"] = -80.6351089477539,
 },
 ["TradeSkillFrame"] = {
 ["relativeTo"] = "UIParent",
@@ -112,12 +112,12 @@ DriftPoints = {
 ["yOfs"] = -70.59929656982422,
 ["xOfs"] = -138.5011596679688,
 },
-["AddonList"] = {
+["ColorPickerFrame"] = {
 ["relativeTo"] = "UIParent",
 ["point"] = "CENTER",
 ["relativePoint"] = "CENTER",
-["yOfs"] = 177.6506805419922,
-["xOfs"] = -80.6351089477539,
+["yOfs"] = 165.7144012451172,
+["xOfs"] = -45.71454238891602,
 },
 }
 DriftScales = {
@@ -128,18 +128,18 @@ DriftScales = {
 DriftOptions = {
 ["dragAltKeyEnabled"] = false,
 ["frameDragIsLocked"] = false,
-["windowsDisabled"] = false,
+["bagsDisabled"] = true,
 ["playerChoiceDisabled"] = true,
 ["scaleAltKeyEnabled"] = false,
-["bagsDisabled"] = true,
-["scaleCtrlKeyEnabled"] = false,
-["scaleShiftKeyEnabled"] = false,
-["arenaDisabled"] = true,
-["miscellaneousDisabled"] = true,
-["dragCtrlKeyEnabled"] = false,
-["buttonsDisabled"] = true,
-["dragShiftKeyEnabled"] = false,
-["frameScaleIsLocked"] = false,
 ["objectivesDisabled"] = true,
+["windowsDisabled"] = false,
+["scaleShiftKeyEnabled"] = false,
+["frameScaleIsLocked"] = false,
+["arenaDisabled"] = true,
+["dragCtrlKeyEnabled"] = false,
+["dragShiftKeyEnabled"] = false,
+["buttonsDisabled"] = true,
+["miscellaneousDisabled"] = true,
+["scaleCtrlKeyEnabled"] = false,
 ["minimapDisabled"] = true,
 }
