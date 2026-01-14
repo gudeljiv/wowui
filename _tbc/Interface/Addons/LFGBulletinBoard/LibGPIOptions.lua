@@ -1,177 +1,299 @@
-local TOCNAME,Addon = ...
-Addon.Options=Addon.Options or {}
-local Options=Addon.Options
+local TOCNAME,---@type string
+	---@class Addon_LibGPIOptions	
+	Addon = ...;
 
-local function Options_CheckButtonRightClick(self,button)
-	if button=="RightButton" then
-		self:Lib_GPI_rclick()
+---@alias savedValue string|number|boolean|table<string|number, savedValue>
+
+---@class OptionsBuilderModule
+local Options = {}
+Addon.OptionsBuilder = Options
+
+--------------------------------------------------------------------------------
+-- Locals, Helpers, Privates, etc
+--------------------------------------------------------------------------------
+
+local debug = false -- dev override
+local print = function(...)
+	if (Addon.DB and Addon.DB.OnDebug) or debug then
+		_G.print(WrapTextInColorCode(("[%s]:"):format(TOCNAME), NORMAL_FONT_COLOR:GenerateHexColor()), ...);
 	end
 end
 
-function Options.Init(doOk,doCancel,doDefault)
-	Options.Prefix=TOCNAME.."O_"
-	Options._DoOk=doOk
-	Options._DoCancel=doCancel
-	Options._DoDefault=doDefault
+local categoriesByName = { } ---@type table<string, table>
+local addToBlizzardSettings = function(frame) -- alternative to the deprecated `InterfaceOptions_AddCategory`
+	-- Frames are required to have OnCommit, OnDefault, and OnRefresh functions even if their implementations are empty.
+	frame.OnCommit = Options.onCommit
+	frame.OnDefault = Options.onDefault
+	frame.OnRefresh = Options.onRefresh
+	if frame.parent then
+		local parent = Settings.GetCategory(frame.parent)
+		local subcategory = Settings.RegisterCanvasLayoutSubcategory(parent, frame, frame.name)
+		subcategory.ID = frame.name
+		Settings.RegisterAddOnCategory(subcategory)
+		categoriesByName[frame.name] = subcategory
+	else
+		local category = Settings.RegisterCanvasLayoutCategory(frame, frame.name)
+		category.ID = frame.name
+		Settings.RegisterAddOnCategory(category)
+		categoriesByName[frame.name] = category
+	end
+end
 
-	
-	Options.Panel={}
+---@alias SavedVarHandle.updateHook fun(newValue: savedValue)
+---@class SavedVarHandle
+local handlePrototype = {
+	updateHooks = {}, ---@type {[SavedVarHandle.updateHook]: true?}
+	default = nil, ---@type savedValue?
+	SetValue = function(handle, value) ---@param value savedValue
+		local old = handle.db[handle.var]
+		if old == value then return end
+		handle.db[handle.var] = value
+		print(("Setting Updated - [\"%s\"]|n Previous: %s => Current: %s")
+			:format(handle.var, tostring(old), tostring(value)));
+		for func in pairs(handle.updateHooks) do func(value) end -- fire update hooks with new value as argument
+	end,
+	GetValue = function(handle)
+		return handle.db[handle.var]
+	end,
+	SetToDefault = function(handle, nullable)
+		if not nullable and handle.default == nil then return end
+		handle:SetValue(handle.default)
+	end,
+	---@param func SavedVarHandle.updateHook called with the updated value, **only called on value changes**
+	AddUpdateHook = function(handle, func)
+		handle.updateHooks[func] = true
+	end,
+	RemoveUpdateHook = function(handle, func)
+		handle.updateHooks[func] = nil
+	end
+}
+local SavedVarRegistry = {
+	tracked = {}, -- [db][var] = handle, how handles to the same variable are shared
+	GetHandle = function(self, db, var, default)
+		assert(db and var, "SavedVarRegistry:GetHandle(db, var, default) - db and var are required", 
+			{ db = db, var = var, default = default }
+		);
+		local handle ---@type SavedVarHandle
+		if not self.tracked[db] or not self.tracked[db][var] then
+			self.tracked[db] = self.tracked[db] or {}
+			handle = setmetatable({ db = db, var = var, updateHooks = {} }, { __index = handlePrototype })
+			self.tracked[db][var] = handle
+		elseif self.tracked[db] and self.tracked[db][var] then
+			handle = self.tracked[db][var]
+		end
+		assert(handle, "SavedVarRegistry:GetHandle() - failed to create handle", { db = db, var = var, default = default })
+		assert((handle.default == nil or default == nil) or default == handle.default, -- one default value per session
+			"SavedVarRegistry:GetHandle() - SavedVar cannot have more than one assigned default",
+			{ incoming = default, previous = handle.default }
+		)
+		if default ~= nil and handle.default == nil then
+			handle.default = default
+		end
+		if db[var] == nil and handle.default ~= nil then -- initialize first time saved vars with default.
+			handle:SetToDefault()
+		end
+		return handle
+	end,
+}
+local registeredFrameHandles = {} ---@type table<Frame, SavedVarHandle>
+
+-- This mixin provides helpers for interfacing frames with SavedVarHandles
+---@class RegisteredFrameMixin
+local RegisteredFrameMixin = {
+	---@param frame Frame
+	Init = function(self, frame)
+		self = self ---@class RegisteredFrameMixin
+		self.frame = frame
+		self.updateFunc = nil ---@type SavedVarHandle.updateHook?
+	end,
+	SetSavedValue = function(self, value)
+		local handle = registeredFrameHandles[self.frame]
+		if handle then handle:SetValue(value) end
+	end,
+	GetSavedValue = function(self)
+		local handle = registeredFrameHandles[self.frame]
+		if handle then return handle:GetValue() end
+	end,
+	SetToDefault = function(self)
+		local handle = registeredFrameHandles[self.frame]
+		if handle then handle:SetToDefault() end
+	end,
+	---Note: Atm this mixin only allows for one update hook to be registered per frame.
+	---Subsequent calls will overwrite the previous hook (including any set by the optionsBuilder methods).
+	---Use the raw handle for better control over multiple hooks.
+	---@param updateFunc SavedVarHandle.updateHook called with the updated value, **only called on value changes**
+	OnSavedVarUpdate = function(self, updateFunc)
+		if not updateFunc then return end
+		local handle = registeredFrameHandles[self.frame]
+		self:ClearUpdateHook()
+		self.updateFunc = updateFunc
+		if handle then handle:AddUpdateHook(updateFunc) end
+	end,
+	ClearUpdateHook = function(self)
+		local handle = registeredFrameHandles[self.frame]
+		if handle and self.updateFunc then handle:RemoveUpdateHook(self.updateFunc) end
+		self.updateFunc = nil
+	end
+}
+
+local function RegisteredFrame_OnShiftRightClick(frame, button)
+	if button == "RightButton" and IsShiftKeyDown() then
+		if frame.SetToDefault then frame:SetToDefault() end
+	end
+end
+
+local debounced = function(func, delay)
+	local timer = nil ---@type TimerCallback?
+	return function(...)
+		local args = {...};
+		if timer then timer:Cancel() end;
+		timer = C_Timer.NewTimer(delay, function()
+			func(unpack(args));
+			timer = nil;
+		end);
+	end
+end
+--------------------------------------------------------------------------------
+-- Public/Interface
+--------------------------------------------------------------------------------
+
+---Registers a frame with a user setting/saved variable. Returns the frame and its saved variable handle
+---Frames may only be registered to one saved var atm (todo expand to multiple).
+---@generic F
+---@param frame F Expects a frame, but accepts any table object.
+---@return F|RegisteredFrameMixin, SavedVarHandle
+Options.RegisterFrameWithSavedVar = function(frame, db, var, default)
+	local varHandle = SavedVarRegistry:GetHandle(db, var, default)
+	local prevHandle = registeredFrameHandles[frame]
+	if prevHandle and prevHandle ~= varHandle then ---@cast frame RegisteredFrameMixin
+		frame:ClearUpdateHook(); -- if previously registered remove any existing update hooks
+	else
+		-- CreateAndInitFromMixin calls `RegisteredFrameMixin:Init(frame)`
+		frame = Mixin(frame, CreateAndInitFromMixin(RegisteredFrameMixin, frame))
+	end
+	registeredFrameHandles[frame] = varHandle
+	return frame, varHandle
+end
+
+---Gets or creates a registry handle to a saved variable. given its table and key.
+---@type fun(db: table, var: string, default: savedValue?): SavedVarHandle
+Options.GetSavedVarHandle = function(db, var, default)
+	return SavedVarRegistry:GetHandle(db, var, default) 
+end
+
+--Because the onCommit/Refresh/Default, are called once FOR EACH settings category panel whenever options is closed,
+--a debounce with a small delay is used to avoid multiple calls b2b.
+-- Note: this is a hack and should be removed and replaced with a proper solution in the future.
+local delay = 0.025 -- 25ms debounce delay
+
+---Initializes the options builder. Clears child widget tables. Accepts, onCommit, onRefresh, and onDefault functions.
+---they are once called for each settings category panel.
+---@param onCommit fun(panel:SettingsCategoryPanel) function called when the "close" button is clicked
+---@param onRefresh fun(panel:SettingsCategoryPanel) function to called when the settings frame will be redrawn
+---@param onDefault fun(panel:SettingsCategoryPanel) function to call when settings should reset to default values
+function Options.Init(onCommit,onRefresh,onDefault)
+	Options.Prefix=TOCNAME.."Options"
+	Options.onCommit=debounced(onCommit, delay)
+	Options.onRefresh=debounced(onRefresh, delay)
+	Options.onDefault=debounced(onDefault, delay)
+	Options.CategoryPanels={}
 	Options.Frames={}
-	Options.CBox={}
-	Options.Color={}
-	Options.Btn={}
-	Options.Edit={}
-	Options.Vars={}
-	Options.Index={}
-	
 	Options.Frames.count=0
-
 	Options.scale=1
 end
-		
-function Options.DoOk()
-	for name,cbox in pairs(Options.CBox) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			Options.Vars[name .. "_db"] [Options.Vars[name]] = cbox:GetChecked()
-		end
-	end
-	
-	for name,color in pairs(Options.Color) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			Options.Vars[name .. "_db"] [Options.Vars[name]].r=color.ColR
-			Options.Vars[name .. "_db"] [Options.Vars[name]].g=color.ColG
-			Options.Vars[name .. "_db"] [Options.Vars[name]].b=color.ColB
-			Options.Vars[name .. "_db"] [Options.Vars[name]].a=color.ColA
-		end
-	end	
-	
-	for name,edit in pairs(Options.Edit) do
-		if Options.Vars[name .. "_onlynumbers"] then 
-			Options.Vars[name .. "_db"] [Options.Vars[name]] = edit:GetNumber()
-		else
-			if Options.Vars[name.."_suggestion"] and Options.Vars[name.."_suggestion"]~="" then
-				if edit:GetText()==Options.Vars[name.."_suggestion"] then
-					Options.Vars[name .. "_db"] [Options.Vars[name]] = ""
-				else
-					Options.Vars[name .. "_db"] [Options.Vars[name]] = edit:GetText()
-				end
-			else
-				Options.Vars[name .. "_db"] [Options.Vars[name]] = edit:GetText()
-			end
-		end
-	end
-end
-	
-function Options.DoCancel()
-	for name,cbox in pairs(Options.CBox) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			cbox:SetChecked( Options.Vars[name .. "_db"] [Options.Vars[name]] )
-		end
-	end
-	
-	for name,color in pairs(Options.Color) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			color:GetNormalTexture():SetVertexColor(
-				Options.Vars[name .. "_db"] [Options.Vars[name]].r,
-				Options.Vars[name .. "_db"] [Options.Vars[name]].g,
-				Options.Vars[name .. "_db"] [Options.Vars[name]].b,
-				Options.Vars[name .. "_db"] [Options.Vars[name]].a
-			)
-			color.ColR,color.ColG,color.ColB,color.ColA=Options.Vars[name .. "_db"] [Options.Vars[name]].r, Options.Vars[name .. "_db"] [Options.Vars[name]].g,	Options.Vars[name .. "_db"] [Options.Vars[name]].b,	Options.Vars[name .. "_db"] [Options.Vars[name]].a
-		end
-	end
-	
-	
-	for name,edit in pairs(Options.Edit) do
-		if Options.Vars[name .. "_onlynumbers"] then 
-			edit:SetNumber( Options.Vars[name .. "_db"] [Options.Vars[name]] )
-		else
-			edit:SetText( Options.Vars[name .. "_db"] [Options.Vars[name]] )
-			Options.__EditBoxLostFocus(edit)
-		end		
-	end
-end
-	
-function Options.DoDefault()
-	for name,cbox in pairs(Options.CBox) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			Options.Vars[name .. "_db"] [Options.Vars[name]]= Options.Vars[name .. "_init"]
-		end
-	end
-	
-	for name,color in pairs(Options.Color) do
-		if Options.Vars[name .. "_db"]~=nil and Options.Vars[name]~=nil then
-			Options.Vars[name .. "_db"] [Options.Vars[name]].r = Options.Vars[name .. "_init"].r
-			Options.Vars[name .. "_db"] [Options.Vars[name]].g = Options.Vars[name .. "_init"].g
-			Options.Vars[name .. "_db"] [Options.Vars[name]].b = Options.Vars[name .. "_init"].b
-			Options.Vars[name .. "_db"] [Options.Vars[name]].a = Options.Vars[name .. "_init"].a
 
+-- Sets all saved variables registered to any widgets to their default values. 
+function Options.DefaultRegisteredVariables() 
+	for _, savedVars in pairs(SavedVarRegistry.tracked) do
+		for _, handle in pairs(savedVars) do
+			handle:SetToDefault()
 		end
 	end
-	
-	
-	for name,edit in pairs(Options.Edit) do
-		Options.Vars[name .. "_db"] [Options.Vars[name]]= Options.Vars[name .. "_init"]
-	end
-	Options:DoCancel()
 end
 	
-function Options.SetScale(x)
-	Options.scale=x
+function Options.SetScale(x) Options.scale = x; end
+
+---UIPanelScrollFrameTemplate is deprecated in favor of WowScrollBox. 
+-- This is helper to adapt current frames to new scrollbox.
+---@param parent Frame
+---@param name string
+local CreateScrollFrames = function(parent, name)
+	local scrollBox = CreateFrame("Frame", name, parent, "WowScrollBox") --[[@as WowScrollBox|Frame]]
+	local scrollBar = CreateFrame("EventFrame", name.."ScrollBar", parent, "MinimalScrollBar")
+	local barPadding = 12
+	scrollBar:SetPoint("RIGHT", parent, "RIGHT", -barPadding, 0)
+	scrollBox:SetPoint("TOPLEFT", parent, 2, 0)
+	scrollBox:SetPoint("BOTTOM", parent, 0, 0)
+	scrollBox:SetPoint("RIGHT", scrollBar, "LEFT", -barPadding*2, 0)
+	-- For now, the scrollChild serves as an expanding canvas for the scrollBox. 
+	-- Allows the scroll frame to behave like the previously used template.
+	---@class SettingsCategoryPanelScrollChild: ResizeLayoutFrame
+	local scrollChild = CreateFrame('Frame', name..'ScrollChild', scrollBox, 'ResizeLayoutFrame')
+	scrollChild.scrollable = true
+	scrollChild:SetFixedWidth(SettingsPanel.Container.SettingsCanvas:GetWidth() - scrollBar:GetWidth() - 8)
+	scrollChild:SetHeight(100) -- initial arbitrary height
+	scrollChild.ScrollBox = scrollBox;
+	scrollChild.ScrollBar = scrollBar;
+	-- Updates the canvas's resizable layout height, and then the scroll parent to match.
+	function scrollChild.UpdateScrollLayout()
+		scrollChild:Layout()
+		scrollBox:FullUpdate(true)
+	end
+	local scrollView = CreateScrollBoxLinearView();
+	scrollView:SetPadding(0, 25) -- pad bottom of view with 25px
+	scrollView:SetPanExtent(50) -- scroll step
+	ScrollUtil.InitScrollBoxWithScrollBar(scrollBox, scrollBar, scrollView);
+	ScrollUtil.AddManagedScrollBarVisibilityBehavior(scrollBox, scrollBar); -- adds autohide to scrollbar
+	return scrollBox, scrollChild
 end
 
-function Options.AddPanel(Title,noheader,scrollable)
-	local c=#Options.Panel +1
-	local FrameName=Options.Prefix.."OptionFrame"..c
-		
-	Options.Panel[c] = CreateFrame( "Frame",FrameName , UIParent )
-	Options.Panel[c].name = Title
-	if c==1 then 
-		Options.Panel[c].okay = Options._DoOk
-		Options.Panel[c].cancel = Options._DoCancel
-		Options.Panel[c].refresh = Options._DoCancel
-		Options.Panel[c].default = Options._DoDefault
-	else
-		Options.Panel[c].parent = Options.Panel[1].name
+---Creates a new settings category and returns its display frame.
+---@param title string
+---@param noHeader boolean?
+---@param scrollable boolean?
+---@return SettingsCategoryPanel|SettingsCategoryPanelScrollChild|Frame
+function Options.AddNewCategoryPanel(title, noHeader, scrollable)
+	local categoryIdx = #Options.CategoryPanels + 1
+	local frameName = Options.Prefix.."Category"..categoryIdx
+	---@class SettingsCategoryPanel: Frame
+	local panelFrame = CreateFrame("Frame", frameName, UIParent)
+
+	Options.CategoryPanels[categoryIdx] = panelFrame
+	Options.CurrentPanel = panelFrame
+	panelFrame.name = title
+	if categoryIdx > 1 then
+		panelFrame.parent = Options.CategoryPanels[1].name
 	end
-	
-	InterfaceOptions_AddCategory(Options.Panel[c])
-	Options.CurrentPanel=Options.Panel[c]		
-	
+	addToBlizzardSettings(panelFrame)
 	if scrollable then
-		
-		Options.Panel["scroll"..c]=CreateFrame("ScrollFrame", FrameName.."Scroll", Options.CurrentPanel,"UIPanelScrollFrameTemplate")
-		Options.Panel["scroll"..c]:SetPoint("TOPLEFT",0, -10) 
-		Options.Panel["scroll"..c]:SetPoint("BOTTOMRIGHT", -30, 10) 
-		Options.Panel["scrollChild"..c] = CreateFrame("Frame",FrameName.."ScrollChild") 
-		Options.Panel["scroll"..c]:SetScrollChild(Options.Panel["scrollChild"..c])
-		
-		Options.Panel["scrollChild"..c]:SetSize(Options.CurrentPanel:GetWidth()-1,100)
-		Options.CurrentPanel=Options.Panel["scrollChild"..c]
+		local scrollFrame, scrollChild = CreateScrollFrames(Options.CurrentPanel, frameName)
+		panelFrame:HookScript("OnShow", scrollChild.UpdateScrollLayout)
+		panelFrame:Hide() -- hack: forces call to "OnShow" (and its hooks) when first shown to users.
+		Options.CategoryPanels["scroll"..categoryIdx] = scrollFrame
+		Options.CategoryPanels["scrollChild"..categoryIdx] = scrollChild
+		Options.CurrentPanel = scrollChild --[[@as Frame]]
 	end
-	
-	
-	Options.Frames["title_"..c] = Options.CurrentPanel:CreateFontString(FrameName.."_Title", "OVERLAY", "GameFontNormalLarge")
-	if noheader==true then
-		Options.Frames["title_"..c]:SetHeight(1)
+	local panelHeader = Options.CurrentPanel:CreateFontString(frameName.."Title", "OVERLAY", "GameFontNormalLarge");
+	if noHeader==true then
+		panelHeader:SetHeight(1)
 	else
-		Options.Frames["title_"..c]:SetText(Title)
+		panelHeader:SetText(title)
 	end
-	Options.Frames["title_"..c]:SetPoint("TOPLEFT", 10, -10)
-	Options.Frames["title_"..c]:SetScale(Options.scale)
-	
-	Options.NextRelativ=FrameName.."_Title"
+	panelHeader:SetPoint("TOPLEFT", 10, -10)
+	panelHeader:SetScale(Options.scale)
+	Options.NextRelativ=frameName.."Title"
 	Options.NextRelativX=25
 	Options.NextRelativY=0
 	
 	return Options.CurrentPanel
 end
-	
+
+---@param width number? Defaults to 10.
 function Options.Indent(width)
 	if width==nil then width=10 end
 	Options.NextRelativX = Options.NextRelativX + width
 end
-	
+
 function Options.InLine()
 	Options.inLine=true
 	Options.LineRelativ=nil
@@ -182,485 +304,470 @@ function Options.EndInLine()
 	Options.LineRelativ=nil
 end	
 	
-function Options.SetRightSide(w)
-	Options.NextRelativ=Options.Prefix.."OptionFrame".. #Options.Panel .."_Title"
-	Options.NextRelativX=310 / Options.scale
+---@param width number? Defaults to 310. 
+function Options.SetRightSide(width)
+	Options.NextRelativ=Options.Prefix.."Category".. #Options.CategoryPanels .."Title"
+	Options.NextRelativX= (width or 310) / Options.scale
 	Options.NextRelativY=0
 end
-	
+
+---@param version string	
 function Options.AddVersion(version)
-	local i="version_"..#Options.Panel
-	Options.Frames[i] = Options.CurrentPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	Options.Frames[i]:SetText(version)
-	Options.Frames[i]:SetPoint("BOTTOMRIGHT", -10, 10)
-	Options.Frames[i]:SetFont("Fonts\\FRIZQT__.TTF", 12)
-	return Options.Frames[i]
+	local versionText = Options.CurrentPanel:CreateFontString(Options.Prefix.."VersionText", "OVERLAY", "GameFontNormal")
+	versionText:SetText(version)
+	versionText:SetPoint("BOTTOMRIGHT", -10, 10)
+	versionText:SetFont("Fonts\\FRIZQT__.TTF", 12)
+	return versionText
 end
-	
-function Options.AddCategory(Text)
-	local c=Options.Frames.count+1
-	Options.Frames.count=c		
-	local CatName=Options.Prefix .. "Cat" .. c
-	Options.Frames[CatName] = Options.CurrentPanel:CreateFontString(CatName, "OVERLAY", "GameFontNormal")
-	Options.Frames[CatName]:SetText('|cffffffff' .. Text .. '|r')
-	Options.Frames[CatName]:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-10)
-	Options.Frames[CatName]:SetFontObject("GameFontNormalLarge")
-	Options.Frames[CatName]:SetScale(Options.scale)
-	Options.NextRelativ=CatName
+
+---@param text string
+---@return FontString
+function Options.AddHeaderToCurrentPanel(text)
+	local frameIdx=Options.Frames.count+1
+	Options.Frames.count=frameIdx		
+	local headerName=Options.Prefix .. "Header" .. frameIdx
+	local header = Options.CurrentPanel:CreateFontString(headerName, "OVERLAY", "GameFontNormal")
+	header:SetText(text)
+	header:SetTextColor(1,1,1,1)
+	header:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-10)
+	header:SetFontObject("GameFontNormalLarge")
+	header:SetScale(Options.scale)
+	Options.Frames[headerName] = header
+	Options.NextRelativ=headerName
 	Options.NextRelativX=0
 	Options.NextRelativY=0
-	return Options.Frames[CatName]
+	return header
 end
-function Options.EditCategory(cat,Text)
-	local c=Options.Frames.count+1
-	cat:SetText('|cffffffff' .. Text .. '|r')	
-end
-	
-function Options.AddButton(Text,func)
-	local c=Options.Frames.count+1
-	Options.Frames.count=c	
-	local ButtonName=Options.Prefix .."BUTTON_"..c
-			
-	Options.Btn[ButtonName] = CreateFrame("Button", ButtonName, Options.CurrentPanel, "UIPanelButtonTemplate")
-	Options.Btn[ButtonName]:ClearAllPoints()
-	
-	if Options.inLine~=true or Options.LineRelativ ==nil then
-		Options.Btn[ButtonName]:SetPoint("TOPLEFT", Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY)
-		Options.NextRelativ=ButtonName
-		Options.LineRelativ=ButtonName
+
+---@param text string
+---@param onClick fun()?
+---@return Button
+function Options.AddButtonToCurrentPanel(text, onClick)
+	local frameIdx=Options.Frames.count+1
+	Options.Frames.count=frameIdx	
+	local buttonName=Options.Prefix .."Button"..frameIdx	
+	local button = CreateFrame("Button", buttonName, Options.CurrentPanel, "UIPanelButtonTemplate")
+	button:ClearAllPoints()
+	button:SetScale(Options.scale)
+	button:SetScript("OnClick", onClick)
+	button:SetHeight(25);
+	button.fitTextWidthPadding = 20; -- part of the UIPanelButtonTemplate
+	(button --[[@as UIPanelButtonTemplate]]):SetTextToFit(text);
+	if not Options.inLine or not Options.LineRelativ then
+		button:SetPoint("TOPLEFT", Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY)
+		Options.NextRelativ=buttonName
+		Options.LineRelativ=buttonName
 		Options.NextRelativX=0
 		Options.NextRelativY=0
 	else
-		Options.Btn[ButtonName]:SetPoint("TOP", Options.LineRelativ,"TOP", 0, 0)
-		Options.Btn[ButtonName]:SetPoint("LEFT", Options.LineRelativ.."Text","RIGHT", 10, 0)
-		Options.LineRelativ=ButtonName
+		button:SetPoint("TOP", Options.LineRelativ,"TOP", 0, 0)
+		button:SetPoint("LEFT", Options.LineRelativ.."Text","RIGHT", 10, 0)
+		Options.LineRelativ=buttonName
 	end
-	
-	Options.Btn[ButtonName]:SetScale(Options.scale)
-	Options.Btn[ButtonName]:SetScript("OnClick", func)
-	Options.Btn[ButtonName]:SetText(Text)
-	Options.Btn[ButtonName]:SetWidth( Options.Btn[ButtonName]:GetTextWidth()+20 )
-	return Options.Btn[ButtonName]
+	return button
 end
 
-local function CheckBox_OnRightClick(self,func)
-	self.Lib_GPI_rclick=func
-	self:SetScript("OnMouseDown",Options_CheckButtonRightClick)
-end	
+---@param dbTable table expects either character or account SavedVars table
+---@param key string variables key in the SavedVars table
+---@param default boolean default db value if key is not set
+---@param labelText string label text for the checkbox
+---@param width number?
+---@return CheckButton|RegisteredFrameMixin
+function Options.AddCheckBoxToCurrentPanel(dbTable,key,default,labelText,width)
+	local frameIdx=Options.Frames.count+1
+	Options.Frames.count=frameIdx	
+	local buttonName=Options.Prefix .."CheckBox"..frameIdx
+	default = not not default -- ensure init is a boolean
 
-function Options.AddCheckBox(DB,Var,Init,Text,width)
-
-	
-	local c=Options.Frames.count+1
-	Options.Frames.count=c	
-	local ButtonName=Options.Prefix .."CBOX_"..c
-	
-	if Init==nil then
-		Init=false
+	---@type CheckButton|{Text: FontString, func: function} -- Create checkbox frame
+	local checkButton = CreateFrame("CheckButton", buttonName, Options.CurrentPanel, "ChatConfigCheckButtonTemplate")
+	checkButton:ClearAllPoints()
+	checkButton:SetScale(Options.scale)
+	checkButton.Text:SetText(labelText)
+	if dbTable ~= nil and key ~= nil then
+		-- note: RegisterFrameWithSavedVar has been set up to also initialize first time saved vars.
+		if dbTable[key] == nil then dbTable[key] = default end
+		local checkButton, sVarHandle = Options.RegisterFrameWithSavedVar(checkButton, dbTable, key, default)
+		checkButton:SetChecked(checkButton:GetSavedValue())
+		--`.func` is called in the `OnClick` handler for the template.
+		-- see https://github.com/Gethe/wow-ui-source/blob/classic_era/Interface/FrameXML/ChatConfigFrame.xml#L177
+		checkButton.func = function(self, isChecked)
+			checkButton:SetSavedValue(isChecked)
+		end
+		sVarHandle:AddUpdateHook(function(isChecked)
+			checkButton:SetChecked(isChecked)
+		end)
+		checkButton:SetScript("OnMouseDown", RegisteredFrame_OnShiftRightClick)
 	end
-	
-	Options.Index[c]=ButtonName	
-	
-	Options.Vars[ButtonName]=Var
-	Options.Vars[ButtonName.."_init"]=Init
-	Options.Vars[ButtonName.."_db"]=DB
-	
-	if DB~=nil and Var~=nil then
-		if DB[Var] == nil then DB[Var]=Init end
-	end
-	
-	Options.CBox[ButtonName] = CreateFrame("CheckButton", ButtonName, Options.CurrentPanel, "ChatConfigCheckButtonTemplate")
-	_G[ButtonName .. "Text"]:SetText(Text)
 	if width then
-		_G[ButtonName .. "Text"]:SetWidth(width)
-		_G[ButtonName .. "Text"]:SetNonSpaceWrap(false)
-		_G[ButtonName .. "Text"]:SetMaxLines(1)
-		Options.CBox[ButtonName]:SetHitRectInsets(0, -width, 0,0)
+		checkButton.Text:SetWidth(width)
+		checkButton.Text:SetNonSpaceWrap(false)
+		checkButton.Text:SetMaxLines(1)
+		checkButton:SetHitRectInsets(0, -width, 0,0)
 	else
-		Options.CBox[ButtonName]:SetHitRectInsets(0, -_G[ButtonName.."Text"]:GetStringWidth()-2, 0,0)
+		checkButton:SetHitRectInsets(0, -(checkButton.Text:GetStringWidth() - 2), 0, 0)
 	end
-	
-	Options.CBox[ButtonName]:ClearAllPoints()
-	
-	if Options.inLine~=true or Options.LineRelativ ==nil then
-		Options.CBox[ButtonName]:SetPoint("TOPLEFT", Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY)
-		Options.NextRelativ=ButtonName
-		Options.LineRelativ=ButtonName
-		Options.NextRelativX=0
-		Options.NextRelativY=0
+	if not Options.inLine or not Options.LineRelativ then
+		checkButton:SetPoint('TOPLEFT', Options.NextRelativ, 'BOTTOMLEFT', Options.NextRelativX, Options.NextRelativY)
+		Options.NextRelativ = buttonName
+		Options.LineRelativ = buttonName
+		Options.NextRelativX = 0
+		Options.NextRelativY = 0
 	else
-		Options.CBox[ButtonName]:SetPoint("TOP", Options.LineRelativ,"TOP", 0, 0)
-		Options.CBox[ButtonName]:SetPoint("LEFT", Options.LineRelativ.."Text","RIGHT", 10, 0)			
-		Options.LineRelativ=ButtonName
+		checkButton:SetPoint('TOP', Options.LineRelativ, 'TOP', 0, 0)
+		checkButton:SetPoint('LEFT', Options.LineRelativ..'Text', 'RIGHT', 10, 0)
+		Options.LineRelativ = buttonName
 	end
-	
-	Options.CBox[ButtonName]:SetScale(Options.scale)
-	if DB~=nil and Var~=nil then 
-		Options.CBox[ButtonName]:SetChecked(DB[Var])
-	else
-		Options.CBox[ButtonName]:Hide()
+	local updateDisabledState = function()
+		local isDisabled = not checkButton:IsEnabled()
+		local r, g, b = (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		checkButton.Text:SetTextColor(r, g, b)
 	end
-	
-	Options.CBox[ButtonName].OnRightClick=CheckBox_OnRightClick
-	
-	return Options.CBox[ButtonName]
+	checkButton:HookScript("OnDisable", updateDisabledState)
+	checkButton:HookScript("OnEnable", updateDisabledState)
+	if dbTable == nil and key == nil then 
+		checkButton:Hide()
+	end
+	return checkButton
 end
 
-function Options.AddColorButton(DB,Var,Init,Text,width)
-	local c=Options.Frames.count+1
+---@param dbTable table expects either character or account SavedVars table
+---@param key string variables key in the SavedVars table
+---@param default {r: number, g: number, b: number, a: number} default color values. falls-back to white.
+---@param labelText string label text for the color button
+---@param width number?
+---@return SwatchButton
+function Options.AddColorSwatchToCurrentPanel(dbTable,key,default,labelText,width)
+	local frameIdx=Options.Frames.count+1
+	Options.Frames.count=frameIdx
+	local textFrame = Options.AddTextToCurrentPanel(labelText, width, true) ---@type FontString
+	textFrame:SetTextColor(1, 1, 1)
+	local size = 16;
+	textFrame:AdjustPointsOffset(0, textFrame:GetHeight() - size) -- move text down a bit for bigger swatch buttons
+	local swatchButtonName = Options.Prefix..'ColorSwatch'..frameIdx
+	-- Initialize Button
+	---@class SwatchButton
+	local swatchButton = CreateFrame('Button', swatchButtonName, Options.CurrentPanel)
+	swatchButton:SetNormalTexture('Interface\\ChatFrame\\ChatFrameColorSwatch')
+	swatchButton.Bg = swatchButton:GetNormalTexture()
+	swatchButton.Label = textFrame
+	swatchButton:SetWidth(size)
+	swatchButton:SetHeight(size)
+	swatchButton:ClearAllPoints()
+	swatchButton:SetPoint('LEFT', Options.NextRelativ, 'RIGHT', 5, 0)
+	swatchButton:SetScale(Options.scale)
+	swatchButton.Highlight = swatchButton:CreateTexture(swatchButtonName..'Background', 'BACKGROUND')
+	swatchButton.Highlight:SetPoint('CENTER')
+	swatchButton.Highlight:SetWidth(size - 2)
+	swatchButton.Highlight:SetHeight(size - 2)
+	swatchButton.Highlight:SetColorTexture(1, 1, 1, 1)
+	swatchButton:SetScript("OnEnter", function()
+		swatchButton.Highlight:SetVertexColor(1.0, 0.82, 0.0)
+	end)
+	swatchButton:SetScript("OnLeave", function()
+		swatchButton.Highlight:SetVertexColor(1.0, 1.0, 1.0)
+	end)
+	-- note: first time initialization could also be done by `GetHandle` inside of `RegisterFrameWithSavedVar
+	default = default or {r = 1, g = 1, b = 1, a = 1}
+	if dbTable ~= nil and key ~= nil and dbTable[key] == nil
+	then dbTable[key] = CopyTable(default) end
 	
-	local textFrame=Options.AddText(Text,width)
-	textFrame:SetTextColor(1,1,1)
-	local h=textFrame:GetHeight()
-	
-	Options.Frames.count=c	
-	local ButtonName=Options.Prefix .."COLOR_"..c
-	
-	if Init==nil then
-		Init={r=1,g=1,b=1,a=1}
+	-- Register button with saved var handler
+	---@class SwatchButton:RegisteredFrameMixin, Button
+	local swatchButton, sVarHandle = Options.RegisterFrameWithSavedVar(swatchButton, dbTable, key, default)
+	local syncWithSavedVar = function()
+		local color = sVarHandle:GetValue()
+		swatchButton.Bg:SetVertexColor(color.r, color.g, color.b, color.a)
 	end
-	
-	Options.Index[c]=ButtonName	
-	
-	Options.Vars[ButtonName]=Var
-	Options.Vars[ButtonName.."_init"]=Init
-	Options.Vars[ButtonName.."_db"]=DB
-	
-	if DB~=nil and Var~=nil then
-		if DB[Var] == nil then 
-			DB[Var]={}
-			DB[Var].r=Init.r 
-			DB[Var].g=Init.g 
-			DB[Var].b=Init.b 
-			DB[Var].a=Init.a 
-		end
+	syncWithSavedVar() -- run once to set the initial color
+	sVarHandle:AddUpdateHook(syncWithSavedVar)
+	local onSwatchColorChange = function() -- passed to ColorPickerFrame handlers.
+		local a = 1.0 - OpacitySliderFrame:GetValue()
+		local r, g, b = ColorPickerFrame:GetColorRGB()
+		swatchButton:SetSavedValue({r=r, g=g, b=b, a=a})
 	end
-	
-	Options.Color[ButtonName] = CreateFrame("Button", ButtonName, Options.CurrentPanel)
-	
-	local but=Options.Color[ButtonName]
-	
-	but:SetWidth(h)
-	but:SetHeight(h)
-	but.ColTex=but:CreateTexture(ButtonName.."Background","BACKGROUND")
-	but.ColTex:SetPoint("CENTER")
-	but.ColTex:SetWidth(h-2)
-	but.ColTex:SetHeight(h-2)
-	but.ColTex:SetColorTexture(1,1,1,1)
-	but:SetScript("OnEnter",
-		function (self)
-			_G[self:GetName() .. "Background"]:SetVertexColor(1.0, 0.82, 0.0)
+	swatchButton:SetScript("OnMouseDown", RegisteredFrame_OnShiftRightClick)
+	-- Connect to ColorPickerFrame
+	swatchButton:SetScript("OnClick", function(self)
+		local original = swatchButton:GetSavedValue()
+		ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = true, 1.0 - original.a
+		ColorPickerFrame.swatchFunc = onSwatchColorChange
+		ColorPickerFrame.opacityFunc = onSwatchColorChange
+		ColorPickerFrame.cancelFunc = function()
+			swatchButton:SetSavedValue(original)
 		end
-	)
-	but:SetScript("OnLeave",
-		function (self)
-			_G[self:GetName() .. "Background"]:SetVertexColor(1.0, 1.0, 1.0)
-		end
-	)
-	but:SetNormalTexture("Interface\\ChatFrame\\ChatFrameColorSwatch")
-	
-	
-	but:ClearAllPoints()
-	
-	but:SetPoint("TOPLEFT", Options.NextRelativ,"TOPRIGHT", 5, 0)
-	
-	but:SetScale(Options.scale)
-	
-	but:GetNormalTexture():SetVertexColor(DB[Var].r,DB[Var].g,DB[Var].b,DB[Var].a)
-	but.ColR,but.ColG,but.ColB,but.ColA=DB[Var].r,DB[Var].g,DB[Var].b,DB[Var].a
-		
-	local function callback(previousValues)
-		local newR, newG, newB, newA
-
-		if previousValues then
-			newR, newG, newB, newA = unpack(previousValues)
-		else
-			newA, newR, newG, newB = 1.0 - OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB()
-		end
-		but:GetNormalTexture():SetVertexColor(newR, newG, newB, newA)
-		but.ColR,but.ColG,but.ColB,but.ColA=newR, newG, newB, newA		
+		ColorPickerFrame:SetColorRGB(original.r, original.g, original.b)
+		ColorPickerFrame:Hide()
+		ColorPickerFrame:Show()
+	end)
+	local updateDisabledState = function()
+		local isDisabled = not swatchButton:IsEnabled()
+		local r, g, b = (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		swatchButton.Highlight:SetVertexColor(r, g, b)
+		swatchButton.Label:SetTextColor(r, g, b)
 	end
-	
-	but:SetScript(
-		"OnClick",
-		function(self)
-			local r, g, b, a = but.ColR,but.ColG,but.ColB,but.ColA
-			ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = true, 1.0 - a
-			ColorPickerFrame.previousValues = {r, g, b, a}
-			ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = callback, callback, callback
-			ColorPickerFrame:SetColorRGB(r, g, b)
-			ColorPickerFrame:Hide()
-			ColorPickerFrame:Show()
-		end
-	)
-	
-	return but
+	swatchButton:HookScript("OnDisable", updateDisabledState)
+	swatchButton:HookScript("OnEnable", updateDisabledState)
+	return swatchButton
 end
 
-function Options.AddDrop(DB,Var,Init,MenuItems) 
-	local c=Options.Frames.count+1
-	Options.Frames.count=c	
-	local ButtonName=Options.Prefix .."BUTTON_"..c
-	Options.Vars[ButtonName]=Var
-	Options.Vars[ButtonName.."_init"]=Init
-	Options.Vars[ButtonName.."_db"]=DB
-	
-	if DB~=nil and Var~=nil then
-		if DB[Var] == nil then DB[Var]=Init end
-	end
+---@param dbTable table
+---@param key string
+---@param default string|number|boolean
+---@param menuButtons string[]|{value: string|number|boolean, text: string?}[]
+function Options.AddRadioDropdownToCurrentPanel(dbTable,key,default,menuButtons)
+	local frameIdx = Options.Frames.count + 1
+	Options.Frames.count = frameIdx
+	local dropdownName = Options.Prefix..'DropDownMenu'..frameIdx
 
-	Options.Btn[ButtonName] = CreateFrame("Frame", ButtonName , Options.CurrentPanel, "UIDropDownMenuTemplate")
-	if Options.inLine~=true or Options.LineRelativ ==nil then
-		Options.Btn[ButtonName]:SetPoint("TOPLEFT", Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY)
-		Options.NextRelativ=ButtonName
-		Options.LineRelativ=ButtonName
-		Options.NextRelativX=0
-		Options.NextRelativY=0
-	else
-		Options.Btn[ButtonName]:SetPoint("TOP", Options.LineRelativ,"TOP", 0, 0)
-		Options.Btn[ButtonName]:SetPoint("LEFT", Options.LineRelativ.."Text","RIGHT", 0, 0)
-		Options.LineRelativ=ButtonName
-	end
-
-	local dropdown_width = 0
-    local dd_title = Options.Btn[ButtonName]:CreateFontString(Options.Btn[ButtonName], 'OVERLAY', 'GameFontNormal')
-	for _, item in pairs(MenuItems) do -- Sets the dropdown width to the largest item string width.
-        dd_title:SetText(item)
-        local text_width = dd_title:GetStringWidth() + 20
-        if text_width > dropdown_width then
-            dropdown_width = text_width
-        end
-    end
-	UIDropDownMenu_SetWidth(Options.Btn[ButtonName], dropdown_width)
-	UIDropDownMenu_SetText(Options.Btn[ButtonName], DB[Var])
-	
-	-- Create and bind the initialization function to the dropdown menu
-	UIDropDownMenu_Initialize(Options.Btn[ButtonName], function(self, level, menuList)
-	 local info = UIDropDownMenu_CreateInfo()
-	 for k, v in pairs(MenuItems) do
-		info.text = v
-		info.func = function(b)
-			UIDropDownMenu_SetText(Options.Btn[ButtonName], b.value)
-			DB[Var] = b.value
-			Init = b.value
-		end
-		UIDropDownMenu_AddButton(info)
-	   end
+	---@class RadioDropdown: WowStyle1DropdownTemplate, RegisteredFrameMixin, Button
+	local dropdownButton = CreateFrame('DropdownButton', dropdownName, Options.CurrentPanel, 'WowStyle1DropdownTemplate')
+	dropdownButton:RegisterForMouse("AnyUp", "AnyDown")
+	dropdownButton:HookScript("OnMouseDown", function(self, button)
+		RegisteredFrame_OnShiftRightClick(dropdownButton, button) -- Default on right-click of the dropdown toggle
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
 	end)
 
-end
-
-
-
-
-
-function Options.EditCheckBox(toEdit,DB,Var,Init,Text,width)
-	local ButtonName=toEdit:GetName()
-	
-	if Init==nil then
-		Init=false
-	end
-	Options.Vars[ButtonName]=Var
-	Options.Vars[ButtonName.."_init"]=Init
-	Options.Vars[ButtonName.."_db"]=DB
-	
-	if DB~=nil and Var~=nil then
-		if DB[Var] == nil then DB[Var]=Init end
-	end
-	
-	_G[ButtonName .. "Text"]:SetText(Text)
-	if width then
-		_G[ButtonName .. "Text"]:SetWidth(width)
-		_G[ButtonName .. "Text"]:SetNonSpaceWrap(false)
-		_G[ButtonName .. "Text"]:SetMaxLines(1)
-		Options.CBox[ButtonName]:SetHitRectInsets(0, -width, 0,0)
-	else
-		Options.CBox[ButtonName]:SetHitRectInsets(0, -_G[ButtonName.."Text"]:GetStringWidth()-2, 0,0)
-	end
-	
-	if DB~=nil and Var~=nil then 
-		Options.CBox[ButtonName]:SetChecked(DB[Var])
-		Options.CBox[ButtonName]:Show()
-	else
-		Options.CBox[ButtonName]:Hide()
-	end
-end
-
-function Options.AddText(TXT,width,centre)
-	local textbox
-			
-	textbox= Options.CurrentPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	textbox:SetText(TXT)
-	textbox:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-2)
-	textbox:SetScale(Options.scale)
-	
-	
-	
-	if width==nil or width==0 then 
-		textbox:SetWidth(textbox:GetStringWidth())
-	elseif width<0 then
-		if string.sub(Options.CurrentPanel:GetName(),  -11)== "ScrollChild" then
-			textbox:SetPoint("RIGHT",Options.CurrentPanel:GetParent():GetParent(),"RIGHT",width,0)
+	local maxWidth = 60; -- find widest button in the dropdown
+	for _, data in pairs(menuButtons) do
+		if type(data) == 'string' then
+			dropdownButton.Text:SetText(data)
 		else
-			textbox:SetPoint("RIGHT",width,0)
+			dropdownButton.Text:SetText(data.text or tostring(data.value));
 		end
-		if not centre then 
-			textbox:SetJustifyH("LEFT")
-			textbox:SetJustifyV("TOP")
-		end
-	else
-		textbox:SetWidth(width)
-		if not centre then 
-			textbox:SetJustifyH("LEFT")
-			textbox:SetJustifyV("TOP")
+		maxWidth = max(maxWidth, (dropdownButton.Text:GetUnboundedStringWidth() + 20))
+	end
+	dropdownButton:SetWidth(maxWidth + (dropdownButton.Arrow and dropdownButton.Arrow:GetWidth() or 0));
+	-- Alternatively, use auto resize feature of the mixin
+	-- dropdownButton.resizeToText = true
+	-- dropdownButton.resizeToTextPadding = (dropdownButton.Arrow and dropdownButton.Arrow:GetWidth() or 0) + 20
+
+	-- Setup the dropdown menu radio button generator func
+	local _, setting = Options.RegisterFrameWithSavedVar(dropdownButton, dbTable, key, default)
+	local function isSelected(value) return value == setting:GetValue(); end
+	local function setSelected(value) setting:SetValue(value); end
+	local function menuGenerator(dropdown, rootDescription)
+		for index = 1, #menuButtons do
+			local info = menuButtons[index]
+			if type(info) == "table" then
+				rootDescription:CreateRadio(info.text or tostring(info.value), isSelected, setSelected, info.value);
+			else -- info == (value and display text)
+				rootDescription:CreateRadio(info, isSelected, setSelected, info);
+			end
 		end
 	end
-	Options.NextRelativ=textbox
+	local generateMenu = function() dropdownButton:SetupMenu(menuGenerator) end
+	setting:AddUpdateHook(generateMenu) -- syncs dropdown display when saved var externally updated
+	generateMenu() -- call once to initialize
+
+	local leftOffset, topOffset = 9, -4 -- tweaks to make up for bg texture
+	if not Options.inLine or not Options.LineRelativ then
+		dropdownButton:SetPoint('TOPLEFT', Options.NextRelativ, 'BOTTOMLEFT',
+			(Options.NextRelativX or 0) + leftOffset, (Options.NextRelativY or 0) + topOffset
+		);
+		Options.NextRelativ = dropdownButton.Background
+		Options.LineRelativ = dropdownButton.Background
+		Options.NextRelativX = 0
+		Options.NextRelativY = 0
+	else
+		dropdownButton:SetPoint('TOP', Options.LineRelativ, 'TOP', 0, 0)
+		dropdownButton:SetPoint('LEFT', Options.LineRelativ..'Text', 'RIGHT', leftOffset, 3)
+		Options.LineRelativ = dropdownButton.Background
+	end
+	return dropdownButton
+end
+
+---@param checkBox CheckButton|{Text: FontString, func: function}
+---@param dbTable table expects either character or account SavedVars table
+---@param key string
+---@param value boolean? new isChecked value
+---@param labelText string new label text for the checkbox
+---@param width number?
+function Options.EditCheckBox(checkBox,dbTable,key,value,labelText,width)
+	value = not not value -- cast to boolean	
+	if dbTable~=nil and key~=nil then
+		if dbTable[key] == nil then dbTable[key]=value end
+		checkBox = Options.RegisterFrameWithSavedVar(checkBox, dbTable, key, value)
+		checkBox.func = function(self, isChecked)
+			checkBox:SetSavedValue(isChecked)
+		end
+		checkBox:Show()
+	end
+	checkBox.Text:SetText(labelText)
+	if width then
+		checkBox.Text:SetWidth(width)
+		checkBox.Text:SetNonSpaceWrap(false)
+		checkBox.Text:SetMaxLines(1)
+		checkBox:SetHitRectInsets(0, -width, 0,0)
+	else
+		checkBox:SetHitRectInsets(0, -(checkBox.Text:GetStringWidth()-2), 0,0)
+	end
+	if dbTable == nil and key == nil then
+		checkBox:Hide()
+	end
+end
+
+---@param text string
+---@param width number?
+---@param center boolean? if false text topleft justified
+---@return FontString
+function Options.AddTextToCurrentPanel(text,width,center)
+	local textFrame = Options.CurrentPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	textFrame:SetText(text)
+	textFrame:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-2)
+	textFrame:SetScale(Options.scale)
+
+	-- if no width then; set to min(max string width, panel width minus padding)
+	-- if negative width then: set width as if no width but use given width as right offset
+	if not width or width <= 0 then
+		local parentFrame = string.sub(Options.CurrentPanel:GetName(), -11) == "ScrollChild"
+			and Options.CurrentPanel:GetParent():GetParent() -- edge case for scrollable frames
+			or Options.CurrentPanel
+		local textFrameWidth = math.min(
+			textFrame:GetStringWidth(),
+			SettingsPanel.Container.SettingsCanvas:GetWidth() - 20
+		)
+		textFrame:SetWidth(textFrameWidth)
+		if width and width < 0 then
+			textFrame:SetPoint("RIGHT", parentFrame, "RIGHT", width, 0)
+		end
+	else
+		textFrame:SetWidth(width)
+	end
+	if not center then
+		textFrame:SetJustifyH("LEFT")
+		textFrame:SetJustifyV("TOP")
+	end
+	Options.NextRelativ=textFrame
 	Options.NextRelativX=0
 	Options.NextRelativY=0
-	return textbox
+	return textFrame
 end
-function Options.EditText(textbox,TXT,width,centre)
-	textbox:SetText(TXT)
-	if width==nil or width==0 then 
-		textbox:SetWidth(textbox:GetStringWidth())
-	elseif width<0 then
-		textbox:SetPoint("RIGHT",width,0)
-		if not centre then 
-			textbox:SetJustifyH("LEFT")
-			textbox:SetJustifyV("TOP")
+
+---@param textFrame FontString
+---@param text string
+---@param width number?
+---@param center boolean?
+function Options.EditText(textFrame,text,width,center)
+	textFrame:SetText(text)
+	if not width or width == 0 then 
+		textFrame:SetWidth(textFrame:GetStringWidth())
+	elseif width < 0 then
+		textFrame:SetPoint("RIGHT",width,0)
+		if not center then 
+			textFrame:SetJustifyH("LEFT")
+			textFrame:SetJustifyV("TOP")
 		end
 	else
-		textbox:SetWidth(width)
-		if not centre then 
-			textbox:SetJustifyH("LEFT")
-			textbox:SetJustifyV("TOP")
+		textFrame:SetWidth(width)
+		if not center then 
+			textFrame:SetJustifyH("LEFT")
+			textFrame:SetJustifyV("TOP")
 		end
 	end
-	
 end
 
-function Options.__EditBoxTooltipShow(self)
-	local name=self:GetName().."_tooltip"
-	if self.GPI_Options and self.GPI_Options.Vars and self.GPI_Options.Vars[name] then 
-		GameTooltip:SetOwner(self, "ANCHOR_BOTTOM", 0,0	)
-		GameTooltip:SetMinimumWidth(self:GetWidth())
-		GameTooltip:ClearLines()
-		GameTooltip:AddLine(self.GPI_Options.Vars[name],0.9,0.9,0.9,true)
-		GameTooltip:Show()
-	end		
-end
-
-function Options.__EditBoxTooltipHide(self)
-	GameTooltip:Hide()
-end
-
-function Options.__EditBoxGetFocus(self)
-	local name=self:GetName().."_suggestion"
-	if self.GPI_Options and self.GPI_Options.Vars and self.GPI_Options.Vars[name] then 
-		if self:GetText()==self.GPI_Options.Vars[name] then
-			self:SetText("")
-			self:SetTextColor(1,1,1)				
-		end
-	end	
-end
-
-function Options.__EditBoxLostFocus(self)
-	local name=self:GetName().."_suggestion"
-	if self.GPI_Options and self.GPI_Options.Vars and self.GPI_Options.Vars[name] then 
-		if self:GetText()=="" then
-			self:SetTextColor(0.6,0.6,0.6)
-			self:SetText(self.GPI_Options.Vars[name])
-			self:HighlightText(0,0) 
-			self:SetCursorPosition(0)
-		end
-	end	
-end
-
-function Options.__EditBoxOnEnterPressed(self)
-	self:ClearFocus()
-end
-
-function Options.AddEditBox(DB,Var,Init,TXTLeft,width,widthLeft,onlynumbers,tooltip,suggestion)
-	if width==nil then width=200 end
-	local c=Options.Frames.count+1
-	Options.Frames.count=c	
-
-	local ButtonName= Options.Prefix .."Edit_"..c.. Var
-	local CatName = ButtonName.."_Text"
-			
-	Options.Frames[CatName] = Options.CurrentPanel:CreateFontString(CatName, "OVERLAY", "GameFontNormal")
-	Options.Frames[CatName]:SetText('|cffffffff' .. TXTLeft .. '|r')
-	Options.Frames[CatName]:SetPoint("TOPLEFT",Options.NextRelativ,"BOTTOMLEFT", Options.NextRelativX, Options.NextRelativY-2)
-	Options.Frames[CatName]:SetScale(Options.scale)
-	if widthLeft==nil or widthLeft==0 then 
-		Options.Frames[CatName]:SetWidth(Options.Frames[CatName]:GetStringWidth())
+---@param dbTable table
+---@param key string
+---@param default string default db value if key is not set
+---@param labelText string label text displayed to the left of the edit box
+---@param width number?
+---@param labelWidth number?
+---@param isNumeric boolean?
+---@param tooltip string? text to display in a tooltip when the mouse hovers over the edit box
+---@param sampleText string? text to display in the edit box when it is empty
+---@return EditBox|RegisteredFrameMixin
+function Options.AddEditBoxToCurrentPanel(dbTable,key,default,labelText,width,labelWidth,isNumeric,tooltip,sampleText)
+	width = width or 200
+	local frameIdx = Options.Frames.count + 1
+	local editBoxName = Options.Prefix..'EditBox'..frameIdx..key
+	local labelName = editBoxName..'Text'
+	Options.Frames.count = frameIdx
+	-- Set up the label
+	local label = Options.CurrentPanel:CreateFontString(labelName, 'OVERLAY', 'GameFontNormal')
+	label:SetText(labelText)
+	label:SetTextColor(1, 1, 1, 1)
+	label:SetPoint('TOPLEFT', Options.NextRelativ, 'BOTTOMLEFT', Options.NextRelativX, Options.NextRelativY - 2)
+	label:SetScale(Options.scale)
+	if labelWidth == nil or labelWidth == 0 then
+		label:SetWidth(label:GetStringWidth())
 	else
-		Options.Frames[CatName]:SetWidth(widthLeft)
-		Options.Frames[CatName]:SetJustifyH("LEFT")
-		Options.Frames[CatName]:SetJustifyV("TOP")
+		label:SetWidth(labelWidth)
+		label:SetJustifyH('LEFT')
+		label:SetJustifyV('TOP')
 	end
-	
-	
-	
-	Options.Vars[ButtonName]=Var
-	Options.Vars[ButtonName.."_db"]=DB
-	Options.Vars[ButtonName.."_init"]=Init
-	Options.Vars[ButtonName.."_onlynumbers"]=onlynumbers
-	
-	
-	if DB[Var] == nil then DB[Var]=Init end
-
-	Options.Edit[ButtonName] = CreateFrame("EditBox", ButtonName, Options.CurrentPanel, "InputBoxTemplate")
-	Options.Edit[ButtonName]:SetPoint("TOPLEFT", Options.Frames[CatName],"TOPRIGHT",5 ,5)
-	Options.Edit[ButtonName]:SetScale(Options.scale)
-	Options.Edit[ButtonName]:SetWidth(width)
-	Options.Edit[ButtonName]:SetHeight(20)
-	
-	Options.Edit[ButtonName]:SetScript("OnEnterPressed",Options.__EditBoxOnEnterPressed)
-	
-	Options.Edit[ButtonName].GPI_Options=Options
-			
-	if onlynumbers then
-		Options.Edit[ButtonName]:SetNumeric(true)
-		Options.Edit[ButtonName]:SetNumber(DB[Var])
-	else
-		Options.Edit[ButtonName]:SetText(DB[Var])
+	---@type EditBox|{Instructions: FontString, Label: FontString} # Create the edit box
+	local editBox = CreateFrame('EditBox', editBoxName, Options.CurrentPanel, 'InputBoxInstructionsTemplate')
+	editBox:SetPoint('TOPLEFT', label, 'TOPRIGHT', 5, 5)
+	editBox:SetScale(Options.scale)
+	editBox:SetWidth(width)
+	editBox:SetHeight(20)
+	label:SetHeight(editBox:GetHeight() - 10)
+	editBox.Label = label
+	editBox:SetNumeric(isNumeric)
+	editBox:SetAutoFocus(false)
+	editBox:SetFontObject('ChatFontNormal') -- matches InputBoxTemplate font
+	editBox.Instructions:SetFontObject('ChatFontNormal')
+	editBox.Instructions:SetText(sampleText or '')
+	-- Register the edit box with the saved variable
+	if dbTable[key] == nil then dbTable[key] = default end
+	local cleanupText = function(text)
+		-- edge case for custom-tag editboxes; lowercase and remove extra inner spaces
+		if dbTable == GroupBulletinBoardDB.Custom then
+			text = text:lower():gsub('%s+', ' ')
+		end
+		return text:trim()
 	end
-	
-	Options.Edit[ButtonName]:SetCursorPosition(0)
-	Options.Edit[ButtonName]:HighlightText(0,0) 
-	Options.Edit[ButtonName]:SetAutoFocus(false)
-	Options.Edit[ButtonName]:ClearFocus() 
-	if tooltip and tooltip~="" then 
-		Options.Edit[ButtonName]:SetScript("OnEnter",Options.__EditBoxTooltipShow)
-		Options.Edit[ButtonName]:SetScript("onLeave",Options.__EditBoxTooltipHide)
-		Options.Vars[ButtonName.."_tooltip"]=tooltip
+	editBox = Options.RegisterFrameWithSavedVar(editBox, dbTable, key, default)
+	-- Better to just update the saved var OnEnterPressed only.
+	editBox:SetScript('OnEnterPressed', function()
+		local isNumeric = editBox:IsNumeric()
+		local input = not isNumeric and cleanupText(editBox:GetText()) or editBox:GetNumber();
+		assert(not isNumeric or type(input) == 'number',
+			'EditBox_OnEnterPressed() - failed to get number from edit box',
+			{input = input, isNumeric = isNumeric, text = editBox:GetText()}
+		);
+		editBox:SetSavedValue(input)
+		editBox:ClearFocus() -- utilize OnEditFocusLost to sync with saved var
+	end)
+	local syncWithSavedVar = function()
+		editBox:SetText(editBox:GetSavedValue())
 	end
-	
-	if suggestion and suggestion~="" then 
-		Options.Edit[ButtonName]:SetScript("OnEditFocusGained",Options.__EditBoxGetFocus)
-		Options.Edit[ButtonName]:SetScript("OnEditFocusLost",Options.__EditBoxLostFocus)
-		Options.Vars[ButtonName.."_suggestion"]=suggestion			
+	editBox:SetScript('OnEditFocusLost', syncWithSavedVar);
+	syncWithSavedVar();       -- run once to sync with initial value
+	editBox:SetCursorPosition(0) -- reset cursor incase saved text was added
+	-- Set tooltip if provided
+	if tooltip and tooltip ~= '' then
+		editBox:SetScript('OnEnter', function(self)
+			GameTooltip:SetOwner(self, 'ANCHOR_TOP', 0, 0)
+			GameTooltip:SetMinimumWidth(self:GetWidth())
+			GameTooltip:ClearLines()
+			GameTooltip:AddLine(tooltip, 0.9, 0.9, 0.9, true)
+			GameTooltip:Show()
+		end)
+		editBox:SetScript('OnLeave', GameTooltip_Hide)
 	end
-	
-	Options.Frames[CatName]:SetHeight(Options.Edit[ButtonName]:GetHeight()-10)
-	
-	Options.NextRelativ=CatName
+	local updateDisabledState = function()
+		local isDisabled = not editBox:IsEnabled()
+		local r, g, b =  (isDisabled and DISABLED_FONT_COLOR or WHITE_FONT_COLOR):GetRGB()
+		editBox:SetTextColor(r, g, b)
+		editBox.Label:SetTextColor(r, g, b)
+	end
+	editBox:HookScript("OnEnable", updateDisabledState)
+	editBox:HookScript("OnDisable", updateDisabledState)
+	Options.NextRelativ=labelName
 	Options.NextRelativX=0
 	Options.NextRelativY=-10
-	
-	return Options.Edit[ButtonName]
+	return editBox
 end
 
-function Options.AddSpace(factor)
+---@parm factor number? Defaults to 1. Negative values move the spacer up.
+function Options.AddSpacerToPanel(factor)
 	Options.NextRelativY=Options.NextRelativY-20*(factor or 1)
 end
 
-function Options.Open(panel)
-	if panel==nil or panel > #Options.Panel then panel = 1 end
-	InterfaceOptionsFrame_OpenToCategory(Options.Panel[#Options.Panel])
-	InterfaceOptionsFrame_OpenToCategory(Options.Panel[#Options.Panel])
-	InterfaceOptionsFrame_OpenToCategory(Options.Panel[panel])
+---@param panelID number? defaults to panel `1` (main addon's panel)
+function Options.OpenCategoryPanel(panelID)
+	Settings.OpenToCategory(Options.CategoryPanels[panelID or 1].name)
 end
 

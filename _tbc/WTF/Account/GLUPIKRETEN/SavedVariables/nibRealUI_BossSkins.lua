@@ -1,0 +1,2 @@
+
+RUIBossSkinsDB = nil

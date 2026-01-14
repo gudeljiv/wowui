@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -20,8 +20,6 @@ local print = TMW.print
 local LMB = LibStub("Masque", true) or (LibMasque and LibMasque("Button"))
 local type = type
 local bitband = bit.band
-
-local OnGCD = TMW.OnGCD
 
 local ColorMSQ, OnlyMSQ
 
@@ -72,12 +70,51 @@ local COLOR_UNLOCKED = {
 	Texture = "",
 	Gray = false,
 }
+
+local EvaluateColorValueFromBoolean = C_CurveUtil and C_CurveUtil.EvaluateColorValueFromBoolean
 function Texture_Colored:STATE(icon, stateData)
 	local color
-	if not TMW.Locked or not stateData then
+	if not TMW.Locked then
 		color = "ffffffff"
 	else
 		color = stateData.Color or "ffffffff"
+	end
+
+	if stateData.secretBool ~= nil then
+		local trueC = TMW:StringToCachedColorMixin(stateData.trueState.Color)
+		local falseC = TMW:StringToCachedColorMixin(stateData.falseState.Color)
+		self.texture:SetVertexColorFromBoolean(stateData.secretBool, trueC, falseC)
+
+		-- TODO: MIDNIGHT: fallbacks once C_CurveUtil.EvaluateColorValueFromBoolean exists on beta.
+		if EvaluateColorValueFromBoolean then
+			self.texture:SetDesaturation(EvaluateColorValueFromBoolean(
+				stateData.secretBool,
+				trueC.flags.desaturate and 1 or 0,
+				falseC.flags.desaturate and 1 or 0
+			))
+		elseif trueC.flags.desaturate and falseC.flags.desaturate then
+			self.texture:SetDesaturated(true)
+		elseif trueC.flags.desaturate then
+			-- Desaturate only when true:
+			self.texture:SetDesaturated(stateData.secretBool)
+		elseif falseC.flags.desaturate then
+			self.texture:SetDesaturated(false)
+		else
+			self.texture:SetDesaturated(false)
+		end
+		
+		if LMB and ColorMSQ then
+			-- This gets set by IconModule_IconContainer_Masque
+			local normaltex = icon.normaltex
+			if normaltex then
+				normaltex:SetVertexColorFromBoolean(stateData.secretBool, trueC, falseC)
+			end
+		end
+
+		-- Can't evaluate texture overrides from secrets.
+		self.texture:SetTexture(icon.attributes.texture)
+
+		return
 	end
 
 	local texture = stateData.Texture

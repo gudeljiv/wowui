@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -24,14 +24,14 @@ local _G = _G
 local assert, pairs, ipairs, sort, tinsert, wipe, select =
 	  assert, pairs, ipairs, sort, tinsert, wipe, select
 	  
-local SendChatMessage, GetChannelList =
-      SendChatMessage, GetChannelList
+local GetChannelList =
+      GetChannelList
 local UnitInBattleground, IsInRaid, IsInGroup =
       UnitInBattleground, IsInRaid, IsInGroup
 local UnitInRaid, GetNumPartyMembers =
       UnitInRaid, GetNumPartyMembers
 	  
-
+local SendChatMessage = C_ChatInfo and C_ChatInfo.SendChatMessage or SendChatMessage
 
 
 
@@ -149,7 +149,18 @@ TMW:RegisterUpgrade(42102, {
 
 
 function Announcements:ProcessIconEventSettings(event, eventSettings)
-	if eventSettings.Channel ~= "" then
+	local Channel = eventSettings.Channel
+	if Channel ~= "" then
+		local chandata = self.AllSubHandlersByIdentifier[Channel]
+		
+		if not chandata then
+			return
+		end
+
+		if chandata.onUsed then
+			chandata.onUsed()
+		end
+
 		return true
 	end
 end
@@ -437,7 +448,7 @@ Announcements:RegisterEventHandlerDataNonSpecific(71, "RAID_WARNING_FAKE", {
 		-- The gsub here is so that text that appears after a link of some kind will be the correct color instead of black (caused by the |r at the end of the link).
 		Text = "|c" .. eventSettings.TextColor .. Text:gsub("|r", "|c" .. eventSettings.TextColor) .. "|r"
 
-		RaidNotice_AddMessage(RaidWarningFrame, Text, empty, eventSettings.TextDuration) -- arg3 still demands a valid table for the color info, even if it is empty
+		RaidNotice_AddMessage(RaidWarningFrame, Text, TMW:StringToCachedRGBATable(eventSettings.TextColor), eventSettings.TextDuration) -- arg3 still demands a valid table for the color info
 		
 	end,
 })
@@ -596,19 +607,19 @@ Announcements:RegisterEventHandlerDataNonSpecific(88, "FCT", {
 		"Color",
 	},
 
+	onUsed = function()
+		if not CombatText_AddMessage then
+			UIParentLoadAddOn("Blizzard_CombatText")
+		end
+	end,
+
 	handler = function(icon, eventSettings, Text)
 		if eventSettings.ShowIconTex then
 			Text = "|T" .. (icon.attributes.texture or "") .. ":20:20:-5|t " .. Text
 		end
-		if SHOW_COMBAT_TEXT ~= "0" then
-			if not CombatText_AddMessage then
-				-- GLOBALS: UIParentLoadAddOn
-				UIParentLoadAddOn("Blizzard_CombatText")
-			end
-
-			local c = TMW:StringToCachedRGBATable(eventSettings.TextColor)
-			CombatText_AddMessage(Text, CombatText_StandardScroll, c.r, c.g, c.b, eventSettings.Sticky and "crit" or nil, false)
-		end
+		
+		local c = TMW:StringToCachedRGBATable(eventSettings.TextColor)
+		CombatText_AddMessage(Text, CombatText_StandardScroll, c.r, c.g, c.b, eventSettings.Sticky and "crit" or nil, false)
 	end,
 })
 

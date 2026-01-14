@@ -1,7 +1,6 @@
 # ChocolateBar
 
-## [v3.7.7](https://github.com/Kiatra/ChocolateBar/tree/v3.7.7) (2021-10-01)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/commits/v3.7.7) [Previous Releases](https://github.com/Kiatra/ChocolateBar/releases)
+## [v4.2.2](https://github.com/Kiatra/ChocolateBar/tree/v4.2.2) (2025-11-20)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v1.4.1...v4.2.2) 
 
-- add CF id  
-    add default toc version  
+- add Midnight  

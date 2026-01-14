@@ -1,6 +1,6 @@
 ﻿-- ---------------------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -15,27 +15,16 @@
 -- ADDON GLOBALS AND LOCALS
 -- ---------------------------------
 
-if WOW_PROJECT_ID ~= WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
-	StaticPopupDialogs["TMW_PROJECT_MISMATCH"] = {
-		-- This is not localizable, because AceLocale might not have loaded
-		-- (this is why we don't bother to load AceLocale until after these checks).
-		text = ("You've installed TellMeWhen for Classic TBC, but this is %s. Please double-check which version of TMW you downloaded."):format(_G["EXPANSION_NAME" .. GetExpansionLevel()]), 
-		button1 = EXIT_GAME,
-		button2 = CANCEL,
-		OnAccept = ForceQuit,
-		timeout = 0,
-		showAlert = true,
-		whileDead = true,
-		preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
-	}
-	StaticPopup_Show("TMW_PROJECT_MISMATCH")
-	return
-end
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
+local LoadAddOn = C_AddOns and C_AddOns.LoadAddOn or LoadAddOn
+local EnableAddOn = C_AddOns and C_AddOns.EnableAddOn or EnableAddOn
+local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 
-TELLMEWHEN_VERSION = "9.2.2"
+
+TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "9.2.2-bcc" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "11.2.8-59-g07d4360" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -43,18 +32,21 @@ elseif strmatch(projectVersion, "%-%d+%-") then
 end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
-TELLMEWHEN_VERSIONNUMBER = 92200 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
+
+local REVISION = 2
+if #TELLMEWHEN_VERSION > 7 or REVISION >= 100 then
+	return error("TELLMEWHEN: UNEXPECTEDLY HIGH VERSION/REVISION")
+end
+
+-- This number is used for running migrations, showing the last changelog version,
+-- and communicating new versions to other players.
+-- For a TOC version 10.2.3 and a REVISION=45, it'll be `10020345`.
+TELLMEWHEN_VERSIONNUMBER = tonumber(
+	TELLMEWHEN_VERSION:gsub("%.(%d+)", function(x) return ("%02d"):format(tonumber(x)) end) .. 
+	("%02d"):format(REVISION)
+)
 
 TELLMEWHEN_FORCECHANGELOG = 86005 -- if the user hasn't seen the changelog until at least this version, show it to them.
-
-if TELLMEWHEN_VERSIONNUMBER > 93000 or TELLMEWHEN_VERSIONNUMBER < 92000 then
-	-- safety check because i accidentally made the version number 414069 once
-	return error("TELLMEWHEN: THE VERSION NUMBER IS SCREWED UP OR MAYBE THE SAFETY LIMITS ARE WRONG")
-end
-
-if TELLMEWHEN_VERSION_MINOR == "dev" and not strfind(TELLMEWHEN_VERSIONNUMBER, TELLMEWHEN_VERSION:gsub("%.", ""), nil) then
-	return error("TELLMEWHEN: TELLMEWHEN_VERSION DOESN'T AGREE WITH TELLMEWHEN_VERSIONNUMBER")
-end
 
 TELLMEWHEN_MAXROWS = 20
 
@@ -76,9 +68,9 @@ if not AceDB or not LibOO or not LSM then
 Normally, these come bundled with TMW, but you may have installed a nolib version of TMW by accident.
 
 This can happen especially if you use the Twitch app - ensure "Install Libraries Separately" isn't check for TellMeWhen in the Twitch app.]], 
-		button1 = EXIT_GAME,
+		button1 = RELOADUI,
 		button2 = CANCEL,
-		OnAccept = ForceQuit,
+		OnAccept = ReloadUI,
 		timeout = 0,
 		showAlert = true,
 		whileDead = true,
@@ -88,11 +80,29 @@ This can happen especially if you use the Twitch app - ensure "Install Libraries
 
 	-- Stop trying to load TMW.
 	return
+elseif _G.GetLib and (not LibStub.libs or not pcall(LibStub.NewLibrary, LibStub, "__TMW_GetLib_test", "20250806041923")) then
+	local _, fault = issecurevariable("GetLib");
+	StaticPopupDialogs["TMW_MISSINGLIB"] = {
+		text = ([[TellMeWhen:
+
+You appear to have installed an AddOn that includes a piece of poorly functioning code called "RasuForge-GetLib". 
+
+This code attempts to replace LibStub, the registry of shared AddOn library code that is used by nearly every WoW AddOn for almost 20 years. Unfortunately, it is poorly made and interferes with the way that LibStub normally functions.
+
+TellMeWhen's best guess at where this came from is the addon %q. TellMeWhen will not function properly while this addon is installed and enabled.]]):format(fault), 
+		button1 = OKAY,
+		timeout = 0,
+		showAlert = true,
+		whileDead = true,
+		preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
+	}
+	StaticPopup_Show("TMW_MISSINGLIB")
 end
 
 local L = LibStub("AceLocale-3.0"):GetLocale("TellMeWhen", true)
 
 LSM:Register("font", "Open Sans Regular", "Interface/Addons/TellMeWhen/Fonts/OpenSans-Regular.ttf")
+LSM:Register("font", "Roboto Mono", "Interface/Addons/TellMeWhen/Fonts/RobotoMono-Regular.ttf")
 LSM:Register("font", "Vera Mono", "Interface/Addons/TellMeWhen/Fonts/VeraMono.ttf")
 
 -- Standalone versions of these libs are LoD
@@ -103,6 +113,11 @@ local TMW = LibOO:GetNamespace("TellMeWhen"):NewClass("TMW", "Frame"):New("Frame
 _G.TMW = LibStub("AceAddon-3.0"):NewAddon(TMW, "TellMeWhen", "AceEvent-3.0", "AceTimer-3.0", "AceConsole-3.0", "AceComm-3.0", "AceSerializer-3.0")
 _G.TellMeWhen = _G.TMW
 local TMW = _G.TMW
+
+TMW.issecretvalue = _G.issecretvalue or function() end
+TMW.clientHasSecrets = C_Secrets and C_Secrets.HasSecretRestrictions()
+TMW.wowMajor = math.floor(select(4, GetBuildInfo()) / 10000)
+
 
 local DogTag = LibStub("LibDogTag-3.0", true)
 
@@ -163,14 +178,11 @@ end)
 -- GLOBALS: UIParent, CreateFrame, collectgarbage, geterrorhandler 
 
 ---------- Upvalues ----------
-local GetSpellCooldown, GetSpellInfo, GetSpellTexture, IsUsableSpell =
-	  GetSpellCooldown, GetSpellInfo, GetSpellTexture, IsUsableSpell
-local InCombatLockdown, GetTalentInfo =
-	  InCombatLockdown, GetTalentInfo
+local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or GetSpellTexture
+local InCombatLockdown =
+	  InCombatLockdown
 local IsInGuild, IsInGroup, IsInInstance =
 	  IsInGuild, IsInGroup, IsInInstance
-local GetAddOnInfo, IsAddOnLoaded, LoadAddOn, EnableAddOn, GetBuildInfo =
-	  GetAddOnInfo, IsAddOnLoaded, LoadAddOn, EnableAddOn, GetBuildInfo
 local tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, select, wipe, rawget, rawset, assert, pcall, error, getmetatable, setmetatable, loadstring, unpack, debugstack =
 	  tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, select, wipe, rawget, rawset, assert, pcall, error, getmetatable, setmetatable, loadstring, unpack, debugstack
 local strfind, strmatch, format, gsub, gmatch, strsub, strtrim, strsplit, strlower, strrep, strchar, strconcat, strjoin, max, ceil, floor, random =
@@ -178,6 +190,7 @@ local strfind, strmatch, format, gsub, gmatch, strsub, strtrim, strsplit, strlow
 local _G, coroutine, table, GetTime, CopyTable =
 	  _G, coroutine, table, GetTime, CopyTable
 local tostringall = tostringall
+local debugprofilestop = debugprofilestop
 
 ---------- Locals ----------
 local Locked
@@ -342,7 +355,7 @@ function TMW:RegisterDatabaseDefaults(defaults)
 end
 
 function TMW:MergeDefaultsTables(src, dest)
-	--src and dest must have congruent data structure, otherwise shit will blow up.
+	--src and dest must have congruent data structure, otherwise things will blow up.
 	-- There are no safety checks to prevent this.
 	
 	for k in pairs(src) do
@@ -359,7 +372,7 @@ function TMW:MergeDefaultsTables(src, dest)
 		end
 	end
 	
-	return dest -- not really needed, but what the hell why not
+	return dest -- not really needed, but why not
 end
 
 
@@ -367,37 +380,29 @@ end
 
 
 
----------------------------------
--- Global Cooldown Data
----------------------------------
 
--- Rogue's Backstab. We don't need class spells anymore - any GCD spell works fine.
-local GCDSpell = 53
-TMW.GCDSpell = GCDSpell
-local GCD = 0
-TMW.GCD = 0
+if _G.GetSpellInfo then
+	TMW.GetSpellInfo = _G.GetSpellInfo
+else
+	local C_Spell_GetSpellInfo = C_Spell.GetSpellInfo
+	TMW.GetSpellInfo = function(spellID)
+		if not spellID then
+			return nil;
+		end
 
-function TMW.OnGCD(d)
-	if d <= 0.1 then
-		-- A cd of 0.001 is Blizzard's terrible way of indicating that something's cooldown hasn't started,
-		-- but is still unusable, and has a cooldown pending. It should not be considered a GCD.
-		-- In general, anything less than 0.1 isn't a GCD.
-		return false
-	elseif d <= 1 then
-		-- A cd of 1 (or less) is always a GCD (or at least isn't worth showing)
-		return true
-	else
-		-- If the duration passed in is the same as the GCD spell,
-		-- and the duration isnt zero, then it is a GCD
-		return GCD == d and d > 0 
+		local spellInfo = C_Spell_GetSpellInfo(spellID);
+		if spellInfo then
+			return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
+		end
 	end
 end
 
-
-
-
-
-
+if C_Spell.GetSpellName then
+	TMW.GetSpellName = C_Spell.GetSpellName
+else
+	TMW.GetSpellName = GetSpellInfo
+end
+local GetSpellName = TMW.GetSpellName
 
 ---------------------------------
 -- Caches
@@ -434,10 +439,15 @@ TMW.isNumber = setmetatable(
 end})
 
 
-TMW.SpellTexturesMetaIndex = {
-}
+TMW.SpellTexturesMetaIndex = {}
+if GetSpellName(336126) then
+	--hack for pvp tinkets
+	TMW.SpellTexturesMetaIndex[336126] = GetSpellTexture(336126)
+	TMW.SpellTexturesMetaIndex[strlowerCache[GetSpellName(336126)]] = GetSpellTexture(336126)
+end
 local SpellTexturesMetaIndex = TMW.SpellTexturesMetaIndex
 
+local avengingWrathName = GetSpellName(31884)
 function TMW.GetSpellTexture(spell)
 	if not spell then return end
 
@@ -446,9 +456,25 @@ function TMW.GetSpellTexture(spell)
 		SpellTexturesMetaIndex[spell] or
 		rawget(SpellTexturesMetaIndex, strlowerCache[spell])
 end
-local GetSpellTexture = TMW.GetSpellTexture
 
+TMW.spellTextureCache = setmetatable(
+{}, {
+	__mode = "kv",
+	__index = function(t, i)
+		if not i then return end
 
+		local tex = TMW.GetSpellTexture(i)
+		t[i] = tex
+		return tex
+	end,
+	__call = function(t, i)
+		return t[i]
+	end,
+}) 
+
+TMW:RegisterEvent("SPELLS_CHANGED", function()
+	wipe(TMW.spellTextureCache)
+end)
 
 
 
@@ -480,12 +506,7 @@ function TMW.print(...)
 		local prefix = format("|cffff0000 %s", linenum(3, true)) .. ":|r "
 
 		local func = TMW.debug and TMW.debug.print or _G.print
-		if ... == TMW then
-			prefix = "s" .. prefix
-			func(prefix, select(2,...))
-		else
-			func(prefix, ...)
-		end
+		func(prefix, ...)
 	end
 	return ...
 end
@@ -493,49 +514,14 @@ local print = TMW.print
 
 
 do	-- TMW.safecall
-	--[[
-		xpcall safecall implementation
-	]]
 	local xpcall = xpcall
 
-	local function errorhandler(err)
-		return geterrorhandler()(err)
-	end
-
-	local function CreateDispatcher(argCount)
-		local code = [[
-			local xpcall, eh = ...
-			local method, ARGS
-			local function call() return method(ARGS) end
-		
-			local function dispatch(func, ...)
-				method = func
-				if not method then return end
-				ARGS = ...
-				return xpcall(call, eh)
-			end
-		
-			return dispatch
-		]]
-		
-		local ARGS = {}
-		for i = 1, argCount do ARGS[i] = "arg"..i end
-		ARGS = table.concat(ARGS, ", ")
-		code = code:gsub("ARGS", ARGS)
-		return assert(loadstring(code, "safecall Dispatcher["..argCount.."]"))(xpcall, errorhandler)
-	end
-
-	local Dispatchers = setmetatable({}, {__index=function(self, argCount)
-		local dispatcher = CreateDispatcher(argCount)
-		rawset(self, argCount, dispatcher)
-		return dispatcher
-	end})
-	Dispatchers[0] = function(func)
-		return xpcall(func, errorhandler)
+	local errorhandler = _G.CallErrorHandler or function(...)
+		return geterrorhandler()(...)
 	end
 
 	function TMW.safecall(func, ...)
-		return Dispatchers[select('#', ...)](func, ...)
+		return xpcall(func, errorhandler, ...)
 	end
 end
 local safecall = TMW.safecall
@@ -603,22 +589,6 @@ function TMW:ValidateType(argN, methodName, var, reqType)
 		error(("Bad argument %s to %q. %s expected, got %s (%s)"):format(argN, methodName, reqType, varTypeName, tostring(var) or "[noval]"), 3)
 	end
 end
-
--- This code is here to prevent other addons from resetting
--- the high-precision timer. It isn't fool-proof (if someone upvalues debugprofilestart
--- then this won't have an effect on calls to that upvalue), but it helps.
-local start_old = debugprofilestart
-local lastReset = 0
-function _G.debugprofilestart()
-	lastReset = lastReset + debugprofilestop()
-
-	return start_old()
-end
-
-function _G.debugprofilestop_SAFE()
-	return debugprofilestop() + lastReset    
-end
-local debugprofilestop = debugprofilestop_SAFE
 
 
 
@@ -816,37 +786,37 @@ do
 	function TMW:Fire(event, ...)
 		local funcs = callbackregistry[event]
 
-		if funcs then
-			local wasInProgress = firingsInProgress
-			firingsInProgress = true
+		if not funcs then return end
+		
+		local wasInProgress = firingsInProgress
+		firingsInProgress = true
+		
+		local funcsNeedsFix
+		for t = 1, #funcs do
+			local args = funcs[t]
 			
-			local funcsNeedsFix
-			for t = 1, #funcs do
-				local args = funcs[t]
-				
-				if args then
-					local method = args.func
-					for index = 1, args.n do
-						local arg1 = args[index]
+			if args then
+				local method = args.func
+				for index = 1, args.n do
+					local arg1 = args[index]
 
-						if arg1 == nil then
-							funcsNeedsFix = true
-						elseif arg1 ~= true then
-							safecall(method, arg1, event, ...)
-						else
-							safecall(method, event, ...)
-						end
+					if arg1 == nil then
+						funcsNeedsFix = true
+					elseif arg1 ~= true then
+						safecall(method, arg1, event, ...)
+					else
+						safecall(method, event, ...)
 					end
 				end
 			end
-			
-			if not wasInProgress then
-				firingsInProgress = false
+		end
+		
+		if not wasInProgress then
+			firingsInProgress = false
 
-				if funcsNeedsFix then
-					for i = #funcs, 1, -1 do
-						cleanup(event, i, funcs[i])
-					end
+			if funcsNeedsFix then
+				for i = #funcs, 1, -1 do
+					cleanup(event, i, funcs[i])
 				end
 			end
 		end
@@ -1064,59 +1034,32 @@ function TMW:PLAYER_LOGIN()
 	TMW:UnregisterEvent("PLAYER_LOGIN")
 	TMW.PLAYER_LOGIN = nil
 
-	-- Check for wrong WoW version
-	if select(4, GetBuildInfo()) < 20501 or select(4, GetBuildInfo()) > 29999 then
-		-- GLOBALS: StaticPopupDialogs, StaticPopup_Show, EXIT_GAME, CANCEL, ForceQuit
-		local version = GetBuildInfo()
-		StaticPopupDialogs["TMW_BADWOWVERSION"] = {
-			text = "TellMeWhen %s is only compatible with TBC Classic.",
-			button1 = OKAY,
-			timeout = 0,
-			showAlert = true,
-			whileDead = true,
-			preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
-		}
-		StaticPopup_Show("TMW_BADWOWVERSION", TELLMEWHEN_VERSION_FULL, version)
-		return
-
-	-- -- if the file IS required for gross functionality
-	-- elseif not LibStub("LibClassicCasterino", true) then
-	-- 	local fileName = "TellMeWhen/Lib/LibClassicCasterino/LibClassicCasterino.lua"
-
-	-- 	-- this also includes upgrading from older than 3.0 (pre-Ace3 DB settings)
-	-- 	-- GLOBALS: StaticPopupDialogs, StaticPopup_Show, EXIT_GAME, CANCEL, ForceQuit
+	-- if not LibStub("DRList-1.0", true) then
 	-- 	StaticPopupDialogs["TMW_RESTARTNEEDED"] = {
-	-- 		text = L["ERROR_MISSINGFILE"], 
+	-- 		text = L["ERROR_MISSINGFILE_NOREQ"],
 	-- 		button1 = OKAY,
 	-- 		timeout = 0,
 	-- 		showAlert = true,
 	-- 		whileDead = true,
 	-- 		preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
 	-- 	}
-	-- 	StaticPopup_Show("TMW_RESTARTNEEDED", TELLMEWHEN_VERSION_FULL, fileName) -- arg3 could also be L["ERROR_MISSINGFILE_REQFILE"]
-	-- 	return
+	-- 	StaticPopup_Show("TMW_RESTARTNEEDED", TELLMEWHEN_VERSION_FULL, "TellMeWhen/Lib/DRList-1.0/DRList-1.0.lua") -- arg3 could also be L["ERROR_MISSINGFILE_REQFILE"]
+	-- end
+	
 
-	-- if the file is NOT required for gross functionality
-	elseif not LibStub("DRList-1.0", true) then
-		StaticPopupDialogs["TMW_RESTARTNEEDED"] = {
-			text = L["ERROR_MISSINGFILE_NOREQ"], 
-			button1 = OKAY,
-			timeout = 0,
-			showAlert = true,
-			whileDead = true,
-			preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
-		}
-		StaticPopup_Show("TMW_RESTARTNEEDED", TELLMEWHEN_VERSION_FULL, "TellMeWhen/Lib/DRList-1.0/DRList-1.0.lua") -- arg3 could also be L["ERROR_MISSINGFILE_REQFILE"]
+	safecall(TMW.UpdateTalentTextureCache, TMW)
+
+	TMW:RegisterEvent("GLOBAL_MOUSE_DOWN")
+	
+	if C_BarberShop then
+		TMW:RegisterEvent("BARBER_SHOP_OPEN")
+		TMW:RegisterEvent("BARBER_SHOP_CLOSE")
 	end
-	
-
-
-	TMW:UpdateTalentTextureCache()
-
-
-	
-	
-	TMW:RegisterEvent("CHARACTER_POINTS_CHANGED")
+	TMW:RegisterEvent("PLAYER_TALENT_UPDATE", "PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("TRAIT_CONFIG_UPDATED", "PLAYER_SPECIALIZATION_CHANGED")
+	TMW:RegisterEvent("CHARACTER_POINTS_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
 
 
 
@@ -1152,7 +1095,7 @@ function TMW:PLAYER_LOGIN()
 	
 	TMW:Fire("TMW_INITIALIZE")
 	TMW:UnregisterAllCallbacks("TMW_INITIALIZE")
-	
+
 	TMW.Initialized = true
 	
 	TMW:SetScript("OnUpdate", TMW.OnUpdate)
@@ -1357,6 +1300,8 @@ function TMW:GetSettingsFromGUID(GUID)
 			-- match returns that are returned when we get results from the iterator
 			-- for icons below (settings [,owner], groupSettings, domain, groupID, iconID)
 			return owner:GetSettings(), owner, owner.group:GetSettings(), owner.group.Domain, owner.group.ID, owner.ID
+		elseif owner.class == TMW.C.Group then
+			return owner:GetSettings(), owner, owner.domain, owner.ID
 		end
 		return owner:GetSettings(), owner
 	end
@@ -1528,6 +1473,18 @@ TMW.C.TMW:Inherit("Core_Upgrades")
 function TMW:GetBaseUpgrades()			-- upgrade functions
 	return {
 
+		[92400] = {
+			-- The lua import detector for the luavalue icon type
+			-- implemented its rawget guard incorrectly,
+			-- leading to extra per-view settings getting created on imported data.
+			group = function(self, gs)
+				gs.SettingsPerView.LuaCode = nil
+			end,
+			icon = function(self, ics)
+				ics.SettingsPerView.LuaCode = nil
+			end,
+		},
+		
 		[81206] = {
 			group = function(self, gs, domain, groupID)
 				-- the old upgrade accidentaly set these to false instead of nil
@@ -1605,6 +1562,18 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 				ics.Alpha = nil
 				ics.UnAlpha = nil
 				ics.ShowWhen = nil
+			end,
+		},
+
+		[80005] = {
+			group = function(self, gs, domain, groupID)
+				-- We're done with these now. Goodbye!
+				gs.PrimarySpec = nil
+				gs.SecondarySpec = nil
+
+				for i = 1, 4 do
+					gs["Tree" .. i] = false
+				end
 			end,
 		},
 
@@ -1797,7 +1766,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 		},
 		[48025] = {
 			icon = function(self, ics)
-				ics.Name = gsub(ics.Name, "(CrowdControl)", "%1; " .. GetSpellInfo(339))
+				ics.Name = gsub(ics.Name, "(CrowdControl)", "%1; " .. TMW.GetSpellName(339))
 			end,
 		},
 		[47002] = {
@@ -1983,7 +1952,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 
 				for _, stanceData in ipairs(self.stances) do
 					if stanceData.class == pclass then
-						local stanceName = GetSpellInfo(stanceData.id)
+						local stanceName = TMW.GetSpellName(stanceData.id)
 						tinsert(self.CSN, stanceName)
 					end
 				end
@@ -2170,7 +2139,7 @@ function TMW:GetBaseUpgrades()			-- upgrade functions
 
 				for _, stanceData in ipairs(self.stances) do
 					if stanceData.class == pclass then
-						local stanceName = GetSpellInfo(stanceData.id)
+						local stanceName = TMW.GetSpellName(stanceData.id)
 						tinsert(self.CSN, stanceName)
 					end
 				end
@@ -2490,15 +2459,11 @@ function TMW:CpuProfileReset()
 end
 
 --- Update variables that are used globally thoughout TMW.
--- This includes TMW.time and TMW.GCD.
 -- Call this manually when script execution starts in a context
 -- that needs these variables but isn't originating from TMW:OnUpdate().
 function TMW:UpdateGlobals()
 	time = GetTime()
 	TMW.time = time
-
-	_, GCD=GetSpellCooldown(GCDSpell)
-	TMW.GCD = GCD	
 end
 
 do	-- TMW:OnUpdate()
@@ -2797,12 +2762,10 @@ end
 -- TMW:Update() sets up all groups, icons, and anything else.
 function TMW:Update(forceCoroutine)
 
-	-- We check arena (and I threw BGs in as well)
-	-- in hopes of resolving https://wow.curseforge.com/projects/tellmewhen/issues/1572 -
-	-- a "script ran too long" error that appears to be happening outside of combat,
-	-- potentially when loading into an arena map.
-	local _, z = IsInInstance()
-	local needsCoroutineUpdate = forceCoroutine or InCombatLockdown() or z == "arena" or z == "pvp"
+	-- We check for instances to resolve https://github.com/ascott18/TellMeWhen/issues/1592
+	-- and https://github.com/ascott18/TellMeWhen/issues/2125 - "script ran too long" errors
+	-- that appears to be happening outside of combat when loading into an instance.
+	local needsCoroutineUpdate = forceCoroutine or InCombatLockdown() or IsInInstance()
 
 	if needsCoroutineUpdate then
 		TMW:UpdateViaCoroutine()
@@ -2828,20 +2791,26 @@ function TMW:ScheduleUpdate(delay)
 end
 
 function TMW:UpdateTalentTextureCache()
-	for tab = 1, GetNumTalentTabs() do
-		for index = 1, GetNumTalents(tab) do
-			local name, iconTexture = GetTalentInfo(tab, index)
+	for _, talentInfoQuery in TMW.GetTalentQueries() do
+		local talentInfo = C_SpecializationInfo.GetTalentInfo(talentInfoQuery);
+		if talentInfo then
+			local name = talentInfo.name
+			local tex = talentInfo.fileID
 
 			local lower = name and strlowerCache[name]
-			
+
 			if lower then
-				SpellTexturesMetaIndex[lower] = iconTexture
+				SpellTexturesMetaIndex[lower] = tex
 			end
 		end
 	end
 end
 
-function TMW:CHARACTER_POINTS_CHANGED()
+function TMW:PLAYER_SPECIALIZATION_CHANGED(event, unit)
+	if event == "PLAYER_SPECIALIZATION_CHANGED" and unit ~= "player" then
+		return
+	end
+
 	if not InCombatLockdown() then
 		TMW:ScheduleUpdate(.2)
 		--TMW:Update()
@@ -2880,7 +2849,20 @@ function TMW:OnProfile(event, arg2, arg3)
 	TMW:Fire("TMW_ON_PROFILE", event, arg2, arg3)
 end
 
+function TMW:BARBER_SHOP_OPEN()
+	TMW:Hide()
+end
 
+function TMW:BARBER_SHOP_CLOSE()
+	TMW:Show()
+end
+
+function TMW:GLOBAL_MOUSE_DOWN(button)
+	local mouseFocus = TMW.GetMouseFocus()
+	if not mouseFocus or mouseFocus == WorldFrame then
+		TMW:Fire("TMW_WORLD_FRAME_MOUSE_DOWN", button)
+	end
+end
 
 
 
@@ -2902,6 +2884,25 @@ end
 
 function TMW:AssertOptionsInitialized()
 	if not TMW.IE or not TMW.IE.Initialized then
+
+		-- Detect https://github.com/KaspOu/K-Cursor-Cooldown/issues/23 and warn users.
+		if AceAddon30Frame._RegisterUnitEvents and IsAddOnLoaded("CursorCooldown") then
+			StaticPopupDialogs["TMW_CCR"] = {
+				text = 
+[[TellMeWhen has detected that you have installed "Cursor Cooldown Reloaded". 
+
+Unfortunately, this addon tampers with the shared library AceAddon-3.0 in a way that breaks TellMeWhen, Dominos, and probably other addons. 
+
+TellMeWhen's options cannot load unless you disable or uninstall Cursor Cooldown Reloaded.]], 
+				button1 = OKAY,
+				timeout = 0,
+				showAlert = true,
+				whileDead = true,
+				preferredIndex = 3, -- http://forums.wowace.com/showthread.php?p=320956
+			}
+			StaticPopup_Show("TMW_CCR")
+		end
+		
 		TMW:Print(L["ERROR_NOTINITIALIZED_OPT_NO_ACTION"])
 		
 		return true
@@ -3251,7 +3252,7 @@ function TMW:OnCommReceived(prefix, text, channel, who)
 		then
 			-- If some of the data is missing (i dont know why it would be),
 			-- or if the notified revision is less than the currently installed revision,
-			-- or if the notified revision is 414069 (the time I fucked up the version number),
+			-- or if the notified revision is 414069 (the time I messed up the version number),
 			-- or if the notification is from an alpha version and the installed version is not an alpha version,
 			-- then don't notify.
 			return

@@ -1,4 +1,4 @@
-
+local addonName, platerInternal = ...
 
 local Plater = _G.Plater
 local DF = DetailsFramework
@@ -11,7 +11,7 @@ local IS_WOW_PROJECT_CLASSIC_TBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE
 
 local ghostAuraFrame
 
-local y = -170
+local y = platerInternal.optionsYStart - 40
 local optionsStartX = 300
 local optionsStartY = y
 
@@ -66,14 +66,18 @@ function Plater.Auras.GhostAuras.ApplyAppearance(auraIconFrame, spellName, spell
 
     if (ghostAurasSettings.width ~= 0) then
         auraIconFrame:SetWidth(ghostAurasSettings.width)
+		auraIconFrame.Icon:SetWidth (ghostAurasSettings.width-2)
     else
         auraIconFrame:SetWidth(profile.aura_width)
+		auraIconFrame.Icon:SetWidth (profile.aura_width-2)
     end
 
     if (ghostAurasSettings.height ~= 0) then
         auraIconFrame:SetHeight(ghostAurasSettings.height)
+		auraIconFrame.Icon:SetHeight(ghostAurasSettings.height-2)
     else
         auraIconFrame:SetHeight(profile.aura_height)
+		auraIconFrame.Icon:SetHeight(profile.aura_height-2)
     end
 
     auraIconFrame:SetAlpha(ghostAurasSettings.alpha)
@@ -250,9 +254,9 @@ function Plater.Auras.BuildGhostAurasOptionsTab(frame)
 
     --image showing ghost aura example
     ghostAuraFrame.ExampleImageDesc = DF:CreateLabel (ghostAuraFrame, "Ghost auras look like this:", 14)
-    ghostAuraFrame.ExampleImageDesc:SetPoint (325, -220)
+    ghostAuraFrame.ExampleImageDesc:SetPoint (325, -240)
     ghostAuraFrame.ExampleImage = DF:CreateImage (ghostAuraFrame, [[Interface\AddOns\Plater\images\ghostauras_example]], 256*0.8, 128*0.8)
-    ghostAuraFrame.ExampleImage:SetPoint (325, -234)
+    ghostAuraFrame.ExampleImage:SetPoint (325, -254)
     ghostAuraFrame.ExampleImage:SetAlpha (.834)
 
     local optionsTable = {

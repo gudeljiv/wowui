@@ -2,14 +2,24 @@ local L = LibStub("AceLocale-3.0"):GetLocale("ClassicCastbars")
 local TestMode = CreateFrame("Frame", "ClassicCastbars_TestMode")
 TestMode.isTesting = {}
 
+local GetSpellName = C_Spell and C_Spell.GetSpellName or _G.GetSpellInfo
+local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or _G.GetSpellTexture
+
 local dummySpellData = {
-    spellName = GetSpellInfo(118),
+    spellName = GetSpellName(118),
     icon = GetSpellTexture(118),
-    maxValue = 10.0,
-    timeStart = GetTime(),
-    endTime = GetTime() + 10.0,
+    spellID = 118,
+    maxValue = 10,
+    value = 5,
     isChanneled = false,
+    isActiveCast = true,
+    castID = nil,
 }
+
+local isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+local CastingBarFrame = isRetail and _G.PlayerCastingBarFrame or _G.CastingBarFrame
+
+-- Note: don't add any major code reworks here, this codebase will soon be replaced with the player-castbar-v2 branch
 
 -- Credits to stako & zork for this
 -- https://www.wowinterface.com/forums/showthread.php?t=41819
@@ -30,26 +40,38 @@ end
 
 local function OnDragStop(self)
     self:StopMovingOrSizing()
-
-    local unit = self.unitID
-    if strfind(unit, "nameplate") then
-        unit = "nameplate" -- make it match our DB key
-    elseif strfind(unit, "arena") then
-        unit = "arena"
-    elseif strfind(unit, "party") then
-        unit = "party"
-    end
+    if not self.unitID then return end
 
     -- Frame loses relativity to parent and is instead relative to UIParent after
     -- dragging so we can't just use self:GetPoint() here
+    local unit = ClassicCastbars:GetUnitType(self.unitID)
     local x, y = CalcScreenGetPoint(self)
-    ClassicCastbars.db[unit].position = { "CENTER", x, y }  -- has to be center for CalcScreenGetPoint to work
+    ClassicCastbars.db[unit].position = { "CENTER", x, y } -- Has to be center for CalcScreenGetPoint to work
     ClassicCastbars.db[unit].autoPosition = false
 
     -- Reanchor from UIParent back to parent frame
-    self:SetParent(self.parent)
     self:ClearAllPoints()
+    self:SetParent(self.parent)
     self:SetPoint("CENTER", self.parent, x, y)
+end
+
+function TestMode:ToggleArenaContainer(showFlag)
+    if EditModeManagerFrame and EditModeManagerFrame.AccountSettings then -- Dragonflight UI
+        EditModeManagerFrame.AccountSettings:SetArenaFramesShown(showFlag)
+        EditModeManagerFrame.AccountSettings:RefreshArenaFrames()
+    elseif ArenaEnemyFrames then
+        ArenaEnemyFrames:SetShown(showFlag)
+    end
+end
+
+function TestMode:TogglePartyContainer(showFlag)
+    if EditModeManagerFrame and EditModeManagerFrame.AccountSettings then -- Dragonflight UI
+        if showFlag then
+            ShowUIPanel(EditModeManagerFrame)
+        else
+            HideUIPanel(EditModeManagerFrame)
+        end
+    end
 end
 
 function TestMode:OnOptionChanged(unitID)
@@ -67,8 +89,12 @@ function TestMode:OnOptionChanged(unitID)
 
     -- Immediately update castbar display after changing an option
     local castbar = ClassicCastbars.activeFrames[unitID]
-    if castbar and castbar.isTesting then
-        castbar._data = CopyTable(dummySpellData)
+    if castbar and castbar:IsVisible() then
+        if castbar.isTesting then
+            for key, value in pairs(dummySpellData) do
+                castbar[key] = value
+            end
+        end
         ClassicCastbars:DisplayCastbar(castbar, unitID)
     end
 end
@@ -89,14 +115,14 @@ function TestMode:ToggleCastbarMovable(unitID)
     if self.isTesting[unitID] then
         self:SetCastbarImmovable(unitID)
         self.isTesting[unitID] = false
-        if unitID == "nameplate-testmode" then
-            self:UnregisterEvent("PLAYER_TARGET_CHANGED")
-        end
+        --if unitID == "nameplate-testmode" then
+            --self:UnregisterEvent("PLAYER_TARGET_CHANGED")
+        --end
     else
         if self:SetCastbarMovable(unitID) then
             self.isTesting[unitID] = true
 
-            if ClassicCastbars.db.nameplate.enabled and unitID == "nameplate-testmode" then
+            if (ClassicCastbars.db.nameplate.enabled and unitID == "nameplate-testmode") or (ClassicCastbars.db.target.enabled and unitID == "target") then
                 self:RegisterEvent("PLAYER_TARGET_CHANGED")
             end
         end
@@ -106,14 +132,16 @@ end
 function TestMode:SetCastbarMovable(unitID, parent)
     local parentFrame = parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
     if not parentFrame then
-        if unitID == "target" or unitID == "nameplate-testmode" or unitID == "focus" then
+        if unitID == "target" or unitID == "focus" then
             print(format("|cFFFF0000[ClassicCastbars] %s|r", _G.ERR_GENERIC_NO_TARGET)) -- luacheck: ignore
+        elseif unitID == "nameplate-testmode" then
+            print(format("|cFFFF0000[ClassicCastbars] %s|r", L.NO_NAMEPLATE_VISIBLE)) -- luacheck: ignore
         end
         return false
     end
 
-    local castbar = ClassicCastbars:GetCastbarFrame(unitID)
-    if unitID ~= "nameplate-testmode" then -- Blizzard broke drag functionality for frames that are anchored to restricted frames in TBC :(
+    local castbar = unitID == "player" and CastingBarFrame or ClassicCastbars:GetCastbarFrame(unitID)
+    if unitID ~= "nameplate-testmode" then -- Blizzard broke drag functionality for frames that are anchored to restricted frames :(
         castbar:SetMovable(true)
         castbar:SetClampedToScreen(true)
         castbar:EnableMouse(true)
@@ -128,25 +156,30 @@ function TestMode:SetCastbarMovable(unitID, parent)
         castbar:SetScript("OnMouseUp", OnDragStop)
     end
 
-    castbar._data = CopyTable(dummySpellData) -- Set test data for :DisplayCastbar()
+    -- Set test data for :DisplayCastbar()
+    for key, value in pairs(dummySpellData) do
+        castbar[key] = value
+    end
     castbar.parent = parentFrame
     castbar.unitID = unitID
     castbar.isTesting = true
 
-    local maxValue = castbar._data.maxValue
-    castbar:SetMinMaxValues(1, maxValue)
-    castbar:SetValue(maxValue / 2)
-    castbar.Timer:SetFormattedText("%.1f", maxValue / 2)
-    castbar.Spark:SetPoint("CENTER", castbar, "LEFT", (((maxValue / 2) / maxValue) * castbar:GetWidth()) - 6, 0)
+    castbar:SetMinMaxValues(0, castbar.maxValue)
+    castbar:SetValue(castbar.value)
+    castbar.Timer:SetFormattedText("%.1f", castbar.isChanneled and castbar.value or not castbar.isChanneled and castbar.maxValue - castbar.value)
+
+    local sparkPosition = (castbar.value / castbar.maxValue) * (castbar.currWidth or castbar:GetWidth())
+    castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, castbar.BorderShield:IsShown() and 3 or 0)
 
     if IsModifierKeyDown() or (IsMetaKeyDown and IsMetaKeyDown()) then
-        castbar._data.isUninterruptible = true
+        castbar.isUninterruptible = true
     else
-        castbar._data.isUninterruptible = false
+        castbar.isUninterruptible = false
     end
 
     if unitID == "party-testmode" or unitID == "arena-testmode" then
-        if unitID == "arena-testmode" and ArenaEnemyFrames then ArenaEnemyFrames:Show() end
+        if unitID == "arena-testmode" then TestMode:ToggleArenaContainer(true) end
+        if unitID == "party-testmode" then TestMode:TogglePartyContainer(true) end
         parentFrame:SetAlpha(1)
         parentFrame:Show()
     end
@@ -156,15 +189,18 @@ function TestMode:SetCastbarMovable(unitID, parent)
         castbar.Icon:SetTexture(dummySpellData.icon)
         castbar.Flash:SetAlpha(0)
         castbar.casting = nil
-		castbar.channeling = nil
-		castbar.holdTime = 0
+        castbar.channeling = nil
+        castbar.holdTime = 0
         castbar.fadeOut = nil
         castbar.flash = nil
+        castbar.playCastFX = false
 
         if IsModifierKeyDown() or (IsMetaKeyDown and IsMetaKeyDown()) then
-            castbar:SetStatusBarColor(castbar.nonInterruptibleColor:GetRGB())
+            --castbar:SetStatusBarColor(castbar.nonInterruptibleColor:GetRGB())
+            castbar:SetStatusBarColor(unpack(ClassicCastbars.db.player.statusColorUninterruptible))
         else
-            castbar:SetStatusBarColor(castbar.startCastColor:GetRGB())
+            --castbar:SetStatusBarColor(castbar.startCastColor:GetRGB())
+            castbar:SetStatusBarColor(unpack(ClassicCastbars.db.player.statusColor))
         end
 
         castbar:SetAlpha(1)
@@ -177,27 +213,31 @@ function TestMode:SetCastbarMovable(unitID, parent)
 end
 
 function TestMode:SetCastbarImmovable(unitID)
-    local castbar = ClassicCastbars:GetCastbarFrame(unitID)
+    local castbar = unitID == "player" and CastingBarFrame or ClassicCastbars:GetCastbarFrame(unitID)
     castbar:Hide()
     if castbar.tooltip then
         castbar.tooltip:Hide()
     end
 
+    castbar.isActiveCast = false
     castbar.unitID = nil
     castbar.parent = nil
-    castbar.isTesting = nil
+    castbar.isTesting = false
     castbar.holdTime = 0
     castbar:EnableMouse(false)
 
     if unitID == "party-testmode" then
         local parentFrame = castbar.parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
-        if parentFrame and not UnitExists("party1") then
-            parentFrame:Hide()
+        if parentFrame then
+            TestMode:TogglePartyContainer(false)
+            if not UnitExists("party1") then
+                parentFrame:Hide()
+            end
         end
     elseif unitID == "arena-testmode" then
         local parentFrame = castbar.parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
         if parentFrame and not UnitExists("arena1") then
-            if ArenaEnemyFrames then ArenaEnemyFrames:Hide() end
+            TestMode:ToggleArenaContainer(false)
             parentFrame:Hide()
         end
     end
@@ -223,12 +263,13 @@ TestMode:SetScript("OnEvent", function(self)
     if self.isTesting["nameplate-testmode"] then
         C_Timer.After(0.2, TestMode.ReanchorOnNameplateTargetSwitch)
     end
-end)
 
-if date("%d.%m") == "01.04" then -- April Fools :)
-    C_Timer.After(1800, function()
-        if not UnitIsDeadOrGhost("player") and not IsInRaid() then
-            DoEmote(math.random(0, 1) == 1 and "fart" or "nosepick")
+    if self.isTesting["target"] and ClassicCastbars.db.target.enabled then
+        local anchor = ClassicCastbars.AnchorManager:GetAnchor("target")
+        if anchor then
+            TestMode:SetCastbarMovable("target", anchor)
+        else
+            TestMode:SetCastbarImmovable("target")
         end
-    end)
-end
+    end
+end)

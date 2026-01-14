@@ -1,29 +1,33 @@
 ---@type QuestieMap
 local QuestieMap = QuestieLoader:ImportModule("QuestieMap");
-QuestieMap.utils = {};
+---@class QuestieMapUtils
+QuestieMap.utils = QuestieMap.utils or {}
 
 ---@type QuestieLib
 local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
 
-local HBD = LibStub("HereBeDragonsQuestie-2.0")
-
 local ZOOM_MODIFIER = 1;
 
 -- All the speed we can get is worth it.
-local tinsert = table.insert
 local pairs = pairs
 
+---@param frame IconFrame
 function QuestieMap.utils:SetDrawOrder(frame)
-    -- This is all fixes to always be on top of HandyNotes notes Let the frame level wars begin.
-    -- HandyNotes uses GetFrameLevel + 6, so we use +7
+    -- We need to add 2015, because of the regular WorldMapFrame.ScrollContainer which seems to start at 2000
     if frame.miniMapIcon then
-        local frameLevel = Minimap:GetFrameLevel() + 7
+        local frameLevel = Minimap:GetFrameLevel() + 2015
+        if frame.isManualIcon then
+            frameLevel = frameLevel - 1 -- This is to make sure that manual icons are always below other icons
+        end
         local frameStrata = Minimap:GetFrameStrata()
         frame:SetParent(Minimap)
         frame:SetFrameStrata(frameStrata)
         frame:SetFrameLevel(frameLevel)
     else
-        local frameLevel = WorldMapFrame:GetFrameLevel() + 7
+        local frameLevel = WorldMapFrame:GetFrameLevel() + 2015
+        if frame.isManualIcon then
+            frameLevel = frameLevel - 1 -- This is to make sure that manual icons are always below other icons
+        end
         local frameStrata = WorldMapFrame:GetFrameStrata()
         frame:SetParent(WorldMapFrame)
         frame:SetFrameStrata(frameStrata)
@@ -31,12 +35,25 @@ function QuestieMap.utils:SetDrawOrder(frame)
     end
 
     -- Draw layer is between -8 and 7, please leave some number above so we don't paint ourselves into a corner...
+    -- These are sorted by order of most common occurrence to reduce if checks; it's less readable but more performant with so many icons
     if frame.data then
-        if frame.data.Icon == ICON_TYPE_REPEATABLE then
-            frame.texture:SetDrawLayer("OVERLAY", 4)
-        elseif frame.data.Icon == ICON_TYPE_AVAILABLE then
+        if frame.data.Icon == Questie.ICON_TYPE_AVAILABLE then
             frame.texture:SetDrawLayer("OVERLAY", 5)
-        elseif frame.data.Icon == ICON_TYPE_COMPLETE then
+        elseif frame.data.Icon == Questie.ICON_TYPE_REPEATABLE then
+            frame.texture:SetDrawLayer("OVERLAY", 4)
+        elseif frame.data.Icon == Questie.ICON_TYPE_EVENTQUEST then
+            frame.texture:SetDrawLayer("OVERLAY", 4)
+        elseif frame.data.Icon == Questie.ICON_TYPE_PVPQUEST then
+            frame.texture:SetDrawLayer("OVERLAY", 4)
+        elseif frame.data.Icon == Questie.ICON_TYPE_COMPLETE then
+            frame.texture:SetDrawLayer("OVERLAY", 6)
+        elseif frame.data.Icon == Questie.ICON_TYPE_REPEATABLE_COMPLETE then
+            frame.texture:SetDrawLayer("OVERLAY", 6)
+        elseif frame.data.Icon == Questie.ICON_TYPE_EVENTQUEST_COMPLETE then
+            frame.texture:SetDrawLayer("OVERLAY", 6)
+        elseif frame.data.Icon == Questie.ICON_TYPE_PVPQUEST_COMPLETE then
+            frame.texture:SetDrawLayer("OVERLAY", 6)
+        elseif frame.data.Icon == Questie.ICON_TYPE_SODRUNE then
             frame.texture:SetDrawLayer("OVERLAY", 6)
         else
             frame.texture:SetDrawLayer("OVERLAY", 0)
@@ -70,6 +87,12 @@ function QuestieMap.utils:CalcHotzones(points, rangeR, count)
 
     local hotzones = {}
     local pointsCount = #points
+    if rangeR <= 1 then
+        for j=1, pointsCount do
+            hotzones[j] = { points[j] }
+        end
+        return hotzones
+    end
 
     if pointsCount == 1 then
         -- This is execution shortcut to skip loop in case table size == 1
@@ -90,7 +113,7 @@ function QuestieMap.utils:CalcHotzones(points, rangeR, count)
 
     for j=1, pointsCount do
         local point = points[j]
-        if(point.touched == nil) then
+        if not point.touched then
             point.touched = true
             local notes = { point }
 
@@ -100,13 +123,15 @@ function QuestieMap.utils:CalcHotzones(points, rangeR, count)
                 movingRange = movingRange * (point.distance/1000);
             end
 
-            local aX, aY = point.worldX, point.worldY
+            local aX, aY, aUiMapID = point.worldX, point.worldY, point.UiMapID
 
             for i=j+1, pointsCount do
                 local point2 = points[i]
                 --We only want to cluster icons that are on the same map.
-                if (point2.touched == nil) and (point.UiMapID == point2.UiMapID) then
-                    local distance = QuestieLib:Euclid(aX, aY, point2.worldX, point2.worldY)
+                if (not point2.touched) and (aUiMapID == point2.UiMapID)
+                    -- Do not cluster icons if they have no coordinates
+                    and aX ~= 0 and aY ~= 0 and point2.worldX ~= 0 and point2.worldY ~= 0 then
+                    local distance = QuestieLib.Euclid(aX, aY, point2.worldX, point2.worldY)
                     if (distance < movingRange) then
                         point2.touched = true
                         notes[#notes+1] = point2
@@ -122,11 +147,7 @@ end
 function QuestieMap.utils:IsExplored(uiMapId, x, y)
     local IsExplored = false
     if uiMapId then
-        local exploredAreaIDs =
-            C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapId,
-                                                              CreateVector2D(
-                                                                  x / 100,
-                                                                  y / 100))
+        local exploredAreaIDs = C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapId, CreateVector2D(x / 100, y / 100))
         if exploredAreaIDs then
             IsExplored = true -- Explored
         elseif (uiMapId == 1453) then
@@ -161,8 +182,10 @@ end
 
 --- Rescale a single icon
 ---@param frameRef string|IconFrame @The global name/iconRef of the icon frame, e.g. "QuestieFrame1"
-function QuestieMap.utils:RescaleIcon(frameRef)
+---@param mapScale number? @Scale value for the final size of the Icon
+function QuestieMap.utils:RescaleIcon(frameRef, mapScale)
     local frame = frameRef;
+    local iconScale = mapScale or 1
     if type(frameRef) == "string" then
         frame = _G[frameRef];
     end
@@ -171,9 +194,13 @@ function QuestieMap.utils:RescaleIcon(frameRef)
             frame.data.IconScale = frame.data:GetIconScale();
             local scale
             if frame.miniMapIcon then
-                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalMiniMapScale or 0.7);
+                -- Use globalMiniMapTownsfolkScale for townsfolk icons, globalMiniMapScale for quest icons
+                local scaleProfile = frame.isManualIcon and Questie.db.profile.globalMiniMapTownsfolkScale or Questie.db.profile.globalMiniMapScale
+                scale = 16 * (frame.data.IconScale or 1) * (scaleProfile or 0.7);
             else
-                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalScale or 0.7);
+                --? If you ever chanage this logic, make sure you change the logic in QuestieMap:ProcessQueue() too!
+                local scaleProfile = frame.isManualIcon and Questie.db.profile.globalTownsfolkScale or Questie.db.profile.globalScale
+                scale = (16 * (frame.data.IconScale or 1) * (scaleProfile or 0.7)) * iconScale;
             end
 
             if scale > 1 then

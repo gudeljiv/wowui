@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -64,6 +64,7 @@ end
 TMW.IE:RegisterRapidSetting("Duration")
 TMW.IE:RegisterRapidSetting("Magnitude")
 TMW.IE:RegisterRapidSetting("Period")
+TMW.IE:RegisterRapidSetting("Speed")
 TMW.IE:RegisterRapidSetting("Thickness")
 TMW.IE:RegisterRapidSetting("Size_anim")
 TMW.IE:RegisterRapidSetting("Scale")

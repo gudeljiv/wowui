@@ -25,6 +25,7 @@ EavesDropDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Vermins - Stitches"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Vermins - Stonespine"] = "Default",
 		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
@@ -53,14 +54,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["NUMLINES"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Mxyz - Golemagg"] = {
 			["LINEWIDTH"] = 130,
@@ -72,14 +73,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -144,6 +145,19 @@ EavesDropDB = {
 		},
 		["Mxys - Golemagg"] = {
 		},
+		["Vermins - Stitches"] = {
+			["y"] = 101.5998051200586,
+			["x"] = -680.0004749257243,
+			["LINEWIDTH"] = 140,
+			["TEXTSIZE"] = 10,
+			["NUMLINES"] = 14,
+			["BLACKLIST"] = {
+				["version"] = "v2",
+				["spells"] = {
+				},
+			},
+			["LINEHEIGHT"] = 16,
+		},
 		["Spija - Genesis"] = {
 		},
 		["Vermins - Stonespine"] = {
@@ -163,23 +177,36 @@ EavesDropDB = {
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Default"] = {
-			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
-				["b"] = 0.607843137254902,
 			},
-			["y"] = 236.195578993564,
-			["x"] = 551.714104134467,
-			["FRAME"] = {
-				["a"] = 0.4,
+			["LINEWIDTH"] = 180,
+			["x"] = -680.711692675487,
+			["BLACKLIST"] = {
+				["version"] = "v2",
+				["spells"] = {
+				},
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
+			["LABELC"] = {
+				["a"] = 0,
+			},
+			["TEXTSIZE"] = 12,
+			["LOCKED"] = true,
+			["REP"] = false,
+			["NUMLINES"] = 20,
+			["FADETIME"] = 5,
 			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 14,
+			["HIDETAB"] = true,
+			["EXP"] = false,
+			["FADEFRAME"] = true,
+			["FONTOUTLINE"] = "None",
+			["COMBAT"] = false,
+			["FRAME"] = {
+				["a"] = 0,
+			},
+			["y"] = 115.4667094759716,
+			["HONOR"] = false,
 		},
 		["Judawise - Golemagg"] = {
 		},

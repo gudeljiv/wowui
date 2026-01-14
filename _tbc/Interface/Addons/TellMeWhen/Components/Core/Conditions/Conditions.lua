@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -31,7 +31,6 @@ local NONE = NONE
 local _G = _G
 local print = TMW.print
 local get = TMW.get
-local clientVersion = select(4, GetBuildInfo())
 local strlowerCache = TMW.strlowerCache
 local isNumber = TMW.isNumber
 local huge = math.huge
@@ -88,7 +87,7 @@ CNDT.Condition_Defaults = {
 		Checked			= false,
 		Checked2		= false,
 
-		-- Runes 		= {}, -- Deprecated
+		Runes 		    = GetRuneType and {} or nil,
 
 		-- IMPORTANT: This setting can be a number OR a table.
 		BitFlags		= 0x0, -- may also be a table.
@@ -181,7 +180,7 @@ TMW:RegisterUpgrade(60026, {
 
 		for _, stanceData in ipairs(self.stances) do
 			if stanceData.class == pclass then
-				local stanceName = GetSpellInfo(stanceData.id)
+				local stanceName = TMW.GetSpellInfo(stanceData.id)
 				tinsert(self.CSN, stanceName)
 			end
 		end
@@ -540,6 +539,7 @@ CNDT.Env = {
 	TMW = TMW,
 	GCDSpell = TMW.GCDSpell,
 	GUIDToOwner = TMW.GUIDToOwner,
+	issecretvalue = TMW.issecretvalue,
 	
 	SemicolonConcatCache = setmetatable(
 	{}, {
@@ -614,7 +614,6 @@ local function strWrap(string)
 	end
 end
 
-Env.ItemRefs = {}
 function CNDT:GetItemRefForConditionChecker(name)
 	local item = TMW:GetItems(name)[1]
 
@@ -622,9 +621,7 @@ function CNDT:GetItemRefForConditionChecker(name)
 		item = TMW:GetNullRefItem()
 	end
 
-	Env.ItemRefs[name] = item
-
-	return "ItemRefs[" .. strWrap(name) .. "]"
+	return CNDT:GetTableSubstitution(item, "Item")
 end
 
 
@@ -636,19 +633,25 @@ function CNDT:GetUnit(setting)
 end
 
 
-function CNDT:GetTableSubstitution(tbl)
-	TMW:ValidateType("CNDT:GetTableSubstitution(tbl)", "tbl", tbl, "table")
+local tableVarMap = {}
+local tableIdx = 1
+-- actually pointless for keys to be GCable because the values are never evicted from Env, but ¯\_(ツ)_/¯
+setmetatable(tableVarMap, { __mode="k" }) 
 
-	-- We used to check the format of the address explicitly,
-	-- but ticket 1076 demonstrates that sometimes it can be in the format
-	-- "table: 0000000312EBEB0" (the format I get), or "table: 0x1ba1bbb00" (from the ticket)
-	-- so instead we just check that the metatable exists.
-	local address = tostring(tbl)
-	if TMW.approachTable(tbl, getmetatable, "__tostring") then
-		error("can't substitute tables with __tostring metamethods: " .. address)
+--- Add the specified table as a variable to CNDT.Env so that var can be used in funcstrs.
+-- @param the table to variablize.
+-- @param suffix An optional suffix useful for debugging and for the variable substitution process
+function CNDT:GetTableSubstitution(tbl, suffix)
+	if tableVarMap[tbl] then
+		return tableVarMap[tbl]
 	end
 
-	local var = address:gsub(":", "_"):gsub(" ", "")
+	TMW:ValidateType(1, "CNDT:GetTableSubstitution(tbl[, suffix])", tbl, "table")
+	TMW:ValidateType(2, "CNDT:GetTableSubstitution(tbl[, suffix])", suffix, "string;nil")
+
+	local var = "table_" .. tableIdx .. (suffix and ("_" .. suffix) or "")
+	tableVarMap[tbl] = var
+	tableIdx = tableIdx + 1
 	CNDT.Env[var] = tbl
 
 	return var
@@ -713,7 +716,7 @@ CNDT.Substitutions = {
 		TMW:ValidateType("c.BitFlags", conditionData.identifier, conditionSettings.BitFlags, "table;number")
 
 		if type(conditionSettings.BitFlags) == "table" then
-			return CNDT:GetTableSubstitution(conditionSettings.BitFlags)
+			return CNDT:GetTableSubstitution(conditionSettings.BitFlags, "BitFlags")
 		elseif type(conditionSettings.BitFlags) == "number" then
 			return conditionSettings.BitFlags
 		end
@@ -729,31 +732,20 @@ CNDT.Substitutions = {
 		end
 	end,
 },
-{	src = "MULTINAMECHECK(%b())",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return [[ (not not strfind(c.Name, SemicolonConcatCache[%1])) ]]
-	end,
-},
 
 {	src = "c.Level",
 	rep = function(conditionData, conditionSettings, name, name2)
-		TMW:ValidateType("c.Level", conditionData.identifier, conditionSettings.Level, "number")
-
 		return conditionData.percent and conditionSettings.Level/100 or conditionSettings.Level
-	end,
-},{
-	src = "c.Checked",
-	rep = function(conditionData, conditionSettings, name, name2)
-		TMW:ValidateType("c.Checked", conditionData.identifier, conditionSettings.Checked, "boolean")
-
-		return tostring(conditionSettings.Checked)
 	end,
 },{
 	src = "c.Checked2",
 	rep = function(conditionData, conditionSettings, name, name2)
-		TMW:ValidateType("c.Checked2", conditionData.identifier, conditionSettings.Checked2, "boolean")
-
 		return tostring(conditionSettings.Checked2)
+	end,
+},{
+	src = "c.Checked",
+	rep = function(conditionData, conditionSettings, name, name2)
+		return tostring(conditionSettings.Checked)
 	end,
 },{
 	src = "c.Operator",
@@ -769,18 +761,10 @@ CNDT.Substitutions = {
 
 {
 	src = "c.NameFirst2",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return strWrap(TMW:GetSpells(name2).First)
-
-	end,
+	rep = "error('Condition sub c.NameFirst2 is obsolete. Use c.Spells2.FirstString')",
 },{
 	src = "c.NameString2",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return strWrap(TMW:GetSpells(name2).FirstString)
-	end,
-},{
-	src = "c.ItemID2",
-	rep = "error('Condition sub c.ItemID is obsolete')",
+	rep = "error('Condition sub c.NameString2 is obsolete. Use c.Spells2.FirstString')",
 },{
 	src = "c.Name2Raw",
 	rep = function(conditionData, conditionSettings, name, name2)
@@ -795,22 +779,16 @@ CNDT.Substitutions = {
 
 {
 	src = "c.NameFirst",
+	-- deprecated (for c.Spells.First), but not removed because it is definitely used externally (TMW_ST)
 	rep = function(conditionData, conditionSettings, name, name2)
 		return strWrap(TMW:GetSpells(name).First)
 	end,
 },{
-	src = "c.NameStrings",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return strWrap(";" .. table.concat(TMW:GetSpells(name).StringArray, ";") .. ";")
-	end,
-},{
 	src = "c.NameString",
+	-- deprecated (for c.Spells.FirstString), but not removed because it may be used externally
 	rep = function(conditionData, conditionSettings, name, name2)
 		return strWrap(TMW:GetSpells(name).FirstString)
 	end,
-},{
-	src = "c.ItemID",
-	rep = "error('Condition sub c.ItemID is obsolete')",
 },{
 	src = "c.NameRaw",
 	rep = function(conditionData, conditionSettings, name, name2)
@@ -821,54 +799,64 @@ CNDT.Substitutions = {
 	rep = function(conditionData, conditionSettings, name, name2)
 		return strWrap(name)
 	end,
-},{
-	src = "c.Spells",
+},
+
+{
+	src = "c%.Spells(2?)(%.?[A-Za-z]*)",
 	rep = function(conditionData, conditionSettings, name, name2)
-		return CNDT:GetTableSubstitution(TMW:GetSpells(name))
+		return function(two, suffix)
+			local input = two == "2" and name2 or name
+			local spells = TMW:GetSpells(input)
+			if suffix:sub(1,1) == "." then
+				suffix = suffix:trim(".")
+				local subItem = spells[suffix]
+				if subItem then
+					if type(subItem) == "table" then
+						return CNDT:GetTableSubstitution(subItem, "Spells_" .. suffix)
+					else
+						return strWrap(subItem)
+					end
+				end
+			end
+			return CNDT:GetTableSubstitution(spells, "Spells")
+		end
+	end,
+},
+{
+	src = "c%.OwnSpells(2?)(%.?[A-Za-z]*)",
+	rep = function(conditionData, conditionSettings, name, name2)
+		return function(two, suffix)
+			local input = two == "2" and name2 or name
+			local spells = TMW:GetSpells(input, true)
+			if suffix:sub(1,1) == "." then
+				suffix = suffix:trim(".")
+				local subItem = spells[suffix]
+				if subItem then
+					if type(subItem) == "table" then
+						return CNDT:GetTableSubstitution(subItem, "Spells_" .. suffix)
+					else
+						return strWrap(subItem)
+					end
+				end
+			end
+			return CNDT:GetTableSubstitution(spells, "Spells")
+		end
 	end,
 },
 
 {
-	src = "c.True",
-	rep = 	function(conditionData, conditionSettings, name, name2)
-		return tostring(conditionSettings.Level == 0)
-	end,
-},{
-	src = "c.False",
+	src = "c.Units",
 	rep = function(conditionData, conditionSettings, name, name2)
-		return tostring(conditionSettings.Level == 1)
-	end,
-},{
-	src = "c.1nil",
-	rep = function(conditionData, conditionSettings, name, name2)
-		return conditionSettings.Level == 0 and 1 or "nil"
-	end,
-},{
-	src = "c.nil1",
-	rep = function(conditionData, conditionSettings, name, name2)
-		-- reverse 1nil
-		return conditionSettings.Level == 1 and 1 or "nil"
+		return CNDT:GetTableSubstitution(TMW:GetUnits(nil, conditionSettings.Unit), "Units")
 	end,
 },
-
 {
-	src = "c.GCDReplacedNameFirst2",
+	src = "c%.Unit(2?)",
 	rep = function(conditionData, conditionSettings, name, name2)
-
-		local name = TMW:GetSpells(name2).First
-		if name == "gcd" then
-			name = TMW.GCDSpell
+		return function(two)
+			local unit = two == "2" and conditionSettings.Name or conditionSettings.Unit
+			return CNDT:GetConditionUnitSubstitution(unit)
 		end
-		return strWrap(name)
-	end,
-},{
-	src = "c.GCDReplacedNameFirst",
-	rep = function(conditionData, conditionSettings, name, name2)
-		local name = TMW:GetSpells(name).First
-		if name == "gcd" then
-			name = TMW.GCDSpell
-		end
-		return strWrap(name)
 	end,
 },
 
@@ -894,7 +882,8 @@ CNDT.Substitutions = {
 {
 	src = "LOWER(%b())",
 	rep = function() return strlower end,
-},}
+},
+}
 
 local conditionNameSettingProcessedCache = setmetatable(
 {}, {
@@ -907,6 +896,7 @@ local conditionNameSettingProcessedCache = setmetatable(
 		name = ";" .. name .. ";"
 		name = gsub(name, ";;", ";")
 		name = strtrim(name)
+		name = strtrim(name, ";")
 		name = strlower(name)
 
 		t[i] = name
@@ -920,18 +910,22 @@ local conditionNameSettingProcessedCache = setmetatable(
 -- [INTERNAL]
 function CNDT:GetConditionUnitSubstitution(unit)
 
-	local translatedUnits, unitSet = TMW:GetUnits(nil, unit)
-	local firstOriginal = unitSet.originalUnits[1]
+	-- This unitset is a special non-updating unitset (arg3 = true) that we're using just to 
+	-- use unitset's logic about how it categorizes a particular unitid.
+	local idleUnitSet = TMW.UNITS:GetUnitSet(unit, nil, true)
+
+	local firstOriginal = idleUnitSet.originalUnits[1]
 	local substitution
-	if unitSet.hasSpecialUnitRefs then
+	if idleUnitSet.hasSpecialUnitRefs then
 		-- The unit is probably a special unit.
 		-- We will use the unit set to perform the translation
 		-- from the special unit to a real unit.
 		-- We have to have the " or <originalUnits[1]>" part
 		-- so that in case the special unit doesn't map to anything,
 		-- we won't be passing nil to functions that don't accept nil.
+		local translatedUnits = TMW:GetUnits(nil, unit)
 		substitution = 
-			CNDT:GetTableSubstitution(translatedUnits)
+			CNDT:GetTableSubstitution(translatedUnits, "Units")
 			.. "[1] or "
 			.. strWrap(firstOriginal)
 	else
@@ -946,23 +940,6 @@ end
 -- [INTERNAL]
 function CNDT:DoConditionSubstitutions(conditionData, conditionSettings, funcstr)
 	-- Substitutes all the c.XXXXX substitutions into a string.
-	
-	for _, append in TMW:Vararg("2", "") do -- Unit2 MUST be before Unit
-		if strfind(funcstr, "c.Unit" .. append) then
-			-- Use CNDT:GetUnit() first to grab only the first unit
-			-- in case the configured value is an expansion (like party1-4).
-			local unit
-			if append == "2" then
-				unit = CNDT:GetUnit(conditionSettings.Name)
-			elseif append == "" then
-				unit = CNDT:GetUnit(conditionSettings.Unit)
-			end
-			if unit then
-				funcstr = gsub(funcstr, "c.Unit" .. append,	CNDT:GetConditionUnitSubstitution(unit))
-			end
-		end
-	end
-
 	local name  = conditionNameSettingProcessedCache[conditionSettings.Name]
 	local name2 = conditionNameSettingProcessedCache[conditionSettings.Name2]
 
@@ -1126,6 +1103,7 @@ end
 -- @param conditionSettings [table] The condition settings that the ConditionObject will be created for.
 -- @return [ [[api/conditions/api-documentation/condition-object/|ConditionObject]]|nil] A [[api/conditions/api-documentation/condition-object/|ConditionObject]] instance (may be previously cached or may be a new instance), or nil if the conditions passed in were invalid.
 function CNDT:GetConditionObject(parent, conditionSettings)
+	CNDT:TryUpgradeSettings(conditionSettings)
 	local conditionString = CNDT:GetConditionCheckFunctionString(parent, conditionSettings)
 	
 	if conditionString and conditionString ~= "" then
@@ -1139,6 +1117,15 @@ function CNDT:GetConditionObject(parent, conditionSettings)
 	end
 end
 
+function CNDT:TryUpgradeSettings(Conditions)
+	for n, conditionSettings in TMW:InNLengthTable(Conditions) do
+		local Type = conditionSettings.Type
+		local conditionData = CNDT.ConditionsByType[Type]
+		if conditionData and conditionData.upgrade then
+			conditionData.upgrade(conditionSettings)
+		end
+	end
+end
 
 
 

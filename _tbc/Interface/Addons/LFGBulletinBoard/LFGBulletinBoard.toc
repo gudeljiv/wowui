@@ -1,20 +1,30 @@
-## Interface: 20502
+## Interface: 20505
 ## Title: LFG Bulletin Board
 ## Notes: Sort LFG/LFM Messages
-## Version: 2.61
-## Author: Vyscî-Whitemane
+## Version: 3.50
+## Author: Vyscî, Bigsxy
 ## DefaultState: enabled
 ## SavedVariables: GroupBulletinBoardDB
 ## SavedVariablesPerCharacter: GroupBulletinBoardDBChar
+## X-Curse-Project-ID: 484920
+## X-Wago-ID: aN0YWP6j
+
 LibGPIOptions.lua
 LibGPIMinimapButton.lua
 LibGPIToolBox.lua
 Chat.lua
 Localization.lua
-Dungeons.lua
+dungeons/api.lua
+dungeons/classic.lua
+dungeons/tbc.lua
+dungeons/cata.lua
+dungeons/mists.lua
+CustomCategories.lua
 Tags.lua
+Dungeons.lua
 RequestList.lua
 Options.lua
 GroupList.Lua
 GroupBulletinBoard.lua
 GroupBulletinBoard.xml
+LfgToolList.lua

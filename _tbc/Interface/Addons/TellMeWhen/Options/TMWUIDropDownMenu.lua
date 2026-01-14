@@ -1,6 +1,6 @@
 -- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -26,6 +26,10 @@ local DD = TMW:NewClass("Config_DropDownMenu_NoFrame"){
 
 	ForceScale = function(self, scale)
 		self.FORCE_SCALE = scale
+	end,
+
+	SetShowTime = function(self, showTime)
+		self.SHOW_TIME = showTime
 	end,
 	
 	SetFunction = function(self, func)
@@ -338,6 +342,7 @@ function DD:AddButton(info, level)
 	button.keepShownOnClick = info.keepShownOnClick;
 	button.tooltipTitle = info.tooltipTitle;
 	button.tooltipText = info.tooltipText;
+	button.tooltipFunc = info.tooltipFunc;
 	button.tooltipWrap = info.tooltipWrap;
 	button.arg1 = info.arg1;
 	button.arg2 = info.arg2;
@@ -740,8 +745,7 @@ function DD:GetScrollable()
 	return self.scrollable
 end
 
-
-WorldFrame:HookScript("OnMouseDown", function()
+TMW:RegisterCallback("TMW_WORLD_FRAME_MOUSE_DOWN", function()
 	DD:CloseDropDownMenus()
 end)
 
@@ -981,11 +985,10 @@ TMW:NewClass("Config_DropDownMenu_Icon", "Config_DropDownMenu"){
 
 			texture = TMW:GuessIconTexture(ics)
 			title = L["GROUPICON"]:format(TMW:GetGroupName(gs.Name, groupID, 1), iconID)
-
-			self.IconPreview.texture:SetTexture(tex)
 		else
-			desc = L["ICON_TOOLTIP2NEWSHORT"]
-			title = icon:GetIconName()
+			local text, textshort, tooltip = icon:GetIconMenuText()
+			title = textshort
+			desc = tooltip .. "\r\n\r\n" .. L["ICON_TOOLTIP2NEWSHORT"]
 			texture = icon and icon.attributes.texture
 		end
 

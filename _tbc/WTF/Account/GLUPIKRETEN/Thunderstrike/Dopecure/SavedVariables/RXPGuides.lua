@@ -1,0 +1,308 @@
+
+RXPCData = {
+["completedWaypoints"] = {
+},
+["currentStep"] = 1,
+["questObjectivesCache"] = {
+[0] = 16,
+[788] = {
+{
+["type"] = "monster",
+["numRequired"] = 10,
+["text"] = "Mottled Boar slain: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[789] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["text"] = "Scorpid Worker Tail: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[364] = {
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Mindless Zombie slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Wretched Zombie slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[790] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Sarkoth's Mangled Claw: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[380] = {
+{
+["type"] = "monster",
+["numRequired"] = 6,
+["text"] = "Young Night Web Spider slain: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Night Web Spider slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[4402] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["text"] = "Cactus Apple: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[381] = {
+{
+["type"] = "item",
+["numRequired"] = 12,
+["text"] = "Scarlet Armband: 0/12",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[6394] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Thazz'ril's Pick: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[5441] = {
+{
+["type"] = "monster",
+["numRequired"] = 5,
+["text"] = "Peons Awoken: 0/5",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[382] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Scarlet Crusade Documents: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[6395] = {
+{
+["type"] = "object",
+["numRequired"] = 1,
+["text"] = "Samuel's Remains Buried: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[376] = {
+{
+["type"] = "item",
+["numRequired"] = 6,
+["text"] = "Scavenger Paw: 0/6",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "item",
+["numRequired"] = 6,
+["text"] = "Duskbat Wing: 0/6",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[794] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Burning Blade Medallion: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[3901] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["text"] = "Rattlecage Skeleton slain: 0/12",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[3902] = {
+{
+["type"] = "item",
+["numRequired"] = 6,
+["text"] = "Scavenged Goods: 0/6",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[792] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["text"] = "Vile Familiar slain: 0/12",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+},
+["currentGuideGroup"] = "",
+["flightPaths"] = {
+},
+["questNameCache"] = {
+[4641] = "Your Place In The World",
+[363] = "Rude Awakening",
+[788] = "Cutting Teeth",
+[789] = "Sting of the Scorpid",
+[364] = "The Mindless Ones",
+[790] = "Sarkoth",
+[380] = "Night Web's Hollow",
+[4402] = "Galgar's Cactus Apple Surprise",
+[381] = "The Scarlet Crusade",
+[6394] = "Thazz'ril's Pick",
+[5441] = "Lazy Peons",
+[382] = "The Red Messenger",
+[6395] = "Marla's Last Wish",
+[376] = "The Damned",
+[794] = "Burning Blade Medallion",
+[3901] = "Rattling the Rattlecages",
+[3902] = "Scavenging Deathknell",
+[792] = "Vile Familiars",
+},
+["guideMetaData"] = {
+["enableGroupQuests"] = {
+},
+["professionGuides"] = {
+},
+["enabledProfessions"] = {
+["Horde"] = {
+},
+["Alliance"] = {
+},
+},
+["enabledDungeons"] = {
+["Horde"] = {
+},
+["Alliance"] = {
+},
+},
+["dungeonGuides"] = {
+},
+},
+["currentGuideName"] = "",
+["stepSkip"] = {
+},
+["discardPile"] = {
+[6948] = true,
+},
+["guideDisabled"] = {
+[0] = 0,
+},
+}
+RXPCTrackingData = {
+["profileKeys"] = {
+["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",
+},
+["profiles"] = {
+["Dopecure - Thunderstrike"] = {
+["levelsArchive"] = {
+["04889C6A"] = {
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 21,
+["day"] = 0,
+["month"] = 12,
+["weekday"] = 1,
+["year"] = 2025,
+["hour"] = 10,
+["minute"] = 37,
+},
+["started"] = 0,
+},
+["quests"] = {
+},
+},
+},
+},
+["levels"] = {
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 21,
+["day"] = 0,
+["month"] = 12,
+["weekday"] = 1,
+["year"] = 2025,
+["hour"] = 10,
+["minute"] = 37,
+},
+["started"] = 0,
+},
+["quests"] = {
+},
+},
+},
+["trackedGuid"] = "Player-6409-04889C6A",
+},
+},
+}
+RXPCComms = {
+["profileKeys"] = {
+["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",
+},
+["profiles"] = {
+["Dopecure - Thunderstrike"] = {
+},
+},
+}
+RXPCSettings = nil

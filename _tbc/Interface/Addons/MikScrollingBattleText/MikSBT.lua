@@ -94,7 +94,7 @@ end
 
 
 -- ****************************************************************************
--- Erases the passed table.  Subtables are NOT erased.
+-- Erases the passed table. Subtables are NOT erased.
 -- ****************************************************************************
 local function EraseTable(t)
 	-- Loop through all the keys in the table and clear it.
@@ -134,7 +134,7 @@ end
 local function GetSkillName(skillID)
 	local skillName = GetSpellInfo(skillID)
 	if (not skillName) then
-		-- Print("Skill ID " .. tostring(skillID) .. " has been removed by Blizzard.")
+		Print("Skill ID " .. tostring(skillID) .. " has been removed by Blizzard.")
 	end
 	return skillName or UNKNOWN
 end

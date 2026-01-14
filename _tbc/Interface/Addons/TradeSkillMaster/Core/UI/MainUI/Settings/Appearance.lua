@@ -4,16 +4,17 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Appearance = TSM.MainUI.Settings:NewPackage("Appearance")
-local L = TSM.Include("Locale").GetTable()
-local Color = TSM.Include("Util.Color")
-local Math = TSM.Include("Util.Math")
-local Log = TSM.Include("Util.Log")
-local Theme = TSM.Include("Util.Theme")
+local TSM = select(2, ...) ---@type TSM
+local Appearance = TSM.MainUI.Settings:NewPackage("Appearance") ---@type AddonPackage
+local L = TSM.Locale.GetTable()
+local Math = TSM.LibTSMUtil:Include("Lua.Math")
+local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
+local Log = TSM.LibTSMUtil:Include("Util.Log")
+local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
+local Theme = TSM.LibTSMService:Include("UI.Theme")
+local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
+local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local LibDBIcon = LibStub("LibDBIcon-1.0")
-local UIElements = TSM.Include("UI.UIElements")
-local Settings = TSM.Include("Service.Settings")
 local LibDeflate = LibStub("LibDeflate")
 local LibSerialize = LibStub("LibSerialize")
 local private = {
@@ -47,6 +48,9 @@ local THEME_KEY_LABELS = {
 	L["Active"],
 	L["Active Alt"],
 }
+local SETTING_TOOLTIPS = {
+	showTotalMoney = L["If eanbled, the gold amount in the top-right of TSM windows will be your total gold, rather than the gold on the current character."],
+}
 
 
 
@@ -54,10 +58,12 @@ local THEME_KEY_LABELS = {
 -- Module Functions
 -- ============================================================================
 
-function Appearance.OnInitialize()
-	private.settings = Settings.NewView()
+function Appearance.OnInitialize(settingsDB)
+	private.settings = settingsDB:NewView()
 		:AddKey("global", "appearanceOptions", "customColorSet")
-
+		:AddKey("global", "coreOptions", "minimapIcon")
+		:AddKey("global", "appearanceOptions", "taskListBackgroundLock")
+		:AddKey("global", "appearanceOptions", "showTotalMoney")
 	TSM.MainUI.Settings.RegisterSettingPage(L["Appearance"], "middle", private.GetSettingsFrame)
 end
 
@@ -68,7 +74,7 @@ end
 -- ============================================================================
 
 function private.GetSettingsFrame()
-	TSM.UI.AnalyticsRecordPathChange("main", "settings", "appearance")
+	UIUtils.AnalyticsRecordPathChange("main", "settings", "appearance")
 	local frame = UIElements.New("ScrollFrame", "generalSettings")
 		:SetPadding(8, 8, 8, 0)
 		:AddChild(TSM.MainUI.Settings.CreateExpandableSection("Appearance", "appearance", L["General Options"], L["Some general appearance options are below."])
@@ -80,7 +86,7 @@ function private.GetSettingsFrame()
 					:SetWidth("AUTO")
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetText(L["Hide minimap icon"])
-					:SetSettingInfo(TSM.db.global.coreOptions.minimapIcon, "hide")
+					:SetSettingInfo(private.settings.minimapIcon, "hide")
 					:SetScript("OnValueChanged", private.MinimapOnValueChanged)
 				)
 				:AddChild(UIElements.New("Spacer", "spacer"))
@@ -93,7 +99,7 @@ function private.GetSettingsFrame()
 					:SetWidth("AUTO")
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetText(L["Lock task list's background"])
-					:SetSettingInfo(TSM.db.global.appearanceOptions, "taskListBackgroundLock")
+					:SetSettingInfo(private.settings, "taskListBackgroundLock")
 					:SetScript("OnValueChanged", private.TaskListLockOnValueChanged)
 				)
 				:AddChild(UIElements.New("Spacer", "spacer"))
@@ -105,7 +111,8 @@ function private.GetSettingsFrame()
 					:SetWidth("AUTO")
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetText(L["Show total gold in header"])
-					:SetSettingInfo(TSM.db.global.appearanceOptions, "showTotalMoney")
+					:SetSettingInfo(private.settings, "showTotalMoney")
+					:SetTooltip(SETTING_TOOLTIPS.showTotalMoney)
 				)
 				:AddChild(UIElements.New("Spacer", "spacer"))
 			)
@@ -140,7 +147,7 @@ function private.GetSettingsFrame()
 				:SetWidth(24)
 				:SetMargin(8, 0, 0, 0)
 				:SetBackground("iconPack.18x18/Import")
-				:SetTooltip(L["Import theme"])
+				:SetTooltip(L["Import Theme"])
 				:SetScript("OnClick", private.ImportThemeBtnOnClick)
 			)
 		)
@@ -160,8 +167,8 @@ function private.CreateThemes(frame)
 			:SetSize(198, 140)
 			:SetPadding(0, 0, 12, 8)
 			:SetMargin(0, 12, 0, 8)
-			:SetBackgroundColor(Theme.GetColor("FRAME_BG", key), true)
-			:SetBorderColor(Theme.GetColor("ACTIVE_BG_ALT", key))
+			:SetRoundedBackgroundColor("FRAME_BG"..":"..key)
+			:SetBorderColor("ACTIVE_BG_ALT"..":"..key)
 			:SetContext(key)
 			:AddChild(UIElements.New("Frame", "top")
 				:SetLayout("HORIZONTAL")
@@ -170,34 +177,36 @@ function private.CreateThemes(frame)
 				:AddChild(UIElements.New("Frame", "left")
 					:SetSize(36, 36)
 					:SetMargin(0, 12, 0, 0)
-					:SetBackgroundColor(Theme.GetColor("ACTIVE_BG_ALT", key), true)
+					:SetRoundedBackgroundColor("ACTIVE_BG_ALT"..":"..key)
 				)
 				:AddChild(UIElements.New("Frame", "right")
 					:SetLayout("VERTICAL")
 					:AddChild(UIElements.New("Frame", "line1")
 						:SetHeight(12)
 						:SetMargin(0, 0, 0, 12)
-						:SetBackgroundColor(Theme.GetColor("ACTIVE_BG", key), true)
+						:SetRoundedBackgroundColor("ACTIVE_BG"..":"..key)
 					)
 					:AddChild(UIElements.New("Frame", "line2")
 						:SetHeight(12)
-						:SetBackgroundColor(Theme.GetColor("PRIMARY_BG_ALT", key), true)
+						:SetRoundedBackgroundColor("PRIMARY_BG_ALT"..":"..key)
 					)
 				)
 			)
 			:AddChild(UIElements.New("Frame", "line3")
 				:SetMargin(8, 8, 0, 12)
-				:SetBackgroundColor(Theme.GetColor("PRIMARY_BG", key), true)
+				:SetRoundedBackgroundColor("PRIMARY_BG"..":"..key)
 			)
 			:AddChild(UIElements.New("Texture", "divider")
 				:SetHeight(1)
-				:SetTexture(Theme.GetColor("ACTIVE_BG_ALT", key))
+				:SetColor("ACTIVE_BG_ALT"..":"..key)
 			)
-			:AddChild(UIElements.New("Toggle", "toggle")
+			:AddChild(UIElements.New("Checkbox", "checkbox")
 				:SetHeight(20)
 				:SetMargin(8, 0, 8, 0)
 				:SetFont("BODY_BODY2_MEDIUM")
-				:AddOption(name, isActive)
+				:SetTheme("RADIO")
+				:SetText(name)
+				:SetChecked(isActive)
 				:SetScript("OnValueChanged", private.ThemeButtonOnClick)
 			)
 			:AddChildNoLayout(UIElements.New("Button", "btn")
@@ -211,7 +220,7 @@ end
 
 function private.CreateCustomColors(frame)
 	for i, key in ipairs(THEME_KEYS) do
-		local color = TSM.UI.Util.GetCustomColor(key)
+		local colorThemeKey = TSM.UI.Util.GetCustomColorThemeKey(key)
 		frame:AddChild(UIElements.New("Frame", key)
 			:SetLayout("VERTICAL")
 			:AddChild(UIElements.New("Text", "label")
@@ -223,32 +232,32 @@ function private.CreateCustomColors(frame)
 				:SetLayout("HORIZONTAL")
 				:SetSize(200, 50)
 				:SetMargin(0, 12, 0, 8)
-				:SetBackgroundColor(Color.GetFullBlack(), true)
+				:SetRoundedBackgroundColor("FULL_BLACK")
 				:SetBorderColor("ACTIVE_BG_ALT")
 				:AddChild(UIElements.New("Frame", "color")
 					:SetWidth(50, 50)
 					:SetMouseEnabled(true)
-					:SetBackgroundColor(color, true)
+					:SetRoundedBackgroundColor(colorThemeKey)
 					:SetBorderColor("ACTIVE_BG_ALT")
 					-- draw a line along the right to hide the rounded corners at the bottom of the header frame
 					:AddChildNoLayout(UIElements.New("Texture", "mask")
 						:AddAnchor("TOPRIGHT", 0, -1)
 						:AddAnchor("BOTTOMRIGHT", 0, 1)
 						:SetWidth(8)
-						:SetTexture(color)
+						:SetColor(colorThemeKey)
 					)
 					:SetContext(key)
 					:SetScript("OnMouseUp", private.ColorOnMouseUp)
 				)
 				:AddChild(UIElements.New("Texture", "line")
 					:SetWidth(1)
-					:SetTexture("ACTIVE_BG_ALT")
+					:SetColor("ACTIVE_BG_ALT")
 				)
 				:AddChild(UIElements.New("EditableText", "text")
 					:SetMargin(8, 0, 8, 8)
 					:SetContext(i)
 					:SetFont("BODY_BODY1_BOLD")
-					:SetText(strupper(color:GetHexNoAlpha()))
+					:SetText(strupper(Theme.GetColor(colorThemeKey):GetHexNoAlpha()))
 					:SetScript("OnValueChanged", private.HexValueChanged)
 					:SetScript("OnEditingChanged", private.HexValueOnEditingChanged)
 				)
@@ -295,22 +304,15 @@ function private.ThemeButtonOnClick(buttonToggle)
 	local customKey = TSM.UI.Util.GetCustomColorSetKey()
 	if selectedKey ~= customKey and frame:HasChildById(customKey) then
 		-- remove the custom theme
-		local custom = frame:GetElement(customKey)
-		frame:RemoveChild(custom)
-		custom:Release()
+		frame:RemoveChild(frame:GetElement(customKey))
 	end
 	for _, key in ipairs(THEME_KEYS) do
 		private.frame:GetElement("custom."..key..".frame.text")
-			:SetText(strupper(Theme.GetColor(key, selectedKey):GetHexNoAlpha()))
+			:SetText(strupper(Theme.GetColor(key..":"..selectedKey):GetHexNoAlpha()))
 			:Draw()
 	end
-	for _, key, name, isActive in TSM.UI.Util.ColorSetIterator() do
-		local toggle = frame:GetElement(key..".toggle")
-		if isActive then
-			toggle:SetOption(name, true)
-		else
-			toggle:ClearOption(true)
-		end
+	for _, key, _, isActive in TSM.UI.Util.ColorSetIterator() do
+		frame:GetElement(key..".checkbox"):SetChecked(isActive, true)
 	end
 end
 
@@ -321,7 +323,7 @@ function private.ExportThemeBtnOnClick(button)
 		:SetSize(540, 250)
 		:SetPadding(12)
 		:AddAnchor("CENTER")
-		:SetBackgroundColor("FRAME_BG", true)
+		:SetRoundedBackgroundColor("FRAME_BG")
 		:SetMouseEnabled(true)
 		:AddChild(UIElements.New("Frame", "header")
 			:SetLayout("HORIZONTAL")
@@ -375,7 +377,7 @@ function private.ImportThemeBtnOnClick(button)
 		:SetSize(540, 250)
 		:SetPadding(12)
 		:AddAnchor("CENTER")
-		:SetBackgroundColor("FRAME_BG", true)
+		:SetRoundedBackgroundColor("FRAME_BG")
 		:SetMouseEnabled(true)
 		:AddChild(UIElements.New("Frame", "header")
 			:SetLayout("HORIZONTAL")
@@ -418,7 +420,7 @@ function private.ImportInputOnValueChanged(input)
 	local themeSet = private.DecodeThemeImport(strtrim(input:GetValue()))
 	if not themeSet then
 		baseFrame:HideDialog()
-		Log.PrintUser(L["The pasted value was not valid. Ensure you are pasting the entire import string."])
+		ChatMessage.PrintUser(L["The pasted value was not valid. Ensure you are pasting the entire import string."])
 		return
 	end
 	for key, hexColor in pairs(themeSet) do
@@ -519,15 +521,24 @@ end
 
 function private.ColorOnMouseUp(frame)
 	private.currentThemeKey = frame:GetContext()
-	local r, g, b = TSM.UI.Util.GetCustomColor(private.currentThemeKey):GetFractionalRGBA()
-	ColorPickerFrame:SetColorRGB(r, g, b)
+	local r, g, b = Theme.GetColor(TSM.UI.Util.GetCustomColorThemeKey(private.currentThemeKey)):GetFractionalRGBA()
+	if ClientInfo.IsRetail() then
+		ColorPickerFrame.Content.ColorPicker:SetColorRGB(r, g, b)
+		ColorPickerFrame.Content.ColorSwatchOriginal:SetColorTexture(r, g, b)
+	else
+		ColorPickerFrame:SetColorRGB(r, g, b)
+	end
 	ColorPickerFrame.hasOpacity = false
 	ColorPickerFrame.previousValues = ColorPickerFrame.previousValues or {}
 	wipe(ColorPickerFrame.previousValues)
 	ColorPickerFrame.previousValues.r = r
 	ColorPickerFrame.previousValues.g = g
 	ColorPickerFrame.previousValues.b = b
-	ColorPickerFrame.func = private.ColorPickerCallback
+	if ClientInfo.IsRetail() or ClientInfo.IsVanillaClassic() or ClientInfo.IsBCClassic() then
+		ColorPickerFrame.swatchFunc = private.ColorPickerCallback
+	else
+		ColorPickerFrame.func = private.ColorPickerCallback
+	end
 	ColorPickerFrame.cancelFunc = private.ColorPickerCancelCallback
 	ColorPickerFrame:ClearAllPoints()
 	local baseFrame = frame:GetBaseElement():_GetBaseFrame()
@@ -535,6 +546,9 @@ function private.ColorOnMouseUp(frame)
 	ColorPickerFrame:SetPoint("CENTER", UIParent, "TOPLEFT", x, y)
 	ColorPickerFrame:Hide()
 	ColorPickerFrame:Show()
+	if ClientInfo.IsPandaClassic() then
+		ColorPickerFrame.swatchFunc = ColorPickerFrame.func
+	end
 end
 
 function private.ColorPickerCallback()

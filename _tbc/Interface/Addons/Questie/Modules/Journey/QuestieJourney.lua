@@ -1,5 +1,5 @@
 ---@class QuestieJourney
-local QuestieJourney = QuestieLoader:CreateModule("QuestieJourney")
+local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney")
 local _QuestieJourney = QuestieJourney.private
 QuestieJourneyFrame = nil
 -------------------------
@@ -13,6 +13,10 @@ local QuestieOptions = QuestieLoader:ImportModule("QuestieOptions")
 local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+---@type QuestieCombatQueue
+local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
+---@type Expansions
+local Expansions = QuestieLoader:ImportModule("Expansions")
 
 -- Useful doc about the AceGUI TreeGroup: https://github.com/hurricup/WoW-Ace3/blob/master/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua
 
@@ -27,36 +31,88 @@ local AceGUI = LibStub("AceGUI-3.0")
 local isWindowShown = false
 _QuestieJourney.lastOpenWindow = "journey"
 _QuestieJourney.lastZoneSelection = {}
+_QuestieJourney.lastFactionSelection = {}
 
 local notesPopupWin
 local notesPopupWinIsOpen = false
 
-QuestieJourney.questCategoryKeys = {
+-- These need to match with l10n.continentLookup
+local questCategoryKeys = {
     EASTERN_KINGDOMS = 1,
     KALIMDOR = 2,
-    DUNGEONS = 3,
-    BATTLEGROUNDS = 4,
-    CLASS = 5,
-    PROFESSIONS = 6,
-    EVENTS = 7,
+    OUTLAND = 3,
+    NORTHREND = 4,
+    CATACLYSM = 5,
+    THE_MAELSTROM = 6,
+    PANDARIA = 7,
+    DUNGEONS = 8,
+    BATTLEGROUNDS = 9,
+    CLASS = 10,
+    PROFESSIONS = 11,
+    EVENTS = 12,
+    PET_BATTLES = 13,
+    SCENARIOS = 14,
 }
+QuestieJourney.questCategoryKeys = questCategoryKeys
+
+-- Detect character re-creation and ask user about journey reset
+local function checkForCharacterRecreation()
+    local guid = UnitGUID("player") -- this is unique per character
+    if (not Questie.db.char.guid) then
+        -- First login for this character
+        Questie.db.char.guid = guid
+    elseif (Questie.db.char.guid ~= guid) then
+        -- Character re-created, ask user about journey reset
+        Questie:Print(l10n("Character re-creation detected, resetting \"My Journey\" data."))
+        Questie.db.char.journey = {}
+        Questie.db.char.guid = guid
+    end
+end
 
 function QuestieJourney:Initialize()
     local continents = {}
     for id, name in pairs(l10n.continentLookup) do
-        continents[id] = l10n(name)
+        if not (questCategoryKeys.OUTLAND == id and Expansions.Current < Expansions.Tbc) and
+            not (questCategoryKeys.NORTHREND == id and Expansions.Current < Expansions.Wotlk) and
+            not (questCategoryKeys.CATACLYSM == id and Expansions.Current < Expansions.Cata) and
+            not (questCategoryKeys.THE_MAELSTROM == id and Expansions.Current < Expansions.Cata) and
+            not (questCategoryKeys.PANDARIA == id and Expansions.Current < Expansions.MoP) and
+            not (questCategoryKeys.PET_BATTLES == id and Expansions.Current < Expansions.MoP) and
+            not (questCategoryKeys.SCENARIOS == id and Expansions.Current < Expansions.MoP)
+        then
+            continents[id] = l10n(name)
+        end
     end
-    continents[QuestieJourney.questCategoryKeys.CLASS] = QuestiePlayer:GetLocalizedClassName()
+    coroutine.yield()
+    continents[questCategoryKeys.CLASS] = QuestiePlayer:GetLocalizedClassName()
 
+    checkForCharacterRecreation()
+
+    coroutine.yield()
     self.continents = continents
-    self.zoneMap = ZoneDB:GetZonesWithQuests()
-    self.zones = ZoneDB:GetRelevantZones()
+    self.zoneMap = ZoneDB.GetZonesWithQuests(true)
+    self.zones = ZoneDB.GetRelevantZones()
+    coroutine.yield()
 
+    -- Pre-initialize faction data used by the "Quests by Faction" tab so it is ready on first open.
+    if _QuestieJourney.questsByFaction then
+        if _QuestieJourney.questsByFaction.InitializeFactionData then
+            _QuestieJourney.questsByFaction:InitializeFactionData()
+        end
+        if _QuestieJourney.questsByFaction.InitializeFactionQuestData then
+            _QuestieJourney.questsByFaction:InitializeFactionQuestData()
+        end
+    end
+
+    coroutine.yield()
     self:BuildMainFrame()
+
+    -- Set up default keybinding for Journey window
+    self:SetupKeybinding()
 end
 
 function QuestieJourney:BuildMainFrame()
-    if (QuestieJourneyFrame == nil) then
+    if (not QuestieJourneyFrame) then
         local journeyFrame = AceGUI:Create("Frame")
         journeyFrame:SetCallback("OnClose", function()
             isWindowShown = false
@@ -68,21 +124,28 @@ function QuestieJourney:BuildMainFrame()
         end)
         journeyFrame:SetTitle(l10n("%s's Journey", UnitName("player")))
         journeyFrame:SetLayout("Fill")
-        journeyFrame.frame:SetMinResize(550, 400)
+        journeyFrame:EnableResize(true)
+        journeyFrame:SetWidth(1000)
+        journeyFrame:SetHeight(650)
+        QuestieCompat.SetResizeBounds(journeyFrame.frame, 550, 400, 0, 0)
 
         local tabGroup = AceGUI:Create("TabGroup")
         tabGroup:SetLayout("Flow")
         tabGroup:SetTabs({
             {
-                text = l10n('My Journey'),
+                text = l10n("My Journey"),
                 value="journey"
             },
             {
-                text = l10n('Quests by Zone'),
+                text = l10n("Quests by Zone"),
                 value="zone"
             },
             {
-                text = l10n('Advanced Search'),
+                text = l10n("Quests by Faction"),
+                value="faction"
+            },
+            {
+                text = l10n("Advanced Search"),
                 value="search"
             }
         })
@@ -95,10 +158,12 @@ function QuestieJourney:BuildMainFrame()
         local settingsButton = AceGUI:Create("Button")
         settingsButton:SetWidth(160)
         settingsButton:SetPoint("TOPRIGHT", journeyFrame.frame, "TOPRIGHT", -50, -13)
-        settingsButton:SetText(l10n('Questie Options'))
+        settingsButton:SetText(l10n("Questie Options"))
         settingsButton:SetCallback("OnClick", function()
-            QuestieJourney:ToggleJourneyWindow()
-            QuestieOptions:OpenConfigWindow()
+            QuestieCombatQueue:Queue(function()
+                QuestieJourney:ToggleJourneyWindow()
+                QuestieOptions:ToggleConfigWindow()
+            end)
         end)
         journeyFrame:AddChild(settingsButton)
 
@@ -112,7 +177,13 @@ function QuestieJourney:IsShown()
     return isWindowShown
 end
 
+-- There are ways to toggle this function before the frame has been created
 function QuestieJourney:ToggleJourneyWindow()
+    if (not Questie.started) then
+        print(Questie:Colorize(l10n("Please wait a moment for Questie to finish loading")))
+        return
+    end
+
     if (not isWindowShown) then
         PlaySound(882)
 
@@ -129,9 +200,24 @@ function QuestieJourney:ToggleJourneyWindow()
     end
 end
 
+function QuestieJourney:SetupKeybinding()
+    _G.BINDING_NAME_QUESTIE_TOGGLE_JOURNEY = l10n("Toggle My Journey")
+    local currentBinding = GetBindingKey("QUESTIE_TOGGLE_JOURNEY")
+    if not currentBinding then
+        SetBinding("SEMICOLON", "QUESTIE_TOGGLE_JOURNEY")
+        Questie:Debug(Questie.DEBUG_INFO, "Set default keybind ';' for Questie Journey")
+    end
+end
+
 function QuestieJourney:PlayerLevelUp(level)
     -- Complete Quest added to Journey
-    ---@type JourneyEntry
+    ---@class JourneyEntry
+    ---@field Event string?
+    ---@field SubType string?
+    ---@field NewLevel number?
+    ---@field Level number?
+    ---@field Quest number?
+    ---@field Timestamp number
     local entry = {
         Event = "Level",
         NewLevel = level,
@@ -148,7 +234,7 @@ function QuestieJourney:AcceptQuest(questId)
         Event = "Quest",
         SubType = "Accept",
         Quest = questId,
-        Level = QuestiePlayer:GetPlayerLevel(),
+        Level = QuestiePlayer.GetPlayerLevel(),
         Timestamp = time()
     }
 
@@ -177,7 +263,7 @@ function QuestieJourney:AbandonQuest(questId)
             Event = "Quest",
             SubType = "Abandon",
             Quest = questId,
-            Level = QuestiePlayer:GetPlayerLevel(),
+            Level = QuestiePlayer.GetPlayerLevel(),
             Timestamp = time()
         }
 
@@ -192,9 +278,11 @@ function QuestieJourney:CompleteQuest(questId)
         Event = "Quest",
         SubType = "Complete",
         Quest = questId,
-        Level = QuestiePlayer:GetPlayerLevel(),
+        Level = QuestiePlayer.GetPlayerLevel(),
         Timestamp = time()
     }
 
     tinsert(Questie.db.char.journey, entry)
 end
+
+return QuestieJourney

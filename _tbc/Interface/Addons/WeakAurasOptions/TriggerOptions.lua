@@ -1,5 +1,8 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, OptionsPrivate = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 
 local L = WeakAuras.L
 
@@ -16,8 +19,6 @@ local executeAll = OptionsPrivate.commonOptions.CreateExecuteAll("trigger")
 local flattenRegionOptions = OptionsPrivate.commonOptions.flattenRegionOptions
 local fixMetaOrders = OptionsPrivate.commonOptions.fixMetaOrders
 
-local spellCache = WeakAuras.spellCache
-
 local function union(table1, table2)
   local meta = {};
   for i,v in pairs(table1) do
@@ -31,7 +32,6 @@ end
 
 local function GetGlobalOptions(data)
 
-  local triggerCount = 0
   local globalTriggerOptions = {
     __title = L["Trigger Combination"],
     __order = 1,
@@ -80,7 +80,6 @@ local function GetGlobalOptions(data)
         data.triggers.activeTriggerMode = v;
         WeakAuras.Add(data);
         WeakAuras.UpdateThumbnail(data);
-        WeakAuras.UpdateDisplayButton(data);
       end,
       hidden = function() return #data.triggers <= 1 end
     }
@@ -112,7 +111,7 @@ local function AddOptions(allOptions, data)
       -- Unknown trigger system, empty options
       local options = {};
       OptionsPrivate.commonOptions.AddCommonTriggerOptions(options, data, index)
-      OptionsPrivate.AddTriggerMetaFunctions(options, data, index, true)
+      OptionsPrivate.AddTriggerMetaFunctions(options, data, index)
       triggerOptions = union(triggerOptions, {
           ["trigger." .. index .. ".unknown"] = options
       })
@@ -203,8 +202,8 @@ local function DeleteConditionsForTriggerHandleSubChecks(checks, triggernum)
       check.trigger = check.trigger - 1;
     end
 
-    if (checks.checks) then
-      DeleteConditionsForTriggerHandleSubChecks(checks.checks, triggernum);
+    if (check.checks) then
+      DeleteConditionsForTriggerHandleSubChecks(check.checks, triggernum);
     end
   end
 end
@@ -225,6 +224,23 @@ local function DeleteConditionsForTrigger(data, triggernum)
   end
 end
 
+local function FixUpProgressSourceAfterDelete(data, triggernum)
+  local function FixUpProgressSource(data)
+    if data.progressSource then
+      local trigger, property = unpack(data.progressSource)
+      if trigger > triggernum then
+        data.progressSource = {trigger - 1, property}
+      end
+    end
+  end
+
+  FixUpProgressSource(data)
+
+  for _, subRegionData in ipairs(data.subRegions) do
+    FixUpProgressSource(subRegionData)
+  end
+end
+
 local function moveTriggerDownConditionCheck(check, i)
   if (check.trigger == i) then
     check.trigger = i + 1;
@@ -238,6 +254,7 @@ local function moveTriggerDownConditionCheck(check, i)
   end
 end
 
+--- @type fun(data: auraData, i: number) : boolean
 local function moveTriggerDownImpl(data, i)
   if (i < 1 or i >= #data.triggers) then
     return false;
@@ -245,6 +262,23 @@ local function moveTriggerDownImpl(data, i)
   data.triggers[i], data.triggers[i + 1] = data.triggers[i + 1], data.triggers[i]
   for _, condition in ipairs(data.conditions) do
     moveTriggerDownConditionCheck(condition.check, i);
+  end
+
+  local function fixUpProgressSource(data)
+    if data.progressSource then
+      local trigger, property = unpack(data.progressSource)
+      if trigger == i then
+        data.progressSource = {i + 1, property}
+      elseif trigger == i + 1 then
+        data.progressSource = {i, property}
+      end
+    end
+  end
+
+  fixUpProgressSource(data)
+
+  for _, subRegionData in ipairs(data.subRegions) do
+    fixUpProgressSource(subRegionData)
   end
 
   return true;
@@ -257,10 +291,30 @@ function OptionsPrivate.ClearTriggerExpandState()
   maxTriggerNumForExpand = 0
 end
 
+function OptionsPrivate.GetTriggerTitle(data, triggernum)
+  if data.triggers[triggernum] then
+    local trigger = data.triggers[triggernum].trigger
+    if trigger then
+      local event_prototype = OptionsPrivate.Private.event_prototypes[trigger.event]
+      local triggerType = trigger.type
+      local name
+      if triggerType == "aura2" then
+        name = L["Aura"]
+      elseif triggerType == "custom" then
+        name = L["Custom"]
+      else
+        name = event_prototype.name
+      end
+      return L["Trigger %i: %s"]:format(triggernum, name)
+    end
+  end
+  return L["Trigger %i"]:format(triggernum)
+end
+
 local triggerDeleteDialogOpen = false
 
 function OptionsPrivate.AddTriggerMetaFunctions(options, data, triggernum)
-  options.__title = L["Trigger %s"]:format(triggernum)
+  options.__title = OptionsPrivate.GetTriggerTitle(data, triggernum)
   options.__order = triggernum * 10
   options.__collapsed = #data.triggers > 1
   options.__isCollapsed = function()
@@ -335,6 +389,7 @@ function OptionsPrivate.AddTriggerMetaFunctions(options, data, triggernum)
               if #child.triggers > 1 and #child.triggers >= triggernum then
                 tremove(child.triggers, triggernum)
                 DeleteConditionsForTrigger(child, triggernum)
+                FixUpProgressSourceAfterDelete(child, triggernum)
                 WeakAuras.Add(child)
                 OptionsPrivate.RemoveCollapsed(collapsedId, "trigger", {triggernum})
                 OptionsPrivate.ClearOptions(child.id)
@@ -349,14 +404,14 @@ function OptionsPrivate.AddTriggerMetaFunctions(options, data, triggernum)
           end,
           showAlert = true,
           whileDead = true,
-          preferredindex = STATICPOPUP_NUMDIALOGS,
+          preferredindex = 4,
         }
         triggerDeleteDialogOpen = true
         StaticPopup_Show("WEAKAURAS_CONFIRM_TRIGGER_DELETE")
       end
     end
   }
-  if (GetAddOnEnableState(UnitName("player"), "WeakAurasTemplates") ~= 0) then
+  if (C_AddOns.GetAddOnEnableState("WeakAurasTemplates") ~= Enum.AddOnEnableState.None) then
     options.__applyTemplate = function()
       -- If we have more than a single aura selected,
       -- we want to open the template view with the group/multi selection

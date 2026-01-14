@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -16,6 +16,7 @@ if not TMW then return end
 local TMW = TMW
 local L = TMW.L
 local print = TMW.print
+local issecretvalue = TMW.issecretvalue
 
 local huge = math.huge
 
@@ -92,16 +93,23 @@ Alpha:RegisterEventHandlerData("Animations", 40, "ICONALPHAFLASH", {
 		local fadingIn = FlashPeriod == 0 or floor(timePassed/FlashPeriod) % 2 == 1
 
 		if not IconModule_Alpha.FakeHidden then
+			local alpha
+
 			if table.Fade and FlashPeriod ~= 0 then
 				local remainingFlash = timePassed % FlashPeriod
 				if not fadingIn then
-					icon:SetAlpha(abs((icon.attributes.realAlpha - otherAlpha)*((FlashPeriod-remainingFlash)/FlashPeriod) + otherAlpha))
+					alpha = (icon.attributes.realAlpha - otherAlpha)*((FlashPeriod-remainingFlash)/FlashPeriod) + otherAlpha
 				else
-					icon:SetAlpha(abs((icon.attributes.realAlpha - otherAlpha)*(remainingFlash/FlashPeriod) + otherAlpha))
+					alpha = (icon.attributes.realAlpha - otherAlpha)*(remainingFlash/FlashPeriod) + otherAlpha
 				end
 			else
-				icon:SetAlpha(fadingIn and icon.attributes.realAlpha or otherAlpha)
+				alpha = fadingIn and icon.attributes.realAlpha or otherAlpha
 			end
+
+			if alpha < 0 then alpha = 0
+			elseif alpha > 1 then alpha = 1 end
+
+			icon:SetAlpha(alpha)
 		end
 
 		-- (mostly) generic expiration -- we just finished the last flash, so dont do any more
@@ -152,9 +160,14 @@ Alpha:RegisterEventHandlerData("Animations", 50, "ICONFADE", {
 			icon:Animations_Stop(table)
 		else
 			local pct = remaining / table.FadeDuration
-			local inv = 1-pct
+			local inverse = 1-pct
 			if not IconModule_Alpha.FakeHidden then
-				icon:SetAlpha((IconModule_Alpha.actualAlphaAtLastChange * pct) + (icon.attributes.realAlpha * inv))
+				local alpha = (IconModule_Alpha.actualAlphaAtLastChange * pct) + (icon.attributes.realAlpha * inverse)
+
+				if alpha < 0 then alpha = 0
+				elseif alpha > 1 then alpha = 1 end
+
+				icon:SetAlpha(alpha)
 			end
 		end
 	end,
@@ -199,19 +212,33 @@ function Alpha:SetupForIcon(icon)
 	
 	local attributes = icon.attributes
 	
-	self:REALALPHA(icon, icon.attributes.realAlpha)
+	self:CALCULATEDSTATE(icon, icon.attributes.calculatedState)
 end
 
-function Alpha:REALALPHA(icon, realAlpha)
-	if TMW.Locked then
+function Alpha:CALCULATEDSTATE(icon, state)
+	if not TMW.Locked then
+		icon:SetAlpha(state.Alpha or 1)
+		return
+	end
+
+	local currentAlpha = icon:GetAlpha()
+	if not issecretvalue(currentAlpha) then
 		self.actualAlphaAtLastChange = icon:GetAlpha()
-		
-		if not self.FadeHandlers[1] then
-			icon:SetAlpha(self.FakeHidden and 0 or realAlpha)
-		end
-	else
-		icon:SetAlpha(realAlpha)
+	end
+
+	if self.FakeHidden then
+		icon:SetAlpha(0)
+		return
+	end
+
+	if state.secretBool ~= nil then
+		icon:SetAlphaFromBoolean(state.secretBool, state.trueState.Alpha, state.falseState.Alpha)
+		return
+	end
+	
+	if not self.FadeHandlers[1] then
+		icon:SetAlpha(state.Alpha)
 	end
 end
 
-Alpha:SetDataListener("REALALPHA")
+Alpha:SetDataListener("CALCULATEDSTATE")

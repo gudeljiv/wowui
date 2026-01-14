@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -120,7 +120,7 @@ ConditionCategory:RegisterCondition(0.51,	"TIMER", {
 	formatter = TMW.C.Formatter.TIME_YDHMS,
 
 	unit = false,
-	icon = "Interface\\Icons\\INV_Misc_PocketWatch_01",
+	icon = ClassicExpansionAtLeast(LE_EXPANSION_MISTS_OF_PANDARIA) and "Interface\\Icons\\spell_mage_altertime" or "Interface\\Icons\\INV_Misc_PocketWatch_01",
 	name = function(editbox)
 		editbox:SetTexts(L["CONDITION_TIMER"], L["CONDITION_TIMER_EB_DESC"])
 	end,
@@ -143,7 +143,7 @@ ConditionCategory:RegisterCondition(0.51,	"TIMER", {
 
 		return [[
 			local timer = TIMERS[]] .. timer .. [[]
-			local VALUE = not timer.started and huge or (time + (c.Level - timer:GetTime()))
+			VALUE = not timer.started and huge or (time + (c.Level - timer:GetTime()))
 		]]
 	end,
 })

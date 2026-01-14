@@ -75,10 +75,10 @@
 						self:GetParent():UnlockHighlight()
 					</OnLeave>
 				</Scripts>
-				<NormalTexture urgency="5" file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up" alphaMode="ADD">
+				<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up" alphaMode="ADD">
 					<TexCoords left="0.3125" right="0.625" top="0.3" bottom="0.71857"/>
 				</NormalTexture>
-				<HighlightTexture urgency="5" file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up" alphaMode="ADD">
+				<HighlightTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up" alphaMode="ADD">
 					<TexCoords left="0.3125" right="0.625" top="0.3" bottom="0.71857"/>
 				</HighlightTexture>
 			</Button>
@@ -224,6 +224,13 @@
 						<Anchor point="RIGHT" x="0"/>
 					</Anchors>
 				</FontString>
+				<Texture parentKey="RestrictedIcon" file="Interface\AddOns\TellMeWhen\Textures\restricted.png" hidden="true">
+					<Size x="16" y="16"/>
+					<Anchors>
+						<Anchor point="RIGHT" x="-6" y="0"/>
+					</Anchors>
+					<Color r="1" g="0.82" b="0"/>
+				</Texture>
 			</Layer>
 		</Layers>
 

@@ -64,7 +64,7 @@ function GBB.AddGroupList(entry)
 	end
 	GroupBulletinBoardFrame_GroupFrame:AddMessage(
 		"|Hplayer:".. entry.name .."|h"..
-		GBB.Tool.IconClass[entry.class]..
+		(GBB.Tool.GetClassIcon(entry.class) or "")..
 		"|c"..GBB.Tool.ClassColor[entry.class].colorStr ..
 		entry.name..
 		
@@ -111,7 +111,9 @@ function GBB.UpdateGroupList()
 		table.sort(GBB.DBChar.GroupList,function(a,b) return a.lastSeen<b.lastSeen end)	
 	end
 		
-	if not GroupBulletinBoardFrame:IsVisible() or GBB.Tool.GetSelectedTab(GroupBulletinBoardFrame)~=2 then
+	if not GroupBulletinBoardFrame:IsVisible()
+	or GBB.GetSelectedTab() ~= GBB.Enum.Tabs.RecentPlayers
+	then
 		return
 	end
 	GBB.EditNote(nil)
@@ -139,9 +141,11 @@ local function EnterHyperlink(self,link,text)
 				GameTooltip_SetDefaultAnchor(GameTooltip,UIParent)
 				GameTooltip:SetOwner(GroupBulletinBoardFrame, "ANCHOR_BOTTOM", 0,-25)
 				GameTooltip:ClearLines()
-				GameTooltip:AddLine(GBB.Tool.IconClass[entry.class]..
+				GameTooltip:AddLine(
+					(GBB.Tool.GetClassIcon(entry.class) or "")..
 					"|c"..GBB.Tool.ClassColor[entry.class].colorStr ..
-					entry.name)			
+					entry.name
+				);			
 				if entry.dungeon then
 					GameTooltip:AddLine(entry.dungeon)
 				end
@@ -186,20 +190,20 @@ function GBB.InitGroupList()
 		countInvisibleLetters = true,
 		editBoxWidth = 350,
 		OnAccept = function(self)
-			EditEntry.Note=self.editBox:GetText()
+			EditEntry.Note=self:GetEditBox():GetText()
 			GBB.UpdateGroupList()
 		end,
 		OnShow = function(self)
-			self.editBox:SetText(EditEntry.Note or "");
-			self.editBox:SetFocus();
+			self:GetEditBox():SetText(EditEntry.Note or "");
+			self:GetEditBox():SetFocus();
 		end,
 		OnHide = function(self)
 			ChatEdit_FocusActiveWindow();
-			self.editBox:SetText("");			
+			self:GetEditBox():SetText("");			
 		end,
 		EditBoxOnEnterPressed = function(self)
 			local parent = self:GetParent();
-			EditEntry.Note=parent.editBox:GetText()
+			EditEntry.Note=parent:GetEditBox():GetText()
 			GBB.UpdateGroupList()
 			parent:Hide();
 		end,

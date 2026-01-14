@@ -1,9 +1,12 @@
+local WatchFrame_Update = QuestWatch_Update or WatchFrame_Update
+
 ---@class Hooks
 local Hooks = QuestieLoader:CreateModule("Hooks")
 
 ---@type QuestieTracker
 local QuestieTracker = QuestieLoader:ImportModule("QuestieTracker")
-
+---@type Expansions
+local Expansions = QuestieLoader:ImportModule("Expansions")
 
 function Hooks:HookQuestLogTitle()
     Questie:Debug(Questie.DEBUG_DEVELOP, "[Hooks] Hooking Quest Log Title")
@@ -16,19 +19,22 @@ function Hooks:HookQuestLogTitle()
             return
         end
 
-        local questLogLineIndex = self:GetID() + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
-        local questId = GetQuestIDFromLogIndex(questLogLineIndex)
+        local questLogLineIndex
+        if Expansions.Current >= Expansions.Wotlk then
+            -- With Wotlk the offset is no longer required cause the API already hands the correct index
+            questLogLineIndex = self:GetID()
+        else
+            questLogLineIndex = self:GetID() + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
+        end
 
         if (IsModifiedClick("CHATLINK") and ChatEdit_GetActiveWindow()) then
-            if (self.isHeader) then
-                return
-            end
-            ChatEdit_InsertLink("["..string.gsub(self:GetText(), " *(.*)", "%1").." ("..questId..")]")
+            local questId = GetQuestIDFromLogIndex(questLogLineIndex)
+            ChatEdit_InsertLink("[" .. string.gsub(self:GetText(), " *(.*)", "%1") .. " (" .. questId .. ")]")
         else
             -- only call if we actually want to fix this quest (normal quests already call AQW_insert)
-            if GetNumQuestLeaderBoards(questLogLineIndex) == 0 and (not IsQuestWatched(questLogLineIndex)) then
+            if Questie.db.profile.trackerEnabled and GetNumQuestLeaderBoards(questLogLineIndex) == 0 and (not IsQuestWatched(questLogLineIndex)) then
                 QuestieTracker:AQW_Insert(questLogLineIndex, QUEST_WATCH_NO_EXPIRE)
-                QuestWatch_Update()
+                WatchFrame_Update()
                 QuestLog_SetSelection(questLogLineIndex)
                 QuestLog_Update()
             else

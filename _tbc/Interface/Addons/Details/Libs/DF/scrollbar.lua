@@ -1,235 +1,234 @@
 
-local DF = _G ["DetailsFramework"]
-if (not DF or not DetailsFrameworkCanLoad) then
-	return 
+local detailsFramework = _G["DetailsFramework"]
+if (not detailsFramework or not DetailsFrameworkCanLoad) then
+	return
 end
 
-function DF:CreateScrollBar (master, slave, x, y)
-	return DF:NewScrollBar (master, slave, x, y)
-end
+--note: this scroll bar is using legacy code and shouldn't be used on creating new stuff
+do
+	function detailsFramework:CreateScrollBar(master, scrollContainer, x, y)
+		return detailsFramework:NewScrollBar(master, scrollContainer, x, y)
+	end
 
-function DF:NewScrollBar (master, slave, x, y)
+	function detailsFramework:NewScrollBar(parent, scrollContainer, x, y)
+		local newSlider = CreateFrame("Slider", nil, parent, "BackdropTemplate")
+		newSlider.scrollMax = 560
 
-	local new_slider = CreateFrame ("Slider", nil, master,"BackdropTemplate")
-	new_slider.scrollMax = 560 --default - tamanho da janela de fundo
+		newSlider:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, y)
+		newSlider.ativo = true
 
-	-- ///// SLIDER /////
-	new_slider:SetPoint ("TOPLEFT", master, "TOPRIGHT", x, y)
-	new_slider.ativo = true
-	
-	new_slider.bg = new_slider:CreateTexture (nil, "BACKGROUND")
-	new_slider.bg:SetAllPoints (true)
-	new_slider.bg:SetTexture (0, 0, 0, 0)
-	--coisinha do meio
-	new_slider.thumb = new_slider:CreateTexture (nil, "OVERLAY")
-	new_slider.thumb:SetTexture ("Interface\\Buttons\\UI-ScrollBar-Knob")
-	new_slider.thumb:SetSize (29, 30)
-	new_slider:SetThumbTexture (new_slider.thumb)
-	
-	new_slider:SetOrientation ("VERTICAL")
-	new_slider:SetSize(16, 100)
-	new_slider:SetMinMaxValues(0, new_slider.scrollMax)
-	new_slider:SetValue(0)
-	new_slider.ultimo = 0
+		newSlider.bg = newSlider:CreateTexture(nil, "BACKGROUND")
+		newSlider.bg:SetAllPoints(true)
+		newSlider.bg:SetTexture(0, 0, 0, 0)
 
-	local botao_cima = CreateFrame ("Button", nil, master,"BackdropTemplate")
-	
-	botao_cima:SetPoint ("BOTTOM", new_slider, "TOP", 0, -12)
-	botao_cima.x = 0
-	botao_cima.y = -12
-	
-	botao_cima:SetWidth (29)
-	botao_cima:SetHeight (32)
-	botao_cima:SetNormalTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Up")
-	botao_cima:SetPushedTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Down")
-	botao_cima:SetDisabledTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Disabled")
-	botao_cima:Show()
-	botao_cima:Disable()
-	
-	local botao_baixo = CreateFrame ("Button", nil, master,"BackdropTemplate")
-	botao_baixo:SetPoint ("TOP", new_slider, "BOTTOM", 0, 12)
-	botao_baixo.x = 0
-	botao_baixo.y = 12
-	
-	botao_baixo:SetWidth (29)
-	botao_baixo:SetHeight (32)
-	botao_baixo:SetNormalTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Up")
-	botao_baixo:SetPushedTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Down")
-	botao_baixo:SetDisabledTexture ("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Disabled")	
-	botao_baixo:Show()
-	botao_baixo:Disable()
+		newSlider.thumb = newSlider:CreateTexture(nil, "OVERLAY")
+		newSlider.thumb:SetTexture("Interface\\Buttons\\UI-ScrollBar-Knob")
+		newSlider.thumb:SetSize(29, 30)
+		newSlider:SetThumbTexture(newSlider.thumb)
+		newSlider:SetOrientation("VERTICAL")
+		newSlider:SetSize(16, 100)
+		newSlider:SetMinMaxValues(0, newSlider.scrollMax)
+		newSlider:SetValue(0)
+		newSlider.ultimo = 0
 
-	master.baixo = botao_baixo
-	master.cima = botao_cima
-	master.slider = new_slider
-	
-	botao_baixo:SetScript ("OnMouseDown", function(self)
-		if (not new_slider:IsEnabled()) then
-			return
-		end
-		
-		local current = new_slider:GetValue()
-		local minValue, maxValue = new_slider:GetMinMaxValues()
-		if (current+5 < maxValue) then
-			new_slider:SetValue (current+5)
-		else
-			new_slider:SetValue (maxValue)
-		end
-		self.precionado = true
-		self.last_up = -0.3
-		self:SetScript ("OnUpdate", function(self, elapsed)
-			self.last_up = self.last_up + elapsed
-			if (self.last_up > 0.03) then
-				self.last_up = 0
-				local current = new_slider:GetValue()
-				local minValue, maxValue = new_slider:GetMinMaxValues()
-				if (current+2 < maxValue) then
-					new_slider:SetValue (current+2)
+		local upButton = CreateFrame("Button", nil, parent,"BackdropTemplate")
+
+		upButton:SetPoint("BOTTOM", newSlider, "TOP", 0, -12)
+		upButton.x = 0
+		upButton.y = -12
+
+		upButton:SetWidth(29)
+		upButton:SetHeight(32)
+		upButton:SetNormalTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Up")
+		upButton:SetPushedTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Down")
+		upButton:SetDisabledTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollUpButton-Disabled")
+		upButton:Show()
+		upButton:Disable()
+
+		local downDutton = CreateFrame("Button", nil, parent,"BackdropTemplate")
+		downDutton:SetPoint("TOP", newSlider, "BOTTOM", 0, 12)
+		downDutton.x = 0
+		downDutton.y = 12
+
+		downDutton:SetWidth(29)
+		downDutton:SetHeight(32)
+		downDutton:SetNormalTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Up")
+		downDutton:SetPushedTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Down")
+		downDutton:SetDisabledTexture("Interface\\BUTTONS\\UI-ScrollBar-ScrollDownButton-Disabled")	
+		downDutton:Show()
+		downDutton:Disable()
+
+		parent.baixo = downDutton
+		parent.cima = upButton
+		parent.slider = newSlider
+
+		downDutton:SetScript("OnMouseDown", function(self)
+			if (not newSlider:IsEnabled()) then
+				return
+			end
+
+			local current = newSlider:GetValue()
+			local minValue, maxValue = newSlider:GetMinMaxValues()
+			if (current + 5 < maxValue) then
+				newSlider:SetValue(current + 5)
+			else
+				newSlider:SetValue(maxValue)
+			end
+			self.precionado = true
+			self.last_up = -0.3
+			self:SetScript("OnUpdate", function(self, elapsed)
+				self.last_up = self.last_up + elapsed
+				if (self.last_up > 0.03) then
+					self.last_up = 0
+					local current = newSlider:GetValue()
+					local minValue, maxValue = newSlider:GetMinMaxValues()
+					if (current + 2 < maxValue) then
+						newSlider:SetValue(current + 2)
+					else
+						newSlider:SetValue(maxValue)
+					end
+				end
+			end)
+		end)
+
+		downDutton:SetScript("OnMouseUp", function(self)
+			self.precionado = false
+			self:SetScript("OnUpdate", nil)
+		end)
+
+		upButton:SetScript("OnMouseDown", function(self)
+			if (not newSlider:IsEnabled()) then
+				return
+			end
+
+			local current = newSlider:GetValue()
+			if (current - 5 > 0) then
+				newSlider:SetValue(current - 5)
+			else
+				newSlider:SetValue(0)
+			end
+
+			self.precionado = true
+			self.last_up = -0.3
+			self:SetScript("OnUpdate", function(self, elapsed)
+				self.last_up = self.last_up + elapsed
+				if (self.last_up > 0.03) then
+					self.last_up = 0
+					local current = newSlider:GetValue()
+					if (current - 2 > 0) then
+						newSlider:SetValue(current - 2)
+					else
+						newSlider:SetValue(0)
+					end
+				end
+			end)
+		end)
+
+		upButton:SetScript("OnMouseUp", function(self)
+			self.precionado = false
+			self:SetScript("OnUpdate", nil)
+		end)
+
+		upButton:SetScript("OnEnable", function(self)
+			local current = newSlider:GetValue()
+			if (current == 0) then
+				upButton:Disable()
+			end
+		end)
+
+		newSlider:SetScript("OnValueChanged", function(self)
+			local current = self:GetValue()
+			parent:SetVerticalScroll(current)
+
+			local minValue, maxValue = newSlider:GetMinMaxValues()
+
+			if (current == minValue) then
+				upButton:Disable()
+			elseif (not upButton:IsEnabled()) then
+				upButton:Enable()
+			end
+
+			if (current == maxValue) then
+				downDutton:Disable()
+			elseif (not downDutton:IsEnabled()) then
+				downDutton:Enable()
+			end
+		end)
+
+		newSlider:SetScript("OnShow", function(self)
+			upButton:Show()
+			downDutton:Show()
+		end)
+
+		newSlider:SetScript("OnDisable", function(self)
+			upButton:Disable()
+			downDutton:Disable()
+		end)
+
+		newSlider:SetScript("OnEnable", function(self)
+			upButton:Enable()
+			downDutton:Enable()
+		end)
+
+		parent:SetScript("OnMouseWheel", function(self, delta)
+			if (not newSlider:IsEnabled()) then
+				return
+			end
+
+			local current = newSlider:GetValue()
+			if (delta < 0) then
+				local minValue, maxValue = newSlider:GetMinMaxValues()
+				if (current + (parent.wheel_jump or 20) < maxValue) then
+					newSlider:SetValue(current + (parent.wheel_jump or 20))
 				else
-					new_slider:SetValue (maxValue)
+					newSlider:SetValue(maxValue)
+				end
+			elseif (delta > 0) then
+				if (current + (parent.wheel_jump or 20) > 0) then
+					newSlider:SetValue(current - (parent.wheel_jump or 20))
+				else
+					newSlider:SetValue(0)
 				end
 			end
 		end)
-	end)
-	botao_baixo:SetScript ("OnMouseUp", function(self) 
-		self.precionado = false
-		self:SetScript ("OnUpdate", nil)
-	end)	
-	
-	botao_cima:SetScript ("OnMouseDown", function(self) 
-		if (not new_slider:IsEnabled()) then
-			return
+
+		function newSlider:Altura(height)
+			self:SetHeight(height)
 		end
-		
-		local current = new_slider:GetValue()
-		if (current-5 > 0) then
-			new_slider:SetValue (current-5)
-		else
-			new_slider:SetValue (0)
-		end	
-		self.precionado = true
-		self.last_up = -0.3
-		self:SetScript ("OnUpdate", function(self, elapsed)
-			self.last_up = self.last_up + elapsed
-			if (self.last_up > 0.03) then
-				self.last_up = 0
-				local current = new_slider:GetValue()
-				if (current-2 > 0) then
-					new_slider:SetValue (current-2)
-				else
-					new_slider:SetValue (0)
+
+		function newSlider:Update(desativar)
+			if (desativar) then
+				newSlider:Disable()
+				newSlider:SetValue(0)
+				newSlider.ativo = false
+				parent:EnableMouseWheel(false)
+				return
+			end
+
+			self.scrollMax = scrollContainer:GetHeight() - parent:GetHeight()
+			if (self.scrollMax > 0) then
+				newSlider:SetMinMaxValues(0, self.scrollMax)
+				if (not newSlider.ativo) then
+					newSlider:Enable()
+					newSlider.ativo = true
+					parent:EnableMouseWheel(true)
 				end
-			end
-		end)
-	end)
-	botao_cima:SetScript ("OnMouseUp", function(self) 
-		self.precionado = false
-		self:SetScript ("OnUpdate", nil)
-	end)
-	--> isso aqui pra quando o slider ativar, o scroll fica na  posi��o zero
-	botao_cima:SetScript ("OnEnable", function (self)
-		local current = new_slider:GetValue()
-		if (current == 0) then
-			botao_cima:Disable()
-		end
-	end)
-
-	new_slider:SetScript ("OnValueChanged", function (self)
-		local current = self:GetValue()
-		master:SetVerticalScroll (current)
-		
-		local minValue, maxValue = new_slider:GetMinMaxValues()
-		
-		if (current == minValue) then
-			botao_cima:Disable()
-		elseif (not botao_cima:IsEnabled()) then
-			botao_cima:Enable()
-		end
-		
-		if (current == maxValue) then
-			botao_baixo:Disable()
-		elseif (not botao_baixo:IsEnabled()) then
-			botao_baixo:Enable()
-		end
-
-	end)
-
-	new_slider:SetScript ("OnShow", function (self)
-		botao_cima:Show()
-		botao_baixo:Show()
-	end)
-	
-	new_slider:SetScript ("OnDisable", function (self)
-		botao_cima:Disable()
-		botao_baixo:Disable()
-	end)
-	
-	new_slider:SetScript ("OnEnable", function (self)
-		botao_cima:Enable()
-		botao_baixo:Enable()
-	end)
-	
-	master:SetScript ("OnMouseWheel", function (self, delta)
-		if (not new_slider:IsEnabled()) then
-			return
-		end
-
-		local current = new_slider:GetValue()
-		if (delta < 0) then 
-			--baixo
-			local minValue, maxValue = new_slider:GetMinMaxValues()
-			if (current + (master.wheel_jump or 20) < maxValue) then
-				new_slider:SetValue (current + (master.wheel_jump or 20))
 			else
-				new_slider:SetValue (maxValue)
-			end
-		elseif (delta > 0) then
-			--cima
-			if (current + (master.wheel_jump or 20) > 0) then
-				new_slider:SetValue (current - (master.wheel_jump or 20))
-			else
-				new_slider:SetValue (0)
+				newSlider:Disable()
+				newSlider:SetValue(0)
+				newSlider.ativo = false
+				parent:EnableMouseWheel(false)
 			end
 		end
-	end)
-	
-	function new_slider:Altura (h)
-		self:SetHeight (h)
-	end
-	
-	function new_slider:Update (desativar)
-	
-		if (desativar) then
-			new_slider:Disable()
-			new_slider:SetValue(0)
-			new_slider.ativo = false
-			master:EnableMouseWheel (false)
-			return
+
+		function newSlider:cimaPoint(x, y)
+			upButton:SetPoint("BOTTOM", newSlider, "TOP", x, y - 12)
 		end
-	
-		self.scrollMax = slave:GetHeight()-master:GetHeight()
-		if (self.scrollMax > 0) then
-			new_slider:SetMinMaxValues (0, self.scrollMax)
-			if (not new_slider.ativo) then
-				new_slider:Enable()
-				new_slider.ativo = true
-				master:EnableMouseWheel (true)
-			end
-		else
-			new_slider:Disable()
-			new_slider:SetValue(0)
-			new_slider.ativo = false
-			master:EnableMouseWheel (false)
+
+		function newSlider:baixoPoint(x, y)
+			downDutton:SetPoint("TOP", newSlider, "BOTTOM", x, y + 12)
 		end
+
+		return newSlider
 	end
-	
-	function new_slider:cimaPoint (x, y)
-		botao_cima:SetPoint ("BOTTOM", new_slider, "TOP", x, (y)-12)
-	end
-	
-	function new_slider:baixoPoint (x, y)
-		botao_baixo:SetPoint ("TOP", new_slider, "BOTTOM", x, (y)+12)
-	end
-	
-	return new_slider
 end

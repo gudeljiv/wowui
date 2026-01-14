@@ -1,12 +1,14 @@
-## Interface: 20501
+## Interface: 100002
 ## Title: FarmHud
-## Version: 8.8.0-release
+## Version: 9.1.1-release
 ## Notes: Turns your minimap into a hud for gathering resources!
 ## Author: Hizuro, CodeRedLin
 ## OptionalDeps: Ace3, CallbackHandler-1.0, LibDBIcon-1.0, LibStub, HereBeDragons
 ## SavedVariables: FarmHudDB
 
 ## X-Curse-Project-ID: 29767
+## X-Wago-ID: RaN0DANj
+## X#WoWI#ID:#19761
 
 libs\LibStub\LibStub.lua
 libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
@@ -17,6 +19,8 @@ libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 libs\HereBeDragons\HereBeDragons-2.0.lua
 libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
 libs\HereBeDragons\HereBeDragons-Migrate.lua
+libs\LibColors-1.0\LibColors-1.0.xml
+libs\HizurosSharedTools\HizurosSharedTools.lua
 
 FarmHud.xml
 

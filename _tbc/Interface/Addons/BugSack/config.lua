@@ -1,136 +1,326 @@
-
 local addonName, addon = ...
-if not addon.healthCheck then return end
+if not addon.healthCheck then
+	return
+end
 local L = addon.L
+local ldbi = LibStub("LibDBIcon-1.0")
 
-local frame = addon.frame
-frame.name = addonName
-frame:Hide()
+local category, layout = Settings.RegisterVerticalLayoutCategory(addonName)
+addon.settingsCategory = category
 
-frame:SetScript("OnShow", function(frame)
-	local function newCheckbox(label, description, onClick)
-		local check = CreateFrame("CheckButton", "BugSackCheck" .. label, frame, "InterfaceOptionsCheckButtonTemplate")
-		check:SetScript("OnClick", function(self)
-			local tick = self:GetChecked()
-			onClick(self, tick and true or false)
-			if tick then
-				PlaySound(856) -- SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON
-			else
-				PlaySound(857) -- SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF
-			end
-		end)
-		check.label = _G[check:GetName() .. "Text"]
-		check.label:SetText(label)
-		check.tooltipText = label
-		check.tooltipRequirement = description
-		return check
-	end
-
-	local title = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-	title:SetPoint("TOPLEFT", 16, -16)
-	title:SetText(addonName)
-
-	local autoPopup = newCheckbox(
+local function InitializeSettings()
+	-- Auto popup setting
+	local autoPopupSetting = Settings.RegisterAddOnSetting(
+		category,
+		"BUGSACK_AUTO_POPUP",
+		"auto",
+		addon.db,
+		Settings.VarType.Boolean,
 		L["Auto popup"],
-		L.autoDesc,
-		function(self, value) addon.db.auto = value end)
-	autoPopup:SetChecked(addon.db.auto)
-	autoPopup:SetPoint("TOPLEFT", title, "BOTTOMLEFT", -2, -16)
+		Settings.Default.False
+	)
+	Settings.CreateCheckbox(category, autoPopupSetting, L.autoDesc)
 
-	local chatFrame = newCheckbox(
+	-- Chatframe output setting
+	local chatFrameSetting = Settings.RegisterAddOnSetting(
+		category,
+		"BUGSACK_CHATFRAME_OUTPUT",
+		"chatframe",
+		addon.db,
+		Settings.VarType.Boolean,
 		L["Chatframe output"],
-		L.chatFrameDesc,
-		function(self, value) addon.db.chatframe = value end)
-	chatFrame:SetChecked(addon.db.chatframe)
-	chatFrame:SetPoint("TOPLEFT", autoPopup, "BOTTOMLEFT", 0, -8)
+		Settings.Default.False
+	)
+	Settings.CreateCheckbox(category, chatFrameSetting, L.chatFrameDesc)
 
-	local minimap = newCheckbox(
+	-- Minimap icon setting
+	local function GetMinimapValue()
+		return not BugSackLDBIconDB.hide
+	end
+
+	local function SetMinimapValue(value)
+		BugSackLDBIconDB.hide = not value
+		if BugSackLDBIconDB.hide then
+			ldbi:Hide(addonName)
+		else
+			ldbi:Show(addonName)
+		end
+	end
+
+	local minimapSetting = Settings.RegisterProxySetting(
+		category,
+		"BUGSACK_MINIMAP_ICON",
+		Settings.VarType.Boolean,
 		L["Minimap icon"],
-		L.minimapDesc,
-		function(self, value)
-			BugSackLDBIconDB.hide = not value
-			if BugSackLDBIconDB.hide then
-				LibStub("LibDBIcon-1.0"):Hide(addonName)
+		Settings.Default.True,
+		GetMinimapValue,
+		SetMinimapValue
+	)
+	Settings.CreateCheckbox(category, minimapSetting, L.minimapDesc)
+
+	-- Addon compartment setting (if available)
+	if ldbi:IsButtonCompartmentAvailable() then
+		local function GetCompartmentValue()
+			return ldbi:IsButtonInCompartment("BugSack")
+		end
+
+		local function SetCompartmentValue(value)
+			if value then
+				ldbi:AddButtonToCompartment("BugSack")
 			else
-				LibStub("LibDBIcon-1.0"):Show(addonName)
+				ldbi:RemoveButtonFromCompartment("BugSack")
 			end
-		end)
-	minimap:SetPoint("TOPLEFT", chatFrame, "BOTTOMLEFT", 0, -8)
-	minimap:SetChecked(not BugSackLDBIconDB.hide)
+		end
 
-	local mute = newCheckbox(
+		local compartmentSetting = Settings.RegisterProxySetting(
+			category,
+			"BUGSACK_ADDON_COMPARTMENT",
+			Settings.VarType.Boolean,
+			L.addonCompartment,
+			Settings.Default.False,
+			GetCompartmentValue,
+			SetCompartmentValue
+		)
+		Settings.CreateCheckbox(category, compartmentSetting, L.addonCompartment_desc)
+	end
+
+	-- Mute setting
+	local muteSetting = Settings.RegisterAddOnSetting(
+		category,
+		"BUGSACK_MUTE",
+		"mute",
+		addon.db,
+		Settings.VarType.Boolean,
 		L["Mute"],
-		L.muteDesc,
-		function(self, value) addon.db.mute = value end)
-	mute:SetChecked(addon.db.mute)
-	mute:SetPoint("TOPLEFT", minimap, "BOTTOMLEFT", 0, -8)
+		Settings.Default.False
+	)
+	Settings.CreateCheckbox(category, muteSetting, L.muteDesc)
 
-	local info = {}
-	local fontSizeDropdown = CreateFrame("Frame", "BugSackFontSize", frame, "UIDropDownMenuTemplate")
-	fontSizeDropdown:SetPoint("TOPLEFT", mute, "BOTTOMLEFT", -15, -10)
-	fontSizeDropdown.initialize = function()
-		wipe(info)
-		local fonts = {"GameFontHighlightSmall", "GameFontHighlight", "GameFontHighlightMedium", "GameFontHighlightLarge"}
-		local names = {L["Small"], L["Medium"], L["Large"], L["X-Large"]}
+	-- Font size setting
+	local function GetFontSizeValue()
+		local fonts =
+			{ "GameFontHighlightSmall", "GameFontHighlight", "GameFontHighlightMedium", "GameFontHighlightLarge" }
 		for i, font in next, fonts do
-			info.text = names[i]
-			info.value = font
-			info.func = function(self)
-				addon.db.fontSize = self.value
-				if _G.BugSackFrameScrollText then
-					_G.BugSackFrameScrollText:SetFontObject(_G[self.value])
+			if font == addon.db.fontSize then
+				return i
+			end
+		end
+		return 2 -- Default to Medium
+	end
+
+	local function SetFontSizeValue(value)
+		local fonts =
+			{ "GameFontHighlightSmall", "GameFontHighlight", "GameFontHighlightMedium", "GameFontHighlightLarge" }
+		addon.db.fontSize = fonts[value]
+		if _G.BugSackScrollText then
+			_G.BugSackScrollText:SetFontObject(_G[fonts[value]])
+		end
+	end
+
+	local function GetFontSizeOptions()
+		local container = Settings.CreateControlTextContainer()
+		local names = { L["Small"], L["Medium"], L["Large"], L["X-Large"] }
+		for i, name in next, names do
+			container:Add(i, name)
+		end
+		return container:GetData()
+	end
+
+	local fontSizeSetting = Settings.RegisterProxySetting(
+		category,
+		"BUGSACK_FONT_SIZE",
+		Settings.VarType.Number,
+		L["Font size"],
+		2,
+		GetFontSizeValue,
+		SetFontSizeValue
+	)
+	Settings.CreateDropdown(category, fontSizeSetting, GetFontSizeOptions)
+
+	-- Custom sound dropdown with scrolling support
+	local function GetSoundValue()
+		return addon.db.soundMedia or "BugSack: Fatality"
+	end
+
+	local function SetSoundValue(value)
+		addon.db.soundMedia = value
+	end
+
+	local function IsSoundSelected(sound)
+		return addon.db.soundMedia == sound
+	end
+
+	local soundSetting = Settings.RegisterProxySetting(
+		category,
+		"BUGSACK_SOUND",
+		Settings.VarType.String,
+		L["Sound"],
+		"BugSack: Fatality",
+		GetSoundValue,
+		SetSoundValue
+	)
+
+	-- Create custom sound dropdown initializer with scrolling
+	local BugSackSoundDropdownInitializer = CreateFromMixins(
+		ScrollBoxFactoryInitializerMixin,
+		SettingsElementHierarchyMixin,
+		SettingsSearchableElementMixin
+	)
+
+	function BugSackSoundDropdownInitializer:Init()
+		ScrollBoxFactoryInitializerMixin.Init(self, "SettingsListElementTemplate")
+		self.data = {
+			name = L["Sound"],
+			tooltip = L["Sound"],
+		}
+		self:AddSearchTags(L["Sound"])
+	end
+
+	function BugSackSoundDropdownInitializer:GetExtent()
+		return 26 -- Height of the control
+	end
+
+	function BugSackSoundDropdownInitializer:InitFrame(frame)
+		-- Set frame size
+		frame:SetSize(280, 26)
+
+		-- Initialize the SettingsListElementMixin properly
+		if not frame.cbrHandles then
+			frame.cbrHandles = Settings.CreateCallbackHandleContainer()
+		end
+
+		-- Set up the standard element display
+		frame.data = self.data
+		frame.Text:SetFontObject("GameFontNormal")
+		frame.Text:SetText(L["Sound"])
+		frame.Text:SetPoint("LEFT", 37, 0)
+		frame.Text:SetPoint("RIGHT", frame, "CENTER", -85, 0)
+
+		-- Update button text function
+		local function UpdateDropdownText()
+			if frame.soundDropdown then
+				frame.soundDropdown:OverrideText(GetSoundValue())
+			end
+		end
+
+		-- sound preview button
+		if not frame.previewButton then
+			frame.previewButton = CreateFrame("Button", nil, frame)
+			frame.previewButton:SetSize(20, 20)
+			frame.previewButton:SetPoint("LEFT", frame, "CENTER", -74, 0)
+			frame.previewButton:SetHeight(26)
+
+			local previewIcon = frame.previewButton:CreateTexture(nil, "ARTWORK")
+			previewIcon:SetAllPoints()
+			previewIcon:SetTexture("Interface\\Common\\VoiceChat-Speaker")
+			previewIcon:SetVertexColor(0.8, 0.8, 0.8)
+
+			frame.previewButton:SetScript("OnEnter", function(control)
+				previewIcon:SetVertexColor(1, 1, 1)
+				GameTooltip:SetOwner(control, "ANCHOR_TOP")
+				GameTooltip:SetText(L["Preview Sound"])
+				GameTooltip:Show()
+			end)
+
+			frame.previewButton:SetScript("OnLeave", function(control)
+				previewIcon:SetVertexColor(0.8, 0.8, 0.8)
+				GameTooltip:Hide()
+			end)
+
+			-- Play current sound on click
+			frame.previewButton:SetScript("OnClick", function(control)
+				local media = LibStub("LibSharedMedia-3.0")
+				local currentSound = GetSoundValue()
+				local soundFile = media:Fetch("sound", currentSound)
+				if soundFile then
+					if addon.db.useMaster then
+						PlaySoundFile(soundFile, "Master")
+					else
+						PlaySoundFile(soundFile)
+					end
 				end
-				BugSackFontSizeText:SetText(self:GetText())
-			end
-			info.checked = font == addon.db.fontSize
-			UIDropDownMenu_AddButton(info)
+			end)
+		end
+
+		if not frame.soundDropdown then
+			frame.soundDropdown = CreateFrame("DropdownButton", nil, frame, "WowStyle1DropdownTemplate")
+			frame.soundDropdown:SetPoint("LEFT", frame.previewButton, "RIGHT", 5, 0)
+			frame.soundDropdown:SetPoint("RIGHT", frame, "RIGHT", -20, 0)
+			frame.soundDropdown:SetHeight(26)
+
+			-- Setup menu with scrolling
+			frame.soundDropdown:SetupMenu(function(dropdown, rootDescription)
+				rootDescription:SetScrollMode(200)
+
+				local sounds = LibStub("LibSharedMedia-3.0"):List("sound")
+				for _, sound in next, sounds do
+					local function OnSelection(soundValue)
+						SetSoundValue(soundValue)
+						UpdateDropdownText()
+					end
+					rootDescription:CreateRadio(sound, IsSoundSelected, OnSelection, sound)
+				end
+			end)
+		end
+
+		-- Initial text update
+		UpdateDropdownText()
+
+		-- Register callback for external changes
+		frame.cbrHandles:SetOnValueChangedCallback(soundSetting:GetVariable(), UpdateDropdownText)
+	end
+
+	function BugSackSoundDropdownInitializer:Resetter(frame)
+		if frame.cbrHandles then
+			frame.cbrHandles:Unregister()
 		end
 	end
-	BugSackFontSizeText:SetText(L["Font size"])
 
-	local dropdown = CreateFrame("Frame", "BugSackSoundDropdown", frame, "UIDropDownMenuTemplate")
-	dropdown:SetPoint("LEFT", fontSizeDropdown, "RIGHT", 140, 0)
-	dropdown.initialize = function()
-		wipe(info)
-		for _, sound in next, LibStub("LibSharedMedia-3.0"):List("sound") do
-			info.text = sound
-			info.value = sound
-			info.func = function(self)
-				addon.db.soundMedia = self.value
-				BugSackSoundDropdownText:SetText(self:GetText())
-			end
-			info.checked = sound == addon.db.soundMedia
-			UIDropDownMenu_AddButton(info)
-		end
-	end
-	BugSackSoundDropdownText:SetText(L["Sound"])
+	-- Create and add the initializer
+	local customSoundInitializer = CreateFromMixins(BugSackSoundDropdownInitializer)
+	customSoundInitializer:Init()
+	layout:AddInitializer(customSoundInitializer)
 
-	local master = newCheckbox(
+	-- Use Master sound channel setting
+	local masterSetting = Settings.RegisterAddOnSetting(
+		category,
+		"BUGSACK_USE_MASTER",
+		"useMaster",
+		addon.db,
+		Settings.VarType.Boolean,
 		L.useMaster,
-		L.useMasterDesc,
-		function(self, value) addon.db.useMaster = value end)
-		master:SetChecked(addon.db.useMaster)
-		master:SetPoint("LEFT", dropdown, "RIGHT", 140, 0)
+		Settings.Default.False
+	)
+	Settings.CreateCheckbox(category, masterSetting, L.useMasterDesc)
 
-	local clear = CreateFrame("Button", "BugSackSaveButton", frame, "UIPanelButtonTemplate")
-	clear:SetText(L["Wipe saved bugs"])
-	clear:SetWidth(177)
-	clear:SetHeight(24)
-	clear:SetPoint("TOPLEFT", fontSizeDropdown, "BOTTOMLEFT", 17, -25)
-	clear:SetScript("OnClick", function()
-		addon:Reset()
-	end)
-	clear.tooltipText = L["Wipe saved bugs"]
-	clear.newbieText = L.wipeDesc
-
-	local altWipe = newCheckbox(
+	-- Alt-click wipe setting
+	local altWipeSetting = Settings.RegisterAddOnSetting(
+		category,
+		"BUGSACK_ALT_WIPE",
+		"altwipe",
+		addon.db,
+		Settings.VarType.Boolean,
 		L["Minimap icon alt-click wipe"],
-		L.altWipeDesc,
-		function(self, value) addon.db.altwipe = value end)
-	altWipe:SetChecked(addon.db.altwipe)
-	altWipe:SetPoint("LEFT", clear, "RIGHT", 10, 0)
+		Settings.Default.False
+	)
+	Settings.CreateCheckbox(category, altWipeSetting, L.altWipeDesc)
 
-	frame:SetScript("OnShow", nil)
-end)
-InterfaceOptions_AddCategory(frame)
+	local wipeButtonInitializer = CreateSettingsButtonInitializer(
+		L["Wipe saved bugs"], -- name
+		L["Wipe saved bugs"], -- buttonText
+		function()
+			addon:Reset()
+		end, -- buttonClick
+		L.wipeDesc, -- tooltip
+		true, -- addSearchTags
+		nil, -- newTagID
+		nil -- gameDataFunc
+	)
 
+	local addonLayout = SettingsPanel:GetLayout(category)
+	addonLayout:AddInitializer(wipeButtonInitializer)
+
+	Settings.RegisterAddOnCategory(category)
+end
+
+addon.InitializeSettings = InitializeSettings

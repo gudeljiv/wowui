@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20220322132155"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260110210823"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -25,7 +25,7 @@ local function formatMinMax(min, max)
 end
 
 local found = false
-DogTag:AddAddonFinder("Unit", "LibStub", "LibRangeCheck-2.0", function(RangeCheckLib)
+DogTag:AddAddonFinder("Unit", "LibStub", "LibRangeCheck-3.0", function(RangeCheckLib)
 	found = true
 	function MinRange_func(unit)
 		return (RangeCheckLib:getRange(unit))

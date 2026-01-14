@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -162,8 +162,9 @@ end
 
 -- [INTERNAL]
 function Group.ScriptSort(groupA, groupB)
-	local gOrder = 1 -- -TMW.db.profile.CheckOrder
-	return groupA.ID*gOrder < groupB.ID*gOrder
+	local gA = groupA.ID + (groupA.Domain == 'global' and 10000 or 0)
+	local gB = groupB.ID + (groupB.Domain == 'global' and 10000 or 0)
+	return gA < gB
 end
 Group:UpdateTable_SetAutoSort(Group.ScriptSort)
 TMW:RegisterCallback("TMW_GLOBAL_UPDATE_POST", Group, "UpdateTable_PerformAutoSort")

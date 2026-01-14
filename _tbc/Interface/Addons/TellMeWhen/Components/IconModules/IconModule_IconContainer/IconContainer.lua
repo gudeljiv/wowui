@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -28,6 +28,7 @@ function IconContainer:OnNewInstance_IconContainer(icon)
 	container:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
 
 	self.container = container
+	container.module = self
 	
 	container:EnableMouse(false)
 end
@@ -68,73 +69,120 @@ end
 
 
 
---Overlay stuff, copied from Blizz code.
--- We use our own instance of the code to prevent taint.
-local unusedOverlayGlows = {}
-local numOverlays = 0
-
-local function OverlayGlowAnimOutFinished(animGroup)
-	local overlay = animGroup:GetParent();
-	local actionButton = overlay:GetParent();
-	overlay:Hide();
-	tinsert(unusedOverlayGlows, overlay);
-	actionButton.overlay = nil;
-end
-local function OverlayOnHide(overlay)
-	if ( overlay.animOut:IsPlaying() ) then
-		overlay.animOut:Stop();
-		OverlayGlowAnimOutFinished(overlay.animOut);
-	end
+-- SpellActivationAlert animation handling:
+local activationAlertTemplate = "ActionBarButtonSpellActivationAlert"
+if pcall(CreateFrame, "Frame", nil, UIParent, "ActionButtonSpellAlertTemplate") then
+	-- Wow 11.1.7 renamed ActionBarButtonSpellActivationAlert to ActionButtonSpellAlertTemplate
+	activationAlertTemplate = "ActionButtonSpellAlertTemplate"
 end
 
-function IconContainer:GetOverlayGlow()
-	local overlay = tremove(unusedOverlayGlows);
-	if ( not overlay ) then
-		numOverlays = numOverlays + 1;
-		overlay = CreateFrame("Frame", "TMW_ActionButtonOverlay" .. numOverlays, UIParent, "ActionBarButtonSpellActivationAlert");
+if CreateFrame("Frame", nil, UIParent, activationAlertTemplate).ProcStartAnim then
+	-- Wow 10.1.5+
+	function IconContainer:ShowOverlayGlow()
+		local container = self.container
+		local overlay = container.overlay
 
+		if not overlay then
+			overlay = CreateFrame("Frame", nil, container, activationAlertTemplate)
+			container.overlay = overlay
 
-		-- Override scripts from the blizzard template:
-		-- We do this so we don't have to duplicate the template as well.
-		overlay.animOut:SetScript("OnFinished", OverlayGlowAnimOutFinished)
-		overlay:SetScript("OnHide", OverlayOnHide)
-	end
-	return overlay;
-end
+			-- The intro animation to the new activation alert animation in wow 10.1.5 is extremely weird,
+			-- so we're electing to not use it and only use the loop animation (ProcLoop).
+			overlay.ProcStartFlipbook:Hide()
+			-- Masque will keep trying to re-show it, so prevent that.
+			overlay.ProcStartFlipbook.Show = function() end
 
-function IconContainer:ShowOverlayGlow()
-	local IconModule_IconContainer = self
-	self = self.container
+			-- Remove the default OnHide script that stops the animation when the overlay hides, 
+			-- as otherwise the animation will stop if the parent group hides, e.g. when leaving and entering combat rapidly.
+			overlay:SetScript("OnHide", nil)
 
-	if ( self.overlay ) then
-		if ( self.overlay.animOut:IsPlaying() ) then
-			self.overlay.animOut:Stop();
-			self.overlay.animIn:Play();
+			-- Since we're disregarding the intro, add an alpha fade-in:
+			overlay.fadeIn = overlay:CreateAnimationGroup()
+			local alphaFade = overlay.fadeIn:CreateAnimation("Alpha")
+			alphaFade:SetDuration(0.2)
+			alphaFade:SetFromAlpha(0)
+			alphaFade:SetToAlpha(1)
+
+			local frameWidth, frameHeight = container:GetSize()
+			overlay:SetSize(frameWidth * 1.4, frameHeight * 1.4)
+			overlay:SetPoint("CENTER", container, "CENTER", 0, 0)
+			overlay:Hide()
 		end
-	else
-		self.overlay = IconModule_IconContainer:GetOverlayGlow();
-		local frameWidth, frameHeight = self:GetSize();
-		self.overlay:SetParent(self);
-		self.overlay:ClearAllPoints();
-		--Make the height/width available before the next frame:
-		self.overlay:SetSize(frameWidth * 1.4, frameHeight * 1.4);
-		self.overlay:SetPoint("TOPLEFT", self, "TOPLEFT", -frameWidth * 0.2, frameHeight * 0.2);
-		self.overlay:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", frameWidth * 0.2, -frameHeight * 0.2);
-		self.overlay.animIn:Play();
-	end
-end
-
-function IconContainer:HideOverlayGlow()
-	self = self.container
-
-	if ( self.overlay ) then
-		if ( self.overlay.animIn:IsPlaying() ) then
-			self.overlay.animIn:Stop();
+		if not overlay:IsShown() then
+			overlay:Show()
+			overlay.ProcLoop:Play()
+			overlay.fadeIn:Play()
 		end
-		if ( self:IsVisible() ) then
-			self.overlay.animOut:Play();
+	end
+
+	function IconContainer:HideOverlayGlow()
+		local container = self.container
+		local overlay = container.overlay
+
+		if overlay then
+			overlay.ProcStartAnim:Stop()
+			overlay.ProcLoop:Stop()
+			overlay:Hide()
+		end
+	end
+else
+
+	-- Legacy:
+	local function OverlayGlowAnimOutFinished(animGroup)
+		local overlay = animGroup:GetParent();
+		local container = overlay:GetParent();
+		overlay:Hide();
+	end
+	local function OverlayOnHide(overlay)
+		if ( overlay.animOut:IsPlaying() ) then
+			overlay.animOut:Stop();
+			OverlayGlowAnimOutFinished(overlay.animOut);
+		end
+	end
+
+	function IconContainer:ShowOverlayGlow()
+		local container = self.container
+		local overlay = container.overlay
+
+		if overlay then
+			overlay:Show();
+			if overlay.animOut:IsPlaying() then
+				overlay.animOut:Stop();
+			end
 		else
-			OverlayGlowAnimOutFinished(self.overlay.animOut);	--We aren't shown anyway, so we'll instantly hide it.
+			overlay = CreateFrame("Frame", nil, container, "ActionBarButtonSpellActivationAlert");
+			container.overlay = overlay
+
+			-- Override scripts from the blizzard template:
+			-- We do this so we don't have to duplicate the template as well.
+			overlay.animOut:SetScript("OnFinished", OverlayGlowAnimOutFinished)
+			overlay:SetScript("OnHide", OverlayOnHide)
+			
+			local frameWidth, frameHeight = container:GetSize();
+			overlay:SetParent(container);
+			overlay:ClearAllPoints();
+			--Make the height/width available before the next frame:
+			overlay:SetSize(frameWidth * 1.4, frameHeight * 1.4);
+			overlay:SetPoint("TOPLEFT", container, "TOPLEFT", -frameWidth * 0.2, frameHeight * 0.2);
+			overlay:SetPoint("BOTTOMRIGHT", container, "BOTTOMRIGHT", frameWidth * 0.2, -frameHeight * 0.2);
+		end
+
+		overlay.animIn:Play();
+	end
+
+	function IconContainer:HideOverlayGlow()
+		local container = self.container
+		local overlay = container.overlay
+
+		if ( overlay ) then
+			if ( overlay.animIn:IsPlaying() ) then
+				overlay.animIn:Stop();
+			end
+			if ( container:IsVisible() ) then
+				overlay.animOut:Play();
+			else
+				OverlayGlowAnimOutFinished(overlay.animOut);	--We aren't shown anyway, so we'll instantly hide it.
+			end
 		end
 	end
 end

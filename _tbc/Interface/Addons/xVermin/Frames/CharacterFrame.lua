@@ -49,15 +49,31 @@ local function BorderItemSlots()
 		v:CreateBeautyBorder(8)
 
 		itemLink = GetInventoryItemLink('player', GetInventorySlotInfo(v:GetName():gsub('Character', '')))
-		if (itemLink) then
-			local _, _, itemRarity = GetItemInfo(itemLink)
-			if (itemRarity and itemRarity > 1) then
-				r, g, b = GetItemQualityColor(itemRarity)
+
+		if v.ItemLevelText then
+			v.ItemLevelText:SetText('')
+		end
+
+		if itemLink then
+			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
+			if itemQuality and itemQuality > 1 then
+				r, g, b = GetItemQualityColor(itemQuality)
 				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				v:SetBeautyBorderColor(r, g, b, 1)
 			else
 				v:SetBeautyBorderTexture(xVermin.Config.border.default)
 				v:SetBeautyBorderColor(1, 1, 1, 1)
+			end
+
+			if itemLevel then
+				if not v.ItemLevelText then
+					v.ItemLevelText = v:CreateFontString(nil, 'ARTWORK')
+					v.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					v.ItemLevelText:SetShadowOffset(0, 0)
+					v.ItemLevelText:SetPoint('BOTTOMRIGHT', v, 'BOTTOMRIGHT', -2, 2)
+					v.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+				v.ItemLevelText:SetText(itemLevel)
 			end
 		else
 			v:SetBeautyBorderTexture(xVermin.Config.border.default)
@@ -66,17 +82,11 @@ local function BorderItemSlots()
 	end
 end
 
+CharacterModelFrameRotateRightButton:Hide()
+CharacterModelFrameRotateLeftButton:Hide()
+
 local f = CreateFrame('Frame')
 f:RegisterEvent('UNIT_INVENTORY_CHANGED')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		if event == 'PLAYER_ENTERING_WORLD' and (isInitialLogin or isReloadingUi) then
-			BorderItemSlots()
-		end
-		if event == 'UNIT_INVENTORY_CHANGED' then
-			BorderItemSlots()
-		end
-	end
-)
+-- f:RegisterEvent('PLAYER_EQUIPMENT_CHANGED')
+f:SetScript('OnEvent', BorderItemSlots)

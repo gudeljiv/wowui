@@ -22,7 +22,7 @@ cc_combat:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+cc_combat:SetBackdropColor(0, 0, 0, 0.6)
 cc_combat:Show()
 cc_combat:SetFrameStrata('BACKGROUND')
 cc_combat:CreateBeautyBorder(6)
@@ -37,8 +37,8 @@ f:SetScript(
 			cc_combat:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			cc_combat:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 			SetCVar('nameplateShowEnemies', 1)
-			SetCVar('nameplateShowEnemyMinions', 1)
-			SetCVar('nameplateShowEnemyMinus', 1)
+			SetCVar('nameplateShowEnemyMinions', 0)
+			SetCVar('nameplateShowEnemyMinus', 0)
 		-- SetCVar('nameplateShowFriends', 0)
 		-- SetCVar('nameplateShowFriendlyMinions', 0)
 		end
@@ -53,6 +53,7 @@ f:SetScript(
 		end
 	end
 )
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- USER PROFESSIONS
@@ -106,7 +107,8 @@ cc = CreateFrame('Frame', 'CustomContainer_MM', UIParent)
 cc:SetWidth(154)
 cc:SetHeight(30)
 -- cc:SetPoint("TOPRIGHT", "MinimapCluster", "BOTTOMRIGHT", 0, -10)
-cc:SetPoint('TOP', 'MinimapCluster', 'BOTTOM', -15, -20)
+-- cc:SetPoint('TOP', 'MinimapCluster', 'BOTTOM', -15, -20)
+cc:SetPoint('TOP', 'MinimapCluster', 'BOTTOM', -15, 2)
 
 local cc1 = CreateFrame('Frame', 'CustomContainer_1', cc, BackdropTemplateMixin and 'BackdropTemplate')
 cc1:SetWidth(154)
@@ -122,7 +124,7 @@ cc1:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc1:SetBackdropColor(0, 0, 0, 0.4)
+cc1:SetBackdropColor(0, 0, 0, 0.6)
 cc1:Show()
 cc1:SetFrameStrata('BACKGROUND')
 cc1:CreateBeautyBorder(8)
@@ -149,7 +151,7 @@ cc2:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc2:SetBackdropColor(0, 0, 0, 0.4)
+cc2:SetBackdropColor(0, 0, 0, 0.6)
 cc2:Show()
 cc2:SetFrameStrata('BACKGROUND')
 cc2:CreateBeautyBorder(8)

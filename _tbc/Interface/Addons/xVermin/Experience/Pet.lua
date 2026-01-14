@@ -17,13 +17,13 @@ PetXP.XPbar:SetStatusBarTexture('Interface\\AddOns\\xVermin\\Media\\statusbarTex
 PetXP.XPbar:SetAlpha(0)
 
 PetXP.XPbar.Value = PetXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PetXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+PetXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
 PetXP.XPbar.Value:SetShadowOffset(0, 0)
 PetXP.XPbar.Value:SetPoint('LEFT', PetXP.XPbar, 'LEFT', 2, 0)
 PetXP.XPbar.Value:SetVertexColor(1, 1, 1)
 
 PetXP.XPbar.UntilLevel = PetXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PetXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+PetXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
 PetXP.XPbar.UntilLevel:SetShadowOffset(0, 0)
 PetXP.XPbar.UntilLevel:SetPoint('RIGHT', PetXP.XPbar, 'RIGHT', -2, 0)
 PetXP.XPbar.UntilLevel:SetVertexColor(1, 1, 1)
@@ -92,13 +92,13 @@ local function UpdateBarValueAndColor(self, event)
 	if UnitExists('pet') then
 		CurrentXP, MaxXP = GetPetExperience()
 		percent = floor((CurrentXP / MaxXP) * 100)
-		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		r, g, b = xVermin.ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 		PetXP.XPbar:SetMinMaxValues(0, MaxXP)
 		PetXP.XPbar:SetValue(CurrentXP)
-		PetXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ','))
-		-- PetXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ",") .. " / " .. xVermin:FormatNumber(MaxXP, ","))
-		PetXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
-		PetXP.XPbar.Percent:SetText(xVermin:Round(percent) .. '%')
+		PetXP.XPbar.Value:SetText(xVermin.FormatNumber(CurrentXP, ','))
+		-- PetXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ",") .. " / " .. xVermin.FormatNumber(MaxXP, ","))
+		PetXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
+		PetXP.XPbar.Percent:SetText(xVermin.Round(percent) .. '%')
 		PetXP.XPbar:SetStatusBarColor(r, g, b)
 	end
 end
@@ -120,6 +120,12 @@ PetXP:SetScript(
 		C_Timer.After(
 			0.5,
 			function()
+				if UnitLevel('player') == xVermin.MaxPlayerLevel then
+					PetXP:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+				else
+					PetXP:SetPoint('BOTTOM', PlayerXPFrame, 'TOP', 0, 0)
+				end
+
 				UpdateBar()
 			end
 		)

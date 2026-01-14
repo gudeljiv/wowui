@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -17,9 +17,10 @@ local L = TMW.L
 local print = TMW.print
 local type, wipe, pairs, rawget, abs, min, next, GetTime =
 	  type, wipe, pairs, rawget, abs, min, next, GetTime
-local UnitGUID, UnitAura, UnitName, GetSpellInfo =
-	  UnitGUID, UnitAura, UnitName, GetSpellInfo
+local UnitGUID, UnitName =
+	  UnitGUID, UnitName
 
+local GetAuraDataByIndex = C_UnitAuras.GetAuraDataByIndex
 local C_Timer = C_Timer
 local huge = math.huge
 
@@ -28,11 +29,14 @@ local pGUID = nil -- UnitGUID() returns nil at load time, so we set this later.
 local isNumber = TMW.isNumber
 local strlowerCache = TMW.strlowerCache
 local GetSpellTexture = TMW.GetSpellTexture
+local GetSpellInfo = TMW.GetSpellInfo
+local GetSpellName = TMW.GetSpellName
 
 local Aura
 
 
 local Type = TMW.Classes.IconType:New("dotwatch")
+Type.obsolete = not CombatLogGetCurrentEventInfo
 LibStub("AceEvent-3.0"):Embed(Type)
 Type.name = L["ICONMENU_DOTWATCH"]
 Type.desc = L["ICONMENU_DOTWATCH_DESC"]
@@ -153,18 +157,20 @@ local function CreateAllUnits()
 end
 
 local function ScanForAura(GUID, spellName, spellID)
+	local time = GetTime()
+
 	for i = 1, #AllUnits do
 		local unit = AllUnits[i]
 		if GUID == UnitGUID(unit) then
-			local buffName, duration, expirationTime, id, _
+			local instance
 			local index, stage = 1, 1
 			local filter = "HELPFUL|PLAYER"
 
 			while true do
-				buffName, _, _, _, duration, expirationTime, _, _, _, id = UnitAura(unit, index, filter)
+				instance = GetAuraDataByIndex(unit, index, filter)
 				index = index + 1
 
-				if not id then
+				if not instance then
 					if stage == 1 then
 						-- If we reached the end of auras found for buffs, switch to debuffs
 						index, stage = 1, 2
@@ -174,12 +180,12 @@ local function ScanForAura(GUID, spellName, spellID)
 					end
 				elseif 
 					-- Spell matches
-					(id == spellID or buffName == spellName) and
+					(instance.spellId == spellID or instance.name == spellName) and
 					-- Make sure that this is an application that just happened before returning the duration.
 					-- Or, if the duration is 0, then this effect has no duration.
-					duration == 0 or abs((GetTime() + duration) - expirationTime) < 0.1 
+					instance.duration == 0 or abs((time + instance.duration) - instance.expirationTime) < 0.1 
 				then 
-					return duration
+					return instance.duration
 				end
 			end
 
@@ -201,11 +207,24 @@ local function VerifyAll()
 			local filter = "HELPFUL|PLAYER"
 
 			while true do
-				local buffName, _, count, _, duration, expirationTime, _, _, _, spellID = UnitAura(unit, index, filter)
+				local instance = GetAuraDataByIndex(unit, index, filter)
 				index = index + 1
 
-				if spellID then
-					buffName = strlowerCache[buffName]
+				if not instance then
+					-- If we reached the end of auras found for buffs, switch to debuffs
+					if stage == 1 then
+						index, stage = 1, 2
+						filter = "HARMFUL|PLAYER"
+					else
+						-- Break while true loop (spell loop)
+						break
+					end
+				else
+					local buffName = strlowerCache[instance.name]
+					local count = instance.applications
+					local duration = instance.duration
+					local expirationTime = instance.expirationTime
+					local spellID = instance.spellId
 
 					auras = auras or Auras[GUID]
 					local aura = auras[spellID]
@@ -238,15 +257,6 @@ local function VerifyAll()
 								icon.NextUpdateTime = 0
 							end
 						end
-					end
-				else
-					-- If we reached the end of auras found for buffs, switch to debuffs
-					if stage == 1 then
-						index, stage = 1, 2
-						filter = "HARMFUL|PLAYER"
-					else
-						-- Break while true loop (spell loop)
-						break
 					end
 				end
 			end
@@ -338,7 +348,7 @@ Aura = TMW:NewClass("Aura"){
 		self.unitName = destName
 
 		self.spellID = spellID
-		self.spellName = GetSpellInfo(spellID)
+		self.spellName = GetSpellName(spellID)
 		self.start = TMW.time
 		self.lastSeen = TMW.time
 		local duration = BaseDurations[spellID]

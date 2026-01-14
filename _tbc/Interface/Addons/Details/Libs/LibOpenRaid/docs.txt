@@ -48,6 +48,21 @@ local isReady, normalizedPercent, timeLeft, charges, minValue, maxValue, current
 --by using a cooldown info
 local isReady, normalizedPercent, timeLeft, charges, minValue, maxValue, currentValue, cooldownDuration = openRaidLib.GetCooldownStatusFromCooldownInfo(cooldownInfo)
 
+--add spells to a custom filter
+--to change the spells in the filter just call it again with different spells, spells not included in the new table are removed from the filter
+--to remove the filter, call it with an empty table
+@filterName: any string containing alphanumeric characters
+@spells: a table containing spellIds {spellId, spellId, spellId, ...}
+openRaidLib.AddCooldownFilter(filterName, spells)
+
+--get a list of filters which a spell has, returns a table in map format: {[filterName] = true}
+--@spellId: the ID of a spell
+--@defaultFilterOnly (bool): if true only return built-in filters, example: "defensive-raid", "ofensive".
+--@customFiltersOnly (bool): if true onlt return a list of custom filters where the spell was added.
+local filterListArray = openRaidLib.GetSpellFilters(spellId, defaultFilterOnly, customFiltersOnly)
+
+--request information about a spell for all units in the raid, units which has this cooldown will report back with a "CooldownUpdate" event
+openRaidLib.RequestCooldownInfo(spellId)
 
 EQUIPMENT:
 local allPlayersGear = openRaidLib.GetAllUnitsGear()
@@ -64,6 +79,20 @@ playerGear = {
     .noGems = {socketId}
     .noEnchants = {socketId}
     .weaponEnchant = number (oils)
+    .equippedGear = {
+        {
+            .slotId = number
+            .gemSlots = number
+            .itemLevel = number
+            .itemLink = string
+            .itemQuality = number
+            .itemId = number
+            .itemName = string
+            .enchantId = number
+            .gemId = number
+            .isTier = boolean
+        }
+    }
 }
 
 
@@ -80,17 +109,67 @@ unitInfo = {
     .specId = number
     .specName = string
     .role = string
-    .renown = number
-    .covenantId = number
-    .talents = {talentId, talentId, talentId, ...}
+    .heroTalentId = number
+    .talents = dragonflight talent string, e.g: "CkGAvcQZXENQPQXqed372Hg2KuxMzssYmZmZWegZZYGjFGLjZAAAAAAAAAAAAsBDzwYGNzAmxYmxgplZGAAAAAwAAAgltxGmmZWGCAABsgZmBA"
     .pvpTalents = {talentId, talentId, talentId}
-    .conduits = {spellId, conduitLevel, spellId, conduitLevel, spellId, conduitLevel, ...}
     .class = string class eng name 'ROGUE'
     .classId = number
-    .className = string class localized name
+    .className = string class localized name 'Rogue'
     .name = string name without realm
     .nameFull = string name with realm 'unitName-ServerName'
 }
+
+
+KEYSTONE
+--send and receive mythic+ keystone information and works only in retail
+--the event "KeystoneUpdate" is triggered on receive keystone info from another player
+
+local allKeystoneInfo = openRaidLib.GetAllKeystonesInfo()
+allKeystoneInfo = {
+    ["unitName1"] = keystoneInfo,
+    ["unitName2"] = keystoneInfo,
+    ["unitName3"] = keystoneInfo,
+}
+
+--@mapID and @challengeMapID are the instanceMapID, also obtained with GetInstanceInfo(), can be used to retrive map name with GetRealZoneText(mapID)
+--@mythicPlusMapID is used with C_ChallengeMode.GetMapUIInfo(mythicPlusMapID) to retrive the map name for the dungeon
+--@classID: class id as number (1 to 12)
+--@rating: mythic plus rating on the current season
+local keystoneInfo = openRaidLib.GetKeystoneInfo(unitId)
+keystoneInfo = {
+    .level = number,
+    .mapID = number,
+    .challengeMapID = number,
+    .classID = number,
+    .rating = number,
+    .mythicPlusMapID = number,
+}
+
+--request all online players in the guild to send their keystone information
+--this call fails if the player isn't in a guild
+local requestSent = openRaidLib.RequestKeystoneDataFromGuild()
+
+--request to players in your party to send their keystone information
+--this call fails if the player is in raid
+local requestSent = openRaidLib.RequestKeystoneDataFromParty()
+
+--request to players in your raid to send their keystone information
+--this call fails if not in a raid group
+local requestSent = openRaidLib.RequestKeystoneDataFromRaid()
+
+
+FLASK and FOOD buffs
+--@spellId: a regular spellId
+local flaskInfo = openRaidLib.GetFlaskInfoBySpellId(spellId)
+
+--@auraInfo: UnitAuraInfo -> https://wowpedia.fandom.com/wiki/Struct_UnitAuraInfo see C_UnitAuras.GetAuraDataBySlot()
+local flaskTier = openRaidLib.GetFlaskTierFromAura(auraInfo)
+
+--@spellId: a regular spellId
+local foodInfo = openRaidLib.GetFoodInfoBySpellId(spellId)
+
+--@auraInfo: UnitAuraInfo -> https://wowpedia.fandom.com/wiki/Struct_UnitAuraInfo see C_UnitAuras.GetAuraDataBySlot()
+local foodTier = openRaidLib.GetFoodTierFromAura(auraInfo)
 
 
 Callbacks:
@@ -220,7 +299,7 @@ openRaidLib.RegisterCallback(MyAddonObject, "CooldownRemoved", "OnUnitLostCooldo
 ===================================================================================================================================
 
 function MyAddonObject.OnCooldownListWipe(allUnitsCooldowns)
-    --print ("is nil:", next(allUnitsCooldowns))
+    --print("is nil:", next(allUnitsCooldowns))
 end
 
 --registering the callback:
@@ -242,10 +321,10 @@ function MyAddonObject.OnGearUpdate(unitId, unitGear, allUnitsGear)
     local noEnchantTable = unitGear.noEnchants
     local noGemsTable = unitGear.noGems
 
-    for index, slotIdWithoutEnchant in ipairs (noEnchantTable) do
+    for index, slotIdWithoutEnchant in ipairs(noEnchantTable) do
     end
 
-    for index, slotIdWithEmptyGemSocket in ipairs (noGemsTable) do
+    for index, slotIdWithEmptyGemSocket in ipairs(noGemsTable) do
     end
 end
 
@@ -268,7 +347,7 @@ openRaidLib.RegisterCallback(MyAddonObject, "GearDurabilityUpdate", "OnGearDurab
 ===================================================================================================================================
 
 function MyAddonObject.OnGearListWiped(allUnitsGear)
-    --print ("is nil:", next(allUnitsGear))
+    --print("is nil:", next(allUnitsGear))
 end
 
 --registering the callback:
@@ -288,11 +367,9 @@ function MyAddonObject.OnUnitUpdate(unitId, unitInfo, allUnitsInfo)
         local specId = unitInfo.specId
         local specName = unitInfo.specName
         local role = unitInfo.role
-        local renown = unitInfo.renown
-        local covenantId = unitInfo.covenantId
+        local heroTalentId = unitInfo.heroTalentId
         local talents = unitInfo.talents
         local pvpTalents = unitInfo.pvpTalents
-        local conduits = unitInfo.conduits
         local class = unitInfo.class = string class eng name 'ROGUE'
         local classId = unitInfo.classId = number
         local className = unitInfo.className
@@ -318,34 +395,12 @@ openRaidLib.RegisterCallback(MyAddonObject, "UnitInfoWipe", "OnUnitInfoWipe")
 Note: a "UnitUpdate" callback is triggered right after this event to notify the player info is updated.
 
 ===================================================================================================================================
-"TalentUpdate": when a unit changed a talent
+"TalentUpdate": when a unit changed a talent | DEPRECATRED | Use: OnUnitUpdate
 ===================================================================================================================================
 
-function MyAddonObject.OnTalentUpdate(unitId, talents, unitInfo, allUnitsInfo)
-    for i = 1, 7 do
-        local talentId = talents[i]
-        local talentID, talentName, texture, selected, available = GetTalentInfoByID(talentId)
-        print(talentName)
-    end
-end
-
---registering the callback:
-openRaidLib.RegisterCallback(MyAddonObject, "TalentUpdate", "OnTalentUpdate")
-
 ===================================================================================================================================
-"PvPTalentUpdate": when an unit changed a pvp talent
+"PvPTalentUpdate": when an unit changed a pvp talent | DEPRECATRED | Use: OnUnitUpdate
 ===================================================================================================================================
-
-function MyAddonObject.OnPvPTalentUpdate(unitId, pvpTalents, unitInfo, allUnitsInfo)
-    for i = 1, 3 do
-        local talentId = pvpTalents[i]
-        local talentID, talentName, icon, selected, available, spellID, unlocked, row, column, known, grantedByAura = GetPvpTalentInfoByID(talentId)
-        print(talentName)
-    end
-end
-
---registering the callback:
-openRaidLib.RegisterCallback(MyAddonObject, "PvPTalentUpdate", "OnPvPTalentUpdate")
 
 ===================================================================================================================================
 "UnitDeath": when an unit died
@@ -369,3 +424,25 @@ end
 --registering the callback:
 openRaidLib.RegisterCallback(MyAddonObject, "UnitAlive", "OnUnitRess")
 
+===================================================================================================================================
+"KeystoneUpdate": triggered when the list of keystones got an update
+===================================================================================================================================
+
+function MyAddonObject.OnKeystoneUpdate(unitName, keystoneInfo, allKeystoneInfo)
+    local mapName = C_ChallengeMode.GetMapUIInfo(keystoneInfo.mythicPlusMapID)
+    print(unitName .. " has a " .. keystoneInfo.level .. " keystone for map " .. mapName  .. ".")
+end
+
+--registering the callback:
+openRaidLib.RegisterCallback(MyAddonObject, "KeystoneUpdate", "OnKeystoneUpdate")
+
+===================================================================================================================================
+"KeystoneWipe": triggered after the call openRaidLib.WipeKeystoneData()
+===================================================================================================================================
+
+function MyAddonObject.OnKeystoneUpdate(allKeystoneInfo)
+    print("no keystone data:", next(allKeystoneInfo) == nil)
+end
+
+--registering the callback:
+openRaidLib.RegisterCallback(MyAddonObject, "KeystoneWipe", "OnKeystoneWipe")

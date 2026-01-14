@@ -1,5 +1,8 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, OptionsPrivate = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 
 -- Magic constant
 local deleteCondition = {}
@@ -23,7 +26,38 @@ local function AdjustConditions(data, replacements)
   end
 end
 
-function WeakAuras.DeleteSubRegion(data, index, regionType)
+local function ReplacePrefix(hay, replacements)
+  for old, new in pairs(replacements) do
+    if hay:sub(1, #old) == old then
+      return new .. hay:sub(#old + 1)
+    end
+  end
+end
+
+local function AdjustAnchors(data, replacements)
+  if not data.subRegions then
+    return
+  end
+
+  for _, subRegionData in ipairs(data.subRegions) do
+    local anchor_area = subRegionData.anchor_area
+    if anchor_area then
+      local replaced = ReplacePrefix(anchor_area, replacements)
+      if replaced then
+        subRegionData.anchor_area = replaced
+      end
+    end
+    local anchor_point = subRegionData.anchor_point
+    if anchor_point then
+      local replaced = ReplacePrefix(anchor_point, replacements)
+      if replaced then
+        subRegionData.anchor_point = replaced
+      end
+    end
+  end
+end
+
+function OptionsPrivate.DeleteSubRegion(data, index, regionType)
   if not data.subRegions then
     return
   end
@@ -39,6 +73,7 @@ function WeakAuras.DeleteSubRegion(data, index, regionType)
     end
 
     AdjustConditions(data, replacements);
+    AdjustAnchors(data, replacements)
 
     WeakAuras.Add(data)
     OptionsPrivate.ClearOptions(data.id)
@@ -58,6 +93,7 @@ function OptionsPrivate.MoveSubRegionUp(data, index, regionType)
     }
 
     AdjustConditions(data, replacements);
+    AdjustAnchors(data, replacements)
 
     WeakAuras.Add(data)
     OptionsPrivate.ClearOptions(data.id)
@@ -77,6 +113,7 @@ function OptionsPrivate.MoveSubRegionDown(data, index, regionType)
     }
 
     AdjustConditions(data, replacements);
+    AdjustAnchors(data, replacements)
 
     WeakAuras.Add(data)
     OptionsPrivate.ClearOptions(data.id)
@@ -95,7 +132,8 @@ function OptionsPrivate.DuplicateSubRegion(data, index, regionType)
     for i = index + 1, #data.subRegions do
       replacements["sub." .. i .. "."] = "sub." .. (i + 1) .. "."
     end
-    AdjustConditions(data, replacements);
+    AdjustConditions(data, replacements)
+    AdjustAnchors(data, replacements)
 
     WeakAuras.Add(data)
     OptionsPrivate.ClearOptions(data.id)
@@ -123,7 +161,7 @@ function OptionsPrivate.AddUpDownDeleteDuplicate(options, parentData, index, sub
   end
   options.__delete = function()
     for child in OptionsPrivate.Private.TraverseLeafsOrAura(parentData) do
-      WeakAuras.DeleteSubRegion(child, index, subRegionType)
+      OptionsPrivate.DeleteSubRegion(child, index, subRegionType)
     end
     WeakAuras.ClearAndUpdateOptions(parentData.id)
   end

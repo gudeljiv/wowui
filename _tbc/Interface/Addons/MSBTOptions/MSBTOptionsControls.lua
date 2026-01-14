@@ -132,7 +132,7 @@ end
 -- ****************************************************************************
 local function Listbox_ScrollUp(this)
 	local slider = this.sliderFrame
-	slider:SetValue(slider:GetValue() -  slider:GetValueStep())
+	slider:SetValue(slider:GetValue() - slider:GetValueStep())
 end
 
 
@@ -333,7 +333,7 @@ end
 
 
 -- ****************************************************************************
--- Set the function to be called when a new line needs to be created.  The
+-- Set the function to be called when a new line needs to be created. The
 -- called function must return a "Button" frame.
 -- ****************************************************************************
 local function Listbox_SetCreateLineHandler(this, handler)
@@ -379,7 +379,7 @@ local function Listbox_AddItem(this, key, forceVisible)
 	local items = this.items
 	items[#items + 1] = key
 
-	--  Create a new line if the max number allowed per page hasn't been reached.
+	-- Create a new line if the max number allowed per page hasn't been reached.
 	local lines = this.lines
 	if (#lines < this.linesPerPage) then
 		Listbox_CreateLine(this)
@@ -520,7 +520,7 @@ local function CreateListbox(parent)
 	end
 
 	-- Create container frame.
-	local listbox = CreateFrame("Frame", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local listbox = CreateFrame("Frame", nil, parent)
 
 	-- Highlight frame.
 	local highlight = CreateFrame("Frame")
@@ -532,13 +532,13 @@ local function CreateListbox(parent)
 	texture:SetPoint("BOTTOMRIGHT", highlight, "BOTTOMRIGHT")
 
 	-- Create display area.
-	local display = CreateFrame("Frame", nil, listbox, BackdropTemplateMixin and "BackdropTemplate")
+	local display = CreateFrame("Frame", nil, listbox)
 	display:SetPoint("TOPLEFT", listbox, "TOPLEFT")
 	display:SetPoint("BOTTOMRIGHT", listbox, "BOTTOMRIGHT")
 
 
 	-- Create slider to track the position.
-	local slider = CreateFrame("Slider", nil, listbox, BackdropTemplateMixin and "BackdropTemplate")
+	local slider = CreateFrame("Slider", nil, listbox)
 	slider:Hide()
 	slider:SetWidth(16)
 	slider:SetPoint("TOPRIGHT", listbox, "TOPRIGHT", 0, -16)
@@ -729,7 +729,7 @@ local function CreateCheckbox(parent)
 	end
 
 	-- Create container frame.
-	local checkbox = CreateFrame("Frame", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local checkbox = CreateFrame("Frame", nil, parent)
 
 	-- Create check button.
 	local checkbutton = CreateFrame("CheckButton", nil, checkbox)
@@ -818,11 +818,11 @@ end
 
 
 -- ****************************************************************************
--- Creates and returns a generic button object.  Only used internally.
+-- Creates and returns a generic button object. Only used internally.
 -- ****************************************************************************
 local function CreateButton(parent)
 	-- Create button frame.
-	local button = CreateFrame("Button", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local button = CreateFrame("Button", nil, parent)
 	button:SetScript("OnClick", Button_OnClick)
 	button:SetScript("OnEnter", Button_OnEnter)
 	button:SetScript("OnLeave", Button_OnLeave)
@@ -1050,7 +1050,7 @@ local function CreateSlider(parent)
 	end
 
 	-- Create container frame.
-	local slider = CreateFrame("Frame", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local slider = CreateFrame("Frame", nil, parent)
 	slider:SetHeight(30)
 
 	-- Create slider.
@@ -1176,7 +1176,7 @@ end
 -- Called by listbox to create a line.
 -- ****************************************************************************
 local function Dropdown_CreateLine(this)
-	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
+	local frame = CreateFrame("Button", nil, this)
 
 	local fontString = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
 	fontString:SetPoint("LEFT", frame, "LEFT")
@@ -1431,7 +1431,7 @@ local function CreateDropdown(parent)
 
 
 	-- Create container frame.
-	local dropdown = CreateFrame("Frame", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local dropdown = CreateFrame("Frame", nil, parent)
 	dropdown:SetHeight(38)
 	dropdown:EnableMouse(true)
 	dropdown:SetScript("OnEnter", Dropdown_OnEnter)
@@ -1470,7 +1470,7 @@ local function CreateDropdown(parent)
 
 
 	-- Dropdown button.
-	local button = CreateFrame("Button", nil, dropdown, BackdropTemplateMixin and "BackdropTemplate")
+	local button = CreateFrame("Button", nil, dropdown)
 	button:SetWidth(24)
 	button:SetHeight(24)
 	button:SetPoint("BOTTOMRIGHT")
@@ -1675,11 +1675,11 @@ end
 -- ****************************************************************************
 local function CreateEditbox(parent)
 	-- Create container frame.
-	local editbox = CreateFrame("Frame", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local editbox = CreateFrame("Frame", nil, parent)
 	editbox:SetHeight(32)
 
 	-- Create editbox frame.
-	local editboxFrame = CreateFrame("Editbox", nil, editbox, BackdropTemplateMixin and "BackdropTemplate")
+	local editboxFrame = CreateFrame("Editbox", nil, editbox)
 	editboxFrame:SetHeight(20)
 	editboxFrame:SetPoint("BOTTOMLEFT", editbox, "BOTTOMLEFT", 5, 0)
 	editboxFrame:SetPoint("BOTTOMRIGHT")
@@ -1867,7 +1867,7 @@ end
 -- ****************************************************************************
 local function CreateColorswatch(parent)
 	-- Create button frame.
-	local colorswatch = CreateFrame("Button", nil, parent, BackdropTemplateMixin and "BackdropTemplate")
+	local colorswatch = CreateFrame("Button", nil, parent)
 	colorswatch:SetWidth(16)
 	colorswatch:SetHeight(16)
 	colorswatch:SetNormalTexture("Interface\\ChatFrame\\ChatFrameColorSwatch")

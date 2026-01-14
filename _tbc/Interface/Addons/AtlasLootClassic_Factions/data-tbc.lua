@@ -13,8 +13,8 @@ local format = string.format
 -- ----------------------------------------------------------------------------
 local addonname = ...
 local AtlasLoot = _G.AtlasLoot
-if AtlasLoot:GetGameVersion() < 2 then return end
-local data = AtlasLoot.ItemDB:Add(addonname, 1, 2)
+if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
+local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.BC_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales

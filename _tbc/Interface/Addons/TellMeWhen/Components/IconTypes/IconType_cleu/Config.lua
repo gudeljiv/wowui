@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -9,7 +9,6 @@
 -- Currently maintained by
 -- Cybeloras of Aerie Peak
 -- --------------------
-
 
 if not TMW then return end
 
@@ -100,7 +99,10 @@ Config.Events = {
 	"CAT_CAST",
 		"SPELL_CAST_FAILED",
 		"SPELL_CAST_START",
-		"SPELL_CAST_SUCCESS",
+		"SPELL_CAST_SUCCESS",	
+		"SPELL_EMPOWER_START",	
+		"SPELL_EMPOWER_END",
+		"SPELL_EMPOWER_INTERRUPT",
 	"SPACE",
 		"SPELL_INTERRUPT",-- extraSpellID/name
 		"SPELL_INTERRUPT_SPELL",-- extraSpellID/name (fake event)
@@ -151,32 +153,6 @@ Config.Flags = {
     "COMBATLOG_OBJECT_NONE",
 }
 
-Config.BetterMasks = {
-	-- some of the default masks contain bits that arent used by any flags (read: they suck), so we will make our own
-	COMBATLOG_OBJECT_REACTION_MASK = bit.bor(
-		COMBATLOG_OBJECT_REACTION_FRIENDLY,
-		COMBATLOG_OBJECT_REACTION_NEUTRAL,
-		COMBATLOG_OBJECT_REACTION_HOSTILE
-	),
-    COMBATLOG_OBJECT_TYPE_MASK = bit.bor(
-		COMBATLOG_OBJECT_TYPE_PLAYER,
-		COMBATLOG_OBJECT_TYPE_NPC,
-		COMBATLOG_OBJECT_TYPE_PET,
-		COMBATLOG_OBJECT_TYPE_GUARDIAN,
-		COMBATLOG_OBJECT_TYPE_OBJECT
-	),
-	COMBATLOG_OBJECT_CONTROL_MASK = bit.bor(
-		COMBATLOG_OBJECT_CONTROL_PLAYER,
-		COMBATLOG_OBJECT_CONTROL_NPC
-	),
-	COMBATLOG_OBJECT_AFFILIATION_MASK = bit.bor(
-		COMBATLOG_OBJECT_AFFILIATION_MINE,
-		COMBATLOG_OBJECT_AFFILIATION_PARTY,
-		COMBATLOG_OBJECT_AFFILIATION_RAID,
-		COMBATLOG_OBJECT_AFFILIATION_OUTSIDER
-	),
-}
-
 
 function Config:LoadConfig()
 	if TellMeWhen_CLEUOptions then
@@ -190,11 +166,39 @@ end
 --- Warn the user if they have disabled all flags in a single category.
 function Config:CheckMasks()
 	TMW.HELP:Hide("CLEU_WHOLECATEGORYEXCLUDED")
+	
+	if not COMBATLOG_OBJECT_REACTION_FRIENDLY then return end
+
+	local BetterMasks = {
+		-- some of the default masks contain bits that arent used by any flags (read: they suck), so we will make our own
+		COMBATLOG_OBJECT_REACTION_MASK = bit.bor(
+			COMBATLOG_OBJECT_REACTION_FRIENDLY,
+			COMBATLOG_OBJECT_REACTION_NEUTRAL,
+			COMBATLOG_OBJECT_REACTION_HOSTILE
+		),
+		COMBATLOG_OBJECT_TYPE_MASK = bit.bor(
+			COMBATLOG_OBJECT_TYPE_PLAYER,
+			COMBATLOG_OBJECT_TYPE_NPC,
+			COMBATLOG_OBJECT_TYPE_PET,
+			COMBATLOG_OBJECT_TYPE_GUARDIAN,
+			COMBATLOG_OBJECT_TYPE_OBJECT
+		),
+		COMBATLOG_OBJECT_CONTROL_MASK = bit.bor(
+			COMBATLOG_OBJECT_CONTROL_PLAYER,
+			COMBATLOG_OBJECT_CONTROL_NPC
+		),
+		COMBATLOG_OBJECT_AFFILIATION_MASK = bit.bor(
+			COMBATLOG_OBJECT_AFFILIATION_MINE,
+			COMBATLOG_OBJECT_AFFILIATION_PARTY,
+			COMBATLOG_OBJECT_AFFILIATION_RAID,
+			COMBATLOG_OBJECT_AFFILIATION_OUTSIDER
+		),
+	}
 
 	-- Check the flags of the icon to make sure that the user hasn't excluded every flag in a given category.
 	-- If they have, then they have effectively disabled the icon. Tell the user if they have done this.
 	for _, key in TMW:Vararg("SourceFlags", "DestFlags") do
-		for maskName, mask in pairs(Config.BetterMasks) do
+		for maskName, mask in pairs(BetterMasks) do
 			if bit.band(TMW.CI.ics[key], mask) == 0 then
 				local category = L["CLEU_" .. maskName]
 				TMW.HELP:Show{

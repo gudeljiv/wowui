@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -34,12 +34,6 @@ local IE = TMW.IE
 local CI = TMW.CI
 
 if not TEXT then return end
-
-
-local clientVersion = select(4, GetBuildInfo())
-
-
-
 
 
 -------------------------------
@@ -648,11 +642,13 @@ function TEXT:CacheUsedStrings()
 end
 
 local function CopyString_DropDown_OnClick(button, dropdown)
-	local id = dropdown:GetParent():GetParent():GetID()
+	local copyButton = dropdown.Activator
+
+	local id = copyButton:GetParent():GetID()
 	
 	CI.icon:GetSettingsPerView().Texts[id] = button.value
 	
-	dropdown:OnSettingSaved()
+	copyButton:OnSettingSaved()
 end
 function TEXT.CopyString_DropDown(dropdown)
 	TEXT:CacheUsedStrings()

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -422,6 +422,13 @@ function EVENTS:LoadEventPickerButtons()
 		frame.event = eventData.event
 		frame.Title:SetText(get(eventData.text))
 		TMW:TT(frame, eventData.text, eventData.desc, 1, 1)
+
+		if TMW.clientHasSecrets and eventData.maybeSecret then
+			frame.RestrictedIcon:Show()
+			TMW:TT(frame.RestrictedIcon, "UIPANEL_SECRETS_DISALLOWED", "UIPANEL_SECRETS_EVENT_DISALLOWED_DESC")
+		else
+			frame.RestrictedIcon:Hide()
+		end
 
 		previousFrame = frame
 	end

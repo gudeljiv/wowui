@@ -4,9 +4,11 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local OpenMailTask = TSM.Include("LibTSMClass").DefineClass("OpenMailTask", TSM.TaskList.ItemTask)
-local L = TSM.Include("Locale").GetTable()
+local TSM = select(2, ...) ---@type TSM
+local LibTSMClass = LibStub("LibTSMClass")
+local OpenMailTask = LibTSMClass.DefineClass("OpenMailTask", TSM.TaskList.ItemTask)
+local L = TSM.Locale.GetTable()
+local DefaultUI = TSM.LibTSMWoW:Include("UI.DefaultUI")
 TSM.TaskList.OpenMailTask = OpenMailTask
 local private = {
 	activeTasks = {},
@@ -22,7 +24,7 @@ local private = {
 function OpenMailTask.__init(self)
 	self.__super:__init()
 	if not private.registeredCallbacks then
-		TSM.Mailing.RegisterFrameCallback(private.FrameCallback)
+		DefaultUI.RegisterMailVisibleCallback(private.FrameCallback)
 		private.registeredCallbacks = true
 	end
 end
@@ -54,7 +56,7 @@ end
 -- ============================================================================
 
 function OpenMailTask._UpdateState(self)
-	if not TSM.Mailing.IsOpen() then
+	if not DefaultUI.IsMailVisible() then
 		return self:_SetButtonState(false, L["NOT OPEN"])
 	else
 		return self:_SetButtonState(false, L["OPEN"])

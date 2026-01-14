@@ -24,39 +24,40 @@ local L = addon.L
 
 --<GLOBALS
 local _G = _G
-local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER
+local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Backpack ) or 0
+local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
 local band = _G.bit.band
 local BankFrame = _G.BankFrame
 local BANK_BAG = _G.BANK_BAG
 local BANK_BAG_PURCHASE = _G.BANK_BAG_PURCHASE
-local BANK_CONTAINER = _G.BANK_CONTAINER
+local BANK_CONTAINER = _G.BANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Bank ) or -1
 local ClearCursor = _G.ClearCursor
-local ContainerIDToInventoryID = _G.ContainerIDToInventoryID
+local ContainerIDToInventoryID = C_Container and _G.C_Container.ContainerIDToInventoryID or _G.ContainerIDToInventoryID
 local COSTS_LABEL = _G.COSTS_LABEL
 local CreateFrame = _G.CreateFrame
 local CursorHasItem = _G.CursorHasItem
 local CursorUpdate = _G.CursorUpdate
 local GameTooltip = _G.GameTooltip
 local GetBankSlotCost = _G.GetBankSlotCost
-local GetCoinTextureString = _G.GetCoinTextureString
-local GetContainerItemID = _G.GetContainerItemID
-local GetContainerItemInfo = _G.GetContainerItemInfo
-local GetContainerNumFreeSlots = _G.GetContainerNumFreeSlots
-local GetContainerNumSlots = _G.GetContainerNumSlots
+local GetCoinTextureString = _G.C_CurrencyInfo.GetCoinTextureString
+local GetContainerItemID = C_Container and _G.C_Container.GetContainerItemID or _G.GetContainerItemID
+local GetContainerItemInfo = C_Container and _G.C_Container.GetContainerItemInfo or _G.GetContainerItemInfo
+local GetContainerNumFreeSlots = C_Container and _G.C_Container.GetContainerNumFreeSlots or _G.GetContainerNumFreeSlots
+local GetContainerNumSlots = C_Container and _G.C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
 local geterrorhandler = _G.geterrorhandler
 local GetInventoryItemTexture = _G.GetInventoryItemTexture
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
 local GetNumBankSlots = _G.GetNumBankSlots
 local ipairs = _G.ipairs
 local IsInventoryItemLocked = _G.IsInventoryItemLocked
-local KEYRING_CONTAINER = _G.KEYRING_CONTAINER
 local next = _G.next
-local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
+local NUM_REAGENTBAG_SLOTS = _G.NUM_REAGENTBAG_SLOTS
+local NUM_TOTAL_EQUIPPED_BAG_SLOTS = _G.NUM_TOTAL_EQUIPPED_BAG_SLOTS
 local NUM_BANKGENERIC_SLOTS = _G.NUM_BANKGENERIC_SLOTS
 local pairs = _G.pairs
 local pcall = _G.pcall
 local PickupBagFromSlot = _G.PickupBagFromSlot
-local PickupContainerItem = _G.PickupContainerItem
+local PickupContainerItem = C_Container and C_Container.PickupContainerItem or PickupContainerItem
 local PlaySound = _G.PlaySound
 local PutItemInBag = _G.PutItemInBag
 local select = _G.select
@@ -104,10 +105,10 @@ do
 		addon:Debug('FindSlotForItem', itemId, GetItemInfo(itemId), 'count=', itemCount, 'maxStack=', maxStack, 'family=', itemFamily, 'bags:', unpack(bags))
 		local bestBag, bestSlot, bestScore
 		for i, bag in pairs(bags) do
-			local scoreBonus = band(bag == KEYRING_CONTAINER and 256 or select(2, GetContainerNumFreeSlots(bag)) or 0, itemFamily) ~= 0 and maxStack or 0
+			local scoreBonus = band(select(2, GetContainerNumFreeSlots(bag)) or 0, itemFamily) ~= 0 and maxStack or 0
 			for slot = 1, GetContainerNumSlots(bag) do
-				local texture, slotCount, locked = GetContainerItemInfo(bag, slot)
-				if not locked and (not texture or GetContainerItemID(bag, slot) == itemId) then
+				local texture, slotCount, locked = addon:GetContainerItemTextureCountLocked(bag, slot)
+				if not locked and (not texture or GetContainerItemID(bag, slot) == GetContainerItemID(bag, slot)) then
 					slotCount = slotCount or 0
 					if slotCount + itemCount <= maxStack then
 						local slotScore = slotCount + scoreBonus
@@ -137,7 +138,7 @@ do
 				currentSlot = currentSlot + 1
 				local itemId = GetContainerItemID(currentBag, currentSlot)
 				if itemId then
-					local _, count = select(2, GetContainerItemInfo(currentBag, currentSlot))
+					local count = addon:GetContainerItemStackCount(currentBag, currentSlot)
 					PickupContainerItem(currentBag, currentSlot)
 					if CursorHasItem() then
 						locked[currentBag] = true
@@ -196,7 +197,7 @@ do
 	function EmptyBag(bag)
 		ClearCursor()
 		wipe(otherBags)
-		local bags = BAG_IDS[BAG_IDS.BANK[bag] and "BANK" or "BAGS"]
+		local bags = BAG_IDS[BAG_IDS.BANK[bag] and "BANK_ONLY" or "BAGS"]
 		for otherBag in pairs(bags) do
 			if otherBag ~= bag then
 				tinsert(otherBags, otherBag)
@@ -216,8 +217,12 @@ end
 --------------------------------------------------------------------------------
 -- Regular bag buttons
 --------------------------------------------------------------------------------
-
-local bagButtonClass, bagButtonProto = addon:NewClass("BagSlotButton", "Button", "ItemButtonTemplate", "ABEvent-1.0")
+local bagButtonClass, bagButtonProto
+if addon.isRetail then
+	bagButtonClass, bagButtonProto = addon:NewClass("BagSlotButton", "ItemButton", nil, "ABEvent-1.0")
+else
+	bagButtonClass, bagButtonProto = addon:NewClass("BagSlotButton", "Button", "ItemButtonTemplate", "ABEvent-1.0")
+end
 
 function bagButtonProto:OnCreate(bag)
 	self.bag = bag
@@ -359,7 +364,12 @@ end
 
 function bankButtonProto:UpdateStatus()
 	local numSlots = GetNumBankSlots()
-	local bankSlot = self.bag - NUM_BAG_SLOTS
+	local bankSlot
+	if addon.isRetail then
+		bankSlot = self.bag - NUM_TOTAL_EQUIPPED_BAG_SLOTS
+	else 
+		bankSlot = self.bag - NUM_BAG_SLOTS
+	end
 	self.toPurchase = nil
 	if bankSlot <= numSlots then
 		SetItemButtonTextureVertexColor(self, 1, 1, 1)
@@ -426,7 +436,7 @@ local function Panel_UpdateSkin(self)
 end
 
 local function Panel_ConfigChanged(self, event, name)
-	if strsplit('.', name) == 'skin' then
+	if strsplit('.', name) == 'theme' then
 		return Panel_UpdateSkin(self)
 	end
 end
@@ -446,7 +456,7 @@ function addon:CreateBagSlotPanel(container, name, bags, isBank)
 
 	local title = self:CreateFontString(nil, "OVERLAY")
 	self.Title = title
-	title:SetFontObject(addon.bagFont)
+	title:SetFontObject(addon.fonts[string.lower(name)].bagFont)
 	title:SetText(L["Equipped bags"])
 	title:SetJustifyH("LEFT")
 	title:SetPoint("TOPLEFT", BAG_INSET, -BAG_INSET)
@@ -457,12 +467,26 @@ function addon:CreateBagSlotPanel(container, name, bags, isBank)
 	local x = BAG_INSET
 	local height = 0
 	for i, bag in ipairs(bags) do
-		if bag ~= KEYRING_CONTAINER and bag ~= BACKPACK_CONTAINER and bag ~= BANK_CONTAINER then
+		if bag ~= BACKPACK_CONTAINER and bag ~= BANK_CONTAINER and bag ~= REAGENTBANK_CONTAINER and bag ~= bag ~= REAGENTBAG_CONTAINER then
 			local button = buttonClass:Create(bag)
 			button:SetParent(self)
 			button:SetPoint("TOPLEFT", x, -TOP_PADDING)
 			button:Show()
 			x = x + ITEM_SIZE + ITEM_SPACING
+			tinsert(self.buttons, button)
+		elseif bag == REAGENTBAG_CONTAINER then
+			local titleReagent = self:CreateFontString(nil, "OVERLAY")
+			self.TitleReagent = titleReagent
+			titleReagent:SetFontObject(addon.font.bank.bagFont)
+			titleReagent:SetText(L["Reagent"])
+			titleReagent:SetJustifyH("RIGHT")
+			titleReagent:SetPoint("TOPRIGHT", -BAG_INSET, -BAG_INSET)
+
+			local button = buttonClass:Create(bag)
+			button:SetParent(self)
+			button:SetPoint("TOPLEFT", x + ITEM_SIZE, -TOP_PADDING)
+			button:Show()
+			x = x + ITEM_SIZE + ITEM_SPACING + ITEM_SIZE
 			tinsert(self.buttons, button)
 		end
 	end

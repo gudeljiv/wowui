@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -104,11 +104,11 @@ TMW:RegisterCallback("TMW_CONFIG_ICON_TYPE_CHANGED", function(event, icon, type,
 		local layout = TMW.TEXT:GetTextLayoutForIcon(icon)
 
 		if layout == "bar1" or layout == "bar2" then
-			icspv.Texts[1] = "[(Value / ValueMax * 100):Round:Percent]"
+			icspv.Texts[1] = "[ValuePercent:Round:Percent]"
 			icspv.Texts[2] = "[Value:Short \"/\" ValueMax:Short]"
 		end
 	elseif TMW.Types[oldType].barIsValue and not TMW.Types[type].barIsValue then
-		if icspv.Texts[1] == "[(Value / ValueMax * 100):Round:Percent]" then
+		if icspv.Texts[1] == "[ValuePercent:Round:Percent]" then
 			icspv.Texts[1] = nil
 		end
 		if icspv.Texts[2] == "[Value:Short \"/\" ValueMax:Short]" then
@@ -201,6 +201,10 @@ View:ImplementsModule("IconModule_TimerBar_BarDisplay", 50, function(Module, ico
 		Module.bar:SetPoint("BOTTOMRIGHT", -inset, inset)
 		Module.bar:SetPoint("LEFT", IconContainer.container, "RIGHT", gspv.Padding + inset + iconInset, 0)
 	end
+
+	-- Workaround blizzard having choppy animations on bars with high scale.
+	-- Set the bar's effective scale to exactly align to to screen resolution.
+	Module.bar:SetScale(PixelUtil.GetPixelToUIUnitFactor() / icon:GetEffectiveScale())
 
 	-- We can only query the size of the bar if the icon has had its position set.
 	if icon:GetNumPoints() == 0 or Module.bar:GetWidth() > 0 then

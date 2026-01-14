@@ -4,14 +4,15 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Gathering = TSM.UI.CraftingUI:NewPackage("Gathering")
-local L = TSM.Include("Locale").GetTable()
-local TempTable = TSM.Include("Util.TempTable")
-local Table = TSM.Include("Util.Table")
-local ItemInfo = TSM.Include("Service.ItemInfo")
-local Settings = TSM.Include("Service.Settings")
-local UIElements = TSM.Include("UI.UIElements")
+local TSM = select(2, ...) ---@type TSM
+local Gathering = TSM.UI.CraftingUI:NewPackage("Gathering") ---@type AddonPackage
+local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
+local L = TSM.Locale.GetTable()
+local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
+local Table = TSM.LibTSMUtil:Include("Lua.Table")
+local ItemInfo = TSM.LibTSMService:Include("Item.ItemInfo")
+local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
+local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local private = {
 	settings = nil,
 	frame = nil,
@@ -41,13 +42,13 @@ local SOURCE_TEXT_LIST = {
 	L["AH (Disenchanting)"],
 	L["AH (Crafting)"],
 }
-if TSM.IsWowVanillaClassic() then
+if not ClientInfo.HasFeature(ClientInfo.FEATURES.GUILD_BANK) then
 	Table.RemoveByValue(SOURCE_LIST, "guildBank")
 	Table.RemoveByValue(SOURCE_LIST, "altGuildBank")
 	Table.RemoveByValue(SOURCE_TEXT_LIST, L["Guild Bank"])
 	Table.RemoveByValue(SOURCE_TEXT_LIST, L["Alt Guild Bank"])
 end
-if not TSM.IsWowClassic() then
+if ClientInfo.IsRetail() then
 	Table.RemoveByValue(SOURCE_LIST, "bank")
 	Table.RemoveByValue(SOURCE_TEXT_LIST, L["Bank"])
 end
@@ -59,8 +60,8 @@ assert(#SOURCE_LIST == #SOURCE_TEXT_LIST)
 -- Module Functions
 -- ============================================================================
 
-function Gathering.OnInitialize()
-	private.settings = Settings.NewView()
+function Gathering.OnInitialize(settingsDB)
+	private.settings = settingsDB:NewView()
 		:AddKey("global", "craftingUIContext", "gatheringDividedContainer")
 		:AddKey("global", "craftingUIContext", "gatheringScrollingTable")
 		:AddKey("profile", "gatheringOptions", "sources")
@@ -76,7 +77,7 @@ end
 -- ============================================================================
 
 function private.GetGatheringFrame()
-	TSM.UI.AnalyticsRecordPathChange("crafting", "gathering")
+	UIUtils.AnalyticsRecordPathChange("crafting", "gathering")
 	assert(not private.query)
 	private.query = TSM.Crafting.Gathering.CreateQuery()
 		:SetUpdateCallback(private.UpdateButtonState)
@@ -100,7 +101,7 @@ function private.GetGatheringFrame()
 				:SetTextColor("INDICATOR")
 				:SetText(L["Crafter"])
 			)
-			:AddChild(UIElements.New("SelectionDropdown", "crafterDropdown")
+			:AddChild(UIElements.New("ListDropdown", "crafterDropdown")
 				:SetHeight(24)
 				:SetMargin(0, 0, 0, 8)
 				:SetHintText(L["Select crafter"])
@@ -146,53 +147,14 @@ function private.GetGatheringFrame()
 				:SetJustifyH("CENTER")
 				:SetText(L["Materials to Gather"])
 			)
-			:AddChild(UIElements.New("QueryScrollingTable", "table")
-				:SetSettingsContext(private.settings, "gatheringScrollingTable")
-				:GetScrollingTableInfo()
-					:NewColumn("name")
-						:SetTitle(NAME)
-						:SetFont("ITEM_BODY3")
-						:SetJustifyH("LEFT")
-						:SetIconSize(12)
-						:SetTextInfo("itemString", TSM.UI.GetColoredItemName)
-						:SetIconInfo("itemString", ItemInfo.GetTexture)
-						:SetTooltipInfo("itemString")
-						:SetSortInfo("name")
-						:DisableHiding()
-						:Commit()
-					:NewColumn("sources")
-						:SetTitle(L["Sources"])
-						:SetFont("BODY_BODY3")
-						:SetJustifyH("LEFT")
-						:SetTextInfo("sourcesStr", private.MatsGetSourcesStrText)
-						:SetSortInfo("sourcesStr")
-						:Commit()
-					:NewColumn("have")
-						:SetTitle(L["Have"])
-						:SetFont("TABLE_TABLE1")
-						:SetJustifyH("RIGHT")
-						:SetTextInfo("numHave")
-						:SetSortInfo("numHave")
-						:Commit()
-					:NewColumn("need")
-						:SetTitle(NEED)
-						:SetFont("TABLE_TABLE1")
-						:SetJustifyH("RIGHT")
-						:SetTextInfo("numNeed")
-						:SetSortInfo("numNeed")
-						:Commit()
-					:Commit()
+			:AddChild(UIElements.New("GatheringScrollTable", "table")
+				:SetSettings(private.settings, "gatheringScrollingTable")
 				:SetQuery(TSM.Crafting.Gathering.CreateQuery()
-					:InnerJoin(ItemInfo.GetDBForJoin(), "itemString")
-					:OrderBy("name", true)
+					:VirtualField("name", "string", ItemInfo.GetName, "itemString", "?")
+					:VirtualField("sourcesDisplayStr", "string", private.GetSourcesDisplayStr, "sourcesStr")
 				)
-				:SetSelectionDisabled(true)
-				:SetAutoReleaseQuery(true)
 			)
-			:AddChild(UIElements.New("Texture", "headerTopLine")
-				:SetHeight(2)
-				:SetTexture("ACTIVE_BG")
-			)
+			:AddChild(UIElements.New("HorizontalLine", "headerTopLine"))
 			:AddChild(UIElements.New("ActionButton", "openTaskListBtn")
 				:SetHeight(26)
 				:SetMargin(8)
@@ -205,7 +167,7 @@ function private.GetGatheringFrame()
 	return frame
 end
 
-function private.MatsGetSourcesStrText(str)
+function private.GetSourcesDisplayStr(str)
 	str = gsub(str, "/[^,]+", "")
 	for i = 1, #SOURCE_LIST do
 		str = gsub(str, SOURCE_LIST[i], SOURCE_TEXT_LIST[i])
@@ -236,12 +198,12 @@ function private.CreateSourceRows(frame)
 end
 
 function private.UpdateSourceRows(setupFrame)
-	if TSM.IsWowVanillaClassic() then
+	if not ClientInfo.HasFeature(ClientInfo.FEATURES.GUILD_BANK) then
 		Table.RemoveByValue(private.settings.sources, "guildBank")
 		Table.RemoveByValue(private.settings.sources, "altGuildBank")
 	end
-	if not TSM.IsWowClassic() then
-		Table.RemoveByValue(TSM.db.profile.gatheringOptions.sources, "bank")
+	if ClientInfo.IsRetail() then
+		Table.RemoveByValue(private.settings.sources, "bank")
 	end
 	local texts = TempTable.Acquire()
 	local sources = TempTable.Acquire()

@@ -19,7 +19,10 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+
 local L = addon.L
 
 --<GLOBALS
@@ -58,7 +61,7 @@ end
 --------------------------------------------------------------------------------
 -- Font prototype
 --------------------------------------------------------------------------------
-
+---@class AdiFont: Font
 local proto = CreateFont(addonName.."BaseFont")
 local meta = { __index = proto }
 
@@ -76,7 +79,7 @@ function proto:SetSetting(info, value, ...)
 			return
 		end
 		db[name] = value
-		self:SetFont(LSM:Fetch(FONT, db.name), db.size)
+		self:SetFont(LSM:Fetch(FONT, db.name), db.size, "")
 	else
 		return
 	end
@@ -96,7 +99,7 @@ end
 
 function proto:ApplySettings()
 	local db = self:GetDB()
-	self:SetFont(LSM:Fetch(FONT, db.name), db.size)
+	self:SetFont(LSM:Fetch(FONT, db.name), db.size, "")
 	self:SetTextColor(db.r, db.g, db.b)
 end
 
@@ -118,7 +121,7 @@ end
 --------------------------------------------------------------------------------
 -- Public methods
 --------------------------------------------------------------------------------
-
+---@return AdiFont|Font
 function addon:CreateFont(name, template, dbGetter)
 	local font = setmetatable(CreateFont(name), meta)
 	font:SetFontObject(template)
@@ -149,7 +152,7 @@ function addon:CreateFontOptions(font, title, order)
 		handler = font,
 		set = 'SetSetting',
 		get = 'GetSetting',
-		disabled = false,
+		disabled = function() return addon.db.profile.theme.currentTheme == 'default' end,
 		args = {
 			name = {
 				name = L['Font'],
@@ -164,7 +167,7 @@ function addon:CreateFontOptions(font, title, order)
 				order = 20,
 				min = mediumSize - 8,
 				max = mediumSize + 8,
-				step = 4,
+				step = 1,
 			},
 			color = {
 				name = L['Color'],
@@ -176,7 +179,7 @@ function addon:CreateFontOptions(font, title, order)
 				name = L['Reset'],
 				type = 'execute',
 				order = 40,
-				disabled  = 'IsDefault',
+				disabled = function() return addon.db.profile.theme.currentTheme == 'default' end,
 				func = 'ResetSettings',
 			},
 		},

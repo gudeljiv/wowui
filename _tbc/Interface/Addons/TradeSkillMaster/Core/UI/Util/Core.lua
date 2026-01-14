@@ -4,12 +4,11 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Util = TSM.UI:NewPackage("Util")
-local L = TSM.Include("Locale").GetTable()
-local Color = TSM.Include("Util.Color")
-local Theme = TSM.Include("Util.Theme")
-local Settings = TSM.Include("Service.Settings")
+local TSM = select(2, ...) ---@type TSM
+local Util = TSM.UI:NewPackage("Util") ---@type AddonPackage
+local L = TSM.Locale.GetTable()
+local Color = TSM.LibTSMUtil:IncludeClassType("Color")
+local Theme = TSM.LibTSMService:Include("UI.Theme")
 local private = {
 	settings = nil,
 }
@@ -100,8 +99,8 @@ local THEME_COLOR_SETS = {
 -- Module Functions
 -- ============================================================================
 
-function Util.OnInitialize()
-	private.settings = Settings.NewView()
+function Util.OnInitialize(settingsDB)
+	private.settings = settingsDB:NewView()
 		:AddKey("global", "appearanceOptions", "colorSet")
 		:AddKey("global", "appearanceOptions", "customColorSet")
 
@@ -115,7 +114,7 @@ function Util.OnInitialize()
 	-- register the custom theme
 	local isCustomActive = private.settings.colorSet == CUSTOM_COLOR_SET_KEY
 	local customColors = {}
-	for _, key in Theme.ThemeColorKeyIterator() do
+	for key in Theme.ThemeColorKeyIterator() do
 		customColors[key] = Color.NewFromHex(isCustomActive and private.settings.customColorSet[key] or "#000000")
 	end
 	Theme.RegisterColorSet(CUSTOM_COLOR_SET_KEY, L["Custom"], customColors)
@@ -143,8 +142,8 @@ function Util.SetCustomColor(key, r, g, b)
 	private.SetCustomColorHelper(key, r, g, b)
 end
 
-function Util.GetCustomColor(key)
-	return Theme.GetColor(key, CUSTOM_COLOR_SET_KEY)
+function Util.GetCustomColorThemeKey(key)
+	return key..":"..CUSTOM_COLOR_SET_KEY
 end
 
 function Util.GetCustomColorSetKey()
@@ -178,7 +177,7 @@ end
 
 function private.SetCustomColorHelper(key, r, g, b)
 	Theme.UpdateColor(CUSTOM_COLOR_SET_KEY, key, r, g, b)
-	private.settings.customColorSet[key] = Theme.GetColor(key, CUSTOM_COLOR_SET_KEY):GetHexNoAlpha()
+	private.settings.customColorSet[key] = Theme.GetColor(key..":"..CUSTOM_COLOR_SET_KEY):GetHexNoAlpha()
 end
 
 function private.ColorSetIterator(tbl, index)

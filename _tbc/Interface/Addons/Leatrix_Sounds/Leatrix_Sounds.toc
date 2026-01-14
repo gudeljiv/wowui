@@ -1,0 +1,31 @@
+## Interface: 20505
+
+## Title: Leatrix Sounds
+
+
+
+## Notes: curseforge.com/wow/addons/leatrix-sounds
+## Notes-deDE: curseforge.com/wow/addons/leatrix-sounds
+## Notes-frFR: curseforge.com/wow/addons/leatrix-sounds
+## Notes-esES: curseforge.com/wow/addons/leatrix-sounds
+## Notes-esMX: curseforge.com/wow/addons/leatrix-sounds
+## Notes-ptBR: curseforge.com/wow/addons/leatrix-sounds
+## Notes-itIT: curseforge.com/wow/addons/leatrix-sounds
+## Notes-ruRU: curseforge.com/wow/addons/leatrix-sounds
+## Notes-koKR: curseforge.com/wow/addons/leatrix-sounds
+## Notes-zhTW: curseforge.com/wow/addons/leatrix-sounds
+## Notes-zhCN: curseforge.com/wow/addons/leatrix-sounds
+
+## Version: 2.5.000
+## Author: Leatrix
+## SavedVariables: LeaSoundsDB
+## LoadSavedVariablesFirst: true
+
+## IconTexture: Interface\HELPFRAME\HelpIcon-Bug
+
+## X-Curse-Project-ID: 304659
+
+Leatrix_Sounds_Locale.lua
+Leatrix_Sounds_Files.lua
+Leatrix_Sounds.xml
+Leatrix_Sounds.lua

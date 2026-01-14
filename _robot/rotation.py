@@ -6,13 +6,11 @@ else:
     mode = sys.argv[1]
 
 if mode == "wotlk":
-    from libs.resources_wotlk import data
-    from libs.resources_wotlk import monitor_settings
-    from libs.resources_wotlk import keyCodeMap
+    from libs.resources_wotlk import data, monitor_settings, keyCodeMap
+elif mode == "tbc":
+    from libs.resources_tbc import data, monitor_settings, keyCodeMap
 else:
-    from libs.resources_classic import data
-    from libs.resources_classic import monitor_settings
-    from libs.resources_classic import keyCodeMap
+    from libs.resources_classic import data, monitor_settings, keyCodeMap
 
 
 # from libs.interception import *

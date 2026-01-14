@@ -1,6 +1,6 @@
 -- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -333,9 +333,15 @@ TMW:NewClass("Config_GroupListButton", "Config_CheckButton"){
 		local groupSelect = self:CScriptBubbleGet("GetGroupListContainer")
 		
 		local group, domain, ID = groupSelect:GetDraggingGroup()
-		groupSelect:SetDraggingGroup(nil, nil, nil)
+		
+		-- Only process if we actually have a group (prevents multiple OnDragStop calls)
+		-- As of some recent WoW patch (11.0? 11.0.5? 11.0.7?), hiding a frame while in its OnDragStop
+		-- will trigger OnDragStop AGAIN 
 
-		TMW:Group_Insert(group, domain, ID)
+		if group then
+			groupSelect:SetDraggingGroup(nil, nil, nil)
+			TMW:Group_Insert(group, domain, ID)
+		end
 
 		-- It will be hidden when the global update happens.
 		-- We should keep it shown, though.
@@ -429,7 +435,7 @@ function TMW:Group_Delete(group)
 	tremove(TMW.db[domain].Groups, groupID)
 	TMW.db[domain].NumGroups = TMW.db[domain].NumGroups - 1
 
-	TMW:Update()
+	TMW:UpdateNormally()
 
 	-- Do this again so the group list will update to reflect the missing group.
 	IE:LoadGroup(1, false)
@@ -459,7 +465,7 @@ function TMW:Group_Add(domain, view)
 		end
 	end
 
-	TMW:Update()
+	TMW:UpdateNormally()
 
 	local group = TMW[domain][groupID]
 
@@ -467,6 +473,7 @@ function TMW:Group_Add(domain, view)
 end
 
 function TMW:Group_Insert(group, targetDomain, targetID)
+	print(group, targetDomain, targetID)
 	if InCombatLockdown() then
 		-- Error if we are in combat because TMW:Update() won't update the groups instantly if we are.
 		error("TMW: Can't swap groups while in combat")
@@ -498,7 +505,7 @@ function TMW:Group_Insert(group, targetDomain, targetID)
 	TMW.db[oldDomain].NumGroups = TMW.db[oldDomain].NumGroups - 1
 	TMW.db[targetDomain].NumGroups = TMW.db[targetDomain].NumGroups + 1
 
-	TMW:Update()
+	TMW:UpdateNormally()
 
 	IE:LoadGroup(1, groupGUID and TMW:GetDataOwner(groupGUID))
 	IE:LoadIcon(1, iconGUID and TMW:GetDataOwner(iconGUID))

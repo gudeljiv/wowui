@@ -1,6 +1,6 @@
 -- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -227,6 +227,16 @@ function IE:ProcessChangelogData()
 	-- Convert asterisks to colored dashes
 	log = log:gsub(">([ \t]*%*)%s*(.-)<", bullets)
 
+	-- Wrap plain text lines (not already in tags) in <p> tags
+	-- Match any closing tag followed by plain text followed by <br/>
+	log = log:gsub("(>)([^<]+)<br/>", function(closingBracket, text)
+		text = text:trim()
+		if text == "" then
+			return closingBracket .. text .. "<br/>"
+		end
+		return closingBracket .. "<p>" .. text .. "</p> <br/>"
+	end)
+
 	-- Remove double breaks 
 	log = log:gsub("<br/><br/>", "<br/>")
 
@@ -263,7 +273,7 @@ function IE:ProcessChangelogData()
 			subEnd = subEnd - 1
 		end
 
-		local versionString = log:match("TellMeWhen v([0-9%.]+)", subStart):gsub("%.", "")
+		local versionString = log:match("TellMeWhen v([0-9%.]+)", subStart):gsub("%.([0-9]+)", function(d) return format("%02d", d) end)
 		local versionNumber = tonumber(versionString) * 100
 		
 		-- A full version's changelog is between subStart and subEnd. Store it.

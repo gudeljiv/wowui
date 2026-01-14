@@ -1,99 +1,198 @@
 
 FarmHudDB = {
-	["coords_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
-	["background_alpha"] = 0,
-	["cardinalpoints_color2"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
-	["tracking^136459"] = "client",
-	["tracking^136456"] = "client",
-	["time_server"] = true,
-	["tracking^136465"] = "client",
-	["tracking^132328"] = "client",
-	["coords_radius"] = 0.51,
-	["cardinalpoints_color1"] = {
-		0.0196078431372549, -- [1]
-		1, -- [2]
-		0.6431372549019607, -- [3]
-		0.7000000178813934, -- [4]
-	},
-	["tracking^136458"] = "client",
-	["hud_scale"] = 1.5,
-	["tracking^136457"] = "client",
-	["QuestArrowInfoMsg"] = false,
-	["tracking^136463"] = "client",
-	["gathercircle_color"] = {
-		0, -- [1]
-		1, -- [2]
-		0, -- [3]
-		0.5, -- [4]
-	},
-	["tracking^136142"] = "client",
-	["rotation"] = true,
-	["buttons_alpha"] = 0.6,
-	["tracking^136025"] = "client",
-	["buttons_radius"] = 0.56,
-	["player_dot"] = "blizz",
-	["hud_size"] = 1,
-	["tracking^135942"] = "client",
-	["mouseoverinfo_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
-	["buttons_show"] = false,
-	["cardinalpoints_show"] = false,
-	["coords_show"] = false,
-	["tracking^136455"] = "client",
-	["showDummy"] = true,
-	["SuperTrackedQuest"] = true,
-	["gathercircle_show"] = false,
-	["tracking^136464"] = "client",
-	["tracking^136453"] = "client",
-	["tracking^136217"] = "client",
-	["healcircle_color"] = {
-		0, -- [1]
-		0.7, -- [2]
-		1, -- [3]
-		0.5, -- [4]
-	},
-	["tracking^132320"] = "client",
-	["tracking^133939"] = "client",
-	["tracking^136451"] = "client",
-	["buttons_buttom"] = false,
-	["time_bottom"] = false,
-	["tracking^136454"] = "client",
-	["MinimapIcon"] = {
-		["minimapPos"] = 220,
-		["radius"] = 80,
-		["hide"] = true,
-	},
-	["showDummyBg"] = true,
-	["text_scale"] = 1.5,
-	["time_show"] = false,
-	["time_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
-	["cardinalpoints_radius"] = 0.475,
-	["coords_bottom"] = false,
-	["healcircle_show"] = false,
-	["time_radius"] = 0.48,
-	["tracking^135861"] = "client",
-	["holdKeyForMouseOn"] = "_NONE",
-	["tracking^132275"] = "client",
-	["time_local"] = true,
-	["tracking^136452"] = "client",
-	["tracking^134153"] = "client",
+{
+"GatherCircle",
+true,
+{
+0,
+1,
+0,
+0.35,
+},
+false,
+2,
+1,
+true,
+},
+{
+"HealCircle",
+true,
+{
+0,
+0.7,
+1,
+0.35,
+},
+false,
+2,
+1,
+true,
+},
+{
+false,
+true,
+{
+1,
+1,
+1,
+0.5,
+},
+0.5,
+2,
+1,
+false,
+},
+["trailPathOnMinimap"] = true,
+["tracking^134153"] = "false",
+["cardinalpoints_color2"] = {
+1,
+0.82,
+0,
+0.7,
+},
+["tracking^136456"] = "client",
+["tracking^136465"] = "client",
+["tracking^135974"] = "client",
+["tracking^132328"] = "false",
+["coords_radius"] = 0.51,
+["trailPathScale"] = 1,
+["tracking^136457"] = "client",
+["QuestArrowInfoMsg"] = false,
+["tracking^135942"] = "false",
+["rotation"] = true,
+["tracking^136025"] = "client",
+["trailPathColor1"] = {
+1,
+0.2,
+0.2,
+1,
+0.75,
+},
+["hud_size"] = 0.9,
+["tracking^132275"] = "false",
+["trailPathShow"] = false,
+["coords_show"] = false,
+["showDummy"] = true,
+["showDummyBg"] = true,
+["tracking^136453"] = "client",
+["tracking^132320"] = "false",
+["buttons_buttom"] = false,
+["tracking^237607"] = "client",
+["tracking^136462"] = "client",
+["time_show"] = false,
+["time_color"] = {
+1,
+0.82,
+0,
+0.7,
+},
+["tracking^136454"] = "client",
+["healcircle_show"] = false,
+["time_radius"] = 0.48,
+["time_local"] = true,
+["background_alpha2"] = 0.5,
+["holdKeyForMouseOn"] = "C",
+["cardinalpoints_show"] = false,
+["background_alpha_toggle"] = true,
+["time_server"] = true,
+["rangeCircles"] = {
+},
+["buttons_radius"] = 0.56,
+["tracking^136142"] = "false",
+["tracking^136458"] = "client",
+["hud_scale"] = 1.5,
+["tracking^136463"] = "client",
+["cardinalpoints_gathercircle_pos"] = "inside",
+["gathercircle_color"] = {
+0,
+1,
+0,
+0.09995770454406738,
+},
+["SuperTrackedQuest"] = true,
+["healcircle_color"] = {
+0,
+0.7,
+1,
+0.5,
+},
+["mouseoverinfo_color"] = {
+1,
+0.82,
+0,
+0.7,
+},
+["buttons_show"] = false,
+["tracking^136455"] = "client",
+["tracking^135861"] = "false",
+["defaultCircles"] = {
+{
+"GatherCircle",
+true,
+{
+0,
+1,
+0,
+0.35,
+},
+false,
+2,
+1,
+true,
+},
+{
+"HealCircle",
+true,
+{
+0,
+0.7,
+1,
+0.35,
+},
+false,
+2,
+1,
+true,
+},
+},
+["tracking^136466"] = "client",
+["tracking^136459"] = "client",
+["background_alpha_default"] = true,
+["cardinalpoints_gathercircle_bind"] = false,
+["hideInCombat"] = false,
+["cardinalpoints_radius"] = 0.475,
+["trailPathTimeout"] = 60,
+["tracking^136451"] = "client",
+["cardinalpoints_gathercircle_distance"] = 10,
+["time_bottom"] = false,
+["text_scale"] = 1.5,
+["MinimapIcon"] = {
+["minimapPos"] = 220,
+["radius"] = 80,
+["hide"] = true,
+},
+["gathercircle_show"] = true,
+["coords_color"] = {
+1,
+0.82,
+0,
+0.7,
+},
+["tracking^136217"] = "false",
+["tracking^133939"] = "client",
+["player_dot"] = "blizz",
+["coords_bottom"] = false,
+["buttons_alpha"] = 0.6,
+["tracking^136464"] = "client",
+["cardinalpoints_color1"] = {
+0.0196078431372549,
+1,
+0.6431372549019607,
+0.7000000178813934,
+},
+["hideInInstance"] = false,
+["background_alpha"] = 0,
+["trailPathIcon"] = "arrow01",
+["tracking^136452"] = "client",
+["trailPathCount"] = 32,
 }

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -18,8 +18,14 @@ local print = TMW.print
 local L = TMW.L
 local LSM = LibStub("LibSharedMedia-3.0")
 local _, pclass = UnitClass("Player")
-local GetSpellInfo, UnitPower =
-	  GetSpellInfo, UnitPower
+local UnitPower, UnitPowerMax =
+	  UnitPower, UnitPowerMax
+
+local UnitPowerMissing = UnitPowerMissing or function(unit, powerType)
+	return UnitPowerMax(unit, powerType) - UnitPower(unit, powerType)
+end
+
+local issecretvalue = TMW.issecretvalue
 local pairs, wipe, _G =
 	  pairs, wipe, _G
 local PowerBarColor = PowerBarColor
@@ -37,6 +43,7 @@ local defaultPowerTypes = {
 	DEATHKNIGHT = Enum.PowerType.RunicPower,
 	MONK 		= Enum.PowerType.Energy,
 	DEMONHUNTER = Enum.PowerType.Fury,
+	EVOKER		= Enum.PowerType.Mana,
 }
 local defaultPowerType = defaultPowerTypes[pclass]
 
@@ -55,7 +62,6 @@ function PowerBar:OnNewInstance(icon)
 	self.texture:SetAllPoints()
 	bar:SetStatusBarTexture(self.texture)
 	
-	-- TODO: share the PowerBarColor table with the value icon type.
 	local colorinfo = PowerBarColor[defaultPowerType]
 	if not colorinfo then
 		error("No PowerBarColor was found for class " .. pclass .. "! Is the defaultPowerType for the class not defined?")
@@ -63,10 +69,11 @@ function PowerBar:OnNewInstance(icon)
 	bar:SetStatusBarColor(colorinfo.r, colorinfo.g, colorinfo.b, 0.9)
 	self.powerType = defaultPowerType
 	
+	self.Min = 0
 	self.Max = 1
-	bar:SetMinMaxValues(0, self.Max)
+	bar:SetMinMaxValues(self.Min, self.Max)
 	
-	self.PBarOffs = 0
+	self.Offset = 0
 end
 
 function PowerBar:OnEnable()
@@ -100,14 +107,8 @@ end
 function PowerBar:SetSpell(spell)
 	local bar = self.bar
 	self.spell = spell
-	self.spellLink = GetSpellLink(spell)
-
 	
-	if self.spellLink then
-		-- We have to manually extract the spellID from the link because
-		-- GetSpellInfo doesn't work for spell links since wotlk.
-		self.spellID = self.spellLink:match("Hspell:(%d+)")
-		
+	if spell then
 		self:UpdateCost()
 
 		self:UpdateTable_Register()
@@ -124,6 +125,8 @@ function PowerBar:SetSpell(spell)
 	end
 end
 
+local wowMajor = TMW.wowMajor
+
 function PowerBar:UpdateCost()
 	local bar = self.bar
 	local spell = self.spell
@@ -133,11 +136,29 @@ function PowerBar:UpdateCost()
 		
 		if cost then
 			local powerType = costData.type
-			cost = powerType == (Enum.PowerType.HolyPower) and 3 or cost or 0 -- holy power hack: always use a max of 3
-			self.Max = cost
-			bar:SetMinMaxValues(0, cost)
+
+			if wowMajor <= 9 then
+				-- holy power hack: always use a max of 3 to account for variable cost spenders.
+				-- This version check might not be right. Not sure when this was added, nor when it was removed.
+				cost = powerType == (Enum.PowerType.HolyPower) and 3 or cost or 0 
+			end
+
 			self.__value = nil -- the displayed value might change when we change the max, so force an update
 			
+			if not self.Invert then
+				local max = UnitPowerMax("player", powerType) - self.Offset
+				local min = max - cost
+				self.Min = min
+				self.Max = max
+				bar:SetMinMaxValues(min, max)
+			else
+				local min = 0
+				local max = cost - self.Offset
+				self.Min = min
+				self.Max = max
+				bar:SetMinMaxValues(min, max)
+			end
+		
 			powerType = powerType or defaultPowerType
 			if powerType ~= self.powerType then
 				local colorinfo = PowerBarColor[powerType] or PowerBarColor[defaultPowerType]
@@ -145,38 +166,42 @@ function PowerBar:UpdateCost()
 				bar:SetStatusBarColor(colorinfo.r, colorinfo.g, colorinfo.b, 0.9)
 				self.powerType = powerType
 			end
+
+			self:Update()
 		end
 	end
 end
 
-function PowerBar:Update(power, powerTypeNum)
-
+function PowerBar:Update(power, missing, powerTypeNum)
 	local bar = self.bar
-	if not powerTypeNum then
-		powerTypeNum = self.powerType
-		power = UnitPower("player", powerTypeNum)
-	end
+
+	powerTypeNum = powerTypeNum or self.powerType
 	
 	if powerTypeNum == self.powerType then
-	
-		local Max = self.Max
 		local value
 
 		if not self.Invert then
-			value = Max - power + self.PBarOffs
+			value = missing or UnitPowerMissing("player", powerTypeNum)
 		else
-			value = power + self.PBarOffs
+			value = power or UnitPower("player", powerTypeNum)
 		end
 
-		if value > Max then
-			value = Max
-		elseif value < 0 then
-			value = 0
-		end
-
-		if self.__value ~= value then
+		if issecretvalue(value) then
 			bar:SetValue(value)
-			self.__value = value
+		else
+			local Max = self.Max
+			local Min = self.Min
+
+			if value > Max then
+				value = Max
+			elseif value < Min then
+				value = Min
+			end
+
+			if self.__value ~= value then
+				bar:SetValue(value)
+				self.__value = value
+			end
 		end
 	end
 end
@@ -195,10 +220,11 @@ function PowerBar:UNIT_POWER_FREQUENT(event, unit, powerType)
 	if unit == "player" then
 		local powerTypeNum = powerType and _G["SPELL_POWER_" .. powerType]
 		local power = powerTypeNum and UnitPower("player", powerTypeNum)
+		local missing = powerTypeNum and UnitPowerMissing("player", powerTypeNum)
 		
 		for i = 1, #PBarsToUpdate do
 			local Module = PBarsToUpdate[i]
-			Module:Update(power, powerTypeNum)
+			Module:Update(power, missing, powerTypeNum)
 		end
 	end
 end

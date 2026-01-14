@@ -26,7 +26,7 @@ end
 if Questie then
     C_Timer.After(4, function()
         error("ERROR!! -> Questie already loaded! Please only have one Questie installed!")
-        for i=1, 10 do
+        for _=1, 10 do
             DEFAULT_CHAT_FRAME:AddMessage("|cFFFF0000ERROR!!|r -> Questie already loaded! Please only have one Questie installed!")
         end
     end);
@@ -37,9 +37,12 @@ if Questie then
 end
 
 --Initialized below
----@class Questie
+---@class Questie : AceAddon, AceConsole-3.0, AceEvent-3.0, AceTimer-3.0, AceComm-3.0, AceBucket-3.0
 Questie = LibStub("AceAddon-3.0"):NewAddon("Questie", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0", "AceComm-3.0", "AceBucket-3.0")
-local Questie = Questie
+
+Questie.API = {
+    isReady = false,
+}
 
 -- preinit placeholder to stop tukui crashing from literally force-removing one of our features no matter what users select in the config ui
 Questie.db = {profile={minimap={hide=false}}}
@@ -47,15 +50,48 @@ Questie.db = {profile={minimap={hide=false}}}
 -- prevent multiple warnings for the same ID, not sure the best place to put this
 Questie._sessionWarnings = {}
 
+--- Addon is running on Classic MoP client
+---@type boolean
+Questie.IsMoP = WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC
+
+--- Addon is running on Classic Cata client
+---@type boolean
+Questie.IsCata = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
+
+--- Addon is running on Classic Wotlk client
+---@type boolean
+Questie.IsWotlk = WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
+
 --- Addon is running on Classic TBC client
 ---@type boolean
 Questie.IsTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
+
 --- Addon is running on Classic "Vanilla" client: Means Classic Era and its seasons like SoM
 ---@type boolean
 Questie.IsClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
---- Addon is running on Classic "Vanilla" client and on Era realm
+
+--- Addon is running on Classic "Vanilla" client and on Era realm (non-seasonal)
 ---@type boolean
 Questie.IsEra = Questie.IsClassic and (not C_Seasons.HasActiveSeason())
---- Addon is running on Classic "Vanilla" client and on Seasons of Mastery realm
+
+-- See https://wowpedia.fandom.com/wiki/API_C_Seasons.GetActiveSeason
+
+--- Addon is running on Classic "Vanilla" client and on Season of Mastery realm specifically
 ---@type boolean
 Questie.IsSoM = Questie.IsClassic and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfMastery)
+
+--- Addon is running on Classic "Vanilla" client and on Season of Discovery realm specifically
+---@type boolean
+Questie.IsSoD = Questie.IsClassic and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfDiscovery)
+
+--- Addon is running on Classic "Vanilla" client and on Classic Anniversary realm ( )
+---@type boolean
+Questie.IsAnniversary = Questie.IsClassic and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == 11) -- TODO: Use Enum or new API if there will be one
+
+--- Addon is running on Classic "Vanilla" client and on Classic Anniversary Hardcore realm
+---@type boolean
+Questie.IsAnniversaryHardcore = Questie.IsClassic and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == 12) -- TODO: Use Enum or new API if there will be one
+
+--- Addon is running on a HardCore realm specifically
+---@type boolean
+Questie.IsHardcore = C_GameRules and C_GameRules.IsHardcoreActive()

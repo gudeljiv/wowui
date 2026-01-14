@@ -1,0 +1,41 @@
+VER 3 0100000001000007 " " "134400"
+#showtooltip Drain Soul
+/assist [@pet,exists,noharm][@pet,exists,dead] pet
+/stopcasting
+/cast !Auto Shot
+/stopattack
+/cast Drain Soul
+END
+VER 3 0100000001000005 " " "134400"
+#showtooltip
+/cast [@mouseover,harm,exists][]Curse of Agony
+END
+VER 3 0100000001000008 " " "134400"
+#showtooltip Shoot
+/castsequence reset=2 !Shoot, null
+END
+VER 3 0100000001000006 " " "134400"
+#showtooltip
+/cast [@mouseover,harm,exists][]Corruption
+END
+VER 3 0100000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm,exists][]Fear
+END
+VER 3 0100000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Shadow Bolt
+END
+VER 3 0100000001000004 " " "134400"
+#showtooltip
+/cast [@mouseover,harm,exists][]Immolate
+END
+VER 3 0100000001000009 " " "134400"
+#showtooltip
+/cast Consume Shadows
+END
+VER 3 010000000100000A " " "134400"
+#showtooltip
+/cast Sacrifice
+END

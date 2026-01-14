@@ -2,7 +2,9 @@ local _, xVermin = ...
 
 local size = 125
 local scale = 1.4
-local MaxXP, CurrentXP, percent, r, g, b
+local MaxXP, CurrentXP, percent, r, g, b, restedBars, c
+
+DEFAULT_CHAT_FRAME:AddMessage(t)
 
 local PlayerXP = CreateFrame('Frame', 'PlayerXPFrame', UIParent)
 PlayerXP:SetScale(scale)
@@ -18,7 +20,7 @@ PlayerXP.XPbar:SetStatusBarTexture('Interface\\AddOns\\xVermin\\Media\\statusbar
 PlayerXP.XPbar:SetAlpha(0)
 
 PlayerXP.XPbar.Value = PlayerXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PlayerXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+PlayerXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 PlayerXP.XPbar.Value:SetShadowOffset(0, 0)
 PlayerXP.XPbar.Value:SetPoint('LEFT', PlayerXP.XPbar, 'LEFT', 2, 0)
 PlayerXP.XPbar.Value:SetVertexColor(1, 1, 1)
@@ -38,7 +40,7 @@ PlayerXP.XPbar.Percent:SetVertexColor(1, 1, 1)
 PlayerXP.XPbar.RestedNumber = PlayerXP.XPbar:CreateFontString(nil, 'ARTWORK')
 PlayerXP.XPbar.RestedNumber:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 PlayerXP.XPbar.RestedNumber:SetShadowOffset(0, 0)
-PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -10)
+PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -12)
 PlayerXP.XPbar.RestedNumber:SetVertexColor(1, 1, 1)
 
 PlayerXP.XPbar.Background = PlayerXP.XPbar:CreateTexture(nil, 'BACKGROUND')
@@ -77,24 +79,33 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 	CurrentXP = UnitXP('player')
 
 	percent = floor((CurrentXP / MaxXP) * 100)
-	r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+	r, g, b = xVermin.ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 
 	PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
 	PlayerXP.XPbar:SetValue(CurrentXP)
-	PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ','))
-	PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
-	PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. '%')
+	PlayerXP.XPbar.Value:SetText(xVermin.FormatNumber(CurrentXP, ','))
+	PlayerXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
+	PlayerXP.XPbar.Percent:SetText(xVermin.Round(percent) .. '%')
 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 
+	restedBars = 0
+	c = '|cFFFFFFFF'
 	if (select(3, GetRestState()) == 2) then
-		PlayerXP.XPbar.RestedNumber:SetText('R: ' .. xVermin:FormatNumber(GetXPExhaustion(), ','))
+		restedBars = math.floor(20 * GetXPExhaustion() / MaxXP + 0.5)
+		c = '|c' .. xVermin.RGB2HEX(xVermin.ColorGradient(restedBars / 30, 1, 1, 1, 1, 1, 0, 0, 1, 0))
+		PlayerXP.XPbar.RestedNumber:SetText(c .. 'R(' .. restedBars .. '): ' .. xVermin.FormatNumber(GetXPExhaustion(), ',') .. '|r')
 	else
 		PlayerXP.XPbar.RestedNumber:Hide()
-		PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
+		PlayerXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
 		PlayerXP.XPbar.UntilLevel:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', -2, 0)
-		PlayerXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+		PlayerXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 	end
 end
+
+-- for i = 1, 30 do
+-- 	c = '|c' .. xVermin.RGB2HEX(xVermin.ColorGradient(i / 30, 1, 1, 1, 1, 1, 0, 0, 1, 0))
+-- 	print(c .. i .. '/30|r')
+-- end
 
 PlayerXP:RegisterEvent('PLAYER_XP_UPDATE')
 PlayerXP:RegisterEvent('PLAYER_ENTERING_WORLD')
@@ -102,7 +113,7 @@ PlayerXP:RegisterEvent('PLAYER_LEVEL_CHANGED')
 PlayerXP:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if UnitLevel('player') == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+		if UnitLevel('player') == xVermin.MaxPlayerLevel then
 			PlayerXP.XPbar:SetAlpha(0)
 			self:UnregisterAllEvents()
 		else

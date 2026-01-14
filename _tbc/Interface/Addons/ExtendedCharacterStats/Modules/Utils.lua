@@ -1,6 +1,9 @@
 ---@class Utils
 local Utils = ECSLoader:CreateModule("Utils")
 
+local GetAddOnInfo = C_AddOns and C_AddOns.GetAddOnInfo or GetAddOnInfo
+
+---@class table<string, EquipSlot>
 Utils.CHAR_EQUIP_SLOTS = {
     ["Head"] = "HeadSlot",
     ["Neck"] = "NeckSlot",
@@ -11,7 +14,7 @@ Utils.CHAR_EQUIP_SLOTS = {
     ["Tabard"] = "TabardSlot",
     ["Wrist"] = "WristSlot",
     ["Hands"] = "HandsSlot",
-    ["Wairst"] = "WaistSlot",
+    ["Waist"] = "WaistSlot",
     ["Legs"] = "LegsSlot",
     ["Feet"] = "FeetSlot",
     ["Finger1"] = "Finger0Slot",
@@ -23,6 +26,7 @@ Utils.CHAR_EQUIP_SLOTS = {
     ["Range"] = "RangedSlot",
 }
 
+---@class Colors
 Utils.colors = {
     ATTACK_POWER_PRIMARY = "ffa000",
     ATTACK_POWER_SECONDARY = "ffd149",
@@ -38,6 +42,9 @@ Utils.colors = {
     MP5_SECONDARY = "5472d3",
     DEFENSE_PRIMARY = "8d6e63",
     DEFENSE_SECONDARY = "be9c91",
+
+    HASTE_RATING_PRIMARY = "ffd740",
+    HASTE_RATING_SECONDARY = "c8a600",
 
     ARCANE_PRIMARY = "80deea",
     ARCANE_SECONDARY = "b4ffff",
@@ -60,11 +67,14 @@ Utils.colors = {
     GRAY = "A8A8A8",
 }
 
-function Utils:Colorize(text, color)
+---@param text string
+---@param color Color
+function Utils.Colorize(text, color)
     return "|cFF" .. color .. text .. "|r"
 end
 
 local cachedTitle
+---@return number, number, number
 function Utils:GetAddonVersionInfo()
     if (not cachedTitle) then
         local _, title, _, _, _ = GetAddOnInfo("ExtendedCharacterStats")
@@ -75,7 +85,10 @@ function Utils:GetAddonVersionInfo()
     return tonumber(major), tonumber(minor), tonumber(patch)
 end
 
+---@return string
 function Utils:GetAddonVersionString()
     local major, minor, patch = Utils:GetAddonVersionInfo()
     return "v" .. tostring(major) .. "." .. tostring(minor) .. "." .. tostring(patch)
 end
+
+return Utils

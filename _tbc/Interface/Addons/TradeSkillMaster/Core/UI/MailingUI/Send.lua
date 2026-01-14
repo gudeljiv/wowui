@@ -4,23 +4,29 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Send = TSM.UI.MailingUI:NewPackage("Send")
-local L = TSM.Include("Locale").GetTable()
-local Delay = TSM.Include("Util.Delay")
-local Money = TSM.Include("Util.Money")
-local FSM = TSM.Include("Util.FSM")
-local Database = TSM.Include("Util.Database")
-local String = TSM.Include("Util.String")
-local Event = TSM.Include("Util.Event")
-local ItemString = TSM.Include("Util.ItemString")
-local Theme = TSM.Include("Util.Theme")
-local ItemInfo = TSM.Include("Service.ItemInfo")
-local InventoryInfo = TSM.Include("Service.InventoryInfo")
-local BagTracking = TSM.Include("Service.BagTracking")
-local PlayerInfo = TSM.Include("Service.PlayerInfo")
-local UIElements = TSM.Include("UI.UIElements")
+local TSM = select(2, ...) ---@type TSM
+local Send = TSM.UI.MailingUI:NewPackage("Send") ---@type AddonPackage
+local L = TSM.Locale.GetTable()
+local DelayTimer = TSM.LibTSMWoW:IncludeClassType("DelayTimer")
+local Money = TSM.LibTSMUtil:Include("UI.Money")
+local FSM = TSM.LibTSMUtil:Include("FSM")
+local Database = TSM.LibTSMUtil:Include("Database")
+local String = TSM.LibTSMUtil:Include("Lua.String")
+local Event = TSM.LibTSMWoW:Include("Service.Event")
+local ItemString = TSM.LibTSMTypes:Include("Item.ItemString")
+local Theme = TSM.LibTSMService:Include("UI.Theme")
+local Container = TSM.LibTSMWoW:Include("API.Container")
+local BagTracking = TSM.LibTSMService:Include("Inventory.BagTracking")
+local PlayerInfo = TSM.LibTSMApp:Include("Service.PlayerInfo")
+local DefaultUI = TSM.LibTSMWoW:Include("UI.DefaultUI")
+local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
+local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
+local Inbox = TSM.LibTSMWoW:Include("API.Inbox")
+local Reactive = TSM.LibTSMUtil:Include("Reactive")
+local UIManager = TSM.LibTSMUtil:IncludeClassType("UIManager")
 local private = {
+	manager = nil, ---@type UIManager
+	settings = nil,
 	fsm = nil,
 	frame = nil,
 	db = nil,
@@ -31,10 +37,15 @@ local private = {
 	money = 0,
 	isMoney = true,
 	isCOD = false,
+	mailShowingTimer = nil,
+	queryCancellable = nil,
 }
 local PLAYER_NAME = UnitName("player")
 local PLAYER_NAME_REALM = gsub(PLAYER_NAME.."-"..GetRealmName(), "%s+", "")
 local MAX_COD_AMOUNT = 10000 * COPPER_PER_GOLD
+local STATE_SCHEMA = Reactive.CreateStateSchema("MAILING_SEND_UI_STATE")
+	:AddOptionalTableField("frame")
+	:Commit()
 
 
 
@@ -42,7 +53,17 @@ local MAX_COD_AMOUNT = 10000 * COPPER_PER_GOLD
 -- Module Functions
 -- ============================================================================
 
-function Send.OnInitialize()
+function Send.OnInitialize(settingsDB)
+	private.settings = settingsDB:NewView()
+		:AddKey("global", "coreOptions", "regionWide")
+		:AddKey("global", "mailingOptions", "recentlyMailedList")
+
+	-- Create the state / manager
+	local state = STATE_SCHEMA:CreateState()
+	private.manager = UIManager.Create("MAILING_SEND", state, private.ActionHandler)
+		:SuppressActionLog("ACTION_HANDLE_NAME_INPUT_CHANGED")
+
+	private.mailShowingTimer = DelayTimer.New("MAILING_SEND_MAIL_SHOWING", function() SetSendMailShowing(true) end)
 	private.FSMCreate()
 	TSM.UI.MailingUI.RegisterTopLevelPage(L["Send"], private.GetSendFrame)
 
@@ -64,9 +85,14 @@ end
 -- ============================================================================
 
 function private.GetSendFrame()
-	TSM.UI.AnalyticsRecordPathChange("mailing", "send")
+	UIUtils.AnalyticsRecordPathChange("mailing", "send")
+	assert(not private.queryCancellable)
+	private.queryCancellable = private.query:Publisher()
+		:CallFunction(private.SendOnDataUpdated)
+		:Stored()
 	local frame = UIElements.New("Frame", "send")
 		:SetLayout("VERTICAL")
+		:SetManager(private.manager)
 		:AddChild(UIElements.New("Frame", "container")
 			:SetLayout("VERTICAL")
 			:SetBackgroundColor("PRIMARY_BG_ALT")
@@ -85,14 +111,14 @@ function private.GetSendFrame()
 					:SetAutoComplete(PlayerInfo.GetConnectedAlts())
 					:SetClearButtonEnabled(true)
 					:SetValue(private.recipient)
-					:SetScript("OnValueChanged", private.RecipientOnValueChanged)
+					:SetAction("OnValueChanged", "ACTION_HANDLE_NAME_INPUT_CHANGED")
 				)
 				:AddChild(UIElements.New("ActionButton", "contacts")
 					:SetWidth(152)
 					:SetMargin(8, 0, 0, 0)
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetText(L["Contacts"])
-					:SetScript("OnClick", private.ContactsBtnOnClick)
+					:SetAction("OnClick", "ACTION_SHOW_CONTACTS_DIALOG")
 				)
 			)
 			:AddChild(UIElements.New("Frame", "subject")
@@ -135,36 +161,11 @@ function private.GetSendFrame()
 				:RegisterForDrag("LeftButton")
 				:SetScript("OnReceiveDrag", private.DragBoxOnItemRecieve)
 				:SetScript("OnMouseUp", private.DragBoxOnItemRecieve)
-				:AddChild(UIElements.New("QueryScrollingTable", "items")
-					:GetScrollingTableInfo()
-						:NewColumn("item")
-							:SetTitle(L["Items"])
-							:SetFont("ITEM_BODY3")
-							:SetJustifyH("LEFT")
-							:SetIconSize(12)
-							:SetTextInfo("itemString", TSM.UI.GetColoredItemName)
-							:SetIconInfo("itemString", ItemInfo.GetTexture)
-							:SetTooltipInfo("itemString")
-							:SetTooltipLinkingDisabled(true)
-							:DisableHiding()
-							:Commit()
-						:NewColumn("quantity")
-							:SetTitle(L["Amount"])
-							:SetWidth(60)
-							:SetFont("TABLE_TABLE1")
-							:SetJustifyH("LEFT")
-							:SetTextInfo("quantity")
-							:DisableHiding()
-							:Commit()
-						:Commit()
+				:AddChild(UIElements.New("SendItemsList", "items")
 					:SetQuery(private.query)
-					:SetScript("OnRowClick", private.QueryOnRowClick)
-					:SetScript("OnDataUpdated", private.SendOnDataUpdated)
+					:SetScript("OnRemoveItem", private.ListOnRemoveItem)
 				)
-				:AddChild(UIElements.New("Texture", "line")
-					:SetHeight(2)
-					:SetTexture("ACTIVE_BG")
-				)
+				:AddChild(UIElements.New("HorizontalLine", "line"))
 				:AddChild(UIElements.New("Frame", "footer")
 					:SetLayout("HORIZONTAL")
 					:SetHeight(26)
@@ -179,21 +180,18 @@ function private.GetSendFrame()
 					:AddChild(UIElements.New("Texture", "vline")
 						:SetWidth(1)
 						:SetMargin(8, 8, 3, 3)
-						:SetTexture("ACTIVE_BG_ALT")
+						:SetColor("ACTIVE_BG_ALT")
 						:Hide()
 					)
 					:AddChild(UIElements.New("Text", "postage")
 						:SetWidth(150)
 						:SetFont("BODY_BODY2_MEDIUM")
 						:SetJustifyH("RIGHT")
-						:SetText(L["Total Postage"]..": "..Money.ToString(30))
+						:SetText(L["Total Postage"]..": "..Money.ToStringExact(30))
 					)
 				)
 			)
-			:AddChild(UIElements.New("Texture", "line")
-				:SetHeight(2)
-				:SetTexture("ACTIVE_BG")
-			)
+			:AddChild(UIElements.New("HorizontalLine", "line"))
 			:AddChild(UIElements.New("Frame", "check")
 				:SetLayout("HORIZONTAL")
 				:SetHeight(20)
@@ -202,7 +200,6 @@ function private.GetSendFrame()
 					:SetWidth("AUTO")
 					:SetMargin(0, 0, 1, 0)
 					:SetFont("BODY_BODY2")
-					:SetCheckboxPosition("LEFT")
 					:SetChecked(private.isMoney)
 					:SetText(L["Send Money"])
 					:SetScript("OnValueChanged", private.SendOnValueChanged)
@@ -216,7 +213,6 @@ function private.GetSendFrame()
 				:AddChild(UIElements.New("Checkbox", "cod")
 					:SetSize("AUTO", 20)
 					:SetFont("BODY_BODY2")
-					:SetCheckboxPosition("LEFT")
 					:SetChecked(private.isCOD)
 					:SetText(L["Make Cash On Delivery?"])
 					:SetDisabled(true)
@@ -235,15 +231,12 @@ function private.GetSendFrame()
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetValidateFunc(private.MoneyValidateFunc)
 					:SetJustifyH("RIGHT")
-					:SetValue(Money.ToString(private.money))
+					:SetValue(Money.ToStringExact(private.money))
 					:SetScript("OnValueChanged", private.MoneyOnValueChanged)
 				)
 			)
 		)
-		:AddChild(UIElements.New("Texture", "line")
-			:SetHeight(2)
-			:SetTexture("ACTIVE_BG")
-		)
+		:AddChild(UIElements.New("HorizontalLine", "line"))
 		:AddChild(UIElements.New("Frame", "footer")
 			:SetLayout("HORIZONTAL")
 			:SetHeight(40)
@@ -268,6 +261,7 @@ function private.GetSendFrame()
 		:SetScript("OnUpdate", private.SendFrameOnUpdate)
 		:SetScript("OnHide", private.SendFrameOnHide)
 
+	private.manager:ProcessAction("ACTION_HANDLE_FRAME_SHOWN", frame)
 	private.frame = frame
 
 	return frame
@@ -279,7 +273,7 @@ function private.SubjectBtnOnClick(button)
 		:SetSize(478, 314)
 		:SetPadding(12)
 		:AddAnchor("CENTER")
-		:SetBackgroundColor("FRAME_BG", true)
+		:SetRoundedBackgroundColor("FRAME_BG")
 		:AddChild(UIElements.New("Frame", "header")
 			:SetLayout("HORIZONTAL")
 			:SetHeight(24)
@@ -371,7 +365,10 @@ end
 function private.SendFrameOnHide(frame)
 	assert(frame == private.frame)
 	private.frame = nil
+	private.queryCancellable:Cancel()
+	private.queryCancellable = nil
 
+	private.manager:ProcessAction("ACTION_HANDLE_FRAME_HIDDEN")
 	private.fsm:ProcessEvent("EV_FRAME_HIDE")
 end
 
@@ -387,10 +384,6 @@ end
 
 function private.DialogOnHide(button)
 	private.fsm:ProcessEvent("EV_DIALOG_HIDDEN")
-end
-
-function private.ContactsBtnOnClick(button)
-	TSM.UI.Util.Contacts.ShowDialog(button, button:GetElement("__parent.input"), private.RecipientOnValueChanged)
 end
 
 function private.DragBoxOnItemRecieve(frame, button)
@@ -411,10 +404,10 @@ function private.DragBoxOnItemRecieve(frame, button)
 	local query = BagTracking.CreateQueryBags()
 		:OrderBy("slotId", true)
 		:Select("bag", "slot", "quantity")
-		:Equal("isBoP", false)
+		:Equal("isBound", false)
 		:Equal("itemString", itemString)
 	for _, bag, slot, quantity in query:Iterator() do
-		if InventoryInfo.IsBagSlotLocked(bag, slot) then
+		if Container.IsBagSlotLocked(bag, slot) then
 			stackSize = quantity
 		end
 	end
@@ -427,10 +420,8 @@ function private.DragBoxOnItemRecieve(frame, button)
 	private.DatabaseNewRow(itemString, stackSize)
 end
 
-function private.QueryOnRowClick(scrollingTable, row, button)
-	if button == "RightButton" then
-		private.db:DeleteRow(row)
-	end
+function private.ListOnRemoveItem(_, row)
+	private.db:DeleteRow(row)
 end
 
 function private.SendOnDataUpdated()
@@ -457,15 +448,6 @@ function private.SubjectClearAllBtnOnClick(button)
 	button:GetElement("__parent.__parent.addMailBtn")
 		:SetDisabled(true)
 		:Draw()
-end
-
-function private.RecipientOnValueChanged(input)
-	local value = input:GetValue()
-	if value == private.recipient then
-		return
-	end
-	private.recipient = value
-	private.UpdateSendFrame()
 end
 
 function private.SubjectOnValueChanged(input)
@@ -519,7 +501,7 @@ function private.CODOnValueChanged(checkbox)
 		local input = checkbox:GetElement("__parent.moneyInput")
 		local value = private.ConvertMoneyValue(input:GetValue())
 		private.money = private.isCOD and min(value, MAX_COD_AMOUNT) or value
-		input:SetValue(Money.ToString(private.money))
+		input:SetValue(Money.ToStringExact(private.money))
 			:Draw()
 
 		private.isMoney = false
@@ -550,8 +532,51 @@ function private.MoneyOnValueChanged(input)
 		return
 	end
 	private.money = value
-	input:SetValue(Money.ToString(value))
+	input:SetValue(Money.ToStringExact(value))
 		:Draw()
+end
+
+
+
+-- ============================================================================
+-- Action Handler
+-- ============================================================================
+
+---@param manager UIManager
+---@param state MailingSendUIState
+function private.ActionHandler(manager, state, action, ...)
+	if action == "ACTION_HANDLE_FRAME_SHOWN" then
+		local frame = ...
+		assert(frame)
+		state.frame = frame
+	elseif action == "ACTION_HANDLE_FRAME_HIDDEN" then
+		state.frame = nil
+	elseif action == "ACTION_HANDLE_NAME_INPUT_CHANGED" then
+		local value = state.frame:GetElement("container.name.input"):GetValue()
+		if value == private.recipient then
+			return
+		end
+		private.recipient = value
+		private.UpdateSendFrame()
+	elseif action == "ACTION_SHOW_CONTACTS_DIALOG" then
+		state.frame:GetElement("container.name.input")
+			:SetFocused(false)
+			:Draw()
+		state.frame:GetBaseElement():ShowDialogFrame(UIElements.New("MailContactsDialog", "dialog")
+			:AddAnchor("TOP", state.frame:GetElement("container.name.contacts"), "BOTTOM", 0, -6)
+			:Configure(private.settings.regionWide)
+			:SetManager(manager)
+			:SetAction("OnRowClick", "ACTION_CONTACT_SELECTED")
+		)
+	elseif action == "ACTION_CONTACT_SELECTED" then
+		local character = ...
+		state.frame:GetElement("container.name.input")
+			:SetValue(character)
+			:Draw()
+		manager:ProcessAction("ACTION_HANDLE_NAME_INPUT_CHANGED")
+	else
+		error("Unknown action: "..tostring(action))
+	end
 end
 
 
@@ -590,14 +615,14 @@ function private.SendMail(button)
 end
 
 function private.UpdateRecentlyMailed(recipient)
-	if recipient == UnitName("player") or recipient == PLAYER_NAME_REALM then
+	if recipient == UnitName("player") or recipient == PLAYER_NAME_REALM or recipient == "" then
 		return
 	end
 
 	local size = 0
 	local oldestName = nil
 	local oldestTime = nil
-	for k, v in pairs(TSM.db.global.mailingOptions.recentlyMailedList) do
+	for k, v in pairs(private.settings.recentlyMailedList) do
 		size = size + 1
 		if not oldestName or not oldestTime or oldestTime > v then
 			oldestName = k
@@ -606,10 +631,10 @@ function private.UpdateRecentlyMailed(recipient)
 	end
 
 	if size >= 20 then
-		TSM.db.global.mailingOptions.recentlyMailedList[oldestName] = nil
+		private.settings.recentlyMailedList[oldestName] = nil
 	end
 
-	TSM.db.global.mailingOptions.recentlyMailedList[recipient] = time()
+	private.settings.recentlyMailedList[recipient] = time()
 end
 
 function private.UpdateSendFrame()
@@ -640,9 +665,7 @@ end
 -- ============================================================================
 
 function private.FSMCreate()
-	Event.Register("MAIL_CLOSED", function()
-		private.fsm:ProcessEvent("EV_MAIL_CLEAR")
-	end)
+	DefaultUI.RegisterMailVisibleCallback(function() private.fsm:ProcessEvent("EV_MAIL_CLEAR") end, false)
 	Event.Register("MAIL_SEND_INFO_UPDATE", function()
 		private.fsm:ProcessEvent("EV_MAIL_INFO_UPDATE")
 	end)
@@ -691,16 +714,16 @@ function private.FSMCreate()
 
 		local size = private.query:Count()
 		if size > 0 then
-			postage:SetText(L["Total Postage"]..": "..Money.ToString(30 * size))
+			postage:SetText(L["Total Postage"]..": "..Money.ToStringExact(30 * size))
 				:Draw()
-			items:SetText(format(L["%s Items Selected"], Theme.GetFeedbackColor("GREEN"):ColorText(size.."/"..ATTACHMENTS_MAX_SEND)))
+			items:SetText(format(L["%s Items Selected"], Theme.GetColor("FEEDBACK_GREEN"):ColorText(size.."/"..Inbox.GetMaxSendAttachments())))
 				:Show()
 				:Draw()
 			line:Show()
 			cod:SetDisabled(false)
 				:Draw()
 		else
-			postage:SetText(L["Total Postage"]..": "..Money.ToString(30))
+			postage:SetText(L["Total Postage"]..": "..Money.ToStringExact(30))
 				:Draw()
 			items:Hide()
 			line:Hide()
@@ -723,7 +746,7 @@ function private.FSMCreate()
 		if private.query:Count() >= 12 then
 			UIErrorsFrame:AddMessage(ERR_MAIL_INVALID_ATTACHMENT_SLOT, 1.0, 0.1, 0.1, 1.0)
 		else
-			for i = 1, ATTACHMENTS_MAX_SEND do
+			for i = 1, Inbox.GetMaxSendAttachments() do
 				local itemName, _, _, stackCount = GetSendMailItem(i)
 				if itemName and stackCount then
 					local itemLink = GetSendMailItemLink(i)
@@ -756,7 +779,7 @@ function private.FSMCreate()
 				:SetValue(private.recipient)
 				:Draw()
 			context.frame:GetElement("container.checkbox.moneyInput")
-				:SetValue(Money.ToString(private.money))
+				:SetValue(Money.ToStringExact(private.money))
 				:Draw()
 			if not keepInfo then
 				context.frame:GetElement("footer.sendMail")
@@ -768,16 +791,13 @@ function private.FSMCreate()
 		UpdateFrame(context)
 	end
 
-	local function SendMailShowing()
-		SetSendMailShowing(true)
-	end
-
 	private.fsm = FSM.New("MAILING_SEND")
 		:AddState(FSM.NewState("ST_HIDDEN")
 			:SetOnEnter(function(context)
 				TSM.Mailing.Send.KillThread()
 				SetSendMailShowing(false)
 				context.frame = nil
+				private.db:Truncate()
 			end)
 			:AddTransition("ST_SHOWN")
 			:AddTransition("ST_HIDDEN")
@@ -788,7 +808,7 @@ function private.FSMCreate()
 				if not context.frame then
 					context.frame = frame
 					UpdateFrame(context)
-					Delay.AfterFrame("setMailShowing", 2, SendMailShowing)
+					private.mailShowingTimer:RunForFrames(2)
 				end
 				UpdateButton(context)
 			end)

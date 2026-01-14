@@ -1,6 +1,6 @@
 -- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -16,6 +16,9 @@ if not TMW then return end
 local TMW = TMW
 local L = TMW.L
 local print = TMW.print
+local issecretvalue = TMW.issecretvalue
+
+local UnitIsUnit = UnitIsUnit
 
 local _, pclass = UnitClass("Player")
 
@@ -42,7 +45,7 @@ ConditionCategory:RegisterCondition(1,    "EXISTS", {
 	},
 	funcstr = function(c)
 		if c.Unit == "player" then
-			return [[true]]
+			return [[BOOLCHECK( true )]]
 		else
 			return [[BOOLCHECK( UnitExists(c.Unit) )]]
 		end
@@ -108,6 +111,25 @@ ConditionCategory:RegisterCondition(3,    "COMBAT", {
 	end,
 })
 
+ConditionCategory:RegisterCondition(4,    "VEHICLE", {
+	text = L["CONDITIONPANEL_VEHICLE"],
+
+	bool = true,
+	
+	icon = "Interface\\Icons\\Ability_Vehicle_SiegeEngineCharge",
+	tcoords = CNDT.COMMON.standardtcoords,
+	Env = {
+		UnitHasVehicleUI = UnitHasVehicleUI,
+	},
+	funcstr = [[BOOLCHECK( UnitHasVehicleUI(c.Unit) )]],
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateNormalEventString("UNIT_ENTERED_VEHICLE", CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateNormalEventString("UNIT_EXITED_VEHICLE", CNDT:GetUnit(c.Unit))
+	end,
+})
+
 ConditionCategory:RegisterCondition(5,    "PVPFLAG", {
 	text = L["CONDITIONPANEL_PVPFLAG"],
 
@@ -134,7 +156,7 @@ ConditionCategory:RegisterCondition(6,    "REACT", {
 	defaultUnit = "target",
 	texttable = {[1] = L["ICONMENU_HOSTILE"], [2] = L["ICONMENU_FRIEND"]},
 	nooperator = true,
-	icon = "Interface\\Icons\\spell_holy_blessingofstamina",
+	icon = ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM) and "Interface\\Icons\\Warrior_talent_icon_FuryInTheBlood" or "Interface\\Icons\\spell_holy_blessingofstamina",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitIsEnemy = UnitIsEnemy,
@@ -167,6 +189,28 @@ ConditionCategory:RegisterCondition(6.2,  "ISPLAYER", {
 			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit))
 	end,
 })
+
+if UnitGetIncomingHeals then
+	ConditionCategory:RegisterCondition(6.7,  "INCHEALS", {
+		text = L["INCHEALS"],
+		tooltip = L["INCHEALS_DESC"],
+		range = 50000,
+		icon = "Interface\\Icons\\spell_holy_flashheal",
+		tcoords = CNDT.COMMON.standardtcoords,
+		formatter = TMW.C.Formatter.COMMANUMBER,
+		Env = {
+			UnitGetIncomingHeals = UnitGetIncomingHeals,
+		},
+		funcstr = function(c)
+			return [[(UnitGetIncomingHeals(c.Unit) or 0) c.Operator c.Level]]
+		end,
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_HEAL_PREDICTION", CNDT:GetUnit(c.Unit))
+		end,
+	})
+end
 
 
 ConditionCategory:RegisterSpacer(6.9)
@@ -210,8 +254,9 @@ ConditionCategory:RegisterCondition(8.5,  "LIBRANGECHECK", {
 	tooltip = L["CNDT_RANGE_DESC"],
 	min = 0,
 	max = 100,
+	defaultUnit = "target",
 	formatter = TMW.C.Formatter:New(function(val)
-		local LRC = LibStub("LibRangeCheck-2.0")
+		local LRC = LibStub("LibRangeCheck-3.0", true)
 		if not LRC then
 			return val
 		end
@@ -220,12 +265,12 @@ ConditionCategory:RegisterCondition(8.5,  "LIBRANGECHECK", {
 			return L["CNDT_RANGE_PRECISE"]:format(val)
 		end
 
-		for range in LRC:GetHarmCheckers() do
+		for range in LRC:GetHarmCheckers(true) do
 			if range == val then
 				return L["CNDT_RANGE_PRECISE"]:format(val)
 			end
 		end
-		for range in LRC:GetFriendCheckers() do
+		for range in LRC:GetFriendCheckers(true) do
 			if range == val then
 				return L["CNDT_RANGE_PRECISE"]:format(val)
 			end
@@ -248,9 +293,9 @@ ConditionCategory:RegisterCondition(8.5,  "LIBRANGECHECK", {
 	end,
 
 	funcstr = function(c, parent)
-		Env.LibRangeCheck = LibStub("LibRangeCheck-2.0")
+		Env.LibRangeCheck = LibStub("LibRangeCheck-3.0", true)
 		if not Env.LibRangeCheck then
-			TMW:Error("The %s condition requires LibRangeCheck-2.0", L["CNDT_RANGE"])
+			TMW:Error("The %s condition requires LibRangeCheck-3.0", L["CNDT_RANGE"])
 			return "false"
 		end
 
@@ -262,6 +307,10 @@ ConditionCategory:RegisterCondition(8.5,  "LIBRANGECHECK", {
 			TMW:Error("Bad operator %q for range check condition of %s", c.Operator, tostring(parent))
 		end
 	end,
+
+	customDeprecated = 
+		("NOTICE: Due to Blizzard restrictions, this condition doesn't allow checking the range of friendly units while in combat. For that scenario, it is recommended to use the %q condition instead."):format(L["CONDITIONPANEL_SPELLRANGE"]) .. 
+		(C_Spell.EnableSpellRangeCheck and (" \n\nIf checking your own spells against hostile targets, the %q condition is also usually much more CPU efficient."):format(L["CONDITIONPANEL_SPELLRANGE"]) or "")
 	-- events = absolutely no events
 })
 
@@ -284,8 +333,16 @@ ConditionCategory:RegisterCondition(8.95, "UNITISUNIT", {
 	icon = "Interface\\Icons\\spell_holy_prayerofhealing",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		UnitIsUnit = UnitIsUnit,
+		UnitIsUnit = not TMW.clientHasSecrets and UnitIsUnit or function(unit, unit2)
+			local ret = UnitIsUnit(unit, unit2)
+			if issecretvalue(ret) then
+				return false
+			else
+				return ret
+			end
+		end,
 	},
+	maybeSecret = true,
 	funcstr = [[BOOLCHECK( UnitIsUnit(c.Unit, c.Unit2) )]],
 	events = function(ConditionObject, c)
 		return
@@ -298,6 +355,7 @@ ConditionCategory:RegisterCondition(9,    "NAME", {
 	text = L["CONDITIONPANEL_NAME"],
 
 	bool = true,
+	defaultUnit = "target",
 	
 	name = function(editbox)
 		editbox:SetTexts(L["CONDITIONPANEL_NAMETOMATCH"], L["CONDITIONPANEL_NAMETOOLTIP"])
@@ -305,15 +363,27 @@ ConditionCategory:RegisterCondition(9,    "NAME", {
 	icon = "Interface\\LFGFrame\\LFGFrame-SearchIcon-Background",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		UnitName = UnitName,
+		UnitName = not TMW.clientHasSecrets and UnitName or function(unit)
+			local ret = UnitName(unit)
+			if issecretvalue(ret) then
+				return ""
+			else
+				return ret
+			end
+		end,
 	},
-	funcstr = [[BOOLCHECK(MULTINAMECHECK(  UnitName(c.Unit) or ""  ))]],
+	maybeSecret = true,
+	funcstr = [=[BOOLCHECK(c.Spells.Hash[strlowerCache[UnitName(c.Unit) or ""]])]=],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
 			ConditionObject:GenerateNormalEventString("UNIT_NAME_UPDATE", CNDT:GetUnit(c.Unit))
 	end,
 })
+
+local UnitNpcId = UnitCreatureID or function(unit)
+	return tonumber((UnitGUID(unit) or ""):match(".-%-%d+%-%d+%-%d+%-%d+%-(%d+)"))
+end
 
 ConditionCategory:RegisterCondition(9.5,  "NPCID", {
 	text = L["CONDITIONPANEL_NPCID"],
@@ -328,9 +398,13 @@ ConditionCategory:RegisterCondition(9.5,  "NPCID", {
 	icon = "Interface\\LFGFrame\\LFGFrame-SearchIcon-Background",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		UnitGUID = UnitGUID,
+		UnitNpcId = not TMW.clientHasSecrets and UnitNpcId or function(unit)
+			local id = UnitNpcId(unit)
+			return issecretvalue(id) and 0 or id
+		end,
 	},
-	funcstr = [[BOOLCHECK(MULTINAMECHECK(  tonumber((UnitGUID(c.Unit) or ""):match(".-%-%d+%-%d+%-%d+%-%d+%-(%d+)")) ))]],
+	maybeSecret = true,
+	funcstr = [=[BOOLCHECK(c.Spells.Hash[UnitNpcId(c.Unit)])]=],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit))
@@ -394,8 +468,12 @@ ConditionCategory:RegisterCondition(10.1,  "RAIDICON2", {
 	icon = "Interface\\TargetingFrame\\UI-RaidTargetingIcon_8",
 
 	Env = {
-		GetRaidTargetIndex = GetRaidTargetIndex,
+		GetRaidTargetIndex = not TMW.clientHasSecrets and GetRaidTargetIndex or function(unit)
+			local index = GetRaidTargetIndex(unit)
+			return issecretvalue(index) and 0 or index
+		end,
 	},
+	maybeSecret = true,
 	funcstr = [[ BITFLAGSMAPANDCHECK( GetRaidTargetIndex(c.Unit) or 0 ) ]],
 	events = function(ConditionObject, c)
 		return
@@ -437,7 +515,7 @@ ConditionCategory:RegisterCondition(12.1, "CLASSIFICATION2", {
 
 	defaultUnit = "target",
 
-	icon = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
+	icon = "Interface\\Icons\\achievement_pvp_h_03",
 	tcoords = CNDT.COMMON.standardtcoords,
 
 	Env = {
@@ -465,9 +543,17 @@ ConditionCategory:RegisterCondition(13,   "CREATURETYPE", {
 	icon = "Interface\\Icons\\spell_shadow_summonfelhunter",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		UnitCreatureType = UnitCreatureType,
+		UnitCreatureType = not TMW.clientHasSecrets and UnitCreatureType or function(unit)
+			local creatureType = UnitCreatureType(unit)
+			if issecretvalue(creatureType) then
+				return ""
+			else
+				return creatureType
+			end
+		end,
 	},
-	funcstr = [[BOOLCHECK(MULTINAMECHECK(  UnitCreatureType(c.Unit) or ""  ))]],
+	maybeSecret = true,
+	funcstr = [=[BOOLCHECK(c.Spells.Hash[strlowerCache[UnitCreatureType(c.Unit) or ""]])]=],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit))
@@ -496,13 +582,30 @@ ConditionCategory:RegisterCondition(13.1,   "UNITRACE", {
 			["NightElf"] = {order = 3, text = Name("Night Elf")},
 			["Gnome"] = {order = 4, text = Name("Gnome")},
 			["Draenei"] = {order = 5, text = Name("Draenei")},
+			["Worgen"] = {order = 6, text = Name("Worgen")},
+			["VoidElf"] = {order = 6.1, text = Name("Void Elf")},
+			["LightforgedDraenei"] = {order = 6.2, text = Name("Lightforged Draenei")},
+			["DarkIronDwarf"] = {order = 6.3, text = Name("Dark Iron Dwarf")},
+			["KulTiran"] = {order = 6.4, text = Name("Kul Tiran")},
+			["Mechagnome"] = {order = 6.5, text = Name("Mechagnome"), space = true},
 
 			["Orc"] = {order = 7, text = Name("Orc")},
 			["Scourge"] = {order = 8, text = Name("Undead")},
 			["Tauren"] = {order = 9, text = Name("Tauren")},
 			["Troll"] = {order = 10, text = Name("Troll")},
 			["BloodElf"] = {order = 11, text = Name("Blood Elf")},
+			["Goblin"] = {order = 12, text = Name("Goblin")},
+			["Nightborne"] = {order = 12.1, text = Name("Nightborne")},
+			["HighmountainTauren"] = {order = 12.2, text = Name("Highmountain Tauren")},
+			["MagharOrc"] = {order = 12.3, text = Name("Mag'har Orc")},
+			["ZandalariTroll"] = {order = 12.4, text = Name("Zandalari Troll")},
+			["Vulpera"] = {order = 12.5, text = Name("Vulpera"), space = true},
+
+			["Pandaren"] = {order = 13, text = Name("Pandaren")},
+			["Dracthyr"] = {order = 14, text = Name("Dracthyr")},
+			["Earthen"] = {order = 15, text = Name("Earthen")},
 		}
+
 
 		for token, data in pairs(bitFlags) do
 			data.atlas = TMW:GetRaceIconInfo(token)
@@ -528,6 +631,7 @@ ConditionCategory:RegisterCondition(13.1,   "UNITRACE", {
 })
 
 
+
 ConditionCategory:RegisterSpacer(13.5)
 
 
@@ -539,7 +643,7 @@ ConditionCategory:RegisterCondition(17,   "THREATSCALED", {
 	max = 100,
 	defaultUnit = "target",
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = GetSpellTexture(6612),
+	icon = "Interface\\Icons\\spell_misc_emotionangry",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitExists = UnitExists,
@@ -563,7 +667,7 @@ ConditionCategory:RegisterCondition(18,   "THREATRAW", {
 	max = 130,
 	defaultUnit = "target",
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = GetSpellTexture(9174),
+	icon = "Interface\\Icons\\spell_misc_emotionhappy",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitExists = UnitExists,

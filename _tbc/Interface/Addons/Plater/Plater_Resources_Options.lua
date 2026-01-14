@@ -1,3 +1,4 @@
+local addonId, platerInternal = ...
 
 local Plater = _G.Plater
 local GameCooltip = GameCooltip2
@@ -29,8 +30,9 @@ local CONST_ENUMNAME_RUNES = "Runes"
 local CONST_ENUMNAME_ARCANECHARGES = "ArcaneCharges"
 local CONST_ENUMNAME_CHI = "Chi"
 local CONST_ENUMNAME_SOULCHARGES = "SoulShards"
+local CONST_ENUMNAME_ESSENCE = "Essence"
 
-local startX, startY, heightSize = 10, -130, 710
+local startX, startY, heightSize = 10, platerInternal.optionsYStart, 755
 
 --templates
 local options_text_template = DF:GetTemplate("font", "OPTIONS_FONT_TEMPLATE")
@@ -40,7 +42,7 @@ local options_slider_template = DF:GetTemplate("slider", "OPTIONS_SLIDER_TEMPLAT
 local options_button_template = DF:GetTemplate("button", "OPTIONS_BUTTON_TEMPLATE")
 
 --localization
-local L = LibStub ("AceLocale-3.0"):GetLocale ("PlaterNameplates", true)
+local LOC = DF.Language.GetLanguageTable(addonId)
 
 function Plater.Resources.GetResourceEnumNameForPlayer()
     local playerSerial = Plater.PlayerGUID or UnitGUID("player")
@@ -70,6 +72,9 @@ function Plater.Resources.GetResourceEnumNameForPlayer()
         elseif (playerClass == "PALADIN") then
             Plater.db.profile.resources_settings.chr[playerSerial] = CONST_ENUMNAME_HOLYPOWER
             return CONST_ENUMNAME_HOLYPOWER
+		elseif (playerClass == "EVOKER") then
+            Plater.db.profile.resources_settings.chr[playerSerial] = CONST_ENUMNAME_ESSENCE
+            return CONST_ENUMNAME_ESSENCE
         end
     end
 
@@ -97,13 +102,15 @@ function Plater.Resources.GetResourceIdForPlayer()
 
     elseif (playerClass == "PALADIN") then
         return Enum.PowerType[CONST_ENUMNAME_HOLYPOWER]
+		
+	elseif (playerClass == "EVOKER") then
+        return Enum.PowerType[CONST_ENUMNAME_ESSENCE]
     end
 
     --return none if not found, this will trigger an error on new resources in the future
 end
 
 function Plater.Resources.BuildResourceOptionsTab(frame)
-
     --if there's no default resource name for this character yet, calling this will set a default
     Plater.Resources.GetResourceEnumNameForPlayer()
 
@@ -115,6 +122,7 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
         {name = "Arcane Charges", defaultClass = {"MAGE"}, enumName = CONST_ENUMNAME_ARCANECHARGES, iconTexture = [[Interface\PLAYERFRAME\MageArcaneCharges]], iconCoords = {64/256, 91/256, 64/128, 91/128}}, --16
         {name = "Chi", defaultClass = {"MONK"}, enumName = CONST_ENUMNAME_CHI, iconTexture = [[Interface\PLAYERFRAME\MonkLightPower]], iconCoords = {0.1, .9, 0.1, .9}}, --12
         {name = "Soul Shards", defaultClass = {"WARLOCK"}, enumName = CONST_ENUMNAME_SOULCHARGES, iconTexture = [[Interface\PLAYERFRAME\UI-WARLOCKSHARD]], iconCoords = {0/64, 18/64, 0/128, 18/128}}, --7
+		{name = "Essence", defaultClass = {"EVOKER"}, enumName = CONST_ENUMNAME_ESSENCE, iconTexture = false, iconAtlas = "UF-Essence-Icon"}, --8
     }
 
     local refreshResourceScrollBox = function(self, data, offset, totalLines)
@@ -237,19 +245,19 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 
 	--anchor table
 	local anchor_names = {
-		L["OPTIONS_ANCHOR_TOPLEFT"],
-		L["OPTIONS_ANCHOR_LEFT"],
-		L["OPTIONS_ANCHOR_BOTTOMLEFT"],
-		L["OPTIONS_ANCHOR_BOTTOM"],
-		L["OPTIONS_ANCHOR_BOTTOMRIGHT"],
-		L["OPTIONS_ANCHOR_RIGHT"],
-		L["OPTIONS_ANCHOR_TOPRIGHT"],
-		L["OPTIONS_ANCHOR_TOP"],
-		L["OPTIONS_ANCHOR_CENTER"],
-		L["OPTIONS_ANCHOR_INNERLEFT"],
-		L["OPTIONS_ANCHOR_INNERRIGHT"],
-		L["OPTIONS_ANCHOR_INNERTOP"],
-		L["OPTIONS_ANCHOR_INNERBOTTOM"],
+		LOC["OPTIONS_ANCHOR_TOPLEFT"],
+		LOC["OPTIONS_ANCHOR_LEFT"],
+		LOC["OPTIONS_ANCHOR_BOTTOMLEFT"],
+		LOC["OPTIONS_ANCHOR_BOTTOM"],
+		LOC["OPTIONS_ANCHOR_BOTTOMRIGHT"],
+		LOC["OPTIONS_ANCHOR_RIGHT"],
+		LOC["OPTIONS_ANCHOR_TOPRIGHT"],
+		LOC["OPTIONS_ANCHOR_TOP"],
+		LOC["OPTIONS_ANCHOR_CENTER"],
+		LOC["OPTIONS_ANCHOR_INNERLEFT"],
+		LOC["OPTIONS_ANCHOR_INNERRIGHT"],
+		LOC["OPTIONS_ANCHOR_INNERTOP"],
+		LOC["OPTIONS_ANCHOR_INNERBOTTOM"],
 	}
 
 	local build_anchor_side_table = function(member1, member2)
@@ -295,8 +303,8 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 				end
                 Plater.UpdateAllPlates()
             end,
-            name = "Use Plater Rsources",
-            desc = "Use Plater Rsources",
+            name = "Use Plater Resources",
+            desc = "Use Plater Resources",
         },
 
         --show on personal bar
@@ -310,11 +318,6 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
             name = "Show On Personal Bar",
             desc = "Show On Personal Bar",
         },
-
-        --alignment (is this implemented?)
-
-        --grow direction (is this implemented?)
-
 
         --show depleted
         {
@@ -344,7 +347,7 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 			type = "select",
 			get = function() return Plater.db.profile.resources_settings.global_settings.anchor.side end,
 			values = function() return build_anchor_side_table("global_settings", "anchor") end,
-			name = L["OPTIONS_ANCHOR"],
+			name = LOC["OPTIONS_ANCHOR"],
 			desc = "Which side of the nameplate this widget is attach to.",
 		},
 		--anchor x offset
@@ -359,7 +362,7 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 			max = 100,
 			step = 1,
 			usedecimals = true,
-			name = L["OPTIONS_XOFFSET"],
+			name = LOC["OPTIONS_XOFFSET"],
 			desc = "Slightly move horizontally.",
 		},
 		--anchor y offset
@@ -374,7 +377,7 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 			max = 100,
 			step = 1,
 			usedecimals = true,
-			name = L["OPTIONS_YOFFSET"],
+			name = LOC["OPTIONS_YOFFSET"],
 			desc = "Slightly move vertically.",
 		},
 
@@ -418,6 +421,12 @@ function Plater.Resources.BuildResourceOptionsTab(frame)
 	_G.C_Timer.After(1.4, function()
 		--TODO to other frame for now
 		--DF:BuildMenu(optionsFrame, globalResourceOptions, 5, -5, CONST_SCROLLBOX_HEIGHT, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template, optionChangedCallback)
-		DF:BuildMenu(frame, globalResourceOptions, startX, startY, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template, optionChangedCallback)
+
+        globalResourceOptions.always_boxfirst = true
+		DF:BuildMenu(frame, globalResourceOptions, startX, startY, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template, optionChangedCallback)
+
+        --for widgetId, widget in pairs(frame.widgetids) do
+        --    print(widget.hasLabel:GetText())
+        --end
 	end)
 end

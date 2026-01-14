@@ -264,8 +264,10 @@ L["ICONMENU_DOTWATCH_NOFOUND_DESC"] = "Set the icon opacity level for when none 
 
 
 
-L["ICONMENU_GUARDIAN"] = "Guardians/Pets"
-L["ICONMENU_GUARDIAN_DESC"] = [[Tracks your active guardians and temporary pets.]]
+L["ICONMENU_GUARDIAN"] = "Guardians"
+L["ICONMENU_GUARDIAN_DESC"] = [[Tracks your active guardians. These are minor units like Wild Imps for Warlocks.
+
+This icon type works best when used as a group controller.]]
 L["ICONMENU_GUARDIAN_TRIGGER"] = "Triggered by: %s"
 L["ICONMENU_GUARDIAN_CHOOSENAME_DESC"] = [[Enter the Name or NPC ID of the guardians you want this icon to monitor.
 
@@ -315,6 +317,8 @@ L["ICONMENU_ICD_DESC"] = [=[Tracks the cooldown of a proc or a similar effect.
 
 L["ICONMENU_CAST"] = "Spell Cast"
 L["ICONMENU_CAST_DESC"] = [=[Tracks spell casts and channels.]=]
+L["ICONMENU_CAST_PERCENT"] = "Spell Cast Percent Completion"
+L["ICONMENU_CAST_PERCENT_DESC"] = [=[Tracks the completion percentage of spell casts and channels.]=]
 
 L["ICONMENU_UNITCNDTIC"] = "Unit Condition Icon"
 L["ICONMENU_UNITCNDTIC_DESC"] = [=[Tracks the state of conditions on a number of units.
@@ -384,6 +388,12 @@ L["ICONMENU_VIEWREQ"] = "Incompatible Group Display Method"
 L["ICONMENU_VIEWREQ_DESC"] = [[This icon type cannot be used with this group's current display method because it doesn't have the necessary components to display all the data.
 
 Change the group's display method or create a new group to use this icon type.]]
+
+L["ICONMENU_OBSOLETE"] = "Obsolete Icon Type"
+L["ICONMENU_OBSOLETE_SHORT"] = "Obsolete/Unsupported"
+L["ICONMENU_OBSOLETE_DESC"] = [[This icon type is not supported in the current version of the game.
+
+Your original settings are preserved here so you can remember what this used to do :(]]
 
 
 
@@ -526,6 +536,9 @@ L["ICONMENU_NOPOCKETWATCH_DESC"] = "Check this box to show no texture instead of
 L["ICONMENU_ONLYMINE"] = "Only cast by me"
 L["ICONMENU_ONLYMINE_DESC"] = "Check this option to cause this icon to only check for buffs/debuffs that you cast"
 
+L["ICONMENU_INCLUDENAMEPLATE"] = "Only nameplate auras"
+L["ICONMENU_INCLUDENAMEPLATE_DESC"] = "Check this option to cause this icon to only check for buffs/debuffs that appear on nameplates"
+
 
 
 L["ICONMENU_SHOWTIMER"] = "Show timer"
@@ -542,7 +555,7 @@ L["ICONMENU_SHOWTIMERTEXT_NOOCC_DESC"] = [[Check this option to display ElvUI's 
 This setting only affects ElvUI's timer. If you have another addon that provides timers (like OmniCC), you can control those timers with the %q setting. It is not recommended to have both of these settings enabled.]]
 
 
-L["ICONMENU_ALLOWGCD"] = "Allow Global Cooldown"
+L["ICONMENU_ALLOWGCD"] = "Allow GCD"
 L["ICONMENU_ALLOWGCD_DESC"] = [[Check this option to allow the timer to react to and show the global cooldown instead of simply ignoring it.]]
 
 
@@ -554,6 +567,8 @@ L["ICONMENU_INVERTBARS"] = "Fill bar up"
 L["ICONMENU_INVERTCBAR_DESC"] = "Causes the bar to fill up as duration reaches zero."
 L["ICONMENU_INVERTPBAR_DESC"] = "Causes the bar to fill up as power become sufficient."
 L["ICONMENU_INVERTBARDISPLAYBAR_DESC"] = "Causes the bar to fill up as its value reaches zero."
+L["ICONMENU_SMOOTHING"] = "Smoothing"
+L["ICONMENU_SMOOTHING_DESC"] = "Applies smooth interpolation to the bar's value changes."
 L["ICONMENU_OFFS"] = "Offset"
 L["ICONMENU_FAKEMAX"] = "Artificial Maximum"
 L["ICONMENU_FAKEMAX_DESC"] = [[Set an artificial maximum value for the timer.
@@ -569,11 +584,11 @@ L["ICONMENU_BAR_COLOR_BACKDROP"] = "Backdrop Color"
 L["ICONMENU_BAR_COLOR_BACKDROP_DESC"] = "Configure the color and opacity of the backdrop beind the bar."
 
 L["ICONMENU_BAR_COLOR_START"] = "Start Color"
-L["ICONMENU_BAR_COLOR_START_DESC"] = "Color of the bar when the cooldown/duration has just begun."
+L["ICONMENU_BAR_COLOR_START_DESC"] = "Color of the bar when a cooldown duration is high, or an aura duration or resource level is low."
 L["ICONMENU_BAR_COLOR_MIDDLE"] = "Halfway Color"
-L["ICONMENU_BAR_COLOR_MIDDLE_DESC"] = "Color of the bar when the cooldown/duration is halfway complete."
+L["ICONMENU_BAR_COLOR_MIDDLE_DESC"] = "Midpoint color of the bar."
 L["ICONMENU_BAR_COLOR_COMPLETE"] = "Completion Color"
-L["ICONMENU_BAR_COLOR_COMPLETE_DESC"] = "Color of the bar when the cooldown/duration is complete."
+L["ICONMENU_BAR_COLOR_COMPLETE_DESC"] = "Color of the bar when a cooldown is complete, or an aura is freshly applied or a resource value is high."
 
 L["ICONMENU_REACT"] = "Unit Reaction"
 L["ICONMENU_FRIEND"] = "Friendly"
@@ -627,22 +642,29 @@ L["RUNES"] = "Rune(s) to check"
 
 
 L["ICONMENU_SHOWTTTEXT2"] = "Aura variables"
-L["ICONMENU_SHOWTTTEXT_DESC2"] = [[Report the icon's stacks as a variable associated with the aura. Practical uses include monitoring damage shield amounts.
+L["ICONMENU_SHOWTTTEXT_DESC2"] = [[Choose which value will be reported as the icon's stacks.
 
-This value will be reported and shown in place of the icon's stack count.
-
-Numbers are provided by Blizzard API and do not necessarily match numbers found on the tooltip of the aura.]]
+Choose between:
+• The actual aura stacks
+• Variables reported by Blizzard's API
+• Numbers extracted from the aura's tooltip
+]]
 
 L["ICONMENU_SHOWTTTEXT_STACKS"] = "Stacks (default behavior)"
 L["ICONMENU_SHOWTTTEXT_STACKS_DESC"] = "Causes the buff/debuff's stacks to be reported as the icon's stacks."
 L["ICONMENU_SHOWTTTEXT_FIRST"] = "First non-zero variable"
-L["ICONMENU_SHOWTTTEXT_FIRST_DESC"] = [[Causes the first non-zero variable assoeciated with the buff/debuff to be reported as the icon's stacks.
+L["ICONMENU_SHOWTTTEXT_FIRST_DESC"] = [[Causes the first non-zero variable associated with the buff/debuff to be reported as the icon's stacks.
 
 Usually this will be the correct variable if you desire one of the aura's variables.]]
-L["ICONMENU_SHOWTTTEXT_VAR"] = "Only Variable #%d"
+L["ICONMENU_SHOWTTTEXT_VAR"] = "Variable #%d"
 L["ICONMENU_SHOWTTTEXT_VAR_DESC"] = [[Causes only this variable to be reported as the icon's stacks.
 
 Use this if other, incorrect variables are sometimes reported. Use trial-and-error to figure out which of the variables is correct.]]
+
+L["ICONMENU_SHOWTTTEXT_TT"] = "Tooltip #%d"
+L["ICONMENU_SHOWTTTEXT_TT_DESC"] = [[Causes only the number at position %d in the aura's tooltip to be reported as the icon's stacks.
+
+Tooltip scanning consumes additional resources - only use when the Variable numbers aren't being provided by Blizzard.]]
 
 
 
@@ -656,6 +678,10 @@ L["ICONMENU_GCDASUNUSABLE"] = "Don't ignore GCD"
 L["ICONMENU_GCDASUNUSABLE_DESC"] = [[Normally, TellMeWhen classifies cooldowns on GCD as being usable.
 
 Enable this setting to prevent that behavior, making spells on the GCD be treated as unusable.]]
+
+L["ICONMENU_IGNORERUNES"] = "Ignore Runes"
+L["ICONMENU_IGNORERUNES_DESC"] = "Check this to treat the cooldown as usable if the only thing hindering it is a rune cooldown (or a global cooldown)."
+L["ICONMENU_IGNORERUNES_DESC_DISABLED"] = "You must enable the \"Cooldown check\" setting to enable the \"Ignore Runes\" setting."
 L["ICONMENU_DONTREFRESH"] = "Don't Refresh"
 L["ICONMENU_DONTREFRESH_DESC"] = "Check to force the cooldown to not reset if the trigger occurs while it is still counting down."
 L["ICONMENU_CLEU_NOREFRESH"] = "Don't Refresh"
@@ -669,7 +695,7 @@ L["SORTBYNONE_DURATION"] = "Normal Duration"
 L["SORTBYNONE_STACKS"] = "Normal Stacks"
 L["SORTBYNONE_DESC"] = [[If checked, spells will be checked in and appear in the order that they were entered into the "%s" editbox.
 
-If this icon is a buff/debuff icon, auras will be checked in the order that they would normally appear on the unit's unit frame.]]
+If this icon is a buff/debuff icon, auras may sometimes be checked in the order that they would normally appear on the unit's unit frame.]]
 L["SORTBYNONE_META_DESC"] = [[If checked, icons will be checked in the order that was configured above.]]
 L["ICONMENU_SORTASC"] = "Low duration"
 L["ICONMENU_SORTASC_DESC"] = "Check this box to prioritize and show spells with the lowest duration."
@@ -776,6 +802,10 @@ L["ICONMENU_STEALABLE"] = "Only stealable"
 L["ICONMENU_STEALABLE_DESC"] = "Check this to only show buffs that can be spellstolen. Best used when checking for the 'Magic' dispel type"
 L["ICONMENU_HIDENOUNITS"] = "Hide if no units"
 L["ICONMENU_HIDENOUNITS_DESC"] = "Check this to cause the icon to hide if all the units that this icon is checking have been invalidated because of unit conditions and/or units not existing."
+L["ICONMENU_HIDEWHILESECRET"] = "Hide while secret"
+L["ICONMENU_HIDEWHILESECRET_DESC"] = [[Check this to cause the icon to hide while aura information is secret.
+
+TellMeWhen cannot automatically determine if an aura will definitely be secret or non-secret in lockdown, so this setting will let you avoid showing an aura as 'Absent' when TMW just isn't allowed to know about it.]]
 L["ICONMENU_ONLYBAGS"] = "Only if in bags"
 L["ICONMENU_ONLYBAGS_DESC"] = "Check this to make the icon show only if the item is in your bags (or equipped). If 'Only if equipped' is enabled, this is also forcibly enabled."
 
@@ -874,6 +904,7 @@ L["TREEf"] = "Tree: %s"
 L["UIPANEL_ROLE_DESC"] = "Check to allow this group to show when your current specialization serves this role."
 L["ROLEf"] = "Role: %s"
 L["UIPANEL_PTSINTAL"] = "Points in talent"
+L["UIPANEL_TALENTLOADOUT"] = "Talent Loadout"
 L["UIPANEL_TALENTLEARNED"] = "Talent learned"
 L["UIPANEL_AZESSLEARNED"] = "Azerite Essence Active"
 L["UIPANEL_AZESSLEARNED_MAJOR"] = "Major Azerite Essence Active"
@@ -901,9 +932,11 @@ L["UIPANEL_OPENCPUPROFILE_DESC"] = [[View detailed CPU usage metrics about each 
 
 Also accessible via '/tmw cpu']]
 L["UIPANEL_UPDATEINTERVAL"] = "Update Interval"
+L["UIPANEL_UPDATEINTERVAL_UPS"] = [[%s sec. 
+(≤ %s UPS)]]
 L["UIPANEL_TOOLTIP_UPDATEINTERVAL"] = [[Sets how often (in seconds) icons are checked for show/hide, alpha, conditions, etc.
 
-Zero is as fast as possible (every frame). Lower values may have a slight impact on framerate for low-end computers.]]
+Updates occur at most once per frame. Lower values may have a slight impact on framerate for low-end computers.]]
 L["UIPANEL_EFFTHRESHOLD"] = "Buff Efficiency Threshold"
 L["UIPANEL_EFFTHRESHOLD_DESC"] = [[Sets a threshold based on the number of buffs/debuffs configured to be checked by buff/debuff icons.
 
@@ -950,6 +983,21 @@ L["UIPANEL_TOOLTIP_ROWS"] = "Set the number of rows in this group"
 L["UIPANEL_TOOLTIP_COLUMNS"] = "Set the number of columns in this group"
 L["UIPANEL_TOOLTIP_ONLYINCOMBAT"] = "Check to cause this group to only be shown in combat"
 
+L["UIPANEL_SECRETS_DISALLOWED"] = "Restricted in Combat"
+L["UIPANEL_SECRETS_DISALLOWED_DESC"] = [[This feature cannot operate on secret data. 
+
+Examples of secret data include cooldowns and buffs/debuffs while in combat, Mythic+, or PvP. In such situations, the setting or feature will be ignored, or assume a default state.]]
+L["UIPANEL_SECRETS_CNDT_DISALLOWED_DESC"] = [[This condition cannot operate on secret data. Examples of secret data include spell cooldowns and buffs/debuffs while in combat, Mythic+, or PvP; or unit identity in instances.
+
+In such situations, the data will be assumed to be in a default state (cooldown ready, aura absent, etc).]]
+L["UIPANEL_SECRETS_EVENT_DISALLOWED_DESC"] = [[This cannot be triggered by secret data. Examples of secret data include spell cooldowns and buffs/debuffs while in combat, Mythic+, or PvP; or unit identity in instances.]]
+L["UIPANEL_SECRETS_AURAS_DISALLOWED_DESC"] = [[Buffs and debuffs generally cannot be tracked in restricted situations (in combat, Mythic+, or PvP match), except for a small number of spells allowed by Blizzard.
+
+Enable the %q setting below to hide this icon when auras are secret.]]
+L["UIPANEL_SECRETS_AURAS_DISALLOWED_EXCEPT_DESC"] = [[One exception is if this icon is a %s, with %q left blank, which will allow a dynamic set of auras to be displayed.]]
+L["UIPANEL_SECRETS_META_DESC"] = [[Any component icons whose visibility is driven by secret data (mainly cooldown icons) are assumed to be always shown.
+
+Additionally, duration sorting cannot be performed on any secret durations.]]
 
 L["UIPANEL_DRAWEDGE"] = "Highlight timer edge"
 L["UIPANEL_DRAWEDGE_DESC"] = "Highlights the edge of the cooldown timer (clock animation) to increase visibility"
@@ -1106,9 +1154,7 @@ L["UIPANEL_FONT_HEIGHT_DESC"] = [[Set the maximum height of the text display. If
  If this text display is anchored on both its top and bottom sides, this setting will have no effect.]]
 
 L["UIPANEL_FONT_ROTATE"] = "Rotation"
-L["UIPANEL_FONT_ROTATE_DESC"] = [[Set the amount, in degrees, that you want to rotate the text display by.
-
-The way this is implemented is not supported by Blizzard, so if it behaves strangely, there isn't much that can be done.]]
+L["UIPANEL_FONT_ROTATE_DESC"] = [[Set the amount, in degrees, that you want to rotate the text display by.]]
 
 L["UIPANEL_FONT_XOFFS"] = "X Offset"
 L["UIPANEL_FONT_XOFFS_DESC"] = "The x-axis offset of the anchor"
@@ -1129,6 +1175,7 @@ L["UIPANEL_RELATIVEPOINT2_DESC"] = "Anchor the group to the %s of the anchor tar
 L["ASCENDING"] = "Ascending"
 L["DESCENDING"] = "Descending"
 L["UIPANEL_SCALE"] = "Scale"
+L["UIPANEL_SPEED"] = "Speed"
 L["UIPANEL_LEVEL"] = "Frame Level"
 L["UIPANEL_LEVEL_DESC"] = "The level within the group's strata that it should be drawn on."
 L["UIPANEL_STRATA"] = "Strata"
@@ -1370,7 +1417,8 @@ The group of the icon being checked must be shown in order to check the icon.]=]
 L["CONDITIONPANEL_RUNES"] = "Rune Count"
 L["CONDITIONPANEL_RUNES_DESC3"] = [=[Use this condition type to check when the desired number of runes are available.]=]
 L["CONDITIONPANEL_RUNES_CHECK_DESC"] = [=[Check to count this rune type into the total count for the condition.]=]
-
+L["CONDITIONPANEL_RUNES_DESC_GENERIC"] = [=[Each rune is a check button. Check each rune to have it be counted into the conditions.
+The runes in the first row will not match death runes. The runes in the second row are the death rune version of each rune above.]=]
 
 L["CONDITIONPANEL_RUNESRECH"] = "Recharging Rune Count"
 L["CONDITIONPANEL_RUNESRECH_DESC"] = [=[Use this condition type to check when the desired number of runes are recharging.]=]
@@ -1389,14 +1437,24 @@ L["CONDITIONPANEL_CLASS"] = "Unit Class"
 L["CONDITIONPANEL_UNITRACE"] = "Unit Race"
 L["CONDITIONPANEL_UNITSPEC"] = "Unit Specialization"
 L["CONDITIONPANEL_UNITSPEC_CHOOSEMENU"] = "Choose Specs..."
+
 L["CONDITIONPANEL_UNITSPEC_DESC"] = [[This condition ONLY works for:
 |cff7fffff-|r Yourself
-|cff7fffff-|r Battleground enemies
-|cff7fffff-|r Arena enemies
+|cff7fffff-|r Battleground enemies (Retail WoW only)
+|cff7fffff-|r Arena enemies (MoP+ only)
 
 It does NOT work for: |TInterface/AddOns/TellMeWhen/Textures/Alert:0:2|t
 |cff7fffff-|r Group members
 |cff7fffff-|r Any other players]]
+
+L["CONDITIONPANEL_UNITSPEC_DESC_WRATH"] = [[This condition ONLY works for:
+|cff7fffff-|r Yourself
+
+It does NOT work for: |TInterface/AddOns/TellMeWhen/Textures/Alert:0:2|t
+|cff7fffff-|r Group members
+|cff7fffff-|r Enemy players
+|cff7fffff-|r Any other players]]
+
 L["CONDITIONPANEL_CLASSIFICATION"] = "Unit Classification"
 L["CONDITIONPANEL_CLASSIFICATION_DESC"] = "Checks the rare/elite/world boss status of a unit."
 L["CONDITIONPANEL_ROLE"] = "Unit Group Role"
@@ -1431,8 +1489,13 @@ L["CONDITIONPANEL_LASTCAST"] = "Last Ability Used"
 L["CONDITIONPANEL_LASTCAST_ISSPELL"] = "Matches"
 L["CONDITIONPANEL_LASTCAST_ISNTSPELL"] = "Doesn't Match"
 
-L["CONDITIONPANEL_OVERLAYED"] = "Spell activation overlay"
+L["CONDITIONPANEL_OVERLAYED"] = "Spell Activation Overlay"
 L["CONDITIONPANEL_OVERLAYED_DESC"] = "Checks if a given spell has the activation overlay effect (the sparkly yellow border on your action bars)."
+
+L["CONDITIONPANEL_ASSISTANTSPELL"] = "Spell is Assistant Highlight"
+L["CONDITIONPANEL_ASSISTANTSPELL_DESC"] = "Checks if any of the given spells is the current spell for the Blizzard Combat Assistant Highlight feature. This can only track abilities that are present on your actionbars."
+L["CONDITIONPANEL_ASSISTANTBUTTON"] = "Spell is Assistant Button action"
+L["CONDITIONPANEL_ASSISTANTBUTTON_DESC"] = "Checks if any of the given spells is the current spell for the Blizzard Single-Button Assistant feature. This works best if the Single-Button Assistant button is placed on your action bars."
 
 L["CONDITIONPANEL_CURRENTSPELL"] = "Spell Queued"
 L["CONDITIONPANEL_CURRENTSPELL_DESC"] = "Checks if a given next-swing spell is currently activated."
@@ -1440,7 +1503,8 @@ L["CONDITIONPANEL_CURRENTSPELL_DESC"] = "Checks if a given next-swing spell is c
 L["CONDITIONPANEL_AUTOSPELL"] = "Spell Autocasting"
 L["CONDITIONPANEL_AUTOSPELL_DESC"] = "Checks if a given spell or ability is autocasting."
 
-L["CONDITIONPANEL_INTERRUPTIBLE"] = "Interruptible"
+L["CONDITIONPANEL_CAST_PRESENT"] = "Casting"
+L["CONDITIONPANEL_CAST_ABSENT"] = "Not Casting"
 L["CONDITIONPANEL_NAME"] = "Unit Name"
 L["CONDITIONPANEL_NAMETOMATCH"] = "Name to Match"
 L["CONDITIONPANEL_NAMETOOLTIP"] = "You can enter multiple names to be matched by separating each one with a semicolon (;). The condition will pass if any names are matched."
@@ -1496,6 +1560,8 @@ L["CONDITIONPANEL_BLIZZEQUIPSET_INPUT"] = "Equipment set name"
 L["CONDITIONPANEL_BLIZZEQUIPSET_INPUT_DESC"] = [[Enter the name of the Blizzard equipment set that you wish to check.
 
 Only one equipment set may be entered, and it is |cFFFF5959CASE SENSITIVE|r]]
+L["CONDITIONPANEL_ARMORREPAIR"] = "Armor Repair Level"
+L["CONDITIONPANEL_ARMORREPAIR_DESC"] = "Checks the lowest durability percentage of any equipped gear."
 L["EQUIPSETTOCHECK"] = "Equipment set to check (|cFFFF5959CASE SENSITIVE|r)"
 L["ONLYCHECKMINE"] = "Only Cast By Me"
 L["ONLYCHECKMINE_DESC"] = "Check this to cause this condition to only check for buffs/debuffs that you cast"
@@ -1659,6 +1725,8 @@ L["PET_TYPE_TENACITY"] = "Tenacity"
 L["PET_TYPE_FEROCITY"] = "Ferocity"
 
 L["SWINGTIMER"] = "Swing Timer"
+L["RANGEDHASTE"] = "Ranged Haste"
+L["RANGEDCRIT"] = "Ranged Crit"
 L["ITEMINBAGS"] = "Item count (includes charges)"
 L["ITEMEQUIPPED"] = "Item is equipped"
 L["ITEMSPELL"] = "Item has on use effect"
@@ -1669,9 +1737,26 @@ L["SPELLCHARGES"] = "Spell charges"
 L["SPELLCHARGES_DESC"] = "Tracks the charges of a spell like %s or %s."
 L["SPELLCHARGETIME"] = "Spell charge time"
 L["SPELLCHARGETIME_DESC"] = "Tracks the time remaining until a spell like %s or %s will regenerate one charge."
+
+L["EMPOWEREDSTAGE"] = "Empowered Spell Stage"
+L["EMPOWEREDSTAGE_DESC"] = "Current stage of empowered spell"
+L["SPELL_LEARNED"] = "Spell Learned"
+L["SPELL_LEARNED_DESC"] = [[Checks if the given spell is learned.
+
+Note that this can fail to work for some types of spells - especially spells that replace other spells. For those cases, use the Spell Overridden condition.]]
+
+L["SPELL_OVERRIDE"] = "Spell Overridden"
+L["SPELL_OVERRIDE_DESC"] = [[Checks if the given base spell is currently overridden by the specified override spell.
+
+To check if the base spell is not overriden by anything, enter the same spell as both the base and override spell.]]
+L["SPELL_OVERRIDE_BASE"] = "Base Spell"
+L["SPELL_OVERRIDE_TARGET"] = "Override Spell"
+
 L["SPELLREACTIVITY"] = "Spell Reactivity"
 L["MP5"] = "%d MP5"
-L["REACTIVECNDT_DESC"] = "This condition only checks the reactive state of the ability, not the cooldown of it."
+L["REACTIVECNDT_DESC"] = [[This condition only checks the reactive state of the ability, not the cooldown of it.
+
+Reactive abilities are those that are only usable under certain conditions in combat, like %s or %s.]]
 L["BUFFCNDT_DESC"] = "Only the first spell will be checked, all others will be ignored."
 L["CNDT_ONLYFIRST"] = "Only the first spell/item will be checked - semicolon-delimited lists are not valid for this condition type."
 L["CNDT_MULTIPLEVALID"] = "You can enter multiple names/IDs to check by separating each with a semicolon."
@@ -1721,7 +1806,11 @@ L["PARENTHESIS_TYPE_("] = "opening"
 L["PARENTHESIS_TYPE_)"] = "closing"
 L["NUMAURAS"] = "Number of"
 L["ACTIVE"] = "%d Active"
-L["NUMAURAS_DESC"] = [[This condition checks the number of an aura active - not to be confused with the number of stacks of an aura.  This is for checking things like if you have both weapon enchant procs active at the same time.  Use sparingly, as the process used to count the numbers is a bit CPU intensive.]]
+L["NUMAURAS_DESC"] = [[This condition checks the number of an aura active - not to be confused with the number of stacks of an aura.
+
+This can be used for checking things like if you have both weapon enchant procs active at the same time, or for checking the quantity of a buff active on your raid/group members.
+
+This condition's inputs accept multiple units and multiple spells.]]
 L["TOOLTIPSCAN"] = "Aura Variable"
 L["TOOLTIPSCAN_DESC"] = "This condition type will allow you to check the first variable associated with an aura. Numbers are provided by Blizzard API and do not necessarily match numbers found on the tooltip of the aura. There is also no guarantee that a number will be obtained for an aura. In most practical cases, though, the correct number will be checked."
 
@@ -1736,7 +1825,7 @@ L["ABSORBAMT"] = "Absorbtion shield amount"
 L["ABSORBAMT_DESC"] = "Checks the total amount of absorbtion shields that the unit has."
 
 L["CNDT_RANGE"] = "Unit Range"
-L["CNDT_RANGE_DESC"] = "Checks the approximate range of a unit using LibRangeCheck-2.0. Condition will evaluate to false if the unit does not exist."
+L["CNDT_RANGE_DESC"] = "Checks the approximate range of a unit using LibRangeCheck-3.0. Condition will evaluate to false if the unit does not exist."
 L["CNDT_RANGE_PRECISE"] = "%d yds. (|cff00c322Precise|r)"
 L["CNDT_RANGE_IMPRECISE"] = "%d yds. (|cffff1300Imprecise|r)"
 
@@ -1858,7 +1947,7 @@ L["CNDT_SLIDER_DESC_CLICKSWAP_TOSLIDER"] = [[|cff7fffffRight-Click|r to switch t
 L["CNDT_SLIDER_DESC_CLICKSWAP_TOSLIDER_DISALLOWED"] = [[Only manual input is allowed for values over %s (Blizzard's sliders can behave strangely with large values.)]]
 
 
-L["CNDT_DEPRECATED_DESC"] = "The %s condition no longer functions. This is probably the result of a change in game mechanics. Remove it or change it to something else."
+L["CNDT_DEPRECATED_DESC"] = "The %s condition no longer functions. This is probably the result of a change in game mechanics, or Blizzard's addon restrictions. Remove it or change it to something else."
 L["CNDT_UNKNOWN_DESC"] = "Your settings contain a condition with the identifier %s, but no such condition could be found. You may be using an old version of TMW, or this condition may have been removed."
 
 
@@ -1953,6 +2042,7 @@ L["DT_DOC_Unit"] = "Returns the unit or the name of the unit that the icon is ch
 L["DT_DOC_PreviousUnit"] = "Returns the unit or the name of the unit that the icon is checked prior to the current unit. Best use in conjunction with the [Name] tag."
 L["DT_DOC_Value"] = "Returns the numerical value that the icon is displaying. This is only used by a small number of icon types."
 L["DT_DOC_ValueMax"] = "Returns the maximum of the numerical value that the icon is displaying. This is only used by a small number of icon types."
+L["DT_DOC_ValuePercent"] = "Returns the percentage (0-100) of the numerical value that the icon is displaying. This is only used by a small number of icon types."
 
 L["DT_INSERTGUID_TOOLTIP"] = "|cff7fffffShift-click|r to insert this icon's identifier into a DogTag."
 L["DT_INSERTGUID_GENERIC_DESC"] = [[If you would like one icon to display information about another, |cff7fffffShift-click|r that icon to insert its unique identifier that you can pass as the tag's "icon" parameter.]]
@@ -2400,6 +2490,12 @@ L["ANIM_ICONBORDER"] = "Icon: Border"
 L["ANIM_ICONBORDER_DESC"] = "Overlays a colored border on the icon."
 L["ANIM_ICONOVERLAYIMG"] = "Icon: Image Overlay"
 L["ANIM_ICONOVERLAYIMG_DESC"] = "Overlays a custom image over the icon."
+
+L["ANIM_LCG_PIXEL"] = "Icon: Pixel Border"
+L["ANIM_LCG_PIXEL_DESC"] = "Overlays the LibCustomGlow animated pixel border."
+L["ANIM_LCG_AUTOCAST"] = "Icon: Autocast Border"
+L["ANIM_LCG_AUTOCAST_DESC"] = "Overlays an effect similar to the pet autocasting indicator animation."
+
 L["ANIM_ICONCLEAR"] = "Icon: Stop Animations"
 L["ANIM_ICONCLEAR_DESC"] = "Stops all animations that are playing on the current icon."
 
@@ -2512,6 +2608,13 @@ NOTE: To prevent potential abuse, Blizzard has excluded the destination unit fro
 
 L["CLEU_SPELL_CAST_SUCCESS"] = "Spell Cast Success"
 L["CLEU_SPELL_CAST_SUCCESS_DESC"] = [[Occurs when an spell is successfully cast.]]
+
+L["CLEU_SPELL_EMPOWER_START"] = "Empowered Spell Cast Start"
+L["CLEU_SPELL_EMPOWER_START_DESC"] = [[Occurs when an empowered spell begins casting.]]
+L["CLEU_SPELL_EMPOWER_END"] = "Empowered Spell Cast Success"
+L["CLEU_SPELL_EMPOWER_END_DESC"] = [[Occurs when an empowered spell is successfully cast.]]
+L["CLEU_SPELL_EMPOWER_INTERRUPT"] = "Empowered Spell Cast Failed"
+L["CLEU_SPELL_EMPOWER_INTERRUPT_DESC"] = [[Occurs when an empowered spell is interrupted or cancelled.]]
 
 L["CLEU_SPELL_DAMAGE"] = "Spell Damage"
 L["CLEU_SPELL_DAMAGE_DESC"] = [[Occurs when any spell does any damage.]]
@@ -2717,7 +2820,7 @@ To see the correct texture now, change the first spell being checked into a Spel
 
 L["HELP_NOUNITS"] = [[You must enter at least one unit!]]
 L["HELP_NOUNIT"] = [[You must enter a unit!]]
-L["HELP_ONLYONEUNIT"] = [[Conditions only accept one unit, but you have entered %d |4unit:units;.
+L["HELP_ONLYONEUNIT"] = [[This condition only accepts one unit, but you have entered %d |4unit:units;.
 
 If you need to check many units, consider using a separate icon with an Icon Shown condition to reference that icon.]]
 
@@ -2805,56 +2908,70 @@ L["IMPORT_LUA_DENY"] = "Abort import operation"
 -- EQUIVS
 -- --------
 
-L["CrowdControl"] = "Crowd Control"
-L["Bleeding"] = "Bleeding"
-L["Feared"] = "Fear"
-L["Incapacitated"] = "Incapacitated"
-L["Stunned"] = "Stunned"
-L["Slowed"] = "Slowed"
-L["ImmuneToStun"] = "Immune To Stun"
-L["ImmuneToMagicCC"] = "Immune To Magic CC"
-L["Disoriented"] = "Disoriented"
-L["Silenced"] = "Silenced"
-L["Rooted"] = "Rooted"
-L["Shatterable"] = "Shatterable"
-L["DamageShield"] = "Damage Shield"
---L["BurstHaste"] = "Heroism/Bloodlust" -- defined in static formats
-L["ReducedHealing"] = "Reduced Healing"
-L["DefensiveBuffs"] = "Defensive Buffs"
-L["DefensiveBuffsSingle"] = "Targeted Defensive Buffs"
-L["DefensiveBuffsAOE"] = "AOE Defensive Buffs"
-L["SpeedBoosts"] = "Speed Boosts"
-L["DamageBuffs"] = "Damage Buffs"
-L["ImmuneToInterrupts"] = "Immunity to Interrupt Spells"
-L["ImmuneToSlows"] = "Immunity to Slows"
 
--- Deprecated
---L["IncreasedVersatility"] = "Increased Versatility"
---L["IncreasedMultistrike"] = "Increased Multistrike"
---L["IncreasedStats"] = "Increased Stats"
---L["IncreasedCrit"] = "Increased Crit Chance"
---L["IncreasedMastery"] = "Increased Mastery"
---L["IncreasedAP"] = "Increased Attack Power"
---L["IncreasedSP"] = "Increased Spellpower"
---L["IncreasedHaste"] = "Increased Haste"
---L["BonusStamina"] = "Increased Stamina"
--- L["BurstManaRegen"] = "Burst Mana Regen"
+
+--L["BurstHaste"] = "Heroism/Bloodlust" -- defined in static formats
 --L["DontMelee"] = "Don't Melee"
---L["MovementSlowed"] = "Movement Slowed"
---L["ReducedCastingSpeed"] = "Reduced Casting Speed"
---L["ReducedPhysicalDone"] = "Reduced Physical Damage Done"
---L["SpellDamageTaken"] = "Increased Spell Damage Taken"
---L["ReducedArmor"] = "Reduced Armor"
--- L["Disarmed"] = "Disarmed"
 --L["IncreasedSPsix"] = "Increased Spellpower (6%)"
 --L["IncreasedSPten"] = "Increased Spellpower (10%)"
---L["IncreasedPhysHaste"] = "Increased Physical Haste"
---L["IncreasedSpellHaste"] = "Increased Spell Haste"
---L["PhysicalDmgTaken"] = "Physical Damage Taken"
---L["MiscHelpfulBuffs"] = "Misc. Helpful Buffs"
---L["PvPSpells"] = "PvP Crowd Control, etc."
-
+--L["MovementSlowed"] = "Movement Slowed"
+L["Bleeding"] = "Bleeding"
+L["BonusStamina"] = "Increased Stamina"
+L["BurstManaRegen"] = "Burst Mana Regen"
+L["CrowdControl"] = "Crowd Control"
+L["DamageBuffs"] = "Damage Buffs"
+L["DamageReflect"] = "Damage Reflect"
+L["DamageShield"] = "Damage Shield"
+L["DarkFortune"] = "Dark Fortune"
+L["DefensiveBuffs"] = "Defensive Buffs"
+L["DefensiveBuffsAOE"] = "AOE Defensive Buffs"
+L["DefensiveBuffsSingle"] = "Targeted Defensive Buffs"
+L["Disarmed"] = "Disarmed"
+L["Disoriented"] = "Disoriented"
+L["Feared"] = "Fear"
+L["FlaskBuffs"] = "Flask Buffs"
+L["FoodBuffs"] = "Food Buffs"
 L["Heals"] = "Player Heals"
+L["HealthRegeneration"] = "Health Regeneration"
+L["ImmuneToInterrupts"] = "Immunity to Interrupt Spells"
+L["ImmuneToMagicCC"] = "Immune To Magic CC"
+L["ImmuneToSlows"] = "Immunity to Slows"
+L["ImmuneToStun"] = "Immune To Stun"
+L["Incapacitated"] = "Incapacitated"
+L["IncreasedAgility"] = "Increased Agility"
+L["IncreasedAP"] = "Increased Attack Power"
+L["IncreasedArmor"] = "Increased Armor"
+L["IncreasedCrit"] = "Increased Crit Chance"
+L["IncreasedHaste"] = "Increased Haste"
+L["IncreasedHealth"] = "Increased Health"
+L["IncreasedIntellect"] = "Increased Intellect"
+L["IncreasedMastery"] = "Increased Mastery"
+L["IncreasedMultistrike"] = "Increased Multistrike"
+L["IncreasedPhysHaste"] = "Increased Physical Haste"
+L["IncreasedSP"] = "Increased Spellpower"
+L["IncreasedSpellHaste"] = "Increased Spell Haste"
+L["IncreasedSpirit"] = "Increased Spirit"
+L["IncreasedStats"] = "Increased Stats"
+L["IncreasedStrength"] = "Increased Strength"
+L["IncreasedVersatility"] = "Increased Versatility"
+L["MiscHelpfulBuffs"] = "Misc. Helpful Buffs"
+L["PhysicalDmgTaken"] = "Physical Damage Taken"
+L["PvPSpells"] = "PvP Crowd Control, etc."
+L["ReducedArmor"] = "Reduced Armor"
+L["ReducedCastingSpeed"] = "Reduced Casting Speed"
+L["ReducedHealing"] = "Reduced Healing"
+L["ReducedPhysicalDone"] = "Reduced Physical Damage Done"
+L["Resistances"] = "Spell Resistance"
+L["Rooted"] = "Rooted"
+L["Shatterable"] = "Shatterable"
+L["Silenced"] = "Silenced"
+L["Slowed"] = "Slowed"
+L["SpeedBoosts"] = "Speed Boosts"
+L["SpellDamageTaken"] = "Increased Spell Damage Taken"
+L["Stunned"] = "Stunned"
+L["WaterBreathing"] = "Water Breathing"
+L["WaterWalking"] = "Water Walking"
+L["Zanza"] = "Zanza"
 
 L["GCD"] = "Global Cooldown"
 
@@ -2893,10 +3010,11 @@ L["DR-ShortDisorient"] = "Short Mesmerizes/Disorients"
 L["DR-Disarm"] = "Disarms"
 L["DR-RandomRoot"] = "Short/Random roots"
 L["DR-ControlledRoot"] = "Controlled roots"
+L["DR-KidneyShot"] = "Kidney Shot"
 L["DR-Charge"] = "Charge"
 L["DR-CheapShot"] = "Cheap Shot / Pounce"
 L["DR-Hibernate"] = "Hibernate"
-L["DR-KidneyShot"] = "Kidney Shot"
+L["DR-OpenerStun"] = "Opener Stun"
 
 L["CONDITIONPANEL_CREATURETYPE"] = "Unit Creature Type"
 L["CONDITIONPANEL_CREATURETYPE_LABEL"] = "Creature Type(s)"
@@ -2918,6 +3036,8 @@ The Lua code must be in the form of a function body that returns two values: the
 
 |cfffffffflocal lat = select(4, GetNetStats())|r
 |cffffffffreturn lat, 1000|r
+
+Optionally, you can return a third value: a function for interpolating secret values. This is a function with the signature |cfffffffffunction(curveConstant) -> LuaCurveEvaluatedResult|r, and will typically be a wrapper around APIs like UnitHealthPercent or UnitPowerPercent.
 
 If the function did not return two numeric values (or a Lua syntax error is encountered), the Icon will be displayed as set in "Unusable result".
 If more help is needed (but not help about how to write Lua code), try the TMW Discord. For help on how to write Lua, go to the internet.]]

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -68,7 +68,7 @@ Hook:RegisterCompileFunctionSegmentHook("post", function(Processor, t)
 	if doFireIconUpdated then
 		local state_valueFailed = nil
 		if
-			value and ((icon.ValueMinEnabled and icon.ValueMin > value) or (icon.ValueMaxEnabled and value > icon.ValueMax))
+			not issecretvalue(value) and value and ((icon.ValueMinEnabled and icon.ValueMin > value) or (icon.ValueMaxEnabled and value > icon.ValueMax))
 		then
 			state_valueFailed = icon.States[STATE_DEFAULT_VALUEFAILED]
 		end

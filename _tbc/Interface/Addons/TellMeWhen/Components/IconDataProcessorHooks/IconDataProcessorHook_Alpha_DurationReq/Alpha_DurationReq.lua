@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -76,23 +76,29 @@ end)
 
 Hook:DeclareUpValue("STATE_DEFAULT_DURATIONFAILED", STATE)
 Hook:RegisterCompileFunctionSegmentHook("post", function(Processor, t)
-	-- GLOBALS: start, duration
+	-- GLOBALS: start, duration, modRate
 	t[#t+1] = [[
 
-	
-	if duration > 0 or doFireIconUpdated then
-		local d = duration - (TMW.time - start)
-		
-		local state_durationFailed = nil
-		if
-			d > 0 and ((icon.DurationMinEnabled and icon.DurationMin > d) or (icon.DurationMaxEnabled and d > icon.DurationMax))
-		then
-			state_durationFailed = icon.States[STATE_DEFAULT_DURATIONFAILED]
-		end
-		
-		if attributes.state_durationFailed ~= state_durationFailed then
-			icon:SetInfo_INTERNAL("state_durationFailed", state_durationFailed)
+	if issecretvalue(duration) then
+		if attributes.state_durationFailed then
+			icon:SetInfo_INTERNAL("state_durationFailed", nil)
 			doFireIconUpdated = true
+		end
+	else
+		if duration > 0 or doFireIconUpdated then
+			local d = (duration - (TMW.time - start)) / (modRate or 1)
+			
+			local state_durationFailed = nil
+			if
+				d > 0 and ((icon.DurationMinEnabled and icon.DurationMin > d) or (icon.DurationMaxEnabled and d > icon.DurationMax))
+			then
+				state_durationFailed = icon.States[STATE_DEFAULT_DURATIONFAILED]
+			end
+			
+			if attributes.state_durationFailed ~= state_durationFailed then
+				icon:SetInfo_INTERNAL("state_durationFailed", state_durationFailed)
+				doFireIconUpdated = true
+			end
 		end
 	end
 	--]]

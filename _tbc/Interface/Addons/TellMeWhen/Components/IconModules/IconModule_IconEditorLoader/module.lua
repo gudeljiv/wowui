@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -60,27 +60,29 @@ DD:SetFunction(function(self)
 	TMW.DD:AddButton(info)
 
 	for i, icon in pairs(icons) do
-		if not icon:IsControlled() then
-			local info = TMW.DD:CreateInfo()
-			info.text = icon:GetIconName()
-			
-			local text, textshort, tooltip = icon:GetIconMenuText()
-			info.tooltipTitle = text
-			info.tooltipText = tooltip
-
-			info.icon = icon.attributes.texture
-			info.tCoordLeft = 0.07
-			info.tCoordRight = 0.93
-			info.tCoordTop = 0.07
-			info.tCoordBottom = 0.93
-			
-			info.func = DropdownOnClick
-			info.arg1 = self
-			info.arg2 = icon
-			info.notCheckable = true
-			
-			TMW.DD:AddButton(info)
+		if icon:IsControlled() then
+			icon = icon.group.Controller
 		end
+		
+		local info = TMW.DD:CreateInfo()
+		info.text = icon:GetIconName()
+		
+		local text, textshort, tooltip = icon:GetIconMenuText()
+		info.tooltipTitle = text
+		info.tooltipText = tooltip
+
+		info.icon = icon.attributes.texture
+		info.tCoordLeft = 0.07
+		info.tCoordRight = 0.93
+		info.tCoordTop = 0.07
+		info.tCoordBottom = 0.93
+		
+		info.func = DropdownOnClick
+		info.arg1 = self
+		info.arg2 = icon
+		info.notCheckable = true
+		
+		TMW.DD:AddButton(info)
 	end
 end)
 
@@ -100,7 +102,9 @@ Module:SetScriptHandler("OnMouseUp", function(Module, icon, button)
 		end
 
 		if #icons == 1 then
-			if not icon:IsControlled() then
+			if icon:IsControlled() then
+				LoadIcon(icon.group.Controller)
+			else
 				LoadIcon(icon)
 			end
 			
@@ -116,19 +120,22 @@ Module:SetScriptHandler("OnMouseUp", function(Module, icon, button)
 
 	elseif IsShiftKeyDown() and button == "LeftButton" then
 
-		-- Don't insert into the chat editbox.
-		if not ChatEdit_GetActiveWindow() then
+		local currentFocus = GetCurrentKeyBoardFocus()
+		if 
+			currentFocus 
+			and currentFocus.GetAcceptsTMWLinks
+			and currentFocus:GetAcceptsTMWLinks()
+		then
 
 			local GUID = icon:GetGUID()
 			local link = format("|H%s|h%s|h", GUID, GUID)
 
-			local inserted = ChatEdit_InsertLink(link)
+			local insert = ChatFrameUtil and ChatFrameUtil.InsertLink or ChatEdit_InsertLink
 
-			if inserted then
-				-- If the insertion was successful, make the GUID permanant.
-				icon:GetGUID(1)
-			end
+			local inserted = insert(link)
 
+			-- If the insertion was successful, make the GUID permanant.
+			icon:GetGUID(1)
 		end
 	end
 end)

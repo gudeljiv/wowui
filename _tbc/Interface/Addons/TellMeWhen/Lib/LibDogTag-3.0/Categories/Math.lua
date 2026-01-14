@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20220322132201"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260109044932"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -10,9 +10,13 @@ local _G, math = _G, math
 DogTag_funcs[#DogTag_funcs+1] = function(DogTag)
 
 local L = DogTag.L
+local issecretvalue = DogTag.issecretvalue
 
 DogTag:AddTag("Base", "Round", {
 	code = function(number, digits)
+		if issecretvalue(number) then
+			return string.format("%." .. digits .. "f", number)
+		end
 		local mantissa = 10^digits
 		local norm = number*mantissa + 0.5
 		local norm_floor = math.floor(norm)
@@ -26,7 +30,7 @@ DogTag:AddTag("Base", "Round", {
 		'number', "number", "@req",
 		'digits', "number", 0,
 	},
-	ret = "number",
+	ret = C_Secrets and C_Secrets.HasSecretRestrictions() and "number;string" or "number",
 	static = true,
 	doc = L["Round number to the one's place or the place specified by digits"],
 	example = '[1234.5:Round] => "1234"; [1234:Round(-2)] => "1200"; [Round(1235.5)] => "1236"; [Round(1234, -2)] => "1200"',

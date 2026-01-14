@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -106,7 +106,7 @@ function Condition:ShouldHide()
 end
 
 function Condition:IsDeprecated()
-	return self.funcstr == "DEPRECATED"
+	return self.funcstr == "DEPRECATED" or self.deprecated
 end
 
 function Condition:UsesTabularBitflags() 

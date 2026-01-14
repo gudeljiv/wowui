@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -19,6 +19,8 @@ local print = TMW.print
 
 local strlowerCache = TMW.strlowerCache
 local GetSpellTexture = TMW.GetSpellTexture
+local GetSpellInfo = TMW.GetSpellInfo
+local GetSpellName = TMW.GetSpellName
 
 local _, pclass = UnitClass("Player")
 local LSM = LibStub("LibSharedMedia-3.0")
@@ -27,8 +29,10 @@ local tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, wipe, nex
 	  tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, wipe, next, getmetatable, setmetatable, assert, rawget, rawset, unpack, select
 local strfind, strmatch, strbyte, format, gsub, strsub, strtrim, strlen, strsplit, strlower, max, min, floor, ceil, log10 =
 	  strfind, strmatch, strbyte, format, gsub, strsub, strtrim, strlen, strsplit, strlower, max, min, floor, ceil, log10
-local GetSpellInfo, GetItemInfo, GetItemIcon = 
-      GetSpellInfo, GetItemInfo, GetItemIcon
+
+local GetItemIcon = C_Item and C_Item.GetItemIconByID or GetItemIcon
+local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
+
 
 -- GLOBALS: GameTooltip, GameTooltip_SetDefaultAnchor
 
@@ -65,17 +69,18 @@ TMW:RegisterCallback("TMW_CONFIG_ICON_TYPE_CHANGED", function(event, icon)
 	end
 end)
 
-function SUG:TMW_SPELLCACHE_STARTED()
-	SUG.SuggestionList.Caching:Show()
+local function ModuleUsesSpellCache()
+	local currentModule = SUG.CurrentModule
+	if not currentModule then return false end
+	return currentModule:Table_Get() == SpellCache:GetCache()
 end
-TMW:RegisterCallback("TMW_SPELLCACHE_STARTED", SUG)
 
 function SUG:TMW_SPELLCACHE_COMPLETED()
 	SUG.SuggestionList.Caching:Hide()
 	
 	if SUG.onCompleteCache and SUG.SuggestionList:IsVisible() then
 		SUG.redoIfSame = 1
-		SUG:NameOnCursor()
+		SUG:NameOnCursor(1)
 	end
 end
 TMW:RegisterCallback("TMW_SPELLCACHE_COMPLETED", SUG)
@@ -88,6 +93,7 @@ function SUG:DoSuggest()
 	end
 
 	wipe(SUGpreTable)
+	suggestedForModule = SUG.CurrentModule
 
 	local tbl = SUG.CurrentModule:Table_Get() or {}
 
@@ -103,17 +109,8 @@ function SUG:DoSuggest()
 		Table_GetSpecialSuggestions(SUG.CurrentModule, SUGpreTable)
 	end
 
-	suggestedForModule = SUG.CurrentModule
 	SUG.tabIndex = 1
 	SUG:SuggestingComplete(1)
-end
-
-local function progressCallback(countdown)
-	-- This is called for each step of TMW.shellSortDeferred.
-	SUG:SuggestingComplete()
-
-	SUG.SuggestionList.blocker:Show()
-	SUG.SuggestionList.Header:SetText(L["SUGGESTIONS_SORTING"] .. " " .. countdown)
 end
 
 local buckets_meta = {__index = function(t, k)
@@ -123,10 +120,15 @@ end}
 local buckets = setmetatable({}, buckets_meta)
 
 function SUG:SuggestingComplete(doSort)
+	if suggestedForModule ~= SUG.CurrentModule then
+		TMW:Debug("SUG module changed mid-suggestion")
+		return
+	end
+
 	SUG.SuggestionList.blocker:Hide()
 	SUG.SuggestionList.Header:SetText(SUG.CurrentModule.headerText)
-	if doSort and not SUG.CurrentModule.dontSort then
 
+	if doSort and not SUG.CurrentModule.dontSort then
 		local sorter, sorterBucket = SUG.CurrentModule:Table_GetSorter()
 
 		if sorterBucket then
@@ -166,17 +168,8 @@ function SUG:SuggestingComplete(doSort)
 			buckets_meta.__mode = 'kv'
 
 		else
-			SUG.SuggestionList.blocker:Show()
-			SUG.SuggestionList.Header:SetText(L["SUGGESTIONS_SORTING"])
-
-			TMW.shellsortDeferred(SUGpreTable, sorter, nil, SUG.SuggestingComplete, SUG, progressCallback)
-			return
+			sort(SUGpreTable, sorter)
 		end
-	end
-
-	if suggestedForModule ~= SUG.CurrentModule then
-		TMW:Debug("SUG module changed mid-suggestion")
-		return
 	end
 
 	-- Each module should maintain a cached list of invalid entries
@@ -303,12 +296,18 @@ local letterMatch, shouldLetterMatch, shouldWordMatch, wordMatch, wordMatch2
 local strfindsugMatches = {}
 
 function SUG:NameOnCursor(isClick)
-	if SpellCache:IsCaching() then
+	if SpellCache:IsCaching() and ModuleUsesSpellCache() then
 		-- Wait for the spell cache to complete.
 		-- SUG.onCompleteCache will cause this method to be called when the cache completes.
 		SUG.onCompleteCache = 1
 		SUG.SuggestionList:Show()
+		SUG.SuggestionList.Caching:Show()
+		for i = 1, #SUG do
+			SUG[i]:Hide()
+		end
 		return
+	else
+		SUG.SuggestionList.Caching:Hide()
 	end
 
 	-- This method gets a whole shitload of info about the words around the cursor in the editbox.
@@ -412,6 +411,8 @@ do	-- KeyManger
 	local KeyManager = CreateFrame("Frame", nil, UIParent)
 	KeyManager:SetFrameStrata("FULLSCREEN")
 	KeyManager:EnableKeyboard(true)
+	-- Start with propagation enabled in case the user reloads during combat
+	KeyManager:SetPropagateKeyboardInput(true)
 	KeyManager:Show()
 	function KeyManager:HandlePress(key)
 		if key == "UP" then
@@ -436,6 +437,9 @@ do	-- KeyManger
 	end
 
 	KeyManager:SetScript("OnKeyDown", function(self, key)
+		-- Can't call SetPropagateKeyboardInput in combat since wow 10.1.5:
+		if InCombatLockdown() then return end
+		
 		if SUG.SuggestionList:IsVisible() and (key == "UP" or key == "DOWN") then
 			KeyManager:SetPropagateKeyboardInput(false)
 			self.down = {key = key, start = TMW.time}
@@ -446,6 +450,9 @@ do	-- KeyManger
 		end
 	end)
 	KeyManager:SetScript("OnKeyUp", function(self, key)
+		-- Can't call SetPropagateKeyboardInput in combat since wow 10.1.5:
+		if InCombatLockdown() then return end
+
 		KeyManager:SetPropagateKeyboardInput(true)
 
 		self.down = nil
@@ -460,6 +467,17 @@ do	-- KeyManger
 		if (not data.last and data.start + 0.5 < TMW.time) or (data.last and data.last + repeatRate < TMW.time) then
 			self:HandlePress(data.key)
 			data.last = (data.last or TMW.time) + repeatRate
+		end
+	end)
+	KeyManager:RegisterEvent("PLAYER_REGEN_DISABLED")
+	KeyManager:SetScript("OnEvent", function(self, event)
+		if event == "PLAYER_REGEN_DISABLED" then
+			-- When going into combat lockdown, restore keyboard propagation
+			-- so that if the user happened to have the suggestion list opened
+			-- and a finger held on their up or down arrow, they aren't stuck
+			-- without their keyboard until combat ends.
+			KeyManager:SetPropagateKeyboardInput(true)
+			self.down = nil
 		end
 	end)
 end
@@ -491,7 +509,7 @@ local EditBoxHooks = {
 			SUG.SuggestionList.Header:SetText(SUG.CurrentModule.headerText)
 			SUG:SetInline(self.SUG_inline)
 			SUG.SuggestionList:SetParent(self.SUG_parent or TellMeWhen_IconEditor)
-			SUG:NameOnCursor()
+			SUG:NameOnCursor(1)
 		end
 	end,
 	OnTextChanged = function(self, userInput)
@@ -595,6 +613,12 @@ local INLINE_MAX_FRAMES = 10
 function SUG:GetNumFramesNeeded()
 	if self.inline then
 		return INLINE_MAX_FRAMES
+	end
+
+	-- ElvUI will indirectly call this codepath during initialization before SuggestionList exists.
+	-- https://github.com/ascott18/TellMeWhen/issues/2132
+	if not TMW.SUG.SuggestionList then
+		return 0
 	end
 
 	return floor((TMW.SUG.SuggestionList:GetHeight() + 5)/TMW.SUG[1]:GetHeight()) - (self.inline and 1 or 2)
@@ -862,10 +886,7 @@ function Module:Table_GetNormalSuggestions(suggestions, tbl)
 		local len = #suggestions
 		for id in pairs(tbl) do if ]]
 
-		-- If WoW ever get spellIDs in the millions, this will break.
-		-- Just need to increment this number here to 6.
-		-- At current rates, that will be sometime in the 2040s.
-		local maxTrailingZeroes = 5
+		local maxTrailingZeroes = floor(log10(SpellCache.CONST.MAX_SPELLID_GUESS))
 
 		local endParens = ""
 		for i = maxTrailingZeroes - floor(log10(match)), 1, -1 do
@@ -1229,15 +1250,12 @@ function Module:Sorter_Bucket(suggestions, buckets)
 		elseif ClassSpellLookup[id] then
 			tinsert(buckets[3], id)
 		else
-			-- Classic: the aura cache just isn't useful, since it can't cache by spellID.
-	
-			-- local spellName = GetSpellInfo(id)
-			-- local auraSoruce = spellName and AuraCache_Cache[strlowerCache[spellName]]
-			-- if auraSoruce == 2 then
-			-- 	tinsert(buckets[4], id)
-			-- elseif auraSoruce == 1 then
-			-- 	tinsert(buckets[5], id)
-			-- else
+			local auraSource = AuraCache_Cache[id]
+			if auraSource == 2 then
+				tinsert(buckets[4], id)
+			elseif auraSource == 1 then
+				tinsert(buckets[5], id)
+			else
 				if SUGIsNumberInput then
 					tinsert(buckets[6 + floor(id/1000)], id)
 				else
@@ -1249,7 +1267,7 @@ function Module:Sorter_Bucket(suggestions, buckets)
 					--bucket.__sorter = spellSort
 					tinsert(bucket, id)
 				end
-			--end
+			end
 		end
 	end
 end
@@ -1281,12 +1299,12 @@ function Module:Table_GetSorter()
 end
 function Module:Entry_AddToList_1(f, id)
 	if tonumber(id) then --sanity check
-		local name = GetSpellInfo(id)
+		local name = GetSpellName(id)
 
 		f.Name:SetText(name)
 		f.ID:SetText(id)
 
-		f.tooltipmethod = "TMW_SetSpellByIDWithClassIcon"
+		f.tooltipmethod = TMW.GameTooltip_SetSpellByIDWithClassIcon
 		f.tooltiparg = id
 
 		if TMW.EquivFirstIDLookup[name] then
@@ -1311,35 +1329,31 @@ function Module:Entry_Colorize_1(f, id)
 		return
 	end
 
-	-- Classic: the aura cache just isn't useful, since it can't cache by spellID.
-
-	-- local spellName = GetSpellInfo(id)
-	-- local auraSoruce = spellName and AuraCache_Cache[strlowerCache[spellName]]
-	
-	-- if auraSoruce == AuraCache.CONST.AURA_TYPE_NONPLAYER then
-	-- 	-- Color known NPC auras warrior brown.
-	-- 	f.Background:SetVertexColor(.78, .61, .43, 1)
-	-- elseif auraSoruce == AuraCache.CONST.AURA_TYPE_PLAYER then
-	-- 	-- Color known PLAYER auras a bright pink-ish/pruple-ish color that is similar to paladin pink,
-	-- 	-- but has sufficient contrast for distinguishing.
-	-- 	f.Background:SetVertexColor(.79, .30, 1, 1)
-	-- end
+	local whoCasted = AuraCache_Cache[id]
+	if whoCasted == AuraCache.CONST.AURA_TYPE_NONPLAYER then
+		 -- Color known NPC auras warrior brown.
+		f.Background:SetVertexColor(.78, .61, .43, 1)
+	elseif whoCasted == AuraCache.CONST.AURA_TYPE_PLAYER then
+		-- Color known PLAYER auras a bright pink-ish/pruple-ish color that is similar to paladin pink,
+		-- but has sufficient contrast for distinguishing.
+		f.Background:SetVertexColor(.79, .30, 1, 1)
+	end
 end
 
 
 local Module = SUG:NewModule("texture", SUG:GetModule("spell"))
 function Module:Entry_AddToList_1(f, id)
 	if tonumber(id) then --sanity check
-		local name = GetSpellInfo(id)
+		local name = GetSpellName(id)
 
 		f.Name:SetText(name)
 		f.ID:SetText(id)
 
-		f.tooltipmethod = "TMW_SetSpellByIDWithClassIcon"
+		f.tooltipmethod = TMW.GameTooltip_SetSpellByIDWithClassIcon
 		f.tooltiparg = id
 
 		f.insert = id
-		if ClassSpellCache:GetCache()[pclass][id] and name and GetSpellTexture(name) then
+		if ClassSpellCache:GetPlayerSpells()[id] and name and GetSpellTexture(name) then
 			f.insert2 = name
 		end
 
@@ -1461,7 +1475,7 @@ function Module:Entry_AddToList_2(f, id)
 		f.insert = equiv
 		f.overrideInsertName = L["SUG_INSERTEQUIV"]
 
-		f.tooltipmethod = "TMW_SetEquiv"
+		f.tooltipmethod = TMW.GameTooltip_SetEquiv
 		f.tooltiparg = equiv
 
 		f.Icon:SetTexture(GetSpellTexture(id))
@@ -1484,12 +1498,17 @@ function Module:Entry_IsValid(id)
 		return true
 	end
 
+	-- var lines = TooltipUtil.FindLinesFromGetter({0}, "GetSpellByID", 198013)
 	local Parser, LT1, LT2, LT3 = TMW:GetParser()
 
 	Parser:SetOwner(UIParent, "ANCHOR_NONE") -- must set the owner before text can be obtained.
 	Parser:SetSpellByID(id)
 
-	if LT2:GetText() == SPELL_CAST_CHANNELED or LT3:GetText() == SPELL_CAST_CHANNELED then
+	if 
+		LT1:GetText() == SPELL_CAST_CHANNELED or 
+		LT2:GetText() == SPELL_CAST_CHANNELED or 
+		LT3:GetText() == SPELL_CAST_CHANNELED 
+	then
 		return true
 	end
 end
@@ -1533,7 +1552,7 @@ function Module:Entry_AddToList_2(f, id)
 		f.insert = equiv
 		f.overrideInsertName = L["SUG_INSERTEQUIV"]
 
-		f.tooltipmethod = "TMW_SetEquiv"
+		f.tooltipmethod = TMW.GameTooltip_SetEquiv
 		f.tooltiparg = equiv
 
 		f.Icon:SetTexture(GetSpellTexture(firstid))

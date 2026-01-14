@@ -28,6 +28,7 @@ local dbDefaults = {
 	QuestArrowInfoMsg = false,
 	healcircle_show=true,healcircle_color={0,.7,1,0.5},
 }
+local modDB = {};
 local excludeFrames = {}
 local isAddOnsLoadedForOption = {
 	SuperTrackedQuest = {
@@ -41,11 +42,11 @@ local function printFrames(key,value)
 	local keyType = type(key);
 	if keyType=="table" then
 		if not FarmHud:IsVisible() then
-			ns.print("FarmHud must be enabled before use this option");
+			ns:print("FarmHud must be enabled before use this option");
 			return;
 		end
 
-		ns.print("Search for unwanted elements anchored on minimap...");
+		ns:print("Search for unwanted elements anchored on minimap...");
 		local count = 0;
 		local regions = {Minimap:GetRegions()};
 		for r=1, #regions do
@@ -53,7 +54,7 @@ local function printFrames(key,value)
 			count = count + 1;
 		end
 
-		--ns.print("Search for unwanted frames anchored on minimap... (deep reverse search)");
+		--ns:print("Search for unwanted frames anchored on minimap... (deep reverse search)");
 		for k,v in pairs(_G) do
 			if not (issecurevariable(_G,k)) and (not excludeFrames[key]) and (type(value)=="table") and (type(value[0])=="userdata") and (not (value:IsProtected() or value:IsForbidden())) then
 				if printFrames(k,v) then
@@ -62,7 +63,7 @@ local function printFrames(key,value)
 			end
 		end
 
-		--ns.print("Search for unwanted textures/fontstrings anchored on minimap...");
+		--ns:print("Search for unwanted textures/fontstrings anchored on minimap...");
 		local childs = {Minimap:GetChildren()};
 		for i=1, #childs do
 			print("GetChildren()"," - ",childs[i]:GetDebugName());
@@ -70,9 +71,9 @@ local function printFrames(key,value)
 		end
 
 		if count>0 then
-			ns.print("Finished...");
+			ns:print("Finished...");
 		else
-			ns.print("No elements found...");
+			ns:print("No elements found...");
 		end
 		return;
 	end
@@ -118,7 +119,11 @@ local function opt(info,value,...)
 			end
 			FarmHudDB[key] = value;
 		end
-		FarmHud:UpdateOptions(key);
+		if modDB[key] and ns.modules[modDB[key]] then
+			ns.modules[modDB[key]].UpdateOptions(key,value)
+		else
+			FarmHud:UpdateOptions(key);
+		end
 		return;
 	elseif key=="MinimapIcon" then
 		return not FarmHudDB[key].hide;
@@ -173,7 +178,7 @@ local options = {
 				},
 				AddOnLoaded = {
 					type = "toggle", order = 2,
-					name = L.AddOnLoaded, desc = L.AddOnLoadedDesc
+					name = L.AddOnLoaded, desc = L["AddOnLoadedDesc"].."|n|n|cff44ff44"..L["AddOnLoadedDescAlt"].."|r"
 				},
 				rotation = {
 					type = "toggle", order = 3, width="full",
@@ -212,7 +217,7 @@ local options = {
 					values = playerDot_textures
 				},
 				placeholder = {
-					type = "group", order = 19, inline = true,
+					type = "group", order = 98, inline = true,
 					name = L.Placeholder,
 					args = {
 						desc = {
@@ -230,7 +235,7 @@ local options = {
 					}
 				},
 				mouseover = {
-					type = "group", order = 20, inline=true,
+					type = "group", order = 99, inline=true,
 					name = L.MouseOver,
 					args = {
 						holdKeyForMouseOn = {
@@ -520,7 +525,12 @@ local options = {
 					func = printFrames
 				}
 			}
-		}
+		},
+		credits = {
+			type = "group", order = 200,
+			name = L["Credits"],
+			args = {}
+		},
 	}
 };
 
@@ -580,6 +590,28 @@ function ns.RegisterOptions()
 		end
 	end
 
+	local modOptsOrder = 50;
+	for modName, mod in pairs(ns.modules)do
+		if mod.dbDefaults then
+			for k,v in pairs(mod.dbDefaults)do
+				if (dbDefaults[k]==nil) then
+					dbDefaults[k] = v
+					modDB[k] = modName;
+				end
+			end
+		end
+		if mod.AddOptions then
+			local opts = mod.AddOptions()
+			if type(opts)=="table" then
+				for k,v in pairs(opts)do
+					options.args[k] = v;
+					v.order = modOptsOrder;
+					modOptsOrder = modOptsOrder + 1;
+				end
+			end
+		end
+	end
+
 	for k,v in pairs(dbDefaults)do
 		if (FarmHudDB[k]==nil) then
 			FarmHudDB[k]=v;
@@ -610,4 +642,6 @@ function ns.RegisterOptions()
 
 	LibStub("AceConfig-3.0"):RegisterOptionsTable(addon, options);
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions(addon);
+
+	LibStub("HizurosSharedTools").AddCredit(addon,options.args.credits.args);
 end

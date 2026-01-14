@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -18,18 +18,22 @@ local print = TMW.print
 local _G = _G
 local bit_band, bit_bor, tinsert, tremove, unpack, wipe =
 	  bit.band, bit.bor, tinsert, tremove, unpack, wipe
-local UnitGUID, GetItemIcon, CombatLogGetCurrentEventInfo =
-	  UnitGUID, GetItemIcon, CombatLogGetCurrentEventInfo
+local UnitGUID, CombatLogGetCurrentEventInfo =
+	  UnitGUID, CombatLogGetCurrentEventInfo
+
+local GetSpellInfo = TMW.GetSpellInfo
 local GetSpellTexture = TMW.GetSpellTexture
+local GetSpellLink = C_Spell and C_Spell.GetSpellLink or GetSpellLink
+local GetItemIcon = C_Item and C_Item.GetItemIconByID or GetItemIcon
 
 local pGUID = nil -- This can't be defined at load.
-local clientVersion = select(4, GetBuildInfo())
 local strlowerCache = TMW.strlowerCache
 
 local COMBATLOG_OBJECT_NONE, ACTION_SWING =
 	  COMBATLOG_OBJECT_NONE, ACTION_SWING
 
 local Type = TMW.Classes.IconType:New("cleu")
+Type.obsolete = not CombatLogGetCurrentEventInfo
 Type.name = L["ICONMENU_CLEU"]
 Type.desc = L["ICONMENU_CLEU_DESC"]
 Type.menuIcon = GetSpellTexture(20066)
@@ -338,13 +342,13 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			extraName = arg2
 			spellID = arg4 -- the spell that was interrupted or the aura that was removed
 			spellName = arg5
-			tex = GetSpellTexture(spellName)
+			tex = GetSpellTexture(spellID == 0 and spellName or spellID)
 		elseif event == "SPELL_AURA_BROKEN_SPELL" or event == "SPELL_INTERRUPT_SPELL" then
 			extraID = arg4 -- the spell that broke it, or the spell that was interrupted
 			extraName = arg5
 			spellID = arg1 -- the spell that was broken, or the spell used to interrupt
 			spellName = arg2
-			tex = GetSpellTexture(spellName)
+			tex = GetSpellTexture(spellID == 0 and spellName or spellID)
 		elseif event == "ENVIRONMENTAL_DAMAGE" then
 			spellName = _G["ACTION_ENVIRONMENTAL_DAMAGE_" .. arg1]
 			tex = EnvironmentalTextures[arg1] or "Interface\\Icons\\INV_Misc_QuestionMark" -- arg1 is
@@ -405,11 +409,14 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			]]
 		end
 
-		local NameHash = icon.Spells.StringHash
 		local duration
 		if icon.Name ~= "" and not EventsWithoutSpells[event] then
 			-- Filter the event by spell.
-			local key = (NameHash[strlowerCache[spellName]])
+			local NameHash = icon.Spells.Hash
+			local key = 
+				spellID == 0 and icon.Spells.StringHash[spellID] or 
+				(NameHash[spellID] or NameHash[strlowerCache[spellName]])
+
 			if not key then
 				-- We are filtering by spell, but the even't spell wasn't in the list of OK spells. Return out.
 				return
@@ -561,7 +568,7 @@ function Type:Setup(icon)
 
 	icon:SetInfo("texture", Type:GetConfigIconTexture(icon))
 
-	-- Tell the user if they have an icon that is going to respond to every fucking thing that happens.
+	-- Tell the user if they have an icon that is going to respond to every single thing that happens.
 	if icon.AllowAnyEvents and not icon.SourceUnits and not icon.DestUnits and icon.Name == "" and not icon.SourceFlags and not icon.DestFlags then
 		if TMW.Locked and icon.Enabled then
 			TMW:Warn(L["CLEU_NOFILTERS"]:format(icon:GetIconName(true)))

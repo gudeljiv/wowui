@@ -3,6 +3,23 @@
 local pname = UnitName("player")
 local locale = GetLocale()
 
+local GetSpellInfo
+if C_Spell.GetSpellInfo then
+	GetSpellInfo = function(spellID)
+		if not spellID then
+			return nil;
+		end
+
+		local spellInfo = C_Spell.GetSpellInfo(spellID);
+		if spellInfo then
+			return spellInfo.name, nil, spellInfo.iconID;
+		end
+	end
+else
+	GetSpellInfo = _G.GetSpellInfo
+end
+
+
 local spellFmt = "|T%s:0|t%s"
 local function Spell(id, noTex)
     local name, _, tex = GetSpellInfo(id)
@@ -14,28 +31,48 @@ local function Spell(id, noTex)
     end
 
     if id == 42292 then
+		-- non-retail: pvp trinkets
         tex = "Interface\\Icons\\inv_jewelry_trinketpvp_0" .. (UnitFactionGroup("player") == "Horde" and "2" or "1")
     end
 
     return spellFmt:format(tex, name)
 end
 
--- Blizzard has a typo in the English string ("Ecplise")
-L["ECLIPSE"] = (locale == "enUS" or locale == "enGB") and "Eclipse" or ECLIPSE
-
 L["DR-DeathCoil"] = GetSpellInfo(6789)
 L["DR-FreezingTrap"] = GetSpellInfo(3355)
 L["DR-Sleep"] = GetSpellInfo(700)
 L["DR-UnstableAffliction"] = GetSpellInfo(30108)
+L["DR-KidneyShot"] = GetSpellInfo(408) or "Kidney Shot"
+
+-- Blizzard has a typo in the English string ("Ecplise")
+L["ECLIPSE"] = (locale == "enUS" or locale == "enGB") and "Eclipse" or ECLIPSE
 
 L["DOMAIN_GLOBAL_NC"] = L["DOMAIN_GLOBAL"]:gsub("|cff00c300", ""):gsub("|r", "")
 
-L["HELP_FIRSTUCD"]                      = L["HELP_FIRSTUCD"]                        :format(L["ICONMENU_CHOOSENAME3"], 
-                                                                                        Spell(5277, true), Spell(586, true), Spell(2139, true), Spell(853, true), Spell(853, true))
-L["HELP_MISSINGDURS"]                   = L["HELP_MISSINGDURS"]                     :format("%s", Spell(1766, true)) -- keep the first "%s" as "%s"
-L["ICONMENU_IGNORENOMANA_DESC"]         = L["ICONMENU_IGNORENOMANA_DESC"]           :format(Spell(85288), Spell(5308))
-L["ICONMENU_REACTIVE_DESC"]             = L["ICONMENU_REACTIVE_DESC"]               :format(Spell(5308), Spell(7384), Spell(19306))
-L["ICONMENU_UNITCOOLDOWN_DESC"]         = L["ICONMENU_UNITCOOLDOWN_DESC"]           :format(Spell(42292), Spell(42292, true))
+if GetSpellInfo(336126) then
+	L["ICONMENU_UNITCOOLDOWN_DESC"] = L["ICONMENU_UNITCOOLDOWN_DESC"]:format(Spell(336126), Spell(336126, true))
+else
+	L["ICONMENU_UNITCOOLDOWN_DESC"] = L["ICONMENU_UNITCOOLDOWN_DESC"]:format(Spell(42292), Spell(42292, true))
+end
+
+if GetSpellInfo(119996) then
+	L["ICONMENU_REACTIVE_DESC"] = L["ICONMENU_REACTIVE_DESC"]:format(Spell(5308), Spell(119996), Spell(24275))
+else
+	L["ICONMENU_REACTIVE_DESC"] = L["ICONMENU_REACTIVE_DESC"]:format(Spell(5308), Spell(7384), Spell(19306))
+end
+
+if GetSpellInfo(62618) then
+	L["HELP_FIRSTUCD"] = L["HELP_FIRSTUCD"]:format(L["ICONMENU_CHOOSENAME3"], Spell(65547, true), Spell(47528, true), Spell(2139, true), Spell(62618, true), Spell(62618, true))
+else
+	L["HELP_FIRSTUCD"] = L["HELP_FIRSTUCD"]:format(L["ICONMENU_CHOOSENAME3"], Spell(5277, true), Spell(586, true), Spell(2139, true), Spell(853, true), Spell(853, true))
+end
+
+L["HELP_MISSINGDURS"] = L["HELP_MISSINGDURS"]:format("%s", GetSpellInfo(1766)) -- keep the first "%s" as "%s"
+L["ICONTYPE_SWINGTIMER_TIP"] = L["ICONTYPE_SWINGTIMER_TIP"]:format(GetSpellInfo(75), L["ICONMENU_SPELLCOOLDOWN"], L["ICONMENU_SPELLCOOLDOWN"], GetSpellInfo(75), 75)
+L["ICONTYPE_SWINGTIMER_TIP_APPLYSETTINGS"] = L["ICONTYPE_SWINGTIMER_TIP_APPLYSETTINGS"]:format(GetSpellInfo(75))
+
+L["ICONMENU_IGNORENOMANA_DESC"]         = L["ICONMENU_IGNORENOMANA_DESC"]           :format(Spell(24275), Spell(5308))
+L["REACTIVECNDT_DESC"]                  = L["REACTIVECNDT_DESC"]                    :format(Spell(24275), Spell(5308))
 L["CLEU_DAMAGE_SHIELD_DESC"]            = L["CLEU_DAMAGE_SHIELD_DESC"]              :format(Spell(31271), Spell(30482), Spell(324))
 L["CLEU_DAMAGE_SHIELD_MISSED_DESC"]     = L["CLEU_DAMAGE_SHIELD_MISSED_DESC"]       :format(Spell(31271), Spell(30482), Spell(324))
 L["CLEU_SPELL_STOLEN_DESC"]             = L["CLEU_SPELL_STOLEN_DESC"]               :format(Spell(30449))
@@ -134,10 +171,19 @@ L["ICONMENU_LIGHTWELL_DESC"]            = L["ICONMENU_LIGHTWELL_DESC"]          
 L["ICONMENU_CUSTOMTEX_DESC"] = L["ICONMENU_CUSTOMTEX_DESC"] .. "\r\n\r\n" .. L["ICONMENU_CUSTOMTEX_MOPAPPEND_DESC"]
 L["ANIM_TEX_DESC"] = L["ANIM_TEX_DESC"] .. "\r\n\r\n" .. L["ICONMENU_CUSTOMTEX_MOPAPPEND_DESC"]
 
+
 L["CONDITIONALPHA_METAICON_DESC"] = L["CONDITIONALPHA_METAICON_DESC"]:format(L["ICONMENU_SHOWWHEN"], L["CONDITIONS"])
 L["DURATIONALPHA_DESC"] = L["DURATIONALPHA_DESC"]:format(L["ICONMENU_SHOWWHEN"])
 L["STACKALPHA_DESC"] = L["STACKALPHA_DESC"]:format(L["ICONMENU_SHOWWHEN"])
 L["VALUEALPHA_DESC"] = L["VALUEALPHA_DESC"]:format(L["ICONMENU_SHOWWHEN"])
+
+L["UIPANEL_SECRETS_AURAS_DISALLOWED_DESC"] = L["UIPANEL_SECRETS_AURAS_DISALLOWED_DESC"]:format(
+	L["ICONMENU_HIDEWHILESECRET"]
+)
+L["UIPANEL_SECRETS_AURAS_DISALLOWED_EXCEPT_DESC"] = L["UIPANEL_SECRETS_AURAS_DISALLOWED_EXCEPT_DESC"]:format(
+	L["ICONMENU_CTRLGROUP"],
+	L["ICONMENU_CHOOSENAME3"]
+)
 
 
 --L["CNDT_SLIDER_DESC_CLICKSWAP_TOMANUAL"] = L["CNDT_SLIDER_DESC_BASE"] .. "\r\n\r\n" .. L["CNDT_SLIDER_DESC_CLICKSWAP_TOMANUAL"]
@@ -146,7 +192,7 @@ L["VALUEALPHA_DESC"] = L["VALUEALPHA_DESC"]:format(L["ICONMENU_SHOWWHEN"])
 
 -- Wizard magic to make ICONMENU_CHOOSENAME_WPNENCH_DESC be locale-dynamic
 do
-	local FlametongueWeapon = GetSpellInfo(8024)
+	local FlametongueWeapon = GetSpellInfo(318038) or GetSpellInfo(8024)
 	local FlametongueWeaponEnchant
 	for i = 1, select("#", strsplit("|", L["SUG_MATCH_WPNENCH_ENCH"])) do
 		local enchant = select(i, strsplit("|", L["SUG_MATCH_WPNENCH_ENCH"]))

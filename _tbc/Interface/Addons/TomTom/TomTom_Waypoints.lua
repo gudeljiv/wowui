@@ -11,6 +11,7 @@
 local addon_name, addon = ...
 local hbd = addon.hbd
 local hbdp = LibStub("HereBeDragons-Pins-2.0")
+local errorHandler = geterrorhandler()
 
 -- Create a tooltip to be used when mousing over waypoints
 local tooltip = CreateFrame("GameTooltip", "TomTomTooltip", UIParent, "GameTooltipTemplate")
@@ -46,7 +47,9 @@ local function rotateArrow(self)
     if self.disabled then return end
 
     local angle = hbdp:GetVectorToIcon(self)
-    if not angle then return self:Hide() end
+    if not angle then
+        return self:Hide()
+    end
     angle = angle + rad_135
 
     if GetCVar("rotateMinimap") == "1" then
@@ -66,7 +69,34 @@ function TomTom:ReparentMinimap(minimap)
     end
 end
 
+-- Theme handling
+local function getMinimapDotTexture()
+    local theme = addon.db.profile.minimap.theme
+    return addon.waypointThemeRegistry:GetThemeDotTexture(theme)
+end
+
+local function getMinimapArrowTexture()
+    local theme = addon.db.profile.minimap.theme
+    return addon.waypointThemeRegistry:GetThemeArrowTexture(theme)
+end
+
+local function getMinimapDotSize()
+    local theme = addon.db.profile.minimap.theme
+    return addon.waypointThemeRegistry:GetThemeDotSize(theme)
+end
+
+local function getMinimapArrowSize()
+    local theme = addon.db.profile.minimap.theme
+    return addon.waypointThemeRegistry:GetThemeArrowSize(theme)
+end
+
+local function getWorldMapDotTexture()
+    local theme = addon.db.profile.worldmap.theme
+    return addon.waypointThemeRegistry:GetThemeDotTexture(theme)
+end
+
 local waypointMap = {}
+local idx = 0
 
 function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
     local m, x, y = unpack(waypoint)
@@ -78,9 +108,11 @@ function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
     if not point then
         point = {}
 
-        local minimap = CreateFrame("Button", nil, minimapParent)
-        minimap:SetHeight(20)
-        minimap:SetWidth(20)
+        idx = idx + 1
+        local minimapButtonName = string.format("TTMinimapButton%d", idx)
+        local minimap = CreateFrame("Button", minimapButtonName, minimapParent)
+        minimap:SetHeight(30)
+        minimap:SetWidth(30)
         minimap:RegisterForClicks("RightButtonUp")
 
         -- Add to the "All points" table so we can reparent easily
@@ -89,13 +121,17 @@ function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
         minimap.icon = minimap:CreateTexture(nil,"OVERLAY")
         minimap.icon:SetPoint("CENTER", 0, 0)
         minimap.icon:SetBlendMode("BLEND")  -- ADD/BLEND
+        minimap.icon:SetTexelSnappingBias(0)
+        minimap.icon:SetSnapToPixelGrid(false)
 
         minimap.arrow = minimap:CreateTexture(nil,"OVERLAY")
-        minimap.arrow:SetTexture("Interface\\AddOns\\TomTom\\Images\\MinimapArrow-Green")
+        minimap.arrow:SetTexture(getMinimapArrowTexture())
         minimap.arrow:SetPoint("CENTER", 0 ,0)
-        minimap.arrow:SetHeight(40)
-        minimap.arrow:SetWidth(40)
+        minimap.arrow:SetHeight(30)
+        minimap.arrow:SetWidth(30)
         minimap.arrow:Hide()
+        minimap.arrow:SetTexelSnappingBias(0)
+        minimap.arrow:SetSnapToPixelGrid(false)
 
         -- Add the behavior scripts
         minimap:SetScript("OnEnter", Minimap_OnEnter)
@@ -141,16 +177,21 @@ function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
     if waypoint.minimap_displayID then
          SetPortraitTextureFromCreatureDisplayID(point.minimap.icon, waypoint.minimap_displayID)
     else
-        point.minimap.icon:SetTexture(waypoint.minimap_icon or profile.minimap.default_icon)
+        point.minimap.icon:SetTexture(waypoint.minimap_icon or getMinimapDotTexture())
     end
     point.minimap.icon:SetHeight(waypoint.minimap_icon_size or profile.minimap.default_iconsize)
     point.minimap.icon:SetWidth(waypoint.minimap_icon_size or profile.minimap.default_iconsize)
+
+    -- Need to re-apply the arrow textures here to suppor themes
+    point.minimap.arrow:SetTexture(waypoint.minimap_icon or getMinimapArrowTexture())
+    point.minimap.arrow:SetHeight(getMinimapArrowSize())
+    point.minimap.arrow:SetWidth(getMinimapArrowSize())
 
     -- Set up the worldmap.icon
     if waypoint.worldmap_displayID then
          SetPortraitTextureFromCreatureDisplayID(point.worldmap.icon, waypoint.worldmap_displayID)
     else
-        point.worldmap.icon:SetTexture(waypoint.worldmap_icon or profile.worldmap.default_icon)
+        point.worldmap.icon:SetTexture(waypoint.worldmap_icon or getWorldMapDotTexture())
     end
     point.worldmap:SetHeight(waypoint.worldmap_icon_size or profile.worldmap.default_iconsize)
     point.worldmap:SetWidth(waypoint.worldmap_icon_size or profile.worldmap.default_iconsize)
@@ -175,10 +216,6 @@ function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
     point.worldmap.point = point
     point.uid = waypoint
 
-    -- Place the waypoint
-    -- AddMinimapIconMap(ref, icon, uiMapID, x, y, showInParentZone, floatOnEdge)
-    hbdp:AddMinimapIconMap(self, point.minimap, m, x, y, true, true)
-
     if show_world then
         -- show worldmap pin on its parent zone map (if any)
         -- HBD_PINS_WORLDMAP_SHOW_PARENT    = 1
@@ -191,16 +228,20 @@ function TomTom:SetWaypoint(waypoint, callbacks, show_minimap, show_world)
         point.worldmap.disabled = true
     end
 
-    if not show_minimap then
+	if show_minimap then
+        -- Place the waypoint
+        -- AddMinimapIconMap(ref, icon, uiMapID, x, y, showInParentZone, floatOnEdge)
+        hbdp:AddMinimapIconMap(self, point.minimap, m, x, y, true, true)
+        point.addedToMinimap = true
+        point.minimap:EnableMouse(true)
+        point.minimap.disabled = false
+        rotateArrow(point.minimap)
+	else
         -- Hide the minimap icon/arrow if minimap is off
         point.minimap:EnableMouse(false)
         point.minimap.icon:Hide()
         point.minimap.arrow:Hide()
         point.minimap.disabled = true
-        rotateArrow(point.minimap)
-    else
-        point.minimap:EnableMouse(true)
-        point.minimap.disabled = false
         rotateArrow(point.minimap)
     end
 end
@@ -239,6 +280,7 @@ function TomTom:ClearWaypoint(uid)
         hbdp:RemoveWorldMapIcon(self, point.worldmap)
         point.minimap:Hide()
         point.worldmap:Hide()
+        point.addedToMinimap = false
 
         -- Clear our handles to the callback tables
         point.callbacks = nil
@@ -256,17 +298,29 @@ function TomTom:ClearWaypoint(uid)
     end
 end
 
-function TomTom:GetDistanceToWaypoint(uid)
+function TomTom:GetVectorToWaypoint(uid)
     local point = waypointMap[uid]
-    if point then
-        local angle, distance = hbdp:GetVectorToIcon(point.minimap)
-        return distance
-    end
+    if not point then return end
+
+    local x, y, instance = hbd:GetPlayerWorldPosition()
+    if not x or not y then return end
+
+    -- pull the x, y and instance from the point/icon
+    local pointX, pointY, pointInstance = hbd:GetWorldCoordinatesFromZone(point.x, point.y, point.m)
+    if instance ~= pointInstance then return end
+
+    local angle, distance = hbd:GetWorldVector(instance, x, y, pointX, pointY)
+    return angle, distance
+end
+
+function TomTom:GetDistanceToWaypoint(uid)
+    local angle, distance = self:GetVectorToWaypoint(uid)
+    return distance
 end
 
 function TomTom:GetDirectionToWaypoint(uid)
-    local point = waypointMap[uid]
-    return point and hbdp:GetVectorToIcon(point.minimap)
+    local angle, distance = self:GetVectorToWaypoint(uid)
+    return angle
 end
 
 do
@@ -283,7 +337,7 @@ do
         local data = self.callbacks
 
         if data and data.onclick then
-            data.onclick("onclick", self.point.uid, self, button)
+            xpcall(data.onclick, errorHandler, "onclick", self.point.uid, self, button)
         end
     end
 
@@ -306,7 +360,7 @@ do
 
             tooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
 
-            data.tooltip_show("tooltip_show", tooltip, uid, dist)
+            xpcall(data.tooltip_show, errorHandler, "tooltip_show", tooltip, uid, dist)
             tooltip:Show()
 
             -- Set the update script if there is one
@@ -415,7 +469,7 @@ do
                 local distance = list[newstate]
                 local callback = callbacks.distance[distance]
                 if callback then
-                    callback("distance", data.uid, distance, dist, data.lastdist)
+                    xpcall(callback, errorHandler, "distance", data.uid, distance, dist, data.lastdist)
                 end
                 data.state = newstate
             end
@@ -429,7 +483,10 @@ do
         if event == "PLAYER_ENTERING_WORLD" then
             local data = self.point
             if data and data.uid and waypointMap[data.uid] then
-                hbdp:AddMinimapIconMap(TomTom, self, data.m, data.x, data.y, true)
+                if not data.addedToMinimap then
+                    -- Prevent duplicate registration
+                    hbdp:AddMinimapIconMap(TomTom, self, data.m, data.x, data.y, true)
+                end
             end
         end
     end

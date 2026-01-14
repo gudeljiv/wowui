@@ -12,52 +12,49 @@ hooksecurefunc("UnitFrameManaBar_UpdateType", CustomManaColor)
 -- Set faction colors for Repuation Frame and tracking bar.
 
 TOOLTIP_FACTION_COLORS = {
-	[1] = {r = 1, g = 0, b = 0},
-	[2] = {r = 1, g = 0, b = 0},
-	[3] = {r = 1, g = 1, b = 0},
-	[4] = {r = 1, g = 1, b = 0},
-	[5] = {r = 0, g = 1, b = 0},
-	[6] = {r = 0, g = 1, b = 0},
-	[7] = {r = 0, g = 1, b = 0},
-	[8] = {r = 0, g = 1, b = 0}
+	[1] = { r = 1, g = 0, b = 0 },
+	[2] = { r = 1, g = 0, b = 0 },
+	[3] = { r = 1, g = 1, b = 0 },
+	[4] = { r = 1, g = 1, b = 0 },
+	[5] = { r = 0, g = 1, b = 0 },
+	[6] = { r = 0, g = 1, b = 0 },
+	[7] = { r = 0, g = 1, b = 0 },
+	[8] = { r = 0, g = 1, b = 0 },
 }
 
 CUSTOM_FACTION_BAR_COLORS = {
-	[1] = {r = 0.63, g = 0, b = 0},
-	[2] = {r = 0.63, g = 0, b = 0},
-	[3] = {r = 0.63, g = 0, b = 0},
-	[4] = {r = 0.82, g = 0.67, b = 0},
-	[5] = {r = 0.32, g = 0.67, b = 0},
-	[6] = {r = 0.32, g = 0.67, b = 0},
-	[7] = {r = 0.32, g = 0.67, b = 0},
-	[8] = {r = 0, g = 0.75, b = 0.44}
+	[1] = { r = 0.63, g = 0, b = 0 },
+	[2] = { r = 0.63, g = 0, b = 0 },
+	[3] = { r = 0.63, g = 0, b = 0 },
+	[4] = { r = 0.82, g = 0.67, b = 0 },
+	[5] = { r = 0.32, g = 0.67, b = 0 },
+	[6] = { r = 0.32, g = 0.67, b = 0 },
+	[7] = { r = 0.32, g = 0.67, b = 0 },
+	[8] = { r = 0, g = 0.75, b = 0.44 },
 }
 
-hooksecurefunc(
-	"ReputationFrame_Update",
-	function(showLFGPulse)
-		local numFactions = GetNumFactions()
-		local factionOffset = FauxScrollFrame_GetOffset(ReputationListScrollFrame)
+hooksecurefunc("ReputationFrame_Update", function(showLFGPulse)
+	local numFactions = GetNumFactions()
+	local factionOffset = FauxScrollFrame_GetOffset(ReputationListScrollFrame)
 
-		for i = 1, NUM_FACTIONS_DISPLAYED, 1 do
-			local factionIndex = factionOffset + i
-			local factionBar = _G["ReputationBar" .. i .. "ReputationBar"]
+	for i = 1, NUM_FACTIONS_DISPLAYED, 1 do
+		local factionIndex = factionOffset + i
+		local factionBar = _G["ReputationBar" .. i .. "ReputationBar"]
 
-			if factionIndex <= numFactions then
-				local name, description, standingID = GetFactionInfo(factionIndex)
+		if factionIndex <= numFactions then
+			local name, description, standingID = GetFactionInfo(factionIndex)
 
-				local colorIndex = standingID
+			local colorIndex = standingID
 
-				if friendID ~= nil then
-					colorIndex = 5 -- always color friendships green
-				end
-
-				local color = CUSTOM_FACTION_BAR_COLORS[colorIndex]
-			--factionBar:SetStatusBarColor(color.r, color.g, color.b)
+			if friendID ~= nil then
+				colorIndex = 5 -- always color friendships green
 			end
+
+			local color = CUSTOM_FACTION_BAR_COLORS[colorIndex]
+			--factionBar:SetStatusBarColor(color.r, color.g, color.b)
 		end
 	end
-)
+end)
 
 -- Override the default GameTooltip_UnitColor function.
 
@@ -128,11 +125,11 @@ end
 
 -- Override the name background on default unit frames.
 
-hooksecurefunc(
-	"TargetFrame_CheckFaction",
-	function(self)
-		if UnitPlayerControlled(self.unit) then
-			self.nameBackground:SetVertexColor(GameTooltip_UnitColor(self.unit))
-		end
-	end
-)
+-- hooksecurefunc(
+-- 	"TargetFrame_CheckFaction",
+-- 	function(self)
+-- 		if UnitPlayerControlled(self.unit) then
+-- 			self.nameBackground:SetVertexColor(GameTooltip_UnitColor(self.unit))
+-- 		end
+-- 	end
+-- )

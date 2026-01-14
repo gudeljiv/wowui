@@ -1,6 +1,6 @@
 -- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -19,6 +19,7 @@ local print = TMW.print
 local IE = TMW.IE
 local CI = TMW.CI
 
+local GetSpellInfo = TMW.GetSpellInfo
 
 
 
@@ -56,7 +57,12 @@ local TabGroup = TMW.IE:RegisterTabGroup("ICON", L["ICON"], 1, function(tabGroup
 			end
 		end
 
-		IE.icontexture:SetTexture(icon.attributes.texture)
+		local texture = icon.attributes.texture
+		if TMW.issecretvalue(texture) then
+			-- Don't taint the icon editor with secrets
+			texture = nil
+		end
+		IE.icontexture:SetTexture(texture)
 	end
 end)
 TabGroup:SetTexts(L["ICON"], L["TABGROUP_ICON_DESC"])
@@ -214,7 +220,7 @@ end
 ----------------------
 function IE:IconType_DropDown()
 	for _, typeData in ipairs(TMW.OrderedTypes) do
-		if CI.ics.Type == typeData.type or not TMW.get(typeData.hidden) then
+		if CI.ics.Type == typeData.type or (not TMW.get(typeData.hidden) and not typeData.obsolete) then
 			if typeData.menuSpaceBefore then
 				TMW.DD:AddSpacer()
 			end
@@ -322,7 +328,7 @@ function IE:GetRealNames(Name)
 		else
 			local _
 			name, _, texture = GetSpellInfo(v)
-			texture = texture or GetSpellTexture(name or v)
+			texture = texture or TMW.GetSpellTexture(name or v)
 			
 			if not name and Cache then
 				local lowerv = strlower(v)
@@ -340,11 +346,11 @@ function IE:GetRealNames(Name)
 			
 			name = name or v or ""
 
-			texture = texture or GetSpellTexture(name)
+			texture = texture or TMW.GetSpellTexture(name)
 		end
 
 		local dur = ""
-		if CI_typeData.DurationSyntax or durations[k] > 0 then
+		if CI_typeData.DurationSyntax or durations[k] and durations[k] > 0 then
 			dur = ": "..TMW:FormatSeconds(durations[k])
 		end
 
@@ -425,6 +431,7 @@ function IE:SpellItemToIcon(icon, func, arg1)
 	else
 		t, data, subType, param4 = GetCursorInfo()
 	end
+
 	IE.DraggingInfo = nil
 
 	if not t then

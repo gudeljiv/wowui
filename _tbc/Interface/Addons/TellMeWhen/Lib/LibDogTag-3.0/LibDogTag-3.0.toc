@@ -1,7 +1,4 @@
-## Interface: 90200
-## Interface-Retail: 90200
-## Interface-Classic: 11402
-## Interface-BCC: 20503
+## Interface: 11508, 20504, 30405, 40402, 50503, 110207, 120000
 ## LoadOnDemand: 1
 ## Title: Lib: DogTag-3.0
 ## Notes: A library to provide a markup syntax
@@ -12,6 +9,18 @@
 ## X-Credit: Shefki, Parnic, cybeloras
 ## X-Curse-Project-ID: 14280
 ## OptionalDeps:
+## Category-enUS: Libraries
+## Category-deDE: Bibliotheken
+## Category-esES: Bibliotecas
+## Category-esMX: Bibliotecas
+## Category-frFR: Bibliothèques
+## Category-itIT:
+## Category-koKR:
+## Category-ptBR: Bibliotecas
+## Category-ruRU: Библиотеки
+## Category-zhCN: 函数库
+## Category-zhTW: 函式庫
+## Group: LibDogTag
 
 LibStub\LibStub.lua
 lib.xml

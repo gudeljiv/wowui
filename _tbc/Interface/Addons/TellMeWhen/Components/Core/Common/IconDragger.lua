@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -25,7 +25,7 @@ TMW.IconDragger = IconDragger
 
 
 function IconDragger:OnInitialize()
-	WorldFrame:HookScript("OnMouseDown", function() -- this contains other bug fix stuff too
+	TMW:RegisterCallback("TMW_WORLD_FRAME_MOUSE_DOWN", function()
 		IconDragger.DraggerFrame:Hide()
 		IconDragger.IsDragging = nil
 	end)
@@ -102,7 +102,7 @@ function IconDragger:CompleteDrag(script, icon)
 	IconDragger:ScheduleTimer("SetIsDraggingFalse", 0.1)
 
 	-- icon is the destination
-	icon = icon or GetMouseFocus()
+	icon = icon or TMW.GetMouseFocus() or WorldFrame
 
 	if IconDragger.IsDragging then
 

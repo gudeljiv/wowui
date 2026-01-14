@@ -1,7 +1,9 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, Private = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class Private
+local Private = select(2, ...)
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
 Private.barmodels = {}
@@ -24,9 +26,8 @@ local default = function(parentType)
     model_st_rz = 0,
     model_st_us = 40,
 
-    model_fileId = "235338",
-    model_path = "spells/arcanepower_state_chest.m2",
-    bar_model_clip = true
+    model_fileId = WeakAuras.IsTBC() and "124614" or "235338",
+    bar_model_attach = true
   }
 end
 
@@ -53,25 +54,20 @@ local function PreShow(self)
   self:Show()
 
   -- Adjust model
-  local modelId
-  if not WeakAuras.IsRetail() then
-    modelId = data.model_path
-  else
-    modelId = tonumber(data.model_fileId)
-  end
+  local modelId = tonumber(data.model_fileId)
   if modelId then
-    self:SetModel(modelId)
+    pcall(self.SetModel, self, modelId)
   end
 
   self:ClearTransform()
   if (data.api) then
     self:MakeCurrentCameraCustom()
-    self:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+    self:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
       rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
       data.model_st_us / 1000);
   else
     self:SetPosition(data.model_z, data.model_x, data.model_y);
-    self:SetFacing(0);
+    self:SetFacing(rad(data.rotation))
   end
   self:SetModelAlpha(self.region.alpha)
 end
@@ -79,6 +75,7 @@ end
 local function CreateModel()
   local model =  CreateFrame("PlayerModel", nil, UIParent)
   model.PreShow = PreShow;
+  model.SetTransformFixed = Private.ModelSetTransformFixed
   return model
 end
 
@@ -94,21 +91,29 @@ local function AcquireModel(region, data)
   Private.barmodels[model] = true
   model.api = data.api
 
-  model:ClearAllPoints()
-
   local anchor
   if region.parentType == "aurabar" then
-    anchor = region.parent.bar
+    if data.bar_model_attach then
+      if data.bar_model_stretch then
+        anchor = region.parent.bar.fgMask
+      else
+        anchor = region.parent.bar
+      end
+    else
+      anchor = region.parent.bar
+    end
   else
     anchor = region.parent
   end
 
+
   local extra_width, extra_height = 0, 0
-  if not(data.bar_model_clip and region.parentType == "aurabar") then
+  if not(data.bar_model_attach and region.parentType == "aurabar") then
     extra_width = data.extra_width or 0
     extra_height = data.extra_height or 0
   end
 
+  model:ClearAllPoints()
   model:SetPoint("TOPLEFT", anchor ,"TOPLEFT", -extra_width/2, extra_height/2)
   model:SetPoint("BOTTOMRIGHT", anchor ,"BOTTOMRIGHT", extra_width/2, -extra_height/2)
 
@@ -117,25 +122,20 @@ local function AcquireModel(region, data)
   model:Show()
 
   -- Adjust model
-  local modelId
-  if not WeakAuras.IsRetail() then
-    modelId = data.model_path
-  else
-    modelId = tonumber(data.model_fileId)
-  end
+  local modelId = tonumber(data.model_fileId)
   if modelId then
-    model:SetModel(modelId)
+    pcall(model.SetModel, model, modelId)
   end
 
   model:ClearTransform()
   if (data.api) then
     model:MakeCurrentCameraCustom()
-    model:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+    model:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
       rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
       data.model_st_us / 1000);
   else
     model:SetPosition(data.model_z, data.model_x, data.model_y);
-    model:SetFacing(0);
+    model:SetFacing(rad(data.rotation))
   end
   return model
 end
@@ -197,7 +197,8 @@ local funcs = {
 }
 
 local function create()
-  local subRegion = CreateFrame("FRAME", nil, UIParent)
+  local subRegion = CreateFrame("Frame", nil, UIParent)
+  subRegion:SetFlattensRenderLayers(true)
   subRegion:SetClipsChildren(true)
 
   for k, v in pairs(funcs) do
@@ -216,8 +217,6 @@ local function onRelease(subRegion)
   subRegion:Hide()
 end
 
-
-
 local function modify(parent, region, parentData, data, first)
   if region.model then
     ReleaseModel(region.model)
@@ -232,8 +231,8 @@ local function modify(parent, region, parentData, data, first)
 
   local anchor
   if parentData.regionType == "aurabar" then
-    if data.bar_model_clip then
-      anchor = parent.bar.fgFrame
+    if data.bar_model_attach then
+      anchor = parent.bar.fgMask
     else
       anchor = parent.bar
     end
@@ -242,11 +241,12 @@ local function modify(parent, region, parentData, data, first)
   end
 
   local extra_width, extra_height = 0, 0
-  if not(data.bar_model_clip and parentData.regionType == "aurabar") then
+  if not(data.bar_model_attach and parentData.regionType == "aurabar") then
     extra_width = data.extra_width or 0
     extra_height = data.extra_height or 0
   end
 
+  region:ClearAllPoints()
   region:SetPoint("TOPLEFT", anchor ,"TOPLEFT", -extra_width/2, extra_height/2)
   region:SetPoint("BOTTOMRIGHT", anchor ,"BOTTOMRIGHT", extra_width/2, -extra_height/2)
 
@@ -264,6 +264,7 @@ local function supports(regionType)
          or regionType == "icon"
          or regionType == "aurabar"
          or regionType == "text"
+         or regionType == "empty"
 end
 
 WeakAuras.RegisterSubRegionType("submodel", L["Model"], supports, create, modify, onAcquire, onRelease, default, nil, properties);

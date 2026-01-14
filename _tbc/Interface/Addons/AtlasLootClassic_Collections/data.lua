@@ -1,3 +1,4 @@
+if AtlasLoot.IS_SOD then return end
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
@@ -15,17 +16,26 @@ end
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
-local addonname = ...
+local addonname, private = ...
 local AtlasLoot = _G.AtlasLoot
-local data = AtlasLoot.ItemDB:Add(addonname, 1)
+local data = AtlasLoot.ItemDB:Add(addonname, 1, 0)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
-local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
-local HEROIC_DIFF = data:AddDifficulty(AL["Heroic"], "h", 2, nil, true)
+local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
+local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
+local RAID10_DIFF = data:AddDifficulty("10RAID")
+local RAID10H_DIFF = data:AddDifficulty("10RAIDH")
+local RAID25_DIFF = data:AddDifficulty("25RAID")
+local RAID25H_DIFF = data:AddDifficulty("25RAIDH")
+
+local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
+local T10_1_DIFF = data:AddDifficulty(AL["10H / 25 / 25H"], "T10_1", 0)
+local T10_2_DIFF = data:AddDifficulty(AL["25 Raid Heroic"], "T10_2", 0)
+
 local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
 if UnitFactionGroup("player") == "Horde" then
 	HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
@@ -50,123 +60,13 @@ local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
---@version-bcc@
-data["BadgeofJustice"] = {
-	name = format(AL["'%s' Vendor"], "Badge of Justice"),
-	ContentType = VENDOR_CONTENT,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	items = {
-		{
-			name = ALIL["Cloth"],
-			[NORMAL_DIFF] = {
-				{ 1, 32089 }, -- Mana-Binders Cowl
-				{ 2, 32090 }, -- Cowl of Naaru Blessings
-
-				{ 4, 30762 }, -- Infernoweave Robe
-				{ 5, 30764 }, -- Infernoweave Gloves
-				{ 6, 30761 }, -- Infernoweave Leggings
-				{ 7, 30763 }, -- Infernoweave Boots
-			},
-		},
-		{
-			name = ALIL["Leather"],
-			[NORMAL_DIFF] = {
-				{ 1, 32087 }, -- Mask of the Deceiver
-				{ 2, 32088 }, -- Cowl of Beastly Rage
-
-				{ 4, 30776 }, -- Inferno Hardened Chestguard
-				{ 5, 30780 }, -- Inferno Hardened Gloves
-				{ 6, 30778 }, -- Inferno Hardened Leggings
-				{ 7, 30779 }, -- Inferno Hardened Boots
-			},
-		},
-		{
-			name = ALIL["Mail"],
-			[NORMAL_DIFF] = {
-				{ 1, 32085 }, -- Warpstalker Helm
-				{ 2, 32086 }, -- Storm Master's Helmet
-
-				{ 4, 30773 }, -- Inferno Forged Hauberk
-				{ 5, 30774 }, -- Inferno Forged Gloves
-				{ 6, 30770 }, -- Inferno Forged Boots
-				{ 7, 30772 }, -- Inferno Forged Leggings
-			},
-		},
-		{
-			name = ALIL["Plate"],
-			[NORMAL_DIFF] = {
-				{ 1, 32083 }, -- Faceguard of Determination
-				{ 2, 32084 }, -- Helmet of the Steadfast Champion
-
-				{ 4, 30769,  }, -- Inferno Tempered Chestguard
-				{ 5, 30767,  }, -- Inferno Tempered Gauntlets
-				{ 6, 30766 }, -- Inferno Tempered Leggings
-				{ 7, 30768 }, -- Inferno Tempered Boots
-			},
-		},
-		{
-			name = ALIL["Off Hand"],
-			[NORMAL_DIFF] = {
-				{ 1, 29266 }, -- Azure-Shield of Coldarra
-				{ 2, 29267 }, -- Light-Bearer's Faith Shield
-				{ 3, 29268 }, -- Mazthoril Honor Shield
-				{ 5, 29269 }, -- Sapphiron's Wing Bone
-				{ 6, 29270 }, -- Flametongue Seal
-				{ 7, 29271 }, -- Talisman of Kalecgos
-				{ 8, 29272 }, -- Orb of the Soul-Eater
-				{ 9, 29273 }, -- Khadgar's Knapsack
-				{ 10, 29274 }, -- Tears of Heaven
-				{ 16, 29275 }, -- Searing Sunblade
-			},
-		},
-		{
-			name = ALIL["Neck"],
-			[NORMAL_DIFF] = {
-				{ 1, 29368 }, -- Manasurge Pendant
-				{ 2, 29374 }, -- Necklace of Eternal Hope
-				{ 3, 29381 }, -- Choker of Vile Intent
-				{ 4, 29386 }, -- Necklace of the Juggernaut
-			},
-		},
-		{
-			name = ALIL["Cloak"],
-			[NORMAL_DIFF] = {
-				{ 1, 29369 }, -- Shawl of Shifting Probabilities
-				{ 2, 29375 }, -- Bishop's Cloak
-				{ 3, 29382 }, -- Blood Knight War Cloak
-				{ 4, 29385 }, -- Farstrider Defender's Cloak
-			},
-		},
-		{
-			name = ALIL["Finger"],
-			[NORMAL_DIFF] = {
-				{ 1, 29367 }, -- Ring of Cryptic Dreams
-				{ 2, 29373 }, -- Band of Halos
-				{ 3, 29379 }, -- Ring of Arathi Warlords
-				{ 4, 29384 }, -- Ring of Unyielding Force
-			},
-		},
-		{
-			name = ALIL["Trinket"],
-			[NORMAL_DIFF] = {
-				{ 1, 29370 }, -- Icon of the Silver Crescent
-				{ 2, 29376 }, -- Essence of the Martyr
-				{ 3, 29383 }, -- Bloodlust Brooch
-				{ 4, 29387 }, -- Gnomeregan Auto-Blocker 600
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[NORMAL_DIFF] = {
-				{ 1, 29388 }, -- Libram of Repentance
-				{ 2, 29389 }, -- Totem of the Pulsing Earth
-				{ 3, 29390 }, -- Everbloom Idol
-			},
-		},
-	}
-}
---@end-version-bcc@
+-- colors
+local BLUE = "|cff6666ff%s|r"
+--local GREY = "|cff999999%s|r"
+local GREEN = "|cff66cc33%s|r"
+local _RED = "|cffcc6666%s|r"
+local PURPLE = "|cff9900ff%s|r"
+--local WHIT = "|cffffffff%s|r"
 
 data["TierSets"] = {
 	name = AL["Tier Sets"],
@@ -175,6 +75,7 @@ data["TierSets"] = {
 	items = {
 		{ -- T1
 			name = format(AL["Tier %s Sets"], "1"),
+			CoinTexture = "CLASSIC",
 			[NORMAL_DIFF] = {
 				{ 1, 203 }, -- Warlock
 				{ 3, 202 }, -- Priest
@@ -189,6 +90,7 @@ data["TierSets"] = {
 		},
 		{ -- T2
 			name = format(AL["Tier %s Sets"], "2"),
+			CoinTexture = "CLASSIC",
 			[NORMAL_DIFF] = {
 				{ 1, 212 }, -- Warlock
 				{ 3, 211 }, -- Priest
@@ -203,6 +105,7 @@ data["TierSets"] = {
 		},
 		{ -- T2.5
 			name = format(AL["Tier %s Sets"], "2.5"),
+			CoinTexture = "CLASSIC",
 			[NORMAL_DIFF] = {
 				{ 1, 499 }, -- Warlock
 				{ 3, 507 }, -- Priest
@@ -217,6 +120,7 @@ data["TierSets"] = {
 		},
 		{ -- T3
 			name = format(AL["Tier %s Sets"], "3"),
+			CoinTexture = "CLASSIC",
 			[NORMAL_DIFF] = {
 				{ 1, 529 }, -- Warlock
 				{ 3, 525 }, -- Priest
@@ -229,9 +133,9 @@ data["TierSets"] = {
 				{ 24, 528 }, -- Paladin
 			},
 		},
---@version-bcc@
-		{ -- T4
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { -- T4
 			name = format(AL["Tier %s Sets"], "4"),
+			CoinTexture = "BC",
 			[NORMAL_DIFF] = {
 				{ 1,    645 }, -- Warlock
 				{ 3,    663 }, -- Priest / Heal
@@ -251,9 +155,10 @@ data["TierSets"] = {
 				{ 27,   625 }, -- Paladin / Prot
 				{ 28,   626 }, -- Paladin / DD
 			},
-		},
-		{ -- T5
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { -- T5
 			name = format(AL["Tier %s Sets"], "5"),
+			CoinTexture = "BC",
 			[NORMAL_DIFF] = {
 				{ 1,    646 }, -- Warlock
 				{ 3,    665 }, -- Priest / Heal
@@ -273,9 +178,10 @@ data["TierSets"] = {
 				{ 27,   628 }, -- Paladin / Prot
 				{ 28,   629 }, -- Paladin / DD
 			},
-		},
-		{
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, {
 			name = format(AL["Tier %s Sets"], "6"),
+			CoinTexture = "BC",
 			[NORMAL_DIFF] = {
 				{ 1,    670 }, -- Warlock
 				{ 3,    675 }, -- Priest / Heal
@@ -295,8 +201,302 @@ data["TierSets"] = {
 				{ 27,   679 }, -- Paladin / Prot
 				{ 28,   680 }, -- Paladin / DD
 			},
-		},
---@end-version-bcc@
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "7"),
+			CoinTexture = "WRATH",
+			[RAID10_DIFF] = {
+				{ 1,    3100802 }, -- Warlock
+				{ 3,    3100804 }, -- Priest / Heal
+				{ 4,    3100805 }, -- Priest / Shadow
+				{ 6,    3100801 }, -- Rogue
+				{ 8,    3100794 }, -- Hunter
+				{ 10,   3100787 }, -- Warrior / Prot
+				{ 11,   3100788 }, -- Warrior / DD
+				{ 13,   3100793 }, -- Deathknight / Prot
+				{ 14,   3100792 }, -- Deathknight / DD
+				{ 16,   3100803 }, -- Mage
+				{ 18,   3100799 }, -- Druid / Heal
+				{ 19,   3100800 }, -- Druid / Owl
+				{ 20,   3100798 }, -- Druid / Feral
+				{ 22,   3100797 }, -- Shaman / Heal
+				{ 23,   3100796 }, -- Shaman / Ele
+				{ 24,   3100795 }, -- Shaman / Enh
+				{ 26,   3100790 }, -- Paladin / Heal
+				{ 27,   3100791 }, -- Paladin / Prot
+				{ 28,   3100789 }, -- Paladin / DD
+			},
+			[RAID25_DIFF] = {
+				{ 1,    3250802 }, -- Warlock
+				{ 3,    3250804 }, -- Priest / Heal
+				{ 4,    3250805 }, -- Priest / Shadow
+				{ 6,    3250801 }, -- Rogue
+				{ 8,    3250794 }, -- Hunter
+				{ 10,   3250787 }, -- Warrior / Prot
+				{ 11,   3250788 }, -- Warrior / DD
+				{ 13,   3250793 }, -- Deathknight / Prot
+				{ 14,   3250792 }, -- Deathknight / DD
+				{ 16,   3250803 }, -- Mage
+				{ 18,   3250799 }, -- Druid / Heal
+				{ 19,   3250800 }, -- Druid / Owl
+				{ 20,   3250798 }, -- Druid / Feral
+				{ 22,   3250797 }, -- Shaman / Heal
+				{ 23,   3250796 }, -- Shaman / Ele
+				{ 24,   3250795 }, -- Shaman / Enh
+				{ 26,   3250790 }, -- Paladin / Heal
+				{ 27,   3250791 }, -- Paladin / Prot
+				{ 28,   3250789 }, -- Paladin / DD
+			},
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "8"),
+			CoinTexture = "WRATH",
+			[RAID10_DIFF] = {
+				{ 1,    3100837 }, -- Warlock
+				{ 3,    3100833 }, -- Priest / Heal
+				{ 4,    3100832 }, -- Priest / Shadow
+				{ 6,    3100826 }, -- Rogue
+				{ 8,    3100838 }, -- Hunter
+				{ 10,   3100831 }, -- Warrior / Prot
+				{ 11,   3100830 }, -- Warrior / DD
+				{ 13,   3100835 }, -- Deathknight / Prot
+				{ 14,   3100834 }, -- Deathknight / DD
+				{ 16,   3100836 }, -- Mage
+				{ 18,   3100829 }, -- Druid / Heal
+				{ 19,   3100828 }, -- Druid / Owl
+				{ 20,   3100827 }, -- Druid / Feral
+				{ 22,   3100825 }, -- Shaman / Heal
+				{ 23,   3100824 }, -- Shaman / Ele
+				{ 24,   3100823 }, -- Shaman / Enh
+				{ 26,   3100822 }, -- Paladin / Heal
+				{ 27,   3100821 }, -- Paladin / Prot
+				{ 28,   3100820 }, -- Paladin / DD
+			},
+			[RAID25_DIFF] = {
+				{ 1,    3250837 }, -- Warlock
+				{ 3,    3250833 }, -- Priest / Heal
+				{ 4,    3250832 }, -- Priest / Shadow
+				{ 6,    3250826 }, -- Rogue
+				{ 8,    3250838 }, -- Hunter
+				{ 10,   3250831 }, -- Warrior / Prot
+				{ 11,   3250830 }, -- Warrior / DD
+				{ 13,   3250835 }, -- Deathknight / Prot
+				{ 14,   3250834 }, -- Deathknight / DD
+				{ 16,   3250836 }, -- Mage
+				{ 18,   3250829 }, -- Druid / Heal
+				{ 19,   3250828 }, -- Druid / Owl
+				{ 20,   3250827 }, -- Druid / Feral
+				{ 22,   3250825 }, -- Shaman / Heal
+				{ 23,   3250824 }, -- Shaman / Ele
+				{ 24,   3250823 }, -- Shaman / Enh
+				{ 26,   3250822 }, -- Paladin / Heal
+				{ 27,   3250821 }, -- Paladin / Prot
+				{ 28,   3250820 }, -- Paladin / DD
+			},
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "9"),
+			CoinTexture = "WRATH",
+			[NORMAL_DIFF] = AtlasLoot:GetRetByFaction(
+				{ -- horde
+					{ 1,    3000845 }, -- Warlock
+					{ 3,    3000848 }, -- Priest / Heal
+					{ 4,    3000850 }, -- Priest / Shadow
+					{ 6,    3000858 }, -- Rogue
+					{ 8,    3000860 }, -- Hunter
+					{ 10,   3000870 }, -- Warrior / Prot
+					{ 11,   3000868 }, -- Warrior / DD
+					{ 13,   3000874 }, -- Deathknight / Prot
+					{ 14,   3000872 }, -- Deathknight / DD
+					{ 16,   3000844 }, -- Mage
+					{ 18,   3000852 }, -- Druid / Heal
+					{ 19,   3000854 }, -- Druid / Owl
+					{ 20,   3000856 }, -- Druid / Feral
+					{ 22,   3000862 }, -- Shaman / Heal
+					{ 23,   3000863 }, -- Shaman / Ele
+					{ 24,   3000866 }, -- Shaman / Enh
+					{ 26,   3000876 }, -- Paladin / Heal
+					{ 27,   3000880 }, -- Paladin / Prot
+					{ 28,   3000878 }, -- Paladin / DD
+				},
+				{ -- alli
+					{ 1,    3000846 }, -- Warlock
+					{ 3,    3000847 }, -- Priest / Heal
+					{ 4,    3000849 }, -- Priest / Shadow
+					{ 6,    3000857 }, -- Rogue
+					{ 8,    3000859 }, -- Hunter
+					{ 10,   3000869 }, -- Warrior / Prot
+					{ 11,   3000867 }, -- Warrior / DD
+					{ 13,   3000873 }, -- Deathknight / Prot
+					{ 14,   3000871 }, -- Deathknight / DD
+					{ 16,   3000843 }, -- Mage
+					{ 18,   3000851 }, -- Druid / Heal
+					{ 19,   3000853 }, -- Druid / Owl
+					{ 20,   3000855 }, -- Druid / Feral
+					{ 22,   3000861 }, -- Shaman / Heal
+					{ 23,   3000864 }, -- Shaman / Ele
+					{ 24,   3000865 }, -- Shaman / Enh
+					{ 26,   3000875 }, -- Paladin / Heal
+					{ 27,   3000879 }, -- Paladin / Prot
+					{ 28,   3000877 }, -- Paladin / DD
+				}
+			),
+			[RAID25_DIFF] = AtlasLoot:GetRetByFaction(
+				{ -- horde
+					{ 1,    3250845 }, -- Warlock
+					{ 3,    3250848 }, -- Priest / Heal
+					{ 4,    3250850 }, -- Priest / Shadow
+					{ 6,    3250858 }, -- Rogue
+					{ 8,    3250860 }, -- Hunter
+					{ 10,   3250870 }, -- Warrior / Prot
+					{ 11,   3250868 }, -- Warrior / DD
+					{ 13,   3250874 }, -- Deathknight / Prot
+					{ 14,   3250872 }, -- Deathknight / DD
+					{ 16,   3250844 }, -- Mage
+					{ 18,   3250852 }, -- Druid / Heal
+					{ 19,   3250854 }, -- Druid / Owl
+					{ 20,   3250856 }, -- Druid / Feral
+					{ 22,   3250862 }, -- Shaman / Heal
+					{ 23,   3250863 }, -- Shaman / Ele
+					{ 24,   3250866 }, -- Shaman / Enh
+					{ 26,   3250876 }, -- Paladin / Heal
+					{ 27,   3250880 }, -- Paladin / Prot
+					{ 28,   3250878 }, -- Paladin / DD
+				},
+				{ -- alli
+					{ 1,    3250846 }, -- Warlock
+					{ 3,    3250847 }, -- Priest / Heal
+					{ 4,    3250849 }, -- Priest / Shadow
+					{ 6,    3250857 }, -- Rogue
+					{ 8,    3250859 }, -- Hunter
+					{ 10,   3250869 }, -- Warrior / Prot
+					{ 11,   3250867 }, -- Warrior / DD
+					{ 13,   3250873 }, -- Deathknight / Prot
+					{ 14,   3250871 }, -- Deathknight / DD
+					{ 16,   3250843 }, -- Mage
+					{ 18,   3250851 }, -- Druid / Heal
+					{ 19,   3250853 }, -- Druid / Owl
+					{ 20,   3250855 }, -- Druid / Feral
+					{ 22,   3250861 }, -- Shaman / Heal
+					{ 23,   3250864 }, -- Shaman / Ele
+					{ 24,   3250865 }, -- Shaman / Enh
+					{ 26,   3250875 }, -- Paladin / Heal
+					{ 27,   3250879 }, -- Paladin / Prot
+					{ 28,   3250877 }, -- Paladin / DD
+				}
+			),
+			[RAID25H_DIFF] = AtlasLoot:GetRetByFaction(
+				{ -- horde
+					{ 1,    3251845 }, -- Warlock
+					{ 3,    3251848 }, -- Priest / Heal
+					{ 4,    3251850 }, -- Priest / Shadow
+					{ 6,    3251858 }, -- Rogue
+					{ 8,    3251860 }, -- Hunter
+					{ 10,   3251870 }, -- Warrior / Prot
+					{ 11,   3251868 }, -- Warrior / DD
+					{ 13,   3251874 }, -- Deathknight / Prot
+					{ 14,   3251872 }, -- Deathknight / DD
+					{ 16,   3251844 }, -- Mage
+					{ 18,   3251852 }, -- Druid / Heal
+					{ 19,   3251854 }, -- Druid / Owl
+					{ 20,   3251856 }, -- Druid / Feral
+					{ 22,   3251862 }, -- Shaman / Heal
+					{ 23,   3251863 }, -- Shaman / Ele
+					{ 24,   3251866 }, -- Shaman / Enh
+					{ 26,   3251876 }, -- Paladin / Heal
+					{ 27,   3251880 }, -- Paladin / Prot
+					{ 28,   3251878 }, -- Paladin / DD
+				},
+				{ -- alli
+					{ 1,    3251846 }, -- Warlock
+					{ 3,    3251847 }, -- Priest / Heal
+					{ 4,    3251849 }, -- Priest / Shadow
+					{ 6,    3251857 }, -- Rogue
+					{ 8,    3251859 }, -- Hunter
+					{ 10,   3251869 }, -- Warrior / Prot
+					{ 11,   3251867 }, -- Warrior / DD
+					{ 13,   3251873 }, -- Deathknight / Prot
+					{ 14,   3251871 }, -- Deathknight / DD
+					{ 16,   3251843 }, -- Mage
+					{ 18,   3251851 }, -- Druid / Heal
+					{ 19,   3251853 }, -- Druid / Owl
+					{ 20,   3251855 }, -- Druid / Feral
+					{ 22,   3251861 }, -- Shaman / Heal
+					{ 23,   3251864 }, -- Shaman / Ele
+					{ 24,   3251865 }, -- Shaman / Enh
+					{ 26,   3251875 }, -- Paladin / Heal
+					{ 27,   3251879 }, -- Paladin / Prot
+					{ 28,   3251877 }, -- Paladin / DD
+				}
+			),
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "10"),
+			CoinTexture = "WRATH",
+			[VENDOR_DIFF] = {
+				{ 1,    3000884 }, -- Warlock
+				{ 3,    3000885 }, -- Priest / Heal
+				{ 4,    3000886 }, -- Priest / Shadow
+				{ 6,    3000890 }, -- Rogue
+				{ 8,    3000891 }, -- Hunter
+				{ 10,   3000896 }, -- Warrior / Prot
+				{ 11,   3000895 }, -- Warrior / DD
+				{ 13,   3000898 }, -- Deathknight / Prot
+				{ 14,   3000897 }, -- Deathknight / DD
+				{ 16,   3000883 }, -- Mage
+				{ 18,   3000887 }, -- Druid / Heal
+				{ 19,   3000888 }, -- Druid / Owl
+				{ 20,   3000889 }, -- Druid / Feral
+				{ 22,   3000892 }, -- Shaman / Heal
+				{ 23,   3000893 }, -- Shaman / Ele
+				{ 24,   3000894 }, -- Shaman / Enh
+				{ 26,   3000899 }, -- Paladin / Heal
+				{ 27,   3000901 }, -- Paladin / Prot
+				{ 28,   3000900 }, -- Paladin / DD
+			},
+			[T10_1_DIFF] = {
+				{ 1,    3250884 }, -- Warlock
+				{ 3,    3250885 }, -- Priest / Heal
+				{ 4,    3250886 }, -- Priest / Shadow
+				{ 6,    3250890 }, -- Rogue
+				{ 8,    3250891 }, -- Hunter
+				{ 10,   3250896 }, -- Warrior / Prot
+				{ 11,   3250895 }, -- Warrior / DD
+				{ 13,   3250898 }, -- Deathknight / Prot
+				{ 14,   3250897 }, -- Deathknight / DD
+				{ 16,   3250883 }, -- Mage
+				{ 18,   3250887 }, -- Druid / Heal
+				{ 19,   3250888 }, -- Druid / Owl
+				{ 20,   3250889 }, -- Druid / Feral
+				{ 22,   3250892 }, -- Shaman / Heal
+				{ 23,   3250893 }, -- Shaman / Ele
+				{ 24,   3250894 }, -- Shaman / Enh
+				{ 26,   3250899 }, -- Paladin / Heal
+				{ 27,   3250901 }, -- Paladin / Prot
+				{ 28,   3250900 }, -- Paladin / DD
+			},
+			[T10_2_DIFF] = {
+				{ 1,    3251884 }, -- Warlock
+				{ 3,    3251885 }, -- Priest / Heal
+				{ 4,    3251886 }, -- Priest / Shadow
+				{ 6,    3251890 }, -- Rogue
+				{ 8,    3251891 }, -- Hunter
+				{ 10,   3251896 }, -- Warrior / Prot
+				{ 11,   3251895 }, -- Warrior / DD
+				{ 13,   3251898 }, -- Deathknight / Prot
+				{ 14,   3251897 }, -- Deathknight / DD
+				{ 16,   3251883 }, -- Mage
+				{ 18,   3251887 }, -- Druid / Heal
+				{ 19,   3251888 }, -- Druid / Owl
+				{ 20,   3251889 }, -- Druid / Feral
+				{ 22,   3251892 }, -- Shaman / Heal
+				{ 23,   3251893 }, -- Shaman / Ele
+				{ 24,   3251894 }, -- Shaman / Enh
+				{ 26,   3251899 }, -- Paladin / Heal
+				{ 27,   3251901 }, -- Paladin / Prot
+				{ 28,   3251900 }, -- Paladin / DD
+			},
+		}),
 	},
 }
 
@@ -333,8 +533,7 @@ data["DungeonSets"] = {
 				{ 24, 516 }, -- Paladin
 			},
 		},
---@version-bcc@
-		{ -- T0.5 / D2
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { -- T0.5 / D2
 			name = format(AL["Dungeon Set %s"], "3"),
 			[NORMAL_DIFF] = {
 				{ 1, 658 },
@@ -351,8 +550,7 @@ data["DungeonSets"] = {
 				{ 21, 661 },
 				{ 22, 653 },
 			},
-		},
---@end-version-bcc@
+		}),
 	}
 }
 
@@ -361,6 +559,7 @@ data["ZGSets"] = {
 	ContentType = SET_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	ContentPhase = 4,
 	items = {
 		{
@@ -402,6 +601,7 @@ data["AQSets"] = {
 	ContentType = SET_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	ContentPhase = 5,
 	items = {
 		{ -- AQ20
@@ -448,6 +648,7 @@ data["MiscSets"] = {
 	ContentType = SET_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = SET_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- Cloth
 			name = ALIL["Cloth"],
@@ -514,76 +715,13 @@ data["MiscSets"] = {
 	},
 }
 
---@version-bcc@
-data["WorldEpicsBCC"] = {
-	name = AL["World Epics"],
-	ContentType = COLLECTIONS_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	CorrespondingFields = {
-		[1] = "WorldEpics",
-	},
-	items = {
-		{
-			name = AL["One-Handed Weapons"],
-			[NORMAL_ITTYPE] = {
-				{ 1, 31331 }, -- The Night Blade
-				{ 3, 31332 }, -- Blinkstrike
-				{ 16, 31336 }, -- Blade of Wizardry
-				{ 18, 31342 }, -- The Ancient Scepter of Sue-Min
-			}
-		},
-		{
-			name = AL["Two-Handed Weapons"],
-			[NORMAL_ITTYPE] = {
-				{ 1, 31318 }, -- Singing Crystal Axe
-				{ 16, 31322 }, -- The Hammer of Destiny
-				{ 18, 31334 }, -- Staff of Natural Fury
-			}
-		},
-		{
-			name = AL["Ranged Weapons"],
-			[NORMAL_ITTYPE] = {
-				{ 1, 31323 }, -- Don Santos' Famous Hunting Rifle
-				{ 16, 34622 }, -- Spinesever
-			}
-		},
-		{
-			name = ALIL["Trinket"].." & "..ALIL["Finger"].." & "..ALIL["Neck"],
-			[NORMAL_ITTYPE] = {
-				{ 1, 31339 }, -- Lola's Eve
-				{ 3, 31319 }, -- Band of Impenetrable Defenses
-				{ 4, 31326 }, -- Truestrike Ring
-				{ 16, 31338 }, -- Charlotte's Ivy
-				{ 18, 31321 }, -- Choker of Repentance
-			}
-		},
-		{
-			name = AL["Equip"],
-			[NORMAL_ITTYPE] = {
-				{ 1, 31329 }, -- Lifegiving Cloak
-				{ 3, 31340 }, -- Will of Edward the Odd
-				{ 4, 31343 }, -- Kamaei's Cerulean Skirt
-				{ 6, 31333 }, -- The Night Watchman
-				{ 7, 31335 }, -- Pants of Living Growth
-				{ 18, 31330 }, -- Lightning Crown
-				{ 19, 31328 }, -- Leggings of Beast Mastery
-				{ 21, 31320 }, -- Chestguard of Exile
-			},
-		},
-	},
-}
---@end-version-bcc@
 data["WorldEpics"] = {
 	name = AL["World Epics"],
 	ContentType = COLLECTIONS_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
-	gameVersion = 1,
-	CorrespondingFields = {
-		[2] = "WorldEpicsBCC",
-	},
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.WORLD_EPICS,
 	items = {
 		{
 			name = AL["One-Handed Weapons"],
@@ -690,6 +828,8 @@ data["Mounts"] = {
 	ContentType = COLLECTIONS_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.MOUNTS,
 	items = {
 		{
 			name = AL["Faction Mounts"],
@@ -720,21 +860,6 @@ data["Mounts"] = {
 				{ 116,  8632 }, -- Reins of the Spotted Frostsaber
 				{ 117,  8631 }, -- Reins of the Striped Frostsaber
 				{ 118,  8629 }, -- Reins of the Striped Nightsaber
-			--@version-bcc@
-				{ 105, 29745 }, -- Great Blue Elekk
-				{ 106, 29746 }, -- Great Green Elekk
-				{ 107, 29747 }, -- Great Purple Elekk
-				{ 120, 28481 }, -- Brown Elekk
-				{ 121, 29743 }, -- Purple Elekk
-				{ 122, 29744 }, -- Gray Elekk
-				{ 109, 25527 }, -- Swift Red Gryphon
-				{ 110, 25528 }, -- Swift Green Gryphon
-				{ 111, 25529 }, -- Swift Purple Gryphon
-				{ 112, 25473 }, -- Swift Blue Gryphon
-				{ 124, 25470 }, -- Golden Gryphon
-				{ 125, 25471 }, -- Ebon Gryphon
-				{ 126, 25472 }, -- Snowy Gryphon
-			--@end-version-bcc@
 			},
 			[HORDE_DIFF] = {
 				{ 1,  18798 }, -- Horn of the Swift Gray Wolf
@@ -759,22 +884,6 @@ data["Mounts"] = {
 				{ 28,  13333 }, -- Brown Skeletal Horse
 				{ 29,  13332 }, -- Blue Skeletal Horse
 				{ 30,  13331 }, -- Red Skeletal Horse
-			-- @version-bcc@
-				{ 101, 29223 }, -- Swift Green Hawkstrider
-				{ 102, 29224 }, -- Swift Purple Hawkstrider
-				{ 103, 28936 }, -- Swift Pink Hawkstrider
-				{ 116, 29220 }, -- Blue Hawkstrider
-				{ 117, 29221 }, -- Black Hawkstrider
-				{ 118, 29222 }, -- Purple Hawkstrider
-				{ 119, 28927 }, -- Red Hawkstrider
-				{ 106, 25531 }, -- Swift Green Windrider
-				{ 107, 25532 }, -- Swift Yellow Windrider
-				{ 108, 25533 }, -- Swift Purple Windrider
-				{ 109, 25477 }, -- Swift Red Windrider
-				{ 121, 25474 }, -- Tawny Windrider
-				{ 122, 25475 }, -- Blue Windrider
-				{ 123, 25476 }, -- Green Windrider
-			--@end-version-bcc@
 			},
 		},
 		{ -- PvPMountsPvP
@@ -785,15 +894,6 @@ data["Mounts"] = {
 				{ 4,  GetForVersion(18243,29465) }, -- Black Battlestrider
 				{ 5,  GetForVersion(18241,29468) }, -- Black War Steed Bridle
 				{ 6,  GetForVersion(18242,29471) }, -- Reins of the Black War Tiger
---@version-bcc@
-				{ 7,  35906 }, -- Reins of the Black War Elekk
-				{ 9,  29228 }, -- Reins of the Dark War Talbuk
-				{ 10,  28915 }, -- Reins of the Dark Riding Talbuk
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
---@end-version-bcc@
 			},
 			[HORDE_DIFF] = {
 				{ 1, 19029 }, -- Horn of the Frostwolf Howler
@@ -801,121 +901,27 @@ data["Mounts"] = {
 				{ 4, GetForVersion(18247,29466) }, -- Black War Kodo
 				{ 5, GetForVersion(18246,29472) }, -- Whistle of the Black War Raptor
 				{ 6, GetForVersion(18248,29470) }, -- Red Skeletal Warhorse
---@version-bcc@
-				{ 7, 34129 }, -- Swift Warstrider
-				{ 9, 29228 }, -- Reins of the Dark War Talbuk
-				{ 10,  28915 }, -- Reins of the Dark Riding Talbuk
-				{ 16,  30609 }, -- Swift Nether Drake
-				{ 17,  34092 }, -- Merciless Nether Drake
-				{ 18,  37676 }, -- Vengeful Nether Drake
-				{ 19,  43516 }, -- Brutal Nether Drake
---@end-version-bcc@
 			},
 		},
-		{
+		{ -- Drops
 			name = AL["Drops"],
 			[NORMAL_DIFF] = {
 				{ 1, 13335 }, -- Deathcharger's Reins
 				{ 3, 19872 }, -- Swift Razzashi Raptor
 				{ 5, 19902 }, -- Swift Zulian Tiger
---@version-bcc@
-				{ 7, 32768 }, -- Reins of the Raven Lord
-				{ 9, 33809 }, -- Amani War Bear
-				{ 16, 30480 }, -- Fiery Warhorse's Reins
-				{ 18, 32458 }, -- Ashes of Al'ar
---@end-version-bcc@
 			},
 		},
-		{
+		{ -- Reputation
 			name = AL["Reputation"],
 			[ALLIANCE_DIFF] = {
 				{ 1, 13086 }, -- Reins of the Winterspring Frostsaber
---@version-bcc@
-				{ 3, 29227 }, -- Reins of the Cobalt War Talbuk
-				{ 4, 29229 }, -- Reins of the Silver War Talbuk
-				{ 5, 29230 }, -- Reins of the Tan War Talbuk
-				{ 6, 29231 }, -- Reins of the White War Talbuk
-				{ 7, 31830 }, -- Reins of the Cobalt Riding Talbuk
-				{ 8, 31832 }, -- Reins of the Silver Riding Talbuk
-				{ 9, 31834 }, -- Reins of the Tan Riding Talbuk
-				{ 10, 31836 }, -- Reins of the White Riding Talbuk
-				{ 16, 33999 }, -- Cenarion War Hippogryph
-				{ 18, 32319 }, -- Blue Riding Nether Ray
-				{ 19, 32314 }, -- Green Riding Nether Ray
-                { 20, 32317 }, -- Red Riding Nether Ray
-                { 21, 32316 }, -- Purple Riding Nether Ray
-                { 22, 32318 }, -- Silver Riding Nether Ray
-				{ 24, 32858 }, -- Reins of the Azure Netherwing Drake
-                { 25, 32859 }, -- Reins of the Cobalt Netherwing Drake
-                { 26, 32857 }, -- Reins of the Onyx Netherwing Drake
-                { 27, 32860 }, -- Reins of the Purple Netherwing Drake
-                { 28, 32861 }, -- Reins of the Veridian Netherwing Drake
-                { 29, 32862 }, -- Reins of the Violet Netherwing Drake
---@end-version-bcc@
-			},
---@version-bcc@
-			[HORDE_DIFF] = {
-				{ 1, 29102 }, -- Reins of the Cobalt War Talbuk
-				{ 2, 29104 }, -- Reins of the Silver War Talbuk
-				{ 3, 29105 }, -- Reins of the Tan War Talbuk
-				{ 4, 29103 }, -- Reins of the White War Talbuk
-				{ 5, 31829 }, -- Reins of the Cobalt Riding Talbuk
-				{ 6, 31831 }, -- Reins of the Silver Riding Talbuk
-				{ 7, 31833 }, -- Reins of the Tan Riding Talbuk
-				{ 8, 31835 }, -- Reins of the White Riding Talbuk
-				{ 9, 31836 }, -- Reins of the White Riding Talbuk
-				{ 16, 33999 }, -- Cenarion War Hippogryph
-				{ 18, 32319 }, -- Blue Riding Nether Ray
-				{ 19, 32314 }, -- Green Riding Nether Ray
-                { 20, 32317 }, -- Red Riding Nether Ray
-                { 21, 32316 }, -- Purple Riding Nether Ray
-                { 22, 32318 }, -- Silver Riding Nether Ray
-				{ 24, 32858 }, -- Reins of the Azure Netherwing Drake
-                { 25, 32859 }, -- Reins of the Cobalt Netherwing Drake
-                { 26, 32857 }, -- Reins of the Onyx Netherwing Drake
-                { 27, 32860 }, -- Reins of the Purple Netherwing Drake
-                { 28, 32861 }, -- Reins of the Veridian Netherwing Drake
-                { 29, 32862 }, -- Reins of the Violet Netherwing Drake
-
-			},
---@end-version-bcc@
+			}
 		},
---@version-bcc@
-		{
-			name = AL["World Events"],
-			[NORMAL_DIFF] = {
-				{ 1, 37828 }, -- Great Brewfest Kodo
-				{ 2, 33977 }, -- Swift Brewfest Ram
-				{ 3, 33976 }, -- Brewfest Ram
-				{ 5, 37012 }, -- The Horseman's Reins
-				{ 16, 33182 }, -- Swift Flying Broom
-				{ 17, 33184 }, -- Swift Magic Broom
-				{ 18, 33176 }, -- Flying Broom
-				{ 19, 37011 }, -- Magic Broom
-				{ 20, 33183 }, -- Old Magic Broom
-				{ 21, 33189 }, -- Rickety Magic Broom
-			},
-		},
-		{
-			name = AL["Crafting"],
-			[NORMAL_DIFF] = {
-				{ 1, 34061 }, -- Turbo-Charged Flying Machine Control
-				{ 2, 34060 }, -- Flying Machine Control
-			},
-		},
---@end-version-bcc@
 		{
 			name = ALIL["Special"],
 			[NORMAL_DIFF] = {
 				{ 1, 21176 }, -- Black Qiraji Resonating Crystal
 				{ 3, 23720 }, -- Riding Turtle
---@version-bcc@
-				{ 5, 33225 }, -- Reins of the Swift Spectral Tiger
-				{ 6, 33224 }, -- Reins of the Spectral Tiger
-				{ 8, 38576 }, -- Big Battle Bear
-				{ 16, 35226 }, -- X-51 Nether-Rocket X-TREME
-				{ 17, 35225 }, -- X-51 Nether-Rocket
---@end-version-bcc@
 			},
 		},
 		{ -- AQ40
@@ -930,87 +936,193 @@ data["Mounts"] = {
 	},
 }
 
+data["Companions"] = {
+	name = ALIL["Companions"],
+	ContentType = COLLECTIONS_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.COMPANIONS,
+	items = {
+		{
+			name = AL["Crafting"],
+			[NORMAL_DIFF] = {
+				{ 1, 15996 }, -- Lifelike Mechanical Toad
+				{ 2, 11826 }, -- Lil' Smoky
+				{ 3, 4401 }, -- Mechanical Squirrel Box
+				{ 4, 11825 }, -- Pet Bombling
+				{ 5, 21277 }, -- Tranquil Mechanical Yeti
+			},
+		},
+		{
+			name = AL["Drops"],
+			[NORMAL_DIFF] = {
+				{ 1, 8494 }, -- Parrot Cage (Hyacinth Macaw)
+				{ 2, 8492 }, -- Parrot Cage (Green Wing Macaw)
+				{ 4, 8498 }, -- Tiny Emerald Whelpling
+				{ 5, 8499 }, -- Tiny Crimson Whelpling
+				{ 6, 10822 }, -- Dark Whelpling
+				{ 8, 8490 }, -- Cat Carrier (Siamese)
+				{ 9, 8491 }, -- Cat Carrier (Black Tabby)
+				{ 16, 20769 }, -- Disgusting Oozeling
+				{ 17, 11110 }, -- Chicken Egg
+			},
+		},
+		{
+			name = AL["Quest"],
+			[NORMAL_DIFF] = {
+				{ 1, 12264 }, -- Worg Carrier
+				{ 2, 11474 }, -- Sprite Darter Egg
+				{ 3, 12529 }, -- Smolderweb Carrier
+				{ 4, 10398 }, -- Mechanical Chicken
+			},
+		},
+		{
+			name = AL["Vendor"],
+			[NORMAL_DIFF] = {
+				{ 1, 11023 }, -- Ancona Chicken
+				{ 2, 10393 }, -- Cockroach
+				{ 3, 10394 }, -- Prairie Dog Whistle
+				{ 4, 10392 }, -- Crimson Snake
+				{ 5, 8497 }, -- Rabbit Crate (Snowshoe)
+				{ 7, 10360 }, -- Black Kingsnake
+				{ 8, 10361 }, -- Brown Snake
+				{ 10, 8500 }, -- Great Horned Owl
+				{ 11, 8501 }, -- Hawk Owl
+				{ 16, 8485 }, -- Cat Carrier (Bombay)
+				{ 17, 8486 }, -- Cat Carrier (Cornish Rex)
+				{ 18, 8487 }, -- Cat Carrier (Orange Tabby)
+				{ 19, 8490 }, -- Cat Carrier (Siamese)
+				{ 20, 8488 }, -- Cat Carrier (Silver Tabby)
+				{ 21, 8489 }, -- Cat Carrier (White Kitten)
+				{ 23, 8496 }, -- Parrot Cage (Cockatiel)
+				{ 24, 8495 }, -- Parrot Cage (Senegal)
+				{ 26, 11026 }, -- Tree Frog Box
+				{ 27, 11027 }, -- Wood Frog Box
+			},
+		},
+		{
+			name = AL["World Events"],
+			[NORMAL_DIFF] = {
+				{ 1, 21305 }, -- Red Helper Box
+				{ 2, 21301 }, -- Green Helper Box
+				{ 3, 21308 }, -- Jingling Bell
+				{ 4, 21309 }, -- Snowman Kit
+				{ 16, 22235 }, -- Truesilver Shafted Arrow
+				{ 18, 23083 }, -- Captured Flame
+				{ 20, 23015 }, -- Rat Cage
+				{ 21, 22781 }, -- Polar Bear Collar
+				{ 22, 23007 }, -- Piglet's Collar
+				{ 23, 23002 }, -- Turtle Box
+			},
+		},
+		{ -- Unobtainable
+			name = AL["Unobtainable"],
+			[NORMAL_DIFF] = {
+				{ 1, 13582 }, -- Zergling Leash
+				{ 2, 13584 }, -- Diablo Stone
+				{ 3, 13583 }, -- Panda Collar
+				{ 16, 22780 }, -- White Murloc Egg
+				{ 17, 22114 }, -- Pink Murloc Egg
+				{ 18, 20651 }, -- Orange Murloc Egg
+				{ 19, 20371 }, -- Blue Murloc Egg
+			},
+		},
+	},
+}
+
 data["Tabards"] = {
 	name = ALIL["Tabard"],
 	ContentType = COLLECTIONS_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.TABARDS,
 	items = {
 		{
 			name = ALIL["Tabard"],
+			[NORMAL_DIFF] = {
+				{ 1, 23192 }, -- Tabard of the Scarlet Crusade
+			},
+		},
+		{ -- Faction
+			name = AL["Capitals"],
+			CoinTexture = "Reputation",
 			[ALLIANCE_DIFF] = {
-				{ 1,  15196 }, -- Private's Tabard
-				{ 2,  15198 }, -- Knight's Colors
-				{ 3,  19506 }, -- Silverwing Battle Tabard
-				{ 4,  20132 }, -- Arathor Battle Tabard
-				{ 5,  19032 }, -- Stormpike Battle Tabard
-				{ 16,  19160 }, -- Contest Winner's Tabard
-				{ 17,  22999 }, -- Tabard of the Agent Dawn
-				{ 18, 23192 }, -- Tabard of the Scarlet Crusade
-				{ 19, 23705 }, -- Tabard of Flame
-				{ 20, 23709 }, -- Tabard of Frost
---@version-bcc@
-				{ 22, 28788 }, -- Tabard of the Protector
---@end-version-bcc@
+				{ 1, 45579 },	-- Darnassus Tabard
+				{ 2, 45577 },	-- Ironforge Tabard
+				{ 3, 45578 },	-- Gnomeregan Tabard
+				{ 4, 45574 },	-- Stormwind Tabard
+				{ 16, 45580 },	-- Exodar Tabard
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 17, 64882 }),	-- Gilneas Tabard
 			},
 			[HORDE_DIFF] = {
-				GetItemsFromDiff = ALLIANCE_DIFF,
-				{ 1, 15197 }, -- Scout's Tabard
-				{ 2, 15199 }, -- Stone Guard's Herald
-				{ 3, 19505 }, -- Warsong Battle Tabard
-				{ 4, 20131 }, -- Battle Tabard of the Defilers
-				{ 5, 19031 }, -- Frostwolf Battle Tabard
+				{ 1, 45582 },	-- Darkspear Tabard
+				{ 2, 45581 },	-- Orgrimmar Tabard
+				{ 3, 45584 },	-- Thunder Bluff Tabard
+				{ 4, 45583 },	-- Undercity Tabard
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 16, 45585 }),	-- Silvermoon City Tabard
+			},
+		},
+		{
+			name = format("%s - %s", AL["Factions"], AL["Classic"]),
+			CoinTexture = "Reputation",
+			[NORMAL_DIFF] = {
+				{ 1, 43154 }, -- Tabard of the Argent Crusade
+			},
+		},
+		{ -- PvP
+			name = AL["PvP"],
+			[ALLIANCE_DIFF] = {
+				{ 1, 15196 },	-- Private's Tabard
+				{ 2, 15198 },	-- Knight's Colors
+				{ 16, 19506 },	-- Silverwing Battle Tabard
+				{ 17, 19032 },	-- Stormpike Battle Tabard
+				{ 18, 20132 },	-- Arathor Battle Tabard
+			},
+			[HORDE_DIFF] = {
+				{ 1, 15197 },	-- Scout's Tabard
+				{ 2, 15199 },	-- Stone Guard's Herald
+				{ 16, 19505 },	-- Warsong Battle Tabard
+				{ 17, 19031 },	-- Frostwolf Battle Tabard
+				{ 18, 20131 },	-- Battle Tabard of the Defilers
+			},
+		},
+		{ -- PvP
+			name = AL["Arena"],
+			[NORMAL_DIFF] = {
+				{ 1, 45983 },	-- Furious Gladiator's Tabard
+				{ 2, 49086, },	-- Relentless Gladiator's Tabard
+				{ 3, 51534 },	-- Wrathful Gladiator's Tabard
+			},
+		},
+		{ -- Unobtainable Tabards
+			name = AL["Unobtainable"],
+			[NORMAL_DIFF] = {
+				{ 1, 19160 },	-- Contest Winner's Tabard
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 3, 36941 }), -- Competitor's Tabard
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 5, 28788 }), -- Tabard of the Protector
+				{ 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
+				{ 17, 38312 },	-- Tabard of Brilliance
+				{ 18, 23705 },	-- Tabard of Flame
+				{ 19, 23709 },	-- Tabard of Frost
+				{ 20, 38313 },	-- Tabard of Fury
+				{ 21, 38309 },	-- Tabard of Nature
+				{ 22, 38310 },	-- Tabard of the Arcane
+				{ 23, 38314 },	-- Tabard of the Defender
+				{ 24, 38311 },	-- Tabard of the Void
 			},
 		},
 	},
 }
-
---@version-bcc@
-data["LegendarysBCC"] = {
-	name = AL["Legendarys"],
-	ContentType = COLLECTIONS_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	CorrespondingFields = {
-		[1] = "Legendarys",
-	},
-	items = {
-		{
-			name = AL["Legendarys"],
-			[NORMAL_ITTYPE] = {
-				{ 1,  34334 }, -- Thori'dal, the Stars' Fury
-
-				{ 16,  32837 }, -- Warglaive of Azzinoth
-				{ 17,  32838 }, -- Warglaive of Azzinoth
-			},
-		},
-		{
-			MapID = 3845,
-			[NORMAL_ITTYPE] = {
-				{ 1,  30312 }, -- Infinity Blade
-				{ 2,  30311 }, -- Warp Slicer
-				{ 3,  30317 }, -- Cosmic Infuser
-				{ 4,  30316 }, -- Devastation
-				{ 5,  30313 }, -- Staff of Disintegration
-				{ 6,  30314 }, -- Phaseshift Bulwark
-				{ 7,  30318 }, -- Netherstrand Longbow
-				{ 8,  30319 }, -- Nether Spike
-			},
-		},
-	},
-}
---@end-version-bcc@
 
 data["Legendarys"] = {
 	name = AL["Legendarys"],
 	ContentType = COLLECTIONS_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	TableType = NORMAL_ITTYPE,
-	gameVersion = 1,
-	CorrespondingFields = {
-		[2] = "LegendarysBCC",
-	},
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.LEGENDARYS,
 	items = {
 		{
 			name = AL["Legendarys"],
@@ -1055,11 +1167,63 @@ data["Legendarys"] = {
 	},
 }
 
+data["Darkmoon"] = {
+	FactionID = 909,
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 3,
+	items = {
+		{ -- Exalted
+			name = GetFactionInfoByID(909),
+			[NORMAL_DIFF] = {
+				{ 1,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
+				{ 2,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
+				{ 4,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton
+				{ 5,  19291, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Darkmoon Storage Box
+				{ 7,  9249, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Schematic: Steam Tonk Controller
+				{ 8,  19296, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Greater Darkmoon Prize
+				{ 10,  19297, 19182, [ATLASLOOT_IT_AMOUNT2] = 12 }, -- Lesser Darkmoon Prize
+				{ 12,  19292, 19182, [ATLASLOOT_IT_AMOUNT2] = 10 }, -- Last Month's Mutton
+				{ 14,  19298, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Minor Darkmoon Prize
+				{ 15,  19295, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Darkmoon Flower
+			},
+		},
+		{
+			name = AL["Classic"],
+			[NORMAL_DIFF] = {
+				{ 1,  19228 }, -- Darkmoon Card: Blue Dragon
+				{ 2,  19267 }, -- Darkmoon Card: Maelstrom
+				{ 3,  19257 }, -- Darkmoon Card: Heroism
+				{ 4,  19277 }, -- Darkmoon Card: Twisting Nether
+			},
+		},
+		AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, {
+			name = AL["BC"],
+			[NORMAL_DIFF] = {
+				{ 1,  31907 }, -- Darkmoon Card: Vengeance
+				{ 2,  31890 }, -- Darkmoon Card: Crusade
+				{ 3,  31891 }, -- Darkmoon Card: Wrath
+				{ 4,  31914 }, -- Darkmoon Card: Madness
+			},
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
+			name = AL["Wrath"],
+			[NORMAL_DIFF] = {
+				{ 1, 44276 },	-- Chaos Deck
+				{ 2, 44259 },	-- Prisms Deck
+				{ 3, 44294 },	-- Undeath Deck
+				{ 4, 44326 },	-- Nobles Deck
+			},
+		}),
+	},
+}
+
 data["GurubashiArena"] = {
 	name = AL["Gurubashi Arena"],
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- GurubashiArena
 			name = AL["Gurubashi Arena"],
@@ -1100,19 +1264,69 @@ data["FishingExtravaganza"] = {
 	},
 }
 
-data["ChildrensWeek"] = {
-	name = AL["Childrens Week"],
+data["LunarFestival"] = {
+	name = AL["Lunar Festival"],
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	items = {
-		{ -- ChildrensWeek
-			name = AL["Childrens Week"],
+		{ -- LunarFestival1
+			name = AL["Lunar Festival"],
 			[NORMAL_DIFF] = {
-				{ 1,  23007 }, -- Piglet's Collar
-				{ 2,  23015 }, -- Rat Cage
-				{ 3,  23002 }, -- Turtle Box
-				{ 4,  23022 }, -- Curmudgeon's Payoff
+				{ 1,  21100 }, -- Coin of Ancestry
+				{ 3,  21157 }, -- Festive Green Dress
+				{ 4,  21538 }, -- Festive Pink Dress
+				{ 5,  21539 }, -- Festive Purple Dress
+				{ 6,  21541 }, -- Festive Black Pant Suit
+				{ 7,  21544 }, -- Festive Blue Pant Suit
+				{ 8,  21543 }, -- Festive Teal Pant Suit
+			},
+		},
+		{
+			name = AL["Lunar Festival Fireworks Pack"],
+			[NORMAL_DIFF] = {
+				{ 1, 21558 }, -- Small Blue Rocket
+				{ 2, 21559 }, -- Small Green Rocket
+				{ 3, 21557 }, -- Small Red Rocket
+				{ 4, 21561 }, -- Small White Rocket
+				{ 5, 21562 }, -- Small Yellow Rocket
+				{ 7, 21537 }, -- Festival Dumplings
+				{ 8, 21713 }, -- Elune's Candle
+				{ 16, 21589 }, -- Large Blue Rocket
+				{ 17, 21590 }, -- Large Green Rocket
+				{ 18, 21592 }, -- Large Red Rocket
+				{ 19, 21593 }, -- Large White Rocket
+				{ 20, 21595 }, -- Large Yellow Rocket
+			}
+		},
+		{
+			name = AL["Lucky Red Envelope"],
+			[NORMAL_DIFF] = {
+				{ 1, 21540 }, -- Elune's Lantern
+				{ 2, 21536 }, -- Elune Stone
+				{ 16, 21744 }, -- Lucky Rocket Cluster
+				{ 17, 21745 }, -- Elder's Moonstone
+			}
+		},
+		{ -- LunarFestival2
+			name = AL["Plans"],
+			[NORMAL_DIFF] = {
+				{ 1,  21722 }, -- Pattern: Festival Dress
+				{ 3,  21738 }, -- Schematic: Firework Launcher
+				{ 5,  21724 }, -- Schematic: Small Blue Rocket
+				{ 6,  21725 }, -- Schematic: Small Green Rocket
+				{ 7,  21726 }, -- Schematic: Small Red Rocket
+				{ 9, 21727 }, -- Schematic: Large Blue Rocket
+				{ 10, 21728 }, -- Schematic: Large Green Rocket
+				{ 11, 21729 }, -- Schematic: Large Red Rocket
+				{ 16, 21723 }, -- Pattern: Festive Red Pant Suit
+				{ 18, 21737 }, -- Schematic: Cluster Launcher
+				{ 20, 21730 }, -- Schematic: Blue Rocket Cluster
+				{ 21, 21731 }, -- Schematic: Green Rocket Cluster
+				{ 22, 21732 }, -- Schematic: Red Rocket Cluster
+				{ 24, 21733 }, -- Schematic: Large Blue Rocket Cluster
+				{ 25, 21734 }, -- Schematic: Large Green Rocket Cluster
+				{ 26, 21735 }, -- Schematic: Large Red Rocket Cluster
 			},
 		},
 	},
@@ -1123,6 +1337,7 @@ data["Valentineday"] = {
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- Valentineday
 			name = AL["Love is in the Air"],
@@ -1150,13 +1365,98 @@ data["Valentineday"] = {
 		},
 	},
 }
+data["Noblegarden"] = {
+	name = AL["Noblegarden"],
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	items = {
+		{ -- Noblegarden
+			name = AL["Brightly Colored Egg"],
+			[NORMAL_DIFF] = {
+				{ 1,  19028 }, -- Elegant Dress
+				{ 2,  6833 }, -- White Tuxedo Shirt
+				{ 3,  6835 }, -- Black Tuxedo Pants
+				{ 16,  7807 }, -- Candy Bar
+				{ 17,  7808 }, -- Chocolate Square
+				{ 18,  7806 }, -- Lollipop
+			},
+		},
+	},
+}
+
+data["ChildrensWeek"] = {
+	name = AL["Childrens Week"],
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{ -- ChildrensWeek
+			name = AL["Childrens Week"],
+			[NORMAL_DIFF] = {
+				{ 1,  23007 }, -- Piglet's Collar
+				{ 2,  23015 }, -- Rat Cage
+				{ 3,  23002 }, -- Turtle Box
+				{ 4,  23022 }, -- Curmudgeon's Payoff
+			},
+		},
+	},
+}
+
+data["MidsummerFestival"] = {
+	name = AL["Midsummer Festival"],
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{ -- MidsummerFestival
+			name = AL["Midsummer Festival"],
+			[NORMAL_DIFF] = {
+				{ 1,  23379 }, -- Cinder Bracers
+				{ 3,  23323 }, -- Crown of the Fire Festival
+				{ 4,  23324 }, -- Mantle of the Fire Festival
+				{ 6,  23083 }, -- Captured Flame
+				{ 7,  23247 }, -- Burning Blossom
+				{ 8,  23246 }, -- Fiery Festival Brew
+				{ 9,  23435 }, -- Elderberry Pie
+				{ 10, 23327 }, -- Fire-toasted Bun
+				{ 11, 23326 }, -- Midsummer Sausage
+				{ 12, 23211 }, -- Toasted Smorc
+			},
+		},
+	},
+}
+
+data["HarvestFestival"] = {
+	name = AL["Harvest Festival"],
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	items = {
+		{ -- HarvestFestival
+			name = AL["Harvest Festival"],
+			[NORMAL_DIFF] = {
+				{ 1,  19697 }, -- Bounty of the Harvest
+				{ 2,  20009 }, -- For the Light!
+				{ 3,  20010 }, -- The Horde's Hellscream
+				{ 16,  19995 }, -- Harvest Boar
+				{ 17,  19996 }, -- Harvest Fish
+				{ 18,  19994 }, -- Harvest Fruit
+				{ 19,  19997 }, -- Harvest Nectar
+			},
+		},
+	},
+}
 
 data["Halloween"] = {
 	name = AL["Hallow's End"],
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
-	gameVersion = 1,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.HALLOWEEN,
 	items = {
 		{ -- Halloween1
 			name = AL["Hallow's End"].." - "..AL["Misc"],
@@ -1205,84 +1505,6 @@ data["Halloween"] = {
 				{ 23, 20574 }, -- Flimsy Female Undead Mask
 			},
 		},
-	},
-}
-
-data["HalloweenTBC"] = {
-	name = AL["Hallow's End"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	items = {
-		{ -- Halloween1
-			name = AL["Hallow's End"].." - "..AL["Misc"],
-			[NORMAL_DIFF] = {
-				{ 1,  20400 }, -- Pumpkin Bag
-				{ 3,  18633 }, -- Styleen's Sour Suckerpop
-				{ 4,  18632 }, -- Moonbrook Riot Taffy
-				{ 5,  18635 }, -- Bellara's Nutterbar
-				{ 6,  20557 }, -- Hallow's End Pumpkin Treat
-				{ 8,  20389 }, -- Candy Corn
-				{ 9,  20388 }, -- Lollipop
-				{ 10, 20390 }, -- Candy Bar
-			},
-		},
-		{ -- Halloween1
-			name = AL["Hallow's End"].." - "..AL["Wands"],
-			[NORMAL_DIFF] = {
-				{ 1, 20410 }, -- Hallowed Wand - Bat
-				{ 2, 20409 }, -- Hallowed Wand - Ghost
-				{ 3, 20399 }, -- Hallowed Wand - Leper Gnome
-				{ 4, 20398 }, -- Hallowed Wand - Ninja
-				{ 5, 20397 }, -- Hallowed Wand - Pirate
-				{ 6, 20413 }, -- Hallowed Wand - Random
-				{ 7, 20411 }, -- Hallowed Wand - Skeleton
-				{ 8, 20414 }, -- Hallowed Wand - Wisp
-			},
-		},
-		{ -- Halloween3
-			name = AL["Hallow's End"].." - "..AL["Masks"],
-			[NORMAL_DIFF] = {
-				{ 1,  20561 }, -- Flimsy Male Dwarf Mask
-				{ 2,  20391 }, -- Flimsy Male Gnome Mask
-				{ 3,  20566 }, -- Flimsy Male Human Mask
-				{ 4,  20564 }, -- Flimsy Male Nightelf Mask
-				{ 5,  20570 }, -- Flimsy Male Orc Mask
-				{ 6,  20572 }, -- Flimsy Male Tauren Mask
-				{ 7,  20568 }, -- Flimsy Male Troll Mask
-				{ 8,  20573 }, -- Flimsy Male Undead Mask
-				{ 16, 20562 }, -- Flimsy Female Dwarf Mask
-				{ 17, 20392 }, -- Flimsy Female Gnome Mask
-				{ 18, 20565 }, -- Flimsy Female Human Mask
-				{ 19, 20563 }, -- Flimsy Female Nightelf Mask
-				{ 20, 20569 }, -- Flimsy Female Orc Mask
-				{ 21, 20571 }, -- Flimsy Female Tauren Mask
-				{ 22, 20567 }, -- Flimsy Female Troll Mask
-				{ 23, 20574 }, -- Flimsy Female Undead Mask
-			},
-		},
---@version-bcc@
-		{ -- SMHeadlessHorseman
-			name = C_Map_GetAreaInfo(796).." - "..AL["Graveyard - Headless Horseman"],
-			[NORMAL_DIFF] = {
-                { 1, 34075 }, -- Ring of Ghoulish Delight
-                { 2, 34073 }, -- The Horseman's Signet Ring
-                { 3, 34074 }, -- Witches Band
-                { 5, 33808 }, -- The Horseman's Helm
-                { 6, 38175 }, -- The Horseman's Blade
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 33182 }, -- Swift Flying Broom        280% flying
-                { 19, 33176 }, -- Flying Broom              60% flying
-                { 21, 33184 }, -- Swift Magic Broom         100% ground
-                { 22, 37011 }, -- Magic Broom               60% ground
-                { 24, 33154 }, -- Sinister Squashling
-			},
-		},
---@end-version-bcc@
 	},
 }
 
@@ -1361,312 +1583,13 @@ data["WinterVeil"] = {
 	},
 }
 
-data["Noblegarden"] = {
-	name = AL["Noblegarden"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	items = {
-		{ -- Noblegarden
-			name = AL["Brightly Colored Egg"],
-			[NORMAL_DIFF] = {
-				{ 1,  19028 }, -- Elegant Dress
-				{ 2,  6833 }, -- White Tuxedo Shirt
-				{ 3,  6835 }, -- Black Tuxedo Pants
-				{ 16,  7807 }, -- Candy Bar
-				{ 17,  7808 }, -- Chocolate Square
-				{ 18,  7806 }, -- Lollipop
-			},
-		},
-	},
-}
-
-data["HarvestFestival"] = {
-	name = AL["Harvest Festival"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	items = {
-		{ -- HarvestFestival
-			name = AL["Harvest Festival"],
-			[NORMAL_DIFF] = {
-				{ 1,  19697 }, -- Bounty of the Harvest
-				{ 2,  20009 }, -- For the Light!
-				{ 3,  20010 }, -- The Horde's Hellscream
-				{ 16,  19995 }, -- Harvest Boar
-				{ 17,  19996 }, -- Harvest Fish
-				{ 18,  19994 }, -- Harvest Fruit
-				{ 19,  19997 }, -- Harvest Nectar
-			},
-		},
-	},
-}
-
-data["LunarFestival"] = {
-	name = AL["Lunar Festival"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	items = {
-		{ -- LunarFestival1
-			name = AL["Lunar Festival"],
-			[NORMAL_DIFF] = {
-				{ 1,  21100 }, -- Coin of Ancestry
-				{ 3,  21157 }, -- Festive Green Dress
-				{ 4,  21538 }, -- Festive Pink Dress
-				{ 5,  21539 }, -- Festive Purple Dress
-				{ 6,  21541 }, -- Festive Black Pant Suit
-				{ 7,  21544 }, -- Festive Blue Pant Suit
-				{ 8,  21543 }, -- Festive Teal Pant Suit
-			},
-		},
-		{
-			name = AL["Lunar Festival Fireworks Pack"],
-			[NORMAL_DIFF] = {
-				{ 1, 21558 }, -- Small Blue Rocket
-				{ 2, 21559 }, -- Small Green Rocket
-				{ 3, 21557 }, -- Small Red Rocket
-				{ 4, 21561 }, -- Small White Rocket
-				{ 5, 21562 }, -- Small Yellow Rocket
-				{ 7, 21537 }, -- Festival Dumplings
-				{ 8, 21713 }, -- Elune's Candle
-				{ 16, 21589 }, -- Large Blue Rocket
-				{ 17, 21590 }, -- Large Green Rocket
-				{ 18, 21592 }, -- Large Red Rocket
-				{ 19, 21593 }, -- Large White Rocket
-				{ 20, 21595 }, -- Large Yellow Rocket
-			}
-		},
-		{
-			name = AL["Lucky Red Envelope"],
-			[NORMAL_DIFF] = {
-				{ 1, 21540 }, -- Elune's Lantern
-				{ 2, 21536 }, -- Elune Stone
-				{ 16, 21744 }, -- Lucky Rocket Cluster
-				{ 17, 21745 }, -- Elder's Moonstone
-			}
-		},
-		{ -- LunarFestival2
-			name = AL["Plans"],
-			[NORMAL_DIFF] = {
-				{ 1,  21722 }, -- Pattern: Festival Dress
-				{ 3,  21738 }, -- Schematic: Firework Launcher
-				{ 5,  21724 }, -- Schematic: Small Blue Rocket
-				{ 6,  21725 }, -- Schematic: Small Green Rocket
-				{ 7,  21726 }, -- Schematic: Small Red Rocket
-				{ 9, 21727 }, -- Schematic: Large Blue Rocket
-				{ 10, 21728 }, -- Schematic: Large Green Rocket
-				{ 11, 21729 }, -- Schematic: Large Red Rocket
-				{ 16, 21723 }, -- Pattern: Festive Red Pant Suit
-				{ 18, 21737 }, -- Schematic: Cluster Launcher
-				{ 20, 21730 }, -- Schematic: Blue Rocket Cluster
-				{ 21, 21731 }, -- Schematic: Green Rocket Cluster
-				{ 22, 21732 }, -- Schematic: Red Rocket Cluster
-				{ 24, 21733 }, -- Schematic: Large Blue Rocket Cluster
-				{ 25, 21734 }, -- Schematic: Large Green Rocket Cluster
-				{ 26, 21735 }, -- Schematic: Large Red Rocket Cluster
-			},
-		},
-	},
-}
-
-data["Darkmoon"] = {
-	FactionID = 909,
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 3,
-	items = {
-		{ -- Exalted
-			name = GetFactionInfoByID(909),
-			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Classic"] },
-				{ 2,  19228 }, -- Darkmoon Card: Blue Dragon
-				{ 3,  19267 }, -- Darkmoon Card: Maelstrom
-				{ 4,  19257 }, -- Darkmoon Card: Heroism
-				{ 5,  19277 }, -- Darkmoon Card: Twisting Nether
---@version-bcc@
-				{ 7, "INV_Box_01", nil, AL["Burning Crusade"] },
-				{ 8,  31907 }, -- Darkmoon Card: Vengeance
-				{ 9,  31890 }, -- Darkmoon Card: Crusade
-				{ 10,  31891 }, -- Darkmoon Card: Wrath
-				{ 11,  31914 }, -- Darkmoon Card: Madness
---@end-version-bcc@
-				{ 16,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
-				{ 17,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
-				{ 19,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton
-				{ 20,  19291, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Darkmoon Storage Box
-				{ 22,  9249, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Schematic: Steam Tonk Controller
-				{ 23,  19296, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Greater Darkmoon Prize
-				{ 25,  19297, 19182, [ATLASLOOT_IT_AMOUNT2] = 12 }, -- Lesser Darkmoon Prize
-				{ 27,  19292, 19182, [ATLASLOOT_IT_AMOUNT2] = 10 }, -- Last Month's Mutton
-				{ 29,  19298, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Minor Darkmoon Prize
-				{ 30,  19295, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Darkmoon Flower
-			},
-		},
-	},
-}
-
-data["MidsummerFestival"] = {
-	name = AL["Midsummer Festival"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 1,
-	items = {
-		{ -- MidsummerFestival
-			name = AL["Midsummer Festival"],
-			[NORMAL_DIFF] = {
-				{ 1,  23379 }, -- Cinder Bracers
-				{ 3,  23323 }, -- Crown of the Fire Festival
-				{ 4,  23324 }, -- Mantle of the Fire Festival
-				{ 6,  23083 }, -- Captured Flame
-				{ 7,  23247 }, -- Burning Blossom
-				{ 8,  23246 }, -- Fiery Festival Brew
-				{ 9,  23435 }, -- Elderberry Pie
-				{ 10, 23327 }, -- Fire-toasted Bun
-				{ 11, 23326 }, -- Midsummer Sausage
-				{ 12, 23211 }, -- Toasted Smorc
-			},
-		},
-	},
-}
-
-data["MidsummerFestivalTBC"] = {
-	name = AL["Midsummer Festival"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	items = {
-		{ -- MidsummerFestivalTBC
-			name = AL["Midsummer Festival"],
-			[NORMAL_DIFF] = {
-				{ 1,  23083 }, -- Captured Flame
-				{ 2,  34686 }, -- Brazier of Dancing Flames
-				{ 4,  23324 }, -- Mantle of the Fire Festival
-				{ 5,  23323 }, -- Crown of the Fire Festival
-				{ 6,  34683 }, -- Sandals of Summer
-				{ 7,  34685 }, -- Vestment of Summer
-				{ 9,  23247 }, -- Burning Blossom
-				{ 10,  34599 }, -- Juggling Torch
-				{ 11,  34684 }, -- Handful of Summer Petals
-				{ 12,  23246 }, -- Fiery Festival Brew
-				{ 16, 23215 }, -- Bag of Smorc Ingredients
-				{ 17, 23211 }, -- Toasted Smorc
-				{ 18,  23435 }, -- Elderberry Pie
-				{ 19, 23327 }, -- Fire-toasted Bun
-				{ 20, 23326 }, -- Midsummer Sausage
-			},
-		},
-		{ -- CFRSlaveAhune
-			name = C_Map_GetAreaInfo(3717).." - "..AL["Ahune"],
-			[NORMAL_DIFF] = {
-                { 1, 35514 }, -- Frostscythe of Lord Ahune
-                { 2, 35494 }, -- Shroud of Winter's Chill
-                { 3, 35495 }, -- The Frost Lord's War Cloak
-                { 4, 35496 }, -- Icebound Cloak
-                { 5, 35497 }, -- Cloak of the Frigid Winds
-                { 7, 35723 }, -- Shards of Ahune
-                { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 18, 34955 }, -- Scorched Stone
-                { 19, 35557 }, -- Huge Snowball
-			},
-			[HEROIC_DIFF] = {
-                { 1, 29434 }, -- Badge of Justice
-                { 2, 35507 }, -- Amulet of Bitter Hatred
-                { 3, 35508 }, -- Choker of the Arctic Flow
-                { 4, 35509 }, -- Amulet of Glacial Tranquility
-                { 5, 35511 }, -- Hailstone Pendant
-                { 7, 35514 }, -- Frostscythe of Lord Ahune
-                { 8, 35494 }, -- Shroud of Winter's Chill
-                { 9, 35495 }, -- The Frost Lord's War Cloak
-                { 10, 35496 }, -- Icebound Cloak
-                { 11, 35497 }, -- Cloak of the Frigid Winds
-                { 13, 35723 }, -- Shards of Ahune
-                { 22, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 24, 34955 }, -- Scorched Stone
-                { 25, 35557 }, -- Huge Snowball
-			},
-		},
-	},
-}
-
-data["Brewfest"] = {
-	name = AL["Brewfest"],
-	ContentType = WORLD_EVENT_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
-	gameVersion = 2,
-	items = {
-		{ -- Brewfest
-			name = AL["Brewfest"],
-			[NORMAL_DIFF] = {
-				{ 1,  33968 }, -- Blue Brewfest Hat
-				{ 2,  33864 }, -- Brown Brewfest Hat
-				{ 3,  33967 }, -- Green Brewfest Hat
-				{ 4,  33969 }, -- Purple Brewfest Hat
-				{ 5,  33863 }, -- Brewfest Dress
-				{ 6,  33862 }, -- Brewfest Regalia
-				{ 7,  33966 }, -- Brewfest Slippers
-				{ 8,  33868 }, -- Brewfest Boots
-				{ 10,  33047 }, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
-				{ 11,  34008 }, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-				{ 13,  33016 }, -- Blue Brewfest Stein
-				{ 15,  37829 }, -- Brewfest Prize Token
-				{ 16,  33976 }, -- Brewfest Ram
-				{ 17,  33977 }, -- Swift Brewfest Ram
-				{ 19,  32233 }, -- Wolpertinger's Tankard
-				{ 21,  34028 }, -- "Honorary Brewer" Hand Stamp
-				{ 22,  37599 }, -- "Brew of the Month" Club Membership Form
-				{ 24,  33927 }, -- Brewfest Pony Keg
-				{ 26,  37750 }, -- Fresh Brewfest Hops
-				{ 27,  39477 }, -- Fresh Dwarven Brewfest Hops
-				{ 28,  39476 }, -- Fresh Goblin Brewfest Hops
-				{ 29,  37816 }, -- Preserved Brewfest Hops
-			},
-		},
-		{
-			name = AL["Food"],
-			[NORMAL_DIFF] = {
-				{ 1,  33043 }, -- The Essential Brewfest Pretzel
-				{ 3,  34017 }, -- Small Step Brew
-				{ 4,  34018 }, -- long Stride Brew
-				{ 5,  34019 }, -- Path of Brew
-				{ 6,  34020 }, -- Jungle River Water
-				{ 7,  34021 }, -- Brewdoo Magic
-				{ 8,  34022 }, -- Stout Shrunken Head
-				{ 9,  33034 }, -- Gordok Grog
-				{ 10,  33035 }, -- Ogre Mead
-				{ 11,  33036 }, -- Mudder's Milk
-
-			},
-		},
-		{
-			name = C_Map_GetAreaInfo(1584).." - "..AL["Coren Direbrew"],
-			[NORMAL_DIFF] = {
-				{ 1,  37128 }, -- Balebrew Charm
-				{ 2,  37127 }, -- Brightbrew Charm
-				{ 3,  38287 }, -- Empty Mug of Direbrew
-				{ 4,  38290 }, -- Dark Iron Smoking Pipe
-				{ 5,  38288 }, -- Direbrew Hops
-				{ 6,  38289 }, -- Coren's Lucky Coin
-				{ 8,  37597 }, -- Direbrew's Shanker
-				{ 16,  33977 }, -- Swift Brewfest Ram
-				{ 17,  37828 }, -- Great Brewfest Kodo
-				{ 19,  37863 }, -- Direbrew's Remote
-				{ 21,  38280 }, -- Direbrew's Dire Brew
-			},
-		},
-	},
-}
-
 data["ElementalInvasions"] = {
 	name = AL["Elemental Invasions"],
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	ContentPhase = 2.5,
-	gameVersion = 1,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- ElementalInvasion
 			name = AL["Elemental Invasions"],
@@ -1700,7 +1623,7 @@ data["SilithusAbyssal"] = {
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	ContentPhase = 4,
-	gameVersion = 1,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- AbyssalDukes
 			name = AL["Abyssal Dukes"],
@@ -1786,7 +1709,7 @@ data["AQOpening"] = {
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	ContentPhase = 5,
-	gameVersion = 1,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{
 			name = AL["AQ opening"],
@@ -1819,7 +1742,8 @@ data["ScourgeInvasion"] = {
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
 	ContentPhase = 6,
-	gameVersion = 1,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	CorrespondingFields = private.SCOURGE_INVASION,
 	items = {
 		{ -- ScourgeInvasionEvent1
 			name = AL["Scourge Invasion"],

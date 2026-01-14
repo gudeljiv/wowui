@@ -1,15 +1,12 @@
-------------------------------------------------------------------
--- Modules
-------------------------------------------------------------------
-
 ---@class Profile
 local Profile = ECSLoader:CreateModule("Profile")
 
 ---@type Utils
 local Utils = ECSLoader:ImportModule("Utils")
 
-function Profile:GetProfileVersion()
-    return 11
+---@return number
+function Profile.GetProfileVersion()
+    return 22
 end
 
 ---@return ECSProfile
@@ -17,7 +14,6 @@ local function GetDefaultStatsProfile()
     local colors = Utils.colors
 
     return {
-        ---@type Category
         general = {
             display = true,
             refName = "GeneralHeader",
@@ -26,13 +22,11 @@ local function GetDefaultStatsProfile()
             movementSpeed = {display = true, refName = "MovementSpeed", text = "Movement Speed"},
         },
 
-        ---@class Category
         melee = {
             display = true,
             refName = "MeleeHeader",
             text = "Melee",
 
-            ---@class SubCategory
             hit = {
                 display = true,
                 isSubGroup = true,
@@ -69,6 +63,40 @@ local function GetDefaultStatsProfile()
                     statColor = colors.HIT_PRIMARY
                 },
             },
+            glance = {
+                display = true,
+                isSubGroup = true,
+                refName = "GlanceChanceHeader",
+                text = "Glancing Blow",
+                sameLevel = {
+                    display = true,
+                    refName = "GlanceHitChanceSameLevel",
+                    text = "Chance",
+                    textColor = colors.GRAY,
+                    statColor = colors.WHITE
+                },
+                bossLevel = {
+                    display = true,
+                    refName = "GlanceHitChanceBossLevel",
+                    text = "Chance (Lvl + 3)",
+                    textColor = colors.GRAY,
+                    statColor = colors.WHITE
+                },
+                damageSameLevel = {
+                    display = true,
+                    refName = "GlanceDamageSameLevel",
+                    text = "Damage",
+                    textColor = colors.GRAY,
+                    statColor = colors.WHITE
+                },
+                damageBossLevel = {
+                    display = true,
+                    refName = "GlanceDamageBossLevel",
+                    text = "Damage (Lvl + 3)",
+                    textColor = colors.GRAY,
+                    statColor = colors.WHITE
+                },
+            },
             attackPower = {
                 display = true,
                 refName = "MeleeAttackPower",
@@ -83,7 +111,40 @@ local function GetDefaultStatsProfile()
                 textColor = colors.CRIT_SECONDARY,
                 statColor = colors.CRIT_PRIMARY
             },
+            penetration = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeArmorPenetration",
+                text = "Armor Pen.",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
+            penetrationRating = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeArmorPenetrationRating",
+                text = "Armor Pen. Rating",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
             expertise = {display = true, isTbcOnly = true, refName = "Expertise", text = "Expertise"},
+            expertiseRating = {display = true, isTbcOnly = true, refName = "ExpertiseRating", text = "Expertise Rating"},
+            hasteRating = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeHasteRating",
+                text = "Haste Rating",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
+            hasteBonus = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeHasteBonus",
+                text = "Haste Bonus",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
             attackSpeed = {
                 display = true,
                 isSubGroup = true,
@@ -107,7 +168,6 @@ local function GetDefaultStatsProfile()
             },
         },
 
-        ---@type Category
         ranged = {
             display = true,
             refName = "RangedHeader",
@@ -164,6 +224,38 @@ local function GetDefaultStatsProfile()
                 textColor = colors.CRIT_SECONDARY,
                 statColor = colors.CRIT_PRIMARY
             },
+            penetration = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedArmorPenetration",
+                text = "Armor Pen.",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
+            penetrationRating = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedArmorPenetrationRating",
+                text = "Armor Pen. Rating",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
+            hasteRating = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedHasteRating",
+                text = "Haste Rating",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
+            hasteBonus = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedHasteBonus",
+                text = "Haste Bonus",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
             attackSpeed = {
                 display = true,
                 refName = "RangedAttackSpeed",
@@ -173,16 +265,18 @@ local function GetDefaultStatsProfile()
             },
         },
 
-        ---@type Category
         defense = {
             display = true,
             refName = "DefenseHeader",
             text = "Defense",
 
             armor = {display = true, refName = "Armor", text = "Armor"},
-            critImmunity = {display = true, isTbcOnly = true, refName = "CritImmunity", text = "Crit Immune"},
-            critReduction = {display = true, isTbcOnly = true, refName = "CritReduction", text = "Crit Reduction"},
-            defenseRating = {display = true, refName = "DefenseRating", text = "Defense Rating"},
+            meleeCritReduction = {display = true, refName = "MeleeCritReduction", text = "Melee Crit Reduction"},
+            rangedCritReduction = {display = true, refName = "RangedCritReduction", text = "Ranged Crit Reduction"},
+            spellCritReduction = {display = true, refName = "SpellCritReduction", text = "Spell Crit Reduction"},
+            avoidance = {display = true, refName = "Avoidance", text = "Avoidance"},
+            avoidanceBoss = {display = true, refName = "AvoidanceBoss", text = "Avoidance (Lvl +3)"},
+            defenseRating = {display = true, isTbcOnly = true, refName = "DefenseRating", text = "Defense Rating"},
             defense = {display = true, refName = "DefenseValue", text = "Defense"},
             blockChance = {display = true, refName = "BlockChance", text = "Block Chance"},
             blockValue = {display = true, refName = "BlockValue", text = "Block Value"},
@@ -191,7 +285,6 @@ local function GetDefaultStatsProfile()
             resilience = {display = true, isTbcOnly = true, refName = "ResilienceValue", text = "Resilience"},
         },
 
-        ---@type Category
         regen = {
             display = true,
             refName = "ManaHeader",
@@ -225,13 +318,41 @@ local function GetDefaultStatsProfile()
                 textColor = colors.MP5_SECONDARY,
                 statColor = colors.MP5_PRIMARY
             },
+            mp5NotCasting = {
+                display = true,
+                refName = "MP5NotCasting",
+                text = "MP5 (Not casting)",
+                textColor = colors.MP5_SECONDARY,
+                statColor = colors.MP5_PRIMARY
+            },
         },
 
-        ---@type Category
         spell = {
             display = true,
             refName = "SpellHeader",
             text = "Spell",
+
+            arcane = {
+                display = true,
+            },
+            fire = {
+                display = true,
+            },
+            frost = {
+                display = true,
+            },
+            holy = {
+                display = true,
+            },
+            nature = {
+                display = true,
+            },
+            physical = {
+                display = true,
+            },
+            shadow = {
+                display = true,
+            },
 
             ---@type SubCategory
             hit = {
@@ -269,22 +390,229 @@ local function GetDefaultStatsProfile()
                     textColor = colors.HIT_SECONDARY,
                     statColor = colors.HIT_PRIMARY
                 },
+                arcaneHitBonus = {
+                    display = true,
+                    refName = "ArcaneHitBonus",
+                    text = "Arcane Hit Bonus",
+                    textColor = colors.ARCANE_SECONDARY,
+                    statColor = colors.ARCANE_PRIMARY
+                },
+                arcaneMissChance = {
+                    display = true,
+                    refName = "ArcaneMissChance",
+                    text = "Arcane Miss",
+                    textColor = colors.ARCANE_SECONDARY,
+                    statColor = colors.ARCANE_PRIMARY
+                },
+                arcaneMissChanceBoss = {
+                    display = true,
+                    refName = "ArcaneMissChanceBoss",
+                    text = "Arcane Miss (Lvl + 3)",
+                    textColor = colors.ARCANE_SECONDARY,
+                    statColor = colors.ARCANE_PRIMARY
+                },
+                fireHitBonus = {
+                    display = true,
+                    refName = "FireHitBonus",
+                    text = "Fire Hit Bonus",
+                    textColor = colors.FIRE_SECONDARY,
+                    statColor = colors.FIRE_PRIMARY
+                },
+                fireMissChance = {
+                    display = true,
+                    refName = "FireMissChance",
+                    text = "Fire Miss",
+                    textColor = colors.FIRE_SECONDARY,
+                    statColor = colors.FIRE_PRIMARY
+                },
+                fireMissChanceBoss = {
+                    display = true,
+                    refName = "FireMissChanceBoss",
+                    text = "Fire Miss (Lvl + 3)",
+                    textColor = colors.FIRE_SECONDARY,
+                    statColor = colors.FIRE_PRIMARY
+                },
+                frostHitBonus = {
+                    display = true,
+                    refName = "FrostHitBonus",
+                    text = "Frost Hit Bonus",
+                    textColor = colors.FROST_SECONDARY,
+                    statColor = colors.FROST_PRIMARY
+                },
+                frostMissChance = {
+                    display = true,
+                    refName = "FrostMissChance",
+                    text = "Frost Miss",
+                    textColor = colors.FROST_SECONDARY,
+                    statColor = colors.FROST_PRIMARY
+                },
+                frostMissChanceBoss = {
+                    display = true,
+                    refName = "FrostMissChanceBoss",
+                    text = "Frost Miss (Lvl + 3)",
+                    textColor = colors.FROST_SECONDARY,
+                    statColor = colors.FROST_PRIMARY
+                },
+                holyHitBonus = {
+                    display = true,
+                    refName = "HolyHitBonus",
+                    text = "Holy Hit Bonus",
+                    textColor = colors.HOLY_SECONDARY,
+                    statColor = colors.HOLY_PRIMARY
+                },
+                holyMissChance = {
+                    display = true,
+                    refName = "HolyMissChance",
+                    text = "Holy Miss",
+                    textColor = colors.HOLY_SECONDARY,
+                    statColor = colors.HOLY_PRIMARY
+                },
+                holyMissChanceBoss = {
+                    display = true,
+                    refName = "HolyMissChanceBoss",
+                    text = "Holy Miss (Lvl + 3)",
+                    textColor = colors.HOLY_SECONDARY,
+                    statColor = colors.HOLY_PRIMARY
+                },
+                natureHitBonus = {
+                    display = true,
+                    refName = "NatureHitBonus",
+                    text = "Nature Hit Bonus",
+                    textColor = colors.NATURE_SECONDARY,
+                    statColor = colors.NATURE_PRIMARY
+                },
+                natureMissChance = {
+                    display = true,
+                    refName = "NatureMissChance",
+                    text = "Nature Miss",
+                    textColor = colors.NATURE_SECONDARY,
+                    statColor = colors.NATURE_PRIMARY
+                },
+                natureMissChanceBoss = {
+                    display = true,
+                    refName = "NatureMissChanceBoss",
+                    text = "Nature Miss (Lvl + 3)",
+                    textColor = colors.NATURE_SECONDARY,
+                    statColor = colors.NATURE_PRIMARY
+                },
+                physicalHitBonus = {
+                    display = true,
+                    refName = "PhysicalHitBonus",
+                    text = "Physical Hit Bonus",
+                    textColor = colors.PHYSICAL_SECONDARY,
+                    statColor = colors.PHYSICAL_PRIMARY
+                },
+                physicalMissChance = {
+                    display = true,
+                    refName = "PhysicalMissChance",
+                    text = "Physical Miss",
+                    textColor = colors.PHYSICAL_SECONDARY,
+                    statColor = colors.PHYSICAL_PRIMARY
+                },
+                physicalMissChanceBoss = {
+                    display = true,
+                    refName = "PhysicalMissChanceBoss",
+                    text = "Physical Miss (Lvl + 3)",
+                    textColor = colors.PHYSICAL_SECONDARY,
+                    statColor = colors.PHYSICAL_PRIMARY
+                },
+                shadowHitBonus = {
+                    display = true,
+                    refName = "ShadowHitBonus",
+                    text = "Shadow Hit Bonus",
+                    textColor = colors.SHADOW_SECONDARY,
+                    statColor = colors.SHADOW_PRIMARY
+                },
+                shadowMissChance = {
+                    display = true,
+                    refName = "ShadowMissChance",
+                    text = "Shadow Miss",
+                    textColor = colors.SHADOW_SECONDARY,
+                    statColor = colors.SHADOW_PRIMARY
+                },
+                shadowMissChanceBoss = {
+                    display = true,
+                    refName = "ShadowMissChanceBoss",
+                    text = "Shadow Miss (Lvl + 3)",
+                    textColor = colors.SHADOW_SECONDARY,
+                    statColor = colors.SHADOW_PRIMARY
+                },
             },
-            crit = {
+            hasteRating = {
                 display = true,
-                refName = "SpellCritChance",
-                text = "Crit Chance",
-                textColor = colors.CRIT_SECONDARY,
-                statColor = colors.CRIT_PRIMARY
+                isTbcOnly = true,
+                refName = "SpellHasteRating",
+                text = "Haste Rating",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
+            hasteBonus = {
+                display = true,
+                isTbcOnly = true,
+                refName = "SpellHasteBonus",
+                text = "Haste Bonus",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
             },
             penetration = {display = true, refName = "SpellPenetration", text = "Penetration"},
+
+            crit = {
+                display = true,
+                arcane = {
+                    display = true,
+                    refName = "ArcaneCritChance",
+                    text = "Arcane Crit",
+                    textColor = colors.ARCANE_SECONDARY,
+                    statColor = colors.ARCANE_PRIMARY
+                },
+                fire = {
+                    display = true,
+                    refName = "FireCritChance",
+                    text = "Fire Crit",
+                    textColor = colors.FIRE_SECONDARY,
+                    statColor = colors.FIRE_PRIMARY
+                },
+                frost = {
+                    display = true,
+                    refName = "FrostCritChance",
+                    text = "Frost Crit",
+                    textColor = colors.FROST_SECONDARY,
+                    statColor = colors.FROST_PRIMARY
+                },
+                holy = {
+                    display = true,
+                    refName = "HolyCritChance",
+                    text = "Holy Crit",
+                    textColor = colors.HOLY_SECONDARY,
+                    statColor = colors.HOLY_PRIMARY
+                },
+                nature = {
+                    display = true,
+                    refName = "NatureCritChance",
+                    text = "Nature Crit",
+                    textColor = colors.NATURE_SECONDARY,
+                    statColor = colors.NATURE_PRIMARY
+                },
+                physical = {
+                    display = true,
+                    refName = "PhysicalCritChance",
+                    text = "Physical Crit",
+                    textColor = colors.PHYSICAL_SECONDARY,
+                    statColor = colors.PHYSICAL_PRIMARY
+                },
+                shadow = {
+                    display = true,
+                    refName = "ShadowCritChance",
+                    text = "Shadow Crit",
+                    textColor = colors.SHADOW_SECONDARY,
+                    statColor = colors.SHADOW_PRIMARY
+                },
+            }
         },
 
-        ---@type Category
         spellBonus = {
             display = true,
             refName = "SpellBonusHeader",
-            text = "Spell Power",
 
             bonusHealing = {
                 display = true,
@@ -300,24 +628,10 @@ local function GetDefaultStatsProfile()
                 textColor = colors.ARCANE_SECONDARY,
                 statColor = colors.ARCANE_PRIMARY
             },
-            arcaneCrit = {
-                display = true,
-                refName = "ArcaneCritChance",
-                text = "Arcane Crit",
-                textColor = colors.ARCANE_SECONDARY,
-                statColor = colors.ARCANE_PRIMARY
-            },
             fireDmg = {
                 display = true,
                 refName = "FireDmg",
                 text = "Fire Damage",
-                textColor = colors.FIRE_SECONDARY,
-                statColor = colors.FIRE_PRIMARY
-            },
-            fireCrit = {
-                display = true,
-                refName = "FireCritChance",
-                text = "Fire Crit",
                 textColor = colors.FIRE_SECONDARY,
                 statColor = colors.FIRE_PRIMARY
             },
@@ -328,24 +642,10 @@ local function GetDefaultStatsProfile()
                 textColor = colors.FROST_SECONDARY,
                 statColor = colors.FROST_PRIMARY
             },
-            frostCrit = {
-                display = true,
-                refName = "FrostCritChance",
-                text = "Frost Crit",
-                textColor = colors.FROST_SECONDARY,
-                statColor = colors.FROST_PRIMARY
-            },
             holyDmg = {
                 display = true,
                 refName = "HolyDmg",
                 text = "Holy Damage",
-                textColor = colors.HOLY_SECONDARY,
-                statColor = colors.HOLY_PRIMARY
-            },
-            holyCrit = {
-                display = true,
-                refName = "HolyCritChance",
-                text = "Holy Crit",
                 textColor = colors.HOLY_SECONDARY,
                 statColor = colors.HOLY_PRIMARY
             },
@@ -356,13 +656,6 @@ local function GetDefaultStatsProfile()
                 textColor = colors.NATURE_SECONDARY,
                 statColor = colors.NATURE_PRIMARY
             },
-            natureCrit = {
-                display = true,
-                refName = "NatureCritChance",
-                text = "Nature Crit",
-                textColor = colors.NATURE_SECONDARY,
-                statColor = colors.NATURE_PRIMARY
-            },
             physicalDmg = {
                 display = true,
                 refName = "PhysicalDmg",
@@ -370,24 +663,10 @@ local function GetDefaultStatsProfile()
                 textColor = colors.PHYSICAL_SECONDARY,
                 statColor = colors.PHYSICAL_PRIMARY
             },
-            physicalCrit = {
-                display = true,
-                refName = "PhysicalCritChance",
-                text = "Physical Crit",
-                textColor = colors.PHYSICAL_SECONDARY,
-                statColor = colors.PHYSICAL_PRIMARY
-            },
             shadowDmg = {
                 display = true,
                 refName = "ShadowDmg",
                 text = "Shadow Damage",
-                textColor = colors.SHADOW_SECONDARY,
-                statColor = colors.SHADOW_PRIMARY
-            },
-            shadowCrit = {
-                display = true,
-                refName = "ShadowCritChance",
-                text = "Shadow Crit",
                 textColor = colors.SHADOW_SECONDARY,
                 statColor = colors.SHADOW_PRIMARY
             },
@@ -401,12 +680,13 @@ local function GetDefaultGeneralSettings()
         addColorsToStatTexts = true,
         statColorSelection = "full",
         showQualityColors = true,
+        qualityColorsIntensity = 0.75,
         headerFontSize = 11,
         statFontSize = 10,
         profileVersion = 0,
         window = {
             height = 422,
-            width = 180,
+            width = 195,
             xOffset = -30,
             yOffset = 30
         }

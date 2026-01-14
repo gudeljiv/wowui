@@ -1,7 +1,10 @@
 local _, namespace = ...
+
 local AnchorManager = {}
 namespace.AnchorManager = AnchorManager
 
+ -- Anchors for custom unitframes
+ -- Blizzard frame should always be listed last
 local anchors = {
     target = {
         "SUFUnittarget",
@@ -36,12 +39,11 @@ local anchors = {
         "GwPartyFrame%d",
         "gUI4_GroupFramesGroup5UnitButton%d",
         "PartyMemberFrame%d",
-        "CompactRaidFrame%d",
         "CompactPartyFrameMember%d",
+        "CompactRaidFrame%d",
         "CompactRaidGroup1Member%d",
     },
 
-    --@version-bcc@
     focus = {
         "SUFUnitfocus",
         "XPerl_Focushighlight",
@@ -63,28 +65,20 @@ local anchors = {
     },
 
     arena = {
-        "ElvUF_Arena%d",
-        "oUF_TukuiArena%d",
-        "barena%dUnitFrame",
-        "oUF_Arena%d",
-        "oUF_Adirelle_Arena%d",
-        "Stuf.units.arena%d",
         "sArenaEnemyFrame%d",
-        "oUF_LumenArena%d",
         "ArenaEnemyFrame%d",
+        "ArenaEnemyMatchFrame%d",
     },
-    --@end-version-bcc@
 }
 
 local _G = _G
+local format = _G.string.format
 local strmatch = _G.string.match
 local strfind = _G.string.find
 local gsub = _G.string.gsub
-local UnitGUID = _G.UnitGUID
 local GetNamePlateForUnit = _G.C_NamePlate.GetNamePlateForUnit
-local GetNumGroupMembers = _G.GetNumGroupMembers
 
-local function GetUnitFrameForUnit(unitType, unitID, hasNumberIndex)
+local function GetUnitFrame(unitType, unitID, hasNumberIndex, skipVisibleCheck)
     local anchorNames = anchors[unitType]
     if not anchorNames then return end
 
@@ -96,11 +90,11 @@ local function GetUnitFrameForUnit(unitType, unitID, hasNumberIndex)
 
         local unitFrame = _G[name]
         if unitFrame then
-            if unitType == "party" or unitType == "arena" then
-                return unitFrame, name
-            end
-
-            if unitFrame:IsVisible() then -- unit frame exists and also is in use (for party/arena we need to ignore this check)
+            if not skipVisibleCheck then
+                if unitFrame:IsVisible() then -- prioritize visible frame to get the correct active one
+                    return unitFrame, name
+                end
+            else
                 return unitFrame, name
             end
         end
@@ -108,25 +102,38 @@ local function GetUnitFrameForUnit(unitType, unitID, hasNumberIndex)
 end
 
 local function GetPartyFrameForUnit(unitID)
-    if unitID == "party-testmode" then
-        return GetUnitFrameForUnit("party", "party1", true)
-    end
+    if GetNumGroupMembers() > 5 then return end -- Dont show party castbars in raid for now
 
-    -- Dont show party castbars in raid
-    if GetNumGroupMembers() > 5 then return end
-
-    local guid = UnitGUID(unitID)
+    local guid = UnitGUID(unitID == "party-testmode" and "player" or unitID)
     if not guid then return end
 
-    local useCompact = GetCVarBool("useCompactPartyFrames")
+    local useBlizzCompact = GetCVarBool("useCompactPartyFrames")
+    if EditModeManagerFrame and EditModeManagerFrame.UseRaidStylePartyFrames then
+        useBlizzCompact = EditModeManagerFrame:UseRaidStylePartyFrames()
+    end
 
-    -- raid frames are recycled so frame10 might be party2 and so on, so we need
-    -- to loop through them all and check if the unit matches. Same thing with party
-    -- frames for custom addons
+    if unitID == "party-testmode" then
+        if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+            if useBlizzCompact then
+                return GetUnitFrame("party", "party1", true, true)
+            else
+                return PartyFrame.MemberFrame1
+            end
+        else
+            if useBlizzCompact and not IsInGroup() then
+                return print(format("|cFFFF0000[ClassicCastbars] %s|r", _G.ERR_QUEST_PUSH_NOT_IN_PARTY_S)) -- luacheck: ignore
+            end
+            return GetUnitFrame("party", "party1", true, not useBlizzCompact)
+        end
+    end
+
+    -- Compact/custom frames are recycled so frame10 might be party2 and so on, so we need
+    -- to loop through them all and check if the unit matches.
     for i = 1, 40 do
-        local frame, frameName = GetUnitFrameForUnit("party", "party"..i, true)
-        if frame and ((frame.unit and UnitGUID(frame.unit) == guid) or frame.lastGUID == guid) and frame:IsShown() then
-            if useCompact then
+        local frame, frameName = GetUnitFrame("party", "party"..i, true)
+
+        if frame and ((frame.unit and UnitGUID(frame.unit) == guid) or frame.lastGUID == guid) and frame:IsVisible() then
+            if useBlizzCompact then
                 if strfind(frameName, "PartyMemberFrame") == nil then
                     return frame
                 end
@@ -135,45 +142,47 @@ local function GetPartyFrameForUnit(unitID)
             end
         end
     end
+
+    -- Check new retail party frames
+    if not useBlizzCompact then
+        if PartyFrame and PartyFrame.PartyMemberFramePool then
+            for frame in PartyFrame.PartyMemberFramePool:EnumerateActive() do
+                if frame.layoutIndex and frame:IsVisible() and UnitGUID("party" .. frame.layoutIndex) == guid then
+                    return frame
+                end
+            end
+        end
+    end
 end
 
-local anchorCache = {
-    player = UIParent,  -- special case for player/focus casting bar
-    focus = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC) and UIParent or nil,
-    target = nil, -- will be set later
-}
+local anchorCache = { player = UIParent }
 
 function AnchorManager:GetAnchor(unitID)
     if anchorCache[unitID] then
         return anchorCache[unitID]
     end
 
-    local unitType, count = gsub(unitID, "%d", "") -- party1 -> party etc
+    local unitType, count = gsub(unitID, "%d", "") -- "party1" to "party" etc
 
-    local frame
-    if unitType == "nameplate" then
-        frame = GetNamePlateForUnit(unitID)
-    elseif unitID == "nameplate-testmode" then
-        frame = GetNamePlateForUnit("target")
+    local anchorFrame
+    if unitType == "nameplate-testmode" then
+        anchorFrame = GetNamePlateForUnit("target")
+    elseif unitType == "nameplate" then
+        anchorFrame = GetNamePlateForUnit(unitID)
     elseif unitType == "party" or unitType == "party-testmode" then
-        frame = GetPartyFrameForUnit(unitID)
+        anchorFrame = GetPartyFrameForUnit(unitID)
     elseif unitType == "arena-testmode" then
-        frame = GetUnitFrameForUnit("arena", "arena1", true)
-    else -- target/focus
-        frame = GetUnitFrameForUnit(unitType, unitID, count > 0)
+        anchorFrame = GetUnitFrame("arena", "arena1", true, true)
+    else -- target/focus/arena
+        anchorFrame = GetUnitFrame(unitType, unitID, count > 0)
     end
 
-    if frame and unitType == "target" then
-        anchors[unitID] = nil
-        anchorCache[unitID] = frame
+    if not anchorFrame then return end
+
+    -- Cache static unitframes permanently
+    if unitType == "target" or unitType == "focus" then
+        anchorCache[unitID] = anchorFrame
     end
 
-    if _G.WOW_PROJECT_ID ~= _G.WOW_PROJECT_CLASSIC then
-        if frame and unitType == "focus" then
-            anchors[unitID] = nil
-            anchorCache[unitID] = frame
-        end
-    end
-
-    return frame
+    return anchorFrame
 end

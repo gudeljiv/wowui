@@ -17,6 +17,9 @@ addon.WOW_MAINLINE = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
 addon.WOW_CLASSIC = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 addon.WOW_BURNING_CRUSADE_CLASSIC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 
+local buildVersion = select(4, GetBuildInfo())
+addon.WAR_WITHIN = (buildVersion >= 110000)
+
 -- Local definitions
 local GetCurrentCursorPosition
 local WorldMap_OnUpdate
@@ -40,6 +43,7 @@ function TomTom:Initialize(event, addon)
                 accuracy = 2,
                 bordercolor = {1, 0.8, 0, 0.8},
                 bgcolor = {0, 0, 0, 0.4},
+                textcolor = {1, 0.82, 0, 1},
                 lock = false,
                 height = 30,
                 width = 100,
@@ -80,7 +84,9 @@ function TomTom:Initialize(event, addon)
 				closestusecontinent = false,
                 enablePing = false,
                 pingChannel = "SFX",
-				hideDuringPetBattles = true,
+                hideDuringPetBattles = true,
+                distanceUnits = "auto",
+                theme = "modern",
             },
             minimap = {
                 enable = true,
@@ -89,6 +95,7 @@ function TomTom:Initialize(event, addon)
                 menu = true,
                 default_iconsize = 16,
                 default_icon = "Interface\\AddOns\\TomTom\\Images\\GoldGreenDot",
+                theme = "modern-green",
             },
             worldmap = {
                 enable = true,
@@ -99,6 +106,7 @@ function TomTom:Initialize(event, addon)
                 create_modifier = "A",
                 default_iconsize = 16,
                 default_icon = "Interface\\AddOns\\TomTom\\Images\\GoldGreenDot",
+                theme = "modern-green",
             },
             comm = {
                 enable = true,
@@ -121,6 +129,9 @@ function TomTom:Initialize(event, addon)
                 setClosest = false,
                 arrival = 0,
             },
+            paste = {
+                minimap_button = false,
+            }
         },
     }
 
@@ -147,8 +158,6 @@ function TomTom:Initialize(event, addon)
 
     self.tooltip = CreateFrame("GameTooltip", "TomTomTooltip", nil, "GameTooltipTemplate")
     self.tooltip:SetFrameStrata("DIALOG")
-
-    self.dropdown = CreateFrame("Frame", "TomTomDropdown", nil, "UIDropDownMenuTemplate")
 
     -- Both the waypoints and waypointprofile tables are going to contain subtables for each
     -- of the mapids that might exist. Under these will be a hash of key/waypoint pairs consisting
@@ -201,10 +210,16 @@ function TomTom:Initialize(event, addon)
 end
 
 function TomTom:Enable(addon)
+    self:ReloadWaypoints()
+    self:CreateConfigPanels()
+
+    self:CreateWorldMapClickHandler()
+
     if self.WOW_MAINLINE then
         self:EnableDisablePOIIntegration()
     end
-    self:ReloadWaypoints()
+
+    self:PasteConfigChanged()
 end
 
 -- Some utility functions that can pack/unpack data from a waypoint
@@ -226,20 +241,34 @@ function TomTom:GetKeyArgs(m, x, y, title)
 	return key
 end
 
+-- Thanks to the user who suggested using the C_Map API to fix some of the
+-- previous weirdness that was here
+function TomTom:GetCurrentPlayerPosition()
+    local playerMapID = C_Map and C_Map.GetBestMapForUnit("player") or nil
+    local x, y, mapID = hbd:GetPlayerZonePosition()
+
+    -- If HBD and the WoW API agree on the player map, return the position!
+    if x and y and x > 0 and y > 0 and mapID and (playerMapID and mapID == playerMapID) then
+        return mapID, x, y
+    end
+
+    -- If the WoW API and the HBD map results are different, we fall back to the
+    -- WoW API if we have it
+    if C_Map and playerMapID then
+        local pos = C_Map.GetPlayerMapPosition(playerMapID, "player")
+        if pos then
+            return playerMapID, pos:GetXY()
+        end
+    end
+end
+
 -- Returns the player's current coordinates without flipping the map or
 -- causing any other weirdness. This can and will cause the coordinates to be
 -- weird if you zoom the map out to your parent, but there is no way to
 -- recover this without changing/setting the map zoom. Deal with it =)
 function TomTom:GetCurrentCoords()
-	local x, y = hbd:GetPlayerZonePosition()
-	if x and y and x > 0 and y > 0 then
-		return x, y
-	end
-end
-
-function TomTom:GetCurrentPlayerPosition()
-    local x, y, mapID = hbd:GetPlayerZonePosition()
-    return mapID, x, y
+    local map, x, y = self:GetCurrentPlayerPosition()
+    return x, y
 end
 
 function TomTom:ReloadOptions()
@@ -324,13 +353,15 @@ function TomTom:UpdateCoordFeedThrottle()
     self:_privateupdatecoordthrottle(self.db.profile.feeds.coords_throttle)
 end
 
-
 function TomTom:ShowHideWorldCoords()
     -- Bail out if we're not supposed to be showing this frame
     if self.profile.mapcoords.playerenable or self.db.profile.mapcoords.cursorenable then
         -- Create the frame if it doesn't exist
         if not TomTomWorldFrame then
             TomTomWorldFrame = CreateFrame("Frame", "TomTomWorldFrame", WorldMapFrame.BorderFrame)
+            TomTomWorldFrame:SetFrameStrata("HIGH")
+            TomTomWorldFrame:SetFrameLevel(9000)
+            TomTomWorldFrame:SetAllPoints(true)
             TomTomWorldFrame.Player = TomTomWorldFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             TomTomWorldFrame.Cursor = TomTomWorldFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
             TomTomWorldFrame:SetScript("OnUpdate", WorldMap_OnUpdate)
@@ -402,6 +433,7 @@ function TomTom:ShowHideCoordBlock()
             TomTomBlock.Text = TomTomBlock:CreateFontString(nil, "OVERLAY", "GameFontNormal")
             TomTomBlock.Text:SetJustifyH("CENTER")
             TomTomBlock.Text:SetPoint("CENTER", 0, 0)
+            TomTomBlock.Text:SetTextColor(1, 0.8, 0, 0.8)
 
             TomTomBlock:SetBackdrop({
                 bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
@@ -409,8 +441,8 @@ function TomTom:ShowHideCoordBlock()
                 edgeSize = 16,
                 insets = {left = 4, right = 4, top = 4, bottom = 4},
             })
-            TomTomBlock:SetBackdropColor(0,0,0,0.4)
-            TomTomBlock:SetBackdropBorderColor(1,0.8,0,0.8)
+            TomTomBlock:SetBackdropColor(0, 0, 0, 0.4)
+            TomTomBlock:SetBackdropBorderColor(1, 0.8, 0, 0.8)
 
             -- Set behavior scripts
             TomTomBlock:SetScript("OnUpdate", Block_OnUpdate)
@@ -434,6 +466,9 @@ function TomTom:ShowHideCoordBlock()
         TomTomBlock:Show()
 
         local opt = self.profile.block
+
+        -- Update the text color
+        TomTomBlock.Text:SetTextColor(unpack(opt.textcolor))
 
         -- Update the backdrop color, and border color
         TomTomBlock:SetBackdropColor(unpack(opt.bgcolor))
@@ -461,42 +496,105 @@ function TomTom:ShowHideCoordBlock()
     end
 end
 
--- Hook the WorldMap OnClick
-local world_click_verify = {
-    ["A"] = function() return IsAltKeyDown() end,
-    ["C"] = function() return IsControlKeyDown() end,
-    ["S"] = function() return IsShiftKeyDown() end,
+-- -- Hook the WorldMap OnClick
+-- local world_click_verify = {
+--     ["A"] = function() return IsAltKeyDown() end,
+--     ["C"] = function() return IsControlKeyDown() end,
+--     ["S"] = function() return IsShiftKeyDown() end,
+-- }
+
+local verifyFuncs = {
+    ["A"] = function(alt, ctrl, shift) return alt and not (ctrl or shift) end,
+    ["C"] = function(alt, ctrl, shift) return ctrl and not (alt or shift) end,
+    ["S"] = function(alt, ctrl, shift) return shift and not (alt or ctrl) end,
+    ["AC"] = function(alt, ctrl, shift) return (alt and ctrl) and not (shift) end,
+    ["AS"] = function(alt, ctrl, shift) return (alt and shift) and not (ctrl) end,
+    ["CS"] = function(alt, ctrl, shift) return (ctrl and shift) and not (alt) end,
+    ["ACS"] = function(alt, ctrl, shift) return alt and ctrl and shift end,
 }
 
--- This is now a registered click handler.
--- If we return false, it gets passed on to the next handler.
--- We need to return true when we handle the click.
-local function WorldMap_OnClick (self, ...)
-    local mouseButton, button = ...
-    if mouseButton == "RightButton" then
-        -- Check for all the modifiers that are currently set
-        for mod in TomTom.db.profile.worldmap.create_modifier:gmatch("[ACS]") do
-            if not world_click_verify[mod] or not world_click_verify[mod]() then
-                return false
-            end
-        end
-
-        local m = WorldMapFrame.mapID
-        local x,y = WorldMapFrame:GetNormalizedCursorPosition()
-
-        if not m or m == 0 then
-            return false
-        end
-
-        local uid = TomTom:AddWaypoint(m, x, y, { title = L["TomTom waypoint"], from="TomTom/wm"})
-        return true
-    else
-        return false
+-- Thanks to Nevcariel for the help with this one!
+function addon:CreateWorldMapClickHandler()
+    if not self.worldMapClickHandler then
+        self.worldMapClickHandler = CreateFrame("Frame", addonName .. "WorldMapClickHandler", WorldMapFrame.ScrollContainer)
     end
+
+    local handler = self.worldMapClickHandler
+    handler:SetAllPoints()
+
+    handler.UpdatePassThrough = function(self)
+        local alt, ctrl, shift = IsAltKeyDown(), IsControlKeyDown(), IsShiftKeyDown()
+
+        local modKey = TomTom.db.profile.worldmap.create_modifier
+        if modKey and verifyFuncs[modKey] and verifyFuncs[modKey](alt, ctrl, shift) then
+            if self.SetPassThroughButtons and not InCombatLockdown() then
+                self:SetPassThroughButtons("LeftButton", "MiddleButton", "Button4", "Button5")
+            end
+
+            self:Show()
+        else
+            if self.SetPassThroughButtons and not InCombatLockdown() then
+                self:SetPassThroughButtons("LeftButton", "RightButton", "MiddleButton", "Button4", "Button5")
+            end
+
+            self:Hide()
+        end
+    end
+
+    handler:RegisterEvent("MODIFIER_STATE_CHANGED")
+    handler:SetScript("OnEvent", handler.UpdatePassThrough)
+    handler:SetScript("OnMouseUp", function(frame, button)
+        addon:AddWaypointFromMapClick()
+    end)
+
+    handler:SetScript("OnUpdate", function(self, elapsed)
+            handler:UpdatePassThrough()
+    end)
+
+    handler:UpdatePassThrough()
 end
 
--- Add WorldMap_OnClick as a Click Handler on the WorldMapFrame Canvas
-WorldMapFrame:AddCanvasClickHandler(WorldMap_OnClick,10)
+function addon:AddWaypointFromMapClick()
+    local m = WorldMapFrame.mapID
+    local x,y = WorldMapFrame:GetNormalizedCursorPosition()
+
+    if not m or m == 0 then
+        return
+    end
+
+    TomTom:AddWaypoint(m, x, y, { title = L["TomTom waypoint"], from="TomTom/wm"})
+end
+
+-- This is a taint factory, removed in favour of the above
+-- -- This is now a registered click handler.
+-- -- If we return false, it gets passed on to the next handler.
+-- -- We need to return true when we handle the click.
+-- local function WorldMap_OnClick (self, ...)
+--     local mouseButton, button = ...
+--     if mouseButton == "RightButton" then
+--         -- Check for all the modifiers that are currently set
+--         for mod in TomTom.db.profile.worldmap.create_modifier:gmatch("[ACS]") do
+--             if not world_click_verify[mod] or not world_click_verify[mod]() then
+--                 return false
+--             end
+--         end
+
+--         local m = WorldMapFrame.mapID
+--         local x,y = WorldMapFrame:GetNormalizedCursorPosition()
+
+--         if not m or m == 0 then
+--             return false
+--         end
+
+--         local uid = TomTom:AddWaypoint(m, x, y, { title = L["TomTom waypoint"], from="TomTom/wm"})
+--         return true
+--     else
+--         return false
+--     end
+-- end
+
+-- -- Add WorldMap_OnClick as a Click Handler on the WorldMapFrame Canvas
+-- WorldMapFrame:AddCanvasClickHandler(WorldMap_OnClick,10)
 
 local function WaypointCallback(event, arg1, arg2, arg3)
     if event == "OnDistanceArrive" then
@@ -532,154 +630,81 @@ StaticPopupDialogs["TOMTOM_REMOVE_ALL_CONFIRM"] = {
     hideOnEscape = 1,
 }
 
-local dropdown_info = {
-    -- Define level one elements here
-    [1] = {
-        { -- Title
-        text = L["Waypoint Options"],
-        isTitle = 1,
-    },
-    {
-        -- set as crazy arrow
-        text = L["Set as waypoint arrow"],
-        func = function()
-            local uid = TomTom.dropdown.uid
-            local data = uid
-            TomTom:SetCrazyArrow(uid, TomTom.profile.arrow.arrival, data.title or L["TomTom waypoint"])
-        end,
-    },
-    {
-        -- Send waypoint
-        text = L["Send waypoint to"],
-        hasArrow = true,
-        value = "send",
-    },
-    { -- Remove waypoint
-    text = L["Remove waypoint"],
-    func = function()
-        local uid = TomTom.dropdown.uid
+local function waypointDropdownGenerator(owner, rootDescription)
+	rootDescription:CreateTitle(L["Waypoint Options"]);
+
+    rootDescription:CreateButton(L["Set as waypoint arrow"], function()
+        local uid = TomTom.dropdown_uid
         local data = uid
-        TomTom:RemoveWaypoint(uid)
-        --TomTom:Printf("Removing waypoint %0.2f, %0.2f in %s", data.x, data.y, data.zone)
-    end,
-},
-{ -- Remove all waypoints from this zone
-text = L["Remove all waypoints from this zone"],
-func = function()
-    local uid = TomTom.dropdown.uid
-    local data = uid
-    local mapId = data[1]
-    for key, waypoint in pairs(waypoints[mapId]) do
-        TomTom:RemoveWaypoint(waypoint)
-    end
-end,
-        },
-        { -- Remove ALL waypoints
-        text = L["Remove all waypoints"],
-        func = function()
-            if TomTom.db.profile.general.confirmremoveall then
-                StaticPopup_Show("TOMTOM_REMOVE_ALL_CONFIRM")
-            else
-                StaticPopupDialogs["TOMTOM_REMOVE_ALL_CONFIRM"].OnAccept()
-                return
-            end
-        end,
-    },
-    { -- Save this waypoint
-    text = L["Save this waypoint between sessions"],
-    checked = function()
-        return TomTom:UIDIsSaved(TomTom.dropdown.uid)
-    end,
-    func = function()
-        -- Add/remove it from the SV file
-        local uid = TomTom.dropdown.uid
-        if uid then
-            local key = TomTom:GetKey(uid)
-            local mapId = uid[1]
+        addon:SetCrazyArrow(uid, addon.profile.arrow.arrival, data.title or L["TomTom waypoint"])
+    end)
 
-            if mapId then
-                if TomTom:UIDIsSaved(uid) then
-                    TomTom.waypointprofile[mapId][key] = nil
-                else
-                    TomTom.waypointprofile[mapId][key] = uid
-                end
-            end
-        end
-    end,
-},
-    },
-    [2] = {
-        send = {
-            {
-                -- Title
-                text = L["Waypoint communication"],
-                isTitle = true,
-            },
-            {
-                -- Party
-                text = L["Send to party"],
-                func = function()
-                    TomTom:SendWaypoint(TomTom.dropdown.uid, "PARTY")
-                end
-            },
-            {
-                -- Raid
-                text = L["Send to raid"],
-                func = function()
-                    TomTom:SendWaypoint(TomTom.dropdown.uid, "RAID")
-                end
-            },
-            {
-                -- Battleground
-                text = L["Send to battleground"],
-                func = function()
-                    TomTom:SendWaypoint(TomTom.dropdown.uid, "BATTLEGROUND")
-                end
-            },
-            {
-                -- Guild
-                text = L["Send to guild"],
-                func = function()
-                    TomTom:SendWaypoint(TomTom.dropdown.uid, "GUILD")
-                end
-            },
-        },
-    },
-}
+	-- Waypoint communications
+    local sendWaypoint = rootDescription:CreateButton(L["Send waypoint to"])
+	sendWaypoint:CreateTitle(L["Waypoint communication"])
+	sendWaypoint:CreateButton(L["Send to party"], function()
+		addon:SendWaypoint(addon.dropdown_uid, "PARTY")
+	end)
+	sendWaypoint:CreateButton(L["Send to raid"], function()
+		addon:SendWaypoint(addon.dropdown_uid, "RAID")
+	end)
+	sendWaypoint:CreateButton(L["Send to battleground"], function()
+		addon:SendWaypoint(addon.dropdown_uid, "BATTLEGROUND")
+	end)
+	sendWaypoint:CreateButton(L["Send to guild"], function()
+		addon:SendWaypoint(addon.dropdown_uid, "GUILD")
+	end)
 
-local function init_dropdown(self, level)
-    -- Make sure level is set to 1, if not supplied
-    level = level or 1
+	rootDescription:CreateButton(L["Clear waypoint from crazy arrow"], function()
+		addon:ClearCrazyArrowPoint(false)
+	end)
 
-    -- Get the current level from the info table
-    local info = dropdown_info[level]
+	rootDescription:CreateButton(L["Remove waypoint"], function()
+		local uid = addon.dropdown_uid
+		addon:RemoveWaypoint(uid)
+	end)
 
-    -- If a value has been set, try to find it at the current level
-    if level > 1 and UIDROPDOWNMENU_MENU_VALUE then
-        if info[UIDROPDOWNMENU_MENU_VALUE] then
-            info = info[UIDROPDOWNMENU_MENU_VALUE]
-        end
+	rootDescription:CreateButton(L["Remove all waypoints from this zone"], function()
+		local uid = addon.dropdown_uid
+		local data = uid
+		local mapId = data[1]
+		for key, waypoint in pairs(addon.waypoints[mapId]) do
+			addon:RemoveWaypoint(waypoint)
+		end
+	end)
+
+	rootDescription:CreateButton(L["Remove all waypoints"], function()
+		if addon.db.profile.general.confirmremoveall then
+			StaticPopup_Show("TOMTOM_REMOVE_ALL_CONFIRM")
+		else
+			StaticPopupDialogs["TOMTOM_REMOVE_ALL_CONFIRM"].OnAccept()
+			return
+		end
+	end)
+
+    local isDropdownWaypointSaved = function()
+        local uid = addon.dropdown_uid
+        return not not addon:UIDIsSaved(uid)
     end
 
-    -- Add the buttons to the menu
-    for idx,entry in ipairs(info) do
-        if type(entry.checked) == "function" then
-            -- Make this button dynamic
-            local new = {}
-            for k,v in pairs(entry) do new[k] = v end
-            new.checked = new.checked()
-            entry = new
+    local setDropdownWaypointSaved = function()
+        local uid = addon.dropdown_uid
+        if not uid then
+            return false
+        end
+
+        local key = addon:GetKey(uid)
+        local mapId = uid[1]
+        local saved = addon:UIDIsSaved(uid)
+
+        if saved then
+            addon.waypointprofile[mapId][key] = nil
         else
-            entry.checked = nil
+            addon.waypointprofile[mapId][key] = uid
         end
-
-        UIDropDownMenu_AddButton(entry, level)
     end
-end
 
-function TomTom:InitializeDropdown(uid)
-    self.dropdown.uid = uid
-    UIDropDownMenu_Initialize(self.dropdown, init_dropdown)
+    rootDescription:CreateCheckbox(L["Save this waypoint between sessions"], isDropdownWaypointSaved, setDropdownWaypointSaved)
 end
 
 function TomTom:UIDIsSaved(uid)
@@ -728,15 +753,15 @@ end
 -------------------------------------------------------------------]]--
 local function _minimap_onclick(event, uid, self, button)
     if TomTom.db.profile.minimap.menu then
-        TomTom:InitializeDropdown(uid)
-        ToggleDropDownMenu(1, nil, TomTom.dropdown, "cursor", 0, 0)
+        TomTom.dropdown_uid = uid
+        MenuUtil.CreateContextMenu(self, waypointDropdownGenerator)
     end
 end
 
 local function _world_onclick(event, uid, self, button)
     if TomTom.db.profile.worldmap.menu then
-        TomTom:InitializeDropdown(uid)
-        ToggleDropDownMenu(1, nil, TomTom.dropdown, "cursor", 0, 0)
+        TomTom.dropdown_uid = uid
+        MenuUtil.CreateContextMenu(self, waypointDropdownGenerator)
     end
 end
 
@@ -979,6 +1004,17 @@ function TomTom:IsValidWaypoint(waypoint)
     end
 end
 
+function TomTom:WaypointHasSameMapXYTitle(waypoint, map, x, y, title)
+    -- This is a hack that relies on the UID format, do not use this
+    -- in your addons, please.
+    local pm, px, py = unpack(waypoint)
+    if map == pm and x == px and y == py and waypoint.title == title then
+        return true
+    end
+
+    return false
+end
+
 function TomTom:WaypointExists(m, x, y, desc)
     local key = self:GetKeyArgs(m, x, y, desc)
     if waypoints[m] and waypoints[m][key] then
@@ -1132,12 +1168,13 @@ function TomTom:DebugListAllWaypoints()
 end
 
 local function usage()
-    ChatFrame1:AddMessage(L["|cffffff78TomTom |r/way /tway /tomtomway /cway /wayb /wayback/tomtom |cffffff78Usage:|r"])
+    ChatFrame1:AddMessage(L["|cffffff78TomTom |r/way /tway /tomtomway /cway /wayb /wayback /ttpase /tomtom |cffffff78Usage:|r"])
     ChatFrame1:AddMessage(L["|cffffff78/tomtom |r - Open the TomTom options panel"])
+    ChatFrame1:AddMessage(L["|cffffff78/ttpaste |r - Open a window to paste and execute multiple TomTom commands"])
     ChatFrame1:AddMessage(L["|cffffff78/cway |r - Activate the closest waypoint"])
     ChatFrame1:AddMessage(L["|cffffff78/wayb [desc] |r - Save the current position with optional description"])
     ChatFrame1:AddMessage(L["|cffffff78/way /tway /tomtomway |r - Commands to set a waypoint: one should work."])
-    ChatFrame1:AddMessage(L["|cffffff78/way <x> <y> [desc]|r - Adds a waypoint at x,y with descrtiption desc"])
+    ChatFrame1:AddMessage(L["|cffffff78/way <x> <y> [desc]|r - Adds a waypoint at x,y with description desc"])
     ChatFrame1:AddMessage(L["|cffffff78/way <zone> <x> <y> [desc]|r - Adds a waypoint at x,y in zone with description desc"])
     ChatFrame1:AddMessage(L["|cffffff78/way reset all|r - Resets all waypoints"])
     ChatFrame1:AddMessage(L["|cffffff78/way reset away|r - Resets all waypoints not in current zone"])
@@ -1148,6 +1185,8 @@ local function usage()
     ChatFrame1:AddMessage(L["|cffffff78/way arrow|r - Prints status of the Crazy Arrow"])
     ChatFrame1:AddMessage(L["|cffffff78/way block|r - Prints status of the Coordinate Block"])
 end
+
+TomTom.slashCommandUsage = usage
 
 TomTom.CZWFromMapID = {}
 local overrides = {
@@ -1367,7 +1406,7 @@ local rightseparator =   "%1" .. (tonumber("1.1") and "." or ",") .. "%2"
 -- Make comparison only using lowercase letters and no spaces
 local function lowergsub(s) return s:lower():gsub("[%s]", "") end
 
-SlashCmdList["TOMTOM_WAY"] = function(msg)
+addon.SlashWayCommand = function(msg)
     msg = msg:gsub("(%d)[%.,] (%d)", "%1 %2"):gsub(wrongseparator, rightseparator)
     local tokens = {}
     for token in msg:gmatch("%S+") do table.insert(tokens, token) end
@@ -1587,3 +1626,4 @@ SlashCmdList["TOMTOM_WAY"] = function(msg)
     end
 end
 
+SlashCmdList["TOMTOM_WAY"] = addon.SlashWayCommand

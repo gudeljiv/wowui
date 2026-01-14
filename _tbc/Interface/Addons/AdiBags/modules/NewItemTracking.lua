@@ -24,13 +24,23 @@ local L = addon.L
 
 --<GLOBALS
 local _G = _G
-local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER
+local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Backpack ) or 0
+local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
 local CreateFrame = _G.CreateFrame
-local GetContainerItemInfo = _G.GetContainerItemInfo
-local GetContainerNumSlots = _G.GetContainerNumSlots
+local GetContainerItemInfo = C_Container and _G.C_Container.GetContainerItemInfo or _G.GetContainerItemInfo
+local GetContainerNumSlots = C_Container and _G.C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
+local IsBattlePayItem = C_Container and _G.C_Container.IsBattlePayItem or _G.IsBattlePayItem or function(...) return false end
 local GetInventoryItemID = _G.GetInventoryItemID
 local GetInventoryItemLink = _G.GetInventoryItemLink
-local ITEM_QUALITY_POOR = _G.Enum.ItemQuality.Poor
+
+local ITEM_QUALITY_POOR
+
+if addon.isRetail then
+	ITEM_QUALITY_POOR = _G.Enum.ItemQuality.Poor
+else
+	ITEM_QUALITY_POOR = _G.LE_ITEM_QUALITY_POOR
+end
+
 local next = _G.next
 local pairs = _G.pairs
 local PlaySound = _G.PlaySound
@@ -54,6 +64,7 @@ function mod:OnInitialize()
 			glowScale = 1.5,
 			glowColor = { 0.3, 1, 0.3, 0.7 },
 			ignoreJunk = false,
+			highlightChangedItems = false,
 		},
 	})
 
@@ -73,6 +84,8 @@ function mod:OnEnable()
 	end
 
 	self:RegisterMessage('AdiBags_UpdateButton', 'UpdateButton')
+	self:RegisterMessage('AdiBags_AddNewItem', 'AddNewItem')
+	self:RegisterMessage('AdiBags_ButtonProtoRelease', 'StopButtonGlow')
 	self:RegisterEvent('BAG_NEW_ITEMS_UPDATED')
 end
 
@@ -113,15 +126,29 @@ function mod:OnBagFrameCreated(bag)
 end
 
 function mod:UpdateButton(event, button)
-	if addon.BAG_IDS.BANK[button.bag] then return end
+	if addon.BAG_IDS.BANK[button.bag] then
+		self:StopButtonGlow(event, button)
+		return
+	end
 	local isNew = self:IsNew(button.bag, button.slot, button.itemLink)
 	self:ShowLegacyGlow(button, isNew and mod.db.profile.highlight == "legacy")
 	self:ShowBlizzardGlow(button, isNew and mod.db.profile.highlight == "blizzard")
 	self:UpdateModuleButton()
 end
 
+function mod:StopButtonGlow(event, button)
+	self:ShowLegacyGlow(button, false)
+	self:ShowBlizzardGlow(button, false)
+end
+
 function mod:UpdateModuleButton()
 	self.button:SetEnabled(next(newItems) or self.container.ToSortSection:IsShown())
+end
+
+function mod:AddNewItem(event, link)
+	if self.db.profile.highlightChangedItems then
+		newItems[link] = true
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -136,7 +163,7 @@ function mod:IsNew(bag, slot, link)
 	elseif not addon.BAG_IDS.BANK[bag]
 		and C_NewItems.IsNewItem(bag, slot)
 		and not IsBattlePayItem(bag, slot)
-		and (not self.db.profile.ignoreJunk or select(4, GetContainerItemInfo(bag, slot)) ~= ITEM_QUALITY_POOR)
+		and (not self.db.profile.ignoreJunk or addon:GetContainerItemQuality(bag, slot) ~= ITEM_QUALITY_POOR)
 	then
 		newItems[link] = true
 		return true
@@ -202,6 +229,12 @@ function mod:GetOptions()
 			end,
 			width = 'double',
 		},
+		highlightChangedItems = {
+			name = L['Highlight items that have changed'],
+			type = 'toggle',
+			order = 50,
+			width = 'double'
+		}
 	}, addon:GetOptionHandler(self)
 end
 
@@ -210,8 +243,9 @@ end
 --------------------------------------------------------------------------------
 
 function mod:ShowBlizzardGlow(button, enable)
+	if not button.NewItemTexture then return end
 	if enable then
-		local _, _, _, quality = GetContainerItemInfo(button.bag, button.slot)
+		local quality = addon:GetContainerItemQuality(button.bag, button.slot)
 		if quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] then
 			button.NewItemTexture:SetAtlas(NEW_ITEM_ATLAS_BY_QUALITY[quality])
 		else

@@ -19,7 +19,9 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
 --<GLOBALS
@@ -144,7 +146,7 @@ local safecall = addon.safecall
 function addon:Filter(slotData, defaultSection, defaultCategory)
 	for i, filter in ipairs(GetActiveFilters()) do
 		local sectionName, category = safecall(filter.Filter, filter, slotData)
-		if sectionName then
+		if sectionName and sectionName ~= "" then
 			--[===[@alpha@
 			assert(type(sectionName) == "string", "Filter "..filter.name.." returned "..type(sectionName).." as section name instead of a string")
 			assert(category == nil or type(category) == "string", "Filter "..filter.name.." returned "..type(category).." as category instead of a string")

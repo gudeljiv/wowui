@@ -1,10 +1,13 @@
 --DBM HudMap integration written by MysticalOS
---All code here executes functions from https://github.com/DeadlyBossMods/DBM-Classic/blob/master/DBM-Core/DBM-HudMap.lua
+--All code here executes functions from https://github.com/DeadlyBossMods/DBM-Unified/blob/master/DBM-Core/DBM-HudMap.lua
 ----------------------
 --  Globals/Locals  --
 ----------------------
 ---@class QuestieDBMIntegration
 local QuestieDBMIntegration = QuestieLoader:CreateModule("QuestieDBMIntegration");
+
+---@type l10n
+local l10n = QuestieLoader:ImportModule("l10n")
 
 --Libs
 local HBD = LibStub("HereBeDragonsQuestie-2.0")
@@ -13,7 +16,8 @@ local LastInstanceMapID = 9999--Just making sure to set initial zone ID to a num
 local KalimdorPoints = {}--Maintains Kalimdor objective list
 local EKPoints = {}--Maintains Eastern Kingdoms objective list
 local OutlandPoints = {}--Maintains Outland objective list
---local NorthrendPoints = {}--Maintains Northrend Kingdoms objective list
+local NorthrendPoints = {}--Maintains Northrend Kingdoms objective list
+local PandariaPoints = {}--Maintains Pandaria objective list
 local AddedHudIds = {}--Tracking table of all active hud markers
 local playerName = UnitName("player")
 local QuestieHUDEnabled = false
@@ -25,17 +29,33 @@ local QuestieHUDEnabled = false
 local function AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
     if tableString and not AddedHudIds[tableString] then
         --Icon based filters, if icon is disabled, return without adding
-        if not Questie.db.global.dbmHUDShowSlay and icon:find("slay") or not Questie.db.global.dbmHUDShowQuest and (icon:find("complete") or icon:find("available")) or not Questie.db.global.dbmHUDShowInteract and icon:find("object") or not Questie.db.global.dbmHUDShowLoot and icon:find("loot") then return end
+        if  not Questie.db.profile.dbmHUDShowSlay and icon == Questie.ICON_TYPE_SLAY or
+            not Questie.db.profile.dbmHUDShowQuest and (
+                icon == Questie.ICON_TYPE_AVAILABLE or
+                icon == Questie.ICON_TYPE_AVAILABLE_GRAY or
+                icon == Questie.ICON_TYPE_COMPLETE or
+                icon == Questie.ICON_TYPE_EVENTQUEST or
+                icon == Questie.ICON_TYPE_EVENTQUEST_COMPLETE or
+                icon == Questie.ICON_TYPE_INCOMPLETE or
+                icon == Questie.ICON_TYPE_PVPQUEST or
+                icon == Questie.ICON_TYPE_PVPQUEST_COMPLETE or
+                icon == Questie.ICON_TYPE_REPEATABLE or
+                icon == Questie.ICON_TYPE_REPEATABLE_COMPLETE or
+                icon == Questie.ICON_TYPE_SODRUNE) or
+            not Questie.db.profile.dbmHUDShowInteract and icon == Questie.ICON_TYPE_OBJECT or
+            not Questie.db.profile.dbmHUDShowLoot and icon == Questie.ICON_TYPE_LOOT then
+            return
+        end
         if not DBM.HudMap.HUDEnabled then
             --Force a fixed zoom, if one is not set, hudmap tries to zoom out until all registered icons fit, that's no good for world wide quest icons
-            DBM.HudMap:SetFixedZoom(Questie.db.global.DBMHUDZoom or 100)
-            QuestieDBMIntegration:ChangeRefreshRate(Questie.db.global.DBMHUDRefresh or 0.03)
+            DBM.HudMap:SetFixedZoom(Questie.db.profile.DBMHUDZoom or 100)
+            QuestieDBMIntegration:ChangeRefreshRate(Questie.db.profile.DBMHUDRefresh or 0.03)
         end
         --uniqueID, name, texture, x, y, radius, duration, r, g, b, a, blend, useLocalMap, LocalMapId
-        if Questie.db.global.dbmHUDShowAlert then
-            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear():RegisterForAlerts()
+        if Questie.db.profile.dbmHUDShowAlert then
+            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", Questie.usedIcons[icon], x, y, Questie.db.profile.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear():RegisterForAlerts()
         else
-            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear()
+            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", Questie.usedIcons[icon], x, y, Questie.db.profile.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear()
         end
         AddedHudIds[tableString] = true
         --print("Adding "..tableString)
@@ -58,7 +78,7 @@ do
     local eventFrame = CreateFrame("frame", "QuestieDBMIntegration", UIParent)
     local GetInstanceInfo, IsInInstance = GetInstanceInfo, IsInInstance
     local warningShown = false
-        
+
     local function CleanupPoints(keepInstance)
         if keepInstance ~= 0 then
             for tableString, points in pairs(EKPoints) do
@@ -75,12 +95,16 @@ do
                 RemoveHudQuestIcon(tableString)
             end
         end
-        --Future Proofing
-       --[[ if keepInstance ~= 571 then
+       if keepInstance ~= 571 then
             for tableString, points in pairs(NorthrendPoints) do
                 RemoveHudQuestIcon(tableString)
             end
-        end--]]
+        end
+        if keepInstance ~= 860 and keepInstance ~= 870 then--Turtle island and main pandaria continent
+            for tableString, points in pairs(PandariaPoints) do
+                RemoveHudQuestIcon(tableString)
+            end
+        end
     end
 
     local function ReAddHudIcons()
@@ -94,6 +118,14 @@ do
             end
         elseif LastInstanceMapID == 530 then--It means we are now in Kalimdor (but weren't before)
             for tableString, points in pairs(OutlandPoints) do
+                AddHudQuestIcon(tableString, points.icon, points.AreaID, points.x, points.y, points.r, points.g, points.b)
+            end
+        elseif LastInstanceMapID == 571 then--It means we are now in Northrend (but weren't before)
+            for tableString, points in pairs(NorthrendPoints) do
+                AddHudQuestIcon(tableString, points.icon, points.AreaID, points.x, points.y, points.r, points.g, points.b)
+            end
+        elseif LastInstanceMapID == 860 or LastInstanceMapID == 870 then--It means we are now in Pandaria (but weren't before)
+            for tableString, points in pairs(PandariaPoints) do
                 AddHudQuestIcon(tableString, points.icon, points.AreaID, points.x, points.y, points.r, points.g, points.b)
             end
         end
@@ -124,7 +156,7 @@ do
             DelayedMapCheck()
             DBM:Schedule(1, DelayedMapCheck)
             if not warningShown then
-                DBM:AddMsg("Questie has activated DBM HUD overlay. For more options, visit DBM HUD tab in Questie options")
+                DBM:AddMsg(l10n("Questie has activated DBM HUD overlay. For more options, visit DBM HUD tab in Questie options"))
                 warningShown = true
             end
         end
@@ -149,6 +181,8 @@ do
             KalimdorPoints = {}
             EKPoints = {}
             OutlandPoints = {}
+            NorthrendPoints = {}
+            PandariaPoints = {}
             --Also used onClick for GUI option to turn feature off, of course, just pass disable arg
             if disable then
                 QuestieHUDEnabled = false
@@ -209,7 +243,7 @@ function QuestieDBMIntegration:RegisterHudQuestIcon(tableString, icon, AreaID, x
                 KalimdorPoints[tableString].g = g
                 KalimdorPoints[tableString].b = b
             end
-            --Object being reistered is in continent we currently reside, add to hud
+            --Object being registered is in continent we currently reside, add to hud
             if LastInstanceMapID == 1 then
                 AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
             --else
@@ -227,8 +261,44 @@ function QuestieDBMIntegration:RegisterHudQuestIcon(tableString, icon, AreaID, x
                 OutlandPoints[tableString].g = g
                 OutlandPoints[tableString].b = b
             end
-            --Object being reistered is in continent we currently reside, add to hud
+            --Object being registered is in continent we currently reside, add to hud
             if LastInstanceMapID == 530 then
+                AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
+            --else
+                --print("Rejecting point for being on a different continent")
+            end
+        elseif instanceID == 571 then
+            --Build a Kalimdor Points Table
+            if not NorthrendPoints[tableString] then
+                NorthrendPoints[tableString] = {}
+                NorthrendPoints[tableString].icon = icon
+                NorthrendPoints[tableString].AreaID = AreaID
+                NorthrendPoints[tableString].x = x
+                NorthrendPoints[tableString].y = y
+                NorthrendPoints[tableString].r = r
+                NorthrendPoints[tableString].g = g
+                NorthrendPoints[tableString].b = b
+            end
+            --Object being registered is in continent we currently reside, add to hud
+            if LastInstanceMapID == 571 then
+                AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
+            --else
+                --print("Rejecting point for being on a different continent")
+            end
+        elseif instanceID == 860 or instanceID == 870 then--Turtle island and main pandaria continent
+            --Build a Pandaria Points Table
+            if not PandariaPoints[tableString] then
+                PandariaPoints[tableString] = {}
+                PandariaPoints[tableString].icon = icon
+                PandariaPoints[tableString].AreaID = AreaID
+                PandariaPoints[tableString].x = x
+                PandariaPoints[tableString].y = y
+                PandariaPoints[tableString].r = r
+                PandariaPoints[tableString].g = g
+                PandariaPoints[tableString].b = b
+            end
+            --Object being registered is in continent we currently reside, add to hud
+            if LastInstanceMapID == 860 or LastInstanceMapID == 870 then
                 AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
             --else
                 --print("Rejecting point for being on a different continent")
@@ -244,6 +314,8 @@ function QuestieDBMIntegration:UnregisterHudQuestIcon(tableString)
         if KalimdorPoints[tableString] then KalimdorPoints[tableString] = nil end
         if EKPoints[tableString] then EKPoints[tableString] = nil end
         if OutlandPoints[tableString] then OutlandPoints[tableString] = nil end
+        if NorthrendPoints[tableString] then OutlandPoints[tableString] = nil end
+        if PandariaPoints[tableString] then PandariaPoints[tableString] = nil end
         if AddedHudIds[tableString] then
             RemoveHudQuestIcon(tableString)
         end

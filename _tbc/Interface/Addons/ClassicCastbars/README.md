@@ -1,26 +1,22 @@
 # ClassicCastbars
 
-World of Warcraft Classic addon that brings back the target & nameplate castbars. Casting times in Classic Era are always based on highest spell rank due to API restrictions.
+Customizable castbars for Classic & Retail World of Warcraft. Type "/castbar" to open the options panel.  
+Includes optional party & nameplate castbars, school lockout alerts, and basic channel + uninterruptible cast state tracking for Classic Era.  
+
+**Note: This addon is now in maintenance mode, expect less frequent updates.**
+
+## Classic Era 1.15.0+
+
+This addon is no longer needed for Classic Era to see *target* castbars. You may disable this addon now and enable castbars in `Blizzard Options -> Interface -> Show Enemy Cast Bar` instead.  
+
+For anyone still using it for castbar customizations, make sure you're using version 1.7.2+ to support the new built in cast events.
 
 ## Links
 
-- [CurseForge Download & FAQ](https://www.curseforge.com/wow/addons/classiccastbars)
-- [Github Download](https://github.com/wardz/classiccastbars/releases)
-- [How to Install AddOns](https://www.wowinterface.com/forums/faq.php?faq=install)
+- [CurseForge Main Download](https://www.curseforge.com/wow/addons/classiccastbars)
 - [Submit Translations](https://www.curseforge.com/wow/addons/classiccastbars/localization)
-- [Submit Bugs or Feedback](https://github.com/wardz/ClassicCastbars/issues)
-
-### Contributing
-
-Everytime you want to test changes to the addon's source code you will need to run the [BigWigs packager](https://github.com/BigWigsMods/packager) script. You should setup a symlink for `/ClassicCastbars/` and `/ClassicCastbars_Options/` in the generated `ClassicCastbars/.release/ClassicCastbars/` folders, and link it to your WoW addons folder so your game files are always up to date after running the packager script.  
-See file `add_symlinks.bat` for Windows.
-  
-**Packager Script:**  
-*On Windows you can run this shell file inside Git Bash.*
-
-- Classic Test Build: `./release.sh -d -l -z -e -g classic`
-- TBC Test Build: `./release.sh -d -l -z -e -g bcc`
+- [Submit Bugs or Issues](https://github.com/wardz/ClassicCastbars/issues)
 
 ### License
 
-Copyright (C) 2021 Wardz | [MIT License](https://opensource.org/licenses/MIT).
+Copyright (C) 2024 Wardz | [MIT License](https://opensource.org/licenses/MIT).

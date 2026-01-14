@@ -1,0 +1,11 @@
+## Interface: 110002, 40400, 11503
+## Title: |cff00ff00TradeSkillMaster_AppHelper|r
+## IconTexture: Interface\Addons\TradeSkillMaster\Media\Logo
+## Notes: Acts as a connection between the TSM addon and app.
+## Author: TSM Team
+## Version: v4.14.1
+## SavedVariables: TradeSkillMaster_AppHelperDB
+## Dependency: TradeSkillMaster
+
+TradeSkillMaster_AppHelper.lua
+AppData.lua

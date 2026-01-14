@@ -19,7 +19,9 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
 --<GLOBALS
@@ -60,6 +62,7 @@ end
 
 local function AnchoredBagLayout(self)
 	self.anchor:ApplySettings()
+	self:Debug("Anchor Bag Layout")
 
 	local nextBag, data, firstIndex = self:IterateBags(true)
 	local index, bag = nextBag(data, firstIndex)

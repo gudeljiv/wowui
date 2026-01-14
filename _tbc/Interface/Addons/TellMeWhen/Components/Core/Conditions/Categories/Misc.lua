@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -60,27 +60,20 @@ ConditionCategory:RegisterCondition(1,	 "ICON", {
 	icon = "Interface\\Icons\\INV_Misc_PocketWatch_01",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c, icon)
-		if c.Icon == "" or c.Icon == icon:GetGUID() then
-			--return [[true]]
-		end
-
 		TMW:QueueValidityCheck(icon, c.Icon, L["VALIDITY_CONDITION_DESC"])
 
-		local str = [[( c.Icon and c.Icon.attributes.shown and not c.Icon:Update())]]
-		if c.Level == 0 then
-			str = str .. [[and c.Icon.attributes.realAlpha > 0]]
-		else
-			str = str .. [[and c.Icon.attributes.realAlpha == 0]]
-		end
-		return str
+		return "BOOLCHECK(c.Icon and c.Icon.attributes.shown and c.Icon.attributes.realAlpha > 0)"
 	end,
-	--[[events = function(ConditionObject, c)
+	events = function(ConditionObject, c)
 		local event = TMW.Classes.IconDataProcessor.ProcessorsByName.REALALPHA.changedEvent
 		ConditionObject:RequestEvent(event)
+		local event2 = TMW.Classes.IconDataProcessor.ProcessorsByName.SHOWN.changedEvent
+		ConditionObject:RequestEvent(event2)
+
 		ConditionObject:SetNumEventArgs(1)
 		return
-			"event == '" .. event .. "' and arg1:GetGUID() == " .. format("%q", c.Icon)
-	end,]]
+			"(event == '" .. event .. "' or event == '" .. event2 .. "') and arg1:GetGUID() == " .. format("%q", c.Icon)
+	end,
 })
 
 local function RegisterShownHiddenTimerCallback()
@@ -148,6 +141,37 @@ ConditionCategory:RegisterCondition(1.3,	"ICONHIDDENTME", {
 	end,
 })
 
+-- Include icons referenced by conditions
+TMW:RegisterCallback("TMW_EXPORT_SETTINGS_REQUESTED", function(event, strings, type, settings)
+	if type == "icon" then
+		for n, conditionSettings in TMW:InNLengthTable(settings.Conditions) do
+			local Type = conditionSettings.Type
+			local conditionData = CNDT.ConditionsByType[Type]
+			if conditionData.isicon then
+				local GUID = conditionSettings.Icon
+				local type = TMW:ParseGUID(GUID)
+				local settings = TMW:GetSettingsFromGUID(GUID)
+				if type == "icon" and settings then
+					TMW:GetSettingsStrings(strings, type, settings, TMW.Icon_Defaults)
+				end
+			end
+		end
+	end
+end)
+
+-- Collect icon dependencies from conditions
+TMW:RegisterCallback("TMW_ICON_COLLECT_DEPENDENCIES", function(event, icon, dependencies)
+	if icon and icon.Conditions then
+		for n, conditionSettings in TMW:InNLengthTable(icon.Conditions) do
+			local GUID = conditionSettings.Icon
+			if GUID and GUID ~= "" then
+				tinsert(dependencies, GUID)
+			end
+		end
+	end
+end)
+
+
 
 ConditionCategory:RegisterCondition(3,	 "MOUSEOVER", {
 	text = L["MOUSEOVERCONDITION"],
@@ -207,7 +231,7 @@ ConditionCategory:RegisterCondition(12,	 "TIMEOFDAY", {
 		--return CNDT.COMMON.formatSeconds(k*60)
 	end,
 	unit = false,
-	icon = "Interface\\Icons\\inv_misc_pocketwatch_02",
+	icon = ClassicExpansionAtLeast(LE_EXPANSION_MISTS_OF_PANDARIA) and "Interface\\Icons\\Ability_Racial_TimeIsMoney" or "Interface\\Icons\\inv_misc_pocketwatch_02",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		GetDaysElapsedMinutes = function()
@@ -252,7 +276,7 @@ ConditionCategory:RegisterCondition(21,	 "QUESTCOMPLETE", {
 	},
 	funcstr = function(c)
 		if c.Name ~= "" then
-			return [[BOOLCHECK( IsQuestFlaggedCompleted(c.NameFirst) )]]
+			return [[BOOLCHECK( IsQuestFlaggedCompleted(c.Name) )]]
 		else
 			return [[false]]
 		end

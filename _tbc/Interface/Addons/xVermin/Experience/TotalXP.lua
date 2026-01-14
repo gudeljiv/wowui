@@ -54,8 +54,8 @@ tx:SetScript(
 		if button == 'LeftButton' then
 			totalxp = 0
 			pulltotal = 0
-			txtotal.text:SetText('T: ' .. xVermin:FormatNumber(totalxp, ','))
-			txpulltotal.text:SetText('P: ' .. xVermin:FormatNumber(pulltotal, ','))
+			txtotal.text:SetText('T: ' .. xVermin.FormatNumber(totalxp, ','))
+			txpulltotal.text:SetText('P: ' .. xVermin.FormatNumber(pulltotal, ','))
 		end
 		if button == 'RightButton' then
 			xVermin:Debug()

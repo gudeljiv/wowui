@@ -1,13 +1,13 @@
 local _, xVermin = ...
 
-local function print_children(frame)
-	-- print("amount children: " .. frame:GetNumChildren())
+function print_children(frame)
+	print('amount children: ' .. frame:GetNumChildren())
 	local children = {frame:GetChildren()}
 
 	for key, child in ipairs(children) do
 		local name = child:GetName() or child:GetDebugName()
 
-		-- child:CreateBeautyBorder(8)
+		ChatFrame7:AddMessage(name)
 
 		if child:GetNumChildren() and frame:GetNumChildren() > 0 then
 			print_children(child)
@@ -15,10 +15,9 @@ local function print_children(frame)
 	end
 end
 
--- C_Timer.NewTicker(1, function(self)
--- 	print(1)
--- 	if WeakAurasFrame then
--- 		self:Cancel()
+-- xVermin.CheckIfLoadedWithTimer(
+-- 	WeakAurasFrame,
+-- 	function()
 -- 		print_children(WeakAurasFrame)
 -- 	end
--- end)
+-- )

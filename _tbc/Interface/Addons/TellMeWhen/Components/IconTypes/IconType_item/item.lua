@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -17,11 +17,10 @@ local L = TMW.L
 local print = TMW.print
 local pairs, ipairs =
 	  pairs, ipairs
-local GetItemInfo =
-	  GetItemInfo
 
 local OnGCD = TMW.OnGCD
 local GetSpellTexture = TMW.GetSpellTexture
+local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
 
 
 
@@ -68,9 +67,9 @@ Type:RegisterConfigPanel_XMLTemplate(100, "TellMeWhen_ChooseName", {
 })
 
 Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
-	[STATE_USABLE]           = { text = "|cFF00FF00" .. L["ICONMENU_READY"],   },
-	[STATE_UNUSABLE]         = { text = "|cFFFF0000" .. L["ICONMENU_NOTREADY"], },
-	[STATE_UNUSABLE_NORANGE] = { text = "|cFFFFff00" .. L["ICONMENU_OORANGE"], requires = "RangeCheck" },
+	[STATE_USABLE]           = { text = "|cFF00FF00" .. L["ICONMENU_USABLE"], order = 2 },
+	[STATE_UNUSABLE]         = { text = "|cFFFF0000" .. L["ICONMENU_UNUSABLE"], order = 3 },
+	[STATE_UNUSABLE_NORANGE] = { text = "|cFFFFff00" .. L["ICONMENU_OORANGE"], requires = "RangeCheck", order = 1 },
 })
 
 Type:RegisterConfigPanel_ConstructorFunc(150, "TellMeWhen_ItemSettings", function(self)
@@ -130,7 +129,7 @@ local function ItemCooldown_OnUpdate(icon, time)
 		start, duration, enable = item:GetCooldown()
 
 		if duration then
-			if enable == 0 then
+			if enable == 0 or enable == false then
 				-- Enable will be 0 for things like a potion that was used in combat 
 				-- and the cooldown hasn't yet started counting down.
 				start, duration = 0, 0
@@ -146,7 +145,7 @@ local function ItemCooldown_OnUpdate(icon, time)
 				equipped = false
 			end
 			
-			if equipped and inrange and enable == 1 and (duration == 0 or OnGCD(duration)) then
+			if equipped and inrange and (enable == 1 or enable == true) and (duration == 0 or OnGCD(duration)) then
 				-- This item is usable. Set the attributes and then stop.
 
 				icon:SetInfo("state; texture; start, duration; stack, stackText; spell",

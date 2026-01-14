@@ -17,14 +17,15 @@
 # You should have received a copy of the GNU General Public License
 # along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
-## Interface: 20502
+## Interface: 110002
 
 ## Title: AdiBags
 ## Notes: Adirelle's bag addon.
+## IconAtlas: bag-main
 ## Author: Adirelle
-## Version: v1.9.26-bcc
+## Version: v1.10.29
 ## SavedVariables: AdiBagsDB
-## X-Date: 2021-09-15T20:01:06Z
+## X-Date: 2024-09-08T2:17:32Z
 ## X-License: GPL v3
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibSharedMedia-3.0, Scrap, BrainDead, SyLevel
 #@alpha@
@@ -43,11 +44,16 @@ libs\LibSharedMedia-3.0\lib.xml
 
 libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 
-Localization.lua
 core\EventHandlers.lua
+core\Boot.lua
+
+Localization.lua
+
+core\Experiments.lua
+core\Fonts.lua
 core\Constants.lua
 core\Utility.lua
-core\Fonts.lua
+core\Theme.lua
 core\Core.lua
 core\Hooks.lua
 core\Bags.lua
@@ -56,6 +62,10 @@ core\Layout.lua
 core\OO.lua
 
 widgets\LayeredRegion.lua
+widgets\grid\Dropzone.lua
+widgets\grid\Cell.lua
+widgets\grid\Column.lua
+widgets\grid\Grid.lua
 widgets\ContainerFrame.lua
 widgets\BagSlots.lua
 widgets\ItemButton.lua
@@ -68,12 +78,16 @@ modules\MoneyFrame.lua
 modules\FilterOverride.lua
 modules\ItemLevel.lua
 modules\Junk.lua
+modules\CurrencyFrame.lua
 modules\TooltipInfo.lua
 modules\SectionVisibilityDropdown.lua
 modules\BankSwitcher.lua
 modules\ChangeHighlight.lua
+modules\Masque.lua
 
+core\ItemDatabase.lua
 core\DefaultFilters.lua
+core\Deprecation.lua
 
 #@debug@
 # ## Version: DEV

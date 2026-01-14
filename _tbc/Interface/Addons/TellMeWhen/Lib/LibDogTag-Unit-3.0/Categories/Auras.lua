@@ -1,16 +1,23 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20220322132155"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260110210823"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
 end
 
 local select, pairs, rawget, GetTime, setmetatable = select, pairs, rawget, GetTime, setmetatable
-local GetSpellInfo, UnitAura, UnitIsFriend, UnitClass, UnitPowerType = 
-	  GetSpellInfo, UnitAura, UnitIsFriend, UnitClass, UnitPowerType
+local UnitIsFriend, UnitClass, UnitPowerType = 
+	  UnitIsFriend, UnitClass, UnitPowerType
+
+local GetAuraDataByIndex = C_UnitAuras.GetAuraDataByIndex
+local GetAuraDataBySpellName = C_UnitAuras.GetAuraDataBySpellName
+
+-- GetSpellInfo removed in WoW 11.0
+local GetSpellName = C_Spell and C_Spell.GetSpellName or GetSpellInfo
 
 DogTag_Unit_funcs[#DogTag_Unit_funcs+1] = function(DogTag_Unit, DogTag)
 
+local issecretvalue = DogTag.issecretvalue
 local L = DogTag_Unit.L
 
 local IsNormalUnit = DogTag_Unit.IsNormalUnit
@@ -27,22 +34,25 @@ local mt = {__index=function(self, unit)
 	local i = 0
 	while true do
 		i = i + 1
-		local name, count, duration, expirationTime, _
-		if wow_800 then
-			name, _, count, _, duration, expirationTime = UnitAura(unit, i, "HELPFUL")
-		else
-			name, _, _, count, _, duration, expirationTime = UnitAura(unit, i, "HELPFUL")
-		end
-		if not name then
+		local auraInstance = GetAuraDataByIndex(unit, i, "HELPFUL")
+
+		if not auraInstance then
 			break
 		end
-		if count == 0 then
-			count = 1
-		end
-		auras[name] = (auras[name] or 0) + count
-		
-		if expirationTime and expirationTime > 0 and (not auraTimes[name] or auraTimes[name] > expirationTime) then
-			auraTimes[name] = expirationTime
+
+		local name = auraInstance.name
+		if not issecretvalue(name) then
+			local count = auraInstance.applications
+			local expirationTime = auraInstance.expirationTime
+
+			if count == 0 then
+				count = 1
+			end
+			auras[name] = (auras[name] or 0) + count
+			
+			if expirationTime and expirationTime > 0 and (not auraTimes[name] or auraTimes[name] > expirationTime) then
+				auraTimes[name] = expirationTime
+			end
 		end
 	end
 	local numDebuffs = 0
@@ -50,26 +60,30 @@ local mt = {__index=function(self, unit)
 	local i = 0
 	while true do
 		i = i + 1
-		local name, count, dispelType, expirationTime, _
-		if wow_800 then
-			name, _, count, dispelType, _, expirationTime = UnitAura(unit, i, "HARMFUL")
-		else
-			name, _, _, count, dispelType, _, expirationTime = UnitAura(unit, i, "HARMFUL")
-		end
-		if not name then
+		local auraInstance = GetAuraDataByIndex(unit, i, "HARMFUL")
+
+		if not auraInstance then
 			break
 		end
-		if count == 0 then
-			count = 1
-		end
-		numDebuffs = numDebuffs + 1
-		auras[name] = (auras[name] or 0) + count
-		if isFriend and dispelType then
-			debuffTypes[dispelType] = true
-		end
 
-		if expirationTime and expirationTime > 0 and (not auraTimes[name] or auraTimes[name] > expirationTime) then
-			auraTimes[name] = expirationTime
+		local name = auraInstance.name
+		if not issecretvalue(name) then
+			local count = auraInstance.applications
+			local expirationTime = auraInstance.expirationTime
+			local dispelType = auraInstance.dispelName
+
+			if count == 0 then
+				count = 1
+			end
+			numDebuffs = numDebuffs + 1
+			auras[name] = (auras[name] or 0) + count
+			if isFriend and dispelType then
+				debuffTypes[dispelType] = true
+			end
+
+			if expirationTime and expirationTime > 0 and (not auraTimes[name] or auraTimes[name] > expirationTime) then
+				auraTimes[name] = expirationTime
+			end
 		end
 	end
 	currentAuras[unit] = auras
@@ -110,46 +124,47 @@ DogTag:AddEventHandler("Unit", "EventRequested", function(_, event)
 				local t = newList()
 				local u = newList()
 				local v = newList()
-				for i = 1, 40 do
-					local name, count, expirationTime, _
-					if wow_800 then
-						name, _, count, _, _, expirationTime = UnitAura(unit, i, "HELPFUL")
-					else
-						name, _, _, count, _, _, expirationTime = UnitAura(unit, i, "HELPFUL")
-					end
-					if not name then
+				for i = 1, 400 do
+					local auraInstance = GetAuraDataByIndex(unit, i, "HELPFUL")
+					if not auraInstance then
 						break
 					end
-					if count == 0 then
-						count = 1
-					end
-					t[name] = (t[name] or 0) + count
-					if expirationTime and expirationTime > 0 and (not v[name] or v[name] > expirationTime) then
-						v[name] = expirationTime
+					local name = auraInstance.name
+					if not issecretvalue(name) then
+						local count = auraInstance.applications
+						local expirationTime = auraInstance.expirationTime
+						if count == 0 then
+							count = 1
+						end
+						t[name] = (t[name] or 0) + count
+						if expirationTime and expirationTime > 0 and (not v[name] or v[name] > expirationTime) then
+							v[name] = expirationTime
+						end
 					end
 				end
 				local numDebuffs = 0
 				local isFriend = UnitIsFriend("player", unit)
-				for i = 1, 40 do
-					local name, count, dispelType, expirationTime, _
-					if wow_800 then
-						name, _, count, dispelType, _, expirationTime = UnitAura(unit, i, "HARMFUL")
-					else
-						name, _, _, count, dispelType, _, expirationTime = UnitAura(unit, i, "HARMFUL")
-					end
-					if not name then
+				for i = 1, 400 do
+					local auraInstance = GetAuraDataByIndex(unit, i, "HARMFUL")
+					if not auraInstance then
 						break
 					end
-					if count == 0 then
-						count = 1
-					end
-					numDebuffs = numDebuffs + 1
-					t[name] = (t[name] or 0) + count
-					if isFriend and dispelType then
-						u[dispelType] = true
-					end
-					if expirationTime and expirationTime > 0 and (not v[name] or v[name] > expirationTime) then
-						v[name] = expirationTime
+					local name = auraInstance.name
+					if not issecretvalue(name) then
+						local count = auraInstance.applications
+						local dispelType = auraInstance.dispelName
+						local expirationTime = auraInstance.expirationTime
+						if count == 0 then
+							count = 1
+						end
+						numDebuffs = numDebuffs + 1
+						t[name] = (t[name] or 0) + count
+						if isFriend and dispelType then
+							u[dispelType] = true
+						end
+						if expirationTime and expirationTime > 0 and (not v[name] or v[name] > expirationTime) then
+							v[name] = expirationTime
+						end
 					end
 				end
 				local old = rawget(currentAuras, unit) or newList()
@@ -242,49 +257,22 @@ DogTag:AddTag("Unit", "RaidStacks", {
     
 		local numAuras = 0
 		
-		if wow_800 then
-			-- All this could probably be much more efficient.
-			-- Blizzard removed aura lookups by name in BFA
-
-			aura = aura:lower()
-			if not IsInRaid() then
-				prefix = "party"
-				numPlayers = numPlayers-1
-			
-				for i = 1, 40 do
-					local name, _, _, _, _, expirationTime, _, _, _, _ = UnitAura("player", i, "PLAYER|HELPFUL")
-					if name and name:lower() == aura and expirationTime ~= nil then
-						numAuras = numAuras + 1
-					end
-				end
-			end
+		aura = aura:lower()
+		if not IsInRaid() then
+			prefix = "party"
+			numPlayers = numPlayers-1
 		
-			for i=1,numPlayers do
-				local unit = prefix..i
-				for i = 1, 40 do
-					local name, _, _, _, _, expirationTime, _, _, _, _ = UnitAura(unit, i, "PLAYER|HELPFUL")
-					if name and name:lower() == aura and expirationTime ~= nil then
-						numAuras = numAuras + 1
-					end
-				end
+			local auraInstance = GetAuraDataBySpellName("player", aura, "PLAYER|HELPFUL")
+			if auraInstance and not issecretvalue(auraInstance.expirationTime) and auraInstance.expirationTime ~= nil then
+				numAuras = numAuras + 1
 			end
-		else
-			if not IsInRaid() then
-				prefix = "party"
-				numPlayers = numPlayers-1
-			
-				local _, _, _, _, _, _, expirationTime, _, _, _, _ = UnitAura("player", aura, nil, "PLAYER|HELPFUL")
-				if expirationTime ~= nil then
-					numAuras = numAuras + 1
-				end
-			end
-		
-			for i=1,numPlayers do
-				local unit = prefix..i
-				local _, _, _, _, _, _, expirationTime, _, _, _, _ = UnitAura(unit, aura, nil, "PLAYER|HELPFUL")
-				if expirationTime ~= nil then
-					numAuras = numAuras + 1
-				end
+		end
+	
+		for i=1,numPlayers do
+			local unit = prefix..i
+			local auraInstance = GetAuraDataBySpellName(unit, aura, "PLAYER|HELPFUL")
+			if auraInstance and not issecretvalue(auraInstance.expirationTime) and auraInstance.expirationTime ~= nil then
+				numAuras = numAuras + 1
 			end
 		end
 		
@@ -300,12 +288,12 @@ DogTag:AddTag("Unit", "RaidStacks", {
 	category = L["Auras"]
 })
 
-local MOONKIN_FORM = GetSpellInfo(24858)
-local AQUATIC_FORM = GetSpellInfo(1066)
-local FLIGHT_FORM = GetSpellInfo(33943)
-local SWIFT_FLIGHT_FORM = GetSpellInfo(40120)
-local TRAVEL_FORM = GetSpellInfo(783)
-local TREE_OF_LIFE = GetSpellInfo(33891)
+local MOONKIN_FORM = GetSpellName(24858)
+local AQUATIC_FORM = GetSpellName(1066)
+local FLIGHT_FORM = GetSpellName(33943)
+local SWIFT_FLIGHT_FORM = GetSpellName(40120)
+local TRAVEL_FORM = GetSpellName(783)
+local TREE_OF_LIFE = GetSpellName(33891)
 
 local function DruidForm(unit)
 		local _, c = UnitClass(unit)
@@ -403,7 +391,7 @@ DogTag:AddTag("Unit", "AuraDuration", {
 	category = L["Auras"],
 })
 
-local SHADOWFORM = GetSpellInfo(15473) or GetSpellInfo(232698)
+local SHADOWFORM = GetSpellName(15473) or GetSpellName(232698)
 if SHADOWFORM then
 DogTag:AddTag("Unit", "IsShadowform", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(SHADOWFORM),
@@ -416,13 +404,13 @@ DogTag:AddTag("Unit", "IsShadowform", {
 })
 end
 
-local STEALTH = GetSpellInfo(1784)
+local STEALTH = GetSpellName(1784)
 local SHADOWMELD =
-	GetSpellInfo(58984)  -- BFA
-	or GetSpellInfo(20580)  -- Classic TBC
-	or GetSpellInfo(743) -- Classic Vanilla
+	GetSpellName(58984)  -- BFA
+	or GetSpellName(20580)  -- Classic TBC
+	or GetSpellName(743) -- Classic Vanilla
 
-local PROWL = GetSpellInfo(5215)
+local PROWL = GetSpellName(5215)
 DogTag:AddTag("Unit", "IsStealthed", {
 	alias = ("HasAura(aura=%q, unit=unit) or HasAura(aura=%q, unit=unit) or HasAura(aura=%q, unit=unit)"):format(STEALTH, SHADOWMELD, PROWL),
 	arg = {
@@ -433,7 +421,7 @@ DogTag:AddTag("Unit", "IsStealthed", {
 	category = L["Auras"]
 })
 
-local SHIELD_WALL = GetSpellInfo(871)
+local SHIELD_WALL = GetSpellName(871)
 DogTag:AddTag("Unit", "HasShieldWall", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(SHIELD_WALL),
 	arg = {
@@ -444,7 +432,7 @@ DogTag:AddTag("Unit", "HasShieldWall", {
 	category = L["Auras"]
 })
 
-local LAST_STAND = GetSpellInfo(12975)
+local LAST_STAND = GetSpellName(12975)
 DogTag:AddTag("Unit", "HasLastStand", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(LAST_STAND),
 	arg = {
@@ -455,7 +443,7 @@ DogTag:AddTag("Unit", "HasLastStand", {
 	category = L["Auras"]
 })
 
-local SOULSTONE_RESURRECTION = GetSpellInfo(20707)
+local SOULSTONE_RESURRECTION = GetSpellName(20707)
 DogTag:AddTag("Unit", "HasSoulstone", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(SOULSTONE_RESURRECTION),
 	arg = {
@@ -466,7 +454,7 @@ DogTag:AddTag("Unit", "HasSoulstone", {
 	category = L["Auras"]
 })
 
-local MISDIRECTION = GetSpellInfo(34477)
+local MISDIRECTION = GetSpellName(34477)
 if MISDIRECTION then -- WoW Classic compat
 	DogTag:AddTag("Unit", "HasMisdirection", {
 		alias = ("HasAura(aura=%q, unit=unit)"):format(MISDIRECTION),
@@ -479,7 +467,7 @@ if MISDIRECTION then -- WoW Classic compat
 	})
 end
 
-local ICE_BLOCK = GetSpellInfo(27619)
+local ICE_BLOCK = GetSpellName(27619)
 DogTag:AddTag("Unit", "HasIceBlock", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(ICE_BLOCK),
 	arg = {
@@ -490,7 +478,7 @@ DogTag:AddTag("Unit", "HasIceBlock", {
 	category = L["Auras"]
 })
 
-local INVISIBILITY = GetSpellInfo(66)
+local INVISIBILITY = GetSpellName(66)
 DogTag:AddTag("Unit", "HasInvisibility", {
 	alias = ("HasAura(aura=%q, unit=unit)"):format(INVISIBILITY),
 	arg = {
@@ -502,7 +490,7 @@ DogTag:AddTag("Unit", "HasInvisibility", {
 })
 
 -- Parnic: DI removed in Cataclysm
-local DIVINE_INTERVENTION = GetSpellInfo(19752)
+local DIVINE_INTERVENTION = GetSpellName(19752)
 if DIVINE_INTERVENTION then
 	DogTag:AddTag("Unit", "HasDivineIntervention", {
 		alias = ("HasAura(aura=%q, unit=unit)"):format(DIVINE_INTERVENTION),

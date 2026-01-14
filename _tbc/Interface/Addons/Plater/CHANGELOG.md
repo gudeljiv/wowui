@@ -1,11 +1,14 @@
 @cont1nuity:
-- Fix CVar store and restore for 'boolean' type CVars.
-- Hide Cast Target on interrupts.
-- Adding new option to invert swipe on Buff Special.
-- Adding Masque support to cast bar icons (experimental).
-- Fixing load times of Buff Special tab with larger spell lists.
-- Fixing CVar load behavior to ensure they are restored properly.
-- Adding some SotFO units to 'ForceInCombatUnits'.
-- Fixing an issue with spellID not being set properly on casts.
-- Fixing an issue 'Plater.SetNameplateScale' not working properly when Custom Strata Channels were disabled.
+- Fixing an error with tooltip scanning rework.
+- Fixing Aura Icon sizes not updating properly with Ghost Auras set to a different size.
+- Fixing the search tab being broken.
+- Some locale fixes.
+- Fixing y-offset for target arrow indicators.
+- Fixing and error on quest recognition rework.
+- Fixing and error for hiding blizzard healthbars.
+- Fixing some errors about unit flag changes when units are entering/leaving combat or change being attackable or not.
+- Fixing some default values for 'hide blizzard healthbars' on the different WoW versions.
+
+@Terciob:
+- Implementing on the fly locale change for Plater options.
 

@@ -1,63 +1,81 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, OptionsPrivate = ...
-
--- Lua APIs
-local strtrim, strsub = strtrim, strsub
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 
 -- WoW APIs
-local GetTime, CreateFrame = GetTime, CreateFrame
+local CreateFrame = CreateFrame
 
 local AceGUI = LibStub("AceGUI-3.0")
 
+---@class WeakAuras
 local WeakAuras = WeakAuras
 local L = WeakAuras.L
 
 local importexport
 
 local function ConstructImportExport(frame)
-  local group = AceGUI:Create("InlineGroup");
+  local group = AceGUI:Create("WeakAurasInlineGroup");
   group.frame:SetParent(frame);
-  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -17, 12);
-  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 17, -10);
+  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, -63);
+  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -16, 46);
   group.frame:Hide();
-  group:SetLayout("fill");
+  group:SetLayout("flow");
 
   local input = AceGUI:Create("MultiLineEditBox");
-  input:SetWidth(400);
-  input.button:Hide();
+  input:DisableButton(true)
   input.frame:SetClipsChildren(true);
+  input:SetFullWidth(true)
+  input:SetFullHeight(true)
   group:AddChild(input);
 
   local close = CreateFrame("Button", nil, group.frame, "UIPanelButtonTemplate");
   close:SetScript("OnClick", function() group:Close() end);
-  close:SetPoint("BOTTOMRIGHT", -27, 13);
+  close:SetPoint("BOTTOMRIGHT", -20, -24);
   close:SetFrameLevel(close:GetFrameLevel() + 1)
   close:SetHeight(20);
   close:SetWidth(100);
-  close:SetText(L["Done"])
+  close:SetText(L["Close"])
 
   function group.Open(self, mode, id)
     if(frame.window == "texture") then
-      frame.texturePicker:CancelClose();
+      local texturepicker = OptionsPrivate.TexturePicker(frame, true)
+      if texturepicker then
+        texturepicker:CancelClose();
+      end
     elseif(frame.window == "icon") then
-      frame.iconPicker:CancelClose();
+      local iconpicker = OptionsPrivate.IconPicker(frame, true)
+      if iconpicker then
+        iconpicker:CancelClose();
+      end
     elseif(frame.window == "model") then
-      frame.modelPicker:CancelClose();
+      local modelpicker = OptionsPrivate.ModelPicker(frame, true)
+      if modelpicker then
+        modelpicker:CancelClose();
+      end
     end
     frame.window = "importexport";
     frame:UpdateFrameVisible()
     if(mode == "export" or mode == "table") then
+      OptionsPrivate.SetTitle(L["Exporting"])
       if(id) then
         local displayStr;
         if(mode == "export") then
           displayStr = OptionsPrivate.Private.DisplayToString(id, true);
         elseif(mode == "table") then
-          displayStr = OptionsPrivate.Private.DataToString(id);
+          displayStr = OptionsPrivate.Private.DataToString(id, true);
         end
-        input.editBox:SetMaxBytes(nil);
-        input.editBox:SetScript("OnEscapePressed", function() group:Close(); end);
-        input.editBox:SetScript("OnChar", function() input:SetText(displayStr); input.editBox:HighlightText(); end);
-        input.editBox:SetScript("OnMouseUp", function() input.editBox:HighlightText(); end);
+        --input.editBox:SetMaxBytes(nil); Dragonflight doesn't accept nil
+        input.editBox:SetScript("OnEscapePressed", function()
+          group:Close();
+        end);
+        input.editBox:SetScript("OnTextChanged", function()
+          input:SetText(displayStr); input.editBox:HighlightText();
+        end);
+        input.editBox:SetScript("OnMouseUp", function()
+          input.editBox:HighlightText();
+        end);
         input:SetLabel(id.." - "..#displayStr);
         input.button:Hide();
         input:SetText(displayStr);
@@ -65,39 +83,24 @@ local function ConstructImportExport(frame)
         input:SetFocus();
       end
     elseif(mode == "import") then
-      local textBuffer, i, lastPaste = {}, 0, 0
-      local function clearBuffer(self)
-        self:SetScript('OnUpdate', nil)
-        local pasted = strtrim(table.concat(textBuffer))
-        input.editBox:ClearFocus();
-        pasted = pasted:match( "^%s*(.-)%s*$" );
-        if (#pasted > 20) then
-          WeakAuras.Import(pasted);
-          input:SetLabel(L["Processed %i chars"]:format(i));
-          input.editBox:SetMaxBytes(2500);
-          input.editBox:SetText(strsub(pasted, 1, 2500));
+      OptionsPrivate.SetTitle(L["Importing"])
+      input.editBox:SetScript("OnTextChanged", function(self)
+        local pasted = self:GetText()
+        pasted = pasted:match("^%s*(.-)%s*$")
+        if #pasted > 20 then
+          WeakAuras.Import(pasted)
         end
-      end
-
-      input.editBox:SetScript('OnChar', function(self, c)
-        if lastPaste ~= GetTime() then
-          textBuffer, i, lastPaste = {}, 0, GetTime()
-          self:SetScript('OnUpdate', clearBuffer)
-        end
-        i = i + 1
-        textBuffer[i] = c
       end)
-
       input.editBox:SetText("");
-      input.editBox:SetMaxBytes(2500);
       input.editBox:SetScript("OnEscapePressed", function() group:Close(); end);
       input.editBox:SetScript("OnMouseUp", nil);
       input:SetLabel(L["Paste text below"]);
       input:SetFocus();
     end
+    group:DoLayout()
   end
 
-  function group.Close(self)
+  function group.Close()
     input:ClearFocus();
     frame.window = "default";
     frame:UpdateFrameVisible()
@@ -106,7 +109,7 @@ local function ConstructImportExport(frame)
   return group
 end
 
-function OptionsPrivate.ImportExport(frame)
-  importexport = importexport or ConstructImportExport(frame)
+function OptionsPrivate.ImportExport(frame, noConstruct)
+  importexport = importexport or (not noConstruct and ConstructImportExport(frame))
   return importexport
 end

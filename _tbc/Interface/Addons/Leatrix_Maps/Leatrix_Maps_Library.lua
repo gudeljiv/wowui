@@ -1,12 +1,12 @@
 ﻿----------------------------------------------------------------------
--- L00: Leatrix Maps Library
+-- L00: Leatrix Maps Library for Burning Crusade Anniversary
 ----------------------------------------------------------------------
 
-	-- LibDBIcon 9.0.0 by funkehdude
-	-- 11: LibStub: (?s)-- LibStubStart\R?\K.*?(?=-- LibStubEnd)
-	-- 12: LibCallbackHandler: (?s)-- CallbackStart\R?\K.*?(?=-- CallbackEnd)
-	-- 13: LibDataBroker: (?s)-- DataBrokerStart\R?\K.*?(?=-- DataBrokerEnd)
-	-- 14: LibDBIcon: (?s)-- LibDBIconStart\R?\K.*?(?=-- LibDBIconEnd)
+-- LibDBIcon 10.0.1:
+-- 11: LibStub: (?s)-- LibStubStart\R?\K.*?(?=-- LibStubEnd)
+-- 12: LibCallbackHandler: (?s)-- CallbackStart\R?\K.*?(?=-- CallbackEnd)
+-- 13: LibDataBroker: (?s)-- DataBrokerStart\R?\K.*?(?=-- DataBrokerEnd)
+-- 14: LibDBIcon: (?s)-- LibDBIconStart\R?\K.*?(?=-- LibDBIconEnd)
 
 ----------------------------------------------------------------------
 -- L11: LibDBIcon: LibStub
@@ -78,8 +78,8 @@ LeaLibStub()
 local function LeaCallbackHandler()
 
 -- CallbackStart
---[[ $Id: CallbackHandler-1.0.lua 1186 2018-07-21 14:19:18Z nevcairiel $ ]]
-local MAJOR, MINOR = "CallbackHandler-1.0", 7
+--[[ $Id: CallbackHandler-1.0.lua 26 2022-12-12 15:09:39Z nevcairiel $ ]]
+local MAJOR, MINOR = "CallbackHandler-1.0", 8
 local CallbackHandler = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not CallbackHandler then return end -- No upgrade needed
@@ -87,26 +87,16 @@ if not CallbackHandler then return end -- No upgrade needed
 local meta = {__index = function(tbl, key) tbl[key] = {} return tbl[key] end}
 
 -- Lua APIs
-local tconcat = table.concat
-local assert, error, loadstring = assert, error, loadstring
-local setmetatable, rawset, rawget = setmetatable, rawset, rawget
+local securecallfunction, error = securecallfunction, error
+local setmetatable, rawget = setmetatable, rawget
 local next, select, pairs, type, tostring = next, select, pairs, type, tostring
 
--- Global vars/functions that we don't upvalue since they might get hooked, or upgraded
--- List them here for Mikk's FindGlobals script
--- GLOBALS: geterrorhandler
-
-local xpcall = xpcall
-
-local function errorhandler(err)
-	return geterrorhandler()(err)
-end
 
 local function Dispatch(handlers, ...)
 	local index, method = next(handlers)
 	if not method then return end
 	repeat
-		xpcall(method, errorhandler, ...)
+		securecallfunction(method, ...)
 		index, method = next(handlers, index)
 	until not method
 end
@@ -119,7 +109,7 @@ end
 --   UnregisterName    - name of the callback unregistration API, default "UnregisterCallback"
 --   UnregisterAllName - name of the API to unregister all callbacks, default "UnregisterAllCallbacks". false == don't publish this API.
 
-function CallbackHandler:New(target, RegisterName, UnregisterName, UnregisterAllName)
+function CallbackHandler.New(_self, target, RegisterName, UnregisterName, UnregisterAllName)
 
 	RegisterName = RegisterName or "RegisterCallback"
 	UnregisterName = UnregisterName or "UnregisterCallback"
@@ -147,13 +137,13 @@ function CallbackHandler:New(target, RegisterName, UnregisterName, UnregisterAll
 
 		if registry.insertQueue and oldrecurse==0 then
 			-- Something in one of our callbacks wanted to register more callbacks; they got queued
-			for eventname,callbacks in pairs(registry.insertQueue) do
-				local first = not rawget(events, eventname) or not next(events[eventname])	-- test for empty before. not test for one member after. that one member may have been overwritten.
-				for self,func in pairs(callbacks) do
-					events[eventname][self] = func
+			for event,callbacks in pairs(registry.insertQueue) do
+				local first = not rawget(events, event) or not next(events[event])	-- test for empty before. not test for one member after. that one member may have been overwritten.
+				for object,func in pairs(callbacks) do
+					events[event][object] = func
 					-- fire OnUsed callback?
 					if first and registry.OnUsed then
-						registry.OnUsed(registry, target, eventname)
+						registry.OnUsed(registry, target, event)
 						first = nil
 					end
 				end
@@ -404,7 +394,7 @@ LeaDataBroker()
 local function LeaLibDBIcon()
 
 -- LibDBIconStart
-
+--@curseforge-project-slug: libdbicon-1-0@
 -----------------------------------------------------------------------
 -- LibDBIcon-1.0
 --
@@ -412,7 +402,7 @@ local function LeaLibDBIcon()
 --
 
 local DBICON10 = "LibDBIcon-1.0"
-local DBICON10_MINOR = 44 -- Bump on changes
+local DBICON10_MINOR = 51 -- Bump on changes
 if not LibStub then error(DBICON10 .. " requires LibStub.") end
 local ldb = LibStub("LibDataBroker-1.1", true)
 if not ldb then error(DBICON10 .. " requires LibDataBroker-1.1.") end
@@ -422,9 +412,8 @@ if not lib then return end
 lib.objects = lib.objects or {}
 lib.callbackRegistered = lib.callbackRegistered or nil
 lib.callbacks = lib.callbacks or LibStub("CallbackHandler-1.0"):New(lib)
-lib.notCreated = lib.notCreated or {}
 lib.radius = lib.radius or 5
-local next, Minimap, CreateFrame = next, Minimap, CreateFrame
+local next, Minimap, CreateFrame, AddonCompartmentFrame = next, Minimap, CreateFrame, AddonCompartmentFrame
 lib.tooltip = lib.tooltip or CreateFrame("GameTooltip", "LibDBIconTooltip", UIParent, "GameTooltipTemplate")
 local isDraggingButton = false
 
@@ -498,6 +487,33 @@ local function onLeave(self)
 	local obj = self.dataObject
 	if obj.OnLeave then
 		obj.OnLeave(self)
+	end
+end
+
+local function onEnterCompartment(self)
+	local buttonName = self.value
+	local object = lib.objects[buttonName]
+	if object and object.dataObject then
+		if object.dataObject.OnTooltipShow then
+			lib.tooltip:SetOwner(self, "ANCHOR_NONE")
+			lib.tooltip:SetPoint(getAnchors(self))
+			object.dataObject.OnTooltipShow(lib.tooltip)
+			lib.tooltip:Show()
+		elseif object.dataObject.OnEnter then
+			object.dataObject.OnEnter(self)
+		end
+	end
+end
+
+local function onLeaveCompartment(self)
+	lib.tooltip:Hide()
+
+	local buttonName = self.value
+	local object = lib.objects[buttonName]
+	if object and object.dataObject then
+		if object.dataObject.OnLeave then
+			object.dataObject.OnLeave(self)
+		end
 	end
 end
 
@@ -619,42 +635,54 @@ local function updateCoord(self)
 	self:SetTexCoord(coords[1] + deltaX, coords[2] - deltaX, coords[3] + deltaY, coords[4] - deltaY)
 end
 
-local function createButton(name, object, db)
+local function createButton(name, object, db, customCompartmentIcon)
 	local button = CreateFrame("Button", "LibDBIcon10_"..name, Minimap)
 	button.dataObject = object
 	button.db = db
 	button:SetFrameStrata("MEDIUM")
-	if button.SetFixedFrameStrata then -- Classic support
-		button:SetFixedFrameStrata(true)
-	end
+	button:SetFixedFrameStrata(true)
 	button:SetFrameLevel(8)
-	if button.SetFixedFrameLevel then -- Classic support
-		button:SetFixedFrameLevel(true)
-	end
+	button:SetFixedFrameLevel(true)
 	button:SetSize(31, 31)
 	button:RegisterForClicks("anyUp")
 	button:RegisterForDrag("LeftButton")
 	button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
-	local overlay = button:CreateTexture(nil, "OVERLAY")
-	overlay:SetSize(53, 53)
-	overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
-	overlay:SetPoint("TOPLEFT")
-	local background = button:CreateTexture(nil, "BACKGROUND")
-	background:SetSize(20, 20)
-	background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
-	background:SetPoint("TOPLEFT", 7, -5)
-	local icon = button:CreateTexture(nil, "ARTWORK")
-	icon:SetSize(17, 17)
-	icon:SetTexture(object.icon)
-	icon:SetPoint("TOPLEFT", 7, -6)
-	button.icon = icon
+	if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+		local overlay = button:CreateTexture(nil, "OVERLAY")
+		overlay:SetSize(50, 50)
+		overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
+		overlay:SetPoint("TOPLEFT", button, "TOPLEFT", 0, 0)
+		local background = button:CreateTexture(nil, "BACKGROUND")
+		background:SetSize(24, 24)
+		background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
+		background:SetPoint("CENTER", button, "CENTER", 0, 1)
+		local icon = button:CreateTexture(nil, "ARTWORK")
+		icon:SetSize(18, 18)
+		icon:SetTexture(object.icon)
+		icon:SetPoint("CENTER", button, "CENTER", 0, 1)
+		button.icon = icon
+	else
+		local overlay = button:CreateTexture(nil, "OVERLAY")
+		overlay:SetSize(53, 53)
+		overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
+		overlay:SetPoint("TOPLEFT")
+		local background = button:CreateTexture(nil, "BACKGROUND")
+		background:SetSize(20, 20)
+		background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
+		background:SetPoint("TOPLEFT", 7, -5)
+		local icon = button:CreateTexture(nil, "ARTWORK")
+		icon:SetSize(17, 17)
+		icon:SetTexture(object.icon)
+		icon:SetPoint("TOPLEFT", 7, -6)
+		button.icon = icon
+	end
+
 	button.isMouseDown = false
+	local r, g, b = button.icon:GetVertexColor()
+	button.icon:SetVertexColor(object.iconR or r, object.iconG or g, object.iconB or b)
 
-	local r, g, b = icon:GetVertexColor()
-	icon:SetVertexColor(object.iconR or r, object.iconG or g, object.iconB or b)
-
-	icon.UpdateCoord = updateCoord
-	icon:UpdateCoord()
+	button.icon.UpdateCoord = updateCoord
+	button.icon:UpdateCoord()
 
 	button:SetScript("OnEnter", onEnter)
 	button:SetScript("OnLeave", onLeave)
@@ -685,23 +713,18 @@ local function createButton(name, object, db)
 			button:Hide()
 		end
 	end
-	lib.callbacks:Fire("LibDBIcon_IconCreated", button, name) -- Fire 'Icon Created' callback
-end
 
--- We could use a metatable.__index on lib.objects, but then we'd create
--- the icons when checking things like :IsRegistered, which is not necessary.
-local function check(name)
-	if lib.notCreated[name] then
-		createButton(name, lib.notCreated[name][1], lib.notCreated[name][2])
-		lib.notCreated[name] = nil
+	if db and db.showInCompartment then
+		lib:AddButtonToCompartment(name, customCompartmentIcon)
 	end
+	lib.callbacks:Fire("LibDBIcon_IconCreated", button, name) -- Fire 'Icon Created' callback
 end
 
 -- Wait a bit with the initial positioning to let any GetMinimapShape addons
 -- load up.
 if not lib.loggedIn then
-	local f = CreateFrame("Frame")
-	f:SetScript("OnEvent", function(f)
+	local frame = CreateFrame("Frame")
+	frame:SetScript("OnEvent", function(self)
 		for _, button in next, lib.objects do
 			updatePosition(button, button.db and button.db.minimapPos)
 			if not button.db or not button.db.hide then
@@ -711,90 +734,9 @@ if not lib.loggedIn then
 			end
 		end
 		lib.loggedIn = true
-		f:SetScript("OnEvent", nil)
+		self:SetScript("OnEvent", nil)
 	end)
-	f:RegisterEvent("PLAYER_LOGIN")
-end
-
-local function getDatabase(name)
-	return lib.notCreated[name] and lib.notCreated[name][2] or lib.objects[name].db
-end
-
-function lib:Register(name, object, db)
-	if not object.icon then error("Can't register LDB objects without icons set!") end
-	if lib.objects[name] or lib.notCreated[name] then error(DBICON10.. ": Object '".. name .."' is already registered.") end
-	if not db or not db.hide then
-		createButton(name, object, db)
-	else
-		lib.notCreated[name] = {object, db}
-	end
-end
-
-function lib:Lock(name)
-	if not lib:IsRegistered(name) then return end
-	if lib.objects[name] then
-		lib.objects[name]:SetScript("OnDragStart", nil)
-		lib.objects[name]:SetScript("OnDragStop", nil)
-	end
-	local db = getDatabase(name)
-	if db then
-		db.lock = true
-	end
-end
-
-function lib:Unlock(name)
-	if not lib:IsRegistered(name) then return end
-	if lib.objects[name] then
-		lib.objects[name]:SetScript("OnDragStart", onDragStart)
-		lib.objects[name]:SetScript("OnDragStop", onDragStop)
-	end
-	local db = getDatabase(name)
-	if db then
-		db.lock = nil
-	end
-end
-
-function lib:Hide(name)
-	if not lib.objects[name] then return end
-	lib.objects[name]:Hide()
-end
-
-function lib:Show(name)
-	check(name)
-	local button = lib.objects[name]
-	if button then
-		button:Show()
-		updatePosition(button, button.db and button.db.minimapPos or button.minimapPos)
-	end
-end
-
-function lib:IsRegistered(name)
-	return (lib.objects[name] or lib.notCreated[name]) and true or false
-end
-
-function lib:Refresh(name, db)
-	check(name)
-	local button = lib.objects[name]
-	if db then
-		button.db = db
-	end
-	updatePosition(button, button.db and button.db.minimapPos or button.minimapPos)
-	if not button.db or not button.db.hide then
-		button:Show()
-	else
-		button:Hide()
-	end
-	if not button.db or not button.db.lock then
-		button:SetScript("OnDragStart", onDragStart)
-		button:SetScript("OnDragStop", onDragStop)
-	else
-		button:SetScript("OnDragStart", nil)
-		button:SetScript("OnDragStop", nil)
-	end
-end
-
-function lib:GetMinimapButton(name)
-	return lib.objects[name]
+	frame:RegisterEvent("PLAYER_LOGIN")
 end
 
 do
@@ -817,21 +759,98 @@ do
 	end
 	Minimap:HookScript("OnEnter", OnMinimapEnter)
 	Minimap:HookScript("OnLeave", OnMinimapLeave)
+end
 
-	function lib:ShowOnEnter(name, value)
-		local button = lib.objects[name]
-		if button then
-			if value then
-				button.showOnMouseover = true
-				button.fadeOut:Stop()
-				button:SetAlpha(0)
-			else
-				button.showOnMouseover = false
-				button.fadeOut:Stop()
-				button:SetAlpha(1)
-			end
+--------------------------------------------------------------------------------
+-- Button API
+--
+
+function lib:Register(name, object, db, customCompartmentIcon)
+	if not object.icon then error("Can't register LDB objects without icons set!") end
+	if lib:GetMinimapButton(name) then error(DBICON10.. ": Object '".. name .."' is already registered.") end
+	createButton(name, object, db, customCompartmentIcon)
+end
+
+function lib:Lock(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:SetScript("OnDragStart", nil)
+		button:SetScript("OnDragStop", nil)
+		if button.db then
+			button.db.lock = true
 		end
 	end
+end
+
+function lib:Unlock(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:SetScript("OnDragStart", onDragStart)
+		button:SetScript("OnDragStop", onDragStop)
+		if button.db then
+			button.db.lock = nil
+		end
+	end
+end
+
+function lib:Hide(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:Hide()
+	end
+end
+
+function lib:Show(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:Show()
+		updatePosition(button, button.db and button.db.minimapPos or button.minimapPos)
+	end
+end
+
+function lib:IsRegistered(name)
+	return lib.objects[name] and true or false
+end
+
+function lib:Refresh(name, db)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		if db then
+			button.db = db
+		end
+		updatePosition(button, button.db and button.db.minimapPos or button.minimapPos)
+		if not button.db or not button.db.hide then
+			button:Show()
+		else
+			button:Hide()
+		end
+		if not button.db or not button.db.lock then
+			button:SetScript("OnDragStart", onDragStart)
+			button:SetScript("OnDragStop", onDragStop)
+		else
+			button:SetScript("OnDragStart", nil)
+			button:SetScript("OnDragStop", nil)
+		end
+	end
+end
+
+function lib:ShowOnEnter(name, value)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		if value then
+			button.showOnMouseover = true
+			button.fadeOut:Stop()
+			button:SetAlpha(0)
+		else
+			button.showOnMouseover = false
+			button.fadeOut:Stop()
+			button:SetAlpha(1)
+		end
+	end
+end
+
+function lib:GetMinimapButton(name)
+	return lib.objects[name]
 end
 
 function lib:GetButtonList()
@@ -855,9 +874,69 @@ function lib:SetButtonToPosition(button, position)
 	updatePosition(lib.objects[button] or button, position)
 end
 
--- Upgrade!
+--------------------------------------------------------------------------------
+-- Addon Compartment API
+--
+
+function lib:IsButtonCompartmentAvailable()
+	if AddonCompartmentFrame then
+		return true
+	end
+end
+
+function lib:IsButtonInCompartment(buttonName)
+	local object = lib.objects[buttonName]
+	if object and object.db and object.db.showInCompartment then
+		return true
+	end
+	return false
+end
+
+function lib:AddButtonToCompartment(buttonName, customIcon)
+	local object = lib.objects[buttonName]
+	if object and not object.compartmentData and AddonCompartmentFrame then
+		if object.db then
+			object.db.showInCompartment = true
+		end
+		object.compartmentData = {
+			text = buttonName,
+			icon = customIcon or object.dataObject.icon,
+			notCheckable = true,
+			registerForAnyClick = true,
+			func = function(frame, _, _, _, clickType)
+				object.dataObject.OnClick(frame, clickType)
+			end,
+			funcOnEnter = onEnterCompartment,
+			funcOnLeave = onLeaveCompartment,
+		}
+		AddonCompartmentFrame:RegisterAddon(object.compartmentData)
+	end
+end
+
+function lib:RemoveButtonFromCompartment(buttonName)
+	local object = lib.objects[buttonName]
+	if object and object.compartmentData then
+		for i = 1, #AddonCompartmentFrame.registeredAddons do
+			local entry = AddonCompartmentFrame.registeredAddons[i]
+			if entry == object.compartmentData then
+				object.compartmentData = nil
+				if object.db then
+					object.db.showInCompartment = nil
+				end
+				table.remove(AddonCompartmentFrame.registeredAddons, i)
+				AddonCompartmentFrame:UpdateDisplay()
+				return
+			end
+		end
+	end
+end
+
+--------------------------------------------------------------------------------
+-- Upgrades
+--
+
 for name, button in next, lib.objects do
-	local db = getDatabase(name)
+	local db = button.db
 	if not db or not db.lock then
 		button:SetScript("OnDragStart", onDragStart)
 		button:SetScript("OnDragStop", onDragStop)
@@ -880,6 +959,12 @@ for name, button in next, lib.objects do
 	end
 end
 lib:SetButtonRadius(lib.radius) -- Upgrade to 40
+if lib.notCreated then -- Upgrade to 50
+	for name in next, lib.notCreated do
+		createButton(name, lib.notCreated[name][1], lib.notCreated[name][2])
+	end
+	lib.notCreated = nil
+end
 -- LibDBIconEnd
 
 end

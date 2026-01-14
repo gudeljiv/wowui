@@ -4,27 +4,30 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local Macros = TSM.MainUI.Settings:NewPackage("Macros")
-local L = TSM.Include("Locale").GetTable()
-local TempTable = TSM.Include("Util.TempTable")
-local Vararg = TSM.Include("Util.Vararg")
-local Log = TSM.Include("Util.Log")
-local Theme = TSM.Include("Util.Theme")
-local UIElements = TSM.Include("UI.UIElements")
+local ClientInfo = TSM.LibTSMWoW:Include("Util.ClientInfo")
+local L = TSM.Locale.GetTable()
+local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
+local Vararg = TSM.LibTSMUtil:Include("Lua.Vararg")
+local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
+local Theme = TSM.LibTSMService:Include("UI.Theme")
+local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
+local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local private = {}
 local MACRO_NAME = "TSMMacro"
-local MACRO_ICON = TSM.IsWowClassic() and "INV_Misc_Flower_01" or "Achievement_Faction_GoldenLotus"
+local MACRO_ICON = ClientInfo.IsRetail() and "Achievement_Faction_GoldenLotus" or "INV_Misc_Flower_01"
 local BINDING_NAME = "MACRO "..MACRO_NAME
-local BUTTON_MAPPING = {
-	["row1.myauctionsCheckbox"] = "TSMCancelAuctionBtn",
-	["row1.auctioningCheckbox"] = "TSMAuctioningBtn",
-	["row2.shoppingCheckbox"] = "TSMShoppingBuyoutBtn",
-	["row2.bidBuyConfirmBtn"] = "TSMBidBuyConfirmBtn",
-	["row3.sniperCheckbox"] = "TSMSniperBtn",
-	["row3.craftingCheckbox"] = "TSMCraftingBtn",
-	["row4.destroyingCheckbox"] = "TSMDestroyBtn",
-	["row4.vendoringCheckbox"] = "TSMVendoringSellAllButton",
+local buttonEvent = ClientInfo.IsRetail() and (GetCVarBool("ActionButtonUseKeyDown") and "1" or "0") or nil
+local BUTTON_INFO = {
+	["row1.myauctionsCheckbox"] = {name = "TSMCancelAuctionBtn"},
+	["row1.auctioningCheckbox"] = {name = "TSMAuctioningBtn"},
+	["row2.shoppingCheckbox"] = {name = "TSMShoppingBuyoutBtn"},
+	["row2.bidBuyConfirmBtn"] = {name = "TSMBidBuyConfirmBtn"},
+	["row3.sniperCheckbox"] = {name = "TSMSniperBtn"},
+	["row3.craftingCheckbox"] = {name = "TSMCraftingBtn"},
+	["row4.destroyingCheckbox"] = not ClientInfo.IsRetail() and {name = "TSMDestroyBtn", button = ClientInfo.IsRetail() and "LeftButton "..buttonEvent or nil} or nil,
+	["row4.vendoringCheckbox"] = {name = "TSMVendoringSellAllButton"},
 }
 local CHARACTER_BINDING_SET = 2
 local MAX_MACRO_LENGTH = 255
@@ -39,6 +42,18 @@ function Macros.OnInitialize()
 	TSM.MainUI.Settings.RegisterSettingPage(L["Macros"], "middle", private.GetMacrosSettingsFrame)
 end
 
+function Macros.OnEnable()
+	if ClientInfo.IsRetail() then
+		local body = GetMacroBody(MACRO_NAME)
+		if body then
+			body = gsub(body, "/click TSMDestroyBtn LeftButton 1\n", "")
+			body = gsub(body, "\n/click TSMDestroyBtn LeftButton 1", "")
+			body = gsub(body, "/click TSMDestroyBtn LeftButton 1", "")
+			EditMacro(MACRO_NAME, MACRO_NAME, MACRO_ICON, body)
+		end
+	end
+end
+
 
 
 -- ============================================================================
@@ -46,7 +61,7 @@ end
 -- ============================================================================
 
 function private.GetMacrosSettingsFrame()
-	TSM.UI.AnalyticsRecordPathChange("main", "settings", "macros")
+	UIUtils.AnalyticsRecordPathChange("main", "settings", "macros")
 	local body = GetMacroBody(MACRO_NAME) or ""
 	local upEnabled, downEnabled, altEnabled, ctrlEnabled, shiftEnabled = false, false, false, false, false
 	for _, binding in Vararg.Iterator(GetBindingKey(BINDING_NAME)) do
@@ -109,7 +124,7 @@ function private.GetMacrosSettingsFrame()
 				:SetLayout("HORIZONTAL")
 				:SetHeight(20)
 				:SetMargin(0, 0, 0, 16)
-				:AddChild(UIElements.New("Checkbox", "destroyingCheckbox")
+				:AddChildIf(not ClientInfo.IsRetail(), UIElements.New("Checkbox", "destroyingCheckbox")
 					:SetFont("BODY_BODY2_MEDIUM")
 					:SetText(format(L["Destroying %s button"], Theme.GetColor("INDICATOR"):ColorText(L["Destroy Next"])))
 				)
@@ -194,9 +209,9 @@ function private.GetMacrosSettingsFrame()
 			)
 		)
 
-	for path, buttonName in pairs(BUTTON_MAPPING) do
+	for path, info in pairs(BUTTON_INFO) do
 		frame:GetElement("setup.content."..path)
-			:SetChecked(strfind(body, buttonName) and true or false)
+			:SetChecked(strfind(body, info.name) and true or false)
 	end
 	return frame
 end
@@ -208,30 +223,42 @@ end
 -- ============================================================================
 
 function private.CreateButtonOnClick(button)
-	-- remove the old bindings and macros
-	for _, binding in Vararg.Iterator(GetBindingKey(BINDING_NAME)) do
-		SetBinding(binding)
-	end
-	DeleteMacro(MACRO_NAME)
-
-	if GetNumMacros() >= MAX_ACCOUNT_MACROS then
-		Log.PrintUser(L["Could not create macro as you already have too many. Delete one of your existing macros and try again."])
+	if InCombatLockdown() then
+		ChatMessage.PrintUser(L["Can not create or update macros while in comat."])
 		return
 	end
 
-	-- create the new macro
+	-- Remove the old bindings and macros
+	for _, binding in Vararg.Iterator(GetBindingKey(BINDING_NAME)) do
+		SetBinding(binding)
+	end
+
+	if GetNumMacros() >= MAX_ACCOUNT_MACROS then
+		ChatMessage.PrintUser(L["Could not create macro as you already have too many. Delete one of your existing macros and try again."])
+		return
+	end
+
+	-- Create the new macro
 	local scrollFrame = button:GetParentElement():GetParentElement():GetParentElement()
 	local lines = TempTable.Acquire()
-	for elementPath, buttonName in pairs(BUTTON_MAPPING) do
+	for elementPath, info in pairs(BUTTON_INFO) do
 		if scrollFrame:GetElement("setup.content."..elementPath):IsChecked() then
-			tinsert(lines, "/click "..buttonName)
+			if info.button then
+				tinsert(lines, "/click "..info.name.." "..info.button)
+			else
+				tinsert(lines, "/click "..info.name)
+			end
 		end
 	end
 	local macroText = table.concat(lines, "\n")
-	CreateMacro(MACRO_NAME, MACRO_ICON, macroText)
+	if GetMacroBody(MACRO_NAME) then
+		EditMacro(MACRO_NAME, MACRO_NAME, MACRO_ICON, macroText)
+	else
+		CreateMacro(MACRO_NAME, MACRO_ICON, macroText)
+	end
 	TempTable.Release(lines)
 
-	-- create the binding
+	-- Create the binding
 	local modifierStr = ""
 	if scrollFrame:GetElement("setup.content.modifiers.check.ctrl"):IsChecked() then
 		modifierStr = modifierStr.."CTRL-"
@@ -242,16 +269,16 @@ function private.CreateButtonOnClick(button)
 	if scrollFrame:GetElement("setup.content.modifiers.check.shift"):IsChecked() then
 		modifierStr = modifierStr.."SHIFT-"
 	end
-	-- we want to save these bindings to be per-character, so the mode should be 1 / 2 if we're currently on
+	-- We want to save these bindings to be per-character, so the mode should be 1 / 2 if we're currently on
 	-- per-character bindings or not respectively
 	local bindingMode = (GetCurrentBindingSet() == CHARACTER_BINDING_SET) and 1 or 2
 	if scrollFrame:GetElement("setup.content.direction.check.up"):IsChecked() then
 		SetBinding(modifierStr.."MOUSEWHEELUP", nil, bindingMode)
-		SetBinding(modifierStr.."MOUSEWHEELUP", BINDING_NAME, bindingMode)
+		SetBindingMacro(modifierStr.."MOUSEWHEELUP", MACRO_NAME)
 	end
 	if scrollFrame:GetElement("setup.content.direction.check.down"):IsChecked() then
 		SetBinding(modifierStr.."MOUSEWHEELDOWN", nil, bindingMode)
-		SetBinding(modifierStr.."MOUSEWHEELDOWN", BINDING_NAME, bindingMode)
+		SetBindingMacro(modifierStr.."MOUSEWHEELDOWN", MACRO_NAME)
 	end
 
 	SaveBindings(CHARACTER_BINDING_SET)
@@ -259,8 +286,8 @@ function private.CreateButtonOnClick(button)
 	button:SetText(GetMacroInfo(MACRO_NAME) and L["Update existing macro"] or L["Create macro"])
 		:Draw()
 
-	Log.PrintUser(L["Macro created and scroll wheel bound!"])
+	ChatMessage.PrintUser(L["Macro created and scroll wheel bound!"])
 	if #macroText > MAX_MACRO_LENGTH then
-		Log.PrintUser(L["WARNING: The macro was too long, so was truncated to fit by WoW."])
+		ChatMessage.PrintUser(L["WARNING: The macro was too long, so was truncated to fit by WoW."])
 	end
 end

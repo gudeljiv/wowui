@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -27,12 +27,13 @@ local math, max, ceil, floor, random, abs =
 local _G, coroutine, table, GetTime, CopyTable, tostringall, geterrorhandler, C_Timer =
 	  _G, coroutine, table, GetTime, CopyTable, tostringall, geterrorhandler, C_Timer
 
-local UnitAura, IsUsableSpell, GetFramerate =
-	  UnitAura, IsUsableSpell, GetFramerate
+local GetRuneCooldown =
+	  GetRuneCooldown
 
-local debugprofilestop = debugprofilestop_SAFE
-
-
+local GetSpecialization = C_SpecializationInfo and C_SpecializationInfo.GetSpecialization or _G.GetSpecialization
+local GetSpecializationInfo = C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo or _G.GetSpecializationInfo
+local IsUsableSpell = C_Spell.IsSpellUsable or _G.IsUsableSpell
+local GetSpellPowerCost = C_Spell.GetSpellPowerCost or _G.GetSpellPowerCost
 
 
 ---------------------------------
@@ -86,6 +87,13 @@ Formatter{
 
 	D_SECONDS = Formatter:New(D_SECONDS),
 	S_SECONDS = Formatter:New(L["ANIM_SECONDS"]),
+	S_SECONDS_UPS = Formatter:New(function(value)
+		if value == 0 then
+			return L["UIPANEL_UPDATEINTERVAL_UPS"]:format(0.001, 1000)
+		else
+			return L["UIPANEL_UPDATEINTERVAL_UPS"]:format(value, ("%d"):format(1/value))
+		end
+	end),
 
 	PIXELS = Formatter:New(L["ANIM_PIXELS"]),
 
@@ -313,7 +321,7 @@ function TMW:MakeNArgFunctionCached(argCount, obj, method)
 		funcStr = funcStr .. "arg" .. i
 	end
 
-	funcStr = funcStr .. [[)
+	funcStr = funcStr .. [[, ...)
 	local next, prev, key = cache
 	]]
 
@@ -332,7 +340,7 @@ function TMW:MakeNArgFunctionCached(argCount, obj, method)
 		if i > 1 then funcStr = funcStr .. "," end
 		funcStr = funcStr .. "arg" .. i
 	end
-	funcStr = funcStr .. [[)
+	funcStr = funcStr .. [[, ...)
 		prev[key] = ret
 		return ret;
 	end, cache
@@ -598,6 +606,9 @@ function TMW:FormatSeconds(seconds, skipSmall, keepTrailing)
 	return ret
 end
 
+function TMW:GetRestrictedTString() 
+	return "|TInterface\\AddOns\\TellMeWhen\\Textures\\restricted.png:14:14:0:0:64:64:4:60:4:60:255:209:0|t"
+end
 
 
 
@@ -667,20 +678,28 @@ function TMW:RGBAToString(r, g, b, a, flags)
 end
 
 function TMW:StringToRGBA(str)
+	if type(str) == "table" then
+		return str.r, str.g, str.b, str.a, str.flags
+	end
+
 	local a, r, g, b, flagString = str:match("(%x%x)(%x%x)(%x%x)(%x%x)(.*)")
 
 	return tonumber(r, 0x10) / 0xFF, tonumber(g, 0x10) / 0xFF, tonumber(b, 0x10) / 0xFF, tonumber(a, 0x10) / 0xFF, parseFlagString(flagString)
 end
 
 function TMW:StringToCachedRGBATable(str)
-	if type(str) == "table" then
-		return str
-	end
-
 	local r, g, b, a, flags = TMW:StringToRGBA(str)
 	return {r=r,g=g,b=b,a=a, flags=flags}
 end
 TMW:MakeSingleArgFunctionCached(TMW, "StringToCachedRGBATable")
+
+function TMW:StringToCachedColorMixin(str)
+	local r, g, b, a, flags = TMW:StringToRGBA(str)
+	local ret = CreateColor(r, g, b, a)
+	ret.flags = flags or {}
+	return ret
+end
+TMW:MakeSingleArgFunctionCached(TMW, "StringToCachedColorMixin")
 
 
 -- Adapted from https://github.com/mjackson/mjijackson.github.com/blob/master/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript.txt
@@ -713,7 +732,7 @@ function TMW:RGBToHSV(r, g, b)
 	return h, s, v
 end
 
-function TMW:HSVToRGB(h, s, v)
+function TMW:HSVToRGB(h, s, v, a)
 	local r, g, b
 
 	local i = floor(h * 6)
@@ -732,7 +751,7 @@ function TMW:HSVToRGB(h, s, v)
 	elseif i == 5 then r, g, b = v, p, q
 	end
 
-	return r, g, b
+	return r, g, b, a
 end
 
 local getColorsTemp = {}
@@ -827,8 +846,11 @@ end
 function TMW.tDeleteItem(table, item, onlyOne)
 	local i = 1
 	local removed
-	while table[i] do
-		if item == table[i] then
+	while true do
+		local tItem = table[i]
+		if not tItem then return removed end
+		
+		if item == tItem then
 			tremove(table, i)
 			if onlyOne then
 				return true
@@ -891,8 +913,16 @@ function TMW.binaryInsert(table, value, comp)
 	-- http://lua-users.org/wiki/BinaryInsert
 	comp = comp or comp_default
 
+	local tableSize = #table
+	
+	-- Check if we can insert at the end first (common case optimization)
+	if tableSize == 0 or not comp(value, table[tableSize]) then
+		table[tableSize + 1] = value
+		return tableSize + 1
+	end
+
 	local iStart, iEnd, iMid, iState =
-		  1, #table, 1, 0
+		  1, tableSize, 1, 0
 
 	while iStart <= iEnd do
 		iMid = floor((iStart+iEnd) / 2)
@@ -1024,140 +1054,6 @@ function TMW:DeepCompare(t1, t2)
 
 	return true
 end
-
-do	-- TMW.shellsortDeferred
-	-- From http://lua-users.org/wiki/LuaSorting - shellsort
-	-- Written by Rici Lake. The author disclaims all copyright and offers no warranty.
-	--
-	-- This module returns a single function (not a table) whose interface is upwards-
-	-- compatible with the interface to table.sort:
-	--
-	-- array = shellsort(array, before, n)
-	-- array is an array of comparable elements to be sorted in place
-	-- before is a function of two arguments which returns true if its first argument
-	--    should be before the second argument in the second result. It must define
-	--    a total order on the elements of array.
-	--      Alternatively, before can be one of the strings "<" or ">", in which case
-	--    the comparison will be done with the indicated operator.
-	--    If before is omitted, the default value is "<"
-	-- n is the number of elements in the array. If it is omitted, #array will be used.
-	-- For convenience, shellsort returns its first argument.
-
-	-- A036569
-	local incs = { 8382192, 3402672, 1391376,
-		463792, 198768, 86961, 33936,
-		13776, 4592, 1968, 861, 336, 
-	112, 48, 21, 7, 3, 1 }
-
-	local execCap = 17
-	local start = 0
-	
-	local function ssup(v, testval)
-		return v < testval
-	end
-	
-	local function ssdown(v, testval)
-		return v > testval
-	end
-	
-	local function ssgeneral(t, n, before, progressCallback, progressCallbackArg)
-		local lastProgress = 100
-
-		for idx, h in ipairs(incs) do
-			local count = 1
-			for i = h + 1, n do
-				local v = t[i]
-				for j = i - h, 1, -h do
-					local testval = t[j]
-					if not before(v, testval) then break end
-					t[i] = testval; i = j
-				end
-				t[i] = v
-
-				count = count + 1
-
-				if (count % 200 == 0) and debugprofilestop() - start > execCap then
-					local progress = #incs - idx + 1
-
-					if progressCallback and progress ~= lastProgress then
-						if progressCallbackArg then
-							progressCallback(progressCallbackArg, progress)
-						else
-							progressCallback(progress)
-						end
-						lastProgress = progress
-					end
-					
-					coroutine.yield()
-				end
-			end
-		end
-		return t
-	end
-	
-	local coroutines = {}
-	local function shellsort(t, before, n, callback, callbackArg, progressCallback, progressCallbackArg)
-		n = n or #t
-		if not before or before == "<" then
-			ssgeneral(t, n, ssup, progressCallback, progressCallbackArg)
-		elseif before == ">" then
-			ssgeneral(t, n, ssdown, progressCallback, progressCallbackArg)
-		else
-			ssgeneral(t, n, before, progressCallback, progressCallbackArg)
-		end
-
-		if callbackArg ~= nil then
-			callback(callbackArg)
-		else
-			callback()
-		end
-
-		coroutines[t] = nil
-	end
-	
-	local timer
-
-	local function OnUpdate()
-		local table, co = next(coroutines)
-
-		if table then
-			if coroutine.status(co) == "dead" then
-				-- This might happen if there was an error thrown before the coroutine could finish.
-				coroutines[table] = nil
-				return
-			end
-			-- dynamic execution cap based on framerate.
-			-- this will keep us from dropping the user's framerate too much
-			-- without doing so little sorting that the process goes super slowly.
-			-- subtract a little bit to account for CPU usage for other things, like the game itself.
-			execCap = 1000/max(20, GetFramerate()) - 5
-
-			start = debugprofilestop()
-			assert(coroutine.resume(co))
-		end
-
-		if not next(coroutines) then
-			timer:Cancel()
-			timer = nil
-		end
-	end
-
-	-- The purpose of shellSortDeferred is to have a sort that won't
-	-- lock up the game when we sort huge things.
-	function TMW.shellsortDeferred(t, before, n, callback, callbackArg, progressCallback, progressCallbackArg)
-		local co = coroutine.create(shellsort)
-		coroutines[t] = co
-		start = debugprofilestop()
-
-		if not timer then
-			timer = C_Timer.NewTicker(0.001, OnUpdate)
-		end
-
-		assert(coroutine.resume(co, t, before, n, callback, callbackArg, progressCallback, progressCallbackArg))
-	end
-end
-
-
 
 
 
@@ -1389,7 +1285,7 @@ function TMW:TT_Copy(src, dest)
 end
 
 function TMW:TT_Update(f)
-	if GetMouseFocus() == f and f:IsMouseOver() and f:IsVisible() then
+	if f:IsMouseMotionFocus() and f:IsMouseOver() and f:IsVisible() then
 		f:GetScript("OnLeave")(f)
 		if not f.IsEnabled or f:IsEnabled() or (f:IsObjectType("Button") and f:GetMotionScriptsWhileDisabled()) then
 			f:GetScript("OnEnter")(f)
@@ -1484,34 +1380,49 @@ end
 -- WoW API Helpers
 ---------------------------------
 
-local classInfo = {
-	[1] = C_CreatureInfo.GetClassInfo(1),
-	[2] = C_CreatureInfo.GetClassInfo(2),
-	[3] = C_CreatureInfo.GetClassInfo(3),
-	[4] = C_CreatureInfo.GetClassInfo(4),
-	[5] = C_CreatureInfo.GetClassInfo(5),
-	[7] = C_CreatureInfo.GetClassInfo(7),
-	[8] = C_CreatureInfo.GetClassInfo(8),
-	[9] = C_CreatureInfo.GetClassInfo(9),
-	[11] = C_CreatureInfo.GetClassInfo(11),
-}
-function TMW.GetMaxClassID()
-	return 11
-end
-function TMW.GetClassInfo(classID)
-	local info = classInfo[classID]
-	if not info then return end
-	return info.className, info.classFile, info.classID
+local GetMouseFoci = GetMouseFoci
+TMW.GetMouseFocus = GetMouseFocus or function()
+	return GetMouseFoci()[1]
 end
 
-function TMW.SpellHasNoMana(spell)
-	-- TODO: in warlords, you can't determine spell costs anymore. Thanks, blizzard!
-	-- This function used to get the spell cost, and determine usability from that, 
-	-- but we can't do that anymore. It was a more reliable method because IsUsableSpell
-	-- was broken for some abilities (like Jab)
+function TMW.GetRuneCooldownDuration()
+	-- Round to a precision of 3 decimal points for comparison with returns from GetSpellCooldown
+	local _, duration = GetRuneCooldown(1)
+	if not duration then return 0 end
+	return floor(duration * 1e3 + 0.5) / 1e3
+end
 
-	local _, nomana = IsUsableSpell(spell)
-	return nomana
+if C_SpellBook and C_SpellBook.GetSpellBookItemType then
+	TMW.GetSpellBookItemInfo = function(index, book)
+		if book == "pet" then
+			book = Enum.SpellBookSpellBank.Pet
+		else 
+			book = Enum.SpellBookSpellBank.Player
+		end
+
+		local data = C_SpellBook.GetSpellBookItemInfo(index, book)
+		if not data then return end
+
+		-- typeName is for backwards compat
+		if data.itemType == Enum.SpellBookItemType.Spell then data.typeName = "SPELL" end
+		-- Nothing in TMW uses the other types besides SPELL
+
+		return data
+	end
+else
+	TMW.GetSpellBookItemInfo = function(index, book)
+		local type, baseSpellID = GetSpellBookItemInfo(index, book)
+		if not type then return end
+
+		return {
+			-- Nothing in TMW uses the other types besides SPELL
+			-- itemType is for forward compat
+			itemType = type == "SPELL" and 1 or -1,
+			typeName = type,
+			actionID = baseSpellID,
+			name = GetSpellBookItemName(index, book)
+		}
+	end
 end
 
 local function spellCostSorter(a, b)
@@ -1556,96 +1467,265 @@ function TMW.GetSpellCost(spell)
 	end
 end
 
-local classSpecIds = {
-	DRUID = {102,103,105},
-	HUNTER = {253,254,255},
-	MAGE = {62,63,64},
-	PALADIN = {65,66,70},
-	PRIEST = {256,257,258},
-	ROGUE = {259,260,261},
-	SHAMAN = {262,263,264},
-	WARLOCK = {265,266,267},
-	WARRIOR = {71,72,73},
-}
-local specs = {
-	[253]	= {"Beast Mastery", 461112, "DAMAGER"},
-	[254]	= {"Marksmanship", 236179, "DAMAGER"},
-	[255]	= {"Survival", 461113, "DAMAGER"},
-
-	[71]	= {"Arms", 132355, "DAMAGER"},
-	[72]	= {"Fury", 132347, "DAMAGER"},
-	[73]	= {"Protection", 132341, "TANK"},
-
-	[65]	= {"Holy", 135920, "HEALER"},
-	[66]	= {"Protection", 236264, "TANK"},
-	[70]	= {"Retribution", 135873, "DAMAGER"},
-
-	[62]	= {"Arcane", 135932, "DAMAGER"},
-	[63]	= {"Fire", 135810, "DAMAGER"},
-	[64]	= {"Frost", 135846, "DAMAGER"},
-
-	[256]	= {"Discipline", 135940, "HEALER"},
-	[257]	= {"Holy", 237542, "HEALER"},
-	[258]	= {"Shadow", 136207, "DAMAGER"},
-
-	[265]	= {"Affliction", 136145, "DAMAGER"},
-	[266]	= {"Demonology", 136172, "DAMAGER"},
-	[267]	= {"Destruction", 136186, "DAMAGER"},
-
-	[102]	= {"Balance", 136096, "DAMAGER"},
-	[103]	= {"Feral", 132115, "DAMAGER"},
-	[105]	= {"Restoration", 136041, "HEALER"},
-
-	[262]	= {"Elemental", 136048, "DAMAGER"},
-	[263]	= {"Enhancement", 237581, "DAMAGER"},
-	[264]	= {"Restoration", 136052, "HEALER"},
-
-	[259]	= {"Assassination", 236270, "DAMAGER"},
-	[260]	= {"Combat", 236286, "DAMAGER"},
-	[261]	= {"Subtlety", 132320, "DAMAGER"},
-}
-
-function TMW.GetNumSpecializations()
-	return 3
+if GetSpecializationInfoByID then
+	TMW.GetSpecializationInfoByID = GetSpecializationInfoByID
+else
+	local specs = {
+		[253]	= {"Beast Mastery", 461112, "DAMAGER"},
+		[254]	= {"Marksmanship", 236179, "DAMAGER"},
+		[255]	= {"Survival", 461113, "DAMAGER"},
+	
+		[71]	= {"Arms", 132355, "DAMAGER"},
+		[72]	= {"Fury", 132347, "DAMAGER"},
+		[73]	= {"Protection", 132341, "TANK"},
+	
+		[65]	= {"Holy", 135920, "HEALER"},
+		[66]	= {"Protection", 236264, "TANK"},
+		[70]	= {"Retribution", 135873, "DAMAGER"},
+	
+		[62]	= {"Arcane", 135932, "DAMAGER"},
+		[63]	= {"Fire", 135810, "DAMAGER"},
+		[64]	= {"Frost", 135846, "DAMAGER"},
+	
+		[256]	= {"Discipline", 135940, "HEALER"},
+		[257]	= {"Holy", 237542, "HEALER"},
+		[258]	= {"Shadow", 136207, "DAMAGER"},
+	
+		[265]	= {"Affliction", 136145, "DAMAGER"},
+		[266]	= {"Demonology", 136172, "DAMAGER"},
+		[267]	= {"Destruction", 136186, "DAMAGER"},
+	
+		[102]	= {"Balance", 136096, "DAMAGER"},
+		[103]	= {"Feral", 132115, "DAMAGER"},
+		[105]	= {"Restoration", 136041, "HEALER"},
+	
+		[262]	= {"Elemental", 136048, "DAMAGER"},
+		[263]	= {"Enhancement", 237581, "DAMAGER"},
+		[264]	= {"Restoration", 136052, "HEALER"},
+	
+		[259]	= {"Assassination", 236270, "DAMAGER"},
+		[260]	= {"Combat", 236286, "DAMAGER"},
+		[261]	= {"Subtlety", 132320, "DAMAGER"},
+	
+		[250]	= {"Blood", 135770, "DAMAGER"},
+		[251]	= {"Frost", 135773, "DAMAGER"},
+		[252]	= {"Unholy", 135775, "DAMAGER"},
+	}
+	
+	function TMW.GetSpecializationInfoByID(specID)
+		local data = specs[specID]
+		-- 3rd param is description... I didn't include it because TMW doesn't need it.
+		return specID, data[1], nil, data[2], data[3]
+	end
 end
 
-function TMW.GetCurrentSpecializationID()
-	local _, pclass = UnitClass("player")
-	local specIDs = classSpecIds[pclass]
+if GetSpecializationInfoForClassID 
+-- in MOP classic beta, it just returns nothing for a lot of classes.
+and GetSpecializationInfoForClassID(1,1) 
+then
+	-- Blizzard added GetSpecializationInfoForClassID in classic era/sod,
+	-- but it has an off-by-1 error with the spec index parameter,
+	-- using zero-based indexes instead of 1-based indexes
+
+
+	if not GetSpecializationInfoForClassID(9, 3) and ClassicExpansionAtMost(LE_EXPANSION_CLASSIC) then
+		function TMW.GetSpecializationInfoForClassID(classID, i)
+			if not i then
+				return GetSpecializationInfoForClassID(classID, i)
+			else
+				return GetSpecializationInfoForClassID(classID, i - 1)
+			end
+		end
+	else
+		TMW.GetSpecializationInfoForClassID = GetSpecializationInfoForClassID
+	end
+else
+	local classSpecIds = {
+		DRUID = ClassicExpansionAtLeast(LE_EXPANSION_MISTS_OF_PANDARIA) and {102,103,104,105} or {102,103,105},
+		HUNTER = {253,254,255},
+		MAGE = {62,63,64},
+		PALADIN = {65,66,70},
+		PRIEST = {256,257,258},
+		ROGUE = {259,260,261},
+		SHAMAN = {262,263,264},
+		WARLOCK = {265,266,267},
+		WARRIOR = {71,72,73},
+		DEATHKNIGHT = {250,251,252},
+		MONK = {268,270,269},
+	}
+
+	function TMW.GetSpecializationInfoForClassID(classID, i) 
+		local _, slug = GetClassInfo(classID)
+		local specID = classSpecIds[slug][i]
+		if not specID then return end
+		return TMW.GetSpecializationInfoByID(classSpecIds[slug][i])
+	end
+end
+
+if C_CreatureInfo and C_CreatureInfo.GetClassInfo then
+	local classInfo = {}
+
+	function TMW.GetMaxClassID()
+		-- This is hardcoded to 13 (evoker is the 13th class) because
+		-- e.g. in classic there are 9 classes but their IDs go to 11.
+		-- Everywhere we use this guards against non-existant classes, so its fine.
+		return 13
+	end
 	
-	local biggest = 0
-	local specID
-	for i = 1, #specIDs do
-		local _, _, points = GetTalentTabInfo(i)
-		if points > biggest then
-			biggest = points
-			specID = specIDs[i]
+	for i = 1, TMW.GetMaxClassID() do
+		classInfo[i] = C_CreatureInfo.GetClassInfo(i)
+	end
+
+	function TMW.GetClassInfo(classID)
+		local info = classInfo[classID]
+		if not info then return end
+		return info.className, info.classFile, info.classID
+	end
+else
+	TMW.GetClassInfo = GetClassInfo
+	TMW.GetMaxClassID = GetNumClasses
+end
+
+
+
+if ClassicExpansionAtMost(LE_EXPANSION_CATACLYSM) then
+	-- Cata-and-earlier style specs (pick and choose talents, dual spec):
+
+	local GetTalentTreeRoles = GetTalentTreeRoles
+	local GetActiveTalentGroup = GetActiveTalentGroup
+	local GetTalentTabInfo = GetTalentTabInfo
+	local GetTalentGroupRole = GetTalentGroupRole
+	
+	function TMW.GetNumSpecializations()
+		return 3
+	end
+	
+	function TMW.GetNumSpecializationsForClassID(classID)
+		return 3
+	end
+
+	function TMW.GetTalentQueries(specFilter)
+		local ret = {}
+		for spec = 1, TMW.GetNumSpecializations() do
+			if not specFilter or specFilter == spec then
+				for i = 1, MAX_NUM_TALENTS do
+					local talentInfoQuery = {};
+					talentInfoQuery.specializationIndex = spec;
+					talentInfoQuery.talentIndex = i;
+					ret[#ret + 1] = talentInfoQuery
+				end
+			end
+		end
+		return pairs(ret)
+	end
+	
+	function TMW.GetCurrentSpecialization()
+		local _, pclass, classID = UnitClass("player")
+		
+		local biggest = 0
+		local spec
+		for i = 1, TMW.GetNumSpecializationsForClassID(classID) do
+			local _, points
+			if select('#', GetTalentTabInfo(i)) >= 8 then
+				-- Cata classic and SOD Phase 4
+				_, _, _, _, points = GetTalentTabInfo(i)
+			else
+				-- SOD Phase 3
+				_, _, points = GetTalentTabInfo(i)
+			end
+
+			if points > biggest then
+				biggest = points
+				spec = i
+			end
+		end
+	
+		return spec
+	end
+	
+	function TMW.GetSpecializationInfo(index)
+		local _, pclass, classID = UnitClass("player")
+		return TMW.GetSpecializationInfoForClassID(classID, index)
+	end
+	
+	function TMW.GetCurrentSpecializationID()
+		local _, pclass, classID = UnitClass("player")
+		local spec = TMW.GetCurrentSpecialization()
+		if not spec then return end
+		return TMW.GetSpecializationInfoForClassID(classID, spec)
+	end
+	
+	function TMW.GetCurrentSpecializationRole()
+		-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
+	
+		if GetTalentTreeRoles then
+			-- cataclysm only??
+			-- note that for druids, this returns 2 roles (tank and dps) for feral.
+			local currentTree = TMW.GetCurrentSpecialization()
+			if currentTree then
+				return GetTalentTreeRoles(currentTree)
+			end
+		end
+
+		local activeSpec = GetActiveTalentGroup()
+		if not activeSpec or activeSpec == 0 then
+			return "DAMAGER"
+		end
+
+	
+		return GetTalentGroupRole(activeSpec) or "DAMAGER"
+	end
+else
+	-- MOP+ style specs (pick a talent tree):
+	local GetSpecialization = C_SpecializationInfo and C_SpecializationInfo.GetSpecialization or _G.GetSpecialization
+	local GetNumSpecializationsForClassID = C_SpecializationInfo and C_SpecializationInfo.GetNumSpecializationsForClassID or _G.GetNumSpecializationsForClassID
+
+	TMW.GetNumSpecializations = GetNumSpecializations
+	TMW.GetNumSpecializationsForClassID = GetNumSpecializationsForClassID
+	TMW.GetCurrentSpecialization = GetSpecialization
+	TMW.GetSpecializationInfo = GetSpecializationInfo
+	function TMW.GetCurrentSpecializationID() 
+		return GetSpecializationInfo(GetSpecialization())
+	end
+	function TMW.GetCurrentSpecializationRole()
+		-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
+		-- UPDATE_SHAPESHIFT_FORM if the player is a warrior.
+		local currentSpec = GetSpecialization()
+		if not currentSpec then
+			return nil
+		end
+
+		local _, _, _, _, role = GetSpecializationInfo(currentSpec)
+		return role
+	end
+
+	if ClassicExpansionAtMost(LE_EXPANSION_SHADOWLANDS) then
+		-- Mop-shadowlands style talents
+		function TMW.GetTalentQueries(specFilter)
+			local ret = {}
+			for spec = 1, TMW.GetNumSpecializations() do
+				if not specFilter or spec == specFilter then
+					for tier = 1, MAX_NUM_TALENT_TIERS do
+						for column = 1, NUM_TALENT_COLUMNS do
+							local talentInfoQuery = {};
+							talentInfoQuery.tier = tier;
+							talentInfoQuery.column = column;
+							talentInfoQuery.specializationIndex = spec;
+							ret[#ret + 1] = talentInfoQuery
+						end
+					end
+				end
+			end
+			return pairs(ret)
+		end
+	else
+		-- Dragonflight+
+		function TMW.GetTalentQueries(specFilter)
+			local ret = {}
+			
+			return pairs(ret)
 		end
 	end
-
-	return specID
-end
-
-function TMW.GetSpecializationInfo(index)
-	local _, pclass = UnitClass("player")
-	return TMW.GetSpecializationInfoByID(classSpecIds[pclass][index])
-end
-
-function TMW.GetSpecializationInfoByID(specID)
-	local data = specs[specID]
-	-- 3rd param is description... I didn't include it because TMW doesn't need it.
-	return specID, data[1], nil, data[2], data[3]
-end
-
-function TMW.GetCurrentSpecializationRole()
-	-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
-	local currentSpec = TMW.GetCurrentSpecializationID()
-	if not currentSpec then
-		return "DAMAGER" -- assume DPS if no talents are learned
-	end
-
-	local _, _, _, _, role = TMW.GetSpecializationInfoByID(currentSpec)
-	return role
 end
 
 
@@ -1653,21 +1733,28 @@ do	-- TMW:GetParser()
 	local Parser, LT1, LT2, LT3, RT1, RT2, RT3
 	function TMW:GetParser()
 		if not Parser then
-			Parser = CreateFrame("GameTooltip")
+			Parser = CreateFrame("GameTooltip", "TMWParser", nil, "GameTooltipTemplate")
+			if GameTooltipDataMixin then
+				-- in theory this could use TooltipDataHandlerMixin,
+				-- but the blizzard PTR tooltips explode if we dont use GameTooltipDataMixin
+				-- because somehow for some reason they need GetUnit?
+				Mixin(Parser, GameTooltipDataMixin)
+			end
 
-			LT1 = Parser:CreateFontString()
-			RT1 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT1, RT1)
-
-			LT2 = Parser:CreateFontString()
-			RT2 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT2, RT2)
-
-			LT3 = Parser:CreateFontString()
-			RT3 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT3, RT3)
+			-- Ensure all lines get eagerly created.
+			Parser:SetOwner(UIParent, "ANCHOR_NONE")
+			Parser:AddLine("lt1", "rt1")
+			Parser:AddLine("lt2", "rt2")
+			Parser:AddLine("lt3", "rt3")
 		end
-		return Parser, LT1, LT2, LT3, RT1, RT2, RT3
+		return 
+			Parser, 
+			TMWParserTextLeft1,
+			TMWParserTextLeft2,
+			TMWParserTextLeft3,
+			TMWParserTextRight1,
+			TMWParserTextRight2,
+			TMWParserTextRight3
 	end
 end
 
@@ -1687,12 +1774,22 @@ function TMW:GetRaceIconInfo(race)
 end
 TMW:MakeSingleArgFunctionCached(TMW, "GetRaceIconInfo")
 
-function TMW:TryGetNPCName(id)
-    local tooltip, LT1 = TMW:GetParser()
-    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-    tooltip:SetHyperlink( string.format( "unit:Creature-0-0-0-0-%d:0000000000", id))
-    
-    return LT1:GetText()
+if C_TooltipInfo and C_TooltipInfo.GetHyperlink then
+	function TMW:TryGetNPCName(id)
+		local hyperlink = string.format("unit:Creature-0-0-0-0-%d:0000000000", id)
+		local tooltipData = C_TooltipInfo.GetHyperlink(hyperlink)
+		if tooltipData and tooltipData.lines and tooltipData.lines[1] then
+			return tooltipData.lines[1].leftText
+		end
+		return nil
+	end
+else
+	function TMW:TryGetNPCName(id)
+		local tooltip, LT1 = TMW:GetParser()
+		tooltip:SetOwner(UIParent, "ANCHOR_NONE")
+		tooltip:SetHyperlink(string.format("unit:Creature-0-0-0-0-%d:0000000000", id))
+		return LT1:GetText()
+	end
 end
 
 -- From Blizzard_TutorialLogic.lua

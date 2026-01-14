@@ -1,124 +1,72 @@
 
-Postal3ClassicDB = {
+Postal3DB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Antun|Golemagg|Horde|1|SHAMAN", -- [1]
-				"Augustin|Golemagg|Horde|6|MAGE", -- [2]
-				"Dmitar|Golemagg|Horde|1|PRIEST", -- [3]
-				"Grgur|Golemagg|Horde|1|WARLOCK", -- [4]
-				"Jaroslav|Golemagg|Horde|1|DRUID", -- [5]
-				"Junac|Golemagg|Horde|4|DRUID", -- [6]
-				"Kamenac|Golemagg|Horde|60|WARRIOR", -- [7]
-				"Konac|Golemagg|Horde|60|PRIEST", -- [8]
-				"Mohikanac|Golemagg|Horde|27|HUNTER", -- [9]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [10]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [11]
-				"Mxzq|Golemagg|Horde|31|HUNTER", -- [12]
-				"Slanac|Golemagg|Horde|26|SHAMAN", -- [13]
-				"Stranac|Golemagg|Horde|1|MAGE", -- [14]
-				"Vermin|Golemagg|Horde|26|WARRIOR", -- [15]
+				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
+				"Dopeclaw|Stitches|Horde|26|DRUID", -- [2]
+				"Dopecure|Stitches|Horde|11|PRIEST", -- [3]
+				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
+				"Dopesick|Stitches|Horde|1|WARRIOR", -- [5]
+				"Dopesnare|Stitches|Horde|36|HUNTER", -- [6]
+				"Lonac|Stitches|Horde|1|WARRIOR", -- [7]
+				"Mxzq|Golemagg|Horde|35|HUNTER", -- [8]
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Junac - Golemagg"] = "Junac - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Konac - Golemagg"] = "Konac - Golemagg",
-		["Mohikanac - Golemagg"] = "Mohikanac - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Stranac - Golemagg"] = "Stranac - Golemagg",
+		["Dopede - Stitches"] = "Dopede - Stitches",
+		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Lonac - Stitches"] = "Lonac - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Slanac - Golemagg"] = "Slanac - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Antun - Golemagg"] = "Antun - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Kamenac - Golemagg"] = "Kamenac - Golemagg",
 	},
 	["profiles"] = {
-		["Dotwise - Golemagg"] = {
-		},
-		["Mxyz - Golemagg"] = {
+		["Dopede - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Vermin|Golemagg|Horde", -- [1]
-					"Mxzq|Golemagg|Horde", -- [2]
+					"Dopesick|Stitches|Horde", -- [1]
 				},
 			},
 		},
-		["Verminz - Golemagg"] = {
+		["Dopesnare - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Greenwise|Golemagg|Horde", -- [1]
+					"Dopeah|Stitches|Horde", -- [1]
+					"Dopesick|Stitches|Horde", -- [2]
 				},
 			},
 		},
-		["Junac - Golemagg"] = {
+		["Lonac - Stitches"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Dopesick - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopeah|Stitches|Horde", -- [1]
+					"Dopede|Stitches|Horde", -- [2]
+				},
+			},
 		},
-		["Konac - Golemagg"] = {
+		["Dopecure - Stitches"] = {
 		},
-		["Mohikanac - Golemagg"] = {
+		["Dopeclaw - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopede|Stitches|Horde", -- [1]
+				},
+			},
 		},
-		["Mxym - Golemagg"] = {
-		},
-		["Stranac - Golemagg"] = {
+		["Dopeah - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
+				},
+			},
 		},
 		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Slanac - Golemagg"] = {
-		},
-		["Vermin - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Mxyzptlk|Golemagg|Horde", -- [2]
-					"Kamenac|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Klhjakhsgdjh - Golemagg"] = {
-		},
-		["Antun - Golemagg"] = {
-		},
-		["Judawise - Golemagg"] = {
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-				},
-			},
-		},
-		["Greenwise - Golemagg"] = {
-		},
-		["Dmitar - Golemagg"] = {
-		},
-		["Kamenac - Golemagg"] = {
 		},
 	},
 }

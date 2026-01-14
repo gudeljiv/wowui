@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -35,11 +35,6 @@ TMW.HELP:NewCode("CNDT_UNIT_ONLYONE", 20, false)
 local CNDT = TMW.CNDT -- created in TellMeWhen/conditions.lua
 
 
---TODO: there needs to be a way for condition config to intelligently run a setup on a parent object using the current ConditionSet.
---TODO: try to get rid of all manual calls to LoadConfig (on other TMW modules too), and have these functions only be called from ReloadRequsted.
-
-
-
 ---------- Interface/Data ----------
 function CNDT:LoadConfig(conditionSetName)
 	local ConditionSet
@@ -67,6 +62,8 @@ function CNDT:LoadConfig(conditionSetName)
 	if not CNDT:GetSettings() then
 		return
 	end
+
+	CNDT:TryUpgradeSettings(CNDT:GetSettings())
 	
 	
 	TMW.HELP:Hide("CNDT_UNIT_MISSING")
@@ -202,6 +199,10 @@ local function AddConditionToDropDown(dropdown, conditionData)
 
 	local append = TMW.debug and not conditionData:ShouldList() and "(DBG)" or ""
 	
+	if TMW.clientHasSecrets and conditionData.maybeSecret then
+		append = append .. " " .. TMW:GetRestrictedTString()
+	end
+	
 	local info = TMW.DD:CreateInfo()
 	
 	local text = get(conditionData.text)
@@ -209,7 +210,12 @@ local function AddConditionToDropDown(dropdown, conditionData)
 	info.text = (text or "??") .. append
 	
 	info.tooltipTitle = text
-	info.tooltipText = get(conditionData.tooltip)
+	local tooltip = get(conditionData.tooltip)
+	if TMW.clientHasSecrets and conditionData.maybeSecret then
+		tooltip = (tooltip and tooltip .. "\r\n\r\n" or "") .. L["UIPANEL_SECRETS_CNDT_DISALLOWED_DESC"]
+	end
+	info.tooltipText = tooltip
+	info.tooltipFunc = conditionData.tooltipFunc
 	
 	info.value = conditionData.identifier
 	info.arg1 = dropdown
@@ -442,6 +448,57 @@ function CNDT:InBitflags(bitFlags)
 	return TMW:OrderedPairs(bitFlags, tableValues and TMW.OrderSort or nil, tableValues)
 end
 
+
+
+---------- Runes ----------
+if GetRuneType then
+	TMW:NewClass("Config_Conditions_Rune", "Config_CheckButton") {
+		OnNewInstance = function(self)
+			if self.death then
+				self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. self.runeType)
+			else
+				self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. self.runeType)
+			end
+
+			local title = _G["COMBAT_TEXT_RUNE_" .. (self.runeType):upper()]
+			if self.death then
+				title = COMBAT_TEXT_RUNE_DEATH .. " (" .. title .. ")"
+			end
+
+			TMW:TT(self, title, "CONDITIONPANEL_RUNES_CHECK_DESC", true, false)
+		end,
+
+		OnClick = function(self, button)
+			local settings = self:GetSettingTable()
+
+			local checked = self:GetChecked()
+
+			if checked then
+				PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+			else
+				PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF)
+			end
+
+			local index = self.key
+
+			if settings and index then
+				TMW.CNDT:ToggleBitFlag(settings, index)
+
+				self:OnSettingSaved()
+			end
+		end,
+
+		ReloadSetting = function(self)
+			local settings = self:GetSettingTable()
+
+			local index = self.key
+
+			if settings and index then
+				self:SetChecked(CNDT:GetBitFlag(settings, index))
+			end
+		end,
+	}
+end
 
 
 ---------- Parentheses ----------
@@ -775,7 +832,15 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 			CndtGroup.Unit:Show()
 			
 			-- Reset suggestion list module. This might get modified by unit conditions.
-			TMW.SUG:EnableEditBox(CndtGroup.Unit, "units", true)
+			TMW.SUG:EnableEditBox(CndtGroup.Unit, "units", not conditionData.multiUnit)
+
+			if conditionData.multiUnit then
+				CndtGroup.Unit:SetLabel("|cFFFF5050" .. TMW.L["ICONMENU_UNITS"] .. "!|r")
+				CndtGroup.Unit:SetTexts(TMW.L["ICONMENU_UNITS"], TMW.L["ICONMENU_UNIT_DESC"])
+			else
+				CndtGroup.Unit:SetLabel("|cFFFF5050" .. TMW.L["CONDITIONPANEL_UNIT"] .. "!|r")
+				CndtGroup.Unit:SetTexts(TMW.L["CONDITIONPANEL_UNIT"], TMW.L["ICONMENU_UNIT_DESC_CONDITIONUNIT"])
+			end
 			
 		elseif unit == false then
 			-- No unit, keep editbox and static text hidden
@@ -804,6 +869,17 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 
 	TMW:TT(CndtGroup.Type, text, tooltip, 1, 1)
 	TMW:TT(CndtGroup.Type.EditBox, text, tooltip, 1, 1)
+	
+	if TMW.clientHasSecrets and conditionData and conditionData.maybeSecret then
+		CndtGroup.Type.RestrictedIcon:Show()
+		CndtGroup.Type.RestrictedIcon:SetWidth(16)
+		CndtGroup.Type:SetWidth(176-16)
+		TMW:TT(CndtGroup.Type.RestrictedIcon, "UIPANEL_SECRETS_DISALLOWED", "UIPANEL_SECRETS_CNDT_DISALLOWED_DESC")
+	else
+		CndtGroup.Type.RestrictedIcon:Hide()
+		CndtGroup.Type.RestrictedIcon:SetWidth(0.1)
+		CndtGroup.Type:SetWidth(176)
+	end
 end)
 
 -- Operator
@@ -943,6 +1019,17 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 	end		
 end)
 
+-- Runes
+TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, conditionData, conditionSettings)
+	if conditionData and conditionData.runesConfig then
+		CndtGroup.prevRowFrame = CndtGroup.Runes
+		CndtGroup.Runes:Show()
+		CndtGroup.Slider:SetWidth(217)
+	else
+		CndtGroup.Runes:Hide()
+	end
+end)
+
 -- Slider
 TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, conditionData, conditionSettings)
 	CndtGroup.LevelChecks:Hide()
@@ -1064,7 +1151,7 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 			CndtGroup.BitFlags:SetWidth(150)
 			CndtGroup.Unit:SetWidth(90)
 		else
-			CndtGroup.BitFlags:SetPoint("TOPLEFT", CndtGroup.Type, "TOPRIGHT", 15, 0)
+			CndtGroup.BitFlags:SetPoint("TOPLEFT", CndtGroup.Type.RestrictedIcon, "TOPRIGHT", 13, 0)
 			CndtGroup.BitFlags:SetWidth(190)
 		end
 
@@ -1129,14 +1216,14 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 	if conditionData then
 		local text
 
-		if conditionData.funcstr == "DEPRECATED" then
+		if conditionData:IsDeprecated() then
 			if conditionData.customDeprecated then
-				text = conditionData.customDeprecated(conditionSettings)
+				text = get(conditionData.customDeprecated, conditionSettings)
 			else
 				text = TMW.L["CNDT_DEPRECATED_DESC"]:format(get(conditionData.text))
 			end
 		elseif conditionData.customDeprecated then
-			text = conditionData.customDeprecated(conditionSettings)
+			text = get(conditionData.customDeprecated, conditionSettings)
 		end
 
 		if text and text ~= "" then
@@ -1261,7 +1348,11 @@ end
 function Module:Entry_AddToList_1(f, identifier)
 	local conditionData = CNDT.ConditionsByType[identifier]
 
-	f.Name:SetText(get(conditionData.text))
+	local text = get(conditionData.text)
+	if TMW.clientHasSecrets and conditionData.maybeSecret then
+		text = text .. " " .. TMW:GetRestrictedTString()
+	end
+	f.Name:SetText(text)
 
 	f.insert = identifier
 
@@ -1269,6 +1360,9 @@ function Module:Entry_AddToList_1(f, identifier)
 	f.tooltiptext = conditionData.category.name
 	if conditionData.tooltip then
 		f.tooltiptext = f.tooltiptext .. "\r\n\r\n" .. get(conditionData.tooltip)
+	end
+	if TMW.clientHasSecrets and conditionData.maybeSecret then
+		f.tooltiptext = f.tooltiptext .. "\r\n\r\n" .. L["UIPANEL_SECRETS_CNDT_DISALLOWED_DESC"]
 	end
 
 	if conditionData.atlas then

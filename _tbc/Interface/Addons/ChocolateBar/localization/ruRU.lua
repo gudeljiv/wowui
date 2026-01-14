@@ -2,188 +2,135 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
 local L = AceLocale:NewLocale("ChocolateBar", "ruRU")
 if not L then return end
 
---[[Translation missing --]]
-L["A broker plugin to toggle a bar."] = "A broker plugin to toggle a bar."
-L["Adjust Blizzard Frames"] = "Подогнать фреймы от Blizzard"
---[[Translation missing --]]
-L["Adjust the size of the tiles."] = "Adjust the size of the tiles."
+L["A broker plugin to toggle a bar."] = "Плагин для переключения панели."
+L["Adjust Blizzard Frames"] = "Настройка положения фреймов Blizzard"
+L["Adjust the size of the tiles."] = "Размер плитки текстуры."
 L["Advanced Textures"] = "Дополнительные текстуры"
 L["Alignment"] = "Выравнивание"
---[[Translation missing --]]
-L["Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."] = "Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."
-L["Autohide"] = "Авто-скрытие"
---[[Translation missing --]]
-L["Automatically disable new plugins of type:"] = "Automatically disable new plugins of type:"
+L["Always adjust the center group based on the current width of the plugins. Disable this to align the center group based only on the number of plugins."] = "Всегда выравнивать центральную группу по текущей ширине плагинов. Отключите, чтобы выравнивание зависело только от количества плагинов."
+L["Autohide"] = "Автоскрытие"
+L["Automatically disable new plugins of type:"] = "Автоматически отключать новые плагины типа:"
 L["Background Texture"] = "Текстура фона"
-L["Bar Right Click"] = "Правый клик"
-L["Bar Settings"] = "Настройки"
-L["Bar Size"] = "Размер бара"
---[[Translation missing --]]
-L["Bar Strata"] = "Bar Strata"
---[[Translation missing --]]
-L["Bar Width"] = "Bar Width"
+L["Bar Right Click"] = "ПКМ по панели"
+L["Bar Settings"] = "Настройки панели"
+L["Bar Size"] = "Размер панели"
+L["Bar Strata"] = "Слой панели"
+L["Bar Width"] = "Ширина панели"
 L["Bars"] = "Панели"
 L["Blizzard Options"] = "Настройки Blizzard"
---[[Translation missing --]]
-L["Border Color/Alpha"] = "Border Color/Alpha"
-L["Center"] = "Центр"
+L["Border Color/Alpha"] = "Цвет/прозрачность рамки"
+L["Center"] = "По центру"
 L["ChocolateBar Options"] = "Настройки ChocolateBar"
---[[Translation missing --]]
-L["Colorize frames during drag & drop."] = "Colorize frames during drag & drop."
---[[Translation missing --]]
-L["Colorized Dragging"] = "Colorized Dragging"
-L["Could not load ChocolateBar_Options, make sure it's installed."] = "Невозможно загрузить ChocolateBar_Options, проверьте, установлен ли он."
+L["Colorize frames during drag & drop."] = "Подсвечивать фреймы при перетаскивании."
+L["Colorized Dragging"] = "Подсветка при перетаскивании"
+L["Could not load ChocolateBar_Options, make sure it's installed."] = "Не удалось загрузить ChocolateBar_Options. Убедитесь, что аддон установлен."
 L["Create Bar"] = "Создать панель"
 L["Create New Bar"] = "Создать новую панель"
---[[Translation missing --]]
-L["Create New Placeholder"] = "Create New Placeholder"
---[[Translation missing --]]
-L["Create Placeholder"] = "Create Placeholder"
---[[Translation missing --]]
-L["Creates a new plugin to use as a placeholder."] = "Creates a new plugin to use as a placeholder."
+L["Create New Placeholder"] = "Создать новый заполнитель"
+L["Create Placeholder"] = "Создать заполнитель"
+L["Creates a new plugin to use as a placeholder."] = "Создаёт новый плагин-заполнитель."
 L["Data Source"] = "Источник данных"
 L["Debug"] = "Отладка"
-L["Default text color of a plugin. This will not overwrite plugins that use own colors."] = "Цвет текста плагина по умолчанию. Это не перезапишет плагины, которые используют свои цвета."
+L["Default text color of a plugin. This will not overwrite plugins that use own colors."] = "Цвет текста по умолчанию. Не перезаписывает плагины, использующие собственные цвета."
 L["Defaults"] = "По умолчанию"
 L["Delay"] = "Задержка"
---[[Translation missing --]]
-L["Desaturated Icons"] = "Desaturated Icons"
-L["Disable All"] = "Выключить все"
---[[Translation missing --]]
-L["Disable all Launchers"] = "Disable all Launchers"
---[[Translation missing --]]
-L["Disable all the bad guy's:)"] = "Disable all the bad guy's:)"
---[[Translation missing --]]
-L["Disable Clicking"] = "Disable Clicking"
-L["Disable Options"] = "Выключить опции"
---[[Translation missing --]]
-L["Disable options dialog on right click"] = "Disable options dialog on right click"
+L["Desaturated Icons"] = "Обесцвеченные иконки"
+L["Disable All"] = "Отключить все"
+L["Disable all Launchers"] = "Отключить все лаунчеры"
+L["Disable all the bad guy's:)"] = "Отключить всех плохих парней :)"
+L["Disable Clicking"] = "Отключить клики"
+L["Disable Options"] = "Отключить настройки"
+L["Disable options dialog on right click"] = "Отключить меню настроек по ПКМ"
 L["Disable Plugin"] = "Отключить плагин"
-L["Disable Tooltips"] = "Выключить подсказки"
-L["Disabled"] = "Выключено"
---[[Translation missing --]]
-L["Eat a whole chocolate bar, oh my.."] = "Eat a whole chocolate bar, oh my.."
---[[Translation missing --]]
-L["Eat all the chocolate at once, uff..."] = "Eat all the chocolate at once, uff..."
+L["Disable Tooltips"] = "Отключить подсказки"
+L["Disabled"] = "Отключено"
+L["Eat a whole chocolate bar, oh my.."] = "Съесть целую шоколадку, ого..."
+L["Eat all the chocolate at once, uff..."] = "Съесть весь шоколад сразу, уф..."
 L["Enable All"] = "Включить все"
---[[Translation missing --]]
-L["Enable free placement for this bar"] = "Enable free placement for this bar"
+L["Enable free placement for this bar"] = "Включить свободное размещение для этой панели"
 L["Enabled"] = "Включено"
-L["Fixed"] = "Исправлено"
-L["Fixed/Max Text Width"] = "Исправлено/Максимальная длинна текста"
+L["Fixed"] = "Фиксированная"
+L["Fixed/Max Text Width"] = "Фикс./макс. ширина текста"
 L["Font"] = "Шрифт"
 L["Font Size"] = "Размер шрифта"
 L["Fonts and Textures"] = "Шрифты и текстуры"
-L["Force Text Color"] = "Принудительное изменение цвета текста"
---[[Translation missing --]]
-L["Free"] = "Free"
---[[Translation missing --]]
-L["Free Placement"] = "Free Placement"
---[[Translation missing --]]
-L["Gap"] = "Gap"
-L["General"] = "Основное"
+L["Force Text Color"] = "Принудительный цвет текста"
+L["Free"] = "Свободное"
+L["Free Placement"] = "Свободное размещение"
+L["Gap"] = "Отступ"
+L["General"] = "Общие"
 L["Get back my plugins!"] = "Верните мои плагины!"
-L["Hide Bars"] = "Спрятать панели"
-L["Hide Bars during a Pet Battle."] = "Спрятать панели во время битвы питомцев"
-L["Hide Bars in Pet Battle"] = "Спрятать панели во время битвы питомцев"
-L["Hide In Combat"] = "Спрятать панели в бою"
-L["Hide Order Hall Bar"] = "Спрятать панель оплота класса"
-L["Hide this bar during combat."] = "Спрятать во время боя."
---[[Translation missing --]]
-L["Hides the command bar displayed at the Class/Order Hall."] = "Hides the command bar displayed at the Class/Order Hall."
+L["Hide Bars"] = "Скрывать панели"
+L["Hide Bars during a Pet Battle."] = "Скрывать панели во время битв питомцев."
+L["Hide Bars in Pet Battle"] = "Скрывать панели в битвах питомцев"
+L["Hide In Combat"] = "Скрывать в бою"
+L["Hide Order Hall Bar"] = "Скрывать панель оплота"
+L["Hide this bar during combat."] = "Скрывать эту панель в бою."
+L["Hides the command bar displayed at the Class/Order Hall."] = "Скрывает командную панель в оплоте класса/ордена."
 L["Highlight"] = "Подсветка"
-L["Hold alt key to drag a plugin."] = "Зажми Alt для изменения позиции плагина"
-L["Horizontal Offset"] = "Горизонтальный отступ"
---[[Translation missing --]]
-L["How should the plugin width adapt to the text?"] = "How should the plugin width adapt to the text?"
-L["Icon Size"] = "Размер иконки"
-L["Icon size in relation to the bar height."] = "Отношение размера иконки к высоте панели"
---[[Translation missing --]]
-L["If enabled new plugins of type data source will automatically be disabled."] = "If enabled new plugins of type data source will automatically be disabled."
---[[Translation missing --]]
-L["If enabled new plugins of type launcher will automatically be disabled."] = "If enabled new plugins of type launcher will automatically be disabled."
+L["Hold alt key to drag a plugin."] = "Удерживайте Alt для перетаскивания плагина."
+L["Horizontal Offset"] = "Смещение по горизонтали"
+L["How should the plugin width adapt to the text?"] = "Как подстраивать ширину плагина под текст?"
+L["Icon Size"] = "Размер иконок"
+L["Icon size in relation to the bar height."] = "Размер иконки относительно высоты панели."
+L["If enabled new plugins of type data source will automatically be disabled."] = "Если включено — новые плагины типа источник данных будут автоматически отключаться."
+L["If enabled new plugins of type launcher will automatically be disabled."] = "Если включено — новые плагины типа лаунчер будут автоматически отключаться."
 L["In Combat"] = "В бою"
-L["Launcher"] = "Загрузчик"
-L["Left"] = "Лево"
-L["Lock Plugins"] = "Блокировать плагины"
-L["Locked"] = "Заблокирован"
-L["Look and Feel"] = "Вид и ощущения"
-L["Manage this Bar"] = "Настроить эту панель"
-L["Managed Placement"] = "Настроенное расположение"
-L["Max"] = "Максимальное"
+L["Launcher"] = "Лаунчер"
+L["Left"] = "Слева"
+L["Lock Plugins"] = "Заблокировать плагины"
+L["Locked"] = "Заблокировано"
+L["Look and Feel"] = "Внешний вид"
+L["Manage this Bar"] = "Управление этой панелью"
+L["Managed Placement"] = "Управляемое размещение"
+L["Max"] = "Макс."
 L["Modules"] = "Модули"
-L["Move Blizzard frames above/below bars"] = "Двигать фреймы от Blizzard выше/ниже баров"
-L["Move Down"] = "Двигать ниже"
-L["Move Up"] = "Двигать выше"
---[[Translation missing --]]
-L["None"] = "None"
---[[Translation missing --]]
-L["none"] = "none"
+L["Move Blizzard frames above/below bars"] = "Перемещать фреймы Blizzard над/под панелями"
+L["Move Down"] = "Вниз"
+L["Move Up"] = "Вверх"
+L["None"] = "Нет"
+L["none"] = "нет"
 L["Opacity"] = "Прозрачность"
 L["Options"] = "Настройки"
 L["Other"] = "Другое"
---[[Translation missing --]]
-L["Overwrite Icon Size"] = "Overwrite Icon Size"
---[[Translation missing --]]
-L["Overwrite Text Offset"] = "Overwrite Text Offset"
---[[Translation missing --]]
-L["Placeholder"] = "Placeholder"
---[[Translation missing --]]
-L["Placeholder Options"] = "Placeholder Options"
---[[Translation missing --]]
-L["Placeholders"] = "Placeholders"
+L["Overwrite Icon Size"] = "Заменять размер иконок"
+L["Overwrite Text Offset"] = "Заменять отступ текста"
+L["Placeholder"] = "Заполнитель"
+L["Placeholder Options"] = "Настройки заполнителей"
+L["Placeholders"] = "Заполнители"
 L["Plugin Statistics"] = "Статистика плагинов"
 L["Plugins"] = "Плагины"
---[[Translation missing --]]
-L["Quick Config"] = "Quick Config"
-L["Remove Bar"] = "Убрать бар"
---[[Translation missing --]]
-L["Remove custom colors from plugins."] = "Remove custom colors from plugins."
---[[Translation missing --]]
-L["Remove Placeholder"] = "Remove Placeholder"
---[[Translation missing --]]
-L["Remove this Placeholder"] = "Remove this Placeholder"
-L["Right"] = "Право"
-L["Select Bar"] = "Выбрать бар"
---[[Translation missing --]]
-L["Select the action when right clicking on a bar."] = "Select the action when right clicking on a bar."
-L["Set a width for the bar."] = "Установить ширину бара"
---[[Translation missing --]]
-L["Set fixed or max width for the text."] = "Set fixed or max width for the text."
-L["Set seconds until bar will hide."] = "Установить кол-во секунд, до тех пор пока бар не спрячется."
---[[Translation missing --]]
-L["Set the distance between the icon and the text."] = "Set the distance between the icon and the text."
---[[Translation missing --]]
-L["Set the gap between the plugins."] = "Set the gap between the plugins."
-L["Set the opacity of the bars during combat."] = "Установить прозрачность баров во время боя."
-L["Show Icon"] = "Показать иконку"
---[[Translation missing --]]
-L["Show icons in gray scale mode (This will not affect icons embedded in the text of a plugin)."] = "Show icons in gray scale mode (This will not affect icons embedded in the text of a plugin)."
-L["Show Text"] = "Показать текст"
---[[Translation missing --]]
-L["Some of the fonts may depend on other addons."] = "Some of the fonts may depend on other addons."
---[[Translation missing --]]
-L["Some of the textures may depend on other addons."] = "Some of the textures may depend on other addons."
---[[Translation missing --]]
-L["Temporarily highlights the position of the plugin on the bar."] = "Temporarily highlights the position of the plugin on the bar."
+L["Quick Config"] = "Быстрая настройка"
+L["Remove Bar"] = "Удалить панель"
+L["Remove custom colors from plugins."] = "Убрать пользовательские цвета у плагинов."
+L["Remove Placeholder"] = "Удалить заполнитель"
+L["Remove this Placeholder"] = "Удалить этот заполнитель"
+L["Right"] = "Справа"
+L["Select Bar"] = "Выбрать панель"
+L["Select the action when right clicking on a bar."] = "Выберите действие при клике ПКМ по панели."
+L["Set a width for the bar."] = "Задать ширину панели."
+L["Set fixed or max width for the text."] = "Задать фиксированную или максимальную ширину текста."
+L["Set seconds until bar will hide."] = "Задержка в секундах перед скрытием панели."
+L["Set the distance between the icon and the text."] = "Отступ между иконкой и текстом."
+L["Set the gap between the plugins."] = "Отступ между плагинами."
+L["Set the opacity of the bars during combat."] = "Прозрачность панелей в бою."
+L["Show Icon"] = "Показывать иконку"
+L["Show icons in gray scale mode (This will not affect icons embedded in the text of a plugin)."] = "Показывать иконки в серых тонах (не влияет на иконки внутри текста плагина)."
+L["Show Text"] = "Показывать текст"
+L["Some of the fonts may depend on other addons."] = "Некоторые шрифты зависят от других аддонов."
+L["Some of the textures may depend on other addons."] = "Некоторые текстуры зависят от других аддонов."
+L["Temporarily highlights the position of the plugin on the bar."] = "Временно подсвечивает позицию плагина на панели."
 L["Text color"] = "Цвет текста"
---[[Translation missing --]]
-L["Text Offset"] = "Text Offset"
+L["Text Offset"] = "Отступ текста"
 L["Texture Color/Alpha"] = "Цвет/прозрачность текстуры"
 L["Textures"] = "Текстуры"
---[[Translation missing --]]
-L["Tile"] = "Tile"
---[[Translation missing --]]
-L["Tile Size"] = "Tile Size"
---[[Translation missing --]]
-L["Tile the Texture. Disable to stretch the Texture."] = "Tile the Texture. Disable to stretch the Texture."
-L["Toggle Text"] = "Включить текст"
+L["Tile"] = "Плитка"
+L["Tile Size"] = "Размер плитки"
+L["Tile the Texture. Disable to stretch the Texture."] = "Плитка текстуры. Отключите, чтобы растягивать."
+L["Toggle Text"] = "Переключить текст"
 L["Total"] = "Всего"
 L["Type"] = "Тип"
-L["Unlock to to move the bar anywhere you want."] = "Разблокировать бар, чтобы его передвигать."
---[[Translation missing --]]
-L["Update Center Position"] = "Update Center Position"
---[[Translation missing --]]
-L["Vertical Offset"] = "Vertical Offset"
---[[Translation missing --]]
-L["Width Behavior"] = "Width Behavior"
+L["Unlock to to move the bar anywhere you want."] = "Разблокируйте, чтобы свободно перемещать панель."
+L["Update Center Position"] = "Обновить позицию центра"
+L["Vertical Offset"] = "Смещение по вертикали"
+L["Width Behavior"] = "Поведение ширины"

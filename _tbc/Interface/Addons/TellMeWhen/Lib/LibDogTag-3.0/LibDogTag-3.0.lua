@@ -6,13 +6,13 @@ Description: A library to provide a markup syntax
 ]]
 
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20220322132201"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260109044932"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
 end
 
-local type, error, pairs, ipairs, next, pcall, _G = type, error, pairs, ipairs, next, pcall, _G
+local type, error, pairs, ipairs, next, xpcall, _G = type, error, pairs, ipairs, next, xpcall, _G
 
 -- #AUTODOC_NAMESPACE DogTag
 
@@ -299,9 +299,12 @@ local function updateFontString(fs)
 		local func = codeToFunction[nsList][kwargTypes][code]
 		DogTag.__isMouseOver = DogTag.__lastMouseover == fsToFrame[fs]
 		
-		local success, text, opacity, outline = pcall(func, kwargs)
+		-- When xpcall is allowed to invoke CallErrorHandler directly, 
+		-- it includes the compiled func's Lua in the stack trace, which is invaluable.
+		-- So, we don't manually call tagError anymore since xpcall was improved in ~2018.
+		-- Instead, tag debugging info is now included in the tag func generated code.
+		local success, text, opacity, outline = xpcall(func, CallErrorHandler, kwargs)
 		if not success then
-			DogTag.tagError(code, nsList, text)
 			return
 		end
 	
@@ -555,7 +558,7 @@ function DogTag:ADDON_LOADED()
 				if AceLibrary then
 					AceLibrary:HasInstance(name) -- try to load
 				end
-				LoadAddOn(name)
+				(C_AddOns and C_AddOns.LoadAddOn or _G.LoadAddOn)(name)
 				if LibStub:GetLibrary(name, true) then
 					data[k] = nil
 					del(k)

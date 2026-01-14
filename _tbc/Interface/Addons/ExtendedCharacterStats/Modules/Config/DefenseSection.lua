@@ -24,7 +24,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             armor = {
@@ -37,39 +37,72 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.armor.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.armor.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
-            critImmunity = {
+            meleeCritReduction = {
                 type = "toggle",
-                order = 1.7,
-                name = function() return i18n("Crit Immune") end,
-                desc = function() return i18n("Shows/Hides the percentage of being crit immune.") end,
+                order = 1.81,
+                name = function() return i18n("Melee Crit Reduction") end,
+                desc = function() return i18n("Shows/Hides the reduction percentage of being critically hit by melee attacks.") end,
                 width = 1.5,
-                hidden = function()
-                    return (not ECS.IsTBC)
-                end,
                 disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
-                get = function () return ExtendedCharacterStats.profile.defense.critImmunity.display; end,
+                get = function () return ExtendedCharacterStats.profile.defense.meleeCritReduction.display; end,
                 set = function (_, value)
-                    ExtendedCharacterStats.profile.defense.critImmunity.display = value
-                    Stats:RebuildStatInfos()
+                    ExtendedCharacterStats.profile.defense.meleeCritReduction.display = value
+                    Stats.RebuildStatInfos()
                 end,
             },
-            critReduction = {
+            rangedCritReduction = {
                 type = "toggle",
-                order = 1.8,
-                name = function() return i18n("Crit Reduction") end,
-                desc = function() return i18n("Shows/Hides the reduction percentage of being critically hit.") end,
+                order = 1.82,
+                name = function() return i18n("Ranged Crit Reduction") end,
+                desc = function() return i18n("Shows/Hides the reduction percentage of being critically hit by ranged attacks.") end,
                 width = 1.5,
-                hidden = function()
-                    return (not ECS.IsTBC)
-                end,
                 disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
-                get = function () return ExtendedCharacterStats.profile.defense.critReduction.display; end,
+                get = function () return ExtendedCharacterStats.profile.defense.rangedCritReduction.display; end,
                 set = function (_, value)
-                    ExtendedCharacterStats.profile.defense.critReduction.display = value
-                    Stats:RebuildStatInfos()
+                    ExtendedCharacterStats.profile.defense.rangedCritReduction.display = value
+                    Stats.RebuildStatInfos()
+                end,
+            },
+            spellCritReduction = {
+                type = "toggle",
+                order = 1.83,
+                name = function() return i18n("Spell Crit Reduction") end,
+                desc = function() return i18n("Shows/Hides the reduction percentage of being critically hit by spells.") end,
+                width = 1.5,
+                disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
+                get = function () return ExtendedCharacterStats.profile.defense.spellCritReduction.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.defense.spellCritReduction.display = value
+                    Stats.RebuildStatInfos()
+                end,
+            },
+            avoidance = {
+                type = "toggle",
+                order = 1.85,
+                name = function() return i18n("Avoidance") end,
+                desc = function() return i18n("Shows/Hides the total avoidance.") end,
+                width = 1.5,
+                disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
+                get = function () return ExtendedCharacterStats.profile.defense.avoidance.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.defense.avoidance.display = value
+                    Stats.RebuildStatInfos()
+                end,
+            },
+            avoidanceBoss = {
+                type = "toggle",
+                order = 1.86,
+                name = function() return i18n("Avoidance (Lvl +3)") end,
+                desc = function() return i18n("Shows/Hides the total avoidance (Lvl +3).") end,
+                width = 1.5,
+                disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
+                get = function () return ExtendedCharacterStats.profile.defense.avoidanceBoss.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.defense.avoidanceBoss.display = value
+                    Stats.RebuildStatInfos()
                 end,
             },
             defenseRating = {
@@ -79,13 +112,13 @@ function _Config:LoadDefenseSection()
                 desc = function() return i18n("Shows/Hides the defense rating.") end,
                 width = 1.5,
                 hidden = function()
-                    return (not ECS.IsTBC)
+                    return (not ECS.IsWotlk)
                 end,
                 disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
                 get = function () return ExtendedCharacterStats.profile.defense.defenseRating.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.defenseRating.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             defense = {
@@ -98,7 +131,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.defense.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.defense.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             blockChance = {
@@ -111,7 +144,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.blockChance.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.blockChance.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             blockValue = {
@@ -124,7 +157,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.blockValue.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.blockValue.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             parry = {
@@ -137,7 +170,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.parry.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.parry.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             dodge = {
@@ -150,7 +183,7 @@ function _Config:LoadDefenseSection()
                 get = function () return ExtendedCharacterStats.profile.defense.dodge.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.dodge.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
             resilience = {
@@ -160,13 +193,13 @@ function _Config:LoadDefenseSection()
                 desc = function() return i18n("Shows/Hides the resilience value.") end,
                 width = 1.5,
                 hidden = function()
-                    return (not ECS.IsTBC)
+                    return (not ECS.IsWotlk)
                 end,
                 disabled = function() return (not ExtendedCharacterStats.profile.defense.display); end,
                 get = function () return ExtendedCharacterStats.profile.defense.resilience.display; end,
                 set = function (_, value)
                     ExtendedCharacterStats.profile.defense.resilience.display = value
-                    Stats:RebuildStatInfos()
+                    Stats.RebuildStatInfos()
                 end,
             },
         },

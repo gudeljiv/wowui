@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -15,9 +15,10 @@ if not TMW then return end
 local L = TMW.L
 
 local print = TMW.print
-local GetSpellBookItemInfo, GetItemIcon = 
-	  GetSpellBookItemInfo, GetItemIcon
 
+local GetItemIcon = C_Item and C_Item.GetItemIconByID or GetItemIcon
+local GetSpellBookItemInfo = TMW.GetSpellBookItemInfo
+	  
 local Type = TMW.Classes.IconType:New("conditionicon")
 Type.name = L["ICONMENU_CNDTIC"]
 Type.desc = L["ICONMENU_CNDTIC_DESC"]
@@ -37,9 +38,19 @@ Type:UsesAttributes("state_conditionFailed")
 Type:UsesAttributes("texture")
 -- END AUTOMATICALLY GENERATED: UsesAttributes
 
--- Not automatically generated, but still needed.
-Type:UsesAttributes("conditionFailed", false)
 
+-- Condition icons handle their own opacity for succeeded/failed.
+-- If we allowed conditionFailed to be set, 
+-- it'd briefly set the icon to an opacity that can't 
+-- be configured by the user, which breaks the icon alpha fade condition.
+Type:UsesAttributes("conditionFailed", false)
+local Hook = TMW.Classes.IconDataProcessorHook:New("CONDITION_SUPPRESS", "CONDITION")
+Hook:RegisterCompileFunctionSegmentHook("pre", function(Processor, t)
+	-- GLOBALS: conditionFailed
+	t[#t+1] = [[
+	if icon.Type == "conditionicon" then conditionFailed = nil end
+	--]]
+end)
 
 
 Type:RegisterIconDefaults{
@@ -135,11 +146,8 @@ local function ConditionIcon_OnUpdate(icon, time)
 			state = 0
 		end
 		
-		-- We set state_conditionFailed to override the automatic state handling of ConditionObjects.
-		-- We want to set the alpha on our own (though the icon's state).
 		icon:SetInfo(
-			"state_conditionFailed; state; start, duration",
-			nil,
+			"state; start, duration",
 			state,
 			start, duration
 		)
@@ -147,7 +155,7 @@ local function ConditionIcon_OnUpdate(icon, time)
 		-- Record the passing state of the icon's condition object so we can detect when it changes.
 		icon.__succeeded = succeeded
 	else
-		icon:SetInfo("state_conditionFailed; state", nil, STATE_SUCCEED)
+		icon:SetInfo("state", STATE_SUCCEED)
 	end
 end
 
@@ -158,11 +166,12 @@ end
 
 function Type:Setup(icon)
 	icon:SetInfo("texture", "Interface\\Icons\\INV_Misc_QuestionMark")
-
+	icon:SetInfo("state_conditionFailed", nil)
+	
 	-- Icon updates will automatically get scheduled by the icon update engine
 	-- when the icon's condition object changes and schedules an icon update.
 	-- So we don't need to register any events at all, and we can update manually!
-
+	
 	icon:SetUpdateMethod("manual")
 	
 	icon:SetUpdateFunction(ConditionIcon_OnUpdate)
@@ -177,7 +186,8 @@ function Type:DragReceived(icon, t, data, subType)
 
 	local _, input
 	if t == "spell" then
-		_, input = GetSpellBookItemInfo(data, subType)
+		local spellData = GetSpellBookItemInfo(data, subType)
+		input = spellData and spellData.actionID
 	elseif t == "item" then
 		input = GetItemIcon(data)
 	end

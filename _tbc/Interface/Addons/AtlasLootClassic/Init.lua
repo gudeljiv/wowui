@@ -10,6 +10,7 @@ local ipairs = _G.ipairs
 -- ----------------------------------------------------------------------------
 local addonname = ...
 
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
 local addonVersion = GetAddOnMetadata(addonname, "Version")
 if addonVersion == string.format("@%s@", "project-version") then addonVersion = "v99.99.9999-dev" end
 local versionT = { string.match(addonVersion, "v(%d+)%.(%d+)%.(%d+)%-?(%a*)(%d*)") }
@@ -52,9 +53,125 @@ _G.AtlasLoot.Init = {}
 _G.AtlasLoot.Data = {}
 
 -- Version
-local CurrentGameVersion = tonumber(string.sub(GetBuildInfo(), 0, 1))
-AtlasLoot.CLASSIC_VERSION_NUM = 1
-AtlasLoot.BC_VERSION_NUM = 2
+local WOW_PROJECT_ID = _G.WOW_PROJECT_ID or 99
+local WOW_PROJECT_MAINLINE = _G.WOW_PROJECT_MAINLINE or 99
+local WOW_PROJECT_CLASSIC = _G.WOW_PROJECT_CLASSIC or 1
+local WOW_PROJECT_BURNING_CRUSADE_CLASSIC = _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC or 2
+local WOW_PROJECT_WRATH_CLASSIC = _G.WOW_PROJECT_WRATH_CLASSIC or 11
+
+AtlasLoot.RETAIL_VERSION_NUM 	= 99
+AtlasLoot.CLASSIC_VERSION_NUM 	= 1
+AtlasLoot.BC_VERSION_NUM 		= 2
+AtlasLoot.WRATH_VERSION_NUM 	= 3
+
+AtlasLoot.IS_CLASSIC = false
+AtlasLoot.IS_BC = false
+AtlasLoot.IS_WRATH = false
+AtlasLoot.IS_RETAIL = false
+
+AtlasLoot.IS_SEASONAL = false
+AtlasLoot.IS_SEASONAL = C_Seasons.HasActiveSeason()
+AtlasLoot.IS_SOD = false
+AtlasLoot.SEASON = 0
+
+if AtlasLoot.IS_SEASONAL then 
+	AtlasLoot.SEASON = C_Seasons.GetActiveSeason()
+	--3 - Hardcore
+	--2 - Season of Discovery
+	--1 - Season of Mastery (old)
+	if AtlasLoot.SEASON == 2 then AtlasLoot.IS_SOD = true end
+end
+
+if AtlasLoot.IS_SOD then
+	AtlasLoot.GAME_VERSION_TEXTURES = {
+		[AtlasLoot.CLASSIC_VERSION_NUM] = 4527368,
+		[AtlasLoot.BC_VERSION_NUM] = 131194,
+		[AtlasLoot.WRATH_VERSION_NUM] = 235509,
+	}
+else
+	AtlasLoot.GAME_VERSION_TEXTURES = {
+		[AtlasLoot.CLASSIC_VERSION_NUM] = 538639,
+		[AtlasLoot.BC_VERSION_NUM] = 131194,
+		[AtlasLoot.WRATH_VERSION_NUM] = 235509,
+	}
+end
+
+local CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+	CurrentGameVersion = AtlasLoot.RETAIL_VERSION_NUM
+	AtlasLoot.IS_RETAIL = true
+elseif WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
+	if LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING then
+		CurrentGameVersion = AtlasLoot.WRATH_VERSION_NUM
+		AtlasLoot.IS_WRATH = true
+	elseif LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_BURNING_CRUSADE then
+		CurrentGameVersion = AtlasLoot.BC_VERSION_NUM
+		AtlasLoot.IS_BC = true
+	end
+elseif WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC then
+	CurrentGameVersion = AtlasLoot.WRATH_VERSION_NUM
+	AtlasLoot.IS_WRATH = true
+elseif WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
+	CurrentGameVersion = AtlasLoot.CLASSIC_VERSION_NUM
+	AtlasLoot.IS_CLASSIC = true
+end
+
+AtlasLoot.CURRENT_VERSION_NUM = CurrentGameVersion
+
 function AtlasLoot:GetGameVersion()
 	return CurrentGameVersion
+end
+
+-- equal
+function AtlasLoot:GameVersion_EQ(gameVersion, ret, retFalse)
+	if CurrentGameVersion == gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
+end
+
+-- not equal
+function AtlasLoot:GameVersion_NE(gameVersion, ret, retFalse)
+	if CurrentGameVersion ~= gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
+end
+
+-- not greater then
+function AtlasLoot:GameVersion_GT(gameVersion, ret, retFalse)
+	if CurrentGameVersion > gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
+end
+
+-- not lesser then
+function AtlasLoot:GameVersion_LT(gameVersion, ret, retFalse)
+	if CurrentGameVersion < gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
+end
+
+-- not greater equal
+function AtlasLoot:GameVersion_GE(gameVersion, ret, retFalse)
+	if CurrentGameVersion >= gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
+end
+
+-- not lesser equal
+function AtlasLoot:GameVersion_LE(gameVersion, ret, retFalse)
+	if CurrentGameVersion <= gameVersion then
+		return ret or true
+	else
+		return retFalse
+	end
 end

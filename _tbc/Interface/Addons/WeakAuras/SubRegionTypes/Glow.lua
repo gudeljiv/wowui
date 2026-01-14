@@ -1,15 +1,13 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, Private = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class Private
+local Private = select(2, ...)
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local LCG = LibStub("LibCustomGlow-1.0")
-local MSQ, MSQ_Version = LibStub("Masque", true);
-if MSQ then
-  if MSQ_Version <= 80100 then
-    MSQ = nil
-  end
-end
-local L = WeakAuras.L;
+
+local MSQ = LibStub("Masque", true)
+local L = WeakAuras.L
 
 local default = function(parentType)
   local options = {
@@ -19,6 +17,7 @@ local default = function(parentType)
     glowType = "buttonOverlay",
     glowLines = 8,
     glowFrequency = 0.25,
+    glowDuration = 1,
     glowLength = 10,
     glowThickness = 1,
     glowScale = 1,
@@ -28,7 +27,7 @@ local default = function(parentType)
   }
   if parentType == "aurabar" then
     options["glowType"] = "Pixel"
-    options["glow_anchor"] = "bar"
+    options["anchor_area"] = "bar"
   end
   return options
 end
@@ -73,6 +72,15 @@ local properties = {
     softMax = 2,
     bigStep = 0.1,
     default = 0.25
+  },
+  glowDuration = {
+    display = L["Duration"],
+    setter = "SetGlowDuration",
+    type = "number",
+    softMin = 0.01,
+    softMax = 3,
+    bigStep = 0.1,
+    default = 1
   },
   glowLength = {
     display = L["Length"],
@@ -125,6 +133,11 @@ local properties = {
     bigStep = 1,
     default = 0
   },
+  glowStartAnim = {
+    display = L["Start Animation"],
+    setter = "SetGlowStartAnim",
+    type = "bool",
+  },
 }
 
 local function glowStart(self, frame, color)
@@ -162,6 +175,15 @@ local function glowStart(self, frame, color)
       nil,
       0
     )
+  elseif self.glowType == "Proc" then
+    self.glowStart(frame, {
+      color = color,
+      startAnim = self.glowStartAnim and true or false,
+      duration = self.glowDuration,
+      xOffset = self.glowXOffset,
+      yOffset = self.glowYOffset,
+      frameLevel = 0
+    })
   end
 end
 
@@ -183,18 +205,20 @@ local funcs = {
 
     if MSQ and self.parentType == "icon" then
       if (visible) then
-        self.__MSQ_Shape = self:GetParent().button.__MSQ_Shape
+        local button = self:GetParent().button
+        self._MSQ_CFG = button._MSQ_CFG
+        self.__MSQ_Shape = button.__MSQ_Shape
         self:Show()
-        glowStart(self, self, color);
+        glowStart(self, self, color)
       else
-        self.glowStop(self);
+        self.glowStop(self)
         self:Hide()
       end
     elseif (visible) then
       self:Show()
-      glowStart(self, self, color);
+      glowStart(self, self, color)
     else
-      self.glowStop(self);
+      self.glowStop(self)
       self:Hide()
     end
   end,
@@ -227,6 +251,15 @@ local funcs = {
       if self.parentRegionType ~= "aurabar" then
         self.parent:AnchorSubRegion(self, "area")
       end
+    elseif newType == "Proc" then
+      self.glowStart = LCG.ProcGlow_Start
+      self.glowStop = LCG.ProcGlow_Stop
+      if self.parentRegionType ~= "aurabar" then
+        self.parent:AnchorSubRegion(self, "area", "region")
+      end
+    else -- noop function in case of unsupported glow
+      self.glowStart = function() end
+      self.glowStop = function() end
     end
     self.glowType = newType
     if isGlowing then
@@ -260,6 +293,12 @@ local funcs = {
       self:SetVisible(true)
     end
   end,
+  SetGlowDuration = function(self, duration)
+    self.glowDuration = duration
+    if self.glow then
+      self:SetVisible(true)
+    end
+  end,
   SetGlowLength = function(self, length)
     self.glowLength = length
     if self.glow then
@@ -284,6 +323,12 @@ local funcs = {
       self:SetVisible(true)
     end
   end,
+  SetGlowStartAnim = function(self, enable)
+    self.glowStartAnim = enable
+    if self.glow then
+      self:SetVisible(true)
+    end
+  end,
   SetGlowXOffset = function(self, xoffset)
     self.glowXOffset = xoffset
     if self.glow then
@@ -304,7 +349,7 @@ local funcs = {
 }
 
 local function create()
-  local region = CreateFrame("FRAME", nil, UIParent)
+  local region = CreateFrame("Frame", nil, UIParent)
 
   for name, func  in pairs(funcs) do
     region[name] = func
@@ -319,6 +364,9 @@ end
 
 local function onRelease(subRegion)
   subRegion.glowType = nil
+  if subRegion.glow then
+    subRegion:SetVisible(false)
+  end
   subRegion:Hide()
   subRegion:ClearAllPoints()
   subRegion:SetParent(UIParent)
@@ -327,12 +375,6 @@ end
 local function modify(parent, region, parentData, data, first)
   region:SetParent(parent)
   region.parentRegionType = parentData.regionType
-  if parentData.regionType == "aurabar" then
-    parent:AnchorSubRegion(region, "area", data.glow_anchor)
-  else
-    parent:AnchorSubRegion(region, "area", data.glowType == "buttonOverlay" and "region")
-  end
-
   region.parent = parent
 
   region.parentType = parentData.regionType
@@ -346,15 +388,25 @@ local function modify(parent, region, parentData, data, first)
   region.glowBorder = data.glowBorder
   region.glowXOffset = data.glowXOffset
   region.glowYOffset = data.glowYOffset
+  region.glowStartAnim = data.glowStartAnim
+  region.glowDuration = data.glowDuration
 
   region:SetGlowType(data.glowType)
   region:SetVisible(data.glow)
 
   region:SetScript("OnSizeChanged", region.UpdateSize)
+
+  region.Anchor = function()
+    if parentData.regionType == "aurabar" then
+      parent:AnchorSubRegion(region, "area", data.anchor_area)
+    else
+      parent:AnchorSubRegion(region, "area", (data.glowType == "buttonOverlay" or data.glowType == "Proc") and "region")
+    end
+  end
 end
 
 -- This is used by the templates to add glow
-function WeakAuras.getDefaultGlow(regionType)
+function Private.getDefaultGlow(regionType)
   if regionType == "aurabar" then
     return {
       ["type"] = "subglow",
@@ -364,15 +416,16 @@ function WeakAuras.getDefaultGlow(regionType)
       glowType = "Pixel",
       glowLines = 8,
       glowFrequency = 0.25,
+      glowDuration = 1,
       glowLength = 10,
       glowThickness = 1,
       glowScale = 1,
       glowBorder = false,
       glowXOffset = 0,
       glowYOffset = 0,
-      glow_anchor = "bar"
+      anchor_area = "bar"
     }
-  elseif regionType == "icon" then
+  else
     return {
       ["type"] = "subglow",
       glow = false,
@@ -381,6 +434,7 @@ function WeakAuras.getDefaultGlow(regionType)
       glowType = "buttonOverlay",
       glowLines = 8,
       glowFrequency = 0.25,
+      glowDuration = 1,
       glowLength = 10,
       glowThickness = 1,
       glowScale = 1,
@@ -391,9 +445,15 @@ function WeakAuras.getDefaultGlow(regionType)
   end
 end
 
+local supportedRegion = {
+  icon = true,
+  aurabar = true,
+  texture = true,
+  progresstexture = true,
+  empty = true,
+}
 local function supports(regionType)
-  return regionType == "icon"
-         or regionType == "aurabar"
+  return supportedRegion[regionType]
 end
 
 local function addDefaultsForNewAura(data)
@@ -416,4 +476,5 @@ local function addDefaultsForNewAura(data)
   end
 end
 
-WeakAuras.RegisterSubRegionType("subglow", L["Glow"], supports, create, modify, onAcquire, onRelease, default, addDefaultsForNewAura, properties);
+WeakAuras.RegisterSubRegionType("subglow", L["Glow"], supports, create, modify, onAcquire, onRelease,
+                                default, addDefaultsForNewAura, properties)

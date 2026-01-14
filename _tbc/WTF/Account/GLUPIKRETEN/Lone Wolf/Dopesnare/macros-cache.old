@@ -1,0 +1,90 @@
+VER 3 0000000001000019 " " "134400"
+#showtooltip hunter's mark
+/target jannoschdroo
+/cast hunter's mark
+END
+VER 3 0000000001000016 "a-pet" "134400"
+#showtooltip
+/assist pet
+/startattack
+/cast !Auto Shot
+END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
+END
+VER 3 0000000001000011 "attack" "132152"
+#showtooltip
+/petfollow
+/petpassive
+/petattack [@mouseover,harm][]
+/petdefensive
+END
+VER 3 0000000001000014 "auto" "134400"
+#showtooltip
+/startattack
+/cast !Auto Shot
+END
+VER 3 0000000001000005 "blast" "134400"
+#showtooltip
+/cast Rapid Fire
+/cast Blood Fury
+/cast Bestial Wrath
+/use 13
+/use 14
+END
+VER 3 0000000001000001 "fd" "134400"
+#showtooltip
+/cast Feign Death
+/stopattack
+/stopcasting
+END
+VER 3 0000000001000018 "flank" "134400"
+#showtooltip Flanking Strike
+/startattack
+/petattack
+/cast Flanking Strike
+/cast Raptor Strike
+END
+VER 3 0000000001000013 "freeze" "134400"
+#showtooltip 
+/petfollow
+/stopattack
+/cast Freezing Trap
+END
+VER 3 000000000100000E "md" "134400"
+#showtooltip 
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END
+VER 3 0000000001000002 "mp" "134400"
+#showtooltip
+/cast [@pet,dead] Revive Pet
+/cast [nopet] Call Pet
+/cast [mod] Revive Pet 
+/cast Mend Pet
+END
+VER 3 0000000001000006 "multi" "134400"
+#showtooltip Multi-Shot
+/cast !Auto Shot
+/startattack
+/cast Multi-Shot
+END
+VER 3 000000000100000F "passive" "132328"
+#showtooltip
+/petfollow
+/petpassive
+END
+VER 3 0000000001000012 "serpent" "134400"
+#showtooltip Serpent Sting
+/cast [@mouseover,harm,exists][]Serpent Sting
+/petattack [@mouseover,harm][]
+/cast !Auto Shot
+END
+VER 3 0000000001000009 "wc" "134400"
+#showtooltip Wing Clip
+/startattack
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
+END

@@ -1,10 +1,11 @@
-## Interface: 20502
+## Interface: 110002
 
 ## Title: AdiBags Configuration
 ## Notes: Adirelle's bag addon.
+## IconAtlas: bag-main
 ## Author: Adirelle
-## Version: v1.9.26-bcc
-## X-Date: 2021-09-15T20:01:06Z
+## Version: v1.10.29
+## X-Date: 2024-09-08T2:17:32Z
 ## X-Part-Of: AdiBags
 ## LoadOnDemand: 1
 ## Dependencies: AdiBags

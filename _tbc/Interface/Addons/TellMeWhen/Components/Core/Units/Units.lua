@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -18,6 +18,7 @@ local L = TMW.L
 
 local print = TMW.print
 local strlowerCache = TMW.strlowerCache
+local tinsert = table.insert
 
 local tonumber, pairs, ipairs, wipe, assert =
       tonumber, pairs, ipairs, wipe, assert
@@ -54,6 +55,7 @@ UNITS.Units = {
 	{ value = "pettarget",			text = L["ICONMENU_PETTARGET"]										},
 	{ value = "mouseover",			text = L["ICONMENU_MOUSEOVER"]										},
 	{ value = "mouseovertarget",	text = L["ICONMENU_MOUSEOVERTARGET"]								},
+	{ value = "vehicle",			text = L["ICONMENU_VEHICLE"]										},
 	{ value = "nameplate",			text = L["ICONMENU_NAMEPLATE"],	range = 40							},
 	{ value = "party",				text = PARTY,				range = MAX_PARTY_MEMBERS				},
 	{ value = "raid",				text = RAID,				range = MAX_RAID_MEMBERS				},
@@ -64,9 +66,59 @@ UNITS.Units = {
 	{ value = "mainassist",			text = L["MAINASSIST"],		range = MAX_RAID_MEMBERS,	desc = L["MAINASSIST_DESC"]				},
 }
 
+local unitSetsByEvent = setmetatable({}, {
+	__index = function(self, k) 
+		local t = {}
+		self[k] = t
+		return t
+	end
+})
 
-local TEMP_conditionsSettingSource
-local TEMP_conditionsParents
+
+
+-- Create a single UpdateTableManager instance to track all unit condition mappings
+local UpdateManager = TMW.Classes.UpdateTableManager:New()
+UpdateManager:UpdateTable_Set()
+local ByConditionObject = UpdateManager:UpdateTable_CreateIndexedView("ByConditionObject", function(target) return target.ConditionObject end)
+local ByUnitSet = UpdateManager:UpdateTable_CreateIndexedView("ByUnitSet", function(target) return target.UnitSet end)
+local ByRequester = UpdateManager:UpdateTable_CreateIndexedView("ByRequester", function(target) return target.Requester end)
+
+local function TMW_CNDT_OBJ_PASSING_CHANGED(event, ConditionObject, failed)
+	local targets = ByConditionObject[ConditionObject]
+	if targets then
+		for _, target in ipairs(targets) do
+			target.UnitSet:Update()
+		end
+	end
+end
+
+local function TMW_ICON_DATA_CHANGED_SHOWN(event, icon, shown)
+	local targets = ByRequester[icon]
+	if targets then
+		for _, target in ipairs(targets) do
+			target.ConditionObject:RequestAutoUpdates(icon, shown)
+		end
+	end
+end
+
+UpdateManager.UpdateTable_OnUsed = function(self)
+	TMW:RegisterCallback("TMW_CNDT_OBJ_PASSING_CHANGED", TMW_CNDT_OBJ_PASSING_CHANGED)
+	TMW:RegisterCallback("TMW_ICON_DATA_CHANGED_SHOWN", TMW_ICON_DATA_CHANGED_SHOWN)
+end
+
+UpdateManager.UpdateTable_OnUnused = function(self)
+	TMW:UnregisterCallback("TMW_CNDT_OBJ_PASSING_CHANGED", TMW_CNDT_OBJ_PASSING_CHANGED)
+	TMW:UnregisterCallback("TMW_ICON_DATA_CHANGED_SHOWN", TMW_ICON_DATA_CHANGED_SHOWN)
+end
+
+TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function()
+	for _, target in ipairs(UpdateManager.UpdateTable_UpdateTable) do
+		target.ConditionObject:RequestAutoUpdates(target.Requester, false)
+	end
+
+	UpdateManager:UpdateTable_UnregisterAll()
+end)
+
 
 
 -- Public Methods/Stuff:
@@ -74,37 +126,46 @@ function TMW:GetUnits(icon, setting, Conditions)
 	local iconName = (icon and icon:GetName() or "<icon>")
 	assert(setting, "Setting was nil for TMW:GetUnits(" .. iconName .. ", setting)")
 	
-	-- Dirty, dirty hack to make sure the function cacher generates new UnitSets for any changes in conditions
-	TEMP_conditionsSettingSource = Conditions
-	
-	local serializedConditions
+	-- serializedConditions is part of the cache key (UNITS:GetUnitSet is cached)
+	-- to make sure the function cacher generates new UnitSets for any changes in conditions
+	local serializedConditions, conditionsParent
 	if Conditions then
 		serializedConditions = TMW:Serialize(Conditions)
 		if serializedConditions:find("thisobj") then
 			serializedConditions = serializedConditions .. iconName
-			TEMP_conditionsParents = icon
+			conditionsParent = icon
 		end
 	end
 
-	local UnitSet = UNITS:GetUnitSet(setting, serializedConditions)
-	
-	TEMP_conditionsSettingSource = nil
-	TEMP_conditionsParents = nil
+	-- Normalize before calling GetUnitSet in order to normalize caching.
+	setting = UNITS:NormalizeUnitString(setting)
+	local UnitSet = UNITS:GetUnitSet(setting, serializedConditions, nil, Conditions, conditionsParent)
 	
 	if UnitSet.ConditionObjects then
+		-- Only request condition updates for icons when they are shown
+		local shouldRequestUpdates = true
+		local requester = icon or UnitSet
+		if requester.IsIcon then
+			shouldRequestUpdates = icon.attributes.shown
+		end
+		
+		-- Register condition objects with the shared UpdateManager
 		for i, ConditionObject in ipairs(UnitSet.ConditionObjects) do
-			ConditionObject:RequestAutoUpdates(UnitSet, true)
+			ConditionObject:RequestAutoUpdates(requester, shouldRequestUpdates)
+			-- Register for state changes AFTER requesting updates.
+			-- Requesting updates will trigger checks on all the objects.
+			-- We don't want each check to update the unit set one by one.
+			-- We'll update after they're all registered.
+			UpdateManager:UpdateTable_Register({
+				UnitSet = UnitSet,
+				ConditionObject = ConditionObject,
+				Requester = requester
+			})
 		end
 
-		-- Register for state changes AFTER requesting updates.
-		-- Requesting updates will trigger checks on all the objects.
-		-- We don't want each check to update the unit set one by one.
-		-- We'll update after they're all registered.
-		TMW:RegisterCallback("TMW_CNDT_OBJ_PASSING_CHANGED", UnitSet)
+		-- Perform an update now that all of the conditions (if any) are in their initial state.
+		UnitSet:Update()
 	end
-
-	-- Perform an update now that all of the conditions (if any) are in their initial state.
-	UnitSet:Update()
 
 	return UnitSet.exposedUnits, UnitSet
 end
@@ -116,17 +177,20 @@ local UnitSet = TMW:NewClass("UnitSet"){
 		return unitsWithExistsEvent[unit] or UnitExists(unit)
 	end,
 
-	OnNewInstance = function(self, unitSettings, Conditions, parent)
+	OnNewInstance = function(self, unitSettings, Conditions, parent, noUpdate)
 		self.Conditions = Conditions
 		self.parent = parent
 		
 		self.UnitsLookup = {}
 		self.unitSettings = unitSettings
 		self.originalUnits = UNITS:GetOriginalUnitTable(unitSettings)
-		self.updateEvents = {PLAYER_ENTERING_WORLD = true,}
 		self.exposedUnits = {}
 		self.translatedUnits = {}
+
+		self.eventUnits = {}
+		self.updateEvents = {PLAYER_ENTERING_WORLD = true,}
 		self.allUnitsChangeOnEvent = true
+		self.event = "TMW_UNITSET_UPDATED_" .. tostring(self):match("([A-Fa-f0-9]+)$")
 
 		-- determine the operations that the set needs to stay updated
 		for k, unit in ipairs(self.originalUnits) do
@@ -156,6 +220,12 @@ local UnitSet = TMW:NewClass("UnitSet"){
 
 			elseif unit == "focus" then -- the unit exactly
 				self.updateEvents.PLAYER_FOCUS_CHANGED = true
+
+				-- These events are for when a focused arena teammate joins the game after you.
+				-- The game doesn't fire PLAYER_FOCUS_CHANGED when UnitExists("focus") changes from false to true.
+				self.updateEvents.GROUP_FORMED = true
+				self.updateEvents.UNIT_PHASE = true
+
 				UNITS.unitsWithExistsEvent[unit] = true
 			elseif unit:find("^focus") then -- the unit as a base, with something else tacked onto it.
 				self.updateEvents.PLAYER_FOCUS_CHANGED = true
@@ -232,16 +302,17 @@ local UnitSet = TMW:NewClass("UnitSet"){
 				end
 
 			elseif unit:find("^vehicle") then
-				-- TODO: This isn't strictly true.
-				-- There might actually be events that work, but I don't feel like finding them at the moment.
+				-- NB: There might actually be events that work.
 				self.allUnitsChangeOnEvent = false
 
 			elseif unit:find("^mouseover") then
-				-- There is a unit when you gain a mouseover, but there isn't one when you lose it, so we can't have events for this one.
+				-- There is an event when you gain a mouseover, but there isn't one when you lose it, so we can't have events for this one.
+				-- Additionally, most other UNIT_ events don't properly fire for mouseover, so saying that mouseover has events would 
+				-- cause other functions to assume they can update on unit, even when they can't.
 				self.allUnitsChangeOnEvent = false
 				
 			else
-				-- we found a unit and we dont really know what the fuck it is.
+				-- we found a unit and we dont really know what it is.
 				-- it MIGHT be a player name (or a derrivative thereof),
 				-- so register some events so that we can exchange it out with a real unitID when possible.
 
@@ -253,6 +324,13 @@ local UnitSet = TMW:NewClass("UnitSet"){
 				UNITS:UpdateGroupedPlayersMap()
 
 				self.allUnitsChangeOnEvent = false
+			end
+
+			local eventUnit = UNITS.unitsWithExistsEvent[unit] 
+				and unit 
+				or UNITS.unitsWithBaseExistsEvent[unit]
+			if eventUnit then
+				self.eventUnits[eventUnit] = true
 			end
 		end
 
@@ -269,10 +347,10 @@ local UnitSet = TMW:NewClass("UnitSet"){
 				-- Add a UnitExists condition to the beginning, so the rest of the conditions
 				-- will short circuit to false if the unit being checked doesn't exist.
 				local ModifiableConditions = ConditionObjectConstructor:GetPostUserModifiableConditions()
-				local exists = ConditionObjectConstructor:Modify_WrapExistingAndPrependNew()
+				
+				local exists = ConditionObjectConstructor:Modify_WrapExistingAndPrependNew("AND")
 				exists.Type = "EXISTS"
 				exists.Unit = "unit" -- this will get replaced momentarily
-				ModifiableConditions[2].AndOr = "AND" -- AND together the exists condition and all subsequent conditions.
 
 				-- Substitute out "unit" with the actual unit being checked.
 				for _, condition in TMW:InNLengthTable(ModifiableConditions) do
@@ -294,8 +372,11 @@ local UnitSet = TMW:NewClass("UnitSet"){
 			end
 		end
 
-		for event in pairs(self.updateEvents) do
-			UNITS:RegisterEvent(event, "OnEvent")
+		if not noUpdate then
+			for event in pairs(self.updateEvents) do
+				tinsert(unitSetsByEvent[event], self)
+				UNITS:RegisterEvent(event, "OnEvent")
+			end
 		end
 
 		-- This call will end up being redundant
@@ -305,11 +386,7 @@ local UnitSet = TMW:NewClass("UnitSet"){
 		self:Update()
 	end,
 
-	TMW_CNDT_OBJ_PASSING_CHANGED = function(self, event, ConditionObject, failed)
-		if self.ConditionObjects[ConditionObject] then
-			self:Update()
-		end
-	end,
+
 
 	Update = function(self, forceNoExists)
 		local originalUnits,      exposedUnits,      translatedUnits =
@@ -404,50 +481,31 @@ local UnitSet = TMW:NewClass("UnitSet"){
 		end
 		
 		if changed then
-			TMW:Fire("TMW_UNITSET_UPDATED", self)
+			self:FireChanged()
 		end
 
 		return changed
 	end,
+
+	FireChanged = function(self)
+		-- Each individual unitset has its own event, because most things listening
+		-- for unitset events are only listening for one single unitset,
+		-- so this lets us avoid a fair bit of wasted event processing, especially
+		-- for events fired by any nameplate unitsets (which tend to be noisy).
+		TMW:Fire(self.event, self)
+
+		-- Also fire the global event for anything listening for it.
+		TMW:Fire("TMW_UNITSET_UPDATED", self)
+	end,
 }
 
-TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function()
-	for i, unitSet in ipairs(UnitSet.instances) do
-		if unitSet.ConditionObjects then
-			for i, ConditionObject in ipairs(unitSet.ConditionObjects) do
-				ConditionObject:RequestAutoUpdates(unitSet, false)
-			end
-			TMW:UnregisterCallback("TMW_CNDT_OBJ_PASSING_CHANGED", unitSet)
-		end
-	end
-end)
-
-function UNITS:GetUnitSet(unitSettings, SerializedConditions)
-	-- This is just a hack for the function cacher. Need a unique UnitSet for any variations in conditions.
-	-- This value isn't actually used, so discard it.
-	SerializedConditions = nil
-
-	unitSettings = TMW:CleanString(unitSettings):
-	lower(): -- all units should be lowercase
-	gsub("[\r\n\t]", ""):
-	gsub("|cffff0000", ""): -- strip color codes (NOTE LOWERCASE)
-	gsub("|r", ""):
-	gsub("#", "") -- strip the # from the dropdown
-	
-	return UnitSet:New(unitSettings, TEMP_conditionsSettingSource, TEMP_conditionsParents)
-end
-TMW:MakeNArgFunctionCached(2, UNITS, "GetUnitSet")
-
-function UNITS:GetOriginalUnitTable(unitSettings)
+function UNITS:NormalizeUnitString(unitSettings)
 	unitSettings = TMW:CleanString(unitSettings)
 		:lower() -- all units should be lowercase
-		-- Stripping color codes doesn't matter now since they aren't inserted now ("#" isnt inserted either)
-		-- but keep this here for compatibility with old setups.
+		:gsub("[\r\n\t]", "")
 		:gsub("|cffff0000", "") -- strip color codes (NOTE LOWERCASE)
 		:gsub("|r", "")
-		:gsub("#", "") -- strip the # from the dropdown 
-		.. " "
-
+		:gsub("#", "") -- strip the # from the dropdown
 
 	--SUBSTITUTE "party" with "party1-4", etc
 	--also handles conversion of "party 1" into "party1"
@@ -498,6 +556,24 @@ function UNITS:GetOriginalUnitTable(unitSettings)
 			end
 		end
 	end
+	return unitSettings
+end
+TMW:MakeSingleArgFunctionCached(UNITS, "NormalizeUnitString")
+
+function UNITS:GetUnitSet(unitSettings, SerializedConditions, noUpdate, conditions, parent)
+	-- This is just a hack for the function cacher. Need a unique UnitSet for any variations in conditions.
+	-- This value isn't actually used, so discard it.
+	SerializedConditions = nil
+
+	unitSettings = UNITS:NormalizeUnitString(unitSettings)
+	
+	return UnitSet:New(unitSettings, conditions, parent, noUpdate)
+end
+-- Deliberately does not cache `conditions` and `parent`.
+TMW:MakeNArgFunctionCached(3, UNITS, "GetUnitSet")
+
+function UNITS:GetOriginalUnitTable(unitSettings)
+	unitSettings =  UNITS:NormalizeUnitString(unitSettings)
 
 	local Units = TMW:SplitNames(unitSettings, true) -- get a table of everything
 
@@ -587,6 +663,7 @@ function UNITS:OnEvent(event, arg1)
 	if (event == "GROUP_ROSTER_UPDATE" or event == "RAID_ROSTER_UPDATE") and UNITS.doTankAndAssistMap then
 		UNITS:UpdateTankAndAssistMap()
 	end
+	
 	if UNITS.doGroupedPlayersMap
 	and (
 		event == "GROUP_ROSTER_UPDATE"
@@ -601,15 +678,21 @@ function UNITS:OnEvent(event, arg1)
 	-- We will pass this to Update() to force it to be treated as not existing.
 	local forceNoExists = event == "NAME_PLATE_UNIT_REMOVED" and arg1
 
-	local instances = UnitSet.instances
+	local instances = unitSetsByEvent[event]
 	for i = 1, #instances do
 		local unitSet = instances[i]
-		if unitSet.updateEvents[event] then
-			if not unitSet:Update(forceNoExists) then
-				-- If the units in the UnitSet didn't change, still fire a TMW_UNITSET_UPDATED to signal that they may have shuffled around a bit
-				-- (for example, the player changed target, or raid members moved around)
-				TMW:Fire("TMW_UNITSET_UPDATED", unitSet)
-			end
+
+		if (event == "NAME_PLATE_UNIT_ADDED" or event == "NAME_PLATE_UNIT_REMOVED") and not unitSet.eventUnits[arg1] then
+			-- Nameplate events are extremely noisy. Don't process a nameplate unit for a unitset that isn't looking at that unit.
+			-- We don't really need to do this optimization for any other event because no other events are noisy like this.
+			-- Specically, the issue here is if someone puts unit conditions on "nameplate1-40", 
+			-- that generates an individual unitset for each individual unit.
+
+			-- do nothing
+		elseif not unitSet:Update(forceNoExists) then
+			-- If the units in the UnitSet didn't change, still fire a TMW_UNITSET_UPDATED to signal that they may have shuffled around a bit
+			-- (for example, the player changed target, or raid members moved around)
+			unitSet:FireChanged()
 		end
 	end
 end
@@ -679,8 +762,16 @@ function UNITS:SubstituteGroupedUnit(oldunit)
 	return nil
 end
 
-
-do--function UNITS:TestUnit(unit)
+--function UNITS:TestUnit(unit)
+if UnitTokenFromGUID then
+	-- wow 10.0+
+	local UnitTokenFromGUID = UnitTokenFromGUID;
+	local UnitGUID = UnitGUID;
+	function UNITS:TestUnit(unit)
+		local guid = unit and UnitGUID(unit)
+		return guid and UnitTokenFromGUID(guid)
+	end
+else	
 	local TestTooltip = CreateFrame("GameTooltip")
 	local name, unitID
 	TestTooltip:SetScript("OnTooltipSetUnit", function(self)

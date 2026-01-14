@@ -1,0 +1,46 @@
+VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence reset=4 Void Plague, Shadow Word: Pain
+END
+VER 3 0000000001000002 "cure" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Cure Disease
+END
+VER 3 0000000001000003 "dispel" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Dispel Magic
+END
+VER 3 0000000001000004 "lesser" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Lesser Heal
+END
+VER 3 000000000100000B "mb" "134400"
+#showtooltip
+/startattack
+/use mind blast
+END
+VER 3 0000000001000005 "mending" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Prayer of Mending
+END
+VER 3 000000000100000A "penance" "134400"
+#showtooltip Penance
+/cast [@mouseover,exists,help][] Penance
+END
+VER 3 0000000001000006 "renew" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Renew
+END
+VER 3 0000000001000007 "shield" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Power Word: Shield
+END
+VER 3 0000000001000008 "smite" "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/use smite
+END
+VER 3 0000000001000009 "wand" "INV_Misc_QuestionMark"
+#showtooltip Shoot
+/cast !Shoot
+END

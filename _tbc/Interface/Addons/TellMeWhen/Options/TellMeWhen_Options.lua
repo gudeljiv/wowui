@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -12,8 +12,6 @@
 
 
 if not TMW then return end
-
-local clientVersion = select(4, GetBuildInfo())
 
 ---------- Libraries ----------
 local LSM = LibStub("LibSharedMedia-3.0")
@@ -31,12 +29,10 @@ local AceDB = LibStub("AceDB-3.0")
 ---------- Upvalues ----------
 local TMW = TMW
 local L = TMW.L
-local GetSpellInfo =
-	  GetSpellInfo
 local tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, wipe, next, getmetatable, setmetatable, pcall, assert, rawget, rawset, unpack, select =
 	  tonumber, tostring, type, pairs, ipairs, tinsert, tremove, sort, wipe, next, getmetatable, setmetatable, pcall, assert, rawget, rawset, unpack, select
-local strfind, strmatch, format, gsub, strsub, strtrim, strlen, strsplit, strlower, max, min, floor, ceil, log10 =
-	  strfind, strmatch, format, gsub, strsub, strtrim, strlen, strsplit, strlower, max, min, floor, ceil, log10
+local format, gsub, strlenutf8, strsplit, strlower, max, min, floor, ceil, log10 =
+	  format, gsub, strlenutf8, strsplit, strlower, max, min, floor, ceil, log10
 local GetCursorPosition, GetCursorInfo, CursorHasSpell, CursorHasItem, ClearCursor =
 	  GetCursorPosition, GetCursorInfo, CursorHasSpell, CursorHasItem, ClearCursor
 local _G, bit, CopyTable, hooksecurefunc, IsAddOnLoaded, IsControlKeyDown, PlaySound =
@@ -162,9 +158,9 @@ end
 -- WOW API HOOKS
 -- ----------------------
 
-function GameTooltip:TMW_SetEquiv(equiv)
-	GameTooltip:AddLine(L[equiv], HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1)
-	GameTooltip:AddLine(IE:Equiv_GenerateTips(equiv), NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
+function TMW.GameTooltip_SetEquiv(self, equiv)
+	self:AddLine(L[equiv], HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1)
+	self:AddLine(IE:Equiv_GenerateTips(equiv), NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
 end
 
 
@@ -185,13 +181,12 @@ TMW:NewClass("ChatEdit_InsertLink_Hook"){
 	end,
 }
 
-local old_ChatEdit_InsertLink = ChatEdit_InsertLink
 local function hook_ChatEdit_InsertLink(text)	
 	if type(text) ~= "string" then
 		return false
 	end
 	
-	local Type, data = strmatch(text, "|H(.-):(.-)|h")
+	local Type, data = text:match("|H(.-):(.-)|h")
 	
 	for _, instance in pairs(TMW.Classes.ChatEdit_InsertLink_Hook.instances) do
 		local executionSuccess, insertResult = instance:Call(text, Type, data)
@@ -203,15 +198,11 @@ local function hook_ChatEdit_InsertLink(text)
 	return false
 end
 
-function ChatEdit_InsertLink(...)
-	local executionSuccess, insertSuccess = TMW.safecall(hook_ChatEdit_InsertLink, ...)
-	if executionSuccess and insertSuccess then
-		return insertSuccess
-	else
-		return old_ChatEdit_InsertLink(...)
-	end
+if ChatFrameUtil and ChatFrameUtil.InsertLink then
+	hooksecurefunc(ChatFrameUtil, "InsertLink", function(...) TMW.safecall(hook_ChatEdit_InsertLink, ...) end)
+elseif ChatEdit_InsertLink then
+	hooksecurefunc("ChatEdit_InsertLink", function(...) TMW.safecall(hook_ChatEdit_InsertLink, ...) end)
 end
-
 
 
 
@@ -267,15 +258,16 @@ function IE:OnInitialize()
 	TMW:Fire("TMW_OPTIONS_LOADING")
 	TMW:UnregisterAllCallbacks("TMW_OPTIONS_LOADING")
 
-	-- Make TMW.IE be the same as IE.
-	-- IE[0] = TellMeWhen_IconEditor[0] (already done in .xml)
-	-- local meta = CopyTable(getmetatable(IE))
-	-- meta.__index = getmetatable(TellMeWhen_IconEditor).__index
-	-- setmetatable(IE, meta)
-
-
-	hooksecurefunc("PickupSpellBookItem", function(...) IE.DraggingInfo = {...} end)
-	WorldFrame:HookScript("OnMouseDown", function()
+	if PickupSpellBookItem then
+		-- Pre wow 11.0
+		hooksecurefunc("PickupSpellBookItem", function(...) IE.DraggingInfo = {...} end)
+	end
+	if C_SpellBook and C_SpellBook.PickupSpellBookItem then
+		-- WoW 11.0+
+		hooksecurefunc(C_SpellBook, "PickupSpellBookItem", function(...) IE.DraggingInfo = {...} end)
+	end
+	
+	TMW:RegisterCallback("TMW_WORLD_FRAME_MOUSE_DOWN", function()
 		IE.DraggingInfo = nil
 	end)
 	hooksecurefunc("ClearCursor", IE.BAR_HIDEGRID)
@@ -329,7 +321,7 @@ IE.Defaults = {
 	global = {
 		LastChangelogVersion = 0,
 		TellMeWhenDBBackupDate = 0,
-		ScaleIE			= false,
+		ScaleIE			= true,
 		EditorScale		= 1,
 		EditorHeight	= 600,
 		ConfigWarning	= true,
@@ -771,7 +763,7 @@ function IE:Load(isRefresh)
 		-- Users aren't going to care about their FPS so much when it gets opened.
 		-- It doesn't do much good to increase this too far - the more cached per frame,
 		-- the slower each frame will be.
-		TMW:GetModule("SpellCache"):SetNumCachePerFrame(3000)
+		TMW:GetModule("SpellCache"):SetNumCachePerFrame(5000)
 
 		IE:Show()
 	end
@@ -797,7 +789,6 @@ function IE:Load(isRefresh)
 end
 
 
--- TODO: integrate this with history sets
 function IE:Reset()	
 	IE:SaveSettings() -- this is here just to clear the focus of editboxes, not to actually save things
 	
@@ -835,7 +826,7 @@ function IE:Equiv_GenerateTips(equiv)
 	local original = TMW.EquivOriginalLookup[equiv]
 
 	for k, v in pairs(IDs) do
-		local name, _, texture = GetSpellInfo(v)
+		local name, _, texture = TMW.GetSpellInfo(v)
 		if not name then
 			if TMW.debug then
 				TMW:Error("INVALID ID FOUND: %s:%s", equiv, v)
@@ -860,7 +851,7 @@ function IE:Equiv_GenerateTips(equiv)
 		r = r .. line .. "\r\n"
 	end
 
-	r = strtrim(r, "\r\n ;")
+	r = r:trim("\r\n ;")
 	wipe(tiptemp)
 	return r
 end
@@ -1365,12 +1356,12 @@ TMW:NewClass("Config_Frame", "Frame", "CScriptProvider"){
 
 		-- Find child frames.
 		for _, child in TMW:Vararg(self:GetChildren()) do
-			if not child:GetBottom() then
+			if child:IsShown() and not child:GetBottom() then
 				-- If there are children that we can't get the edges of,
 				-- don't try to resize anything, because it will almost certainly be wrong.
 				return -1
 			end
-
+			
 			if child:IsShown()
 			and (not exclusions or not TMW.tContains(exclusions, child))
 			then
@@ -1492,48 +1483,24 @@ TMW:NewClass("Config_Panel", "Config_Frame"){
 		self.Background:SetColorTexture(.66, .66, .66, 0.09)
 	end,
 
-	Flash = function(self, dur)
-		local start = GetTime()
-		local duration = 0
-		local period = 0.2
-
-		while duration < dur do
-			duration = duration + (period * 2)
-		end
-		local ticker
-		ticker = C_Timer.NewTicker(0.01, function() 
-			local bg = TellMeWhen_DotwatchSettings.Background
-
-			local timePassed = GetTime() - start
-			local fadingIn = FlashPeriod == 0 or floor(timePassed/period) % 2 == 1
-
-			if FlashPeriod ~= 0 then
-				local remainingFlash = timePassed % period
-				local offs
-				if fadingIn then
-					offs = (period-remainingFlash)/period
-				else
-					offs = (remainingFlash/period)
-				end
-				offs = offs*0.3
-				bg:SetColorTexture(.66, .66, .66, 0.08 + offs)
-			end
-
-			if timePassed > duration then
-				bg:SetColorTexture(.66, .66, .66, 0.08)
-				ticker:Cancel()
-			end	
-		end)
-	end,
-
-	SetTitle = function(self, text)
+	SetTitle = function(self, text, showRestricted)
 		self.Header:SetText(text)
+
+		if not TMW.clientHasSecrets then showRestricted = false end
+
+		if showRestricted then
+			self.RestrictedIcon:Show()
+			TMW:TT(self.Header, text, "UIPANEL_SECRETS_DISALLOWED_DESC", 1, nil)
+		else
+			self.RestrictedIcon:Hide()
+		end
 
 		local font, size, flags = self.Header:GetFont()
 		size = 12
 		self.Header:SetFont(font, size, flags)
 
-		while size > 6 and self.Header:GetStringWidth() > self:GetWidth() - 10 do
+		local iconWidth = showRestricted and (self.RestrictedIcon:GetWidth() + 2) or 0
+		while size > 6 and self.Header:GetStringWidth() > self:GetWidth() - 10 - iconWidth do
 			size = size - 1
 			self.Header:SetFont(font, size, flags)
 		end
@@ -1591,6 +1558,10 @@ TMW:NewClass("Config_Panel", "Config_Frame"){
 		local lastCheckButton
 		local numFrames = 0
 		local numPerRow = allData.numPerRow or min(#allData, 2)
+		if numPerRow == 0 then
+			return
+		end
+		
 		self.checks = {}
 		for i, data in ipairs(allData) do
 			if data then -- skip over falses (dont freak out about them, they are probably intentional)
@@ -1650,7 +1621,7 @@ TMW:NewClass("Config_Panel", "Config_Frame"){
 
 	OnSizeChanged = function(self)
 		-- This method does resizing of the header to make it fit without truncation.
-		self:SetTitle(self.Header:GetText())
+		self:SetTitle(self.Header:GetText(), self.RestrictedIcon:IsShown())
 	end,
 }
 
@@ -1873,6 +1844,9 @@ TMW:NewClass("Config_Button", "Button", "Config_Frame"){
 }
 
 TMW:NewClass("Config_CheckButton", "CheckButton", "Config_Frame"){
+	checkedValue = true,
+	uncheckedValue = false,
+
 	-- Constructor
 	OnNewInstance_CheckButton = function(self)
 		self:SetMotionScriptsWhileDisabled(true)
@@ -1895,6 +1869,10 @@ TMW:NewClass("Config_CheckButton", "CheckButton", "Config_Frame"){
 		self.text:SetText(label)
 	end,
 
+	SetCheckedValues = function(self, checkedValue, uncheckedValue)
+		self.checkedValue = checkedValue
+		self.uncheckedValue = uncheckedValue
+	end,
 
 	SetSetting = function(self, key, value)
 		self.setting = key
@@ -1910,7 +1888,7 @@ TMW:NewClass("Config_CheckButton", "CheckButton", "Config_Frame"){
 
 		if settings and self.setting then
 			if self.value == nil then
-				settings[self.setting] = checked
+				settings[self.setting] = checked and self.checkedValue or self.uncheckedValue
 			else
 				settings[self.setting] = self.value
 				self:SetChecked(true)
@@ -1927,7 +1905,7 @@ TMW:NewClass("Config_CheckButton", "CheckButton", "Config_Frame"){
 			if self.value ~= nil then
 				self:SetChecked(settings[self.setting] == self.value)
 			else
-				self:SetChecked(settings[self.setting])
+				self:SetChecked(settings[self.setting] == self.checkedValue)
 			end
 		end
 	end,
@@ -1960,7 +1938,7 @@ TMW:NewClass("Config_EditBox", "EditBox", "Config_Frame"){
 	
 	UpdateLabel = function(self, label)
 		local text = self:GetText()
-		if text and text:trim(" \t\r\n") == "" then
+		if text and text:trim(" \t\r\n"):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "") == "" then
 			self.BackgroundText:SetText(self.label)
 		else
 			self.BackgroundText:SetText(nil)
@@ -2116,7 +2094,7 @@ TMW:NewClass("Config_EditBox_Lua", "Config_EditBox") {
 	OnNewInstance_EditBox_Lua = function(self)
 		TMW.indentLib.enable(self, self.ColorTable, 4)
 
-		self:SetFont("Interface/Addons/TellMeWhen/Fonts/VeraMono.ttf", 11)
+		self:SetFont("Interface/Addons/TellMeWhen/Fonts/RobotoMono-Regular.ttf", 11, "")
 
 		self:SetNewlineOnEnter(true)
 
@@ -2183,7 +2161,7 @@ TMW:NewClass("Config_TimeEditBox", "Config_EditBox"){
 
 	ModifyValueForSave = function(self, value)
 		local t = TMW:CleanString(self)
-		if strfind(t, ":") then
+		if t:find(":") then
 			t = TMW.toSeconds(t)
 		end
 		return tonumber(t) or 0
@@ -2982,9 +2960,90 @@ TMW:NewClass("Config_ColorButton", "Button", "Config_Frame"){
 			return c.r, c.g, c.b, a, c.flags
 		else
 			return 0, 0, 0, 0, nil
-		end
+		end		
 	end,
 }
+
+if ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING) and ClassicExpansionAtMost(LE_EXPANSION_WARLORDS_OF_DRAENOR) then 
+	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
+		-- Constructor
+		Runes = {
+			"Blood",
+			"Unholy",
+			"Frost",
+		},
+	
+		OnNewInstance_Button_Rune = function(self)
+			self.runeNumber = self:GetID()
+	
+			-- detect what texture should be used
+			local runeSlot = ((self.runeNumber-1)%6)+1 -- gives 1, 2, 3, 4, 5, 6
+			local runeName = self.Runes[ceil(runeSlot/2)] -- Gives "Blood", "Unholy", "Frost"
+			
+			if self.runeNumber > 6 then
+				self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. runeName)
+			else
+				self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. runeName)
+			end
+	
+			self.bit = bit.lshift(1, self.runeNumber - 1)
+		end,
+	
+	
+		-- Methods
+		checked = false,
+		GetChecked = function(self)
+			return self.checked
+		end,
+	
+		SetChecked = function(self, checked)
+			self.checked = checked
+			if checked then
+				self.Check:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready")
+			else
+				self.Check:SetTexture(nil)
+			end
+		end,
+	}
+elseif ClassicExpansionAtLeast(LE_EXPANSION_LEGION) then
+	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
+		-- Constructor
+
+		OnNewInstance_Button_Rune = function(self)
+			if not self:GetRuneNumber() then
+				self:SetRuneNumber(self:GetID())
+			end
+		end,
+
+		GetRuneNumber = function(self)
+			return self.runeNumber
+		end,
+
+		SetRuneNumber = function(self, runeNumber)
+			self.runeNumber = runeNumber
+
+			self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-SingleRune")
+
+			self:SetSettingBitID(self.runeNumber)
+		end,
+
+
+		-- Methods
+		checked = false,
+		GetChecked = function(self)
+			return self.checked
+		end,
+
+		SetChecked = function(self, checked)
+			self.checked = checked
+			if checked then
+				self.Check:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready")
+			else
+				self.Check:SetTexture(nil)
+			end
+		end,
+	}
+end
 
 TMW:NewClass("Config_PointSelect", "Config_Frame"){
 
@@ -3189,7 +3248,6 @@ TMW:NewClass("Config_ColorPicker", "Config_Frame"){
 			return
 		end
 
-		-- TODO: HANDLE ALPHA
 		local h = self.HueSlider:GetValue()
 		local s = self.SaturationSlider:GetValue()
 		local v = self.ValueSlider:GetValue()
@@ -3197,21 +3255,50 @@ TMW:NewClass("Config_ColorPicker", "Config_Frame"){
 
 		self.StringEditbox:SetText(TMW:HSVAToColorString(h, s, v, a))
 
-		local r,g,b=TMW:HSVToRGB(h, 0, v)
-		self.SaturationSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, 1, v))
-
-		local r,g,b=TMW:HSVToRGB(h, s, 0)
-		self.ValueSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, s, 1))
-
-		for i = 1, self.HueSlider.NUM_SEGMENTS do
-			local r,g,b=TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v)
-			self.HueSlider.textures[i]:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v))
+		if not self.AlphaSlider.Background.SetGradientAlpha then
+			-- Wow 10.0+
+			self.SaturationSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, 0, v, 1)), 
+				CreateColor(TMW:HSVToRGB(h, 1, v, 1))
+			)
+	
+			self.ValueSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, s, 0, 1)), 
+				CreateColor(TMW:HSVToRGB(h, s, 1, 1))
+			)
+	
+			for i = 1, self.HueSlider.NUM_SEGMENTS do
+				self.HueSlider.textures[i]:SetGradient(
+					"HORIZONTAL", 
+					CreateColor(TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v, 1)), 
+					CreateColor(TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v, 1))
+				)
+			end
+	
+			self.AlphaSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, s, v, 0)), 
+				CreateColor(TMW:HSVToRGB(h, s, v, 1))
+			)
+		else
+			local r,g,b=TMW:HSVToRGB(h, 0, v)
+			self.SaturationSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, 1, v))
+	
+			local r,g,b=TMW:HSVToRGB(h, s, 0)
+			self.ValueSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, s, 1))
+	
+			for i = 1, self.HueSlider.NUM_SEGMENTS do
+				local r,g,b=TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v)
+				self.HueSlider.textures[i]:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v))
+			end
+	
+			local r,g,b=TMW:HSVToRGB(h, s, v)
+			self.AlphaSlider.Background:SetGradientAlpha("HORIZONTAL", r, g, b, 0, r, g, b, 1)
 		end
-
-		local r,g,b=TMW:HSVToRGB(h, s, v)
-		self.AlphaSlider.Background:SetGradientAlpha("HORIZONTAL", r, g, b, 0, r, g, b, 1)
-
-		self.swatch.swatch:SetColorTexture(r,g,b)
+		
+		self.swatch.swatch:SetColorTexture(TMW:HSVToRGB(h, s, v, a))
 		self.swatch.swatch:SetAlpha(a)
 
 
@@ -3548,6 +3635,12 @@ function IE:ResizeTabs()
 
 		prevTabGroup = tabGroup
 	end
+
+	-- New in Dragonflight: calling GetWidth on a child frame can trigger a 
+	-- resize of a parent frame for some reason! Which means that while the icon editor
+	-- is being initialized, its being resized before the tabs even exist!
+	if not prevTabGroup then return end
+
 	prevTabGroup:SetPoint("RIGHT", -interPadding)
 	-- Adjust the conatiner width to fit the tabs exactly so calculations are easy.
 	TMW.IE.Tabs.primary:SetWidth(primaryWidth)
@@ -3941,7 +4034,6 @@ IE.RapidSettings = {
 	-- settings that can be changed very rapidly, i.e. via mouse wheel or in a color picker
 	-- consecutive changes of these settings will be ignored by the undo/redo module
 
-	-- TODO: auto register these when they are used by a slider, and kill this table.
 	Size = true,
 	Level = true,
 	Alpha = true,
@@ -4199,8 +4291,34 @@ TMW:NewClass("HistorySet") {
 
 local function leftPad(text, len)
 	text = tostring(text)
-	if #text >= len then return text end
-	return strrep(" ", len - #text) .. text
+	local inputLength = strlenutf8(text)
+	if inputLength >= len then return text end
+	return strrep(" ", len - inputLength) .. text
+end
+
+local function rightPad(text, len)
+	text = tostring(text)
+	local inputLength = strlenutf8(text)
+	if inputLength >= len then return text end
+	return text .. strrep(" ", len - inputLength)
+end
+
+local function utf8sub(str, start, numChars)
+    local currentIndex = start
+    while numChars > 0 and currentIndex <= #str do
+        local char = string.byte(str, currentIndex)
+        if char >= 240 then
+            currentIndex = currentIndex + 4
+        elseif char >= 225 then
+            currentIndex = currentIndex + 3
+        elseif char >= 192 then
+            currentIndex = currentIndex + 2
+        else
+            currentIndex = currentIndex + 1
+        end
+        numChars = numChars - 1
+    end
+    return str:sub(start, currentIndex - 1)
 end
 
 local function makeColorFunc(greenBelow, redAbove)
@@ -4227,7 +4345,7 @@ local function makeColorFunc(greenBelow, redAbove)
 			-- the point where halfColor will be used.
 			-- If we don't multiply by 2, we would check if (percent > 0.5), but then
 			-- we would have to multiply that percentage by 2 later anyway in order to use the
-			-- full range of colors available (we would only get half the range of colors otherwise, which looks like shit)
+			-- full range of colors available (we would only get half the range of colors otherwise, which looks bad)
 			local doublePercent = percent * 2
 
 			if doublePercent > 1 then
@@ -4285,7 +4403,7 @@ TMW.IE.CpuReportParameters = {
 			value = function(icon) return icon.cpu_updateCount == 0 
 				and 0
 				or icon.cpu_updateTotal / icon.cpu_updateCount end,
-			format = "%.2f ms"
+			format = "%.3f ms"
 		},
 		{
 			selected = true,
@@ -4293,7 +4411,7 @@ TMW.IE.CpuReportParameters = {
 			label = "Updates Avg",
 			desc = "Milliseconds of CPU time spent on icon updates, per second of wall clock time.",
 			value = function(icon) return icon.cpu_updateTotal / (TMW.time - icon.cpu_startTime + 0.00001) end,
-			format = "%.2f ms/s",
+			format = "%.3f ms/s",
 			color = makeColorFunc(0.05, 2)
 		},
 		{
@@ -4301,7 +4419,7 @@ TMW.IE.CpuReportParameters = {
 			label = "Peak Update",
 			desc = "Highest CPU time spent on any single update.",
 			value = function(icon) return icon.cpu_updatePeak end,
-			format = "%.2f ms"
+			format = "%.3f ms"
 		},
 
 
@@ -4328,7 +4446,7 @@ TMW.IE.CpuReportParameters = {
 			value = function(icon) return icon.cpu_eventCount == 0 
 					and 0
 					or icon.cpu_eventTotal / icon.cpu_eventCount end,
-			format = "%.2f ms"
+			format = "%.3f ms"
 		},
 		{
 			selected = true,
@@ -4336,7 +4454,7 @@ TMW.IE.CpuReportParameters = {
 			label = "Events avg",
 			desc = "Average CPU time spent on event handling per second of wall clock time.",
 			value = function(icon) return icon.cpu_eventTotal / (TMW.time - icon.cpu_startTime + 0.00001) end,
-			format = "%.2f ms/s",
+			format = "%.3f ms/s",
 			color = makeColorFunc(0.03, 1)
 		},
 		{
@@ -4344,7 +4462,7 @@ TMW.IE.CpuReportParameters = {
 			label = "Peak Event",
 			desc = "Highest CPU time spent on any single event.",
 			value = function(icon) return icon.cpu_eventPeak end,
-			format = "%.2f ms"
+			format = "%.3f ms"
 		},
 
 
@@ -4381,7 +4499,7 @@ TMW.IE.CpuReportParameters = {
 			value = function(icon) return icon.cpu_cndtCount == 0 
 					and 0
 					or icon.cpu_cndtTotal / icon.cpu_cndtCount end,
-			format = "%.2f ms"
+			format = "%.3f ms"
 		},
 		{
 			selected = true,
@@ -4389,7 +4507,7 @@ TMW.IE.CpuReportParameters = {
 			label = "Cndtn avg",
 			desc = "Average CPU time spent on condition checking per second of wall clock time.",
 			value = function(icon) return icon.cpu_cndtTotal / (TMW.time - icon.cpu_startTime + 0.00001) end,
-			format = "%.2f ms/s",
+			format = "%.3f ms/s",
 			color = makeColorFunc(0.02, 0.6)
 		},
 	}
@@ -4403,7 +4521,7 @@ function TMW.IE:GetCpuProfileReport()
 	for group in TMW:InGroups() do
 		local printedGroup = false
 		for icon in group:InIcons() do 
-			if icon.cpu_updateTotal > 0 or icon.cpu_eventTotal > 0 or icon.cpu_cndtTotal > 0 then
+			if icon.cpu_startTime and (icon.cpu_updateTotal > 0 or icon.cpu_eventTotal > 0 or icon.cpu_cndtTotal > 0) then
 
 				local time = TMW.time - icon.cpu_startTime + 0.00001 -- add epsilon to prevent div by 0
 				local update = icon.cpu_updateTotal / time
@@ -4417,7 +4535,7 @@ function TMW.IE:GetCpuProfileReport()
 
 					r[#r+1] = "\n"
 
-					r[#r+1] = ("\n%-30s || "):format((group.Name or ""):sub(1, 30))
+					r[#r+1] = ("\n%s || "):format(rightPad(utf8sub(group.Name or "", 1, 30), 30))
 					for i, column in pairs(TMW.IE.CpuReportParameters.Columns) do
 						if column.selected then
 							local text = column.label
@@ -4436,7 +4554,7 @@ function TMW.IE:GetCpuProfileReport()
 					name = L["DOMAIN_GLOBAL_NC"] .. " " .. name
 				end
 
-				r[#r+1] = ("\n%30s || "):format(name)
+				r[#r+1] = ("\n%s || "):format(leftPad(name, 30))
 				for i, column in pairs(TMW.IE.CpuReportParameters.Columns) do
 					if column.selected then
 						local value = column.value(icon)
@@ -4444,33 +4562,25 @@ function TMW.IE:GetCpuProfileReport()
 							value == 0 and "" or 
 							column.format and format(column.format, value) or
 							column.text(value)
-						text = leftPad(text, column.width or #column.label)
-						if column.color then
-							text = "|c" .. column.color(value) .. text .. "|r"
+
+						if text == "" then
+							-- short circuit: don't put colors around empty strings
+							text = leftPad(text, column.width or #column.label)
+						else
+							text = leftPad(text, column.width or #column.label)
+							if column.color then
+								text = "|c" .. column.color(value) .. text .. "|r"
+							end
 						end
 
 						r[#r+1] = text .. "  "
 					end
 				end
-
-				-- r = r .. "\n" .. ("%20s || %sms %8d %s ms/s || %sms %8d %s ms/s"):format(
-				-- 		icon.ID, 
-				-- 		floatPad(icon.cpu_updateTotal, 9), 
-				-- 		floatPad(icon.cpu_updateCount), 
-				-- 		--floatPad(icon.cpu_updatePeak, 6), 
-				-- 		floatPad(update, 8),
-				-- 		floatPad(icon.cpu_eventTotal, 9),
-				-- 		floatPad(icon.cpu_eventCount), 
-				-- 		--floatPad(icon.cpu_eventPeak, 6)
-				-- 		floatPad(event, 8)
-				-- )
 			end
 		end
 	end
 
 	return table.concat(r)
-	
-	-- wlp(update_avg, event_avg, "\n\n\n")
 end
 
 

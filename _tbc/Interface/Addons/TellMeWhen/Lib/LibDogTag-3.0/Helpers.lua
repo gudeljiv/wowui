@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20220322132201"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260109044932"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -134,6 +134,8 @@ if DEBUG then
 		poolNum = value
 	end
 end
+
+DogTag.issecretvalue = _G.issecretvalue or function() return false end
 
 local function sortStringList(s)
 	if not s then
@@ -520,8 +522,8 @@ DogTag.clearCodes = clearCodes
 
 function DogTag.tagError(code, nsList, err)
 	local _, minor = LibStub(MAJOR_VERSION)
-	local message = ("%s.%d: Error with code %q (%s). %s"):format(MAJOR_VERSION, minor/1000000, code, nsList, err)
-	geterrorhandler()(message)
+	local message = ("%s.%d: Error with code %q (%s). %s"):format(MAJOR_VERSION, minor/1000000, code, nsList, err or "<unknown error>")
+	CallErrorHandler(message)
 	return message, code, nsList, err
 end
 end

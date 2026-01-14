@@ -4,8 +4,9 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Task = TSM.Include("LibTSMClass").DefineClass("TASK", nil, "ABSTRACT")
+local TSM = select(2, ...) ---@type TSM
+local LibTSMClass = LibStub("LibTSMClass")
+local Task = LibTSMClass.DefineClass("Task", nil, "ABSTRACT")
 TSM.TaskList.Task = Task
 
 

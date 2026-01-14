@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -17,8 +17,10 @@ local L = TMW.L
 local print = TMW.print
 local _G, strmatch, strtrim, select, floor, ceil, pairs, wipe, type, max =
 	  _G, strmatch, strtrim, select, floor, ceil, pairs, wipe, type, max
-local GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetItemInfo, GetWeaponEnchantInfo =
-	  GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetItemInfo, GetWeaponEnchantInfo
+local GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetWeaponEnchantInfo =
+	  GetInventoryItemTexture, GetInventorySlotInfo, GetInventoryItemID, GetWeaponEnchantInfo
+
+local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
 
 local strlowerCache = TMW.strlowerCache
 
@@ -35,7 +37,7 @@ local Type = TMW.Classes.IconType:New("wpnenchant")
 LibStub("AceTimer-3.0"):Embed(Type)
 Type.name = L["ICONMENU_WPNENCHANT"]
 Type.desc = L["ICONMENU_WPNENCHANT_DESC"]
-Type.menuIcon = GetSpellTexture(8024)
+Type.menuIcon = TMW.GetSpellTexture(8024) or TMW.GetSpellTexture(318038)
 Type.AllowNoName = true
 Type.menuSpaceAfter = true
 
@@ -201,7 +203,7 @@ local function WpnEnchant_OnUpdate(icon, time)
 				duration = d
 			end
 		else
-			-- We don't know the enchant name, which is fucked.
+			-- We don't know the enchant name, which is bad.
 			-- The timer sweep won't work, but timer texts will.
 			duration = expiration
 		end
@@ -312,7 +314,13 @@ function Type:Setup(icon)
 	icon:SetUpdateFunction(WpnEnchant_OnUpdate)
 	icon:Update()
 
+	-- At some point in the past, UNIT_INVENTORY_CHANGED used to be sufficient.
+	-- However, as of https://github.com/ascott18/TellMeWhen/issues/2253 at least in SOD,
+	-- this event is too early and GetWeaponEnchantInfo() isn't returning all returns yet.
+	-- Sillily enough, UNIT_PORTRAIT_UPDATE seems to always fire here and be late enough to work.
 	icon:RegisterEvent("UNIT_INVENTORY_CHANGED")
+	icon:RegisterEvent("UNIT_PORTRAIT_UPDATE")
+
 	icon:SetScript("OnEvent", WpnEnchant_OnEvent)
 	icon:SetUpdateMethod("manual")
 	icon:OnEvent(nil, "player")

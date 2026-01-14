@@ -25,27 +25,31 @@ local L = addon.L
 --<GLOBALS
 local _G = _G
 local assert = _G.assert
-local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER
+local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Backpack ) or 0
+local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
 local band = _G.bit.band
-local BANK_CONTAINER = _G.BANK_CONTAINER
+local BANK_CONTAINER = _G.BANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Bank ) or -1
 local ceil = _G.ceil
 local CreateFrame = _G.CreateFrame
 local format = _G.format
-local GetContainerFreeSlots = _G.GetContainerFreeSlots
-local GetContainerItemID = _G.GetContainerItemID
-local GetContainerItemInfo = _G.GetContainerItemInfo
-local GetContainerItemLink = _G.GetContainerItemLink
-local GetContainerNumFreeSlots = _G.GetContainerNumFreeSlots
-local GetContainerNumSlots = _G.GetContainerNumSlots
+local GetContainerFreeSlots = C_Container and _G.C_Container.GetContainerFreeSlots or _G.GetContainerFreeSlots
+local GetContainerItemID = C_Container and _G.C_Container.GetContainerItemID or _G.GetContainerItemID
+local GetContainerItemInfo = C_Container and _G.C_Container.GetContainerItemInfo or _G.GetContainerItemInfo
+local GetContainerItemLink = C_Container and _G.C_Container.GetContainerItemLink or _G.GetContainerItemLink
+local GetContainerNumFreeSlots = C_Container and _G.C_Container.GetContainerNumFreeSlots or _G.GetContainerNumFreeSlots
+local GetContainerNumSlots = C_Container and _G.C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
 local GetCursorInfo = _G.GetCursorInfo
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
+local GetItemGUID = _G.C_Item.GetItemGUID
+local GetItemClassInfo = _G.C_Item.GetItemClassInfo
 local GetMerchantItemLink = _G.GetMerchantItemLink
 local ipairs = _G.ipairs
-local KEYRING_CONTAINER = _G.KEYRING_CONTAINER
 local max = _G.max
 local min = _G.min
 local next = _G.next
 local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
+local NUM_REAGENTBAG_SLOTS = _G.NUM_REAGENTBAG_SLOTS
+local NUM_TOTAL_EQUIPPED_BAG_SLOTS = _G.NUM_TOTAL_EQUIPPED_BAG_SLOTS
 local pairs = _G.pairs
 local PlaySound = _G.PlaySound
 local select = _G.select
@@ -94,9 +98,8 @@ function addon:CreateContainerFrame(...) return containerClass:Create(...) end
 local SimpleLayeredRegion = addon:GetClass("SimpleLayeredRegion")
 
 local bagSlots = {}
-function containerProto:OnCreate(name, isBank, bagObject)
-	self:CreateBeautyBorder(8)
 
+function containerProto:OnCreate(name, isBank, bagObject)
 	self:SetParent(UIParent)
 	containerParentProto.OnCreate(self)
 	Mixin(self, BackdropTemplateMixin)
@@ -112,8 +115,11 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	self.name = name
 	self.bagObject = bagObject
 	self.isBank = isBank
+	self.isReagentBank = false
+	self.firstLoad = true
 
 	self.buttons = {}
+	---@type {[number]: {[number]: ItemInfo}}
 	self.content = {}
 	self.stacks = {}
 	self.sections = {}
@@ -121,6 +127,10 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	self.added = {}
 	self.removed = {}
 	self.changed = {}
+
+	self.itemGUIDtoItem = {}
+	---@type Frame|Grid
+	self.Content = {}
 
 	local ids
 	for bagId in pairs(BAG_IDS[isBank and "BANK" or "BAGS"]) do
@@ -148,7 +158,7 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	headerLeftRegion:SetFrameLevel(frameLevel)
 
 	local headerRightRegion = SimpleLayeredRegion:Create(self, "TOPRIGHT", "LEFT", 4)
-	headerRightRegion:SetPoint("TOPRIGHT", -32, -BAG_INSET)
+	headerRightRegion:SetPoint("TOPRIGHT", -BAG_INSET, -BAG_INSET)
 	self.HeaderRightRegion = headerRightRegion
 	self:AddWidget(headerRightRegion)
 	headerRightRegion:SetFrameLevel(frameLevel)
@@ -170,22 +180,6 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	self.BagSlotPanel = bagSlotPanel
 	wipe(bagSlots)
 
-	local closeButton = CreateFrame("Button", nil, self, "UIPanelCloseButton")
-	self.CloseButton = closeButton
-	closeButton:SetPoint("TOPRIGHT", -2, -2)
-	addon.SetupTooltip(closeButton, L["Close"])
-	closeButton:SetFrameLevel(frameLevel)
-	
-	-- local sortSlotButton = CreateFrame("CheckButton", nil, self)
-	-- sortSlotButton:SetNormalTexture([[Interface\Buttons\Button-Backpack-Up]])
-	-- sortSlotButton:SetCheckedTexture([[Interface\Buttons\CheckButtonHilight]])
-	-- sortSlotButton:GetCheckedTexture():SetBlendMode("ADD")
-	-- sortSlotButton:SetScript('OnClick', sortSlotButton_OnClick)
-	-- sortSlotButton:SetPoint("TOPRIGHT", -60, -5)
-	-- sortSlotButton:SetWidth(18)
-	-- sortSlotButton:SetHeight(18)
-	-- sortSlotButton:CreateBeautyBorder(4)
-
 	local bagSlotButton = CreateFrame("CheckButton", nil, self)
 	bagSlotButton:SetNormalTexture([[Interface\Buttons\Button-Backpack-Up]])
 	bagSlotButton:SetCheckedTexture([[Interface\Buttons\CheckButtonHilight]])
@@ -194,7 +188,6 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	bagSlotButton.panel = bagSlotPanel
 	bagSlotButton:SetWidth(18)
 	bagSlotButton:SetHeight(18)
-	bagSlotButton:CreateBeautyBorder(4)
 	self.BagSlotButton = bagSlotButton
 	addon.SetupTooltip(bagSlotButton, {
 		L["Equipped bags"],
@@ -207,13 +200,12 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	searchBox:SetFrameLevel(frameLevel)
 	headerRightRegion:AddWidget(searchBox, -10, 130, 0, -1)
 	tinsert(_G.ITEM_SEARCHBAR_LIST, searchBox:GetName())
-	searchBox:Hide()
 
 	local title = self:CreateFontString(self:GetName().."Title","OVERLAY")
 	self.Title = title
-	title:SetFontObject(GameFontNormalSmall)
+	title:SetFontObject(addon.fonts[string.lower(name)].bagFont)
 	title:SetText(L[name])
-	title:SetHeight(10)
+	title:SetHeight(18)
 	title:SetJustifyH("LEFT")
 	title:SetPoint("LEFT", headerLeftRegion, "RIGHT", 4, 0)
 	title:SetPoint("RIGHT", headerRightRegion, "LEFT", -4, 0)
@@ -222,6 +214,15 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	anchor:SetAllPoints(title)
 	anchor:SetFrameLevel(self:GetFrameLevel() + 10)
 	self.Anchor = anchor
+
+	if addon.isRetail then
+		if self.isBank then
+			self:CreateReagentTabButton()
+			self:CreateDepositButton()
+		end
+		self:CreateSortButton()
+	end
+	self.CloseButton = self:CreateCloseButton()
 
 	local toSortSection = addon:AcquireSection(self, L["Recent Items"], self.name)
 	toSortSection:SetPoint("TOPLEFT", BAG_INSET, -addon.TOP_PADDING)
@@ -238,8 +239,13 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	toSortSection.UpdateHeaderScripts = function() end
 	toSortSection.Header:RegisterForClicks("AnyUp")
 	toSortSection.Header:SetScript("OnClick", function() self:FullUpdate() end)
-
-	local content = CreateFrame("Frame", nil, self)
+	local content
+	if addon.db.profile.gridLayout then
+		content = addon:CreateGridFrame((isBank and "Bank" or "Backpack"), self)
+		self:CreateLockButton()
+	else
+		content = CreateFrame("Frame", nil, self)
+	end
 	content:SetPoint("TOPLEFT", toSortSection, "BOTTOMLEFT", 0, -ITEM_SPACING)
 	self.Content = content
 	self:AddWidget(content)
@@ -260,6 +266,29 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	RegisterMessage(name, 'AdiBags_LayoutChanged', self.FullUpdate, self)
 	RegisterMessage(name, 'AdiBags_ConfigChanged', self.ConfigChanged, self)
 	RegisterMessage(name, 'AdiBags_ForceFullLayout', ForceFullLayout)
+	RegisterMessage(name, 'AdiBags_GridUpdate', self.OnLayout, self)
+	RegisterMessage(name, 'AdiBags_ThemeChanged', self.UpdateSkin, self)
+	RegisterMessage(name..'SectionFonts', 'AdiBags_ThemeChanged', self.UpdateSectionFonts, self)
+	if addon.isRetail then
+		LibStub('ABEvent-1.0').RegisterEvent(name, 'EQUIPMENT_SWAP_FINISHED', ForceFullLayout)
+
+		-- Force full layout on sort
+		if isBank then
+			if C_Container then
+				hooksecurefunc(C_Container, 'SortBankBags', ForceFullLayout)
+				hooksecurefunc(C_Container, 'SortReagentBankBags', ForceFullLayout)
+			else
+				hooksecurefunc('SortBankBags', ForceFullLayout)
+				hooksecurefunc('SortReagentBankBags', ForceFullLayout)
+			end
+		else
+			if C_Container then
+				hooksecurefunc(C_Container,'SortBags', ForceFullLayout)
+			else
+				hooksecurefunc('SortBags', ForceFullLayout)
+			end
+		end
+	end
 end
 
 function containerProto:ToString() return self.name or self:GetName() end
@@ -311,15 +340,111 @@ end
 	return button
 end
 
+function containerProto:CreateDepositButton()
+	local button = self:CreateModuleAutoButton(
+		"D",
+		0,
+		REAGENTBANK_DEPOSIT,
+		L["auto-deposit"],
+		"autoDeposit",
+		function()
+			DepositReagentBank()
+			for bag in pairs(self:GetBagIds()) do
+				self:UpdateContent(bag)
+			end
+		end,
+		L["You can block auto-deposit ponctually by pressing a modified key while talking to the banker."]
+	)
+
+	if not IsReagentBankUnlocked() then
+		button:Hide()
+		button:SetScript('OnEvent', button.Show)
+		button:RegisterEvent('REAGENTBANK_PURCHASED')
+	end
+end
+
+function containerProto:CreateCloseButton()
+	return self:CreateModuleButton(
+		"X",
+		200,
+		function()
+			self:Close()
+		end,
+		L["Close"]
+	)
+end
+
+function containerProto:CreateSortButton()
+	self:CreateModuleButton(
+		"S",
+		10,
+		function()
+			addon:CloseAllBags()
+			self.bagObject:Sort(self.isReagentBank)
+			self.forceLayout = true
+		end,
+		L["(Blizzard's) Sort items"]
+	)
+end
+
+function containerProto:CreateLockButton()
+	self:CreateModuleButton(
+		"L",
+		20,
+		function()
+			self.Content:ToggleCovers()
+		end,
+		L["Lock/Unlock sections so they can be moved."]
+	)
+end
+
+function containerProto:CreateReagentTabButton()
+	local button
+	button = self:CreateModuleButton(
+		"R",
+		0,
+		function()
+			if not IsReagentBankUnlocked() then
+				PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
+				return StaticPopup_Show("CONFIRM_BUY_REAGENTBANK_TAB")
+			end
+			self:ShowReagentTab(not self.isReagentBank)
+		end,
+		function(_, tooltip)
+			if not IsReagentBankUnlocked() then
+				tooltip:AddLine(BANKSLOTPURCHASE, 1, 1, 1)
+				tooltip:AddLine(REAGENTBANK_PURCHASE_TEXT)
+				SetTooltipMoney(tooltip, GetReagentBankCost(), nil, COSTS_LABEL)
+				return
+			end
+			tooltip:AddLine(
+				format(
+					L['Click to swap between %s and %s.'],
+					REAGENT_BANK:lower(),
+					L["Bank"]:lower()
+				)
+			)
+		end
+	)
+end
+
 --------------------------------------------------------------------------------
 -- Scripts & event handlers
 --------------------------------------------------------------------------------
 
 function containerProto:GetBagIds()
-	return BAG_IDS[
-		self.isBank and "BANK" or
-		"BAGS"
-	]
+	if addon.isRetail then
+		return BAG_IDS[
+			self.isReagentBank and "REAGENTBANK_ONLY" or
+			self.isBank and "BANK_ONLY" or
+			"BAGS"
+		]
+	else
+		return BAG_IDS[
+			self.isBank and "BANK" or
+			"BAGS"
+		]
+	end
 end
 
 function containerProto:BagsUpdated(event, bagIds)
@@ -338,7 +463,7 @@ function containerProto:CanUpdate()
 end
 
 function containerProto:ConfigChanged(event, name)
-	if strsplit('.', name) == 'skin' then
+	if strsplit('.', name) == 'theme' then
 		self:UpdateSkin()
 	end
 end
@@ -346,6 +471,8 @@ end
 function containerProto:OnShow()
 	self:Debug('OnShow')
 	PlaySound(self.isBank and SOUNDKIT.IG_MAINMENU_OPEN or SOUNDKIT.IG_BACKPACK_OPEN)
+	self:RegisterEvent('EQUIPMENT_SWAP_PENDING', "PauseUpdates")
+	self:RegisterEvent('EQUIPMENT_SWAP_FINISHED', "ResumeUpdates")
 	self:RegisterEvent('AUCTION_MULTISELL_START', "PauseUpdates")
 	self:RegisterEvent('AUCTION_MULTISELL_UPDATE')
 	self:RegisterEvent('AUCTION_MULTISELL_FAILURE', "ResumeUpdates")
@@ -354,6 +481,9 @@ function containerProto:OnShow()
 end
 
 function containerProto:OnHide()
+	if self.isReagentBank then
+		self:ShowReagentTab(false)
+	end
 	containerParentProto.OnHide(self)
 	PlaySound(self.isBank and SOUNDKIT.IG_MAINMENU_CLOSE or SOUNDKIT.IG_BACKPACK_CLOSE)
 	self:PauseUpdates()
@@ -384,6 +514,41 @@ function containerProto:RefreshContents()
 	self:UpdateButtons()
 end
 
+function containerProto:ShowReagentTab(show)
+	self:Debug('ShowReagentTab', show)
+
+	self.Title:SetText(show and REAGENT_BANK or L["Bank"])
+	self.BagSlotButton:SetEnabled(not show)
+	if show and self.BagSlotPanel:IsShown() then
+		self.BagSlotPanel:Hide()
+		self.BagSlotButton:SetChecked(false)
+	end
+	BankFrame.selectedTab = show and 2 or 1
+
+	local previousBags = self:GetBagIds()
+	self.isReagentBank = show
+
+	if self.isReagentBank then
+		self.Title:SetFontObject(addon.fonts.reagentBank.bagFont)
+	else
+		self.Title:SetFontObject(addon.fonts[string.lower(self.name)].bagFont)
+	end
+
+	for bag in pairs(previousBags) do
+		self:UpdateContent(bag)
+	end
+	self.forceLayout = true
+	self:RefreshContents()
+	self:UpdateSkin()
+	self:UpdateSectionFonts()
+end
+
+function containerProto:UpdateSectionFonts()
+	for _, section in pairs(self.sections) do
+		section:UpdateFont()
+	end
+end
+
 function containerProto:AUCTION_MULTISELL_UPDATE(event, current, total)
 	if current == total then
 		self:ResumeUpdates()
@@ -399,7 +564,7 @@ local function FindBagWithRoom(self, itemFamily)
 	for bag in pairs(self:GetBagIds()) do
 		local numFree, family = GetContainerNumFreeSlots(bag)
 		if numFree and numFree > 0 then
-			if band(bag == KEYRING_CONTAINER and 256 or family, itemFamily) ~= 0 then
+			if family and band(family, itemFamily) ~= 0 then
 				return bag
 			elseif not fallback then
 				fallback = bag
@@ -416,7 +581,7 @@ do
 		local bag = FindBagWithRoom(self, GetItemFamily(item))
 		if not bag then return end
 		wipe(slots)
-		GetContainerFreeSlots(bag, slots)
+		slots = GetContainerFreeSlots(bag)
 		return GetSlotId(bag, slots[1])
 	end
 end
@@ -462,7 +627,7 @@ function containerProto:AddBottomWidget(widget, side, order, height, xOffset, yO
 end
 
 function containerProto:OnLayout()
-	self:Debug('OnLayout')
+	self:Debug('OnLayout Start')
 	local hlr, hrr = self.HeaderLeftRegion, self.HeaderRightRegion
 	local blr, brr = self.BottomLeftRegion, self.BottomRightRegion
 	local minWidth = max(
@@ -477,11 +642,16 @@ function containerProto:OnLayout()
 	if self.forceLayout then
 		self:FullUpdate()
 	end
-	self:Debug('OnLayout', self.ToSortSection:GetHeight())
+	self:Debug('OnLayout Height', self.ToSortSection:GetHeight())
 	self:SetSize(
 		BAG_INSET * 2 + max(minWidth, self.Content:GetWidth()),
 		addon.TOP_PADDING + BAG_INSET + bottomHeight + self.Content:GetHeight() + self.ToSortSection:GetHeight() + ITEM_SPACING
 	)
+	if addon.db.profile.gridLayout then
+		addon.db.profile.gridData = addon.db.profile.gridData or {}
+		addon.db.profile.gridData[self.name] = self.Content:GetLayout()
+		self:Debug("Saving Grid Layout")
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -489,8 +659,9 @@ end
 --------------------------------------------------------------------------------
 
 function containerProto:UpdateSkin()
-	local backdrop, r, g, b, a = addon:GetContainerSkin(self.name)
+	local backdrop, r, g, b, a = addon:GetContainerSkin(self.name, self.isReagentBank)
 	self:SetBackdrop(backdrop)
+	self:ApplyBackdrop()
 	self:SetBackdropColor(r, g, b, a)
 	local m = max(r, g, b)
 	if m == 0 then
@@ -498,26 +669,40 @@ function containerProto:UpdateSkin()
 	else
 		self:SetBackdropBorderColor(0.5+(0.5*r/m), 0.5+(0.5*g/m), 0.5+(0.5*b/m), a)
 	end
+	addon.fonts[string.lower(self.name)].bagFont:ApplySettings()
 end
 
 --------------------------------------------------------------------------------
 -- Bag content scanning
 --------------------------------------------------------------------------------
 
+---@param bag number The id of the bag to update.
 function containerProto:UpdateContent(bag)
 	self:Debug('UpdateContent', bag)
 	local added, removed, changed = self.added, self.removed, self.changed
 	local content = self.content[bag]
 	local newSize = self:GetBagIds()[bag] and GetContainerNumSlots(bag) or 0
 	local _, bagFamily = GetContainerNumFreeSlots(bag)
-	bagFamily = bag == KEYRING_CONTAINER and 256 or bagFamily
+	if bag == REAGENTBAG_CONTAINER then
+		bagFamily = 2048
+	end
 	content.family = bagFamily
 	for slot = 1, newSize do
 		local itemId = GetContainerItemID(bag, slot)
 		local link = GetContainerItemLink(bag, slot)
+		local guid = ""
+		local itemLocation = ItemLocation:CreateFromBagAndSlot(bag, slot)
+
+		if addon.isRetail then
+			if itemLocation and itemLocation:IsValid() then
+				guid = GetItemGUID(itemLocation)
+				self.itemGUIDtoItem[guid] = itemLocation
+			end
+		end
 		if not itemId or (link and addon.IsValidItemLink(link)) then
 			local slotData = content[slot]
 			if not slotData then
+				---@type ItemInfo
 				slotData = {
 					bag = bag,
 					slot = slot,
@@ -529,34 +714,54 @@ function containerProto:UpdateContent(bag)
 				content[slot] = slotData
 			end
 
-			local name, count, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice
+			local name, count, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
 			if link then
-				name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = GetItemInfo(link)
+				name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(link)
 				if not name then
-					name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = GetItemInfo(itemId)
+					name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemId)
 				end
-				count = select(2, GetContainerItemInfo(bag, slot)) or 0
+				-- Correctly catch battlepets and store their name.
+				if string.match(link, "|Hbattlepet:") then
+					local _, speciesID = strsplit(":", link)
+					name = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
+				end
+				count = addon:GetContainerItemStackCount(bag, slot) or 0
 			else
 				link, count = false, 0
 			end
 
-			if slotData.link ~= link then
+			if slotData.guid ~= guid or slotData.texture ~= texture then
 				local prevSlotId = slotData.slotId
 				local prevLink = slotData.link
-				-- If links only differ in character level that's the same item
-				local sameItem = addon.IsSameLinkButLevel(slotData.link, link)
+				local prevGUID = slotData.guid
+				local sameItem
+				-- Use the new guid system to detect if an item is actually the same.
+				if addon.isRetail then
+					sameItem = (prevGUID == guid and not (prevGUID == "" or guid == ""))
+				else
+					sameItem = addon.IsSameLinkButLevel(slotData.link, link)
+				end
 
 				slotData.count = count
 				slotData.link = link
 				slotData.itemId = itemId
+				slotData.guid = guid
+				slotData.itemLocation = itemLocation
 				slotData.name, slotData.quality, slotData.iLevel, slotData.reqLevel, slotData.class, slotData.subclass, slotData.equipSlot, slotData.texture, slotData.vendorPrice = name, quality, iLevel, reqLevel, class, subclass, equipSlot, texture, vendorPrice
+				slotData.classID, slotData.subclassID, slotData.bindType, slotData.expacID, slotData.setID, slotData.isCraftingReagent = classID, subclassID, bindType, expacID, setID, isCraftingReagent
 				slotData.maxStack = maxStack or (link and 1 or 0)
-
 				if sameItem then
-					changed[slotData.slotId] = slotData
+						changed[slotData.slotId] = slotData
 				else
 					removed[prevSlotId] = prevLink
 					added[slotData.slotId] = slotData
+					-- Remove the old item, and add the new item to the
+					-- item index.
+					if addon.isRetail then
+						if prevGUID then
+							self.itemGUIDtoItem[prevGUID] = nil
+						end
+					end
 				end
 			elseif slotData.count ~= count then
 				slotData.count = count
@@ -597,6 +802,9 @@ function containerProto:GetSection(name, category)
 	if not section then
 		section = addon:AcquireSection(self, name, category)
 		self.sections[key] = section
+		if addon.db.profile.gridLayout then
+			self.Content:AddCell(key, section)
+		end
 	end
 	return section
 end
@@ -604,14 +812,20 @@ end
 local function FilterByBag(slotData)
 	local bag = slotData.bag
 	local name
-	if bag == KEYRING_CONTAINER then
-		name = L['Keyring']
-	elseif bag == BACKPACK_CONTAINER then
+	if bag == BACKPACK_CONTAINER then
 		name = L['Backpack']
 	elseif bag == BANK_CONTAINER then
 		name = L['Bank']
+	elseif bag == REAGENTBANK_CONTAINER then
+		name = REAGENT_BANK
 	elseif bag <= NUM_BAG_SLOTS then
 		name = format(L["Bag #%d"], bag)
+	elseif addon.isRetail then
+		if bag == REAGENTBAG_CONTAINER then
+			name = format(L["Reagent Bag"])
+		else
+			name = format(L["Bank bag #%d"], bag - NUM_BAG_SLOTS)
+		end
 	else
 		name = format(L["Bank bag #%d"], bag - NUM_BAG_SLOTS)
 	end
@@ -623,8 +837,11 @@ local function FilterByBag(slotData)
 	end
 end
 
-local MISCELLANEOUS = GetItemClassInfo(LE_ITEM_CLASS_MISCELLANEOUS)
+local MISCELLANEOUS = GetItemClassInfo(_G.Enum.ItemClass.Miscellaneous)
 local FREE_SPACE = L["Free space"]
+-- TODO(lobato): Label the Reagent freespace.
+local FREE_SPACE_REAGENT = L["Reagent Free space"]
+
 function containerProto:FilterSlot(slotData)
 	if self.BagSlotPanel:IsShown() then
 		return FilterByBag(slotData)
@@ -684,7 +901,6 @@ function containerProto:DispatchItem(slotData, fullUpdate)
 		self.ToSortSection:AddItemButton(slotId, button)
 		return
 	end
-
 	local section = self:GetSection(sectionName, category or sectionName)
 	section:AddItemButton(slotId, button)
 end
@@ -706,13 +922,14 @@ function containerProto:RemoveSlot(slotId)
 end
 
 function containerProto:UpdateButtons()
-	if self.forceLayout then
+	if addon.atBank and self.forceLayout then
 		return self:FullUpdate()
-	elseif not self:HasContentChanged() then
+	end
+
+	if not self:HasContentChanged() then
 		return
 	end
 	self:Debug('UpdateButtons')
-
 	local added, removed, changed = self.added, self.removed, self.changed
 	self:SendMessage('AdiBags_PreContentUpdate', self, added, removed, changed)
 
@@ -801,6 +1018,7 @@ function containerProto:ResizeToSortSection(forceLayout)
 	end
 	local width = max(self.Content:GetWidth(), self.minWidth or 0)
 	local numCols = floor((width + ITEM_SPACING) / (ITEM_SIZE + ITEM_SPACING))
+  if numCols == 0 then numCols = 1 end
 	local resized = section:SetSizeInSlots(numCols, ceil(section.count / numCols))
 	section:Show()
 	if forceLayout or resized or not section:IsShown() then
@@ -810,7 +1028,6 @@ end
 
 function containerProto:RedispatchAllItems()
 	self:Debug('RedispatchAllItems')
-
 	self:SendMessage('AdiBags_PreContentUpdate', self, self.added, self.removed, self.changed)
 
 	local content = self.content
@@ -877,7 +1094,7 @@ function containerProto:PrepareSections(columnWidth, sections)
 end
 
 local function FindFittingSection(maxWidth, sections)
-	local bestScore, bestIndex = math.huge
+	local bestScore, bestIndex = math.huge, nil
 	for index, section in ipairs(sections) do
 		local wasted = maxWidth - section:GetWidth()
 		if wasted >= 0 and wasted < bestScore then
@@ -897,24 +1114,33 @@ local COLUMN_SPACING = ceil((ITEM_SIZE + ITEM_SPACING) / 2)
 local ROW_SPACING = ITEM_SPACING*2
 local SECTION_SPACING = COLUMN_SPACING / 2
 
+---@return number, number
 function containerProto:LayoutSections(maxHeight, columnWidth, minWidth, sections)
+	if addon.db.profile.gridLayout then
+		self.Content:Update()
+		return 0, 0
+	end
 	self:Debug('LayoutSections', maxHeight, columnWidth, minWidth)
 	local heights, widths, rows = { 0 }, {}, {}
 	local columnPixelWidth = (ITEM_SIZE + ITEM_SPACING) * columnWidth - ITEM_SPACING + SECTION_SPACING
 	local getSection = addon.db.profile.compactLayout and FindFittingSection or GetNextSection
 
-	local numRows, x, y, rowHeight, maxSectionHeight, previous = 0, 0, 0, 0, 0
+	local numRows, x, y, rowHeight, maxSectionHeight, previous = 0, 0, 0, 0, 0, nil
 	while next(sections) do
 		local section
 		if x > 0 then
 			section = getSection(columnPixelWidth - x, sections)
 			if section and previous then
-				section:SetPoint('TOPLEFT', previous, 'TOPRIGHT', SECTION_SPACING, 0)
+				-- Quick hack -- sometimes the same section is inserted twice for unknown reasons.
+				if section ~= previous then
+					section:SetPoint('TOPLEFT', previous, 'TOPRIGHT', SECTION_SPACING, 0)
+				end
 			else
 				x = 0
 				y = y + rowHeight + ROW_SPACING
 			end
 		end
+
 		if x == 0 then
 			section = tremove(sections, 1)
 			rowHeight = section:GetHeight()
@@ -925,11 +1151,14 @@ function containerProto:LayoutSections(maxHeight, columnWidth, minWidth, section
 				section:SetPoint('TOPLEFT', rows[numRows-1], 'BOTTOMLEFT', 0, -ROW_SPACING)
 			end
 		end
-		x = x + section:GetWidth() + SECTION_SPACING
-		widths[numRows] = x - SECTION_SPACING
-		previous = section
-		maxSectionHeight = max(maxSectionHeight, section:GetHeight())
-		rowHeight = max(rowHeight, section:GetHeight())
+
+		if section ~= previous then
+			x = x + section:GetWidth() + SECTION_SPACING
+			widths[numRows] = x - SECTION_SPACING
+			previous = section
+			maxSectionHeight = max(maxSectionHeight, section:GetHeight())
+			rowHeight = max(rowHeight, section:GetHeight())
+		end
 	end
 
 	local totalHeight = y + rowHeight
@@ -950,7 +1179,7 @@ function containerProto:LayoutSections(maxHeight, columnWidth, minWidth, section
 		contentHeight = max(contentHeight, heights[row] - yOffset)
 		x = x + thisColumnWidth + COLUMN_SPACING
 	end
-
+	
 	return x - COLUMN_SPACING, contentHeight - ITEM_SPACING
 end
 
@@ -960,6 +1189,10 @@ function containerProto:FullUpdate()
 		self.forceLayout = true
 		return
 	end
+	if addon.db.profile.gridLayout then
+		self.Content:DeferUpdate()
+	end
+
 	self.forceLayout = false
 	self:Debug('Do FullUpdate')
 
@@ -972,17 +1205,26 @@ function containerProto:FullUpdate()
 	local sections = {}
 
 	local maxSectionHeight = self:PrepareSections(columnWidth, sections)
-
+	if addon.db.profile.gridLayout and self.firstLoad then
+		addon.db.profile.gridData = addon.db.profile.gridData or {}
+		self.Content:SetLayout(addon.db.profile.gridData[self.name])
+	end
 	if #sections == 0 then
 		self.Content:SetSize(self.minWidth, 0.5)
 	else
 		local uiScale, uiWidth, uiHeight = UIParent:GetEffectiveScale(), UIParent:GetSize()
 		local selfScale = self:GetEffectiveScale()
 		local maxHeight = max(maxSectionHeight, settings.maxHeight * uiHeight * uiScale / selfScale - (ITEM_SIZE + ITEM_SPACING + HEADER_SIZE))
-
 		local contentWidth, contentHeight = self:LayoutSections(maxHeight, columnWidth, self.minWidth, sections)
-		self.Content:SetSize(contentWidth, contentHeight)
+		if not addon.db.profile.gridLayout then
+			self.Content:SetSize(contentWidth, contentHeight)
+		end
+		--self.Content:SetSize(contentWidth, contentHeight)
 	end
 
 	self:ResizeToSortSection(true)
+	if addon.db.profile.gridLayout then
+		self.Content:DoUpdate()
+	end
+	self.firstLoad = false
 end

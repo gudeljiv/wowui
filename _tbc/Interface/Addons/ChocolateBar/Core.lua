@@ -6,9 +6,10 @@ local select, strjoin, CreateFrame = select, strjoin, CreateFrame
 
 local _, _, _, tocversion = GetBuildInfo()
 
-local addonVersion = GetAddOnMetadata("ChocolateBar", "Version")
+local addonVersion = C_AddOns.GetAddOnMetadata("ChocolateBar", "Version")
 
-ChocolateBar.Jostle = {}
+ChocolateBar.JostleClassic = {}
+ChocolateBar.JostleEditMode = {}
 ChocolateBar.Bar = {}
 ChocolateBar.ChocolatePiece = {}
 ChocolateBar.Drag = {}
@@ -27,7 +28,7 @@ local db --reference to ChocolateBar.db.profile
 --------
 local function debug(...)
 	if ChocolateBar.db and ChocolateBar.db.char.debug then
-	 	local s = "ChocolateBar debug:"
+	 	local s = "CB:"
 		for i=1,select("#", ...) do
 			local x = select(i, ...)
 			s = strjoin(" ",s,tostring(x))
@@ -57,7 +58,10 @@ local defaults = {
 			edgeSize = 8,
 			barInset = 3,
 		},
-		moduleOptions = {
+		moduleSettings = {
+			['*'] = {
+				enabled = false,
+			}
 		},
 		barSettings = {
 			['*'] = {
@@ -79,12 +83,8 @@ local defaults = {
 	}
 }
 
-function ChocolateBar:IsRetail()
- return WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
-end
-
-function ChocolateBar:IsClassic()
- return WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
+function ChocolateBar:WoWHasEditMode()
+	return LE_EXPANSION_LEVEL_CURRENT >= LE_EXPANSION_DRAGONFLIGHT
 end
 
 --------
@@ -117,7 +117,7 @@ function ChocolateBar:OnInitialize()
 	self:RegisterEvent("PLAYER_REGEN_DISABLED","OnEnterCombat")
 	self:RegisterEvent("PLAYER_REGEN_ENABLED","OnLeaveCombat")
 	self:RegisterEvent("PLAYER_ENTERING_WORLD","OnEnterWorld")
-	if ChocolateBar:IsRetail() then
+	if _G.LE_EXPANSION_LEVEL_CURRENT >= _G.LE_EXPANSION_MISTS_OF_PANDARIA then
 		self:RegisterEvent("PET_BATTLE_OPENING_START","OnPetBattleOpen")
 		self:RegisterEvent("PET_BATTLE_CLOSE","OnPetBattleOver")
 	end
@@ -126,8 +126,6 @@ function ChocolateBar:OnInitialize()
 
 	if self[addonName] then self[addonName](self) end
 	end)
-
-	--self:ShowUpdatePanel()
 
 	--fix frame strata for 8.0
 	if not self.db.profile.fixedStrata then
@@ -142,14 +140,8 @@ function ChocolateBar:OnInitialize()
 	end
 	self:AnchorBars()
 
-	for name, module in pairs(self.modules) do
-		moduleDB = self.db.profile.moduleOptions[name] or {}
-		self.db.profile.moduleOptions[name] = moduleDB
-		if module.OnInitialize then module:OnInitialize(moduleDB) end
-	end
-
 	ChocolateBar:RegisterOptions(db, chocolateBars, self.modules)
-	--_G.InterfaceOptions_AddCategory(self:CreateOptionPanel());
+	ChocolateBar:EnableModules()
 end
 
 function ChocolateBar:OnEnable()
@@ -169,12 +161,93 @@ function ChocolateBar:OnDatabaseShutdown()
 	ChocolateBarDB.addonVersion = addonVersion
 end
 
+function ChocolateBar:EnableModules()
+	-- itaret modules list and call each enable fuction
+	for name, module in pairs(ChocolateBar.modules) do
+		if db.moduleSettings[name].enabled then
+			ChocolateBar:EnableModule(name)
+		end
+	end
+end
 
-function ChocolateBar:NewModule(name, moduleDefaults, options, optionsKey)
+function ChocolateBar:EnableModule(name)
+	ChocolateBar.modules[name]:EnableModule()	
+	
+	local subModuleOptions = ChocolateBar:GetAceOptions().args.moduleOptions.args[name].args		
+	subModuleOptions.Options = ChocolateBar.modules[name].optionsExtended
+
+	-- in case the module was enabled in this seesion before but was disabled we need to enable it again
+	local obj = broker:GetDataObjectByName(name)
+	if obj then 
+		ChocolateBar:EnableDataObject(name, obj)
+	end
+end
+
+function ChocolateBar:DisableModule(name)
+	ChocolateBar.modules[name]:DisableModule()
+	ChocolateBar:DisableDataObject(name)
+	local subModuleOptions = ChocolateBar:GetAceOptions().args.moduleOptions.args[name].args
+	subModuleOptions.Options = {}
+end
+
+function ChocolateBar:GetModule(name)
+	local module = ChocolateBar.modules[name]
+	if not module then
+		debug("Invalide Module:", name)
+	end
+	return module
+end
+
+local function GetModuleEnabled(info)
+	local name = info[#info-1]
+	return ChocolateBar.db.profile.moduleSettings[name].enabled
+end
+
+local function SetModuleEnabled(info, value)
+	local name = info[#info-1]
+	debug("SetModuleEnabled", name)
+	ChocolateBar.db.profile.moduleSettings[name].enabled = value
+	
+	if value then
+		ChocolateBar:EnableModule(name)
+	else
+		ChocolateBar:DisableModule(name)
+	end
+end
+
+
+function ChocolateBar:NewModule(name, values)
+	debug("NewModule Name:", name)
 	local module = self.modules[name] or {}
-	module.default = default
-	module.options = options
-	defaults.profile.moduleOptions[name] = moduleDefaults
+	module.defaults = values.moduleDefaults
+	
+	local moduleName = name
+	local baseOptions = {
+		inline = true,
+		name=moduleName,
+		type="group",
+		order = 2,
+		args={
+			label = {
+				order = 1,
+				type = "description",
+				name = values.description,
+			},
+			enabled = {
+				type = 'toggle',
+				order = 1,
+				name = L["Enabled"],
+				desc = "Toggle enable/disable this Module.",
+				get = GetModuleEnabled,
+				set = SetModuleEnabled,
+			},
+		},
+	}
+	
+	module.options = baseOptions
+	module.optionsExtended = values.options
+	module.name = moduleName
+	defaults.profile.moduleSettings[name] = {}
 	self.modules[name] = module
 	return module
 end
@@ -193,36 +266,6 @@ function ChocolateBar:Blizzard_OrderHallUI()
 	end
 end
 
-function ChocolateBar:ShowUpdatePanel()
-		--"ChocolateBar Update"
-		--"This version of ChocolateBar has a new options for:"
-		--
-		--I like the new options,
-		local widgetAPI = LibStub("AceGUI-3.0");
-		local container = widgetAPI:Create("Frame");
-		container:SetTitle("ChocolateBar Update");
-		--container:SetFullWidth(true);
-		--container:SetLayout("Fill");
-
-		--local heading = widgetAPI:Create("Heading");
-		--container:AddChild(heading);
-		--heading:SetText("This version of ChocolateBar has a new options for:");
-
-
-		local input = widgetAPI:Create("EditBox");
-		container:AddChild(input);
-		input:SetLabel("Enter Name");
-		input:SetMaxLetters(25);
-		--input:OnEnterPressed = function(text)
-		 --  print(text);
-		--end
-
-		local input2 = widgetAPI:Create("EditBox");
-		container:AddChild(input2);
-		input2:SetLabel("Enter Name");
-		input2:SetMaxLetters(25);
-end
-
 function ChocolateBar:UpdateJostle()
 	for name, bar in pairs(chocolateBars) do
 		bar:UpdateJostle(db)
@@ -230,7 +273,8 @@ function ChocolateBar:UpdateJostle()
 end
 
 function ChocolateBar:isNewInstall()
-	return ChocolateBarDB.addonVersion < GetAddOnMetadata("ChocolateBar", "Version") and true or false
+	local lastversion = ChocolateBarDB.addonVersion or ""
+	return lastversion < C_AddOns.GetAddOnMetadata("ChocolateBar", "Version") and true or false
 end
 
 function ChocolateBar:ToggleOrderHallCommandBar()
@@ -321,6 +365,7 @@ end
 -- LDB callbacks
 --------
 function ChocolateBar:LibDataBroker_DataObjectCreated(event, name, obj, noupdate)
+	--debug("LibDataBroker_DataObjectCreated", name)
 	local t = obj.type
 
 	if t == "data source" or t == "launcher" then
@@ -330,6 +375,7 @@ function ChocolateBar:LibDataBroker_DataObjectCreated(event, name, obj, noupdate
 		end
 
 		if db.objSettings[name].enabled then
+			--debug("EnableDataObject", name)
 			self:EnableDataObject(name, obj, noupdate)
 		end
 	else
@@ -374,10 +420,11 @@ function ChocolateBar:EnableDataObject(name, obj, noupdate)
 		end
 	end
 	obj.name = name
-
-	local choco = Chocolate:New(name, obj, settings, db)
+	
+	local choco = chocolateObjects[name] or Chocolate:New(name, obj, settings, db)
 	chocolateObjects[name] = choco
 
+	choco:Show()
 
 	local bar = chocolateBars[barName]
 	if bar then
@@ -405,6 +452,7 @@ end
 function ChocolateBar:AttributeChanged(event, name, key, value)
 	local settings = db.objSettings[name]
 	if not settings.enabled then
+		debug("not settings.enabled")
 		return
 	end
 	local choco = chocolateObjects[name]
@@ -583,7 +631,7 @@ local function createPointer()
 	pointer:SetFrameLevel(20)
 	pointer:SetWidth(15)
 
-	local arrow = pointer:CreateTexture(nil, "DIALOG")
+	local arrow = pointer:CreateTexture(nil, "BACKGROUND")
 	arrow:SetPoint("CENTER",pointer,"LEFT", 0, 0)
 	arrow:SetTexture("Interface\\AddOns\\ChocolateBar\\pics\\pointer")
 	return pointer
@@ -609,4 +657,5 @@ end
 
 function ChocolateBar:UpdateDB(data)
 	db = data
+	Chocolate:UpdateDB(db)
 end

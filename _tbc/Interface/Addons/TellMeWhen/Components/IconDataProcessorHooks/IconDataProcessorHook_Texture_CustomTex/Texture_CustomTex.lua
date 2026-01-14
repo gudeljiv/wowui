@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -41,7 +41,7 @@ end)
 --  varType: item
 -----------------------
 local function UpdateTexture(icon)
-	local CustomTex = icon.CustomTex:trim()
+	local CustomTex = icon.CustomTex and icon.CustomTex:trim() or ""
 	icon.CustomTex_OverrideTex = TMW.COMMON.Textures:EvaluateTexturePath(CustomTex, UpdateTexture, icon)
 	
 	-- setting it nil causes the original data processor and the hook to be ran,

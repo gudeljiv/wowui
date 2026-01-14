@@ -1,10 +1,12 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, OptionsPrivate = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 local L = WeakAuras.L;
 
 do
   local function subCreateOptions(parentData, data, index, subIndex)
-      local order = 9
       local options = {
         __title = L["Background"],
         __order = 1,
@@ -32,7 +34,6 @@ end
 
 do
   local function subCreateOptions(parentData, data, index, subIndex)
-    local order = 9
     local options = {
       __title = L["Foreground"],
       __order = 1,

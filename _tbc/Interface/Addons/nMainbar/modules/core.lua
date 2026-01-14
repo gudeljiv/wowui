@@ -7,3 +7,6 @@ if (cfg.MainMenuBar.hideGryphons) then
 end
 
 MainMenuBar:SetScale(cfg.MainMenuBar.scale)
+
+
+MainMenuBarPerformanceBarFrame:Hide()

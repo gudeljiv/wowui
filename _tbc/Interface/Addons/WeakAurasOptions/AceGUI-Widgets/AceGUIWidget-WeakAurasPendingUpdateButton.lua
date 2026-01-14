@@ -1,14 +1,15 @@
-if not WeakAuras.IsCorrectVersion() then
-  return
-end
-
-local AddonName, OptionsPrivate = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 local L = WeakAuras.L
 
 local pairs, next, type, unpack = pairs, next, type, unpack
 
-local Type, Version = "WeakAurasPendingUpdateButton", 1
+local Type, Version = "WeakAurasPendingUpdateButton", 6
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then
   return
@@ -59,11 +60,39 @@ local methods = {
     self.linkedChildren = {}
 
     function self.callbacks.OnUpdateClick()
-      WeakAuras.Import(self.companionData.encoded)
+      local linkedAuras = {}
+      for auraId in pairs(self.linkedAuras) do
+        if not self.linkedChildren[auraId] then
+          tinsert(linkedAuras, auraId)
+        end
+      end
+
+      WeakAuras.Import(self.companionData.encoded, nil, nil, linkedAuras)
+    end
+
+    function self.callbacks.OnFollowLinkClick()
+      self.menu = {
+        { text = L["Linked Auras"], isTitle = true }
+      }
+      for auraId in pairs(self.linkedAuras) do
+        if not self.linkedChildren[auraId] then
+          tinsert(
+            self.menu,
+            {
+              text = auraId,
+              notCheckable = true,
+              func = function() WeakAuras.PickDisplay(auraId, "information") end
+            }
+          )
+        end
+      end
+      LibDD:EasyMenu(self.menu, WeakAuras_DropDownMenu, self.followLink, 0, 0, "MENU", 5)
     end
 
     self:SetTitle(self.companionData.name)
+    self.frame:SetScript("OnClick", self.callbacks.OnClickNormal)
     self.update:SetScript("OnClick", self.callbacks.OnUpdateClick)
+    self.followLink:SetScript("OnClick", self.callbacks.OnFollowLinkClick)
     local data = OptionsPrivate.Private.StringToTable(self.companionData.encoded, true)
     WeakAuras.PreAdd(data.d)
     self.data = data.d
@@ -73,50 +102,11 @@ local methods = {
 
     self.menu = {}
 
-    self.frame:SetScript("OnMouseUp", function()
-      Hide_Tooltip()
-      self:SetMenu()
-      EasyMenu(self.menu, WeakAuras_DropDownMenu, self.frame, 0, 0, "MENU")
-    end)
-
     self.frame:SetScript("OnEnter", function()
       self:SetNormalTooltip()
       Show_Long_Tooltip(self.frame, self.frame.description)
     end)
     self.frame:SetScript("OnLeave", Hide_Tooltip)
-  end,
-  ["SetMenu"] = function(self)
-    wipe(self.menu)
-    for auraId in pairs(self.linkedAuras) do
-      if not self.linkedChildren[auraId] then
-        tinsert(self.menu,
-          {
-            text = auraId,
-            notCheckable = true,
-            hasArrow = true,
-            menuList = {
-              {
-                text = L["Update"],
-                notCheckable = true,
-                func = function()
-                  local auraData = WeakAuras.GetData(auraId)
-                  if auraData then
-                    WeakAuras.Import(self.companionData.encoded, auraData)
-                  end
-                end
-              },
-              {
-                text = L["Ignore updates"],
-                notCheckable = true,
-                func = function()
-                  StaticPopup_Show("WEAKAURAS_CONFIRM_IGNORE_UPDATES", "", "", auraId)
-                end
-              }
-            }
-          }
-        )
-      end
-    end
   end,
   ["SetLogo"] = function(self, path)
     self.frame.updateLogo.tex:SetTexture(path)
@@ -194,9 +184,6 @@ local methods = {
     self.titletext = title
     self.title:SetText(title)
   end,
-  ["SetClick"] = function(self, func)
-    self.frame:SetScript("OnClick", func)
-  end,
   ["ResetLinkedAuras"] = function(self)
     wipe(self.linkedAuras)
     wipe(self.linkedChildren)
@@ -216,7 +203,7 @@ local methods = {
       self:ReleaseThumbnail()
       self:AcquireThumbnail()
     else
-      local option = WeakAuras.regionOptions[self.thumbnailType]
+      local option = OptionsPrivate.Private.regionOptions[self.thumbnailType]
       if option and option.modifyThumbnail then
         option.modifyThumbnail(self.frame, self.thumbnail, self.data)
       end
@@ -230,7 +217,7 @@ local methods = {
 
     if self.thumbnail then
       local regionType = self.thumbnailType
-      local option = WeakAuras.regionOptions[regionType]
+      local option = OptionsPrivate.Private.regionOptions[regionType]
       if self.thumbnail.icon then
         self.thumbnail.icon:SetDesaturated(false)
       end
@@ -253,7 +240,7 @@ local methods = {
     local regionType = self.data.regionType
     self.thumbnailType = regionType
 
-    local option = WeakAuras.regionOptions[regionType]
+    local option = OptionsPrivate.Private.regionOptions[regionType]
     if option and option.acquireThumbnail then
       self.thumbnail = option.acquireThumbnail(button, self.data)
       if self.thumbnail.icon then
@@ -289,7 +276,7 @@ Constructor
 
 local function Constructor()
   local name = "WeakAurasPendingUpdateButton" .. AceGUI:GetNextWidgetNum(Type)
-  local button = CreateFrame("BUTTON", name, UIParent)
+  local button = CreateFrame("Button", name, UIParent)
   button:SetHeight(32)
   button:SetWidth(1000)
   button.data = {}
@@ -310,17 +297,23 @@ local function Constructor()
   icon:SetHeight(32)
   icon:SetPoint("LEFT", button, "LEFT")
 
-  local title = button:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-  button.title = title
-  title:SetHeight(14)
-  title:SetJustifyH("LEFT")
-  title:SetPoint("TOPLEFT", icon, "TOPRIGHT", 2, 0)
-  title:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT")
-  title:SetVertexColor(0.6, 0.6, 0.6)
+  -- follow link button
+  local followLink = CreateFrame("Button", nil, button)
+  button.followLink = followLink
+  followLink:SetNormalAtlas("loottoast-arrow-green", true)
+  followLink:GetNormalTexture():SetRotation(math.rad(-90))
+  followLink:SetSize(24, 24)
+  followLink:SetPoint("RIGHT", button, "RIGHT", -2, 0)
+  followLink:SetScript("OnEnter", function()
+    GameTooltip:SetOwner(followLink, "ANCHOR_NONE")
+    GameTooltip:SetPoint("BOTTOMLEFT", followLink, "TOPRIGHT")
+    GameTooltip:ClearLines()
+    GameTooltip:AddLine(L["Linked Auras"])
+    GameTooltip:Show()
+  end)
+  followLink:SetScript("OnLeave", Hide_Tooltip)
 
-  button.description = {}
-
-  local update = CreateFrame("BUTTON", nil, button)
+  local update = CreateFrame("Button", nil, button)
   button.update = update
   update.disabled = true
   update.func = function()
@@ -329,17 +322,19 @@ local function Constructor()
   update:Disable()
   update:SetWidth(24)
   update:SetHeight(24)
-  update:SetPoint("RIGHT", button, "RIGHT", -2, 0)
+  update:SetPoint("RIGHT", followLink, "LEFT", -2, 0)
 
   -- Add logo
   local updateLogo = CreateFrame("Frame", nil, button)
   button.updateLogo = updateLogo
-  local tex = updateLogo:CreateTexture(nil, "OVERLAY")
+  local tex = updateLogo:CreateTexture()
   tex:SetTexture([[Interface\AddOns\WeakAuras\Media\Textures\wagoupdate_logo.tga]])
   tex:SetAllPoints()
   updateLogo.tex = tex
   updateLogo:SetSize(24, 24)
   updateLogo:SetPoint("CENTER", update)
+  updateLogo:SetFrameStrata(update:GetFrameStrata())
+  updateLogo:SetFrameLevel(update:GetFrameLevel()-1)
 
   -- Animation On Hover
   local animGroup = update:CreateAnimationGroup()
@@ -356,10 +351,27 @@ local function Constructor()
   end)
   update:SetScript("OnEnter", function()
     animGroup:Play()
+    GameTooltip:SetOwner(update, "ANCHOR_NONE")
+    GameTooltip:SetPoint("BOTTOMLEFT", update, "TOPRIGHT")
+    GameTooltip:ClearLines()
+    GameTooltip:AddLine(L["Update"])
+    GameTooltip:Show()
   end)
+  update:SetScript("OnLeave", Hide_Tooltip)
   update:Hide()
   updateLogo:Hide()
 
+  local title = button:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  button.title = title
+  title:SetHeight(14)
+  title:SetJustifyH("LEFT")
+  title:SetPoint("TOPLEFT", icon, "TOPRIGHT", 2, 0)
+  title:SetPoint("BOTTOMLEFT", icon, "BOTTOMRIGHT", 2, 0)
+  title:SetPoint("RIGHT", updateLogo, "LEFT", -2, 0)
+  title:SetVertexColor(0.6, 0.6, 0.6)
+
+  button.description = {}
+  --- @type table<string, any>
   local widget = {
     frame = button,
     title = title,
@@ -367,6 +379,7 @@ local function Constructor()
     background = background,
     update = update,
     updateLogo = updateLogo,
+    followLink = followLink,
     type = Type,
   }
 

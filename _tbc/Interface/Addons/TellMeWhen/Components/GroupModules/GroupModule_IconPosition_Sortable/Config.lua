@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -279,19 +279,26 @@ TMW:NewClass("Config_IconSortFrame", "Button", "Config_Frame") {
 		local parent = self:GetParent()
 		
 		parent.draggingFrame = nil
-
-		local SortPriorities = self:GetSettingTable()
-		local startDeleting = false
-		for i, data in ipairs(SortPriorities) do
-			if data.Method == "id" then
-				startDeleting = true
-			elseif startDeleting then
-				SortPriorities[i] = nil
+		
+			local SortPriorities = self:GetSettingTable()
+			local startDeleting = false
+			for i, data in ipairs(SortPriorities) do
+				if data.Method == "id" then
+					startDeleting = true
+				elseif startDeleting then
+					SortPriorities[i] = nil
+				end
 			end
-		end
-
-		self:OnSettingSaved()
-		IconPosition_Sortable:LoadConfig()
+			
+		-- Delay the call to OnSettingSaved, since doing that ultimately triggers `IE:PositionPanels`,
+		-- which will hide (and momentarily re-show) the parent config panel.
+		-- As of some recent WoW patch (11.0? 11.0.5? 11.0.7?), hiding a frame while in its OnDragStop
+		-- will trigger OnDragStop AGAIN (synchronously, so we end up with recursion inside IE:PositionPanels),
+		-- which then causes the error in https://github.com/ascott18/TellMeWhen/issues/2258
+	    C_Timer.After(0, function()
+			self:OnSettingSaved()
+			IconPosition_Sortable:LoadConfig()
+	    end)
 	end,
 
 	OnUpdate = function(self)
@@ -316,15 +323,24 @@ TMW:NewClass("Config_IconSortFrame", "Button", "Config_Frame") {
 			local data = IconPosition_Sortable.Sorters[settings.Method]
 
 			local title = L["UIPANEL_GROUPSORT_" .. settings.Method]
-			self.Name:SetText(title)
 
 			if data then
 				self.Order:SetText(data[settings.Order] or "<UNKNOWN ORDER>")
+				
+				if data.maybeSecret and TMW.clientHasSecrets then
+					title = title .. " " .. TMW:GetRestrictedTString()
+				end
 			else
 				self.Order:SetText("")
 			end
 
-			self:SetTooltip(title, L["UIPANEL_GROUPSORT_" .. settings.Method .. "_DESC"] .. "\r\n\r\n" .. L["UIPANEL_GROUPSORT_ALLDESC"])
+			self.Name:SetText(title)
+			self:SetTooltip(title, 
+				L["UIPANEL_GROUPSORT_" .. settings.Method .. "_DESC"] .. 
+				"\r\n\r\n" .. 
+				L["UIPANEL_GROUPSORT_ALLDESC"] .. 
+				(not data.maybeSecret and "" or "\n\n" .. L["UIPANEL_SECRETS_DISALLOWED_DESC"])
+			)
 		end
 	end,
 }
@@ -394,8 +410,12 @@ function IconPosition_Sortable:AddDropdown()
 			local info = TMW.DD:CreateInfo()
 
 			info.text = L["UIPANEL_GROUPSORT_" .. identifier]
-			info.tooltipTitle = info.text
 			info.tooltipText = L["UIPANEL_GROUPSORT_" .. identifier .. "_DESC"]
+			if data and data.maybeSecret and TMW.clientHasSecrets then
+				info.text = info.text .. " " .. TMW:GetRestrictedTString()
+				info.tooltipText = info.tooltipText .. "\n\n" .. L["UIPANEL_SECRETS_DISALLOWED_DESC"]
+			end
+			info.tooltipTitle = info.text
 			info.notCheckable = true
 			info.arg1 = identifier
 			info.arg2 = data

@@ -1,0 +1,2 @@
+
+AucAdvancedStat_iLevelData = nil

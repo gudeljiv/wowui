@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -142,7 +142,7 @@ TMW:RegisterUpgrade(47321, {
 })
 TMW:RegisterUpgrade(47320, {
 	iconEventHandler = function(self, eventSettings)
-		-- these numbers got really screwy with FP errors (shit like 0.8000000119), put then back to what they should be (0.8)
+		-- these numbers got really screwy with FP errors (like 0.8000000119), put then back to what they should be (0.8)
 		eventSettings.Duration 	= eventSettings.Duration  and tonumber(format("%0.1f",	eventSettings.Duration))
 		eventSettings.Magnitude = eventSettings.Magnitude and tonumber(format("%1f",	eventSettings.Magnitude))
 		eventSettings.Period  	= eventSettings.Period    and tonumber(format("%0.1f",	eventSettings.Period))
@@ -482,35 +482,40 @@ TMW:RegisterSelfDestructingCallback("TMW_CLASS_NEW", function(event, class)
 end)
 
 
-TMW:NewClass("EventHandler_WhileConditions", "EventHandler"){
+TMW:NewClass("EventHandler_WhileConditions", "EventHandler", "UpdateTableManager"){
 	supportWCSP = true,
 
 	OnNewInstance_WhileConditions = function(self)
-		self.MapConditionObjectToEventSettings = {}
-		self.EventSettingsToConditionObject = {}
+		self:UpdateTable_Set()
+		self:UpdateTable_CreateIndexedView("ByConditionObject", function(target) return target.ConditionObject end)
+		self:UpdateTable_CreateIndexedView("ByEventSettingsProxy", function(target) return target.eventSettingsProxy end)
+		self:UpdateTable_CreateIndexedView("ByIcon", function(target) return target.icon end)
+		
+		-- Store references to the indexed views as top-level members for efficient access
+		self.ByConditionObject = self:UpdateTable_GetIndexedView("ByConditionObject")
+		self.ByEventSettingsProxy = self:UpdateTable_GetIndexedView("ByEventSettingsProxy")
+		self.ByIcon = self:UpdateTable_GetIndexedView("ByIcon")
+		
 		self.UpdatesQueued = {}
 
 		TMW:RegisterCallback("TMW_ICON_DISABLE", self)
 		TMW:RegisterCallback("TMW_ICON_EVENTS_PROCESSED_EVENT_FOR_USE", self)
 		TMW:RegisterCallback("TMW_ICON_SETUP_POST", self)
+		TMW:RegisterCallback("TMW_ICON_DATA_CHANGED_SHOWN", self)
 	end,
 
 
 	TMW_ICON_DISABLE = function(self, _, icon, soft)
-		for ConditionObject, matches in pairs(self.MapConditionObjectToEventSettings) do
-			for eventSettings, ic in pairs(matches) do
-				if ic == icon then
-					ConditionObject:RequestAutoUpdates(eventSettings, false)
-
-					local eventSettingsProxy = self:Proxy(eventSettings, icon)
-					matches[eventSettingsProxy] = nil
-					self.EventSettingsToConditionObject[eventSettingsProxy] = nil
-				end
+		-- Use the stored indexed view to find all targets for this icon
+		local targets = self.ByIcon[icon]
+		
+		if targets then
+			-- Copy the targets array since we'll be modifying the indexed view during unregistration
+			for _, target in ipairs(TMW.shallowCopy(targets)) do
+				target.ConditionObject:RequestAutoUpdates(target.eventSettingsProxy, false)
+				self:UpdateTable_Unregister(target)
 			end
-
-			if not next(matches) then
-				self.MapConditionObjectToEventSettings[ConditionObject] = nil
-			end
+			
 		end
 	end,
 
@@ -524,7 +529,7 @@ TMW:NewClass("EventHandler_WhileConditions", "EventHandler"){
 		-- If the OnlyShown setting is enabled, add a condition to check that the icon is shown.
 		-- It is possible that the condition set is empty, in which case this will be the only condition.
 		if eventSettings.OnlyShown then
-			local condition = ConditionObjectConstructor:Modify_WrapExistingAndAppendNew()
+			local condition = ConditionObjectConstructor:Modify_WrapExistingAndPrependNew("AND")
 
 			condition.Type = "ICON"
 			condition.Icon = icon:GetGUID()
@@ -534,32 +539,23 @@ TMW:NewClass("EventHandler_WhileConditions", "EventHandler"){
 
 		-- ConditionObject is nil if there were no conditions at all.
 		if ConditionObject then
-			-- We won't request updates manually - let the condition engine take care of updating.
-			ConditionObject:RequestAutoUpdates(eventSettings, true)
+			local eventSettingsProxy = self:Proxy(eventSettings, icon)
 			
-			-- Associate the condition object with the event settings and the icon that the event settings are from.
-			local matches = self.MapConditionObjectToEventSettings[ConditionObject]
-			if not matches then
-				matches = {}
-				self.MapConditionObjectToEventSettings[ConditionObject] = matches
-			end
-			matches[self:Proxy(eventSettings, icon)] = icon
-
-			-- Allow backwards lookups of this, too.
-			self.EventSettingsToConditionObject[self:Proxy(eventSettings, icon)] = ConditionObject
-
+			-- Create a target object and register it
+			local target = {
+				icon = icon,
+				eventSettingsProxy = eventSettingsProxy,
+				ConditionObject = ConditionObject
+			}
 			
+			self:UpdateTable_Register(target)
+
 			-- Listen for changes in condition state so that we can ask
 			-- the event handler to do what it needs to do.
 			TMW:RegisterCallback("TMW_CNDT_OBJ_PASSING_CHANGED", self)
 
-
 			-- DO NOT check the state right here, since animations might be missing required components. 
-			-- just let it happen during the queued update for TMW_ICON_SETUP_POST
-			-- self:CheckState(ConditionObject)
-
-			-- Queue an update during TMW_ICON_SETUP_POST, 
-			-- because animations might be missing required icon components when this is triggered.
+			-- Instead, queue an update during TMW_ICON_SETUP_POST.
 			self.UpdatesQueued[ConditionObject] = true
 		end
 	end,
@@ -569,9 +565,24 @@ TMW:NewClass("EventHandler_WhileConditions", "EventHandler"){
 		-- There should only be one icon worth of ConditionObjects in here,
 		-- since TMW_ICON_SETUP_PRE and TMW_ICON_SETUP_POST are always called in pairs.
 		for ConditionObject in pairs(self.UpdatesQueued) do
+			self:TMW_ICON_DATA_CHANGED_SHOWN(nil, icon, icon.attributes.shown)
 			self:CheckState(ConditionObject)
 		end
 		wipe(self.UpdatesQueued)
+	end,
+
+	TMW_ICON_DATA_CHANGED_SHOWN = function(self, _, icon, shown)
+		-- Use the stored indexed view to find all targets for this icon
+		local targets = self.ByIcon[icon]
+		
+		if targets then
+			for _, target in ipairs(targets) do
+				target.ConditionObject:RequestAutoUpdates(target.eventSettingsProxy, shown)
+				-- Call CheckState to in turn call HandleConditionStateChange
+				-- and propagate the new shown state to the concrete handler.
+				self:CheckState(target.ConditionObject)
+			end
+		end
 	end,
 
 	TMW_CNDT_OBJ_PASSING_CHANGED = function(self, _, ConditionObject, failed)
@@ -579,13 +590,20 @@ TMW:NewClass("EventHandler_WhileConditions", "EventHandler"){
 	end,
 
 	CheckState = function(self, ConditionObject)
-		local matches = self.MapConditionObjectToEventSettings[ConditionObject]
+		if not TMW.Locked then
+			return
+		end
+		
+		-- Use the stored indexed view to find all targets that use this ConditionObject
+		local targets = self.ByConditionObject[ConditionObject]
 
-		if TMW.Locked and matches then
-			-- If TMW is locked, and there are eventSettings that are using this ConditionObject,
-			-- then have the event handler do what needs to be done for all of the matching eventSettings.
-
-			self:HandleConditionStateChange(matches, ConditionObject.Failed)
+		if targets then
+			for _, target in ipairs(targets) do
+				local icon = target.icon
+				-- If there are targets that are using this ConditionObject,
+				-- then have the event handler do what needs to be done for all matching targets.
+				self:HandleConditionStateChange(icon, target.eventSettingsProxy, ConditionObject.Failed or not icon.attributes.shown)
+			end
 		end
 	end,
 }
@@ -632,33 +650,29 @@ TMW:NewClass("EventHandler_WhileConditions_Repetitive", "EventHandler_WhileCondi
 		end
 	end,
 
-	HandleConditionStateChange = function(self, eventSettingsList, failed)
+	HandleConditionStateChange = function(self, icon, eventSettings, failed)
 		if not failed then
 			-- Conditions are passing.
-			-- Start/resume timers for all the eventSettings that are attached to the conditions.
-			for eventSettings, icon in pairs(eventSettingsList) do
-				local timerTable = self.RunningTimers[eventSettings]
+			-- Start/resume timers.
+			local timerTable = self.RunningTimers[eventSettings]
 
-				if not timerTable then
-					-- Create a timer if there wasn't already one for the eventSettings.
-					self.RunningTimers[eventSettings] = {icon = icon, nextRun = TMW.time}
-				else
-					-- Resume the timer if it was previously halted due to failing conditions.
-					timerTable.halted = false
+			if not timerTable then
+				-- Create a timer if there wasn't already one for the eventSettings.
+				self.RunningTimers[eventSettings] = {icon = icon, nextRun = TMW.time}
+			else
+				-- Resume the timer if it was previously halted due to failing conditions.
+				timerTable.halted = false
 
-					-- Fast-foward the timer to right now, so that it triggers immediately.
-					if timerTable.nextRun < TMW.time then
-						timerTable.nextRun = TMW.time
-					end
+				-- Fast-foward the timer to right now, so that it triggers immediately.
+				if timerTable.nextRun < TMW.time then
+					timerTable.nextRun = TMW.time
 				end
 			end
 		else
 			-- Conditions are failing.
-			-- Halt all the timers for the eventSettings which rely on these conditions.
-			for eventSettings, icon in pairs(eventSettingsList) do
-				if self.RunningTimers[eventSettings] then
-					self.RunningTimers[eventSettings].halted = true
-				end
+			-- Halt the timers for the eventSettings.
+			if self.RunningTimers[eventSettings] then
+				self.RunningTimers[eventSettings].halted = true
 			end
 		end
 	end,

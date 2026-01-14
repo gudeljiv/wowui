@@ -10,7 +10,7 @@ local abs = _G.abs
 local IS_WOW_PROJECT_MAINLINE = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_NOT_MAINLINE = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_CLASSIC_ERA = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
-local IS_WOW_PROJECT_CLASSIC_TBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
+local IS_WOW_PROJECT_CLASSIC_WRATH = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_WRATH_OF_THE_LICH_KING and ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING)
 
 local PlayerClass = select(2, UnitClass("player"))
 
@@ -29,6 +29,8 @@ local CONST_SPECID_WARLOCK_DESTRUCTION = 267
 local CONST_SPECID_DK_UNHOLY = 252
 local CONST_SPECID_DK_FROST = 251
 local CONST_SPECID_DK_BLOOD = 250
+local CONST_SPECID_EVOKER_DEVASTATION = 1467
+local CONST_SPECID_EVOKER_PRESERVATION = 1468
 
 local CONST_NUM_RESOURCES_WIDGETS = PlayerClass == "DEATHKNIGHT" and 6 or 10
 local CONST_WIDGET_WIDTH = 20
@@ -97,6 +99,7 @@ local SPELL_POWER_OBSOLETE2 = SPELL_POWER_OBSOLETE2 or (PowerEnum and PowerEnum.
 local SPELL_POWER_ARCANE_CHARGES = SPELL_POWER_ARCANE_CHARGES or (PowerEnum and PowerEnum.ArcaneCharges) or 16
 local SPELL_POWER_FURY = SPELL_POWER_FURY or (PowerEnum and PowerEnum.Fury) or 17
 local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 18
+local SPELL_POWER_ESSENCE = SPELL_POWER_ESSENCE or (PowerEnum and PowerEnum.Essence) or 19
 
 local specsWithResource =  {
     [CONST_SPECID_MONK_WINDWALKER] = true,
@@ -114,6 +117,8 @@ local specsWithResource =  {
     [CONST_SPECID_DK_UNHOLY] = true,
     [CONST_SPECID_DK_FROST] = true,
     [CONST_SPECID_DK_BLOOD] = true,
+    [CONST_SPECID_EVOKER_DEVASTATION] = true,
+    [CONST_SPECID_EVOKER_PRESERVATION] = true,
 }
 
 
@@ -130,6 +135,7 @@ local resourceTypes = {
     [SPELL_POWER_RUNES] = true, --dk
     [SPELL_POWER_ARCANE_CHARGES] = true, --mage
     [SPELL_POWER_FURY] = true, --warrior demonhunter dps
+    [SPELL_POWER_ESSENCE] = true, --evoker
 }
 
 local energyTypes = {
@@ -137,6 +143,7 @@ local energyTypes = {
     [SPELL_POWER_RAGE] = true,
     [SPELL_POWER_ENERGY] = true,
     [SPELL_POWER_RUNIC_POWER] = true,
+    [SPELL_POWER_ESSENCE] = true,
 }
 
 local resourcePowerType = {
@@ -151,6 +158,7 @@ local resourcePowerType = {
     [SPELL_POWER_RUNES] = SPELL_POWER_RUNIC_POWER, --dk
     [SPELL_POWER_ARCANE_CHARGES] = SPELL_POWER_MANA, --mage
     [SPELL_POWER_FURY] = SPELL_POWER_RAGE, --warrior
+    [SPELL_POWER_ESSENCE] = SPELL_POWER_MANA, --evoker
 }
 
 -- the power types which update functions should update on
@@ -162,6 +170,7 @@ local classPowerTypes = {
     ["DRUID"] = "COMBO_POINTS",
     ["MAGE"] = "ARCANE_CHARGES",
     ["DEATHKNIGHT"] = "RUNES",
+    ["EVOKER"] = "ESSENCE",
 }
 
 local doesClassUseResource = function(class)
@@ -180,11 +189,13 @@ local powerTypesFilter = {
     ["SOUL_SHARDS"] = true,
     ["ARCANE_CHARGES"] = true,
     ["RUNES"] = true,
+    ["ESSENCE"] = true,
 }
 
 local eventsFilter = {
 	["UNIT_POWER_POINT_CHARGE"] = true,
 	["RUNE_POWER_UPDATE"] = true,
+    ["RUNE_TYPE_UPDATE"] = IS_WOW_PROJECT_NOT_MAINLINE,
 	["UPDATE_SHAPESHIFT_FORM"] = true,
 }
 
@@ -194,6 +205,7 @@ local CONST_ENUMNAME_RUNES = "Runes"
 local CONST_ENUMNAME_ARCANECHARGES = "ArcaneCharges"
 local CONST_ENUMNAME_CHI = "Chi"
 local CONST_ENUMNAME_SOULCHARGES = "SoulShards"
+local CONST_ENUMNAME_ESSENCE = "Essence"
 
 --cache
 local DB_USE_PLATER_RESOURCE_BAR = false
@@ -266,7 +278,7 @@ end
                 end
 
                 --amount of resources the player has now
-                local currentResources = UnitPower("player", Plater.Resources.playerResourceId)
+                local currentResources = PlayerClass == "DEATHKNIGHT" and 6 or UnitPower("player", Plater.Resources.playerResourceId)
 
                 --resources amount got updated?
                 if (currentResources) then
@@ -279,7 +291,7 @@ end
                 end
 
                 --update the resource bar
-                Plater.Resources.UpdateResourceBar(_, resourceBar)
+                Plater.Resources.UpdateResourceBar(nil, resourceBar)
             end
         else
             --player opt-out of using plater resources on this character
@@ -317,6 +329,26 @@ end
         end
 
         return resourceBar
+    end
+    
+    local function updateWotLKDKRuneTextures(resourceBar)
+        if IS_WOW_PROJECT_NOT_MAINLINE then
+            --wrath classic
+            local RUNETYPE_BLOOD = 1
+            local RUNETYPE_FROST = 2
+            local RUNETYPE_UNHOLY = 3
+            local RUNETYPE_DEATH = 4
+            local iconTextures = {}
+            iconTextures[RUNETYPE_BLOOD] = "Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-Blood"
+            iconTextures[RUNETYPE_FROST] = "Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-Frost"
+            iconTextures[RUNETYPE_UNHOLY] = "Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-Unholy"
+            iconTextures[RUNETYPE_DEATH] = "Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-Death"
+            for i =1, #resourceBar.widgets do
+                local runeType = GetRuneType(i)
+                resourceBar.widgets[i].texture:SetTexture(iconTextures[runeType])
+                resourceBar.widgets[i].texture:Show()
+            end
+        end
     end
 
 --> functions for class and specs resources
@@ -391,9 +423,9 @@ end
 
     resourceBarCreateFuncByEnumName[CONST_ENUMNAME_RUNES] = function(mainResourceFrame)
         local resourceWidgetCreationFunc = Plater.Resources.GetCreateResourceWidgetFunctionForSpecId(CONST_SPECID_DK_FROST)
-        local newResourceBar = createResourceBar(mainResourceFrame, "$parentDeathKnightResource", resourceWidgetCreationFunc)
-		mainResourceFrame.widgetWidth = 16
-		mainResourceFrame.widgetHeight = 16
+        mainResourceFrame.widgetWidth = IS_WOW_PROJECT_MAINLINE and 16 or 18--24
+		mainResourceFrame.widgetHeight = IS_WOW_PROJECT_MAINLINE and 16 or 18--24
+        local newResourceBar = createResourceBar(mainResourceFrame, "$parentDeathKnightResource", resourceWidgetCreationFunc, mainResourceFrame.widgetWidth, mainResourceFrame.widgetHeight)
         mainResourceFrame.resourceBars[CONST_SPECID_DK_UNHOLY] = newResourceBar
         mainResourceFrame.resourceBars[CONST_SPECID_DK_FROST] = newResourceBar
         mainResourceFrame.resourceBars[CONST_SPECID_DK_BLOOD] = newResourceBar
@@ -405,9 +437,28 @@ end
 			tinsert(newResourceBar.runeIndexes, i); 
 		end
 		
-        newResourceBar.updateResourceFunc = resourceWidgetsFunctions.OnRunesChanged
+        if IS_WOW_PROJECT_MAINLINE then
+            newResourceBar.updateResourceFunc = resourceWidgetsFunctions.OnRunesChanged
+        else
+            newResourceBar.updateResourceFunc = resourceWidgetsFunctions.OnRunesChangedWotLK
+            updateWotLKDKRuneTextures(newResourceBar)
+        end
         tinsert(mainResourceFrame.allResourceBars, newResourceBar)
         mainResourceFrame.resourceBarsByEnumName[CONST_ENUMNAME_RUNES] = newResourceBar
+        return newResourceBar
+    end
+    
+    resourceBarCreateFuncByEnumName[CONST_ENUMNAME_ESSENCE] = function(mainResourceFrame)
+        local resourceWidgetCreationFunc = Plater.Resources.GetCreateResourceWidgetFunctionForSpecId(CONST_SPECID_EVOKER_DEVASTATION)
+        local newResourceBar = createResourceBar(mainResourceFrame, "$parentEvokerResource", resourceWidgetCreationFunc, 24, 24)
+		mainResourceFrame.widgetWidth = 24
+		mainResourceFrame.widgetHeight = 24
+        mainResourceFrame.resourceBars[CONST_SPECID_EVOKER_DEVASTATION] = newResourceBar
+        mainResourceFrame.resourceBars[CONST_SPECID_EVOKER_PRESERVATION] = newResourceBar
+        newResourceBar.resourceId = SPELL_POWER_ESSEMCE
+        newResourceBar.updateResourceFunc = resourceWidgetsFunctions.OnEssenceChanged
+        tinsert(mainResourceFrame.allResourceBars, newResourceBar)
+        mainResourceFrame.resourceBarsByEnumName[CONST_ENUMNAME_ESSENCE] = newResourceBar
         return newResourceBar
     end
 
@@ -478,8 +529,16 @@ end
         Plater.Resources.playerResourceId = Plater.Resources.GetResourceIdForPlayer()
 
         if (IS_WOW_PROJECT_NOT_MAINLINE) then --classic
-            if (playerClass == "ROGUE") then
+            if (playerClass == "ROGUE" or playerClass == "DRUID") then
                 local classResourceFunc = resourceBarCreateFuncByEnumName[CONST_ENUMNAME_COMBOPOINT]
+                if (classResourceFunc) then
+                    local resourceBar = classResourceFunc(mainResourceFrame)
+					mainResourceFrame.currentResourceBarShown = resourceBar
+					Plater.Resources.UpdateResourceBar(nil, resourceBar)
+                    return resourceBar
+                end
+            elseif (playerClass == "DEATHKNIGHT") then
+                local classResourceFunc = resourceBarCreateFuncByEnumName[CONST_ENUMNAME_RUNES]
                 if (classResourceFunc) then
                     local resourceBar = classResourceFunc(mainResourceFrame)
 					mainResourceFrame.currentResourceBarShown = resourceBar
@@ -550,7 +609,7 @@ end
         mainResourceFrame:RegisterUnitEvent("UNIT_POWER_FREQUENT", "player")
         mainResourceFrame:RegisterUnitEvent("UNIT_MAXPOWER", "player")
 
-        if (IS_WOW_PROJECT_MAINLINE and PlayerClass == "ROGUE") then
+        if (IS_WOW_PROJECT_MAINLINE and (PlayerClass == "ROGUE" or PlayerClass == "EVOKER")) then
             mainResourceFrame:RegisterUnitEvent("UNIT_POWER_POINT_CHARGE", "player")
         end
 
@@ -560,9 +619,13 @@ end
 		
 		if (PlayerClass == "DEATHKNIGHT") then
             mainResourceFrame:RegisterEvent("RUNE_POWER_UPDATE")
+            if IS_WOW_PROJECT_NOT_MAINLINE then
+                mainResourceFrame:RegisterEvent("RUNE_TYPE_UPDATE")
+            end
         end
 
         mainResourceFrame.eventsEnabled = true
+        mainResourceFrame.currentResourceBarShown.updateResourceFunc(mainResourceFrame, mainResourceFrame.currentResourceBarShown, true)
     end
 
     function Plater.Resources.DisableEvents()
@@ -574,7 +637,7 @@ end
         mainResourceFrame:UnregisterEvent("UNIT_POWER_FREQUENT")
         mainResourceFrame:UnregisterEvent("UNIT_MAXPOWER")
 
-        if (IS_WOW_PROJECT_MAINLINE and PlayerClass == "ROGUE") then
+        if (IS_WOW_PROJECT_MAINLINE and (PlayerClass == "ROGUE" or PlayerClass == "EVOKER")) then
             mainResourceFrame:UnregisterEvent("UNIT_POWER_POINT_CHARGE")
         end
 
@@ -603,12 +666,17 @@ end
 		-- update DK rune visuals:
 		if PlayerClass == "DEATHKNIGHT" then
 			local resourceBar =  Plater.Resources.GetResourceBarInUse()
-			local specIndex = GetSpecialization()
-			for i =1, #resourceBar.widgets do
-				resourceBar.widgets[i].texture:SetAtlas("DK-"..Plater.Resources.GetRuneKeyBySpec(specIndex).."-Rune-Ready")
-				resourceBar.widgets[i].cooldown:SetSwipeTexture("Interface\\PlayerFrame\\DK-"..Plater.Resources.GetRuneKeyBySpec(specIndex).."-Rune-CDFill")
-				resourceBar.widgets[i].cooldown:SetEdgeTexture("Interface\\PlayerFrame\\DK-"..Plater.Resources.GetCDEdgeBySpec(specIndex).."-Rune-CDSpark")
-			end
+            if not resourceBar then return end
+            if IS_WOW_PROJECT_MAINLINE then
+                local specIndex = GetSpecialization()
+                for i =1, #resourceBar.widgets do
+                    resourceBar.widgets[i].texture:SetAtlas("DK-"..Plater.Resources.GetRuneKeyBySpec(specIndex).."-Rune-Ready")
+                    resourceBar.widgets[i].cooldown:SetSwipeTexture("Interface\\PlayerFrame\\DK-"..Plater.Resources.GetRuneKeyBySpec(specIndex).."-Rune-CDFill")
+                    resourceBar.widgets[i].cooldown:SetEdgeTexture("Interface\\PlayerFrame\\DK-"..Plater.Resources.GetCDEdgeBySpec(specIndex).."-Rune-CDSpark")
+                end
+            else
+                updateWotLKDKRuneTextures(resourceBar)
+            end
 		end
 		
 		
@@ -640,7 +708,7 @@ end
 
         local playerClass = PlayerClass
         if (IS_WOW_PROJECT_NOT_MAINLINE) then
-            if (playerClass == "ROGUE") then
+            if (playerClass == "ROGUE" or playerClass == "DEATHKNIGHT" or (playerClass == "DRUID" and (GetShapeshiftForm() == 3 or Plater.db.profile.resources_settings.druid_show_always))) then
                 Plater.EndLogPerformanceCore("Plater-Resources", "Update", "CanUsePlaterResourceFrame")
                 return true
             end
@@ -653,7 +721,7 @@ end
             if (specId) then
                 local doesSpecIdUseResource = doesSpecUseResource(specId)
                 --player maybe in guardian spec but is using feral form
-                local isInFeralForm = PlayerClass == "DRUID" and GetShapeshiftForm() == 2
+                local isInFeralForm = PlayerClass == "DRUID" and (GetShapeshiftForm() == 2 or Plater.db.profile.resources_settings.druid_show_always)
                 if (doesSpecIdUseResource or isInFeralForm) then --TODO: Druid can use it in all specs. stance check needed! (implementing)
 
                     --get the resource bar
@@ -715,7 +783,8 @@ end
         Plater.Resources.EnableEvents()
 
         if (IS_WOW_PROJECT_NOT_MAINLINE) then
-            Plater.Resources.UpdateResourceBar(plateFrame, mainResourceFrame.resourceBarsByEnumName[CONST_ENUMNAME_COMBOPOINT])
+            local resourceBar =  Plater.Resources.GetResourceBarInUse()
+            Plater.Resources.UpdateResourceBar(plateFrame, resourceBar)
         else
             local resourceBar =  Plater.Resources.GetResourceBarInUse()
             Plater.Resources.UpdateResourceBar(plateFrame, resourceBar)
@@ -766,6 +835,14 @@ end
         resourceBar:Show()
         resourceBar:SetHeight(1)
         mainResourceFrame:Show()
+
+        -- hide blizzard resources
+        if DB_USE_PLATER_RESOURCE_BAR then
+            local resourceFrame = NamePlateDriverFrame and NamePlateDriverFrame.classNamePlateMechanicFrame
+            if (resourceFrame and not resourceFrame:IsForbidden()) then
+                resourceFrame:Hide()
+            end
+        end
 
         if (DB_PLATER_RESOURCE_SHOW_DEPLETED) then
             Plater.Resources.UpdateResourcesFor_ShowDepleted(mainResourceFrame, resourceBar)
@@ -818,7 +895,7 @@ end
         end
 
         --warning: calling UnitPowerMax with a nil resource id is returning a default resource amount, example in shadow priest which returns max insanity amount
-        local totalWidgetsShown = UnitPowerMax("player", Plater.Resources.playerResourceId)
+        local totalWidgetsShown = PlayerClass == "DEATHKNIGHT" and 6 or UnitPowerMax("player", Plater.Resources.playerResourceId)
 
         --store the amount of widgets currently in use
         resourceBar.widgetsInUseAmount = totalWidgetsShown
@@ -867,6 +944,7 @@ end
                 else
                     thisResourceWidget:SetPoint("left", lastResourceWidget, "right", DB_PLATER_RESOURCE_PADDING, 0)
                 end
+                thisResourceWidget:Hide() -- ensure 'reset'. will be shown through update later, if needed.
 
                 local widgetBackground = resourceBar.widgetsBackground[i]
                 widgetBackground:SetSize(widgetWidth, widgetHeight)
@@ -988,6 +1066,7 @@ end
         --calculate how many widgets need to be shown or need to be hide
         if (currentResources < resourceBar.lastResourceAmount) then --hide widgets
             for i = floor(resourceBar.lastResourceAmount), currentResources+1, -1 do
+                resourceBar.widgets[i].ShowAnimation:Stop()
                 resourceBar.widgets[i]:Hide()
             end
 
@@ -1043,14 +1122,15 @@ end
             forcedRefresh = true
         end
 
-        if (event == "UNIT_POWER_POINT_CHARGE") then
+        if IS_WOW_PROJECT_MAINLINE and (event == "UNIT_POWER_POINT_CHARGE" or forcedRefresh) then
 			--fallback if it is not implemented/created
 			if (not resourceBar.widgets[1]) then return end
 			
             --charges changed
             local chargedPowerPoints = GetUnitChargedPowerPoints("player")
             --chargedPowerPoints = {[1] = random(1,2), [2] = random(3,5)} --testing
-            for i = 1, resourceBar.widgetsInUseAmount do
+            local maxPowerPoints = UnitPowerMax("player", Plater.Resources.playerResourceId)
+            for i = 1, maxPowerPoints do
                 local widget = resourceBar.widgets[i]
                 local isCharged = chargedPowerPoints and tContains(chargedPowerPoints, i)
                 if (widget.isCharged ~= isCharged) then
@@ -1065,7 +1145,9 @@ end
                     end
                 end
             end
-            return
+            if not forcedRefresh then
+                return
+            end
         end
 
         -- ensure to only update for proper power type or if forced
@@ -1124,11 +1206,13 @@ end
 			if not runeReady then
 				resourceBar.runesOnCooldown[index] = runeIndex
 				if start then
+                    cooldown:SetAlpha(1)
 					cooldown:SetCooldown(start, duration)
 				end
 				if not DB_PLATER_RESOURCE_SHOW_DEPLETED then
 					cooldown:SetAlpha(0)
 				end
+                runeButton.ShowAnimation:Stop()
 				runeButton.texture:SetAlpha(0)
 				--runeButton.energize:Stop()
 			else
@@ -1148,7 +1232,52 @@ end
 					runeButton.texture:SetAlpha(1)
 				end
 
-				cooldown:SetAlpha(1)
+				cooldown:SetAlpha(0)
+				cooldown:Hide()
+			end
+		end
+    end
+    function resourceWidgetsFunctions.OnRunesChangedWotLK(mainResourceFrame, resourceBar, forcedRefresh, event)
+		resourceBar.runesOnCooldown = resourceBar.runesOnCooldown or {}
+		
+        if (event and event == "RUNE_TYPE_UPDATE") then
+            updateWotLKDKRuneTextures(resourceBar)
+            return
+        end
+        
+		for index = 1, 6 do
+			local runeButton = resourceBar.widgets[index]
+            --runeButton.background:Hide()
+			runeButton:Show()
+			local cooldown = runeButton.cooldown
+
+			local start, duration, runeReady = GetRuneCooldown(index)
+
+			if not runeReady then
+				resourceBar.runesOnCooldown[index] = true
+				if start then
+                    cooldown:SetAlpha(1)
+					CooldownFrame_Set(cooldown, start, duration, 1, true);
+				end
+				if not DB_PLATER_RESOURCE_SHOW_DEPLETED then
+					cooldown:SetAlpha(0)
+				end
+                runeButton.ShowAnimation:Stop()
+                runeButton.texture:SetAlpha(0)
+			else
+				if (resourceBar.runesOnCooldown[index]) then
+					local _, _, runeReadyNow = GetRuneCooldown(index)
+					if (runeReadyNow) then
+						resourceBar.runesOnCooldown[index] = nil
+						
+						runeButton.ShowAnimation:Play()
+						runeButton.texture:SetAlpha(1)
+					end
+				else
+					runeButton.texture:SetAlpha(1)
+				end
+
+				cooldown:SetAlpha(0)
 				cooldown:Hide()
 			end
 		end
@@ -1227,4 +1356,116 @@ end
 				widget.glowtexture:SetPoint("BOTTOMRIGHT", widget.fillBar:GetStatusBarTexture(), "TOP", fullOffset/2, -2)
 			end
 		end
+    end
+    
+    --Evoker Essence
+    local FillingAnimationTime = 5.0; 
+    local evokerEssenceOnUpdate = function(self, elapsed)
+       	local pace,interrupted = GetPowerRegenForPowerType(Plater.Resources.playerResourceId)
+        if (pace == nil or pace == 0) then
+            pace = 0.2
+        end
+        local cooldownDuration = 1 / pace
+        local animationSpeedMultiplier = FillingAnimationTime / cooldownDuration
+        self.EssenceFilling.FillingAnim:SetAnimationSpeedMultiplier(animationSpeedMultiplier)
+        self.EssenceFilling.CircleAnim:SetAnimationSpeedMultiplier(animationSpeedMultiplier)
+    end
+    function resourceWidgetsFunctions.OnEssenceChanged(mainResourceFrame, resourceBar, forcedRefresh, event, unit, powerType)
+        if (event == "UNIT_MAXPOWER" and DB_PLATER_RESOURCE_SHOW_DEPLETED) then
+            Plater.Resources.UpdateResourcesFor_ShowDepleted(mainResourceFrame, resourceBar)
+            forcedRefresh = true
+        end
+
+        -- ensure to only update for proper power type or if forced
+        if not forcedRefresh and powerType and powerType ~= classPowerTypes[PlayerClass] then
+            return
+        end
+
+        --amount of resources the player has now
+        local currentResources = UnitPower("player", Plater.Resources.playerResourceId)
+        local maxResources = UnitPowerMax("player", Plater.Resources.playerResourceId)
+        local isAtMaxPoints = currentResources == maxResources
+        local pace, interrupted = GetPowerRegenForPowerType(Plater.Resources.playerResourceId)
+        if (pace == nil or pace == 0) then
+            pace = 0.2
+        end
+        
+        --resources amount got updated?
+        if (currentResources == resourceBar.lastResourceAmount and not forcedRefresh) then
+            --return --this somehow fucks up because UnitPartialPower returns weird shit.
+        end
+        
+        --which update method to use
+        if (DB_PLATER_RESOURCE_SHOW_DEPLETED) then
+            Plater.Resources.UpdateResources_WithDepleted(resourceBar, currentResources + (isAtMaxPoints and 0 or 1))
+        else
+            Plater.Resources.UpdateResources_NoDepleted(resourceBar, currentResources + (isAtMaxPoints and 0 or 1))
+        end
+        
+        resourceBar.lastResourceAmount = currentResources
+        
+        for i = 1, min(currentResources, resourceBar.widgetsInUseAmount) do
+            local widget = resourceBar.widgets[i]
+            
+            --widget.EssenceFull:Show()
+            widget.EssenceFull:Hide()
+            
+            if not widget.EssenceFillDone:IsShown() then
+                widget.EssenceFillDone:Show()
+                widget.EssenceFillDone.AnimInOrig:Play()
+            end
+            
+            widget.EssenceFilling.FillingAnim:Stop()
+            widget.EssenceFilling.CircleAnim:Stop()
+            widget.EssenceFilling:Hide()
+
+            --widget.EssenceFillDone:Show()
+            
+            widget.EssenceEmpty:Hide()
+            widget:SetScript("OnUpdate", nil)
+            widget:Show()
+        end
+        for i = currentResources + 2, resourceBar.widgetsInUseAmount do
+            local widget = resourceBar.widgets[i]
+           	if (widget.EssenceFull:IsShown() or widget.EssenceFilling:IsShown() or widget.EssenceFillDone:IsShown()) then
+                widget.EssenceDepleting:Show()
+                if (not widget.EssenceDepleting.AnimIn:IsPlaying()) then
+                    widget.EssenceDepleting.AnimIn:Play()
+                end
+                widget.EssenceFilling.FillingAnim:Stop()
+                widget.EssenceFilling.CircleAnim:Stop()
+                widget.EssenceFilling:Hide()
+                widget.EssenceEmpty:Hide()
+                widget.EssenceFillDone.AnimIn:Stop()
+                widget.EssenceFillDone:Hide()
+                widget.EssenceFull:Hide()
+            end
+            widget:SetScript("OnUpdate", nil)
+            widget:Show()
+        end
+
+        local cooldownDuration = 1 / pace
+        local animationSpeedMultiplier = FillingAnimationTime / cooldownDuration
+        local widget = resourceBar.widgets[currentResources + 1]
+        if (not isAtMaxPoints and widget )then --this just fucks up: and not (widget.EssenceFilling.FillingAnim:IsPlaying() or widget.EssenceFull:IsShown())) then
+            widget.EssenceDepleting.AnimIn:Stop()
+            widget.EssenceFillDone.AnimIn:Stop()
+
+            widget.EssenceFilling:Show()
+            widget.EssenceDepleting:Hide()
+            widget.EssenceEmpty:Hide()
+            widget.EssenceFillDone:Hide()
+            widget.EssenceFull:Hide()
+            
+            local partial = UnitPartialPower("player", Plater.Resources.playerResourceId) / 1000.0
+            if partial == 0 then
+               partial = 0.001
+            end
+            
+            widget.EssenceFilling.FillingAnim:SetAnimationSpeedMultiplier(animationSpeedMultiplier)
+            widget.EssenceFilling.CircleAnim:SetAnimationSpeedMultiplier(animationSpeedMultiplier)
+            widget.EssenceFilling.FillingAnim:Restart(false, partial *  widget.EssenceFilling.FillingAnim:GetDuration())
+            widget.EssenceFilling.CircleAnim:Restart(false, partial * widget.EssenceFilling.CircleAnim:GetDuration())
+            widget:SetScript("OnUpdate", evokerEssenceOnUpdate)
+        end
     end

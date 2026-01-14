@@ -16,7 +16,6 @@ local function resizeFrame(self)
 	end
 
 	local textWidth = (settings.showText or settings.showLabel) and self.text:GetStringWidth() or 0
-	--local labelWidth = settings.showLabel and self.label:GetStringWidth() or 0
 
 	if settings.widthBehavior == "fixed" then
 		width = width + settings.width
@@ -25,7 +24,7 @@ local function resizeFrame(self)
 	else
 		width = width + textWidth
 	end
-	
+
 	self:SetWidth(width)
 	if self.bar then self.bar:UpdateCenter() end
 end
@@ -40,7 +39,6 @@ local function TextUpdater(frame, value)
 		value = string.gsub(value, "|c........", "")
 		value = string.gsub(value, "|r", "")
 	end
-
 	if frame.settings.showText then
 		frame.text:SetText(frame.labelText..value)
 	else
@@ -75,7 +73,7 @@ local function LabelUpdater(frame, value)
 	if frame.settings.showLabel then
 		local delimiter = frame.settings.showText and ":" or ""
 		frame.labelText = string.format("|c%s%s%s|r ", tableToHex(db.labelColor), getLabelFromObjOrSettings(frame, value), delimiter)
-	else 
+	else
 		frame.labelText = ""
 	end
 
@@ -84,7 +82,7 @@ end
 
 local function SettingsUpdater(self, value)
 	local settings = self.settings
-	
+
 	if not settings.showText and not settings.showLabel then
 		self.text:Hide()
 	else
@@ -113,7 +111,7 @@ local function SettingsUpdater(self, value)
 	else -- no icon
 		self.text:SetPoint("LEFT", self, 0, 0)
 	end
-	
+
 	LabelUpdater(self, self.obj.label)
 	resizeFrame(self)
 end
@@ -150,6 +148,10 @@ local function CreateIcon(self, icon)
 	self.icon = iconTex
 end
 
+local function tooltipDisabled(obj)
+	return obj.settings.disableTooltip and not IsModifierKeyDown()
+end
+
 -- updaters code taken with permission from fortress
 local updaters = {
 	text = TextUpdater,
@@ -177,9 +179,11 @@ local updaters = {
 	-- I'll continue to support it, as some plugins seem to use it
 	tooltiptext = function(frame, value, name)
 		local object = frame.obj
-		local tt = object.tooltip or GameTooltip
-		if tt:GetOwner() == frame then
-			tt:SetText(object.tooltiptext)
+		if not tooltipDisabled(object) then
+			local tt = object.tooltip or GameTooltip
+			if tt:GetOwner() == frame then
+				tt:SetText(object.tooltiptext)
+			end
 		end
 	end,
 
@@ -236,6 +240,8 @@ local function OnEnter(self)
 	end
 
 	if db.combathidetip and ChocolateBar.InCombat then return end
+
+	if tooltipDisabled(self) then return end
 
 	if obj.tooltip then
 		PrepareTooltip(obj.tooltip, self)
@@ -317,24 +323,19 @@ local function OnDragStart(frame)
 		end
 
 		OnLeave(frame)
-		-- hide libqtip and libtablet tooltips
-		local kids = {_G.UIParent:GetChildren()}
-		for _, child in ipairs(kids) do
-			if not child:IsForbidden() then
-				for i = 1, child:GetNumPoints() do
-					local _,relativeTo,_,_,_ = child:GetPoint(i)
-					if relativeTo == frame then
-						child:Hide()
-					end
-				end
-			end
+		-- hide libqtip tooltips
+		local libqtip = LibStub('LibQTip-1.0', true)
+		if libqtip and libqtip.IterateTooltips then
+			for _, tooltip in libqtip:IterateTooltips() do
+        libqtip:Release(tooltip)
+    	end
 		end
 
 		ChocolateBar:SetDropPoins(frame)
 		Drag:Start(bar, frame.name, frame)
 		frame:StartMoving()
 		frame.isMoving = true
-		frame:highlight(1)
+		frame:highlight(1, 0, 0, 0)
 	end
 end
 
@@ -412,8 +413,13 @@ function ChocolatePiece:New(name, obj, settings, database)
 	chocolate:SetScript("OnDragStart", OnDragStart)
 	chocolate:SetScript("OnDragStop", OnDragStop)
 	SettingsUpdater(chocolate, settings.showText)
-	LabelUpdater(chocolate, obj.label)	
+	LabelUpdater(chocolate, obj.label)
+	
 	return chocolate
+end
+
+function ChocolatePiece:UpdateDB(database)
+	db = database
 end
 
 function ChocolatePiece:UpdateGap(val)

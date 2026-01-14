@@ -1,146 +1,74 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, Private = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class Private
+local Private = select(2, ...)
 
+---@class WeakAuras
 local WeakAuras = WeakAuras;
 local L = WeakAuras.L;
-local GetAtlasInfo = WeakAuras.IsClassic() and GetAtlasInfo or C_Texture.GetAtlasInfo
+local GetAtlasInfo = C_Texture and C_Texture.GetAtlasInfo or GetAtlasInfo
 
-WeakAuras.regionPrototype = {};
-
-
-local SubRegionEventSystem =
-{
-  ClearSubscribers = function(self)
-    self.events = {}
-  end,
-
-  AddSubscriber = function(self, event, subRegion)
-    if not subRegion[event] then
-      print("Can't register subregion for ", event, " ", subRegion.type)
-      return
-    end
-
-    self.events[event] = self.events[event] or {}
-    tinsert(self.events[event], subRegion)
-  end,
-
-  RemoveSubscriber = function(self, event, subRegion)
-    tremove(self.events[event], tIndexOf(self.events[event], subRegion))
-  end,
-
-  Notify = function(self, event, ...)
-    if self.events[event] then
-      for _, subRegion in ipairs(self.events[event]) do
-        subRegion[event](subRegion, ...)
-      end
-    end
-  end
-}
-
-local function CreateSubRegionEventSystem()
-  local system = {}
-  for f, func in pairs(SubRegionEventSystem) do
-    system[f] = func
-    system.events = {}
-  end
-  return system
-end
+Private.regionPrototype = {};
 
 -- Alpha
-function WeakAuras.regionPrototype.AddAlphaToDefault(default)
+function Private.regionPrototype.AddAlphaToDefault(default)
   default.alpha = 1.0;
 end
 
--- Adjusted Duration
-
-function WeakAuras.regionPrototype.AddAdjustedDurationToDefault(default)
-  default.useAdjustededMax = false;
-  default.useAdjustededMin = false;
-end
-
-function WeakAuras.regionPrototype.AddAdjustedDurationOptions(options, data, order)
-  options.useAdjustededMin = {
-    type = "toggle",
-    width = WeakAuras.normalWidth,
-    name = L["Set Minimum Progress"],
-    desc = L["Values/Remaining Time below this value are displayed as no progress."],
-    order = order
-  };
-
-  options.adjustedMin = {
-    type = "input",
-    validate = WeakAuras.ValidateNumericOrPercent,
-    width = WeakAuras.normalWidth,
-    order = order + 0.01,
-    name = L["Minimum"],
-    hidden = function() return not data.useAdjustededMin end,
-    desc = L["Enter static or relative values with %"]
-  };
-
-  options.useAdjustedMinSpacer = {
-    type = "description",
-    width = WeakAuras.normalWidth,
-    name = "",
-    order = order + 0.02,
-    hidden = function() return not (not data.useAdjustededMin and data.useAdjustededMax) end,
-  };
-
-  options.useAdjustededMax = {
-    type = "toggle",
-    width = WeakAuras.normalWidth,
-    name = L["Set Maximum Progress"],
-    desc = L["Values/Remaining Time above this value are displayed as full progress."],
-    order = order + 0.03
-  };
-
-  options.adjustedMax = {
-    type = "input",
-    width = WeakAuras.normalWidth,
-    validate = WeakAuras.ValidateNumericOrPercent,
-    order = order + 0.04,
-    name = L["Maximum"],
-    hidden = function() return not data.useAdjustededMax end,
-    desc = L["Enter static or relative values with %"]
-  };
-
-  options.useAdjustedMaxSpacer = {
-    type = "description",
-    width = WeakAuras.normalWidth,
-    name = "",
-    order = order + 0.05,
-    hidden = function() return not (data.useAdjustededMin and not data.useAdjustededMax) end,
-  };
-
-  return options;
+-- Progress Sources
+function Private.regionPrototype.AddProgressSourceToDefault(default)
+  default.progressSource = {-1, ""}
+  default.useAdjustededMax = false
+  default.useAdjustededMin = false
 end
 
 local screenWidth, screenHeight = math.ceil(GetScreenWidth() / 20) * 20, math.ceil(GetScreenHeight() / 20) * 20;
 
-function Private.GetAnchorsForData(parentData, type)
-  local result
-  if not parentData.controlledChildren then
-    if not WeakAuras.regionOptions[parentData.regionType] then
+function Private.GetAnchorsForData(data, filter)
+  local result = {}
+  if not data.controlledChildren then
+    if not Private.regionOptions[data.regionType] then
       return
     end
 
     local anchors
-    if WeakAuras.regionOptions[parentData.regionType].getAnchors then
-      anchors = WeakAuras.regionOptions[parentData.regionType].getAnchors(parentData)
+    if Private.regionOptions[data.regionType].getAnchors then
+      anchors = Private.regionOptions[data.regionType].getAnchors(data)
     else
       anchors = Private.default_types_for_anchor
     end
+
     for anchorId, anchorData in pairs(anchors) do
-      if anchorData.type == type then
-        result = result or {}
+      if anchorData.type == filter then
         result[anchorId] = anchorData.display
       end
     end
+
+    local subElementTypeCounter = {}
+    for i, subRegion in ipairs(data.subRegions) do
+      subElementTypeCounter[subRegion.type] = (subElementTypeCounter[subRegion.type] or 0) + 1
+      local getAnchors = Private.subRegionOptions[subRegion.type].getAnchors
+      if getAnchors then
+        local subRegionTypeData = Private.subRegionTypes[subRegion.type]
+
+        local anchors = getAnchors(subRegion)
+        for key, anchorData in pairs(anchors) do
+          if anchorData.type == filter then
+            local subElementName = subRegionTypeData.displayName .. " " .. subElementTypeCounter[subRegion.type]
+            local anchorId = "sub." .. i .. "." ..  key
+            result[anchorId] = {subElementName, anchorData.display}
+          end
+        end
+      end
+    end
+
   end
   return result
 end
 
 -- Sound / Chat Message / Custom Code
-function WeakAuras.regionPrototype.AddProperties(properties, defaultsForRegion)
+function Private.regionPrototype.AddProperties(properties, defaultsForRegion)
   properties["sound"] = {
     display = L["Sound"],
     action = "SoundPlay",
@@ -189,6 +117,29 @@ function WeakAuras.regionPrototype.AddProperties(properties, defaultsForRegion)
       isPercent = true
     }
   end
+
+  if defaultsForRegion and defaultsForRegion.progressSource then
+    properties["progressSource"] = {
+      display = L["Progress Source"],
+      setter = "SetProgressSource",
+      type = "progressSource",
+      values = {},
+    }
+
+    properties["adjustedMin"] = {
+      display = L["Minimum Progress"],
+      setter = "SetAdjustedMin",
+      type = "string",
+      validate = WeakAuras.ValidateNumericOrPercent,
+    }
+
+    properties["adjustedMax"] = {
+      display = L["Maximum Progress"],
+      setter = "SetAdjustedMax",
+      type = "string",
+      validate = WeakAuras.ValidateNumericOrPercent,
+    }
+  end
 end
 
 local function SoundRepeatStop(self)
@@ -200,10 +151,10 @@ local function SoundRepeatStop(self)
   Private.StopProfileSystem("sound");
 end
 
-local function SoundStop(self)
+local function SoundStop(self, fadeoutTime)
   Private.StartProfileSystem("sound");
   if (self.soundHandle) then
-    StopSound(self.soundHandle);
+    StopSound(self.soundHandle, fadeoutTime);
   end
   Private.StopProfileSystem("sound");
 end
@@ -223,26 +174,42 @@ local function SoundPlayHelper(self)
   end
 
   if (options.sound == " custom") then
-    if (options.sound_path) then
-      local ok, _, handle = pcall(PlaySoundFile, options.sound_path, options.sound_channel or "Master");
-      if ok then
-        self.soundHandle = handle;
-      end
+    local ok, _, handle = pcall(PlaySoundFile, options.sound_path, options.sound_channel or "Master")
+    if ok then
+      self.soundHandle = handle
     end
   elseif (options.sound == " KitID") then
-    if (options.sound_kit_id) then
-      local ok, _, handle = pcall(PlaySound,options.sound_kit_id, options.sound_channel or "Master");
-      if ok then
-        self.soundHandle = handle;
-      end
+    local ok, _, handle = pcall(PlaySound,options.sound_kit_id, options.sound_channel or "Master")
+    if ok then
+      self.soundHandle = handle
     end
   else
-    local ok, _, handle = pcall(PlaySoundFile, options.sound, options.sound_channel or "Master");
+    local ok, _, handle = pcall(PlaySoundFile, options.sound, options.sound_channel or "Master")
     if ok then
-      self.soundHandle = handle;
+      self.soundHandle = handle
     end
   end
   Private.StopProfileSystem("sound");
+end
+
+local function hasSound(options)
+  if options.sound_type == "Stop" then
+    return true
+  end
+  if (options.sound == " custom") then
+    if (options.sound_path and options.sound_path ~= "") then
+      return true
+    end
+  elseif (options.sound == " KitID") then
+    if (options.sound_kit_id and options.sound_kit_id ~= "") then
+      return true
+    end
+  else
+    if options.sound and options.sound ~= "" then
+      return true
+    end
+  end
+  return false
 end
 
 local function SoundPlay(self, options)
@@ -250,7 +217,13 @@ local function SoundPlay(self, options)
     return
   end
   Private.StartProfileSystem("sound");
-  self:SoundStop();
+  if not hasSound(options) then
+    Private.StopProfileSystem("sound")
+    return
+  end
+
+  local fadeoutTime = options.sound_type == "Stop" and options.sound_fade and options.sound_fade * 1000 or 0
+  self:SoundStop(fadeoutTime);
   self:SoundRepeatStop();
 
   self.soundOptions = options;
@@ -267,13 +240,13 @@ local function SendChat(self, options)
   if (not options or WeakAuras.IsOptionsOpen()) then
     return
   end
-  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_channel, options.r, options.g, options.b, self, options.message_custom, nil, options.message_formaters, options.message_voice);
+  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_dest_isunit, options.message_channel, options.r, options.g, options.b, self, {customFunc = options.message_custom}, nil, options.message_formaters);
 end
 
 local function RunCode(self, func)
   if func and not WeakAuras.IsOptionsOpen() then
     Private.ActivateAuraEnvironment(self.id, self.cloneId, self.state, self.states);
-    xpcall(func, geterrorhandler());
+    xpcall(func, Private.GetErrorHandlerId(self.id, L["Custom Condition Code"]));
     Private.ActivateAuraEnvironment(nil);
   end
 end
@@ -294,7 +267,7 @@ local function UpdatePosition(self)
   local yOffset = self.yOffset + (self.yOffsetAnim or 0) + (self.yOffsetRelative or 0)
   self:RealClearAllPoints();
 
-  xpcall(self.SetPoint, geterrorhandler(), self, self.anchorPoint, self.relativeTo, self.relativePoint, xOffset, yOffset);
+  xpcall(self.SetPoint, Private.GetErrorHandlerId(self.id, L["Update Position"]), self, self.anchorPoint, self.relativeTo, self.relativePoint, xOffset, yOffset);
 end
 
 local function ResetPosition(self)
@@ -388,77 +361,348 @@ local function GetRegionAlpha(self)
   return self.animAlpha or self.alpha or 1;
 end
 
+local function SetProgressSource(self, progressSource)
+  self.progressSource = progressSource
+  self:UpdateProgress()
+end
+
+local function SetAdjustedMin(self, adjustedMin)
+  local index = adjustedMin:find("%% *$")
+  if index then
+    local percent = adjustedMin:sub(1, index-1)
+    self.adjustedMinRelPercent = tonumber(percent) / 100
+    self.adjustedMin = nil
+  else
+    self.adjustedMin = tonumber(adjustedMin)
+    self.adjustedMinRelPercent = nil
+  end
+  self:UpdateProgress()
+end
+
+local function SetAdjustedMax(self, adjustedMax)
+  local index = adjustedMax:find("%% *$")
+  if index then
+    local percent = adjustedMax:sub(1, index-1)
+    self.adjustedMaxRelPercent = tonumber(percent) / 100
+  else
+    self.adjustedMax = tonumber(adjustedMax)
+  end
+  self:UpdateProgress()
+end
+
+local function GetProgressSource(self)
+  return self.progressSource
+end
+
+local function GetMinMaxProgress(self)
+  return self.minProgress or 0, self.maxProgress or 0
+end
+
+local function UpdateProgressFromState(self, minMaxConfig, state, progressSource)
+  local progressType = progressSource[2]
+  local property = progressSource[3]
+  local totalProperty = progressSource[4]
+  local modRateProperty = progressSource[5]
+  local inverseProperty = progressSource[6]
+  local pausedProperty = progressSource[7]
+  local remainingProperty = progressSource[8]
+  local useAdditionalProgress = progressSource[9]
+
+  if not state then
+    self.minProgress, self.maxProgress = nil, nil
+    self.progressType = "timed"
+    self.duration = 0
+    self.expirationTime = math.huge
+    self.modRate = nil
+    self.inverse = false
+    self.paused = true
+    self.remaining = math.huge
+    if self.UpdateTime then
+      self:UpdateTime()
+    end
+    if self.SetAdditionalProgress then
+      self:SetAdditionalProgress(nil)
+    end
+  elseif progressType == "number" then
+    local value = state[property]
+    if type(value) ~= "number" then value = 0 end
+    local total = totalProperty and state[totalProperty]
+    if type(total) ~= "number" then total = 0 end
+    -- We don't care about inverse, modRate or paused
+    local adjustMin
+    if minMaxConfig.adjustedMin then
+      adjustMin = minMaxConfig.adjustedMin
+    elseif minMaxConfig.adjustedMinRelPercent then
+      adjustMin = minMaxConfig.adjustedMinRelPercent * total
+    else
+      adjustMin = 0
+    end
+    local max
+    if minMaxConfig.adjustedMax then
+      max = minMaxConfig.adjustedMax
+    elseif minMaxConfig.adjustedMaxRelPercent then
+      max = minMaxConfig.adjustedMaxRelPercent * total
+    else
+      max = total
+    end
+    -- The output of UpdateProgress is setting various values on self
+    -- and calling UpdateTime/UpdateValue. Not an ideal interface, but
+    -- the animation code/sub elements needs those values in some convenient place
+    self.minProgress, self.maxProgress = adjustMin, max
+    self.progressType = "static"
+    self.value = value - adjustMin
+    self.total = max - adjustMin
+    if self.UpdateValue then
+      self:UpdateValue()
+    end
+    if self.SetAdditionalProgress then
+      if useAdditionalProgress then
+        self:SetAdditionalProgress(state.additionalProgress, adjustMin, max, false)
+      else
+        self:SetAdditionalProgress(nil)
+      end
+    end
+  elseif progressType == "timer" then
+    local expirationTime
+    local paused = pausedProperty and state[pausedProperty]
+    local inverse = inverseProperty and state[inverseProperty]
+    local remaining
+    if paused then
+      remaining = remainingProperty and state[remainingProperty]
+      expirationTime = GetTime() + (type(remaining) == "number" and remaining or 0)
+    else
+      expirationTime = state[property]
+      if type(expirationTime) ~= "number" then
+        expirationTime = math.huge
+      end
+    end
+
+    local duration = totalProperty and state[totalProperty] or 0
+    if type(duration) ~= "number" then
+      duration = 0
+    end
+    local modRate = modRateProperty and state[modRateProperty] or nil
+    local adjustMin
+    if minMaxConfig.adjustedMin then
+      adjustMin = minMaxConfig.adjustedMin
+    elseif minMaxConfig.adjustedMinRelPercent then
+      adjustMin = minMaxConfig.adjustedMinRelPercent * duration
+    else
+      adjustMin = 0
+    end
+
+    local max
+    if duration == 0 then
+      max = 0
+    elseif minMaxConfig.adjustedMax then
+      max = minMaxConfig.adjustedMax
+    elseif minMaxConfig.adjustedMaxRelPercent then
+      max = minMaxConfig.adjustedMaxRelPercent * duration
+    else
+      max = duration
+    end
+    self.minProgress, self.maxProgress = adjustMin, max
+    self.progressType = "timed"
+    self.duration = max - adjustMin
+    self.expirationTime = expirationTime - adjustMin
+    self.remaining = remaining
+    self.modRate = modRate
+    self.inverse = inverse
+    self.paused = paused
+    if self.UpdateTime then
+      self:UpdateTime()
+    end
+    if self.SetAdditionalProgress then
+      if useAdditionalProgress then
+        self:SetAdditionalProgress(state.additionalProgress, adjustMin, max, inverse)
+      else
+        self:SetAdditionalProgress(nil)
+      end
+    end
+  elseif progressType == "elapsedTimer" then
+    local startTime = state[property] or math.huge
+    local duration = totalProperty and state[totalProperty] or 0
+    local adjustMin
+    if minMaxConfig.adjustedMin then
+      adjustMin = minMaxConfig.adjustedMin
+    elseif minMaxConfig.adjustedMinRelPercent then
+      adjustMin = minMaxConfig.adjustedMinRelPercent * duration
+    else
+      adjustMin = 0
+    end
+
+    local max
+    if minMaxConfig.adjustedMax then
+      max = minMaxConfig.adjustedMax
+    elseif minMaxConfig.adjustedMaxRelPercent then
+      max = minMaxConfig.adjustedMaxRelPercent * duration
+    else
+      max = duration
+    end
+
+    self.minProgress, self.maxProgress = adjustMin, max
+    self.progressType = "timed"
+    self.duration = max - adjustMin
+    self.expirationTime = startTime + adjustMin + self.duration
+    self.modRate = nil
+    self.inverse = true
+    self.paused = false
+    self.remaining = nil
+    if self.UpdateTime then
+      self:UpdateTime()
+    end
+    if self.SetAdditionalProgress then
+      if useAdditionalProgress then
+        self:SetAdditionalProgress(state.additionalProgress, adjustMin, max, false)
+      else
+        self:SetAdditionalProgress(nil)
+      end
+    end
+  end
+end
+
+local autoTimedProgressSource = {-1, "timer", "expirationTime", "duration", "modRate", "inverse", "paused", "remaining", true}
+local autoStaticProgressSource = {-1, "number", "value", "total", nil, nil, nil, nil, true}
+local function UpdateProgressFromAuto(self, minMaxConfig, state)
+  if state.progressType == "timed"  then
+    UpdateProgressFromState(self, minMaxConfig, state, autoTimedProgressSource)
+  elseif state.progressType == "static"then
+    UpdateProgressFromState(self, minMaxConfig, state, autoStaticProgressSource)
+  else
+    self.minProgress, self.maxProgress = nil, nil
+    self.progressType = "timed"
+    self.duration = 0
+    self.expirationTime = math.huge
+    self.modRate = nil
+    self.inverse = false
+    self.paused = true
+    self.remaining = math.huge
+    if self.UpdateTime then
+      self:UpdateTime()
+    end
+    if self.SetAdditionalProgress then
+      self:SetAdditionalProgress(nil)
+    end
+  end
+end
+
+local function UpdateProgressFromManual(self, minMaxConfig, state, value, total)
+  value = type(value) == "number" and value or 0
+  total = type(total) == "number" and total or 0
+  local adjustMin
+  if minMaxConfig.adjustedMin then
+    adjustMin = minMaxConfig.adjustedMin
+  elseif minMaxConfig.adjustedMinRelPercent then
+    adjustMin = minMaxConfig.adjustedMinRelPercent * total
+  else
+    adjustMin = 0
+  end
+  local max
+  if minMaxConfig.adjustedMax then
+    max = minMaxConfig.adjustedMax
+  elseif minMaxConfig.adjustedMaxRelPercent then
+    max = minMaxConfig.adjustedMaxRelPercent * total
+  else
+    max = total
+  end
+  self.minProgress, self.maxProgress = adjustMin, max
+  self.progressType = "static"
+  self.value = value - adjustMin
+  self.total = max - adjustMin
+  if self.UpdateValue then
+    self:UpdateValue()
+  end
+  if self.SetAdditionalProgress then
+    self:SetAdditionalProgress(nil)
+  end
+end
+
+local function UpdateProgressFrom(self, progressSource, minMaxConfig, state, states, parent)
+  local trigger = progressSource and progressSource[1] or -1
+
+  if trigger == -2 then
+    -- sub element'a auto uses the whatever progress the main region has
+    UpdateProgressFromAuto(self, minMaxConfig, parent)
+  elseif trigger == -1 then
+    -- auto for regions uses the state
+    UpdateProgressFromAuto(self, minMaxConfig, state)
+  elseif trigger == 0 then
+    UpdateProgressFromManual(self, minMaxConfig, state, progressSource[3], progressSource[4])
+  else
+    UpdateProgressFromState(self, minMaxConfig, states and states[trigger] or {}, progressSource)
+  end
+end
+
+-- For regions
+local function UpdateProgress(self)
+  UpdateProgressFrom(self, self.progressSource, self, self.state, self.states)
+  self.subRegionEvents:Notify("UpdateProgress", self.state, self.states)
+end
+
+Private.UpdateProgressFrom = UpdateProgressFrom
+
 local function SetAnimAlpha(self, alpha)
+  if alpha then
+    if alpha > 1 then
+      alpha = 1
+    elseif alpha < 0 then
+      alpha = 0
+    end
+  end
   if (self.animAlpha == alpha) then
     return;
   end
   self.animAlpha = alpha;
+  local errorHandler = Private.GetErrorHandlerId(self.id, L["Custom Fade Animation"])
   if (WeakAuras.IsOptionsOpen()) then
-    self:SetAlpha(max(self.animAlpha or self.alpha or 1, 0.5));
+    xpcall(self.SetAlpha, errorHandler, self, max(self.animAlpha or self.alpha or 1, 0.5))
   else
-    self:SetAlpha(self.animAlpha or self.alpha or 1);
+    xpcall(self.SetAlpha, errorHandler, self, self.animAlpha or self.alpha or 1)
   end
   self.subRegionEvents:Notify("AlphaChanged")
 end
 
-local function SetTriggerProvidesTimer(self, timerTick)
-  self.triggerProvidesTimer = timerTick
-  self:UpdateTimerTick()
-end
-
-local function UpdateRegionHasTimerTick(self)
-  local hasTimerTick = false
-  if self.TimerTick then
-    hasTimerTick = true
-  elseif (self.subRegions) then
-    for index, subRegion in pairs(self.subRegions) do
-      if subRegion.TimerTick then
-        hasTimerTick = true
-        break;
-      end
-    end
-  end
-
-  self.regionHasTimer = hasTimerTick
-  self:UpdateTimerTick()
-end
-
-local function TimerTickForRegion(region)
-  Private.StartProfileSystem("timer tick")
-  Private.StartProfileAura(region.id);
-  if region.TimerTick then
-    region:TimerTick();
-  end
-
-  region.subRegionEvents:Notify("TimerTick")
-  Private.StopProfileAura(region.id);
-  Private.StopProfileSystem("timer tick")
-end
-
-local function UpdateTimerTick(self)
-  if self.triggerProvidesTimer and self.regionHasTimer and self.toShow then
-    if not self:GetScript("OnUpdate") then
-      self:SetScript("OnUpdate", function()
-        TimerTickForRegion(self)
-      end);
-    end
+local function UpdateTick(self)
+  if self.subRegionEvents:HasSubscribers("FrameTick") and self.toShow then
+    Private.FrameTick:AddSubscriber("Tick", self)
   else
-    if self:GetScript("OnUpdate") then
-      self:SetScript("OnUpdate", nil);
+    Private.FrameTick:RemoveSubscriber("Tick", self)
+  end
+end
+
+local function Tick(self)
+  Private.StartProfileAura(self.id)
+  self.values.customTextUpdated = false
+  self.subRegionEvents:Notify("FrameTick")
+  Private.StopProfileAura(self.id)
+end
+
+local function ForwardAnchorToSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+  local nextdot = anchorPoint:find(".", 5, true)
+  local index = tonumber(anchorPoint:sub(5, nextdot - 1))
+  local subElement = index and self.subRegions[index] or nil
+  if subElement then
+    local key = anchorPoint:sub(nextdot + 1)
+    if subElement.AnchorSubRegion then
+      subElement:AnchorSubRegion(subRegion, anchorType, key, selfPoint, anchorXOffset, anchorYOffset)
     end
   end
 end
 
-local function AnchorSubRegion(self, subRegion, anchorType, selfPoint, anchorPoint, anchorXOffset, anchorYOffset)
-  subRegion:ClearAllPoints()
-
+local function AnchorSubRegion(self, subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+  if anchorPoint and anchorPoint:sub(1, 4) == "sub." then
+    self:ForwardAnchorToSubRegion(subRegion, anchorType, anchorPoint, selfPoint, anchorXOffset, anchorYOffset)
+    return
+  end
   if anchorType == "point" then
+    subRegion:ClearAllPoints()
     local xOffset = anchorXOffset or 0
     local yOffset = anchorYOffset or 0
     subRegion:SetPoint(Private.point_types[selfPoint] and selfPoint or "CENTER",
                        self, Private.point_types[anchorPoint] and anchorPoint or "CENTER",
                        xOffset, yOffset)
   else
+    subRegion:ClearAllPoints()
     anchorXOffset = anchorXOffset or 0
     anchorYOffset = anchorYOffset or 0
     subRegion:SetPoint("bottomleft", self, "bottomleft", -anchorXOffset, -anchorYOffset)
@@ -466,10 +710,10 @@ local function AnchorSubRegion(self, subRegion, anchorType, selfPoint, anchorPoi
   end
 end
 
-WeakAuras.regionPrototype.AnchorSubRegion = AnchorSubRegion
+Private.regionPrototype.AnchorSubRegion = AnchorSubRegion
 
-function WeakAuras.regionPrototype.create(region)
-  local defaultsForRegion = WeakAuras.regionTypes[region.regionType] and WeakAuras.regionTypes[region.regionType].default;
+function Private.regionPrototype.create(region)
+  local defaultsForRegion = Private.regionTypes[region.regionType] and Private.regionTypes[region.regionType].default;
   region.SoundPlay = SoundPlay;
   region.SoundStop = SoundStop;
   region.SoundRepeatStop = SoundRepeatStop;
@@ -477,6 +721,7 @@ function WeakAuras.regionPrototype.create(region)
   region.RunCode = RunCode;
   region.GlowExternal = GlowExternal;
 
+  region.ReAnchor = UpdatePosition;
   region.SetAnchor = SetAnchor;
   region.SetOffset = SetOffset;
   region.SetXOffset = SetXOffset;
@@ -499,41 +744,41 @@ function WeakAuras.regionPrototype.create(region)
     region.SetRegionAlpha = SetRegionAlpha;
     region.GetRegionAlpha = GetRegionAlpha;
   end
+  if defaultsForRegion and defaultsForRegion.progressSource then
+    region.SetProgressSource = SetProgressSource
+    region.GetProgressSource = GetProgressSource
+    region.SetAdjustedMin = SetAdjustedMin
+    region.SetAdjustedMax = SetAdjustedMax
+  end
+  region.UpdateProgress = UpdateProgress
+  region.GetMinMaxProgress = GetMinMaxProgress
   region.SetAnimAlpha = SetAnimAlpha;
 
-  region.SetTriggerProvidesTimer = SetTriggerProvidesTimer
-  region.UpdateRegionHasTimerTick = UpdateRegionHasTimerTick
-  region.UpdateTimerTick = UpdateTimerTick
+  region.UpdateTick = UpdateTick
+  region.Tick = Tick
 
-  region.subRegionEvents = CreateSubRegionEventSystem()
+
+  region.subRegionEvents = Private.CreateSubscribableObject()
   region.AnchorSubRegion = AnchorSubRegion
+  region.ForwardAnchorToSubRegion = ForwardAnchorToSubRegion
   region.values = {} -- For SubText
 
   region:SetPoint("CENTER", UIParent, "CENTER")
 end
 
--- SetDurationInfo
+function Private.regionPrototype.AddMinMaxProgressSource(hasProgressSource, region, parentData, data)
+  local hasAdjustedMin = hasProgressSource and data.useAdjustededMin and data.adjustedMin
+  local hasAdjustedMax = hasProgressSource and data.useAdjustededMax and data.adjustedMax
 
-function WeakAuras.regionPrototype.modify(parent, region, data)
-  region.subRegionEvents:ClearSubscribers()
-
-  local defaultsForRegion = WeakAuras.regionTypes[data.regionType] and WeakAuras.regionTypes[data.regionType].default;
-
-  if region.SetRegionAlpha then
-    region:SetRegionAlpha(data.alpha)
-  end
-
-  local hasAdjustedMin = defaultsForRegion and defaultsForRegion.useAdjustededMin ~= nil and data.useAdjustededMin
-        and data.adjustedMin;
-  local hasAdjustedMax = defaultsForRegion and defaultsForRegion.useAdjustededMax ~= nil and data.useAdjustededMax
-        and data.adjustedMax;
-
+  region.progressSource = nil
   region.adjustedMin = nil
-  region.adjustedMinRel = nil
   region.adjustedMinRelPercent = nil
   region.adjustedMax = nil
-  region.adjustedMaxRel = nil
   region.adjustedMaxRelPercent = nil
+
+  if hasProgressSource then
+    region.progressSource = Private.AddProgressSourceMetaData(parentData, data.progressSource)
+  end
 
   if (hasAdjustedMin) then
     local percent = string.match(data.adjustedMin, "(%d+)%%")
@@ -551,13 +796,31 @@ function WeakAuras.regionPrototype.modify(parent, region, data)
       region.adjustedMax = tonumber(data.adjustedMax)
     end
   end
+end
+
+function Private.regionPrototype.modify(parent, region, data)
+  region.state = nil
+  region.states = nil
+  region.subRegionEvents:ClearSubscribers()
+  region.subRegionEvents:ClearCallbacks()
+  Private.FrameTick:RemoveSubscriber("Tick", region)
+
+  local defaultsForRegion = Private.regionTypes[data.regionType] and Private.regionTypes[data.regionType].default;
+
+  if region.SetRegionAlpha then
+    region:SetRegionAlpha(data.alpha)
+  end
+
+  local hasProgressSource = defaultsForRegion and defaultsForRegion.progressSource
+
+  Private.regionPrototype.AddMinMaxProgressSource(hasProgressSource, region, data, data)
 
   region:SetOffset(data.xOffset or 0, data.yOffset or 0);
   region:SetOffsetRelative(0, 0)
   region:SetOffsetAnim(0, 0);
 
   if data.anchorFrameType == "CUSTOM" and data.customAnchor then
-    region.customAnchorFunc = WeakAuras.LoadFunction("return " .. data.customAnchor, data.id, "custom anchor")
+    region.customAnchorFunc = WeakAuras.LoadFunction("return " .. data.customAnchor, data.id)
   else
     region.customAnchorFunc = nil
   end
@@ -586,7 +849,7 @@ function WeakAuras.regionPrototype.modify(parent, region, data)
       data.actions.start[fullKey] = default
     end
     return data.actions.start[fullKey]
-  end, true)
+  end, true, data)
 
   region.finishFormatters = Private.CreateFormatters(data.actions.finish.message, function(key, default)
     local fullKey = "message_format_" .. key
@@ -594,11 +857,10 @@ function WeakAuras.regionPrototype.modify(parent, region, data)
       data.actions.finish[fullKey] = default
     end
     return data.actions.finish[fullKey]
-  end, true)
-
+  end, true, data)
 end
 
-function WeakAuras.regionPrototype.modifyFinish(parent, region, data)
+function Private.regionPrototype.modifyFinish(parent, region, data)
   -- Sync subRegions
   if region.subRegions then
     for index, subRegion in pairs(region.subRegions) do
@@ -624,120 +886,71 @@ function WeakAuras.regionPrototype.modifyFinish(parent, region, data)
         tinsert(region.subRegions, subRegion)
       end
     end
+
+    for index, subRegion in pairs(region.subRegions) do
+      if subRegion.Anchor then
+        subRegion:Anchor()
+      end
+    end
+
   end
 
-  region:UpdateRegionHasTimerTick()
+  region.subRegionEvents:SetOnSubscriptionStatusChanged("FrameTick", function()
+    region:UpdateTick()
+  end)
+  region:UpdateTick()
 
   Private.ApplyFrameLevel(region)
 end
 
-local function SetProgressValue(region, value, total)
-  local adjustMin = region.adjustedMin or 0;
-  local max = region.adjustedMax or total;
+local frameForFrameTick = CreateFrame("Frame");
+Private.frames["Frame Tick Frame"] = frameForFrameTick
 
-  region:SetValue(value - adjustMin, max - adjustMin);
-end
-
-local regionsForFrameTick = {}
-
-local frameForFrameTick = CreateFrame("FRAME");
-
-WeakAuras.frames["Frame Tick Frame"] = frameForFrameTick
-
-local function FrameTick()
-  if WeakAuras.IsOptionsOpen() then
-    return
-  end
+Private.FrameTick = Private.CreateSubscribableObject()
+Private.FrameTick.OnUpdateHandler = function()
   Private.StartProfileSystem("frame tick")
-  for region in pairs(regionsForFrameTick) do
-    Private.StartProfileAura(region.id);
-    if region.FrameTick then
-      region.FrameTick()
-    end
-    region.subRegionEvents:Notify("FrameTick")
-    Private.StopProfileAura(region.id);
-  end
+  Private.FrameTick:Notify("Tick")
   Private.StopProfileSystem("frame tick")
 end
 
-local function RegisterForFrameTick(region)
-  -- Check for a Frame Tick function
-  local hasFrameTick = region.FrameTick
-  if not hasFrameTick then
-    if (region.subRegions) then
-      for index, subRegion in pairs(region.subRegions) do
-        if subRegion.FrameTick then
-          hasFrameTick = true
-          break
-        end
-      end
-    end
-  end
-
-  if not hasFrameTick then
-    return
-  end
-
-  regionsForFrameTick[region] = true
-  if not frameForFrameTick:GetScript("OnUpdate") then
-    frameForFrameTick:SetScript("OnUpdate", FrameTick);
-  end
-end
-
-local function UnRegisterForFrameTick(region)
-  regionsForFrameTick[region] = nil
-  if not next(regionsForFrameTick) then
+Private.FrameTick:SetOnSubscriptionStatusChanged("Tick", function()
+  if Private.FrameTick:HasSubscribers("Tick") then
+    frameForFrameTick:SetScript("OnUpdate", Private.FrameTick.OnUpdateHandler);
+  else
     frameForFrameTick:SetScript("OnUpdate", nil)
   end
-end
+end)
 
-local function TimerTickForSetDuration(self)
-  local duration = self.duration
-  local adjustMin = self.adjustedMin or 0;
-
-  local max
-  if duration == 0 then
-    max = 0
-  elseif self.adjustedMax then
-    max = self.adjustedMax
-  else
-    max = duration
-  end
-
-  self:SetTime(max - adjustMin, self.expirationTime - adjustMin, self.inverse);
-end
-
-function WeakAuras.regionPrototype.AddSetDurationInfo(region)
-  if (region.SetValue and region.SetTime) then
-    region.generatedSetDurationInfo = true;
-
-    -- WeakAuras no longer calls SetDurationInfo, but some people do that,
-    -- In that case we also need to overwrite TimerTick
+function Private.regionPrototype.AddSetDurationInfo(region, uid)
+  if (region.UpdateValue and region.UpdateTime) then
+    -- WeakAuras no longer calls SetDurationInfo, but some people do that
     region.SetDurationInfo = function(self, duration, expirationTime, customValue, inverse)
-      self.duration = duration or 0
-      self.expirationTime = expirationTime;
-      self.inverse = inverse;
-
+      -- For now don't warn against SetDurationInfo
+      -- Private.AuraWarnings.UpdateWarning(uid, "SetDurationInfo", "warning", L["Aura is using deprecated SetDurationInfo"])
       if customValue then
-        SetProgressValue(region, duration, expirationTime);
-        region.TimerTick = nil
-        region:UpdateRegionHasTimerTick()
-      else
         local adjustMin = region.adjustedMin or 0;
-        region:SetTime((duration ~= 0 and region.adjustedMax or duration) - adjustMin, expirationTime - adjustMin, inverse);
-
-        region.TimerTick = TimerTickForSetDuration
-        region:UpdateRegionHasTimerTick()
+        local max = self.adjustedMax or expirationTime
+        region.progressType = "static"
+        region.value = duration - adjustMin
+        region.total = max - adjustMin
+        region:UpdateValue()
+      else
+        local adjustMin = self.adjustedMin or 0;
+        self.progressType = "timed"
+        self.duration = (duration ~= 0 and self.adjustedMax or duration) - adjustMin
+        self.expirationTime = expirationTime - adjustMin
+        self.modRate = nil
+        self.inverse = inverse
+        self.paused = false
+        self.remaining = nil
+        self:UpdateTime()
       end
     end
-  elseif (region.generatedSetDurationInfo) then
-    region.generatedSetDurationInfo = nil;
-    region.SetDurationInfo = nil;
   end
 end
 
 -- Expand/Collapse function
-function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, parent, parentRegionType)
+function Private.regionPrototype.AddExpandFunction(data, region, cloneId, parent, parentRegionType)
   local uid = data.uid
   local id = data.id
   local inDynamicGroup = parentRegionType == "dynamicgroup";
@@ -771,7 +984,20 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
 
       Private.RunConditions(region, uid, true)
       region.subRegionEvents:Notify("PreHide")
-      region:Hide();
+      if region:IsProtected() then
+        if InCombatLockdown() then
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame_error", "error",
+          L["Cannot change secure frame in combat lockdown. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"],
+            true)
+        else
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame", "warning",
+            L["Secure frame detected. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"])
+          region:Hide()
+        end
+      else
+        Private.AuraWarnings.UpdateWarning(uid, "protected_frame")
+        region:Hide()
+      end
       region.states = nil
       region.state = nil
       if (cloneId) then
@@ -788,7 +1014,22 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       end
       Private.RunConditions(region, uid, true)
       region.subRegionEvents:Notify("PreHide")
-      region:Hide();
+
+      if region:IsProtected() then
+        if InCombatLockdown() then
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame_error", "error",
+          L["Cannot change secure frame in combat lockdown. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"],
+            true)
+        else
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame", "warning",
+            L["Secure frame detected. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"])
+          region:Hide()
+        end
+      else
+        Private.AuraWarnings.UpdateWarning(uid, "protected_frame")
+        region:Hide()
+      end
+
       region.states = nil
       region.state = nil
       if (cloneId) then
@@ -803,7 +1044,6 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
         return;
       end
       region.toShow = false;
-      region:SetScript("OnUpdate", nil)
 
       Private.PerformActions(data, "finish", region);
       if (not Private.Animate("display", data.uid, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId)) then
@@ -814,8 +1054,7 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
         region:SoundRepeatStop();
       end
 
-      UnRegisterForFrameTick(region)
-      region:UpdateTimerTick()
+      region:UpdateTick()
     end
     function region:Expand()
       if (region.toShow) then
@@ -829,15 +1068,28 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       region.subRegionEvents:Notify("PreShow")
 
       Private.ApplyFrameLevel(region)
-      region:Show();
+      if region:IsProtected() then
+        if InCombatLockdown() then
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame_error", "error",
+            L["Cannot change secure frame in combat lockdown. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"],
+            true)
+        else
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame", "warning",
+            L["Secure frame detected. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"])
+          region:Show()
+        end
+      else
+        Private.AuraWarnings.UpdateWarning(uid, "protected_frame")
+        region:Show()
+      end
+
       Private.PerformActions(data, "start", region);
       if not(Private.Animate("display", data.uid, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
         startMainAnimation();
       end
       parent:ActivateChild(data.id, cloneId);
 
-      RegisterForFrameTick(region)
-      region:UpdateTimerTick()
+      region:UpdateTick()
     end
   elseif not(data.controlledChildren) then
     function region:Collapse()
@@ -845,7 +1097,6 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
         return;
       end
       region.toShow = false;
-      region:SetScript("OnUpdate", nil)
 
       Private.PerformActions(data, "finish", region);
       if (not Private.Animate("display", data.uid, "finish", data.animation.finish, region, false, hideRegion, nil, cloneId)) then
@@ -860,8 +1111,7 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
         region:SoundRepeatStop();
       end
 
-      UnRegisterForFrameTick(region)
-      region:UpdateTimerTick()
+      region:UpdateTick()
     end
     function region:Expand()
       if data.anchorFrameType == "SELECTFRAME"
@@ -875,16 +1125,30 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       if (region.toShow) then
         return;
       end
-      region.toShow = true;
+      region.toShow = true
 
       if(region.PreShow) then
         region:PreShow();
       end
 
       region.subRegionEvents:Notify("PreShow")
-
       Private.ApplyFrameLevel(region)
-      region:Show();
+
+      if region:IsProtected() then
+        if InCombatLockdown() then
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame_error", "error",
+            L["Cannot change secure frame in combat lockdown. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"],
+            true)
+        else
+          Private.AuraWarnings.UpdateWarning(uid, "protected_frame", "warning",
+            L["Secure frame detected. Find more information:\nhttps://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames"])
+          region:Show()
+        end
+      else
+        Private.AuraWarnings.UpdateWarning(uid, "protected_frame")
+        region:Show()
+      end
+
       Private.PerformActions(data, "start", region);
       if not(Private.Animate("display", data.uid, "start", data.animation.start, region, true, startMainAnimation, nil, cloneId)) then
         startMainAnimation();
@@ -894,8 +1158,7 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
         parent:UpdateBorder(region);
       end
 
-      RegisterForFrameTick(region)
-      region:UpdateTimerTick()
+      region:UpdateTick()
     end
   end
   -- Stubs that allow for polymorphism
@@ -905,37 +1168,19 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
   if not region.Expand then
     function region:Expand() end
   end
-  if not region.Pause then
-    function region:Pause()
-      self.paused = true
-    end
-  end
-  if not region.Resume then
-    function region:Resume()
-      self.paused = nil
-    end
-  end
 end
 
-function WeakAuras.SetTextureOrAtlas(texture, path, wrapModeH, wrapModeV)
-  if type(path) == "string" and GetAtlasInfo(path) then
-    texture:SetAtlas(path);
+function Private.SetTextureOrAtlas(texture, path, wrapModeH, wrapModeV)
+  texture.IsAtlas = type(path) == "string" and GetAtlasInfo(path) ~= nil
+  if texture.IsAtlas then
+    return texture:SetAtlas(path);
   else
-    local needToClear = true
-    if (texture.wrapModeH and texture.wrapModeH ~= wrapModeH) or (texture.wrapModeV and texture.wrapModeV ~= wrapModeV) then
-      needToClear = true
-    end
-    texture.wrapModeH = wrapModeH
-    texture.wrapModeV = wrapModeV
-    if needToClear then
-      texture:SetTexture(nil)
-    end
-    texture:SetTexture(path, wrapModeH, wrapModeV);
+    return texture:SetTexture(path, wrapModeH, wrapModeV);
   end
 end
 
 do
-  local function move_condition_subregions(data, offset, afterPos, beforePos)
+  local function move_condition_subregions(data, offset, afterPos)
     if data.conditions then
       for conditionIndex, condition in ipairs(data.conditions) do
         if type(condition.changes) == "table" then
@@ -944,8 +1189,8 @@ do
               local subRegionIndex, property = change.property:match("^sub%.(%d+)%.(.*)")
               subRegionIndex = tonumber(subRegionIndex)
               if subRegionIndex and property then
-                if (afterPos and subRegionIndex > afterPos) and (beforePos and subRegionIndex < beforePos) then
-                  change.property = "sub." .. subRegionIndex + (offset or 1) .. "." .. property
+                if (subRegionIndex >= afterPos) then
+                  change.property = "sub." .. subRegionIndex + offset .. "." .. property
                 end
               end
             end
@@ -969,7 +1214,7 @@ do
       tinsert(data.subRegions, 1, {
         ["type"] = subregionType
       })
-      move_condition_subregions(data, 1)
+      move_condition_subregions(data, 1, 1)
     -- delete duplicate
     elseif #indexes > 1 then
       for i = #indexes, 2, -1 do

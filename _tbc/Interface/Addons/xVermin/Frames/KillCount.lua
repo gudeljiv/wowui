@@ -84,7 +84,6 @@ kctimer:SetHeight(kctimer.text:GetStringHeight())
 ----------------------------
 -- Kill list wrapper
 ----------------------------
-
 local killlist_wrapper = CreateFrame('Frame', 'WrapperKillListFrame', kc, BackdropTemplateMixin and 'BackdropTemplate')
 killlist_wrapper:SetPoint('TOPLEFT', kc, 'TOPLEFT', 0, -55)
 killlist_wrapper:SetFrameStrata('LOW')
@@ -257,7 +256,7 @@ local function StartTimer()
 		C_Timer.NewTicker(
 		1,
 		function()
-			kctimer.text:SetText(xVermin:TimeFormat(time() - tStart))
+			kctimer.text:SetText(xVermin.TimeFormat(time() - tStart))
 		end
 	)
 	kctimerstartstop.text:SetText('Stop')
@@ -343,8 +342,8 @@ local function DisplayData()
 
 	for key, value in pairs(sortedKillLog) do
 		names = names .. value.name .. '\n'
-		values = values .. xVermin:FormatNumber(value.count) .. '\n'
-		percentages = percentages .. xVermin:Round((value.count / total * 100), 1) .. '%' .. '\n'
+		values = values .. xVermin.FormatNumber(value.count) .. '\n'
+		percentages = percentages .. xVermin.Round((value.count / total * 100), 1) .. '%' .. '\n'
 	end
 
 	kctotal.text:SetText('Total: ' .. total .. ' (' .. pullkills .. ')')
@@ -352,8 +351,8 @@ local function DisplayData()
 	kclistvalues.text:SetText(values)
 	kclistpercentages.text:SetText(percentages)
 
-	pullxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.pulltotal))
-	totalxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.totaltotal))
+	pullxpframevalue.text:SetText(xVermin.FormatNumber(xKillCount.experience.pulltotal))
+	totalxpframevalue.text:SetText(xVermin.FormatNumber(xKillCount.experience.totaltotal))
 	pullxpframevalue:SetSize(pullxpframevalue.text:GetStringWidth(), pullxpframevalue.text:GetStringHeight())
 	totalxpframevalue:SetSize(totalxpframevalue.text:GetStringWidth(), totalxpframevalue.text:GetStringHeight())
 
@@ -700,10 +699,7 @@ kctimerstartstop:SetScript(
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 local function kcMessages()
-	ChatFrame1:AddMessage(
-		'\124cffFFFF00(show/hide)\124r Show/Hide KillCount window: ' ..
-			(xKillCount.show and '\124cff00FF00show\124r' or '\124cffFF0000show\124r') .. '/' .. (not xKillCount.show and '\124cff00FF00hide\124r' or '\124cffFF0000hide\124r')
-	)
+	ChatFrame1:AddMessage('\124cffFFFF00(show/hide)\124r Show/Hide KillCount window: ' .. (xKillCount.show and '\124cff00FF00show\124r' or '\124cffFF0000show\124r') .. '/' .. (not xKillCount.show and '\124cff00FF00hide\124r' or '\124cffFF0000hide\124r'))
 	ChatFrame1:AddMessage('\124cffFFFF00(reset)\124r Reset KillCount window position')
 end
 

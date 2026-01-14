@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -352,9 +352,9 @@ IconView:ImplementsModule("GroupModule_GroupPosition", 1, true)
 IconView:ImplementsModule("GroupModule_Alpha", 1.5, true)
 
 IconView:ImplementsModule("IconModule_Self", 0, true)
-IconView:ImplementsModule("IconModule_IconEventClickHandler", 2, true)
+IconView:ImplementsModule("IconModule_IconEventClickHandler", 2, nil)
 IconView:ImplementsModule("IconModule_IconEventOtherShowHideHandler", 2.5, true)
-IconView:ImplementsModule("IconModule_IconEventConditionHandler", 2.7, true)
+IconView:ImplementsModule("IconModule_IconEventConditionHandler", 2.7, nil)
 IconView:ImplementsModule("IconModule_RecieveSpellDrags", 3, true)
 IconView:ImplementsModule("IconModule_IconDragger", 4, true)
 IconView:ImplementsModule("IconModule_GroupMover", 5, true)

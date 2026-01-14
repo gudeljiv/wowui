@@ -4,7 +4,8 @@ local LSM = LibStub("LibSharedMedia-3.0")
 local Bar = ChocolateBar.Bar
 local chocolate = ChocolateBar.ChocolatePiece
 local debug = ChocolateBar and ChocolateBar.Debug or function() end
-local jostle = ChocolateBar.Jostle
+local jostleClassic = ChocolateBar.JostleClassic
+local jostleEditMode = ChocolateBar.jostleEditMode
 local _G, pairs, ipairs, table, math, mod = _G, pairs, ipairs, table, math, mod
 local CreateFrame, UIParent = CreateFrame, UIParent
 local db
@@ -81,7 +82,8 @@ function Bar:UpdateAutoHide(db)
 	if self.settings.autohide then
 		self.autohide = true
 		self:HideAll()
-		if jostle then jostle:Unregister(self) end
+		if jostleClassic then jostleClassic:Unregister(self) end
+		if jostleEditMode then jostleEditMode:Unregister(self) end
 	else
 		self.autohide = false
 		self:ShowAll()
@@ -90,13 +92,26 @@ function Bar:UpdateAutoHide(db)
 end
 
 function Bar:UpdateJostle(db)
-	if jostle then
-		jostle:Unregister(self)
-		if db.moveFrames then
-			if self.settings.align == "bottom" then
-				jostle:RegisterBottom(self)
-			elseif  self.settings.align == "top" then
-				jostle:RegisterTop(self)
+	if ChocolateBar:WoWHasEditMode() then
+		if jostleEditMode then
+			jostleEditMode:Unregister(self)
+			if db.moveFrames then
+				if self.settings.align == "bottom" then
+					jostleEditMode:RegisterBottom(self)
+				elseif  self.settings.align == "top" then
+					jostleEditMode:RegisterTop(self)
+				end
+			end
+		end
+	else
+		if jostleClassic then
+			jostleClassic:Unregister(self)
+			if db.moveFrames then
+				if self.settings.align == "bottom" then
+					jostleClassic:RegisterBottom(self)
+				elseif  self.settings.align == "top" then
+					jostleClassic:RegisterTop(self)
+				end
 			end
 		end
 	end
@@ -152,10 +167,9 @@ end
 
 -- add some chocolate to a bar
 function Bar:AddChocolatePiece(choco, name, noupdate)
-
 	local chocolist = self.chocolist
 	if chocolist[name] then
-		debug("AddChocolatePiece: ",name," already in list.")
+		debug("Bar:AddChocolatePiece: ",name," already in list.")
 		return
 	end
 
@@ -165,9 +179,7 @@ function Bar:AddChocolatePiece(choco, name, noupdate)
 
 	local settings = choco.settings
 	settings.barName = self:GetName()
-	--if not settings.index then
-	--	settings.index = 1
-	--end
+	
 	if not noupdate then
 		self:UpdateBar()
 	end
@@ -178,13 +190,13 @@ function Bar:AddChocolatePiece(choco, name, noupdate)
 			choco.icon:Hide()
 		end
 	end
+	
 end
 
 -- eat some chocolate from a ChocolateBar
 function Bar:EatChocolatePiece(name)
 	self.chocolist = self.chocolist or {}
 	local choco = self.chocolist[name]
-
 	if choco then
 		choco:Hide()
 		self.chocolist[name] = nil
@@ -220,7 +232,8 @@ end
 
 function Bar:Disable()
 	self:Hide()
-	if jostle then jostle:Unregister(self) end
+	if jostleClassic then jostleClassic:Unregister(self) end
+	if jostleEditMode then jostleEditMode:Unregister(self) end
 end
 
 local function SortTab(tab)

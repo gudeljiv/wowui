@@ -1,6 +1,6 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 
-local Type, Version = "WeakAurasLoadedHeaderButton", 20
+local Type, Version = "WeakAurasLoadedHeaderButton", 22
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -96,11 +96,26 @@ local methods = {
   ["SetViewClick"] = function(self, func)
     self.view:SetScript("OnClick", func);
   end,
-  ["SetViewTest"] = function(self, func)
-    self.view.func = func;
+  ["PriorityShow"] = function(self, priority)
+    if (not WeakAuras.IsOptionsOpen()) then
+      return;
+    end
+    if(priority >= self.view.visibility and self.view.visibility ~= priority) then
+      self.view.visibility = priority;
+      self:UpdateViewTexture()
+    end
+  end,
+  ["PriorityHide"] = function(self, priority)
+    if (not WeakAuras.IsOptionsOpen()) then
+      return;
+    end
+    if(priority >= self.view.visibility and self.view.visibility ~= 0) then
+      self.view.visibility = 0;
+      self:UpdateViewTexture()
+    end
   end,
   ["UpdateViewTexture"] = function(self)
-    local visibility = self.view.func()
+    local visibility = self.view.visibility
     if(visibility == 2) then
       self.view.texture:SetTexture("Interface\\LFGFrame\\BattlenetWorking0.blp");
     elseif(visibility == 1) then
@@ -127,7 +142,7 @@ Constructor
 
 local function Constructor()
   local name = Type..AceGUI:GetNextWidgetNum(Type)
-  local button = CreateFrame("BUTTON", name, UIParent, "OptionsListButtonTemplate");
+  local button = CreateFrame("Button", name, UIParent, "OptionsListButtonTemplate");
   button:SetHeight(20);
   button:SetWidth(1000);
   button:SetDisabledFontObject("GameFontNormal");
@@ -136,10 +151,10 @@ local function Constructor()
   button.background = background;
   background:SetTexture("Interface\\BUTTONS\\UI-Listbox-Highlight2.blp");
   background:SetBlendMode("ADD");
-  background:SetVertexColor(0.5, 0.5, 0.5, 0.25);
+  background:SetVertexColor(0.5, 0.5, 0.5, 0.6);
   background:SetAllPoints(button);
 
-  local expand = CreateFrame("BUTTON", nil, button);
+  local expand = CreateFrame("Button", nil, button);
   button.expand = expand;
   expand.expanded = true;
   expand.disabled = true;
@@ -157,14 +172,14 @@ local function Constructor()
   expand:SetScript("OnEnter", function() Show_Tooltip(button, expand.title, expand.desc) end);
   expand:SetScript("OnLeave", Hide_Tooltip);
 
-  local view = CreateFrame("BUTTON", nil, button);
+  local view = CreateFrame("Button", nil, button);
   button.view = view;
   view:SetWidth(16);
   view:SetHeight(16);
   view:SetPoint("RIGHT", button, "RIGHT", -16, 0);
   local viewTexture = view:CreateTexture()
   view.texture = viewTexture;
-  viewTexture:SetTexture("Interface\\LFGFrame\\BattlenetWorking1.blp");
+  viewTexture:SetTexture("Interface\\LFGFrame\\BattlenetWorking4.blp");
   viewTexture:SetTexCoord(0.1, 0.9, 0.1, 0.9);
   viewTexture:SetAllPoints(view);
   view:SetNormalTexture(viewTexture);
@@ -173,7 +188,6 @@ local function Constructor()
   view:SetScript("OnEnter", function() Show_Tooltip(button, L["View"], view.desc) end);
   view:SetScript("OnLeave", Hide_Tooltip);
   view.visibility = 0;
-  view.func = function() return view.visibility end;
 
   local widget = {
     frame = button,

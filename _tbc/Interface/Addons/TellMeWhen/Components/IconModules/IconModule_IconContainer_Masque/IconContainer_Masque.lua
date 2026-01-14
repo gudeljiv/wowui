@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -16,6 +16,8 @@ if not TMW then return end
 local TMW = TMW
 local L = TMW.L
 local print = TMW.print
+
+local GetAddOnInfo = C_AddOns and C_AddOns.GetAddOnInfo or GetAddOnInfo
 
 local LMB = LibStub("Masque", true) or (LibMasque and LibMasque("Button"))
 
@@ -65,36 +67,15 @@ end
 
 
 
-if LMB.GetSpellAlert then
-	-- Copied (and slightly modified) from masque so that TMW's activation borders will get skinned properly when they aren't square.
+if LMB.UpdateSpellAlert then
 	IconContainer_Masque:PostHookMethod("ShowOverlayGlow", function(self)
-		local self = self.container
-		local Overlay = self.overlay
-		if not Overlay or not Overlay.spark then return end
-		if Overlay.__MSQ_Shape ~= self.__MSQ_Shape then
-			local Shape = self.__MSQ_Shape
-
-			local Glow, Ants
-			if Shape then
-				Glow, Ants = LMB:GetSpellAlert(Shape)
-			end
-			if not (Shape and (Glow or Ants)) then
-				Glow, Ants = LMB:GetSpellAlert("Square")
-			end
-
-			Overlay.innerGlow:SetTexture(Glow)
-			Overlay.innerGlowOver:SetTexture(Glow)
-			Overlay.outerGlow:SetTexture(Glow)
-			Overlay.outerGlowOver:SetTexture(Glow)
-			Overlay.spark:SetTexture(Glow)
-			Overlay.ants:SetTexture(Ants)
-			Overlay.__MSQ_Shape = self.__MSQ_Shape
-		end
+		LMB:UpdateSpellAlert(self.container)
 	end)
 end
 
 function IconContainer_Masque:OnNewInstance_IconContainer_Masque(icon)
 	self.lmbGroup = GetLMBGroup(icon)
+	icon.lmbGroup = self.lmbGroup
 end
 
 

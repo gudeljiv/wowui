@@ -48,8 +48,8 @@ MinimapZoomIn:UnregisterAllEvents()
 MinimapZoomOut:Hide()
 MinimapZoomOut:UnregisterAllEvents()
 
-MiniMapWorldMapButton:Hide()
-MiniMapWorldMapButton:UnregisterAllEvents()
+-- MiniMapWorldMapButton:Hide()
+-- MiniMapWorldMapButton:UnregisterAllEvents()
 
 MinimapNorthTag:SetAlpha(0)
 
@@ -113,16 +113,16 @@ Minimap:SetScript(
 
 -- Modify the minimap tracking
 
-Minimap:SetScript(
-	"OnMouseUp",
-	function(self, button)
-		if button == "RightButton" then
-			ToggleDropDownMenu(level, value, MiniMapTrackingDropDown, self, -(Minimap:GetWidth() * 0.7), -3)
-		else
-			Minimap_OnClick(self)
-		end
-	end
-)
+-- Minimap:SetScript(
+-- 	"OnMouseUp",
+-- 	function(self, button)
+-- 		if button == "RightButton" then
+-- 			ToggleDropDownMenu(level, value, MiniMapTrackingDropDown, self, -(Minimap:GetWidth() * 0.7), -3)
+-- 		else
+-- 			Minimap_OnClick(self)
+-- 		end
+-- 	end
+-- )
 
 -- Skin the ticket status frame
 

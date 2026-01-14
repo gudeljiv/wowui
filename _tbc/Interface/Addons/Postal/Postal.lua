@@ -51,16 +51,33 @@ local defaults = {
 			DisableBlizzardAutoComplete = false,
 			UseAutoComplete = true,
 		},
+		QuickAttach = {
+			EnableBag0 = true,
+			EnableBag1 = true,
+			EnableBag2 = true,
+			EnableBag3 = true,
+			EnableBag4 = true,
+			EnableBag5 = true,
+		},
 	},
 	global = {
 		BlackBook = {
 			alts = {},
+		EnableDefault = false,
 		},
 	},
 }
 local _G = getfenv(0)
 local t = {}
+Postal3DB = {}
 Postal.keepFreeOptions = {0, 1, 2, 3, 5, 10, 15, 20, 25, 30}
+
+Postal.WOWClassic = false
+Postal.WOWBCClassic = false
+Postal.WOWWotLKClassic = false
+Postal.WOWCataClassic = false
+Postal.WOWMists = false
+Postal.WOWRetail = false
 
 -- Use a common frame and setup some common functions for the Postal dropdown menus
 local Postal_DropDownMenu = CreateFrame("Frame", "Postal_DropDownMenu")
@@ -90,17 +107,49 @@ local function subjectHoverOut(self)
 	GameTooltip:Hide()
 end
 
+function Postal:PLAYER_INTERACTION_MANAGER_FRAME_HIDE(eventName, ...)
+	local paneType = ...
+	if paneType ==  Enum.PlayerInteractionType.MailInfo then Postal:MAIL_CLOSED() end
+end
 
 ---------------------------
 -- Postal Core Functions --
 ---------------------------
 
 function Postal:OnInitialize()
+
+	--print("Postal is Active and Running");
+
+	-- Detect which release of WOW is running and set appropriate flags
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC then Postal.WOWClassic = true end
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC then Postal.WOWBCClassic = true end
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_WRATH_CLASSIC then Postal.WOWWotLKClassic = true end
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_CATACLYSM_CLASSIC then Postal.WOWCataClassic = true end
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MISTS_CLASSIC then Postal.WOWMists = true end
+	if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then Postal.WOWRetail = true end
+	if _G.WOW_PROJECT_ID == _G.LE_EXPANSION_11_0 then Postal.WOWRetail = true end
+--	if Postal.WOWClassic then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW Classic", 0.0, 0.69, 0.94) end
+--	if Postal.WOWBCClassic then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW BC Classic", 0.0, 0.69, 0.94) end
+--	if Postal.WOWWotLKClassic then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW WotLK Classic", 0.0, 0.69, 0.94) end
+--	if Postal.WOWCataClassic then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW Cataclysm Classic", 0.0, 0.69, 0.94) end
+--	if Postal.WOWMists then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW Mists Classic", 0.0, 0.69, 0.94) end
+--	if Postal.WOWRetail then DEFAULT_CHAT_FRAME:AddMessage("Postal WOW Retail", 0.0, 0.69, 0.94) end
+--	if Postal.WOWRetail then DEFAULT_CHAT_FRAME:AddMessage("LE_EXPANSION_11_0", 0.0, 0.69, 0.94) end
 	-- Version number
-	if not self.version then self.version = GetAddOnMetadata("Postal", "Version") end
+	if not self.version then self.version = C_AddOns.GetAddOnMetadata("Postal", "Version") end
 
 	-- Initialize database
-	self.db = LibStub("AceDB-3.0"):New("Postal3ClassicDB", defaults)
+	local EnableDefault = false
+	if Postal3DB and Postal3DB.global then
+		EnableDefault = Postal3DB.global.EnableDefault and true or false
+	end
+--	if type(next(Postal3DB)) ~= "nil" then EnableDefault = Postal3DB.global.EnableDefault end
+	if EnableDefault == true then
+		self.db = LibStub("AceDB-3.0"):New("Postal3DB", defaults, true)
+	else
+		self.db = LibStub("AceDB-3.0"):New("Postal3DB", defaults)
+	end
+--	self.db = LibStub("AceDB-3.0"):New("Postal3DB", defaults)
 	self.db.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileReset", "OnProfileChanged")
@@ -114,13 +163,18 @@ function Postal:OnInitialize()
 	end
 
 	-- Register events
-	self:RegisterEvent("MAIL_CLOSED")
+	if Postal.WOWBCClassic then
+		self:RegisterEvent("MAIL_CLOSED")
+	else
+		self:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE")
+	end
 
 	-- Create the Menu Button
 	local Postal_ModuleMenuButton = CreateFrame("Button", "Postal_ModuleMenuButton", MailFrame)
 	Postal_ModuleMenuButton:SetWidth(25)
 	Postal_ModuleMenuButton:SetHeight(25)
 	Postal_ModuleMenuButton:SetPoint("TOPRIGHT", -22, 2)
+	if Postal.WOWRetail then Postal_ModuleMenuButton:SetFrameLevel(501) end -- Seems like a Blizzard bug to need this to make Postal menu visible.
 	Postal_ModuleMenuButton:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
 	Postal_ModuleMenuButton:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Round")
 	Postal_ModuleMenuButton:SetDisabledTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Disabled")
@@ -164,12 +218,16 @@ function Postal:OnModuleEnable_Common()
 end
 
 -- Hides the minimap unread mail button if there are no unread mail on closing the mailbox.
--- Does not scan past the first 50 items since only the first 50 are viewable.
+-- Does not scan past the first 100 items since only the first 100 are viewable.
 function Postal:MAIL_CLOSED()
 	for i = 1, GetInboxNumItems() do
 		if not select(9, GetInboxHeaderInfo(i)) then return end
 	end
-	MiniMapMailFrame:Hide()
+	if Postal.WOWClassic or Postal.WOWBCClassic or Postal.WOWWotLKClassic or Postal.WOWCataClassic or Postal.WOWMists then
+		MiniMapMailFrame:Hide()
+	else
+		MiniMapMailFrameMixin:OnLeave()
+	end
 end
 
 function Postal:Print(...)
@@ -215,6 +273,10 @@ function Postal.SetChatOutput(dropdownbutton, arg1, arg2, checked)
 	Postal.db.profile.ChatOutput = arg1
 end
 
+function Postal.EnableDefault(dropdownbutton, arg1, arg2, checked)
+	Postal.db.global.EnableDefault = checked
+end
+
 function Postal.ProfileFunc(dropdownbutton, arg1, arg2, checked)
 	if arg1 == "NewProfile" then
 		StaticPopup_Show("POSTAL_NEW_PROFILE")
@@ -232,16 +294,16 @@ StaticPopupDialogs["POSTAL_NEW_PROFILE"] = {
 	maxLetters = 128,
 	editBoxWidth = 350,  -- Needed in Cata
 	OnAccept = function(self)
-		Postal.db:SetProfile(strtrim(self.editBox:GetText()))
+		Postal.db:SetProfile(strtrim(StaticPopup1EditBox:GetText()))
 	end,
 	OnShow = function(self)
-		self.editBox:SetText(Postal.db:GetCurrentProfile())
-		self.editBox:SetFocus()
+		StaticPopup1EditBox:SetText(Postal.db:GetCurrentProfile())
+		StaticPopup1EditBox:SetFocus()
 	end,
 	OnHide = StaticPopupDialogs["SET_GUILDPLAYERNOTE"].OnHide,
 	EditBoxOnEnterPressed = function(self)
 		local parent = self:GetParent()
-		Postal.db:SetProfile(strtrim(parent.editBox:GetText()))
+		Postal.db:SetProfile(strtrim(StaticPopup1EditBox:GetText()))
 		parent:Hide()
 	end,
 	EditBoxOnEscapePressed = StaticPopupDialogs["SET_GUILDPLAYERNOTE"].EditBoxOnEscapePressed,
@@ -324,6 +386,14 @@ function Postal.Menu(self, level)
 	elseif level == 2 then
 		if UIDROPDOWNMENU_MENU_VALUE == "OpenSpeed" then
 			local speed = Postal.db.profile.OpenSpeed
+			for i = 0, 0 do
+				local s = 0
+				info.text = format("%0.2f", s)
+				info.func = Postal.SetOpenSpeed
+				info.checked = s == speed
+				info.arg1 = s
+				UIDropDownMenu_AddButton(info, level)
+			end
 			for i = 0, 13 do
 				local s = 0.3 + i*0.05
 				info.text = format("%0.2f", s)
@@ -383,6 +453,14 @@ function Postal.Menu(self, level)
 			info.func = Postal.ProfileFunc
 			info.arg1 = "ResetProfile"
 			info.arg2 = nil
+			UIDropDownMenu_AddButton(info, level)
+
+			info.keepShownOnClick = 1
+			info.isNotRadio = 1
+			info.notCheckable = nil
+			info.text = L["Default"]
+			info.func = Postal.EnableDefault
+			info.checked = Postal.db.global.EnableDefault
 			UIDropDownMenu_AddButton(info, level)
 
 		elseif type(UIDROPDOWNMENU_MENU_VALUE) == "table" and UIDROPDOWNMENU_MENU_VALUE.ModuleMenu then
@@ -447,7 +525,7 @@ function Postal:CreateAboutFrame()
 		aboutFrame.editBox = Chatter:GetModule("Chat Copy").editBox
 	end
 	if not aboutFrame or not aboutFrame.editBox then
-		aboutFrame = CreateFrame("Frame", "PostalAboutFrame", UIParent)
+		aboutFrame = CreateFrame("Frame", "PostalAboutFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		tinsert(UISpecialFrames, "PostalAboutFrame")
 		aboutFrame:SetBackdrop({
 			bgFile = [[Interface\DialogFrame\UI-DialogBox-Background]],
@@ -489,9 +567,9 @@ end
 
 function Postal.About()
 	if Postal.CreateAboutFrame then Postal:CreateAboutFrame() end
-	local version = GetAddOnMetadata("Postal", "Version")
+	local version = C_AddOns.GetAddOnMetadata("Postal", "Version")
 	wipe(t)
-	tinsert(t, "|cFFFFCC00"..GetAddOnMetadata("Postal", "Title").." v"..version.."|r")
+	tinsert(t, "|cFFFFCC00"..C_AddOns.GetAddOnMetadata("Postal", "Title").." v"..version.."|r")
 	tinsert(t, "-----")
 	tinsert(t, "")
 	for name, module in Postal:IterateModules() do
@@ -506,7 +584,7 @@ function Postal.About()
 		tinsert(t, "")
 	end
 	tinsert(t, "-----")
-	tinsert(t, L["Please post bugs or suggestions at the wowace forums thread at |cFF00FFFFhttp://forums.wowace.com/showthread.php?t=3909|r. When posting bugs, indicate your locale and Postal's version number v%s."]:format(version))
+	tinsert(t, L["Please post bugs or suggestions at the CurseForge forums thread at |cFF00FFFFhttp://www.curseforge.com/wow/addons/postal/issues|r. When posting bugs, indicate your locale and Postal's version number v%s."]:format(version))
 	tinsert(t, "")
 	tinsert(t, "- Xinhuan (Blackrock/Barthilas US Alliance)")
 	tinsert(t, "")

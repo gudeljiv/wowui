@@ -4,13 +4,16 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Groups = TSM.UI.MailingUI:NewPackage("Groups")
-local L = TSM.Include("Locale").GetTable()
-local FSM = TSM.Include("Util.FSM")
-local Log = TSM.Include("Util.Log")
-local Settings = TSM.Include("Service.Settings")
-local UIElements = TSM.Include("UI.UIElements")
+local TSM = select(2, ...) ---@type TSM
+local Groups = TSM.UI.MailingUI:NewPackage("Groups") ---@type AddonPackage
+local L = TSM.Locale.GetTable()
+local FSM = TSM.LibTSMUtil:Include("FSM")
+local ChatMessage = TSM.LibTSMService:Include("UI.ChatMessage")
+local TempTable = TSM.LibTSMUtil:Include("BaseType.TempTable")
+local Group = TSM.LibTSMTypes:Include("Group")
+local GroupOperation = TSM.LibTSMTypes:Include("GroupOperation")
+local UIElements = TSM.LibTSMUI:Include("Util.UIElements")
+local UIUtils = TSM.LibTSMUI:Include("Util.UIUtils")
 local private = {
 	settings = nil,
 	filterText = "",
@@ -24,8 +27,8 @@ local SECONDS_PER_MINUTE = 60
 -- Module Functions
 -- ============================================================================
 
-function Groups.OnInitialize()
-	private.settings = Settings.NewView()
+function Groups.OnInitialize(settingsDB)
+	private.settings = settingsDB:NewView()
 		:AddKey("char", "mailingUIContext", "groupTree")
 		:AddKey("global", "mailingOptions", "resendDelay")
 	private.FSMCreate()
@@ -39,7 +42,7 @@ end
 -- ============================================================================
 
 function private.GetGroupsFrame()
-	TSM.UI.AnalyticsRecordPathChange("mailing", "groups")
+	UIUtils.AnalyticsRecordPathChange("mailing", "groups")
 	return UIElements.New("Frame", "groups")
 		:SetLayout("VERTICAL")
 		:AddChild(UIElements.New("Frame", "container")
@@ -72,14 +75,11 @@ function private.GetGroupsFrame()
 				)
 			)
 		)
-		:AddChild(UIElements.New("Texture", "line")
-			:SetHeight(2)
-			:SetTexture("ACTIVE_BG")
-		)
+		:AddChild(UIElements.New("HorizontalLine", "line"))
 		:AddChild(UIElements.New("ApplicationGroupTree", "groupTree")
 			:SetMargin(0, 0, 0, 1)
 			:SetSettingsContext(private.settings, "groupTree")
-			:SetQuery(TSM.Groups.CreateQuery(), "Mailing")
+			:SetQuery(GroupOperation.CreateQuery(), "Mailing")
 			:SetSearchString(private.filterText)
 			:SetScript("OnGroupSelectionChanged", private.GroupTreeOnGroupSelectionChanged)
 		)
@@ -96,7 +96,7 @@ function private.GetGroupsFrame()
 			:AddChild(UIElements.New("Texture", "vline")
 				:SetWidth(1)
 				:SetMargin(8, 8, 2, 2)
-				:SetTexture("ACTIVE_BG_ALT")
+				:SetColor("ACTIVE_BG_ALT")
 			)
 			:AddChild(UIElements.New("Text", "itemsText")
 				:SetWidth("AUTO")
@@ -106,10 +106,7 @@ function private.GetGroupsFrame()
 				:SetText(L["Total Items"]..": ".."0")
 			)
 		)
-		:AddChild(UIElements.New("Texture", "line")
-			:SetHeight(2)
-			:SetTexture("ACTIVE_BG")
-		)
+		:AddChild(UIElements.New("HorizontalLine", "line"))
 		:AddChild(UIElements.New("Frame", "bottom")
 			:SetLayout("VERTICAL")
 			:SetHeight(40)
@@ -175,10 +172,10 @@ function private.GroupTreeOnGroupSelectionChanged(groupTree)
 	local numGroups, numItems = 0, 0
 	for _, groupPath in groupTree:SelectedGroupsIterator() do
 		numGroups = numGroups + 1
-		if groupPath == TSM.CONST.ROOT_GROUP_PATH then
+		if groupPath == Group.GetRootPath() then
 			-- TODO
 		else
-			for _ in TSM.Groups.ItemIterator(groupPath) do
+			for _ in Group.ItemIterator(groupPath) do
 				numItems = numItems + 1
 			end
 		end
@@ -240,14 +237,15 @@ function private.FSMCreate()
 		:AddState(FSM.NewState("ST_SENDING_START")
 			:SetOnEnter(function(context, sendRepeat, isDryRun)
 				context.sending = true
-				local groups = {}
+				local groups = TempTable.Acquire()
 				for _, groupPath in context.frame:GetElement("groupTree"):SelectedGroupsIterator() do
 					tinsert(groups, groupPath)
 				end
 				if isDryRun then
-					Log.PrintUser(L["Performing a dry-run of your Mailing operations for the selected groups."])
+					ChatMessage.PrintUser(L["Performing a dry-run of your Mailing operations for the selected groups."])
 				end
 				TSM.Mailing.Groups.StartSending(private.FSMGroupsCallback, groups, sendRepeat, isDryRun)
+				TempTable.Release(groups)
 				UpdateButton(context)
 			end)
 			:SetOnExit(function(context)

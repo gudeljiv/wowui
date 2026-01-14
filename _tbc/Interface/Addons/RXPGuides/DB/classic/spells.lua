@@ -1,20 +1,6 @@
 local _, addon = ...
-
-addon.professionID = {
-    alchemy = {2259, 3101, 3464, 11611},
-    blacksmithing = {2018, 3100, 3538, 9785},
-    enchanting = {13920, 7411, 7412, 7413},
-    engineering = {4036, 4037, 4038, 12656},
-    herbalism = {2383},
-    leatherworking = {2108, 3104, 3811, 10662},
-    mining = {2656},
-    skinning = {8613, 8617, 8618, 10768},
-    tailoring = {3908, 3909, 3910, 12180},
-    cooking = {2550, 3102, 3413, 18260},
-    firstaid = {3273, 3274, 7924, 10846},
-    fishing = {7620, 7731, 7732, 18248}
-}
-
+--regular classic era spell list
+if addon.game ~= "CLASSIC" or addon.player.season == 2 then return end
 C_Spell.RequestLoadSpellData(2575) -- mining
 C_Spell.RequestLoadSpellData(2368) -- herbalism
 
@@ -244,16 +230,17 @@ s["DRUID"] = {
 
 s["PALADIN"] = {
     [1] = {
-        465 -- Devotion Aura
+        465, -- Devotion Aura
+        2018 -- Blacksmithing
     },
     [4] = {
         20271, -- Judgement
         19740 -- Blessing of might
     },
     [6] = {
-        498, -- Divine protection
         639, -- Holy Light R2
-        3127 -- parry
+        3128, -- parry
+        498 -- Divine protection
     },
     [8] = {
         853, -- Hammer of Justice
@@ -404,19 +391,19 @@ s["SHAMAN"] = {
         8042 -- earth shock
     },
     [6] = {
-        2484, -- earthbind totem
+--      2484, -- earthbind totem
         332 -- healing wave r2
     },
     [8] = {
+        8018, -- rockbiter weapon r2
         8044, -- earth shock r2
         324, -- lightning shield
-        5730, -- stoneclaw totem
-        8018 -- rockbiter weapon r2
+        529, -- Lightning Bolt r2
+        5730 -- stoneclaw totem
     },
     [10] = {
         850, -- flame shock
         8075, -- strength of earth totem
-        529, -- Lightning Bolt r2 (10 instead of 8 to save money)
         8024 -- Flametongue Weapon
     },
     [12] = {
@@ -603,6 +590,7 @@ s["HUNTER"] = {
         24549 -- natural armor r2
     },
     [14] = {
+        14281, -- arcane shot 2
         6197, -- eagle eye
         1513 -- scare beast
     },
@@ -611,14 +599,13 @@ s["HUNTER"] = {
         5118 -- aspect of the cheetah - high prio, can only be trained at 20
     },
     [18] = {
-        14281, -- arcane shot 2
         14318, -- aspect of the hawk r2
         13550, -- serpent sting r3
         3111, -- mend pet r2
-        781 -- disengage r1
+        15147, -- growl r3
     },
     [20] = {
-        15147, -- growl r3
+        781, -- disengage r1
         4187, -- great stamina r3
         24550, -- natural armor r3
         24494, -- nature res
@@ -739,7 +726,7 @@ s["WARRIOR"] = {
     [4] = {
         100, -- charge
         772, -- rend
-        3127 -- parry
+        3128 -- parry
     },
     [8] = {
         1715, -- hamstring
@@ -844,60 +831,81 @@ s["ROGUE"] = {
         1784 -- stealth
     },
     [6] = {
-        1776, -- gouge
+        --1776, -- gouge
         1757, -- sinister strike r2
-        3127 -- parry
+        --1784 -- stealth
+        3273 --First Aid
     },
     [8] = {
+        1776, -- gouge
+        6760, -- eviscerate r2
         5277, -- evasion
-        6760 -- eviscerate r2
+        3273, --first aid
+        1784 -- stealth
     },
     [10] = {
-        921, -- pick pocket
+            5277, -- evasion
+        1424, -- dual wield
         2983, -- sprint
-        6452, -- Anti-venom(FA)
-        674 -- dual wield
+        201, --1h Swords
+	    2575 --mining
+        --6452 -- Anti-venom(FA)
+
     },
     [12] = {
-        1766, -- kick
-        6770, -- sap
+        3128, -- parry
+        --1766, -- kick
         5171 -- slice and dice
+        --6770, -- sap
+        --5171, -- slice and dice
     },
     [14] = {
-        703, -- garrote
-        1758 -- sinister strike r3
+        3128, -- parry
+        1758, -- sinister strike r3
+        --1766, -- kick
+        5171, -- slice and dice
+        198 --1h Maces
+        --703, -- garrote
     },
     [16] = {
         6761, -- eviscerate r3
-        1804 -- Pick Lock
+        5167, -- pick pocket
+        198 --1h Maces
     },
     [20] = {
-        1785, -- stealth r2
-        1943, -- rupture
-        8676 -- ambush
+        5167, -- pick pocket
+        1804, -- Pick Lock
+        1785 -- stealth r2
+        --1943, -- rupture
+        --8676 -- ambush
     },
     [22] = {
+        1856, -- vanish
         1725, -- distract
         1759, -- sinister strike r4
-        1856, -- vanish
+        703, -- garrote r1
         8631 -- garrote r2
     },
     [24] = {
-        6762 -- eviscerate r4
+        6762, -- eviscerate r4
+        3420,  -- crippling poison r1
+        2836 --detect traps
     },
     [26] = {
-        1767, -- kick r2
-        1833 -- cheap shot
+        --1767 -- kick r2
     },
     [28] = {
-        8639, -- rupture r2
         8687, -- instant poison 2
-        2070 -- sap r2
+        --1943, -- rupture
+        --8639 -- rupture r2
+        --1833, -- cheap shot
+        --2070 -- sap r2
     },
     [30] = {
-        408, -- kidney shot
-        1760, -- sinister strike
-        8632 -- garrote r3
+        8687, -- instant poison 2
+        1760 -- sinister strike
+        --408, -- kidney shot
+        --8632 -- garrote r3
     },
     [32] = {
         8623 -- eviscerate r5
@@ -908,8 +916,11 @@ s["ROGUE"] = {
         8696 -- sprint r2
     },
     [36] = {
+        2094, -- blind
+        6510, -- blinding powder
+        8696, -- sprint r2
         8640, -- rupture r3
-        8691 -- instant posion 3
+        8688 -- instant posion 3
     },
     [38] = {
         8621, -- sinister strike r6
@@ -921,31 +932,34 @@ s["ROGUE"] = {
         1726 -- stealth r3
     },
     [42] = {
-        1768, -- kick r3
+        --1768, -- kick r3
         1857, -- vanish r2
         6774 -- slice and dice r2
     },
     [44] = {
         11273, -- rupture r4
-        11341, -- instant poison r4
-        1777, -- gouge r2
-        8629 -- gouge r3
+        11341 -- instant poison r4
+        --1777, -- gouge r2
+        --8629 -- gouge r3
     },
     [46] = {
         11289, -- garrote r5
         11293, -- sinister strike r7
-        11285 -- gouge r4
+        --11285 -- gouge r4
     },
     [48] = {
-        11299, -- eviscerate r7
-        11297 -- sap r3
+        11299 -- eviscerate r7
+        --11297 -- sap r3
     },
     [50] = {
-        8643 -- kidney shot r2
+        8643, -- kidney shot r2
+        11297 -- sap r3
     },
     [52] = {
         11274, -- rupture r5
-        11342 -- instant poison r5
+        11342, -- instant poison r5
+        8643, -- kidney shot r2
+        11297 -- sap r3
     },
     [54] = {
         11290, -- garrote r6
@@ -955,7 +969,7 @@ s["ROGUE"] = {
         11300 -- eviscerate r8
     },
     [58] = {
-        1769, -- kick r4
+        --1769, -- kick r4
         11305 -- sprint r3
     },
     [60] = {
@@ -1138,8 +1152,10 @@ s["WARLOCK"] = {
 }
 
 s["MAGE"] = {
-    [4] = {
+    [1] = {
         1459, -- Arcane Intellect
+    },
+    [4] = {
         116 -- frostbolt
     },
     [6] = {
@@ -1217,7 +1233,7 @@ s["MAGE"] = {
         8438, -- arcane explosion r3
         6127, -- conjure water r4
         8412, -- fire blast r4
-        8101, -- fireball r6
+        8401, -- fireball r6
         7302, -- ice armor
         3565, -- darnassus
         3566 -- thunder bluff

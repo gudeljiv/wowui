@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -15,11 +15,14 @@ if not TMW then return end
 local L = TMW.L
 
 local print = TMW.print
-local UnitGUID = 
-	  UnitGUID
+local UnitGUID = UnitGUID
+local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
 
+local GetSpellInfo = TMW.GetSpellInfo
 local GetSpellTexture = TMW.GetSpellTexture
+local GetSpellName = TMW.GetSpellName
 local strlowerCache = TMW.strlowerCache
+local spellTextureCache = TMW.spellTextureCache
 
 local pGUID = nil -- UnitGUID() returns nil at load time, so we set this later.
 
@@ -65,20 +68,29 @@ Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
 })
 
 Type:RegisterConfigPanel_ConstructorFunc(120, "TellMeWhen_ICDType", function(self)
-	self:SetTitle(TMW.L["ICONMENU_ICDTYPE"])
+	self:SetTitle(L["ICONMENU_ICDTYPE"])
 	self:BuildSimpleCheckSettingFrame({
 		numPerRow = 1,
 		function(check)
-			check:SetTexts(TMW.L["ICONMENU_ICDBDE"], TMW.L["ICONMENU_ICDAURA_DESC"])
-			check:SetSetting("ICDType", "aura")
-		end,
-		function(check)
-			check:SetTexts(TMW.L["ICONMENU_SPELLCAST_COMPLETE"], TMW.L["ICONMENU_SPELLCAST_COMPLETE_DESC"])
+			check:SetTexts(L["ICONMENU_SPELLCAST_COMPLETE"], L["ICONMENU_SPELLCAST_COMPLETE_DESC"])
 			check:SetSetting("ICDType", "spellcast")
 		end,
 		function(check)
-			check:SetTexts(TMW.L["ICONMENU_SPELLCAST_START"], TMW.L["ICONMENU_SPELLCAST_START_DESC"])
+			check:SetTexts(L["ICONMENU_SPELLCAST_START"], L["ICONMENU_SPELLCAST_START_DESC"])
 			check:SetSetting("ICDType", "caststart")
+		end,
+		function(check)
+			if not CombatLogGetCurrentEventInfo then
+				check:SetTexts(L["ICONMENU_ICDBDE"] .. " (" .. L["ICONMENU_OBSOLETE_SHORT"] .. ")", L["ICONMENU_OBSOLETE_DESC"])
+			else
+				check:SetTexts(L["ICONMENU_ICDBDE"], L["ICONMENU_ICDAURA_DESC"])
+			end
+			check:SetSetting("ICDType", "aura")
+			
+			check:CScriptAdd("ReloadRequested", function()				
+				check:SetShown(CombatLogGetCurrentEventInfo or TMW.CI.ics.ICDType == "aura")
+				check:GetParent():AdjustHeight()
+			end)
 		end,
 	})
 end)
@@ -101,14 +113,20 @@ TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function()
 end)
 
 
-local function ICD_OnEvent(icon, event, unit, _, spellID)
-	local valid, spellName, _
-
+-- Auras that don't report a source, but can only be self-applied,
+-- so if the destination is the player, we know its the player's proc.
+local noSource = {
+	[159679] = true, -- mark of blackrock
+	[159678] = true, -- mark of shadowmoon
+}
+local function ICD_OnEvent(icon, event, ...)
+	local valid, spellID, spellName, _
+	
 	if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 		local cevent, sourceGUID
 		_, cevent, _, sourceGUID, _, _, _, destGUID, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
 
-		valid = (sourceGUID == pGUID) and (
+		valid = (sourceGUID == pGUID or (noSource[spellID] and destGUID == pGUID)) and (
 			cevent == "SPELL_AURA_APPLIED" or
 			cevent == "SPELL_AURA_REFRESH" or
 			cevent == "SPELL_ENERGIZE" or
@@ -118,23 +136,34 @@ local function ICD_OnEvent(icon, event, unit, _, spellID)
 			cevent == "SPELL_MISSED"
 		)
 
-	elseif unit == "player" and (event == "UNIT_SPELLCAST_SUCCEEDED" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "UNIT_SPELLCAST_START") then
-		spellName = GetSpellInfo(spellID)
-		valid = true
+	elseif 
+			event == "UNIT_SPELLCAST_SUCCEEDED" 
+			or event == "UNIT_SPELLCAST_CHANNEL_START" 
+			or event == "UNIT_SPELLCAST_START" 
+			or event == "UNIT_SPELLCAST_EMPOWER_START"
+			then
+		local unit
+		unit, _, spellID = ...
+		spellName = GetSpellName(spellID)
+
+		valid = unit == "player"
 	end
 
 	if valid then
 		local NameHash = icon.Spells.Hash
-		local Key = NameHash[spellID] or NameHash[strlowerCache[spellName]]
+		local Key = 
+			spellID == 0 and icon.Spells.StringHash[strlowerCache[spellName]] or 
+			(NameHash[spellID] or NameHash[strlowerCache[spellName]])
+			
 		if Key and not (icon.DontRefresh and (TMW.time - icon.ICDStartTime) < icon.Spells.Durations[Key]) then
 			-- Make sure we don't reset a running timer if we shouldn't.
 			-- If everything is good, record the data about this event and schedule an icon update.
 
 			icon.ICDStartTime = TMW.time
 			icon.ICDDuration = icon.Spells.Durations[Key]
-			icon:SetInfo("spell; texture",
+			icon:SetInfo("spell; texture", 
 				icon.ICDID,
-				GetSpellTexture(spellID == 0 and spellName or spellID)
+				spellTextureCache[spellID == 0 and spellName or spellID]
 			)
 			icon.NextUpdateTime = 0
 		end
@@ -175,8 +204,13 @@ function Type:Setup(icon)
 	elseif icon.ICDType == "caststart" then
 		icon:RegisterEvent("UNIT_SPELLCAST_START")
 		icon:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START")
-	elseif icon.ICDType == "aura" then
-		icon:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+	elseif icon.ICDType == "aura" and CombatLogGetCurrentEventInfo then
+		if CombatLogGetCurrentEventInfo then
+			icon:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+		else
+			icon:SetInfo("texture", 237555)
+			return
+		end
 	end
 	icon:SetScript("OnEvent", ICD_OnEvent)
 

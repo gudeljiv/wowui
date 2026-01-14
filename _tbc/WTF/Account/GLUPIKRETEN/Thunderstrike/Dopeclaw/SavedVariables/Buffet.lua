@@ -1,0 +1,5 @@
+
+BuffetDB = {
+["ignoredItems"] = {
+},
+}

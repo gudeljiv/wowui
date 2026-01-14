@@ -1,32 +1,40 @@
-local TOCNAME,Addon = ...
-Addon.Tool=Addon.Tool or {}
-local Tool=Addon.Tool
+local TOCNAME,
+	---@class Addon_Tool	
+	Addon = ...;
+
+local MAX_PLAYER_LEVEL = GetMaxPlayerLevel()
+
+Addon.Metadata = {
+	Title = C_AddOns.GetAddOnMetadata(TOCNAME, "Title"),
+	Version = C_AddOns.GetAddOnMetadata(TOCNAME, "Version"),
+	Author = C_AddOns.GetAddOnMetadata(TOCNAME, "Author"),
+	Notes = C_AddOns.GetAddOnMetadata(TOCNAME, "Notes"),
+}
+
+---@class ToolBox
+local Tool = {}
+Addon.Tool = Tool
 
 Tool.IconClassTexture="Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES"
 Tool.IconClassTextureWithoutBorder="Interface\\WorldStateFrame\\ICONS-CLASSES"
-Tool.IconClassTextureCoord=CLASS_ICON_TCOORDS
-Tool.IconClass={
-  ["WARRIOR"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:0:64|t",
-  ["MAGE"]=		"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:64:128:0:64|t",
-  ["ROGUE"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:128:192:0:64|t",
-  ["DRUID"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:192:256:0:64|t",
-  ["HUNTER"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:64:128|t",
-  ["SHAMAN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:64:128:64:128|t",
-  ["PRIEST"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:128:192:64:128|t",
-  ["WARLOCK"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:192:256:64:128|t",
-  ["PALADIN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:0:0:0:0:256:256:0:64:128:192|t",
-  }
-Tool.IconClassBig={
-  ["WARRIOR"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:0:64|t",
-  ["MAGE"]=		"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:64:128:0:64|t",
-  ["ROGUE"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:128:192:0:64|t",
-  ["DRUID"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:192:256:0:64|t",
-  ["HUNTER"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:64:128|t",
-  ["SHAMAN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:64:128:64:128|t",
-  ["PRIEST"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:128:192:64:128|t",
-  ["WARLOCK"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:192:256:64:128|t",
-  ["PALADIN"]=	"|TInterface\\WorldStateFrame\\ICONS-CLASSES:18:18:-4:4:256:256:0:64:128:192|t",
-  }  
+
+---@param classFile string
+---@param size number?
+function Tool.GetClassIcon(classFile, size)
+	assert(type(classFile) == "string", "Usage: Tool.GetClassIcon(class: string, size: number?)", classFile)
+	local coords = CLASS_ICON_TCOORDS[classFile:upper()];
+	local size = size or 14;
+	if coords then
+		local icon = CreateTextureMarkup(
+			"Interface\\WorldStateFrame\\ICONS-CLASSES",
+			256, 256, -- og size
+			size, size, -- new size
+			coords[1], coords[2], coords[3], coords[4], -- texCoords
+			0, 1 -- x, y offsets
+		);
+		return icon;
+	end
+end
   
 Tool.RaidIconNames=ICON_TAG_LIST
 Tool.RaidIcon={
@@ -39,10 +47,26 @@ Tool.RaidIcon={
 	"|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_7:0|t", -- [7]
 	"|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8:0|t", -- [8]
 }
+
+Tool.RoleIcon = {
+	["DAMAGER"]=	"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:%d:64:64:20:39:22:41|t",
+	["HEALER"] =	"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:%d:64:64:20:39:1:20|t",
+	["TANK"] =	"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:%d:64:64:0:19:22:41|t",
+}
   
 Tool.Classes=CLASS_SORT_ORDER
 Tool.ClassName=LOCALIZED_CLASS_NAMES_MALE
-Tool.ClassColor=RAID_CLASS_COLORS
+Tool.ClassColor = CopyTable(RAID_CLASS_COLORS)
+-- support for CUSTOM_CLASS_COLORS
+if CUSTOM_CLASS_COLORS then
+	for k, v in pairs(CUSTOM_CLASS_COLORS) do
+		---@cast v ColorMixin
+		if not v.colorStr then
+			v.colorStr = v:GenerateHexColor();
+		end
+		Tool.ClassColor[k] = v;
+	end
+end
 
 Tool.NameToClass={}
 for eng,name in pairs(LOCALIZED_CLASS_NAMES_MALE) do
@@ -53,31 +77,43 @@ for eng,name in pairs(LOCALIZED_CLASS_NAMES_FEMALE) do
 	Tool.NameToClass[name]=eng
 end
 
-local _tableAccents = {
-    ["�"] = "A", ["�"] = "A", ["�"] = "A", ["�"] = "A", ["�"] = "Ae", ["�"] = "A",
-	["�"] = "AE", ["�"] = "C", ["�"] = "E", ["�"] = "E", ["�"] = "E", ["�"] = "E", 
-	["�"] = "I", ["�"] = "I", ["�"] = "I", ["�"] = "I", ["�"] = "D", ["�"] = "N", 
-	["�"] = "O", ["�"] = "O", ["�"] = "O", ["�"] = "O", ["�"] = "Oe", ["�"] = "O", 
-	["�"] = "U", ["�"] = "U", ["�"] = "U", ["�"] = "Ue", ["�"] = "Y", ["�"] = "P", 
-	["�"] = "s", ["�"] = "a", ["�"] = "a", ["�"] = "a", ["�"] = "a", ["�"] = "ae", 
-	["�"] = "a", ["�"] = "ae", ["�"] = "c", ["�"] = "e", ["�"] = "e", ["�"] = "e", 
-	["�"] = "e", ["�"] = "i", ["�"] = "i", ["�"] = "i", ["�"] = "i", ["�"] = "eth", 
-	["�"] = "n", ["�"] = "o", ["�"] = "o", ["�"] = "o", ["�"] = "o", ["�"] = "oe", 
-	["�"] = "o", ["�"] = "u", ["�"] = "u", ["�"] = "u", ["�"] = "ue", ["�"] = "y", 
-	["�"] = "p", ["�"] = "y", ["�"] = "ss",
-	}
+local transliterations = {
+    ["À"] = "A", ["Á"] = "A", ["Â"] = "A", ["Ã"] = "A", ["Ä"] = "Ae", ["Å"] = "A",
+	["Æ"] = "AE", ["Ç"] = "C", ["È"] = "E", ["É"] = "E", ["Ê"] = "E", ["Ë"] = "E",
+	["Ì"] = "I", ["Í"] = "I", ["Î"] = "I", ["Ï"] = "I", ["Ð"] = "D", ["Ñ"] = "N",
+	["Ò"] = "O", ["Ó"] = "O", ["Ô"] = "O", ["Õ"] = "O", ["Ö"] = "Oe", ["Ø"] = "O",
+	["Ù"] = "U", ["Ú"] = "U", ["Û"] = "U", ["Ü"] = "Ue", ["Ý"] = "Y", ["Þ"] = "P",
+	["ẞ"] = "s", ["à"] = "a", ["á"] = "a", ["â"] = "a", ["ã"] = "a", ["ä"] = "ae",
+	["å"] = "a", ["æ"] = "ae", ["ç"] = "c", ["è"] = "e", ["é"] = "e", ["ê"] = "e",
+	["ë"] = "e", ["ì"] = "i", ["í"] = "i", ["î"] = "i", ["ï"] = "i", ["ð"] = "eth",
+	["ñ"] = "n", ["ò"] = "o", ["ó"] = "o", ["ô"] = "o", ["õ"] = "o", ["ö"] = "oe",
+	["ø"] = "o", ["ù"] = "u", ["ú"] = "u", ["û"] = "u", ["ü"] = "ue", ["ý"] = "y",
+	["þ"] = "p", ["ÿ"] = "y", ["ß"] = "ss",
+}
+
+Tool.isUtf8String = function(str)
+	for i = 1, str:len() do
+		local b = str:byte(i)
+		if b >= 192 and b <= 239 then return true; end
+	end
+	return false;
+end
 
 -- Hyperlink
-
 local function EnterHyperlink(self,link,text)
 	--print(link,text)
 	local part=Tool.Split(link,":")
-	if part[1]=="spell" or part[1]=="unit" or part[1]=="item" or part[1]=="enchant" or part[1]=="player" or part[1]=="quest" or part[1]=="trade"  then
-		GameTooltip_SetDefaultAnchor(GameTooltip,UIParent)
-		GameTooltip:SetOwner(UIParent,"ANCHOR_PRESERVE")
-		GameTooltip:ClearLines()
-		GameTooltip:SetHyperlink(link)
-		GameTooltip:Show()
+	if part[1]=="spell" or part[1]=="unit" 
+	or part[1]=="item" or part[1]=="enchant"
+	or part[1]=="player"or part[1]=="quest"
+	or part[1]=="trade"
+	then
+		local tooltip = ItemRefTooltip  -- or GameTooltip
+		GameTooltip_SetDefaultAnchor(tooltip, UIParent)
+		tooltip:SetOwner(UIParent,"ANCHOR_PRESERVE")
+		tooltip:ClearLines()
+		tooltip:SetHyperlink(link)
+		tooltip:Show()
 	end
 end
 local function LeaveHyperlink(self)
@@ -87,8 +123,8 @@ end
 
 function Tool.EnableHyperlink(frame)
 	frame:SetHyperlinksEnabled(true);
-	frame:SetScript("OnHyperlinkEnter",EnterHyperlink)
-	frame:SetScript("OnHyperlinkLeave",LeaveHyperlink)	
+	frame:SetScript("OnHyperlinkClick",EnterHyperlink)
+	-- frame:SetScript("OnHyperlinkLeave",LeaveHyperlink)	
 end
 	
 -- EventHandler
@@ -131,29 +167,66 @@ function Tool.OnUpdate(func)
 	tinsert(eventFrame._GPIPRIVAT_updates,func)
 end
 
--- move frame
+-- misc tools
 
-local function MovingStart(self)
-	self:StartMoving()
-end
-
-local function MovingStop(self)
-	self:StopMovingOrSizing()
-	if self._GPIPRIVAT_MovingStopCallback then
-		self._GPIPRIVAT_MovingStopCallback(self)
+---@param playerLevel number
+---@param targetLevel number|number[] # exact `targetLevel` or `[targetLevelMin, targetLevelMax]` level range
+function Tool.GetDifficultyColor(playerLevel, targetLevel)
+	if type(targetLevel) == "table" then -- level range provided
+		local targetLevelMin, targetLevelMax = targetLevel[1], targetLevel[2];
+		if playerLevel == MAX_PLAYER_LEVEL and targetLevelMax == MAX_PLAYER_LEVEL then
+		return NORMAL_FONT_COLOR end; -- max level dungeon and max level player is normal
+		if playerLevel > targetLevelMax then
+			return TRIVIAL_DIFFICULTY_COLOR; -- player above max level is trivial
+		elseif targetLevelMin - playerLevel > 3 then
+			return IMPOSSIBLE_DIFFICULTY_COLOR; -- player > 3 levels below min is impossible
+		elseif targetLevelMin - playerLevel >= 0 then
+			return DIFFICULT_DIFFICULTY_COLOR; -- player @ or below min is difficult
+		elseif targetLevelMax - playerLevel <= 2 then
+			return EASY_DIFFICULTY_COLOR; -- player 2 or less levels from max is easy
+		else return NORMAL_FONT_COLOR end;-- and anything else is normal
+	else -- single level provided
+		local targetLevelDiff = targetLevel - playerLevel;
+		if targetLevelDiff >= 5 then
+			return IMPOSSIBLE_DIFFICULTY_COLOR;
+		elseif targetLevelDiff >= 3 then
+			return DIFFICULT_DIFFICULTY_COLOR;
+		elseif targetLevelDiff >= -3 then
+			return EASY_DIFFICULTY_COLOR;
+		elseif targetLevelDiff >= -6 then
+			return TRIVIAL_DIFFICULTY_COLOR;
+		else return NORMAL_FONT_COLOR end;
 	end
 end
 
-function Tool.EnableMoving(frame,callback)
-	frame:SetMovable(true)	
-	frame:EnableMouse(true)
-	frame:RegisterForDrag("LeftButton")
-	frame:SetScript("OnDragStart",MovingStart)
-	frame:SetScript("OnDragStop",MovingStop)
-	frame._GPIPRIVAT_MovingStopCallback=callback
+local activityDifficultyColorCache do
+	local playerLevel = UnitLevel("player")
+	activityDifficultyColorCache = setmetatable({}, {
+		__index = function(self, key)
+			local info = Addon.GetDungeonInfo(key, true)
+			-- edge case: use binary color for battlegrounds (can either queue or cant)
+			if info and info.typeID and info.typeID == Addon.Enum.DungeonType.Battleground then
+				local color = (playerLevel >= Addon.dungeonLevel[key][1])
+					and NORMAL_FONT_COLOR or IMPOSSIBLE_DIFFICULTY_COLOR;
+				rawset(self, key, color)
+				return color
+			end
+			local color = Addon.Tool.GetDifficultyColor(playerLevel, Addon.dungeonLevel[key])
+			rawset(self, key, color)
+			return color
+		end
+	})
+	Tool.RegisterEvent("PLAYER_LEVEL_UP", function()
+		playerLevel = UnitLevel("player")
+		wipe(activityDifficultyColorCache)
+	end)
 end
-
--- misc tools
+---@param dungeonKey string key for entry in `GBB.dungeonLevel`
+Tool.GetDungeonDifficultyColor = function(dungeonKey)
+	assert(type(dungeonKey) == "string", "Usage: Tool.GetDungeonDifficultyColor(dungeonKey: string)", dungeonKey)
+	assert(Addon.dungeonLevel[dungeonKey], "No entry in GBB.dungeonLevel table for given key", dungeonKey)
+	return activityDifficultyColorCache[dungeonKey]
+end
 
 function Tool.GuildNameToIndex(name, searchOffline)
 	name = string.lower(name)
@@ -239,24 +312,33 @@ function Tool.Merge(t1,...)
 	return t1
 end
 
-function Tool.iMerge(t1,...)
-	for index=1 , select("#",...) do 
-		local var=select(index,...)
-		if type(var)=="table" then 
-			for i,v in ipairs(var) do 
-				if tContains(t1,v)==false then
-					tinsert(t1,v)
+-- Uniquely _inner_ merge provided table arrays.
+---@param ...table
+---@return table merged
+function Tool.iMerge(...)
+	local seen, merged = {}, {}
+	for i, table in ipairs({...}) do
+		assert(type(table) == "table", "Expected table, got " .. type(table) .. " for argument " .. i)
+		if i == 1 then
+			merged = table
+			for _, value in ipairs(table) do seen[value] = true end;
+		else
+			for _, value in ipairs(table) do
+				if not seen[value] then
+					tinsert(merged, value)
+					seen[value] = true
 				end
 			end
-		else
-			tinsert(t1,var)
 		end
 	end
-	return t1
+	return merged
 end
 
+---Replaces special characters and characters with accents from a given string.
+---@param str string
+---@return string, number
 function Tool.stripChars(str)
-	return string.gsub(str,"[%z\1-\127\194-\244][\128-\191]*", _tableAccents)
+	return string.gsub(str,"[%z\1-\127\194-\244][\128-\191]*", transliterations)
 end
 
 function Tool.CreatePattern(pattern,maximize)		
@@ -335,7 +417,10 @@ local SizingEnter=function(self)
 	if not (GetCursorInfo()) then
 		ResizeCursor:Show()
 		ResizeCursor.Texture:SetTexture(self.GPI_Cursor)
-		ResizeCursor.Texture:SetRotation(math.rad(self.GPI_Rotation),0.5,0.5)
+		ResizeCursor.Texture:SetRotation(
+			math.rad(self.GPI_Rotation), 
+			{x = 0.5, y = 0.5} -- center point
+		);
 	end
 end
 
@@ -358,7 +443,8 @@ local CreateSizeBorder=function(frame,name,a1,x1,y1,a2,x2,y2,cursor,rot,OnStart,
 	FrameSizeBorder:SetScript("OnMouseDown", SizingStart)
 	FrameSizeBorder:SetScript("OnMouseUp", SizingStop)
 	FrameSizeBorder:SetScript("OnEnter", SizingEnter)
-	FrameSizeBorder:SetScript("OnLeave", SizingLeave)	
+	FrameSizeBorder:SetScript("OnLeave", SizingLeave)
+	FrameSizeBorder:SetFrameLevel(frame:GetFrameLevel() + 10) -- make sure its above child frames
 	return FrameSizeBorder
 end
 
@@ -384,160 +470,210 @@ function Tool.EnableSize(frame,border,OnStart,OnStop)
 	
 	frame:EnableMouse(true)
 	frame:SetResizable(true)	
-	
-	-- path= "Interface\\AddOns\\".. TOCNAME .. "\\Resize\\"
-	
-	CreateSizeBorder(frame,"BOTTOM","BOTTOMLEFT", border, border, "BOTTOMRIGHT", -border, 0,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop)
-	CreateSizeBorder(frame,"TOP","TOPLEFT", border, 0, "TOPRIGHT", -border, -border,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop)
-	CreateSizeBorder(frame,"LEFT","TOPLEFT", 0,-border, "BOTTOMLEFT", border, border,"Interface\\CURSOR\\UI-Cursor-SizeRight",45,OnStart,OnStop)
-	CreateSizeBorder(frame,"RIGHT","TOPRIGHT",-border,-border, "BOTTOMRIGHT", 0, border,"Interface\\CURSOR\\UI-Cursor-SizeRight",45,OnStart,OnStop)
-	
-	CreateSizeBorder(frame,"TOPLEFT","TOPLEFT", 0,0, "TOPLEFT", border, -border,"Interface\\CURSOR\\UI-Cursor-SizeRight",0,OnStart,OnStop)
-	CreateSizeBorder(frame,"BOTTOMLEFT","BOTTOMLEFT", 0,0, "BOTTOMLEFT", border, border, "Interface\\CURSOR\\UI-Cursor-SizeLeft",0,OnStart,OnStop)
-	CreateSizeBorder(frame,"TOPRIGHT","TOPRIGHT", 0,0, "TOPRIGHT", -border, -border, "Interface\\CURSOR\\UI-Cursor-SizeLeft",0,OnStart,OnStop)
-	CreateSizeBorder(frame,"BOTTOMRIGHT","BOTTOMRIGHT", 0,0, "BOTTOMRIGHT", -border, border, "Interface\\CURSOR\\UI-Cursor-SizeRight",0,OnStart,OnStop)
-	
-end
 
--- popup
-local PopupDepth
-local function PopupClick(self, arg1, arg2, checked)
-	if type(self.value)=="table" then		
-		self.value[arg1]=not self.value[arg1]
-		self.checked=self.value[arg1]
-		if arg2 then
-			arg2(self.value,arg1,checked)		
-		end
-				
-	elseif type(self.value)=="function" then		
-		self.value(arg1,arg2)		
-	end		
-end
-
-local function PopupAddItem(self,text,disabled,value,arg1,arg2)
-	local c=self._Frame._GPIPRIVAT_Items.count+1
-	self._Frame._GPIPRIVAT_Items.count=c
-	
-	if not self._Frame._GPIPRIVAT_Items[c] then
-		self._Frame._GPIPRIVAT_Items[c]={}
-	end
-	local t=self._Frame._GPIPRIVAT_Items[c]
-	t.text=text or ""
-	t.disabled=disabled or false
-	t.value=value
-	t.arg1=arg1
-	t.arg2=arg2
-	t.MenuDepth=PopupDepth
-end
-
-local function PopupAddSubMenu(self,text,value)
-	if text~=nil and text~="" then
-		PopupAddItem(self,text,"MENU",value)
-		PopupDepth=value
-	else
-		PopupDepth=nil
-	end
-end
-
-local PopupLastWipeName
-local function PopupWipe(self,WipeName)
-	self._Frame._GPIPRIVAT_Items.count=0
-	PopupDepth=nil	
-	if UIDROPDOWNMENU_OPEN_MENU == self._Frame then
-		ToggleDropDownMenu(nil, nil, self._Frame, self._where, self._x, self._y)
-		if WipeName == PopupLastWipeName then
-			return false
+	local borders = {
+		CreateSizeBorder(frame,"BOTTOM","BOTTOMLEFT", border, border, "BOTTOMRIGHT", -border, 0,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop),
+		CreateSizeBorder(frame,"TOP","TOPLEFT", border, 0, "TOPRIGHT", -border, -border,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop),
+		CreateSizeBorder(frame,"LEFT","TOPLEFT", 0,-border, "BOTTOMLEFT", border, border,"Interface\\CURSOR\\UI-Cursor-SizeRight",45,OnStart,OnStop),
+		CreateSizeBorder(frame,"RIGHT","TOPRIGHT",-border,-border, "BOTTOMRIGHT", 0, border,"Interface\\CURSOR\\UI-Cursor-SizeRight",45,OnStart,OnStop),
+		CreateSizeBorder(frame,"TOPLEFT","TOPLEFT", 0,0, "TOPLEFT", border, -border,"Interface\\CURSOR\\UI-Cursor-SizeRight",0,OnStart,OnStop),
+		CreateSizeBorder(frame,"BOTTOMLEFT","BOTTOMLEFT", 0,0, "BOTTOMLEFT", border, border, "Interface\\CURSOR\\UI-Cursor-SizeLeft",0,OnStart,OnStop),
+		CreateSizeBorder(frame,"TOPRIGHT","TOPRIGHT", 0,0, "TOPRIGHT", -border, -border, "Interface\\CURSOR\\UI-Cursor-SizeLeft",0,OnStart,OnStop),
+		CreateSizeBorder(frame,"BOTTOMRIGHT","BOTTOMRIGHT", 0,0, "BOTTOMRIGHT", -border, border, "Interface\\CURSOR\\UI-Cursor-SizeRight",0,OnStart,OnStop),
+	}
+	local setResizingEnabled = function(enabled)
+		for _, border in ipairs(borders) do
+			border:SetScript("OnEnter", enabled and SizingEnter or nil)
+			border:SetScript("OnLeave", enabled and SizingLeave or nil)
+			border:SetScript("OnMouseDown", enabled and SizingStart or nil)
+			border:SetScript("OnMouseUp", enabled and SizingStop or nil)
 		end
 	end
-	PopupLastWipeName=WipeName	
-	return true
+	return setResizingEnabled
 end
 
-local function PopupCreate(frame, level, menuList)
-	if level==nil then return end
-	local info = UIDropDownMenu_CreateInfo()
-
-	for i=1,frame._GPIPRIVAT_Items.count do
-		local val=frame._GPIPRIVAT_Items[i]		
-		if val.MenuDepth==menuList then
-			if val.disabled=="MENU" then
-				info.text=val.text
-				info.notCheckable = true
-				info.disabled=false
-				info.value=nil
-				info.arg1=nil
-				info.arg2=nil
-				info.func=nil
-				info.hasArrow=true
-				info.menuList=val.value
-				--info.isNotRadio=true
-			else
-				info.text=val.text
-				if type(val.value)=="table" then
-					info.checked=val.value[val.arg1] or false
-					info.notCheckable = false
-				else
-					info.notCheckable = true
-				end
-				info.disabled=(val.disabled==true or val.text=="" )
-				info.keepShownOnClick=(val.disabled=="keep")				
-				info.value=val.value
-				info.arg1=val.arg1
-				if type(val.value)=="table" then			
-					info.arg2=frame._GPIPRIVAT_TableCallback
-				elseif type(val.value)=="function" then
-					info.arg2=val.arg2
-				end		
-				info.func=PopupClick
-				info.hasArrow=false
-				info.menuList=nil
-				--info.isNotRadio=true
-			end
-			UIDropDownMenu_AddButton(info,level)
-		end
-	end
-end
-
-local function PopupShow(self,where,x,y)
-	where=where or "cursor" 
-	if UIDROPDOWNMENU_OPEN_MENU ~= self._Frame then 
-		UIDropDownMenu_Initialize(self._Frame, PopupCreate, "MENU")
-	end
-	ToggleDropDownMenu(nil, nil, self._Frame, where, x,y)
-	self._where=where
-	self._x=x
-	self._y=y
-end
-
-function Tool.CreatePopup(TableCallback)
-	local popup={}
-	popup._Frame=CreateFrame("Frame", nil, UIParent, "UIDropDownMenuTemplate")
-	popup._Frame._GPIPRIVAT_TableCallback=TableCallback
-	popup._Frame._GPIPRIVAT_Items={}
-	popup._Frame._GPIPRIVAT_Items.count=0
-	popup.AddItem=PopupAddItem
-	popup.SubMenu=PopupAddSubMenu
-	popup.Show=PopupShow
-	popup.Wipe=PopupWipe
-	return popup
-end	
-
+--------------------------------------------------------------------------------
 -- TAB
+--------------------------------------------------------------------------------
 
-local function SelectTab(self)
-	if not self._gpi_combatlock or not InCombatLockdown() then 
-		local parent=self:GetParent()
-		PanelTemplates_SetTab(parent,self:GetID())
-		for i=1, parent.numTabs do
-			parent.Tabs[i].content:Hide()
+---@class TabButtonMixin: SelectableButtonMixin, Button
+---@field selected boolean # whether the tab is selected
+---@field position "top" | "bottom" # position of the tab on the owner, defaults to "bottom"
+---@field fitToText boolean # whether the tab should fit to the text
+---@field textPadding number # padding between the text and the tab
+---@field Contents Frame? # contents of the tab
+local TabButtonMixin = {
+	selected = false,
+	position = "bottom",
+	fitToText = true,
+	textPadding = 15,
+};
+function TabButtonMixin:OnLoad()
+	Mixin(self, SelectableButtonMixin) -- adds toggle like support for a `Button`
+	for _, texture in ipairs({"LeftDisabled", "RightDisabled", "MiddleDisabled"}) do
+		_G[self:GetName()..texture]:Hide() -- not using the DisabledTextures
+	end
+	_G[self:GetName().."Text"]:Hide() -- we dont wanna use ButtonText, so hide and create our own
+	self.Text = self:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+	self.Highlight =  _G[self:GetName().."HighlightTexture"] ---@type Texture
+	self.Left = _G[self:GetName().."Left"] ---@type Texture
+	self.Right = _G[self:GetName().."Right"] ---@type Texture
+	self.Middle = _G[self:GetName().."Middle"] ---@type Texture
+
+	self:SetScript("OnEnable", TabButtonMixin.UpdateButtonState)
+	self:SetScript("OnDisable", TabButtonMixin.UpdateButtonState)
+	self:SetScript("OnEnter", TabButtonMixin.OnEnter)
+	self:SetScript("OnLeave", TabButtonMixin.OnLeave)
+
+	self:UpdateOrientation() -- set initial texture orientations
+end
+function TabButtonMixin:OnSelected(isSelected)
+	self:UpdateButtonState()
+end
+function TabButtonMixin:UpdateButtonState()
+	local isEnabled = self:IsEnabled()
+	self.Highlight:SetShown((not self.selected and isEnabled))
+	if self:IsEnabled() then
+		-- shift text slightly when tab selected. shift (downward when tab is on bottom)
+		self.Text:SetPoint("CENTER", 0 , (2 + (self.selected and  1.5 or 0)) * (self.position == "bottom" and 1 or -1))
+	end
+	self.Text:SetFontObject(isEnabled
+		and (self.selected and "GameFontHighlightSmall" or "GameFontNormalSmall")
+		or "GameFontDisableSmall"
+	)
+end
+function TabButtonMixin:SetText(text)
+	self.Text:SetText(text)
+	if self.fitToText then
+		local newWidth = self.Text:GetStringWidth() + self.textPadding
+		self:SetWidth(newWidth)
+	end
+end
+function TabButtonMixin:OnEnter()
+	if not self:IsEnabled() or self.selected then return end
+	self.Text:SetFontObject("GameFontHighlightSmall")
+end
+function TabButtonMixin:OnLeave()
+	if not self:IsEnabled() or self.selected then return end
+	self.Text:SetFontObject("GameFontNormalSmall")
+end
+function TabButtonMixin:UpdateOrientation()
+	for _, texture in ipairs({self.Highlight, self.Left, self.Right, self.Middle}) do
+		local left, top, _, bottom, right = texture:GetTexCoord()
+		if self.position == "bottom" and bottom > top then
+			texture:SetTexCoord(left, right, top, bottom)
+		else
+			texture:SetTexCoord(left, right, bottom, top)
 		end
-		self.content:Show()	
-	
-		if parent.Tabs[self:GetID()].OnSelect then
-			parent.Tabs[self:GetID()].OnSelect(self)
+	end
+	local highlightAnchorPoints = {
+		bottom = {
+			{"TOPLEFT", self, "TOPLEFT", 3, 5},
+			{"BOTTOMRIGHT", self, "BOTTOMRIGHT", -3, 0},
+		},
+		top = {
+			{"BOTTOMLEFT", self, "BOTTOMLEFT", 3, -5},
+			{"TOPRIGHT", self, "TOPRIGHT", -3, 0},
+		},
+	}
+	self.Highlight:ClearAllPoints()
+	for _, point in ipairs(highlightAnchorPoints[self.position]) do
+		self.Highlight:SetPoint(unpack(point))
+	end
+	self:UpdateButtonState()
+end
+
+local TabManager = {
+	FrameTabs = {}, ---@type {[Frame]: ManagedTab[]} # maps owner to its tabs
+}
+---@param owner Frame # owner region of the tab
+function TabManager:NewManagedTab(owner, name)
+	if not TabManager.FrameTabs[owner] then TabManager.FrameTabs[owner] = {} end
+	local tabId = #TabManager.FrameTabs[owner] + 1
+	if not name then
+		-- note: because im using the `CharacterFrameTabButtonTemplate` template, a name is required-
+		-- since the template expects a named parent.
+		local ownerName = owner:GetName(); assert(ownerName, "TabManager.Create: `owner` must have a name")
+		name = ownerName.."Tab"..tabId
+	end
+	---@class ManagedTab: TabButtonMixin
+	---@field Contents Frame? # contents of the tab
+	---@field onTabSelected function? # optional hook, executed when tab is selected
+	---@field onTabSelectedRequiresClick boolean? # if `true` OnTabSelected will only be called for click events
+	local newTab = CreateFrame("Button", name, owner or UIParent, "CharacterFrameTabButtonTemplate")
+	Mixin(newTab, TabButtonMixin); TabButtonMixin.OnLoad(newTab)
+
+	function newTab:OnClick(clickType)
+		if clickType ~= "LeftButton" then return end;
+		-- Make the tab group buttons act like a radio instead of a toggle.
+		-- ie a tab button can only be selected if not already selected.
+		local canSelect = self:CanChangeSelection(true)
+		if canSelect then
+			if self.onTabSelected and self.onTabSelectedRequiresClick then
+				self.onTabSelected(clickType)
+			end
+			self:SetSelected(true)
+			PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON);
+		end
+	end
+	newTab:SetScript("OnClick", newTab.OnClick)
+	newTab:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+
+	-- Override the OnSelected method to include a callback to the tab manager to handle tab selection
+	-- as well as any defined OnSelect hooks, and show/hide the contents of the tab
+	function newTab:OnSelected(isSelected)
+		TabButtonMixin.OnSelected(self, isSelected)
+		if self.Contents then self.Contents:SetShown(isSelected) end
+		if isSelected and self.onTabSelected and not self.onTabSelectedRequiresClick then
+			self.onTabSelected()
+		end
+		if isSelected then
+			TabManager:OnSelectedTabChanged(owner, self:GetID())
+		end
+	end
+	newTab:SetID(tabId)
+	TabManager.FrameTabs[owner][tabId] = newTab
+	return newTab
+end
+
+--- Manage the state of other tabs when a new tab is selected
+function TabManager:OnSelectedTabChanged(owner, selectedTabID)
+	for _, tab in ipairs(TabManager.FrameTabs[owner]) do
+		if tab:GetID() ~= selectedTabID then
+			tab:SetSelected(false)
 		end
 	end
 end
+
+---@param owner Frame # owner region of the tab
+---@param position "top" | "bottom" # position of the tabs on the owner
+function TabManager:ChangeTabPositions(owner, position)
+	for _, tab in ipairs(TabManager.FrameTabs[owner]) do
+		tab.position = position
+		tab:UpdateOrientation()
+	end
+	TabManager:LayoutTabs(owner, position)
+end
+
+function TabManager:LayoutTabs(owner, position, padding, inset)
+	position = position or "bottom"
+	padding = padding or -12
+	inset = inset or 20
+	for id, tab in ipairs(TabManager.FrameTabs[owner]) do
+		tab:ClearAllPoints()
+		if id == 1 then
+			if position == "top" then
+				tab:SetPoint("BOTTOMLEFT", owner, "TOPLEFT", inset or 20, -2.5)
+			else
+				tab:SetPoint("TOPLEFT", owner, "BOTTOMLEFT", inset or 20, 2.5)
+			end
+		else
+			tab:SetPoint("TOPLEFT", TabManager.FrameTabs[owner][id - 1], "TOPRIGHT", padding, 0)
+		end
+	end
+end
+
+function Tool.ChangeTabPositions(frame, position) TabManager:ChangeTabPositions(frame, position) end
 
 function Tool.TabHide(frame,id)
 	if id and frame.Tabs and frame.Tabs[id] then
@@ -561,62 +697,50 @@ end
 
 function Tool.SelectTab(frame,id)
 	if id and frame.Tabs and frame.Tabs[id] then
-		SelectTab(frame.Tabs[id])
+		frame.Tabs[id]:SetSelected(true)
 	end
-end	
-
-function Tool.TabOnSelect(frame,id,func)
+end
+---@param frame Frame # owner region of the tab
+---@param id number # id of the tab
+---@param func function # hook executed when tab is selected
+---@param requiresClickEvent boolean? # if `true` hook will only be called when backed by a click event
+function Tool.TabOnSelect(frame, id, func, requiresClickEvent)
 	if id and frame.Tabs and frame.Tabs[id] then
-		frame.Tabs[id].OnSelect=func
+		frame.Tabs[id].onTabSelected = func
+		frame.Tabs[id].onTabSelectedRequiresClick = requiresClickEvent
 	end
-end	
-	
+end
+
 function Tool.GetSelectedTab(frame)
-	if frame.Tabs then 
-		for i=1, frame.numTabs do
-			if frame.Tabs[i].content:IsShown() then
-				return i
-			end					
+	if type(frame.Tabs) ~= "table" then return end;
+	for _, tab in ipairs(frame.Tabs) do
+		if tab.Contents and tab.Contents.IsShown and tab.Contents:IsShown() then
+			return tab:GetID()
 		end
 	end
 	return 0
 end
-	
-function Tool.AddTab(frame,name,tabFrame,combatlockdown)
-	local frameName
-	
-	if type(frame)=="string" then
-		frameName=frame
-		frame=_G[frameName]
-	else
-		frameName=frame:GetName()
-	end
-	if type(tabFrame)=="string" then
-		tabFrame=_G[tabFrame]
-	end
-	
-	frame.numTabs=frame.numTabs and frame.numTabs+1 or 1
-	if frame.Tabs==nil then frame.Tabs={} end
-	
-	frame.Tabs[frame.numTabs]=CreateFrame("Button",frameName.."Tab"..frame.numTabs, frame, "CharacterFrameTabButtonTemplate")
-	frame.Tabs[frame.numTabs]:SetID(frame.numTabs)
-	frame.Tabs[frame.numTabs]:SetText(name)
-	frame.Tabs[frame.numTabs]:SetScript("OnClick",SelectTab)	
-	frame.Tabs[frame.numTabs]._gpi_combatlock=combatlockdown
-	frame.Tabs[frame.numTabs].content=tabFrame
-	tabFrame:Hide()
-	
-	if frame.numTabs==1 then
-		frame.Tabs[frame.numTabs]:SetPoint("TOPLEFT",frame,"BOTTOMLEFT",5,4)
-	else
-		frame.Tabs[frame.numTabs]:SetPoint("TOPLEFT",frame.Tabs[frame.numTabs-1],"TOPRIGHT",-14,0)
-	end
-	
-	SelectTab(frame.Tabs[frame.numTabs])
-	SelectTab(frame.Tabs[1])
-	return frame.numTabs
+
+function Tool.SetTabEnabled(frame, id, shouldEnable)
+	if not (id and frame.Tabs and frame.Tabs[id]) then return end;
+	frame.Tabs[id]:SetEnabled(shouldEnable)
 end
 
+function Tool.AddTab(frame, displayText, tabFrame)
+	assert(frame and frame.GetFrameLevel, "Invalid `frame` argument. Expected a frame, got %s", type(frame))
+	assert(tabFrame and tabFrame.GetFrameLevel, "Invalid `tabFrame` argument. Expected a frame, got %s", type(tabFrame))
+	assert(type(displayText) == "string", "Invalid `displayText` argument. Expected a string, got %s", type(displayText))
+	local tab = TabManager:NewManagedTab(frame)
+	local tabID = tab:GetID()
+	tab:Show()
+	tab:SetText(displayText)
+	tab.Contents = tabFrame
+	tab.Contents:Hide()
+	tab:SetSelected(tabID == 1)
+	TabManager:LayoutTabs(frame, "bottom")
+	frame.Tabs = TabManager.FrameTabs[frame]
+	return tabID
+end
 
 -- DataBrocker
 local DataBrocker=false
@@ -631,7 +755,7 @@ function Tool.AddDataBrocker(icon,onClick,onTooltipShow,text)
 				OnClick = onClick,
 				OnTooltipShow = onTooltipShow,
 				tocname = TOCNAME,
-				label = text or GetAddOnMetadata(TOCNAME, "Title"),
+				label = text or Addon.Metadata.Title,
 			})
 		end
 	end	
@@ -695,8 +819,8 @@ end
 local function mySlashs(msg)
 	if msg=="help" then
 		local colCmd="|cFFFF9C00"
-		print("|cFFFF1C1C"..GetAddOnMetadata(TOCNAME, "Title") .." ".. GetAddOnMetadata(TOCNAME, "Version") .." by "..GetAddOnMetadata(TOCNAME, "Author"))
-		print(GetAddOnMetadata(TOCNAME, "Notes"))		
+		print(("|cFFFF1C1C %s %s by %s"):format(Addon.Metadata.Title, Addon.Metadata.Version, Addon.Metadata.Author))
+		print(Addon.Metadata.Notes)
 		if type(slashCmd)=="table" then
 			print("SlashCommand:",colCmd,slashUnpack(slashCmd,"|r, "..colCmd),"|r")
 		end

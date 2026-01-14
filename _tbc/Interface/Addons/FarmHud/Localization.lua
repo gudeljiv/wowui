@@ -1,18 +1,18 @@
 
-local addon, ns = ...
+local L, addon, ns = {}, ...;
 
-local L = {};
 ns.L = setmetatable(L,{__index=function(t,k)
-	local v = tostring(k)
-	rawset(t,k,v)
-	return v
+	local v = tostring(k);
+	rawset(t,k,v);
+	return v;
 end});
 
 -- Do you want to help localize this addon?
--- https://www.curseforge.com/wow/addons/farmhud/localization
+-- https://www.curseforge.com/wow/addons/@cf-project-name@/localization
 
 L["AddOnLoaded"] = "AddOn loaded..."
-L["AddOnLoadedDesc"] = "Show 'AddOn loaded...' message on login"
+L["AddOnLoadedDesc"] = "Show 'AddOn Loaded...' message on logins and UI reloads."
+L["AddOnLoadedDescAlt"] = "Alternatively you can hold shift key on loading screen to display this message for this login only."
 L["AnotherAddOnsHijackedFunc"] = "Warning: Another addon has hijacked some essential functions. See following List:"
 L["BgTransparency"] = "Background transparency"
 L["Black player dot"] = "Black player dot"
@@ -123,13 +123,26 @@ L["TimeShowDesc"] = "Display server or local time on HUD mode"
 L["TrackingOptions"] = "Tracking Options"
 L["TrackingOptionsDesc"] = "Toggle tracking icons on opened FarmHud.|n|n\"Like minimap\" means your settings/changes over the minimap tracking button will be used on opened FarmHud."
 L["TrackingOptionsLikeMinimap"] = "Like minimap"
+L["TrailPath"] = "Trail path"
+L["TrailPathColorsDesc"] = "Adjust color of trail path icons"
+L["TrailPathCount"] = "Point count"
+L["TrailPathCountDesc"] = "Adjust the max. amount of footprints on minimap/farmhud."
+L["TrailPathIcon"] = "Icon"
+L["TrailPathIconDesc"] = "Choose an icon for your footprints."
+L["TrailPathOnMinimap"] = "Show on minimap"
+L["TrailPathOnMinimapDesc"] = "Display the trail path on minimap too."
+L["TrailPathScale"] = "Icon scaling"
+L["TrailPathScaleDesc"] = "Adjust the size of your footprints."
+L["TrailPathShow"] = "Show trail path"
+L["TrailPathTimeout"] = "Fade out (sec.)"
+L["TrailPathTimeoutDesc"] = "Adjust the time after which you footprints are removed from minimap/farmhud."
 L["W"] = "W"
 L["White player dot"] = "White player dot"
 
-
 if LOCALE_deDE then
 L["AddOnLoaded"] = "AddOn geladen..."
-L["AddOnLoadedDesc"] = "Zeige \"AddOn geladen...\" Mitteilung beim Login"
+L["AddOnLoadedDesc"] = "Zeigt die Nachricht 'AddOn geladen...' beim Einloggen und Neuladen des UIs."
+L["AddOnLoadedDescAlt"] = "Alternativ kannst du die Umschalt-Taste beim Ladebildschirm gedrückt halten zum anzeigen der Nachricht nur diesen Login."
 L["AnotherAddOnsHijackedFunc"] = "Warnung: Ein anderes Addon hat einige wesentliche Funktionen entführt. Siehe folgende Liste:"
 L["BgTransparency"] = "Hintergrundtransparenz"
 L["Black player dot"] = "Schwarzer Spielerpunkt"
@@ -240,20 +253,27 @@ L["TimeShowDesc"] = "Zeige Serverzeit oder lokale Zeit im HUD Modus"
 L["TrackingOptions"] = "Aufspür-Optionen"
 L["TrackingOptionsDesc"] = "Zeigt Aufspür-Symbole auf geöffnetem FarmHud.|n|n\"Wie bei Minikarte\" bedeutet, deine Einstellungen/Änderungen über den Aufspür-Button an der Minikarte, wird genutzt auf geöffnetem FarmHud."
 L["TrackingOptionsLikeMinimap"] = "Wie bei Minikarte"
+L["TrailPath"] = "Wanderweg"
+L["TrailPathColorsDesc"] = "Ändere die Farbe der Wanderwegsymbole."
+L["TrailPathCount"] = "Punktanzahl"
+L["TrailPathCountDesc"] = "Passe die maximale Anzahl von Fußabdrücken auf der Minimap/FarmHud an."
+L["TrailPathIcon"] = "Symbol"
+L["TrailPathIconDesc"] = "Wähle ein Symbol für deine Fußabdrücke."
+L["TrailPathOnMinimap"] = "Auf der Minimap anzeigen"
+L["TrailPathOnMinimapDesc"] = "Zeige den Wanderweg auch auf der Minimap an."
+L["TrailPathScale"] = "Symbolskalierung"
+L["TrailPathScaleDesc"] = "Ändere die Größe deiner Fußabdrücke."
+L["TrailPathShow"] = "Zeige Wanderweg"
+L["TrailPathTimeout"] = "Verblassen (Sek.)"
+L["TrailPathTimeoutDesc"] = "Passe die Zeit an, nach der deine Fußabdrücke von der Minimap/FarmHud entfernt werden."
 L["W"] = "W"
 L["White player dot"] = "Weißer Spielerpunkt"
 
-end
-
-if LOCALE_esES then
+elseif LOCALE_esES then
 L["AddOnLoaded"] = "AddOn Cargado..."
-L["AddOnLoadedDesc"] = "Mostrar el mensaje \"AddOn Cargado\" después del Login"
 
-end
-
-if LOCALE_esMX then
+elseif LOCALE_esMX then
 L["AddOnLoaded"] = "Accesorio cargado..."
-L["AddOnLoadedDesc"] = "Muestra el mensaje 'Accesorio cargado...' al conectarse"
 L["AnotherAddOnsHijackedFunc"] = "Advertencia: Otro accesorio esta usando algunas funciones importantes. Consulte la siguiente lista."
 L["BgTransparency"] = "Transparencia del fondo"
 L["Black player dot"] = "Jugador, punto negro"
@@ -366,9 +386,7 @@ L["TrackingOptionsLikeMinimap"] = "Como el minimapa"
 L["W"] = "O"
 L["White player dot"] = "Jugador, punto blanco"
 
-end
-
-if LOCALE_frFR then
+elseif LOCALE_frFR then
 L["AddOnLoaded"] = "AddOn chargé..."
 L["AddOnLoadedDesc"] = "Afficher le message 'AddOn chargé...' lors de la connexion"
 L["AnotherAddOnsHijackedFunc"] = "Attention : Un autre addon a détourné certaines fonctions essentielles. Voir la liste suivante :"
@@ -405,14 +423,10 @@ L["SW"] = "SO"
 L["W"] = "O"
 L["White player dot"] = "Point de joueur blanc"
 
-end
-
-if LOCALE_itIT then
+elseif LOCALE_itIT then
 L["AddOnLoaded"] = "AddOn caricato..."
-L["AddOnLoadedDesc"] = "Mostra il messaggio 'AddOn caricato...' al login "
 L["BgTransparency"] = "Trasparenza dello sfondo"
-L["CardinalPoints"] = [=[Punti cardinali
-]=]
+L["CardinalPoints"] = "Punti cardinali"
 L["CardinalPointsColorDesc"] = "Regola i colori dei punti cardinali (%s)"
 L["CardinalPointsColorResetDesc"] = "Ripristina i colori dei punti cardinali"
 L["CardinalPointsGroup1"] = "N, O, S, E"
@@ -502,11 +516,10 @@ L["TrackingOptionsDesc"] = "Attiva / disattiva l'icona di puntamento quando Farm
 L["TrackingOptionsLikeMinimap"] = "Come minimappa"
 L["W"] = "O"
 
-end
-
-if LOCALE_koKR then
-L["AddOnLoaded"] = "애드온 로드됨..."
-L["AddOnLoadedDesc"] = "접속 시 '애드온 로드됨...' 메시지를 표시합니다."
+elseif LOCALE_koKR then
+L["AddOnLoaded"] = "애드온 불러옴..."
+L["AddOnLoadedDesc"] = "로그인 및 UI 새로고침 시 '애드온 불러옴...' 메시지를 표시합니다."
+L["AddOnLoadedDescAlt"] = "또는 로딩 화면에서 shift 키를 누르고 있으면 이 로그인에 대해서만 이 메시지가 표시됩니다."
 L["AnotherAddOnsHijackedFunc"] = "경고: 다른 애드온이 몇 가지 필수 기능을 장악했습니다. 다음 목록을 참조하세요:"
 L["BgTransparency"] = "배경 투명도"
 L["Black player dot"] = "검은색 플레이어 점"
@@ -530,6 +543,7 @@ L["CoordsShow"] = "좌표 표시"
 L["CoordsShowDesc"] = "HUD에 플레이어 좌표를 표시합니다."
 L["DataBrokerOptions"] = "- FarmHud 옵션 열기"
 L["DataBrokerToggle"] = "- FarmHud 켜고 끄기"
+L["DataBrokerToggleBackground"] = "- 미니맵 배경 켜고 끄기"
 L["DebugOptFrames"] = "원치 않는 요소 출력"
 L["DebugOptFramesDesc"] = "FarmHud가 켜진 경우 미니맵에 고정된 원치 않는 요소 목록을 출력합니다."
 L["DebugOptInfo"] = "여기는 다른 애드온의 문제를 추적하는 데 도움이 되는 옵션을 포함합니다."
@@ -584,6 +598,8 @@ L["QuestArrowDesc"] = "열린 HUD에 퀘스트 화살표를 표시합니다."
 L["QuestArrowHide"] = "열린 HUD에서 퀘스트 화살표 숨기기"
 L["QuestArrowInfoMsg"] = "정보 메시지 표시"
 L["QuestArrowInfoMsgDesc"] = "일반 대화창에 정보 메시지를 표시합니다."
+L["QuestArrowInfoMsgDisabled"] = "퀘스트 추적 꺼짐"
+L["QuestArrowInfoMsgRestored"] = "퀘스트 추적 켜짐"
 L["RangeCircles"] = "범위 원"
 L["ResetColor"] = "색상 초기화"
 L["Rotation"] = "회전"
@@ -614,42 +630,82 @@ L["TimeShowDesc"] = "HUD 모드에서 서버 또는 시스템 시간을 표시�
 L["TrackingOptions"] = "추적 옵션"
 L["TrackingOptionsDesc"] = "열린 FarmHud에서 추적 아이콘을 켜고 끕니다.|n|n\"미니맵처럼\"은 미니맵 추적 버튼에 대한 설정/변경 사항이 열린 FarmHud에서 사용됨을 뜻합니다."
 L["TrackingOptionsLikeMinimap"] = "미니맵처럼"
+L["TrailPath"] = "발자국 경로"
+L["TrailPathColorsDesc"] = "발자국 경로 아이콘의 색상 조정"
+L["TrailPathCount"] = "발자국 수"
+L["TrailPathCountDesc"] = "미니맵/FarmHud 내 최대 발자국 수를 조정합니다."
+L["TrailPathIcon"] = "아이콘"
+L["TrailPathIconDesc"] = "발자국 아이콘을 선택합니다."
+L["TrailPathScale"] = "아이콘 크기 비율"
+L["TrailPathScaleDesc"] = "발자국 크기를 조정합니다."
+L["TrailPathShow"] = "발자국 경로 표시"
+L["TrailPathTimeout"] = "사라짐 (초)"
+L["TrailPathTimeoutDesc"] = "미니맵/FarmHud에서 발자국이 제거되는 시간을 조정합니다."
 L["W"] = "서"
 L["White player dot"] = "흰색 플레이어 점"
 
-end
+elseif LOCALE_ptBR or LOCALE_ptPT then
 
-if LOCALE_ptBR or LOCALE_ptPT then
+elseif LOCALE_ruRU then
 
-end
-
-if LOCALE_ruRU then
-
-end
-
-if LOCALE_zhCN then
+elseif LOCALE_zhCN then
 L["AddOnLoaded"] = "插件已加载......"
-L["AddOnLoadedDesc"] = "登录时显示'插件已加载...'消息"
+L["AddOnLoadedDesc"] = "在登录和界面加载时显示“插件已加载”的提示信息。"
+L["AddOnLoadedDescAlt"] = "你也可以在加载界面时按住Shift键来临时显示此信息。"
 L["BgTransparency"] = "背景透明度"
 L["CardinalPoints"] = "方位"
 L["CardinalPointsColorDesc"] = "调整方位的颜色(%s)"
 L["CardinalPointsColorResetDesc"] = "重置方位的颜色(%s)"
 L["CardinalPointsShow"] = "显示方位"
 L["CardinalPointsShowDesc"] = "在HUD中显示方位"
+L["Coords"] = "坐标"
 L["E"] = "东"
+L["ExtraAddOnLoaded"] = "额外插件%s已启用！"
+L["ExtraAddOnNotLoaded"] = "此选项必须启用额外插件%s！"
+L["GatherCircle"] = "采集指示圈"
+L["GatherCircleColorDesc"] = "调整采集指示圈的颜色"
+L["GatherCircleDesc"] = "采集指示圈是一个视觉上的辅助线。它代表在以你为中心、它代表在以你为中心的距离内，关注点（邮箱、矿石、草药等）在微缩地图和FarmHud上可见的范围。"
+L["GatherCircleShow"] = "显示采集指示圈"
+L["GatherCircleShowDesc"] = "在HUD模式下显示采集指示圈"
+L["HealCircle"] = "治疗范围指示圈"
+L["HealcircleColorDesc"] = "调整治疗范围指示圈的颜色"
+L["HealcircleDesc"] = "治疗范围指示圈是一个视觉上的辅助线。它代表在以你为中心、可治疗其他玩家的范围。"
+L["HealcircleShow"] = "显示治疗范围指示圈"
+L["HealcircleShowDesc"] = "在HUD模式下显示治疗范围指示圈"
 L["HudSize"] = "HUD尺寸"
+L["MinimapIcon"] = "微缩地图按钮"
+L["MinimapIconDesc"] = "显示微缩地图按钮。"
 L["N"] = "北"
 L["NE"] = "东北"
 L["NW"] = "西北"
+L["QuestArrow"] = "任务箭头"
+L["RangeCircles"] = "范围指示圈"
+L["Rotation"] = "旋转"
+L["RotationDesc"] = "HUD模式下强制启用微缩地图旋转。"
 L["S"] = "南"
 L["SE"] = "东南"
 L["SW"] = "西南"
+L["Time"] = "时间"
+L["TimeLocal"] = "本地时间"
+L["TimeLocalDesc"] = "显示本地时间。"
+L["TimeServer"] = "服务器时间"
+L["TimeServerDesc"] = "显示服务器时间。"
+L["TimeShow"] = "显示时间"
+L["TimeShowDesc"] = "在HUD模式下显示本地时间或服务器时间。"
+L["TrackingOptions"] = "追踪选项"
+L["TrackingOptionsDesc"] = "在FarmHud模式下切换图标。|n|n“同微缩地图”表示FarmHud会使用你的微缩地图追踪设置。"
+L["TrackingOptionsLikeMinimap"] = "同微缩地图"
 L["W"] = "西"
 
-end
-
-if LOCALE_zhTW then
+elseif LOCALE_zhTW then
+L["AddOnLoaded"] = "插件已載入..."
+L["AddOnLoadedDesc"] = "再登入和重載UI後顯示  '插件已載入...' 的訊息"
+L["BgTransparency"] = "背景透明度"
+L["Coords"] = "座標"
 L["CoordsBottom"] = "底部座標"
+L["CoordsBottomDesc"] = "在底部顯示玩家座標"
+L["CoordsColorDesc"] = "調整座標顏色"
+L["CoordsColorResetDesc"] = "重置座標顏色"
 L["DataBrokerToggle"] = "打開農人雷達"
 L["E"] = "東"
 L["KeyBindMouse"] = "開啟FarmHud的提示 (無法點選hud後面的東西)"

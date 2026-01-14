@@ -1,250 +1,284 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.1.6",
-	},
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Vermina - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
-		["Battitude - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-	},
-	["profiles"] = {
-		["Default"] = {
-			["rules"] = {
-				{
-					["patterns"] = {
-						"LossOfControl", -- [1]
-						"TotemFrame", -- [2]
-					},
-					["id"] = "Ignore",
-					["priority"] = 1,
-					["theme"] = "Ignore",
-				}, -- [1]
-				{
-					["enabled"] = false,
-					["patterns"] = {
-						"Aura", -- [1]
-						"Buff", -- [2]
-						"Debuff", -- [3]
-					},
-					["name"] = "Auras",
-					["id"] = "auras",
-				}, -- [2]
-				{
-					["enabled"] = false,
-					["patterns"] = {
-						"Plate", -- [1]
-					},
-					["name"] = "Unit Nameplates",
-					["id"] = "plates",
-				}, -- [3]
-				{
-					["enabled"] = false,
-					["patterns"] = {
-						"ActionButton", -- [1]
-					},
-					["name"] = "ActionBars",
-					["id"] = "actions",
-				}, -- [4]
-				{
-					["patterns"] = {
-						"PlaterMainAuraIcon", -- [1]
-						"PlaterSecondaryAuraIcon", -- [2]
-						"ExtraIconRowIcon", -- [3]
-					},
-					["id"] = "Plater Nameplates Rule",
-					["priority"] = 5,
-					["theme"] = "Plater Nameplates Theme",
-				}, -- [5]
-			},
-			["themes"] = {
-				["Plater Nameplates Theme"] = {
-					["textStyles"] = {
-						["soon"] = {
-						},
-						["seconds"] = {
-						},
-						["minutes"] = {
-						},
-					},
-				},
-				["Default"] = {
-					["textStyles"] = {
-						["soon"] = {
-						},
-						["minutes"] = {
-						},
-						["seconds"] = {
-						},
-						["charging"] = {
-							["r"] = 1,
-							["scale"] = 0.649999976158142,
-							["g"] = 0.98,
-							["b"] = 0.4,
-						},
-						["controlled"] = {
-							["scale"] = 1.20000004768372,
-						},
-					},
-					["fontFace"] = "Fonts\\ARIALN.TTF",
-					["spiralOpacity"] = 1.00999997742474,
-				},
-				["Ignore"] = {
-					["textStyles"] = {
-						["seconds"] = {
-						},
-						["soon"] = {
-						},
-						["minutes"] = {
-						},
-						["charging"] = {
-							["r"] = 1,
-							["scale"] = 0.65,
-							["g"] = 0.98,
-							["b"] = 0.4,
-						},
-					},
-					["enableText"] = false,
-					["spiralOpacity"] = 1,
-					["minDuration"] = 3,
-				},
-			},
-		},
-	},
+["profileKeys"] = {
+["Mxzq - Golemagg"] = "Default",
+["Dopeclaw - Living Flame"] = "Default",
+["Vbank - Celebras"] = "Default",
+["Dopesick - Stitches"] = "Default",
+["Dopenac - Lone Wolf"] = "Default",
+["Dopetrap - Living Flame"] = "Default",
+["Dopecure - Stitches"] = "Default",
+["Dopemend - Lone Wolf"] = "Default",
+["Dopesnare - Stitches"] = "Default",
+["Dopecure - Thunderstrike"] = "Default",
+["Dopedot - Lone Wolf"] = "Default",
+["Dopecoil - Lone Wolf"] = "Default",
+["Lonac - Stitches"] = "Default",
+["Dopestab - Living Flame"] = "Default",
+["Dopebolt - Lone Wolf"] = "Default",
+["Battlenac - Celebras"] = "Default",
+["Moolatz - Celebras"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Doperage - Lone Wolf"] = "Default",
+["Dopesnare - Living Flame"] = "Default",
+["Mq - Celebras"] = "Default",
+["Vermins - Stitches"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
+["Battitude - Zandalar Tribe"] = "Default",
+["Dopeah - Stitches"] = "Default",
+["Dopeclaw - Thunderstrike"] = "Default",
+["Dopede - Stitches"] = "Default",
+["Vermin - Celebras"] = "Default",
+["Doperage - Living Flame"] = "Default",
+["Battlenac - Zandalar Tribe"] = "Default",
+["Dopecoil - Thunderstrike"] = "Default",
+["Dopebolt - Living Flame"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
+["Turbonac - Celebras"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
+["Dopestab - Lone Wolf"] = "Default",
+["Dopemend - Living Flame"] = "Default",
+["Dopeclaw - Stitches"] = "Default",
+["Dopeclaw - Lone Wolf"] = "Default",
+["Jutarnjedrvo - Living Flame"] = "Default",
+},
+["global"] = {
+["dbVersion"] = 6,
+["addonVersion"] = "11.2.8",
+},
+["profiles"] = {
+["Default"] = {
+["rules"] = {
+{
+["patterns"] = {
+"LossOfControl",
+"TotemFrame",
+},
+["id"] = "Ignore",
+["priority"] = 1,
+["theme"] = "Ignore",
+},
+{
+["enabled"] = false,
+["patterns"] = {
+"Aura",
+"Buff",
+"Debuff",
+},
+["name"] = "Auras",
+["id"] = "auras",
+},
+{
+["enabled"] = false,
+["patterns"] = {
+"Plate",
+},
+["name"] = "Unit Nameplates",
+["id"] = "plates",
+},
+{
+["enabled"] = false,
+["patterns"] = {
+"ActionButton",
+},
+["name"] = "Action Bars",
+["id"] = "actions",
+},
+{
+["patterns"] = {
+"PlaterMainAuraIcon",
+"PlaterSecondaryAuraIcon",
+"ExtraIconRowIcon",
+},
+["id"] = "Plater Nameplates Rule",
+["priority"] = 5,
+["theme"] = "Plater Nameplates Theme",
+},
+},
+["themes"] = {
+["Plater Nameplates Theme"] = {
+["textStyles"] = {
+["soon"] = {
+},
+["seconds"] = {
+},
+["minutes"] = {
+},
+},
+},
+["Default"] = {
+["textStyles"] = {
+["soon"] = {
+},
+["seconds"] = {
+},
+["minutes"] = {
+},
+["charging"] = {
+["r"] = 1,
+["scale"] = 0.649999976158142,
+["g"] = 0.98,
+["b"] = 0.4,
+},
+["controlled"] = {
+["scale"] = 1.20000004768372,
+},
+},
+["fontFace"] = "Fonts\\ARIALN.TTF",
+["spiralOpacity"] = 1.00999997742474,
+["fontSize"] = 16,
+},
+["Ignore"] = {
+["textStyles"] = {
+["soon"] = {
+},
+["seconds"] = {
+},
+["minutes"] = {
+},
+["charging"] = {
+["r"] = 1,
+["scale"] = 0.65,
+["g"] = 0.98,
+["b"] = 0.4,
+},
+},
+["enableText"] = false,
+["spiralOpacity"] = 1,
+["minDuration"] = 3,
+},
+},
+},
+},
 }
 OmniCC4Config = {
-	["version"] = "8.1.1",
-	["groupSettings"] = {
-		["base"] = {
-			["enabled"] = true,
-			["fontSize"] = 18,
-			["scaleText"] = true,
-			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
-			["styles"] = {
-				["seconds"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 0.1,
-				},
-				["soon"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1.5,
-					["g"] = 0.1,
-					["b"] = 0.1,
-				},
-				["minutes"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 1,
-				},
-				["hours"] = {
-					["a"] = 1,
-					["r"] = 0.7,
-					["scale"] = 0.75,
-					["g"] = 0.7,
-					["b"] = 0.7,
-				},
-				["charging"] = {
-					["a"] = 0.8,
-					["r"] = 1,
-					["scale"] = 0.649999976158142,
-					["g"] = 0.98,
-					["b"] = 0.4,
-				},
-				["controlled"] = {
-					["scale"] = 1.20000004768372,
-				},
-			},
-			["fontFace"] = "Fonts\\ARIALN.TTF",
-		},
-		["Ignore"] = {
-			["enabled"] = false,
-			["styles"] = {
-				["soon"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1.5,
-					["g"] = 0.1,
-					["b"] = 0.1,
-				},
-				["minutes"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 1,
-				},
-				["seconds"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 0.1,
-				},
-				["hours"] = {
-					["a"] = 1,
-					["r"] = 0.7,
-					["scale"] = 0.75,
-					["g"] = 0.7,
-					["b"] = 0.7,
-				},
-				["charging"] = {
-					["a"] = 0.8,
-					["r"] = 1,
-					["scale"] = 0.65,
-					["g"] = 0.98,
-					["b"] = 0.4,
-				},
-				["controlled"] = {
-				},
-			},
-			["fontSize"] = 18,
-			["effect"] = "pulse",
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["mmSSDuration"] = 0,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
-			["yOff"] = 0,
-			["minDuration"] = 3,
-		},
-	},
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["engine"] = "AniUpdater",
+["version"] = "8.1.1",
+["groupSettings"] = {
+["base"] = {
+["enabled"] = true,
+["fontSize"] = 18,
+["scaleText"] = true,
+["effect"] = "pulse",
+["minDuration"] = 2,
+["minEffectDuration"] = 30,
+["anchor"] = "CENTER",
+["spiralOpacity"] = 1.00999997742474,
+["yOff"] = 0,
+["xOff"] = 0,
+["tenthsDuration"] = 0,
+["fontOutline"] = "OUTLINE",
+["minSize"] = 0.5,
+["mmSSDuration"] = 0,
+["styles"] = {
+["seconds"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1,
+["g"] = 1,
+["b"] = 0.1,
+},
+["soon"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1.5,
+["g"] = 0.1,
+["b"] = 0.1,
+},
+["minutes"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1,
+["g"] = 1,
+["b"] = 1,
+},
+["hours"] = {
+["a"] = 1,
+["r"] = 0.7,
+["scale"] = 0.75,
+["g"] = 0.7,
+["b"] = 0.7,
+},
+["charging"] = {
+["a"] = 0.8,
+["r"] = 1,
+["scale"] = 0.649999976158142,
+["g"] = 0.98,
+["b"] = 0.4,
+},
+["controlled"] = {
+["scale"] = 1.20000004768372,
+},
+},
+["fontFace"] = "Fonts\\ARIALN.TTF",
+},
+["Ignore"] = {
+["enabled"] = false,
+["styles"] = {
+["soon"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1.5,
+["g"] = 0.1,
+["b"] = 0.1,
+},
+["minutes"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1,
+["g"] = 1,
+["b"] = 1,
+},
+["seconds"] = {
+["a"] = 1,
+["r"] = 1,
+["scale"] = 1,
+["g"] = 1,
+["b"] = 0.1,
+},
+["hours"] = {
+["a"] = 1,
+["r"] = 0.7,
+["scale"] = 0.75,
+["g"] = 0.7,
+["b"] = 0.7,
+},
+["charging"] = {
+["a"] = 0.8,
+["r"] = 1,
+["scale"] = 0.65,
+["g"] = 0.98,
+["b"] = 0.4,
+},
+["controlled"] = {
+},
+},
+["fontSize"] = 18,
+["effect"] = "pulse",
+["fontFace"] = "Fonts\\FRIZQT__.TTF",
+["mmSSDuration"] = 0,
+["minSize"] = 0.5,
+["spiralOpacity"] = 1,
+["scaleText"] = true,
+["xOff"] = 0,
+["tenthsDuration"] = 0,
+["fontOutline"] = "OUTLINE",
+["anchor"] = "CENTER",
+["minEffectDuration"] = 30,
+["yOff"] = 0,
+["minDuration"] = 3,
+},
+},
+["groups"] = {
+{
+["id"] = "Ignore",
+["rules"] = {
+"LossOfControl",
+"TotemFrame",
+},
+["enabled"] = true,
+},
+},
+["engine"] = "AniUpdater",
 }

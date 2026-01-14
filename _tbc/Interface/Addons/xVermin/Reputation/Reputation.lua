@@ -41,7 +41,7 @@ local function CreateBar(input)
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint('RIGHT', f.Bar, 'RIGHT', -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
-	f.Bar.FactionName:SetWordWrap()
+	f.Bar.FactionName:SetWordWrap(true)
 	f.Bar.FactionName:SetJustifyH('RIGHT')
 	f.Bar.FactionName:SetWidth(size / scale)
 
@@ -95,36 +95,46 @@ local function UpdateBarPosition()
 		if not value.hidden then
 			if value.isWatched then
 				anchor = _G[value.frameStatusBar .. '_wrap']
+				anchor:ClearAllPoints()
 				if _G['PlayerXPFrameStatusBar'] and _G['PlayerXPFrameStatusBar']:GetAlpha() > 0 then
-					_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
 					if pet then
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
+						anchor:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
 					else
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30)
+						anchor:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30)
 					end
 				else
-					_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+					if pet then
+						anchor:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
+					else
+						anchor:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+					end
 				end
 			end
 		end
 	end
 
 	local counter = 1
+	local child
 	for key, value in pairs(bars) do
 		if not value.hidden then
 			if not value.isWatched then
-				_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
-				if anchor then
-					_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', anchor, 'TOP', 0, 30 * counter)
+				child = _G[value.frameStatusBar .. '_wrap']
+				child:ClearAllPoints()
+				if anchor and anchor ~= child then
+					child:SetPoint('BOTTOM', anchor, 'TOP', 0, 30 * counter)
 				else
 					if _G['PlayerXPFrameStatusBar'] and _G['PlayerXPFrameStatusBar']:GetAlpha() > 0 then
 						if pet then
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
+							child:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						else
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30 * counter)
+							child:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						end
 					else
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
+						if pet then
+							child:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
+						else
+							child:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
+						end
 					end
 				end
 				counter = counter + 1
@@ -200,7 +210,7 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
 			_G[value.frameStatusBar].Value:SetText(standingValue .. '/' .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
-			_G[value.frameStatusBar].Value2:SetText(xVermin:Round(standingValue / topValue * 100) .. '%')
+			_G[value.frameStatusBar].Value2:SetText(xVermin.Round(standingValue / topValue * 100) .. '%')
 			_G[value.frameStatusBar].FactionName2:SetText(standing)
 
 			if not _G[value.frameStatusBar].Value2:IsVisible() then
@@ -247,8 +257,7 @@ local function UpdateBars(self, event)
 
 	local numFactions = GetNumFactions()
 	while factionIndex <= numFactions do
-		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus =
-			GetFactionInfo(factionIndex)
+		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 
 		if isHeader and isCollapsed then
 			ExpandFactionHeader(factionIndex)
@@ -341,22 +350,17 @@ local function UpdateBars(self, event)
 	UpdateBarPosition()
 end
 
-if _G['PetXPFrameStatusBar'] then
-	PetFrame:HookScript(
-		'OnShow',
-		function()
+UIParent:HookScript(
+	'OnUpdate',
+	function()
+		if UnitExists('pet') and UnitLevel('player') > UnitLevel('pet') then
 			pet = true
-			UpdateBarPosition()
-		end
-	)
-	PetFrame:HookScript(
-		'OnHide',
-		function()
+		else
 			pet = false
-			UpdateBarPosition()
 		end
-	)
-end
+		UpdateBarPosition()
+	end
+)
 
 local wf = CreateFrame('Frame')
 wf:RegisterEvent('UPDATE_FACTION')

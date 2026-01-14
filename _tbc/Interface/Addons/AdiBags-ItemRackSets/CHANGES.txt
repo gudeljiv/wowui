@@ -1,10 +1,10 @@
-lightweight tag 74379e122d6ab5e0b03ae033f451edf61d0ec06c v1.7
-Author:	GitHub <noreply@github.com>
-Date:	Tue Jan 7 00:41:37 2020 -0500
+lightweight tag 6c99844d464f3c9acd50f6f658443b88ad4e938d v1.8
+Author:	Andrew Potter <apottere@gmail.com>
+Date:	Wed Aug 31 03:49:55 2022 -0400
 
-commit 74379e122d6ab5e0b03ae033f451edf61d0ec06c
+commit 6c99844d464f3c9acd50f6f658443b88ad4e938d
 Author: Andrew Potter <apottere@gmail.com>
-Date:   Tue Jan 7 00:41:37 2020 -0500
+Date:   Wed Aug 31 03:49:55 2022 -0400
 
-    Update AdiBags-ItemRackSets.lua
+    Fix loading issue
 

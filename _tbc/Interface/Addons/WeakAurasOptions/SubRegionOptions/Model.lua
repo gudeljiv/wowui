@@ -1,7 +1,9 @@
-if not WeakAuras.IsCorrectVersion() then return end
-local AddonName, OptionsPrivate = ...
+if not WeakAuras.IsLibsOK() then return end
+---@type string
+local AddonName = ...
+---@class OptionsPrivate
+local OptionsPrivate = select(2, ...)
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
 local function createOptions(parentData, data, index, subIndex)
@@ -18,15 +20,7 @@ local function createOptions(parentData, data, index, subIndex)
       type = "input",
       width = WeakAuras.doubleWidth - 0.15,
       name = L["Model"],
-      order =  10,
-      hidden = WeakAuras.IsClassic()
-    },
-    model_path = {
-      type = "input",
-      width = WeakAuras.doubleWidth - 0.15,
-      name = L["Model"],
       order =  10.5,
-      hidden = not WeakAuras.IsClassic()
     },
     chooseModel = {
       type = "execute",
@@ -41,35 +35,56 @@ local function createOptions(parentData, data, index, subIndex)
       control = "WeakAurasIcon",
       image = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\browse",
     },
-    bar_model_clip = {
+    bar_model_attach = {
       type = "toggle",
-      width = WeakAuras.doubleWidth,
-      name = L["Clipped by Progress"],
+      width = WeakAuras.normalWidth,
+      name = L["Attach to Foreground"],
       order = 12,
       hidden = function() return parentData.regionType ~= "aurabar" end
     },
+    bar_model_stretch = {
+      type = "toggle",
+      width = WeakAuras.normalWidth,
+      name = L["Stretched by Foreground"],
+      order = 12.1,
+      hidden = function()
+        return parentData.regionType ~= "aurabar" or not data.bar_model_attach
+      end
+    },
+    bar_model_spacer ={
+      type = "description",
+      width = WeakAuras.normalWidth,
+      name = "",
+      order = 12.15,
+      hidden = function()
+        return parentData.regionType ~= "aurabar" or data.bar_model_attach
+      end
+    },
     extra_width = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Extra Width"],
-      order = 12.1,
-      softMin = -100,
-      softMax = 500,
-      step = 1,
-      hidden = function() return data.bar_model_clip and parentData.regionType == "aurabar" end
-    },
-    extra_height = {
-      type = "range",
-      width = WeakAuras.normalWidth,
-      name = L["Extra Height"],
       order = 12.2,
       softMin = -100,
       softMax = 500,
       step = 1,
-      hidden = function() return data.bar_model_clip and parentData.regionType == "aurabar" end
+      hidden = function() return data.bar_model_attach and parentData.regionType == "aurabar" end
+    },
+    extra_height = {
+      type = "range",
+      control = "WeakAurasSpinBox",
+      width = WeakAuras.normalWidth,
+      name = L["Extra Height"],
+      order = 12.3,
+      softMin = -100,
+      softMax = 500,
+      step = 1,
+      hidden = function() return data.bar_model_attach and parentData.regionType == "aurabar" end
     },
     model_alpha = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Alpha"],
       order = 13,
@@ -81,10 +96,11 @@ local function createOptions(parentData, data, index, subIndex)
       type = "toggle",
       name = L["Use SetTransform"],
       order = 14,
-      width = WeakAuras.normalWidth
+      width = WeakAuras.normalWidth,
     },
     model_z = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Offset"],
       softMin = -20,
@@ -96,6 +112,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_x = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Offset"],
       softMin = -20,
@@ -107,6 +124,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_y = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Offset"],
       softMin = -20,
@@ -118,6 +136,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     rotation = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Rotation"],
       min = 0,
@@ -130,6 +149,7 @@ local function createOptions(parentData, data, index, subIndex)
     -- New Settings
     model_st_tx = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Offset"],
       softMin = -1000,
@@ -141,6 +161,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_ty = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Offset"],
       softMin = -1000,
@@ -152,6 +173,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_tz = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Offset"],
       softMin = -1000,
@@ -163,6 +185,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_rx = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Rotation"],
       min = 0,
@@ -174,6 +197,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_ry = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Rotation"],
       min = 0,
@@ -185,6 +209,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_rz = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Rotation"],
       min = 0,
@@ -196,6 +221,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     model_st_us = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Scale"],
       min = 5,

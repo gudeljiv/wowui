@@ -8,41 +8,36 @@ for i, v in pairs(
 		FriendsFrame,
 		QuestLogFrame,
 		MailFrame,
+		OpenMailFrame,
 		ItemTextFrame,
 		DressUpFrame,
 		TaxiFrame,
 		QuestFrame,
 		PetStableFrame,
 		GossipFrame,
-		MerchantFrame
+		MerchantFrame,
+		PVPParentFrame,
+		CommunitiesFrame
 	}
 ) do
 	if v then
-		v:SetScale(1.3)
+		v:SetScale(1.2)
 	-- v:ClearAllPoints()
 	-- v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
-	-- v.SetPoint = function()
-	-- end
 	end
 end
 
-C_Timer.NewTicker(
-	1,
-	function(self)
-		if LFGParentFrame then
-			LFGParentFrame:SetScale(1.3)
-			self:Cancel()
-		end
+xVermin.CheckIfLoadedWithTimer(
+	'LFGParentFrame',
+	function()
+		LFGParentFrame:SetScale(1.2)
 	end
 )
 
-C_Timer.NewTicker(
-	1,
-	function(self)
-		if CraftFrame then
-			CraftFrame:SetScale(1.3)
-			self:Cancel()
-		end
+xVermin.CheckIfLoadedWithTimer(
+	'CraftFrame',
+	function()
+		CraftFrame:SetScale(1.2)
 	end
 )
 
@@ -53,7 +48,8 @@ local LoDMap = {
 	Blizzard_TradeSkillUI = {'TradeSkillFrame'},
 	Blizzard_InspectUI = {'InspectFrame'},
 	Blizzard_TrainerUI = {'ClassTrainerFrame'},
-	Blizzard_AuctionUI = {'AuctionFrame'}
+	Blizzard_AuctionUI = {'AuctionFrame'},
+	Blizzard_Calendar = {'CalendarFrame'}
 }
 
 local f = CreateFrame('Frame')
@@ -65,46 +61,30 @@ f:SetScript(
 			local framelist = LoDMap[(...)]
 			if framelist then
 				for _, name in ipairs(framelist) do
-					_G[name]:SetScale(1.3)
+					_G[name]:SetScale(1.2)
 
 					if (name == 'AuctionFrame') then
 						for i = 1, 7 do
 							_G['BrowseButton' .. i .. 'Item']:CreateBeautyBorder(8)
-
-							-- local name, texture, count, quality, canUse, level, levelColHeader, minBid, minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner, ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("type", index)
-							-- local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(itemID or "itemString" or "itemName" or "itemLink")
 						end
 					end
-					-- _G[name]:ClearAllPoints()
-					-- _G[name]:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
-					-- _G[name].SetPoint = function() end
+					-- if (name == 'CalendarFrame') then
+					-- 	CalendarFrameTopLeftTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameTopMiddleTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameRightMiddleTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameBottomMiddleTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameLeftMiddleTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameTopRightTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameBottomLeftTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameBottomRightTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameRightBottomTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameRightTopTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameLeftTopTexture:SetVertexColor(.05, .05, .05)
+					-- 	CalendarFrameLeftBottomTexture:SetVertexColor(.05, .05, .05)
+					-- end
 				end
 			end
 		end
 	end
 )
 
--- AuctionFrame:HookScript(
--- 	"OnUpdate",
--- 	function(self)
--- 		print("auction update")
--- 	end
--- )
-
--- AuctionFrame:HookScript(
--- 	"OnShow",
--- 	function(self)
--- 		print("auction show")
--- 	end
--- )
-
--- AuctionFrame:HookScript(
--- 	"OnHide",
--- 	function(self)
--- 		print("auction hide")
--- 	end
--- )
-
--- for i = 1, 7 do
--- 	_G["BrowseButton" .. i .."Item"]:CreateBeautyBorder(8)
--- end

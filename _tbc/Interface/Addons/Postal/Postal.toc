@@ -1,13 +1,13 @@
-## Interface: 11302
-## X-Min-Interface: 11302
-## Title: Postal Classic
-## Version: v3.6.2
-## X-Build: 409
-## X-ReleaseDate: 2018-07-20T8:41:50Z
-## X-Revision: $Revision: 409 $
+## Interface: 110205
+## Title: Postal
+## Version: v4.3.4
+## X-Build: 663
+## X-ReleaseDate: 2025-10-29T20:49:10Z
+## X-Revision: 663
 ## Author: Xinhuan
-## X-Credits: Ammo, Rabbit, Grennon, Mikk, oscarucb, Vanger
+## X-Credits: Ammo, Rabbit, Grennon, Mikk, oscarucb, Jonny aka The_Original_Manbot
 ## X-Category: Mail
+## IconTexture: 133457
 ## Notes: Postal: Enhanced Mailbox support
 ## Notes-ruRU: Postal: Расширенная поддержка почтового ящика
 ## Notes-frFR: Postal: améliorations diverses de l'interface d'envoi/réception de courriers.
@@ -16,11 +16,11 @@
 ## Notes-zhCN: Postal: 增强信箱功能
 ## Notes-ptBR: Postal: Apoio caixa reforçada
 ## OptionalDeps: Ace3, !BlizzBugsSuck, !ClassColors
-## SavedVariables: Postal3ClassicDB
+## SavedVariables: Postal3DB
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Mailbox: true
-## X-Email: xinhuan AT gmail DOT com
+## X-Email: jonny AT jmbg DOT net
 
 #@no-lib-strip@
 Libs\LibStub\LibStub.lua
@@ -32,7 +32,7 @@ Libs\AceHook-3.0\AceHook-3.0.xml
 Libs\AceLocale-3.0\AceLocale-3.0.xml
 #@end-no-lib-strip@
 
-locales\locales.xml
+Localization.lua
 Postal.lua
 
 # Users can comment out any module (or delete the .lua) of any module they do not wish to load
@@ -45,3 +45,5 @@ Modules\Rake.lua
 Modules\BlackBook.lua
 Modules\DoNotWant.lua
 Modules\CarbonCopy.lua
+Modules\Forward.lua
+Modules\QuickAttach.lua

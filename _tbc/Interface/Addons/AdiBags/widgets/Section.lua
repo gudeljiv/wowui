@@ -19,7 +19,9 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
 --<GLOBALS
@@ -29,7 +31,7 @@ local CreateFont = _G.CreateFont
 local CreateFrame = _G.CreateFrame
 local floor = _G.floor
 local format = _G.format
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
 local ipairs = _G.ipairs
 local max = _G.max
 local min = _G.min
@@ -57,7 +59,8 @@ local HEADER_SIZE = addon.HEADER_SIZE
 --------------------------------------------------------------------------------
 
 local categoryOrder = {
-	[L["Free space"]] = -100
+	[L["Free space"]] = -100,
+	[L["Reagent Free space"]] = -101
 }
 
 function addon:SetCategoryOrder(name, order)
@@ -92,7 +95,6 @@ function sectionProto:OnCreate()
 
 	local header = CreateFrame("Button", nil, self)
 	header.section = self
-	header:SetNormalFontObject(addon.sectionFont)
 	header:SetPoint("TOPLEFT", 0, 0)
 	header:SetPoint("TOPRIGHT", SECTION_SPACING - ITEM_SPACING, 0)
 	header:SetHeight(HEADER_SIZE)
@@ -130,8 +132,11 @@ function sectionProto:OnAcquire(container, name, category)
 	self.key = BuildSectionKey(name, category)
 	self:SetSizeInSlots(0, 0)
 	self.count = 0
+	self.total = 0
+	self.height = 0
 	self.container = container
 	self:RegisterMessage('AdiBags_OrderChanged', 'FullLayout')
+	self.Header:SetNormalFontObject(addon.fonts[string.lower(container.name)].sectionFont)
 	self.Header:SetText(self.name)
 	self:UpdateHeaderScripts()
 end
@@ -143,6 +148,21 @@ function sectionProto:OnRelease()
 	self.name = nil
 	self.category = nil
 	self.container = nil
+	self.total = 0
+	self.height = 0
+end
+
+function sectionProto:UpdateFont()
+	local font
+	if self.container.isReagentBank then
+		font = addon.fonts.reagentBank.sectionFont
+		self.Header:SetNormalFontObject(font)
+		font:ApplySettings()
+	else
+		font = addon.fonts[string.lower(self.container.name)].sectionFont
+		self.Header:SetNormalFontObject(font)
+		font:ApplySettings()
+	end
 end
 
 function sectionProto:GetOrder()
@@ -356,6 +376,10 @@ function sectionProto:FullLayout()
 		return
 	elseif self:IsCollapsed() then
 		return self:Hide()
+	end
+
+	if self.total < 0 or self.count < 0 then
+		return
 	end
 
 	for button in pairs(self.buttons) do

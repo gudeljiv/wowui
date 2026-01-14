@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/TradeSkillMaster/LibTSMClass/badge.svg?branch=main)](https://coveralls.io/github/TradeSkillMaster/LibTSMClass?branch=main)
+
 # LibTSMClass
 
 The LibTSMClass library allows for writing objected-oriented code in lua! There are many OOP / class libraries out there for lua, but none of them had all the features which we needed for TradeSkillMaster, were easily imported into WoW, and were sufficiently performant.
@@ -31,13 +33,16 @@ print(classInst.existingValue) -- prints 2
 
 ### Static Attributes
 
-Static fields are allowed on all classes and can be accessed by instances of the class.
+Static fields are allowed on all classes and can be accessed by instances of the class. Note that modifying the value of a static field on an instance of the class creates a new property on the instance and does not modify the class's static value.
 
 ```lua
 MyClass.staticValue = 31
 print(MyClass.staticValue) -- prints 31
 local classInst = MyClass()
 print(classInst.staticValue) -- prints 31
+classInst.staticValue = 2
+print(classInst.staticValue) -- prints 2
+print(MyClass.staticValue) -- prints 31
 ```
 
 ### Method Definition
@@ -51,6 +56,17 @@ end
 function MyClass.GetValue(self)
 	return self._value
 end
+```
+
+### Static Class Functions
+
+Static class functions (not instance methods) can be defined via the `__static` property.
+
+```lua
+function MyClass.__static.GetSecretNumber()
+	return 802
+end
+print(MyClass.GetSecretNumber()) -- prints 802
 ```
 
 ### Constructor
@@ -108,6 +124,23 @@ function MySubClass.GetValue(self)
 end
 ```
 
+### Private Class Methods
+
+Classes can define `private` methods which can only be accessed by the class itself. In other words, these methods can only be called from within another method of the same class or within a static function of the class. Private methods are defined by creating them against the `__private` property of the class.
+
+```lua
+function MyClass.__private._HashRound(self, x, y)
+	return x * 44 + x * y
+end
+function MyClass.PoorlyHash(self, x)
+	return self:_HashRound(x - 1, x + 1)
+end
+```
+
+### Protected Class Methods
+
+Classes can define `protected` methods which behave like private methods, but can also be accessed by subclasses of the class. Protected methods are defined by creating them against the `__protected` property of the class (in a similar manner to example above for private methods).
+
 ### Other Useful Attributes
 
 #### `__tostring()`
@@ -140,11 +173,9 @@ All instances have a special `__dump()` method which can be used to pretty-print
 ```lua
 local classInst = MyClass(0)
 classInst:__dump()
--- prints [[
-MyClass:00B8C688 {
-	_value = 0
-}
-]]
+-- MyClass:00B8C688 {
+--     _value = 0
+-- }
 ```
 
 #### `__class`
@@ -164,6 +195,18 @@ In order to test whether or not an instance belongs to a given class, the `__isa
 local classInst = MyClass(3)
 print(classInst:__isa(MyClass)) -- prints true
 print(classInst:__isa(MySubClass)) -- prints false
+```
+
+#### `__closure()`
+
+A class with private or protected methods may want to allow calling those methods from outside of another method of the class, which would generally not be allowed. This can be accomplished using the `__closure` method.
+
+```lua
+function MyClass.__private._EventHandler(self, eventName)
+	print("Handling event: "..eventName)
+end
+local classInst = MyClass(3)
+Event.RegisterHandler(classInst:__closure("_EventHandler"))
 ```
 
 ### Virtual Methods
@@ -189,13 +232,35 @@ subClassInst:PrintMagicNumber() -- prints 88
 An abstract class is one which can't be directly instantiated. Other than this restriction, abstract classes behave exactly the same as normal classes, including the ability to be sub-classed. This is useful in order to define a common interface which multiple child classes are expected to adhere to. An abstract class is defined by passing an extra argument when defining the class as shown below:
 ```lua
 local AbstractClass = LibTSMClass.DefineClass("AbstractClass", nil, "ABSTRACT")
+
+local ImplClass = LibTSMClass.DefineClass("ImplClass", AbstractClass)
+```
+
+### Abstract Class Methods
+
+Abstract classes may define abstract methods which subclasses are required to implement. This is done by defining an empty function against the `__abstract` table. Note that this function doesn't strictly need to be empty, but is never called (or even stored anywhere within LibTSMClass). Abstract class methods are **always implicitly protected**, so must be overridden as such.
+
+```lua
+function AbstractClass.__abstract._GetResult(self)
+end
+
+function AbstractClass.AddNumber(self, num)
+	return num + self:_GetResult()
+end
+
+function ImplClass.__protected._GetResult(self)
+	return 10
+end
+
+local inst = ImplClass()
+print(inst:AddNumber(2)) -- prints 12
 ```
 
 ## Limitations, Gotchas, and Notes
 
-### Access Restrictions (Private / Protected)
+### Instance Variable Access Restrictions (Private / Protected)
 
-All instance variables and class methods are publicly accessible. While it's possible for LibTSMClass to be extended to allow for enforcing private / protected access restrictions, it's not currently implemented in order to keep the library as simple and performant as possible. With that being said, a general convention of adding an leading underscore to things which shouldn't be used externally (i.e. private members / methods) is encouraged. If true private members are needed, another alternative is to create scope-limited lookup tables or functions within the file where the class is defined.
+All instance variables are publicly accessible. Extending the private / protected access controls to cover instance variables may be added in the future. A general convention of adding an leading underscore to things which shouldn't be used externally (i.e. private members / methods) is encouraged. If true private members are needed, another alternative is to create scope-limited lookup tables or functions within the file where the class is defined.
 
 ### Classes are Immutable and Should be Atomically Defined
 
@@ -238,6 +303,10 @@ obj:AddValue(5)
 print(obj:GetValue()) -- 15
 ```
 
+## LuaLS Plugin
+
+A [plugin](LuaLSPlugin/LibTSMClassLuaLSPlugin.lua) for [LuaLS](https://github.com/LuaLS/lua-language-server) is provided to allow for better handling of classes defined with LibTSMClass.
+
 ## License and Contributes
 
-LibTSMClass is licensed under the MIT license. See LICENSE.txt for more information. If you would like to contribute to LibTSMClass, opening an issue or submitting a pull request against the [LibTSMClass Bitbucket project](https://bitbucket.org/tradeskillmasteraddon/libtsmclass) is highly encouraged.
+LibTSMClass is licensed under the MIT license. See LICENSE.txt for more information. If you would like to contribute to LibTSMClass, opening an issue or submitting a pull request against the [LibTSMClass GitHub project](https://github.com/TradeSkillMaster/LibTSMClass) is highly encouraged.

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -41,7 +41,7 @@ function Module:Entry_AddToList_2(f, id)
 		f.insert = equiv
 		f.overrideInsertName = L["SUG_INSERTEQUIV"]
 
-		f.tooltipmethod = "TMW_SetEquiv"
+		f.tooltipmethod = TMW.GameTooltip_SetEquiv
 		f.tooltiparg = equiv
 
 		f.Icon:SetTexture(TMW.GetSpellTexture(firstid))

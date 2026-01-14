@@ -26,21 +26,29 @@ local L = addon.L
 local _G = _G
 local format = _G.format
 local GameTooltip = _G.GameTooltip
-local GetItemInfo = _G.GetItemInfo
+local GetItemInfo = _G.C_Item.GetItemInfo
+local GetItemSubClassInfo = _G.C_Item.GetItemSubClassInfo
 local hooksecurefunc = _G.hooksecurefunc
-local IsAddOnLoaded = _G.IsAddOnLoaded
-local ITEM_QUALITY_POOR = _G.Enum.ItemQuality.Poor
-local ITEM_QUALITY_UNCOMMON = _G.Enum.ItemQuality.Good
+local IsAddOnLoaded = _G.C_AddOns.IsAddOnLoaded
+local ITEM_QUALITY_POOR
+local ITEM_QUALITY_UNCOMMON
+if addon.isRetail then
+	ITEM_QUALITY_POOR = _G.Enum.ItemQuality.Poor
+	ITEM_QUALITY_UNCOMMON = _G.Enum.ItemQuality.Uncommon
+else
+	ITEM_QUALITY_POOR = _G.LE_ITEM_QUALITY_POOR
+	ITEM_QUALITY_UNCOMMON = _G.LE_ITEM_QUALITY_UNCOMMON
+end
 local print = _G.print
 local select = _G.select
 local setmetatable = _G.setmetatable
 local tonumber = _G.tonumber
 local type = _G.type
-local UseContainerItem = _G.UseContainerItem
+local UseContainerItem = C_Container and _G.C_Container.UseContainerItem or _G.UseContainerItem
 local wipe = _G.wipe
 --GLOBALS>
 
-local JUNK = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 0)
+local JUNK = GetItemSubClassInfo(_G.Enum.ItemClass.Miscellaneous, 0)
 local JUNK_KEY = addon.BuildSectionKey(JUNK, JUNK)
 
 local mod = addon:RegisterFilter("Junk", 85, "ABEvent-1.0", "AceHook-3.0")
@@ -53,6 +61,8 @@ local DEFAULTS = {
 		include = {},
 		exclude = {
 			[  6948] = true, -- Hearthstone
+			[110560] = true, -- Garrison Hearhstone
+			[140192] = true, -- Dalaran Hearthstone
 		},
 	},
 }

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -33,6 +33,11 @@ if not Type then return end
 -- GLOBALS: CreateFrame
 
 
+if TMW.clientHasSecrets then
+	Type:RegisterConfigPanel_XMLTemplate(90, "TellMeWhen_SecretsWarning", {
+		text = L["UIPANEL_SECRETS_META_DESC"]
+	})
+end
 
 Type:RegisterConfigPanel_XMLTemplate(145, "TellMeWhen_IconStates", { })
 
@@ -94,9 +99,15 @@ TMW:RegisterCallback("TMW_EXPORT_SETTINGS_REQUESTED", function(event, strings, t
 		for k, GUID in pairs(settings.Icons) do
 			if GUID ~= settings.GUID then
 				local type = TMW:ParseGUID(GUID)
-				local settings = TMW:GetSettingsFromGUID(GUID)
-				if type == "icon" and settings then
-					TMW:GetSettingsStrings(strings, type, settings, TMW.Icon_Defaults)
+				local settings, _, _, ret4 = TMW:GetSettingsFromGUID(GUID)
+				if settings then
+					if type == "icon" then
+						TMW:GetSettingsStrings(strings, type, settings, TMW.Icon_Defaults)
+					end
+					if type == "group" then
+						local groupID = ret4
+						TMW:GetSettingsStrings(strings, type, settings, TMW.Group_Defaults, groupID)
+					end
 				end
 			end
 		end
@@ -213,7 +224,7 @@ function Config:IconMenu()
 
 				local text, textshort, tooltip = icon:GetIconMenuText()
 				info.text = textshort
-				info.tooltipTitle = text
+				info.tooltipTitle = textshort
 				info.tooltipText = tooltip
 
 				info.value = icon

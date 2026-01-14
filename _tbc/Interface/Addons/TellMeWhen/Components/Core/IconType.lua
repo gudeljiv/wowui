@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -17,12 +17,14 @@ local TMW = TMW
 local L = TMW.L
 local print = TMW.print
 
-local GetSpellInfo, GetSpellLink, GetSpellBookItemInfo, GetSpellBookItemName
-	= GetSpellInfo, GetSpellLink, GetSpellBookItemInfo, GetSpellBookItemName
-local pairs, ipairs, setmetatable, rawget, date, tinsert, type
-	= pairs, ipairs, setmetatable, rawget, date, tinsert, type
-	
 
+local pairs, ipairs, setmetatable, rawget, date, tinsert, type
+= pairs, ipairs, setmetatable, rawget, date, tinsert, type
+
+local GetSpellBookItemInfo = TMW.GetSpellBookItemInfo
+local GetSpellInfo = TMW.GetSpellInfo
+local GetSpellName = TMW.GetSpellName
+local GetSpellLink = C_Spell and C_Spell.GetSpellLink or GetSpellLink
 local GetSpellTexture = TMW.GetSpellTexture
 local tContains = TMW.tContains
 local tDeleteItem = TMW.tDeleteItem
@@ -119,7 +121,7 @@ function IconType:FormatSpellForOutput(icon, data, doInsertLink)
 		if doInsertLink then
 			name = GetSpellLink(data)
 		else
-			name = GetSpellInfo(data)
+			name = GetSpellName(data)
 		end
 		if name then
 			return name
@@ -213,19 +215,16 @@ function IconType:DragReceived(icon, t, data, subType, param4)
 	if data == 0 and type(param4) == "number" then
 		-- I don't remember the purpose of this anymore.
 		-- It handles some special sort of spell, though, and is required.
-		input = GetSpellInfo(param4)
+		input = GetSpellName(param4)
 	else
-		local type, baseSpellID = GetSpellBookItemInfo(data, subType)
-		
-		if not baseSpellID or type ~= "SPELL" then
+		local spellData = GetSpellBookItemInfo(data, subType)
+		if not spellData or spellData.typeName ~= "SPELL" then
 			return
 		end
 		
+		local baseSpellName = GetSpellName(spellData.actionID)
 		
-		local currentSpellName = GetSpellBookItemName(data, subType)		
-		local baseSpellName = GetSpellInfo(baseSpellID)
-		
-		input = baseSpellName or currentSpellName
+		input = baseSpellName or spellData.name
 	end
 
 	ics.Name = TMW:CleanString(ics.Name .. ";" .. input)
@@ -317,6 +316,7 @@ function IconType:UsesAttributes(attributesString, uses)
 	
 	TMW:ValidateType("3 (uses)", "IconView:Register(attributesString, uses)", uses, "boolean;nil")
 	
+	attributesString = attributesString:gsub(" ", "")
 	if uses == false then
 		self.UsedAttributes[attributesString] = nil
 	else
@@ -329,15 +329,18 @@ function IconType:UpdateUsedProcessors()
 	self:AssertSelfIsInstance()
 	
 	for _, Processor in ipairs(TMW.Classes.IconDataProcessor.instances) do
-		if self.UsedAttributes[Processor.attributesString] then
-			self.UsedAttributes[Processor.attributesString] = nil
-			self.UsedProcessors[Processor] = true
+		for _, attributeString in pairs(Processor.allAttributesStringNoSpaces) do
+			if self.UsedAttributes[attributeString] then
+				self.UsedAttributes[attributeString] = nil
+				self.UsedProcessors[Processor] = true
+			end
 		end
 	end
 end
 
 -- [INTERNAL]
-function IconType:OnImplementIntoIcon(icon)	
+function IconType:OnImplementIntoIcon(icon)
+
 	self.Icons[#self.Icons + 1] = icon
 
 	-- Implement all of the Processors that the Icon Type uses into the icon.
@@ -488,6 +491,12 @@ IconType:RegisterConfigPanel_ConstructorFunc(1, "TellMeWhen_IsViewAllowed", func
 		end
 	end)
 end)
+
+IconType:RegisterConfigPanel_XMLTemplate(2, "TellMeWhen_IsObsoleteWarning", {
+	OnSetup = function(self)
+		self:SetShown(TMW.CI.icon.typeData.obsolete)
+	end
+})
 
 
 -- [REQUIRED IF USED, FALLBACK]

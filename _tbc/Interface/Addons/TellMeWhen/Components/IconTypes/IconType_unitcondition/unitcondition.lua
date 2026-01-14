@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -15,9 +15,10 @@ if not TMW then return end
 local L = TMW.L
 
 local print = TMW.print
-local GetSpellBookItemInfo, GetItemIcon = 
-	  GetSpellBookItemInfo, GetItemIcon
 
+local GetItemIcon = C_Item and C_Item.GetItemIconByID or GetItemIcon
+local GetSpellBookItemInfo = TMW.GetSpellBookItemInfo
+	  
 local Type = TMW.Classes.IconType:New("unitcondition")
 Type.name = L["ICONMENU_UNITCNDTIC"]
 Type.desc = L["ICONMENU_UNITCNDTIC_DESC"]
@@ -182,8 +183,8 @@ function Type:Setup(icon)
 	-- Setup events and update functions.
 	if UnitSet.allUnitsChangeOnEvent then
 		icon:SetUpdateMethod("manual")
-	
-		TMW:RegisterCallback("TMW_UNITSET_UPDATED", ConditionIcon_OnEvent, icon)
+		icon:SetScript("OnEvent", ConditionIcon_OnEvent)
+		icon:RegisterEvent(UnitSet.event)
 	end
 
 	
@@ -199,7 +200,8 @@ function Type:DragReceived(icon, t, data, subType)
 
 	local _, input
 	if t == "spell" then
-		_, input = GetSpellBookItemInfo(data, subType)
+		local spellData = GetSpellBookItemInfo(data, subType)
+		input = spellData and spellData.actionID
 	elseif t == "item" then
 		input = GetItemIcon(data)
 	end

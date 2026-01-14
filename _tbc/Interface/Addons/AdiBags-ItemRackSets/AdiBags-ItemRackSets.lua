@@ -11,29 +11,34 @@ local function sendFiltersChanged()
 	filter:SendMessage('AdiBags_FiltersChanged')
 end
 
+local function itemRackUpdated(event, setName)
+	sendFiltersChanged()
+end
+
 local enabled = false
 local nonce = 1
 local frame = CreateFrame("Frame", nil)
 frame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
-frame:SetScript("OnEvent", function(self, event, ...)
-    if not enabled then
-        return
+frame:RegisterEvent("ADDON_LOADED")
+frame:SetScript("OnEvent", function(self, event, addon, ...)
+    if event == "ADDON_LOADED" and addon == "ItemRack" then
+        ItemRack:RegisterExternalEventListener("ITEMRACK_SET_SAVED", itemRackUpdated)
+        ItemRack:RegisterExternalEventListener("ITEMRACK_SET_DELETED", itemRackUpdated)
     end
-
-    nonce = nonce + 1
-    local currentNonce = nonce
-	C_Timer.After(0.5, function(...)
-        if enabled and currentNonce == nonce then
-            sendFiltersChanged()
+    if event == "PLAYER_EQUIPMENT_CHANGED" then
+        if not enabled then
+            return
         end
-	end)
-end)
 
-local function itemRackUpdated(event, setName)
-	sendFiltersChanged()
-end
-ItemRack:RegisterExternalEventListener("ITEMRACK_SET_SAVED", itemRackUpdated)
-ItemRack:RegisterExternalEventListener("ITEMRACK_SET_DELETED", itemRackUpdated)
+        nonce = nonce + 1
+        local currentNonce = nonce
+        C_Timer.After(0.5, function(...)
+            if enabled and currentNonce == nonce then
+                sendFiltersChanged()
+            end
+        end)
+    end
+end)
 
 function filter:OnInitialize()
     self.db = addon.db:RegisterNamespace('ItemRackSets', {

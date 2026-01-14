@@ -1,0 +1,2 @@
+
+CoolLineCharDB = nil

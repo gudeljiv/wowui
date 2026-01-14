@@ -4,9 +4,9 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local Accounting = TSM:NewPackage("Accounting")
-local Math = TSM.Include("Util.Math")
+local Math = TSM.LibTSMUtil:Include("Lua.Math")
 local private = {
 	characterGuildTemp = {},
 }
@@ -42,7 +42,7 @@ end
 
 function Accounting.GetSaleRate(itemString)
 	-- since auction data only goes back 180 days, limit the sales to that same time range
-	local _, totalSaleNum = TSM.Accounting.Transactions.GetSaleStats(itemString, 180 * SECONDS_PER_DAY)
+	local _, totalSaleNum = TSM.Accounting.Transactions.GetSaleStats(itemString, time() - 180 * SECONDS_PER_DAY)
 	if not totalSaleNum then
 		return nil
 	end

@@ -1,6 +1,6 @@
 ﻿-- --------------------
 -- TellMeWhen
--- Originally by Nephthys of Hyjal <lieandswell@yahoo.com>
+-- Originally by NephMakes
 
 -- Other contributions by:
 --		Sweetmms of Blackrock, Oozebull of Twisting Nether, Oodyboo of Mug'thol,
@@ -39,6 +39,7 @@ function ConditionObjectConstructor:LoadParentAndConditions(parent, Conditions)
 	assert(self.status == "ready", "Cannot :LoadParentAndConditions() to a ConditionObjectConstructor whose status is not 'ready'!")
 	
 	self.parent = parent
+	CNDT:TryUpgradeSettings(Conditions)
 	self.Conditions = Conditions
 	self.ConditionsToConstructWith = Conditions
 	
@@ -74,14 +75,21 @@ end
 --- Calls :GetPostUserModifiableConditions(), wraps the existing conditions in parenthesis if needed,
 -- and then appends a new condition to the start that can be configured as desired.
 -- @return [table] The settings of a new single condition.
-function ConditionObjectConstructor:Modify_WrapExistingAndPrependNew()	
+function ConditionObjectConstructor:Modify_WrapExistingAndPrependNew(operator)	
 	local ModifiableConditions = self:GetPostUserModifiableConditions()
 	local mod = ModifiableConditions -- Alias for brevity
 	
 	mod.n = mod.n + 1
+
+	-- Invoke __index access to get proper condition setting instance
 	local new = mod[mod.n]
 	mod[mod.n] = nil
+
 	tinsert(mod, 1, new)
+
+	if operator and mod.n >= 2 then
+		mod[2].AndOr = operator -- Set the operator that will join the prepended condition with all subsequent conditions.
+	end
 
 	if mod.n > 2 then
 		mod[2].PrtsBefore = mod[2].PrtsBefore + 1

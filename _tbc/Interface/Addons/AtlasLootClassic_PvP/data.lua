@@ -1,3 +1,4 @@
+if AtlasLoot.IS_SOD then return end
 -----------------------------------------------------------------------
 -- Upvalued Lua API.
 -----------------------------------------------------------------------
@@ -11,9 +12,9 @@ local format = string.format
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
-local addonname = ...
+local addonname, private = ...
 local AtlasLoot = _G.AtlasLoot
-local data = AtlasLoot.ItemDB:Add(addonname, 1, 1)
+local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.CLASSIC_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
@@ -890,14 +891,12 @@ data["Weapons"] = {
 	},
 }
 
-data["Mounts"] = {
+data["PvPMounts"] = {
 	name = ALIL["Mounts"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	ContentPhase = 2,
-	CorrespondingFields = {
-		[2] = "PvPMountsBCC",
-	},
+	CorrespondingFields = private.MOUNTS_LINK,
 	items = {
 		{ -- PvPMountsPvP
 			name = ALIL["Mounts"],
